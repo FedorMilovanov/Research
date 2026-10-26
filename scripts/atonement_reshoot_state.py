@@ -56,7 +56,14 @@ DOC = ROOT / "ИСКУПЛЕНИЕ" / "18_SERIES_AUDIT_AND_ARCS_2026-10-26.md"
 LEDGER = ROOT / "ИСКУПЛЕНИЕ" / "synthesis" / "02_CONFLICT_LEDGER.md"
 SUBLANES = ("ot", "nt", "fathers", "synthesis")
 STAMP = re.compile(r"^(?:at|measuredAt|checkedAt|measuredOn|measuredAtGit)$")
-CIRCLE = "63"
+CIRCLE = "64"
+# дата в именах блоков этого скрипта — дата круга, а не дата файла: ключ вида reshootCounters…
+# обязан говорить, когда его снимали, иначе следующий круг читал бы чужую отметку как свою.
+# Имена чужих блоков — `seriesAuditRound58…`, `cardProseCrossCheck…r60` — этим не двигаются:
+# они принадлежат своим кругам и своим владельцам. Дата берётся по UTC, потому что штампы `measuredAt` пишет `date -u`: блок, названный одним днём и отмеченный другим,
+# лжёт о себе так же, как число, сочинённое вместо снятого. Сверяется это проверкой
+# `keydate_audit` ниже, а не внимательностью автора круга.
+KEY_DATE = "20261026"
 
 
 def num(n) -> str:
@@ -368,10 +375,157 @@ def mirror_audit(corp: dict) -> dict:
     return out
 
 
+# ------------------------------------------------------------------ числа обхода (круг 64)
+#
+# Класс дефекта, пойманный доказательством круга 63: в реестр попало число, которое меряет не дерево,
+# а клон, — сколько объектов git увидел обход. Такое число верно в момент съёма и краснеет после
+# всякого мержа, потому что сравнивается с чужой средой. Доказать «это число о дереве» нельзя, а вот
+# заставить его назваться — можно: имя поля говорит, что оно считает обход, и тогда ему разрешены три
+# места — штамп прогона, объявленный список, или ничто.
+
+ENV_MARK = ("gitobjects", "объектовв", "объектовсъёма", "коммитовв", "revlist", "rev-list",
+            "обходоввсего", "файловвобходе", "строквобходе")
+ENV_PASS = ("пересняткругом", "удалённыефигуры", "снятпрогоном")
+# Периметр правила — не «весь реестр», а ровно те поля, которые пересъёмщик сверяет: покраснеть
+# само может только то, что с чем-то сравнивается. Исторические записи, которым сверять не с чем
+# (перечисления папок Drive в записях `driveMirrors.massRegistry20261023.*`), сюда не входят — и
+# не по снисхождению, а потому, что они не дрейфуют: их никто не перечитывает.
+ENV_SCOPES = ("integrityGate.shaCitationAudit20261023.*", "integrityGate.mixedScriptCheck.jsonLeafScan.*",
+              "integrityGate.mixedScriptCheck.outOfScope.*",
+              "integrityGate.scopeOfMeasurementRules.stampedFieldsPerRegistry.*",
+              "libraryIndex20261023.*", "fourPointMassRegistry20261023.seriesAuditRound5820261026.*",
+              "reproducibility20261022.countsLive.*", "reproducibility20261022.pipelineScripts*.файлы.*",
+              "driveMirrors.*.разрывСДеревом.*")
+ENV_DECL_PREFIX = "environmentScopedNumbers"
+
+
+def path_match(path, pattern):
+    """Совпадение пути с шаблоном, где `*` закрывает ровно один сегмент (`[0]` в имя сегмента входит)."""
+    p, q = path.split("."), pattern.split(".")
+    if len(q) > len(p):
+        return False
+    for got, want in zip(p, q):
+        if want == "*":
+            continue
+        if want != got.split("[")[0]:
+            return False
+    return True
+
+
+def in_env_scope(path):
+    return any(path_match(path, pat) for pat in ENV_SCOPES)
+
+
+def resolve(node, dotted):
+    """Путь вида `блок.подблок.поле` → значение или None. Не исключение: мёртвое объявление — тоже
+    ответ, и он должен быть виден, а не утонуть в traceback."""
+    for part in str(dotted).split("."):
+        if not isinstance(node, dict) or part not in node:
+            return None
+        node = node[part]
+    return node
+
+
+def env_declared(corp):
+    """Объявленные числа обхода: путь → записка. Собирается объединением по всем круговым блокам:
+    снять чужое объявление этим кругом значило бы поправить чужой блок рукой, а переопределить его
+    можно только своим блоком и со своим «почему»."""
+    out = {}
+    for holder in (corp.get("integrityGate") or {}, corp.get("reproducibility20261022") or {}):
+        for key in sorted(holder):
+            if key.startswith(ENV_DECL_PREFIX):
+                block = holder[key] or {}
+                for path, note in sorted((block.get("поля") or {}).items()):
+                    out[path] = note
+    return out
+
 
 PIPELINE_FILES = ("scripts/validate_atonement_corpus_integrity.py", "scripts/atonement_claim_register.py",
                   "scripts/run_atonement_mutation_battery.py", "scripts/atonement_reshoot_state.py",
-                  "scripts/atonement_drive_mirror_round63.py", "scripts/atonement_library_index_round63.py")
+                  "scripts/atonement_drive_mirror_round63.py", "scripts/atonement_library_index_round63.py",
+                  "scripts/atonement_round_close.py")
+
+
+ENV_DECL_BLOCK = ENV_DECL_PREFIX + KEY_DATE + "r" + CIRCLE
+# блоки, которые этот скрипт имеет право править; вне них незаконное поле только объявляется,
+# а снимает его владелец — снимать чужие поля рукой тот же грех, что и затирать чужой метод
+ENV_OWNED = ("integrityGate.", "libraryIndex20261023", "fourPointMassRegistry20261023.seriesAudit",
+             "reproducibility20261022.")
+
+
+def env_scan(corp):
+    """Съём чисел обхода: где они стоят и какие объявления о них живы.
+
+    Возвращает незаконные поля (число, названное счётчиком обхода, стоит вне штампа прогона и вне
+    объявленного списка), мёртвые объявления (список ссылается на несуществующее поле) и живые
+    объявления — тем же словарём, каким их пишет `apply_corpus`, чтобы сверка сравнивала два
+    одинаковых обхода, а не обход с памятью автора круга."""
+    declared = env_declared(corp)
+    leaves, in_pass, illegal, dead, live = [], [], [], [], {}
+
+    def walk(node, path):
+        if isinstance(node, dict):
+            for k, v in node.items():
+                pth = f"{path}.{k}" if path else str(k)
+                if isinstance(v, bool):
+                    continue
+                if isinstance(v, (int, float)):
+                    parts = [part.split("[")[0].lower() for part in pth.split(".")]
+                    if in_env_scope(pth) and any(m in str(k).lower() for m in ENV_MARK):
+                        if any(any(q in part for q in ENV_PASS) for part in parts):
+                            in_pass.append((pth, v))
+                        else:
+                            leaves.append((pth, v))
+                else:
+                    walk(v, pth)
+        elif isinstance(node, list):
+            for i, v in enumerate(node):
+                walk(v, "%s[%d]" % (path, i))
+
+    walk(corp, "")
+    for pth, _v in leaves:
+        if pth not in declared:
+            illegal.append(pth)
+    for pth in sorted(declared):
+        if resolve(corp, pth) is None:
+            dead.append(pth)
+        else:
+            live[pth] = declared[pth]
+    return {"обходных": len(leaves) + len(in_pass), "вШтампеПрогона": len(in_pass),
+            "объявлено": len(live), "живые": live, "незаконные": illegal,
+            "мертвыеОбъявления": dead, "пути": [pth for pth, _v in leaves + in_pass]}
+
+
+OWNED_BLOCK_RX = re.compile(r"(reshootCounters|pipelineScripts|countsNote|environmentScopedNumbers)"
+                              r"(\d{8})r(\d+)$")
+
+
+def keydate_audit(corp):
+    """Имя блока против его же штампа. Возвращает (проверено, расхождения) — и то и другое идёт в
+    сверку: круг, который переименовал блок, но не переставил отметку, обязан быть пойман машиной."""
+    bad, checked = [], 0
+
+    def walk(node, path):
+        nonlocal checked
+        if isinstance(node, dict):
+            m = OWNED_BLOCK_RX.search(str(path).split(".")[-1])
+            if m:
+                checked += 1
+                stamp = str(node.get("measuredAt") or "")[:10].replace("-", "")
+                if stamp and stamp != m.group(2):
+                    bad.append(f"{path}: имя блока датировано {m.group(2)}, а measuredAt — {stamp} "
+                               "(один из двух дней лишний; имена блоков этого скрипта обязаны совпадать "
+                               "с UTC-датой их штампа)")
+            for k, v in node.items():
+                if isinstance(v, (dict, list)):
+                    walk(v, f"{path}.{k}" if path else str(k))
+        elif isinstance(node, list):
+            for i, v in enumerate(node):
+                if isinstance(v, (dict, list)):
+                    walk(v, "%s[%d]" % (path, i))
+
+    walk(corp, "")
+    return checked, bad
 
 
 def pipeline_inventory():
@@ -407,6 +561,8 @@ def registry_numbers(corp: dict, idx_file: dict):
     out["mirror"] = mirror_audit(corp)
     out["json"] = json_leaf_scan()
     out["out"] = out_of_scope_mixed()
+    out["env"] = env_scan(corp)
+    out["keydate"] = keydate_audit(corp)
     out["stampPrev"] = (((corp.get("integrityGate") or {}).get("scopeOfMeasurementRules") or {})
                         .get("stampedFieldsPerRegistry") or {}).get("корпус")
     return out
@@ -429,7 +585,7 @@ def apply_corpus(corp: dict, n: dict) -> dict:
     addcmd = " || python3 -B scripts/atonement_reshoot_state.py --check"
     if "atonement_reshoot_state.py" not in str(li.get("recheckCommand", "")):
         li["recheckCommand"] = f"{li.get('recheckCommand', '')}{addcmd}"
-    li["countsNote20261026r" + CIRCLE] = (
+    li["countsNote" + KEY_DATE + "r" + CIRCLE] = (
         f"Круг {CIRCLE}: ценз переснят после того, как в индекс легла ещё одна запись (живой слепок) и одна "
         f"перестала быть живой (её носитель помечен «УСТАРЕЛО»): записей {cens['records']}, файлов "
         f"{cens['files']}, папок {cens['folders']}, носителей материала {cens['materials']}, с локатором "
@@ -454,9 +610,9 @@ def apply_corpus(corp: dict, n: dict) -> dict:
     cl["measuredAt"] = now
 
     rn = corp["reproducibility20261022"]
-    key = "reshootCounters20261026r" + CIRCLE
+    key = "reshootCounters" + KEY_DATE + "r" + CIRCLE
     extra = {
-        "что": ("числа, которые круг 63 переснимает по своим определениям и которым не место в "
+        "что": (f"числа, которые круг {CIRCLE} переснимает по своим определениям и которым не место в "
                 "countsLive: тот блок закрыт восемью проверяемыми счётчиками, а про это число гейт "
                 "ничего не знает — значит ему нужен собственный метод и команда"),
         "байтКорпуса": t["corpBytes"], "байтИндекса": t["idxBytes"],
@@ -490,10 +646,10 @@ def apply_corpus(corp: dict, n: dict) -> dict:
     # поле how — журнал пересъёмов, и оно обязано кончаться этим кругом: иначе следующая рука,
     # которая придёт править число, увидит обрыв на полуслове. Отметки времени здесь не добавляются:
     # строка без measuredAt не двигает тот самый счётчик, который она описывает
-    clause = (f"круг {CIRCLE}: {n['stampPrev']} → {n['stamp']['корпус']} (запись о слепке круга 63 в "
-              "driveMirrors, поправка перечисления в записи круга 61, метод и countsNote в блоке индекса, "
-              "пара отметок в новом блоке seriesAudit и этой строке — отметок не добавляется, иначе "
-              "собственный пересъём сдвигал бы число, которое он переснимает)")
+    clause = (f"круг {CIRCLE}: {n['stampPrev']} → {n['stamp']['корпус']} (прирост дают отметки времени "
+              "в тех блоках, которые круг трогает, — по measuredAt и checkedAt на блок; перечень таких "
+              "блоков — метод этого скрипта, а не память автора круга; самих чисел правка не двигает, "
+              "иначе собственный пересъём сдвигал бы число, которое он переснимает)")
     if clause not in str(sf.get("how", "")):
         sf["how"] = f"{sf.get('how', '')}; {clause}"
 
@@ -558,10 +714,12 @@ def apply_corpus(corp: dict, n: dict) -> dict:
         blk["measuredAt"] = now
 
     pinv = pipeline_inventory()
-    blk = corp["reproducibility20261022"].get("pipelineScripts20261026r" + CIRCLE) or {}
-    corp["reproducibility20261022"]["pipelineScripts20261026r" + CIRCLE] = {
+    blk = corp["reproducibility20261022"].get("pipelineScripts" + KEY_DATE + "r" + CIRCLE) or {}
+    corp["reproducibility20261022"]["pipelineScripts" + KEY_DATE + "r" + CIRCLE] = {
         "что": ("инструменты, которыми сняты числа этого круга: пересъёмщик, два писателя записей, гейт, "
-                "реестр доводов и батарея мутаций. Блок переснимается каждый прогон, потому что md5 файла "
+                "реестр доводов, батарея мутаций и — с круга 64 — сам порядок закрытия круга "
+                "`scripts/atonement_round_close.py`; в списке он потому, что вырезанный порядок "
+                "обнуляет смысл чисел ровно так же, как вырезанный пересъёмщик. Блок переснимается каждый прогон, потому что md5 файла "
                 "из памяти автора круга — это не замер, а обещание"),
         "файлов": pinv["файлов"], "байт": pinv["байт"], "файлы": pinv["файлы"],
         "зачемВДереве": ("круг 62 перенёс скрипты из песочницы в `scripts/`, но не запушил коммит — "
@@ -572,6 +730,46 @@ def apply_corpus(corp: dict, n: dict) -> dict:
         "recheckCommand": ("python3 -B scripts/atonement_reshoot_state.py --check   # сверит реестр с "
                            "файлами; руками: md5sum scripts/atonement_*.py"),
         "байтДоЭтогоПрогона": (blk.get("байт") if blk else None),
+    }
+
+    # числа обхода (круг 64). То, что меряет не дерево, а среду съёма, обязано назваться: живёт в
+    # штампе прогона — не сверяется, объявлено в списке — сверяется как запись о среде, стоит молча
+    # в сверяемом блоке — снимается сюда. Иначе следующий прогон краснеет на числе, верном по
+    # определению: ровно так доказательство круга 63 поймало gitObjectsConsidered на main.
+    env = n["env"]
+    stripped, foreign = {}, {}
+    for pth in env["незаконные"]:
+        parts = pth.split(".")
+        parent = resolve(corp, ".".join(parts[:-1]))
+        if isinstance(parent, dict) and parts[-1] in parent and any(pth.startswith(o) for o in ENV_OWNED):
+            val = parent.pop(parts[-1])
+            stripped[pth] = {"значение": val, "чемСнято": "scripts/atonement_reshoot_state.py --write",
+                             "почему": ("поле названо как счётчик обхода и стоит вне штампа прогона: "
+                                        "оно меряет среду съёма, а не дерево; в сверке ему места нет")}
+        else:
+            foreign[pth] = {"что": ("число обхода в блоке, который этот скрипт не правит; снимает его "
+                                    "владелец блока, а пересъёмщик только не даёт ему притвориться "
+                                    "числом дерева"),
+                            "можноИначе": ("объявить в " + ENV_DECL_BLOCK + ".поля с причиной и способом "
+                                           "пересъёма")}
+    prev_decl = (corp["integrityGate"].get(ENV_DECL_BLOCK) or {}).get("снятоКакМёртвое") or []
+    corp["integrityGate"][ENV_DECL_BLOCK] = {
+        "что": ("объявленные числа обхода: сколько объектов, коммитов, файлов или строк увидел чей-то "
+                "обход. Такое число относится к клону, а не к дереву: оно верно в своей среде и "
+                "расходится в чужой. Живёт в штампе прогона — не сверяется; объявлено здесь — сверяется "
+                "как запись о среде; молча стоит в сверяемом блоке — снимается в снятоЭтимКругом"),
+        "поля": env["живые"],
+        "пуст": len(env["живые"]) == 0,
+        "снятоЭтимКругом": stripped,
+        "ждётВладельца": foreign,
+        "снятоКакМёртвое": sorted(set(prev_decl) | set(env["мертвыеОбъявления"])),
+        "measuredAt": now, "checkedAt": now,
+        "how": ("числовой обход вселенной пересъёмщика по меткам имён полей (ENV_MARK этого скрипта) и "
+                "классификация по пути: штамп прогона против объявленного списка; список перечитывается "
+                "каждый прогон, потому что мёртвое объявление — это разрешение на будущее число"),
+        "method": "env_scan() в scripts/atonement_reshoot_state.py — определения, чем меряется обход",
+        "recheckCommand": ("python3 -B scripts/atonement_reshoot_state.py --check && python3 -B "
+                           "scripts/atonement_round_close.py --selfcheck"),
     }
 
     sa = corp["fourPointMassRegistry20261023"]["seriesAuditRound5820261026"]
@@ -610,8 +808,19 @@ def doc_numbers(corp: dict, n: dict) -> list:
     ndonot = len(corp.get("doNot") or [])
     holds = list(corp.get("holds") or [])
     num_hold = {5: "пять", 4: "четыре", 6: "шесть"}.get(len(holds), str(len(holds)))
-    idx_note = ("числа снимает scripts/atonement_reshoot_state.py --write, сверяет --check (шаг гейта); "
-                "до этого в строке стоял срез круга 60 (корпус 1 121 533 B)")
+    # «до этого стоял срез круга N» обязано браться из реестра, а не из памяти круга: строка
+    # переживает авторов, и вчерашняя правда в ней сегодня уже ложь (круг 64 поймал это сам: строка
+    # ещё звала прежний срез «кругом 60», хотя предыдущим был круг 63)
+    repro = corp.get("reproducibility20261022") or {}
+    prev = [(k.rsplit("r", 1)[1], (repro[k] or {}).get("байтКорпуса"))
+            for k in sorted(k for k in repro if k.startswith("reshootCounters") and not k.endswith("r" + CIRCLE))
+            if isinstance((repro[k] or {}).get("байтКорпуса"), int)]
+    if prev:
+        idx_note = ("числа снимает scripts/atonement_reshoot_state.py --write, сверяет --check (шаг гейта); "
+                    f"до этого в строке стоял срез круга {prev[-1][0]} ({num(prev[-1][1])} B)")
+    else:
+        idx_note = ("числа снимает scripts/atonement_reshoot_state.py --write, сверяет --check (шаг гейта); "
+                    "прежнего переснятого среза в реестре нет — строка ведётся с круга 63")
     return [
         (r"^\| `docs/research/atonement/`.*\|$",
          f"| `docs/research/atonement/` — читательско-исследовательская полоса | {t['docs'][0]} | "
@@ -715,7 +924,8 @@ def report_not_generated(corp: dict) -> str:
             "integrityGate.scopeOfMeasurementRules.stampedFieldsPerRegistry",
             "driveSourceAudit20261016.переснят20261025r45",
             "reproducibility20261022.indexBytesNote20261026r53",
-            "fourPointMassRegistry20261023.cardProseCrossCheck20261026r60.числа"]
+            "fourPointMassRegistry20261023.cardProseCrossCheck20261026r60.числа",
+            "integrityGate." + ENV_DECL_BLOCK]
     lines = ["этот скрипт переснимает только перечисленное; из разделов 9.1 и 9.2 документа 18 он "
              "проверяет (но не пишет) таблицу §9.1, а остальное — проза, порождённая утраченным "
              "финалайзером круга 61, и живёт до ближайшей ручной правки:", "  реестровые блоки-источник: "
@@ -809,14 +1019,31 @@ def diff_state(corp: dict, idx_file: dict, n: dict):
             drift.append(f"driveMirrors.{k}.разрывСДеревом.байт: реестр {decl}, обход {gap} "
                          "(поле объявлено пересъёмным на каждый прогон)")
     pinv = pipeline_inventory()
-    decl = corp["reproducibility20261022"].get("pipelineScripts20261026r" + CIRCLE) or {}
+    decl = corp["reproducibility20261022"].get("pipelineScripts" + KEY_DATE + "r" + CIRCLE) or {}
     if decl.get("файлы") != pinv["файлы"] or decl.get("байт") != pinv["байт"]:
-        drift.append("pipelineScripts20261026r" + CIRCLE + ": реестр описывает инструменты не этих байт — "
+        drift.append("pipelineScripts" + KEY_DATE + "r" + CIRCLE + ": реестр описывает инструменты не этих байт — "
                      "после любой правки скрипта блок обязан быть переснят (declared "
                      f"{decl.get('байт')}, обход {pinv['байт']})")
     if mir["неПрочитано"] and not mir["проверено"]:
         drift.append("зеркала Drive: " + "; ".join(mir["неПрочитано"]) + " — в такой среде поле "
                      "lagBehindGit никем не подтверждено")
+    for msg in n["keydate"][1]:
+        drift.append(msg)
+    env = n["env"]
+    edecl = corp["integrityGate"].get(ENV_DECL_BLOCK) or {}
+    forgiven = set((edecl.get("снятоЭтимКругом") or {})) | set((edecl.get("снятоКакМёртвое") or {}))
+    for pth in env["незаконные"]:
+        if pth not in forgiven:
+            drift.append(f"число обхода в сверяемом поле: {pth} — оно меряет среду съёма, а не дерево; "
+                         "место ему в штампе прогона или в integrityGate." + ENV_DECL_BLOCK + ".поля")
+    for pth in env["мертвыеОбъявления"]:
+        if pth not in set(edecl.get("снятоКакМёртвое") or []):
+            drift.append(f"integrityGate.{ENV_DECL_BLOCK}: объявленное число обхода {pth} не найдено в "
+                         "реестре — список объявлений становится разрешением на любое будущее число")
+    if edecl.get("поля") != env["живые"]:
+        drift.append(f"integrityGate.{ENV_DECL_BLOCK}.поля: реестр объявил {sorted(edecl.get('поля') or {})},"
+                     f" обход видит живыми {sorted(env['живые'])} — блок списков тоже обязан пересниматься")
+
     # «ноль расхождений» обязано быть отличимо от «сверять было нечего»: число групп и число
     # сравнений печатается в PASS и в --report, и считается оно из размера тех же обходов
     n["сверок"] = [
@@ -829,6 +1056,8 @@ def diff_state(corp: dict, idx_file: dict, n: dict):
         ("зеркала driveMirrors, прочитанные из blob'а", mir["проверено"] + len(mir["gap"] or {})),
         ("строки документа, которые порождает этот скрипт", len(doc_numbers(corp, n))),
         ("ячейки таблицы §9.1 (сверка, не генерация)", 7 * (len(SUBLANES) + 1) + 2),
+        ("числа обхода: где им место (круг 64)", len(n["env"]["пути"]) + n["env"]["объявлено"] + 1),
+        ("имена блоков против их штампов", n["keydate"][0]),
     ]
     return drift
 
@@ -861,7 +1090,11 @@ def main() -> int:
               f"{sha.get('uniqueShaTokens', -1)} токенов sha ({sha.get('reachableTokens', -1)} живых, "
               f"{sha.get('unreachableTokens', -1)} мёртвых), {st['корпус']} штампованных полей корпуса, "
               f"леджер {lc['записей']}/{lc['статусов']}, срез дерева и строки документа пересняты тем же "
-              f"обходом; сверено {sum(c for _g, c in n['сверок'])} чисел в {len(n['сверок'])} группах")
+              f"обходом; сверено {sum(c for _g, c in n['сверок'])} "
+              f"{plural(sum(c for _g, c in n['сверок']), 'число', 'числа', 'чисел')} в "
+              f"{len(n['сверок'])} {plural(len(n['сверок']), 'группе', 'группах', 'группах')}, "
+              f"чисел обхода {n['env']['обходных']} (в штампах прогона {n['env']['вШтампеПрогона']}, "
+              f"объявлено {n['env']['объявлено']})")
         return 0
     prev_keys = {k: len(json.dumps(v, ensure_ascii=False, indent=1).encode())
                  for k, v in corp.items()}

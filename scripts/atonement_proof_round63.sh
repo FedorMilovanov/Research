@@ -13,6 +13,14 @@
 # он лежал в песочнице, а не в main. Этот написан заново и лежит в репозитории; текст прежнего не
 # восстановлен, и притворяться, что восстановлен, круг не будет.
 #
+# С круга 64 к нему добавлены три проверки, которых в круге 63 не было: что порядок закрытия круга
+# печатается без записи, что писатели записей не запускаются без подтверждённого номера, и что число
+# среды, вписанное в сверяемое поле, ловится (в клонах вводится на минуту и откатывается `git
+# checkout`). Файл по-прежнему называется round63 — по кругу, в котором он появился; проверки в нём
+# не круговые, а именованные утраты (round61, round62) ничего не восстанавливают: прежнее имя
+# `atonement_close_round.py` осталось занятом утраченным счётчиком, и новый инструмент нарочно
+# называется иначе.
+#
 # Починка этого же круга, пропечатанная, потому что она о способе доказательства: первый вариант
 # писал строку статуса через `test -f … && say ок || say нет`, и `say` в ветке «ок» возвращал
 # ненулевой код (последняя команда функции — `[ "$3" = fail ]`), из-за чего вторая ветка выполнялась
@@ -70,7 +78,7 @@ fi
 for f in scripts/validate_atonement_corpus_integrity.py scripts/atonement_claim_register.py \
          scripts/atonement_reshoot_state.py scripts/atonement_drive_mirror_round63.py \
          scripts/atonement_library_index_round63.py scripts/run_atonement_mutation_battery.py \
-         scripts/atonement_proof_round63.sh; do
+         scripts/atonement_round_close.py scripts/atonement_proof_round63.sh; do
   if [ -f "$f" ]; then
     say "инструмент в каноне: $(basename "$f") ($(wc -c < "$f") B)" "да"
   else
@@ -148,7 +156,11 @@ recs = idx["records"]
 res.append(("ценз индекса: реестр %d/%d, обход %d/%d" % (cen["records"], cen["files"], len(recs),
             len([r for r in recs if r.get("kind") == "file"])),
             cen["records"] == len(recs)))
-inv = corp["reproducibility20261022"]["pipelineScripts20261026r63"]
+invk = sorted(k for k in corp["reproducibility20261022"] if k.startswith("pipelineScripts"))
+if not invk:
+    print("!! в реестре нет ни одного блока pipelineScripts — инвентарь инструментов снят с сверки")
+    sys.exit(1)
+inv = corp["reproducibility20261022"][invk[-1]]
 same, lines_same = True, True
 for rel, v in inv["файлы"].items():
     if not isinstance(v, dict):
@@ -157,8 +169,8 @@ for rel, v in inv["файлы"].items():
     raw = Path(rel).read_bytes()
     same &= hashlib.md5(raw).hexdigest() == v["md5"] and len(raw) == v["байт"]
     lines_same &= raw.count(b"\n") == v["строк"]
-res.append(("инвентарь инструментов (%d файла, %d B) равен байтам канона" % (inv["файлов"], inv["байт"]),
-            same and lines_same))
+res.append(("инвентарь инструментов (%s: %d файла, %d B) равен байтам канона"
+            % (invk[-1], inv["файлов"], inv["байт"]), same and lines_same))
 new = recs[-1]
 res.append(("последняя запись индекса — живой слепок %s… (%d B, %s)"
             % (new["driveId"][:7], new["bytes"], new["rights"]),
@@ -172,7 +184,7 @@ doc = Path("ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md").read_t
 audit = corp["fourPointMassRegistry20261023"]["seriesAuditRound5820261026"]["файлАудита"]
 res.append(("аудит: реестр знает %d B / %d строк, файл такой же" % (audit["байт"], audit["строк"]),
             audit["байт"] == len(doc.encode()) and audit["строк"] == doc.count("\n")))
-res.append(("в аудите есть §9.3 этого круга", "### 9.3" in doc))
+res.append(("в аудите есть §9.3 и §9.4 (круг 63 и круг 64)", "### 9.3" in doc and "### 9.4" in doc))
 bad = 0
 for msg, good in res:
     print("%3s) %s" % ("OK" if good else "!!", msg))
@@ -184,6 +196,61 @@ if [ $? -eq 0 ]; then
   say "сверка зеркал, инвентаря и бухгалтерии индекса" "сошлось"
 else
   say "сверка зеркал и инвентаря" "расхождение — см. строки !!" fail
+fi
+
+echo "--- порядок закрытия круга и числа среды (круг 64) ---"
+planout=$(python3 -B scripts/atonement_round_close.py --plan 2>&1)
+plancode=$?
+if [ "$plancode" = "0" ] && [ -z "$(git status --porcelain)" ] \
+   && printf '%s' "$planout" | grep -q "писатели, только по явному подтверждению"; then
+  say "close-round --plan печатает порядок и ничего не пишет" "да"
+else
+  say "close-round --plan" "код $plancode, грязь: $(git status --porcelain | head -1 | tr '\n' ' ')" fail
+fi
+before=$(md5sum ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json \
+          ИСКУПЛЕНИЕ/data/atonement-library-index.json | md5sum | cut -d" " -f1)
+refuse=$(python3 -B scripts/atonement_round_close.py --run --allow-appending-writers 2>&1)
+rcode=$?
+after=$(md5sum ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json \
+         ИСКУПЛЕНИЕ/data/atonement-library-index.json | md5sum | cut -d" " -f1)
+if [ "$rcode" = "2" ] && printf '%s' "$refuse" | grep -q "писатели разрешены флагом, но круг не назван" \
+   && [ "$before" = "$after" ]; then
+  say "писатели без номера круга не запущены, байты реестра не двинулись" "да"
+else
+  say "отказ запускать писателей" "код $rcode, байты целы: $([ "$before" = "$after" ] && echo да || echo нет)" fail
+fi
+python3 - <<'PYMUT'
+import json
+from pathlib import Path
+p = Path("ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json")
+c = json.loads(p.read_text(encoding="utf-8"))
+c["integrityGate"]["shaCitationAudit20261023"]["gitObjectsConsidered"] = 14661
+p.write_text(json.dumps(c, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+PYMUT
+out=$(python3 -B scripts/atonement_reshoot_state.py --check 2>&1)
+cc=$?
+git checkout -- ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json
+out2=$(python3 -B scripts/atonement_reshoot_state.py --check 2>&1)
+if [ "$cc" != "0" ] && printf '%s' "$out" | grep -q "число обхода в сверяемом поле" \
+   && printf '%s' "$out2" | grep -q "RE-SHOOT: PASS" && [ -z "$(git status --porcelain)" ]; then
+  say "пересъёмщик ловит внедрённое число среды, откат побайтовый" "да"
+else
+  say "ловля числа среды" "код $cc; после отката: $(printf '%s' "$out2" | tail -1 | cut -c1-60)" fail
+fi
+cjk=$(python3 - <<'PYCJK'
+from pathlib import Path
+lo, hi = chr(0x4E00), chr(0x9FFF)
+files = ["ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md", "scripts/atonement_reshoot_state.py",
+         "scripts/atonement_round_close.py", "scripts/atonement_proof_round63.sh",
+         "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json"]
+print(sum(1 for f in files for ch in Path(f).read_text(encoding="utf-8", errors="replace")
+          if lo <= ch <= hi))
+PYCJK
+)
+if [ "$cjk" = "0" ]; then
+  say "восточного начертания в прозе и инструментах круга нет" "да"
+else
+  say "CJK-скан круга" "символов: $cjk — правило гейта смотрит только сообщение коммита" fail
 fi
 
 echo "--- батарея мутаций (ловит ли гейт то, что обещает) ---"
