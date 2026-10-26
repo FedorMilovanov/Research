@@ -46,9 +46,15 @@ The evidence rule is the same as everywhere in this project: a work enters this 
 - **Witness:** рукописи «Педагога» — Paris, BnF, MS Grec 451 (913 или 914 г., писец Ваан для
   Арефы Кесарийского), кодекс неполон; лакуны закрывают списками — Modena, Biblioteca Estense,
   Miscellanea Greca 126 (XI в.) и Florence, Biblioteca Medicea Laurenziana, Plut. 5.24.
-  **Папирусного свидетеля гимна не найдено.** **Гимн отсутствует в одной из основных рукописей**,
-  откуда сомнение, не позднейшая ли это вставка (Гордли, сн. 10, со ссылкой на Cosgrove 2006,
-  266–268) — `ARCHIVE_HOLD`, `EVIDENCE_HOLD`; см. `CLM-PHOS-CLEM-MS-ABSENT`.
+  **Папирусного свидетеля гимна не найдено.** **Гимн отсутствует в основной рукописи**: аппарат
+  критического издания (Stählin, GCS 12, 1905, с. 291) — «Der Hymnus fehlt in P»; сохранён он
+  только в двух списках с P — F и M. Вывод «следовательно, это вставка» издатель отвергает:
+  «Das Fehlen des Hymnus in P darf … nicht gegen den clementinischen Ursprung angeführt werden».
+  Сверх того, гимн стоит **после** подписи сочинения «Κλήμεντος παιδαγωγοῦ α β γ», которая
+  имеется в P, F и M. `ARCHIVE_HOLD`; см. `CLM-PHOS-CLEM-MS-ABSENT` и
+  `CLM-PHOS-CLEM-HYMN-AFTER-SUBSCRIPTION`.
+- **Title in the manuscripts:** аппарат того же издания — «Überschrift in FM Ὕμνος τοῦ σωτῆρος
+  Χριστοῦ τοῦ ἁγίου Κλήμεντος». См. `CLM-PHOS-CLEM-TITLE`.
 - **Use in worship: свидетельства нет.** Пять голосов — Филлипс 1937, Шафф, Мессенджер 1942,
   Британника 1911 (о употреблении молчит) и Гордли — сходятся на том, что свидетеля
   употребления нет; Гордли: «there is no witness to the hymn's use in Clement's day». Двое
@@ -58,26 +64,38 @@ The evidence rule is the same as everywhere in this project: a work enters this 
   (XVII в.), что это одно из сочинений, о которых говорит Тертуллиан, — не свидетель
   (`CLM-PHOS-CLEM-BULL-CONJECTURE`).
 - **Melody:** нет. Размер классический количественный — ситуация `DUTCH-005`, а не `PHOS-002`.
-- **Greek text:** два доступных текста расходятся (`ἀρνῶν` / `ἀμνῶν`; `αἰνεῖν… ὑμνεῖν` /
-  `αἰνῶν… ὑμνῶν`). Критические издания названы и **не открыты**: Marcovich (VCS 61, 2002) и
-  Stählin/Treu (GCS 12, 3-е изд., 1972); локатор текста — **GCS 12, с. 291–292**.
-  `ARCHIVE_HOLD`; см. `CLM-PHOS-CLEM-SECOND-GREEK-TEXT`.
+- **Greek text:** прочитано критическое издание — **Stählin, GCS 12 (1905), с. 291–292**.
+  Оно печатает `ποιμὴν ἀρνῶν βασιλικῶν` и инфинитивы `αἰνεῖν ἁγίως`, `ὑμνεῖν ἀδόλως`; чтения
+  издания Элладской церкви (`ἀμνῶν`; причастия) критическими не являются. Расхождение снято;
+  текущее издание (Stählin/Treu, 3-е изд., 1972) и Marcovich (VCS 61, 2002) **не сверены** —
+  `ARCHIVE_HOLD`. Важное частное чтение: стих 3 `νηῶν` — конъектура Кантера, рукописи F и M
+  читают `νηπίων`; переводы расходятся ровно здесь (`CLM-PHOS-CLEM-NEON-EMENDATION`).
+- **Metre:** по Виламовицу (передано Штелином, с. LXXV) — анапестические монометры с
+  завершающими слоговыми комплексами; 4-й пэон в стихах 4 и 31; пароймиак в 10 и 30; та же
+  форма, что у «песенки нильских лодочников» **P.Oxy. III № 425**; «das Metrum ist nicht zu
+  beanstanden» — предложенные перестановки и вычёркивания отвергнуты.
+  См. `CLM-PHOS-CLEM-METRE-WILAMOWITZ`.
 - **Why it is not in the series yet:** правило Смита 2011, с. 211
   (`CLM-PHOS-002-SETS-CRITERION`) требует вместе богослужебного употребления и небиблейского
   происхождения; Климент проходит вторую половину и не проходит первую —
   `CLM-PHOS-CLEM-SERIES-RULE`.
-- **Five obstacles (none removed):** 1) свидетельства богослужебного употребления нет;
-  2) мелодии нет, размер количественный; 3) датировка широкая; 4) греческий текст расходится
-  в доступных изданиях, критическое издание не смотрено; 5) гимн отсутствует в одной из
-  основных рукописей, есть сомнение, не вставка ли это.
+- **Five obstacles (четыре остаются, одно снято):** 1) свидетельства богослужебного
+  употребления нет; 2) мелодии нет, размер количественный (но метрически текст исправен);
+  3) датировка широкая; ~~4) греческий текст расходится~~ — **снято 2026-10-26 по критическому
+  изданию**; 5) гимн отсутствует в основной рукописи P и засвидетельствован только двумя
+  списками с неё; сомнение в том, что это вставка, издателем отвергнуто.
 - **Russian translation:** нет. До решения владельца ничего из этого кандидата в копию не брать.
 - **Production:** `NOT_STARTED`. **Publication status:** `UNKNOWN_NOT_VERIFIED` — публиковать
   нечего.
 - **Research record:** `DOSSIER_PHOS-007_CLEMENT_HYMN.md` (часть 1: текст, рукописи, датировка) ·
   `DOSSIER_PHOS-007_PART2_USE_AND_WITNESS.md` (часть 2: употребление и свидетели) ·
   `DOSSIER_PHOS-007_PART3_VOICES_AND_TEXT.md` (часть 3: голоса и текстология).
-- **Next reading (nothing opened yet):** Gerhard May, «Der Christushymnus des Clemens von
-  Alexandrien», *Liturgie und Dichtung* 1 (1983): 257–273; Annewies van den Hoek, «Hymn of the
+- **Next reading (nothing opened yet):** **Stählin, GCS 12, с. XVII–XVIII** — состояние кодекса
+  P, основание вывода, что отсутствие гимна не аргумент против Климента; **там же, с. 339f** —
+  второе стихотворение-подражание; 3-е изд. GCS 12 (Treu, 1972) и Marcovich 2002 — сверка
+  чтений; Harnack, *Chronologie* II, 22 и сл. — аргументы против Климентова авторства;
+  Gerhard May, «Der Christushymnus des Clemens von Alexandrien», *Liturgie und Dichtung* 1
+  (1983): 257–273; Annewies van den Hoek, «Hymn of the
   Holy Clement to Christ the Saviour», in *Prayer from Alexander to Constantine*, ed. Mark
   Christopher Kiley (Routledge, 1997), 296–303; Cosgrove 2006, 266–268; *Le Pédagogue: Livre
   III* (SC 158, 1970), 257–273 — примечания Марру; Wolbergs, *Griechische religiöse Gedichte*;
