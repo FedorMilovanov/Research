@@ -107,6 +107,34 @@
         "Athenogenes of Sebasteia (m. c. 305/311) is named because Basil mentions his hymn in the next sentence; the two testimonies were conflated. Sophronius of Jerusalem (560-638) is the ascription printed in the modern Russian Horologion and is contradicted by P. Lond. 2037B.",
         "Neither attribution may be stated in public copy as fact."
       ]
+    },
+    {
+      "id": "CLEM-001",
+      "canonicalName": "Clement of Alexandria",
+      "nameVariants": [
+        "Titus Flavius Clemens",
+        "Clemens Alexandrinus",
+        "Κλήμης ὁ Ἀλεξανδρεύς",
+        "Климент Александрийский"
+      ],
+      "russianDisplayName": "Климент Александрийский",
+      "lifeDates": "ок. 150 – ок. 215",
+      "roles": [
+        "Christian teacher in Alexandria",
+        "author of the Paedagogus"
+      ],
+      "context": "Alexandria at the end of the 2nd century. The hymn stands at the close of the third book of the Paedagogus (III 101; cited by Gordley as 3.12.101.4) and is the only hymn attributed to him.",
+      "sourceIds": [
+        "SRC-PHOS-CLEM-GORDLEY",
+        "SRC-PHOS-CLEM-MCCLINTOCK",
+        "SRC-PHOS-CLEM-BRILL-BIBL",
+        "SRC-PHOS-CLEM-TEXT"
+      ],
+      "notes": [
+        "Attribution is the common view but not unqualified: Gordley writes «Clement (or some other early Christian) has written this metrical hymn» — CLM-PHOS-CLEM-ATTRIBUTION-HEDGE.",
+        "The hymn is missing from one of the primary manuscripts of the Paedagogus, which is why some scholars ask whether it is a secondary addition — CLM-PHOS-CLEM-MS-ABSENT.",
+        "Nothing from this author may be stated in public copy before the owner decides whether the candidate enters the series."
+      ]
     }
   ]
 }

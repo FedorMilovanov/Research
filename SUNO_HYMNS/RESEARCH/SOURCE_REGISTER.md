@@ -1047,3 +1047,107 @@ The Greek lane is registered in the same file as the Dutch one because it is the
 - HOLDs: ARCHIVE_HOLD, LOCATOR_HOLD, RIGHTS_HOLD
 - Supports: «neither now nor (so far as we know) at any time have they been used for liturgical purposes» — о гимне Климента и двух других греческих гимнах того же периода; «It is thus the earliest Christian hymn that can be definitely dated»; Размер — анапестический диметр; тем самым гимн «lies off the main track on which Eastern hymnody was to proceed»
 - Limits / caveats: Сама книга не открывалась: цитата приведена внутри страницы SRC-PHOS-CLEM-HYMNARC, номер страницы не указан. URL — страница, на которой прочитана цитата, а не книга. Записано как NOT_ACQUIRED намеренно: это держит формулировку «древнейший датируемый» честной.
+
+## SRC-PHOS-CLEM-EB1911 — Encyclopaedia Britannica (11-е изд.), т. 14, статья «Hymns», с. 182 — Климент, агапы Тертуллиана, вариант начала гимна
+
+- URL: https://en.wikisource.org/wiki/Page:EB1911_-_Volume_14.djvu/194
+- Source role/type: Энциклопедическая статья (1911), вычитанный скан страницы
+- Evidence class: C
+- Access state: FULL_OBJECT_VERIFIED
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: Clement's hymn, in a short anapaestic metre, beginning στόμιον πώλων ἀδαῶν (or, according to some editions, βασιλεῦ ἁγίων, λόγε πανδαμάτωρ — translated by the Rev. A. Chatfield, «O Thou, the King of Saints, all-conquering Word»), is rapid, spirited and well-adapted for singing; Джордж Булл, епископ Сент-Дейвидса, believed one of those primitive compositions to be the hymn appended by Clement of Alexandria to his Paedagogus; Тертуллиан об агапах: после омовения рук и внесения светильников каждый приглашался спеть Богу «ut quisque de Sacris Scripturis vel proprio ingenio potest» — из Писаний или своего сочинения; Фрагмент Кая у Евсевия: «all the psalms and odes written by faithful brethren from the beginning» воспевают Христа, Слово Божие, как Бога; Третий гимн — вечерний, «при возжении светильников» (φῶς ἱλαρὸν ἁγίας δόξης) — «holds its place to this day in the services of the Greek rite»
+- Limits / caveats: Страница прочитана целиком (оба фрагмента); статья 1911 г., то есть уровень вторичного обзора столетней давности. Филон, Тертуллиан и Кай цитируются внутри статьи, не по сочинениям; греческий текст «Педагога» не сличался.
+
+## SRC-PHOS-CLEM-ECW-BAPTIZED — Early Christian Writings — «To the Newly Baptized» Климента (Баттерворт, Loeb, 1919, с. 370–377), греческий и английский
+
+- URL: http://www.earlychristianwritings.com/text/clement-baptized-uni.html
+- Source role/type: Цифровая перепечатка святоотеческого текста (греческий и английский)
+- Evidence class: C
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: «To the Newly Baptized» — не гимн Климента, а другое сочинение: «ὁ προτρεπτικὸς εἰς ὑπομονὴν ἢ πρὸς τοὺς νεωστὶ βεβαπτισμένους· κλήμεντος παραγγέλματα» («Exhortation to Endurance, or To the Newly Baptized; Precepts of Clement»), прозаические наставления; Текст взят из Butterworth, Clement of Alexandria, с. 370–377 (Loeb Classical Library, первое издание 1919)
+- Limits / caveats: Прочитан первый фрагмент страницы из трёх. Значение отрицательное: греческого текста гимна здесь нет; название «To the Newly Baptized» обманывает, потому что Мессенджер описывает гимн как благодарение новопринятых в Церковь.
+
+## SRC-PHOS-CLEM-BRILL-BIBL — Hrůšová & Gyurkovics, «Comprehensive Bibliography on Clement's Paedagogus», в: Clement of Alexandria's Paedagogus (Brill, VCS 188, 2025), с. xv сл.
+
+- URL: https://brill.com/display/book/9789004721920/front-1.pdf
+- Source role/type: Библиографический указатель в научном сборнике (2025)
+- Evidence class: C
+- Access state: PARTIAL_OBJECT
+- Locator state: COARSE_LOCATOR_ONLY
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: Cosgrove, Charles H. «Clement of Alexandria and Early Christian Music», Journal of Early Christian Studies 14 (2006): 255–282; Burini De Lorenzi, Clara. «Il linguaggio celebra il Logos. Sull'Inno a Cristo Salvatore di Clemente Alessandrino», Sandalion 31 (2008): 105–144; Критические издания: Marcovich, Clementis Alexandrini Paedagogus (VCS 61, Brill, 2002); Stählin/Treu, GCS 12, 3-е изд., Akademie Verlag, 1972; Переводы: Уилсон (англ., ANF т. 2, 1869), Вуд (англ., 1954), Виммер (нем.), Эрве (лат.), Харль и Марру (фр., SC 70, 1960), Мондезер и Марру (фр., SC 108, 1965)
+- Limits / caveats: Прочитаны выходные данные, оглавление, предисловие и часть библиографии (до буквы G). Список использован как указатель, а не как основание выводов: сами работы не открыты.
+
+## SRC-PHOS-CLEM-COSGROVE — Charles H. Cosgrove, «Clement of Alexandria and Early Christian Music», Journal of Early Christian Studies 14/3 (2006): 255–282
+
+- URL: https://muse.jhu.edu/article/202616
+- Source role/type: Статья в рецензируемом журнале (2006)
+- Evidence class: C
+- Access state: NOT_ACQUIRED
+- Locator state: COARSE_LOCATOR_ONLY
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: ARCHIVE_HOLD, LOCATOR_HOLD, RIGHTS_HOLD
+- Supports: По аннотации издателя, статья разбирает буквальные высказывания Климента о музыке во всей полноте, и среди тем прямо названа «the hymn that closes the Paedagogos»
+- Limits / caveats: Project MUSE помечает статью Open Access, но отдаёт содержимое только через капчу: прочитаны аннотация и выходные данные. Ссылка (том, выпуск, страницы) взята из двух мест — библиографии Brill и карточки статьи в MUSE, — но по самой статье не проверена, поэтому locatorState понижен до приблизительного. Ни одно утверждение на этой статье не построено.
+
+## SRC-PHOS-CLEM-OXY-PAPYRI — Blumell & Wayment, Christian Oxyrhynchus: Texts, Documents, and Sources (Baylor, 2015) — сводка христианских папирусов Оксиринха
+
+- URL: https://www.academia.edu/20108806/Christian_Oxyrhynchus_Texts_Documents_and_Sources
+- Source role/type: Сводка христианских папирусов (2015)
+- Evidence class: C
+- Access state: NOT_ACQUIRED
+- Locator state: LOCATOR_MISSING
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: ARCHIVE_HOLD, LOCATOR_HOLD, RIGHTS_HOLD
+- Supports: Среди христианских литературных папирусов Оксиринха значится Климент с отсылкой Paedagogus 3.82.3 (LDAB 632) — если чтение таблицы верно; P.Oxy. III 406: III в., 10,1 × 7,5 см, TM 62336, Van Haelst 1152; Grenfell & Hunt, The Oxyrhynchus Papyri III (London, 1903), 11–12 (№ 406); надписан как «Patristic Author(?)»
+- Limits / caveats: Сама книга не открыта: таблица читалась по поисковой выдаче, где её разметка двоякая. Отрицательный вывод (папирусного свидетеля гимна не найдено) от этого чтения не зависит.
+
+## SRC-PHOS-CLEM-GORDLEY — Matthew E. Gordley, отрывок из книги «Teaching through Song in Antiquity» (Mohr Siebeck), с. 371–381, о гимне Климента — блог-публикация автора от 6 декабря 2019 г.
+
+- URL: http://matthewgordley.blogspot.com/2019/12/clement-of-alexandrias-hymn-to-christ.html
+- Source role/type: Отрывок из научной монографии, опубликованный автором (2019)
+- Evidence class: C
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: «The original function of the hymn is debated, as there is no witness to the hymn's use in Clement's day» — свидетельства употребления гимна в дни Климента нет; «it is most likely that the hymn was used in some kind of a communal setting. Its contents, which very directly refer to the act of singing and praising on behalf of the followers of Christ, suggest that the hymn was not merely literary ornamentation for Clement's Paedagogus» — вероятностный вывод: гимн был не только литературным украшением; Четыре признака, что эпилог «Педагога» — гимн: в рукописях он назван гимном в заглавии; сложен греческим размером; содержит призывы присоединиться к хвале Христу; содержит цепи эпитетов в традиции греческих гимнов; «a sixty-six line metrical Greek hymn» — 66 строк; «there is no agreement as to the precise structure of the hymn» — относительно строения согласия нет; Волбергс делит 1–32 и 33–66, сам Гордли — семь строф (1–10, 11–18, 19–28, 29–34, 35–41, 42–53, 54–66); Сноска 10: GCS 12:291–292; «The fact that the hymn is missing from one of the primary manuscripts of Paedagogus leads some scholars to question whether the hymn is a secondary addition», со ссылкой на Cosgrove 2006, 266–268; «Though scholars agree that Clement (or some other early Christian) has written this metrical hymn in a Greek style…» — оговорка об авторстве; «may be analyzed as a well-balanced collection of couplets of anapestic lines, which have a rather free character and may reflect a semi-popular feel»; Христос назван по имени только в строке 10 — «Christ, the guide of children»; Марру (SC 158, с. 194) указывает, что этот эпитет у Гомера и прилагался к Зевсу, Аполлону и Афродите; Ссылка на место гимна в сочинении: Paedagogus 3.12.101.4; Сноска 1: Clement, «To the Newly Baptized», в пер. Баттерворта (Harvard UP, 1979), с. 368–377, здесь 375 — подтверждает, что это отдельное сочинение, а не гимн
+- Limits / caveats: Прочитаны фрагменты 0–4 из шести публикации; шестой фрагмент (окончание сносок 1–9) не прочитан. Читался блог-отрывок, а не сама книга. Ссылки на Косгроува, Мая, Волбергса и Марру прочитаны только как ссылки Гордли, сами работы не открыты.
+
+## SRC-PHOS-CLEM-MCCLINTOCK — McClintock and Strong, Cyclopedia of Biblical, Theological, and Ecclesiastical Literature, статья «Stomion Polon Adaon» (подпись B.P.), переиздание на biblicalcyclopedia.com
+
+- URL: https://www.biblicalcyclopedia.com/S/stomion-polon-adaon.html
+- Source role/type: Энциклопедическая статья XIX века (электронная перепечатка)
+- Evidence class: C
+- Access state: FULL_OBJECT_VERIFIED
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: Заглавие гимна: «The title of the hymn is Ὕμνος τοῦ Σωτῆρος Χριστοῦ, i.e. «Hymn of the Savior Christ»»; Греческий текст первых восьми стихов: Στόμιον πώλων ἀδαῶν, πτερὸν ὀρνίθων ἀπλανῶν, οἴαξ νηῶν ἀτρεκής, ποιμὴν ἀρνῶν βασιλικῶν· τοὺς σοὺς ἀφελεῖς παῖδας ἄγειρον, αἰνεῖν ἁγίως, ὑμνεῖν ἀδόλως, ἀκάκοις στόμασιν παίδων ἡγήτορα Χριστόν — совпадает с текстом catholiclibrary; «It is the oldest Christian hymn extant» — без названного критерия; Три английских перевода: У. Уилсон (Ante-Nicene Christian Library, т. 4, Clement of Alexandria, 1, 343 сл.); миссис Чарльз (Christian Life in Song, с. 44 сл.); Сэвилл (Lyra Sacra, Лондон, 1865, с. 5; принят Шаффом в Christ in Song, с. 675); Отсылка за немецкими переводами и разбором содержания и строения гимна: проф. Пайпер, Evangelischer Kalender за 1868 г., с. 17–39
+- Limits / caveats: Статья прочитана целиком (один фрагмент). Источник XIX века: утверждение «древнейший сохранившийся христианский гимн» дано без критерия и не проверялось. Оцифровка с дефектами (пропущенные придыхания; «18605» вместо 1865). Заглавие набрано с нестандартной сигмой.
+
+## SRC-PHOS-CLEM-APOSTOLIKI — Αποστολική Διακονία της Εκκλησίας της Ελλάδος — «Οι Μελωδοί και Υμνογράφοι της Εκκλησίας», статья «ΚΛΗΜΗΣ Ο ΑΛΕΞΑΝΔΡΕΥΣ»
+
+- URL: https://byzantine-music.apostoliki-diakonia.gr/ymnografoi/ymnografoi.asp?main=melodoi_sort.asp&page=101
+- Source role/type: Справочник издательства Элладской церкви (электронная публикация)
+- Evidence class: C
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: Греческий текст начала гимна: «Στόμιον πώλων ἀδαῶν, πτερὸν ὀρνίθων ἀπλανῶν, οἴαξ νηῶν ἀτρεκής, ποιμήν ἀμνῶν Βασιλικῶν, τούς σούς ἀφελεῖς παῖδας ἄγειρον, αἰνῶν ἀγίως, ὑμνῶν ἀδόλως, ἀκάκοις στόμασι παίδων ἡγήτορα Χριστόν…»; «ὁ ὁποῖος πιθανῶς ἐψάλλετο ἀπό τή σχολή στούς μαθητές του» — гимн, вероятно, пелся школой его ученикам (сноска 23; текст сноски не прочитан); «Ὁ ὕμνος ἀποτελεῖ ἐπίκληση πού ἀπευθύνουν οἱ «Χριστογόνοι», ὁ χορός τῆς εἰρήνης, πλεκόμενη μέ ἄφθονα ἐπίθετα» — гимн как обращение «Христорожденных», хора мира; Климент «Ἐποίησε ἀσματικές ὠδές καί ὕμνους» и увещевал христиан пользоваться музыкой благопристойной, а не распущенной
+- Limits / caveats: Прочитан фрагмент 4 из девяти страницы-указателя; сноска 23 не прочитана. Источник церковного издательства и не называет оснований: «πιθανῶς» — вероятностное суждение, а не свидетель. Текст содержит чтения, расходящиеся с catholiclibrary: ἀμνῶν вместо ἀρνῶν; αἰνῶν/ὑμνῶν вместо αἰνεῖν/ὑμνεῖν.

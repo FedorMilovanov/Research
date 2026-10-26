@@ -673,6 +673,83 @@
         "The nominative «Иисус Христос» / «Сын Божий» is an address by position and context, not by form: Russian lost the vocative, and the Church Slavonic -е forms would have raised the register above the Greek, which uses the vocative neutrally. The owner chose register over case.",
         "«Oldest» may be said only in the full form: the earliest non-scriptural Christian hymn whose complete text survives and which has been sung continuously to this day. It is not the oldest by manuscript (P. Lond. 2037B, 6th–7th c.; P.Oxy. XV 1786, c. 250–300) or by composition (Odes of Solomon, c. 70–125). Verified 2026-10-26; dossier § 3.4–3.6."
       ]
+    },
+    {
+      "id": "PHOS-007",
+      "displayTitle": "Гимн Христу Спасителю (кандидат, в производство не принят)",
+      "displayTitleStatus": "WORKING_TITLE_NOT_OWNER_APPROVED",
+      "originalTitleVariants": [
+        "Ὕμνος τοῦ Σωτῆρος Χριστοῦ",
+        "Στόμιον πώλων ἀδαῶν",
+        "Βασιλεῦ ἁγίων, λόγε πανδαμάτωρ (opening in some editions)",
+        "Hymn to Christ the Savior",
+        "Bridle of untamed colts",
+        "Shepherd of tender youth"
+      ],
+      "historicalAuthor": {
+        "name": "Clement of Alexandria",
+        "years": "ок. 150 – ок. 215",
+        "role": "author, commonly attributed but not unqualified"
+      },
+      "textCategory": "Greek hymn in short anapaestic metre closing the third book of the Paedagogus; 66 lines in most modern accounts, 64 in Wood; openings and line counts differ between editions",
+      "sourceChain": [
+        "Manuscripts of the Paedagogus: Paris, BnF, MS Grec 451 (913 or 914, scribe Baanes for Arethas), imperfect; lacunae supplied from Modena, Biblioteca Estense, Miscellanea Greca 126 (11th c.) and Florence, Biblioteca Medicea Laurenziana, Plut. 5.24",
+        "Greek text read in this pass at catholiclibrary.org; second accessible Greek text (Apostoliki Diakonia) differs from it in two places",
+        "Critical editions named but not opened: Marcovich (VCS 61, 2002); Stählin/Treu (GCS 12, 3rd ed., 1972), text at pp. 291–292",
+        "No papyrus witness found for the hymn; the hymn is absent from one of the primary manuscripts"
+      ],
+      "tuneDirection": "No historical melody. The metre is quantitative (anapaestic dimeters); no musical notation survives and there is no witness that the hymn was sung in worship in Clement's day.",
+      "structure": {
+        "lines": 66,
+        "note": "66 lines per Gordley and van den Hoek; 64 per Wood. Divisions disagree: Wolbergs 1–32 / 33–66; Gordley seven strophes (1–10, 11–18, 19–28, 29–34, 35–41, 42–53, 54–66); further outlines by Ferguson, Marrou and May. Gordley: «there is no agreement as to the precise structure of the hymn».",
+        "source": "Gordley, Teaching through Song in Antiquity, 371–381, read as a blog excerpt; structure claims verified only there"
+      },
+      "productionState": "NOT_STARTED",
+      "publicPublicationStatus": "UNKNOWN_NOT_VERIFIED",
+      "promptCapture": "NOT_CAPTURED",
+      "authorId": "CLEM-001",
+      "workType": "ANCIENT_GREEK_TREATISE_EPILOGUE_HYMN",
+      "sourceIds": [
+        "SRC-PHOS-CLEM-TEXT",
+        "SRC-PHOS-CLEM-GORDLEY",
+        "SRC-PHOS-CLEM-MCCLINTOCK",
+        "SRC-PHOS-CLEM-APOSTOLIKI",
+        "SRC-PHOS-CLEM-EB1911",
+        "SRC-PHOS-CLEM-HYMNARC",
+        "SRC-PHOS-CLEM-WEBSTER",
+        "SRC-PHOS-CLEM-MESSENGER-VI",
+        "SRC-PHOS-CLEM-BRILL-BIBL",
+        "SRC-PHOS-CLEM-COSGROVE",
+        "SRC-PHOS-CLEM-OXY-PAPYRI",
+        "SRC-PHOS-CLEM-ECW-BAPTIZED",
+        "SRC-PHOS-OXY-TEXT"
+      ],
+      "claimIds": [
+        "CLM-PHOS-CLEM-SERIES-RULE",
+        "CLM-PHOS-CLEM-SINGABILITY",
+        "CLM-PHOS-CLEM-BULL-CONJECTURE",
+        "CLM-PHOS-CLEM-VARIANT-OPENING",
+        "CLM-PHOS-CLEM-PAPYRUS-SEARCH",
+        "CLM-PHOS-CLEM-NO-SECOND-EDITION",
+        "CLM-PHOS-CLEM-NEXT-READING",
+        "CLM-PHOS-CLEM-GORDLEY-NO-WITNESS",
+        "CLM-PHOS-CLEM-MS-ABSENT",
+        "CLM-PHOS-CLEM-TITLE",
+        "CLM-PHOS-CLEM-SECOND-GREEK-TEXT",
+        "CLM-PHOS-CLEM-STRUCTURE-DISPUTED",
+        "CLM-PHOS-CLEM-ATTRIBUTION-HEDGE",
+        "CLM-PHOS-CLEM-OLDEST-CLAIM-CRITERIA",
+        "CLM-PHOS-CLEM-NEXT-READING-2"
+      ],
+      "qaStatus": "OPEN",
+      "textChainNote": "The hymn survives inside a prose treatise, not in a liturgical book and not on papyrus. It is titled a hymn in the manuscripts (Ὕμνος τοῦ Σωτῆρος Χριστοῦ) and composed in metre, but no source read in this pass reports it being sung in worship; two sources offer a cautious probability of a communal or school setting.",
+      "openChecks": [
+        "Decide whether the candidate enters the series at all: it fails the first half of the Smith 2011 criterion (CLM-PHOS-CLEM-SERIES-RULE).",
+        "Read May 1983 and van den Hoek 1997 — neither opened.",
+        "Open Cosgrove 2006, 266–268, on the manuscript that lacks the hymn (MUSE serves it only behind a captcha).",
+        "Collate the Greek against Marcovich 2002 or Stählin/Treu GCS 12, 291–292; settle ἀρνῶν / ἀμνῶν and the infinitive / participle reading.",
+        "Settle the line count (66 vs 64) and the reference form (Paed. 3.101 vs 3.12.101.4) before any text work."
+      ]
     }
   ],
   "adjacentNonDutchWorks": [

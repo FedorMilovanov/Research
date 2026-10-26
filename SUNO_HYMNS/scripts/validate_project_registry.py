@@ -36,6 +36,10 @@ WORK_TYPES = {
     # The ancient-hymn lane: a whole pre-Reformation Greek or Latin hymn, carried as a
     # text with a named witness rather than as a poem with a printed tune direction.
     "ANCIENT_GREEK_LAMPLIGHTING_HYMN",
+    # Added 2026-10-26 for PHOS-007: a Greek hymn in classical quantitative metre that
+    # closes a prose treatise. It is carried as a candidate rather than as a track — no
+    # witness of liturgical use, no melody, and the text itself unsettled between editions.
+    "ANCIENT_GREEK_TREATISE_EPILOGUE_HYMN",
 }
 CANDIDATE_STATES = {"OPEN", "ACTIVATED", "REJECTED", "SUPERSEDED"}
 CLAIM_STATES = {
