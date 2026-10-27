@@ -69,6 +69,7 @@ Each direction is recorded with: an ID, a one-line label, the prompt string, wha
 | DUTCH-002 | Guitar excluded | part of the above per-work brief only |
 | DUTCH-003 | Either atmospheric guitar and cello, or a cappella with organ/cello/male ensemble entering after the sonnet's turn | `DISCUSSED_NOT_APPROVED` |
 | DUTCH-004 | Chamber setting — cello, contrabass, theorbo, small organ pad, one flute line; two-voice choir from verse 4, four parts only in verse 7; ♩=65, 3/4 | `AUTHORED` in the production package; never generated |
+| **Раздел исследований** (`RESEARCH/RESEARCH_LANE_NOT_FOR_SINGING.md`) | Правила текста, стиля, произношения и экспорта к карточкам этой рубрики **не применяются**: они не поются и не публикуются как треки. Там не бывает русского текста для пения, стилевых направлений, обложек и подсчётов — только чтение источников и материал для статей. Первая карточка — PHOS-004 | `OWNER_DECISION_2026-10-27` |
 | DUTCH-CAND-021 (*Heerlijckheyds Loff*) | Male monastic ensemble and epic organ — **and a duplication risk:** the same brief appears under DUTCH-002, and with no verbatim prompts held, it is not now determinable whether one prompt was reused for two poems | `DISCUSSED_NOT_APPROVED` |
 
 ## Pronunciation marks

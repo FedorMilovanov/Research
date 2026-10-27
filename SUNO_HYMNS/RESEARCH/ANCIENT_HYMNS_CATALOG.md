@@ -8,6 +8,11 @@ The evidence rule is the same as everywhere in this project: a work enters this 
 
 Кандидаты, которые ещё не взяты в производство, но проверены настолько, чтобы стоять в очереди, описаны отдельно: [`SERIES_ANCIENT_HYMNS_ROADMAP.md`](SERIES_ANCIENT_HYMNS_ROADMAP.md). Предлагаемый порядок — `PHOS-003` «Слава в вышних» (два свидетеля, полный текст), затем `PHOS-006` *Lumen Hilare* как парный трек, затем `PHOS-002` Оксиринхский гимн — и только после решения владельца о лакунах. Оды Соломона в серию не входят: древнее, но богослужебного употребления не засвидетельствовано.
 
+**PHOS-004** `Ὑπὸ τὴν σὴν εὐσπλαγχνίαν` (*Sub tuum praesidium*) в этот каталог **не входит**: решением
+владельца 2026-10-27 гимн снят из очереди на пение и переведён в раздел исследований
+[`RESEARCH_LANE_NOT_FOR_SINGING.md`](RESEARCH_LANE_NOT_FOR_SINGING.md) — изучается, но не поётся.
+Досье: [`DOSSIER_PHOS-004_SUB_TUUM.md`](DOSSIER_PHOS-004_SUB_TUUM.md).
+
 ## PHOS-001 — Φῶς ἱλαρόν (*Phos Hilaron*, «Свет Отрадный»)
 
 - **Russian release title (approved by the owner 2026-10-26):** **«Свет Отрадный»** — capital О as the owner wrote it; the verse line keeps the lowercase «отрадный». The title «Свете тихий» is **not** available: it is the name of the Church Slavonic liturgical text, and using it would present a new Russian translation as that text.
