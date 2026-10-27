@@ -36,6 +36,7 @@ CORPUS_GIT_PATH = "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json"
 CIRCLE = "66"
 PREV_DRIVE_ID = "19-lyyyES9cCL_fNN3xVUNM5j8hV7ZFXh"
 MIRROR_TOOL = "atonement_drive_mirror_round66.py"
+COUNTS_NOTE = "countsNote20261027r66"   # литералом: по нему же ищет CI-греп
 
 
 def _load_mirror():
@@ -144,7 +145,7 @@ def main() -> int:
     prev = [r for r in idx["records"] if r.get("driveId") == PREV_DRIVE_ID]
     assert len(prev) == 1, f"прежняя запись о слепке должна быть одна, их {len(prev)}"
     already = [r for r in idx["records"] if r.get("driveId") == live["id"]]
-    note_key = f"countsNote20261027r{CIRCLE}"
+    note_key = COUNTS_NOTE
     note_present = note_key in (json.loads(CORPUS.read_text(encoding="utf-8"))
                                 .get("libraryIndex20261023") or {})
     if already:
@@ -188,7 +189,7 @@ def main() -> int:
     after = census(idx["records"])
     print("ценз после:", json.dumps(after, ensure_ascii=False))
     corp = json.loads(CORPUS.read_text(encoding="utf-8"))
-    corp["libraryIndex20261023"][f"countsNote20261027r{CIRCLE}"] = (
+    corp["libraryIndex20261023"][COUNTS_NOTE] = (
         f"Круг {CIRCLE}: слепок реестра переалит, и в индексе это две строки — новая с правами mirror_of_git "
         f"и прежняя, у которой права сняты на HOLD_superseded (имя — то, что теперь лежит на Drive). Записей "
         f"{before['записей']} → {after['записей']}, mirror_of_git {before['mirror_of_git']} → "

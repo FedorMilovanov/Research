@@ -39,6 +39,7 @@ UPLOAD_SHA = "ceee8ec7a79ad54ef271379704e346eedfb36790"   # main = мерж PR #
 CORPUS_GIT_PATH = "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json"
 FOLDER_ID = "13cx8Y86uaDRIullYpc8tneFxGbjPUlIJ"
 CIRCLE = 66
+RECORD_KEY = "corpusSnapshotRound66_20261027"   # литералом: по нему же ищет CI-греп
 PREV_TOOL = "scripts/atonement_drive_mirror_round63.py"
 
 # --- то, что этот круг добавил в папку и переименовал в ней (остальное выводится из круга 63). ---
@@ -246,7 +247,7 @@ def main() -> int:
     }
 
     corp = json.loads(CORPUS.read_text(encoding="utf-8"))
-    key = f"corpusSnapshotRound{CIRCLE}_20261027"
+    key = RECORD_KEY
     prev_key = f"corpusSnapshotRound{PREV.CIRCLE}_20261026"
     prev = corp["driveMirrors"].get(prev_key)
     if prev is None:
