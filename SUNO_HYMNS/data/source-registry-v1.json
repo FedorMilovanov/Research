@@ -1676,7 +1676,7 @@
     "Папирус: фрагмент 29,6 x 4,8-5,0 см (Cosgrove 2011, с. 13); найден 1918, издан 1922 (Grenfell & Hunt, Oxyrhynchus Papyri 15, № 1786, с. 21-25)",
     "Smith 2011, с. 211: Φῶς ἱλαρόν и Оксиринхский гимн — древнейшие христианские греческие гимны, о которых с основанием можно сказать, что они пелись в богослужении и не взяты из Библии"
    ],
-   "limits": "Cosgrove 2011 не открывался целиком: текст и перевод по добросовестной вторичной передаче с точной ссылкой на страницу; LOCATOR_HOLD. Сам папирус не видел; ARCHIVE_HOLD. Нотацию нота за нотой не читал. Проверено 2026-10-27: текст получен через Википедию, ступень C; сверка с первоизданием (SRC-PHOS-OXY-EDITIO-PRINCEPS-1922) показала, что в подлинном отрезке (хвост строки 3 — строка 4) расхождений нет, а в лакунах строки 2, 3 и 5 издания 1922 и 2011 гг. расходятся."
+   "limits": "Cosgrove 2011 не открывался целиком: текст и перевод по добросовестной вторичной передаче с точной ссылкой на страницу; LOCATOR_HOLD. Сам папирус не видел; ARCHIVE_HOLD. Нотацию нота за нотой не читал. Проверено 2026-10-27: текст получен через Википедию, ступень C; сверка с первоизданием (SRC-PHOS-OXY-EDITIO-PRINCEPS-1922) показала, что в подлинном отрезке (хвост строки 3 — строка 4) расхождений нет, а в лакунах строки 2, 3 и 5 издания 1922 и 2011 гг. расходятся. Сам Cosgrove 2011 прочитан частично: предисловие, оглавление и глава первая (с. V–11); глава вторая с построчным разбором строк (с. 13–36) и глава третья, откуда взят наш текст (с. 37), — за пределом. См. SRC-PHOS-OXY-COSGROVE-2011."
   },
   {
    "id": "SRC-PHOS-SUBTUUM-TEXT",
@@ -2551,6 +2551,37 @@
     "Собственный перевод страницы («Let kings bow…») не совпадает ни с одним научным переводом — страница как источник текста непригодна."
    ],
    "limits": "Учебная вики-страница: деление на «Sung/Spoken» в прочитанном комментарии Пёльманна и Уэста (с. 192–194) отсутствует, а начальное заполнение — центон Э. Пёльманна (1970). Как свидетель-ство о гимне не используется; записана только как предупреждение о сетевых версиях текста."
+  },
+  {
+   "id": "SRC-PHOS-OXY-COSGROVE-2011",
+   "title": "Cosgrove Ch. H., An Ancient Christian Hymn with Musical Notation: Papyrus Oxyrhynchus 1786: Text and Commentary (STAC 65; Tübingen: Mohr Siebeck, 2011) — прочитаны предисловие, оглавление и глава первая «Introduction» (с. V–11) по издательскому фрагменту PDF",
+   "url": "https://content.e-bookshelf.de/media/reading/L-8528736-0f4ae5320a.pdf",
+   "type": "Монография о гимне: полное исследование текста, музыки и социального контекста; прочитана первая глава (история вопроса)",
+   "evidenceClass": "B1",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "RIGHTS_UNKNOWN",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "RIGHTS_HOLD",
+    "LOCATOR_HOLD"
+   ],
+   "supports": [
+    "**Замысел второй главы:** «A second chapter is devoted to establishing the text and musical notation of the hymn, giving an account of what is visible **under high magnification** at points where the papyrus has been worn or damaged».",
+    "**Работа с папирусом:** благодарность Саклеровской библиотеке и её сотрудникам, «who made it possible for me to study the fragment there»; куратор — Daniela Colomo; разрешение на снимок — Общество египетских раскопок; консультанты — Мартин Уэст, Джон Ланделс, Эндрю Баркер, Стефан Хагель.",
+    "**Дата по Ханту:** «assigned the fragment to the latter part of the third century on the grounds that its handwriting is not as late as the fourth century (terminus a quo) and that the grain account on the recto appears to date from the first half of the third century (terminus ad quem)».",
+    "**Смысл по Ханту (1922, 22):** «Creation at large is called upon to join in a chorus of praise to Father, Son, and Holy Spirit, and the concluding passage is the usual ascription of power and glory to the “only giver of all good gifts”».",
+    "**Мотив космической тишины:** «the words partially preserved in line 2 express a widespread motif of cosmic stillness before an offering to a deity: σιγάτω, μηδ’ ἄστρα φαεσφόρα … ποταμῶν ῥοθίων πᾶσαι»; «Literary and syntactical considerations now make it almost certain that the hymn employs this cosmic stillness motif».",
+    "**Синтаксический довод (Вольбергс 1971, 106):** «μηδέ is not postpositive and therefore should be construed not with σιγάτω but with what follows (where stars and rivers are mentioned)».",
+    "**Петь могут необученные:** «In my experience, however, untrained singers do not find the hymn technically difficult to sing. The melody has a compass of only an octave and none of the intervals (all diatonic) or rhythms are hard to hear or produce vocally» (возражение Вагнеру 1924, 212 и Аберту).",
+    "**Единственный доргигорианский пример:** «P.Oxy. 1786 is our only example of pre-Gregorian Christian music», «preceding in time the earliest extant manuscripts of Gregorian chant that contain musical notation (neumes) by six centuries».",
+    "**Итог по Уэсту (1992a, 54):** «musically speaking the hymn stands squarely in the Greek tradition»; мотив космической тишины «has impeccably Hellenistic credentials» (1992a, 49).",
+    "**Уиннингтон-Инграм (1955, 80–81, прим. 2), против Веллеса:** «The words are Greek, the metre is Greek, the melodic notation is Greek; so is the rhythmical notation, and it is used consistently with anapaestic interpretation of the metre».",
+    "**Где пели (гипотезы предшественников):** Вольбергс (1971) — евхаристическое богослужение; Уршпрунг (1923, 125–26) — солист, агапа или подобное, композитор из Александрии, из кругов Климента и Оригена.",
+    "**Отвергнутые версии:** Веллес (1945; 1961) — «восточная» (иудейская/сирийская); Холлеман (1972) — усилил Веллеса; Ханник (1980) и Маккиннон (2001) — «isolated attempt to record a melody».",
+    "**Рейнах (1922):** точки значат arsis, а не thesis; от слова πᾶσαι в строке 4 разметка сбивается; «the irregularities in the verbal metrical structure are brought into the general scheme by the music»."
+   ],
+   "limits": "Прочитан только издательский фрагмент — предисловие, оглавление и глава первая (с. V–11 из 30 доступных). Глава вторая (с. 13–36) с транскрипцией, аппаратом и построчным разбором строк 1–5, а также главы 3–6 — за пределом; LOCATOR_HOLD снят только для первой главы. Цитаты короткие, со ссылками на страницы."
   }
  ]
 }
