@@ -2480,6 +2480,27 @@
     "Формулировка статуса: «by far the most ancient piece of Church music extant, and may be placed among the earliest written relics of Christianity»"
    ],
    "limits": "Прочитан OCR-текст скана (tesseract, grc+eng), а не напечатанная страница: английский читается уверенно, греческий с искажениями, строка музыкальных знаков не распознана вовсе — восемь уверенно читаемых нот я по этой выдаче перечислить не могу. Расхождения с Cosgrove 2011 записаны по двум изданиям, а не по папирусу. Пластина I (P. Oxy. 15 pl. I) не видена."
+  },
+  {
+   "id": "SRC-PHOS-OXY-TRANSCRIPTION-BRANNAN",
+   "title": "Rick Brannan, «P.Oxy. 1786» в проекте Stuff Early Christians Read — транскрипция папируса по Grenfell & Hunt 1922, с. 23, с разметкой лакун (recto: строки 1–3)",
+   "url": "https://rickbrannan.github.io/StuffEarlyChristiansRead/data/html/P.Oxy.%201786.html",
+   "type": "Вторичная транскрипция с названным основанием: «Transcription based on: Grenfell and Hunt, eds., The Oxyrhynchus Papyri (vol. XV; 1922), 23»",
+   "evidenceClass": "C",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "RIGHTS_UNKNOWN",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "RIGHTS_HOLD"
+   ],
+   "supports": [
+    "Строка 2 в передаче по с. 23 издания 1922 г.: «[.............................ο]υ ταν ηω σιγατω μηδʼ αστρα φαεσφορα λ[ειπ]ε [σ]θων» — то есть сохранённые буквы **ταν ηω** с восполненным перед ними ο, а не единое слово πρυτανήω.",
+    "Строка 3 в той же передаче: «[.] .λει.[......]ρ[.............] ποταμων» — следы без восстановления, что согласуется с отказом первоиздания восстанавливать строку 3.",
+    "Строка 1: «[...............................] ομου πασαι τε θεου λογιμοι α.......[...]» — лакуна в 31 знак.",
+    "Сведения со страницы: Trismegistos 64184; датировка 200–299, «likelier in the later half of that range»; обоснование — «thanks to a grain receipt on one side»."
+   ],
+   "limits": "Личный проект частного лица, хотя и с названным основанием: транскрипция не заменяет ни издание 1922 г., ни снимок. Права на страницу не проверены. Строки 4–5 в выдаче поиска не показаны целиком."
   }
  ]
 }
