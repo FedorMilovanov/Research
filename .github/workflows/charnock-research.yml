@@ -1,0 +1,53 @@
+name: Charnock research contracts
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/charnock-research.yml'
+      - 'БИОГРАФИИ/**'
+      - 'data/charnock-*.json'
+      - 'data/charnock-primary-supplement/**'
+      - 'data/biographies-shared-atlas-v1.json'
+      - 'data/repository-evidence-policy-v2.json'
+      - 'scripts/*charnock*.py'
+      - 'scripts/*biographies_shared_atlas.py'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/charnock-research.yml'
+      - 'БИОГРАФИИ/**'
+      - 'data/charnock-*.json'
+      - 'data/charnock-primary-supplement/**'
+      - 'data/biographies-shared-atlas-v1.json'
+      - 'data/repository-evidence-policy-v2.json'
+      - 'scripts/*charnock*.py'
+      - 'scripts/*biographies_shared_atlas.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  contracts:
+    runs-on: ubuntu-24.04
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - name: Checkout Research
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - name: Test saved evidence contracts and negative controls
+        run: |
+          python3 -m unittest discover -s scripts -p 'test_audit_charnock*.py' -v
+          python3 -m unittest discover -s scripts -p 'test_build_biographies_shared_atlas.py' -v
+      - name: Validate current editorial plan and authority
+        run: |
+          python3 scripts/audit_charnock_series_plan.py
+          python3 scripts/validate_research_root_authority.py
+          python3 scripts/validate_repository_authority_integrity.py
+      - name: Confirm validators did not alter the checkout
+        run: |
+          git diff --exit-code
+          test -z "$(git status --porcelain)"
+      # These checks validate stored research contracts, not fresh remote source
+      # bytes, independent translation review, Drive custody or publication rights.
+      # Immutable XML/source-byte replay remains a separate explicit operation.

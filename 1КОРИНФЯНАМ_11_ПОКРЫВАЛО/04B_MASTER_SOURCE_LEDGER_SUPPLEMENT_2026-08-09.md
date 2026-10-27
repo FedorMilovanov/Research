@@ -88,7 +88,7 @@
 |----|----------|-------|--------|------------|
 | C21 | Charles Hodge, *1 Corinthians* (1857) — **старопресвитерианский, классика** | B1 | OPEN (PDF есть онлайн) | NEED-LOCATE |
 | C22 | John Calvin, *1 Corinthians* (Sermons/Commentary) — Институты и комм. | A2/B1 | OPEN (CCEL) | NEED-DOWNLOAD-SECURE |
-| C23 | John Gill, *Exposition of the NT — 1 Corinthians* (1746–48) | A2/B1 | OPEN | У нас уже есть серия Джон Гилл в папке «Джон Гилл» — проверить наличие! |
+| C23 | John Gill, *Exposition of the NT — 1 Corinthians* (1746–48) | A2/B1 | OPEN | У нас уже есть серия Джон Гилл в папке «БИОГРАФИИ/Джон Гилл» — проверить наличие! |
 | C24 | Matthew Henry, *Commentary* | B1 | OPEN | PUBLIC-DOMAIN |
 | C25 | Albert Barnes, *Notes on 1 Corinthians* (19 века) | B1 | OPEN | PUBLIC-DOMAIN |
 | C26 | Adam Clarke, *Commentary* (Methodist-Wesleyan, 1825) | B1/C | OPEN | PUBLIC-DOMAIN, методизм — читать осмотрительно |
@@ -206,7 +206,7 @@
 | R06 | Martin Chemnitz, *Examen Concilii Tridentini* — не по Кор.; если есть лекции, проверить | - | - | - |
 | R07 | John Trapp, *Commentary on the NT* (1656) | B1 | OPEN | P1 |
 | R08 | Matthew Poole, *Synopsis Criticorum* и *Annotations* (1685) | B1 | OPEN | P1 |
-| R09 | John Gill (см. C23 выше) | A2/B1 | OPEN в папке «Джон Гилл» | P0 |
+| R09 | John Gill (см. C23 выше) | A2/B1 | OPEN в папке «БИОГРАФИИ/Джон Гилл» | P0 |
 | R10 | Matthew Henry (см. C24) | B1 | OPEN | P0 |
 | R11 | Thomas Goodwin, прочие пуритане на Кор. — проверить сборники проповедей | B1 | NEED | P2 |
 | R12 | Thomas Manton — нет на Кор. в фокусе | - | - | - |
@@ -341,7 +341,7 @@
 Проверим ближайшим проходом, есть ли уже книги/комментарии в папках:
 
 - `SOURCE_LIBRARY/processed/`
-- `Джон Гилл/`
+- `БИОГРАФИИ/Джон Гилл/`
 - папки СЕРИЯ СЕРДЦЕ / БАПТИСТЫ РОССИИ / ОБРАТНАЯ СТОРОНА КАФЕДРЫ — если там есть PDF, которые релевантны (маловероятно).
 
 Физическая ревизия — первым проходом после этого файла. На текущий момент: **вероятно, полных текстов по 1 Кор. 11 у нас нет**; файл 16 (book acquisition queue) задаёт порядок получения.

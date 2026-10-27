@@ -5,6 +5,9 @@ prokopenko_article_text.txt
 __pycache__/
 *.pyc
 
+# Reproducible source downloads, audit logs and read-only external checkouts.
+# Durable evidence extracts and immutable pins live in data/, not in this cache.
+.cache/
 # рабочая песочница кругов: временные выгрузки, скачанные TEI-тома и одноразовые скрипты.
 # в дереве их нет с круга 55 (107 файлов / 4 688 052 байта были сняты с трекинга);
 # инструменты, которыми эти числа переснимаются, живут в scripts/, а данные — в общественной сети.

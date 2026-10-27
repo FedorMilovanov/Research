@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "id": "BIOGRAPHIES-SHARED-ATLAS-V1",
+  "authorityRole": "supporting-navigation-only",
+  "scope": "Общий исследовательский атлас: начальный слой Чарнока и навигационные мосты; не полный граф христианской истории и не Product.",
+  "anchorRegistry": "data/charnock-biographical-anchors-v1.json",
+  "nodes": [
+    {
+      "id": "charnock",
+      "label": "Стивен Чарнок",
+      "kind": "person",
+      "owner": "БИОГРАФИИ/Стивен Чарнок/00_README_AND_NAVIGATION.md",
+      "x": 510,
+      "y": 300
+    },
+    {
+      "id": "sancroft",
+      "label": "William Sancroft",
+      "kind": "person",
+      "owner": "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md",
+      "x": 60,
+      "y": 100
+    },
+    {
+      "id": "johnson",
+      "label": "John Johnson",
+      "kind": "person",
+      "owner": "БИОГРАФИИ/Стивен Чарнок/01_BIOGRAPHICAL_WITNESSES_AND_EVIDENCE_HIERARCHY.md",
+      "x": 60,
+      "y": 260
+    },
+    {
+      "id": "preston",
+      "label": "John Preston",
+      "kind": "person",
+      "owner": "БИОГРАФИИ/Стивен Чарнок/15_THE_EMMANUEL_LINE_PRESTON_POOLE_FOWLER.md",
+      "x": 60,
+      "y": 420
+    },
+    {
+      "id": "emmanuel",
+      "label": "Emmanuel: неоднородная среда",
+      "kind": "institution",
+      "owner": "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md",
+      "x": 60,
+      "y": 580
+    },
+    {
+      "id": "attributes",
+      "label": "Discourses / атрибуты (1682)",
+      "kind": "work",
+      "owner": "БИОГРАФИИ/Стивен Чарнок/03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md",
+      "x": 960,
+      "y": 100
+    },
+    {
+      "id": "preface",
+      "label": "Предисловие 1682",
+      "kind": "document",
+      "owner": "БИОГРАФИИ/Стивен Чарнок/08_ADAMS_AND_VEAL_TO_THE_READER_PRIMARY_EPISTLE.md",
+      "x": 510,
+      "y": 100
+    },
+    {
+      "id": "spurgeon",
+      "label": "Сперджен: Psalm 103",
+      "kind": "person",
+      "owner": "БИОГРАФИИ/Стивен Чарнок/01_BIOGRAPHICAL_WITNESSES_AND_EVIDENCE_HIERARCHY.md",
+      "x": 960,
+      "y": 300
+    },
+    {
+      "id": "providence",
+      "label": "Провидение / знание Бога",
+      "kind": "topic",
+      "owner": "БИОГРАФИИ/Стивен Чарнок/04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
+      "x": 960,
+      "y": 500
+    },
+    {
+      "id": "regime",
+      "label": "Режим и границы свободы",
+      "kind": "context",
+      "owner": "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md",
+      "x": 510,
+      "y": 580
+    },
+    {
+      "id": "gill",
+      "label": "Джон Гилл — отдел",
+      "kind": "department",
+      "owner": "БИОГРАФИИ/Джон Гилл/00_README_AND_NAVIGATION.md",
+      "x": 60,
+      "y": 790
+    },
+    {
+      "id": "gill-reception",
+      "label": "Гилл / рецепция Сперджена",
+      "kind": "dossier",
+      "owner": "БИОГРАФИИ/Джон Гилл/53_SPURGEON_AND_GILL_PRIMARY_RECEPTION.md",
+      "x": 510,
+      "y": 790
+    },
+    {
+      "id": "heart",
+      "label": "СЕРИЯ СЕРДЦЕ — корпус",
+      "kind": "corpus",
+      "owner": "СЕРИЯ СЕРДЦЕ/00_README_AND_NAVIGATION.md",
+      "x": 960,
+      "y": 700
+    },
+    {
+      "id": "apostasy",
+      "label": "apostasy — корпус",
+      "kind": "corpus",
+      "owner": "apostasy/README.md",
+      "x": 960,
+      "y": 850
+    },
+    {
+      "id": "hoek",
+      "label": "Jan Hoek: критика (2014)",
+      "kind": "person",
+      "owner": "БИОГРАФИИ/Стивен Чарнок/04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
+      "x": 510,
+      "y": 420
+    }
+  ],
+  "edges": [
+    {
+      "id": "sancroft-tuition",
+      "from": "sancroft",
+      "to": "charnock",
+      "type": "TEACHER",
+      "label": "Обучение, по Wood",
+      "refs": [
+        "BIO-02"
+      ],
+      "boundary": "Не доказательство политического или богословского согласия; оригинал университетского регистра не получен."
+    },
+    {
+      "id": "johnson-acquaintance",
+      "from": "johnson",
+      "to": "charnock",
+      "type": "ACQUAINTANCE",
+      "label": "Знакомство, свидетельство Johnson",
+      "refs": [
+        "BIO-03"
+      ],
+      "boundary": "Около 1644 вычисляется от 1680; не точная дата начала дружбы."
+    },
+    {
+      "id": "preston-comparison",
+      "from": "preface",
+      "to": "preston",
+      "type": "EDITORIAL_COMPARISON",
+      "label": "Редакторское сравнение",
+      "refs": [
+        "TXT-15"
+      ],
+      "boundary": "Не учитель Чарнока; оценка редакторов, не объективная метрика качества."
+    },
+    {
+      "id": "manuscript-claim",
+      "from": "preface",
+      "to": "attributes",
+      "type": "EDITORIAL_CLAIM",
+      "label": "Заявление о рукописях",
+      "refs": [
+        "TXT-11"
+      ],
+      "boundary": "Редакционное свидетельство о переписке; не независимая экспертиза рукописей."
+    },
+    {
+      "id": "spurgeon-reception",
+      "from": "spurgeon",
+      "to": "attributes",
+      "type": "RECEPTION",
+      "label": "Выдержки: Psalm 103",
+      "refs": [
+        "REC-02",
+        "REC-03"
+      ],
+      "boundary": "Один антологический кейс; частичное совпадение и Condensed, не принятие всей системы. Исходные места p. 699 / p. 702."
+    },
+    {
+      "id": "providence-topic",
+      "from": "charnock",
+      "to": "providence",
+      "type": "DOCTRINAL_TEXT",
+      "label": "Знание ради управления",
+      "refs": [
+        "TXT-08"
+      ],
+      "boundary": "Тезис автора, не доказанный механизм любого исторического события."
+    },
+    {
+      "id": "emmanuel-context",
+      "from": "emmanuel",
+      "to": "charnock",
+      "type": "CONTEXT",
+      "label": "Университетская среда",
+      "refs": [
+        "CTX-09",
+        "CTX-10"
+      ],
+      "boundary": "Фон, не документ о партийной принадлежности Чарнока; Dillingham сменил Tuckney в 1653."
+    },
+    {
+      "id": "regime-context",
+      "from": "regime",
+      "to": "charnock",
+      "type": "CONTEXT",
+      "label": "Нормы режима, не личное действие",
+      "refs": [
+        "GOV-02",
+        "GOV-03",
+        "CTX-12",
+        "CTX-13"
+      ],
+      "boundary": "Не доказательство конкретной выплаты Чарноку или его участия в принуждении."
+    },
+    {
+      "id": "gill-nav",
+      "from": "charnock",
+      "to": "gill",
+      "type": "NAVIGATION",
+      "label": "Другой биографический отдел",
+      "refs": [],
+      "boundary": "Только маршрут к владельцу. Не историческое влияние, не личный контакт и не новый доказанный факт; подробности в томе 07 Чарнока."
+    },
+    {
+      "id": "gill-reception-nav",
+      "from": "gill",
+      "to": "gill-reception",
+      "type": "NAVIGATION",
+      "label": "Досье рецепции",
+      "refs": [],
+      "boundary": "Только маршрут к владельцу. Не историческое влияние, не личный контакт и не новый доказанный факт; подробности в томе 07 Чарнока."
+    },
+    {
+      "id": "shared-reception-nav",
+      "from": "spurgeon",
+      "to": "gill-reception",
+      "type": "NAVIGATION",
+      "label": "Сопоставить досье, не влияние",
+      "refs": [],
+      "boundary": "Только маршрут к владельцу. Не историческое влияние, не личный контакт и не новый доказанный факт; подробности в томе 07 Чарнока."
+    },
+    {
+      "id": "heart-nav",
+      "from": "charnock",
+      "to": "heart",
+      "type": "NAVIGATION",
+      "label": "Ранее собранные употребления",
+      "refs": [],
+      "boundary": "Только маршрут к владельцу. Не историческое влияние, не личный контакт и не новый доказанный факт; подробности в томе 07 Чарнока."
+    },
+    {
+      "id": "apostasy-nav",
+      "from": "charnock",
+      "to": "apostasy",
+      "type": "NAVIGATION",
+      "label": "Ранее собранные употребления",
+      "refs": [],
+      "boundary": "Только маршрут к владельцу. Не историческое влияние, не личный контакт и не новый доказанный факт; подробности в томе 07 Чарнока."
+    },
+    {
+      "id": "hoek-critical-reception",
+      "from": "hoek",
+      "to": "attributes",
+      "type": "RECEPTION",
+      "label": "Критика и признание ценности",
+      "refs": [
+        "REC-05",
+        "REC-06"
+      ],
+      "boundary": "Одна статья2014;B1,частичный архив,не консенсус,не анахронический личный контакт;PUBLICATION_HOLD."
+    }
+  ],
+  "excludedLinks": [
+    {
+      "id": "preston-teacher",
+      "from": "preston",
+      "to": "charnock",
+      "type": "TEACHER",
+      "status": "SUPERSEDED",
+      "refs": [
+        "CTX-11"
+      ],
+      "reason": "Preston умер в 1628; наставничество при обучении Чарнока с 1642 невозможно."
+    },
+    {
+      "id": "gill-contact",
+      "from": "charnock",
+      "to": "gill",
+      "type": "PERSONAL_CONTACT",
+      "status": "EXCLUDED",
+      "refs": [],
+      "reason": "Смерть Чарнока 1680 предшествует рождению Гилла 1697; навигационный переход не означает контакта."
+    }
+  ]
+}

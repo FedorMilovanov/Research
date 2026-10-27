@@ -31,7 +31,7 @@ on:
       - 'СЕРИЯ СЕРДЦЕ/**'
       - 'БИБЛЕЙСКИЙ АТЛАС/**'
       - 'RUSSIAN_BAPTISTS_ARCHIVE/SCAN_ACQUISITION_CURRENT_AUTHORITY_2026-08-02.md'
-      - 'Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md'
+      - 'БИОГРАФИИ/Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md'
       - 'SOURCE_LIBRARY/CURRENT_SOURCE_URL_AUTHORITY_2026-08-02.md'
   push:
     branches: [main]
@@ -62,7 +62,7 @@ on:
       - 'СЕРИЯ СЕРДЦЕ/**'
       - 'БИБЛЕЙСКИЙ АТЛАС/**'
       - 'RUSSIAN_BAPTISTS_ARCHIVE/SCAN_ACQUISITION_CURRENT_AUTHORITY_2026-08-02.md'
-      - 'Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md'
+      - 'БИОГРАФИИ/Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md'
       - 'SOURCE_LIBRARY/CURRENT_SOURCE_URL_AUTHORITY_2026-08-02.md'
 
 permissions:

@@ -71,7 +71,7 @@ require("Level A (" not in atlas_readme and "Level B" not in atlas_readme, "Atla
 require("evidenceClass" in atlas_readme and "localization" not in atlas_readme.lower(), "Atlas must separate evidence from location confidence")
 require("Уверенность локализации" in atlas_readme, "Atlas localization-confidence boundary missing")
 
-gill_crosswalk = read("Джон Гилл/00_SOURCE_STATUS_CROSSWALK_V2.md")
+gill_crosswalk = read("БИОГРАФИИ/Джон Гилл/00_SOURCE_STATUS_CROSSWALK_V2.md")
 for marker in (
     "SUPERSEDES THE “A1–X” SEMANTICS",
     "historical Gill `A3`",
