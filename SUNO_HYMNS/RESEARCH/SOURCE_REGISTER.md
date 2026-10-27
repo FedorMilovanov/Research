@@ -818,12 +818,18 @@ The Greek lane is registered in the same file as the Dutch one because it is the
 - Supports: `Lumen hilare` — буквальный перевод, известный по Fortescue, *Latin Hymns* (нач. XX в.); `Iucunda lux tu gloriae` — метрическое переложение неустановленного происхождения, напев `Jesu dulcis memoria`, «григорианизированная» мелодия приписывается Дом Люсьену Давиду (XX в.); в обсуждении утверждается, что латинского богослужебного употребления не было.
 - Limits: источник уровня D. Использован **только** как основание не заявлять древность латинской версии; положительных утверждений на нём не строится.
 
-### SRC-PHOS-OXY-TEXT — текст Оксиринхского гимна (Cosgrove 2011) с лакунами
+## SRC-PHOS-OXY-TEXT — Cosgrove 2011, текст и перевод Оксиринхского гимна (P.Oxy. XV 1786) с разметкой лакун
 
 - URL: https://en.wikipedia.org/wiki/Oxyrhynchus_hymn
-- Evidence class: C · Access: PARTIAL_OBJECT · Locator: COARSE_LOCATOR_ONLY · Rights: RIGHTS_UNKNOWN · Publication: REFERENCE · HOLDs: LOCATOR_HOLD, ARCHIVE_HOLD, RIGHTS_HOLD
-- Supports: пять строк греческого текста с разметкой лакун (Cosgrove 2011, с. 37); **строка 1 утрачена почти целиком, строка 5 читается обрывками**; музыка — греческая вокальная нотация, гиполидийская, диатоника, амбитус октава F–F, финалис G, метр анапестический; папирус 29,6 × 4,8–5,0 см; Smith 2011, с. 211 — критерий серии.
-- Limits: Cosgrove целиком не открывался (`LOCATOR_HOLD`); папирус не видел (`ARCHIVE_HOLD`); нотацию нота за нотой не читал.
+- Source role/type: Научное издание текста, переданное с точной ссылкой на страницу
+- Evidence class: C
+- Access state: PARTIAL_OBJECT
+- Locator state: COARSE_LOCATOR_ONLY
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: ARCHIVE_HOLD, LOCATOR_HOLD, RIGHTS_HOLD
+- Supports: Пять строк греческого текста с квадратными скобками восстановлений и точками утрат (Cosgrove 2011, с. 37); Строка 1 утрачена почти целиком; строка 5 читается обрывками; в строке 3 восстановлены ῥιπαὶ πνοιῶν, πηγαὶ; Гимн призывает всё творение к молчанию, пока воспевается Троица; мотив космической тишины из античного гимна; Музыка: греческая вокальная нотация, гиполидийская, диатоника, амбитус ровно октава F-F, финалис на G, метр анапестический, распев силлабический (Pöhlmann & West 2001, 190-193); Папирус: фрагмент 29,6 x 4,8-5,0 см (Cosgrove 2011, с. 13); найден 1918, издан 1922 (Grenfell & Hunt, Oxyrhynchus Papyri 15, № 1786, с. 21-25); Smith 2011, с. 211: Φῶς ἱλαρόν и Оксиринхский гимн — древнейшие христианские греческие гимны, о которых с основанием можно сказать, что они пелись в богослужении и не взяты из Библии
+- Limits / caveats: Cosgrove 2011 не открывался целиком: текст и перевод по добросовестной вторичной передаче с точной ссылкой на страницу; LOCATOR_HOLD. Сам папирус не видел; ARCHIVE_HOLD. Нотацию нота за нотой не читал. Проверено 2026-10-27: текст получен через Википедию, ступень C; сверка с первоизданием (SRC-PHOS-OXY-EDITIO-PRINCEPS-1922) показала, что в подлинном отрезке (хвост строки 3 — строка 4) расхождений нет, а в лакунах строки 2, 3 и 5 издания 1922 и 2011 гг. расходятся.
 
 ### SRC-PHOS-SUBTUUM-TEXT — греческий текст *Sub tuum praesidium* и спор о дате
 
@@ -1331,3 +1337,16 @@ The Greek lane is registered in the same file as the Dutch one because it is the
 - HOLDs: RIGHTS_HOLD
 - Supports: Оценочный диапазон датировки 1 Апологии: 150–160 гг.; надёжность датировки — 5/5 по шкале сайта; Антонин Пий, которому адресована Апология, правил 138–161 гг.; Внутренняя привязка: гл. 46 — «Христос родился 150 лет назад при Квиринии»; Квириний вступил в должность в 6 г. н. э. по Иосифу; отсюда возможная дата 156 г.; Роберт М. Грант (Anchor Bible Dictionary): сочинение обращено к Антонину Пию и его двум приёмным сыновьям
 - Limits / caveats: Класс C: сетевой указатель, а не исследование. Арифметика «150 лет от 6 г. → 156 г.» — вывод сайта, а не моя проверка. Годы правления и имя отца Квириния я по этому источнику не проверял. Дата в самом тексте Апологии не названа.
+
+## SRC-PHOS-OXY-EDITIO-PRINCEPS-1922 — Grenfell B. P. & Hunt A. S., The Oxyrhynchus Papyri, vol. XV (London, 1922), № 1786 «Christian Hymn with Musical Notation», с. 21–25 — editio princeps Оксиринхского гимна: описание, дата, транскрипция с нотами, построчный комментарий (скан Internet Archive, oxyrhynchuspapyr15gren)
+
+- URL: https://archive.org/download/oxyrhynchuspapyr15gren/oxyrhynchuspapyr15gren_djvu.txt
+- Source role/type: Первоиздание папируса (1922), прочитанное по OCR-тексту скана Internet Archive
+- Evidence class: B1
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: Заголовок и выходные данные: «1786. Christian Hymn with Musical Notation. 29·6 × 5 cm. Late third century. Plate I»; **Дата с двумя якорями:** «is contained on the verso of a strip from an account of corn, mentioning several Oxyrhynchite villages and dating apparently from the first half of the third century, though later than the Constitutio Antoniniana, since some of the persons named are Aurelii» (значит, документ на лицевой стороне — после 212 г.); «The character of both scripts appears to point to a date in the latter part of the third century rather than the early decades of the fourth»; **Нотация на строке 1 почти утрачена:** «Only slight vestiges of the musical notation are visible above this line»; **Состояние текста по первым издателям:** «only its conclusion is preserved, and that very imperfectly, four lines out of the five being disfigured by large initial lacunae»; «The original extent of the hymn cannot be gauged from the recto»; **Метр:** «purely quantitative and uninfluenced by accent … the rhythm was apparently anapaestic and may be analysed as a series of dimeters, either acatalectic, catalectic, or brachycatalectic»; двойное ἀμήν в конце строки 5 — «extra metrum»; **Строй:** «These all occur in the Diatonic Hypolydian key of Alypius»; «As for the mode, there can be little doubt that it is the Hypophrygian or Iastian, as in the Epitaph of Seikilos and the Hymn to Nemesis of Mesomedes»; **Чтение строки 2:** «πρυτανηω: the word is somewhat unexpected and the mark of length on the second syllable is a difficulty, but this may possibly be connected with the fact that the η has been corrected from ν» — против τὰν ἠῶ у Cosgrove 2011; **Строка 3:** «Perhaps καὶ] ποταμῶν (sc. πηγαί, or something similar) … but the uncertainties are too many for a convincing restoration» — первоиздание не восстанавливает того, что восстанавливает Cosgrove; **Строка 5:** «the scanty vestiges well suit μόνῳ, but δ[ωτ]ῆ[ρι] is highly doubtful»; «In the preceding lacuna the musical notes indicate a loss of seven syllables»; **Литургическая параллель от первых издателей** (к строке 5): одиннадцатая молитва греческой утрени, Εὐχολόγιον τὸ μέγα — «ὅτι σε αἰνοῦσι πᾶσαι αἱ Δυνάμεις τῶν οὐρανῶν καὶ σοὶ τὴν δόξαν ἀναπέμπομεν τῷ Πατρὶ καὶ τῷ Υἱῷ καὶ τῷ ἁγίῳ Πνεύματι νῦν καὶ ἀεὶ …»; «A transcription in modern notation has been kindly supplied by Professor H. Stuart Jones» — транскрипция в современной нотации выполнена в самом издании 1922 г.; Формулировка статуса: «by far the most ancient piece of Church music extant, and may be placed among the earliest written relics of Christianity»
+- Limits / caveats: Прочитан OCR-текст скана (tesseract, grc+eng), а не напечатанная страница: английский читается уверенно, греческий с искажениями, строка музыкальных знаков не распознана вовсе — восемь уверенно читаемых нот я по этой выдаче перечислить не могу. Расхождения с Cosgrove 2011 записаны по двум изданиям, а не по папирусу. Пластина I (P. Oxy. 15 pl. I) не видена.
