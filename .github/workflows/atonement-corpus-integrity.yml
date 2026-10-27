@@ -88,7 +88,12 @@ jobs:
       # правило без посадочного места тихо вырождается в молчание: обход перестаёт видеть ключи,
       # `bad` пуст, `checked` ноль, а сверка печатает «0 расхождений из 0». Этот шаг исполняет
       # ловушку: незаконный порядок обязан быть пойман, законный — нет, и блоки обязаны быть увидены.
-      - name: Date-rule trap (a relaxed rule must still bite)
+      # Дальше этот же шаг вырос в реестр стражей (правка 9: у каждой сверки — названный страж или
+      # названная дыра), в ломку собственного исходника (правка 10: ловушка исполняет свои же мутации,
+      # а не помнится скриптом в песочнице) и в ловушку таблицы 9.1 (правка 12: посаженная в память
+      # ячейка и ослеплённый обход — без единой правки прозы). Имя шага переименовано вместе с
+      # содержанием: имя, которое никто не сверяет, отстаёт первым.
+      - name: Reshooter rule traps (relaxed rules, guardian registry, planted breakages must bite)
         run: python3 -B scripts/atonement_reshoot_state.py --rule-trap
       - name: Read-only re-shoot check
         run: python3 -B scripts/atonement_reshoot_state.py --check
@@ -119,6 +124,8 @@ jobs:
           grep -q 'ЛОВУШКА ПРАВИЛА ДАТ' scripts/atonement_reshoot_state.py
           grep -q 'def plant_registry_trap' scripts/atonement_reshoot_state.py
           grep -q 'def self_mutation_trap' scripts/atonement_reshoot_state.py
+          grep -q 'def table91_trap' scripts/atonement_reshoot_state.py
+          grep -q 'ЛОВУШКА ТАБЛИЦЫ 9.1' scripts/atonement_reshoot_state.py
           grep -q 'ЛОМКА ИСХОДНИКА' scripts/atonement_reshoot_state.py
           grep -q 'РЕЕСТР СТРАЖЕЙ' scripts/atonement_reshoot_state.py
           grep -q 'def verdicts' scripts/atonement_history_perturbation_probe.py

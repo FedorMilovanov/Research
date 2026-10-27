@@ -565,9 +565,7 @@ PLANTED_GUARDS = {
     "tree_counts": ("нет", "сверка байт и строк дерева с реестром; посаженного нарушения нет ни в "
                           "батаре (она про гейт), ни в пробе (он про положение main), поэтому оглушение "
                           "этой сверки выловило бы только расхождение --check на живом дереве"),
-    "check_table_91": ("нет", "сверка таблицы 9.1 с реестром доводов; её производитель — утраченный "
-                              "финалайзер круга 61, и вставить в таблицу лишнюю строку, чтобы проверить "
-                              "красноту, нечем: реестр доводов порождает другой инструмент"),
+    "check_table_91": ("сам", "ЛОВУШКА ТАБЛИЦЫ 9.1"),
 }
 SCAN_SUFFIXES = ("_audit", "_counts", "_census", "_scan", "_svodki", "_inventory")
 SCAN_PREFIXES = ("check_",)
@@ -684,11 +682,19 @@ SELF_MUTATIONS = (
      '    "гейт": ROOT / "scripts" / "validate_atonement_corpus_integrity' + '.py",',
      '    "гейт": ROOT / "scripts" / "туда-не-смотри.py",',
      "plant_registry_trap", "НЕИСПОЛНИМ"),
+    ("сверка таблицы §9.1 обезврежена (строки сверяются, но не сравниваются)",
+     'elif rows[lan] != ' + 'want:', "elif False:",
+     "table91_trap", "ЛОВУШКА ТАБЛИЦЫ 9.1"),
+    ("глава 9.1 для обхода переименована (сверка осталась без таблицы)",
+     '    start = next((i for i, l in enumerate(raw) if l.startswith("' + '### 9.1")), None)',
+     '    start = next((i for i, l in enumerate(raw) if l.startswith("' + '### 9.7")), None)',
+     "table91_trap", "НЕ ИСПОЛНИМА"),
 )
 
 
 def self_mutation_trap():
-    """Ломает собственный исходник названным способом и требует, чтобы каждый был пойман с причиной.
+    """Ломает собственный исходник всеми способами, перечисленными в таблице выше, и требует,
+    чтобы каждый был пойман с причиной.
 
     Вердикт мутанта не печатается в общий вывод — он захватывается и сверяется по подстроке:
     «красно» недостаточно, краснота обязана быть про ту поломку, которую посадили.
@@ -733,6 +739,72 @@ def self_mutation_trap():
         return 1
     print("ЛОМКА ИСХОДНИКА: %d поломок, все пойманы с названной причиной — ловушка кусает себя сама"
           % len(SELF_MUTATIONS))
+    return 0
+
+
+LANE_OF_91 = "корпус"
+
+
+def table91_trap():
+    """Ловушка на живом разборе §9.1: посадить расхождение, не трогая документ.
+
+    Три состояния, а не одно: на живом дереве сверка обязана молчать, посаженная ячейка — быть
+    пойманной именно про тот лан, куда посажено, и пустой текст — быть пойманным как ослепление.
+    Третье отделение здесь главное: сверка, не нашедшая таблицы, не имеет права вернуться пустым
+    списком, потому что пустой список у неё означает «всё сходится».
+    """
+    corp = json.loads(CORPUS.read_text(encoding="utf-8"))
+    text = DOC.read_text(encoding="utf-8")
+    clean = check_table_91(corp, text)
+    if clean:
+        print("ЛОВУШКА ТАБЛИЦЫ 9.1 НЕ ИСПОЛНИМА: на живом дереве сверка уже красна — сначала "
+              "почините таблицу, потом проверяйте ловушку: " + clean[0][:100])
+        return 2
+    lines = text.splitlines()
+    start = next((i for i, l in enumerate(lines) if l.startswith("### 9.1")), None)
+    stop = next((i for i in range(start + 1, len(lines)) if lines[i].startswith(("### ", "## "))),
+                len(lines)) if start is not None else 0
+    hits = []
+    for i in range(start if start is not None else 0, stop):
+        line = lines[i]
+        if not line.startswith("| `"):
+            continue
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        if len(cells) != 8 or cells[0].strip("`") != LANE_OF_91:
+            continue
+        try:
+            hits.append((i, int(cells[1].replace("*", "").replace(" ", ""))))
+        except ValueError:
+            continue
+    planted_at = None
+    if len(hits) == 1:
+        i, first = hits[0]
+        cells = [c.strip() for c in lines[i].strip().strip("|").split("|")]
+        cells[1] = str(first + 1)
+        lines[i] = "| " + " | ".join(cells) + " |"
+        planted_at = i
+    if planted_at is None:
+        print("ЛОВУШКА ТАБЛИЦЫ 9.1 НЕ ИСПОЛНИМА: строка `%s` не найдена в главе ровно один раз "
+              "(найдено %d) — сажать нарушение некуда или не в ту строку"
+              % (LANE_OF_91, len(hits)))
+        return 2
+    red = check_table_91(corp, "\n".join(lines))
+    blind = check_table_91(corp, "")
+    problems = []
+    if not red:
+        problems.append("посаженное расхождение (ячейка «+1» в строке `%s`) прошло молча" % LANE_OF_91)
+    elif not any(LANE_OF_91 in r for r in red):
+        problems.append("покраснело не про посаженный лан: " + red[0][:90])
+    if not blind:
+        problems.append("пустой текст вернулся без единого расхождения — сверка ослепла и назвала "
+                        "это совпадением")
+    if problems:
+        print("ЛОВУШКА ТАБЛИЦЫ 9.1 НЕ ПОДТВЕРЖДЕНА — " + "; ".join(problems))
+        return 1
+    print("ЛОВУШКА ТАБЛИЦЫ 9.1: живое дерево молчит, посаженная ячейка поймана (%d расхождений, "
+          "первое — про `%s`), ослеплённый обход пойман (%d расхождений на пустом тексте) — дыра, "
+          "объявленная правкой 9, закрыта"
+          % (len(red), LANE_OF_91, len(blind)))
     return 0
 
 
@@ -1129,12 +1201,28 @@ def apply_doc(corp: dict, n: dict) -> str:
     return text
 
 
-def check_table_91(corp: dict) -> list:
+def check_table_91(corp: dict, text: str = None) -> list:
     """Таблицу §9.1 этот скрипт не порождает (её производитель — утраченный финалайзер круга 61),
-    но право её сверить оставляет: каждая ячейка обязана равняться полю реестра."""
+    но право её сверить оставляет: каждая ячейка обязана равняться полю реестра.
+
+    `text` — тот же обход, но по поданному тексту: он нужен ловушке, чтобы посадить расхождение в
+    строку, не трогая документ (круг 65, правка 12). Без этой опции сверка была непроверяема:
+    доказать, что она кусает, можно было бы только испортив прозу, а порча прозы ради проверки —
+    тот самый способ, которым круг 64 потерял четыре блока.
+    """
     cpr = corp["integrityGate"]["scopeOfMeasurementRules"]["claimsPerRegistry"]
-    rows, total = {}, None
-    for line in DOC.read_text(encoding="utf-8").splitlines():
+    raw = (DOC.read_text(encoding="utf-8") if text is None else text).splitlines()
+    # Сверять надо с строкой *из §9.1*, а не с первой строкой с таким именем по всему документу:
+    # имя `корпус` встречается и в §1, и в §5, и прошлая версия обхода молча переписывала rows
+    # последней найденной строкой — то есть первая попавшаяся правка чужой таблицы могла сделать
+    # §9.1 невидимым, и ничего бы не покраснело. Ограничение главой — единственное, чем это
+    # отличается от «списока имён», который круги этого репозитория как раз и запретили.
+    start = next((i for i, l in enumerate(raw) if l.startswith("### 9.1")), None)
+    if start is None:
+        return ["§9.1: глава не найдена — сверять таблицу не с чего (переименована или удалена)"]
+    stop = next((i for i in range(start + 1, len(raw)) if raw[i].startswith(("### ", "## "))), len(raw))
+    rows, total, dupes = {}, None, {}
+    for line in raw[start:stop]:
         if not line.startswith("| `") and "**всего**" not in line:
             continue
         cells = [c.strip() for c in line.strip().strip("|").split("|")]
@@ -1144,11 +1232,17 @@ def check_table_91(corp: dict) -> list:
             vals = [int(c.replace("*", "").replace(" ", "")) for c in cells[1:]]
         except ValueError:
             continue
+        key = cells[0].strip("`")
         if "всего" in cells[0]:
+            if total is not None:
+                dupes["всего"] = dupes.get("всего", 1) + 1
             total = vals
         else:
-            rows[cells[0].strip("`")] = vals
-    bad = []
+            if key in rows:
+                dupes[key] = dupes.get(key, 1) + 1
+            rows[key] = vals
+    bad = ["§9.1: строка `%s` в главе не одна — сверка по имени больше не однозначна" % k
+           for k in sorted(dupes)]
     for lan in list(SUBLANES) + ["корпус"]:
         s_ = cpr["сверкаСКарточками"][lan]
         want = [s_["строк"], s_["покрытоПоФайлу"], s_["файлов"], s_["карточекБезСостояния"],
@@ -1321,8 +1415,9 @@ def main() -> int:
         # 1 — «проверено и найдено расхождение», 0 — «всё объявлено и всё на месте»
         rc1 = keydate_trap()
         rc2 = plant_registry_trap()
-        rc3 = self_mutation_trap()
-        return max(rc1, rc2, rc3)
+        rc3 = table91_trap()
+        rc4 = self_mutation_trap()
+        return max(rc1, rc2, rc3, rc4)
     if mode not in ("--check", "--write", "--report"):
         raise SystemExit("употребление: atonement_reshoot_state.py "
                          "[--check|--write|--report|--rule-trap]")
