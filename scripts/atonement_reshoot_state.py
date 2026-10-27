@@ -539,6 +539,109 @@ def keydate_audit(corp):
     return checked, bad
 
 
+# Реестр стражей сверок (круг 65, правка 9). Каждая функция-сверка этого файла обязаналибо быть
+# объявленной с названным местом, где её кусают посаженным нарушением,либо быть объявленной дырой с
+# причиной. Смысл не в том, чтобы вести список, а в том, чтобы список нельзя было забыться: новая
+# сверка без стража поднимает ловушку, старый страж, которого в названном файле уже нет, — тоже.
+PLANT_SOURCES = {
+    "сам": Path(__file__),
+    "гейт": ROOT / "scripts" / "validate_atonement_corpus_integrity.py",
+    "проб истории": ROOT / "scripts" / "atonement_history_perturbation_probe.py",
+    "доказательство": ROOT / "scripts" / "atonement_proof_round63.sh",
+    "батарея": ROOT / "scripts" / "run_atonement_mutation_battery.py",
+}
+# имя сверки -> (источник стража, маркер в нём) либо ("нет", причина, по которой дыра терпима)
+PLANTED_GUARDS = {
+    "keydate_audit": ("сам", "ЛОВУШКА ПРАВИЛА ДАТ"),
+    "env_scan": ("проб истории", "ПРОБ ИСТОРИИ"),
+    "sha_audit": ("проб истории", "недостижим"),
+    "json_leaf_scan": ("доказательство", "ловит внедрённое число среды"),
+    "index_census": ("доказательство", "ценз индекса"),
+    "pipeline_inventory": ("доказательство", "инвентарь инструментов"),
+    "mirror_audit": ("гейт", "правило 25"),
+    "mass_counts": ("гейт", "правило 23"),
+    "ledger_svodki": ("гейт", "statusVocabulary"),
+    "ledger_counts": ("гейт", "conflict ledger"),
+    "tree_counts": ("нет", "сверка байт и строк дерева с реестром; посаженного нарушения нет ни в "
+                          "батаре (она про гейт), ни в пробе (он про положение main), поэтому оглушение "
+                          "этой сверки выловило бы только расхождение --check на живом дереве"),
+    "check_table_91": ("нет", "сверка таблицы 9.1 с реестром доводов; её производитель — утраченный "
+                              "финалайзер круга 61, и вставить в таблицу лишнюю строку, чтобы проверить "
+                              "красноту, нечем: реестр доводов порождает другой инструмент"),
+}
+SCAN_SUFFIXES = ("_audit", "_counts", "_census", "_scan", "_svodki", "_inventory")
+SCAN_PREFIXES = ("check_",)
+
+
+def scan_functions():
+    """Сверки, которые определяет этот файл, — найденные обходом, а не списком.
+
+    Список руками отстаёт от изобретательности ровно так же, как список запрещённых имён полей
+    (круг 64 запретил числа среды по имени — круг 65 запретил их поведением). Здесь обход идёт по
+    `globals()`: имя функции кончается на суффикс сверки или начинается на `check_`, и функция
+    определена в этом модуле (вложенные `walk` в подсчёт не попадают).
+
+    Предел у этого способа тот же, что у любого запрета по имени: сверка, названная вне соглашения
+    (`audit_claims`, `proverka`, `itog`), обходу невидима, и реестр стражей промолчит. Он потому и
+    назван реестром, а не доказательством: он отнимает у забвения только одну возможность — забыть
+    объявить то, что уже названо сверкой, — и ровно этого хватает, чтобы не пришлось заново
+    изобретать ловушку через круг.
+    """
+    here = globals().get("__name__")
+    found = []
+    for name, fn in list(globals().items()):
+        if not callable(fn) or getattr(fn, "__module__", None) != here:
+            continue
+        if name == "keydate_trap" or name.endswith(("_trap",)):
+            continue    # сами ловушки — не сверки
+        if name.startswith(SCAN_PREFIXES) or name.endswith(SCAN_SUFFIXES):
+            found.append(name)
+    return sorted(found)
+
+
+def plant_registry_trap():
+    """Сверка реестра стражей с тем, что определено в файле: ни дыры без причины, ни стража без тела."""
+    found = set(scan_functions())
+    declared = set(PLANTED_GUARDS)
+    if found - declared:
+        print("РЕЕСТР СТРАЖЕЙ РАСХОДИТСЯ: определено и не объявлено — %s. Новая сверка обязана "
+              "объявить, где её кусают, или быть записанной дырой с причиной"
+              % ", ".join(sorted(found - declared)))
+        return 1
+    if declared - found:
+        print("РЕЕСТР СТРАЖЕЙ РАСХОДИТСЯ: объявлено и не найдено обходом — %s. Страж висит на "
+              "несуществующей функции: либо свёрка переименована, либо она тихо умерла вместе с "
+              "телом, и объявление надо снять руками"
+              % ", ".join(sorted(declared - found)))
+        return 2
+    missing, stale, holes = [], [], []
+    for name in sorted(declared):
+        src, marker = PLANTED_GUARDS[name]
+        if src == "нет":
+            if not str(marker).strip():
+                missing.append("%s: дыра объявлена без причины — молчаливая дыра хуже объявленной" % name)
+            holes.append(name)
+            continue
+        path = PLANT_SOURCES.get(src)
+        if path is None or not path.exists():
+            stale.append("%s: источник стража %r не найден (%s)" % (name, src, path))
+            continue
+        if marker not in path.read_text(encoding="utf-8", errors="replace"):
+            missing.append("%s: страж назван в %r, но строки «%s» там нет — проверка, на которую "
+                           "ссылается объявление, оттуда исчезла" % (name, src, marker))
+    if stale:
+        print("РЕЕСТР СТРАЖЕЙ НЕИСПОЛНИМ — " + "; ".join(stale))
+        return 2
+    if missing:
+        print("РЕЕСТР СТРАЖЕЙ РАСХОДИТСЯ — " + "; ".join(missing))
+        return 1
+    print("РЕЕСТР СТРАЖЕЙ: сверок %d, с посаженным нарушением %d, без него %d%s — обход `globals()` "
+          "и объявление сошлись"
+          % (len(found), len(found) - len(holes), len(holes),
+             (" (" + ", ".join(holes) + ")") if holes else ""))
+    return 0
+
+
 def keydate_trap():
     """Ловушка на живом определении: правило обязано краснеть и молчать по очереди.
 
@@ -1118,9 +1221,13 @@ def diff_state(corp: dict, idx_file: dict, n: dict):
 def main() -> int:
     mode = sys.argv[1] if len(sys.argv) > 1 else "--check"
     if mode == "--rule-trap":
-        # ловушка не читает ни реестр, ни дерево: ей довольно собственного определения, поэтому
-        # она годится и в песочнице с грязным деревом, и в CI до любых тяжёлых шагов
-        return keydate_trap()
+        # ловушка не читает ни реестр, ни дерево: ей довольно собственного определения и текстов
+        # соседних инструментов, поэтому она годится и в песочнице с грязным деревом, и в CI до
+        # любых тяжёлых шагов. Код — максимум по обоим отделениям: 2 значит «не проверено»,
+        # 1 — «проверено и найдено расхождение», 0 — «всё объявлено и всё на месте»
+        rc1 = keydate_trap()
+        rc2 = plant_registry_trap()
+        return max(rc1, rc2)
     if mode not in ("--check", "--write", "--report"):
         raise SystemExit("употребление: atonement_reshoot_state.py "
                          "[--check|--write|--report|--rule-trap]")
