@@ -138,6 +138,11 @@ jobs:
           grep -q 'РЕЕСТР СТРАЖЕЙ' scripts/atonement_reshoot_state.py
           grep -q 'SCAN_EXEMPT' scripts/atonement_reshoot_state.py
           grep -q 'вне соглашения и вне списка исключений' scripts/atonement_reshoot_state.py
+          grep -q 'причина без якоря' scripts/atonement_reshoot_state.py
+          grep -q 'якорь-призрак' scripts/atonement_reshoot_state.py
+          grep -q 'не зовётся в теле якоря' scripts/atonement_reshoot_state.py
+          grep -q 'сверка определена в теле корня' scripts/atonement_reshoot_state.py
+          grep -q 'корень зовётся извне' scripts/atonement_reshoot_state.py
           grep -q 'def verdicts' scripts/atonement_history_perturbation_probe.py
       # Мерж обязан быть зелёным не только на ветке: проверка накладывается на дерево main в worktree.
       # Иначе «аддитивный» слой мог бы внести в каноническое дерево падения по чужим файлам, и первый
