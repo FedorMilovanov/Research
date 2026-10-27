@@ -84,17 +84,26 @@ if [ -f "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json" ]; then
 else
   say "корпус" "нет файла" fail
 fi
-for f in scripts/validate_atonement_corpus_integrity.py scripts/atonement_claim_register.py \
-         scripts/atonement_reshoot_state.py scripts/atonement_drive_mirror_round63.py \
-         scripts/atonement_library_index_round63.py scripts/run_atonement_mutation_battery.py \
-         scripts/atonement_round_close.py scripts/atonement_history_perturbation_probe.py \
-         scripts/atonement_proof_round63.sh; do
+# Список канона берётся из `PIPELINE_FILES` пересъёмщика, а не ведётся здесь руками: список,
+# который кто-то переписывает, отстаёт от изобретательности ровно на один круг — в этом кругу так
+# и произошло бы с пробом, если бы его имя добавляли сюда вручную. Плюс сам этот скрипт: он тоже
+# инструмент, и его отсутствие в дереве обязан заметить не он сам, а шаг ниже.
+canon=$(python3 - <<'PYCANON'
+import importlib.util
+spec = importlib.util.spec_from_file_location("rs", "scripts/atonement_reshoot_state.py")
+m = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(m)
+for f in list(m.PIPELINE_FILES) + ["scripts/atonement_proof_round63.sh"]:
+    print(f)
+PYCANON
+)
+while IFS= read -r f; do
   if [ -f "$f" ]; then
     say "инструмент в каноне: $(basename "$f") ($(wc -c < "$f") B)" "да"
   else
     say "инструмент в каноне: $f" "нет файла" fail
   fi
-done
+done <<< "$canon"
 if git ls-files --error-unmatch scripts/atonement_reshoot_state.py > /dev/null 2>&1; then
   say "пересъёмщик чисел лежит в git, а не в песочнице" "да"
 else

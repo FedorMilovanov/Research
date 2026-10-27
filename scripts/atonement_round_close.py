@@ -122,6 +122,10 @@ def preflight():
     print(f"среда годна: клон не shallow, origin/main = {base[:7]}, истории видно {ncommits} коммитов")
     if branch_parity() != 0:
         return 2
+    if canon_parity() != 0:
+        print("  пока канона в индексе нет, числа не снимаются: сверка будет описывать то, чего "
+              "дерево не содержит")
+        return 2
     return 0
 
 
@@ -130,6 +134,62 @@ def plural_ru(n: int, one: str = "коммит", few: str = "коммита", ma
     d, dd = n % 10, n % 100
     form = one if d == 1 and dd != 11 else (few if 2 <= d <= 4 and not 11 <= dd <= 14 else many)
     return f"{n} {form}"
+
+
+def canon_tool_paths():
+    """Список инструментов канона — один на всех: `PIPELINE_FILES` пересъёмщика."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("reshoot_for_preflight", str(ROOT / RESHOOT[0]))
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return list(mod.PIPELINE_FILES) + [PROOF]
+
+
+def canon_parity():
+    """Каждый инструмент канона обязан быть не только на диске, но и в индексе.
+
+    Третий откат снапшота за этот круг был тише первых двух: файлы полосы остались на диске, а
+    индекс перестал их знать, и `git status` смолчал — неотслеженный файл для него не расхождение,
+    а просто чужой. Коммит в таком состоянии собрал бы дерево, в котором нет половины круга, а
+    описывал бы он инструменты, которых в этом дереве нет: реестр знает их байты, и это знание
+    ничего не проверяет, пока проверяющий сам лежит вне git.
+
+    Отличие от «дерево изменилось» принципиально: незакоммиченная правка инструмента — обычное
+    состояние середины круга, её и ловить нечего (пересъём инвентаря её оформляет), а вот
+    *отсутствие в индексе* — это уже не работа, а потеря: следующее восстановление среды унесёт
+    файл, и ни одна сверка об этом не скажет.
+    """
+    idx = set(subprocess.run(["git", "ls-files", "--"], cwd=str(ROOT), capture_output=True,
+                             text=True).stdout.split("\n"))
+    head = subprocess.run(["git", "ls-tree", "-r", "--name-only", "HEAD"], cwd=str(ROOT),
+                          capture_output=True, text=True).stdout.split("\n")
+    headset = set(head)
+    paths = canon_tool_paths()
+    missing = [f for f in paths if f not in idx]
+    if missing:
+        print("ОТКАЗ СРЕДЫ: инструментов канона нет в индексе — %s. Файл на диске без индекса "
+              "переживёт ближайший `git add -A` и не переживёт восстановления снапшота"
+              % ", ".join(missing))
+        print("  вернуть в индекс: git add %s" % " ".join(missing))
+        print("  если файл чужой и не должен был появиться: удалить с диска, а не оставлять "
+              "неотслеженным — реестр описывает инструменты, которые круг собирается закоммитить")
+        return 1
+    fresh = [f for f in paths if f not in headset]
+    if fresh:
+        print("  %s в индексе, но ещё не в HEAD — новый инструмент круга, это законно до коммита"
+              % ", ".join(fresh))
+    changed = 0
+    for f in paths:
+        if f in headset:
+            a = subprocess.run(["git", "rev-parse", "HEAD:" + f], cwd=str(ROOT),
+                              capture_output=True, text=True).stdout.strip()
+            b = subprocess.run(["git", "hash-object", f], cwd=str(ROOT),
+                              capture_output=True, text=True).stdout.strip()
+            if a and b and a != b:
+                changed += 1
+    print("  канон цел: %d инструмента в индексе, из них %d отличаются от HEAD (незакоммиченная "
+          "правка круга, инвентарь переснимет)" % (len(paths), changed))
+    return 0
 
 
 def branch_parity():

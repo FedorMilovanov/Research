@@ -113,6 +113,8 @@ jobs:
           grep -q 'allow-appending-writers' scripts/atonement_round_close.py
           grep -q 'ОТКАЗ СРЕДЫ' scripts/atonement_round_close.py
           grep -q 'def branch_parity' scripts/atonement_round_close.py
+          grep -q 'def canon_parity' scripts/atonement_round_close.py
+          grep -q 'инструментов канона нет в индексе' scripts/atonement_round_close.py
           grep -q 'PROBE' scripts/atonement_round_close.py
           grep -q 'ПРОБ ИСТОРИИ: PASS' scripts/atonement_history_perturbation_probe.py
           # сводка доводов обязана иметь производителя в том же файле, что её снимает: правило 27
