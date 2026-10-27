@@ -117,6 +117,8 @@ jobs:
           grep -q 'def keydate_trap' scripts/atonement_reshoot_state.py
           grep -q 'ЛОВУШКА ПРАВИЛА ДАТ' scripts/atonement_reshoot_state.py
           grep -q 'def plant_registry_trap' scripts/atonement_reshoot_state.py
+          grep -q 'def self_mutation_trap' scripts/atonement_reshoot_state.py
+          grep -q 'ЛОМКА ИСХОДНИКА' scripts/atonement_reshoot_state.py
           grep -q 'РЕЕСТР СТРАЖЕЙ' scripts/atonement_reshoot_state.py
           grep -q 'def verdicts' scripts/atonement_history_perturbation_probe.py
       # Мерж обязан быть зелёным не только на ветке: проверка накладывается на дерево main в worktree.
