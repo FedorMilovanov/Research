@@ -84,6 +84,12 @@ jobs:
             echo "::error::нет refs/remotes/origin/main — проб истории нечем мерить"; exit 1; }
           python3 -B scripts/atonement_history_perturbation_probe.py --verdicts
           python3 -B scripts/atonement_history_perturbation_probe.py HEAD --selftest
+      # Круг 65 смягчил правило «имя блока против его штампа» с равенства на порядок. Смягчённое
+      # правило без посадочного места тихо вырождается в молчание: обход перестаёт видеть ключи,
+      # `bad` пуст, `checked` ноль, а сверка печатает «0 расхождений из 0». Этот шаг исполняет
+      # ловушку: незаконный порядок обязан быть пойман, законный — нет, и блоки обязаны быть увидены.
+      - name: Date-rule trap (a relaxed rule must still bite)
+        run: python3 -B scripts/atonement_reshoot_state.py --rule-trap
       - name: Read-only re-shoot check
         run: python3 -B scripts/atonement_reshoot_state.py --check
       - name: Claim register is resolved and cross-checked
@@ -108,6 +114,8 @@ jobs:
           grep -q 'claimsPerRegistry' scripts/atonement_claim_register.py
           grep -q 'СРЕДА НЕГОДНА' scripts/atonement_history_perturbation_probe.py
           grep -q 'ЛОВУШКА НЕ ПОДТВЕРЖДЕНА' scripts/atonement_history_perturbation_probe.py
+          grep -q 'def keydate_trap' scripts/atonement_reshoot_state.py
+          grep -q 'ЛОВУШКА ПРАВИЛА ДАТ' scripts/atonement_reshoot_state.py
           grep -q 'def verdicts' scripts/atonement_history_perturbation_probe.py
       # Мерж обязан быть зелёным не только на ветке: проверка накладывается на дерево main в worktree.
       # Иначе «аддитивный» слой мог бы внести в каноническое дерево падения по чужим файлам, и первый

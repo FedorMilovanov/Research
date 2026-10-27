@@ -297,6 +297,19 @@ case "$out" in
   *)                                      say "батарея" "${out:-нет строки результата}" fail ;;
 esac
 
+echo "--- ловушка правила, смягчённого кругом 65 ---"
+tout=$(timeout 300 python3 -B scripts/atonement_reshoot_state.py --rule-trap 2>&1); tc=$?
+if [ "$tc" = 0 ]; then
+  case "$tout" in
+    *"ЛОВУШКА ПРАВИЛА ДАТ: ловит незаконный порядок"*)
+      say "ловушка правила дат: смягчение не есть заглушка" "да" ;;
+    *)
+      say "ловушка правила дат" "код 0, но вердикта нет: $(printf '%s' "$tout" | tail -1 | cut -c1-64)" fail ;;
+  esac
+else
+  say "ловушка правила дат" "код $tc: $(printf '%s' "$tout" | tail -1 | cut -c1-64)" fail
+fi
+
 cd / && rm -rf "$WORK"
 echo
 if [ "$FAIL" -eq 0 ]; then

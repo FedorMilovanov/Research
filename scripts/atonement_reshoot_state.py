@@ -539,6 +539,46 @@ def keydate_audit(corp):
     return checked, bad
 
 
+def keydate_trap():
+    """Ловушка на живом определении: правило обязано краснеть и молчать по очереди.
+
+    Смягчение круга 65 (равенство дат -> порядок) оставило `keydate_audit` с одной запрещённой
+    стороной, и у этой стороны до сих пор не было ни одного посадочного места: ни батарея (она
+    про гейт), ни проб (он про положение main) не высаживают в корпус блок, названный свежее, чем
+    снят. Значит, правило могло выродиться в молчание незаметно: сломанный обход не находит блоков,
+    `bad` пуст, `checked` ноль — и сверка печатает «0 расхождений из 0», что неотличимо от успеха.
+    Поэтому ловушка проверяет три вещи, а не одну: незаконный порядок пойман, законный не пойман,
+    и обход действительно видел блоки (иначе первые два пункта ничего не значат).
+
+    Синтетика живёт в памяти: дерево при этом не меняется, писанины нет, повторение безопасно.
+    """
+    def block(name_date, stamp):
+        return {"pipelineScripts%sr99" % name_date: {"measuredAt": stamp}}
+
+    legal = block("20261026", "2026-10-28T00:00:00Z")   # названо вчера, снято позже — законно
+    illegal = block("20261028", "2026-10-26T00:00:00Z")  # названо завтра, снято вчера — обман
+    checked_l, bad_l = keydate_audit(legal)
+    checked_i, bad_i = keydate_audit(illegal)
+    verdicts = []
+    if checked_l == 0 or checked_i == 0:
+        print("ЛОВУШКА НЕ ПОДТВЕРЖДЕНА: обход `keydate_audit` не нашёл ни одного блока в синтетике "
+              "(законно: %d, незаконно: %d) — правило молчит не потому, что порядок верен, а потому, "
+              "что не видит ключей" % (checked_l, checked_i))
+        return 2
+    if bad_l:
+        verdicts.append("ловушка сработала на законном порядке (так краснел круг 64): "
+                      + bad_l[0][:110])
+    if not bad_i:
+        verdicts.append("правило не поймало незаконный порядок (имя блока позже его штамма)")
+    if verdicts:
+        print("ЛОВУШКА НЕ ПОДТВЕРЖДЕНА — " + "; ".join(verdicts))
+        return 1
+    print("ЛОВУШКА ПРАВИЛА ДАТ: ловит незаконный порядок (1 из 1), молчит на законном "
+          "(0 из 1), блоков увидено %d — смягчение круга 65 не есть заглушка"
+          % (checked_l + checked_i))
+    return 0
+
+
 def pipeline_inventory():
     """Съём инструментов, которыми снимаются числа. Блок живёт в реестре ровно затем, чтобы
     «скрипт есть в дереве» отличалось от «скрипт есть в main и в PR круга»: перечисление
@@ -1077,8 +1117,13 @@ def diff_state(corp: dict, idx_file: dict, n: dict):
 
 def main() -> int:
     mode = sys.argv[1] if len(sys.argv) > 1 else "--check"
+    if mode == "--rule-trap":
+        # ловушка не читает ни реестр, ни дерево: ей довольно собственного определения, поэтому
+        # она годится и в песочнице с грязным деревом, и в CI до любых тяжёлых шагов
+        return keydate_trap()
     if mode not in ("--check", "--write", "--report"):
-        raise SystemExit("употребление: atonement_reshoot_state.py [--check|--write|--report]")
+        raise SystemExit("употребление: atonement_reshoot_state.py "
+                         "[--check|--write|--report|--rule-trap]")
     global now
     now = subprocess.run(["date", "-u", "+%Y-%m-%dT%H:%M:%SZ"], capture_output=True, text=True).stdout.strip()
     corp = json.loads(CORPUS.read_text(encoding="utf-8"))
