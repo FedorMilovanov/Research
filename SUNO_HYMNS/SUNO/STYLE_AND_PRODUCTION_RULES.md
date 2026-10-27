@@ -30,6 +30,15 @@ These are project-wide working principles, adopted 2026-10-25 from the owner's n
 6. **Choose the musical style per work.** A per-work exclusion (for example, no guitar in the epic Lodenstein setting) is not a project-wide rule.
 7. **Vocal default: clear diction, a strong and intelligible lead male voice, correct stress and natural pronunciation.** Avoid excessively breathy, whispered, hoarse or gratuitously low delivery unless a specific concept calls for it.
 8. **Keep the literary translation separate from the musical adaptation.** Document and justify every departure from the source.
+9. **Буквальность изначально (owner's rule, 2026-10-27): when a rendering choice exists, take the more literal option first.** The literal option is the one closest to the source word, case, word order and syntax. Smoothing may be recorded as an alternative, but it is not the starting point, and every departure from the literal one is written down with its reason.
+
+**What "literal first" means in practice (adopted with rule 9):**
+
+- **Word order stays** wherever the target language allows it. Reordering is a departure and is documented as one.
+- **Case stays.** A Greek vocative is rendered by a Russian vocative, not by a nominative, unless a per-work decision says otherwise.
+- **Calques beat stylistic synonyms** where the calque is the exact equivalent: `μονογενής` → «единородный», not «единственный»; `δοξολογοῦμεν` → «славословим», not «славим»; `εὐχαριστοῦμεν` → «благодарим», not «спасибо говорим».
+- **Church-Slavonic forms are not banned** — they are chosen when they are the literal equivalent («в вышних», «Вседержитель», «одесную»), and rejected when they are flavour («тихий» вместо «отрадный»). The test is literalness, not registered.
+- **Precedence is unchanged:** an explicit owner decision about a given work — its title, its name, its register — wins over rule 9 and is recorded as a per-work decision below. Rule 9 governs the choices that are still open.
 
 **Precedence.** Where a per-work decision and a standing rule conflict, the per-work decision wins — but it must be written down as a per-work decision, with its reason. The standing rules exist to prevent defaults from being invented silently.
 
