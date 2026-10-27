@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "RESEARCH-CLOSURE-WITNESS-2026-08-02",
+  "generatedAt": "2026-10-27T00:01:18.655788Z",
+  "testedCommit": "d679efd7c2cd0570ac9d872d48f6340d44e2e2eb",
+  "branch": "main",
+  "status": "ALL_LISTED_VALIDATORS_PASSED_CLEAN_TREE",
+  "validators": [
+    {
+      "validator": "scripts/check_heart_source_closure.py",
+      "status": "PASS",
+      "stdout": "Heart source closure: PASS — 85 sources, 81 trusted, 18 claims, 9 locator-bound quote-safe claims",
+      "stdoutSha256": "eb8153f24f768869c6e2aa357fe803e8bf668bc26a3afd00eb09e118397456be"
+    },
+    {
+      "validator": "scripts/validate_heart_p0_dossiers.py",
+      "status": "PASS",
+      "stdout": "Heart P0 dossiers: PASS — 3 dossiers, 17 sources, 26 claims, 0 direct quotes",
+      "stdoutSha256": "1b597865c436ebc478f6395518a68b319cde8bd0a2a5f72373a979d7e5536672"
+    },
+    {
+      "validator": "scripts/validate_baptist_acquisition_authority.py",
+      "status": "PASS",
+      "stdout": "Baptist acquisition authority: PASS — 3 acquisitions, 1 derivative classification, 1 localized visual closure, 0 quote-ready",
+      "stdoutSha256": "5ecaecf32a5317224dabfcecb7caf1ad3612d5c553fab016a1cd33b69f30e68d"
+    },
+    {
+      "validator": "scripts/validate_baptist_derivative_transcriptions.py",
+      "status": "PASS",
+      "stdout": "Baptist derivative transcription authority: PASS — 2 derivatives, 0 facsimiles, 0 primary quote-ready",
+      "stdoutSha256": "c9d883526a7dc4421bacbb25887d66ba8bd5491ad9550c0a7833e01ef49a42d5"
+    },
+    {
+      "validator": "scripts/validate_gill_closed_book_families.py",
+      "status": "PASS",
+      "stdout": "Gill closed-book families: PASS — 7 families, 1 durable file receipt, 1 edition-usable item, 0 quote-ready items",
+      "stdoutSha256": "621e451853766c0a84d5f46e5c5f1821f45a63b80c59166a78c3b8a7d46f0a93"
+    },
+    {
+      "validator": "scripts/validate_atlas_pihahiroth.py",
+      "status": "PASS",
+      "stdout": "Atlas Pihahiroth: PASS — 8 constraints, 3 corridors, 9 sources, 0 authoritative points; owner composition preserved",
+      "stdoutSha256": "b8bb051454c38d7e6d675c93ac5a0cf475dbb53ddd48ccfeb8694ccc7d21ee7a"
+    },
+    {
+      "validator": "scripts/validate_source_url_replacements.py",
+      "status": "PASS",
+      "stdout": "Source URL replacements: PASS — 7 replacements, 1 version-history endpoint, rights preserved",
+      "stdoutSha256": "3b081358709b0ee8d93638fa75d2b90ff230eed0a2e60f87786c9afbd582f373"
+    }
+  ],
+  "authorityFiles": [
+    {
+      "path": "СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-02.md",
+      "bytes": 5484,
+      "sha256": "91a88f46d2cba6d1c07450e6eb9b282b081c3af69ed99e2a1c608aec93355d32",
+      "gitBlobSha": "ec87e844093f3c6cfb4c7215688d27dc6d259c37"
+    },
+    {
+      "path": "data/heart-p0-architecture-dossiers-2026-08-02.json",
+      "bytes": 20757,
+      "sha256": "db72369c06cfb61dcf6002e696bd8e496906db2613f6ebd86322fd9db5c2aad8",
+      "gitBlobSha": "71c26fed5de96cead1e2f8dcdedbfefc05f3e628"
+    },
+    {
+      "path": "RUSSIAN_BAPTISTS_ARCHIVE/00_CURRENT_AUTHORITY_2026-08-02.md",
+      "bytes": 7576,
+      "sha256": "d895c3de40f16f497a783487ab6d34a1a5593e2a10f3a7fff41b9cb038cd486d",
+      "gitBlobSha": "4858c9566258d17035cae9e361ab7efeaa530aec"
+    },
+    {
+      "path": "data/baptist-acquisition-proof-authority-2026-08-02.json",
+      "bytes": 7435,
+      "sha256": "7924200f90596f83ecbceff6de936ebbb1684021425c3c10e249dcc5f6b87511",
+      "gitBlobSha": "a1fa602569c906dd5323b5c7f97e8dc81d345f49"
+    },
+    {
+      "path": "data/baptist-derivative-transcription-authority-2026-08-02.json",
+      "bytes": 3457,
+      "sha256": "7fc62dfc0ba2a58020aaf82457e646b12e221136b3465ad2e8a8246169ef125a",
+      "gitBlobSha": "245bc7075cb142905ee07f0145096d1127763a14"
+    },
+    {
+      "path": "БИОГРАФИИ/Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md",
+      "bytes": 5507,
+      "sha256": "c608c3e69799c8274792c41645c2f06564edbecf19b4275a2d2b612a14625091",
+      "gitBlobSha": "8737de22773247d503c9df36fbf0fbc7b5a43c6c"
+    },
+    {
+      "path": "data/gill-closed-book-families-2026-08-02.json",
+      "bytes": 7463,
+      "sha256": "205fbaf22814af2766bfd36c558bd8b89d32eee97ea81f3c1624b0a193111793",
+      "gitBlobSha": "b557e9c56812713048df87d22504272114f5cde5"
+    },
+    {
+      "path": "БИБЛЕЙСКИЙ АТЛАС/00_CURRENT_AUTHORITY_2026-08-02.md",
+      "bytes": 3169,
+      "sha256": "3706b9eee541c231ac9b36483a2386b558289e96fd776317662240484664ca15",
+      "gitBlobSha": "996b7a58c1e02ac63bfac25b22b1f6832403351a"
+    },
+    {
+      "path": "data/atlas-pihahiroth-authority-2026-08-02.json",
+      "bytes": 10635,
+      "sha256": "3e3ba10faaf4c78709692cd569e7eb729d67c3884a0287a7075d33d8a292d29e",
+      "gitBlobSha": "d4cd4c52bc6b39fe28e5c4d6cd5200663d84eb19"
+    },
+    {
+      "path": "SOURCE_LIBRARY/CURRENT_SOURCE_URL_AUTHORITY_2026-08-02.md",
+      "bytes": 3941,
+      "sha256": "051361527bb8a0d30979e4b848a0c9a72e7d1517d985828ddaa8d790b987e45f",
+      "gitBlobSha": "dc4bbc6ba6a58f90c54b84d0f54399e26f960f09"
+    },
+    {
+      "path": "data/source-url-replacements-2026-08-02.json",
+      "bytes": 3943,
+      "sha256": "a2cb57ad0edd84a90ec35cc3bc55873a78fb524e03e7306204206cb8c28c93f9",
+      "gitBlobSha": "bf44f8922e02483ab74316387375682d3e5ed28a"
+    }
+  ],
+  "domains": {
+    "heart": "PASS",
+    "baptistAcquisitionAndSourceClass": "PASS",
+    "gillClosedBookFamilies": "PASS",
+    "atlasPihahirothResearchAuthority": "PASS",
+    "sourceLibraryUrlAndRightsAuthority": "PASS"
+  },
+  "boundaries": {
+    "productDeploymentWitnessIncluded": false,
+    "externalPaidAcquisitionsIncluded": false,
+    "closedBookFilesClaimedReceived": false,
+    "baptistCorpusQuoteReadyClaimed": false,
+    "atlasExactCoordinateClaimed": false,
+    "sourceLibraryTrueDeadQueueClaimedClosed": false
+  }
+}
