@@ -1504,3 +1504,42 @@ The Greek lane is registered in the same file as the Dutch one because it is the
 - HOLDs: RIGHTS_HOLD
 - Supports: «The Latin translation of the Gloria below, which has been used since the late 4th century, is likely his [Илария]»; гимн «in the Mass of the western Rites since the 5th century».; Там же: гимн составлен по-гречески, во II в. (по этой странице), и рекомендован как утренняя молитва в VII книге «Апостольских постановлений».
 - Limits / caveats: Это справочная страница, а не исследование; датировка «II век» для греческого оригинала не подтверждена ни одним свидетелем, прочитанным нами (древнейший текст — «Постановления», кон. IV в.). Атрибуция Иларию традиционная.
+
+## SRC-PHOS-SUBTUUM-SHOEMAKER-2018 — Stephen J. Shoemaker, The First Christian Hymnal: The Songs of the Ancient Jerusalem Church (Brigham Young University Press, 2018) — параллельные грузинско-английские тексты Иерусалимского грузинского Иадгари; прочитано предисловие (с. xi–xx) и раздел «Praises of the Holy Theotokos» (с. 298–315), с. 315 — версия Sub tuum praesidium
+
+- URL: https://archive.org/download/shoemaker-first-christian-hymnal-iadgari/Shoemaker%E2%80%94First%20Christian%20Hymnal%20(Iadgari)_hocr.html
+- Source role/type: Научное издание и перевод древнейшего христианского гимнала (Иадгари); прочитано в OCR-тексте на archive.org
+- Evidence class: B1
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: **Текст (с. 315, раздел «Praises and Acclamations of the All-Holy and Glorious Holy Theotokos», первый плагальный глас, песнь 4):** «**Beneath your compassion, we flee for refuge, O Theotokos. Do not disregard our prayers in times of trouble, But deliver us from wrath, O only [pure and blessed] one.**» — то есть иерусалимская версия молитвы **отличается от известной греческой**: вместо «избавь от опасностей» (ἐκ κινδύνων) она просит «избавь от гнева» (wrath).; **Место в книге:** молитва стоит среди «Хвал Пресвятой Богородице» — раздела, входящего в гимны воскресной службы; по Шумейкеру, служба совершалась в храме Воскресения (Анастасис) в Иерусалиме.; **Цепочка датировок (предисловие, с. xv–xviii):** грузинский перевод сделан в конце VI в.; собрание составлено не позднее середины VI в.; «**as a collection the Sunday hymns must date to late fifth or early sixth century at the very latest**», а сложены они, по Рену, в **конце IV — начале V в.** («Renoux ... convincingly identifies them on the whole as works of the late fourth and early fifth centuries»); «**The issues of the Council of Chalcedon are conspicuously absent**».; **О гимне (предисловие, с. xviii):** «one of the Chantbook's many hymns is a version of the famous Sub tuum praesidium prayer to the Virgin that is also found on a papyrus dating to an earlier period in Egypt» — то есть Шумейкер считает папирус более ранним, чем гимнал; и «by the turn of the fifth century, undoubtedly these hymns were mostly already traditional songs whose authors were unknown».; **Рукописи:** лучше всего кафедральный чин сохранил **Sinai Georgian 18** (основа перевода); для «Хвал Богородице» основной рукописью служит **Sinai 41** (первый глас по Sinai 34); критическое издание — Metreveli, Cankievi, Xevsuriani, უძველისი იადგარი (Тбилиси, 1980), по семи рукописям; текст выложен проектом TITUS.; **Музыка:** рукописи не содержат нотации — мелодии утрачены («the manuscripts unfortunately do not provide any musical notation»).
+- Limits / caveats: Читался OCR-текст книги на archive.org (без пробелов между словами), а не печатный том; грузинский текст я прочесть не могу, читал только английский перевод. Дат рукописей Sinai 18/40/41 в прочитанных частях не названо. Перевод и датировка — Шумейкера (по Рену); это одно мнение в исследовательской традиции, а не установленный факт.
+
+## SRC-PHOS-SUBTUUM-TOWAREK-2021 — Piotr Towarek, «Prayer „Sub Tuum praesidium”: Time of Origin, Place in Liturgy and Reception in Musical Culture. Outline of the Issues», Vox Patrum 80 (2021) — состояние вопроса о датировке и месте в богослужении
+
+- URL: https://czasopisma.kul.pl/index.php/vp/article/view/12929
+- Source role/type: Рецензируемая статья; прочитаны аннотация, список литературы и выходные данные
+- Evidence class: B1
+- Access state: PARTIAL_OBJECT
+- Locator state: COARSE_LOCATOR_ONLY
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: Состояние спора: III в. (Giamberardini, Starowieyski) против VI/VII или даже VIII/IX вв. (Hans Förster, Theodore de Bruyn, Arne Effenberger).; **«According to Förster, it is the Viennese transcription of the antiphon, dating from the 6th/7th century, that should be considered the oldest today (ed. Treu and Diethart, 1993)»** — то есть после передатировки папируса древнейшим свидетелем становится венская запись: Griechische literarische Papyri christlichen Inhaltes II (MPER N.S. XVII), hrsg. K. Treu – J. Diethart, Wien 1993, с. 56, № 29.; Место в богослужении Запада: антифонарь из Компьени (IX в.), лекционарий Клюни (XI в.), антифонарь Сен-Мор-де-Фоссе, амвросианский антифонарь (XII в.); чин благословения иконы (понтификал Дюрана), месса амвросианского обряда; после II Ватиканского собора — конец комплетория и Graduale romanum.
+- Limits / caveats: Прочитана аннотация и аппарат статьи, а не полный текст: выводы Фёрстера переданы в её пересказе.
+
+## SRC-PHOS-SUBTUUM-RYL-PLATE — P.Ryl. III 470 — цифровая копия папируса с текстом Ὑπὸ τὴν σὴν εὐσπλαγχνίαν (Манчестер, John Rylands Library, цифровые коллекции)
+
+- URL: https://www.digitalcollections.manchester.ac.uk/view/MS-GREEK-P-00470/1
+- Source role/type: Сам предмет — изображение папируса; источник найден, мной не прочитан
+- Evidence class: A1
+- Access state: PARTIAL_OBJECT
+- Locator state: COARSE_LOCATOR_ONLY
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: ARCHIVE_HOLD, RIGHTS_HOLD
+- Supports: Ссылка на саму рукопись: это то, что спорят о датировке (18 × 9,4 см, греческий текст молитвы с Θεοτόκε).
+- Limits / caveats: Изображение я прочесть не могу (нет vision): как свидетель оно ценно только вместе с чужой транскрипцией.
