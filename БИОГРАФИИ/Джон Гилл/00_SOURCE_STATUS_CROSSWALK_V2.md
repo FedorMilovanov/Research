@@ -11,7 +11,7 @@ In particular, historical Gill `A3` meant “official bibliographic record witho
 
 Every new or materially updated Gill source record must separate:
 
-- `evidenceClass`: global `A1/A2/A3/B1/C/D` from `../data/repository-evidence-policy-v2.json`;
+- `evidenceClass`: global `A1/A2/A3/B1/C/D` from `../../data/repository-evidence-policy-v2.json`;
 - `accessState`: `FULL_OBJECT_VERIFIED`, `PARTIAL_OBJECT`, `CATALOG_ONLY`, `LINK_ONLY`, `NOT_ACQUIRED`;
 - `locatorState`: `EXACT_LOCATOR_VERIFIED`, `COARSE_LOCATOR_ONLY`, `LOCATOR_MISSING`;
 - `rightsState`: `PUBLICATION_ELIGIBLE`, `STORAGE_ONLY`, `PRIVATE_STUDY_ONLY`, `PERMISSION_REQUIRED`, `RIGHTS_UNKNOWN`;

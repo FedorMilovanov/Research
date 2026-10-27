@@ -157,7 +157,7 @@ PDF: `cf.sbts.edu/equip/uploads/2021/10/SBJT-25.1-Complete.pdf`. Верифиц�
 
 ## 6. Перекрёстные ссылки
 
-- **Внутри отдела `Джон Гилл/`:** 01 (каталог первоисточников A–G; сюда — уточнение Rathel BQ 2017 и добавление Haykin/Brill 1997) · 02 §8 (спор о гипер-кальвинизме → эдинбургская диссертация = Curt Daniel 1983) · 05 (Body of Divinity TOC) · 07 (Введение/биография — исправления ERR-1…ERR-4) · 09 (Справочник — мёртвая ссылка + хронология) · 13 (Троица — савеллианский корень ст. IV–V Declaration; Swan 2021).
+- **Внутри отдела `БИОГРАФИИ/Джон Гилл/`:** 01 (каталог первоисточников A–G; сюда — уточнение Rathel BQ 2017 и добавление Haykin/Brill 1997) · 02 §8 (спор о гипер-кальвинизме → эдинбургская диссертация = Curt Daniel 1983) · 05 (Body of Divinity TOC) · 07 (Введение/биография — исправления ERR-1…ERR-4) · 09 (Справочник — мёртвая ссылка + хронология) · 13 (Троица — савеллианский корень ст. IV–V Declaration; Swan 2021).
 - **Сайт (gb-is-my-strength):** `dzhon-gill-chast-1-chelovek` (жена Негус, дети, свидетели Davies/Hall/Bayly), `dzhon-gill-chast-3-nasledie` (Haykin/Brill 1997 как «major critical study»; Curt Daniel 1983 как жёсткая оппозиция), `dzhon-gill-spravochnik` (переход reformedreader→archive.org; уточнение хронологии).
 - **Первоисточники (Level A, PD):** Риппон 1838 — `archive.org/details/briefmemoiroflif00ripp` (OCR: `/stream/.../briefmemoiroflif00ripp_djvu.txt`). Современные (Level C): Brill 1997 (brill.com/view/title/2248); SBJT 25.1 (cf.sbts.edu/.../SBJT-25.1-Complete.pdf); Curt Daniel 1983 (era.ed.ac.uk/handle/1842/30743); Rathel BQ 2017 (DOI 10.1080/0005576X.2016.1255421).
 

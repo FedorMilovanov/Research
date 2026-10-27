@@ -52,7 +52,9 @@ Genesis 6 имеет собственный machine-guarded authority graph. Е�
 - Искупление (ограниченное/всеобщее, кальвинизм, термины): [`ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md`](%D0%98%D0%A1%D0%9A%D0%A3%D0%9F%D0%9B%D0%95%D0%9D%D0%98%D0%95/00_CURRENT_AUTHORITY_2026-10-07.md). Corpus-specific; не меняет корневой root.
 - Библейский атлас: [`БИБЛЕЙСКИЙ АТЛАС/00_CURRENT_AUTHORITY_2026-08-02.md`](%D0%91%D0%98%D0%91%D0%9B%D0%95%D0%99%D0%A1%D0%9A%D0%98%D0%99%20%D0%90%D0%A2%D0%9B%D0%90%D0%A1/00_CURRENT_AUTHORITY_2026-08-02.md).
 - Баптистские архивы: [`RUSSIAN_BAPTISTS_ARCHIVE/SCAN_ACQUISITION_CURRENT_AUTHORITY_2026-08-02.md`](RUSSIAN_BAPTISTS_ARCHIVE/SCAN_ACQUISITION_CURRENT_AUTHORITY_2026-08-02.md).
-- Джон Гилл: [`Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md`](%D0%94%D0%B6%D0%BE%D0%BD%20%D0%93%D0%B8%D0%BB%D0%BB/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md).
+- Биографии: [`БИОГРАФИИ/00_README_AND_NAVIGATION.md`](%D0%91%D0%98%D0%9E%D0%93%D0%A0%D0%90%D0%A4%D0%98%D0%98/00_README_AND_NAVIGATION.md) — отдел серии биографий (канонический дом).
+- Джон Гилл: [`БИОГРАФИИ/Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md`](%D0%91%D0%98%D0%9E%D0%93%D0%A0%D0%90%D0%A4%D0%98%D0%98/%D0%94%D0%B6%D0%BE%D0%BD%20%D0%93%D0%B8%D0%BB%D0%BB/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md).
+- Стивен Чарнок: [`БИОГРАФИИ/Стивен Чарнок/00_README_AND_NAVIGATION.md`](%D0%91%D0%98%D0%9E%D0%93%D0%A0%D0%90%D0%A4%D0%98%D0%98/%D0%A1%D1%82%D0%B8%D0%B2%D0%B5%D0%BD%20%D0%A7%D0%B0%D1%80%D0%BD%D0%BE%D0%BA/00_README_AND_NAVIGATION.md) — сбор материалов для биографии (в работе).
 - Source Library: [`SOURCE_LIBRARY/CURRENT_SOURCE_URL_AUTHORITY_2026-08-02.md`](SOURCE_LIBRARY/CURRENT_SOURCE_URL_AUTHORITY_2026-08-02.md).
 
 Corpus-specific current authority остаётся владельцем своего evidence graph. Корневой registry определяет навигацию и stage boundary, но не переписывает corpus-specific evidence.

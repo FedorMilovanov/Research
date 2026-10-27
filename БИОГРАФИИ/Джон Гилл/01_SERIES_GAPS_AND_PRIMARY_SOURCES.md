@@ -131,6 +131,13 @@
 ## 7. Перекрёстные ссылки
 - **Циклы аудита (этот же каталог):** [cycle1](../AUDIT_gb-main_e044908e_2026-07-05.md) · [cycle2](./AUDIT_gb-main_14a49be8_2026-07-06_cycle2.md) · [cycle3](./AUDIT_gb-main_14a49be8_2026-07-06_cycle3.md)
 - **Матрица багов:** [../verified/MASTER_BUG_MATRIX.md](../verified/MASTER_BUG_MATRIX.md) (раздел «AUDITOR / ARENA — 2026-07-06»)
+- `HISTORICAL` — **пять ссылок выше ведут на объекты, которых нет в этом репозитории.** Файлы
+  `AUDIT_gb-main_*` и `verified/MASTER_BUG_MATRIX.md` относились к каталогу параллельного
+  аудиторского checkout, а не к Research; они не были перемещены вместе с отделом и не
+  восстанавливались. Строки сохранены как историческая запись транзакций 2026-07-05/06 и
+  намеренно **не удаляются** и **не переписываются**. Проверено инвентаризацией 2026-10-25:
+  эти ссылки были некорректны и до перемещения отдела в `БИОГРАФИИ/` — перемещение их не
+  сломало. Любой вывод, опирающийся на них, требует независимой проверки по первоисточнику.
 - **Серия в репо:** `data/series.json` → ключ `"dzhon-gill"`; страницы в `src/pages/articles/dzhon-gill-*`
 - **Первоисточники (внешние):** A `archive.org/details/causeofgodtruthi00gill` · B `archive.org/.../a-body-of-doctrinal-divi_gill-john_1769_1` + `_1770_3` · C `johngill.thekingsbible.com` · D `archive.org/details/briefmemoiroflif00ripp` · E `archive.org/.../the-doctrine-of-the-trin_gill-john_1731` · F `archive.org/.../a-dissertation-concernin_gill-john_1767` · G `reformedreader.org/ccc/johngilldeclarationoffaith.htm` · PRDL `prdl.org/author_view.php?a_id=1996` · CCEL `ccel.org/ccel/gill`
 - **Вторичные:** SBJT 25.1 `cf.sbts.edu/equip/uploads/2021/10/SBJT-25.1-Complete.pdf` · TGC themelios · SEBTS Rathel PDF · Rathel 2017 DOI `10.1080/0005576X.2016.1255421` · Ella 1995 · Toon 1967 · Nettles 1986

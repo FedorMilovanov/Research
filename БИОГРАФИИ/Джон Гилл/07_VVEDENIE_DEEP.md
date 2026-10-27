@@ -105,7 +105,7 @@
 
 ## 8. Перекрёстные ссылки
 
-- **Внутри отдела `Джон Гилл/`:** досье 01 (лакуны/первоисточники) · 02 (5 пунктов + вечное оправдание) · 03 (структура: Часть IV. Богословие) · 04 (7-текстовый экзегетический сет) · 05 (*Body of Divinity* TOC + каркас статьи) · 06 (индекс сайта + закон/антиномизм + Рим 3:31/Деян 13:48) · **08** (вечное оправдание и завет благодати — углубление §3 выше).
+- **Внутри отдела `БИОГРАФИИ/Джон Гилл/`:** досье 01 (лакуны/первоисточники) · 02 (5 пунктов + вечное оправдание) · 03 (структура: Часть IV. Богословие) · 04 (7-текстовый экзегетический сет) · 05 (*Body of Divinity* TOC + каркас статьи) · 06 (индекс сайта + закон/антиномизм + Рим 3:31/Деян 13:48) · **08** (вечное оправдание и завет благодати — углубление §3 выше).
 - **Сайт (gb-is-my-strength):** серия `dzhon-gill` (`src/content/articles/dzhon-gill-*.mdx`): `dzhon-gill-istoricheskiy-kontekst` (это «Введение» серии — сюда ложится §7), `dzhon-gill-chast-1-chelovek`, `dzhon-gill-chast-2-uchenyi`, `dzhon-gill-chast-3-nasledie`, `dzhon-gill-spravochnik`; связки: `krajne-li-isporcheno-serdce` (total depravity), `rimlyanam-7-veruyushchiy-ili-neveruyushchiy` (закон/антиномизм), `hermenevticheskaya-otsenka-hristotsentrichnoy-germenevtiki`, `kod-da-vinchi`, серия `russian-baptism`.
 - **AuditRepo (аудиты, НЕ перенесены):** `verified/MASTER_BUG_MATRIX.md`; `incoming/arena-auditor/2026-07-06/` (D-23 RESOLVED, GREEN @ `75f807b73`).
 - **Другие отделы Research:** `БАПТИСТЫ РОССИИ` (баптистская идентичность Гилла), `СЕРИЯ СЕРДЦЕ` (антропология/сердце — смежно с total depravity и законом).
