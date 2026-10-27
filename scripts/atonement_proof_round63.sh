@@ -13,6 +13,11 @@
 # он лежал в песочнице, а не в main. Этот написан заново и лежит в репозитории; текст прежнего не
 # восстановлен, и притворяться, что восстановлен, круг не будет.
 #
+# С круга 65 добавлена ещё одна: проб возмущением истории (три среды над одним деревом; числа обязаны
+# не реагировать на рост `origin/main`, а в неполном клоне — отказывать словами). Он вызывается здесь же,
+# потому что инструмент, который CI и доказательство не зовут, перестаёт ловить незаметно: ровно так
+# пропал счётчик круга 62.
+#
 # С круга 64 к нему добавлены три проверки, которых в круге 63 не было: что порядок закрытия круга
 # печатается без записи, что писатели записей не запускаются без подтверждённого номера, и что число
 # среды, вписанное в сверяемое поле, ловится (в клонах вводится на минуту и откатывается `git
@@ -36,6 +41,10 @@ FAIL=0
 n=0
 
 say() {
+  # `set -u` поймал то, для чего эта строка теперь есть явно: `say` зовут с двумя аргументами, и
+  # перенос метки на следующую строку без `\` молча превращал вторую половину в отдельную команду,
+  # а шаг — в падение с «$2: unbound variable»
+  : "${2:?say(<что>, <статус>[, fail]): статус обязателен — шаг без статуса неотличим от шага, которого не было}"
   n=$((n + 1))
   printf '%2d) %-60s %s\n' "$n" "$1" "$2"
   if [ "${3:-ok}" = "fail" ]; then FAIL=1; fi
@@ -75,16 +84,26 @@ if [ -f "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json" ]; then
 else
   say "корпус" "нет файла" fail
 fi
-for f in scripts/validate_atonement_corpus_integrity.py scripts/atonement_claim_register.py \
-         scripts/atonement_reshoot_state.py scripts/atonement_drive_mirror_round63.py \
-         scripts/atonement_library_index_round63.py scripts/run_atonement_mutation_battery.py \
-         scripts/atonement_round_close.py scripts/atonement_proof_round63.sh; do
+# Список канона берётся из `PIPELINE_FILES` пересъёмщика, а не ведётся здесь руками: список,
+# который кто-то переписывает, отстаёт от изобретательности ровно на один круг — в этом кругу так
+# и произошло бы с пробом, если бы его имя добавляли сюда вручную. Плюс сам этот скрипт: он тоже
+# инструмент, и его отсутствие в дереве обязан заметить не он сам, а шаг ниже.
+canon=$(python3 - <<'PYCANON'
+import importlib.util
+spec = importlib.util.spec_from_file_location("rs", "scripts/atonement_reshoot_state.py")
+m = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(m)
+for f in list(m.PIPELINE_FILES) + ["scripts/atonement_proof_round63.sh"]:
+    print(f)
+PYCANON
+)
+while IFS= read -r f; do
   if [ -f "$f" ]; then
     say "инструмент в каноне: $(basename "$f") ($(wc -c < "$f") B)" "да"
   else
     say "инструмент в каноне: $f" "нет файла" fail
   fi
-done
+done <<< "$canon"
 if git ls-files --error-unmatch scripts/atonement_reshoot_state.py > /dev/null 2>&1; then
   say "пересъёмщик чисел лежит в git, а не в песочнице" "да"
 else
@@ -184,7 +203,10 @@ doc = Path("ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md").read_t
 audit = corp["fourPointMassRegistry20261023"]["seriesAuditRound5820261026"]["файлАудита"]
 res.append(("аудит: реестр знает %d B / %d строк, файл такой же" % (audit["байт"], audit["строк"]),
             audit["байт"] == len(doc.encode()) and audit["строк"] == doc.count("\n")))
-res.append(("в аудите есть §9.3 и §9.4 (круг 63 и круг 64)", "### 9.3" in doc and "### 9.4" in doc))
+res.append(("в аудите есть §9.3, §9.4 и §9.5; §9.5 называет проб и сводку по имени",
+            "### 9.3" in doc and "### 9.4" in doc and "### 9.5" in doc
+            and "atonement_history_perturbation_probe.py" in doc
+            and "claimsPerRegistry" in doc))
 bad = 0
 for msg, good in res:
     print("%3s) %s" % ("OK" if good else "!!", msg))
@@ -243,6 +265,7 @@ from pathlib import Path
 lo, hi = chr(0x4E00), chr(0x9FFF)
 files = ["ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md", "scripts/atonement_reshoot_state.py",
          "scripts/atonement_round_close.py", "scripts/atonement_proof_round63.sh",
+         "scripts/atonement_history_perturbation_probe.py",
          "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json"]
 # цитаты исключаются тем же определением, что и в rules 19 и 2b: «ёлочки», `обратные кавычки`
 # и "" — это чужое слово в чужом разборе, а не прилипшее при наборе. Первый вариант этого шага
@@ -265,12 +288,36 @@ else
   say "CJK-скан круга" "вне цитат: $cjk_bare (в цитатах $cjk_quoted) — правило гейта смотрит только сообщение коммита" fail
 fi
 
+echo "--- проб истории: сверяемые числа относятся к дереву, а не к клону (круг 65) ---"
+timeout 120 python3 -B scripts/atonement_history_perturbation_probe.py --verdicts > /dev/null 2>&1 \
+  && say "проб истории: способ отчёта различает 0/1/2" "да" \
+  || say "проб истории: --verdicts" "отчёт проба не различает исход — см. вывод режима" fail
+pout=$(timeout 900 python3 -B scripts/atonement_history_perturbation_probe.py HEAD --selftest 2>&1)
+case "$pout" in
+  *"ПРОБ ИСТОРИИ: PASS"*) say "проб истории: среды из одного дерева, дрейфа нет" "да" ;;
+  *"СРЕДА НЕГОДНА"*)      say "проб истории" "среда не годна: $(printf '%s\n' "$pout" | tail -1 | cut -c1-64) — это не проверка" fail ;;
+  *)                      say "проб истории" "$(printf '%s\n' "$pout" | tail -2 | tr '\n' ' ' | cut -c1-88)" fail ;;
+esac
+
 echo "--- батарея мутаций (ловит ли гейт то, что обещает) ---"
 out=$(timeout 1500 python3 -B scripts/run_atonement_mutation_battery.py 2>&1 | grep "поймано случаев")
 case "$out" in
   *"непопаданий: 0"*"не проверено: 0"*) say "батарея: ${out#*случаев: }" "да" ;;
   *)                                      say "батарея" "${out:-нет строки результата}" fail ;;
 esac
+
+echo "--- ловушка правила, смягчённого кругом 65 ---"
+tout=$(timeout 300 python3 -B scripts/atonement_reshoot_state.py --rule-trap 2>&1); tc=$?
+if [ "$tc" = 0 ]; then
+  case "$tout" in
+    *"ЛОВУШКА ПРАВИЛА ДАТ: ловит незаконный порядок"*"с посаженным нарушением"*"без него 0"*"ЛОВУШКА ТАБЛИЦЫ 9.1"*"ЛОВУШКА ДЕРЕВА"*"ЛОМКА ИСХОДНИКА"*)
+      say "ловушка правил: реестр без дыр, таблица, дерево и поломки пойманы" "да" ;;
+    *)
+      say "ловушка правил" "код 0, но вердикта обоих отделений нет: $(printf '%s' "$tout" | tail -1 | cut -c1-64)" fail ;;
+  esac
+else
+  say "ловушка правил" "код $tc: $(printf '%s' "$tout" | tail -1 | cut -c1-64)" fail
+fi
 
 cd / && rm -rf "$WORK"
 echo

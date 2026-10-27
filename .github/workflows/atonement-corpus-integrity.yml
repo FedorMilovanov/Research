@@ -51,7 +51,7 @@ jobs:
           python3 -B -m py_compile scripts/validate_atonement_corpus_integrity.py
           scripts/atonement_claim_register.py scripts/atonement_reshoot_state.py
           scripts/atonement_drive_mirror_round63.py scripts/atonement_library_index_round63.py
-          scripts/atonement_round_close.py
+          scripts/atonement_round_close.py scripts/atonement_history_perturbation_probe.py
 
       - name: Atonement corpus integrity (read-only)
         run: python3 -B scripts/validate_atonement_corpus_integrity.py
@@ -68,6 +68,35 @@ jobs:
           rc=0
           python3 -B scripts/atonement_round_close.py --run --allow-appending-writers >/dev/null 2>&1 || rc=$?
           test "$rc" = 2 || { echo "::error::писатели без подтверждения круга должны давать отказ с кодом 2, получили $rc"; exit 1; }
+      # Круг 64 запретил числа истории в сверяемых полях по *имени* поля. Имя — список, а список
+      # всегда отстаёт от изобретательности: счётчик, названный иначе, проходит незамеченным. Этот шаг
+      # говорит то же самое поведением: проб строит три среды над одним деревом (контроль, та же
+      # версия при `origin/main` на один коммит длиннее, и клон глубиной в один коммит) и требует,
+      # чтобы числа вели себя согласно объявлению: в полной среде — не шевельнуться, в неполной —
+      # отказаться и назвать причину словами. Молчаливый PASS в неполном клоне — тот же грех, что и
+      # тихое «совпало» над пустым обходом. Шаг стоит до «read-only» сверки: она обязана заодно
+      # подтвердить, что проб не написал в проверяемое дерево ни байта.
+      - name: History perturbation probe (numbers must not move with history)
+        run: |
+          git remote set-branches --add origin main 2>/dev/null || true
+          git -c gc.auto=0 fetch -q origin "+refs/heads/main:refs/remotes/origin/main" || true
+          git show-ref --verify --quiet refs/remotes/origin/main || {
+            echo "::error::нет refs/remotes/origin/main — проб истории нечем мерить"; exit 1; }
+          python3 -B scripts/atonement_history_perturbation_probe.py --verdicts
+          python3 -B scripts/atonement_history_perturbation_probe.py HEAD --selftest
+      # Круг 65 смягчил правило «имя блока против его штампа» с равенства на порядок. Смягчённое
+      # правило без посадочного места тихо вырождается в молчание: обход перестаёт видеть ключи,
+      # `bad` пуст, `checked` ноль, а сверка печатает «0 расхождений из 0». Этот шаг исполняет
+      # ловушку: незаконный порядок обязан быть пойман, законный — нет, и блоки обязаны быть увидены.
+      # Дальше этот же шаг вырос в реестр стражей (правка 9: у каждой сверки — названный страж или
+      # названная дыра), в ломку собственного исходника (правка 10: ловушка исполняет свои же мутации,
+      # а не помнится скриптом в песочнице) и в ловушку таблицы 9.1 (правка 12: посаженная в память
+      # ячейка и ослеплённый обход — без единой правки прозы), в ловушку съёмки дерева (правка 13:
+      # фикстура во временном каталоге, правка обязана двигать числа, пустой корень не имеет права
+      # вернуть живые). Имя шага переименовано вместе с
+      # содержанием: имя, которое никто не сверяет, отстаёт первым.
+      - name: Reshooter rule traps (relaxed rules, guardian registry, planted breakages must bite)
+        run: python3 -B scripts/atonement_reshoot_state.py --rule-trap
       - name: Read-only re-shoot check
         run: python3 -B scripts/atonement_reshoot_state.py --check
       - name: Claim register is resolved and cross-checked
@@ -83,6 +112,29 @@ jobs:
           grep -q 'число обхода в сверяемом поле' scripts/atonement_reshoot_state.py
           grep -q 'allow-appending-writers' scripts/atonement_round_close.py
           grep -q 'ОТКАЗ СРЕДЫ' scripts/atonement_round_close.py
+          grep -q 'def branch_parity' scripts/atonement_round_close.py
+          grep -q 'def canon_parity' scripts/atonement_round_close.py
+          grep -q 'инструментов канона нет в индексе' scripts/atonement_round_close.py
+          grep -q 'PROBE' scripts/atonement_round_close.py
+          grep -q 'ПРОБ ИСТОРИИ: PASS' scripts/atonement_history_perturbation_probe.py
+          # сводка доводов обязана иметь производителя в том же файле, что её снимает: правило 27
+          # сравнивает число, а пересъёмщик его не трогает — без этих двух строк сводка снова
+          # становится тем, что кто-то однажды вписал с экрана
+          grep -q 'def write_rollup' scripts/atonement_claim_register.py
+          grep -q 'claimsPerRegistry' scripts/atonement_claim_register.py
+          grep -q 'СРЕДА НЕГОДНА' scripts/atonement_history_perturbation_probe.py
+          grep -q 'ЛОВУШКА НЕ ПОДТВЕРЖДЕНА' scripts/atonement_history_perturbation_probe.py
+          grep -q 'def keydate_trap' scripts/atonement_reshoot_state.py
+          grep -q 'ЛОВУШКА ПРАВИЛА ДАТ' scripts/atonement_reshoot_state.py
+          grep -q 'def plant_registry_trap' scripts/atonement_reshoot_state.py
+          grep -q 'def self_mutation_trap' scripts/atonement_reshoot_state.py
+          grep -q 'def table91_trap' scripts/atonement_reshoot_state.py
+          grep -q 'ЛОВУШКА ТАБЛИЦЫ 9.1' scripts/atonement_reshoot_state.py
+          grep -q 'def tree_counts_trap' scripts/atonement_reshoot_state.py
+          grep -q 'ЛОВУШКА ДЕРЕВА' scripts/atonement_reshoot_state.py
+          grep -q 'ЛОМКА ИСХОДНИКА' scripts/atonement_reshoot_state.py
+          grep -q 'РЕЕСТР СТРАЖЕЙ' scripts/atonement_reshoot_state.py
+          grep -q 'def verdicts' scripts/atonement_history_perturbation_probe.py
       # Мерж обязан быть зелёным не только на ветке: проверка накладывается на дерево main в worktree.
       # Иначе «аддитивный» слой мог бы внести в каноническое дерево падения по чужим файлам, и первый
       # же плановый прогон на main обвинил бы в этом владельцев тех ланов.

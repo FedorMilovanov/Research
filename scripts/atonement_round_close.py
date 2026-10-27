@@ -61,6 +61,7 @@ REGISTER = ["scripts/atonement_claim_register.py"]
 GATE = "scripts/validate_atonement_corpus_integrity.py"
 BATTERY = "scripts/run_atonement_mutation_battery.py"
 PROOF = "scripts/atonement_proof_round63.sh"
+PROBE = "scripts/atonement_history_perturbation_probe.py"
 
 WRITERS = (
     ("scripts/atonement_drive_mirror_round63.py", "--write",
@@ -119,6 +120,133 @@ def preflight():
     ncommits = subprocess.run(["git", "rev-list", "--count", "origin/main"], cwd=str(ROOT),
                               capture_output=True, text=True).stdout.strip()
     print(f"среда годна: клон не shallow, origin/main = {base[:7]}, истории видно {ncommits} коммитов")
+    if branch_parity() != 0:
+        return 2
+    if canon_parity() != 0:
+        print("  пока канона в индексе нет, числа не снимаются: сверка будет описывать то, чего "
+              "дерево не содержит")
+        return 2
+    return 0
+
+
+def plural_ru(n: int, one: str = "коммит", few: str = "коммита", many: str = "коммитов") -> str:
+    """Число с формой — чтобы в отказе не было «на 1 коммитов»."""
+    d, dd = n % 10, n % 100
+    form = one if d == 1 and dd != 11 else (few if 2 <= d <= 4 and not 11 <= dd <= 14 else many)
+    return f"{n} {form}"
+
+
+def canon_tool_paths():
+    """Список инструментов канона — один на всех: `PIPELINE_FILES` пересъёмщика."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("reshoot_for_preflight", str(ROOT / RESHOOT[0]))
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return list(mod.PIPELINE_FILES) + [PROOF]
+
+
+def canon_parity():
+    """Каждый инструмент канона обязан быть не только на диске, но и в индексе.
+
+    Третий откат снапшота за этот круг был тише первых двух: файлы полосы остались на диске, а
+    индекс перестал их знать, и `git status` смолчал — неотслеженный файл для него не расхождение,
+    а просто чужой. Коммит в таком состоянии собрал бы дерево, в котором нет половины круга, а
+    описывал бы он инструменты, которых в этом дереве нет: реестр знает их байты, и это знание
+    ничего не проверяет, пока проверяющий сам лежит вне git.
+
+    Отличие от «дерево изменилось» принципиально: незакоммиченная правка инструмента — обычное
+    состояние середины круга, её и ловить нечего (пересъём инвентаря её оформляет), а вот
+    *отсутствие в индексе* — это уже не работа, а потеря: следующее восстановление среды унесёт
+    файл, и ни одна сверка об этом не скажет.
+    """
+    idx = set(subprocess.run(["git", "ls-files", "--"], cwd=str(ROOT), capture_output=True,
+                             text=True).stdout.split("\n"))
+    head = subprocess.run(["git", "ls-tree", "-r", "--name-only", "HEAD"], cwd=str(ROOT),
+                          capture_output=True, text=True).stdout.split("\n")
+    headset = set(head)
+    paths = canon_tool_paths()
+    missing = [f for f in paths if f not in idx]
+    if missing:
+        print("ОТКАЗ СРЕДЫ: инструментов канона нет в индексе — %s. Файл на диске без индекса "
+              "переживёт ближайший `git add -A` и не переживёт восстановления снапшота"
+              % ", ".join(missing))
+        print("  вернуть в индекс: git add %s" % " ".join(missing))
+        print("  если файл чужой и не должен был появиться: удалить с диска, а не оставлять "
+              "неотслеженным — реестр описывает инструменты, которые круг собирается закоммитить")
+        return 1
+    fresh = [f for f in paths if f not in headset]
+    if fresh:
+        print("  %s в индексе, но ещё не в HEAD — новый инструмент круга, это законно до коммита"
+              % ", ".join(fresh))
+    changed = 0
+    for f in paths:
+        if f in headset:
+            a = subprocess.run(["git", "rev-parse", "HEAD:" + f], cwd=str(ROOT),
+                              capture_output=True, text=True).stdout.strip()
+            b = subprocess.run(["git", "hash-object", f], cwd=str(ROOT),
+                              capture_output=True, text=True).stdout.strip()
+            if a and b and a != b:
+                changed += 1
+    print("  канон цел: %d инструмента в индексе, из них %d отличаются от HEAD (незакоммиченная "
+          "правка круга, инвентарь переснимет)" % (len(paths), changed))
+    return 0
+
+
+def branch_parity():
+    """Локальная ветка не имеет права отставать от того, что лежит на удалённом имени круга.
+
+    Пустой `git status` значит только согласие индекса с рабочим деревом — он молчит и в том
+    состоянии, в котором этот круг застал песочницу вторично за ночь: указатель ветки откатился
+    на коммит предыдущего круга вместе с восстановлением снапшота, файлы круга остались на диске,
+    но для git стали неотслеженными, а `--run` закоммитил бы дерево, в котором нет ни проба, ни
+    ловушек, — и был бы собой доволен, потому что сверяется он с локальным HEAD. Значит, сравнивать
+    надо не с HEAD, а с удалённым именем ветки: опережать его можно (незапушенный коммит — обычное
+    состояние середины круга), отставать нельзя, расхождение тоже отказ: два разных ответа на один
+    вопрос круг не закрывает.
+    """
+    def gitout(*args):
+        return subprocess.run(["git"] + list(args), cwd=str(ROOT), capture_output=True,
+                              text=True).stdout.strip()
+    branch = gitout("rev-parse", "--abbrev-ref", "HEAD")
+    if branch in ("", "HEAD"):
+        print("  HEAD отвязан (проверка идёт на merge-ref pull request) — сверка с именем ветки "
+              "пропущена: сверяется содержимое, а не указатель")
+        return 0
+    ls = gitout("ls-remote", "origin", "refs/heads/" + branch).split()
+    rsha = ls[0] if ls else ""
+    if not rsha:
+        print(f"  на origin нет refs/heads/{branch} — круг ещё не пушил ветку, сверять не с чем")
+        return 0
+    lsha = gitout("rev-parse", "HEAD")
+    if rsha == lsha:
+        print(f"  ветка {branch} совпадает с origin ({lsha[:7]}) — указатель там, где и обещал")
+        return 0
+    if subprocess.run(["git", "cat-file", "-e", rsha + "^{commit}"], cwd=str(ROOT),
+                      capture_output=True).returncode != 0:
+        print(f"ОТКАЗ СРЕДЫ: на origin/{branch} лежит {rsha[:7]}, а в локальном репозитории такого "
+              "коммита нет — история не достана, и снятые числа относятся не к этому дереву")
+        print(f"  достать: git -c gc.auto=0 fetch --deepen 3000 origin {branch} && git fetch origin "
+              f"+refs/heads/{branch}:refs/sandbox/head && git reset --hard {rsha[:7]} && "
+              "git update-ref -d refs/sandbox/head")
+        return 1
+    if subprocess.run(["git", "merge-base", "--is-ancestor", rsha, "HEAD"], cwd=str(ROOT),
+                      capture_output=True).returncode != 0:
+        behind = int(gitout("rev-list", "--count", "HEAD.." + rsha) or 0)
+        ahead = int(gitout("rev-list", "--count", rsha + "..HEAD") or 0)
+        if ahead == 0:
+            print(f"ОТКАЗ СРЕДЫ: локальная {branch} отстаёт от origin/{branch} на {plural_ru(behind)} — "
+                  "указатель сдвинулся под кругом, и снятые в таком дереве числа относились бы к "
+                  "прошлому кругу, хотя файлы этого лежат на диске и для git выглядят лишними")
+            print(f"  вернуть ветку к залитому: git fetch origin +refs/heads/{branch}:refs/sandbox/head "
+                  f"&& git reset --hard {rsha[:7]} && git update-ref -d refs/sandbox/head")
+        else:
+            print(f"ОТКАЗ СРЕДЫ: локальная {branch} разошлась с origin/{branch}: назад на "
+                  f"{plural_ru(behind)} и вперёд на {plural_ru(ahead)}")
+            print(f"  разобрать руками: git log --oneline HEAD..{rsha[:7]} и git log --oneline "
+                  f"{rsha[:7]}..HEAD — потом решить, какое дерево считать кругом")
+        return 1
+    print(f"  локальная {branch} опережает origin/{branch} ({lsha[:7]} против {rsha[:7]}) — "
+          "незапушенный коммит середины круга, это законно")
     return 0
 
 
@@ -132,10 +260,11 @@ def plan():
     print("порядок закрытия круга (исполняется именно так, порядок — часть определения чисел):")
     steps = [
         ("шаг −1: годна ли среда",
-         f"{PY} -B scripts/atonement_round_close.py --selfcheck (проверка среды внутри)",
-         "новый круг открывается в клоне глубиной в один коммит; в нём правило 20 и сверка "
-         "зеркал обязаны объявить недоказуемость, а не молча пройти — поэтому среда проверяется "
-         "раньше первой цифры"),
+         f"{PY} -B scripts/atonement_round_close.py --preflight, затем --selfcheck",
+         "новый круг открывается в клоне глубиной в один коммит; в нём правило 20 и сверка зеркал "
+         "обязаны объявить недоказуемость, а не молча пройти. `--preflight` — то же самое, но "
+         "без десяти секунд чтения корпуса: им открывается круг, потому что за ночь песочница "
+         "успевает откатиться, а `git status` об этом молчит (круг 65, правка 11)"),
         ("писатели, только по явному подтверждению",
          " ".join(f"{PY} -B {s[0]} {s[1]}" for s in WRITERS),
          "каждый вызов дописывает запись; без подтверждения этот шаг отсутствует, и `--plan` его "
@@ -168,11 +297,22 @@ def plan():
          f"bash {PROOF} <ref>",
          "единственный способ увидеть, что пересъём не зависит от песочницы: после мержа круг "
          "обязан быть доказан на origin/main"),
+        ("проб истории (внутри --verify, или вручную)",
+         f"{PY} -B {PROBE} HEAD --selftest",
+         "сверяемые числа не должны реагировать на рост истории; в неполном клоне — отказ словами, "
+         "а не молчание; ловушка проба подтверждается на каждом запуске, ~30 секунд; способ отчёта "
+         "сверяется отдельно и дёшево: `--verdicts` (коды 0/1/2 не должны путаться между собой)"),
+        ("сверка пост-фактум после мержа",
+         f"{PY} -B scripts/atonement_round_close.py --verify origin/main",
+         "после слияния `--run` краснеет законно: реестр описывает прежнее дерево. Для слитого среза "
+         "этот режим зовёт доказательство и проб истории одними читающими шагами и ничего не пишет"),
     ]
     for i, (what, cmd, why) in enumerate(steps, 1):
         print(f" {i}. {what}\n      {cmd}\n      — {why}")
     print("\nсам этот инструмент проверяется так:")
     print(f"      {PY} -B scripts/atonement_round_close.py --selfcheck")
+    print(f"      {PY} -B {PROBE} HEAD --selftest""  — проб истории зовётся и здесь: замкнутый на себе "
+          "инструмент, который никто не вызывает, перестанет ловить незаметно")
     return 0
 
 
@@ -188,10 +328,57 @@ def selfcheck():
     bad += [] if code == 0 else ["register --check"]
     code, _ = sh([REGISTER[0], "--cross"], "root-ссылки вне обхода лана")
     bad += [] if code == 0 else ["register --cross"]
+    # ловушка правила дат — шаг самопроверки, а не факультатив: смягчённое правило без посадочного
+    # места тихо вырождается в молчание, и «0 расхождений из 0» тогда выглядит успехом
+    code, _ = sh([RESHOOT[0], "--rule-trap"], "ловушка правила дат, реестр стражей сверок, "
+                                             "ловушка таблицы 9.1, ловушка съёмки дерева и "
+                                             "ломка собственного исходника: "
+                                             "незаконный порядок пойман, законный молчит, каждая "
+                                             "сверка объявлена со стражем или с причиной дыры, "
+                                             "посаженная ячейка, ослеплённый обход и чужой корень "
+                                             "пойманы, каждая поломка названа текстом")
+    bad += [] if code == 0 else ["ловушка правил и реестр стражей"]
     if bad:
         print("САМОПРОВЕРКА КРУГА: РАСХОЖДЕНИЕ — " + ", ".join(bad))
         return 1
-    print("САМОПРОВЕРКА КРУГА: всё зелёное — гейт, пересъёмщик, реестр локаторов, перекрёстная сверка")
+    print("САМОПРОВЕРКА КРУГА: всё зелёное — гейт, пересъёмщик, реестр локаторов, перекрёстная "
+          "сверка, ловушка правил пересъёмщика (дат, реестр стражей, таблица 9.1, дерево, ломка исходника)")
+    return 0
+
+
+def verify(ref: str) -> int:
+    """Сверка пост-фактум, которой не нужен слепой шаг 4 (круг 65).
+
+    После слияния `--run` краснеет законно: реестр описывает дерево *до* мержа, а не после. Честная
+    проверка слитого состояния — только читающими шагами по удалённому указателю. До сих пор для этого
+    приходилось помнить, что доказательство вызывается вручную, а проб истории не вызывался нигде:
+    он молодой инструмент, а инструмент, который CI не зовёт, живёт до первого удобного рефакторинга.
+    Эта ветка собирает читающие шаги в один и ничего не пишет. Разница с `--run` видна в имени: здесь
+    нечего подтверждать, здесь есть на что посмотреть."""
+    print(f"--- сверка пост-фактум на {ref}: ничего не пишется ---")
+    if preflight() != 0:
+        return 2
+    print("--- шаг 1: читающая часть на рабочем дереве ---")
+    if selfcheck() != 0:
+        return 1
+    print(f"--- шаг 2: доказательство на чистом клоне {ref} ---")
+    code, _ = sh(f"bash {PROOF} {ref}", "полное доказательство в дереве из remote; сколько шагов — "
+                                      "печатает сам отчёт, здесь числа не держат")
+    if code != 0:
+        print("СВЕРКА ОТКАЗАЛА: доказательство красное — на слитом срезе это дефект круга, а не шум")
+        return 1
+    print(f"--- шаг 3: проб истории на том же срезе {ref} ---")
+    code, _ = sh([PROBE, ref, "--selftest"], "среды из одного дерева: дрейфа сверяемых чисел нет, "
+                                             "отказ назван словами")
+    if code == 2:
+        print("СВЕРКА ОТКАЗАЛА: проб не смог собрать среды — это не «всё хорошо», это «не проверено»")
+        return 2
+    if code != 0:
+        print("СВЕРКА ОТКАЗАЛА: проб истории увидел реакцию сверяемых чисел на рост истории — "
+              "список лежит в выводе шага 3 дословно")
+        return 1
+    print(f"ПОСЛЕ СЛИЯНИЯ: {ref} сверен читающими шагами — гейт, пересъёмщик, реестр локаторов, "
+          "доказательство, проб истории; реестр не тронут, слепой шаг 4 для этого среза не требуется")
     return 0
 
 
@@ -219,9 +406,14 @@ def run(args):
             print("НЕ ЗАКРЫТО: пересъёмщик не сошёлся за восемь своих прогонов — он сам это печатает, "
                   "чинить молча нельзя")
             return 1
-        code, _ = sh([REGISTER[0], "--write", "root"], "локаторы §9.1 после правки документа")
-        if code != 0:
-            print("НЕ ЗАКРЫТО: реестр локаторов не записался")
+        code, rout = sh([REGISTER[0], "--write", "root"], "локаторы §9.1 после правки документа")
+        # у реестра список служебных маркеров сверяется *до* записи, поэтому виток, на котором проза
+        # назвала новый жаргон, обязан быть красным и одновременно записать свежий список: судить
+        # должна следующая читающая сверка (шаг 8), а не этот код. Проглотить же отказ что-либо
+        # писать — значит закрыть круг с чужим списком в реестре, поэтому условие именно «записал»
+        if code != 0 and ("записан в atonement-corpus-v1.json" not in rout or "Traceback" in rout):
+            print("НЕ ЗАКРЫТО: реестр локаторов отказался писать или сломался (код %d) — он не "
+                  "переснял блок; это чинится не вторым прогоном" % code)
             return 1
         code, out = sh([RESHOOT[0], "--write"], "второй пересъём обязан сказать «прогон #0»")
         # критерий неподвижности — не «вывод похож», а ровно то слово, которым пересъёмщик
@@ -246,7 +438,7 @@ def run(args):
             return 1
     if args.with_proof:
         print(f"--- шаг 4: доказательство на чистом клоне {args.with_proof} ---")
-        code, _ = sh(f"bash {PROOF} {args.with_proof}", "18+ проверок в дереве из remote")
+        code, _ = sh(f"bash {PROOF} {args.with_proof}", "полное доказательство в дереве из remote")
         if code != 0:
             print("НЕ ЗАКРЫТО: доказательство отказало — оно краснее, чем закрытый круг, и это тот "
                   "случай, когда красный вывод лучше зелёного")
@@ -265,16 +457,26 @@ def main() -> int:
     ap = argparse.ArgumentParser(prog="atonement_round_close.py", add_help=True,
                                  description="порядок закрытия круга ланы ИСКУПЛЕНИЕ")
     ap.add_argument("--plan", action="store_true", help="напечатать порядок, ничего не исполняя")
+    ap.add_argument("--preflight", action="store_true",
+                    help="только годность среды: shallow, origin/main и совпадение ветки с залитым "
+                         "указателем — дешёвая проверка, с которой круг обязан начинаться")
     ap.add_argument("--selfcheck", action="store_true", help="только читающая часть")
     ap.add_argument("--run", action="store_true", help="отработать порядок целиком")
     ap.add_argument("--with-battery", action="store_true", help="внутри --run добавить батарею мутаций")
     ap.add_argument("--with-proof", metavar="REF", default="",
                     help="внутри --run добавить доказательство на чистом клоне ref")
+    ap.add_argument("--verify", metavar="REF", nargs="?", const="origin/main", default="",
+                    help="сверка пост-фактум на залитом срезе: только читающие шаги, зовёт и "
+                         "доказательство, и проб истории; единственный честный режим сразу после мержа")
     ap.add_argument("--allow-appending-writers", action="store_true",
                     help="разрешить двух писателей, дописывающих записи")
     ap.add_argument("--confirm-circle", metavar="N", default="",
                     help="номер круга, которым подтверждается разрешение писателей")
     args = ap.parse_args()
+    if args.preflight:
+        return preflight()
+    if args.verify:
+        return verify(args.verify)
     if args.plan:
         if args.run or args.selfcheck:
             print("ОТКАЗ: --plan не совмещается с исполняющими режимами: план обязан быть безвредным")
@@ -285,7 +487,7 @@ def main() -> int:
     if args.run:
         return run(args)
     print("употребление: atonement_round_close.py [--plan | --selfcheck | --run [--with-battery] "
-          "[--with-proof REF]] [--allow-appending-writers --confirm-circle N]")
+          "[--with-proof REF]] | --verify [REF] [--allow-appending-writers --confirm-circle N]")
     return 2
 
 

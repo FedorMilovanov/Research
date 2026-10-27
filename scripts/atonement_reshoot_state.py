@@ -273,38 +273,53 @@ def sha_audit(reg: dict):
     }
 
 
-def tree_counts() -> dict:
-    def stat(paths):
-        ps = [Path(p) for p in paths]
-        return len(ps), sum(p.stat().st_size for p in ps)
+def tree_counts(root=None) -> dict:
+    """Числа дерева — снятые с того корня, который назван.
 
-    docs = stat(sorted(glob.glob(str(ROOT / "docs" / "research" / "atonement" / "*.md"))))
-    n_num = len([p for p in glob.glob(str(ROOT / "docs" / "research" / "atonement" / "*.md"))
-                 if re.search(r"/\d\d_", p)])
-    rootmd = stat(sorted(glob.glob(str(ROOT / "ИСКУПЛЕНИЕ" / "*.md"))))
-    b17 = (ROOT / "ИСКУПЛЕНИЕ" / "17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md").stat().st_size
-    docbytes = DOC.stat().st_size
-    doclines = len(DOC.read_text(encoding="utf-8").split("\n")) - 1
-    docmd5 = hashlib.md5(DOC.read_bytes()).hexdigest()
+    `root` нужен ловушке (круг 65, правка 13): чтобы проверить, что сверяемые числа относятся к
+    дереву, а не к месту, где скрипт случайно лежал, обход должен уметь пройтись по *другому*
+    дереву. Без этого «числа не шевелятся, потому что их берут из кэша» и «числа не шевелятся,
+    потому что дерево не менялось» — одно и то же наблюдение, и отличить их было нечем.
+    """
+    root = ROOT if root is None else Path(root)
+
+    def rel(path: Path) -> Path:
+        return root / path.relative_to(ROOT)
+
+    def stat(paths):
+        ps = [Path(x) for x in paths]
+        return len(ps), sum(x.stat().st_size for x in ps)
+
+    lane_glob = str(rel(ROOT / "docs" / "research" / "atonement")) + "/*.md"
+    docs = stat(sorted(glob.glob(lane_glob)))
+    n_num = len([x for x in glob.glob(lane_glob) if re.search(r"/\d\d_", x)])
+    rootmd = stat(sorted(glob.glob(str(rel(ROOT / "ИСКУПЛЕНИЕ")) + "/*.md")))
+    b17 = rel(ROOT / "ИСКУПЛЕНИЕ" / "17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md").stat().st_size
+    doc = rel(DOC)
+    docbytes = doc.stat().st_size
+    doclines = len(doc.read_text(encoding="utf-8").split("\n")) - 1
+    docmd5 = hashlib.md5(doc.read_bytes()).hexdigest()
     per = {}
     for lan in SUBLANES:
-        per[lan] = stat(sorted(glob.glob(str(ROOT / "ИСКУПЛЕНИЕ" / lan / "*.md"))))
+        per[lan] = stat(sorted(glob.glob(str(rel(ROOT / "ИСКУПЛЕНИЕ" / lan)) + "/*.md")))
     sub = (sum(v[0] for v in per.values()), sum(v[1] for v in per.values()))
-    dr_paths = sorted(glob.glob(str(ROOT / "ИСКУПЛЕНИЕ" / "synthesis" / "drafts" / "*.md")))
+    dr_paths = sorted(glob.glob(str(rel(ROOT / "ИСКУПЛЕНИЕ" / "synthesis" / "drafts")) + "/*.md"))
     dr = stat(dr_paths)
-    dr_lines = sum(Path(p).read_text(encoding="utf-8").count("\n") for p in dr_paths)
-    dr_lines_split = sum(len(Path(p).read_text(encoding="utf-8").split("\n")) for p in dr_paths)
-    dr_sizes = [Path(p).stat().st_size for p in dr_paths]
-    data = stat(sorted(glob.glob(str(ROOT / "ИСКУПЛЕНИЕ" / "data" / "*"))))
-    corp_bytes = CORPUS.stat().st_size
-    idx_bytes = INDEX.stat().st_size
-    mass = (ROOT / "docs" / "research" / "atonement" / "35_four_point_authors_mass_registry.md").read_text(encoding="utf-8")
-    mass_bytes = (ROOT / "docs" / "research" / "atonement" / "35_four_point_authors_mass_registry.md").stat().st_size
+    dr_lines = sum(Path(x).read_text(encoding="utf-8").count("\n") for x in dr_paths)
+    dr_lines_split = sum(len(Path(x).read_text(encoding="utf-8").split("\n")) for x in dr_paths)
+    dr_sizes = [Path(x).stat().st_size for x in dr_paths]
+    data = stat(sorted(glob.glob(str(rel(ROOT / "ИСКУПЛЕНИЕ" / "data")) + "/*")))
+    corp_bytes = rel(CORPUS).stat().st_size
+    idx_bytes = rel(INDEX).stat().st_size
+    mass_path = rel(ROOT / "docs" / "research" / "atonement" / "35_four_point_authors_mass_registry.md")
+    mass = mass_path.read_text(encoding="utf-8")
+    mass_bytes = mass_path.stat().st_size
     return {
         "docs": docs, "docsNumbered": n_num, "rootmd": rootmd, "b17": b17,
         "doc": (docbytes, doclines, docmd5), "perLan": per, "sub": sub,
-        "drafts": dr, "draftsLines": dr_lines, "draftsLinesSplit": dr_lines_split, "draftsMin": round(min(dr_sizes) / 1000, 1),
-        "draftsMax": round(max(dr_sizes) / 1000),
+        "drafts": dr, "draftsLines": dr_lines, "draftsLinesSplit": dr_lines_split,
+        "draftsMin": round(min(dr_sizes) / 1000, 1) if dr_sizes else 0,
+        "draftsMax": round(max(dr_sizes) / 1000) if dr_sizes else 0,
         "data": data, "corpBytes": corp_bytes, "idxBytes": idx_bytes,
         "massBytes": mass_bytes, "massRows": len(re.findall(r"^\|\s*FP-\d+\s*\|", mass, re.M)),
         "massSections": len(re.findall(r"^## ", mass, re.M)),
@@ -443,7 +458,8 @@ def env_declared(corp):
 PIPELINE_FILES = ("scripts/validate_atonement_corpus_integrity.py", "scripts/atonement_claim_register.py",
                   "scripts/run_atonement_mutation_battery.py", "scripts/atonement_reshoot_state.py",
                   "scripts/atonement_drive_mirror_round63.py", "scripts/atonement_library_index_round63.py",
-                  "scripts/atonement_round_close.py")
+                  "scripts/atonement_round_close.py",
+                  "scripts/atonement_history_perturbation_probe.py")
 
 
 ENV_DECL_BLOCK = ENV_DECL_PREFIX + KEY_DATE + "r" + CIRCLE
@@ -501,8 +517,15 @@ OWNED_BLOCK_RX = re.compile(r"(reshootCounters|pipelineScripts|countsNote|enviro
 
 
 def keydate_audit(corp):
-    """Имя блока против его же штампа. Возвращает (проверено, расхождения) — и то и другое идёт в
-    сверку: круг, который переименовал блок, но не переставил отметку, обязан быть пойман машиной."""
+    """Имя блока против его же штампа: дату в имени нельзя ставить задним числом.
+
+    Возвращает (проверено, расхождения) — и то и другое идёт в сверку: круг, который переименовал
+    блок, но не переставил отметку, обязан быть пойман машиной. Круг 65 смягчил формулировку с
+    равенства на порядок: первая версия требовала совпадения дат, из-за чего корпус краснел в 00:00
+    UTC — всякая ночная пересъёмка ставила в `measuredAt` новые сутки под блоком, названным вчера,
+    и единственной починкой было бы переименование ключей с осиротевшими предками (круг 64 потерял
+    так четыре блока). Обман эта версия ловит тот же: блок, названный датой *позже* его штампа,
+    значит, что дату придумали для числа, которое так ещё не снимали."""
     bad, checked = [], 0
 
     def walk(node, path):
@@ -512,10 +535,13 @@ def keydate_audit(corp):
             if m:
                 checked += 1
                 stamp = str(node.get("measuredAt") or "")[:10].replace("-", "")
-                if stamp and stamp != m.group(2):
-                    bad.append(f"{path}: имя блока датировано {m.group(2)}, а measuredAt — {stamp} "
-                               "(один из двух дней лишний; имена блоков этого скрипта обязаны совпадать "
-                               "с UTC-датой их штампа)")
+                # сравнение порядка, а не равенства: переснять блок позже, чем его назвали, законно
+                # (для свежей даты есть `переснятоПрогоном`), а вот назвать его датой, которой он ещё
+                # не был снят, — ровно тот жест, против которого правило и заводилось
+                if stamp and int(stamp) < int(m.group(2)):
+                    bad.append(f"{path}: имя блока датировано {m.group(2)}, а штамп — {stamp}: дату "
+                               "в имени нельзя ставить задним числом (блок назван свежее, чем снят); "
+                               "обратный порядок законен — пересъёмка позже имени обновляет только штамп)")
             for k, v in node.items():
                 if isinstance(v, (dict, list)):
                     walk(v, f"{path}.{k}" if path else str(k))
@@ -526,6 +552,411 @@ def keydate_audit(corp):
 
     walk(corp, "")
     return checked, bad
+
+
+# Реестр стражей сверок (круг 65, правка 9). Каждая функция-сверка этого файла обязаналибо быть
+# объявленной с названным местом, где её кусают посаженным нарушением,либо быть объявленной дырой с
+# причиной. Смысл не в том, чтобы вести список, а в том, чтобы список нельзя было забыться: новая
+# сверка без стража поднимает ловушку, старый страж, которого в названном файле уже нет, — тоже.
+PLANT_SOURCES = {
+    "сам": Path(__file__),
+    "гейт": ROOT / "scripts" / "validate_atonement_corpus_integrity.py",
+    "проб истории": ROOT / "scripts" / "atonement_history_perturbation_probe.py",
+    "доказательство": ROOT / "scripts" / "atonement_proof_round63.sh",
+    "батарея": ROOT / "scripts" / "run_atonement_mutation_battery.py",
+}
+# имя сверки -> (источник стража, маркер в нём) либо ("нет", причина, по которой дыра терпима)
+PLANTED_GUARDS = {
+    "keydate_audit": ("сам", "ЛОВУШКА ПРАВИЛА ДАТ"),
+    "env_scan": ("проб истории", "ПРОБ ИСТОРИИ"),
+    "sha_audit": ("проб истории", "недостижим"),
+    "json_leaf_scan": ("доказательство", "ловит внедрённое число среды"),
+    "index_census": ("доказательство", "ценз индекса"),
+    "pipeline_inventory": ("доказательство", "инвентарь инструментов"),
+    "mirror_audit": ("гейт", "правило 25"),
+    "mass_counts": ("гейт", "правило 23"),
+    "ledger_svodki": ("гейт", "statusVocabulary"),
+    "ledger_counts": ("гейт", "conflict ledger"),
+    "tree_counts": ("сам", "ЛОВУШКА ДЕРЕВА"),
+    "check_table_91": ("сам", "ЛОВУШКА ТАБЛИЦЫ 9.1"),
+}
+SCAN_SUFFIXES = ("_audit", "_counts", "_census", "_scan", "_svodki", "_inventory")
+SCAN_PREFIXES = ("check_",)
+
+
+def scan_functions():
+    """Сверки, которые определяет этот файл, — найденные обходом, а не списком.
+
+    Список руками отстаёт от изобретательности ровно так же, как список запрещённых имён полей
+    (круг 64 запретил числа среды по имени — круг 65 запретил их поведением). Здесь обход идёт по
+    `globals()`: имя функции кончается на суффикс сверки или начинается на `check_`, и функция
+    определена в этом модуле (вложенные `walk` в подсчёт не попадают).
+
+    Предел у этого способа тот же, что у любого запрета по имени: сверка, названная вне соглашения
+    (`audit_claims`, `proverka`, `itog`), обходу невидима, и реестр стражей промолчит. Он потому и
+    назван реестром, а не доказательством: он отнимает у забвения только одну возможность — забыть
+    объявить то, что уже названо сверкой, — и ровно этого хватает, чтобы не пришлось заново
+    изобретать ловушку через круг.
+    """
+    here = globals().get("__name__")
+    found = []
+    for name, fn in list(globals().items()):
+        if not callable(fn) or getattr(fn, "__module__", None) != here:
+            continue
+        if name == "keydate_trap" or name.endswith(("_trap",)):
+            continue    # сами ловушки — не сверки
+        if name.startswith(SCAN_PREFIXES) or name.endswith(SCAN_SUFFIXES):
+            found.append(name)
+    return sorted(found)
+
+
+def plant_registry_trap():
+    """Сверка реестра стражей с тем, что определено в файле: ни дыры без причины, ни стража без тела."""
+    found = set(scan_functions())
+    declared = set(PLANTED_GUARDS)
+    if found - declared:
+        print("РЕЕСТР СТРАЖЕЙ РАСХОДИТСЯ: определено и не объявлено — %s. Новая сверка обязана "
+              "объявить, где её кусают, или быть записанной дырой с причиной"
+              % ", ".join(sorted(found - declared)))
+        return 1
+    if declared - found:
+        print("РЕЕСТР СТРАЖЕЙ РАСХОДИТСЯ: объявлено и не найдено обходом — %s. Страж висит на "
+              "несуществующей функции: либо свёрка переименована, либо она тихо умерла вместе с "
+              "телом, и объявление надо снять руками"
+              % ", ".join(sorted(declared - found)))
+        return 2
+    missing, stale, holes = [], [], []
+    for name in sorted(declared):
+        src, marker = PLANTED_GUARDS[name]
+        if src == "нет":
+            if not str(marker).strip():
+                missing.append("%s: дыра объявлена без причины — молчаливая дыра хуже объявленной" % name)
+            holes.append(name)
+            continue
+        path = PLANT_SOURCES.get(src)
+        if path is None or not path.exists():
+            stale.append("%s: источник стража %r не найден (%s)" % (name, src, path))
+            continue
+        if marker not in path.read_text(encoding="utf-8", errors="replace"):
+            missing.append("%s: страж назван в %r, но строки «%s» там нет — проверка, на которую "
+                           "ссылается объявление, оттуда исчезла" % (name, src, marker))
+    if stale:
+        print("РЕЕСТР СТРАЖЕЙ НЕИСПОЛНИМ — " + "; ".join(stale))
+        return 2
+    if missing:
+        print("РЕЕСТР СТРАЖЕЙ РАСХОДИТСЯ — " + "; ".join(missing))
+        return 1
+    print("РЕЕСТР СТРАЖЕЙ: сверок %d, с посаженным нарушением %d, без него %d%s — обход `globals()` "
+          "и объявление сошлись"
+          % (len(found), len(found) - len(holes), len(holes),
+             (" (" + ", ".join(holes) + ")") if holes else ""))
+    return 0
+
+
+# Поломки, которые обязана поймать ловушка (круг 65, правка 10). Каждая строка — текстовая мутация
+# исходника этого файла, исполняемая на месте: компиляция и вызов нужного отделения. Прогон
+# ничего не пишет и не трогает дерево, поэтому его можно позволить себе и в CI, и в `--selfcheck`.
+# Смысл именно в исполняемости: утверждение «мы проверили, что ловушка кусает», записанное прозой
+# или скриптом в песочнице, через круг уже невоспроизводимо, а это ровно та иллюзия покрытия, против
+# которой весь этот реестр и заведён.
+SELF_MUTATIONS = (
+    # (что сломано, иголка в исходнике, на что меняем, отделение, чем обязан отозваться)
+    #
+    # Иглы пишутся разорванными литералами («…m.group» + «(2)):…») намеренно: таблица, которая
+    # цитирует носитель целиком, саму себя и находит — первая версия этого шага вставляла новую
+    # функцию перед `def pipeline_inventory():` и попала в собственную строку описания. Разрыв
+    # литерала — не шифр, а способ сказать «это ссылка на код, а не код».
+    ("правило дат заглушено (никогда не срабатывает)",
+     "if stamp and int(stamp) < int(m.group" + "(2)):", "if stamp and False:",
+     "keydate_trap", "правило не поймало незаконный порядок"),
+    ("обход дат ослеплён (regex не находит ни одного имени)",
+     'OWNED_BLOCK_RX = re.compile(r"(reshootCounters|pipelineScripts|countsNote'
+     '|environmentScopedNumbers)"',
+     'OWNED_BLOCK_RX = re.compile(r"(ZZZтакогоблоканет)"',
+     "keydate_trap", "не нашёл ни одного блока"),
+    ("вернулись к равенству дат (краснеет и на законном порядке)",
+     "if stamp and int(stamp) < int(m.group" + "(2)):", "if stamp and int(stamp) != int(m.group(2)):",
+     "keydate_trap", "ловушка сработала на законном порядке"),
+    ("объявление стража снято (сверка осталась без реестра)",
+     '    "mirror_audit": ("гейт", "правило ' + '25"),\n', "",
+     "plant_registry_trap", "определено и не объявлено"),
+    ("завелась сверка без объявления",
+     "\ndef tree_counts(root=None) -> dict:",
+     "\ndef claims_rollup_audit(corp):\n    return 0\n\n\n"
+     "def tree_counts(root=None) -> dict:",
+     "plant_registry_trap", "Новая сверка обязана объявить"),
+    ("сверка переименована, объявление висит на пустом месте",
+     "\ndef env_scan(corp):", "\ndef env_scanX(corp):",
+     "plant_registry_trap", "объявлено и не найдено"),
+    ("чужая проверка исчезла, а ссылка на неё осталась",
+     '    "mirror_audit": ("гейт", "правило ' + '25"),',
+     '    "mirror_audit": ("гейт", "правило ' + '99"),',
+     "plant_registry_trap", "там нет"),
+    ("съём дерева игнорирует названный корень (всегда мерит живое дерево)",
+     "    root = ROOT if root is None else Path(" + "root)", "    root = ROOT",
+     "tree_counts_trap", "ЛОВУШКА ДЕРЕВА НЕ ПОДТВЕРЖДЕНА"),
+    ("обход ланов разучился ходить по подкаталогам (всегда ноль)",
+     "    per = {}\n    for lan in SUBLANES:", "    per = {}\n    for lan in ():",
+     "tree_counts_trap", "ЛОВУШКА ДЕРЕВА НЕ ПОДТВЕРЖДЕНА"),
+    ("файл-страж исчез",
+     '    "гейт": ROOT / "scripts" / "validate_atonement_corpus_integrity' + '.py",',
+     '    "гейт": ROOT / "scripts" / "туда-не-смотри.py",',
+     "plant_registry_trap", "НЕИСПОЛНИМ"),
+    ("сверка таблицы §9.1 обезврежена (строки сверяются, но не сравниваются)",
+     'elif rows[lan] != ' + 'want:', "elif False:",
+     "table91_trap", "ЛОВУШКА ТАБЛИЦЫ 9.1"),
+    ("глава 9.1 для обхода переименована (сверка осталась без таблицы)",
+     '    start = next((i for i, l in enumerate(raw) if l.startswith("' + '### 9.1")), None)',
+     '    start = next((i for i, l in enumerate(raw) if l.startswith("' + '### 9.7")), None)',
+     "table91_trap", "НЕ ИСПОЛНИМА"),
+)
+
+
+def self_mutation_trap():
+    """Ломает собственный исходник всеми способами, перечисленными в таблице выше, и требует,
+    чтобы каждый был пойман с причиной.
+
+    Вердикт мутанта не печатается в общий вывод — он захватывается и сверяется по подстроке:
+    «красно» недостаточно, краснота обязана быть про ту поломку, которую посадили.
+
+    Проверено и обратное: если отделение реестра заглушить (`return 0` в начале тела), шаг краснеет
+    словами «поломка прошла зелёной» — то есть сам шаг не может выродиться в молчание незамеченным.
+    """
+    import contextlib
+    import io
+    src = Path(__file__).read_text(encoding="utf-8")
+    missed, caught = [], 0
+    for i, (what, needle, repl, dept, why) in enumerate(SELF_MUTATIONS):
+        # ровно одно место: первая версия этого шага подставила новую функцию перед `def
+        # pipeline_inventory():` — и попала в собственную таблицу, потому что та же строка читается
+        # в ней как иголка. Однократность якоря проверяется здесь, а не подразумевается: так же
+        # отказывается писать пересъёмщик, когда его якорь в документе находит две строки.
+        if src.count(needle) != 1:
+            missed.append("%s: носитель встречается %d раза — мутация обязана указывать ровно на одно "
+                          "место (иначе она правит не инструмент, а эту таблицу)"
+                          % (what, src.count(needle)))
+            continue
+        ns = {"__name__": "reshoot_mutant_%d" % i, "__file__": str(Path(__file__))}
+        buf = io.StringIO()
+        try:
+            with contextlib.redirect_stdout(buf):
+                exec(compile(src.replace(needle, repl, 1), "<мутация %d>" % i, "exec"), ns)
+                rc = ns[dept]()
+            text = buf.getvalue().strip()
+        except Exception as exc:            # падение мутанта — тоже поимка, но названная
+            rc, text = 1, "%s: %s" % (type(exc).__name__, exc)
+        if rc == 0:
+            missed.append("%s: поломка прошла зелёной" % what)
+        elif why not in text:
+            tail = text.splitlines()[-1][:110] if text else "вердикта нет вовсе"
+            missed.append("%s: код %d, но причины «%s» в вердикте нет; последняя строка: %s"
+                          % (what, rc, why, tail))
+        else:
+            caught += 1
+    if missed:
+        print("ЛОМКА ИСХОДНИКА НЕ ПОЙМАНА полностью — %d из %d: %s"
+              % (len(missed), len(SELF_MUTATIONS), "; ".join(missed)))
+        return 1
+    print("ЛОМКА ИСХОДНИКА: %d поломок, все пойманы с названной причиной — ловушка кусает себя сама"
+          % len(SELF_MUTATIONS))
+    return 0
+
+
+LANE_OF_91 = "корпус"
+
+
+def table91_trap():
+    """Ловушка на живом разборе §9.1: посадить расхождение, не трогая документ.
+
+    Три состояния, а не одно: на живом дереве сверка обязана молчать, посаженная ячейка — быть
+    пойманной именно про тот лан, куда посажено, и пустой текст — быть пойманным как ослепление.
+    Третье отделение здесь главное: сверка, не нашедшая таблицы, не имеет права вернуться пустым
+    списком, потому что пустой список у неё означает «всё сходится».
+    """
+    corp = json.loads(CORPUS.read_text(encoding="utf-8"))
+    text = DOC.read_text(encoding="utf-8")
+    clean = check_table_91(corp, text)
+    if clean:
+        print("ЛОВУШКА ТАБЛИЦЫ 9.1 НЕ ИСПОЛНИМА: на живом дереве сверка уже красна — сначала "
+              "почините таблицу, потом проверяйте ловушку: " + clean[0][:100])
+        return 2
+    lines = text.splitlines()
+    start = next((i for i, l in enumerate(lines) if l.startswith("### 9.1")), None)
+    stop = next((i for i in range(start + 1, len(lines)) if lines[i].startswith(("### ", "## "))),
+                len(lines)) if start is not None else 0
+    hits = []
+    for i in range(start if start is not None else 0, stop):
+        line = lines[i]
+        if not line.startswith("| `"):
+            continue
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        if len(cells) != 8 or cells[0].strip("`") != LANE_OF_91:
+            continue
+        try:
+            hits.append((i, int(cells[1].replace("*", "").replace(" ", ""))))
+        except ValueError:
+            continue
+    planted_at = None
+    if len(hits) == 1:
+        i, first = hits[0]
+        cells = [c.strip() for c in lines[i].strip().strip("|").split("|")]
+        cells[1] = str(first + 1)
+        lines[i] = "| " + " | ".join(cells) + " |"
+        planted_at = i
+    if planted_at is None:
+        print("ЛОВУШКА ТАБЛИЦЫ 9.1 НЕ ИСПОЛНИМА: строка `%s` не найдена в главе ровно один раз "
+              "(найдено %d) — сажать нарушение некуда или не в ту строку"
+              % (LANE_OF_91, len(hits)))
+        return 2
+    red = check_table_91(corp, "\n".join(lines))
+    blind = check_table_91(corp, "")
+    problems = []
+    if not red:
+        problems.append("посаженное расхождение (ячейка «+1» в строке `%s`) прошло молча" % LANE_OF_91)
+    elif not any(LANE_OF_91 in r for r in red):
+        problems.append("покраснело не про посаженный лан: " + red[0][:90])
+    if not blind:
+        problems.append("пустой текст вернулся без единого расхождения — сверка ослепла и назвала "
+                        "это совпадением")
+    if problems:
+        print("ЛОВУШКА ТАБЛИЦЫ 9.1 НЕ ПОДТВЕРЖДЕНА — " + "; ".join(problems))
+        return 1
+    print("ЛОВУШКА ТАБЛИЦЫ 9.1: живое дерево молчит, посаженная ячейка поймана (%d расхождений, "
+          "первое — про `%s`), ослеплённый обход пойман (%d расхождений на пустом тексте) — дыра, "
+          "объявленная правкой 9, закрыта"
+          % (len(red), LANE_OF_91, len(blind)))
+    return 0
+
+
+def tree_counts_trap():
+    """Ловушка на съёме чисел дерева: другой корень — другие числа.
+
+    Строит во временном каталоге миниатюру того же периметра (те же имена, та же форма таблиц) и
+    требует трёх вещей, а не одной: обход обязан увидеть фикстуру целиком (иначе «ноль файлов»
+    снова был бы успехом); правка в файле обязан сдвинуть ровно те поля, которые обязана; пустой
+    корень не имеет права вернуть живые числа — иначе у съёмки есть тайная дорожка к тому месту,
+    где скрипт лежит, и вся история про «число относится к дереву» обнуляется.
+
+    Проверка абсолютных чисел фикстуры честна именно потому, что фикстуру пишет этот код: байты и
+    строки здесь не вторая реализация обхода, а условие задачи.
+    """
+    import shutil
+    import tempfile
+    doc_text = "шапка\n\n| a | b |\n\nхвост\n"
+    mass_text = "## Масса\n\n| FP-1 | 10 |\n| FP-2 | 20 |\n\n"
+    files = {
+        "docs/research/atonement/01_a.md": "одна строка\nвторая\n",
+        "docs/research/atonement/12_b.md": "x\n",
+        "docs/research/atonement/x.md": "не нумерованный\n",
+        "docs/research/atonement/35_four_point_authors_mass_registry.md": mass_text,
+        "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md": doc_text,
+        "ИСКУПЛЕНИЕ/17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md": "17\n",
+        "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json": "{}\n",
+        "ИСКУПЛЕНИЕ/data/atonement-library-index.json": "{}\n",
+        "ИСКУПЛЕНИЕ/ot/a.md": "ot\n",
+        "ИСКУПЛЕНИЕ/nt/a.md": "nt\n",
+        "ИСКУПЛЕНИЕ/fathers/a.md": "fathers\n",
+        "ИСКУПЛЕНИЕ/synthesis/a.md": "synthesis\n",
+        "ИСКУПЛЕНИЕ/synthesis/drafts/d1.md": "d1\nd2\n",
+        "ИСКУПЛЕНИЕ/synthesis/drafts/d2.md": "d3\n",
+    }
+    tmp = tempfile.mkdtemp(prefix="atonement-tree-trap-")
+    try:
+        for relpath, content in files.items():
+            dst = Path(tmp) / relpath
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            dst.write_text(content, encoding="utf-8")
+        t = tree_counts(Path(tmp))
+        problems = []
+        if (t["docs"][0], t["docsNumbered"]) != (4, 3) or t["rootmd"][0] != 2:
+            problems.append("фикстура прочитана не целиком: файлов полосы %d (ожидалось 4), "
+                            "нумерованных %d (3), в корне отдела %d (2) — обход видит не то, что "
+                            "написано" % (t["docs"][0], t["docsNumbered"], t["rootmd"][0]))
+        if t["doc"][:2] != (len(doc_text.encode("utf-8")), len(doc_text.split("\n")) - 1):
+            problems.append("байты и строки документа съёмнуты не по фикстуре: %r, ожидалось %r"
+                            % (t["doc"][:2], (len(doc_text.encode("utf-8")), len(doc_text.split("\n")) - 1)))
+        if (t["massRows"], t["massSections"], t["sub"][0]) != (2, 1, 4):
+            problems.append("строки массы и ланы съёмнуты неверно: рядов %d (2), разделов %d (1), "
+                            "файлов по ланам %d (4)" % (t["massRows"], t["massSections"], t["sub"][0]))
+        # посадка: правка в файле обязана двигать числа
+        (Path(tmp) / "docs/research/atonement/01_a.md").write_text("одна\nвторая\nтретья\n",
+                                                                    encoding="utf-8")
+        (Path(tmp) / "docs/research/atonement/35_four_point_authors_mass_registry.md").write_text(
+            mass_text + "| FP-3 | 30 |\n", encoding="utf-8")
+        (Path(tmp) / "ИСКУПЛЕНИЕ/nt/a.md").unlink()
+        t2 = tree_counts(Path(tmp))
+        moved = []
+        if t2["docs"][1] > t["docs"][1]:
+            moved.append("байты полосы")
+        if t2["massRows"] == 3:
+            moved.append("рядов массы")
+        if t2["sub"][0] == 3 and t2["sub"][1] < t["sub"][1]:
+            moved.append("файлов по ланам")
+        if len(moved) < 3:
+            problems.append("правка сдвинула только %s — часть чисел снимается не с дерева, а с "
+                            "того, что уже было посчитано" % (", ".join(moved) or "ничего"))
+        # ослепление: пустой корень не имеет права вернуть живые числа
+        empty = tempfile.mkdtemp(prefix="atonement-tree-trap-empty-")
+        try:
+            try:
+                t3 = tree_counts(Path(empty))
+            except OSError as exc:
+                t3 = {"отказ": str(exc)[:60]}
+            live = tree_counts()
+            if "отказ" not in t3 and t3.get("corpBytes") == live["corpBytes"]:
+                problems.append("пустой корень вернул живые числа корпуса — у съёмки есть тайная "
+                                "дорожка к ROOT, и «число относится к дереву» тогда неправда")
+        finally:
+            shutil.rmtree(empty, ignore_errors=True)
+        if problems:
+            print("ЛОВУШКА ДЕРЕВА НЕ ПОДТВЕРЖДЕНА — " + "; ".join(problems))
+            return 1
+        print("ЛОВУШКА ДЕРЕВА: фикстура прочитана целиком, правка сдвинула 3 поля из 3, пустой "
+              "корень живых чисел не вернул — число относится к дереву, а не к месту, где лежит "
+              "скрипт")
+        return 0
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
+def keydate_trap():
+    """Ловушка на живом определении: правило обязано краснеть и молчать по очереди.
+
+    Смягчение круга 65 (равенство дат -> порядок) оставило `keydate_audit` с одной запрещённой
+    стороной, и у этой стороны до сих пор не было ни одного посадочного места: ни батарея (она
+    про гейт), ни проб (он про положение main) не высаживают в корпус блок, названный свежее, чем
+    снят. Значит, правило могло выродиться в молчание незаметно: сломанный обход не находит блоков,
+    `bad` пуст, `checked` ноль — и сверка печатает «0 расхождений из 0», что неотличимо от успеха.
+    Поэтому ловушка проверяет три вещи, а не одну: незаконный порядок пойман, законный не пойман,
+    и обход действительно видел блоки (иначе первые два пункта ничего не значат).
+
+    Синтетика живёт в памяти: дерево при этом не меняется, писанины нет, повторение безопасно.
+    """
+    def block(name_date, stamp):
+        return {"pipelineScripts%sr99" % name_date: {"measuredAt": stamp}}
+
+    legal = block("20261026", "2026-10-28T00:00:00Z")   # названо вчера, снято позже — законно
+    illegal = block("20261028", "2026-10-26T00:00:00Z")  # названо завтра, снято вчера — обман
+    checked_l, bad_l = keydate_audit(legal)
+    checked_i, bad_i = keydate_audit(illegal)
+    verdicts = []
+    if checked_l == 0 or checked_i == 0:
+        print("ЛОВУШКА НЕ ПОДТВЕРЖДЕНА: обход `keydate_audit` не нашёл ни одного блока в синтетике "
+              "(законно: %d, незаконно: %d) — правило молчит не потому, что порядок верен, а потому, "
+              "что не видит ключей" % (checked_l, checked_i))
+        return 2
+    if bad_l:
+        verdicts.append("ловушка сработала на законном порядке (так краснел круг 64): "
+                      + bad_l[0][:110])
+    if not bad_i:
+        verdicts.append("правило не поймало незаконный порядок (имя блока позже его штамма)")
+    if verdicts:
+        print("ЛОВУШКА НЕ ПОДТВЕРЖДЕНА — " + "; ".join(verdicts))
+        return 1
+    print("ЛОВУШКА ПРАВИЛА ДАТ: ловит незаконный порядок (1 из 1), молчит на законном "
+          "(0 из 1), блоков увидено %d — смягчение круга 65 не есть заглушка"
+          % (checked_l + checked_i))
+    return 0
 
 
 def pipeline_inventory():
@@ -881,12 +1312,28 @@ def apply_doc(corp: dict, n: dict) -> str:
     return text
 
 
-def check_table_91(corp: dict) -> list:
+def check_table_91(corp: dict, text: str = None) -> list:
     """Таблицу §9.1 этот скрипт не порождает (её производитель — утраченный финалайзер круга 61),
-    но право её сверить оставляет: каждая ячейка обязана равняться полю реестра."""
+    но право её сверить оставляет: каждая ячейка обязана равняться полю реестра.
+
+    `text` — тот же обход, но по поданному тексту: он нужен ловушке, чтобы посадить расхождение в
+    строку, не трогая документ (круг 65, правка 12). Без этой опции сверка была непроверяема:
+    доказать, что она кусает, можно было бы только испортив прозу, а порча прозы ради проверки —
+    тот самый способ, которым круг 64 потерял четыре блока.
+    """
     cpr = corp["integrityGate"]["scopeOfMeasurementRules"]["claimsPerRegistry"]
-    rows, total = {}, None
-    for line in DOC.read_text(encoding="utf-8").splitlines():
+    raw = (DOC.read_text(encoding="utf-8") if text is None else text).splitlines()
+    # Сверять надо с строкой *из §9.1*, а не с первой строкой с таким именем по всему документу:
+    # имя `корпус` встречается и в §1, и в §5, и прошлая версия обхода молча переписывала rows
+    # последней найденной строкой — то есть первая попавшаяся правка чужой таблицы могла сделать
+    # §9.1 невидимым, и ничего бы не покраснело. Ограничение главой — единственное, чем это
+    # отличается от «списока имён», который круги этого репозитория как раз и запретили.
+    start = next((i for i, l in enumerate(raw) if l.startswith("### 9.1")), None)
+    if start is None:
+        return ["§9.1: глава не найдена — сверять таблицу не с чего (переименована или удалена)"]
+    stop = next((i for i in range(start + 1, len(raw)) if raw[i].startswith(("### ", "## "))), len(raw))
+    rows, total, dupes = {}, None, {}
+    for line in raw[start:stop]:
         if not line.startswith("| `") and "**всего**" not in line:
             continue
         cells = [c.strip() for c in line.strip().strip("|").split("|")]
@@ -896,11 +1343,17 @@ def check_table_91(corp: dict) -> list:
             vals = [int(c.replace("*", "").replace(" ", "")) for c in cells[1:]]
         except ValueError:
             continue
+        key = cells[0].strip("`")
         if "всего" in cells[0]:
+            if total is not None:
+                dupes["всего"] = dupes.get("всего", 1) + 1
             total = vals
         else:
-            rows[cells[0].strip("`")] = vals
-    bad = []
+            if key in rows:
+                dupes[key] = dupes.get(key, 1) + 1
+            rows[key] = vals
+    bad = ["§9.1: строка `%s` в главе не одна — сверка по имени больше не однозначна" % k
+           for k in sorted(dupes)]
     for lan in list(SUBLANES) + ["корпус"]:
         s_ = cpr["сверкаСКарточками"][lan]
         want = [s_["строк"], s_["покрытоПоФайлу"], s_["файлов"], s_["карточекБезСостояния"],
@@ -930,7 +1383,9 @@ def report_not_generated(corp: dict) -> str:
              "проверяет (но не пишет) таблицу §9.1, а остальное — проза, порождённая утраченным "
              "финалайзером круга 61, и живёт до ближайшей ручной правки:", "  реестровые блоки-источник: "
              + ", ".join("`%s`" % k for k in keys), "  поля, которые он намеренно не трогает: "
-             "`claimsPerRegistry.всего`, `сверкаСКарточками` (ими заведует atonement_claim_register.py), "
+             "`claimsPerRegistry` целиком — с круга 65 у сводки есть свой производитель: "
+             "atonement_claim_register.py (`--write` переснимает, `--check` и `--rollup` сверяют; "
+             "до того правила 27 и 28 сравнивали число, которое не переснимал никто), "
              "`driveMirrors.*`, `libraryIndex20261023.countsNote*`, `shaCitationAudit20261023.note` "
              "в части формулировки"]
     return "\n".join(lines)
@@ -1057,15 +1512,27 @@ def diff_state(corp: dict, idx_file: dict, n: dict):
         ("строки документа, которые порождает этот скрипт", len(doc_numbers(corp, n))),
         ("ячейки таблицы §9.1 (сверка, не генерация)", 7 * (len(SUBLANES) + 1) + 2),
         ("числа обхода: где им место (круг 64)", len(n["env"]["пути"]) + n["env"]["объявлено"] + 1),
-        ("имена блоков против их штампов", n["keydate"][0]),
+        ("имена блоков против их штампов (имя не может быть позже штампа)", n["keydate"][0]),
     ]
     return drift
 
 
 def main() -> int:
     mode = sys.argv[1] if len(sys.argv) > 1 else "--check"
+    if mode == "--rule-trap":
+        # ловушка не читает ни реестр, ни дерево: ей довольно собственного определения и текстов
+        # соседних инструментов, поэтому она годится и в песочнице с грязным деревом, и в CI до
+        # любых тяжёлых шагов. Код — максимум по обоим отделениям: 2 значит «не проверено»,
+        # 1 — «проверено и найдено расхождение», 0 — «всё объявлено и всё на месте»
+        rc1 = keydate_trap()
+        rc2 = plant_registry_trap()
+        rc3 = table91_trap()
+        rc4 = tree_counts_trap()
+        rc5 = self_mutation_trap()
+        return max(rc1, rc2, rc3, rc4, rc5)
     if mode not in ("--check", "--write", "--report"):
-        raise SystemExit("употребление: atonement_reshoot_state.py [--check|--write|--report]")
+        raise SystemExit("употребление: atonement_reshoot_state.py "
+                         "[--check|--write|--report|--rule-trap]")
     global now
     now = subprocess.run(["date", "-u", "+%Y-%m-%dT%H:%M:%SZ"], capture_output=True, text=True).stdout.strip()
     corp = json.loads(CORPUS.read_text(encoding="utf-8"))
