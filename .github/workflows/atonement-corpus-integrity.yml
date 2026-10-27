@@ -91,7 +91,9 @@ jobs:
       # Дальше этот же шаг вырос в реестр стражей (правка 9: у каждой сверки — названный страж или
       # названная дыра), в ломку собственного исходника (правка 10: ловушка исполняет свои же мутации,
       # а не помнится скриптом в песочнице) и в ловушку таблицы 9.1 (правка 12: посаженная в память
-      # ячейка и ослеплённый обход — без единой правки прозы). Имя шага переименовано вместе с
+      # ячейка и ослеплённый обход — без единой правки прозы), в ловушку съёмки дерева (правка 13:
+      # фикстура во временном каталоге, правка обязана двигать числа, пустой корень не имеет права
+      # вернуть живые). Имя шага переименовано вместе с
       # содержанием: имя, которое никто не сверяет, отстаёт первым.
       - name: Reshooter rule traps (relaxed rules, guardian registry, planted breakages must bite)
         run: python3 -B scripts/atonement_reshoot_state.py --rule-trap
@@ -126,6 +128,8 @@ jobs:
           grep -q 'def self_mutation_trap' scripts/atonement_reshoot_state.py
           grep -q 'def table91_trap' scripts/atonement_reshoot_state.py
           grep -q 'ЛОВУШКА ТАБЛИЦЫ 9.1' scripts/atonement_reshoot_state.py
+          grep -q 'def tree_counts_trap' scripts/atonement_reshoot_state.py
+          grep -q 'ЛОВУШКА ДЕРЕВА' scripts/atonement_reshoot_state.py
           grep -q 'ЛОМКА ИСХОДНИКА' scripts/atonement_reshoot_state.py
           grep -q 'РЕЕСТР СТРАЖЕЙ' scripts/atonement_reshoot_state.py
           grep -q 'def verdicts' scripts/atonement_history_perturbation_probe.py

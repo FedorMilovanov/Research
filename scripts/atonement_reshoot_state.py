@@ -273,38 +273,53 @@ def sha_audit(reg: dict):
     }
 
 
-def tree_counts() -> dict:
-    def stat(paths):
-        ps = [Path(p) for p in paths]
-        return len(ps), sum(p.stat().st_size for p in ps)
+def tree_counts(root=None) -> dict:
+    """Числа дерева — снятые с того корня, который назван.
 
-    docs = stat(sorted(glob.glob(str(ROOT / "docs" / "research" / "atonement" / "*.md"))))
-    n_num = len([p for p in glob.glob(str(ROOT / "docs" / "research" / "atonement" / "*.md"))
-                 if re.search(r"/\d\d_", p)])
-    rootmd = stat(sorted(glob.glob(str(ROOT / "ИСКУПЛЕНИЕ" / "*.md"))))
-    b17 = (ROOT / "ИСКУПЛЕНИЕ" / "17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md").stat().st_size
-    docbytes = DOC.stat().st_size
-    doclines = len(DOC.read_text(encoding="utf-8").split("\n")) - 1
-    docmd5 = hashlib.md5(DOC.read_bytes()).hexdigest()
+    `root` нужен ловушке (круг 65, правка 13): чтобы проверить, что сверяемые числа относятся к
+    дереву, а не к месту, где скрипт случайно лежал, обход должен уметь пройтись по *другому*
+    дереву. Без этого «числа не шевелятся, потому что их берут из кэша» и «числа не шевелятся,
+    потому что дерево не менялось» — одно и то же наблюдение, и отличить их было нечем.
+    """
+    root = ROOT if root is None else Path(root)
+
+    def rel(path: Path) -> Path:
+        return root / path.relative_to(ROOT)
+
+    def stat(paths):
+        ps = [Path(x) for x in paths]
+        return len(ps), sum(x.stat().st_size for x in ps)
+
+    lane_glob = str(rel(ROOT / "docs" / "research" / "atonement")) + "/*.md"
+    docs = stat(sorted(glob.glob(lane_glob)))
+    n_num = len([x for x in glob.glob(lane_glob) if re.search(r"/\d\d_", x)])
+    rootmd = stat(sorted(glob.glob(str(rel(ROOT / "ИСКУПЛЕНИЕ")) + "/*.md")))
+    b17 = rel(ROOT / "ИСКУПЛЕНИЕ" / "17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md").stat().st_size
+    doc = rel(DOC)
+    docbytes = doc.stat().st_size
+    doclines = len(doc.read_text(encoding="utf-8").split("\n")) - 1
+    docmd5 = hashlib.md5(doc.read_bytes()).hexdigest()
     per = {}
     for lan in SUBLANES:
-        per[lan] = stat(sorted(glob.glob(str(ROOT / "ИСКУПЛЕНИЕ" / lan / "*.md"))))
+        per[lan] = stat(sorted(glob.glob(str(rel(ROOT / "ИСКУПЛЕНИЕ" / lan)) + "/*.md")))
     sub = (sum(v[0] for v in per.values()), sum(v[1] for v in per.values()))
-    dr_paths = sorted(glob.glob(str(ROOT / "ИСКУПЛЕНИЕ" / "synthesis" / "drafts" / "*.md")))
+    dr_paths = sorted(glob.glob(str(rel(ROOT / "ИСКУПЛЕНИЕ" / "synthesis" / "drafts")) + "/*.md"))
     dr = stat(dr_paths)
-    dr_lines = sum(Path(p).read_text(encoding="utf-8").count("\n") for p in dr_paths)
-    dr_lines_split = sum(len(Path(p).read_text(encoding="utf-8").split("\n")) for p in dr_paths)
-    dr_sizes = [Path(p).stat().st_size for p in dr_paths]
-    data = stat(sorted(glob.glob(str(ROOT / "ИСКУПЛЕНИЕ" / "data" / "*"))))
-    corp_bytes = CORPUS.stat().st_size
-    idx_bytes = INDEX.stat().st_size
-    mass = (ROOT / "docs" / "research" / "atonement" / "35_four_point_authors_mass_registry.md").read_text(encoding="utf-8")
-    mass_bytes = (ROOT / "docs" / "research" / "atonement" / "35_four_point_authors_mass_registry.md").stat().st_size
+    dr_lines = sum(Path(x).read_text(encoding="utf-8").count("\n") for x in dr_paths)
+    dr_lines_split = sum(len(Path(x).read_text(encoding="utf-8").split("\n")) for x in dr_paths)
+    dr_sizes = [Path(x).stat().st_size for x in dr_paths]
+    data = stat(sorted(glob.glob(str(rel(ROOT / "ИСКУПЛЕНИЕ" / "data")) + "/*")))
+    corp_bytes = rel(CORPUS).stat().st_size
+    idx_bytes = rel(INDEX).stat().st_size
+    mass_path = rel(ROOT / "docs" / "research" / "atonement" / "35_four_point_authors_mass_registry.md")
+    mass = mass_path.read_text(encoding="utf-8")
+    mass_bytes = mass_path.stat().st_size
     return {
         "docs": docs, "docsNumbered": n_num, "rootmd": rootmd, "b17": b17,
         "doc": (docbytes, doclines, docmd5), "perLan": per, "sub": sub,
-        "drafts": dr, "draftsLines": dr_lines, "draftsLinesSplit": dr_lines_split, "draftsMin": round(min(dr_sizes) / 1000, 1),
-        "draftsMax": round(max(dr_sizes) / 1000),
+        "drafts": dr, "draftsLines": dr_lines, "draftsLinesSplit": dr_lines_split,
+        "draftsMin": round(min(dr_sizes) / 1000, 1) if dr_sizes else 0,
+        "draftsMax": round(max(dr_sizes) / 1000) if dr_sizes else 0,
         "data": data, "corpBytes": corp_bytes, "idxBytes": idx_bytes,
         "massBytes": mass_bytes, "massRows": len(re.findall(r"^\|\s*FP-\d+\s*\|", mass, re.M)),
         "massSections": len(re.findall(r"^## ", mass, re.M)),
@@ -562,9 +577,7 @@ PLANTED_GUARDS = {
     "mass_counts": ("гейт", "правило 23"),
     "ledger_svodki": ("гейт", "statusVocabulary"),
     "ledger_counts": ("гейт", "conflict ledger"),
-    "tree_counts": ("нет", "сверка байт и строк дерева с реестром; посаженного нарушения нет ни в "
-                          "батаре (она про гейт), ни в пробе (он про положение main), поэтому оглушение "
-                          "этой сверки выловило бы только расхождение --check на живом дереве"),
+    "tree_counts": ("сам", "ЛОВУШКА ДЕРЕВА"),
     "check_table_91": ("сам", "ЛОВУШКА ТАБЛИЦЫ 9.1"),
 }
 SCAN_SUFFIXES = ("_audit", "_counts", "_census", "_scan", "_svodki", "_inventory")
@@ -668,8 +681,9 @@ SELF_MUTATIONS = (
      '    "mirror_audit": ("гейт", "правило ' + '25"),\n', "",
      "plant_registry_trap", "определено и не объявлено"),
     ("завелась сверка без объявления",
-     "\ndef tree_counts() -> dict:",
-     "\ndef claims_rollup_audit(corp):\n    return 0\n\n\ndef tree_counts() -> dict:",
+     "\ndef tree_counts(root=None) -> dict:",
+     "\ndef claims_rollup_audit(corp):\n    return 0\n\n\n"
+     "def tree_counts(root=None) -> dict:",
      "plant_registry_trap", "Новая сверка обязана объявить"),
     ("сверка переименована, объявление висит на пустом месте",
      "\ndef env_scan(corp):", "\ndef env_scanX(corp):",
@@ -678,6 +692,12 @@ SELF_MUTATIONS = (
      '    "mirror_audit": ("гейт", "правило ' + '25"),',
      '    "mirror_audit": ("гейт", "правило ' + '99"),',
      "plant_registry_trap", "там нет"),
+    ("съём дерева игнорирует названный корень (всегда мерит живое дерево)",
+     "    root = ROOT if root is None else Path(" + "root)", "    root = ROOT",
+     "tree_counts_trap", "ЛОВУШКА ДЕРЕВА НЕ ПОДТВЕРЖДЕНА"),
+    ("обход ланов разучился ходить по подкаталогам (всегда ноль)",
+     "    per = {}\n    for lan in SUBLANES:", "    per = {}\n    for lan in ():",
+     "tree_counts_trap", "ЛОВУШКА ДЕРЕВА НЕ ПОДТВЕРЖДЕНА"),
     ("файл-страж исчез",
      '    "гейт": ROOT / "scripts" / "validate_atonement_corpus_integrity' + '.py",',
      '    "гейт": ROOT / "scripts" / "туда-не-смотри.py",',
@@ -806,6 +826,97 @@ def table91_trap():
           "объявленная правкой 9, закрыта"
           % (len(red), LANE_OF_91, len(blind)))
     return 0
+
+
+def tree_counts_trap():
+    """Ловушка на съёме чисел дерева: другой корень — другие числа.
+
+    Строит во временном каталоге миниатюру того же периметра (те же имена, та же форма таблиц) и
+    требует трёх вещей, а не одной: обход обязан увидеть фикстуру целиком (иначе «ноль файлов»
+    снова был бы успехом); правка в файле обязан сдвинуть ровно те поля, которые обязана; пустой
+    корень не имеет права вернуть живые числа — иначе у съёмки есть тайная дорожка к тому месту,
+    где скрипт лежит, и вся история про «число относится к дереву» обнуляется.
+
+    Проверка абсолютных чисел фикстуры честна именно потому, что фикстуру пишет этот код: байты и
+    строки здесь не вторая реализация обхода, а условие задачи.
+    """
+    import shutil
+    import tempfile
+    doc_text = "шапка\n\n| a | b |\n\nхвост\n"
+    mass_text = "## Масса\n\n| FP-1 | 10 |\n| FP-2 | 20 |\n\n"
+    files = {
+        "docs/research/atonement/01_a.md": "одна строка\nвторая\n",
+        "docs/research/atonement/12_b.md": "x\n",
+        "docs/research/atonement/x.md": "не нумерованный\n",
+        "docs/research/atonement/35_four_point_authors_mass_registry.md": mass_text,
+        "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md": doc_text,
+        "ИСКУПЛЕНИЕ/17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md": "17\n",
+        "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json": "{}\n",
+        "ИСКУПЛЕНИЕ/data/atonement-library-index.json": "{}\n",
+        "ИСКУПЛЕНИЕ/ot/a.md": "ot\n",
+        "ИСКУПЛЕНИЕ/nt/a.md": "nt\n",
+        "ИСКУПЛЕНИЕ/fathers/a.md": "fathers\n",
+        "ИСКУПЛЕНИЕ/synthesis/a.md": "synthesis\n",
+        "ИСКУПЛЕНИЕ/synthesis/drafts/d1.md": "d1\nd2\n",
+        "ИСКУПЛЕНИЕ/synthesis/drafts/d2.md": "d3\n",
+    }
+    tmp = tempfile.mkdtemp(prefix="atonement-tree-trap-")
+    try:
+        for relpath, content in files.items():
+            dst = Path(tmp) / relpath
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            dst.write_text(content, encoding="utf-8")
+        t = tree_counts(Path(tmp))
+        problems = []
+        if (t["docs"][0], t["docsNumbered"]) != (4, 3) or t["rootmd"][0] != 2:
+            problems.append("фикстура прочитана не целиком: файлов полосы %d (ожидалось 4), "
+                            "нумерованных %d (3), в корне отдела %d (2) — обход видит не то, что "
+                            "написано" % (t["docs"][0], t["docsNumbered"], t["rootmd"][0]))
+        if t["doc"][:2] != (len(doc_text.encode("utf-8")), len(doc_text.split("\n")) - 1):
+            problems.append("байты и строки документа съёмнуты не по фикстуре: %r, ожидалось %r"
+                            % (t["doc"][:2], (len(doc_text.encode("utf-8")), len(doc_text.split("\n")) - 1)))
+        if (t["massRows"], t["massSections"], t["sub"][0]) != (2, 1, 4):
+            problems.append("строки массы и ланы съёмнуты неверно: рядов %d (2), разделов %d (1), "
+                            "файлов по ланам %d (4)" % (t["massRows"], t["massSections"], t["sub"][0]))
+        # посадка: правка в файле обязана двигать числа
+        (Path(tmp) / "docs/research/atonement/01_a.md").write_text("одна\nвторая\nтретья\n",
+                                                                    encoding="utf-8")
+        (Path(tmp) / "docs/research/atonement/35_four_point_authors_mass_registry.md").write_text(
+            mass_text + "| FP-3 | 30 |\n", encoding="utf-8")
+        (Path(tmp) / "ИСКУПЛЕНИЕ/nt/a.md").unlink()
+        t2 = tree_counts(Path(tmp))
+        moved = []
+        if t2["docs"][1] > t["docs"][1]:
+            moved.append("байты полосы")
+        if t2["massRows"] == 3:
+            moved.append("рядов массы")
+        if t2["sub"][0] == 3 and t2["sub"][1] < t["sub"][1]:
+            moved.append("файлов по ланам")
+        if len(moved) < 3:
+            problems.append("правка сдвинула только %s — часть чисел снимается не с дерева, а с "
+                            "того, что уже было посчитано" % (", ".join(moved) or "ничего"))
+        # ослепление: пустой корень не имеет права вернуть живые числа
+        empty = tempfile.mkdtemp(prefix="atonement-tree-trap-empty-")
+        try:
+            try:
+                t3 = tree_counts(Path(empty))
+            except OSError as exc:
+                t3 = {"отказ": str(exc)[:60]}
+            live = tree_counts()
+            if "отказ" not in t3 and t3.get("corpBytes") == live["corpBytes"]:
+                problems.append("пустой корень вернул живые числа корпуса — у съёмки есть тайная "
+                                "дорожка к ROOT, и «число относится к дереву» тогда неправда")
+        finally:
+            shutil.rmtree(empty, ignore_errors=True)
+        if problems:
+            print("ЛОВУШКА ДЕРЕВА НЕ ПОДТВЕРЖДЕНА — " + "; ".join(problems))
+            return 1
+        print("ЛОВУШКА ДЕРЕВА: фикстура прочитана целиком, правка сдвинула 3 поля из 3, пустой "
+              "корень живых чисел не вернул — число относится к дереву, а не к месту, где лежит "
+              "скрипт")
+        return 0
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
 
 
 def keydate_trap():
@@ -1416,8 +1527,9 @@ def main() -> int:
         rc1 = keydate_trap()
         rc2 = plant_registry_trap()
         rc3 = table91_trap()
-        rc4 = self_mutation_trap()
-        return max(rc1, rc2, rc3, rc4)
+        rc4 = tree_counts_trap()
+        rc5 = self_mutation_trap()
+        return max(rc1, rc2, rc3, rc4, rc5)
     if mode not in ("--check", "--write", "--report"):
         raise SystemExit("употребление: atonement_reshoot_state.py "
                          "[--check|--write|--report|--rule-trap]")
