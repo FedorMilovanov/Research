@@ -145,7 +145,7 @@ The evidence rule is the same as everywhere in this project: a work enters this 
   190–202 держится на спорном месте `Paed. II 93, 1` (часть 12), а неснятый довод Гарнака о порядке
   сочинений даёт после 202/3. Диапазон назван, год не назван ни одним источником;
   ~~4) греческий текст расходится~~ — **снято 2026-10-26 по критическому изданию**; 5) гимн не сохранился в основной рукописи P: листы с обоими гимнами выпали, текст
-  дошёл в двух списках X–XII вв., снятых с P до утраты; сомнение в том, что это вставка, снимается
+  дошёл в двух списках X–XII вв., снятых с P до утраты (по изданию — лл. 312–313); сомнение в том, что это вставка, снимается
   состоянием кодекса, а не аргументом вкуса (`CLM-PHOS-CLEM-LEAVES-LOST`).
 - **Russian translation:** нет. До решения владельца ничего из этого кандидата в копию не брать.
 - **Production:** `NOT_STARTED`. **Publication status:** `UNKNOWN_NOT_VERIFIED` — публиковать
@@ -158,7 +158,14 @@ The evidence rule is the same as everywhere in this project: a work enters this 
   `DOSSIER_PHOS-007_PART6_COPIES_AND_SCHOLIA.md` (часть 6: оба списка до конца, схолии и их отсутствие) ·
   `DOSSIER_PHOS-007_PART7_HARNACK_READ.md` (часть 7: Гарнак прочитан — аргумент против авторства и другая дата) ·
   `DOSSIER_PHOS-007_PART8_EUSEBIUS_HYMNODY.md` (часть 8: Непос проверен; три рода свидетельств о ранних христианских песнях у Евсевия) ·
-  `DOSSIER_PHOS-007_PART9_CORRECTION_AND_SECOND_POEM.md` (часть 9: поправка к части 6 — глоссы к гимну есть; второе стихотворение прочитано).
+  `DOSSIER_PHOS-007_PART9_CORRECTION_AND_SECOND_POEM.md` (часть 9: поправка к части 6 — глоссы
+  к гимну есть; второе стихотворение прочитано) ·
+  `DOSSIER_PHOS-007_PART10_APPARATUS_PARALLELS_LOSSES.md` (часть 10: аппарат издания, счёт
+  стихов — 65) · `DOSSIER_PHOS-007_PART11_HARNACK_RETRACTS_GLOSS_HAND.md` (часть 11) ·
+  `DOSSIER_PHOS-007_PART12_CRATES_PARA_CITY.md` (часть 12) ·
+  `DOSSIER_PHOS-007_PART13_FULL_TEXT_AND_FOLIOS.md` (часть 13: **полный текст всех 65 стихов**;
+  номера выпавших листов P — 312–313) · **`TEXT_PHOS-007_CLEMENT_HYMN_GRC.md` — сам греческий
+  текст, стихи 1–65.**
 - **Next reading (nothing opened yet):** **Stählin, GCS 12, с. XVII** — начало фразы о выпавших
   листах с их номерами (сама фраза прочитана с середины); **там же, с. 339f** —
   второе стихотворение-подражание; 3-е изд. GCS 12 (Treu, 1972) и Marcovich 2002 — сверка
