@@ -18,6 +18,10 @@ This is a living project-local playbook. It records confirmed preferences and pr
 - For *Schepselen niet en Jesus al*, the 1676 text gives a tune direction to *Rosemont waer gy vliedt*. This is a historical tune indication, not evidence that a modern SUNO take recreates the original arrangement.
 - *Hy droech onse smerten* is cataloged as a sonnet; no original melody direction is verified in the current record. Treat any music as a modern setting unless a primary source is located.
 
+## Capitalization of address
+
+Правило одно и лежит в одном месте — `projects/lord-god-strength/RULES.md` § 7: **заглавная буква в местоимении — только о Боге** (Он, Ему, Тебе, Твой). О святых, о Деве Марии, об авторах, героях и предметах — только строчная, в цитатах тоже. Здесь правило не дублируется.
+
 ## Text preparation for SUNO — standing rules
 
 These are project-wide working principles, adopted 2026-10-25 from the owner's notes. Per-work style decisions remain per-work and are recorded separately (see §"Per-work decisions").

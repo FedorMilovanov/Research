@@ -2818,6 +2818,109 @@
     "Ссылка на саму рукопись: это то, что спорят о датировке (18 × 9,4 см, греческий текст молитвы с Θεοτόκε)."
    ],
    "limits": "Изображение я прочесть не могу (нет vision): как свидетель оно ценно только вместе с чужой транскрипцией."
+  },
+  {
+   "id": "SRC-CONF-1689-LBCF",
+   "title": "Лондонское баптистское исповедание веры 1689 г. — глава 8 «О Христе-посреднике» и глава 22 «О богослужении и дне субботнем» (полный текст обеих глав прочитан)",
+   "url": "https://reformedreader.org/ccc/1689lbc/english/Chapter22.htm",
+   "type": "Исповедальный документ: чем баптисты-реформаты определяют богослужение и посредничество. Первичный источник для позиции канала",
+   "evidenceClass": "A1",
+   "accessState": "FULL_OBJECT_VERIFIED",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "RIGHTS_UNKNOWN",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "RIGHTS_HOLD"
+   ],
+   "supports": [
+    "**22.2:** «Religious worship is to be given to God the Father, Son, and Holy Spirit, and to him alone; not to angels, saints, or any other creatures; and since the fall, not without a mediator, nor in the mediation of any other but Christ alone» (Мф 4:9–10; Рим 1:25; Кол 2:18; Откр 19:10; Ин 14:6; 1 Тим 2:5).",
+    "**8.9:** «This office of mediator between God and man is proper only to Christ… and may not be either in whole, or any part thereof, transferred from him to any other» (1 Тим 2:5).",
+    "**8.2:** Сын «was conceived by the Holy Spirit in the womb of the Virgin Mary… so that two whole, perfect, and distinct natures were inseparably joined together in one person… which person is very God and very man, yet one Christ, the only mediator between God and man». Мария названа ровно в этом месте и ровно в этом смысле.",
+    "**22.1:** acceptable worship «is instituted by himself, and so limited by his own revealed will, that he may not be worshipped according to the imagination and devices of men» — регулятивное начало богослужения; практика не выводится из благочестия."
+   ],
+   "limits": "Читался английский текст исповедания 1689 г.; оно не естьSymbol веры канала — владелец назвал свою принадлежность устно, документ взят как классическая формула баптистско-реформатской веры."
+  },
+  {
+   "id": "SRC-CONF-BFM-2000",
+   "title": "Baptist Faith and Message 2000 — исповедание Южной баптистской конвенции; прочитаны статьи I (Писание) и II (Бог), чанк 0 из 8",
+   "url": "https://bfm.sbc.net/bfm2000/",
+   "type": "Исповедальный документ крупнейшего баптистского объединения; первичный источник для позиции канала",
+   "evidenceClass": "A1",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "RIGHTS_UNKNOWN",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "RIGHTS_HOLD"
+   ],
+   "supports": [
+    "**II.B:** «In His incarnation as Jesus Christ He was conceived of the Holy Spirit and born of the virgin Mary… He ascended into heaven and is now exalted at the right hand of God where He is **the One Mediator**, fully God, fully man, in whose Person is effected the reconciliation between God and man».",
+    "**I:** Писание «has God for its author, salvation for its end, and truth, without any mixture of error, for its matter… the supreme standard by which all human conduct, creeds, and religious opinions should be tried»."
+   ],
+   "limits": "Прочитан чанк 0 из 8: статьи III–XVIII не читаны; в них могут быть места, уточняющие богослужебную часть."
+  },
+  {
+   "id": "SRC-CONF-DISP-VLACH-2024",
+   "title": "Michael J. Vlach, «Progressive Dispensationalism», Journal of Biblical and Theological Studies (jbtsonline), 2024 — что такое диспенсационализм, его этапы и границы; чанк 0 из 9",
+   "url": "https://jbtsonline.org/2024/12/progressive-dispensationalism/",
+   "type": "Научная статья профессора богословия; сам автор называет себя «revised-progressive dispensationalist»",
+   "evidenceClass": "B1",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "COARSE_LOCATOR_ONLY",
+   "rightsState": "RIGHTS_UNKNOWN",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "RIGHTS_HOLD"
+   ],
+   "supports": [
+    "**Этапы:** классический (1830-е, Дарби — 1909, Scofield Reference Bible) · традиционный (1909–1949, Чафер) · **пересмотренный (1950–1986): Уолвурд, Райри, Пентекост, Макклейн** · **прогрессивный (1986 — поныне): Соуси, Блейзинг, Бок**. «Dispensationalism today is mostly a mix of traditional or revised and PD».",
+    "**Граница, важная для записи слов владельца:** «Dispensationalism's primary emphases and contributions, however, do not occur in the realm of soteriology or individual redemption. Dispensationalism primarily addresses God's workings throughout history in the realms of creation, kingdom, covenants, law, people of God, and hermeneutics»; и «while dispensationalism is not a specific soteriological system like Reformed or Covenant Theology, it affirms Reformation and evangelical understandings of salvation in Christ»; пять solа Реформации принимаются."
+   ],
+   "limits": "Прочитан чанк 0 из 9; разбор заветов, экклезиологии и эсхатологии не читался. Статья программная (автор argued, что PD — наиболее точная система), а не нейтральный обзор."
+  },
+  {
+   "id": "SRC-PHOS-SHOEMAKER-LECTURE-2017",
+   "title": "Стенограмма лекции Стивена Шумейкера «Mary in Early Christian Faith and Devotion», Университет Портленда, 31 января 2017 г. (PDF); прочитаны чанки 0–1 из 8",
+   "url": "https://ww1.up.edu/garaventa/files/lectures-and-readings-transcripts/2016-2017-transcripts/stephen-shoemaker-1-31-17-transcript.pdf",
+   "type": "Научный доклад по собственной книге Шумейкера (Yale, 2016); источник о возникновении почитания Богородицы",
+   "evidenceClass": "B1",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "RIGHTS_UNKNOWN",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "RIGHTS_HOLD"
+   ],
+   "supports": [
+    "«There is virtually no evidence of any devotion to Mary prior to 150, or for that matter to any other figure besides Jesus»; рабочее окно — вторая половина II в. — первая половина V в.",
+    "«Most Christian sources from the first four centuries have surprisingly little to say about Mary… almost no evidence of Marian cult before the middle of the fourth century».",
+    "О соборе 431 г.: прежняя наука нередко приписывала ему возникновение культа; автор называет это «rather preposterous» — «the veneration of Mary had already begun to establish itself before the events of Ephesus», но «in the Council's aftermath, devotion to the Virgin intensified considerably and spread widely».",
+    "«It was Nestorius' refusal to call Mary, Theotokos, the God bearer, that seems to have turned the tide of popular opinion against him».",
+    "«Протоевангелие Иакова» — «in fact… a late second century biography of Mary»; «reveals a surprisingly developed interest in Mary as a significant figure in her own right»."
+   ],
+   "limits": "Прочитаны чанки 0–1 из 8: вступление и начало разбора. Обещанные дальше Епифаний (обличение «чрезмерного» почитания) и «Шестикнижное сказание об Успении» известны мне только по сниппету выдачи, firsthand не читаны."
+  },
+  {
+   "id": "SRC-PHOS-FULTON-BROWN-2017",
+   "title": "Rachel Fulton Brown, «The Quest for the Historical Mary», First Things, июнь 2017 — разбор книги Shoemaker, Mary in Early Christian Faith and Devotion (Yale, 2016); прочитан чанк 0 из 5",
+   "url": "https://firstthings.com/the-quest-for-the-historical-mary/",
+   "type": "Научная рецензия; источник о том, как расколота наука о раннем почитании Богородицы",
+   "evidenceClass": "B1",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "COARSE_LOCATOR_ONLY",
+   "rightsState": "RIGHTS_UNKNOWN",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "RIGHTS_HOLD"
+   ],
+   "supports": [
+    "Формула раскола: католические учёные ищут в ранних свидетельствах следы поздних догматов, протестантские и светские — доказывают, что почитание стало значимым лишь после Ефеса.",
+    "Шумейкер против обеих сторон: против протестантов — «evidence for devotion to Mary in the centuries before the Council of Ephesus… is much richer than previously believed».",
+    "**Механизм:** «the basic principles undergirding those… beliefs and practices… arose from a logic that was native to the early Christian tradition itself»; Мария — «effectively a saint among other saints… Her veneration and intercession were not different in kind from that of other saints, but rather in quality».",
+    "Рецензент: в итоге Шумейкер «ends up following the usual Protestant view» — ранняя Мария скромна, «super-saint» она стала позже, когда её «elevated dangerously close to an equal footing with her son».",
+    "Назван основной предшественник: Chris Maunder (ed.), Origins of the Cult of the Virgin Mary (2008)."
+   ],
+   "limits": "Прочитан чанк 0 из 5; автор рецензии сама — участница спора (медиевист, сочувствующий католическому чтению), и её оценку Шумейкера надо отделять от его собственных слов."
   }
  ]
 }

@@ -3031,7 +3031,7 @@
    ],
    "notes": [
     "Независимое подкрепление критерию Смита (2011, с. 211): в III веке выбирать практически не из чего, поэтому «пелся в богослужении» весит так много.",
-    "Её же наблюдение о природе литургических рукописей: переписчики стремились быть верными не списываемой рукописи, а литургии своей общины."
+    "её же наблюдение о природе литургических рукописей: переписчики стремились быть верными не списываемой рукописи, а литургии своей общины."
    ],
    "limits": [
     "Какой именно предмет III века имеется в виду, в прочитанном фрагменте не названо.",
@@ -3042,7 +3042,7 @@
   },
   {
    "id": "CLM-PHOS-OXY-REDATING-CAUTION",
-   "topic": "Урок для всей серии: гимн «Под Твою милость» (P.Ryl. III 470) считался древнейшим свидетельством III–IV в., пока его не передатировали на VIII–IX вв.",
+   "topic": "Урок для всей серии: гимн «Под твою милость» (P.Ryl. III 470) считался древнейшим свидетельством III–IV в., пока его не передатировали на VIII–IX вв.",
    "claim": "Mihálykó 2019 (введение) приводит случай, прямо касающийся нашего жанра: «P.Ryl. III 470, a copy of the Marian hymn ὑπὸ τὴν σὴν εὐσπλαγχνίαν (or *Sub tuum praesidium* as it is known in the Latin tradition). This papyrus was originally dated to the third or fourth century, and was therefore considered the earliest testimony to Marian worship until Hans Förster redated it to the eighth or ninth century on the basis of suggestive Coptic parallels». Отсюда правило: любое «древнейший» в нашей серии держится на нынешней датировке и названном критерии, а не само по себе.",
    "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
    "sourceIds": [
@@ -3370,6 +3370,98 @@
     "Решение владельца по конкретному произведению; приоритет над общими правилами перевода сохранён.",
     "Правило п. 9 «буквальность изначально» к этой карточке не применяется: решения о пении больше нет."
    ],
+   "projectLevel": true
+  },
+  {
+   "id": "CLM-CONF-WORSHIP-GOD-ALONE",
+   "topic": "Почему богородичный гимн не поют: исповедальное основание — поклонение Богу одному и единый ходатай Христос",
+   "claim": "Основание не во вкусе и не в цензуре, а в исповедании. **1689 Лондонское баптистское исповедание 22.2:** «Religious worship is to be given to God the Father, Son, and Holy Spirit, and to him alone; not to angels, saints, or any other creatures; and since the fall, not without a mediator, nor in the mediation of any other but Christ alone»; **8.9:** служение посредника «may not be either in whole, or any part thereof, transferred from him to any other». **Baptist Faith and Message 2000, II.B:** Христос — «the One Mediator, fully God, fully man». Отсюда: петь молитву, обращённую к Марии, мы не будем, а историю этой молитвы разбирать будем. Исследование не есть одобрение.",
+   "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+   "sourceIds": [
+    "SRC-CONF-1689-LBCF",
+    "SRC-CONF-BFM-2000"
+   ],
+   "holds": [],
+   "notes": [
+    "Исповедания прочитаны firsthand; это первичные документы, а не пересказ чьей-то позиции.",
+    "Правило канала вытекает из них и записано в `projects/lord-god-strength/RULES.md` § 7 (заглавная только о Боге) и § 17 (вероучение).",
+    "Практическое следствие для серии: богородичный материал уходит в раздел исследований (`RESEARCH_LANE_NOT_FOR_SINGING.md`), а не в очередь на пение."
+   ],
+   "limits": [
+    "Исповедания 1689 г. и BFM 2000 — документы баптистской традиции, но канал не заявлял официально, что принимает именно их; они взяты как классическая формула, а не как подписанный символ веры.",
+    "BFM 2000 прочитан частично (статьи I–II из XVIII)."
+   ],
+   "level": "project",
+   "projectLevel": true
+  },
+  {
+   "id": "CLM-CONF-CHANNEL-FAITH",
+   "topic": "Во что верит канал: протестанты, баптисты, реформаты; по заветам и народу Божию — диспенсационалисты пересмотренно-прогрессивные",
+   "claim": "Со слов владельца 2026-10-27: «Мы протестанты, баптисты и т. п., реформаты (не ковенанты, а по сотериологии, так мы диспенсационалисты +- пересмотренные)». Ближайший научный ярлык к этим словам — **revised-progressive dispensationalist**: по периодизации Влаха 2024, пересмотренный этап — 1950–1986 (Уолвурд, Райри, Пентекост, Макклейн), прогрессивный — 1986 — поныне (Соуси, Блейзинг, Бок), «dispensationalism today is mostly a mix of traditional or revised and PD». **Поправка, которую надо проговорить:** по Влаху, вклад диспенсационализма — не в сотериологии («do not occur in the realm of soteriology or individual redemption»), а в учении о творении, царстве, заветах, законе, народе Божием, герменевтике, церкви и последнем; пять solа Реформации им принимаются. Слово владельца «по сотериологии» записано буквально, рядом поставлено это уточнение.",
+   "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+   "sourceIds": [
+    "SRC-CONF-DISP-VLACH-2024",
+    "SRC-CONF-1689-LBCF",
+    "SRC-CONF-BFM-2000"
+   ],
+   "holds": [],
+   "notes": [
+    "Это первая запись вероисповедания канала в репозитории; раньше агент работал без неё и угадывал рамку.",
+    "Источник периодизации — программная статья Влаха (он сам аргументирует в пользу прогрессивного диспенсационализма), а не нейтральный обзор.",
+    "Практическое следствие: материалы о почитании святых и Богородицы разбираются как исторический вопрос при ясной исповедальной позиции канала."
+   ],
+   "limits": [
+    "Записано с устных слов владельца; документ канала, формулирующий вероучение, не назван.",
+    "Прочитан чанк 0 из 9 статьи Влаха."
+   ],
+   "level": "project",
+   "projectLevel": true
+  },
+  {
+   "id": "CLM-PHOS-MARIAN-DEVOTION-ORIGINS",
+   "topic": "Откуда пошло почитание: свидетельств до 150 г. нет, культа — до середины IV в., а Ефес 431-го не создал его, а поджёг",
+   "claim": "По лекции Шумейкера 2017 (прочитано firsthand, чанки 0–1 из 8): «there is virtually no evidence of any devotion to Mary prior to 150, or for that matter to any other figure besides Jesus»; в первые четыре века о Марии «surprisingly little… almost no evidence of Marian cult before the middle of the fourth century». Собор 431 г. прежняя наука часто считала причиной возникновения культа — Шумейкер называет это «rather preposterous»: почитание уже существовало до собора, и перевесило в споре не богословие, а то, что Несторий отказался называть Марию `Θεοτόκε`. Самое раннее свидетельство интереса к ней — литературное: «Протоевангелие Иакова», конец II в., — «in fact… a late second century biography of Mary». **Наше иерусалимское свидетельство (слой конца IV — начала V в.) попадает ровно в это окно.**",
+   "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+   "sourceIds": [
+    "SRC-PHOS-SHOEMAKER-LECTURE-2017",
+    "SRC-PHOS-SUBTUUM-SHOEMAKER-2018"
+   ],
+   "holds": [
+    "ARCHIVE_HOLD"
+   ],
+   "notes": [
+    "Стык двух независимых линий: грузинский Иадгари (слой IV–V вв., по Рену и Шумейкеру) и окно «нет культа до середины IV в., почитание уже есть до 431-го» совпадают.",
+    "Для статьи важно и то, чего в источнике нет: ни одного свидетельства почитания Марии до 150 г., как и почитания кого бы то ни было кроме Иисуса.",
+    "Книга Шумейкера 2016 (Yale) не прочитана — читаны лекция по ней и рецензия; `ARCHIVE_HOLD`."
+   ],
+   "limits": [
+    "Прочитаны только чанки 0–1 стенограммы из 8: разбор самих свидетельств (Епифаний, Сказание об Успении) не прочитан firsthand.",
+    "Шумейкер — сторонник раннего и обильного почитания; его формулировки надо отделять от нейтрального обзора.",
+    "Датировка слоя Иадгари — мнение Рену в его передаче."
+   ],
+   "level": "series",
+   "projectLevel": true
+  },
+  {
+   "id": "CLM-PHOS-MARIAN-SCHOLARSHIP-SPLIT",
+   "topic": "Наука о раннем почитании расколота по исповеданиям — и это надо говорить вслух",
+   "claim": "По рецензии Рэйчел Фултон Браун (First Things, 2017): «scholarship on Mary has broken down along confessional lines, with Catholic scholars looking to the early evidence for traces of modern Mariological dogmas, and Protestant scholars and their secular confrères looking rather to demonstrate that Marian devotion did not quite belong in the early Church but became a significant feature of Christian piety only after the Council of Ephesus». Шумейкер спорит с обеими сторонами и предлагает механизм: почитание Марии выросло **из почитания святых** («a logic that was native to the early Christian tradition itself»), а она сама была «a saint among other saints». Рецензент замечает, что в итоге он «ends up following the usual Protestant view». **Для нашей статьи это не опровержение, а подтверждение диагноза: практика выросла из логики почитания святых, а не из апостольской проповеди.**",
+   "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+   "sourceIds": [
+    "SRC-PHOS-FULTON-BROWN-2017",
+    "SRC-PHOS-SHOEMAKER-LECTURE-2017"
+   ],
+   "holds": [],
+   "notes": [
+    "Честность требует показывать обе стороны: даже максималистское чтение не спорит с тем, что Новый Завет говорит о Марии мало, а рост её почитания поздний; спор о темпе и механизме.",
+    "Основной предшественник назван рецензией: Chris Maunder (ed.), Origins of the Cult of the Virgin Mary (2008) — `ARCHIVE_HOLD`."
+   ],
+   "limits": [
+    "Прочитан чанк 0 рецензии из 5.",
+    "Автор рецензии сама участница спора и сочувствует католическому чтению; её оценку Шумейкера нельзя выдавать за его собственные слова.",
+    "Книга Шумейкера 2016 года не прочитана."
+   ],
+   "level": "series",
    "projectLevel": true
   }
  ]

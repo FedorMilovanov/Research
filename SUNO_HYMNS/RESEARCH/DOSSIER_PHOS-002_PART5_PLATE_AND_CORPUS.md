@@ -81,7 +81,7 @@ Mihálykó, *The Christian Liturgical Papyri: An Introduction* (Mohr Siebeck, 20
 - **Будущий ресурс серии:** корпус литургических гимнов готовит Селин Грасьен; её
   диссертация 2011 г. «Préliminaires à l’édition du corpus papyrologique des hymnes
   chrétiennes liturgiques de langue grecque» содержит список более чем 200 гимнов с
-  предварительными изданиями. Его выход «will supply an introduction and easy access to the
+  предварительными изданиями. его выход «will supply an introduction and easy access to the
   Christian hymns in Greek preserved on papyrus».
 - **Ограничение баз данных:** «variations in how different genres are labelled does not allow
   researchers as of 2018 to search for and find all “liturgical” papyri, “hymns”, or
