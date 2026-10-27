@@ -85,6 +85,25 @@ def run_tool(cwd, script, *args):
     return r.returncode, (r.stdout + ("\n" + r.stderr if r.stderr.strip() else "")).rstrip()
 
 
+def check_main_consistency(src):
+    """Среда годна для проба, только если её `main` — одна ветка, а не две расходящиеся.
+
+    Клон переносит `refs/heads/*` в `refs/remotes/origin/*`, поэтому среда-потомок наследует
+    *локальную* ветку источника. Если локальная `main` отстала от `refs/remotes/origin/main`
+    (обычное дело после чужого мержа: в main легла полоса #255, а локальная ветка осталась на
+    вчерашнем срезе), все три среды честно измерили бы устаревшую ветку и назвали бы это полной
+    историей: числа от этого неверными не становятся, они становятся ответом на другой вопрос.
+    Проб на это краснеет, а не чинит молча: обновление ветки — действие среды, а не часть замера."""
+    local = git(src, "rev-parse", "--verify", "-q", "refs/heads/main", check=False)
+    remote = git(src, "rev-parse", "--verify", "-q", "refs/remotes/origin/main", check=False)
+    if local and remote and local != remote:
+        raise RuntimeError(
+            f"локальная main ({local[:7]}) отстаёт от refs/remotes/origin/main ({remote[:7]}): клон "
+            "унаследует устаревшую ветку, и среды измеряли бы не ту историю, которую называют. "
+            "Обновите среду: git branch -f main origin/main")
+    return remote or local
+
+
 def make_clone(src, dest, *, depth=None, want_main=True):
     """Клон из песочницы обязан принести и `origin/main`: если песочница сама была неполной или
     клонирована по HEAD, ссылки на main в ней не будет, и E1 станет не контрольной средой, а
@@ -319,6 +338,7 @@ def main() -> int:
     try:
         src = Path(REPO).resolve()
         head = git(src, "rev-parse", args.ref)
+        main_sha = check_main_consistency(src)
     except Exception as exc:  # noqa: BLE001 - среда непригодна, это отдельный код выхода
         print(f"СРЕДА НЕГОДНА: {exc}")
         return 2
@@ -328,7 +348,7 @@ def main() -> int:
     broken = False
     try:
         e1, e2, e3, e4 = build(src, work)
-        print(f"проб истории: ref {head[:7]}, среды-клоны в {work.name}")
+        print(f"проб истории: ref {head[:7]}, main {main_sha[:7]}, среды-клоны в {work.name}")
         v1, v2, v3, v4 = e1.verdict(), e2.verdict(), e3.verdict(), e4.verdict()
         bad += check("E1 — контроль: гейт и пересъём зелёные",
                      v1["гейт"] == 0 and v1["пересъём"] == 0,
