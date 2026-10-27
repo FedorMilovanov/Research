@@ -2582,6 +2582,51 @@
     "**Рейнах (1922):** точки значат arsis, а не thesis; от слова πᾶσαι в строке 4 разметка сбивается; «the irregularities in the verbal metrical structure are brought into the general scheme by the music»."
    ],
    "limits": "Прочитан только издательский фрагмент — предисловие, оглавление и глава первая (с. V–11 из 30 доступных). Глава вторая (с. 13–36) с транскрипцией, аппаратом и построчным разбором строк 1–5, а также главы 3–6 — за пределом; LOCATOR_HOLD снят только для первой главы. Цитаты короткие, со ссылками на страницы."
+  },
+  {
+   "id": "SRC-PHOS-OXY-PLATE-IMAGE",
+   "title": "Фотография папируса P.Oxy. XV 1786 — файл POxy_1786.jpg на Викискладе (3 642 × 845, 211 КБ), источник: база Oxyrhynchus Online Оксфордского университета; общественное достояние (PD-Art, CC PDM 1.0)",
+   "url": "https://commons.wikimedia.org/wiki/File:POxy_1786.jpg",
+   "type": "Фотографическое воспроизведение самого свидетеля; копия сохранена в рабочей области (/home/user/PHOS-002_plate/)",
+   "evidenceClass": "A1",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "PUBLICATION_ELIGIBLE",
+   "publicationState": "REFERENCE",
+   "holds": [],
+   "supports": [
+    "Описание на странице файла: «Papirus Oxyrhynchus 1786, koniec III wieku / Papyrus Oxyrhynchus 1786, Late third century».",
+    "Оригинал: 3 642 × 845 точек, 211 КБ, JPEG; загружен 21 мая 2012 г., загрузивший — участник John Belushi.",
+    "Источник файла — база Oxyrhynchus Online Оксфордского университета: http://163.1.169.40/cgi-bin/library?…&c=POxy…1786 (тот портал, на который ссылаются языковые разделы Википедии).",
+    "Права: воспроизведение двумерного произведения в общественном достоянии (PD-Art); файл помечен Creative Commons Public Domain Mark 1.0.",
+    "Файл стоит на страницах Википедии на многих языках; подпись в английской статье — «Fragment of Oxyrhynchus hymn, 29.6 x 4.8–5.0 cm»."
+   ],
+   "limits": "Снимок мной не прочитан: в этой сессии у меня нет зрения, ни одно чтение в досье на него не опирается. В рабочей области лежит уменьшенная копия (/home/user/PHOS-002_plate/), оригинал 3 642 × 845 забрать не удалось — сеть песочницы пускает только GitHub, npm и PyPI. ARCHIVE_HOLD до просмотра человеком."
+  },
+  {
+   "id": "SRC-PHOS-OXY-MIHALYKO-2019",
+   "title": "Mihálykó Á. T., The Christian Liturgical Papyri: An Introduction (STAC 114; Tübingen: Mohr Siebeck, 2019) — прочитаны титул, предисловие, оглавление, сокращения, издательское примечание и введение первой главы по издательскому фрагменту PDF",
+   "url": "https://cdn.mohrsiebeck.com/a4,479d5825ba4f42be5be97dfc4cc7a5.pdf",
+   "type": "Сводный труд по литургическим папирусам Египта III–IX вв. с инвентарём 323 предметов",
+   "evidenceClass": "B1",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "COARSE_LOCATOR_ONLY",
+   "rightsState": "RIGHTS_UNKNOWN",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "RIGHTS_HOLD",
+    "LOCATOR_HOLD"
+   ],
+   "supports": [
+    "**Масштаб:** «So far scholarly efforts have resulted in over three hundred published liturgical papyri»; приложение — «the first ever list of all so-far edited liturgical papyri from Egypt from the third to ninth centuries in Greek, Coptic, and Latin, amounting altogether to **323 items**».",
+    "**Главная для нас фраза:** «The fact that there is **only one specimen from the third century**, and relatively few from the fourth and fifth, poses limits to the “search for the origins of Christian worship” based on the papyri».",
+    "**Ценность ранних свидетельств:** «Since the reconstruction of the late antique form of the liturgy from medieval codices is wrought with problems, the value of the late antique manuscripts as direct testimonies to the late antique form of the liturgy is immense».",
+    "**Поведение рукописей:** переписчики «did not aim to be faithful to the manuscript they were copying, but rather to the liturgy performed in their communities»; рукописи «witness an individual liturgy anchored in space and time».",
+    "**Урок передатировки:** P.Ryl. III 470, список гимна ὑπὸ τὴν σὴν εὐσπλαγχνίαν (Sub tuum praesidium), «originally dated to the third or fourth century, and was therefore considered the earliest testimony to Marian worship until Hans Förster redated it to the eighth or ninth century».",
+    "**Будущий корпус гимнов:** готовит Селин Грасьен; диссертация 2011 г. «contains a list of over 200 hymns with preliminary editions and an analysis of the entire corpus».",
+    "**Ограничение баз:** «variations in how different genres are labelled does not allow researchers as of 2018 to search for and find all “liturgical” papyri, “hymns”, or “liturgical prayers” through these databases»."
+   ],
+   "limits": "Прочитан издательский фрагмент: предисловие, оглавление и введение до подраздела «Defining a Corpus» (с. 14). Ни определения корпуса, ни хронологии, ни приложения-инвентаря (с. 348, № 245 по каталогу DCLP) я не видел; страниц в извлечённом тексте нет, ориентируюсь по разделам."
   }
  ]
 }

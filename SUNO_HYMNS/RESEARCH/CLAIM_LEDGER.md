@@ -1553,3 +1553,38 @@ Both were `projectLevel` facts while the text had no work. DUTCH-005 now links t
 **Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-OXY-COSGROVE-2011 · **Level:** series
 **Notes:** Снимает необходимость в голословном «самый первый»: есть названный критерий и названная точка отсчёта.; Согласуется с правилом серии: никаких абсолютных «первый/самый древний» без критерия.;
 **Limits:** Формулировка Косгроува; другие нотированные древнехристианские находки мне неизвестны, систематического поиска не было.; Косгроув упоминает две новые находки греческой музыки после 2001 г. (P.Louvre E 10534, P.Oxy. 4710) — не проверял, христианские ли они.;
+
+### CLM-PHOS-OXY-PLATE-LOCATED — Снимок папируса P.Oxy. XV 1786 найден: файл POxy_1786.jpg на Викискладе, источник — Оксфорд, общественное достояние; но прочитать его я не могу
+
+**Claim:** Снимок самого свидетеля найден и установлен по происхождению: файл `POxy_1786.jpg` на Викискладе, 3 642 × 845 точек, 211 КБ, загружен 21 мая 2012 г.; источник — база Oxyrhynchus Online Оксфордского университета; права — PD-Art и Creative Commons Public Domain Mark 1.0. Копия сохранена в рабочей области (`/home/user/PHOS-002_plate/`). **Но чтений из снимка не извлечено**: в этой сессии у меня нет зрения, изображение я прочесть не могу. Все четыре вопроса, которые решает снимок, открыты: есть ли перед `ταν ηω` следы `πρ`; разделены ли `ταν` и `ηω` пробелом; что осталось от нот над строкой 1; как выглядят ноты над началом строки 5.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-OXY-PLATE-IMAGE · **Level:** series
+**HOLDs:** ARCHIVE_HOLD.
+**Notes:** Путь к снимку, названный в части 2 § 6, оказался не единственным: самый доступный — Викисклад, а не DOI Оксфорда и не портал.; Права чистые (общественное достояние), так что снимок можно будет показывать в материалах канала, если дойдёт до публикации.;
+**Limits:** Снимок мной не прочитан: нет зрения в этой сессии.; В рабочей области — уменьшенная копия; оригинал 3 642 × 845 забрать не удалось (сеть песочницы ограничена GitHub, npm, PyPI).; Ни одно чтение в досье не опирается на снимок.;
+
+### CLM-PHOS-OXY-MIHALYKO-CORPUS — По новейшему своду, литургических папирусов III века сохранился ровно один — на фоне 323 учтённых предметов
+
+**Claim:** Mihálykó 2019 (введение): «So far scholarly efforts have resulted in over three hundred published liturgical papyri»; её приложение впервые перечисляет все изданные литургические папирусы Египта III–IX вв. на греческом, коптском и латыни — «amounting altogether to 323 items». И ключевое: «The fact that there is **only one specimen from the third century**, and relatively few from the fourth and fifth, poses limits to the “search for the origins of Christian worship” based on the papyri». По каталогу DCLP наш гимн значится у неё на с. 348 под № 245, но самой страницы я не видел, так что отождествление — правдоподобная догадка, а не прочитанное утверждение.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-OXY-MIHALYKO-2019 · **Level:** series
+**HOLDs:** LOCATOR_HOLD.
+**Notes:** Независимое подкрепление критерию Смита (2011, с. 211): в III веке выбирать практически не из чего, поэтому «пелся в богослужении» весит так много.; Её же наблюдение о природе литургических рукописей: переписчики стремились быть верными не списываемой рукописи, а литургии своей общины.;
+**Limits:** Какой именно предмет III века имеется в виду, в прочитанном фрагменте не названо.; Приложение-инвентарь (с. 348) и раздел «Defining a Corpus» (с. 14) не прочитаны.; Прочитан издательский фрагмент книги.;
+
+### CLM-PHOS-OXY-REDATING-CAUTION — Урок для всей серии: гимн «Под Твою милость» (P.Ryl. III 470) считался древнейшим свидетельством III–IV в., пока его не передатировали на VIII–IX вв.
+
+**Claim:** Mihálykó 2019 (введение) приводит случай, прямо касающийся нашего жанра: «P.Ryl. III 470, a copy of the Marian hymn ὑπὸ τὴν σὴν εὐσπλαγχνίαν (or *Sub tuum praesidium* as it is known in the Latin tradition). This papyrus was originally dated to the third or fourth century, and was therefore considered the earliest testimony to Marian worship until Hans Förster redated it to the eighth or ninth century on the basis of suggestive Coptic parallels». Отсюда правило: любое «древнейший» в нашей серии держится на нынешней датировке и названном критерии, а не само по себе.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-OXY-MIHALYKO-2019 · **Level:** series
+**Notes:** Подтверждает давнее правило владельца: никаких абсолютных «первый / самый древний» без критерия.; Тот же урок у Шерманна и Баумстарка: поздние рукописи (P.Bala’izah, VI–VII вв.) ставили в свидетели III века.;
+**Limits:** Случай приведён у Михайко; самой статьи Фёрстера (2005) я не читал.; К нашему гимну это относится как метод, а не как упрёк: его датировка стоит на двух якорях и подтверждена двумя изданиями.;
+
+### CLM-PHOS-OXY-HYMNS-CORPUS-COMING — Корпус христианских греческих гимнов на папирусе готовит Селин Грасьен: более 200 гимнов — адрес для будущих номеров серии
+
+**Claim:** Mihálykó 2019 (введение): «a corpus of liturgical hymns is in preparation by Céline Grassien. Her thesis, “Préliminaires à l’édition du corpus papyrologique des hymnes chrétiennes liturgiques de langue grecque,” defended in 2011, contains a list of over 200 hymns with preliminary editions and an analysis of the entire corpus». Пока корпус не вышел, искать следующие номера серии приходится по частным изданиям; с выходом появится готовый вход в материал.
+
+**Review state:** RESEARCH_OPEN · **Sources:** SRC-PHOS-OXY-MIHALYKO-2019 · **Level:** series
+**HOLDs:** LOCATOR_HOLD.
+**Notes:** Это ответ на вопрос, где искать кандидатов дальше PHOS-001 и PHOS-002.; Михайко также предупреждает: жанровые метки в Trismegistos и LDAB непоследовательны, искать «hymns» по базам нельзя.;
+**Limits:** Диссертация Грасьен мне недоступна; известно только по пересказу Михайко.; Сроков выхода корпуса она не называет.;
