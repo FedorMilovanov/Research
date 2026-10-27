@@ -1478,3 +1478,29 @@ The Greek lane is registered in the same file as the Dutch one because it is the
 - HOLDs: RIGHTS_HOLD
 - Supports: Текст Ὕμνος ἑωθινός совпадает с прочитанным у Ральфса: αἰνοῦμέν σε (ст. 4), τὰς ἁμαρτίας в обоих случаях, ἐλέησον ἡμᾶς без καί, псаломские стихи 29–46 той же оды.; Нумерация: в этой выкладке славословие — Κεφάλαιον ΙΕ', то есть 15-е, а не 14-е: счёт од расходится по изданиям.
 - Limits / caveats: Выкладка без указания издания-источника и без аппарата; служит только сверкой чтения.
+
+## SRC-PHOS-GLORIA-LATIN — Латинский текст «Gloria in excelsis Deo» — официальный лист «Order of Mass — Latin texts» (Liturgy Office, Department for Christian Life & Worship, Католическая церковь Англии и Уэльса): текст по Missale Romanum и по Graduale Romanum
+
+- URL: https://www.liturgyoffice.org.uk/Missal/Music/Composing/Info-2-Latin.pdf
+- Source role/type: Действующий латинский богослужебный текст в официальной публикации; для нас — свидетель греческой основы перевода
+- Evidence class: B1
+- Access state: PARTIAL_OBJECT
+- Locator state: COARSE_LOCATOR_ONLY
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: **Laudamus te** — латинское «хвалим», а не «поём»: `laudamus` соответствует `αἰνοῦμέν`, а не `Ὑμνοῦμέν`.; **Qui tollis peccata mundi** стоит дважды, и оба раза во множественном числе (`peccata`) — как `τὰς ἁμαρτίας` в оде, а не как `τὴν ἁμαρτίαν` в первом случае нынешней службы.; **Suscipе deprecationem nostram** — `deprecatio` = «прошение», то есть поддержка перевода `δέησις` как «прошение», а не «моление».; **Qui sedes ad dexteram Patris** — «ad dexteram», то есть «по правую руку», без церковнославянской кальки.; Ряд из пяти глаголов совпадает с греческим один в один: laudamus, benedicimus, adoramus, glorificamus, gratias agimus.; Различие: латинский добавляет третье именование «**tu solus Altissimus**», которого нет в греческой оде, и относит Святого Духа к заключительной формуле («cum Sancto Spiritu: in gloria Dei Patris»), тогда как греческий ставит «καὶ ἅγιον πνεῦμα» в ряд обращений. Значит, латинский переведён с греческого текста, в чём-то отличного от нашей оды.
+- Limits / caveats: Это современный официальный текст римской мессы; древнейшие латинские рукописные свидетели (Бангорский антифонарий, ок. 690) много моложе Александрийского кодекса. Латинский — перевод, а не греческий свидетель: он подтверждает чтение лишь постольку, поскольку мы доверяем его греческой основе.
+
+## SRC-PHOS-GLORIA-LATIN-DATING — Preces Latinae, страница «Gloria» — традиционная датировка латинского перевода (с кон. IV в., вероятно Иларий Пиктавийский, ум. 368) и краткая история гимна
+
+- URL: https://www.preces-latinae.org/thesaurus/Trinitas/Gloria.html
+- Source role/type: Справочная страница с традиционной атрибуцией и датировкой
+- Evidence class: C
+- Access state: PARTIAL_OBJECT
+- Locator state: COARSE_LOCATOR_ONLY
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: «The Latin translation of the Gloria below, which has been used since the late 4th century, is likely his [Илария]»; гимн «in the Mass of the western Rites since the 5th century».; Там же: гимн составлен по-гречески, во II в. (по этой странице), и рекомендован как утренняя молитва в VII книге «Апостольских постановлений».
+- Limits / caveats: Это справочная страница, а не исследование; датировка «II век» для греческого оригинала не подтверждена ни одним свидетелем, прочитанным нами (древнейший текст — «Постановления», кон. IV в.). Атрибуция Иларию традиционная.
