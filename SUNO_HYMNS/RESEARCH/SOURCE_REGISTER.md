@@ -1266,3 +1266,42 @@ The Greek lane is registered in the same file as the Dutch one because it is the
 - HOLDs: 
 - Supports: II 17, 9: Евсевий цитирует DVC 25 про σεμνεῖον καὶ μοναστήριον и называет эти комнаты «their churches»; в перечне вносимого — «the laws, and the inspired oracles of the prophets, and hymns»; II 17, 13: «concerning the new psalms which they composed» — цитата DVC 29: «they also compose songs and hymns to God in every variety of metre and melody»; II 17, 21–22: Евсевий прямо отождествляет описанное с практикой своего времени — пост, ночное бдение, изучение Слова на празднике Страстей, и «the hymns customarily recited by us», и как «while one sings regularly in time, the others listen in silence, and join in chanting only the close of the hymns»; II 17, 23: в διακονία и ἐπισκοπή Евсевий видит диаконство и епископство; Примечание 2 редактора (1890): сочинение сохранилось (Mangey II, 471–486); **Евсевий первый, кто его упоминает**, и он отождествляет терапевтов с христианскими монахами; Люциус (Die Therapeuten, 1879) доказывал, что это апология монашества конца III в. под именем Филона; редактор с ним соглашается, но называет и мнение Николя, Кюнена, Вайнгартена: авторства Филона нет, терапевты же — иудейская школа; Примечание 20: хронология Евсевия небрежна — при Клавдии христианство не могло иметь состарившихся в нём дев (DVC 21); Примечание 24: редактор возражает Штроту и считает отождествление διακονοῦντες и προεδρία с диаконатом и епископством оправданным
 - Limits / caveats: Евсевий прочитан **в английском переводе 1890 г.**, не по-гречески: за русским пересказом стоит перевод, а не оригинал; как именно у Евсевия звучат «ὕμνους» и «ἐφύμνια», по этому источнику установить нельзя. Люциус 1879 и вся дискуссия о терапевтах известны мне только по примечанию редактора 1890 г.; ни одной работы нашего времени по этому вопросу не прочитано.
+
+## SRC-PHOS-SERIES-PLINY-X96 — Plinius minor, Epistulae X 96 (к Траяну) и X 97 (ответ Траяна) — латинский текст в открытом корпусе PerseusDL/canonical-latinLit (phi1318.phi001, цифровой текст Perseus 2004; репозиторий CC BY-SA 4.0)
+
+- URL: https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi1318/phi001/phi1318.phi001.perseus-lat1.xml
+- Source role/type: Размеченный латинский текст в открытом корпусе (Perseus Digital Library / Tufts); printed edition в заголовке файла не названа
+- Evidence class: B1
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: PUBLICATION_ELIGIBLE
+- Publication state: REFERENCE
+- HOLDs: 
+- Supports: X 96, 7 — главное место: «quod essent soliti stato die ante lucem convenire, carmenque Christo quasi deo dicere secum invicem seque sacramento non in scelus aliquod obstringere …» — установленный день; до рассвета; песнь Христу как Богу; попеременно друг с другом; X 96, 7 — продолжение: после пения они расходились и снова сходились на трапезу, «promiscuum tamen et innoxium», и это прекратили после эдикта Плиния, запретившего гетеpии (hetaerias); X 96, 8 — как добыто сведение: «ex duabus ancillis, quae ministrae dicebantur … et per tormenta quaerere. Nihil aliud inveni quam superstitionem pravam et immodicam» — две рабыни-служительницы под пыткой; X 96, 1 — мера осведомлённости автора: «Cognitionibus de Christianis interfui numquam» (на следствиях о христианах никогда не присутствовал); X 96, 3–6 — среди опрошенных были отпавшие: «fuisse quidem sed desisse, quidam ante triennium, quidam ante plures annos, non nemo etiam ante viginti»; X 97 — в ответе Траяна о пении ни слова: «Conquirendi non sunt; si deferantur et arguantur, puniendi sunt»; Латинские цитаты в досье сверены с файлом корпуса программой: совпадение дословное
+- Limits / caveats: В заголовке файла пустой <imprint>: ни места, ни издателя, ни года, ни печатного издания, по которому набран текст. Сверки с критическим изданием (Майнорс, OCT) не было; рукописных разночтений я не видел. Прочитаны письма X 96 и X 97, а не вся десятая книга. Даты в тексте нет — только имя Траяна.
+
+## SRC-PHOS-SERIES-TERTULLIAN-APOL-II6 — Tertullianus, Apologeticum II, 6 — латинский текст (The Latin Library): Тертуллиан пересказывает донесение Плиния Траяну
+
+- URL: https://www.thelatinlibrary.com/tertullian/tertullian.apol.shtml
+- Source role/type: Латинский текст христианского автора в сетевой библиотеке; критического издания (CCSL) не читал
+- Evidence class: B1
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: «Plinius enim Secundus, cum provinciam regeret … adlegans praeter obstinationem non sacrificandi nihil aliud se de sacramentis eorum comperisse quam coetus antelucanos ad canendum Christo ut deo et ad confoederandam disciplinam …» — христианский автор конца II в. читает место Плиния именно так: собрания до рассвета, чтобы петь Христу как Богу; Глагол сменён: у Плиния «carmen … dicere» (сказывать песнь), у Тертуллиана «ad canendum» (чтобы петь); Тертуллиан передаёт и answers Траяна: «Tunc Traianus rescripsit hoc genus inquirendos quidem non esse, oblatos vero puniri oportere»; В прочитанном тексте стоит «ut deo»; о чтении «et deo» в части рукописей я знаю только по передаче (см. предел)
+- Limits / caveats: The Latin Library — не критическое издание: ни CCSL, ни OCT, лицензия не выяснена. Рукописного разночтения «ut deo» / «et deo» я не проверял ни по одному аппарату; оно известно мне по передаче. Прочитана глава II (§ 6), а не весь Апологетик.
+
+## SRC-PHOS-SERIES-PLINY-DATE-WHE — World History Encyclopedia, статья «Pliny the Younger on Christianity» — датировка письма X 96 (Плиний 61–112; наместник Вифинии с 110 г.; письмо о христианах — 112 г.)
+
+- URL: https://www.worldhistory.org/article/1846/pliny-the-younger-on-christianity/
+- Source role/type: Обзорная энциклопедическая статья (класс C); используется только для датировки
+- Evidence class: C
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: Плиний Младший 61–112 гг.; с 110 г. — наместник (legatus Augusti) Вифинии; письмо о христианах написано в 112 г.; Траян правил 98–117 гг. — согласуется с обращением «Traiano Imperatori» в самом письме
+- Limits / caveats: Класс C: обзорная статья, а не исследование и не издание текста. Другие обзорные источники дают начало наместничества как 109/110 г. и относят письмо к концу 111 г., то есть хронология колеблется в пределах двух-трёх лет; я её не проверял. В самом письме даты нет.

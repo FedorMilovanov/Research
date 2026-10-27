@@ -2343,6 +2343,68 @@
     "Примечание 24: редактор возражает Штроту и считает отождествление διακονοῦντες и προεδρία с диаконатом и епископством оправданным"
    ],
    "limits": "Евсевий прочитан **в английском переводе 1890 г.**, не по-гречески: за русским пересказом стоит перевод, а не оригинал; как именно у Евсевия звучат «ὕμνους» и «ἐφύμνια», по этому источнику установить нельзя. Люциус 1879 и вся дискуссия о терапевтах известны мне только по примечанию редактора 1890 г.; ни одной работы нашего времени по этому вопросу не прочитано."
+  },
+  {
+   "id": "SRC-PHOS-SERIES-PLINY-X96",
+   "title": "Plinius minor, Epistulae X 96 (к Траяну) и X 97 (ответ Траяна) — латинский текст в открытом корпусе PerseusDL/canonical-latinLit (phi1318.phi001, цифровой текст Perseus 2004; репозиторий CC BY-SA 4.0)",
+   "url": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi1318/phi001/phi1318.phi001.perseus-lat1.xml",
+   "type": "Размеченный латинский текст в открытом корпусе (Perseus Digital Library / Tufts); printed edition в заголовке файла не названа",
+   "evidenceClass": "B1",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "PUBLICATION_ELIGIBLE",
+   "publicationState": "REFERENCE",
+   "holds": [],
+   "supports": [
+    "X 96, 7 — главное место: «quod essent soliti stato die ante lucem convenire, carmenque Christo quasi deo dicere secum invicem seque sacramento non in scelus aliquod obstringere …» — установленный день; до рассвета; песнь Христу как Богу; попеременно друг с другом",
+    "X 96, 7 — продолжение: после пения они расходились и снова сходились на трапезу, «promiscuum tamen et innoxium», и это прекратили после эдикта Плиния, запретившего гетеpии (hetaerias)",
+    "X 96, 8 — как добыто сведение: «ex duabus ancillis, quae ministrae dicebantur … et per tormenta quaerere. Nihil aliud inveni quam superstitionem pravam et immodicam» — две рабыни-служительницы под пыткой",
+    "X 96, 1 — мера осведомлённости автора: «Cognitionibus de Christianis interfui numquam» (на следствиях о христианах никогда не присутствовал)",
+    "X 96, 3–6 — среди опрошенных были отпавшие: «fuisse quidem sed desisse, quidam ante triennium, quidam ante plures annos, non nemo etiam ante viginti»",
+    "X 97 — в ответе Траяна о пении ни слова: «Conquirendi non sunt; si deferantur et arguantur, puniendi sunt»",
+    "Латинские цитаты в досье сверены с файлом корпуса программой: совпадение дословное"
+   ],
+   "limits": "В заголовке файла пустой <imprint>: ни места, ни издателя, ни года, ни печатного издания, по которому набран текст. Сверки с критическим изданием (Майнорс, OCT) не было; рукописных разночтений я не видел. Прочитаны письма X 96 и X 97, а не вся десятая книга. Даты в тексте нет — только имя Траяна."
+  },
+  {
+   "id": "SRC-PHOS-SERIES-TERTULLIAN-APOL-II6",
+   "title": "Tertullianus, Apologeticum II, 6 — латинский текст (The Latin Library): Тертуллиан пересказывает донесение Плиния Траяну",
+   "url": "https://www.thelatinlibrary.com/tertullian/tertullian.apol.shtml",
+   "type": "Латинский текст христианского автора в сетевой библиотеке; критического издания (CCSL) не читал",
+   "evidenceClass": "B1",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "RIGHTS_UNKNOWN",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "RIGHTS_HOLD"
+   ],
+   "supports": [
+    "«Plinius enim Secundus, cum provinciam regeret … adlegans praeter obstinationem non sacrificandi nihil aliud se de sacramentis eorum comperisse quam coetus antelucanos ad canendum Christo ut deo et ad confoederandam disciplinam …» — христианский автор конца II в. читает место Плиния именно так: собрания до рассвета, чтобы петь Христу как Богу",
+    "Глагол сменён: у Плиния «carmen … dicere» (сказывать песнь), у Тертуллиана «ad canendum» (чтобы петь)",
+    "Тертуллиан передаёт и answers Траяна: «Tunc Traianus rescripsit hoc genus inquirendos quidem non esse, oblatos vero puniri oportere»",
+    "В прочитанном тексте стоит «ut deo»; о чтении «et deo» в части рукописей я знаю только по передаче (см. предел)"
+   ],
+   "limits": "The Latin Library — не критическое издание: ни CCSL, ни OCT, лицензия не выяснена. Рукописного разночтения «ut deo» / «et deo» я не проверял ни по одному аппарату; оно известно мне по передаче. Прочитана глава II (§ 6), а не весь Апологетик."
+  },
+  {
+   "id": "SRC-PHOS-SERIES-PLINY-DATE-WHE",
+   "title": "World History Encyclopedia, статья «Pliny the Younger on Christianity» — датировка письма X 96 (Плиний 61–112; наместник Вифинии с 110 г.; письмо о христианах — 112 г.)",
+   "url": "https://www.worldhistory.org/article/1846/pliny-the-younger-on-christianity/",
+   "type": "Обзорная энциклопедическая статья (класс C); используется только для датировки",
+   "evidenceClass": "C",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "RIGHTS_UNKNOWN",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "RIGHTS_HOLD"
+   ],
+   "supports": [
+    "Плиний Младший 61–112 гг.; с 110 г. — наместник (legatus Augusti) Вифинии; письмо о христианах написано в 112 г.",
+    "Траян правил 98–117 гг. — согласуется с обращением «Traiano Imperatori» в самом письме"
+   ],
+   "limits": "Класс C: обзорная статья, а не исследование и не издание текста. Другие обзорные источники дают начало наместничества как 109/110 г. и относят письмо к концу 111 г., то есть хронология колеблется в пределах двух-трёх лет; я её не проверял. В самом письме даты нет."
   }
  ]
 }
