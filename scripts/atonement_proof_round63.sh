@@ -41,6 +41,10 @@ FAIL=0
 n=0
 
 say() {
+  # `set -u` поймал то, для чего эта строка теперь есть явно: `say` зовут с двумя аргументами, и
+  # перенос метки на следующую строку без `\` молча превращал вторую половину в отдельную команду,
+  # а шаг — в падение с «$2: unbound variable»
+  : "${2:?say(<что>, <статус>[, fail]): статус обязателен — шаг без статуса неотличим от шага, которого не было}"
   n=$((n + 1))
   printf '%2d) %-60s %s\n' "$n" "$1" "$2"
   if [ "${3:-ok}" = "fail" ]; then FAIL=1; fi
@@ -281,8 +285,7 @@ timeout 120 python3 -B scripts/atonement_history_perturbation_probe.py --verdict
   || say "проб истории: --verdicts" "отчёт проба не различает исход — см. вывод режима" fail
 pout=$(timeout 900 python3 -B scripts/atonement_history_perturbation_probe.py HEAD --selftest 2>&1)
 case "$pout" in
-  *"ПРОБ ИСТОРИИ: PASS"*) say "проб истории: среды из одного дерева на $(git rev-parse --short HEAD), "
-                              "дрейфа сверяемых чисел нет" "да" ;;
+  *"ПРОБ ИСТОРИИ: PASS"*) say "проб истории: среды из одного дерева, дрейфа нет" "да" ;;
   *"СРЕДА НЕГОДНА"*)      say "проб истории" "среда не годна: $(printf '%s\n' "$pout" | tail -1 | cut -c1-64) — это не проверка" fail ;;
   *)                      say "проб истории" "$(printf '%s\n' "$pout" | tail -2 | tr '\n' ' ' | cut -c1-88)" fail ;;
 esac
