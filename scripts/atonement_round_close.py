@@ -120,6 +120,73 @@ def preflight():
     ncommits = subprocess.run(["git", "rev-list", "--count", "origin/main"], cwd=str(ROOT),
                               capture_output=True, text=True).stdout.strip()
     print(f"среда годна: клон не shallow, origin/main = {base[:7]}, истории видно {ncommits} коммитов")
+    if branch_parity() != 0:
+        return 2
+    return 0
+
+
+def plural_ru(n: int, one: str = "коммит", few: str = "коммита", many: str = "коммитов") -> str:
+    """Число с формой — чтобы в отказе не было «на 1 коммитов»."""
+    d, dd = n % 10, n % 100
+    form = one if d == 1 and dd != 11 else (few if 2 <= d <= 4 and not 11 <= dd <= 14 else many)
+    return f"{n} {form}"
+
+
+def branch_parity():
+    """Локальная ветка не имеет права отставать от того, что лежит на удалённом имени круга.
+
+    Пустой `git status` значит только согласие индекса с рабочим деревом — он молчит и в том
+    состоянии, в котором этот круг застал песочницу вторично за ночь: указатель ветки откатился
+    на коммит предыдущего круга вместе с восстановлением снапшота, файлы круга остались на диске,
+    но для git стали неотслеженными, а `--run` закоммитил бы дерево, в котором нет ни проба, ни
+    ловушек, — и был бы собой доволен, потому что сверяется он с локальным HEAD. Значит, сравнивать
+    надо не с HEAD, а с удалённым именем ветки: опережать его можно (незапушенный коммит — обычное
+    состояние середины круга), отставать нельзя, расхождение тоже отказ: два разных ответа на один
+    вопрос круг не закрывает.
+    """
+    def gitout(*args):
+        return subprocess.run(["git"] + list(args), cwd=str(ROOT), capture_output=True,
+                              text=True).stdout.strip()
+    branch = gitout("rev-parse", "--abbrev-ref", "HEAD")
+    if branch in ("", "HEAD"):
+        print("  HEAD отвязан (проверка идёт на merge-ref pull request) — сверка с именем ветки "
+              "пропущена: сверяется содержимое, а не указатель")
+        return 0
+    ls = gitout("ls-remote", "origin", "refs/heads/" + branch).split()
+    rsha = ls[0] if ls else ""
+    if not rsha:
+        print(f"  на origin нет refs/heads/{branch} — круг ещё не пушил ветку, сверять не с чем")
+        return 0
+    lsha = gitout("rev-parse", "HEAD")
+    if rsha == lsha:
+        print(f"  ветка {branch} совпадает с origin ({lsha[:7]}) — указатель там, где и обещал")
+        return 0
+    if subprocess.run(["git", "cat-file", "-e", rsha + "^{commit}"], cwd=str(ROOT),
+                      capture_output=True).returncode != 0:
+        print(f"ОТКАЗ СРЕДЫ: на origin/{branch} лежит {rsha[:7]}, а в локальном репозитории такого "
+              "коммита нет — история не достана, и снятые числа относятся не к этому дереву")
+        print(f"  достать: git -c gc.auto=0 fetch --deepen 3000 origin {branch} && git fetch origin "
+              f"+refs/heads/{branch}:refs/sandbox/head && git reset --hard {rsha[:7]} && "
+              "git update-ref -d refs/sandbox/head")
+        return 1
+    if subprocess.run(["git", "merge-base", "--is-ancestor", rsha, "HEAD"], cwd=str(ROOT),
+                      capture_output=True).returncode != 0:
+        behind = int(gitout("rev-list", "--count", "HEAD.." + rsha) or 0)
+        ahead = int(gitout("rev-list", "--count", rsha + "..HEAD") or 0)
+        if ahead == 0:
+            print(f"ОТКАЗ СРЕДЫ: локальная {branch} отстаёт от origin/{branch} на {plural_ru(behind)} — "
+                  "указатель сдвинулся под кругом, и снятые в таком дереве числа относились бы к "
+                  "прошлому кругу, хотя файлы этого лежат на диске и для git выглядят лишними")
+            print(f"  вернуть ветку к залитому: git fetch origin +refs/heads/{branch}:refs/sandbox/head "
+                  f"&& git reset --hard {rsha[:7]} && git update-ref -d refs/sandbox/head")
+        else:
+            print(f"ОТКАЗ СРЕДЫ: локальная {branch} разошлась с origin/{branch}: назад на "
+                  f"{plural_ru(behind)} и вперёд на {plural_ru(ahead)}")
+            print(f"  разобрать руками: git log --oneline HEAD..{rsha[:7]} и git log --oneline "
+                  f"{rsha[:7]}..HEAD — потом решить, какое дерево считать кругом")
+        return 1
+    print(f"  локальная {branch} опережает origin/{branch} ({lsha[:7]} против {rsha[:7]}) — "
+          "незапушенный коммит середины круга, это законно")
     return 0
 
 
