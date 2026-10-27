@@ -158,17 +158,36 @@ python3 - <<'PY'
 import hashlib, json, subprocess, sys
 from pathlib import Path
 corp = json.loads(Path("ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json").read_text(encoding="utf-8"))
-rec = corp["driveMirrors"]["corpusSnapshotRound63_20261026"]
-live = rec["живойСлепок"]
 path = "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json"
-blob = subprocess.run(["git", "show", f"{live['gitShaAtUpload']}:{path}"], capture_output=True).stdout
-gmd5 = hashlib.md5(blob).hexdigest()
+snaps = {k: v for k, v in corp["driveMirrors"].items()
+         if k.startswith("corpusSnapshotRound") and isinstance(v, dict)}
+if not snaps:
+    print("!! в driveMirrors нет ни одной записи corpusSnapshotRound* — зеркала сняты со сверки")
+    sys.exit(1)
+
+def blob_of(sha):
+    return subprocess.run(["git", "show", f"{sha}:{path}"], capture_output=True).stdout
+
 res = []
-res.append(("слепок Drive = blob %s: %d B, md5 %s…" % (live["gitShaAtUpload"][:7], len(blob), gmd5[:12]),
-            len(blob) == live["байт"] and gmd5 == live["md5Drive"]))
-gap = Path(path).stat().st_size - len(blob)
-res.append(("разрыв зеркала с деревом: записан %d, в этом дереве %d"
-            % (rec["разрывСДеревом"]["байт"], gap), gap == rec["разрывСДеревом"]["байт"]))
+# Каждая запись сверяется со своим же blob'ом, а не только последняя: запись круга 61 живёт в
+# реестре наравне с остальными, и «проверяем только актуальное зеркало» — это разрешение молчать
+# о прошлом. Разрыв объявлен лишь там, где поле есть (периметр тот же, что у пересъёмщика).
+for k in sorted(snaps):
+    ls = snaps[k].get("живойСлепок") or {}
+    sha = ls.get("gitShaAtUpload", "")
+    blob = blob_of(sha)
+    gmd5 = hashlib.md5(blob).hexdigest()
+    res.append(("%s: слепок = blob %s: %d B, md5 %s…" % (k, sha[:7], len(blob), gmd5[:12]),
+                bool(blob) and len(blob) == ls.get("байт") and gmd5 == ls.get("md5Drive")))
+    dec = (snaps[k].get("разрывСДеревом") or {}).get("байт")
+    if "снятПрогоном" in (snaps[k].get("разрывСДеревом") or {}):
+        gap = Path(path).stat().st_size - len(blob)
+        res.append(("%s: разрыв с деревом записан %s, в этом дереве %d" % (k, dec, gap), dec == gap))
+# Живым считается запись с самой поздней датой в ключе — так, а не по памяти круга: ключи
+# corpusSnapshotRound<номер>_<дата> сами называют, кто из них последний.
+latest_key = max(snaps, key=lambda k: k.rsplit("_", 1)[-1])
+live = snaps[latest_key]["живойСлепок"]
+blob = blob_of(live["gitShaAtUpload"])
 cen = corp["libraryIndex20261023"]
 idx = json.loads(Path("ИСКУПЛЕНИЕ/data/atonement-library-index.json").read_text(encoding="utf-8"))
 recs = idx["records"]
@@ -199,6 +218,14 @@ old = [r for r in recs if r.get("driveId") == "1sQ_0B5-9WFnZfmVcJSkF3DIwSbkqf3Tn
 res.append(("прежняя запись вытеснена (%s, имя начинается с «%s»)"
             % (old[0]["rights"], old[0]["name"][:8]) if old else "запись круга 60 в индексе не найдена",
             bool(old) and old[0]["rights"] == "HOLD_superseded" and old[0]["name"].startswith("УСТАРЕЛО")))
+# Объект, вытесненный самой поздней переаливкой, тоже обязан уйти в HOLD: его байт и md5 отныне
+# равны чужому дереву, и строка, оставшаяся с правами mirror_of_git, врала бы про сегодня.
+sup_id = (snaps[latest_key].get("вытесненный") or {}).get("driveId")
+sup = [r for r in recs if r.get("driveId") == sup_id]
+res.append(("вытеснённый записью %s объект %s… (%s, имя %s)"
+            % (latest_key[-9:], (sup_id or "?")[:7], sup[0]["rights"], sup[0]["name"][:8]) if sup else
+            "вытеснённый объект %s… в индексе не найден" % ((sup_id or "?")[:7]),
+            bool(sup) and sup[0]["rights"] == "HOLD_superseded" and sup[0]["name"].startswith("УСТАРЕЛО")))
 doc = Path("ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md").read_text(encoding="utf-8")
 audit = corp["fourPointMassRegistry20261023"]["seriesAuditRound5820261026"]["файлАудита"]
 res.append(("аудит: реестр знает %d B / %d строк, файл такой же" % (audit["байт"], audit["строк"]),

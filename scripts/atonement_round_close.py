@@ -64,10 +64,14 @@ PROOF = "scripts/atonement_proof_round63.sh"
 PROBE = "scripts/atonement_history_perturbation_probe.py"
 
 WRITERS = (
-    ("scripts/atonement_drive_mirror_round63.py", "--write",
-     "дописывает запись в `driveMirrors` и переснимает перечисление прежней записи"),
-    ("scripts/atonement_library_index_round63.py", "--write",
-     "дописывает запись в индекс библиотеки и вытесняет прежнюю в `HOLD_superseded`"),
+    # Кто в паре — называет круг, а не вечность: писатель чужого круга переснимал бы чужую
+    # запись своими штампами и своим listing'ом, а у listing'а папки с момента переаливки
+    # другое живое лицо. Прежняя пара (round63) уходит вместе со своим кругом: её числа
+    # держит пересъёмщик (разрыв), а её listing остаётся транскрипцией своего часа.
+    ("scripts/atonement_drive_mirror_round66.py", "--write",
+     "дописывает запись `driveMirrors.corpusSnapshotRound66_20261027` и вытеснение прежней записи"),
+    ("scripts/atonement_library_index_round66.py", "--write",
+     "дописывает строку индекса нового слепка и снимает у прежней права `mirror_of_git`"),
 )
 
 
@@ -215,6 +219,19 @@ def branch_parity():
     ls = gitout("ls-remote", "origin", "refs/heads/" + branch).split()
     rsha = ls[0] if ls else ""
     if not rsha:
+        # Отсутствие имени на origin — две причины, и называть второй первую ложная подпись:
+        # (а) ветку не пушили; (б) её слили — GitHub удаляет head-ref при мерже, а локальный
+        # указатель спокойно лежит в main. Отказ в обоих случаях один и тот же (сверять не с
+        # чем), но причина рисуется сверкой с origin/main, а не памятью о круге.
+        lsha0 = gitout("rev-parse", "HEAD")
+        merged = bool(lsha0) and subprocess.run(
+            ["git", "merge-base", "--is-ancestor", lsha0, "refs/remotes/origin/main"],
+            cwd=str(ROOT), capture_output=True).returncode == 0
+        if merged:
+            print(f"  на origin нет refs/heads/{branch}: локальная ветка ({lsha0[:7]}) целиком лежит в "
+                  "origin/main — это ветка после мержа (GitHub удаляет head-ref), а не «круг не "
+                  "пушил»; сверять не с чем")
+            return 0
         print(f"  на origin нет refs/heads/{branch} — круг ещё не пушил ветку, сверять не с чем")
         return 0
     lsha = gitout("rev-parse", "HEAD")

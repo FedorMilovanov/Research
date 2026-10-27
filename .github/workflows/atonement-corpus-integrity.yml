@@ -114,6 +114,8 @@ jobs:
           grep -q 'ОТКАЗ СРЕДЫ' scripts/atonement_round_close.py
           grep -q 'def branch_parity' scripts/atonement_round_close.py
           grep -q 'def canon_parity' scripts/atonement_round_close.py
+          grep -q 'corpusSnapshotRound66_20261027' scripts/atonement_drive_mirror_round66.py
+          grep -q 'countsNote20261027r66' scripts/atonement_library_index_round66.py
           grep -q 'инструментов канона нет в индексе' scripts/atonement_round_close.py
           grep -q 'PROBE' scripts/atonement_round_close.py
           grep -q 'ПРОБ ИСТОРИИ: PASS' scripts/atonement_history_perturbation_probe.py
