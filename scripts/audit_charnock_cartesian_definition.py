@@ -65,6 +65,77 @@ def extract(directory, charnock_directory, registry):
                 charnockMarginalNote=[' '.join(''.join(n.itertext()).replace('ſ', 's').split()) for n in paragraphs[13].iter(NS+'note')])
 
 
+LATIN_OCR_PINS = {'LAT1722': {'repository': 'jedipunkz/philosophy', 'path': 'inbox/デカルト/2026-10-14-René Descartes-Renati desCartes Principia philosophiae.md', 'commit': '95b16856e35f754ce67c22c6457232264a4fbbc2', 'blob': '17ab8f4fe6e8f8be29480cb5ac64de2c204eb68d', 'size': 302304, 'sha256': '3b3bfc5a790c58301942086cfaf76de7a9bb600e9f41fca477b64960b5ab039e', 'cacheName': 'principia-latin80.md', 'url': 'https://github.com/jedipunkz/philosophy/blob/95b16856e35f754ce67c22c6457232264a4fbbc2/inbox/%E3%83%87%E3%82%AB%E3%83%AB%E3%83%88/2026-10-14-Ren%C3%A9%20Descartes-Renati%20desCartes%20Principia%20philosophiae.md'}, 'LAT1672': {'repository': 'jedipunkz/philosophy', 'path': 'inbox/デカルト/2026-10-21-René Descartes-Renati DesCartes Opera philosophica Renati DesCartes Principia p.md', 'commit': '11d6066a17a8bc03eaf98be73c1dfe30d9489444', 'blob': '88d447743fce0e9b3f47bb815431f1f238918962', 'size': 302887, 'sha256': 'ab5ac74066bbde5fb3574fac4bdb64af641eb9f6d280267fab6938e86dda3588', 'cacheName': 'principia-opera80.md', 'url': 'https://github.com/jedipunkz/philosophy/blob/11d6066a17a8bc03eaf98be73c1dfe30d9489444/inbox/%E3%83%87%E3%82%AB%E3%83%AB%E3%83%88/2026-10-21-Ren%C3%A9%20Descartes-Renati%20DesCartes%20Opera%20philosophica%20Renati%20DesCartes%20Principia%20p.md'}}
+
+
+def extract_latin_ocr(directory):
+    result={}
+    for key,pin in LATIN_OCR_PINS.items():
+        raw=(directory/pin['cacheName']).read_bytes()
+        blob=hashlib.sha1(b'blob '+str(len(raw)).encode()+b'\0'+raw).hexdigest()
+        if len(raw)!=pin['size'] or hashlib.sha256(raw).hexdigest()!=pin['sha256'] or blob!=pin['blob']:
+            raise ValueError('Latin OCR byte/blob mismatch:'+key)
+        text=raw.decode('utf-8')
+        if 'book_text_truncated: true' not in text or 'public_domain: true' not in text:
+            raise ValueError('Keep capture truncation and metadata-only rights statement visible')
+        if key=='LAT1722':
+            start=text.index('Haecque  optima  via')
+            target=text.index('Cogitationis  nomine,',start)
+            stop=text.index('\nX.  Non  hic',target)
+            end=text.index('Jam  vero  ut',stop)
+        else:
+            start=text.index('Haecqucoptimaviacft')
+            target=text.index('CoatacioDisiiomioe',start)
+            stop=text.index('\nNon ii^c explico',target)
+            end=text.index('Jamverouifciatur',stop)
+        def window(a,b):
+            value=text[a:b]
+            return dict(startCharacterZeroBased=a,endCharacterExclusive=b,text=value,textSha256=digest(value))
+        result[key]=dict(sourceSha256=pin['sha256'],sourceBytes=pin['size'],
+                         captureMarkedTruncated=True,metadataClaimsPublicDomain=True,
+                         contextVIIItoX=window(start,end),targetIX=window(target,stop))
+    return result
+
+
+def check_latin_ocr(review):
+    r=review['latinTargetOcrFollowUp'];reading=r['byteVerifiedReading']
+    if (r['reviewState']!='PRINCIPLES_I9_LATIN_OCR_TARGET_LOCATED_NOT_IMAGE_OR_FIRST_EDITION'
+            or r['targetLatinOcrLocated'] is not True
+            or any(r[k] is not False for k in ['firstEditionVerified','pageImagesAcquired',
+                'normalisedLatinPrepared','directDependenceVerified','charnockOwnedEditionVerified',
+                'wholeBooksAcquired','wholeBooksRead','independentReview','publicationApproval'])):
+        raise ValueError('Latin target OCR is progress, not image/first-edition/dependence verification')
+    if set(reading)!=set(LATIN_OCR_PINS):raise ValueError('Two bounded Latin OCR witnesses required')
+    for key,pin in LATIN_OCR_PINS.items():
+        row=reading[key]
+        if (r['sources'][key]!=pin or row['sourceSha256']!=pin['sha256'] or row['sourceBytes']!=pin['size']
+                or row['captureMarkedTruncated'] is not True or row['metadataClaimsPublicDomain'] is not True):
+            raise ValueError('Do not promote a truncated OCR capture to a full original book')
+        for name in ['contextVIIItoX','targetIX']:
+            w=row[name]
+            if digest(w['text'])!=w['textSha256'] or len(w['text'])!=w['endCharacterExclusive']-w['startCharacterZeroBased']:
+                raise ValueError('Raw uncorrected Latin OCR text/character-range mismatch')
+        outer=row['contextVIIItoX'];inner=row['targetIX'];offset=inner['startCharacterZeroBased']-outer['startCharacterZeroBased']
+        if offset<0 or outer['text'][offset:offset+len(inner['text'])]!=inner['text']:
+            raise ValueError('Target must be embedded in the actual VIII–X context')
+    if ('inrclligo' not in reading['LAT1722']['targetIX']['text']
+            or 'CoatacioDisiiomioe' not in reading['LAT1672']['targetIX']['text']):
+        raise ValueError('Preserve OCR corruption, not a silently reconstructed Latin edition')
+    if not r['scope'] or not r['rightsLimits'] or not r['historicalBaselineMeaning']:
+        raise ValueError('Separate old acquisition baseline, new OCR target and rights')
+    texts={key:row['targetIX']['text'] for key,row in reading.items()}
+    texts['CH13']=review['byteVerifiedReading']['charnockParagraphs'][0]['text']
+    if [o['id'] for o in r['observations']]!=[f'LO{i:02}' for i in range(1,6)]:
+        raise ValueError('Five bounded OCR comparison observations required')
+    for o in r['observations']:
+        if not o['finding'] or not o['limit'] or not o['spans']:
+            raise ValueError('Observation without an explicit OCR limit')
+        for span in o['spans']:
+            if not span['text'] or span['text'] not in texts[span['source']] or digest(span['text'])!=span['sha256']:
+                raise ValueError('Observation must cite actual uncorrected OCR/Charnock spans')
+    return dict(cartesianLatinTargetOcrWitnesses=2,cartesianLatinTargetOcrLocated=True,cartesianLatinPageImagesVerified=False)
+
+
 def check_review(plan, registry):
     review = plan[KEY]
     if (review['reviewState'] != 'TRANSLATED_COUNTERPART_AND_POSTHUMOUS_LATIN_WITNESS_NOT_ORIGINAL'
@@ -131,7 +202,7 @@ def check_review(plan, registry):
         raise ValueError('Preserve earlier discovery state and integrate the new comparison separately')
     return dict(cartesianTranslatedDefinitionCompared=True, cartesianLaterLatinWitnessCompared=True,
                 cartesianComparativeObservations=12, norrisLetterVIParagraphs=7,
-                descartesLatinOriginalVerified=False, directCartesianDependenceVerified=False)
+                descartesLatinOriginalVerified=False, directCartesianDependenceVerified=False, **check_latin_ocr(review))
 
 
 def main():
@@ -139,6 +210,7 @@ def main():
     parser.add_argument('directory',type=Path,help='Pinned 4391.txt and A52424.xml')
     parser.add_argument('--charnock-directory',type=Path,required=True)
     parser.add_argument('--check',action='store_true')
+    parser.add_argument('--latin-ocr-directory',type=Path,help='Optional replay of new bounded Latin OCR captures')
     args=parser.parse_args()
     try:
         plan=json.loads((ROOT/'data/charnock-series-editorial-plan-v1.json').read_text())
@@ -148,7 +220,9 @@ def main():
             check_review(plan,registry)
             if reading != plan[KEY]['byteVerifiedReading']:
                 raise ValueError('Comparison differs from pinned source bytes')
-            print('Principles VIII–X/Charnock13+14+16+18/NorrisVI7paragraphs: PASS;not Latin original')
+            if args.latin_ocr_directory and extract_latin_ocr(args.latin_ocr_directory)!=plan[KEY]['latinTargetOcrFollowUp']['byteVerifiedReading']:
+                raise ValueError('Latin target OCR differs from pinned raw captures')
+            print('Principles VIII–X/Charnock/NorrisVI:PASS;Latin OCR follow-up checked if supplied;not original-edition verification')
         else:
             print(json.dumps(reading,ensure_ascii=False,indent=2))
     except (OSError,ValueError,KeyError,TypeError,StopIteration) as exc:

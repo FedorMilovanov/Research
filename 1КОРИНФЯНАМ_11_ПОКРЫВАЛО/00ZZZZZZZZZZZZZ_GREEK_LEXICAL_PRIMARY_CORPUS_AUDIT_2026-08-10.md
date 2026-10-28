@@ -1,6 +1,6 @@
 # 1 Коринфянам 11:2–16 — Greek lexical primary-corpus audit
 
-**Дата:** 2026-08-10  
+**Дата:** 2026-08-14  
 **Статус:** `LEXICAL-PRIMARY-CORPUS / RESEARCH-ONLY / FAIL-CLOSED / PUBLICATION-HOLD`
 
 ## 0. Method
@@ -13,7 +13,9 @@ Evidence hierarchy:
 
 ```text
 A_SYNTAX/TEXT = grammatical relation or directly attested lexical fact
+A_CORPUS_CONSTRUCTION = independently attested formal construction/pattern
 B_HIGH_SEMANTIC_PULL = corpus strongly favors a semantic class, but context still selects exact referent
+B_LEADING_CONSTRUCTION = formal corpus favors one relation without closing its exact social realization
 B/C_CONTEXTUAL = word range is established but local meaning remains debated
 C_VIABLE = linguistically possible serious alternative, not contextually leading
 D/C_LOW = published edge proposal with weak lexical support
@@ -97,7 +99,7 @@ ESTHER_6_12_HEAD_STATE_CONTEXT = B_SUPPORTIVE
 
 ```text
 V4_SOMETHING_DOWN_OVER_HEAD = A_SYNTAX/IDIOMATIC_FRAME
-V4_MATERIAL_COVERING = B_HIGH_LEADING
+V4_MATERIAL_COVERING = B_HIGH
 V4_HAIR_ONLY_FROM_KATA_KEPHALES_ALONE = C
 V4_EXACT_ROMAN_CAPITE_VELATO = B_C_HISTORICAL, NOT LEXICAL
 ```
@@ -227,13 +229,15 @@ The word itself does not contain an English theological phrase “authority over
 
 Cervin/Wolters-type methodological cautions are important: lexical meaning, metaphorical mapping, Semitic/Judeo-Christian usage and local syntax must not be collapsed.
 
+The primary corpus therefore supports a **relational headship/prominence/representation field** more strongly than it supports one narrow domination-loaded gloss.
+
 ## 3.4. Source/origin
 
 “Source” is linguistically proposed in scholarship and cannot be dismissed as impossible by fiat.
 
 But two cautions apply:
 
-1. the primary Judeo-Greek leadership/prominence examples show that authority/headship is a real semantic possibility;
+1. the primary Judeo-Greek leadership/prominence examples show that relational headship/prominence is a real semantic possibility;
 2. in 11:8 Paul expresses origin explicitly with `ἐκ` (“woman from man”), so v8 cannot simply be back-projected as proof that the lexical meaning of `κεφαλή` in v3 is “source.”
 
 ```text
@@ -246,9 +250,18 @@ THEREFORE_KEPHALE_LEXICALLY_MEANS_SOURCE = INVALID_INFERENCE
 ```text
 KEPHALE_ANATOMICAL_HEAD = A_LEXICAL
 KEPHALE_CAN_FUNCTION_AS_LEADER/PROMINENCE_METAPHOR = A_CORPUS_POSSIBILITY
-KEPHALE_HEADSHIP_AUTHORITY_IN_11_3 = B_LEADING_CONTEXTUAL
+KEPHALE_RELATIONAL_HEADSHIP_PROMINENCE_REPRESENTATION_IN_11_3 = B_LEADING_CONTEXTUAL
+KEPHALE_EXACT_NARROW_AUTHORITY_OVER_IN_11_3 = B_C
 KEPHALE_SOURCE_ONLY_IN_11_3 = C_VIABLE
 KEPHALE_AUTHORITY_AS_UNIVERSAL_DICTIONARY_GLOSS = false
+```
+
+Machine boundary:
+
+```text
+RELATIONAL_HEADSHIP_B_LEADING != NARROW_AUTHORITY_OVER_LEXICAL_GLOSS_PROVED
+LEADERSHIP_CORPUS_POSSIBILITY != AUTHORITY_ONLY_IN_V3
+ORIGIN_IN_V8 != SOURCE_LEXEME_PROVED_IN_V3
 ```
 
 ---
@@ -274,15 +287,29 @@ At the same time:
 
 - shame toward “her head” can be relational/marital;
 - creation “woman from man” can shade into Adam/Eve and husband/wife paradigms;
-- Callon 2024 and Ciampa’s direct summary make marital status a serious contextual issue.
+- Callon 2024 and Massey 2013 make marital status a serious contextual issue.
 
-The word forms themselves do not decide the scope.
+The word forms themselves do not decide every token. The broader discourse, however, now gives an asymmetric contextual result after direct source stress:
+
+- v12 is difficult to keep in rigid husband/wife sense without switching the referent mid-passage;
+- Massey’s wife-focused model itself does not naturally maintain wife-sense at v12;
+- Peters 2021 direct open full text treats the 1 Cor 11 gender categories as men and women rather than a taxonomy of virgin/unmarried/married persons and explicitly preserves women’s worship status across marital status;
+- Peters’ 2020 slavery/status article and 2025 citizen-body trajectory independently pressure exclusion of enslaved or unmarried women from the practical scope;
+- Wang 2022 direct published body likewise reads `γυνή` as women rather than only wives.
+
+These controls do not make `wife` lexically impossible. They make **all-women / sex-class practical scope contextually leading** while preserving a serious marital/status reconstruction.
 
 ## 4.3. v12 is a control
 
 `ὥσπερ γὰρ ἡ γυνὴ ἐκ τοῦ ἀνδρός...` evokes the woman/man creation relation and makes a rigid translation “the wife from the husband” semantically awkward unless the Genesis representative sense is explained.
 
-That is why a model can argue wives are the primary practical addressees without claiming that **every token** must lexically mean wife/husband.
+A wife-focused model can therefore remain viable by arguing that the practical addressees are chiefly wives while some tokens broaden to representative woman/man. But this requires an additional token/scope distinction rather than following one simple lexical gloss throughout.
+
+```text
+V12_RIGID_WIFE_HUSBAND_GLOSS = CONTEXTUALLY_AWKWARD
+WIFE_FOCUSED_PRACTICAL_SCOPE = POSSIBLE_WITH_TOKEN_SCOPE_DISTINCTION
+ALL_WOMEN_SEX_CLASS_SCOPE = FEWER_FORCED_TOKEN_EXCEPTIONS
+```
 
 ## 4.4. Grade
 
@@ -291,8 +318,10 @@ GYNE_WOMAN = A_LEXICAL_OPTION
 GYNE_WIFE = A_LEXICAL_OPTION
 ANER_MAN = A_LEXICAL_OPTION
 ANER_HUSBAND = A_LEXICAL_OPTION
-WIVES_VS_ALL_WOMEN = OPEN_B_C_CONTEXT
+ALL_WOMEN_PRACTICAL_SCOPE = B_LEADING_CONTEXTUAL
+FREE_D_MARRIED_WIVES_PRIMARY_SCOPE = C_SERIOUS_CURRENT_ALTERNATIVE
 ALL_TOKENS_MUST_HAVE_ONE_ENGLISH_GLOSS = false
+ALL_WOMEN_SCOPE_B_LEADING != EVERY_TOKEN_UNAMBIGUOUSLY_NON_MARITAL
 ```
 
 ---
@@ -343,21 +372,38 @@ The subject has authority/control concerning his own will.
 
 These are especially probative because they are Pauline and in the same letter.
 
-## 5.3. Wider NT construction
+## 5.3. Wider biblical Greek construction
 
-Matthew 9:6:
+The dedicated formal/documentary dossier closes an important construction-level distinction.
 
-```text
-ἐξουσίαν ἔχει ὁ υἱὸς τοῦ ἀνθρώπου ἐπὶ τῆς γῆς ...
-```
-
-Revelation 11:6:
+Revelation 14:18 gives the exact support-verb pattern with `ἐπί + genitive`:
 
 ```text
-ἐξουσίαν ἔχουσιν ἐπὶ τῶν ὑδάτων ...
+ὁ ἔχων ἐξουσίαν ἐπὶ τοῦ πυρός
 ```
 
-In these constructions, the grammatical subject possesses/exercises authority, and `ἐπί` specifies a domain/object over which it bears.
+The subject is the bearer of authority, while the `ἐπί` phrase identifies the domain over which the authority is exercised.
+
+Revelation 20:6 has the same lexemes/relation with fronted word order:
+
+```text
+ἐπὶ τούτων ὁ δεύτερος θάνατος οὐκ ἔχει ἐξουσίαν
+```
+
+Related biblical controls include Revelation 2:26 and Daniel OG 3:97; Luke 9:1 has `ἐξουσίαν ἐπὶ πάντα τὰ δαιμόνια` with the accusative.
+
+Matthew 9:6 and Revelation 11:6 likewise preserve the broader authority/domain relation.
+
+Formal result:
+
+```text
+EXOUSIA_EPI_DOMAIN = DIRECTLY_ATTESTED_BIBLICAL_GREEK
+EXACT_ECHO_EPI_GEN = REV_14_18
+FRONTED_EQUIVALENT = REV_20_6
+EXOUSIA_EPI_GEN_HAS_NO_PARALLELS = false
+UNCOMMON = UNGRAMMATICAL = false
+SYNTAX_FORCES_PASSIVE_SIGN = false
+```
 
 ## 5.4. Lexical range outside NT
 
@@ -394,29 +440,42 @@ SIGN_OF_ANOTHER_PERSONS_AUTHORITY = INTERPRETIVE_PARAPHRASE
 ## 5.6. Grade
 
 ```text
-EXOUSIA_WOMAN_SUBJECT = A
-EXOUSIA_NORMAL_SEMANTIC_CLASS_RIGHT/AUTHORITY/CONTROL = A/B_HIGH
+EXOUSIA_WOMAN_SUBJECT = A_SYNTAX
+EXOUSIA_NORMAL_SEMANTIC_CLASS_RIGHT/AUTHORITY/CONTROL = A_B_HIGH
 V10_WOMAN_POSSESSES_OR_BEARER_OF_AUTHORITY = B_HIGH_SEMANTIC_PULL
-EXACT_REFERENT_OF_AUTHORITY = B_C
+EXOUSIA_EPI_DOMAIN_CONSTRUCTION = A_CORPUS_CONSTRUCTION
+V10_HEAD_HEAD_STATE_AS_CONTROL_DOMAIN = B_LEADING_CONSTRUCTION
+EXOUSIA_EXACT_SOCIAL_REALIZATION = B_C
 EXOUSIA_AS_MERE_SIGN_OF_HUSBANDS_AUTHORITY = C_TRADITIONAL_INTERPRETATION_WITH_EXTRA_STEPS
 ```
 
-This is a genuine lexical tightening relative to loose traditional English paraphrases, **not** a complete solution of v10.
+This is a genuine lexical/constructional tightening relative to loose traditional English paraphrases, **not** a complete solution of v10.
+
+Machine boundaries:
+
+```text
+ACTIVE_WOMAN_BEARER_PULL != EXACT_REFERENT_SOLVED
+CONTROL_DOMAIN_B_LEADING != EXACT_OWN_HEAD_COVERING_OR_MINISTRY_IMPLEMENTATION_PROVED
+HEAD_WORN_SIGN_READING != EXOUSIA_LEXICALLY_MEANS_SIGN
+```
 
 ---
 
 # 6. `ἐπὶ τῆς κεφαλῆς` in v10
 
-`ἐπί` with the genitive here naturally locates/references the head: authority “on/over/at the head.”
+`ἐπί` with the genitive here directly relates the authority construction to the head. By itself the phrase does not name a garment or one social implementation.
 
-But the prepositional phrase is semantically underdetermined between possibilities such as:
+The broader `ἐξουσία + ἐπί + domain` corpus, however, makes **head/head-state as the domain of the woman's authority/right/control** the leading constructional relation. A head-worn locative/metonymic sign reading remains a real published counterrelation and must not be erased.
 
-- something worn on the head that expresses/embodies authority;
-- authority/control concerning the head;
-- authority exercised over what happens to the head;
-- metonymic personal/head relation.
+Possible contextual realizations include:
 
-The phrase does not itself answer:
+- control/right concerning her head/head presentation;
+- authority/right to cover or otherwise govern head-state;
+- authority/right connected with praying/prophesying;
+- something worn on the head that expresses/embodies authorized status;
+- another discourse-specific relation.
+
+The construction does not itself answer:
 
 ```text
 IS_EXOUSIA_THE_COVERING?
@@ -425,12 +484,15 @@ IS_EXOUSIA_AUTHORIZATION_TO_MINISTER?
 IS_EXOUSIA_SELF_CONTROL?
 ```
 
-Those are contextual models.
-
 ```text
 EPI_TES_KEPHALES_LOCAL_RELATION = A
-EXACT_RELATION = B_C
+EXOUSIA_EPI_GEN_AUTHORITY_OVER_DOMAIN = A_CORPUS_CONSTRUCTION
+V10_HEAD_HEAD_STATE_AS_CONTROL_DOMAIN = B_LEADING_CONSTRUCTION
+V10_HEAD_WORN_METONYMIC_SIGN_LOCATION = C_SERIOUS_COUNTERRELATION
+EXOUSIA_EXACT_SOCIAL_REALIZATION = B_C
 ```
+
+This relation preference is stronger than bare syntactic subjecthood but weaker than one exact historical/theological implementation.
 
 ---
 
@@ -557,9 +619,11 @@ How much of that is creation-grounded versus social convention remains debated.
 PHYSIS_SEMANTIC_BREADTH = A_CORPUS
 PHYSIS_BIOLOGY_ONLY = REJECTED
 PHYSIS_MERE_ARBITRARY_CUSTOM_ONLY = REJECTED
-PHYSIS_SEXED_NATURALIZED_PROPRIETY_IN_V14 = B_LEADING
+PHYSIS_SEXED_NATURALIZED_PROPRIETY_IN_V14 = B_HIGH_LEADING_PROJECT_COMBINED
 EXACT_BIOLOGY/CULTURE_MIX = B_C
 ```
+
+`B_HIGH_LEADING` is the **project-combined** grade controlled by the dedicated hair/physis primary-social owner. This lexical layer supplies necessary semantic range controls but does not, by dictionary citation alone, close the exact biology/culture mixture.
 
 ---
 
@@ -631,19 +695,62 @@ If hair functions as a natural analogue/corresponding covering that teaches the 
 
 The noun itself cannot decide the discourse relation.
 
-## 12.3. Testicle/physiology theory
+## 12.3. Testicle/physiology theory — Goodacre/Martin debate history
 
-Ancient physiological proposals linking `περιβόλαιον` to genital/testicular ideas do not fit the normal lexical evidence recovered here.
+Troy W. Martin’s 2004 JBL article proposed that `περιβόλαιον` in 1 Cor 11:15 means “testicle” inside an ancient physiological model connecting female hair and reproductive anatomy.
 
-The independent LXX/Hebrews uses are plainly wrap/garment imagery.
+Mark Goodacre’s direct author-hosted JBL article:
 
-Thus:
+> Mark Goodacre, “Does περιβόλαιον Mean ‘Testicle’ in 1 Corinthians 11:15?” *Journal of Biblical Literature* 130.2 (2011): 391–396.
+
+Direct author copy:
+- https://markgoodacre.org/peribolaionJBL.pdf
+
+The PDF was directly inspected. Goodacre’s lexical criticism is especially concrete:
+
+- in Euripides, *Heracles* 1269, `σαρκὸς περιβόλαια` is naturally a clothing/body metaphor — a garb/vesture of flesh — rather than evidence that the lexeme itself means testicle;
+- Achilles Tatius 1.15.2 uses plural `περιβολαί` for the overlapping/embracing of leaves inside erotic garden imagery; erotic context does not create a one-to-one anatomical lexeme;
+- both proposed parallels are plural, whereas Paul has singular `περιβόλαιον`;
+- even on a sexualized metaphorical reading of a whole phrase, that would not establish “testicle” as the normal lexical sense of the noun in isolation.
+
+Goodacre therefore directly strengthens the existing project conclusion that the ordinary lexical case for `testicle` is weak.
+
+But the dispute did **not** end in 2011. JSTOR’s direct JBL issue record verifies:
+
+> Troy W. Martin, “Περιβόλαιον as ‘Testicle’ in 1 Corinthians 11:15: A Response to Mark Goodacre,” *Journal of Biblical Literature* 132.2 (2013): 453–465, DOI `10.2307/23488022`.
+
+The article’s complete 15-page PDF body was subsequently acquired through a public full-text mirror. Publication identity, issue, pagination and DOI are independently controlled by JSTOR; the mirror is therefore used for **body acquisition**, not bibliographic authority. The article’s first printed page was also visually checked in the runtime. Later-page screenshot calls cache-missed, so text-layer closure and visual-page closure remain explicitly distinct.
+
+Martin’s actual rejoinder materially sharpens the history of the debate:
+
+- he relies on modern linguistic/contextual semantics to argue that an immediate context can establish a specialized meaning even when that meaning is not independently listed as an ordinary lexeme sense;
+- he explicitly makes the **specific context of 1 Cor 11:15** more decisive for his proposal than the existence of external lexical parallels;
+- he nevertheless defends his readings of Euripides *Heracles* 1269 and Achilles Tatius rather than abandoning them;
+- his response therefore functions primarily as a defense of a **context-specific/euphemistic physiological reading**, not as new evidence that `περιβόλαιον` ordinarily means “testicle” in Greek.
+
+That distinction resolves an important calibration problem. Goodacre is stronger on the ordinary corpus/lexical-sense question; Martin’s response shifts the burden to whether Paul’s immediate physiological context justifies an otherwise highly specialized euphemistic sense. Reading Martin directly therefore strengthens **debate-history custody**, not the lexical grade of the proposal.
+
+```text
+GOODACRE_2011_DIRECT_FULL_BODY = CLOSED
+GOODACRE_2011_LEXICAL_REBUTTAL = DIRECT_B1_STRONG
+MARTIN_2013_RESPONSE_IDENTITY = DIRECT_JOURNAL_VERIFIED
+MARTIN_2013_FULL_PDF_BODY = CLOSED_TEXT_LAYER
+MARTIN_2013_FIRST_ARTICLE_PAGE_VISUAL_AUTOPSY = CLOSED
+MARTIN_2013_LATER_PAGE_SCREENSHOTS = RUNTIME_CACHE_HOLD
+MARTIN_2013_CONTEXTUAL_SEMANTICS_ARGUMENT = DIRECT_BODY
+MARTIN_2013_EURIPIDES_ACHILLES_DEFENSE = DIRECT_BODY
+PERIBOLAION_TESTICLE_THEORY = D_C_LOW_PUBLISHED_EDGE_MODEL
+GOODACRE_CRITIQUE != DEBATE_HISTORICALLY_CLOSED
+```
+
+The independent LXX/Hebrews corpus plus Goodacre’s direct critique keep ordinary covering/wrap semantics decisively better established as lexical semantics. Martin’s direct reply requires that the specialized physiological reconstruction remain represented as a real published contextual argument rather than erased.
 
 ```text
 PERIBOLAION_TESTICLE_LEXICAL_MEANING = D_C_LOW/NOT_NORMAL_LEXEME_SENSE
+PERIBOLAION_TESTICLE_PHYSIOLOGICAL_RECONSTRUCTION = D_C_LOW_PUBLISHED_EDGE_MODEL
 ```
 
-A physiology theory would have to be a highly specialized metaphorical reconstruction, not a dictionary meaning of the word.
+A physiology theory therefore has to succeed as a highly specialized contextual/metaphorical reconstruction, not as the normal dictionary sense of the word.
 
 ---
 
@@ -747,7 +854,7 @@ The following questions remain impossible to settle by dictionary citation:
 WHAT_EXACT_OBJECT_IS_OMITTED_IN_V4?
 IS_V4_SPECIFICALLY_CAPITE_VELATO?
 DOES_EVERY_GYNE_MEAN_WIFE?
-WHAT_EXACTLY_IS_EXOUSIA_IN_V10?
+WHAT_EXACT_SOCIAL_REALIZATION_DOES_EXOUSIA_HAVE_IN_V10?
 WHY_ANGELS?
 HOW_MUCH_OF_PHYSIS_IS_CREATED_ORDER_VS_SOCIALIZED_PROPRIETY?
 DOES_ANTI_IN_V15_SIGNAL_REPLACEMENT_OR_ANALOGY_IN_THIS_ARGUMENT?
@@ -770,6 +877,8 @@ Any answer that claims “the Greek word literally settles it” must be checked
 “γυνή literally means wife here, so all-women is impossible”
 “γυνή literally means woman here, so wives-only is impossible”
 “ἐξουσία itself means a sign of the husband’s authority”
+“ἐξουσία + ἐπί has no authority-over-domain parallels”
+“the control-domain construction proves one exact social implementation”
 “φύσις can only mean biology”
 “φύσις can only mean social custom”
 “περιβόλαιον normally means testicle”
@@ -780,6 +889,7 @@ Any answer that claims “the Greek word literally settles it” must be checked
 
 ```text
 “the lexical/syntactic evidence favors...”
+“the constructional corpus favors..., while the exact social realization remains open”
 “the word permits..., while context makes ... leading”
 “this is an interpretive paraphrase, not the overt syntax”
 “this model adds an unstated semantic step”
@@ -798,29 +908,38 @@ V4_MATERIAL_COVERING = B_HIGH
 HAIR_ONLY = C_SERIOUS_ALTERNATIVE_WITH_HIGHER_LEXICAL_BURDEN
 
 KEPHALE_LEADERSHIP/PROMINENCE_METAPHOR_POSSIBLE = A_CORPUS
-KEPHALE_HEADSHIP_AUTHORITY_11_3 = B_LEADING
+KEPHALE_RELATIONAL_HEADSHIP_PROMINENCE_REPRESENTATION_11_3 = B_LEADING
+KEPHALE_EXACT_NARROW_AUTHORITY_OVER_11_3 = B_C
 KEPHALE_SOURCE_ONLY = C_VIABLE
 
 GYNE_WOMAN_AND_WIFE_BOTH_LEXICAL = A
 ANER_MAN_AND_HUSBAND_BOTH_LEXICAL = A
-WIVES_VS_ALL_WOMEN = OPEN_B_C
+ALL_WOMEN_PRACTICAL_SCOPE = B_LEADING_CONTEXTUAL
+FREE_D_MARRIED_WIVES_PRIMARY_SCOPE = C_SERIOUS_CURRENT_ALTERNATIVE
 
 EXOUSIA_WOMAN_SUBJECT = A_SYNTAX
 EXOUSIA_RIGHT/AUTHORITY/CONTROL_SEMANTIC_CLASS = A_B_HIGH
 EXOUSIA_ACTIVE_WOMAN_BEARER_SEMANTIC_PULL = B_HIGH
-EXOUSIA_EXACT_REFERENT = B_C
+EXOUSIA_EPI_DOMAIN_CONSTRUCTION = A_CORPUS_CONSTRUCTION
+EXOUSIA_HEAD_HEAD_STATE_AS_CONTROL_DOMAIN = B_LEADING_CONSTRUCTION
+EXOUSIA_EXACT_SOCIAL_REALIZATION = B_C
 SIGN_OF_HUSBANDS_AUTHORITY_PARAPHRASE = C_WITH_EXTRA_SEMANTIC_STEPS
 
 PHYSIS_SEMANTIC_BREADTH = A
 PHYSIS_BIOLOGY_ONLY = REJECTED
 PHYSIS_CUSTOM_ONLY = REJECTED
-PHYSIS_SEXED_NATURALIZED_PROPRIETY = B_LEADING
+PHYSIS_SEXED_NATURALIZED_PROPRIETY = B_HIGH_LEADING_PROJECT_COMBINED
+EXACT_BIOLOGY_CULTURE_MIX = B_C
 
 KOMAO_LONG_HAIR = A
 KOME_HAIR = A
 PERIBOLAION_WRAP/COVERING/GARMENT = A
 ANTI_SUBSTITUTION/CORRESPONDENCE_RELATION = A
-PERIBOLAION_TESTICLE_THEORY = D_C_LOW
+PERIBOLAION_TESTICLE_THEORY = D_C_LOW_PUBLISHED_EDGE_MODEL
+GOODACRE_2011_DIRECT_FULL_BODY = CLOSED
+MARTIN_2013_RESPONSE_IDENTITY = DIRECT_JOURNAL_VERIFIED
+MARTIN_2013_FULL_PDF_BODY = CLOSED_TEXT_LAYER
+MARTIN_2013_CONTEXTUAL_SEMANTICS_ARGUMENT = DIRECT_BODY
 ```
 
 No change to `PUBLICATION_HOLD`.
@@ -833,10 +952,10 @@ The future Research-derived Russian layer must avoid silently resolving debated 
 
 Recommended research-rendering policy:
 
-- v3 `κεφαλή` — retain **«глава»** in main research rendering, with expandable semantic node `руководство/первенство ↔ источник/происхождение`;
+- v3 `κεφαλή` — retain **«глава»** in main research rendering, with expandable semantic node `отношение главенства/первенства/репрезентации ↔ источник/происхождение`; do not silently translate the noun itself as one narrow phrase «власть над»;
 - v4 — do not insert a noun absent from Greek without marking it: e.g. **«имея [что-либо] на/с головы»** in literal analytical layer, while normal Russian translation may say «с покрытой головой»;
 - vv5,13 — **«с непокрытой головой»** accurately represents the cover/uncover lexical field;
-- v10 — favor a transparent rendering close to **«женщина должна иметь власть/право на [своей] голове»**, with the exact referent left as a disputed node rather than pre-translating “sign of submission”;
+- v10 — favor a transparent rendering close to **«женщина должна иметь власть/право на [своей] голове»**, with a note that the construction has a leading control-domain relation while the exact social referent remains disputed; do not pre-translate it as “sign of submission”;
 - v14–15 — preserve `природа`, `носить длинные волосы`, `волосы`, `покров/покрытие` as distinct lexical nodes;
 - v15 `ἀντί` — annotate “вместо / как соответствующий покров” rather than hide the interpretive choice.
 
@@ -846,5 +965,81 @@ This is **Research translation guidance only**, not Product/UI implementation.
 PRODUCT_WRITE = false
 UI_IMPLEMENTATION = false
 SITE_PUBLICATION = false
+PUBLICATION_HOLD = true
+```
+
+---
+
+# 20. Heon-Wook Park 1990 — direct J-STAGE body countercontrol
+
+Official journal object:
+
+> Heon-Wook Park (朴 憲郁), “礼拝共同体における κεφαλή の問題―Iコリント11:3–12について,” 1990, vol.18, pp.29–42, DOI `10.24758/jsnts.18.0_29`.
+
+The official J-STAGE article object and its OA PDF are directly controlled. The downloaded PDF is a 14-page scan (`693584` bytes) with a usable hidden text layer; article pp.29, 33 and 40 were additionally checked against rendered page images. This closes body acquisition while keeping direct-quotation promotion conservative.
+
+```text
+PARK_1990_OFFICIAL_JSTAGE_OBJECT = CLOSED_DIRECT
+PARK_1990_OFFICIAL_PDF = CLOSED_DIRECT_693584_BYTES_14_PAGES
+PARK_1990_FULL_BODY = CLOSED_DIRECT_TEXT_LAYER
+PARK_1990_VISUAL_PAGE_CHECK = P29_P33_P40
+PARK_1990_DIRECT_QUOTE_PROMOTION = HOLD_UNLESS_EXACT_JAPANESE_TRANSCRIPTION_RECHECKED
+```
+
+Park directly distinguishes the head covering from hair. In the opening argument he treats the disputed female head-state as removal/loss of a material covering and describes the relevant covering as an `himation`-type garment drawn over the head/shoulders. Hair remains a separate sex-differentiating datum rather than the sole physical referent of the covering language.
+
+```text
+PARK_MATERIAL_HEAD_COVERING = DIRECT_AUTHOR_BODY
+PARK_HAIR_DISTINCT_FROM_HEAD_COVERING = DIRECT_AUTHOR_BODY
+PARK_HAIR_ONLY_WHOLE_PASSAGE = REJECTED_IN_AUTHOR_MODEL
+PARK_PUBLIC_FEMALE_PRAYER_PROPHECY = AFFIRMED_IN_AUTHOR_MODEL
+```
+
+His proposed local trigger is intentionally weaker than the material identification. Park considers ecstatic/spiritual elevation as a possible reason a covering could fall or be removed as unnecessary, but he does not claim that deliberate imitation of neighboring cultic practice is established by Paul's argument. That mechanism therefore belongs only to the historical reconstruction layer.
+
+```text
+PARK_EXACT_CORINTH_TRIGGER = RECONSTRUCTION_LAYER
+PARK_ECSTATIC_REMOVAL_MECHANISM = AUTHOR_HYPOTHESIS_NOT_TEXTUAL_FACT
+PARK_PAGAN_CULT_IMITATION = NOT_ESTABLISHED_BY_AUTHOR
+```
+
+Park's `κεφαλή` model is also a useful anti-reduction control. He distinguishes literal head in vv4–5 from metaphorical v3 and argues that, in the woman/man relation, Paul does not call the man the woman's `κύριος`; rather, the man functions as her origin/first in the Genesis 2 relation. At the same time Park explicitly retains an asymmetrical upper/lower ordering and later describes Christ's headship with both priority/superiority and origin dimensions. His position therefore cannot be reduced either to pure `source-only` or pure `authority-only` lexicography.
+
+```text
+PARK_KEPHALE_LITERAL_V4_5 = DIRECT_AUTHOR_BODY
+PARK_KEPHALE_V3_ORIGIN_FIRSTNESS = DIRECT_AUTHOR_BODY
+PARK_MAN_NOT_CALLED_WOMANS_KYRIOS = DIRECT_AUTHOR_BODY
+PARK_KEPHALE_ASYMMETRICAL_ORDERING = DIRECT_AUTHOR_BODY
+PARK_KEPHALE_SOURCE_ONLY_SHORTHAND = REJECTED_AS_INCOMPLETE_AUTHOR_MODEL
+PARK_KEPHALE_AUTHORITY_ONLY_SHORTHAND = REJECTED_AS_INCOMPLETE_AUTHOR_MODEL
+```
+
+Park reads vv11–12 as a real christological relativization of one-sided female subordination “in the Lord,” while explicitly denying that this simply abolishes the creation/natural order appealed to earlier. That is congruent with the project's existing distinction between real creation asymmetry and mandatory mutual interdependence.
+
+```text
+PARK_VV11_12_MUTUAL_RELATIVIZATION = DIRECT_AUTHOR_BODY
+PARK_VV11_12_CANCEL_CREATION_ORDER = NO_IN_AUTHOR_MODEL
+```
+
+Finally, Park's note on v10 surveys competing `ἐξουσία`/angel readings and reports Theissen's Gen 6 / Testament of Reuben interpretation. It is not Park's own developed lexical solution of `ἐξουσία`; it therefore supplies no basis for changing the current v10 grade.
+
+```text
+PARK_V10_THEISSEN_WATCHER_READING = REPORTED_SECONDARY_OPTION
+PARK_V10_EXOUSIA_EXACT_REFERENT = NOT_RESOLVED_BY_PARK
+```
+
+Project calibration after direct body:
+
+```text
+MATERIAL_COVERING = B_HIGH_LEADING_UNCHANGED
+HAIR_ONLY = C_SERIOUS_ALTERNATIVE_UNCHANGED
+KEPHALE_RELATIONAL_HEADSHIP_PROMINENCE_REPRESENTATION_11_3 = B_LEADING_UNCHANGED
+KEPHALE_EXACT_NARROW_AUTHORITY_OVER_11_3 = B_C_UNCHANGED
+KEPHALE_SOURCE_ONLY = C_VIABLE_UNCHANGED
+MUTUAL_INTERDEPENDENCE_11_11_12 = A_UNCHANGED
+EXOUSIA_HEAD_HEAD_STATE_AS_CONTROL_DOMAIN = B_LEADING_CONSTRUCTION_UNCHANGED
+EXOUSIA_EXACT_SOCIAL_REALIZATION = B_C_UNCHANGED
+EXACT_CORINTH_TRIGGER = RECONSTRUCTION_LAYER_UNCHANGED
+CORE_GRADE_REVERSALS = 0
 PUBLICATION_HOLD = true
 ```
