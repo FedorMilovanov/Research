@@ -357,6 +357,156 @@ def draft_paths() -> list:
                   for x in glob.glob(str(ROOT / "ИСКУПЛЕНИЕ" / "synthesis" / "drafts") + "/*.md"))
 
 
+# ---- дуга VI (круг 81): матрица исчерпываемости — четыре числа на статью печатает гейт ----------
+# Подпись запрета = механический признак нарушения слага корневого `doNot`. Признак без отрицания
+# в окне ±100 знаков — нарушение; отрицание («не», «запрещено», «ошибочно»…) рядом с признаком —
+# текст о запрете, а не запрет: статьи дуги V перечисляют запреты в своих примечаниях, и сверка,
+# которая путает перечисление с нарушением, не выдержала бы первого же чтения. Честность границы
+# объявлена в поле `метод` блока: подпись ловит нарушение-маркер, её отсутствие — условие, а не
+# свидетельство; ручной обход дуги V лежит в примечаниях статей.
+DONOT_SIGNS = {
+    "pirate-copyrighted-pdfs": r"(?i)(libgen|z-lib|zlib\.|annas[- ]archive|kickerbook|1lib\.|rutracker[^\n]{0,40}\.pdf)",
+    "start-series-with-TULIP": r"(?im)^#{1,3} [^\n]*\bTULIP\b",
+    "claim-limited-atonement-proved": r"(?i)(доказано|доказывает|доказал|доказательств)[^.\n]{0,80}(ограниченн\w*\s+искуплени|искуплени[^\n]{0,40}ограниченн)|(ограниченн\w*\s+искуплени)[^.\n]{0,80}(доказано|доказывает|доказан)",
+    "implement-product-html-this-wave": r"(?i)product[- ]html",
+    "change-research-root-authority": r"(?i)(смен|замен|отмен)\w*\s+[^.\n]{0,60}(00_RESEARCH_CURRENT_AUTHORITY|корнев\w*\s+авторитет|root[- ]authority)",
+    "claim-murray-closed-1Tim2-or-2Pet2-1": r"(?i)мюрре\w*[^.\n]{0,120}(закрыл|закрыто|закроет)[^.\n]{0,80}(1\s*Тим|2\s*Пет)|(закрыл|закрыто)[^.\n]{0,80}(1\s*Тим\s*2|2\s*Пет\s*2[:.]?1)[^.\n]{0,120}мюрре",
+    "search-schaff-dort-english-column-again": r"(?i)(повтор\w*\s+поиск|заново\s+ищ|снова\s+ищ|искать\s+заново)[^.\n]{0,80}(shaфф|schaff)|(shaфф|schaff)[^.\n]{0,80}(повтор\w*\s+поиск|заново\s+ищ)",
+    "retry-drive-wcf-pdf-text-extraction": r"(?i)wcf[^.\n]{0,100}(извлеч\w*\s+текст|текст\w*\s+извлеч|extract\w*\s+text)|извлеч\w*\s+текст[^.\n]{0,60}wcf",
+    "quote-dort-ii-3-as-'single'-instead-of-'only'-from-the-latin-unica": r"(?i)\bsingle\b",
+    "quote-dort-rejectio-ignoring-that-the-latin-is-the-full-text-and-scott-is-a-translation": r"(?i)(?<![а-яёa-z])(скотт|scott)(?![а-яёa-z])[^.\n]{0,120}(rejectio|отвержени\w*)|(rejectio|отвержени\w*)[^.\n]{0,120}(?<![а-яёa-z])(скотт|scott)(?![а-яёa-z])",
+    "fetch-third-party-full-text-pdfs-of-murray-raa": r"(?i)(murray|мюрре\w*)[^\n]{0,80}\.pdf|\.pdf[^\n]{0,80}(murray|мюрре\w*)",
+    "retry-internet-archive-search-inside-for-redemptionaccomp00murr": r"(?i)redemptionaccomp00murr[^\n]{0,80}(archive\.org|internet\s+archive|поиск)|(?:archive\.org|internet\s+archive)[^\n]{0,80}redemptionaccomp00murr",
+    "cite-murray-raa-page-numbers-as-if-verified-in-the-book-itself": r"(?i)(мюрре\w*|murray|\bRAA\b)[^.\n]{0,50}\b(с\.|стр\.|p\.)\s*\d|\b\d{1,3}\s*(?:стр\.|с\.)[^.\n]{0,40}(мюрре\w*|murray|\bRAA\b)",
+    "quote-second-helvetic-english-from-schaff-volume-iii": r"(?i)(second\s+helvetic|втор\w+\s+гельвет\w+|helvetic)[^.\n]{0,120}(schaff|shaфф|volume|том\s+(?:iii|3))",
+}
+# составная подпись: два признака вместе и отсутствие третьего (сокращение Скотта обязано быть
+# названо рядом с Rejectio — иначе цитата без оговорки о сокращении и есть нарушение)
+DONOT_COMPOUND = {
+    "quote-scott-1841-rejectio-iv-without-noting-the-abridgement": (
+        r"(?<![а-яёa-z])скотт(?![а-яёa-z])|\bscott\b",
+        r"(?i)rejectio\b",
+        r"(?i)сокращ|abridg",
+    ),
+}
+DONOT_NEGATION = re.compile(r"(?i)(не\s|запрещ|ошибочн|неправильн|под запретом)")
+
+
+def exhaust_matrix_scan(corp: dict) -> dict:
+    """Дуга VI: четыре числа на статью, которые печатает гейт, а не автор статьи.
+
+    Прочитано — строка таблицы опор с распознанным классом читаемости (A1–A3/B1–B2 по шкале
+    реестра массы); нечитаемо — строка без распознанного класса (для гейта не названо, по какому
+    изданию её читать; сюда же падает C-класс, и это слово проверяет приёмка: ни одной статьи,
+    где C-класс стоит в утверждении, а не в оговорке). Открытые конфликты — C-id статьи, чей
+    первый токен статуса не RESOLVED и не RESOLVED-BY-TEXT (запись без машиночитаемого статуса
+    считается открытой: закрытой её никто не назвал). Запреты — каждый слаг корневого `doNot`
+    обязан иметь подпись: сверка подписей с самим списком возвращается числом и входит в приёмку,
+    потому что «подписи нет» — это сверка, которую нельзя больше пройти молча."""
+    root_donot = list(corp.get("doNot") or [])
+    signed = set(DONOT_SIGNS) | set(DONOT_COMPOUND)
+    miss = sorted(set(root_donot) - signed)
+    extra = sorted(signed - set(root_donot))
+    statuses, section = {}, ""
+    for ln in LEDGER.read_text(encoding="utf-8").splitlines():
+        m_hd = re.match(r"^## C-(\d+)\.", ln)
+        if m_hd:
+            section = m_hd.group(1)
+            statuses.setdefault(section, None)
+            continue
+        m_st = re.match(r"^- \*\*Статус:\*\* `([A-Z][A-Z-]*)`", ln)
+        if m_st and section and statuses.get(section) is None:
+            statuses[section] = m_st.group(1)
+    закрытые = ("RESOLVED", "RESOLVED-BY-TEXT")
+    неизвестные, статьи = set(), {}
+    штрафыНеРазрешено = 0
+    for lan in SUBLANES:
+        for path in sorted((ROOT / "ИСКУПЛЕНИЕ" / lan / "data").glob("*corpus*.json")):
+            block = (json.loads(path.read_text(encoding="utf-8")).get("claimRegister20261026") or {})
+            штрафыНеРазрешено += int(block.get("неРазрешено") or 0)
+    for pth in draft_paths():
+        name = Path(pth).name
+        text = Path(ROOT / pth).read_text(encoding="utf-8")
+        строкОпор = прочитано = нечитаемо = безЛокатора = сКлассомC = 0
+        lines, in_tab = text.split("\n"), False
+        for ln in lines:
+            if ln.startswith("| Опора | Класс"):
+                in_tab = True
+                continue
+            if in_tab:
+                if not ln.startswith("|"):
+                    in_tab = False
+                    continue
+                if ln.startswith("|---"):
+                    continue
+                cells = [c.strip() for c in ln.strip().strip("|").split("|")]
+                if len(cells) < 4:
+                    continue
+                строкОпор += 1
+                cls, loc = cells[1], cells[2]
+                if re.match(r"(?:A[123]|B[12])\b", cls):
+                    прочитано += 1
+                else:
+                    нечитаемо += 1
+                if re.match(r"C\b", cls):
+                    сКлассомC += 1
+                if loc.strip().lower() in ("", "—", "-", "–", "нет", "n/a"):
+                    безЛокатора += 1
+        cids = sorted(set(re.findall(r"\bC-(\d{2})\b", text)))
+        for cid in cids:
+            if cid not in statuses:
+                неизвестные.add(cid)
+        открытые = [c_ for c_ in cids if statuses.get(c_) not in закрытые]
+        нарушеноПодписей = 0
+        for slug in root_donot:
+            if slug in DONOT_COMPOUND:
+                p1, p2, p3 = DONOT_COMPOUND[slug]
+                if re.search(p1, text) and re.search(p2, text) and not re.search(p3, text):
+                    нарушеноПодписей += 1
+                continue
+            pat = DONOT_SIGNS.get(slug)
+            if not pat:
+                continue    # miss уже посчитан и входит в приёмку — молчать здесь незачем
+            for m in re.finditer(pat, text):
+                window = text[max(0, m.start() - 100): m.end() + 100]
+                if DONOT_NEGATION.search(window):
+                    continue
+                нарушеноПодписей += 1
+        статьи[name] = {
+            "строкОпор": строкОпор, "прочитано": прочитано, "нечитаемо": нечитаемо,
+            "безЛокатора": безЛокатора, "сКлассомC": сКлассомC,
+            "конфликтыВсего": cids, "конфликтыОткрытые": открытые,
+            "запретовПроверено": len(root_donot) - len([s for s in root_donot
+                                                        if s not in DONOT_SIGNS and s not in DONOT_COMPOUND]),
+            "запретовНарушений": нарушеноПодписей,
+        }
+    union_open = sorted({c_ for a in статьи.values() for c_ in a["конфликтыОткрытые"]},
+                        key=lambda x: int(x))
+    итог = {
+        "статей": len(статьи),
+        "строкОпор": sum(a["строкОпор"] for a in статьи.values()),
+        "прочитано": sum(a["прочитано"] for a in статьи.values()),
+        "нечитаемо": sum(a["нечитаемо"] for a in статьи.values()),
+        "открытыхУникальных": len(union_open),
+        "открытые": union_open,
+        "запретовПар": len(root_donot) * len(статьи),
+        "нарушений": sum(a["запретовНарушений"] for a in статьи.values()),
+    }
+    приёмка = {
+        "статей": len(статьи),
+        "строкОпорБезЛокатора": sum(a["безЛокатора"] for a in статьи.values()),
+        "статейСКлассомC": len([a for a in статьи.values() if a["сКлассомC"]]),
+        "доводовБезЛокатора": штрафыНеРазрешено,
+        "нарушенийЗапретов": итог["нарушений"],
+        "ссылокНаНеизвестныеЗаписи": len(неизвестные),
+        "запретовБезПодписи": len(miss),
+        "подписейБезЗапрета": len(extra),
+        "неПодписано": miss, "лишниеПодписи": extra,
+        "неизвестныеC": sorted(неизвестные),
+    }
+    return {"статьи": статьи, "итог": итог, "приёмка": приёмка}
+
+
 def mirror_audit(corp: dict) -> dict:
     """Записи `driveMirrors.corpusSnapshotRound*` обязаны сходиться со своим blob'ом, а обещанный
     разрыв с деревом — равняться текущему размеру файла минус размер слепка. Это то, что круг 62
@@ -589,6 +739,7 @@ PLANTED_GUARDS = {
     "ledger_counts": ("гейт", "conflict ledger"),
     "tree_counts": ("сам", "ЛОВУШКА ДЕРЕВА"),
     "check_table_91": ("сам", "ЛОВУШКА ТАБЛИЦЫ 9.1"),
+    "exhaust_matrix_scan": ("гейт", "правило 29"),
     # Найдена правкой 17: сверка, которая называлась вне соглашения и десять кругов обходила
     # реестр. Посаженного отделения под неё нет — почему это дыра, а не упущение, написано в
     # самой причине: она обязана называться, а не выглядеть как «всё объявлено».
@@ -1156,6 +1307,7 @@ def registry_numbers(corp: dict, idx_file: dict):
     out["sha"] = sha
     out["mirror"] = mirror_audit(corp)
     out["draftPaths"] = draft_paths()
+    out["matrix"] = exhaust_matrix_scan(corp)
     out["json"] = json_leaf_scan()
     out["out"] = out_of_scope_mixed()
     out["env"] = env_scan(corp)
@@ -1257,6 +1409,31 @@ def apply_corpus(corp: dict, n: dict) -> dict:
                             "перечисляло один файл из каталога и не называло себя) — список и сверка снимаем "
                             "обходом scripts/atonement_reshoot_state.py, читает и требует --check")
     syn["draftsMeasuredAt"] = now
+
+    # дуга VI (круг 81): блок матрицы создаёт и наполняет этот же писатель — ключи и числа
+    # приходят обходом n["matrix"], руками поле не заполняется и не правится
+    m = n["matrix"]
+    corp["exhaustivenessMatrix20261028"] = {
+        "чтоЭто": ("матрица исчерпываемости (дуга VI): четыре числа на статью — прочитано, "
+                   "нечитаемо, открытые конфликты, проверенные запреты — печатает гейт "
+                   "(scripts/atonement_reshoot_state.py --write), а не автор статьи; строки "
+                   "матрицы документа 18_ §14 — тот же вывод"),
+        "метод": ("строки опоры = таблица «Опора | Класс | Локатор | HOLD» черновика; прочитано = "
+                  "класс читаемости A1–A3/B1–B2 (шкала реестра массы), нечитаемо = класс не "
+                  "распознан (для гейта не названо, по какому изданию читать; сюда же падает "
+                  "C-класс, что и проверяет приёмка); открытые конфликты = C-id статьи, чей первый "
+                  "токен статуса не RESOLVED и не RESOLVED-BY-TEXT; запреты = каждый слаг корневого "
+                  "doNot имеет механическую подпись нарушения, признак без отрицания в окне ±100 "
+                  "знаков — нарушение, отрицание рядом — текст о запрете (ручной обход дуги V лежит "
+                  "в примечаниях статей; подпись ловит маркер, её отсутствие — условие, не "
+                  "свидетельство)"),
+        "статьи": m["статьи"],
+        "итог": m["итог"],
+        "приёмка": m["приёмка"],
+        "recheckCommand": ("python3 -B scripts/validate_atonement_corpus_integrity.py "
+                           "(правило 29) && python3 -B scripts/atonement_reshoot_state.py --check"),
+        "measuredAt": now,
+    }
 
     sf = corp["integrityGate"]["scopeOfMeasurementRules"]["stampedFieldsPerRegistry"]
     sf.update(dict(sorted(n["stamp"].items())))
@@ -1484,6 +1661,32 @@ def doc_numbers(corp: dict, n: dict) -> list:
              + f"{plural(ndonot, 'исследовательский запрет', 'исследовательских запрета', 'исследовательских запретов')} "
              + "в `doNot`.",
          ])),
+        # дуга VI (круг 81): строки матрицы исчерпываемости — генератор, не автор статьи
+        *[
+            (r"(?m)^\| `" + re.escape(bn) + r"` \| .*\|$",
+             "| `" + bn + "` | " + str(a["строкОпор"]) + " | " + str(a["прочитано"]) + " | "
+             + str(a["нечитаемо"]) + " | " + str(len(a["конфликтыОткрытые"])) + " ("
+             + (", ".join("C-" + c_ for c_ in a["конфликтыОткрытые"]) or "—") + ") | "
+             + f"{a['запретовПроверено']}/{len(DONOT_SIGNS) + len(DONOT_COMPOUND)} | "
+             + str(a["запретовНарушений"]) + " |")
+            for bn, a in sorted(n["matrix"]["статьи"].items())
+        ],
+        (r"(?m)^\| \*\*итог\*\* \| .*\|$",
+         "| **итог** | " + str(n["matrix"]["итог"]["строкОпор"]) + " | "
+         + str(n["matrix"]["итог"]["прочитано"]) + " | " + str(n["matrix"]["итог"]["нечитаемо"]) + " | "
+         + str(n["matrix"]["итог"]["открытыхУникальных"]) + " уникальных ("
+         + ", ".join("C-" + c_ for c_ in n["matrix"]["итог"]["открытые"]) + ") | "
+         + f"{n['matrix']['итог']['запретовПар']}/{n['matrix']['итог']['запретовПар']} | "
+         + str(n["matrix"]["итог"]["нарушений"]) + " |"),
+        (r"(?m)^Приёмка матрицы \(дуга VI\):.*$",
+         "Приёмка матрицы (дуга VI): строк опоры без локатора — "
+         + str(n["matrix"]["приёмка"]["строкОпорБезЛокатора"])
+         + "; статей, где C-класс в утверждении, — " + str(n["matrix"]["приёмка"]["статейСКлассомC"])
+         + "; доводов без локатора в реестрах — " + str(n["matrix"]["приёмка"]["доводовБезЛокатора"])
+         + "; нарушений запретов — " + str(n["matrix"]["приёмка"]["нарушенийЗапретов"])
+         + "; ссылок на несуществующие записи леджера — "
+         + str(n["matrix"]["приёмка"]["ссылокНаНеизвестныеЗаписи"])
+         + "; запретов без подписи — " + str(n["matrix"]["приёмка"]["запретовБезПодписи"]) + "."),
     ]
 
 
@@ -1636,6 +1839,12 @@ def diff_state_scan(corp: dict, idx_file: dict, n: dict):
         drift.append(f"synthesis.drafts: в реестре {len(_syn.get('drafts') or [])} путей, обход даёт "
                      f"{len(n.get('draftPaths') or [])} — поле обязано зеркалить каталог (п. 3.14; "
                      "переснимается apply_corpus тем же обходом)")
+    mx = corp.get("exhaustivenessMatrix20261028") or {}
+    nmx = n["matrix"]
+    for _mk in ("статьи", "итог", "приёмка"):
+        if mx.get(_mk) != nmx.get(_mk):
+            drift.append(f"exhaustivenessMatrix20261028.{_mk}: реестр и обход разошлись — блок "
+                         "печатает --write, сверяет этот шаг (дуга VI); руками не правится")
     msc = corp["integrityGate"]["mixedScriptCheck"]
     for k in ("ownOccurrences", "scannedFiles", "foreignOccurrences"):
         if msc["jsonLeafScan"].get(k) != n["json"][k]:
