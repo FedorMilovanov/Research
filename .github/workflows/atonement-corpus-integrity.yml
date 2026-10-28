@@ -143,6 +143,7 @@ jobs:
           grep -q 'не зовётся в теле якоря' scripts/atonement_reshoot_state.py
           grep -q 'сверка определена в теле корня' scripts/atonement_reshoot_state.py
           grep -q 'корень зовётся извне' scripts/atonement_reshoot_state.py
+          grep -q 'блок регистрируется до пересъёма' scripts/atonement_round_close.py
           grep -q 'def verdicts' scripts/atonement_history_perturbation_probe.py
       # Мерж обязан быть зелёным не только на ветке: проверка накладывается на дерево main в worktree.
       # Иначе «аддитивный» слой мог бы внести в каноническое дерево падения по чужим файлам, и первый
