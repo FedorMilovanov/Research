@@ -335,44 +335,46 @@ esac
 
 echo "--- ловушка правила, смягчённого кругом 65 ---"
 tout=$(timeout 300 python3 -B scripts/atonement_reshoot_state.py --rule-trap 2>&1); tc=$?
+s29_before=$n
 if [ "$tc" = 0 ]; then
   # Правка 19: счётчики вердикта сверяются с живыми таблицами исходника, а не с литералом
   # строки. Литерал «без него 1», посаженный кругом 67, отказал это доказательство на честном
   # изменении счётчика: шаг обязан краснеть на рассогласовании вердикта и таблицы, а не на
-  # любой правке, которая сдвинула число. Четыре вещи обязаны сойтись: арифметика вердикта
-  # (сверки = посаженные + без стража, дыры перечислены по именам), якори (якорей = исключениям
-  # и равно таблице SCAN_EXEMPT), обход (сверок = живому scan_functions) и ломка (поломок =
-  # длине SELF_MUTATIONS, вердикт «все пойманы») — плюс прежние три вердикта о существовании.
-  reg=$(printf '%s\n' "$tout" | grep -m1 '^РЕЕСТР СТРАЖЕЙ:')
-  lom=$(printf '%s\n' "$tout" | grep -m1 '^ЛОМКА ИСХОДНИКА:')
-  nums=$(printf '%s' "$reg" | sed -n 's/.*сверок \([0-9][0-9]*\), с посаженным нарушением \([0-9][0-9]*\), без него \([0-9][0-9]*\).*/\1 \2 \3/p')
-  exanc=$(printf '%s' "$reg" | sed -n 's/.*вне соглашения объявлено \([0-9][0-9]*\), якорей \([0-9][0-9]*\) —.*/\1 \2/p')
-  kn=$(printf '%s' "$lom" | sed -n 's/.*: \([0-9][0-9]*\) поломок, все пойманы.*/\1/p')
-  holes_names=$(printf '%s' "$reg" | sed -n 's/.*без него [0-9][0-9]* (\([^)]*\)).*/\1/p')
-  if [ -z "$reg" ] || [ -z "$lom" ] || [ -z "$nums" ] || [ -z "$exanc" ] || [ -z "$kn" ]; then
+  # любой правке, которая сдвинула число. Все переменные шага — с префиксом s29_: счётчик
+  # проверок принадлежит say, и шаг, тронувший его, обязан быть пойман перед своим вердиктом.
+  s29_reg=$(printf '%s\n' "$tout" | grep -m1 '^РЕЕСТР СТРАЖЕЙ:')
+  s29_lom=$(printf '%s\n' "$tout" | grep -m1 '^ЛОМКА ИСХОДНИКА:')
+  s29_nums=$(printf '%s' "$s29_reg" | sed -n 's/.*сверок \([0-9][0-9]*\), с посаженным нарушением \([0-9][0-9]*\), без него \([0-9][0-9]*\).*/\1 \2 \3/p')
+  s29_exanc=$(printf '%s' "$s29_reg" | sed -n 's/.*вне соглашения объявлено \([0-9][0-9]*\), якорей \([0-9][0-9]*\) —.*/\1 \2/p')
+  s29_kn=$(printf '%s' "$s29_lom" | sed -n 's/.*: \([0-9][0-9]*\) поломок, все пойманы.*/\1/p')
+  s29_holes_names=$(printf '%s' "$s29_reg" | sed -n 's/.*без него [0-9][0-9]* (\([^)]*\)).*/\1/p')
+  if [ -z "$s29_reg" ] || [ -z "$s29_lom" ] || [ -z "$s29_nums" ] || [ -z "$s29_exanc" ] || [ -z "$s29_kn" ]; then
     say "ловушка правил" "вердикт неполон, из него не читаются счётчики: $(printf '%s' "$tout" | tail -1 | cut -c1-64)" fail
   else
-    n=${nums%% *}; rest=${nums#* }; held=${rest%% *}; holes=${rest#* }
-    exn=${exanc% *}; anc=${exanc#* }
-    live=$(python3 -B -c 'import importlib.util as u; s = u.spec_from_file_location("rs", "scripts/atonement_reshoot_state.py"); m = u.module_from_spec(s); s.loader.exec_module(m); print(len(m.scan_functions()), len(m.SCAN_EXEMPT), len(m.SELF_MUTATIONS))')
-    livescan=${live%% *}; rest2=${live#* }; liveex=${rest2%% *}; livemut=${rest2#* }
-    bad=""
-    [ "$n" = "$((held + holes))" ] || bad="сверки ($n) не равны сумме посаженных ($held) и без стража ($holes)"
-    if [ "$holes" -gt 0 ]; then
-      hcnt=$(printf '%s' "$holes_names" | awk -F', ' '{print NF}')
-      [ -n "$holes_names" ] && [ "$hcnt" = "$holes" ] || bad="${bad:+$bad; }дыр объявлено $holes, а имена не сходятся: «$holes_names»"
+    s29_n=${s29_nums%% *}; s29_rest=${s29_nums#* }; s29_held=${s29_rest%% *}; s29_holes=${s29_rest#* }
+    s29_exn=${s29_exanc% *}; s29_anc=${s29_exanc#* }
+    s29_live=$(python3 -B -c 'import importlib.util as u; s = u.spec_from_file_location("rs", "scripts/atonement_reshoot_state.py"); m = u.module_from_spec(s); s.loader.exec_module(m); print(len(m.scan_functions()), len(m.SCAN_EXEMPT), len(m.SELF_MUTATIONS))')
+    s29_livescan=${s29_live%% *}; s29_rest2=${s29_live#* }; s29_liveex=${s29_rest2%% *}; s29_livemut=${s29_rest2#* }
+    s29_bad=""
+    [ "$s29_n" = "$((s29_held + s29_holes))" ] || s29_bad="сверки ($s29_n) не равны сумме посаженных ($s29_held) и без стража ($s29_holes)"
+    if [ "$s29_holes" -gt 0 ]; then
+      s29_hcnt=$(printf '%s' "$s29_holes_names" | awk -F', ' '{print NF}')
+      [ -n "$s29_holes_names" ] && [ "$s29_hcnt" = "$s29_holes" ] || s29_bad="${s29_bad:+$s29_bad; }дыр объявлено $s29_holes, а имена не сходятся: «$s29_holes_names»"
     fi
-    [ "$exn" = "$anc" ] || bad="${bad:+$bad; }якорей ($anc) не равно исключениям ($exn)"
-    [ "$exn" = "$liveex" ] || bad="${bad:+$bad; }исключения ($exn) не равны таблице SCAN_EXEMPT ($liveex)"
-    [ "$n" = "$livescan" ] || bad="${bad:+$bad; }сверки ($n) не равны живому обходу ($livescan)"
-    [ "$kn" = "$livemut" ] || bad="${bad:+$bad; }поломок ($kn) не равно длине таблицы самополомки ($livemut)"
-    printf '%s' "$tout" | grep -q "ЛОВУШКА ПРАВИЛА ДАТ: ловит незаконный порядок" || bad="${bad:+$bad; }нет вердикта правила дат"
-    printf '%s' "$tout" | grep -q "ЛОВУШКА ТАБЛИЦЫ 9.1" || bad="${bad:+$bad; }нет вердикта ловушки таблицы"
-    printf '%s' "$tout" | grep -q "ЛОВУШКА ДЕРЕВА" || bad="${bad:+$bad; }нет вердикта ловушки дерева"
-    if [ -z "$bad" ]; then
-      say "ловушка правил: счётчики вердикта равны таблицам исходника (сверок $n, исключений $exn, якорей $anc, поломок $kn); правило дат, таблица и дерево в вердиктах есть" "да"
+    [ "$s29_exn" = "$s29_anc" ] || s29_bad="${s29_bad:+$s29_bad; }якорей ($s29_anc) не равно исключениям ($s29_exn)"
+    [ "$s29_exn" = "$s29_liveex" ] || s29_bad="${s29_bad:+$s29_bad; }исключения ($s29_exn) не равны таблице SCAN_EXEMPT ($s29_liveex)"
+    [ "$s29_n" = "$s29_livescan" ] || s29_bad="${s29_bad:+$s29_bad; }сверки ($s29_n) не равны живому обходу ($s29_livescan)"
+    [ "$s29_kn" = "$s29_livemut" ] || s29_bad="${s29_bad:+$s29_bad; }поломок ($s29_kn) не равно длине таблицы самополомки ($s29_livemut)"
+    printf '%s' "$tout" | grep -q "ЛОВУШКА ПРАВИЛА ДАТ: ловит незаконный порядок" || s29_bad="${s29_bad:+$s29_bad; }нет вердикта правила дат"
+    printf '%s' "$tout" | grep -q "ЛОВУШКА ТАБЛИЦЫ 9.1" || s29_bad="${s29_bad:+$s29_bad; }нет вердикта ловушки таблицы"
+    printf '%s' "$tout" | grep -q "ЛОВУШКА ДЕРЕВА" || s29_bad="${s29_bad:+$s29_bad; }нет вердикта ловушки дерева"
+    if [ "$n" != "$s29_before" ]; then
+      # та же болезнь, что лечил круг 69: переменная шага незаметно заняла имя общего счётчика
+      say "ловушка правил" "шаг переписал счётчик проверок ($s29_before -> $n) — переменные шага обязаны быть с префиксом s29_" fail
+    elif [ -z "$s29_bad" ]; then
+      say "ловушка правил: счётчики вердикта равны таблицам исходника (сверок $s29_n, исключений $s29_exn, якорей $s29_anc, поломок $s29_kn); правило дат, таблица и дерево в вердиктах есть" "да"
     else
-      say "ловушка правил" "код 0, но счётчики разошлись: $bad" fail
+      say "ловушка правил" "код 0, но счётчики разошлись: $s29_bad" fail
     fi
   fi
 else
