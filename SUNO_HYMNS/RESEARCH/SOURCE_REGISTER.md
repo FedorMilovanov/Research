@@ -1633,3 +1633,56 @@ The Greek lane is registered in the same file as the Dutch one because it is the
 - HOLDs: RIGHTS_HOLD
 - Supports: Локаторы: антидикомариане — 78:1; «Certain women there in Arabia have introduced this absurd teaching from Thracia: how they offer up a sacrifice of bread rolls in the name of the ever-Virgin Mary, and all partake of this bread» — 78:13; «It is not right to honor the saints beyond their due» — 78:23; «Honor Mary, but let the Father, the Son, and the Holy Spirit be worshiped, but let no one worship Mary… even though Mary is most beautiful and holy and venerable, yet she is not to be worshiped» — 79:1, 4.; Даты: Епифаний 315–403, «Панарион» 374–377; движение коллиридиан датируется 350–450.; Отдельно — две крайности IV века: чрезмерное возвеличивание Марии (коллиридиане) и её уничижение (антидикомариане).
 - Limits / caveats: Полемический католический источник: он приводит Епифания как обличителя идолопоклонства, но сам чтит Марию и спорит с протестантами. Цитаты с локаторами сверены с греческим текстом (см. SRC-PHOS-EPIPHANIUS-PANARION-78) и совпали по смыслу; перевод Williams не открывался.
+
+
+## SRC-PHOS-SHOEMAKER-2008-KOLLYRIDIANS — Stephen J. Shoemaker, «Epiphanius of Salamis, the Kollyridians, and the Early Dormition Narratives: The Cult of the Virgin in the Fourth Century», Journal of Early Christian Studies 16.3 (2008): 371–401, DOI 10.1353/earl.0.0185 — аннотация прочитана, полный текст за пейволлом
+
+- URL: https://muse.jhu.edu/article/248925/summary
+- Source role/type: Научная статья в рецензируемом журнале; ключевое возражение против обычного прочтения Епифания
+- Evidence class: B1
+- Access state: LINK_ONLY
+- Locator state: COARSE_LOCATOR_ONLY
+- Rights state: PERMISSION_REQUIRED
+- Publication state: REFERENCE
+- HOLDs: ARCHIVE_HOLD, RIGHTS_HOLD
+- Supports: **Аннотация (издания статьи):** «The so-called Kollyridians of Epiphanius's Panarion are commonly regarded in modern scholarship as a group of Christian goddess worshipers who believed in the Virgin Mary's divinity. Yet a careful reading of Epiphanius's account, with close attention to his rhetoric, suggests instead that the Kollyridians merely were offering Mary a kind of veneration that during the late fourth century was increasingly directed toward Christian saints».; «The Six Books apocryphon, an early Dormition narrative from the fourth century, enjoins on its readers ritual practices almost identical with what Epiphanius ascribes to the Kollyridians, yet without any indication of belief in Mary's divinity».; «Comparison of this apocryphon with Epiphanius's description of the Kollyridians further suggests that the Kollyridian rituals do not necessarily amount to goddess worship or belief in Mary's divinity. Moreover… Epiphanius probably knew the Six Books apocryphon… and his account of the Kollyridians likely responds in part to its early Dormition traditions».
+- Limits / caveats: Прочитана только аннотация (MUSE отдаёт капчу; ResearchGate и academia.edu не открывались). Полный текст, его аргументация и ссылки не проверены: `ARCHIVE_HOLD`. Выводы статьи использовать в тексте можно только с прямой оговоркой, что читана аннотация.
+
+## SRC-PHOS-KATEUSZ-2017 — Ally Kateusz, «Collyridian Déjà Vu: The Trajectory of Redaction of the Markers of Mary's Liturgical Leadership», Journal of Feminist Studies in Religion 29.2 (2017) — PDF на сайте автора; прочитан чанк 0 из 8
+
+- URL: https://allykateusz.org/wp-content/uploads/2017/05/JFSR-29.2-Ally-Kateusz-Collyridian-Deja-Vu.pdf
+- Source role/type: Научная статья; излагает аргумент Шумейкера о «Шестикнижном сказании» и называет противоположную позицию
+- Evidence class: B1
+- Access state: PARTIAL_OBJECT
+- Locator state: COARSE_LOCATOR_ONLY
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: «The Six Books contains a liturgical manual that details a parallel ritual for offering bread to the name of Mary on the very altar of the church. Shoemaker calls this ritual «almost identical» to the collyridian bread offering ritual».; По Шумейкеру, Six Books — «the only known source from the ancient church to actually prescribe regular, ritual offerings of bread on Mary's behalf».; «Epiphanius is the earliest-known Christian author to discuss how Mary might have died — and he did so only when writing about these women».; **Противоположная позиция названа:** традиционный взгляд относит сказания об Успении ко времени после Халкидонского собора (451), «a position still fiercely defended in some circles, most recently by Simon Mimouni» (Mimouni, Les traditions anciennes sur la Dormition et l'Assomption de Marie, Brill, 2011).; Дополнительно: Фёрстер 2006 издал коптский лист IX в. и argued на основании изображения Марии, молящейся и проповедующей с апостолами, что текст восходит ко второй половине II в.
+- Limits / caveats: Прочитан чанк 0 из 8. Статья стоит в феминистской исследовательской перспективе и аргументирует за священническое служение Марии в ранних текстах — это её собственная гипотеза, отдельная от тезисов Шумейкера, и смешивать их нельзя.
+
+## SRC-PHOS-SHOEMAKER-LECTURE-PDF — Stephen Shoemaker, «Devotion to Mary in Early Christianity» — PDF-текст лекции (поздняя редакция, с подстрочными ссылками), размещённый на logos.org.ge; прочитан чанк 0 из 9
+
+- URL: https://www.logos.org.ge/files/files/Stephan%20Shoemaker.pdf
+- Source role/type: Научный доклад в письменной форме; поздняя редакция той же лекции, что прочитана в части 3
+- Evidence class: B1
+- Access state: PARTIAL_OBJECT
+- Locator state: COARSE_LOCATOR_ONLY
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: Поздняя редакция (автор говорит «some thirty years ago now» и ссылается на книгу, изданную «a little over five years ago»), с подстрочным аппаратом, которого нет в стенограмме 2017 г.; Называет имена, безымянные в лекции 2017 г.: формула «the figure of Mary emerged like a comet…» принадлежит **Brian Daley**; привлекается Питер Браун с его «Cult of the Saints»: «Mary's total absence from Brown's seminal study on the Cult of the Saints, I would note, is itself quite telling».; Окно исследования то же: «since there is virtually no evidence of any devotion to Mary prior to 150 CE (or, for that matter, to any other figure besides Jesus)»; практический охват — вторая половина II в. — первая половина V в.; Повторён тезис: собор 431-го «could somehow have generated the cult of the Virgin with such apparent velocity seems, frankly, rather preposterous»; и «almost no evidence of Marian cult before the middle of the fourth century».
+- Limits / caveats: Прочитан только чанк 0 из 9: вступление. Основной разбор свидетельств (Протоевангелие, «Книга покоя Марии», «Шестикнижное сказание», Иерусалимский гимнал, Епифаний) в прочитанном не покрыт; он известен мне по стенограмме 2017 г. (см. SRC-PHOS-SHOEMAKER-LECTURE-2017), а не по этому файлу.
+
+## SRC-PHOS-EPIPHANIUS-PANARION-79 — Stephen Boyce, «Epiphanius and the Case for Icons» (Substack, 24 октября 2026) — разбор «Панариона» 79 с точными локаторами и греческими терминами τιμή / προσκυνέω, по переводу Williams (Brill, 2013)
+
+- URL: https://stephenboyce333.substack.com/p/epiphanius-and-the-case-for-icons
+- Source role/type: Разбор первоисточника богословом (PhD, Louisiana Baptist University and Seminary); источник для локаторов и греческой терминологии границы у Епифания
+- Evidence class: C
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: «In Panarion 79, Epiphanius affirms her holiness and says she should be honored (**τιμή**), while rejecting **worship** (**προσκυνέω**) of her» (сноска 2).; **Panarion 79.7.5:** «Let Mary be held in honor, but let the Father, Son, and Holy Spirit be worshiped. Let no one worship Mary».; Локаторы: 79.4.4–6; 79.7.5; 75.7–8; издание — Frank Williams, trans., *Panarion*, Books II and III, second revised edition (Brill, 2013).; Контекст, важный против упрощения: в «Панарионе» 75, против Аэрия, Епифаний **защищает** молитвы и поминовение усопших — патриархов, пророков, апостолов, мучеников — с оговоркой, что Христос остаётся отличен от всякого человека; в «Панарионе» 3 он выводит языческое поклонение из почитания изображений у гробниц.
+- Limits / caveats: Блог (Substack), а не научная статья; прочитан чанк 0 из 3. Цитаты с локаторами не сверены с печатным переводом Williams — `ARCHIVE_HOLD`. Автор разбирает спор об иконах, а не вопрос о почитании Марии: его суждения о Марии — попутные.
