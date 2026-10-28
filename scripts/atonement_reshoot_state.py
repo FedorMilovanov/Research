@@ -348,6 +348,15 @@ def ledger_counts() -> dict:
 
 
 
+def draft_paths() -> list:
+    """Полное зеркало каталога черновиков: пути относительно корня, в сортировке обхода.
+    Дуга III (п. 3.14): поле `synthesis.drafts` в под-регистре перечисляло один файл из каталога и
+    не объявляло назначения — либо отсталое зеркало, либо список «на память». С этого круга его
+    пишет и сверяет тем же обходом тот же скрипт, что и леджер-строку документа."""
+    return sorted(Path(x).relative_to(ROOT).as_posix() if Path(x).is_absolute() else x
+                  for x in glob.glob(str(ROOT / "ИСКУПЛЕНИЕ" / "synthesis" / "drafts") + "/*.md"))
+
+
 def mirror_audit(corp: dict) -> dict:
     """Записи `driveMirrors.corpusSnapshotRound*` обязаны сходиться со своим blob'ом, а обещанный
     разрыв с деревом — равняться текущему размеру файла минус размер слепка. Это то, что круг 62
@@ -603,6 +612,8 @@ SCAN_EXEMPT = {
     "plural": "помощник: русская плюрализация счётчиков в сообщениях и вердиктах; якорь `doc_numbers`",
     "git": "обёртка: чтение git через subprocess; сравнивает ничего, результат отдаёт вызывающему; якорь `sha_audit`",
     "stamped_count": "измеритель: сколько штампованных полей в узле; сравнение — в diff_state_scan и дока-якорях; якорь `registry_numbers`",
+    "draft_paths": "измеритель: полное зеркало каталога synthesis/drafts (дуга III, п. 3.14); число берёт агрегатор, "
+                   "сверка — в diff_state_scan, запись — в apply_corpus; якорь `registry_numbers`",
     "sha_token_paths": "измеритель: фильтр токенов правила 20; сравнение — в sha_audit; якорь `sha_audit`",
     "mixed_words": "измеритель: строки смешанного письма с вырезанными цитатами; ловит их проверка вызывающего; якорь `out_of_scope_mixed`",
     "out_of_scope_mixed": "измеритель: то же для чужого периметра (поле outOfScope); сравнение — в diff_state_scan; якорь `registry_numbers`",
@@ -1144,6 +1155,7 @@ def registry_numbers(corp: dict, idx_file: dict):
     sha = sha_audit(corp)
     out["sha"] = sha
     out["mirror"] = mirror_audit(corp)
+    out["draftPaths"] = draft_paths()
     out["json"] = json_leaf_scan()
     out["out"] = out_of_scope_mixed()
     out["env"] = env_scan(corp)
@@ -1225,6 +1237,26 @@ def apply_corpus(corp: dict, n: dict) -> dict:
     if key in rn:
         extra["переснятоПрогоном"] = now
     rn[key] = extra
+
+    # дуга III (п. 3.10/3.14): два поля под-регистра, которые аудит нашёл снятыми «по памяти»,
+    # теперь пишет и сверяет этот обход. Запись идёт сюда несмотря на ENV_OWNED: поля не новые
+    # счётчики, а существующие числа леджера — дуга III подключает их к обходу; авторство
+    # расширения — §6 дуги III, владелец подтверждает этим заказом.
+    syn = corp["synthesis"]
+    cr = syn["conflictRange"]
+    cr["ledgerEntries"] = lc["записей"]
+    cr["ledgerMaxIndex"] = int(lc["последний"])
+    cr["measuredAt"] = now
+    if "atonement_reshoot_state.py" not in str(cr.get("method", "")):
+        cr["method"] = (f"{cr.get('method', '')}; с круга {CIRCLE} (дуга III) ledgerEntries/ledgerMaxIndex "
+                        "переснимает scripts/atonement_reshoot_state.py --write тем же обходом леджера, "
+                        "каким их сверяет шаг --check; прежний ручной съём 2026-10-22 сохранён выше как "
+                        "история метода")
+    syn["drafts"] = n["draftPaths"]
+    syn["draftsPurpose"] = ("назначение: полное зеркало каталога synthesis/drafts (п. 3.14: прежнее значение "
+                            "перечисляло один файл из каталога и не называло себя) — список и сверка снимаем "
+                            "обходом scripts/atonement_reshoot_state.py, читает и требует --check")
+    syn["draftsMeasuredAt"] = now
 
     sf = corp["integrityGate"]["scopeOfMeasurementRules"]["stampedFieldsPerRegistry"]
     sf.update(dict(sorted(n["stamp"].items())))
@@ -1590,6 +1622,20 @@ def diff_state_scan(corp: dict, idx_file: dict, n: dict):
                  ("строкРеестраМассы", nr), ("очередейДобычиМассы", nq)):
         if k in cl and int(cl[k]) != v:
             drift.append(f"countsLive.{k}: {cl[k]!r}, обход {v}")
+    # дуга III: поля под-регистра, подключённые к обходу, сверяются здесь же — сравнение, не запись
+    _syn = corp.get("synthesis") or {}
+    _cr = _syn.get("conflictRange") or {}
+    if _cr.get("ledgerEntries") != n["ledger"]["записей"]:
+        drift.append(f"synthesis.conflictRange.ledgerEntries: реестр {_cr.get('ledgerEntries')!r}, обход "
+                     f"{n['ledger']['записей']} (поле переснимается apply_corpus — писать через "
+                     "scripts/atonement_reshoot_state.py --write)")
+    if _cr.get("ledgerMaxIndex") != int(n["ledger"]["последний"]):
+        drift.append(f"synthesis.conflictRange.ledgerMaxIndex: реестр {_cr.get('ledgerMaxIndex')!r}, обход "
+                     f"{int(n['ledger']['последний'])} (тот же путь записи, что у ledgerEntries)")
+    if _syn.get("drafts") != n.get("draftPaths"):
+        drift.append(f"synthesis.drafts: в реестре {len(_syn.get('drafts') or [])} путей, обход даёт "
+                     f"{len(n.get('draftPaths') or [])} — поле обязано зеркалить каталог (п. 3.14; "
+                     "переснимается apply_corpus тем же обходом)")
     msc = corp["integrityGate"]["mixedScriptCheck"]
     for k in ("ownOccurrences", "scannedFiles", "foreignOccurrences"):
         if msc["jsonLeafScan"].get(k) != n["json"][k]:
