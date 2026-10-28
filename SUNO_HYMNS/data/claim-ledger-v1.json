@@ -3567,12 +3567,16 @@
    "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
    "sourceIds": [
     "SRC-PHOS-SHOEMAKER-LECTURE-2017",
-    "SRC-PHOS-FULTON-BROWN-2017"
+    "SRC-PHOS-FULTON-BROWN-2017",
+    "SRC-PHOS-SHOEMAKER-LECTURE-PDF"
    ],
    "holds": [],
    "notes": [
     "Записано как предохранитель: в тексте для канала ссылка на «языческие корни» без доказательства будет повторением того самого рефлекса, который назван по имени ведущим специалистом.",
-    "Честная формула: parallels with goddess traditions exist and are studied, но параллели не объясняют возникновения; monocausal explanations fail."
+    "Честная формула: parallels with goddess traditions exist and are studied, но параллели не объясняют возникновения; monocausal explanations fail.",
+    "Имена названы: Jonathan Z. Smith и Peter Brown показали, что ссылки на «языческое» происхождение обычаев восходят largely к протестантской инвективе против Рима.",
+    "Эверил Камерон: «Pagan syncretism may have played a part, but in my view it was a minor one; competition would be a better model».",
+    "Шумейкер: почитание Марии — «one variation… of the nascent cult of the saints», а не заимствованный извне культ богини."
    ],
    "limits": [
     "Это оценка Шумейкера, а не нейтральный обзор: он участник спора и заинтересованная сторона.",
@@ -3626,6 +3630,52 @@
    "limits": [
     "79-я глава прочитана не по печатному изданию, а в цитатах с локаторами; Williams (Brill, 2013) и Holl (GCS) не открыты.",
     "Источник локаторов — блог, хотя и с точными ссылками; `ARCHIVE_HOLD` снят быть не может до сверки."
+   ],
+   "level": "series",
+   "projectLevel": true
+  },
+  {
+   "id": "CLM-PHOS-DORMITION-ORIGINS-PALESTINE",
+   "topic": "Сказания об Успении — древнейшие свидетельства молитвы к Марии, и они из той же Палестины, что наш гимнал",
+   "claim": "Сказаний об Успении сохранилось более тридцати версий до середины VII в. на девяти древних языках; по Шумейкеру, есть «something close to a consensus», что две древнейшие традиции восходят «by the fourth century at the very latest», и лишь **Жюжи и Mimouni** — исключения (у Mimouni — вера в происхождение традиций из Халкидона, «an assumption that unfortunately is not in evidence»). Главное для карточки: эти традиции «first took shape in Palestine, where they developed in close association with **the emergent veneration of Mary in the Hagiopolite liturgies**» — то есть **в том же иерусалимском богослужении, откуда наш Иадгари**. И нарастание почитания видно внутри корпуса: в древнейшем «Liber Requiei Mariae» (III в. или раньше по внутренним признакам) апостолы не оказывают Марии особого почтения при встрече, она не творит чудес и боится смерти, — а в «Шестикнижном сказании» середины IV в. уже предписан чин приношения хлеба на престоле в её имя. **Оговорка: датировка и консенсус изложены Шумейкером, стороной в споре; Mimouni 2011 держится противоположного.**",
+   "claimStatus": "REPORTED_NOT_INDEPENDENTLY_VERIFIED",
+   "sourceIds": [
+    "SRC-PHOS-SHOEMAKER-DORMITION-APOCRYPHA",
+    "SRC-PHOS-SHOEMAKER-LECTURE-2017"
+   ],
+   "holds": [
+    "ARCHIVE_HOLD"
+   ],
+   "notes": [
+    "Прочитаны два чанка из двенадцати; разбор «Шестикнижного сказания» и прямых слов Епифания о коллиридианах не читан firsthand.",
+    "Совпадение контекста — самое сильное из найденных: не «где-то в христианском мире», а один город и одно богослужение (храм Воскресения).",
+    "Статья Шумейкера — позиция стороны: он последовательно отстаивает ранние датировки, и это надо оговаривать в тексте рубрики."
+   ],
+   "limits": [
+    "Сказания прочитаны только в пересказе и цитатах; ни одного текста Успения я не читал целиком.",
+    "«Hagiopolite liturgies» в статье отождествлены с иерусалимским богослужением по смыслу; уточнение по изданию Метревели не сделано."
+   ],
+   "level": "series",
+   "projectLevel": true
+  },
+  {
+   "id": "CLM-PHOS-NORELLI-INTERCESSION-CAUSE",
+   "topic": "Норелли: сказания об Успении возникли из веры в ходатайство Марии — того самого, о котором наш гимн",
+   "claim": "Шумейкер передаёт аргумент Энрико Норелли (*Marie des apocryphes*, 2009, 132–6): «it was most likely **belief in Mary's intercession** that first gave rise to these early Christian accounts of Mary's miraculous departure from this world». Если это так, то молитва о ходатайстве и сказания об исходе Марии из этого мира — **не причина и следствие по очереди, а два побега от одного корня**: текст «Под твою милость прибегаем…» и позднейшие легенды об Успении питаются одной верой. Для исследовательской рубрики это рабочая гипотеза, а не вывод: я читал её в пересказе, а не у Норелли, и не читал ни одного сказания полностью.",
+   "claimStatus": "REPORTED_NOT_INDEPENDENTLY_VERIFIED",
+   "sourceIds": [
+    "SRC-PHOS-SHOEMAKER-DORMITION-APOCRYPHA"
+   ],
+   "holds": [
+    "ARCHIVE_HOLD"
+   ],
+   "notes": [
+    "Источник тезиса — пересказ в статье Шумейкера; Норелли 2009 (с. 129–142) не открыт.",
+    "Проверка гипотезы потребовала бы чтения самих сказаний и сопоставления их с молитвенными текстамиIV–V вв., включая наш."
+   ],
+   "limits": [
+    "Тезис Норелли не проверен по первоисточнику и не является общепринятым.",
+    "Формулировка «два побега от одного корня» — моя интерпретация, а не цитата."
    ],
    "level": "series",
    "projectLevel": true
