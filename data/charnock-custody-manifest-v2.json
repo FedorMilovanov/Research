@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 2,
+  "contractId": "CHARNOCK-CUSTODY-V2",
+  "createdAtUtc": "2026-10-28T00:00:00Z",
+  "createdBy": "Arena coding agent",
+  "branch": "arena/587d9ca0-research",
+  "scope": "Bounded Charnock research material collection after substantive revisions (wave90–93). Not biography prose, publication approval, full Research checkout, or all historical originals.",
+  "authorityRole": "corpus-specific-supporting-only",
+  "custodyState": "MANIFEST_SNAPSHOT_PENDING_INDEPENDENT_READBACK",
+  "evidenceClass": "C",
+  "accessState": "FULL_OBJECT_VERIFIED",
+  "locatorState": "EXACT_LOCATOR_VERIFIED",
+  "rightsState": "PRIVATE_STUDY_ONLY",
+  "publicationState": "BLOCKED",
+  "holds": [
+    "PUBLICATION_HOLD",
+    "ARCHIVE_HOLD",
+    "RIGHTS_HOLD",
+    "EVIDENCE_HOLD"
+  ],
+  "evidenceClassBoundary": "C applies to this operational custody manifest, not the independent historical source records.",
+  "previousReceipt": {
+    "contractId": "CHARNOCK-HANDOFF-V1",
+    "wave": "wave40",
+    "date": "2026-10-26",
+    "sourceArchiveSha256": "3bda1d7693e02aebaf59313cad2029a37534c914e542445965b0d27751c9bc41",
+    "destinationSha256Readback": "3bda1d7693e02aebaf59313cad2029a37534c914e542445965b0d27751c9bc41",
+    "verifiedAtUtc": "2026-10-25T22:08:34Z",
+    "note": "Предыдущая квитанция wave40 не переименована и не annulled; новый манифест создан отдельно после содержательных изменений 00/16."
+  },
+  "substantiveChangesSinceWave40": [
+    "CONFLICT-1 разрешён: переезд 1649, fellowship 1650 (Wood 1691, CCEL) — §§21.149–21.150 в файле 16",
+    "CONFLICT-8 закрыт: оригинальная пагинация проповеди XIX подтверждена в обоих изданиях (1674: стр. 422; 1676: стр. 471–502) — §21.140 в файле 16",
+    "CONFLICT-9 закрыт: выпуск с проповедью XIX подтверждён как 1674 (1-е изд.) и 1676 (2-е изд., Thomas Cockerill) — §21.141 в файле 16",
+    "CONFLICT-11 разрешён: Parsons-издание 1815–1816 — §§21.147–21.148 в файле 16",
+    "CONFLICT-14 обновлён: Фаулер служил в Southwark (не Crosby Hall), Morning Exercise at Cripplegate 1674–6; Crosby Hall congregation в Maze Pond, Southwark только с 1769; Fowler мог основать congregуцию в Unicorn Yard — §21.151 в файле 16",
+    "ED-02 иностранные локаторы найдены: Lingendes (BSB bsb10460464, GB HlB2O8shVrgC), Raynaud (IA imgmar7233MiscellaneaOpal, GB Xmfn6iPWzcUC с.416–423 «dominio»), Daillé (PRDL a_id=4, GB) — §21.153 в файле 16; fresh retrieval заблокирован SSL-ограничением sandbox",
+    "Навигация обновлена в файле 00 (§§CONFLICT-8/9/14)",
+    "Редакционный план обновлён: data/charnock-series-editorial-plan-v1.json (digitalCollectionReview, scripturePurposeReview)",
+    "Новые аудит-скрипты: copyist_transmission, folio_apparatus, mercy_distinctions, reception_locus (+ тесты)"
+  ],
+  "fileManifest": {
+    "БИОГРАФИИ/Стивен Чарнок/00_README_AND_NAVIGATION.md": {
+      "bytes": 141099,
+      "sha256": "bce8d38772c7debf86ea032027da920f9f2da4e56e5092cb9998224cff13b646",
+      "changedSinceWave40": true
+    },
+    "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md": {
+      "bytes": 882070,
+      "sha256": "273278778733bd5d7d2e72e897ea87d39583ff37cd6464620f01646b815f4d3b",
+      "changedSinceWave40": true
+    },
+    "data/charnock-series-editorial-plan-v1.json": {
+      "bytes": 2463413,
+      "sha256": "d0cce0079a49bf1979ada16bf8cf26dc8d22ea000f4fd67f38e6f30a2b97ae5b",
+      "changedSinceWave40": true
+    },
+    "scripts/audit_charnock_series_plan.py": {
+      "bytes": 38254,
+      "sha256": "8b185b75e54315764de1ff36a69e111d6a9a93af21e29dd23d53cb0caf9b116c",
+      "changedSinceWave40": true
+    },
+    "scripts/audit_charnock_source_use.py": {
+      "bytes": 17597,
+      "sha256": "7e3989054096ea689d2bf949fc2cac425c2984de4de611dc3c26306d44acbb8d",
+      "changedSinceWave40": true
+    },
+    "scripts/audit_charnock_cartesian_definition.py": {
+      "bytes": 16526,
+      "sha256": "49825908a0e3a5d4046bbaecc7c64cc45a45f12db7c562d866b08238c8e386fb",
+      "changedSinceWave40": true
+    },
+    "scripts/test_audit_charnock_cartesian_definition.py": {
+      "bytes": 5999,
+      "sha256": "c6441891c4bcaa1ad67c821a66d3c67153689158ffab6b7be123572f4e1ccee8",
+      "changedSinceWave40": true
+    },
+    "scripts/audit_charnock_copyist_transmission.py": {
+      "bytes": 5789,
+      "sha256": "b623c508d034a94e1455456ab9a7a86826ebe0b577a5cb1b102d27972aab746d",
+      "changedSinceWave40": true
+    },
+    "scripts/audit_charnock_folio_apparatus.py": {
+      "bytes": 7988,
+      "sha256": "d71a45e11a513705f851244efe598f45e668f02fdf7dbf0d0924d5530b932f2c",
+      "changedSinceWave40": true
+    },
+    "scripts/audit_charnock_mercy_distinctions.py": {
+      "bytes": 10653,
+      "sha256": "46540bdf6a6b42f812543a4871a573a2c7e5b52862f225795c4ff177a58a9694",
+      "changedSinceWave40": true
+    },
+    "scripts/audit_charnock_reception_locus.py": {
+      "bytes": 19352,
+      "sha256": "4f00cb07e78ad25024f5d05ec56a2ae88e1f4d04770ef88fbab64738aa07c060",
+      "changedSinceWave40": true
+    },
+    "scripts/test_audit_charnock_copyist_transmission.py": {
+      "bytes": 2690,
+      "sha256": "bf4e1fe77ac40e7e34a01891950b7efd4f461c897ad5a1e994194c447cd487dd",
+      "changedSinceWave40": true
+    },
+    "scripts/test_audit_charnock_folio_apparatus.py": {
+      "bytes": 3114,
+      "sha256": "d6f4294902b4318e5178fa4663a84921519e10b11bfabb1e8f6a9b08da7c8353",
+      "changedSinceWave40": true
+    },
+    "scripts/test_audit_charnock_mercy_distinctions.py": {
+      "bytes": 5046,
+      "sha256": "17eb312ffda1817083cccdaa9b309523da4ab9bd0b292d7f22c2b1e00b5ac049",
+      "changedSinceWave40": true
+    },
+    "scripts/test_audit_charnock_reception_locus.py": {
+      "bytes": 8686,
+      "sha256": "4cb777838b65be0e78442d29690fb181f53680e70b7ffe1f09af782445862eb8",
+      "changedSinceWave40": true
+    }
+  },
+  "manifestSha256": "bfd61a59a4d3ddbc03e514720c80ca5dc199f200887d5a20259f5e6d081be0eb",
+  "totalBytes": 3628276,
+  "fileCount": 15,
+  "destinationProvider": "Google Drive (independent readback COMPLETED for wave40 receipt v1)",
+  "destinationObjectId": "1BqtxmWCH0b4I1lcr7wrKfDqygK1WrHH2",
+  "destinationPath": "charnock-handoff-receipt-v1_wave40_2026-10-26.json",
+  "destinationBytes": 14377,
+  "destinationSha256Readback": "3a0fc08101e59a645ed5d302c52c70c8d9aabf95dabfd94d94a03a21d5e71163",
+  "verifiedAtUtc": "2026-10-28T00:00:00Z",
+  "verifiedBy": "Arena coding agent",
+  "verificationMethod": "google_drive__download_file + local sha256sum comparison",
+  "verificationBoundary": "Независимый readback выполнен для квитанции wave40 v1 (sha256 совпал: 3a0fc081...). Локальные SHA256 файлов манифеста v2 (00/16/скрипты) пересчитаны после правок §21.140–21.153; их загрузка на Drive и readback остаются следующим шагом для полного закрытия ED-08.",
+  "nextAction": "Загрузка обновлённых файлов манифеста v2 (00, 16, скрипты) на Drive и destination SHA256 readback для каждого; старая квитанция wave40 не переименована."
+}

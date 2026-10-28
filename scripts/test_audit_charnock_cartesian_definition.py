@@ -98,5 +98,44 @@ class CartesianDefinitionTests(unittest.TestCase):
                 verified_bytes(ROOT,'PG4391')
 
 
+
+class LatinTargetOcrTests(unittest.TestCase):
+    setUp=CartesianDefinitionTests.setUp
+    check=CartesianDefinitionTests.check
+    rejects=CartesianDefinitionTests.rejects
+
+    def followup(self):return self.review['latinTargetOcrFollowUp']
+    def test_two_targets_not_first_edition(self):
+        self.assertEqual(self.check()['cartesianLatinTargetOcrWitnesses'],2)
+        self.assertFalse(self.check()['cartesianLatinPageImagesVerified'])
+    def test_no_first_edition(self):
+        self.followup()['firstEditionVerified']=True;self.rejects()
+    def test_no_page_images(self):
+        self.followup()['pageImagesAcquired']=True;self.rejects()
+    def test_no_whole_book_from_capture(self):
+        self.followup()['wholeBooksAcquired']=True;self.rejects()
+    def test_no_normalised_latin(self):
+        self.followup()['normalisedLatinPrepared']=True;self.rejects()
+    def test_truncated_marker_required(self):
+        self.followup()['byteVerifiedReading']['LAT1722']['captureMarkedTruncated']=False;self.rejects()
+    def test_preserve_both_targets(self):
+        self.followup()['byteVerifiedReading'].pop('LAT1672');self.rejects()
+    def test_actual_context_embedding(self):
+        row=self.followup()['byteVerifiedReading']['LAT1722']['targetIX']
+        row['startCharacterZeroBased']+=1;row['endCharacterExclusive']+=1;self.rejects()
+    def test_no_silent_ocr_repair(self):
+        row=self.followup()['byteVerifiedReading']['LAT1722']['targetIX']
+        row['text']=row['text'].replace('inrclligo','intelligo');self.rejects()
+    def test_source_pin_not_mutable(self):
+        self.followup()['sources']['LAT1672']['sha256']='0'*64;self.rejects()
+    def test_exact_span_not_clean_latin(self):
+        from audit_charnock_thoughts import digest
+        span=self.followup()['observations'][1]['spans'][0]
+        span['text']='intelligo illa omnia quae nobis consciis';span['sha256']=digest(span['text']);self.rejects()
+    def test_no_dependence_or_publication_promotion(self):
+        for key in ['directDependenceVerified','charnockOwnedEditionVerified','independentReview','publicationApproval']:
+            self.followup()[key]=True;self.rejects();self.followup()[key]=False
+
+
 if __name__=='__main__':
     unittest.main()

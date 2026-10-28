@@ -276,6 +276,12 @@
             "Если добавляется современная оценка толкования, потребуются отдельные источники; не выдавать собственную оценку за установленный результат."
           ]
         }
+      ],
+      "supplementaryContextReadings": [
+        {
+          "id": "scripturePurposeReview",
+          "label": "Два локальных контекста Писания: Power of God st449, Dominion st698–699"
+        }
       ]
     },
     {
@@ -334,6 +340,9 @@
             "Не заполнять недостающие учения общим знанием о пуританах; либо сузить обещание, либо отдельно исследовать."
           ]
         }
+      ],
+      "supplementaryContextReadings": [
+        "mercyDoctrineFollowUp"
       ]
     },
     {
@@ -395,6 +404,10 @@
             "По каждому неполученному объекту принять явное решение: запросить для конкретного утверждения либо исключить это утверждение."
           ]
         }
+      ],
+      "supplementaryContextReadings": [
+        "folioApparatusReview",
+        "copyistTransmissionReview"
       ]
     },
     {
@@ -542,7 +555,8 @@
         "thoughtsOpeningReview"
       ],
       "supplementaryContextReadings": [
-        "cartesianDefinitionComparison"
+        "cartesianDefinitionComparison",
+        "mercyDoctrineFollowUp"
       ]
     },
     {
@@ -592,6 +606,9 @@
         "ARCHIVE_HOLD",
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
+      ],
+      "supplementaryContextReadings": [
+        "receptionLocusReview"
       ]
     },
     {
@@ -1696,7 +1713,7 @@
         "VIII",
         "REFERENCE"
       ],
-      "progress": "12 формальных рабочих переводческих заготовок / 0 независимых сверок; отдельно есть краткий запрошенный перевод оChurchesStability в16§21.100,не включённый в эти12. Новых переводов в73нет. Thoughts3–91полностью прочитан в TCP:89p,139notes,32новых наблюдения. Восемь основных дискурсов A32724 покрыты,не всё собрание/критическое издание/публикационный допуск. ED-06OPEN; disposition/HOLD сохранены.",
+      "progress": "12 формальных рабочих переводческих заготовок / 0 независимых сверок; отдельно есть краткий запрошенный перевод оChurchesStability в16§21.100,не включённый в эти12. Новых переводов в73нет. Thoughts3–91полностью прочитан в TCP:89p,139notes,32новых наблюдения. Восемь основных дискурсов A32724 покрыты,не всё собрание/критическое издание/публикационный допуск. ED-06OPEN; disposition/HOLD сохранены. Проверка75:аппаратA32723разведён2348XML/2343маргиналии/2337дискурсы/6редакторских/5metadata;новых переводов и снятияHOLDнет.",
       "progressHistory": [
         {
           "state": "HISTORICAL_BEFORE_EDITORIAL_DRAFTS",
@@ -2669,7 +2686,8 @@
         ]
       }
     ],
-    "reviewBoundary": "Four selected context windows manually read after fresh byte-SHA verification;fourteen routes structurally extracted,not fourteen complete discourses certified read. Page images and translations not prepared."
+    "reviewBoundary": "Four selected context windows manually read after fresh byte-SHA verification;fourteen routes structurally extracted,not fourteen complete discourses certified read. Page images and translations not prepared.",
+    "apparatusScopeReview": "folioApparatusReview"
   },
   "sourceUseCases": [
     {
@@ -31795,8 +31813,8 @@
       }
     ],
     "historicalSearchSha256": "f3f9697fa5e52ec077a4ee096f3eba470c19dbea73126f0e40b7b2ff429e3769",
-    "scope": "English Principles VIII–X and complete Norris LetterVI only; selected Charnock paragraphs rechecked against pinned XML. Neither Latin original nor Charnock-owned edition nor whole Norris book. Cache-only raw downloads; immutable URLs and hashes allow reacquisition. Historical40 receipt not reverified; no Drive writes; twelve formal working translations unchanged.",
-    "nextAction": "Acquire genuine Descartes Latin Principles I§9 with identified edition and page; compare with the later Latin quotation and Charnock without retroactive promotion of search-only history.",
+    "scope": "English Principles VIII–X and complete Norris LetterVI only; selected Charnock paragraphs rechecked against pinned XML. Neither Latin original nor Charnock-owned edition nor whole Norris book. Cache-only raw downloads; immutable URLs and hashes allow reacquisition. Historical40 receipt not reverified; no Drive writes; twelve formal working translations unchanged. Текущее дополнение80:latinTargetOcrFollowUp содержит два полученных целевых латинских OCRсвидетеля;историческое not-original означает отсутствие сверенного оригинального издания,не отрицание этих OCR.",
+    "nextAction": "Получить печатные изображения/выбранное латинское изданиеI§9 и независимо сверить повреждённые места;не реконструировать чистый латинский текст из OCR по памяти. Латинский целевой OCR теперь получен вlatinTargetOcrFollowUp;владение Чарнока и прямое заимствование не установлены.",
     "additionalDiscovery": {
       "codeQuery": "\"cogitationis\" \"consciis\"",
       "totalHits": 57,
@@ -31807,6 +31825,2324 @@
       "fetchedUsefulHit": "Official TCP A52424 acquired instead of the search-result mirrors.",
       "repositoryDiscovery": "Correct GITenberg repository contains Selections-from-the-Principles-of-Philosophy_4391, not the earlier guessed The-Principles path.",
       "scope": "GitHub-only bounded search; no exhaustive archive search, no Drive query or write in this continuation."
+    },
+    "laterDiscoveryHistory": [
+      {
+        "reviewDate": "2026-10-27",
+        "scope": "Bounded GitHub-only follow-up; no original Principles I§9, no foreign-case original acquired.",
+        "queries": [
+          {
+            "query": "\"cogitationis nomine\" \"quatenus\"",
+            "totalHits": 14,
+            "requestedFirstHits": 30
+          },
+          {
+            "query": "\"quatenus\" \"cogitare\" user:latin-ocr",
+            "totalHits": 1452,
+            "requestedFirstHits": 30
+          },
+          {
+            "query": "Descartes Latin (repositories)",
+            "totalHits": 4
+          },
+          {
+            "query": "\"principia philosophiae\" (repositories)",
+            "totalHits": 0
+          },
+          {
+            "query": "\"Raynaud\" \"Theologia naturalis\"",
+            "totalHits": 2,
+            "requestedFirstHits": 15
+          },
+          {
+            "query": "\"Lingendes\" \"Conciones\"",
+            "totalHits": 1,
+            "requestedFirstHits": 15
+          }
+        ],
+        "originalLatinCompared": false,
+        "globalAbsenceClaimed": false,
+        "resultsExhausted": false,
+        "evidenceClass": "C",
+        "accessState": "CATALOG_ONLY",
+        "locatorState": "COARSE_LOCATOR_ONLY",
+        "rightsState": "RIGHTS_UNKNOWN",
+        "publicationState": "BLOCKED",
+        "holds": [
+          "EVIDENCE_HOLD",
+          "LOCATOR_HOLD",
+          "ARCHIVE_HOLD",
+          "RIGHTS_HOLD",
+          "PUBLICATION_HOLD"
+        ],
+        "readCandidate": {
+          "repository": "latin-ocr/meditationesdep01gtgoog",
+          "commit": "4d9769dfec9867d492660713f5f5c501c55bddc8",
+          "path": "meditationesdep01gtgoog_0250.txt",
+          "url": "https://github.com/latin-ocr/meditationesdep01gtgoog/blob/4d9769dfec9867d492660713f5f5c501c55bddc8/meditationesdep01gtgoog_0250.txt",
+          "size": 1234,
+          "sha256": "cad056bcfea7d2db52f29ea1fba7143065906846ca7a79e4bb792e3819490a6c",
+          "evidenceClass": "D",
+          "accessState": "PARTIAL_OBJECT",
+          "locatorState": "COARSE_LOCATOR_ONLY",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "holds": [
+            "EVIDENCE_HOLD",
+            "LOCATOR_HOLD",
+            "ARCHIVE_HOLD",
+            "RIGHTS_HOLD",
+            "PUBLICATION_HOLD"
+          ],
+          "decision": "APPENDIX_DEFINITIONES_I_NOT_PRINCIPLES_I_9",
+          "note": "Latin OCR says complector, immediate conscii and an exclusion of bodily motion. A different geometrical Appendix/Definitiones I; not target I§9. 0250 is a digital leaf filename, not a verified printed page. Printed edition/images/rights not verified."
+        },
+        "unreadRaynaudLead": {
+          "path": "scripts/audit/shared-surname-reattribution-plan.mjs",
+          "repository": "Embassy-of-the-Free-Mind/sourcelibrary-v2",
+          "url": "https://api.github.com/repositories/1118859647/contents/scripts/audit/shared-surname-reattribution-plan.mjs?ref=6ac74953dc2cdf269a44829c75b6f7ff1d209cec"
+        }
+      }
+    ],
+    "latinTargetOcrFollowUp": {
+      "reviewState": "PRINCIPLES_I9_LATIN_OCR_TARGET_LOCATED_NOT_IMAGE_OR_FIRST_EDITION",
+      "reviewDate": "2026-10-27",
+      "targetLatinOcrLocated": true,
+      "firstEditionVerified": false,
+      "pageImagesAcquired": false,
+      "normalisedLatinPrepared": false,
+      "directDependenceVerified": false,
+      "charnockOwnedEditionVerified": false,
+      "wholeBooksAcquired": false,
+      "wholeBooksRead": false,
+      "independentReview": false,
+      "publicationApproval": false,
+      "sources": {
+        "LAT1722": {
+          "repository": "jedipunkz/philosophy",
+          "path": "inbox/デカルト/2026-10-14-René Descartes-Renati desCartes Principia philosophiae.md",
+          "commit": "95b16856e35f754ce67c22c6457232264a4fbbc2",
+          "blob": "17ab8f4fe6e8f8be29480cb5ac64de2c204eb68d",
+          "size": 302304,
+          "sha256": "3b3bfc5a790c58301942086cfaf76de7a9bb600e9f41fca477b64960b5ab039e",
+          "cacheName": "principia-latin80.md",
+          "url": "https://github.com/jedipunkz/philosophy/blob/95b16856e35f754ce67c22c6457232264a4fbbc2/inbox/%E3%83%87%E3%82%AB%E3%83%AB%E3%83%88/2026-10-14-Ren%C3%A9%20Descartes-Renati%20desCartes%20Principia%20philosophiae.md"
+        },
+        "LAT1672": {
+          "repository": "jedipunkz/philosophy",
+          "path": "inbox/デカルト/2026-10-21-René Descartes-Renati DesCartes Opera philosophica Renati DesCartes Principia p.md",
+          "commit": "11d6066a17a8bc03eaf98be73c1dfe30d9489444",
+          "blob": "88d447743fce0e9b3f47bb815431f1f238918962",
+          "size": 302887,
+          "sha256": "ab5ac74066bbde5fb3574fac4bdb64af641eb9f6d280267fab6938e86dda3588",
+          "cacheName": "principia-opera80.md",
+          "url": "https://github.com/jedipunkz/philosophy/blob/11d6066a17a8bc03eaf98be73c1dfe30d9489444/inbox/%E3%83%87%E3%82%AB%E3%83%AB%E3%83%88/2026-10-21-Ren%C3%A9%20Descartes-Renati%20DesCartes%20Opera%20philosophica%20Renati%20DesCartes%20Principia%20p.md"
+        }
+      },
+      "byteVerifiedReading": {
+        "LAT1722": {
+          "sourceSha256": "3b3bfc5a790c58301942086cfaf76de7a9bb600e9f41fca477b64960b5ab039e",
+          "sourceBytes": 302304,
+          "captureMarkedTruncated": true,
+          "metadataClaimsPublicDomain": true,
+          "contextVIIItoX": {
+            "startCharacterZeroBased": 84721,
+            "endCharacterExclusive": 87215,
+            "text": "Haecque  optima  via  eft  ad  mentis  naturam,  cjulque  a corpore  diftin-\nphanJo  «gw- dionem  agnofcencltm : Examinantes  enim  quinam  limus  nos,  qui  omnia\n[rimae.  qux  .i  nobis  diverfa  funt  fupponimus  falfacfle,  pcrfpicuc  videmus, nullam\n-n'fTriiV'^‘‘  extcnfionem, nec  figuram , nec  morum  localem,  net  quid  limile,  quodeor-\nirr  ammam er  Por*  *,r  tribuendum , ad  naturam  noftram  pertinere,  led  cogitationem  fo-\ntorfue.fivt  m-  lam : qux  proinde  prius  & certius  quam  ulla  res  corporea  cognofcitur : hanc\nter  ri cogitanti  enim  jam  percepimus,  de  aliis  aurem  adhuc  dubitamus.\n\n& corporiom,  Cogitationis  nomine,  inrclligo  illa  omnia,  qux  nobis  confciis  in  nobis\nbme  agi*j a.  £unt^  quarenus  eorum  in  nobis  conlcicntia  eft : Atque  ira  non  modo  intellf-\nGhtid  Jit  cogi-  Scrc’  vclle,  imaginari,  icd  criam  fentire,  idem  eft  hK  quod  cogitare.  Nam\ntatto.  h dicam, ego  video,  vel  ego  ambulo,  ergo  fum : ix.  hoc  inrtllig;im  dt  vilionc ,\n\naut  ambulatione,  qux  corpore  peragitur,  conclufio  non  eftabfolutc  certa  5\nquia,  ut  fxpe  fit  in  leminis,  polium  putare  nae  videre,  vel  ambulare,  quam-\nvis oculos  non  aperiam,  d!c  loco  non  movear,  atque  etiam  forte,  quamvis  nul-\nlum habeam  corpus : fcd  fi  intclligam  dc  iplo  lcnfu,livc  conlcicntia  vulendi\naut  ambulandi,  quia  tunc  refertur  ad  mentem  , qux  lola  fentit,  five  cogi-\ntat le  videte  aut  ambulare,  eft  plane  certa.\n\nX.  Non  hic  explico  alia  multa  nomina,  quibus  jam  ufus  fum,  vel  utar  irr\n\n§luApmp‘cifff  (cqucnnbus,quia  per  fc  fatis  nota  mihi  vitientur.  Et  fiepe  adverti, Philofo-\n\n„W^^phos\n\nin  hoc  errare,  quod  ea,  quaelimplicifluna  erant  ac  per  fc  nota.  Logicas1\nLoticii  definib011**1115  explicare  tonarentur:  ita  enim  lpfa  obfcuxiora  reddebant.  Ar-\nibi!“ior*red-  que  ubi  dixi  hanc  ptopoficioncra,#?»  cogito, ergo  Jum,  elTe  omnium  primam  &\ndi  ■,  & <A/»*certillimam,quxcmlibet  ordine  phiiofophanti  occurrat^ionideo  negavi, quin\ninter  cognitu-  antc  jpfam  (cire  oporteat,quid  fit  cogitatio, quid  exiftentia,  quid  certitudo  i\nmifiudio  ac-  ltcm  quod  fieri  non  poflir,uc  id  quod  cogitet  non  cxiftat,  ficalia*  fed  quia\n\nhx  funt\n\nDigitized  by  Google\n\nPARS  PRIMA . . v j\n\nx funt  ftmpIicilUm.T  notiones,  &qux  iolat  nullius  rei  exiftentis  notitiam 'J?*  immersu-\nrxbent,  idcirco  non  ccnfui  cflc  numerandas.  ^4*\n\n",
+            "textSha256": "5df60d84a438f23e28a6b76b39f7dcf83131ec1af6e6e14f8c6bc0df5a94df1b"
+          },
+          "targetIX": {
+            "startCharacterZeroBased": 85361,
+            "endCharacterExclusive": 86225,
+            "text": "Cogitationis  nomine,  inrclligo  illa  omnia,  qux  nobis  confciis  in  nobis\nbme  agi*j a.  £unt^  quarenus  eorum  in  nobis  conlcicntia  eft : Atque  ira  non  modo  intellf-\nGhtid  Jit  cogi-  Scrc’  vclle,  imaginari,  icd  criam  fentire,  idem  eft  hK  quod  cogitare.  Nam\ntatto.  h dicam, ego  video,  vel  ego  ambulo,  ergo  fum : ix.  hoc  inrtllig;im  dt  vilionc ,\n\naut  ambulatione,  qux  corpore  peragitur,  conclufio  non  eftabfolutc  certa  5\nquia,  ut  fxpe  fit  in  leminis,  polium  putare  nae  videre,  vel  ambulare,  quam-\nvis oculos  non  aperiam,  d!c  loco  non  movear,  atque  etiam  forte,  quamvis  nul-\nlum habeam  corpus : fcd  fi  intclligam  dc  iplo  lcnfu,livc  conlcicntia  vulendi\naut  ambulandi,  quia  tunc  refertur  ad  mentem  , qux  lola  fentit,  five  cogi-\ntat le  videte  aut  ambulare,  eft  plane  certa.\n",
+            "textSha256": "cc39a793bb4477132dab8ce7818f59a6ca254d4139f548355808137554b5f63a"
+          }
+        },
+        "LAT1672": {
+          "sourceSha256": "ab5ac74066bbde5fb3574fac4bdb64af641eb9f6d280267fab6938e86dda3588",
+          "sourceBytes": 302887,
+          "captureMarkedTruncated": true,
+          "metadataClaimsPublicDomain": true,
+          "contextVIIItoX": {
+            "startCharacterZeroBased": 76985,
+            "endCharacterExclusive": 78947,
+            "text": "Haecqucoptimaviacft admentisnaturam,cjufque \\ corpore dif-\n^VIU. tindionem agnofcendam: Exaniinantes enim quinam fimus nos,qui\nDifimSie- omnia qus k nobis diverfa funt fupponimus falia elTe , pcrfpicue vi-\n^mam'& ^^^\"^*^» nullam extenfionem, nec figuram, nec motum localem, nec\nterpus ,jtvt quid fimile , quodcorpori fit tribuendum, ad naturam noflram per-\ninmm , tinerei»ledcogitationemib]am; qusproindepriiis&certiiisqu^iii\n*^'lwf9*^ uUAVCsCQfporeacognardtur; hanccDim jam percepimus, dealiia\nrm, !mt autem adhttcdubitamus.\n\nCoatacioDisiiomioe,iDteU^i]komma,qu2 n9^\n$^^t9- noblsfittnt,quacenttseon]minnobbconidentiaeft:Atqueiunoa\nmod6intdligcre , velle , imaginari, fod eciam (entifey idem eft h!c\ncpiod cogicare. Nam fi dicam» cgo v ideo» vel ego ambulo, eigo fiim ;\n\nhocincdliBam de vifione » ant ambuktione , quz cdrpore peragi-\ntur , conclufio non ^abfQliiti certa ; quia » ut fxpe fit in iomnis»\npoflum putare nevidcre^velambqlarey quamvisocttlos nonape-\n\nijiyiiized by Google\n\nliam , & loco non f&cmar , atquc edam fercd »quamvisiml^\nbeamcorpus; Sed fi tnteUigamde ipfblenlb «five oonicienria vidoH\ndiant annuJandi , quta tunc rcfetur admeptem, quc (blaientic»fi.\nve cogitat fe videreaut ambulare, eft plan^cerci.\n\nNon ii^c explico afia multa nomina» quibus jam ufiis fimi » vel x.\nutarip (cquentibu$,quiaper k latis nota mibi videntur» £t fspe Sl»^/^-\nadveitiPbUolbphosin hoc errare, qu6d n, quas fim^idfiima erant\nacperfenoCayLogichdefinitionibusexpHcareoonttentur; icaenim feaota, 4**\nl^obfixiriorareadebant* Atqueubidud hanc propofitioncm,(^0 frimemimt\n€^9ir^o fum , cfTe omnium primain & certifTimam , qus cuilibet j^^s '\nocdine ^iUoibphanti occurrat ,non ide6 negavi , quin ante ipfam ^t^i &\nidreopQrteat,quidfiC cogitatio, quidexiftentia, quidcertitudo; '\nitem quodfieri non po{!ic,utidquodcpgicet non cxi(lat,& talia^fed jim/»\n\nquiahsruntfimpIid(rimsnodones,&qusfolsaulUusreienften- nmjif^'\ntisnodtiampr«bent,idcircononcenruiefrenumerandas. JwT^\n",
+            "textSha256": "e852ff8177dac0019d05b426211a1a6d72db91d8a95f58ed9190c55387aa84a3"
+          },
+          "targetIX": {
+            "startCharacterZeroBased": 77512,
+            "endCharacterExclusive": 78207,
+            "text": "CoatacioDisiiomioe,iDteU^i]komma,qu2 n9^\n$^^t9- noblsfittnt,quacenttseon]minnobbconidentiaeft:Atqueiunoa\nmod6intdligcre , velle , imaginari, fod eciam (entifey idem eft h!c\ncpiod cogicare. Nam fi dicam» cgo v ideo» vel ego ambulo, eigo fiim ;\n\nhocincdliBam de vifione » ant ambuktione , quz cdrpore peragi-\ntur , conclufio non ^abfQliiti certa ; quia » ut fxpe fit in iomnis»\npoflum putare nevidcre^velambqlarey quamvisocttlos nonape-\n\nijiyiiized by Google\n\nliam , & loco non f&cmar , atquc edam fercd »quamvisiml^\nbeamcorpus; Sed fi tnteUigamde ipfblenlb «five oonicienria vidoH\ndiant annuJandi , quta tunc rcfetur admeptem, quc (blaientic»fi.\nve cogitat fe videreaut ambulare, eft plan^cerci.\n",
+            "textSha256": "a1b2130205b2931214644854a0d555f59036521fc0cbac7d99291678582f70de"
+          }
+        }
+      },
+      "observations": [
+        {
+          "id": "LO01",
+          "finding": "Целевой раздел опознаётся по определению, четырём способам и примеру зрения/ходьбы, рядом сVIII иX; не геометрическое DefinitionesI.",
+          "limit": "Не подменять целевой §9 сходным определением из другого произведения и не считать файл полным оригинальным томом.",
+          "spans": [
+            {
+              "source": "LAT1722",
+              "text": "Cogitationis  nomine,",
+              "sha256": "5bbfd74abda0dcdd3f9891fa4c54f99051bb47afbb0ba8c2fb0b6205f39c130f"
+            },
+            {
+              "source": "LAT1722",
+              "text": "ego  video,  vel  ego  ambulo",
+              "sha256": "1fb87a4a7239a9cbb20340d4fd10bcb164ea36d8a32a213c35a5c68092e23246"
+            },
+            {
+              "source": "LAT1672",
+              "text": "vel ego ambulo",
+              "sha256": "e8c53d98f552f689bbaf8a59976f360060a48d7ffa37382284fe197e4147471d"
+            }
+          ]
+        },
+        {
+          "id": "LO02",
+          "finding": "Критерий сознания присутствует в1722OCR, хотя слово intelligo и соседние строки повреждены; начальная строка1672ещё хуже.",
+          "limit": "Не восстанавливать по памяти чистую латинскую цитату и не объявлять все буквы сверенными.",
+          "spans": [
+            {
+              "source": "LAT1722",
+              "text": "inrclligo  illa  omnia,  qux  nobis  confciis  in  nobis",
+              "sha256": "8505a392b3a4da0e6233f92084b2363b10af1151c2fcd7558e0c9044246afa17"
+            },
+            {
+              "source": "LAT1672",
+              "text": "CoatacioDisiiomioe,iDteU^i]komma,qu2 n9^",
+              "sha256": "a82a250db76c1fa89e59fea4c8b2e41e7ad6555a811bd699b89d920c3b6d320a"
+            }
+          ]
+        },
+        {
+          "id": "LO03",
+          "finding": "В обоих OCR виден ряд воли/воображения/ощущения после понимания; это согласуется с широким употреблением, которое сообщает Чарнок.",
+          "limit": "Тематическое соответствие и явная маргиналия не доказывают прямое чтение определённого издания.",
+          "spans": [
+            {
+              "source": "LAT1722",
+              "text": "vclle,  imaginari,  icd  criam  fentire",
+              "sha256": "464c30ee45c4cf3c5a70e742e0b3eaf83b1b95b52723900ce50199ec0a6332cc"
+            },
+            {
+              "source": "LAT1672",
+              "text": "velle , imaginari, fod eciam (entifey",
+              "sha256": "1665a171fa482329afca479e44631f77940c8eb3e0616cff652eb4a17f7ebc29"
+            },
+            {
+              "source": "CH13",
+              "text": "Some by cogitation mean not only the acts of the understanding, but those of the will, yea and the sense too.",
+              "sha256": "400833a03e652a318e3b5b50ae737e199daf8f13f57dd73a3c476efa7f42e7b3"
+            }
+          ]
+        },
+        {
+          "id": "LO04",
+          "finding": "§9 различает сомнительный вывод от телесного действия и достоверность относящегося к уму осознания; пример полностью присутствует в обеих OCRвыборках.",
+          "limit": "Это не доказательство истинности всякого чувственного суждения и не современное клиническое правило.",
+          "spans": [
+            {
+              "source": "LAT1722",
+              "text": "conclufio  non  eftabfolutc  certa",
+              "sha256": "53efb3a6368443dca189d3461784f51abf7d1f98032459fc0d33bc7cb384d85e"
+            },
+            {
+              "source": "LAT1722",
+              "text": "quia  tunc  refertur  ad  mentem",
+              "sha256": "6bbed271fc7351c2f9ea2d1bed5607d4649a3ceda6b0923d7ec10612d0fed1bb"
+            },
+            {
+              "source": "LAT1722",
+              "text": "eft  plane  certa.",
+              "sha256": "6a02de62fb35099015a00c78d9fa6f68bd1888ca28d5f3e7509c51ab7db7a7c8"
+            },
+            {
+              "source": "LAT1672",
+              "text": "conclufio non ^abfQliiti certa",
+              "sha256": "850d826e1b22d7260c9d2043e1a54811003cc3e0c14077253ec9a4f1040363cb"
+            }
+          ]
+        },
+        {
+          "id": "LO05",
+          "finding": "Латинский целевой контекст усиливает сопоставление, но не отменяет собственного But indeed, которым Чарнок сужает термин для проповеди.",
+          "limit": "Не описывать Чарнока как безоговорочно принимающего всё определение Декарта или доказанно копирующего латинский экземпляр.",
+          "spans": [
+            {
+              "source": "CH13",
+              "text": "But indeed that which we call cogitation, or thought, is the work of the mind; imagination, of the fancy.",
+              "sha256": "57fb368cb831e15b3127f8f1ab0423f34d88dec1bb3d1752606cce1ee519586d"
+            },
+            {
+              "source": "LAT1722",
+              "text": "idem  eft  hK  quod  cogitare.",
+              "sha256": "680ca3002d98df8c5acd428072be1df2b35acd6893ba2a76bf1b250fa9112702"
+            }
+          ]
+        }
+      ],
+      "scope": "Две полные цифровые.md-капсулы с частичным книжным OCR; обе сами помечены book_text_truncated:true. ПрочитаныVIII–X вокруг целевогоI§9:2494/1962Unicodeсимвола контекста,864/695целевая OCRвыборка. Числа относятся к тексту файлов, не печатным строкам.1722/1672 — метаданные передатчика; в1722титульном OCR видныFRANCO FURTI AD MOENUM/FRIDERICI KNOCHII & FILII/MDCCXXII, не сверенные изображения. Во втором титул слишком повреждён для независимой уверенной проверки года. Печатная страница предположительно2, но не объявлена image-verified.",
+      "rightsLimits": "metadata public_domain:true — заявление передатчика, не наше заключение о правах. Полные исходные капсулы только в игнорируемом cache; вреестре — короткие выбранные OCRконтексты. РодительскиеC/RIGHTS_UNKNOWN/BLOCKED/четыреHOLD сохранены; metadata source/archive links не означают получения изображений.",
+      "historicalBaselineMeaning": "Родительские reviewState/descartesLatinOriginalAcquired:false сохраняют историческую границу74:оригинальная/критически сверенная латинская редакция не получена. Это больше не следует пересказывать как отсутствие любого целевого латинского OCR. Текущий положительный результат находится здесь:targetLatinOcrLocated:true, но не firstEditionVerified. Ранее исключённый геометрический Appendix остаётся другим произведением.",
+      "limitedConclusion": "Закрыт узкий вопрос наличия получаемого латинского OCRсамогоPrincipiaI§9 и тематического соответствия с указанным Чарноком широким употреблением. Не закрыты буквенная сверка, печатные изображения/издание, владение экземпляром, прямое заимствование, независимый перевод и публикационное разрешение. Это дополнительное терминологическое сопоставлениеVII, не закрытие трёх парных кейсовED-02частиII.",
+      "discovery": {
+        "query": "filename:principia Descartes",
+        "totalHits": 44,
+        "firstHitsInspected": 30,
+        "acquiredRelevantTargets": 2,
+        "globalAbsenceClaimed": false,
+        "allResultsExhausted": false,
+        "method": "contents(ref=commit) bytes matched pinned Git blob; actual SHA256/size computed; raw source not reconstructed from snippets"
+      }
     }
+  },
+  "folioApparatusReview": {
+    "reviewState": "XML_NOTE_SCOPES_RECONCILED_EDITORIAL_COPYIST_NOTE_LOCATED",
+    "reviewDate": "2026-10-27",
+    "byteVerifiedReading": {
+      "source": "A32723",
+      "sourceSha256": "d6205c4062867acf7f01c963ca06395ed07bb4f00774a071fcc8f903d22e6376",
+      "sourceBytes": 4622240,
+      "allXmlNoteElements": 2348,
+      "metadataNoteElements": 5,
+      "textNoteElements": 2343,
+      "textMarginalNotes": 2343,
+      "discourseNoteElements": 2337,
+      "discourseCount": 14,
+      "editorialFrontMarginalNotes": [
+        {
+          "noteText": "Mr. J. Wichens. Mr. Ashton.",
+          "noteTextSha256": "427acab83afbf8779da7a8a052e33b4188148541804e96b4adb71b15d0973d61",
+          "paragraphIndexZeroBased": 3,
+          "paragraphSha256": "fd42ba30b1afcc3402171cf0510d54e7bf8154ba299bad8c3ec651c4293bc851",
+          "precedingBodyText": "Reverend Authour upon the Divine Attributes, being Transcribed out of his own Manuscripts, by the unwearied diligence of those worthy Persons that undertook it,",
+          "divisionType": "to_the_reader",
+          "divisionHeading": "TO THE READER.",
+          "teiPage": null
+        },
+        {
+          "noteText": "Acts 17.23.",
+          "noteTextSha256": "a0e851febf784b7d2e2558f4a737ec47a34da9194a2a478179ca2cf8f4e2e6a9",
+          "paragraphIndexZeroBased": 3,
+          "paragraphSha256": "fd42ba30b1afcc3402171cf0510d54e7bf8154ba299bad8c3ec651c4293bc851",
+          "precedingBodyText": ". Alas, how little do most men know of that Deity they profess to serve, and own, not as their Soveraign only, but their Portion? To such this Author might say,",
+          "divisionType": "to_the_reader",
+          "divisionHeading": "TO THE READER.",
+          "teiPage": null
+        },
+        {
+          "noteText": "2 Cor. 3.10.",
+          "noteTextSha256": "c8d8647ca1933c4d420be3db584cef14f7130bbdfb353af184c3585fe935124b",
+          "paragraphIndexZeroBased": 3,
+          "paragraphSha256": "fd42ba30b1afcc3402171cf0510d54e7bf8154ba299bad8c3ec651c4293bc851",
+          "precedingBodyText": "ptible Vanities of this present Life? Whatever is glorious in this World, yet (as the Apostle in another case) hath no glory by reason of the glory that excels:",
+          "divisionType": "to_the_reader",
+          "divisionHeading": "TO THE READER.",
+          "teiPage": null
+        },
+        {
+          "noteText": "Treatise of Providence and of Thoughts.",
+          "noteTextSha256": "7b698574735566e7f90260335a8d388a5ad7f60ca2c6569f2dcbf360ebab5385",
+          "paragraphIndexZeroBased": 4,
+          "paragraphSha256": "b16d06e6ffca3eb10e196806506ec19c164aaea0c27b8ebad52929dcaeaa4b73",
+          "precedingBodyText": "y justly be called Heterodox (unless old Heresies be of late grown Orthodox, and his differing from them must make him faulty) but generally delivers (as in his",
+          "divisionType": "to_the_reader",
+          "divisionHeading": "TO THE READER.",
+          "teiPage": null
+        },
+        {
+          "noteText": "Psal. 146.2",
+          "noteTextSha256": "b3cd7a1336a2bb523c2d2ffa6f345d59bc4d378855c756785dd5eb88d9841889",
+          "paragraphIndexZeroBased": 6,
+          "paragraphSha256": "d062296da3cf925a1bfd7d374ea280f8387490bdfe17d41118cf370031910124",
+          "precedingBodyText": "wo should live to finish what he had begun, both being taken away when Preaching upon this Subject. Happy Souls! whose last breath was spent in so noble a Work,",
+          "divisionType": "to_the_reader",
+          "divisionHeading": "TO THE READER.",
+          "teiPage": null
+        },
+        {
+          "noteText": "Psal. 109.1.",
+          "noteTextSha256": "6b85ef8480effbdba0962c02a83e30994c090b9359b22d33cf502946c28e38a9",
+          "paragraphIndexZeroBased": 7,
+          "paragraphSha256": "dee6327dbbcf8a4bebe2210d082a0a1719f9a09a606665c6f4e8030bd683b51c",
+          "precedingBodyText": "d made of himself to us. And, Reader, if these elaborate Discourses of this holy Man, through the Lord's blessing, become a means of promoting Holiness in thee,",
+          "divisionType": "to_the_reader",
+          "divisionHeading": "TO THE READER.",
+          "teiPage": null
+        }
+      ],
+      "discourseCounts": [
+        {
+          "ordinal": 1,
+          "noteElements": 140
+        },
+        {
+          "ordinal": 2,
+          "noteElements": 173
+        },
+        {
+          "ordinal": 3,
+          "noteElements": 106
+        },
+        {
+          "ordinal": 4,
+          "noteElements": 225
+        },
+        {
+          "ordinal": 5,
+          "noteElements": 156
+        },
+        {
+          "ordinal": 6,
+          "noteElements": 167
+        },
+        {
+          "ordinal": 7,
+          "noteElements": 156
+        },
+        {
+          "ordinal": 8,
+          "noteElements": 165
+        },
+        {
+          "ordinal": 9,
+          "noteElements": 102
+        },
+        {
+          "ordinal": 10,
+          "noteElements": 227
+        },
+        {
+          "ordinal": 11,
+          "noteElements": 165
+        },
+        {
+          "ordinal": 12,
+          "noteElements": 504
+        },
+        {
+          "ordinal": 13,
+          "noteElements": 31
+        },
+        {
+          "ordinal": 14,
+          "noteElements": 20
+        }
+      ]
+    },
+    "printedImagesVerified": false,
+    "allNotesAreForeignSources": false,
+    "wholeBookNewlyRead": false,
+    "copyistsFullNamesVerified": false,
+    "copyistsAreEditors": false,
+    "independentWitnessVerified": false,
+    "publicationApproval": false,
+    "evidenceClass": "C",
+    "accessState": "FULL_OBJECT_VERIFIED",
+    "locatorState": "EXACT_LOCATOR_VERIFIED",
+    "rightsState": "RIGHTS_UNKNOWN",
+    "publicationState": "BLOCKED",
+    "holds": [
+      "ARCHIVE_HOLD",
+      "EVIDENCE_HOLD",
+      "PUBLICATION_HOLD",
+      "RIGHTS_HOLD"
+    ],
+    "findings": [
+      "2343 относится ко всем маргиналиям TEI text,2337к четырнадцати discourse;разница6полностью находится в редакторском TO THE READER.",
+      "2348note во всём XML включает5служебных note в teiHeader;это не пять дополнительных печатных примечаний.",
+      "Mr.J.Wichens/Mr.Ashton названы в маргиналии после сообщения о переписывании рукописей;это утверждение редакторов о работе других лиц,не доказательство автографа или независимое свидетельство процесса.",
+      "Остальные пять маргиналий предисловия:четыре библейских локатора и одна отсылка к Providence/Thoughts;это не ещё шесть иностранных источников."
+    ],
+    "scope": "Exact structural TEI locators in unnumbered front matter; no invented printed page. Counts do not identify works/authors or certify whole-book reading. Historic2343 and current2337 retained with distinct scopes; no change to original dossier04 or historic receipt.",
+    "nextChecks": [
+      "Идентифицировать J.Wichens/Ashton по отдельным документам,не раскрывать инициалы из одного совпадения фамилии.",
+      "Если нужен печатный locator/точное размещение на полосе,получить изображения предисловия;XML не заменяет page-image check."
+    ]
+  },
+  "copyistTransmissionReview": {
+    "reviewState": "TWO_EDITORIAL_ACCOUNTS_EXPLICIT_ASHTON_BACKREFERENCE",
+    "reviewDate": "2026-10-27",
+    "explicitFirstVolumeBackreferenceLocated": true,
+    "autographsAcquired": false,
+    "fullNamesVerified": false,
+    "independentIdentityProof": false,
+    "allPrintedWordsCollated": false,
+    "lostSermonsRecoveredAsTheseTwoTreatises": false,
+    "twinsAreTheTwoPublishedTreatises": false,
+    "literalFireRecoveryVerified": false,
+    "preachingDateEstablished": false,
+    "publicationApproval": false,
+    "byteVerifiedReading": {
+      "firstVolume": {
+        "source": "A32723",
+        "sourceSha256": "d6205c4062867acf7f01c963ca06395ed07bb4f00774a071fcc8f903d22e6376",
+        "copyistMargin": {
+          "noteText": "Mr. J. Wichens. Mr. Ashton.",
+          "noteTextSha256": "427acab83afbf8779da7a8a052e33b4188148541804e96b4adb71b15d0973d61",
+          "paragraphIndexZeroBased": 3,
+          "paragraphSha256": "fd42ba30b1afcc3402171cf0510d54e7bf8154ba299bad8c3ec651c4293bc851",
+          "precedingBodyText": "Reverend Authour upon the Divine Attributes, being Transcribed out of his own Manuscripts, by the unwearied diligence of those worthy Persons that undertook it,",
+          "divisionType": "to_the_reader",
+          "divisionHeading": "TO THE READER.",
+          "teiPage": null
+        }
+      },
+      "laterVolume": {
+        "source": "B20167",
+        "sourceSha256": "4708c9c4b5e3036c4ed477852b5b1b4372d5a27aa294c930000df19a5073508c",
+        "sourceBytes": 538534,
+        "titlePage": "TWO DISCOURSES: The FIRST, Of Man's Enmity to God, FROM ROM. viii. 7. Because the carnal mind is enmity against God: for it is not subject to the law of God, neither indeed can be. The SECOND, Of the Salvation of Sinners, FROM 1 TIM. i. 15. This is a faithful saying, and worthy of all acceptation, That Christ Jesus came into the World to save sinners; of whom I am chief. By the late Learned Divine STEPHEN CHARNOCK, B. D. Publish'd from his Original Manuscripts by Mr. Edward Veel. LONDON: Printed for Tho. Cockerill, at the Three Legs and Bible in the Poultrey, over-against Grocers-Hall, 1699.",
+        "editorialHeading": "AN Advertisement TO THE READER.",
+        "signatures": [
+          "Thy Soul's Well-wisher, and Servant for Jesus sake, Edw. Veel."
+        ],
+        "datelines": [
+          "Septemb. 20. 1699."
+        ],
+        "paragraphs": [
+          {
+            "paragraphIndexZeroBased": 6,
+            "startTeiPage": null,
+            "text": "UPON the Publication of the Second Volume of Mr. CHARNOCK'S Works, it was much lamented by those that knew him, and had a just value for him, that some Sermons he was known to have preached (and which were as worthy of the publick View as the rest, and no less useful to the grand design of mans Salvation) could not be found among his Papers; especially three Sermons which many heard him preach on Three several Lord's-days, upon 1 Tim. 11.15. Christ Jesus came into the World to save sinners. But now, beyond expectation, instead of them, the good Providence of God hath brought to light the Two following Treatises, by the unwearied Diligence of Mr. Ashton, one of the laborious Transcribers of the First Volume of this Author's Works; and who, to give him his due, hath rak'd them out of the Ashes, and rescued them from that oblivion to which they seemed condemned; having with great Pains and Patience transcribed, as well as with great Judgment joined together the several Materials he found belonging respectively to each Subject, in the many loose Papers of Mr. Charnock he had by him. The Papers I have seen, and with Mr. Ashton's help, have (so far as was needful) compared the Transcription with them.",
+            "textSha256": "34eb4ff55898b956dd21670243c72ae11748e2d5bf29a7a28e58ed08d14e20d9"
+          },
+          {
+            "paragraphIndexZeroBased": 7,
+            "startTeiPage": null,
+            "text": "One of these Treatises contains the Continuation of the Author's Meditations on 1 Tim. 1.15. And herein he handles a second Doctrine, grounded on the last Clause of the Verse. The Text was fruitful, and bore twins; whereof the younger only survives; the other, I fear, is dead without recovery.",
+            "textSha256": "04562dc8278c4d4723c605081556a62fd005b38668e24b59e5bf4c26abc0873d"
+          },
+          {
+            "paragraphIndexZeroBased": 8,
+            "startTeiPage": null,
+            "text": "But I verily persuade my self, that many an honest Soul will have occasion to bless the Lord for the Birth, (shall I say?) or the Resurrection of this still-born Offspring of so worthy a Father, being thereby stirr'd up not only to admire that rich Grace of God which so eminently appears in many times calling the Chiefest of Sinners, but encouraged in the Faith of it, and supported under the burden of the greatest guilt which we find so often oppressing, terrifying, and even sinking awaken'd Sinners into despair, when they look upon their Sins as not only above the Sins of others, but even above the Mercy of God it self, and therefore unpardonable. If secure Sinners shall dare to abuse the great Truths here declared and set forth, to the strengthening their hands in their evil Works, and emboldening themselves to a life of Sin, because God's Grace abounds; at their peril be it, and let them answer for it. But in the mean time it is pity that such rich and precious Cordials should be withheld from those that need them, lest others to whom they do not belong should presumptuously catch at them and undo themselves by misapplying them. And who knows not, that what is a Cordial to some, may prove Poison to others?",
+            "textSha256": "e1f57f0b95818042d89af105980fd6dfaae34ed4190521ec125cb9705c5559b2"
+          },
+          {
+            "paragraphIndexZeroBased": 9,
+            "startTeiPage": null,
+            "text": "As for the other Discourse, Of Man's Enmity against God, we cannot find when or where it was preached. I have been credibly informed, that the Author had a design (had it pleased God to have prolonged his days) to have preached largely about Original Sin, and then it is not unlikely that he might intend this present Treatise as one branch of it. And in it, if the Reader can but dispense with one degree less of that accuracy and neatness of stile which usually appears in his other Writings, he will find as excellent Matter, and great things as in most of them, and indeed the true Spirit of the Author. He had made great use of the Hammer in beating out the Truth, but wanted time to apply the File for the more thorough smoothing and polishing of his Work, which truly wants nothing but the finishing-stroke. The Thread of this Discourse is as finely spun as of any, tho' the Piece be not altogether so glossy. But whatever is wanting in Ornament, is abundantly made up in Usefulness. And if one of these Treatises may be a Glass in which humbled Sinners may see the beauty and glory of Soveraign Grace, the other too may be a Glass in which the best of Saints may see the Face of their own Souls, and a lively Representation of that inherent Wickedness, which all that diligently observe and know their own hearts, cannot but acknowledge to be natural to them, as having been born with them into the World. I cannot but say that this Discourse is an excellent Pourtraiture of the Old Man; a Graphical description of the Devils Image impress'd upon, and deforming the most beautiful part of this lower Creation. It shews how much Man is debased and degraded by Sin, and become a Slave to his Lusts, who was made at first to be the Lord of his Fellow-Creatures; and so how rueful a Legacy our first Father hath left us, and to what misery he hath intail'd us, by communicating so cursed a Nature to us. That the blessing of God may be upon these Labours of his (long since) deceased, but faithful Servant; and that they may, by the power of his Grace, be made effectual for obtaining the Ends designed by the Author is the desire and prayer of him who is, Good Reader,",
+            "textSha256": "25ffaf2c0c3d6024642a69e98ac3a5a095c855f340a007e477bdff3d98f5af54"
+          }
+        ]
+      }
+    },
+    "observations": [
+      {
+        "id": "CT01",
+        "finding": "Veel прямо называет Ashton одним из переписчиков первого тома. Это явная редакторская обратная ссылка, а не только совпадение фамилии с маргиналией1682.",
+        "prohibitedInference": "Не выдавать редакторскую связь за независимое архивное установление полного имени/тождества.",
+        "spans": [
+          {
+            "paragraph": "6",
+            "text": "Mr. Ashton, one of the laborious Transcribers of the First Volume of this Author's Works",
+            "sha256": "bce7c7b211c06c4eb0da8e1b39539900dd0342bc9b8f122a031da48bf65c2be9"
+          }
+        ]
+      },
+      {
+        "id": "CT02",
+        "finding": "Ashton в1699описан не только как переписчик, но и как человек, соединивший материалы по каждому предмету из множества разрозненных бумаг.",
+        "prohibitedInference": "Не представлять печатный текст как простую механическую копию одного готового свитка; не приписывать эту же операцию всему первому тому.",
+        "spans": [
+          {
+            "paragraph": "6",
+            "text": "transcribed, as well as with great Judgment joined together the several Materials he found belonging respectively to each Subject",
+            "sha256": "74e6c8244332d8b9a0f15cc7dde96f359b9a035c2a7f5d00d3321f152e005b15"
+          }
+        ]
+      },
+      {
+        "id": "CT03",
+        "finding": "Veel сообщает, что видел бумаги и при помощи Ashton сверял с ними транскрипцию; формула so far as was needful ограничивает объём заявления.",
+        "prohibitedInference": "Не переводить это в полную пословную сверку каждого печатного слова, современные издательские протоколы или полученные нами автографы.",
+        "spans": [
+          {
+            "paragraph": "6",
+            "text": "The Papers I have seen, and with Mr. Ashton's help, have (so far as was needful) compared the Transcription with them.",
+            "sha256": "2fb361af0a7a0ada8cf7283513779c69479236e8f451716185d049e388fac67c"
+          }
+        ]
+      },
+      {
+        "id": "CT04",
+        "finding": "Редактор сначала говорит о ненайденных трёх проповедях на1Tim, затем вместо них представляет два трактата.",
+        "prohibitedInference": "Не считать два опубликованных трактата найденными тремя проповедями или взаимозаменяемыми редакциями одного набора.",
+        "spans": [
+          {
+            "paragraph": "6",
+            "text": "especially three Sermons which many heard him preach on Three several Lord's-days",
+            "sha256": "c6af9818888f1e0a02cd2e3976079fd14a6bc0d51fd2e456af74dcbd35caa650"
+          },
+          {
+            "paragraph": "6",
+            "text": "But now, beyond expectation, instead of them",
+            "sha256": "c23e4f7981e0c030d5147452a684999bb9bfb9984281ee61b135487c479aea7a"
+          }
+        ]
+      },
+      {
+        "id": "CT05",
+        "finding": "Twins относятся к двум доктринам/развёртываниям стиха:сохранившийся трактат содержит продолжение и вторую Doctrine последней части стиха.",
+        "prohibitedInference": "Не отождествлять близнецов с двумя опубликованными трактатами Enmity и Salvation.",
+        "spans": [
+          {
+            "paragraph": "7",
+            "text": "One of these Treatises contains the Continuation of the Author's Meditations on 1 Tim. 1.15. And herein he handles a second Doctrine, grounded on the last Clause of the Verse.",
+            "sha256": "bcf6d957882616f8a2c9808ebe47eac747bfc656a52b644d8ea9c5e4b9a73d6d"
+          }
+        ]
+      },
+      {
+        "id": "CT06",
+        "finding": "Гибель другого близнеца дана через I fear; это редакторское опасение, а не удостоверенное физическое уничтожение рукописи.",
+        "prohibitedInference": "Не объявлять отсутствие окончательным доказательством уничтожения текста.",
+        "spans": [
+          {
+            "paragraph": "7",
+            "text": "the other, I fear, is dead without recovery.",
+            "sha256": "ccea7dad052a13581cac753e3cef0f36526cfaf388066cd0cf52491adcd3645a"
+          }
+        ]
+      },
+      {
+        "id": "CT07",
+        "finding": "Образ rak’d out of the Ashes описывает редакторское восстановление из забвения в связке с разрозненными бумагами.",
+        "prohibitedInference": "Не выводить из одной метафоры буквальное извлечение из пожара, связь с1666или доказанное уничтожение библиотеки.",
+        "spans": [
+          {
+            "paragraph": "6",
+            "text": "hath rak'd them out of the Ashes, and rescued them from that oblivion",
+            "sha256": "6e5e929b0f4905eb2f3840a49acbceabae1aa7e2070b1b1f2049489f4981db9d"
+          }
+        ]
+      },
+      {
+        "id": "CT08",
+        "finding": "Редактор признаёт меньшую стилистическую отделанность Enmity и объясняет это недостающим последним штрихом; это оценка степени полировки.",
+        "prohibitedInference": "Не делать из этого признание чужого авторства либо заверение, что редактор сам дописал авторскую концовку.",
+        "spans": [
+          {
+            "paragraph": "9",
+            "text": "one degree less of that accuracy and neatness of stile",
+            "sha256": "f6563632e77c1f5a058ac04e2e69dd350437877eaed825a362f2c2e1d7d658f0"
+          },
+          {
+            "paragraph": "9",
+            "text": "wanted time to apply the File for the more thorough smoothing and polishing of his Work",
+            "sha256": "598a5300d9975b1534ef25f1678832f0325da514575e31824572e59c07327819"
+          }
+        ]
+      },
+      {
+        "id": "CT09",
+        "finding": "Для Enmity прямо неизвестны время и место проповеди. Проект об original sin передан как credible information; связь данного трактата с ним дана через not unlikely.",
+        "prohibitedInference": "Не превращать сведения с чужих слов и вероятностную реконструкцию в авторскую программу из автографа или установленную дату.",
+        "spans": [
+          {
+            "paragraph": "9",
+            "text": "we cannot find when or where it was preached.",
+            "sha256": "005e78e355ad9b18ed801a412c979eb1da06d8c6fd7bd2cc488726c3195b4ce6"
+          },
+          {
+            "paragraph": "9",
+            "text": "I have been credibly informed",
+            "sha256": "1743483af10fc6af884ff83f46a5d5fc0282dfe93fc9467066b6e7c9dc45ce9f"
+          },
+          {
+            "paragraph": "9",
+            "text": "it is not unlikely that he might intend this present Treatise as one branch of it.",
+            "sha256": "852ff53a278f0f3b770fffadd218ce16b3de73befa8c4f17b9932f9567eff721"
+          }
+        ]
+      }
+    ],
+    "evidenceClass": "C",
+    "accessState": "FULL_OBJECT_VERIFIED",
+    "locatorState": "EXACT_LOCATOR_VERIFIED",
+    "rightsState": "RIGHTS_UNKNOWN",
+    "publicationState": "BLOCKED",
+    "holds": [
+      "ARCHIVE_HOLD",
+      "EVIDENCE_HOLD",
+      "PUBLICATION_HOLD",
+      "RIGHTS_HOLD"
+    ],
+    "scope": "Two printed editorial accounts; not two independent eyewitnesses. Four1699editorial paragraphs newly compared with1682margin, plus title-page/signature/dateline. No full-name identification, autograph, preaching date or new working translation.",
+    "limitedConclusion": "Within the printed editorial account Ashton is explicitly linked to the earlier First Volume and credited with transcription/assembly of later loose materials. The explicit backreference closes the merely-same-surname question at the level of the editorial narrative, not independent archival identity.",
+    "bibliographicLimits": [
+      "Septemb.20.1699 is the editorial dateline, not the sermon date.",
+      "Printed for Tho.Cockerill identifies the named publishing/bookselling role, not a verified printer.",
+      "Original Manuscripts on the title page is a printed claim; manuscripts themselves not acquired.",
+      "The earlier mention of Second Volume is retrospective, not a new identification/date of its edition.",
+      "1699p6has1Tim.11.15while p7has1Tim.1.15; readings preserved, no silent XML emendation."
+    ],
+    "searchBoundary": "GitHub code Charnock+Wichens:1metadata hit (spelling test corpus). Charnock+Wickens:660hits,first15requested,mostly name lists. Neither search identifies a full name; no global absence inference."
+  },
+  "mercyDoctrineFollowUp": {
+    "reviewState": "AUTHOR_SECOND_OBSERVATION_AND_FINAL_CAUTION_SELECTED_NOT_WHOLE",
+    "reviewDate": "2026-10-27",
+    "wholeTreatiseRead": false,
+    "lostFirstDoctrineRecovered": false,
+    "allSinnersAutomaticallyPardoned": false,
+    "sinNecessitatesGrace": false,
+    "originalForeignSourcesVerified": false,
+    "modernGroupBlameApproved": false,
+    "completeOrdoSalutisEstablished": false,
+    "publicationApproval": false,
+    "byteVerifiedReading": {
+      "source": "B20167",
+      "sourceSha256": "4708c9c4b5e3036c4ed477852b5b1b4372d5a27aa294c930000df19a5073508c",
+      "sourceBytes": 538534,
+      "heading": "Chiefest Sinners Objects of Choicest Mercy.",
+      "epigraph": "1 TIM. 1.15. This is a faithful saying, and worthy of all acceptation, That Christ Jesus came into the world to save sinners, of whom I am chief.",
+      "cautionHeading": "ƲSE 4. Caution.",
+      "cautionParagraphIndices": [
+        960,
+        961,
+        962,
+        963,
+        964,
+        965,
+        966,
+        967,
+        968,
+        969,
+        970,
+        971,
+        972,
+        973,
+        974,
+        975
+      ],
+      "paragraphs": [
+        {
+          "paragraphIndexZeroBased": 683,
+          "startTeiPage": "1",
+          "text": "1. Obs. THE Salvation of Sinners was the main design of Christ's coming into the World.",
+          "textSha256": "a6ca72981a43c0f34bc258add8fa7300140d3744895af5664f2902c27f9071e5"
+        },
+        {
+          "paragraphIndexZeroBased": 684,
+          "startTeiPage": "1",
+          "text": "2. God doth often make the chiefest Sinners Objects of his choicest Mercy.",
+          "textSha256": "c28b9586d6f4636a8bc968910a2104e3c963763b25a6feb441d9f0d97ec3cb2c"
+        },
+        {
+          "paragraphIndexZeroBased": 685,
+          "startTeiPage": "1",
+          "text": "For the last, That God doth so.",
+          "textSha256": "33bd124fdd13eb316a96a736b2bbad5304a00e5439293dd816a77f04207e1dcf"
+        },
+        {
+          "paragraphIndexZeroBased": 686,
+          "startTeiPage": "1",
+          "text": "1. God hath formerly made invitations to such. See what a black Generation they were, Isa. 1. by the scrowl of their Sins. They were Rebels, and Rebels against him that had nursed them. Vers. 2. I have nourish'd and brought up children, and they have rebell'd against me: And in this respect worse than the Beasts they were masters of; the stupid Ox, and the dull Ass outstript them in ingenuity. Vers. 3. The Ox knoweth his owner, and the Ass his master's crib; but Israel doth not know, my people doth not consider. He calls upon Heaven and Earth to judge between them, v. 2. He appeals to Men and Angels, as a Jury to give their Verdict, whether these People had not been the most disingenuous and ungrateful People in the World. Or if by Heavens and Earth be meant Magistrates and People, as in the Prophetick style they are usually taken, God then appeals to themselves, to let their own natural Consciences, and the common Ingenuity their Sins had left them, to judge between them. He comes to charge them, v. 4. laden with iniquity: They had such great weights lying upon them, that they were not able to stir; or laden with it, as some Crab-tree is with sowr Fruit. They had sprouted from a wicked Stock; they had corrupted one another by their Society, and Example, as rotten Apples putrify the sound ones that lie near them.",
+          "textSha256": "d27a2463da91fd776259b70434a08d82619d617ec440dc624320d9d599321891"
+        },
+        {
+          "paragraphIndexZeroBased": 687,
+          "startTeiPage": "3",
+          "text": "They had been incorrigible under Judgments; God had used the Rod again, and again; but being there was no reformation, he was even weary of whipping them any longer; v. 5. Why should ye be stricken any more? ye will revolt more and more. They were also so universally infected, that there was no sound part about them, but running Sores all over, both head and heart were infected; corrupt Notions in the one, and corrupt Affections in the other.",
+          "textSha256": "94e8512381f69d6d8130983a06941a2588cc92f934d3a93e17007bbec84fd8dd"
+        },
+        {
+          "paragraphIndexZeroBased": 688,
+          "startTeiPage": "3",
+          "text": "Or if you take it Prophetically, Head signifies the Chief Magistrate; Heart, the Judges; Feet the common People. The Fire which had burnt their Cities, had not consum'd their Lusts, and dried up their Sins; v. 7. Your country is desolate, your cities are burnt with fire, your land strangers devour it in your presence, and it is desolate, as overthrown by strangers. And had it not been for a small Remnant, they had been as bad as Sodom and Gomorrah, v. 9. Their Services were polluted, vain, and an abomination to him, v. 13. A trouble to him, his Soul hated them, he was tired with them, v. 14. for they came with their bloody murtherous hands into God's presence.",
+          "textSha256": "3b58c092e9db06949352eb8a9f6c02808313811e79c2d0159a3c7e378fdda384"
+        },
+        {
+          "paragraphIndexZeroBased": 689,
+          "startTeiPage": "4",
+          "text": "Yet though he justly charg'd them with these horrid Crimes, he gives them assurance of entertainment if they would return to him, v. 18. Come now, and let us reason together: He would condescend to debate the Case with them, when one would have thought he should have said, I'll have nothing to do with such a Crew as they; God loves to discourse with Men about this Argument of Pardon; and he loves that Men should hear him speak concerning it. He would dispute them out of their Sins, into good and right apprehensions of his Mercy.",
+          "textSha256": "ebe889a4c067896faf7f83e4e5562e99015918e2b426e6f6621aa3d0405a2be8"
+        },
+        {
+          "paragraphIndexZeroBased": 690,
+          "startTeiPage": "4",
+          "text": "So Isa. 31.6. Turn ye unto him from whom the children of Israel have deeply revolted. Revolted, there is their Sin; deeply, there's the aggravation of it; and being also Children of Israel, a People of much Mercy, and Miracles, there's another aggravation; yet turn unto him against whom you have thus sinn'd.",
+          "textSha256": "f703aa672e97cd6a360ffa5648ceccff987ea8d995767072a427c05a7f84c490"
+        },
+        {
+          "paragraphIndexZeroBased": 691,
+          "startTeiPage": "5",
+          "text": "The great Objection of a Penitent is, I have sinned, and I know not whether God will receive me: Consider, God knows thy Sin better than thou dost, yet he kindly calls to thee, and promiseth thee as good a reception as if thou hadst never sinn'd.",
+          "textSha256": "06c8360b66923b10307660429ef7e675f93d2f2ce52b248d0afb842f666eee03"
+        },
+        {
+          "paragraphIndexZeroBased": 692,
+          "startTeiPage": "5",
+          "text": "So Jer. 3.1. They say, If a man put away his wife, and she go from him, and become another man's, shall he return unto her again? shall not that land be greatly polluted? But thou hast play'd the harlot with many lovers, yet return again to me, saith the Lord. Though thou hast been a common Whore, and made all Comers, every Idol welcome, and been in league with many Sins; yet upon thy return I'll own thee; and these are God's warrants for encouragement.",
+          "textSha256": "54d517507a75b0604c570e34dc9d68cda58a275f02c704ee63125bc4b784d157"
+        },
+        {
+          "paragraphIndexZeroBased": 693,
+          "startTeiPage": "5",
+          "text": "2. God hath given Examples of it in Scripture. Adam, the Ring-leader of all Rebellions of Mankind in the World, had the promise of the Seed of the Woman to break the Serpents head made to him: And in the Genealogy of Christ, is call'd the Son of God, Luk. 3.38. not only in respect of Creation, for so the Devil is the Son of God; but in a nearer relation. Yet all that deluge of Wickedness which has overflow'd the World since the Fall, sprung out of his Loyns. Nay, Abraham, the Father of the Faithful, was probably an Idolater in Ʋr of the Caldees, and a Worshipper of the Sun, and Fire, as his Fathers were, Josh. 24.2. yet God makes a particular Covenant with this Man, presents him with a richer Act of Grace than any in the World besides him had, even that the Messiah, the great Redeemer of the World, should come from his Seed: This man is set up as the pattern of Faith to others, and his Bosome seems to be a great receptacle of Saints in glory, Luk. 16.22, 23. Israel's Sins were as a thick Cloud, yet this powerful Sun did melt them. Isa. 44.22. I have blotted out as a thick cloud thy transgressions, and as a cloud thy sins. A sullen gloomy Morning often ends in a well-complexion'd Noon.",
+          "textSha256": "e258d222b9cd6be8fd4aa7fc81c2b6cfff297041100bfe0fd0e35899723acdca"
+        },
+        {
+          "paragraphIndexZeroBased": 694,
+          "startTeiPage": "7",
+          "text": "Manasseh is an eminent Example of this Doctrine. His story, 2 Chron. 33. represents him as black as a Devil, if all the aggravations of his Sin be consider'd.",
+          "textSha256": "b126cb2d748a7ead8a96351dfe159ac2127c1ebe0a9c49cc7c4edf101d3b1b08"
+        },
+        {
+          "paragraphIndexZeroBased": 695,
+          "startTeiPage": "7",
+          "text": "1. 'Twas against knowledge. He had a pious Education under a Religious Father; an Education usually leaves some tinctures and impressions of Religion. No doubt but the Instructions his Father Hezekiah had taught him, and the exemplary holiness he had seen in him, were sometimes awakened in his memory, and recoil'd upon his Conscience.",
+          "textSha256": "d303701c17f6ff17c4f3ae0f97e8813b5d2e9814be72adf1f12c71ba7b8377c1"
+        },
+        {
+          "paragraphIndexZeroBased": 696,
+          "startTeiPage": "7",
+          "text": "2. His Place and Station, a King: Sins of King's are like their Robes, more Scarlet and Crimson than the Sins of a Peasant. Their Example usually infects their Subjects. As they are not without their Attendance in their Progresses, and Recreations, so neither in their Vices and Virtues.",
+          "textSha256": "81699fff1a2a418a6d8e920cb521b0ce2c9111c68c67aa308805f79c28a533b8"
+        },
+        {
+          "paragraphIndexZeroBased": 697,
+          "startTeiPage": "7",
+          "text": "3. Restoration of Idolatry. Had he found the Worship of the Host of Heaven deriv'd to him by succession from his Father, and the Idols set up to his hand, the continuance of them had less of sin, because more of temptation: But he built again those High Places and Altars to Idols after they had been broken down, v. 3. and dash'd in pieces that Reformation his Father had compleated.",
+          "textSha256": "97a96d34df2f88e569b8446f03444e34e161ce26bdc829bdf728d325a0634579"
+        },
+        {
+          "paragraphIndexZeroBased": 698,
+          "startTeiPage": "8",
+          "text": "4. Affronting God to his very face. He sets up his Idols, as it were to nose God, and built Altars in the House of the Lord, and in the two Courts of his Temple, whereof God had said he would have his Name there for ever, v. 4, 5, 7. He brought in all the Stars of Heaven to be sharers in that Worship which was only due to the God of Heaven. What, could he find no other place for his Idols, but in the very Temple of God? must God be cast out of his House, to make room for Baal?",
+          "textSha256": "85b2bf33cd273fe4082ce2a1861ca128f3ea6b57e136f56886d540f6e11e02fa"
+        },
+        {
+          "paragraphIndexZeroBased": 699,
+          "startTeiPage": "8",
+          "text": "5. Murther. Perhaps of his Children, which he caused to pass through the fire as an Offering to his Idol, v. 6. It may be it was only for purification. But he had the guilt of much innocent Blood upon him, the streams whereof ran down in every part of the City. 2 Kings 21.16. Moreover Manasseh shed innocent blood very much, till he filled Jerusalem with blood from one end to the other.",
+          "textSha256": "12659d469e8c86b52237e9538c977831477a806e19e9257c23e07f6fcda55fc3"
+        },
+        {
+          "paragraphIndexZeroBased": 700,
+          "startTeiPage": "9",
+          "text": "6. Covenant with the Devil. He us'd Enchantments, and Witchcraft, and dealt with a Familiar Spirit, v. 6. yea he had acquaintance with more Devils than one, and dealt with Familiar Spirits and Wizards in the plural Number.",
+          "textSha256": "90187490bb125df6bfaf97126e750adeab6ac69d38ffebb1b88edbfdc078826e"
+        },
+        {
+          "paragraphIndexZeroBased": 701,
+          "startTeiPage": "9",
+          "text": "7. His other mens Sins. He did not only lead the People by his Example, but compell'd them by his Commands. 2 Chron. 33.9. So Manasseh made Judah and the inhabitants of Jerusalem to err, and to do worse than the Heathen God had rooted out, to make room for them. Hereby he contracted the guilt of the whole Nation upon himself.",
+          "textSha256": "71d586a892543498d2836d8683ca2d36b3a26a3515aca5c525227a7cd9a4335d"
+        },
+        {
+          "paragraphIndexZeroBased": 702,
+          "startTeiPage": "9",
+          "text": "8. Obstinacy against Admonitions. 2 Kings 21.10. God spake to him and his People, but they would not hearken, or alter their course.",
+          "textSha256": "a0ee6b231bd71425700079ac2fc500f58f6c41c63a54f3a010591a5180dcd36f"
+        },
+        {
+          "paragraphIndexZeroBased": 703,
+          "startTeiPage": "9",
+          "text": "9. Continuance in it. He ascended the Throne young, at 12 years old, v. 1. 'Tis uncertain how long he continued in this Sin. Torniellus thinks 15 years. Bellarmine 27. Kinchi 50 years, reckoning but 5 years of his Life after his Restauration.",
+          "textSha256": "fecdafb2226be85578f629c602f42d28077b281485b6039ce252374284c29539"
+        },
+        {
+          "paragraphIndexZeroBased": 704,
+          "startTeiPage": "10",
+          "text": "What a world of Sin, and aggravations of it, were there in this Man! and yet God was intreated, v. 19.",
+          "textSha256": "fc87b5c9f1f56392806487b192b088eeca86e4e0cbce51eeb6089d089312999a"
+        },
+        {
+          "paragraphIndexZeroBased": 705,
+          "startTeiPage": "10",
+          "text": "3. The stock whereof Christ came, seems to intimate this; God might have kept the Stock, whence Christ descended according to the Flesh, pure, and free from being tainted with any notorious Crimes; but we find Sins of a crimson dye even among them.",
+          "textSha256": "28f2e4f7136fd2fbd448ab8ee169f31913dd7f1bf4a82af67fbb04dcd0dfea6d"
+        },
+        {
+          "paragraphIndexZeroBased": 706,
+          "startTeiPage": "10",
+          "text": "There are no Women reckon'd up in Christ's Genealogy, but such as in Scripture are noted for looseness, Matt. 1.3. Tamar who play'd the harlot with Judah her Father-in-law, Gen. 38. Rahab, v. 5. the Harlot of Jericho. Ruth, v. 5. a Gentile, and a Moabitess; the Root of whose Generation was Lot's Son by incest with his own Daughter. Bathsheba, v. 6. David's Adulteress. He chose these repenting Sinners, out of whose Loyns Christ was to come, that the greatest Sinners might not be afraid to come to him.",
+          "textSha256": "d6c92499cdad90c3568bd02b5dbe2c0f30d284efc47f3f0ab6566195693fe310"
+        },
+        {
+          "paragraphIndexZeroBased": 707,
+          "startTeiPage": "11",
+          "text": "Was David, whose Son our Saviour is call'd, much better? 'Tis true, he was a man after God's own heart, but yet very notorious for that Act of Murther and Adultery, and with more aggravating Circumstances than usually are met with in Acts of the like nature, 2 Sam. 11. Ʋriah was a godly man, and had a sense of the Condition of the Church and Nation whereof he was a Member, v. 11. and such a Man's Bed David is not only content to defile, but he pullutes his Soul with drunkenness, v. 13. lays Snares for his Life, not in a manly, but sly and treacherous manner; for while he doth caress him, and show him a fair countenance in his Palace, he draws up secret Instructions to Joab so to order the business, that Ʋriah might be thrust into his Grave, and makes him the Post to carry the Commission for his own death, v. 15, 16. After all this he hath no remorse when he hears of the loss of so godly and valiant a man, but wipes his mouth, and sweeps all the dirt to the door of Providence, v. 25. Now Christ's Stock being thus tainted, was methinks an evidence that Penitents, though before of the greatest pollutions, might be welcome to him. And that as he pickt out such out of whose Loyns to proceed, so he would pick out such also in whose hearts to reside.",
+          "textSha256": "9a19c2c616045f70e28b8e6d0fb623e67f95fae61a1b90bc32a52e5400d9ae6e"
+        },
+        {
+          "paragraphIndexZeroBased": 708,
+          "startTeiPage": "12",
+          "text": "4. 'Twas Christ's employment in the world to court and gain such kind of Creatures. The first thing he did, while in the Manger, was to snatch some of the Devil's Prophets out of his Service, and take them into his own, Matth. 2.1. some of the Magi, who were Astrologers and Idolaters. When he fled from Herod's Cruelty, he chose Aegypt, the most Idolatrous Country in the world, for his Sanctuary; a Place where the People worshipp'd Oxen, Crocodiles, Cats, Garlick, putida Numina, all kind of Riff-raff, to show, that he often comes to sojourn in the blackest Souls.",
+          "textSha256": "f54f2a7ffe56ffbbcc48de0758d01587853d7c4ac7b1c82ca690f0e33926d127"
+        },
+        {
+          "paragraphIndexZeroBased": 709,
+          "startTeiPage": "12",
+          "text": "The first People he took care to preach to, were the Seamen, which usually are the rudest, and most debauch'd sort of men, as gaining the Vices, as well as the Commodities of those Nations they traffick with, Matth. 4.13. The Inhabitants of those Sea-coasts are said to sit in darkness, v. 16. in darkness both of Sin and Ignorance; Just as the Aegyptians were not able to stir in that thick darkness, which was sent as a Plague upon them. And the Country, by reason of the Vices of the Inhabitants, is call'd the Region and shadow of Death; a Title properly belonging to Hell it self. To call Sinners to repentance, was the Errand of his coming. And he usually delighted to chuse such that had not the least pretence to merit, Mark 2.17. Matthew a Publican, Zacheus an Extortioner; store of that Generation of Men, and Harlots, and very little Company besides.",
+          "textSha256": "fd85489a01192f2bd24c06c25215afdf8fac8f8a3de1053a214c187096b6e1d2"
+        },
+        {
+          "paragraphIndexZeroBased": 710,
+          "startTeiPage": "13",
+          "text": "He chose his Attendants out of the Devil's Rabble; and he was more Jesus, a Saviour, among this sort of Trash, than among all other sorts of People; for all his design was to get Clients out of Hell it self. What was that Woman that he must needs go out of his way to convert? a Harlot, John 4.18. an Idolater, for the Samaritans had a mixt Worship, a Linsey-woolsey Religion, and upon that account were hateful to the Jews. She continued in her whoredom at the very time Christ spake to her, yet he makes her a monument of his Grace; and not only so, but the first Preacher of the Gospel to her Neighbours; v. 29. Is not this the Christ? and an Instrument to conduct them to him, Come, see a man which told me all things, &c.",
+          "textSha256": "5a7321f09f95ea7cc221f783e82e86895c8dfd1664a80c2e03091ccb50871355"
+        },
+        {
+          "paragraphIndexZeroBased": 711,
+          "startTeiPage": "14",
+          "text": "Was any more smutted than Mary Magdalen? seven Devils would make her sooty to purpose, and so many did Christ cast out of her, Mark 16.9. Now when Jesus was risen early the first day of the week, he appear'd first to Mary Magdalen, out of whom he cast seven Devils. This lustful Devil he turns into a weeping Saint.",
+          "textSha256": "4aee9af554a4454d472db1bc9dbd9123d677eb54ea34dc2d728ec4d4dc171359"
+        },
+        {
+          "paragraphIndexZeroBased": 960,
+          "startTeiPage": "143",
+          "text": "1. Think not thy Sins are pardon'd, because they are not so great as those God has pardon'd in others.",
+          "textSha256": "b579a775721fd628573e07dcc2c9fab6fefa00d1e134cc052ea9faaaac39d701"
+        },
+        {
+          "paragraphIndexZeroBased": 961,
+          "startTeiPage": "143",
+          "text": "This is ad suam consolationem aliena numerare vitia .",
+          "textSha256": "7346b8a76dfa979194b9a67ab0fe2377dd5b3a9de880af58c13783c59fe294ae"
+        },
+        {
+          "paragraphIndexZeroBased": 962,
+          "startTeiPage": "144",
+          "text": "Consider, God cast off Saul for less Sins than David committed. Evil Angels were cast off for one Sin. A few small Sands may sink a Ship as well as a great Rock. Thy Sins may be pardoned though as great as others, but then you must have equal Qualifications with them. They had great Sins, so hast thou; but have you as great a hatred and loathing of Sin as they had?",
+          "textSha256": "4bca243efae58f8cb0dd83d459278b0cf59aeacee3ae27d3f28b606626982485"
+        },
+        {
+          "paragraphIndexZeroBased": 963,
+          "startTeiPage": "144",
+          "text": "2. Let not this Doctrine encourage any person to go on in sin.",
+          "textSha256": "c0f7a7a037ce7baec9d4e3307f316c106f8ede133791ad5877b61a8a731a89ef"
+        },
+        {
+          "paragraphIndexZeroBased": 964,
+          "startTeiPage": "144",
+          "text": "If thou dost now suck such poison out of this Doctrine, and boast of that Name God proclaims Exod. 34.6, 7. take the Cooler along with thee, and remember it is one part of his Name, By no means to clear the guilty. He never intended those Mercies for Sinners, as Sinners, but as penitent. Penitents, as such, are not guilty, because repentance is a moral revocation of a Sin, and always supposeth saith in Christ. There is forgiveness with God, Psal. 130.4. but it is that he may be feared, not despised. God never intended mercy as a sanctuary to protect Sin.",
+          "textSha256": "b9971d29895fde590f787336746381affc2ee2c58bc24ce96aac9839172e011e"
+        },
+        {
+          "paragraphIndexZeroBased": 965,
+          "startTeiPage": "144",
+          "text": "1st. 'Tis disingenuous to do so. Great Love requires great Duties, not great Sins. Freeness of Grace should make us increase holiness in a more chearful manner. What high ingratitude is it, to be inclin'd to sin, because God is inclin'd to pardon; to have a frozen heart to him, because he hath a melting heart to thee? What, to kick against him, because he has bowels; and to be wicked, because God is good? To turn Grace it self into wantonness. Is this to fear his Goodness? No, 'tis to trample on it, to make that which should excite thee to holiness, a Bawd to thy Lust, and God himself a Pandar to the Devil.",
+          "textSha256": "47d4d0437dc94dae37e9034cc2f900a320c57d7186440f8328759ab1f27a47b2"
+        },
+        {
+          "paragraphIndexZeroBased": 966,
+          "startTeiPage": "145",
+          "text": "If thou dost thus slight the design of this Mercy, which thou canst never prize at too high a rate, 'tis certain thou never hadst the least taste of it. If thou hadst, thou couldst not sin so freely: For when Grace enters, it makes the Soul dead to sin, Rom. 6.1, 2. The Apostle answers such a Consequence with a God forbid.",
+          "textSha256": "aea14f0ddc82e97516b066b2156a96ce45f917ca6f1d7d1230241c52c3320964"
+        },
+        {
+          "paragraphIndexZeroBased": 967,
+          "startTeiPage": "145",
+          "text": "2dly. 'Tis foolish.",
+          "textSha256": "4ab0a6fb45722981fedc52b2442c2d54262c324d16ef21fcb472eec2a9e36ee1"
+        },
+        {
+          "paragraphIndexZeroBased": 968,
+          "startTeiPage": "146",
+          "text": "Would any man be so simple, as to set his House on fire, because he has a great River running by his Door, from whence he may have water to quench it; or wound himself, because there is an excellent Plaister which has cur'd several?",
+          "textSha256": "c853be6722e6b55f9439968c8ec1d9aa81831cbebc272c13a11384d34ca73862"
+        },
+        {
+          "paragraphIndexZeroBased": 969,
+          "startTeiPage": "146",
+          "text": "3dly. 'Tis dangerous.",
+          "textSha256": "06a9d4038d980c0b53dd37026218d332e5293246bbc2d3eae3ede2214bda351c"
+        },
+        {
+          "paragraphIndexZeroBased": 970,
+          "startTeiPage": "146",
+          "text": "If thou losest the present time, thou art in danger to lose Eternity. There are many in Hell never sinn'd at such a presumptuous rate. He is merciful to the Penitent, but he will not be unfaithful to his Threatnings. If thou art willing to receive Grace, thou mayst have it, but upon God's Conditions. He will not pin it upon thy Sleeve whether thou wilt or no. This is to make that which is the savour of life, to become the savour of death unto thee.",
+          "textSha256": "a07fd3da41c8d6e963172c63e5414197758652750cd831342fed2534c6cf2946"
+        },
+        {
+          "paragraphIndexZeroBased": 971,
+          "startTeiPage": "146",
+          "text": "See what an answer Paul gives to such an imagination, Rom. 3.8. Let us do evil, that good may come, whose damnation is just. He takes a handful of Hell-fire and flings it in their faces.",
+          "textSha256": "f899b8525c22d9b41dbe89ae8bdb89d300c333ac822f5b6855b06c92041c8dc0"
+        },
+        {
+          "paragraphIndexZeroBased": 972,
+          "startTeiPage": "147",
+          "text": "Let but the 29th of Deut. 18, 19. stare them in the face, and promise thy self peace in this Course if thou canst. Lest there should be among you a root that beareth gall and wormwood. And it cometh to pass, when he heareth the words of this curse, that he bless himself in his heart, saying, I shall have peace, though I walk in the imagination of mine heart.",
+          "textSha256": "f96f88ff3611fc7b9647f7a4037cb07c801212472cc682863de3a68bc4191d95"
+        },
+        {
+          "paragraphIndexZeroBased": 973,
+          "startTeiPage": "147",
+          "text": "As his Goodness is great, which thou dost despise; so the Wrath will be the hotter, thou dost treasure up. Though great Sins are occasions of great Grace, yet Sin doth not necessitate Grace.",
+          "textSha256": "0164fa68dcf424bac9b749863975f063b7cb3da3f4f1da05736f8dbfcb57624d"
+        },
+        {
+          "paragraphIndexZeroBased": 974,
+          "startTeiPage": "147",
+          "text": "Who can tell, whether ever God would have shown mercy to Paul, had he done that against knowledge, which he did ignorantly?",
+          "textSha256": "e65dffbd4f52d0ea3332bae23350b6b38bfcc3907fad476a874499c7e4a0d0eb"
+        },
+        {
+          "paragraphIndexZeroBased": 975,
+          "startTeiPage": "147",
+          "text": "Repentance must first be; see the order, Acts 3.19. Repent, and be converted, that your sins may be blotted out. First, Repentance and Conversion, then Justification. This Grace is only given to penitent Sinners. You know not whether you shall repent, but you may know, that if you do not repent, you shall be damn'd. As there is infinite Grace to pardon you, if you repent; so there is infinite Justice to punish you, if you do not repent. The Gospel binds us to our good behaviour as much as the Law.",
+          "textSha256": "7f150b943df8e9cc2eb5abb6f77a14425c56a345805f44f1cbe4fe111e987438"
+        }
+      ],
+      "marginalNotes": [
+        {
+          "parentParagraphIndexZeroBased": 961,
+          "teiPage": "143",
+          "text": "Hierony in Vol. 1. p. 114. e."
+        }
+      ],
+      "contextBeforeCaution": {
+        "paragraphIndexZeroBased": 959,
+        "startTeiPage": "142",
+        "text": "Hast thou not a world of Precedents? Did not God take up all his Saints from the Dunghil with all their Rags, and clothe them? Were any of them born Princes, and Sons of Heaven? Alas, every man at first sued for a Saviour in the right of a Sinner; and all pleaded in the Court of Heaven in formâ pauperis. Were they not Debtors, and could they do that which might make God cross out one of those Sums they ow'd him? Oh think not then thou canst damm up that torrent of Love that has flow'd so freely to the World for so many Ages. Tho' thy Disease be grievous, yet 'tis not irrecoverable, provided thou goest to the Physician. He can with a breath burn up thy Corruption, as soon as dissolve the Creation. Christ can turn the muddiest water into such Wine that can please the heart both of God and Man. As you have been Vessels of Sin, if you will be Vessels of Repentance, God will make you brimful of Mercy. Plead not therefore thy own unworthiness. Man's unworthiness never yet hindered the flowing of God's kindness. 'Tis too weak a Bank to stop the current of God's favour. The greater thy unworthiness, the greater advantage has free Grace to manifest its uncontroulable Excellency. That Man dishonours God, that sets his Sin above God's Goodness, or his Unworthiness above God's Condescension. You cannot do God a greater pleasure, than to come to him to be made clean. When he reckons up thy Sin, 'tis not with an upbraiding, but a compassionate sigh, Jer. 13.27. He longs for the time of thy returning; and minds thee of thy Sin, that thou mayst the sooner seek a remedy; and wonders thou wilt continue in such a filthy Condition so long.",
+        "textSha256": "f99a3def6fe8b9fc3f75337ad6486cb143cd3a731aeb75f3e4dfde6abb7aaf6f"
+      },
+      "nextOpeningParagraph": {
+        "paragraphIndexZeroBased": 712,
+        "startTeiPage": "14",
+        "text": "What was that Canaanitish Woman, who had so powerful a Faith infus'd? One sprung of a cursed Stock, hateful to God, rooted out of the pleasant Land, a Dog, not a Child; she comes a Dog, but returns a Child; Christ made this Crab in a Wilderness to bring forth Fruit, even the best that Heaven could afford; viz. the Fruit of Faith; and larger and better bunches of it, than at that time sprouted out of any Branches of the Jewish Vine, so well planted, and so often water'd by Christ himself.",
+        "textSha256": "af2887b79f19a76a15e9f3fb8b6bb98aa666e75ecf93cfedbf37ed1ef8319db8"
+      },
+      "nextPublisherParagraph": {
+        "paragraphIndexZeroBased": 976,
+        "startTeiPage": "148",
+        "text": "THE Works of Mr. Stephen Charnock on Various Divine Subjects. In Folio. 2 Vol.",
+        "textSha256": "a6391db6b02afaa2880d701128d8d5078b36315a0fa4b4fd98ac2b9a7a0f8a27"
+      }
+    },
+    "observations": [
+      {
+        "id": "MD01",
+        "finding": "Первая тезисная формулировка сохранена, хотя речь развивает вторую.",
+        "prohibitedInference": "Не называть первую тезисную строку восстановленными тремя утраченными проповедями.",
+        "spans": [
+          {
+            "paragraph": "683",
+            "text": "1. Obs. THE Salvation of Sinners was the main design of Christ's coming into the World.",
+            "sha256": "a6ca72981a43c0f34bc258add8fa7300140d3744895af5664f2902c27f9071e5"
+          },
+          {
+            "paragraph": "685",
+            "text": "For the last, That God doth so.",
+            "sha256": "33bd124fdd13eb316a96a736b2bbad5304a00e5439293dd816a77f04207e1dcf"
+          }
+        ]
+      },
+      {
+        "id": "MD02",
+        "finding": "Вторая формулировка содержит often, а не универсальное обещание каждому.",
+        "prohibitedInference": "Не заменять often на always и не выводить автоматическое прощение.",
+        "spans": [
+          {
+            "paragraph": "684",
+            "text": "2. God doth often make the chiefest Sinners Objects of his choicest Mercy.",
+            "sha256": "c28b9586d6f4636a8bc968910a2104e3c963763b25a6feb441d9f0d97ec3cb2c"
+          }
+        ]
+      },
+      {
+        "id": "MD03",
+        "finding": "Авторский переход For the last прямо подтверждает редакторскую атрибуцию последней из двух доктрин.",
+        "prohibitedInference": "Две доктрины одного стиха — не два изданных трактата; утраченный развитый текст не найден.",
+        "spans": [
+          {
+            "paragraph": "685",
+            "text": "For the last, That God doth so.",
+            "sha256": "33bd124fdd13eb316a96a736b2bbad5304a00e5439293dd816a77f04207e1dcf"
+          }
+        ]
+      },
+      {
+        "id": "MD04",
+        "finding": "Адресат утешения уже назван кающимся, а приглашение связано с возвращением.",
+        "prohibitedInference": "Не читать начальное утешение как безусловную амнистию.",
+        "spans": [
+          {
+            "paragraph": "689",
+            "text": "if they would return to him",
+            "sha256": "6ddc17a40886a63198f43eec4eab34fd5c6ffc44bf524028c11f85d7936c5fa6"
+          },
+          {
+            "paragraph": "691",
+            "text": "The great Objection of a Penitent",
+            "sha256": "e60b043e803a3973ffc0134523bd422f021cec7c7c47127d7e28b63f419a9e02"
+          },
+          {
+            "paragraph": "692",
+            "text": "yet upon thy return I'll own thee",
+            "sha256": "35a6eab0def28f2a3c9173f0983ea2d3451136dbbbbfec5377524af3323b5b81"
+          }
+        ]
+      },
+      {
+        "id": "MD05",
+        "finding": "В примере Авраама автор сохраняет probably.",
+        "prohibitedInference": "Не превращать вероятностное историческое суждение проповедника в проверенную биографию.",
+        "spans": [
+          {
+            "paragraph": "693",
+            "text": "was probably an Idolater",
+            "sha256": "83d247ff86c1a93535ed44bcbc7755b970982f5a84f9054a64bfaaa97f0f4ee0"
+          }
+        ]
+      },
+      {
+        "id": "MD06",
+        "finding": "В примере Манассии характер огненного обряда оставлен под вопросом; кровопролитие отдельно утверждается.",
+        "prohibitedInference": "Не убирать Perhaps/It may be и не представлять предположение авторской уверенностью либо отрицанием всякого убийства.",
+        "spans": [
+          {
+            "paragraph": "699",
+            "text": "Perhaps of his Children",
+            "sha256": "b6ba807971621b1d9ab1b89fd7894981d2dc66ebcc64d4bb896bcbcbf55e16fe"
+          },
+          {
+            "paragraph": "699",
+            "text": "It may be it was only for purification.",
+            "sha256": "e3387869624637347cec69096318b54a360d8bdeba8639519b3a217c123e1cea"
+          },
+          {
+            "paragraph": "699",
+            "text": "But he had the guilt of much innocent Blood upon him",
+            "sha256": "b85cac984fbb28e7e30582a31cdffe45d4b25db0ab4b91e2005f1cbb01d4bd45"
+          }
+        ]
+      },
+      {
+        "id": "MD07",
+        "finding": "Длительность прямо объявлена неопределённой; 15/27/50 даны как различные чужие мнения.",
+        "prohibitedInference": "Не выбирать одну хронологию как установленную и не считать сочинения Torniellus/Bellarmine/Kinchi полученными оригиналами.",
+        "spans": [
+          {
+            "paragraph": "703",
+            "text": "9. Continuance in it. He ascended the Throne young, at 12 years old, v. 1. 'Tis uncertain how long he continued in this Sin. Torniellus thinks 15 years. Bellarmine 27. Kinchi 50 years, reckoning but 5 years of his Life after his Restauration.",
+            "sha256": "fecdafb2226be85578f629c602f42d28077b281485b6039ce252374284c29539"
+          }
+        ]
+      },
+      {
+        "id": "MD08",
+        "finding": "В примере Марии Магдалины автор добавляет собственную характеристику lustful после цитаты Mark16:9.",
+        "prohibitedInference": "Не приписывать сексуальную характеристику самому цитируемому евангельскому стиху; оценочные обобщения автора о людях и группах не независимые факты.",
+        "spans": [
+          {
+            "paragraph": "711",
+            "text": "Was any more smutted than Mary Magdalen? seven Devils would make her sooty to purpose, and so many did Christ cast out of her, Mark 16.9. Now when Jesus was risen early the first day of the week, he appear'd first to Mary Magdalen, out of whom he cast seven Devils. This lustful Devil he turns into a weeping Saint.",
+            "sha256": "4aee9af554a4454d472db1bc9dbd9123d677eb54ea34dc2d728ec4d4dc171359"
+          }
+        ]
+      },
+      {
+        "id": "MD09",
+        "finding": "Первая финальная предосторожность отвергает аргумент: мои грехи меньше чужих, значит уже прощены.",
+        "prohibitedInference": "Не подменять сравнение покаяния сравнением одной тяжести проступков.",
+        "spans": [
+          {
+            "paragraph": "960",
+            "text": "1. Think not thy Sins are pardon'd, because they are not so great as those God has pardon'd in others.",
+            "sha256": "b579a775721fd628573e07dcc2c9fab6fefa00d1e134cc052ea9faaaac39d701"
+          },
+          {
+            "paragraph": "962",
+            "text": "but have you as great a hatred and loathing of Sin as they had?",
+            "sha256": "3c405945f277c73e4f966725a34f25475e049f1a1c070990f519c8310218c18c"
+          }
+        ]
+      },
+      {
+        "id": "MD10",
+        "finding": "Вторая предосторожность прямо запрещает делать доктрину поощрением продолжать грех.",
+        "prohibitedInference": "Не квалифицировать эту речь как разрешение на грех без чтения финала.",
+        "spans": [
+          {
+            "paragraph": "963",
+            "text": "2. Let not this Doctrine encourage any person to go on in sin.",
+            "sha256": "c0f7a7a037ce7baec9d4e3307f316c106f8ede133791ad5877b61a8a731a89ef"
+          }
+        ]
+      },
+      {
+        "id": "MD11",
+        "finding": "Милость различена по отношению к sinners as sinners и penitent; строка TCP saith in Christ сохранена без исправления.",
+        "prohibitedInference": "Не печатать faith как проверенную буквальную транскрипцию; изображение и критическая сверка не получены.",
+        "spans": [
+          {
+            "paragraph": "964",
+            "text": "He never intended those Mercies for Sinners, as Sinners, but as penitent.",
+            "sha256": "d40a8d4fab3b5bfa97908ca5ad70ea2584eb573f8836f66ce2d67e36fd552cbf"
+          },
+          {
+            "paragraph": "964",
+            "text": "always supposeth saith in Christ",
+            "sha256": "a08ad06bd26c1418320c1e0f27073126e0474e095d80f9b3dcf08ba312a1ed18"
+          }
+        ]
+      },
+      {
+        "id": "MD12",
+        "finding": "Само утешение включает условия, противопоставление кающегося и угрозы, а не принуждение к благодати.",
+        "prohibitedInference": "Не превращать этот локальный призыв в исчерпывающую классификацию учения автора о благодати.",
+        "spans": [
+          {
+            "paragraph": "970",
+            "text": "If thou losest the present time, thou art in danger to lose Eternity. There are many in Hell never sinn'd at such a presumptuous rate. He is merciful to the Penitent, but he will not be unfaithful to his Threatnings. If thou art willing to receive Grace, thou mayst have it, but upon God's Conditions. He will not pin it upon thy Sleeve whether thou wilt or no. This is to make that which is the savour of life, to become the savour of death unto thee.",
+            "sha256": "a07fd3da41c8d6e963172c63e5414197758652750cd831342fed2534c6cf2946"
+          }
+        ]
+      },
+      {
+        "id": "MD13",
+        "finding": "Автор прямо отрицает необходимость благодати из факта великого греха.",
+        "prohibitedInference": "Не называть тяжесть греха заслугой или необходимой причиной благодати.",
+        "spans": [
+          {
+            "paragraph": "973",
+            "text": "Though great Sins are occasions of great Grace, yet Sin doth not necessitate Grace.",
+            "sha256": "b3414c84736fba6284a87067ef1828653487811348797e6ccbaa595ef7831d73"
+          }
+        ]
+      },
+      {
+        "id": "MD14",
+        "finding": "В финале явно сказано First Repentance and Conversion, then Justification и Gospel binds us; важное свидетельство внутри этого увещания.",
+        "prohibitedInference": "Не вычёркивать порядок слов и не объявлять по одному финальному абзацу установленным полный ordo salutis всех сочинений.",
+        "spans": [
+          {
+            "paragraph": "975",
+            "text": "Repentance must first be; see the order, Acts 3.19. Repent, and be converted, that your sins may be blotted out. First, Repentance and Conversion, then Justification. This Grace is only given to penitent Sinners. You know not whether you shall repent, but you may know, that if you do not repent, you shall be damn'd. As there is infinite Grace to pardon you, if you repent; so there is infinite Justice to punish you, if you do not repent. The Gospel binds us to our good behaviour as much as the Law.",
+            "sha256": "7f150b943df8e9cc2eb5abb6f77a14425c56a345805f44f1cbe4fe111e987438"
+          }
+        ]
+      }
+    ],
+    "scope": "Выборка 683–711 (29 абзацев, из них первые7 уже читались) и полный USE4.Caution960–975 (16). 45 выбранных абзацев,38 дополнительно к прежним7. Разрыв712–959 не объявлен прочитанным;959 и712 сохранены лишь как граничный контекст,976 как граница издательской рекламы. Не весь трактат и не всё собрание.",
+    "limitedConclusion": "Редакторское сообщение о развитии второй доктрины получает прямую авторскую опору в начале сохранившегося текста. Утешение кающегося намеренно соединено с запретом использовать милость как убежище для греха. Это закрывает локальные вопросы структуры и антилицензионной оговорки, но не восстанавливает утраченную первую разработку.",
+    "textualLimits": "TCP CC0 проверен по байтам; печатные изображения, автографы и иностранные первоисточники не сверены. Единственная выбранная маргиналия961:Hierony in Vol.1.p.114.e. — указатель, не полученный оригинал Иеронима. Сохранены saith/Kinchi и неопределённости; названия библейских лиц и полемические характеристики — авторский голос, не современная фактографическая санкция.",
+    "translationState": "SOURCE_SIDE_ANALYTICAL_GLOSSES_NOT_NEW_FORMAL_TRANSLATIONS",
+    "evidenceClass": "C",
+    "accessState": "FULL_OBJECT_VERIFIED",
+    "locatorState": "EXACT_LOCATOR_VERIFIED",
+    "rightsState": "RIGHTS_UNKNOWN",
+    "publicationState": "BLOCKED",
+    "holds": [
+      "ARCHIVE_HOLD",
+      "EVIDENCE_HOLD",
+      "PUBLICATION_HOLD",
+      "RIGHTS_HOLD"
+    ],
+    "electionApplicationCrossCheck": {
+      "reviewState": "AUTHOR_DISTINGUISHES_ELECTION_AND_FINAL_JUDGMENT_NOT_COMPLETE_ORDO",
+      "reviewDate": "2026-10-27",
+      "wholeDiscourseRead": false,
+      "completeOrdoSalutisEstablished": false,
+      "repentanceMeritsElection": false,
+      "humanArbitraryRuleApproved": false,
+      "dailleOriginalReacquired": false,
+      "foreignCaseClosed": false,
+      "independentReview": false,
+      "publicationApproval": false,
+      "byteVerifiedContext": {
+        "source": "A32723",
+        "sourceSha256": "d6205c4062867acf7f01c963ca06395ed07bb4f00774a071fcc8f903d22e6376",
+        "paragraphs": [
+          {
+            "paragraphIndexZeroBased": 2751,
+            "startTeiPage": "727",
+            "text": "And this is evident.",
+            "textSha256": "21bcfa9a4b379c2508d93354964c0e1c957c23933ca82920ec4d7be1b21012c2"
+          },
+          {
+            "paragraphIndexZeroBased": 2752,
+            "startTeiPage": "727",
+            "text": "1. In the choice of some persons from Eternity. He hath set a part some from Eternity, wherein he will display the invincible efficacy of his Grace, and thereby infallibly bring them to the fruition of Glory. Eph. 1.4, 5. According as he hath chosen us in him before the Foundation of the World, that we should be Holy and without blame before him in Love, having Predestinated us to the Adoption of Children by Jesus Christ to himself, according to the good pleasure of his will. Why doth he write some names in the Book of Life, and leave out others? why doth he enroll some, whom he intends to make Denizons of Heaven, and refuse to put others in his register? The Apostle tells us, 'tis the pleasure of his Will. You may render a reason for many of God's actions, till you come to this the top and Foundadation of all; and under what head of reason can man reduce this act but to that of his Royal Prerogative? Why doth God save some, and condemn others at last? Because of the Faith of the one, and unbelief of the other. Why do some men beleive? Because God hath not only given them the means of Grace, but accompanied those means with the efficacy of his Spirit. Why did God accompany those means with the efficacy of his Spirit in some, and not in others? Bccause he had decreed by Grace, to prepare them for Glory. But why did he decree, or choose some, and not others? Into what will you resolve this but into his soveraign pleasure? Salvation and Condemnation at the last upshot, are acts of God as the Judge conformable to his own Law of giving life to Believers, and inflicting death upon unbeleivers; for those a reason may be rendered; but the choice of some and preterition of others, is an act of God as he is a soveraign Monarch, before any Law was actually transgrest, because not actually given. When a Prince redeems a Rebel, he acts as a Judge according to Law; but when he calls some out, to pardon, he acts as a soveraign by a Prerogative above Law; into this the Apostle resolves it. Rom. 9.13.15. When he speaks of Gods loving Jacob, and hating Esau, and that before they had done either good or evil: It is, Because God will have Mercy, on whom he will have Mercy, and Compassion on whom he will have Compassion. Though the first scope of the Apostle in the beginning of the Chapter, was to declare the reason of God's rejecting the Jews, and calling in the Gentiles; had he only intended to demolish the pride of the Jews, and flat their opinion of merit, and aim'd no higher than that Providential act of God; he might, convincingly enough to the reason of men, have argued from the Justice of God, provoked by the obstinacy of the Jews, and not have had recourse to his absolute Will; but since he asserts this latter, the strength of his argument seems to lie thus; if God by his absolute soveraignty may resolve, and fix his love upon Jacob and estrange it from Esau, or any other of his Creatures before they have done good or evil, and man have no ground to call his infinite Majesty to account, may he not deal thus with the Jews, when their demerit would be a barr to any complaints of the Creature against him? If God were considered here in the quality of a Judge, it had been fit to have considered the matter of Fact in the Criminal; but he is considered as a Soveraign, rendring no other reason of his action but his own Will, whom he will he hardens, ver. 18. And then the Apostle concludes. Ver. 20. Who art thou, O Man, that replyest against God? If the reason drawn from Gods Soveraignty, doth not satisfie in this enquiry, no other reason can be found, wherein to acquiesce? For the last condemnation there will be sufficient reason to clear the Justice of his proceedings. But in this case of Election, no other reason but what is alledg'd, viz. The Will of God, can be thought of, but what is liable to such knotty exceptions, that cannot well be untyed.",
+            "textSha256": "3331f4e4863c17da2144390004961527e3073ca8c50a287b92fd9aaac8c01ecd"
+          },
+          {
+            "paragraphIndexZeroBased": 2753,
+            "startTeiPage": "728",
+            "text": "1. It could not be any merit in the Creature, that might determine God to choose him. If the decree of Election falls not under the merit of Christ's passion, as the procuring cause, it cannot fall under the merit of any part of the corrupted mass. The decree of sending Christ, did not precede, but follow'd in order of nature the determination of choosing some. When men were chosen as the subjects for Glory, Christ was chosen as the means, for the bringing them to Glory, Eph. 1.4. Chosen us in him, and predestinated us to the Adoption of Children by Jesus Christ. The choice was not meerly in Christ, as the moving cause; that the Apostle asserts, to be the good pleasure of his will; but in Christ, as the means of conveying to the chosen Ones the fruits of their Election. What could there be in any man, that could invite Gpd to this act, or be a cause of distinction of one branch of Adam from another? Were they not all hew'd out of the same Rock, and tainted with the same corruption in blood? Had it been possible to invest them with a power of merit at the first, had not that venom contracted in their nature, degraded all of power for the future? What merit was there in any but of wrathfull punishment, since they were all considered as Criminals, and the cursed brood of an ungrateful Rebel? what dignity can there be in the nature of the purest part of clay, to be made a Vessel of Honour, more than in another part of Clay as pure as that which was form'd into a Vessel for mean and sordid use? What had any one to move his mercy more than another; since they were all Children of wrath, and equally dawb'd with Original guilt and filth? Had not all an equal proportion of it, to provoke his Justice? What merit is there in one dry bone more than another, to be inspir'd with the breath of a spiritual life? Did not all lie wallowing in their own filthy blood, and what could the steam, and noysomness of that, deserve at the hands of a pure Majesty, but to be cast into a sink furthest from his sight? Were they not all considered in this deplorable posture with an equal proportion of poyson in their nature, when God first took his pen, and singled out some Names, to write in the Book of life? It could not be merit in any one peice of this abominable Mass, that should stir up that resolution in God, to set apart this person for a Vessel of Glory, while he permitted another to putrifie in his own gore. He loved Jacob, and hated Esau, though they were both parts of the common Mass, the Seed of the same Loyns, and lodg'd in the same Womb.",
+            "textSha256": "599018a1d51ef34c4717619e1a15d2869d528e4c5ad939fa9c6539b28586eda4"
+          },
+          {
+            "paragraphIndexZeroBased": 2755,
+            "startTeiPage": "730",
+            "text": "Well then, there is no possible way to lay the original Foundation of this act of Election, and preterition in any thing but the absolute Soveraignty of God.",
+            "textSha256": "e016336a798fae74fb1dfe38e750a7d89e71381f47a6270394340f377a36f622"
+          },
+          {
+            "paragraphIndexZeroBased": 2756,
+            "startTeiPage": "730",
+            "text": "Justice or Injustice comes not into consideration in this case. There is no debt, which Justice or Injustice always respects in its acting: If he had pleased, he might have chosen all, if he had pleased, he might have chosen none. It was in his supream power, to have resolved to have left all Adam's posterity under the rack of his Justice; if he determined to snatch out any, it was a part of his dominion, but without any injury to the Creatures he leaves under their own guilt. Did he not pass by the Angels, and take man? And by the same right of Dominion may he pick out some men from the common Mass, and lay aside others, to bear the punishment of their Crimes. Are they not all his Subjects? All are his Criminals, and may be dealt with at the pleasure of their undoubted Lord and Soveraign? This is a work of arbitrary power: Since he might have chosen none, or chosen all, as he saw good himself. 'Tis at the liberty of the Artificer, to determine his Wood, or Stone to such a figure, that of a Prince or that of a Toad; and his materials have no right to complain of him, since it lies wholly upon his own liberty. They must have little sence of their own vileness and God's infinite excellency above them by right of Creation, that will contend, that God hath a lesser right over his Creatures, than an Artificer over his Wood or Stone. If it were at his liberty whither to redeem Man, or send Christ upon such an undertaking; 'tis as much at his liberty, and the prerogative is to be allow'd him, what persons he will resolve to make capable of enjoying the fruits of that Redemption. One Man was as fit a subject for Mercy as another; as they all lay in their orginal guilt. Why would not Divine Mercy cast its eye upon this Man, as well as upon his Neighbour? There was no cause in the Creature, but all in God, it must be resolved into his own will.",
+            "textSha256": "ba7445488018e0c3c31c9ac4aca71ad2dbf5f63910ae49bc6a0d397efdc7894c"
+          }
+        ],
+        "existingDailleParagraph": {
+          "paragraphIndexZeroBased": 2754,
+          "textSha256": "15b10a7ab0c5992247dbc42f37eecd11725d45f34c58ed3df567a31baa60cc0e"
+        },
+        "marginalNotes": [
+          {
+            "parentParagraphIndexZeroBased": 2752,
+            "teiPage": "728",
+            "text": "Amyrald. dissert. p. 101, 102."
+          },
+          {
+            "parentParagraphIndexZeroBased": 2754,
+            "teiPage": "729",
+            "text": "Dalle in loc."
+          }
+        ]
+      },
+      "observations": [
+        {
+          "id": "EA01",
+          "finding": "Сам автор отличает последнее спасение/осуждение как действия Судьи от избрания/оставления как действия суверенного Монарха.",
+          "limit": "Не подставлять в оба рассуждения один и тот же вопрос или утверждать, что вера нигде не имеет значения.",
+          "spans": [
+            {
+              "source": "E2752",
+              "text": "Salvation and Condemnation at the last upshot, are acts of God as the Judge",
+              "sha256": "6dc76638b1bc11aaa82b03d30b0c4e4aa46c9f92fbe6068028cbc646fd25b7cb"
+            },
+            {
+              "source": "E2752",
+              "text": "the choice of some and preterition of others, is an act of God as he is a soveraign Monarch",
+              "sha256": "f516e39c218072cf5ba747918b9698b2cb948f5a105e1920bea7eec639f1aa6e"
+            },
+            {
+              "source": "E2752",
+              "text": "Because of the Faith of the one, and unbelief of the other.",
+              "sha256": "eb131ec56590e8c425edc66230df66f55c2d879bff3c8cb936faec96f4b3a641"
+            }
+          ]
+        },
+        {
+          "id": "EA02",
+          "finding": "Предшествующий разбор делает действенность средств благодати действием Духа, а избрание — не следствием предвиденной веры.",
+          "limit": "Нельзя превращать признание веры в связи с последним судом в её заслугу, предваряющую избрание.",
+          "spans": [
+            {
+              "source": "E2752",
+              "text": "Because God hath not only given them the means of Grace, but accompanied those means with the efficacy of his Spirit.",
+              "sha256": "db6d7e327b368b9dafd6aeb7081611eaec687e0877e385b3c7bead6a1b0d76be"
+            },
+            {
+              "source": "E2754",
+              "text": "Election is the cause of Faith, and not Faith the cause of Election.",
+              "sha256": "021a3565fe28bc494b62c74c866a38a8326e59b0f43580680ce99404755acb66"
+            }
+          ]
+        },
+        {
+          "id": "EA03",
+          "finding": "В2753 причина избирающего определения отделена от Христа как средства сообщения плодов избрания; порядок назван order of nature.",
+          "limit": "Не превращать эту фразу в отрицание спасительного посредничества/искупления Христа или в установленную датировку отдельных божественных решений.",
+          "spans": [
+            {
+              "source": "E2753",
+              "text": "follow'd in order of nature the determination of choosing some.",
+              "sha256": "085e734ee83a2c70b29528590c94689b58973664a53c39a23c3f36043cbcd3b1"
+            },
+            {
+              "source": "E2753",
+              "text": "but in Christ, as the means of conveying to the chosen Ones the fruits of their Election.",
+              "sha256": "b1098f972f34701e71ff6e1aa77785111c766f883e1f7ad47abdf213e9b99d69"
+            }
+          ]
+        },
+        {
+          "id": "EA04",
+          "finding": "В975 другой текст прямо ставит покаяние и обращение перед оправданием; порядок слов не снят ради согласования.",
+          "limit": "В этой строке не сказано, что покаяние причиняет вечное избрание; не переносить её автоматически на вопрос2754.",
+          "spans": [
+            {
+              "source": "M975",
+              "text": "First, Repentance and Conversion, then Justification.",
+              "sha256": "fc0686813b3bb4e82a5f8d59a1865ecb29a5e1dd1ae427e1403f68ac9e7c6274"
+            },
+            {
+              "source": "E2754",
+              "text": "His choice of them was to a Holiness, not for a Holiness preceding his determination",
+              "sha256": "b4531e81b5b3c838945ca9447afbb3e991b63cff19e9370dd880c04f7c00c16f"
+            }
+          ]
+        },
+        {
+          "id": "EA05",
+          "finding": "Пастырский финал требует покаяния и не разрешает грешить в расчёте на благодать; это сохраняется рядом с причинностью избрания.",
+          "limit": "Не делать из совместного чтения ни автоматическое прощение, ни исчерпывающую реконструкцию ordo salutis.",
+          "spans": [
+            {
+              "source": "M964",
+              "text": "He never intended those Mercies for Sinners, as Sinners, but as penitent.",
+              "sha256": "d40a8d4fab3b5bfa97908ca5ad70ea2584eb573f8836f66ce2d67e36fd552cbf"
+            },
+            {
+              "source": "M973",
+              "text": "Though great Sins are occasions of great Grace, yet Sin doth not necessitate Grace.",
+              "sha256": "b3414c84736fba6284a87067ef1828653487811348797e6ccbaa595ef7831d73"
+            }
+          ]
+        },
+        {
+          "id": "EA06",
+          "finding": "Arbitrary power в2756 принадлежит рассуждению о Божьем выборе при отсутствии долга перед грешником; рядом оставлена ответственность за преступления.",
+          "limit": "Не вынимать Justice or Injustice comes not into consideration как отрицание всякой Божьей справедливости и не превращать описание Бога в разрешение произвола человеческим властителям.",
+          "spans": [
+            {
+              "source": "E2756",
+              "text": "There is no debt, which Justice or Injustice always respects in its acting",
+              "sha256": "14e3190946e78dfa3a3450e8cddeacd0e32008bd59535c06c3764aaad9bd1e33"
+            },
+            {
+              "source": "E2756",
+              "text": "to bear the punishment of their Crimes.",
+              "sha256": "7992db9e438ede600d642499a9a2b47f647457c2396f8cda6b951e0c095b1abe"
+            },
+            {
+              "source": "E2756",
+              "text": "This is a work of arbitrary power:",
+              "sha256": "b8e8b68264b4cb41897b7d5f84c698b1d0a0f6ffa674c37dd66061c59e920c8a"
+            }
+          ]
+        },
+        {
+          "id": "EA07",
+          "finding": "В2752наp728маргиналия Amyrald.dissert.p101,102 стоит при рассуждении оRom9, после but since he asserts this latter;Dalle in loc. находится в2754p729 приTit1:1. Это два разных локальных указателя.",
+          "limit": "Не присваивать Дайе весь расширенный контекст;не утверждать буквенное заимствование из Amyrald и не раскрывать конкретное издание dissert. без получения и сверки.",
+          "spans": [
+            {
+              "source": "E2752",
+              "text": "but since he asserts this latter,",
+              "sha256": "2df0dfcfde5243d5fd89f7a999aa54e1a995f4053ef9ef1acb79626eb640e5b5"
+            },
+            {
+              "source": "E2754",
+              "text": "Tit. 1.1. 'Tis called the Faith of Gods Elect.",
+              "sha256": "7c73dc837e10a069f8753237e58c8203b086b871c8a050f62ced9431b91c1d96"
+            }
+          ]
+        }
+      ],
+      "scope": "A32723 2751–2756,pp727–730:5окружающих абзацев сохранены здесь,2754по hashсвязан с неизменённым CASE-DAILLE. B20167 964/973/975 берутся из ранее проверенной полной финальнойCaution. Это расширенное авторское сопоставление IV↔VII, не новый французский источник, не весьDominion и не полныйordo.",
+      "limitedConclusion": "Чарнок сам различает избирающее определение и последний суд; поэтому причинность election→faith и порядок repentance/conversion→justification нельзя объявить прямым противоречием только из двух изолированных формул. Это снимает конкретное смешение предметов, но не доказывает отсутствие любых напряжений во всех его сочинениях и не отменяет ни одного из требований покаяния.",
+      "counterpartSearchFollowUp": {
+        "queries": [
+          {
+            "query": "filename:conciones Lingendes",
+            "totalHits": 0,
+            "returnedMetadata": 0,
+            "incompleteResults": false,
+            "scope": "RESULT_METADATA_ONLY_NOT_ALL_DOCUMENTS_READ"
+          },
+          {
+            "query": "filename:theologia Raynaud",
+            "totalHits": 15,
+            "returnedMetadata": 15,
+            "incompleteResults": false,
+            "scope": "RESULT_METADATA_ONLY_NOT_ALL_DOCUMENTS_READ"
+          },
+          {
+            "query": "filename:tite Daille",
+            "totalHits": 137,
+            "returnedMetadata": 20,
+            "incompleteResults": false,
+            "scope": "RESULT_METADATA_ONLY_NOT_ALL_DOCUMENTS_READ"
+          },
+          {
+            "query": "\"Lingendes\" \"Eucharist\"",
+            "totalHits": 51,
+            "returnedMetadata": 20,
+            "incompleteResults": false,
+            "scope": "RESULT_METADATA_ONLY_NOT_ALL_DOCUMENTS_READ"
+          },
+          {
+            "query": "\"Raynaud\" \"naturalis\"",
+            "totalHits": 970,
+            "returnedMetadata": 20,
+            "incompleteResults": false,
+            "scope": "RESULT_METADATA_ONLY_NOT_ALL_DOCUMENTS_READ"
+          },
+          {
+            "query": "\"Daille\" \"Epistre\" \"Tite\"",
+            "totalHits": 84,
+            "returnedMetadata": 20,
+            "incompleteResults": false,
+            "scope": "RESULT_METADATA_ONLY_NOT_ALL_DOCUMENTS_READ"
+          },
+          {
+            "query": "repo:JDerekLomas/source-library-texts \"Raynaud\"",
+            "totalHits": 6,
+            "returnedMetadata": 6,
+            "incompleteResults": false,
+            "scope": "RESULT_METADATA_ONLY_NOT_ALL_DOCUMENTS_READ"
+          },
+          {
+            "query": "repo:JDerekLomas/source-library-texts \"Lingendes\"",
+            "totalHits": 2,
+            "returnedMetadata": 2,
+            "incompleteResults": false,
+            "scope": "RESULT_METADATA_ONLY_NOT_ALL_DOCUMENTS_READ"
+          },
+          {
+            "query": "\"Tite\" \"Perier\"",
+            "totalHits": 38752,
+            "returnedMetadata": 20,
+            "incompleteResults": false,
+            "scope": "RESULT_METADATA_ONLY_NOT_ALL_DOCUMENTS_READ"
+          },
+          {
+            "query": "\"Conciones decem\"",
+            "totalHits": 1,
+            "returnedMetadata": 1,
+            "incompleteResults": false,
+            "scope": "RESULT_METADATA_ONLY_NOT_ALL_DOCUMENTS_READ"
+          },
+          {
+            "query": "\"Theologia naturalis\" \"Raynaudus\"",
+            "totalHits": 0,
+            "returnedMetadata": 0,
+            "incompleteResults": false,
+            "scope": "RESULT_METADATA_ONLY_NOT_ALL_DOCUMENTS_READ"
+          }
+        ],
+        "targetForeignOriginalAcquired": false,
+        "globalAbsenceProven": false,
+        "allResultsExhausted": false,
+        "readScope": "6derived corpus files fetched;headers and selected matches inspected only;none accepted as target foreign original",
+        "findings": [
+          "Lingendes совпало с частями немецких klingendes/abklingendes,не фамилией автора.",
+          "Daille совпало с французским medaille,не целевой ExpositionTite1655.",
+          "Цитаты Raynaud касаются Erotemata de malis ac bonis libris и de incorruptione cadaverum,не Theologia naturalisVII.III.IV§150.",
+          "Имена и vocab/image-desc в производном расширенном OCR не удостоверяют авторство книги и не означают просмотра изображений."
+        ],
+        "nextAction": "ED-02OPEN:получить выбранные оригинальные OCR/изображенияTite1655,Conciones1663,Theologia1622;не заменять их ссылками на другие работы."
+      },
+      "evidenceBoundary": "Наследуются C/FULL_OBJECT_VERIFIED/EXACT_LOCATOR_VERIFIED/RIGHTS_UNKNOWN/BLOCKED и четыреHOLD родительского обзора. Чтение английского источника не заменяет иностранного counterpart и независимой сверки. Новых формальных переводов нет."
+    }
+  },
+  "receptionLocusReview": {
+    "reviewState": "REC01_SOURCE_LOCUS_LOCATED_DERIVED_WITNESS_NOT_ORIGINAL_EDITION",
+    "reviewDate": "2026-10-27",
+    "originalSpurgeonEditionVerified": false,
+    "nicholPaginationVerified": false,
+    "independentReaderAdded": false,
+    "wholeDiscourseRead": false,
+    "wholeMirrorRead": false,
+    "publicationApproval": false,
+    "byteVerifiedSource": {
+      "source": "A32723",
+      "sourceSha256": "d6205c4062867acf7f01c963ca06395ed07bb4f00774a071fcc8f903d22e6376",
+      "heading": "A DISCOURSE UPON GODS Dominion.",
+      "paragraphs": [
+        {
+          "paragraphIndexZeroBased": 2638,
+          "startTeiPage": "697",
+          "text": "After the Psalmist had summoned his own Soul to this task, he enumerates the Divine blessings received by him, to awaken his soul by a sence of them to so noble a work. He begins at the first and foundation Mercy to himself, the pardon of his sin, and justification of his Person, the renewing of his sickly and languishing nature. Verse 3. Who forgives all thy iniquities, and heals all thy diseases. His Redemption from death or Eternal destruction; his expected glorification thereupon, which he speaks of with that certainty as if it were present. V.4. Who redeems thy life from destruction, who Crowns thee with loving kindness and tender Mercies. He makes his progress to the mercy manifested to the Church in the protection of it against, or delivery of it from oppressions. Verse 6. The Lord executeth Righteousness and Judgment, for all that are oppressed. In the discovery of his Will and Law, and the glory of his merciful Name to it. Verse 7, 8. He made known his ways unto Moses, and his acts unto the Children of Israel. The Lord is Merciful and Gracious, slow to Anger, and plenteous in Mercy. Which latter words may refer also to the free and unmerited spring of the benefits he had reckoned up. Viz. The Mercy of God, which he mentions also verse 10. He hath not dealt with us after our sins, nor rewarded us according to our iniquities; And then extols the perfection of Divine mercy, in the pardoning of sin. Ver. 11, 12. The Paternal tenderness of God. Verse 13. The eternity of his Mercy. Verse 17. But restrains it to the proper object. Verse 11.17. To them that fear him i. e. To them that beleive in him: Fear being the word commonly used for Faith in the Old Testament under the legal dispensation, wherein the spirit of bondage was more eminent than the spirit of Adoption, and their fear more than their confidence.",
+          "textSha256": "74efd71664e979429fac7d6d3c325d0c1fe7a789d8616f7c1377d9ace695c962"
+        },
+        {
+          "paragraphIndexZeroBased": 2639,
+          "startTeiPage": "698",
+          "text": "Observe.",
+          "textSha256": "4947bac3d7c2470deddbb16d5ef7f165f67202562d7458b3a202b019eace0973"
+        },
+        {
+          "paragraphIndexZeroBased": 2640,
+          "startTeiPage": "698",
+          "text": "1. All true blessings grow up from the pardon of sin. ver. 3. Who forgives all thine iniquities. That is the first blessing, the top and Crown of all other favours, which draws all other blessings after it; and sweetens all other blessings with it. The principal intent of Christ was Expiation of sin, Redemption from iniquity; the purchase of other blessings was consequent upon it. Pardon of sin is every blessing vertually, and in the root and spring, it flows from the favor of God, and is such a gift as cannot be tainted with a Curse, as outward things may.",
+          "textSha256": "b6f80af5b6e9322ebc90704ea4a131ab182ee3f3a514af91675bb54095bd1bae"
+        },
+        {
+          "paragraphIndexZeroBased": 2641,
+          "startTeiPage": "698",
+          "text": "2. Where sin is pardoned, the soul is renewed, verse 3. Who heals all thy diseases. Where guilt is remitted, the deformity and sickness of the soul is cur'd. Forgiveness is a teeming mercy, it never goes single; when we have an interest in Christ, as bearing the chastisement of our peace, we receive also a balsom from his blood, to heal the wounds we feel in our nature. Isaiah 53.5. The chastisement of our Peace was upon him, and with his stripes we are healed. As there is a guilt in sin, which binds us over to punishment, so there is a contagion in sin, which fills us with pestilent diseases, when the one is removed, the other is cur'd. We should not know how to love the one without the other. The renewing the soul is necessary for a delightful relish of the other blessings of God. A condemn'd Malefactor infected with a Leprosie, or any other loathsome distemper, if pardon'd, could take little comfort in his freedom from the Gibbet without a Cure of his Plague.",
+          "textSha256": "bc9d9181d591dc586afd669a2a09c88ca820e719ccae3ce58d50f36563b6d96e"
+        },
+        {
+          "paragraphIndexZeroBased": 2642,
+          "startTeiPage": "698",
+          "text": "3. God is the sole and soveraign author of all spiritual blessings. Who forgives all thy iniquities, and heals all thy diseases. He refers all to God, nothing to himself in his own merit and strength. All, not the pardon of one sin merited by me, not the cure of one disease can I owe to my own power, and the strength of my free will, and the operations of nature. He, and he alone is the Prince of pardon, the Physitian that restores me, the Redeemer that delivers me; 'tis a Sacriledge, to divide the praise between God and our selves. God only can knock off our fetters, expell our distempers, and restore a deformed Soul to its decayed beauty.",
+          "textSha256": "f4d905e4b70bfd6267abacc79e89df3fd222542f4b97712900c9b0afe2afc2eb"
+        },
+        {
+          "paragraphIndexZeroBased": 2643,
+          "startTeiPage": "698",
+          "text": "4. Gracious Souls will bless God as much for Sanctification as for Justification. The initials of Sanctification (and there are no more in this Life) are worthy of solemn acknowledgement. 'Tis a sign of growth in Grace when our Hymns are made up of acknowledgments of Gods sanctifying, as well as pardoning Grace. In blessing God for the one, we rather shew a love to our selves, in blessing God for the other, we cast out a pure beam of love to God: because by purifying Grace we are fitted to the service of our maker, prepared to every good work which is delightful to him; by the other, we are eas'd in our selves. Pardon fills us with inward peace, but Sanctification fills us with an activity for God. Nothing is so capable of setting the soul in a heavenly tune, as the consideration of God as a pardoner, and as a healer.",
+          "textSha256": "2c4e826542a87135ea2d017de63c1b43c8038d40b4df8aa0d75d3b682e5052ee"
+        },
+        {
+          "paragraphIndexZeroBased": 2644,
+          "startTeiPage": "698",
+          "text": "5. Where sin is pardon'd, the punishment is remitted. Verse 3, 4. Who forgives all thy iniquities, and Redeems thy Life from destruction. A Malefactors pardon puts an end to his chains, frees him from the stench of the Dungeon, and fear of the Gibbet. Pardon is nothing else but the remitting of guilt, and guilt is nothing else but an obligation to punishment as a penal debt for sin. A Creditors tearing a Bond frees the Debtor from payment, and rigor.",
+          "textSha256": "1c2a6cf74b8b6073701671b0cb03161f047eebc7cb56a70d7bcce21ae1746eb0"
+        },
+        {
+          "paragraphIndexZeroBased": 2645,
+          "startTeiPage": "699",
+          "text": "6. Growth in Grace is always annext to true Sanctification. Verse 3. So that thy youth is renew'd like the Eagles. Interpreters trouble themselves much about the manner of the Eagles renewing its youth, and regaining its vigor: He speaks best, that saith, the Psalmist speaks only according to the opinion of the vulgar, and his design was not to write a Natural History. Growth always accompanies Grace, as well as it doth Nature in the Body; not that it is without its qualms, & languishing fits as Children are not, but still their distempers make them grow; Grace is not an idle, but an active principle. 'Tis not like, the Psalmist means it of the strength of the Body, or the prosperity and stability of his Government, but the vigor of his Grace and Comfort, since they are spiritual blessings here, that are the matter of his song. The healing the Disease conduceth to the sprouting up, and flourishing of the Body. 'Tis the Nature of Grace to go from strength to strength.",
+          "textSha256": "426ebb729e365497809be06cd3bbc580423360e96c886d93688eb0916beeda1a"
+        },
+        {
+          "paragraphIndexZeroBased": 2646,
+          "startTeiPage": "699",
+          "text": "7. When sin is pardoned, 'tis perfectly pardon'd. Verse 11, 12. As far as the East is from the West, so far hath he removed our transgressions from us. The East and West are the greatest distance in the World, the terms can never meet together: When sin is pardoned, it is never charged again; the guilt of it can no more return, than East can become West, or West become East.",
+          "textSha256": "b7a937e11185e18e0511a2ff931d036fc155d6cd816e81e42e69024be321c459"
+        },
+        {
+          "paragraphIndexZeroBased": 2647,
+          "startTeiPage": "699",
+          "text": "8. Obedience is necessary to an interest in the mercy of God. Verse 17. The mercy of the Lord is to them that fear him, to them that remember his Commandments, to do them. Commands are to be remembered in order to practice, a vain speculation is not the intent of the publication of them.",
+          "textSha256": "05f304cab72d27b49bb7c5562358460851d416534d7f7a16394111d650dc9ed1"
+        },
+        {
+          "paragraphIndexZeroBased": 2648,
+          "startTeiPage": "699",
+          "text": "After the Psalmist had enumerated the benefits of God, he reflects upon the greatness of God and considers him on his Throne, encompast with the Angels, the Ministers of his Providence. Verse 19. The Lord hath prepared his Throne in the Heavens, and his Kingdom Rules over all. He brings in this of his Dominion, just after he had largely treated of his mercy. Either,",
+          "textSha256": "1953073533eecbc78eb50c583c0bcce00e39f5ab614403488a02f5843a13a72e"
+        }
+      ]
+    },
+    "derivedWitness": {
+      "repository": "jonnyg23/mahabrain",
+      "path": "sacred_obsidian_vault/bib/cmt/tod/psa103.md",
+      "commit": "025ee3c09f8d5bf6eb8c832c55fdd65e9d7d6c55",
+      "url": "https://github.com/jonnyg23/mahabrain/blob/025ee3c09f8d5bf6eb8c832c55fdd65e9d7d6c55/sacred_obsidian_vault/bib/cmt/tod/psa103.md",
+      "reading": {
+        "bytes": 133381,
+        "sha256": "556d58c5a1e454d1d4a4bbe760928c9f651182b99cc09148b71dd68fe4096788",
+        "gitBlobSha1": "3b64aee88c789279a51607e32d65924b82eb97ff",
+        "paragraphs": [
+          {
+            "htmlParagraphIndexZeroBased": 248,
+            "text": "When sin is pardoned; it is never charged again; the guilt of it can no more return than east can become west, or west become east. - Stephen Charnock.",
+            "textSha256": "5b4a933df3fecc7cb9a8b4ddf28615583d35c9a7f81773f5a0c7f0399acc2d05"
+          },
+          {
+            "htmlParagraphIndexZeroBased": 317,
+            "text": "\"To do them.\" Commands are to be remembered in order to practice; a vain speculation is not the intent of the publication of them. - Stephen Charnock.",
+            "textSha256": "2d51e20385684ee7dc21929d0c2f2d22de34e2a75e510eb1a1da018a81d59c75"
+          },
+          {
+            "htmlParagraphIndexZeroBased": 116,
+            "text": "Psa 103:19. - \"A Discourse upon God's Dominion.\" See Charnock's Works [Nicol's Edition, Vol. II., pp. 400-499].",
+            "textSha256": "f4aa44cce621e1fb5bb3979d25805f084e1bb4c09f8fcb16315a8ce55e735f21"
+          }
+        ]
+      },
+      "headerAttribution": "The Treasury of David, by Charles Haddon Spurgeon, [1869-85], at sacred-texts.com;self-description of derived file,not verified imprint"
+    },
+    "comparison": {
+      "sourceSentence": "When sin is pardoned, it is never charged again; the guilt of it can no more return, than East can become West, or West become East.",
+      "mirrorSentence": "When sin is pardoned; it is never charged again; the guilt of it can no more return than east can become west, or west become east.",
+      "relation": "SAME_WORD_SEQUENCE_DIFFERENT_PUNCTUATION_AND_CASE"
+    },
+    "historicalUnlocatedRowRetained": true,
+    "supersedesOnly": "REC-01_SOURCE_LOCUS_UNLOCATED",
+    "contextLimits": "2638–2648:11абзацев локального контекста Dominion, не весь дискурс. 2646 — седьмое наблюдение поПс103:11–12;2647 — восьмое, о необходимости послушания. 2641 связывает прощение с обновлением;2642 исключает собственную заслугу/силу как источник духовных благ. 2648 переводит рассмотрение милости к царству и престолу. Не изолировать фразу как разрешение на грех, но и не заменять её утверждение о полноте прощения неуверенным пересказом.",
+    "derivedWitnessLimits": "Современный производный HTML в файле.md, заголовок приписывает его sacred-texts; цепь оцифровки и оригинальное печатное издание не сверены. Это не новый независимый читатель и не повторная проверка BLB. Получен весь файл, выбраны только3абзаца; всё содержание не объявлено прочитанным. Пунктуация и регистр отличаются; Nicol VolIIpp400–499 остаётся непроверенной ссылкой самого производного текста. REC01/02/03/04 остаются одним антологическим случаем.",
+    "limitedConclusion": "Закрыт ранее открытый локатор исходной фразы REC-01: A32723,p699,глобальный нулевой абзац2646,дискурс оDominion. Историческая запись о ненайденном locus сохранена как прежний результат; заменяется только этот отрицательный поисковый итог, не права/печать/независимость свидетелей.",
+    "searchBoundary": "GitHub exactphrase87hits:first10 inspected;with Charnock6hits:all6metadata inspected. One derived mirror acquired and blob/commit linkage verified. Search not exhaustive across editions or internet.",
+    "evidenceClass": "C",
+    "accessState": "FULL_OBJECT_VERIFIED",
+    "locatorState": "EXACT_LOCATOR_VERIFIED",
+    "rightsState": "RIGHTS_UNKNOWN",
+    "publicationState": "BLOCKED",
+    "holds": [
+      "ARCHIVE_HOLD",
+      "EVIDENCE_HOLD",
+      "PUBLICATION_HOLD",
+      "RIGHTS_HOLD"
+    ],
+    "condensedPassage": {
+      "reviewState": "ALL_SIX_ORDERED_POINTS_LOCATED_SELECTIVE_CONDENSATION",
+      "reviewDate": "2026-10-27",
+      "verbatimWholePassage": false,
+      "newIndependentReader": false,
+      "printedEditionCollated": false,
+      "modernAstronomyVerified": false,
+      "publicationApproval": false,
+      "byteVerifiedReading": {
+        "sourceParagraphs": [
+          {
+            "paragraphIndexZeroBased": 2661,
+            "startTeiPage": "701",
+            "text": "His Throne in the Heavens, Notes,",
+            "textSha256": "69e8fe4d2be83c8fbc03fefb979522eac3c944a08dca272e99a78e02509aa921"
+          },
+          {
+            "paragraphIndexZeroBased": 2662,
+            "startTeiPage": "701",
+            "text": "1. The Glory of his Dominion, The Heavens are the most stately and comely peices of the Creation. His Majesty is there most visible, his glory most splendid. Psal. 19.1. The Heavens speak out with a full mouth his Glory. 'Tis therefore called the Habitation of his Holiness and of his Glory, Isaiah 63.15. There is the greater glister and brightness of his Glory. The whole Earth indeed is full of his Glory, full of the beams of it, the Heaven is full of the body of it; as the rayes of the Sun reach the Earth, but the full Glory of it is in the Firmament. In Heaven his Dominion is more acknowledged by the Angels, standing at his beck, and by their readiness, and swiftness obeying his Commands, going and returning as a flash of lightning. Ezek. 1.14. His Throne may well be said to be in the Heavens, since his Dominion is not disputed there by the Angels that attend him, as it is on Earth by the Rebels that arm themselves against him.",
+            "textSha256": "2216fd1840f9638aaf63db26957d94b81e011570283496823d1c947758d5d845"
+          },
+          {
+            "paragraphIndexZeroBased": 2663,
+            "startTeiPage": "701",
+            "text": "2. The Supremacy of his Empire, The Heavens are the loftiest part of the Creation and the only fit Palace for him; 'tis in the Heavens his Majesty and Dignity are so sublime, that they are elevated above all Earthly Empires.",
+            "textSha256": "ca37bf798479e4e8e7d77afeddeada768a5eed2ee472e697421362b097c3e5c4"
+          },
+          {
+            "paragraphIndexZeroBased": 2664,
+            "startTeiPage": "701",
+            "text": "3. Peculiarly of this Dominion. He rules in the Heavens alone. There is some shadow of Empire in the World. Royalty is communicated to men as his Substitutes. He hath disposed a vicarious Dominion to men in his footstool the Earth, he gives them some share in his Authority; and therefore the Title of his Name. Psal. 82.6. I have said ye are Gods; but in Heaven he reigns alone without any Substitutes; his Throne is there: He gives out his orders to the Angels himself, the marks of his Immediate soveraignty are there most visible. He hath no Vicars General of that Empire. His Authority is not delegated to any Creature, he rules the blessed Spirits by himself; but he rules Men that are on his Footstool by others of the same kind, men of their own nature.",
+            "textSha256": "d353b641a60d73821707096a67db378071dd86efffdbde27d4401b34f4ab43a1"
+          },
+          {
+            "paragraphIndexZeroBased": 2665,
+            "startTeiPage": "701",
+            "text": "4. The vastness of his Empire. The Earth is but a spot to the Heavens; What is England in a Mapp to the whole Earth, but a spot, you may cover with your Finger? Much less must the whole Earth be to the extended Heavens; 'Tis but a little point or Atome to what is visible; the Sun is vastly bigger than it, and several Stars are supposed to be of a greater bulk than the Earth; and how many and what Heavens are beyond, the ignorance of man cannot understand. If the Throne of God be there 'tis a larger Circuit he rules in, than can well be conceived. You cannot conceive the many millions of little particles there are in the Earth, and if all put together be but as one point to that place where the Throne of God is seated, how vast must his Empire be? He rules there over the Angels, which excell in strength, those Hosts of his which do his pleasure, in comparison of whom all the Men in the World, and the power of the greatest Potentates is no more than the strength of an Ant or Fly; multitudes of them encircle his Throne, and listen to his orders without roving, and execute them without disputing. And since his Throne is in the Heavens, it will follow, that all things under the Heaven are parts of his Dominion; his Throne being in the highest place, the inferior things of Earth cannot but be subject to him; and it necessarily includes his influence on all things below: because the Heavens are the cause of all the motion in the World, the immediate thing the Earth doth naturally address to for Corn, Wine, and Oyl, above which there is no superior but the Lord. Hosea 2.21, 22. The Earth hears the Corn, Wine, and Oyl; the Heavens hear the Earth, and the Lord hears the Heavens.",
+            "textSha256": "c0d0655a6f8b01948c2fdc38cb8afa5c15fe69590bfc1369fbf976bd2bb8b06e"
+          },
+          {
+            "paragraphIndexZeroBased": 2666,
+            "startTeiPage": "702",
+            "text": "5. The easiness of managing this Government. His Throne being placed on high he cannot but behold all things, that are done below; the height of a place, gives advantage to a pure and clear Eye to behold things below it. Had the Sun an Eye, nothing could be done in the open Air out of its ken. The Throne of God being in Heaven, he easily looks from thence upon all the Children of Men. Psal. 14.2. The Lord looked down from Heaven upon the Children of Men, to see if there were any, that did understand. He looks not down from Heaven, as if he were in regard of his presence confined there, but he looks down majestically and by way of Authority, not as the look of a bare Spectator, but the look of a Governor, to pass a sentence upon them as a Judge. His being in the Heavens renders him capable of doing whatsoever he pleases. Psal. 115.3. His Throne being there, he can by a word in stopping the Motions of the Heavens turn the whole Earth into confusion. In this respect it is said, he rides upon the Heaven in thy help, Deut. 33.26. Discharges his Thunders upon men, and makes the influences of it, serve his peoples interest. By one turn of a cock, as you see in Grottos, he can cause streams from several parts of the Heavens to refresh, or ruine the World.",
+            "textSha256": "2c9551cedc72fc3ac013f4e04c6a7de8dca7bf0db214742fe4a757d79b77a2c1"
+          },
+          {
+            "paragraphIndexZeroBased": 2667,
+            "startTeiPage": "702",
+            "text": "6. Duration of it. The Heavens are incorruptible, his Throne is placed there in an incorruptible state. Earthly Empires have their decayes and dissolutions. The Throne of God outlives the dissolution of the World.",
+            "textSha256": "008affead16bd2f99f4a21a98a8a08bf2fa6043978b1776f1221125d3e2335b9"
+          },
+          {
+            "paragraphIndexZeroBased": 2668,
+            "startTeiPage": "702",
+            "text": "His Kingdom rules over all.] He hath an absolute right over all things within the Circuit of Heaven and Earth; though his Throne be in Heaven, as the place where his Glory is most eminent and visible, his Authority most exactly obey'd, yet his Kingdom extends its self to the lower parts of the Earth. He doth not mufle, and cloud up himself in Heaven, or confine his Soveraignty to that place, his Royal power extends to all visible, as well as invisible things: He is proprietor and possessor of all. Deut. 10.14. The Heaven, and the Heaven of Heavens is the Lords thy God, the Earth also with all that is there. He hath right to dispose of all as he pleases. He doth not say his Kingdom Rules all that fear him, but over all, so that it is not the Kingdom of Grace he here speaks of, but his natural and universal Kingdom. Over Angels, and Men; Jews, and Gentiles; Animate, and Inanimate things.",
+            "textSha256": "ae010dc757acbe70191eb91b4a936aff7b954c0d852997e0c42483243373f5e2"
+          }
+        ],
+        "mirrorParagraphs": [
+          {
+            "htmlParagraphIndexZeroBased": 325,
+            "text": "\"His throne in the heavens,\" denotes:",
+            "textSha256": "4740af3c0c7d78b843729a2571879601512dea8ef5364b495fb4c4915f6998d9"
+          },
+          {
+            "htmlParagraphIndexZeroBased": 326,
+            "text": "1. The glory of his dominion. The heavens are the most stately and comely pieces of the creation; his majesty is there most visible, his glory most splendid, Psa 19:1. In heaven his dominion is more acknowledged by the angels: his dominion is not disputed there by the angels that attend him, as it is on earth by the rebels that arm themselves against him.",
+            "textSha256": "9185c82d44e1d80aac2ed194d716ba403b746361b09bc411ac670cc0e6313988"
+          },
+          {
+            "htmlParagraphIndexZeroBased": 327,
+            "text": "2. The supremacy of his empire, The heavens are the loftiest part of the creation, and the only fit palace for him.",
+            "textSha256": "6e500134c018c389ef554e8d3234fd49d318276fd187923ee4941707a3521be9"
+          },
+          {
+            "htmlParagraphIndexZeroBased": 328,
+            "text": "3. Peculiarity of this dominion lie rules in the heavens alone. His authority is not delegated to any creature, he rules the blessed spirits by himself; but he rules men that are on his footstool by others of the same kind, men of their own nature.",
+            "textSha256": "bcb874fe155f4dd31efa554b2abe1a06fb9e6c0fee33075ee73bc06e5d223f9a"
+          },
+          {
+            "htmlParagraphIndexZeroBased": 329,
+            "text": "4. The vastness of his empire. The earth is but a spot to the heavens. What is England in a map to the whole earth, but a spot you may cover with your finger; much less must the whole earth be to the extended heavens. You cannot conceive the many millions of little particles that are in the earth; and if all put together be but one point to that place where the throne of God is seated, how vast must his empire be! He rules there over the angels, which excel in strength, those hosts of his which do his pleasure, in comparison of whom all the men in the world, and the power of the greatest potentates, is no more than the strength of an ant or fly. And since his throne is in the heavens, it will follow that all things under the heaven are part of his dominion; the inferior things of earth cannot but be subject to him; and it necessarily includes his influence on all things below, because the heavens are the cause of all the motion in the world. See Hos 2:21, Hos 2:22.",
+            "textSha256": "3e139c037cab0b12b9d80276f705c49879f3d21ec04929e19507df7b71d00c06"
+          },
+          {
+            "htmlParagraphIndexZeroBased": 330,
+            "text": "5. The easiness of managing this government. His throne being placed on high, he cannot but behold all things that are done below; the height of a place gives advantage to a clear eye to behold things below it. \"The Lord looked down from heaven upon the children of men, to see if there were any that did understand,\" Psa 14:2. He looks not down from heaven as if his presence were confined there, but he looks down majestically, and by way of authority.",
+            "textSha256": "61d00db9e8a656de761ca7d00f2b98044610e6e6bd9d230e0f6694454068d762"
+          },
+          {
+            "htmlParagraphIndexZeroBased": 331,
+            "text": "6. Duration of it. The heavens are incorruptible, his throne is placed there in an incorruptible state. The throne of God outlives the dissolution of the world. - Condensed from Charnock.",
+            "textSha256": "e06adaaff057e7cced18acc5453f93e6f0849eca1ea2decd73250191915db919"
+          }
+        ],
+        "followingMirrorAuthor": "Thomas Adams."
+      },
+      "pointComparisons": [
+        {
+          "point": 1,
+          "sourceParagraph": 2662,
+          "mirrorParagraph": 326,
+          "retainedSourceSpan": {
+            "text": "his glory most splendid",
+            "sha256": "b72d6e690eb747c22f969ac1263380f111b0afa46a11f58852699cc3ade70e59"
+          },
+          "retainedMirrorSpan": {
+            "text": "his glory most splendid",
+            "sha256": "b72d6e690eb747c22f969ac1263380f111b0afa46a11f58852699cc3ade70e59"
+          },
+          "omittedSourceSpan": {
+            "text": "The whole Earth indeed is full of his Glory, full of the beams of it, the Heaven is full of the body of it;",
+            "sha256": "3174737da045700a2277f6056fd1c0d7385e555a471c33ddb1ca2af97e6e9564"
+          },
+          "finding": "Сохранена слава владычества; опущены часть образов лучей/солнца и развёрнутые ссылки и описание ангельского послушания."
+        },
+        {
+          "point": 2,
+          "sourceParagraph": 2663,
+          "mirrorParagraph": 327,
+          "retainedSourceSpan": {
+            "text": "The Heavens are the loftiest part of the Creation",
+            "sha256": "a4adfb882b09172fe962920463136affcde547ef60013a0cde40339c524dc6bf"
+          },
+          "retainedMirrorSpan": {
+            "text": "The heavens are the loftiest part of the creation",
+            "sha256": "e608d47240149cdadc5efd161e10763d250b8bfcbb40d659cc1074ab2c467c2b"
+          },
+          "omittedSourceSpan": {
+            "text": "'tis in the Heavens his Majesty and Dignity are so sublime, that they are elevated above all Earthly Empires.",
+            "sha256": "262a76585ef728ba1a4389e95c242e606bd02d614f50d22e908c80a051ea28e0"
+          },
+          "finding": "Сохранено верховенство; заключительное явное сравнение с земными империями опущено."
+        },
+        {
+          "point": 3,
+          "sourceParagraph": 2664,
+          "mirrorParagraph": 328,
+          "retainedSourceSpan": {
+            "text": "His Authority is not delegated to any Creature",
+            "sha256": "6c2b581e64814b969364b6dd1cea3a98d7fbf2083317e99f76861829247863fc"
+          },
+          "retainedMirrorSpan": {
+            "text": "His authority is not delegated to any creature",
+            "sha256": "43eada1f510a62e40ee274fb25ae4bf455548d82f06fe01c2857510dab305ab2"
+          },
+          "omittedSourceSpan": {
+            "text": "He hath no Vicars General of that Empire.",
+            "sha256": "9d9be2303090b35bf4516af8117137c6c39e5aee5cc157e77df618e4ae6f136d"
+          },
+          "finding": "Сохранено различие непосредственного правления духами и опосредованного людьми; большая часть развёртывания о заместителях и Пс82:6 опущена. Начальное lie в производном тексте не исправлено."
+        },
+        {
+          "point": 4,
+          "sourceParagraph": 2665,
+          "mirrorParagraph": 329,
+          "retainedSourceSpan": {
+            "text": "The Earth is but a spot to the Heavens",
+            "sha256": "9420b409694ffd5402e1c5a4870f5a14ce2e7e2a8e04558e74ed5f4e98d6556f"
+          },
+          "retainedMirrorSpan": {
+            "text": "The earth is but a spot to the heavens",
+            "sha256": "24f36fcacb2506496af7e29cf6a2cc07d2bd387a468ca7a49a9425506a8a30ec"
+          },
+          "omittedSourceSpan": {
+            "text": "the Sun is vastly bigger than it, and several Stars are supposed to be of a greater bulk than the Earth;",
+            "sha256": "be687044f8a81e134158f093454e1ae9e1897b11f4a5aa22482022e9b512f4c9"
+          },
+          "finding": "Сохранены масштаб, Англия на карте, власть над ангелами и ссылкаHosea2; убрана часть рассуждения о размере солнца/звёзд и неизвестных небесах. Оставшаяся историческая космология не объявлена современной астрономией."
+        },
+        {
+          "point": 5,
+          "sourceParagraph": 2666,
+          "mirrorParagraph": 330,
+          "retainedSourceSpan": {
+            "text": "He looks not down from Heaven, as if he were in regard of his presence confined there",
+            "sha256": "f57dbe70df106ed42045ba6c7b148b7134b4e27d18623630c1aee2203d25fcfd"
+          },
+          "retainedMirrorSpan": {
+            "text": "He looks not down from heaven as if his presence were confined there",
+            "sha256": "3cec5be434a82ebd4194380ea199f4a0b8c3025aaf0acaa08dd31651ca16ed24"
+          },
+          "omittedSourceSpan": {
+            "text": "Had the Sun an Eye, nothing could be done in the open Air out of its ken.",
+            "sha256": "55c9405efab5a66cedcea1e2757cc96c51d16d149b022e010729e6defa6d16b4"
+          },
+          "finding": "Сохранено прямо оговорённое отсутствие пространственного заключения Божьего присутствия в небе; опущены глаз солнца, часть судебного толкования, громы и водные устройства гротов."
+        },
+        {
+          "point": 6,
+          "sourceParagraph": 2667,
+          "mirrorParagraph": 331,
+          "retainedSourceSpan": {
+            "text": "The Throne of God outlives the dissolution of the World.",
+            "sha256": "15ba3ffa6da3de13fba7e43869ef4a1aaa3108573a7f3363992f5a60a50d717a"
+          },
+          "retainedMirrorSpan": {
+            "text": "The throne of God outlives the dissolution of the world.",
+            "sha256": "f1926909764b2aff2f4d20407c3c7dc4247f1c241887a8c8ecf031f5e729c313"
+          },
+          "omittedSourceSpan": {
+            "text": "Earthly Empires have their decayes and dissolutions.",
+            "sha256": "58c7ff0b3730c39716c8e8cefa97c22d2ec33779117f94788a18ff7f4f186337"
+          },
+          "finding": "Шестой пункт сохраняет итог о длительности и фразу о нетленном состоянии; промежуточное противопоставление распаду земных империй опущено."
+        }
+      ],
+      "scope": "Полная шестичастная выдержка производной антологии325–331, включая вводную строку325; сопоставление с2662–2667A32723,pp701–702, и граничными2661/2668. Не весь дискурс, не вся антология; четырёхчастный предшествующий блок319–323 не включён в эту сверку.",
+      "limits": "Все6пунктов локализованы в исходном порядке; это явно помеченное выборочное сокращение. Не доказаны прямое использование1682составителем, полный путь посредников или редакционная стадия изменений. lie/Peculiarly сохранены без конъектуры; печатные изображения не получены. Производный объект тот же, что в78; независимых читателей не прибавилось, состояния и HOLD родительского обзора не ослаблены.",
+      "boundaryConclusion": "Непосредственно следующий полный антологический абзац333 подписан Thomas Adams и не включён в Чарнока. Следующий исходный2668 различает природное универсальное царство и царство благодати: над всеми, не только боящимися. Это не одинаковый спасительный статус всех подданных. Пункт5сокращения сохраняет оговорку против пространственного ограничения Бога. Это локальные наблюдения, не доказательство полной богословской безошибочности сокращения."
+    },
+    "biographicalPraiseReview": {
+      "reviewState": "DERIVED_SYMINGTON_ATTRIBUTION_PRAISE_CONTEXT_NOT_PRINTED_BIOGRAPHY",
+      "reviewDate": "2026-10-27",
+      "sourcePin": {
+        "repository": "BenjaminPoole/Ecumenical-Christian-Library-Obsidian-Vault",
+        "path": "06 Puritans (1600–1700)/Stephen Charnock/The Existence and Attributes of God/EAG 01 Life and Character of Charnock.md",
+        "commit": "c8babb9c7f648c6ed625ffedd16575973da14808",
+        "blob": "1a20abcddcfdfe375386f61fca4c5e90e6ea270e",
+        "bytes": 38106,
+        "sha256": "0405687f5ac825c7d18719aae7e7785a029f7045642f34fe4d181b5704fcc709",
+        "url": "https://github.com/BenjaminPoole/Ecumenical-Christian-Library-Obsidian-Vault/blob/c8babb9c7f648c6ed625ffedd16575973da14808/06%20Puritans%20%281600%E2%80%931700%29/Stephen%20Charnock/The%20Existence%20and%20Attributes%20of%20God/EAG%2001%20Life%20and%20Character%20of%20Charnock.md"
+      },
+      "byteVerifiedReading": {
+        "mirrorFrontmatter": "---\ntitle: \"Life and Character of Charnock\"\nauthor: \"Stephen Charnock\"\nwork: \"The Existence and Attributes of God\"\nsection: 1\nsource: \"Project Gutenberg (gutenberg.org/ebooks/53527)\"\nwritten: \"1682 (published posthumously)\"\ntags:\n  - puritans\n  - stephen-charnock\n---",
+        "paragraphs": [
+          {
+            "indexFromSelectedStart": 0,
+            "text": "All Charnock’s writings are distinguished for sound theology, profound thinking, and lively imagination. They partake of that massive divinity for which the Puritan Divines were in general remarkable, and are of course orthodox in their doctrinal statements and reasonings. Everywhere the reader meets with the evidences and fruits of deep thought, of a mind, indeed, of unusual comprehension and energy of grasp, that could penetrate with ease into the very core, and fathom at pleasure the profoundest depths of the most abstruse and obscure subjects; while, from the rich stores of an exuberant and hallowed fancy, he was enabled to throw over his compositions the most attractive ornaments, and to supply spontaneously such illustrations as were necessary to render his meaning more clear, or his lessons more impressive. In a word, for weight of matter, for energy of thought, for copiousness of improving reflection, for grandeur and force of illustration, and for accuracy and felicitousness of expression, Charnock is equalled by few, and surpassed by none of the writers of the age to which he belonged. The eulogy pronounced by a competent judge on the Treatise on the Attributes, applies with equal justice to all his other writings:—“Perspicuity and depth; metaphysical subtlety and evangelical simplicity; immense learning, and plain but irrefragable reasoning, conspire to render that work one of the most inestimable productions that ever did honor to the sanctified judgment and genius of a human being.”[^3]",
+            "textSha256": "12c0feb35ec349cdd72049316b731759386bf360b9516f69d0f06cc8d54e2611"
+          },
+          {
+            "indexFromSelectedStart": 1,
+            "text": "The correctness of the composition, in these works, is remarkable, considering that they were not prepared for the press by the author himself, and that they must have been originally written amid scenes of distraction and turmoil, arising out of the events of the times. The latter circumstance may account for the manly vigor by which they are characterized, but it only renders their accuracy and polish the more wonderful. Refinement of taste and extensive scholarship can alone explain the chasteness, ease, and elegance of style, so free from all verbosity and clumsiness, which mark these productions. There were giants in literature in those days, and STEPHEN CHARNOCK was not the least of the noble fraternity.",
+            "textSha256": "1360565735050d04389551cf14a9f1497a66c4f461802b67291bbb51d05ffe73"
+          },
+          {
+            "indexFromSelectedStart": 2,
+            "text": "Charnock may not have all the brilliancy of Bunyan, nor all the metaphysical acumen and subtle analysis of Howe, nor all the awful earnestness of Baxter; but he is not less argumentative, while he is more theological than any of them, and his theology, too, is more sound than that of some. “He was not,” say the original editors of his works, “for that modern divinity which is so much in vogue with some, who would be counted the only sound divines; having tasted the old, he did not desire the new, but said the old is better.” There is, therefore, not one of all the Puritan Divines whose writings can with more safety be recommended to the attention of students of divinity and young ministers. It is one of the happy signs of the times in which we live, that a taste for reading such works is beginning to revive; and we can conceive no better wish for the interests of mankind in general, and of our country in particular, than that the minds of our young divines were thoroughly impregnated with the good old theology to be found in such writings as those which we now take the liberty to introduce and recommend. “If a preacher wishes to recommend himself by the weight of his doctrines,” to use the language of Mr. Parsons, “he will find in the writings of Charnock the great truths of Scripture illustrated and explained in the most lucid and masterly manner. If he wishes to be distinguished by the evangelical strain of his discourses, and by the continual exhibition of Christ and him crucified, he will here find the characters of Christ, and the adaptation of the gospel to the circumstances and wants of man as a fallen creature, invariably kept in view. If he wishes for usefulness in the Church of God, here he has the brightest example of forcible appeals to the conscience, and of the most impressive applications of Scripture truth, to the various conditions of mankind. And, finally, if he reads for his own advantage as a Christian, his mind will be delighted with the inexhaustible variety here provided for the employment of his enlightened faculties, and his improvement in every divine attainment.”",
+            "textSha256": "00c5ae4fbc3c3c1bcbf1370d4368deebd9c1d2137d02271b472bbe12ce9aba85"
+          },
+          {
+            "indexFromSelectedStart": 3,
+            "text": "Happy shall we be, if what we have written shall, by the blessing of God, prove the means of producing or reviving a taste for reading the works of our author, being fully convinced with a former editor, that, “while talent is respected, or virtue revered—while holiness of conversation, consistency of character, or elevation of mind, are considered as worthy of imitation—while uniform and strenuous exertion for the welfare of man is honored, and constant devotedness to the glory of God admired, the memory of CHARNOCK shall be held in grateful remembrance.”",
+            "textSha256": "a04093d267d0f1d2677d2842b5bd300c5f733375dca4787f4091be817f83b153"
+          }
+        ],
+        "dateline": "ANNFIELD PLACE, Glasgow, June, 1846.",
+        "topLadyFootnote": "[^3]: Toplady.",
+        "editorialContext": {
+          "source": "A32723",
+          "sourceSha256": "d6205c4062867acf7f01c963ca06395ed07bb4f00774a071fcc8f903d22e6376",
+          "paragraphIndexZeroBased": 4,
+          "startTeiPage": null,
+          "text": "But thou hast in this Book, not only an excellent Subject in the general, but great variety of Matter, for the employment of thy Understanding, as well as enlivening thy Affections, and that too such as thou wilt not readily find elsewhere; many excellent things which are out of the rode of ordinary Preachers and Writers, and which may be grateful to the Curious, no less than satisfactory to the Wise and Judicious. It is not therefore a Book to be play'd with, or slept over, but read with the most intent and serious Mind; for though it afford much pleasure for the Phancy, yet much more work for the heart, and hath indeed enough in it to busie all the Faculties. The Dress is compt and decent, yet not garish nor Theatrical; the Rhetorick masculine and vigorous, such as became a Pulpit, and was never borrowed from the Stage; the Expressions full, clear, apt, and such as are best suted to the weightiness and spirituality of the Truths here delivered. 'Tis plain, he was no empty Preacher, but was more for sense than sound, filled up his words with matter, and chose rather to inform his Hearers Minds, than to claw any itching Ears. Yet we will not say but some little things, a Word, or a Phrase now and then he may have, which no doubt, had he lived to Transcribe his own Sermons, he would have altered. If in some lesser matters he differ from thee, it is but in such as Godly and Learned Men do frequently, and may without breach of Charity differ in among themselves; in some things he may differ from us too, and it may be we from each other; and where are there any two Persons, who have in all, especially the more disputable Points of Religion, exactly the same Sentiments, at least express themselves altogether in the same terms? But this we must say, that though he treat of many of the most abstruse and mysterious Doctrines of Christianity, which are the Subjects of great Debates and Controversies in the World, yet we find no one material thing in which he may justly be called Heterodox (unless old Heresies be of late grown Orthodox, and his differing from them must make him faulty) but generally delivers (as in his former Pieces) what is most consonant to the Faith of This, and other the best Reformed Churches. He was not indeed for that Modern Divinity which is so much in vogue with some, who would be counted the only sound Divines; having tasted the old, he did not desire the new, but said, the old is better. Some Errours, especially the Socinian, he sets himself industriously against, and cuts the very Sinews of them, yet, sometimes, almost without naming them.",
+          "textSha256": "b16d06e6ffca3eb10e196806506ec19c164aaea0c27b8ebad52929dcaeaa4b73"
+        }
+      },
+      "observations": [
+        {
+          "id": "BP01",
+          "finding": "Похвала Perspicuity and depth приписана competent judge,а сноска3называетToplady;не всё в абзаце — собственный голос биографа.",
+          "limit": "Не считать цитированную оценку новым независимым выводом Симингтона или проверенным оригиналомToplady.",
+          "spans": [
+            {
+              "source": "0",
+              "text": "The eulogy pronounced by a competent judge",
+              "sha256": "d0f78cd871f75b91c86ff842725648b5c2cc4379ec920c4fbda2bccc2947a5c3"
+            },
+            {
+              "source": "0",
+              "text": "Perspicuity and depth; metaphysical subtlety and evangelical simplicity;",
+              "sha256": "1f070ac82c75897b19dd796970374d2786096c79b3ab95210158cc9b7722f890"
+            }
+          ]
+        },
+        {
+          "id": "BP02",
+          "finding": "May not в сравнении сBunyan/Howe/Baxter переходит в but и конфессиональную рекомендацию;это не простое ранжирование недостатков.",
+          "limit": "Не обрывать перед but и не выдавать богословское предпочтение за нейтральную сравнительную экспертизу.",
+          "spans": [
+            {
+              "source": "2",
+              "text": "Charnock may not have all the brilliancy of Bunyan",
+              "sha256": "689be3f9cb79211d0f7f3ada9e9f22f3c2b9da97078bb584d6c71b3b8beb1854"
+            },
+            {
+              "source": "2",
+              "text": "but he is not less argumentative, while he is more theological than any of them",
+              "sha256": "68c288965fd18f2d08a171003f3b20073a61580a6fb3ffdad9d369a0d5546f32"
+            },
+            {
+              "source": "2",
+              "text": "his theology, too, is more sound than that of some.",
+              "sha256": "fd6f2c422d00a128c0e5feefcdb44570eb059237bbc24ce20ae93176b022c70b"
+            }
+          ]
+        },
+        {
+          "id": "BP03",
+          "finding": "Фраза о modern divinity внутри этого же абзаца прямо дана как речь original editors;исходныйA32723подтверждает её в ненумерованном предисловии.",
+          "limit": "Не превращать редакторское he said в прямую стенограмму самогоЧарнока;не утверждать буквенную идентичность:indeed в источнике есть,в производной цитате опущено.",
+          "spans": [
+            {
+              "source": "2",
+              "text": "say the original editors of his works",
+              "sha256": "76c2191bc164f1fbed68c458a3aba4a379e10e8f26c72dc424d645a67d68909f"
+            },
+            {
+              "source": "2",
+              "text": "for that modern divinity",
+              "sha256": "8dc845f61f14399985381c1bfee5869a6b3a235255d7768a58031f790b267ad6"
+            },
+            {
+              "source": "EDITOR",
+              "text": "He was not indeed for that Modern Divinity",
+              "sha256": "2246c060bbb94d406401f3a8f71012a46520cf03bccb77b6fd66feb240437819"
+            }
+          ]
+        },
+        {
+          "id": "BP04",
+          "finding": "В полном исходном редакторском абзаце допущены различия междуЧарноком,редакторами и самими редакторами;это ограничивает идею полного единомыслия.",
+          "limit": "Не превращать похвалу ортодоксии в утверждение отсутствия всех разногласий или приписывать биографу всю исходную оговорку.",
+          "spans": [
+            {
+              "source": "EDITOR",
+              "text": "in some things he may differ from us too, and it may be we from each other",
+              "sha256": "e66f3eedcba9e9de95a7b5e5dd5797ae52fa380f1b14a34af4cbd68bb4a1368d"
+            }
+          ]
+        },
+        {
+          "id": "BP05",
+          "finding": "Биографический финал рекомендует чтение студентам и молодым служителям,цитируетParsons и выражает надежду возродить вкус к чтению.",
+          "limit": "Рекомендация и надежда не доказывают реально измеренное влияние,продажи либо результат во всех читателях;финальный former editor не раскрыт нами наугад.",
+          "spans": [
+            {
+              "source": "2",
+              "text": "students of divinity and young ministers",
+              "sha256": "4d7821052361fe0775c4ee13fb56c9b88fba6fc544b4ea302aa7591cbd129fd5"
+            },
+            {
+              "source": "2",
+              "text": "to use the language of Mr. Parsons",
+              "sha256": "05b92ecee772b26307bd875a79b8a3e439865a6eb3cb9344dcfcffed7ab23a61"
+            },
+            {
+              "source": "3",
+              "text": "prove the means of producing or reviving a taste for reading the works of our author",
+              "sha256": "cadfbe209053338e74fe6b4a0e5f90f60e1abc1a139d3d0be658eb9923b11079"
+            }
+          ]
+        },
+        {
+          "id": "BP06",
+          "finding": "Тон more sound и похвала полировке принадлежат оценивающему голосу,не исправляют ограничения рукописной передачи;датировка1846втеле конфликтует с1682вmetadata.",
+          "limit": "МетаданныеauthorStephenCharnock/written1682не делают этот биографический текст самосвидетельствомЧарнока;1846 — переданная датировка,не сверенный первопечатный выходной лист.",
+          "spans": [
+            {
+              "source": "1",
+              "text": "they were not prepared for the press by the author himself",
+              "sha256": "53dedec557ab247b4f65172b07aaef571fc51c7404462dc743372f0c368a7b82"
+            },
+            {
+              "source": "2",
+              "text": "the times in which we live",
+              "sha256": "9de598b3e6f326ccfe91eab841f93f81ef2d73c95f59bd9173374d3c36f63d16"
+            }
+          ]
+        }
+      ],
+      "printedBiographyVerified": false,
+      "mirrorMetadataAuthorshipAccepted": false,
+      "allPraiseIsBiographerOwnVoice": false,
+      "independentEyewitnessAdded": false,
+      "salesEstablished": false,
+      "wholeBiographyRead": false,
+      "publicationApproval": false,
+      "attributionBasis": "REC-08исторически атрибутирована WilliamSymington по заголовку ранее прочитанной веб-транскрипции. Новый производный файл неверно маркирует authorStephenCharnock/written1682;эта metadata не принята. Втеле датировкаAnnfieldPlaceGlasgowJune1846,но bylineSymington в выбранном зеркале не удостоверена печатным титулом. Это контекст сопоставимого текста под прежней атрибуцией,не независимое подтверждение авторства.",
+      "scope": "Получен полный цифровой.md-файл38106байт;прочитаны и сохранены4полных заключительных оценочно-рекомендательных абзаца,датировка,сноска3иmetadata;не вся биография. Сопоставлен полный ненумерованный редакторский абзац4A32723. Топледи/Parsons/редакторы — вложенные голоса,не новые независимые биографические свидетельства.",
+      "rightsLimits": "Зеркало заявляетProjectGutenberg53527какsource,но исходныйPGобъект и его полная лицензия здесь не получены. Никакой вывод о всемирных правах из даты1846иличужогоREADMEне сделан. Полный файл только cache;вплане выбранные короткие контексты.C/RIGHTS_UNKNOWN/BLOCKED/четыреHOLD родительского обзора сохранены.",
+      "limitedConclusion": "Закрыт локальный вопрос жанра/адресата и вложенных голосов похвалы REC-08 в полученном производном тексте:конфессиональная рекомендация молодым служителям,не независимая биография/статистика чтения. Не закрыты печатный локатор/подпись/издание и оригиналыToplady/Parsons."
+    },
+    "digitalCollectionReview": {
+      "reviewState": "SEVEN_WEB_LINKS_NOT_IDENTIFIED_COLLECTED_EDITION",
+      "reviewDate": "2026-10-27",
+      "sourcePins": {
+        "INDEX": {
+          "repository": "jonnyg23/mahabrain",
+          "path": "sacred_obsidian_vault/chr/charnock/index.md",
+          "commit": "025ee3c09f8d5bf6eb8c832c55fdd65e9d7d6c55",
+          "blob": "70e24dccb33dc5f76b27b1f97db0c43aab2d6df1",
+          "bytes": 2727,
+          "sha256": "8e808cf429704ad9969d1a35a7a9831ce31c30faa4573fab2a0b61781ea6050d",
+          "cacheName": "chaindex-83.md",
+          "url": "https://github.com/jonnyg23/mahabrain/blob/025ee3c09f8d5bf6eb8c832c55fdd65e9d7d6c55/sacred_obsidian_vault/chr/charnock/index.md"
+        },
+        "TITLE": {
+          "repository": "jonnyg23/mahabrain",
+          "path": "sacred_obsidian_vault/chr/charnock/cha00.md",
+          "commit": "025ee3c09f8d5bf6eb8c832c55fdd65e9d7d6c55",
+          "blob": "dd69b4e5dd5dff753ebd02adbbd3bf96d791c2c7",
+          "bytes": 729,
+          "sha256": "6f022cefb331eb906b06830eafea10a88deb814aaae984d1d31ff85c0621c070",
+          "cacheName": "cha00-83.md",
+          "url": "https://github.com/jonnyg23/mahabrain/blob/025ee3c09f8d5bf6eb8c832c55fdd65e9d7d6c55/sacred_obsidian_vault/chr/charnock/cha00.md"
+        }
+      },
+      "byteVerifiedReading": {
+        "INDEX": {
+          "paragraphs": [
+            "Stephen Charnock (1628 - 1680), a Puritan divine, was an English Puritan Presbyterian clergyman born in London.",
+            "Charnock studied at Emmanuel College, Cambridge, during which he was converted to Christianity. After leaving the college, he was a private teacher. He a minister of the faith in Southwark for a short time. He continued on to New College, Oxford, where he earned a fellowship and gained a position as senior proctor",
+            "He moved to Ireland in 1656 where he became a chaplain to Henry Cromwell, governor of Ireland. In Dublin, he began preaching to a wide audience. He preached to different classes and denominations with skill.",
+            "In 1660, the monarchy of England was restored after its brief time as the Commonwealth of England. Charles II ascended the throne of England, Scotland, and Ireland. Due to new restrictions, Charnock was now legally prevented from practicing public ministry in Ireland and England. Nevertheless he moved to England and continued to study and to minister in non-public ways.",
+            "Charnock began a co-pastorship at Crosby Hall in London in 1675; this was his last official place of ministry before his death in 1680.",
+            "Nearly all of the numerous writings attributed to him were transcribed after his death. This is a collection of this longer works."
+          ],
+          "headings": [
+            "The Works of Stephen Charnock",
+            "[1629-1680]"
+          ],
+          "contentLinks": [
+            {
+              "href": "cha01.htm",
+              "title": "Discourse of the Nature of Regeneneration"
+            },
+            {
+              "href": "cha02.htm",
+              "title": "Discourse of the Word, the Instrument of Regeneration"
+            },
+            {
+              "href": "cha03.htm",
+              "title": "Necessity of Regeneration"
+            },
+            {
+              "href": "cha04.htm",
+              "title": "Discourse on the Cleansing Virtue of Christ's Blood"
+            },
+            {
+              "href": "cha05.htm",
+              "title": "Discourse of the Efficient of Regeneration, Part I"
+            },
+            {
+              "href": "cha06.htm",
+              "title": "Discourse of the Efficient of Regeneration, Part II"
+            },
+            {
+              "href": "cha07.htm",
+              "title": "Discourse of God's being the Author of Reconciliation"
+            }
+          ]
+        },
+        "TITLE": {
+          "paragraphs": [
+            "The Works of Stephen Charnock, [1628-1680] at sacred-texts.com",
+            ""
+          ],
+          "headings": [
+            "Works of Stephen Charnock",
+            "[1629-1680]"
+          ],
+          "contentLinks": [
+            {
+              "href": "cha01.htm",
+              "title": "Next"
+            },
+            {
+              "href": "cha01.htm",
+              "title": "Next: Discourse of the Nature of Regeneneration"
+            }
+          ]
+        },
+        "biographicalEditionClaim": {
+          "text": "The best edition of Charnock’s works is that published in 1815, in nine volumes, royal 8vo; with a prefatory Dedication, and a Memoir of the Author, by the Rev. Edward Parsons of Leeds.",
+          "textSha256": "3a2cec9ff833f24dfc5d978aa84feff06c4b35b9271eaadd34e11fd6d3ec0d43"
+        }
+      },
+      "parsonsPhysicalEditionVerified": false,
+      "bestEditionRankingVerified": false,
+      "webCollectionIdentifiedAsParsons1815": false,
+      "completeWorksVerified": false,
+      "sevenLinksAreSevenTreatises": false,
+      "birthYearConflictResolved": false,
+      "linkedBodiesRead": false,
+      "publicationApproval": false,
+      "scope": "Полностью прочитаны два коротких производных HTMLфайла:index и вебTitlePage. 7содержательных ссылок,не7полученных тел произведений. Их.text.gz и imageне получены. Из ранее закреплённого биографического зеркала выбран точный отчёт оParsons1815/9volumes/royal8vo;титулы самого издания не получены.",
+      "limits": "Словоbest —оценка биографического слоя,не установленная нами сравнительная экспертиза. Семь вебсегментов не доказательство полногоCollectedWorks и не основание приравнять сайт к1815/1816FAM-04;PartI/IIсами показывают отличие единицы ссылки от единицы трактата. 1629вheadings и1628вbanner/intro —внутренний конфликт цифрового слоя,не новое свидетельство рождения. Происхождение текстов из конкретного печатного издания не установлено. НаследуютсяC/RIGHTS_UNKNOWN/BLOCKED/четыреHOLD;полные файлы толькоcache.",
+      "searchBoundary": "1815/Parsons212hits first15;Charnock/ninevolumes19hits first15;filenameinbox1нецелевой;strict9vols0;Theworksphrase39first15. Частьхитов географические/Charnockite;не исчерпывающий поиск или доказательство отсутствия издания.",
+      "limitedConclusion": "Установлен фактический навигационный объём конкретного вебWorks и его несогласованные метаданные;не установлены полное собрание и изданиеПарсонса. FAM-04сохранён как семейство1815/1816;не заменён одним биографическим утверждением1815."
+    }
+  },
+  "scripturePurposeReview": {
+    "reviewState": "LOCAL_PURPOSE_READING_AND_MIRACLE_CONTRAST_NOT_UNIVERSAL_METHOD",
+    "reviewDate": "2026-10-27",
+    "source": "A32723",
+    "sourceSha256": "d6205c4062867acf7f01c963ca06395ed07bb4f00774a071fcc8f903d22e6376",
+    "byteVerifiedReading": {
+      "source": "A32723",
+      "sourceSha256": "d6205c4062867acf7f01c963ca06395ed07bb4f00774a071fcc8f903d22e6376",
+      "paragraphs": [
+        {
+          "paragraphIndexZeroBased": 1984,
+          "startTeiPage": "449",
+          "discourseHeading": "A DISCOURSE UPON THE Power of God.",
+          "text": "3. It appears in the Motions of all Creatures. All things live and move in him; by the same Power that Creatures have their Beings, they have their Motions: They have not only a Being by his powerful Command, but they have their minutely Motion by his Powerful concurrence. Nothing can act without the Almighty influx of God, no more than it can exist without the Creative Word of God. 'Tis true indeed, the ordering of all Motions to his Holy ends, is an act of Wisdom; but the motion it self whereby those Ends are attained, is a work of his Power.",
+          "textSha256": "6b76d02cf9ef58b1daa84eb839f13b54e64845529cc58ab51d98271499a8fbe7"
+        },
+        {
+          "paragraphIndexZeroBased": 1985,
+          "startTeiPage": "449",
+          "discourseHeading": "A DISCOURSE UPON THE Power of God.",
+          "text": "1. God as the first Cause hath an influence into the motions of all second Causes. As all the Wheels in a Clock are moved in their different motions, by the force and strength of the principal and primary Wheel; if there be any defect in that, or if that stand still, all the rest languish and stand idle the same moment. All Creatures are his Instruments, his Engines, and have no Spirit, but what he gives, and what he assists. Whatsoever Nature works, God works in Nature; Nature is the Instrument, God is the Supporter, Director, Mover of Nature; that what the Prophet saith in another case, may be the language of universal Nature, Lord, thou hast wrought all our works in us, Isai. 26.12. They are our works subjectively, efficiently, as second causes; Gods works originally, concurrently. The Sun moved not in the Valley of Ajalon for the space of many hours, in the time of Joshua ; nor did the Fire exercise its consuming quality upon the Three Children, in Nebuchadnezzars Furnace : He withdrew not his supporting Power from th ir Being, for then they had van • shed, but his influencing Power from their qualities, whereby their motion ceas'd, till he return'd his influential concurrence to them; which evidenceth, that without a perpetual derivation of Divine Power, the Sun could not run one stride or inch of its race, nor the Fire devour one grain of light Chaff, or an inch of Straw. Nothing without his sustaining Power can continue in Being; nothing without his co-working Power can exercise one mite of those qualities it is possessed of. All Creatures are wound up by him, and his hand is constantly upon them, to keep them in perpetual motion.",
+          "textSha256": "0086b6fe0290ffffe2126d8315eebb475413a2fe099eedc128952211e67fab74"
+        },
+        {
+          "paragraphIndexZeroBased": 1986,
+          "startTeiPage": "449",
+          "discourseHeading": "A DISCOURSE UPON THE Power of God.",
+          "text": "2. Consider the variety of motions in a single Creature. How many motions are there in the Vital parts of a Man, or in any other Animal, which a Man knows not, and is unable to number? The renewed motion of the Lungs, the Systoles and Diastoles of the Heart; the Contractions and Dilatations of the Heart, whereby it spouts out and takes in Blood; the power of Concoction in the Stomach; the motion of the Blood in the Veins, &c. all which were not only setled by the Powerful hand of God, but are upheld by the same, preserv'd and influenc'd in every distinct motion by that Power that stampt them with that Nature. To every one of those there is not only the sustaining Power of God holding up their Natures, but the motive Power of God concurring to every motion; for if we move in him as well as we live in him, then every particle of our motion is exercised by his concurring Power, as well as every moment of our Life supported by his preserving Power. What an infinite variety of motions is there in the whole World in universal Nature, to all which God concurs, all which he conducts, even the motions of the meanest as well as the greatest Creatures, which demonstrate the indefatigable Power of the Governour. 'Tis an Infinite Power which doth act in so many varieties, whereby the Soul forms every Thought, the Tongue speaks every Word, the Body exerts every Action. What an Infinite Power is that which presides over the birth of all things, concurs with the motion of the Sap in the • ree, Rivers on the Earth, Clouds in the Air, every drop of Rain, fleece of Snow, crack of Thunder? Not the least motion in the World, but is under an actual influence of this Almighty Mover.",
+          "textSha256": "9d83d07b2ee5b0c7c11af8661e70aa4f3f81bafd5b505f36df4f8264f7ab4155"
+        },
+        {
+          "paragraphIndexZeroBased": 2644,
+          "startTeiPage": "698",
+          "discourseHeading": "A DISCOURSE UPON GODS Dominion.",
+          "text": "5. Where sin is pardon'd, the punishment is remitted. Verse 3, 4. Who forgives all thy iniquities, and Redeems thy Life from destruction. A Malefactors pardon puts an end to his chains, frees him from the stench of the Dungeon, and fear of the Gibbet. Pardon is nothing else but the remitting of guilt, and guilt is nothing else but an obligation to punishment as a penal debt for sin. A Creditors tearing a Bond frees the Debtor from payment, and rigor.",
+          "textSha256": "1c2a6cf74b8b6073701671b0cb03161f047eebc7cb56a70d7bcce21ae1746eb0"
+        },
+        {
+          "paragraphIndexZeroBased": 2645,
+          "startTeiPage": "699",
+          "discourseHeading": "A DISCOURSE UPON GODS Dominion.",
+          "text": "6. Growth in Grace is always annext to true Sanctification. Verse 3. So that thy youth is renew'd like the Eagles. Interpreters trouble themselves much about the manner of the Eagles renewing its youth, and regaining its vigor: He speaks best, that saith, the Psalmist speaks only according to the opinion of the vulgar, and his design was not to write a Natural History. Growth always accompanies Grace, as well as it doth Nature in the Body; not that it is without its qualms, & languishing fits as Children are not, but still their distempers make them grow; Grace is not an idle, but an active principle. 'Tis not like, the Psalmist means it of the strength of the Body, or the prosperity and stability of his Government, but the vigor of his Grace and Comfort, since they are spiritual blessings here, that are the matter of his song. The healing the Disease conduceth to the sprouting up, and flourishing of the Body. 'Tis the Nature of Grace to go from strength to strength.",
+          "textSha256": "426ebb729e365497809be06cd3bbc580423360e96c886d93688eb0916beeda1a"
+        },
+        {
+          "paragraphIndexZeroBased": 2646,
+          "startTeiPage": "699",
+          "discourseHeading": "A DISCOURSE UPON GODS Dominion.",
+          "text": "7. When sin is pardoned, 'tis perfectly pardon'd. Verse 11, 12. As far as the East is from the West, so far hath he removed our transgressions from us. The East and West are the greatest distance in the World, the terms can never meet together: When sin is pardoned, it is never charged again; the guilt of it can no more return, than East can become West, or West become East.",
+          "textSha256": "b7a937e11185e18e0511a2ff931d036fc155d6cd816e81e42e69024be321c459"
+        }
+      ],
+      "marginalNotes": [
+        {
+          "parentParagraphIndexZeroBased": 1984,
+          "teiPage": "449",
+          "text": "Acts 17.28."
+        },
+        {
+          "parentParagraphIndexZeroBased": 1985,
+          "teiPage": "449",
+          "text": "Josh. 10.13."
+        },
+        {
+          "parentParagraphIndexZeroBased": 1985,
+          "teiPage": "449",
+          "text": "Dan. 3.25."
+        },
+        {
+          "parentParagraphIndexZeroBased": 2645,
+          "teiPage": "699",
+          "text": "Amyrald. in loc."
+        }
+      ],
+      "eagleNoteTail": "He speaks best, that saith, the",
+      "noteBeforePreferredReading": true
+    },
+    "observations": [
+      {
+        "id": "SP01",
+        "finding": "Все движения тварей — по Всевышнему同意: бытие и движение даны одним и тем же Божественным действием; порядок к聖тым целям — акт Мудрости, само движение — акт Силы.",
+        "limit": "Один локальный контекст учения о Силе Божьей (ст3с449), не доказательство всеобщего детерминизма и не универсальный метод толкования Писания.",
+        "spans": [
+          {
+            "text": "by the same Power that Creatures have their Beings, they have their Motions: They have not only a Being by his powerful Command, but they have their minutely Motion by his Powerful concurrence. Nothing can act without the Almighty influx of God, no more than it can exist without the Creative Word of God. 'Tis true indeed, the ordering of all Motions to his Holy ends, is an act of Wisdom; but the motion it self whereby those Ends",
+            "paragraph": "1984",
+            "sha256": "34c6aebeb2d64d03bf57912a491f78c9740b45c5f5015ef9a317b7a2581031b7"
+          }
+        ]
+      },
+      {
+        "id": "SP02",
+        "finding": "Бог как Первая причина действует через вторые причины; солнце в долине Аялон и дети в печи — чудеса приостановки/сохранения свойств, а не стирание твари.",
+        "limit": "Аналогия с циферблатом часов — иллюстрация, а не независимый физический трактат; солнце и печь сохранены как чудеса, не аллегоризированы.",
+        "spans": [
+          {
+            "text": "The Sun moved not in the Valley of Ajalon for the space of many hours, in the time of Joshua ; nor did the Fire exercise its consuming quality upon the Three Children, in Nebuchadnezzars Furnace : He withdrew not his supporting Power from th ir Being, for then they had van • shed, but his influencing Power from their qualities, whereby their motion ceas'd, till he return'd his influential concurrence to them; which evidenceth",
+            "paragraph": "1985",
+            "sha256": "f66c721e80ef2a100e0c769bf810e6838567ed3f593e7e8a0fbae0a346cb8087"
+          }
+        ]
+      },
+      {
+        "id": "SP03",
+        "finding": "Бесконечное разнообразие движений во Вселенной — под действием Всевышнего Двигателя; даже наименьшее движение под Его влиянием.",
+        "limit": "Общая теология providence, не современная физиология или зоология; два отрывка не заменяют проверку всех пяти карт III.",
+        "spans": [
+          {
+            "text": "Not the least motion in the World, but is under an actual influence of this Almighty Mover.",
+            "paragraph": "1986",
+            "sha256": "67322636bd3f5f49941cce46ac5ff2458b4fa9df7953b3d8d3443333076ac910"
+          }
+        ]
+      },
+      {
+        "id": "SP04",
+        "finding": "Прощение греха изображено как отмена наказания; долг/залог как analogia для объяснения вины как обязанности к наказанию.",
+        "limit": "Локальное объяснение стиха 3–4 Пс 102 (ст5с698), не полная доктрина оправдания и не универсальный метод толкования.",
+        "spans": [
+          {
+            "text": "Verse 3, 4. Who forgives all thy iniquities, and Redeems thy Life from destruction. A Malefactors pardon puts an end to his chains, frees him from the stench of the Dungeon, and fear of the Gibbet. Pardon is nothing else but the remitting of guilt, and guilt is nothing else but an obligation to punishment as a penal debt for sin. A Creditors tearing a Bond frees the Debtor from payment, and rigor.",
+            "paragraph": "2644",
+            "sha256": "5db5ad17141dd8f93fd41d318e77880dec080c26f893f153cafafda945f47f46"
+          }
+        ]
+      },
+      {
+        "id": "SP05",
+        "finding": "Неопределённость «обновления юности орла» оставляется по «мнению простых» (vulgar opinion); намерение Псалмопевца не в написании естественной истории.",
+        "limit": "Не современная орнитология и не универсальное правило для всех упоминаний животных; стих 3 сохранён как передан, без исправления номера.",
+        "spans": [
+          {
+            "text": "He speaks best, that saith, the Psalmist speaks only according to the opinion of the vulgar, and his design was not to write a Natural History.",
+            "paragraph": "2645",
+            "sha256": "50e8ce0f600e50acc868eb96501d5b2a227e345fd8b6805685ce60bd0977c1ba"
+          }
+        ]
+      },
+      {
+        "id": "SP06",
+        "finding": "Маржинальная примета Amyrald. in loc. поставлена ПЕРЕД предпочтительным чтением «Он говорит лучше всего...»; примета подчинена суждению толкователя.",
+        "limit": "Примечание не отдельно приобретённый оригинал Амиралда; не доказывает заимствование и не заменяет проверку чужого источника.",
+        "spans": [
+          {
+            "text": "Growth in Grace is always annext to true Sanctification.",
+            "paragraph": "2645",
+            "sha256": "2ad1694ef10d5273429c7a90c88f5e4e1a379e63598f4544865fd2e68dc3c038"
+          }
+        ]
+      },
+      {
+        "id": "SP07",
+        "finding": "Полное прощение сравнено с расстоянием восток—запад: вина больше не возвращается.",
+        "limit": "Локальное учение о прощении (ст7с699), не всеобщее уравнение всех ситуаций покаяния и не полная доктрина греха.",
+        "spans": [
+          {
+            "text": "As far as the East is from the West, so far hath he removed our transgressions from us. The East and West are the greatest distance in the World, the terms can never meet together: When sin is pardoned, it is never charged again; the guilt of it can no more return, than East can become West, or West become East.",
+            "paragraph": "2646",
+            "sha256": "0bc46e7c37798d472aed049943a127981f6ab43018148c39d6dd72de38f0ed5c"
+          }
+        ]
+      }
+    ],
+    "wholeDiscoursesRead": false,
+    "universalMethodEstablished": false,
+    "allMiraclesAllegorised": false,
+    "modernZoologyVerified": false,
+    "allPhysiologyVerified": false,
+    "amyraldOriginalAcquired": false,
+    "unnamedInterpreterIndependentlyIdentified": false,
+    "verseNumberSilentlyCorrected": false,
+    "publicationApproval": false,
+    "evidenceClass": "C",
+    "accessState": "FULL_OBJECT_VERIFIED",
+    "locatorState": "EXACT_LOCATOR_VERIFIED",
+    "rightsState": "RIGHTS_UNKNOWN",
+    "publicationState": "BLOCKED",
+    "holds": [
+      "EVIDENCE_HOLD",
+      "ARCHIVE_HOLD",
+      "RIGHTS_HOLD",
+      "PUBLICATION_HOLD"
+    ],
+    "scope": "Два локальных контекста PowerofGod (ст3–5с449) и Godsdominion (ст5–7с698–699), без чтения целых проповедей или установления универсального метода.",
+    "limits": "Два отрывка не заменяют проверку всех пяти TXT картIII и не обосновывают универсальный метод толкования. Чудеса Джошуа и детейвогне сохраняются как чудеса, не аллегоризированы. Примечание Amyrald не отдельный оригинальный источник. Ст3 в отрывкеорла сохраняется как передано, без исправления номера стиха. Не исследована современная зоология/физиология. Не подтверждён unnamed interpreter.",
+    "limitedConclusion": "Локальное прочтение показывает: ambiguo переводу eagle оставляется предельная uncertain, miracles отмечены как чудеса Божественной власти над природой, а не метафора; при этом это два контекста из проверяемыхпяти, не 근거 для универсального метода. C/RIGHTS_UNKNOWN/BLOCKED/пятьHOLD.",
+    "searchBoundary": "ничего не искалось для этого обзора; источник A32723 закреплён ранее.",
+    "scripturePurposeContexts": 2,
+    "scripturePurposeObservations": 7
   }
 }
