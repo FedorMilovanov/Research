@@ -1,6 +1,7 @@
 # Пуритане и practical theology отступничества — claim-indexed primary-source map
 
-**Дата:** 2026-10-01  
+**Дата создания:** 2026-10-01<br>
+**Последнее обновление:** 2026-10-05 (W35; John Owen, *Apostasy*, ch. I and ch. XII pp. 223–224 added at §3.5)<br>
 **Статус:** `PRIMARY-SOURCE MAP / PRACTICAL-THEOLOGY LAYER / PUBLICATION_HOLD`  
 **Authority:** lowercase `apostasy/` corpus  
 **Parent:** `88_OT_SOURCE_CUSTODY_CLOSURE_RERUN_2026-10-01.md`  
@@ -215,6 +216,29 @@ Owen insists that preservation requires:
 This supports the project’s Hebrews/Jude synthesis without making means meritorious causes of justification.
 
 Status: `P1/P3`.
+
+---
+
+## 3.5. Owen: Peter’s denial is not the irreversible apostasy of Hebrews 6
+
+### Direct digital locator
+
+John Owen, *The Nature and Causes of Apostasy from the Gospel*, chapter I, especially pp. 35–36 and 38–39; chapter XII, pp. 223–224. CCEL’s reader identifies its print basis as Banner of Truth, Edinburgh, 1965; the page labels in the digital text are the printed page numbers. This pass read the chapter-I text directly and the cited portion of chapter XII, but did not collate a physical copy or Owen’s original-language text.
+
+### Claim Owen makes
+
+- On pp. 35–36, Owen distinguishes a particular sin under temptation or surprisal—including Peter’s denial of Christ under danger—from the deliberate, total, avowed renunciation he takes Hebrews 6 to describe. Peter, he says, fell into the relevant denial and was speedily renewed to repentance; therefore a single grievous fall is not by itself proof that a person is beyond recovery.
+- On pp. 38–39, he says that someone who desires and seeks repentance is not the person described as irrecoverable in Hebrews 6. This is a pastoral inference from Owen’s reading of Hebrews, not permission to disregard warnings or consequences.
+- On pp. 223–224, he turns Peter’s confidence before the denial into a warning against presumption: human resolutions do not remove exposure to temptation, so the warnings and means of preservation must be taken seriously.
+- Earlier in chapter I (pp. 32–34, 46), Owen distinguishes real spiritual privileges/gifts and Spirit-wrought operations from saving grace/inhabitation. This is useful as a theological control for Judas’s office and gifts, but Owen’s cited discussion is **not** a direct case study of Judas.
+
+### Claim supported / limits
+
+> **A severe denial under pressure and an irreversible, deliberate repudiation are not automatically identical; restoration remains the church’s posture toward one who seeks repentance, while warnings remain real.**
+
+Use Owen downstream from Luke 22 and the Gospel narratives. His reading of Hebrews 6 is a major Reformed interpretation, not a lexical trump card or a neutral summary of all Christian exegesis. Do not claim that Owen directly exegetes Judas in these passages, or that his judgment alone establishes Judas’s final state.
+
+Status: `P1/P3 — digital English text directly read; print/original-language collation open`.
 
 ---
 
