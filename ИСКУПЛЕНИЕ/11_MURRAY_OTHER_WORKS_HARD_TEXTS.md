@@ -35,7 +35,7 @@
 | M21 | *The Atonement* (брошюра / ст. энциклопедии) | P&R 1976; позже *Encyclopedia of Christianity*; зеркало Highway | copyright | публичная HTML-страница прочитана целиком (9 чанков) | §V Extent = конденсат I.4 + списки universal terms |
 | M22 | «The Atonement and the Free Offer of the Gospel» | *Collected Writings* 1:59–85 | copyright Banner | полного текста нет; премиум-саммари Books at a Glance обрывается | отношение definite atonement ↔ offer |
 | M23 | «The Atonement» | *Collected Writings* 2:142–150 | copyright | полного текста нет | короткий очерк природы |
-| M24 | OPC, *The Free Offer of the Gospel* (majority) | 1948; CW 4:113–132 | церковный отчёт, публично на opc.org | HTML прочитан (чанки 0–6/8) | 2 Пет. 3:9, Иез., Мф. 23:37 — воля/желание, не extent |
+| M24 | OPC, *The Free Offer of the Gospel* (majority) | 1948; CW 4:113–132 | церковный отчёт, публично на opc.org | EN: чанки 0–7 целиком; RU-полный доклад читан целиком; носители Drive 10.5 — `19_` | 2 Пет. 3:9, Иез., Мф. 23:37 — воля/желание, не extent |
 | M25 | *The Epistle to the Romans* NICNT vol. I | Eerdmans 1960 | copyright | страницы не в руках; вторичка на 5:18 | Рим. 5:18 «все люди» |
 | M26 | «Arminianism and the Atonement» / common grace CW 2:93–119 | copyright | не добывались | не первая волна |
 
@@ -138,9 +138,15 @@ Heidelblog (навигация CW 1:59–85 и 2:142–50): вторичка.
 
 URL: https://opc.org/GA/free_offer.html  
 Авторы majority: John Murray, Ned B. Stonehouse, Arthur W. Kuschke, Jr.  
-Это **не** исповедание. Minority: Young / Hamilton, на той же странице.
+Это **не** исповедание. Minority: Young / Hamilton, на той же странице. **Статус уточнён
+2026-10-28:** ГА 1948 не утверждала доклад — majority **и** minority спущены пресвитериям и
+собраниям «на серьёзное изучение» («be sent down… for earnest study»), с отдельной минутой Клауни;
+для статьи верная формула — «доклад, спущенный на изучение вместе с разногласным мнением»
+(`19_` §10).
 
-Прочитано 2026-10-07 (чанки 0–6 из 8). Ниже — аналитический пересказ.
+Прочитано 2026-10-07 (EN, чанки 0–6 из 8); **полная дочитка 2026-10-28**: страница EN целиком
+(чанки 0–7) и полный RU-текст (носители — ниже и в `19_` §§14–15). Ниже — аналитический пересказ,
+сверенный с обоими носителями.
 
 Полный русский перевод majority-доклада принят 2026-10-28 (Drive `10.5`, `1DRgOqgLm27YPdw8ePlLixoawkaY22mDo`,
 139776 B, md5 `527ac2739c26e2f3babae3ca571be6ef`; приёмка и карта локусов — `19_`). Прочитан целиком:
