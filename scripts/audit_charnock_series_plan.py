@@ -5,6 +5,10 @@ import hashlib
 import json
 from pathlib import Path
 
+from audit_charnock_copyist_transmission import check_review as check_copyist_transmission
+from audit_charnock_mercy_distinctions import check_review as check_mercy_distinctions
+from audit_charnock_reception_locus import check_review as check_reception_locus
+from audit_charnock_folio_apparatus import check_review as check_folio_apparatus
 from audit_charnock_cartesian_definition import check_review as check_cartesian_definition
 from audit_charnock_mourning import check_review as check_mourning_complete
 from audit_charnock_childbearing import check_review as check_childbearing
@@ -18,7 +22,7 @@ from audit_charnock_reference_material import check_review as check_reference_ma
 from audit_charnock_death_witnesses import check_review as check_death_witnesses
 from audit_charnock_editorial_voice import check_review as check_editorial_voice
 from audit_charnock_editorial_translations import check_review as check_editorial_translations, check_authorial_review, check_atheism_review, check_enmity_review
-from audit_charnock_source_use import check_critical_review, check_acquisition_boundary
+from audit_charnock_source_use import check_critical_review, check_acquisition_boundary, check_scripture_purpose
 from audit_charnock_translation_contexts import check_review
 from audit_charnock_editorial_links import check_review as check_routing_review
 
@@ -189,6 +193,11 @@ def check(plan, root=ROOT):
     thoughts_report['thoughtsOpeningCureSectionRead'] = thoughts_report.pop('thoughtsCureSectionRead')
     thoughts_complete_report = check_thoughts_complete(plan, registry)
     cartesian_report = check_cartesian_definition(plan, registry)
+    folio_apparatus_report = check_folio_apparatus(plan, registry)
+    copyist_transmission_report = check_copyist_transmission(plan, registry)
+    mercy_distinctions_report = check_mercy_distinctions(plan, registry)
+    reception_locus_report = check_reception_locus(plan, registry)
+    scripture_purpose_report = check_scripture_purpose(plan, registry)
     childbearing_report = check_childbearing(plan, registry)
     opening_report = check_regenerate_opening(plan, registry)
     continuation_report = check_regenerate_continuation(plan, registry)
@@ -439,7 +448,7 @@ def check(plan, root=ROOT):
                 registeredReferences=len(used), dossierCaseCandidates=len(cases),
                 studyCards=len(cards), freshlyReplayedScriptureWindows=4, selectedScriptureContextsVerified=5, theologicalRows=len(matrix),
                 bookRoutes=len(route), bookContextReviews=len(reviews),
-                **mourning_complete_report, **mourning_report, **pardon_report, **pardon_opening_report, **pardon_complete_report, **stability_report, **stability_complete_report, **fifth_november_report, **prayer_report, **thoughts_report, **thoughts_complete_report, **cartesian_report, **childbearing_report, **opening_report, **continuation_report, **doctrinal_report, **political_report, **reference_report, **routing_report, **editorial_voice_report, **editorial_translation_report, **authorial_translation_report, **atheism_report, **enmity_report, **death_witness_report, earlierWorkingTranslationDrafts=translation_drafts, workingTranslationDrafts=translation_drafts + editorial_translation_report['editorialWorkingTranslationDrafts'] + authorial_translation_report['authorialWorkingTranslationDrafts'] + atheism_report['atheismWorkingTranslationDrafts'] + enmity_report['enmityWorkingTranslationDrafts'], independentlyReviewedTranslations=0,
+                **mourning_complete_report, **mourning_report, **pardon_report, **pardon_opening_report, **pardon_complete_report, **stability_report, **stability_complete_report, **fifth_november_report, **prayer_report, **thoughts_report, **thoughts_complete_report, **cartesian_report, **folio_apparatus_report, **copyist_transmission_report, **mercy_distinctions_report, **reception_locus_report, **scripture_purpose_report, **childbearing_report, **opening_report, **continuation_report, **doctrinal_report, **political_report, **reference_report, **routing_report, **editorial_voice_report, **editorial_translation_report, **authorial_translation_report, **atheism_report, **enmity_report, **death_witness_report, earlierWorkingTranslationDrafts=translation_drafts, workingTranslationDrafts=translation_drafts + editorial_translation_report['editorialWorkingTranslationDrafts'] + authorial_translation_report['authorialWorkingTranslationDrafts'] + atheism_report['atheismWorkingTranslationDrafts'] + enmity_report['enmityWorkingTranslationDrafts'], independentlyReviewedTranslations=0,
                 titleTranscriptions=len(titles), unitDecisions=len(decisions), biographicalWordingDecisions=len(claims),
                 sourceUseMicroReadings=micro_readings, inheritedCounterpartGlosses=inherited_glosses,
                 sourceUsePairs=len(source_cases), pastoralContexts=7, selectedWorkProfiles=5, mercyOpeningParagraphs=7, synthesisConnections=4, titleState=documents[3]["titleState"],

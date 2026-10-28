@@ -136,6 +136,61 @@ def check_critical_review(case, dossier_text):
     return len(rows), len(glosses)
 
 
+def extract_scripture_purpose(path,registry):
+    from audit_charnock_pastoral_contexts import source_structure
+    _,_,parents,pages,paras=source_structure(path.parent,registry,'A32723')
+    result=[]
+    for i in [1984,1985,1986,2644,2645,2646]:
+        node=paras[i]
+        while node in parents and not (node.tag==NS+'div' and node.get('type')=='discourse'):node=parents[node]
+        text=plain(paras[i])
+        result.append(dict(paragraphIndexZeroBased=i,startTeiPage=pages[paras[i]],discourseHeading=plain(node.find(NS+'head')),
+                           text=text,textSha256=hashlib.sha256(text.encode()).hexdigest()))
+    note_rows=[dict(parentParagraphIndexZeroBased=i,teiPage=pages[n],text=' '.join(''.join(n.itertext()).replace('ſ','s').split())) for i in [1984,1985,1986,2644,2645,2646] for n in paras[i].iter(NS+'note')]
+    note=next(paras[2645].iter(NS+'note'));xml=ET.tostring(paras[2645],encoding='unicode')
+    return dict(source='A32723',sourceSha256=registry['sources']['A32723']['sha256'],paragraphs=result,marginalNotes=note_rows,
+                eagleNoteTail=plain(ET.fromstring('<p>'+ (note.tail or '').replace('&','&amp;')+'</p>')),
+                noteBeforePreferredReading=xml.index('Amyrald')<xml.index('He ſpeaks beſt'))
+
+
+def check_scripture_purpose(plan,registry):
+    from audit_charnock_thoughts import digest,HOLDS
+    key='scripturePurposeReview';r=plan[key];reading=r['byteVerifiedReading'];rows=reading['paragraphs']
+    if (r['reviewState']!='LOCAL_PURPOSE_READING_AND_MIRACLE_CONTRAST_NOT_UNIVERSAL_METHOD'
+            or any(r[k] is not False for k in ['wholeDiscoursesRead','universalMethodEstablished',
+                 'allMiraclesAllegorised','modernZoologyVerified','allPhysiologyVerified','amyraldOriginalAcquired',
+                 'unnamedInterpreterIndependentlyIdentified','verseNumberSilentlyCorrected','publicationApproval'])):
+        raise ValueError('Two contexts do not certify universal method, modern science or foreign original')
+    if reading['source']!='A32723' or reading['sourceSha256']!=registry['sources']['A32723']['sha256']:
+        raise ValueError('Scripture-purpose source pin mismatch')
+    if ([p['paragraphIndexZeroBased'] for p in rows]!=[1984,1985,1986,2644,2645,2646]
+            or [p['discourseHeading'] for p in rows]!=['A DISCOURSE UPON THE Power of God.']*3+['A DISCOURSE UPON GODS Dominion.']*3
+            or [p['startTeiPage'] for p in rows]!=['449']*3+['698','699','699']):
+        raise ValueError('Keep selected Power and Dominion contexts distinct')
+    if any(digest(p['text'])!=p['textSha256'] for p in rows):raise ValueError('Scripture-purpose text hash mismatch')
+    notes=[(1984,'Acts 17.28.'),(1985,'Josh. 10.13.'),(1985,'Dan. 3.25.'),(2645,'Amyrald. in loc.')]
+    if (reading['marginalNotes']!=[dict(parentParagraphIndexZeroBased=i,teiPage='449' if i<2000 else '699',text=t) for i,t in notes]
+            or reading['noteBeforePreferredReading'] is not True
+            or not reading['eagleNoteTail'].startswith('He speaks best, that saith, the')):
+        raise ValueError('Keep Amyrald note at preferred reading, and named miracle references')
+    baseline={p['paragraphIndexZeroBased']:p for p in plan['receptionLocusReview']['byteVerifiedSource']['paragraphs']}
+    if any(row['text']!=baseline[row['paragraphIndexZeroBased']]['text'] for row in rows[3:]):
+        raise ValueError('Earlier three Dominion paragraphs remain unchanged')
+    if 'Verse 3. So that' not in rows[4]['text']:raise ValueError('Preserve transmitted verse marker without silent correction')
+    if [o['id'] for o in r['observations']]!=[f'SP{i:02}' for i in range(1,8)]:raise ValueError('Seven bounded interpretive decisions required')
+    texts={str(p['paragraphIndexZeroBased']):p['text'] for p in rows}
+    for o in r['observations']:
+        if not o['finding'] or not o['limit'] or not o['spans']:raise ValueError('Interpretive observation needs limits')
+        for span in o['spans']:
+            if not span['text'] or span['text'] not in texts[span['paragraph']] or digest(span['text'])!=span['sha256']:
+                raise ValueError('Actual source spans required')
+    if (key not in [x['id'] for x in plan['documents'][3].get('supplementaryContextReadings',[])] or r['evidenceClass']!='C'
+            or r['accessState']!='FULL_OBJECT_VERIFIED' or r['locatorState']!='EXACT_LOCATOR_VERIFIED'
+            or r['rightsState']!='RIGHTS_UNKNOWN' or r['publicationState']!='BLOCKED' or set(r['holds'])!=HOLDS):
+        raise ValueError('Preserve partIII ownership and independent evidence axes')
+    return dict(scripturePurposeContexts=2,scripturePurposeObservations=7,scriptureUniversalMethodEstablished=False)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('xml', type=Path)
@@ -158,7 +213,9 @@ def main():
                     at = body.index(span)
                     if list(dict.fromkeys(labels[at:at + len(span)])) != row['spanTeiPages']:
                         raise ValueError('Micro-reading page span differs from source bytes')
-            print('Three Charnock contexts/notes plus12micro-span locators: PASS. Counterpart OCR NOT independently replayed.')
+            check_scripture_purpose(plan,registry)
+            if extract_scripture_purpose(args.xml,registry)!=plan['scripturePurposeReview']['byteVerifiedReading']:raise ValueError('Scripture-purpose reading differs from pinned XML')
+            print('Three source-use contexts+two scripture-purpose contexts:PASS;foreign originals and universal method NOT certified')
         else:
             print(json.dumps(result, ensure_ascii=False, indent=2))
     except (OSError, ValueError, KeyError, ET.ParseError) as exc:
