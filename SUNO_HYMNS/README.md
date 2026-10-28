@@ -2,7 +2,7 @@
 
 **Project ID:** SUNO-HYMNS-NL  
 **Snapshot date:** 2026-10-26  
-**State:** publication pass (2026-10-26). DUTCH-005 carries a full publication package — YouTube titles, description, tags, two pinned comments and a Telegram post — and the owner reports it generated, covered and uploaded; no URL, file or take is held here, so nothing is marked published. Earlier works keep their states; prompt recovery for DUTCH-001/002/003 is still open.
+**State:** publication pass (2026-10-26), plus a new lane opened the same day. DUTCH-005 carries a full publication package — YouTube titles, description, tags, two pinned comments and a Telegram post — and the owner reports it generated, covered and uploaded; no URL, file or take is held here, so nothing is marked published. **PHOS-001** (Φῶς ἱλαρόν, «Свет Отрадный») is a new, non-Dutch work: a Russian verse **translation** of six Greek lines and five style directions exist; nothing is generated. Earlier works keep their states; prompt recovery for DUTCH-001/002/003 is still open.
 
 ## Purpose
 
@@ -33,7 +33,7 @@ The root Research authority and evidence policy remain controlling. Nothing in t
 - **SUNO/README.md** — production workflow and state model.
 - **SUNO/STATUS_LEDGER.md** — known prepared works, incomplete checks and publication boundaries.
 - **SUNO/PUBLICATION_LANE.md** — the bridge to the channel standards: which repository is normative for markup and comment layout, the three copy files, the five gates, and the eight traps that already cost a release. Read this before editing any copy.
-- **SUNO/DUTCH-005_YOUTUBE.md** — title options, the ready description (4881 characters, 12 bold and 5 italic spans), hidden tags, a checklist, and § 0: the verbatim post-mortem of the markup that broke live in Studio.
+- **SUNO/DUTCH-005_YOUTUBE.md** — title options, the ready description (4598 characters, 12 bold and 5 italic spans), hidden tags, a checklist, and § 0: the verbatim post-mortem of the markup that broke live in Studio.
 - **SUNO/DUTCH-005_TELEGRAM.md** — the @lordchrist post for the same hymn, in Telegram markup (`**bold**`, `*italic*`), with an HTML twin.
 - **SUNO/DUTCH-005_PINNED.md** — two pinned comments for YouTube: one on the hymn, one on how the Dutch sang, both in YouTube markup and gated.
 - **SUNO/STYLE_AND_PRODUCTION_RULES.md** — accumulated user preferences and reproducibility rules.
@@ -50,6 +50,10 @@ The root Research authority and evidence policy remain controlling. Nothing in t
 - **RESEARCH/AUTHOR_*.md** — focused author dossiers.
 - **RESEARCH/SOURCE_REGISTER.md** — human-readable view of the source registry.
 - **RESEARCH/CLAIM_LEDGER.md** — claim-by-claim support, caveats and typed HOLDs.
+- **RESEARCH/OPEN_HOLDS.md** — generated inventory of every unresolved HOLD: what is promised but not yet read, located or cleared. Rebuild it after any registry change.
+- **RESEARCH/RESEARCH_LANE_NOT_FOR_SINGING.md** — the research lane: hymns that are studied and written about but never sung. Its charter, the confession frame of the channel, the PHOS-004 card and the running journal.
+- **RESEARCH/DOSSIER_PHOS-004_INDEX.md** — table of contents for the *Sub tuum praesidium* dossier (parts 1–7): witnesses, dating, Epiphanius, the Dormition apocrypha.
+- **RESEARCH/DOSSIER_PHOS-0*.md**, **RESEARCH/DOSSIER_SERIES_*.md** — ancient-hymn dossiers and the series background on Clement, Pliny, Justin and Philo.
 - **RESEARCH/SONGBOOK_REGISTER.md** — publication editions and the actual access layer.
 - **RESEARCH/GENRE_AND_CLASSIFICATION.md** — controlled distinctions between psalms, devotional songs, sonnets, later adaptations and modern settings.
 - **RESEARCH/LESSONS_AND_GUARDS.md** — errors already made in this project, each paired with the guard that now catches it. Read before drafting a lyric, applying a review or generating artwork.
@@ -114,6 +118,10 @@ From the repository root, run:
     python SUNO_HYMNS/scripts/validate_project_registry.py
     python SUNO_HYMNS/scripts/check_ru_lyric.py SUNO_HYMNS/SUNO/*LYRICS*.md
     python SUNO_HYMNS/scripts/check_revision_consistency.py
+
+Regenerate the HOLD inventory after changing a registry (this one writes a file):
+
+    python SUNO_HYMNS/scripts/render_hold_ledger.py
 
 All five gates run as separate steps in `.github/workflows/suno-hymns-registry.yml`: registry validation, markup of the description and both pinned comments, quoted lengths against the files, revision consistency, and the Russian lyric check.
 

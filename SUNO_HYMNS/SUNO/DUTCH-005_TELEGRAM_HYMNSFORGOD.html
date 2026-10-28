@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DUTCH-005 — пост для t.me/hymnsforgod (копия с разметкой)</title>
+<style>
+  :root { color-scheme: light; }
+  body {
+    margin: 0; padding: 32px 20px 64px;
+    font: 15px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #f6f4f0; color: #1b1b1b;
+  }
+  main { max-width: 860px; margin: 0 auto; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  .sub { color: #6b6b6b; margin: 0 0 24px; }
+  .status {
+    border-left: 3px solid #b4552d; background: #fff6ef;
+    padding: 12px 16px; margin: 0 0 24px; border-radius: 0 6px 6px 0;
+  }
+  .status p { margin: 0 0 6px; }
+  .status p:last-child { margin-bottom: 0; }
+  .how { background: #fff; border: 1px solid #e2ddd5; border-radius: 8px; padding: 16px 20px; margin: 0 0 28px; }
+  .how ol { margin: 8px 0 0; padding-left: 22px; }
+  .how li { margin-bottom: 10px; }
+  .how li:last-child { margin-bottom: 0; }
+  .card { background: #fff; border: 1px solid #e2ddd5; border-radius: 8px; padding: 18px 20px; margin: 0 0 22px; }
+  .card-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .card-head h2 { font-size: 17px; margin: 0 0 12px; }
+  .count { color: #6b6b6b; font-size: 13px; }
+  .preview {
+    white-space: pre-wrap; word-wrap: break-word;
+    font: 16px/1.62 Georgia, "Iowan Old Style", "Times New Roman", serif;
+    background: #fbfaf8; border: 1px solid #ece7df; border-radius: 6px;
+    padding: 16px; margin: 0 0 14px; max-height: 420px; overflow: auto;
+  }
+  .buttons { display: flex; flex-wrap: wrap; gap: 8px; }
+  button {
+    font: 14px/1 inherit; padding: 9px 14px; border-radius: 6px; cursor: pointer;
+    border: 1px solid #1b1b1b; background: #1b1b1b; color: #fff;
+  }
+  button.ghost { background: #fff; color: #1b1b1b; border-color: #cfc9c0; }
+  button.ghost:hover { border-color: #1b1b1b; }
+  button.ok { background: #1f7a3d; border-color: #1f7a3d; color: #fff; }
+  button.bad { background: #b4552d; border-color: #b4552d; color: #fff; }
+  footer { color: #6b6b6b; font-size: 13px; border-top: 1px solid #e2ddd5; padding-top: 16px; }
+  a { color: #1b1b1b; }
+  code { font-size: 13px; background: #efece6; padding: 1px 4px; border-radius: 3px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>DUTCH-005 «Хвала Славе» — пост для канала t.me/hymnsforgod</h1>
+  <p class="sub">Два сообщения. Разметка уже внутри: копируйте и вставляйте, asterisks в текст не попадут.</p>
+
+  <div class="status">
+    <p><strong>Не опубликовано.</strong> Ревизия <code>DUTCH-005-RU v0.10</code> — рабочий черновик:
+      заголовок утверждён, wording владельцем <strong>не подписан</strong>. Строка III.2
+      «Та, что за смертью придёт» применена по прочтению и подписи не имеет.
+      Публиковать — только после подписи.</p>
+    <p><strong>Это адаптация, а не перевод.</strong> Так и сказано в посте. Ни строки, ни припева,
+      ни повтора не прибавлено.</p>
+    <p><strong>Ссылок в посте нет</strong> и добавлять нельзя: для hymnsforgod в репозитории нет
+      ни сайта, ни плейлиста, ни VK. Футер из <code>projects/lord-god-strength</code> сюда не переносится —
+      это другой канал.</p>
+  </div>
+
+  <div class="how">
+    <strong>Как вставить, чтобы жирный и курсив доехали</strong>
+    <ol>
+      <li><strong>Telegram Desktop 6.8.0 и новее</strong> (выпуск 7 мая 2026; в changelog прямо
+        сказано: «Copy and paste formatting to and from HTML»; текущая версия — 7.3.3).
+        Нажмите <em>«Скопировать с разметкой»</em> под сообщением, затем Ctrl+V в поле ввода канала.
+        Разметка приезжает вместе с текстом.</li>
+      <li><strong>Через бота</strong> — работает и с телефона, где буфер обмена форматирование не держит.
+        Нажмите <em>«Скопировать HTML для бота»</em> и отправьте вызовом
+        <code>sendMessage</code> с <code>parse_mode=HTML</code>. Текст подготовлен именно для этого
+        режима: <code>&lt;</code>, <code>&gt;</code> и <code>&amp;</code> вне тегов заменены на сущности,
+        как требует Bot API.</li>
+      <li><strong>Если браузер не дал доступ к буферу</strong> (например, страница открыта внутри
+        чужого окна): <em>«Выделить»</em>, затем Ctrl+C самостоятельно. Браузер кладёт в буфер и
+        разметку, и простой текст — Telegram Desktop возьмёт разметку.</li>
+    </ol>
+    <p style="margin:12px 0 0">Вставляйте долгим нажатием → «Вставить» из системного меню.
+      Вставка из буфера клавиатуры форматирование снимает.</p>
+  </div>
+
+
+      <section class="card">
+        <div class="card-head">
+          <h2>Сообщение 1</h2>
+          <span class="count">3889 знаков из 4096</span>
+        </div>
+        <div class="preview" id="preview-0"><b>«Хвала Славе»</b> — Йодокус ван Лоденштейн, 1676
+
+<i>Heerlijckheyds Loff · Uyt-spanningen · Утрехт, стр. 155–158</i>
+
+Гимн о том, что земля не стоит сердца. Десять строф, и сквозь все десять идёт одно тройное слово: <i>leven, lieven, loven</i> — жить, любить, хвалить. Оно не стоит на месте: в двух первых строфах звучат все три слова сразу, в III–VI трижды повторяется <i>жить</i>, в VII–IX — <i>любить</i>, а в последней строфе трижды — <i>хвалить</i>.
+
+Под гимном в книге стоит дата рукой поэта: <i>27 августа 1665</i>. Лоденштейн служил в Утрехте с апреля 1653 года до самой смерти в 1677-м; сборник вышел за год до конца.
+
+<b>I</b>
+Ввысь, душа моя, ввысь!
+Здесь, внизу, жизни нет:
+Жизнь, любовь и хвала —
+Лишь там, где Иисуса свет.
+Всё, что видишь, — прах,
+Всё, что слышишь, — прах,
+Не в том твоя жизнь, любовь, хвала;
+Всё, чего ты хочешь, — прах,
+Сердца твоего не стоит.
+
+<b>II</b>
+Блеск и красота — обман,
+Всё, что драго, — суета,
+Гаснет радость, чуть вкусил,
+Злато, серебро — тщета.
+Там драгоценная кровь,
+Там драгоценная кровь
+Стоит всей жизни, любви и хвалы:
+Там драгоценная кровь,
+Сердцу цену даёт выше всех.
+
+<b>III</b>
+Жизнь без конца, во славе,
+Та, что за смертью придёт,
+Лишь она, душа, желанна
+И влечёт вперёд.
+Закрой плотское око,
+Закрой плотское око,
+Эта славная жизнь — жизнь, жизнь, жизнь;
+Закрой плотское око:
+Эта жизнь — высоко.
+
+<b>IV</b>
+Жить пред Богом — не умирать,
+Без труда, без боли,
+Без болезни, без трепета,
+Без мученья, без истомы.
+О бренная душа, помысли,
+О бренная душа, помысли,
+Без смерти — вечная жизнь, жизнь, жизнь;
+О бренная душа, помысли,
+Что Небо благостно даёт.
+
+<b>V</b>
+Жизнь в совершенных добродетелях,
+К славе Господней,
+В небесных радостях светла,
+Святая в святости Господней.
+С сияньем соединена,
+С сияньем соединена,
+Без греха — жизнь, жизнь, жизнь;
+С сияньем соединена:
+Зри, что Небо тебе даёт сполна.
+
+<b>VI</b>
+Безумцы, что в грехах живут,
+Творя их, — не знаете,
+Что смерть и ад в груди у вас
+Доселе не отступили?
+Хотите жизни вы?
+Хотите жизни вы?
+Жизнь добродетелей — жизнь, жизнь, жизнь;
+Хотите жизни вы?
+Начните жизнь добродетельную.
+
+<b>VII</b>
+Желанный и любви достойный —
+Мой Иисус, в Ком лишь отрада,
+Любовь, готовая на иное,
+В Нём одном находит усладу!
+Душа моя, ввысь, ввысь,
+Душа моя, ввысь, ввысь,
+Где Иисуса любить, любить, любить;
+Душа моя, ввысь, туда,
+Где зрю спасенье навсегда.
+
+<b>VIII</b>
+Прекраснейшая Красота!
+Причина красы, что здесь мнится,
+С годами и с привычкой
+Слабеет и не возвратится.
+Тебе, Красота, поклоняюсь,
+Тебе, Красота, поклоняюсь,
+Коль что любить — любить, любить, любить;
+Тебе, Красота, поклоняюсь:
+К Тебе моё сердце стремится.
+
+<b>IX</b>
+Всякая отрада, какую
+Здесь можно помыслить, —
+Любовь людская, людские нравы —
+Всё это — только тень её.
+Ты моё сердце крадёшь,
+Ты моё сердце крадёшь,
+Коль что любить — любить, любить, любить;
+Ты моё сердце крадёшь:
+Тебя превыше всех люблю.
+
+<b>X</b>
+О, если б все языки земли,
+Вся бодрость ангелов
+Соединились и воспели
+Иисусову хвалу и славу!
+Воспряньте: сердце, уста, рука,
+Воспрянь, моя цитра; ибо
+Иисуса — хвалить, хвалить, хвалить;
+Воспряньте все: есть предмет хвалы;
+Пойте вовек Иисусову хвалу.
+
+<b>О подлиннике.</b> Название по-нидерландски — <i>Heerlijckheyds Loff</i>: <i>Loff</i> — хвала, <i>Heerlijckheyds</i> — славы. Оба слова не мои и не переводчика: они стоят рядом в последней строфе самого поэта — <i>Iesus lof en Heerlijckheyd!</i> Движение тройного слова тоже из подлинника: там, где русский трижды говорит <i>хвалить</i>, нидерландский трижды говорит <i>loven</i>.
+
+<b>О мелодии.</b> В книге над текстом стоит отсылка <i>Voyse: Un jour &amp;c.</i>, и она не разыскана: комментарий академического издания 2005 года говорит, что происхождение напева неизвестно и что это не та <i>Un jour</i>, которая стоит над другим текстом того же сборника. Поэтому музыка здесь новая, а не реконструкция.
+
+<b>О нашем тексте.</b> Это русская литературно-песенная адаптация, а не перевод. Ни одной строки, ни одного припева и ни одного повтора не прибавлено: тройной призыв и утроенное слово — подлинника.
+
+#ХвалаСлаве #Лоденштейн #ХристианскийГимн #Гимны</div>
+        <div class="buttons">
+          <button type="button" onclick="copyRich(0, this)">Скопировать с разметкой</button>
+          <button type="button" class="ghost" onclick="copyBot(0, this)">Скопировать HTML для бота</button>
+          <button type="button" class="ghost" onclick="copyMarkup(0, this)">Скопировать разметку Telegram</button>
+          <button type="button" class="ghost" onclick="selectText(0, this)">Выделить</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-head">
+          <h2>Сообщение 2</h2>
+          <span class="count">3699 знаков из 4096</span>
+        </div>
+        <div class="preview" id="preview-1"><b>Подлинник — нидерландский, 1676</b>
+
+Подлинник целиком — по первому изданию 1676 года, <i>Uyt-spanningen</i>, стр. 155–158. Орфография печатника сохранена: <i>u</i>/<i>v</i>, <i>ij</i>/<i>y</i>, написание прописных.
+
+Строфы I–II несут все три слова сразу; III–VI утрояют <i>leven</i>, VII–IX — <i>lieven</i>, X — <i>loven</i>.
+
+<b>I</b>
+HOog! om hoog! mijn siel, na boven!
+Hier beneden is het niet:
+'t Regte leven, lieven, loven,
+Is maar daarmen Iesum siet.
+Al wat gy siet op aard,
+Al wat gy hoort op aard,
+Is uw costlijck leven, lieven, loven,
+Al wat gy wenscht op aard,
+Is uw costlijck hert niet waard.
+
+<b>II</b>
+Schoon en pragt is enckel schijn, en
+Ydelheyd al 't costelijck,
+Lusten met 't gebruyck verdwijnen,
+Goud en silver is maar slijck:
+Daar 't costelijcke bloed
+Daar 't costelijcke bloed
+Waardig all uw leven, lieven loven,
+Daar 't costelijcke bloet
+'t Hert boven alles gelden doet.
+
+<b>III</b>
+'t Leven sonder eynden Heerlijck,
+Na dit leven crijgelijck,
+Is, mijn siel, alleen begeerlijck,
+En beweegt onsigtbaarlijck:
+Sluyt maar uw vleeschlijck oog,
+Sluyt maar etc.
+Want dit heerlijck leven, leven, leven,
+Sluyt maar uw vleeschlijck oog,
+Want dit leven is om hoog.
+
+<b>IV</b>
+Sonder sterven voor Godt leven,
+Sonder moeyte, sonder pijn,
+Sonder sieckte, sonder beven,
+Sonder quel, en sonder quijn:
+O! yd'le siel bedenckt, O! yd'le etc.
+Sonder sterven leven, leven, leven,
+O! ydle siel bedenckt,
+Wat u den Hemel goedig schenckt.
+
+<b>V</b>
+Leven in volmaackte deugden,
+Tot des Heeren Heerlijckheyd,
+Vrolijck in des Hemels vreugden,
+Heylig in sijn Heylicheyd:
+Met so een glansch vereent, Met so etc.
+Sonder sonden leven, leven, leven,
+Met so een glansch vereent,
+Siet wat den Hemel u verleent.
+
+<b>VI</b>
+Hersenlosen, die de snooden
+Sonden doet, en daar in leeft,
+Weet gy niet, dat u de dood, en
+Hel nog in den boesem cleeft?
+Wilt gy ten leven gaan? Wilt gy etc.
+Vangt der deugden leven, leven, leven,
+Wilt gy ten leven gaan?
+Vangt hier het deugdsaam leven aan.
+
+<b>VII</b>
+Wenschelijck en lievens-weerdig
+Is mijn Iesus, daar de min
+Altijd tot wat anders veerdig
+Vindt alleen genoegen in!
+Mijn siel na boven dan, Mijn siel etc.
+Daar ick Iesus lieven, lieven, lieven,
+Mijn siel na boven dat,
+Daar ick het heyl aanschouwen can.
+
+<b>VIII</b>
+Alderminnelijckste Schoonheyd!
+Oorsaack van wat hier schoon schijnt,
+Die door jaren, nog gewoonheyd
+Min vermaackt, of oyt verdwijnt.
+U, Schoonheyd, bid ick aan, U etc.
+Wil ick oyt yets lieven, lieven, lieven,
+U, Schoonheyd, bid ick aan,
+Daar sal het hert eerst henen gaan.
+
+<b>IX</b>
+Allerley Bevallijckheden
+Diemen hier bedencken can,
+Menschen-liefde, menschen seden
+Sijnder maar een schaduw van.
+Dit steelt mijn hert en al, Dit etc.
+Lust my yet te lieven, lieven, lieven,
+Dit steelt mijn hert en al,
+Dit boven al ick lieven sal.
+
+<b>X</b>
+Ah! dat aller menschen tongen,
+Aller Englen wackerheyd
+t'Samen-spanden, t'samen songen
+Iesus lof en Heerlijckheyd!
+Waackt op Hert, mond, en hand
+Waackt op mijn Cijter; want
+Iesus is te loven, loven, loven:
+Waackt all' op hier is stoff
+Singt sonder eynden Iesus loff.
+27. in Ougstmaand 1665.
+
+<b>Как это читать.</b> Сокращение <i>etc.</i> в строках призыва — не лакуна, а знак повтора: призыв напечатан один раз, а поётся дважды. Курсив, которым в транскрипции помечены отдельные слова, здесь снят, чтобы не спорить с разметкой поста. Последняя строка в книге — не стих, а дата: <i>27. in Ougstmaand 1665.</i>
+
+<b>Два издания.</b> Печатное издание 1676 года и девятое 1727 года расходятся в шести местах. Большинство — орфография (<i>c</i>/<i>k</i>, <i>u</i>/<i>v</i>) и способ набора, они не влияют на чтение. Содержательных три: в строфе VIII издание 1727 года выпускает строку призыва, и строфа становится восьмистишием; там же вместо <i>wat</i> стоит <i>al wat</i>; а в строфе VII 1676-й даёт <i>dat</i>, 1727-й — <i>dan</i>, и <i>dan</i> согласуется с пятой строкой, так что <i>dat</i> похоже на опечатку. Русский текст идёт по 1676 году.</div>
+        <div class="buttons">
+          <button type="button" onclick="copyRich(1, this)">Скопировать с разметкой</button>
+          <button type="button" class="ghost" onclick="copyBot(1, this)">Скопировать HTML для бота</button>
+          <button type="button" class="ghost" onclick="copyMarkup(1, this)">Скопировать разметку Telegram</button>
+          <button type="button" class="ghost" onclick="selectText(1, this)">Выделить</button>
+        </div>
+      </section>
+
+
+  <footer>
+    Страница собрана скриптом <code>SUNO_HYMNS/scripts/render_telegram_html.py</code> из
+    <code>DUTCH-005_TELEGRAM_HYMNSFORGOD.md</code>: три формы текста (разметка Telegram, HTML,
+    чистый текст) выводятся из одного источника и сверяются между собой. Ни одна строка не
+    набрана вручную. Лимит одного сообщения — 4096 знаков; счётчики над карточками —
+    по видимому тексту, без символов разметки.
+  </footer>
+</main>
+
+<script type="application/json" id="post-data">{"messages": [{"label": "Сообщение 1", "count": 3889, "limit": 4096, "html": "<b>«Хвала Славе»<\/b> — Йодокус ван Лоденштейн, 1676\n\n<i>Heerlijckheyds Loff · Uyt-spanningen · Утрехт, стр. 155–158<\/i>\n\nГимн о том, что земля не стоит сердца. Десять строф, и сквозь все десять идёт одно тройное слово: <i>leven, lieven, loven<\/i> — жить, любить, хвалить. Оно не стоит на месте: в двух первых строфах звучат все три слова сразу, в III–VI трижды повторяется <i>жить<\/i>, в VII–IX — <i>любить<\/i>, а в последней строфе трижды — <i>хвалить<\/i>.\n\nПод гимном в книге стоит дата рукой поэта: <i>27 августа 1665<\/i>. Лоденштейн служил в Утрехте с апреля 1653 года до самой смерти в 1677-м; сборник вышел за год до конца.\n\n<b>I<\/b>\nВвысь, душа моя, ввысь!\nЗдесь, внизу, жизни нет:\nЖизнь, любовь и хвала —\nЛишь там, где Иисуса свет.\nВсё, что видишь, — прах,\nВсё, что слышишь, — прах,\nНе в том твоя жизнь, любовь, хвала;\nВсё, чего ты хочешь, — прах,\nСердца твоего не стоит.\n\n<b>II<\/b>\nБлеск и красота — обман,\nВсё, что драго, — суета,\nГаснет радость, чуть вкусил,\nЗлато, серебро — тщета.\nТам драгоценная кровь,\nТам драгоценная кровь\nСтоит всей жизни, любви и хвалы:\nТам драгоценная кровь,\nСердцу цену даёт выше всех.\n\n<b>III<\/b>\nЖизнь без конца, во славе,\nТа, что за смертью придёт,\nЛишь она, душа, желанна\nИ влечёт вперёд.\nЗакрой плотское око,\nЗакрой плотское око,\nЭта славная жизнь — жизнь, жизнь, жизнь;\nЗакрой плотское око:\nЭта жизнь — высоко.\n\n<b>IV<\/b>\nЖить пред Богом — не умирать,\nБез труда, без боли,\nБез болезни, без трепета,\nБез мученья, без истомы.\nО бренная душа, помысли,\nО бренная душа, помысли,\nБез смерти — вечная жизнь, жизнь, жизнь;\nО бренная душа, помысли,\nЧто Небо благостно даёт.\n\n<b>V<\/b>\nЖизнь в совершенных добродетелях,\nК славе Господней,\nВ небесных радостях светла,\nСвятая в святости Господней.\nС сияньем соединена,\nС сияньем соединена,\nБез греха — жизнь, жизнь, жизнь;\nС сияньем соединена:\nЗри, что Небо тебе даёт сполна.\n\n<b>VI<\/b>\nБезумцы, что в грехах живут,\nТворя их, — не знаете,\nЧто смерть и ад в груди у вас\nДоселе не отступили?\nХотите жизни вы?\nХотите жизни вы?\nЖизнь добродетелей — жизнь, жизнь, жизнь;\nХотите жизни вы?\nНачните жизнь добродетельную.\n\n<b>VII<\/b>\nЖеланный и любви достойный —\nМой Иисус, в Ком лишь отрада,\nЛюбовь, готовая на иное,\nВ Нём одном находит усладу!\nДуша моя, ввысь, ввысь,\nДуша моя, ввысь, ввысь,\nГде Иисуса любить, любить, любить;\nДуша моя, ввысь, туда,\nГде зрю спасенье навсегда.\n\n<b>VIII<\/b>\nПрекраснейшая Красота!\nПричина красы, что здесь мнится,\nС годами и с привычкой\nСлабеет и не возвратится.\nТебе, Красота, поклоняюсь,\nТебе, Красота, поклоняюсь,\nКоль что любить — любить, любить, любить;\nТебе, Красота, поклоняюсь:\nК Тебе моё сердце стремится.\n\n<b>IX<\/b>\nВсякая отрада, какую\nЗдесь можно помыслить, —\nЛюбовь людская, людские нравы —\nВсё это — только тень её.\nТы моё сердце крадёшь,\nТы моё сердце крадёшь,\nКоль что любить — любить, любить, любить;\nТы моё сердце крадёшь:\nТебя превыше всех люблю.\n\n<b>X<\/b>\nО, если б все языки земли,\nВся бодрость ангелов\nСоединились и воспели\nИисусову хвалу и славу!\nВоспряньте: сердце, уста, рука,\nВоспрянь, моя цитра; ибо\nИисуса — хвалить, хвалить, хвалить;\nВоспряньте все: есть предмет хвалы;\nПойте вовек Иисусову хвалу.\n\n<b>О подлиннике.<\/b> Название по-нидерландски — <i>Heerlijckheyds Loff<\/i>: <i>Loff<\/i> — хвала, <i>Heerlijckheyds<\/i> — славы. Оба слова не мои и не переводчика: они стоят рядом в последней строфе самого поэта — <i>Iesus lof en Heerlijckheyd!<\/i> Движение тройного слова тоже из подлинника: там, где русский трижды говорит <i>хвалить<\/i>, нидерландский трижды говорит <i>loven<\/i>.\n\n<b>О мелодии.<\/b> В книге над текстом стоит отсылка <i>Voyse: Un jour &amp;c.<\/i>, и она не разыскана: комментарий академического издания 2005 года говорит, что происхождение напева неизвестно и что это не та <i>Un jour<\/i>, которая стоит над другим текстом того же сборника. Поэтому музыка здесь новая, а не реконструкция.\n\n<b>О нашем тексте.<\/b> Это русская литературно-песенная адаптация, а не перевод. Ни одной строки, ни одного припева и ни одного повтора не прибавлено: тройной призыв и утроенное слово — подлинника.\n\n#ХвалаСлаве #Лоденштейн #ХристианскийГимн #Гимны", "plain": "«Хвала Славе» — Йодокус ван Лоденштейн, 1676\n\nHeerlijckheyds Loff · Uyt-spanningen · Утрехт, стр. 155–158\n\nГимн о том, что земля не стоит сердца. Десять строф, и сквозь все десять идёт одно тройное слово: leven, lieven, loven — жить, любить, хвалить. Оно не стоит на месте: в двух первых строфах звучат все три слова сразу, в III–VI трижды повторяется жить, в VII–IX — любить, а в последней строфе трижды — хвалить.\n\nПод гимном в книге стоит дата рукой поэта: 27 августа 1665. Лоденштейн служил в Утрехте с апреля 1653 года до самой смерти в 1677-м; сборник вышел за год до конца.\n\nI\nВвысь, душа моя, ввысь!\nЗдесь, внизу, жизни нет:\nЖизнь, любовь и хвала —\nЛишь там, где Иисуса свет.\nВсё, что видишь, — прах,\nВсё, что слышишь, — прах,\nНе в том твоя жизнь, любовь, хвала;\nВсё, чего ты хочешь, — прах,\nСердца твоего не стоит.\n\nII\nБлеск и красота — обман,\nВсё, что драго, — суета,\nГаснет радость, чуть вкусил,\nЗлато, серебро — тщета.\nТам драгоценная кровь,\nТам драгоценная кровь\nСтоит всей жизни, любви и хвалы:\nТам драгоценная кровь,\nСердцу цену даёт выше всех.\n\nIII\nЖизнь без конца, во славе,\nТа, что за смертью придёт,\nЛишь она, душа, желанна\nИ влечёт вперёд.\nЗакрой плотское око,\nЗакрой плотское око,\nЭта славная жизнь — жизнь, жизнь, жизнь;\nЗакрой плотское око:\nЭта жизнь — высоко.\n\nIV\nЖить пред Богом — не умирать,\nБез труда, без боли,\nБез болезни, без трепета,\nБез мученья, без истомы.\nО бренная душа, помысли,\nО бренная душа, помысли,\nБез смерти — вечная жизнь, жизнь, жизнь;\nО бренная душа, помысли,\nЧто Небо благостно даёт.\n\nV\nЖизнь в совершенных добродетелях,\nК славе Господней,\nВ небесных радостях светла,\nСвятая в святости Господней.\nС сияньем соединена,\nС сияньем соединена,\nБез греха — жизнь, жизнь, жизнь;\nС сияньем соединена:\nЗри, что Небо тебе даёт сполна.\n\nVI\nБезумцы, что в грехах живут,\nТворя их, — не знаете,\nЧто смерть и ад в груди у вас\nДоселе не отступили?\nХотите жизни вы?\nХотите жизни вы?\nЖизнь добродетелей — жизнь, жизнь, жизнь;\nХотите жизни вы?\nНачните жизнь добродетельную.\n\nVII\nЖеланный и любви достойный —\nМой Иисус, в Ком лишь отрада,\nЛюбовь, готовая на иное,\nВ Нём одном находит усладу!\nДуша моя, ввысь, ввысь,\nДуша моя, ввысь, ввысь,\nГде Иисуса любить, любить, любить;\nДуша моя, ввысь, туда,\nГде зрю спасенье навсегда.\n\nVIII\nПрекраснейшая Красота!\nПричина красы, что здесь мнится,\nС годами и с привычкой\nСлабеет и не возвратится.\nТебе, Красота, поклоняюсь,\nТебе, Красота, поклоняюсь,\nКоль что любить — любить, любить, любить;\nТебе, Красота, поклоняюсь:\nК Тебе моё сердце стремится.\n\nIX\nВсякая отрада, какую\nЗдесь можно помыслить, —\nЛюбовь людская, людские нравы —\nВсё это — только тень её.\nТы моё сердце крадёшь,\nТы моё сердце крадёшь,\nКоль что любить — любить, любить, любить;\nТы моё сердце крадёшь:\nТебя превыше всех люблю.\n\nX\nО, если б все языки земли,\nВся бодрость ангелов\nСоединились и воспели\nИисусову хвалу и славу!\nВоспряньте: сердце, уста, рука,\nВоспрянь, моя цитра; ибо\nИисуса — хвалить, хвалить, хвалить;\nВоспряньте все: есть предмет хвалы;\nПойте вовек Иисусову хвалу.\n\nО подлиннике. Название по-нидерландски — Heerlijckheyds Loff: Loff — хвала, Heerlijckheyds — славы. Оба слова не мои и не переводчика: они стоят рядом в последней строфе самого поэта — Iesus lof en Heerlijckheyd! Движение тройного слова тоже из подлинника: там, где русский трижды говорит хвалить, нидерландский трижды говорит loven.\n\nО мелодии. В книге над текстом стоит отсылка Voyse: Un jour &c., и она не разыскана: комментарий академического издания 2005 года говорит, что происхождение напева неизвестно и что это не та Un jour, которая стоит над другим текстом того же сборника. Поэтому музыка здесь новая, а не реконструкция.\n\nО нашем тексте. Это русская литературно-песенная адаптация, а не перевод. Ни одной строки, ни одного припева и ни одного повтора не прибавлено: тройной призыв и утроенное слово — подлинника.\n\n#ХвалаСлаве #Лоденштейн #ХристианскийГимн #Гимны", "markdown": "**«Хвала Славе»** — Йодокус ван Лоденштейн, 1676\n\n*Heerlijckheyds Loff · Uyt-spanningen · Утрехт, стр. 155–158*\n\nГимн о том, что земля не стоит сердца. Десять строф, и сквозь все десять идёт одно тройное слово: *leven, lieven, loven* — жить, любить, хвалить. Оно не стоит на месте: в двух первых строфах звучат все три слова сразу, в III–VI трижды повторяется *жить*, в VII–IX — *любить*, а в последней строфе трижды — *хвалить*.\n\nПод гимном в книге стоит дата рукой поэта: *27 августа 1665*. Лоденштейн служил в Утрехте с апреля 1653 года до самой смерти в 1677-м; сборник вышел за год до конца.\n\n**I**\nВвысь, душа моя, ввысь!\nЗдесь, внизу, жизни нет:\nЖизнь, любовь и хвала —\nЛишь там, где Иисуса свет.\nВсё, что видишь, — прах,\nВсё, что слышишь, — прах,\nНе в том твоя жизнь, любовь, хвала;\nВсё, чего ты хочешь, — прах,\nСердца твоего не стоит.\n\n**II**\nБлеск и красота — обман,\nВсё, что драго, — суета,\nГаснет радость, чуть вкусил,\nЗлато, серебро — тщета.\nТам драгоценная кровь,\nТам драгоценная кровь\nСтоит всей жизни, любви и хвалы:\nТам драгоценная кровь,\nСердцу цену даёт выше всех.\n\n**III**\nЖизнь без конца, во славе,\nТа, что за смертью придёт,\nЛишь она, душа, желанна\nИ влечёт вперёд.\nЗакрой плотское око,\nЗакрой плотское око,\nЭта славная жизнь — жизнь, жизнь, жизнь;\nЗакрой плотское око:\nЭта жизнь — высоко.\n\n**IV**\nЖить пред Богом — не умирать,\nБез труда, без боли,\nБез болезни, без трепета,\nБез мученья, без истомы.\nО бренная душа, помысли,\nО бренная душа, помысли,\nБез смерти — вечная жизнь, жизнь, жизнь;\nО бренная душа, помысли,\nЧто Небо благостно даёт.\n\n**V**\nЖизнь в совершенных добродетелях,\nК славе Господней,\nВ небесных радостях светла,\nСвятая в святости Господней.\nС сияньем соединена,\nС сияньем соединена,\nБез греха — жизнь, жизнь, жизнь;\nС сияньем соединена:\nЗри, что Небо тебе даёт сполна.\n\n**VI**\nБезумцы, что в грехах живут,\nТворя их, — не знаете,\nЧто смерть и ад в груди у вас\nДоселе не отступили?\nХотите жизни вы?\nХотите жизни вы?\nЖизнь добродетелей — жизнь, жизнь, жизнь;\nХотите жизни вы?\nНачните жизнь добродетельную.\n\n**VII**\nЖеланный и любви достойный —\nМой Иисус, в Ком лишь отрада,\nЛюбовь, готовая на иное,\nВ Нём одном находит усладу!\nДуша моя, ввысь, ввысь,\nДуша моя, ввысь, ввысь,\nГде Иисуса любить, любить, любить;\nДуша моя, ввысь, туда,\nГде зрю спасенье навсегда.\n\n**VIII**\nПрекраснейшая Красота!\nПричина красы, что здесь мнится,\nС годами и с привычкой\nСлабеет и не возвратится.\nТебе, Красота, поклоняюсь,\nТебе, Красота, поклоняюсь,\nКоль что любить — любить, любить, любить;\nТебе, Красота, поклоняюсь:\nК Тебе моё сердце стремится.\n\n**IX**\nВсякая отрада, какую\nЗдесь можно помыслить, —\nЛюбовь людская, людские нравы —\nВсё это — только тень её.\nТы моё сердце крадёшь,\nТы моё сердце крадёшь,\nКоль что любить — любить, любить, любить;\nТы моё сердце крадёшь:\nТебя превыше всех люблю.\n\n**X**\nО, если б все языки земли,\nВся бодрость ангелов\nСоединились и воспели\nИисусову хвалу и славу!\nВоспряньте: сердце, уста, рука,\nВоспрянь, моя цитра; ибо\nИисуса — хвалить, хвалить, хвалить;\nВоспряньте все: есть предмет хвалы;\nПойте вовек Иисусову хвалу.\n\n**О подлиннике.** Название по-нидерландски — *Heerlijckheyds Loff*: *Loff* — хвала, *Heerlijckheyds* — славы. Оба слова не мои и не переводчика: они стоят рядом в последней строфе самого поэта — *Iesus lof en Heerlijckheyd!* Движение тройного слова тоже из подлинника: там, где русский трижды говорит *хвалить*, нидерландский трижды говорит *loven*.\n\n**О мелодии.** В книге над текстом стоит отсылка *Voyse: Un jour &c.*, и она не разыскана: комментарий академического издания 2005 года говорит, что происхождение напева неизвестно и что это не та *Un jour*, которая стоит над другим текстом того же сборника. Поэтому музыка здесь новая, а не реконструкция.\n\n**О нашем тексте.** Это русская литературно-песенная адаптация, а не перевод. Ни одной строки, ни одного припева и ни одного повтора не прибавлено: тройной призыв и утроенное слово — подлинника.\n\n#ХвалаСлаве #Лоденштейн #ХристианскийГимн #Гимны"}, {"label": "Сообщение 2", "count": 3699, "limit": 4096, "html": "<b>Подлинник — нидерландский, 1676<\/b>\n\nПодлинник целиком — по первому изданию 1676 года, <i>Uyt-spanningen<\/i>, стр. 155–158. Орфография печатника сохранена: <i>u<\/i>/<i>v<\/i>, <i>ij<\/i>/<i>y<\/i>, написание прописных.\n\nСтрофы I–II несут все три слова сразу; III–VI утрояют <i>leven<\/i>, VII–IX — <i>lieven<\/i>, X — <i>loven<\/i>.\n\n<b>I<\/b>\nHOog! om hoog! mijn siel, na boven!\nHier beneden is het niet:\n't Regte leven, lieven, loven,\nIs maar daarmen Iesum siet.\nAl wat gy siet op aard,\nAl wat gy hoort op aard,\nIs uw costlijck leven, lieven, loven,\nAl wat gy wenscht op aard,\nIs uw costlijck hert niet waard.\n\n<b>II<\/b>\nSchoon en pragt is enckel schijn, en\nYdelheyd al 't costelijck,\nLusten met 't gebruyck verdwijnen,\nGoud en silver is maar slijck:\nDaar 't costelijcke bloed\nDaar 't costelijcke bloed\nWaardig all uw leven, lieven loven,\nDaar 't costelijcke bloet\n't Hert boven alles gelden doet.\n\n<b>III<\/b>\n't Leven sonder eynden Heerlijck,\nNa dit leven crijgelijck,\nIs, mijn siel, alleen begeerlijck,\nEn beweegt onsigtbaarlijck:\nSluyt maar uw vleeschlijck oog,\nSluyt maar etc.\nWant dit heerlijck leven, leven, leven,\nSluyt maar uw vleeschlijck oog,\nWant dit leven is om hoog.\n\n<b>IV<\/b>\nSonder sterven voor Godt leven,\nSonder moeyte, sonder pijn,\nSonder sieckte, sonder beven,\nSonder quel, en sonder quijn:\nO! yd'le siel bedenckt, O! yd'le etc.\nSonder sterven leven, leven, leven,\nO! ydle siel bedenckt,\nWat u den Hemel goedig schenckt.\n\n<b>V<\/b>\nLeven in volmaackte deugden,\nTot des Heeren Heerlijckheyd,\nVrolijck in des Hemels vreugden,\nHeylig in sijn Heylicheyd:\nMet so een glansch vereent, Met so etc.\nSonder sonden leven, leven, leven,\nMet so een glansch vereent,\nSiet wat den Hemel u verleent.\n\n<b>VI<\/b>\nHersenlosen, die de snooden\nSonden doet, en daar in leeft,\nWeet gy niet, dat u de dood, en\nHel nog in den boesem cleeft?\nWilt gy ten leven gaan? Wilt gy etc.\nVangt der deugden leven, leven, leven,\nWilt gy ten leven gaan?\nVangt hier het deugdsaam leven aan.\n\n<b>VII<\/b>\nWenschelijck en lievens-weerdig\nIs mijn Iesus, daar de min\nAltijd tot wat anders veerdig\nVindt alleen genoegen in!\nMijn siel na boven dan, Mijn siel etc.\nDaar ick Iesus lieven, lieven, lieven,\nMijn siel na boven dat,\nDaar ick het heyl aanschouwen can.\n\n<b>VIII<\/b>\nAlderminnelijckste Schoonheyd!\nOorsaack van wat hier schoon schijnt,\nDie door jaren, nog gewoonheyd\nMin vermaackt, of oyt verdwijnt.\nU, Schoonheyd, bid ick aan, U etc.\nWil ick oyt yets lieven, lieven, lieven,\nU, Schoonheyd, bid ick aan,\nDaar sal het hert eerst henen gaan.\n\n<b>IX<\/b>\nAllerley Bevallijckheden\nDiemen hier bedencken can,\nMenschen-liefde, menschen seden\nSijnder maar een schaduw van.\nDit steelt mijn hert en al, Dit etc.\nLust my yet te lieven, lieven, lieven,\nDit steelt mijn hert en al,\nDit boven al ick lieven sal.\n\n<b>X<\/b>\nAh! dat aller menschen tongen,\nAller Englen wackerheyd\nt'Samen-spanden, t'samen songen\nIesus lof en Heerlijckheyd!\nWaackt op Hert, mond, en hand\nWaackt op mijn Cijter; want\nIesus is te loven, loven, loven:\nWaackt all' op hier is stoff\nSingt sonder eynden Iesus loff.\n27. in Ougstmaand 1665.\n\n<b>Как это читать.<\/b> Сокращение <i>etc.<\/i> в строках призыва — не лакуна, а знак повтора: призыв напечатан один раз, а поётся дважды. Курсив, которым в транскрипции помечены отдельные слова, здесь снят, чтобы не спорить с разметкой поста. Последняя строка в книге — не стих, а дата: <i>27. in Ougstmaand 1665.<\/i>\n\n<b>Два издания.<\/b> Печатное издание 1676 года и девятое 1727 года расходятся в шести местах. Большинство — орфография (<i>c<\/i>/<i>k<\/i>, <i>u<\/i>/<i>v<\/i>) и способ набора, они не влияют на чтение. Содержательных три: в строфе VIII издание 1727 года выпускает строку призыва, и строфа становится восьмистишием; там же вместо <i>wat<\/i> стоит <i>al wat<\/i>; а в строфе VII 1676-й даёт <i>dat<\/i>, 1727-й — <i>dan<\/i>, и <i>dan<\/i> согласуется с пятой строкой, так что <i>dat<\/i> похоже на опечатку. Русский текст идёт по 1676 году.", "plain": "Подлинник — нидерландский, 1676\n\nПодлинник целиком — по первому изданию 1676 года, Uyt-spanningen, стр. 155–158. Орфография печатника сохранена: u/v, ij/y, написание прописных.\n\nСтрофы I–II несут все три слова сразу; III–VI утрояют leven, VII–IX — lieven, X — loven.\n\nI\nHOog! om hoog! mijn siel, na boven!\nHier beneden is het niet:\n't Regte leven, lieven, loven,\nIs maar daarmen Iesum siet.\nAl wat gy siet op aard,\nAl wat gy hoort op aard,\nIs uw costlijck leven, lieven, loven,\nAl wat gy wenscht op aard,\nIs uw costlijck hert niet waard.\n\nII\nSchoon en pragt is enckel schijn, en\nYdelheyd al 't costelijck,\nLusten met 't gebruyck verdwijnen,\nGoud en silver is maar slijck:\nDaar 't costelijcke bloed\nDaar 't costelijcke bloed\nWaardig all uw leven, lieven loven,\nDaar 't costelijcke bloet\n't Hert boven alles gelden doet.\n\nIII\n't Leven sonder eynden Heerlijck,\nNa dit leven crijgelijck,\nIs, mijn siel, alleen begeerlijck,\nEn beweegt onsigtbaarlijck:\nSluyt maar uw vleeschlijck oog,\nSluyt maar etc.\nWant dit heerlijck leven, leven, leven,\nSluyt maar uw vleeschlijck oog,\nWant dit leven is om hoog.\n\nIV\nSonder sterven voor Godt leven,\nSonder moeyte, sonder pijn,\nSonder sieckte, sonder beven,\nSonder quel, en sonder quijn:\nO! yd'le siel bedenckt, O! yd'le etc.\nSonder sterven leven, leven, leven,\nO! ydle siel bedenckt,\nWat u den Hemel goedig schenckt.\n\nV\nLeven in volmaackte deugden,\nTot des Heeren Heerlijckheyd,\nVrolijck in des Hemels vreugden,\nHeylig in sijn Heylicheyd:\nMet so een glansch vereent, Met so etc.\nSonder sonden leven, leven, leven,\nMet so een glansch vereent,\nSiet wat den Hemel u verleent.\n\nVI\nHersenlosen, die de snooden\nSonden doet, en daar in leeft,\nWeet gy niet, dat u de dood, en\nHel nog in den boesem cleeft?\nWilt gy ten leven gaan? Wilt gy etc.\nVangt der deugden leven, leven, leven,\nWilt gy ten leven gaan?\nVangt hier het deugdsaam leven aan.\n\nVII\nWenschelijck en lievens-weerdig\nIs mijn Iesus, daar de min\nAltijd tot wat anders veerdig\nVindt alleen genoegen in!\nMijn siel na boven dan, Mijn siel etc.\nDaar ick Iesus lieven, lieven, lieven,\nMijn siel na boven dat,\nDaar ick het heyl aanschouwen can.\n\nVIII\nAlderminnelijckste Schoonheyd!\nOorsaack van wat hier schoon schijnt,\nDie door jaren, nog gewoonheyd\nMin vermaackt, of oyt verdwijnt.\nU, Schoonheyd, bid ick aan, U etc.\nWil ick oyt yets lieven, lieven, lieven,\nU, Schoonheyd, bid ick aan,\nDaar sal het hert eerst henen gaan.\n\nIX\nAllerley Bevallijckheden\nDiemen hier bedencken can,\nMenschen-liefde, menschen seden\nSijnder maar een schaduw van.\nDit steelt mijn hert en al, Dit etc.\nLust my yet te lieven, lieven, lieven,\nDit steelt mijn hert en al,\nDit boven al ick lieven sal.\n\nX\nAh! dat aller menschen tongen,\nAller Englen wackerheyd\nt'Samen-spanden, t'samen songen\nIesus lof en Heerlijckheyd!\nWaackt op Hert, mond, en hand\nWaackt op mijn Cijter; want\nIesus is te loven, loven, loven:\nWaackt all' op hier is stoff\nSingt sonder eynden Iesus loff.\n27. in Ougstmaand 1665.\n\nКак это читать. Сокращение etc. в строках призыва — не лакуна, а знак повтора: призыв напечатан один раз, а поётся дважды. Курсив, которым в транскрипции помечены отдельные слова, здесь снят, чтобы не спорить с разметкой поста. Последняя строка в книге — не стих, а дата: 27. in Ougstmaand 1665.\n\nДва издания. Печатное издание 1676 года и девятое 1727 года расходятся в шести местах. Большинство — орфография (c/k, u/v) и способ набора, они не влияют на чтение. Содержательных три: в строфе VIII издание 1727 года выпускает строку призыва, и строфа становится восьмистишием; там же вместо wat стоит al wat; а в строфе VII 1676-й даёт dat, 1727-й — dan, и dan согласуется с пятой строкой, так что dat похоже на опечатку. Русский текст идёт по 1676 году.", "markdown": "**Подлинник — нидерландский, 1676**\n\nПодлинник целиком — по первому изданию 1676 года, *Uyt-spanningen*, стр. 155–158. Орфография печатника сохранена: *u*/*v*, *ij*/*y*, написание прописных.\n\nСтрофы I–II несут все три слова сразу; III–VI утрояют *leven*, VII–IX — *lieven*, X — *loven*.\n\n**I**\nHOog! om hoog! mijn siel, na boven!\nHier beneden is het niet:\n't Regte leven, lieven, loven,\nIs maar daarmen Iesum siet.\nAl wat gy siet op aard,\nAl wat gy hoort op aard,\nIs uw costlijck leven, lieven, loven,\nAl wat gy wenscht op aard,\nIs uw costlijck hert niet waard.\n\n**II**\nSchoon en pragt is enckel schijn, en\nYdelheyd al 't costelijck,\nLusten met 't gebruyck verdwijnen,\nGoud en silver is maar slijck:\nDaar 't costelijcke bloed\nDaar 't costelijcke bloed\nWaardig all uw leven, lieven loven,\nDaar 't costelijcke bloet\n't Hert boven alles gelden doet.\n\n**III**\n't Leven sonder eynden Heerlijck,\nNa dit leven crijgelijck,\nIs, mijn siel, alleen begeerlijck,\nEn beweegt onsigtbaarlijck:\nSluyt maar uw vleeschlijck oog,\nSluyt maar etc.\nWant dit heerlijck leven, leven, leven,\nSluyt maar uw vleeschlijck oog,\nWant dit leven is om hoog.\n\n**IV**\nSonder sterven voor Godt leven,\nSonder moeyte, sonder pijn,\nSonder sieckte, sonder beven,\nSonder quel, en sonder quijn:\nO! yd'le siel bedenckt, O! yd'le etc.\nSonder sterven leven, leven, leven,\nO! ydle siel bedenckt,\nWat u den Hemel goedig schenckt.\n\n**V**\nLeven in volmaackte deugden,\nTot des Heeren Heerlijckheyd,\nVrolijck in des Hemels vreugden,\nHeylig in sijn Heylicheyd:\nMet so een glansch vereent, Met so etc.\nSonder sonden leven, leven, leven,\nMet so een glansch vereent,\nSiet wat den Hemel u verleent.\n\n**VI**\nHersenlosen, die de snooden\nSonden doet, en daar in leeft,\nWeet gy niet, dat u de dood, en\nHel nog in den boesem cleeft?\nWilt gy ten leven gaan? Wilt gy etc.\nVangt der deugden leven, leven, leven,\nWilt gy ten leven gaan?\nVangt hier het deugdsaam leven aan.\n\n**VII**\nWenschelijck en lievens-weerdig\nIs mijn Iesus, daar de min\nAltijd tot wat anders veerdig\nVindt alleen genoegen in!\nMijn siel na boven dan, Mijn siel etc.\nDaar ick Iesus lieven, lieven, lieven,\nMijn siel na boven dat,\nDaar ick het heyl aanschouwen can.\n\n**VIII**\nAlderminnelijckste Schoonheyd!\nOorsaack van wat hier schoon schijnt,\nDie door jaren, nog gewoonheyd\nMin vermaackt, of oyt verdwijnt.\nU, Schoonheyd, bid ick aan, U etc.\nWil ick oyt yets lieven, lieven, lieven,\nU, Schoonheyd, bid ick aan,\nDaar sal het hert eerst henen gaan.\n\n**IX**\nAllerley Bevallijckheden\nDiemen hier bedencken can,\nMenschen-liefde, menschen seden\nSijnder maar een schaduw van.\nDit steelt mijn hert en al, Dit etc.\nLust my yet te lieven, lieven, lieven,\nDit steelt mijn hert en al,\nDit boven al ick lieven sal.\n\n**X**\nAh! dat aller menschen tongen,\nAller Englen wackerheyd\nt'Samen-spanden, t'samen songen\nIesus lof en Heerlijckheyd!\nWaackt op Hert, mond, en hand\nWaackt op mijn Cijter; want\nIesus is te loven, loven, loven:\nWaackt all' op hier is stoff\nSingt sonder eynden Iesus loff.\n27. in Ougstmaand 1665.\n\n**Как это читать.** Сокращение *etc.* в строках призыва — не лакуна, а знак повтора: призыв напечатан один раз, а поётся дважды. Курсив, которым в транскрипции помечены отдельные слова, здесь снят, чтобы не спорить с разметкой поста. Последняя строка в книге — не стих, а дата: *27. in Ougstmaand 1665.*\n\n**Два издания.** Печатное издание 1676 года и девятое 1727 года расходятся в шести местах. Большинство — орфография (*c*/*k*, *u*/*v*) и способ набора, они не влияют на чтение. Содержательных три: в строфе VIII издание 1727 года выпускает строку призыва, и строфа становится восьмистишием; там же вместо *wat* стоит *al wat*; а в строфе VII 1676-й даёт *dat*, 1727-й — *dan*, и *dan* согласуется с пятой строкой, так что *dat* похоже на опечатку. Русский текст идёт по 1676 году."}]}</script>
+<script>
+var DATA = JSON.parse(document.getElementById('post-data').textContent);
+
+function flash(btn, text, ok) {
+  if (!btn.dataset.label) btn.dataset.label = btn.textContent;
+  btn.textContent = text;
+  btn.classList.add(ok ? 'ok' : 'bad');
+  setTimeout(function () {
+    btn.textContent = btn.dataset.label;
+    btn.classList.remove('ok', 'bad');
+  }, 2400);
+}
+
+function selectNode(node) {
+  var range = document.createRange();
+  range.selectNodeContents(node);
+  var sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+}
+
+function copyFromDom(node) {
+  var holder = document.createElement('div');
+  holder.setAttribute('contenteditable', 'true');
+  holder.style.position = 'fixed';
+  holder.style.left = '-9999px';
+  holder.style.whiteSpace = 'pre-wrap';
+  holder.innerHTML = node.innerHTML;
+  document.body.appendChild(holder);
+  selectNode(holder);
+  var ok = false;
+  try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+  window.getSelection().removeAllRanges();
+  document.body.removeChild(holder);
+  return ok;
+}
+
+function copyPlain(text) {
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.left = '-9999px';
+  document.body.appendChild(ta);
+  ta.select();
+  var ok = false;
+  try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+  document.body.removeChild(ta);
+  return ok;
+}
+
+function writePlain(text, btn, label) {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(
+      function () { flash(btn, label, true); },
+      function () { flash(btn, copyPlain(text) ? label : 'Не дали доступ — выделите и Ctrl+C', copyPlain(text)); }
+    );
+    return;
+  }
+  var ok = copyPlain(text);
+  flash(btn, ok ? label : 'Не дали доступ — выделите и Ctrl+C', ok);
+}
+
+function giveUp(btn) {
+  flash(btn, 'Теперь нажмите Ctrl+C', false);
+}
+
+function copyRich(i, btn) {
+  var m = DATA.messages[i];
+  var node = document.getElementById('preview-' + i);
+  if (navigator.clipboard && window.ClipboardItem) {
+    var item = new ClipboardItem({
+      'text/html': new Blob([m.html], { type: 'text/html' }),
+      'text/plain': new Blob([m.plain], { type: 'text/plain' })
+    });
+    navigator.clipboard.write([item]).then(
+      function () { flash(btn, 'Скопировано с разметкой', true); },
+      function () { if (copyFromDom(node)) { flash(btn, 'Скопировано с разметкой', true); } else { selectNode(node); giveUp(btn); } }
+    );
+    return;
+  }
+  if (copyFromDom(node)) { flash(btn, 'Скопировано с разметкой', true); }
+  else { selectNode(node); giveUp(btn); }
+}
+
+function copyBot(i, btn) { writePlain(DATA.messages[i].html, btn, 'HTML скопирован'); }
+
+function copyMarkup(i, btn) { writePlain(DATA.messages[i].markdown, btn, 'Разметка скопирована'); }
+
+function selectText(i, btn) {
+  selectNode(document.getElementById('preview-' + i));
+  flash(btn, 'Выделено — Ctrl+C', true);
+}
+</script>
+</body>
+</html>

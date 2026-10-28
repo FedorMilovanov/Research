@@ -19,7 +19,14 @@ value:
 - every document that describes the present state of the copy must quote the current
   description length; the review log is exempt because it records the past;
 - Telegram: "Длина: **<N>** видимых знаков" in DUTCH-005_TELEGRAM.md, against the
-  post text with markup characters stripped.
+  post text with markup characters stripped;
+- Telegram pages: the copy-ready HTML page built by ``render_telegram_html.py``
+  carries its own copy of the words; its embedded text is measured against the
+  same sentences in the .md, so a rebuilt page cannot drift from the file;
+- the description's own range: the channel's rule sheet allows 3500-4600
+  characters, not merely the platform's 5000. That upper bound was broken for a
+  whole pass (4881) while this gate said nothing, because it only knew the
+  platform limit.
 
 Read-only. Usage:
     python3 SUNO_HYMNS/scripts/check_copy_lengths.py
@@ -27,6 +34,7 @@ Read-only. Usage:
 
 from __future__ import annotations
 
+import json
 import re
 import sys
 from pathlib import Path
@@ -36,6 +44,11 @@ SUNO = ROOT / "SUNO_HYMNS" / "SUNO"
 
 YT_LIMIT = 5000
 TG_LIMIT = 4096
+
+# projects/lord-god-strength/RULES.md § 4: «Объём 3500–4600 знаков (лимит площадки 5000)».
+# The platform limit is not the channel's limit; a description can be legal and wrong.
+DESC_MIN = 3500
+DESC_MAX = 4600
 
 
 def description() -> str:
@@ -57,6 +70,59 @@ def telegram_visible() -> str:
     start = src.index("**«Хвала Славе»**", src.index("## 1."))
     end = src.index("\n", src.index("#ХристианскийГимн", start))
     return re.sub(r"\*", "", src[start:end])
+
+
+def extra_telegram_posts() -> list[tuple[str, int, int | None]]:
+    """Every other Telegram post file: (label, visible length, stated length).
+
+    DUTCH-005_TELEGRAM.md is excluded because it has its own extraction rule
+    above. Any new Telegram file drops in here with no change to this script,
+    which is the point: a hand-typed length is a length waiting to go stale.
+    """
+    out: list[tuple[str, int, int | None]] = []
+    for path in sorted(SUNO.glob("*TELEGRAM*.md")):
+        if path.name == "DUTCH-005_TELEGRAM.md":
+            continue
+        src = path.read_text(encoding="utf-8")
+        for index, block in enumerate(re.findall(r"```text\n(.*?)\n```", src, re.S), 1):
+            label = f"{path.name} — сообщение {index}"
+            # the number is bolded, so the closing ** has to be allowed between
+            # the digits and the word that follows
+            stated = re.search(rf"Сообщение {index}[^\n]*?(\d+)\*{{0,2}} знаков", src)
+            out.append(
+                (label, len(re.sub(r"\*", "", block)), int(stated.group(1)) if stated else None)
+            )
+    return out
+
+
+def telegram_html_pages() -> list[tuple[str, int, int | None]]:
+    """The copy-ready pages: (label, visible length, stated length).
+
+    `render_telegram_html.py` writes a page that carries the post three more
+    times over — as HTML, as clean text and as Telegram markup. The page is what
+    the owner copies from, so if it drifted from the .md he would paste a post
+    that no longer matches the file. This reads the words back out of the page
+    and holds them to the same number.
+    """
+    out: list[tuple[str, int, int | None]] = []
+    for page in sorted(SUNO.glob("*TELEGRAM*.html")):
+        src = page.read_text(encoding="utf-8")
+        block = re.search(
+            r'<script type="application/json" id="post-data">(.*?)</script>', src, re.S
+        )
+        if block is None:
+            out.append((f"{page.name}: no post-data block", 0, None))
+            continue
+        data = json.loads(block.group(1))
+        md = SUNO / (page.stem + ".md")
+        md_src = md.read_text(encoding="utf-8") if md.exists() else ""
+        for index, message in enumerate(data.get("messages", []), 1):
+            label = f"{page.name} — сообщение {index}"
+            stated = re.search(rf"Сообщение {index}[^\n]*?(\d+)\*{{0,2}} знаков", md_src)
+            out.append(
+                (label, len(message["plain"]), int(stated.group(1)) if stated else None)
+            )
+    return out
 
 
 def claimed(patterns: list[str], text: str, label: str, problems: list[str]) -> list[int]:
@@ -152,8 +218,25 @@ def main() -> int:
         if value != tg_len:
             problems.append(f"DUTCH-005_TELEGRAM.md says the post is {value}, it is {tg_len}")
 
+    for label, actual, stated in extra_telegram_posts() + telegram_html_pages():
+        print(f"{label}: {actual} visible characters")
+        if stated is None:
+            problems.append(f"{label}: the document does not state its length")
+        elif stated != actual:
+            problems.append(f"{label}: states {stated} characters, it is {actual}")
+        if actual > TG_LIMIT:
+            problems.append(f"{label}: {actual} characters, over the {TG_LIMIT} limit")
+
     if desc > YT_LIMIT:
         problems.append(f"YouTube description is {desc} characters, over the {YT_LIMIT} limit")
+    if desc > DESC_MAX:
+        problems.append(
+            f"YouTube description is {desc} characters, over the channel range of {DESC_MIN}-{DESC_MAX}"
+        )
+    if desc < DESC_MIN:
+        problems.append(
+            f"YouTube description is {desc} characters, under the channel range of {DESC_MIN}-{DESC_MAX}"
+        )
     if tg_len > TG_LIMIT:
         problems.append(f"Telegram post is {tg_len} visible characters, over the {TG_LIMIT} limit")
 

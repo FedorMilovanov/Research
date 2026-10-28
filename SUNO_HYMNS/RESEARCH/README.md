@@ -2,6 +2,8 @@
 
 ## Scope
 
+The Dutch lane was joined on 2026-10-26 by a second lane: **ancient Greek and Latin hymns**, catalogued separately in `ANCIENT_HYMNS_CATALOG.md`. Its first work is PHOS-001 (Φῶς ἱλαρόν); its evidence rules are the same ones below, and its dossier is `DOSSIER_PHOS-001_PHOS_HILARON.md`.
+
 Build a source-grounded history of Dutch Reformed devotional songs and poems used as the basis for modern Russian musical adaptations. Initial authors are Jodocus van Lodenstein, Abraham Rutgers as later reviser, and Jacobus Revius. The wider history of Dutch hymnody and psalmody is a connected research lane, not a synonym for the three current tracks.
 
 Establish original titles and spelling variants, historical genre, composition and publication dates separately, first publication and exact edition, biblical/historical context, author/translator/adapter/reviser roles, melody directions and sources, later hymnbook transmission, exact locators, access and rights boundaries.
@@ -83,3 +85,7 @@ Candidates in `DUTCH_HYMN_BACKLOG.md` are unrecorded as produced in the current 
 
 1. **DBNL slug numbers are not page numbers.** In a `lode002uyt_01_01_00NN.php` URL, `00NN` is a sequential chunk index: slug `0036` shows printed pp. 74–75, `0039` shows pp. 82–84, `0084` shows p. 230. The colophon cites printed pages, so always cite the `[pagina N]` bracket and the poem title. See `CLM-DBNL-SLUG-TRAP`.
 2. **Read the 1676 print before the critical edition.** Both *Hert-sterckte* poems and *Den nedrigen christen* are in the 1676 first edition at exact locators. The 2005 edition is a check on sense and apparatus, not the necessary route to the text — and it is copyrighted, so it cannot be the source you quote.
+
+## Открытые HOLD-ы
+
+`OPEN_HOLDS.md` — собранная скриптом `scripts/render_hold_ledger.py` сводка всех незакрытых HOLD-ов реестров: что именно не прочитано, не локализовано или не очищено по правам. Пересобирать после каждого изменения реестров.

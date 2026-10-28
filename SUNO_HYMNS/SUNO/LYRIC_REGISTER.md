@@ -45,6 +45,7 @@ For DUTCH-004 all six layers are deliberately kept apart in one package: the 167
 | DUTCH-003 V1 | Modern scholarly edition locator; original 1630 leaf not acquired | NOT IN REPOSITORY | NOT IN REPOSITORY | NOT CAPTURED |
 | DUTCH-004 (draft) | 1676 print pp. 74–75, read in full; 1727 collation recorded | DUTCH-004-RU-DRAFT v0.1 in `DUTCH-004_PRODUCTION_PACKAGE.md` §3 | Not yet frozen; gloss in §2 | PROMPT-DUTCH-004-V1 authored, never submitted |
 | DUTCH-005 (draft) | pp. 155–158 in **both** the 1676 and 1727 printings, read in full three ways against 2005; five variants recorded; **no page image yet** | `DUTCH-005-RU v0.10` in `DUTCH-005_LYRICS.md` — replaces v0.9 | `DUTCH-005_LYRICS_SUNO.md` — separate file, `[Verse n]` tags + four acute stress marks | `PROMPT-DUTCH-005-V1` in `DUTCH-005_STYLE.md`, never submitted |
+| PHOS-001 (draft) | Greek received text, six lines, read in an open choral library only — a printed Horologion has not been collated (`LOCATOR_HOLD`); no manuscript seen | `PHOS-001-RU v0.5` in `PHOS-001_LYRICS.md` — a translation, not an adaptation | `PHOS-001_LYRICS_SUNO.md` — `[Intro]` / `[Verse 1–3]` / `[Refrain ×2]` / `[Outro]`, nine sung lines: refrain of line 4 and reprise of line 6, one acute stress mark (`Иису́с`) | `PROMPT-PHOS-001-V1` in `PHOS-001_STYLE.md`, never submitted |
 
 ## Intake checklist
 

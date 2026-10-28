@@ -39,3 +39,15 @@ Three of these five were already recorded (`CLM-DUTCH-005-VARIANTS`). **VII.3** 
 - No page image of either printing has been inspected. Two impressions still disagree, so no wording is called *definitive*.
 - The 1727 printing is not an independent witness in stemmatic terms: it may descend from a corrected copy of 1676.
 - The illustration on p. 155 (`ill0155`) exists in the digital facsimile as a separate image file; it has not been opened, and nothing is claimed about it.
+
+## 5. Image access — attempted 2026-10-25, and exactly where it stopped
+
+The text layer is not the only thing DBNL holds. The 1676 volume is served as:
+
+- `https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01.pdf` — the text PDF;
+- a separate **scan bundle** offered on the same page as «Download Scans» (18.17 MB for the 1676 print) next to the 9.41 MB text PDF and the ebook;
+- single images per page, e.g. the cut that stands above `Voyse: Un jour &c.` on p. 155 at `https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01ill0155.gif`.
+
+None of these could be opened from this session: outbound HTTP from the sandbox is allowlisted to package and source-code hosts, so DBNL binaries and images are unreachable, and the page-fetch tool parses text and PDF *text* only, with the first 30 pages of a PDF — pp. 155–158 of a 425-page octavo are far outside that window, and the scans are images with no text layer at all.
+
+**What this means, stated without softening:** the collation in § 1–§ 3 remains a collation of three *transcriptions*, one of them the first edition's. It is a stronger base than one transcription, but it is not a page-image collation, and the copy does not claim to be. The next session that has unrestricted network access needs exactly two addresses: the 1676 bundle above for pp. 155–158, and the 1681 anthology for p. 495 — `https://www.dbnl.org/tekst/stap007lust01_01/` (Claes Stapel, *Het lust-hof der zielen*, Alkmaar 1681; the text layer there is the one that interleaves two printed columns, which is precisely why the page image is wanted). Nothing else about this question is still unknown: it is an access question, not a research question.

@@ -5,7 +5,7 @@
 - **Name forms:** Jodocus van Lodenstein; early-print spellings can include Lodensteyn; Russian project spelling: Йодокус ван Лоденштейн.
 - **Life:** 1620–1677; born in Delft, died in Utrecht.
 - **Role:** Dutch Reformed pastor, devotional poet and important representative of the Nadere Reformatie (“Further Reformation”).
-- **Service:** pastor in Utrecht from 1653 until his death.
+- **Service:** pastor in Zoetermeer from 1644, in Sluis from 1650; called to Utrecht in 1652, installed in **April 1653**, and served there until his death in 1677. Locator for all four dates: the 2005 critical-edition introduction (A. Ros), printed p. 645, DBNL `lode002uyt_02_01_0147.php`, read 2026-10-25. Sources that give 1644 / 1650 / 1653 are listing the three pastorates, not disagreeing about one.
 - **Theological context:** his writings stress lived reformation — holiness, repentance, spiritual affection and practical consequences of doctrine — rather than doctrine as a merely formal confession.
 
 DBNL author record: https://www.dbnl.org/auteurs/auteur.php?id=lode002  

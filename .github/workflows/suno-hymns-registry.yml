@@ -99,13 +99,25 @@ jobs:
       - name: Check the Russian lyric (ё, selective stress marks)
         # This gate existed but was never wired, while two documents claimed it
         # ran in CI. It enforces the ё rule and rejects blanket stress marking.
-        run: python3 SUNO_HYMNS/scripts/check_ru_lyric.py SUNO_HYMNS/SUNO/DUTCH-005_LYRICS.md SUNO_HYMNS/SUNO/DUTCH-005_LYRICS_SUNO.md
+        run: |
+          set -euo pipefail
+          python3 SUNO_HYMNS/scripts/check_ru_lyric.py SUNO_HYMNS/SUNO/DUTCH-005_LYRICS.md SUNO_HYMNS/SUNO/DUTCH-005_LYRICS_SUNO.md
+          # The ancient-hymn lane is wired into the same gate; a lyric written after
+          # the gate was built is exactly the one that would never be checked.
+          python3 SUNO_HYMNS/scripts/check_ru_lyric.py SUNO_HYMNS/SUNO/PHOS-001_LYRICS.md SUNO_HYMNS/SUNO/PHOS-001_LYRICS_SUNO.md
 
       - name: Check that the prose names the current revision
         # Structural validation cannot see that four documents still describe the
         # previous lyric revision, or that a document claims "five stress marks"
         # while the shipped file carries four. This gate compares prose to files.
         run: python3 SUNO_HYMNS/scripts/check_revision_consistency.py
+
+      - name: Audit cross-file consistency
+        # The validator only sees the JSON. It cannot see that a source is missing
+        # from the Markdown mirror, that a claim points at a source which no longer
+        # exists, or that a dossier cites an ID that was never created. All three
+        # happened on 2026-10-26 and none of them failed a gate.
+        run: python3 SUNO_HYMNS/scripts/audit_registry_consistency.py
 
       - name: Assert the validator is read-only
         run: |

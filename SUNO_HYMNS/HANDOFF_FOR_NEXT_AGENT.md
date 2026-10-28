@@ -129,13 +129,25 @@ These are candidates, not approved or completed productions. Re-check the critic
 
 The conversation also included a Russian 1 Peter 1 Scripture-song draft with Cantor/organ/monastic-drone section labels, and a separate Passion-confession lyric/visual concept beginning «Не те иудеи, Господь Иисус…». They are recorded as adjacent works only. Their recording/export state and historical attribution are not established here; do not classify them as Dutch historical hymns.
 
+## Where the seventh pass left things (2026-10-25, research only)
+
+**Owner's report:** DUTCH-005 was made and uploaded to YouTube and Telegram. Recorded as a report, not as a verified state: no URL was supplied, and this sandbox cannot check YouTube. `STATUS_LEDGER.md` says what the two links will settle — which wording of stanza 3.2 went out, and which of the two descriptions was pasted. **No new hymn goes into production**, at the owner's direction; this project works only on research from here.
+
+**Closed by that pass:**
+
+1. **The 2005 melody register** (printed pp. 663–664) was read for the first time — `RESEARCH/TUNE_DIRECTIONS_FROM_THE_2005_MELODY_REGISTER.md`. It files `Un jour m'en alloit &c.` under texts **27 and 56**, while the note on item 56 says our melody is not text 27's. Not a contradiction: the register indexes direction **strings**, the note speaks about **melodies**. Rule: cite it for "same direction", never for "same melody".
+2. **The `Prendete la` puzzle is closed.** The register's second string for texts 9 and 32, `Gy laat, dien gy vind rede staan`, is item 9's own incipit — a second **key**, not a second tune. This is the "Bourgeois or psalm 42" error in a new place, caught before it cost a round.
+3. **Candidate `DUTCH-CAND-006`, *'t Cruyce van een christen*** (no. 57) researched to a dossier: 15 four-line stanzas, printed pp. 158–160, dated **16 January 1659**, tune `'t En is niet alle tijd, &c.` pointing to item 41, and the 2005 headnote names the incipit as **Camphuysen's *Christelijcke Gelatenheydt***. Also established: the print itself abbreviates the closing couplet to `O! etc.` in six stanzas and varies it four ways, so an adapter must neither add nor restore those lines. **No collision with DUTCH-003**: Revius is about Christ's suffering, this poem about the disciple's cross.
+
+**Next research step of highest value:** Camphuysen's *Christelijcke Gelatenheydt* — the only tune direction in this collection that leads to a named song outside Lodenstein.
+
 ## Where the publication pass left things (2026-10-26)
 
 DUTCH-005 now has a complete publication package for two surfaces, and **nothing is generated, chosen or published**. State is still `LYRIC_DRAFT`.
 
 **New since the sixth pass:**
 
-1. `SUNO/DUTCH-005_YOUTUBE.md` — title options, a 4881-character description (12 bold spans, 5 italic lines), hidden tags, a checklist, and § 0: a verbatim post-mortem of the markup that broke on a live page, so nobody re-runs the same experiment.
+1. `SUNO/DUTCH-005_YOUTUBE.md` — title options, a 4598-character description (12 bold spans, 5 italic lines), hidden tags, a checklist, and § 0: a verbatim post-mortem of the markup that broke on a live page, so nobody re-runs the same experiment.
 2. `SUNO/DUTCH-005_TELEGRAM.md` — the @lordchrist post in Telegram markup, plus an HTML twin.
 3. `SUNO/DUTCH-005_PINNED.md` — **two** pinned comments: one on the hymn (date under the last stanza, the meaning of the title, `leven`/`lieven`/`loven`, the edition chain, the missing melody), one on how the Dutch actually sang (psalms only, the 1574 organ ban, the `voorzanger`, the house circles, and Lodenstein's own six singing rules from the preface).
 4. `RESEARCH/DUTCH-005_SINGING_PRACTICE_SOURCES.md` — 88 addresses behind the second pinned comment, with honest statuses: 5 opened and read, 74 found in results, 9 still only library leads. Nothing in either закреп rests on a snippet alone.
@@ -152,4 +164,8 @@ DUTCH-005 now has a complete publication package for two surfaces, and **nothing
 - call the pinned comments publication, or attach a URL that has not been checked;
 - describe the hymn as written for public worship. It was written for a house circle, and that is the fact the copy is built on.
 
-**Still open, in priority order:** the lyric defect at stanza 3.2 («После земных невзгод»); the cover (references live outside the repository); the title separator is settled (`✝`, owner decision 2026-10-26) and must not be reopened; a live Studio check of the description and both pinned comments; the 1676 page images of pp. 155–158 (only the text layer has been read).
+**Still open, in priority order:** the owner's signature on stanza 3.2 (the line now reads «Та, что за смертью придёт», applied in v0.10); the cover (references live outside the repository); a live Studio check of the description and both pinned comments; the 1676 page images of pp. 155–158 and p. 495 of 1681 (only text layers have been read — the addresses are in `RESEARCH/COLLATION_DUTCH-005_THREE_WAY.md` § 5).
+
+**Closed since:** the Utrecht date. The 2005 introduction (A. Ros, p. 645) states that the call came in 1652 and that he entered the Utrecht ministry in April 1653, serving until 1677; the 1644/1650/1653 in secondary sources are his three pastorates. Claim `CLM-L-UTRECHT-1653`. The description and the Telegram post now say «с апреля 1653 года».
+
+**Also closed:** the description's length. It stood at 4881 against the channel's own 3500–4600 range while every gate stayed green, because the gate only knew the platform limit. It is now 4598, the cut is tabulated in `SUNO/DUTCH-005_YOUTUBE.md` § 7, and `check_copy_lengths.py` enforces both bounds.

@@ -112,7 +112,7 @@ That is why `rejected` in the log now needs a source line, and why this pass pro
 
 **The number that was actually wrong.** The pinned comment said the 1679 second edition appeared "eight years before the author's death"; it appeared **two years after** it. Read dates as sentences, not as arithmetic.
 
-## 2b. Delivery, gates and two channels — four more, each with a guard
+## 2b. Delivery, gates and two channels — five more, each with a guard
 
 **1. Marked-up copy handed over as a block quote.** The two pinned comments went to the owner inside `>` quotes. The chat renders `*…*` into bold and the asterisks vanish from the screen, so what could be copied looked like plain prose and the one thing asked for was not visibly there. **Guard:** copy goes into a fenced `text` block, always; the rule is in `projects/lord-god-strength/RULES.md` § 3 and in the channel standard.
 
@@ -122,6 +122,66 @@ That is why `rejected` in the log now needs a source line, and why this pass pro
 
 **4. Secondary sources stated as verified.** The description and the pinned comment asserted the 1681 and 1718 reprints and the 1938 melody as plain facts, while `CLAIM_LEDGER` records them as `SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION`, resting on search-engine extracts of the song database and on a wiki. **Guard:** the copy now attributes them — «по каталогу Нидерландского песенного банка», «по песенным справочникам» — and the status table in `DUTCH-005_PINNED.md` says «вторичное, коллация не сделана» instead of «сверено». A claim does not become print-verified by being retyped into a nicer sentence.
 
+## 2c. The fact was in the volume all along — in the introduction, not the apparatus
+
+**What happened.** For several passes the project carried an open item: the year of Lodenstein's Utrecht ministry was not confirmed, so the words «с 1653 года» were banned from the description in every form. The search had been run through the 2005 edition's **notes** and through its **table of contents** — the apparatus around the poem — and through secondary biographies. Nobody had opened the volume's **introduction**.
+
+**What settled it.** `lode002uyt_02_01_0147.php`, A. Ros, «Ds. Jodocus van Lodenstein en zijn *Uyt-spanningen* 1676», printed p. 645: the call came in 1652, illness delayed him, and he entered the Utrecht ministry in **April 1653**, serving until 1677. One page, five minutes, and it also explained the discrepancy that had looked like a contradiction: the 1644 / 1650 / 1653 in secondary sources are his three pastorates (Zoetermeer, Sluis, Utrecht), not three datings of one event.
+
+**Guard.** When a critical edition is open, its introduction is a source of the same standing as its apparatus, and it must be read before a biographical item is declared unresolvable. And a discrepancy between secondary sources is not automatically an open question: three numbers can be three true facts. Before recording a conflict, check whether the sources are answering the same question.
+
+**Cost avoided, not paid.** The ban was correct while the gap was real, and the copy never contained an unsourced date. The cost was time: the item sat in three plans as "blocked on access" when it was blocked on nobody having clicked the next page.
+
+**5. A rule that no gate read.** `projects/lord-god-strength/RULES.md` § 4 has said 3500–4600 characters since the rule sheet was written. The DUTCH-005 description was built to 4881 and stayed there across two passes, while `check_copy_lengths.py` reported green: it only knew the platform's 5000. A description can be legal on the platform and wrong for the channel, and the copy claims in its own checklist that it was written to the rule. **Guard:** the gate now enforces both bounds (`DESC_MIN`/`DESC_MAX`) and was tested by lowering the maximum until it failed. The description was cut to 4598 without losing a single claim, link, hashtag or bold span, and the cut is tabulated in `SUNO/DUTCH-005_YOUTUBE.md` § 7 so it can be reviewed or reverted line by line. General lesson: when a document states a number, grep the scripts for that number; if no script contains it, the number is decoration.
+
+## 2d. The author's last word was in the Nachtrag — at the back of the same volume
+
+**What happened.** Harnack's *Chronologie* II states on p. 11 that the *Paedagogus* was written
+after 202/3 and outside Alexandria. The project recorded the date **c. 203–211** against Gordley's
+**c. 190–202/3** and carried it as a twenty-year conflict between sources through three dossier
+parts. The volume's own table of contents announced «Nachtrag S. 541f.» for the Clement section all
+along. Reading it (pp. 541–542, «1. Zu Clemens Alexandrinus»): Harnack **retracts the conclusion
+himself** — a passage he noticed only afterwards (`Paed. II, 10, 93`, «our» sea-city = Alexandria)
+forces him to place the *Paedagogus* back in Alexandria, so he moves the error to the dating of
+*Strom.* I–IV («Diese Annahme hat sich nun als irrig erwiesen») and ends at **190–202** — Gordley's
+range. The conflict was never a conflict; it was half of a book.
+
+**Guard.** Before recording an author's conclusion as his position, check whether the same volume's
+table of contents announces a *Nachtrag*, *Zusatz*, *Berichtigung* or *Addenda* for that section, and
+read it with the main text. This is the third instance of one failure pattern in this project, and the
+mechanism differed each time: a truncated OCR chunk (part 6: «no scholia to the hymn»), the same
+truncation noticed later (part 10: «scholia break off at lemma 274, 1»), and now a supplement at the
+back of the volume. **A conclusion, a negative finding and an author's last word all need the same
+check: the page *and* its continuation must both have been read.**
+
+**Cost avoided, not paid.** The date was never printed in any copy — no listener-facing text carried
+it — and the obstacle was recorded as a dispute rather than as a number. The cost was a false
+obstacle in three catalogues and one roadmap, now corrected in place.
+
+## 2e. A scholar's correction can rest on a passage that does not bear it
+
+**What happened.** Harnack retracted his own dating of the *Paedagogus* (c. 203–211) in a
+*Nachtrag*, on the strength of one sentence: `Paed. II, 10, 93`, «our» city that is also a
+«Seestadt» must be Alexandria. The project adopted the retraction (part 11) and wrote the
+obstacle off. Checking the citation in a critical edition (part 12): the reference is exact
+(p. 213, book II, ch. X, § 93), but his own quotation differs from the printed text in two words,
+and the decisive one is *absent* from his quotation — he prints `ἄπεισιν` where the edition reads
+`εἰσπλεῖ` («sails in»), the very word his inference rests on. The edition's own apparatus refers
+the line to **Crates fr. 4**, and Crates' city — Πήρα — is `περίρρυτος`, an island: the sea
+belongs to the parodied poem, not to Alexandria. «Our city» is contrasted with Crates' fictional
+city and means the Christian community. The retraction's first link is broken; Harnack's original
+argument (the order of the works) he never withdrew («Ich kann das nicht glauben»).
+
+**Guard.** When a conclusion rests on a quotation, verify the quotation *and its source* in a
+critical edition before recording either the conclusion or its retraction. Three questions, in
+order: is the reference exact; does the quoted text match the printed text; and is the passage
+quoting or parodying someone else — in which case the borrowed words prove nothing about the
+author's own situation. Also: when two sources agree, ask whether they agree **independently**.
+Here they did not: Harnack reached Gordley's range by an inference the sources do not support.
+
+**Cost avoided, not paid.** No date was printed in any listener-facing copy. The obstacle in the
+catalogues was rewritten within the same session, and part 11 carries a pointer to the correction.
+
 ## 3. Mechanical hazards
 
 - **Combining acute and NFC.** A word written with `й` + U+0301 reads as a different string from the same word without it. Any accent check that compares raw strings silently passes. Normalise to NFD before testing, as `check_ru_lyric.py` does.
@@ -130,6 +190,7 @@ That is why `rejected` in the log now needs a source line, and why this pass pro
 - **One `grep` for a version string.** The same revision is written `DUTCH-005-RU v0.8` and `DUTCH-005-RU-v0.8`; a single pattern finds half the mentions and reports success.
 - **`str.replace` with multi-line or table anchors.** It silently matches nothing. Grep the exact line, or slice between unique anchors.
 - **No image tooling in the sandbox.** `PIL` and `file` are absent, so image dimensions cannot be verified locally; the generator's aspect ratio is taken on trust and the file is read visually instead.
+- **A path outside the repository is not an asset.** Draft images lived at `/home/user/images/dutch-005/` in one session; the next session's sandbox had no such directory, and nothing had been committed. A handover line then called them "nine references", which reads as source material the owner could point at — they were generated drafts that no longer exist. Write down what a file *is* (draft, output, reference, asset) and whether it is inside the repository, or the next reader will go looking for it.
 - **DBNL is a text layer.** No claim about typography, drop capitals or `etc.` spacing can come from it. The italic markers in the transcription (`*pragt*`, `*Lusten*`, `*Goud*`) are DBNL emphasis, **not** evidence of the print's italics.
 
 ---

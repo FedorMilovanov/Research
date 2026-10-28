@@ -33,6 +33,13 @@ WORK_TYPES = {
     "LATER_HYMNBOOK_REWORKING",
     "SONNET_MODERN_MUSICAL_SETTING",
     "BIBLICAL_CANTICLE_OR_SCRIPTURE_EXPANSION",
+    # The ancient-hymn lane: a whole pre-Reformation Greek or Latin hymn, carried as a
+    # text with a named witness rather than as a poem with a printed tune direction.
+    "ANCIENT_GREEK_LAMPLIGHTING_HYMN",
+    # Added 2026-10-26 for PHOS-007: a Greek hymn in classical quantitative metre that
+    # closes a prose treatise. It is carried as a candidate rather than as a track — no
+    # witness of liturgical use, no melody, and the text itself unsettled between editions.
+    "ANCIENT_GREEK_TREATISE_EPILOGUE_HYMN",
 }
 CANDIDATE_STATES = {"OPEN", "ACTIVATED", "REJECTED", "SUPERSEDED"}
 CLAIM_STATES = {
@@ -41,6 +48,9 @@ CLAIM_STATES = {
     "EVIDENCE_HOLD",
     "RESEARCH_OPEN",
     "REPORTED_NOT_INDEPENDENTLY_VERIFIED",
+    # a claim that was looked for in a primary text and found to be false: stronger
+    # than REPORTED_NOT_INDEPENDENTLY_VERIFIED, weaker than a positive SUPPORTED state
+    "VERIFIED_NEGATIVE",
 }
 
 
@@ -273,7 +283,6 @@ def check_candidates(
             )
 
     backlog = PROJECT / "RESEARCH" / "DUTCH_HYMN_BACKLOG.md"
-    catalog = PROJECT / "RESEARCH" / "DUTCH_HYMN_CATALOG.md"
     try:
         backlog_ids = set(re.findall(r"DUTCH-CAND-\d{3}", backlog.read_text(encoding="utf-8")))
     except OSError as exc:
@@ -287,13 +296,27 @@ def check_candidates(
             f" (markdown-only={missing}, json-only={extra})"
         )
 
-    try:
-        catalog_ids = set(
-            re.findall(r"^##\s+(DUTCH-\d{3})\b", catalog.read_text(encoding="utf-8"), re.MULTILINE)
-        )
-    except OSError as exc:
-        errors.append(f"cannot read the catalog Markdown: {exc}")
-        catalog_ids = set()
+    # Two catalogs, one works list: the Dutch lane and the ancient-hymn lane are kept
+    # apart on the page and together in the registry. An ID that appears in neither, or
+    # twice, must fail here rather than go invisible.
+    catalogs = (
+        PROJECT / "RESEARCH" / "DUTCH_HYMN_CATALOG.md",
+        PROJECT / "RESEARCH" / "ANCIENT_HYMNS_CATALOG.md",
+    )
+    catalog_ids: set[str] = set()
+    seen_ids: list[str] = []
+    for catalog in catalogs:
+        try:
+            found = re.findall(
+                r"^##\s+([A-Z]{2,10}-\d{3})\b", catalog.read_text(encoding="utf-8"), re.MULTILINE
+            )
+        except OSError as exc:
+            errors.append(f"cannot read the catalog Markdown {catalog.name}: {exc}")
+            continue
+        seen_ids.extend(found)
+        catalog_ids.update(found)
+    if len(seen_ids) != len(set(seen_ids)):
+        errors.append("the same work ID is catalogued in more than one catalog file")
     if catalog_ids != track_ids:
         missing = sorted(catalog_ids - track_ids)
         extra = sorted(track_ids - catalog_ids)

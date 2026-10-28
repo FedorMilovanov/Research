@@ -117,6 +117,7 @@ The chain resolves completely inside the book:
 1. Printed **p. 29** = *Simeons Lof-sang* (item 9), whose own heading reads **`Te singen Als: Prendete la.`**
 2. So the cross-reference is self-confirming: the tune named *Prendete la* enters this collection at p. 29 and item 32 is sung to it. The same page reference works unchanged in the 1727 edition, which also prints *Simeons Lof-sang* on p. 29 with the same `Als: Prendete la.`
 3. The 2005 apparatus states that *Prendete la* is an **unknown** tune designation and that the reference points to the melody of text 9.
+3a. **Added 2026-10-25 — why two tune names appear to exist.** The 2005 *Melodie-register* (pp. 663–664) lists texts **9 and 32 twice**: once under `Prendete la` and once under `Gy laat/ dien gy vind rede staan`. The second string is item 9's own **incipit**, not a second tune — the register keys the same melody by its name and by the first line of the poem that introduces it, exactly as it does for the group 26/29/50/65/87/88 under `/Nerea`/`Doet yemant sorg`/`Tien Geboden`/`Reveillez vous`. So «напев `Prendete la` или напев „Gy laat…”» is a **false dichotomy**, the same shape as the old "Bourgeois or psalm 42" error. The tune remains untraced; the confusion is now recorded instead of waiting to be re-derived. See `TUNE_DIRECTIONS_FROM_THE_2005_MELODY_REGISTER.md` § 3.2.
 
 **Independent confirmation: NONE acquired.**
 - No notation, no text of a *Prendete la* song, and no identification of its origin is in this project.

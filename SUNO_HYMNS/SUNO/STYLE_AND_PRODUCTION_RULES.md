@@ -18,6 +18,10 @@ This is a living project-local playbook. It records confirmed preferences and pr
 - For *Schepselen niet en Jesus al*, the 1676 text gives a tune direction to *Rosemont waer gy vliedt*. This is a historical tune indication, not evidence that a modern SUNO take recreates the original arrangement.
 - *Hy droech onse smerten* is cataloged as a sonnet; no original melody direction is verified in the current record. Treat any music as a modern setting unless a primary source is located.
 
+## Capitalization of address
+
+Правило одно и лежит в одном месте — `projects/lord-god-strength/RULES.md` § 7: **заглавная буква в местоимении — только о Боге** (Он, Ему, Тебе, Твой). О святых, о Деве Марии, об авторах, героях и предметах — только строчная, в цитатах тоже. Здесь правило не дублируется.
+
 ## Text preparation for SUNO — standing rules
 
 These are project-wide working principles, adopted 2026-10-25 from the owner's notes. Per-work style decisions remain per-work and are recorded separately (see §"Per-work decisions").
@@ -30,6 +34,15 @@ These are project-wide working principles, adopted 2026-10-25 from the owner's n
 6. **Choose the musical style per work.** A per-work exclusion (for example, no guitar in the epic Lodenstein setting) is not a project-wide rule.
 7. **Vocal default: clear diction, a strong and intelligible lead male voice, correct stress and natural pronunciation.** Avoid excessively breathy, whispered, hoarse or gratuitously low delivery unless a specific concept calls for it.
 8. **Keep the literary translation separate from the musical adaptation.** Document and justify every departure from the source.
+9. **Буквальность изначально (owner's rule, 2026-10-27): when a rendering choice exists, take the more literal option first.** The literal option is the one closest to the source word, case, word order and syntax. Smoothing may be recorded as an alternative, but it is not the starting point, and every departure from the literal one is written down with its reason.
+
+**What "literal first" means in practice (adopted with rule 9):**
+
+- **Word order stays** wherever the target language allows it. Reordering is a departure and is documented as one.
+- **Case stays.** A Greek vocative is rendered by a Russian vocative, not by a nominative, unless a per-work decision says otherwise.
+- **Calques beat stylistic synonyms** where the calque is the exact equivalent: `μονογενής` → «единородный», not «единственный»; `δοξολογοῦμεν` → «славословим», not «славим»; `εὐχαριστοῦμεν` → «благодарим», not «спасибо говорим».
+- **Church-Slavonic forms are not banned** — they are chosen when they are the literal equivalent («в вышних», «Вседержитель», «одесную»), and rejected when they are flavour («тихий» вместо «отрадный»). The test is literalness, not registered.
+- **Precedence is unchanged:** an explicit owner decision about a given work — its title, its name, its register — wins over rule 9 and is recorded as a per-work decision below. Rule 9 governs the choices that are still open.
 
 **Precedence.** Where a per-work decision and a standing rule conflict, the per-work decision wins — but it must be written down as a per-work decision, with its reason. The standing rules exist to prevent defaults from being invented silently.
 
@@ -60,6 +73,7 @@ Each direction is recorded with: an ID, a one-line label, the prompt string, wha
 | DUTCH-002 | Guitar excluded | part of the above per-work brief only |
 | DUTCH-003 | Either atmospheric guitar and cello, or a cappella with organ/cello/male ensemble entering after the sonnet's turn | `DISCUSSED_NOT_APPROVED` |
 | DUTCH-004 | Chamber setting — cello, contrabass, theorbo, small organ pad, one flute line; two-voice choir from verse 4, four parts only in verse 7; ♩=65, 3/4 | `AUTHORED` in the production package; never generated |
+| **Раздел исследований** (`RESEARCH/RESEARCH_LANE_NOT_FOR_SINGING.md`) | Правила текста, стиля, произношения и экспорта к карточкам этой рубрики **не применяются**: они не поются и не публикуются как треки. Там не бывает русского текста для пения, стилевых направлений, обложек и подсчётов — только чтение источников и материал для статей. Первая карточка — PHOS-004 | `OWNER_DECISION_2026-10-27` |
 | DUTCH-CAND-021 (*Heerlijckheyds Loff*) | Male monastic ensemble and epic organ — **and a duplication risk:** the same brief appears under DUTCH-002, and with no verbatim prompts held, it is not now determinable whether one prompt was reused for two poems | `DISCUSSED_NOT_APPROVED` |
 
 ## Pronunciation marks
