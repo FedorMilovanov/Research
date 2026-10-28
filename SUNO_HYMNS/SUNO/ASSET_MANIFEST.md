@@ -50,7 +50,12 @@
 
 ## Asset-custody boundary
 
-No MP3, WAV, MP4, PNG or other media file has been copied into this repository by this branch. The paths above are inventory notes only. To make assets durable in Research, the owner must explicitly transfer the files and the next agent must follow the repository's artifact-custody and rights rules.
+**Correction (2026-10-28).** The sentence below was written before the cover drafts existed. It is
+now true only in part: this branch **does** commit four PNG files, and they are listed in full in
+the PHOS-001 section. Everything else is still inventory notes only.
+
+No MP3, WAV, MP4 or other audio/video file has been copied into this repository by this branch.
+The only image files committed are the four PHOS-001 cover drafts recorded below. The paths above are inventory notes only. To make assets durable in Research, the owner must explicitly transfer the files and the next agent must follow the repository's artifact-custody and rights rules.
 
 ## DUTCH-005 — cover candidates (2026-10-25) — NOT approved, NOT in this repository
 
@@ -65,3 +70,24 @@ No MP3, WAV, MP4, PNG or other media file has been copied into this repository b
 **What survives is the direction, and the direction is the asset:** 16:9, no text, golden baroque-fantasy cathedral interior — colossal gilded columns and angel statues, an organ of gold pipes, a single shaft of light down the axis, one small hooded figure with open arms standing in it. Rejected and not to be retried: baroque oil painting in a Dutch-church manner, copperplate emblem engraving, cold photoreal organ close-up, storm/ruin sublime.
 
 Earlier trials, listed only so the same pictures are not re-made (files no longer exist): `b7-organ-wall.jpg`, `b8-kneeling-host.jpg`, `b11-nave-tiers.jpg`, `b13-altar-cascade.jpg`.
+## PHOS-001 — «Свет Отрадный», cover drafts (2026-10-27) — IN this repository, layout NOT chosen
+
+**This is the only image material the branch commits.** Four PNG files, all 1672 × 941 (16:9),
+5.6 MB together:
+
+| Файл | Что это | Статус |
+|---|---|---|
+| `SUNO/artwork/PHOS-001/PHOS-001_cover_battle-D.png` | база D: композиция и пламя | **база выбрана владельцем**; композицию и пламя не перерисовывать |
+| `SUNO/artwork/PHOS-001/PHOS-001_cover_type-V.png` | раскладка текста V поверх базы D | выбор не сделан |
+| `SUNO/artwork/PHOS-001/PHOS-001_cover_type-W.png` | раскладка текста W поверх базы D | выбор не сделан |
+| `SUNO/artwork/PHOS-001/PHOS-001_cover_type-X.png` | раскладка текста X поверх базы D | выбор не сделан |
+
+**Текст обложки зафиксирован:** три строки лестницей, все по одной левой оси, кириллица без
+искажений, формат 16:9.
+
+**Не решено:** какая из раскладок V / W / X. **Не сделано:** генерация музыки, финальный
+экспорт обложки, метаданные YouTube для PHOS-001.
+
+**О несохранившемся.** Невыбранные варианты из каждого battle лежали в папке `Unselected files`
+внутри сессии; песочница не выживает между сессиями, поэтому этих файлов больше нет нигде.
+Четыре файла выше — всё, что осталось от работы над обложкой.

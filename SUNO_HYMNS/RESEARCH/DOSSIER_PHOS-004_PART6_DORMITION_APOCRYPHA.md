@@ -1,5 +1,7 @@
 # PHOS-004, часть 6 — Сказания об Успении: тридцать версий на девяти языках, и Палестина как место, где это началось
 
+Оглавление досье: `DOSSIER_PHOS-004_INDEX.md`.
+
 Источник этой части — открытая статья Шумейкера «The Ancient Dormition Apocrypha and the
 Origins of Marian Piety: Early Evidence of Marian Intercession from Late Ancient Palestine»
 (PDF на austriaca.at; прочитаны чанки 0 и 2 из 12). Плюс чанк 2 из 9 его же лекции

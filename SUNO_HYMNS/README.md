@@ -50,6 +50,10 @@ The root Research authority and evidence policy remain controlling. Nothing in t
 - **RESEARCH/AUTHOR_*.md** — focused author dossiers.
 - **RESEARCH/SOURCE_REGISTER.md** — human-readable view of the source registry.
 - **RESEARCH/CLAIM_LEDGER.md** — claim-by-claim support, caveats and typed HOLDs.
+- **RESEARCH/OPEN_HOLDS.md** — generated inventory of every unresolved HOLD: what is promised but not yet read, located or cleared. Rebuild it after any registry change.
+- **RESEARCH/RESEARCH_LANE_NOT_FOR_SINGING.md** — the research lane: hymns that are studied and written about but never sung. Its charter, the confession frame of the channel, the PHOS-004 card and the running journal.
+- **RESEARCH/DOSSIER_PHOS-004_INDEX.md** — table of contents for the *Sub tuum praesidium* dossier (parts 1–7): witnesses, dating, Epiphanius, the Dormition apocrypha.
+- **RESEARCH/DOSSIER_PHOS-0*.md**, **RESEARCH/DOSSIER_SERIES_*.md** — ancient-hymn dossiers and the series background on Clement, Pliny, Justin and Philo.
 - **RESEARCH/SONGBOOK_REGISTER.md** — publication editions and the actual access layer.
 - **RESEARCH/GENRE_AND_CLASSIFICATION.md** — controlled distinctions between psalms, devotional songs, sonnets, later adaptations and modern settings.
 - **RESEARCH/LESSONS_AND_GUARDS.md** — errors already made in this project, each paired with the guard that now catches it. Read before drafting a lyric, applying a review or generating artwork.
@@ -114,6 +118,10 @@ From the repository root, run:
     python SUNO_HYMNS/scripts/validate_project_registry.py
     python SUNO_HYMNS/scripts/check_ru_lyric.py SUNO_HYMNS/SUNO/*LYRICS*.md
     python SUNO_HYMNS/scripts/check_revision_consistency.py
+
+Regenerate the HOLD inventory after changing a registry (this one writes a file):
+
+    python SUNO_HYMNS/scripts/render_hold_ledger.py
 
 All five gates run as separate steps in `.github/workflows/suno-hymns-registry.yml`: registry validation, markup of the description and both pinned comments, quoted lengths against the files, revision consistency, and the Russian lyric check.
 

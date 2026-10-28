@@ -85,3 +85,7 @@ Candidates in `DUTCH_HYMN_BACKLOG.md` are unrecorded as produced in the current 
 
 1. **DBNL slug numbers are not page numbers.** In a `lode002uyt_01_01_00NN.php` URL, `00NN` is a sequential chunk index: slug `0036` shows printed pp. 74–75, `0039` shows pp. 82–84, `0084` shows p. 230. The colophon cites printed pages, so always cite the `[pagina N]` bracket and the poem title. See `CLM-DBNL-SLUG-TRAP`.
 2. **Read the 1676 print before the critical edition.** Both *Hert-sterckte* poems and *Den nedrigen christen* are in the 1676 first edition at exact locators. The 2005 edition is a check on sense and apparatus, not the necessary route to the text — and it is copyrighted, so it cannot be the source you quote.
+
+## Открытые HOLD-ы
+
+`OPEN_HOLDS.md` — собранная скриптом `scripts/render_hold_ledger.py` сводка всех незакрытых HOLD-ов реестров: что именно не прочитано, не локализовано или не очищено по правам. Пересобирать после каждого изменения реестров.

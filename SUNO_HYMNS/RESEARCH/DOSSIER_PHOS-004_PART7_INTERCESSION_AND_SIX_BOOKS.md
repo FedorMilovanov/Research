@@ -1,5 +1,7 @@
 # PHOS-004, часть 7 — Древнейшая молитва о ходатайстве и вифлеемская традиция: читаны чанки 3–4
 
+Оглавление досье: `DOSSIER_PHOS-004_INDEX.md`.
+
 Продолжение части 6, тот же источник: Шумейкер, «The Ancient Dormition Apocrypha and the
 Origins of Marian Piety» (austriaca.at). Прочитаны чанки 0, 2, 3 и 4 из 12.
 
