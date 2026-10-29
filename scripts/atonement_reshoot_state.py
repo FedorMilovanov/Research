@@ -566,6 +566,32 @@ def queue_outcomes() -> dict:
     }
 
 
+def d_layer_state() -> dict:
+    """Мера §3.17 и §3.3 (круг 85, дуга VII): слой D и черновик B2.
+
+    §4 плана — источник истины о темах резерва (строки таблицы «| Тема |»), карточки слоя D —
+    файлы `synthesis/D*_*.md` (D1 — первая, круг 85), черновики — каталог synthesis/drafts,
+    включая 06. Обе строки документа генерируются этим обходом: «7 тем, ни одной карточки» и
+    «12 файлов без 06» устарели, когда дуга VII открыла первую карточку, и живой счёт обязан
+    идти из файлов, а не из памяти круга."""
+    plan = (ROOT / "ИСКУПЛЕНИЕ" / "synthesis" / "01_SERIES_PLAN_AND_ARTICLE_COUNT.md").read_text(encoding="utf-8")
+    m = re.search(r"(?ms)^## 4\. [^\n]*\n(.*?)(?=^## \d|\Z)", plan)
+    block = m.group(1) if m else ""
+    temas = [l for l in block.splitlines()
+             if l.startswith("| ") and not l.startswith("| Тема") and not l.startswith("|---")]
+    cards = sorted(p.stem.split("_", 1)[0]
+                   for p in (ROOT / "ИСКУПЛЕНИЕ" / "synthesis").glob("D[0-9]*_*.md"))
+    drafts = sorted((ROOT / "ИСКУПЛЕНИЕ" / "synthesis" / "drafts").glob("*.md"))
+    nums = sorted(int(p.stem.split("_", 1)[0]) for p in drafts if p.stem.split("_", 1)[0].isdigit())
+    return {
+        "тем": len(temas),
+        "карточки": cards,
+        "drafts": len(drafts),
+        "диапазон": (f"{nums[0]:02d}–{nums[-1]:02d}" if nums else ""),
+        "с06": any(p.stem.startswith("06_") for p in drafts),
+    }
+
+
 def mirror_audit(corp: dict) -> dict:
     """Записи `driveMirrors.corpusSnapshotRound*` обязаны сходиться со своим blob'ом, а обещанный
     разрыв с деревом — равняться текущему размеру файла минус размер слепка. Это то, что круг 62
@@ -830,6 +856,9 @@ SCAN_EXEMPT = {
                            "в генерируемой строке 3.2 документа, которую сверяет --check; якорь `doc_numbers`",
     "queue_outcomes": "измеритель: адреса очереди §17 и их исходы дуги IV (§3.4, круг 84); сравнение — "
                            "в генерируемой строке 3.4 документа, которую сверяет --check; якорь `doc_numbers`",
+    "d_layer_state": "измеритель: темы слоя D в §4 плана, карточки D-слоя и черновики drafts (§3.17/§3.3, "
+                           "круг 85); сравнение — в генерируемых строках 3.17 и 3.3 документа, которые "
+                           "сверяет --check; якорь `doc_numbers`",
     "sha_token_paths": "измеритель: фильтр токенов правила 20; сравнение — в sha_audit; якорь `sha_audit`",
     "mixed_words": "измеритель: строки смешанного письма с вырезанными цитатами; ловит их проверка вызывающего; якорь `out_of_scope_mixed`",
     "out_of_scope_mixed": "измеритель: то же для чужого периметра (поле outOfScope); сравнение — в diff_state_scan; якорь `registry_numbers`",
@@ -1683,6 +1712,8 @@ def doc_numbers(corp: dict, n: dict) -> list:
     fh = fathers_hold()
     hd = hard_dossier()
     qo = queue_outcomes()
+    dl = d_layer_state()
+    dnc = len(dl["карточки"])
     fhp = n["tree"]["perLan"]["fathers"]
     fst = n["stamp"].get("fathers", 0)
     return [
@@ -1693,6 +1724,23 @@ def doc_numbers(corp: dict, n: dict) -> list:
          "«**0 из 102** закрываются сводом по собственному лану» — мера круга 45 | доступ вовне — "
          "связанное ограничение среды, а не ленивость; исходы проставлены дугой IV, числа строки "
          "переснимает `scripts/atonement_reshoot_state.py --write` и сверяет `--check` (круг 84) |"),
+        (r"(?m)^\| 3\.17 \| Слой D.*\|$",
+         "| 3.17 | Слой D (резерв) | " + str(dl["тем"]) + " "
+         + plural(dl["тем"], "тема перечня", "темы перечня", "тем перечня") + " (§4 плана), "
+         + str(dnc) + " " + plural(dnc, "карточка D-слоя", "карточки D-слоя", "карточек D-слоя")
+         + ((" — " + ", ".join(dl["карточки"])) if dnc else "")
+         + " | план запрещает обещать D читателю до закрытия A–C; вход — спрос матрицы дуги VI "
+         "(C-07, статья 03) и «2+ точки» слоя по `fathers/06` §1; остальные семь условий §4 не "
+         "выполнены; числа строки переснимает `scripts/atonement_reshoot_state.py --write` и "
+         "сверяет `--check` (круг 85) |"),
+        (r"(?m)^\| 3\.3 \| Статья B2.*\|$",
+         "| 3.3 | Статья B2 (черновик 06) | в `synthesis/drafts/` " + str(dl["drafts"]) + " "
+         + plural(dl["drafts"], "файл", "файла", "файлов") + ", номера " + dl["диапазон"]
+         + (" с 06" if dl["с06"] else " без 06")
+         + " | план запрещал начинать её до закрытия HARD-досье — досье закрыто по форме "
+         "(круг 83, все 11 групп по шаблону); `EVIDENCE_HOLD` остаётся: 06 объясняет спор, не "
+         "выносит вердикта объёма; числа строки переснимает `scripts/atonement_reshoot_state.py "
+         "--write` и сверяет `--check` (круг 85) |"),
         (r"(?m)^\| 3\.2 \| Трудные тексты.*\|$",
          "| 3.2 | Трудные тексты как закрытые досье | `12_`: "
          + str(hd["карточек"]) + " карточек-подблоков, " + str(hd["групп"]) + " групп H1–H11 ("
