@@ -400,7 +400,7 @@ LXX Исх 15:1 — `τότε ᾖσεν Μωυσῆς… **τὴν ᾠδὴν τ
 святых».** Это третье чтение, `τῶν ἁγίων`, и оно — из Textus Receptus: проверено firsthand
 по Скривенеру 1894 (`o basileuv twn agiwn`); оттуда же KJV «King of saints». **Ни один из
 пяти свидетелей аппарата SBLGNT его не подтверждает.** Подробно — в
-`00_TEXT_WORKSHEETS.md`, § 6.9.6.⟧
+`00_TEXT_WORKSHEETS.md`, § 6.11.6.⟧
 
 ## VI. И последнее: `ἐθελοθρησκία`
 
@@ -540,7 +540,7 @@ Receptus: `byztxt/greektext-scrivener` (`textonly/RE.SCV`, Скривенер 18
 05-deuteronomy, 14-2chronicles, 23-psalms, 52-matthew, 56-acts, 70-colossians,
 78-revelation), проверено firsthand.
 
-Метод добычи LXX и TR — `00_TEXT_WORKSHEETS.md`, § 6.9.0.
+Метод добычи LXX и TR — `00_TEXT_WORKSHEETS.md`, § 6.11.0.
 
 ## X. Что исправлено при вычитке
 

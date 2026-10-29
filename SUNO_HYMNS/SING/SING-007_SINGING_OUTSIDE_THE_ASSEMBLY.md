@@ -421,7 +421,7 @@ firsthand, Rahlfs 1935). Смысл разворачивается: у прор�
 `eliranwong/LXX-Rahlfs-1935`, проверено firsthand. Синодальный: `onlydotbible/rst`
 (`usfm/rst66/`: 09-1samuel, 22-job, 23-psalms, 29-isaiah, 56-acts, 57-james,
 52-matthew), проверено firsthand. Метод и нумерация LXX — `00_TEXT_WORKSHEETS.md`,
-§ 6.9.0.
+§ 6.11.0.
 
 ## X. Что исправлено при вычитке
 

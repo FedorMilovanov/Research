@@ -478,7 +478,7 @@ Rahlfs 1935). `νουμηνία` — новомесячие, и только. Н
 (`usfm/rst66/`: 38-amos, 29-isaiah, 23-psalms, 36-hosea, 41-micah, 24-proverbs,
 52-matthew, 53-mark, 54-luke, 65-1corinthians, 67-galatians, 70-colossians, 57-james,
 63-jude, 60-1john, 61-2john), проверено firsthand. Метод и нумерация LXX —
-`00_TEXT_WORKSHEETS.md`, § 6.9.0.
+`00_TEXT_WORKSHEETS.md`, § 6.11.0.
 
 ## XII. Что исправлено при вычитке
 
