@@ -1388,57 +1388,65 @@
       "записейВнеСтрокЛана": 0,
       "файловБезКарточкиСостояния": 0,
       "маркеровВПрозеНеОтражённыхВКарточке": 0,
-      "маркеровВКарточкеНеИзПрозыЛана": 13,
+      "маркеровВКарточкеНеИзПрозыЛана": 21,
       "детально": {
         "02_APOSTOLIC_FATHERS_CARDS.md": {
           "проза": 0,
-          "карточка": 3,
+          "карточка": 4,
           "вПрозеНеВКарточке": [],
           "вКарточкеНеИзПрозы": [
             "LOCATED / VERIFIED_ORIGINAL",
+            "READABLE",
             "RESEARCH_ONLY"
           ],
           "естьКарточка": true
         },
         "03_APOLOGISTS_IRENAEUS_TERTULLIAN.md": {
           "проза": 5,
-          "карточка": 10,
+          "карточка": 12,
           "вПрозеНеВКарточке": [],
           "вКарточкеНеИзПрозы": [
             "HOLD-STUB",
             "LOCATED / VERIFIED_ORIGINAL",
             "NOT_ACQUIRED",
             "NOT_LOCATED",
-            "RESEARCH_ONLY"
+            "READABLE",
+            "RESEARCH_ONLY",
+            "VERIFIED"
           ],
           "естьКарточка": true
         },
         "04_THIRD_FOURTH_CENTURY_CARDS.md": {
           "проза": 3,
-          "карточка": 5,
+          "карточка": 6,
           "вПрозеНеВКарточке": [],
           "вКарточкеНеИзПрозы": [
             "LOCATED / VERIFIED_ORIGINAL",
+            "READABLE",
             "RESEARCH_ONLY"
           ],
           "естьКарточка": true
         },
         "05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md": {
           "проза": 3,
-          "карточка": 6,
+          "карточка": 8,
           "вПрозеНеВКарточке": [],
           "вКарточкеНеИзПрозы": [
             "LOCATED / VERIFIED_ORIGINAL",
             "NOT_ACQUIRED",
-            "RESEARCH_ONLY"
+            "READABLE",
+            "RESEARCH_ONLY",
+            "VERIFIED"
           ],
           "естьКарточка": true
         },
         "11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md": {
           "проза": 4,
-          "карточка": 6,
+          "карточка": 8,
           "вПрозеНеВКарточке": [],
           "вКарточкеНеИзПрозы": [
+            "OPEN",
+            "READABLE",
             "RESEARCH_ONLY"
           ],
           "естьКарточка": true
@@ -2811,8 +2819,8 @@
     ],
     "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
     "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check fathers",
-    "measuredAt": "2026-10-29T19:17:30Z",
-    "checkedAt": "2026-10-29T19:17:30Z",
-    "предыдущийСъём": "2026-10-29T19:17:29Z"
+    "measuredAt": "2026-10-29T19:36:34Z",
+    "checkedAt": "2026-10-29T19:36:34Z",
+    "предыдущийСъём": "2026-10-29T19:36:33Z"
   }
 }
