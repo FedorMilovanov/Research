@@ -357,6 +357,241 @@ def draft_paths() -> list:
                   for x in glob.glob(str(ROOT / "ИСКУПЛЕНИЕ" / "synthesis" / "drafts") + "/*.md"))
 
 
+# ---- дуга VI (круг 81): матрица исчерпываемости — четыре числа на статью печатает гейт ----------
+# Подпись запрета = механический признак нарушения слага корневого `doNot`. Признак без отрицания
+# в окне ±100 знаков — нарушение; отрицание («не», «запрещено», «ошибочно»…) рядом с признаком —
+# текст о запрете, а не запрет: статьи дуги V перечисляют запреты в своих примечаниях, и сверка,
+# которая путает перечисление с нарушением, не выдержала бы первого же чтения. Честность границы
+# объявлена в поле `метод` блока: подпись ловит нарушение-маркер, её отсутствие — условие, а не
+# свидетельство; ручной обход дуги V лежит в примечаниях статей.
+DONOT_SIGNS = {
+    "pirate-copyrighted-pdfs": r"(?i)(libgen|z-lib|zlib\.|annas[- ]archive|kickerbook|1lib\.|rutracker[^\n]{0,40}\.pdf)",
+    "start-series-with-TULIP": r"(?im)^#{1,3} [^\n]*\bTULIP\b",
+    "claim-limited-atonement-proved": r"(?i)(доказано|доказывает|доказал|доказательств)[^.\n]{0,80}(ограниченн\w*\s+искуплени|искуплени[^\n]{0,40}ограниченн)|(ограниченн\w*\s+искуплени)[^.\n]{0,80}(доказано|доказывает|доказан)",
+    "implement-product-html-this-wave": r"(?i)product[- ]html",
+    "change-research-root-authority": r"(?i)(смен|замен|отмен)\w*\s+[^.\n]{0,60}(00_RESEARCH_CURRENT_AUTHORITY|корнев\w*\s+авторитет|root[- ]authority)",
+    "claim-murray-closed-1Tim2-or-2Pet2-1": r"(?i)мюрре\w*[^.\n]{0,120}(закрыл|закрыто|закроет)[^.\n]{0,80}(1\s*Тим|2\s*Пет)|(закрыл|закрыто)[^.\n]{0,80}(1\s*Тим\s*2|2\s*Пет\s*2[:.]?1)[^.\n]{0,120}мюрре",
+    "search-schaff-dort-english-column-again": r"(?i)(повтор\w*\s+поиск|заново\s+ищ|снова\s+ищ|искать\s+заново)[^.\n]{0,80}(shaфф|schaff)|(shaфф|schaff)[^.\n]{0,80}(повтор\w*\s+поиск|заново\s+ищ)",
+    "retry-drive-wcf-pdf-text-extraction": r"(?i)wcf[^.\n]{0,100}(извлеч\w*\s+текст|текст\w*\s+извлеч|extract\w*\s+text)|извлеч\w*\s+текст[^.\n]{0,60}wcf",
+    "quote-dort-ii-3-as-'single'-instead-of-'only'-from-the-latin-unica": r"(?i)\bsingle\b",
+    "quote-dort-rejectio-ignoring-that-the-latin-is-the-full-text-and-scott-is-a-translation": r"(?i)(?<![а-яёa-z])(скотт|scott)(?![а-яёa-z])[^.\n]{0,120}(rejectio|отвержени\w*)|(rejectio|отвержени\w*)[^.\n]{0,120}(?<![а-яёa-z])(скотт|scott)(?![а-яёa-z])",
+    "fetch-third-party-full-text-pdfs-of-murray-raa": r"(?i)(murray|мюрре\w*)[^\n]{0,80}\.pdf|\.pdf[^\n]{0,80}(murray|мюрре\w*)",
+    "retry-internet-archive-search-inside-for-redemptionaccomp00murr": r"(?i)redemptionaccomp00murr[^\n]{0,80}(archive\.org|internet\s+archive|поиск)|(?:archive\.org|internet\s+archive)[^\n]{0,80}redemptionaccomp00murr",
+    "cite-murray-raa-page-numbers-as-if-verified-in-the-book-itself": r"(?i)(мюрре\w*|murray|\bRAA\b)[^.\n]{0,50}\b(с\.|стр\.|p\.)\s*\d|\b\d{1,3}\s*(?:стр\.|с\.)[^.\n]{0,40}(мюрре\w*|murray|\bRAA\b)",
+    "quote-second-helvetic-english-from-schaff-volume-iii": r"(?i)(second\s+helvetic|втор\w+\s+гельвет\w+|helvetic)[^.\n]{0,120}(schaff|shaфф|volume|том\s+(?:iii|3))",
+}
+# составная подпись: два признака вместе и отсутствие третьего (сокращение Скотта обязано быть
+# названо рядом с Rejectio — иначе цитата без оговорки о сокращении и есть нарушение)
+DONOT_COMPOUND = {
+    "quote-scott-1841-rejectio-iv-without-noting-the-abridgement": (
+        r"(?<![а-яёa-z])скотт(?![а-яёa-z])|\bscott\b",
+        r"(?i)rejectio\b",
+        r"(?i)сокращ|abridg",
+    ),
+}
+DONOT_NEGATION = re.compile(r"(?i)(не\s|запрещ|ошибочн|неправильн|под запретом)")
+
+
+def exhaust_matrix_scan(corp: dict) -> dict:
+    """Дуга VI: четыре числа на статью, которые печатает гейт, а не автор статьи.
+
+    Прочитано — строка таблицы опор с распознанным классом читаемости (A1–A3/B1–B2 по шкале
+    реестра массы); нечитаемо — строка без распознанного класса (для гейта не названо, по какому
+    изданию её читать; сюда же падает C-класс, и это слово проверяет приёмка: ни одной статьи,
+    где C-класс стоит в утверждении, а не в оговорке). Открытые конфликты — C-id статьи, чей
+    первый токен статуса не RESOLVED и не RESOLVED-BY-TEXT (запись без машиночитаемого статуса
+    считается открытой: закрытой её никто не назвал). Запреты — каждый слаг корневого `doNot`
+    обязан иметь подпись: сверка подписей с самим списком возвращается числом и входит в приёмку,
+    потому что «подписи нет» — это сверка, которую нельзя больше пройти молча."""
+    root_donot = list(corp.get("doNot") or [])
+    signed = set(DONOT_SIGNS) | set(DONOT_COMPOUND)
+    miss = sorted(set(root_donot) - signed)
+    extra = sorted(signed - set(root_donot))
+    statuses, section = {}, ""
+    for ln in LEDGER.read_text(encoding="utf-8").splitlines():
+        m_hd = re.match(r"^## C-(\d+)\.", ln)
+        if m_hd:
+            section = m_hd.group(1)
+            statuses.setdefault(section, None)
+            continue
+        m_st = re.match(r"^- \*\*Статус:\*\* `([A-Z][A-Z-]*)`", ln)
+        if m_st and section and statuses.get(section) is None:
+            statuses[section] = m_st.group(1)
+    закрытые = ("RESOLVED", "RESOLVED-BY-TEXT")
+    неизвестные, статьи = set(), {}
+    штрафыНеРазрешено = 0
+    for lan in SUBLANES:
+        for path in sorted((ROOT / "ИСКУПЛЕНИЕ" / lan / "data").glob("*corpus*.json")):
+            block = (json.loads(path.read_text(encoding="utf-8")).get("claimRegister20261026") or {})
+            штрафыНеРазрешено += int(block.get("неРазрешено") or 0)
+    for pth in draft_paths():
+        name = Path(pth).name
+        text = Path(ROOT / pth).read_text(encoding="utf-8")
+        строкОпор = прочитано = нечитаемо = безЛокатора = сКлассомC = 0
+        lines, in_tab = text.split("\n"), False
+        for ln in lines:
+            if ln.startswith("| Опора | Класс"):
+                in_tab = True
+                continue
+            if in_tab:
+                if not ln.startswith("|"):
+                    in_tab = False
+                    continue
+                if ln.startswith("|---"):
+                    continue
+                cells = [c.strip() for c in ln.strip().strip("|").split("|")]
+                if len(cells) < 4:
+                    continue
+                строкОпор += 1
+                cls, loc = cells[1], cells[2]
+                if re.match(r"(?:A[123]|B[12])\b", cls):
+                    прочитано += 1
+                else:
+                    нечитаемо += 1
+                if re.match(r"C\b", cls):
+                    сКлассомC += 1
+                if loc.strip().lower() in ("", "—", "-", "–", "нет", "n/a"):
+                    безЛокатора += 1
+        cids = sorted(set(re.findall(r"\bC-(\d{2})\b", text)))
+        for cid in cids:
+            if cid not in statuses:
+                неизвестные.add(cid)
+        открытые = [c_ for c_ in cids if statuses.get(c_) not in закрытые]
+        нарушеноПодписей = 0
+        for slug in root_donot:
+            if slug in DONOT_COMPOUND:
+                p1, p2, p3 = DONOT_COMPOUND[slug]
+                if re.search(p1, text) and re.search(p2, text) and not re.search(p3, text):
+                    нарушеноПодписей += 1
+                continue
+            pat = DONOT_SIGNS.get(slug)
+            if not pat:
+                continue    # miss уже посчитан и входит в приёмку — молчать здесь незачем
+            for m in re.finditer(pat, text):
+                window = text[max(0, m.start() - 100): m.end() + 100]
+                if DONOT_NEGATION.search(window):
+                    continue
+                нарушеноПодписей += 1
+        статьи[name] = {
+            "строкОпор": строкОпор, "прочитано": прочитано, "нечитаемо": нечитаемо,
+            "безЛокатора": безЛокатора, "сКлассомC": сКлассомC,
+            "конфликтыВсего": cids, "конфликтыОткрытые": открытые,
+            "запретовПроверено": len(root_donot) - len([s for s in root_donot
+                                                        if s not in DONOT_SIGNS and s not in DONOT_COMPOUND]),
+            "запретовНарушений": нарушеноПодписей,
+        }
+    union_open = sorted({c_ for a in статьи.values() for c_ in a["конфликтыОткрытые"]},
+                        key=lambda x: int(x))
+    итог = {
+        "статей": len(статьи),
+        "строкОпор": sum(a["строкОпор"] for a in статьи.values()),
+        "прочитано": sum(a["прочитано"] for a in статьи.values()),
+        "нечитаемо": sum(a["нечитаемо"] for a in статьи.values()),
+        "открытыхУникальных": len(union_open),
+        "открытые": union_open,
+        "запретовПар": len(root_donot) * len(статьи),
+        "нарушений": sum(a["запретовНарушений"] for a in статьи.values()),
+    }
+    приёмка = {
+        "статей": len(статьи),
+        "строкОпорБезЛокатора": sum(a["безЛокатора"] for a in статьи.values()),
+        "статейСКлассомC": len([a for a in статьи.values() if a["сКлассомC"]]),
+        "доводовБезЛокатора": штрафыНеРазрешено,
+        "нарушенийЗапретов": итог["нарушений"],
+        "ссылокНаНеизвестныеЗаписи": len(неизвестные),
+        "запретовБезПодписи": len(miss),
+        "подписейБезЗапрета": len(extra),
+        "неПодписано": miss, "лишниеПодписи": extra,
+        "неизвестныеC": sorted(неизвестные),
+    }
+    return {"статьи": статьи, "итог": итог, "приёмка": приёмка}
+
+
+def fathers_hold() -> dict:
+    """Мера §3.18 (круг 82, линия Отцов по Q4): сколько `HOLD` в прозе отцовского лан-файла.
+
+    Определение — подстрока `HOLD` в тексте файла (тот же счёт, которым аудит круга 58 напечатал
+    «151 `HOLD`» в строке 3.18: составные токены вида `ARCHIVE_HOLD` считает их `HOLD`-хвост, и
+    число воспроизводится, а не припоминается). Считается по файлам, а не по ощущению: строка
+    §3.18 документа генерируется этим обходом, и `--check` не даёт ей разойтись с деревом."""
+    per, total = {}, 0
+    for f in sorted(glob.glob(str(ROOT / "ИСКУПЛЕНИЕ" / "fathers") + "/*.md")):
+        n_ = Path(f).read_text(encoding="utf-8").count("HOLD")
+        per[Path(f).name] = n_
+        total += n_
+    return {"файлов": len(per), "всего": total, "поФайлам": per}
+
+
+def hard_dossier() -> dict:
+    """Мера §3.2 (круг 83, линия трудных текстов по Q4): досье `12_` — что в нём закрыто по форме.
+
+    Определения счёта держатся явными, потому что старая строка 3.2 жила из памяти аудита
+    («36 карточек, 21 HOLD, 5 групп не закрыт»): карточка = подблок `### `, группа = заголовок
+    `## H…`, шаблон = блок «Сейчас можно / нельзя» (его наличие и есть закрытие досье в форме),
+    HOLD = подстрока `HOLD` (тот же счёт, что у 3.18). Строка §3.2 документа генерируется этим
+    обходом, и `--check` сверяет её с файлом; вердикт не измеряется — `EVIDENCE_HOLD` стоит и по
+    этому счёту остаётся числом упоминаний, а не снятием."""
+    p = ROOT / "ИСКУПЛЕНИЕ" / "12_HARD_TEXTS_EXTENT_CARDS.md"
+    t = p.read_text(encoding="utf-8")
+    groups = len(re.findall(r"(?m)^## H\d+", t))
+    template = t.count("Сейчас можно / нельзя")
+    return {
+        "карточек": len(re.findall(r"(?m)^### ", t)),
+        "групп": groups,
+        "шаблонныхБлоков": template,
+        "безШаблона": max(0, groups - template),
+        "hold": t.count("HOLD"),
+        "evidence": t.count("EVIDENCE_HOLD"),
+        "строк": t.count("\n") + 1,
+        "байт": len(t.encode("utf-8")),
+    }
+
+
+def queue_outcomes() -> dict:
+    """Мера §3.4 (круг 84, дуга IV): сколько адресов очереди §17 несёт свой исход.
+
+    Дуга IV даёт каждому адресу один из трёх исходов; третий (снятие строки) запрещён решением
+    Q2 (28.10.2026), поэтому открытым адресам проставляется исход 2 — «канал назван и дата
+    ожидания». Считается по буллетам §17: сколько адресов, сколько с токеном «исход 2», сколько
+    с плановой датой, и сколько с исходом 3 — последнее число обязано быть нулём, иначе очередью
+    снято то, что снимать запрещено. Строка §3.4 документа генерируется этим обходом."""
+    t = (ROOT / "docs/research/atonement/35_four_point_authors_mass_registry.md").read_text(encoding="utf-8")
+    sec = t.split("## 17. Очередь добычи", 1)[1].split("\n## 18.", 1)[0]
+    bullets = re.findall(r"(?m)^- Q-\d+ — .*$", sec)
+    return {
+        "адресов": len(bullets),
+        "исход2": sum(1 for b in bullets if "исход 2" in b),
+        "дата": sum(1 for b in bullets if "дата ожидания 2026-11-12" in b),
+        "исход3": sum(1 for b in bullets if "исход 3" in b),
+    }
+
+
+def d_layer_state() -> dict:
+    """Мера §3.17 и §3.3 (круг 85, дуга VII): слой D и черновик B2.
+
+    §4 плана — источник истины о темах резерва (строки таблицы «| Тема |»), карточки слоя D —
+    файлы `synthesis/D*_*.md` (D1 — первая, круг 85), черновики — каталог synthesis/drafts,
+    включая 06. Обе строки документа генерируются этим обходом: «7 тем, ни одной карточки» и
+    «12 файлов без 06» устарели, когда дуга VII открыла первую карточку, и живой счёт обязан
+    идти из файлов, а не из памяти круга."""
+    plan = (ROOT / "ИСКУПЛЕНИЕ" / "synthesis" / "01_SERIES_PLAN_AND_ARTICLE_COUNT.md").read_text(encoding="utf-8")
+    m = re.search(r"(?ms)^## 4\. [^\n]*\n(.*?)(?=^## \d|\Z)", plan)
+    block = m.group(1) if m else ""
+    temas = [l for l in block.splitlines()
+             if l.startswith("| ") and not l.startswith("| Тема") and not l.startswith("|---")]
+    cards = sorted(p.stem.split("_", 1)[0]
+                   for p in (ROOT / "ИСКУПЛЕНИЕ" / "synthesis").glob("D[0-9]*_*.md"))
+    drafts = sorted((ROOT / "ИСКУПЛЕНИЕ" / "synthesis" / "drafts").glob("*.md"))
+    nums = sorted(int(p.stem.split("_", 1)[0]) for p in drafts if p.stem.split("_", 1)[0].isdigit())
+    return {
+        "тем": len(temas),
+        "карточки": cards,
+        "drafts": len(drafts),
+        "диапазон": (f"{nums[0]:02d}–{nums[-1]:02d}" if nums else ""),
+        "с06": any(p.stem.startswith("06_") for p in drafts),
+    }
+
+
 def mirror_audit(corp: dict) -> dict:
     """Записи `driveMirrors.corpusSnapshotRound*` обязаны сходиться со своим blob'ом, а обещанный
     разрыв с деревом — равняться текущему размеру файла минус размер слепка. Это то, что круг 62
@@ -589,6 +824,7 @@ PLANTED_GUARDS = {
     "ledger_counts": ("гейт", "conflict ledger"),
     "tree_counts": ("сам", "ЛОВУШКА ДЕРЕВА"),
     "check_table_91": ("сам", "ЛОВУШКА ТАБЛИЦЫ 9.1"),
+    "exhaust_matrix_scan": ("гейт", "правило 29"),
     # Найдена правкой 17: сверка, которая называлась вне соглашения и десять кругов обходила
     # реестр. Посаженного отделения под неё нет — почему это дыра, а не упущение, написано в
     # самой причине: она обязана называться, а не выглядеть как «всё объявлено».
@@ -614,6 +850,15 @@ SCAN_EXEMPT = {
     "stamped_count": "измеритель: сколько штампованных полей в узле; сравнение — в diff_state_scan и дока-якорях; якорь `registry_numbers`",
     "draft_paths": "измеритель: полное зеркало каталога synthesis/drafts (дуга III, п. 3.14); число берёт агрегатор, "
                    "сверка — в diff_state_scan, запись — в apply_corpus; якорь `registry_numbers`",
+    "fathers_hold": "измеритель: вхождения HOLD в прозе отцовского лана (§3.18, круг 82); сравнение — "
+                           "в генерируемой строке 3.18 документа, которую сверяет --check; якорь `doc_numbers`",
+    "hard_dossier": "измеритель: карточки, группы и шаблонные блоки досье 12_ (§3.2, круг 83); сравнение — "
+                           "в генерируемой строке 3.2 документа, которую сверяет --check; якорь `doc_numbers`",
+    "queue_outcomes": "измеритель: адреса очереди §17 и их исходы дуги IV (§3.4, круг 84); сравнение — "
+                           "в генерируемой строке 3.4 документа, которую сверяет --check; якорь `doc_numbers`",
+    "d_layer_state": "измеритель: темы слоя D в §4 плана, карточки D-слоя и черновики drafts (§3.17/§3.3, "
+                           "круг 85); сравнение — в генерируемых строках 3.17 и 3.3 документа, которые "
+                           "сверяет --check; якорь `doc_numbers`",
     "sha_token_paths": "измеритель: фильтр токенов правила 20; сравнение — в sha_audit; якорь `sha_audit`",
     "mixed_words": "измеритель: строки смешанного письма с вырезанными цитатами; ловит их проверка вызывающего; якорь `out_of_scope_mixed`",
     "out_of_scope_mixed": "измеритель: то же для чужого периметра (поле outOfScope); сравнение — в diff_state_scan; якорь `registry_numbers`",
@@ -1156,6 +1401,7 @@ def registry_numbers(corp: dict, idx_file: dict):
     out["sha"] = sha
     out["mirror"] = mirror_audit(corp)
     out["draftPaths"] = draft_paths()
+    out["matrix"] = exhaust_matrix_scan(corp)
     out["json"] = json_leaf_scan()
     out["out"] = out_of_scope_mixed()
     out["env"] = env_scan(corp)
@@ -1257,6 +1503,31 @@ def apply_corpus(corp: dict, n: dict) -> dict:
                             "перечисляло один файл из каталога и не называло себя) — список и сверка снимаем "
                             "обходом scripts/atonement_reshoot_state.py, читает и требует --check")
     syn["draftsMeasuredAt"] = now
+
+    # дуга VI (круг 81): блок матрицы создаёт и наполняет этот же писатель — ключи и числа
+    # приходят обходом n["matrix"], руками поле не заполняется и не правится
+    m = n["matrix"]
+    corp["exhaustivenessMatrix20261028"] = {
+        "чтоЭто": ("матрица исчерпываемости (дуга VI): четыре числа на статью — прочитано, "
+                   "нечитаемо, открытые конфликты, проверенные запреты — печатает гейт "
+                   "(scripts/atonement_reshoot_state.py --write), а не автор статьи; строки "
+                   "матрицы документа 18_ §14 — тот же вывод"),
+        "метод": ("строки опоры = таблица «Опора | Класс | Локатор | HOLD» черновика; прочитано = "
+                  "класс читаемости A1–A3/B1–B2 (шкала реестра массы), нечитаемо = класс не "
+                  "распознан (для гейта не названо, по какому изданию читать; сюда же падает "
+                  "C-класс, что и проверяет приёмка); открытые конфликты = C-id статьи, чей первый "
+                  "токен статуса не RESOLVED и не RESOLVED-BY-TEXT; запреты = каждый слаг корневого "
+                  "doNot имеет механическую подпись нарушения, признак без отрицания в окне ±100 "
+                  "знаков — нарушение, отрицание рядом — текст о запрете (ручной обход дуги V лежит "
+                  "в примечаниях статей; подпись ловит маркер, её отсутствие — условие, не "
+                  "свидетельство)"),
+        "статьи": m["статьи"],
+        "итог": m["итог"],
+        "приёмка": m["приёмка"],
+        "recheckCommand": ("python3 -B scripts/validate_atonement_corpus_integrity.py "
+                           "(правило 29) && python3 -B scripts/atonement_reshoot_state.py --check"),
+        "measuredAt": now,
+    }
 
     sf = corp["integrityGate"]["scopeOfMeasurementRules"]["stampedFieldsPerRegistry"]
     sf.update(dict(sorted(n["stamp"].items())))
@@ -1438,7 +1709,66 @@ def doc_numbers(corp: dict, n: dict) -> list:
     else:
         idx_note = ("числа снимает scripts/atonement_reshoot_state.py --write, сверяет --check (шаг гейта); "
                     "прежнего переснятого среза в реестре нет — строка ведётся с круга 63")
+    fh = fathers_hold()
+    hd = hard_dossier()
+    qo = queue_outcomes()
+    dl = d_layer_state()
+    dnc = len(dl["карточки"])
+    fhp = n["tree"]["perLan"]["fathers"]
+    fst = n["stamp"].get("fathers", 0)
     return [
+        (r"(?m)^\| 3\.4 \| Очередь добычи.*\|$",
+         "| 3.4 | Очередь добычи | " + str(qo["адресов"]) + " адресов открыты: исход 2 проставлен по "
+         + str(qo["исход2"]) + ", дата ожидания 2026-11-12 — по " + str(qo["дата"])
+         + "; исходов 3 (снятие) — " + str(qo["исход3"]) + " — снятие запрещено Q2; "
+         "«**0 из 102** закрываются сводом по собственному лану» — мера круга 45 | доступ вовне — "
+         "связанное ограничение среды, а не ленивость; исходы проставлены дугой IV, числа строки "
+         "переснимает `scripts/atonement_reshoot_state.py --write` и сверяет `--check` (круг 84) |"),
+        (r"(?m)^\| 3\.17 \| Слой D.*\|$",
+         "| 3.17 | Слой D (резерв) | " + str(dl["тем"]) + " "
+         + plural(dl["тем"], "тема перечня", "темы перечня", "тем перечня") + " (§4 плана), "
+         + str(dnc) + " " + plural(dnc, "карточка D-слоя", "карточки D-слоя", "карточек D-слоя")
+         + ((" — " + ", ".join(dl["карточки"])) if dnc else "")
+         + " | план запрещает обещать D читателю до закрытия A–C; вход — спрос матрицы дуги VI "
+         "(C-07, статья 03) и «2+ точки» слоя по `fathers/06` §1; остальные шесть условий §4 не "
+         "выполнены; условие строки Grotius исполнено экзегетической базой B2 (круг 95); "
+         "числа строки переснимает "
+         "`scripts/atonement_reshoot_state.py --write` и сверяет `--check` (круг 85) |"),
+        (r"(?m)^\| 3\.3 \| Статья B2.*\|$",
+         "| 3.3 | Статья B2 (черновик 06) | в `synthesis/drafts/` " + str(dl["drafts"]) + " "
+         + plural(dl["drafts"], "файл", "файла", "файлов") + ", номера " + dl["диапазон"]
+         + (" с 06" if dl["с06"] else " без 06")
+         + " | план запрещал начинать её до закрытия HARD-досье — досье закрыто по форме "
+         "(круг 83, все 11 групп по шаблону); `EVIDENCE_HOLD` остаётся: 06 объясняет спор, не "
+         "выносит вердикта объёма; числа строки переснимает `scripts/atonement_reshoot_state.py "
+         "--write` и сверяет `--check` (круг 85) |"),
+        (r"(?m)^\| 3\.9 \| Дисциплина съёма.*\|$",
+         "| 3.9 | Дисциплина съёма в содержательных под-ланах | `stampedFieldsPerRegistry`: корпус "
+         + str(stamps["корпус"]) + ", `fathers` " + str(stamps["fathers"]) + ", `nt` "
+         + str(stamps["nt"]) + ", `ot` " + str(stamps["ot"]) + ", `synthesis` "
+         + str(stamps["synthesis"]) + " | **закрыто (дуга I, круг 88):** нули прежней ячейки — "
+         "срез до дуги I, когда под-ланы писались до гейта; сегодня каждый из четырёх под-ланов "
+         "держит два штампованных поля, корпус — " + str(stamps["корпус"])
+         + "; числа строки переснимает `scripts/atonement_reshoot_state.py --write` и сверяет "
+         "`--check` (круг 88) |"),
+        (r"(?m)^\| 3\.2 \| Трудные тексты.*\|$",
+         "| 3.2 | Трудные тексты как закрытые досье | `12_`: "
+         + str(hd["карточек"]) + " карточек-подблоков, " + str(hd["групп"]) + " групп H1–H11 ("
+         + str(hd["шаблонныхБлоков"]) + " с блоком «Сейчас можно / нельзя», "
+         + str(hd["безШаблона"]) + " без него), **" + str(hd["hold"]) + "** `HOLD` "
+         "(вхождения подстроки — тот же счёт, что у 3.18), " + str(hd["evidence"])
+         + " упоминаний EVIDENCE_HOLD (вердикт не снят); " + str(hd["строк"]) + " строк, "
+         + num(hd["байт"]) + " B | закрытие досье, не вердикта: все группы по шаблону "
+         "(дуга II, 28.10); карточки Мюррея closes1Tim2_4=false, closes2Pet2_1=false остаются; "
+         "числа строки переснимает `scripts/atonement_reshoot_state.py --write` и сверяет "
+         "`--check` (круг 83) |"),
+        (r"(?m)^\| 3\.18 \| Патристика.*\|$",
+         "| 3.18 | Патристика как покрытие, а не как выборка | `fathers`: "
+         + str(fhp[0]) + " файлов, " + num(fhp[1]) + " B, **" + str(fh["всего"]) + "** `HOLD` "
+         + "(вхождения подстроки в прозе — тот же счёт, чем аудит круга 58 напечатал «151»), "
+         + str(fst) + " штампованных полей (ноль аудита устарел с дуги I — блок claimRegister дает пару отметок) "
+         + "| читаны пограничные места, не корпус; «все Отцы говорили» остаётся под запретом; числа строки "
+         "переснимает `scripts/atonement_reshoot_state.py --write` и сверяет `--check` (круг 82) |"),
         (r"^\| `docs/research/atonement/`.*\|$",
          f"| `docs/research/atonement/` — читательско-исследовательская полоса | {t['docs'][0]} | "
          f"{num(t['docs'][1])} | {t['docsNumbered']} нумерованных разборов + `README.md` + таксономия |"),
@@ -1484,6 +1814,32 @@ def doc_numbers(corp: dict, n: dict) -> list:
              + f"{plural(ndonot, 'исследовательский запрет', 'исследовательских запрета', 'исследовательских запретов')} "
              + "в `doNot`.",
          ])),
+        # дуга VI (круг 81): строки матрицы исчерпываемости — генератор, не автор статьи
+        *[
+            (r"(?m)^\| `" + re.escape(bn) + r"` \| .*\|$",
+             "| `" + bn + "` | " + str(a["строкОпор"]) + " | " + str(a["прочитано"]) + " | "
+             + str(a["нечитаемо"]) + " | " + str(len(a["конфликтыОткрытые"])) + " ("
+             + (", ".join("C-" + c_ for c_ in a["конфликтыОткрытые"]) or "—") + ") | "
+             + f"{a['запретовПроверено']}/{len(DONOT_SIGNS) + len(DONOT_COMPOUND)} | "
+             + str(a["запретовНарушений"]) + " |")
+            for bn, a in sorted(n["matrix"]["статьи"].items())
+        ],
+        (r"(?m)^\| \*\*итог\*\* \| .*\|$",
+         "| **итог** | " + str(n["matrix"]["итог"]["строкОпор"]) + " | "
+         + str(n["matrix"]["итог"]["прочитано"]) + " | " + str(n["matrix"]["итог"]["нечитаемо"]) + " | "
+         + str(n["matrix"]["итог"]["открытыхУникальных"]) + " уникальных ("
+         + ", ".join("C-" + c_ for c_ in n["matrix"]["итог"]["открытые"]) + ") | "
+         + f"{n['matrix']['итог']['запретовПар']}/{n['matrix']['итог']['запретовПар']} | "
+         + str(n["matrix"]["итог"]["нарушений"]) + " |"),
+        (r"(?m)^Приёмка матрицы \(дуга VI\):.*$",
+         "Приёмка матрицы (дуга VI): строк опоры без локатора — "
+         + str(n["matrix"]["приёмка"]["строкОпорБезЛокатора"])
+         + "; статей, где C-класс в утверждении, — " + str(n["matrix"]["приёмка"]["статейСКлассомC"])
+         + "; доводов без локатора в реестрах — " + str(n["matrix"]["приёмка"]["доводовБезЛокатора"])
+         + "; нарушений запретов — " + str(n["matrix"]["приёмка"]["нарушенийЗапретов"])
+         + "; ссылок на несуществующие записи леджера — "
+         + str(n["matrix"]["приёмка"]["ссылокНаНеизвестныеЗаписи"])
+         + "; запретов без подписи — " + str(n["matrix"]["приёмка"]["запретовБезПодписи"]) + "."),
     ]
 
 
@@ -1636,6 +1992,12 @@ def diff_state_scan(corp: dict, idx_file: dict, n: dict):
         drift.append(f"synthesis.drafts: в реестре {len(_syn.get('drafts') or [])} путей, обход даёт "
                      f"{len(n.get('draftPaths') or [])} — поле обязано зеркалить каталог (п. 3.14; "
                      "переснимается apply_corpus тем же обходом)")
+    mx = corp.get("exhaustivenessMatrix20261028") or {}
+    nmx = n["matrix"]
+    for _mk in ("статьи", "итог", "приёмка"):
+        if mx.get(_mk) != nmx.get(_mk):
+            drift.append(f"exhaustivenessMatrix20261028.{_mk}: реестр и обход разошлись — блок "
+                         "печатает --write, сверяет этот шаг (дуга VI); руками не правится")
     msc = corp["integrityGate"]["mixedScriptCheck"]
     for k in ("ownOccurrences", "scannedFiles", "foreignOccurrences"):
         if msc["jsonLeafScan"].get(k) != n["json"][k]:

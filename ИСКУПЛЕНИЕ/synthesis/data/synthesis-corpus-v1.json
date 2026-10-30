@@ -170,28 +170,191 @@
     "change-research-root-authority",
     "silence-a-conflict-without-text-and-locator"
   ],
+  "stateCards": [
+    {
+      "id": "00_README_FA",
+      "file": "ИСКУПЛЕНИЕ/synthesis/00_README_FALLBACK_2026-10-07.md",
+      "topic": "Резервный вход синтезиса — README",
+      "holds": ["EVIDENCE_HOLD", "PUBLICATION_HOLD"],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
+    },
+    {
+      "id": "00_SYNTHESIS",
+      "file": "ИСКУПЛЕНИЕ/synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md",
+      "topic": "Синтезис: authority под-слоя",
+      "holds": ["ARCHIVE_HOLD", "ATTRIBUTION_HOLD", "ATTRIBUTION_SECONDARY", "DRAFT / PUBLICATION_HOLD", "EDITION_HOLD", "EDITION_UNAVAILABLE", "EVIDENCE_HOLD", "HOLD", "LOCATOR_HOLD", "LOCATOR_PARTIAL", "PRIVATE_STUDY_ONLY", "PUBLICATION_HOLD", "RIGHTS_HOLD"],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
+    },
+    {
+      "id": "01_SERIES_PL",
+      "file": "ИСКУПЛЕНИЕ/synthesis/01_SERIES_PLAN_AND_ARTICLE_COUNT.md",
+      "topic": "План серии и счёт статей",
+      "holds": ["ARCHIVE_HOLD", "LOCATOR_HOLD", "PUBLICATION_HOLD", "RIGHTS_HOLD"],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
+    },
+    {
+      "id": "02_CONFLICT_",
+      "file": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+      "topic": "Реестр конфликтов C-01…C-25",
+      "holds": ["ATTRIBUTION_HOLD", "ATTRIBUTION_SECONDARY", "CONTEXT_HOLD", "DATE_HOLD", "EDITION_HOLD", "EVIDENCE_HOLD", "FORBIDDEN", "LOCATOR_HOLD", "LOCATOR_PARTIAL", "LOCATOR_SINGLE_ATTESTATION", "PUBLICATION_HOLD", "RIGHTS_HOLD"],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
+    },
+    {
+      "id": "03_PRACTICAL",
+      "file": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+      "topic": "Практические и пастырские заметки",
+      "holds": ["EDITION_HOLD", "EVIDENCE_HOLD", "LOCATOR_PARTIAL"],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
+    },
+    {
+      "id": "04_FINAL_VER",
+      "file": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+      "topic": "Итоговый вердикт о различении Прокопенко",
+      "holds": ["ATTRIBUTION_HOLD", "DRAFT / PUBLICATION_HOLD", "EDITION_HOLD", "LOCATOR_PARTIAL", "PUBLICATION_HOLD", "RIGHTS_HOLD"],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
+    },
+    {
+      "id": "05_RIGHTS_AN",
+      "file": "ИСКУПЛЕНИЕ/synthesis/05_RIGHTS_AND_PUBLICATION_GATES.md",
+      "topic": "Права и гейты публикации",
+      "holds": ["ATTRIBUTION_HOLD", "EDITION_HOLD", "LOCATOR_HOLD", "LOCATOR_PARTIAL", "PRIVATE_STUDY_ONLY", "RIGHTS_HOLD"],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
+    },
+    {
+      "id": "06_MERGE_REA",
+      "file": "ИСКУПЛЕНИЕ/synthesis/06_MERGE_READINESS.md",
+      "topic": "Готовность к мержу (не трекер)",
+      "holds": ["ATTRIBUTION_HOLD", "EDITION_UNAVAILABLE", "LOCATOR_PARTIAL", "PUBLICATION_HOLD", "RIGHTS_HOLD"],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
+    },
+    {
+      "id": "D1_EVOLUTION",
+      "file": "ИСКУПЛЕНИЕ/synthesis/D1_EVOLUTION_OF_UNDERSTANDING_AXIS.md",
+      "topic": "Ось D1: эволюция понимания",
+      "holds": ["ARCHIVE_HOLD", "EVIDENCE_HOLD", "LOCATOR_HOLD", "PUBLICATION_HOLD", "RIGHTS_HOLD"],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
+    },
+    {
+      "id": "D2_GOVERNMEN",
+      "file": "ИСКУПЛЕНИЕ/synthesis/D2_GOVERNMENTAL_THEORY_GROTIUS_AXIS.md",
+      "topic": "Ось D2: правительственная теория / Grotius",
+      "holds": ["EVIDENCE_HOLD", "LOCATOR_HOLD", "PUBLICATION_HOLD", "RIGHTS_HOLD"],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
+    },
+    {
+      "id": "01_what-is-a",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
+      "topic": "Статья 01: что такое искупление",
+      "holds": ["ARCHIVE_HOLD", "EVIDENCE_HOLD", "LOCATOR_HOLD", "PUBLICATION_HOLD", "RIGHTS_HOLD"],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
+    },
+    {
+      "id": "02_why-the-c",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+      "topic": "Статья 02: почему крест необходим",
+      "holds": ["ARCHIVE_HOLD", "EVIDENCE_HOLD", "LOCATOR_HOLD", "PUBLICATION_HOLD", "RIGHTS_HOLD"],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
+    },
+    {
+      "id": "03_nature-of",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/03_nature-of-atonement.md",
+      "topic": "Статья 03: природа искупления",
+      "holds": ["ARCHIVE_HOLD", "EVIDENCE_HOLD", "LOCATOR_HOLD", "PRIVATE_STUDY_ONLY", "PUBLICATION_HOLD", "RIGHTS_HOLD"],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
+    },
+    {
+      "id": "04_perfectio",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/04_perfection-of-atonement.md",
+      "topic": "Статья 04: совершенство искупления",
+      "holds": ["ARCHIVE_HOLD", "EVIDENCE_HOLD", "LOCATOR_HOLD", "PRIVATE_STUDY_ONLY", "PUBLICATION_HOLD", "RIGHTS_HOLD"],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
+    },
+    {
+      "id": "05_for-whom-",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/05_for-whom-did-christ-die-question.md",
+      "topic": "Статья 05: за кого умер Христос",
+      "holds": ["ARCHIVE_HOLD", "EVIDENCE_HOLD", "LOCATOR_HOLD", "PUBLICATION_HOLD", "RIGHTS_HOLD"],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
+    },
+    {
+      "id": "06_world-all",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/06_world-all-many-hard-texts.md",
+      "topic": "Статья 06: всеобщность и «за многих» (B2)",
+      "holds": ["ARCHIVE_HOLD", "EVIDENCE_HOLD", "LOCATOR_HOLD", "PUBLICATION_HOLD", "RIGHTS_HOLD"],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
+    },
+    {
+      "id": "07_dort-suff",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/07_dort-sufficiency-efficiency.md",
+      "topic": "Статья 07: Дорт, достаточность и действенность",
+      "holds": ["EVIDENCE_HOLD", "LOCATOR_HOLD", "PUBLICATION_HOLD", "RIGHTS_HOLD"],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
+    },
+    {
+      "id": "08_calvin-ow",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+      "topic": "Статья 08: Кальвин, Оуэн, амирализм",
+      "holds": ["ARCHIVE_HOLD", "EVIDENCE_HOLD", "LOCATOR_HOLD", "PRIVATE_STUDY_ONLY"],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
+    },
+    {
+      "id": "09_free-offe",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/09_free-offer-of-the-gospel.md",
+      "topic": "Статья 09: свободное предложение Евангелия",
+      "holds": ["EVIDENCE_HOLD", "LOCATOR_HOLD"],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
+    },
+    {
+      "id": "10_tulip-wit",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/10_tulip-without-caricature.md",
+      "topic": "Статья 10: TULIP без карикатуры",
+      "holds": ["EVIDENCE_HOLD", "LOCATOR_HOLD"],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
+    },
+    {
+      "id": "11_order-of-",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/11_order-of-salvation.md",
+      "topic": "Статья 11: порядок спасения",
+      "holds": ["PRIVATE_STUDY_ONLY"],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
+    },
+    {
+      "id": "12_union-wit",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/12_union-with-christ.md",
+      "topic": "Статья 12: соединение со Христом",
+      "holds": ["EVIDENCE_HOLD", "PRIVATE_STUDY_ONLY"],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
+    },
+    {
+      "id": "13_justifica",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/13_justification-adoption-sanctification-perseverance.md",
+      "topic": "Статья 13: оправдание, усыновление, освящение, стойкость",
+      "holds": ["EVIDENCE_HOLD", "PRIVATE_STUDY_ONLY", "PUBLICATION_HOLD"],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
+    }
+  ],
   "claimRegister20261026": {
       "чтоЭто": "реестр доводов лана «synthesis»: строка = раздел прозы уровня ## с локатором, классом из её собственных маркеров и отметкой съёма",
       "чтоСчитаетсяДоводом": "заголовок «## » в любом .md лана, включая вложенные папки (synthesis/drafts, ot/tools); тело секции — до следующего «## » или до конца файла",
       "приоритет": "УДЕРЖИВАЕТСЯ > ОТКРЫТО > ЗАКРЫТО; маркеров нет -> БЕЗ МАРКЕРА; маркер вне классификации -> ошибка съёма, а не «прочее»",
       "метод": "scripts/atonement_claim_register.py обходит прозу лана целиком (без выборки), разбирает маркеры вида `ВЕРДИКТ`, сверяет локатор побайтово (файл + номер строки + текст)",
-      "строк": 246,
-      "файлов": 21,
+      "строк": 254,
+      "файлов": 23,
       "покрытоМашинно": 0,
-      "покрытоПоФайлу": 246,
-      "файловПрозы": 21,
+      "покрытоПоФайлу": 254,
+      "файловПрозы": 23,
       "файловБезКарточки": 0,
-      "разрешеноЛокаторов": 246,
+      "разрешеноЛокаторов": 254,
       "неРазрешено": 0,
       "поКлассам": {
-          "БЕЗ МАРКЕРА": 137,
-          "УДЕРЖИВАЕТСЯ": 91,
-          "ОТКРЫТО": 9,
+          "БЕЗ МАРКЕРА": 141,
+          "УДЕРЖИВАЕТСЯ": 94,
+          "ОТКРЫТО": 10,
           "ЗАКРЫТО": 8,
           "СЛУЖЕБНОЕ": 1
       },
       "маркеры": {
-          "всего": 462,
+          "всего": 475,
           "различных": 28,
           "словарь": {
               "ACCESS_INTERRUPTED": "ОТКРЫТО",
@@ -224,18 +387,18 @@
               "TEXT_CRIT_NOTE": "СЛУЖЕБНОЕ"
           },
           "частоты": {
-              "EVIDENCE_HOLD": 102,
-              "RIGHTS_HOLD": 63,
-              "PUBLICATION_HOLD": 61,
+              "EVIDENCE_HOLD": 105,
+              "RIGHTS_HOLD": 65,
+              "PUBLICATION_HOLD": 63,
               "ATTRIBUTION_HOLD": 41,
               "EDITION_HOLD": 39,
-              "LOCATOR_HOLD": 31,
+              "LOCATOR_HOLD": 33,
               "RESOLVED-BY-TEXT": 30,
               "OPEN": 22,
               "LOCATOR_PARTIAL": 18,
-              "ARCHIVE_HOLD": 10,
+              "ARCHIVE_HOLD": 12,
               "PRIVATE_STUDY_ONLY": 10,
-              "OPEN-LAYER": 5,
+              "OPEN-LAYER": 7,
               "CONTEXT_HOLD": 4,
               "ATTRIBUTION_SECONDARY": 3,
               "EDITION_UNAVAILABLE": 3,
@@ -274,141 +437,20 @@
           ]
       },
       "сверкаСКарточками": {
-          "файловПрозы": 21,
-          "файловСКарточкой": 21,
+          "файловПрозы": 23,
+          "файловСКарточкой": 23,
           "файловБезКарточки": 0,
           "ссылокНаНесуществующийФайл": 0,
           "ссылокВнеОбходаЛана": 0,
           "записейВнеСтрокЛана": 0,
-          "файловБезКарточкиСостояния": 9,
-          "маркеровВПрозеНеОтражённыхВКарточке": 101,
+          "файловБезКарточкиСостояния": 0,
+          "маркеровВПрозеНеОтражённыхВКарточке": 0,
           "маркеровВКарточкеНеИзПрозыЛана": 12,
           "детально": {
-              "00_README_FALLBACK_2026-10-07.md": {
-                  "проза": 2,
-                  "карточка": 0,
-                  "вПрозеНеВКарточке": [
-                      "EVIDENCE_HOLD",
-                      "PUBLICATION_HOLD"
-                  ],
-                  "вКарточкеНеИзПрозы": [],
-                  "естьКарточка": true
-              },
-              "00_SYNTHESIS_AUTHORITY_2026-10-07.md": {
-                  "проза": 20,
-                  "карточка": 0,
-                  "вПрозеНеВКарточке": [
-                      "ARCHIVE_HOLD",
-                      "ATTRIBUTION_HOLD",
-                      "ATTRIBUTION_SECONDARY",
-                      "DRAFT / PUBLICATION_HOLD",
-                      "EDITION_HOLD",
-                      "EDITION_UNAVAILABLE",
-                      "EVIDENCE_HOLD",
-                      "HOLD",
-                      "LOCATOR_HOLD",
-                      "LOCATOR_PARTIAL",
-                      "PRIVATE_STUDY_ONLY",
-                      "PUBLICATION_HOLD",
-                      "RIGHTS_HOLD"
-                  ],
-                  "вКарточкеНеИзПрозы": [],
-                  "естьКарточка": true
-              },
-              "01_SERIES_PLAN_AND_ARTICLE_COUNT.md": {
-                  "проза": 4,
-                  "карточка": 0,
-                  "вПрозеНеВКарточке": [
-                      "ARCHIVE_HOLD",
-                      "LOCATOR_HOLD",
-                      "PUBLICATION_HOLD",
-                      "RIGHTS_HOLD"
-                  ],
-                  "вКарточкеНеИзПрозы": [],
-                  "естьКарточка": true
-              },
-              "02_CONFLICT_LEDGER.md": {
-                  "проза": 18,
-                  "карточка": 0,
-                  "вПрозеНеВКарточке": [
-                      "ATTRIBUTION_HOLD",
-                      "ATTRIBUTION_SECONDARY",
-                      "CONTEXT_HOLD",
-                      "DATE_HOLD",
-                      "EDITION_HOLD",
-                      "EVIDENCE_HOLD",
-                      "FORBIDDEN",
-                      "LOCATOR_HOLD",
-                      "LOCATOR_PARTIAL",
-                      "LOCATOR_SINGLE_ATTESTATION",
-                      "PUBLICATION_HOLD",
-                      "RIGHTS_HOLD"
-                  ],
-                  "вКарточкеНеИзПрозы": [],
-                  "естьКарточка": true
-              },
-              "03_PRACTICAL_AND_PASTORAL_NOTES.md": {
-                  "проза": 3,
-                  "карточка": 0,
-                  "вПрозеНеВКарточке": [
-                      "EDITION_HOLD",
-                      "EVIDENCE_HOLD",
-                      "LOCATOR_PARTIAL"
-                  ],
-                  "вКарточкеНеИзПрозы": [],
-                  "естьКарточка": true
-              },
-              "04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md": {
-                  "проза": 8,
-                  "карточка": 0,
-                  "вПрозеНеВКарточке": [
-                      "ATTRIBUTION_HOLD",
-                      "DRAFT / PUBLICATION_HOLD",
-                      "EDITION_HOLD",
-                      "LOCATOR_PARTIAL",
-                      "PUBLICATION_HOLD",
-                      "RIGHTS_HOLD"
-                  ],
-                  "вКарточкеНеИзПрозы": [],
-                  "естьКарточка": true
-              },
-              "05_RIGHTS_AND_PUBLICATION_GATES.md": {
-                  "проза": 7,
-                  "карточка": 0,
-                  "вПрозеНеВКарточке": [
-                      "ATTRIBUTION_HOLD",
-                      "EDITION_HOLD",
-                      "LOCATOR_HOLD",
-                      "LOCATOR_PARTIAL",
-                      "PRIVATE_STUDY_ONLY",
-                      "RIGHTS_HOLD"
-                  ],
-                  "вКарточкеНеИзПрозы": [],
-                  "естьКарточка": true
-              },
-              "06_MERGE_READINESS.md": {
-                  "проза": 6,
-                  "карточка": 0,
-                  "вПрозеНеВКарточке": [
-                      "ATTRIBUTION_HOLD",
-                      "EDITION_UNAVAILABLE",
-                      "LOCATOR_PARTIAL",
-                      "PUBLICATION_HOLD",
-                      "RIGHTS_HOLD"
-                  ],
-                  "вКарточкеНеИзПрозы": [],
-                  "естьКарточка": true
-              },
               "01_what-is-atonement.md": {
                   "проза": 6,
-                  "карточка": 1,
-                  "вПрозеНеВКарточке": [
-                      "ARCHIVE_HOLD",
-                      "EVIDENCE_HOLD",
-                      "LOCATOR_HOLD",
-                      "PUBLICATION_HOLD",
-                      "RIGHTS_HOLD"
-                  ],
+                  "карточка": 6,
+                  "вПрозеНеВКарточке": [],
                   "вКарточкеНеИзПрозы": [
                       "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD"
                   ],
@@ -416,14 +458,8 @@
               },
               "02_why-the-cross-necessity.md": {
                   "проза": 5,
-                  "карточка": 1,
-                  "вПрозеНеВКарточке": [
-                      "ARCHIVE_HOLD",
-                      "EVIDENCE_HOLD",
-                      "LOCATOR_HOLD",
-                      "PUBLICATION_HOLD",
-                      "RIGHTS_HOLD"
-                  ],
+                  "карточка": 6,
+                  "вПрозеНеВКарточке": [],
                   "вКарточкеНеИзПрозы": [
                       "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD"
                   ],
@@ -431,15 +467,8 @@
               },
               "03_nature-of-atonement.md": {
                   "проза": 6,
-                  "карточка": 1,
-                  "вПрозеНеВКарточке": [
-                      "ARCHIVE_HOLD",
-                      "EVIDENCE_HOLD",
-                      "LOCATOR_HOLD",
-                      "PRIVATE_STUDY_ONLY",
-                      "PUBLICATION_HOLD",
-                      "RIGHTS_HOLD"
-                  ],
+                  "карточка": 7,
+                  "вПрозеНеВКарточке": [],
                   "вКарточкеНеИзПрозы": [
                       "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD"
                   ],
@@ -447,15 +476,8 @@
               },
               "04_perfection-of-atonement.md": {
                   "проза": 6,
-                  "карточка": 1,
-                  "вПрозеНеВКарточке": [
-                      "ARCHIVE_HOLD",
-                      "EVIDENCE_HOLD",
-                      "LOCATOR_HOLD",
-                      "PRIVATE_STUDY_ONLY",
-                      "PUBLICATION_HOLD",
-                      "RIGHTS_HOLD"
-                  ],
+                  "карточка": 7,
+                  "вПрозеНеВКарточке": [],
                   "вКарточкеНеИзПрозы": [
                       "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD"
                   ],
@@ -463,41 +485,17 @@
               },
               "05_for-whom-did-christ-die-question.md": {
                   "проза": 5,
-                  "карточка": 1,
-                  "вПрозеНеВКарточке": [
-                      "ARCHIVE_HOLD",
-                      "EVIDENCE_HOLD",
-                      "LOCATOR_HOLD",
-                      "PUBLICATION_HOLD",
-                      "RIGHTS_HOLD"
-                  ],
+                  "карточка": 6,
+                  "вПрозеНеВКарточке": [],
                   "вКарточкеНеИзПрозы": [
                       "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD"
                   ],
                   "естьКарточка": true
               },
-              "06_world-all-many-hard-texts.md": {
-                  "проза": 5,
-                  "карточка": 0,
-                  "вПрозеНеВКарточке": [
-                      "ARCHIVE_HOLD",
-                      "EVIDENCE_HOLD",
-                      "LOCATOR_HOLD",
-                      "PUBLICATION_HOLD",
-                      "RIGHTS_HOLD"
-                  ],
-                  "вКарточкеНеИзПрозы": [],
-                  "естьКарточка": true
-              },
               "07_dort-sufficiency-efficiency.md": {
                   "проза": 4,
-                  "карточка": 1,
-                  "вПрозеНеВКарточке": [
-                      "EVIDENCE_HOLD",
-                      "LOCATOR_HOLD",
-                      "PUBLICATION_HOLD",
-                      "RIGHTS_HOLD"
-                  ],
+                  "карточка": 5,
+                  "вПрозеНеВКарточке": [],
                   "вКарточкеНеИзПрозы": [
                       "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD"
                   ],
@@ -505,13 +503,8 @@
               },
               "08_calvin-owen-amyraldianism.md": {
                   "проза": 4,
-                  "карточка": 1,
-                  "вПрозеНеВКарточке": [
-                      "ARCHIVE_HOLD",
-                      "EVIDENCE_HOLD",
-                      "LOCATOR_HOLD",
-                      "PRIVATE_STUDY_ONLY"
-                  ],
+                  "карточка": 5,
+                  "вПрозеНеВКарточке": [],
                   "вКарточкеНеИзПрозы": [
                       "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD"
                   ],
@@ -519,11 +512,8 @@
               },
               "09_free-offer-of-the-gospel.md": {
                   "проза": 2,
-                  "карточка": 1,
-                  "вПрозеНеВКарточке": [
-                      "EVIDENCE_HOLD",
-                      "LOCATOR_HOLD"
-                  ],
+                  "карточка": 3,
+                  "вПрозеНеВКарточке": [],
                   "вКарточкеНеИзПрозы": [
                       "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD"
                   ],
@@ -531,11 +521,8 @@
               },
               "10_tulip-without-caricature.md": {
                   "проза": 2,
-                  "карточка": 1,
-                  "вПрозеНеВКарточке": [
-                      "EVIDENCE_HOLD",
-                      "LOCATOR_HOLD"
-                  ],
+                  "карточка": 3,
+                  "вПрозеНеВКарточке": [],
                   "вКарточкеНеИзПрозы": [
                       "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD"
                   ],
@@ -543,10 +530,8 @@
               },
               "11_order-of-salvation.md": {
                   "проза": 1,
-                  "карточка": 1,
-                  "вПрозеНеВКарточке": [
-                      "PRIVATE_STUDY_ONLY"
-                  ],
+                  "карточка": 2,
+                  "вПрозеНеВКарточке": [],
                   "вКарточкеНеИзПрозы": [
                       "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD"
                   ],
@@ -554,11 +539,8 @@
               },
               "12_union-with-christ.md": {
                   "проза": 2,
-                  "карточка": 1,
-                  "вПрозеНеВКарточке": [
-                      "EVIDENCE_HOLD",
-                      "PRIVATE_STUDY_ONLY"
-                  ],
+                  "карточка": 3,
+                  "вПрозеНеВКарточке": [],
                   "вКарточкеНеИзПрозы": [
                       "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD"
                   ],
@@ -566,12 +548,8 @@
               },
               "13_justification-adoption-sanctification-perseverance.md": {
                   "проза": 3,
-                  "карточка": 1,
-                  "вПрозеНеВКарточке": [
-                      "EVIDENCE_HOLD",
-                      "PRIVATE_STUDY_ONLY",
-                      "PUBLICATION_HOLD"
-                  ],
+                  "карточка": 4,
+                  "вПрозеНеВКарточке": [],
                   "вКарточкеНеИзПрозы": [
                       "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD"
                   ],
@@ -2182,6 +2160,118 @@
                   "PUBLICATION_HOLD",
                   "RIGHTS_HOLD"
               ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "1@D1_EVOLUTION_OF_UNDERSTANDING_AXIS",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/D1_EVOLUTION_OF_UNDERSTANDING_AXIS.md",
+              "строка": 8,
+              "срез": "1. Условие входа исполнено: спрос матрицы и точки слоя",
+              "класс": "ОТКРЫТО",
+              "маркеров": 1,
+              "токены": [
+                  "OPEN-LAYER"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "2@D1_EVOLUTION_OF_UNDERSTANDING_AXIS",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/D1_EVOLUTION_OF_UNDERSTANDING_AXIS.md",
+              "строка": 24,
+              "срез": "2. Ось: этап — где закрыто — что не утверждать",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 2,
+              "токены": [
+                  "ARCHIVE_HOLD",
+                  "EVIDENCE_HOLD",
+                  "LOCATOR_HOLD",
+                  "OPEN-LAYER",
+                  "RIGHTS_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "3@D1_EVOLUTION_OF_UNDERSTANDING_AXIS",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/D1_EVOLUTION_OF_UNDERSTANDING_AXIS.md",
+              "строка": 44,
+              "срез": "3. Что карточка не делает",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "ARCHIVE_HOLD",
+                  "EVIDENCE_HOLD",
+                  "LOCATOR_HOLD",
+                  "PUBLICATION_HOLD",
+                  "RIGHTS_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "4@D1_EVOLUTION_OF_UNDERSTANDING_AXIS",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/D1_EVOLUTION_OF_UNDERSTANDING_AXIS.md",
+              "строка": 55,
+              "срез": "4. Что дальше (шаг дуги VII-2, не начат)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "1@D2_GOVERNMENTAL_THEORY_GROTIUS_AXIS",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/D2_GOVERNMENTAL_THEORY_GROTIUS_AXIS.md",
+              "строка": 10,
+              "срез": "1. Условие §4 исполнено: экзегетическая база B2 предшествует этой карточке",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "2@D2_GOVERNMENTAL_THEORY_GROTIUS_AXIS",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/D2_GOVERNMENTAL_THEORY_GROTIUS_AXIS.md",
+              "строка": 24,
+              "срез": "2. Ось: что где закрыто — что не утверждать",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "3@D2_GOVERNMENTAL_THEORY_GROTIUS_AXIS",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/D2_GOVERNMENTAL_THEORY_GROTIUS_AXIS.md",
+              "строка": 34,
+              "срез": "3. Что карточка не делает",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EVIDENCE_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "4@D2_GOVERNMENTAL_THEORY_GROTIUS_AXIS",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/D2_GOVERNMENTAL_THEORY_GROTIUS_AXIS.md",
+              "строка": 47,
+              "срез": "4. Что дальше",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
               "машинно": false,
               "машинноПоФайлу": true
           },
@@ -3865,8 +3955,8 @@
       ],
       "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
       "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check synthesis",
-      "measuredAt": "2026-10-28T22:22:15Z",
-      "checkedAt": "2026-10-28T22:22:15Z",
-      "предыдущийСъём": "2026-10-28T22:22:15Z"
+      "measuredAt": "2026-10-29T22:25:14Z",
+      "checkedAt": "2026-10-29T22:25:14Z",
+      "предыдущийСъём": "2026-10-29T22:25:12Z"
   }
 }

@@ -440,6 +440,13 @@
   },
   "cards": [
     {
+      "id": "00",
+      "file": "ИСКУПЛЕНИЕ/ot/00_OT_AUTHORITY_2026-10-08.md",
+      "topic": "ИСКУПЛЕНИЕ/ot — ВЕТХОЗАВЕТНЫЙ: authority под-корпуса",
+      "holds": ["EVIDENCE_HOLD", "LOCATOR_HOLD", "PUBLICATION_HOLD", "RIGHTS_HOLD", "ARCHIVE_HOLD"],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
+    },
+    {
       "id": "01",
       "file": "ИСКУПЛЕНИЕ/ot/01_LEX_KPR_KIPPER_FAMILY.md",
       "topic": "כפר: kipper / kopher / kapporet",
@@ -448,7 +455,7 @@
       "accessState": "full verse text (MT and LXX) for listed loci; apparatus checks for Lev 17:11 and Num 16:46–47 only",
       "rightsState": "original-language text; short quotations only; no file uploads; mirror transcriptions used for verification only",
       "publicationState": "research only",
-      "holds": ["EVIDENCE_HOLD", "LOCATOR_HOLD", "PUBLICATION_HOLD"],
+      "holds": ["EVIDENCE_HOLD", "LOCATOR_HOLD", "PUBLICATION_HOLD", "ARCHIVE_HOLD", "RIGHTS_HOLD"],
       "verses": [
         {
           "ref": "Gen 32:20 (MT 32:21)",
@@ -2064,33 +2071,10 @@
           "ссылокНаНесуществующийФайл": 0,
           "ссылокВнеОбходаЛана": 0,
           "записейВнеСтрокЛана": 0,
-          "файловБезКарточкиСостояния": 3,
-          "маркеровВПрозеНеОтражённыхВКарточке": 7,
+          "файловБезКарточкиСостояния": 2,
+          "маркеровВПрозеНеОтражённыхВКарточке": 0,
           "маркеровВКарточкеНеИзПрозыЛана": 17,
           "детально": {
-              "00_OT_AUTHORITY_2026-10-08.md": {
-                  "проза": 5,
-                  "карточка": 0,
-                  "вПрозеНеВКарточке": [
-                      "ARCHIVE_HOLD",
-                      "EVIDENCE_HOLD",
-                      "LOCATOR_HOLD",
-                      "PUBLICATION_HOLD",
-                      "RIGHTS_HOLD"
-                  ],
-                  "вКарточкеНеИзПрозы": [],
-                  "естьКарточка": true
-              },
-              "01_LEX_KPR_KIPPER_FAMILY.md": {
-                  "проза": 6,
-                  "карточка": 3,
-                  "вПрозеНеВКарточке": [
-                      "ARCHIVE_HOLD",
-                      "RIGHTS_HOLD"
-                  ],
-                  "вКарточкеНеИзПрозы": [],
-                  "естьКарточка": true
-              },
               "06_PESAH_EXOD12.md": {
                   "проза": 0,
                   "карточка": 6,
@@ -4624,8 +4608,8 @@
       ],
       "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
       "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
-      "measuredAt": "2026-10-26T19:38:33Z",
-      "checkedAt": "2026-10-26T19:38:33Z",
-      "предыдущийСъём": "2026-10-26T19:38:32Z"
+      "measuredAt": "2026-10-29T22:25:13Z",
+      "checkedAt": "2026-10-29T22:25:13Z",
+      "предыдущийСъём": "2026-10-29T22:25:12Z"
   }
 }

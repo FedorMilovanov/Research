@@ -2311,6 +2311,70 @@ if _acr27 is not None:
     )
 
 
+# ---- правило 29 (28.10.2026, дуга VI): матрица исчерпываемости — четыре числа печатает гейт ----
+# Блок exhaustivenessMatrix20261028 обязан равняться независимому обходу того же кода, которым его
+# пишет --write (тот же приём, что правило 27 с реестром доводов: гейт не переписывает определения,
+# а вызывает их), а приёмка серии обязана быть нулём: ни одной строки «довод без локатора» и ни
+# одной статьи, где C-класс участвует в утверждении. Подписи doNot сверяются со списком запретов:
+# «подписи нет» — сверка, которую больше нельзя пройти молча.
+sys.path.insert(0, str(ROOT / "scripts"))
+try:
+    import atonement_reshoot_state as _ars29
+except Exception as _exc29:  # noqa: BLE001 - отсутствие пересъёмщика обязано быть ошибкой, а не молчанием
+    _ars29 = None
+    errors.append(
+        f"ПРАВИЛО 29: scripts/atonement_reshoot_state.py не импортируется ({_exc29}) — матрицу "
+        "пересчитывать нечем, а написать её руками запрещено"
+    )
+if _ars29 is not None:
+    try:
+        _corp29 = json.loads(REG.read_text(encoding="utf-8"))
+    except Exception as _exc29b:  # noqa: BLE001
+        _corp29 = None
+        errors.append(f"ПРАВИЛО 29: корпус не читается ({_exc29b})")
+    if _corp29 is not None:
+        try:
+            _fresh29 = _ars29.exhaust_matrix_scan(_corp29)
+        except Exception as _exc29c:  # noqa: BLE001
+            _fresh29 = None
+            errors.append(f"ПРАВИЛО 29: обход матрицы упал ({_exc29c})")
+        if _fresh29 is not None:
+            _block29 = _corp29.get("exhaustivenessMatrix20261028") or {}
+            if not _block29:
+                errors.append(
+                    "ПРАВИЛО 29: блок exhaustivenessMatrix20261028 в корпусе отсутствует — матрица "
+                    "обязана лежать в реестре, а не в памяти круга"
+                )
+            for _k29 in ("статьи", "итог", "приёмка"):
+                if _block29.get(_k29) != _fresh29.get(_k29):
+                    errors.append(
+                        f"ПРАВИЛО 29: exhaustivenessMatrix20261028.{_k29} разошёлся с обходом — "
+                        "переснять scripts/atonement_reshoot_state.py --write (руками не правится)"
+                    )
+            _acc29 = _fresh29.get("приёмка") or {}
+            for _lab29, _k29 in (
+                ("строк опоры без локатора", "строкОпорБезЛокатора"),
+                ("статей, где C-класс в утверждении", "статейСКлассомC"),
+                ("доводов без локатора в реестрах", "доводовБезЛокатора"),
+                ("нарушений запретов", "нарушенийЗапретов"),
+                ("ссылок на несуществующие записи леджера", "ссылокНаНеизвестныеЗаписи"),
+                ("запретов без подписи", "запретовБезПодписи"),
+                ("подписей без запрета", "подписейБезЗапрета"),
+            ):
+                if _acc29.get(_k29, -1):
+                    errors.append(f"ПРАВИЛО 29: приёмка дуги VI нарушена — {_lab29}: {_acc29.get(_k29)}")
+            _itt29 = _fresh29.get("итог") or {}
+            notes.append(
+                "ПРАВИЛО 29: матрица исчерпываемости: статей %d, строк опор %d (прочитано %d, "
+                "нечитаемо %d), открытых конфликтов уникальных %d, пар «статья × запрет» %d, "
+                "нарушений %d; приёмка — по нулям. Съём: python3 -B scripts/atonement_reshoot_state.py "
+                "--write && python3 -B scripts/atonement_reshoot_state.py --check"
+                % (_itt29.get("статей", -1), _itt29.get("строкОпор", -1), _itt29.get("прочитано", -1),
+                   _itt29.get("нечитаемо", -1), _itt29.get("открытыхУникальных", -1),
+                   _itt29.get("запретовПар", -1), _itt29.get("нарушений", -1))
+            )
+
+
 for note in notes:
     print(f"ATONEMENT CORPUS INTEGRITY: note — {note}")
 if errors:

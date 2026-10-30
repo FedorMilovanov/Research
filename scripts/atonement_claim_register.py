@@ -231,7 +231,13 @@ STATE_KEYS = ("status", "state", "holds", "publicationState", "rightsState", "ac
 
 def card_markers(card: dict) -> set[str]:
     """Маркеры, которыми запись описывает своё состояние: только поля состояния, а не
-    весь текст записи. Иначе сверка меряла бы, как часто имя файла написано капителью."""
+    весь текст записи. Иначе сверка меряла бы, как часто имя файла написано капителью.
+
+    Одиночные вердикты (SINGLE_WORD_VERDICTS) здесь равны маркерной форме без той
+    статусной строки, которую проза требует формой (круг 59): само нахождение токена
+    в поле состояния и есть статусность — держать их вне счёта значило бы не видеть
+    верной карточки, как это было с BLOCKED в holds новозаветной 12_ (круг 103).
+    """
     out: set[str] = set()
 
     def walk(node) -> None:
@@ -243,8 +249,9 @@ def card_markers(card: dict) -> set[str]:
                 walk(val)
         elif isinstance(node, str):
             for tok in re.findall(r"[A-Z][A-Z0-9 _./+-]{3,40}", node):
-                if is_marker_shape(tok.strip()):
-                    out.add(tok.strip())
+                tok = tok.strip()
+                if is_marker_shape(tok) or tok in SINGLE_WORD_VERDICTS:
+                    out.add(tok)
 
     for key in STATE_KEYS:
         if key in card:

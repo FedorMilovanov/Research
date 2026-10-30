@@ -1774,6 +1774,177 @@
   },
   "datasetPathAccounting": "Secondary sha256 of sorted UTF-8 relative paths joined by newline. Existing sorted-content byte digests remain unchanged.",
   "branchAudit": "ИСКУПЛЕНИЕ/nt/14_NT_BRANCH_AUDIT_2026-10-12.md",
+  "stateCards": [
+    {
+      "id": "00",
+      "file": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
+      "topic": "ИСКУПЛЕНИЕ/nt — НОВЫЙ ЗАВЕТ: authority под-корпуса",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "PRIVATE_STUDY_ONLY",
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "TEXT_ACCESS_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "01",
+      "file": "ИСКУПЛЕНИЕ/nt/01_NT_LEXICAL_FIELD_REDEMPTION.md",
+      "topic": "НЗ-лексическое поле 1: выкуп и покупка",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "02",
+      "file": "ИСКУПЛЕНИЕ/nt/02_NT_LEXICAL_FIELD_PROPITIATION_RECONCILIATION.md",
+      "topic": "НЗ-лексическое поле 2: умилостивление и примирение",
+      "holds": [
+        "EVIDENCE_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "03",
+      "file": "ИСКУПЛЕНИЕ/nt/03_NT_LEXICAL_FIELD_AIMA_AND_PREPOSITIONS.md",
+      "topic": "НЗ-лексическое поле 3: кровь и предлоги ὑπέρ / ἀντί / περί",
+      "holds": [
+        "LOCATOR_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "04",
+      "file": "ИСКУПЛЕНИЕ/nt/04_NT_LEXICAL_FIELD_QUANTIFIERS.md",
+      "topic": "НЗ-лексическое поле 4: квантификаторы и артикль",
+      "holds": [
+        "EVIDENCE_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "05",
+      "file": "ИСКУПЛЕНИЕ/nt/05_NT_LEXICAL_FIELD_EKKLESIA_AND_OWN.md",
+      "topic": "НЗ-лексическое поле 5: Церковь, «свои» и текстология Деян 20:28",
+      "holds": [
+        "LOCATOR_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "06",
+      "file": "ИСКУПЛЕНИЕ/nt/06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md",
+      "topic": "Карточки перикоп НЗ, часть 1: Синоптики и Иоанн (17 карточек)",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "LOCATOR_PARTIAL"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "07",
+      "file": "ИСКУПЛЕНИЕ/nt/07_NT_PERICOPE_CARDS_ACTS_AND_PAUL.md",
+      "topic": "Карточки перикоп НЗ, часть 2: Деяния и Павел (27 карточек)",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "08",
+      "file": "ИСКУПЛЕНИЕ/nt/08_NT_PERICOPE_CARDS_HEBREWS_CATHOLICS_APOCALYPSE.md",
+      "topic": "Карточки перикоп НЗ, часть 3: Евреям, соборные послания, Апокалипсис (34 карточки)",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "09",
+      "file": "ИСКУПЛЕНИЕ/nt/09_NT_EXTENT_THREE_COLUMN_TABLE.md",
+      "topic": "Трёхколонник НЗ по объёму искупления: что текст утверждает / чего не утверждает / какие чтения остаются живы",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "LXX_HOLD",
+        "MT_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "10",
+      "file": "ИСКУПЛЕНИЕ/nt/10_NT_OFFER_AXIS_CARDS.md",
+      "topic": "Ось предложения (offer): карточки НЗ (9 карточек + поле + синтез)",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "MT_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "11",
+      "file": "ИСКУПЛЕНИЕ/nt/11_NT_LXX_COLLATION.md",
+      "topic": "Сверка под-корпуса НЗ с LXX (свидетель S5)",
+      "holds": [
+        "CONFLICT / LOCATOR_HOLD",
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "LXX_HOLD",
+        "MT_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "12",
+      "file": "ИСКУПЛЕНИЕ/nt/12_NT_TEXTUAL_APPARATUS.md",
+      "topic": "Критический аппарат в под-корпусе НЗ (свидетель S7)",
+      "holds": [
+        "BLOCKED",
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "13",
+      "file": "ИСКУПЛЕНИЕ/nt/13_DORT_HISTORICAL_CONTROL.md",
+      "topic": "Каноны Дорта, Вторая глава — исторический контроль, не библейский вердикт",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "PARTIAL_OBJECT",
+        "RIGHTS_UNKNOWN"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "14",
+      "file": "ИСКУПЛЕНИЕ/nt/14_NT_BRANCH_AUDIT_2026-10-12.md",
+      "topic": "Аудит ветки Research / НЗ — 2026-10-12",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "15",
+      "file": "ИСКУПЛЕНИЕ/nt/15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md",
+      "topic": "15. Ин 11:52 — «рассеянных чад Божиих собрать воедино»: статус «чад» до веры",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_PARTIAL"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    }
+  ],
   "claimRegister20261026": {
     "чтоЭто": "реестр доводов лана «nt»: строка = раздел прозы уровня ## с локатором, классом из её собственных маркеров и отметкой съёма",
     "чтоСчитаетсяДоводом": "заголовок «## » в любом .md лана, включая вложенные папки (synthesis/drafts, ot/tools); тело секции — до следующего «## » или до конца файла",
@@ -1863,162 +2034,10 @@
       "ссылокНаНесуществующийФайл": 0,
       "ссылокВнеОбходаЛана": 0,
       "записейВнеСтрокЛана": 0,
-      "файловБезКарточкиСостояния": 16,
-      "маркеровВПрозеНеОтражённыхВКарточке": 39,
+      "файловБезКарточкиСостояния": 0,
+      "маркеровВПрозеНеОтражённыхВКарточке": 0,
       "маркеровВКарточкеНеИзПрозыЛана": 0,
-      "детально": {
-        "00_NT_AUTHORITY_2026-10-07.md": {
-          "проза": 11,
-          "карточка": 0,
-          "вПрозеНеВКарточке": [
-            "EVIDENCE_HOLD",
-            "LOCATOR_HOLD",
-            "PRIVATE_STUDY_ONLY",
-            "PUBLICATION_HOLD",
-            "RIGHTS_HOLD",
-            "TEXT_ACCESS_HOLD"
-          ],
-          "вКарточкеНеИзПрозы": [],
-          "естьКарточка": true
-        },
-        "01_NT_LEXICAL_FIELD_REDEMPTION.md": {
-          "проза": 2,
-          "карточка": 0,
-          "вПрозеНеВКарточке": [
-            "EVIDENCE_HOLD",
-            "LOCATOR_HOLD"
-          ],
-          "вКарточкеНеИзПрозы": [],
-          "естьКарточка": true
-        },
-        "03_NT_LEXICAL_FIELD_AIMA_AND_PREPOSITIONS.md": {
-          "проза": 1,
-          "карточка": 0,
-          "вПрозеНеВКарточке": [
-            "LOCATOR_HOLD"
-          ],
-          "вКарточкеНеИзПрозы": [],
-          "естьКарточка": true
-        },
-        "05_NT_LEXICAL_FIELD_EKKLESIA_AND_OWN.md": {
-          "проза": 1,
-          "карточка": 0,
-          "вПрозеНеВКарточке": [
-            "LOCATOR_HOLD"
-          ],
-          "вКарточкеНеИзПрозы": [],
-          "естьКарточка": true
-        },
-        "06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md": {
-          "проза": 3,
-          "карточка": 0,
-          "вПрозеНеВКарточке": [
-            "EVIDENCE_HOLD",
-            "LOCATOR_HOLD",
-            "LOCATOR_PARTIAL"
-          ],
-          "вКарточкеНеИзПрозы": [],
-          "естьКарточка": true
-        },
-        "07_NT_PERICOPE_CARDS_ACTS_AND_PAUL.md": {
-          "проза": 2,
-          "карточка": 0,
-          "вПрозеНеВКарточке": [
-            "EVIDENCE_HOLD",
-            "LOCATOR_HOLD"
-          ],
-          "вКарточкеНеИзПрозы": [],
-          "естьКарточка": true
-        },
-        "08_NT_PERICOPE_CARDS_HEBREWS_CATHOLICS_APOCALYPSE.md": {
-          "проза": 2,
-          "карточка": 0,
-          "вПрозеНеВКарточке": [
-            "EVIDENCE_HOLD",
-            "LOCATOR_HOLD"
-          ],
-          "вКарточкеНеИзПрозы": [],
-          "естьКарточка": true
-        },
-        "09_NT_EXTENT_THREE_COLUMN_TABLE.md": {
-          "проза": 4,
-          "карточка": 0,
-          "вПрозеНеВКарточке": [
-            "EVIDENCE_HOLD",
-            "LOCATOR_HOLD",
-            "LXX_HOLD",
-            "MT_HOLD"
-          ],
-          "вКарточкеНеИзПрозы": [],
-          "естьКарточка": true
-        },
-        "10_NT_OFFER_AXIS_CARDS.md": {
-          "проза": 3,
-          "карточка": 0,
-          "вПрозеНеВКарточке": [
-            "EVIDENCE_HOLD",
-            "LOCATOR_HOLD",
-            "MT_HOLD"
-          ],
-          "вКарточкеНеИзПрозы": [],
-          "естьКарточка": true
-        },
-        "11_NT_LXX_COLLATION.md": {
-          "проза": 6,
-          "карточка": 0,
-          "вПрозеНеВКарточке": [
-            "CONFLICT / LOCATOR_HOLD",
-            "EVIDENCE_HOLD",
-            "LOCATOR_HOLD",
-            "LXX_HOLD",
-            "MT_HOLD"
-          ],
-          "вКарточкеНеИзПрозы": [],
-          "естьКарточка": true
-        },
-        "12_NT_TEXTUAL_APPARATUS.md": {
-          "проза": 5,
-          "карточка": 0,
-          "вПрозеНеВКарточке": [
-            "BLOCKED",
-            "EVIDENCE_HOLD",
-            "LOCATOR_HOLD"
-          ],
-          "вКарточкеНеИзПрозы": [],
-          "естьКарточка": true
-        },
-        "13_DORT_HISTORICAL_CONTROL.md": {
-          "проза": 6,
-          "карточка": 0,
-          "вПрозеНеВКарточке": [
-            "EVIDENCE_HOLD",
-            "PARTIAL_OBJECT",
-            "RIGHTS_UNKNOWN"
-          ],
-          "вКарточкеНеИзПрозы": [],
-          "естьКарточка": true
-        },
-        "14_NT_BRANCH_AUDIT_2026-10-12.md": {
-          "проза": 2,
-          "карточка": 0,
-          "вПрозеНеВКарточке": [
-            "EVIDENCE_HOLD",
-            "PUBLICATION_HOLD"
-          ],
-          "вКарточкеНеИзПрозы": [],
-          "естьКарточка": true
-        },
-        "15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md": {
-          "проза": 2,
-          "карточка": 0,
-          "вПрозеНеВКарточке": [
-            "EVIDENCE_HOLD",
-            "LOCATOR_PARTIAL"
-          ],
-          "вКарточкеНеИзПрозы": [],
-          "естьКарточка": true
-        }
-      }
+      "детально": {}
     },
     "правилоСверки": "запись лана считается относящейся к файлу, если в ней есть file|path|файл на этот .md;  HOLD-маркеры секций файла обязаны встретиться в маркерах его записей, а маркеры записи обязаны встречаться в прозе лана — так оба учёта проверяют друг друга, а не дополняются до совпадения",
     "строки": [
@@ -4459,8 +4478,8 @@
     ],
     "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
     "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check nt",
-    "measuredAt": "2026-10-26T19:38:33Z",
-    "checkedAt": "2026-10-26T19:38:33Z",
-    "предыдущийСъём": "2026-10-26T19:38:32Z"
+    "measuredAt": "2026-10-29T22:25:13Z",
+    "checkedAt": "2026-10-29T22:25:13Z",
+    "предыдущийСъём": "2026-10-29T22:25:12Z"
   }
 }

@@ -738,6 +738,143 @@
       "notes": "Kenosis-victory without ransom-terminology in vol. 1: 'without price' (leaf 44), 'form of accursed man in the work of their redemption' (166), 'given up into the hands of Satan... set us free both outwardly and inwardly' (168), apostate angel 'driven down to a farther depth' (207). 'ransom' = 0 in vol. 1 (full-text search). Not 'ransom to devil' and not Anselmian 'satisfaction'. PL 75-76 ORIGINAL_TEXT_HOLD."
     }
   ],
+  "stateCards": [
+    {
+      "id": "00",
+      "file": "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
+      "topic": "Святые отцы об искуплении — authority под-корпуса",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "ORIGINAL_TEXT_HOLD",
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "RIGHTS_UNCLEAR"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "01",
+      "file": "ИСКУПЛЕНИЕ/fathers/01_METHOD_LOCATORS_GENRE_ANACHRONISM.md",
+      "topic": "Метод под-корпуса «Отцы»: локатор, жанр, анахронизм",
+      "holds": [
+        "LOCATOR_HOLD",
+        "ORIGINAL_TEXT_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "02",
+      "file": "ИСКУПЛЕНИЕ/fathers/02_APOSTOLIC_FATHERS_CARDS.md",
+      "topic": "Карточки: мужи апостольские и ближайшее к ним (I–II вв.)",
+      "holds": [
+        "EVIDENCE_HOLD"
+      ],
+      "stateSource": "в прозе файла нет ни одного маркера состояния; EVIDENCE_HOLD — уровень под-корпуса (зеркало authority-файла), сверка — claim_register --cross"
+    },
+    {
+      "id": "03",
+      "file": "ИСКУПЛЕНИЕ/fathers/03_APOLOGISTS_IRENAEUS_TERTULLIAN.md",
+      "topic": "Карточки: апологеты, Ириней, Тертуллиан, Киприан (II–III вв.)",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "FALSE_FRIEND",
+        "LOCATOR_HOLD",
+        "ORIGINAL_TEXT_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "04",
+      "file": "ИСКУПЛЕНИЕ/fathers/04_THIRD_FOURTH_CENTURY_CARDS.md",
+      "topic": "Карточки: III–IV века (Ориген → Иероним)",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "ORIGINAL_TEXT_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "05",
+      "file": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
+      "topic": "Карточки: V век, христологические споры и граница с Анзельмом",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "06",
+      "file": "ИСКУПЛЕНИЕ/fathers/06_METAPHOR_AND_MODEL_MAP.md",
+      "topic": "Карта метафор и моделей (по авторам и жанрам)",
+      "holds": [
+        "EVIDENCE_HOLD"
+      ],
+      "stateSource": "в прозе файла нет ни одного маркера состояния; EVIDENCE_HOLD — уровень под-корпуса (зеркало authority-файла), сверка — claim_register --cross"
+    },
+    {
+      "id": "07",
+      "file": "ИСКУПЛЕНИЕ/fathers/07_RANSOM_TO_WHOM_MAP.md",
+      "topic": "Карта: «выкуп — кому?» — от метафоры к её корректировке",
+      "holds": [
+        "EVIDENCE_HOLD"
+      ],
+      "stateSource": "в прозе файла нет ни одного маркера состояния; EVIDENCE_HOLD — уровень под-корпуса (зеркало authority-файла), сверка — claim_register --cross"
+    },
+    {
+      "id": "08",
+      "file": "ИСКУПЛЕНИЕ/fathers/08_UNIVERSAL_TEXTS_IN_THE_FATHERS.md",
+      "topic": "Карта: универсальные тексты у отцов (фактическая картина)",
+      "holds": [
+        "LOCATOR_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "09",
+      "file": "ИСКУПЛЕНИЕ/fathers/09_SILENCES_AND_FALSE_FRIENDS.md",
+      "topic": "Молчания и ложные друзья",
+      "holds": [
+        "APPARATUS_FALSE_FRIEND",
+        "ARCHIVE_HOLD",
+        "FALSE_FRIEND",
+        "FALSE_LOCATOR",
+        "LOCATOR_HOLD",
+        "QUOTE_RISK",
+        "RIGHTS_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "10",
+      "file": "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
+      "topic": "Сверка с оригиналом (греческий/латинский): что проверено в этой волне",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "FALSE_FRIEND",
+        "LOCATOR_HOLD",
+        "ORIGINAL_TEXT_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "11",
+      "file": "ИСКУПЛЕНИЕ/fathers/11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
+      "topic": "Карточки: III–IV вв. (пробелы) и латинский Запад",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "ORIGINAL_TEXT_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    }
+  ],
   "maps": [
     {
       "file": "06_METAPHOR_AND_MODEL_MAP.md",
@@ -1182,20 +1319,20 @@
     "чтоСчитаетсяДоводом": "заголовок «## » в любом .md лана, включая вложенные папки (synthesis/drafts, ot/tools); тело секции — до следующего «## » или до конца файла",
     "приоритет": "УДЕРЖИВАЕТСЯ > ОТКРЫТО > ЗАКРЫТО; маркеров нет -> БЕЗ МАРКЕРА; маркер вне классификации -> ошибка съёма, а не «прочее»",
     "метод": "scripts/atonement_claim_register.py обходит прозу лана целиком (без выборки), разбирает маркеры вида `ВЕРДИКТ`, сверяет локатор побайтово (файл + номер строки + текст)",
-    "строк": 101,
+    "строк": 102,
     "файлов": 12,
     "покрытоМашинно": 35,
-    "покрытоПоФайлу": 101,
+    "покрытоПоФайлу": 102,
     "файловПрозы": 12,
     "файловБезКарточки": 0,
-    "разрешеноЛокаторов": 101,
+    "разрешеноЛокаторов": 102,
     "неРазрешено": 0,
     "поКлассам": {
       "БЕЗ МАРКЕРА": 56,
-      "УДЕРЖИВАЕТСЯ": 45
+      "УДЕРЖИВАЕТСЯ": 46
     },
     "маркеры": {
-      "всего": 129,
+      "всего": 130,
       "различных": 13,
       "словарь": {
         "APPARATUS_FALSE_FRIEND": "УДЕРЖИВАЕТСЯ",
@@ -1220,7 +1357,7 @@
         "FALSE_FRIEND": 8,
         "ARCHIVE_AVAILABLE": 6,
         "QUOTE_RISK": 5,
-        "EVIDENCE_HOLD": 3,
+        "EVIDENCE_HOLD": 4,
         "ARCHIVE_READ": 2,
         "FALSE_LOCATOR": 2,
         "PUBLICATION_HOLD": 2,
@@ -1249,131 +1386,67 @@
       "ссылокНаНесуществующийФайл": 0,
       "ссылокВнеОбходаЛана": 0,
       "записейВнеСтрокЛана": 0,
-      "файловБезКарточкиСостояния": 7,
-      "маркеровВПрозеНеОтражённыхВКарточке": 29,
-      "маркеровВКарточкеНеИзПрозыЛана": 13,
+      "файловБезКарточкиСостояния": 0,
+      "маркеровВПрозеНеОтражённыхВКарточке": 0,
+      "маркеровВКарточкеНеИзПрозыЛана": 21,
       "детально": {
-        "00_FATHERS_AUTHORITY_2026-10-07.md": {
-          "проза": 9,
-          "карточка": 0,
-          "вПрозеНеВКарточке": [
-            "ARCHIVE_HOLD",
-            "EVIDENCE_HOLD",
-            "LOCATOR_HOLD",
-            "ORIGINAL_TEXT_HOLD",
-            "PUBLICATION_HOLD",
-            "RIGHTS_HOLD",
-            "RIGHTS_UNCLEAR"
-          ],
-          "вКарточкеНеИзПрозы": [],
-          "естьКарточка": true
-        },
-        "01_METHOD_LOCATORS_GENRE_ANACHRONISM.md": {
-          "проза": 3,
-          "карточка": 0,
-          "вПрозеНеВКарточке": [
-            "LOCATOR_HOLD",
-            "ORIGINAL_TEXT_HOLD"
-          ],
-          "вКарточкеНеИзПрозы": [],
-          "естьКарточка": true
-        },
         "02_APOSTOLIC_FATHERS_CARDS.md": {
           "проза": 0,
-          "карточка": 2,
+          "карточка": 4,
           "вПрозеНеВКарточке": [],
           "вКарточкеНеИзПрозы": [
             "LOCATED / VERIFIED_ORIGINAL",
+            "READABLE",
             "RESEARCH_ONLY"
           ],
           "естьКарточка": true
         },
         "03_APOLOGISTS_IRENAEUS_TERTULLIAN.md": {
           "проза": 5,
-          "карточка": 8,
-          "вПрозеНеВКарточке": [
-            "FALSE_FRIEND",
-            "ORIGINAL_TEXT_HOLD"
-          ],
+          "карточка": 12,
+          "вПрозеНеВКарточке": [],
           "вКарточкеНеИзПрозы": [
             "HOLD-STUB",
             "LOCATED / VERIFIED_ORIGINAL",
             "NOT_ACQUIRED",
             "NOT_LOCATED",
-            "RESEARCH_ONLY"
+            "READABLE",
+            "RESEARCH_ONLY",
+            "VERIFIED"
           ],
           "естьКарточка": true
         },
         "04_THIRD_FOURTH_CENTURY_CARDS.md": {
           "проза": 3,
-          "карточка": 2,
-          "вПрозеНеВКарточке": [
-            "ARCHIVE_HOLD",
-            "LOCATOR_HOLD",
-            "ORIGINAL_TEXT_HOLD"
-          ],
+          "карточка": 6,
+          "вПрозеНеВКарточке": [],
           "вКарточкеНеИзПрозы": [
             "LOCATED / VERIFIED_ORIGINAL",
+            "READABLE",
             "RESEARCH_ONLY"
           ],
           "естьКарточка": true
         },
         "05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md": {
           "проза": 3,
-          "карточка": 6,
+          "карточка": 8,
           "вПрозеНеВКарточке": [],
           "вКарточкеНеИзПрозы": [
             "LOCATED / VERIFIED_ORIGINAL",
             "NOT_ACQUIRED",
-            "RESEARCH_ONLY"
+            "READABLE",
+            "RESEARCH_ONLY",
+            "VERIFIED"
           ],
-          "естьКарточка": true
-        },
-        "08_UNIVERSAL_TEXTS_IN_THE_FATHERS.md": {
-          "проза": 1,
-          "карточка": 0,
-          "вПрозеНеВКарточке": [
-            "LOCATOR_HOLD"
-          ],
-          "вКарточкеНеИзПрозы": [],
-          "естьКарточка": true
-        },
-        "09_SILENCES_AND_FALSE_FRIENDS.md": {
-          "проза": 8,
-          "карточка": 0,
-          "вПрозеНеВКарточке": [
-            "APPARATUS_FALSE_FRIEND",
-            "ARCHIVE_HOLD",
-            "FALSE_FRIEND",
-            "FALSE_LOCATOR",
-            "LOCATOR_HOLD",
-            "QUOTE_RISK",
-            "RIGHTS_HOLD"
-          ],
-          "вКарточкеНеИзПрозы": [],
-          "естьКарточка": true
-        },
-        "10_ORIGINAL_LANGUAGE_VERIFICATION.md": {
-          "проза": 6,
-          "карточка": 0,
-          "вПрозеНеВКарточке": [
-            "ARCHIVE_HOLD",
-            "FALSE_FRIEND",
-            "LOCATOR_HOLD",
-            "ORIGINAL_TEXT_HOLD"
-          ],
-          "вКарточкеНеИзПрозы": [],
           "естьКарточка": true
         },
         "11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md": {
           "проза": 4,
-          "карточка": 3,
-          "вПрозеНеВКарточке": [
-            "ARCHIVE_HOLD",
-            "ORIGINAL_TEXT_HOLD",
-            "RIGHTS_HOLD"
-          ],
+          "карточка": 8,
+          "вПрозеНеВКарточке": [],
           "вКарточкеНеИзПрозы": [
+            "OPEN",
+            "READABLE",
             "RESEARCH_ONLY"
           ],
           "естьКарточка": true
@@ -1520,6 +1593,20 @@
         "класс": "БЕЗ МАРКЕРА",
         "маркеров": 0,
         "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "11@00_FATHERS_AUTHORITY_2026-10-07",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
+        "строка": 136,
+        "срез": "11. Учёт состояния: `stateCards` (круг 91)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "EVIDENCE_HOLD"
+        ],
         "машинно": false,
         "машинноПоФайлу": true
       },
@@ -2732,8 +2819,8 @@
     ],
     "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
     "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check fathers",
-    "measuredAt": "2026-10-26T19:38:33Z",
-    "checkedAt": "2026-10-26T19:38:33Z",
-    "предыдущийСъём": "2026-10-26T19:38:32Z"
+    "measuredAt": "2026-10-29T22:25:14Z",
+    "checkedAt": "2026-10-29T22:25:14Z",
+    "предыдущийСъём": "2026-10-29T22:25:12Z"
   }
 }
