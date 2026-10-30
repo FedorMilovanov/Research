@@ -16,7 +16,7 @@ scripts/run_atonement_mutation_battery.py`, обход `docs/research/atonement/
 | Что | Файлов | Байт | Примечание |
 |---|---|---|---|
 | `docs/research/atonement/` — читательско-исследовательская полоса | 38 | 5 050 904 | 36 нумерованных разборов + `README.md` + таксономия |
-| `ИСКУПЛЕНИЕ/*.md` — корень отдела | 21 | 1 642 967 | от `00_CURRENT_AUTHORITY` до `18_SERIES_AUDIT`; `17_` один занимает 435 395, этот документ — 488 625 |
+| `ИСКУПЛЕНИЕ/*.md` — корень отдела | 21 | 1 647 994 | от `00_CURRENT_AUTHORITY` до `18_SERIES_AUDIT`; `17_` один занимает 435 395, этот документ — 493 652 |
 | под-ланы `ot` `nt` `fathers` `synthesis` | 56 | 2 417 029 | 18 / 16 / 12 / 10 файлов |
 | `ИСКУПЛЕНИЕ/synthesis/drafts/` — читательские черновики | 13 | 343 646 | 2038 переводов строки суммарно — прежнее определение (строки через split) давало 2051, разница по одному на файл без финального перевода; каждый 25,1–32 КБ (1 КБ = 1000 B) |
 | `ИСКУПЛЕНИЕ/data/` — корпус и индекс библиотеки | 2 | 1 539 997 | корпус 1 197 968 B, индекс 342 029 B; числа снимает scripts/atonement_reshoot_state.py --write, сверяет --check (шаг гейта); до этого в строке стоял срез круга 63 (1 145 507 B) |
@@ -2380,6 +2380,28 @@ A3 (`03_`, 66) приводит в кавычках: «которою Он ис�
 **Побочная находка — локаторы Мура.** Оуэн спорит с Томасом Муром, *Universality of Free Grace*, и даёт постраничные адреса, которых в `14_` нет: разбор 1 Тим. 2:4, 6 — «makes the subject of one whole chapter… one of the two places which he lays for the bottom and foundation of the whole building»; Рим. 5:18 — «**chap. viii., p. 41**» и контрдоводы Мура «**page 44**». Плюс важная деталь механизма: Оуэн **отказывается** разбирать главу Мура о 1 Тим. 2:4 целиком, отсылая к Резерфорду («the learned work of Mr Rutherford… hath fully answered that chapter of Mr More's book»). То есть у Оуэна ответ на это место **не самостоятельный по Муру**, а делегированный — это стоит знать до любой публикации «Оуэн против Мура».
 
 **Что осталось.** Чанк **90** (продолжение ответа Муру) не сверялся; страницы Goold для этих чанков не сверялись (в `14_` §0.1–0.2 карта страниц есть, но привязка чанк→страница для 80–84 отдельно не проверялась); латинского Оуэна нет — *Death of Death* писан по-английски, так что этот пробел из §9.65 на Book IV не распространяется. Черновики и `14_` не правились.
+
+### 9.69 H3-карточка `12_` (2 Пет. 2:1): дословная сверка с Оуэном — сошлось всё, кроме страниц (30.10.2026)
+
+**Что проверялось.** Блок «Оуэн, Goold vol. X — PD-страницы и verbatim (2026-10-09)» в H3-карточке `12_HARD_TEXTS_EXTENT_CARDS.md` (строки 189–194) — это самый цитируемый кусок досье: на нём стоит вся позиция по 2 Пет. 2:1. Сверка по CCEL `deathofdeath.txt` chunk **87** (Chapter V; тот же чанк, из которого в §9.63 взяты три «uncertain»).
+
+| Что утверждает карточка | Что стоит у Оуэна (дословно) | Вердикт |
+|---|---|---|
+| ἀγοράζω «signifieth primarily the buying of things; translatiously, the redemption of persons» | «the word agorazo, here used, signifieth primarily the buying of things; translatitiously, the redemption of persons» | **верно, дословно** |
+| Ветхозаветное соответствие значит «any deliverance» (Deut. vii. 8, xv. 15, Jer. xv. 21) | «the word pdh in the Old Testament, answering thereunto, signifieth any deliverance, as **Deut. vii. 8, xv. 15, Jer. xv. 21**, with innumerable other places» | **верно, три адреса из трёх** |
+| «нет blood, death, price, or offering», как в 1 Кор. 6:20 и Откр. 5:9 | «here is no mention of blood, death, price, or offering of Jesus Christ… where the word agorazo is used to express it, as 1 Cor. vi. 20, Rev. v. 9» | **верно, дословно** |
+| Избавление по ст. 20 — «escaping of the pollutions of the world… through the knowledge of the Lord», о крови Агнца молчание | «affirms it to consist in the "escaping of the pollutions of the world"… "through the knowledge of the Lord and Saviour Jesus Christ;"… but of **washing in the blood of the Lamb, he is wholly silent**» | **верно, дословно** |
+| Итог: «there is no purchase mentioned of these false teachers, but a deliverance» | «Plainly, there is no pur[chase mentioned…]» (обрыв на границе чанка, продолжение — chunk 88) | **верно** (фраза разрезана границей чанка — цитировать только с проверкой chunk 88) |
+| «сам Оуэн начинает каждый пункт словами "it is most uncertain"» | «It is **most uncertain** whether Christ, as mediator, be here intended…»; «it is **most uncertain** that by buying of these false teachers is meant his purchasing of them with the ransom of his blood» | **верно** |
+| Это не H3-a и не H3-d: Оуэн не называет покупку мнимой, а переносит её с крови на познание истины | «plainly declaring that **their buying was only in respect of this separation from the world**, in respect of the enjoyment of the knowledge of the truth» | **верно** — карточка точно ловит, что Оуэн не «закрывает» текст, а переопределяет покупку |
+
+**Итог.** Семь утверждений из семи — верны, четыре дословно. H3-карточка — образцовый случай: она и не переоценивает Оуэна (не выдаёт *probable* за решённое), и точно передаёт механизм. Это третья карточка/карта корпуса, выдержавшая сверку по первоисточнику (§9.63 — `14_` §2.1/§2.3; §9.68 — `14_` §2.2).
+
+**Что осталось непроверенным в этом блоке.** Страницы «с. 362 (лист 378)» и «с. 363 (лист 379)» — привязка чанк→страница Goold не проверялась (у CCEL TXT страниц нет; в `14_` §0.1–0.2 карта есть, но для 86–87 отдельно не сходилась). Ссылки на `14` §2.6 в карточке корректны.
+
+**Смежное, что повторно не разбиралось.** Английская грамматика в H1-карточке (`12_`:90, «περὶ τῶν ἁμαρτιῶν… без артикля») — уже разобрана выше в этом файле (§9.5x, строки 2016–2024: артикль `τῶν` есть, и он же приведён в самой карточке). Здесь только отмечаю, что к H3 это не относится и H3 от этой ошибки чист.
+
+**Границы.** Проверялся один блок H3; остальные карточки H1–H11 (кроме уже пройденных H1/H2/H3) по первоисточникам не сверялись. `12_` не правился.
 
 ## 10. Дополнение круга 66 (27.10.2026): зеркало догнало дерево, и два отказа среды записаны отказами
 
