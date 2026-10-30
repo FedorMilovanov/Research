@@ -16,7 +16,7 @@ scripts/run_atonement_mutation_battery.py`, обход `docs/research/atonement/
 | Что | Файлов | Байт | Примечание |
 |---|---|---|---|
 | `docs/research/atonement/` — читательско-исследовательская полоса | 38 | 5 050 904 | 36 нумерованных разборов + `README.md` + таксономия |
-| `ИСКУПЛЕНИЕ/*.md` — корень отдела | 21 | 1 666 914 | от `00_CURRENT_AUTHORITY` до `18_SERIES_AUDIT`; `17_` один занимает 435 395, этот документ — 512 572 |
+| `ИСКУПЛЕНИЕ/*.md` — корень отдела | 21 | 1 674 398 | от `00_CURRENT_AUTHORITY` до `18_SERIES_AUDIT`; `17_` один занимает 435 395, этот документ — 520 056 |
 | под-ланы `ot` `nt` `fathers` `synthesis` | 56 | 2 417 029 | 18 / 16 / 12 / 10 файлов |
 | `ИСКУПЛЕНИЕ/synthesis/drafts/` — читательские черновики | 13 | 343 646 | 2038 переводов строки суммарно — прежнее определение (строки через split) давало 2051, разница по одному на файл без финального перевода; каждый 25,1–32 КБ (1 КБ = 1000 B) |
 | `ИСКУПЛЕНИЕ/data/` — корпус и индекс библиотеки | 2 | 1 539 997 | корпус 1 197 968 B, индекс 342 029 B; числа снимает scripts/atonement_reshoot_state.py --write, сверяет --check (шаг гейта); до этого в строке стоял срез круга 63 (1 145 507 B) |
@@ -2466,6 +2466,30 @@ A3 (`03_`, 66) приводит в кавычках: «которою Он ис�
 **Что проверить нельзя (и почему это не наша вина).** Утверждение H4 «три TR-издания расхождения не дают» и четырёхсторонняя сверка H5 (`χάριτι θεοῦ` у Scrivener 1894, Stephens 1550, Elzevir) требуют самих TR-изданий: в SBLGNT их нет, а печатные тексты в песочнице недоступны. Здесь SBLGNT может подтвердить только **своё** чтение — что и сделано. Пробел остаётся в списке §9.65 (аппарат H5).
 
 **Границы.** Проверены три утверждения двух карточек (H4 — два, H5 — одно). Остальные аппаратные утверждения H1–H11 не сверялись; H4/H5 в остальной части — не проверялись. `12_` не правился: правка — владельцу (в H4 перенести помету с `ἠγάπησεν` на `υἱόν` и заменить `⸂` на `⸀`).
+
+### 9.73 Оуэн, Chapter V целиком (chunks 88–89): `14_` §2.3 верен, карта Book IV закрыта (30.10.2026)
+
+**Зачем.** §9.63 сверял `14_` §2.3 по чанкам 86–87 (три неопределённости, две определённости, 1 Ин. 2:2), но сама карточка ссылается на **86–89**: шесть пунктов, которые противник обязан доказать, и разбор Евр. 10:29 оставались непроверенными. Теперь прочитаны чанки **88 и 89** — Chapter V кончается в 89, там же начинается Chapter VI (ответ Муру).
+
+**Сошлось.**
+
+| Утверждение `14_` §2.3 | Что стоит у Оуэна (дословно) | Вердикт |
+|---|---|---|
+| Покупка может быть «по претензии / церковной оценке», не по реальности; 2 Пар. 28:23 — «боги Дамаска поразили его», потому что Ахаз так думал | «…in respect of that estimation which others had of them… as the Scripture saith [of Ahaz], "**The gods of Damascus smote him**," because he himself so imagined and professed, 2 Chron. xxviii. 23»; «it is the perpetual course of the Scripture, to ascribe all those things to every one that is in the fellowship of the church which are proper to them only who are true spiritual members» | **верно, дословно** |
+| Покупка = избавление от иудейской или языческой слепоты через познание евангелия; «куплены в рабы» | «…but a deliverance, by God's dispensations towards them, **from the blindness of Judaism or Paganism**, by the knowledge of the gospel; whereby the Lord bought them to be servants to him, as their supreme head» | **верно, дословно** |
+| Шесть пунктов, которые противник должен доказать (i–vi), включая «реально искупленные могут погибнуть — против Откр. 14:4» | «…proved, — first, That by the Lord is meant Christ as mediator; secondly, That by buying is meant spiritual redemption by the blood of the Lamb; thirdly, That these false teachers were really and effectually so redeemed, and not only so accounted because of the church; fourthly, That those who are so redeemed may perish, contrary to the express Scripture, **Rev. xiv. 4**; fifthly, …therefore, Christ bought and redeemed all that ever did or shall perish; sixthly, That that which is common to all is a peculiar aggravation…» | **верно, все шесть, в том же порядке** |
+| Евр. 10:29 — commination на supposition; `suppositio nil ponit in esse` | «…the apostle doth neither declare what hath been nor assert what may be, but only adds a commination upon a supposition… **"suppositio nil ponit in esse."**»; параллель Деян. 27:31 (солдаты и моряки) — у Оуэна же | **верно, дословно** |
+| «Освящён кровью завета» = внешнее / крещальное / храмовое `hagiazo`, не внутреннее освящение избранных | «…these persons were baptized, (which ordinance among the ancients was sometimes called **photismos**, "illumination," sometimes **hagiasmos**, "sanctification,") wherein… they were **externally sanctified**, separated, and set apart»; «the various significations of the word **hagiazo**… to consecrate and set apart to any holy use, as 2 Chron. xxix. 33, Lev. xvi. 4»; «Paul useth in this epistle many words and phrases in a **temple sense**»; итог: «no true, real, internal, effectual sanctification… but only a **common external setting apart**» | **верно, дословно** |
+| Если читать положительно — тогда вера не плод избрания и святые падают окончательно; «это старые арминиане, не новые универсалисты» | «If the text be interpreted positively… then these two things will inevitably follow, — first, That faith and sanctification are **not the fruit of election**; secondly, That believers may **fall finally from Christ**; — neither of which I as yet find to be owned by our **new Universalists**, though both contended for by our **old Arminians**» | **верно, дословно** |
+| Рим. 14:15 / 1 Кор. 8:11 (86–87): брат = в нашем суждении верующий; погибель meritorious, не actual damnation | (chunk 87) «As he is said to be a brother, so Christ is said to die for him, even in that judgment which the Scripture allows to us of men… Christ died for all believers»; «That every such a one did actually perish eternally, as well as meritoriously, cannot be proved» | **верно** |
+
+**Единственная поправка — адрес ответа Муру.** `14_` §2.2 в скобках пишет «ответ Муру **chunk 90**». Фактически **заголовок Chapter VI** («An answer to the twentieth chapter of the book entitled, „The Universality of God's Free Grace“») стоит в **конце чанка 89**, сразу после «And thus, by the Lord's assistance, have I given you… a clear solution to all the arguments…». Тело ответа идёт с 90 — то есть «90» верно для тела и неверно для начала главы. Правка мелкая, но в карте локусов такие сдвиги на один чанк — та самая болезнь §9.65.
+
+**Ещё одна мелочь, стоящая пометки.** В том же месте Оуэн называет главу Мура по-разному: в тексте «chap. **xx[vi].**» (с редакторской скобкой), в заголовке Chapter VI — «the **twentieth** chapter». Если когда-нибудь понадобится точный адрес у Мура, числу из этого места верить нельзя — только сверке с самим Муром (Tegg-издание Оуэна даёт скобку, то есть и редактор не был уверен).
+
+**Итог по Book IV.** Теперь по первоисточнику пройдены все три «головы» `14_`: §2.1 (chunks 70, 78 — §9.63), §2.2 (80–84 — §9.68), §2.3 (86–89 — §9.63 + здесь). **Ни одной содержательной ошибки в `14_` не найдено**; единственный дефект за всю карту — сдвиг «chunk 90» на один. Это лучший результат в серии: карта, сделанная по первоисточнику, выдержала его повторную проверку целиком.
+
+**Границы.** Chapter VI (ответ Муру) по существу **не** сверялся — прочитано только его начало; страницы Goold для 88–89 не проверялись (в CCEL их нет). `14_` не правился: правку «chunk 90 → заголовок в 89» оставляю владельцу.
 
 ## 10. Дополнение круга 66 (27.10.2026): зеркало догнало дерево, и два отказа среды записаны отказами
 
