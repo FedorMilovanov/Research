@@ -16,7 +16,7 @@ scripts/run_atonement_mutation_battery.py`, обход `docs/research/atonement/
 | Что | Файлов | Байт | Примечание |
 |---|---|---|---|
 | `docs/research/atonement/` — читательско-исследовательская полоса | 38 | 5 050 904 | 36 нумерованных разборов + `README.md` + таксономия |
-| `ИСКУПЛЕНИЕ/*.md` — корень отдела | 21 | 1 582 800 | от `00_CURRENT_AUTHORITY` до `18_SERIES_AUDIT`; `17_` один занимает 435 395, этот документ — 428 458 |
+| `ИСКУПЛЕНИЕ/*.md` — корень отдела | 21 | 1 590 608 | от `00_CURRENT_AUTHORITY` до `18_SERIES_AUDIT`; `17_` один занимает 435 395, этот документ — 436 266 |
 | под-ланы `ot` `nt` `fathers` `synthesis` | 56 | 2 417 029 | 18 / 16 / 12 / 10 файлов |
 | `ИСКУПЛЕНИЕ/synthesis/drafts/` — читательские черновики | 13 | 343 646 | 2038 переводов строки суммарно — прежнее определение (строки через split) давало 2051, разница по одному на файл без финального перевода; каждый 25,1–32 КБ (1 КБ = 1000 B) |
 | `ИСКУПЛЕНИЕ/data/` — корпус и индекс библиотеки | 2 | 1 539 997 | корпус 1 197 968 B, индекс 342 029 B; числа снимает scripts/atonement_reshoot_state.py --write, сверяет --check (шаг гейта); до этого в строке стоял срез круга 63 (1 145 507 B) |
@@ -2104,6 +2104,39 @@ B3 (`07_dort-sufficiency-efficiency.md`, стр. 30) пересказывает 
 **Что это меняет.** Восемнадцать из девятнадцати исповедальных ссылок серии верны; одна (A2 на II.1–2) — нет, одна (II.5) требует дописать придаточное в двух черновиках из шести. Ни одна правка не касается богословского тезиса: речь о точности отсылки.
 
 **Границы.** Сверялись **только** Дорт II и только по английскому изданию 1840 с латинскими якорями. Не сверялись: латинский текст статей I–IX целиком (только якоря), WCF VIII (локаторы `15_` §D, страницы под `LOCATOR_HOLD`), 1689 и Гейдельберг (черновики ссылаются на них по номерам без содержательных утверждений), содержание Rejectio I и VI. Чужие файлы не менялись; `PUBLICATION_HOLD` и `LOCATOR_HOLD` на страницах изданий остаются.
+
+### 9.61 Латинский текст Дорт II.1–9 и Rejectio: сверка по первоисточнику (30.10.2026)
+
+**Источник.** *Canones Synodi Dordrechtanae*, латинский текст, воспроизведение на [cprc.co.uk/languages/canons_latin](https://cprc.co.uk/languages/canons_latin/) (Covenant Protestant Reformed Church). Текст канонов 1619 г., общественное достояние; издание — сетевое воспроизведение, не факсимиле. Контрольная сверка: латинский якорь II.5 в [`15_`](15_CALVIN_III24_AND_DORT_II_LOCATORS.md) §B.2 (Schaff, `creeds3.txt`, чанк 165) совпадает с этим текстом **дословно**, то есть перед нами не частная редакция.
+
+#### 1. Что подтвердилось
+
+| Артикул | Латынь (verbatim) | Что это подтверждает |
+|---|---|---|
+| **II.1** | «Deus non tantum est summe misericors, sed etiam summe justus. Postulat autem ejus justitia… ut peccata **nostra**, adversus infinitam ejus majestatem commissa, non tantum temporalibus, sed etiam æternis… pœnis puniantur: quas pœnas effugere non possumus, **nisi justitiæ Dei satisfiat**» | **слова «избранных» здесь нет**; ограничения круга в артикуле нет вовсе — A2 дописала его от себя (§9.48) |
+| **II.2** | «Cum vero ipsi satisfacere, et ab ira Dei nos liberare non possimus, Deus ex immensa misericordia Filium suum unigenitum **nobis Sponsorem** dedit, qui, ut pro nobis satisfaceret, peccatum et maledictio in cruce pro nobis, seu **vice nostra**, factus est» | «for our surety» = *Sponsorem* — это **вторая**, не первая статья; A2 сдвинула поручительство на I |
+| **II.3** | «Hæc mors Filii Dei est **unica** et perfectissima pro peccatis victima et satisfactio, infiniti valoris et pretii, **abunde sufficiens** ad totius mundi peccata expianda» | оговорка A1 (178) о *unica* → «only» верна **на уровне латыни**, а не только перевода |
+| **II.4** | «persona, quæ eam subiit, non tantum est **verus et perfecte sanctus homo**, sed etiam unigenitus Dei Filius, ejusdem aeternæ et infinitæ cum Patre et Spiritu S. essentiæ, **qualem nostrum Servatorem esse oportebat**» | Богочеловечество посредника — **четвёртая** статья; A2 приписала его II.2, а по сути взяла формулу Кальвина II.12, а не Дорта |
+| **II.5** | «Quæ promissio **omnibus populis et hominibus, ad quos Deus pro suo beneplacito mittit Evangelium**, promiscue et indiscriminatim annunciari **et proponi** debet cum resipiscentiæ et fidei mandato» | ограничивающее придаточное стоит **в самой статье**, между «всем» и «без различия» (§9.60); в латинском якоре черновиков пропущено ещё и *et proponi* — «объявлять **и предлагать**» |
+| **II.6** | «non fit hoc hostiæ Christi in cruce oblatæ **defectu, vel insufficientia**, sed **propria ipsorum culpa**» | пересказ B3 точен |
+| **II.8** | «…efficacia sese exereret in omnibus electis, ad **eos solos** fide justificante donandos… **eos omnes et solos**, qui ab æterno ad salutem electi, et a Patre ipsi dati sunt, efficaciter redimeret» | «всех тех и только тех» у B6 — не интерпретация, а прямой перевод *eos omnes et solos* |
+
+#### 2. Rejectio Errorum: состав и то, что цитирует A1
+
+Отвержений во Второй главе — **семь** (Rejectio I–VII), как и записано в [`16_`](16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md) §1.1, где отмечено, что издание 1840 их не содержит, а сообщение источника о «восьми» не подтверждается.
+
+- **Rejectio I** — против тех, кто учит, что Отец predestined Сына к смерти «sine certo ac definito consilio quemquam nominatim salvandi», то есть без определённого намерения спасти конкретных людей. Это и есть дортский ответ на «голую достаточность».
+- **Rejectio VI** — против тех, кто «impetrationis et applicationis distinctionem usurpant», чтобы внушить, будто Бог «omnibus hominibus ex æquo ea beneficia voluisse conferre», а различие — от свободной воли человека.
+
+A1 (178) ссылается на «Отвержение I, VI» — **номера существуют и по содержанию подходят** к тому, о чём A1 говорит (различение «сделано/применено» и его злоупотребление). Это не подтверждение цитаты, а подтверждение адреса.
+
+#### 3. Побочный вывод: откуда в A2 «истинный Бог и истинный человек»
+
+Формула A2 «Посредник должен быть истинным Богом и истинным человеком» — не дортская. У Дорта об этом говорит II.4, и говорит иначе: «verus et perfecte sanctus homo… unigenitus Dei Filius». Дословная формула «истинный Бог и истинный человек» — кальвиновская, из *Institutes* II.12 (§9.56: «to be very God and very man»). То есть в A2 на одном участке текста сложились три источника: Кальвин II.12 (формула), Дорт II.2 (поручительство) и Дорт II.4 (Богочеловечество), причём двум последним приписаны номера I и II. Это уточняет диагноз §9.48: не «сдвиг на статью», а **контаминация двух авторов с последующим сдвигом нумерации**.
+
+**Итог.** Латинский текст подтверждает всё, что было установлено по английскому 1840, и добавляет три вещи: (а) в II.1 нет ни слова об «избранных» — это вставка A2; (б) ограничивающее придаточное II.5 стоит внутри самой формулы; (в) формула «истинный Бог и человек» в Дорте отсутствует — она кальвиновская. Ошибок в латинских цитатах черновиков не найдено: единственный латинский якорь (II.5) точен, кроме пропуска *et proponi* под многоточием.
+
+**Границы.** Латинский текст взят из сетевого воспроизведения; факсимиле издания 1619 г. и латинская страница Шаффа (чанк 165) в этом проходе не открывались — совпадение с якорем `15_` §B.2 проверено по тексту файла, а не по изображению. Английский Scott 1841 (Rejectio по страницам) не сверялся: содержание отвержений передано по латыни. Удержания не снимались.
 
 ## 10. Дополнение круга 66 (27.10.2026): зеркало догнало дерево, и два отказа среды записаны отказами
 
