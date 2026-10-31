@@ -16,7 +16,7 @@ scripts/run_atonement_mutation_battery.py`, обход `docs/research/atonement/
 | Что | Файлов | Байт | Примечание |
 |---|---|---|---|
 | `docs/research/atonement/` — читательско-исследовательская полоса | 38 | 5 050 904 | 36 нумерованных разборов + `README.md` + таксономия |
-| `ИСКУПЛЕНИЕ/*.md` — корень отдела | 21 | 2 066 956 | от `00_CURRENT_AUTHORITY` до `18_SERIES_AUDIT`; `17_` один занимает 435 395, этот документ — 912 594 |
+| `ИСКУПЛЕНИЕ/*.md` — корень отдела | 21 | 2 072 085 | от `00_CURRENT_AUTHORITY` до `18_SERIES_AUDIT`; `17_` один занимает 435 395, этот документ — 917 723 |
 | под-ланы `ot` `nt` `fathers` `synthesis` | 56 | 2 424 428 | 18 / 16 / 12 / 10 файлов |
 | `ИСКУПЛЕНИЕ/synthesis/drafts/` — читательские черновики | 13 | 343 646 | 2038 переводов строки суммарно — прежнее определение (строки через split) давало 2051, разница по одному на файл без финального перевода; каждый 25,1–32 КБ (1 КБ = 1000 B) |
 | `ИСКУПЛЕНИЕ/data/` — корпус и индекс библиотеки | 2 | 1 541 583 | корпус 1 199 554 B, индекс 342 029 B; числа снимает scripts/atonement_reshoot_state.py --write, сверяет --check (шаг гейта); до этого в строке стоял срез круга 63 (1 145 507 B) |
@@ -44,7 +44,7 @@ Janeway 1826–27, Bacon 1855. Ярлык *limited atonement* фиксирует
 
 **2.2. Дорт по первоисточникам, а не по хрестоматиям.** Прочитаны и залокаторлены три независимых издания
 второго раздела: английский официальный перевод 1619 г. («abundantly sufficient to expiate the sinnes of the
-whole world»; «promiscuously, and without distinction»; «saving efficacy… in all the elect»), латинский текст
+whole world»; «promiscuously, and without distinction»; «the lively and saving efficacy … should manifest it self in all the elect» (у Шаффа на этом месте — `exert itself`, поэтому цитата без этих слов не различает издания)), латинский текст
 по Schaff III (Rejectio II.1/II.6, с. 577) и *Acta Synodi Nationalis* 1620 г. (гл. II: «eos omnes & solos…
 **efficaciter redimeret**», вставка «fide [quam… ipfis morte sua acquisivit] donaret», печатные сс. 78–96 по
 *judicia* делегаций). Семь отвержений прочитаны целиком по изданию Скотта/Миллера 1856 г. Отдельно зафиксировано
@@ -3839,6 +3839,39 @@ A3 (`03_`, 66) приводит в кавычках: «которою Он ис�
 **Урок, который стоит записать рядом с §9.121.** Там я поймал неполный список различий, здесь — раздутый счёт проблем. Обе ошибки одного рода: **число не сверено с тем, что оно считает**, и в обоих случаях неверное объяснение выглядело правдоподобно. Первое объяснение («два прогона») ничего не проверяло — я подогнал причину под наблюдение вместо того, чтобы прочитать код. Правильный порядок обратный: смотреть код, потом объяснять число.
 
 **Гейт.** Тесты — 70 OK; полный гейт под-корпуса — **14/14**; корневой круг — зелёный.
+
+### 9.127 Дорт-контроль сверен по своему первоисточнику — и в аудите нашлась цитата, стирающая издание (30.10.2026)
+
+`nt/13_DORT_HISTORICAL_CONTROL.md` держит четыре утверждения Дорта (II.3, II.5, II.6, II.8) и ссылается на локальный первоисточник — `16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md` (английский текст издания Covenant London 1840 г.). Сверка проведена по нему, а не по памяти и не по хрестоматии.
+
+**Четыре цитаты дословны:**
+
+| В `13_` | В `16_` Article | Совпадение |
+|---|---|---|
+| II.3 «abundantly sufficient to expiate the sins of the whole world» | III | дословно |
+| II.5 «to all nations, and to all persons promiscuously and without distinction» | V | дословно |
+| II.6 «not owing to any defect or insufficiency in the sacrifice offered by Christ upon the cross» | VI | дословно |
+| II.8 «all those, and those only, who were from eternity chosen to salvation, and given to him by the Father» | VIII | дословно |
+
+**Отрицательное утверждение тоже верно.** `13_`: «Rejection II.5: его английский текст отсутствует в `16_`». Проверено: `16_` §1.1 прямо говорит, что Rejection of Errors в этом издании нет. То есть `13_` не выдумывает пробел, а ссылается на зафиксированную границу объекта.
+
+**Зато выяснилось, что у Дорта в этом корпусе три разных английских текста, и они расходятся в словах.** Это не разночтения рукописей, а три перевода, и путать их нельзя:
+
+| Статья | 1840, Covenant London (`16_`) | Schaff/CCEL (`15_` §B.5) | 1619, *Judgement of the Synode* (`34_` S105) |
+|---|---|---|---|
+| II.3 | «the **only** and most perfect sacrifice … for **sin**» | «**a single** and most perfect sacrifice … for **sins**» | «the **onely** and most perfect sacrifice … for **sinnes**» |
+| II.5 | «to all nations, and to all persons **promiscuously and without distinction**» | «**promiscuously and indiscriminately**» | «**promiscuously, and without distinction**, to bee declared» |
+| II.8 | «should **extend to** all the elect» | «should **exert itself in** all the elect» | «should **manifest it self in** all the elect» |
+
+Латинское основание различия известно и записано: `unica` даёт «only» / «single» / «onely»; для II.3 карточка `16_` §1.2 прямо предписывает брать «only».
+
+**И здесь я поймал собственную ошибку этого же аудита.** В §2.2 документа `18_` официальный перевод 1619 г. цитировался сжато: «saving efficacy… in all the elect». Формально это не подлог — оба края фразы в тексте 1619 г. есть, — но многоточие проглотило ровно те слова, которые отличают издание: `should manifest it self` (1619) против `should exert itself` (Schaff). Цитата, которая не различает издания, не может служить доказательством «читал именно это издание». Заменено на полное чтение 1619 г. с явной пометкой о расхождении с Шаффом.
+
+**Проверка на смешение.** Прогон по `ИСКУПЛЕНИЕ/` трёх маркеров («only and most perfect», «single and most perfect», «onely and most perfect») и двух форм II.5 («indiscriminately», «without distinction») показал: каждая форма встречается только в своём файле — 1840 в `16_`, Шафф в `15_`, 1619 в `34_`. Гибридных цитат нет.
+
+**Чего это не дало.** Ни одного удержания не снято: страницы Скотта 1841, латинский контроль и Rejection of Errors остаются в `15_` §B.5–B.6 как отдельный объект, а `publicationState` по-прежнему `BLOCKED`. Прибавка в другом: четыре цитаты `13_` теперь проверены по первоисточнику, а в аудите убрана цитата, которая стирала различие изданий.
+
+**Гейт.** Полный гейт под-корпуса — 14/14; корневой круг — зелёный.
 
 ## 10. Дополнение круга 66 (27.10.2026): зеркало догнало дерево, и два отказа среды записаны отказами
 
