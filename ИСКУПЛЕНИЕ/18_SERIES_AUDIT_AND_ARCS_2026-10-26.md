@@ -16,7 +16,7 @@ scripts/run_atonement_mutation_battery.py`, обход `docs/research/atonement/
 | Что | Файлов | Байт | Примечание |
 |---|---|---|---|
 | `docs/research/atonement/` — читательско-исследовательская полоса | 38 | 5 050 904 | 36 нумерованных разборов + `README.md` + таксономия |
-| `ИСКУПЛЕНИЕ/*.md` — корень отдела | 21 | 1 874 819 | от `00_CURRENT_AUTHORITY` до `18_SERIES_AUDIT`; `17_` один занимает 435 395, этот документ — 720 477 |
+| `ИСКУПЛЕНИЕ/*.md` — корень отдела | 21 | 1 883 734 | от `00_CURRENT_AUTHORITY` до `18_SERIES_AUDIT`; `17_` один занимает 435 395, этот документ — 729 392 |
 | под-ланы `ot` `nt` `fathers` `synthesis` | 56 | 2 417 029 | 18 / 16 / 12 / 10 файлов |
 | `ИСКУПЛЕНИЕ/synthesis/drafts/` — читательские черновики | 13 | 343 646 | 2038 переводов строки суммарно — прежнее определение (строки через split) давало 2051, разница по одному на файл без финального перевода; каждый 25,1–32 КБ (1 КБ = 1000 B) |
 | `ИСКУПЛЕНИЕ/data/` — корпус и индекс библиотеки | 2 | 1 540 111 | корпус 1 198 082 B, индекс 342 029 B; числа снимает scripts/atonement_reshoot_state.py --write, сверяет --check (шаг гейта); до этого в строке стоял срез круга 63 (1 145 507 B) |
@@ -3173,6 +3173,33 @@ A3 (`03_`, 66) приводит в кавычках: «которою Он ис�
 **5. Граница с Section XLV.** Section XLV (1 Тим. 2:4) начинается на **91** — совпадает с локатором досье `21_` §1 («Section XLV, стр. 91–96», чанки 45–47). Повторно её не читаю: она верифицирована вербатим в `21_`; расхождений с локусом нет.
 
 **Границы.** OCR. Уитби, Лимборх, Act. Synod — как у Гилла. LXX — SWETE (по B); замечание о 3 Цар. 11:4 относится к этому тексту, а не ко всем греческим свидетелям. `12_`, `14_`, `21_`, `23_` не правились.
+
+### 9.105 Gill Section XLVII, окончание (Тит. 2:11–12, с. 97–99): «они не предлагали её никому», и сдвиг `πάντας` → `ἡμᾶς` (30.10.2026)
+
+**Что читалось.** Чанк **48**: конец Section XLVII на **97–99** (то, что в §9.90 осталось за обрывом) и начало Section XLVIII на **98–99**.
+
+**1. Пункт 3 — «все люди» и довод от факта.** После разбора смысла Гилл переходит к проверке фактом: «The whole Gentile world, for many hundred years, was in darkness… in the times of the apostles, when the doctrine of the gospel appeared the most illustrious… **it reached not every individual person**, nor has it in ages since, nor does it in ours, no, **not in our own nation; nor in this great city**, where the gospel is most fully preached». И вывод: «since, then, **matter of fact stands incontestably against this sense of the words**, we must look out for another». Дальше два его чтения: «**all sorts of men**, men of every rank and condition of life, high and low, rich and poor, bond and free, masters and servants» — и это подтверждается контекстом, где апостол велит учить **рабов** (2:9–10), «that they may adorn the doctrine of God our Saviour in all things»; либо, с Хаммондом, — язычники (свет, прежде светивший только в Иудее, воссиял всем).
+Проверка по S1: Тит. 2:9 `**Δούλους** ἰδίοις δεσπόταις ὑποτάσσεσθαι **ἐν πᾶσιν**…`, 2:10 `ἵνα τὴν διδασκαλίαν… **κοσμῶσιν ἐν πᾶσιν**` — контекст «рабов» и «во всём» стоит в тексте, так что чтение «все чины» опирается на ближайший контекст, а не на схему. (Замечание «nor in this great city» — Лондон, где он проповедовал; это датируемая деталь, а не вечный аргумент, и её надо помечать как таковую.)
+
+**2. Сдвиг `πάντας` → `ἡμᾶς` — самый сильный аргумент раздела, и он проверяем.** «It is easy to observe, that **when he comes to speak of redemption**… in ver. 14, he makes use of a **different form of expression**: where he says, *who gave himself for us*, **not for them, or for all**; that he might redeem **us**, not them, or all men, from all iniquity; and purify unto himself a **peculiar, distinct people**, zealous of good works».
+Проверка по S1 — сдвиг виден в самих формах:
+- 2:11 — `ἡ χάρις τοῦ θεοῦ σωτήριος **πᾶσιν ἀνθρώποις**`;
+- 2:14 — `ὃς ἔδωκεν ἑαυτὸν **ὑπὲρ ἡμῶν** ἵνα λυτρώσηται **ἡμᾶς**… καὶ καθαρίσῃ ἑαυτῷ **λαὸν περιούσιον** ζηλωτὴν καλῶν ἔργων`.
+То есть от «всех людей» в стихе о явлении благодати апостол переходит к «нам» и «народу особенному» в стихе об искуплении. Это не схема, а наблюдение над текстом: две группы выражены по-разному в двух соседних стихах. Аппарат у 2:12 и 2:14 пуст; у 2:11 единственный вариант — артикль при θεοῦ (`#RP`), отмеченный в §9.90.
+
+**3. Главное для линии «offer»: «они не предлагали её никому».** «The argument above cited, is founded on a manifest falsehood, that the apostles **tendered the saving grace of God to all men, without exception; whereas they tendered it to none, but preached the gospel to all**, without any distinction of persons who came to hear it. The Arminians frequently argue **from an universal offer of the gospel to an universal redemption**; such whose ministrations run in the strain of **offers and tenders**, would do well to consider this, and deliver themselves from this argument, **who only are pinched by it**».
+Это **самое сильное** анти-«офферное» место в *Cause*, и оно устроено иначе, чем два прежних:
+- XXXIV (Рим. 5:18, с. 67–68) — «justification… is **not offered**… but the application of it» (§9.93): спор о том, что такое оправдание;
+- XL (2 Кор. 5:19, с. 80–81) — «not an offer… but **a proclamation or declaration of peace**» (§9.91, §9.100): спор о том, что за речевой акт;
+- XLVII (Тит. 2:11, с. 98) — «they **tendered it to none**, but preached the gospel to all»: спор о том, что делали апостолы, плюс **методологическое** замечание, что из всеобщего оффера вообще не следует всеобщее искупление.
+Третье место ценнее двух первых: в нём различение «предлагать/проповедовать» не постулируется, а применяется к практике, и сразу отделено от «проповедовали всем без различия лиц». Для B5 и C-12 это готовая формула, и она стоит у Гилла **в трёх разных разборах и трёх разных рубриках** (оправдание, примирение, благодать), то есть это не случайная фраза.
+
+**4. Пункт 4 — `παιδεύουσα ἡμᾶς`.** «Observe, the apostle does not say, teaching **them**, all men, to whom it appeared, which is **the sad mistake of a learned writer**; but teaching **us**, to whom it has come, not in word only, but in power». Проверка по S1: Тит. 2:12 — `**παιδεύουσα ἡμᾶς** ἵνα ἀρνησάμενοι τὴν ἀσέβειαν…` — местоимение первого лица стоит в причастии; аппарат пуст. То есть «все люди» из 2:11 не становятся объектом научения в 2:12: объект — «мы». Ссылка его противника (Уитби, p. 123; ed. 2. 120) на «absurdity», будто часть христиан не обязана к этим обязанностям, снята тем же ходом, что в §9.101: обязанность бывает и от закона природы, а не только от явления благодати.
+
+**5. Section XLVIII (Евр., с. 98–99) начат — и это рамка для всего еврейского блока.** Возражение (с отсылкой к Барроу): «the Epistle to the Hebrews was manifestly written to prevent the apostacy of the believing Jews; and… it was written **against the doctrine of perseverance**, and… contains many cogent arguments against that doctrine». Ответ 1: «it is **very awkwardly expressed**… that this epistle should be written to prevent the apostacy… and yet written against the doctrine of the saints' perseverance, since **all means to prevent apostacy tend to establish and secure perseverance**»; церковь, как и другие, «consisted of **real and nominal** professors»; и в худшем случае эти увещания значат «only imply a possibility or danger… considered in themselves, and if left to themselves… but **prove no matter of fact**».
+Это та же тройка, что в §9.97 и §9.101 (адресат / средство / факт), и здесь она объявлена **принципом** чтения целого послания — то есть для карточек по Евр. 2:9, 6:4–6 и 10:26–29 рамка задаётся именно Section XLVIII, а не отдельными разборами. Разбор продолжится в чанке 49 (с. 99+), но текст Section XLIX (Евр. 2:9) уже прочитан в §9.92 — сшивка будет прямой.
+
+**Границы.** OCR. Уитби, Хаммонд, Барроу — как у Гилла, по оригиналам не проверялись (Барроу цитируется Гиллом по чужой передаче — «as the excellent Dr. Barrow used to say»). Аппарат S7 — издания, не рукописи. `12_`, `14_`, `21_`, `23_` не правились.
 
 ## 10. Дополнение круга 66 (27.10.2026): зеркало догнало дерево, и два отказа среды записаны отказами
 
