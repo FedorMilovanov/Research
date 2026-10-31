@@ -375,5 +375,34 @@ class SignTests(unittest.TestCase):
         self.assertEqual(len(by_ref), 4472)
 
 
+class TregellesAttributionTests(unittest.TestCase):
+    """Слой атрибуции S7 проверяется независимым текстом S8 (Tregelles)."""
+
+    def test_s8_verses_parsed(self):
+        import tregelles_attribution as treg
+        self.assertEqual(len(treg.s8_verses()), 7958)
+        self.assertEqual(treg.s8_verses()["Мф 1:1"][:3], ["biblos", "genesews", "ihsou"])
+
+    def test_movable_nu_inside_brackets(self):
+        import tregelles_attribution as treg
+        self.assertEqual(treg.reading_words("ἤνοιξε[ν]"), ["hnoixen"])
+        self.assertEqual(treg.reading_words("ἀπειθοῦσι[ν]"), ["apeiyousin"])
+
+    def test_orthographic_tolerance_is_not_semantic(self):
+        import tregelles_attribution as treg
+        self.assertTrue(treg.close_enough("iwannou", "iwanou"))
+        self.assertTrue(treg.close_enough("daueid", "dauid"))
+        self.assertFalse(treg.close_enough("ou", "ouk"))
+
+    def test_attribution_pins(self):
+        import tregelles_attribution as treg
+        result = treg.check_tregelles_attribution()
+        self.assertEqual(result["total"], 6931)
+        self.assertEqual(result["stats"]["совпало"], 6753)
+        self.assertEqual(result["stats"]["разошлось: содержательное"], 6)
+        self.assertEqual(sorted(r[0] for r in result["mismatches"] if r[3] == "содержательное"),
+                         ["2 Кор 1:7", "Ин 8:41", "Лк 12:28", "Мк 10:51", "Мф 25:27", "Откр 13:3"])
+
+
 if __name__ == "__main__":
     unittest.main()

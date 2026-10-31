@@ -110,6 +110,12 @@ def computed_variants() -> dict:
     verses = s1_verses()
     sign_rows = {ref: (s1_sign_spans(rows), len(app.at(ref))) for ref, rows in verses.items()}
     sign_bad = sorted(ref for ref, (a, b) in sign_rows.items() if a != b)
+    from tregelles_attribution import check_tregelles_attribution
+    treg = check_tregelles_attribution()
+    treg_pin = {"stats": treg["stats"], "total": treg["total"],
+                "contentMismatchRefs": sorted(r[0] for r in treg["mismatches"] if r[3] == "содержательное"),
+                "scope": "Атрибуция S7 изданиям против текста S8 (Tregelles); орфографический допуск, "
+                         "артефакты деления стиха отделены от содержательных расхождений. Рукописей не касается."}
     sign_agreement = {"s1Positions": sum(a for a, _ in sign_rows.values()),
                       "s7Entries": sum(b for _, b in sign_rows.values()),
                       "versesCompared": len(sign_rows),
@@ -125,7 +131,8 @@ def computed_variants() -> dict:
                                    "scope": "Mechanical word-sequence comparison, not complete or certified NA27/NA28 divergence. Abbreviated readings need interpretation."},
             "wordEquality": matrix, "controls": controls,
             "offerEqualInAllThreeTR": sum(all(matrix[ref].values()) for ref in OFFER_REFS),
-            "signAgreement": sign_agreement}
+            "signAgreement": sign_agreement,
+            "tregellesAttribution": treg_pin}
 
 
 def main() -> int:
@@ -139,7 +146,8 @@ def main() -> int:
     if actual != registry()["verifiedVariantControls"]:
         print("FAIL: word-level variant controls differ from SSOT; use --dump")
         return 1
-    print(f"PASS: {len(actual['wordEquality'])} S1/TR verse controls, explicit Heb 2:9 S7 attribution, 5 S8 controls")
+    print(f"PASS: {len(actual['wordEquality'])} S1/TR verse controls, explicit Heb 2:9 S7 attribution, 5 S8 controls, "
+          f"{actual['tregellesAttribution']['total']} S7->S8 attribution checks")
     return 0
 
 
