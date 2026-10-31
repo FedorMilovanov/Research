@@ -163,6 +163,29 @@ def segments(raw: str) -> list[str]:
     return out
 
 
+def unique_paths(paths: list[Path]) -> list[Path]:
+    """Один файл — одна проверка.
+
+    `04_` и `12_` попадают в список дважды: жёстко зашитыми ниже и через
+    `NT_EXTRA_CARDS` от `run_audit.py`, причём в разном написании (абсолютное
+    и относительное от корня). Сравнение путей как строк этого не видит, файл
+    проверялся дважды, и каждая его ошибка печаталась два раза — счёт проблем
+    в гейте был больше их числа. Сравниваем по `resolve()`, сохраняя порядок.
+    """
+    seen: set[Path] = set()
+    out: list[Path] = []
+    for path in paths:
+        try:
+            key = path.resolve()
+        except OSError:
+            key = path
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(path)
+    return out
+
+
 def main() -> int:
     root = witness_dir("S1")
     lemma_count, blob = load_corpus(root)
@@ -185,10 +208,10 @@ def main() -> int:
     extra += [Path(x) for x in os.environ.get("NT_EXTRA_CARDS", "").split(":") if x]
     for e in extra:
         if e.is_file():
-            if e not in files:
-                files.append(e)
+            files.append(e)
         else:
             failures.append(f"NT_EXTRA_CARDS: required file missing: {e}")
+    files = unique_paths(files)
     for md in files:
         text = strip_fences(md.read_text(encoding="utf-8"))
         for raw in re.findall(r"`([^`]+)`", text):

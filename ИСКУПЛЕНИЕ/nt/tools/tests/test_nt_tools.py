@@ -303,6 +303,24 @@ class ParserAndExitTests(unittest.TestCase):
         with self.assertRaises(ValueError): manuscripts.main(["--verfiy"])
 
 
+class UniquePathsTests(unittest.TestCase):
+    """Один файл обязан проверяться один раз, как бы его ни назвали."""
+
+    def test_same_file_absolute_and_relative_is_one(self):
+        import os
+        base = Path(citations.CARD_DIR)
+        abs_path = base / "09_NT_EXTENT_THREE_COLUMN_TABLE.md"
+        rel_path = Path(os.path.relpath(abs_path, Path.cwd()))
+        self.assertNotEqual(str(abs_path), str(rel_path))
+        self.assertEqual(len(citations.unique_paths([abs_path, rel_path])), 1)
+
+    def test_distinct_files_both_kept_in_order(self):
+        base = Path(citations.CARD_DIR)
+        a = base / "09_NT_EXTENT_THREE_COLUMN_TABLE.md"
+        b = base / "11_NT_LXX_COLLATION.md"
+        self.assertEqual(citations.unique_paths([a, b, a]), [a, b])
+
+
 class RunnerTests(unittest.TestCase):
     def test_default_no_implicit_fetch_and_genesis_in_scope(self):
         names = [name for name, argv in run_audit.commands()]
