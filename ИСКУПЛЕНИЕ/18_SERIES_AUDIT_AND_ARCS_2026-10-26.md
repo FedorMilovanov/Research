@@ -16,7 +16,7 @@ scripts/run_atonement_mutation_battery.py`, обход `docs/research/atonement/
 | Что | Файлов | Байт | Примечание |
 |---|---|---|---|
 | `docs/research/atonement/` — читательско-исследовательская полоса | 38 | 5 050 904 | 36 нумерованных разборов + `README.md` + таксономия |
-| `ИСКУПЛЕНИЕ/*.md` — корень отдела | 21 | 1 670 755 | от `00_CURRENT_AUTHORITY` до `18_SERIES_AUDIT`; `17_` один занимает 435 395, этот документ — 516 413 |
+| `ИСКУПЛЕНИЕ/*.md` — корень отдела | 21 | 1 675 493 | от `00_CURRENT_AUTHORITY` до `18_SERIES_AUDIT`; `17_` один занимает 435 395, этот документ — 521 151 |
 | под-ланы `ot` `nt` `fathers` `synthesis` | 56 | 2 417 029 | 18 / 16 / 12 / 10 файлов |
 | `ИСКУПЛЕНИЕ/synthesis/drafts/` — читательские черновики | 13 | 343 646 | 2038 переводов строки суммарно — прежнее определение (строки через split) давало 2051, разница по одному на файл без финального перевода; каждый 25,1–32 КБ (1 КБ = 1000 B) |
 | `ИСКУПЛЕНИЕ/data/` — корпус и индекс библиотеки | 2 | 1 540 072 | корпус 1 198 043 B, индекс 342 029 B; числа снимает scripts/atonement_reshoot_state.py --write, сверяет --check (шаг гейта); до этого в строке стоял срез круга 63 (1 145 507 B) |
@@ -2857,6 +2857,45 @@ Workflow получил один новый греп (37 всего) — на г
 - Проверка сделана по переводу ANF (New Advent, перепечатка ANF01) в сопоставлении с латынью Харви; печатный том ANF не листал.
 - Маргиналию «MASS.» на с. 121 я не перечитывал с изображения — вывод о номере построен на совпадении текста, а не на чтении цифры.
 - Английский перевод XX века (Sources Chrétiennes и др.) не привлекал.
+
+Гейты: `atonement_claim_register.py --check` — 914 доводов, расхождений 0; `atonement_reshoot_state.py --check` — PASS (130/121, 553 штампа); `validate_atonement_corpus_integrity.py` — PASS (21 корневой файл, 4 под-корпуса / 53 файла, 38 полос, C-01…C-25); `publicationEligible=false`.
+
+---
+
+### 9.65 Ириней V.1.1: латынь сверена с переводом ANF — совпадение полное, но перевод сглаживает *suadela* (31.10.2026)
+
+**Зачем этот круг.** §9.62 закрыл F-4 по латыни. Осталось проверить две вещи, которые в такой работе проверяются отдельно: (1) что прочитанная страница Харви — действительно тот абзац, который в серии называют «V.1.1»; (2) что английский перевод, на который серия ссылалась до сих пор, передаёт латынь без смыслового сдвига.
+
+#### 1. Отождествление абзаца
+
+Перевод ANF, V.1.1 (New Advent, *Against Heresies* V.1):
+
+> «…the mighty Word, and very man, who, **redeeming us by His own blood in a manner consonant to reason, gave Himself as a redemption for those who had been led into captivity**. And since the **apostasy tyrannized over us unjustly**, and, though we were by nature the property of the omnipotent God, alienated us contrary to nature… the Word of God… did righteously turn against that apostasy, and **redeem from it His own property, not by violent means**… **but by means of persuasion**… so that neither should justice be infringed upon, nor the ancient handiwork of God go to destruction.»
+
+Латынь Харви (с. 315, см. §9.62): «…sanguine suo rationabiliter redimens nos, redemptionem semetipsum dedit pro his, qui in captivitatem ducti sunt. Et quoniam injuste dominabatur nobis apostasia… ea quæ sunt sua redimens ab ea, non cum vi… sed secundum suadelam…». Соответствие пословное, абзац тот же. **Нумерация книги V у Харви совпадает с Массю (V.1.1), в отличие от книги III, где сдвиг плавает** (§9.60, §9.64).
+
+#### 2. Где перевод сдвигает смысл
+
+Латынь: «…**sed secundum suadelam, quemadmodum decebat Deum suadentem, et non vim inferentem**, accipere quæ vellet».
+
+ANF: «…but by means of persuasion, **as became a God of counsel, who does not use violent means** to obtain what He desires».
+
+«Deum suadentem» — «Бога, который убеждает», причастие от *suadere*. Переводчик заменил его на существительное «God of counsel» («Бог совета»), и причастие действия превратилось в титул. Смысл не искажён до противоположного, но именно тот элемент, ради которого место цитируют — **Бог убеждает, а не принуждает**, — в переводе ослаблен до описательной формулы.
+
+Это ровно строка F-15 таблицы («ANF-перевод = текст отца»): английский текст XIX века сглаживает, и значимые места надо сверять с латынью. Здесь сглаживание не богословское, а стилистическое, но проверяемое.
+
+#### 3. Что добавить к правке F-4
+
+К формулировке из §9.62 (правка `09_` :37) добавить оговорку о переводе:
+
+> «…русское/английское „по убеждению“ передаёт *secundum suadelam*; ANF сглаживает: „as became a God of counsel“ — при цитировании держаться латыни, а не перевода.»
+
+#### 4. Границы
+
+- Английский текст — по New Advent (перепечатка ANF01, 1885), печатный том ANF не листал.
+- Латынь — по Харви, лист 325; визуальной сверки страницы нет.
+- Греческого текста V.1.1 (кроме фрагмента § 2 у Феодорита) в проверенных каналах нет; вопрос, каким греческим словом стояла *suadela*, в этом круге не решён.
+- Прочитан только том II Харви.
 
 Гейты: `atonement_claim_register.py --check` — 914 доводов, расхождений 0; `atonement_reshoot_state.py --check` — PASS (130/121, 553 штампа); `validate_atonement_corpus_integrity.py` — PASS (21 корневой файл, 4 под-корпуса / 53 файла, 38 полос, C-01…C-25); `publicationEligible=false`.
 
