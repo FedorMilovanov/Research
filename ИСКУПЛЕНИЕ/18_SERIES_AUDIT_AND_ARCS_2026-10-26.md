@@ -16,7 +16,7 @@ scripts/run_atonement_mutation_battery.py`, обход `docs/research/atonement/
 | Что | Файлов | Байт | Примечание |
 |---|---|---|---|
 | `docs/research/atonement/` — читательско-исследовательская полоса | 38 | 5 050 904 | 36 нумерованных разборов + `README.md` + таксономия |
-| `ИСКУПЛЕНИЕ/*.md` — корень отдела | 21 | 1 696 823 | от `00_CURRENT_AUTHORITY` до `18_SERIES_AUDIT`; `17_` один занимает 435 395, этот документ — 542 481 |
+| `ИСКУПЛЕНИЕ/*.md` — корень отдела | 21 | 1 705 204 | от `00_CURRENT_AUTHORITY` до `18_SERIES_AUDIT`; `17_` один занимает 435 395, этот документ — 550 862 |
 | под-ланы `ot` `nt` `fathers` `synthesis` | 56 | 2 417 029 | 18 / 16 / 12 / 10 файлов |
 | `ИСКУПЛЕНИЕ/synthesis/drafts/` — читательские черновики | 13 | 343 646 | 2038 переводов строки суммарно — прежнее определение (строки через split) давало 2051, разница по одному на файл без финального перевода; каждый 25,1–32 КБ (1 КБ = 1000 B) |
 | `ИСКУПЛЕНИЕ/data/` — корпус и индекс библиотеки | 2 | 1 540 072 | корпус 1 198 043 B, индекс 342 029 B; числа снимает scripts/atonement_reshoot_state.py --write, сверяет --check (шаг гейта); до этого в строке стоял срез круга 63 (1 145 507 B) |
@@ -3039,6 +3039,58 @@ CSEL, с. 527:
 - Аппарат фрагмента XXX (источник катены) на с. 495 в OCR не читается — отнесение сделано по совпадению текста с латынью с. 102, а не по подписи.
 - Поиск по тому I через `inside.php` покрывает только распознанный слой (hOCR, confidence 65): отсутствие совпадения не доказывает отсутствия текста в книге — доказывает лишь, что в OCR его нет.
 - Сирийский текст я не читаю; все суждения о нём — по латинским переводам Харви и по аппарату.
+
+Гейты: `atonement_claim_register.py --check` — 914 доводов, расхождений 0; `atonement_reshoot_state.py --check` — PASS (130/121, 553 штампа); `validate_atonement_corpus_integrity.py` — PASS (21 корневой файл, 4 под-корпуса / 53 файла, 38 полос, C-01…C-25); `publicationEligible=false`.
+
+---
+
+### 9.69 Амвросий, *De off.* III.3.19: латынь найдена; ANF «price of His blood» = «mercedem sanguinis sui» (31.10.2026)
+
+**Зачем этот круг.** В §9.67 разбор вёлся по английскому переводу NPNF2-10, и латинская форма была честно помечена как несверенная. Пробел закрыт: латинский текст *De officiis* нашёлся в критическом издании Крабингера 1857 г. Это меняет две вещи — оборот «price of His blood» и статус второй половины карточки AMB-1 (кн. II, *redemptio captivorum*).
+
+#### 1. Издание
+
+- **Ambrose, *De officiis ministrorum libri III*, ed. Carolus Krabinger, Tübingen: Henry Laupp, 1857** (xii + 420 p.), Internet Archive `deofficiisminis00krabgoog`.
+- hOCR с языковой моделью `lat` (tesseract 5.3), качество пословное высокое; есть постраничный указатель (confidence 95) и **полнотекстовый поиск по слову** — то, чего нет у сканов Амвросия 1529/1690/1748 без текстового слоя и у CSEL 19 (там поиск есть, но нужного тома серии на IA нет).
+- Смещение: **лист = печатная страница + 17** (проверено на листах 96→79, 97→80, 105→88, 130→113, 143→126).
+- Аппарат ссылается на Amerbach, Erasmus, Cost., Pistor., Rom., Maur. (мавристы) — то есть это не перепечатка одной семьи, а сверка нескольких.
+
+#### 2. Локус III.3.19 — дословно (печатная с. 182)
+
+Глава III: «Praemissum de non quaerendo proprio emolumento praeceptum urgetur primum a Christi exemplo, tum ab interpretatione nominis, denique ab ipsa membrorum forma et usibus». §19 кончается так:
+
+> «…violatur natura generis humani et sanctae Ecclesiae congregatio, quae in unum conexum corpus atque conpactum unitate fidei et caritatis adsurgit. **Christus quoque dominus, qui pro universis mortuus est, mercedem sanguinis sui evacuatam dolebit.**»
+
+И сразу §20: «Quid quod etiam ipsa lex domini hanc formam tenendam edocet, ut nihil alteri detrahas tui commodi servandi gratia, cum dicit: *Non transferas terminos, quos statuerunt patres tui*…» — то самое место, которое ANF передаёт «Remove not the bounds which your fathers have set».
+
+#### 3. Три уточнения, которые меняют §9.67
+
+1. **В латыни стоит `mercedem`, а не `pretium`.** ANF: «will grieve that the price of His blood was paid in vain». Латынь: «mercedem sanguinis sui **evacuatam** dolebit» — «будет скорбеть, что плата крови Его обесценена/утрачена». *Merces* — плата, мзда, награда; *pretium* — цена. То есть «цена крови» в §9.67 было цитатой из перевода, а не из Амвросия. Формулировку надо чинить: у Амвросия не «цена крови», а «плата крови».
+2. **«pro universis mortuus est» — посылка, а не тезис.** Слова «умер за всех» стоят внутри рассуждения о вреде брату и о единстве тела (в §18 — 1 Кор 12:17: «Si totum corpus oculus, ubi auditus?»). Вывод §19 — о том, что вред одному члену расторгает общину рода человеческого и Церковь, а Христос скорбит об обесцененной плате. Читать это как утверждение об объёме искупления нельзя — и теперь это видно по-латыни, а не только по-английски.
+3. **ANF сглаживает и здесь.** «in one man the whole community of the human race is disturbed» ← латынь с. 181: «in uno homine communio totius humanitatis **solvitur**» — «расторгается», а не «возмущается». Это второе место подряд (после «Deum suadentem» → «God of counsel» в V.1.1), где перевод смягчает глагол.
+
+#### 4. Вторая половина AMB-1 закрыта: кн. II, гл. XXVIII, §138 (с. 169)
+
+> «Aurum sacramenta non quaerunt, neque auro placent, quae auro non emuntur. **Ornatus sacramentorum redemptio captivorum est.** Et vere illa sunt vasa pretiosa, quae redimunt animas a morte. Ille verus est thesaurus domini, qui operatur quod sanguis eius operatus est. Tunc vas dominici sanguinis agnoscitur, cum in utroque viderit redemptionem, ut **calix ab hoste redimat quos sanguis a peccato redemit**. Quam pulchrum, ut, cum **agmina captivorum ab Ecclesia redimuntur**, dicatur: **Hos Christus redemit**.»
+
+Продолжение (§§139, 143, с. 169–170): «Hos ergo malui vobis liberos tradere, quam aurum reservare»; «captivorum quoque pretiis profecerunt» (о переплавке священных сосудов).
+
+Что это даёт:
+
+- Идиома *redemptio captivorum* у Амвросия — **не о кресте**, а о церковном имуществе: украшение таинств и есть выкуп пленных. Крестная параллель («calix / sanguis») — аналогия, которую Амвросий строит сам, и она держится на том, что и чаша, и кровь «искупают» (одна — от врага, другая — от греха).
+- Слова «Hos Christus redemit» сказаны о **выкупленных пленниках**, а не о всех людях. Это ещё один довод против переноса таких мест в спор об объёме искупления.
+
+#### 5. Правки владельцу (одиннадцатая и двенадцатая)
+
+1. `11_` :88 — в AMB-1 снять пометку «латынь не сверена» и вписать: «Ambrose, *De off.* III.3.19, ed. Krabinger (Tübingen 1857), p. 182: “Christus quoque dominus, qui pro universis mortuus est, **mercedem** sanguinis sui evacuatam dolebit”; в переводе NPNF2-10 — “the price of His blood”, что точнее было бы “the recompense/wage”».
+2. `11_` :92 — вторую половину AMB-1 перевести из «по карточке» в проверенное: «*De off.* II.28.138, p. 169: “Ornatus sacramentorum redemptio captivorum est… cum agmina captivorum ab Ecclesia redimuntur, dicatur: Hos Christus redemit”».
+
+#### 6. Границы
+
+- Сверено по **одному** критическому изданию (Krabinger 1857); PL 16 (Migne, coll. 23B–184B) и CSEL 32 (Schenkl) не сверены — CSEL 32 на Internet Archive отсутствует (проверено поиском по идентификаторам серии: доступны только тома 19, 26, 29, 35.1, 38, 42, 45, 48).
+- Всё по OCR. Колонтитулы «182 S. AMBROSII», «169», «170» читаются, но изображения страниц я не смотрел; визуальная сверка не проводилась.
+- Номер § дан по Крабингеру; он совпадает с разбивкой ANF (гл. III = §§15–22), но это совпадение проверено только на этом месте, а не по всей книге.
+- Мавристская нумерация (которой пользуются многие ссылки) может отличаться на параграф — не проверял.
 
 Гейты: `atonement_claim_register.py --check` — 914 доводов, расхождений 0; `atonement_reshoot_state.py --check` — PASS (130/121, 553 штампа); `validate_atonement_corpus_integrity.py` — PASS (21 корневой файл, 4 под-корпуса / 53 файла, 38 полос, C-01…C-25); `publicationEligible=false`.
 
