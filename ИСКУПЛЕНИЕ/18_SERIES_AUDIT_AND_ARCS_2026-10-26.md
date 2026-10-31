@@ -16,7 +16,7 @@ scripts/run_atonement_mutation_battery.py`, обход `docs/research/atonement/
 | Что | Файлов | Байт | Примечание |
 |---|---|---|---|
 | `docs/research/atonement/` — читательско-исследовательская полоса | 38 | 5 050 904 | 36 нумерованных разборов + `README.md` + таксономия |
-| `ИСКУПЛЕНИЕ/*.md` — корень отдела | 21 | 1 836 722 | от `00_CURRENT_AUTHORITY` до `18_SERIES_AUDIT`; `17_` один занимает 435 395, этот документ — 682 380 |
+| `ИСКУПЛЕНИЕ/*.md` — корень отдела | 21 | 1 843 268 | от `00_CURRENT_AUTHORITY` до `18_SERIES_AUDIT`; `17_` один занимает 435 395, этот документ — 688 926 |
 | под-ланы `ot` `nt` `fathers` `synthesis` | 56 | 2 417 029 | 18 / 16 / 12 / 10 файлов |
 | `ИСКУПЛЕНИЕ/synthesis/drafts/` — читательские черновики | 13 | 343 646 | 2038 переводов строки суммарно — прежнее определение (строки через split) давало 2051, разница по одному на файл без финального перевода; каждый 25,1–32 КБ (1 КБ = 1000 B) |
 | `ИСКУПЛЕНИЕ/data/` — корпус и индекс библиотеки | 2 | 1 540 111 | корпус 1 198 082 B, индекс 342 029 B; числа снимает scripts/atonement_reshoot_state.py --write, сверяет --check (шаг гейта); до этого в строке стоял срез круга 63 (1 145 507 B) |
@@ -3075,6 +3075,23 @@ A3 (`03_`, 66) приводит в кавычках: «которою Он ис�
 **6. Что этим закрыто.** Section XXXIX (2 Кор. 5:14–15) пройден целиком: возражения I–IV, с. 76–80. Section XL (2 Кор. 5:19) начат заново — в §9.91 он читался по чанку 40, теперь есть его начало; расхождений с §9.91 не найдено, страницы совпали.
 
 **Границы.** OCR (в п. 3 «Ciu'ist», «v,'ho»). Ссылки на Уитби и Coll. Hag. приведены как у Гилла, по оригиналам не проверялись. `12_`, `14_`, `21_`, `23_` не правились.
+
+### 9.100 Gill Sections XL–XLI (с. 81–83): «мир» = народы, и `καταλλαγὴ κόσμου` у Павла в Рим. 11:15; «with him» в 2 Кор. 6:1 — не в тексте (30.10.2026)
+
+**Что читалось.** Чанк **40**: окончание Section XL (2 Кор. 5:19) на **81–82** и начало Section XLI (2 Кор. 6:1) на **82–83**.
+
+**1. Конец Section XL, пункт 2 — невменение не всеобще.** «It cannot be said of every man and woman in the world, that God does not impute their trespasses to them; whereas this is said of the world here»; Пс. 31:2 («Blessed is the man to whom the Lord will not impute sin») поставлен рядом с 1 Тим. 5:24 (`τινῶν ἀνθρώπων αἱ ἁμαρτίαι πρόδηλοί εἰσιν…`, аппарат пуст). И против глоссы Уитби («promising absolution to them who would believe»): «not a promise of what God would do, did men believe, but **a declaration of what he had been doing**; besides, if only an absolution from past offences is promised, what must be done with after ones?» — довод, который бьёт не по слову, а по логике обещания.
+
+**2. Пункт II — «весь мир» = избранные, и «тем более народы».** «There is good reason to conclude, that the whole world is to be restrained to the elect of God… and **perhaps the people of God among the Gentiles may be more especially designed**». Опора: (1) «They are called by the world, who are said to be reconciled, Rom. xi. 12, 15, yea, the whole world, for whose sins Christ is the propitiation, 1 John ii. 2»; идиома «nations of the world» у иудеев; д-р Хаммонд понимает «мир» здесь как «the greater and worser part of it, the Gentiles». (2) Контекст: 5:14–15 (умер за всех — иудеев и язычников), 5:16 «know we no man after the flesh», 5:17 «new creature», «old things are passed away; **the Old Testament economy is abolished**». (3) 5:20 «be ye reconciled to God» обращено к коринфской церкви — «not to unconverted sinners, much less to the non-elect; but to a church of Christ».
+
+**3. Проверка — и здесь довод Гилла опирается на словоупотребление самого Павла.** Рим. 11:15 в S1: `εἰ γὰρ ἡ ἀποβολὴ αὐτῶν **καταλλαγὴ κόσμου**, τίς ἡ πρόσλημψις εἰ μὴ ζωὴ ἐκ νεκρῶν;` — тот самый существительное **καταλλαγή**, что в 2 Кор. 5:18–19, и стоит оно именно о **вхождении язычников**; аппарат пуст. Рядом 11:12: `τὸ παράπτωμα αὐτῶν πλοῦτος **κόσμου**… τὸ ἥττημα αὐτῶν πλοῦτος **ἐθνῶν**` — «мир» и «народы» в параллели, аппарат пуст. То есть чтение «мир = народы» у Гилла не экзегетическая вольность, а опора на Павлово же употребление `καταλλαγή`/`κόσμος`; это самый прочный пункт его разбора 2 Кор. 5:19.
+
+**4. Кросс-ссылка внутри корпуса: 1 Ин. 2:2.** Гилл сам сцепляет 2 Кор. 5:19 с 1 Ин. 2:2 («the whole world, for whose sins Christ is the propitiation»), читая ὅλου τοῦ κόσμου через ту же сетку. Отдельный разбор 1 Ин. 2:2 — **Section LVII**, с. 117, и он уже верифицирован вербатим в `23_SECTION_LVII_WORLD_VERBATIM…`. Значит для карточки 1 Ин. 2:2 у нас два адреса: собственный раздел (LVII, с. 117) и это употребление в XL (с. 81). S1 по стиху: `…οὐ περὶ τῶν ἡμετέρων δὲ μόνον ἀλλὰ καὶ περὶ **ὅλου τοῦ κόσμου**`, аппарат пуст.
+
+**5. Section XLI (2 Кор. 6:1) — и «with him», которого нет в тексте.** Возражение (Remonstr. Coll. Hag. art. v. p. 11, 78; Limborch l. 5, c. 83, sect. 1, p. 718; Whitby, p. 423, 461; ed. 2. 412, 441): «grace may be received in vain, lost, and the man perish». Ответы: (1) «we are not to understand by the grace of God, that grace which is implanted in the souls of men at the time of their regeneration, **for that cannot be received in vain**… an immortal, incorruptible, never-dying seed… a well of living water springing up unto everlasting life; to all those to whom God gives grace he gives glory» (Рим. 8:30). (2) Речь о «gifts of grace», в частности о дарах, «which qualify men for the work of the ministry» (Рим. 1:5; 12:6; Еф. 3:8; 1 Кор. 15:10). И текстуальное замечание: «as workers together, (**not with him**, that is, God or Christ, **which is not in the text**), as fellow-labourers in the Lord's vineyard».
+Проверка: S1 — `Συνεργοῦντες δὲ καὶ παρακαλοῦμεν μὴ εἰς κενὸν τὴν χάριν τοῦ θεοῦ δέξασθαι ὑμᾶς`, аппарат пуст. Слов «с Ним» в тексте нет; их добавил английский перевод. Это **третий** тип случая в нашей коллекции, и его полезно отличать: (а) довод зависит от издания — 2 Ин. 8, `εἰργασάμεθα`/`εἰργάσασθε` (§9.97); (б) довод стоит на устойчивом чтении — 2 Кор. 5:14, артикль `οἱ πάντες` (§9.98); (в) довод стоит на том, чего в греческом **нет вовсе** — 2 Кор. 6:1, «with him» (здесь). Для карточек это разные пометы: «проверить аппарат», «проверить перевод».
+
+**Границы.** OCR. Ссылки на Хаммонда, Уитби, Лимборха приведены как у Гилла, по оригиналам не проверялись. Section XLI продолжается (пункты 2–4 и 2 Кор. 6:2). `12_`, `14_`, `21_`, `23_` не правились.
 
 ## 10. Дополнение круга 66 (27.10.2026): зеркало догнало дерево, и два отказа среды записаны отказами
 
