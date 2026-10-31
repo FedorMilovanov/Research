@@ -1731,7 +1731,17 @@
         "Евр 2:9": true
       }
     },
-    "offerEqualInAllThreeTR": 7
+    "offerEqualInAllThreeTR": 7,
+    "signAgreement": {
+      "s1Positions": 6930,
+      "s7Entries": 6929,
+      "versesCompared": 7927,
+      "versesAgreeing": 7926,
+      "mismatches": [
+        "Деян 4:9"
+      ],
+      "scope": "Число помеченных позиций S1 (поле 4) против числа <app> S7 по стихам; одиночные ⸀/⸁ и открывающие ⸂/⸄ считаются за одну позицию. Не сверка чтений и не атрибуция рукописям."
+    }
   },
   "historicalPrepositionAttribution": {
     "status": "HISTORICAL / SUPERSEDED: nearest-left preposition is not a dependency parse",

@@ -343,5 +343,37 @@ class RunnerTests(unittest.TestCase):
             self.assertIn("tree mutated",(Path(d)/"01.log").read_text())
 
 
+class SignTests(unittest.TestCase):
+    """Знаки SBLGNT живут в поле 4 MorphGNT; §9.122 утверждал обратное."""
+
+    def test_inventory_is_pinned(self):
+        self.assertEqual(refs.s1_sign_inventory(),
+                         {"⸀": 5114, "⸁": 46, "⸂": 1764, "⸃": 1765, "⸄": 6, "⸅": 5})
+
+    def test_clean_field_has_no_signs(self):
+        for row in refs.s1_verses().values():
+            for token in row:
+                self.assertFalse(any(m in token[5] for m in refs.SIGN_MARKS), token)
+
+    def test_spans_per_verse(self):
+        verses = refs.s1_verses()
+        self.assertEqual(refs.s1_sign_spans(verses["Мф 20:28"]), 0)
+        self.assertEqual(refs.s1_sign_spans(verses["Мк 10:45"]), 0)
+        self.assertEqual(refs.s1_sign_spans(verses["Евр 2:9"]), 1)
+        self.assertEqual(refs.s1_sign_spans(verses["Мк 14:24"]), 2)
+        self.assertEqual(refs.s1_sign_spans(verses["Деян 20:28"]), 3)
+
+    def test_marked_token_locators(self):
+        self.assertIn("⸀τῆς", refs.s1_sign_tokens("Мк 14:24"))
+        self.assertIn("⸂ἐκχυννόμενον", refs.s1_sign_tokens("Мк 14:24"))
+        self.assertIn("⸀θεοῦ,", refs.s1_sign_tokens("Деян 20:28"))
+        self.assertEqual(refs.s1_sign_tokens("Мф 20:28"), [])
+
+    def test_total_positions_pinned(self):
+        by_ref = refs.s1_sign_spans_by_ref()
+        self.assertEqual(sum(by_ref.values()), 6930)
+        self.assertEqual(len(by_ref), 4472)
+
+
 if __name__ == "__main__":
     unittest.main()

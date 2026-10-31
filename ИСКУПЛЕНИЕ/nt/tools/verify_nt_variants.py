@@ -15,7 +15,7 @@ sys.dont_write_bytecode = True
 import unicodedata
 
 from nt_sources import registry, witness_dir
-from nt_refs import BOOKS, s1_verses
+from nt_refs import BOOKS, s1_sign_spans, s1_verses
 from sbl_apparatus import Apparatus
 from verify_nt_facts import OFFER_REFS
 
@@ -107,13 +107,25 @@ def computed_variants() -> dict:
     na_readings = [(e["lem"], rd["text"]) for entries in app.entries.values()
                    for e in entries for rd in e["rdg"] if "NA" in rd["wit"]]
     na_equal = sum(greek_words(lem) == greek_words(text) for lem, text in na_readings)
+    verses = s1_verses()
+    sign_rows = {ref: (s1_sign_spans(rows), len(app.at(ref))) for ref, rows in verses.items()}
+    sign_bad = sorted(ref for ref, (a, b) in sign_rows.items() if a != b)
+    sign_agreement = {"s1Positions": sum(a for a, _ in sign_rows.values()),
+                      "s7Entries": sum(b for _, b in sign_rows.values()),
+                      "versesCompared": len(sign_rows),
+                      "versesAgreeing": len(sign_rows) - len(sign_bad),
+                      "mismatches": sign_bad,
+                      "scope": "Число помеченных позиций S1 (поле 4) против числа <app> S7 по стихам; "
+                               "одиночные ⸀/⸁ и открывающие ⸂/⸄ считаются за одну позицию. "
+                               "Не сверка чтений и не атрибуция рукописям."}
     return {"normalization": "Robinson ASCII, no accents/case/punctuation; whole word sequence, not byte identity",
             "TRMutualWordEquality": {ref: tr["S2"][ref] == tr["S3"][ref] == tr["S4"][ref] for ref in matrix},
             "NAReadingWordProbe": {"citedReadings": len(na_readings), "equalWords": na_equal,
                                    "unequalWords": len(na_readings) - na_equal,
                                    "scope": "Mechanical word-sequence comparison, not complete or certified NA27/NA28 divergence. Abbreviated readings need interpretation."},
             "wordEquality": matrix, "controls": controls,
-            "offerEqualInAllThreeTR": sum(all(matrix[ref].values()) for ref in OFFER_REFS)}
+            "offerEqualInAllThreeTR": sum(all(matrix[ref].values()) for ref in OFFER_REFS),
+            "signAgreement": sign_agreement}
 
 
 def main() -> int:
