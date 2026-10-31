@@ -64,12 +64,28 @@ def case_variants_first_char(frag: str) -> list[str]:
     return sorted(out)
 
 
+def _grave_to_acute(word: str) -> str:
+    """Тяжёлое ударение приводится к острому.
+
+    В греческой орфографии тяжёлое стоит только на последнем слоге и только
+    вместо острого перед следующим словом: `παντός` и `παντὸς`, `Ἀβραάμ` и
+    `Ἀβραὰμ` — одна акцентуация в разных позициях, а не разные слова. Поэтому
+    мена выполняется без разбора слогов: тяжёлого вне последнего слога в
+    греческом тексте не бывает.
+
+    Наличие и место ударения при этом сохраняются: `τίς`/`τις` и
+    `ἀλλά`/`ἄλλα` этим не склеиваются, потому что различаются не видом знака.
+    """
+    return unicodedata.normalize("NFC", unicodedata.normalize("NFD", word).replace("\u0300", "\u0301"))
+
+
 def norm(s: str) -> str:
-    """NFC and punctuation removal, preserving every word boundary/diacritic."""
+    """NFC, punctuation removal, positional accentuation normalised."""
     s = unicodedata.normalize("NFC", s)
-    return re.sub(r"\s+", " ", "".join(
-        ch if GREEK.match(ch) and unicodedata.category(ch)[0] in "LM" else " "
-        for ch in s)).strip()
+    s = "".join(ch if GREEK.match(ch) and unicodedata.category(ch)[0] in "LM" else " "
+                for ch in s)
+    s = re.sub(r"\s+", " ", s).strip()
+    return " ".join(_grave_to_acute(w) for w in s.split(" "))
 
 
 def occurs(frag: str, blob: str, lemmas: dict[str, int] | None = None) -> bool:

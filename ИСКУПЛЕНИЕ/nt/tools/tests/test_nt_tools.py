@@ -6,6 +6,7 @@ import hashlib
 import io
 import json
 import os
+import re
 from pathlib import Path
 import sys
 import tarfile
@@ -32,8 +33,18 @@ class GreekBoundaryTests(unittest.TestCase):
         self.assertEqual(citations.norm(q), citations.norm(unicodedata.normalize("NFD", q)))
 
     def test_word_spaces_survive(self):
-        self.assertEqual(citations.norm("λύτρον ἀντὶ πολλῶν"), "λύτρον ἀντὶ πολλῶν")
+        # Контракт: границы слов и наличие/позиция ударения сохраняются;
+        # нормализуется только позиционная мена острого и тяжёлого (см. ниже).
+        self.assertEqual(citations.norm("λύτρον ἀντὶ πολλῶν"), "λύτρον ἀντί πολλῶν")
         self.assertNotEqual(citations.norm("λύτρονἀντὶπολλῶν"), citations.norm("λύτρον ἀντὶ πολλῶν"))
+
+    def test_final_grave_equals_final_acute(self):
+        self.assertEqual(citations.norm("παντός"), citations.norm("παντὸς"))
+
+    def test_accent_presence_and_position_still_matter(self):
+        self.assertNotEqual(citations.norm("τίς"), citations.norm("τις"))
+        self.assertNotEqual(citations.norm("ἀλλά"), citations.norm("ἄλλα"))
+        self.assertNotEqual(citations.norm("παντός"), citations.norm("πάντος"))
 
     def test_substring_is_not_quote(self):
         self.assertFalse(citations.occurs("λυτρ", " ἀπολύτρωσις λύτρον "))
@@ -234,6 +245,31 @@ class MethodTests(unittest.TestCase):
         self.assertTrue(self.check(self.CARD.replace("`extent`", "—"), discipline.check_axis))
     def test_valid_axis_cannot_hide_invalid_extra(self):
         self.assertTrue(self.check(self.CARD.replace("`extent`", "`extent` + `whatever`"), discipline.check_axis))
+
+
+class ForbiddenPhraseTests(unittest.TestCase):
+    """Списки запрета не должны читаться как утверждения, и наоборот."""
+
+    def probe(self, line):
+        return discipline._norm(discipline._mask_prohibitions(discipline._mask_mentions(line)))
+
+    def test_prohibition_list_masks_phrase(self):
+        line = "**Нельзя:** объявлять стих решённым; приписывать Кальвину сноску редактора."
+        self.assertIsNone(re.search(r"стих\s+реш[ёе]н", self.probe(line)))
+
+    def test_prohibition_scope_stops_at_semicolon(self):
+        line = "Здесь текст закрыт; нельзя медлить с проверкой."
+        self.assertIsNotNone(re.search(r"текст\s+закрыт", self.probe(line)))
+
+    def test_prohibition_without_negation_still_flags(self):
+        line = "Можно объявлять стих решённым и идти дальше."
+        self.assertIsNotNone(re.search(r"стих\s+реш[ёе]н", self.probe(line)))
+
+    def test_negated_assertion_masked_but_quoted_mention_kept(self):
+        line = "Нельзя утверждать, что тексты закрыты; в 5:18 `πάντες` — все без изъятия."
+        probe = self.probe(line)
+        self.assertIsNone(re.search(r"текст\w*\s+закрыт", probe))
+        self.assertIn("5:18", probe)
 
 
 class ParserAndExitTests(unittest.TestCase):
