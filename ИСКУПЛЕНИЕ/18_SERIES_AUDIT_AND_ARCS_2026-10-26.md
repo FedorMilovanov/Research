@@ -16,7 +16,7 @@ scripts/run_atonement_mutation_battery.py`, обход `docs/research/atonement/
 | Что | Файлов | Байт | Примечание |
 |---|---|---|---|
 | `docs/research/atonement/` — читательско-исследовательская полоса | 38 | 5 050 904 | 36 нумерованных разборов + `README.md` + таксономия |
-| `ИСКУПЛЕНИЕ/*.md` — корень отдела | 21 | 1 657 257 | от `00_CURRENT_AUTHORITY` до `18_SERIES_AUDIT`; `17_` один занимает 435 395, этот документ — 502 915 |
+| `ИСКУПЛЕНИЕ/*.md` — корень отдела | 21 | 1 664 907 | от `00_CURRENT_AUTHORITY` до `18_SERIES_AUDIT`; `17_` один занимает 435 395, этот документ — 510 565 |
 | под-ланы `ot` `nt` `fathers` `synthesis` | 56 | 2 417 029 | 18 / 16 / 12 / 10 файлов |
 | `ИСКУПЛЕНИЕ/synthesis/drafts/` — читательские черновики | 13 | 343 646 | 2038 переводов строки суммарно — прежнее определение (строки через split) давало 2051, разница по одному на файл без финального перевода; каждый 25,1–32 КБ (1 КБ = 1000 B) |
 | `ИСКУПЛЕНИЕ/data/` — корпус и индекс библиотеки | 2 | 1 540 072 | корпус 1 198 043 B, индекс 342 029 B; числа снимает scripts/atonement_reshoot_state.py --write, сверяет --check (шаг гейта); до этого в строке стоял срез круга 63 (1 145 507 B) |
@@ -2766,6 +2766,55 @@ Workflow получил один новый греп (37 всего) — на г
 - Греческий фрагмент § 2 беру в наборе Харви; маргиналия отсылает к Феодориту, но само издание Феодорита (и номер главы) я не проверял, поэтому «сохранён у Феодорита» — ссылка на аппарат, а не моя проверка.
 - Прочитан том II; том I (книги I–II) в этом круге не пересматривал.
 - Латиница V.1.1 — древний перевод, а не авторский латинский текст Иринея; греческий § 2 — фрагмент, а не сплошной оригинал главы.
+
+Гейты: `atonement_claim_register.py --check` — 914 доводов, расхождений 0; `atonement_reshoot_state.py --check` — PASS (130/121, 553 штампа); `validate_atonement_corpus_integrity.py` — PASS (21 корневой файл, 4 под-корпуса / 53 файла, 38 полос, C-01…C-25); `publicationEligible=false`.
+
+---
+
+### 9.63 Ириней: цитата, приписанная III.18.1, стоит в III.18.7 — и три находки с тех же страниц (31.10.2026)
+
+**Зачем этот круг.** В карточке отца (`03_` :66) локус III.18.1 подписан цитатой «God recapitulated in Himself the ancient formation of man, that He might kill sin, deprive death of its power, and vivify man» с привязкой `ANF01.txt:L42404–42408`. В §9.60 я прочитал латынь III.18.1 у Харви: там другой текст. Проверка показала, что цитата верна по существу, но подписана не той главой.
+
+#### 1. Три независимые сверки
+
+1. **Латынь III.18.1** (Harvey XIX.1, печатная с. 95; см. §9.60): «…quando incarnatus est, et homo factus, **longam hominum expositionem in seipso recapitulavit, in compendio nobis salutem praestans**, ut quod perdiderimus in Adam… hoc in Christo Jesu reciperemus». Слова «ancient formation» здесь нет.
+2. **Английский перевод ANF** (New Advent, *Against Heresies* III.18.1): «…but when He became incarnate, and was made man, **He commenced afresh the long line of human beings, and furnished us, in a brief, comprehensive manner, with salvation**; so that what we had lost in Adam… that we might recover in Christ Jesus». Это дословно латынь пункта 1 — то есть нумерация ANF здесь совпадает с Массю и с Харви XIX.
+3. **Латынь конца той же главы** (Harvey XIX.7, печатная с. 102): «Si autem non factus caro parebat quasi caro, non erat verum opus ejus. **Quod autem parebat, hoc et erat; Deus, hominis antiquam plasmationem in se recapitulans, ut occideret quidem peccatum, evacuaret autem mortem, et vivificaret hominem: et propter hoc vera opera ejus**». Это и есть цитата карточки, слово в слово («ancient formation» = *antiquam plasmationem*).
+
+#### 2. Итог по локатору
+
+Цитата — **III.18.7**, а не III.18.1. Привязка `L42404–42408` при этом непротиворечива: в ANF01 глава XVIII открывается около `L42201`, глава XIX — `L42484`, значит 42404 внутри восемнадцатой главы, но далеко от её начала, то есть § 6–7. Ошибка не в строках, а в подписи.
+
+Правильная запись: «III.18.7 (Massuet) = Harvey XIX.7, печатная с. 102 (лист 112); ANF01 `L42404–42408`».
+
+#### 3. Три вещи с тех же страниц, которых в карточке нет
+
+**(а) Долговой глагол у Иринея — есть, и его не надо прятать.** С. 100 (Harvey XIX.6):
+
+> «Luctatus est enim, et vicit: erat enim homo pro patribus certans, et **per obedientiam, inobedientiam persolvens**: alligavit enim fortem, et solvit infirmos, et salutem donavit plasmati suo, destruens peccatum.»
+
+*Persolvens* — «уплативший сполна»: послушанием Он покрывает непослушание. Это единственное место в проверенном объёме тома II, где у Иринея стоит долговой глагол, и именно поэтому оно важно: серия не может утверждать, что у Иринея нет долгового языка, — у него нет **схемы** «уплата Отцу», но само слово «уплатить» в описании послушания Христова он употребляет. Рядом, в той же фразе, — «alligavit fortem» (Мк 3:27): связал сильного. То есть в одном предложении сходятся долг, победа и дар.
+
+**(б) Обмен как взаимное вручение, а не сделка.** С. 101 (XIX.6, продолжение):
+
+> «…ut faceret, ut et Deus assumeret hominem, et homo se daret Deo. Qua enim ratione filiorum adoptionis ejus participes esse possemus, nisi per Filium eam quæ est ad ipsum recepissemus ab eo communionem…»
+
+«Бог воспринял человека, а человек отдал себя Богу» — обмен здесь структурный (две стороны, два действия), но без третьего участника и без цены.
+
+**(в) Голос редактора, который легко принять за голос отца.** К этой же фразе о *persolvens* Харви даёт примечание от себя: «The reader will here observe, **the clear statement of the doctrine of the Atonement**, whereby alone sin is done away». Это суждение издателя 1857 года, а не Иринея II века; в серии такие места надо помечать так же, как F-17 у Лактанция (редакторская вставка ANF). Заодно видно, что слово «Atonement» в аппарате — английское богословие XIX века, а не термин Иринея.
+
+#### 4. Правки владельцу (пятая и шестая)
+
+1. `03_` :66 — подпись локуса исправить: «III.18.**7** (Harvey XIX.7; печатная с. 102)», цитату оставить дословно, `ANF01.txt:L42404–42408` сохранить.
+2. `03_` :71 — строку «Перевод (ANF), AH III.18.1» заменить на «AH III.18.7», а к III.18.1 поставить настоящий текст: «He commenced afresh the long line of human beings, and furnished us, in a brief, comprehensive manner, with salvation… that what we had lost in Adam… we might recover in Christ Jesus» (латынь: печатная с. 95).
+3. Добавить два локуса: с. 100 — *per obedientiam inobedientiam persolvens*; с. 101 — *ut et Deus assumeret hominem, et homo se daret Deo*. Оба — с пометкой «латынь древнего перевода; греческий в этом издании не приведён».
+
+#### 5. Границы
+
+- Визуальной сверки нет: текст по OCR плюс постраничный индекс; страницы 95, 100–102 подтверждены и колонтитулами («APUD PATREM EXSTITIT. 95», «CHRISTI HUMANITAS. 100», «SPEI CERTÆ FUNDAMENTUM. 101», «CHRISTI DIVINITAS. 102»).
+- Английский ANF сверял по New Advent (перепечатка ANF01), а не по печатному тому ANF; строка `L42404–42408` взята из карточки, я её не пересчитывал по файлу ANF01 (его в дереве нет).
+- Прочитан только том II Харви (книги III–V).
+- «Единственное место с долговым глаголом» — вывод в пределах прочитанного объёма, а не по всему Иринею.
 
 Гейты: `atonement_claim_register.py --check` — 914 доводов, расхождений 0; `atonement_reshoot_state.py --check` — PASS (130/121, 553 штампа); `validate_atonement_corpus_integrity.py` — PASS (21 корневой файл, 4 под-корпуса / 53 файла, 38 полос, C-01…C-25); `publicationEligible=false`.
 
