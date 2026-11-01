@@ -138,7 +138,7 @@ def check_claims() -> tuple[int, int, int]:
 
     claims = load_csv(path)
     metrics = load_csv(PORTFOLIO / "METRICS.csv")
-    media = load_csv(PORTFOLIO / "MEDIA_METRICS.csv")
+    media: list[dict[str, str]] = []  # счётчики аудитории сняты из портфолио по решению владельца
 
     seen: set[str] = set()
     counts = {"CONFIRMED": 0, "DERIVED": 0, "UNPROVEN": 0}

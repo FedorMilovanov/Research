@@ -16,7 +16,7 @@ St Petersburg, Russia (remote, UTC+3) · [gospod-bog.ru](https://gospod-bog.ru) 
 
 **Headline options**
 - I build systems you can trust an AI agent to work in: contracts, gates, evidence, rollback.
-- Five live products, a 153-video channel and 241 CI pipelines — one person plus agents.
+- Five live products, a media line (music, clips, visuals) and 241 CI pipelines — one person plus agents.
 - From research corpus to music video: product, content, engineering and media in one pair of hands.
 
 ---
@@ -46,9 +46,8 @@ Code and part of the media are AI-generated under my direction. Requirements, ar
 
 | | |
 |---|---|
-| 153 videos on YouTube | 1.32K subscribers |
-| 111 exact YouTube↔VK pairs | 62 Shorts in a dated snapshot: 93,281 views |
-| 3 Telegram channels + 1 bot | 3 music tracks published on the site |
+| Music: poem → song → clip, with a repeatable protocol | Visual canon and storyboard per song |
+| Publishing with exact object identity across platforms | Counters (subscribers, views) are not claimed: not verifiable from outside |
 
 **How to read this honestly.** "766k lines" is volume taken to production and kept alive, not hand-typed text. The difference is contracts and acceptance. And the voice on my site is an open-source engine — my part is the browser integration and the Russian stress layer.
 
@@ -111,13 +110,13 @@ An Astro SSG library on the French pastry tradition: chefs, techniques, recipes,
 
 ### 4.7 Channel and AI production — [@TheLegendaryPoet](https://www.youtube.com/@TheLegendaryPoet)
 
-**What exists.** 153 videos and 1.32K subscribers; Russian poetry set to music; long clips, Shorts, poet playlists, community posts and quizzes.
+**What exists.** Russian poetry set to music; long clips, short formats, poet playlists, community posts and quizzes. Music, visuals and editing are AI-assisted; the process is written down as protocols and a visual canon. Audience counters are deliberately not part of the portfolio — see `MEDIA_PRACTICE.md`.
 
-**The production line.** A Suno department with a protocol that forbids rewriting the poem, resolves homographs instead of guessing, and defines pronunciation repair and review cases. A clips department with a visual canon, scene-by-scene storyboarding against the song's meaning, motion prompts only for approved frames, and acceptance rules. Three tracks published on the site with hashes and waveforms. Distribution with 111 exact YouTube↔VK pairs, native VK uploads, RuTube, three Telegram channels publishing on schedule, and 59 prepared Reel jobs held at "rights not granted".
+**The production line.** A Suno department with a protocol that forbids rewriting the poem, resolves homographs instead of guessing, and defines pronunciation repair and review cases. A clips department with a visual canon, scene-by-scene storyboarding against the song's meaning, motion prompts only for approved frames, and acceptance rules. Three tracks published on the site with hashes and waveforms. Distribution with exact YouTube↔VK pairs, native VK uploads, RuTube, Telegram channels publishing on schedule, and prepared Reel jobs held at "rights not granted".
 
 **The engineering story.** Exact object identity instead of "roughly that video". Dated `yt-dlp` snapshots. An explicit rule that an existing upload grants no rights to the media. A ban on downloading other people's video for re-upload. Every publication has a state and a postcondition.
 
-**How to read the numbers.** 153 is the channel's current count. The repositories hold dated snapshots: 111 long-form identities (27 Jul 2026) and 62 Shorts (12 Sep 2026). They do not sum to 153 and I do not present them as if they did.
+**How to read this.** What is auditable here is the process, not the audience: dated snapshots, protocol files, acceptance rules, and the state of every publication. Counting subscribers would add a number nobody can verify and nothing that says how the work is done.
 
 ### 4.8 Research infrastructure — `AuditRepo` and `Research`
 
@@ -185,8 +184,8 @@ Stopping the agent from lying. It says "done" with complete confidence when it i
 
 ## 9. To fill in
 
-- [ ] A YouTube Studio screenshot: subscribers, views, retention — so 1.32K and 153 are not just my word.
-- [ ] Outcome metrics: site traffic, orders, Telegram subscribers, bot installs.
+- [ ] A profile README and repository descriptions, per `PROFILE_README.md`.
+- [ ] One public write-up on how AI-assisted builds and AI media are verified.
 - [ ] A photo and three screenshots or recordings per project and for the channel.
 - [ ] Contact details: email, Telegram, LinkedIn.
 - [ ] English READMEs for `mp3telegrambot` and `video-channel-manager`.

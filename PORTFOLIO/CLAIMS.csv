@@ -25,16 +25,8 @@ C-023;quality;Пакетов verification;111;пакетов;10 репозито
 C-024;quality;Записей reverify;282;записей;10 репозиториев;клоны;grep;none;CONFIRMED;2026-11-01;
 C-025;quality;Активных единиц работы;57;единиц;10 репозиториев;реестр тем;ручная классификация;none;CONFIRMED;2026-11-01;30 системных тем
 C-026;quality;Закрытых записей реестра дефектов;119;записей;gb и TLP;DEFECT_CLASSES.md;ручной разбор;none;CONFIRMED;2026-11-01;gb 41, TLP 54, mp3 9, AuditRepo 11
-C-027;media;Подписчиков YouTube @TheLegendaryPoet;1320;подписчиков;YouTube;MEDIA_METRICS.csv;кабинет владельца;media_value:YouTube:subscribers;UNPROVEN;2026-11-01;скриншот ещё не снят: единственная цифра, которую нельзя проверить извне
-C-028;media;Видео на канале @TheLegendaryPoet;153;видео;YouTube;MEDIA_METRICS.csv;кабинет владельца;media_value:YouTube:videos;UNPROVEN;2026-11-01;снимки дают 173 (111 + 62) на другие даты; сумма не выдаётся за текущую
-C-029;media;Shorts в снимке;62;видео;YouTube;MEDIA_METRICS.csv;yt-dlp снимок 12.09.2026;media_value:YouTube:shorts_in_snapshot;CONFIRMED;2026-11-01;
-C-030;media;Просмотров на этих Shorts;93281;просмотров;YouTube;MEDIA_METRICS.csv;yt-dlp снимок 12.09.2026;media_value:YouTube:views_on_those_shorts;CONFIRMED;2026-11-01;медиана 994, максимум 26 107
-C-031;media;Лайков на этих Shorts;3549;лайков;YouTube;MEDIA_METRICS.csv;yt-dlp снимок 12.09.2026;media_value:YouTube:likes_on_those_shorts;CONFIRMED;2026-11-01;
-C-032;media;Точных пар YouTube-VK;111;пар;медиа;MEDIA_METRICS.csv;ревью-маппинг 27.07.2026;media_value:YouTube-VK:exact_pairs;CONFIRMED;2026-11-01;111 уникальных ID с обеих сторон
-C-033;media;Обычных видео в VK;2879;видео;VK;MEDIA_METRICS.csv;постмортем 31.07.2026;media_value:VK:ordinary_videos;CONFIRMED;2026-11-01;после подтверждённых удалений
-C-034;media;Публичных единиц богословского архива;1781;единиц;YouTube;MEDIA_METRICS.csv;repo-документ 31.07.2026;media_value:YouTube:public_items;CONFIRMED;2026-11-01;архив 11+ лет
-C-035;media;Публичных музыкальных треков;3;трека;thelegendarypoet.ru;MEDIA_METRICS.csv;repo-источник;media_value:Music:published_tracks;CONFIRMED;2026-11-01;audioSha256 и waveform на каждый
-C-036;media;Управляемых Telegram-каналов;3;канала;Telegram;MEDIA_METRICS.csv;repo-снимок;media_value:Telegram:managed_channels;CONFIRMED;2026-11-01;@lordchrist, svodka, milovi-cake
+
+C-036;media;Счётчики аудитории (подписчики, просмотры, число роликов) в портфолио не заявляются;n/a;политика;медиа-линия;MEDIA_PRACTICE.md;решение владельца 01.11.2026;none;CONFIRMED;2026-11-01;извне не проверяются и о качестве работы не говорят; описывается процесс: протоколы, канон, приёмка
 C-037;words;Слов авторской прозы на публичных сайтах;365000;слов;сайты;ручной подсчёт;извлечение текста из astro-компонентов;none;UNPROVEN;2026-11-01;оценка, а не пересчёт: расхождение метода ±15 %
 C-038;words;Слов исследовательских документов;3930000;слов;10 репозиториев;ручной подсчёт;wc по md;none;CONFIRMED;2026-11-01;не складывается с прозой
 C-039;reliability;Доля зелёных прогонов CI;n/a;процент;15 репозиториев;GitHub API;невозможно;none;UNPROVEN;2026-11-01;actions/runs зажимает total_count на 2 500
