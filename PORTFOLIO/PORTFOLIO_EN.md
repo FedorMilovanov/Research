@@ -38,7 +38,7 @@ Code and part of the media are AI-generated under my direction. Requirements, ar
 | | |
 |---|---|
 | 5 products live in production | 4 own domains |
-| 766,175 lines of product code under management | 239 CI pipelines · 119,919 runs |
+| 766,175 lines of application code under management (512,322 in six product repos) | 239 CI pipelines · 119,919 runs |
 | 1,390 test and QA files | 20,990 commits in ten months |
 | ≈365,000 words of authored prose | 2,076 research documents |
 
@@ -89,9 +89,9 @@ Read-only audit snapshots, versioned change plans, exact remote IDs, per-target 
 **The engineering story.** The AI analyses; a deterministic executor acts. Agents never receive provider tokens. Ambiguous states are marked `never_replay`. The repository also holds the frozen 111-pair YouTube↔VK mapping and the dated channel snapshots.
 
 **Scale.** 919 modules · 219,040 LOC of Python · 461 tests · 31 workflows.
-Supply chain: 183 workflows, 576/576 third-party actions pinned to a full 40-character SHA, 183/183 declare least-privilege permissions, zero `write-all`, and both `pull_request_target` workflows are fork-guarded with no checkout of PR code.
+Supply chain: 239 workflows, 658/658 external actions pinned to a full 40-character SHA (local `./.github/actions` excluded — they are pinned by the commit itself), 239/239 declare least-privilege permissions, zero `write-all`, and both `pull_request_target` workflows are fork-guarded with no checkout of PR code.
 
-Across nine repositories: 3,834 pull requests, 2,876 merged (75%), 39 open issues in total, 391 verification reports, and one full test run of 4,487 tests.
+Across nine repositories: 3,834 pull requests, 2,877 merged (75%), 16 open issues in total, 391 verification reports, and one full test run of 4,487 tests.
 
 ### 4.5 Commercial site, zero dependencies — [milovicake.ru](https://milovicake.ru)
 
