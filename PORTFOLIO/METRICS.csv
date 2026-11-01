@@ -1,0 +1,16 @@
+repository;kind;stack;files;loc;test_files;commits;pull_requests;ci_runs;workflow_files;live_url;content_notes;pr_merged;git_tags;open_issues;data_as_of
+gb-is-my-strength;product-publishing;Astro+MDX+vanilla JS+Python tooling;3308;84800;0;5257;1399;40000;77;https://gospod-bog.ru;"111 pages, 57 article routes, 10 atlases; 77 CI gates instead of unit tests";951;143;2;2026-11-01
+TheLegendaryPoet;product-publishing;React 19+TS+Vite 7+Cloudflare Worker/D1;815;49063;11;1263;471;27170;23;https://thelegendarypoet.ru;12 poets, 3 published music tracks, suno/ and suno/clips/ protocols;327;88;2;2026-11-01
+video-channel-manager;platform-media-ops;Python 3.13+SQLAlchemy+Alembic;1809;219040;461;3194;608;12245;31;https://github.com/FedorMilovanov/video-channel-manager;111 YouTube-VK pairs, dated channel snapshots;523;0;2;2026-11-01
+mp3telegrambot;product-ai-pipeline;Python 3.12-3.13+Telegram+Gemini;1120;208644;579;2730;428;14109;20;https://github.com/FedorMilovanov/mp3telegrambot;57 docs;365;2;0;2026-11-01
+bible-bot;product-education;Python+Flask/Waitress+MongoDB+Mini App;691;89144;310;1596;176;7074;8;https://t.me/milovanovaibot;question bank for 1 Peter, 5 chapters;93;0;1;2026-11-01
+Milovi_Cake;product-commercial;vanilla HTML/CSS/JS+Python build+Playwright;452;48384;25;1228;111;3593;11;https://milovicake.ru;34 pages, 14 geo landings, 12 Playwright specs;94;12;4;2026-11-01
+Milovi_School;product-publishing;Astro SSG+TS+Python audits;443;32287;0;458;43;2274;7;https://french.milovicake.ru;157 articles, ~146k words;22;24;0;2026-11-01
+DeepMovieReview;experiment;Next.js App Router+strict TS;367;33494;2;153;113;882;1;https://deepmoviereview-preview.vercel.app;57 docs, 21 scenes, 41 evidence records;87;0;1;2026-11-01
+Research;infrastructure-research;Markdown+Python validators;2644;58278;0;3148;264;5617;58;https://github.com/FedorMilovanov/Research;2076 md docs, ~3.93M words;234;;4;2026-11-01
+AuditRepo;infrastructure-audit;Markdown+Python+mjs;2786;0;0;1952;485;6955;5;https://github.com/FedorMilovanov/AuditRepo;1920 md, 120.5 MB evidence;415;0;4;2026-11-01
+gb-vosk-tts;derived-library-tts;JavaScript browser ONNX;13;1319;2;5;0;0;0;https://github.com/FedorMilovanov/gb-vosk-tts;"integration of alphacep/vosk-tts (Apache-2.0) + own stress layer; NOT own engine";0;1;0;2026-11-01
+FedorMilovanov.github.io;stub;HTML;4;0;0;0;0;0;0;https://fedormilovanov.github.io;redirect to /gb-is-my-strength/;;;;2026-11-01
+baptist;abandoned;TypeScript;73;0;0;6;0;0;0;https://github.com/FedorMilovanov/baptist;archive candidate;;;;2026-11-01
+baptist2;abandoned;HTML;10;0;0;0;0;0;0;https://github.com/FedorMilovanov/baptist2;archive candidate;;;;2026-11-01
+baptist---2;abandoned;none;0;0;0;0;0;0;0;https://github.com/FedorMilovanov/baptist---2;delete candidate;;;;2026-11-01

@@ -1,0 +1,61 @@
+name: Portfolio claims
+
+# Гейт портфолио. Смысл в том, что «всё проверено» — это не утверждение в переписке,
+# а прогон, который падает при первом же расхождении.
+#
+# Второй шаг — негативный контроль: гейт портит одно число в копии реестра и обязан
+# упасть. Без него зелёный прогон означал бы только «скрипт не упал», а не «скрипт
+# вообще способен упасть».
+
+on:
+  pull_request:
+    paths:
+      - "PORTFOLIO/**"
+      - ".github/workflows/portfolio-claims.yml"
+  push:
+    branches: ["main"]
+    paths:
+      - "PORTFOLIO/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: portfolio-claims-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  gate:
+    name: claims gate
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Check out
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Verify claims registry against data
+        run: python3 PORTFOLIO/tools/check_claims.py
+
+      - name: Negative control — the gate must fail on a tampered claim
+        run: |
+          set -eu
+          work="$(mktemp -d)"
+          cp -r PORTFOLIO "$work/PORTFOLIO"
+          python3 - "$work/PORTFOLIO/CLAIMS.csv" <<'PY'
+          import sys
+          path = sys.argv[1]
+          text = open(path, encoding="utf-8").read()
+          # Портим первое считаемое утверждение: 824453 -> 824454.
+          broken = text.replace("824453", "824454", 1)
+          if broken == text:
+              raise SystemExit("negative control: нечего портить, реестр изменился")
+          open(path, "w", encoding="utf-8").write(broken)
+          PY
+          if python3 "$work/PORTFOLIO/tools/check_claims.py" >/dev/null 2>&1; then
+            echo "GATE IS VACUOUS: испорченный реестр прошёл проверку" >&2
+            exit 1
+          fi
+          echo "negative control OK: испорченное утверждение отвергнуто"

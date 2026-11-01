@@ -1,0 +1,60 @@
+# Dependabot открывает только PR для ревью. Политика мержа задаётся rulesets и CI:
+# в dependabot.yml нет поддерживаемого ключа `automerge`, и это осознанно.
+# Мажорные обновления — отдельная работа по совместимости, а не рутина бота.
+
+version: 2
+
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "04:30"
+      timezone: "Europe/Moscow"
+    open-pull-requests-limit: 3
+    rebase-strategy: "auto"
+    commit-message:
+      prefix: "deps"
+      include: "scope"
+    labels:
+      - "dependencies"
+    groups:
+      routine-minor-patch:
+        applies-to: version-updates
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+    ignore:
+      # Мажоры — явная работа по совместимости; обновляются вручную с прогоном проверок.
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "04:30"
+      timezone: "Europe/Moscow"
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: "deps"
+      include: "scope"
+    labels:
+      - "dependencies"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    commit-message:
+      prefix: "ci"
+      include: "scope"
+    labels:
+      - "dependencies"
+      - "ci"
+    # Обновление действий обязано оставаться полным SHA: обнови тег в комментарии,
+    # а SHA замени вручную — иначе гейт `workflow-hygiene` покраснеет.
