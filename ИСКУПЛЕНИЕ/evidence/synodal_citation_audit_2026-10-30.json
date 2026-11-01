@@ -1,0 +1,374 @@
+{
+ "generated": "2026-10-30",
+ "scope": "13 черновиков ИСКУПЛЕНИЕ/synthesis/drafts: все фрагменты в «ёлочках» с пометкой «Синодальный»",
+ "counts": {
+  "CONFIRMED": 21,
+  "NO_SOURCE_SUPPORTS": 22,
+  "NO_REF": 1
+ },
+ "corpora": [
+  {
+   "name": "rst-66 (github.com/onlydotbible/rst, parsed66)",
+   "basis": "Logos/RBO 1995, вычитка по печатным 2002 и 2016 (РБО/МП), 66 книг"
+  },
+  {
+   "name": "rsb (github.com/trevarj/rsb)",
+   "basis": "независимая транскрипция, 77 книг"
+  }
+ ],
+ "live_source": "bible.by, страницы /verse-syn/<книга>/<глава>/<стих>/ (Синодальный; там же издания 1876/1902/1947 и РБО 1824)",
+ "live_checked_count": 14,
+ "method": "Расхождение считается установленным, если его подтверждают оба свода; 14 позиций дополнительно сверены на bible.by.",
+ "findings": [
+  {
+   "file": "01_what-is-atonement.md",
+   "line": 34,
+   "ref": "1 Ин. 2:2, Синодальный",
+   "ref_source": "paren",
+   "quote_in_draft": "Он есть умилостивление за грехи наши, и не за наши только, но и за грехи всего мира",
+   "verse_text": "Он есть умилостивление за грехи наши, и не только за наши, но и за грехи всего мира.",
+   "corpora_status": {
+    "rst.tsv": "MISMATCH",
+    "rsb.tsv": "MISMATCH"
+   },
+   "live_checked": true,
+   "defect": "перестановка отрицания: «не за наши только» вместо «не только за наши»",
+   "status": "MISMATCH"
+  },
+  {
+   "file": "01_what-is-atonement.md",
+   "line": 42,
+   "ref": "Лев. 17:11",
+   "ref_source": "context",
+   "quote_in_draft": "душа тела в крови, и Я назначил её вам для очищения",
+   "verse_text": "потому что душа тела в крови, и Я назначил ее вам для жертвенника, чтобы очищать души ваши, ибо кровь сия душу очищает;",
+   "corpora_status": {
+    "rst.tsv": "MISMATCH",
+    "rsb.tsv": "MISMATCH"
+   },
+   "live_checked": true,
+   "defect": "подмена оборота: «для очищения» вместо «для жертвенника, чтобы очищать души ваши»",
+   "status": "MISMATCH"
+  },
+  {
+   "file": "01_what-is-atonement.md",
+   "line": 46,
+   "ref": "Ис. 53:12",
+   "ref_source": "context",
+   "quote_in_draft": "понёс на Себе грехи многих",
+   "verse_text": "Посему Я дам Ему часть между великими, и с сильными будет делить добычу, за то, что предал душу Свою на смерть, и к злодеям причтен был, тогда как Он понес на Себе грех многих и за преступников сделался ходатаем.",
+   "corpora_status": {
+    "rst.tsv": "MISMATCH",
+    "rsb.tsv": "MISMATCH"
+   },
+   "live_checked": false,
+   "defect": "число: «грехи многих» вместо «грех многих»",
+   "status": "MISMATCH"
+  },
+  {
+   "file": "01_what-is-atonement.md",
+   "line": 48,
+   "ref": "Ис. 53:6 (адрес восстановлен по контексту вручную)",
+   "ref_source": "paren",
+   "quote_in_draft": "Господь возложил на Него грехи всех нас",
+   "verse_text": "Все мы блуждали, как овцы, совратились каждый на свою дорогу: и Господь возложил на Него грехи всех нас.",
+   "corpora_status": {},
+   "live_checked": false,
+   "defect": "совпадение точное; пометка «(Синодальный)» стояла без адреса стиха",
+   "status": "RESOLVED_OK"
+  },
+  {
+   "file": "01_what-is-atonement.md",
+   "line": 56,
+   "ref": "Рим. 3:25",
+   "ref_source": "context",
+   "quote_in_draft": "в умилостивление верою в крови Его",
+   "verse_text": "Которого Бог предложил в жертву умилостивления в Крови Его через веру, для показания правды Его в прощении грехов, соделанных прежде,",
+   "corpora_status": {
+    "rst.tsv": "MISMATCH",
+    "rsb.tsv": "MISMATCH"
+   },
+   "live_checked": true,
+   "defect": "контаминация: «в умилостивление верою в крови Его» вместо «в жертву умилостивления в Крови Его через веру»",
+   "status": "MISMATCH"
+  },
+  {
+   "file": "02_why-the-cross-necessity.md",
+   "line": 31,
+   "ref": "Лев. 17:11, Синодальный",
+   "ref_source": "paren",
+   "quote_in_draft": "ибо кровь очищает душу",
+   "verse_text": "потому что душа тела в крови, и Я назначил ее вам для жертвенника, чтобы очищать души ваши, ибо кровь сия душу очищает;",
+   "corpora_status": {
+    "rst.tsv": "MISMATCH",
+    "rsb.tsv": "MISMATCH"
+   },
+   "live_checked": true,
+   "defect": "перестановка и пропуск «сия»: «ибо кровь очищает душу» вместо «ибо кровь сия душу очищает»; «да и по закону почти всё» вместо «да и все почти по закону»",
+   "status": "MISMATCH"
+  },
+  {
+   "file": "02_why-the-cross-necessity.md",
+   "line": 31,
+   "ref": "Евр. 9:22, Синодальный",
+   "ref_source": "paren",
+   "quote_in_draft": "да и по закону почти всё очищается кровью; и без пролития крови не бывает прощения",
+   "verse_text": "Да и все почти по закону очищается кровью, и без пролития крови не бывает прощения.",
+   "corpora_status": {
+    "rst.tsv": "MISMATCH",
+    "rsb.tsv": "MISMATCH"
+   },
+   "live_checked": true,
+   "defect": "перестановка и пропуск «сия»: «ибо кровь очищает душу» вместо «ибо кровь сия душу очищает»; «да и по закону почти всё» вместо «да и все почти по закону»",
+   "status": "MISMATCH"
+  },
+  {
+   "file": "03_nature-of-atonement.md",
+   "line": 40,
+   "ref": "Рим. 3:25, Синодальный, фрагмент",
+   "ref_source": "paren",
+   "quote_in_draft": "Которого Бог… поставил в жертву умилостивления в Крови Его",
+   "verse_text": "Которого Бог предложил в жертву умилостивления в Крови Его через веру, для показания правды Его в прощении грехов, соделанных прежде,",
+   "corpora_status": {
+    "rst.tsv": "MISMATCH",
+    "rsb.tsv": "MISMATCH"
+   },
+   "live_checked": true,
+   "defect": "чужой глагол: «поставил» вместо «предложил» (формулировка перевода Кассиана)",
+   "status": "MISMATCH"
+  },
+  {
+   "file": "06_world-all-many-hard-texts.md",
+   "line": 72,
+   "ref": "2 Пет. 2:1",
+   "ref_source": "context",
+   "quote_in_draft": "искупивший",
+   "verse_text": "Были и лжепророки в народе, как и у вас будут лжеучители, которые введут пагубные ереси и, отвергаясь искупившего их Господа, навлекут сами на себя скорую погибель.",
+   "corpora_status": {
+    "rst.tsv": "MISMATCH",
+    "rsb.tsv": "MISMATCH"
+   },
+   "live_checked": false,
+   "defect": "форма причастия: «искупивший» вместо «искупившего»",
+   "status": "MISMATCH"
+  },
+  {
+   "file": "06_world-all-many-hard-texts.md",
+   "line": 80,
+   "ref": "Рим. 8:31–34",
+   "ref_source": "context",
+   "quote_in_draft": "предал Сына Своего **за всех нас**",
+   "verse_text": "Что же сказать на это? Если Бог за нас, кто против нас? Тот, Который Сына Своего не пощадил, но предал Его за всех нас, как с Ним не дарует нам и всего? Кто будет обвинять избранных Божиих? Бог оправдывает их. Кто осуждает? Христос Иисус умер, но и воскрес: Он и одесную Бога, Он и ходатайствует за нас.",
+   "corpora_status": {
+    "rst.tsv": "MISMATCH",
+    "rsb.tsv": "MISMATCH"
+   },
+   "live_checked": false,
+   "defect": "сжатие двух сказуемых: пропущено «не пощадил, но» и «Его»; вставлено выделение **…**",
+   "status": "MISMATCH"
+  },
+  {
+   "file": "08_calvin-owen-amyraldianism.md",
+   "line": 32,
+   "ref": "1 Ин. 2:2, Синодальный",
+   "ref_source": "paren",
+   "quote_in_draft": "Он есть умилостивление за грехи наши, и не за наши только, но и за грехи всего мира",
+   "verse_text": "Он есть умилостивление за грехи наши, и не только за наши, но и за грехи всего мира.",
+   "corpora_status": {
+    "rst.tsv": "MISMATCH",
+    "rsb.tsv": "MISMATCH"
+   },
+   "live_checked": true,
+   "defect": "та же перестановка отрицания, что в A1",
+   "status": "MISMATCH"
+  },
+  {
+   "file": "08_calvin-owen-amyraldianism.md",
+   "line": 61,
+   "ref": "1 Тим. 2:4, Синодальный, фрагмент",
+   "ref_source": "paren",
+   "quote_in_draft": "Бог хочет, чтобы все люди спаслись",
+   "verse_text": "Который хочет, чтобы все люди спаслись и достигли познания истины.",
+   "corpora_status": {
+    "rst.tsv": "MISMATCH",
+    "rsb.tsv": "MISMATCH"
+   },
+   "live_checked": true,
+   "defect": "подлежащее подменено: «Бог хочет» вместо «Который хочет»",
+   "status": "MISMATCH"
+  },
+  {
+   "file": "09_free-offer-of-the-gospel.md",
+   "line": 34,
+   "ref": "Мф. 11:28, Синодальный",
+   "ref_source": "paren",
+   "quote_in_draft": "Придите ко Мне все тружащиеся и обременённые",
+   "verse_text": "Придите ко Мне, все труждающиеся и обремененные, и Я успокою вас;",
+   "corpora_status": {
+    "rst.tsv": "MISMATCH",
+    "rsb.tsv": "MISMATCH"
+   },
+   "live_checked": true,
+   "defect": "опечатка «тружащиеся» вместо «труждающиеся»; «всякому творению» вместо «всей твари» (форма издания «Свет на Востоке»); «всем людям повсюду» вместо «людям всем повсюду»",
+   "status": "MISMATCH"
+  },
+  {
+   "file": "09_free-offer-of-the-gospel.md",
+   "line": 34,
+   "ref": "Мк. 16:15, Синодальный",
+   "ref_source": "paren",
+   "quote_in_draft": "идите по всему миру и проповедуйте Евангелие всякому творению",
+   "verse_text": "И сказал им: идите по всему миру и проповедуйте Евангелие всей твари.",
+   "corpora_status": {
+    "rst.tsv": "MISMATCH",
+    "rsb.tsv": "MISMATCH"
+   },
+   "live_checked": true,
+   "defect": "опечатка «тружащиеся» вместо «труждающиеся»; «всякому творению» вместо «всей твари» (форма издания «Свет на Востоке»); «всем людям повсюду» вместо «людям всем повсюду»",
+   "status": "MISMATCH"
+  },
+  {
+   "file": "09_free-offer-of-the-gospel.md",
+   "line": 34,
+   "ref": "Деян. 17:30, Синодальный, фрагмент",
+   "ref_source": "paren",
+   "quote_in_draft": "Бог повелевает ныне всем людям повсюду покаяться",
+   "verse_text": "Итак, оставляя времена неведения, Бог ныне повелевает людям всем повсюду покаяться,",
+   "corpora_status": {
+    "rst.tsv": "MISMATCH",
+    "rsb.tsv": "MISMATCH"
+   },
+   "live_checked": true,
+   "defect": "опечатка «тружащиеся» вместо «труждающиеся»; «всякому творению» вместо «всей твари» (форма издания «Свет на Востоке»); «всем людям повсюду» вместо «людям всем повсюду»",
+   "status": "MISMATCH"
+  },
+  {
+   "file": "11_order-of-salvation.md",
+   "line": 45,
+   "ref": "Ин. 3:3, Синодальный",
+   "ref_source": "paren",
+   "quote_in_draft": "Если кто не родится свыше, не может увидеть Царствие Божие",
+   "verse_text": "Иисус сказал ему в ответ: истинно, истинно говорю тебе, если кто не родится свыше, не может увидеть Царствия Божия.",
+   "corpora_status": {
+    "rst.tsv": "MISMATCH",
+    "rsb.tsv": "MISMATCH"
+   },
+   "live_checked": false,
+   "defect": "падеж: «Царствие Божие» вместо «Царствия Божия»",
+   "status": "MISMATCH"
+  },
+  {
+   "file": "11_order-of-salvation.md",
+   "line": 47,
+   "ref": "Рим. 3:24, Синодальный, фрагмент",
+   "ref_source": "paren",
+   "quote_in_draft": "Оправдываются даром, по благодати Его, искуплением во Христе Иисусе",
+   "verse_text": "получая оправдание даром, по благодати Его, искуплением во Христе Иисусе,",
+   "corpora_status": {
+    "rst.tsv": "MISMATCH",
+    "rsb.tsv": "MISMATCH"
+   },
+   "live_checked": true,
+   "defect": "форма глагола: «Оправдываются даром» вместо «получая оправдание даром» (близко к тексту РБО 1824)",
+   "status": "MISMATCH"
+  },
+  {
+   "file": "11_order-of-salvation.md",
+   "line": 48,
+   "ref": "Рим. 8:15, Синодальный",
+   "ref_source": "paren",
+   "quote_in_draft": "Ибо вы приняли Духа усыновления, Которым взываем: „Авва, Отче!“",
+   "verse_text": "Потому что вы не приняли духа рабства, чтобы опять жить в страхе, но приняли Духа усыновления, Которым взываем: «Авва, Отче!»",
+   "corpora_status": {
+    "rst.tsv": "MISMATCH",
+    "rsb.tsv": "MISMATCH"
+   },
+   "live_checked": true,
+   "defect": "союз подменён: «Ибо вы приняли» вместо «но приняли» — потерян контраст с «духом рабства»",
+   "status": "MISMATCH"
+  },
+  {
+   "file": "11_order-of-salvation.md",
+   "line": 49,
+   "ref": "Евр. 12:14, Синодальный",
+   "ref_source": "paren",
+   "quote_in_draft": "без святости никто не увидит Господа",
+   "verse_text": "Старайтесь иметь мир со всеми и святость, без которой никто не увидит Господа.",
+   "corpora_status": {
+    "rst.tsv": "MISMATCH",
+    "rsb.tsv": "MISMATCH"
+   },
+   "live_checked": false,
+   "defect": "перестроено: «без святости» вместо «без которой»",
+   "status": "MISMATCH"
+  },
+  {
+   "file": "11_order-of-salvation.md",
+   "line": 51,
+   "ref": "Кол. 3:4, Синодальный, фрагмент",
+   "ref_source": "paren",
+   "quote_in_draft": "Когда же явится Христос… и мы явимся с Ним во славе",
+   "verse_text": "Когда же явится Христос, жизнь ваша, тогда и вы явитесь с Ним во славе.",
+   "corpora_status": {
+    "rst.tsv": "MISMATCH",
+    "rsb.tsv": "MISMATCH"
+   },
+   "live_checked": true,
+   "defect": "лицо подменено: «и мы явимся» вместо «тогда и вы явитесь»",
+   "status": "MISMATCH"
+  },
+  {
+   "file": "11_order-of-salvation.md",
+   "line": 65,
+   "ref": "Рим. 8:29–30, Синодальный, фрагмент",
+   "ref_source": "paren",
+   "quote_in_draft": "кого предузнал, тех и предопределил… и оправдал, и прославил",
+   "verse_text": "Ибо кого Он предузнал, тем и предопределил быть подобными образу Сына Своего, дабы Он был первородным между многими братиями. А кого Он предопределил, тех и призвал, а кого призвал, тех и оправдал; а кого оправдал, тех и прославил.",
+   "corpora_status": {
+    "rst.tsv": "MISMATCH",
+    "rsb.tsv": "MISMATCH"
+   },
+   "live_checked": true,
+   "defect": "грамматика цепочки: «тех и предопределил» вместо «тем и предопределил»; пропущено «тех» перед «оправдал»/«прославил»",
+   "status": "MISMATCH"
+  },
+  {
+   "file": "12_union-with-christ.md",
+   "line": 47,
+   "ref": "2 Кор. 5:17, Синодальный, фрагмент",
+   "ref_source": "paren",
+   "quote_in_draft": "если кто во Христе — новая тварь",
+   "verse_text": "Итак, кто во Христе, тот новая тварь; древнее прошло, теперь все новое.",
+   "corpora_status": {
+    "rst.tsv": "MISMATCH",
+    "rsb.tsv": "MISMATCH"
+   },
+   "live_checked": true,
+   "defect": "введено условие: «если кто во Христе — новая тварь» вместо «кто во Христе, тот новая тварь»",
+   "status": "MISMATCH"
+  },
+  {
+   "file": "13_justification-adoption-sanctification-perseverance.md",
+   "line": 41,
+   "ref": "Рим. 3:24, Синодальный, фрагмент",
+   "ref_source": "paren",
+   "quote_in_draft": "Оправдываются даром, по благодати Его, искуплением во Христе Иисусе",
+   "verse_text": "получая оправдание даром, по благодати Его, искуплением во Христе Иисусе,",
+   "corpora_status": {
+    "rst.tsv": "MISMATCH",
+    "rsb.tsv": "MISMATCH"
+   },
+   "live_checked": true,
+   "defect": "см. Рим. 3:24 в C1 и C3: «Оправдываются даром» вместо «получая оправдание даром»",
+   "status": "MISMATCH"
+  }
+ ],
+ "summary": {
+  "citations_total": 44,
+  "exact": 21,
+  "exact_after_manual_ref": 1,
+  "mismatch": 22,
+  "mismatch_live_verified": 14,
+  "mismatch_two_corpora_only": 8
+ }
+}
