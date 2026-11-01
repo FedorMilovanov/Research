@@ -25,21 +25,24 @@ machine-checked contracts — and I make the result verifiable.
 
 | Проект | Что это | Стек |
 |---|---|---|
-| [gospod-bog.ru](https://gospod-bog.ru) | Богословская библиотека: 111 страниц, десять атласов, офлайн-чтение, синтез речи с ударениями | Astro · vanilla JS · ONNX |
+| [gospod-bog.ru](https://gospod-bog.ru) | Богословская библиотека: 111 страниц, десять атласов, офлайн-чтение, озвучка в браузере (интеграция открытого vosk-tts + свой слой ударений) | Astro · vanilla JS · ONNX |
 | [thelegendarypoet.ru](https://thelegendarypoet.ru) | Редакционный сайт о русской поэзии и собственный API на Worker + D1 | React 19 · TS · Cloudflare |
 | [milovicake.ru](https://milovicake.ru) | Коммерческий сайт кондитера: PWA, 14 гео-лендингов, ноль зависимостей | HTML/CSS/JS · Playwright |
 | [french.milovicake.ru](https://french.milovicake.ru) | 157 статей о французской кондитерской школе | Astro SSG |
+| [YouTube @TheLegendaryPoet](https://www.youtube.com/@TheLegendaryPoet) | Канал о русской поэзии: 153 видео, 1,32 тыс. подписчиков, музыка и клипы, собранные с ИИ | Suno · ИИ-визуал · монтаж |
 | [@milovanovaibot](https://t.me/milovanovaibot) | Telegram-тренажёр по Первому посланию Петра и Mini App | Python · MongoDB |
 
 ## Цифры · Numbers
 
-`5` живых продуктов · `239` CI-пайплайнов · `≈120 000` запусков CI · `≈1 450` тестовых и QA-файлов ·
-`≈760 000` строк продуктового кода под управлением · `≈690 000` слов редакционного контента.
+`5` живых продуктов · `239` CI-пайплайнов · `119 919` запусков CI · `1 390` тестовых и QA-файлов ·
+`766 175` строк продуктового кода под управлением · `≈365 000` слов авторской прозы ·
+`153` видео и `1,32 тыс.` подписчиков на YouTube · `111` точных пар YouTube↔VK.
 
 ## Чем я занимаюсь · What I do
 
 - **Agent orchestration and verification** — контракты, fail-closed гейты, посткондиции, `never_replay`, single-writer locks.
 - **Editorial technology** — доказательные цифровые библиотеки: классы источников, локаторы, права, SEO, доступность.
+- **AI media production** — музыка в Suno по своим текстам и промтам, ИИ-визуал и клипы, кросс-платформенная дистрибуция с точной идентичностью объектов.
 - **Full-cycle product** — исследование → контент → сайт или бот → аналитика → эксплуатация.
 
 ## Как я работаю · How I work
@@ -70,7 +73,7 @@ machine-checked contracts — and I make the result verifiable.
 | `Research` | Evidence-based research backend: source classes A1–D, HOLD flags, machine-checked authority registries | `research` `knowledge-base` `python` `evidence` `governance` |
 | `AuditRepo` | Multi-agent audit system: evidence, verification, root-cause, compact MASTER, retirement | `audit` `ai-agents` `verification` `process` |
 | `DeepMovieReview` | Evidence-backed film analysis: Next.js App Router, scene-verified edition state machine, structured spoiler data | `nextjs` `typescript` `film` `editorial` `content-modeling` |
-| `gb-vosk-tts` | Russian stress layer for vosk-tts in the browser; JS port differentially tested against the Python package | `tts` `vosk` `onnxruntime` `russian` `accessibility` |
+| `gb-vosk-tts` | Browser integration of the open-source vosk-tts engine (Apache-2.0) plus a Russian stress layer; differential tests against the Python package | `tts` `vosk` `onnxruntime` `russian` `accessibility` |
 
 ## 3. Лицензии
 
@@ -92,7 +95,7 @@ machine-checked contracts — and I make the result verifiable.
 5. `Milovi_Cake` — коммерческое доказательство: сайт приносит заказы.
 6. `AuditRepo` — метод, то есть главный дифференциатор.
 
-`DeepMovieReview` и `gb-vosk-tts` — во вторую линию, после появления английских README.
+`DeepMovieReview` и `gb-vosk-tts` — во вторую линию, после появления английских README. `gb-vosk-tts` не выставлять вперёд до решения по лицензии (см. `AUDIT_RU.md` R11): движок чужой, а заявленный MIT поверх производного от Apache-2.0 требует проверки.
 
 ---
 

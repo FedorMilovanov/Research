@@ -1,16 +1,16 @@
 repository;kind;stack;files;loc;test_files;commits;pull_requests;ci_runs;workflow_files;live_url;content_notes
-gb-is-my-strength;product-publishing;Astro+MDX+vanilla JS+Python tooling;3308;77227;0;5257;1397;40000;77;https://gospod-bog.ru;111 astro pages, 57 article routes, ~484k Cyrillic words in components+data
-Research;infrastructure-research;Markdown+Python validators;2641;58278;0;3049;263;5613;56;https://github.com/FedorMilovanov/Research;2076 md docs, ~3.93M words
-video-channel-manager;platform-media-ops;Python 3.13+SQLAlchemy+Alembic;1809;219040;461;3194;608;12245;31;https://github.com/FedorMilovanov/video-channel-manager;322 markdown docs
+gb-is-my-strength;product-publishing;Astro+MDX+vanilla JS+Python tooling;3308;84800;0;5257;1398;40000;77;https://gospod-bog.ru;111 pages, 57 article routes, 10 atlases; 77 CI gates instead of unit tests
+TheLegendaryPoet;product-publishing;React 19+TS+Vite 7+Cloudflare Worker/D1;815;49063;11;1263;470;27170;23;https://thelegendarypoet.ru;12 poets, 3 published music tracks, suno/ and suno/clips/ protocols
+video-channel-manager;platform-media-ops;Python 3.13+SQLAlchemy+Alembic;1809;219040;461;3194;608;12245;31;https://github.com/FedorMilovanov/video-channel-manager;111 YouTube-VK pairs, dated channel snapshots
 mp3telegrambot;product-ai-pipeline;Python 3.12-3.13+Telegram+Gemini;1120;208644;579;2730;428;14109;20;https://github.com/FedorMilovanov/mp3telegrambot;57 docs
-TheLegendaryPoet;product-publishing;React 19+TS+Vite 7+Cloudflare Worker/D1;815;49063;84;1263;470;27176;23;https://thelegendarypoet.ru;12 poets, ~59k words in src/data, 84 qa files
-bible-bot;product-education;Python+Flask/Waitress+MongoDB+Mini App;691;89144;305;1596;176;7074;8;https://t.me/milovanovaibot;question bank for 1 Peter, 5 chapters
-Milovi_Cake;product-commercial;vanilla HTML/CSS/JS+Python build+Playwright;451;48380;12;1226;111;3590;11;https://milovicake.ru;34 pages, 14 geo landings
+bible-bot;product-education;Python+Flask/Waitress+MongoDB+Mini App;691;89144;310;1596;176;7074;8;https://t.me/milovanovaibot;question bank for 1 Peter, 5 chapters
+Milovi_Cake;product-commercial;vanilla HTML/CSS/JS+Python build+Playwright;452;48384;25;1228;111;3593;11;https://milovicake.ru;34 pages, 14 geo landings, 12 Playwright specs
 Milovi_School;product-publishing;Astro SSG+TS+Python audits;443;32287;0;458;43;2274;7;https://french.milovicake.ru;157 articles, ~146k words
-DeepMovieReview;experiment;Next.js App Router+strict TS;367;33494;3;153;113;880;1;https://deepmoviereview-preview.vercel.app;57 docs, 21 scenes, 41 evidence records
+DeepMovieReview;experiment;Next.js App Router+strict TS;367;33494;2;153;113;882;1;https://deepmoviereview-preview.vercel.app;57 docs, 21 scenes, 41 evidence records
+Research;infrastructure-research;Markdown+Python validators;2644;58278;0;3148;264;5617;56;https://github.com/FedorMilovanov/Research;2076 md docs, ~3.93M words
 AuditRepo;infrastructure-audit;Markdown+Python+mjs;2786;0;0;1952;485;6955;5;https://github.com/FedorMilovanov/AuditRepo;1920 md, 120.5 MB evidence
-gb-vosk-tts;library-tts;JavaScript browser ONNX;30;1218;2;5;0;0;0;https://github.com/FedorMilovanov/gb-vosk-tts;dictionary layer, differential tests vs Python package
-FedorMilovanov.github.io;stub;HTML;150;0;0;0;0;0;0;https://fedormilovanov.github.io;redirect to /gb-is-my-strength/
-baptist;abandoned;TypeScript;20;0;0;6;0;0;0;https://github.com/FedorMilovanov/baptist;archive candidate
-baptist2;abandoned;HTML;2;0;0;0;0;0;0;https://github.com/FedorMilovanov/baptist2;archive candidate
+gb-vosk-tts;derived-library-tts;JavaScript browser ONNX;13;1319;2;5;0;0;0;https://github.com/FedorMilovanov/gb-vosk-tts;integration of alphacep/vosk-tts (Apache-2.0) + own stress layer; NOT own engine
+FedorMilovanov.github.io;stub;HTML;4;0;0;0;0;0;0;https://fedormilovanov.github.io;redirect to /gb-is-my-strength/
+baptist;abandoned;TypeScript;73;0;0;6;0;0;0;https://github.com/FedorMilovanov/baptist;archive candidate
+baptist2;abandoned;HTML;10;0;0;0;0;0;0;https://github.com/FedorMilovanov/baptist2;archive candidate
 baptist---2;abandoned;none;0;0;0;0;0;0;0;https://github.com/FedorMilovanov/baptist---2;delete candidate

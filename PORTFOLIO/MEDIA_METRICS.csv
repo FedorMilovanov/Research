@@ -1,0 +1,12 @@
+surface;identity;metric;value;as_of;source_type;source;note
+YouTube;youtube.com/@TheLegendaryPoet;subscribers;1320;2026-11-01;owner-reported;channel dashboard;screenshot still required
+YouTube;youtube.com/@TheLegendaryPoet;videos;153;2026-11-01;owner-reported;channel dashboard;snapshots sum to 173 across different dates
+YouTube;UC-78ys2S3cQ3lpqgXfo-SvQ;shorts_in_snapshot;62;2026-09-12;repo-snapshot;video-channel-manager/content/instagram/legendary-poet-youtube-shorts-snapshot-20260912.json;yt-dlp
+YouTube;UC-78ys2S3cQ3lpqgXfo-SvQ;views_on_those_shorts;93281;2026-09-12;repo-snapshot;same file;median 994, max 26107
+YouTube;UC-78ys2S3cQ3lpqgXfo-SvQ;likes_on_those_shorts;3549;2026-09-12;repo-snapshot;same file;
+YouTube-VK;channel pair mapping;exact_pairs;111;2026-07-27;repo-snapshot;video-channel-manager/content/mappings/youtube-vk-reviewed-20260727.json;111 unique IDs on both sides
+VK;vk.com/thelegendarypoet;native_uploads;n/a;2026-10;repo-doc;docs/operations/current-state.md;native durable uploads, no reposts
+RuTube;rutube.ru/channel/74579453;channel;1;2026-11-01;repo-config;TheLegendaryPoet/src/config/site.ts;
+Telegram;@lordchrist + svodka + milovi-cake;managed_channels;3;2026-08-08;repo-snapshot;video-channel-manager/content/telegram/channels/*.json;target bindings, daily limits
+Instagram;legendary-poet;reel_jobs_planned;59;2026-08-20;repo-doc;video-channel-manager/content/instagram/master-content-production-backlog.md;status provider-inert, no writes
+Music;thelegendarypoet.ru;published_tracks;3;2026-11-01;repo-source;TheLegendaryPoet/src/data/library/musicTracks.ts;audioSha256 + waveform per track
