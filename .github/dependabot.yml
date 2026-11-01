@@ -1,0 +1,16 @@
+# Dependabot открывает только PR. Политика мержа задаётся rulesets и CI.
+version: 2
+
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    commit-message:
+      prefix: "ci"
+      include: "scope"
+    labels:
+      - "dependencies"
+      - "ci"
+    # Обновление действия обязано оставаться полным SHA: SHA заменяется вручную,
+    # иначе гейт `workflow-hygiene` покраснеет.
