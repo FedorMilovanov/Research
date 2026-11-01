@@ -18,6 +18,8 @@
       (дубль `### 9.N` — самый частый след ручного разрешения конфликта);
   H6  нет неотслеживаемых файлов, которые попадут в коммит «за компанию»
       (снимается ключом --allow-untracked);
+  H7  каждый путь `scripts/…` и `ИСКУПЛЕНИЕ/…`, упомянутый в журнале `18_…`,
+      существует в дереве — после мержа ссылки не должны вести в пустоту;
 
 Мягкие отчёты (не влияют на код возврата):
 
@@ -183,6 +185,20 @@ def scan_sections() -> tuple[list[str], list[str], dict]:
     return problems, notes, info
 
 
+REF = re.compile(r"`((?:scripts|ИСКУПЛЕНИЕ|docs)/[\w./()-]+\.(?:py|md|json|sh))`")
+
+
+def scan_referenced_paths() -> tuple[list[str], int]:
+    """H7: ссылки журнала на скрипты/файлы корпуса должны вести в существующие пути."""
+    if not AUDIT.is_file():
+        return [], 0
+    text = AUDIT.read_text(encoding="utf-8", errors="replace")
+    refs = sorted(set(REF.findall(text)))
+    missing = [r for r in refs
+               if not (ROOT / r).exists() and not (ROOT / "ИСКУПЛЕНИЕ" / r).exists()]
+    return missing, len(refs)
+
+
 def run_gates() -> list[tuple[str, bool, str]]:
     steps = [
         ("реестр доводов", ["scripts/atonement_claim_register.py", "--check"]),
@@ -259,6 +275,14 @@ def main() -> int:
     hard.extend(sec_problems)
     soft.extend(sec_notes)
     report["журнал"] = sec_info
+
+    # H7: ссылки журнала на скрипты и файлы корпуса
+    missing_refs, refs_total = scan_referenced_paths()
+    if missing_refs:
+        hard.append(f"журнал ссылается на {len(missing_refs)} несуществующих путей "
+                    f"(из {refs_total} проверенных): " + ", ".join(missing_refs[:5])
+                    + (" …" if len(missing_refs) > 5 else ""))
+    report["ссылок_в_журнале"] = refs_total
 
     # R1/R2: владельцы файлов и пересечение с main
     domains = load_domains()
