@@ -192,3 +192,18 @@
 **Что не удалось.** Доля успешных прогонов CI: `actions/runs?status=success|failure` возвращает `total_count`, зажатый на 2 500 (в четырёх репозиториях success и failure равны 2 500). Показатель не используется ни в одном документе.
 
 **Непроверенное, зафиксированное самим владельцем.** `AuditRepo` 29.10.2026: «branch-protection state not obtainable by integration and remains UNPROVEN». В портфолио защита ветвей не заявляется.
+
+---
+
+## 10. Шестой раунд: защитные механизмы
+
+| Утверждение | Как проверено | Результат |
+|---|---|---|
+| Пиннинг действий CI | регулярное выражение по всем `uses:` в 183 workflow | 576 пинов на 40-hex, 0 ссылок на теги и ветки |
+| Права workflow | поиск `permissions:` и `write-all` | 183 из 183 объявляют права, `write-all` — 0 |
+| `pull_request_target` | чтение обоих файлов целиком | `branch-cleanup.yml`: без `checkout`, с проверкой форка, префиксов и `main` |
+| Сканирование секретов | поиск gitleaks/trufflehog/secret в workflow и конфигах | gitleaks — 1 репозиторий, trufflehog — 1 workflow |
+| Тесты и строки | полные клоны `mp3telegrambot` (11,4 МБ) и `video-channel-manager` (95 МБ) | `vcm` 919 файлов / 219 040 строк — совпало; тестов 2 843 функции при 461 файле |
+| Branch protection | `GET /branches/main/protection` | **403 Resource not accessible by integration** — не оценивается |
+
+**Методическая заметка.** Числа, полученные через API (`open_issues_count`, `total_count` в actions), проверялись на артефакты пагинации и зажима; показатель успешности CI отброшен, потому что `total_count` упирается в 2 500.
