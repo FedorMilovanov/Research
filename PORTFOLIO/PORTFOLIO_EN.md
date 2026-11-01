@@ -110,7 +110,7 @@ An Astro SSG library on the French pastry tradition: chefs, techniques, recipes,
 
 ### 4.7 Channel and AI production — [@TheLegendaryPoet](https://www.youtube.com/@TheLegendaryPoet)
 
-**What exists.** Russian poetry set to music; long clips, short formats, poet playlists, community posts and quizzes. Music, visuals and editing are AI-assisted; the process is written down as protocols and a visual canon. Audience counters are deliberately not part of the portfolio — see `MEDIA_PRACTICE.md`.
+**What exists.** Russian poetry set to music; long clips, short formats, poet playlists, community posts and quizzes. Music, visuals and editing are AI-assisted; the process is written down as protocols and a visual canon. Audience counters are deliberately not part of the portfolio — see [MEDIA_PRACTICE.md](MEDIA_PRACTICE.md).
 
 **The production line.** A Suno department with a protocol that forbids rewriting the poem, resolves homographs instead of guessing, and defines pronunciation repair and review cases. A clips department with a visual canon, scene-by-scene storyboarding against the song's meaning, motion prompts only for approved frames, and acceptance rules. Three tracks published on the site with hashes and waveforms. Distribution with exact YouTube↔VK pairs, native VK uploads, RuTube, Telegram channels publishing on schedule, and prepared Reel jobs held at "rights not granted".
 
