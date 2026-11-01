@@ -89,6 +89,7 @@ Read-only audit snapshots, versioned change plans, exact remote IDs, per-target 
 **The engineering story.** The AI analyses; a deterministic executor acts. Agents never receive provider tokens. Ambiguous states are marked `never_replay`. The repository also holds the frozen 111-pair YouTube↔VK mapping and the dated channel snapshots.
 
 **Scale.** 919 modules · 219,040 LOC of Python · 461 tests · 31 workflows.
+Across nine repositories: 3,834 pull requests, 2,876 merged (75%), 39 open issues in total, 399 verification reports, and one full test run of 4,487 tests.
 
 ### 4.5 Commercial site, zero dependencies — [milovicake.ru](https://milovicake.ru)
 
