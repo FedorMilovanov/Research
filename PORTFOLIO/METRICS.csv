@@ -7,7 +7,7 @@ bible-bot;product-education;Python+Flask/Waitress+MongoDB+Mini App;691;89144;310
 Milovi_Cake;product-commercial;vanilla HTML/CSS/JS+Python build+Playwright;452;48384;25;1228;111;3593;11;https://milovicake.ru;34 pages, 14 geo landings, 12 Playwright specs;94;12;4;2026-11-01
 Milovi_School;product-publishing;Astro SSG+TS+Python audits;443;32287;0;458;43;2274;7;https://french.milovicake.ru;157 articles, ~146k words;22;24;0;2026-11-01
 DeepMovieReview;experiment;Next.js App Router+strict TS;367;33494;2;153;113;882;1;https://deepmoviereview-preview.vercel.app;57 docs, 21 scenes, 41 evidence records;87;0;1;2026-11-01
-Research;infrastructure-research;Markdown+Python validators;2644;58278;0;3148;264;5617;56;https://github.com/FedorMilovanov/Research;2076 md docs, ~3.93M words;234;;4;2026-11-01
+Research;infrastructure-research;Markdown+Python validators;2644;58278;0;3148;264;5617;58;https://github.com/FedorMilovanov/Research;2076 md docs, ~3.93M words;234;;4;2026-11-01
 AuditRepo;infrastructure-audit;Markdown+Python+mjs;2786;0;0;1952;485;6955;5;https://github.com/FedorMilovanov/AuditRepo;1920 md, 120.5 MB evidence;415;0;4;2026-11-01
 gb-vosk-tts;derived-library-tts;JavaScript browser ONNX;13;1319;2;5;0;0;0;https://github.com/FedorMilovanov/gb-vosk-tts;"integration of alphacep/vosk-tts (Apache-2.0) + own stress layer; NOT own engine";0;1;0;2026-11-01
 FedorMilovanov.github.io;stub;HTML;4;0;0;0;0;0;0;https://fedormilovanov.github.io;redirect to /gb-is-my-strength/;;;;2026-11-01

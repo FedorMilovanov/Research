@@ -16,7 +16,7 @@ St Petersburg, Russia (remote, UTC+3) · [gospod-bog.ru](https://gospod-bog.ru) 
 
 **Headline options**
 - I build systems you can trust an AI agent to work in: contracts, gates, evidence, rollback.
-- Five live products, a 153-video channel and 239 CI pipelines — one person plus agents.
+- Five live products, a 153-video channel and 241 CI pipelines — one person plus agents.
 - From research corpus to music video: product, content, engineering and media in one pair of hands.
 
 ---
@@ -38,7 +38,7 @@ Code and part of the media are AI-generated under my direction. Requirements, ar
 | | |
 |---|---|
 | 5 products live in production | 4 own domains |
-| 766,175 lines of application code under management (512,322 in six product repos) | 239 CI pipelines · 119,919 runs |
+| 766,175 lines of application code under management (512,322 in six product repos; 824,453 including research validators) | 241 CI pipelines · 119,919 runs |
 | 1,390 test and QA files | 20,990 commits in ten months |
 | ≈365,000 words of authored prose | 2,076 research documents |
 
@@ -89,7 +89,7 @@ Read-only audit snapshots, versioned change plans, exact remote IDs, per-target 
 **The engineering story.** The AI analyses; a deterministic executor acts. Agents never receive provider tokens. Ambiguous states are marked `never_replay`. The repository also holds the frozen 111-pair YouTube↔VK mapping and the dated channel snapshots.
 
 **Scale.** 919 modules · 219,040 LOC of Python · 461 tests · 31 workflows.
-Supply chain: 239 workflows, 658/658 external actions pinned to a full 40-character SHA (local `./.github/actions` excluded — they are pinned by the commit itself), 239/239 declare least-privilege permissions, zero `write-all`, and both `pull_request_target` workflows are fork-guarded with no checkout of PR code.
+Supply chain: 241 workflows, 754/754 external actions pinned to a full 40-character SHA (local `./.github/actions` excluded — they are pinned by the commit itself), 241/241 declare least-privilege permissions, zero `write-all`, and both `pull_request_target` workflows are fork-guarded with no checkout of PR code.
 
 Across nine repositories: 3,834 pull requests, 2,877 merged (75%), 16 open issues in total, 391 verification reports, and one full test run of 4,487 tests.
 
@@ -134,7 +134,7 @@ Two systems that exist because agents generate reports faster than humans can re
 **Backend and data.** Flask/Waitress, Telegram Bot API and Mini Apps, MongoDB Atlas, Cloudflare Workers and D1, SQLAlchemy and Alembic, Playwright.
 **AI.** Gemini API for video analysis, Yandex LiveDub, Suno for music, image and video generation for clips, ONNX Runtime Web with the open-source `vosk-tts` for in-browser speech, agent pipelines for task design, contracts and acceptance.
 **Media and distribution.** YouTube Data API, VK API, RuTube, Telegram Bot API, `yt-dlp`, ffmpeg, SHA-256 media fingerprints, waveforms.
-**Infrastructure.** GitHub Actions (239 pipelines), GitHub Pages, Vercel, Render, Docker, IndexNow, Pagefind, Lighthouse CI, service workers.
+**Infrastructure.** GitHub Actions (240 pipelines), GitHub Pages, Vercel, Render, Docker, IndexNow, Pagefind, Lighthouse CI, service workers.
 
 ---
 

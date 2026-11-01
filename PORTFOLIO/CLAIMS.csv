@@ -1,0 +1,42 @@
+id;category;claim_ru;value;unit;scope;source;method;computable;status;checked;note
+C-001;code;Строк кода всего по 15 репозиториям;824453;строк;15 репозиториев;METRICS.csv;сумма колонки loc;metrics_sum:loc:all;DERIVED;2026-11-01;включает 58 278 строк исследовательских валидаторов Research
+C-002;code;Прикладной код без валидаторов Research;766175;строк;14 репозиториев;METRICS.csv;loc минус Research;metrics_sum:loc:not=Research;DERIVED;2026-11-01;именно это число стоит в текстах как «строк прикладного кода»
+C-003;code;Код шести продуктовых репозиториев;512322;строк;6 репозиториев;METRICS.csv;сумма loc при kind~product-;metrics_sum:loc:kind~product-;DERIVED;2026-11-01;gb, TLP, mp3, bible, Milovi_Cake, Milovi_School
+C-004;code;Строк исследовательских валидаторов;58278;строк;Research;METRICS.csv;loc Research;metrics_field:Research:loc;DERIVED;2026-11-01;не смешивается с прикладным кодом
+C-005;code;Отслеживаемых файлов;14535;файлов;15 репозиториев;METRICS.csv;сумма колонки files;metrics_sum:files:all;DERIVED;2026-11-01;
+C-006;tests;Тестовых файлов;1390;файлов;15 репозиториев;METRICS.csv;сумма колонки test_files;metrics_sum:test_files:all;DERIVED;2026-11-01;у gb и Research тестов нет по устройству: гейты вместо юнит-тестов
+C-007;history;Коммитов всего;20990;коммитов;15 репозиториев;METRICS.csv;сумма колонки commits;metrics_sum:commits:all;DERIVED;2026-11-01;GraphQL-история
+C-008;history;Коммитов по девяти репозиториям (без Research);17842;коммитов;9 репозиториев;METRICS.csv;commits минус Research;metrics_sum:commits:not=Research;DERIVED;2026-11-01;пересчёт по клонам даёт 17 836 — расхождение 6 коммитов (0,03 %), не сведено
+C-009;history;Коммитов по клонам девяти репозиториев;17836;коммитов;9 репозиториев;клоны;git rev-list по 10 клонам;none;CONFIRMED;2026-11-01;второй независимый подсчёт; в текстах используется он
+C-010;pull-requests;Pull request всего;4098;PR;15 репозиториев;METRICS.csv;сумма колонки pull_requests;metrics_sum:pull_requests:all;DERIVED;2026-11-01;
+C-011;pull-requests;Pull request по девяти репозиториям;3834;PR;9 репозиториев;METRICS.csv;PR минус Research;metrics_sum:pull_requests:not=Research;DERIVED;2026-11-01;это число стоит в текстах как «3 834 PR»
+C-012;pull-requests;Смержено PR по девяти репозиториям;2877;PR;9 репозиториев;METRICS.csv;pr_merged минус Research;metrics_sum:pr_merged:not=Research;DERIVED;2026-11-01;75,0 % от 3 834
+C-013;pull-requests;Смержено PR всего;3111;PR;15 репозиториев;METRICS.csv;сумма колонки pr_merged;metrics_sum:pr_merged:all;DERIVED;2026-11-01;
+C-014;ci;Запусков CI;119919;запусков;15 репозиториев;METRICS.csv;сумма колонки ci_runs;metrics_sum:ci_runs:all;DERIVED;2026-11-01;доля зелёных прогонов не измерена — см. C-030
+C-015;ci;Workflow-файлов;241;файлов;10 репозиториев;METRICS.csv;сумма колонки workflow_files;metrics_sum:workflow_files:all;DERIVED;2026-11-01;183 в девяти + 58 в Research
+C-016;ci;Внешних uses в workflow;754;ссылок;10 репозиториев;measure_defense.py;полный обход файлов;measured;CONFIRMED;2026-11-01;вхождения, не уникальные пары
+C-017;ci;Из них прибиты к 40-hex SHA;754;ссылок;10 репозиториев;measure_defense.py;полный обход файлов;measured;CONFIRMED;2026-11-01;уникальных пар действие@ref — 62
+C-018;ci;Workflow с permissions верхнего уровня;241;файлов;10 репозиториев;measure_defense.py;полный обход файлов;measured;CONFIRMED;2026-11-01;permissions: write-all — 0
+C-019;ci;Workflow с mutable -latest раннером;109;файлов;10 репозиториев;measure_defense.py;полный обход файлов;measured;CONFIRMED;2026-11-01;единственное системное отступление от политики пинов
+C-020;ci;Репозиториев со сканированием секретов;2;репозиториев;10 репозиториев;measure_defense.py;поиск gitleaks в workflow;measured;CONFIRMED;2026-11-01;Research и mp3telegrambot; для video-channel-manager патч готов и проверен
+C-021;ci;Секретов найдено при сканировании истории;0;находок;весь актив;ручной скан;grep по 6 формам токенов;none;CONFIRMED;2026-11-01;заменяет gitleaks частично: правила уже, энтропия не проверяется
+C-022;quality;Отчётов REPORT.md;391;файлов;10 репозиториев;клоны;точное имя файла;none;CONFIRMED;2026-11-01;подсчёт по префиксу завышает до 399
+C-023;quality;Пакетов verification;111;пакетов;10 репозиториев;клоны;пути;none;CONFIRMED;2026-11-01;
+C-024;quality;Записей reverify;282;записей;10 репозиториев;клоны;grep;none;CONFIRMED;2026-11-01;
+C-025;quality;Активных единиц работы;57;единиц;10 репозиториев;реестр тем;ручная классификация;none;CONFIRMED;2026-11-01;30 системных тем
+C-026;quality;Закрытых записей реестра дефектов;119;записей;gb и TLP;DEFECT_CLASSES.md;ручной разбор;none;CONFIRMED;2026-11-01;gb 41, TLP 54, mp3 9, AuditRepo 11
+C-027;media;Подписчиков YouTube @TheLegendaryPoet;1320;подписчиков;YouTube;MEDIA_METRICS.csv;кабинет владельца;media_value:YouTube:subscribers;UNPROVEN;2026-11-01;скриншот ещё не снят: единственная цифра, которую нельзя проверить извне
+C-028;media;Видео на канале @TheLegendaryPoet;153;видео;YouTube;MEDIA_METRICS.csv;кабинет владельца;media_value:YouTube:videos;UNPROVEN;2026-11-01;снимки дают 173 (111 + 62) на другие даты; сумма не выдаётся за текущую
+C-029;media;Shorts в снимке;62;видео;YouTube;MEDIA_METRICS.csv;yt-dlp снимок 12.09.2026;media_value:YouTube:shorts_in_snapshot;CONFIRMED;2026-11-01;
+C-030;media;Просмотров на этих Shorts;93281;просмотров;YouTube;MEDIA_METRICS.csv;yt-dlp снимок 12.09.2026;media_value:YouTube:views_on_those_shorts;CONFIRMED;2026-11-01;медиана 994, максимум 26 107
+C-031;media;Лайков на этих Shorts;3549;лайков;YouTube;MEDIA_METRICS.csv;yt-dlp снимок 12.09.2026;media_value:YouTube:likes_on_those_shorts;CONFIRMED;2026-11-01;
+C-032;media;Точных пар YouTube-VK;111;пар;медиа;MEDIA_METRICS.csv;ревью-маппинг 27.07.2026;media_value:YouTube-VK:exact_pairs;CONFIRMED;2026-11-01;111 уникальных ID с обеих сторон
+C-033;media;Обычных видео в VK;2879;видео;VK;MEDIA_METRICS.csv;постмортем 31.07.2026;media_value:VK:ordinary_videos;CONFIRMED;2026-11-01;после подтверждённых удалений
+C-034;media;Публичных единиц богословского архива;1781;единиц;YouTube;MEDIA_METRICS.csv;repo-документ 31.07.2026;media_value:YouTube:public_items;CONFIRMED;2026-11-01;архив 11+ лет
+C-035;media;Публичных музыкальных треков;3;трека;thelegendarypoet.ru;MEDIA_METRICS.csv;repo-источник;media_value:Music:published_tracks;CONFIRMED;2026-11-01;audioSha256 и waveform на каждый
+C-036;media;Управляемых Telegram-каналов;3;канала;Telegram;MEDIA_METRICS.csv;repo-снимок;media_value:Telegram:managed_channels;CONFIRMED;2026-11-01;@lordchrist, svodka, milovi-cake
+C-037;words;Слов авторской прозы на публичных сайтах;365000;слов;сайты;ручной подсчёт;извлечение текста из astro-компонентов;none;UNPROVEN;2026-11-01;оценка, а не пересчёт: расхождение метода ±15 %
+C-038;words;Слов исследовательских документов;3930000;слов;10 репозиториев;ручной подсчёт;wc по md;none;CONFIRMED;2026-11-01;не складывается с прозой
+C-039;reliability;Доля зелёных прогонов CI;n/a;процент;15 репозиториев;GitHub API;невозможно;none;UNPROVEN;2026-11-01;actions/runs зажимает total_count на 2 500
+C-040;reliability;Branch protection и rulesets;n/a;состояние;15 репозиториев;GitHub API;403 Resource not accessible;none;UNPROVEN;2026-11-01;проверяется только вручную в настройках
+C-041;reliability;Трафик и выручка;n/a;метрики;проекты;аналитика;нет доступа;none;UNPROVEN;2026-11-01;в портфолио не заявляются
