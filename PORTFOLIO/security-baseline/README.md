@@ -18,7 +18,12 @@
 
 | Репозиторий | Дата | Что установлено | Проверка |
 |---|---|---|---|
-| `Research` | 01.11.2026 | `.github/workflows/security-baseline.yml`, `SECURITY.md`, `.gitleaks.toml`, `.github/dependabot.yml` | 57 workflow, 82/82 внешних действий на SHA, hygiene-джоба проходит локально |
+| `Research` | 01.11.2026 | `.github/workflows/security-baseline.yml`, `SECURITY.md`, `.gitleaks.toml`, `.github/dependabot.yml` | 57 workflow, 82/82 внешних действий на SHA, 11/11 checks в PR #286 |
+| `video-channel-manager` | 01.11.2026 | патч готов: только `.github/workflows/secret-scan.yml` — остальное в репозитории уже есть и проверяется `pytest` | локально 15 + 8 тестов зелёные, 32 workflow валидны, история (3 194 коммита) чиста по 6 формам токенов; **не отправлен**: у сессии нет прав записи в этот репозиторий |
+| `mp3telegrambot` | 01.11.2026 | ничего не требуется: secret-scan, `.gitleaks.toml`, `SECURITY.md`, dependabot, dependency-audit, codeql и тесты пинов уже на месте | 1 120 файлов, 20 workflow; контракт `ACTION_PINS` строже шаблона |
+
+Волна 1 разобрана в [`PORTFOLIO/wave1/`](../wave1/README.md): два репозитория,
+два разных вывода — «нужен ровно один контроль» и «не нужно ничего».
 
 В `Research` версия workflow адаптирована: нет джобы зависимостей (в репозитории нет `requirements*.txt`/`package-lock.json`), а обзор всей истории на расписании намеренно **не блокирующий** — пока исторические находки не разобраны. Блокирующим он станет отдельным решением после первого разбора, а не по умолчанию: красный гейт, который все игнорируют, хуже отсутствующего.
 
