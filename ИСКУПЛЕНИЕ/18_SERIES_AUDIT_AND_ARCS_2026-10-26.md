@@ -16,7 +16,7 @@ scripts/run_atonement_mutation_battery.py`, обход `docs/research/atonement/
 | Что | Файлов | Байт | Примечание |
 |---|---|---|---|
 | `docs/research/atonement/` — читательско-исследовательская полоса | 38 | 5 050 904 | 36 нумерованных разборов + `README.md` + таксономия |
-| `ИСКУПЛЕНИЕ/*.md` — корень отдела | 21 | 1 737 584 | от `00_CURRENT_AUTHORITY` до `18_SERIES_AUDIT`; `17_` один занимает 435 395, этот документ — 583 242 |
+| `ИСКУПЛЕНИЕ/*.md` — корень отдела | 21 | 1 738 507 | от `00_CURRENT_AUTHORITY` до `18_SERIES_AUDIT`; `17_` один занимает 435 395, этот документ — 584 165 |
 | под-ланы `ot` `nt` `fathers` `synthesis` | 56 | 2 417 029 | 18 / 16 / 12 / 10 файлов |
 | `ИСКУПЛЕНИЕ/synthesis/drafts/` — читательские черновики | 13 | 343 646 | 2038 переводов строки суммарно — прежнее определение (строки через split) давало 2051, разница по одному на файл без финального перевода; каждый 25,1–32 КБ (1 КБ = 1000 B) |
 | `ИСКУПЛЕНИЕ/data/` — корпус и индекс библиотеки | 2 | 1 540 072 | корпус 1 198 043 B, индекс 342 029 B; числа снимает scripts/atonement_reshoot_state.py --write, сверяет --check (шаг гейта); до этого в строке стоял срез круга 63 (1 145 507 B) |
@@ -3234,7 +3234,9 @@ CSEL, с. 527:
 
 Латинский том I, **с. 147**:
 
-> «**Miseritus ergo Creator ut redimeret**, illam ad se debuit reducere, quam in perpetratione culpae ex infirmitate aliquid constat habuisse; & eo altius debuit **apostatam angelum repellere**, quo cum a persistendi fortitudine corruit, nihil infirmum ex carne gestavit.»
+> «**Mifertus [Miseritus] ergo Creator ut redimeret**, illam ad se debuit reducere, quam in perpetratione culpae ex infirmitate aliquid constat habuisse; & eo altius debuit **apostatam angelum repellere**, quo cum a persistendi fortitudine corruit, nihil infirmum ex carne gestavit.»
+
+*(Сверено живьём 01.11.2026, повторным поиском по тому. Оговорка о записи: OCR печатает здесь «Mifertus» — длинное ſ распознано как f, плюс потеряна i; в квадратных скобках — моя нормализация. Слово в издании несомненно miseritus, но выдавать нормализацию за напечатанное чтение нельзя. «apostatam angelum repellere» OCR подтверждает: «apoftatam angelum rcpellere». То, что поиск по «Miseritus» даёт ноль совпадений, а по «Miferitus» — тоже ноль, есть свойство распознавания, а не отсутствие места.)*
 
 Bliss (с. 189): «Therefore when the Creator took compassion to work redemption, it was meet that He should bring back to Himself that creature, which, in the commission of sin, plainly had something of infirmity; and it was also meet that the apostate Angel should be driven down to a farther depth…»
 
@@ -3286,7 +3288,7 @@ Bliss (с. 189): «Therefore when the Creator took compassion to work redemption
 
 `11_` :163 — снять гипотезу «вероятно, *sine pretio*»: она проверена и **не подтвердилась** по мавристскому изданию 1768 г. (книги I–X; `pretio` — два совпадения, ни одно не на месте). Правильная формулировка: «латинское соответствие обороту “without price” в книгах I–X не найдено; маргиналия *sine* в английском томе — помета переводчика (по OCR)».
 
-Заодно к строке «лист 207 = с. 189» дописать латинский контроль: Moralia IV.8, изд. 1768, т. I, с. 147, «Miseritus ergo Creator ut redimeret… eo altius debuit apostatam angelum repellere».
+Заодно к строке «лист 207 = с. 189» дописать латинский контроль: Moralia IV.8, изд. 1768, т. I, с. 147, «Mifertus [Miseritus] ergo Creator ut redimeret… eo altius debuit apostatam angelum repellere» (в квадратных скобках — нормализация поверх OCR).
 
 #### 8. Границы
 
