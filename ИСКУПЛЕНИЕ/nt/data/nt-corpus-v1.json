@@ -269,7 +269,7 @@
         "citedReadings": 235,
         "equalWords": 150,
         "unequalWords": 85,
-        "scope": "Mechanical word-sequence comparison, not complete or certified NA27/NA28 divergence. Abbreviated readings need interpretation."
+        "scope": "Механическое сравнение последовательности слов; не полная и не заверенная сверка NA27/NA28. Считаются чтения с сиглой `NA` в TEI. По §9.131 эта сигла — не маркер NA27: официальный аппарат издателя цитирует NA28 в 6926 единицах и NA27 в 34. Сокращённые чтения требуют толкования."
       },
       "headerConflict": "NA witness header says edition 27 and date 1979; inconsistent. Record as source metadata conflict, do not certify edition identity or infer NA agreement from absence."
     },
@@ -1541,7 +1541,7 @@
       "citedReadings": 235,
       "equalWords": 150,
       "unequalWords": 85,
-      "scope": "Mechanical word-sequence comparison, not complete or certified NA27/NA28 divergence. Abbreviated readings need interpretation."
+      "scope": "Механическое сравнение последовательности слов; не полная и не заверенная сверка NA27/NA28. Считаются чтения с сиглой `NA` в TEI. По §9.131 эта сигла — не маркер NA27: официальный аппарат издателя цитирует NA28 в 6926 единицах и NA27 в 34. Сокращённые чтения требуют толкования."
     },
     "wordEquality": {
       "1 Пет 3:18": {
@@ -4230,7 +4230,7 @@
         "код": "12.15@12_NT_TEXTUAL_APPARATUS",
         "лан": "nt",
         "файл": "ИСКУПЛЕНИЕ/nt/12_NT_TEXTUAL_APPARATUS.md",
-        "строка": 562,
+        "строка": 571,
         "срез": "12.15 Слой «издание → чтение» проверен независимым текстом S8",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 1,
@@ -4524,8 +4524,8 @@
     ],
     "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
     "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check nt",
-    "measuredAt": "2026-10-31T15:54:23Z",
-    "checkedAt": "2026-10-31T15:54:23Z",
-    "предыдущийСъём": "2026-10-29T22:25:13Z"
+    "measuredAt": "2026-11-01T02:07:42Z",
+    "checkedAt": "2026-11-01T02:07:42Z",
+    "предыдущийСъём": "2026-10-31T15:54:23Z"
   }
 }

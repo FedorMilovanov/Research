@@ -404,5 +404,51 @@ class TregellesAttributionTests(unittest.TestCase):
                          ["2 Кор 1:7", "Ин 8:41", "Лк 12:28", "Мк 10:51", "Мф 25:27", "Откр 13:3"])
 
 
+class OfficialApparatusPinTests(unittest.TestCase):
+    """Пин официального аппарата SBLGNT (Faithlife/SBLGNT, CC BY 4.0) — §9.131."""
+
+    def setUp(self):
+        import json
+        import sblgnt_official_crosscheck as cross
+        self.cross = cross
+        self.pin = json.loads(cross.PIN.read_text(encoding="utf-8"))
+
+    def test_source_and_licence(self):
+        self.assertEqual(self.pin["source"]["repository"], "Faithlife/SBLGNT")
+        self.assertEqual(self.pin["source"]["license"], "CC BY 4.0")
+        self.assertEqual(self.pin["files"], 27)
+
+    def test_unit_counts(self):
+        self.assertEqual(self.pin["unitsOfficial"], 6926)
+        self.assertEqual(self.pin["unitsTei"], 6929)
+        self.assertEqual(self.pin["verses"], 4473)
+
+    def test_siglum_mapping_is_the_argmax(self):
+        scores = self.pin["hypothesisMatches"]
+        self.assertEqual(scores["без замены"], 0)
+        self.assertEqual(scores["NIV→NA28"], 4188)
+        best = max(scores, key=scores.get)
+        self.assertIn("NIV→NA28", best)
+        self.assertEqual(scores["NIV→NA28, NA→NIV"], 4189)
+        self.assertLess(scores["NA→NA28"], scores["NIV→NA28"])
+
+    def test_na27_is_rare_and_na_is_not_na27(self):
+        census = self.pin["officialCensus"]
+        self.assertEqual(census["NA27"], 34)
+        self.assertEqual(census["NA28"], 6926)
+        self.assertLess(census["NA27"], 100)
+
+    def test_dataset_digest_is_pinned(self):
+        self.assertEqual(self.pin["datasetSha256OfSortedFileDigests"],
+                         "8b175dd2f3cadcbb9062ae6ababfc609faef2f415656c573c377b1a602aca83c")
+
+    def test_mapping_applies_to_known_verse(self):
+        apparatus = self.cross.Apparatus()
+        entry = apparatus.at("Мф 8:25")
+        self.assertTrue(entry)
+        witnesses = {w for row in entry for reading in row["rdg"] for w in reading["wit"]}
+        self.assertIn("NIV", witnesses)
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -128,7 +128,7 @@ def computed_variants() -> dict:
             "TRMutualWordEquality": {ref: tr["S2"][ref] == tr["S3"][ref] == tr["S4"][ref] for ref in matrix},
             "NAReadingWordProbe": {"citedReadings": len(na_readings), "equalWords": na_equal,
                                    "unequalWords": len(na_readings) - na_equal,
-                                   "scope": "Mechanical word-sequence comparison, not complete or certified NA27/NA28 divergence. Abbreviated readings need interpretation."},
+                                   "scope": "Механическое сравнение последовательности слов; не полная и не заверенная сверка NA27/NA28. Считаются чтения с сиглой `NA` в TEI. По §9.131 эта сигла — не маркер NA27: официальный аппарат издателя цитирует NA28 в 6926 единицах и NA27 в 34. Сокращённые чтения требуют толкования."},
             "wordEquality": matrix, "controls": controls,
             "offerEqualInAllThreeTR": sum(all(matrix[ref].values()) for ref in OFFER_REFS),
             "signAgreement": sign_agreement,
