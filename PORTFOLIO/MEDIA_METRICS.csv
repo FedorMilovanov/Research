@@ -10,3 +10,9 @@ RuTube;rutube.ru/channel/74579453;channel;1;2026-11-01;repo-config;TheLegendaryP
 Telegram;@lordchrist + svodka + milovi-cake;managed_channels;3;2026-08-08;repo-snapshot;video-channel-manager/content/telegram/channels/*.json;target bindings, daily limits
 Instagram;legendary-poet;reel_jobs_planned;59;2026-08-20;repo-doc;video-channel-manager/content/instagram/master-content-production-backlog.md;status provider-inert, no writes
 Music;thelegendarypoet.ru;published_tracks;3;2026-11-01;repo-source;TheLegendaryPoet/src/data/library/musicTracks.ts;audioSha256 + waveform per track
+YouTube;youtube.com/@fedormilovanov;public_items;1781;2026-07-31;repo-doc;video-channel-manager/docs/operations/2026-07-31-youtube-vk-transfer-postmortem.md;theological archive, 11+ years
+YouTube;PLu2Bhoh2caiWr9lsuVokJkv4O7qyyecpB;playlist_videos;699;2026-11-01;live-page;youtube.com/@fedormilovanov/about;playlist "Проповеди"
+YouTube;PLu2Bhoh2caiXNTBVjfwEw5yja6I0ICgU6;playlist_videos;421;2026-11-01;live-page;youtube.com/@fedormilovanov/about;playlist "Джон МакАртур"
+VK;vk.ru/the_lord_god_is_my_strength;ordinary_videos;2879;2026-07-31;repo-doc;same postmortem;after 403 confirmed deletions
+RuTube;rutube.ru/channel/1876662;channel;1;2026-11-01;repo-doc;video-channel-manager/docs/operations/lord-god-strength-description-profile.md;
+Telegram;@lordchrist;channel;1;2026-11-01;repo-doc;same;

@@ -29,6 +29,7 @@ machine-checked contracts — and I make the result verifiable.
 | [thelegendarypoet.ru](https://thelegendarypoet.ru) | Редакционный сайт о русской поэзии и собственный API на Worker + D1 | React 19 · TS · Cloudflare |
 | [milovicake.ru](https://milovicake.ru) | Коммерческий сайт кондитера: PWA, 14 гео-лендингов, ноль зависимостей | HTML/CSS/JS · Playwright |
 | [french.milovicake.ru](https://french.milovicake.ru) | 157 статей о французской кондитерской школе | Astro SSG |
+| [YouTube @fedormilovanov](https://www.youtube.com/@fedormilovanov) | Теологический архив: ≈1 781 публичный элемент за 11 лет; «Проповеди» — 699 видео, «Джон МакАртур» — 421, «Вопросы и ответы» — 199; дистрибуция в VK (≈2 879 видео) | YouTube API · VK API |
 | [YouTube @TheLegendaryPoet](https://www.youtube.com/@TheLegendaryPoet) | Канал о русской поэзии: 153 видео, 1,32 тыс. подписчиков, музыка и клипы, собранные с ИИ | Suno · ИИ-визуал · монтаж |
 | [@milovanovaibot](https://t.me/milovanovaibot) | Telegram-тренажёр по Первому посланию Петра и Mini App | Python · MongoDB |
 
@@ -36,7 +37,7 @@ machine-checked contracts — and I make the result verifiable.
 
 `5` живых продуктов · `239` CI-пайплайнов · `119 919` запусков CI · `1 390` тестовых и QA-файлов ·
 `766 175` строк продуктового кода под управлением · `≈365 000` слов авторской прозы ·
-`153` видео и `1,32 тыс.` подписчиков на YouTube · `111` точных пар YouTube↔VK.
+`153` видео и `1,32 тыс.` подписчиков на канале о поэзии · `≈1 781` видео в теологическом архиве · `111` точных пар YouTube↔VK.
 
 ## Чем я занимаюсь · What I do
 
