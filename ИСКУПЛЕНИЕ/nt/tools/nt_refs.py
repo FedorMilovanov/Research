@@ -87,3 +87,47 @@ def s1_verses() -> dict[str, list[list[str]]]:
     if not result:
         raise ValueError("S1 has no parsed verses")
     return result
+
+# --- Сиглы SBLGNT внутри S1 ---------------------------------------------------
+# MorphGNT хранит знаки SBLGNT в поле 4 (индекс 4): ⸀ одиночное слово, ⸁ одиночное
+# слово (второй уровень), ⸂…⸃ и ⸄…⸅ — пролёты. Поле 5 — чистый текст, знаков в
+# нём нет; именно поэтому «S1 сигл не хранит» — неверное чтение формата, а не факт.
+SIGN_MARKS = "⸀⸁⸂⸃⸄⸅"
+SIGN_PAIRS = ("⸂", "⸄")
+
+
+def s1_sign_tokens(ref: str) -> list[str]:
+    """Токены стиха, несущие знаки SBLGNT (поле 4)."""
+    return [row[4] for row in s1_verses()[ref] if any(m in row[4] for m in SIGN_MARKS)]
+
+
+def s1_sign_spans(rows: list[list[str]]) -> int:
+    """Число позиций, помеченных знаками: одиночные ⸀/⸁ и открывающие ⸂/⸄."""
+    total = 0
+    for row in rows:
+        text = row[4]
+        if "⸀" in text or "⸁" in text:
+            total += 1
+        if any(pair in text for pair in SIGN_PAIRS):
+            total += 1
+    return total
+
+
+def s1_sign_inventory() -> dict[str, int]:
+    """Счёт знаков по всему S1 — пин против «знаков нет» и против смены транскрипции."""
+    counts = {mark: 0 for mark in SIGN_MARKS}
+    for rows in s1_verses().values():
+        for row in rows:
+            for mark in SIGN_MARKS:
+                counts[mark] += row[4].count(mark)
+    return counts
+
+
+def s1_sign_spans_by_ref() -> dict[str, int]:
+    """Число помеченных позиций по стихам (стихи без знаков не попадают в словарь)."""
+    result = {}
+    for ref, rows in s1_verses().items():
+        spans = s1_sign_spans(rows)
+        if spans:
+            result[ref] = spans
+    return result

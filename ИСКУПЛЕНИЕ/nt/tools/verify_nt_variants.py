@@ -15,7 +15,7 @@ sys.dont_write_bytecode = True
 import unicodedata
 
 from nt_sources import registry, witness_dir
-from nt_refs import BOOKS, s1_verses
+from nt_refs import BOOKS, s1_sign_spans, s1_verses
 from sbl_apparatus import Apparatus
 from verify_nt_facts import OFFER_REFS
 
@@ -107,13 +107,32 @@ def computed_variants() -> dict:
     na_readings = [(e["lem"], rd["text"]) for entries in app.entries.values()
                    for e in entries for rd in e["rdg"] if "NA" in rd["wit"]]
     na_equal = sum(greek_words(lem) == greek_words(text) for lem, text in na_readings)
+    verses = s1_verses()
+    sign_rows = {ref: (s1_sign_spans(rows), len(app.at(ref))) for ref, rows in verses.items()}
+    sign_bad = sorted(ref for ref, (a, b) in sign_rows.items() if a != b)
+    from tregelles_attribution import check_tregelles_attribution
+    treg = check_tregelles_attribution()
+    treg_pin = {"stats": treg["stats"], "total": treg["total"],
+                "contentMismatchRefs": sorted(r[0] for r in treg["mismatches"] if r[3] == "содержательное"),
+                "scope": "Атрибуция S7 изданиям против текста S8 (Tregelles); орфографический допуск, "
+                         "артефакты деления стиха отделены от содержательных расхождений. Рукописей не касается."}
+    sign_agreement = {"s1Positions": sum(a for a, _ in sign_rows.values()),
+                      "s7Entries": sum(b for _, b in sign_rows.values()),
+                      "versesCompared": len(sign_rows),
+                      "versesAgreeing": len(sign_rows) - len(sign_bad),
+                      "mismatches": sign_bad,
+                      "scope": "Число помеченных позиций S1 (поле 4) против числа <app> S7 по стихам; "
+                               "одиночные ⸀/⸁ и открывающие ⸂/⸄ считаются за одну позицию. "
+                               "Не сверка чтений и не атрибуция рукописям."}
     return {"normalization": "Robinson ASCII, no accents/case/punctuation; whole word sequence, not byte identity",
             "TRMutualWordEquality": {ref: tr["S2"][ref] == tr["S3"][ref] == tr["S4"][ref] for ref in matrix},
             "NAReadingWordProbe": {"citedReadings": len(na_readings), "equalWords": na_equal,
                                    "unequalWords": len(na_readings) - na_equal,
-                                   "scope": "Mechanical word-sequence comparison, not complete or certified NA27/NA28 divergence. Abbreviated readings need interpretation."},
+                                   "scope": "Механическое сравнение последовательности слов; не полная и не заверенная сверка NA27/NA28. Считаются чтения с сиглой `NA` в TEI. По §9.131 эта сигла — не маркер NA27: официальный аппарат издателя цитирует NA28 в 6926 единицах и NA27 в 34. Сокращённые чтения требуют толкования."},
             "wordEquality": matrix, "controls": controls,
-            "offerEqualInAllThreeTR": sum(all(matrix[ref].values()) for ref in OFFER_REFS)}
+            "offerEqualInAllThreeTR": sum(all(matrix[ref].values()) for ref in OFFER_REFS),
+            "signAgreement": sign_agreement,
+            "tregellesAttribution": treg_pin}
 
 
 def main() -> int:
@@ -127,7 +146,8 @@ def main() -> int:
     if actual != registry()["verifiedVariantControls"]:
         print("FAIL: word-level variant controls differ from SSOT; use --dump")
         return 1
-    print(f"PASS: {len(actual['wordEquality'])} S1/TR verse controls, explicit Heb 2:9 S7 attribution, 5 S8 controls")
+    print(f"PASS: {len(actual['wordEquality'])} S1/TR verse controls, explicit Heb 2:9 S7 attribution, 5 S8 controls, "
+          f"{actual['tregellesAttribution']['total']} S7->S8 attribution checks")
     return 0
 
 

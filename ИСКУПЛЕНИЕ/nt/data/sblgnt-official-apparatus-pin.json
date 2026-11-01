@@ -1,0 +1,35 @@
+{
+  "verses": 4473,
+  "unitsOfficial": 6926,
+  "unitsTei": 6929,
+  "officialCensus": {
+    "Greeven": 1,
+    "Holmes": 46,
+    "NA27": 34,
+    "NA28": 6926,
+    "NIV": 234,
+    "RP": 6927,
+    "TR": 5,
+    "Treg": 6926,
+    "Tregmarg": 2,
+    "WH": 6926,
+    "WHapp": 2,
+    "WHmarg": 33
+  },
+  "hypothesisMatches": {
+    "без замены": 0,
+    "NIV→NA28": 4188,
+    "NA→NA28": 80,
+    "NIV→NA28, NA→NIV": 4189
+  },
+  "datasetSha256OfSortedFileDigests": "8b175dd2f3cadcbb9062ae6ababfc609faef2f415656c573c377b1a602aca83c",
+  "files": 27,
+  "bytes": 511907,
+  "source": {
+    "repository": "Faithlife/SBLGNT",
+    "dir": "data/sblgntapp/text",
+    "license": "CC BY 4.0",
+    "version": "v1.2 (2023-07-10)",
+    "fetch": "api.github.com contents API"
+  }
+}

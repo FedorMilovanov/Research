@@ -6,6 +6,7 @@ import hashlib
 import io
 import json
 import os
+import re
 from pathlib import Path
 import sys
 import tarfile
@@ -32,8 +33,18 @@ class GreekBoundaryTests(unittest.TestCase):
         self.assertEqual(citations.norm(q), citations.norm(unicodedata.normalize("NFD", q)))
 
     def test_word_spaces_survive(self):
-        self.assertEqual(citations.norm("λύτρον ἀντὶ πολλῶν"), "λύτρον ἀντὶ πολλῶν")
+        # Контракт: границы слов и наличие/позиция ударения сохраняются;
+        # нормализуется только позиционная мена острого и тяжёлого (см. ниже).
+        self.assertEqual(citations.norm("λύτρον ἀντὶ πολλῶν"), "λύτρον ἀντί πολλῶν")
         self.assertNotEqual(citations.norm("λύτρονἀντὶπολλῶν"), citations.norm("λύτρον ἀντὶ πολλῶν"))
+
+    def test_final_grave_equals_final_acute(self):
+        self.assertEqual(citations.norm("παντός"), citations.norm("παντὸς"))
+
+    def test_accent_presence_and_position_still_matter(self):
+        self.assertNotEqual(citations.norm("τίς"), citations.norm("τις"))
+        self.assertNotEqual(citations.norm("ἀλλά"), citations.norm("ἄλλα"))
+        self.assertNotEqual(citations.norm("παντός"), citations.norm("πάντος"))
 
     def test_substring_is_not_quote(self):
         self.assertFalse(citations.occurs("λυτρ", " ἀπολύτρωσις λύτρον "))
@@ -236,6 +247,31 @@ class MethodTests(unittest.TestCase):
         self.assertTrue(self.check(self.CARD.replace("`extent`", "`extent` + `whatever`"), discipline.check_axis))
 
 
+class ForbiddenPhraseTests(unittest.TestCase):
+    """Списки запрета не должны читаться как утверждения, и наоборот."""
+
+    def probe(self, line):
+        return discipline._norm(discipline._mask_prohibitions(discipline._mask_mentions(line)))
+
+    def test_prohibition_list_masks_phrase(self):
+        line = "**Нельзя:** объявлять стих решённым; приписывать Кальвину сноску редактора."
+        self.assertIsNone(re.search(r"стих\s+реш[ёе]н", self.probe(line)))
+
+    def test_prohibition_scope_stops_at_semicolon(self):
+        line = "Здесь текст закрыт; нельзя медлить с проверкой."
+        self.assertIsNotNone(re.search(r"текст\s+закрыт", self.probe(line)))
+
+    def test_prohibition_without_negation_still_flags(self):
+        line = "Можно объявлять стих решённым и идти дальше."
+        self.assertIsNotNone(re.search(r"стих\s+реш[ёе]н", self.probe(line)))
+
+    def test_negated_assertion_masked_but_quoted_mention_kept(self):
+        line = "Нельзя утверждать, что тексты закрыты; в 5:18 `πάντες` — все без изъятия."
+        probe = self.probe(line)
+        self.assertIsNone(re.search(r"текст\w*\s+закрыт", probe))
+        self.assertIn("5:18", probe)
+
+
 class ParserAndExitTests(unittest.TestCase):
     def test_tf_empty_feature_slots_preserved(self):
         with tempfile.TemporaryDirectory() as d:
@@ -267,6 +303,24 @@ class ParserAndExitTests(unittest.TestCase):
         with self.assertRaises(ValueError): manuscripts.main(["--verfiy"])
 
 
+class UniquePathsTests(unittest.TestCase):
+    """Один файл обязан проверяться один раз, как бы его ни назвали."""
+
+    def test_same_file_absolute_and_relative_is_one(self):
+        import os
+        base = Path(citations.CARD_DIR)
+        abs_path = base / "09_NT_EXTENT_THREE_COLUMN_TABLE.md"
+        rel_path = Path(os.path.relpath(abs_path, Path.cwd()))
+        self.assertNotEqual(str(abs_path), str(rel_path))
+        self.assertEqual(len(citations.unique_paths([abs_path, rel_path])), 1)
+
+    def test_distinct_files_both_kept_in_order(self):
+        base = Path(citations.CARD_DIR)
+        a = base / "09_NT_EXTENT_THREE_COLUMN_TABLE.md"
+        b = base / "11_NT_LXX_COLLATION.md"
+        self.assertEqual(citations.unique_paths([a, b, a]), [a, b])
+
+
 class RunnerTests(unittest.TestCase):
     def test_default_no_implicit_fetch_and_genesis_in_scope(self):
         names = [name for name, argv in run_audit.commands()]
@@ -287,6 +341,113 @@ class RunnerTests(unittest.TestCase):
             records = run_audit.run_checks([("check",[sys.executable,"-c","print('PASS')"])],Path(d),dict(os.environ))
             self.assertEqual(records[0]["rc"],1)
             self.assertIn("tree mutated",(Path(d)/"01.log").read_text())
+
+
+class SignTests(unittest.TestCase):
+    """Знаки SBLGNT живут в поле 4 MorphGNT; §9.122 утверждал обратное."""
+
+    def test_inventory_is_pinned(self):
+        self.assertEqual(refs.s1_sign_inventory(),
+                         {"⸀": 5114, "⸁": 46, "⸂": 1764, "⸃": 1765, "⸄": 6, "⸅": 5})
+
+    def test_clean_field_has_no_signs(self):
+        for row in refs.s1_verses().values():
+            for token in row:
+                self.assertFalse(any(m in token[5] for m in refs.SIGN_MARKS), token)
+
+    def test_spans_per_verse(self):
+        verses = refs.s1_verses()
+        self.assertEqual(refs.s1_sign_spans(verses["Мф 20:28"]), 0)
+        self.assertEqual(refs.s1_sign_spans(verses["Мк 10:45"]), 0)
+        self.assertEqual(refs.s1_sign_spans(verses["Евр 2:9"]), 1)
+        self.assertEqual(refs.s1_sign_spans(verses["Мк 14:24"]), 2)
+        self.assertEqual(refs.s1_sign_spans(verses["Деян 20:28"]), 3)
+
+    def test_marked_token_locators(self):
+        self.assertIn("⸀τῆς", refs.s1_sign_tokens("Мк 14:24"))
+        self.assertIn("⸂ἐκχυννόμενον", refs.s1_sign_tokens("Мк 14:24"))
+        self.assertIn("⸀θεοῦ,", refs.s1_sign_tokens("Деян 20:28"))
+        self.assertEqual(refs.s1_sign_tokens("Мф 20:28"), [])
+
+    def test_total_positions_pinned(self):
+        by_ref = refs.s1_sign_spans_by_ref()
+        self.assertEqual(sum(by_ref.values()), 6930)
+        self.assertEqual(len(by_ref), 4472)
+
+
+class TregellesAttributionTests(unittest.TestCase):
+    """Слой атрибуции S7 проверяется независимым текстом S8 (Tregelles)."""
+
+    def test_s8_verses_parsed(self):
+        import tregelles_attribution as treg
+        self.assertEqual(len(treg.s8_verses()), 7958)
+        self.assertEqual(treg.s8_verses()["Мф 1:1"][:3], ["biblos", "genesews", "ihsou"])
+
+    def test_movable_nu_inside_brackets(self):
+        import tregelles_attribution as treg
+        self.assertEqual(treg.reading_words("ἤνοιξε[ν]"), ["hnoixen"])
+        self.assertEqual(treg.reading_words("ἀπειθοῦσι[ν]"), ["apeiyousin"])
+
+    def test_orthographic_tolerance_is_not_semantic(self):
+        import tregelles_attribution as treg
+        self.assertTrue(treg.close_enough("iwannou", "iwanou"))
+        self.assertTrue(treg.close_enough("daueid", "dauid"))
+        self.assertFalse(treg.close_enough("ou", "ouk"))
+
+    def test_attribution_pins(self):
+        import tregelles_attribution as treg
+        result = treg.check_tregelles_attribution()
+        self.assertEqual(result["total"], 6931)
+        self.assertEqual(result["stats"]["совпало"], 6753)
+        self.assertEqual(result["stats"]["разошлось: содержательное"], 6)
+        self.assertEqual(sorted(r[0] for r in result["mismatches"] if r[3] == "содержательное"),
+                         ["2 Кор 1:7", "Ин 8:41", "Лк 12:28", "Мк 10:51", "Мф 25:27", "Откр 13:3"])
+
+
+class OfficialApparatusPinTests(unittest.TestCase):
+    """Пин официального аппарата SBLGNT (Faithlife/SBLGNT, CC BY 4.0) — §9.131."""
+
+    def setUp(self):
+        import json
+        import sblgnt_official_crosscheck as cross
+        self.cross = cross
+        self.pin = json.loads(cross.PIN.read_text(encoding="utf-8"))
+
+    def test_source_and_licence(self):
+        self.assertEqual(self.pin["source"]["repository"], "Faithlife/SBLGNT")
+        self.assertEqual(self.pin["source"]["license"], "CC BY 4.0")
+        self.assertEqual(self.pin["files"], 27)
+
+    def test_unit_counts(self):
+        self.assertEqual(self.pin["unitsOfficial"], 6926)
+        self.assertEqual(self.pin["unitsTei"], 6929)
+        self.assertEqual(self.pin["verses"], 4473)
+
+    def test_siglum_mapping_is_the_argmax(self):
+        scores = self.pin["hypothesisMatches"]
+        self.assertEqual(scores["без замены"], 0)
+        self.assertEqual(scores["NIV→NA28"], 4188)
+        best = max(scores, key=scores.get)
+        self.assertIn("NIV→NA28", best)
+        self.assertEqual(scores["NIV→NA28, NA→NIV"], 4189)
+        self.assertLess(scores["NA→NA28"], scores["NIV→NA28"])
+
+    def test_na27_is_rare_and_na_is_not_na27(self):
+        census = self.pin["officialCensus"]
+        self.assertEqual(census["NA27"], 34)
+        self.assertEqual(census["NA28"], 6926)
+        self.assertLess(census["NA27"], 100)
+
+    def test_dataset_digest_is_pinned(self):
+        self.assertEqual(self.pin["datasetSha256OfSortedFileDigests"],
+                         "8b175dd2f3cadcbb9062ae6ababfc609faef2f415656c573c377b1a602aca83c")
+
+    def test_mapping_applies_to_known_verse(self):
+        apparatus = self.cross.Apparatus()
+        entry = apparatus.at("Мф 8:25")
+        self.assertTrue(entry)
+        witnesses = {w for row in entry for reading in row["rdg"] for w in reading["wit"]}
+        self.assertIn("NIV", witnesses)
 
 
 if __name__ == "__main__":
