@@ -8,7 +8,7 @@
 **Evidence policy:** [`data/repository-evidence-policy-v2.json`](../../data/repository-evidence-policy-v2.json)
 **Консолидированный аудит ветки:** [`14_NT_BRANCH_AUDIT_2026-10-12.md`](14_NT_BRANCH_AUDIT_2026-10-12.md) (research merge и publication разделены).
 
-**Карточка-исследование 2026-10-23:** [`15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md`](15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md) — Ин 11:52: статус «чад Божиих» до веры; основание: вопрос владельца 2026-10-23; `EVIDENCE_HOLD` не снят, вердикта нет.
+**Карточка-исследование 2026-10-23, исправлена 2026-11-03:** [`15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md`](15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md) — Ин. 11:52: именование чад до собирания, собирание как цель смерти Христа, контекст и границы вывода. Прежнее описание «статус чад до веры» как уже установленного факта — **SUPERSEDED**. C-25 **OPEN** по полному основанию именования и объёму; локальные грамматические и контекстные выводы обоснованы, не блокируются общим HOLD.
 **Машинный SSOT:** [`data/nt-corpus-v1.json`](data/nt-corpus-v1.json)
 
 Этот файл — corpus-specific evidence graph **под-корпуса** новозаветной экзегезы искупления. Он **не** корневой, **не** перекрывает родительский корпус и **не** разрешает публикацию. `Research closure ≠ Product write ≠ publication approval`.

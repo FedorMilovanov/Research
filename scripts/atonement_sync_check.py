@@ -15,6 +15,10 @@ snapshots. It does not download private sources. An optional read-only replay is
   python3 -B scripts/atonement_sync_check.py --prokopenko-pdf /outside/repo/article.pdf
 That option needs pypdf (the recorded extraction used 6.21.4); ordinary CI does not.
 Without it, PASS means retained controls, not a new PDF extraction or full reading.
+
+Wave 3 adds offline OT/patristic/John11 controls and bounded reading provenance.
+Fresh external byte/extract replay is separate and never implicit:
+  python3 -B scripts/atonement_wave3_sources.py --source-root /outside/repo/sources
 """
 from __future__ import annotations
 
@@ -30,6 +34,7 @@ import unicodedata
 
 from atonement_draft_citation_audit import audit_quotes
 from atonement_sync_sources import SOURCES
+from atonement_wave3_sources import CONTROL as WAVE3_CONTROL, check_controls as check_wave3
 
 ROOT = Path(__file__).resolve().parents[1]
 EVIDENCE = "ИСКУПЛЕНИЕ/evidence"
@@ -262,6 +267,8 @@ def check(root: Path, report: dict, control: dict) -> tuple[list[str], dict]:
     errors = check_repairs(root, report)
     errors += check_greek(control, report["greekChecks"])
     errors += check_wave2(root, report)
+    wave3_control = json.loads((root / WAVE3_CONTROL).read_text(encoding="utf-8"))
+    errors += check_wave3(root, report, wave3_control)
     drafts = sorted((root / DRAFTS).glob("*.md"))
     if len(drafts) != report["draftCount"]:
         errors.append("draft inventory differs from the reviewed scope")
@@ -275,7 +282,10 @@ def check(root: Path, report: dict, control: dict) -> tuple[list[str], dict]:
     return errors, {"drafts": len(drafts), "markedCitations": len(rows), "counts": counts,
                     "repairRecords": len(report["repairs"]), "pathRepairs": len(report.get("pathRepairs", [])),
                     "primaryPdfControls": len(report.get("wave2", {}).get("primaryArticle", {}).get("controls", [])),
-                    "pdfReplay": "NOT_RUN", "supersededSnapshots": len(report.get("wave2", {}).get("supersededSnapshots", []))}
+                    "pdfReplay": "NOT_RUN", "supersededSnapshots": len(report.get("wave2", {}).get("supersededSnapshots", [])),
+                    "wave3SourceFiles": len(wave3_control["files"]), "wave3Extracts": len(wave3_control["extracts"]),
+                    "wave3SupersededSnapshots": len(report.get("wave3", {}).get("supersededSnapshots", [])),
+                    "wave3SourceReplay": "NOT_RUN", "readingMeasuredByLabels": False}
 
 
 def main() -> int:

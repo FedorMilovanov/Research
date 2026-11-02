@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-11-02",
+  "asOf": "2026-11-03",
   "baselineCommit": "ec722894e21b004900e9e44a2da9bdb9990f1f7c",
   "branch": "arena/d7043ba0-research",
   "publicationEligible": false,
-  "scope": "Waves 1–2: textual draft corrections and a source-backed reassessment of the Prokopenko synthesis, C-22–C-24 and their current dependent summaries. Not a full reevaluation of every claim in the series.",
+  "scope": "Waves 1–3: marked draft quotations, source-backed Prokopenko reassessment, scoped OT/fathers/C25 repairs and honest metric semantics. Not a full reading or reevaluation of every source/claim.",
   "historicalReports": [
     "ИСКУПЛЕНИЕ/evidence/synodal_citation_audit_2026-10-30.json",
     "ИСКУПЛЕНИЕ/evidence/greek_form_audit_2026-10-30.json"
@@ -2227,6 +2227,500 @@
         "note": "The actual B2 draft exists and was rewritten in wave 1. The series-plan row must not repeat the historical prohibition as its current state or forbid scoped, reasoned judgments."
       },
       "reason": "An existing, source-corrected draft cannot be described as not yet allowed to begin. The superseded scheduling condition is named as historical; lack of a corpus-wide exclusive verdict does not prohibit bounded assessments with reasons."
+    },
+    {
+      "id": "W3-OT11",
+      "file": "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md",
+      "removed": "Göttingen Isaias — том не издан",
+      "required": "**Смерть в тексте есть:**",
+      "reason": "Correct 23 ELI verse quotations and provenance; distinguish digital witnesses from manuscripts; withdraw unsupported lexical exclusions, universal maxima, collective-reading caricature and false Göttingen absence.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-OT15",
+      "file": "ИСКУПЛЕНИЕ/ot/15_HOS13_MIC6_ISA1_AMOS5_PS51.md",
+      "removed": "**סלח (H5545) у Ос. и Ам. — ноль**",
+      "required": "**последние стихи — 51:20–21**",
+      "reason": "Restore Psalm ending; correct MT lemmas/counting units, Amos bribe agents, lexical-family/hapax confusion, false NT absence/counts, digital-witness attribution, and arguments from omitted context.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-NT15",
+      "file": "ИСКУПЛЕНИЕ/nt/15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md",
+      "removed": "**`ὑπὲρ` не переходит во второе колено.**",
+      "required": "**собирание чад названо целью смерти**",
+      "reason": "Reassess John 11:45–57: passive does not name agent, article does not quantify extent, purpose does not grammatically guarantee fulfillment; retain death/gathering link; correct Wesley, Gill, parallel chronology and exact word forms.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-F10",
+      "file": "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
+      "removed": "**Or. 30 нет слов αἷμα / λύτρον / σφαγή**",
+      "required": "**λύτρον присутствует в 30.20**",
+      "reason": "Correct Athanasius 20.2/20.5 quotation and locator; positively verify Gregory 30.20 ransom and 30.21 sacrifice; distinguish Unicode word search, lemma family and reading scope.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-F04",
+      "file": "ИСКУПЛЕНИЕ/fathers/04_THIRD_FOURTH_CENTURY_CARDS.md",
+      "removed": "в греч. Or. 30 слов αἷμα/λύτρον/σφαγή **нет**",
+      "required": "**Or. 30.20 содержит λύτρον**",
+      "reason": "Synchronize author cards with verified Greek; remove ontology/legal false dichotomy and ungrounded priority/attribution claims; retain explicit universal and believer language.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-F09",
+      "file": "ИСКУПЛЕНИЕ/fathers/09_SILENCES_AND_FALSE_FRIENDS.md",
+      "removed": "слов αἷμα/λύτρον/σφαγή **нет вообще**",
+      "required": "**Or. 30.20 содержит λύτρον**",
+      "reason": "Repair false-friend register: a wrong recipient-question locator does not establish absence of ransom vocabulary in Oration 30.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-F01",
+      "file": "ИСКУПЛЕНИЕ/fathers/01_METHOD_LOCATORS_GENRE_ANACHRONISM.md",
+      "removed": "«речь о всеобщности предложения и о том, что никто не исключён по природе»",
+      "required": "**«за всех» нельзя автоматически ослабить до одного предложения спасения**",
+      "reason": "Reject automatic offer-only reduction and genre-based exclusions; require explicit scope and normalization for claims from silence.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-F06",
+      "file": "ИСКУПЛЕНИЕ/fathers/06_METAPHOR_AND_MODEL_MAP.md",
+      "removed": "но без «наказания вместо виновного» как принципа.",
+      "required": "долг смерти и несение κατάρα у Афанасия",
+      "reason": "Allow coexisting models; remove unsupported corpus-wide negatives; add Gregory 30.20 to ransom map.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-F00",
+      "file": "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
+      "removed": "`A2`/`A3`-уровень для этого под-корпуса",
+      "required": "**но это не запрет на обоснованные локальные суждения**",
+      "reason": "Separate canonical source roles from date, access and rights; make scoped positive judgments possible without pretending a total patristic consensus.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-C25",
+      "file": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+      "removed": "двойной артикль ограничивает множество",
+      "required": "**не называет агента рассеяния**",
+      "reason": "Withdraw false C25 grammar and Wesley attribution; retain positive textual conclusions and identify the remaining interpretive question as OPEN.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-H11",
+      "file": "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md",
+      "removed": "значит группа существует **до** собирания и задана тем, кто собирает.",
+      "required": "**Собирание чад — цель смерти Иисуса.**",
+      "reason": "Synchronize H11: agency, article, purpose and author attribution; keep positive belonging-before-gathering without turning it into prefaith justification.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-P13",
+      "file": "ИСКУПЛЕНИЕ/nt/06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md",
+      "removed": "почему `ὑπὲρ` не переходит во второе колено",
+      "required": "пассив διεσκορπισμένα не называет агента",
+      "reason": "Repair P13 including the broken table boundary; distinguish interpretive labels from source classes and update C25 dependency.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-NT09",
+      "file": "ИСКУПЛЕНИЕ/nt/09_NT_EXTENT_THREE_COLUMN_TABLE.md",
+      "removed": "`ὑπὲρ` на «чад» не перенесён",
+      "required": "**Собирание чад связано со смертью**",
+      "reason": "Update both extent-table rows without carrying the old preposition fallacy into a duplicate summary.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-QMAP",
+      "file": "ИСКУПЛЕНИЕ/04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md",
+      "removed": "о «чадах» — только `ἵνα … συναγάγῃ`",
+      "required": "**неповторение ὑπέρ не исключает блага для чад**",
+      "reason": "Correct both question-map entries and Wesley attribution while preserving distinct special-purpose and broad-horizon arguments.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-P06",
+      "file": "docs/research/atonement/06_detailed_refutation_of_prokopenko_arguments.md",
+      "removed": "двойной артикль `τὰ τέκνα … τὰ διεσκορπισμένα` и перфект пассива",
+      "required": "**не о всех людях как чадах**",
+      "reason": "Replace the dependent C25 polemical addendum; remove unsupported grammar, guaranteed-decree inference and Wesley caricature without reverting accepted wave2 counterevidence.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-P18",
+      "file": "docs/research/atonement/18_juridical_fallacies_and_double_punishment_critique.md",
+      "removed": "приведение гарантировано не их ответом, а Его действием",
+      "required": "**не о всех людях как чадах**",
+      "reason": "Replace the dependent C25 polemical addendum; remove unsupported grammar, guaranteed-decree inference and Wesley caricature without reverting accepted wave2 counterevidence.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-MATRIX-CODE",
+      "file": "scripts/atonement_reshoot_state.py",
+      "removed": "Прочитано — строка таблицы опор с распознанным классом читаемости",
+      "required": "\"readingMeasured\": False",
+      "reason": "Replace falsely named reading counts with source-label counts; explicitly exclude B2 from canonical classes and retain/extend blocking checks for C and D.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-METRIC-GATES",
+      "file": "scripts/validate_atonement_corpus_integrity.py",
+      "removed": "r\"`A1` прочитано по изданию",
+      "required": "чтение НЕ измерено",
+      "reason": "Fix live metric semantics in rules 23, 23.1, 23.3 and 29; retain numerical/queue consistency, forbid old live fields and reading promotions; parse explicit cells rather than quoted labels inside claims.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-MASS",
+      "file": "docs/research/atonement/35_four_point_authors_mass_registry.md",
+      "removed": "## 0. Шкала классов (закрытая)",
+      "required": "**но не устанавливает факта чтения**",
+      "reason": "Retire the legacy mixed scale rather than silently recategorizing 209 authors; preserve every row/history/queue and correct the corrupted introduction with a byte snapshot.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-MASS-README",
+      "file": "docs/research/atonement/README.md",
+      "removed": "`A1` прочитано по изданию (53)",
+      "required": "чтение этим не измерено",
+      "reason": "Synchronize the visible mass-register summary and retire reading percentages, preserving dated historical descriptions.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-MATRIX-AUDIT",
+      "file": "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
+      "removed": "независимую пересчётку держит правило 29",
+      "required": "**чтение и исчерпываемость этой матрицей не измеряются**",
+      "reason": "Correct the authoritative matrix description and early arc claims; preserve old counts as explicitly superseded label measurements, not reading.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-P04",
+      "file": "docs/research/atonement/04_exegetical_defense_of_definite_atonement.md",
+      "removed": "нельзя выводить «умер за них» как грамматический факт",
+      "required": "локус положительно связывает смерть Христа и собирание чад",
+      "reason": "Withdraw the grammatical disconnection of death/gathering and overstrong prefaith/quantifier inferences in the dependent defense, while retaining its positive contextual argument.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-ROOT13",
+      "file": "ИСКУПЛЕНИЕ/13_DORT_II_CALVIN_OWEN_EXTENT.md",
+      "removed": "**Данные.** В комментарии на 11:52 Кальвин сам ставит вопрос владельца и сам на него отвечает:",
+      "required": "не получила читаемого текста Кальвина",
+      "reason": "Retain the prior Calvin attribution explicitly as history, not a fresh reading or an independently corroborated inference; propagate corrected C25 limits.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-NT00",
+      "file": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
+      "removed": "**Карточка-исследование 2026-10-23:** [`15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md`](15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md) — Ин 11:52: статус «чад Божиих» до веры; основание: вопрос владельца 2026-10-23; `EVIDENCE_HOLD` не снят, вердикта нет.",
+      "required": "Прежнее описание «статус чад до веры» как уже установленного факта — **SUPERSEDED**.",
+      "reason": "Bring the NT authority navigation into line with the corrected, bounded inquiry rather than its old presupposed conclusion.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-OT11-PROVENANCE",
+      "file": "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md",
+      "removed": "| Локус | ELI 1930 / F1K grc1 (кодекс B) | F1K grc2 / S23 (кодекс A) |",
+      "required": "| Локус | ELI / grc1 (цифровые тексты Swete) | grc2 (Ottley) / производный S23 |",
+      "reason": "The apparatus-table header must not call uncollated digital columns directly verified codices.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-OT-DATA",
+      "file": "ИСКУПЛЕНИЕ/ot/data/ot-corpus-v1.json",
+      "removed": "ῥαντίζω (Ps 50:9) — 0 occurrences in the whole NT",
+      "required": "H5545 at Amos 7:2",
+      "reason": "Update OT11/15 dependent verse text, lexical results, apparatus queue, source provenance and scoped state axes; preserve former dataset bytes in Git, not as active false claims.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-F-DATA",
+      "file": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+      "removed": "отсутствие αἷμα/λύτρον/σφαγή",
+      "required": "30.20: καὶ λύτρον ἑαυτὸν",
+      "reason": "Synchronize patristic source records and false-friend register; distinguish class-role normalization from fresh access/context/rights verification.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-NT-DATA",
+      "file": "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+      "removed": "15. Ин 11:52 — «рассеянных чад Божиих собрать воедино»: статус «чад» до веры",
+      "required": "Repeated article does not set a numerical extent",
+      "reason": "Update NT navigation/analysis metadata without changing unrelated apparatus data or claiming a full reading.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-ROOT-DATA",
+      "file": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+      "removed": "`διεσκορπισμένα` — aorist/perfect passive причастие",
+      "required": "Repeated article is attributive, not a numerical extent",
+      "reason": "Synchronize C25 and mass-register metric semantics; explicitly mark the remote mass snapshot stale, without changing remote metadata or claiming a PDF replay.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-INDEX",
+      "file": "ИСКУПЛЕНИЕ/data/atonement-library-index.json",
+      "removed": "\"checkedAt\": \"2026-10-29T02:39:00Z\",\n   \"lagBehindGit\": false",
+      "required": "registryRowClass and registryRowClasses are historical FP register codes",
+      "reason": "Keep remote snapshots honest after Git-only edits: lag is declared, remote bytes/names untouched; disambiguate legacy carrier labels from canonical source class.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-ROOT00",
+      "file": "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+      "removed": "> **Актуализация 2026-11-02:** действующая сводная оценка — §9 и `synthesis/04`; C-22–C-24 пересмотрены по первичному PDF и сохранённым историческим текстам. Старые заявления о неназванной причине веры, «не Сомюр» из одной условности и полном research-closure — **SUPERSEDED**. Корпус остаётся исследовательским; публикация и merge не разрешены этой актуализацией.",
+      "required": "Метрики таблиц считают распознанные метки и исторические коды, **не прочитанную литературу**.",
+      "reason": "Update the corpus-specific authority with wave3 findings/limits, preserve the accepted wave2 verdict, and distinguish its historical PDF replay from this local source replay.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-OT00",
+      "file": "ИСКУПЛЕНИЕ/ot/00_OT_AUTHORITY_2026-10-08.md",
+      "removed": "**Ветка сессии:** `arena/13e971a8-research`",
+      "required": "Göttingen Isaias **издан**",
+      "reason": "Distinguish the dated OT activity log and historical branch from the current corrections; supersede defective OT11/15 results without announcing a whole-layer rereading.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-F-SUMMARY",
+      "file": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+      "removed": "доктрины объёма («за кого именно») в текстах нет",
+      "required": "каждый автор и локус требуют собственного разбора",
+      "reason": "Withdraw an unbounded absence verdict about all patristic texts; retain the positive, scoped author findings.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-OT-BIB",
+      "file": "ИСКУПЛЕНИЕ/ot/data/ot-corpus-v1.json",
+      "removed": "Ruth and Isaias volume status not verified",
+      "required": "Isaias is published (Ziegler 1939, third edition 1983)",
+      "reason": "Propagate verified Isaias publication metadata to the earlier card queue without claiming apparatus access or rereading that card.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-MASS-SEMANTICS",
+      "file": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+      "removed": "ошибки правила 23 допустимы, потому что файл и реестр созданы этим кругом",
+      "required": "rule23 failures are not waived",
+      "reason": "Retire the initial-construction validation waiver and old metric field names in the active recheck command; source reading remains a separate event.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-P04-LEXICAL",
+      "file": "docs/research/atonement/04_exegetical_defense_of_definite_atonement.md",
+      "removed": "3. В значении совокупности всех избранных, рассеянных по лицу земли (Ин. 11:52; Откр. 5:9).",
+      "required": "в Ин. 11:52 **нет слова κόσμος**",
+      "reason": "The earlier defense must distinguish its confessional interpretation from lexical evidence: John11:52 contains neither kosmos nor pantes.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-S04-QUEUE",
+      "file": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+      "removed": "Отдельно остаются содержательные поправки ВЗ/отцов и C-25.",
+      "required": "выбранные содержательные поправки ВЗ/отцов и C-25 внесены",
+      "reason": "Update the accepted wave2 verdict’s next-action queue after scoped wave3 work, without reopening or silently overwriting its substantive conclusions.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W3-AUDIT-QUEUE",
+      "file": "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
+      "removed": "Далее — содержательные ВЗ/патристические поправки, C-25 и значение метрик чтения.",
+      "required": "План следующей волны частично исполнен 2026-11-03",
+      "reason": "Update the wave2 audit’s prospective queue after the scoped wave3 corrections; retain the limits and historical quantitative record.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "scope": "Wave3 pinned digital witnesses and explicitly bounded observations; see wave3.readingScope and source controls."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE3_SCOPED_CORRECTION"
     }
   ],
   "pathRepairs": [
@@ -2597,75 +3091,36 @@
     "python3 -B scripts/atonement_sync_sources.py --cache /path/outside/repo --fetch --verify",
     "python3 -B scripts/atonement_claim_register.py --check",
     "python3 -B scripts/atonement_reshoot_state.py --check",
-    "python3 -B scripts/atonement_sync_check.py --prokopenko-pdf /path/outside/repo/article.pdf  # optional; pypdf 6.21.4; no network or source writes"
+    "python3 -B scripts/atonement_sync_check.py --prokopenko-pdf /path/outside/repo/article.pdf  # optional; pypdf 6.21.4; no network or source writes",
+    "python3 -B scripts/atonement_wave3_sources.py",
+    "python3 -B scripts/atonement_wave3_sources.py --source-root /path/to/external/source-materials"
   ],
   "remaining": [
-    "Wave 2 corrects the current verdict and C-22–C-24. A complete article-wide collation, all historical editions, and legacy secondary summaries outside the marked supersession scope are not certified complete.",
-    "Patristic source corrections and OT bibliographical/interpretive conflicts need a separate source-backed wave.",
-    "A complete contextual review of every Bible paraphrase and unmarked fragment in all drafts is not claimed.",
-    "Source-class semantics and the matrix label read/not-readable still need disentangling from genuine reading/proof.",
-    "Printed-page verification and per-source Product decisions remain separate from these textual repairs."
+    "Printed apparatus/manuscript collation and complete lexical/source reception work remain open.",
+    "Calvin/Alford locators require actual readable source/edition verification; old attributions are historical, not freshly checked.",
+    "Legacy state-axis aliases outside the explicitly reviewed OT sources/cards and two fathers cards remain a scoped migration queue, not recertified rows.",
+    "No new public product, Drive upload or merge; remote mass-register snapshot explicitly lags Git.",
+    "No denominator or receipts sufficient for a percentage of research literature read/exhaustively covered."
   ],
   "verificationSnapshot": {
-    "asOf": "2026-11-02T20:29:22Z",
-    "scope": "Wave-2 scoped completion checks; not complete historical/exegetical adjudication of the series.",
-    "digitalQuotations": "54/54 CONFIRMED against both retained pinned RST and RSB controls",
-    "regressionTests": 48,
-    "repairRecords": 131,
-    "newWave2Repairs": 42,
-    "supersededGitSnapshotsVerified": 15,
-    "primaryPdfReplay": {
-      "result": "PASS",
-      "controls": 14,
-      "pageInventory": 40,
-      "byteHashes": "SHA-256 and MD5 match the acquired object",
-      "searchInventory": "Baxter name contexts match",
-      "reader": "pypdf 6.21.4",
-      "readingScopeUnchanged": "22 extracted pages, not 40 pages read; no full visual or print-folio collation"
-    },
-    "freshSourceScope": "This wave replays the acquired Prokopenko PDF. Fresh GitHub acquisition/replay of the three pinned Bible repositories belongs to initialWaveVerificationSnapshot, not a newly claimed second acquisition.",
-    "crossReferences": {
-      "resolved": 80,
-      "total": 80
-    },
-    "relativeMarkdownLinks": {
-      "resolvedTargets": 124,
-      "missingTargets": 0,
-      "scope": "Changed Markdown files, parsed as CommonMark with markdown-it-py 3.0.0; inline-code examples are not links; no web or fragment-target validation claimed."
-    },
-    "claimRegister": {
-      "total": 907,
-      "ot": 199,
-      "nt": 190,
-      "fathers": 102,
-      "synthesis": 244,
-      "root": 172,
-      "markers": 1121,
-      "unclassifiedMarkers": 0
-    },
-    "reshoot": {
-      "result": "PASS",
-      "indexRecords": 130,
-      "indexFiles": 121,
-      "shaTokens": 113,
-      "reachableShaTokens": 68,
-      "unreachableShaTokens": 45,
-      "stampedFields": 553,
-      "ledgerEntries": 25
-    },
-    "structuralChecks": {
-      "claimCheck": "PASS",
-      "claimCrossCheck": "PASS",
-      "reshootCheck": "PASS",
-      "corpusIntegrity": "PASS with declared nonblocking historical/foreign-lane notes",
-      "roundCloseSelfcheck": "PASS",
-      "ruleTraps": "PASS; 18 planted source breakages caught",
-      "unconfirmedAppendingWriters": "Refused with exit 2"
-    },
-    "structuralScope": "Literal marker counts and file/card agreement do not measure reading or theological truth. One prose/card marker mismatch, 51 card terms absent from lane prose and 8 records without state remain explicitly counted, not hidden. Existing historical unreachable references are not newly verified.",
-    "gitHistoryProbeScope": "The committed-snapshot history perturbation probe is separate from these working-tree source checks; its commands are in the workflow. Synthetic history now uses a detached commit in a disposable clone, not another authoring branch.",
-    "publicationEligible": false,
-    "mergeAuthorized": false
+    "asOf": "2026-11-02T23:00:32+00:00",
+    "scope": "Wave3 local gate window; previous wave1/wave2 snapshots retained separately",
+    "repairRecords": 169,
+    "newRepairRecords": 38,
+    "unitTests": 76,
+    "sourceFilesReplayed": 80,
+    "sourceExtractsReplayed": 221,
+    "primaryPdfControlsRetained": 14,
+    "pdfReplay": "NOT_RUN",
+    "markedCitations": 54,
+    "crossReferences": 80,
+    "markdownTargets": 293,
+    "missingMarkdownTargets": 0,
+    "claimSections": 907,
+    "claimMarkers": 1109,
+    "readingMeasuredByLabels": false,
+    "readOnlyChecks": "PASS; file fingerprint unchanged during verification",
+    "publicationEligible": false
   },
   "initialWaveScope": "Wave 1: marked Synodal quotations in 13 drafts, B2 rewrite, directly connected source/locator corrections. This is not a full rereading of every draft, original book, or theological claim.",
   "wave2": {
@@ -3047,5 +3502,731 @@
     "sourceReplayScope": "all three pinned repositories; file SHA-256, source paths, retained verse text, Titus 2 inventory",
     "structuralScope": "claim/reshoot/corpus checks are consistency checks, not evidence of theological completeness",
     "scope": "Historical wave-1 check, retained unchanged in substance; not the current test count or a new wave-2 GitHub acquisition."
+  },
+  "wave2VerificationSnapshot": {
+    "asOf": "2026-11-02T20:29:22Z",
+    "scope": "Wave-2 scoped completion checks; not complete historical/exegetical adjudication of the series.",
+    "digitalQuotations": "54/54 CONFIRMED against both retained pinned RST and RSB controls",
+    "regressionTests": 48,
+    "repairRecords": 131,
+    "newWave2Repairs": 42,
+    "supersededGitSnapshotsVerified": 15,
+    "primaryPdfReplay": {
+      "result": "PASS",
+      "controls": 14,
+      "pageInventory": 40,
+      "byteHashes": "SHA-256 and MD5 match the acquired object",
+      "searchInventory": "Baxter name contexts match",
+      "reader": "pypdf 6.21.4",
+      "readingScopeUnchanged": "22 extracted pages, not 40 pages read; no full visual or print-folio collation"
+    },
+    "freshSourceScope": "This wave replays the acquired Prokopenko PDF. Fresh GitHub acquisition/replay of the three pinned Bible repositories belongs to initialWaveVerificationSnapshot, not a newly claimed second acquisition.",
+    "crossReferences": {
+      "resolved": 80,
+      "total": 80
+    },
+    "relativeMarkdownLinks": {
+      "resolvedTargets": 124,
+      "missingTargets": 0,
+      "scope": "Changed Markdown files, parsed as CommonMark with markdown-it-py 3.0.0; inline-code examples are not links; no web or fragment-target validation claimed."
+    },
+    "claimRegister": {
+      "total": 907,
+      "ot": 199,
+      "nt": 190,
+      "fathers": 102,
+      "synthesis": 244,
+      "root": 172,
+      "markers": 1121,
+      "unclassifiedMarkers": 0
+    },
+    "reshoot": {
+      "result": "PASS",
+      "indexRecords": 130,
+      "indexFiles": 121,
+      "shaTokens": 113,
+      "reachableShaTokens": 68,
+      "unreachableShaTokens": 45,
+      "stampedFields": 553,
+      "ledgerEntries": 25
+    },
+    "structuralChecks": {
+      "claimCheck": "PASS",
+      "claimCrossCheck": "PASS",
+      "reshootCheck": "PASS",
+      "corpusIntegrity": "PASS with declared nonblocking historical/foreign-lane notes",
+      "roundCloseSelfcheck": "PASS",
+      "ruleTraps": "PASS; 18 planted source breakages caught",
+      "unconfirmedAppendingWriters": "Refused with exit 2"
+    },
+    "structuralScope": "Literal marker counts and file/card agreement do not measure reading or theological truth. One prose/card marker mismatch, 51 card terms absent from lane prose and 8 records without state remain explicitly counted, not hidden. Existing historical unreachable references are not newly verified.",
+    "gitHistoryProbeScope": "The committed-snapshot history perturbation probe is separate from these working-tree source checks; its commands are in the workflow. Synthetic history now uses a detached commit in a disposable clone, not another authoring branch.",
+    "publicationEligible": false,
+    "mergeAuthorized": false
+  },
+  "initialAsOf": "2026-11-02",
+  "wave3": {
+    "asOf": "2026-11-03",
+    "status": "SCOPED_CORRECTIONS_INTEGRATED_LOCAL_GATES_PASSED",
+    "baselineCommit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+    "controls": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+    "repairIds": [
+      "W3-OT11",
+      "W3-OT15",
+      "W3-NT15",
+      "W3-F10",
+      "W3-F04",
+      "W3-F09",
+      "W3-F01",
+      "W3-F06",
+      "W3-F00",
+      "W3-C25",
+      "W3-H11",
+      "W3-P13",
+      "W3-NT09",
+      "W3-QMAP",
+      "W3-P06",
+      "W3-P18",
+      "W3-MATRIX-CODE",
+      "W3-METRIC-GATES",
+      "W3-MASS",
+      "W3-MASS-README",
+      "W3-MATRIX-AUDIT",
+      "W3-P04",
+      "W3-ROOT13",
+      "W3-NT00",
+      "W3-OT11-PROVENANCE",
+      "W3-OT-DATA",
+      "W3-F-DATA",
+      "W3-NT-DATA",
+      "W3-ROOT-DATA",
+      "W3-INDEX",
+      "W3-ROOT00",
+      "W3-OT00",
+      "W3-F-SUMMARY",
+      "W3-OT-BIB",
+      "W3-MASS-SEMANTICS",
+      "W3-P04-LEXICAL",
+      "W3-S04-QUEUE",
+      "W3-AUDIT-QUEUE"
+    ],
+    "supersededSnapshots": [
+      {
+        "path": ".github/workflows/atonement-corpus-integrity.yml",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "d10dc1d8107feb5433c3e7528a371bf3db60b1df",
+        "sha256": "cd6bc65cea7a04d5f7842e041c9895f9d285ae97934ed50c1cac3a34ad01b852",
+        "bytes": 14145,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "docs/research/atonement/04_exegetical_defense_of_definite_atonement.md",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "0545f95be7203c4ce36f63c90d782b64dc22170a",
+        "sha256": "fb5ead1e1e008b1df1ab72508da646383b33f6dfdbb7d4fc59547432d52d5cf8",
+        "bytes": 48539,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "docs/research/atonement/06_detailed_refutation_of_prokopenko_arguments.md",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "4f38ee17ab9f6cc5d9ae6eb111807a8980c7bf35",
+        "sha256": "88086d8b4e4b4fa7f3a890eefba41affa6ecf626ea675a3e8c2a7e61e6829847",
+        "bytes": 135683,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "docs/research/atonement/18_juridical_fallacies_and_double_punishment_critique.md",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "2dc8e5751c2dcb027c0e6f548e42ab8d4a71a261",
+        "sha256": "76a658fdc8df4dd6619cbcc450378df87750f1321132715d0632e086bb4069a7",
+        "bytes": 33663,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "docs/research/atonement/35_four_point_authors_mass_registry.md",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "53682064b0816e80891e43ceff5ef95a82f4f6e8",
+        "sha256": "52c5ae0066a1897731ca1a5f8fc45cbbe6d2c45e15e2836c1f646e6f5e20d316",
+        "bytes": 644759,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "docs/research/atonement/README.md",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "828af7ad465a48ba240dcb6403a9d0eab7de1962",
+        "sha256": "a05a834404f7d5314c6e71571df993bcd675513cc1ce9148474dd9dad690e0df",
+        "bytes": 101358,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "scripts/atonement_reshoot_state.py",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "4e13244499e931a1b3ce7fbfabb1cf69806a4750",
+        "sha256": "b34d4f71e2bce646f543cd815d12a86420dc2c49e3b5728196f250cc3e672d4a",
+        "bytes": 166756,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "scripts/atonement_sync_check.py",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "9f28c9b2a8359db71c29ddfc0cc424154e3b6664",
+        "sha256": "e3bbc512295cb6781705043c12b14d814267f1484167a63748758c10166b20ef",
+        "bytes": 15889,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "scripts/test_atonement_sync.py",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "916115ca55f5999f7f633aabd1681b7f51750303",
+        "sha256": "356d5b35b1bdaaffc219484ae89d4bafe008c25d6e5d9b6e3c37786c79ebfd43",
+        "bytes": 18060,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "scripts/validate_atonement_corpus_integrity.py",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "8d10009936b340281afc37df4b3d74390678532f",
+        "sha256": "22b9795966a9184235c1b036cd292b2c11af5e052200a55ab76f8d4a656b43c1",
+        "bytes": 173224,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "4288a4015a24015e79370535d35349c78044558f",
+        "sha256": "70ad2d97070524217985fe97354d354d821296c8c4d25f7f0d33c71a3a401ac9",
+        "bytes": 45678,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "b80a76b37fa5b4a76ca67fba7d81ef8befefd456",
+        "sha256": "a82b97f340c592f8c2d05fb9be5a81e680b56e94d3b34df79e8116a67653a532",
+        "bytes": 33485,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "ee75a7432afeb33abea85e123ca54c743545c4d7",
+        "sha256": "d0534391eabaa9829760f1af97595c2a9dbe19901bfa99a924ee39eaeafa0f65",
+        "bytes": 97550,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/13_DORT_II_CALVIN_OWEN_EXTENT.md",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "e238c9902cea629be7002b02c4d221d89a962126",
+        "sha256": "a7e56fa90d5bc9f8ae9d9c9fdaffc2b85ad826b8d854539a50f64ae091bb9521",
+        "bytes": 35088,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "395297b6786b3e9af73704beaf9e881763423b6c",
+        "sha256": "8aa0ae0a1a152f4327f77be225c1e79b8737120924a8557cc9cd338efa831fd9",
+        "bytes": 1285002,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "04f529ceb16d19b4de9cf400384669423d95befc",
+        "sha256": "052f1b0f5c4f8deb3938c00fc0e62b7ef2b4d909a9c0bf08a9692cd798734057",
+        "bytes": 1202044,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/data/atonement-library-index.json",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "12ca344eed7e8fdca760b6ab42016d6261663895",
+        "sha256": "1458feecaf5b4c82d16d6686fdd9c4685a36b1a3b36357dccdf82767cf1490e9",
+        "bytes": 342029,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "d46be8ef79d866b6b8e1171d42a851283c97c869",
+        "sha256": "27a8baa726fc295a6952102760b1f35e3113fc5684a108bc25a44c0fa7a5a0b9",
+        "bytes": 20532,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/01_METHOD_LOCATORS_GENRE_ANACHRONISM.md",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "a7cf845e87f950b417ae2fedd61c13640c11e1fc",
+        "sha256": "3fe74d8ff8f918f5fd003e7b6091e34f53b6fedc732e48274785ee659e922de4",
+        "bytes": 9178,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/04_THIRD_FOURTH_CENTURY_CARDS.md",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "5066b6c5b0fbc87cb88c1c4372469aa2a85b88e0",
+        "sha256": "2eab3cc7d660c391398f9edc18598acd7a9cecdfb1bffaad933c72f57f9170d4",
+        "bytes": 25842,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/06_METAPHOR_AND_MODEL_MAP.md",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "bbb6ceed49a169dae0f6f1b016c2fef7c683d4bd",
+        "sha256": "48000458ae5d1db344eb76bdb7c39219efc4ce11334a4e5d58f2a844de9fc194",
+        "bytes": 9517,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/09_SILENCES_AND_FALSE_FRIENDS.md",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "4705f89a3c7f11c2f86c0ea502a51f38901e54a2",
+        "sha256": "1ee84ebbd0f8463f2d5dcfeae177c55b7dff632d1b0a968daae873c83998922a",
+        "bytes": 15402,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "8248196852fff1db5b40bb08802a3e2d97a13f12",
+        "sha256": "505e88504eda719ad9b9c065fc08dd43d66a9dacd21250df2eae3e73a930e233",
+        "bytes": 23127,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "426f701811ab88d20ff93a03be3ea5806db749f6",
+        "sha256": "7e8598d497b83b4e05d5fb9fe9007f38901bcfbac7d6d6925233bad6c181d4b8",
+        "bytes": 129395,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "2159d0d0fb0bea597c194259110fa746703a5a11",
+        "sha256": "f6fac6b009e3600940a379cbbf35ed56d5a3f0a108941e3b74dbd3ca64b21d11",
+        "bytes": 23765,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "40178b4ffd91c3afbd1073b4d4c6d734dfe692e1",
+        "sha256": "76529f5f8bd661ba79f45736b641ce41b9abe49d9e0f929af54013dd49c33183",
+        "bytes": 55193,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/09_NT_EXTENT_THREE_COLUMN_TABLE.md",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "bd61126070f9c09c933b35c5330790572e202125",
+        "sha256": "32782911f66769b4616adcb44fbeffec4d8bc46ca5be86143ca2a4437f9c6967",
+        "bytes": 41649,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "4b877ced0d093cb1c6156e66118f158aa507db01",
+        "sha256": "a72d1672dc91713ab5544118121341b9cf354908c1cd700c24cd2610a367270d",
+        "bytes": 31950,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "bb1fe9da5145e78b65f8a451a7e52c67e9d80e5a",
+        "sha256": "a3c63d8ab089bada943fa28545b1504e21427d4961bd67a09fe1f12b5278da59",
+        "bytes": 194944,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/ot/00_OT_AUTHORITY_2026-10-08.md",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "93d872b815934c2ba0ebaab79cbf75f7550970ff",
+        "sha256": "3a74845788562cd6038563971dea001161e7153904711ec9de05dcb97c0ac553",
+        "bytes": 64351,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "1e64b86d8ad216a3a19366b3d1a1fdd853d71d47",
+        "sha256": "0a8a90c36fc5a4ab387563288c9e8478b7f4791460cd9ebd4ea1b1cc37a7a9a9",
+        "bytes": 58087,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/ot/15_HOS13_MIC6_ISA1_AMOS5_PS51.md",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "dfa4b6e09bc124fb48800e4d8c43f38fbc744edc",
+        "sha256": "25bae83cd5475f444116c8469b43b46aad2923e19b74706be43f20ad87529241",
+        "bytes": 58481,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/ot/data/ot-corpus-v1.json",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "5999a6a8567e32abb1b5949ef855e44913637b46",
+        "sha256": "35429e89cb94c472de76bd005b9aaaf90dbcc2fe6e17b003c8c5a9a246771dec",
+        "bytes": 776104,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "1c97061aaae401175d748daabb0a6588352e851f",
+        "sha256": "49e42df3440098f3762a24f0eaafe285fb44812d0d38d72a0d449a917db2b7dd",
+        "bytes": 210382,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+        "commit": "fbd0ab4d937175bec1df8c89fecf57ff5d9ce3e1",
+        "blob": "a82c04ad07f22789d750e1a98e09aa1d541e351b",
+        "sha256": "7b24e49306faf2c4e05af58cbd9a990de5f2ad9fb896995b0b88826bd3608163",
+        "bytes": 33111,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      }
+    ],
+    "currentLocalPdfReplay": "NOT_RUN_RAW_OBJECT_ABSENT",
+    "remoteWritesPerformed": false,
+    "publicationEligible": false,
+    "scope": "OT11/15, Athanasius De Incarnatione and Gregory29/30 selected loci, John11:52/C25 and its active dependencies, source-label/legacy-code metrics; not a new full-corpus pass.",
+    "readingScope": {
+      "fullCorpusReadingClaimed": false,
+      "printedCollationClaimed": false,
+      "authorTextsRead": [
+        {
+          "file": "athanasius",
+          "loci": "De Incarnatione chapters 19-21 and 25, Robertson 1893 digital TEI; not whole work."
+        },
+        {
+          "file": "gregory29",
+          "loci": "Or.29.20, Mason 1899 digital TEI; not whole speech."
+        },
+        {
+          "file": "gregory30",
+          "loci": "Or.30.19-21, Mason 1899 digital TEI; not whole speech."
+        }
+      ],
+      "biblicalContextRead": [
+        "Isa52:13-53:12 and selected context: Isa42:1;49:3,5,6;1:12;6:7;27:9;28:18;55:7;63:3. Four-file Greek comparison is explicitly digital, not manuscript collation.",
+        "Hos13:12-15;7:13;6:6; Mic6:6-8 and7:18-20; Amos5:10-15,21-27 and7:1-3; Ps51 selected loci including20-21.",
+        "John11:45-57;1:12-13;5:34,40;7:35;10:14-18,26-28;12:32;16:32;17:19-20; Luke15:13;1:51; Acts18:8-10 and26:14; Heb9:13,19,21;10:22;1Cor15:55-56;Rev9:10."
+      ],
+      "webRead": [
+        "Official Isaias bibliographic entry (not apparatus)",
+        "Gill’s complete rendered comment on John11:52",
+        "Wesley’s John11:52 note with nearby comments"
+      ],
+      "machineSearchOnly": "Greek author-body normalized exact words; named Strong-number inventories in 39 MT books or specified books; five annotated Greek lemmas in 27 NT books. Matching or absence is not complete human reading.",
+      "metadataAndCodeRead": "TEI edition/license headers; S23 README, build.sh and converter source; ELI metadata and token boundary format; selected Strong entries. Not newly read BDB/LSJ/HALOT works in full.",
+      "notFreshlyRead": [
+        "Greek Gregory45",
+        "Calvin or Alford John11:52 commentary body",
+        "printed Göttingen/Swete/Ottley apparatus or manuscript images",
+        "all 39 MT books/all 27 NT books",
+        "Prokopenko PDF after workspace restoration"
+      ],
+      "measurementBoundary": "Obtaining full source bytes, executing a search, reading selected loci and reviewing contextual claims are distinct events. Matrix/legacy-label percentages certify neither reading nor exhaustiveness."
+    },
+    "findings": [
+      "Gregory30.20 contains λύτρον; Athanasius20.5 death phrase and20.2 debt opening are distinct. Positive ransom/substitution/victory motifs retained without imposing a later complete system.",
+      "Isaiah quotations/bibliography corrected; Psalm51 ending restored; Hebrew/NT counts use explicit inventories/units. Negative vocabulary searches do not exclude sacrificial theology.",
+      "John11:52 links death and gathering; article/passive/purpose do not prove group size, divine scattering agent, or inevitable fulfillment. Wesley/Gill actual wording replaces earlier overstatements. C25 OPEN on remaining basis/extent, not on corrected facts.",
+      "13-draft matrix recognizes source labels; FP209 register counts legacy codes. Neither is a reading measure. No mass source regrading or automatic promotion of access/rights."
+    ],
+    "remaining": [
+      "Printed apparatus/manuscript collation and complete lexical/source reception work remain open.",
+      "Calvin/Alford locators require actual readable source/edition verification; old attributions are historical, not freshly checked.",
+      "Legacy state-axis aliases outside the explicitly reviewed OT sources/cards and two fathers cards remain a scoped migration queue, not recertified rows.",
+      "No new public product, Drive upload or merge; remote mass-register snapshot explicitly lags Git.",
+      "No denominator or receipts sufficient for a percentage of research literature read/exhaustively covered."
+    ],
+    "engineeringChanges": [
+      "scripts/atonement_sync_check.py",
+      "scripts/test_atonement_sync.py",
+      ".github/workflows/atonement-corpus-integrity.yml"
+    ],
+    "createdFiles": [
+      "scripts/atonement_wave3_sources.py",
+      "scripts/atonement_source_metrics.py",
+      "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json"
+    ],
+    "completedAt": "2026-11-02T23:00:32+00:00",
+    "verification": {
+      "result": "PASS",
+      "startedAt": "2026-11-02T22:59:46+00:00",
+      "finishedAt": "2026-11-02T23:00:32+00:00",
+      "meaning": "Retained textual/data corrections, source byte/extract replay, scoped provenance, label parsing and structural consistency. NOT theological closure, independent manuscript collation, a reading percentage, remote writes or publication approval.",
+      "commands": [
+        {
+          "name": "authority-root",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/validate_research_root_authority.py"
+          ],
+          "exitCode": 0,
+          "seconds": 0.025
+        },
+        {
+          "name": "authority-integrity",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/validate_repository_authority_integrity.py"
+          ],
+          "exitCode": 0,
+          "seconds": 0.026
+        },
+        {
+          "name": "genesis-manifest",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/validate_genesis6_authority_manifest.py"
+          ],
+          "exitCode": 0,
+          "seconds": 0.231
+        },
+        {
+          "name": "sync",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_sync_check.py"
+          ],
+          "exitCode": 0,
+          "seconds": 0.416
+        },
+        {
+          "name": "sources-replay",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_wave3_sources.py",
+            "--source-root",
+            "/home/user/source-materials/atonement-2026-11-03"
+          ],
+          "exitCode": 0,
+          "seconds": 5.285
+        },
+        {
+          "name": "unit",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/test_atonement_sync.py"
+          ],
+          "exitCode": 0,
+          "seconds": 13.556
+        },
+        {
+          "name": "crossrefs",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_crossref_audit.py",
+            "--check"
+          ],
+          "exitCode": 0,
+          "seconds": 0.093
+        },
+        {
+          "name": "markdown-links",
+          "command": [
+            "python3",
+            "-B",
+            "/home/user/.cache/atonement-wave3-2026-11-03/check_links.py"
+          ],
+          "exitCode": 0,
+          "seconds": 0.92
+        },
+        {
+          "name": "integrity",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/validate_atonement_corpus_integrity.py"
+          ],
+          "exitCode": 0,
+          "seconds": 9.678
+        },
+        {
+          "name": "reshoot",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_reshoot_state.py",
+            "--check"
+          ],
+          "exitCode": 0,
+          "seconds": 1.115
+        },
+        {
+          "name": "claim-register",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_claim_register.py",
+            "--check"
+          ],
+          "exitCode": 0,
+          "seconds": 0.677
+        },
+        {
+          "name": "claim-cross",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_claim_register.py",
+            "--cross"
+          ],
+          "exitCode": 0,
+          "seconds": 0.354
+        },
+        {
+          "name": "rule-traps",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_reshoot_state.py",
+            "--rule-trap"
+          ],
+          "exitCode": 0,
+          "seconds": 0.56
+        },
+        {
+          "name": "round-plan",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_round_close.py",
+            "--plan"
+          ],
+          "exitCode": 0,
+          "seconds": 0.034
+        },
+        {
+          "name": "round-selfcheck",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_round_close.py",
+            "--selfcheck"
+          ],
+          "exitCode": 0,
+          "seconds": 12.371
+        },
+        {
+          "name": "whitespace",
+          "command": [
+            "git",
+            "diff",
+            "--check"
+          ],
+          "exitCode": 0,
+          "seconds": 0.082
+        },
+        {
+          "name": "append-writer-refusal",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_round_close.py",
+            "--run",
+            "--allow-appending-writers"
+          ],
+          "exitCode": 2,
+          "expectedExitCode": 2
+        }
+      ],
+      "readOnlyObservation": {
+        "before": {
+          "sha256": "114d932136f4c68f4d06e368311a55ee15d9c9cd4b6baa8bbe5db1e850ac2cbe",
+          "files": 2689
+        },
+        "after": {
+          "sha256": "114d932136f4c68f4d06e368311a55ee15d9c9cd4b6baa8bbe5db1e850ac2cbe",
+          "files": 2689
+        },
+        "scope": "All tracked and nonignored untracked workspace files at the stated test window. This receipt is written afterward into the existing journal; no self-referential final-file hash is claimed."
+      },
+      "syntaxFiles": 6,
+      "unitTests": 76,
+      "wave3ReversionControls": 38,
+      "reshooterPlantedMutationsCaught": 18,
+      "wave3BaselineSnapshots": 35,
+      "sourceReplay": {
+        "result": "PASS",
+        "files": 80,
+        "extracts": 221,
+        "controlSha256": "b7016517fa760819a4703b0cfadb32647b705d205ab97314520eeae711d23cd3",
+        "scope": "Actual current external bytes, Git-blob/SHA256/size pins, selected text extraction and named occurrence searches. Does not measure human reading of complete works. Archives were received earlier; this replay checks the pinned unpacked files."
+      },
+      "webObservations": 3,
+      "fullCorpusReadingClaimed": false,
+      "printedCollationClaimed": false,
+      "privatePdfReplay": "NOT_RUN_RAW_OBJECT_ABSENT; wave2 historical receipt and controls retained",
+      "drafts": 13,
+      "markedCitations": 54,
+      "crossReferences": 80,
+      "localMarkdownTargets": {
+        "changedMarkdownFiles": 25,
+        "relativeMarkdownLinks": 293,
+        "directoryTargets": 2,
+        "missing": [],
+        "meaning": "CommonMark local file/directory targets only, not external URL availability or theological/source validation",
+        "parser": "markdown-it-py 3.0.0",
+        "toolScope": "One-off supporting check outside Git, not a new permanent CI gate. Installed into the external .cache tool directory; only local file/directory targets were checked."
+      },
+      "matrix": {
+        "статей": 13,
+        "строкОпор": 84,
+        "сРаспознаннойМеткой": 33,
+        "безРаспознаннойМетки": 51,
+        "открытыхУникальных": 10,
+        "открытые": [
+          "01",
+          "02",
+          "03",
+          "04",
+          "05",
+          "06",
+          "07",
+          "10",
+          "11",
+          "12"
+        ],
+        "запретовПар": 195,
+        "нарушений": 0
+      },
+      "massLegacyCodes": {
+        "A1": 53,
+        "A2": 30,
+        "B1": 34,
+        "B2": 6,
+        "C": 86
+      },
+      "readingMeasuredByLabels": false,
+      "canonicalSourceClassesMeasuredByLegacyCodes": false,
+      "claims": 907,
+      "claimMarkers": 1109,
+      "nonblockingDiagnostics": "Historical unreachable SHA references and adjacent-lane inventories remain recorded. The measured card/prose vocabulary mismatch is not zero (61 terms; 8 records without a state; 1 prose marker not mirrored). These are bookkeeping diagnostics, not counts of unread works or proof of source unreliability.",
+      "postCommitHistoryAndLanding": "Separate from this local check window; no merge or publication is authorized."
+    },
+    "derivedStateRefresh": {
+      "ledger": "Table generated by validate_atonement_corpus_integrity.py --print-ledger-summary; C25 OPEN, OPEN count8/TENSION count3.",
+      "claimRegisters": "Regenerated by atonement_claim_register.py --write, then --check/--cross; writer initially returns1 for the stale pre-write state, which is not a post-write verification.",
+      "auditTable91": "Copied from the canonical claimsPerRegistry rollup and checked by check_table_91; initial reshoot did not converge until this separately owned table was refreshed.",
+      "localDocumentDate": "2026-11-03 is a deliberately day-granular review date in Europe/Moscow, declared in integrityGate.dayGranularity; exact byte/test UTC receipts are separate. No hour of human reading was invented.",
+      "mirrorLag": "Only local metadata changed: the mass-register snapshot is declared behind Git; recorded remote names/bytes/md5 remain historical; no Drive read/write in this wave.",
+      "importModeRegression": "Added an isolated importlib-loading test for the shared metric helper, matching the clean-clone proof entrypoint."
+    }
   }
 }

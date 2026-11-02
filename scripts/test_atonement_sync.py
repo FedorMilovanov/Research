@@ -9,7 +9,16 @@ import hashlib
 import json
 from pathlib import Path
 import tempfile
+import subprocess
+import sys
 import unittest
+from collections import Counter
+from unittest.mock import patch
+import unicodedata
+
+import atonement_reshoot_state as reshoot
+import atonement_wave3_sources as wave3
+from atonement_source_metrics import source_label_prefix, legacy_carrier_code
 
 from atonement_claim_register import classify_token
 from atonement_crossref_audit import FILE_REF, main as crossref_main
@@ -348,6 +357,215 @@ class SynthesisEvidenceTests(unittest.TestCase):
         broken = original.replace(row["required"], "", 1) + "\n" + row["required"]
         errors = check_repairs(ROOT, self.report, {row["file"]: broken})
         self.assertTrue(any(row["id"] in e and "must precede" in e for e in errors))
+
+
+class Wave3ParserTests(unittest.TestCase):
+    def test_eli_uses_ids_not_zero_based_list_slices(self):
+        verses = b"10\tIsa.1:1\n12\tIsa.1:2\n"
+        words = "10\tἸδοὺ\n11\tλέγει\n12\tθεός\n".encode()
+        self.assertEqual(wave3.eli_verses(verses, words),
+                         {"Isa.1:1": "Ἰδοὺ λέγει", "Isa.1:2": "θεός"})
+
+    def test_eli_duplicate_or_missing_tokens_fail_closed(self):
+        for words in [b"10\tx\n10\ty\n12\tz\n", b"10\tx\n12\tz\n"]:
+            with self.subTest(words=words), self.assertRaises(ValueError):
+                wave3.eli_verses(b"10\tIsa.1:1\n12\tIsa.1:2\n", words)
+
+    def test_tei_excludes_editorial_text_but_keeps_tail(self):
+        raw = ('<TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>λύτρον</teiHeader>'
+               '<text><body><div subtype="chapter" n="20"><head>λύτρον</head>'
+               '<p>ἔδωκεν <note>λύτρον</note>λύτρον αὐτόν</p></div></body></text></TEI>').encode()
+        text = wave3.tei_segment(raw, {"chapter": 20})
+        self.assertEqual(text, "ἔδωκεν λύτρον αὐτόν")
+        self.assertEqual(wave3.tokens(text).count("λυτρον"), 1)
+
+    def test_tei_missing_and_ambiguous_locators_are_errors(self):
+        raw = ('<TEI xmlns="http://www.tei-c.org/ns/1.0"><text><body>'
+               '<div subtype="chapter" n="20">α</div><div subtype="chapter" n="20">β</div>'
+               '</body></text></TEI>').encode()
+        for chapter in (20, 21):
+            with self.subTest(chapter=chapter), self.assertRaises(ValueError):
+                wave3.tei_segment(raw, {"chapter": chapter})
+
+    def test_normalization_is_not_a_lemma_family_search(self):
+        decomposed = unicodedata.normalize("NFD", "λύτρον")
+        self.assertEqual(wave3.tokens(decomposed), ["λυτρον"])
+        self.assertNotEqual(wave3.tokens("αἵματος"), wave3.tokens("αἷμα"))
+
+    def test_osis_counts_direct_ketiv_words_not_qere_notes(self):
+        raw = ('<osis xmlns="http://www.bibletechnologies.net/2003/OSIS/namespace">'
+               '<verse osisID="Amos.7.2"><w lemma="c/5545" morph="HVq">ו/סלח</w>'
+               '<note><w lemma="5545">סלח</w></note><w lemma="5545">סלח</w>'
+               '</verse></osis>').encode()
+        words = wave3.osis_words(raw)
+        self.assertEqual(len(words), 1)
+        self.assertEqual(len(words["Amos.7.2"]), 2)
+        self.assertEqual(words["Amos.7.2"][0]["lemma"], ["5545"])
+        self.assertNotIn("/", words["Amos.7.2"][0]["text"])
+
+    def test_morphgnt_seven_and_eight_column_schemas_are_explicit(self):
+        old = "040101 P- -------- PREP Ἐν Ἐν ἐν ἐν\n".encode()
+        modern = "040101 P- -------- Ἐν Ἐν ἐν ἐν\n".encode()
+        self.assertEqual(wave3.morphgnt_words(old)["040101"][0]["text"], "Ἐν")
+        self.assertEqual(wave3.morphgnt_words(modern, columns=7)["040101"][0]["lemma"], "ἐν")
+        with self.assertRaises(ValueError):
+            wave3.morphgnt_words(old, columns=7)
+        with self.assertRaises(ValueError):
+            wave3.morphgnt_words(modern)
+
+    def test_empty_or_unsupported_nt_schema_rejected(self):
+        for raw, columns in [(b"", 8), (b"x", 6)]:
+            with self.subTest(columns=columns), self.assertRaises(ValueError):
+                wave3.morphgnt_words(raw, columns)
+
+    def test_s23_token_per_line_is_grouped_by_verse(self):
+        raw = "48.1.0 προφήτης\n48.1.1 Ἰδοὺ\n48.1.1 λέγει\n48.1.2 θεός\n".encode()
+        self.assertEqual(wave3.s23_verses(raw)["48.1.1"], "Ἰδοὺ λέγει")
+
+    def test_s23_noncontiguous_verse_and_bad_format_rejected(self):
+        for raw in [b"48.1.1 a\n48.1.2 b\n48.1.1 c\n", b"48.1 a\n", b""]:
+            with self.subTest(raw=raw), self.assertRaises(ValueError):
+                wave3.s23_verses(raw)
+
+    def test_source_bytes_and_absence_are_checked_before_parsing(self):
+        raw = b"verified original"
+        pin = dict(localRelativePath="source.txt", bytes=len(raw), blob=wave3.blob_hash(raw),
+                   sha256=hashlib.sha256(raw).hexdigest())
+        control = {"files": {"sample": pin}}
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            self.assertTrue(any("missing" in e for e in wave3.verify_external(control, root)))
+            (root / "source.txt").write_bytes(b"changed")
+            self.assertTrue(any("bytes/hash mismatch" in e for e in wave3.verify_external(control, root)))
+
+    def test_source_path_cannot_escape_external_root(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            errors = wave3.verify_external({"files": {"bad": {"localRelativePath": "../escape"}}}, Path(tmp))
+            self.assertEqual(errors, ["unsafe source path: bad"])
+
+
+class LabelMetricTests(unittest.TestCase):
+    def test_reshooter_importlib_mode_finds_its_helper_without_pythonpath(self):
+        code = ("import importlib.util; "
+                f"s=importlib.util.spec_from_file_location('proof_reshoot', {str(ROOT / 'scripts/atonement_reshoot_state.py')!r}); "
+                "m=importlib.util.module_from_spec(s); s.loader.exec_module(m); "
+                "assert m.source_label_prefix('D') == 'D'")
+        with tempfile.TemporaryDirectory() as tmp:
+            result = subprocess.run([sys.executable, "-I", "-B", "-c", code], cwd=tmp, capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+    def test_canonical_prefix_recognition_is_not_legacy_vocabulary(self):
+        for label in ("A1", "A2", "A3", "B1", "C", "D"):
+            self.assertEqual(source_label_prefix(f"`{label}` (context)"), label)
+        for label in ("B2", "READABLE", "not A1", "A10", "A1suffix"):
+            self.assertIsNone(source_label_prefix(label))
+
+    def test_legacy_label_can_follow_different_column_layouts(self):
+        self.assertEqual(legacy_carrier_code("| FP-001 | author | claim | `A1` | page |"), "A1")
+        self.assertEqual(legacy_carrier_code("| FP-137 | author | work | claim | `B2` (qualifier) | page |"), "B2")
+
+    def test_a_quoted_grade_inside_a_claim_is_not_the_row_grade(self):
+        self.assertEqual(legacy_carrier_code("| FP-001 | author | disputed `A1` attribution | `C` | queue |"), "C")
+        self.assertIsNone(legacy_carrier_code("| FP-001 | author | disputed `A1` attribution | queue |"))
+
+    def test_ambiguous_and_unmarked_legacy_cells_fail_closed(self):
+        self.assertIsNone(legacy_carrier_code("| FP-001 | `A1` | `B1` | page |"))
+        self.assertIsNone(legacy_carrier_code("| FP-001 | A1 | page |"))
+        self.assertIsNone(legacy_carrier_code("| FP-001 | `A3` | page |"))
+
+    def test_actual_209_rows_are_legacy_labels_not_reading(self):
+        file = ROOT / "docs/research/atonement/35_four_point_authors_mass_registry.md"
+        codes = [legacy_carrier_code(line) for line in file.read_text().splitlines() if line.startswith("| FP-")]
+        self.assertEqual(len(codes), 209)
+        self.assertEqual(Counter(codes), {"A1": 53, "A2": 30, "B1": 34, "B2": 6, "C": 86})
+        corpus = json.loads((ROOT / "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json").read_text())
+        block = corpus["fourPointMassRegistry20261023"]
+        self.assertEqual(block["perLegacyCode"], dict(Counter(codes)))
+        self.assertIs(block["readingMeasured"], False)
+        self.assertIs(block["sourceClassesMeasured"], False)
+        self.assertFalse({"perClass", "shareA1Percent", "classesVocabulary"} & set(block))
+
+    def test_matrix_counts_labels_without_certifying_reading_and_blocks_c_and_d(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            ledger = root / "ledger.md"
+            ledger.write_text("# empty conflict fixture\n")
+            (root / "draft.md").write_text(
+                "| Опора | Класс | Локатор | HOLD |\n|---|---|---|---|\n"
+                + "".join(f"| source | `{label}` | section 1 | x |\n" for label in ["A1", "A2", "C", "D", "B2"]))
+            with patch.multiple(reshoot, ROOT=root, LEDGER=ledger, SUBLANES=(),
+                                draft_paths=lambda: ["draft.md"], DONOT_SIGNS={}, DONOT_COMPOUND={}):
+                matrix = reshoot.exhaust_matrix_scan({})
+        self.assertEqual(matrix["итог"]["сРаспознаннойМеткой"], 4)
+        self.assertEqual(matrix["итог"]["безРаспознаннойМетки"], 1)
+        self.assertIs(matrix["readingMeasured"], False)
+        self.assertIs(matrix["exhaustivenessMeasured"], False)
+        self.assertEqual(matrix["приёмка"]["статейСКлассомC"], 1)
+        self.assertEqual(matrix["приёмка"]["статейСКлассомD"], 1)
+        self.assertNotIn("читаемых", matrix["итог"])
+
+
+class ActualWave3Tests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.report = json.loads((ROOT / REPORT).read_text())
+        cls.control = json.loads((ROOT / wave3.CONTROL).read_text())
+
+    def test_current_offline_controls_and_historical_bytes(self):
+        self.assertEqual(wave3.check_controls(ROOT, self.report, self.control), [])
+
+    def test_missing_source_cannot_pass(self):
+        broken = deepcopy(self.control)
+        del broken["files"]["swete/utils/convert-swete.py"]
+        self.assertTrue(any("inventory" in e for e in wave3.check_controls(ROOT, self.report, broken)))
+
+    def test_lost_extract_cannot_pass(self):
+        broken = deepcopy(self.control)
+        broken["extracts"] = [r for r in broken["extracts"] if r["id"] != "gregory30-20"]
+        self.assertTrue(any("extract" in e for e in wave3.check_controls(ROOT, self.report, broken)))
+
+    def test_source_class_is_not_a_language_or_readability_state(self):
+        broken = deepcopy(self.control)
+        broken["files"]["gregory30"]["evidenceClass"] = "A1-original"
+        self.assertTrue(any("source axis" in e for e in wave3.check_controls(ROOT, self.report, broken)))
+
+    def test_reading_and_apparatus_cannot_be_promoted(self):
+        for key in ["fullCorpusReadingClaimed", "printedCollationClaimed"]:
+            broken = deepcopy(self.report)
+            broken["wave3"]["readingScope"][key] = True
+            self.assertTrue(any("reading scope promoted" in e for e in wave3.check_controls(ROOT, broken, self.control)))
+
+    def test_derivative_source_cannot_be_called_independent(self):
+        broken = deepcopy(self.control)
+        broken["sourceRelationships"][0]["relation"] = "INDEPENDENT"
+        self.assertTrue(any("independence" in e for e in wave3.check_controls(ROOT, self.report, broken)))
+
+    def test_rendered_web_excerpt_is_not_a_hashed_raw_archive(self):
+        broken = deepcopy(self.control)
+        broken["webExcerpts"][0]["rawObjectSha256"] = "a" * 64
+        self.assertTrue(any("unobserved archive" in e for e in wave3.check_controls(ROOT, self.report, broken)))
+
+    def test_missing_or_wrong_baseline_snapshot_cannot_pass(self):
+        for field in ("missing", "sha256"):
+            broken = deepcopy(self.report)
+            if field == "missing":
+                broken["wave3"]["supersededSnapshots"].pop()
+            else:
+                broken["wave3"]["supersededSnapshots"][0]["sha256"] = "0" * 64
+            self.assertTrue(wave3.check_controls(ROOT, broken, self.control))
+
+    def test_every_wave3_text_or_data_repair_is_guarded(self):
+        tested = set()
+        for row in self.report["repairs"]:
+            if not row["id"].startswith("W3-"):
+                continue
+            with self.subTest(repair=row["id"]):
+                original = (ROOT / row["file"]).read_text()
+                broken = original.replace(row["required"], row["removed"], 1)
+                self.assertNotEqual(original, broken)
+                self.assertTrue(any(row["id"] in e for e in check_repairs(ROOT, self.report, {row["file"]: broken})))
+                tested.add(row["id"])
+        self.assertTrue(wave3.REQUIRED_REPAIRS <= tested)
 
 
 if __name__ == "__main__":

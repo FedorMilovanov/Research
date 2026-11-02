@@ -52,8 +52,10 @@ jobs:
           scripts/atonement_claim_register.py scripts/atonement_reshoot_state.py
           scripts/atonement_drive_mirror_round63.py scripts/atonement_library_index_round63.py
           scripts/atonement_round_close.py scripts/atonement_history_perturbation_probe.py
+          scripts/atonement_sync_check.py scripts/atonement_wave3_sources.py
+          scripts/atonement_source_metrics.py scripts/test_atonement_sync.py
 
-      - name: Source-backed draft and synthesis synchronization (offline, read-only)
+      - name: Source-backed synchronization and source-label regressions (offline, read-only)
         run: |
           python3 -B scripts/atonement_sync_check.py
           python3 -B scripts/test_atonement_sync.py
