@@ -704,7 +704,10 @@ PIPELINE_FILES = ("scripts/validate_atonement_corpus_integrity.py", "scripts/ato
                   "scripts/atonement_drive_mirror_round63.py", "scripts/atonement_library_index_round63.py",
                   "scripts/atonement_round_close.py",
                   "scripts/atonement_history_perturbation_probe.py",
-                  "scripts/atonement_drive_mirror_round66.py", "scripts/atonement_library_index_round66.py")
+                  "scripts/atonement_drive_mirror_round66.py", "scripts/atonement_library_index_round66.py",
+                  "scripts/atonement_draft_citation_audit.py", "scripts/atonement_sync_sources.py",
+                  "scripts/atonement_sync_check.py", "scripts/test_atonement_sync.py",
+                  "scripts/atonement_crossref_audit.py")
 
 
 ENV_DECL_BLOCK = ENV_DECL_PREFIX + KEY_DATE + "r" + CIRCLE

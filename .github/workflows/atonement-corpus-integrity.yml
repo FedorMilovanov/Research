@@ -53,6 +53,12 @@ jobs:
           scripts/atonement_drive_mirror_round63.py scripts/atonement_library_index_round63.py
           scripts/atonement_round_close.py scripts/atonement_history_perturbation_probe.py
 
+      - name: Source-backed draft synchronization and regression tests (offline, read-only)
+        run: |
+          python3 -B scripts/atonement_sync_check.py
+          python3 -B scripts/test_atonement_sync.py
+          python3 -B scripts/atonement_crossref_audit.py --check
+
       - name: Atonement corpus integrity (read-only)
         run: python3 -B scripts/validate_atonement_corpus_integrity.py
 

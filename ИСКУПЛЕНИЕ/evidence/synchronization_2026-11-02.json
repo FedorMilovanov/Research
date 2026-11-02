@@ -1,0 +1,1883 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2026-11-02",
+  "baselineCommit": "ec722894e21b004900e9e44a2da9bdb9990f1f7c",
+  "branch": "arena/d7043ba0-research",
+  "publicationEligible": false,
+  "scope": "Wave 1: marked Synodal quotations in 13 drafts, B2 rewrite, directly connected source/locator corrections. This is not a full rereading of every draft, original book, or theological claim.",
+  "historicalReports": [
+    "ИСКУПЛЕНИЕ/evidence/synodal_citation_audit_2026-10-30.json",
+    "ИСКУПЛЕНИЕ/evidence/greek_form_audit_2026-10-30.json"
+  ],
+  "baselineReproduced": {
+    "markedCitations": 44,
+    "confirmed": 21,
+    "unsupportedByBoth": 22,
+    "noExplicitVerse": 1
+  },
+  "draftCount": 13,
+  "markedCitationCount": 54,
+  "sourceControl": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-02.json",
+  "method": {
+    "freshPrimaryTextWork": "Pinned RST/RSB digital texts and SBLGNT S1 re-extracted from acquired GitHub files. Book identities are explicit; RST paragraph-split verse segments are joined in source order. File hashes and small verse controls are retained; full files remain outside Git.",
+    "retainedHistoricalEvidence": "Dort, Calvin, Owen and Amyraut corrections compare the existing preserved excerpts and their context. Original scans, Latin Calvin and complete modern works were NOT freshly acquired or read.",
+    "logicalReview": "The B2 rewrite distinguishes what wording entails, what an interpreter supplies, local comparative strength, and the remaining task. A regression test confirms retention, not truth of an interpretation.",
+    "sourceIndependence": "RST declares Logos/RBO ancestry; RSB declares bible.by. Neither line is certified independent beyond that. Historical live bible.by checks are not a third independent witness to RSB.",
+    "statusMeaning": "INTEGRATED_SOURCE_CHECKED = named textual discrepancy corrected against acquired digital witnesses. INTEGRATED_REVIEWED = source-attributed or logical/editorial revision reviewed locally; not a new primary-scan verification."
+  },
+  "repairs": [
+    {
+      "id": "Q01",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
+      "baselineLine": 34,
+      "occurrencesCorrected": 1,
+      "kind": "synodal-quotation",
+      "removed": "«Он есть умилостивление за грехи наши, и не за наши только, но и за грехи всего мира»",
+      "required": "«Он есть умилостивление за грехи наши, и не только за наши, но и за грехи всего мира»",
+      "basis": {
+        "reference": "1 Ин. 2:2, Синодальный",
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "reason": "перестановка отрицания: «не за наши только» вместо «не только за наши»",
+      "status": "INTEGRATED_SOURCE_CHECKED"
+    },
+    {
+      "id": "Q02",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
+      "baselineLine": 42,
+      "occurrencesCorrected": 1,
+      "kind": "synodal-quotation",
+      "removed": "«душа тела в крови, и Я назначил её вам для очищения»",
+      "required": "«душа тела в крови, и Я назначил ее вам для жертвенника, чтобы очищать души ваши»",
+      "basis": {
+        "reference": "Лев. 17:11",
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "reason": "подмена оборота: «для очищения» вместо «для жертвенника, чтобы очищать души ваши»",
+      "status": "INTEGRATED_SOURCE_CHECKED"
+    },
+    {
+      "id": "Q03",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
+      "baselineLine": 46,
+      "occurrencesCorrected": 1,
+      "kind": "synodal-quotation",
+      "removed": "«понёс на Себе грехи многих»",
+      "required": "«понёс на Себе грех многих»",
+      "basis": {
+        "reference": "Ис. 53:12",
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "reason": "число: «грехи многих» вместо «грех многих»",
+      "status": "INTEGRATED_SOURCE_CHECKED"
+    },
+    {
+      "id": "Q04",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
+      "baselineLine": 56,
+      "occurrencesCorrected": 1,
+      "kind": "synodal-quotation",
+      "removed": "«в умилостивление верою в крови Его»",
+      "required": "«в жертву умилостивления в Крови Его через веру»",
+      "basis": {
+        "reference": "Рим. 3:25",
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "reason": "контаминация: «в умилостивление верою в крови Его» вместо «в жертву умилостивления в Крови Его через веру»",
+      "status": "INTEGRATED_SOURCE_CHECKED"
+    },
+    {
+      "id": "Q05",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+      "baselineLine": 31,
+      "occurrencesCorrected": 1,
+      "kind": "synodal-quotation",
+      "removed": "«ибо кровь очищает душу»",
+      "required": "«ибо кровь сия душу очищает»",
+      "basis": {
+        "reference": "Лев. 17:11, Синодальный",
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "reason": "перестановка и пропуск «сия»: «ибо кровь очищает душу» вместо «ибо кровь сия душу очищает»; «да и по закону почти всё» вместо «да и все почти по закону»",
+      "status": "INTEGRATED_SOURCE_CHECKED"
+    },
+    {
+      "id": "Q06",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+      "baselineLine": 31,
+      "occurrencesCorrected": 1,
+      "kind": "synodal-quotation",
+      "removed": "«да и по закону почти всё очищается кровью; и без пролития крови не бывает прощения»",
+      "required": "«да и все почти по закону очищается кровью, и без пролития крови не бывает прощения»",
+      "basis": {
+        "reference": "Евр. 9:22, Синодальный",
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "reason": "перестановка и пропуск «сия»: «ибо кровь очищает душу» вместо «ибо кровь сия душу очищает»; «да и по закону почти всё» вместо «да и все почти по закону»",
+      "status": "INTEGRATED_SOURCE_CHECKED"
+    },
+    {
+      "id": "Q07",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/03_nature-of-atonement.md",
+      "baselineLine": 40,
+      "occurrencesCorrected": 1,
+      "kind": "synodal-quotation",
+      "removed": "«Которого Бог… поставил в жертву умилостивления в Крови Его»",
+      "required": "«Которого Бог предложил в жертву умилостивления в Крови Его»",
+      "basis": {
+        "reference": "Рим. 3:25, Синодальный, фрагмент",
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "reason": "чужой глагол: «поставил» вместо «предложил» (формулировка перевода Кассиана)",
+      "status": "INTEGRATED_SOURCE_CHECKED"
+    },
+    {
+      "id": "Q08",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/06_world-all-many-hard-texts.md",
+      "baselineLine": 72,
+      "occurrencesCorrected": 1,
+      "kind": "synodal-quotation",
+      "removed": "«искупивший»",
+      "required": "«отвергаясь искупившего их Господа» (2 Пет. 2:1, Синодальный, фрагмент)",
+      "basis": {
+        "reference": "2 Пет. 2:1",
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "reason": "форма причастия: «искупивший» вместо «искупившего»; corrected form retained inside the full clause in the rewritten B2.",
+      "status": "INTEGRATED_SOURCE_CHECKED"
+    },
+    {
+      "id": "Q09",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/06_world-all-many-hard-texts.md",
+      "baselineLine": 80,
+      "occurrencesCorrected": 1,
+      "kind": "synodal-quotation",
+      "removed": "«предал Сына Своего **за всех нас**»",
+      "required": "«предал Его за всех нас»",
+      "basis": {
+        "reference": "Рим. 8:31–34",
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "reason": "сжатие двух сказуемых: пропущено «не пощадил, но» и «Его»; вставлено выделение **…**",
+      "status": "INTEGRATED_SOURCE_CHECKED"
+    },
+    {
+      "id": "Q10",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+      "baselineLine": 32,
+      "occurrencesCorrected": 1,
+      "kind": "synodal-quotation",
+      "removed": "«Он есть умилостивление за грехи наши, и не за наши только, но и за грехи всего мира»",
+      "required": "«Он есть умилостивление за грехи наши, и не только за наши, но и за грехи всего мира»",
+      "basis": {
+        "reference": "1 Ин. 2:2, Синодальный",
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "reason": "та же перестановка отрицания, что в A1",
+      "status": "INTEGRATED_SOURCE_CHECKED"
+    },
+    {
+      "id": "Q11",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+      "baselineLine": 61,
+      "occurrencesCorrected": 1,
+      "kind": "synodal-quotation",
+      "removed": "«Бог хочет, чтобы все люди спаслись»",
+      "required": "«Который хочет, чтобы все люди спаслись»",
+      "basis": {
+        "reference": "1 Тим. 2:4, Синодальный, фрагмент",
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "reason": "подлежащее подменено: «Бог хочет» вместо «Который хочет»",
+      "status": "INTEGRATED_SOURCE_CHECKED"
+    },
+    {
+      "id": "Q12",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/09_free-offer-of-the-gospel.md",
+      "baselineLine": 34,
+      "occurrencesCorrected": 1,
+      "kind": "synodal-quotation",
+      "removed": "«Придите ко Мне все тружащиеся и обременённые»",
+      "required": "«Придите ко Мне, все труждающиеся и обремененные»",
+      "basis": {
+        "reference": "Мф. 11:28, Синодальный",
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "reason": "опечатка «тружащиеся» вместо «труждающиеся»; «всякому творению» вместо «всей твари» (форма издания «Свет на Востоке»); «всем людям повсюду» вместо «людям всем повсюду»",
+      "status": "INTEGRATED_SOURCE_CHECKED"
+    },
+    {
+      "id": "Q13",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/09_free-offer-of-the-gospel.md",
+      "baselineLine": 34,
+      "occurrencesCorrected": 1,
+      "kind": "synodal-quotation",
+      "removed": "«идите по всему миру и проповедуйте Евангелие всякому творению»",
+      "required": "«идите по всему миру и проповедуйте Евангелие всей твари»",
+      "basis": {
+        "reference": "Мк. 16:15, Синодальный",
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "reason": "опечатка «тружащиеся» вместо «труждающиеся»; «всякому творению» вместо «всей твари» (форма издания «Свет на Востоке»); «всем людям повсюду» вместо «людям всем повсюду»",
+      "status": "INTEGRATED_SOURCE_CHECKED"
+    },
+    {
+      "id": "Q14",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/09_free-offer-of-the-gospel.md",
+      "baselineLine": 34,
+      "occurrencesCorrected": 1,
+      "kind": "synodal-quotation",
+      "removed": "«Бог повелевает ныне всем людям повсюду покаяться»",
+      "required": "«Бог ныне повелевает людям всем повсюду покаяться»",
+      "basis": {
+        "reference": "Деян. 17:30, Синодальный, фрагмент",
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "reason": "опечатка «тружащиеся» вместо «труждающиеся»; «всякому творению» вместо «всей твари» (форма издания «Свет на Востоке»); «всем людям повсюду» вместо «людям всем повсюду»",
+      "status": "INTEGRATED_SOURCE_CHECKED"
+    },
+    {
+      "id": "Q15",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/11_order-of-salvation.md",
+      "baselineLine": 45,
+      "occurrencesCorrected": 1,
+      "kind": "synodal-quotation",
+      "removed": "«Если кто не родится свыше, не может увидеть Царствие Божие»",
+      "required": "«Если кто не родится свыше, не может увидеть Царствия Божия»",
+      "basis": {
+        "reference": "Ин. 3:3, Синодальный",
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "reason": "падеж: «Царствие Божие» вместо «Царствия Божия»",
+      "status": "INTEGRATED_SOURCE_CHECKED"
+    },
+    {
+      "id": "Q16",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/11_order-of-salvation.md",
+      "baselineLine": 47,
+      "occurrencesCorrected": 1,
+      "kind": "synodal-quotation",
+      "removed": "«Оправдываются даром, по благодати Его, искуплением во Христе Иисусе»",
+      "required": "«получая оправдание даром, по благодати Его, искуплением во Христе Иисусе»",
+      "basis": {
+        "reference": "Рим. 3:24, Синодальный, фрагмент",
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "reason": "форма глагола: «Оправдываются даром» вместо «получая оправдание даром» (близко к тексту РБО 1824)",
+      "status": "INTEGRATED_SOURCE_CHECKED"
+    },
+    {
+      "id": "Q17",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/11_order-of-salvation.md",
+      "baselineLine": 48,
+      "occurrencesCorrected": 1,
+      "kind": "synodal-quotation",
+      "removed": "«Ибо вы приняли Духа усыновления, Которым взываем: „Авва, Отче!“»",
+      "required": "«но приняли Духа усыновления, Которым взываем: „Авва, Отче!“»",
+      "basis": {
+        "reference": "Рим. 8:15, Синодальный",
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "reason": "союз подменён: «Ибо вы приняли» вместо «но приняли» — потерян контраст с «духом рабства»",
+      "status": "INTEGRATED_SOURCE_CHECKED"
+    },
+    {
+      "id": "Q18",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/11_order-of-salvation.md",
+      "baselineLine": 49,
+      "occurrencesCorrected": 2,
+      "kind": "synodal-quotation",
+      "removed": "«без святости никто не увидит Господа»",
+      "required": "«святость, без которой никто не увидит Господа»",
+      "basis": {
+        "reference": "Евр. 12:14, Синодальный",
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "reason": "перестроено: «без святости» вместо «без которой»",
+      "status": "INTEGRATED_SOURCE_CHECKED"
+    },
+    {
+      "id": "Q19",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/11_order-of-salvation.md",
+      "baselineLine": 51,
+      "occurrencesCorrected": 1,
+      "kind": "synodal-quotation",
+      "removed": "«Когда же явится Христос… и мы явимся с Ним во славе»",
+      "required": "«Когда же явится Христос… тогда и вы явитесь с Ним во славе»",
+      "basis": {
+        "reference": "Кол. 3:4, Синодальный, фрагмент",
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "reason": "лицо подменено: «и мы явимся» вместо «тогда и вы явитесь»",
+      "status": "INTEGRATED_SOURCE_CHECKED"
+    },
+    {
+      "id": "Q20",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/11_order-of-salvation.md",
+      "baselineLine": 65,
+      "occurrencesCorrected": 1,
+      "kind": "synodal-quotation",
+      "removed": "«кого предузнал, тех и предопределил… и оправдал, и прославил»",
+      "required": "«кого Он предузнал, тем и предопределил… а кого призвал, тех и оправдал; а кого оправдал, тех и прославил»",
+      "basis": {
+        "reference": "Рим. 8:29–30, Синодальный, фрагмент",
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "reason": "грамматика цепочки: «тех и предопределил» вместо «тем и предопределил»; пропущено «тех» перед «оправдал»/«прославил»",
+      "status": "INTEGRATED_SOURCE_CHECKED"
+    },
+    {
+      "id": "Q21",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/12_union-with-christ.md",
+      "baselineLine": 47,
+      "occurrencesCorrected": 1,
+      "kind": "synodal-quotation",
+      "removed": "«если кто во Христе — новая тварь»",
+      "required": "«кто во Христе, тот новая тварь»",
+      "basis": {
+        "reference": "2 Кор. 5:17, Синодальный, фрагмент",
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "reason": "введено условие: «если кто во Христе — новая тварь» вместо «кто во Христе, тот новая тварь»",
+      "status": "INTEGRATED_SOURCE_CHECKED"
+    },
+    {
+      "id": "Q22",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/13_justification-adoption-sanctification-perseverance.md",
+      "baselineLine": 41,
+      "occurrencesCorrected": 1,
+      "kind": "synodal-quotation",
+      "removed": "«Оправдываются даром, по благодати Его, искуплением во Христе Иисусе»",
+      "required": "«получая оправдание даром, по благодати Его, искуплением во Христе Иисусе»",
+      "basis": {
+        "reference": "Рим. 3:24, Синодальный, фрагмент",
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "reason": "см. Рим. 3:24 в C1 и C3: «Оправдываются даром» вместо «получая оправдание даром»",
+      "status": "INTEGRATED_SOURCE_CHECKED"
+    },
+    {
+      "id": "Q23",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
+      "kind": "quotation-locator",
+      "removed": "«Господь возложил на Него грехи всех нас» (Синодальный)",
+      "required": "«Господь возложил на Него грехи всех нас» (Ис. 53:6, Синодальный)",
+      "basis": {
+        "reference": "Ис 53:6",
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "reason": "Exact wording was present but the verse was not attached to the quotation.",
+      "status": "INTEGRATED_SOURCE_CHECKED"
+    },
+    {
+      "id": "L01",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
+      "kind": "source-backed-edit",
+      "removed": "### Ветхий Завет: пять корней одного языка",
+      "required": "### Ветхий Завет: пять связанных словесных рядов",
+      "reason": "נשׂא עון is a phrase, not one Hebrew root; כפר/כפר are related forms, not two independent roots.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/ot/01_LEX_KPR_KIPPER_FAMILY.md",
+        "locator": "lexical families",
+        "verification": "comparison with preserved source excerpt; no new scan inspection"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "L02",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
+      "kind": "source-backed-edit",
+      "removed": "Русское «искупление» стоит на пяти еврейских корнях, и каждый даёт свой оттенок:",
+      "required": "Для исследования искупления важны следующие связанные слова и выражения. Это не пять независимых этимологических корней русского термина:",
+      "reason": "Do not equate thematic Hebrew vocabulary with the etymology of a Russian word.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/02_TERMS_DEFINITIONS_AND_WHAT_IS_ATONEMENT.md",
+        "locator": "terms map",
+        "verification": "comparison with preserved source excerpt; no new scan inspection"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "L03",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
+      "kind": "source-backed-edit",
+      "removed": "Пс. 49:8 — псалом о выкупе души, где Богу не нужны быки и козлы (пересказ).",
+      "required": "Пс. 48:8 — «Человек никак не искупит брата своего и не даст Богу выкупа за него» (Пс. 48:8, Синодальный, фрагмент). Соседний Пс. 49 говорит о жертвах; это другой псалом, а не продолжение данного стиха.",
+      "reason": "Correct Synodal psalm numbering and disentangle two different psalms.",
+      "basis": {
+        "references": [
+          "Пс 48:8",
+          "Пс 49:8"
+        ],
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "L04",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
+      "kind": "source-backed-edit",
+      "removed": "Пс. 130:8: «Искупит Израиль от всех беззаконий своих» (фрагмент).",
+      "required": "Пс. 129:8: «и Он избавит Израиля от всех беззаконий его» (Пс. 129:8, Синодальный).",
+      "reason": "Ps 130:8 does not exist in the checked Synodal witnesses; correct number and wording.",
+      "basis": {
+        "references": [
+          "Пс 129:8"
+        ],
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "L05",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
+      "kind": "source-backed-edit",
+      "removed": "`ἱλαστήριον` — крышка ковчега, место умилостивления: День очищения звучит в Павле.",
+      "required": "В Евр. 9:5 `ἱλαστήριον` обозначает культовый предмет, осеняемый херувимами. В Рим. 3:25 оно отнесено ко Христу; связь с крышкой ковчега — возможное объяснение образа, а не автоматически установленный референт слова в обоих местах.",
+      "reason": "Separate lexical background from the referent in Romans.",
+      "basis": {
+        "references": [
+          "Евр 9:5",
+          "Рим 3:25"
+        ],
+        "witnesses": [
+          "py-sblgnt"
+        ],
+        "file": "ИСКУПЛЕНИЕ/nt/02_NT_LEXICAL_FIELD_PROPITIATION_RECONCILIATION.md",
+        "locator": "A.2–A.4"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "N01",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+      "kind": "source-backed-edit",
+      "removed": "(Наум 1:2, пересказ)",
+      "required": "(Наум 1:3, пересказ)",
+      "reason": "The quoted clause belongs to Nahum 1:3, not 1:2.",
+      "basis": {
+        "references": [
+          "Наум 1:3"
+        ],
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "N02",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+      "kind": "source-backed-edit",
+      "removed": "В этом стихе — не библиология, а заветная логика: жизнь создана Богом, кровь есть жизнь, и жизнь, отданная в место очищения, отвечает за жизнь. День очищения (Лев. 16) показывает тот же ход: без пролития нет входа за завесу и нет прощения народа (пересказ). Писание не знает «прощения под расписку»: прощение всегда стоит чем-то — не потому что Богу не хватает щедрости, а потому что грех что-то отнял. Связь крови с очищением при этом не магия и не «просто символ» (`../03_` §I): это язык завета, на котором Писание говорит о цене прощения с самого начала.",
+      "required": "Лев. 17:11 связывает кровь, жизнь и установленное Богом очищение: Он назначает кровь для жертвенника. Это конкретное предписание, а не представление о самодействующей силе крови. Евр. 9:22 говорит «все почти по закону»; слово «почти» нельзя потерять. Описание данного Богом пути и утверждение, что никакой иной мыслимый путь прощения невозможен, — разные уровни аргумента. Для второго потребуются дополнительные посылки о Божией справедливости.",
+      "reason": "Preserve the qualifier in Hebrews and do not infer a modal universal from a ritual provision.",
+      "basis": {
+        "references": [
+          "Лев 17:11",
+          "Евр 9:22"
+        ],
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "N03",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+      "kind": "source-backed-edit",
+      "removed": "До Ансельма и до спора о двух видах необходимости была практика: кровь Дня очищения, кровь пасхального агнца, кровь жертв завета — и прощение, данное **через** них, а не «рядом» с ними. Бог прощал Израиль, и путь прощения шёл через жертву (по `../03_` §I). Это ещё не доказывает ни одну из богословских линий — это ставит вопрос, на который обе линии обязаны ответить: почему Сам Бог вёл Свой народ путём жертвы?",
+      "required": "Ветхозаветные обряды дают материал для вопроса о жертве, очищении и избавлении; но Пасха, заключение завета и День очищения не являются одним обрядом с взаимозаменяемыми формулировками. Для рассматриваемого довода прямые опоры здесь — Лев. 17:11 и его сопоставление с Евр. 9:22. Они показывают установленный путь; необходимость этого пути во всех возможных случаях ещё нужно обосновать.",
+      "reason": "Withdraw an unsupported conflation of the effects of different rituals; retain the checked argument.",
+      "basis": {
+        "references": [
+          "Лев 17:11",
+          "Евр 9:22"
+        ],
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "N04",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+      "kind": "source-backed-edit",
+      "removed": "Это спор двух богословских линий, а не спор «за» и «против» христианства. Мы не выносим здесь вердикт: обе линии живы внутри традиции, и читателю полезно знать, что спор существует.",
+      "required": "Эти определения задают реальное различие: необходим ли путь удовлетворения только после выбора именно этого пути или уже при свободном решении спасти грешника. Дорт II.1–2 поддерживает вторую линию, связывая спасение с удовлетворением правосудия. Это установленное содержание исповедания, а не доказательство, что один стих сам по себе исключил все метафизические альтернативы. Сравнение аргументов правомерно; само существование спора не делает их равноубедительными.",
+      "reason": "Replace ritual neutrality with a bounded conclusion tied to the actual confession.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md",
+        "locator": "II.1–2",
+        "verification": "comparison with preserved source excerpt; no new scan inspection"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "N05",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+      "kind": "source-backed-edit",
+      "removed": "**Не спорят обе:** Бог не «под давлением» чужого закона; спасение — Его дело, а не вынужденная уступка кому-то; и никакая линия не учит, что Бог сначала разозлился, а потом Его умягчили. **Спорят о другом:** была ли кровь единственным возможным путём (гипотетическая линия) или следствием свободного решения спасти **именно так** (последовательная). Формально — спор о модальности; практически — о том, насколько глубока связь между святостью Бога и ценой прощения. Пока спор открыт, читателю полезно знать обе формулы — и не выдавать одну за «христианство вообще», а другую за неверие.",
+      "required": "**Общий исходный вопрос:** спасение рассматривается как свободное действие Бога, а не подчинение внешнему закону. **Различие в определениях §2:** гипотетическая необходимость допускает иной возможный путь, но признаёт необходимым исполнение избранного Богом пути; последовательная необходимость утверждает, что при свободном решении спасти Божия справедливость требует удовлетворения. Прежний абзац переставлял эти позиции местами. Это спор о необходимости удовлетворения, не об объёме искупления у гипотетических универсалистов.",
+      "reason": "Correct inversion relative to the definitions and distinguish necessity from extent.",
+      "basis": {
+        "file": "docs/research/atonement/36_hodge_st_vol2_atonement_scan_2026-10-30.md",
+        "locator": "§§8, 11.4; definitions in draft §2",
+        "verification": "internal source-backed distinction, not a new survey of all schools"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "N06",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+      "kind": "source-backed-edit",
+      "removed": "### Дорт II.1–2 — что именно исповедуется (по номерам)",
+      "required": "### Дорт II.1–4 — что именно исповедуется (по номерам)",
+      "reason": "Correct scope of the cited articles.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md",
+        "locator": "II.1–4",
+        "verification": "comparison with preserved source excerpt; no new scan inspection"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "N07",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+      "kind": "source-backed-edit",
+      "removed": "- **II.1:** грехи избранных должны были быть удовлетворены праведностью Божией; Отец дал Сына в поручительство, чтобы Он понёс их (пересказ по `../13_` §1).\n- **II.2:** Посредник должен быть истинным Богом и истинным человеком — чтобы понести наказание и чтобы Его заслуга дошла до неба (пересказ по тому же локатору).",
+      "required": "- **II.1:** Бог милостив и справедлив; наши грехи заслуживают наказания, избежать которого нельзя без удовлетворения Божией справедливости. В этой статье не написано «грехи избранных».\n- **II.2:** мы не можем совершить такое удовлетворение сами; Бог по милости дал единородного Сына поручителем, чтобы Он совершил удовлетворение за нас.\n- **II.3–4:** смерть Сына названа совершенной жертвой бесконечной ценности; II.4 объясняет её достоинство тем, Кто пострадал: истинный и совершенно святой человек, единородный Сын, единосущный Отцу и Духу.\n\nЭто пересказ [полного текста Дорта II](../../16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md), а не переставленные между статьями цитаты.",
+      "reason": "Match each proposition to the actual article; remove unsupported wording.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md",
+        "locator": "II.1–4, complete retained English text",
+        "verification": "comparison with preserved source excerpt; no new scan inspection"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "N08",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+      "kind": "source-backed-edit",
+      "removed": "Это не «Дорт доказал всё» — это исповедание необходимости в форме, которую держит обе стороны вопроса: и требование правды, и свободу дающего.",
+      "required": "Это определённая позиция Дорта: милость и требование удовлетворения соединены в одном изложении. Согласие всех иных христианских школ с этой формулировкой здесь не установлено.",
+      "reason": "Do not attribute agreement to unexamined parties.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md",
+        "locator": "II.1–4",
+        "verification": "comparison with preserved source excerpt; no new scan inspection"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "N09",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+      "kind": "source-backed-edit",
+      "removed": "Если посредник только Бог — страдание не наказание и цена не цена; если только человек — Его заслуга не доходит до бесконечного долга. Двойственность природы и есть ответ на вопрос «почему крест, а не личная молитва»: должен быть Тот, Кто может пострадать, и Тот, Чья заслуга бесконечна. Ту же линию держит Кальвин II.12: необходимость посредника — из определения Божьего, а не из бессилия (пересказ по `../15_` §A.4, chunk 155); Дорт II.1–2 — та же мысль в исповедальной форме.",
+      "required": "Дорт II.4 выводит достоинство смерти из личности пострадавшего Сына: Он истинный и совершенно святой человек и одновременно единородный Сын Божий. Это не два посредника и не две отдельные заслуги. Кальвин II.12 рассматривает необходимость Посредника в связи с Божиим определением; его аргумент нужно читать отдельно, а не приписывать Дорту II.1–2. Здесь установлена исповедальная связь личности Христа и ценности жертвы, не исчерпывающая история христологии.",
+      "reason": "Correct article attribution and replace unsupported formulations with the confession itself.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md",
+        "locator": "II.4",
+        "verification": "comparison with preserved source excerpt; no new scan inspection"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "R01",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/03_nature-of-atonement.md",
+      "kind": "source-backed-edit",
+      "removed": "- **Рим. 3:21–26:** правда Божия «угашается» верою — «угашение грехов Его верою в крови Его» (фрагмент): показанная на кресте правда **не отменяет** наказание, а принимает его в Посреднике; «предложил в умилостивление» — снова рядом жертва и снятие гнева.\n- **Гал. 3:13:** «сделавшись за нас клятвою» — Христос берёт на Себя положение проклятого (пересказ): замещение в терминах завета, а не в терминах произвола.\n- **2 Кор. 5:21:** Бог «соделал грехом» Того, Который не знал греха (пересказ) — предельная форма «вместо»: вменение идёт в сторону невинного.\n- **1 Пет. 2:24:** «грехи наши Сам вознёс телом Своим на древо» — грехи несутся Им; «ранами Его мы исцелились» (Ис. 53:5) — результат в тех же строках.\n- **Евр. 9–10:** кровь завета и «одною жертвою навсегда» — замещение, совершённое раз и навсегда (стык со §5).",
+      "required": "- **Рим. 3:21–26:** Бог предложил Христа в жертву умилостивления «для показания правды Его в прощении грехов, соделанных прежде» (Рим. 3:25, Синодальный, фрагмент); 3:26 связывает это с тем, что Бог праведен и оправдывает верующего. Правда здесь **показывается**, не «угашается». Толкование этой связи через заместительное наказание требует раскрытия богословских посылок; оно не является цитатой из стиха.",
+      "reason": "Remove fabricated wording and the argument based on it; distinguish the verse from theological explanation.",
+      "basis": {
+        "references": [
+          "Рим 3:25–26"
+        ],
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "R02",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/03_nature-of-atonement.md",
+      "kind": "source-backed-edit",
+      "removed": "- **Примирение.** «Бог во Христе примирил мир с Собою, не вменяя им преступлений их» (2 Кор. 5:19, пересказ). Вражда кончилась — объективно, раз и навсегда, forensically: как оправдание, а не как «перестаньте злиться» (`../12_` H6, research-заметка).",
+      "required": "- **Примирение.** В 2 Кор. 5:19 Бог действует во Христе, примиряя мир с Собою и не вменяя преступлений (пересказ). В 5:20 следует призыв примириться с Богом. Инициатива принадлежит Богу; отношение совершённого действия, его объёма и призыва нужно объяснить. Фраза «вражда кончилась у всех объективно» не следует из одного этого пересказа (`../../12_HARD_TEXTS_EXTENT_CARDS.md`, H6).",
+      "reason": "Do not smuggle a universal applied result into an acknowledged extent dispute.",
+      "basis": {
+        "references": [
+          "2 Кор 5:19–20"
+        ],
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "R03",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/03_nature-of-atonement.md",
+      "kind": "source-backed-edit",
+      "removed": "«Вошёл во святое… и приобрёл вечное избавление» (Евр. 9:12, пересказ); «одною жертвою… навсегда» освящаемых (Евр. 10:14, пересказ). Ничего добавлять к кресту не надо — ни добрых дел, ни обрядов. Это не полемика «против католиков»: совершенство креста — объективный факт, из которого следует, что исправительное наказание после смерти не несёт вину за грех (`../10_` §1, пересказ B1; Евр. 12 и Рим. 8:1 — оговорка разбора).",
+      "required": "«Вошёл во святое… и приобрёл вечное избавление» (Евр. 9:12, пересказ); Евр. 10:14 говорит о совершённости освящаемых одной жертвой. Это опоры для единократности и достаточности дела Христа. Из них нельзя без отдельного сопоставления первичных вероучительных текстов выводить, что любая иная традиция считает последующее очищение новой искупительной жертвой. Прежний вывод об исправительном наказании после смерти снят как не обоснованный данным абзацем.",
+      "reason": "Withdraw an unargued confessional conclusion; the cited verses alone do not establish another tradition’s claim.",
+      "basis": {
+        "references": [
+          "Евр 9:12",
+          "Евр 10:14"
+        ],
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "D01",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/07_dort-sufficiency-efficiency.md",
+      "kind": "source-backed-edit",
+      "removed": "Если II.3 — самая цитируемая, то II.5 — самая пропускаемая, а между ними — четыре статьи.",
+      "required": "Между II.3 о достаточности и II.5 о провозглашении стоит одна статья — II.4, о достоинстве жертвы.",
+      "reason": "Correct arithmetic and remove unsupported frequency claims.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md",
+        "locator": "II.3–5",
+        "verification": "comparison with preserved source excerpt; no new scan inspection"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "D02",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/07_dort-sufficiency-efficiency.md",
+      "kind": "source-backed-edit",
+      "removed": "Документ XVI века не обязан разрешать споры XVII–XX веков о терминах;",
+      "required": "Каноны 1619 года — документ XVII века; они не обязаны разрешать все последующие споры о терминах;",
+      "reason": "Correct century; dates are already in the same corpus.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/13_DORT_II_CALVIN_OWEN_EXTENT.md",
+        "locator": "Dort 1618–1619",
+        "verification": "comparison with preserved source excerpt; no new scan inspection"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "A01",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+      "kind": "source-backed-edit",
+      "removed": "## 1. Три particular-чтения 1 Ин. 2:2 — не одно",
+      "required": "## 1. Четыре particular-чтения 1 Ин. 2:2 — не одно",
+      "reason": "The list contains four authors/readings.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+        "locator": "§1 list"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "A02",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+      "kind": "source-backed-edit",
+      "removed": "Три реформатских чтения с разными механизмами",
+      "required": "Четыре реформатских чтения с разными механизмами",
+      "reason": "Match introductory count to the list.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+        "locator": "§1 list"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "A03",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+      "kind": "source-backed-edit",
+      "removed": "**Кальвин** (комментарий; у нас — реконструкция по вторичным разборам, страница не в руках)",
+      "required": "**Кальвин** (комментарий на 1 Ин. 2:2, CTS 1855, с. 173; сохранённая выписка в `../../13_DORT_II_CALVIN_OWEN_EXTENT.md` §2.2, не новая визуальная сверка страницы)",
+      "reason": "Propagate the existing located primary excerpt; stop reporting an obsolete absence.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md",
+        "locator": "H1: Calvin CTS 1855 p. 173",
+        "verification": "comparison with preserved source excerpt; no new scan inspection"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "A04",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+      "kind": "source-backed-edit",
+      "removed": "### Почему «три чтения» — не соревнование «кто правее»",
+      "required": "### Почему разные чтения нужно сравнивать по аргументам",
+      "reason": "Evaluating explanations is a legitimate research task.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md",
+        "locator": "H1 strengths/weaknesses",
+        "verification": "methodological correction"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "A05",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+      "kind": "source-backed-edit",
+      "removed": "- спросить «кто правее» — значит спросить не тот вопрос: досье спрашивает «какой механизм читает текст», и по каждому из них открыт отдельный счёт (см. ниже).",
+      "required": "- вопрос «какое чтение лучше объясняет текст» правомерен. Ответ требует сравнения контекста, дополнительных посылок и возражений; наличие нескольких авторов не делает их аргументы равноубедительными. Локальные оценки даны в статье B2, а эта карта не заменяет их перечнем имён.",
+      "reason": "Remove a ritual prohibition on adjudication without declaring a global winner.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md",
+        "locator": "H1 competing readings",
+        "verification": "logical/methodological correction"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "A06",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+      "kind": "source-backed-edit",
+      "removed": "- **Амиральдианство** (Амиральд, Сомюр): универсальное искупление логически **перед** избранием; избрание — из тех, кто поверит (`../04_` §2 P4).",
+      "required": "- **Амиро (Сомюр):** в проверенных выписках из издания 1658 г. он сочетает всеобщую условную волю спасать верующих с **безусловным избранием к вере**. В XI, с. 113, предведение спасения объясняется решением Бога дать веру; это не отбор на основании предвиденной автономной веры. Условие относится к получению спасения, а не к тому, состоялась ли историческая смерть Христа. Основание: `../../../docs/research/atonement/34_atonement_vs_redemption_lexical_history_and_shedd_distinction.md` §4.110; контроль редакционного вывода — `../../../docs/research/atonement/36_hodge_st_vol2_atonement_scan_2026-10-30.md` §11, пункты 3–4. Это проверка названных мест, не перенос каждого их слова в первое издание 1634 г.",
+      "reason": "Represent Amyraut’s own statement, not an election-by-foreseen-faith caricature.",
+      "basis": {
+        "file": "docs/research/atonement/34_atonement_vs_redemption_lexical_history_and_shedd_distinction.md",
+        "locator": "§4.110, 1658 XI.113: pource qu’il a resolu de leur donner de croire",
+        "verification": "comparison with preserved source excerpt; no new scan inspection"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "A07",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/05_for-whom-did-christ-die-question.md",
+      "kind": "source-backed-edit",
+      "removed": "- **Амиральдианство** (Сомюр): универсальное искупление логически перед избранием (`../04_` §2 P4).",
+      "required": "- **Амиро (Сомюр):** всеобщая условная воля спасать при вере и особое безусловное избрание к вере. По выписке XI.113 издания 1658 г. предведение следует за решением дать веру, не служит основанием отбора (`../../../docs/research/atonement/34_atonement_vs_redemption_lexical_history_and_shedd_distinction.md` §4.110; подробнее статья B4). Спор касается объёма и порядка намерений, не того, зависит ли факт смерти Христа от будущей человеческой веры.",
+      "reason": "Propagate the same corrected model to the overview draft.",
+      "basis": {
+        "file": "docs/research/atonement/34_atonement_vs_redemption_lexical_history_and_shedd_distinction.md",
+        "locator": "§4.110, XI.113",
+        "verification": "comparison with preserved source excerpt; no new scan inspection"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "H01",
+      "file": "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md",
+      "kind": "source-backed-edit",
+      "removed": "Синтаксис: `περὶ τῶν ἁμαρτιῶν` в 2:2 и 4:10 — `περί` + генитив **без артикля** при `ἁμαρτία`, один из 14 таких случаев в НЗ. Конструкция `οὐ περὶ τῶν ἡμετέρων δὲ μόνον ἀλλὰ καὶ` — явное «не только … но и»: текст расширяет круг сам, параллель Ин. 11:52.",
+      "required": "Синтаксис: `περὶ τῶν ἁμαρτιῶν` в 2:2 и 4:10 — `περί` + генитив **с артиклем `τῶν`** при `ἁμαρτιῶν`. Исправлено 2026-11-02 по закреплённому S1: прежнее «без артикля» противоречило самой цитате. Число 14 в `nt/03_` относится ко всему подсчитанному там ряду `περί` + генитив `ἁμαρτία`, не к безартиклевым конструкциям. Конструкция `οὐ περὶ τῶν ἡμετέρων δὲ μόνον ἀλλὰ καὶ` — явное «не только … но и»: текст расширяет высказывание за пределы первой группы; точный референт «мира» оценивается отдельно.",
+      "reason": "Correct the article claim without substituting a different, unreplicated global count.",
+      "basis": {
+        "references": [
+          "1 Ин 2:2",
+          "1 Ин 4:10"
+        ],
+        "witnesses": [
+          "py-sblgnt"
+        ],
+        "file": "ИСКУПЛЕНИЕ/nt/03_NT_LEXICAL_FIELD_AIMA_AND_PREPOSITIONS.md",
+        "locator": "B.4; method of count distinct from article claim"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "C01",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/13_justification-adoption-sanctification-perseverance.md",
+      "kind": "source-backed-edit",
+      "removed": "«Спасены… не делами праведности, которые мы сотворили, но по Своей милости» (Тит. 3:5, пересказ); «Ибо Бог… дал нам Духа… освящающего» (Евр. 2:11, пересказ — «освящающий и освящаемые — от Единого», ср. статью A3). Освящение — плод союза, а не условие союза. Стык: серия «Сердце» (см. также).",
+      "required": "Тит. 3:5–6 связывает спасение по милости с возрождением и обновлением Святым Духом (пересказ). Об освящении Духом прямо говорят 1 Пет. 1:2 и Рим. 15:16. **Евр. 2:11 — другой акцент:** освящающий называет освящаемых братьями; в контексте 2:9–13 это Христос, а не утверждение «Бог дал освящающего Духа». Действие Христа и Духа нужно различать, не противопоставляя. Формула «освящение — плод союза» здесь служит богословским объяснением, а не дословным содержанием одного из этих стихов.",
+      "reason": "Correct the subject of Hebrews 2:11 and use actual Spirit-sanctification references.",
+      "basis": {
+        "references": [
+          "Тит 3:5–6",
+          "Евр 2:9–13",
+          "1 Пет 1:2",
+          "Рим 15:16"
+        ],
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "C02",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/13_justification-adoption-sanctification-perseverance.md",
+      "kind": "source-backed-edit",
+      "removed": "«Овцы Мои… никто их не похитит у Меня» (Ин. 10:28, пересказ); «Ничто не отлучит нас от любви Божией» (Рим. 8:38–39, пересказ). Постоянство — дар благодати через союз (статья C2), а не наша заслуга. **Оговорка, которую нельзя терять:** Евр. 10:29 — «если кто отступит… останется одно ожидание суда» (пересказ) — это **предупреждение**, не повод для паники: Оуэн читает стих как угрозу *на случай*, а не как приговор святым (`../14_` §2.3, пересказ). Временная вера ≠ спасительная — различение держит серия «Отступничество» (см. также; `../../apostasy/`).",
+      "required": "«Овцы Мои… никто их не похитит у Меня» (Ин. 10:28, пересказ); «Ничто не отлучит нас от любви Божией» (Рим. 8:38–39, пересказ). Постоянство здесь понимается как дар благодати через союз (статья C2), а не как заслуга. **Предупреждения следует читать точно:** ожидание суда стоит в Евр. 10:26–27; 10:29 говорит о попирающем Сына и крови завета; поколебавшийся назван в 10:38. Это связанные, но не взаимозаменяемые стихи. Оуэн читает предупреждение условно (`../../14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md` §2.3, пересказ его позиции). Его объяснение нужно оценить рядом с текстом: условная форма угрозы сама по себе не доказывает невозможности её исполнения.",
+      "reason": "Disentangle conflated verses and distinguish Owen’s reading from the text’s assertion.",
+      "basis": {
+        "references": [
+          "Евр 10:26–29",
+          "Евр 10:38"
+        ],
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "C03",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/13_justification-adoption-sanctification-perseverance.md",
+      "kind": "source-backed-edit",
+      "removed": "2. **«Может ли верующий падать и гибнуть?»** Здесь живут предупреждения Писания: Евр. 10:29 (пересказ) — об оставшемся суде для отступившего; Оуэн читает его как угрозу *на случай* (`../14_` §2.3 пересказ), не как приговор святым. Мы не выносим вердикта спора — держим оба текста рядом.",
+      "required": "2. **«Как предупреждения относятся к сохранению верующих?»** Евр. 10:26–29 описывает суд и вину отвергающего; 10:38–39 противопоставляет отступление и веру. Условное чтение Оуэна — позиция толкователя, не отсутствующая в стихе оговорка «это никогда не случится». Согласование с Ин. 10 и Рим. 8 требует аргумента; простого соседства цитат недостаточно.",
+      "reason": "Propagate corrected locators and avoid presenting the interpreter’s qualification as Scripture.",
+      "basis": {
+        "references": [
+          "Евр 10:26–29",
+          "Евр 10:38–39"
+        ],
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "A08",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+      "kind": "source-backed-edit",
+      "removed": "**«Кто из них прав — Кальвин или Оуэн?»** В этой статье — не тот вопрос и не тот ответ: обе линии внутри семьи (§4), у каждой — свой механизм (§1–3), вердикта нет (`EVIDENCE_HOLD`). Спрашивать надо «какой механизм читает текст» — и это ровно то, что досье фиксирует построчно.",
+      "required": "**«Кто из них прав — Кальвин или Оуэн?»** По каждому месту это содержательный вопрос, а не запрещённая постановка. Историческая принадлежность обоих к реформатской традиции не решает экзегезу. Нужно сопоставить конкретные посылки и ответы на возражения; предварительные локальные оценки находятся в статье B2, общего вердикта по всем разногласиям пока нет.",
+      "reason": "Synchronize the FAQ with the corrected methodological statement in §1.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md",
+        "locator": "H1 primary page locators; 14_ §0.2",
+        "verification": "propagation of existing source verification, not new scan access"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "A09",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+      "kind": "source-backed-edit",
+      "removed": "**«Почему вы не цитируете Оуэна дословно?»** Дисциплина: quote-safe NO до страницы Goold (`../14_` §0); до сверки — пересказ по чанкам research-уровня с пометкой. Несверенная цитата из Оуэна — хуже честного пересказа: страницы-то нет.",
+      "required": "**«Почему здесь преимущественно пересказ Оуэна?»** Для карты аргументов выбран пересказ. Отсутствие страниц больше не является общим основанием: в `../../14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md` §0.2 указаны Goold X, с. 330, 343, 349, 362–363 и другие локаторы. Нужно различать установленную пагинацию по цифровой копии, сверку конкретной транскрипции с изображением и разрешение Product-публикации. Последние два вопроса не закрываются наличием номера страницы.",
+      "reason": "Remove obsolete locator absence; preserve the actual remaining checks.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md",
+        "locator": "H1 primary page locators; 14_ §0.2",
+        "verification": "propagation of existing source verification, not new scan access"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "A10",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+      "kind": "source-backed-edit",
+      "removed": "комментарий на 1 Ин. 2:2 — реконструкция, Catholic Epistles под login-wall (`../13_` §2.2);",
+      "required": "комментарий на 1 Ин. 2:2 — CTS 1855, с. 173, выписка в `../../13_DORT_II_CALVIN_OWEN_EXTENT.md` §2.2; прежнее отсутствие страницы устранено;",
+      "reason": "Propagate the known page locator into the editorial apparatus.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md",
+        "locator": "H1 primary page locators; 14_ §0.2",
+        "verification": "propagation of existing source verification, not new scan access"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "A11",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+      "kind": "source-backed-edit",
+      "removed": "Product-цитаты Оуэна — NO до Goold page (`../14_` §0);",
+      "required": "Product-цитаты Оуэна — после проверки конкретной цитаты и gate серии (страницы Goold уже локализованы в `../../14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md` §0.2);",
+      "reason": "Do not confuse a located page with publication permission or continue to call it missing.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md",
+        "locator": "H1 primary page locators; 14_ §0.2",
+        "verification": "propagation of existing source verification, not new scan access"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "G00",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/06_world-all-many-hard-texts.md",
+      "kind": "source-backed-edit",
+      "removed": "освящаемых и данных Богу детях",
+      "required": "освящаемых и детях, которых Бог дал Христу",
+      "reason": "Hebrews 2:13 says God gives the children; do not reverse the recipient in synthesis.",
+      "basis": {
+        "references": [
+          "Евр 2:13"
+        ],
+        "witnesses": [
+          "rst",
+          "rsb",
+          "py-sblgnt"
+        ]
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "M01",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
+      "kind": "source-backed-edit",
+      "removed": "## Опорные карточки (все с проверенными локаторами и правами)",
+      "required": "## Опорные карточки и отдельные ограничения проверки",
+      "reason": "A support table containing locator/rights holds cannot claim all locators and rights are already verified.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
+        "locator": "support table HOLD column",
+        "verification": "internal consistency"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "MB01",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
+      "kind": "provenance",
+      "removed": "| Писание, Синодальный перевод | A1 (как перевод; сверка по `../../BIBLE_CORPUS/` перед Product-gate) | стихи в тексте | нет на права; оговорка перевода обязательна |",
+      "required": "| Писание, Синодальный перевод | A1 для текста, не для его толкования | [цифровой контроль отмеченных цитат, 2026-11-02](../../evidence/source_controls_2026-11-02.json); `BIBLE_CORPUS` — политика прав, не текст Библии | печатные страницы и полный Product-корпус этой сверкой не утверждаются |",
+      "reason": "Identify the actual checked digital witnesses; do not claim that a rights-map directory contains Bible text.",
+      "basis": {
+        "references": [
+          "marked Synodal quotations in this file"
+        ],
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "M02",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+      "kind": "source-backed-edit",
+      "removed": "## Опорные карточки (все с проверенными локаторами и правами)",
+      "required": "## Опорные карточки и отдельные ограничения проверки",
+      "reason": "A support table containing locator/rights holds cannot claim all locators and rights are already verified.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+        "locator": "support table HOLD column",
+        "verification": "internal consistency"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "MB02",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+      "kind": "provenance",
+      "removed": "| Писание, Синодальный перевод | A1 (как перевод; сверка по `../../BIBLE_CORPUS/` перед Product-gate) | стихи в тексте | нет на права; оговорка перевода обязательна |",
+      "required": "| Писание, Синодальный перевод | A1 для текста, не для его толкования | [цифровой контроль отмеченных цитат, 2026-11-02](../../evidence/source_controls_2026-11-02.json); `BIBLE_CORPUS` — политика прав, не текст Библии | печатные страницы и полный Product-корпус этой сверкой не утверждаются |",
+      "reason": "Identify the actual checked digital witnesses; do not claim that a rights-map directory contains Bible text.",
+      "basis": {
+        "references": [
+          "marked Synodal quotations in this file"
+        ],
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "M03",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/03_nature-of-atonement.md",
+      "kind": "source-backed-edit",
+      "removed": "## Опорные карточки (все с проверенными локаторами и правами)",
+      "required": "## Опорные карточки и отдельные ограничения проверки",
+      "reason": "A support table containing locator/rights holds cannot claim all locators and rights are already verified.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/synthesis/drafts/03_nature-of-atonement.md",
+        "locator": "support table HOLD column",
+        "verification": "internal consistency"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "MB03",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/03_nature-of-atonement.md",
+      "kind": "provenance",
+      "removed": "| Писание, Синодальный перевод | A1 (как перевод; сверка по `../../BIBLE_CORPUS/` перед Product-gate) | стихи в тексте | нет на права; оговорка перевода обязательна |",
+      "required": "| Писание, Синодальный перевод | A1 для текста, не для его толкования | [цифровой контроль отмеченных цитат, 2026-11-02](../../evidence/source_controls_2026-11-02.json); `BIBLE_CORPUS` — политика прав, не текст Библии | печатные страницы и полный Product-корпус этой сверкой не утверждаются |",
+      "reason": "Identify the actual checked digital witnesses; do not claim that a rights-map directory contains Bible text.",
+      "basis": {
+        "references": [
+          "marked Synodal quotations in this file"
+        ],
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "M04",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/04_perfection-of-atonement.md",
+      "kind": "source-backed-edit",
+      "removed": "## Опорные карточки (все с проверенными локаторами и правами)",
+      "required": "## Опорные карточки и отдельные ограничения проверки",
+      "reason": "A support table containing locator/rights holds cannot claim all locators and rights are already verified.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/synthesis/drafts/04_perfection-of-atonement.md",
+        "locator": "support table HOLD column",
+        "verification": "internal consistency"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "MB04",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/04_perfection-of-atonement.md",
+      "kind": "provenance",
+      "removed": "| Писание, Синодальный перевод | A1 (как перевод; сверка по `../../BIBLE_CORPUS/` перед Product-gate) | стихи в тексте | нет на права; оговорка перевода обязательна |",
+      "required": "| Писание, Синодальный перевод | A1 для текста, не для его толкования | [цифровой контроль отмеченных цитат, 2026-11-02](../../evidence/source_controls_2026-11-02.json); `BIBLE_CORPUS` — политика прав, не текст Библии | печатные страницы и полный Product-корпус этой сверкой не утверждаются |",
+      "reason": "Identify the actual checked digital witnesses; do not claim that a rights-map directory contains Bible text.",
+      "basis": {
+        "references": [
+          "marked Synodal quotations in this file"
+        ],
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "M05",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/05_for-whom-did-christ-die-question.md",
+      "kind": "source-backed-edit",
+      "removed": "## Опорные карточки (все с проверенными локаторами и правами)",
+      "required": "## Опорные карточки и отдельные ограничения проверки",
+      "reason": "A support table containing locator/rights holds cannot claim all locators and rights are already verified.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/synthesis/drafts/05_for-whom-did-christ-die-question.md",
+        "locator": "support table HOLD column",
+        "verification": "internal consistency"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "MB05",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/05_for-whom-did-christ-die-question.md",
+      "kind": "provenance",
+      "removed": "| Писание, Синодальный перевод | A1 (как перевод; сверка по `../../BIBLE_CORPUS/` перед Product-gate) | стихи в тексте | нет на права; оговорка перевода обязательна |",
+      "required": "| Писание, Синодальный перевод | A1 для текста, не для его толкования | [цифровой контроль отмеченных цитат, 2026-11-02](../../evidence/source_controls_2026-11-02.json); `BIBLE_CORPUS` — политика прав, не текст Библии | печатные страницы и полный Product-корпус этой сверкой не утверждаются |",
+      "reason": "Identify the actual checked digital witnesses; do not claim that a rights-map directory contains Bible text.",
+      "basis": {
+        "references": [
+          "marked Synodal quotations in this file"
+        ],
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "M07",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/07_dort-sufficiency-efficiency.md",
+      "kind": "source-backed-edit",
+      "removed": "## Опорные карточки (все с проверенными локаторами и правами)",
+      "required": "## Опорные карточки и отдельные ограничения проверки",
+      "reason": "A support table containing locator/rights holds cannot claim all locators and rights are already verified.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/synthesis/drafts/07_dort-sufficiency-efficiency.md",
+        "locator": "support table HOLD column",
+        "verification": "internal consistency"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "M08",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+      "kind": "source-backed-edit",
+      "removed": "## Опорные карточки (все с проверенными локаторами и правами)",
+      "required": "## Опорные карточки и отдельные ограничения проверки",
+      "reason": "A support table containing locator/rights holds cannot claim all locators and rights are already verified.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+        "locator": "support table HOLD column",
+        "verification": "internal consistency"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "MB08",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+      "kind": "provenance",
+      "removed": "| Писание, Синодальный перевод | A1 (сверка по `../../BIBLE_CORPUS/` перед Product-gate) | стихи в тексте | оговорка перевода обязательна |",
+      "required": "| Писание, Синодальный перевод | A1 для текста, не для его толкования | [цифровой контроль отмеченных цитат, 2026-11-02](../../evidence/source_controls_2026-11-02.json); `BIBLE_CORPUS` — политика прав, не текст Библии | печатные страницы и полный Product-корпус этой сверкой не утверждаются |",
+      "reason": "Identify the actual checked digital witnesses; do not claim that a rights-map directory contains Bible text.",
+      "basis": {
+        "references": [
+          "marked Synodal quotations in this file"
+        ],
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "M09",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/09_free-offer-of-the-gospel.md",
+      "kind": "source-backed-edit",
+      "removed": "## Опорные карточки (все с проверенными локаторами и правами)",
+      "required": "## Опорные карточки и отдельные ограничения проверки",
+      "reason": "A support table containing locator/rights holds cannot claim all locators and rights are already verified.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/synthesis/drafts/09_free-offer-of-the-gospel.md",
+        "locator": "support table HOLD column",
+        "verification": "internal consistency"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "MB09",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/09_free-offer-of-the-gospel.md",
+      "kind": "provenance",
+      "removed": "| Писание, Синодальный перевод | A1 (сверка по `../../BIBLE_CORPUS/`) | стихи в тексте | оговорка перевода обязательна |",
+      "required": "| Писание, Синодальный перевод | A1 для текста, не для его толкования | [цифровой контроль отмеченных цитат, 2026-11-02](../../evidence/source_controls_2026-11-02.json); `BIBLE_CORPUS` — политика прав, не текст Библии | печатные страницы и полный Product-корпус этой сверкой не утверждаются |",
+      "reason": "Identify the actual checked digital witnesses; do not claim that a rights-map directory contains Bible text.",
+      "basis": {
+        "references": [
+          "marked Synodal quotations in this file"
+        ],
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "M10",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/10_tulip-without-caricature.md",
+      "kind": "source-backed-edit",
+      "removed": "## Опорные карточки (все с проверенными локаторами и правами)",
+      "required": "## Опорные карточки и отдельные ограничения проверки",
+      "reason": "A support table containing locator/rights holds cannot claim all locators and rights are already verified.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/synthesis/drafts/10_tulip-without-caricature.md",
+        "locator": "support table HOLD column",
+        "verification": "internal consistency"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "MB10",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/10_tulip-without-caricature.md",
+      "kind": "provenance",
+      "removed": "| Писание, Синодальный перевод | A1 (сверка по `../../BIBLE_CORPUS/`) | стихи в тексте (общие ссылки на оси) | оговорка перевода обязательна |",
+      "required": "| Писание, Синодальный перевод | A1 для текста, не для его толкования | [цифровой контроль отмеченных цитат, 2026-11-02](../../evidence/source_controls_2026-11-02.json); `BIBLE_CORPUS` — политика прав, не текст Библии | печатные страницы и полный Product-корпус этой сверкой не утверждаются |",
+      "reason": "Identify the actual checked digital witnesses; do not claim that a rights-map directory contains Bible text.",
+      "basis": {
+        "references": [
+          "marked Synodal quotations in this file"
+        ],
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "M11",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/11_order-of-salvation.md",
+      "kind": "source-backed-edit",
+      "removed": "## Опорные карточки (все с проверенными локаторами и правами)",
+      "required": "## Опорные карточки и отдельные ограничения проверки",
+      "reason": "A support table containing locator/rights holds cannot claim all locators and rights are already verified.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/synthesis/drafts/11_order-of-salvation.md",
+        "locator": "support table HOLD column",
+        "verification": "internal consistency"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "MB11",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/11_order-of-salvation.md",
+      "kind": "provenance",
+      "removed": "| Писание, Синодальный перевод | A1 (сверка по `../../BIBLE_CORPUS/`) | стихи в тексте | оговорка перевода обязательна |",
+      "required": "| Писание, Синодальный перевод | A1 для текста, не для его толкования | [цифровой контроль отмеченных цитат, 2026-11-02](../../evidence/source_controls_2026-11-02.json); `BIBLE_CORPUS` — политика прав, не текст Библии | печатные страницы и полный Product-корпус этой сверкой не утверждаются |",
+      "reason": "Identify the actual checked digital witnesses; do not claim that a rights-map directory contains Bible text.",
+      "basis": {
+        "references": [
+          "marked Synodal quotations in this file"
+        ],
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "M12",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/12_union-with-christ.md",
+      "kind": "source-backed-edit",
+      "removed": "## Опорные карточки (все с проверенными локаторами и правами)",
+      "required": "## Опорные карточки и отдельные ограничения проверки",
+      "reason": "A support table containing locator/rights holds cannot claim all locators and rights are already verified.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/synthesis/drafts/12_union-with-christ.md",
+        "locator": "support table HOLD column",
+        "verification": "internal consistency"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "MB12",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/12_union-with-christ.md",
+      "kind": "provenance",
+      "removed": "| Писание, Синодальный перевод | A1 (сверка по `../../BIBLE_CORPUS/`) | стихи в тексте | оговорка перевода обязательна |",
+      "required": "| Писание, Синодальный перевод | A1 для текста, не для его толкования | [цифровой контроль отмеченных цитат, 2026-11-02](../../evidence/source_controls_2026-11-02.json); `BIBLE_CORPUS` — политика прав, не текст Библии | печатные страницы и полный Product-корпус этой сверкой не утверждаются |",
+      "reason": "Identify the actual checked digital witnesses; do not claim that a rights-map directory contains Bible text.",
+      "basis": {
+        "references": [
+          "marked Synodal quotations in this file"
+        ],
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "M13",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/13_justification-adoption-sanctification-perseverance.md",
+      "kind": "source-backed-edit",
+      "removed": "## Опорные карточки (все с проверенными локаторами и правами)",
+      "required": "## Опорные карточки и отдельные ограничения проверки",
+      "reason": "A support table containing locator/rights holds cannot claim all locators and rights are already verified.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/synthesis/drafts/13_justification-adoption-sanctification-perseverance.md",
+        "locator": "support table HOLD column",
+        "verification": "internal consistency"
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "MB13",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/13_justification-adoption-sanctification-perseverance.md",
+      "kind": "provenance",
+      "removed": "| Писание, Синодальный перевод | A1 (сверка по `../../BIBLE_CORPUS/`) | стихи в тексте | оговорка перевода обязательна |",
+      "required": "| Писание, Синодальный перевод | A1 для текста, не для его толкования | [цифровой контроль отмеченных цитат, 2026-11-02](../../evidence/source_controls_2026-11-02.json); `BIBLE_CORPUS` — политика прав, не текст Библии | печатные страницы и полный Product-корпус этой сверкой не утверждаются |",
+      "reason": "Identify the actual checked digital witnesses; do not claim that a rights-map directory contains Bible text.",
+      "basis": {
+        "references": [
+          "marked Synodal quotations in this file"
+        ],
+        "witnesses": [
+          "rst",
+          "rsb"
+        ]
+      },
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "G01",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/06_world-all-many-hard-texts.md",
+      "kind": "greek-argument",
+      "removed": "εἰς + dat",
+      "required": "**περί с родительным**",
+      "basis": {
+        "references": [
+          "1 Ин 2:2"
+        ],
+        "witnesses": [
+          "py-sblgnt"
+        ]
+      },
+      "reason": "Remove a refuted Greek/textual premise and state the actual text; this does not decide extent.",
+      "status": "INTEGRATED_SOURCE_CHECKED"
+    },
+    {
+      "id": "G02",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/06_world-all-many-hard-texts.md",
+      "kind": "greek-argument",
+      "removed": "οἱ πολλοί ст. 19",
+      "required": "В главе **15 стихов**.",
+      "basis": {
+        "references": [
+          "Тит 2:11–15"
+        ],
+        "witnesses": [
+          "py-sblgnt"
+        ]
+      },
+      "reason": "Remove a refuted Greek/textual premise and state the actual text; this does not decide extent.",
+      "status": "INTEGRATED_SOURCE_CHECKED"
+    },
+    {
+      "id": "G03",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/06_world-all-many-hard-texts.md",
+      "kind": "greek-argument",
+      "removed": "οἱ πολλοί ст. 34",
+      "required": "В 8:34 Христос ходатайствует `ὑπὲρ ἡμῶν`",
+      "basis": {
+        "references": [
+          "Рим 8:34"
+        ],
+        "witnesses": [
+          "py-sblgnt"
+        ]
+      },
+      "reason": "Remove a refuted Greek/textual premise and state the actual text; this does not decide extent.",
+      "status": "INTEGRATED_SOURCE_CHECKED"
+    },
+    {
+      "id": "G04",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/06_world-all-many-hard-texts.md",
+      "kind": "greek-argument",
+      "removed": "σύμφορα",
+      "required": "Параллелизм 5:19 выражен `ὥσπερ … οὕτως`",
+      "basis": {
+        "references": [
+          "Рим 5:19"
+        ],
+        "witnesses": [
+          "py-sblgnt"
+        ]
+      },
+      "reason": "Remove a refuted Greek/textual premise and state the actual text; this does not decide extent.",
+      "status": "INTEGRATED_SOURCE_CHECKED"
+    },
+    {
+      "id": "G05",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/06_world-all-many-hard-texts.md",
+      "kind": "greek-argument",
+      "removed": "μάλιστα в 2:9",
+      "required": "`μάλιστα` находится здесь, а не в Евр. 2:9.",
+      "basis": {
+        "references": [
+          "Евр 2:9",
+          "1 Тим 4:10"
+        ],
+        "witnesses": [
+          "py-sblgnt"
+        ]
+      },
+      "reason": "Remove a refuted Greek/textual premise and state the actual text; this does not decide extent.",
+      "status": "INTEGRATED_SOURCE_CHECKED"
+    },
+    {
+      "id": "A12",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+      "kind": "locator",
+      "removed": "контроль редакционного вывода — `36_` §11.3–4.",
+      "required": "контроль редакционного вывода — `../../../docs/research/atonement/36_hodge_st_vol2_atonement_scan_2026-10-30.md` §11, пункты 3–4.",
+      "basis": {
+        "file": "docs/research/atonement/36_hodge_st_vol2_atonement_scan_2026-10-30.md",
+        "sections": [
+          "11"
+        ],
+        "paragraphs": [
+          3,
+          4
+        ]
+      },
+      "reason": "Expand the identified Hodge-dossier reference so section 11.3 is not misassigned to the preceding Amyraut dossier.",
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "A13",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/05_for-whom-did-christ-die-question.md",
+      "kind": "argument-scope",
+      "removed": "- **Гипотетический универсализм** (XVII век: Давенант, Усшер, часть английских делегатов Дорта): «за всех» при условии веры. Живые представители были **внутри** реформатской семьи — Davenant был делегатом синода (`../04_` §2 P3).",
+      "required": "- **Гипотетический универсализм** (рубрика P3: Давенант, Усшер, часть британцев): условно-всеобщее спасительное назначение смерти Христа вместе с особой действенностью для избранных. Условие веры относится к спасению, а не к самому факту смерти. Это схема карты `../../04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md` §2 P3, а не утверждение, что все перечисленные авторы выражались одинаково. Давенант участвовал в Дортском синоде.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md",
+        "section": "2 P3",
+        "editorialControl": "docs/research/atonement/36_hodge_st_vol2_atonement_scan_2026-10-30.md §11, пункт 4.2"
+      },
+      "reason": "Separate conditional salvation from the occurrence of the death; do not infer identity of authors from a map label or synod membership.",
+      "status": "INTEGRATED_REVIEWED"
+    },
+    {
+      "id": "A14",
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+      "kind": "argument-scope",
+      "removed": "- **Гипотетический универсализм** (Давенант, Усшер, часть английских делегатов Дорта): смерть Христа универсальна **при условии** веры; действенна для избранных. Davenant **был** делегатом синода — реформатство не едино (`../04_` §2 P3).",
+      "required": "- **Гипотетический универсализм** (рубрика P3: Давенант, Усшер, часть британцев): условно-всеобщее спасительное назначение смерти Христа вместе с особой действенностью для избранных. Условие веры относится к спасению, а не к тому, произошла ли смерть Христа. Это рабочая схема карты `../../04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md` §2 P3; точные различия авторов нужно устанавливать отдельно. Участие Давенанта в Дортском синоде не доказывает тождества всех их формулировок.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md",
+        "section": "2 P3",
+        "editorialControl": "docs/research/atonement/36_hodge_st_vol2_atonement_scan_2026-10-30.md §11, пункт 4.2"
+      },
+      "reason": "Separate conditional salvation from the occurrence of the death; do not infer identity of authors from a map label or synod membership.",
+      "status": "INTEGRATED_REVIEWED"
+    }
+  ],
+  "pathRepairs": [
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
+      "before": "../02_TERMS_DEFINITIONS_AND_WHAT_IS_ATONEMENT.md",
+      "after": "../../02_TERMS_DEFINITIONS_AND_WHAT_IS_ATONEMENT.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
+      "before": "../03_BIBLICAL_CORPUS_AND_REDEMPTION_VOCABULARY.md",
+      "after": "../../03_BIBLICAL_CORPUS_AND_REDEMPTION_VOCABULARY.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
+      "before": "../04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md",
+      "after": "../../04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
+      "before": "../13_DORT_II_CALVIN_OWEN_EXTENT.md",
+      "after": "../../13_DORT_II_CALVIN_OWEN_EXTENT.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+      "before": "../01_MASTER_RESEARCH_MAP_AND_SERIES_ARCHITECTURE.md",
+      "after": "../../01_MASTER_RESEARCH_MAP_AND_SERIES_ARCHITECTURE.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+      "before": "../03_BIBLICAL_CORPUS_AND_REDEMPTION_VOCABULARY.md",
+      "after": "../../03_BIBLICAL_CORPUS_AND_REDEMPTION_VOCABULARY.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+      "before": "../10_MURRAY_RAA_ARGUMENT_MAP_PRIVATE_STUDY.md",
+      "after": "../../10_MURRAY_RAA_ARGUMENT_MAP_PRIVATE_STUDY.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+      "before": "../13_DORT_II_CALVIN_OWEN_EXTENT.md",
+      "after": "../../13_DORT_II_CALVIN_OWEN_EXTENT.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+      "before": "../15_CALVIN_III24_AND_DORT_II_LOCATORS.md",
+      "after": "../../15_CALVIN_III24_AND_DORT_II_LOCATORS.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/03_nature-of-atonement.md",
+      "before": "../02_TERMS_DEFINITIONS_AND_WHAT_IS_ATONEMENT.md",
+      "after": "../../02_TERMS_DEFINITIONS_AND_WHAT_IS_ATONEMENT.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/03_nature-of-atonement.md",
+      "before": "../03_BIBLICAL_CORPUS_AND_REDEMPTION_VOCABULARY.md",
+      "after": "../../03_BIBLICAL_CORPUS_AND_REDEMPTION_VOCABULARY.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/03_nature-of-atonement.md",
+      "before": "../10_MURRAY_RAA_ARGUMENT_MAP_PRIVATE_STUDY.md",
+      "after": "../../10_MURRAY_RAA_ARGUMENT_MAP_PRIVATE_STUDY.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/03_nature-of-atonement.md",
+      "before": "../13_DORT_II_CALVIN_OWEN_EXTENT.md",
+      "after": "../../13_DORT_II_CALVIN_OWEN_EXTENT.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/03_nature-of-atonement.md",
+      "before": "../15_CALVIN_III24_AND_DORT_II_LOCATORS.md",
+      "after": "../../15_CALVIN_III24_AND_DORT_II_LOCATORS.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/04_perfection-of-atonement.md",
+      "before": "../03_BIBLICAL_CORPUS_AND_REDEMPTION_VOCABULARY.md",
+      "after": "../../03_BIBLICAL_CORPUS_AND_REDEMPTION_VOCABULARY.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/04_perfection-of-atonement.md",
+      "before": "../10_MURRAY_RAA_ARGUMENT_MAP_PRIVATE_STUDY.md",
+      "after": "../../10_MURRAY_RAA_ARGUMENT_MAP_PRIVATE_STUDY.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/04_perfection-of-atonement.md",
+      "before": "../13_DORT_II_CALVIN_OWEN_EXTENT.md",
+      "after": "../../13_DORT_II_CALVIN_OWEN_EXTENT.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/04_perfection-of-atonement.md",
+      "before": "../15_CALVIN_III24_AND_DORT_II_LOCATORS.md",
+      "after": "../../15_CALVIN_III24_AND_DORT_II_LOCATORS.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/05_for-whom-did-christ-die-question.md",
+      "before": "../01_MASTER_RESEARCH_MAP_AND_SERIES_ARCHITECTURE.md",
+      "after": "../../01_MASTER_RESEARCH_MAP_AND_SERIES_ARCHITECTURE.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/05_for-whom-did-christ-die-question.md",
+      "before": "../04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md",
+      "after": "../../04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/05_for-whom-did-christ-die-question.md",
+      "before": "../11_MURRAY_OTHER_WORKS_HARD_TEXTS.md",
+      "after": "../../11_MURRAY_OTHER_WORKS_HARD_TEXTS.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/05_for-whom-did-christ-die-question.md",
+      "before": "../12_HARD_TEXTS_EXTENT_CARDS.md",
+      "after": "../../12_HARD_TEXTS_EXTENT_CARDS.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/05_for-whom-did-christ-die-question.md",
+      "before": "../13_DORT_II_CALVIN_OWEN_EXTENT.md",
+      "after": "../../13_DORT_II_CALVIN_OWEN_EXTENT.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/05_for-whom-did-christ-die-question.md",
+      "before": "../15_CALVIN_III24_AND_DORT_II_LOCATORS.md",
+      "after": "../../15_CALVIN_III24_AND_DORT_II_LOCATORS.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/07_dort-sufficiency-efficiency.md",
+      "before": "../04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md",
+      "after": "../../04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/07_dort-sufficiency-efficiency.md",
+      "before": "../12_HARD_TEXTS_EXTENT_CARDS.md",
+      "after": "../../12_HARD_TEXTS_EXTENT_CARDS.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/07_dort-sufficiency-efficiency.md",
+      "before": "../13_DORT_II_CALVIN_OWEN_EXTENT.md",
+      "after": "../../13_DORT_II_CALVIN_OWEN_EXTENT.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/07_dort-sufficiency-efficiency.md",
+      "before": "../15_CALVIN_III24_AND_DORT_II_LOCATORS.md",
+      "after": "../../15_CALVIN_III24_AND_DORT_II_LOCATORS.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+      "before": "../04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md",
+      "after": "../../04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+      "before": "../10_MURRAY_RAA_ARGUMENT_MAP_PRIVATE_STUDY.md",
+      "after": "../../10_MURRAY_RAA_ARGUMENT_MAP_PRIVATE_STUDY.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+      "before": "../11_MURRAY_OTHER_WORKS_HARD_TEXTS.md",
+      "after": "../../11_MURRAY_OTHER_WORKS_HARD_TEXTS.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+      "before": "../13_DORT_II_CALVIN_OWEN_EXTENT.md",
+      "after": "../../13_DORT_II_CALVIN_OWEN_EXTENT.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+      "before": "../14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md",
+      "after": "../../14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+      "before": "../15_CALVIN_III24_AND_DORT_II_LOCATORS.md",
+      "after": "../../15_CALVIN_III24_AND_DORT_II_LOCATORS.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/09_free-offer-of-the-gospel.md",
+      "before": "../02_TERMS_DEFINITIONS_AND_WHAT_IS_ATONEMENT.md",
+      "after": "../../02_TERMS_DEFINITIONS_AND_WHAT_IS_ATONEMENT.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/09_free-offer-of-the-gospel.md",
+      "before": "../04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md",
+      "after": "../../04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/09_free-offer-of-the-gospel.md",
+      "before": "../12_HARD_TEXTS_EXTENT_CARDS.md",
+      "after": "../../12_HARD_TEXTS_EXTENT_CARDS.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/09_free-offer-of-the-gospel.md",
+      "before": "../15_CALVIN_III24_AND_DORT_II_LOCATORS.md",
+      "after": "../../15_CALVIN_III24_AND_DORT_II_LOCATORS.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/09_free-offer-of-the-gospel.md",
+      "before": "../19_OPC_FREE_OFFER_1948_RU_INTAKE_AND_STUDY_2026-10-28.md",
+      "after": "../../19_OPC_FREE_OFFER_1948_RU_INTAKE_AND_STUDY_2026-10-28.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/10_tulip-without-caricature.md",
+      "before": "../01_MASTER_RESEARCH_MAP_AND_SERIES_ARCHITECTURE.md",
+      "after": "../../01_MASTER_RESEARCH_MAP_AND_SERIES_ARCHITECTURE.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/10_tulip-without-caricature.md",
+      "before": "../02_TERMS_DEFINITIONS_AND_WHAT_IS_ATONEMENT.md",
+      "after": "../../02_TERMS_DEFINITIONS_AND_WHAT_IS_ATONEMENT.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/10_tulip-without-caricature.md",
+      "before": "../04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md",
+      "after": "../../04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/11_order-of-salvation.md",
+      "before": "../02_TERMS_DEFINITIONS_AND_WHAT_IS_ATONEMENT.md",
+      "after": "../../02_TERMS_DEFINITIONS_AND_WHAT_IS_ATONEMENT.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/11_order-of-salvation.md",
+      "before": "../03_BIBLICAL_CORPUS_AND_REDEMPTION_VOCABULARY.md",
+      "after": "../../03_BIBLICAL_CORPUS_AND_REDEMPTION_VOCABULARY.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/11_order-of-salvation.md",
+      "before": "../10_MURRAY_RAA_ARGUMENT_MAP_PRIVATE_STUDY.md",
+      "after": "../../10_MURRAY_RAA_ARGUMENT_MAP_PRIVATE_STUDY.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/12_union-with-christ.md",
+      "before": "../01_MASTER_RESEARCH_MAP_AND_SERIES_ARCHITECTURE.md",
+      "after": "../../01_MASTER_RESEARCH_MAP_AND_SERIES_ARCHITECTURE.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/12_union-with-christ.md",
+      "before": "../03_BIBLICAL_CORPUS_AND_REDEMPTION_VOCABULARY.md",
+      "after": "../../03_BIBLICAL_CORPUS_AND_REDEMPTION_VOCABULARY.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/12_union-with-christ.md",
+      "before": "../10_MURRAY_RAA_ARGUMENT_MAP_PRIVATE_STUDY.md",
+      "after": "../../10_MURRAY_RAA_ARGUMENT_MAP_PRIVATE_STUDY.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/13_justification-adoption-sanctification-perseverance.md",
+      "before": "../../apostasy/12_2_PETER_2_CANONICAL_SUPPLEMENT_2026-09-30.md",
+      "after": "../../../apostasy/12_2_PETER_2_CANONICAL_SUPPLEMENT_2026-09-30.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/13_justification-adoption-sanctification-perseverance.md",
+      "before": "../03_BIBLICAL_CORPUS_AND_REDEMPTION_VOCABULARY.md",
+      "after": "../../03_BIBLICAL_CORPUS_AND_REDEMPTION_VOCABULARY.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/13_justification-adoption-sanctification-perseverance.md",
+      "before": "../10_MURRAY_RAA_ARGUMENT_MAP_PRIVATE_STUDY.md",
+      "after": "../../10_MURRAY_RAA_ARGUMENT_MAP_PRIVATE_STUDY.md"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/drafts/13_justification-adoption-sanctification-perseverance.md",
+      "before": "../14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md",
+      "after": "../../14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md"
+    }
+  ],
+  "greekChecks": [
+    {
+      "verse": [
+        "1Ин",
+        2,
+        2
+      ],
+      "present": [
+        "περὶ τῶν ἁμαρτιῶν"
+      ],
+      "absent": [
+        "εἰς"
+      ]
+    },
+    {
+      "verse": [
+        "1Ин",
+        4,
+        10
+      ],
+      "present": [
+        "περὶ τῶν ἁμαρτιῶν"
+      ]
+    },
+    {
+      "verse": [
+        "Тит",
+        2,
+        14
+      ],
+      "present": [
+        "λαὸν περιούσιον"
+      ],
+      "absent": [
+        "οἱ πολλοί"
+      ]
+    },
+    {
+      "verse": [
+        "Рим",
+        8,
+        34
+      ],
+      "present": [
+        "ὑπὲρ ἡμῶν"
+      ],
+      "absent": [
+        "οἱ πολλοί"
+      ]
+    },
+    {
+      "verse": [
+        "Рим",
+        5,
+        19
+      ],
+      "present": [
+        "ὥσπερ",
+        "οὕτως"
+      ],
+      "absent": [
+        "σύμφορα"
+      ]
+    },
+    {
+      "verse": [
+        "Евр",
+        2,
+        9
+      ],
+      "present": [
+        "χωρὶς θεοῦ",
+        "ὑπὲρ παντὸς"
+      ],
+      "absent": [
+        "μάλιστα"
+      ]
+    },
+    {
+      "verse": [
+        "1Тим",
+        4,
+        10
+      ],
+      "present": [
+        "πάντων ἀνθρώπων",
+        "μάλιστα πιστῶν"
+      ]
+    },
+    {
+      "verse": [
+        "2Пет",
+        2,
+        1
+      ],
+      "present": [
+        "ἀγοράσαντα αὐτοὺς δεσπότην"
+      ]
+    }
+  ],
+  "commands": [
+    "python3 -B scripts/atonement_sync_check.py",
+    "python3 -B scripts/test_atonement_sync.py",
+    "python3 -B scripts/atonement_sync_sources.py --cache /path/outside/repo --fetch --verify",
+    "python3 -B scripts/atonement_claim_register.py --check",
+    "python3 -B scripts/atonement_reshoot_state.py --check"
+  ],
+  "remaining": [
+    "Current verdict and C-22–C-24 must be synchronized with the later historical evidence, not merely labelled final.",
+    "Patristic source corrections and OT bibliographical/interpretive conflicts need a separate source-backed wave.",
+    "A complete contextual review of every Bible paraphrase and unmarked fragment in all drafts is not claimed.",
+    "Source-class semantics and the matrix label read/not-readable still need disentangling from genuine reading/proof.",
+    "Printed-page verification and per-source Product decisions remain separate from these textual repairs."
+  ],
+  "verificationSnapshot": {
+    "asOf": "2026-11-02",
+    "digitalQuotations": "54/54 CONFIRMED against both RST and RSB",
+    "regressionTests": 31,
+    "sourceReplay": "PASS from a separate newly fetched cache",
+    "sourceReplayScope": "all three pinned repositories; file SHA-256, source paths, retained verse text, Titus 2 inventory",
+    "structuralScope": "claim/reshoot/corpus checks are consistency checks, not evidence of theological completeness"
+  }
+}
