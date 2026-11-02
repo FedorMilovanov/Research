@@ -11,9 +11,12 @@ from pathlib import Path
 import tempfile
 import unittest
 
+from atonement_claim_register import classify_token
 from atonement_crossref_audit import FILE_REF, main as crossref_main
 from atonement_draft_citation_audit import audit_quotes, check_quote, load_bible, parse_ref
-from atonement_sync_check import ROOT, REPORT, CONTROL, DRAFTS, check, check_greek, check_repairs, witnesses
+from atonement_sync_check import (ROOT, REPORT, CONTROL, DRAFTS, SYNTHESIS_REPAIR_IDS,
+                                  check, check_greek, check_repairs, check_wave2,
+                                  verify_pdf_bytes, verify_pdf_page_controls, witnesses)
 from atonement_sync_sources import parse_rst_book, USFM, RSB_STEMS, SOURCES
 
 
@@ -234,6 +237,117 @@ class ActualSynchronizationTests(unittest.TestCase):
         check(ROOT, self.report, self.control)
         after = {p: hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
         self.assertEqual(before, after)
+
+
+class SynthesisEvidenceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.report = json.loads((ROOT / REPORT).read_text(encoding="utf-8"))
+        cls.source = cls.report["wave2"]["primaryArticle"]
+
+    def test_canonical_permission_requirement_is_not_an_unknown_or_closed_marker(self):
+        self.assertEqual(classify_token("PERMISSION_REQUIRED"), "УДЕРЖИВАЕТСЯ")
+
+    def test_wave2_scope_and_original_git_bytes(self):
+        self.assertEqual(check_wave2(ROOT, self.report), [])
+        self.assertEqual(len(self.source["readPages"]), 22)
+        self.assertEqual(self.source["pageCount"], 40)
+        self.assertEqual(len(self.source["controls"]), 14)
+        self.assertEqual(len(self.report["wave2"]["supersededSnapshots"]), 15)
+
+    def test_missing_wave2_is_not_zero_work_success(self):
+        broken = deepcopy(self.report)
+        del broken["wave2"]
+        self.assertTrue(check_wave2(ROOT, broken))
+
+    def test_pdf_source_axes_cannot_be_interchanged_or_promoted(self):
+        for field, value in (("evidenceClass", "OCR"), ("accessState", "A1"),
+                             ("locatorState", "FULL_OBJECT_VERIFIED"), ("rightsState", "A1"),
+                             ("publicationState", "PROMOTE")):
+            with self.subTest(axis=field):
+                broken = deepcopy(self.report)
+                broken["wave2"]["primaryArticle"][field] = value
+                self.assertTrue(check_wave2(ROOT, broken))
+
+    def test_full_object_is_not_a_full_reading_claim(self):
+        broken = deepcopy(self.report)
+        broken["wave2"]["primaryArticle"]["fullReadingClaimed"] = True
+        self.assertTrue(any("full reading" in e for e in check_wave2(ROOT, broken)))
+
+    def test_losing_a_pdf_control_is_detected(self):
+        broken = deepcopy(self.report)
+        broken["wave2"]["primaryArticle"]["controls"] = [
+            r for r in broken["wave2"]["primaryArticle"]["controls"] if r["id"] != "P31b"]
+        self.assertTrue(check_wave2(ROOT, broken))
+
+    def test_duplicate_pdf_control_is_detected(self):
+        broken = deepcopy(self.report)
+        broken["wave2"]["primaryArticle"]["controls"].append(deepcopy(self.source["controls"][0]))
+        self.assertTrue(check_wave2(ROOT, broken))
+
+    def test_unread_page_cannot_be_claimed_as_reviewed_control(self):
+        broken = deepcopy(self.report)
+        broken["wave2"]["primaryArticle"]["controls"][0]["pdfPage"] = 12
+        self.assertTrue(any("out-of-scope" in e for e in check_wave2(ROOT, broken)))
+
+    def test_pdf_pin_change_is_detected_offline(self):
+        broken = deepcopy(self.report)
+        broken["wave2"]["primaryArticle"]["sha256"] = "0" * 64
+        self.assertTrue(any("byte pin" in e for e in check_wave2(ROOT, broken)))
+
+    def test_superseded_snapshot_hash_is_checked_on_actual_bytes(self):
+        for field, value in (("sha256", "0" * 64), ("blob", "0" * 40), ("bytes", 0)):
+            with self.subTest(field=field):
+                broken = deepcopy(self.report)
+                broken["wave2"]["supersededSnapshots"][0][field] = value
+                self.assertTrue(any("snapshot bytes/hash" in e for e in check_wave2(ROOT, broken)))
+
+    def test_lost_superseded_snapshot_is_detected(self):
+        broken = deepcopy(self.report)
+        broken["wave2"]["supersededSnapshots"].pop()
+        self.assertTrue(any("missing/duplicate superseded" in e for e in check_wave2(ROOT, broken)))
+
+    def test_each_synthesis_repair_cannot_be_silently_reverted(self):
+        tested = set()
+        for row in self.report["repairs"]:
+            if row["id"] not in SYNTHESIS_REPAIR_IDS:
+                continue
+            with self.subTest(repair=row["id"]):
+                original = (ROOT / row["file"]).read_text(encoding="utf-8")
+                broken = original.replace(row["required"], row["removed"], 1)
+                self.assertNotEqual(original, broken)
+                self.assertTrue(any(row["id"] in e for e in check_repairs(ROOT, self.report, {row["file"]: broken})))
+                tested.add(row["id"])
+        self.assertEqual(tested, SYNTHESIS_REPAIR_IDS)
+
+    def test_page_control_matcher_with_synthetic_fixture(self):
+        # A unit fixture made only of retained short snippets is NOT a source
+        # acquisition or reading. Actual PDF replay remains an optional CLI step.
+        pages = [""] * self.source["pageCount"]
+        for row in self.source["controls"]:
+            pages[row["pdfPage"] - 1] += "\n" + row["text"]
+        self.assertEqual(verify_pdf_page_controls(pages, self.source), [])
+
+    def test_correct_words_on_the_wrong_page_are_not_verified(self):
+        pages = [""] * self.source["pageCount"]
+        for row in self.source["controls"]:
+            pages[row["pdfPage"] - 1] += "\n" + row["text"]
+        broken = deepcopy(self.source)
+        next(row for row in broken["controls"] if row["id"] == "P31b")["pdfPage"] = 30
+        self.assertTrue(any("P31b" in e for e in verify_pdf_page_controls(pages, broken)))
+
+    def test_different_pdf_bytes_are_rejected_before_extraction(self):
+        errors = verify_pdf_bytes(b"not the recorded PDF", self.source)
+        self.assertTrue(any("SHA-256" in e for e in errors))
+        self.assertTrue(any("MD5" in e for e in errors))
+        self.assertTrue(any("size" in e for e in errors))
+
+    def test_retained_history_requires_the_supersession_notice_first(self):
+        row = next(r for r in self.report["repairs"] if r.get("historicalRetained"))
+        original = (ROOT / row["file"]).read_text(encoding="utf-8")
+        broken = original.replace(row["required"], "", 1) + "\n" + row["required"]
+        errors = check_repairs(ROOT, self.report, {row["file"]: broken})
+        self.assertTrue(any(row["id"] in e and "must precede" in e for e in errors))
 
 
 if __name__ == "__main__":

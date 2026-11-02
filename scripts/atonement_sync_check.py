@@ -9,13 +9,24 @@ of printed sources. The control snapshot can be independently replayed with:
 The historical 2026-10-30 reports remain historical; current repair states live in
 synchronization_2026-11-02.json. New evidence may change an accepted formulation,
 but the corresponding repair record must be reviewed rather than silently lost.
+
+Wave 2 also checks the scoped PDF evidence record and the bytes of superseded Git
+snapshots. It does not download private sources. An optional read-only replay is:
+  python3 -B scripts/atonement_sync_check.py --prokopenko-pdf /outside/repo/article.pdf
+That option needs pypdf (the recorded extraction used 6.21.4); ordinary CI does not.
+Without it, PASS means retained controls, not a new PDF extraction or full reading.
 """
 from __future__ import annotations
 
 import argparse
 from collections import Counter
+import hashlib
+import io
 import json
 from pathlib import Path
+import re
+import subprocess
+import unicodedata
 
 from atonement_draft_citation_audit import audit_quotes
 from atonement_sync_sources import SOURCES
@@ -25,6 +36,12 @@ EVIDENCE = "ИСКУПЛЕНИЕ/evidence"
 REPORT = f"{EVIDENCE}/synchronization_2026-11-02.json"
 CONTROL = f"{EVIDENCE}/source_controls_2026-11-02.json"
 DRAFTS = "ИСКУПЛЕНИЕ/synthesis/drafts"
+PROKOPENKO_SHA256 = "d7c7519ddbe845110c50793450dccf980f38783ef757c337c83ea1c71f99bea8"
+PROKOPENKO_MD5 = "263c762500bfdf65da3a904d69ba642f"
+PROKOPENKO_BYTES = 919808
+PDF_CONTROL_IDS = {"P08", "P10", "P19", "P23", "P24", "P25", "P26", "P29", "P29b",
+                   "P30", "P31a", "P31b", "P31c", "P34"}
+SYNTHESIS_REPAIR_IDS = {f"S{i:02}" for i in range(1, 43)}
 
 
 def witnesses(control: dict) -> list[tuple[str, dict]]:
@@ -75,7 +92,14 @@ def check_repairs(root: Path, report: dict, overrides: dict | None = None) -> li
         if not removed or not required:
             errors.append(f"{ident}: empty regression control")
             continue
-        if removed in text:
+        if row.get("historicalRetained"):
+            # Explicitly preserved history is not an active accepted claim. The
+            # reviewed supersession notice must precede the old wording.
+            if "SUPERSEDED" not in required or removed not in text:
+                errors.append(f"{ident}: historical retention lost its explicit boundary/text")
+            if required in text and removed in text and text.index(required) > text.index(removed):
+                errors.append(f"{ident}: supersession notice must precede historical wording")
+        elif removed in text:
             errors.append(f"{ident}: rejected wording still present in {file}")
         if required not in text:
             errors.append(f"{ident}: reviewed replacement missing in {file}")
@@ -83,6 +107,7 @@ def check_repairs(root: Path, report: dict, overrides: dict | None = None) -> li
         if basis_file and not (root / basis_file).is_file():
             errors.append(f"{ident}: missing evidence file {basis_file}")
     expected = {f"Q{i:02}" for i in range(1, 24)} | {f"G{i:02}" for i in range(1, 6)}
+    expected |= SYNTHESIS_REPAIR_IDS
     if not expected <= ids:
         errors.append(f"lost baseline repairs: {sorted(expected - ids)}")
     for row in report.get("pathRepairs", []):
@@ -115,12 +140,128 @@ def check_greek(control: dict, checks: list[dict]) -> list[str]:
     return errors
 
 
+def check_wave2(root: Path, report: dict) -> list[str]:
+    """Validate provenance and scoped claims; do not infer reading from access."""
+    errors = []
+    wave = report.get("wave2")
+    if not isinstance(wave, dict) or not isinstance(wave.get("primaryArticle"), dict):
+        return ["wave2: missing primary article/provenance"]
+    source = wave["primaryArticle"]
+    policy = json.loads((root / "data/repository-evidence-policy-v2.json").read_text(encoding="utf-8"))
+    axes = {"evidenceClass": "sourceClasses", "accessState": "accessStates", "locatorState": "locatorStates",
+            "rightsState": "rightsStates", "publicationState": "publicationStates"}
+    for field, vocabulary in axes.items():
+        if source.get(field) not in policy[vocabulary]:
+            errors.append(f"wave2: missing/noncanonical source axis {field}")
+    if source.get("publicationEligible") is not False or source.get("publicationState") != "BLOCKED":
+        errors.append("wave2: source access cannot authorize Product publication")
+    if (source.get("sha256"), source.get("md5"), source.get("bytes")) != (
+            PROKOPENKO_SHA256, PROKOPENKO_MD5, PROKOPENKO_BYTES):
+        errors.append("wave2: primary PDF byte pin changed")
+    pages = source.get("readPages", [])
+    if source.get("pageCount") != 40 or pages != [8, 9, 10, 11, *range(19, 37)]:
+        errors.append("wave2: declared reading scope changed; preserve this dated observation")
+    if source.get("fullReadingClaimed") is not False:
+        errors.append("wave2: full access is not full reading")
+    for field in ("id", "title", "author", "url", "driveFileId", "hashVerification", "locatorScope", "custody"):
+        if not source.get(field):
+            errors.append(f"wave2: missing provenance field {field}")
+    controls = source.get("controls", [])
+    ids = [row.get("id") for row in controls]
+    if len(ids) != len(set(ids)) or not PDF_CONTROL_IDS <= set(ids):
+        errors.append("wave2: lost/duplicate primary PDF control")
+    for row in controls:
+        if type(row.get("pdfPage")) is not int or row.get("pdfPage") not in pages or not row.get("text", "").strip():
+            errors.append(f"wave2: empty or out-of-scope PDF control {row.get('id')}")
+    for row in report["repairs"]:
+        if row["id"] not in SYNTHESIS_REPAIR_IDS:
+            continue
+        basis = row.get("basis", {})
+        if basis.get("sourceId") and basis["sourceId"] != source["id"]:
+            errors.append(f"{row['id']}: unregistered primary source")
+        if not set(basis.get("controlIds", [])) <= set(ids):
+            errors.append(f"{row['id']}: nonexistent PDF evidence control")
+    snapshots = wave.get("supersededSnapshots", [])
+    expected_files = {r["file"] for r in report["repairs"] if r["id"] in SYNTHESIS_REPAIR_IDS}
+    files = [row.get("file") for row in snapshots]
+    if len(files) != len(set(files)) or not expected_files <= set(files):
+        errors.append("wave2: missing/duplicate superseded snapshot")
+    for row in snapshots:
+        file, commit = row.get("file", ""), row.get("commit", "")
+        if not re.fullmatch(r"[0-9a-f]{40}", commit) or not re.fullmatch(r"[0-9a-f]{40}", row.get("blob", "")):
+            errors.append(f"wave2: invalid Git snapshot pin {file}")
+            continue
+        result = subprocess.run(["git", "cat-file", "blob", f"{commit}:{file}"], cwd=root,
+                                stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=False)
+        if result.returncode:
+            errors.append(f"wave2: Git snapshot unavailable (full history required): {file}")
+            continue
+        raw = result.stdout
+        blob = hashlib.sha1(b"blob " + str(len(raw)).encode("ascii") + b"\0" + raw).hexdigest()
+        if (len(raw), hashlib.sha256(raw).hexdigest(), blob) != (row.get("bytes"), row.get("sha256"), row["blob"]):
+            errors.append(f"wave2: Git snapshot bytes/hash mismatch: {file}")
+    return errors
+
+
+def pdf_control_text(text: str) -> str:
+    """Only Unicode/whitespace normalization; no paraphrase or fuzzy matching."""
+    return " ".join(unicodedata.normalize("NFC", text).split())
+
+
+def verify_pdf_bytes(raw: bytes, source: dict) -> list[str]:
+    errors = []
+    if len(raw) != source["bytes"]:
+        errors.append("PDF: byte size mismatch")
+    if hashlib.sha256(raw).hexdigest() != source["sha256"]:
+        errors.append("PDF: SHA-256 mismatch")
+    if hashlib.md5(raw, usedforsecurity=False).hexdigest() != source["md5"]:
+        errors.append("PDF: MD5 mismatch")
+    return errors
+
+
+def verify_pdf_page_controls(texts: list[str], source: dict) -> list[str]:
+    """Used on extracted pages, not as proof that all pages were read by a person."""
+    errors = []
+    if len(texts) != source["pageCount"]:
+        errors.append("PDF: page inventory mismatch")
+    for row in source["controls"]:
+        n = row["pdfPage"]
+        if not 1 <= n <= len(texts) or pdf_control_text(row["text"]) not in pdf_control_text(texts[n - 1]):
+            errors.append(f"PDF: control {row['id']} absent from declared page {n}")
+    return errors
+
+
+def verify_prokopenko_pdf(path: Path, source: dict) -> list[str]:
+    """Optional local replay. Never fetch, save, or publish the source."""
+    raw = path.read_bytes()
+    errors = verify_pdf_bytes(raw, source)
+    if errors:
+        return errors
+    try:
+        from pypdf import PdfReader
+    except ImportError as exc:
+        raise ValueError("optional PDF replay requires pypdf; recorded extraction used 6.21.4") from exc
+    reader = PdfReader(io.BytesIO(raw))
+    texts = [page.extract_text() or "" for page in reader.pages]
+    errors += verify_pdf_page_controls(texts, source)
+    search = source.get("searchScope", {})
+    if search:
+        russian, latin = [], []
+        for n, text in enumerate(texts, 1):
+            russian.extend([n] * len(re.findall(r"Бакстер\w*", text, re.IGNORECASE)))
+            latin.extend([n] * len(re.findall(r"Baxter", text, re.IGNORECASE)))
+        if {"Russian": russian, "Latin": latin} != search["hits"]:
+            errors.append("PDF: Baxter search-context inventory changed")
+    return errors
+
+
 def check(root: Path, report: dict, control: dict) -> tuple[list[str], dict]:
     if report.get("publicationEligible") is not False or control.get("publicationEligible") is not False:
         return ["synchronization must not silently authorize Product publication"], {}
     corpora = witnesses(control)
     errors = check_repairs(root, report)
     errors += check_greek(control, report["greekChecks"])
+    errors += check_wave2(root, report)
     drafts = sorted((root / DRAFTS).glob("*.md"))
     if len(drafts) != report["draftCount"]:
         errors.append("draft inventory differs from the reviewed scope")
@@ -132,17 +273,25 @@ def check(root: Path, report: dict, control: dict) -> tuple[list[str], dict]:
         if row["status"] not in ("CONFIRMED", "CONFIRMED_MULTI"):
             errors.append(f"{row['file']}:{row['line']} {row['status']}: {row['ref_use']}")
     return errors, {"drafts": len(drafts), "markedCitations": len(rows), "counts": counts,
-                    "repairRecords": len(report["repairs"]), "pathRepairs": len(report.get("pathRepairs", []))}
+                    "repairRecords": len(report["repairs"]), "pathRepairs": len(report.get("pathRepairs", [])),
+                    "primaryPdfControls": len(report.get("wave2", {}).get("primaryArticle", {}).get("controls", [])),
+                    "pdfReplay": "NOT_RUN", "supersededSnapshots": len(report.get("wave2", {}).get("supersededSnapshots", []))}
 
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--root", type=Path, default=ROOT)
+    ap.add_argument("--prokopenko-pdf", type=Path,
+                    help="optional byte/page replay against a locally supplied PDF (requires pypdf)")
     args = ap.parse_args()
     try:
         report = json.loads((args.root / REPORT).read_text(encoding="utf-8"))
         control = json.loads((args.root / CONTROL).read_text(encoding="utf-8"))
         errors, summary = check(args.root, report, control)
+        if args.prokopenko_pdf:
+            pdf_errors = verify_prokopenko_pdf(args.prokopenko_pdf, report["wave2"]["primaryArticle"])
+            errors += pdf_errors
+            summary["pdfReplay"] = "FAIL" if pdf_errors else "PASS"
     except (OSError, ValueError, KeyError, TypeError) as exc:
         print(f"ATONEMENT SYNC: FAIL — {exc}")
         return 1
@@ -151,7 +300,7 @@ def main() -> int:
         print("FAIL:", error)
     if errors:
         return 1
-    print("ATONEMENT SYNC: PASS — corrected wording and digital quotation controls; NOT theological/publication approval")
+    print("ATONEMENT SYNC: PASS — retained corrections, source controls and Git snapshot bytes; NOT full reading/theological/publication approval")
     return 0
 
 
