@@ -30,8 +30,16 @@ DRAFTS = "ИСКУПЛЕНИЕ/synthesis/drafts"
 def witnesses(control: dict) -> list[tuple[str, dict]]:
     if set(control["sources"]) != set(SOURCES):
         raise ValueError("unexpected or empty witness inventory")
+    policy = json.loads((ROOT / "data/repository-evidence-policy-v2.json").read_text(encoding="utf-8"))
+    axes = {"evidenceClass": "sourceClasses", "accessState": "accessStates", "locatorState": "locatorStates",
+            "rightsState": "rightsStates", "publicationState": "publicationStates"}
     result = []
     for name, source in control["sources"].items():
+        for field, vocabulary in axes.items():
+            if source.get(field) not in policy[vocabulary]:
+                raise ValueError(f"missing/noncanonical source axis: {name}/{field}")
+        if source["publicationState"] != "BLOCKED":
+            raise ValueError(f"source control cannot clear Product promotion: {name}")
         if (source["repository"], source["commit"]) != SOURCES[name]:
             raise ValueError(f"source pin mismatch: {name}")
         verses = {}

@@ -200,6 +200,16 @@ class ActualSynchronizationTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             witnesses(broken)
 
+    def test_evidence_class_access_locator_rights_and_publication_stay_separate(self):
+        for field, invalid in (("evidenceClass", "PUBLICATION_HOLD"), ("accessState", "A1"),
+                               ("locatorState", "FULL_OBJECT_VERIFIED"), ("rightsState", "A1"),
+                               ("publicationState", "PROMOTE")):
+            with self.subTest(axis=field):
+                broken = deepcopy(self.control)
+                broken["sources"]["rst"][field] = invalid
+                with self.assertRaises(ValueError):
+                    witnesses(broken)
+
     def test_pin_change_is_detected(self):
         broken = deepcopy(self.control)
         broken["sources"]["rst"]["commit"] = SOURCES["rsb"][1]

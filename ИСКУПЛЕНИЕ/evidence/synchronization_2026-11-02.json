@@ -23,7 +23,8 @@
     "retainedHistoricalEvidence": "Dort, Calvin, Owen and Amyraut corrections compare the existing preserved excerpts and their context. Original scans, Latin Calvin and complete modern works were NOT freshly acquired or read.",
     "logicalReview": "The B2 rewrite distinguishes what wording entails, what an interpreter supplies, local comparative strength, and the remaining task. A regression test confirms retention, not truth of an interpretation.",
     "sourceIndependence": "RST declares Logos/RBO ancestry; RSB declares bible.by. Neither line is certified independent beyond that. Historical live bible.by checks are not a third independent witness to RSB.",
-    "statusMeaning": "INTEGRATED_SOURCE_CHECKED = named textual discrepancy corrected against acquired digital witnesses. INTEGRATED_REVIEWED = source-attributed or logical/editorial revision reviewed locally; not a new primary-scan verification."
+    "statusMeaning": "INTEGRATED_SOURCE_CHECKED = named textual discrepancy corrected against acquired digital witnesses. INTEGRATED_REVIEWED = source-attributed or logical/editorial revision reviewed locally; not a new primary-scan verification.",
+    "sourceAxes": "Source classes, acquired digital objects, exact verse locators, rights and Product publication use separate fields and the canonical repository-evidence-policy-v2 vocabularies. These controls authorize no Product promotion."
   },
   "repairs": [
     {
@@ -1875,7 +1876,7 @@
   "verificationSnapshot": {
     "asOf": "2026-11-02",
     "digitalQuotations": "54/54 CONFIRMED against both RST and RSB",
-    "regressionTests": 31,
+    "regressionTests": 32,
     "sourceReplay": "PASS from a separate newly fetched cache",
     "sourceReplayScope": "all three pinned repositories; file SHA-256, source paths, retained verse text, Titus 2 inventory",
     "structuralScope": "claim/reshoot/corpus checks are consistency checks, not evidence of theological completeness"
