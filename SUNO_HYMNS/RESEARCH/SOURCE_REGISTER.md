@@ -1283,7 +1283,7 @@ The Greek lane is registered in the same file as the Dutch one because it is the
 - Rights state: PUBLICATION_ELIGIBLE
 - Publication state: REFERENCE
 - HOLDs: 
-- Supports: X 96, 7 — главное место: «quod essent soliti stato die ante lucem convenire, carmenque Christo quasi deo dicere secum invicem seque sacramento non in scelus aliquod obstringere …» — установленный день; до рассвета; песнь Христу как Богу; попеременно друг с другом; X 96, 7 — продолжение: после пения они расходились и снова сходились на трапезу, «promiscuum tamen et innoxium», и это прекратили после эдикта Плиния, запретившего гетеpии (hetaerias); X 96, 8 — как добыто сведение: «ex duabus ancillis, quae ministrae dicebantur … et per tormenta quaerere. Nihil aliud inveni quam superstitionem pravam et immodicam» — две рабыни-служительницы под пыткой; X 96, 1 — мера осведомлённости автора: «Cognitionibus de Christianis interfui numquam» (на следствиях о христианах никогда не присутствовал); X 96, 3–6 — среди опрошенных были отпавшие: «fuisse quidem sed desisse, quidam ante triennium, quidam ante plures annos, non nemo etiam ante viginti»; X 97 — в ответе Траяна о пении ни слова: «Conquirendi non sunt; si deferantur et arguantur, puniendi sunt»; Латинские цитаты в досье сверены с файлом корпуса программой: совпадение дословное
+- Supports: X 96, 7 — главное место: «quod essent soliti stato die ante lucem convenire, carmenque Christo quasi deo dicere secum invicem seque sacramento non in scelus aliquod obstringere …» — установленный день; до рассвета; песнь Христу как Богу; попеременно друг с другом; X 96, 7 — продолжение: после пения они расходились и снова сходились на трапезу, «promiscuum tamen et innoxium», и это прекратили после эдикта Плиния, запретившего гетерии (hetaerias); X 96, 8 — как добыто сведение: «ex duabus ancillis, quae ministrae dicebantur … et per tormenta quaerere. Nihil aliud inveni quam superstitionem pravam et immodicam» — две рабыни-служительницы под пыткой; X 96, 1 — мера осведомлённости автора: «Cognitionibus de Christianis interfui numquam» (на следствиях о христианах никогда не присутствовал); X 96, 3–6 — среди опрошенных были отпавшие: «fuisse quidem sed desisse, quidam ante triennium, quidam ante plures annos, non nemo etiam ante viginti»; X 97 — в ответе Траяна о пении ни слова: «Conquirendi non sunt; si deferantur et arguantur, puniendi sunt»; Латинские цитаты в досье сверены с файлом корпуса программой: совпадение дословное
 - Limits / caveats: В заголовке файла пустой <imprint>: ни места, ни издателя, ни года, ни печатного издания, по которому набран текст. Сверки с критическим изданием (Майнорс, OCT) не было; рукописных разночтений я не видел. Прочитаны письма X 96 и X 97, а не вся десятая книга. Даты в тексте нет — только имя Траяна.
 
 ## SRC-PHOS-SERIES-TERTULLIAN-APOL-II6 — Tertullianus, Apologeticum II, 6 — латинский текст (The Latin Library): Тертуллиан пересказывает донесение Плиния Траяну
@@ -1703,3 +1703,128 @@ The Greek lane is registered in the same file as the Dutch one because it is the
 - HOLDs: RIGHTS_HOLD
 - Supports: **Норелли о причине возникновения сказаний:** «as Enrico Norelli has persuasively argued, it was most likely **belief in Mary's intercession** that first gave rise to these early Christian accounts of Mary's miraculous departure from this world» (отсылка: Norelli, *Marie des apocryphes*, 2009, 132–6).; **Корпус:** «over thirty different versions survive from before the mid-seventh century in nine ancient languages»; пренебрежение им объясняется сложностью и отсутствием согласия о приоритете версий.; **Датировка:** «there is something close to a consensus regarding the general antiquity of these two narratives and their origin sometime **by the fourth century at the very latest**. Only **Jugie and Simon Mimouni** present significant exceptions, the former because of his immortalist theological leanings, and latter out of a belief that the Dormition traditions issue from the concerns of the Fourth Council, **an assumption that unfortunately is not in evidence**».; **Место:** традиции «first took shape in Palestine, where they developed in close association with **the emergent veneration of Mary in the Hagiopolite liturgies** and mounting pilgrimage traffic to holy sites associated with her life and death» — то есть в том же иерусалимском богослужебном контексте, что и наш Иадгари.; **Наш текст назван в числе ранних следов:** «the famous *Sub Tuum Praesidium* papyrus» — но этих следов, по автору, «seem insufficient to explain the tidal wave that was to follow». Он держится ранней датировки папируса и остаётся в меньшинстве.; **Древнейшее сказание — «Liber Requiei Mariae»:** сирийские фрагменты конца V в. переведены с греческого, внутренние признаки ведут в III в. или раньше (Христос как «Great Angel»; гностические термины; невоздержанные подробности про Иосифа; Мария признаётся, что однажды согрешила, — мысль, известная Иринею и Тертуллиану). **И при этом:** «the apostles do not afford Mary any special reverence when they first greet her, nor are there any indications of a formal cult of the Virgin. Mary does not work any miracles and expresses doubts and a fear of dying».; **Древнейшее свидетельство ходатайства:** «Most clearly in view here is the idea of Marian intercession, in what is perhaps **the earliest evidence of such belief**». Пётр накануне её смерти: «the light of our sister Mary's lamp fills the world… so that those who have decided to be saved will receive assistance from her» (*Liber Requiei* 55).; **Сцена в аду:** осуждённые взывают — «**Mary, we beseech you, Mary, light and the mother of light; Mary, life and mother of the apostles; Mary, golden lamp… Mary, our master and the mother of our Master; Mary, our queen, beseech your son to give us a little rest**» (*Liber Requiei* 99); другие взывают к Петру, Андрею, Иоанну, и те «could not reply»; Христос даёт им три часа покоя каждое воскресенье «because of the tears of Michael, my holy apostles, and my mother Mary».; **Оговорка самого автора:** «in these early traditions Mary's mediation is not portrayed as uniquely powerful but is presented alongside of angelic intercessions… the cult of the Virgin is ultimately only a particular variant».; **Древность сцены подтверждена:** Clayton (*Apocrypha* 10, 1999, 93) — «Mary's role as intercessor almost certainly goes back to the beginning of the [Dormition] tradition»; Норелли согласен; сирийский палимпсест конца V в. BL Syr. Add. 17,137, л. 9a (изд. Shoemaker, *Le Muséon* 124, 2011, 259–278). Прежде Cothenet считал её поздней вставкой.; **Шестикнижное сказание** — древнейшее сказание вифлеемской традиции, более «ортодоксальная» среда, чем у «Liber Requiei»; **не менее пяти сирийских рукописей V–VI вв.**; греческий оригинал древнее; нижняя граница — не позднее начала V в.; Баукхэм/Bauckham (*The Fate of the Dead*, 1998, 358–60) по космическому путешествию: «from the fourth century at the latest, but perhaps considerably earlier»; van Esbroeck (*Marianum* 63, 2001) — тоже IV в.; **Разница слоёв:** в «Liber Requiei» почитание «occurs only rarely and is more or less confined to seeking Mary's intercessions alongside the prayers of other saints», а «Шестикнижное сказание» «is suffused with Marian devotion of nearly every sort».; **Образец протестантского приговора, приведённый самим Шумейкером:** Генрих Эвальд, отзыв 1865 г. на издание Райта — «this book has become from the first the firm foundation for all the unhappy adoration of Mary… The whole cultus of Mary in the Papal Church rests upon this book; we might search in vain for any other foundation to it». Шумейкер добавляет: «his anti-Catholicism was conspicuous».
 - Limits / caveats: Прочитаны чанки 0, 2–4 из 12: введение, переход к «Liber Requiei», разбор ходатайства в «Liber Requiei», переход к «Шестикнижному сказанию». **Не прочитаны** чанки 5–11: литургический чин «Шестикнижного сказания» и прямые слова Епифания о коллиридианах («On a certain day of the year…» известны мне только по поисковой выдаче). Номера страниц в PDF не извлечены.
+
+---
+
+## Источники PHOS-008 — *Veni redemptor gentium* (Амвросий Медиоланский), добавлены 2026-11-03
+
+Внесены вместе с досье `DOSSIER_PHOS-008_VENI_REDEMPTOR.md`. Двое из девяти — патристические
+свидетели живого пения с именем автора; один (GRMS 2017) решает вопрос о мелодии; пять
+описывают рукописи, из которых ни одна не смотрена в факсимиле.
+
+## SRC-PHOS-VRG-AUG372 — Августин Гиппонский, Проповедь 372 — цитата шестой строфы с именем Амвросия
+
+- URL: https://www.hymnologyarchive.com/veni-redemptor-gentium
+- Source role/type: Патристическая проповедь, цитируемая во вторичной публикации с точным локатором
+- Evidence class: B1
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: Цитата шестой строфы целиком: «Egressus eius a Patre, regressus eius ad Patrem, excursus usque ad inferos, recursus ad sedem Dei»; Имя автора названо: «cecinit beatus Ambrosius in hymno»; Ключевые слова «quem paulo ante cantastis» — «который вы только что пели»: свидетельство о пении в собрании
+- Limits / caveats: Проповедь 372 прочитана в цитате, а не по изданию целиком; латинская форма цитаты взята из вторичной публикации и по критическому изданию не сверена.
+
+## SRC-PHOS-VRG-CELEST430 — Келестин I, собор в Риме, 430 г. — цитата второй строфы с указанием на Амвросия
+
+- URL: https://www.hymnologyarchive.com/veni-redemptor-gentium
+- Source role/type: Соборное определение / папское послание, цитируемое во вторичной публикации
+- Evidence class: B1
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: Цитата второй строфы: «Veni, Redemptor gentium, ostende partum Virginis, miretur omne saeculum, talis decet partus Deum»; Свидетельство о пении общиной: «omnem fecisse populum una voce Deo canere» — заставил весь народ единым голосом петь Богу; Указание повода: день Рождества Господня; независимо от Августина
+- Limits / caveats: Текст соборного акта прочитан в цитате во вторичной публикации; по изданию актов не сверен; дата 430 г. принята по этой же передаче.
+
+## SRC-PHOS-VRG-FONTAINE — Жак Фонтен, «Ambroise de Milan: Hymnes» (Paris: Les Éditions du Cerf, 1992), с. 266–275
+
+- URL: https://www.hymnologyarchive.com/veni-redemptor-gentium
+- Source role/type: Критическое издание с комментарием — названо, но НЕ открыто
+- Evidence class: A2
+- Access state: CATALOG_ONLY
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: PERMISSION_REQUIRED
+- Publication state: REFERENCE
+- HOLDs: ARCHIVE_HOLD, RIGHTS_HOLD
+- Supports: Латинский текст восьми строф в проекте приведён по передаче, опирающейся на это издание; Аргумент Фонтена в защиту первой строфы передан: она опущена в двух третях свидетелей, но не опущена ни одним миланским и не опущена древнейшим; Фонтен отвергает аргумент от умолчания Келестина: папа цитировал вторую строфу в полемике с несторианами, а не потому, что не знал первой; Локатор точен и проверен по библиографической записи: издание 1992 г., с. 266–275; самой книги в работе нет
+- Limits / caveats: Издание 1992 г. НЕ открыто. Все суждения об атрибуции первой строфы — по вторичной передаче с точной ссылкой на страницу; собственные слова Фонтена не проверены.
+
+## SRC-PHOS-VRG-VATREG11 — Biblioteca Apostolica Vaticana, Reg. lat. 11, л. 233r — древнейший список гимна, 2-я половина VIII в.
+
+- URL: https://www.hymnologyarchive.com/veni-redemptor-gentium
+- Source role/type: Рукопись, описанная в каталоге; факсимиле не открывалось
+- Evidence class: A1
+- Access state: CATALOG_ONLY
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: LOCATOR_HOLD, RIGHTS_HOLD
+- Supports: Древнейший сохранившийся список гимна; Восемь строф; начинается «Intende qui regis Israel»; Побочная находка: тот же кодекс уже значится свидетелем Te Deum в проекте (Reg. lat. 11, л. 230v, середина VIII в.) — три листа разницы
+- Limits / caveats: Факсимиле не открывалось; лист описан по вторичному источнику. Чтения не сверены.
+
+## SRC-PHOS-VRG-B3 — Universitätsbibliothek Düsseldorf, MS B-3, л. 269r, ок. 810–829 — древнейший список семистрофной формы
+
+- URL: https://www.hymnologyarchive.com/veni-redemptor-gentium
+- Source role/type: Рукопись, описанная в каталоге; факсимиле не открывалось
+- Evidence class: A1
+- Access state: CATALOG_ONLY
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: LOCATOR_HOLD, RIGHTS_HOLD
+- Supports: Древнейший известный список формы БЕЗ псалмовой первой строфы; Семь строф; начинается прямо «Veni redemptor gentium»; Доказывает, что семистрофная форма — выбор самой рукописной традиции с IX в., а не наша правка
+- Limits / caveats: Факсимиле не открывалось; датировка ок. 810–829 принята по вторичному описанию.
+
+## SRC-PHOS-VRG-GRMS2017 — «Ambrosian Hymns: Evidence for Roman Music of Late Antiquity?», Greek and Roman Musical Studies 5/1 (2017), 104–122
+
+- URL: https://brill.com/view/journals/grms/5/1/article-p104_7.xml
+- Source role/type: Научная статья в рецензируемом журнале; прочитана в аннотации и выдержках
+- Evidence class: A2
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: PERMISSION_REQUIRED
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: Решающее свидетельство о мелодии: «As the ancient notation fell into disuse in the 6th century AD, the melodies of the Ambrosian hymns were transmitted orally until the 10th century»; «They appear in the medieval manuscripts with neumatic or alphabetic notation, but without rhythmical values and adorned by rich melismata, which mirror the predilections of each monastic community»; Амвросий создал metrum Ambrosianum из ямбического диметра по образцу четырёхстиший Горация (с. 104); Отсюда следует, что максимальная аутентичность требует НЕ брать дошедший напев XII в.
+- Limits / caveats: Статья прочитана в аннотации и выдержках, не целиком; статья за paywall, полный текст не получен. Вывод о силлабическом характере подлинного исполнения — умозаключение от метра, а не прямое свидетельство источника.
+
+## SRC-PHOS-VRG-BNF12044 — BnF, Paris, Latin 12044, л. 7v, XII в. — мелодический инципит
+
+- URL: https://www.hymnologyarchive.com/veni-redemptor-gentium
+- Source role/type: Нотная рукопись, описанная в каталоге
+- Evidence class: A1
+- Access state: CATALOG_ONLY
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: LOCATOR_HOLD, RIGHTS_HOLD
+- Supports: Свидетельство напева: только первые три слова и мелодическое начало
+- Limits / caveats: Факсимиле не открывалось; объём свидетельства минимален — инципит, а не полная мелодия.
+
+## SRC-PHOS-VRG-BNF15181 — BnF, Paris, Latin 15181, л. 157r, ок. 1300 — полная мелодия, бревиарий Нотр-Дам
+
+- URL: https://www.hymnologyarchive.com/veni-redemptor-gentium
+- Source role/type: Нотная рукопись, описанная в каталоге
+- Evidence class: A1
+- Access state: CATALOG_ONLY
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: LOCATOR_HOLD, RIGHTS_HOLD
+- Supports: Полная запись мелодии; семь строф; бревиарий, сделанный для Нотр-Дам в Париже
+- Limits / caveats: Факсимиле не открывалось; Мелодия на девятьсот лет моложе текста и, по GRMS 2017, несёт поздние мелизмы — брать её за аутентичную нельзя.
+
+## SRC-PHOS-VRG-EINS121 — Stiftsbibliothek Einsiedeln, Codex 121, ок. 1120 — древнейшее свидетельство напева
+
+- URL: https://www.hymnologyarchive.com/veni-redemptor-gentium
+- Source role/type: Нотная рукопись, описанная в каталоге
+- Evidence class: A1
+- Access state: CATALOG_ONLY
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: LOCATOR_HOLD, RIGHTS_HOLD
+- Supports: Древнейшее документальное свидетельство григорианского напева гимна
+- Limits / caveats: Факсимиле не открывалось; между смертью Амвросия (397) и этим списком — около семисот лет, из которых четыреста без нотации вовсе.
