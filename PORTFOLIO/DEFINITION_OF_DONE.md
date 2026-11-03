@@ -71,20 +71,24 @@ python3 PORTFOLIO/tools/check_claims.py
 | Направление | Факт на 03.11.2026 | Следующее закрывающее действие |
 |---|---|---|
 | `video-channel-manager` — защитный контур и английский README | **Закрыто:** secret scan [#755](https://github.com/FedorMilovanov/video-channel-manager/pull/755), root `SECURITY.md` [#756](https://github.com/FedorMilovanov/video-channel-manager/pull/756), английский `README_EN.md` [#757](https://github.com/FedorMilovanov/video-channel-manager/pull/757) — все три в `main`; post-merge Gitleaks зелёный | не повторять завершённые патчи; отдельно от security продолжается неавторизованный к исполнению Telegram preflight |
-| Секрет-сканирование портфеля | Конфигурации Gitleaks обнаружены в `main` **10 из 11** проверенных продуктовых и инфраструктурных репозиториев (включая `gb-vosk-tts`); это наличие контура, **не гарантия отсутствия находок** | закрыть `DeepMovieReview` [PR #136](https://github.com/FedorMilovanov/DeepMovieReview/pull/136) только после всех CI на актуальном SHA, затем подтвердить post-merge scan |
-| `DeepMovieReview` | [#136](https://github.com/FedorMilovanov/DeepMovieReview/pull/136) синхронизирован с `main` после чужого #138; Gitleaks/CodeQL зелёные, но Native iOS Safari на двух попытках дал разные failures (SafariDriver timeout и недоступный accessibility tree); диагностическая запись в PR | **merge HOLD** до чистого CI на актуальном SHA, без ослабления нативного гейта; не трогать сторонний draft #139 |
+| Секрет-сканирование портфеля | **Завершено 11/11:** конфигурации Gitleaks в `main` всех 11 основных проверенных продуктовых/инфраструктурных репозиториев; [DeepMovieReview #136](https://github.com/FedorMilovanov/DeepMovieReview/pull/136) влит как `9f568ea`, отдельный post-merge Gitleaks успешен | это **покрытие проверками, не гарантия 0 секретов**; не создавать повторные security PR |
+| `DeepMovieReview` | **Закрыто:** [#136](https://github.com/FedorMilovanov/DeepMovieReview/pull/136) влит после 32 успешных PR checks + 1 neutral historical (Native iOS Safari в итоге прошёл); `main` secret scan успешен | флейки нативного iOS остаются самостоятельным CI-наблюдением, не поводом ослаблять gate; чужой draft #139 не затронут |
 | Профиль GitHub | `PROFILE_README.md` подготовлен, но `FedorMilovanov/FedorMilovanov` не существует | создать профильный репозиторий и опубликовать README через владельца/инструмент с правом управления репозиториями |
 | Описания и topics | В выборке GitHub metadata большинство описаний пусты, topics пустые; `Milovi_Cake` содержит устаревшее `Cakes site` | использовать `GITHUB_DISCOVERABILITY.md`; нужны repo administration права |
-| Два английских README | `video-channel-manager` **готов и в `main`** ([#757](https://github.com/FedorMilovanov/video-channel-manager/pull/757)); `mp3telegrambot` подготовлен в [#435](https://github.com/FedorMilovanov/mp3telegrambot/pull/435), **не влит** из-за dependency audit | у `mp3telegrambot` четыре блокирующих advisory на `pyasn1==0.6.4`; #434 Dependabot предлагает `0.6.5`, но другие тесты #434 красные. Не смешивать docs и 41 dependency upgrade; вернуться к #435 после исправления основного lock/CI |
+| Два английских README | **Завершено 2/2:** `video-channel-manager` [#757](https://github.com/FedorMilovanov/video-channel-manager/pull/757) и `mp3telegrambot` [#435](https://github.com/FedorMilovanov/mp3telegrambot/pull/435) в `main`; последний — после 8/8 успешных проверок | не создавать новые переводы/дубли, при изменении контракта синхронизировать оба языка |
+| `mp3telegrambot` CVE | **Закрыто в `main`:** [#436](https://github.com/FedorMilovanov/mp3telegrambot/pull/436) поднял единственный pin `pyasn1` до `0.6.5`, **16/16 PR CI success**; docs #435 затем влит | Dependabot #434 автоматически закрыт после hotfix; новый [#437](https://github.com/FedorMilovanov/mp3telegrambot/pull/437) содержит 40 других обновлений и имеет красные Python/Windows проверки; не сливать без исправления |
+| Приватный `sermon_MP3_bot` | [PR #1](https://github.com/FedorMilovanov/sermon_MP3_bot/pull/1) убрал отслеживаемый `cookies.txt` и добавил `.gitignore`, `main` проверен | исторические cookie-значения остаются в Git history; владелец должен отозвать связанные сессии, без этого нельзя называть remediation полной |
 | README/OWNER/ARCHITECTURE/CASE_STUDY/GLOSSARY | Шаблоны готовы в `AGENT_HANDOFF.md`, их массовое внедрение не подтверждено | послойная проверка каждого repo перед единственным PR, без пустых шаблонов |
 | `.mailmap` | Массовое внедрение не подтверждено, спорный адрес требует подтверждения владельца | не приписывать авторство без сверки; не переписывать Git history |
 | Числовой срез | `METRICS.csv`, `CLAIMS.csv` и `VERIFICATION_LOG.md` относятся к **01.11.2026** | после завершения security-волны воспроизводимо пересчитать новые числа, обновить связанные документы и запустить `check_claims.py` |
 | Branch protection / публичные метрики | Ограничены доступом к настройкам/аналитике и статусом `UNPROVEN` | не заявлять непроверенное; выделить владельцу только реально требующиеся действия |
 
-**Граница процентов:** конфигурационное покрытие Gitleaks — **10/11 (≈91%)**.
-Эта доля не является «готовностью портфолио»: для публикации профиля,
-англоязычных README и документов архитектуры отдельные критерии; единого
-достоверного процента по всем направлениям без весов и повторного инвентаря нет.
+**Граница процентов (срез 03.11.2026):** конфигурационное покрытие Gitleaks **11/11 (100%)**
+среди определённых 11 основных репозиториев; приоритетные английские README — **2/2 (100%)**.
+Это **не** общий процент готовности портфолио и **не** утверждение о безопасности
+всех 16 аккаунтных репозиториев: исторические и пустые репозитории требуют отдельной
+классификации. Метрики `METRICS.csv`/`CLAIMS.csv` сохраняют исторический срез 01.11.
+Общий достоверный процент невозможен без согласованных весов и полного повторного инвентаря.
 
 ---
 
