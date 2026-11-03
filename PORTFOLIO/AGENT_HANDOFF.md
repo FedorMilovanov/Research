@@ -14,13 +14,13 @@
 > [#757](https://github.com/FedorMilovanov/video-channel-manager/pull/757),
 > `mp3telegrambot` [#435](https://github.com/FedorMilovanov/mp3telegrambot/pull/435).
 > `mp3telegrambot` `pyasn1` CVE закрыты узким [#436](https://github.com/FedorMilovanov/mp3telegrambot/pull/436),
-> #434 Dependabot закрыт/замещён #437 (40 обновлений): конфликт `google-genai` / `tenacity` исправлен узкой правкой существующей ветки (`b912b9c`). Новый CI ещё нужно дождаться и проверить: **не мержить красный или незавершённый head**.
+> Dependabot #434 заменён, а [#437](https://github.com/FedorMilovanov/mp3telegrambot/pull/437) **уже смержен** (`c7f68cf`), после исправления `google-genai`/`tenacity` и тестовых несовместимостей, 20/20 PR checks, полный post-merge CI/CodeQL/secret scan завершились `success`. Не открывать новые PR на уже закрытую эту же зависимость.
 > **Не повторять** закрытые security/docs PR, не затрагивать чужие ветки;
 > не принимать отсутствие исключений/успех CI за разрешение provider writes.
 > Отдельное действие владельца: отозвать cookies из истории приватного
 > `sermon_MP3_bot` после [#1](https://github.com/FedorMilovanov/sermon_MP3_bot/pull/1).
-> Профиль [опубликован](https://github.com/FedorMilovanov/FedorMilovanov), descriptions/topics **12/12**, homepage **5/5**, `main` protection подтверждена для **13/13** выбранных активных публичных репозиториев. Эти операции не повторять.
-> Account bio/website и пины профиля требуют UI/`user` scope; отзыв cookie-сессий приватного `sermon_MP3_bot` выполняет владелец. Массовая документация репозиториев пока не сертифицирована.
+> Профиль [опубликован](https://github.com/FedorMilovanov/FedorMilovanov), RU/EN и аудит связаны из README; descriptions/topics **12/12**, homepage **5/5**, Dependabot Alerts **17/17**, защищены **15/16 существующих `main`**. Исключение — приватный `sermon_MP3_bot` (GitHub `403` из-за тарифа), пустой `baptist---2` не имеет ветки. Эти операции не повторять.
+> Account bio/website и пины профиля требуют UI/`user` scope; владелец должен отозвать cookie-сессии `sermon_MP3_bot` у провайдера. [gb-vosk-tts #3](https://github.com/FedorMilovanov/gb-vosk-tts/pull/3) уже влит с README/OWNER/ARCHITECTURE/CASE_STUDY; другие репозитории ещё требуют фактической качественной документации. Старые `baptist*` не архивировать/удалять без решения владельца.
 > Числа `METRICS.csv` — **исторический срез 01.11**, не live-счётчики.
 **Контекст:** [`AUDIT_RU.md`](AUDIT_RU.md), [`HISTORY_AND_PRINCIPLES.md`](HISTORY_AND_PRINCIPLES.md), [`PORTFOLIO_RU.md`](PORTFOLIO_RU.md).
 
