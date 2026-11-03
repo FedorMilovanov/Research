@@ -14,7 +14,7 @@
 > [#757](https://github.com/FedorMilovanov/video-channel-manager/pull/757),
 > `mp3telegrambot` [#435](https://github.com/FedorMilovanov/mp3telegrambot/pull/435).
 > `mp3telegrambot` `pyasn1` CVE закрыты узким [#436](https://github.com/FedorMilovanov/mp3telegrambot/pull/436),
-> но Dependabot #434 с другими зависимостями **не** завершён.
+> #434 Dependabot закрыт/замещён новым #437 (40 обновлений), но его Python/Windows CI **красный**: не сливать без исправления.
 > **Не повторять** закрытые security/docs PR, не затрагивать чужие ветки;
 > не принимать отсутствие исключений/успех CI за разрешение provider writes.
 > Отдельное действие владельца: отозвать cookies из истории приватного
