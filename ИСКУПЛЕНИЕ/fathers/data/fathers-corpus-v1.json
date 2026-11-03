@@ -535,17 +535,22 @@
       "file": "05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
       "subject": "Лев Великий, Ep. CXXIV; Томос (Ep. XXVIII)",
       "genre": "письма; вероучительный документ",
-      "primaryLocators": "NPNF2_12.txt:L9829-9831, L9930-9934, L10023-10025; Томос — NPNF2_12.txt:L4586, акты NPNF2_14",
-      "evidenceClass": "A1-PD-translation",
-      "accessState": "READABLE",
-      "locatorState": "LOCATED | лат. канал: Migne PL 1–221 (patrologia-latina_1-221) принят, томную привязку PL 54 проверять",
-      "rightsState": "PD",
-      "publicationState": "RESEARCH_ONLY",
+      "primaryLocators": "PL 54 cols. 1063A-1065B (Ep. CXXIV), cols. 761-768 + PL54_fig70.jpg (Ep. XXVIII Tomus, Latin + Chalcedonian Greek), col. 191B (Sermo XXI.1); NPNF2_12.txt:L9829-10025, L4586",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
       "quoteSafe": true,
       "falseFriendFlags": [
-        "ORIGINAL_TEXT_HOLD (лат. писем нет в проверенном канале)",
-        "Томос — христология, не объём"
-      ]
+        "Ep. 28 col. 766 conditionis nostrae debitum / χρεωστούμενον ὄφλημα refers to mortal human condition in Christology, not penal extent."
+      ],
+      "legacyEvidenceClass": "A1-PD-translation / A1-original (лат. TEI + греч. скан PL 54)",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "currentReviewEvidence": "ИСКУПЛЕНИЕ/evidence/source_controls_wave9_2026-11-03.json",
+      "quoteSafeScope": "Only Ep. 124 cols. 1063-1065, Ep. 28 col. 766 (Latin + PL54_fig70 Greek scan), and Sermo 21 col. 191 verified in Wave 9."
     },
     {
       "cardId": "DAM-1",
@@ -738,16 +743,24 @@
       "subject": "Gregory the Great (c. 540-604), Moralia in Iob (Books I-XII, Part I)",
       "genre": "exegetical-ascetical commentary",
       "primaryLocators": [
-        "Moralia vol. 1, Bliss 1844, scan-leaves 44, 166, 168, 207 (ARCHIVE-MORALIA-BLISS)"
+        "PL 75 cols. 524C (Mor. I.24.33), 612B (III.14.26), 614A (III.16.29), 642B (IV.3.8) — Leipzig/DDD corrected TEI-XML; Bliss 1844 vol. 1 scan-leaves 44, 166, 168, 207"
       ],
-      "evidenceClass": "A1-PD-translation",
-      "accessState": "OPEN",
-      "locatorState": "LOCATOR_HOLD (книга/глава/PL-колонки не верифицированы; scan-leaf указан)",
-      "rightsState": "PD",
-      "publicationState": "PUBLICATION_HOLD",
-      "quoteSafe": false,
-      "falseFriendFlags": [],
-      "notes": "Kenosis-victory without ransom-terminology in vol. 1: 'without price' (leaf 44), 'form of accursed man in the work of their redemption' (166), 'given up into the hands of Satan... set us free both outwardly and inwardly' (168), apostate angel 'driven down to a farther depth' (207). 'ransom' = 0 in vol. 1 (full-text search). Not 'ransom to devil' and not Anselmian 'satisfaction'. PL 75-76 ORIGINAL_TEXT_HOLD."
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "Leaf 44 renders sine aestimatione dabatur percipi (Mor. I.24.33, PL 75 col. 524C), not *sine pretio*; redimeret appears at Mor. IV.3.8 col. 642B."
+      ],
+      "notes": "Wave 9 PL 75 TEI verification repairs the Bliss English gloss: Mor. I.24.33 (col. 524C, leaf 44) reads sine aestimatione dabatur percipi ('without estimate', not *sine pretio*); III.14.26 (col. 612B, leaf 166) and III.16.29 (col. 614A, leaf 168) juxta carnem pertulit; IV.3.8 (col. 642B, leaf 207) Misertus ergo creator ut redimeret... apostatam angelum repellere. Moralia Part I retains redimeret/redemptionis while rejecting ransom paid to the devil and lacking Anselmian satisfactio.",
+      "legacyEvidenceClass": "A1-PD-translation / A1-original (лат. TEI)",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "currentReviewEvidence": "ИСКУПЛЕНИЕ/evidence/source_controls_wave9_2026-11-03.json",
+      "quoteSafeScope": "Only the four Moralia Part I loci collated against PL 75 corrected TEI-XML in Wave 9; not the whole Moralia."
     },
     {
       "cardId": "CHR-2",
@@ -1188,9 +1201,33 @@
     },
     {
       "cardId": "GRG-1",
-      "locus": "Moralia vol. 1 (Bliss 1844), scan-leaves 44/166/168/207",
-      "source": "moralsonbookofjo01greguoft (host ia601405)",
-      "phrase": "...without price... form of accursed man in the work of their redemption... given up into the hands of Satan... set us free both outwardly and inwardly... apostate angel driven down to a farther depth."
+      "locus": "Gregory the Great, Moralia I.24.33; III.14.26; III.16.29; IV.3.8 (PL 75 cols. 524C, 612B, 614A, 642B)",
+      "source": "Leipzig/DDD corrected PL75.xml (Wave 9; Bliss 1844 scan-leaves 44/166/168/207 cross-checked)",
+      "phrase": "524C: sine aestimatione dabatur percipi; 614A: juxta carnem pertulit; 642B: Misertus ergo creator ut redimeret... apostatam angelum repellere"
+    },
+    {
+      "cardId": "LEO-1",
+      "locus": "Leo the Great, Ep. 124.2-4 (PL 54 cols. 1063A-1065B); Ep. 28.3 (PL 54 col. 766A + PL54_fig70.jpg)",
+      "source": "Leipzig/DDD corrected PL54.xml + Migne PL 54 Greek column scan (Wave 9)",
+      "phrase": "Ep. 124: tyrannica vincula... propitiatio fuit mundi; Ep. 28: ad resolvendum conditionis nostrae debitum / πρὸς τὸ χρεωστούμενον ὄφλημα τῆς ἡμετέρας φύσεως ἐκτιθῆναι"
+    },
+    {
+      "cardId": "CHR-2",
+      "locus": "Chrysostom, In Joannem Hom. 65.1-2 catena witness (John 11:51-52)",
+      "source": "Cramer 1841 Vol. II pp. 319-320 visual print scans (Coislin 23, Wave 9; direct Hom. 65 print scan still OPEN)",
+      "phrase": "p. 320.13: ἀπηλλάγησαν πολλοί (catena; cf. Hom. 65 OCR οἱ πιστοί); p. 320.21-22: ἀπὸ τοῦ μέλλοντος ἔσεσθαι; p. 320.25-26: ἵνα συναγάγῃ εἰς ἕν τὰ ἐγγὺς καὶ τὰ διεσκορπισμένα"
+    },
+    {
+      "cardId": "CYRA-2",
+      "locus": "Catena in Joannem (Coislin 23) anonymous scholion on John 11:51-52 (displaced after John 12:8)",
+      "source": "Cramer 1841 Vol. II p. 322 ll. 19-29 visual print scan (Wave 9; Pusey Vol. II pp. 294-296 & PG 74 scans remain OPEN)",
+      "phrase": "Γένος τοῦ Θεοῦ πάντες ἄνθρωποι, καὶ τέκνα χρηματίζομεν... Συνήγαγε δὲ πάλιν καὶ συνεκόμισε πάντας διὰ τῆς πίστεως ὁ Χριστὸς εἰς μίαν αὐλὴν τὴν Ἐκκλησίαν"
+    },
+    {
+      "cardId": "CYRA-3",
+      "locus": "Cyril of Alexandria, In Joannem Book I ch. 9 on John 1:11-13",
+      "source": "Pusey 1872 Vol. I pp. 131-136 visual print scans (Wave 9)",
+      "phrase": "p. 133: κατά γε τὸν τοῦ πεποιῆσθαι λόγον (creation) vs Israel πρωτότοκος vs p. 135: εἰς υἱοὺς... θέσει καὶ χάριτι διὰ πίστεως"
     }
   ],
   "falseFriendRegister": [
@@ -1543,6 +1580,36 @@
     "supersedesOnly": "Wave 7 open edition-mapping, apparatus-identification, and Syriac-medium questions for John 11:49-52; does not supersede visual scan verification of Pusey Vol. II pp. 294-296 or PG 74 cols. 69-70 and does not close O11 or C25.",
     "nextAction": "Acquire and visually inspect printed page images (not OCR) of Pusey 1872 Vol. II pp. 294-296 (operacyrilli04cyriuoft frames 306-308) and/or Migne PG 74 cols. 69-70 (patrologiaecurs25hopfgoog leaf 41), and evaluate the theological relationship between Book VII 11:44 and Book VI 10:14-15."
   },
+  "patristicScanAndCyrilComparisonWave9": {
+    "recordedAtUtc": "2026-11-04T09:00:00+00:00",
+    "controls": "ИСКУПЛЕНИЕ/evidence/source_controls_wave9_2026-11-03.json",
+    "status": "PATRISTIC_ORIGINALS_AND_CATENA_SCANS_VERIFIED_PUSEY_V2_1152_SCAN_OPEN",
+    "c25": "OPEN",
+    "o10": "CHRYSOSTOM_CATENA_SCAN_VERIFIED_HOMILY_OCR_COLLATED_DIRECT_PRINT_SCAN_OPEN",
+    "o11": "CYRIL_FIVE_LOCUS_COMPARISON_AND_COISLIN23_CATENA_SCAN_VERIFIED_PUSEY_V2_1152_SCAN_OPEN",
+    "visuallyInspectedA1PrintScans": 21,
+    "correctedA1TeiXmlObjects": 3,
+    "classCOcrAndJsonlObjects": 27,
+    "controlledArtifacts": 51,
+    "cyrilComparedLoci": 5,
+    "cramerCoislin23CatenaScanEvidenceClass": "A1",
+    "coislin23AnonymousFor1152": true,
+    "puseyVol1John1_11_13ScanEvidenceClass": "A1",
+    "puseyVol2DualOcrEvidenceClass": "C",
+    "mason1899Oratio30ScanEvidenceClass": "A1",
+    "oratio4522GreekOcrEvidenceClass": "C",
+    "oratio4522GreekOcrQuoteSafe": false,
+    "pl54AndPl75CorrectedTeiEvidenceClass": "A1",
+    "puseyVol2PageImagesInspected": false,
+    "mignePg74PageImagesInspected": false,
+    "fullCyril1152FragmentGreekOriginalVerified": false,
+    "publicationEligible": false,
+    "holds": [
+      "EVIDENCE_HOLD",
+      "PUBLICATION_HOLD"
+    ],
+    "summary": "Wave 9 verifies 21 visual A1 print scans, 3 corrected A1 TEI-XML editions (PL 54, PL 75, First1KGreek Or. 30), and 27 class-C OCR/JSONL witnesses without promoting OCR to VERIFIED_ORIGINAL. Cramer 1841 Vol. II p. 322 (Coislin 23 catena scan, A1) confirms the shorter anonymous scholion on John 11:51-52 displaced after John 12:8; Pusey 1872 Vol. II pp. 294-296 and PG 74 cols. 69-70 remain without page scans, keeping C-25 OPEN. Five-locus comparison of Cyril In Joannem (1:11-13 A1 scan; 8:46-47, 10:14-16, 11:44 C OCR with Praefatio p. ix rejecting the 691A paragraph; 11:49-52) confirms a two-register Johannine grammar (universal creator kinship versus eschatological adoption through faith). GRG-1 is repaired from PL 75 cols. 524C/612B/614A/642B (sine aestimatione dabatur percipi, Misertus ergo creator ut redimeret); LEO-1 (PL 54 + Greek column scans), NAZ-1 (Mason 1899 pp. 140-143 scans; Or. 45.22 remains class C), and CHR-2 (Cramer II p. 320 scan + Hom. 65 OCR) are bound to exact locators."
+  },
   "claimRegister20261026": {
     "чтоЭто": "реестр доводов лана «fathers»: строка = раздел прозы уровня ## с локатором, классом из её собственных маркеров и отметкой съёма",
     "чтоСчитаетсяДоводом": "заголовок «## » в любом .md лана, включая вложенные папки (synthesis/drafts, ot/tools); тело секции — до следующего «## » или до конца файла",
@@ -1561,7 +1628,7 @@
       "УДЕРЖИВАЕТСЯ": 48
     },
     "маркеры": {
-      "всего": 143,
+      "всего": 142,
       "различных": 18,
       "словарь": {
         "APPARATUS_FALSE_FRIEND": "УДЕРЖИВАЕТСЯ",
@@ -1584,13 +1651,13 @@
         "RIGHTS_UNCLEAR": "УДЕРЖИВАЕТСЯ"
       },
       "частоты": {
-        "LOCATOR_HOLD": 36,
+        "LOCATOR_HOLD": 35,
         "ARCHIVE_HOLD": 26,
-        "ORIGINAL_TEXT_HOLD": 22,
+        "ORIGINAL_TEXT_HOLD": 21,
         "RIGHTS_HOLD": 9,
         "FALSE_FRIEND": 8,
+        "PUBLICATION_HOLD": 7,
         "ARCHIVE_AVAILABLE": 6,
-        "PUBLICATION_HOLD": 6,
         "QUOTE_RISK": 5,
         "EVIDENCE_HOLD": 4,
         "EXACT_LOCATOR_VERIFIED": 4,
@@ -1627,7 +1694,7 @@
       "записейВнеСтрокЛана": 0,
       "файловБезКарточкиСостояния": 0,
       "маркеровВПрозеНеОтражённыхВКарточке": 0,
-      "маркеровВКарточкеНеИзПрозыЛана": 21,
+      "маркеровВКарточкеНеИзПрозыЛана": 22,
       "детально": {
         "02_APOSTOLIC_FATHERS_CARDS.md": {
           "проза": 0,
@@ -1668,25 +1735,26 @@
         },
         "05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md": {
           "проза": 9,
-          "карточка": 14,
+          "карточка": 15,
           "вПрозеНеВКарточке": [],
           "вКарточкеНеИзПрозы": [
             "LOCATED / VERIFIED_ORIGINAL",
             "NOT_ACQUIRED",
             "READABLE",
             "RESEARCH_ONLY",
+            "STORAGE_ONLY",
             "VERIFIED"
           ],
           "естьКарточка": true
         },
         "11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md": {
-          "проза": 4,
-          "карточка": 8,
+          "проза": 5,
+          "карточка": 11,
           "вПрозеНеВКарточке": [],
           "вКарточкеНеИзПрозы": [
-            "OPEN",
             "READABLE",
-            "RESEARCH_ONLY"
+            "RESEARCH_ONLY",
+            "STORAGE_ONLY"
           ],
           "естьКарточка": true
         }
@@ -2273,7 +2341,7 @@
         "код": "СР@04_THIRD_FOURTH_CENTURY_CARDS~2",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/04_THIRD_FOURTH_CENTURY_CARDS.md",
-        "строка": 174,
+        "строка": 176,
         "срез": "Границы в этой волне",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 1,
@@ -2288,7 +2356,7 @@
         "код": "СР@04_THIRD_FOURTH_CENTURY_CARDS~3",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/04_THIRD_FOURTH_CENTURY_CARDS.md",
-        "строка": 189,
+        "строка": 191,
         "срез": "Сверка с оригиналом и уточнения (добавлено в этой волне)",
         "класс": "БЕЗ МАРКЕРА",
         "маркеров": 0,
@@ -2358,7 +2426,7 @@
         "код": "DAM-1@05_FIFTH_CENTURY_AND_BOUNDARY_CARDS",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
-        "строка": 92,
+        "строка": 93,
         "срез": "DAM-1. Иоанн Дамаскин (ок. 675–749), *Точное изложение православной веры* III.27",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 1,
@@ -2372,7 +2440,7 @@
         "код": "CYRA-1@05_FIFTH_CENTURY_AND_BOUNDARY_CARDS",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
-        "строка": 105,
+        "строка": 106,
         "срез": "CYRA-1. Кирилл Александрийский (ок. 376–444), *Толкование на двенадцать пророков*",
         "класс": "БЕЗ МАРКЕРА",
         "маркеров": 0,
@@ -2384,7 +2452,7 @@
         "код": "СР@05_FIFTH_CENTURY_AND_BOUNDARY_CARDS",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
-        "строка": 123,
+        "строка": 124,
         "срез": "Халкидон (451) как контроль",
         "класс": "БЕЗ МАРКЕРА",
         "маркеров": 0,
@@ -2396,7 +2464,7 @@
         "код": "СР@05_FIFTH_CENTURY_AND_BOUNDARY_CARDS~2",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
-        "строка": 131,
+        "строка": 132,
         "срез": "Авторы, остающиеся HOLD (и почему)",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 1,
@@ -2411,7 +2479,7 @@
         "код": "CYRA-2@05_FIFTH_CENTURY_AND_BOUNDARY_CARDS",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
-        "строка": 145,
+        "строка": 146,
         "срез": "CYRA-2. Под именем Кирилла: фрагмент In Ioannem VII на 11:49–52",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 2,
@@ -2429,7 +2497,7 @@
         "код": "CYRA-3@05_FIFTH_CENTURY_AND_BOUNDARY_CARDS",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
-        "строка": 168,
+        "строка": 171,
         "срез": "CYRA-3. Кирилл, In Ioannem I/VI — сотворение, воплощение, усыновление",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 2,
@@ -2446,7 +2514,7 @@
         "код": "ANS-1@05_FIFTH_CENTURY_AND_BOUNDARY_CARDS",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
-        "строка": 187,
+        "строка": 192,
         "срез": "ANS-1. Анзельм, *Cur Deus Homo* (1098) — **граница**, а не отец",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 1,
@@ -3117,12 +3185,13 @@
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
         "строка": 164,
-        "срез": "GRG-1. Григорий Великий (ок. 540–604), *Moralia in Iob* — уничижение и победа «без цены»",
+        "срез": "GRG-1. Григорий Великий (ок. 540–604), *Moralia in Iob* — уничижение и победа «без оценки» (*sine aestimatione*)",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 1,
         "токены": [
           "LOCATOR_HOLD",
-          "ORIGINAL_TEXT_HOLD"
+          "ORIGINAL_TEXT_HOLD",
+          "PUBLICATION_HOLD"
         ],
         "машинно": true,
         "машинноПоФайлу": true
@@ -3147,8 +3216,8 @@
     ],
     "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
     "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check fathers",
-    "measuredAt": "2026-11-03T12:53:14Z",
-    "checkedAt": "2026-11-03T12:53:14Z",
-    "предыдущийСъём": "2026-11-03T12:50:19Z"
+    "measuredAt": "2026-11-03T22:36:42Z",
+    "checkedAt": "2026-11-03T22:36:42Z",
+    "предыдущийСъём": "2026-11-03T22:33:30Z"
   }
 }

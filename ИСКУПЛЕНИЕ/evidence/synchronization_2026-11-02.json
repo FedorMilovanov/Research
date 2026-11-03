@@ -3984,6 +3984,202 @@
         "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
         "scope": "Edition/locator mapping, apparatus decomposition, and Greek-only catena medium; no 11:52 Greek quote-safe promotion or C-25 closure."
       }
+    },
+    {
+      "id": "W9-NT15",
+      "file": "ИСКУПЛЕНИЕ/nt/15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md",
+      "removed": "UNACCEPTED WAVE9: Coislin 23 catena scan or Pusey Vol. II dual OCR promotes Cyril 11:52 Greek fragment to VERIFIED_ORIGINAL or closes C-25.",
+      "required": "Скан катены Крамера т. II, с. 322 (A1) и двухпоточная сверка OCR т. II Пусея (волна 9)",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Record Wave 9 visual verification of 21 A1 print scans, 3 corrected A1 TEI-XML editions (PL 54, PL 75, First1KGreek Or. 30), and 27 class-C OCR/JSONL witnesses across Cyril five-locus synthesis and GRG-1/CHR-2/NAZ-1/LEO-1 while keeping Pusey Vol. II pp. 294-296 / PG 74 scans and C-25 OPEN.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave9_2026-11-03.json",
+        "scope": "21 A1 visual scans + 3 A1 TEI-XML + 27 class-C OCR/JSONL witnesses; no OCR promotion to VERIFIED_ORIGINAL, no C-25 closure, and no Product publication."
+      }
+    },
+    {
+      "id": "W9-P13",
+      "file": "ИСКУПЛЕНИЕ/nt/06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md",
+      "removed": "UNACCEPTED WAVE9: Cramer Vol. II catena scan closes P13-d/O11 without direct print scans of Pusey Vol. II pp. 294-296 or Hom. 65.",
+      "required": "Волна 9 — скан катены Крамера (A1) для P13-d/P13-e и межлокусное сравнение Кирилла:",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Record Wave 9 visual verification of 21 A1 print scans, 3 corrected A1 TEI-XML editions (PL 54, PL 75, First1KGreek Or. 30), and 27 class-C OCR/JSONL witnesses across Cyril five-locus synthesis and GRG-1/CHR-2/NAZ-1/LEO-1 while keeping Pusey Vol. II pp. 294-296 / PG 74 scans and C-25 OPEN.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave9_2026-11-03.json",
+        "scope": "21 A1 visual scans + 3 A1 TEI-XML + 27 class-C OCR/JSONL witnesses; no OCR promotion to VERIFIED_ORIGINAL, no C-25 closure, and no Product publication."
+      }
+    },
+    {
+      "id": "W9-N00",
+      "file": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
+      "removed": "UNACCEPTED WAVE9: Five-locus Cyril synthesis or Coislin 23 catena scan closes C-25 or certifies Pusey Vol. II page scans.",
+      "required": "Волна 9 — сканы Cramer II (катена 11:50–52) и Pusey I (1:11–13) A1 + межлокусное сопоставление Кирилла:",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Record Wave 9 visual verification of 21 A1 print scans, 3 corrected A1 TEI-XML editions (PL 54, PL 75, First1KGreek Or. 30), and 27 class-C OCR/JSONL witnesses across Cyril five-locus synthesis and GRG-1/CHR-2/NAZ-1/LEO-1 while keeping Pusey Vol. II pp. 294-296 / PG 74 scans and C-25 OPEN.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave9_2026-11-03.json",
+        "scope": "21 A1 visual scans + 3 A1 TEI-XML + 27 class-C OCR/JSONL witnesses; no OCR promotion to VERIFIED_ORIGINAL, no C-25 closure, and no Product publication."
+      }
+    },
+    {
+      "id": "W9-F11",
+      "file": "ИСКУПЛЕНИЕ/fathers/11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
+      "removed": "**Локусы (скан-листы):** 44, 166, 168, 207 (точные листы даны по полнотекстовому поиску внутри скана; печатные страницы и PL-колонки — `LOCATOR_HOLD`).",
+      "required": "quod et sine aestimatione dabatur percipi, et sine fine retineri… in redemptione communi",
+      "rejectedWordingPresentInBaseline": true,
+      "controlType": "BASELINE_REMOVAL_OR_EXPLICIT_SUPERSESSION",
+      "historicalRetained": false,
+      "reason": "Record Wave 9 visual verification of 21 A1 print scans, 3 corrected A1 TEI-XML editions (PL 54, PL 75, First1KGreek Or. 30), and 27 class-C OCR/JSONL witnesses across Cyril five-locus synthesis and GRG-1/CHR-2/NAZ-1/LEO-1 while keeping Pusey Vol. II pp. 294-296 / PG 74 scans and C-25 OPEN.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave9_2026-11-03.json",
+        "scope": "21 A1 visual scans + 3 A1 TEI-XML + 27 class-C OCR/JSONL witnesses; no OCR promotion to VERIFIED_ORIGINAL, no C-25 closure, and no Product publication."
+      }
+    },
+    {
+      "id": "W9-F04",
+      "file": "ИСКУПЛЕНИЕ/fathers/04_THIRD_FOURTH_CENTURY_CARDS.md",
+      "removed": "UNACCEPTED WAVE9: OpenGreek Or. 45.22 JSONL OCR or Gaume Hom. 65 OCR promoted to A1 VERIFIED_ORIGINAL.",
+      "required": "Волна 9 — печатный скан греческой катены Златоуста (A1) и колляция с гомилийным OCR (C):",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Record Wave 9 visual verification of 21 A1 print scans, 3 corrected A1 TEI-XML editions (PL 54, PL 75, First1KGreek Or. 30), and 27 class-C OCR/JSONL witnesses across Cyril five-locus synthesis and GRG-1/CHR-2/NAZ-1/LEO-1 while keeping Pusey Vol. II pp. 294-296 / PG 74 scans and C-25 OPEN.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave9_2026-11-03.json",
+        "scope": "21 A1 visual scans + 3 A1 TEI-XML + 27 class-C OCR/JSONL witnesses; no OCR promotion to VERIFIED_ORIGINAL, no C-25 closure, and no Product publication."
+      }
+    },
+    {
+      "id": "W9-F05",
+      "file": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
+      "removed": "UNACCEPTED WAVE9: Coislin 23 anonymous scholion on Cramer II p. 322 treated as rubricated Cyrilline print scan of Pusey Vol. II pp. 294-296.",
+      "required": "Волна 9 — печатный скан катены Крамера т. II, с. 322 (A1) и двухпоточная сверка OCR т. II Пусея (C):",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Record Wave 9 visual verification of 21 A1 print scans, 3 corrected A1 TEI-XML editions (PL 54, PL 75, First1KGreek Or. 30), and 27 class-C OCR/JSONL witnesses across Cyril five-locus synthesis and GRG-1/CHR-2/NAZ-1/LEO-1 while keeping Pusey Vol. II pp. 294-296 / PG 74 scans and C-25 OPEN.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave9_2026-11-03.json",
+        "scope": "21 A1 visual scans + 3 A1 TEI-XML + 27 class-C OCR/JSONL witnesses; no OCR promotion to VERIFIED_ORIGINAL, no C-25 closure, and no Product publication."
+      }
+    },
+    {
+      "id": "W9-F10",
+      "file": "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
+      "removed": "UNACCEPTED WAVE9: Class-C OCR witnesses for Pusey Vol. II, Chrysostom Hom. 65, or Nazianzen Or. 45.22 elevated to quote-safe VERIFIED_ORIGINAL.",
+      "required": "Волна 9: сканы Pusey I (1:11–13), Cramer II (катена 11:50–52), Mason 1899 (Or. 30.20–21) и выверенные TEI PL 54 / PL 75 (A1);",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Record Wave 9 visual verification of 21 A1 print scans, 3 corrected A1 TEI-XML editions (PL 54, PL 75, First1KGreek Or. 30), and 27 class-C OCR/JSONL witnesses across Cyril five-locus synthesis and GRG-1/CHR-2/NAZ-1/LEO-1 while keeping Pusey Vol. II pp. 294-296 / PG 74 scans and C-25 OPEN.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave9_2026-11-03.json",
+        "scope": "21 A1 visual scans + 3 A1 TEI-XML + 27 class-C OCR/JSONL witnesses; no OCR promotion to VERIFIED_ORIGINAL, no C-25 closure, and no Product publication."
+      }
+    },
+    {
+      "id": "W9-F00",
+      "file": "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
+      "removed": "UNACCEPTED WAVE9: Patristic Wave 9 scan/TEI verification authorizes Product publication or promotes OCR to A1.",
+      "required": "Волна 9 — печатные сканы Pusey I (1:11–13), Cramer II (катена 11:50–52), Mason 1899 (Or. 30.20–21) и TEI PL 54 / PL 75 (A1); сканы Pusey II 294–296 открыты:",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Record Wave 9 visual verification of 21 A1 print scans, 3 corrected A1 TEI-XML editions (PL 54, PL 75, First1KGreek Or. 30), and 27 class-C OCR/JSONL witnesses across Cyril five-locus synthesis and GRG-1/CHR-2/NAZ-1/LEO-1 while keeping Pusey Vol. II pp. 294-296 / PG 74 scans and C-25 OPEN.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave9_2026-11-03.json",
+        "scope": "21 A1 visual scans + 3 A1 TEI-XML + 27 class-C OCR/JSONL witnesses; no OCR promotion to VERIFIED_ORIGINAL, no C-25 closure, and no Product publication."
+      }
+    },
+    {
+      "id": "W9-C25",
+      "file": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+      "removed": "UNACCEPTED WAVE9: Five-locus Cyril comparison or Coislin 23 catena scan resolves C-25.",
+      "required": "Волна 9 — скан катены Крамера т. II (A1), скан Pusey I 1:11–13 (A1) и пятилокусное сопоставление Кирилла; C-25 OPEN:",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Record Wave 9 visual verification of 21 A1 print scans, 3 corrected A1 TEI-XML editions (PL 54, PL 75, First1KGreek Or. 30), and 27 class-C OCR/JSONL witnesses across Cyril five-locus synthesis and GRG-1/CHR-2/NAZ-1/LEO-1 while keeping Pusey Vol. II pp. 294-296 / PG 74 scans and C-25 OPEN.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave9_2026-11-03.json",
+        "scope": "21 A1 visual scans + 3 A1 TEI-XML + 27 class-C OCR/JSONL witnesses; no OCR promotion to VERIFIED_ORIGINAL, no C-25 closure, and no Product publication."
+      }
+    },
+    {
+      "id": "W9-ROOT00",
+      "file": "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+      "removed": "UNACCEPTED WAVE9: Wave 9 patristic verification lifts PUBLICATION_HOLD or closes C-25.",
+      "required": "Волна 9 — печатные сканы Pusey I (1:11–13), Cramer II (катена 11:50–52), Mason 1899 (Or. 30.20–21) и TEI PL 54 / PL 75 (A1); C-25 OPEN:",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Record Wave 9 visual verification of 21 A1 print scans, 3 corrected A1 TEI-XML editions (PL 54, PL 75, First1KGreek Or. 30), and 27 class-C OCR/JSONL witnesses across Cyril five-locus synthesis and GRG-1/CHR-2/NAZ-1/LEO-1 while keeping Pusey Vol. II pp. 294-296 / PG 74 scans and C-25 OPEN.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave9_2026-11-03.json",
+        "scope": "21 A1 visual scans + 3 A1 TEI-XML + 27 class-C OCR/JSONL witnesses; no OCR promotion to VERIFIED_ORIGINAL, no C-25 closure, and no Product publication."
+      }
+    },
+    {
+      "id": "W9-ROOT-DATA",
+      "file": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+      "removed": "UNACCEPTED WAVE9: root registry marks Pusey Vol. II 11:52 page scans inspected or publicationEligible true.",
+      "required": "\"patristicScanAndCyrilComparisonWave9\":",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Record Wave 9 visual verification of 21 A1 print scans, 3 corrected A1 TEI-XML editions (PL 54, PL 75, First1KGreek Or. 30), and 27 class-C OCR/JSONL witnesses across Cyril five-locus synthesis and GRG-1/CHR-2/NAZ-1/LEO-1 while keeping Pusey Vol. II pp. 294-296 / PG 74 scans and C-25 OPEN.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave9_2026-11-03.json",
+        "scope": "21 A1 visual scans + 3 A1 TEI-XML + 27 class-C OCR/JSONL witnesses; no OCR promotion to VERIFIED_ORIGINAL, no C-25 closure, and no Product publication."
+      }
+    },
+    {
+      "id": "W9-NT-DATA",
+      "file": "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+      "removed": "UNACCEPTED WAVE9: NT registry marks fullCyril1152FragmentGreekOriginalVerified true.",
+      "required": "\"patristicScanAndCyrilComparisonWave9\":",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Record Wave 9 visual verification of 21 A1 print scans, 3 corrected A1 TEI-XML editions (PL 54, PL 75, First1KGreek Or. 30), and 27 class-C OCR/JSONL witnesses across Cyril five-locus synthesis and GRG-1/CHR-2/NAZ-1/LEO-1 while keeping Pusey Vol. II pp. 294-296 / PG 74 scans and C-25 OPEN.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave9_2026-11-03.json",
+        "scope": "21 A1 visual scans + 3 A1 TEI-XML + 27 class-C OCR/JSONL witnesses; no OCR promotion to VERIFIED_ORIGINAL, no C-25 closure, and no Product publication."
+      }
+    },
+    {
+      "id": "W9-F-DATA",
+      "file": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+      "removed": "\"locatorState\": \"LOCATOR_HOLD (книга/глава/PL-колонки не верифицированы; scan-leaf указан)\"",
+      "required": "\"patristicScanAndCyrilComparisonWave9\":",
+      "rejectedWordingPresentInBaseline": true,
+      "controlType": "BASELINE_REMOVAL_OR_EXPLICIT_SUPERSESSION",
+      "historicalRetained": false,
+      "reason": "Record Wave 9 visual verification of 21 A1 print scans, 3 corrected A1 TEI-XML editions (PL 54, PL 75, First1KGreek Or. 30), and 27 class-C OCR/JSONL witnesses across Cyril five-locus synthesis and GRG-1/CHR-2/NAZ-1/LEO-1 while keeping Pusey Vol. II pp. 294-296 / PG 74 scans and C-25 OPEN.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave9_2026-11-03.json",
+        "scope": "21 A1 visual scans + 3 A1 TEI-XML + 27 class-C OCR/JSONL witnesses; no OCR promotion to VERIFIED_ORIGINAL, no C-25 closure, and no Product publication."
+      }
+    },
+    {
+      "id": "W9-S-DATA",
+      "file": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+      "removed": "UNACCEPTED WAVE9: synthesis registry closes C-25 or marks publicationEligible true.",
+      "required": "\"patristicScanAndCyrilComparisonWave9\":",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Record Wave 9 visual verification of 21 A1 print scans, 3 corrected A1 TEI-XML editions (PL 54, PL 75, First1KGreek Or. 30), and 27 class-C OCR/JSONL witnesses across Cyril five-locus synthesis and GRG-1/CHR-2/NAZ-1/LEO-1 while keeping Pusey Vol. II pp. 294-296 / PG 74 scans and C-25 OPEN.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave9_2026-11-03.json",
+        "scope": "21 A1 visual scans + 3 A1 TEI-XML + 27 class-C OCR/JSONL witnesses; no OCR promotion to VERIFIED_ORIGINAL, no C-25 closure, and no Product publication."
+      }
     }
   ],
   "pathRepairs": [
@@ -8265,6 +8461,208 @@
       "finalReceiptDirectory": "/home/user/source-materials/atonement-wave8-2026-11-03/verification",
       "selfReferenceBoundary": "One substantive commit is intended. Post-commit receipts and delivery summary are stored externally under /home/user/source-materials/atonement-wave8-2026-11-03; no second receipt-only commit is created.",
       "legacy30Battery": "PREVIOUS_FAIL_NOT_REPAIRED_NOT_RERUN",
+      "publicationEligible": false,
+      "mergePerformed": false
+    }
+  },
+  "wave9": {
+    "status": "PATRISTIC_ORIGINALS_AND_CATENA_SCANS_VERIFIED_PUSEY_V2_1152_SCAN_OPEN",
+    "baselineCommit": "2a93d6250af6d94f376ddb2be67fef7888860264",
+    "recordedAtUtc": "2026-11-04T09:05:00+00:00",
+    "controls": "ИСКУПЛЕНИЕ/evidence/source_controls_wave9_2026-11-03.json",
+    "repairIds": [
+      "W9-NT15",
+      "W9-P13",
+      "W9-N00",
+      "W9-F11",
+      "W9-F04",
+      "W9-F05",
+      "W9-F10",
+      "W9-F00",
+      "W9-C25",
+      "W9-ROOT00",
+      "W9-ROOT-DATA",
+      "W9-NT-DATA",
+      "W9-F-DATA",
+      "W9-S-DATA"
+    ],
+    "createdFiles": [
+      "ИСКУПЛЕНИЕ/evidence/source_controls_wave9_2026-11-03.json",
+      "scripts/atonement_wave9_sources.py"
+    ],
+    "scope": "51 byte-verified Git objects across 8 upstream repositories (21 visually inspected A1 print scans of Pusey 1872 Vol. I pp. 131-136, Cramer 1841 Vol. II title + pp. 318-322, Mason 1899 title + pp. 140-143, and Migne PL 54 Greek column bitmaps; 3 corrected A1 TEI-XML editions PL54.xml, PL75.xml, First1KGreek Or. 30; and 27 class-C OCR/JSONL witnesses for Pusey Vol. II, Chrysostom Hom. 65, and Nazianzen Or. 45.22).",
+    "findings": [
+      "Cramer 1841 Vol. II p. 322 ll. 19-29 (i0336.jpg, A1) visually confirms the Coislin 23 Greek catena witness (c. l. Cord.) for John 11:51-52 displaced after John 12:8 and transmitted anonymously without a ΚΥΡΙΛΛΟΥ rubric; Pusey Vol. II pp. 294-296 (uoft + goog dual OCR, class C) and Migne PG 74 cols. 69-70 still lack page scans, keeping C-25 OPEN.",
+      "Five-locus comparison of Cyril In Joannem (I.9 1:11-13 A1 scan; VI 8:46-47, VI.1 10:14-16, VII 11:44 C OCR with Praefatio p. ix A1 rejecting 691A; VII 11:49-52) establishes Cyril's two-register Johannine grammar: universal creator kinship and universal bodily resurrection vs covenant/eschatological sonship through faith.",
+      "GRG-1 repaired from Leipzig/DDD corrected PL 75 TEI-XML (A1): leaf 44 = Mor. I.24.33 col. 524C sine aestimatione dabatur percipi (not *sine pretio*), III.14.26 col. 612B, III.16.29 col. 614A juxta carnem pertulit, IV.3.8 col. 642B Misertus ergo creator ut redimeret... apostatam angelum repellere.",
+      "CHR-2/O10 verified on Cramer II pp. 319-320 (A1: ἀπηλλάγησαν πολλοί, ἀπὸ τοῦ μέλλοντος ἔσεσθαι, unbroken ἵνα συναγάγῃ εἰς ἕν) collated against Hom. 65 OCR (C: οἱ πιστοί / liberati fideles sunt); NAZ-1 verified on Mason 1899 pp. 140-143 scans (A1) while Or. 45.22 remains class C; LEO-1 verified on PL 54 TEI-XML + PL54_fig70.jpg Greek column scan (A1)."
+    ],
+    "publicationEligible": false,
+    "mergePerformed": false,
+    "cramerCoislin23CatenaScanVerified": true,
+    "fullCyril1152FragmentGreekOriginalVerified": false,
+    "puseyVol2AndPg74PageImagesInspected": false,
+    "c25": "OPEN",
+    "o10": "CHRYSOSTOM_CATENA_SCAN_VERIFIED_HOMILY_OCR_COLLATED_DIRECT_PRINT_SCAN_OPEN",
+    "o11": "CYRIL_FIVE_LOCUS_COMPARISON_AND_COISLIN23_CATENA_SCAN_VERIFIED_PUSEY_V2_1152_SCAN_OPEN",
+    "completedPriorNextAction": "Evaluated Book VII 11:44 alongside Book VI 10:14-16, VI 8:46-47, and I.9 1:11-13, visually inspected Coislin 23 catena p. 322 in Cramer Vol. II (A1), and completed original-language verification for GRG-1, CHR-2, NAZ-1 (Or. 30), and LEO-1.",
+    "nextSubstantiveStep": "Acquire and visually inspect printed page images (not OCR) of Pusey 1872 Vol. II pp. 294-296, Migne PG 74 cols. 69-70, Chrysostom Hom. 65 (PG 59 cols. 361-362 / Gaume VIII pp. 447-448), and Gregory Nazianzen Or. 45.22 (PG 36 col. 653).",
+    "regressionRecordSemantics": "14 owner/registry updates (2 baseline removals/supersessions in GRG-1 prose/card + 12 additive guards); not 14 historical errors.",
+    "supersededSnapshots": [
+      {
+        "path": ".github/workflows/atonement-corpus-integrity.yml",
+        "commit": "2a93d6250af6d94f376ddb2be67fef7888860264",
+        "blob": "64deb40fc09ab09bbb3018acb6a8e997181e039d",
+        "sha256": "6b33957dfe8dd08d48a5c7d601107333b6fdced3be49abc7b7a7c3eef28bd510",
+        "bytes": 14748
+      },
+      {
+        "path": "scripts/atonement_reshoot_state.py",
+        "commit": "2a93d6250af6d94f376ddb2be67fef7888860264",
+        "blob": "f068456915ee259db942f3495fe61e0d116eaf24",
+        "sha256": "fb24e13488a2eeab79d94d0f97d78367ee9564376966a1040b76a433f3ad6fdb",
+        "bytes": 166717
+      },
+      {
+        "path": "scripts/atonement_sync_check.py",
+        "commit": "2a93d6250af6d94f376ddb2be67fef7888860264",
+        "blob": "5edd0819537f61ef68eff7342c5b956749fae4c8",
+        "sha256": "74117110a6daf3caea9b888a12ba6dd9bc19925dbe2ef6445968b325599a2e8d",
+        "bytes": 19289
+      },
+      {
+        "path": "scripts/test_atonement_sync.py",
+        "commit": "2a93d6250af6d94f376ddb2be67fef7888860264",
+        "blob": "1686d7dba19a1ca58a4d30f89e182f3a23ba1fe5",
+        "sha256": "c81c028188ef5b8040c9afcd6b5f48cb01d96938db23e807c592af035aea5239",
+        "bytes": 81887
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+        "commit": "2a93d6250af6d94f376ddb2be67fef7888860264",
+        "blob": "822862ff7e2849df430b827ca9d4c797632f1835",
+        "sha256": "124373c87e0c19f37ed74973dedbdb5964aac7aed5fdcc3429edc38ab76bc9bc",
+        "bytes": 53568
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
+        "commit": "2a93d6250af6d94f376ddb2be67fef7888860264",
+        "blob": "abf7745bfc6ef22b7664bb1a1b6e958c3b7df24d",
+        "sha256": "58d61016dc3b1a2c24ef7d89cf09abda824ccef979d2661e66c7b9a19bd3334a",
+        "bytes": 1287192
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+        "commit": "2a93d6250af6d94f376ddb2be67fef7888860264",
+        "blob": "00279baa1f77d40f5eba1125db03e87631b97efd",
+        "sha256": "1dd580e3b006bba7529e4355721aade01e9b0ab796a6e987352b399e78a65774",
+        "bytes": 1212126
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/evidence/synchronization_2026-11-02.json",
+        "commit": "2a93d6250af6d94f376ddb2be67fef7888860264",
+        "blob": "714bb72ebde5d9290e558d8b11fb63022689dbea",
+        "sha256": "2bdc9b842805aeaa6b6a0c2725517158c654d9dfd1156716a45c98ef8f2ae6ce",
+        "bytes": 751024
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
+        "commit": "2a93d6250af6d94f376ddb2be67fef7888860264",
+        "blob": "081c4b3e67dffef051ba408fe1899d77906aa1ca",
+        "sha256": "f001cad5d99d83d5d28e15a63d6361c11cf48f8cc38783713ff02803c1dca0e4",
+        "bytes": 27321
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/04_THIRD_FOURTH_CENTURY_CARDS.md",
+        "commit": "2a93d6250af6d94f376ddb2be67fef7888860264",
+        "blob": "cbe8948aed7d0bb1bac8ea66b55144b9e44cb7f2",
+        "sha256": "bbd44b6f99a714b54dd85bddc8ea425dfbdc262332cdd0788498debbe00e6431",
+        "bytes": 30792
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
+        "commit": "2a93d6250af6d94f376ddb2be67fef7888860264",
+        "blob": "a3892bba4cfb5c8b52ebe03cd3f22a9426d3646d",
+        "sha256": "2cd74ac24419e947185d03ccf78110de31f1025856d3f6f8ece152d98e84c8d4",
+        "bytes": 38604
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
+        "commit": "2a93d6250af6d94f376ddb2be67fef7888860264",
+        "blob": "c3bbf888a22302b4c610a17756c9a43edbdd1965",
+        "sha256": "24c8a993edc01d1d64cdb6f8557e93543f4b2adfbd3fc48833c3ff086f4818d6",
+        "bytes": 42406
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
+        "commit": "2a93d6250af6d94f376ddb2be67fef7888860264",
+        "blob": "e108ca120e9e88e62fd3d15b92f819647ec7b898",
+        "sha256": "3f08437eb2fe52213f319656555a1802b58d1322aa37d8663d74e3f45baba6d2",
+        "bytes": 32114
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+        "commit": "2a93d6250af6d94f376ddb2be67fef7888860264",
+        "blob": "23f7f141837cae146671bfe4b4b2ffb141c98135",
+        "sha256": "8f4f6eb69b2b21b09f47b5667651c92b6f3a0205a83101ffb4a693dcdb9f3824",
+        "bytes": 152054
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
+        "commit": "2a93d6250af6d94f376ddb2be67fef7888860264",
+        "blob": "f19a8dd2a6f957787c52160570733c47a4a4716c",
+        "sha256": "f9d769f41a89540736b1376f5371b8902908425b1609c20314849fe7be40db51",
+        "bytes": 30413
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md",
+        "commit": "2a93d6250af6d94f376ddb2be67fef7888860264",
+        "blob": "18db3f47bfecab32c879900e3e3e8d2679d11ddc",
+        "sha256": "2dc948671b16f06af0767b1453961cfe85e4128dbce52410eeacdfcb29e49613",
+        "bytes": 59028
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md",
+        "commit": "2a93d6250af6d94f376ddb2be67fef7888860264",
+        "blob": "41905528b3e28852847063a6ec6f56e6ee35de16",
+        "sha256": "44b6ff60c662654102d3f1e6c0f1418ab4be325d8b1567a755ee147fed552736",
+        "bytes": 91646
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+        "commit": "2a93d6250af6d94f376ddb2be67fef7888860264",
+        "blob": "fc3d48ed1ae51192903f613278077101e07c05d1",
+        "sha256": "dc6181ce43612ae6a6c16efe14c252b8f6965b8685439fdb9a70a526d873fd4a",
+        "bytes": 205853
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/ot/data/ot-corpus-v1.json",
+        "commit": "2a93d6250af6d94f376ddb2be67fef7888860264",
+        "blob": "c8997accddfc51b0d669dae12f087e089253cae9",
+        "sha256": "00a15f85b373de1098731664554bdf662c1331c7ceaec2c4aee9e21ec579ffce",
+        "bytes": 785669
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+        "commit": "2a93d6250af6d94f376ddb2be67fef7888860264",
+        "blob": "990a9f86d26233afabd209ac994793fa4e882bd8",
+        "sha256": "02a56a5ca3406ac20ff2302ba447772159e73b4ebcf03d033f6cebd1d68c342c",
+        "bytes": 219211
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+        "commit": "2a93d6250af6d94f376ddb2be67fef7888860264",
+        "blob": "1869dae3aaa0f0ecbead0e65b6beba734b5a174f",
+        "sha256": "c1db50d22bfeed0a7213b9558b79963e3f200c6b168b5c834882c269ad52ccfb",
+        "bytes": 184789
+      }
+    ],
+    "verification": {
+      "status": "SCOPED_GATES_AND_EXTERNAL_51_OBJECT_REPLAY_VERIFIED",
+      "recordedAtUtc": "2026-11-04T09:05:00+00:00",
+      "sourceByteReplay": "PASS_51_GIT_OBJECTS_21_A1_SCANS_3_A1_TEI_27_C_OCR",
+      "nativeClaimsCheck": "PASS_914_SCOPED_RECORDS_AFTER_EXPLICIT_WRITER",
+      "nativeReshootCheck": "PASS_AFTER_INTERNAL_CONVERGENCE",
       "publicationEligible": false,
       "mergePerformed": false
     }

@@ -23,6 +23,7 @@ import atonement_wave5_sources as wave5
 import atonement_wave6_sources as wave6
 import atonement_wave7_sources as wave7
 import atonement_wave8_sources as wave8
+import atonement_wave9_sources as wave9
 from atonement_source_metrics import source_label_prefix, legacy_carrier_code
 
 from atonement_claim_register import classify_token
@@ -1450,6 +1451,102 @@ class Wave8SourcesTests(unittest.TestCase):
         self.assertIn('scripts/atonement_wave8_sources.py', reshoot.PIPELINE_FILES)
         self.assertIn('check_wave8(root, report, wave8_control)', (ROOT / 'scripts/atonement_sync_check.py').read_text(encoding='utf-8'))
         self.assertIn('"atonement_wave8_sources.py"', (ROOT / '.github/workflows/atonement-corpus-integrity.yml').read_text(encoding='utf-8'))
+
+
+class Wave9SourcesTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.report = json.loads((ROOT / REPORT).read_text(encoding='utf-8'))
+        cls.control = json.loads((ROOT / wave9.CONTROL).read_text(encoding='utf-8'))
+
+    def errors(self, control=None, report=None):
+        return wave9.check_controls(ROOT, self.report if report is None else report,
+                                    self.control if control is None else control)
+
+    def test_wave9_controls_pass_cleanly(self):
+        self.assertEqual(self.errors(), [])
+
+    def test_scan_tei_and_ocr_tier_contracts_are_enforced(self):
+        c = deepcopy(self.control)
+        scan = next(f for f in c['files'] if f['id'] == 'CRAMER-V2-P322-JPG')
+        scan['visualScanInspected'] = False
+        self.assertTrue(any('A1 visual scan contract' in e for e in self.errors(c)))
+        c2 = deepcopy(self.control)
+        tei = next(f for f in c2['files'] if f['id'] == 'PL75-TEI-XML')
+        tei['visualScanInspected'] = True
+        self.assertTrue(any('A1 TEI contract' in e for e in self.errors(c2)))
+        c3 = deepcopy(self.control)
+        ocr = next(f for f in c3['files'] if f['id'] == 'OG-NAZ-OR45-JSONL')
+        ocr['quoteSafe'] = True
+        self.assertTrue(any('class C OCR contract' in e for e in self.errors(c3)))
+
+    def test_pusey_vol2_scan_and_c25_closure_remain_blocked(self):
+        c = deepcopy(self.control)
+        c['puseyVol2PageImagesInspected'] = True
+        self.assertTrue(any('overclaimed boundary puseyVol2PageImagesInspected' in e for e in self.errors(c)))
+        c2 = deepcopy(self.control)
+        c2['fullCyril1152FragmentGreekOriginalVerified'] = True
+        self.assertTrue(any('overclaimed boundary fullCyril1152FragmentGreekOriginalVerified' in e for e in self.errors(c2)))
+        c3 = deepcopy(self.control)
+        c3['c25'] = 'RESOLVED'
+        self.assertTrue(any('status/C25/O10/O11 boundary drift' in e for e in self.errors(c3)))
+
+    def test_cyril_five_locus_and_patristic_card_inventories_are_guarded(self):
+        c = deepcopy(self.control)
+        c['cyrilFiveLocusSynthesis'].pop('book7FragJohn11_44')
+        self.assertTrue(any('Cyril five-locus synthesis inventory drift' in e for e in self.errors(c)))
+        c2 = deepcopy(self.control)
+        c2['patristicOriginalVerifications'].pop('GRG-1')
+        self.assertTrue(any('patristic original verification inventory drift' in e for e in self.errors(c2)))
+
+    def test_actual_git_preimage_and_grg1_baseline_removal_enforced(self):
+        r = deepcopy(self.report)
+        r['wave9']['supersededSnapshots'][0]['sha256'] = '0' * 64
+        self.assertTrue(any('actual Git preimage mismatch' in e for e in self.errors(report=r)))
+        r2 = deepcopy(self.report)
+        row = next(x for x in r2['repairs'] if x['id'] == 'W9-F11')
+        self.assertTrue(row['rejectedWordingPresentInBaseline'])
+        row['rejectedWordingPresentInBaseline'] = False
+        self.assertTrue(any('invented historical error W9-F11' in e for e in self.errors(report=r2)))
+
+    def test_missing_escaped_and_corrupted_jpeg_replay_rejected(self):
+        with tempfile.TemporaryDirectory() as d:
+            errors = wave9.verify_sources(Path(d), self.control)
+            self.assertEqual(len(errors), 51)
+            self.assertTrue(all('missing/symlink file' in e for e in errors))
+        c = deepcopy(self.control)
+        c['files'][0]['externalRelativePath'] = '../escape'
+        with tempfile.TemporaryDirectory() as d:
+            self.assertTrue(any('path traversal' in e for e in wave9.verify_sources(Path(d), c)))
+        bad_bytes = b'NOT_A_JPEG_SCAN'
+        c2 = deepcopy(self.control)
+        for f in c2['files']:
+            f['bytes'] = len(bad_bytes)
+            f['sha256'] = wave9.digest(bad_bytes)
+            f['gitBlob'] = wave9.git_blob(bad_bytes)
+        with tempfile.TemporaryDirectory() as d:
+            base = Path(d)
+            for f in c2['files']:
+                p = base / f['externalRelativePath']
+                p.parent.mkdir(parents=True, exist_ok=True)
+                p.write_bytes(bad_bytes)
+            errors = wave9.verify_sources(base, c2)
+            self.assertEqual(len(errors), 21)
+            self.assertTrue(all('invalid JPEG markers' in e for e in errors))
+
+    def test_all_four_wave9_reviews_and_pipeline_entrypoints_are_wired(self):
+        for p in wave9.REGISTRIES:
+            review = json.loads((ROOT / 'ИСКУПЛЕНИЕ' / p).read_text(encoding='utf-8'))[wave9.REVIEW_KEY]
+            self.assertEqual(review['cramerCoislin23CatenaScanEvidenceClass'], 'A1')
+            self.assertTrue(review['coislin23AnonymousFor1152'])
+            self.assertEqual(review['puseyVol2DualOcrEvidenceClass'], 'C')
+            self.assertFalse(review['oratio4522GreekOcrQuoteSafe'])
+            self.assertFalse(review['puseyVol2PageImagesInspected'])
+            self.assertFalse(review['fullCyril1152FragmentGreekOriginalVerified'])
+            self.assertFalse(review['publicationEligible'])
+        self.assertIn('scripts/atonement_wave9_sources.py', reshoot.PIPELINE_FILES)
+        self.assertIn('check_wave9(root, report, wave9_control)', (ROOT / 'scripts/atonement_sync_check.py').read_text(encoding='utf-8'))
+        self.assertIn('"atonement_wave9_sources.py"', (ROOT / '.github/workflows/atonement-corpus-integrity.yml').read_text(encoding='utf-8'))
 
 
 if __name__ == "__main__":

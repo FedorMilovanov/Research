@@ -767,6 +767,36 @@
     "supersedesOnly": "Wave 7 open edition-mapping, apparatus-identification, and Syriac-medium questions for John 11:49-52; does not supersede visual scan verification of Pusey Vol. II pp. 294-296 or PG 74 cols. 69-70 and does not close O11 or C25.",
     "nextAction": "Acquire and visually inspect printed page images (not OCR) of Pusey 1872 Vol. II pp. 294-296 (operacyrilli04cyriuoft frames 306-308) and/or Migne PG 74 cols. 69-70 (patrologiaecurs25hopfgoog leaf 41), and evaluate the theological relationship between Book VII 11:44 and Book VI 10:14-15."
   },
+  "patristicScanAndCyrilComparisonWave9": {
+    "recordedAtUtc": "2026-11-04T09:00:00+00:00",
+    "controls": "ИСКУПЛЕНИЕ/evidence/source_controls_wave9_2026-11-03.json",
+    "status": "PATRISTIC_ORIGINALS_AND_CATENA_SCANS_VERIFIED_PUSEY_V2_1152_SCAN_OPEN",
+    "c25": "OPEN",
+    "o10": "CHRYSOSTOM_CATENA_SCAN_VERIFIED_HOMILY_OCR_COLLATED_DIRECT_PRINT_SCAN_OPEN",
+    "o11": "CYRIL_FIVE_LOCUS_COMPARISON_AND_COISLIN23_CATENA_SCAN_VERIFIED_PUSEY_V2_1152_SCAN_OPEN",
+    "visuallyInspectedA1PrintScans": 21,
+    "correctedA1TeiXmlObjects": 3,
+    "classCOcrAndJsonlObjects": 27,
+    "controlledArtifacts": 51,
+    "cyrilComparedLoci": 5,
+    "cramerCoislin23CatenaScanEvidenceClass": "A1",
+    "coislin23AnonymousFor1152": true,
+    "puseyVol1John1_11_13ScanEvidenceClass": "A1",
+    "puseyVol2DualOcrEvidenceClass": "C",
+    "mason1899Oratio30ScanEvidenceClass": "A1",
+    "oratio4522GreekOcrEvidenceClass": "C",
+    "oratio4522GreekOcrQuoteSafe": false,
+    "pl54AndPl75CorrectedTeiEvidenceClass": "A1",
+    "puseyVol2PageImagesInspected": false,
+    "mignePg74PageImagesInspected": false,
+    "fullCyril1152FragmentGreekOriginalVerified": false,
+    "publicationEligible": false,
+    "holds": [
+      "EVIDENCE_HOLD",
+      "PUBLICATION_HOLD"
+    ],
+    "summary": "Wave 9 verifies 21 visual A1 print scans, 3 corrected A1 TEI-XML editions (PL 54, PL 75, First1KGreek Or. 30), and 27 class-C OCR/JSONL witnesses without promoting OCR to VERIFIED_ORIGINAL. Cramer 1841 Vol. II p. 322 (Coislin 23 catena scan, A1) confirms the shorter anonymous scholion on John 11:51-52 displaced after John 12:8; Pusey 1872 Vol. II pp. 294-296 and PG 74 cols. 69-70 remain without page scans, keeping C-25 OPEN. Five-locus comparison of Cyril In Joannem (1:11-13 A1 scan; 8:46-47, 10:14-16, 11:44 C OCR with Praefatio p. ix rejecting the 691A paragraph; 11:49-52) confirms a two-register Johannine grammar (universal creator kinship versus eschatological adoption through faith). GRG-1 is repaired from PL 75 cols. 524C/612B/614A/642B (sine aestimatione dabatur percipi, Misertus ergo creator ut redimeret); LEO-1 (PL 54 + Greek column scans), NAZ-1 (Mason 1899 pp. 140-143 scans; Or. 45.22 remains class C), and CHR-2 (Cramer II p. 320 scan + Hom. 65 OCR) are bound to exact locators."
+  },
   "claimRegister20261026": {
     "чтоЭто": "реестр доводов лана «synthesis»: строка = раздел прозы уровня ## с локатором, классом из её собственных маркеров и отметкой съёма",
     "чтоСчитаетсяДоводом": "заголовок «## » в любом .md лана, включая вложенные папки (synthesis/drafts, ot/tools); тело секции — до следующего «## » или до конца файла",
@@ -4293,8 +4323,8 @@
     ],
     "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
     "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check synthesis",
-    "measuredAt": "2026-11-03T12:53:14Z",
-    "checkedAt": "2026-11-03T12:53:14Z",
-    "предыдущийСъём": "2026-11-03T12:50:19Z"
+    "measuredAt": "2026-11-03T22:36:42Z",
+    "checkedAt": "2026-11-03T22:36:42Z",
+    "предыдущийСъём": "2026-11-03T22:33:30Z"
   }
 }

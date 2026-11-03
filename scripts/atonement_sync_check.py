@@ -40,6 +40,7 @@ from atonement_wave5_sources import CONTROL as WAVE5_CONTROL, check_controls as 
 from atonement_wave6_sources import CONTROL as WAVE6_CONTROL, check_controls as check_wave6
 from atonement_wave7_sources import CONTROL as WAVE7_CONTROL, check_controls as check_wave7
 from atonement_wave8_sources import CONTROL as WAVE8_CONTROL, check_controls as check_wave8
+from atonement_wave9_sources import CONTROL as WAVE9_CONTROL, check_controls as check_wave9
 
 ROOT = Path(__file__).resolve().parents[1]
 EVIDENCE = "ИСКУПЛЕНИЕ/evidence"
@@ -284,6 +285,8 @@ def check(root: Path, report: dict, control: dict) -> tuple[list[str], dict]:
     errors += check_wave7(root, report, wave7_control)
     wave8_control = json.loads((root / WAVE8_CONTROL).read_text(encoding="utf-8"))
     errors += check_wave8(root, report, wave8_control)
+    wave9_control = json.loads((root / WAVE9_CONTROL).read_text(encoding="utf-8"))
+    errors += check_wave9(root, report, wave9_control)
     drafts = sorted((root / DRAFTS).glob("*.md"))
     if len(drafts) != report["draftCount"]:
         errors.append("draft inventory differs from the reviewed scope")
@@ -319,7 +322,12 @@ def check(root: Path, report: dict, control: dict) -> tuple[list[str], dict]:
                     "wave8ControlledArtifacts": len(wave8_control["files"]),
                     "wave8VisuallyInspectedA1Scans": wave8_control["statistics"]["visuallyInspectedA1PrintScans"],
                     "wave8GreekOriginalFor1152Verified": False,
-                    "wave8SourceReplay": "NOT_RUN"}
+                    "wave8SourceReplay": "NOT_RUN",
+                    "wave9ControlledArtifacts": len(wave9_control["files"]),
+                    "wave9VisuallyInspectedA1Scans": wave9_control["statistics"]["visuallyInspectedA1PrintScans"],
+                    "wave9CorrectedA1TeiXml": wave9_control["statistics"]["correctedA1TeiXmlObjects"],
+                    "wave9FullCyril1152GreekOriginalVerified": False,
+                    "wave9SourceReplay": "NOT_RUN"}
 
 
 def main() -> int:
