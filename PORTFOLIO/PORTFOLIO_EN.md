@@ -1,5 +1,7 @@
 # Portfolio (EN) — working draft
 
+> CI census updated: 221,596 GitHub Actions runs currently available via the API for ten repositories in 2026 through 2026-11-03 21:05:16 UTC. Other portfolio metrics retain their 2026-11-01 snapshot. Previously deleted runs are not recoverable. See CI_RUNS_2026-11-03.csv and tools/measure_ci_runs.py.
+
 > For an international audience: website, PDF, LinkedIn "About", or a cold outreach one-pager.
 > All figures verified on 1 November 2026 and reproducible from `VERIFICATION_LOG.md`. Deliberately explicit about AI use, third-party open source, and what is *not* mine.
 
@@ -38,7 +40,7 @@ Code and part of the media are AI-generated under my direction. Requirements, ar
 | | |
 |---|---|
 | 5 products live in production | 4 own domains |
-| 766,175 lines of application code under management (512,322 in six product repos; 824,453 including research validators) | 241 CI pipelines · 119,919 runs |
+| 766,175 lines of application code under management (512,322 in six product repos; 824,453 including research validators) | 241 CI pipelines · 221,596 runs |
 | 1,390 test and QA files | 20,990 commits in ten months |
 | Public editorial prose (exact word count unverified) | 2,076 research documents (Nov 1, 2026 snapshot) |
 
@@ -63,7 +65,7 @@ A public library built on years of exegetical research: 111 pages, 57 article ro
 
 **The honest boundary.** The speech engine and voice are the open-source `vosk-tts` project (Apache-2.0), not my work. Mine: the browser integration (on-demand ONNX model, IndexedDB cache, lazy init), the Russian stress layer over three sources, and differential tests against the Python package.
 
-**Scale.** 3,308 files · 84,800 LOC · 77 workflows · 40,000 CI runs.
+**Scale.** 3,308 files · 84,800 LOC · 77 workflows · 140,004 CI runs.
 
 ### 4.2 Poetry platform — [thelegendarypoet.ru](https://thelegendarypoet.ru)
 
@@ -71,7 +73,7 @@ React 19, TypeScript, Vite 7, Tailwind 4, Framer Motion: twelve poets, long-form
 
 **The engineering story.** `route-contract.json` is the single machine manifest for routes, redirects, sitemap, QA and budgets. A release workflow refuses to publish a track without a master file, hash and duration.
 
-**Scale.** 49,063 LOC · 23 workflows · 27,170 CI runs.
+**Scale.** 49,063 LOC · 23 workflows · 27,586 CI runs.
 
 ### 4.3 AI media pipeline — `mp3telegrambot`
 
@@ -98,7 +100,7 @@ Catalogue, price calculator, delivery, reviews, PWA, video gallery, and 14 geo l
 
 **The engineering story.** QA is the product: JS validation, accessibility, release identity by SHA, Lighthouse regressions and aggregation, security audit, suburb idempotency, Playwright desktop/mobile/responsive matrix, plus contracts proving the live 404 is a real 404 and that prices and hours match reality.
 
-**Scale.** 34 pages · 48,384 LOC · 111 PRs · 3,593 CI runs.
+**Scale.** 34 pages · 48,384 LOC · 111 PRs · 3,745 CI runs.
 
 ### 4.6 Editorial library, 157 sourced articles — [french.milovicake.ru](https://french.milovicake.ru)
 
