@@ -76,18 +76,19 @@ python3 PORTFOLIO/tools/check_claims.py
 | Профиль GitHub | **Опубликован** в [FedorMilovanov/FedorMilovanov](https://github.com/FedorMilovanov/FedorMilovanov); README доступен публично | Bio/website профиля и закрепление репозиториев требуют действий владельца через UI или дополнительного `user` scope; текущий CLI не имеет таких прав |
 | Описания и topics | **Закрыто 12/12:** авторизованный GitHub CLI выставил descriptions/topics для 11 основных репозиториев и `FedorMilovanov.github.io`, homepage 5/5; прежний `Milovi_Cake` description `Cakes site` заменён | проверять при изменении назначения проекта; не повторять уже выполненную волну |
 | Два английских README | **Завершено 2/2:** `video-channel-manager` [#757](https://github.com/FedorMilovanov/video-channel-manager/pull/757) и `mp3telegrambot` [#435](https://github.com/FedorMilovanov/mp3telegrambot/pull/435) в `main`; последний — после 8/8 успешных проверок | не создавать новые переводы/дубли, при изменении контракта синхронизировать оба языка |
-| `mp3telegrambot` CVE | **Закрыто в `main`:** узкий [#436](https://github.com/FedorMilovanov/mp3telegrambot/pull/436) поднял `pyasn1` до `0.6.5` (16/16 PR CI success), docs #435 влит. В действующей ветке Dependabot [#437](https://github.com/FedorMilovanov/mp3telegrambot/pull/437) исправлен воспроизводимый конфликт `google-genai==2.34.0` с `tenacity==9.2.1`: возвращён совместимый `tenacity==9.1.4` (`b912b9c`) | пакет из 40 обновлений и новый CI ещё нуждаются в окончательной сертификации; **не сливать до зелёного точного head** |
-| Приватный `sermon_MP3_bot` | [PR #1](https://github.com/FedorMilovanov/sermon_MP3_bot/pull/1) убрал отслеживаемый `cookies.txt` и добавил `.gitignore`, `main` проверен | исторические cookie-значения остаются в Git history; владелец должен отозвать связанные сессии, без этого нельзя называть remediation полной |
-| README/OWNER/ARCHITECTURE/CASE_STUDY/GLOSSARY | Шаблоны готовы в `AGENT_HANDOFF.md`, их массовое внедрение не подтверждено | послойная проверка каждого repo перед единственным PR, без пустых шаблонов |
+| `mp3telegrambot` зависимости и CVE | **Закрыто в `main`:** узкий [#436](https://github.com/FedorMilovanov/mp3telegrambot/pull/436) исправил `pyasn1`, а [Dependabot #437](https://github.com/FedorMilovanov/mp3telegrambot/pull/437) влит как [`c7f68cf`](https://github.com/FedorMilovanov/mp3telegrambot/commit/c7f68cf607d3a7aa2bb3c86a7eb422697e3a0289) после устранения несовместимости `google-genai`/`tenacity`, синхронизации с `main` и полного зелёного PR CI; **все 13 post-merge GitHub Actions runs завершились `success`** (проверено авторизованным `gh run list --commit`) | не повторять #436/#437; новые Dependabot PR рассматриваются отдельно и не сливаются без их собственных CI |
+| Приватный `sermon_MP3_bot` | После [#1](https://github.com/FedorMilovanov/sermon_MP3_bot/pull/1) отслеживаемые cookie удалены из `main`, но остались в истории; Dependabot vulnerability alerts **включены** | владелец обязан отозвать старые cookie-сессии у провайдера; private `main` branch protection GitHub отклонил `403 Upgrade to GitHub Pro or make this repository public`; **не делать репозиторий публичным** и не заявлять этот риск закрытым |
+| README/OWNER/ARCHITECTURE/CASE_STUDY/GLOSSARY | **Частично внедрено:** [gb-vosk-tts #3](https://github.com/FedorMilovanov/gb-vosk-tts/pull/3) влит как `2e36900` — в `main` появились `OWNER.md`, `ARCHITECTURE.md`, `CASE_STUDY.md`, уточнён README; 12 + 48 Node-тестов и PR/post-merge secret scan прошли. В остальных основных репозиториях массовое внедрение **не подтверждено** | проверять локальные `AGENTS.md`/authority, текущие PR и фактическое содержание до каждого единственного осмысленного docs PR; без пустых шаблонов и ложного авторства |
 | `.mailmap` | Массовое внедрение не подтверждено, спорный адрес требует подтверждения владельца | не приписывать авторство без сверки; не переписывать Git history |
 | Числовой срез | `METRICS.csv`, `CLAIMS.csv` и `VERIFICATION_LOG.md` относятся к **01.11.2026** | после завершения security-волны воспроизводимо пересчитать новые числа, обновить связанные документы и запустить `check_claims.py` |
-| Branch protection | **Проверено по GitHub API:** все 11 основных активных репозиториев + `FedorMilovanov.github.io` + профильный `FedorMilovanov` защищены (`main.protected=true` у 13/13). У `AuditRepo` уже была legacy protection с `validate`/`preflight`; 03.11 включены 4 недостающие защиты: `Research` (3 безусловных CI), `gb-vosk-tts` (`gitleaks`), redirect hub и профиль (PR-only) | `claims gate` в Research запускается лишь на PR с `PORTFOLIO/**` и не добавлен в global required checks; настройки не изменять без проверки контрактов других агентов |
+| Branch protection | **15/16 существующих default `main` защищены**, из них 13 основных/публичных проверены ранее, затем `baptist` и `baptist2` получили PR-only protection. `baptist---2` пустой и не имеет ветки; `sermon_MP3_bot` — единственное исключение (приватная ветка, ограничение тарифа GitHub Pro, API `403`). Ранее существующая legacy protection `AuditRepo` подтверждена (`validate`, `preflight`) | не подменять rulesets и checks фикцией, не отключать защиты ради мержа, не открывать доступ к приватному `sermon_MP3_bot` |
+| Dependabot vulnerability alerts | **17/17 включены и повторно проверены** через GitHub API, в том числе старые публичные, пустой профильный и приватный `sermon_MP3_bot` | это механизм оповещения, **не** свидетельство отсутствия CVE или права на автоматический merge |
 | Публичные метрики | Трафик, выручка и некоторые медиа-показатели не наблюдаются из GitHub; срез `CLAIMS.csv` сохранён на 01.11 | не заявлять недоказанные результаты |
 
 **Граница процентов (срез 03.11.2026):** конфигурационное покрытие Gitleaks **11/11 (100%)**
 среди определённых 11 основных репозиториев; приоритетные английские README — **2/2 (100%)**.
 Это **не** общий процент готовности портфолио и **не** утверждение о безопасности
-всех 16 аккаунтных репозиториев: исторические и пустые репозитории требуют отдельной
+всех 17 репозиториев аккаунта: исторические, приватные и пустые ветки требуют отдельной
 классификации. Метрики `METRICS.csv`/`CLAIMS.csv` сохраняют исторический срез 01.11.
 Общий достоверный процент невозможен без согласованных весов и полного повторного инвентаря.
 
@@ -114,12 +115,13 @@ python3 PORTFOLIO/tools/check_claims.py
 1. **Черновик** — текст есть, числа не сведены. Не публиковать.
 2. **Согласовано** — `check_claims.py` зелёный, все числа в реестре.
 3. **Готово к публикации** — плюс паритет RU/EN и отсутствие `UNPROVEN` в утвердительной форме.
-   **Сейчас здесь.**
+   **Документы исследования достигли этой стадии; часть материала уже опубликована на GitHub.**
 4. **Опубликовано** — материалы выложены (сайт, hh, LinkedIn, профиль-README) и ссылки
    на них добавлены в реестр. Требует действий владельца аккаунтов.
+   **Частично исполнено:** профильный README и ссылки на RU/EN-портфолио опубликованы в GitHub. Публикация на отдельном сайте/hh/LinkedIn не подтверждена; полную стадию 4 не заявлять.
 
 Разница между 3 и 4 — не качество текста, а факт публикации: портфолио в репозитории
-и портфолио, которое кто-то прочитал, — разные вещи, и второе этой сессией не
+и портфолио, которое размещено на внешних профессиональных площадках, — разные состояния, и второе этой сессией не
 достигается.
 
 ---
