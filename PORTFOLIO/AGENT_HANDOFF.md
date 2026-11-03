@@ -4,6 +4,16 @@
 
 **Владелец:** Фёдор Милованов (`FedorMilovanov`).
 **Срез фактов:** 1 ноября 2026, см. [`METRICS.csv`](METRICS.csv) и [`VERIFICATION_LOG.md`](VERIFICATION_LOG.md).
+
+> **Операционная поправка от 3 ноября 2026.** Этот документ остаётся исходным
+> планом и шаблонами, **но не живым списком незакрытых PR**. Перед любым новым
+> действием читать [`DEFINITION_OF_DONE.md` §3](DEFINITION_OF_DONE.md):
+> `video-channel-manager` [#755](https://github.com/FedorMilovanov/video-channel-manager/pull/755)
+> уже влит; защитные конфигурации присутствуют в `main` 10/11 обследованных
+> репозиториев; `DeepMovieReview` [#136](https://github.com/FedorMilovanov/DeepMovieReview/pull/136)
+> проходит CI на актуализированной базе. **Не повторять завершённую security-волну**,
+> не открывать конкурирующих PR на чужие ветки, не менять продуктовые/провайдерские данные.
+> Цифры из `METRICS.csv` — датированный срез 01.11, не live-счётчики.
 **Контекст:** [`AUDIT_RU.md`](AUDIT_RU.md), [`HISTORY_AND_PRINCIPLES.md`](HISTORY_AND_PRINCIPLES.md), [`PORTFOLIO_RU.md`](PORTFOLIO_RU.md).
 
 ---
