@@ -4665,7 +4665,7 @@
     }
   },
   "wave4": {
-    "status": "INTEGRATED_LOCAL_GATES_PASS_COMMIT_HISTORY_PUSH_PENDING",
+    "status": "INTEGRATED_LOCALLY_VERIFIED_NOT_MERGED",
     "baselineCommit": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
     "recordedAtUtc": "2026-11-03T00:49:19+00:00",
     "controls": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
@@ -5172,8 +5172,8 @@
       "humanReadingMeasured": false,
       "githubActionsClaimed": false,
       "publicationApproved": false,
-      "historyProbe": "NOT_YET_RUN_FOR_COMMITTED_WAVE4",
-      "landingProbe": "NOT_YET_RUN_FOR_COMMITTED_WAVE4"
+      "historyProbe": "PASS_ON_SUBSTANTIVE_COMMIT",
+      "landingProbe": "PASS_ON_SUBSTANTIVE_COMMIT"
     },
     "remaining": [
       {
@@ -5189,7 +5189,7 @@
       {
         "id": "PRINT-COLLATION",
         "state": "NOT_RUN",
-        "reason": "No new printed page/column or original-language Calvin/Alford collation."
+        "reason": "No new printed page/column collation. Calvin was read in the named English translation, not freshly collated to Latin/French; Alford’s displayed English/Greek commentary was not collated to a printed edition."
       },
       {
         "id": "WAVE3-RAW-REPLAY",
@@ -5259,6 +5259,120 @@
       "c25": "OPEN",
       "driveMirrorsUpdated": false,
       "publicationEligible": false
-    }
+    },
+    "postCommitVerification": {
+      "recordedAtUtc": "2026-11-03T01:34:26.894769+00:00",
+      "method": "Receipt recorded after checks completed. Exact substantive commit verified in a clean authoring checkout; local workflow-equivalent checks, separate history environments and detached-main overlay. This is a subsequent journal-only record, not a self-referential claim about the future receipt commit or GitHub Actions.",
+      "verifiedCommit": "30b8c3b63d59c28dfd3f9e5cc1addb6ecccc69e1",
+      "commitChangedFiles": 32,
+      "executionStartedAtUtc": "2026-11-03T01:30:41.781603+00:00",
+      "executionFinishedAtUtc": "2026-11-03T01:31:23.055774+00:00",
+      "localChecks": {
+        "expectedOutcomes": 17,
+        "allPassed": true,
+        "unitTestMethods": 104,
+        "newWave4TestMethods": 28,
+        "wave4ReversionSubcases": 22,
+        "reshooterMutationsCaught": 18,
+        "antiHollowAssertions": 37,
+        "byteReplay": "18 pinned files and 8 bounded extracts PASS"
+      },
+      "readOnly": {
+        "workspaceFiles": 2691,
+        "beforeSha256": "bed9aab507aefde90abcdc8a5aa4d3e94f401d4b760fe82b04904dddda88c746",
+        "afterSha256": "bed9aab507aefde90abcdc8a5aa4d3e94f401d4b760fe82b04904dddda88c746",
+        "changedFiles": [],
+        "cleanBefore": true
+      },
+      "receiptSha256": "2be1b8d60f6ade6be9610f226b7f5b11f473ff863380c8ce4357dd17c3d3d2a6",
+      "historyProbe": {
+        "commands": [
+          "python3 -B scripts/atonement_history_perturbation_probe.py --verdicts",
+          "python3 -B scripts/atonement_history_perturbation_probe.py HEAD --selftest"
+        ],
+        "exitCodes": [
+          0,
+          0
+        ],
+        "state": "PASS",
+        "observed": "E1/E2 unchanged valid numbers; E3 shallow/incomplete and E4 stale-main contexts refused with reasons; planted history-dependent count rejected. No changes to the authoring checkout.",
+        "verdictLogSha256": "d33e2e0c89ce62b69129dbac0c585f9efefad11eb56559738ca828d4b62b56da",
+        "selftestLogSha256": "d5c3c4e2d447abcf6a54bf877c17096c192c68293c920afb9962f2e2fb51c11d"
+      },
+      "landing": {
+        "candidateCommit": "30b8c3b63d59c28dfd3f9e5cc1addb6ecccc69e1",
+        "fetchedMainCommit": "ec722894e21b004900e9e44a2da9bdb9990f1f7c",
+        "overlaidFiles": 78,
+        "deletedFiles": 0,
+        "checks": [
+          {
+            "name": "integrity",
+            "command": [
+              "python3",
+              "-B",
+              "scripts/validate_atonement_corpus_integrity.py"
+            ],
+            "exitCode": 0,
+            "pass": true,
+            "logSha256": "a9ba8ccf0f6a916f4ccf8c44b97fa4df1a75f358b8f45cc45b43b7940a179e83"
+          },
+          {
+            "name": "sync",
+            "command": [
+              "python3",
+              "-B",
+              "scripts/atonement_sync_check.py"
+            ],
+            "exitCode": 0,
+            "pass": true,
+            "logSha256": "a851d5130812b4f9c8ea50b5d9a8b2b9d59e012d531b7194989aaa16be43eda4"
+          },
+          {
+            "name": "reshoot",
+            "command": [
+              "python3",
+              "-B",
+              "scripts/atonement_reshoot_state.py",
+              "--check"
+            ],
+            "exitCode": 0,
+            "pass": true,
+            "logSha256": "42220fecf0a8caeb2b97e0c21c2142733afa652691fe9ae1e98648784a7dbdfb"
+          },
+          {
+            "name": "claims",
+            "command": [
+              "python3",
+              "-B",
+              "scripts/atonement_claim_register.py",
+              "--check"
+            ],
+            "exitCode": 0,
+            "pass": true,
+            "logSha256": "0fbef3d738146d9ec77d2009d76dd07ba6e1575a05404362a070955c9aec76f9"
+          },
+          {
+            "name": "crossrefs",
+            "command": [
+              "python3",
+              "-B",
+              "scripts/atonement_crossref_audit.py",
+              "--check"
+            ],
+            "exitCode": 0,
+            "pass": true,
+            "logSha256": "edd3e4ed6d548561424ad7189dc7b5a214ee85e5f68df3a256e5f4a43c82602d"
+          }
+        ],
+        "method": "Overlay exact candidate Git blobs for all changed paths on a detached temporary main worktree; no merge. Main is the actual merge base, so no newer main-only files are overwritten. Run five named read-only checks, recheck candidate bytes, remove only the disposable worktree.",
+        "mergePerformed": false,
+        "receiptSha256": "89496f7e958ff27102017e76973d2895c4653271a6afbadb86c9406aefd5e219"
+      },
+      "githubActionsClaimed": false,
+      "publicationApproved": false,
+      "driveMirrorsUpdated": false,
+      "noFreshHistoricalSourceReplay": "Old 80 files / 221 extracts and Prokopenko PDF are not newly replayed; web hashes cover only retained rendered selections."
+    },
+    "nextSubstantiveStep": "Assess competing senses of children in the Johannine context; prioritize Cyril 1:12-13 and 10:16 while separately pursuing Greek/critical transmission. Do not replace interpretation with author-vote counts or another generic access inventory."
   }
 }
