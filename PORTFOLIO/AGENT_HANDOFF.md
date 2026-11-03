@@ -14,11 +14,13 @@
 > [#757](https://github.com/FedorMilovanov/video-channel-manager/pull/757),
 > `mp3telegrambot` [#435](https://github.com/FedorMilovanov/mp3telegrambot/pull/435).
 > `mp3telegrambot` `pyasn1` CVE закрыты узким [#436](https://github.com/FedorMilovanov/mp3telegrambot/pull/436),
-> #434 Dependabot закрыт/замещён новым #437 (40 обновлений), но его Python/Windows CI **красный**: не сливать без исправления.
+> #434 Dependabot закрыт/замещён #437 (40 обновлений): конфликт `google-genai` / `tenacity` исправлен узкой правкой существующей ветки (`b912b9c`). Новый CI ещё нужно дождаться и проверить: **не мержить красный или незавершённый head**.
 > **Не повторять** закрытые security/docs PR, не затрагивать чужие ветки;
 > не принимать отсутствие исключений/успех CI за разрешение provider writes.
 > Отдельное действие владельца: отозвать cookies из истории приватного
 > `sermon_MP3_bot` после [#1](https://github.com/FedorMilovanov/sermon_MP3_bot/pull/1).
+> Профиль [опубликован](https://github.com/FedorMilovanov/FedorMilovanov), descriptions/topics **12/12**, homepage **5/5**, `main` protection подтверждена для **13/13** выбранных активных публичных репозиториев. Эти операции не повторять.
+> Account bio/website и пины профиля требуют UI/`user` scope; отзыв cookie-сессий приватного `sermon_MP3_bot` выполняет владелец. Массовая документация репозиториев пока не сертифицирована.
 > Числа `METRICS.csv` — **исторический срез 01.11**, не live-счётчики.
 **Контекст:** [`AUDIT_RU.md`](AUDIT_RU.md), [`HISTORY_AND_PRINCIPLES.md`](HISTORY_AND_PRINCIPLES.md), [`PORTFOLIO_RU.md`](PORTFOLIO_RU.md).
 

@@ -6,8 +6,8 @@
 Короткий ответ: «всё» — это не «написано много текста», а **зелёный гейт плюс пустой
 список того, что ещё можно закрыть имеющимися данными**. Публикационная готовность
 текстов **не равна** завершению межрепозиторной программы: на 3 ноября 2026 года
-часть защитных изменений влита, но остаются PR, публикация профиля и упаковка
-репозиториев. Четыре `UNPROVEN`-утверждения — отдельная, честно ограниченная
+профиль уже опубликован, метаданные заполнены и защита основных `main` проверена,
+но остаются публикационные настройки, качество межрепозиторной документации и CI зависимостей. Четыре `UNPROVEN`-утверждения — отдельная, честно ограниченная
 доказательная граница, а не замена незавершённым действиям (§3).
 
 ---
@@ -43,7 +43,7 @@ python3 PORTFOLIO/tools/check_claims.py
 | `AUDIT_RU.md` | готов | 10 клонов, API, пересчёт всех чисел; 8 раундов проверки |
 | `PORTFOLIO_RU.md` | готов к публикации | все числа из реестра, паритет с EN |
 | `PORTFOLIO_EN.md` | готов к публикации | то же, плюс честный FAQ про ИИ и чужой TTS |
-| `PROFILE_README.md` | текст готов, **не опубликован** | черновик подготовлен; GitHub-репозиторий `FedorMilovanov/FedorMilovanov` на 03.11 отсутствует |
+| `PROFILE_README.md` | **опубликован** | [профильный репозиторий](https://github.com/FedorMilovanov/FedorMilovanov) создан публичным 03.11.2026, README в `main`; опубликованный текст очищен от плейсхолдеров и недоказанного числа слов |
 | `METRICS.csv` | готов | 15 строк, `data_as_of=2026-11-01` |
 | `MEDIA_PRACTICE.md` | готов | медиа-линия описана процессом, без счётчиков аудитории |
 | `HISTORY_AND_PRINCIPLES.md` | готов | 17 836 коммитов, хронология, словарь |
@@ -73,15 +73,16 @@ python3 PORTFOLIO/tools/check_claims.py
 | `video-channel-manager` — защитный контур и английский README | **Закрыто:** secret scan [#755](https://github.com/FedorMilovanov/video-channel-manager/pull/755), root `SECURITY.md` [#756](https://github.com/FedorMilovanov/video-channel-manager/pull/756), английский `README_EN.md` [#757](https://github.com/FedorMilovanov/video-channel-manager/pull/757) — все три в `main`; post-merge Gitleaks зелёный | не повторять завершённые патчи; отдельно от security продолжается неавторизованный к исполнению Telegram preflight |
 | Секрет-сканирование портфеля | **Завершено 11/11:** конфигурации Gitleaks в `main` всех 11 основных проверенных продуктовых/инфраструктурных репозиториев; [DeepMovieReview #136](https://github.com/FedorMilovanov/DeepMovieReview/pull/136) влит как `9f568ea`, отдельный post-merge Gitleaks успешен | это **покрытие проверками, не гарантия 0 секретов**; не создавать повторные security PR |
 | `DeepMovieReview` | **Закрыто:** [#136](https://github.com/FedorMilovanov/DeepMovieReview/pull/136) влит после 32 успешных PR checks + 1 neutral historical (Native iOS Safari в итоге прошёл); `main` secret scan успешен | флейки нативного iOS остаются самостоятельным CI-наблюдением, не поводом ослаблять gate; чужой draft #139 не затронут |
-| Профиль GitHub | `PROFILE_README.md` подготовлен, но `FedorMilovanov/FedorMilovanov` не существует | создать профильный репозиторий и опубликовать README через владельца/инструмент с правом управления репозиториями |
-| Описания и topics | В выборке GitHub metadata большинство описаний пусты, topics пустые; `Milovi_Cake` содержит устаревшее `Cakes site` | использовать `GITHUB_DISCOVERABILITY.md`; нужны repo administration права |
+| Профиль GitHub | **Опубликован** в [FedorMilovanov/FedorMilovanov](https://github.com/FedorMilovanov/FedorMilovanov); README доступен публично | Bio/website профиля и закрепление репозиториев требуют действий владельца через UI или дополнительного `user` scope; текущий CLI не имеет таких прав |
+| Описания и topics | **Закрыто 12/12:** авторизованный GitHub CLI выставил descriptions/topics для 11 основных репозиториев и `FedorMilovanov.github.io`, homepage 5/5; прежний `Milovi_Cake` description `Cakes site` заменён | проверять при изменении назначения проекта; не повторять уже выполненную волну |
 | Два английских README | **Завершено 2/2:** `video-channel-manager` [#757](https://github.com/FedorMilovanov/video-channel-manager/pull/757) и `mp3telegrambot` [#435](https://github.com/FedorMilovanov/mp3telegrambot/pull/435) в `main`; последний — после 8/8 успешных проверок | не создавать новые переводы/дубли, при изменении контракта синхронизировать оба языка |
-| `mp3telegrambot` CVE | **Закрыто в `main`:** [#436](https://github.com/FedorMilovanov/mp3telegrambot/pull/436) поднял единственный pin `pyasn1` до `0.6.5`, **16/16 PR CI success**; docs #435 затем влит | Dependabot #434 автоматически закрыт после hotfix; новый [#437](https://github.com/FedorMilovanov/mp3telegrambot/pull/437) содержит 40 других обновлений и имеет красные Python/Windows проверки; не сливать без исправления |
+| `mp3telegrambot` CVE | **Закрыто в `main`:** узкий [#436](https://github.com/FedorMilovanov/mp3telegrambot/pull/436) поднял `pyasn1` до `0.6.5` (16/16 PR CI success), docs #435 влит. В действующей ветке Dependabot [#437](https://github.com/FedorMilovanov/mp3telegrambot/pull/437) исправлен воспроизводимый конфликт `google-genai==2.34.0` с `tenacity==9.2.1`: возвращён совместимый `tenacity==9.1.4` (`b912b9c`) | пакет из 40 обновлений и новый CI ещё нуждаются в окончательной сертификации; **не сливать до зелёного точного head** |
 | Приватный `sermon_MP3_bot` | [PR #1](https://github.com/FedorMilovanov/sermon_MP3_bot/pull/1) убрал отслеживаемый `cookies.txt` и добавил `.gitignore`, `main` проверен | исторические cookie-значения остаются в Git history; владелец должен отозвать связанные сессии, без этого нельзя называть remediation полной |
 | README/OWNER/ARCHITECTURE/CASE_STUDY/GLOSSARY | Шаблоны готовы в `AGENT_HANDOFF.md`, их массовое внедрение не подтверждено | послойная проверка каждого repo перед единственным PR, без пустых шаблонов |
 | `.mailmap` | Массовое внедрение не подтверждено, спорный адрес требует подтверждения владельца | не приписывать авторство без сверки; не переписывать Git history |
 | Числовой срез | `METRICS.csv`, `CLAIMS.csv` и `VERIFICATION_LOG.md` относятся к **01.11.2026** | после завершения security-волны воспроизводимо пересчитать новые числа, обновить связанные документы и запустить `check_claims.py` |
-| Branch protection / публичные метрики | Ограничены доступом к настройкам/аналитике и статусом `UNPROVEN` | не заявлять непроверенное; выделить владельцу только реально требующиеся действия |
+| Branch protection | **Проверено по GitHub API:** все 11 основных активных репозиториев + `FedorMilovanov.github.io` + профильный `FedorMilovanov` защищены (`main.protected=true` у 13/13). У `AuditRepo` уже была legacy protection с `validate`/`preflight`; 03.11 включены 4 недостающие защиты: `Research` (3 безусловных CI), `gb-vosk-tts` (`gitleaks`), redirect hub и профиль (PR-only) | `claims gate` в Research запускается лишь на PR с `PORTFOLIO/**` и не добавлен в global required checks; настройки не изменять без проверки контрактов других агентов |
+| Публичные метрики | Трафик, выручка и некоторые медиа-показатели не наблюдаются из GitHub; срез `CLAIMS.csv` сохранён на 01.11 | не заявлять недоказанные результаты |
 
 **Граница процентов (срез 03.11.2026):** конфигурационное покрытие Gitleaks **11/11 (100%)**
 среди определённых 11 основных репозиториев; приоритетные английские README — **2/2 (100%)**.
@@ -98,7 +99,7 @@ python3 PORTFOLIO/tools/check_claims.py
 |---|---|
 | ≈365 000 слов авторской прозы | оценка методом извлечения текста, погрешность ±15 %; точный подсчёт потребовал бы разметки страниц |
 | Доля зелёных прогонов CI | `actions/runs` зажимает `total_count` на 2 500, полной выборки не существует |
-| Branch protection и rulesets | API отдаёт `403 Resource not accessible by integration` |
+| Branch protection и rulesets | GitHub App в историческом срезе возвращал `403`, но 03.11 авторизованный пользовательский `gh` позволил **проверить и установить** реальную legacy branch protection для 13/13 выбранных репозиториев. Запись `UNPROVEN` в старом CSV не является текущим статусом |
 | Трафик и выручка | нет доступа к аналитике; в портфолио не заявляются |
 
 Правило простое: если утверждение нельзя проверить, оно либо помечено `UNPROVEN`,
