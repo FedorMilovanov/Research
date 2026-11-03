@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "registryId": "SUNO-HYMNS-SOURCE-REGISTRY-V1",
- "asOf": "2026-10-26",
+ "asOf": "2026-11-03",
  "note": "Project-local source inventory. The repository root evidence policy remains controlling; source class and operational states are separate. For a historical source served through a modern digital presentation, evidenceClass describes the underlying source when stated, while accessState and rightsState describe what is actually accessed and can be reused.",
  "fields": [
   "evidenceClass",
@@ -3091,6 +3091,188 @@
     "**Образец протестантского приговора, приведённый самим Шумейкером:** Генрих Эвальд, отзыв 1865 г. на издание Райта — «this book has become from the first the firm foundation for all the unhappy adoration of Mary… The whole cultus of Mary in the Papal Church rests upon this book; we might search in vain for any other foundation to it». Шумейкер добавляет: «his anti-Catholicism was conspicuous»."
    ],
    "limits": "Прочитаны чанки 0, 2–4 из 12: введение, переход к «Liber Requiei», разбор ходатайства в «Liber Requiei», переход к «Шестикнижному сказанию». **Не прочитаны** чанки 5–11: литургический чин «Шестикнижного сказания» и прямые слова Епифания о коллиридианах («On a certain day of the year…» известны мне только по поисковой выдаче). Номера страниц в PDF не извлечены."
+  },
+  {
+   "id": "SRC-PHOS-VRG-AUG372",
+   "title": "Августин Гиппонский, Проповедь 372 — цитата шестой строфы с именем Амвросия",
+   "url": "https://www.hymnologyarchive.com/veni-redemptor-gentium",
+   "type": "Патристическая проповедь, цитируемая во вторичной публикации с точным локатором",
+   "evidenceClass": "B1",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "RIGHTS_UNKNOWN",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "RIGHTS_HOLD"
+   ],
+   "supports": [
+    "Цитата шестой строфы целиком: «Egressus eius a Patre, regressus eius ad Patrem, excursus usque ad inferos, recursus ad sedem Dei»",
+    "Имя автора названо: «cecinit beatus Ambrosius in hymno»",
+    "Ключевые слова «quem paulo ante cantastis» — «который вы только что пели»: свидетельство о пении в собрании"
+   ],
+   "limits": "Проповедь 372 прочитана в цитате, а не по изданию целиком; латинская форма цитаты взята из вторичной публикации и по критическому изданию не сверена."
+  },
+  {
+   "id": "SRC-PHOS-VRG-CELEST430",
+   "title": "Келестин I, собор в Риме, 430 г. — цитата второй строфы с указанием на Амвросия",
+   "url": "https://www.hymnologyarchive.com/veni-redemptor-gentium",
+   "type": "Соборное определение / папское послание, цитируемое во вторичной публикации",
+   "evidenceClass": "B1",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "RIGHTS_UNKNOWN",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "RIGHTS_HOLD"
+   ],
+   "supports": [
+    "Цитата второй строфы: «Veni, Redemptor gentium, ostende partum Virginis, miretur omne saeculum, talis decet partus Deum»",
+    "Свидетельство о пении общиной: «omnem fecisse populum una voce Deo canere» — заставил весь народ единым голосом петь Богу",
+    "Указание повода: день Рождества Господня; независимо от Августина"
+   ],
+   "limits": "Текст соборного акта прочитан в цитате во вторичной публикации; по изданию актов не сверен; дата 430 г. принята по этой же передаче."
+  },
+  {
+   "id": "SRC-PHOS-VRG-FONTAINE",
+   "title": "Жак Фонтен, «Ambroise de Milan: Hymnes» (Paris: Les Éditions du Cerf, 1992), с. 266–275",
+   "url": "https://www.hymnologyarchive.com/veni-redemptor-gentium",
+   "type": "Критическое издание с комментарием — названо, но НЕ открыто",
+   "evidenceClass": "A2",
+   "accessState": "CATALOG_ONLY",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "PERMISSION_REQUIRED",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "ARCHIVE_HOLD",
+    "RIGHTS_HOLD"
+   ],
+   "supports": [
+    "Латинский текст восьми строф в проекте приведён по передаче, опирающейся на это издание",
+    "Аргумент Фонтена в защиту первой строфы передан: она опущена в двух третях свидетелей, но не опущена ни одним миланским и не опущена древнейшим",
+    "Фонтен отвергает аргумент от умолчания Келестина: папа цитировал вторую строфу в полемике с несторианами, а не потому, что не знал первой",
+    "Локатор точен и проверен по библиографической записи: издание 1992 г., с. 266–275; самой книги в работе нет"
+   ],
+   "limits": "Издание 1992 г. НЕ открыто. Все суждения об атрибуции первой строфы — по вторичной передаче с точной ссылкой на страницу; собственные слова Фонтена не проверены."
+  },
+  {
+   "id": "SRC-PHOS-VRG-VATREG11",
+   "title": "Biblioteca Apostolica Vaticana, Reg. lat. 11, л. 233r — древнейший список гимна, 2-я половина VIII в.",
+   "url": "https://www.hymnologyarchive.com/veni-redemptor-gentium",
+   "type": "Рукопись, описанная в каталоге; факсимиле не открывалось",
+   "evidenceClass": "A1",
+   "accessState": "CATALOG_ONLY",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "RIGHTS_UNKNOWN",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "LOCATOR_HOLD",
+    "RIGHTS_HOLD"
+   ],
+   "supports": [
+    "Древнейший сохранившийся список гимна",
+    "Восемь строф; начинается «Intende qui regis Israel»",
+    "Побочная находка: тот же кодекс уже значится свидетелем Te Deum в проекте (Reg. lat. 11, л. 230v, середина VIII в.) — три листа разницы"
+   ],
+   "limits": "Факсимиле не открывалось; лист описан по вторичному источнику. Чтения не сверены."
+  },
+  {
+   "id": "SRC-PHOS-VRG-B3",
+   "title": "Universitätsbibliothek Düsseldorf, MS B-3, л. 269r, ок. 810–829 — древнейший список семистрофной формы",
+   "url": "https://www.hymnologyarchive.com/veni-redemptor-gentium",
+   "type": "Рукопись, описанная в каталоге; факсимиле не открывалось",
+   "evidenceClass": "A1",
+   "accessState": "CATALOG_ONLY",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "RIGHTS_UNKNOWN",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "LOCATOR_HOLD",
+    "RIGHTS_HOLD"
+   ],
+   "supports": [
+    "Древнейший известный список формы БЕЗ псалмовой первой строфы",
+    "Семь строф; начинается прямо «Veni redemptor gentium»",
+    "Доказывает, что семистрофная форма — выбор самой рукописной традиции с IX в., а не наша правка"
+   ],
+   "limits": "Факсимиле не открывалось; датировка ок. 810–829 принята по вторичному описанию."
+  },
+  {
+   "id": "SRC-PHOS-VRG-GRMS2017",
+   "title": "«Ambrosian Hymns: Evidence for Roman Music of Late Antiquity?», Greek and Roman Musical Studies 5/1 (2017), 104–122",
+   "url": "https://brill.com/view/journals/grms/5/1/article-p104_7.xml",
+   "type": "Научная статья в рецензируемом журнале; прочитана в аннотации и выдержках",
+   "evidenceClass": "A2",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "PERMISSION_REQUIRED",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "RIGHTS_HOLD"
+   ],
+   "supports": [
+    "Решающее свидетельство о мелодии: «As the ancient notation fell into disuse in the 6th century AD, the melodies of the Ambrosian hymns were transmitted orally until the 10th century»",
+    "«They appear in the medieval manuscripts with neumatic or alphabetic notation, but without rhythmical values and adorned by rich melismata, which mirror the predilections of each monastic community»",
+    "Амвросий создал metrum Ambrosianum из ямбического диметра по образцу четырёхстиший Горация (с. 104)",
+    "Отсюда следует, что максимальная аутентичность требует НЕ брать дошедший напев XII в."
+   ],
+   "limits": "Статья прочитана в аннотации и выдержках, не целиком; статья за paywall, полный текст не получен. Вывод о силлабическом характере подлинного исполнения — умозаключение от метра, а не прямое свидетельство источника."
+  },
+  {
+   "id": "SRC-PHOS-VRG-BNF12044",
+   "title": "BnF, Paris, Latin 12044, л. 7v, XII в. — мелодический инципит",
+   "url": "https://www.hymnologyarchive.com/veni-redemptor-gentium",
+   "type": "Нотная рукопись, описанная в каталоге",
+   "evidenceClass": "A1",
+   "accessState": "CATALOG_ONLY",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "RIGHTS_UNKNOWN",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "LOCATOR_HOLD",
+    "RIGHTS_HOLD"
+   ],
+   "supports": [
+    "Свидетельство напева: только первые три слова и мелодическое начало"
+   ],
+   "limits": "Факсимиле не открывалось; объём свидетельства минимален — инципит, а не полная мелодия."
+  },
+  {
+   "id": "SRC-PHOS-VRG-BNF15181",
+   "title": "BnF, Paris, Latin 15181, л. 157r, ок. 1300 — полная мелодия, бревиарий Нотр-Дам",
+   "url": "https://www.hymnologyarchive.com/veni-redemptor-gentium",
+   "type": "Нотная рукопись, описанная в каталоге",
+   "evidenceClass": "A1",
+   "accessState": "CATALOG_ONLY",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "RIGHTS_UNKNOWN",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "LOCATOR_HOLD",
+    "RIGHTS_HOLD"
+   ],
+   "supports": [
+    "Полная запись мелодии; семь строф; бревиарий, сделанный для Нотр-Дам в Париже"
+   ],
+   "limits": "Факсимиле не открывалось; Мелодия на девятьсот лет моложе текста и, по GRMS 2017, несёт поздние мелизмы — брать её за аутентичную нельзя."
+  },
+  {
+   "id": "SRC-PHOS-VRG-EINS121",
+   "title": "Stiftsbibliothek Einsiedeln, Codex 121, ок. 1120 — древнейшее свидетельство напева",
+   "url": "https://www.hymnologyarchive.com/veni-redemptor-gentium",
+   "type": "Нотная рукопись, описанная в каталоге",
+   "evidenceClass": "A1",
+   "accessState": "CATALOG_ONLY",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "RIGHTS_UNKNOWN",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "LOCATOR_HOLD",
+    "RIGHTS_HOLD"
+   ],
+   "supports": [
+    "Древнейшее документальное свидетельство григорианского напева гимна"
+   ],
+   "limits": "Факсимиле не открывалось; между смертью Амвросия (397) и этим списком — около семисот лет, из которых четыреста без нотации вовсе."
   }
  ]
 }
