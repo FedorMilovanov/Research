@@ -1,0 +1,1085 @@
+{
+  "schemaVersion": 1,
+  "recordedAtUtc": "2026-11-03T08:11:17.617328+00:00",
+  "recordingTimeMeaning": "Retention time, not exact reading/fetch instants; task date 2026-11-03 UTC. Historical UTC timestamps unchanged.",
+  "c25": "OPEN",
+  "interpretationStatus": "ARGUED_PROVISIONAL_NOT_MACHINE_PROOF",
+  "workingPreference": "Gathered believing people of God across nations as referent of John11:52; election/prolepsis can coexist. This is weighed contextual interpretation, not lexical proof, exclusion of all other purposes of death, or erasure of the published Cyril creation reading.",
+  "sources": [
+    {
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "BLOCKED",
+      "contextVerified": true,
+      "quoteSafe": true,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "originalGreekRead": false,
+      "id": "CYRIL-CONTEXTS",
+      "version": "LFC 43/48 (1874/1885), P. E. Pusey / T. Randell, Book I pp. 102-108 and Book VI vol.1 pp.657-664 / vol.2 pp.78-91; CCEL/Pearse 2005 transcription, not printed-image collation.",
+      "readingScope": "Complete displayed ad 1:11-13, 8:46-49, 10:14-17; neighbouring context and header/footer. Not the complete books. Modern 10:14b-15 begins under translator-added heading 15.",
+      "quoteSafeScope": "Selected wording and distinctions in the identified English translation, not a Greek wording claim, full-work doctrine or printed page verification.",
+      "textCompleteness": "SELECTED_CONTINUOUS_COMMENTARY_CONTEXTS",
+      "rightsBasis": "This text was transcribed by Roger Pearse, Ipswich, UK, 2005. All material on this page is in the public domain - copy freely.",
+      "evidenceRefs": [
+        "CYRIL-JN1",
+        "CYRIL-JN10",
+        "CYRIL-JN8"
+      ]
+    },
+    {
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "BLOCKED",
+      "contextVerified": true,
+      "quoteSafe": true,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "originalGreekRead": false,
+      "id": "CYRIL-FRAGMENT-REVIEW",
+      "version": "Extant fragments of Book VII, T. Randell, LFC vol.2 pp.131-134, CCEL/Pearse 2005. Same transmission as wave4, not an independent witness.",
+      "readingScope": "Displayed ad 11:44 and complete 11:49-52, with 45-48/53-54 and preceding general-resurrection analogy; header/footer. Not all of Book VII.",
+      "quoteSafeScope": "What the published attributed fragments say, with translation/transmission qualification; no independent authentication or forced harmonization of 11:44 with Book VI.",
+      "textCompleteness": "EXTANT_FRAGMENT",
+      "attribution": "PUBLISHED_UNDER_CYRIL_NOT_INDEPENDENTLY_AUTHENTICATED",
+      "rightsBasis": "This text was transcribed by Roger Pearse, Ipswich, UK, 2005. All material on this page is in the public domain - copy freely.",
+      "evidenceRefs": [
+        "CYRIL-JN11-44",
+        "CYRIL-JN11-52"
+      ]
+    },
+    {
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "contextVerified": true,
+      "quoteSafe": true,
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "originalGreekRead": true,
+      "id": "JOHANNINE-TEXT",
+      "version": "SBLGNT in morphgnt/py-sblgnt @ 904fed08a14bffea6e1776d8c4c3eeb7c6092688; eight-column files, surface text column 5, lemma column 8.",
+      "readingScope": "John 1:9-18; 5:24-29; 8:31-47; 10:11-18,22-30; 11:45-57; 12:20-36; 17:6-26. 1 John 2:28-29; 3:1-10; 5:1-5. Selected contexts read, not whole books; full-file query is mechanical.",
+      "quoteSafeScope": "Selected Greek verses of this digital edition, not manuscript collation or Cyril original-language verification.",
+      "rightsBasis": "Actual README read: Greek text SBLGNT EULA, parsing/lemmatization CC BY-SA 3.0, code MIT; morphgnt/sblgnt remains authoritative data source. Linked EULA not freshly fetched/read; no new rights clearance.",
+      "eulaNewlyRead": false,
+      "evidenceRefs": [
+        "1JN2",
+        "1JN3",
+        "1JN5",
+        "JN1",
+        "JN10A",
+        "JN10B",
+        "JN11",
+        "JN12",
+        "JN17",
+        "JN5",
+        "JN8",
+        "NT-1JOHN",
+        "NT-JOHN",
+        "PY-SBLGNT-README"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "id": "NT-JOHN",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "path": "pysblgnt/sblgnt/64-Jn-morphgnt.txt",
+      "gitBlob": "2c1af0f23f5c1a1bf4c9da9afe7e480ca4a6e8c7",
+      "sha256": "5ca99310a5766110c79f09f500a9ffd897bae1b5471863c20266c5e18f7798c7",
+      "bytes": 1065501,
+      "externalRelativePath": "morphgnt--py-sblgnt/pysblgnt/sblgnt/64-Jn-morphgnt.txt",
+      "sourceUrl": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/64-Jn-morphgnt.txt",
+      "byteVerifiedAtUtc": "2026-11-03T07:51:46.141914+00:00",
+      "role": "PRIMARY_GREEK_BIBLICAL_TEXT"
+    },
+    {
+      "id": "NT-1JOHN",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "path": "pysblgnt/sblgnt/83-1Jn-morphgnt.txt",
+      "gitBlob": "fcb917048d5328a859b24714ef5731c7b6dd2791",
+      "sha256": "a4168a2128c0f3d634c191cbd6b5ac09532877e2ecb1dd801f0a45efb430aa0c",
+      "bytes": 144567,
+      "externalRelativePath": "morphgnt--py-sblgnt/pysblgnt/sblgnt/83-1Jn-morphgnt.txt",
+      "sourceUrl": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/83-1Jn-morphgnt.txt",
+      "byteVerifiedAtUtc": "2026-11-03T07:51:46.526438+00:00",
+      "role": "PRIMARY_GREEK_BIBLICAL_TEXT"
+    },
+    {
+      "id": "PY-SBLGNT-README",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "path": "README.md",
+      "gitBlob": "c231c7c24085162fbdc20721eb568ada7b355a92",
+      "sha256": "eb3b7c36b95004747e59efd8c269fc7dbb1b46b15a5559b4adb4574b22423264",
+      "bytes": 1577,
+      "externalRelativePath": "morphgnt--py-sblgnt/README.md",
+      "sourceUrl": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/README.md",
+      "byteVerifiedAtUtc": "2026-11-03T07:51:46.811788+00:00",
+      "role": "METADATA_NOT_CYRIL_JOHN_TEXT"
+    },
+    {
+      "id": "FIRST1K-CYRIL-METADATA",
+      "repo": "OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "path": "data/tlg4090/tlg001/__cts__.xml",
+      "gitBlob": "d89f3f2b0db98ef45de08433bbb36892a0b15819",
+      "sha256": "eb1dfbfe1d4515e65cdc301bcea67ba3b7e76b2a6a66335cca8bd855e3548e84",
+      "bytes": 598,
+      "externalRelativePath": "OpenGreekAndLatin--First1KGreek/data/tlg4090/tlg001/__cts__.xml",
+      "sourceUrl": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg4090/tlg001/__cts__.xml",
+      "byteVerifiedAtUtc": "2026-11-03T07:51:47.133793+00:00",
+      "role": "METADATA_NOT_CYRIL_JOHN_TEXT"
+    }
+  ],
+  "greekContexts": [
+    {
+      "id": "JN1",
+      "sourceFile": "NT-JOHN",
+      "chapter": 1,
+      "firstVerse": 9,
+      "lastVerse": 18,
+      "verses": [
+        {
+          "ref": "040109",
+          "text": "ἦν τὸ φῶς τὸ ἀληθινὸν ὃ φωτίζει πάντα ἄνθρωπον ἐρχόμενον εἰς τὸν κόσμον."
+        },
+        {
+          "ref": "040110",
+          "text": "Ἐν τῷ κόσμῳ ἦν, καὶ ὁ κόσμος δι’ αὐτοῦ ἐγένετο, καὶ ὁ κόσμος αὐτὸν οὐκ ἔγνω."
+        },
+        {
+          "ref": "040111",
+          "text": "εἰς τὰ ἴδια ἦλθεν, καὶ οἱ ἴδιοι αὐτὸν οὐ παρέλαβον."
+        },
+        {
+          "ref": "040112",
+          "text": "ὅσοι δὲ ἔλαβον αὐτόν, ἔδωκεν αὐτοῖς ἐξουσίαν τέκνα θεοῦ γενέσθαι, τοῖς πιστεύουσιν εἰς τὸ ὄνομα αὐτοῦ,"
+        },
+        {
+          "ref": "040113",
+          "text": "οἳ οὐκ ἐξ αἱμάτων οὐδὲ ἐκ θελήματος σαρκὸς οὐδὲ ἐκ θελήματος ἀνδρὸς ἀλλ’ ἐκ θεοῦ ἐγεννήθησαν."
+        },
+        {
+          "ref": "040114",
+          "text": "Καὶ ὁ λόγος σὰρξ ἐγένετο καὶ ἐσκήνωσεν ἐν ἡμῖν, καὶ ἐθεασάμεθα τὴν δόξαν αὐτοῦ, δόξαν ὡς μονογενοῦς παρὰ πατρός, πλήρης χάριτος καὶ ἀληθείας·"
+        },
+        {
+          "ref": "040115",
+          "text": "(Ἰωάννης μαρτυρεῖ περὶ αὐτοῦ καὶ κέκραγεν λέγων· Οὗτος ἦν ⸂ὃν εἶπον⸃· Ὁ ὀπίσω μου ἐρχόμενος ἔμπροσθέν μου γέγονεν, ὅτι πρῶτός μου ἦν·)"
+        },
+        {
+          "ref": "040116",
+          "text": "⸀ὅτι ἐκ τοῦ πληρώματος αὐτοῦ ἡμεῖς πάντες ἐλάβομεν, καὶ χάριν ἀντὶ χάριτος·"
+        },
+        {
+          "ref": "040117",
+          "text": "ὅτι ὁ νόμος διὰ Μωϋσέως ἐδόθη, ἡ χάρις καὶ ἡ ἀλήθεια διὰ Ἰησοῦ Χριστοῦ ἐγένετο."
+        },
+        {
+          "ref": "040118",
+          "text": "θεὸν οὐδεὶς ἑώρακεν πώποτε· ⸂μονογενὴς θεὸς⸃ ὁ ὢν εἰς τὸν κόλπον τοῦ πατρὸς ἐκεῖνος ἐξηγήσατο."
+        }
+      ],
+      "textSha256": "ffff2d8e07dbd6832c1c52c252aec8068834d313c4249be5e3a9fd6ed358304d"
+    },
+    {
+      "id": "JN5",
+      "sourceFile": "NT-JOHN",
+      "chapter": 5,
+      "firstVerse": 24,
+      "lastVerse": 29,
+      "verses": [
+        {
+          "ref": "040524",
+          "text": "Ἀμὴν ἀμὴν λέγω ὑμῖν ὅτι ὁ τὸν λόγον μου ἀκούων καὶ πιστεύων τῷ πέμψαντί με ἔχει ζωὴν αἰώνιον, καὶ εἰς κρίσιν οὐκ ἔρχεται ἀλλὰ μεταβέβηκεν ἐκ τοῦ θανάτου εἰς τὴν ζωήν."
+        },
+        {
+          "ref": "040525",
+          "text": "Ἀμὴν ἀμὴν λέγω ὑμῖν ὅτι ἔρχεται ὥρα καὶ νῦν ἐστιν ὅτε οἱ νεκροὶ ⸀ἀκούσουσιν τῆς φωνῆς τοῦ υἱοῦ τοῦ θεοῦ καὶ οἱ ἀκούσαντες ⸀ζήσουσιν."
+        },
+        {
+          "ref": "040526",
+          "text": "ὥσπερ γὰρ ὁ πατὴρ ἔχει ζωὴν ἐν ἑαυτῷ, οὕτως ⸂καὶ τῷ υἱῷ ἔδωκεν⸃ ζωὴν ἔχειν ἐν ἑαυτῷ·"
+        },
+        {
+          "ref": "040527",
+          "text": "καὶ ἐξουσίαν ἔδωκεν ⸀αὐτῷ κρίσιν ποιεῖν, ὅτι υἱὸς ἀνθρώπου ἐστίν."
+        },
+        {
+          "ref": "040528",
+          "text": "μὴ θαυμάζετε τοῦτο, ὅτι ἔρχεται ὥρα ἐν ᾗ πάντες οἱ ἐν τοῖς μνημείοις ⸀ἀκούσουσιν τῆς φωνῆς αὐτοῦ"
+        },
+        {
+          "ref": "040529",
+          "text": "καὶ ἐκπορεύσονται οἱ τὰ ἀγαθὰ ποιήσαντες εἰς ἀνάστασιν ζωῆς, οἱ ⸀δὲ τὰ φαῦλα πράξαντες εἰς ἀνάστασιν κρίσεως."
+        }
+      ],
+      "textSha256": "3af00936abe2202605cde9998a2c1259fbd0f07b03ac0217aaed291da4c1f106"
+    },
+    {
+      "id": "JN8",
+      "sourceFile": "NT-JOHN",
+      "chapter": 8,
+      "firstVerse": 31,
+      "lastVerse": 47,
+      "verses": [
+        {
+          "ref": "040831",
+          "text": "Ἔλεγεν οὖν ὁ Ἰησοῦς πρὸς τοὺς πεπιστευκότας αὐτῷ Ἰουδαίους· Ἐὰν ὑμεῖς μείνητε ἐν τῷ λόγῳ τῷ ἐμῷ, ἀληθῶς μαθηταί μού ἐστε,"
+        },
+        {
+          "ref": "040832",
+          "text": "καὶ γνώσεσθε τὴν ἀλήθειαν, καὶ ἡ ἀλήθεια ἐλευθερώσει ὑμᾶς."
+        },
+        {
+          "ref": "040833",
+          "text": "ἀπεκρίθησαν ⸂πρὸς αὐτόν⸃· Σπέρμα Ἀβραάμ ἐσμεν καὶ οὐδενὶ δεδουλεύκαμεν πώποτε· πῶς σὺ λέγεις ὅτι Ἐλεύθεροι γενήσεσθε;"
+        },
+        {
+          "ref": "040834",
+          "text": "Ἀπεκρίθη αὐτοῖς ὁ Ἰησοῦς· Ἀμὴν ἀμὴν λέγω ὑμῖν ὅτι πᾶς ὁ ποιῶν τὴν ἁμαρτίαν δοῦλός ἐστιν τῆς ἁμαρτίας·"
+        },
+        {
+          "ref": "040835",
+          "text": "ὁ δὲ δοῦλος οὐ μένει ἐν τῇ οἰκίᾳ εἰς τὸν αἰῶνα· ⸀ὁ υἱὸς μένει εἰς τὸν αἰῶνα."
+        },
+        {
+          "ref": "040836",
+          "text": "ἐὰν οὖν ὁ υἱὸς ὑμᾶς ἐλευθερώσῃ, ὄντως ἐλεύθεροι ἔσεσθε."
+        },
+        {
+          "ref": "040837",
+          "text": "οἶδα ὅτι σπέρμα Ἀβραάμ ἐστε· ἀλλὰ ζητεῖτέ με ἀποκτεῖναι, ὅτι ὁ λόγος ὁ ἐμὸς οὐ χωρεῖ ἐν ὑμῖν."
+        },
+        {
+          "ref": "040838",
+          "text": "⸂ἃ ἐγὼ⸃ ἑώρακα παρὰ τῷ ⸀πατρὶ λαλῶ· καὶ ὑμεῖς οὖν ⸂ἃ ἠκούσατε⸃ παρὰ ⸂τοῦ πατρὸς⸃ ποιεῖτε."
+        },
+        {
+          "ref": "040839",
+          "text": "Ἀπεκρίθησαν καὶ εἶπαν αὐτῷ· Ὁ πατὴρ ἡμῶν Ἀβραάμ ἐστιν. λέγει αὐτοῖς ὁ Ἰησοῦς· Εἰ τέκνα τοῦ Ἀβραάμ ⸀ἐστε, τὰ ἔργα τοῦ Ἀβραὰμ ⸀ἐποιεῖτε·"
+        },
+        {
+          "ref": "040840",
+          "text": "νῦν δὲ ζητεῖτέ με ἀποκτεῖναι, ἄνθρωπον ὃς τὴν ἀλήθειαν ὑμῖν λελάληκα ἣν ἤκουσα παρὰ τοῦ θεοῦ· τοῦτο Ἀβραὰμ οὐκ ἐποίησεν."
+        },
+        {
+          "ref": "040841",
+          "text": "ὑμεῖς ποιεῖτε τὰ ἔργα τοῦ πατρὸς ὑμῶν. ⸀εἶπαν αὐτῷ· Ἡμεῖς ἐκ πορνείας ⸂οὐ γεγεννήμεθα⸃· ἕνα πατέρα ἔχομεν τὸν θεόν."
+        },
+        {
+          "ref": "040842",
+          "text": "⸀εἶπεν αὐτοῖς ὁ Ἰησοῦς· Εἰ ὁ θεὸς πατὴρ ὑμῶν ἦν ἠγαπᾶτε ἂν ἐμέ, ἐγὼ γὰρ ἐκ τοῦ θεοῦ ἐξῆλθον καὶ ἥκω· οὐδὲ γὰρ ἀπ’ ἐμαυτοῦ ἐλήλυθα, ἀλλ’ ἐκεῖνός με ἀπέστειλεν."
+        },
+        {
+          "ref": "040843",
+          "text": "διὰ τί τὴν λαλιὰν τὴν ἐμὴν οὐ γινώσκετε; ὅτι οὐ δύνασθε ἀκούειν τὸν λόγον τὸν ἐμόν."
+        },
+        {
+          "ref": "040844",
+          "text": "ὑμεῖς ἐκ τοῦ πατρὸς τοῦ διαβόλου ἐστὲ καὶ τὰς ἐπιθυμίας τοῦ πατρὸς ὑμῶν θέλετε ποιεῖν. ἐκεῖνος ἀνθρωποκτόνος ἦν ἀπ’ ἀρχῆς, καὶ ἐν τῇ ἀληθείᾳ ⸂οὐκ ἔστηκεν⸃, ὅτι οὐκ ἔστιν ἀλήθεια ἐν αὐτῷ. ὅταν λαλῇ τὸ ψεῦδος, ἐκ τῶν ἰδίων λαλεῖ, ὅτι ψεύστης ἐστὶν καὶ ὁ πατὴρ αὐτοῦ."
+        },
+        {
+          "ref": "040845",
+          "text": "ἐγὼ δὲ ὅτι τὴν ἀλήθειαν λέγω, οὐ πιστεύετέ μοι."
+        },
+        {
+          "ref": "040846",
+          "text": "τίς ἐξ ὑμῶν ἐλέγχει με περὶ ἁμαρτίας; ⸀εἰ ἀλήθειαν λέγω, διὰ τί ὑμεῖς οὐ πιστεύετέ μοι;"
+        },
+        {
+          "ref": "040847",
+          "text": "ὁ ὢν ἐκ τοῦ θεοῦ τὰ ῥήματα τοῦ θεοῦ ἀκούει· διὰ τοῦτο ὑμεῖς οὐκ ἀκούετε ὅτι ἐκ τοῦ θεοῦ οὐκ ἐστέ."
+        }
+      ],
+      "textSha256": "a0f0e93b9f57ef36001da5c6fb6f34b9f608ada3578dd1c76d9b5e99a3e84faa"
+    },
+    {
+      "id": "JN10A",
+      "sourceFile": "NT-JOHN",
+      "chapter": 10,
+      "firstVerse": 11,
+      "lastVerse": 18,
+      "verses": [
+        {
+          "ref": "041011",
+          "text": "Ἐγώ εἰμι ὁ ποιμὴν ὁ καλός· ὁ ποιμὴν ὁ καλὸς τὴν ψυχὴν αὐτοῦ τίθησιν ὑπὲρ τῶν προβάτων·"
+        },
+        {
+          "ref": "041012",
+          "text": "ὁ ⸀μισθωτὸς καὶ οὐκ ὢν ποιμήν, οὗ οὐκ ⸀ἔστιν τὰ πρόβατα ἴδια, θεωρεῖ τὸν λύκον ἐρχόμενον καὶ ἀφίησιν τὰ πρόβατα καὶ φεύγει— καὶ ὁ λύκος ἁρπάζει αὐτὰ καὶ ⸀σκορπίζει—"
+        },
+        {
+          "ref": "041013",
+          "text": "⸀ὅτι μισθωτός ἐστιν καὶ οὐ μέλει αὐτῷ περὶ τῶν προβάτων."
+        },
+        {
+          "ref": "041014",
+          "text": "ἐγώ εἰμι ὁ ποιμὴν ὁ καλός, καὶ γινώσκω τὰ ἐμὰ καὶ ⸂γινώσκουσί με τὰ ἐμά⸃,"
+        },
+        {
+          "ref": "041015",
+          "text": "καθὼς γινώσκει με ὁ πατὴρ κἀγὼ γινώσκω τὸν πατέρα, καὶ τὴν ψυχήν μου τίθημι ὑπὲρ τῶν προβάτων."
+        },
+        {
+          "ref": "041016",
+          "text": "καὶ ἄλλα πρόβατα ἔχω ἃ οὐκ ἔστιν ἐκ τῆς αὐλῆς ταύτης· κἀκεῖνα ⸂δεῖ με⸃ ἀγαγεῖν, καὶ τῆς φωνῆς μου ἀκούσουσιν, καὶ ⸀γενήσονται μία ποίμνη, εἷς ποιμήν."
+        },
+        {
+          "ref": "041017",
+          "text": "διὰ τοῦτό ⸂με ὁ πατὴρ⸃ ἀγαπᾷ ὅτι ἐγὼ τίθημι τὴν ψυχήν μου, ἵνα πάλιν λάβω αὐτήν."
+        },
+        {
+          "ref": "041018",
+          "text": "οὐδεὶς ⸀αἴρει αὐτὴν ἀπ’ ἐμοῦ, ἀλλ’ ἐγὼ τίθημι αὐτὴν ἀπ’ ἐμαυτοῦ. ἐξουσίαν ἔχω θεῖναι αὐτήν, καὶ ἐξουσίαν ἔχω πάλιν λαβεῖν αὐτήν· ταύτην τὴν ἐντολὴν ἔλαβον παρὰ τοῦ πατρός μου."
+        }
+      ],
+      "textSha256": "7323cc399f6ec9459b9cdbede945a3e4c307e04ece974d2e37a0e9f6a9f61658"
+    },
+    {
+      "id": "JN10B",
+      "sourceFile": "NT-JOHN",
+      "chapter": 10,
+      "firstVerse": 22,
+      "lastVerse": 30,
+      "verses": [
+        {
+          "ref": "041022",
+          "text": "Ἐγένετο ⸀τότε τὰ ἐγκαίνια ἐν ⸀τοῖς Ἱεροσολύμοις· ⸀χειμὼν ἦν,"
+        },
+        {
+          "ref": "041023",
+          "text": "καὶ περιεπάτει ὁ Ἰησοῦς ἐν τῷ ἱερῷ ἐν τῇ στοᾷ ⸀τοῦ Σολομῶνος."
+        },
+        {
+          "ref": "041024",
+          "text": "ἐκύκλωσαν οὖν αὐτὸν οἱ Ἰουδαῖοι καὶ ἔλεγον αὐτῷ· Ἕως πότε τὴν ψυχὴν ἡμῶν αἴρεις; εἰ σὺ εἶ ὁ χριστός, εἰπὲ ἡμῖν παρρησίᾳ."
+        },
+        {
+          "ref": "041025",
+          "text": "ἀπεκρίθη αὐτοῖς ὁ Ἰησοῦς· Εἶπον ὑμῖν καὶ οὐ πιστεύετε· τὰ ἔργα ἃ ἐγὼ ποιῶ ἐν τῷ ὀνόματι τοῦ πατρός μου ταῦτα μαρτυρεῖ περὶ ἐμοῦ·"
+        },
+        {
+          "ref": "041026",
+          "text": "ἀλλὰ ὑμεῖς οὐ πιστεύετε, ⸂ὅτι οὐκ⸃ ἐστὲ ἐκ τῶν προβάτων τῶν ⸀ἐμῶν."
+        },
+        {
+          "ref": "041027",
+          "text": "τὰ πρόβατα τὰ ἐμὰ τῆς φωνῆς μου ⸀ἀκούουσιν, κἀγὼ γινώσκω αὐτά, καὶ ἀκολουθοῦσίν μοι,"
+        },
+        {
+          "ref": "041028",
+          "text": "κἀγὼ ⸂δίδωμι αὐτοῖς ζωὴν αἰώνιον⸃, καὶ οὐ μὴ ἀπόλωνται εἰς τὸν αἰῶνα, καὶ οὐχ ἁρπάσει τις αὐτὰ ἐκ τῆς χειρός μου."
+        },
+        {
+          "ref": "041029",
+          "text": "ὁ πατήρ μου ⸀ὃ δέδωκέν ⸀μοι ⸂πάντων μεῖζων⸃ ἐστιν, καὶ οὐδεὶς δύναται ἁρπάζειν ἐκ τῆς χειρὸς τοῦ ⸀πατρός."
+        },
+        {
+          "ref": "041030",
+          "text": "ἐγὼ καὶ ὁ πατὴρ ἕν ἐσμεν."
+        }
+      ],
+      "textSha256": "9627ea99dcc9b815372bf4a742f390af963aeabd345b39f9de46a24c5809890b"
+    },
+    {
+      "id": "JN11",
+      "sourceFile": "NT-JOHN",
+      "chapter": 11,
+      "firstVerse": 45,
+      "lastVerse": 57,
+      "verses": [
+        {
+          "ref": "041145",
+          "text": "Πολλοὶ οὖν ἐκ τῶν Ἰουδαίων, οἱ ἐλθόντες πρὸς τὴν ⸀Μαριὰμ καὶ θεασάμενοι ⸀ἃ ⸀ἐποίησεν, ἐπίστευσαν εἰς αὐτόν·"
+        },
+        {
+          "ref": "041146",
+          "text": "τινὲς δὲ ἐξ αὐτῶν ἀπῆλθον πρὸς τοὺς Φαρισαίους καὶ εἶπαν αὐτοῖς ἃ ⸀ἐποίησεν Ἰησοῦς."
+        },
+        {
+          "ref": "041147",
+          "text": "συνήγαγον οὖν οἱ ἀρχιερεῖς καὶ οἱ Φαρισαῖοι συνέδριον, καὶ ἔλεγον· Τί ποιοῦμεν ὅτι οὗτος ὁ ἄνθρωπος πολλὰ ⸂ποιεῖ σημεῖα⸃;"
+        },
+        {
+          "ref": "041148",
+          "text": "ἐὰν ἀφῶμεν αὐτὸν οὕτως, πάντες πιστεύσουσιν εἰς αὐτόν, καὶ ἐλεύσονται οἱ Ῥωμαῖοι καὶ ἀροῦσιν ἡμῶν καὶ τὸν τόπον καὶ τὸ ἔθνος."
+        },
+        {
+          "ref": "041149",
+          "text": "εἷς δέ τις ἐξ αὐτῶν Καϊάφας, ἀρχιερεὺς ὢν τοῦ ἐνιαυτοῦ ἐκείνου, εἶπεν αὐτοῖς· Ὑμεῖς οὐκ οἴδατε οὐδέν,"
+        },
+        {
+          "ref": "041150",
+          "text": "οὐδὲ ⸀λογίζεσθε ὅτι συμφέρει ⸀ὑμῖν ἵνα εἷς ἄνθρωπος ἀποθάνῃ ὑπὲρ τοῦ λαοῦ καὶ μὴ ὅλον τὸ ἔθνος ἀπόληται."
+        },
+        {
+          "ref": "041151",
+          "text": "τοῦτο δὲ ἀφ’ ἑαυτοῦ οὐκ εἶπεν, ἀλλὰ ἀρχιερεὺς ὢν τοῦ ἐνιαυτοῦ ἐκείνου ἐπροφήτευσεν ὅτι ἔμελλεν Ἰησοῦς ἀποθνῄσκειν ὑπὲρ τοῦ ἔθνους,"
+        },
+        {
+          "ref": "041152",
+          "text": "καὶ οὐχ ὑπὲρ τοῦ ἔθνους μόνον, ἀλλ’ ἵνα καὶ τὰ τέκνα τοῦ θεοῦ τὰ διεσκορπισμένα συναγάγῃ εἰς ἕν."
+        },
+        {
+          "ref": "041153",
+          "text": "ἀπ’ ἐκείνης οὖν τῆς ἡμέρας ⸀ἐβουλεύσαντο ἵνα ἀποκτείνωσιν αὐτόν."
+        },
+        {
+          "ref": "041154",
+          "text": "⸂Ὁ οὖν Ἰησοῦς⸃ οὐκέτι παρρησίᾳ περιεπάτει ἐν τοῖς Ἰουδαίοις, ἀλλὰ ἀπῆλθεν ἐκεῖθεν εἰς τὴν χώραν ἐγγὺς τῆς ἐρήμου, εἰς Ἐφραὶμ λεγομένην πόλιν, κἀκεῖ ⸀ἔμεινεν μετὰ τῶν ⸀μαθητῶν."
+        },
+        {
+          "ref": "041155",
+          "text": "Ἦν δὲ ἐγγὺς τὸ πάσχα τῶν Ἰουδαίων, καὶ ἀνέβησαν πολλοὶ εἰς Ἱεροσόλυμα ἐκ τῆς χώρας πρὸ τοῦ πάσχα ἵνα ἁγνίσωσιν ἑαυτούς."
+        },
+        {
+          "ref": "041156",
+          "text": "ἐζήτουν οὖν τὸν Ἰησοῦν καὶ ἔλεγον μετ’ ἀλλήλων ἐν τῷ ἱερῷ ἑστηκότες· Τί δοκεῖ ὑμῖν; ὅτι οὐ μὴ ἔλθῃ εἰς τὴν ἑορτήν;"
+        },
+        {
+          "ref": "041157",
+          "text": "δεδώκεισαν ⸀δὲ οἱ ἀρχιερεῖς καὶ οἱ Φαρισαῖοι ⸀ἐντολὰς ἵνα ἐάν τις γνῷ ποῦ ἐστιν μηνύσῃ, ὅπως πιάσωσιν αὐτόν."
+        }
+      ],
+      "textSha256": "42080016d9d225ef05eb70aa6963e589e8a006fb57d44e3fdab693ab00f07234"
+    },
+    {
+      "id": "JN12",
+      "sourceFile": "NT-JOHN",
+      "chapter": 12,
+      "firstVerse": 20,
+      "lastVerse": 36,
+      "verses": [
+        {
+          "ref": "041220",
+          "text": "Ἦσαν δὲ ⸂Ἕλληνές τινες⸃ ἐκ τῶν ἀναβαινόντων ἵνα προσκυνήσωσιν ἐν τῇ ἑορτῇ·"
+        },
+        {
+          "ref": "041221",
+          "text": "οὗτοι οὖν προσῆλθον Φιλίππῳ τῷ ἀπὸ Βηθσαϊδὰ τῆς Γαλιλαίας, καὶ ἠρώτων αὐτὸν λέγοντες· Κύριε, θέλομεν τὸν Ἰησοῦν ἰδεῖν."
+        },
+        {
+          "ref": "041222",
+          "text": "ἔρχεται ⸀ὁ Φίλιππος καὶ λέγει τῷ Ἀνδρέᾳ· ⸀ἔρχεται Ἀνδρέας καὶ Φίλιππος ⸀καὶ λέγουσιν τῷ Ἰησοῦ."
+        },
+        {
+          "ref": "041223",
+          "text": "ὁ δὲ Ἰησοῦς ⸀ἀποκρίνεται αὐτοῖς λέγων· Ἐλήλυθεν ἡ ὥρα ἵνα δοξασθῇ ὁ υἱὸς τοῦ ἀνθρώπου."
+        },
+        {
+          "ref": "041224",
+          "text": "ἀμὴν ἀμὴν λέγω ὑμῖν, ἐὰν μὴ ὁ κόκκος τοῦ σίτου πεσὼν εἰς τὴν γῆν ἀποθάνῃ, αὐτὸς μόνος μένει· ἐὰν δὲ ἀποθάνῃ, πολὺν καρπὸν φέρει."
+        },
+        {
+          "ref": "041225",
+          "text": "ὁ φιλῶν τὴν ψυχὴν αὐτοῦ ⸀ἀπολλύει αὐτήν, καὶ ὁ μισῶν τὴν ψυχὴν αὐτοῦ ἐν τῷ κόσμῳ τούτῳ εἰς ζωὴν αἰώνιον φυλάξει αὐτήν."
+        },
+        {
+          "ref": "041226",
+          "text": "ἐὰν ἐμοί ⸂τις διακονῇ⸃ ἐμοὶ ἀκολουθείτω, καὶ ὅπου εἰμὶ ἐγὼ ἐκεῖ καὶ ὁ διάκονος ὁ ἐμὸς ἔσται· ⸀ἐάν τις ἐμοὶ διακονῇ τιμήσει αὐτὸν ὁ πατήρ."
+        },
+        {
+          "ref": "041227",
+          "text": "Νῦν ἡ ψυχή μου τετάρακται, καὶ τί εἴπω; πάτερ, σῶσόν με ἐκ τῆς ὥρας ταύτης. ἀλλὰ διὰ τοῦτο ἦλθον εἰς τὴν ὥραν ταύτην."
+        },
+        {
+          "ref": "041228",
+          "text": "πάτερ, δόξασόν σου τὸ ὄνομα. ἦλθεν οὖν φωνὴ ἐκ τοῦ οὐρανοῦ· Καὶ ἐδόξασα καὶ πάλιν δοξάσω."
+        },
+        {
+          "ref": "041229",
+          "text": "ὁ οὖν ὄχλος ὁ ἑστὼς καὶ ἀκούσας ἔλεγεν βροντὴν γεγονέναι· ἄλλοι ἔλεγον· Ἄγγελος αὐτῷ λελάληκεν."
+        },
+        {
+          "ref": "041230",
+          "text": "ἀπεκρίθη ⸂Ἰησοῦς καὶ εἶπεν⸃· Οὐ δι’ ἐμὲ ⸂ἡ φωνὴ αὕτη⸃ γέγονεν ἀλλὰ δι’ ὑμᾶς."
+        },
+        {
+          "ref": "041231",
+          "text": "νῦν κρίσις ἐστὶν τοῦ κόσμου τούτου, νῦν ὁ ἄρχων τοῦ κόσμου τούτου ἐκβληθήσεται ἔξω·"
+        },
+        {
+          "ref": "041232",
+          "text": "κἀγὼ ⸀ἐὰν ὑψωθῶ ἐκ τῆς γῆς, πάντας ἑλκύσω πρὸς ἐμαυτόν."
+        },
+        {
+          "ref": "041233",
+          "text": "τοῦτο δὲ ἔλεγεν σημαίνων ποίῳ θανάτῳ ἤμελλεν ἀποθνῄσκειν."
+        },
+        {
+          "ref": "041234",
+          "text": "ἀπεκρίθη ⸀οὖν αὐτῷ ὁ ὄχλος· Ἡμεῖς ἠκούσαμεν ἐκ τοῦ νόμου ὅτι ὁ χριστὸς μένει εἰς τὸν αἰῶνα, καὶ πῶς ⸂λέγεις σὺ⸃ ⸀ὅτι δεῖ ὑψωθῆναι τὸν υἱὸν τοῦ ἀνθρώπου; τίς ἐστιν οὗτος ὁ υἱὸς τοῦ ἀνθρώπου;"
+        },
+        {
+          "ref": "041235",
+          "text": "εἶπεν οὖν αὐτοῖς ὁ Ἰησοῦς· Ἔτι μικρὸν χρόνον τὸ φῶς ⸂ἐν ὑμῖν⸃ ἐστιν. περιπατεῖτε ⸀ὡς τὸ φῶς ἔχετε, ἵνα μὴ σκοτία ὑμᾶς καταλάβῃ, καὶ ὁ περιπατῶν ἐν τῇ σκοτίᾳ οὐκ οἶδεν ποῦ ὑπάγει."
+        },
+        {
+          "ref": "041236",
+          "text": "⸀ὡς τὸ φῶς ἔχετε, πιστεύετε εἰς τὸ φῶς, ἵνα υἱοὶ φωτὸς γένησθε. Ταῦτα ⸀ἐλάλησεν Ἰησοῦς, καὶ ἀπελθὼν ἐκρύβη ἀπ’ αὐτῶν."
+        }
+      ],
+      "textSha256": "69c8d346afdeac911452ee6e23338aece708d06bfd643e1d13908319ef2268d1"
+    },
+    {
+      "id": "JN17",
+      "sourceFile": "NT-JOHN",
+      "chapter": 17,
+      "firstVerse": 6,
+      "lastVerse": 26,
+      "verses": [
+        {
+          "ref": "041706",
+          "text": "Ἐφανέρωσά σου τὸ ὄνομα τοῖς ἀνθρώποις οὓς ⸀ἔδωκάς μοι ἐκ τοῦ κόσμου. σοὶ ἦσαν κἀμοὶ αὐτοὺς ⸁ἔδωκας, καὶ τὸν λόγον σου τετήρηκαν."
+        },
+        {
+          "ref": "041707",
+          "text": "νῦν ἔγνωκαν ὅτι πάντα ὅσα ⸀δέδωκάς μοι παρὰ σοῦ ⸀εἰσιν·"
+        },
+        {
+          "ref": "041708",
+          "text": "ὅτι τὰ ῥήματα ἃ ⸀ἔδωκάς μοι δέδωκα αὐτοῖς, καὶ αὐτοὶ ἔλαβον καὶ ἔγνωσαν ἀληθῶς ὅτι παρὰ σοῦ ἐξῆλθον, καὶ ἐπίστευσαν ὅτι σύ με ἀπέστειλας."
+        },
+        {
+          "ref": "041709",
+          "text": "ἐγὼ περὶ αὐτῶν ἐρωτῶ· οὐ περὶ τοῦ κόσμου ἐρωτῶ ἀλλὰ περὶ ὧν δέδωκάς μοι, ὅτι σοί εἰσιν,"
+        },
+        {
+          "ref": "041710",
+          "text": "καὶ τὰ ἐμὰ πάντα σά ἐστιν καὶ τὰ σὰ ἐμά, καὶ δεδόξασμαι ἐν αὐτοῖς."
+        },
+        {
+          "ref": "041711",
+          "text": "καὶ οὐκέτι εἰμὶ ἐν τῷ κόσμῳ, καὶ ⸀αὐτοὶ ἐν τῷ κόσμῳ εἰσίν, κἀγὼ πρὸς σὲ ἔρχομαι. πάτερ ἅγιε, τήρησον αὐτοὺς ἐν τῷ ὀνόματί σου ᾧ δέδωκάς μοι, ἵνα ὦσιν ἓν ⸀καθὼς ἡμεῖς."
+        },
+        {
+          "ref": "041712",
+          "text": "ὅτε ἤμην μετ’ ⸀αὐτῶν ἐγὼ ἐτήρουν αὐτοὺς ἐν τῷ ὀνόματί σου ⸀ᾧ δέδωκάς μοι, ⸀καὶ ἐφύλαξα, καὶ οὐδεὶς ἐξ αὐτῶν ἀπώλετο εἰ μὴ ὁ υἱὸς τῆς ἀπωλείας, ἵνα ἡ γραφὴ πληρωθῇ."
+        },
+        {
+          "ref": "041713",
+          "text": "νῦν δὲ πρὸς σὲ ἔρχομαι, καὶ ταῦτα λαλῶ ἐν τῷ κόσμῳ ἵνα ἔχωσιν τὴν χαρὰν τὴν ἐμὴν πεπληρωμένην ἐν ⸀ἑαυτοῖς."
+        },
+        {
+          "ref": "041714",
+          "text": "ἐγὼ δέδωκα αὐτοῖς τὸν λόγον σου, καὶ ὁ κόσμος ἐμίσησεν αὐτούς, ὅτι οὐκ εἰσὶν ἐκ τοῦ κόσμου καθὼς ἐγὼ οὐκ εἰμὶ ἐκ τοῦ κόσμου."
+        },
+        {
+          "ref": "041715",
+          "text": "οὐκ ἐρωτῶ ἵνα ἄρῃς αὐτοὺς ἐκ τοῦ κόσμου ἀλλ’ ἵνα τηρήσῃς αὐτοὺς ἐκ τοῦ πονηροῦ."
+        },
+        {
+          "ref": "041716",
+          "text": "ἐκ τοῦ κόσμου οὐκ εἰσὶν καθὼς ἐγὼ ⸂οὐκ εἰμὶ ἐκ τοῦ κόσμου⸃."
+        },
+        {
+          "ref": "041717",
+          "text": "ἁγίασον αὐτοὺς ἐν τῇ ⸀ἀληθείᾳ· ὁ λόγος ὁ σὸς ἀλήθειά ἐστιν."
+        },
+        {
+          "ref": "041718",
+          "text": "καθὼς ἐμὲ ἀπέστειλας εἰς τὸν κόσμον, κἀγὼ ἀπέστειλα αὐτοὺς εἰς τὸν κόσμον·"
+        },
+        {
+          "ref": "041719",
+          "text": "καὶ ὑπὲρ αὐτῶν ἐγὼ ἁγιάζω ἐμαυτόν, ἵνα ⸂ὦσιν καὶ αὐτοὶ⸃ ἡγιασμένοι ἐν ἀληθείᾳ."
+        },
+        {
+          "ref": "041720",
+          "text": "Οὐ περὶ τούτων δὲ ἐρωτῶ μόνον, ἀλλὰ καὶ περὶ τῶν πιστευόντων διὰ τοῦ λόγου αὐτῶν εἰς ἐμέ,"
+        },
+        {
+          "ref": "041721",
+          "text": "ἵνα πάντες ἓν ὦσιν, καθὼς σύ, ⸀πάτερ, ἐν ἐμοὶ κἀγὼ ἐν σοί, ἵνα καὶ αὐτοὶ ἐν ⸀ἡμῖν ὦσιν, ἵνα ὁ κόσμος ⸀πιστεύῃ ὅτι σύ με ἀπέστειλας."
+        },
+        {
+          "ref": "041722",
+          "text": "κἀγὼ τὴν δόξαν ἣν δέδωκάς μοι δέδωκα αὐτοῖς, ἵνα ὦσιν ἓν καθὼς ἡμεῖς ⸀ἕν,"
+        },
+        {
+          "ref": "041723",
+          "text": "ἐγὼ ἐν αὐτοῖς καὶ σὺ ἐν ἐμοί, ἵνα ὦσιν τετελειωμένοι εἰς ἕν, ⸀ἵνα γινώσκῃ ὁ κόσμος ὅτι σύ με ἀπέστειλας καὶ ἠγάπησας αὐτοὺς καθὼς ἐμὲ ἠγάπησας."
+        },
+        {
+          "ref": "041724",
+          "text": "⸀πάτερ, ⸀ὃ δέδωκάς μοι, θέλω ἵνα ὅπου εἰμὶ ἐγὼ κἀκεῖνοι ὦσιν μετ’ ἐμοῦ, ἵνα θεωρῶσιν τὴν δόξαν τὴν ἐμὴν ἣν ⸀δέδωκάς μοι, ὅτι ἠγάπησάς με πρὸ καταβολῆς κόσμου."
+        },
+        {
+          "ref": "041725",
+          "text": "⸀Πάτερ δίκαιε, καὶ ὁ κόσμος σε οὐκ ἔγνω, ἐγὼ δέ σε ἔγνων, καὶ οὗτοι ἔγνωσαν ὅτι σύ με ἀπέστειλας,"
+        },
+        {
+          "ref": "041726",
+          "text": "καὶ ἐγνώρισα αὐτοῖς τὸ ὄνομά σου καὶ γνωρίσω, ἵνα ἡ ἀγάπη ἣν ἠγάπησάς με ἐν αὐτοῖς ᾖ κἀγὼ ἐν αὐτοῖς."
+        }
+      ],
+      "textSha256": "9a616559b3990c40acb2d2be707e07b5dc09780e324a144e16840f971597515d"
+    },
+    {
+      "id": "1JN2",
+      "sourceFile": "NT-1JOHN",
+      "chapter": 2,
+      "firstVerse": 28,
+      "lastVerse": 29,
+      "verses": [
+        {
+          "ref": "230228",
+          "text": "Καὶ νῦν, τεκνία, μένετε ἐν αὐτῷ, ἵνα ⸀ἐὰν φανερωθῇ ⸀σχῶμεν παρρησίαν καὶ μὴ αἰσχυνθῶμεν ἀπ’ αὐτοῦ ἐν τῇ παρουσίᾳ αὐτοῦ."
+        },
+        {
+          "ref": "230229",
+          "text": "ἐὰν εἰδῆτε ὅτι δίκαιός ἐστιν, γινώσκετε ⸀ὅτι πᾶς ὁ ποιῶν τὴν δικαιοσύνην ἐξ αὐτοῦ γεγέννηται."
+        }
+      ],
+      "textSha256": "2fa0ca896de67617dc5a5718fc768e9f069e4d60b8168b416013014996141396"
+    },
+    {
+      "id": "1JN3",
+      "sourceFile": "NT-1JOHN",
+      "chapter": 3,
+      "firstVerse": 1,
+      "lastVerse": 10,
+      "verses": [
+        {
+          "ref": "230301",
+          "text": "ἴδετε ποταπὴν ἀγάπην δέδωκεν ἡμῖν ὁ πατὴρ ἵνα τέκνα θεοῦ κληθῶμεν, ⸂καὶ ἐσμέν⸃. διὰ τοῦτο ὁ κόσμος οὐ γινώσκει ⸀ἡμᾶς ὅτι οὐκ ἔγνω αὐτόν."
+        },
+        {
+          "ref": "230302",
+          "text": "ἀγαπητοί, νῦν τέκνα θεοῦ ἐσμεν, καὶ οὔπω ἐφανερώθη τί ἐσόμεθα. ⸀οἴδαμεν ὅτι ἐὰν φανερωθῇ ὅμοιοι αὐτῷ ἐσόμεθα, ὅτι ὀψόμεθα αὐτὸν καθώς ἐστιν."
+        },
+        {
+          "ref": "230303",
+          "text": "καὶ πᾶς ὁ ἔχων τὴν ἐλπίδα ταύτην ἐπ’ αὐτῷ ἁγνίζει ἑαυτὸν καθὼς ἐκεῖνος ἁγνός ἐστιν."
+        },
+        {
+          "ref": "230304",
+          "text": "Πᾶς ὁ ποιῶν τὴν ἁμαρτίαν καὶ τὴν ἀνομίαν ποιεῖ, καὶ ἡ ἁμαρτία ἐστὶν ἡ ἀνομία."
+        },
+        {
+          "ref": "230305",
+          "text": "καὶ οἴδατε ὅτι ἐκεῖνος ἐφανερώθη ἵνα τὰς ⸀ἁμαρτίας ἄρῃ, καὶ ἁμαρτία ἐν αὐτῷ οὐκ ἔστιν."
+        },
+        {
+          "ref": "230306",
+          "text": "πᾶς ὁ ἐν αὐτῷ μένων οὐχ ἁμαρτάνει· πᾶς ὁ ἁμαρτάνων οὐχ ἑώρακεν αὐτὸν οὐδὲ ἔγνωκεν αὐτόν."
+        },
+        {
+          "ref": "230307",
+          "text": "τεκνία, μηδεὶς πλανάτω ὑμᾶς· ὁ ποιῶν τὴν δικαιοσύνην δίκαιός ἐστιν, καθὼς ἐκεῖνος δίκαιός ἐστιν·"
+        },
+        {
+          "ref": "230308",
+          "text": "ὁ ποιῶν τὴν ἁμαρτίαν ἐκ τοῦ διαβόλου ἐστίν, ὅτι ἀπ’ ἀρχῆς ὁ διάβολος ἁμαρτάνει. εἰς τοῦτο ἐφανερώθη ὁ υἱὸς τοῦ θεοῦ ἵνα λύσῃ τὰ ἔργα τοῦ διαβόλου."
+        },
+        {
+          "ref": "230309",
+          "text": "πᾶς ὁ γεγεννημένος ἐκ τοῦ θεοῦ ἁμαρτίαν οὐ ποιεῖ, ὅτι σπέρμα αὐτοῦ ἐν αὐτῷ μένει, καὶ οὐ δύναται ἁμαρτάνειν, ὅτι ἐκ τοῦ θεοῦ γεγέννηται."
+        },
+        {
+          "ref": "230310",
+          "text": "ἐν τούτῳ φανερά ἐστιν τὰ τέκνα τοῦ θεοῦ καὶ τὰ τέκνα τοῦ διαβόλου· πᾶς ὁ μὴ ποιῶν δικαιοσύνην οὐκ ἔστιν ἐκ τοῦ θεοῦ, καὶ ὁ μὴ ἀγαπῶν τὸν ἀδελφὸν αὐτοῦ."
+        }
+      ],
+      "textSha256": "9aff3c8aff8ca963ff9b966413e95760fba2a570edefbd48a344fd45a4220406"
+    },
+    {
+      "id": "1JN5",
+      "sourceFile": "NT-1JOHN",
+      "chapter": 5,
+      "firstVerse": 1,
+      "lastVerse": 5,
+      "verses": [
+        {
+          "ref": "230501",
+          "text": "Πᾶς ὁ πιστεύων ὅτι Ἰησοῦς ἐστιν ὁ χριστὸς ἐκ τοῦ θεοῦ γεγέννηται, καὶ πᾶς ὁ ἀγαπῶν τὸν γεννήσαντα ἀγαπᾷ ⸀καὶ τὸν γεγεννημένον ἐξ αὐτοῦ."
+        },
+        {
+          "ref": "230502",
+          "text": "ἐν τούτῳ γινώσκομεν ὅτι ἀγαπῶμεν τὰ τέκνα τοῦ θεοῦ, ὅταν τὸν θεὸν ἀγαπῶμεν καὶ τὰς ἐντολὰς αὐτοῦ ⸀ποιῶμεν·"
+        },
+        {
+          "ref": "230503",
+          "text": "αὕτη γάρ ἐστιν ἡ ἀγάπη τοῦ θεοῦ ἵνα τὰς ἐντολὰς αὐτοῦ τηρῶμεν, καὶ αἱ ἐντολαὶ αὐτοῦ βαρεῖαι οὐκ εἰσίν,"
+        },
+        {
+          "ref": "230504",
+          "text": "ὅτι πᾶν τὸ γεγεννημένον ἐκ τοῦ θεοῦ νικᾷ τὸν κόσμον. καὶ αὕτη ἐστὶν ἡ νίκη ἡ νικήσασα τὸν κόσμον, ἡ πίστις ἡμῶν·"
+        },
+        {
+          "ref": "230505",
+          "text": "τίς ⸂δέ ἐστιν⸃ ὁ νικῶν τὸν κόσμον εἰ μὴ ὁ πιστεύων ὅτι Ἰησοῦς ἐστιν ὁ υἱὸς τοῦ θεοῦ;"
+        }
+      ],
+      "textSha256": "962792be5f55c03682f454d7262b6f5aec92585cf442f5298fd613de623f4281"
+    }
+  ],
+  "lexicalResults": {
+    "NT-JOHN": {
+      "parsedVerses": 866,
+      "teknonOccurrences": [
+        "040112",
+        "040839",
+        "041152"
+      ],
+      "childrenOfGodOccurrences": [
+        "040112",
+        "041152"
+      ]
+    },
+    "NT-1JOHN": {
+      "parsedVerses": 105,
+      "teknonOccurrences": [
+        "230301",
+        "230302",
+        "230310",
+        "230310",
+        "230502"
+      ],
+      "childrenOfGodOccurrences": [
+        "230301",
+        "230302",
+        "230310",
+        "230502"
+      ]
+    }
+  },
+  "queryIsReading": false,
+  "queryScope": "Exact lemma τέκνον and adjacent τέκνον + optional single article ὁ + θεός in TWO pinned books only. Excludes diminutives, all other relationship vocabulary and other Johannine books. Occurrences, not author votes.",
+  "webObservations": [
+    {
+      "id": "CYRIL-JN1",
+      "url": "https://www.ccel.org/ccel/pearse/morefathers/files/cyril_on_john_01_book1.htm",
+      "version": "Cyril of Alexandria, Commentary on John, LFC 43/48 (1874/1885); Roger Pearse transcription, Ipswich 2005, CCEL mirror. Book I: P. E. Pusey; Book VI page header: P. E. Pusey and T. Randell; Book VII: T. Randell.",
+      "contextRead": "Complete displayed commentary on 1:11-13, with 1:10 and opening 1:14 as neighbouring context; header and footer. Selected paragraphs retained below, not all of Book I.",
+      "digitalPageMarkers": "1:11: 102-103; 1:12: 103-105; 1:13: 105-108",
+      "observedChunkIndices": [
+        0,
+        24,
+        25,
+        26,
+        32
+      ],
+      "captureMethod": "Selected displayed prose retained with NFC/whitespace normalization; editorial quotation markup and page bars omitted. Selection boundaries are explicit. This is not complete HTML, printed-page collation, Greek original verification, or an independent mirror.",
+      "rawHtmlReceived": false,
+      "rawObjectSha256": null,
+      "fetchTimestampUtc": null,
+      "hashScope": "CAPTURED_SELECTED_RENDERED_PROSE_ONLY",
+      "textSha256": "9658f23a49af5ead171243f7ede4af4b23e83343d776e07f3e43137a41284947",
+      "selections": [
+        {
+          "id": "OWN-CREATION",
+          "locator": "Book I, ad 1:11, digital marker 103",
+          "voice": "AUTHOR_EXPLANATION",
+          "text": "For the whole world is God's own, in regard of its creation, and its being brought into being from Him and through Him: but Israel will more fitly be called His own, and will gain the glory hereof, both on account of the election of the holy fathers and for that he was named the beginning and the first-born of the children of God."
+        },
+        {
+          "id": "FAITH-SPIRIT-ADOPTION",
+          "locator": "Book I, ad 1:12, digital markers 104-105",
+          "voice": "AUTHOR_EXPLANATION",
+          "text": "For since they received the Son through faith, they receive the power to be ranked among the sons of God. For the Son gives what is His alone and specially and of nature to be in their power, setting it forth as common, making this a sort of image of the love for man that is inherent to Him, and of His love for the world. For in none other way could we who bore the image of the earthy escape corruption, unless the beauty of the image of the heavenly were impressed upon us, through our being called to sonship. For being partakers of Him through the Spirit, we were sealed unto likeness with Him and mount up to the primal character of the Image after which the Divine Scripture says we were made. For thus hardly recovering the pristine beauty of our nature, and re-formed unto that Divine Nature, shall we be superior to the ills that have befallen us through the transgression. Therefore we mount up unto dignity above our nature for Christ's sake, and we too shall be sons of God, not like Him in exactitude, but by grace in imitation of Him. For He is Very Son, existing from the Father; we adopted by His Kindness, through grace receiving I have said, Ye are gods and all of you are children of the Most High."
+        },
+        {
+          "id": "NATURAL-VS-ADOPTED",
+          "locator": "Book I, end of ad 1:12, digital marker 105",
+          "voice": "AUTHOR_EXPLANATION",
+          "text": "For since that which is by Nature has another mode of being from that which is by adoption, and that which is in truth from that which is by imitation, and we are called sons of God by adoption and imitation: hence He is Son by Nature and in truth, to Whom we made sons too are compared, gaining the good by grace instead of by natural endowments."
+        },
+        {
+          "id": "BIRTH-CAUTION",
+          "locator": "Book I, opening ad 1:13, digital markers 105-106",
+          "voice": "AUTHOR_EXPLANATION",
+          "text": "They who, he says, have been called by faith in Christ unto sonship with God, put off the littleness of their own nature, and adorned with the grace of Him Who honoureth them as with a splendid robe mount up unto dignity above nature: for no longer are they called children of flesh, but rather offspring of God by adoption. But note how great guardedness the blessed Evangelist used in his words. For since he was going to say that those who believe are begotten of God, lest any should suppose that they are in truth born of the Essence of God the Father and arrive at an exact likeness with the Only-Begotten, or that of Him too is less properly said, From the womb before the Day star begat I Thee, and so at length He too should be brought down to the nature of creatures, even though He be said to be begotten of God, needs does he contrive this additional caution. For when he had said that power was given to them from Him Who is by Nature Son, to become sons of God, and had hereby first introduced that which is of adoption and grace, without peril does he afterwards add were begotten of God; that he might shew the greatness of the grace which was conferred on them, gathering as it were into kinness of nature that which was alien from God the Father and raising up the bond to the nobility of its Lord, by means of His warm love to it."
+        },
+        {
+          "id": "BAPTISM-REGENERATION",
+          "locator": "Book I, ad 1:13, digital marker 106",
+          "voice": "AUTHOR_EXPLANATION",
+          "text": "but they who by faith in Christ attain unto sonship with God, are baptized into nought originate, but into the Holy Trinity Itself, through the Word as Mediator, Who conjoined to Himself things human through the Flesh which was united to Him, being conjoined of nature to the Father, in that He is by Nature God. For so mounteth up the bond unto sonship, through participation with the in truth Son, called and so to say raised up to the dignity which is in Him by Nature. Wherefore we who have received the regeneration by the Spirit through faith, are called and are begotten of God."
+        },
+        {
+          "id": "NOT-MERELY-EXTERNAL",
+          "locator": "Book I, ad 1:13, digital marker 107",
+          "voice": "AUTHOR_EXPLANATION",
+          "text": "the Spirit will be God and of God by Nature, of Whom we too being accounted worthy to partake through faith to Christ-ward, are rendered partakers of the Divine Nature and are said to be begotten of God, and are therefore called gods, not by grace alone winging our flight to the glory that is above us, but as having now God too indwelling and lodging in us, according to what is said in the prophet, I will dwell in them and walk in them."
+        }
+      ]
+    },
+    {
+      "id": "CYRIL-JN8",
+      "url": "https://www.ccel.org/ccel/pearse/morefathers/files/cyril_on_john_06_book6.htm",
+      "version": "Cyril of Alexandria, Commentary on John, LFC 43/48 (1874/1885); Roger Pearse transcription, Ipswich 2005, CCEL mirror. Book I: P. E. Pusey; Book VI page header: P. E. Pusey and T. Randell; Book VII: T. Randell.",
+      "contextRead": "Complete ad 8:46-47, with 8:48-49 following; Book VI header/footer. Rhetorical group descriptions are attributed to the commentator, not adopted as facts about a population.",
+      "digitalPageMarkers": "ad 8:46: 657-660; ad 8:47: 660-661",
+      "observedChunkIndices": [
+        0,
+        2,
+        3,
+        33
+      ],
+      "captureMethod": "Selected displayed prose retained with NFC/whitespace normalization; editorial quotation markup and page bars omitted. Selection boundaries are explicit. This is not complete HTML, printed-page collation, Greek original verification, or an independent mirror.",
+      "rawHtmlReceived": false,
+      "rawObjectSha256": null,
+      "fetchTimestampUtc": null,
+      "hashScope": "CAPTURED_SELECTED_RENDERED_PROSE_ONLY",
+      "textSha256": "63323aad372ff32f57deadf778dbd151e41b16c4765dbf091324533af95a6372",
+      "selections": [
+        {
+          "id": "AUDIENCE-QUALIFICATION",
+          "locator": "Book VI, ad 8:46, digital marker 660",
+          "voice": "AUTHOR_EXPLANATION",
+          "text": "For I say that we must not think that all the Jews were utterly immersed in untempered folly, but that some having a zeal of God, as Paul saith, yet not according to knowledge, did therefore delay a little as to the faith."
+        },
+        {
+          "id": "NOT-CREATION-HERE",
+          "locator": "Book VI, ad 8:47, digital marker 660",
+          "voice": "AUTHOR_EXPLANATION",
+          "text": "We must here understand that certain are of God, not as though begotten of His Essence (for that were foolish), nor yet according to what is said through Paul, All things are of God (for since He is Creator and Maker of all things who giveth being to all, the Divine Paul saith that all things are of Him): but it will not harmonize so to understand it here, for all are of God, both bad and good, in so far as He is Creator of all. He says therefore that he is of God who by virtue and a right conversation is related to God, and accounted worthy of kinness to Him, in that He deigns to enrol such among His children. He therefore, He says, that is of God will receive most readily and gladly the Divine words (for that which is of kin and own is always dear) but he that is not of God, i. e., he who in no wise prizes relationship with Him, will not most gladly hear the Divine words: for neither will good easily inexist the bad, nor will longing for virtue be to them a thing worth fighting for, since their mind has been filled with the extremest depravity and looks to only its own will."
+        },
+        {
+          "id": "HEARING-MEANING",
+          "locator": "Book VI, ad 8:47, digital markers 660-661",
+          "voice": "AUTHOR_EXPLANATION",
+          "text": "But when Christ says, He that is of God heareth God's words, let no one think that He is bidding us to give the Divine voice entry in merely our bodily ears. For who that is, even though he be a thoroughly bad man, will not surely hear the voice of him who speaketh, if he have not by some disease lost his hearing? But the word heareth, He here puts instead of Consents, believes and lays up in his mind, as it is said in the book of Proverbs, The wise will receive commandments in his heart."
+        }
+      ]
+    },
+    {
+      "id": "CYRIL-JN10",
+      "url": "https://www.ccel.org/ccel/pearse/morefathers/files/cyril_on_john_06_book6.htm",
+      "version": "Cyril of Alexandria, Commentary on John, LFC 43/48 (1874/1885); Roger Pearse transcription, Ipswich 2005, CCEL mirror. Book I: P. E. Pusey; Book VI page header: P. E. Pusey and T. Randell; Book VII: T. Randell.",
+      "contextRead": "Complete displayed ad 10:14-17; preceding end of hireling discussion; header/footer. The displayed heading 15 begins with words belonging to modern 10:14b as well as 10:15. Verse numerals were added by the translator.",
+      "digitalPageMarkers": "10:14: 78-81; 10:14b-15: 81-87; 10:16: 87-89; 10:17: 89-91",
+      "observedChunkIndices": [
+        0,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "captureMethod": "Selected displayed prose retained with NFC/whitespace normalization; editorial quotation markup and page bars omitted. Selection boundaries are explicit. This is not complete HTML, printed-page collation, Greek original verification, or an independent mirror.",
+      "rawHtmlReceived": false,
+      "rawObjectSha256": null,
+      "fetchTimestampUtc": null,
+      "hashScope": "CAPTURED_SELECTED_RENDERED_PROSE_ONLY",
+      "textSha256": "5e4561f9b623d69b387bc155bdb4b65b34b787f33f9ebbcf12dcc4593c6e84e0",
+      "selections": [
+        {
+          "id": "KNOWING-RELATION",
+          "locator": "Book VI, ad 10:14b-15, digital marker 82",
+          "voice": "AUTHOR_EXPLANATION",
+          "text": "For my part, I will not conceal that which comes into my mind; nevertheless let it be accepted [only] by such as are willing. For I think that in these words He means by \"knowledge\" not simply \"acquaintance,\" but rather employs this word to signify \"friendly relationship,\" either by kinship and nature, or as it were in the participation of grace and honour."
+        },
+        {
+          "id": "INCARNATIONAL-KINSHIP",
+          "locator": "Book VI, ad 10:14b-15, digital markers 83-84",
+          "voice": "AUTHOR_EXPLANATION",
+          "text": "And we both are and are called the kindred in truth of the Son, and through Him of the Father; because the Only-Begotten, being God of God, was made Man, assuming the same nature as ours, although separate from all sin. Else how are we the offspring of God, and in what way partakers of the Divine Nature? For not in the mere will of Christ to receive us into friendly relationship have we our full measure of boasting, but the power of the thing itself is realised as true by all of us. For the Word of God is a Divine Nature even when in the flesh, and we are His kindred, notwithstanding that He is by Nature God, because of His taking the same flesh as ours."
+        },
+        {
+          "id": "WHO-OUTSIDE-OBJECTION",
+          "locator": "Book VI, ad 10:14b-15, digital marker 84",
+          "voice": "OBJECTION_REPORTED",
+          "text": "But perhaps some one will say, \"Dost thou not see, O fellow, to what a perilous hazard thy argument is leading thee? For if in so far as He became Man we shall think that He knows His own, that is, comes into friendly relationship with His sheep; who remains outside the fold? For they will be all together in friendly relationship, because they are men just as He is Man. Why then does He any longer use the superfluous word 'Mine?' And what is the peculiar mark of those that are really His? For if all are in friendly relationship from the above-mentioned cause, what greater advantage will those who know Him intimately have?\""
+        },
+        {
+          "id": "REPLY-ALL-NOT-SAME",
+          "locator": "Book VI, ad 10:14b-15, digital markers 84-85",
+          "voice": "AUTHOR_REPLY",
+          "text": "We say in reply, that the manner of the friendly relationship is common to all, both to those who have known Him and to those who have not known Him; for He became Man, not showing favour to some and not to others, out of partiality, but pitying our fallen nature in its entirety. Yet the manner of the friendly relationship will avail nothing for those who are insolent through unbelief, but rather will be allotted as a distinguishing reward to those who love Him. For just as the doctrine of the resurrection extends to all men, through the Resurrection of the Saviour, Who causes to rise with Himself the nature of man in its entirety, yet it willprofit nothing those who love sin, (for they will go down into Hades, receiving restoration to life only that they may be punished as they deserve); nevertheless it will be of great profit to those who have practised the more excellent way of life, (for they will receive the resurrection to the participation of the good things which pass understanding): in just the same way I think the doctrine of the friendly relationship applies to all men, both bad and good, yet is not the same thing to all; but while to those who believe on Him it is the means of true kinship and of the blessings consequent upon that, to those who are not such it is an aggravation of their ingratitude and un-holiness. Such is our opinion on this subject, but let any one who can do so think out the more perfect meaning."
+        },
+        {
+          "id": "CHRIST-FIRST",
+          "locator": "Book VI, ad 10:14b-15, digital markers 85-86",
+          "voice": "AUTHOR_EXPLANATION",
+          "text": "For out of His unbounded kindness Christ introduced Himself to the Gentiles, and knew them before that He was known by them. And if knowledge be understood as friendship and relationship, again we say likewise: \"It was not we who began this state of things, but the Only-Begotten Son of God.\" For we did not lay hold of the Godhead which is above our nature, but He Who is in His Nature God took hold of the seed of Abraham, as Paul says, and became Man, so that being made like unto His brethren in all things, except sin, He might receive into friendly relationship him who of himself had not this privilege, that is, man. Therefore, as a matter of course, He says that He first knew us, then afterwards that we knew Him."
+        },
+        {
+          "id": "GENTILES-ISRAEL",
+          "locator": "Book VI, ad 10:16, digital marker 87",
+          "voice": "AUTHOR_EXPLANATION",
+          "text": "And He throws out hints that, having joined the flocks of the Gentiles to the better disposed of Israel, He will rule not merely the flock of the Jews, but will at once extend the light of His own glory over the whole earth, and call the nations in every quarter to the knowledge of God ; not suffering Himself to be known in Judaea only, as was the case in early times, but rather in every country under heaven giving the information which leads to the enjoyment of the true knowledge of God."
+        },
+        {
+          "id": "ONE-FLOCK",
+          "locator": "Book VI, ad 10:16, digital marker 88",
+          "voice": "AUTHOR_EXPLANATION",
+          "text": "Therefore, for our explanation must revert to what we began with, He clearly foretells that the multitude of the Gentiles shall be united into one flock with the obedient of Israel."
+        },
+        {
+          "id": "DEATH-RESURRECTION",
+          "locator": "Book VI, ad 10:17, digital marker 90",
+          "voice": "AUTHOR_EXPLANATION",
+          "text": "For if He had only died, and had not risen again, what would have been the advantage? And how would He appear to have benefitted our nature, if He had remained amongst us, dead, under the bonds of death, and subjected to consequent corruption in the same way as others? But since He laid it down that He might also take it again, He in this way saved our nature perfectly, bringing to naught the power of death; and He will display us as a new creation."
+        },
+        {
+          "id": "NOT-NEW-LOVE",
+          "locator": "Book VI, ad 10:17, digital marker 90",
+          "voice": "AUTHOR_EXPLANATION",
+          "text": "Accordingly, the Son is beloved by God the Father; not as though He would have remained without that love, had not His work for us been done; for He was always and at all times beloved."
+        }
+      ]
+    },
+    {
+      "id": "CYRIL-JN11-44",
+      "url": "https://www.ccel.org/ccel/pearse/morefathers/files/cyril_on_john_07_book7.htm",
+      "version": "Cyril of Alexandria, Commentary on John, LFC 43/48 (1874/1885); Roger Pearse transcription, Ipswich 2005, CCEL mirror. Book I: P. E. Pusey; Book VI page header: P. E. Pusey and T. Randell; Book VII: T. Randell.",
+      "contextRead": "Displayed commentary on the release of Lazarus at 11:44 and preceding resurrection analogy, with following 45-54; Book VII fragment header/footer. This broad wording is retained as a further interpretive boundary, not silently reconciled or used to settle universal final salvation.",
+      "digitalPageMarkers": "131-132",
+      "observedChunkIndices": [
+        0,
+        10,
+        11,
+        12
+      ],
+      "captureMethod": "Selected displayed prose retained with NFC/whitespace normalization; editorial quotation markup and page bars omitted. Selection boundaries are explicit. This is not complete HTML, printed-page collation, Greek original verification, or an independent mirror.",
+      "rawHtmlReceived": false,
+      "rawObjectSha256": null,
+      "fetchTimestampUtc": null,
+      "hashScope": "CAPTURED_SELECTED_RENDERED_PROSE_ONLY",
+      "textSha256": "573fc2792d892de50c069bf6b9945ebc9c3849252b074265556399f4f6d5b4a2",
+      "selections": [
+        {
+          "id": "GENERAL-RELEASE",
+          "locator": "Extant fragment, Book VII, ad 11:44, digital markers 131-132",
+          "voice": "AUTHOR_EXPLANATION",
+          "text": "And this too is representative of the general resurrection, when, being loosed from sin and the corruption of death, every one will be set free. For, falling into sin, we have wrapped the shame of it like a veil about the face of our soul, and are fast bound by the cords of death. When therefore the Christ shall at the time of the resurrection bring us out from our tombs in the earth, then in very truth does He loosen us from our former evils, and as it were remove the veil of shame, and command that we be let go freely from that time forward; not under the dominion of sin, not subject to corruption, or indeed any of the other troubles that are wont to cause suffering; so that there will be fulfilled in us that which was said by one of the holy prophets: Ye shall both go forth and leap as calves let loose from bonds."
+        },
+        {
+          "id": "SPIRITUAL-READING",
+          "locator": "Extant fragment, Book VII, ad 11:44, digital marker 132",
+          "voice": "AUTHOR_EXPLANATION",
+          "text": "And consider I pray you the miracle as regards its inner meaning. For if our mind be dead like Lazarus, it behoves our material flesh and our nobler soul, like Martha and Mary [respectively,] to approach the Christ with a confession of faith, and to entreat His help. Then He will stand by us, and command the hardness that lies upon our memory to be taken away, and cry with the loud voice of the Evangelic trumpet: \"Come forth from the distractions of the world,\" and loose the cords of our sins; so that we may be able in full vigour to devote ourselves to virtue."
+        }
+      ]
+    },
+    {
+      "id": "CYRIL-JN11-52",
+      "url": "https://www.ccel.org/ccel/pearse/morefathers/files/cyril_on_john_07_book7.htm",
+      "version": "Cyril of Alexandria, Commentary on John, LFC 43/48 (1874/1885); Roger Pearse transcription, Ipswich 2005, CCEL mirror. Book I: P. E. Pusey; Book VI page header: P. E. Pusey and T. Randell; Book VII: T. Randell.",
+      "contextRead": "Complete displayed 11:49-52 with 45-48 and 53-54, header/footer; fresh contextual rereading, not new independent transmission or raw HTTP replay of wave4.",
+      "digitalPageMarkers": "133-134; 135 belongs to the following comment",
+      "observedChunkIndices": [
+        0,
+        10,
+        11,
+        12
+      ],
+      "captureMethod": "Selected displayed prose retained with NFC/whitespace normalization; editorial quotation markup and page bars omitted. Selection boundaries are explicit. This is not complete HTML, printed-page collation, Greek original verification, or an independent mirror.",
+      "rawHtmlReceived": false,
+      "rawObjectSha256": null,
+      "fetchTimestampUtc": null,
+      "hashScope": "CAPTURED_SELECTED_RENDERED_PROSE_ONLY",
+      "textSha256": "624cecffd0678d7dd354a59f2844bd740fa1089bd17262b44cf43bc14a6f1e6f",
+      "selections": [
+        {
+          "id": "ALL-MANKIND-CREATION-FAITH",
+          "locator": "Extant fragment, Book VII, ad 11:49-52, digital marker 134",
+          "voice": "AUTHOR_EXPLANATION",
+          "text": "Caiaphas then said that the death of Christ would be for the Jews only, but the Evangelist says that it would be for all mankind. For we are all called the offspring and children of God inasmuch as He is the Father of all, having by way of creation begotten as it were and brought into existence the things that were not. And also, because we had from the first the honour of being made in His image, and were allotted the supremacy over earthly things, and were accounted worthy of the Divine covenant, and enjoyed the life and bliss of Paradise. But Satan, being unwilling that we should remain in that condition, scattered us, and in divers manners led man astray from his nearness to God. And the Christ collected us all together again and brought us through faith into one fold, the Church; and united us under one yoke, all being made one, Jews, Greeks, Barbarians, Scythians; and we are fashioned again into one new man, and worship one God."
+        }
+      ]
+    }
+  ],
+  "webEditorialObservations": {
+    "recordingTimeMeaning": "Time of retaining observations, not exact fetch or human-reading instants.",
+    "headerAndFooterObservations": [
+      {
+        "book": 1,
+        "title": "Book 1. pp. 6-129.",
+        "translatorAsDisplayed": "P. E. Pusey",
+        "extantFragmentLabel": false,
+        "chunks": [
+          0,
+          32
+        ]
+      },
+      {
+        "book": 6,
+        "title": "Book 6. Vol. 1 pp. 649-684, Vol.2 pp. 1-91.",
+        "translatorAsDisplayed": "P.E. Pusey and T. Randell",
+        "extantFragmentLabel": false,
+        "chunks": [
+          0,
+          33
+        ]
+      },
+      {
+        "book": 7,
+        "title": "Book 7. Vol. 2 pp. 92-137.",
+        "translatorAsDisplayed": "T. Randell",
+        "extantFragmentLabel": true,
+        "exactLabel": "THE FRAGMENTS WHICH ARE EXTANT OF BOOK VII.",
+        "chunks": [
+          0,
+          11,
+          12
+        ]
+      }
+    ],
+    "footer": "This text was transcribed by Roger Pearse, Ipswich, UK, 2005. All material on this page is in the public domain - copy freely.",
+    "editorialBoundary": "Margins containing biblical references and fragments of Greek omitted; some Greek remains in footnotes. Chapter numbers/titles original, verse numerals added by translator (explicit in Book I/VI footers). None of this is a new reading of the complete Greek commentary or a printed apparatus."
+  },
+  "rawFilesOutsideGit": true,
+  "oldPackageReplay": {
+    "wave3": "NOT_RUN_AS_80_FILE_PACKAGE; two Greek files freshly acquired at same pin",
+    "wave4": "NOT_RUN_AS_18_FILE_PACKAGE",
+    "prokopenkoPdf": "NOT_RUN_SOURCE_ABSENT"
+  },
+  "greekCyrilDiscovery": {
+    "metadataFile": "FIRST1K-CYRIL-METADATA",
+    "metadataWork": "In XII Prophetas",
+    "scope": "ONLY_PINNED_TLG4090_TREE",
+    "johnGreekAcquired": false,
+    "globalAbsenceClaimed": false,
+    "paths": [
+      "data/tlg4090/__cts__.xml",
+      "data/tlg4090/tlg001",
+      "data/tlg4090/tlg001/__cts__.xml",
+      "data/tlg4090/tlg001/tlg4090.tlg001.1st1K-grc1.xml"
+    ],
+    "method": "Complete nontruncated pinned tree inspected; actual 598-byte metadata received and hash-verified. This is not a search of all repositories/editions."
+  },
+  "readingDistinctions": [
+    "creation ownership/origin",
+    "shared incarnational humanity",
+    "adoption through faith/Spirit, baptism and participation",
+    "Christ essential Sonship"
+  ],
+  "interpretiveLimits": [
+    "Objection at BookVI p84 is not an unqualified author conclusion; reply pp84-85 is retained.",
+    "BookVI differentiates resurrection outcomes; BookVII11:44 has broad liberation language. No punishment-duration or whole-author eschatological verdict.",
+    "John8:41 is the interlocutors claim; read Jesus response8:42-47.",
+    "John17:20 πιστευόντων is present, not a future-tense proof.",
+    "Greek biblical edition is not Greek Cyril or Cyril biblical-lemma collation."
+  ],
+  "fullCorpusReadingClaimed": false,
+  "wholeWorksRead": false,
+  "printedCollationClaimed": false,
+  "cyrilOriginalGreekRead": false,
+  "rawWebHtmlReceived": false,
+  "publicationEligible": false,
+  "lexicalCountsProveInterpretation": false,
+  "wholeCyrilEschatologySettled": false,
+  "punishmentDurationSettled": false,
+  "universalFinalSalvationProved": false,
+  "creationAlternativeErased": false,
+  "allKinshipSensesIdentical": false,
+  "additionalSelectionRetainedAtUtc": "2026-11-03T08:24:37.585182+00:00"
+}

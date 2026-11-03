@@ -680,7 +680,24 @@
     "edit-other-agent-subcorpora (ot/, nt/, fathers/, БИОГРАФИИ/Джон Гилл/)",
     "change-research-root-authority",
     "silence-a-conflict-without-text-and-locator"
-  ],
+  ]
+,
+  "cyrilJohannineReviewWave5": {
+    "recordedAtUtc": "2026-11-03T08:16:59.467778+00:00",
+    "controls": "ИСКУПЛЕНИЕ/evidence/source_controls_wave5_2026-11-03.json",
+    "c25": "OPEN",
+    "interpretationStatus": "ARGUED_PROVISIONAL_NOT_MACHINE_PROOF",
+    "workingPreference": "Gathered believing people of God across nations as referent of John11:52; election/prolepsis can coexist. This is weighed contextual interpretation, not lexical proof, exclusion of all other purposes of death, or erasure of the published Cyril creation reading.",
+    "scope": "Bounded Cyril English I/VI and attributed VII fragments; eleven Greek Johannine contexts. Four fresh file pins, not replay of old full packages. Details and independent axes belong to source controls.",
+    "publicationEligible": false,
+    "findings": [
+      "Creation/incarnation/adoption through faith and Spirit/essential Sonship distinguished.",
+      "BookVI objection is distinct from the author reply; common humanity is not identical saving participation.",
+      "VII11:52 broad reading preserved; VII11:44 broad release language prevents a whole-author verdict from the BookVI punishment passage.",
+      "Greek contextual preference is argued, not proved by lexical counts or a future tense in John17:20."
+    ],
+    "nextAction": "Greek/critical transmission, comparison of VI10:14-15 and VII11:44/52, and bounded OT intertext; no whole-author eschatology/atonement closure."
+  },
   "claimRegister20261026": {
       "чтоЭто": "реестр доводов лана «synthesis»: строка = раздел прозы уровня ## с локатором, классом из её собственных маркеров и отметкой съёма",
       "чтоСчитаетсяДоводом": "заголовок «## » в любом .md лана, включая вложенные папки (synthesis/drafts, ot/tools); тело секции — до следующего «## » или до конца файла",
@@ -4207,8 +4224,8 @@
       ],
       "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
       "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check synthesis",
-      "measuredAt": "2026-11-03T01:04:38Z",
-      "checkedAt": "2026-11-03T01:04:38Z",
-      "предыдущийСъём": "2026-11-03T01:01:51Z"
+      "measuredAt": "2026-11-03T08:21:47Z",
+      "checkedAt": "2026-11-03T08:21:47Z",
+      "предыдущийСъём": "2026-11-03T01:04:38Z"
   }
 }

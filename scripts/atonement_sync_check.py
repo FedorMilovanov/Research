@@ -36,6 +36,7 @@ from atonement_draft_citation_audit import audit_quotes
 from atonement_sync_sources import SOURCES
 from atonement_wave3_sources import CONTROL as WAVE3_CONTROL, check_controls as check_wave3
 from atonement_wave4_sources import CONTROL as WAVE4_CONTROL, check_controls as check_wave4
+from atonement_wave5_sources import CONTROL as WAVE5_CONTROL, check_controls as check_wave5
 
 ROOT = Path(__file__).resolve().parents[1]
 EVIDENCE = "ИСКУПЛЕНИЕ/evidence"
@@ -272,6 +273,8 @@ def check(root: Path, report: dict, control: dict) -> tuple[list[str], dict]:
     errors += check_wave3(root, report, wave3_control)
     wave4_control = json.loads((root / WAVE4_CONTROL).read_text(encoding="utf-8"))
     errors += check_wave4(root, report, wave4_control)
+    wave5_control = json.loads((root / WAVE5_CONTROL).read_text(encoding="utf-8"))
+    errors += check_wave5(root, report, wave5_control)
     drafts = sorted((root / DRAFTS).glob("*.md"))
     if len(drafts) != report["draftCount"]:
         errors.append("draft inventory differs from the reviewed scope")
@@ -291,7 +294,11 @@ def check(root: Path, report: dict, control: dict) -> tuple[list[str], dict]:
                     "wave3SourceReplay": "NOT_RUN", "readingMeasuredByLabels": False,
                     "wave4SourceFiles": len(wave4_control["files"]), "wave4Extracts": len(wave4_control["extracts"]),
                     "wave4RenderedWebObservations": len(wave4_control["webObservations"]),
-                    "wave4SourceReplay": "NOT_RUN", "webHttpReplay": "NOT_AVAILABLE_RENDERED_OBSERVATIONS_ONLY"}
+                    "wave4SourceReplay": "NOT_RUN",
+                    "wave5SourceFiles": len(wave5_control["files"]),
+                    "wave5GreekContexts": len(wave5_control["greekContexts"]),
+                    "wave5RenderedWebObservations": len(wave5_control["webObservations"]),
+                    "wave5SourceReplay": "NOT_RUN", "webHttpReplay": "NOT_AVAILABLE_RENDERED_OBSERVATIONS_ONLY"}
 
 
 def main() -> int:

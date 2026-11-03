@@ -19,6 +19,7 @@ import unicodedata
 import atonement_reshoot_state as reshoot
 import atonement_wave3_sources as wave3
 import atonement_wave4_sources as wave4
+import atonement_wave5_sources as wave5
 from atonement_source_metrics import source_label_prefix, legacy_carrier_code
 
 from atonement_claim_register import classify_token
@@ -800,6 +801,195 @@ class ActualWave4Tests(unittest.TestCase):
         self.assertEqual(result, "16. Lemma. Comment.")
         with self.assertRaises(ValueError):
             wave4.extract(raw + b'\n**16.** *Duplicate.*\n', {"kind": "calvin-comments", "firstVerse": 16, "lastVerse": 16})
+
+
+class ActualWave5Tests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.report = json.loads((ROOT / REPORT).read_text())
+        cls.control = json.loads((ROOT / wave5.CONTROL).read_text())
+
+    def errors(self, control=None, report=None):
+        return wave5.check_controls(ROOT, self.report if report is None else report,
+                                    self.control if control is None else control)
+
+    web = staticmethod(ActualWave4Tests.web)
+    replace_web_phrase = ActualWave4Tests.replace_web_phrase
+
+    def test_current_controls_and_actual_git_preimages(self):
+        self.assertEqual(self.errors(), [])
+
+    def test_all_nonclosure_boundaries_are_effective(self):
+        for key in wave5.FALSE_BOUNDARIES:
+            with self.subTest(field=key):
+                c = deepcopy(self.control)
+                c[key] = True
+                self.assertTrue(any(key in e for e in self.errors(c)))
+
+    def test_objection_and_author_reply_cannot_exchange_voices(self):
+        c = deepcopy(self.control)
+        row = self.web(c, 'CYRIL-JN10')
+        s = next(s for s in row['selections'] if s['id'] == 'WHO-OUTSIDE-OBJECTION')
+        s['voice'] = 'AUTHOR_REPLY'
+        self.assertTrue(any('objection' in e for e in self.errors(c)))
+
+    def test_cyril_creation_faith_and_differentiated_reply_survive_rehash(self):
+        for ident, phrase in [('CYRIL-JN1', 'baptized into nought originate'),
+                              ('CYRIL-JN8', 'it will not harmonize so to understand it here'),
+                              ('CYRIL-JN10', 'yet is not the same thing to all'),
+                              ('CYRIL-JN11-52', 'for all mankind'),
+                              ('CYRIL-JN11-52', 'by way of creation'),
+                              ('CYRIL-JN11-52', 'through faith into one fold, the Church')]:
+            with self.subTest(phrase=phrase):
+                c = deepcopy(self.control)
+                self.replace_web_phrase(self.web(c, ident), phrase, 'removed by regression fixture')
+                self.assertTrue(any('critical selection' in e for e in self.errors(c)))
+
+    def test_broad_resurrection_language_cannot_be_hidden(self):
+        c = deepcopy(self.control)
+        self.replace_web_phrase(self.web(c, 'CYRIL-JN11-44'), 'every one will be set free', 'some are set free')
+        self.assertTrue(any('critical selection' in e for e in self.errors(c)))
+
+    def test_punishment_language_cannot_be_hidden_either(self):
+        c = deepcopy(self.control)
+        self.replace_web_phrase(self.web(c, 'CYRIL-JN10'), 'they will go down into Hades', 'they will receive identical bliss')
+        self.assertTrue(any('critical selection' in e for e in self.errors(c)))
+
+    def test_partial_context_not_promoted_to_raw_http(self):
+        c = deepcopy(self.control)
+        c['webObservations'][0]['rawObjectSha256'] = 'a' * 64
+        self.assertTrue(any('raw HTTP' in e for e in self.errors(c)))
+
+    def test_missing_web_and_file_controls_cannot_pass(self):
+        for key, message in [('files', 'file pins'), ('webObservations', 'rendered observation'),
+                             ('greekContexts', 'Greek context')]:
+            with self.subTest(key=key):
+                c = deepcopy(self.control)
+                c[key].pop()
+                self.assertTrue(any(message in e for e in self.errors(c)))
+
+    def test_greek_missing_verse_caught_even_after_rehash(self):
+        c = deepcopy(self.control)
+        x = c['greekContexts'][0]
+        x['verses'].pop()
+        x['textSha256'] = wave5.text_hash(wave5.context_text(x['verses']))
+        self.assertTrue(any('verse coverage' in e for e in self.errors(c)))
+
+    def test_present_participle_not_changed_into_future_proof(self):
+        c = deepcopy(self.control)
+        x = next(x for x in c['greekContexts'] if x['id'] == 'JN17')
+        v = next(v for v in x['verses'] if v['ref'] == '041720')
+        self.assertIn('πιστευόντων', v['text'])
+        v['text'] = v['text'].replace('πιστευόντων', 'πιστευσόντων')
+        x['textSha256'] = wave5.text_hash(wave5.context_text(x['verses']))
+        self.assertTrue(any('critical Greek control' in e for e in self.errors(c)))
+
+    def test_broad_john12_not_erased_to_protect_preference(self):
+        c = deepcopy(self.control)
+        x = next(x for x in c['greekContexts'] if x['id'] == 'JN12')
+        v = next(v for v in x['verses'] if v['ref'] == '041232')
+        self.assertIn('πάντας', v['text'])
+        v['text'] = v['text'].replace('πάντας', 'τινάς')
+        x['textSha256'] = wave5.text_hash(wave5.context_text(x['verses']))
+        self.assertTrue(any('critical Greek control' in e for e in self.errors(c)))
+
+    def test_lemma_query_does_not_include_diminutives_abraham_or_devil(self):
+        def vs(*lemmas):
+            return [{'lemma': l} for l in lemmas]
+        words = {'040101': vs('τέκνον', 'θεός'), '040102': vs('τέκνον', 'ὁ', 'θεός'),
+                 '040103': vs('τεκνίον', 'θεός'), '040104': vs('τέκνον', 'ὁ', 'διάβολος'),
+                 '040105': vs('τέκνον', 'Ἀβραάμ'), '040106': vs('τέκνον', 'ὁ', 'ὁ', 'θεός'),
+                 '040107': vs('τέκνον'), '040108': vs('θεός')}
+        got = wave5.lexical_query(words)
+        self.assertEqual(got['childrenOfGodOccurrences'], ['040101', '040102'])
+        self.assertEqual(len(got['teknonOccurrences']), 6)
+        self.assertEqual(got['parsedVerses'], 8)
+
+    def test_counts_and_source_search_are_not_reading(self):
+        for key, value in [('queryIsReading', True), ('lexicalResults', {})]:
+            c = deepcopy(self.control)
+            c[key] = value
+            self.assertTrue(any('lexical scope' in e for e in self.errors(c)))
+
+    def test_prophets_metadata_is_not_greek_john_or_global_absence(self):
+        for key, value in [('metadataWork', 'In Ioannem'), ('globalAbsenceClaimed', True),
+                           ('johnGreekAcquired', True), ('scope', 'ALL_GREEK_EDITIONS')]:
+            c = deepcopy(self.control)
+            c['greekCyrilDiscovery'][key] = value
+            self.assertTrue(any('Prophets metadata' in e for e in self.errors(c)))
+
+    def test_source_class_and_publication_are_independent(self):
+        for key, value in [('evidenceClass', 'C'), ('publicationState', 'PROMOTE'),
+                           ('holds', []), ('readingScope', '')]:
+            c = deepcopy(self.control)
+            c['sources'][0][key] = value
+            self.assertTrue(any('scope/version/quote/publication' in e for e in self.errors(c)))
+
+    def test_original_language_and_fragment_boundaries(self):
+        for key, value in [('originalGreekRead', True), ('textCompleteness', 'EXTANT_FRAGMENT')]:
+            c = deepcopy(self.control)
+            c['sources'][0][key] = value
+            self.assertTrue(any('English Cyril' in e or 'Book VII fragment status' in e for e in self.errors(c)))
+        c = deepcopy(self.control)
+        c['sources'][1]['attribution'] = 'INDEPENDENTLY_AUTHENTICATED'
+        self.assertTrue(any('fragment/attribution' in e for e in self.errors(c)))
+
+    def test_readme_does_not_clear_eula(self):
+        c = deepcopy(self.control)
+        c['sources'][2]['eulaNewlyRead'] = True
+        self.assertTrue(any('README license' in e for e in self.errors(c)))
+
+    def test_real_baseline_snapshots_and_additive_guard_semantics(self):
+        r = deepcopy(self.report)
+        r['wave5']['supersededSnapshots'][0]['sha256'] = '0' * 64
+        self.assertTrue(any('preimage byte mismatch' in e for e in self.errors(report=r)))
+        r = deepcopy(self.report)
+        row = next(x for x in r['repairs'] if x['id'] == 'W5-H11')
+        row['rejectedWordingPresentInBaseline'] = True
+        self.assertTrue(any('invented historical error' in e for e in self.errors(report=r)))
+
+    def test_all_wave5_reversions_execute_in_memory(self):
+        tested = set()
+        for row in self.report['repairs']:
+            if row['id'] not in wave5.REQUIRED_REPAIRS:
+                continue
+            text = (ROOT / row['file']).read_text()
+            self.assertIn(row['required'], text)
+            broken = text.replace(row['required'], row['removed'])
+            self.assertNotEqual(text, broken)
+            errors = check_repairs(ROOT, self.report, {row['file']: broken})
+            self.assertTrue(any(e.startswith(row['id'] + ':') for e in errors), row['id'])
+            tested.add(row['id'])
+        self.assertEqual(tested, wave5.REQUIRED_REPAIRS)
+
+    def test_missing_sources_fail_replay_not_empty_success(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            self.assertTrue(wave5.verify_sources(Path(tmp), self.control))
+
+    def test_actual_fixture_bytes_and_path_escape(self):
+        raw = '040112 N- ----APN- N-APN τέκνα τέκνα τέκνα τέκνον\n040112 N- ----GSM- N-GSM θεοῦ θεοῦ θεοῦ θεός\n'.encode()
+        words = wave3.morphgnt_words(raw, 8)
+        verses = wave5.context(words, 1, 12, 12)
+        fixture = {'files': [{'id': 'NT-JOHN', 'externalRelativePath': 'book.txt', 'bytes': len(raw),
+                             'sha256': wave5.sha256(raw), 'gitBlob': wave5.git_blob(raw)}],
+                   'lexicalResults': {'NT-JOHN': wave5.lexical_query(words)},
+                   'greekContexts': [{'id': 'fixture', 'sourceFile': 'NT-JOHN', 'chapter': 1, 'firstVerse': 12,
+                                      'lastVerse': 12, 'verses': verses, 'textSha256': wave5.text_hash(wave5.context_text(verses))}]}
+        with tempfile.TemporaryDirectory() as tmp:
+            p = Path(tmp) / 'book.txt'
+            p.write_bytes(raw)
+            self.assertEqual(wave5.verify_sources(Path(tmp), fixture), [])
+            p.write_bytes(raw + b'\n')
+            self.assertTrue(any('file bytes changed' in e for e in wave5.verify_sources(Path(tmp), fixture)))
+            fixture['files'][0]['externalRelativePath'] = '../outside.txt'
+            self.assertTrue(any('unsafe source path' in e for e in wave5.verify_sources(Path(tmp), fixture)))
+
+    def test_new_helper_and_card_participate_in_native_inventory(self):
+        from atonement_claim_register import machine_ids
+        self.assertIn('scripts/atonement_wave5_sources.py', reshoot.PIPELINE_FILES)
+        self.assertIn('CYRA-3', machine_ids('fathers'))
+        p = ROOT / 'ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md'
+        self.assertEqual(len([s for s in p.read_text().splitlines() if s.startswith('## CYRA-3.')]), 1)
 
 
 if __name__ == "__main__":

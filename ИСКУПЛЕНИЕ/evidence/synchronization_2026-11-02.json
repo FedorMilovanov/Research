@@ -3063,6 +3063,321 @@
       "historicalRetained": true,
       "rejectedWordingPresentInBaseline": true,
       "controlType": "BASELINE_REMOVAL_OR_EXPLICIT_SUPERSESSION"
+    },
+    {
+      "id": "W5-NT15",
+      "file": "ИСКУПЛЕНИЕ/nt/15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md",
+      "removed": "следующий смысловой контроль — его же 1:12–13 и 10:16, не подмена их Кальвином.",
+      "required": "**Предпочтительное рабочее чтение:**",
+      "reason": "Integrate the bounded Cyril/Johannine primary contexts; distinguish creator relationship, incarnation, adoption/faith and natural Sonship; retain broad counterevidence and open scope. This record may be an additive guard, not a historical error.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave5_2026-11-03.json",
+        "scope": "Cyril I 1:11-13 / VI 8:46-49,10:14-17 / VII11:44,49-52, and eleven specified Greek biblical contexts; no Greek Cyril or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE5_SCOPED_CONTINUATION",
+      "rejectedWordingPresentInBaseline": true,
+      "controlType": "BASELINE_REMOVAL_OR_EXPLICIT_SUPERSESSION"
+    },
+    {
+      "id": "W5-C25",
+      "file": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+      "removed": "Сотворение, воплощение и усыновление здесь означают одно и то же.",
+      "required": "Волна 5 — взвешивание выполнено:",
+      "reason": "Integrate the bounded Cyril/Johannine primary contexts; distinguish creator relationship, incarnation, adoption/faith and natural Sonship; retain broad counterevidence and open scope. This record may be an additive guard, not a historical error.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave5_2026-11-03.json",
+        "scope": "Cyril I 1:11-13 / VI 8:46-49,10:14-17 / VII11:44,49-52, and eleven specified Greek biblical contexts; no Greek Cyril or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE5_SCOPED_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W5-H11",
+      "file": "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md",
+      "removed": "Сотворение, воплощение и усыновление здесь означают одно и то же.",
+      "required": "Волна 5 — референт и блага различены:",
+      "reason": "Integrate the bounded Cyril/Johannine primary contexts; distinguish creator relationship, incarnation, adoption/faith and natural Sonship; retain broad counterevidence and open scope. This record may be an additive guard, not a historical error.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave5_2026-11-03.json",
+        "scope": "Cyril I 1:11-13 / VI 8:46-49,10:14-17 / VII11:44,49-52, and eleven specified Greek biblical contexts; no Greek Cyril or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE5_SCOPED_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W5-P13",
+      "file": "ИСКУПЛЕНИЕ/nt/06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md",
+      "removed": "Сотворение, воплощение и усыновление здесь означают одно и то же.",
+      "required": "Волна 5 — основания рабочего предпочтения:",
+      "reason": "Integrate the bounded Cyril/Johannine primary contexts; distinguish creator relationship, incarnation, adoption/faith and natural Sonship; retain broad counterevidence and open scope. This record may be an additive guard, not a historical error.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave5_2026-11-03.json",
+        "scope": "Cyril I 1:11-13 / VI 8:46-49,10:14-17 / VII11:44,49-52, and eleven specified Greek biblical contexts; no Greek Cyril or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE5_SCOPED_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W5-NT09",
+      "file": "ИСКУПЛЕНИЕ/nt/09_NT_EXTENT_THREE_COLUMN_TABLE.md",
+      "removed": "Сотворение, воплощение и усыновление здесь означают одно и то же.",
+      "required": "Волна 5 — неравный вес чтений, не закрытие:",
+      "reason": "Integrate the bounded Cyril/Johannine primary contexts; distinguish creator relationship, incarnation, adoption/faith and natural Sonship; retain broad counterevidence and open scope. This record may be an additive guard, not a historical error.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave5_2026-11-03.json",
+        "scope": "Cyril I 1:11-13 / VI 8:46-49,10:14-17 / VII11:44,49-52, and eleven specified Greek biblical contexts; no Greek Cyril or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE5_SCOPED_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W5-QMAP",
+      "file": "ИСКУПЛЕНИЕ/04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md",
+      "removed": "Сотворение, воплощение и усыновление здесь означают одно и то же.",
+      "required": "Волна 5 — различены основания принадлежности:",
+      "reason": "Integrate the bounded Cyril/Johannine primary contexts; distinguish creator relationship, incarnation, adoption/faith and natural Sonship; retain broad counterevidence and open scope. This record may be an additive guard, not a historical error.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave5_2026-11-03.json",
+        "scope": "Cyril I 1:11-13 / VI 8:46-49,10:14-17 / VII11:44,49-52, and eleven specified Greek biblical contexts; no Greek Cyril or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE5_SCOPED_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W5-CALVIN",
+      "file": "ИСКУПЛЕНИЕ/13_DORT_II_CALVIN_OWEN_EXTENT.md",
+      "removed": "Сотворение, воплощение и усыновление здесь означают одно и то же.",
+      "required": "Волна 5 — не подмена Кирилла Кальвином:",
+      "reason": "Integrate the bounded Cyril/Johannine primary contexts; distinguish creator relationship, incarnation, adoption/faith and natural Sonship; retain broad counterevidence and open scope. This record may be an additive guard, not a historical error.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave5_2026-11-03.json",
+        "scope": "Cyril I 1:11-13 / VI 8:46-49,10:14-17 / VII11:44,49-52, and eleven specified Greek biblical contexts; no Greek Cyril or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE5_SCOPED_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W5-F05",
+      "file": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
+      "removed": "Сотворение, воплощение и усыновление здесь означают одно и то же.",
+      "required": "## CYRA-3. Кирилл, In Ioannem I/VI",
+      "reason": "Integrate the bounded Cyril/Johannine primary contexts; distinguish creator relationship, incarnation, adoption/faith and natural Sonship; retain broad counterevidence and open scope. This record may be an additive guard, not a historical error.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave5_2026-11-03.json",
+        "scope": "Cyril I 1:11-13 / VI 8:46-49,10:14-17 / VII11:44,49-52, and eleven specified Greek biblical contexts; no Greek Cyril or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE5_SCOPED_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W5-F08",
+      "file": "ИСКУПЛЕНИЕ/fathers/08_UNIVERSAL_TEXTS_IN_THE_FATHERS.md",
+      "removed": "дальше нужны проверка передачи/атрибуции и сопоставление его же 1:12–13/10:16, не повторный поиск якобы отсутствующего локуса.",
+      "required": "**Волна 5 — широкое свидетельство и его пределы:**",
+      "reason": "Integrate the bounded Cyril/Johannine primary contexts; distinguish creator relationship, incarnation, adoption/faith and natural Sonship; retain broad counterevidence and open scope. This record may be an additive guard, not a historical error.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave5_2026-11-03.json",
+        "scope": "Cyril I 1:11-13 / VI 8:46-49,10:14-17 / VII11:44,49-52, and eleven specified Greek biblical contexts; no Greek Cyril or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE5_SCOPED_CONTINUATION",
+      "rejectedWordingPresentInBaseline": true,
+      "controlType": "BASELINE_REMOVAL_OR_EXPLICIT_SUPERSESSION"
+    },
+    {
+      "id": "W5-F10",
+      "file": "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
+      "removed": "Сотворение, воплощение и усыновление здесь означают одно и то же.",
+      "required": "**Волна 5 — язык и объект не подменены:**",
+      "reason": "Integrate the bounded Cyril/Johannine primary contexts; distinguish creator relationship, incarnation, adoption/faith and natural Sonship; retain broad counterevidence and open scope. This record may be an additive guard, not a historical error.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave5_2026-11-03.json",
+        "scope": "Cyril I 1:11-13 / VI 8:46-49,10:14-17 / VII11:44,49-52, and eleven specified Greek biblical contexts; no Greek Cyril or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE5_SCOPED_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W5-P04",
+      "file": "docs/research/atonement/04_exegetical_defense_of_definite_atonement.md",
+      "removed": "Сотворение, воплощение и усыновление здесь означают одно и то же.",
+      "required": "**Волна 5 — не новое обвинение Прокопенко:**",
+      "reason": "Integrate the bounded Cyril/Johannine primary contexts; distinguish creator relationship, incarnation, adoption/faith and natural Sonship; retain broad counterevidence and open scope. This record may be an additive guard, not a historical error.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave5_2026-11-03.json",
+        "scope": "Cyril I 1:11-13 / VI 8:46-49,10:14-17 / VII11:44,49-52, and eleven specified Greek biblical contexts; no Greek Cyril or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE5_SCOPED_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W5-P06",
+      "file": "docs/research/atonement/06_detailed_refutation_of_prokopenko_arguments.md",
+      "removed": "Сотворение, воплощение и усыновление здесь означают одно и то же.",
+      "required": "**Волна 5 — не новое обвинение Прокопенко:**",
+      "reason": "Integrate the bounded Cyril/Johannine primary contexts; distinguish creator relationship, incarnation, adoption/faith and natural Sonship; retain broad counterevidence and open scope. This record may be an additive guard, not a historical error.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave5_2026-11-03.json",
+        "scope": "Cyril I 1:11-13 / VI 8:46-49,10:14-17 / VII11:44,49-52, and eleven specified Greek biblical contexts; no Greek Cyril or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE5_SCOPED_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W5-P18",
+      "file": "docs/research/atonement/18_juridical_fallacies_and_double_punishment_critique.md",
+      "removed": "Сотворение, воплощение и усыновление здесь означают одно и то же.",
+      "required": "**Волна 5 — не новое обвинение Прокопенко:**",
+      "reason": "Integrate the bounded Cyril/Johannine primary contexts; distinguish creator relationship, incarnation, adoption/faith and natural Sonship; retain broad counterevidence and open scope. This record may be an additive guard, not a historical error.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave5_2026-11-03.json",
+        "scope": "Cyril I 1:11-13 / VI 8:46-49,10:14-17 / VII11:44,49-52, and eleven specified Greek biblical contexts; no Greek Cyril or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE5_SCOPED_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W5-S04",
+      "file": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+      "removed": "Сотворение, воплощение и усыновление здесь означают одно и то же.",
+      "required": "**Волна 5 — не новое обвинение Прокопенко:**",
+      "reason": "Integrate the bounded Cyril/Johannine primary contexts; distinguish creator relationship, incarnation, adoption/faith and natural Sonship; retain broad counterevidence and open scope. This record may be an additive guard, not a historical error.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave5_2026-11-03.json",
+        "scope": "Cyril I 1:11-13 / VI 8:46-49,10:14-17 / VII11:44,49-52, and eleven specified Greek biblical contexts; no Greek Cyril or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE5_SCOPED_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W5-N00",
+      "file": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
+      "removed": "Сотворение, воплощение и усыновление здесь означают одно и то же.",
+      "required": "**Волна 5, 2026-11-03 — контексты Кирилла и рабочая экзегеза:**",
+      "reason": "Integrate the bounded Cyril/Johannine primary contexts; distinguish creator relationship, incarnation, adoption/faith and natural Sonship; retain broad counterevidence and open scope. This record may be an additive guard, not a historical error.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave5_2026-11-03.json",
+        "scope": "Cyril I 1:11-13 / VI 8:46-49,10:14-17 / VII11:44,49-52, and eleven specified Greek biblical contexts; no Greek Cyril or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE5_SCOPED_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W5-F00",
+      "file": "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
+      "removed": "Сотворение, воплощение и усыновление здесь означают одно и то же.",
+      "required": "**Волна 5, 2026-11-03 — контексты Кирилла и рабочая экзегеза:**",
+      "reason": "Integrate the bounded Cyril/Johannine primary contexts; distinguish creator relationship, incarnation, adoption/faith and natural Sonship; retain broad counterevidence and open scope. This record may be an additive guard, not a historical error.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave5_2026-11-03.json",
+        "scope": "Cyril I 1:11-13 / VI 8:46-49,10:14-17 / VII11:44,49-52, and eleven specified Greek biblical contexts; no Greek Cyril or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE5_SCOPED_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W5-ROOT00",
+      "file": "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+      "removed": "Сотворение, воплощение и усыновление здесь означают одно и то же.",
+      "required": "**Волна 5, 2026-11-03 — контексты Кирилла и рабочая экзегеза:**",
+      "reason": "Integrate the bounded Cyril/Johannine primary contexts; distinguish creator relationship, incarnation, adoption/faith and natural Sonship; retain broad counterevidence and open scope. This record may be an additive guard, not a historical error.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave5_2026-11-03.json",
+        "scope": "Cyril I 1:11-13 / VI 8:46-49,10:14-17 / VII11:44,49-52, and eleven specified Greek biblical contexts; no Greek Cyril or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE5_SCOPED_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W5-NT-DATA",
+      "file": "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+      "removed": "\"cyrilJohannineReviewWave5\": \"FULL_DOCTRINAL_CLOSURE\"",
+      "required": "\"cyrilJohannineReviewWave5\": {",
+      "reason": "Integrate the bounded Cyril/Johannine primary contexts; distinguish creator relationship, incarnation, adoption/faith and natural Sonship; retain broad counterevidence and open scope. This record may be an additive guard, not a historical error.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave5_2026-11-03.json",
+        "scope": "Cyril I 1:11-13 / VI 8:46-49,10:14-17 / VII11:44,49-52, and eleven specified Greek biblical contexts; no Greek Cyril or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE5_SCOPED_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W5-F-DATA",
+      "file": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+      "removed": "\"cyrilJohannineReviewWave5\": \"FULL_DOCTRINAL_CLOSURE\"",
+      "required": "\"cyrilJohannineReviewWave5\": {",
+      "reason": "Integrate the bounded Cyril/Johannine primary contexts; distinguish creator relationship, incarnation, adoption/faith and natural Sonship; retain broad counterevidence and open scope. This record may be an additive guard, not a historical error.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave5_2026-11-03.json",
+        "scope": "Cyril I 1:11-13 / VI 8:46-49,10:14-17 / VII11:44,49-52, and eleven specified Greek biblical contexts; no Greek Cyril or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE5_SCOPED_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W5-ROOT-DATA",
+      "file": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+      "removed": "\"cyrilJohannineReviewWave5\": \"FULL_DOCTRINAL_CLOSURE\"",
+      "required": "\"cyrilJohannineReviewWave5\": {",
+      "reason": "Integrate the bounded Cyril/Johannine primary contexts; distinguish creator relationship, incarnation, adoption/faith and natural Sonship; retain broad counterevidence and open scope. This record may be an additive guard, not a historical error.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave5_2026-11-03.json",
+        "scope": "Cyril I 1:11-13 / VI 8:46-49,10:14-17 / VII11:44,49-52, and eleven specified Greek biblical contexts; no Greek Cyril or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE5_SCOPED_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W5-S-DATA",
+      "file": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+      "removed": "\"cyrilJohannineReviewWave5\": \"FULL_DOCTRINAL_CLOSURE\"",
+      "required": "\"cyrilJohannineReviewWave5\": {",
+      "reason": "Integrate the bounded Cyril/Johannine primary contexts; distinguish creator relationship, incarnation, adoption/faith and natural Sonship; retain broad counterevidence and open scope. This record may be an additive guard, not a historical error.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave5_2026-11-03.json",
+        "scope": "Cyril I 1:11-13 / VI 8:46-49,10:14-17 / VII11:44,49-52, and eleven specified Greek biblical contexts; no Greek Cyril or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE5_SCOPED_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
     }
   ],
   "pathRepairs": [
@@ -3435,7 +3750,10 @@
     "python3 -B scripts/atonement_reshoot_state.py --check",
     "python3 -B scripts/atonement_sync_check.py --prokopenko-pdf /path/outside/repo/article.pdf  # optional; pypdf 6.21.4; no network or source writes",
     "python3 -B scripts/atonement_wave3_sources.py",
-    "python3 -B scripts/atonement_wave3_sources.py --source-root /path/to/external/source-materials"
+    "python3 -B scripts/atonement_wave3_sources.py --source-root /path/to/external/source-materials",
+    "python3 -B scripts/atonement_wave4_sources.py",
+    "python3 -B scripts/atonement_wave5_sources.py",
+    "python3 -B scripts/atonement_wave5_sources.py --source-root /path/to/external/wave5"
   ],
   "remaining": [
     "Printed apparatus/manuscript collation and complete lexical/source reception work remain open.",
@@ -3445,23 +3763,22 @@
     "No denominator or receipts sufficient for a percentage of research literature read/exhaustively covered."
   ],
   "verificationSnapshot": {
-    "asOf": "2026-11-02T23:00:32+00:00",
-    "scope": "Wave3 local gate window; previous wave1/wave2 snapshots retained separately",
-    "repairRecords": 169,
-    "newRepairRecords": 38,
-    "unitTests": 76,
-    "sourceFilesReplayed": 80,
-    "sourceExtractsReplayed": 221,
+    "asOf": "2026-11-03",
+    "scope": "Wave5 bounded Cyril/Johannine continuation; precommit accepted checks, with failed exploratory legacy battery separately disclosed in wave5.preliminaryVerification.",
+    "repairRecords": 212,
+    "newRepairRecords": 21,
+    "unitTests": 126,
+    "sourceFilesReplayed": 4,
+    "sourceGreekContextBlocksReplayed": 11,
     "primaryPdfControlsRetained": 14,
     "pdfReplay": "NOT_RUN",
     "markedCitations": 54,
     "crossReferences": 80,
-    "markdownTargets": 293,
+    "localMarkdownTargets": 243,
     "missingMarkdownTargets": 0,
-    "claimSections": 907,
-    "claimMarkers": 1109,
+    "claimSections": 913,
+    "claimMarkers": 1123,
     "readingMeasuredByLabels": false,
-    "readOnlyChecks": "PASS; file fingerprint unchanged during verification",
     "publicationEligible": false
   },
   "initialWaveScope": "Wave 1: marked Synodal quotations in 13 drafts, B2 rewrite, directly connected source/locator corrections. This is not a full rereading of every draft, original book, or theological claim.",
@@ -5374,5 +5691,480 @@
       "noFreshHistoricalSourceReplay": "Old 80 files / 221 extracts and Prokopenko PDF are not newly replayed; web hashes cover only retained rendered selections."
     },
     "nextSubstantiveStep": "Assess competing senses of children in the Johannine context; prioritize Cyril 1:12-13 and 10:16 while separately pursuing Greek/critical transmission. Do not replace interpretation with author-vote counts or another generic access inventory."
+  },
+  "wave5": {
+    "status": "INTEGRATED_LOCALLY_VERIFIED_NOT_MERGED",
+    "baselineCommit": "1bb400f890b610cf1b5d282a7e5c910749537974",
+    "recordedAtUtc": "2026-11-03T08:16:59.467778+00:00",
+    "controls": "ИСКУПЛЕНИЕ/evidence/source_controls_wave5_2026-11-03.json",
+    "repairIds": [
+      "W5-NT15",
+      "W5-C25",
+      "W5-H11",
+      "W5-P13",
+      "W5-NT09",
+      "W5-QMAP",
+      "W5-CALVIN",
+      "W5-F05",
+      "W5-F08",
+      "W5-F10",
+      "W5-P04",
+      "W5-P06",
+      "W5-P18",
+      "W5-S04",
+      "W5-N00",
+      "W5-F00",
+      "W5-ROOT00",
+      "W5-NT-DATA",
+      "W5-F-DATA",
+      "W5-ROOT-DATA",
+      "W5-S-DATA"
+    ],
+    "supersededSnapshots": [
+      {
+        "path": ".github/workflows/atonement-corpus-integrity.yml",
+        "commit": "1bb400f890b610cf1b5d282a7e5c910749537974",
+        "blob": "c672e66a9bc3727e3cd8a37a333829d6bdc7ce74",
+        "sha256": "3f44afd94f0d78e9f6f730f19a1e2be5ca24402c13c1d41cd1c017e09dd64d16",
+        "bytes": 14614,
+        "status": "BYTE_VERIFIED_BASELINE_BEFORE_WAVE5"
+      },
+      {
+        "path": "docs/research/atonement/04_exegetical_defense_of_definite_atonement.md",
+        "commit": "1bb400f890b610cf1b5d282a7e5c910749537974",
+        "blob": "4770dccee21c80b1fecb1f82a6bdfb2d5ba97527",
+        "sha256": "5ba25e4162f92fa303059207236a0aaadd3a607c1ab66e501c77222eadf7d7b6",
+        "bytes": 52730,
+        "status": "BYTE_VERIFIED_BASELINE_BEFORE_WAVE5"
+      },
+      {
+        "path": "docs/research/atonement/06_detailed_refutation_of_prokopenko_arguments.md",
+        "commit": "1bb400f890b610cf1b5d282a7e5c910749537974",
+        "blob": "b4190cfed5cffa22e832149998f836674e8c8f5b",
+        "sha256": "e95a986d17a189473c250cd9a9118b1847bf97cab16dd15d2c4d511932b1c7a6",
+        "bytes": 136858,
+        "status": "BYTE_VERIFIED_BASELINE_BEFORE_WAVE5"
+      },
+      {
+        "path": "docs/research/atonement/18_juridical_fallacies_and_double_punishment_critique.md",
+        "commit": "1bb400f890b610cf1b5d282a7e5c910749537974",
+        "blob": "07f1bc8bcca6eeb0e9fc643fac752d614ff9f332",
+        "sha256": "1f91250e1204bce672d8be5fc5b686fafb5bb5c023230020475786dcb22251ab",
+        "bytes": 34965,
+        "status": "BYTE_VERIFIED_BASELINE_BEFORE_WAVE5"
+      },
+      {
+        "path": "scripts/atonement_reshoot_state.py",
+        "commit": "1bb400f890b610cf1b5d282a7e5c910749537974",
+        "blob": "cdd87a5f04215d6b931788decf609f8e685bf484",
+        "sha256": "8ca12916a5774ba9aa271ed231d4acf60f9a68df9f4e275eb367882bcd6d7b53",
+        "bytes": 166529,
+        "status": "BYTE_VERIFIED_BASELINE_BEFORE_WAVE5"
+      },
+      {
+        "path": "scripts/atonement_sync_check.py",
+        "commit": "1bb400f890b610cf1b5d282a7e5c910749537974",
+        "blob": "182b58667c221770056ead7324d319a267c23463",
+        "sha256": "7c3e8ea701bdfc4f085c998b25a847ba7be04a6c93204c1feec6d94a1f561b80",
+        "bytes": 17217,
+        "status": "BYTE_VERIFIED_BASELINE_BEFORE_WAVE5"
+      },
+      {
+        "path": "scripts/test_atonement_sync.py",
+        "commit": "1bb400f890b610cf1b5d282a7e5c910749537974",
+        "blob": "c0feb79bd9255d0b75398788b47b07d2443d4a65",
+        "sha256": "89919ac60471e1c047f845d623be014009eb9f9477a92b307ec5f2988ebdb0ea",
+        "bytes": 43784,
+        "status": "BYTE_VERIFIED_BASELINE_BEFORE_WAVE5"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+        "commit": "1bb400f890b610cf1b5d282a7e5c910749537974",
+        "blob": "060ce1940850a20a61ddaf1f7937cee9b7375e29",
+        "sha256": "2bc2eacf74c7457bded0b463101700b47aab3d8f268a41a969f447d857416efd",
+        "bytes": 48288,
+        "status": "BYTE_VERIFIED_BASELINE_BEFORE_WAVE5"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md",
+        "commit": "1bb400f890b610cf1b5d282a7e5c910749537974",
+        "blob": "edd18ed5da188a65d8f249edbd15c7914fdacbb9",
+        "sha256": "d5cde2382ce7613829d3646db513111081e52da175bb89c0c9c9cf8c9deff303",
+        "bytes": 35730,
+        "status": "BYTE_VERIFIED_BASELINE_BEFORE_WAVE5"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md",
+        "commit": "1bb400f890b610cf1b5d282a7e5c910749537974",
+        "blob": "faf69e0d7b95f14a39aa49688c022d33d4fe9488",
+        "sha256": "50406cecd36f2bba7cc5bde8b816d2af6983119d940b0f4fe2a47ebb9c7cc107",
+        "bytes": 98204,
+        "status": "BYTE_VERIFIED_BASELINE_BEFORE_WAVE5"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/13_DORT_II_CALVIN_OWEN_EXTENT.md",
+        "commit": "1bb400f890b610cf1b5d282a7e5c910749537974",
+        "blob": "c327fd5690c09364b8c0e4c1e0930cb133dab430",
+        "sha256": "8e48679472c8b209c272418f0a999d1914ca028263008db9ab52a4298a8c58ae",
+        "bytes": 37078,
+        "status": "BYTE_VERIFIED_BASELINE_BEFORE_WAVE5"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
+        "commit": "1bb400f890b610cf1b5d282a7e5c910749537974",
+        "blob": "cdeb6dd5a7e17a2dbba3213de709fce66eac6d4d",
+        "sha256": "6cb34878e390c80ee2b1ae8c794838983f8f10cb27f50c8415852cda97cb740c",
+        "bytes": 1287191,
+        "status": "BYTE_VERIFIED_BASELINE_BEFORE_WAVE5"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+        "commit": "1bb400f890b610cf1b5d282a7e5c910749537974",
+        "blob": "6a7050ebf3711ec1d69f1f7e1f6b784d1c0173bd",
+        "sha256": "4e68890a0df9b7a77aff3e1eb39bd667e6be1b90eb390c4c27a40264479b89f1",
+        "bytes": 1203472,
+        "status": "BYTE_VERIFIED_BASELINE_BEFORE_WAVE5"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/evidence/synchronization_2026-11-02.json",
+        "commit": "1bb400f890b610cf1b5d282a7e5c910749537974",
+        "blob": "b44c02851aaca0b291da20fbe216ed77bfbb725f",
+        "sha256": "e4ca4ba680dc382ee115a5dc6c291943fac028bf083be1b44641dc755a34511e",
+        "bytes": 598404,
+        "status": "BYTE_VERIFIED_BASELINE_BEFORE_WAVE5"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
+        "commit": "1bb400f890b610cf1b5d282a7e5c910749537974",
+        "blob": "28b7fc6af60af915e281265f82c03473b15ca9fe",
+        "sha256": "f41229767de9950e76bbb2cfda505830718dfce6e0312298135c73d365ced710",
+        "bytes": 23214,
+        "status": "BYTE_VERIFIED_BASELINE_BEFORE_WAVE5"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
+        "commit": "1bb400f890b610cf1b5d282a7e5c910749537974",
+        "blob": "647fb2a52222133271553e64aef29f59e04248b1",
+        "sha256": "bc7a545cbaa6b3abd66879224e9b150579a5b5d1b60d1171722f8df4df9400cb",
+        "bytes": 28526,
+        "status": "BYTE_VERIFIED_BASELINE_BEFORE_WAVE5"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/08_UNIVERSAL_TEXTS_IN_THE_FATHERS.md",
+        "commit": "1bb400f890b610cf1b5d282a7e5c910749537974",
+        "blob": "6aa8b5ee967109f85961dd5cf57889f837c79eb1",
+        "sha256": "e56bf728ca22e3835a623877a501c2d013b468e63be28da84b8e1485b025f06f",
+        "bytes": 12667,
+        "status": "BYTE_VERIFIED_BASELINE_BEFORE_WAVE5"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
+        "commit": "1bb400f890b610cf1b5d282a7e5c910749537974",
+        "blob": "a262fb01cd83ae8749f358358d7af4e4ac8c91ec",
+        "sha256": "7aca2e0f566b8bf01f74bf8b82ae74f247aecfd49cf6a925e1ee4826d33471a1",
+        "bytes": 29178,
+        "status": "BYTE_VERIFIED_BASELINE_BEFORE_WAVE5"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+        "commit": "1bb400f890b610cf1b5d282a7e5c910749537974",
+        "blob": "c24252fe1921f5ddcc7567b04a3f55c276e71e20",
+        "sha256": "d0a17a07cf5fda7e3d19252c77a43991e56a2a2e84c10a94998760de07876399",
+        "bytes": 142688,
+        "status": "BYTE_VERIFIED_BASELINE_BEFORE_WAVE5"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
+        "commit": "1bb400f890b610cf1b5d282a7e5c910749537974",
+        "blob": "0cb547fecbde1213a9417fca389313f26ab7a680",
+        "sha256": "aff330f7af083e6239ae5695d9808ace376052761fe534a733a62a7ac9016490",
+        "bytes": 25226,
+        "status": "BYTE_VERIFIED_BASELINE_BEFORE_WAVE5"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md",
+        "commit": "1bb400f890b610cf1b5d282a7e5c910749537974",
+        "blob": "72961070a93628510ad3cbd064031b09ed2d46ed",
+        "sha256": "129d7f9d6777815b09813bcdd7a6712f4a28e8426ba1fce6377a05fa5c78ef39",
+        "bytes": 55274,
+        "status": "BYTE_VERIFIED_BASELINE_BEFORE_WAVE5"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/09_NT_EXTENT_THREE_COLUMN_TABLE.md",
+        "commit": "1bb400f890b610cf1b5d282a7e5c910749537974",
+        "blob": "4756cf92d06b8c167a455b4110596a27dd779e39",
+        "sha256": "bf91cb916c15015110d1e766cfdff21b0cd52520074b0404ee1341009f63aa8d",
+        "bytes": 42443,
+        "status": "BYTE_VERIFIED_BASELINE_BEFORE_WAVE5"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md",
+        "commit": "1bb400f890b610cf1b5d282a7e5c910749537974",
+        "blob": "d26e422f39abdd62d12ff3859ead262bd4332912",
+        "sha256": "6b2159aadfbf658f9678915b45a50346b44dfd6a645d8357c29e2a3c9e1661ec",
+        "bytes": 38913,
+        "status": "BYTE_VERIFIED_BASELINE_BEFORE_WAVE5"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+        "commit": "1bb400f890b610cf1b5d282a7e5c910749537974",
+        "blob": "d869dd1332624cd8d825804fa95f8456db908f17",
+        "sha256": "cc3f4eb2cb2fe2a18b05cbc27274b2e98fdc67b828e64373ac16ba5e10e276fa",
+        "bytes": 197599,
+        "status": "BYTE_VERIFIED_BASELINE_BEFORE_WAVE5"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+        "commit": "1bb400f890b610cf1b5d282a7e5c910749537974",
+        "blob": "77ad45495fe3a3c955a42e64acec8b6a95c37c84",
+        "sha256": "04cfafdf0c2271f7a665e0cb0c5b3548864bd7b50b7e307cf44e4589aa3f2394",
+        "bytes": 213524,
+        "status": "BYTE_VERIFIED_BASELINE_BEFORE_WAVE5"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+        "commit": "1bb400f890b610cf1b5d282a7e5c910749537974",
+        "blob": "bb401385de10f09c30a3514560ac657fd88a207b",
+        "sha256": "99daefbff8fead2b4d123c7acd7db8964f6b44c916958e7c9d174e7f7e5f8464",
+        "bytes": 35228,
+        "status": "BYTE_VERIFIED_BASELINE_BEFORE_WAVE5"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+        "commit": "1bb400f890b610cf1b5d282a7e5c910749537974",
+        "blob": "ced7736bf1bb71e507d5e5198d41a6a4ddc5f958",
+        "sha256": "86ff75b9bc726e8f90727771364eb276e8e8b49630080a651c2f1c9c917b6d7b",
+        "bytes": 197236,
+        "status": "BYTE_VERIFIED_BASELINE_BEFORE_WAVE5"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/ot/data/ot-corpus-v1.json",
+        "commit": "1bb400f890b610cf1b5d282a7e5c910749537974",
+        "blob": "2ea06e7591259c126aff579f63bdf33f7079c1db",
+        "sha256": "e010bd5449030ace0f1cc1955f0f3e791bc379bfa693420c23769250cb310911",
+        "bytes": 782480,
+        "status": "BYTE_VERIFIED_BASELINE_DERIVED_REGISTER_REFRESH_ONLY"
+      }
+    ],
+    "createdFiles": [
+      "ИСКУПЛЕНИЕ/evidence/source_controls_wave5_2026-11-03.json",
+      "scripts/atonement_wave5_sources.py"
+    ],
+    "scope": "Bounded Cyril English I/VI and attributed VII fragments; eleven Greek Johannine contexts. Four fresh file pins, not replay of old full packages. Details and independent axes belong to source controls.",
+    "findings": [
+      "Creation/incarnation/adoption through faith and Spirit/essential Sonship distinguished.",
+      "BookVI objection is distinct from the author reply; common humanity is not identical saving participation.",
+      "VII11:52 broad reading preserved; VII11:44 broad release language prevents a whole-author verdict from the BookVI punishment passage.",
+      "Greek contextual preference is argued, not proved by lexical counts or a future tense in John17:20."
+    ],
+    "readingScope": [
+      "Complete displayed ad 1:11-13, 8:46-49, 10:14-17; neighbouring context and header/footer. Not the complete books. Modern 10:14b-15 begins under translator-added heading 15.",
+      "Displayed ad 11:44 and complete 11:49-52, with 45-48/53-54 and preceding general-resurrection analogy; header/footer. Not all of Book VII.",
+      "John 1:9-18; 5:24-29; 8:31-47; 10:11-18,22-30; 11:45-57; 12:20-36; 17:6-26. 1 John 2:28-29; 3:1-10; 5:1-5. Selected contexts read, not whole books; full-file query is mechanical."
+    ],
+    "publicationEligible": false,
+    "mergePerformed": false,
+    "currentLocalPdfReplay": "NOT_RUN_SOURCE_ABSENT",
+    "oldWave3PackageReplay": "NOT_RUN_AS_FULL_PACKAGE",
+    "oldWave4PackageReplay": "NOT_RUN_AS_FULL_PACKAGE",
+    "rawWebHttpReplay": "NOT_AVAILABLE_RENDERED_SELECTIONS_ONLY",
+    "printedCollationClaimed": false,
+    "regressionRecordSemantics": "Records include additive guards and real supersessions. Presence in the byte-verified baseline decides which; they are not all historical mistakes.",
+    "completedPriorNextAction": "wave4.nextSubstantiveStep: bounded Cyril 1:12-13 / 10:16 comparison completed and expanded; previous receipt left historical, not silently rewritten.",
+    "nextSubstantiveStep": "Greek/critical transmission, comparison of VI10:14-15 and VII11:44/52, and bounded OT intertext; no whole-author eschatology/atonement closure.",
+    "checkoutRecovery": {
+      "recordedAtUtc": "2026-11-03T07:46:00.434243+00:00",
+      "method": "Full git cat-file blob/working-file byte comparison before metadata-only reset --soft/read-tree; verified unchanged file hashes afterwards. No working-file rewrite, no alternate branch.",
+      "oldLocalHead": "ec722894e21b004900e9e44a2da9bdb9990f1f7c",
+      "verifiedRemoteHead": "1bb400f890b610cf1b5d282a7e5c910749537974",
+      "branch": "arena/d7043ba0-research",
+      "actualBlobComparisons": 2691,
+      "workspaceFingerprint": "3f448c36b6c89084571ad1b47866c5bc7c51e796dab9ccbc34cd1ea4c7023475",
+      "fileChangesMade": false,
+      "workingTreeClean": true
+    },
+    "verification": {
+      "status": "PASS_SCOPED_PRECOMMIT_CHECKS",
+      "recordedAtUtc": "2026-11-03T08:36:44.514879+00:00",
+      "receiptSha256": "494e29f019f7b17d1665ba489ee4f120b14dcfe736dc766505a5c9f01568fbf5",
+      "headAtRun": "1bb400f890b610cf1b5d282a7e5c910749537974",
+      "exactCommitTree": false,
+      "precommitWorkingTreeFingerprint": "6d7f7af2d57e9afbc84f262cd5de4ec04f30551f48bd296d1265cf817984082f",
+      "trackedFilesCheckedUnchanged": 2693,
+      "rawSourceFilesUnchanged": true,
+      "outcomes": [
+        {
+          "name": "workflow-ast",
+          "returncode": 0,
+          "expected": 0
+        },
+        {
+          "name": "unit-tests",
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "fa127d3a69f3736e4de4f397b80d8a50bf8a45cb552a0a2ce90767c3f7326253"
+        },
+        {
+          "name": "sync",
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "af544ee950f69ce63f68117918d6a87836b45fe7299999f9c7a26a64e4e26155"
+        },
+        {
+          "name": "wave5-byte-replay",
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "68aad75906facaf166184bea3b2e581603a771ac82e543714ebcfaf2f6064ff2"
+        },
+        {
+          "name": "wave3-retained-not-raw-replay",
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "19b72a815e481ad8cab4f80cf75038128361a337691f615f028e7b917fd90fef"
+        },
+        {
+          "name": "wave4-retained-not-raw-replay",
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "95cedcb51c25d01138e50a0af03887c8f1da90c6d6d490d35f0b811e500c9ca6"
+        },
+        {
+          "name": "crossrefs",
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "edd3e4ed6d548561424ad7189dc7b5a214ee85e5f68df3a256e5f4a43c82602d"
+        },
+        {
+          "name": "native-integrity",
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "38b3a72ddf92ff00d84f8447e5f546a6f09b0a1cfdfb7a6844b7595dda9b6aff"
+        },
+        {
+          "name": "claims",
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "0d553d3788aee29cb2069d6acfbc251bbeb37c0a9bdb2230da347ca8abc5b11d"
+        },
+        {
+          "name": "claim-cross",
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "ec56b034fb58407e16de563d53be0b76b7640a0076b58f45a3282b085316a94d"
+        },
+        {
+          "name": "reshoot",
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "42220fecf0a8caeb2b97e0c21c2142733afa652691fe9ae1e98648784a7dbdfb"
+        },
+        {
+          "name": "round-plan",
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "847edf97ecc904bf6245f4e68aa20929b94eaf01df5ab03b6657c03a0cecfd86"
+        },
+        {
+          "name": "round-selfcheck",
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "95b93efc3cb3c0dc05cee780cb3f6ff67b306d6b88be17c3fe2922375496bd84"
+        },
+        {
+          "name": "refuse-unapproved-writers",
+          "returncode": 2,
+          "expected": 2,
+          "logSha256": "5b387292a33a39d096f8f625e3d47c2b1826c099212d9105ff85a5652376a268"
+        },
+        {
+          "name": "rule-traps",
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "123f1eae60188d544c715916d0d607ab6442f6d55a8f1fe727502141e57acb47"
+        },
+        {
+          "name": "diff-whitespace",
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "workflow-guards",
+          "returncode": 0,
+          "expected": 0
+        },
+        {
+          "name": "local-markdown-targets",
+          "returncode": 0,
+          "expected": 0
+        }
+      ],
+      "unitTests": 126,
+      "newTestMethods": 22,
+      "wave5ReversionSubcases": 21,
+      "workflowGuards": 37,
+      "workflowAstFiles": 13,
+      "nativeInMemoryMutations": 18,
+      "freshSourceFiles": 4,
+      "greekContextBlocks": 11,
+      "greekSelectedVerses": 118,
+      "renderedWebObservations": 5,
+      "localMarkdownTargets": 243,
+      "missingMarkdownTargets": 0,
+      "legacy30CaseBattery": "FAIL_RETAINED_SEPARATELY_NOT_RECLASSIFIED_AS_PASS",
+      "scope": "Working-tree check before recording this receipt; exact postcommit verification remains pending. Not a full-source-package replay, human-reading measure, doctrinal closure, merge or publication."
+    },
+    "engineeringChanges": [
+      "Read-only wave5 source validator wired into sync gate, native pipeline inventory and workflow AST list.",
+      "22 new unit-test methods, including all 21 W5 repair reversions and semantic mutations after rehash; no fixture writes to the repository.",
+      "Default checks retain observations; explicit --source-root replays only four new pinned files, eleven contexts and two lexical queries."
+    ],
+    "derivedStateRefresh": {
+      "method": "Native claim register --write on five lanes and rollup; §9.1 seven numeric columns regenerated from that rollup by an explicit bounded script; native reshooter --write, then --check. No invented recovery of the old finalizer.",
+      "initialOutcome": "First native reshoot refused stale §9.1 after the added CYRA-3 card (107→108); corrected from live rollup, then converged.",
+      "claims": 913,
+      "fathersCardsMachineCoverage": 39,
+      "metricsAreReadingCoverage": false
+    },
+    "preliminaryVerification": {
+      "status": "REJECTED_NOT_A_PASS",
+      "receiptSha256": "b6d2c955317b4aa112b43a111389f843205a71d5d392e5df363ed481ca2ebc35",
+      "finishedAtUtc": "2026-11-03T08:32:22.705183+00:00",
+      "trackedFilesUnchanged": true,
+      "rawSourcesUnchanged": true,
+      "issues": [
+        {
+          "check": "legacy run_atonement_mutation_battery.py, 30 cases",
+          "result": "FAIL: one stale expected diagnostic and two unavailable live registry-mirror fixtures; 28 mutations attempted, rollback byte-verified. Not the 18 in-memory mutations of the workflow rule-trap.",
+          "logSha256": "e19c85113d0e4fdb6e79ea59ff2cee9b85a78f50f6117a630a302b4ce3938247",
+          "baselineAssessment": "Battery and validator script bytes unchanged from 1bb; library index byte-identical and has zero matching live registry-mirror fixtures. Gate correctly rejects the mutated historical code count, but legacy test expects the former evidence-class diagnostic. A full baseline battery rerun is not claimed.",
+          "executionBoundary": "This legacy battery transiently edits files then restores them. It was inadvertently included in the preliminary harness, not a read-only check. Full 2693-file final rollback verified; no repeated execution in the working checkout and no PASS claimed. Remains a separate legacy-test repair task, not a required step of the current workflow."
+        },
+        {
+          "check": "local Markdown target harness",
+          "result": "False positives for valid directory links and percent-encoded paths. Fixed the verifier (URI decoding and existence, not files-only); no source links rewritten."
+        }
+      ]
+    }
+  },
+  "wave4VerificationSnapshot": {
+    "asOf": "2026-11-02T23:00:32+00:00",
+    "scope": "Wave3 local gate window; previous wave1/wave2 snapshots retained separately",
+    "repairRecords": 169,
+    "newRepairRecords": 38,
+    "unitTests": 76,
+    "sourceFilesReplayed": 80,
+    "sourceExtractsReplayed": 221,
+    "primaryPdfControlsRetained": 14,
+    "pdfReplay": "NOT_RUN",
+    "markedCitations": 54,
+    "crossReferences": 80,
+    "markdownTargets": 293,
+    "missingMarkdownTargets": 0,
+    "claimSections": 907,
+    "claimMarkers": 1109,
+    "readingMeasuredByLabels": false,
+    "readOnlyChecks": "PASS; file fingerprint unchanged during verification",
+    "publicationEligible": false
   }
 }

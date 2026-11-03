@@ -835,6 +835,37 @@
       "holds": [
         "PUBLICATION_HOLD"
       ]
+    },
+    {
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "BLOCKED",
+      "contextVerified": true,
+      "quoteSafe": true,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "originalGreekRead": false,
+      "version": "LFC 43/48 (1874/1885), P. E. Pusey / T. Randell, Book I pp. 102-108 and Book VI vol.1 pp.657-664 / vol.2 pp.78-91; CCEL/Pearse 2005 transcription, not printed-image collation.",
+      "readingScope": "Complete displayed ad 1:11-13, 8:46-49, 10:14-17; neighbouring context and header/footer. Not the complete books. Modern 10:14b-15 begins under translator-added heading 15.",
+      "quoteSafeScope": "Selected wording and distinctions in the identified English translation, not a Greek wording claim, full-work doctrine or printed page verification.",
+      "textCompleteness": "SELECTED_CONTINUOUS_COMMENTARY_CONTEXTS",
+      "rightsBasis": "This text was transcribed by Roger Pearse, Ipswich, UK, 2005. All material on this page is in the public domain - copy freely.",
+      "cardId": "CYRA-3",
+      "file": "05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
+      "subject": "Кирилл, In Ioannem I/VI: сотворение, воплощение, усыновление",
+      "genre": "экзегетический комментарий",
+      "primaryLocators": "I1:11-13 markers102-108; VI8:46-49 markers657-664 / 10:14-17 vol2 markers78-91; English translation, not print",
+      "sourceControl": "ИСКУПЛЕНИЕ/evidence/source_controls_wave5_2026-11-03.json",
+      "sourceControlId": "CYRIL-CONTEXTS",
+      "falseFriendFlags": [
+        "Do not transfer BookVII fragment status to I/VI.",
+        "Objection is not an unqualified author conclusion.",
+        "General resurrection and differentiated outcomes do not settle punishment duration; VII11:44 broad release language retained.",
+        "CYRA-1 remains Prophets; no Greek John acquired through that metadata."
+      ]
     }
   ],
   "stateCards": [
@@ -1445,25 +1476,41 @@
     "method": "Recorded after bounded primary-text reading; not an exact time of human reading. Source receipts, locators and read scopes are in the linked control; only their consistency/bytes are mechanically replayable.",
     "recheckCommand": "python3 -B scripts/atonement_wave4_sources.py (offline); --source-root /external/files for actual new-file byte/extract replay"
   },
+  "cyrilJohannineReviewWave5": {
+    "recordedAtUtc": "2026-11-03T08:16:59.467778+00:00",
+    "controls": "ИСКУПЛЕНИЕ/evidence/source_controls_wave5_2026-11-03.json",
+    "c25": "OPEN",
+    "interpretationStatus": "ARGUED_PROVISIONAL_NOT_MACHINE_PROOF",
+    "workingPreference": "Gathered believing people of God across nations as referent of John11:52; election/prolepsis can coexist. This is weighed contextual interpretation, not lexical proof, exclusion of all other purposes of death, or erasure of the published Cyril creation reading.",
+    "scope": "Bounded Cyril English I/VI and attributed VII fragments; eleven Greek Johannine contexts. Four fresh file pins, not replay of old full packages. Details and independent axes belong to source controls.",
+    "publicationEligible": false,
+    "findings": [
+      "Creation/incarnation/adoption through faith and Spirit/essential Sonship distinguished.",
+      "BookVI objection is distinct from the author reply; common humanity is not identical saving participation.",
+      "VII11:52 broad reading preserved; VII11:44 broad release language prevents a whole-author verdict from the BookVI punishment passage.",
+      "Greek contextual preference is argued, not proved by lexical counts or a future tense in John17:20."
+    ],
+    "nextAction": "Greek/critical transmission, comparison of VI10:14-15 and VII11:44/52, and bounded OT intertext; no whole-author eschatology/atonement closure."
+  },
   "claimRegister20261026": {
     "чтоЭто": "реестр доводов лана «fathers»: строка = раздел прозы уровня ## с локатором, классом из её собственных маркеров и отметкой съёма",
     "чтоСчитаетсяДоводом": "заголовок «## » в любом .md лана, включая вложенные папки (synthesis/drafts, ot/tools); тело секции — до следующего «## » или до конца файла",
     "приоритет": "УДЕРЖИВАЕТСЯ > ОТКРЫТО > ЗАКРЫТО; маркеров нет -> БЕЗ МАРКЕРА; маркер вне классификации -> ошибка съёма, а не «прочее»",
     "метод": "scripts/atonement_claim_register.py обходит прозу лана целиком (без выборки), разбирает маркеры вида `ВЕРДИКТ`, сверяет локатор побайтово (файл + номер строки + текст)",
-    "строк": 107,
+    "строк": 108,
     "файлов": 12,
-    "покрытоМашинно": 38,
-    "покрытоПоФайлу": 107,
+    "покрытоМашинно": 39,
+    "покрытоПоФайлу": 108,
     "файловПрозы": 12,
     "файловБезКарточки": 0,
-    "разрешеноЛокаторов": 107,
+    "разрешеноЛокаторов": 108,
     "неРазрешено": 0,
     "поКлассам": {
       "БЕЗ МАРКЕРА": 60,
-      "УДЕРЖИВАЕТСЯ": 47
+      "УДЕРЖИВАЕТСЯ": 48
     },
     "маркеры": {
-      "всего": 139,
+      "всего": 143,
       "различных": 18,
       "словарь": {
         "APPARATUS_FALSE_FRIEND": "УДЕРЖИВАЕТСЯ",
@@ -1492,17 +1539,17 @@
         "RIGHTS_HOLD": 9,
         "FALSE_FRIEND": 8,
         "ARCHIVE_AVAILABLE": 6,
-        "PUBLICATION_HOLD": 5,
+        "PUBLICATION_HOLD": 6,
         "QUOTE_RISK": 5,
         "EVIDENCE_HOLD": 4,
+        "EXACT_LOCATOR_VERIFIED": 4,
+        "PUBLICATION_ELIGIBLE": 4,
         "BLOCKED": 3,
-        "EXACT_LOCATOR_VERIFIED": 3,
-        "PUBLICATION_ELIGIBLE": 3,
         "ARCHIVE_READ": 2,
         "FALSE_LOCATOR": 2,
         "FULL_OBJECT_VERIFIED": 2,
+        "PARTIAL_OBJECT": 2,
         "APPARATUS_FALSE_FRIEND": 1,
-        "PARTIAL_OBJECT": 1,
         "RIGHTS_UNCLEAR": 1
       },
       "служебные": [],
@@ -2328,10 +2375,27 @@
         "машинноПоФайлу": true
       },
       {
-        "код": "ANS-1@05_FIFTH_CENTURY_AND_BOUNDARY_CARDS",
+        "код": "CYRA-3@05_FIFTH_CENTURY_AND_BOUNDARY_CARDS",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
         "строка": 164,
+        "срез": "CYRA-3. Кирилл, In Ioannem I/VI — сотворение, воплощение, усыновление",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "EXACT_LOCATOR_VERIFIED",
+          "PARTIAL_OBJECT",
+          "PUBLICATION_ELIGIBLE",
+          "PUBLICATION_HOLD"
+        ],
+        "машинно": true,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "ANS-1@05_FIFTH_CENTURY_AND_BOUNDARY_CARDS",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
+        "строка": 183,
         "срез": "ANS-1. Анзельм, *Cur Deus Homo* (1098) — **граница**, а не отец",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 1,
@@ -3032,8 +3096,8 @@
     ],
     "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
     "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check fathers",
-    "measuredAt": "2026-11-03T01:04:38Z",
-    "checkedAt": "2026-11-03T01:04:38Z",
-    "предыдущийСъём": "2026-11-03T01:01:51Z"
+    "measuredAt": "2026-11-03T08:21:47Z",
+    "checkedAt": "2026-11-03T08:21:47Z",
+    "предыдущийСъём": "2026-11-03T01:04:38Z"
   }
 }
