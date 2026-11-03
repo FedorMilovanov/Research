@@ -18,6 +18,7 @@ import unicodedata
 
 import atonement_reshoot_state as reshoot
 import atonement_wave3_sources as wave3
+import atonement_wave4_sources as wave4
 from atonement_source_metrics import source_label_prefix, legacy_carrier_code
 
 from atonement_claim_register import classify_token
@@ -566,6 +567,239 @@ class ActualWave3Tests(unittest.TestCase):
                 self.assertTrue(any(row["id"] in e for e in check_repairs(ROOT, self.report, {row["file"]: broken})))
                 tested.add(row["id"])
         self.assertTrue(wave3.REQUIRED_REPAIRS <= tested)
+
+
+class ActualWave4Tests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.report = json.loads((ROOT / REPORT).read_text())
+        cls.control = json.loads((ROOT / wave4.CONTROL).read_text())
+
+    def errors(self, control=None, report=None):
+        return wave4.check_controls(ROOT, self.report if report is None else report,
+                                    self.control if control is None else control)
+
+    @staticmethod
+    def web(control, ident):
+        return next(x for x in control["webObservations"] if x["id"] == ident)
+
+    def replace_web_phrase(self, row, old, new):
+        before = wave4.web_text(row)
+        self.assertIn(old, before)
+        for selection in row["selections"]:
+            selection["text"] = selection["text"].replace(old, new)
+        after = wave4.web_text(row)
+        self.assertNotEqual(before, after)
+        row["textSha256"] = wave4.text_hash(after)
+
+    def test_current_bounded_controls_and_actual_baseline_bytes(self):
+        self.assertEqual(self.errors(), [])
+
+    def test_missing_file_pin_cannot_become_empty_success(self):
+        broken = deepcopy(self.control)
+        broken["files"].pop()
+        self.assertTrue(any("file pins" in x for x in self.errors(broken)))
+
+    def test_lost_excerpt_and_changed_text_hash_refused(self):
+        broken = deepcopy(self.control)
+        broken["extracts"].pop()
+        self.assertTrue(any("file extract" in x for x in self.errors(broken)))
+        broken = deepcopy(self.control)
+        broken["extracts"][0]["text"] += " changed"
+        self.assertTrue(any("extract identity/hash" in x for x in self.errors(broken)))
+
+    def test_missing_web_observation_refused(self):
+        broken = deepcopy(self.control)
+        broken["webObservations"].pop()
+        self.assertTrue(any("rendered web observation" in x for x in self.errors(broken)))
+
+    def test_rendered_capture_is_not_a_raw_http_hash(self):
+        for key, value in (("rawHtmlReceived", True), ("rawObjectSha256", "a" * 64),
+                           ("hashScope", "RAW_HTTP_BYTES"), ("fetchTimestampUtc", "2026-11-03T00:00:00Z")):
+            with self.subTest(field=key):
+                broken = deepcopy(self.control)
+                broken["webObservations"][0][key] = value
+                self.assertTrue(any("promoted to HTTP bytes" in x for x in self.errors(broken)))
+
+    def test_cyril_all_mankind_and_creation_cannot_be_replaced_by_election(self):
+        broken = deepcopy(self.control)
+        row = self.web(broken, "CYRIL-7-WEB")
+        self.replace_web_phrase(row, "for all mankind", "for the elect")
+        self.replace_web_phrase(row, "by way of creation", "by election")
+        self.assertTrue(any("critical web text missing" in x for x in self.errors(broken)))
+
+    def test_cyril_faith_boundary_cannot_be_dropped_even_with_a_new_hash(self):
+        broken = deepcopy(self.control)
+        row = self.web(broken, "CYRIL-7-WEB")
+        self.replace_web_phrase(row, "through faith into one fold, the Church", "automatically into final salvation")
+        self.assertTrue(any("critical web text missing" in x for x in self.errors(broken)))
+
+    def test_cyril_fragment_not_promoted_to_authentic_complete_greek(self):
+        for key, value in (("attribution", "INDEPENDENTLY_AUTHENTICATED"), ("textCompleteness", "FULL_BOOK"),
+                           ("originalGreekRead", True), ("universalFinalSalvationProved", True),
+                           ("targetPageMarkers", "133-135")):
+            with self.subTest(field=key):
+                broken = deepcopy(self.control)
+                next(s for s in broken["sources"] if s["id"] == "CYRIL-FRAGMENT")[key] = value
+                self.assertTrue(any("Cyril fragment" in x for x in self.errors(broken)))
+
+    def test_alford_displayed_greek_not_silently_replaced_from_acts(self):
+        broken = deepcopy(self.control)
+        row = self.web(broken, "ALFORD-11-WEB")
+        self.replace_web_phrase(row, "τασσόμενοι", "τεταγμένοι")
+        self.assertTrue(any("critical web text missing" in x for x in self.errors(broken)))
+
+    def test_calvin_suspect_sentence_is_not_silently_emended(self):
+        broken = deepcopy(self.control)
+        row = self.web(broken, "CALVIN-1-WEB")
+        self.replace_web_phrase(row, "is occupied by the Jews", "is occupied by the Gentiles")
+        self.assertTrue(any("critical web text missing" in x for x in self.errors(broken)))
+
+    def test_shared_calvin_defect_not_assigned_to_ai_without_evidence(self):
+        broken = deepcopy(self.control)
+        broken["calvinDigitalDefect"]["originAssignedToAIConversion"] = True
+        self.assertTrue(any("AI-conversion error" in x for x in self.errors(broken)))
+
+    def test_translated_latin_not_a_greek_original(self):
+        broken = deepcopy(self.control)
+        next(s for s in broken["sources"] if s["id"] == "CHRYSOSTOM")["originalGreekRead"] = True
+        self.assertTrue(any("Latin translation" in x for x in self.errors(broken)))
+
+    def test_calvin_mirrors_not_independent_or_original_language(self):
+        for field in ("independentMirrorsClaimed", "originalLanguageRead"):
+            broken = deepcopy(self.control)
+            next(s for s in broken["sources"] if s["id"] == "CALVIN")[field] = True
+            self.assertTrue(any("Calvin original-language" in x for x in self.errors(broken)))
+
+    def test_scope_rights_and_publication_are_not_one_axis(self):
+        for field in ("fullCorpusReadingClaimed", "wholeWorksRead", "printedCollationClaimed",
+                      "allAuthorConsensusClaimed", "publicationEligible"):
+            broken = deepcopy(self.control)
+            broken[field] = True
+            self.assertTrue(any("overclaim" in x for x in self.errors(broken)))
+        broken = deepcopy(self.control)
+        broken["sources"][0]["evidenceClass"] = "A1-translation"
+        self.assertTrue(any("independent axis" in x for x in self.errors(broken)))
+        broken = deepcopy(self.control)
+        broken["sources"][0]["publicationState"] = "PROMOTE"
+        self.assertTrue(any("publication boundary" in x for x in self.errors(broken)))
+
+    def test_metadata_cannot_replace_the_actual_primary_refs(self):
+        broken = deepcopy(self.control)
+        next(s for s in broken["sources"] if s["id"] == "CALVIN")["evidenceRefs"] = ["CALVIN-README"]
+        self.assertTrue(any("missing primary evidence" in x for x in self.errors(broken)))
+
+    def test_new_patristic_card_must_match_its_scoped_source(self):
+        broken = deepcopy(self.control)
+        next(s for s in broken["sources"] if s["id"] == "AUGUSTINE")["readingScope"] = "entire Augustine corpus"
+        self.assertTrue(any("AUG-2 card/source scope mismatch" in x for x in self.errors(broken)))
+
+    def test_malformed_whole_xml_not_called_repaired_or_valid(self):
+        broken = deepcopy(self.control)
+        broken["pl35WholeDocumentParse"]["status"] = "PASS"
+        broken["pl35WholeDocumentParse"]["sourceRepaired"] = True
+        self.assertTrue(any("malformed whole XML" in x for x in self.errors(broken)))
+
+    def test_historical_timezone_correction_cannot_be_reversed(self):
+        for field in ("moscowJustificationWithdrawn", "historicalUtcInstantsRetained"):
+            broken = deepcopy(self.control)
+            broken["timeProvenance"][field] = False
+            self.assertTrue(any("timezone provenance" in x for x in self.errors(broken)))
+
+    def test_missing_baseline_and_false_removal_history_refused(self):
+        broken = deepcopy(self.report)
+        broken["wave4"]["supersededSnapshots"][0]["sha256"] = "0" * 64
+        self.assertTrue(any("Git preimage byte mismatch" in x for x in self.errors(report=broken)))
+        broken = deepcopy(self.report)
+        row = next(r for r in broken["repairs"] if r.get("controlType") == "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE")
+        row["rejectedWordingPresentInBaseline"] = True
+        self.assertTrue(any("invented historical-removal" in x for x in self.errors(report=broken)))
+
+    def test_deleting_both_record_and_declaration_cannot_hollow_the_gate(self):
+        broken = deepcopy(self.report)
+        broken["repairs"] = [r for r in broken["repairs"] if r["id"] != "W4-NT15"]
+        broken["wave4"]["repairIds"].remove("W4-NT15")
+        self.assertTrue(any("repair coverage mismatch" in x for x in self.errors(report=broken)))
+
+    def test_all_22_wave4_reversion_controls_execute_in_memory(self):
+        tested = set()
+        for row in self.report["repairs"]:
+            if not row["id"].startswith("W4-"):
+                continue
+            with self.subTest(repair=row["id"]):
+                original = (ROOT / row["file"]).read_text()
+                broken = original.replace(row["required"], row["removed"], 1)
+                self.assertNotEqual(original, broken)
+                self.assertTrue(any(row["id"] in e for e in check_repairs(ROOT, self.report, {row["file"]: broken})))
+                tested.add(row["id"])
+        self.assertEqual(tested, wave4.REQUIRED_REPAIRS)
+
+    def test_missing_external_files_are_failure_not_skipped_success(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            errors = wave4.verify_sources(Path(tmp), self.control)
+        self.assertTrue(any("unavailable verified source" in e for e in errors))
+
+    def test_actual_byte_identity_is_checked_before_extracting(self):
+        raw = b"first\nsecond\n"
+        fixture = {"files": [{"id": "fixture", "externalRelativePath": "file.txt", "bytes": len(raw),
+                               "gitBlob": wave4.git_blob(raw), "sha256": wave4.sha256(raw)}],
+                   "extracts": [{"id": "fixture-lines", "sourceFile": "fixture", "selector": {"kind": "lines", "firstLine": 1, "lastLine": 2},
+                                  "text": "first second", "textSha256": wave4.text_hash("first second")}]}
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp, "file.txt")
+            path.write_bytes(raw)
+            self.assertEqual(wave4.verify_sources(Path(tmp), fixture), [])
+            path.write_bytes(raw + b"changed")
+            self.assertTrue(any("file bytes changed" in e for e in wave4.verify_sources(Path(tmp), fixture)))
+
+    def test_source_path_escape_refused(self):
+        broken = deepcopy(self.control)
+        broken["files"][0]["externalRelativePath"] = "../outside.xml"
+        self.assertTrue(any("unsafe external source path" in e for e in self.errors(broken)))
+        with tempfile.TemporaryDirectory() as tmp:
+            self.assertTrue(any("unsafe source path" in e for e in wave4.verify_sources(Path(tmp), broken)))
+
+    def test_augustine_fragment_parser_preserves_ocr_and_uses_incipit(self):
+        raw = (b'<root>invalid & outside fragment<ab><title type="sub">TRACTATUS XLIX.</title></ab>'
+               b'<p>25. Dicit ei Martha: wrong OCR number, do not select me.</p>'
+               b'<p>25. Multi ergo ex Judaeis: selected.</p><p>26. Context.</p>'
+               b'<p>27. Joan. x, 46. Do not repair me.</p><p>28. End.</p>'
+               b'<ab><title type="sub">TRACTATUS L.</title></ab></root>')
+        before = raw
+        result = wave4.extract(raw, {"kind": "augustine-49-fragment"})
+        self.assertNotIn("Martha", result)
+        self.assertIn("Joan. x, 46", result)
+        self.assertEqual(raw, before)
+        duplicate = raw.replace(b'<p>26.', b'<p>25. Multi ergo ex Judaeis: duplicate.</p><p>26.')
+        with self.assertRaises(ValueError):
+            wave4.extract(duplicate, {"kind": "augustine-49-fragment"})
+
+    def test_source_helpers_are_in_the_native_byte_inventory(self):
+        required = {"scripts/atonement_wave3_sources.py", "scripts/atonement_wave4_sources.py", "scripts/atonement_source_metrics.py"}
+        self.assertTrue(required <= set(reshoot.PIPELINE_FILES))
+        inventory = reshoot.pipeline_inventory()
+        self.assertTrue(required <= set(inventory["файлы"]))
+        self.assertTrue(all(isinstance(inventory["файлы"][p], dict) for p in required))
+
+    def test_new_card_ids_are_visible_to_the_native_claim_register(self):
+        from atonement_claim_register import CODE_RE, machine_ids
+        wanted = {"CHR-2", "AUG-2", "CYRA-2"}
+        self.assertTrue(wanted <= machine_ids("fathers"))
+        data = json.loads((ROOT / "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json").read_text())
+        for card in data["cards"]:
+            if card["cardId"] not in wanted:
+                continue
+            text = (ROOT / "ИСКУПЛЕНИЕ/fathers" / card["file"]).read_text()
+            titles = [line[3:] for line in text.splitlines() if line.startswith("## " + card["cardId"] + ".")]
+            self.assertEqual(len(titles), 1)
+            self.assertEqual(CODE_RE.match(titles[0]).group(1), card["cardId"])
+
+    def test_calvin_extractor_distinguishes_verse_from_italic_comment(self):
+        raw = b'**16.** Verse text.\n\n**16.** *Lemma.* Comment.\n\n**17.** *Next.* Other.\n'
+        result = wave4.extract(raw, {"kind": "calvin-comments", "firstVerse": 16, "lastVerse": 16})
+        self.assertEqual(result, "16. Lemma. Comment.")
+        with self.assertRaises(ValueError):
+            wave4.extract(raw + b'\n**16.** *Duplicate.*\n', {"kind": "calvin-comments", "firstVerse": 16, "lastVerse": 16})
 
 
 if __name__ == "__main__":

@@ -2721,6 +2721,348 @@
       },
       "status": "INTEGRATED_REVIEWED",
       "kind": "WAVE3_SCOPED_CORRECTION"
+    },
+    {
+      "id": "W4-NT15",
+      "file": "ИСКУПЛЕНИЕ/nt/15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md",
+      "removed": "| **Златоуст, Кирилл, Августин** на этот локус | Нового получения и чтения здесь нет |",
+      "required": "**Родство по сотворению — реальная засвидетельствованная альтернатива**",
+      "reason": "Replace the acquisition queue with bounded primary contexts; distinguish designation/election/creation/faith, preserve Cyril positive counterevidence and actual source limitations.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+        "scope": "Bounded primary commentator contexts, explicit transmission/translation limits and source receipts; not full works or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE4_SCOPED_CORRECTION",
+      "rejectedWordingPresentInBaseline": true,
+      "controlType": "BASELINE_REMOVAL_OR_EXPLICIT_SUPERSESSION"
+    },
+    {
+      "id": "W4-C25",
+      "file": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+      "removed": "Нового контекстного чтения Кальвина и Алфорда здесь не заявлено;",
+      "required": "**родство всех людей по сотворению**",
+      "reason": "Update C25 evidence and actual alternatives without closing the biblical extent question or reversing the accepted Prokopenko findings.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+        "scope": "Bounded primary commentator contexts, explicit transmission/translation limits and source receipts; not full works or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE4_SCOPED_CORRECTION",
+      "rejectedWordingPresentInBaseline": true,
+      "controlType": "BASELINE_REMOVAL_OR_EXPLICIT_SUPERSESSION"
+    },
+    {
+      "id": "W4-H11",
+      "file": "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md",
+      "removed": "Кальвин и Алфорд заново не прочитаны; прежние выписки сохранены в Git-снимке,",
+      "required": "**По сотворению:** опубликованный под именем **Кирилла**",
+      "reason": "Replace stale author access and prevent the generic prohibition on all-human children from suppressing the creation-based fragment.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+        "scope": "Bounded primary commentator contexts, explicit transmission/translation limits and source receipts; not full works or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE4_SCOPED_CORRECTION",
+      "rejectedWordingPresentInBaseline": true,
+      "controlType": "BASELINE_REMOVAL_OR_EXPLICIT_SUPERSESSION"
+    },
+    {
+      "id": "W4-P13",
+      "file": "ИСКУПЛЕНИЕ/nt/06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md",
+      "removed": "| P13-c | `A` | принадлежность до будущего собирания; избранническое объяснение у Гилла |",
+      "required": "| P13-d | `B` | чада по сотворению;",
+      "reason": "Add source-attributed alternatives to P13 without turning A/B/N interpretive labels into evidence classes.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+        "scope": "Bounded primary commentator contexts, explicit transmission/translation limits and source receipts; not full works or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE4_SCOPED_CORRECTION",
+      "rejectedWordingPresentInBaseline": true,
+      "controlType": "BASELINE_REMOVAL_OR_EXPLICIT_SUPERSESSION"
+    },
+    {
+      "id": "W4-NT09",
+      "file": "ИСКУПЛЕНИЕ/nt/09_NT_EXTENT_THREE_COLUMN_TABLE.md",
+      "removed": "H11 / P13 синхронизированы |",
+      "required": "чада по сотворению во фрагменте Кирилла",
+      "reason": "Keep primary text and commentator interpretations in different columns while propagating the new alternatives.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+        "scope": "Bounded primary commentator contexts, explicit transmission/translation limits and source receipts; not full works or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE4_SCOPED_CORRECTION",
+      "rejectedWordingPresentInBaseline": true,
+      "controlType": "BASELINE_REMOVAL_OR_EXPLICIT_SUPERSESSION"
+    },
+    {
+      "id": "W4-QMAP",
+      "file": "ИСКУПЛЕНИЕ/04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md",
+      "removed": "**Волна 3 закрыла все авторские чтения Ин. 11:52.**",
+      "required": "**Новая широкая альтернатива имеет собственный локус:**",
+      "reason": "Extend the existing question map with actual positive counterevidence; prohibit collapsing the corrected Wesley attribution into absence of every broad reading.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+        "scope": "Bounded primary commentator contexts, explicit transmission/translation limits and source receipts; not full works or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE4_SCOPED_ADDITION_GUARD",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "removedFieldMeaning": "Legacy field name: prohibited future overclaim used as a negative regression control; NOT wording asserted to have existed or been removed from the baseline."
+    },
+    {
+      "id": "W4-CALVIN",
+      "file": "ИСКУПЛЕНИЕ/13_DORT_II_CALVIN_OWEN_EXTENT.md",
+      "removed": "### 2.5 Кальвин на Ин. 11:52: историческая атрибуция и предел её использования",
+      "required": "**10:16 теперь действительно прочитан**",
+      "reason": "Supersede the stale access limit with actual Calvin reading while retaining the wave3 failed-access history and unverified historical print citation.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+        "scope": "Bounded primary commentator contexts, explicit transmission/translation limits and source receipts; not full works or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE4_SCOPED_CORRECTION",
+      "rejectedWordingPresentInBaseline": true,
+      "controlType": "BASELINE_REMOVAL_OR_EXPLICIT_SUPERSESSION"
+    },
+    {
+      "id": "W4-F04",
+      "file": "ИСКУПЛЕНИЕ/fathers/04_THIRD_FOURTH_CENTURY_CARDS.md",
+      "removed": "**Златоуст Hom. 65 проверен по греческому оригиналу в волне 4.**",
+      "required": "## CHR-2. Златоуст",
+      "reason": "Add the actually read John homily and preserve both proleptic naming and deliverance language without calling Latin a Greek original.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+        "scope": "Bounded primary commentator contexts, explicit transmission/translation limits and source receipts; not full works or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE4_SCOPED_ADDITION_GUARD",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "removedFieldMeaning": "Legacy field name: prohibited future overclaim used as a negative regression control; NOT wording asserted to have existed or been removed from the baseline."
+    },
+    {
+      "id": "W4-F05",
+      "file": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
+      "removed": "| Кирилл Александрийский | **греч. сверено** (In XII Prophetas, Pusey 1868, First1K) — карточка CYRA-1;",
+      "required": "**Все — чада по сотворению**",
+      "reason": "Integrate Augustine 49 and the transmitted Cyril fragment; explicitly withdraw blanket absence-of-extent and all-In-Ioannem-unavailable claims without certifying other works.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+        "scope": "Bounded primary commentator contexts, explicit transmission/translation limits and source receipts; not full works or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE4_SCOPED_CORRECTION",
+      "rejectedWordingPresentInBaseline": true,
+      "controlType": "BASELINE_REMOVAL_OR_EXPLICIT_SUPERSESSION"
+    },
+    {
+      "id": "W4-F08",
+      "file": "ИСКУПЛЕНИЕ/fathers/08_UNIVERSAL_TEXTS_IN_THE_FATHERS.md",
+      "removed": "1. «Отцы учили всеобщему искуплению» — у них нет доктрины объёма;",
+      "required": "**смерть для всего человечества; собирание через веру в Церковь**",
+      "reason": "Replace blanket absence/consensus claims with directly differentiated John 11 readings; distinguish the scope of old universal-formula selections.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+        "scope": "Bounded primary commentator contexts, explicit transmission/translation limits and source receipts; not full works or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE4_SCOPED_CORRECTION",
+      "rejectedWordingPresentInBaseline": true,
+      "controlType": "BASELINE_REMOVAL_OR_EXPLICIT_SUPERSESSION"
+    },
+    {
+      "id": "W4-F10",
+      "file": "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
+      "removed": "**Латинский Montfaucon удостоверяет греческий оригинал Hom. 65.**",
+      "required": "**латинский перевод Montfaucon**, не греческий оригинал",
+      "reason": "Register original Latin versus translated Latin/English precisely, including malformed XML and Cyril fragment transmission.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+        "scope": "Bounded primary commentator contexts, explicit transmission/translation limits and source receipts; not full works or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE4_SCOPED_ADDITION_GUARD",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "removedFieldMeaning": "Legacy field name: prohibited future overclaim used as a negative regression control; NOT wording asserted to have existed or been removed from the baseline."
+    },
+    {
+      "id": "W4-P06",
+      "file": "docs/research/atonement/06_detailed_refutation_of_prokopenko_arguments.md",
+      "removed": "Кальвин и Алфорд в этой волне заново не прочитаны; прежние выписки не повышаются до новой проверки.",
+      "required": "**Фрагмент под именем Кирилла** прямо говорит о смерти для всего человечества",
+      "reason": "Propagate actual commentator counterevidence into the double-punishment dependency while preserving the accepted wave2 verdict and no fresh PDF replay.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+        "scope": "Bounded primary commentator contexts, explicit transmission/translation limits and source receipts; not full works or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE4_SCOPED_CORRECTION",
+      "rejectedWordingPresentInBaseline": true,
+      "controlType": "BASELINE_REMOVAL_OR_EXPLICIT_SUPERSESSION"
+    },
+    {
+      "id": "W4-P18",
+      "file": "docs/research/atonement/18_juridical_fallacies_and_double_punishment_critique.md",
+      "removed": "Кальвин и Алфорд в этой волне заново не прочитаны; прежние выписки не повышаются до новой проверки.",
+      "required": "**Фрагмент под именем Кирилла** прямо говорит о смерти для всего человечества",
+      "reason": "Propagate actual commentator counterevidence into the double-punishment dependency while preserving the accepted wave2 verdict and no fresh PDF replay.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+        "scope": "Bounded primary commentator contexts, explicit transmission/translation limits and source receipts; not full works or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE4_SCOPED_CORRECTION",
+      "rejectedWordingPresentInBaseline": true,
+      "controlType": "BASELINE_REMOVAL_OR_EXPLICIT_SUPERSESSION"
+    },
+    {
+      "id": "W4-P04",
+      "file": "docs/research/atonement/04_exegetical_defense_of_definite_atonement.md",
+      "removed": "**Патристического чтения на основании сотворения Ин. 11:52 не засвидетельствовано.**",
+      "required": "**Нельзя исключить положительное контрсвидетельство:**",
+      "reason": "Require the definite-atonement defense to address the actual creation-based fragment rather than exclude all broad readings by grammar or a false Wesley attribution.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+        "scope": "Bounded primary commentator contexts, explicit transmission/translation limits and source receipts; not full works or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE4_SCOPED_ADDITION_GUARD",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "removedFieldMeaning": "Legacy field name: prohibited future overclaim used as a negative regression control; NOT wording asserted to have existed or been removed from the baseline."
+    },
+    {
+      "id": "W4-S04",
+      "file": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+      "removed": "**Волна 4 отменила принятые выводы C-22–C-24.**",
+      "required": "**Новая ограниченная сверка, волна 4:**",
+      "reason": "Integrate the new Calvin/patristic comparison into the existing verdict dossier without pretending to reread the PDF or other Calvin loci.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+        "scope": "Bounded primary commentator contexts, explicit transmission/translation limits and source receipts; not full works or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE4_SCOPED_ADDITION_GUARD",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "removedFieldMeaning": "Legacy field name: prohibited future overclaim used as a negative regression control; NOT wording asserted to have existed or been removed from the baseline."
+    },
+    {
+      "id": "W4-F00",
+      "file": "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
+      "removed": "**Волна 4 удостоверяет полное чтение всех пяти авторов.**",
+      "required": "**родство всех людей по сотворению**",
+      "reason": "Update the existing authority scope: exact new contexts, positive alternatives and open original/print/publication boundaries.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+        "scope": "Bounded primary commentator contexts, explicit transmission/translation limits and source receipts; not full works or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE4_SCOPED_ADDITION_GUARD",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "removedFieldMeaning": "Legacy field name: prohibited future overclaim used as a negative regression control; NOT wording asserted to have existed or been removed from the baseline."
+    },
+    {
+      "id": "W4-N00",
+      "file": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
+      "removed": "**Волна 4 удостоверяет полное чтение всех пяти авторов.**",
+      "required": "**Объяснение через сотворение не исключено исправлением ошибки об Уэсли**",
+      "reason": "Update the existing authority scope: exact new contexts, positive alternatives and open original/print/publication boundaries.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+        "scope": "Bounded primary commentator contexts, explicit transmission/translation limits and source receipts; not full works or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE4_SCOPED_ADDITION_GUARD",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "removedFieldMeaning": "Legacy field name: prohibited future overclaim used as a negative regression control; NOT wording asserted to have existed or been removed from the baseline."
+    },
+    {
+      "id": "W4-ROOT00",
+      "file": "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+      "removed": "**Волна 4 удостоверяет полное чтение всех пяти авторов.**",
+      "required": "**Кириллов фрагмент не подменён избранническим чтением:**",
+      "reason": "Update the existing authority scope: exact new contexts, positive alternatives and open original/print/publication boundaries.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+        "scope": "Bounded primary commentator contexts, explicit transmission/translation limits and source receipts; not full works or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE4_SCOPED_ADDITION_GUARD",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "removedFieldMeaning": "Legacy field name: prohibited future overclaim used as a negative regression control; NOT wording asserted to have existed or been removed from the baseline."
+    },
+    {
+      "id": "W4-NT-DATA",
+      "file": "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+      "removed": "\"wave4WholeWorksRead\": true",
+      "required": "\"commentaryReviewWave4\"",
+      "reason": "Synchronize the NT machine owner with the bounded new commentator reading, without redating wave3 acquisition or changing C25 to closed.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+        "scope": "Bounded primary commentator contexts, explicit transmission/translation limits and source receipts; not full works or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE4_SCOPED_ADDITION_GUARD",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "removedFieldMeaning": "Legacy field name: prohibited future overclaim used as a negative regression control; NOT wording asserted to have existed or been removed from the baseline."
+    },
+    {
+      "id": "W4-F-DATA",
+      "file": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+      "removed": "\"wave4GreekChrysostomVerified\": true",
+      "required": "\"cardId\": \"CYRA-2\"",
+      "reason": "Add canonical-axis scoped patristic records and supersede blanket Cyril/unread-Latin flags without recertifying unrelated legacy cards.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+        "scope": "Bounded primary commentator contexts, explicit transmission/translation limits and source receipts; not full works or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE4_SCOPED_ADDITION_GUARD",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "removedFieldMeaning": "Legacy field name: prohibited future overclaim used as a negative regression control; NOT wording asserted to have existed or been removed from the baseline."
+    },
+    {
+      "id": "W4-ROOT-DATA",
+      "file": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+      "removed": "Local document/review day in Europe/Moscow, not a timestamp of source acquisition or complete reading. Exact byte verification stamps are in the source controls; evening 2026-11-02 UTC is 2026-11-03 locally.",
+      "required": "SUPERSEDED: Moscow was not authorized as a retrospective provenance explanation.",
+      "reason": "Correct the day-granularity rationale while preserving its exact superseded wording and real historical UTC timestamps; add wave4 scope separately.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+        "scope": "Bounded primary commentator contexts, explicit transmission/translation limits and source receipts; not full works or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE4_SCOPED_CORRECTION",
+      "historicalRetained": true,
+      "rejectedWordingPresentInBaseline": true,
+      "controlType": "BASELINE_REMOVAL_OR_EXPLICIT_SUPERSESSION"
+    },
+    {
+      "id": "W4-CLOCK",
+      "file": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+      "removed": "recordedOn is the local document date (Europe/Moscow); byteVerifiedAt is the actual UTC process timestamp. 2026-11-02 evening UTC is 2026-11-03 in Moscow. Earlier acquisition/replay receipts are not retimestamped as fresh reading.",
+      "required": "SUPERSEDED: the earlier Europe/Moscow explanation is withdrawn",
+      "reason": "Explicitly retract unsupported timezone provenance without altering any actual earlier source/commit timestamp or erasing failed-access history.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+        "scope": "Bounded primary commentator contexts, explicit transmission/translation limits and source receipts; not full works or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE4_SCOPED_CORRECTION",
+      "historicalRetained": true,
+      "rejectedWordingPresentInBaseline": true,
+      "controlType": "BASELINE_REMOVAL_OR_EXPLICIT_SUPERSESSION"
     }
   ],
   "pathRepairs": [
@@ -4224,9 +4566,10 @@
       "ledger": "Table generated by validate_atonement_corpus_integrity.py --print-ledger-summary; C25 OPEN, OPEN count8/TENSION count3.",
       "claimRegisters": "Regenerated by atonement_claim_register.py --write, then --check/--cross; writer initially returns1 for the stale pre-write state, which is not a post-write verification.",
       "auditTable91": "Copied from the canonical claimsPerRegistry rollup and checked by check_table_91; initial reshoot did not converge until this separately owned table was refreshed.",
-      "localDocumentDate": "2026-11-03 is a deliberately day-granular review date in Europe/Moscow, declared in integrityGate.dayGranularity; exact byte/test UTC receipts are separate. No hour of human reading was invented.",
+      "localDocumentDate": "SUPERSEDED in wave4: unsupported retrospective Moscow rationale withdrawn; task/document date and actual UTC receipts distinguished. See wave4.timeProvenanceCorrection.",
       "mirrorLag": "Only local metadata changed: the mass-register snapshot is declared behind Git; recorded remote names/bytes/md5 remain historical; no Drive read/write in this wave.",
-      "importModeRegression": "Added an isolated importlib-loading test for the shared metric helper, matching the clean-clone proof entrypoint."
+      "importModeRegression": "Added an isolated importlib-loading test for the shared metric helper, matching the clean-clone proof entrypoint.",
+      "supersededLocalDocumentDate": "2026-11-03 is a deliberately day-granular review date in Europe/Moscow, declared in integrityGate.dayGranularity; exact byte/test UTC receipts are separate. No hour of human reading was invented."
     },
     "postCommitChecks": {
       "recordedAt": "2026-11-02T23:15:48+00:00",
@@ -4318,6 +4661,603 @@
       },
       "interpretation": "Disposable detached worktree: the branch delta was overlaid on freshly fetched origin/main and checked, then the fixture was removed. This was not a branch merge and did not alter main.",
       "mergePerformed": false,
+      "publicationEligible": false
+    }
+  },
+  "wave4": {
+    "status": "INTEGRATED_LOCAL_GATES_PASS_COMMIT_HISTORY_PUSH_PENDING",
+    "baselineCommit": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
+    "recordedAtUtc": "2026-11-03T00:49:19+00:00",
+    "controls": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+    "repairIds": [
+      "W4-NT15",
+      "W4-C25",
+      "W4-H11",
+      "W4-P13",
+      "W4-NT09",
+      "W4-QMAP",
+      "W4-CALVIN",
+      "W4-F04",
+      "W4-F05",
+      "W4-F08",
+      "W4-F10",
+      "W4-P06",
+      "W4-P18",
+      "W4-P04",
+      "W4-S04",
+      "W4-F00",
+      "W4-N00",
+      "W4-ROOT00",
+      "W4-NT-DATA",
+      "W4-F-DATA",
+      "W4-ROOT-DATA",
+      "W4-CLOCK"
+    ],
+    "supersededSnapshots": [
+      {
+        "path": ".github/workflows/atonement-corpus-integrity.yml",
+        "commit": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
+        "blob": "0db25e6d194378c7f74075f6daa8badcea08a133",
+        "sha256": "b8ac34ec629713cbe26876d4261517235b72a19297f1748ff510429c6e4e9a69",
+        "bytes": 14308,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "docs/research/atonement/04_exegetical_defense_of_definite_atonement.md",
+        "commit": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
+        "blob": "ba55b58804dfd1c13545634efa84da3c355f13c0",
+        "sha256": "4b8353d95ed21b37a9b1db9c6c97f5a954c632ceea33dff6c2dd54939cc2ab87",
+        "bytes": 50865,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "docs/research/atonement/06_detailed_refutation_of_prokopenko_arguments.md",
+        "commit": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
+        "blob": "4c999c35839fa5e1329761bf79952cff2d5d112c",
+        "sha256": "5236115ab3c389caf2a365f1627477ea9fbda90a336f9e9bd838c8765b3132eb",
+        "bytes": 135963,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "docs/research/atonement/18_juridical_fallacies_and_double_punishment_critique.md",
+        "commit": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
+        "blob": "b4ad835aee82fdbff3d6c1c2072c3ca843a95a44",
+        "sha256": "2788d265238f664e648d94df5e3a06cfdee47c595105e20b292fba3bdd372f40",
+        "bytes": 34070,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "scripts/atonement_sync_check.py",
+        "commit": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
+        "blob": "b5210e37e1b5b5f66b75ffa117899f79f78d1876",
+        "sha256": "fed0016e51e9a59f87be3ee22fb638bf7f9eb5fddb5b1c2d1a3b26fdca3f6540",
+        "bytes": 16665,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "scripts/test_atonement_sync.py",
+        "commit": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
+        "blob": "83570dbb3c689015557ec772dad521f87b43ce03",
+        "sha256": "a0758c5fcfde5cf9749e0f002014b32c38853dcf62bd0295343307cfdc8a4c18",
+        "bytes": 30405,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+        "commit": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
+        "blob": "f0259b008d1f7692c2e47843e7a44bf229731762",
+        "sha256": "9a96b1f83683a10f22efbe553e5e2bf69f697818d136f1e58e4a62a3c24332e5",
+        "bytes": 46876,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md",
+        "commit": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
+        "blob": "b5a2e1bc018207ebd5a4c666734ad688f5b51202",
+        "sha256": "92eaac5c206c880bef9fc8737af9436d67d662df23c124db227074237c59d1ca",
+        "bytes": 33986,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md",
+        "commit": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
+        "blob": "139951c90613bff2db518a9eabd7e85ce7f304a8",
+        "sha256": "dfb72946d40cb1a6c3f473aa63cb098973dbb9a6ade14373170c6ddc692ed8b7",
+        "bytes": 96760,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/13_DORT_II_CALVIN_OWEN_EXTENT.md",
+        "commit": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
+        "blob": "9a00dcb4ce76fa9beca3764eb48a0beefdf34766",
+        "sha256": "b6227d9cc016ea14fafc0a66a7928aab2bd182c5c629b5daf2fc22b4d2ec6501",
+        "bytes": 35280,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+        "commit": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
+        "blob": "f44296a8eae29c58e997ec6d19c4491a44c9e8bb",
+        "sha256": "876cc5cb0dcd9ed2ff062e2f655a845b74f35f306deeffa6108080f1b8014789",
+        "bytes": 1201353,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+        "commit": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
+        "blob": "a06b47a0ecb07e5207b9aecbc9f99b02637dd436",
+        "sha256": "b7016517fa760819a4703b0cfadb32647b705d205ab97314520eeae711d23cd3",
+        "bytes": 208925,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/evidence/synchronization_2026-11-02.json",
+        "commit": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
+        "blob": "0eff3059680147ed011757bd69ae2fb4ad647168",
+        "sha256": "ff469db6fff0c5430352b35435abac623b115260a2ed7b6d233bfc6aa2e3e339",
+        "bytes": 543496,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
+        "commit": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
+        "blob": "a175c4958d79c7b502442051dcc06af305d9a17e",
+        "sha256": "84de1d94cc9b41e92c31fc67505be4648d5462fa926227ed1fba553723b778f0",
+        "bytes": 22022,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/04_THIRD_FOURTH_CENTURY_CARDS.md",
+        "commit": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
+        "blob": "0389fa466a5241ae62f42ab32953fef55f53fa0e",
+        "sha256": "7a1ddac9756fd8fb018530abb87c7e31b519c4ffe0e5b36448f1f1d968ecf173",
+        "bytes": 27158,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
+        "commit": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
+        "blob": "2eb67df24eb058a9992312f962b09c777c62f4d0",
+        "sha256": "bba553c22ef3764a6f28ce3f77e5c752f306ecea083d787f13cf9b42ac783cd2",
+        "bytes": 18751,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/08_UNIVERSAL_TEXTS_IN_THE_FATHERS.md",
+        "commit": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
+        "blob": "998fdfb21edc309764a84e49f52329208372876e",
+        "sha256": "cd94a0f2c6fdb6b445b42f690fb3ae9feda477f8cd66282eec534df33ebaae6e",
+        "bytes": 9280,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
+        "commit": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
+        "blob": "900c9941c8dc0b986faf794ce9a38e3d72e8908b",
+        "sha256": "13964bb1e0d644d43e1ed88ee4a10e00064c624b1f1f659de8431b2a72a8ac89",
+        "bytes": 26512,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+        "commit": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
+        "blob": "3d6d42fa532d74998c1a8b489790ad7ce727743c",
+        "sha256": "db1425aced2d1c36dbfb89a01801c212eea3ec481c637c6a4e6f19d5626336b3",
+        "bytes": 132438,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
+        "commit": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
+        "blob": "91190ed617849682aebaa6f2c65573e68f895b18",
+        "sha256": "c3f4a36948b8a2f2c00edd83081a5ec787ba956dcaa7306f780ec2763a8de8fa",
+        "bytes": 24180,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md",
+        "commit": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
+        "blob": "92d8545e6c1e3676e8ce461446332c310f4f445d",
+        "sha256": "023bdc2f83c20de1065601e83a096ec6fca3d99cd2281f323faf3fe02f721f1a",
+        "bytes": 54206,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/09_NT_EXTENT_THREE_COLUMN_TABLE.md",
+        "commit": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
+        "blob": "4312e6acd8c9889c09f6fe4cb6328a7f439564bf",
+        "sha256": "60a4a2c7c37ad0d2759f7e3fbf7b8fe8758d4950b9cdcac667bcb23606b7a6b9",
+        "bytes": 41550,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md",
+        "commit": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
+        "blob": "bec143e4701022a98aa9a77caed89b5702542932",
+        "sha256": "b8674eacb1df2d9c352f7ef2f5633eef3cbfe707e0915ad8388a9600c071a643",
+        "bytes": 26331,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+        "commit": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
+        "blob": "a6aaf6d2cdbb6b92ec076412b455926c6dbad557",
+        "sha256": "cdce9568e1f6266c63d5a0423115512a8c370d23ca4d26f9f5e7f50009b753e0",
+        "bytes": 196122,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+        "commit": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
+        "blob": "e2c57648e68df8e87e3e4ff0219374bd6c94cd1d",
+        "sha256": "9e60474f8e7d8f34a851d2726f496ac34c79e0c9fb0e3264daa254445a126042",
+        "bytes": 211831,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+        "commit": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
+        "blob": "b1736a352288b0f131fc5a35660031ad7df3ab77",
+        "sha256": "4a2b027ddc678210e4d2a188d0b9496ae1f017e8e6f36e0020e204e2610e212e",
+        "bytes": 33628,
+        "status": "BYTE_VERIFIED_SUPERSEDED_BASELINE"
+      }
+    ],
+    "createdFiles": [
+      "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+      "scripts/atonement_wave4_sources.py"
+    ],
+    "scope": "John 11:52 commentator contexts only; five independent state axes; no full works, printed collation, Greek Chrysostom/Cyril or fresh Prokopenko PDF replay.",
+    "readingScope": {
+      "CALVIN": "11:49-52 web, 11:51-52 Markdown; 1:12-13 and 10:16 compared at critical paragraphs; 10:26 read in Markdown only.",
+      "ALFORD": "49-52 with 45-48 and 53-57 surrounding comments.",
+      "CHRYSOSTOM": "Homily 65 section 1 in both translations; start of section 2 read in English; no full homily/book reading.",
+      "AUGUSTINE": "49.25-28 English and Latin, with 49.27 target compared across witnesses; no full tractate/book or printed-column collation.",
+      "CYRIL-FRAGMENT": "The complete displayed fragment on 11:49-52 with 45-48 and 53-54 context; heading/footer; not all fragments of Book VII."
+    },
+    "findings": [
+      "Calvin: election before calling; faith/adoption/regeneration distinguished in different respects.",
+      "Alford: appointment-to-life expression and John1:12/10:16 among all nations; prophetic-scope difference from Augustine.",
+      "Chrysostom: future designation, faithful delivered from coming punishment, one body; English/Latin translations.",
+      "Augustine49.27: predestination AND not-yet-children/sheep before faith; Latin and English.",
+      "Published Cyril fragment: all mankind, children by creation, gathered through faith into the Church; transmission/attribution qualification retained."
+    ],
+    "publicationEligible": false,
+    "mergePerformed": false,
+    "currentLocalPdfReplay": "NOT_RUN_RAW_ABSENT",
+    "oldWave3SourceReplay": "NOT_RUN_RAW_ABSENT",
+    "rawWebHttpReplay": "NOT_AVAILABLE_RENDERED_OBSERVATIONS_ONLY",
+    "printedCollationClaimed": false,
+    "timeProvenanceCorrection": {
+      "taskDate": "2026-11-03",
+      "measurementClock": "UTC",
+      "moscowJustificationWithdrawn": true,
+      "historicalUtcInstantsRetained": true,
+      "note": "The wave3 Moscow explanation was an unsupported retrospective provenance claim. It is explicitly withdrawn. A matching calendar day or a current system timezone cannot authorize that historical claim; November 2 UTC receipts and commit times remain unchanged. No exact human-reading instant invented."
+    },
+    "checkoutRecovery": {
+      "recordedAt": "2026-11-02T23:56:00+00:00",
+      "oldLocalHead": "ec722894e21b004900e9e44a2da9bdb9990f1f7c",
+      "verifiedRemoteHead": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
+      "actualBlobComparisons": 2689,
+      "workspaceFingerprint": "56eb7cccf94ea40e9c0736f11cccb2dcc6a15358431406251e8ebd7fee48ceb8",
+      "fileChangesMade": false,
+      "workingTreeClean": true
+    },
+    "verification": {
+      "state": "LOCAL_READ_ONLY_GATES_PASS",
+      "recordedAtUtc": "2026-11-03T01:26:52.729144+00:00",
+      "executionStartedAtUtc": "2026-11-03T01:22:46.672612+00:00",
+      "executionFinishedAtUtc": "2026-11-03T01:23:19.493829+00:00",
+      "method": "Executed named commands on the modified working tree before appending this receipt, not on the historical HEAD alone. Full non-.git file hash/status comparison before/after; no tree writes by checks. Exact committed-candidate history and landing checks remain separate.",
+      "baseHeadAtExecution": "fae5cc5953265ec0872bdae19b004470b9eb7a76",
+      "dirtyWorkingTreeAtExecution": true,
+      "expectedOutcomesPassed": 17,
+      "commandResults": [
+        {
+          "name": "diff-whitespace",
+          "command": [
+            "git",
+            "diff",
+            "HEAD",
+            "--check"
+          ],
+          "exitCode": 0,
+          "expectedExitCode": 0,
+          "pass": true
+        },
+        {
+          "name": "workflow-ast",
+          "command": [
+            "python3",
+            "-B",
+            "-c",
+            "import ast\nfrom pathlib import Path\nfiles = [\n    \"validate_atonement_corpus_integrity.py\", \"atonement_claim_register.py\", \"atonement_reshoot_state.py\",\n    \"atonement_drive_mirror_round63.py\", \"atonement_library_index_round63.py\", \"atonement_round_close.py\",\n    \"atonement_history_perturbation_probe.py\", \"atonement_sync_check.py\", \"atonement_wave3_sources.py\",\n    \"atonement_wave4_sources.py\", \"atonement_source_metrics.py\", \"test_atonement_sync.py\",\n]\nfor name in files:\n    path = Path(\"scripts\") / name\n    ast.parse(path.read_text(encoding=\"utf-8\"), filename=str(path))\nprint(f\"Python AST: PASS ({len(files)} files); no bytecode written\")"
+          ],
+          "exitCode": 0,
+          "expectedExitCode": 0,
+          "pass": true
+        },
+        {
+          "name": "sync",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_sync_check.py"
+          ],
+          "exitCode": 0,
+          "expectedExitCode": 0,
+          "pass": true
+        },
+        {
+          "name": "unittest",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/test_atonement_sync.py"
+          ],
+          "exitCode": 0,
+          "expectedExitCode": 0,
+          "pass": true
+        },
+        {
+          "name": "crossrefs",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_crossref_audit.py",
+            "--check"
+          ],
+          "exitCode": 0,
+          "expectedExitCode": 0,
+          "pass": true
+        },
+        {
+          "name": "integrity",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/validate_atonement_corpus_integrity.py"
+          ],
+          "exitCode": 0,
+          "expectedExitCode": 0,
+          "pass": true
+        },
+        {
+          "name": "close-plan",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_round_close.py",
+            "--plan"
+          ],
+          "exitCode": 0,
+          "expectedExitCode": 0,
+          "pass": true
+        },
+        {
+          "name": "close-selfcheck",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_round_close.py",
+            "--selfcheck"
+          ],
+          "exitCode": 0,
+          "expectedExitCode": 0,
+          "pass": true
+        },
+        {
+          "name": "refuse-appending",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_round_close.py",
+            "--run",
+            "--allow-appending-writers"
+          ],
+          "exitCode": 2,
+          "expectedExitCode": 2,
+          "pass": true
+        },
+        {
+          "name": "rule-traps",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_reshoot_state.py",
+            "--rule-trap"
+          ],
+          "exitCode": 0,
+          "expectedExitCode": 0,
+          "pass": true
+        },
+        {
+          "name": "reshoot-check",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_reshoot_state.py",
+            "--check"
+          ],
+          "exitCode": 0,
+          "expectedExitCode": 0,
+          "pass": true
+        },
+        {
+          "name": "claims-check",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_claim_register.py",
+            "--check"
+          ],
+          "exitCode": 0,
+          "expectedExitCode": 0,
+          "pass": true
+        },
+        {
+          "name": "claims-cross",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_claim_register.py",
+            "--cross"
+          ],
+          "exitCode": 0,
+          "expectedExitCode": 0,
+          "pass": true
+        },
+        {
+          "name": "new-source-replay",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_wave4_sources.py",
+            "--source-root",
+            "/home/user/source-materials/atonement-wave4-2026-11-03"
+          ],
+          "exitCode": 0,
+          "expectedExitCode": 0,
+          "pass": true
+        },
+        {
+          "name": "canon-index",
+          "command": [
+            "python3",
+            "-B",
+            "-c",
+            "import sys; sys.path.insert(0, 'scripts'); import atonement_round_close as r; raise SystemExit(r.canon_parity())"
+          ],
+          "exitCode": 0,
+          "expectedExitCode": 0,
+          "pass": true
+        },
+        {
+          "name": "anti-hollow",
+          "checks": 37,
+          "pass": true
+        },
+        {
+          "name": "read-only",
+          "pass": true
+        }
+      ],
+      "unitTestMethods": 104,
+      "newWave4TestMethods": 28,
+      "wave4ReversionSubcases": 22,
+      "reversionSemantics": "One test executes all 22 in-memory substitutions with an assertion that the current text changed and the named record rejected it. These are 22 executed regression cases, not 22 historical claims; only 12 records replace/supersede actual baseline wording, 10 add explicitly counterfactual guards.",
+      "reshooterSelfMutationCases": 18,
+      "antiHollowAssertions": 37,
+      "nativePipelineFiles": 18,
+      "subsectionCrossReferences": 80,
+      "sourceReplay": {
+        "newPinnedFiles": 18,
+        "boundedExtracts": 8,
+        "actualByteAndExtractReplay": "PASS",
+        "renderedObservations": 6,
+        "rawHttpReplay": "NOT_AVAILABLE_RENDERED_OBSERVATIONS_ONLY",
+        "historicalWave3RawReplay": "NOT_RUN_RAW_ABSENT",
+        "prokopenkoPdfReplay": "NOT_RUN_RAW_ABSENT"
+      },
+      "readOnly": {
+        "files": 2691,
+        "beforeSha256": "7e5baa6bb4388664acbe8fcd7dd2d87e322c890bf464ec010dd24ea923e00ec3",
+        "afterSha256": "7e5baa6bb4388664acbe8fcd7dd2d87e322c890bf464ec010dd24ea923e00ec3",
+        "changedFiles": [],
+        "scope": "Every workspace file outside .git; this subsequent receipt append is outside the measured run."
+      },
+      "externalReceiptSha256": "4a04904a00b36c0bd225a9f8f71da38b26b16662835d07c7ac704e86a0f834ac",
+      "externalHarnessSha256": "e616fcf484b1582cd474502776360355a55c1e83d3163df05851cea2a3997867",
+      "humanReadingMeasured": false,
+      "githubActionsClaimed": false,
+      "publicationApproved": false,
+      "historyProbe": "NOT_YET_RUN_FOR_COMMITTED_WAVE4",
+      "landingProbe": "NOT_YET_RUN_FOR_COMMITTED_WAVE4"
+    },
+    "remaining": [
+      {
+        "id": "GREEK-CHRYSOSTOM-65",
+        "state": "NOT_ACQUIRED",
+        "reason": "CLIO Greek page returned image links only. The sibling Greek file referenced in metadata was not obtained. Latin is not Greek verification."
+      },
+      {
+        "id": "GREEK-CYRIL-7-ATTRIBUTION",
+        "state": "NOT_VERIFIED",
+        "reason": "The published fragment and translation were read; Greek/catena attribution and critical transmission remain open."
+      },
+      {
+        "id": "PRINT-COLLATION",
+        "state": "NOT_RUN",
+        "reason": "No new printed page/column or original-language Calvin/Alford collation."
+      },
+      {
+        "id": "WAVE3-RAW-REPLAY",
+        "state": "NOT_RUN",
+        "reason": "Old 80-file source set and Prokopenko PDF absent; historic results are retained, not counted as a fresh replay."
+      }
+    ],
+    "regressionRecordSemantics": {
+      "baselineReplacementsOrSupersessions": 12,
+      "additiveNegativeGuards": 10,
+      "meaning": "The repairs array retains its legacy name. An additive guard is not claimed as an actual prior error. Both kinds are mechanically checked against the actual baseline bytes; counts are not counts of executed mutation tests."
+    },
+    "engineeringChanges": [
+      "New read-only 18-pin/8-extract/6-rendered-observation checker wired into the existing synchronization gate.",
+      "Source profiles and three new patristic cards use independent canonical axes; CHR-2/AUG-2/CYRA-2 fit the native claim-ID grammar.",
+      "Tests distinguish additive forbidden-future guards from actual baseline removals; no counterfactual is claimed as a historical quotation.",
+      "Workflow syntax check uses AST, not py_compile, to avoid writing bytecode despite -B.",
+      "All five native claim registries/rollup refreshed with the native producer; audit section 9.1 generated from its exact fields and independently checked; reshooter refreshed owned tree/byte/count inventories. Historical measurements remain historical.",
+      "New patristic card IDs CHR-2/AUG-2/CYRA-2 are recognized by the native claim parser; explicit canonical prose axes and publication holds match their machine cards.",
+      "Native PIPELINE_FILES now includes the wave3 and wave4 source helpers plus source-label metrics; actual script bytes are included in its 18-file inventory.",
+      "Negative rendered-text tests assert the actual phrase changed and recompute the selected-text hash; they do not depend on the order of web selections.",
+      "Intermediate stale derived values/table and an EOF-whitespace failure were corrected before the accepted verification run; the earlier failed run is not relabeled PASS."
+    ],
+    "derivedStateRefresh": {
+      "method": "Native atonement_claim_register.py --write followed by --check/--cross; table 9.1 cells generated directly from claimsPerRegistry and checked by check_table_91; atonement_reshoot_state.py --write then --check. Counts describe structure/markers, not reading, evidence quality or theological closure.",
+      "recheckCommands": [
+        "python3 -B scripts/atonement_claim_register.py --check",
+        "python3 -B scripts/atonement_claim_register.py --cross",
+        "python3 -B scripts/atonement_reshoot_state.py --check"
+      ],
+      "claims": {
+        "ot": 199,
+        "nt": 190,
+        "fathers": 107,
+        "synthesis": 244,
+        "корпус": 172,
+        "всего": 912
+      },
+      "details": {
+        "сВердиктом": 300,
+        "удерживается": 265,
+        "открыто": 12,
+        "закрыто": 7,
+        "служебное": 16,
+        "покрытоМашинно": 38,
+        "маркеров": 1119,
+        "неОтнесено": 0,
+        "неРазрешено": 0,
+        "покрытоПоФайлу": 912,
+        "файловПрозы": 91,
+        "файловБезКарточки": 0,
+        "ссылокНаНесуществующийФайл": 0,
+        "ссылокВнеОбходаЛана": 41,
+        "записейВнеСтрокЛана": 0,
+        "файловБезКарточкиСостояния": 8,
+        "маркеровВПрозеНеОтражённыхВКарточке": 1,
+        "маркеровВКарточкеНеИзПрозыЛана": 58
+      },
+      "libraryIndexRecords": 130,
+      "libraryIndexFiles": 121,
+      "stampedFields": 553,
+      "shaTokens": 113,
+      "liveShaTokens": 68,
+      "unreachableShaTokens": 45,
+      "numbersChecked": 119,
+      "numberGroups": 11,
+      "c25": "OPEN",
+      "driveMirrorsUpdated": false,
       "publicationEligible": false
     }
   }

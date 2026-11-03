@@ -496,7 +496,7 @@
       "falseFriendFlags": [
         "F-10: «Августин = Кальвин» запрещено",
         "«весь мир» = Церковь во всех народах (антидонатистский контекст)",
-        "ORIGINAL_TEXT_HOLD (лат. не сверен)"
+        "Historical De Trinitate verification is not replayed here; new Latin 49.25-28 reading has its own AUG-2 record."
       ]
     },
     {
@@ -512,8 +512,8 @@
       "publicationState": "RESEARCH_ONLY",
       "quoteSafe": true,
       "falseFriendFlags": [
-        "«все» — риторическое целое; доктрины объёма у Кирилла нет",
-        "PG-колонки — LOCATOR_HOLD; Contra Nestorium / In Ioannem — HOLD"
+        "SUPERSEDED: blanket absence of any Cyril extent claim; the published John VII fragment supplies an all-mankind/creation-based reading, with attribution qualification.",
+        "Other works/Greek transmission remain open; In Ioannem VII 11:49-52 English fragment now read, see CYRA-2."
       ]
     },
     {
@@ -748,6 +748,93 @@
       "quoteSafe": false,
       "falseFriendFlags": [],
       "notes": "Kenosis-victory without ransom-terminology in vol. 1: 'without price' (leaf 44), 'form of accursed man in the work of their redemption' (166), 'given up into the hands of Satan... set us free both outwardly and inwardly' (168), apostate angel 'driven down to a farther depth' (207). 'ransom' = 0 in vol. 1 (full-text search). Not 'ransom to devil' and not Anselmian 'satisfaction'. PL 75-76 ORIGINAL_TEXT_HOLD."
+    },
+    {
+      "cardId": "CHR-2",
+      "file": "04_THIRD_FOURTH_CENTURY_CARDS.md",
+      "subject": "Златоуст, In Ioannem Hom.65 §1",
+      "genre": "экзегетическая гомилия/комментарий; у Кирилла — переданный фрагмент",
+      "primaryLocators": "NPNF1_14 TXT L23763-23839; CLIO Montfaucon1728 div65.1",
+      "sourceControl": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+      "sourceControlId": "CHRYSOSTOM",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "BLOCKED",
+      "quoteSafe": true,
+      "quoteSafeScope": "The proleptic naming, faithful-deliverance and one-body argument in these translations; neither Latin translation nor number of copies proves Greek wording or a complete modern penal system.",
+      "readingScope": "Homily 65 section 1 in both translations; start of section 2 read in English; no full homily/book reading.",
+      "version": "NPNF1_14 English and Montfaucon 1728 Latin as transcribed by Chris Nighman/Joel Kalvesmaki in Arithmeticus/CLIO.",
+      "contextVerified": true,
+      "rightsBasis": "NPNF public-domain translation; CLIO transcription CC BY-SA 4.0, with source URL/commit, authors, license and markup/whitespace transformations retained.",
+      "falseFriendFlags": [
+        "No full-work, printed-collation or complete modern system claim.",
+        "Source role/access/locator/rights/publication kept separate."
+      ],
+      "originalGreekRead": false,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "cardId": "AUG-2",
+      "file": "05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
+      "subject": "Августин, In Ioannem 49.25-28",
+      "genre": "экзегетическая гомилия/комментарий; у Кирилла — переданный фрагмент",
+      "primaryLocators": "49.27 target; NPNF1_07, PL35 bounded fragment, Augustinus.it Latin",
+      "sourceControl": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+      "sourceControlId": "AUGUSTINE",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "BLOCKED",
+      "quoteSafe": true,
+      "quoteSafeScope": "The predestination/not-yet-believing distinction and Evangelist-addition attribution in 49.27; no global Augustine doctrine inferred.",
+      "readingScope": "49.25-28 English and Latin, with 49.27 target compared across witnesses; no full tractate/book or printed-column collation.",
+      "version": "NPNF1_07 English; OGL corrected PL35 Migne OCR; Augustinus.it Latin Tractatus 49.",
+      "contextVerified": true,
+      "rightsBasis": "Ancient Latin and NPNF public-domain translation; OGL TEI CC BY-SA 4.0 with source credit and declared transformation; modern site UI not reproduced.",
+      "falseFriendFlags": [
+        "No full-work, printed-collation or complete modern system claim.",
+        "Source role/access/locator/rights/publication kept separate."
+      ],
+      "originalLatinRead": true,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "cardId": "CYRA-2",
+      "file": "05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
+      "subject": "Фрагмент под именем Кирилла, In Ioannem VII ad11:49-52",
+      "genre": "экзегетическая гомилия/комментарий; у Кирилла — переданный фрагмент",
+      "primaryLocators": "CCEL/Pearse/Randell, extant BookVII fragments, digital markers133-134",
+      "sourceControl": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+      "sourceControlId": "CYRIL-FRAGMENT",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "BLOCKED",
+      "quoteSafe": true,
+      "quoteSafeScope": "The wording and reading of the published fragment attributed to Cyril, always with its transmission/translation qualification. Not independent proof of attribution to Cyril or of the Greek wording.",
+      "readingScope": "The complete displayed fragment on 11:49-52 with 45-48 and 53-54 context; heading/footer; not all fragments of Book VII.",
+      "version": "LFC 43/48 (1874/1885), Book VII extant fragments, vol. 2 pp. 92-137; T. Randell translation; Roger Pearse 2005 transcription at CCEL.",
+      "contextVerified": true,
+      "rightsBasis": "Footer explicitly releases all page material to the public domain; translation/transcription credit retained.",
+      "falseFriendFlags": [
+        "No full-work, printed-collation or complete modern system claim.",
+        "Source role/access/locator/rights/publication kept separate."
+      ],
+      "attribution": "PUBLISHED_UNDER_CYRIL_NOT_INDEPENDENTLY_AUTHENTICATED",
+      "originalGreekRead": false,
+      "textCompleteness": "EXTANT_FRAGMENT",
+      "universalFinalSalvationProved": false,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
     }
   ],
   "stateCards": [
@@ -1339,56 +1426,83 @@
     "date": "2026-11-03",
     "evidence": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
     "positiveFindings": "Athanasius joins debt, death instead of all, offering and victory; Gregory30 has ransom. Neither offer-only reduction nor a later confessional identity is automatic.",
-    "classNormalization": "Five axes canonicalized only for ATH-1/NAZ-1, with legacy class labels preserved. Other legacy cards are not silently recertified and remain a schema migration queue; current sourceClasses vocabulary is canonical. No blanket rereading or physical archive availability claim."
+    "classNormalization": "Five axes canonicalized only for ATH-1/NAZ-1, with legacy class labels preserved. Other legacy cards are not silently recertified and remain a schema migration queue; current sourceClasses vocabulary is canonical. No blanket rereading or physical archive availability claim.",
+    "subsequentBoundedReview": "commentaryReviewWave4"
+  },
+  "commentaryReviewWave4": {
+    "recordedAtUtc": "2026-11-03T00:49:19+00:00",
+    "controls": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+    "scope": "John 11:52 commentator contexts only; five independent state axes; no full works, printed collation, Greek Chrysostom/Cyril or fresh Prokopenko PDF replay.",
+    "c25": "OPEN",
+    "findings": [
+      "Calvin: election before calling; faith/adoption/regeneration distinguished in different respects.",
+      "Alford: appointment-to-life expression and John1:12/10:16 among all nations; prophetic-scope difference from Augustine.",
+      "Chrysostom: future designation, faithful delivered from coming punishment, one body; English/Latin translations.",
+      "Augustine49.27: predestination AND not-yet-children/sheep before faith; Latin and English.",
+      "Published Cyril fragment: all mankind, children by creation, gathered through faith into the Church; transmission/attribution qualification retained."
+    ],
+    "publicationEligible": false,
+    "method": "Recorded after bounded primary-text reading; not an exact time of human reading. Source receipts, locators and read scopes are in the linked control; only their consistency/bytes are mechanically replayable.",
+    "recheckCommand": "python3 -B scripts/atonement_wave4_sources.py (offline); --source-root /external/files for actual new-file byte/extract replay"
   },
   "claimRegister20261026": {
     "чтоЭто": "реестр доводов лана «fathers»: строка = раздел прозы уровня ## с локатором, классом из её собственных маркеров и отметкой съёма",
     "чтоСчитаетсяДоводом": "заголовок «## » в любом .md лана, включая вложенные папки (synthesis/drafts, ot/tools); тело секции — до следующего «## » или до конца файла",
     "приоритет": "УДЕРЖИВАЕТСЯ > ОТКРЫТО > ЗАКРЫТО; маркеров нет -> БЕЗ МАРКЕРА; маркер вне классификации -> ошибка съёма, а не «прочее»",
     "метод": "scripts/atonement_claim_register.py обходит прозу лана целиком (без выборки), разбирает маркеры вида `ВЕРДИКТ`, сверяет локатор побайтово (файл + номер строки + текст)",
-    "строк": 102,
+    "строк": 107,
     "файлов": 12,
-    "покрытоМашинно": 35,
-    "покрытоПоФайлу": 102,
+    "покрытоМашинно": 38,
+    "покрытоПоФайлу": 107,
     "файловПрозы": 12,
     "файловБезКарточки": 0,
-    "разрешеноЛокаторов": 102,
+    "разрешеноЛокаторов": 107,
     "неРазрешено": 0,
     "поКлассам": {
-      "БЕЗ МАРКЕРА": 57,
-      "УДЕРЖИВАЕТСЯ": 45
+      "БЕЗ МАРКЕРА": 60,
+      "УДЕРЖИВАЕТСЯ": 47
     },
     "маркеры": {
-      "всего": 129,
-      "различных": 13,
+      "всего": 139,
+      "различных": 18,
       "словарь": {
         "APPARATUS_FALSE_FRIEND": "УДЕРЖИВАЕТСЯ",
         "ARCHIVE_AVAILABLE": "ЗАКРЫТО",
         "ARCHIVE_HOLD": "УДЕРЖИВАЕТСЯ",
         "ARCHIVE_READ": "ЗАКРЫТО",
+        "BLOCKED": "УДЕРЖИВАЕТСЯ",
         "EVIDENCE_HOLD": "УДЕРЖИВАЕТСЯ",
+        "EXACT_LOCATOR_VERIFIED": "ЗАКРЫТО",
         "FALSE_FRIEND": "УДЕРЖИВАЕТСЯ",
         "FALSE_LOCATOR": "УДЕРЖИВАЕТСЯ",
+        "FULL_OBJECT_VERIFIED": "ЗАКРЫТО",
         "LOCATOR_HOLD": "УДЕРЖИВАЕТСЯ",
         "ORIGINAL_TEXT_HOLD": "УДЕРЖИВАЕТСЯ",
+        "PARTIAL_OBJECT": "УДЕРЖИВАЕТСЯ",
+        "PUBLICATION_ELIGIBLE": "ЗАКРЫТО",
         "PUBLICATION_HOLD": "УДЕРЖИВАЕТСЯ",
         "QUOTE_RISK": "УДЕРЖИВАЕТСЯ",
         "RIGHTS_HOLD": "УДЕРЖИВАЕТСЯ",
         "RIGHTS_UNCLEAR": "УДЕРЖИВАЕТСЯ"
       },
       "частоты": {
-        "LOCATOR_HOLD": 37,
-        "ARCHIVE_HOLD": 28,
+        "LOCATOR_HOLD": 36,
+        "ARCHIVE_HOLD": 26,
         "ORIGINAL_TEXT_HOLD": 22,
-        "RIGHTS_HOLD": 11,
+        "RIGHTS_HOLD": 9,
         "FALSE_FRIEND": 8,
         "ARCHIVE_AVAILABLE": 6,
+        "PUBLICATION_HOLD": 5,
         "QUOTE_RISK": 5,
         "EVIDENCE_HOLD": 4,
+        "BLOCKED": 3,
+        "EXACT_LOCATOR_VERIFIED": 3,
+        "PUBLICATION_ELIGIBLE": 3,
         "ARCHIVE_READ": 2,
         "FALSE_LOCATOR": 2,
-        "PUBLICATION_HOLD": 2,
+        "FULL_OBJECT_VERIFIED": 2,
         "APPARATUS_FALSE_FRIEND": 1,
+        "PARTIAL_OBJECT": 1,
         "RIGHTS_UNCLEAR": 1
       },
       "служебные": [],
@@ -1415,7 +1529,7 @@
       "записейВнеСтрокЛана": 0,
       "файловБезКарточкиСостояния": 0,
       "маркеровВПрозеНеОтражённыхВКарточке": 0,
-      "маркеровВКарточкеНеИзПрозыЛана": 24,
+      "маркеровВКарточкеНеИзПрозыЛана": 21,
       "детально": {
         "02_APOSTOLIC_FATHERS_CARDS.md": {
           "проза": 0,
@@ -1444,13 +1558,10 @@
           "естьКарточка": true
         },
         "04_THIRD_FOURTH_CENTURY_CARDS.md": {
-          "проза": 3,
-          "карточка": 9,
+          "проза": 8,
+          "карточка": 12,
           "вПрозеНеВКарточке": [],
           "вКарточкеНеИзПрозы": [
-            "BLOCKED",
-            "EXACT_LOCATOR_VERIFIED",
-            "PARTIAL_OBJECT",
             "READABLE",
             "RESEARCH_ONLY",
             "STORAGE_ONLY"
@@ -1458,8 +1569,8 @@
           "естьКарточка": true
         },
         "05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md": {
-          "проза": 3,
-          "карточка": 8,
+          "проза": 9,
+          "карточка": 14,
           "вПрозеНеВКарточке": [],
           "вКарточкеНеИзПрозы": [
             "LOCATED / VERIFIED_ORIGINAL",
@@ -2043,10 +2154,28 @@
         "машинноПоФайлу": true
       },
       {
-        "код": "СР@04_THIRD_FOURTH_CENTURY_CARDS~2",
+        "код": "CHR-2@04_THIRD_FOURTH_CENTURY_CARDS",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/04_THIRD_FOURTH_CENTURY_CARDS.md",
         "строка": 160,
+        "срез": "CHR-2. Златоуст, In Ioannem, Hom. 65 §1: чада, будущая вера и одно тело",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "BLOCKED",
+          "EXACT_LOCATOR_VERIFIED",
+          "FULL_OBJECT_VERIFIED",
+          "PUBLICATION_ELIGIBLE",
+          "PUBLICATION_HOLD"
+        ],
+        "машинно": true,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "СР@04_THIRD_FOURTH_CENTURY_CARDS~2",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/04_THIRD_FOURTH_CENTURY_CARDS.md",
+        "строка": 174,
         "срез": "Границы в этой волне",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 1,
@@ -2061,7 +2190,7 @@
         "код": "СР@04_THIRD_FOURTH_CENTURY_CARDS~3",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/04_THIRD_FOURTH_CENTURY_CARDS.md",
-        "строка": 175,
+        "строка": 189,
         "срез": "Сверка с оригиналом и уточнения (добавлено в этой волне)",
         "класс": "БЕЗ МАРКЕРА",
         "маркеров": 0,
@@ -2084,10 +2213,28 @@
         "машинноПоФайлу": true
       },
       {
-        "код": "CAS-1@05_FIFTH_CENTURY_AND_BOUNDARY_CARDS",
+        "код": "AUG-2@05_FIFTH_CENTURY_AND_BOUNDARY_CARDS",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
         "строка": 46,
+        "срез": "AUG-2. Августин, In Ioannem 49.25–28: предопределение и «ещё не были»",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "BLOCKED",
+          "EXACT_LOCATOR_VERIFIED",
+          "FULL_OBJECT_VERIFIED",
+          "PUBLICATION_ELIGIBLE",
+          "PUBLICATION_HOLD"
+        ],
+        "машинно": true,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "CAS-1@05_FIFTH_CENTURY_AND_BOUNDARY_CARDS",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
+        "строка": 64,
         "срез": "CAS-1. Иоанн Кассиан (ок. 360–435)",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 1,
@@ -2101,7 +2248,7 @@
         "код": "LEO-1@05_FIFTH_CENTURY_AND_BOUNDARY_CARDS",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
-        "строка": 57,
+        "строка": 75,
         "срез": "LEO-1. Лев Великий (ок. 400–461)",
         "класс": "БЕЗ МАРКЕРА",
         "маркеров": 0,
@@ -2113,7 +2260,7 @@
         "код": "DAM-1@05_FIFTH_CENTURY_AND_BOUNDARY_CARDS",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
-        "строка": 74,
+        "строка": 92,
         "срез": "DAM-1. Иоанн Дамаскин (ок. 675–749), *Точное изложение православной веры* III.27",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 1,
@@ -2127,15 +2274,11 @@
         "код": "CYRA-1@05_FIFTH_CENTURY_AND_BOUNDARY_CARDS",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
-        "строка": 87,
+        "строка": 105,
         "срез": "CYRA-1. Кирилл Александрийский (ок. 376–444), *Толкование на двенадцать пророков*",
-        "класс": "УДЕРЖИВАЕТСЯ",
-        "маркеров": 1,
-        "токены": [
-          "ARCHIVE_HOLD",
-          "LOCATOR_HOLD",
-          "RIGHTS_HOLD"
-        ],
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
         "машинно": true,
         "машинноПоФайлу": true
       },
@@ -2143,7 +2286,7 @@
         "код": "СР@05_FIFTH_CENTURY_AND_BOUNDARY_CARDS",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
-        "строка": 105,
+        "строка": 123,
         "срез": "Халкидон (451) как контроль",
         "класс": "БЕЗ МАРКЕРА",
         "маркеров": 0,
@@ -2155,7 +2298,7 @@
         "код": "СР@05_FIFTH_CENTURY_AND_BOUNDARY_CARDS~2",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
-        "строка": 113,
+        "строка": 131,
         "срез": "Авторы, остающиеся HOLD (и почему)",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 1,
@@ -2167,10 +2310,28 @@
         "машинноПоФайлу": true
       },
       {
+        "код": "CYRA-2@05_FIFTH_CENTURY_AND_BOUNDARY_CARDS",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
+        "строка": 145,
+        "срез": "CYRA-2. Под именем Кирилла: фрагмент In Ioannem VII на 11:49–52",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "BLOCKED",
+          "EXACT_LOCATOR_VERIFIED",
+          "PARTIAL_OBJECT",
+          "PUBLICATION_ELIGIBLE",
+          "PUBLICATION_HOLD"
+        ],
+        "машинно": true,
+        "машинноПоФайлу": true
+      },
+      {
         "код": "ANS-1@05_FIFTH_CENTURY_AND_BOUNDARY_CARDS",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
-        "строка": 127,
+        "строка": 164,
         "срез": "ANS-1. Анзельм, *Cur Deus Homo* (1098) — **граница**, а не отец",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 1,
@@ -2394,6 +2555,18 @@
         "файл": "ИСКУПЛЕНИЕ/fathers/08_UNIVERSAL_TEXTS_IN_THE_FATHERS.md",
         "строка": 88,
         "срез": "8. Следующие действия",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "9@08_UNIVERSAL_TEXTS_IN_THE_FATHERS",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/08_UNIVERSAL_TEXTS_IN_THE_FATHERS.md",
+        "строка": 94,
+        "срез": "9. Ин. 11:52: не единая «позиция отцов» (волна 4)",
         "класс": "БЕЗ МАРКЕРА",
         "маркеров": 0,
         "токены": [],
@@ -2678,6 +2851,18 @@
         "машинноПоФайлу": true
       },
       {
+        "код": "9@10_ORIGINAL_LANGUAGE_VERIFICATION~2",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
+        "строка": 181,
+        "срез": "9. Ин. 11:52 — что проверено в каком языке (волна 4, 2026-11-03)",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
         "код": "HIP-1@11_III_IV_GAPS_AND_LATIN_WEST_CARDS",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
@@ -2847,8 +3032,8 @@
     ],
     "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
     "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check fathers",
-    "measuredAt": "2026-11-02T22:40:34Z",
-    "checkedAt": "2026-11-02T22:40:34Z",
-    "предыдущийСъём": "2026-11-02T20:01:43Z"
+    "measuredAt": "2026-11-03T01:04:38Z",
+    "checkedAt": "2026-11-03T01:04:38Z",
+    "предыдущийСъём": "2026-11-03T01:01:51Z"
   }
 }

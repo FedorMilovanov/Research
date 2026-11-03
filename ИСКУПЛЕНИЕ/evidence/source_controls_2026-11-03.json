@@ -4370,7 +4370,7 @@
     "availability": "External source files may not survive workspace restoration. Absence on a future replay is an error, not a retroactive cancellation of the observed acquisition."
   },
   "initialByteVerifiedAt": "2026-11-02T21:35:03+00:00",
-  "timeConvention": "recordedOn is the local document date (Europe/Moscow); byteVerifiedAt is the actual UTC process timestamp. 2026-11-02 evening UTC is 2026-11-03 in Moscow. Earlier acquisition/replay receipts are not retimestamped as fresh reading.",
+  "timeConvention": "SUPERSEDED: the earlier Europe/Moscow explanation is withdrawn, not silently ratified by the current date. recordedOn is the task/document date; byteVerifiedAt and initialByteVerifiedAt retain their actual UTC instants. No fresh wave3 source replay or new reading is implied.",
   "sourceRelationships": [
     {
       "source": "swete/data/48.Isaias.txt",
@@ -4402,5 +4402,15 @@
       "result": "NO_USABLE_COMMENTARY_TEXT",
       "newReadingClaimed": false
     }
-  ]
+  ],
+  "timeConventionCorrection": {
+    "supersededText": "recordedOn is the local document date (Europe/Moscow); byteVerifiedAt is the actual UTC process timestamp. 2026-11-02 evening UTC is 2026-11-03 in Moscow. Earlier acquisition/replay receipts are not retimestamped as fresh reading.",
+    "recordedAtUtc": "2026-11-03T00:49:19+00:00",
+    "basis": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+    "actualUtcInstantsRetained": true
+  },
+  "subsequentAccessCorrection": {
+    "control": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+    "scope": "The listed unsuccessful wave3 Calvin addresses remain historical failures. Wave4 obtained the actual /library/calvin/ page; no globally-unavailable claim or retrospective wave3 reading."
+  }
 }

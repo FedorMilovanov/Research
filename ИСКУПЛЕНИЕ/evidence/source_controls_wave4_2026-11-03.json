@@ -1,0 +1,772 @@
+{
+  "schemaVersion": 1,
+  "recordedOn": "2026-11-03",
+  "recordedAtUtc": "2026-11-03T00:36:02+00:00",
+  "fullCorpusReadingClaimed": false,
+  "wholeWorksRead": false,
+  "printedCollationClaimed": false,
+  "allAuthorConsensusClaimed": false,
+  "publicationEligible": false,
+  "rawWebHtmlReceived": false,
+  "method": "Source roles, access, exact digital locators, rights and publication are independent. Frozen excerpts are bounded primary-text observations; acquisition, extraction, reading, printed collation and doctrinal closure are not interchangeable. File counts include metadata and rejected substitutes, not just author texts.",
+  "custody": "Full files held outside Git; these receipts and bounded excerpts persist in Research. No independent durable off-platform custody or publication-route release claimed.",
+  "files": [
+    {
+      "repo": "OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "path": "data/tlg4090/tlg001/__cts__.xml",
+      "gitBlob": "d89f3f2b0db98ef45de08433bbb36892a0b15819",
+      "sha256": "eb1dfbfe1d4515e65cdc301bcea67ba3b7e76b2a6a66335cca8bd855e3548e84",
+      "bytes": 598,
+      "sourceUrl": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg4090/tlg001/__cts__.xml",
+      "externalRelativePath": "OpenGreekAndLatin--First1KGreek/data/tlg4090/tlg001/__cts__.xml",
+      "byteVerifiedAtUtc": "2026-11-02T23:59:48+00:00",
+      "meaning": "Actual complete bytes of this digital file, not a record of full human reading, printed collation, durable off-platform custody or publication approval.",
+      "id": "FIRST1K-CYRIL-METADATA",
+      "role": "NOT_A_SUBSTITUTE_FOR_TARGET_AUTHOR_TEXT"
+    },
+    {
+      "repo": "SOTW-Historical-Commentaries/historical-commentary-resources",
+      "commit": "409f7166a0e5eb62a870b769f0406c470c15af67",
+      "path": "README.md",
+      "gitBlob": "9809d6d2df7c72d6d50aa66837c00522797081c5",
+      "sha256": "e832900e8cf93e9c5d8307bc66cfd21faea57c1cc37c27970d9ee0a2e9f43fc9",
+      "bytes": 3537,
+      "sourceUrl": "https://github.com/SOTW-Historical-Commentaries/historical-commentary-resources/blob/409f7166a0e5eb62a870b769f0406c470c15af67/README.md",
+      "externalRelativePath": "SOTW-Historical-Commentaries--historical-commentary-resources/README.md",
+      "byteVerifiedAtUtc": "2026-11-02T23:59:48+00:00",
+      "meaning": "Actual complete bytes of this digital file, not a record of full human reading, printed collation, durable off-platform custody or publication approval.",
+      "id": "SOTW-METADATA",
+      "role": "NOT_A_SUBSTITUTE_FOR_TARGET_AUTHOR_TEXT"
+    },
+    {
+      "repo": "kyle-mirich/church-fathers-schaff-set",
+      "commit": "7297825d520102f640c86b5798282e7570456c68",
+      "path": "README.md",
+      "gitBlob": "b3ac21b9093a3293ef13f34a93d7d42183fab8ce",
+      "sha256": "e70312eb205ecdc86a1766cb3156523b6657efa6a4f167c41dffd0ac1d61df72",
+      "bytes": 1966,
+      "sourceUrl": "https://github.com/kyle-mirich/church-fathers-schaff-set/blob/7297825d520102f640c86b5798282e7570456c68/README.md",
+      "externalRelativePath": "kyle-mirich--church-fathers-schaff-set/README.md",
+      "byteVerifiedAtUtc": "2026-11-03T00:01:12+00:00",
+      "meaning": "Actual complete bytes of this digital file, not a record of full human reading, printed collation, durable off-platform custody or publication approval.",
+      "id": "NPNF-README",
+      "role": "PROVENANCE_OR_DISCOVERY_METADATA"
+    },
+    {
+      "repo": "kyle-mirich/church-fathers-schaff-set",
+      "commit": "7297825d520102f640c86b5798282e7570456c68",
+      "path": "ccel_fathers_complete/downloads/NPNF1_07/NPNF1_07.txt",
+      "gitBlob": "e8400dca054e8b234d0c71720daaae8ebd7d6d42",
+      "sha256": "266502c9bc5da73981217fc536682b999fc7a09da50255477ed4bcbdad1363e3",
+      "bytes": 3204445,
+      "sourceUrl": "https://github.com/kyle-mirich/church-fathers-schaff-set/blob/7297825d520102f640c86b5798282e7570456c68/ccel_fathers_complete/downloads/NPNF1_07/NPNF1_07.txt",
+      "externalRelativePath": "kyle-mirich--church-fathers-schaff-set/ccel_fathers_complete/downloads/NPNF1_07/NPNF1_07.txt",
+      "byteVerifiedAtUtc": "2026-11-03T00:01:14+00:00",
+      "meaning": "Actual complete bytes of this digital file, not a record of full human reading, printed collation, durable off-platform custody or publication approval.",
+      "id": "NPNF07-TXT",
+      "role": "PINNED_AUTHOR_TEXT_FILE"
+    },
+    {
+      "repo": "kyle-mirich/church-fathers-schaff-set",
+      "commit": "7297825d520102f640c86b5798282e7570456c68",
+      "path": "ccel_fathers_complete/downloads/NPNF1_07/NPNF1_07.xml",
+      "gitBlob": "34c3314c6c99d4afadd100526b04504a3e5dd740",
+      "sha256": "75d52f4c31dde0959974256b3f5d84394b7b96fcd2883e78a3d32e0b66c5869a",
+      "bytes": 3694413,
+      "sourceUrl": "https://github.com/kyle-mirich/church-fathers-schaff-set/blob/7297825d520102f640c86b5798282e7570456c68/ccel_fathers_complete/downloads/NPNF1_07/NPNF1_07.xml",
+      "externalRelativePath": "kyle-mirich--church-fathers-schaff-set/ccel_fathers_complete/downloads/NPNF1_07/NPNF1_07.xml",
+      "byteVerifiedAtUtc": "2026-11-03T00:01:15+00:00",
+      "meaning": "Actual complete bytes of this digital file, not a record of full human reading, printed collation, durable off-platform custody or publication approval.",
+      "id": "NPNF07-XML",
+      "role": "PINNED_AUTHOR_TEXT_FILE"
+    },
+    {
+      "repo": "kyle-mirich/church-fathers-schaff-set",
+      "commit": "7297825d520102f640c86b5798282e7570456c68",
+      "path": "ccel_fathers_complete/downloads/NPNF1_14/NPNF1_14.txt",
+      "gitBlob": "eb09ff01a7463d53d82c078b32760eff5803483b",
+      "sha256": "e26f55f8d0739c07d73d5b664e42efbd923a43230a22d93d55261c808e9cd458",
+      "bytes": 3943878,
+      "sourceUrl": "https://github.com/kyle-mirich/church-fathers-schaff-set/blob/7297825d520102f640c86b5798282e7570456c68/ccel_fathers_complete/downloads/NPNF1_14/NPNF1_14.txt",
+      "externalRelativePath": "kyle-mirich--church-fathers-schaff-set/ccel_fathers_complete/downloads/NPNF1_14/NPNF1_14.txt",
+      "byteVerifiedAtUtc": "2026-11-03T00:01:15+00:00",
+      "meaning": "Actual complete bytes of this digital file, not a record of full human reading, printed collation, durable off-platform custody or publication approval.",
+      "id": "NPNF14-TXT",
+      "role": "PINNED_AUTHOR_TEXT_FILE"
+    },
+    {
+      "repo": "kyle-mirich/church-fathers-schaff-set",
+      "commit": "7297825d520102f640c86b5798282e7570456c68",
+      "path": "ccel_fathers_complete/downloads/NPNF1_14/NPNF1_14.xml",
+      "gitBlob": "f6f522ade74c1042eb46b83954413002af1d7cf9",
+      "sha256": "b130406978fbceb7bcd0774b0e8b09905f35a020a2300c1baf02f314a2d5a70a",
+      "bytes": 4728349,
+      "sourceUrl": "https://github.com/kyle-mirich/church-fathers-schaff-set/blob/7297825d520102f640c86b5798282e7570456c68/ccel_fathers_complete/downloads/NPNF1_14/NPNF1_14.xml",
+      "externalRelativePath": "kyle-mirich--church-fathers-schaff-set/ccel_fathers_complete/downloads/NPNF1_14/NPNF1_14.xml",
+      "byteVerifiedAtUtc": "2026-11-03T00:01:16+00:00",
+      "meaning": "Actual complete bytes of this digital file, not a record of full human reading, printed collation, durable off-platform custody or publication approval.",
+      "id": "NPNF14-XML",
+      "role": "PINNED_AUTHOR_TEXT_FILE"
+    },
+    {
+      "repo": "OpenGreekAndLatin/patrologia_latina-dev",
+      "commit": "8c651f859f821f0868755596f1a513946ca25350",
+      "path": "README.md",
+      "gitBlob": "6bee57ca4db1365c2d93cdbeae1d0493f25fd598",
+      "sha256": "5409fcb09f986caf50a8c6979b1580ec08b0fba7ad3b40f3f6f6ecc53da85b0f",
+      "bytes": 1207,
+      "sourceUrl": "https://github.com/OpenGreekAndLatin/patrologia_latina-dev/blob/8c651f859f821f0868755596f1a513946ca25350/README.md",
+      "externalRelativePath": "OpenGreekAndLatin--patrologia_latina-dev/README.md",
+      "byteVerifiedAtUtc": "2026-11-03T00:01:17+00:00",
+      "meaning": "Actual complete bytes of this digital file, not a record of full human reading, printed collation, durable off-platform custody or publication approval.",
+      "id": "PL35-README",
+      "role": "PROVENANCE_OR_DISCOVERY_METADATA"
+    },
+    {
+      "repo": "OpenGreekAndLatin/patrologia_latina-dev",
+      "commit": "8c651f859f821f0868755596f1a513946ca25350",
+      "path": "corrected/PL35/[Corrected2]PL35_3_S..xml",
+      "gitBlob": "0f4521bbb63811496c39d84b3d8c892383ea442a",
+      "sha256": "48f4c1471d5b0169b989e016b573e5c1e8b0f21dde5622dfd4105704d28b6934",
+      "bytes": 2859008,
+      "sourceUrl": "https://github.com/OpenGreekAndLatin/patrologia_latina-dev/blob/8c651f859f821f0868755596f1a513946ca25350/corrected/PL35/%5BCorrected2%5DPL35_3_S..xml",
+      "externalRelativePath": "OpenGreekAndLatin--patrologia_latina-dev/corrected/PL35/[Corrected2]PL35_3_S..xml",
+      "byteVerifiedAtUtc": "2026-11-03T00:01:18+00:00",
+      "meaning": "Actual complete bytes of this digital file, not a record of full human reading, printed collation, durable off-platform custody or publication approval.",
+      "id": "PL35-XML",
+      "role": "PINNED_AUTHOR_TEXT_FILE"
+    },
+    {
+      "repo": "Tranvuduc/Reformed-",
+      "commit": "85b0c95b24610e4856bd8eecdb6f5fc84e645e11",
+      "path": "README.md",
+      "gitBlob": "7e320e4501f01a1134a0882f89a8a0d6aa753fee",
+      "sha256": "2055249513662b7202ec4bbd35f533fb20a6813c1b23b6afef7094521e6e762e",
+      "bytes": 1638,
+      "sourceUrl": "https://github.com/Tranvuduc/Reformed-/blob/85b0c95b24610e4856bd8eecdb6f5fc84e645e11/README.md",
+      "externalRelativePath": "Tranvuduc--Reformed-/README.md",
+      "byteVerifiedAtUtc": "2026-11-03T00:01:18+00:00",
+      "meaning": "Actual complete bytes of this digital file, not a record of full human reading, printed collation, durable off-platform custody or publication approval.",
+      "id": "REFORMED-README",
+      "role": "PROVENANCE_OR_DISCOVERY_METADATA"
+    },
+    {
+      "repo": "Tranvuduc/Reformed-",
+      "commit": "85b0c95b24610e4856bd8eecdb6f5fc84e645e11",
+      "path": "b/calvin-calcom34.html",
+      "gitBlob": "3822eb6268fd8770b4dd993f9cee54fbefa83f90",
+      "sha256": "69afbec58942be80b7b64c4dd043cf25c2188d5f183b1fb49b02e70e8ad79aa1",
+      "bytes": 8560,
+      "sourceUrl": "https://github.com/Tranvuduc/Reformed-/blob/85b0c95b24610e4856bd8eecdb6f5fc84e645e11/b/calvin-calcom34.html",
+      "externalRelativePath": "Tranvuduc--Reformed-/b/calvin-calcom34.html",
+      "byteVerifiedAtUtc": "2026-11-03T00:01:18+00:00",
+      "meaning": "Actual complete bytes of this digital file, not a record of full human reading, printed collation, durable off-platform custody or publication approval.",
+      "id": "CALVIN-SHELL",
+      "role": "NOT_A_SUBSTITUTE_FOR_TARGET_AUTHOR_TEXT"
+    },
+    {
+      "repo": "BenjaminPoole/Ecumenical-Christian-Library-Obsidian-Vault",
+      "commit": "d16898fa04838f1060219e25865b4df8709b2655",
+      "path": "readme.md",
+      "gitBlob": "43f3b6ddb31555935d871cb7e4c150612db4d652",
+      "sha256": "539be33517ec3d95f2df6b1844ecd5a7d673e33c8365b5c9e35efd161788d764",
+      "bytes": 6361,
+      "sourceUrl": "https://github.com/BenjaminPoole/Ecumenical-Christian-Library-Obsidian-Vault/blob/d16898fa04838f1060219e25865b4df8709b2655/readme.md",
+      "externalRelativePath": "BenjaminPoole--Ecumenical-Christian-Library-Obsidian-Vault/readme.md",
+      "byteVerifiedAtUtc": "2026-11-03T00:05:05+00:00",
+      "meaning": "Actual complete bytes of this digital file, not a record of full human reading, printed collation, durable off-platform custody or publication approval.",
+      "id": "CALVIN-README",
+      "role": "PROVENANCE_OR_DISCOVERY_METADATA"
+    },
+    {
+      "repo": "BenjaminPoole/Ecumenical-Christian-Library-Obsidian-Vault",
+      "commit": "d16898fa04838f1060219e25865b4df8709b2655",
+      "path": "05 Reformers (1500–1600)/John Calvin/Biblical Commentaries/John/index.md",
+      "gitBlob": "6ac3755eae6c419d62274178427d8ef83c67d262",
+      "sha256": "68b29ebe94f9be6f01e04dfff86877019489151a9e47d0bbc66f2df24ba22264",
+      "bytes": 1184,
+      "sourceUrl": "https://github.com/BenjaminPoole/Ecumenical-Christian-Library-Obsidian-Vault/blob/d16898fa04838f1060219e25865b4df8709b2655/05%20Reformers%20%281500%E2%80%931600%29/John%20Calvin/Biblical%20Commentaries/John/index.md",
+      "externalRelativePath": "BenjaminPoole--Ecumenical-Christian-Library-Obsidian-Vault/05 Reformers (1500–1600)/John Calvin/Biblical Commentaries/John/index.md",
+      "byteVerifiedAtUtc": "2026-11-03T00:05:06+00:00",
+      "meaning": "Actual complete bytes of this digital file, not a record of full human reading, printed collation, durable off-platform custody or publication approval.",
+      "id": "CALVIN-INDEX",
+      "role": "PROVENANCE_OR_DISCOVERY_METADATA"
+    },
+    {
+      "repo": "BenjaminPoole/Ecumenical-Christian-Library-Obsidian-Vault",
+      "commit": "d16898fa04838f1060219e25865b4df8709b2655",
+      "path": "05 Reformers (1500–1600)/John Calvin/Biblical Commentaries/John/Calvin John 11.md",
+      "gitBlob": "ac95584bf3cb18e3f3b132e61c69e9c119723959",
+      "sha256": "f10337857163a3daadfa93876bbf7099337bec3d5002dea5d1947a26f5f07730",
+      "bytes": 74585,
+      "sourceUrl": "https://github.com/BenjaminPoole/Ecumenical-Christian-Library-Obsidian-Vault/blob/d16898fa04838f1060219e25865b4df8709b2655/05%20Reformers%20%281500%E2%80%931600%29/John%20Calvin/Biblical%20Commentaries/John/Calvin%20John%2011.md",
+      "externalRelativePath": "BenjaminPoole--Ecumenical-Christian-Library-Obsidian-Vault/05 Reformers (1500–1600)/John Calvin/Biblical Commentaries/John/Calvin John 11.md",
+      "byteVerifiedAtUtc": "2026-11-03T00:05:06+00:00",
+      "meaning": "Actual complete bytes of this digital file, not a record of full human reading, printed collation, durable off-platform custody or publication approval.",
+      "id": "CALVIN11-MD",
+      "role": "PINNED_AUTHOR_TEXT_FILE"
+    },
+    {
+      "repo": "BenjaminPoole/Ecumenical-Christian-Library-Obsidian-Vault",
+      "commit": "d16898fa04838f1060219e25865b4df8709b2655",
+      "path": "05 Reformers (1500–1600)/John Calvin/Biblical Commentaries/John/Calvin John 10.md",
+      "gitBlob": "43f72cb1cf124b56b4b4e87e1d285f7eff1c3a2d",
+      "sha256": "cb3c39b01f49198c8c9686b132f502c7d3365f1a34783d53412406e2de875a93",
+      "bytes": 67802,
+      "sourceUrl": "https://github.com/BenjaminPoole/Ecumenical-Christian-Library-Obsidian-Vault/blob/d16898fa04838f1060219e25865b4df8709b2655/05%20Reformers%20%281500%E2%80%931600%29/John%20Calvin/Biblical%20Commentaries/John/Calvin%20John%2010.md",
+      "externalRelativePath": "BenjaminPoole--Ecumenical-Christian-Library-Obsidian-Vault/05 Reformers (1500–1600)/John Calvin/Biblical Commentaries/John/Calvin John 10.md",
+      "byteVerifiedAtUtc": "2026-11-03T00:05:06+00:00",
+      "meaning": "Actual complete bytes of this digital file, not a record of full human reading, printed collation, durable off-platform custody or publication approval.",
+      "id": "CALVIN10-MD",
+      "role": "PINNED_AUTHOR_TEXT_FILE"
+    },
+    {
+      "repo": "BenjaminPoole/Ecumenical-Christian-Library-Obsidian-Vault",
+      "commit": "d16898fa04838f1060219e25865b4df8709b2655",
+      "path": "05 Reformers (1500–1600)/John Calvin/Biblical Commentaries/John/Calvin John 1.md",
+      "gitBlob": "a8faa1353b40257563af9052fcd56a25f4bd6498",
+      "sha256": "3cfb657584e2b95a56992a4b126b2d91c2a25d9409bbc5435d252f054b1829ab",
+      "bytes": 128351,
+      "sourceUrl": "https://github.com/BenjaminPoole/Ecumenical-Christian-Library-Obsidian-Vault/blob/d16898fa04838f1060219e25865b4df8709b2655/05%20Reformers%20%281500%E2%80%931600%29/John%20Calvin/Biblical%20Commentaries/John/Calvin%20John%201.md",
+      "externalRelativePath": "BenjaminPoole--Ecumenical-Christian-Library-Obsidian-Vault/05 Reformers (1500–1600)/John Calvin/Biblical Commentaries/John/Calvin John 1.md",
+      "byteVerifiedAtUtc": "2026-11-03T00:05:07+00:00",
+      "meaning": "Actual complete bytes of this digital file, not a record of full human reading, printed collation, durable off-platform custody or publication approval.",
+      "id": "CALVIN1-MD",
+      "role": "PINNED_AUTHOR_TEXT_FILE"
+    },
+    {
+      "repo": "Arithmeticus/CLIO",
+      "commit": "7eea10d3abd4c295ff12e55d77f70f73e8b4e937",
+      "path": "TAN-A/cpg 4425.TAN-A.xml",
+      "gitBlob": "4a95a356617ef56007fc3b2fe0654c7135e5ca39",
+      "sha256": "5de4e9aa506d7f2820fea51cbbcd347fda565a53ad739d32ccfc9ca42d9bd0ba",
+      "bytes": 8820,
+      "sourceUrl": "https://github.com/Arithmeticus/CLIO/blob/7eea10d3abd4c295ff12e55d77f70f73e8b4e937/TAN-A/cpg%204425.TAN-A.xml",
+      "externalRelativePath": "Arithmeticus--CLIO/TAN-A/cpg 4425.TAN-A.xml",
+      "byteVerifiedAtUtc": "2026-11-03T00:10:06+00:00",
+      "meaning": "Actual complete bytes of this digital file, not a record of full human reading, printed collation, durable off-platform custody or publication approval.",
+      "id": "CLIO-METADATA",
+      "role": "PROVENANCE_OR_DISCOVERY_METADATA"
+    },
+    {
+      "repo": "Arithmeticus/CLIO",
+      "commit": "7eea10d3abd4c295ff12e55d77f70f73e8b4e937",
+      "path": "cpg 4425 lat 1728 Montfaucon.xml",
+      "gitBlob": "dbc04454fdfe117fd1301a86f7fd04ab1e12af9c",
+      "sha256": "f5d4ab0c8515644d3c3f5f78bd4e16dfad5c3bfa682f147ac3ad6113113e7d5c",
+      "bytes": 2145763,
+      "sourceUrl": "https://github.com/Arithmeticus/CLIO/blob/7eea10d3abd4c295ff12e55d77f70f73e8b4e937/cpg%204425%20lat%201728%20Montfaucon.xml",
+      "externalRelativePath": "Arithmeticus--CLIO/cpg 4425 lat 1728 Montfaucon.xml",
+      "byteVerifiedAtUtc": "2026-11-03T00:10:07+00:00",
+      "meaning": "Actual complete bytes of this digital file, not a record of full human reading, printed collation, durable off-platform custody or publication approval.",
+      "id": "CLIO-MONTFAUCON",
+      "role": "PINNED_AUTHOR_TEXT_FILE"
+    }
+  ],
+  "extracts": [
+    {
+      "id": "CALVIN-11-MD",
+      "sourceFile": "CALVIN11-MD",
+      "selector": {
+        "kind": "calvin-comments",
+        "firstVerse": 51,
+        "lastVerse": 52
+      },
+      "text": "51. Now he spoke this, not of himself. When the Evangelist says that Caiaphas did not speak this of himself, he does not mean that Caiaphas — like one who was mad, or out of his senses — uttered what he did not understand; for he spoke what was his own opinion. But the Evangelist means that a higher impulse guided his tongue, because God intended that he should make known, by his mouth, something higher than what occurred to his mind. Caiaphas, therefore, might be said, at that time, to have two tongues; for he vomited out the wicked and cruel design of putting Christ to death, which he had conceived in his mind; but God turned his tongue to a different purpose, so that, under ambiguous words, he likewise uttered a prediction. God intended that the heavenly oracle should proceed from the high priest’s seat, that the Jews might have less excuse. For, though not one person in the whole assembly had his conscience moved, yet they afterwards perceived that their insensibility was not entitled to forgiveness. Nor did the wickedness of Caiaphas prevent his tongue from being the organ of the Holy Spirit, for God looked at the priesthood which he had instituted rather than at the person of the man. And this was the reason which I glanced at, that a voice uttered from a lofty place might be more distinctly heard, and might have greater reverence and authority. In the same manner, God intended to bless his people by the mouth of Balaam, on whom he had bestowed the spirit of prophecy. But it is highly ridiculous in the Papists to infer from this that we ought to reckon as an oracle whatever the Roman high priest may think fit to pronounce. First, granting what is false, that every man who is a high priest is also a prophet, still they will be under the necessity of proving that the Roman high priest is appointed by the command of God; for the priesthood was abolished by the coming of one man, who is Christ, and we no where read that it was afterwards enjoined by God that any one man should be the ruler of the whole Church. Granting to them, in the second place, that the power and title of high priest was conveyed to the Bishop of Rome, we must see of what advantage it was to the priests that they accepted the prediction of Caiaphas In order to concur in his opinion, they conspire to put Christ to death. But far from us be that kind of obedience which drives us to horrid apostacy by denying the Son of God. With the same voice Caiaphas blasphemes and also prophesies. They who follow his suggestion despise the prophecy, and adopt the blasphemy. We ought to guard against the same thing happening to us, if we listen to the Caiaphas of Rome; for otherwise the comparison would be defective. Besides, I ask, Must we conclude that, because Caiaphas once prophesied, every word uttered by the high priest is always a prophecy? But soon afterwards Caiaphas condemned as blasphemy (Matthew 26:65) the most important article of our faith. Hence we conclude, that what the Evangelist now relates was an extraordinary occurrence, and that it would be foolish to adduce it as an example. That Jesus would die. First, the Evangelist shows that the whole of our salvation consists in this, that Christ should assemble us into one; for in this way he reconciles us to the Father, in whom is the fountain of life, (Psalm 36:9.) Hence, also, we infer, that the human race is scattered and estranged from God, until the children of God are assembled under Christ their Head. Thus, the communion of saints is a preparation for eternal life, because all whom Christ does not gather to the Father remain in death, as we shall see again under the seventeenth chapter. For the same reason Paul also teaches that Christ was sent, in order that he might gather together all things which are in heaven and in earth, (Ephesians 1:10.) Wherefore, that we may enjoy the salvation brought by Christ, discord must be removed, and we must be made one with God and with angels, and among ourselves. The cause and pledge of this unity was the death of Christ, by which he drew all things to himself; but we are daily gathered by the Gospel into the fold of Christ. 52. And not for that nation only. The Evangelist means that the reconciliation effected by Christ is also extended to the Gentiles. But how comes it that they who, in consequence of being wretchedly scattered and wandering, became the enemies of God, are here called the children of God? I answer, as has been already said, God had in his breast children, who in themselves were wandering and lost sheep, or rather who were the farthest possible from being sheep, but, on the contrary, were wolves and wild beasts. It is therefore by election that he reckons as the children of God, even before they are called, those who at length begin to be manifested by faith both to themselves and to others. ## John 11:53-57",
+      "textSha256": "61c786ab062b9cc0201a2496913525f8150ab27ec466a26803a7e04d07bb96ac",
+      "readingScope": "John 11:51-52 comments; not all John 11",
+      "normalization": "NFC and whitespace collapse; Markdown asterisks/numeric footnote calls removed for Calvin, XML markup removed by scoped parser for Latin; no lexical/OCR correction."
+    },
+    {
+      "id": "CALVIN-1-MD",
+      "sourceFile": "CALVIN1-MD",
+      "selector": {
+        "kind": "calvin-comments",
+        "firstVerse": 12,
+        "lastVerse": 13
+      },
+      "text": "12. But to as many as received him. That none may be retarded by this stumbling-block, that the Jews despised and rejected Christ, the Evangelist exalts above heaven the godly who believe in him; for he says that by faith they obtain this glory of being reckoned the sons of God. The universal term, as many, contains an implied contrast; for the Jews were carried away by a blind vaunting, as if they exclusively had God bound to themselves. The Evangelist declares that their condition is changed, because the Jews have been rejected, and their place, which had been left empty, is occupied by the Jews; for it is as if he transferred the right of adoption to strangers. This is what Paul says, that the destruction of one nation was the life of the whole world, (Romans 11:12;) for the Gospel, which might be said to have been banished from them, began to be spread far and wide throughout the whole world. They were thus deprived of the privilege which they enjoyed above others. But their impiety was no obstruction to Christ; for he erected elsewhere the throne of his kingdom, and called indiscriminately to the hope of salvation all nations which formerly appeared to have been rejected by God. He gave them power. The word ἐξουσία here appears to me to mean a right, or claim; and it would be better to translate it so, in order to refute the false opinions of the Papists; for they wickedly pervert this passage by understanding it to mean, that nothing more than a choice is allowed to us, if we think fit to avail ourselves of this privilege. In this way they extract free-will from this phrase; but as well might they extract fire from water. There is some plausibility in this at first sight; for the Evangelist does not say that Christ makes them sons of God, but that he gives them power to become such. Hence they infer that it is this grace only that is offered to us, and that the liberty to enjoy or to reject it is placed at our disposal. But this frivolous attempt to catch at a single word is set aside by what immediately follows; for the Evangelist adds, that they become the sons of God, not by the will which belongs to the flesh, but when they are born of God. But if faith regenerates us, so that we are the sons of God, and if God breathes faith into us from heaven, it plainly appears that not by possibility only, but actually — as we say — is the grace of adoption offered to us by Christ. And, indeed, the Greek word, ἐξουσία is sometimes put for ἀξίωσις, (a claim,) a meaning which falls in admirably with this passage. The circumlocution which the Evangelist has employed tends more to magnify the excellence of grace, than if he had said in a single word, that all who believe in Christ are made by him sons of God. For he speaks here of the unclean and profane, who, having been condemned to perpetual ignominy, lay in the darkness of death. Christ exhibited an astonishing instance of his grace in conferring this honor on such persons, so that they began, all at once, to be sons of God; and the greatness of this privilege is justly extolled by the Evangelist, as also by Paul, when he ascribes it to God, who is rich in mercy, for his great love with which he loved us, (Ephesians 2:4.) But if any person shall prefer to take the word power in its ordinary acceptation, still the Evangelist does not mean by it any intermediate faculty, or one which does not include the full and complete effect; but, on the contrary, means that Christ gave to the unclean and the uncircumcised what appeared to be impossible; for an incredible change took place when out of stones Christ raised up children to God, (Matthew 3:9.) The power, therefore, is that fitness (ἱκανότης) which Paul mentions, when he gives thanks to God, who hath made us fit (or meet) to be partakers of the inheritance of the saints, (Colossians 1:12.) Who believe in his name. He expresses briefly the manner of receiving Christ, that is, believing in him. Having been engrafted into Christ by faith, we obtain the right of adoption, so as to be the sons of God. And, indeed, as he is the only-begotten Son of God, it is only so far as we are members of him that this honor at all belongs to us. Here again the notion of the Papists about the word power is refuted. The Evangelist declares that this power is given to those who already believe. Now it is certain that such persons are in reality the sons of God. They detract too much from the value of faith who say that, by believing, a man obtains nothing more than that he may become a son of God, if he chooses; for instead of present effect they put a power which is held in uncertainty and suspense. The contradiction appears still more glaring from what immediately follows. The Evangelist says that those who believe are already born of God It is not therefore, a mere liberty of choice that is offered, since they obtain the privilege itself that is in question. Although the Hebrew word, שם (Name) is sometimes used to denote power, yet here it denotes a relation to the doctrine of the Gospel; for when Christ is preached to us, then it is that we believe in him. I speak of the ordinary method by which the Lord leads us to faith; and this ought to be carefully observed, for there are many who foolishly contrive for themselves a confused faith, without any understanding of doctrine, as nothing is more common among the Papists than the word believe, though there is not among them any knowledge of Christ from hearing the Gospel. Christ, therefore, offers himself to us by the Gospel, and we receive him by faith. 13. Who were born not of blood Some think that an indirect reference is here made to the preposterous confidence of the Jews, and I willingly adopt that opinion. They had continually in their mouth the nobleness of their lineage, as if, because they were descended from a holy stock, they were naturally holy. And justly might they have gloried in their descent from Abraham, if they had been lawful sons, and not bastards; but the glowing of faith ascribes nothing whatever to carnal generation, but acknowledges its obligation to the grace of God alone for all that is good. John, therefore, says, that those among the formerly unclean Gentiles who believe in Christ are not born the sons of God from the womb, but are renewed by God, that they may begin to be his sons. The reason why he uses the word blood in the plural number appears to have been, that he might express more fully a long succession of lineage; for this was a part of the boasting among the Jews, that they could trace their descent, by an uninterrupted line, upwards to the patriarchs. The will of the flesh and the will of man appear to me to mean the same thing; for I see no reason why flesh should be supposed to signify woman, as Augustine and many others explain it. On the contrary, the Evangelist repeats the same thing in a variety of words, in order to explain it more fully, and impress it more deeply on the minds of men. Though he refers directly to the Jews, who gloried in the flesh, yet from this passage a general doctrine may be obtained: that our being reckoned the sons of God does not belong to our nature, and does not proceed from us, but because God begat us willingly, (James 1:18,) that is, from undeserved love. Hence it follows, first, that faith does not proceed from ourselves, but is the fruit of spiritual regeneration; for the Evangelist affirms that no man can believe, unless he be begotten of God; and therefore faith is a heavenly gift. It follows, secondly, that faith is not bare or cold knowledge, since no man can believe who has not been renewed by the Spirit of God. It may be thought that the Evangelist reverses the natural order by making regeneration to precede faith, whereas, on the contrary, it is an effect of faith, and therefore ought to be placed later. I reply, that both statements perfectly agree; because by faith we receive the incorruptible seed, (1 Peter 1:23,) by which we are born again to a new and divine life. And yet faith itself is a work of the Holy Spirit, who dwells in none but the children of God. So then, in various respects, faith is a part of our regeneration, and an entrance into the kingdom of God, that he may reckon us among his children. The illumination of our minds by the Holy Spirit belongs to our renewal, and thus faith flows from regeneration as from its source; but since it is by the same faith that we receive Christ, who sanctifies us by his Spirit, on that account it is said to be the beginning of our adoption. Another solution, still more plain and easy, may be offered; for when the Lord breathes faith into us, he regenerates us by some method that is hidden and unknown to us; but after we have received faith, we perceive, by a lively feeling of conscience, not only the grace of adoption, but also newness of life and the other gifts of the Holy Spirit. For since faith, as we have said, receives Christ, it puts us in possession, so to speak, of all his blessings. Thus so far as respects our sense, it is only after having believed — that we begin to be the sons of God. But if the inheritance of eternal life is the fruit of adoption, we see how the Evangelist ascribes the whole of our salvation to the grace of Christ alone; and, indeed, how closely soever men examine themselves, they will find nothing that is worthy of the children of God, except what Christ has bestowed on them. ## John 1:14 14. And the Speech was made flesh, and dwelt among us, (and we beheld his glory, the glory as of the only-begotten of the Father,) full of grace and truth.",
+      "textSha256": "579148cacb58589dc729ee81283c29b68682889271a4afc810d6054ce46f911a",
+      "readingScope": "John 1:12-13 comments; not all John 1",
+      "normalization": "NFC and whitespace collapse; Markdown asterisks/numeric footnote calls removed for Calvin, XML markup removed by scoped parser for Latin; no lexical/OCR correction."
+    },
+    {
+      "id": "CALVIN-10-16-MD",
+      "sourceFile": "CALVIN10-MD",
+      "selector": {
+        "kind": "calvin-comments",
+        "firstVerse": 16,
+        "lastVerse": 16
+      },
+      "text": "16. And I have other sheep. Though some refer this indiscriminately to all, both Jews and Gentiles, who were not yet disciples of Christ, yet I have no doubt that he had in his eye the calling of the Gentiles. For he gives the appellation fold to the assemblage of the ancient people, by which they were separated from the other nations of the world, and united into one body as the heritage of God. The Jews had been adopted by God in such a manner, that he surrounded them with certain enclosures, which consisted of rites and ceremonies, that they might not be confounded with unbelievers, though the door of the fold was the gracious covenant of eternal life confirmed in Christ. For this reason he calls those sheep which had not the same mark, but belonged to a different class, other sheep In short, the meaning is, that the pastoral office of Christ is not confined within the limits of Judea, but is far more extensive. Augustine’s observation on this passage is undoubtedly true, that, as there are many wolves within the Church, so there are many sheep without But this is not applicable, in every respect, to the present passage, which relates to the outward aspect of the Church, because the Gentiles, who had been strangers for a time, were afterwards invited into the kingdom of God, along with the Jews. Yet I acknowledge that Augustine’s statement applies in this respect, that Christ gives the name of sheep to unbelievers, who in themselves were the farthest possible from being entitled to be called sheep And not only does he point out, by this term, what they will be, but rather refers this to the secret election of God, because we are already God’s sheep, before we are aware that He is our shepherd. In like manner, it is elsewhere said that we were enemies, when he loved us, (Romans 5:10;) and for this reason Paul also says that we were known by God, before we knew him, (Galatians 4:9.) Them also I must bring. He means that the election of God will be secure, so that nothing of all that he wishes to be saved shall perish. For the secret purpose of God, by which men were ordained to life, is at length manifested in his own time by the calling, — the effectual calling, when he regenerates by his Spirit, to be his sons, those who formerly were begotten of flesh and blood. But it may be asked, How were the Gentiles brought to be associated with the Jews? For the Jews were not under the necessity of rejecting the covenant which God made with their fathers, in order to become Christ’s disciples; and the Gentiles, on the other hand, were not under the necessity of submitting to the yoke of the Law, that, being ingrafted in Christ, they might be associated with the Jews. Here we must attend to the distinction between the substance of the covenant and the outward appendages. For the Gentiles could not assent to the faith of Christ in any other way than by embracing that everlasting covenant on which the salvation of the world was founded. In this manner were fulfilled the predictions, Strangers shall speak the language of Canaan, (Isaiah 19:18.) Again, Ten men of the Gentiles shall take hold of the cloak of one Jew, and say, We will go with you, (Zechariah 8:23.) Again, Many nations shall come, and say, Come, and let us go up to the mountain of the Lord, (Isaiah 2:4; Micah 4:2.) Abraham was also called a father of many nations, (Genesis 17:5; Romans 4:17,) because they shall come from the East and from the West, who shall sit down with him in the kingdom of God, (Matthew 8:11.) As to ceremonies, they are the middle wall of partition, which, Paul informs us, hath been thrown down, (Ephesians 2:14.) Thus, we have been associated with the Jews in the unity of the faith, as to the substance; and the ceremonies were abolished, that there might be nothing to prevent the Jews from stretching out their hand to us. And there shall be one fold and one shepherd That is, that all the children of God may be gathered and united into one body; as we acknowledge that there is one holy universal Church, and there must be one body with one head. There is one God, says Paul, one faith, one baptism. Therefore we ought to be one, as we are called into one hope, (Ephesians 4:4, 5.) Now though this flock appears to be divided into different folds, yet they are kept within enclosures which are common to all believers who are scattered throughout the whole world; because the same word is preached to all, they use the same sacraments, they have the same order of prayer, and every thing that belongs to the profession of faith. And they shall hear my voice. We must observe the way in which the flock of God is gathered. It is, when all have one shepherd, and when his voice alone is heard These words mean that, when the Church submits to Christ alone, and obeys his commands, and hears his voice and his doctrine, then only is it in a state of good order. If Papists can show us that there is any thing of this sort among them, let them enjoy the title of The Church, of which they vaunt so much. But if Christ is silent there, if his majesty is trodden under foot, if his sacred ordinances are held up to scorn, what else is their unity but a diabolical conspiracy, which is worse and far more to be abhorred than any dispersion? Let us therefore remember that we ought always to begin with the Head. Hence also the Prophets, when they describe the restoration of the Church, always join David the king with God; as if they said, that there is no Church where Christ does not reign, and that there is no kingdom of God, but where the honor of shepherd is granted to Christ.",
+      "textSha256": "a662df241fd3109b355605802be78d0968c9c70de30e1488ae6560c0c91cd1be",
+      "readingScope": "John 10:16 comment; not all John 10",
+      "normalization": "NFC and whitespace collapse; Markdown asterisks/numeric footnote calls removed for Calvin, XML markup removed by scoped parser for Latin; no lexical/OCR correction."
+    },
+    {
+      "id": "CALVIN-10-26-MD",
+      "sourceFile": "CALVIN10-MD",
+      "selector": {
+        "kind": "calvin-comments",
+        "firstVerse": 26,
+        "lastVerse": 26
+      },
+      "text": "26. Because you are not of my sheep. He assigns a higher reason why they do not believe either in his miracles or in his doctrine. It is, because they are reprobate. We must observe Christ’s design; for, since they boasted of being the Church of God, that their unbelief may detract nothing from the authority of the Gospel, he affirms that the gift of believing is a special gift. And, indeed, before that men know God, they must first be known by him, as Paul says, (Galatians 4:9.) On the other hand, those to whom God does not look must always continue to look away from him. If any one murmur at this, arguing that the cause of unbelief dwells in God, because he alone has power to make sheep; I reply, He is free from all blame, for it is only by their voluntary malice that men reject his grace. God does all that is necessary to induce them to believe, but who shall tame wild beasts? This will never be done, till the Spirit of God change them into sheep They who are wild will in vain attempt to throw on God the blame of their wildness, for it belongs to their own nature. In short, Christ means that it is not wonderful, if there are few who obey his Gospel, because all whom the Spirit of God does not subdue to the obedience of faith are wild and fierce beasts. So much the more unreasonable and absurd is it, that the authority of the Gospel should depend on the belief of men; but believers ought rather to consider, that they are the more strongly bound to God, because, while others remain in a state of blindness, they are drawn to Christ by the illumination of the Spirit. Here, too, the ministers of the Gospel have ground of consolation, if their labor be not profitable to all.",
+      "textSha256": "616daf91e20f26b27ed7a2eb907199df90b395d5477f09f87cf80356d3ff1008",
+      "readingScope": "John 10:26 comment in derivative Markdown; not freshly web/print collated",
+      "normalization": "NFC and whitespace collapse; Markdown asterisks/numeric footnote calls removed for Calvin, XML markup removed by scoped parser for Latin; no lexical/OCR correction."
+    },
+    {
+      "id": "CHRYSOSTOM-65-EN",
+      "sourceFile": "NPNF14-TXT",
+      "selector": {
+        "kind": "lines",
+        "firstLine": 23763,
+        "lastLine": 23839
+      },
+      "text": "Homily LXV. John xi. 49, 50 \"And one of them, Caiaphas, being the High Priest that same year, said unto them, Ye know nothing at all, nor consider that it is expedient that one man should die for the people, and that the whole nation perish not,\" &c. [1.] \"The heathen are stuck fast in the destruction which they made; in the trap which they hid is their foot taken.\" ( Ps. ix. 15 , LXX.) This hath been the case with the Jews. They said that they would kill Jesus, lest the Romans should come and take away their place and nation; and when they had killed Him, these things happened unto them, and when they had done that by doing which they thought to escape, they yet did not escape. He who was slain is in Heaven, and they who slew have for their portion hell. Yet they did not consider these things; but what? \"They desired,\" It saith, \"from that day forth to kill Him\" ( ver. 53 ), for they said, \"The Romans will come, and will take away our nation; and a certain one of them, Caiaphas, being High Priest that year, said,\" (being more shameless than the rest,) \"Ye know nothing.\" What the others made matter of doubt, and put forth in the way of deliberation, this man cried aloud, shamelessly, openly, audaciously. For what saith he? \"Ye know nothing, nor consider that it is expedient that one man should die, and that the whole nation perish not.\" Ver. 51. \"And this spake he not of himself, but being High Priest he prophesied.\" [1832] Seest thou how great is the force of the High Priest's authority? or, since he had in any wise been deemed worthy of the High Priesthood, although unworthy thereof, he prophesied, not knowing what he said; and the grace merely made use of his mouth, but touched not his accursed heart. Indeed many others have foretold things to come, although unworthy to do so, as Nebuchadnezzar, Pharaoh, Balaam; and the reason of all is evident. But what he saith is of this kind. \"Ye still sit quiet, ye give heed but carelessly to this matter, and know not how to despise one man's safety for the sake of the community.\" See how great is the power of the Spirit; from an evil imagination It was able to bring forth words full of marvelous prophecy. The Evangelist calleth the Gentiles \"children of God,\" from what was about to be: as also Christ Himself saith, \"Other sheep I have\" ( c. x. 16 ), so calling them from what should afterwards come to pass. But what is, \"being High Priest that year\"? This matter as well as the rest had become corrupt; for from the time that offices became matters of purchase, they were no longer priests for the whole period of their lives, but for a year. Notwithstanding, even in this state of things the Spirit was still present. But when they lifted up their hands against Christ, then It left them, and removed to the Apostles. This the rending of the veil declared, and the voice of Christ which said, \"Behold, your house is left unto you desolate.\" ( Matt. xxiii. 38.) And Josephus, who lived a short time after, saith, that certain Angels who yet remained with them, (to see) if they would alter their ways, left them. [1833] While the vineyard stood, all things [1834] went on; but when they had slain the Heir, no longer so, but they perished. And God having taken it from the Jews, as a glorious garment from an unprofitable son, gave it to right-minded servants of the Gentiles, leaving the others desolate and naked. It was, moreover, no small thing that even an enemy should prophesy this. This might draw over others also. For in respect of his [1835] will, matters fell out contrariwise, since, [1836] when He died, the faithful were on this account delivered from the punishment to come. What meaneth, \"That He might gather together those near and those afar off\" ( ver. 52 )? He made them one Body. The dweller in Rome deemeth the Indians a member of himself. What is equal to this \"gathering together\"? And the Head of all is Christ. Ver. 53. \"From that day forth the Jews [1837] took counsel to put Him to death.\" And, in truth, had sought to do so before; for the Evangelist saith, \"Therefore the Jews sought to kill Him\" ( c. v. 18 ); and, \"Why seek ye to kill Me?\" ( c. vii. 19.) But then they only sought, now they ratified their determination, and treated the action as their business. Ver. 54. \"But Jesus walked no more openly in Jewry.\" [1838]",
+      "textSha256": "ace68329877236204f3d8d559181078c9d4964955da724d6fb647fa9526b5a84",
+      "readingScope": "Homily LXV, section 1; includes the verse heading immediately preceding section 2",
+      "normalization": "NFC and whitespace collapse; Markdown asterisks/numeric footnote calls removed for Calvin, XML markup removed by scoped parser for Latin; no lexical/OCR correction."
+    },
+    {
+      "id": "CHRYSOSTOM-65-LA",
+      "sourceFile": "CLIO-MONTFAUCON",
+      "selector": {
+        "kind": "montfaucon-homily-section",
+        "homily": 65,
+        "section": 1
+      },
+      "text": "Unus autem ex illis Caiphas, cum esset pontifex anni illius, dixit eis: Vos nescitis quidquam, nec cogitatis, quia expedit vobis, ut unus moriatur homo pro populo, et cetera. Infixae sunt gentes in interitu, quem fecerunt: in laqueo isto, quem absconderunt, comprehensus est pes eorum. Hoc Judaeis contigit. Ipsi namque dicebant, occidendum esse Jesum, ne venirent Romani, et tollerent ipsorum gentem et civitatem. Postquam autem occiderunt eum, haec passi sunt. Et quod ut effugerent fecerant, hoc quia fecere non effugerunt. Sed qui occisus fuit, est in caelis; qui autem occiderunt, gehennam sortiti sunt: etsi id non in voto haberent. Sed quid? Volebant, inquit, a die illo occidere ipsum: dicebant enim, Venient Romani et tollent gentem nostram. Unus autem ex illis Caiphas, cum esset pontifex anni illius dixit, caeteris impudentior: Vos nescitis quidquam. Illi nempe dubitabant, et deliberando proposuerant: dicebant enim, Quid facimus? Hic impudenter, aperta fronte, et petulanter clamavit. Quid vero dicit? Vos nescitis quidquam, neque cogitatis, quia expedit vobis, ut unus moriatur homo, et ne tota gens pereat. Hoc autem a semetipso non dixit, sed cum esset pontifex anni illius prophetavit. Vides quanta sit pontificalis potestas? Quia enim pontificatum sortitus erat, licet indignus, prophetavit, quid diceret ignorans. Gratia ejus tantum ore usa est, impurum vero cor non tetigit. Multi quoque alii futura praedixerunt, indigni licet, Nabuchodonosor, Pharao, Balaam, omniumque causa manifesta est. Hoc autem vult ille significare. Vos sedetis, adhuc segnius hoc negotium attenditis, nec scitis unius hominis salutem pro communi contemnendam esse. Vide quanta sit virtus spiritus. Ex improba mente mirabilis prophetiae verba potuit elicere. Filios autem Dei gentes appellat Evangelista, ex eo quod futurum erat, sicut et ipse ait, Et alias oves habeo; ab eo quod futurum erat sic vocans. Quid sibi vult illud, Cum esset pontifex anni illius? Cum aliis hic quoque mos corruptus erat. Non enim ultra toto vitae tempore, sed anno uno sacerdotium gerebant: ex quo venales facti erant principatus. Attamen vel sic adhuc aderat spiritus. Postquam autem in Christum manus sustulerunt, tunc illos reliquit, et ad Apostolos translatus est. Et hoc velum scissum ostendit, necnon Christi vox dicentis: Ecce dimittetur domus vestra deserta. Et Josephus qui paulo post fuit, dixit quosdam Angelos, qui apud illos manebant, se inde migraturos esse significavisse, nisi resipiscerent. Quamdiu enim vinea perstitit, pro more omnia facta sunt, ubi autem heredem occiderunt, non item, sed perierunt: et quasi splendidam vestem ab ingrato filio, a Judaeis scilicet auferens Deus, probis illam servis dedit, ex Gentilibus conversis, et desertos illos nudosque reliquit. Nec parum fuit quod inimicus haec prophetaret. Hoc enim alios quoque allicere poterat. Nam contra quam ille volebat evenit. Quia enim mortuus est, ideo a futuro supplicio liberati fideles sunt. Quid sibi vult illud, Ut congregaret eos qui prope et eos qui procul sunt? Unum corpus reddidit, qui Romae est, Indos putat membrum suum esse. Quid huic congregationi par? Omniumque caput est Christus. Ab illo die cogitaverunt Judaei ut interficerent eum. Antea quaerebant, dicit enim, Ideo quaerebant eum Judaei interficere; et, Quid me quaeritis interficere? Sed tunc quaerebant, nunc autem id statuerunt, et rei manum admoverunt. Jesus autem jam non palam ambulabat in Judaea. Rursus humano more saluti suae cavet, ac frequenter hoc facit.",
+      "textSha256": "3a9e3b6de8cfeb04c2ca22dd919fb2cbe741bf2d6da6508725046fe2a611bd19",
+      "readingScope": "Homily 65 section 1 in Montfaucon 1728 Latin translation; NOT Greek original",
+      "normalization": "NFC and whitespace collapse; Markdown asterisks/numeric footnote calls removed for Calvin, XML markup removed by scoped parser for Latin; no lexical/OCR correction.",
+      "divisionBoundaryNote": "CLIO/Montfaucon div65.1 includes the opening sentence corresponding to English section2. Matching section numbers are not a claim of identical textual spans."
+    },
+    {
+      "id": "AUGUSTINE-49-EN",
+      "sourceFile": "NPNF07-TXT",
+      "selector": {
+        "kind": "lines",
+        "firstLine": 22386,
+        "lastLine": 22460
+      },
+      "text": "25. \"Then many of the Jews who had come to Mary, and had seen the things which Jesus did, believed on Him. But some of them went away to the Pharisees, and told them what things Jesus had done.\" All of the Jews who had come to Mary did not believe, but many of them did. \"But some of them,\" whether of the Jews who had come, or of those who had believed, \"went away to the Pharisees, and told them what things Jesus had done:\" whether in the way of conveying intelligence, in order that they also might believe, or rather in the spirit of treachery, to arouse their anger. But whoever were the parties, and whatever their motive, intelligence of these events was carried to the Pharisees. 26. \"Then gathered the chief priests and the Pharisees a council, and said, What do we?\" But they did not say, Let us believe. For these abandoned men were more occupied in considering what evil they could do to effect His ruin, than in consulting for their own preservation: and yet they were afraid, and took counsel of a kind together. For \"they said, What do we? for this man doeth many miracles: if we let him thus alone, all men will believe on him; and the Romans shall come, and take away both our place and nation.\" They were afraid of losing their temporal possessions, and thought not of life eternal; and so they lost both. For the Romans, after our Lord's passion and entrance into glory, took from them both their place and nation, when they took the one by storm and transported the other: and now that also pursues them, which is said elsewhere, \"But the children of the kingdom shall go into outer darkness.\" [1002] But this was what they feared, that if all believed on Christ, there would be none remaining to defend the city of God and the temple against the Romans; just because they had a feeling that Christ's teaching was directed against the temple itself and their own paternal laws. 27. \"And one of them, [named] Caiaphas, being the high priest that same year, said unto them, Ye know nothing at all, nor consider that it is expedient for us that one man should die for the people, and that the whole nation perish not. And this spake he not of himself; but being high priest that year, he prophesied.\" We are here taught that the Spirit of prophecy used the agency even of wicked men to foretell what was future; which, however, the evangelist attributes to the divine sacramental fact that he was pontiff, which is to say, the high priest. It may, however, be a question in what way he is called the high priest of that year, seeing that God appointed one person to be high priest, who was to be succeeded only at his death by another. But we are to understand that ambitious schemes and contentions among the Jews led to the appointment afterwards of more than one, and to their annual turn of service. For it is said also of Zacharias: \"And it came to pass that, while he executed the priest's office before God in the order of his course, according to the custom of the priest's office, his lot was to burn incense when he went into the temple of the Lord.\" [1003] From which it is evident that there were more than one, and that each had his turn: for it was lawful for the high priest alone to place the incense on the altar. [1004] And perhaps also there were several in actual service in the same year, who were succeeded next year by several others, and that it fell by lot to one of them to burn incense. What was it, then, that Caiaphas prophesied? \"That Jesus should die for the nation; and not for the nation only, but that also He should gather together in one the children of God that were scattered abroad.\" This is added by the evangelist; for Caiaphas prophesied only of the Jewish nation, in which there were sheep of whom the Lord Himself had said, \"I am not sent but unto the lost sheep of the house of Israel.\" [1005] But the evangelist knew that there were other sheep, which were not of this fold, but which had also to be brought, that there might be one fold and one shepherd. [1006] But this was said in the way of predestination; for those who were still unbelieving were as yet neither His sheep nor the children of God. 28. \"Then, from that day forth, they took counsel together for to put Him to death. Jesus therefore walked no more openly among the Jews; but went thence unto a country near to the wilderness, into a city called Ephraim, and there continued with His disciples.\" Not that there was any failure in His power, by which, had He only wished, He might have continued His intercourse with the Jews, and received no injury at their hands; but in His human weakness He furnished His disciples with an example of living, by which He might make it manifest that it was no sin in His believing ones, who are His members, to withdraw from the presence of their persecutors, and escape the fury of the wicked by concealment, rather than inflame it by showing themselves openly.",
+      "textSha256": "69b68926f10974b953d3f738bc5cbf7c71a3ed56e7e63ea6a1c178f2ec53a578",
+      "readingScope": "Tractate XLIX, sections 25-28 in NPNF English",
+      "normalization": "NFC and whitespace collapse; Markdown asterisks/numeric footnote calls removed for Calvin, XML markup removed by scoped parser for Latin; no lexical/OCR correction."
+    },
+    {
+      "id": "AUGUSTINE-49-LA",
+      "sourceFile": "PL35-XML",
+      "selector": {
+        "kind": "augustine-49-fragment"
+      },
+      "text": "25. Multi ergo ex Judaeis qui venerant ad Mariam et viderant quae fecit Jesus, crediderunt in eum : quidam autem ex ipsis abierunt ad Pharisaeos, et dixerunt eis quae fecit Jesus. Non omnes ex Judaeis qui convenerant ad Mariam, crediderunt, sed tamen multi. Quidam vero ex eis , sive ex Judaeis qui convenerant, sive ex eis qui crediderant, abierunt ad Pharisaeos, et dixerunt eis quae fecit Jesus : sive annuntiando, ut et ipsi crederent; sive potius prodendo, ut saevirent. Sed quomodolibet et a quibuslibet, ad Pharisaeos ista perlata sunt. 26. Collegerunt pontifices et Pharisaei concilium , et dicebant: Quid facimus ? Nec tamen dicebant, Credamus . Plus enim perditi homines cogitabant quomodo nocerent ut perderent, quam quomodo sibi consule rent ne perirent : et tamen timebant, et quasi consulebant . Dicebant enim : Quid facimus ? Quia hic homo multa signa facit: si dimittimus eum sic, omnes credent in eum; et venient Romani, et tollent nostrum locum et gentem. Temporalia perdere timuerunt , et vitam aeternam non cogitaverunt; ac sic utrumque amiserunt . Nam et Romani post Domini passionem et glorificationem , tulerunt eis et locum et gentem, expugnando et transferendo : et illud eos sequitur quod alibi dictum est, Filii autem regni hujus ibunt in tenebras exteriores (Id. VIII, 12). Hoc autem timuerunt, ne si omnes in Christum crederent, nemo remaneret qui adversus Romanos civitatem Dei templumque defenderet ; quoniam contra ipsum templum , et contra suas paternas leges doctrinam Christi esse sentiebant. 27. Unus autem ex ipsis Caiphas, cum esset pontifex anni illius, dixit eis : Vos nescitis quidquam, nec cogitatis quia expedit nobis ut unus moriatur homo pro populo, et non tota gens pereat. Hoc autem a semetipso non dixit, sed cum esset pontifex anni illius, prophetavit . Hic docemur etiam per homines malos prophetiae Spiritum futura praedicere : quod tamen Evangelista divino tribuit sacramento, quia pontifex fuit, id est, summus sacerdos. Potest autem movere quomodo dicatur pontifex anni illius, cum Deus unum constituerit summum sacerdotem, cui mortuo unus succederet . Sed intelligendum est, per ambitiones et contentiones inter Judaeos postea constitutum ut plures essent, et per annos singulos vicibus ministrarent. 1 Editi, vobis. Mss. vero, nobis; favente greco, tmin. Nam et de Zacharia hoc dicitur: Factum est autem, cum sacerdotio fungeretur in ordine vicis suae ante Deum , secundum consuetudinem sacerdotii, sorte exiit ut incensum poneret, ingressus in templum Domini ( Luc. I, 8,9). Hinc apparet plures eos fuisse, et vices suas habuisse : nam incensum non licebat ponere nisi summo sacerdoti Exod. xxx, 7). Et forte etiam unum annum plures administrabant, quibus alio anno alii succedebant, ex quibus sorte exibat quis, ut incensum poneret. Quid est ergo quod prophetavit Caiphas? Quia Jesus moriturus erat pro gente; et non tantum pro gente, sed ut filios Dei qui erant dispersi, congregaret in unum. Hoc Evangelista addidit: nam Caiphas de sola gente Judaeorum prophetavit, in qua erant oves de quibus ait ipse Dominus, Non sum missus nisi ad oves quae perierunt domus Israel (Matth. xv, 24). Sed noverat Evangelista esse alias oves, quae non erant de hoc ovili, quas oportebat adduci, ut esset unum ovile et unus pastor (Joan. x, 46). Haec autem secundum praedestinationem dicta sunt: nam neque oves ejus, nec filii Dei adhuc erant, qui nondum crediderant. 28 . Ab illo ergo die cogitaverunt ut interficerent eum. Jesus ergo jam non palam ambulabat apud Judaeos, sed abiit in regionem juxta desertum, in civitatem quae dicitur Ephrem, et ibi morabatur cum discipulis suis. Non quia potentia ejus defecerat, in qua utique si vellet , et palam Judaeis conversaretur, et nihil ei facerent . ; sed in hominis infirmitate vivendi exemplum discipulis demonstrabat, in quo appareret non esse peccatum, si fideles ejus qui sunt membra ejus, oculis persequentium se subtraherent, et furorem sceleratorum - latendo potius devitarent, quam se offerendo magis accenderent.",
+      "textSha256": "a624069faf5976fe4b98813c940ef5f356d85c7d364b3e5441c94ea71c63f2d8",
+      "readingScope": "Tractatus XLIX, paragraphs with incipits of 25-28 in a strictly parsed bounded TEI fragment, not a valid whole XML document",
+      "normalization": "NFC and whitespace collapse; Markdown asterisks/numeric footnote calls removed for Calvin, XML markup removed by scoped parser for Latin; no lexical/OCR correction."
+    }
+  ],
+  "webObservations": [
+    {
+      "id": "CALVIN-11-WEB",
+      "url": "https://biblehub.com/library/calvin/commentary_on_john_volume_1/john_11_45-52.htm",
+      "version": "BibleHub Library, Commentary on John - Volume 1, John 11:45-52, attributed to John Calvin; English Pringle translation family",
+      "returnedChunksRead": [
+        0,
+        6,
+        7
+      ],
+      "contextRead": "The comments on 11:49-52, including Caiaphas's intention, death/gathering, and the explanation of children; not the entire commentary or a printed edition.",
+      "selections": [
+        {
+          "locator": "11:51, paragraph beginning That Jesus would die",
+          "text": "That Jesus would die. First, the Evangelist shows that the whole of our salvation consists in this, that Christ should assemble us into one; for in this way he reconciles us to the Father, in whom is the fountain of life, (Psalm 36:9.) Hence, also, we infer, that the human race is scattered and estranged from God, until the children of God are assembled under Christ their Head. Thus, the communion of saints is a preparation for eternal life, because all whom Christ does not gather to the Father remain in death, as we shall see again under the seventeenth chapter. For the same reason Paul also teaches that Christ was sent, in order that he might gather together all things which are in heaven and in earth, (Ephesians 1:10.) Wherefore, that we may enjoy the salvation brought by Christ, discord must be removed, and we must be made one with God and with angels, and among ourselves. The cause and pledge of this unity was the death of Christ, by which he drew all things to himself; but we are daily gathered by the Gospel into the fold of Christ."
+        },
+        {
+          "locator": "11:52, complete displayed comment",
+          "text": "52. And not for that nation only. The Evangelist means that the reconciliation effected by Christ is also extended to the Gentiles. But how comes it that they who, in consequence of being wretchedly scattered and wandering, became the enemies of God, are here called the children of God? I answer, as has been already said, God had in his breast children, who in themselves were wandering and lost sheep, or rather who were the farthest possible from being sheep, but, on the contrary, were wolves and wild beasts. It is therefore by election that he reckons as the children of God, even before they are called, those who at length begin to be manifested by faith both to themselves and to others."
+        }
+      ],
+      "limits": "Rendered prose, not original HTTP bytes. The trailing ERR_BLOCKED_BY_CLIENT text did not erase the displayed author text. No Latin/French original or printed collation; no independence claimed from other CCEL/Pringle-derived mirrors.",
+      "rawHtmlReceived": false,
+      "hashScope": "CAPTURED_SELECTED_RENDERED_PROSE_ONLY",
+      "recordedAtUtc": "2026-11-03T00:36:02+00:00",
+      "fetchTimestampUtc": null,
+      "receivedVia": "fetch_page rendered output",
+      "textSha256": "d74eb57291c30baa1798be32bce39689dfdcd9feca8ca976f1c7e8b0f4612223",
+      "captureNormalization": "Selected prose manually retained from actually returned chunks; markup/link wrappers, page-marker intrusions and redundant whitespace removed. This hash is NOT the source page hash."
+    },
+    {
+      "id": "CALVIN-1-WEB",
+      "url": "https://biblehub.com/library/calvin/commentary_on_john_volume_1/john_1_6-13.htm",
+      "version": "BibleHub Library, Commentary on John - Volume 1, John 1:6-13, attributed to John Calvin; English Pringle translation family",
+      "returnedChunksRead": [
+        6,
+        7,
+        8
+      ],
+      "contextRead": "Comments on 1:12-13 in full; preceding 1:10-11 also displayed/read. Not a complete chapter or printed edition.",
+      "selections": [
+        {
+          "locator": "1:12, suspect sentence also present in the pinned Markdown conversion",
+          "text": "The Evangelist declares that their condition is changed, because the Jews have been rejected, and their place, which had been left empty, is occupied by the Jews; for it is as if he transferred the right of adoption to strangers."
+        },
+        {
+          "locator": "1:12, paragraph beginning Who believe in his name",
+          "text": "Who believe in his name. He expresses briefly the manner of receiving Christ, that is, believing in him. Having been engrafted into Christ by faith, we obtain the right of adoption, so as to be the sons of God. And, indeed, as he is the only-begotten Son of God, it is only so far as we are members of him that this honor at all belongs to us."
+        },
+        {
+          "locator": "1:13, distinction of respects in faith/regeneration/adoption",
+          "text": "It may be thought that the Evangelist reverses the natural order by making regeneration to precede faith, whereas, on the contrary, it is an effect of faith, and therefore ought to be placed later. I reply, that both statements perfectly agree; because by faith we receive the incorruptible seed, (1 Peter 1:23,) by which we are born again to a new and divine life. And yet faith itself is a work of the Holy Spirit, who dwells in none but the children of God. So then, in various respects, faith is a part of our regeneration, and an entrance into the kingdom of God, that he may reckon us among his children. The illumination of our minds by the Holy Spirit belongs to our renewal, and thus faith flows from regeneration as from its source; but since it is by the same faith that we receive Christ, who sanctifies us by his Spirit, on that account it is said to be the beginning of our adoption."
+        }
+      ],
+      "limits": "The repeated Jews reading is not silently emended to Gentiles. Its presence in both digital witnesses prevents attributing its origin to the disclosed AI-assisted conversion alone. It is excluded as a doctrinal proof; print/original-language collation remains open. Selected doctrinal sentences were compared, not every character of either digital chapter.",
+      "rawHtmlReceived": false,
+      "hashScope": "CAPTURED_SELECTED_RENDERED_PROSE_ONLY",
+      "recordedAtUtc": "2026-11-03T00:36:02+00:00",
+      "fetchTimestampUtc": null,
+      "receivedVia": "fetch_page rendered output",
+      "textSha256": "24d1f1c01eb608ef105ce40ad5e7549ba5740716fd2c2b9d0442a0e812d8533f",
+      "captureNormalization": "Selected prose manually retained from actually returned chunks; markup/link wrappers, page-marker intrusions and redundant whitespace removed. This hash is NOT the source page hash."
+    },
+    {
+      "id": "CALVIN-10-WEB",
+      "url": "https://biblehub.com/library/calvin/commentary_on_john_volume_1/john_10_16-18.htm",
+      "version": "BibleHub Library, Commentary on John - Volume 1, John 10:16-18, attributed to John Calvin; English Pringle translation family",
+      "returnedChunksRead": [
+        5,
+        6
+      ],
+      "contextRead": "Complete displayed 10:16-18 comments; critical 10:16 paragraphs compared with the pinned Markdown conversion. A request for chunk 7 returned chunk 6 again, not an additional source.",
+      "selections": [
+        {
+          "locator": "10:16, sheep before awareness and effectual calling",
+          "text": "Yet I acknowledge that Augustine's statement applies in this respect, that Christ gives the name of sheep to unbelievers, who in themselves were the farthest possible from being entitled to be called sheep And not only does he point out, by this term, what they will be, but rather refers this to the secret election of God, because we are already God's sheep, before we are aware that He is our shepherd. In like manner, it is elsewhere said that we were enemies, when he loved us, (Romans 5:10;) and for this reason Paul also says that we were known by God, before we knew him, (Galatians 4:9.) Them also I must bring. He means that the election of God will be secure, so that nothing of all that he wishes to be saved shall perish. For the secret purpose of God, by which men were ordained to life, is at length manifested in his own time by the calling, -- the effectual calling, when he regenerates by his Spirit, to be his sons, those who formerly were begotten of flesh and blood."
+        }
+      ],
+      "limits": "No equation of election with already-applied justification. Calvin gives election priority over a merely future designation; the two are not made mutually exclusive. His citation of Augustine is not an independent reading of Augustine. His 10:26 comment was read in the derivative Markdown only, not freshly collated against this web page.",
+      "rawHtmlReceived": false,
+      "hashScope": "CAPTURED_SELECTED_RENDERED_PROSE_ONLY",
+      "recordedAtUtc": "2026-11-03T00:36:02+00:00",
+      "fetchTimestampUtc": null,
+      "receivedVia": "fetch_page rendered output",
+      "textSha256": "8770dcab297b8b4e5aabd724ed8a04132e76b582516900c04bb78d30d1510632",
+      "captureNormalization": "Selected prose manually retained from actually returned chunks; markup/link wrappers, page-marker intrusions and redundant whitespace removed. This hash is NOT the source page hash."
+    },
+    {
+      "id": "ALFORD-11-WEB",
+      "url": "https://www.studylight.org/commentaries/eng/hac/john-11.html",
+      "version": "StudyLight, Alford's Greek Testament Critical Exegetical Commentary, John 11, Verses 49-52; printed edition not independently identified/collated",
+      "returnedChunksRead": [
+        0,
+        4,
+        5,
+        6,
+        8,
+        9
+      ],
+      "contextRead": "Complete 49-52 comment with 45-48 and 53-57 context; navigation/footer chunks are not counted as author text or additional sources.",
+      "selections": [
+        {
+          "locator": "Verses 49-52, opening explanation of prophetic scope",
+          "text": "The counsel is given in subtilty, and was intended by Caiaphas in the sense of political expediency only. But it pleased God to make him, as High Priest, the special though involuntary organ of the Holy Spirit, and’ thus to utter by him a prophecy of the death of Christ and its effects. That this is the only sense to be given, appears from the consideration that the whole of Joh 11:51-52 cannot for a moment be supposed to have been in the mind of Caiaphas; and to divide it and suppose the latter part to be the addition of the Evangelist, is quite unjustifiable."
+        },
+        {
+          "locator": "Verses 49-52, final note on children of God",
+          "text": "τὰ τέκ. τ. θεοῦ … are the τασσόμενοι εἰς ζωὴν αἰώνιον, the τέκνα θ of ch. John 1:12, among all nations: see ch. John 10:16."
+        }
+      ],
+      "limits": "Displayed τασσόμενοι is retained, not replaced with the different form in Acts 13:48. Markdown emphasis, link wrappers and redundant inter-token spacing removed; the stray apostrophe in and’ retained. The comment's historical claims about priesthood/Josephus are not independently verified here. The narrator remains the grammatical speaker in 11:51-52 even if the entire content is treated as Caiaphas's unwitting prophecy.",
+      "rawHtmlReceived": false,
+      "hashScope": "CAPTURED_SELECTED_RENDERED_PROSE_ONLY",
+      "recordedAtUtc": "2026-11-03T00:36:02+00:00",
+      "fetchTimestampUtc": null,
+      "receivedVia": "fetch_page rendered output",
+      "textSha256": "76421e89a458befc2c2d83df8456f8bebd8ba82d36c150bee26c22d00406a9d4",
+      "captureNormalization": "Selected prose manually retained from actually returned chunks; markup/link wrappers, page-marker intrusions and redundant whitespace removed. This hash is NOT the source page hash."
+    },
+    {
+      "id": "AUGUSTINE-49-WEB",
+      "url": "https://www.augustinus.it/latino/commento_vsg/omelia_049_testo.htm",
+      "version": "Augustinus.it, In Evangelium Ioannis tractatus centum viginti quatuor, Tractatus 49; displayed Latin, no new printed-edition claim",
+      "returnedChunksRead": [
+        0,
+        4,
+        5
+      ],
+      "contextRead": "49.25-28 in full; earlier 49.21-24 also displayed/read. Compared with the selected PL35 OCR fragment and NPNF English 49.25-28, not a full tractate collation.",
+      "selections": [
+        {
+          "locator": "49.27, Evangelist's addition and predestination/not-yet-believing distinction",
+          "text": "Hoc Evangelista addidit: nam Caiphas de sola gente Iudaeorum prophetavit, in qua erant oves de quibus ait ipse Dominus: Non sum missus nisi ad oves quae perierunt domus Israel. Sed noverat Evangelista esse alias oves, quae non erant de hoc ovili, quas oportebat adduci, ut esset unum ovile et unus pastor. Haec autem secundum praedestinationem dicta sunt: nam neque oves eius, nec filii Dei adhuc erant, qui nondum crediderant."
+        }
+      ],
+      "limits": "This readable Latin does not repair the separately acquired malformed whole PL35 XML or verify its printed columns. Orthographic eius/ejus and Iudaeorum/Judaeorum differ between digital witnesses; no silent global normalization is claimed.",
+      "rawHtmlReceived": false,
+      "hashScope": "CAPTURED_SELECTED_RENDERED_PROSE_ONLY",
+      "recordedAtUtc": "2026-11-03T00:36:02+00:00",
+      "fetchTimestampUtc": null,
+      "receivedVia": "fetch_page rendered output",
+      "textSha256": "8b9ff1ff28c7704724c2207706809627c9fb6dd60f21e0f0f37205ad715c343f",
+      "captureNormalization": "Selected prose manually retained from actually returned chunks; markup/link wrappers, page-marker intrusions and redundant whitespace removed. This hash is NOT the source page hash."
+    },
+    {
+      "id": "CYRIL-7-WEB",
+      "url": "https://www.ccel.org/ccel/pearse/morefathers/files/cyril_on_john_07_book7.htm",
+      "version": "Cyril of Alexandria, Commentary on John, LFC 43, 48 (1874/1885), Book 7, vol. 2 pp. 92-137; extant fragments, translated T. Randell; Roger Pearse transcription, 2005, CCEL static mirror",
+      "returnedChunksRead": [
+        0,
+        10,
+        11,
+        12
+      ],
+      "contextRead": "Complete displayed commentary on 11:49-52, with 11:45-48 and 53-54 context; the same returned chunks also contain 55-57. Header and transcription/omission footer read. Not the whole Book VII or all extant fragments.",
+      "selections": [
+        {
+          "locator": "Book VII fragments, 11:49-52, page markers 133-134; full displayed comment across chunks 10-11",
+          "text": "Behold, the very thing of which we were speaking, the very thing which the Jews were secretly exercising themselves to bring into effect, this their high priest openly counsels them to do, even to kill the Christ; saying that it would be for the nation, although the nation was unjust. And he makes a true statement, his words being verified not by the perversity of the people, but by the power and wisdom of God. For they, to their own destruction put the Christ to death, but He, being put to death in the flesh, became for us a source of all good things. And what he calls the destruction of the nation, namely, the being under the hand of the Romans and losing the shadow of the law: the very thing which they were seeking to turn away, they actually suffered. Prompted therefore by an unlawful principle, Caiaphas said what he did; nevertheless his language was made to indicate something true, as being spoken by one in the official position of a prophet. For he proclaims beforehand of what good things the death of the Christ would become the source, saying that which he did not understand, and glorifying God (as Balaam did) under constraint, since he was holding the prerogative of the priestly order: the prophecy being as it were given, not to him personally, but to the outward representative of the priesthood. Unless indeed, as may have been the case, the words spoken by Caiaphas were accomplished and came to pass afterwards, without his having received any prophetic gift whatever. For it is probable that what some people say, will really happen, although they may say it without certainly knowing that it will come to pass. Caiaphas then said that the death of Christ would be for the Jews only, but the Evangelist says that it would be for all mankind. For we are all called the offspring and children of God inasmuch as He is the Father of all, having by way of creation begotten as it were and brought into existence the things that were not. And also, because we had from the first the honour of being made in His image, and were allotted the supremacy over earthly things, and were accounted worthy of the Divine covenant, and enjoyed the life and bliss of Paradise. But Satan, being unwilling that we should remain in that condition, scattered us, and in divers manners led man astray from his nearness to God. And the Christ collected us all together again and brought us through faith into one fold, the Church; and united us under one yoke, all being made one, Jews, Greeks, Barbarians, Scythians; and we are fashioned again into one new man, and worship one God."
+        },
+        {
+          "locator": "heading, above Book VII fragments",
+          "text": "[Translated by T. Randell] … THE FRAGMENTS WHICH ARE EXTANT OF BOOK VII."
+        },
+        {
+          "locator": "editorial footer, after page running titles",
+          "text": "Most of the footnotes, moved to the end and renumbered. The margin contains mainly biblical references and fragments of Greek. These have been omitted"
+        },
+        {
+          "locator": "transcription and rights footer",
+          "text": "This text was transcribed by Roger Pearse, Ipswich, UK, 2005. All material on this page is in the public domain - copy freely."
+        }
+      ],
+      "limits": "Positive evidence for the reading of this published fragment attributed to Cyril; no independent Greek/catena/critical attribution verification. The actual target has page markers 133-134; page 135 begins in the following comment on verse 53, so the broader 133-135 context must not be mislabeled as the precise extent of 49-52. Fragmentary transmission does not erase the explicit all-mankind/creation-based reading. Through-faith gathering does not establish automatic salvation of every individual.",
+      "rawHtmlReceived": false,
+      "hashScope": "CAPTURED_SELECTED_RENDERED_PROSE_ONLY",
+      "recordedAtUtc": "2026-11-03T00:36:02+00:00",
+      "fetchTimestampUtc": null,
+      "receivedVia": "fetch_page rendered output",
+      "textSha256": "d628f8815dcd40cd1e34d9bdf4ea70240089cd3f16774dab2291e3dcf118e6cd",
+      "captureNormalization": "Selected prose manually retained from actually returned chunks; markup/link wrappers, page-marker intrusions and redundant whitespace removed. This hash is NOT the source page hash."
+    }
+  ],
+  "sources": [
+    {
+      "evidenceClass": "A1",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "BLOCKED",
+      "contextVerified": true,
+      "quoteSafe": true,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "id": "CALVIN",
+      "accessState": "PARTIAL_OBJECT",
+      "version": "Pringle English translation family; BibleHub rendered comments and pinned BenjaminPoole Markdown chapters derived from CCEL ThML, with disclosed AI-assisted scraping.",
+      "readingScope": "11:49-52 web, 11:51-52 Markdown; 1:12-13 and 10:16 compared at critical paragraphs; 10:26 read in Markdown only.",
+      "quoteSafeScope": "The stated interpretation and short quotations in verified digital comments; not an original-language/printed critical text, full chapter collation or entire Calvin system.",
+      "evidenceRefs": [
+        "CALVIN-11-WEB",
+        "CALVIN-1-WEB",
+        "CALVIN-10-WEB",
+        "CALVIN-11-MD",
+        "CALVIN-1-MD",
+        "CALVIN-10-16-MD",
+        "CALVIN-10-26-MD",
+        "CALVIN-README",
+        "CALVIN-INDEX"
+      ],
+      "rightsBasis": "Old public-domain author/Pringle translation passages only; repository conversion code/README and platform UI are not relicensed here.",
+      "originalLanguageRead": false,
+      "independentMirrorsClaimed": false
+    },
+    {
+      "evidenceClass": "A1",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "BLOCKED",
+      "contextVerified": true,
+      "quoteSafe": true,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "id": "ALFORD",
+      "accessState": "PARTIAL_OBJECT",
+      "version": "StudyLight hac, Alford Greek Testament commentary, John 11:49-52; this digital version identified, precise printed edition/page not freshly established.",
+      "readingScope": "49-52 with 45-48 and 53-57 surrounding comments.",
+      "quoteSafeScope": "Alford as presented in this digital reproduction, preserving the displayed Greek; no claim of printed variant resolution or full author-system assessment.",
+      "evidenceRefs": [
+        "ALFORD-11-WEB"
+      ],
+      "rightsBasis": "Public-domain Alford commentary prose; no platform UI or modern Bible translation copied.",
+      "printedEditionVerified": false
+    },
+    {
+      "evidenceClass": "A1",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "BLOCKED",
+      "contextVerified": true,
+      "quoteSafe": true,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "id": "CHRYSOSTOM",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "receivedObject": "Complete pinned NPNF1_14 TXT/XML digital files and CLIO Montfaucon Latin file; NOT a Greek source or printed-volume facsimile.",
+      "version": "NPNF1_14 English and Montfaucon 1728 Latin as transcribed by Chris Nighman/Joel Kalvesmaki in Arithmeticus/CLIO.",
+      "readingScope": "Homily 65 section 1 in both translations; start of section 2 read in English; no full homily/book reading.",
+      "quoteSafeScope": "The proleptic naming, faithful-deliverance and one-body argument in these translations; neither Latin translation nor number of copies proves Greek wording or a complete modern penal system.",
+      "evidenceRefs": [
+        "CHRYSOSTOM-65-EN",
+        "CHRYSOSTOM-65-LA",
+        "NPNF-README",
+        "CLIO-METADATA"
+      ],
+      "rightsBasis": "NPNF public-domain translation; CLIO transcription CC BY-SA 4.0, with source URL/commit, authors, license and markup/whitespace transformations retained.",
+      "originalGreekRead": false,
+      "independentAuthorVotes": 1
+    },
+    {
+      "evidenceClass": "A1",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "BLOCKED",
+      "contextVerified": true,
+      "quoteSafe": true,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "id": "AUGUSTINE",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "receivedObject": "Complete pinned NPNF1_07 TXT/XML and PL35 digital file; whole PL35 XML malformed. Augustinus.it is an additional partial rendered observation, not a pinned HTTP object.",
+      "version": "NPNF1_07 English; OGL corrected PL35 Migne OCR; Augustinus.it Latin Tractatus 49.",
+      "readingScope": "49.25-28 English and Latin, with 49.27 target compared across witnesses; no full tractate/book or printed-column collation.",
+      "quoteSafeScope": "The predestination/not-yet-believing distinction and Evangelist-addition attribution in 49.27; no global Augustine doctrine inferred.",
+      "evidenceRefs": [
+        "AUGUSTINE-49-EN",
+        "AUGUSTINE-49-LA",
+        "AUGUSTINE-49-WEB",
+        "PL35-README",
+        "NPNF-README"
+      ],
+      "rightsBasis": "Ancient Latin and NPNF public-domain translation; OGL TEI CC BY-SA 4.0 with source credit and declared transformation; modern site UI not reproduced.",
+      "originalLatinRead": true
+    },
+    {
+      "evidenceClass": "A1",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "BLOCKED",
+      "contextVerified": true,
+      "quoteSafe": true,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "id": "CYRIL-FRAGMENT",
+      "accessState": "PARTIAL_OBJECT",
+      "version": "LFC 43/48 (1874/1885), Book VII extant fragments, vol. 2 pp. 92-137; T. Randell translation; Roger Pearse 2005 transcription at CCEL.",
+      "readingScope": "The complete displayed fragment on 11:49-52 with 45-48 and 53-54 context; heading/footer; not all fragments of Book VII.",
+      "quoteSafeScope": "The wording and reading of the published fragment attributed to Cyril, always with its transmission/translation qualification. Not independent proof of attribution to Cyril or of the Greek wording.",
+      "evidenceRefs": [
+        "CYRIL-7-WEB"
+      ],
+      "rightsBasis": "Footer explicitly releases all page material to the public domain; translation/transcription credit retained.",
+      "attribution": "PUBLISHED_UNDER_CYRIL_NOT_INDEPENDENTLY_AUTHENTICATED",
+      "textCompleteness": "EXTANT_FRAGMENT",
+      "originalGreekRead": false,
+      "universalFinalSalvationProved": false,
+      "targetPageMarkers": "133-134",
+      "surroundingContextPageMarkers": "133-135"
+    }
+  ],
+  "pl35WholeDocumentParse": {
+    "status": "FAIL",
+    "line": 1551,
+    "column": 17,
+    "sourceRepaired": false,
+    "scopedFragmentParse": "PASS"
+  },
+  "pl35KnownDigitalDefects": [
+    "Earlier 49.23 Martha paragraph is numbered 25 in this OCR; select 49.25 by its incipit, not number alone.",
+    "49.27 contains the digital cross-reference Joan. x, 46; not silently amended or certified against printed columns."
+  ],
+  "calvinDigitalDefect": {
+    "locus": "1:12",
+    "observed": "the Jews have been rejected ... is occupied by the Jews",
+    "witnesses": [
+      "CALVIN-1-MD",
+      "CALVIN-1-WEB"
+    ],
+    "originAssignedToAIConversion": false,
+    "silentCorrectionApplied": false,
+    "printedOrOriginalCollation": "OPEN",
+    "doctrinalUse": "EXCLUDED_FOR_THIS_SENTENCE"
+  },
+  "timeProvenance": {
+    "taskDate": "2026-11-03",
+    "measurementClock": "UTC",
+    "moscowJustificationWithdrawn": true,
+    "historicalUtcInstantsRetained": true,
+    "note": "The wave3 Moscow explanation was an unsupported retrospective provenance claim. It is explicitly withdrawn. A matching calendar day or a current system timezone cannot authorize that historical claim; November 2 UTC receipts and commit times remain unchanged. No exact human-reading instant invented."
+  },
+  "licenses": [
+    {
+      "source": "Arithmeticus/CLIO",
+      "license": "CC BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "credit": "Latin Montfaucon 1728; transcription Chris Nighman and Joel Kalvesmaki",
+      "changes": "TEI markup removal and whitespace normalization only"
+    },
+    {
+      "source": "OpenGreekAndLatin/patrologia_latina-dev",
+      "license": "CC BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "credit": "Open Greek and Latin, machine-corrected Migne PL35 TEI",
+      "changes": "Bounded TEI extraction and whitespace normalization; no source/OCR repair"
+    }
+  ],
+  "uncompleted": [
+    {
+      "id": "GREEK-CHRYSOSTOM-65",
+      "state": "NOT_ACQUIRED",
+      "reason": "CLIO Greek page returned image links only. The sibling Greek file referenced in metadata was not obtained. Latin is not Greek verification."
+    },
+    {
+      "id": "GREEK-CYRIL-7-ATTRIBUTION",
+      "state": "NOT_VERIFIED",
+      "reason": "The published fragment and translation were read; Greek/catena attribution and critical transmission remain open."
+    },
+    {
+      "id": "PRINT-COLLATION",
+      "state": "NOT_RUN",
+      "reason": "No new printed page/column or original-language Calvin/Alford collation."
+    },
+    {
+      "id": "WAVE3-RAW-REPLAY",
+      "state": "NOT_RUN",
+      "reason": "Old 80-file source set and Prokopenko PDF absent; historic results are retained, not counted as a fresh replay."
+    }
+  ],
+  "rejectedSubstitutes": [
+    {
+      "id": "CALVIN-SHELL",
+      "reason": "HTML reader shell is not author-text acquisition."
+    },
+    {
+      "id": "FIRST1K-CYRIL-METADATA",
+      "reason": "tlg4090/tlg001 describes In XII Prophetas, not In Ioannem."
+    },
+    {
+      "id": "SOTW-METADATA",
+      "reason": "Manifest/README is not receipt of the source archive."
+    },
+    {
+      "id": "CLIO-IMAGE-SEARCH",
+      "reason": "An image-search query returned an unrelated Dreamstime statue; rejected, not read as a Greek page or retained as evidence."
+    }
+  ]
+}
