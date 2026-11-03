@@ -716,6 +716,34 @@
     ],
     "supersedesOnly": "Generic request for a bounded OT comparison in Wave5 next actions, only for the explicitly listed ranges. Older wave findings/receipts remain historical; Cyril Greek/critical transmission remains open.",
     "nextAction": "Critical/printed collation of digital irregularities and proposed intertexts; separate Cyril Greek/critical transmission. No whole-OT/atonement closure."
+  }
+,
+  "greekTransmissionReviewWave7": {
+    "recordedAtUtc": "2026-11-03T11:39:18.078421+00:00",
+    "controls": "ИСКУПЛЕНИЕ/evidence/source_controls_wave7_2026-11-03.json",
+    "status": "CANDIDATE_GREEK_IDENTIFIED_PRINT_AND_ATTRIBUTION_OPEN",
+    "c25": "OPEN",
+    "o11": "DISCOVERY_AND_EDITORIAL_REVIEW_DONE_ORIGINAL_VERIFICATION_OPEN",
+    "candidateIds": [
+      "OG-JN11",
+      "AEGEAN-JN11"
+    ],
+    "candidateEvidenceClass": "C",
+    "greekCandidatesQuoteSafe": false,
+    "greekOriginalVerified": false,
+    "printedCollationClaimed": false,
+    "criticalAttributionSettled": false,
+    "publicationEligible": false,
+    "interpretationStatus": "ARGUED_PROVISIONAL_NOT_MACHINE_PROOF",
+    "scope": "Two bounded Greek digital candidate contexts; 11 verified Git objects plus two byte-matched ZIP members; three rendered web observations. No full-work reading, raw-HTML receipt, print/manuscript collation or new Greek-original quotation.",
+    "findings": [
+      "Liddon reports Greek and Syriac source text and marginal language notices; a particular fragment needs its own language/source identification.",
+      "Pearse’s later translated/abridged Pusey account supplies catena leads, not direct manuscript inspection or individual attribution.",
+      "Four literal digital differences are retained without silent repair or an assertion of ancient variants/established OCR cause.",
+      "The previously read and freshly reread English attributed fragment still supplies the all-human creation and faith-gathering reading."
+    ],
+    "supersedesOnly": "Undifferentiated search for a Greek candidate, only for the two located digital contexts and editorial review; no promotion of their evidence class and no closure of O11/C25.",
+    "nextAction": "Acquire and visually collate Randell II133–135 with margins; authenticate candidate Pusey II294–296 and its apparatus; map pg074_0039.1 to printed PG74; trace only the witnesses actually indicated for the target fragment."
   },
   "claimRegister20261026": {
       "чтоЭто": "реестр доводов лана «synthesis»: строка = раздел прозы уровня ## с локатором, классом из её собственных маркеров и отметкой съёма",
@@ -4243,8 +4271,8 @@
       ],
       "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
       "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check synthesis",
-      "measuredAt": "2026-11-03T10:38:27Z",
-      "checkedAt": "2026-11-03T10:38:27Z",
-      "предыдущийСъём": "2026-11-03T08:21:47Z"
+      "measuredAt": "2026-11-03T11:46:16Z",
+      "checkedAt": "2026-11-03T11:46:16Z",
+      "предыдущийСъём": "2026-11-03T10:38:27Z"
   }
 }

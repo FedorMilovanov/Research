@@ -1492,6 +1492,33 @@
     ],
     "nextAction": "Greek/critical transmission, comparison of VI10:14-15 and VII11:44/52, and bounded OT intertext; no whole-author eschatology/atonement closure."
   },
+  "greekTransmissionReviewWave7": {
+    "recordedAtUtc": "2026-11-03T11:39:18.078421+00:00",
+    "controls": "ИСКУПЛЕНИЕ/evidence/source_controls_wave7_2026-11-03.json",
+    "status": "CANDIDATE_GREEK_IDENTIFIED_PRINT_AND_ATTRIBUTION_OPEN",
+    "c25": "OPEN",
+    "o11": "DISCOVERY_AND_EDITORIAL_REVIEW_DONE_ORIGINAL_VERIFICATION_OPEN",
+    "candidateIds": [
+      "OG-JN11",
+      "AEGEAN-JN11"
+    ],
+    "candidateEvidenceClass": "C",
+    "greekCandidatesQuoteSafe": false,
+    "greekOriginalVerified": false,
+    "printedCollationClaimed": false,
+    "criticalAttributionSettled": false,
+    "publicationEligible": false,
+    "interpretationStatus": "ARGUED_PROVISIONAL_NOT_MACHINE_PROOF",
+    "scope": "Two bounded Greek digital candidate contexts; 11 verified Git objects plus two byte-matched ZIP members; three rendered web observations. No full-work reading, raw-HTML receipt, print/manuscript collation or new Greek-original quotation.",
+    "findings": [
+      "Liddon reports Greek and Syriac source text and marginal language notices; a particular fragment needs its own language/source identification.",
+      "Pearse’s later translated/abridged Pusey account supplies catena leads, not direct manuscript inspection or individual attribution.",
+      "Four literal digital differences are retained without silent repair or an assertion of ancient variants/established OCR cause.",
+      "The previously read and freshly reread English attributed fragment still supplies the all-human creation and faith-gathering reading."
+    ],
+    "supersedesOnly": "Undifferentiated search for a Greek candidate, only for the two located digital contexts and editorial review; no promotion of their evidence class and no closure of O11/C25.",
+    "nextAction": "Acquire and visually collate Randell II133–135 with margins; authenticate candidate Pusey II294–296 and its apparatus; map pg074_0039.1 to printed PG74; trace only the witnesses actually indicated for the target fragment."
+  },
   "claimRegister20261026": {
     "чтоЭто": "реестр доводов лана «fathers»: строка = раздел прозы уровня ## с локатором, классом из её собственных маркеров и отметкой съёма",
     "чтоСчитаетсяДоводом": "заголовок «## » в любом .md лана, включая вложенные папки (synthesis/drafts, ot/tools); тело секции — до следующего «## » или до конца файла",
@@ -2378,7 +2405,7 @@
         "код": "CYRA-3@05_FIFTH_CENTURY_AND_BOUNDARY_CARDS",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
-        "строка": 164,
+        "строка": 166,
         "срез": "CYRA-3. Кирилл, In Ioannem I/VI — сотворение, воплощение, усыновление",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 2,
@@ -2395,7 +2422,7 @@
         "код": "ANS-1@05_FIFTH_CENTURY_AND_BOUNDARY_CARDS",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
-        "строка": 183,
+        "строка": 185,
         "срез": "ANS-1. Анзельм, *Cur Deus Homo* (1098) — **граница**, а не отец",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 1,
@@ -3096,8 +3123,8 @@
     ],
     "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
     "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check fathers",
-    "measuredAt": "2026-11-03T10:38:27Z",
-    "checkedAt": "2026-11-03T10:38:27Z",
-    "предыдущийСъём": "2026-11-03T08:21:47Z"
+    "measuredAt": "2026-11-03T11:46:16Z",
+    "checkedAt": "2026-11-03T11:46:16Z",
+    "предыдущийСъём": "2026-11-03T10:38:27Z"
   }
 }

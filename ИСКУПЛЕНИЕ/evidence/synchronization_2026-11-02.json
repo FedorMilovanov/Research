@@ -3648,6 +3648,174 @@
       "kind": "WAVE6_OT_INTERTEXT_CONTINUATION",
       "rejectedWordingPresentInBaseline": false,
       "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W7-NT15",
+      "file": "ИСКУПЛЕНИЕ/nt/15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md",
+      "removed": "- `O11` — **контекст получен/прочитан с квалификацией:** фрагмент кн. VII под именем Кирилла, 11:49–52. Открыты греческая/катенная передача и атрибуция; **SUPERSEDED в волне 5: очередь 1:12–13/10:16 выполнена**, с расширением до 1:11–13, 8:46–49, 10:14–17 и 11:44 (§5.3). Следующий контроль — греческая/критическая передача и отношение широкого языка 11:44 к различению исходов в VI; не повторный запрос уже прочитанных английских мест.",
+      "required": "Волна 7 — два цифровых кандидата, не VERIFIED_ORIGINAL.",
+      "rejectedWordingPresentInBaseline": true,
+      "controlType": "BASELINE_REMOVAL_OR_EXPLICIT_SUPERSESSION",
+      "historicalRetained": false,
+      "reason": "Separate acquired Greek candidates, editorial reports and previously read English primary evidence from unperformed print/manuscript verification.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave7_2026-11-03.json",
+        "scope": "Candidate discovery and editorial review; no new verified Greek quotation or atonement closure."
+      }
+    },
+    {
+      "id": "W7-F05",
+      "file": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
+      "removed": "| Кирилл Александрийский | Старые греческие локусы In XII Prophetas; **новый английский фрагмент In Ioannem VII, 11:49–52** — CYRA-2 | полный объект/греческая передача и атрибуция фрагмента; прочие сочинения отдельно | HOLD не распространяется на уже полученный цифровой контекст; печатная/греческая колляция и публикация открыты |",
+      "required": "Волна 7 — передача уточнена без повышения класса кандидатов.",
+      "rejectedWordingPresentInBaseline": true,
+      "controlType": "BASELINE_REMOVAL_OR_EXPLICIT_SUPERSESSION",
+      "historicalRetained": false,
+      "reason": "Separate acquired Greek candidates, editorial reports and previously read English primary evidence from unperformed print/manuscript verification.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave7_2026-11-03.json",
+        "scope": "Candidate discovery and editorial review; no new verified Greek quotation or atonement closure."
+      }
+    },
+    {
+      "id": "W7-F10",
+      "file": "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
+      "removed": "UNACCEPTED WAVE7: Greek OCR byte verification settles Cyril attribution and permits publication.",
+      "required": "Волна 7: цифровые кандидаты Кирилла найдены; оригинал ещё не удостоверен",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Separate acquired Greek candidates, editorial reports and previously read English primary evidence from unperformed print/manuscript verification.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave7_2026-11-03.json",
+        "scope": "Candidate discovery and editorial review; no new verified Greek quotation or atonement closure."
+      }
+    },
+    {
+      "id": "W7-C25",
+      "file": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+      "removed": "UNACCEPTED WAVE7: Greek OCR byte verification settles Cyril attribution and permits publication.",
+      "required": "Волна 7 — источниковедческая, не догматическая приёмка:",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Separate acquired Greek candidates, editorial reports and previously read English primary evidence from unperformed print/manuscript verification.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave7_2026-11-03.json",
+        "scope": "Candidate discovery and editorial review; no new verified Greek quotation or atonement closure."
+      }
+    },
+    {
+      "id": "W7-P13",
+      "file": "ИСКУПЛЕНИЕ/nt/06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md",
+      "removed": "UNACCEPTED WAVE7: Greek OCR byte verification settles Cyril attribution and permits publication.",
+      "required": "Волна 7 — передача P13-d конкретизирована:",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Separate acquired Greek candidates, editorial reports and previously read English primary evidence from unperformed print/manuscript verification.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave7_2026-11-03.json",
+        "scope": "Candidate discovery and editorial review; no new verified Greek quotation or atonement closure."
+      }
+    },
+    {
+      "id": "W7-ROOT00",
+      "file": "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+      "removed": "UNACCEPTED WAVE7: Greek OCR byte verification settles Cyril attribution and permits publication.",
+      "required": "Волна 7 — греческие кандидаты не повышены до оригинала:",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Separate acquired Greek candidates, editorial reports and previously read English primary evidence from unperformed print/manuscript verification.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave7_2026-11-03.json",
+        "scope": "Candidate discovery and editorial review; no new verified Greek quotation or atonement closure."
+      }
+    },
+    {
+      "id": "W7-N00",
+      "file": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
+      "removed": "UNACCEPTED WAVE7: Greek OCR byte verification settles Cyril attribution and permits publication.",
+      "required": "Волна 7 — греческие кандидаты не повышены до оригинала:",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Separate acquired Greek candidates, editorial reports and previously read English primary evidence from unperformed print/manuscript verification.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave7_2026-11-03.json",
+        "scope": "Candidate discovery and editorial review; no new verified Greek quotation or atonement closure."
+      }
+    },
+    {
+      "id": "W7-F00",
+      "file": "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
+      "removed": "UNACCEPTED WAVE7: Greek OCR byte verification settles Cyril attribution and permits publication.",
+      "required": "Волна 7 — греческие кандидаты не повышены до оригинала:",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Separate acquired Greek candidates, editorial reports and previously read English primary evidence from unperformed print/manuscript verification.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave7_2026-11-03.json",
+        "scope": "Candidate discovery and editorial review; no new verified Greek quotation or atonement closure."
+      }
+    },
+    {
+      "id": "W7-ROOT-DATA",
+      "file": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+      "removed": "UNACCEPTED WAVE7: Greek OCR byte verification settles Cyril attribution and permits publication.",
+      "required": "\"greekTransmissionReviewWave7\":",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Separate acquired Greek candidates, editorial reports and previously read English primary evidence from unperformed print/manuscript verification.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave7_2026-11-03.json",
+        "scope": "Candidate discovery and editorial review; no new verified Greek quotation or atonement closure."
+      }
+    },
+    {
+      "id": "W7-NT-DATA",
+      "file": "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+      "removed": "UNACCEPTED WAVE7: Greek OCR byte verification settles Cyril attribution and permits publication.",
+      "required": "\"greekTransmissionReviewWave7\":",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Separate acquired Greek candidates, editorial reports and previously read English primary evidence from unperformed print/manuscript verification.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave7_2026-11-03.json",
+        "scope": "Candidate discovery and editorial review; no new verified Greek quotation or atonement closure."
+      }
+    },
+    {
+      "id": "W7-F-DATA",
+      "file": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+      "removed": "UNACCEPTED WAVE7: Greek OCR byte verification settles Cyril attribution and permits publication.",
+      "required": "\"greekTransmissionReviewWave7\":",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Separate acquired Greek candidates, editorial reports and previously read English primary evidence from unperformed print/manuscript verification.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave7_2026-11-03.json",
+        "scope": "Candidate discovery and editorial review; no new verified Greek quotation or atonement closure."
+      }
+    },
+    {
+      "id": "W7-S-DATA",
+      "file": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+      "removed": "UNACCEPTED WAVE7: Greek OCR byte verification settles Cyril attribution and permits publication.",
+      "required": "\"greekTransmissionReviewWave7\":",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Separate acquired Greek candidates, editorial reports and previously read English primary evidence from unperformed print/manuscript verification.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave7_2026-11-03.json",
+        "scope": "Candidate discovery and editorial review; no new verified Greek quotation or atonement closure."
+      }
     }
   ],
   "pathRepairs": [
@@ -7535,5 +7703,207 @@
       "scope": "Actual clean substantive commit 2cdc806f verified, including all2695 actual Git blobs/modes, 21 raw external files, 19 accepted outcomes, history perturbation and detached-main five-check landing. This receipt does not retroactively verify its own future commit. Legacy30 FAIL remains disclosed; no full-repository green claim."
     },
     "pushStateAtReceipt": "NOT_YET_PUSHED_HISTORICAL_STATE_AT_RECEIPT_CREATION"
+  },
+  "wave7": {
+    "status": "BOUNDED_TRANSMISSION_DISCOVERY_INTEGRATED_NOT_GREEK_ORIGINAL_VERIFICATION",
+    "baselineCommit": "27eeb240196805f9ca08d3553a22b849560ba6a5",
+    "recordedAtUtc": "2026-11-03T11:39:18.078421+00:00",
+    "controls": "ИСКУПЛЕНИЕ/evidence/source_controls_wave7_2026-11-03.json",
+    "repairIds": [
+      "W7-NT15",
+      "W7-F05",
+      "W7-F10",
+      "W7-C25",
+      "W7-P13",
+      "W7-ROOT00",
+      "W7-N00",
+      "W7-F00",
+      "W7-ROOT-DATA",
+      "W7-NT-DATA",
+      "W7-F-DATA",
+      "W7-S-DATA"
+    ],
+    "createdFiles": [
+      "ИСКУПЛЕНИЕ/evidence/source_controls_wave7_2026-11-03.json",
+      "scripts/atonement_wave7_sources.py"
+    ],
+    "scope": "Two bounded Greek digital candidate contexts; 11 verified Git objects plus two byte-matched ZIP members; three rendered web observations. No full-work reading, raw-HTML receipt, print/manuscript collation or new Greek-original quotation.",
+    "findings": [
+      "Liddon reports Greek and Syriac source text and marginal language notices; a particular fragment needs its own language/source identification.",
+      "Pearse’s later translated/abridged Pusey account supplies catena leads, not direct manuscript inspection or individual attribution.",
+      "Four literal digital differences are retained without silent repair or an assertion of ancient variants/established OCR cause.",
+      "The previously read and freshly reread English attributed fragment still supplies the all-human creation and faith-gathering reading."
+    ],
+    "publicationEligible": false,
+    "mergePerformed": false,
+    "greekOriginalVerified": false,
+    "printedCollationClaimed": false,
+    "criticalAttributionSettled": false,
+    "c25": "OPEN",
+    "o11": "DISCOVERY_AND_EDITORIAL_REVIEW_DONE_ORIGINAL_VERIFICATION_OPEN",
+    "completedPriorNextAction": "Undifferentiated search for a Greek candidate, only for the two located digital contexts and editorial review; no promotion of their evidence class and no closure of O11/C25.",
+    "nextSubstantiveStep": "Acquire and visually collate Randell II133–135 with margins; authenticate candidate Pusey II294–296 and its apparatus; map pg074_0039.1 to printed PG74; trace only the witnesses actually indicated for the target fragment.",
+    "regressionRecordSemantics": "12 owner/registry updates; additive safeguards are distinguished from actual replaced baseline wording. Not 12 historical errors.",
+    "supersededSnapshots": [
+      {
+        "path": ".github/workflows/atonement-corpus-integrity.yml",
+        "commit": "27eeb240196805f9ca08d3553a22b849560ba6a5",
+        "blob": "c3f2874f4d825e5f82bca8039260580dda6739bc",
+        "sha256": "aa57ba267fe1b3aa8163a61f0cd568934408b0f847cf58bcbcf822de4008331d",
+        "bytes": 14688
+      },
+      {
+        "path": "scripts/atonement_reshoot_state.py",
+        "commit": "27eeb240196805f9ca08d3553a22b849560ba6a5",
+        "blob": "f82d67ffc02a4905d25c2ff9506598ccaef339e4",
+        "sha256": "abb90b52429bb7c70f4ffcb0f638d0868151d2ef3a24fafdb7959ea4e4755848",
+        "bytes": 166623
+      },
+      {
+        "path": "scripts/atonement_sync_check.py",
+        "commit": "27eeb240196805f9ca08d3553a22b849560ba6a5",
+        "blob": "4af4ad726da34a2f1b60cd395d833616943d450e",
+        "sha256": "61cdca74bc1b802ad1a6f6772098f643652602eaf1b42b4cf99d06370b876863",
+        "bytes": 18257
+      },
+      {
+        "path": "scripts/test_atonement_sync.py",
+        "commit": "27eeb240196805f9ca08d3553a22b849560ba6a5",
+        "blob": "f03c1ebb2b5f1207cf42366f103406e82639917d",
+        "sha256": "d1d749ed79e636b569cb8af9b5bd34a056a62475af197c3f199a5df91896f047",
+        "bytes": 66072
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+        "commit": "27eeb240196805f9ca08d3553a22b849560ba6a5",
+        "blob": "5862d1dda4e49308522f98bc7f72a063cc36db63",
+        "sha256": "22015c4d07a25f35929899e6537c54af6f10b666087d99be39e64aa3b025dcd4",
+        "bytes": 50956
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
+        "commit": "27eeb240196805f9ca08d3553a22b849560ba6a5",
+        "blob": "47cdcc5b2d518a43102227673dad3c1c143eed54",
+        "sha256": "a4d611694a37c7a53243471babe3b4f8f20d39f0142db5663cb696bc8464cfaf",
+        "bytes": 1287192
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+        "commit": "27eeb240196805f9ca08d3553a22b849560ba6a5",
+        "blob": "dd988a62b46476da533711a77695aa1ab078cd44",
+        "sha256": "d643650ace68582e7532546b790da2e18057c83bd943405d52b2793c636a20b5",
+        "bytes": 1206789
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/evidence/synchronization_2026-11-02.json",
+        "commit": "27eeb240196805f9ca08d3553a22b849560ba6a5",
+        "blob": "55830aa9c1c73c5c5793f9cbfd77507c6fa69a5e",
+        "sha256": "33520e92f1066323b0e11a198aa139cf8a8e8fc48bd0f706835bbf5057c0ed53",
+        "bytes": 703395
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
+        "commit": "27eeb240196805f9ca08d3553a22b849560ba6a5",
+        "blob": "1f54c83302f2aca4ddce2c2e102bc4c24be0267f",
+        "sha256": "2192f31c5eb7cc06d5001c37ff190fa49b124f57c5288a30edb2f1d3219b129b",
+        "bytes": 24746
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
+        "commit": "27eeb240196805f9ca08d3553a22b849560ba6a5",
+        "blob": "6f7c79f17e98cf0bd43ff50a49de7de328029345",
+        "sha256": "a690f7d50e00bcf4ce4ab43cbc207d2e57e4e67fa2189d57b505cc5b00f89737",
+        "bytes": 34079
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
+        "commit": "27eeb240196805f9ca08d3553a22b849560ba6a5",
+        "blob": "53b4eb8a77f0efae9835a176ee955826c71aa2fe",
+        "sha256": "3e2d8e576e4100110d966767c08f7897ddbfee8039865b8b4bc7950a8a503e34",
+        "bytes": 30502
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+        "commit": "27eeb240196805f9ca08d3553a22b849560ba6a5",
+        "blob": "1c2ce43a682e4bf92680ff2df2e6f82f1ff2f642",
+        "sha256": "2c3f86408c334ac3baa373791d2782984244b2cc00de8d645549d19e866aa4e1",
+        "bytes": 146901
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
+        "commit": "27eeb240196805f9ca08d3553a22b849560ba6a5",
+        "blob": "88b856eedefd86d312a503929025622856eca05a",
+        "sha256": "4081d7b1120479d97fd83f520f4b2d4180207f4a732719609a101e95db3791e6",
+        "bytes": 27888
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md",
+        "commit": "27eeb240196805f9ca08d3553a22b849560ba6a5",
+        "blob": "b49b5025dcb0db7e03ab16ac3241a4c5724fbd0a",
+        "sha256": "c0ece6770aaf76611f1d67393205a745584dd58c5a6435b060d1b1575cbc291d",
+        "bytes": 57019
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md",
+        "commit": "27eeb240196805f9ca08d3553a22b849560ba6a5",
+        "blob": "5bc4961c41151c9af93ff1b11e21227a792ce5d2",
+        "sha256": "4cc4c09e61dc99cd2c86f7eeb6ef0b20cb6cab3959cbd5dcdb36e56c2ee240ce",
+        "bytes": 69531
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+        "commit": "27eeb240196805f9ca08d3553a22b849560ba6a5",
+        "blob": "ab81455d39be8c039cee633e7b70bd81e66ecfe0",
+        "sha256": "12a2a6a9b39181d41cb4db18f9e2652dad0980c96791cf443b1caceeb27ebb49",
+        "bytes": 200700
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/ot/data/ot-corpus-v1.json",
+        "commit": "27eeb240196805f9ca08d3553a22b849560ba6a5",
+        "blob": "4e7862188697696c7b4485fa8407cbdc2c343be1",
+        "sha256": "50373ef7bd087205a833ed88a956ebe1a85d269cb5da7323e3e6939197c4cd2b",
+        "bytes": 785669
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+        "commit": "27eeb240196805f9ca08d3553a22b849560ba6a5",
+        "blob": "c4f6a90a9e8f4bc2ac66ecd7f39b70c40ac87958",
+        "sha256": "3590e1a6471c1264ab0c5792df33b1f864bd79a351760d33ab7d5e40fa3927dc",
+        "bytes": 216147
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+        "commit": "27eeb240196805f9ca08d3553a22b849560ba6a5",
+        "blob": "518b45094fe603fd6885e7ff76941924a611785a",
+        "sha256": "43dee04b466280573e1cce2dbb8c2d403b089461d26754bb7a0df08dd603b815",
+        "bytes": 200337
+      }
+    ],
+    "legacy30Battery": {
+      "status": "PREVIOUS_FAIL_NOT_REPAIRED_NOT_RERUN_IN_WORKING_TREE",
+      "basis": "wave5.preliminaryVerification",
+      "note": "Separate from the scoped, read-only native traps. No repository-wide green assertion."
+    },
+    "verification": {
+      "status": "DEVELOPMENT_CHECKS_RECORDED_FINAL_EXACT_COMMIT_RECEIPT_EXTERNAL",
+      "recordedAtUtc": "2026-11-03T11:54:32.515599+00:00",
+      "unitTests": 168,
+      "unitLogSha256": "ac9f067b1d0a61dced7b0d6224923cfc98779a6aa5557620d69a9956258f4e2c",
+      "developmentRunIsFinalExactCommit": false,
+      "sourceByteReplay": "PASS_11_GIT_OBJECTS_AND_2_ZIP_MEMBERS_IN_DEVELOPMENT",
+      "nativeClaimsCheck": "PASS_914_SCOPED_RECORDS_AFTER_EXPLICIT_WRITER",
+      "nativeReshootCheck": "PASS_AFTER_INTERNAL_CONVERGENCE_2",
+      "preliminaryIssues": [
+        "Whitespace check detected one newly added blank line at C25 EOF; corrected before acceptance. No preliminary all-green claim.",
+        "Native claim writer exited 1 on pre-write locator drift while updating successfully; subsequent dedicated check and cross-check passed.",
+        "reshoot --help is unsupported and returned usage/exit1; this was not a validation result. Explicit --write and independent --check succeeded."
+      ],
+      "finalAcceptanceContract": "Read-only precommit and exact-commit runs, actual HEAD blob/mode equality, detached-main overlay, native history verdicts/selftest, and independently read-back push. Final receipts saved outside Git after this record, not fabricated here.",
+      "finalReceiptDirectory": "/home/user/source-materials/atonement-wave7-2026-11-03/verification",
+      "selfReferenceBoundary": "One substantive commit is intended. Post-commit receipts are external; absence of a receipt-only commit is not absence of exact-commit verification. The final delivered SHA and receipt state must come from actual completed runs.",
+      "legacy30Battery": "PREVIOUS_FAIL_NOT_REPAIRED_NOT_RERUN",
+      "publicationEligible": false,
+      "mergePerformed": false
+    }
   }
 }

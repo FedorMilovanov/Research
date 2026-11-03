@@ -38,6 +38,7 @@ from atonement_wave3_sources import CONTROL as WAVE3_CONTROL, check_controls as 
 from atonement_wave4_sources import CONTROL as WAVE4_CONTROL, check_controls as check_wave4
 from atonement_wave5_sources import CONTROL as WAVE5_CONTROL, check_controls as check_wave5
 from atonement_wave6_sources import CONTROL as WAVE6_CONTROL, check_controls as check_wave6
+from atonement_wave7_sources import CONTROL as WAVE7_CONTROL, check_controls as check_wave7
 
 ROOT = Path(__file__).resolve().parents[1]
 EVIDENCE = "ИСКУПЛЕНИЕ/evidence"
@@ -278,6 +279,8 @@ def check(root: Path, report: dict, control: dict) -> tuple[list[str], dict]:
     errors += check_wave5(root, report, wave5_control)
     wave6_control = json.loads((root / WAVE6_CONTROL).read_text(encoding="utf-8"))
     errors += check_wave6(root, report, wave6_control)
+    wave7_control = json.loads((root / WAVE7_CONTROL).read_text(encoding="utf-8"))
+    errors += check_wave7(root, report, wave7_control)
     drafts = sorted((root / DRAFTS).glob("*.md"))
     if len(drafts) != report["draftCount"]:
         errors.append("draft inventory differs from the reviewed scope")
@@ -305,7 +308,11 @@ def check(root: Path, report: dict, control: dict) -> tuple[list[str], dict]:
                     "wave6SourceFiles": len(wave6_control["files"]),
                     "wave6Contexts": len(wave6_control["contexts"]),
                     "wave6VersePairs": sum(len(p["verseMap"]) for p in wave6_control["pairings"]),
-                    "wave6SourceReplay": "NOT_RUN"}
+                    "wave6SourceReplay": "NOT_RUN",
+                    "wave7ControlledArtifacts": len(wave7_control["files"]),
+                    "wave7GreekCandidates": len(wave7_control["candidates"]),
+                    "wave7GreekOriginalVerified": False,
+                    "wave7SourceReplay": "NOT_RUN"}
 
 
 def main() -> int:

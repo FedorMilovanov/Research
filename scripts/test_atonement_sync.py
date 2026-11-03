@@ -21,6 +21,7 @@ import atonement_wave3_sources as wave3
 import atonement_wave4_sources as wave4
 import atonement_wave5_sources as wave5
 import atonement_wave6_sources as wave6
+import atonement_wave7_sources as wave7
 from atonement_source_metrics import source_label_prefix, legacy_carrier_code
 
 from atonement_claim_register import classify_token
@@ -1188,6 +1189,163 @@ class ActualWave6Tests(unittest.TestCase):
         self.assertTrue(card['historicalCardFieldsNotRecertified'])
         self.assertEqual(card['sourceControl'], wave6.CONTROL)
         self.assertEqual(card['publicationState'], 'BLOCKED')
+
+
+class ActualWave7Tests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.report = json.loads((ROOT / REPORT).read_text())
+        cls.control = json.loads((ROOT / wave7.CONTROL).read_text())
+
+    def errors(self, control=None, report=None):
+        return wave7.check_controls(ROOT, self.report if report is None else report,
+                                    self.control if control is None else control)
+
+    def test_actual_candidate_controls_and_git_preimages(self):
+        self.assertEqual(self.errors(), [])
+
+    def test_each_nonclosure_boundary_is_enforced(self):
+        for key in wave7.FALSE_BOUNDARIES:
+            with self.subTest(field=key):
+                c = deepcopy(self.control); c[key] = True
+                self.assertTrue(any(key in e for e in self.errors(c)))
+
+    def test_candidates_cannot_be_promoted_to_primary_greek(self):
+        for key,value in [('evidenceClass','A1'), ('quoteSafe',True), ('originalLanguageVerified',True),
+                          ('authorialContextVerified',True), ('printedCollationClaimed',True), ('fullWorkRead',True)]:
+            with self.subTest(field=key):
+                c = deepcopy(self.control); c['candidates'][0][key] = value
+                self.assertTrue(any('VERIFIED_ORIGINAL' in e for e in self.errors(c)))
+
+    def test_candidate_axes_and_rights_are_not_class(self):
+        for key,value in [('accessState','NOT_ACQUIRED'), ('locatorState','COARSE_LOCATOR_ONLY'),
+                          ('rightsState','PUBLICATION_ELIGIBLE'), ('holds',['PUBLICATION_HOLD'])]:
+            c = deepcopy(self.control); c['candidates'][1][key] = value
+            self.assertTrue(any('digital-only axes' in e for e in self.errors(c)))
+        c = deepcopy(self.control); c['files'][0]['evidenceClass'] = 'A1'
+        self.assertTrue(any('artifact class/access' in e for e in self.errors(c)))
+
+    def test_artifact_inventory_and_frozen_byte_pin(self):
+        c = deepcopy(self.control); c['files'].pop()
+        self.assertTrue(any('artifact inventory' in e for e in self.errors(c)))
+        c = deepcopy(self.control); c['files'].append(deepcopy(c['files'][0]))
+        self.assertTrue(any('artifact inventory' in e for e in self.errors(c)))
+        c = deepcopy(self.control); c['files'][0]['sha256'] = '0'*64
+        self.assertTrue(any('byte pin' in e for e in self.errors(c)))
+
+    def test_zip_members_are_not_claimed_as_git_blobs(self):
+        c = deepcopy(self.control)
+        member = next(f for f in c['files'] if f['kind']=='zip_member')
+        member['gitBlob'] = '0'*40
+        self.assertTrue(any('separate Git blob' in e for e in self.errors(c)))
+        c = deepcopy(self.control)
+        next(f for f in c['files'] if f['kind']=='zip_member')['containerId'] = 'OG-JOHN'
+        self.assertTrue(any('separate Git blob' in e for e in self.errors(c)))
+
+    def test_literal_candidate_and_selector_are_bound_after_rehash(self):
+        c = deepcopy(self.control); row = c['candidates'][1]
+        row['text'] = row['text'].replace('τροπωι δημιουργικωι', 'τρόπῳ δημιουργικῷ')
+        row['textSha256'] = wave7.digest(row['text'].encode())
+        self.assertTrue(any('literal candidate' in e for e in self.errors(c)))
+        c = deepcopy(self.control); c['candidates'][1]['selector']['first'] += 1
+        self.assertTrue(any('selector pin' in e for e in self.errors(c)))
+
+    def test_ocr_row_edition_is_not_the_corpus_default(self):
+        c = deepcopy(self.control)
+        c['candidates'][0]['rows'][2]['edition'] = 'calfa-pg73-5895ab908dd4'
+        self.assertTrue(any('not default Calfa/Pusey' in e for e in self.errors(c)))
+
+    def test_digital_difference_is_not_an_ancient_variant_or_proven_ocr_error(self):
+        for key in ('authorialVariantEstablished','ocrCauseEstablished','silentlyEmended'):
+            c = deepcopy(self.control); c['digitalComparisons'][0][key] = True
+            self.assertTrue(any('cause/emendation' in e for e in self.errors(c)))
+        c = deepcopy(self.control); c['digitalComparisons'][1]['left'] = 'τροπωι δημιουργικωι'
+        self.assertTrue(any('comparison' in e for e in self.errors(c)))
+
+    def test_rendered_excerpts_are_not_html_bytes(self):
+        for key,value in [('rawHtmlAcquired',True), ('rawHtmlSha256','0'*64),
+                          ('accessState','FULL_OBJECT_VERIFIED')]:
+            c = deepcopy(self.control); c['webObservations'][0][key] = value
+            self.assertTrue(any('not raw HTML' in e for e in self.errors(c)))
+
+    def test_pearse_is_not_direct_pusey_or_a_primary_greek_witness(self):
+        for key,value in [('evidenceClass','A1'), ('quoteSafe',True)]:
+            c = deepcopy(self.control)
+            next(w for w in c['webObservations'] if w['id']=='PEARSE-EDITORIAL')[key] = value
+            self.assertTrue(any('excerpt/class' in e or 'editor/translation' in e for e in self.errors(c)))
+        c = deepcopy(self.control); row = c['webObservations'][0]
+        row['passages'][0] = row['passages'][0].replace('and partly Syriac', 'only')
+        row['selectedExcerptSha256'] = wave7.digest('\n'.join(row['passages']).encode())
+        self.assertTrue(any('web excerpt/class pin' in e for e in self.errors(c)))
+
+    def test_catalogue_is_not_received_edition_or_borrowed_verification(self):
+        c = deepcopy(self.control); c['catalogue']['puseyReference']['servable'] = True
+        self.assertTrue(any('not acquired Pusey' in e for e in self.errors(c)))
+        for key in ('upstreamPdfChecksumsVerifiedHere','upstreamCalfaChecksumVerifiedHere','catalogueIsAcquiredPuseyText'):
+            c = deepcopy(self.control); c['catalogue'][key] = True
+            self.assertTrue(any('borrowed upstream' in e for e in self.errors(c)))
+
+    def test_composition_and_statistics_are_not_verified_greek_counts(self):
+        c = deepcopy(self.control); c['corpusComposition']['rows'] = 3109
+        self.assertTrue(any('mixed OCR composition' in e for e in self.errors(c)))
+        c = deepcopy(self.control); c['statistics']['verifiedGreekOriginalPassages'] = 2
+        self.assertTrue(any('scope statistics' in e for e in self.errors(c)))
+        c = deepcopy(self.control); c['interpretationStatus'] = 'PROVED_BY_OCR'
+        self.assertTrue(any('not a machine proof' in e for e in self.errors(c)))
+
+    def test_english_basis_and_owned_acquisition_queue_remain(self):
+        c = deepcopy(self.control); c['substantiveBasis']['observationId'] = 'OG-JN11'
+        self.assertTrue(any('English primary basis' in e for e in self.errors(c)))
+        c = deepcopy(self.control); c['nextAcquisition'].pop()
+        self.assertTrue(any('acquisition/acceptance' in e for e in self.errors(c)))
+
+    def test_actual_preimage_bytes_not_just_hex_markers(self):
+        r = deepcopy(self.report); r['wave7']['supersededSnapshots'][0]['sha256'] = '0'*64
+        self.assertTrue(any('actual Git preimage mismatch' in e for e in self.errors(report=r)))
+        r = deepcopy(self.report); row = next(x for x in r['repairs'] if x['id']=='W7-F10')
+        row['rejectedWordingPresentInBaseline'] = not row['rejectedWordingPresentInBaseline']
+        self.assertTrue(any('invented historical error' in e for e in self.errors(report=r)))
+
+    def test_missing_sources_fail_before_context_parsing(self):
+        with tempfile.TemporaryDirectory() as d, patch.object(wave7,'extract_candidate') as extract:
+            errors = wave7.verify_sources(Path(d), self.control)
+            self.assertEqual(len(errors), 13)
+            self.assertTrue(all('missing object' in e for e in errors))
+            extract.assert_not_called()
+
+    def test_external_path_escape_rejected_before_reading(self):
+        c = deepcopy(self.control); c['files'][0]['externalRelativePath'] = '../outside-source'
+        with tempfile.TemporaryDirectory() as d, patch.object(wave7,'extract_candidate') as extract:
+            self.assertTrue(any('unsafe path' in e for e in wave7.verify_sources(Path(d),c)))
+            extract.assert_not_called()
+
+    def test_literal_extract_preserves_accents_linebreaks_and_footer(self):
+        literal = unicodedata.normalize('NFD','τρόπῳ')+' δημιουργικωι\nἐσκορ\nπισεν\nfooter'
+        result = wave7.extract_candidate(literal.encode(), {'kind':'text_lines','first':1,'last':4})
+        self.assertEqual(result['text'],literal)
+        with self.assertRaises(ValueError):
+            wave7.extract_candidate(literal.encode(),{'kind':'text_lines','first':0,'last':4})
+
+    def test_jsonl_duplicate_or_missing_locus_rejected(self):
+        one = dict(locus='x',text='unchanged',source='ocr',edition='test')
+        raw = (json.dumps(one)+'\n'+json.dumps(one)+'\n').encode()
+        with self.assertRaises(ValueError):
+            wave7.extract_candidate(raw,{'kind':'jsonl_loci','loci':['x']})
+        with self.assertRaises(ValueError):
+            wave7.extract_candidate(raw,{'kind':'jsonl_loci','loci':['y']})
+        got = wave7.extract_candidate((json.dumps(one)+'\n').encode(),{'kind':'jsonl_loci','loci':['x']})
+        self.assertEqual(got['text'],'unchanged')
+        self.assertEqual(got['rows'][0]['line'],1)
+
+    def test_all_four_reviews_and_native_entrypoints_are_wired(self):
+        for p in wave7.REGISTRIES:
+            review = json.loads((ROOT/'ИСКУПЛЕНИЕ'/p).read_text())[wave7.REVIEW_KEY]
+            self.assertEqual(review['candidateEvidenceClass'],'C')
+            self.assertFalse(review['greekOriginalVerified'])
+            self.assertFalse(review['publicationEligible'])
+        self.assertIn('scripts/atonement_wave7_sources.py',reshoot.PIPELINE_FILES)
+        self.assertIn('check_wave7(root, report, wave7_control)',(ROOT/'scripts/atonement_sync_check.py').read_text())
+        self.assertIn('"atonement_wave7_sources.py"',(ROOT/'.github/workflows/atonement-corpus-integrity.yml').read_text())
 
 
 if __name__ == "__main__":
