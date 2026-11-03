@@ -1,0 +1,495 @@
+{
+  "schema": "reformation-research-sources-v1",
+  "scope": "research-only",
+  "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04",
+  "noAutoPublication": true,
+  "sourceCount": 27,
+  "sources": [
+    {
+      "id": "REF-P01",
+      "documentYear": 1517,
+      "title": "Luther, 95 Theses: Oxford transcription",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://editions.mml.ox.ac.uk/editions/luther-95-theses/",
+      "verificationNote": "theses 43,62,71 checked in Latin transcription; modern facsimile is not 1517 print",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P01-PRINT",
+      "documentYear": 1517,
+      "title": "Nuremberg print 1517 (LOC / Berlin)",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.loc.gov/resource/gdcwdl.wdl_07497/",
+      "verificationNote": "catalog identifies printer and date; LOC says no known restrictions; scan not line-by-line collated",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P02",
+      "documentYear": 1517,
+      "title": "Luther to Albrecht, 31 October",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.gutenberg.org/cache/epub/31604/pg31604.html",
+      "verificationNote": "1915 English translation; original autograph not personally inspected",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P03",
+      "documentYear": 1520,
+      "title": "Address to the Christian Nobility, 1st print",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://digital.pitts.emory.edu/s/digital-collections/item/4806",
+      "verificationNote": "Emory catalog first edition first printing, public-domain US statement",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P04",
+      "documentYear": 1522,
+      "title": "Luther's September Testament",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "LOCATOR_MISSING",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://bawue.museum-digital.de/object/1734",
+      "verificationNote": "museum catalog only",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P05",
+      "documentYear": 1466,
+      "title": "Mentelin Bible printed before Luther",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.loc.gov/item/2021667069/",
+      "verificationNote": "bibliographic witness predating Luther's 1522 NT",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P06",
+      "documentYear": 1524,
+      "title": "Luther address on schools to city councils",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "LOCATOR_MISSING",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://digital.pitts.emory.edu/s/digital-collections/item/4819",
+      "verificationNote": "source map points to sections on girls and libraries; needs primary-page verification",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P07",
+      "documentYear": 1525,
+      "title": "Luther Admonition to Peace",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://digi.ub.uni-heidelberg.de/diglit/luther1525l/0010/text_ocr",
+      "verificationNote": "historical scanned/OCR text, pages 0010,0029,0032 from source map not re-collated",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P08",
+      "documentYear": 1525,
+      "title": "Luther Against the Robbing and Murdering Hordes",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://editions.mml.ox.ac.uk/editions/peasants-nuremberg/",
+      "verificationNote": "Oxford edition and some text checked; images under CC BY-NC-SA",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P09",
+      "documentYear": 1523,
+      "title": "Zwingli 67 Articles",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.uecf.net/books/collected-works/chapter1493.html",
+      "verificationNote": "later Schaff edition; 1523 print witness unverified",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P10",
+      "documentYear": 1527,
+      "title": "Schleitheim Confession (GHDI English)",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://germanhistorydocs.org/en/from-the-reformations-to-the-thirty-years-war-1500-1648/an-anabaptist-confession-of-faith-the-schleitheim-articles-1527",
+      "verificationNote": "translation of 1527 articles; original German critical edition not collated",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P11",
+      "documentYear": 1529,
+      "title": "Speyer Protestation, VD16 D3013",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://tueditions.ulb.tu-darmstadt.de/v/pa000008-0123",
+      "verificationNote": "early printed witness transcript checked for document title and date",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P12",
+      "documentYear": 1529,
+      "title": "Speyer Reichsabschied and anti-anabaptist mandate",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://tueditions.ulb.tu-darmstadt.de/v/pa000008-0111",
+      "verificationNote": "primary digital edition available; mandate dated 23 April",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P13",
+      "documentYear": 1529,
+      "title": "Marburg Articles, GHDI text",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://germanhistorydocs.org/en/from-the-reformations-to-the-thirty-years-war-1500-1648/ghdi:document-4311",
+      "verificationNote": "date 3 October and article 15 are text-specific references",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P13-ARCHIVE",
+      "documentYear": 1529,
+      "title": "Marburg signed Zurich exemplar, Staatsarchiv E I 3.1 Nr54",
+      "evidenceClass": "A2",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=618165",
+      "verificationNote": "archive shelfmark and variants documented, manuscript image not collated",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P14",
+      "documentYear": 1530,
+      "title": "Augsburg Confession, Articles IV and VI",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://els.org/beliefs/augsburgconfession/",
+      "verificationNote": "official denomination edition in English; not critical German/Latin 1530",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P15",
+      "documentYear": 1543,
+      "title": "Luther Von den Juden und ihren Lügen, WA 53",
+      "evidenceClass": "A1",
+      "accessState": "LINK_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://archive.org/details/werkekritischege53luthuoft",
+      "verificationNote": "source map cites 536-542; no first-hand visual collation this turn",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P16",
+      "documentYear": 1541,
+      "title": "Geneva Ecclesiastical Ordinances (museum overview)",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://museeprotestant.org/en/notice/the-ecclesiastical-ordinances-1541/",
+      "verificationNote": "secondary museum description, primary ordinances not obtained",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P17",
+      "documentYear": 1563,
+      "title": "Heidelberg Catechism 1563 editions Utrecht",
+      "evidenceClass": "A2",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.uu.nl/en/special-collections/collections/early-printed-books/theological-works/heidelberg-catechism-1563",
+      "verificationNote": "museum-quality university catalogue with links; first edition not collated",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P18",
+      "documentYear": 1563,
+      "title": "Council of Trent Session 23 Chapter 18",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://adfonteslibrary.org/work-council-trent-session-23",
+      "verificationNote": "English translation chapter 18 available; Latin original not collated",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P19",
+      "documentYear": 1598,
+      "title": "Edict of Nantes electronic French edition",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://classiques.uqam.ca/classiques/henri_iv/Edit_de_nantes_1598/edit_de_nantes.html",
+      "verificationNote": "HTML PDF RTF download pointers, original witness not collated",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-S01",
+      "documentYear": 2015,
+      "title": "Leppin & Wengert, posting of 95 theses",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/112615/Leppin_306.pdf?sequence=1",
+      "verificationNote": "2015 Lutheran Quarterly 29:373-398, first and final selected pages reviewed; not full 26-page reading",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-S02",
+      "documentYear": 2017,
+      "title": "Peter Marshall, 1517",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://blog.oup.com/2017/09/reformation-centenary-excerpt-1517/",
+      "verificationNote": "publisher excerpt only, full book not obtained",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-S03",
+      "documentYear": 1994,
+      "title": "Mark U Edwards Jr, Printing Propaganda and Martin Luther",
+      "evidenceClass": "B1",
+      "accessState": "LINK_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://publishing.cdlib.org/ucpressebooks/public/book/printing-propaganda-and-martin-luther.html",
+      "verificationNote": "open online book; not systematically read in this pass",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-S04",
+      "documentYear": 2016,
+      "title": "Ulinka Rublack ed Oxford Handbook Protestant Reformations",
+      "evidenceClass": "B1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "LOCATOR_MISSING",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://academic.oup.com/edited-volume/34628?searchresult=1",
+      "verificationNote": "publisher abstract and table; full contents behind access",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-S05",
+      "documentYear": 2025,
+      "title": "Kenneth G Appold Luther and the Peasants chapter 5",
+      "evidenceClass": "B1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "LOCATOR_MISSING",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://academic.oup.com/book/59785/chapter-abstract/511062426",
+      "verificationNote": "publisher abstract only",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-C01",
+      "documentYear": 2026,
+      "title": "User-supplied source map 2026-11-03",
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "source-ledger-2026-11-03-original.md",
+      "verificationNote": "exact source text copied and verified against supplied attachment; claims not independently promoted",
+      "checkedAt": "2026-11-04"
+    }
+  ]
+}
