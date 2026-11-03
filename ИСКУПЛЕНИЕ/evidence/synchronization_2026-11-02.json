@@ -3779,7 +3779,9 @@
     "claimSections": 913,
     "claimMarkers": 1123,
     "readingMeasuredByLabels": false,
-    "publicationEligible": false
+    "publicationEligible": false,
+    "verifiedSubstantiveCommit": "281eb7cea0d51a0035d046d3302842a18b678073",
+    "exactSubstantiveChecks": "18 accepted outcomes; 126 tests; 37 workflow guards; 18 in-memory mutations; history probe and five landing checks PASS"
   },
   "initialWaveScope": "Wave 1: marked Synodal quotations in 13 drafts, B2 rewrite, directly connected source/locator corrections. This is not a full rereading of every draft, original book, or theological claim.",
   "wave2": {
@@ -6145,7 +6147,207 @@
           "result": "False positives for valid directory links and percent-encoded paths. Fixed the verifier (URI decoding and existence, not files-only); no source links rewritten."
         }
       ]
-    }
+    },
+    "postCommitVerification": {
+      "head": "281eb7cea0d51a0035d046d3302842a18b678073",
+      "finishedAtUtc": "2026-11-03T08:38:53.042033+00:00",
+      "exactCommitTree": true,
+      "trackedFiles": 2693,
+      "beforeFingerprint": "d1510b1032c8b0f907146a81e01189d153e0f6011f707c1a9d38fa147841d41a",
+      "afterFingerprint": "d1510b1032c8b0f907146a81e01189d153e0f6011f707c1a9d38fa147841d41a",
+      "changedTrackedFiles": [],
+      "rawSourcesUnchanged": true,
+      "gitStatusUnchanged": true,
+      "pass": true,
+      "checks": [
+        {
+          "name": "workflow-ast",
+          "returncode": 0,
+          "expected": 0
+        },
+        {
+          "name": "unit-tests",
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "c7d653b76a83fa66b6d43e5bcf10d6a1f24dd7f7c6ebd7163699addcaa2c15bc"
+        },
+        {
+          "name": "sync",
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "af544ee950f69ce63f68117918d6a87836b45fe7299999f9c7a26a64e4e26155"
+        },
+        {
+          "name": "wave5-byte-replay",
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "68aad75906facaf166184bea3b2e581603a771ac82e543714ebcfaf2f6064ff2"
+        },
+        {
+          "name": "wave3-retained-not-raw-replay",
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "19b72a815e481ad8cab4f80cf75038128361a337691f615f028e7b917fd90fef"
+        },
+        {
+          "name": "wave4-retained-not-raw-replay",
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "95cedcb51c25d01138e50a0af03887c8f1da90c6d6d490d35f0b811e500c9ca6"
+        },
+        {
+          "name": "crossrefs",
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "edd3e4ed6d548561424ad7189dc7b5a214ee85e5f68df3a256e5f4a43c82602d"
+        },
+        {
+          "name": "native-integrity",
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "38b3a72ddf92ff00d84f8447e5f546a6f09b0a1cfdfb7a6844b7595dda9b6aff"
+        },
+        {
+          "name": "claims",
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "0d553d3788aee29cb2069d6acfbc251bbeb37c0a9bdb2230da347ca8abc5b11d"
+        },
+        {
+          "name": "claim-cross",
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "ec56b034fb58407e16de563d53be0b76b7640a0076b58f45a3282b085316a94d"
+        },
+        {
+          "name": "reshoot",
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "42220fecf0a8caeb2b97e0c21c2142733afa652691fe9ae1e98648784a7dbdfb"
+        },
+        {
+          "name": "round-plan",
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "847edf97ecc904bf6245f4e68aa20929b94eaf01df5ab03b6657c03a0cecfd86"
+        },
+        {
+          "name": "round-selfcheck",
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "2fb0a8d0f7f329eb5430e39d6582cdc22cdc799447c9bf20344da0fb10e844c3"
+        },
+        {
+          "name": "refuse-unapproved-writers",
+          "returncode": 2,
+          "expected": 2,
+          "logSha256": "fbe44556e51c81c19b24f0fa8acfc99d8cb0952cb7226c5ab9892bb27edbea85"
+        },
+        {
+          "name": "rule-traps",
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "123f1eae60188d544c715916d0d607ab6442f6d55a8f1fe727502141e57acb47"
+        },
+        {
+          "name": "diff-whitespace",
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "workflow-guards",
+          "returncode": 0,
+          "expected": 0
+        },
+        {
+          "name": "local-markdown-targets",
+          "returncode": 0,
+          "expected": 0
+        }
+      ],
+      "history": {
+        "verdicts": {
+          "returncode": 0,
+          "logSha256": "d33e2e0c89ce62b69129dbac0c585f9efefad11eb56559738ca828d4b62b56da"
+        },
+        "selftest": {
+          "returncode": 0,
+          "logSha256": "5493cb94fd9b5255eb4e24f28617b39b5b3c92aae26103c4e61edea59736e352"
+        },
+        "scope": "E1/E2 invariant; E3 incomplete and E4 stale-main environments refused; planted defect caught. Same substantive head, not this future receipt commit."
+      },
+      "landing": {
+        "head": "281eb7cea0d51a0035d046d3302842a18b678073",
+        "main": "ec722894e21b004900e9e44a2da9bdb9990f1f7c",
+        "mergeBase": "ec722894e21b004900e9e44a2da9bdb9990f1f7c",
+        "overlays": 80,
+        "deletions": 0,
+        "outcomes": [
+          {
+            "name": "native-integrity",
+            "command": [
+              "python3",
+              "-B",
+              "scripts/validate_atonement_corpus_integrity.py"
+            ],
+            "returncode": 0,
+            "logSha256": "38b3a72ddf92ff00d84f8447e5f546a6f09b0a1cfdfb7a6844b7595dda9b6aff"
+          },
+          {
+            "name": "claims",
+            "command": [
+              "python3",
+              "-B",
+              "scripts/atonement_claim_register.py",
+              "--check"
+            ],
+            "returncode": 0,
+            "logSha256": "0d553d3788aee29cb2069d6acfbc251bbeb37c0a9bdb2230da347ca8abc5b11d"
+          },
+          {
+            "name": "reshoot",
+            "command": [
+              "python3",
+              "-B",
+              "scripts/atonement_reshoot_state.py",
+              "--check"
+            ],
+            "returncode": 0,
+            "logSha256": "42220fecf0a8caeb2b97e0c21c2142733afa652691fe9ae1e98648784a7dbdfb"
+          },
+          {
+            "name": "sync",
+            "command": [
+              "python3",
+              "-B",
+              "scripts/atonement_sync_check.py"
+            ],
+            "returncode": 0,
+            "logSha256": "af544ee950f69ce63f68117918d6a87836b45fe7299999f9c7a26a64e4e26155"
+          },
+          {
+            "name": "crossrefs",
+            "command": [
+              "python3",
+              "-B",
+              "scripts/atonement_crossref_audit.py",
+              "--check"
+            ],
+            "returncode": 0,
+            "logSha256": "edd3e4ed6d548561424ad7189dc7b5a214ee85e5f68df3a256e5f4a43c82602d"
+          }
+        ],
+        "overlayBytesUnchanged": true,
+        "merged": false,
+        "finishedAtUtc": "2026-11-03T08:38:14.421391+00:00",
+        "pass": true,
+        "disposableWorktreeRemoved": true
+      },
+      "publicationEligible": false,
+      "scope": "Actual clean substantive commit tested. This receipt records completed tests; it does not retroactively verify its own future commit. Legacy 30-case battery remains a separately disclosed FAIL."
+    },
+    "pushStateAtReceipt": "NOT_YET_PUSHED"
   },
   "wave4VerificationSnapshot": {
     "asOf": "2026-11-02T23:00:32+00:00",
