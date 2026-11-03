@@ -1,12 +1,12 @@
 # Профиль GitHub и гигиена репозиториев
 
-Документ для ручного применения: здесь нет автоматики, только готовые тексты и чек-листы. Всё проверено по состоянию на 1 ноября 2026.
+Публикационная заготовка и справочник по GitHub-гигиене. Числа относятся к историческому срезу 1 ноября 2026, а опубликованный GitHub README синхронизирован с `main` на 3 ноября.
 
 ---
 
 ## 1. Профиль-README
 
-Создать **публичный** репозиторий с именем `FedorMilovanov` (совпадает с логином) и положить в него `README.md`. GitHub автоматически покажет файл на странице аккаунта.
+**Выполнено 03.11.2026:** публичный [FedorMilovanov/FedorMilovanov](https://github.com/FedorMilovanov/FedorMilovanov) создан, `README.md` в `main`, ссылки на RU/EN-портфолио и аудит действуют. Блок ниже повторяет фактически опубликованный текст; не копировать прежние плейсхолдеры и непроверенные показатели.
 
 ### `README.md`
 
@@ -20,6 +20,10 @@
 machine-checked contracts — and I make the result verifiable.
 
 ---
+
+### Портфолио / Portfolio
+
+[Портфолио на русском](https://github.com/FedorMilovanov/Research/blob/main/PORTFOLIO/PORTFOLIO_RU.md) · [Portfolio in English](https://github.com/FedorMilovanov/Research/blob/main/PORTFOLIO/PORTFOLIO_EN.md) · [Аудит и метод проверки](https://github.com/FedorMilovanov/Research/blob/main/PORTFOLIO/AUDIT_RU.md)
 
 ## Что работает прямо сейчас · Live
 
@@ -36,7 +40,7 @@ machine-checked contracts — and I make the result verifiable.
 ## Цифры · Numbers
 
 `5` живых продуктов · `241` CI-пайплайнов · `119 919` запусков CI · `1 390` тестовых и QA-файлов ·
-`766 175` строк прикладного кода под управлением · `≈365 000` слов авторской прозы ·
+`766 175` строк прикладного кода под управлением ·
 музыка, клипы и визуал на канале о поэзии · теологический архив 11+ лет ·
 
 ## Чем я занимаюсь · What I do
@@ -51,9 +55,8 @@ machine-checked contracts — and I make the result verifiable.
 1. Контракт до кода. 2. Fail closed. 3. Source ≠ build ≠ production. 4. Посткондиция вместо надежды.
 5. Один владелец на поверхность. 6. Решённое уходит в архив. 7. Редакционная граница — за человеком.
 
-## Контакты · Contact
-
-[email] · [Telegram] · Санкт-Петербург, Россия (remote)
+---
+Метрики: срез на 1 ноября 2026 года. Результаты достигнуты при управлении ИИ-агентами; метрики не утверждают ручное авторство каждой строки.
 ````
 
 ---
