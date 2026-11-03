@@ -25,7 +25,7 @@ St Petersburg, Russia (remote, UTC+3) · [gospod-bog.ru](https://gospod-bog.ru) 
 
 For ten years my work was text and meaning: editing, research, teaching. Since early 2026 I do the same thing with a team of AI agents — I design the architecture, write machine-checkable contracts, brief the agents, accept the work against evidence, and ship it.
 
-Ten months of that produced five live products on my own domains, two internal platforms (a media pipeline and a multi-channel publisher), and an actual production line: a Russian poetry YouTube channel with 153 videos and 1.32K subscribers, songs built in Suno from my lyrics and prompts, AI-generated visuals and clips, three Telegram channels publishing on a schedule.
+Ten months of that produced five live products on my own domains, two internal platforms (a media pipeline and a multi-channel publisher), and a documented media workflow: a Russian poetry YouTube channel with songs built in Suno from my lyrics and prompts, AI-generated visuals and clips, and Telegram publishing. Audience and video-count snapshots are deliberately omitted without a reproducible current check.
 
 Code and part of the media are AI-generated under my direction. Requirements, architecture, editorial decisions, acceptance, publication and accountability are mine. The verification layer is the interesting part — and so is the honest boundary: the speech engine on my site is someone else's open-source project, not mine.
 
@@ -40,7 +40,7 @@ Code and part of the media are AI-generated under my direction. Requirements, ar
 | 5 products live in production | 4 own domains |
 | 766,175 lines of application code under management (512,322 in six product repos; 824,453 including research validators) | 241 CI pipelines · 119,919 runs |
 | 1,390 test and QA files | 20,990 commits in ten months |
-| ≈365,000 words of authored prose | 2,076 research documents |
+| Public editorial prose (exact word count unverified) | 2,076 research documents (Nov 1, 2026 snapshot) |
 
 **Media**
 
