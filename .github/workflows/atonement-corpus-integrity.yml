@@ -56,7 +56,7 @@ jobs:
               "atonement_drive_mirror_round63.py", "atonement_library_index_round63.py", "atonement_round_close.py",
               "atonement_history_perturbation_probe.py", "atonement_sync_check.py", "atonement_wave3_sources.py",
               "atonement_wave4_sources.py", "atonement_wave5_sources.py", "atonement_wave6_sources.py", "atonement_wave7_sources.py",
-              "atonement_source_metrics.py", "test_atonement_sync.py",
+              "atonement_wave8_sources.py", "atonement_source_metrics.py", "test_atonement_sync.py",
           ]
           for name in files:
               path = Path("scripts") / name

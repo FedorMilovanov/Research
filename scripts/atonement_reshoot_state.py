@@ -719,7 +719,7 @@ PIPELINE_FILES = ("scripts/validate_atonement_corpus_integrity.py", "scripts/ato
                   "scripts/atonement_crossref_audit.py", "scripts/atonement_wave3_sources.py",
                   "scripts/atonement_wave4_sources.py", "scripts/atonement_wave5_sources.py",
                   "scripts/atonement_wave6_sources.py", "scripts/atonement_wave7_sources.py",
-                  "scripts/atonement_source_metrics.py")
+                  "scripts/atonement_wave8_sources.py", "scripts/atonement_source_metrics.py")
 
 
 ENV_DECL_BLOCK = ENV_DECL_PREFIX + KEY_DATE + "r" + CIRCLE

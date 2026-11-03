@@ -3816,6 +3816,174 @@
         "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave7_2026-11-03.json",
         "scope": "Candidate discovery and editorial review; no new verified Greek quotation or atonement closure."
       }
+    },
+    {
+      "id": "W8-NT15",
+      "file": "ИСКУПЛЕНИЕ/nt/15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md",
+      "removed": "- `O11` — **контекст получен/прочитан с квалификацией:** английский фрагмент кн. VII под именем Кирилла, 11:49–52; очередь английских контролей I/VI выполнена в волне 5 (§5.3). **Волна 7 (§5.2.1): общая очередь поиска SUPERSEDED только в части получения двух цифровых греческих кандидатов и чтения редакторских сообщений.** Кандидаты C, не quote-safe; язык-посредник конкретного абзаца, печатный текст/аппарат и индивидуальная катенная атрибуция не проверены. Конкретные следующие цели: Randell II 133–135 с полями, предполагаемый Pusey II 294–296 и PG74 по цифровому ключу `pg074_0039.1`. Отношение широкого языка VII11:44 к различению исходов в VI остаётся открытым; не повторять запрос уже прочитанных английских мест.",
+      "required": "Волна 8 — соответствие изданий, аппарат и катенный состав установлены; сканы страниц 11:52 остаются открытыми.",
+      "rejectedWordingPresentInBaseline": true,
+      "controlType": "BASELINE_REMOVAL_OR_EXPLICIT_SUPERSESSION",
+      "historicalRetained": false,
+      "reason": "Record Wave 8 primary scan verification of Pusey 1872 Vol. I Praefatio (A1) and OCR/apparatus collation of Pusey Vol. II pp. 294-296, Migne PG 74 cols. 69-70, and Randell Vol. II pp. 133-134 (C) while keeping 11:52 Greek original unverified and C-25 OPEN.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
+        "scope": "Edition/locator mapping, apparatus decomposition, and Greek-only catena medium; no 11:52 Greek quote-safe promotion or C-25 closure."
+      }
+    },
+    {
+      "id": "W8-F05",
+      "file": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
+      "removed": "| Кирилл Александрийский | Старые греческие локусы In XII Prophetas; английский фрагмент In Ioannem VII, 11:49–52 — CYRA-2; **волна 7: два греческих цифровых кандидата C, не quote-safe** | печатный текст/аппарат, язык-посредник и индивидуальная атрибуция; прочие сочинения отдельно | Предыдущая общая очередь поиска SUPERSEDED только для найденных кандидатов. Они не VERIFIED_ORIGINAL; положительное английское свидетельство и publication HOLD сохранены |",
+      "required": "Волна 8 — издания, катенный аппарат и греческий язык-посредник установлены без присвоения VERIFIED_ORIGINAL.",
+      "rejectedWordingPresentInBaseline": true,
+      "controlType": "BASELINE_REMOVAL_OR_EXPLICIT_SUPERSESSION",
+      "historicalRetained": false,
+      "reason": "Record Wave 8 primary scan verification of Pusey 1872 Vol. I Praefatio (A1) and OCR/apparatus collation of Pusey Vol. II pp. 294-296, Migne PG 74 cols. 69-70, and Randell Vol. II pp. 133-134 (C) while keeping 11:52 Greek original unverified and C-25 OPEN.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
+        "scope": "Edition/locator mapping, apparatus decomposition, and Greek-only catena medium; no 11:52 Greek quote-safe promotion or C-25 closure."
+      }
+    },
+    {
+      "id": "W8-F10",
+      "file": "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
+      "removed": "UNACCEPTED WAVE8: Pusey Vol. I Praefatio scans or Vol. II/PG 74 OCR elevate Cyril 11:52 Greek to VERIFIED_ORIGINAL or close C-25.",
+      "required": "Волна 8: praefatio Пусея т. I сверена по сканам (A1), локаторы и аппарат т. II / PG 74 сопоставлены по OCR (C); греческий оригинал 11:52 ещё не удостоверен",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Record Wave 8 primary scan verification of Pusey 1872 Vol. I Praefatio (A1) and OCR/apparatus collation of Pusey Vol. II pp. 294-296, Migne PG 74 cols. 69-70, and Randell Vol. II pp. 133-134 (C) while keeping 11:52 Greek original unverified and C-25 OPEN.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
+        "scope": "Edition/locator mapping, apparatus decomposition, and Greek-only catena medium; no 11:52 Greek quote-safe promotion or C-25 closure."
+      }
+    },
+    {
+      "id": "W8-C25",
+      "file": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+      "removed": "UNACCEPTED WAVE8: Pusey Vol. I Praefatio scans or Vol. II/PG 74 OCR elevate Cyril 11:52 Greek to VERIFIED_ORIGINAL or close C-25.",
+      "required": "Волна 8 — соответствие изданий, аппарат и язык-посредник установлены; C-25 OPEN:",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Record Wave 8 primary scan verification of Pusey 1872 Vol. I Praefatio (A1) and OCR/apparatus collation of Pusey Vol. II pp. 294-296, Migne PG 74 cols. 69-70, and Randell Vol. II pp. 133-134 (C) while keeping 11:52 Greek original unverified and C-25 OPEN.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
+        "scope": "Edition/locator mapping, apparatus decomposition, and Greek-only catena medium; no 11:52 Greek quote-safe promotion or C-25 closure."
+      }
+    },
+    {
+      "id": "W8-P13",
+      "file": "ИСКУПЛЕНИЕ/nt/06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md",
+      "removed": "UNACCEPTED WAVE8: Pusey Vol. I Praefatio scans or Vol. II/PG 74 OCR elevate Cyril 11:52 Greek to VERIFIED_ORIGINAL or close C-25.",
+      "required": "Волна 8 — локаторы и катенное расхождение P13-d объяснены:",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Record Wave 8 primary scan verification of Pusey 1872 Vol. I Praefatio (A1) and OCR/apparatus collation of Pusey Vol. II pp. 294-296, Migne PG 74 cols. 69-70, and Randell Vol. II pp. 133-134 (C) while keeping 11:52 Greek original unverified and C-25 OPEN.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
+        "scope": "Edition/locator mapping, apparatus decomposition, and Greek-only catena medium; no 11:52 Greek quote-safe promotion or C-25 closure."
+      }
+    },
+    {
+      "id": "W8-ROOT00",
+      "file": "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+      "removed": "UNACCEPTED WAVE8: Pusey Vol. I Praefatio scans or Vol. II/PG 74 OCR elevate Cyril 11:52 Greek to VERIFIED_ORIGINAL or close C-25.",
+      "required": "Волна 8 — praefatio Пусея т. I (A1) и OCR-аппарат т. II / PG 74 (C) без закрытия оригинала 11:52:",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Record Wave 8 primary scan verification of Pusey 1872 Vol. I Praefatio (A1) and OCR/apparatus collation of Pusey Vol. II pp. 294-296, Migne PG 74 cols. 69-70, and Randell Vol. II pp. 133-134 (C) while keeping 11:52 Greek original unverified and C-25 OPEN.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
+        "scope": "Edition/locator mapping, apparatus decomposition, and Greek-only catena medium; no 11:52 Greek quote-safe promotion or C-25 closure."
+      }
+    },
+    {
+      "id": "W8-N00",
+      "file": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
+      "removed": "UNACCEPTED WAVE8: Pusey Vol. I Praefatio scans or Vol. II/PG 74 OCR elevate Cyril 11:52 Greek to VERIFIED_ORIGINAL or close C-25.",
+      "required": "Волна 8 — praefatio Пусея т. I (A1) и OCR-аппарат т. II / PG 74 (C) без закрытия оригинала 11:52:",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Record Wave 8 primary scan verification of Pusey 1872 Vol. I Praefatio (A1) and OCR/apparatus collation of Pusey Vol. II pp. 294-296, Migne PG 74 cols. 69-70, and Randell Vol. II pp. 133-134 (C) while keeping 11:52 Greek original unverified and C-25 OPEN.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
+        "scope": "Edition/locator mapping, apparatus decomposition, and Greek-only catena medium; no 11:52 Greek quote-safe promotion or C-25 closure."
+      }
+    },
+    {
+      "id": "W8-F00",
+      "file": "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
+      "removed": "UNACCEPTED WAVE8: Pusey Vol. I Praefatio scans or Vol. II/PG 74 OCR elevate Cyril 11:52 Greek to VERIFIED_ORIGINAL or close C-25.",
+      "required": "Волна 8 — praefatio Пусея т. I (A1) и OCR-аппарат т. II / PG 74 (C) без закрытия оригинала 11:52:",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Record Wave 8 primary scan verification of Pusey 1872 Vol. I Praefatio (A1) and OCR/apparatus collation of Pusey Vol. II pp. 294-296, Migne PG 74 cols. 69-70, and Randell Vol. II pp. 133-134 (C) while keeping 11:52 Greek original unverified and C-25 OPEN.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
+        "scope": "Edition/locator mapping, apparatus decomposition, and Greek-only catena medium; no 11:52 Greek quote-safe promotion or C-25 closure."
+      }
+    },
+    {
+      "id": "W8-ROOT-DATA",
+      "file": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+      "removed": "UNACCEPTED WAVE8: Pusey Vol. I Praefatio scans or Vol. II/PG 74 OCR elevate Cyril 11:52 Greek to VERIFIED_ORIGINAL or close C-25.",
+      "required": "\"greekEditionAndApparatusReviewWave8\":",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Record Wave 8 primary scan verification of Pusey 1872 Vol. I Praefatio (A1) and OCR/apparatus collation of Pusey Vol. II pp. 294-296, Migne PG 74 cols. 69-70, and Randell Vol. II pp. 133-134 (C) while keeping 11:52 Greek original unverified and C-25 OPEN.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
+        "scope": "Edition/locator mapping, apparatus decomposition, and Greek-only catena medium; no 11:52 Greek quote-safe promotion or C-25 closure."
+      }
+    },
+    {
+      "id": "W8-NT-DATA",
+      "file": "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+      "removed": "UNACCEPTED WAVE8: Pusey Vol. I Praefatio scans or Vol. II/PG 74 OCR elevate Cyril 11:52 Greek to VERIFIED_ORIGINAL or close C-25.",
+      "required": "\"greekEditionAndApparatusReviewWave8\":",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Record Wave 8 primary scan verification of Pusey 1872 Vol. I Praefatio (A1) and OCR/apparatus collation of Pusey Vol. II pp. 294-296, Migne PG 74 cols. 69-70, and Randell Vol. II pp. 133-134 (C) while keeping 11:52 Greek original unverified and C-25 OPEN.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
+        "scope": "Edition/locator mapping, apparatus decomposition, and Greek-only catena medium; no 11:52 Greek quote-safe promotion or C-25 closure."
+      }
+    },
+    {
+      "id": "W8-F-DATA",
+      "file": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+      "removed": "UNACCEPTED WAVE8: Pusey Vol. I Praefatio scans or Vol. II/PG 74 OCR elevate Cyril 11:52 Greek to VERIFIED_ORIGINAL or close C-25.",
+      "required": "\"greekEditionAndApparatusReviewWave8\":",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Record Wave 8 primary scan verification of Pusey 1872 Vol. I Praefatio (A1) and OCR/apparatus collation of Pusey Vol. II pp. 294-296, Migne PG 74 cols. 69-70, and Randell Vol. II pp. 133-134 (C) while keeping 11:52 Greek original unverified and C-25 OPEN.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
+        "scope": "Edition/locator mapping, apparatus decomposition, and Greek-only catena medium; no 11:52 Greek quote-safe promotion or C-25 closure."
+      }
+    },
+    {
+      "id": "W8-S-DATA",
+      "file": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+      "removed": "UNACCEPTED WAVE8: Pusey Vol. I Praefatio scans or Vol. II/PG 74 OCR elevate Cyril 11:52 Greek to VERIFIED_ORIGINAL or close C-25.",
+      "required": "\"greekEditionAndApparatusReviewWave8\":",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE",
+      "historicalRetained": false,
+      "reason": "Record Wave 8 primary scan verification of Pusey 1872 Vol. I Praefatio (A1) and OCR/apparatus collation of Pusey Vol. II pp. 294-296, Migne PG 74 cols. 69-70, and Randell Vol. II pp. 133-134 (C) while keeping 11:52 Greek original unverified and C-25 OPEN.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
+        "scope": "Edition/locator mapping, apparatus decomposition, and Greek-only catena medium; no 11:52 Greek quote-safe promotion or C-25 closure."
+      }
     }
   ],
   "pathRepairs": [
@@ -7901,6 +8069,201 @@
       "finalAcceptanceContract": "Read-only precommit and exact-commit runs, actual HEAD blob/mode equality, detached-main overlay, native history verdicts/selftest, and independently read-back push. Final receipts saved outside Git after this record, not fabricated here.",
       "finalReceiptDirectory": "/home/user/source-materials/atonement-wave7-2026-11-03/verification",
       "selfReferenceBoundary": "One substantive commit is intended. Post-commit receipts are external; absence of a receipt-only commit is not absence of exact-commit verification. The final delivered SHA and receipt state must come from actual completed runs.",
+      "legacy30Battery": "PREVIOUS_FAIL_NOT_REPAIRED_NOT_RERUN",
+      "publicationEligible": false,
+      "mergePerformed": false
+    }
+  },
+  "wave8": {
+    "status": "PUSEY_VOL1_SCAN_VERIFIED_VOL2_AND_PG74_OCR_COLLATED_PRINT_SCAN_FOR_1152_OPEN",
+    "baselineCommit": "10f39af4ec2633f6304790cef346627a3fb5a62c",
+    "recordedAtUtc": "2026-11-03T15:35:00+00:00",
+    "controls": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
+    "repairIds": [
+      "W8-NT15",
+      "W8-F05",
+      "W8-F10",
+      "W8-C25",
+      "W8-P13",
+      "W8-ROOT00",
+      "W8-N00",
+      "W8-F00",
+      "W8-ROOT-DATA",
+      "W8-NT-DATA",
+      "W8-F-DATA",
+      "W8-S-DATA"
+    ],
+    "createdFiles": [
+      "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
+      "scripts/atonement_wave8_sources.py"
+    ],
+    "scope": "32 byte-verified Git objects across five repositories (8 visually inspected printed page scans of Pusey 1872 Vol. I and 24 OCR/hOCR/XML/JSON witnesses for Pusey Vol. II-III, Migne PG 74, and pipeline provenance) plus five partial web observations.",
+    "findings": [
+      "Pusey 1872 Vol. I printed scans (A1: title page, Praefatio pp. vii-x, bound-in Erratum slip i0021.jpg) establish Nicetas and Corderian Greek catena sigla, catena compression warnings, and prove Pusey p. ix p. 691 a disclaimer targets Jo 11:44 inner allegory (II p. 292.15), not 692 a-693 b (Jo 11:49-52).",
+      "Aegean 2.294-2.296 = Pusey 1872 Vol. II pp. 294-296; open-greek pg074_0039.1 = Migne PG 74 cols. 69-70 (1859 leaf 41 = 1863 leaf 039, Aubert 692-693); Randell 1885 Vol. II prints Jo 11:49-52 on pp. 133-134.",
+      "Discrepancies 1, 2, 4a in OG-JN11 are Qwen3.6 OCR errors; Discrepancy 4b is Mai Vatican catena scholium (Reg. Svec. 9 fol. 129) placed in PG 74 col. 69 main text with fn. (2) and relegated to apparatus by Pusey; Discrepancy 3 is a genuine Greek catena split (c. l. Cord. Paradise/divine-confession clause in Pusey/Randell vs Nik. Ed. virtue clause in Aubert/PG 74), with both recensions preserving death for all humanity, creation sonship, scattering by Satan, and gathering through faith into the Church.",
+      "Book VII in Pusey contains 0 Syriac scholia (unlike the 4 explicitly flagged Syriac scholia at the end of Book VIII on pp. 332-334 = Randell p. 164 From the Syriac), proving Jo 11:49-52 is pure Greek catena transmission."
+    ],
+    "publicationEligible": false,
+    "mergePerformed": false,
+    "puseyVol1PraefatioVisualScanVerified": true,
+    "greekOriginalFor1152Verified": false,
+    "puseyVol2AndPg74PageImagesInspected": false,
+    "c25": "OPEN",
+    "o11": "EDITION_LOCATOR_APPARATUS_AND_MEDIUM_ESTABLISHED_1152_PRINT_IMAGE_OPEN",
+    "completedPriorNextAction": "Wave 7 open edition-mapping, apparatus-identification, and Syriac-medium questions for John 11:49-52; does not replace visual scan inspection of Pusey Vol. II pp. 294-296 or PG 74 cols. 69-70.",
+    "nextSubstantiveStep": "Acquire and visually inspect printed page images (not OCR) of Pusey 1872 Vol. II pp. 294-296 (operacyrilli04cyriuoft frames 306-308) and/or Migne PG 74 cols. 69-70 (patrologiaecurs25hopfgoog leaf 41), and evaluate the theological relationship between Book VII 11:44 and Book VI 10:14-15.",
+    "regressionRecordSemantics": "12 owner/registry updates (2 baseline supersessions + 10 additive guards); not 12 historical errors.",
+    "supersededSnapshots": [
+      {
+        "path": ".github/workflows/atonement-corpus-integrity.yml",
+        "commit": "10f39af4ec2633f6304790cef346627a3fb5a62c",
+        "blob": "83dc94e06d6ea7f8043086ff17c543432446c215",
+        "sha256": "df96cdebce77ace3782f61a08b684222f698178d4eb97d049a922bdcd80e2e40",
+        "bytes": 14718
+      },
+      {
+        "path": "scripts/atonement_reshoot_state.py",
+        "commit": "10f39af4ec2633f6304790cef346627a3fb5a62c",
+        "blob": "8d547e15b347e44fc38377be91a0b2feaf83934c",
+        "sha256": "fffc44f0f95fa225dae25fa3919e27fdfa8f74915989881ae045bc40f6742671",
+        "bytes": 166679
+      },
+      {
+        "path": "scripts/atonement_sync_check.py",
+        "commit": "10f39af4ec2633f6304790cef346627a3fb5a62c",
+        "blob": "9d3403b5f868d4835254d4fb0ec5cc2518ad1b62",
+        "sha256": "5a2481a1686a363486c947dc6cd6c8c0d639d718039a07481aaf6035e7dd73e5",
+        "bytes": 18751
+      },
+      {
+        "path": "scripts/test_atonement_sync.py",
+        "commit": "10f39af4ec2633f6304790cef346627a3fb5a62c",
+        "blob": "0f8e433015cd6f9990a757b4b79f3bae2c5798f2",
+        "sha256": "70ac6fe36c9b6a6a7006de59020412bbdc5f65c3dc90416266cb7a752a3e1816",
+        "bytes": 76025
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+        "commit": "10f39af4ec2633f6304790cef346627a3fb5a62c",
+        "blob": "2455366d38312728dbd6eddcd9b75f6933b0a192",
+        "sha256": "be303fc55d3d3a9d9f8989a8a80d4ece02840347c62fa50005e1c65c37047898",
+        "bytes": 52078
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
+        "commit": "10f39af4ec2633f6304790cef346627a3fb5a62c",
+        "blob": "85f3df3a8b8f48756a75f4bd473bc9df43de9dc0",
+        "sha256": "88d884d4c84e45248f75d6de47f8083bd3ef90c7f16c4ef75127100b048e2719",
+        "bytes": 1287192
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+        "commit": "10f39af4ec2633f6304790cef346627a3fb5a62c",
+        "blob": "925fc59ea50bd2db684b679a498796eb8d1e0f7e",
+        "sha256": "cd230f8cd05883d90c6b884b64ff8eb795715b631c61cca65a4927fa982b3279",
+        "bytes": 1208884
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/evidence/synchronization_2026-11-02.json",
+        "commit": "10f39af4ec2633f6304790cef346627a3fb5a62c",
+        "blob": "8e1dbedef2d2fff6ead4317947a14b933d46ebd9",
+        "sha256": "923773ac8405240811c17aaf7f6d2502459cee289be7a34506d1167699e192cd",
+        "bytes": 725616
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
+        "commit": "10f39af4ec2633f6304790cef346627a3fb5a62c",
+        "blob": "f0e7cd2a27d8d77e6196ba5f5e9e4ed7568c2524",
+        "sha256": "b3e050ee70953c97cb73dc80027ea1c4e21881cbdc3530c2b30ff2622fdc9742",
+        "bytes": 25871
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
+        "commit": "10f39af4ec2633f6304790cef346627a3fb5a62c",
+        "blob": "b752b52e46c7d2a0cadb3dade4ef0ed086dc57e1",
+        "sha256": "6fa0cac99fdff31aba7c1d995935ea67fca14632436819c9f3d97dcbf10c9e41",
+        "bytes": 35901
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
+        "commit": "10f39af4ec2633f6304790cef346627a3fb5a62c",
+        "blob": "f9562d037917e2055375adbe949c4b9ff74096cc",
+        "sha256": "475a21109e33d26ecec860234e63c553fe01391e738d12d40ada1a0d7bf998c0",
+        "bytes": 36740
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+        "commit": "10f39af4ec2633f6304790cef346627a3fb5a62c",
+        "blob": "f429458f31c95e4afedc7dfd1a7974bd7d2bb207",
+        "sha256": "f5ed69d93ff0b7913fcf1f3cd330a604a09f30a42b818b72add598392df82c6a",
+        "bytes": 148908
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
+        "commit": "10f39af4ec2633f6304790cef346627a3fb5a62c",
+        "blob": "8f94c3f96504142c56957f0a4771a0dc9cbddfca",
+        "sha256": "66b1b90447c95e6d68e1dbb1fa49969135e03546e2226351b58a4a005118bebd",
+        "bytes": 29007
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md",
+        "commit": "10f39af4ec2633f6304790cef346627a3fb5a62c",
+        "blob": "bf7d875359739153dcb4e1ef242d5a9e4a366bf4",
+        "sha256": "9d6fc028505a930862cba4e02e32d0ce8df1d15a9fcb2dd5081dc0bd93013cf8",
+        "bytes": 57817
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md",
+        "commit": "10f39af4ec2633f6304790cef346627a3fb5a62c",
+        "blob": "38c59f2c5e40fa8d710c00e6b7adba1feacbae4d",
+        "sha256": "746c4257d31bbab6291bf8c50201dc7487216195641d48810a94d2fc27eb0c1b",
+        "bytes": 79559
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+        "commit": "10f39af4ec2633f6304790cef346627a3fb5a62c",
+        "blob": "b583e6e46780b65cebbd126be7a7dfba00c35edd",
+        "sha256": "42f177b0964589e71518f1cfa4b61c297143280c977e1564b206200121e72e90",
+        "bytes": 202707
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/ot/data/ot-corpus-v1.json",
+        "commit": "10f39af4ec2633f6304790cef346627a3fb5a62c",
+        "blob": "441c7979d27c4575a6771a48fce44e42d66b45d9",
+        "sha256": "ca6237f0ccabff007553ef24aae711d43b6a91150adc3f9f7064258f6ef41ba4",
+        "bytes": 785669
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+        "commit": "10f39af4ec2633f6304790cef346627a3fb5a62c",
+        "blob": "c2654c08f1c4053eb114b0dc0a1017b8bfec94be",
+        "sha256": "f57193ff3525fd9185119baa3527ec5fbd9ef856d9909744520315074d44bdef",
+        "bytes": 217300
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+        "commit": "10f39af4ec2633f6304790cef346627a3fb5a62c",
+        "blob": "73fdac668b3fdfee5a0d22c43d68d13f89694425",
+        "sha256": "37fa0ab39503311dc3dfa87563fea8be8e0d84dfc2edaa7e153526f55fa648dd",
+        "bytes": 202345
+      }
+    ],
+    "legacy30Battery": {
+      "status": "PREVIOUS_FAIL_NOT_REPAIRED_NOT_RERUN_IN_WORKING_TREE",
+      "basis": "wave5.preliminaryVerification",
+      "note": "Separate from the scoped, read-only native traps. No repository-wide green assertion."
+    },
+    "verification": {
+      "status": "DEVELOPMENT_CHECKS_RECORDED_FINAL_EXACT_COMMIT_RECEIPT_EXTERNAL",
+      "recordedAtUtc": "2026-11-03T15:35:00+00:00",
+      "unitTests": 177,
+      "developmentRunIsFinalExactCommit": false,
+      "sourceByteReplay": "PASS_32_GIT_OBJECTS_INCLUDING_8_A1_PRINT_SCANS_IN_DEVELOPMENT",
+      "nativeClaimsCheck": "PASS_914_SCOPED_RECORDS_AFTER_EXPLICIT_WRITER",
+      "nativeReshootCheck": "PASS_AFTER_INTERNAL_CONVERGENCE",
+      "finalReceiptDirectory": "/home/user/source-materials/atonement-wave8-2026-11-03/verification",
+      "selfReferenceBoundary": "One substantive commit is intended. Post-commit receipts and delivery summary are stored externally under /home/user/source-materials/atonement-wave8-2026-11-03; no second receipt-only commit is created.",
       "legacy30Battery": "PREVIOUS_FAIL_NOT_REPAIRED_NOT_RERUN",
       "publicationEligible": false,
       "mergePerformed": false
