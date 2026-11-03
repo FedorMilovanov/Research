@@ -5,15 +5,21 @@
 **Владелец:** Фёдор Милованов (`FedorMilovanov`).
 **Срез фактов:** 1 ноября 2026, см. [`METRICS.csv`](METRICS.csv) и [`VERIFICATION_LOG.md`](VERIFICATION_LOG.md).
 
-> **Операционная поправка от 3 ноября 2026.** Этот документ остаётся исходным
-> планом и шаблонами, **но не живым списком незакрытых PR**. Перед любым новым
-> действием читать [`DEFINITION_OF_DONE.md` §3](DEFINITION_OF_DONE.md):
-> `video-channel-manager` [#755](https://github.com/FedorMilovanov/video-channel-manager/pull/755)
-> уже влит; защитные конфигурации присутствуют в `main` 10/11 обследованных
-> репозиториев; `DeepMovieReview` [#136](https://github.com/FedorMilovanov/DeepMovieReview/pull/136)
-> проходит CI на актуализированной базе. **Не повторять завершённую security-волну**,
-> не открывать конкурирующих PR на чужие ветки, не менять продуктовые/провайдерские данные.
-> Цифры из `METRICS.csv` — датированный срез 01.11, не live-счётчики.
+> **Операционная сверка от 3 ноября 2026.** Этот документ — исходный
+> план/шаблоны, а **не список живых PR**. Перед действием читать
+> [`DEFINITION_OF_DONE.md` §3](DEFINITION_OF_DONE.md) и свежий GitHub `main`.
+> Security baseline **11/11** основных репозиториев: `DeepMovieReview`
+> [#136](https://github.com/FedorMilovanov/DeepMovieReview/pull/136) смержен,
+> post-merge Gitleaks зелёный. Английские README **2/2**: `video-channel-manager`
+> [#757](https://github.com/FedorMilovanov/video-channel-manager/pull/757),
+> `mp3telegrambot` [#435](https://github.com/FedorMilovanov/mp3telegrambot/pull/435).
+> `mp3telegrambot` `pyasn1` CVE закрыты узким [#436](https://github.com/FedorMilovanov/mp3telegrambot/pull/436),
+> но Dependabot #434 с другими зависимостями **не** завершён.
+> **Не повторять** закрытые security/docs PR, не затрагивать чужие ветки;
+> не принимать отсутствие исключений/успех CI за разрешение provider writes.
+> Отдельное действие владельца: отозвать cookies из истории приватного
+> `sermon_MP3_bot` после [#1](https://github.com/FedorMilovanov/sermon_MP3_bot/pull/1).
+> Числа `METRICS.csv` — **исторический срез 01.11**, не live-счётчики.
 **Контекст:** [`AUDIT_RU.md`](AUDIT_RU.md), [`HISTORY_AND_PRINCIPLES.md`](HISTORY_AND_PRINCIPLES.md), [`PORTFOLIO_RU.md`](PORTFOLIO_RU.md).
 
 ---
