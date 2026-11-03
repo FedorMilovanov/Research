@@ -40,6 +40,11 @@ WORK_TYPES = {
     # closes a prose treatise. It is carried as a candidate rather than as a track — no
     # witness of liturgical use, no melody, and the text itself unsettled between editions.
     "ANCIENT_GREEK_TREATISE_EPILOGUE_HYMN",
+    # Added 2026-11-03 for PHOS-008: a Latin hymn of the late 4th century in the Ambrosian
+    # stanza. It differs from the two Greek types in the one way that matters to music: the
+    # metre is strict and authentic, so a strophic melody is possible, where the Greek
+    # lamplighting hymn has no metre at all and can only be set through-composed.
+    "ANCIENT_LATIN_HYMN",
 }
 CANDIDATE_STATES = {"OPEN", "ACTIVATED", "REJECTED", "SUPERSEDED"}
 CLAIM_STATES = {

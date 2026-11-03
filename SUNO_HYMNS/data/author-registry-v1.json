@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "registryId": "SUNO-HYMNS-AUTHOR-REGISTRY-V1",
-  "asOf": "2026-10-26",
+  "asOf": "2026-11-03",
   "authors": [
     {
       "id": "LOD-001",
@@ -134,6 +134,35 @@
         "Attribution is the common view but not unqualified: Gordley writes «Clement (or some other early Christian) has written this metrical hymn» — CLM-PHOS-CLEM-ATTRIBUTION-HEDGE.",
         "The hymn is missing from one of the primary manuscripts of the Paedagogus, which is why some scholars ask whether it is a secondary addition — CLM-PHOS-CLEM-MS-ABSENT.",
         "Nothing from this author may be stated in public copy before the owner decides whether the candidate enters the series."
+      ]
+    },
+    {
+      "id": "AMBR-001",
+      "canonicalName": "Ambrose of Milan",
+      "nameVariants": [
+        "Ambrosius Mediolanensis",
+        "Sant'Ambrogio",
+        "Αμβρόσιος Μεδιολάνων",
+        "Амвросий Медиоланский"
+      ],
+      "russianDisplayName": "Амвросий Медиоланский",
+      "lifeDates": "ок. 339/40 – 397",
+      "roles": [
+        "Bishop of Milan",
+        "author of the metrum Ambrosianum",
+        "father of Latin hymnody"
+      ],
+      "context": "Milan in the last quarter of the 4th century. Augustine's Sermon 372 and Celestine I (Rome, 430) both quote stanzas of Veni redemptor gentium and name him. Augustine lists four Ambrosian hymns: Aeterne rerum conditor, Deus creator omnium, Jam surgit hora tertia, Veni redemptor gentium. Fontaine 1992 counts fourteen hymns attributable to him with confidence or probability; this is among the confident ones.",
+      "sourceIds": [
+        "SRC-PHOS-VRG-AUG372",
+        "SRC-PHOS-VRG-CELEST430",
+        "SRC-PHOS-VRG-FONTAINE",
+        "SRC-PHOS-VRG-GRMS2017"
+      ],
+      "notes": [
+        "Named as author by two contemporaries, not inferred from a manuscript heading — the strongest attribution in the series.",
+        "The metre is his own contribution: the Ambrosian stanza, iambic dimeter, four lines of eight syllables (GRMS 2017, 104).",
+        "No melody of his survives; see CLM-PHOS-VRG-MELODY-LOST."
       ]
     }
   ]
