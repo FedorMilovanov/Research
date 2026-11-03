@@ -6640,7 +6640,7 @@
     "publicationEligible": false
   },
   "wave6": {
-    "status": "BOUNDED_PRIMARY_READING_AND_PRECOMMIT_GATES_VERIFIED",
+    "status": "BOUNDED_PRIMARY_READING_INTEGRATED_SUBSTANTIVE_COMMIT_VERIFIED",
     "baselineCommit": "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
     "recordedAtUtc": "2026-11-03T10:31:55.703488+00:00",
     "controls": "ИСКУПЛЕНИЕ/evidence/source_controls_wave6_2026-11-03.json",
@@ -7205,6 +7205,335 @@
       "filesUnchanged": true,
       "rawSourcesUnchanged": true,
       "limitation": "The staged tree made plain git diff --check vacuous. Replaced with git diff --check HEAD for working-tree runs, and baseline..HEAD for exact commits. A fresh complete accepted run follows; no weakening of gates."
-    }
+    },
+    "postCommitVerification": {
+      "startedAtUtc": "2026-11-03T10:52:02.914023+00:00",
+      "finishedAtUtc": "2026-11-03T10:53:12.546207+00:00",
+      "branch": "arena/d7043ba0-research",
+      "head": "2cdc806f60c096335f504b4fe301efde35bee9a0",
+      "exactCommitTree": true,
+      "trackedFiles": 2695,
+      "candidateUntrackedFiles": 0,
+      "filesChecked": 2695,
+      "beforeFingerprint": "68b1fd4ab224f014dd9d783d0468cc2358d13cc5d7d2488c918e5de66db80b31",
+      "afterFingerprint": "68b1fd4ab224f014dd9d783d0468cc2358d13cc5d7d2488c918e5de66db80b31",
+      "changedFiles": [],
+      "rawSourceFiles": 21,
+      "rawSourcesUnchanged": true,
+      "gitStatusUnchanged": true,
+      "checks": [
+        {
+          "name": "workflow-ast",
+          "returncode": 0,
+          "expected": 0,
+          "files": 14
+        },
+        {
+          "name": "unit-tests",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/test_atonement_sync.py"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "323e39c9f3fda7a680fafd21fda79bd5f867abce78e06f270e46e55bf14f3a13"
+        },
+        {
+          "name": "sync",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_sync_check.py"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "6951b30778147671d46f9eb27dd66eedacfe991c560bc753db94ea704b27e853"
+        },
+        {
+          "name": "wave6-byte-replay",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_wave6_sources.py",
+            "--source-root",
+            "/home/user/source-materials/atonement-wave6-2026-11-03"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "961dbb93352c53631b814fa607f8d1de6e40db706006caa28a50debdd77dd15c"
+        },
+        {
+          "name": "wave3-retained-not-raw-replay",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_wave3_sources.py"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "19b72a815e481ad8cab4f80cf75038128361a337691f615f028e7b917fd90fef"
+        },
+        {
+          "name": "wave4-retained-not-raw-replay",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_wave4_sources.py"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "95cedcb51c25d01138e50a0af03887c8f1da90c6d6d490d35f0b811e500c9ca6"
+        },
+        {
+          "name": "wave5-retained-not-raw-replay",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_wave5_sources.py"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "ab719d925181f496700f5071d2cbfa7b1698358c58d309a2f5d5d040e254ba76"
+        },
+        {
+          "name": "crossrefs",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_crossref_audit.py",
+            "--check"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "edd3e4ed6d548561424ad7189dc7b5a214ee85e5f68df3a256e5f4a43c82602d"
+        },
+        {
+          "name": "native-integrity",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/validate_atonement_corpus_integrity.py"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "23399f763694c15f86b5eba7124f6492dc416675e82c3687eb349455dd952202"
+        },
+        {
+          "name": "claims",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_claim_register.py",
+            "--check"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "e6686f03629677f3d02af49877a2861702aefa868f547d1dc166d97b6c7b87fb"
+        },
+        {
+          "name": "claim-cross",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_claim_register.py",
+            "--cross"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "8c4cc031b64956e145eaa8729c2fd86007d1a63be69a8a157147a70cb4df108c"
+        },
+        {
+          "name": "reshoot",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_reshoot_state.py",
+            "--check"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "42220fecf0a8caeb2b97e0c21c2142733afa652691fe9ae1e98648784a7dbdfb"
+        },
+        {
+          "name": "round-plan",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_round_close.py",
+            "--plan"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "847edf97ecc904bf6245f4e68aa20929b94eaf01df5ab03b6657c03a0cecfd86"
+        },
+        {
+          "name": "round-selfcheck",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_round_close.py",
+            "--selfcheck"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "404a2a72f14938f4a4c017f202e7a0114a3b39124c279b6a30d0fc72243802e5"
+        },
+        {
+          "name": "refuse-unapproved-writers",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_round_close.py",
+            "--run",
+            "--allow-appending-writers"
+          ],
+          "returncode": 2,
+          "expected": 2,
+          "logSha256": "d9ac3a22e99638ec8770b3fee040cea9acb2d923263eab016e3076405a1992f1"
+        },
+        {
+          "name": "rule-traps",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_reshoot_state.py",
+            "--rule-trap"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "123f1eae60188d544c715916d0d607ab6442f6d55a8f1fe727502141e57acb47"
+        },
+        {
+          "name": "diff-whitespace",
+          "command": [
+            "git",
+            "diff",
+            "--check",
+            "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
+            "HEAD"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "workflow-guards",
+          "returncode": 0,
+          "expected": 0,
+          "guards": 37,
+          "failures": []
+        },
+        {
+          "name": "local-markdown-targets",
+          "returncode": 0,
+          "expected": 0,
+          "proseOwners": 14,
+          "targets": 200,
+          "missing": []
+        }
+      ],
+      "unitTests": 148,
+      "legacy30Battery": "PREVIOUS_FAIL_RETAINED_NOT_RERUN_OR_RELABELED",
+      "humanReadingMeasured": false,
+      "publicationEligible": false,
+      "mergePerformed": false,
+      "pass": true,
+      "actualGitHeadBytes": {
+        "recordedAtUtc": "2026-11-03T10:54:28.136957+00:00",
+        "head": "2cdc806f60c096335f504b4fe301efde35bee9a0",
+        "actualGitBlobsAndModesVerified": 2695,
+        "fingerprint": "68b1fd4ab224f014dd9d783d0468cc2358d13cc5d7d2488c918e5de66db80b31",
+        "matchesExactAcceptanceReceipt": true,
+        "workingFilesChanged": false
+      },
+      "history": {
+        "head": "2cdc806f60c096335f504b4fe301efde35bee9a0",
+        "finishedAtUtc": "2026-11-03T10:56:01.044965+00:00",
+        "outcomes": [
+          {
+            "name": "verdicts",
+            "returncode": 0,
+            "logSha256": "d33e2e0c89ce62b69129dbac0c585f9efefad11eb56559738ca828d4b62b56da"
+          },
+          {
+            "name": "selftest",
+            "returncode": 0,
+            "logSha256": "49dce3bc7da3151efc91a89764923bb10e15268e87bdf9b209e01895050b8fd5"
+          }
+        ],
+        "pass": true
+      },
+      "landing": {
+        "head": "2cdc806f60c096335f504b4fe301efde35bee9a0",
+        "main": "ec722894e21b004900e9e44a2da9bdb9990f1f7c",
+        "mergeBase": "ec722894e21b004900e9e44a2da9bdb9990f1f7c",
+        "overlays": 83,
+        "deletions": 0,
+        "outcomes": [
+          {
+            "name": "native-integrity",
+            "command": [
+              "python3",
+              "-B",
+              "scripts/validate_atonement_corpus_integrity.py"
+            ],
+            "returncode": 0,
+            "logSha256": "23399f763694c15f86b5eba7124f6492dc416675e82c3687eb349455dd952202"
+          },
+          {
+            "name": "claims",
+            "command": [
+              "python3",
+              "-B",
+              "scripts/atonement_claim_register.py",
+              "--check"
+            ],
+            "returncode": 0,
+            "logSha256": "e6686f03629677f3d02af49877a2861702aefa868f547d1dc166d97b6c7b87fb"
+          },
+          {
+            "name": "reshoot",
+            "command": [
+              "python3",
+              "-B",
+              "scripts/atonement_reshoot_state.py",
+              "--check"
+            ],
+            "returncode": 0,
+            "logSha256": "42220fecf0a8caeb2b97e0c21c2142733afa652691fe9ae1e98648784a7dbdfb"
+          },
+          {
+            "name": "sync",
+            "command": [
+              "python3",
+              "-B",
+              "scripts/atonement_sync_check.py"
+            ],
+            "returncode": 0,
+            "logSha256": "6951b30778147671d46f9eb27dd66eedacfe991c560bc753db94ea704b27e853"
+          },
+          {
+            "name": "crossrefs",
+            "command": [
+              "python3",
+              "-B",
+              "scripts/atonement_crossref_audit.py",
+              "--check"
+            ],
+            "returncode": 0,
+            "logSha256": "edd3e4ed6d548561424ad7189dc7b5a214ee85e5f68df3a256e5f4a43c82602d"
+          }
+        ],
+        "mergePerformed": false,
+        "filesCheckedUnchanged": 2695,
+        "changedFiles": [],
+        "pass": true,
+        "finishedAtUtc": "2026-11-03T10:54:43.028910+00:00"
+      },
+      "receiptSha256": "707ab2c4be49b8469fae959f811abe0515184504232606e82b2139e958d2c449",
+      "scope": "Actual clean substantive commit 2cdc806f verified, including all2695 actual Git blobs/modes, 21 raw external files, 19 accepted outcomes, history perturbation and detached-main five-check landing. This receipt does not retroactively verify its own future commit. Legacy30 FAIL remains disclosed; no full-repository green claim."
+    },
+    "pushStateAtReceipt": "NOT_YET_PUSHED_HISTORICAL_STATE_AT_RECEIPT_CREATION"
   }
 }
