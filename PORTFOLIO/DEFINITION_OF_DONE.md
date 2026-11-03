@@ -4,9 +4,11 @@
 сказать «всё»** — и, наоборот, какие условия не наступят никогда, сколько ни работай.
 
 Короткий ответ: «всё» — это не «написано много текста», а **зелёный гейт плюс пустой
-список того, что ещё можно закрыть имеющимися данными**. Сейчас гейт зелёный, а
-закрываемых пунктов ноль: остались только четыре утверждения, для которых нужны внешние
-источники (полная выборка запусков CI, доступ к branch protection, аналитика трафика, точный подсчёт слов).
+список того, что ещё можно закрыть имеющимися данными**. Публикационная готовность
+текстов **не равна** завершению межрепозиторной программы: на 3 ноября 2026 года
+профиль уже опубликован, метаданные заполнены и защита основных `main` проверена,
+но остаются публикационные настройки, качество межрепозиторной документации и CI зависимостей. Четыре `UNPROVEN`-утверждения — отдельная, честно ограниченная
+доказательная граница, а не замена незавершённым действиям (§3).
 
 ---
 
@@ -41,7 +43,7 @@ python3 PORTFOLIO/tools/check_claims.py
 | `AUDIT_RU.md` | готов | 10 клонов, API, пересчёт всех чисел; 8 раундов проверки |
 | `PORTFOLIO_RU.md` | готов к публикации | все числа из реестра, паритет с EN |
 | `PORTFOLIO_EN.md` | готов к публикации | то же, плюс честный FAQ про ИИ и чужой TTS |
-| `PROFILE_README.md` | готов к публикации | 130 строк, 15 репозиториев, темы и описания |
+| `PROFILE_README.md` | **опубликован** | [профильный репозиторий](https://github.com/FedorMilovanov/FedorMilovanov) создан публичным 03.11.2026, README в `main`; опубликованный текст очищен от плейсхолдеров и недоказанного числа слов |
 | `METRICS.csv` | готов | 15 строк, `data_as_of=2026-11-01` |
 | `MEDIA_PRACTICE.md` | готов | медиа-линия описана процессом, без счётчиков аудитории |
 | `HISTORY_AND_PRINCIPLES.md` | готов | 17 836 коммитов, хронология, словарь |
@@ -52,26 +54,45 @@ python3 PORTFOLIO/tools/check_claims.py
 | `GITHUB_DISCOVERABILITY.md` | готов | механика поиска, topics по репозиториям |
 | `AGENT_HANDOFF.md` | готов | задание агенту с правом пуша |
 | `security-baseline/` | готов | `install.sh` протестирован, контур стоит в `Research` |
-| `wave1/` | разобран | `mp3telegrambot` — уже на базовой линии; `video-channel-manager` — патч проверен, не отправлен |
+| `wave1/` | **закрыт применением** | `mp3telegrambot` имел сканер; `video-channel-manager` PR [#755](https://github.com/FedorMilovanov/video-channel-manager/pull/755) влит в `main` (`e56b12a`), post-merge secret scan прошёл |
 | `VERIFICATION_LOG.md` | ведётся | 15 разделов, включая найденные ошибки собственного гейта |
 | `REVERIFICATION_2026-11-01.md` | готов | 33 подтверждено, 11 исправлено |
 | `CLAIMS.csv` + `tools/` | готовы | гейт, измеритель защиты, 32 утверждения |
 
 ---
 
-## 3. Что осталось и при каких условиях закроется
+## 3. Проверенное состояние исполнения и остаток (03.11.2026)
 
-| Пункт | Условие закрытия | Кто нужен |
+Таблица ниже **дополняет срез METRICS.csv/CLAIMS.csv от 01.11**, не подменяя
+его неполным пересчётом. Закрытость определяется изменением в `main` или
+явной проверкой, а не готовностью шаблона. Перед новым PR проверять открытые
+работы других агентов и перечитывать свежий HEAD.
+
+| Направление | Факт на 03.11.2026 | Следующее закрывающее действие |
 |---|---|---|
-| Патч `video-channel-manager` | права записи в репозиторий или ручной `apply.sh` + push | владелец репозитория |
-| Корневой `SECURITY.md` в `video-channel-manager` | отдельное решение: сделать `docs/security.md` каноническим и поставить указатель | владелец репозитория |
-| Профиль-README на GitHub | создать `FedorMilovanov/FedorMilovanov` с текстом из `PROFILE_README.md` §1 | 15 минут руками |
-| Описания и topics у 15 репозиториев | пройти по `GITHUB_DISCOVERABILITY.md` §3 | вечер работы |
-| Английские README в двух репозиториях | взять шаблон из `AGENT_HANDOFF.md` | агент с правом пуша |
-| Волна 2 контура | ещё 7 репозиториев по тому же принципу «сначала проверить, потом ставить» | сессия с правами записи |
+| `video-channel-manager` — защитный контур и английский README | **Закрыто:** secret scan [#755](https://github.com/FedorMilovanov/video-channel-manager/pull/755), root `SECURITY.md` [#756](https://github.com/FedorMilovanov/video-channel-manager/pull/756), английский `README_EN.md` [#757](https://github.com/FedorMilovanov/video-channel-manager/pull/757) — все три в `main`; post-merge Gitleaks зелёный | не повторять завершённые патчи; отдельно от security продолжается неавторизованный к исполнению Telegram preflight |
+| Секрет-сканирование портфеля | **Завершено 11/11:** конфигурации Gitleaks в `main` всех 11 основных проверенных продуктовых/инфраструктурных репозиториев; [DeepMovieReview #136](https://github.com/FedorMilovanov/DeepMovieReview/pull/136) влит как `9f568ea`, отдельный post-merge Gitleaks успешен | это **покрытие проверками, не гарантия 0 секретов**; не создавать повторные security PR |
+| `DeepMovieReview` | **Закрыто:** [#136](https://github.com/FedorMilovanov/DeepMovieReview/pull/136) влит после 32 успешных PR checks + 1 neutral historical (Native iOS Safari в итоге прошёл); `main` secret scan успешен | флейки нативного iOS остаются самостоятельным CI-наблюдением, не поводом ослаблять gate; чужой draft #139 не затронут |
+| Профиль GitHub | **Опубликован** в [FedorMilovanov/FedorMilovanov](https://github.com/FedorMilovanov/FedorMilovanov); README доступен публично | Bio/website профиля и закрепление репозиториев требуют действий владельца через UI или дополнительного `user` scope; текущий CLI не имеет таких прав |
+| Описания и topics | **Закрыто 12/12:** авторизованный GitHub CLI выставил descriptions/topics для 11 основных репозиториев и `FedorMilovanov.github.io`, homepage 5/5; прежний `Milovi_Cake` description `Cakes site` заменён | проверять при изменении назначения проекта; не повторять уже выполненную волну |
+| Два английских README | **Завершено 2/2:** `video-channel-manager` [#757](https://github.com/FedorMilovanov/video-channel-manager/pull/757) и `mp3telegrambot` [#435](https://github.com/FedorMilovanov/mp3telegrambot/pull/435) в `main`; последний — после 8/8 успешных проверок | не создавать новые переводы/дубли, при изменении контракта синхронизировать оба языка |
+| `mp3telegrambot` зависимости и CVE | **Закрыто в `main`:** узкий [#436](https://github.com/FedorMilovanov/mp3telegrambot/pull/436) исправил `pyasn1`, а [Dependabot #437](https://github.com/FedorMilovanov/mp3telegrambot/pull/437) влит как [`c7f68cf`](https://github.com/FedorMilovanov/mp3telegrambot/commit/c7f68cf607d3a7aa2bb3c86a7eb422697e3a0289) после устранения несовместимости `google-genai`/`tenacity`, синхронизации с `main` и полного зелёного PR CI; **все 13 post-merge GitHub Actions runs завершились `success`** (проверено авторизованным `gh run list --commit`) | не повторять #436/#437; новые Dependabot PR рассматриваются отдельно и не сливаются без их собственных CI |
+| Приватный `sermon_MP3_bot` | После [#1](https://github.com/FedorMilovanov/sermon_MP3_bot/pull/1) отслеживаемые cookie удалены из `main`, но остались в истории; Dependabot vulnerability alerts **включены** | владелец обязан отозвать старые cookie-сессии у провайдера; private `main` branch protection GitHub отклонил `403 Upgrade to GitHub Pro or make this repository public`; **не делать репозиторий публичным** и не заявлять этот риск закрытым |
+| README / OWNER / ARCHITECTURE / CASE_STUDY / SECURITY | **Частичная публикационная волна закрыта в `main` и проверена:** [gb-vosk-tts #3](https://github.com/FedorMilovanov/gb-vosk-tts/pull/3) (`2e36900`), [Milovi_School #50](https://github.com/FedorMilovanov/Milovi_School/pull/50) (`4fcf206`), [Milovi_Cake #138](https://github.com/FedorMilovanov/Milovi_Cake/pull/138) (`7891708`), [bible-bot #187](https://github.com/FedorMilovanov/bible-bot/pull/187) (`a759812`), [AuditRepo #513](https://github.com/FedorMilovanov/AuditRepo/pull/513) (`5b203c2`). Документы содержат границы авторства, архитектурные доказательства и/или приватную security reporting policy; AuditRepo сохраняет строгий root-MD allowlist с регрессионным тестом | Остальные репозитории не сертифицированы массово; не плодить пустые OWNER/CASE ради галочки, сверять действующие AGENTS/authority, чужие PR и реальные источники |
+| `.mailmap` | Массовое внедрение не подтверждено, спорный адрес требует подтверждения владельца | не приписывать авторство без сверки; не переписывать Git history |
+| Числовой срез | `METRICS.csv`, `CLAIMS.csv` и `VERIFICATION_LOG.md` относятся к **01.11.2026** | после завершения security-волны воспроизводимо пересчитать новые числа, обновить связанные документы и запустить `check_claims.py` |
+| Branch protection | **15/16 существующих default `main` защищены**, из них 13 основных/публичных проверены ранее, затем `baptist` и `baptist2` получили PR-only protection. `baptist---2` пустой и не имеет ветки; `sermon_MP3_bot` — единственное исключение (приватная ветка, ограничение тарифа GitHub Pro, API `403`). Ранее существующая legacy protection `AuditRepo` подтверждена (`validate`, `preflight`) | не подменять rulesets и checks фикцией, не отключать защиты ради мержа, не открывать доступ к приватному `sermon_MP3_bot` |
+| Dependabot vulnerability alerts | **17/17 включены и повторно проверены** через GitHub API, в том числе старые публичные, пустой профильный и приватный `sermon_MP3_bot` | это механизм оповещения, **не** свидетельство отсутствия CVE или права на автоматический merge |
+| Открытые уязвимости Dependabot | **Проверено API 03.11:** после [Milovi_School #52](https://github.com/FedorMilovanov/Milovi_School/pull/52) (`dd4d98e`, 5/5 PR workflow success) `minimatch` CVE-2026-118764 снят; **0 открытых alerts у Milovi School**. У `gb-is-my-strength` остались **2 Astro advisories**: [CVE-2026-114128](https://github.com/advisories/GHSA-98hj-9722-w3j8) (medium) и [CVE-2026-114127](https://github.com/advisories/GHSA-mpr7-6m5w-76rw) (low) | Существующий [Dependabot #2244](https://github.com/FedorMilovanov/gb-is-my-strength/pull/2244) красный, потому что `scripts/astro7-satteri-contract.mjs` намеренно требует Astro 7.2.9 / Satteri 0.3.8; patched Astro 7.3.3 использует Satteri 0.4.1, 7.4.4 — 0.4.6. Требуется проверяемая Satteri-миграция с owner SYSTEM scope; не обходить проверки и не редактировать чужую активную ветку |
+| Публикация source vs production | **Milovi_School подтверждён live:** `https://french.milovicake.ru/release.json` ответил HTTP 200 exact `dd4d98ede5911e924ae182ebab5debd47e116715`, совпадает с security merge. `bible-bot` post-merge CI/CodeQL/Security Audit/Chapter integrity зелёные на `a759812`, но внешний Render/Telegram production acceptance отдельно не проверялся. **Milovi_Cake:** при проверке 03.11 live `/release.json` был `c60a9248…` против нового source `7891708…`, Pages deploy ещё выполнялся | Повторить точную live-SHA проверку `Milovi_Cake` после подтверждённого деплоя; не переносить факт зелёного source CI на production; не считать Render/Telegram provider state подтверждённым по GitHub |
+| Публичные метрики | Трафик, выручка и некоторые медиа-показатели не наблюдаются из GitHub; срез `CLAIMS.csv` сохранён на 01.11 | не заявлять недоказанные результаты |
 
-Это работа, а не долг: каждый пункт — отдельное решение, и ни один не мешает
-публиковать портфолио сегодня.
+**Граница процентов (срез 03.11.2026):** конфигурационное покрытие Gitleaks **11/11 (100%)**
+среди определённых 11 основных репозиториев; приоритетные английские README — **2/2 (100%)**.
+Это **не** общий процент готовности портфолио и **не** утверждение о безопасности
+всех 17 репозиториев аккаунта: исторические, приватные и пустые ветки требуют отдельной
+классификации. Метрики `METRICS.csv`/`CLAIMS.csv` сохраняют исторический срез 01.11.
+Общий достоверный процент невозможен без согласованных весов и полного повторного инвентаря.
 
 ---
 
@@ -80,8 +101,8 @@ python3 PORTFOLIO/tools/check_claims.py
 | Утверждение | Почему остаётся `UNPROVEN` |
 |---|---|
 | ≈365 000 слов авторской прозы | оценка методом извлечения текста, погрешность ±15 %; точный подсчёт потребовал бы разметки страниц |
-| Доля зелёных прогонов CI | `actions/runs` зажимает `total_count` на 2 500, полной выборки не существует |
-| Branch protection и rulesets | API отдаёт `403 Resource not accessible by integration` |
+| Доля зелёных прогонов CI | Агрегированный `total_count` ограничен 2 500, но оконный метод позволяет восстановить доступные runs; отдельный подсчёт по conclusion и attempts ещё не выполнен, доля успехов не доказана |
+| Branch protection и rulesets | GitHub App в историческом срезе возвращал `403`, но 03.11 авторизованный пользовательский `gh` позволил **проверить и установить** реальную legacy branch protection для 13/13 выбранных репозиториев. Запись `UNPROVEN` в старом CSV не является текущим статусом |
 | Трафик и выручка | нет доступа к аналитике; в портфолио не заявляются |
 
 Правило простое: если утверждение нельзя проверить, оно либо помечено `UNPROVEN`,
@@ -96,12 +117,13 @@ python3 PORTFOLIO/tools/check_claims.py
 1. **Черновик** — текст есть, числа не сведены. Не публиковать.
 2. **Согласовано** — `check_claims.py` зелёный, все числа в реестре.
 3. **Готово к публикации** — плюс паритет RU/EN и отсутствие `UNPROVEN` в утвердительной форме.
-   **Сейчас здесь.**
+   **Документы исследования достигли этой стадии; часть материала уже опубликована на GitHub.**
 4. **Опубликовано** — материалы выложены (сайт, hh, LinkedIn, профиль-README) и ссылки
    на них добавлены в реестр. Требует действий владельца аккаунтов.
+   **Частично исполнено:** профильный README и ссылки на RU/EN-портфолио опубликованы в GitHub. Публикация на отдельном сайте/hh/LinkedIn не подтверждена; полную стадию 4 не заявлять.
 
 Разница между 3 и 4 — не качество текста, а факт публикации: портфолио в репозитории
-и портфолио, которое кто-то прочитал, — разные вещи, и второе этой сессией не
+и портфолио, которое размещено на внешних профессиональных площадках, — разные состояния, и второе этой сессией не
 достигается.
 
 ---
@@ -127,3 +149,7 @@ python3 PORTFOLIO/tools/check_claims.py
 
 Проверяется это не на словах: `check_claims.py` входит в CI `Research`
 (`.github/workflows/portfolio-claims.yml`), поэтому регресс виден в PR, а не в переписке.
+
+### Поправка к измерению CI (03.11.2026)
+
+Исторический счётчик 119 919 был ошибочно представлен как полный; 40 000 в gb-is-my-strength оказалось лимитом GitHub API. Его нельзя использовать как актуальный точный результат. Для claim C-014 теперь применяется отдельный [CI_RUNS_2026-11-03.csv](CI_RUNS_2026-11-03.csv): 221 596 API-доступных запусков десяти репозиториев за 2026 год до 21:05:16 UTC 03.11.2026. Метод разбиения временных интервалов воспроизводится [tools/measure_ci_runs.py](tools/measure_ci_runs.py). METRICS.csv продолжает хранить исходный срез остальных метрик от 01.11, а не гибридный набор текущих чисел.

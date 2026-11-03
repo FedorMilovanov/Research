@@ -4,6 +4,27 @@
 
 **Владелец:** Фёдор Милованов (`FedorMilovanov`).
 **Срез фактов:** 1 ноября 2026, см. [`METRICS.csv`](METRICS.csv) и [`VERIFICATION_LOG.md`](VERIFICATION_LOG.md).
+
+> **Операционная сверка от 3 ноября 2026.** Этот документ — исходный
+> план/шаблоны, а **не список живых PR**. Перед действием читать
+> [`DEFINITION_OF_DONE.md` §3](DEFINITION_OF_DONE.md) и свежий GitHub `main`.
+> Security baseline **11/11** основных репозиториев: `DeepMovieReview`
+> [#136](https://github.com/FedorMilovanov/DeepMovieReview/pull/136) смержен,
+> post-merge Gitleaks зелёный. Английские README **2/2**: `video-channel-manager`
+> [#757](https://github.com/FedorMilovanov/video-channel-manager/pull/757),
+> `mp3telegrambot` [#435](https://github.com/FedorMilovanov/mp3telegrambot/pull/435).
+> `mp3telegrambot` `pyasn1` CVE закрыты узким [#436](https://github.com/FedorMilovanov/mp3telegrambot/pull/436),
+> Dependabot #434 заменён, а [#437](https://github.com/FedorMilovanov/mp3telegrambot/pull/437) **уже смержен** (`c7f68cf`), после исправления `google-genai`/`tenacity` и тестовых несовместимостей, 20/20 PR checks, полный post-merge CI/CodeQL/secret scan завершились `success`. Не открывать новые PR на уже закрытую эту же зависимость.
+> **Не повторять** закрытые security/docs PR, не затрагивать чужие ветки;
+> не принимать отсутствие исключений/успех CI за разрешение provider writes.
+> Отдельное действие владельца: отозвать cookies из истории приватного
+> `sermon_MP3_bot` после [#1](https://github.com/FedorMilovanov/sermon_MP3_bot/pull/1).
+> Профиль [опубликован](https://github.com/FedorMilovanov/FedorMilovanov), RU/EN и аудит связаны из README; descriptions/topics **12/12**, homepage **5/5**, Dependabot Alerts **17/17**, защищены **15/16 существующих `main`**. Исключение — приватный `sermon_MP3_bot` (GitHub `403` из-за тарифа), пустой `baptist---2` не имеет ветки. Эти операции не повторять.
+> Account bio/website и pins остаются UI/`user`-scope; старые cookies `sermon_MP3_bot` должен отозвать владелец у провайдера. Не создавать пустые docs и не архивировать `baptist*` автоматически.
+> В `main` уже смержены самостоятельные portfolio/security PR: [gb-vosk-tts #3](https://github.com/FedorMilovanov/gb-vosk-tts/pull/3), [Milovi_School #50](https://github.com/FedorMilovanov/Milovi_School/pull/50) и security [#52](https://github.com/FedorMilovanov/Milovi_School/pull/52), [Milovi_Cake #138](https://github.com/FedorMilovanov/Milovi_Cake/pull/138), [bible-bot #187](https://github.com/FedorMilovanov/bible-bot/pull/187), [AuditRepo #513](https://github.com/FedorMilovanov/AuditRepo/pull/513). **Не повторять эту волну**; у AuditRepo сохранён тестируемый root allowlist, а не безусловное разрешение новых корневых документов.
+> Dependabot Alerts включены 17/17, но **2 Astro CVE в gb-is-my-strength ещё открыты**. У [#2244](https://github.com/FedorMilovanov/gb-is-my-strength/pull/2244) единый ранний fail: pinned Astro 7.2.9 / Markdown Satteri 0.3.8. Без owner-approved SYSTEM scope и нового доказательного Satteri contract нельзя сливать красный Dependabot или обходить guard.
+> Source ≠ live: Milovi School `/release.json` подтверждён exact `dd4d98e`; Milovi Cake live во время 03.11 проверки ещё показывал прежний `c60a9248` после source merge `7891708`, Pages deploy шёл. Bible bot post-merge GitHub checks зелёные, но внешний Render/Telegram acceptance не заявлен. Не объявлять завершение production без exact witness.
+> Числа `METRICS.csv` — **исторический срез 01.11**, не live-счётчики.
 **Контекст:** [`AUDIT_RU.md`](AUDIT_RU.md), [`HISTORY_AND_PRINCIPLES.md`](HISTORY_AND_PRINCIPLES.md), [`PORTFOLIO_RU.md`](PORTFOLIO_RU.md).
 
 ---

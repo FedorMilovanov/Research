@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "catalogId": "SUNO-HYMNS-TRACK-CATALOG-V1",
-  "asOf": "2026-10-26",
+  "asOf": "2026-11-03",
   "scope": "Project-local inventory based on conversation records; not an exhaustive scan of the owner's computer, local storage or public channels.",
   "stateBoundary": "Production state and public publication status are separate. This catalog does not replace the root Research evidence policy.",
   "statusVocabulary": {
@@ -749,6 +749,79 @@
         "Open Cosgrove 2006, 266–268, on the manuscript that lacks the hymn (MUSE serves it only behind a captcha).",
         "Collate the Greek against Marcovich 2002 or Stählin/Treu GCS 12, 291–292; settle ἀρνῶν / ἀμνῶν and the infinitive / participle reading.",
         "Settle the line count (66 vs 64) and the reference form (Paed. 3.101 vs 3.12.101.4) before any text work."
+      ]
+    },
+    {
+      "id": "PHOS-008",
+      "displayTitle": "Veni redemptor gentium (кандидат, досье готово; текста для пения нет)",
+      "displayTitleStatus": "WORKING_TITLE_NOT_OWNER_APPROVED",
+      "originalTitleVariants": [
+        "Veni redemptor gentium",
+        "Veni, redemptor gentium",
+        "Intende, qui regis Israel (открывающая строка восьмистрофной формы)",
+        "Nun komm, der Heiden Heiland (немецкий перевод Лютера, 1523)",
+        "Приди, Искупитель народов"
+      ],
+      "historicalAuthor": {
+        "name": "Ambrose of Milan",
+        "years": "ок. 339/40 – 397",
+        "role": "author, named by two contemporary witnesses"
+      },
+      "textCategory": "Latin hymn in the Ambrosian stanza: iambic dimeter, four lines of eight syllables, eight stanzas in the oldest witness and seven in the received form. Christological address for the Nativity; stanzas 1 is a paraphrase of Psalm 79:2–3, stanzas 2–8 are not scriptural.",
+      "sourceChain": [
+        "Latin text of the eight stanzas, in the transmission of Hymnology Archive resting on the edition of Fontaine (1992, 266–275) — SRC-PHOS-VRG-FONTAINE, not collated against a critical edition",
+        "Augustine, Sermon 372, quoting stanza 6 and naming Ambrose — SRC-PHOS-VRG-AUG372, read in quotation",
+        "Celestine I, council of Rome, 430, quoting stanza 2 — SRC-PHOS-VRG-CELEST430, read in quotation",
+        "Manuscripts named but not seen in facsimile: Vat. Reg. lat. 11 fol. 233r (8 stanzas), Düsseldorf MS B-3 fol. 269r (7 stanzas)",
+        "Melody question settled negatively on GRMS 5/1 (2017), 104–122 — read in abstract and excerpts"
+      ],
+      "tuneDirection": "No historical melody is available, and the reason is documented rather than assumed: ancient notation fell out of use in the 6th century and the melodies were transmitted orally until the 10th, so the written forms carry neumes without rhythmical values and with melismata that mirror the taste of each monastic community. The surviving plainsong (Einsiedeln Cod. 121, ca. 1120, onwards) is roughly seven centuries younger than the text and is melismatic; taking it would trade authenticity for the appearance of it. The working direction is therefore a NEW syllabic melody, one note per syllable, set to Ambrose's own metre.",
+      "structure": {
+        "lines": 32,
+        "stanzas": 8,
+        "linesPerStanza": 4,
+        "note": "Eight stanzas of four lines in the oldest witness (Vat. Reg. lat. 11); seven in the form the tradition settled on from the 9th century (Düsseldorf MS B-3). The dossier recommends seven, stanzas 2–8. Unlike PHOS-001, the metre is strict and authentic — iambic dimeter, eight syllables a line — so a strophic melody, one for all stanzas, is possible here and was not there.",
+        "source": "the eight stanzas as transmitted; the seven-stanza count from Düsseldorf MS B-3 as described"
+      },
+      "productionState": "RESEARCH_IN_PROGRESS",
+      "publicPublicationStatus": "UNKNOWN_NOT_VERIFIED",
+      "promptCapture": "NOT_CAPTURED",
+      "authorId": "AMBR-001",
+      "workType": "ANCIENT_LATIN_HYMN",
+      "sourceIds": [
+        "SRC-PHOS-VRG-AUG372",
+        "SRC-PHOS-VRG-CELEST430",
+        "SRC-PHOS-VRG-FONTAINE",
+        "SRC-PHOS-VRG-VATREG11",
+        "SRC-PHOS-VRG-B3",
+        "SRC-PHOS-VRG-GRMS2017",
+        "SRC-PHOS-VRG-BNF12044",
+        "SRC-PHOS-VRG-BNF15181",
+        "SRC-PHOS-VRG-EINS121"
+      ],
+      "claimIds": [
+        "CLM-PHOS-VRG-WORSHIP-WITNESS",
+        "CLM-PHOS-VRG-MELODY-LOST",
+        "CLM-PHOS-VRG-STANZA-1-PSALM",
+        "CLM-PHOS-VRG-SEVEN-STANZAS",
+        "CLM-PHOS-VRG-SMITH-PART-3-OPEN",
+        "CLM-PHOS-VRG-NO-ADDITIONS",
+        "CLM-PHOS-VRG-SERM372-AUTHORSHIP",
+        "CLM-PHOS-VRG-ATTRIBUTION-WIDER",
+        "CLM-PHOS-VRG-QUOTATION-EXTENT"
+      ],
+      "qaStatus": "OPEN",
+      "textChainNote": "The first work in the series whose witness of singing is neither a manuscript nor an inference but a preacher addressing a congregation that sang the hymn minutes earlier, and naming the author. Both halves of the Smith criterion meet here: the text survives and the singing is witnessed. What does NOT survive is the melody, and that is a documented fact, not a modest disclaimer. The dossier answers the owner's question: the most authentic form is achievable and needs no additions — stanzas 2–8, a new syllabic melody on Ambrose's metre, unison, no doxology, no refrain, no new words.",
+      "openChecks": [
+        "Owner decides the extent: seven stanzas (2–8, as in the witnesses from the 9th century) or eight with the psalm stanza and a stated caveat. The dossier recommends seven.",
+        "Owner decides the language: Latin, the language of the original, or Russian, the language of the channel. Every other number in the series is sung in Russian.",
+        "Owner confirms that no additions are needed, or names what is lost without them.",
+        "Collate the Latin against Fontaine 1992 or another critical edition; the text currently rests on one transmission (ARCHIVE_HOLD).",
+        "Open Vat. Reg. lat. 11 fol. 233r and Düsseldorf MS B-3 fol. 269r in facsimile; neither has been seen (LOCATOR_HOLD).",
+        "Close the third part of the Smith criterion by reading the whole hymn against its psalmodic sources, stanza by stanza (CLM-PHOS-VRG-SMITH-PART-3-OPEN).",
+        "Read GRMS 5/1 (2017), 104–122 in full; only the abstract and excerpts have been read.",
+        "No Russian translation exists; none is written before the owner decides the language.",
+        "Владелец решает по третьей части критерия Смита: гимн несёт псалмовую структуру (строфы 1 и 5 по Фонтену); семистрофная форма убирает одну из двух опор — достаточно ли этого (CLM-PHOS-VRG-SMITH-PART-3-OPEN)."
       ]
     }
   ],
