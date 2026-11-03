@@ -807,7 +807,8 @@
         "CLM-PHOS-VRG-SMITH-PART-3-OPEN",
         "CLM-PHOS-VRG-NO-ADDITIONS",
         "CLM-PHOS-VRG-SERM372-AUTHORSHIP",
-        "CLM-PHOS-VRG-ATTRIBUTION-WIDER"
+        "CLM-PHOS-VRG-ATTRIBUTION-WIDER",
+        "CLM-PHOS-VRG-QUOTATION-EXTENT"
       ],
       "qaStatus": "OPEN",
       "textChainNote": "The first work in the series whose witness of singing is neither a manuscript nor an inference but a preacher addressing a congregation that sang the hymn minutes earlier, and naming the author. Both halves of the Smith criterion meet here: the text survives and the singing is witnessed. What does NOT survive is the melody, and that is a documented fact, not a modest disclaimer. The dossier answers the owner's question: the most authentic form is achievable and needs no additions — stanzas 2–8, a new syllabic melody on Ambrose's metre, unison, no doxology, no refrain, no new words.",
@@ -820,7 +821,7 @@
         "Close the third part of the Smith criterion by reading the whole hymn against its psalmodic sources, stanza by stanza (CLM-PHOS-VRG-SMITH-PART-3-OPEN).",
         "Read GRMS 5/1 (2017), 104–122 in full; only the abstract and excerpts have been read.",
         "No Russian translation exists; none is written before the owner decides the language.",
-        "Разрешить разночтение объёма цитаты из проповеди 372: одна строфа или три (§ 2.1)."
+        "Владелец решает по третьей части критерия Смита: гимн несёт псалмовую структуру (строфы 1 и 5 по Фонтену); семистрофная форма убирает одну из двух опор — достаточно ли этого (CLM-PHOS-VRG-SMITH-PART-3-OPEN)."
       ]
     }
   ],
