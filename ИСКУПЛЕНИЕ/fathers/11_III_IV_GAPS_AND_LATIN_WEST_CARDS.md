@@ -161,23 +161,23 @@
 
 ---
 
-## GRG-1. Григорий Великий (ок. 540–604), *Moralia in Iob* — уничижение и победа «без цены»
+## GRG-1. Григорий Великий (ок. 540–604), *Moralia in Iob* — уничижение и победа «без оценки» (*sine aestimatione*)
 
-**Канал:** *Morals on the Book of Job by S. Gregory the Great*, vol. 1 (Books I–XII, Part I), trans. [Bliss], Oxford 1844 — archive.org item `moralsonbookofjo01greguoft` (host `ia601405`); PD (OUP pre-1928).
-**Локусы (скан-листы):** 44, 166, 168, 207 (точные листы даны по полнотекстовому поиску внутри скана; печатные страницы и PL-колонки — `LOCATOR_HOLD`).
+**Канал:** *Morals on the Book of Job by S. Gregory the Great*, vol. 1 (Books I–XII, Part I), trans. [Bliss], Oxford 1844 — archive.org item `moralsonbookofjo01greguoft` (host `ia601405`); PD (OUP pre-1928); **латинская сверка (волна 9, 2026-11-03):** `OpenGreekAndLatin/patrologia_latina-dev` (`8c651f85…`), `volumes/PL75/PL75.xml` (выверенный TEI-XML Лейпцигского ун-та, A1 / STORAGE_ONLY, CC BY-SA 4.0; колонки PL 75 и страницы мавристского изд. т. I).
+**Уточнение волны 9 — SUPERSEDED для неточного пересказа л. 44:** прежняя запись л. 44 контаминировала два соседних предложения Bliss (с. 26) в несуществующую прямую цитату и трактовала «without price» как `*sine pretio*`. По `PL75.xml` (кол. 524C, маврист. т. I, с. 42, *Mor.* I.24.33 на Иов. 1:19) у Григория стоит **`sine aestimatione`** («превыше оценки / бесценное» благословение, принятое избранными, и дело воплощения/искупления, в котором причастны все), а нулевое вхождение английского существительного «ransom» в т. 1 объясняется тем, что Bliss передаёт глагольное `redimendo / redimeret` через «redemption / redeem», а не отсутствием самой лексики искупления в латыни.
 
-| Лист | Цитата (Bliss, 1844) | Значение |
+| Лист Bliss (печ. с.) | Латинский оригинал (`PL75.xml`, кол. PL 75 / маврист. т. I) | Перевод Bliss (1844) и значение |
 |---|---|---|
-| 44 | «The Only-begotten was made Man **without price** [without a price]… that all were partakers of the gift of His Incarnation» | уничижение (kenosis) как дар «без цены» — **не** выкуп-платёж |
-| 166 | «He took upon Him the **form of accursed man in the work of their redemption**» | уничижение в форме проклятого человека ради искупления |
-| 168 | «…given up into the hands of Satan… that **He might set us free both outwardly and inwardly**» | отдание во власть сатаны (Иов 2:6) — не платёж ему, а путь к освобождению изнутри и извне |
-| 207 | «the apostate angel… was **driven down to a farther depth**» | победа над отступником = унижение его (не сделка с ним) |
+| 44 (с. 26) | *Mor.* I.24.33 (кол. 524C, с. 42): `quod et sine aestimatione dabatur percipi, et sine fine retineri… in redemptione communi` | обетованный дар «воспринимается без оценки» (*without price* = `sine aestimatione`, не `*sine pretio*`) в «общем искуплении» (`in redemptione communi`) |
+| 166 (с. 148) | *Mor.* III.14.26 (кол. 612B, с. 121): `nisi ipse formam damnati hominis redimendo sumpsisset` | «Он принял образ осуждённого человека ради искупления» (*in the work of their redemption* = герундий `redimendo`) |
+| 168 (с. 150) | *Mor.* III.16.29 (кол. 614A, с. 122): `ejus manum juxta carnem pertulit… ut… intus forisque liberaret` | перенёс руку сатаны по плоти (Иов. 2:6) не как платёж кредитору, а чтобы освободить нас изнутри и извне |
+| 207 (с. 189) | *Mor.* IV.3.8 (кол. 642B, с. 147): `Misertus ergo creator ut redimeret… apostatam angelum repellere` | победа Творца ради искупления — оттеснение падшего ангела глубже, а не сделка с ним |
 
 **Жанр:** экзегетико-аскетический комментарий (моралии на Иова).
-**Что утверждает:** уничижение Сына как дар (без «цены», уплачиваемой диаволу или Отцу); Христос принимает форму проклятого человека; сатана — субъект, которого «сгоняют глубже», а не кредитор.
-**Что не утверждает:** полнотекстовый поиск по тому: **«ransom» = 0 вхождений**, «price paid to the devil» = 0, «satisfaction» (в юридическом смысле) = 0. В языке *Moralia* vol. 1 — искупление через уничижение-победу, не через платёж.
-**Анахронизм (важно):** читать *Moralia* как «выкуп диаволу» — противоречит тексту; как «удовлетворение правосудия Отца» — противоречит тексту (термина нет); как «удовлетворение по Анзельму» — тем более (Ансельм = XII в.).
-**Пометки:** `LOCATOR_HOLD` (книга/глава/PL); `ORIGINAL_TEXT_HOLD` (латынь PL 75–76 не сверена); перевод XIX в. — проверен по оригинальному английскому Bliss 1844, но не по латинскому оригиналу Григория.
+**Что утверждает:** по выверенной латыни PL 75 Григорий сочетает глагольную лексику искупления (`redimendo`, `ut redimeret`, `in redemptione communi`) с кенотическим принятием `formam damnati hominis` и победным оттеснением сатаны (`repellere`), а оборот `sine aestimatione` описывает неоценимость дара, а не полемику против цены выкупа.
+**Что не утверждает:** полнотекстовый поиск по английскому тому: **«ransom» = 0 вхождений**, «price paid to the devil» = 0, «satisfaction» (в юридическом смысле) = 0; однако из нуля английского существительного «ransom» нельзя выводить отсутствие латинского `redimere` (оно прямо присутствует на кол. 524C, 612B, 642B).
+**Анахронизм (важно):** читать *Moralia* как «выкуп по праву диавола» — противоречит тексту; как «удовлетворение по Анзельму» — тем более (Ансельм = XII в.); равно ошибочно превращать `sine aestimatione` в отрицание всякой искупительной цены.
+**Пометки:** латинский текст PL 75 (кол. 524C, 612B, 614A, 642B) сверен по выверенному TEI `PL75.xml` (A1 / STORAGE_ONLY, [контроли волны 9](../evidence/source_controls_wave9_2026-11-03.json)); графический скан самого печатного тома PL 75 и т. 2–3 *Moralia* остаются вне приёмки этой волны (`LOCATOR_HOLD` для печатного скана PL 75; `PUBLICATION_HOLD`).
 
 ---
 

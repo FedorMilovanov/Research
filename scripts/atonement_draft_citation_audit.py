@@ -15,7 +15,7 @@
 
 Почему нужен внешний файл. В репозитории лежит только карта прав на Писание
 (BIBLE_CORPUS/00_…), самого текста нет. Поэтому текст подаётся через --bible в формате
-TSV: книга<TAB>сокращение<TAB>глава<TAB>стих<TAB>номер<TAB>текст. Такой формат отдаёт,
+TSV: книга<TAB>сокращение<TAB>номер книги<TAB>глава<TAB>стих<TAB>текст. Такой формат отдаёт,
 например, открытая транскрипция github.com/alexbkv/syn (Unlicense). Транскрипция — не
 печатное издание: её согласие с печатным Синодальным на цитируемых стихах проверяется
 отдельно, и в отчёте это записывается числом проверенных стихов.
@@ -36,13 +36,19 @@ TSV: книга<TAB>сокращение<TAB>глава<TAB>стих<TAB>ном�
   PARSE_FAIL          адрес найден, но не разобран.
 
 Команды:
-  --check   код 1, если есть MISMATCH/VERSE_MISSING/PARSE_FAIL (EXACT и SEGMENTS — норма);
-  --write   записать отчёт JSON в --json (по умолчанию evidence-файл круга).
+  --check   код 1 при неподтверждённой цитате, в том числе NO_REF;
+  --json    записать отчёт по указанному пути, с датой --as-of (по умолчанию сегодня).
+
+Пустой набор цитат, пустой свод и повторённое имя свидетеля — ошибка входа,
+не успешная проверка. Проверяется совпадение слов/сегментов, не типографики,
+экзегезы, печатной страницы или независимости текстовых свидетелей.
 """
 
 from __future__ import annotations
 
 import argparse
+from datetime import date
+import hashlib
 import json
 import re
 import sys
@@ -98,7 +104,11 @@ def load_bible(path: Path) -> dict[tuple[str, int, int], str]:
                 key = (abbr, int(ch), int(vs))
             except ValueError:
                 continue
+            if key in verses:
+                raise ValueError(f"повторный адрес {key} в {path}")
             verses[key] = text.strip()
+    if not verses:
+        raise ValueError(f"пустой или нераспознанный свод: {path}")
     return verses
 
 
@@ -121,6 +131,8 @@ def parse_ref(ref: str):
     ch = int(m.group(2))
     first = int(m.group(3))
     last = int(m.group(4)) if m.group(4) else first
+    if ch < 1 or first < 1 or last < first:
+        return None
     return book, ch, first, last
 
 
@@ -146,16 +158,16 @@ def check_quote(quote: str, text: str) -> tuple[str, list[str]]:
     if len(segments) == 1:
         # Одиночный фрагмент: сверяем сегмент, а не строку с многоточием —
         # иначе цитата «…» на конце всегда считалась бы расхождением.
-        if segments[0] in norm_text:
+        if re.search(r"(?<!\S)" + re.escape(segments[0]) + r"(?!\S)", norm_text):
             return "EXACT", []
         return "MISMATCH", segments
     pos, missing = 0, []
     for seg in segments:
-        idx = norm_text.find(seg, pos)
-        if idx < 0:
+        match = re.compile(r"(?<!\S)" + re.escape(seg) + r"(?!\S)").search(norm_text, pos)
+        if match is None:
             missing.append(seg)
         else:
-            pos = idx + len(seg)
+            pos = match.end()
     if missing:
         return "MISMATCH", missing
     return "SEGMENTS", []
@@ -200,28 +212,17 @@ def collect(drafts: Path):
     return out
 
 
-def main(argv=None) -> int:
-    ap = argparse.ArgumentParser(
-        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
-    )
-    ap.add_argument("--drafts", default="ИСКУПЛЕНИЕ/synthesis/drafts")
-    ap.add_argument(
-        "--bible",
-        action="append",
-        required=True,
-        help=(
-            "TSV Синодального; можно указать дважды (две независимые транскрипции). "
-            "4 колонки: сокр., глава, стих, текст; 6 колонок: книга, сокр., № книги, глава, стих, текст"
-        ),
-    )
-    ap.add_argument("--json", default=None, help="куда записать отчёт JSON")
-    ap.add_argument("--check", action="store_true", help="код 1 при расхождениях цитат")
-    ap.add_argument("--print-all", action="store_true", help="печатать и совпадения")
-    args = ap.parse_args(argv)
+def audit_quotes(drafts: Path, corpora: list[tuple[str, dict]]) -> list[dict]:
+    """Read-only audit against named witnesses; suitable for offline pinned controls."""
+    names = [name for name, _ in corpora]
+    if not names or len(set(names)) != len(names):
+        raise ValueError("нужны непустые своды с уникальными именами свидетелей")
+    if any(not verses for _, verses in corpora):
+        raise ValueError("пустой текстовый свидетель")
+    rows = collect(drafts)
 
-    corpora = [(Path(b).name, load_bible(Path(b))) for b in args.bible]
-    rows = collect(Path(args.drafts))
-
+    if not rows:
+        raise ValueError("не найдено ни одной помеченной цитаты: пустая проверка запрещена")
     good = {"EXACT", "SEGMENTS", "RANGE"}
     report = []
     for row in rows:
@@ -254,7 +255,7 @@ def main(argv=None) -> int:
             status = "SOURCE_CONFLICT"
         else:
             status = "NO_SOURCE_SUPPORTS"
-        if "VERSE_MISSING" in statuses and "NO_SOURCE_SUPPORTS" not in statuses:
+        if "VERSE_MISSING" in statuses:
             status = "VERSE_MISSING"
 
         missing = []
@@ -269,6 +270,39 @@ def main(argv=None) -> int:
         )
         report.append(row)
 
+    return report
+
+
+def main(argv=None) -> int:
+    ap = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
+    ap.add_argument("--drafts", default="ИСКУПЛЕНИЕ/synthesis/drafts")
+    ap.add_argument(
+        "--bible",
+        action="append",
+        required=True,
+        help=(
+            "TSV Синодального; можно указать несколько цифровых свидетелей. "
+            "4 колонки: сокр., глава, стих, текст; 6 колонок: книга, сокр., № книги, глава, стих, текст"
+        ),
+    )
+    ap.add_argument("--json", default=None, help="куда записать отчёт JSON")
+    ap.add_argument("--check", action="store_true", help="код 1 при расхождениях цитат")
+    ap.add_argument("--print-all", action="store_true", help="печатать и совпадения")
+    ap.add_argument("--as-of", default=date.today().isoformat(), help="дата отчёта YYYY-MM-DD")
+    args = ap.parse_args(argv)
+    try:
+        date.fromisoformat(args.as_of)
+    except ValueError:
+        ap.error("--as-of: нужна дата YYYY-MM-DD")
+
+    try:
+        corpora = [(Path(b).name, load_bible(Path(b))) for b in args.bible]
+        report = audit_quotes(Path(args.drafts), corpora)
+    except (OSError, ValueError) as exc:
+        ap.error(str(exc))
+
     counts: dict[str, int] = {}
     for r in report:
         counts[r["status"]] = counts.get(r["status"], 0) + 1
@@ -276,7 +310,7 @@ def main(argv=None) -> int:
     print(f"цитат с пометкой Синодального: {len(report)}")
     for k in sorted(counts):
         print(f"  {k}: {counts[k]}")
-    bad = [r for r in report if r["status"] not in ("CONFIRMED", "CONFIRMED_MULTI", "NO_REF")]
+    bad = [r for r in report if r["status"] not in ("CONFIRMED", "CONFIRMED_MULTI")]
     for r in report:
         if r["status"] not in ("CONFIRMED", "CONFIRMED_MULTI") or args.print_all:
             print(f"\n[{r['status']}] {r['file']}:{r['line']}  ({r['ref_raw']})")
@@ -290,9 +324,9 @@ def main(argv=None) -> int:
 
     if args.json:
         payload = {
-            "generated": "2026-10-30",
+            "generated": args.as_of,
             "drafts": args.drafts,
-            "bibles": [str(b) for b in args.bible],
+            "bibles": [{"path": str(b), "sha256": hashlib.sha256(Path(b).read_bytes()).hexdigest()} for b in args.bible],
             "method": (
                 "Каждый фрагмент в «ёлочках» с пометкой «Синодальный» сверяется с текстом стиха "
                 "в каждой поданной транскрипции; расхождение считается установленным только там, "

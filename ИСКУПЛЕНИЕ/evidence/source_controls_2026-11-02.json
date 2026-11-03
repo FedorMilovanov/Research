@@ -1,0 +1,1787 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2026-11-02",
+  "scope": "Digital verse controls, not full printed-edition verification or theological adjudication.",
+  "independence": "RST describes Logos/RBO ancestry; RSB describes bible.by ancestry. Independence beyond those declarations is not proved. The 2026-10-30 bible.by checks are not a third independent witness to RSB.",
+  "publicationEligible": false,
+  "rightsNote": "Russian witness READMEs declare public-domain text. MorphGNT README distinguishes SBLGNT text terms from CC BY-SA 3.0 morphology. No complete source object is committed; Product rights are not cleared by this research control.",
+  "sources": {
+    "rst": {
+      "repository": "onlydotbible/rst",
+      "commit": "00ae4ffbd7a4ac1fb70ebb941109439316e4f5c9",
+      "url": "https://github.com/onlydotbible/rst/tree/00ae4ffbd7a4ac1fb70ebb941109439316e4f5c9",
+      "evidenceClass": "A1",
+      "evidenceClassScope": "Primary witness to the text of this digital transcription, not to its genealogy or a theological conclusion.",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "objectScope": "Pinned digital source tree acquired in full; retained source-file bytes are hashed. Not a claim to have read the entire Bible or inspected printed pages.",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "locatorScope": "Verse and source path in the identified digital version only.",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "rightsScope": "Upstream declarations are recorded above; separate corpus-specific Product clearance has not been established.",
+      "publicationState": "BLOCKED",
+      "publicationScope": "Product promotion is not authorized by this Research control.",
+      "printedPageCheck": false,
+      "files": {
+        "README.md": {
+          "sha256": "6d0de48c3a0ddc8f22e91c16ee68f2cb69f4cd91e648258a4fa5e92b5cc465da",
+          "bytes": 5210
+        },
+        "parsed66/03-leviticus.dat": {
+          "sha256": "a7f8266451c72493eedef5b152b00227d829f8481f85c19588e6d088084cc854",
+          "bytes": 188424
+        },
+        "parsed66/23-psalms.dat": {
+          "sha256": "bea1f3eca600fafd0babff15b30ad2c06c87204e563bfe866e6a9e1c4f21bcff",
+          "bytes": 354400
+        },
+        "parsed66/29-isaiah.dat": {
+          "sha256": "1d4621aa4900cf1877737b4c8833c37f361055b13b50829fb52ba411edaba20b",
+          "bytes": 291082
+        },
+        "parsed66/42-nahum.dat": {
+          "sha256": "3a035738290f70320d7ba76b9ac98abfb1db95e99622dfd53a3861078dd12c12",
+          "bytes": 10271
+        },
+        "parsed66/52-matthew.dat": {
+          "sha256": "27fb6e6ee161424adc62ee1295e2c2b0bf1bec79653fc9d1e68aa4684cdeb767",
+          "bytes": 190097
+        },
+        "parsed66/53-mark.dat": {
+          "sha256": "e9aab52c3e4b9a5fbd22a4f931c4398210b0e01a344bc30be9a62c79c8ca8c39",
+          "bytes": 118916
+        },
+        "parsed66/55-john.dat": {
+          "sha256": "f2029217d4299063f383b9ec6c8c6b1a47f8fac89097b9f44a10be25b12162d1",
+          "bytes": 152078
+        },
+        "parsed66/56-acts.dat": {
+          "sha256": "e16ea76602769999e855d4479b9b3972a9b24fd8922bbd4886d0f6c9b0d39a87",
+          "bytes": 199050
+        },
+        "parsed66/58-1peter.dat": {
+          "sha256": "237eff3286a65863035b3b4614064bcf9942f1dedcb6a72023fdc2467c9103cf",
+          "bytes": 20802
+        },
+        "parsed66/59-2peter.dat": {
+          "sha256": "69802725617a238995bb56bc60f9be5af5f77a7e0ed0429c64df4da0405caa71",
+          "bytes": 13353
+        },
+        "parsed66/60-1john.dat": {
+          "sha256": "7673c442ae295355fa500bba4bcc3496a20a73d20bc9ad99ff37560060845801",
+          "bytes": 20295
+        },
+        "parsed66/64-romans.dat": {
+          "sha256": "d00799110e711bdcd91ea14d7c6ccfc1775bf15594e421ac15833ccd0d8bc4ab",
+          "bytes": 78805
+        },
+        "parsed66/66-2corinthians.dat": {
+          "sha256": "3d57484b9ea93ae9e5b35e0e930900ac436dd47e4e29e9761b8616eb38315d8b",
+          "bytes": 50410
+        },
+        "parsed66/67-galatians.dat": {
+          "sha256": "ee5eb8a78c81cad80a8bb9e02bdaf52db2c87fcf424c460d7603b8b8f658b45d",
+          "bytes": 25525
+        },
+        "parsed66/68-ephesians.dat": {
+          "sha256": "b688aa93b0f8dddd7a2780c0ee9fe78f67b82dbdd5742c0122de04f03e97927b",
+          "bytes": 25246
+        },
+        "parsed66/70-colossians.dat": {
+          "sha256": "9d42dbfd6a91f0777405a15969da7877adaa0d047ac0f58b05a7ddb2c1a10c90",
+          "bytes": 17129
+        },
+        "parsed66/71-1thessalonians.dat": {
+          "sha256": "28448eac7573611c7e6dceb00fec0f3add895ee6e5aea7d55bd59b3518243332",
+          "bytes": 15688
+        },
+        "parsed66/73-1timothy.dat": {
+          "sha256": "43140a1fda8ed4575f6cda76c4752cb93511da8e9e01ff48f5d1f355e8400e33",
+          "bytes": 20639
+        },
+        "parsed66/75-titus.dat": {
+          "sha256": "ffd3a18158c15f1856276c258a93b416f2fa7999add6be862f6dab5ef9631c7a",
+          "bytes": 8441
+        },
+        "parsed66/77-hebrews.dat": {
+          "sha256": "c84c6dd776ac0f01dc6a66dde20d3131a1fa27b317c71cbcb0dbc23373095f70",
+          "bytes": 58322
+        },
+        "parsed66/description.yaml": {
+          "sha256": "7e4c7f2dd80fbeb0f38432ed1c19b87dc10436381a83fbbd4a1ca355b09a8999",
+          "bytes": 10056
+        }
+      },
+      "chapterVerseNumbers": {
+        "Тит|2": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "verses": [
+        {
+          "book": "1Ин",
+          "chapter": 2,
+          "verse": 2,
+          "text": "Он есть умилостивление за грехи наши, и не только за наши, но и за грехи всего мира.",
+          "sourceFile": "parsed66/60-1john.dat"
+        },
+        {
+          "book": "1Ин",
+          "chapter": 4,
+          "verse": 10,
+          "text": "В том любовь, что не мы возлюбили Бога, но Он возлюбил нас и послал Сына Своего в умилостивление за грехи наши.",
+          "sourceFile": "parsed66/60-1john.dat"
+        },
+        {
+          "book": "1Пет",
+          "chapter": 1,
+          "verse": 2,
+          "text": "по предведению Бога Отца, при освящении от Духа, к послушанию и окроплению Кровию Иисуса Христа: благодать вам и мир да умножится.",
+          "sourceFile": "parsed66/58-1peter.dat"
+        },
+        {
+          "book": "1Пет",
+          "chapter": 2,
+          "verse": 24,
+          "text": "Он грехи наши Сам вознес телом Своим на древо, дабы мы, избавившись от грехов, жили для правды: ранами Его вы исцелились.",
+          "sourceFile": "parsed66/58-1peter.dat"
+        },
+        {
+          "book": "1Тим",
+          "chapter": 2,
+          "verse": 1,
+          "text": "Итак, прежде всего прошу совершать молитвы, прошения, моления, благодарения за всех человеков,",
+          "sourceFile": "parsed66/73-1timothy.dat"
+        },
+        {
+          "book": "1Тим",
+          "chapter": 2,
+          "verse": 2,
+          "text": "за царей и за всех начальствующих, дабы проводить нам жизнь тихую и безмятежную во всяком благочестии и чистоте,",
+          "sourceFile": "parsed66/73-1timothy.dat"
+        },
+        {
+          "book": "1Тим",
+          "chapter": 2,
+          "verse": 3,
+          "text": "ибо это хорошо и угодно Спасителю нашему Богу,",
+          "sourceFile": "parsed66/73-1timothy.dat"
+        },
+        {
+          "book": "1Тим",
+          "chapter": 2,
+          "verse": 4,
+          "text": "Который хочет, чтобы все люди спаслись и достигли познания истины.",
+          "sourceFile": "parsed66/73-1timothy.dat"
+        },
+        {
+          "book": "1Тим",
+          "chapter": 2,
+          "verse": 5,
+          "text": "Ибо един Бог, един и посредник между Богом и человеками, человек Христос Иисус,",
+          "sourceFile": "parsed66/73-1timothy.dat"
+        },
+        {
+          "book": "1Тим",
+          "chapter": 2,
+          "verse": 6,
+          "text": "предавший Себя для искупления всех. Таково было в свое время свидетельство,",
+          "sourceFile": "parsed66/73-1timothy.dat"
+        },
+        {
+          "book": "1Тим",
+          "chapter": 4,
+          "verse": 10,
+          "text": "Ибо мы для того и трудимся и поношения терпим, что уповаем на Бога живого, Который есть Спаситель всех человеков, а наипаче верных.",
+          "sourceFile": "parsed66/73-1timothy.dat"
+        },
+        {
+          "book": "1Фес",
+          "chapter": 4,
+          "verse": 3,
+          "text": "Ибо воля Божия есть освящение ваше, чтобы вы воздерживались от блуда;",
+          "sourceFile": "parsed66/71-1thessalonians.dat"
+        },
+        {
+          "book": "2Кор",
+          "chapter": 5,
+          "verse": 14,
+          "text": "Ибо любовь Христова объемлет нас, рассуждающих так: если один умер за всех, то все умерли.",
+          "sourceFile": "parsed66/66-2corinthians.dat"
+        },
+        {
+          "book": "2Кор",
+          "chapter": 5,
+          "verse": 15,
+          "text": "А Христос за всех умер, чтобы живущие уже не для себя жили, но для умершего за них и воскресшего.",
+          "sourceFile": "parsed66/66-2corinthians.dat"
+        },
+        {
+          "book": "2Кор",
+          "chapter": 5,
+          "verse": 16,
+          "text": "Потому отныне мы никого не знаем по плоти; если же и знали Христа по плоти, то ныне уже не знаем.",
+          "sourceFile": "parsed66/66-2corinthians.dat"
+        },
+        {
+          "book": "2Кор",
+          "chapter": 5,
+          "verse": 17,
+          "text": "Итак, кто во Христе, тот новая тварь; древнее прошло, теперь все новое.",
+          "sourceFile": "parsed66/66-2corinthians.dat"
+        },
+        {
+          "book": "2Кор",
+          "chapter": 5,
+          "verse": 18,
+          "text": "Все же от Бога, Иисусом Христом примирившего нас с Собою и давшего нам служение примирения,",
+          "sourceFile": "parsed66/66-2corinthians.dat"
+        },
+        {
+          "book": "2Кор",
+          "chapter": 5,
+          "verse": 19,
+          "text": "потому что Бог во Христе примирил с Собою мир, не вменяя людям преступлений их, и дал нам слово примирения.",
+          "sourceFile": "parsed66/66-2corinthians.dat"
+        },
+        {
+          "book": "2Кор",
+          "chapter": 5,
+          "verse": 20,
+          "text": "Итак, мы — посланники от имени Христова, и как бы Сам Бог увещевает через нас; от имени Христова просим: примиритесь с Богом.",
+          "sourceFile": "parsed66/66-2corinthians.dat"
+        },
+        {
+          "book": "2Кор",
+          "chapter": 5,
+          "verse": 21,
+          "text": "Ибо не знавшего греха Он сделал для нас жертвою за грех, чтобы мы в Нем сделались праведными пред Богом.",
+          "sourceFile": "parsed66/66-2corinthians.dat"
+        },
+        {
+          "book": "2Пет",
+          "chapter": 2,
+          "verse": 1,
+          "text": "Были и лжепророки в народе, как и у вас будут лжеучители, которые введут пагубные ереси и, отвергаясь искупившего их Господа, навлекут сами на себя скорую погибель.",
+          "sourceFile": "parsed66/59-2peter.dat"
+        },
+        {
+          "book": "Гал",
+          "chapter": 3,
+          "verse": 13,
+          "text": "Христос искупил нас от клятвы закона, сделавшись за нас клятвою (ибо написано: «проклят всяк, висящий на древе»),",
+          "sourceFile": "parsed66/67-galatians.dat"
+        },
+        {
+          "book": "Деян",
+          "chapter": 17,
+          "verse": 30,
+          "text": "Итак, оставляя времена неведения, Бог ныне повелевает людям всем повсюду покаяться,",
+          "sourceFile": "parsed66/56-acts.dat"
+        },
+        {
+          "book": "Евр",
+          "chapter": 2,
+          "verse": 9,
+          "text": "но видим, что за претерпение смерти увенчан славою и честью Иисус, Который не много был унижен пред Ангелами, дабы Ему, по благодати Божией, вкусить смерть за всех.",
+          "sourceFile": "parsed66/77-hebrews.dat"
+        },
+        {
+          "book": "Евр",
+          "chapter": 2,
+          "verse": 10,
+          "text": "Ибо надлежало, чтобы Тот, для Которого все и от Которого все, приводящего многих сынов в славу, вождя спасения их совершил через страдания.",
+          "sourceFile": "parsed66/77-hebrews.dat"
+        },
+        {
+          "book": "Евр",
+          "chapter": 2,
+          "verse": 11,
+          "text": "Ибо и освящающий и освящаемые, все — от Единого; поэтому Он не стыдится называть их братиями, говоря:",
+          "sourceFile": "parsed66/77-hebrews.dat"
+        },
+        {
+          "book": "Евр",
+          "chapter": 2,
+          "verse": 12,
+          "text": "«возвещу имя Твое братиям Моим, посреди церкви воспою Тебя».",
+          "sourceFile": "parsed66/77-hebrews.dat"
+        },
+        {
+          "book": "Евр",
+          "chapter": 2,
+          "verse": 13,
+          "text": "И еще: «Я буду уповать на Него». И еще: «вот Я и дети, которых дал Мне Бог».",
+          "sourceFile": "parsed66/77-hebrews.dat"
+        },
+        {
+          "book": "Евр",
+          "chapter": 2,
+          "verse": 14,
+          "text": "А как дети причастны плоти и крови, то и Он также воспринял оные, дабы смертью лишить силы имеющего державу смерти, то есть диавола,",
+          "sourceFile": "parsed66/77-hebrews.dat"
+        },
+        {
+          "book": "Евр",
+          "chapter": 9,
+          "verse": 12,
+          "text": "и не с кровью козлов и тельцов, но со Своею Кровию, однажды вошел во святилище и приобрел вечное искупление.",
+          "sourceFile": "parsed66/77-hebrews.dat"
+        },
+        {
+          "book": "Евр",
+          "chapter": 9,
+          "verse": 22,
+          "text": "Да и все почти по закону очищается кровью, и без пролития крови не бывает прощения.",
+          "sourceFile": "parsed66/77-hebrews.dat"
+        },
+        {
+          "book": "Евр",
+          "chapter": 10,
+          "verse": 14,
+          "text": "Ибо Он одним приношением навсегда сделал совершенными освящаемых.",
+          "sourceFile": "parsed66/77-hebrews.dat"
+        },
+        {
+          "book": "Евр",
+          "chapter": 10,
+          "verse": 26,
+          "text": "Ибо если мы, получив познание истины, произвольно грешим, то не остается более жертвы за грехи,",
+          "sourceFile": "parsed66/77-hebrews.dat"
+        },
+        {
+          "book": "Евр",
+          "chapter": 10,
+          "verse": 27,
+          "text": "но некое страшное ожидание суда и ярость огня, готового пожрать противников.",
+          "sourceFile": "parsed66/77-hebrews.dat"
+        },
+        {
+          "book": "Евр",
+          "chapter": 10,
+          "verse": 28,
+          "text": "Если отвергшийся закона Моисеева, при двух или трех свидетелях, без милосердия наказывается смертью,",
+          "sourceFile": "parsed66/77-hebrews.dat"
+        },
+        {
+          "book": "Евр",
+          "chapter": 10,
+          "verse": 29,
+          "text": "то сколь тягчайшему, думаете, наказанию повинен будет тот, кто попирает Сына Божия и не почитает за святыню Кровь завета, которою освящен, и Духа благодати оскорбляет?",
+          "sourceFile": "parsed66/77-hebrews.dat"
+        },
+        {
+          "book": "Евр",
+          "chapter": 10,
+          "verse": 38,
+          "text": "Праведный верою жив будет; а если кто поколеблется, не благоволит к тому душа Моя.",
+          "sourceFile": "parsed66/77-hebrews.dat"
+        },
+        {
+          "book": "Евр",
+          "chapter": 10,
+          "verse": 39,
+          "text": "Мы же не из колеблющихся на погибель, но стои́м в вере к спасению души.",
+          "sourceFile": "parsed66/77-hebrews.dat"
+        },
+        {
+          "book": "Евр",
+          "chapter": 12,
+          "verse": 14,
+          "text": "Старайтесь иметь мир со всеми и святость, без которой никто не увидит Господа.",
+          "sourceFile": "parsed66/77-hebrews.dat"
+        },
+        {
+          "book": "Еф",
+          "chapter": 2,
+          "verse": 8,
+          "text": "Ибо благодатью вы спасены через веру, и сие не от вас, Божий дар:",
+          "sourceFile": "parsed66/68-ephesians.dat"
+        },
+        {
+          "book": "Еф",
+          "chapter": 5,
+          "verse": 25,
+          "text": "Мужья, любите своих жен, как и Христос возлюбил Церковь и предал Себя за нее,",
+          "sourceFile": "parsed66/68-ephesians.dat"
+        },
+        {
+          "book": "Еф",
+          "chapter": 5,
+          "verse": 26,
+          "text": "чтобы освятить ее, очистив банею водною, посредством слова;",
+          "sourceFile": "parsed66/68-ephesians.dat"
+        },
+        {
+          "book": "Еф",
+          "chapter": 5,
+          "verse": 27,
+          "text": "чтобы представить ее Себе славною Церковью, не имеющею пятна, или порока, или чего‐либо подобного, но дабы она была свята и непорочна.",
+          "sourceFile": "parsed66/68-ephesians.dat"
+        },
+        {
+          "book": "Ин",
+          "chapter": 3,
+          "verse": 3,
+          "text": "Иисус сказал ему в ответ: истинно, истинно говорю тебе, если кто не родится свыше, не может увидеть Царствия Божия.",
+          "sourceFile": "parsed66/55-john.dat"
+        },
+        {
+          "book": "Ин",
+          "chapter": 3,
+          "verse": 16,
+          "text": "Ибо так возлюбил Бог мир, что отдал Сына Своего Единородного, дабы всякий, верующий в Него, не погиб, но имел жизнь вечную.",
+          "sourceFile": "parsed66/55-john.dat"
+        },
+        {
+          "book": "Ин",
+          "chapter": 3,
+          "verse": 17,
+          "text": "Ибо не послал Бог Сына Своего в мир, чтобы судить мир, но чтобы мир спасен был чрез Него.",
+          "sourceFile": "parsed66/55-john.dat"
+        },
+        {
+          "book": "Ин",
+          "chapter": 10,
+          "verse": 14,
+          "text": "Я есмь пастырь добрый, и знаю Моих, и Мои знают Меня.",
+          "sourceFile": "parsed66/55-john.dat"
+        },
+        {
+          "book": "Ин",
+          "chapter": 10,
+          "verse": 15,
+          "text": "Как Отец знает Меня, так и Я знаю Отца, и жизнь Мою полагаю за овец.",
+          "sourceFile": "parsed66/55-john.dat"
+        },
+        {
+          "book": "Ин",
+          "chapter": 10,
+          "verse": 16,
+          "text": "Есть у Меня и другие овцы, которые не сего двора, и тех надлежит Мне привести: и они услышат голос Мой, и будет одно стадо и один Пастырь.",
+          "sourceFile": "parsed66/55-john.dat"
+        },
+        {
+          "book": "Ин",
+          "chapter": 10,
+          "verse": 17,
+          "text": "Потому любит Меня Отец, что Я отдаю жизнь Мою, чтобы опять принять ее.",
+          "sourceFile": "parsed66/55-john.dat"
+        },
+        {
+          "book": "Ин",
+          "chapter": 10,
+          "verse": 18,
+          "text": "Никто не отнимает ее у Меня, но Я Сам отдаю ее. Имею власть отдать ее и власть имею опять принять ее. Сию заповедь получил Я от Отца Моего.",
+          "sourceFile": "parsed66/55-john.dat"
+        },
+        {
+          "book": "Ин",
+          "chapter": 17,
+          "verse": 9,
+          "text": "Я о них молю: не о всем мире молю, но о тех, которых Ты дал Мне, потому что они Твои.",
+          "sourceFile": "parsed66/55-john.dat"
+        },
+        {
+          "book": "Ис",
+          "chapter": 53,
+          "verse": 5,
+          "text": "Но Он изъязвлен был за грехи наши и мучим за беззакония наши; наказание мира нашего было на Нем, и ранами Его мы исцелились.",
+          "sourceFile": "parsed66/29-isaiah.dat"
+        },
+        {
+          "book": "Ис",
+          "chapter": 53,
+          "verse": 6,
+          "text": "Все мы блуждали, как овцы, совратились каждый на свою дорогу: и Господь возложил на Него грехи всех нас.",
+          "sourceFile": "parsed66/29-isaiah.dat"
+        },
+        {
+          "book": "Ис",
+          "chapter": 53,
+          "verse": 12,
+          "text": "Посему Я дам Ему часть между великими, и с сильными будет делить добычу, за то, что предал душу Свою на смерть, и к злодеям причтен был, тогда как Он понес на Себе грех многих и за преступников сделался ходатаем.",
+          "sourceFile": "parsed66/29-isaiah.dat"
+        },
+        {
+          "book": "Кол",
+          "chapter": 3,
+          "verse": 4,
+          "text": "Когда же явится Христос, жизнь ваша, тогда и вы явитесь с Ним во славе.",
+          "sourceFile": "parsed66/70-colossians.dat"
+        },
+        {
+          "book": "Лев",
+          "chapter": 17,
+          "verse": 11,
+          "text": "потому что душа тела в крови, и Я назначил ее вам для жертвенника, чтобы очищать души ваши, ибо кровь сия душу очищает;",
+          "sourceFile": "parsed66/03-leviticus.dat"
+        },
+        {
+          "book": "Мк",
+          "chapter": 10,
+          "verse": 45,
+          "text": "Ибо и Сын Человеческий не для того пришел, чтобы Ему служили, но чтобы послужить и отдать душу Свою для искупления многих.",
+          "sourceFile": "parsed66/53-mark.dat"
+        },
+        {
+          "book": "Мк",
+          "chapter": 16,
+          "verse": 15,
+          "text": "И сказал им: идите по всему миру и проповедуйте Евангелие всей твари.",
+          "sourceFile": "parsed66/53-mark.dat"
+        },
+        {
+          "book": "Мф",
+          "chapter": 1,
+          "verse": 21,
+          "text": "родит же Сына, и наречешь Ему имя Иисус, ибо Он спасет людей Своих от грехов их.",
+          "sourceFile": "parsed66/52-matthew.dat"
+        },
+        {
+          "book": "Мф",
+          "chapter": 11,
+          "verse": 28,
+          "text": "Придите ко Мне, все труждающиеся и обремененные, и Я успокою вас;",
+          "sourceFile": "parsed66/52-matthew.dat"
+        },
+        {
+          "book": "Мф",
+          "chapter": 26,
+          "verse": 28,
+          "text": "ибо сие есть Кровь Моя нового завета, за многих изливаемая во оставление грехов.",
+          "sourceFile": "parsed66/52-matthew.dat"
+        },
+        {
+          "book": "Наум",
+          "chapter": 1,
+          "verse": 3,
+          "text": "Господь долготерпелив и велик могуществом и не оставляет без наказания; в вихре и в буре шествие Господа, облако — пыль от ног Его.",
+          "sourceFile": "parsed66/42-nahum.dat"
+        },
+        {
+          "book": "Пс",
+          "chapter": 48,
+          "verse": 8,
+          "text": "Человек никак не искупит брата своего и не даст Богу выкупа за него:",
+          "sourceFile": "parsed66/23-psalms.dat"
+        },
+        {
+          "book": "Пс",
+          "chapter": 49,
+          "verse": 8,
+          "text": "Не за жертвы твои Я буду укорять тебя; всесожжения твои всегда предо Мною;",
+          "sourceFile": "parsed66/23-psalms.dat"
+        },
+        {
+          "book": "Пс",
+          "chapter": 129,
+          "verse": 8,
+          "text": "и Он избавит Израиля от всех беззаконий его.",
+          "sourceFile": "parsed66/23-psalms.dat"
+        },
+        {
+          "book": "Рим",
+          "chapter": 3,
+          "verse": 24,
+          "text": "получая оправдание даром, по благодати Его, искуплением во Христе Иисусе,",
+          "sourceFile": "parsed66/64-romans.dat"
+        },
+        {
+          "book": "Рим",
+          "chapter": 3,
+          "verse": 25,
+          "text": "Которого Бог предложил в жертву умилостивления в Крови Его через веру, для показания правды Его в прощении грехов, соделанных прежде,",
+          "sourceFile": "parsed66/64-romans.dat"
+        },
+        {
+          "book": "Рим",
+          "chapter": 3,
+          "verse": 26,
+          "text": "во время долготерпения Божия, к показанию правды Его в настоящее время, да явится Он праведным и оправдывающим верующего в Иисуса.",
+          "sourceFile": "parsed66/64-romans.dat"
+        },
+        {
+          "book": "Рим",
+          "chapter": 5,
+          "verse": 8,
+          "text": "Но Бог Свою любовь к нам доказывает тем, что Христос умер за нас, когда мы были еще грешниками.",
+          "sourceFile": "parsed66/64-romans.dat"
+        },
+        {
+          "book": "Рим",
+          "chapter": 5,
+          "verse": 17,
+          "text": "Ибо если преступлением одного смерть царствовала посредством одного, то тем более приемлющие обилие благодати и дар праведности будут царствовать в жизни посредством единого Иисуса Христа.",
+          "sourceFile": "parsed66/64-romans.dat"
+        },
+        {
+          "book": "Рим",
+          "chapter": 5,
+          "verse": 18,
+          "text": "Посему как преступлением одного — всем человекам осуждение, так правдою одного — всем человекам оправдание к жизни.",
+          "sourceFile": "parsed66/64-romans.dat"
+        },
+        {
+          "book": "Рим",
+          "chapter": 5,
+          "verse": 19,
+          "text": "Ибо как непослушанием одного человека сделались многие грешными, так и послушанием одного сделаются праведными многие.",
+          "sourceFile": "parsed66/64-romans.dat"
+        },
+        {
+          "book": "Рим",
+          "chapter": 8,
+          "verse": 15,
+          "text": "Потому что вы не приняли духа рабства, чтобы опять жить в страхе, но приняли Духа усыновления, Которым взываем: «Авва, Отче!»",
+          "sourceFile": "parsed66/64-romans.dat"
+        },
+        {
+          "book": "Рим",
+          "chapter": 8,
+          "verse": 29,
+          "text": "Ибо кого Он предузнал, тем и предопределил быть подобными образу Сына Своего, дабы Он был первородным между многими братиями.",
+          "sourceFile": "parsed66/64-romans.dat"
+        },
+        {
+          "book": "Рим",
+          "chapter": 8,
+          "verse": 30,
+          "text": "А кого Он предопределил, тех и призвал, а кого призвал, тех и оправдал; а кого оправдал, тех и прославил.",
+          "sourceFile": "parsed66/64-romans.dat"
+        },
+        {
+          "book": "Рим",
+          "chapter": 8,
+          "verse": 31,
+          "text": "Что же сказать на это? Если Бог за нас, кто против нас?",
+          "sourceFile": "parsed66/64-romans.dat"
+        },
+        {
+          "book": "Рим",
+          "chapter": 8,
+          "verse": 32,
+          "text": "Тот, Который Сына Своего не пощадил, но предал Его за всех нас, как с Ним не дарует нам и всего?",
+          "sourceFile": "parsed66/64-romans.dat"
+        },
+        {
+          "book": "Рим",
+          "chapter": 8,
+          "verse": 33,
+          "text": "Кто будет обвинять избранных Божиих? Бог оправдывает их.",
+          "sourceFile": "parsed66/64-romans.dat"
+        },
+        {
+          "book": "Рим",
+          "chapter": 8,
+          "verse": 34,
+          "text": "Кто осуждает? Христос Иисус умер, но и воскрес: Он и одесную Бога, Он и ходатайствует за нас.",
+          "sourceFile": "parsed66/64-romans.dat"
+        },
+        {
+          "book": "Рим",
+          "chapter": 15,
+          "verse": 16,
+          "text": "быть служителем Иисуса Христа у язычников и совершать священнодействие благовествования Божия, дабы сие приношение язычников, будучи освящено Духом Святым, было благоприятно Богу.",
+          "sourceFile": "parsed66/64-romans.dat"
+        },
+        {
+          "book": "Тит",
+          "chapter": 2,
+          "verse": 11,
+          "text": "Ибо явилась благодать Божия, спасительная для всех человеков,",
+          "sourceFile": "parsed66/75-titus.dat"
+        },
+        {
+          "book": "Тит",
+          "chapter": 2,
+          "verse": 12,
+          "text": "научающая нас, чтобы мы, отвергнув нечестие и мирские похоти, целомудренно, праведно и благочестиво жили в нынешнем веке,",
+          "sourceFile": "parsed66/75-titus.dat"
+        },
+        {
+          "book": "Тит",
+          "chapter": 2,
+          "verse": 13,
+          "text": "ожидая блаженного упования и явления славы великого Бога и Спасителя нашего Иисуса Христа,",
+          "sourceFile": "parsed66/75-titus.dat"
+        },
+        {
+          "book": "Тит",
+          "chapter": 2,
+          "verse": 14,
+          "text": "Который дал Себя за нас, чтобы избавить нас от всякого беззакония и очистить Себе народ особенный, ревностный к добрым делам.",
+          "sourceFile": "parsed66/75-titus.dat"
+        },
+        {
+          "book": "Тит",
+          "chapter": 2,
+          "verse": 15,
+          "text": "Сие говори, увещевай и обличай со всякою властью, чтобы никто не пренебрегал тебя.",
+          "sourceFile": "parsed66/75-titus.dat"
+        },
+        {
+          "book": "Тит",
+          "chapter": 3,
+          "verse": 5,
+          "text": "Он спас нас не по делам праведности, которые бы мы сотворили, а по Своей милости, банею возрождения и обновления Святым Духом,",
+          "sourceFile": "parsed66/75-titus.dat"
+        },
+        {
+          "book": "Тит",
+          "chapter": 3,
+          "verse": 6,
+          "text": "Которого излил на нас обильно через Иисуса Христа, Спасителя нашего,",
+          "sourceFile": "parsed66/75-titus.dat"
+        }
+      ]
+    },
+    "rsb": {
+      "repository": "trevarj/rsb",
+      "commit": "9290a72a95c906fbc9e5e35339dd695bf565b521",
+      "url": "https://github.com/trevarj/rsb/tree/9290a72a95c906fbc9e5e35339dd695bf565b521",
+      "evidenceClass": "A1",
+      "evidenceClassScope": "Primary witness to the text of this digital transcription, not to its genealogy or a theological conclusion.",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "objectScope": "Pinned digital source tree acquired in full; retained source-file bytes are hashed. Not a claim to have read the entire Bible or inspected printed pages.",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "locatorScope": "Verse and source path in the identified digital version only.",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "rightsScope": "Upstream declarations are recorded above; separate corpus-specific Product clearance has not been established.",
+      "publicationState": "BLOCKED",
+      "publicationScope": "Product promotion is not authorized by this Research control.",
+      "printedPageCheck": false,
+      "files": {
+        "03_lev.txt": {
+          "sha256": "8afea37f0302569a57265d2b682083a74c50e3546efaf7f1d42fde7b08aa51e5",
+          "bytes": 186570
+        },
+        "22_ps.txt": {
+          "sha256": "59e161abf6e9a8151b0c9df9ab139a9206b55e5c979b1bbbc6e0f06de3948106",
+          "bytes": 345486
+        },
+        "28_is.txt": {
+          "sha256": "caf38147c0d76d065e96f7b84c127db9a1dbbb965000b739bde1e9978a57f0cb",
+          "bytes": 284299
+        },
+        "41_naum.txt": {
+          "sha256": "fcd02e36d1275de88a34706d5700a4467271d20d5b40d10ce589d4db55e52f13",
+          "bytes": 10121
+        },
+        "51_mf.txt": {
+          "sha256": "3cb79c2022f6b499fa215d2025eb7e4aff3346b8966aa8b70c791e6410a427a2",
+          "bytes": 184240
+        },
+        "52_mk.txt": {
+          "sha256": "b5d268e38bfbea21162be0af1bec590faf0a7723d7bfa75b4c11b356ba6c7afc",
+          "bytes": 115363
+        },
+        "54_in.txt": {
+          "sha256": "2e7d6ee91d5b26ca9c5b6177b654e1fd0b37c722cf2b949d87a8355abdf5965d",
+          "bytes": 147155
+        },
+        "55_deyan.txt": {
+          "sha256": "7d2847efcccd6dae9f09ef03235803f3cdb9707e4a58d33d96f8f44d24282bbc",
+          "bytes": 194708
+        },
+        "57_1petr.txt": {
+          "sha256": "ad5dae9085d201f2e3bfa551592bef56fdb205192a574dbd59236f8256ffb9b4",
+          "bytes": 20527
+        },
+        "58_2petr.txt": {
+          "sha256": "5ca6a5db5f024900804764a89556f77a9f416b6e7f64c34327cf59163489a82f",
+          "bytes": 13255
+        },
+        "59_1in.txt": {
+          "sha256": "87805cdc52201f7c306fa1988c185b49d23af85269f1e401c1912a5ee9ebab92",
+          "bytes": 19981
+        },
+        "63_rim.txt": {
+          "sha256": "12e97d9ad3c21da60f483af14ed181a9861230aee641bdf38a001f8de3d3d963",
+          "bytes": 76414
+        },
+        "65_2kor.txt": {
+          "sha256": "8a10c3f0c21b9f21241b83063fcf3e856ab042bc468ff504939ccfd279e25740",
+          "bytes": 49306
+        },
+        "66_gal.txt": {
+          "sha256": "95dee1d32d9f67b4791fb65458ed3e74b6e2218cc4f636a5c32cf27175d30229",
+          "bytes": 25038
+        },
+        "67_ef.txt": {
+          "sha256": "00e89b1f1bdfa5016c30ef61707978de7e4344a433f6d9fd7b2dd21ec1c423e5",
+          "bytes": 24827
+        },
+        "69_kol.txt": {
+          "sha256": "6da44f9f19ccd0dff6e7854bd695021ab4c635813ef1c465821c1f10868ba48d",
+          "bytes": 16840
+        },
+        "70_1fes.txt": {
+          "sha256": "192cea5926c66510d03640cd853165214e5ffb46da13541eb347bcc0999666a0",
+          "bytes": 15509
+        },
+        "72_1tim.txt": {
+          "sha256": "4c8462ac91a860e399db726e7df996761233001dd5c5fe7ec4c8a70e67539226",
+          "bytes": 20367
+        },
+        "74_tit.txt": {
+          "sha256": "dbfdd730f0e00c3b5a9fd63fe86f963e4ff6f297373546aea8f44ba2eb0aea2d",
+          "bytes": 8392
+        },
+        "76_evr.txt": {
+          "sha256": "04036a7c291f0762d26cdda80392093f4f67e94330056c8d9e74a6d9e6b9b43c",
+          "bytes": 56883
+        },
+        "README.md": {
+          "sha256": "8997cd0deef7b8a0b84be58cced2bf407bcec7bb1876410031bafad25c638f0b",
+          "bytes": 565
+        }
+      },
+      "chapterVerseNumbers": {
+        "Тит|2": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "verses": [
+        {
+          "book": "1Ин",
+          "chapter": 2,
+          "verse": 2,
+          "text": "Он есть умилостивление за грехи наши, и не только за наши, но и за _грехи_ всего мира.",
+          "sourceFile": "59_1in.txt"
+        },
+        {
+          "book": "1Ин",
+          "chapter": 4,
+          "verse": 10,
+          "text": "В том любовь, что не мы возлюбили Бога, но Он возлюбил нас и послал Сына Своего в умилостивление за грехи наши.",
+          "sourceFile": "59_1in.txt"
+        },
+        {
+          "book": "1Пет",
+          "chapter": 1,
+          "verse": 2,
+          "text": "по предведению Бога Отца, при освящении от Духа, к послушанию и окроплению Кровию Иисуса Христа: благодать вам и мир да умножится.",
+          "sourceFile": "57_1petr.txt"
+        },
+        {
+          "book": "1Пет",
+          "chapter": 2,
+          "verse": 24,
+          "text": "Он грехи наши Сам вознес телом Своим на древо, дабы мы, избавившись от грехов, жили для правды: ранами Его вы исцелились.",
+          "sourceFile": "57_1petr.txt"
+        },
+        {
+          "book": "1Тим",
+          "chapter": 2,
+          "verse": 1,
+          "text": "Итак прежде всего прошу совершать молитвы, прошения, моления, благодарения за всех человеков,",
+          "sourceFile": "72_1tim.txt"
+        },
+        {
+          "book": "1Тим",
+          "chapter": 2,
+          "verse": 2,
+          "text": "за царей и за всех начальствующих, дабы проводить нам жизнь тихую и безмятежную во всяком благочестии и чистоте,",
+          "sourceFile": "72_1tim.txt"
+        },
+        {
+          "book": "1Тим",
+          "chapter": 2,
+          "verse": 3,
+          "text": "ибо это хорошо и угодно Спасителю нашему Богу,",
+          "sourceFile": "72_1tim.txt"
+        },
+        {
+          "book": "1Тим",
+          "chapter": 2,
+          "verse": 4,
+          "text": "Который хочет, чтобы все люди спаслись и достигли познания истины.",
+          "sourceFile": "72_1tim.txt"
+        },
+        {
+          "book": "1Тим",
+          "chapter": 2,
+          "verse": 5,
+          "text": "Ибо един Бог, един и посредник между Богом и человеками, человек Христос Иисус,",
+          "sourceFile": "72_1tim.txt"
+        },
+        {
+          "book": "1Тим",
+          "chapter": 2,
+          "verse": 6,
+          "text": "предавший Себя для искупления всех. _Таково_ _было_ в свое время свидетельство,",
+          "sourceFile": "72_1tim.txt"
+        },
+        {
+          "book": "1Тим",
+          "chapter": 4,
+          "verse": 10,
+          "text": "Ибо мы для того и трудимся и поношения терпим, что уповаем на Бога живаго, Который есть Спаситель всех человеков, а наипаче верных.",
+          "sourceFile": "72_1tim.txt"
+        },
+        {
+          "book": "1Фес",
+          "chapter": 4,
+          "verse": 3,
+          "text": "Ибо воля Божия есть освящение ваше, чтобы вы воздерживались от блуда;",
+          "sourceFile": "70_1fes.txt"
+        },
+        {
+          "book": "2Кор",
+          "chapter": 5,
+          "verse": 14,
+          "text": "Ибо любовь Христова объемлет нас, рассуждающих так: если один умер за всех, то все умерли.",
+          "sourceFile": "65_2kor.txt"
+        },
+        {
+          "book": "2Кор",
+          "chapter": 5,
+          "verse": 15,
+          "text": "А Христос за всех умер, чтобы живущие уже не для себя жили, но для умершего за них и воскресшего.",
+          "sourceFile": "65_2kor.txt"
+        },
+        {
+          "book": "2Кор",
+          "chapter": 5,
+          "verse": 16,
+          "text": "Потому отныне мы никого не знаем по плоти; если же и знали Христа по плоти, то ныне уже не знаем.",
+          "sourceFile": "65_2kor.txt"
+        },
+        {
+          "book": "2Кор",
+          "chapter": 5,
+          "verse": 17,
+          "text": "Итак, кто во Христе, _тот_ новая тварь; древнее прошло, теперь все новое.",
+          "sourceFile": "65_2kor.txt"
+        },
+        {
+          "book": "2Кор",
+          "chapter": 5,
+          "verse": 18,
+          "text": "Все же от Бога, Иисусом Христом примирившего нас с Собою и давшего нам служение примирения,",
+          "sourceFile": "65_2kor.txt"
+        },
+        {
+          "book": "2Кор",
+          "chapter": 5,
+          "verse": 19,
+          "text": "потому что Бог во Христе примирил с Собою мир, не вменяя _людям_ преступлений их, и дал нам слово примирения.",
+          "sourceFile": "65_2kor.txt"
+        },
+        {
+          "book": "2Кор",
+          "chapter": 5,
+          "verse": 20,
+          "text": "Итак мы -- посланники от имени Христова, и как бы Сам Бог увещевает через нас; от имени Христова просим: примиритесь с Богом.",
+          "sourceFile": "65_2kor.txt"
+        },
+        {
+          "book": "2Кор",
+          "chapter": 5,
+          "verse": 21,
+          "text": "Ибо не знавшего греха Он сделал для нас _жертвою_ _за_ грех, чтобы мы в Нем сделались праведными пред Богом. ",
+          "sourceFile": "65_2kor.txt"
+        },
+        {
+          "book": "2Пет",
+          "chapter": 2,
+          "verse": 1,
+          "text": "Были и лжепророки в народе, как и у вас будут лжеучители, которые введут пагубные ереси и, отвергаясь искупившего их Господа, навлекут сами на себя скорую погибель.",
+          "sourceFile": "58_2petr.txt"
+        },
+        {
+          "book": "Гал",
+          "chapter": 3,
+          "verse": 13,
+          "text": "Христос искупил нас от клятвы закона, сделавшись за нас клятвою [ибо написано: проклят всяк, висящий на древе],",
+          "sourceFile": "66_gal.txt"
+        },
+        {
+          "book": "Деян",
+          "chapter": 17,
+          "verse": 30,
+          "text": "Итак, оставляя времена неведения, Бог ныне повелевает людям всем повсюду покаяться,",
+          "sourceFile": "55_deyan.txt"
+        },
+        {
+          "book": "Евр",
+          "chapter": 2,
+          "verse": 9,
+          "text": "но видим, что за претерпение смерти увенчан славою и честью Иисус, Который не много был унижен пред Ангелами, дабы Ему, по благодати Божией, вкусить смерть за всех.",
+          "sourceFile": "76_evr.txt"
+        },
+        {
+          "book": "Евр",
+          "chapter": 2,
+          "verse": 10,
+          "text": "Ибо надлежало, чтобы Тот, для Которого все и от Которого все, приводящего многих сынов в славу, вождя спасения их совершил через страдания.",
+          "sourceFile": "76_evr.txt"
+        },
+        {
+          "book": "Евр",
+          "chapter": 2,
+          "verse": 11,
+          "text": "Ибо и освящающий и освящаемые, все -- от Единого; поэтому Он не стыдится называть их братиями, говоря:",
+          "sourceFile": "76_evr.txt"
+        },
+        {
+          "book": "Евр",
+          "chapter": 2,
+          "verse": 12,
+          "text": "возвещу имя Твое братиям Моим, посреди церкви воспою Тебя.",
+          "sourceFile": "76_evr.txt"
+        },
+        {
+          "book": "Евр",
+          "chapter": 2,
+          "verse": 13,
+          "text": "И еще: Я буду уповать на Него. И еще: вот Я и дети, которых дал Мне Бог.",
+          "sourceFile": "76_evr.txt"
+        },
+        {
+          "book": "Евр",
+          "chapter": 2,
+          "verse": 14,
+          "text": "А как дети причастны плоти и крови, то и Он также воспринял оные, дабы смертью лишить силы имеющего державу смерти, то есть диавола,",
+          "sourceFile": "76_evr.txt"
+        },
+        {
+          "book": "Евр",
+          "chapter": 9,
+          "verse": 12,
+          "text": "и не с кровью козлов и тельцов, но со Своею Кровию, однажды вошел во святилище и приобрел вечное искупление.",
+          "sourceFile": "76_evr.txt"
+        },
+        {
+          "book": "Евр",
+          "chapter": 9,
+          "verse": 22,
+          "text": "Да и все почти по закону очищается кровью, и без пролития крови не бывает прощения.",
+          "sourceFile": "76_evr.txt"
+        },
+        {
+          "book": "Евр",
+          "chapter": 10,
+          "verse": 14,
+          "text": "Ибо Он одним приношением навсегда сделал совершенными освящаемых.",
+          "sourceFile": "76_evr.txt"
+        },
+        {
+          "book": "Евр",
+          "chapter": 10,
+          "verse": 26,
+          "text": "Ибо если мы, получив познание истины, произвольно грешим, то не остается более жертвы за грехи,",
+          "sourceFile": "76_evr.txt"
+        },
+        {
+          "book": "Евр",
+          "chapter": 10,
+          "verse": 27,
+          "text": "но некое страшное ожидание суда и ярость огня, готового пожрать противников.",
+          "sourceFile": "76_evr.txt"
+        },
+        {
+          "book": "Евр",
+          "chapter": 10,
+          "verse": 28,
+          "text": "_Если_ отвергшийся закона Моисеева, при двух или трех свидетелях, без милосердия _наказывается_ смертью,",
+          "sourceFile": "76_evr.txt"
+        },
+        {
+          "book": "Евр",
+          "chapter": 10,
+          "verse": 29,
+          "text": "то сколь тягчайшему, думаете, наказанию повинен будет тот, кто попирает Сына Божия и не почитает за святыню Кровь завета, которою освящен, и Духа благодати оскорбляет?",
+          "sourceFile": "76_evr.txt"
+        },
+        {
+          "book": "Евр",
+          "chapter": 10,
+          "verse": 38,
+          "text": "Праведный верою жив будет; а если _кто_ поколеблется, не благоволит к тому душа Моя.",
+          "sourceFile": "76_evr.txt"
+        },
+        {
+          "book": "Евр",
+          "chapter": 10,
+          "verse": 39,
+          "text": "Мы же не из колеблющихся на погибель, но _стоим_ в вере к спасению души. ",
+          "sourceFile": "76_evr.txt"
+        },
+        {
+          "book": "Евр",
+          "chapter": 12,
+          "verse": 14,
+          "text": "Старайтесь иметь мир со всеми и святость, без которой никто не увидит Господа.",
+          "sourceFile": "76_evr.txt"
+        },
+        {
+          "book": "Еф",
+          "chapter": 2,
+          "verse": 8,
+          "text": "Ибо благодатью вы спасены через веру, и сие не от вас, Божий дар:",
+          "sourceFile": "67_ef.txt"
+        },
+        {
+          "book": "Еф",
+          "chapter": 5,
+          "verse": 25,
+          "text": "Мужья, любите своих жен, как и Христос возлюбил Церковь и предал Себя за нее,",
+          "sourceFile": "67_ef.txt"
+        },
+        {
+          "book": "Еф",
+          "chapter": 5,
+          "verse": 26,
+          "text": "чтобы освятить ее, очистив банею водною посредством слова;",
+          "sourceFile": "67_ef.txt"
+        },
+        {
+          "book": "Еф",
+          "chapter": 5,
+          "verse": 27,
+          "text": "чтобы представить ее Себе славною Церковью, не имеющею пятна, или порока, или чего-либо подобного, но дабы она была свята и непорочна.",
+          "sourceFile": "67_ef.txt"
+        },
+        {
+          "book": "Ин",
+          "chapter": 3,
+          "verse": 3,
+          "text": "Иисус сказал ему в ответ: истинно, истинно говорю тебе, если кто не родится свыше, не может увидеть Царствия Божия.",
+          "sourceFile": "54_in.txt"
+        },
+        {
+          "book": "Ин",
+          "chapter": 3,
+          "verse": 16,
+          "text": "Ибо так возлюбил Бог мир, что отдал Сына Своего Единородного, дабы всякий верующий в Него, не погиб, но имел жизнь вечную.",
+          "sourceFile": "54_in.txt"
+        },
+        {
+          "book": "Ин",
+          "chapter": 3,
+          "verse": 17,
+          "text": "Ибо не послал Бог Сына Своего в мир, чтобы судить мир, но чтобы мир спасен был чрез Него.",
+          "sourceFile": "54_in.txt"
+        },
+        {
+          "book": "Ин",
+          "chapter": 10,
+          "verse": 14,
+          "text": "Я есмь пастырь добрый; и знаю Моих, и Мои знают Меня.",
+          "sourceFile": "54_in.txt"
+        },
+        {
+          "book": "Ин",
+          "chapter": 10,
+          "verse": 15,
+          "text": "Как Отец знает Меня, _так_ и Я знаю Отца; и жизнь Мою полагаю за овец.",
+          "sourceFile": "54_in.txt"
+        },
+        {
+          "book": "Ин",
+          "chapter": 10,
+          "verse": 16,
+          "text": "Есть у Меня и другие овцы, которые не сего двора, и тех надлежит Мне привести: и они услышат голос Мой, и будет одно стадо и один Пастырь.",
+          "sourceFile": "54_in.txt"
+        },
+        {
+          "book": "Ин",
+          "chapter": 10,
+          "verse": 17,
+          "text": "Потому любит Меня Отец, что Я отдаю жизнь Мою, чтобы опять принять ее.",
+          "sourceFile": "54_in.txt"
+        },
+        {
+          "book": "Ин",
+          "chapter": 10,
+          "verse": 18,
+          "text": "Никто не отнимает ее у Меня, но Я Сам отдаю ее. Имею власть отдать ее и власть имею опять принять ее. Сию заповедь получил Я от Отца Моего.",
+          "sourceFile": "54_in.txt"
+        },
+        {
+          "book": "Ин",
+          "chapter": 17,
+          "verse": 9,
+          "text": "Я о них молю: не о всем мире молю, но о тех, которых Ты дал Мне, потому что они Твои.",
+          "sourceFile": "54_in.txt"
+        },
+        {
+          "book": "Ис",
+          "chapter": 53,
+          "verse": 5,
+          "text": "Но Он изъязвлен был за грехи наши и мучим за беззакония наши; наказание мира нашего _было_ на Нем, и ранами Его мы исцелились.",
+          "sourceFile": "28_is.txt"
+        },
+        {
+          "book": "Ис",
+          "chapter": 53,
+          "verse": 6,
+          "text": "Все мы блуждали, как овцы, совратились каждый на свою дорогу: и Господь возложил на Него грехи всех нас.",
+          "sourceFile": "28_is.txt"
+        },
+        {
+          "book": "Ис",
+          "chapter": 53,
+          "verse": 12,
+          "text": "Посему Я дам Ему часть между великими, и с сильными будет делить добычу, за то, что предал душу Свою на смерть, и к злодеям причтен был, тогда как Он понес на Себе грех многих и за преступников сделался ходатаем.",
+          "sourceFile": "28_is.txt"
+        },
+        {
+          "book": "Кол",
+          "chapter": 3,
+          "verse": 4,
+          "text": "Когда же явится Христос, жизнь ваша, тогда и вы явитесь с Ним во славе.",
+          "sourceFile": "69_kol.txt"
+        },
+        {
+          "book": "Лев",
+          "chapter": 17,
+          "verse": 11,
+          "text": "потому что душа тела в крови, и Я назначил ее вам для жертвенника, чтобы очищать души ваши, ибо кровь сия душу очищает;",
+          "sourceFile": "03_lev.txt"
+        },
+        {
+          "book": "Мк",
+          "chapter": 10,
+          "verse": 45,
+          "text": "Ибо и Сын Человеческий не для того пришел, чтобы Ему служили, но чтобы послужить и отдать душу Свою для искупления многих. ",
+          "sourceFile": "52_mk.txt"
+        },
+        {
+          "book": "Мк",
+          "chapter": 16,
+          "verse": 15,
+          "text": "И сказал им: идите по всему миру и проповедуйте Евангелие всей твари.",
+          "sourceFile": "52_mk.txt"
+        },
+        {
+          "book": "Мф",
+          "chapter": 1,
+          "verse": 21,
+          "text": "родит же Сына, и наречешь Ему имя Иисус, ибо Он спасет людей Своих от грехов их.",
+          "sourceFile": "51_mf.txt"
+        },
+        {
+          "book": "Мф",
+          "chapter": 11,
+          "verse": 28,
+          "text": "Придите ко Мне все труждающиеся и обремененные, и Я успокою вас;",
+          "sourceFile": "51_mf.txt"
+        },
+        {
+          "book": "Мф",
+          "chapter": 26,
+          "verse": 28,
+          "text": "ибо сие есть Кровь Моя Нового Завета, за многих изливаемая во оставление грехов.",
+          "sourceFile": "51_mf.txt"
+        },
+        {
+          "book": "Наум",
+          "chapter": 1,
+          "verse": 3,
+          "text": "Господь долготерпелив и велик могуществом, и не оставляет без наказания; в вихре и в буре шествие Господа, облако - пыль от ног Его.",
+          "sourceFile": "41_naum.txt"
+        },
+        {
+          "book": "Пс",
+          "chapter": 48,
+          "verse": 8,
+          "text": "человек никак не искупит брата своего и не даст Богу выкупа за него:",
+          "sourceFile": "22_ps.txt"
+        },
+        {
+          "book": "Пс",
+          "chapter": 49,
+          "verse": 8,
+          "text": "Не за жертвы твои Я буду укорять тебя; всесожжения твои всегда предо Мною;",
+          "sourceFile": "22_ps.txt"
+        },
+        {
+          "book": "Пс",
+          "chapter": 129,
+          "verse": 8,
+          "text": "и Он избавит Израиля от всех беззаконий его.",
+          "sourceFile": "22_ps.txt"
+        },
+        {
+          "book": "Рим",
+          "chapter": 3,
+          "verse": 24,
+          "text": "получая оправдание даром, по благодати Его, искуплением во Христе Иисусе,",
+          "sourceFile": "63_rim.txt"
+        },
+        {
+          "book": "Рим",
+          "chapter": 3,
+          "verse": 25,
+          "text": "Которого Бог предложил в жертву умилостивления в Крови Его через веру, для показания правды Его в прощении грехов, соделанных прежде,",
+          "sourceFile": "63_rim.txt"
+        },
+        {
+          "book": "Рим",
+          "chapter": 3,
+          "verse": 26,
+          "text": "во _время_ долготерпения Божия, к показанию правды Его в настоящее время, да _явится_ Он праведным и оправдывающим верующего в Иисуса.",
+          "sourceFile": "63_rim.txt"
+        },
+        {
+          "book": "Рим",
+          "chapter": 5,
+          "verse": 8,
+          "text": "Но Бог Свою любовь к нам доказывает тем, что Христос умер за нас, когда мы были еще грешниками.",
+          "sourceFile": "63_rim.txt"
+        },
+        {
+          "book": "Рим",
+          "chapter": 5,
+          "verse": 17,
+          "text": "Ибо если преступлением одного смерть царствовала посредством одного, то тем более приемлющие обилие благодати и дар праведности будут царствовать в жизни посредством единого Иисуса Христа.",
+          "sourceFile": "63_rim.txt"
+        },
+        {
+          "book": "Рим",
+          "chapter": 5,
+          "verse": 18,
+          "text": "Посему, как преступлением одного всем человекам осуждение, так правдою одного всем человекам оправдание к жизни.",
+          "sourceFile": "63_rim.txt"
+        },
+        {
+          "book": "Рим",
+          "chapter": 5,
+          "verse": 19,
+          "text": "Ибо, как непослушанием одного человека сделались многие грешными, так и послушанием одного сделаются праведными многие.",
+          "sourceFile": "63_rim.txt"
+        },
+        {
+          "book": "Рим",
+          "chapter": 8,
+          "verse": 15,
+          "text": "Потому что вы не приняли духа рабства, _чтобы_ опять _жить_ в страхе, но приняли Духа усыновления, Которым взываем: \"Авва, Отче!\"",
+          "sourceFile": "63_rim.txt"
+        },
+        {
+          "book": "Рим",
+          "chapter": 8,
+          "verse": 29,
+          "text": "Ибо кого Он предузнал, тем и предопределил быть подобными образу Сына Своего, дабы Он был первородным между многими братиями.",
+          "sourceFile": "63_rim.txt"
+        },
+        {
+          "book": "Рим",
+          "chapter": 8,
+          "verse": 30,
+          "text": "А кого Он предопределил, тех и призвал, а кого призвал, тех и оправдал; а кого оправдал, тех и прославил.",
+          "sourceFile": "63_rim.txt"
+        },
+        {
+          "book": "Рим",
+          "chapter": 8,
+          "verse": 31,
+          "text": "Что же сказать на это? Если Бог за нас, кто против нас?",
+          "sourceFile": "63_rim.txt"
+        },
+        {
+          "book": "Рим",
+          "chapter": 8,
+          "verse": 32,
+          "text": "Тот, Который Сына Своего не пощадил, но предал Его за всех нас, как с Ним не дарует нам и всего?",
+          "sourceFile": "63_rim.txt"
+        },
+        {
+          "book": "Рим",
+          "chapter": 8,
+          "verse": 33,
+          "text": "Кто будет обвинять избранных Божиих? Бог оправдывает _их._",
+          "sourceFile": "63_rim.txt"
+        },
+        {
+          "book": "Рим",
+          "chapter": 8,
+          "verse": 34,
+          "text": "Кто осуждает? Христос Иисус умер, но и воскрес: Он и одесную Бога, Он и ходатайствует за нас.",
+          "sourceFile": "63_rim.txt"
+        },
+        {
+          "book": "Рим",
+          "chapter": 15,
+          "verse": 16,
+          "text": "быть служителем Иисуса Христа у язычников и _совершать_ священнодействие благовествования Божия, дабы сие приношение язычников, будучи освящено Духом Святым, было благоприятно _Богу._",
+          "sourceFile": "63_rim.txt"
+        },
+        {
+          "book": "Тит",
+          "chapter": 2,
+          "verse": 11,
+          "text": "Ибо явилась благодать Божия, спасительная для всех человеков,",
+          "sourceFile": "74_tit.txt"
+        },
+        {
+          "book": "Тит",
+          "chapter": 2,
+          "verse": 12,
+          "text": "научающая нас, чтобы мы, отвергнув нечестие и мирские похоти, целомудренно, праведно и благочестиво жили в нынешнем веке,",
+          "sourceFile": "74_tit.txt"
+        },
+        {
+          "book": "Тит",
+          "chapter": 2,
+          "verse": 13,
+          "text": "ожидая блаженного упования и явления славы великого Бога и Спасителя нашего Иисуса Христа,",
+          "sourceFile": "74_tit.txt"
+        },
+        {
+          "book": "Тит",
+          "chapter": 2,
+          "verse": 14,
+          "text": "Который дал Себя за нас, чтобы избавить нас от всякого беззакония и очистить Себе народ особенный, ревностный к добрым делам.",
+          "sourceFile": "74_tit.txt"
+        },
+        {
+          "book": "Тит",
+          "chapter": 2,
+          "verse": 15,
+          "text": "Сие говори, увещевай и обличай со всякою властью, чтобы никто не пренебрегал тебя. ",
+          "sourceFile": "74_tit.txt"
+        },
+        {
+          "book": "Тит",
+          "chapter": 3,
+          "verse": 5,
+          "text": "Он спас нас не по делам праведности, которые бы мы сотворили, а по Своей милости, банею возрождения и обновления Святым Духом,",
+          "sourceFile": "74_tit.txt"
+        },
+        {
+          "book": "Тит",
+          "chapter": 3,
+          "verse": 6,
+          "text": "Которого излил на нас обильно через Иисуса Христа, Спасителя нашего,",
+          "sourceFile": "74_tit.txt"
+        }
+      ]
+    },
+    "py-sblgnt": {
+      "repository": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "url": "https://github.com/morphgnt/py-sblgnt/tree/904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "evidenceClass": "A1",
+      "evidenceClassScope": "Primary witness to the text of this digital transcription, not to its genealogy or a theological conclusion.",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "objectScope": "Pinned digital source tree acquired in full; retained source-file bytes are hashed. Not a claim to have read the entire Bible or inspected printed pages.",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "locatorScope": "Verse and source path in the identified digital version only.",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "rightsScope": "Upstream declarations are recorded above; separate corpus-specific Product clearance has not been established.",
+      "publicationState": "BLOCKED",
+      "publicationScope": "Product promotion is not authorized by this Research control.",
+      "printedPageCheck": false,
+      "files": {
+        "README.md": {
+          "sha256": "eb3b7c36b95004747e59efd8c269fc7dbb1b46b15a5559b4adb4574b22423264",
+          "bytes": 1577
+        },
+        "pysblgnt/sblgnt/66-Ro-morphgnt.txt": {
+          "sha256": "fbe8948cc2684911e665fe7ab59c827877e5bda8bbde75e592d927088b27af16",
+          "bytes": 496299
+        },
+        "pysblgnt/sblgnt/68-2Co-morphgnt.txt": {
+          "sha256": "71b1df410ad3f862b6623aa6568322a1a468eb19d152d7c9e9842d83e09c9e8b",
+          "bytes": 319495
+        },
+        "pysblgnt/sblgnt/75-1Ti-morphgnt.txt": {
+          "sha256": "19bf4b996997bc055a1fa8f49d9a0d3a0802733a7fc5a3e98ccf263e5d3c6142",
+          "bytes": 120779
+        },
+        "pysblgnt/sblgnt/77-Tit-morphgnt.txt": {
+          "sha256": "6232ba7ef63cbb0efea84830d2f2706afc8945953fb92db7437a60d0aaab656d",
+          "bytes": 50521
+        },
+        "pysblgnt/sblgnt/79-Heb-morphgnt.txt": {
+          "sha256": "1e42a7c765a28f37d5cf1a802e37929cc77161161b2998cc3fe9e2c834554231",
+          "bytes": 364692
+        },
+        "pysblgnt/sblgnt/82-2Pe-morphgnt.txt": {
+          "sha256": "d0a0b33bbbe50926403a0f77e908753f1fbfe6ee22f4da4a0bb01e8ce2988968",
+          "bytes": 82980
+        },
+        "pysblgnt/sblgnt/83-1Jn-morphgnt.txt": {
+          "sha256": "a4168a2128c0f3d634c191cbd6b5ac09532877e2ecb1dd801f0a45efb430aa0c",
+          "bytes": 144567
+        }
+      },
+      "chapterVerseNumbers": {
+        "Тит|2": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "verses": [
+        {
+          "book": "1Ин",
+          "chapter": 2,
+          "verse": 1,
+          "text": "Τεκνία μου, ταῦτα γράφω ὑμῖν ἵνα μὴ ἁμάρτητε. καὶ ἐάν τις ἁμάρτῃ, παράκλητον ἔχομεν πρὸς τὸν πατέρα Ἰησοῦν Χριστὸν δίκαιον,",
+          "sourceFile": "pysblgnt/sblgnt/83-1Jn-morphgnt.txt"
+        },
+        {
+          "book": "1Ин",
+          "chapter": 2,
+          "verse": 2,
+          "text": "καὶ αὐτὸς ἱλασμός ἐστιν περὶ τῶν ἁμαρτιῶν ἡμῶν, οὐ περὶ τῶν ἡμετέρων δὲ μόνον ἀλλὰ καὶ περὶ ὅλου τοῦ κόσμου.",
+          "sourceFile": "pysblgnt/sblgnt/83-1Jn-morphgnt.txt"
+        },
+        {
+          "book": "1Ин",
+          "chapter": 4,
+          "verse": 10,
+          "text": "ἐν τούτῳ ἐστὶν ἡ ἀγάπη, οὐχ ὅτι ἡμεῖς ἠγαπήκαμεν τὸν θεόν, ἀλλ’ ὅτι αὐτὸς ἠγάπησεν ἡμᾶς καὶ ἀπέστειλεν τὸν υἱὸν αὐτοῦ ἱλασμὸν περὶ τῶν ἁμαρτιῶν ἡμῶν.",
+          "sourceFile": "pysblgnt/sblgnt/83-1Jn-morphgnt.txt"
+        },
+        {
+          "book": "1Тим",
+          "chapter": 2,
+          "verse": 1,
+          "text": "Παρακαλῶ οὖν πρῶτον πάντων ποιεῖσθαι δεήσεις, προσευχάς, ἐντεύξεις, εὐχαριστίας, ὑπὲρ πάντων ἀνθρώπων,",
+          "sourceFile": "pysblgnt/sblgnt/75-1Ti-morphgnt.txt"
+        },
+        {
+          "book": "1Тим",
+          "chapter": 2,
+          "verse": 2,
+          "text": "ὑπὲρ βασιλέων καὶ πάντων τῶν ἐν ὑπεροχῇ ὄντων, ἵνα ἤρεμον καὶ ἡσύχιον βίον διάγωμεν ἐν πάσῃ εὐσεβείᾳ καὶ σεμνότητι.",
+          "sourceFile": "pysblgnt/sblgnt/75-1Ti-morphgnt.txt"
+        },
+        {
+          "book": "1Тим",
+          "chapter": 2,
+          "verse": 3,
+          "text": "τοῦτο καλὸν καὶ ἀπόδεκτον ἐνώπιον τοῦ σωτῆρος ἡμῶν θεοῦ,",
+          "sourceFile": "pysblgnt/sblgnt/75-1Ti-morphgnt.txt"
+        },
+        {
+          "book": "1Тим",
+          "chapter": 2,
+          "verse": 4,
+          "text": "ὃς πάντας ἀνθρώπους θέλει σωθῆναι καὶ εἰς ἐπίγνωσιν ἀληθείας ἐλθεῖν.",
+          "sourceFile": "pysblgnt/sblgnt/75-1Ti-morphgnt.txt"
+        },
+        {
+          "book": "1Тим",
+          "chapter": 2,
+          "verse": 5,
+          "text": "εἷς γὰρ θεός, εἷς καὶ μεσίτης θεοῦ καὶ ἀνθρώπων ἄνθρωπος Χριστὸς Ἰησοῦς,",
+          "sourceFile": "pysblgnt/sblgnt/75-1Ti-morphgnt.txt"
+        },
+        {
+          "book": "1Тим",
+          "chapter": 2,
+          "verse": 6,
+          "text": "ὁ δοὺς ἑαυτὸν ἀντίλυτρον ὑπὲρ πάντων, τὸ μαρτύριον καιροῖς ἰδίοις·",
+          "sourceFile": "pysblgnt/sblgnt/75-1Ti-morphgnt.txt"
+        },
+        {
+          "book": "1Тим",
+          "chapter": 4,
+          "verse": 10,
+          "text": "εἰς τοῦτο γὰρ κοπιῶμεν καὶ ὀνειδιζόμεθα, ὅτι ἠλπίκαμεν ἐπὶ θεῷ ζῶντι, ὅς ἐστιν σωτὴρ πάντων ἀνθρώπων, μάλιστα πιστῶν.",
+          "sourceFile": "pysblgnt/sblgnt/75-1Ti-morphgnt.txt"
+        },
+        {
+          "book": "2Кор",
+          "chapter": 5,
+          "verse": 14,
+          "text": "ἡ γὰρ ἀγάπη τοῦ Χριστοῦ συνέχει ἡμᾶς, κρίναντας τοῦτο ὅτι εἷς ὑπὲρ πάντων ἀπέθανεν· ἄρα οἱ πάντες ἀπέθανον·",
+          "sourceFile": "pysblgnt/sblgnt/68-2Co-morphgnt.txt"
+        },
+        {
+          "book": "2Кор",
+          "chapter": 5,
+          "verse": 15,
+          "text": "καὶ ὑπὲρ πάντων ἀπέθανεν ἵνα οἱ ζῶντες μηκέτι ἑαυτοῖς ζῶσιν ἀλλὰ τῷ ὑπὲρ αὐτῶν ἀποθανόντι καὶ ἐγερθέντι.",
+          "sourceFile": "pysblgnt/sblgnt/68-2Co-morphgnt.txt"
+        },
+        {
+          "book": "2Пет",
+          "chapter": 2,
+          "verse": 1,
+          "text": "Ἐγένοντο δὲ καὶ ψευδοπροφῆται ἐν τῷ λαῷ, ὡς καὶ ἐν ὑμῖν ἔσονται ψευδοδιδάσκαλοι, οἵτινες παρεισάξουσιν αἱρέσεις ἀπωλείας, καὶ τὸν ἀγοράσαντα αὐτοὺς δεσπότην ἀρνούμενοι, ἐπάγοντες ἑαυτοῖς ταχινὴν ἀπώλειαν·",
+          "sourceFile": "pysblgnt/sblgnt/82-2Pe-morphgnt.txt"
+        },
+        {
+          "book": "Евр",
+          "chapter": 2,
+          "verse": 9,
+          "text": "τὸν δὲ βραχύ τι παρ’ ἀγγέλους ἠλαττωμένον βλέπομεν Ἰησοῦν διὰ τὸ πάθημα τοῦ θανάτου δόξῃ καὶ τιμῇ ἐστεφανωμένον, ὅπως χωρὶς θεοῦ ὑπὲρ παντὸς γεύσηται θανάτου.",
+          "sourceFile": "pysblgnt/sblgnt/79-Heb-morphgnt.txt"
+        },
+        {
+          "book": "Евр",
+          "chapter": 2,
+          "verse": 10,
+          "text": "Ἔπρεπεν γὰρ αὐτῷ, δι’ ὃν τὰ πάντα καὶ δι’ οὗ τὰ πάντα, πολλοὺς υἱοὺς εἰς δόξαν ἀγαγόντα τὸν ἀρχηγὸν τῆς σωτηρίας αὐτῶν διὰ παθημάτων τελειῶσαι.",
+          "sourceFile": "pysblgnt/sblgnt/79-Heb-morphgnt.txt"
+        },
+        {
+          "book": "Евр",
+          "chapter": 2,
+          "verse": 11,
+          "text": "ὅ τε γὰρ ἁγιάζων καὶ οἱ ἁγιαζόμενοι ἐξ ἑνὸς πάντες· δι’ ἣν αἰτίαν οὐκ ἐπαισχύνεται ἀδελφοὺς αὐτοὺς καλεῖν,",
+          "sourceFile": "pysblgnt/sblgnt/79-Heb-morphgnt.txt"
+        },
+        {
+          "book": "Евр",
+          "chapter": 2,
+          "verse": 12,
+          "text": "λέγων· Ἀπαγγελῶ τὸ ὄνομά σου τοῖς ἀδελφοῖς μου, ἐν μέσῳ ἐκκλησίας ὑμνήσω σε·",
+          "sourceFile": "pysblgnt/sblgnt/79-Heb-morphgnt.txt"
+        },
+        {
+          "book": "Евр",
+          "chapter": 2,
+          "verse": 13,
+          "text": "καὶ πάλιν· Ἐγὼ ἔσομαι πεποιθὼς ἐπ’ αὐτῷ· καὶ πάλιν· Ἰδοὺ ἐγὼ καὶ τὰ παιδία ἅ μοι ἔδωκεν ὁ θεός.",
+          "sourceFile": "pysblgnt/sblgnt/79-Heb-morphgnt.txt"
+        },
+        {
+          "book": "Евр",
+          "chapter": 9,
+          "verse": 5,
+          "text": "ὑπεράνω δὲ αὐτῆς Χερουβὶν δόξης κατασκιάζοντα τὸ ἱλαστήριον· περὶ ὧν οὐκ ἔστιν νῦν λέγειν κατὰ μέρος.",
+          "sourceFile": "pysblgnt/sblgnt/79-Heb-morphgnt.txt"
+        },
+        {
+          "book": "Рим",
+          "chapter": 3,
+          "verse": 24,
+          "text": "δικαιούμενοι δωρεὰν τῇ αὐτοῦ χάριτι διὰ τῆς ἀπολυτρώσεως τῆς ἐν Χριστῷ Ἰησοῦ·",
+          "sourceFile": "pysblgnt/sblgnt/66-Ro-morphgnt.txt"
+        },
+        {
+          "book": "Рим",
+          "chapter": 3,
+          "verse": 25,
+          "text": "ὃν προέθετο ὁ θεὸς ἱλαστήριον διὰ πίστεως ἐν τῷ αὐτοῦ αἵματι εἰς ἔνδειξιν τῆς δικαιοσύνης αὐτοῦ διὰ τὴν πάρεσιν τῶν προγεγονότων ἁμαρτημάτων",
+          "sourceFile": "pysblgnt/sblgnt/66-Ro-morphgnt.txt"
+        },
+        {
+          "book": "Рим",
+          "chapter": 3,
+          "verse": 26,
+          "text": "ἐν τῇ ἀνοχῇ τοῦ θεοῦ, πρὸς τὴν ἔνδειξιν τῆς δικαιοσύνης αὐτοῦ ἐν τῷ νῦν καιρῷ, εἰς τὸ εἶναι αὐτὸν δίκαιον καὶ δικαιοῦντα τὸν ἐκ πίστεως Ἰησοῦ.",
+          "sourceFile": "pysblgnt/sblgnt/66-Ro-morphgnt.txt"
+        },
+        {
+          "book": "Рим",
+          "chapter": 5,
+          "verse": 18,
+          "text": "Ἄρα οὖν ὡς δι’ ἑνὸς παραπτώματος εἰς πάντας ἀνθρώπους εἰς κατάκριμα, οὕτως καὶ δι’ ἑνὸς δικαιώματος εἰς πάντας ἀνθρώπους εἰς δικαίωσιν ζωῆς·",
+          "sourceFile": "pysblgnt/sblgnt/66-Ro-morphgnt.txt"
+        },
+        {
+          "book": "Рим",
+          "chapter": 5,
+          "verse": 19,
+          "text": "ὥσπερ γὰρ διὰ τῆς παρακοῆς τοῦ ἑνὸς ἀνθρώπου ἁμαρτωλοὶ κατεστάθησαν οἱ πολλοί, οὕτως καὶ διὰ τῆς ὑπακοῆς τοῦ ἑνὸς δίκαιοι κατασταθήσονται οἱ πολλοί.",
+          "sourceFile": "pysblgnt/sblgnt/66-Ro-morphgnt.txt"
+        },
+        {
+          "book": "Рим",
+          "chapter": 8,
+          "verse": 32,
+          "text": "ὅς γε τοῦ ἰδίου υἱοῦ οὐκ ἐφείσατο, ἀλλὰ ὑπὲρ ἡμῶν πάντων παρέδωκεν αὐτόν, πῶς οὐχὶ καὶ σὺν αὐτῷ τὰ πάντα ἡμῖν χαρίσεται;",
+          "sourceFile": "pysblgnt/sblgnt/66-Ro-morphgnt.txt"
+        },
+        {
+          "book": "Рим",
+          "chapter": 8,
+          "verse": 33,
+          "text": "τίς ἐγκαλέσει κατὰ ἐκλεκτῶν θεοῦ; θεὸς ὁ δικαιῶν·",
+          "sourceFile": "pysblgnt/sblgnt/66-Ro-morphgnt.txt"
+        },
+        {
+          "book": "Рим",
+          "chapter": 8,
+          "verse": 34,
+          "text": "τίς ὁ κατακρινῶν; Χριστὸς ὁ ἀποθανών, μᾶλλον δὲ ἐγερθείς, ὅς καί ἐστιν ἐν δεξιᾷ τοῦ θεοῦ, ὃς καὶ ἐντυγχάνει ὑπὲρ ἡμῶν·",
+          "sourceFile": "pysblgnt/sblgnt/66-Ro-morphgnt.txt"
+        },
+        {
+          "book": "Тит",
+          "chapter": 2,
+          "verse": 11,
+          "text": "Ἐπεφάνη γὰρ ἡ χάρις τοῦ θεοῦ σωτήριος πᾶσιν ἀνθρώποις",
+          "sourceFile": "pysblgnt/sblgnt/77-Tit-morphgnt.txt"
+        },
+        {
+          "book": "Тит",
+          "chapter": 2,
+          "verse": 12,
+          "text": "παιδεύουσα ἡμᾶς, ἵνα ἀρνησάμενοι τὴν ἀσέβειαν καὶ τὰς κοσμικὰς ἐπιθυμίας σωφρόνως καὶ δικαίως καὶ εὐσεβῶς ζήσωμεν ἐν τῷ νῦν αἰῶνι,",
+          "sourceFile": "pysblgnt/sblgnt/77-Tit-morphgnt.txt"
+        },
+        {
+          "book": "Тит",
+          "chapter": 2,
+          "verse": 13,
+          "text": "προσδεχόμενοι τὴν μακαρίαν ἐλπίδα καὶ ἐπιφάνειαν τῆς δόξης τοῦ μεγάλου θεοῦ καὶ σωτῆρος ἡμῶν Ἰησοῦ Χριστοῦ,",
+          "sourceFile": "pysblgnt/sblgnt/77-Tit-morphgnt.txt"
+        },
+        {
+          "book": "Тит",
+          "chapter": 2,
+          "verse": 14,
+          "text": "ὃς ἔδωκεν ἑαυτὸν ὑπὲρ ἡμῶν ἵνα λυτρώσηται ἡμᾶς ἀπὸ πάσης ἀνομίας καὶ καθαρίσῃ ἑαυτῷ λαὸν περιούσιον, ζηλωτὴν καλῶν ἔργων.",
+          "sourceFile": "pysblgnt/sblgnt/77-Tit-morphgnt.txt"
+        },
+        {
+          "book": "Тит",
+          "chapter": 2,
+          "verse": 15,
+          "text": "Ταῦτα λάλει καὶ παρακάλει καὶ ἔλεγχε μετὰ πάσης ἐπιταγῆς· μηδείς σου περιφρονείτω.",
+          "sourceFile": "pysblgnt/sblgnt/77-Tit-morphgnt.txt"
+        }
+      ]
+    }
+  }
+}

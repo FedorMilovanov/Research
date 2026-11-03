@@ -47,11 +47,28 @@ jobs:
           python-version: '3.12'
 
       - name: Validate Python syntax without writing bytecode
-        run: >-
-          python3 -B -m py_compile scripts/validate_atonement_corpus_integrity.py
-          scripts/atonement_claim_register.py scripts/atonement_reshoot_state.py
-          scripts/atonement_drive_mirror_round63.py scripts/atonement_library_index_round63.py
-          scripts/atonement_round_close.py scripts/atonement_history_perturbation_probe.py
+        run: |
+          python3 -B - <<'PY'
+          import ast
+          from pathlib import Path
+          files = [
+              "validate_atonement_corpus_integrity.py", "atonement_claim_register.py", "atonement_reshoot_state.py",
+              "atonement_drive_mirror_round63.py", "atonement_library_index_round63.py", "atonement_round_close.py",
+              "atonement_history_perturbation_probe.py", "atonement_sync_check.py", "atonement_wave3_sources.py",
+              "atonement_wave4_sources.py", "atonement_wave5_sources.py", "atonement_wave6_sources.py", "atonement_wave7_sources.py",
+              "atonement_wave8_sources.py", "atonement_wave9_sources.py", "atonement_source_metrics.py", "test_atonement_sync.py",
+          ]
+          for name in files:
+              path = Path("scripts") / name
+              ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
+          print(f"Python AST: PASS ({len(files)} files); no bytecode written")
+          PY
+
+      - name: Source-backed synchronization and source-label regressions (offline, read-only)
+        run: |
+          python3 -B scripts/atonement_sync_check.py
+          python3 -B scripts/test_atonement_sync.py
+          python3 -B scripts/atonement_crossref_audit.py --check
 
       - name: Atonement corpus integrity (read-only)
         run: python3 -B scripts/validate_atonement_corpus_integrity.py

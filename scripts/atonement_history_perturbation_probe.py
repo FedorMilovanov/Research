@@ -168,8 +168,8 @@ def build(src, work):
     # сравнение меряло бы разницу клонирования, а не задуманное возмущение истории
     make_clone(src, e2)
     base = git(e2, "rev-parse", "--verify", "origin/main")
-    git(e2, "branch", "-f", "probe-main", base)
-    git(e2, "checkout", "-q", "probe-main")
+    # Synthetic history belongs to this disposable clone, not an authoring branch.
+    git(e2, "checkout", "-q", "--detach", base)
     git(e2, "-c", "user.name=probe", "-c", "user.email=probe@invalid", "commit", "-q", "--allow-empty",
         "-m", "проб круга 65: main вырос на коммит, дерево проверяемого ref не изменилось")
     new = git(e2, "rev-parse", "HEAD")

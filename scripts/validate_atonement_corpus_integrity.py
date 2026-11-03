@@ -22,6 +22,8 @@ an audit sentence may legitimately name a file that no longer exists.
 """
 from __future__ import annotations
 
+from atonement_source_metrics import LEGACY_CARRIER_CODES, legacy_carrier_code
+
 import json
 import re
 import sys
@@ -792,7 +794,7 @@ EXEMPT = "<!-- mixed-script:цитата-дефекта -->"
 MASS_FILE = DOCS / "35_four_point_authors_mass_registry.md"
 MASS_ROW = re.compile(r"^\|\s*FP-(\d+)\s*\|")
 MASS_Q = re.compile(r"^- Q-(\d+) —")
-MASS_CLS = ("A1", "A2", "B1", "B2", "C")
+MASS_CLS = LEGACY_CARRIER_CODES  # Historical carrier labels, NOT evidenceClass.
 MASS_LOC = re.compile(r"(с\.\s*\d|с\.\s*\d|pp?\.\s*\d|col\.|пар\.\s*\d|§\s*\d|§\d|PL \d+:\d+|CSEL|GCS|WA \d|по лану|по корпусу)")
 MASS_LANEREF = re.compile(r"`(\d{2})_`")
 MASS_PATHREF = re.compile(r"`(ИСКУПЛЕНИЕ/[A-Za-z0-9_/.\-]+?)(?:\s[^`]*)?`")
@@ -832,8 +834,8 @@ def measure_mass_registry():
     for line in MASS_FILE.read_text(encoding="utf-8", errors="replace").split("\n"):
         m = MASS_ROW.match(line)
         if m:
-            found = re.findall(r"`(A1|A2|B1|B2|C)`", line)
-            rows[int(m.group(1))] = (found[0] if found else None, line)
+            code = legacy_carrier_code(line)
+            rows[int(m.group(1))] = (code, line)
             refs.update(MASS_LANEREF.findall(line))
         else:
             # путь проверяется по всему файлу: ссылка в прозе обязана находиться так же, как в таблице
@@ -1450,24 +1452,28 @@ else:
     if not _ma:
         pass
     else:
-        for _k in ("entries", "perClass", "queueLength", "shareA1Percent", "measuredAt", "method",
-                   "recheckCommand", "perimeter", "classesVocabulary", "why", "foundThisRound", "laneDefectRecorded"):
+        for _k in ("entries", "perLegacyCode", "queueLength", "legacyA1LabelSharePercent", "measuredAt", "method",
+                   "recheckCommand", "perimeter", "legacyCodeVocabulary", "why", "foundThisRound", "laneDefectRecorded"):
             if _k not in _ma:
                 errors.append(f"ПРАВИЛО 23: в fourPointMassRegistry20261023 нет поля «{_k}»")
         if not _ma.get("recheckCommand"):
             errors.append("ПРАВИЛО 23: у реестра массы нет recheckCommand — число, которое нельзя переснять, не имеет права называться измерением")
-        _mdecl = {str(x): int(y) for x, y in (_ma.get("perClass") or {}).items()}
+        if _ma.get("readingMeasured") is not False or _ma.get("sourceClassesMeasured") is not False:
+            errors.append("ПРАВИЛО 23: исторические коды нельзя выдавать за чтение или канонические классы")
+        if any(k in _ma for k in ("perClass", "shareA1Percent", "classesVocabulary")):
+            errors.append("ПРАВИЛО 23: отозванные поля чтения/классов не должны оставаться активными")
+        _mdecl = {str(x): int(y) for x, y in (_ma.get("perLegacyCode") or {}).items()}
         _meas = {c: sum(1 for n, (k, l) in _mrows.items() if k == c) for c in MASS_CLS}
         if len(_mrows) != _ma.get("entries"):
             errors.append(f"ПРАВИЛО 23: заявлено {_ma.get('entries')} строк реестра, обход видит {len(_mrows)} — переснять: {MASS_FILE.name}")
         if _mdecl != _meas:
-            errors.append(f"ПРАВИЛО 23: классы достоверности разошлись: заявлено {_mdecl}, обход видит {_meas}")
+            errors.append(f"ПРАВИЛО 23: исторические коды разошлись: заявлено {_mdecl}, обход видит {_meas}")
         if sum(_mdecl.values()) != _ma.get("entries"):
             errors.append("ПРАВИЛО 23: сумма классов не равна числу строк — реестр обязан объяснять каждую строку, а не большинство")
         if _ma.get("queueLength") != len(_mq):
             errors.append(f"ПРАВИЛО 23: очередь добычи: заявлено {_ma.get('queueLength')} адресов, в файле {len(_mq)}")
-        if not _ma.get("shareA1Percent") or int(_ma.get("shareA1Percent")) != round(100 * _meas["A1"] / max(1, len(_mrows))):
-            errors.append(f"ПРАВИЛО 23: доля прочитанного по первичному изданию: заявлено {int(_ma.get('shareA1Percent') or 0)}%, "
+        if _ma.get("legacyA1LabelSharePercent") is None or int(_ma.get("legacyA1LabelSharePercent")) != round(100 * _meas["A1"] / max(1, len(_mrows))):
+            errors.append(f"ПРАВИЛО 23: доля исторической метки A1 (не чтения): заявлено {int(_ma.get('legacyA1LabelSharePercent') or 0)}%, "
                           f"обход считает {round(100 * _meas['A1'] / max(1, len(_mrows)))}% — «масса собрана» не имеет права звучать громче, чем это число")
         _ids = sorted(_mrows)
         if _ids != list(range(1, len(_ids) + 1)):
@@ -1685,8 +1691,8 @@ if MASS_FILE.is_file() and _LANE_README23.is_file():
     _rows23 = re.findall(r"^\|\s*FP-(\d+)\s*\|(.*?)$", _mt23, re.M)
     _cls23 = {}
     for _n23, _body23 in _rows23:
-        _m23 = re.search(r"`(A1|A2|B1|B2|C)`", _body23)
-        _cls23[_m23.group(1) if _m23 else "нет"] = _cls23.get(_m23.group(1) if _m23 else "нет", 0) + 1
+        _code23 = legacy_carrier_code(_body23) or "нет"
+        _cls23[_code23] = _cls23.get(_code23, 0) + 1
     _q23 = len(set(re.findall(r"^- Q-(\d+) —", _mt23, re.M)))
     _share23 = _cls23.get("A1", 0) * 100 // max(len(_rows23), 1)
     _live23 = {"rows": len(_rows23), "A1": _cls23.get("A1", 0), "A2": _cls23.get("A2", 0),
@@ -1694,13 +1700,13 @@ if MASS_FILE.is_file() and _LANE_README23.is_file():
                "queue": _q23, "share": _share23}
     _pats23 = [
         ("строк-носителей", r"(\d+) строк[а-яё]*[- ]носител", "rows"),
-        ("класс A1", r"`A1` прочитано по изданию \((\d+)\)", "A1"),
-        ("класс A2", r"`A2` сверены выходные данные \((\d+)\)", "A2"),
-        ("класс B1", r"`B1` по вторичному с локатором \((\d+)\)", "B1"),
-        ("класс B2", r"`B2` приписано, не сверено \((\d+)\)", "B2"),
-        ("класс C", r"`C` требуется добыча \((\d+)\)", "C"),
+        ("класс A1", r"`A1` — исторических меток \((\d+)\)", "A1"),
+        ("класс A2", r"`A2` — исторических меток \((\d+)\)", "A2"),
+        ("класс B1", r"`B1` — исторических меток \((\d+)\)", "B1"),
+        ("класс B2", r"`B2` — исторических меток \((\d+)\)", "B2"),
+        ("класс C", r"`C` — исторических меток \((\d+)\)", "C"),
         ("адресатов очереди", r"адресатов — (\d+)", "queue"),
-        ("доля прочитанного по первичному", r"доля прочитанного по первичному — (\d+)\s*%", "share"),
+        ("доля исторической метки A1", r"доля исторической метки A1 — (\d+)\s*%", "share"),
     ]
     _mism23, _seen23 = [], 0
     for _label, _pat, _key in _pats23:
@@ -1856,7 +1862,7 @@ if LIB.is_file():
     for k in _sub:
         if not any(r["driveId"] == _fids[k] and r["kind"] == "folder" for r in _recs):
             _bad25.append(f"{k}: папка из scope.folderIds не описана записью kind=folder в индексе")
-    # ---- правило 23.3 (круг 24, 23.10.2026): класс строки реестра и класс в записи индекса — одно число
+    # ---- правило 23.3: registryRowClass/Classes сохраняют исторический код, НЕ evidenceClass/чтение
     # Повод собственный: круг 24 поднял `FP-160` и `FP-165` и ввёл `FP-207`. Записи индекса о снятых
     # носителях хранят поле registryRowClass, и до этого круга его не сверял никто — индекс имел право
     # продолжать утверждать `C` о строке, которая уже прочитана по изданию. Класс, записанный в двух
@@ -1920,12 +1926,12 @@ if LIB.is_file():
                 _bad23_3.append(f"{_tag23_3}: registryRowClasses перечисляет {_extra23_3[:2]}, которых запись "
                                 "не касается")
     if _bad23_3:
-        errors.append("ПРАВИЛО 23.3: %d расхождений класса между индексом и реестром (%s) — поднимая или "
-                      "понижая строку, править надо и запись о снятом носителе, иначе индекс описывает реестр "
-                      "прошлого круга" % (len(_bad23_3), "; ".join(_bad23_3[:3])))
+        errors.append("ПРАВИЛО 23.3: %d расхождений исторического кода между индексом и реестром (%s) — "
+                      "меняя код строки, править надо и запись о носителе, иначе индекс описывает реестр "
+                      "прошлого круга; это не проверка канонического evidenceClass или чтения" % (len(_bad23_3), "; ".join(_bad23_3[:3])))
     else:
-        notes.append("ПРАВИЛО 23.3: %d записей индекса с объявленным классом строки сверены с реестром — "
-                     "класс носителя и класс строки совпадают" % _clsdecl23_3)
+        notes.append("ПРАВИЛО 23.3: %d записей индекса с историческим кодом строки сверены с реестром — "
+                     "коды совпадают; канонические классы источников и чтение этим не удостоверены" % _clsdecl23_3)
     if _bad25:
         errors.append(f"ПРАВИЛО 25: индекс библиотеки не сходится в {len(_bad25)} местах ({_bad25[:4]}) — индекс "
                       "нужен ровно тогда, когда носителей больше, чем помнится")
@@ -2345,7 +2351,7 @@ if _ars29 is not None:
                     "ПРАВИЛО 29: блок exhaustivenessMatrix20261028 в корпусе отсутствует — матрица "
                     "обязана лежать в реестре, а не в памяти круга"
                 )
-            for _k29 in ("статьи", "итог", "приёмка"):
+            for _k29 in ("статьи", "итог", "приёмка", "readingMeasured", "exhaustivenessMeasured"):
                 if _block29.get(_k29) != _fresh29.get(_k29):
                     errors.append(
                         f"ПРАВИЛО 29: exhaustivenessMatrix20261028.{_k29} разошёлся с обходом — "
@@ -2355,6 +2361,7 @@ if _ars29 is not None:
             for _lab29, _k29 in (
                 ("строк опоры без локатора", "строкОпорБезЛокатора"),
                 ("статей, где C-класс в утверждении", "статейСКлассомC"),
+                ("статей с D-классом", "статейСКлассомD"),
                 ("доводов без локатора в реестрах", "доводовБезЛокатора"),
                 ("нарушений запретов", "нарушенийЗапретов"),
                 ("ссылок на несуществующие записи леджера", "ссылокНаНеизвестныеЗаписи"),
@@ -2365,12 +2372,12 @@ if _ars29 is not None:
                     errors.append(f"ПРАВИЛО 29: приёмка дуги VI нарушена — {_lab29}: {_acc29.get(_k29)}")
             _itt29 = _fresh29.get("итог") or {}
             notes.append(
-                "ПРАВИЛО 29: матрица исчерпываемости: статей %d, строк опор %d (прочитано %d, "
-                "нечитаемо %d), открытых конфликтов уникальных %d, пар «статья × запрет» %d, "
+                "ПРАВИЛО 29: структурная матрица: статей %d, строк опор %d (с меткой класса %d, "
+                "без распознанной метки %d; чтение НЕ измерено), открытых конфликтов уникальных %d, пар «статья × запрет» %d, "
                 "нарушений %d; приёмка — по нулям. Съём: python3 -B scripts/atonement_reshoot_state.py "
                 "--write && python3 -B scripts/atonement_reshoot_state.py --check"
-                % (_itt29.get("статей", -1), _itt29.get("строкОпор", -1), _itt29.get("прочитано", -1),
-                   _itt29.get("нечитаемо", -1), _itt29.get("открытыхУникальных", -1),
+                % (_itt29.get("статей", -1), _itt29.get("строкОпор", -1), _itt29.get("сРаспознаннойМеткой", -1),
+                   _itt29.get("безРаспознаннойМетки", -1), _itt29.get("открытыхУникальных", -1),
                    _itt29.get("запретовПар", -1), _itt29.get("нарушений", -1))
             )
 

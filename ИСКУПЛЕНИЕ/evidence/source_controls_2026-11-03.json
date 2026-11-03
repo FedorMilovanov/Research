@@ -1,0 +1,4416 @@
+{
+  "schemaVersion": 1,
+  "recordedOn": "2026-11-03",
+  "byteVerifiedAt": "2026-11-02T22:49:19+00:00",
+  "repositoryPins": {
+    "OpenGreekAndLatin/First1KGreek": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+    "openscriptures/morphhb": "3d15126fb1ef74867fc1434be1942e837932691f",
+    "openscriptures/HebrewLexicon": "21c9add13bc727d3a951361778e97e3ff7afd1ce",
+    "nathans/lxx-swete": "26bad3eb42bba98471d154c954e36a6f30a0279d",
+    "eliranwong/LXX-Swete-1930": "1d3efc3c63bd384a4f3f07ed37eef54b0d45ac33",
+    "morphgnt/py-sblgnt": "904fed08a14bffea6e1776d8c4c3eeb7c6092688"
+  },
+  "fullCorpusReadingClaimed": false,
+  "printedCollationClaimed": false,
+  "files": {
+    "gregory29": {
+      "path": "data/tlg2022/tlg009/tlg2022.tlg009.1st1K-grc1.xml",
+      "blob": "783983b06c4d343c480f69e53d1e02426b9ffc6c",
+      "bytes": 140461,
+      "sha256": "67003661788c7231331838563489c90cdea899c9ee1a69a9f877262990536ee6",
+      "repo": "OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "localRelativePath": "gregory29/data/tlg2022/tlg009/tlg2022.tlg009.1st1K-grc1.xml",
+      "url": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg2022/tlg009/tlg2022.tlg009.1st1K-grc1.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "gregory30": {
+      "path": "data/tlg2022/tlg010/tlg2022.tlg010.1st1K-grc1.xml",
+      "blob": "979167575864b276d40b164ea355f46f0a790bd3",
+      "bytes": 147773,
+      "sha256": "5231a422100008fc91090e4b39f2563958173c255971ea45ad22bdfb1d335bd5",
+      "repo": "OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "localRelativePath": "gregory30/data/tlg2022/tlg010/tlg2022.tlg010.1st1K-grc1.xml",
+      "url": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg2022/tlg010/tlg2022.tlg010.1st1K-grc1.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "athanasius": {
+      "path": "data/tlg2035/tlg002/tlg2035.tlg002.1st1K-grc1.xml",
+      "blob": "31b652f335235b35d11d681d363b0ef8033be685",
+      "bytes": 291317,
+      "sha256": "458efe0f1655cc5d9a52222bea50d9efcb037fa2888af4f611ef53bec27f4914",
+      "repo": "OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "localRelativePath": "athanasius/data/tlg2035/tlg002/tlg2035.tlg002.1st1K-grc1.xml",
+      "url": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg2035/tlg002/tlg2035.tlg002.1st1K-grc1.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "isaiah-grc1": {
+      "path": "data/tlg0527/tlg048/tlg0527.tlg048.1st1K-grc1.xml",
+      "blob": "26f2aa30ab0d48889b8aaf5a6dcd15b0617d6d27",
+      "bytes": 688809,
+      "sha256": "0c9cbad97585c5eb8927867d9ce6de6f612bc48b5f13fb0a2ef70a4801e2dca5",
+      "repo": "OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "localRelativePath": "isaiah-grc1/data/tlg0527/tlg048/tlg0527.tlg048.1st1K-grc1.xml",
+      "url": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg0527/tlg048/tlg0527.tlg048.1st1K-grc1.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "isaiah-grc2": {
+      "path": "data/tlg0527/tlg048/tlg0527.tlg048.1st1K-grc2.xml",
+      "blob": "226b5bcf248d45823978b8f275e7a2b15beee3fc",
+      "bytes": 520194,
+      "sha256": "bfe2a43203a243442d61bf37700613b45a378bce1d797dd8ef977df564d8ac9b",
+      "repo": "OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "localRelativePath": "isaiah-grc2/data/tlg0527/tlg048/tlg0527.tlg048.1st1K-grc2.xml",
+      "url": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg0527/tlg048/tlg0527.tlg048.1st1K-grc2.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "isaiah-metadata": {
+      "path": "data/tlg0527/tlg048/__cts__.xml",
+      "blob": "aa4712a92bfa44cad4991f0bd467e9a1e8805ff5",
+      "bytes": 3318,
+      "sha256": "6965d2511b1256a7a8c1e709e632a531616baaa9305c1658ca3b3b90b53cdf77",
+      "repo": "OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "localRelativePath": "isaiah-metadata/data/tlg0527/tlg048/__cts__.xml",
+      "url": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg0527/tlg048/__cts__.xml",
+      "evidenceClass": "A2",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/1Chr": {
+      "path": "wlc/1Chr.xml",
+      "blob": "614ceb107774d9ed4010d3ecf33e46d189768a83",
+      "bytes": 1014881,
+      "sha256": "8b59992b6607c6ca0fc423813be8cc244f011c1da32bc8485c0c0f581a897ed4",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/1Chr.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/1Chr.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/1Kgs": {
+      "path": "wlc/1Kgs.xml",
+      "blob": "f28c90fa0604154a92629d578da88c1cddae0263",
+      "bytes": 1189874,
+      "sha256": "832ba10f605dce34c4888ee0a795d91edc2b293391d6ae9c36c36c6350761a3e",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/1Kgs.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/1Kgs.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/1Sam": {
+      "path": "wlc/1Sam.xml",
+      "blob": "a098d99be40bc22a77a2abe646410b6f717fc788",
+      "bytes": 1206608,
+      "sha256": "960432732c22286b82d80b6b25af8d10dc5f2e82a4e5e48b2e3a1b1eea17f3cb",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/1Sam.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/1Sam.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/2Chr": {
+      "path": "wlc/2Chr.xml",
+      "blob": "52ff350ffcffaaa35ab22940d8f1f0d996746345",
+      "bytes": 1222694,
+      "sha256": "507294e8ca0fcf31ec25fe62fa24a7f2581f53116519bf08cfe96ff85e9c99fb",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/2Chr.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/2Chr.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/2Kgs": {
+      "path": "wlc/2Kgs.xml",
+      "blob": "2a7134748a7292c858c4ee913f6d5bfeb59d33fd",
+      "bytes": 1115537,
+      "sha256": "056db5393beaef0a1159d9bcaac7dfd865df9bab2eb240ea90e9fa3f0c0e7449",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/2Kgs.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/2Kgs.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/2Sam": {
+      "path": "wlc/2Sam.xml",
+      "blob": "ae33a1ca6871cbf2ce849b5bebb8056c26e3b495",
+      "bytes": 1013552,
+      "sha256": "e7793e141ed94eadbd2dfb23936abbb4062e81a7dcd41114a6e36644f50b8333",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/2Sam.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/2Sam.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Amos": {
+      "path": "wlc/Amos.xml",
+      "blob": "686510536da8691f7015ade8e472c17f8c50683f",
+      "bytes": 201588,
+      "sha256": "6ad94c6a18076762f1a458720c62156d354e5111ee25719b7792b70792d0084d",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Amos.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Amos.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Dan": {
+      "path": "wlc/Dan.xml",
+      "blob": "2d3ede0464a1f313152276f8d4e97a0cf9e2d356",
+      "bytes": 569236,
+      "sha256": "bc69d0fa9708dacb11ea6d587509250bf1bcc1b4343eac2d6e97f8b41518fc0d",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Dan.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Dan.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Deut": {
+      "path": "wlc/Deut.xml",
+      "blob": "6966deedd88043fbef5a124d50e346711f652efa",
+      "bytes": 1315399,
+      "sha256": "04f8087442a1e67a631cd70f2ac4e42fe0a780ae132edb165a3a29f3f290358f",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Deut.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Deut.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Eccl": {
+      "path": "wlc/Eccl.xml",
+      "blob": "8e071f175b233629e75b227da78e407f8fdb2d69",
+      "bytes": 285122,
+      "sha256": "2dfc858d19048f6479eca33b9fe781c2d7e9059e9ae3ab0b37b802d3afec02bb",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Eccl.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Eccl.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Esth": {
+      "path": "wlc/Esth.xml",
+      "blob": "a644e4aedc0bcde6f609aff48bb17e3efa5d6fc1",
+      "bytes": 292184,
+      "sha256": "f9b5b8adaf504dcac409bb6a27c9328967f47eeb4e920070cd53ef5301299019",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Esth.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Esth.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Exod": {
+      "path": "wlc/Exod.xml",
+      "blob": "9397e001f25d14353793a3924d4e9c605cecfc6c",
+      "bytes": 1524391,
+      "sha256": "04868367cdacb6ccdc61488e923e20f918172042e6437842a0621f63ac5b847f",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Exod.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Exod.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Ezek": {
+      "path": "wlc/Ezek.xml",
+      "blob": "2b9cdaab9f434201f69d5a0d747d8a567f4b9432",
+      "bytes": 1724378,
+      "sha256": "90bf8adfa66b2f6695c702263fe668755c99c6afc386202c12de4f704f5d4e46",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Ezek.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Ezek.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Ezra": {
+      "path": "wlc/Ezra.xml",
+      "blob": "86c6763390817450141661d48ef3c177dcb97ee8",
+      "bytes": 369918,
+      "sha256": "fb28ff697d0ee17eba5b4db47fb7261ee1870cea0d5701bfc77c9e28d4138129",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Ezra.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Ezra.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Gen": {
+      "path": "wlc/Gen.xml",
+      "blob": "09ac9cab0a47c5fae8d747c2868f1cf50d6d1131",
+      "bytes": 1859928,
+      "sha256": "0526e5c9a5fb4d907847645f954ed3d1268fa69decbd872056cedd2668d86449",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Gen.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Gen.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Hab": {
+      "path": "wlc/Hab.xml",
+      "blob": "f64d893d18e79842e85b6457ea643008a81a8f9c",
+      "bytes": 79467,
+      "sha256": "2592b212d816775adc8dac46bd0c46263982c308a186dde64dfb8239c57bd2d1",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Hab.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Hab.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Hag": {
+      "path": "wlc/Hag.xml",
+      "blob": "f2334fa92e2229a8da8b68d3386335e9836a18ac",
+      "bytes": 71754,
+      "sha256": "26ebbae4fe491cf89ce70e1264cbcbf66a562b497cb214b677e67a9a43ad545c",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Hag.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Hag.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Hos": {
+      "path": "wlc/Hos.xml",
+      "blob": "4e737ff7ae7bdf9f21a9c85eaa6e023005ed51cd",
+      "bytes": 236712,
+      "sha256": "f38ae44a3a97d142768bd5f4d40e77b69265184f9a5aec9e6af1b9b226e8daae",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Hos.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Hos.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Isa": {
+      "path": "wlc/Isa.xml",
+      "blob": "b64ca328892a998d0540b5a6bf89ac6a19b574b0",
+      "bytes": 1548674,
+      "sha256": "0807678de609bdef284bed5400b94ddab570d101b593c7f59ae1939015572fa2",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Isa.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Isa.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Jer": {
+      "path": "wlc/Jer.xml",
+      "blob": "de440367b576a694094ab7c6e6a861481c8c7f0d",
+      "bytes": 1977728,
+      "sha256": "1a7ad7bc26a2cae1d3964230e8eb73043bc1f32505cb86cd69a25261dc39f493",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Jer.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Jer.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Job": {
+      "path": "wlc/Job.xml",
+      "blob": "7145ccffb4bfe624c428acc90ecf3adf58974eab",
+      "bytes": 813715,
+      "sha256": "7db3311184122f37a8fd52f3c7c0c4a6d2da7b77ee82f4fdb26bcba9171d297f",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Job.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Job.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Joel": {
+      "path": "wlc/Joel.xml",
+      "blob": "d1a160746190931dccd91014499558fae735586a",
+      "bytes": 105277,
+      "sha256": "c0fefc6881afe949b023968106cdccc05a690734b8bb6e9aa48914d77e5369af",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Joel.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Joel.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Jonah": {
+      "path": "wlc/Jonah.xml",
+      "blob": "158c18ecbf3026fa845105d34b8766d89bcd039e",
+      "bytes": 80534,
+      "sha256": "1e1afcc3aaba1399d5c884ee106894c6bfca87c8c81fa57783ab75a923eee17d",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Jonah.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Jonah.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Josh": {
+      "path": "wlc/Josh.xml",
+      "blob": "8530c301a0211e8c7cb19ee868ca07bdac3aa2ab",
+      "bytes": 919916,
+      "sha256": "a066200ab2269c0a86a2e9ba119a3d0fce8c5f7ecc44bb53ec134b83dffc6006",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Josh.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Josh.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Judg": {
+      "path": "wlc/Judg.xml",
+      "blob": "51062fc90a87e1cc2abedc78d8ec299cd154bbdf",
+      "bytes": 904347,
+      "sha256": "3b3a909f04041dbd52dc6b7293a96ce75d94db8a90fdeda878943db7b8fac57f",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Judg.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Judg.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Lam": {
+      "path": "wlc/Lam.xml",
+      "blob": "c971eb03fbe9562c19e206e013bf657cfba948e8",
+      "bytes": 167766,
+      "sha256": "be68fc6a913313367280c2596e28733ee8cf877c12a65227237733b40d0248c4",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Lam.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Lam.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Lev": {
+      "path": "wlc/Lev.xml",
+      "blob": "71dca6003694912dd283b5d4f7e98d0790a123f6",
+      "bytes": 1085066,
+      "sha256": "e21e70265c9ef500182f8ccb4f4e1186e5a79e1169d24cef23cc479baf07b191",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Lev.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Lev.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Mal": {
+      "path": "wlc/Mal.xml",
+      "blob": "cbc6a0ee566e2911b2c8c4a229d8ee4af82b587b",
+      "bytes": 95722,
+      "sha256": "1583e6a701406dce7b8c2bf85e3522ec31383756de130685fc7c2eb6df8964b2",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Mal.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Mal.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Mic": {
+      "path": "wlc/Mic.xml",
+      "blob": "91f1eb9525085bdf34d5554d93e38943ea350452",
+      "bytes": 145482,
+      "sha256": "267e111adc1b941e32444816af07aa136ecde02cb315cd42597f78b393e67a01",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Mic.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Mic.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Nah": {
+      "path": "wlc/Nah.xml",
+      "blob": "dc0341e8b053449e92daae8197cd28240fd57d00",
+      "bytes": 69823,
+      "sha256": "5993b28bdbee3c922e3e93002d343a655493e8bd45e3472f3b62d77beadcb62c",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Nah.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Nah.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Neh": {
+      "path": "wlc/Neh.xml",
+      "blob": "24319052ec0326b6ddaedb42f8607c2c21eb5b16",
+      "bytes": 512876,
+      "sha256": "be082e95c206469122455b9849d4dd08da50c817732d8198c1beece90402801a",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Neh.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Neh.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Num": {
+      "path": "wlc/Num.xml",
+      "blob": "15339e5a99c7900cf37810f8d6d7f18c59ad0aa0",
+      "bytes": 1496830,
+      "sha256": "02e4febfcc027d10b3e35e4f091eae67a40d26f37b6254faac6b4af053fe4896",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Num.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Num.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Obad": {
+      "path": "wlc/Obad.xml",
+      "blob": "17496d001587f142484239a7337380c68a30e77e",
+      "bytes": 44626,
+      "sha256": "1e893e552a7ed7e2e6d4048637ff5da8a2853a9e4432f4095cede80b959d850c",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Obad.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Obad.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Prov": {
+      "path": "wlc/Prov.xml",
+      "blob": "c999b67fd1b44bb9474ee9a2b2d66c2453ffdd90",
+      "bytes": 678669,
+      "sha256": "964f99c00239b53b854c4686c99490c8d1ac7664784a30afdfc23781a3abb161",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Prov.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Prov.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Ps": {
+      "path": "wlc/Ps.xml",
+      "blob": "2da40d4bfc7d1772eccb6f49cf027f460b8be4f4",
+      "bytes": 1925086,
+      "sha256": "fe55eef316a65fb0f46d833d526ca2fd722e86ff7339f1a39f0c5b7f9062ced2",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Ps.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Ps.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Ruth": {
+      "path": "wlc/Ruth.xml",
+      "blob": "1f4a59a804900a13ace95054f60f854f15a53bb1",
+      "bytes": 136188,
+      "sha256": "fb6a2660383c7176941cb87b2be182ef634b66d49d057635869f4d9cb1f0a11e",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Ruth.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Ruth.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Song": {
+      "path": "wlc/Song.xml",
+      "blob": "1feee17dd05ab7e51e5f6b684d092ef70e9aa0bc",
+      "bytes": 138554,
+      "sha256": "5cd6ae36d32c059aaf794af5a5eaed914ac643486db3e412eb0b969760db82ca",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Song.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Song.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Zech": {
+      "path": "wlc/Zech.xml",
+      "blob": "d2b0328e0611559396df3c1acbe9d8abe7238199",
+      "bytes": 300202,
+      "sha256": "2e287c8d0e0abd3bf601eb8ef9b4ee6ca3ae12cf36c0ed1612a7dcca54a2e777",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Zech.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Zech.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "mt/Zeph": {
+      "path": "wlc/Zeph.xml",
+      "blob": "db77292abc38d6c4655c892f080246883b8180a3",
+      "bytes": 87313,
+      "sha256": "eb5bd2a745fba1ffeed31dfafd834ce7c290929c992390be1a2b9451d22dea2e",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "localRelativePath": "morphhb/wlc/Zeph.xml",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Zeph.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "lexicon/HebrewStrong.xml": {
+      "path": "HebrewStrong.xml",
+      "blob": "6ea1abdaf8c095a634097014dea43428ea5f358f",
+      "bytes": 2749042,
+      "sha256": "a628f4f89f8bdaf2483fd3faf1abc8653cc6717758dfc9f24beb7571d9bdd0c4",
+      "repo": "openscriptures/HebrewLexicon",
+      "commit": "21c9add13bc727d3a951361778e97e3ff7afd1ce",
+      "localRelativePath": "lexicon/HebrewStrong.xml",
+      "url": "https://github.com/openscriptures/HebrewLexicon/blob/21c9add13bc727d3a951361778e97e3ff7afd1ce/HebrewStrong.xml",
+      "evidenceClass": "B1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "swete/README.md": {
+      "path": "README.md",
+      "blob": "15b2fed7001aa1db131163fa29c12dcd39c38011",
+      "bytes": 845,
+      "sha256": "ca5869019f542d01ae0ecd9e0381ddbfe6bd0a6c14ed7edf52b8d0973634c325",
+      "repo": "nathans/lxx-swete",
+      "commit": "26bad3eb42bba98471d154c954e36a6f30a0279d",
+      "localRelativePath": "swete/README.md",
+      "url": "https://github.com/nathans/lxx-swete/blob/26bad3eb42bba98471d154c954e36a6f30a0279d/README.md",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "swete/utils/build.sh": {
+      "path": "utils/build.sh",
+      "blob": "7f82adcb1c717f838d82f050b09bac334936a323",
+      "bytes": 1367,
+      "sha256": "c05237a5acd15847f5af77ce325d7ff86a9f5ce7663085a970ed14c966cc2a74",
+      "repo": "nathans/lxx-swete",
+      "commit": "26bad3eb42bba98471d154c954e36a6f30a0279d",
+      "localRelativePath": "swete/utils/build.sh",
+      "url": "https://github.com/nathans/lxx-swete/blob/26bad3eb42bba98471d154c954e36a6f30a0279d/utils/build.sh",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "eli/00-Swete_versification.csv": {
+      "path": "00-Swete_versification.csv",
+      "blob": "ce401cbc49af57b4cf1c564a445f2be6da2e21dd",
+      "bytes": 492973,
+      "sha256": "39f71aabe259e3878a6d98df02f56eca8d62b1712491601f3812c81c9a1d3c6b",
+      "repo": "eliranwong/LXX-Swete-1930",
+      "commit": "1d3efc3c63bd384a4f3f07ed37eef54b0d45ac33",
+      "localRelativePath": "eli/00-Swete_versification.csv",
+      "url": "https://github.com/eliranwong/LXX-Swete-1930/blob/1d3efc3c63bd384a4f3f07ed37eef54b0d45ac33/00-Swete_versification.csv",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "eli/01-Swete_word_with_punctuations.csv": {
+      "path": "01-Swete_word_with_punctuations.csv",
+      "blob": "a46b09d6de9bff27b94ee5e602d7cbd5d3b6a132",
+      "bytes": 11660409,
+      "sha256": "5cdeb6c993ff2883485b5c2006340bfd711a5d67b84f59aafac4e1caa4f6fbf4",
+      "repo": "eliranwong/LXX-Swete-1930",
+      "commit": "1d3efc3c63bd384a4f3f07ed37eef54b0d45ac33",
+      "localRelativePath": "eli/01-Swete_word_with_punctuations.csv",
+      "url": "https://github.com/eliranwong/LXX-Swete-1930/blob/1d3efc3c63bd384a4f3f07ed37eef54b0d45ac33/01-Swete_word_with_punctuations.csv",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "eli/README.md": {
+      "path": "README.md",
+      "blob": "d58bdb3d091d94d590a3c3b89b7854cf49219824",
+      "bytes": 1066,
+      "sha256": "52a5585fed31e912cceeb80b32e04231b0679e79503ce81bc870cf7a955a8a40",
+      "repo": "eliranwong/LXX-Swete-1930",
+      "commit": "1d3efc3c63bd384a4f3f07ed37eef54b0d45ac33",
+      "localRelativePath": "eli/README.md",
+      "url": "https://github.com/eliranwong/LXX-Swete-1930/blob/1d3efc3c63bd384a4f3f07ed37eef54b0d45ac33/README.md",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "nt/61-Mt-morphgnt.txt": {
+      "path": "pysblgnt/sblgnt/61-Mt-morphgnt.txt",
+      "blob": "39dc846acf5f66b1d8a258e96535cfef53fd6e8c",
+      "bytes": 1307048,
+      "sha256": "424de1ffbb0882588eee6e5fa40e6deda8df72d30a8e62db465b2dd59fb1ffd1",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "localRelativePath": "nt-all/pysblgnt/sblgnt/61-Mt-morphgnt.txt",
+      "url": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/61-Mt-morphgnt.txt",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "nt/62-Mk-morphgnt.txt": {
+      "path": "pysblgnt/sblgnt/62-Mk-morphgnt.txt",
+      "blob": "59020f0dad51a2ee5159bf78c4e45888e82ca011",
+      "bytes": 815868,
+      "sha256": "a840243e327e416a4fecfc38b40b019029ab86e1da6f07932719f2006efc9dc2",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "localRelativePath": "nt-all/pysblgnt/sblgnt/62-Mk-morphgnt.txt",
+      "url": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/62-Mk-morphgnt.txt",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "nt/63-Lk-morphgnt.txt": {
+      "path": "pysblgnt/sblgnt/63-Lk-morphgnt.txt",
+      "blob": "823c8c5e321d0f36b4455d03b8c2f52fe553bf5d",
+      "bytes": 1391651,
+      "sha256": "1cfef8c949d5998f15271ca4be73fd209c227ac92e73e6e5ef4df8e5aca5af77",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "localRelativePath": "nt-all/pysblgnt/sblgnt/63-Lk-morphgnt.txt",
+      "url": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/63-Lk-morphgnt.txt",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "nt/64-Jn-morphgnt.txt": {
+      "path": "pysblgnt/sblgnt/64-Jn-morphgnt.txt",
+      "blob": "2c1af0f23f5c1a1bf4c9da9afe7e480ca4a6e8c7",
+      "bytes": 1065501,
+      "sha256": "5ca99310a5766110c79f09f500a9ffd897bae1b5471863c20266c5e18f7798c7",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "localRelativePath": "nt-all/pysblgnt/sblgnt/64-Jn-morphgnt.txt",
+      "url": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/64-Jn-morphgnt.txt",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "nt/65-Ac-morphgnt.txt": {
+      "path": "pysblgnt/sblgnt/65-Ac-morphgnt.txt",
+      "blob": "6cf33d2232f51f603a6887b19a82873f3959c1f6",
+      "bytes": 1347521,
+      "sha256": "139967d36013c7109dfa4e79c7194d5dd98b64ce16e778816931683603785932",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "localRelativePath": "nt-all/pysblgnt/sblgnt/65-Ac-morphgnt.txt",
+      "url": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/65-Ac-morphgnt.txt",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "nt/66-Ro-morphgnt.txt": {
+      "path": "pysblgnt/sblgnt/66-Ro-morphgnt.txt",
+      "blob": "a2fec7796bbebb55c8693c388792bc2da53220cc",
+      "bytes": 496299,
+      "sha256": "fbe8948cc2684911e665fe7ab59c827877e5bda8bbde75e592d927088b27af16",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "localRelativePath": "nt-all/pysblgnt/sblgnt/66-Ro-morphgnt.txt",
+      "url": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/66-Ro-morphgnt.txt",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "nt/67-1Co-morphgnt.txt": {
+      "path": "pysblgnt/sblgnt/67-1Co-morphgnt.txt",
+      "blob": "d5ad6aa829b1b3c6f9fff887471422c8f26084dc",
+      "bytes": 478139,
+      "sha256": "1fdc6771af3d0f54d476ed69290a69e1a07faf9dbc5a9d5226ad8eb4006947ee",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "localRelativePath": "nt-all/pysblgnt/sblgnt/67-1Co-morphgnt.txt",
+      "url": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/67-1Co-morphgnt.txt",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "nt/68-2Co-morphgnt.txt": {
+      "path": "pysblgnt/sblgnt/68-2Co-morphgnt.txt",
+      "blob": "a75454de6a00e2291342bbec98e6615afeb20a94",
+      "bytes": 319495,
+      "sha256": "71b1df410ad3f862b6623aa6568322a1a468eb19d152d7c9e9842d83e09c9e8b",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "localRelativePath": "nt-all/pysblgnt/sblgnt/68-2Co-morphgnt.txt",
+      "url": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/68-2Co-morphgnt.txt",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "nt/69-Ga-morphgnt.txt": {
+      "path": "pysblgnt/sblgnt/69-Ga-morphgnt.txt",
+      "blob": "15e54b34f1fb02673ce4a5cc2809013fa70ef772",
+      "bytes": 159274,
+      "sha256": "1424fb22225c28379de03f33668a97f9d6ef7ee33209606f785822d0f72408db",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "localRelativePath": "nt-all/pysblgnt/sblgnt/69-Ga-morphgnt.txt",
+      "url": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/69-Ga-morphgnt.txt",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "nt/70-Eph-morphgnt.txt": {
+      "path": "pysblgnt/sblgnt/70-Eph-morphgnt.txt",
+      "blob": "c2fa172a5a84b14c663cfa41e21690c47deb5eb5",
+      "bytes": 171553,
+      "sha256": "1e87d2f4c30d239ce29418dcdfa3eb0c37bf8b698ae71d7f728f6bb8a62f369a",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "localRelativePath": "nt-all/pysblgnt/sblgnt/70-Eph-morphgnt.txt",
+      "url": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/70-Eph-morphgnt.txt",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "nt/71-Php-morphgnt.txt": {
+      "path": "pysblgnt/sblgnt/71-Php-morphgnt.txt",
+      "blob": "e66c8954c8b7233d69b831af27f50177e5add93c",
+      "bytes": 115221,
+      "sha256": "536c6a0b1bd0a8dfa6cf4dd3e3a06b2a011fb003776fb305d069f012e952488c",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "localRelativePath": "nt-all/pysblgnt/sblgnt/71-Php-morphgnt.txt",
+      "url": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/71-Php-morphgnt.txt",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "nt/72-Col-morphgnt.txt": {
+      "path": "pysblgnt/sblgnt/72-Col-morphgnt.txt",
+      "blob": "769f5baf8354e9ce818b7c706ba4787f1bc15d13",
+      "bytes": 112683,
+      "sha256": "1becd31dd6794ef29b6d6b825ab85162bb05c28982d9f31e09fa73eb31502444",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "localRelativePath": "nt-all/pysblgnt/sblgnt/72-Col-morphgnt.txt",
+      "url": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/72-Col-morphgnt.txt",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "nt/73-1Th-morphgnt.txt": {
+      "path": "pysblgnt/sblgnt/73-1Th-morphgnt.txt",
+      "blob": "0aa8e770599ead809ff68dd9c4ec68910bf7a9e8",
+      "bytes": 105369,
+      "sha256": "96aa32cb2ddf076881af2c3f613ffa70065f285c7d31149081b6343122cfbe88",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "localRelativePath": "nt-all/pysblgnt/sblgnt/73-1Th-morphgnt.txt",
+      "url": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/73-1Th-morphgnt.txt",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "nt/74-2Th-morphgnt.txt": {
+      "path": "pysblgnt/sblgnt/74-2Th-morphgnt.txt",
+      "blob": "3a0ca7fa83f8664d923b16363d646d6a6a41b340",
+      "bytes": 58282,
+      "sha256": "d6135a28921e20652125f09894dacfce3d6b702826efbee21e203f6a6f81f2f7",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "localRelativePath": "nt-all/pysblgnt/sblgnt/74-2Th-morphgnt.txt",
+      "url": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/74-2Th-morphgnt.txt",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "nt/75-1Ti-morphgnt.txt": {
+      "path": "pysblgnt/sblgnt/75-1Ti-morphgnt.txt",
+      "blob": "e7c3f4586255d04e680d04f699f84c34e5c02cca",
+      "bytes": 120779,
+      "sha256": "19bf4b996997bc055a1fa8f49d9a0d3a0802733a7fc5a3e98ccf263e5d3c6142",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "localRelativePath": "nt-all/pysblgnt/sblgnt/75-1Ti-morphgnt.txt",
+      "url": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/75-1Ti-morphgnt.txt",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "nt/76-2Ti-morphgnt.txt": {
+      "path": "pysblgnt/sblgnt/76-2Ti-morphgnt.txt",
+      "blob": "fb81d0a1b60c4c60812ffcd99733c8f7d9dc432c",
+      "bytes": 91340,
+      "sha256": "e5c89a53c978c0dd157ad68a999528b579c151fcc655ef189fdcb9aefbdf9934",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "localRelativePath": "nt-all/pysblgnt/sblgnt/76-2Ti-morphgnt.txt",
+      "url": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/76-2Ti-morphgnt.txt",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "nt/77-Tit-morphgnt.txt": {
+      "path": "pysblgnt/sblgnt/77-Tit-morphgnt.txt",
+      "blob": "c2516a7d20d3b48d0e9295e89d727076b3cc8001",
+      "bytes": 50521,
+      "sha256": "6232ba7ef63cbb0efea84830d2f2706afc8945953fb92db7437a60d0aaab656d",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "localRelativePath": "nt-all/pysblgnt/sblgnt/77-Tit-morphgnt.txt",
+      "url": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/77-Tit-morphgnt.txt",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "nt/78-Phm-morphgnt.txt": {
+      "path": "pysblgnt/sblgnt/78-Phm-morphgnt.txt",
+      "blob": "b02b7a4aa6f9c4c5eae8c232dd49b7fad3194979",
+      "bytes": 23155,
+      "sha256": "c06e69ca560c74cf0d36bf005f0b5da5dd6989ca25fa66ba01383332ee58fe7c",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "localRelativePath": "nt-all/pysblgnt/sblgnt/78-Phm-morphgnt.txt",
+      "url": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/78-Phm-morphgnt.txt",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "nt/79-Heb-morphgnt.txt": {
+      "path": "pysblgnt/sblgnt/79-Heb-morphgnt.txt",
+      "blob": "762f117f06d5a61fcbd8c18c534e07a45f1edbd9",
+      "bytes": 364692,
+      "sha256": "1e42a7c765a28f37d5cf1a802e37929cc77161161b2998cc3fe9e2c834554231",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "localRelativePath": "nt-all/pysblgnt/sblgnt/79-Heb-morphgnt.txt",
+      "url": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/79-Heb-morphgnt.txt",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "nt/80-Jas-morphgnt.txt": {
+      "path": "pysblgnt/sblgnt/80-Jas-morphgnt.txt",
+      "blob": "cbe7b0d35e8f4fe6c27f630312a3c82854d5e8ba",
+      "bytes": 125780,
+      "sha256": "5ccb7fb53161808af32e9637269218e7e8538d66ee542ec135f32740f46b9c1a",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "localRelativePath": "nt-all/pysblgnt/sblgnt/80-Jas-morphgnt.txt",
+      "url": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/80-Jas-morphgnt.txt",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "nt/81-1Pe-morphgnt.txt": {
+      "path": "pysblgnt/sblgnt/81-1Pe-morphgnt.txt",
+      "blob": "d9fa3956e0d8074c897abf53ce9a3bfe290b930b",
+      "bytes": 124956,
+      "sha256": "8675bda931f13da17520c2c11c99560bc6f86c64839b5f1fac527e3c8ba98a3b",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "localRelativePath": "nt-all/pysblgnt/sblgnt/81-1Pe-morphgnt.txt",
+      "url": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/81-1Pe-morphgnt.txt",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "nt/82-2Pe-morphgnt.txt": {
+      "path": "pysblgnt/sblgnt/82-2Pe-morphgnt.txt",
+      "blob": "c1a99e39cec5966275c5f2f7030c526d53bcdc42",
+      "bytes": 82980,
+      "sha256": "d0a0b33bbbe50926403a0f77e908753f1fbfe6ee22f4da4a0bb01e8ce2988968",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "localRelativePath": "nt-all/pysblgnt/sblgnt/82-2Pe-morphgnt.txt",
+      "url": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/82-2Pe-morphgnt.txt",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "nt/83-1Jn-morphgnt.txt": {
+      "path": "pysblgnt/sblgnt/83-1Jn-morphgnt.txt",
+      "blob": "fcb917048d5328a859b24714ef5731c7b6dd2791",
+      "bytes": 144567,
+      "sha256": "a4168a2128c0f3d634c191cbd6b5ac09532877e2ecb1dd801f0a45efb430aa0c",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "localRelativePath": "nt-all/pysblgnt/sblgnt/83-1Jn-morphgnt.txt",
+      "url": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/83-1Jn-morphgnt.txt",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "nt/84-2Jn-morphgnt.txt": {
+      "path": "pysblgnt/sblgnt/84-2Jn-morphgnt.txt",
+      "blob": "e7af8a892504cac5d795a56b38e5f9e01a118c0a",
+      "bytes": 16881,
+      "sha256": "5bc0289f61b910cbcd4dc7c61e8e100211e77928dc97ce15bce2f250bb5efa63",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "localRelativePath": "nt-all/pysblgnt/sblgnt/84-2Jn-morphgnt.txt",
+      "url": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/84-2Jn-morphgnt.txt",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "nt/85-3Jn-morphgnt.txt": {
+      "path": "pysblgnt/sblgnt/85-3Jn-morphgnt.txt",
+      "blob": "cb9cac7360d82281024f94fb91a3229720ed4c1f",
+      "bytes": 15905,
+      "sha256": "93ac0aa2f5d806b1854b168d33d3c0991d71adb148a95f3e878aa3fbaa15b2ea",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "localRelativePath": "nt-all/pysblgnt/sblgnt/85-3Jn-morphgnt.txt",
+      "url": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/85-3Jn-morphgnt.txt",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "nt/86-Jud-morphgnt.txt": {
+      "path": "pysblgnt/sblgnt/86-Jud-morphgnt.txt",
+      "blob": "e14bd7e4c4e498374f9a2a3a4090269ad223fedc",
+      "bytes": 34917,
+      "sha256": "e0583180a844519de758a79f24366aa8d1b6998a68942a8a7946f5500bd2b196",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "localRelativePath": "nt-all/pysblgnt/sblgnt/86-Jud-morphgnt.txt",
+      "url": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/86-Jud-morphgnt.txt",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "nt/87-Re-morphgnt.txt": {
+      "path": "pysblgnt/sblgnt/87-Re-morphgnt.txt",
+      "blob": "872ac94421d920d4354bff3324cc02cfee002e76",
+      "bytes": 677970,
+      "sha256": "fb8e3292d6b64dde742f2673e50db7f5e911d769c41f9eba11edf4166d168708",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "localRelativePath": "nt-all/pysblgnt/sblgnt/87-Re-morphgnt.txt",
+      "url": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/87-Re-morphgnt.txt",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "swete/data/48.Isaias.txt": {
+      "path": "data/48.Isaias.txt",
+      "blob": "d93f20f2fd0dc70293fbf717df5d66507e2227e7",
+      "bytes": 553905,
+      "sha256": "e552647fd45e3c06ee506659536be1193fc88779e2c225ee8d963f97ecd4c5e0",
+      "repo": "nathans/lxx-swete",
+      "commit": "26bad3eb42bba98471d154c954e36a6f30a0279d",
+      "localRelativePath": "swete/data/48.Isaias.txt",
+      "url": "https://github.com/nathans/lxx-swete/blob/26bad3eb42bba98471d154c954e36a6f30a0279d/data/48.Isaias.txt",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    },
+    "swete/utils/convert-swete.py": {
+      "path": "utils/convert-swete.py",
+      "blob": "ed18f45315b67a772abb460e3f1a5fa02f4de25c",
+      "bytes": 8780,
+      "sha256": "2d83b3bc3b146c07d16032482fccd19e9e68a1bdc0a336f079f7e97d59a9633e",
+      "repo": "nathans/lxx-swete",
+      "commit": "26bad3eb42bba98471d154c954e36a6f30a0279d",
+      "localRelativePath": "swete/utils/convert-swete.py",
+      "url": "https://github.com/nathans/lxx-swete/blob/26bad3eb42bba98471d154c954e36a6f30a0279d/utils/convert-swete.py",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED"
+    }
+  },
+  "archives": {
+    "morphhb": {
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "url": "https://codeload.github.com/openscriptures/morphhb/tar.gz/3d15126fb1ef74867fc1434be1942e837932691f",
+      "archiveBytes": 20824328,
+      "archiveSha256": "f979b5357fb18391928cd42ee1b95594db6e4f71d8da4e893c6c18f2688093a6"
+    },
+    "lexicon": {
+      "repo": "openscriptures/HebrewLexicon",
+      "commit": "21c9add13bc727d3a951361778e97e3ff7afd1ce",
+      "url": "https://codeload.github.com/openscriptures/HebrewLexicon/tar.gz/21c9add13bc727d3a951361778e97e3ff7afd1ce",
+      "archiveBytes": 4079038,
+      "archiveSha256": "49f09508c5f9acb4b7c1793772b86858b7ffa575cea60dfa397a1713ca7a8a86"
+    },
+    "swete": {
+      "repo": "nathans/lxx-swete",
+      "commit": "26bad3eb42bba98471d154c954e36a6f30a0279d",
+      "url": "https://codeload.github.com/nathans/lxx-swete/tar.gz/26bad3eb42bba98471d154c954e36a6f30a0279d",
+      "archiveBytes": 2659363,
+      "archiveSha256": "1efdc2cd6ef5ce7ecc92c8f0c0e7c6074c01a68ba76716e3a7f749fdd42542aa"
+    },
+    "eli": {
+      "repo": "eliranwong/LXX-Swete-1930",
+      "commit": "1d3efc3c63bd384a4f3f07ed37eef54b0d45ac33",
+      "url": "https://codeload.github.com/eliranwong/LXX-Swete-1930/tar.gz/1d3efc3c63bd384a4f3f07ed37eef54b0d45ac33",
+      "archiveBytes": 9646204,
+      "archiveSha256": "41574db5b44390680bbc433b95acec74f381731fcb5ca51f9abc49d89f3e55d5"
+    },
+    "nt-all": {
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "url": "https://codeload.github.com/morphgnt/py-sblgnt/tar.gz/904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "archiveBytes": 1442410,
+      "archiveSha256": "c637fd79cbc1dd3db4cee43ea470f117620523ae4a433a44ffdd7a093e8f654d"
+    }
+  },
+  "extracts": [
+    {
+      "id": "gregory29-20",
+      "kind": "tei",
+      "file": "gregory29",
+      "locator": {
+        "chapter": 20
+      },
+      "text": "Ἐβαπτίσθη μὲν ὡς ἄνθρωπος, ἀλλ’ ἁμαρτίας ἔλυσεν ὡς θεός· οὐ καθαρσίων αὐτὸς δεόμενος, ἀλλ’ ἵνα ἁγιάσῃ τὰ ὕδατα. ἐπειράσθη ὡς ἄνθρωπος, ἀλλ’ ἐνίκησεν ὡς θεός· ἀλλὰ θαρρεῖν διακελεύεται, ὡς κόσμον νενικηκώς. ἐπείνησεν, ἀλλ’ ἔθρεψε χιλιάδας, ἀλλ’ ἄρτος ἐστὶ ζωτικὸς καὶ οὐράνιος. ἐδίψησεν, ἀλλ’ ἐβόησεν· Ἐάν τις δίψᾳ, ἐρχέσθω πρός με, καὶ πινέτω• ἀλλὰ καὶ πηγάζειν ὑπέσχετο τοὺς πιστεύοντας. ἐκοπίασεν, ἀλλὰ τῶν κοπιώντων καὶ πεφορτισμένων ἐστὶν ἀνάπαυσις. ἐβαρήθη μὲν ὕπνῳ, ἀλλ’ ἐπὶ πελάγους κουφίζεται, ἁλλ’ ἐπιτιμᾷ πνεύμασιν, ἀλλὰ Πέτρον κουφίζει βαπτιζόμενον. δίδωσι τέλος, ἀλλ’ ἐξ ἰχθύος, ἀλλὰ βασιλεύει τῶν ἀπαιτούντων. Σαμαρείτης ἀκούει καὶ δαιμονῶν, πλὴν σώζει τὸν ἀπὸ Ἰερουσαλὴμ καταβαίνοντα καὶ λῃσταῖς περιπεσόντα, πλὴν ὑπὸ δαι- μόνων ἐπιγινώσκεται, καὶ ἀπελαύνει δαίμονας, καὶ λεγεῶνα πνευμάτων βυθίζει, καὶ ὡς ἀστραπὴν ὁρᾷ πίπτοντα τὸν ἀρχηγὸν τῶν δαιμόνων. λιθάζεται, ἀλλ’ οὐχ ἁλίσκεται. προσεύχεται, ἀλλ’ ἐπακούει. δακρύει ἀλλὰ παύει δάκρυον. ἐρωτᾷ ποῦ Λάζαρος, ἄνθρωπος γὰρ ἦν· ἀλλ’ ἐγείρει Θεὸς θεὸς γὰρ ἦν. πωλεῖται, καὶ λίαν εὐώνως, τριάκοντα γὰρ ἀργυρίων, ἁλλ’ ἐξαγοράζει κόσμον, καὶ μεγάλης τιμῆς, τοῦ ἰδίου γὰρ αἵματος. ὡς πρόβατον ἐπὶ σφαγὴν ἄγεται, ἀλλὰ ποιμαίνει τὸν Ἰσραήλ, νῦν δὲ καὶ πᾶσαν τὴν οἰκουμένην. ὡς ἀμνὸς ἄφωνος, ἁλλὰ λόγος ἐστί, φωνῇ βοῶντος ἐν τῆ ἐρήμῳ καταγγελλόμενος. μεμαλάκισται, τετραυμάτισται, ἀλλὰ θεραπεύει πᾶσαν νόσον, καὶ πᾶσαν μαλακίαν. ἐπὶ τὸ ξύλον ἀνάγεται, προσπήγνυται, ἀλλὰ τῷ ξύλῳ τῆς ζωῆς ἀποκαθίστησιν, ἀλλὰ σώζει καὶ λῃστὴν συσταυρούμενον, ἀλλὰ σκοτίζει πᾶν τὸ ὁρώμενον. ὄξος ποτίζεται, χολὴν βρωματίζεται· τίς; ὁ τὸ ὕδωρ εἰς οἶνον μεταβαλών, ὁ τῆς πικρᾶς γεύσεως καταλύτης, ὁ γλυκασμὸς καὶ ὅλος ἐπιθυμία. παραδίδωσι τὴν ψυχήν, ἀλλ’ ἐξουσίαν ἔχει πάλιν λαβεῖν αὐτήν, ἁλλὰ καταπέτασμα ῥήγνυται, τὰ γὰρ ἄνω παραδείκνυται, ἀλλὰ πέτραι σχίζονται, ἀλλὰ νεκροὶ προεγείρονται. ἀποθνήσκει, ζωοποιεῖ δέ, καὶ καταλύει τῷ θανάτῳ τὸν θάνατον. θά- πτεται, ἀλλ’ ἀνίσταται. εἰς ᾅδου κάτεισιν, ἀλλ’ ἀνάγει ψυχάς, ἀλλ’ εἰς οὐρανοὺς ἄνεισιν, ἀλλ’ ἥξει κρῖναι ζῶντας καὶ νεκρούς, καὶ τοὺς τοιούτους βασανίσαι λόγους. εἰ ταῦτα ἐμποιεῖ σοι τῆς πλάνης τὴν ἀφορμήν, ἐκεῖνά σου λύει τὴν πλάνην."
+    },
+    {
+      "id": "gregory30-19",
+      "kind": "tei",
+      "file": "gregory30",
+      "locator": {
+        "chapter": 19
+      },
+      "text": "τῶν δ’ ἄλλων προσηγοριῶν αἱ μὲν τῆς ἐξουσίας εἰσὶ προφανῶς, αἱ δὲ τῆς οἰκονομίας, καὶ ταύτης διττῆς· τῆς μὲν ὑπὲρ τὸ σῶμα, τῆς δὲ ἐν σώματι· οἷον ὁ μὲν παντοκράτωρ, καὶ ὁ βασιλεύς, ἢ τῆς δόξης, ἢ τῶν αἰώνων, ἢ τῶν δυνάμεων τοῦ ἀγαπητοῦ, ἢ τῶν βασιλευόντων · καὶ ὁ κύριος, ἢ σαβαώθ, ὅπερ ἐστὶ στρατιῶν, ἢ τῶν δυνάμεων, ἢ τῶν κυριευόντων. ταῦτα μὲν σαφῶς τῆς ἐξουσίας· ὁ δὲ θεός, ἢ τοῦ σώζειν, ἢ ἐκδικήσεων, ἢ εἰρήνης, ἢ δικαιοσύνης, ἢ Ἀβραὰμ καὶ Ἰσαὰκ καὶ Ἰακώβ, καὶ παντὸς Ἰσραὴλ τοῦ πνευματικοῦ καὶ ὁρῶντος θεόν· ταῦτα δὲ τῆς οἰκονομίας. ἐπειδὴ γὰρ τρισὶ τούτοις διοικούμεθα, δέει τε τιμωρίας, καὶ σωτηρίας ἐλπίδι, πρὸς δὲ καὶ δόξης, καὶ ἀσκήσει τῶν ἀρετῶν, ἐξ ὧν ταῦτα· τὸ μὲν τῶν ἐκδικήσεων ὄνομα οἰκονομεῖ τὸν φόβον· τὸ δὲ τῶν σωτηρίων τὴν ἐλπίδα· τὸ δὲ τῶν ἀρετῶν τὴν ἄσκησιν· ἵν᾿ ὡς τὸν θεὸν ἐν ἑαυτῷ φέρων ὁ τούτων τι κατορθῶν μᾶλλον ἐπείγηται πρὸς τὸ τέλειον, καὶ τὴν ἐξ ἀρετῶν οἰκείωσιν. ταῦτα μὲν οὖν ἔτι κοινὰ θεότητος τὰ ὀνόματα. ἴδιον δὲ τοῦ μὲν ἀνάρχου, πατήρ· τοῦ δὲ ἀνάρχως γεννηθέντος, υἱός· τοῦ δὲ ἀγεννήτως προελθόντος, ἢ προιόντος, τὸ πνεῦμα τὸ ἅγιον. ἀλλ’ ἐπὶ τὰς τοῦ υἱοῦ κλήσεις ἔλθωμεν, ὅπερ ὡρμήθη λέγειν ὁ λόγος."
+    },
+    {
+      "id": "gregory30-20",
+      "kind": "tei",
+      "file": "gregory30",
+      "locator": {
+        "chapter": 20
+      },
+      "text": "Δοκεῖ γάρ μοι λέγεσθαι υἱὸς μέν, ὅτι ταὐτόν ἐστι τῷ πατρὶ κατ’ οὐσίαν ’ καὶ οὐκ ἐκεῖνο μόνον, ἀλλὰ κἀκεῖθεν. μονογενὴς δέ, οὐχ ὅτι μόνος ἐκ μόνου καὶ μόνον, ἀλλ’ ὅτι καὶ μονοτρόπως, οὐχ ὡς τὰ σώματα. λόγος δέ, ὅτι οὕτως ἔχει πρὸς τὸν πατέρα, ὡς πρὸς νοῦν λόγος· οὐ μόνον διὰ τὸ ἀπαθὲς τῆς γεννήσεως, ἁλλὰ καὶ τὸ συναφές, καὶ τὸ ἐξαγγελτικόν. τάχα δ’ ἃν εἴποι τις, ὅτι καὶ ὡς ὅρος πρὸς τὸ ὁριζόμενον, ἐπειδὴ καὶ τοῦτο λέγεται λόγος. ὁ γὰρ νενοηκώς, φησι, τὸν υἱόν, τοῦτο γάρ ἐστι τὸ ἑωρακώς, νενόηκε τὸν πατέρα· καὶ σύντομος ἀπόδειξις καὶ ῥᾳδία τῆς τοῦ πατρὸς φύσεως ὁ υἱός. γέννημα γὰρ ἅπαν τοῦ γεγεννηκότος κότος σιωπῶν λόγος. εἰ δὲ καὶ διὰ τὸ ἐνυπάρχειν τοῖς οὖσι λέγοι τις, οὐχ ἁμαρτήσεται τοῦ λόγου. τί γάρ ἐστιν, ὃ μὴ λόγῳ συνέστηκεν ; σοφία δέ, ὡς ἐπιστήμη θείων τε καὶ ἀνθρωπίνων πραγμάτων. πῶς γὰρ οἷόν τε τὸν πεποιηκότα τοὺς λόγους ἀγνοεῖν ὧν πεποίηκεν ; δύναμις δέ, ὡς συντηρητικὸς τῶν γενομένων, καὶ τὴν τοῦ συνέχεσθαι ταῦτα χορηγῶν δύναμιν. ἁλήθεια δέ, ὡς ἕν, οὐ πολλὰ τῇ φύσει· τὸ μὲν γὰρ ἀληθὲς ἕν, τὸ δὲ ψεῦδος πολυσχιδές· καὶ ὡς καθαρὰ τοῦ πατρὸς σφραγίς, καὶ χαρακτὴρ ἀψευδέστατος. εἰκὼν δέ, ὡς ὁμοούσιον, καὶ ὅτι τοῦτο ἐκεῖθεν, ἀλλ’ οὐκ ἐκ τούτου πατήρ. αὕτη γὰρ εἰκόνος φύσις, μίμημα εἶναι τοῦ ἀρχετύπου, καὶ οὗ λέγεται· πλὴν ὅτι καὶ πλεῖον ἐνταῦθα. ἐκεῖ μὲν γὰρ ἀκίνητος κινουμένου· ἐνταῦθα δὲ ζῶντος καὶ ζῶσα, καὶ πλεῖον ἔχουσα τὸ ἀπαράλλακτον, ἢ τοῦ Ἀδὰμ ὁ Σήθ, καὶ τοῦ γεννῶντος παντὸς τὸ γεννώμενον. τοιαύτη γὰρ ἢ τῶν ἁπλῶν φύσις, μὴ τῷ μὲν ἐοικέναι, τῷ δὲ ἀπεοικέναι, ἀλλ’ ὅλον ὅλου τύπον εἶναι, καὶ ταὐτὸν μᾶλλον, ἢ ἀφομοίωμα. φῶς δέ, ὡς λαμπρότης ψυχῶν καὶ λόγῳ καὶ βίῳ καθαιρομένων. εἰ γὰρ σκότος ἡ ἄγνοια καὶ ἡ ἁμαρτία, φῶς ἂν εἴη ἡ γνῶσις, καὶ βίος ὁ ἔνθεος. ζωὴ δέ, ὅτι φῶς, καὶ πάσης λογικῆς φύσεως σύστασις καὶ οὐσίωσις. ἐν αὐτῷ γὰρ ζῶμεν, καὶ κινούμεθα, καὶ ἐσμέν, κατὰ τὴν διπλῆν τοῦ ἐμφυσήματος δύναμιν, καὶ πνοὴν ἐκεῖθεν ἐμφυσώμενοι πάντες, καὶ πνεῦμα ἅγ ἴον ὅσοι χωρητικοί, καὶ τοσοῦτον, καθ’ ὅσον ἃν τὸ στόμα τῆς διανοίας ἀνοίξωμεν. δικαιοσύνη δέ, ὅτι τοῦ πρὸς ἀξίαν διαιρέτης, καὶ διαιτῶν δικαίως τοῖς ὑπὸ νόμον καὶ τοῖς ὑπὸ χάριν, ψυχῇ καὶ σώματι, ὥστε τὸ μὲν ἄρχειν, τὸ δὲ ἄρχεσθαι, καὶ τὴν ἡγεμονίαν ἔχειν τὸ κρεῖττον κατὰ τοῦ χείρονος, ὡς μὴ τὸ χεῖρον ἐπανίστασθαι τῷ βελτίονι. ἁγιασμὸς δέ, ὡς καθαρότης, ἵνα χωρῆται τὸ καθαρὸν καθαρότητι. ἀπολύτρωσις δέ, ὡς ἐλευθερῶν ἡμᾶς ὑπὸ τῆς ἁμαρτίας κατεχομένους, καὶ λύτρον ἑαυτὸν ἀντιδιδοὺς ἡμῶν τῆς οἰκουμένης καθάρσιον. ἀνάστασις δέ, ὡς ἐντεῦθεν ἡμᾶς ἀπανιστάς, καὶ πρὸς τὴν ζωὴν ἐπανάγων νενεκρωμένους ὑπὸ τῆς ἁμαρτίας."
+    },
+    {
+      "id": "gregory30-21",
+      "kind": "tei",
+      "file": "gregory30",
+      "locator": {
+        "chapter": 21
+      },
+      "text": "ταῦτα μὲν οὖν ἔτι κοινὰ τοῦ τε ὑπὲρ ἡμᾶς καἰ τοῦ δι’ ἡμᾶς. ἂ δὲ ἰδίως ἡμέτερα καὶ τῆς ἐντεῦθεν προσλήψεως· ἄνθρωπος μέν, οὐχ ἵνα χωρηθῇ μόνον διὰ σώματος σώμασιν, ἄλλως οὐκ ἂν χωρηθεὶς διὰ τὸ τῆς φύσεως ἄληπτον· ἀλλ’ ἵνα καὶ ἁγιάσῃ δι’ ἑαυτοῦ τὸν ἄνθρωπον, ὥσπερ ζύμη γενόμενος τῷ παντὶ φυράματι, καὶ πρὸς ἑαυτὸν ἑνώσας τὸ κατακριθὲν ὅλον λύση τοῦ κατακρίματος, πάντα ὑπὲρ πάντων γενόμενος, ὅσα ἡμεῖς, πλὴν τῆς ἁμαρτίας, σῶμα, ψυχή, νοῦς, δι’ ὅσων ὁ θάνατος· τὸ κοινὸν ἐκ τούτων, ἄνθρωπος, θεὸς ὁρώμενος, διὰ τὸ νοούμενον. υἱὸς δὲ ἀνθρώπου, καὶ διὰ τὸν Ἀδάμα, καὶ διὰ τὴν παρθένον, ἐξ ὧν ἐγένετο· τοῦ μέν, ὡς προπάτορος, τῆς δέ, ὡς μητρός, νόμῳ καὶ οὐ νόμῳ γεννήσεως. Χριστὸς δέ, διὰ τὴν θεότητα· χρίσις γὰρ αὕτη τῆς ἀνθρωπότητος, οὐκ ἐνεργείᾳ κατὰ τοὺς ἄλλους χριστοὺς ἁγιάζουσα, παρουσίᾳ δὲ ὅλου τοῦ χρίοντος· ἧς ἔργον ἄνθρωπον ἀκοῦσαι τὸ χρίον, καὶ ποιῆσαι θεὸν τὸ χριόμενον. ὁδὸς δέ, ὡς δι’ ἑαυτοῦ φέρων ἡμᾶς. θύρα δέ, ὡς εἰσαγωγεύς. ποιμὴν δέ, ὡς εἰς τόπον χλόης κατασκηνῶν, καὶ ἐκτρέφων ἐπὶ ὕδατος ἀναπαύσεως, καὶ ἐντεῦθεν ὁδηγῶν, καὶ προπολεμῶν κατὰ τῶν θηρίων· τὸ πλανώμενον ἐπιστρέφων, τὸ ἀπολωλὸς ἐπανάγων, τὸ συντετριμμένον καταδεσμῶν, τὸ ἰσχυρὸν φυλάσσων, καὶ πρὸς τὴν ἐκεῖθεν μάνδραν συνάγων λόγοις ποιμαντικῆς ἐπιστήμης. πρόβατον δέ, ὡς σφάγιον · ἀμνὸς δέ, ὡς τέλειον. ἀρχιερεὺς δέ, ὡς προσαγωγεύς. Μελχισεδὲκ δέ, ὡς ἀμήτωρ τὸ ὑπὲρ ἡμᾶς, καὶ ἀπάτωρ τὸ καθ’ ἡμᾶς· καὶ ὡς ἀγενεαλόγητος τὸ ἄνω· τὴν γὰρ γενεὰν αὐτοῦ, φησί, τίς διηγήσεται ; καὶ ὡς βασιλεὺς Σαλήμ, εἰρήνη δὲ τοῦτο, καὶ ὡς βασιλεὺς δικαιοσύνης, καὶ ὡς ἀποδεκατῶν πατριάρχας κατὰ τῶν πονηρῶν δυνάμεων ἀριστεύοντας. ἔχεις τὰς τοῦ υἱοῦ προσηγορίας. βάδιζε δι’ αὐτῶν, ὅσαι τε ὑψηλαί, θεικῶς, καὶ ὅσαι σωματικαί, συμπαθῶς · μᾶλλον δὲ ὅλον θεικῶς, ἵνα γένῃ θεὸς κάτωθεν ἀνελθών, διὰ τὸν κατελθόντα δι’ ἡμᾶς ἄνωθεν. ἐπὶ πᾶσι, καὶ πρὸ πάντων, ἐκεῖνο τήρει, καὶ οὐκ ἃν σφαλείης ἐν τοῖς ὑψηλοτέροις ἢ ταπεινοτέροις ὀνόμασιν· Ἰησοῦς χριστός, χθὲς καὶ σήμερον σωματικῶς, ὁ αὐτὸς πνευματικῶς, καὶ εἰς τοὺς αἰῶνας. Ἀμήν."
+    },
+    {
+      "id": "athanasius-19",
+      "kind": "tei",
+      "file": "athanasius",
+      "locator": {
+        "chapter": 19
+      },
+      "text": "Ταῦτα δὲ πάντα ποιεῖν τῷ Σωτῆρι καλῶς ἔχειν ἐδόκει· ἵν' ἐπειδὴ τὴν ἐν τοῖς πᾶσιν αὐτοῦ πρόνοιαν ἠγνόησαν οἱ ἄνθρωποι, καὶ οὐ κατενόησαν τὴν διὰ τῆς κτίσεως αὐτοῦ θεότητα, κἂν ἐκ τῶν διὰ τοῦ σώματος ἔργων αὐτοῦ ἀναβλέψωσι, καὶ ἔννοιαν λάβωσι δι’ αὐτοῦ τῆς εἰς τὸν Πατέρα γνώσεως, ἐκ τῶν κατὰ μέρος τὴν εἰς τὰ ὅλα αὐτοῦ πρόνοιαν, ὡς προεῖπον, ἀναλογιζόμενοι Τίς γὰρ ἰδὼν αὐτοῦ τὴν κατὰ δαιμόνων ἐξουσίαν, ἢ τίς δῶν τοὺς δαίμονας ὁμολογοῦντας εἶναι τούτων αὐτὸν Κύριον, ἔτι τὴν διάνοιαν ἀμφίβολον ἕξει, εἰ οὗτός ἐστιν ὁ τοῦ Θεοῦ ἱὸς καὶ ἡ Σοφία, καὶ ἡ Δύναμις. Οὐδὲ γὰρ τὴν κτίσιν αὐτὴν σιωπῆσαι πεποίηκεν, ἀλλὰ τό γε θαυμαστόν, καὶ ἐν τῷ θανάτῳ, μᾶλλον δὲ ἐν αὐτῷ τῷ κατὰ τοῦ θανάτου τροπαίῳ, λέγω δὴ τῷ σταυρῷ, πᾶσα ἡ κτίσις ὡμολόγει τὸν ἐν τῷ σώματι γνωριζόμενον καὶ πάσχοντα οὐχ ἁπλῶς εἶναι ἄνθρωπον, ἀλλὰ Θεοῦ Υἱὸν καὶ Σωτῆρα πάντων. ὅ τε γὰρ ἥλιος ἀπεστράφη, καὶ ἡ γῆ ἐσείετο, καὶ τὰ ὄρη ἐῤῥήγνυτο, πάντες κατέπτησσον. ταῦτα δὲ τὸν μὲν ἐν τῷ σταυρῷ Χριστὸν Θεὸν ἐδείκνυον, τὴν δὲ κτίσιν πᾶσαν τούτου δούλην εἶναι, καὶ μαρτυροῦσαν τῷ φόβῳ τὴν τοῦ δεσπότου παρουσίαν. Οὕτω μὲν οὖν ὁ Θεὸς Λόγος διὰ τῶν ἔργων ἑαυτὸν ἐνεφάνιζε τοῖς ἀνθρώποις. ἀκόλουθον δ’ ἂν εἴη καὶ τὸ τέλος τῆς ἐν σώματι διαγωγῆς καὶ περιπολήσεως αὐτοῦ διηγήσασθαι, καὶ εἰπεῖν καὶ ὁποῖος γέγονεν ὁ τοῦ σώματος θάνατος· μάλιστα ὅτι τὸ κεφάλαιον τῆς πίστεως ἡμῶν ἐστὶ τοῦτο, καὶ πάντες ἁπλῶς ἄνθρωποι περὶ τούτου θρυλλοῦσιν· ἵνα γνῷς ὅτι καὶ ἐκ τούτου μᾶλλον οὐδὲν ἧττον γινώσκεται Θεὸς ὁ Χριστὸς καὶ τοῦ Θεοῦ Υίός."
+    },
+    {
+      "id": "athanasius-20",
+      "kind": "tei",
+      "file": "athanasius",
+      "locator": {
+        "chapter": 20
+      },
+      "text": "Τὴν μὲν οὖν αἰτίαν τῆς σωματικῆς ἐπιφανείας αὐτοῦ, ὡς οἷόν τε ἦν, ἐκ μέρους, καὶ ὡς ἡμεῖς ἠδυνήθημεν νοῆσαι, προείπομεν, ὅτι οὐκ ἄλλου ἦν τὸ φθαρτὸν εἰς ἀφθαρσίαν μεταβαλεῖν, εἰ μὴ αὐτοῦ τοῦ Σωτῆρος, τοῦ καὶ τὴν ἀρχὴν ἐξ οὐκ ὄντων πεποιηκότος τὰ ὅλα· καὶ οὐκ ἄλλου ἦν, τὸ κατ’ εἰκόνα πάλιν ἀνακτίσαι τοῖς ἀνθρώποις, εἰ μὴ τῆς Εἰκόνος τοῦ Πατρός· καὶ οὐκ ἄλλου ἦν τὸ θνητὸν ἀθάνατον παραστῆσαι, εἰ μὴ τῆς Αὐτοζωῆς οὔσης τοῦ Κυρίου ἡμῶν Ἰησοῦ Χριστοῦ· καὶ οὐκ ἄλλου ἦν περὶ Πατρὸς διδάξαι, καὶ τὴν εἰδώλων καθαιρῆσαι θρησκείαν, εἰ μὴ τοῦ τὰ πάντα διακοσμοῦντος Λόγου, καὶ μόνου τοῦ Πατρὸς ὄντος Υἱοῦ μονογενοῦς ἀληθινοῦ. Ἐπειδὴ δὲ καὶ τὸ ὀφειλόμενον παρὰ πάντων ἔδει λοιπὸν ἀποδοθῆναι· ὠφείλετο γὰρ πάντας, ὡς προεῖπον, ἀποθανεῖν, δ’ ὃ μάλιστα καὶ ἐπεδήμησε· τούτου ἕνεκεν μετὰ τὰς περὶ θεότητος αὐτοῦ ἐκ τῶν ἔργων ἀποδείξεις, ἤδη λοιπὸν καὶ ὑπὲρ πάντων τὴν θυσίαν ἀνέφερεν, ἀντὶ πάντων τὸν ἑαυτοῦ ναὸν εἰς θάνατον παραδιδούς, ἵνα τοὺς μὲν πάντας ἀνυπευθύνους καὶ ἐλευθέρους τῆς ἀρχαίας παραβάσεως ποιήσῃ· δείξη δὲ ἑαυτὸν καὶ θανάτου κρείττονα, ἀπαρχὴν τῆς τῶν ὅλων ἀναστάσεως τὸ ἴδιον σῶμα ἄφθαρτον ἐπιδεικνύμενος. Καὶ μήτοι θαυμάσῃς εἰ πολλάκις τὰ αὐτὰ περὶ τῶν αὐτῶν λέγομεν. ἐπειδὴ γὰρ περὶ τῆς εὐδοκίας τοῦ Θεοῦ λαλοῦμεν, μὰ τοῦτο τὸν αὐτὸν εἰς δᾶ πλειόνων ἑρμηνεύομεν, μὴ ἅρα τι παραλιμπάνειν δόξωμεν, καὶ ἔγκλημα γένηται ὡς ἐνδεῶς εἰρηκόσι· καὶ γὰρ βέλτιον ταὐτολογίας μέμψιν ὑποστῆναι, ἡ παραλεῖψαί τι τῶν ὀφειλόντων γραφῆναι. Τὸ μὲν οὖν σῶμα, ὡς καὶ αὐτὸ κοινὴν ἔχον τοῖς πᾶσι τὴν οὐσίαν· σῶμα γὰρ ἦν ἀνθρώπινον· εἰ καὶ καινοτέρῳ θαύματι συνέστη ἐκ παρθένου μόνης, ὅμως θνητὸν ὃν κατὰ ἀκολουθίαν τῶν ὁμοίων καὶ ἀπέθνησκε· τῇ δὲ τοῦ Λόγου εἰς αὐτὸ ἐπιβάσει, οὐκέτι κατὰ τὴν δᾴαν φύσιν ἐφθείρετο· ἀλλὰ διὰ τὸν ἐνοικήσαντα τοῦ Θεοῦ Λόγον, ἐκτὸς ἐγίνετο φθορᾶς. Καὶ συνέβαινεν ἀμφότερα ἐν ταὐτῷ γενέσθαι παραδόξως· ὅτι τε ὁ πάντων θάνατος ἐν τῷ Κυριακῷ σώματι ἐπληροῦτο, καὶ ὁ θάνατος καὶ ἡ φθορὰ δία τὸν συνόντα Λόγον ἐξηφανίζετο. θανάτου γὰρ ἦν χρεία, καὶ θάνατον ὑπὲρ πάντων ἔδει γενέσθαι, [νᾷ τὸ παρὰ πάντων ὀφειλόμενον γένηται. Ὅθεν, ὡς προεῖπον, ὁ Λόγος, ἐπεὶ οὐχ οἷόν τε ἦν αὐτὸν ἀποθανεῖν· ἀθάνατος γὰρ ἦν· ἔλαβεν ἑαυτῷ σῶμα τὸ δυνάμενον ἀποθανεῖν, ἵνα ὡς ἴδιον ἀντὶ πάντων αὐτὸ προσενέγκῃ, καὶ ὡς αὐτὸς ὑπὲρ πάντων πάσχων, διὰ τὴν πρὸς αὐτὸ ἐπίβασιν, καταργήσῃ τὸν τὸ κράτος ἔχοντα τοῦ θανάτου, τουτέστι τὸν διάβολον· καὶ ἀπαλλάξῃ τούτους, ὅσοι φόβῳ θανάτου διὰ παντὸς τοῦ ζῆν ἔνοχοι ἦσαν δουλείας."
+    },
+    {
+      "id": "athanasius-21",
+      "kind": "tei",
+      "file": "athanasius",
+      "locator": {
+        "chapter": 21
+      },
+      "text": "Ἀμέλει τοῦ κοινοῦ πάντων Σωτῆρος θανόντος ὑπὲρ ἡμῶν, οὐκέτι νῦν ὥσπερ πάλαι κατὰ τὴν τοῦ νόμου ἀπειλὴν θανάτῳ ἀποθνήσκομεν οἱ ἐν Χριστῷ πιστοί· πέπαυται γὰρ ἡ τοιαύτη καταδίκη· ἀλλὰ τῆς φθορᾶς παυομένης καὶ ἀφανιζομένης ἐν τῇ τῆς ἀναστάσεως χάριτι, λοιπὸν κατὰ τὸ τοῦ σώματος θνητὸν διαλυόμεθα μόνον τῷ χρόνῳ ὃν ἑκάστῳ ὁ Θεὸς ὥρισεν, ἵνᾷ κρείττονος ἀναστάσεως τυχεῖν δυνηθῶμεν. Δίκην γὰρ τῶν ἐν τῇ γῇ καταβαλλομένων σπερμάτων, οὐκ ἀπολλύμεθα διαλυόμενοι, ἀλλ’ ὡς σπειρόμενοι ἀναστησόμεθα, καταργηθέντος τοῦ θανάτου κατὰ τὴν τοῦ Σωτῆρος χάριν. διὰ τοῦτο γοῦν καὶ ὁ μακάριος Παῦλος ἐγγυητὴς τῆς ἀναστάσεως πᾶσι γενόμενός φησι· δεῖ τὸ φθαρτὸν τοῦτο ἐνδύσασθαι ἀφθαρσίαν, καὶ τὸ θνητὸν τοῦτο ἐνδύσασθαι ἀθανασίαν· ὅταν δὲ τὸ θνητὸν τοῦτο ἐνδύσηται ἀθανασίαν, τότε γενήσεται ὁ λόγος ὁ γεγραμμένος· κατεπόθη ὁ θάνατος εἰς νῖκος. ποῦ σοῦ, θάνατε, τὸ κέντρον; Διὰ τί οὖν, ἄν τις εἴποι, εἴπερ ἀναγκαῖον ἦν ἀντὶ πάντων αὐτὸν παραδοῦναι τὸ σῶμα θανάτῳ, οὐχ ὡς ἄνθρωπος ἰδίως ἀπέθετο τοῦτο, ἀλλὰ καὶ μέχρι τοῦ σταυρωθῆναι παρῆλθεν; ἐντίμως γὰρ μᾶλλον αὐτὸν ἔπρεπεν ἀποθέσθαι τὸ σῶμα, ἤπερ μεθ’ ὕβρεως τὸν τοιοῦτον θάνατον ὑπομεῖναι. Θέα δὴ πάλιν εἰ μὴ ἡ τοιαύτη ἀντίθεσίς ἐστιν ἀνθρωπίνη· τὸ δὲ ὑπὸ τοῦ Σωτῆρος γενόμενον, θεῖον ἀληθῶς καὶ ἄξιον τῆς αὐτοῦ θεότητος διὰ πολλά. Πρῶτον μέν, ὅτι ὁ συμβαίνων τοῖς ἀνθρώποις θάνατος κατὰ ἀσθένειαν τῆς αὐτῶν φύσεως αὐτοῖς παραγίνεται· οὐ δυνάμενοι γὰρ ἐπὶ πολὺ διαμένειν, τῷ χρόνῳ διαλύονται. διὰ τοῦτο γὰρ καὶ νόσοι τούτοις συμβαίνουσι, καὶ ἐξασθενήσαντες ἀποθνήσκουσιν. ὁ δὲ Κύρος οὐκ ἀσθενής, ἀλλὰ Θεοῦ Δύναμις, καὶ Θεοῦ Λόγος ἐστῆ, καὶ Αὐτοζωή. Εἰ μὲν οὖν ἦν ἰδίᾳ που, καὶ κατὰ τὴν συνήθειαν τῶν ἀνθρώπων ἀποθέμενος τὸ σῶμα ἐν κλίνῃ, ἐνομίσθη ἄν καὶ αὐτὸς κατὰ τὴν τῆς φύσεως ἀσθένειαν τοῦτο παθών, καὶ μηδὲν ἔχων πλέον τῶν ἄλλων ἀνθρώπων. ἐπειδὴ δὲ καὶ Ζωὴ ἦν, καὶ Φεοῦ Λόγος, καὶ ἔδει τὸν ὑπὲρ πάντων γενέσθαι θάνατον, διὰ τοῦτο ὡς μὲν [ωὴ καὶ δύναμις ὡν συνίσχυεν ἐν αὐτῷ τὸ σῶμα· ὡς δὲ ὀφεῖλοντος γενέσθαι τοῦ θανάτου, οὐχ ἑαυτῷ, ἀλλὰ παρ’ ἑτέρων ἐλάμβανε τὴν πρόφασιν τοῦ τελειῶσαι τὴν θυσίαν· ἐπεὶ μηδὲ νοσεῖν ἔδει τὸν Κύριον, τὸν τῶν ἄλλων τὰς νόσους θεραπεύοντα. ἀλλ’ οὐδὲ ἐξασθενθσαι δεῖ πόλν τὸ τέμα, ἐν καὶ τὰς τῶν ἄλλων ἀσθενείας ἰσχυροποίει. Διὰ τί οὖν καὶ τὸν θάνατον ὥσπερ καὶ τὸ νοσεῖν οὐκ ἐκώλυσεν; ὅτι διὰ τοῦτον ἔσχε τὸ σῶμα, καὶ ἀπρεπὲς ἦν κωλῦσαι· ἵνα μὴ καὶ ἡ ἀνάστασις ἐμποδισθῇ· προηγήσασθαι μέντοι τοῦ θανάτου νόσον, ἀπρεπὲς πάλιν ἦν, ἵνα μὴ ἀσθένεια τοῦ ἐν τῷ σώματι νομισθῇ, οὐκ ἐπείνασεν οὖν; ναὶ ἐπεῖνασε διὰ τὸ ἴδιον τοῦ σώματος· ἀλλ’ οὐ λιμῷ διεφθάρη, διὰ τὸν φοροῦντα αὐτὸ Κύριον. διὰ τοῦτο εἰ καὶ ἀπέθανε διὰ τὸ ὑπὲρ πάντων λύτρον, ἀλλ’ οὐκ εἶδε διαφθοράν. ὁλόκληρον γὰρ ἀνέστη· ἐπεὶ μηδὲ ἄλλου τινός, ἀλλ’ αὐτῆς τῆς Ζωῆς ἦν τὸ σῶμα."
+    },
+    {
+      "id": "athanasius-25",
+      "kind": "tei",
+      "file": "athanasius",
+      "locator": {
+        "chapter": 25
+      },
+      "text": "Καὶ ταῦτα μὲν πρὸς τοὺς ἔξωθεν ἑαυτοῖς λογισμοὺς ἐπισωρεύοντας· ἂν δὲ καὶ τῶν ἐξ ἡμῶν τις μὴ ὡς φιλόνεικος, ἀλλ’ ὡς φιλομαθής ζητῇ· διὰ τί μὴ ἑτέρως, ἀλλὰ σταυρὸν ὑπέμεινεν; ἀκουέτω καὶ οὗτος ὅτι οὐκ ἄλλως ἢ οὕτως ἡμῖν συνέφερε· καὶ τοῦτο δι’ ἡμᾶς καλῶς ὑπέμεινεν ὁ Κύριος. Εἰ γὰρ τὴν καθ’ ἡμῶν γενομένην κατάραν ἦλθεν αὐτὸς βαστάσαι, πῶς ἂν ἄλλως ἐγένετο κατάρα, εἰ μὴ τὸν ἐπὶ κατάρᾳ γενόμενον θάνατον ἐδέξατο; ἔστι δὲ οὗτος, ὁ σταυρός. οὕτω γὰρ καὶ γέγραπται· ἐπικατάρατος ὁ κρεμάμενος ἐπὶ ξύλου. Ἔπειτα, εἰ ὁ θάνατος τοῦ Κυρίου λύτρον ἐστὶ πάντων, καὶ τῷ θανάτῳ τούτου τὸ μεσότοιχον τοῦ φραγμοῦ λύεται, καὶ γίνεται τῶν ἐθνῶν ἡ κλῆσις· πῶς ἂν ἡμᾶς προσεκαλέσατο, εἰ μὴ ἐσταύρωτο; ἐν μόνῳ γὰρ τῷ σταυρῷ ἐκτεταμέναις χερσί τις ἀποθνήσκει. διὸ καὶ τοῦτο ἔπρεπεν ὑπομεῖναι τὸν Κύριον, καὶ τὰς χεῖρας ἐκτεῖναι, ἵνα τῇ μὲν τὸν παλαιὸν λαόν, τῇ δὲ τοὺς ἀπὸ τῶν ἐθνῶν ἑλκύσῃ, καὶ ἀμφοτέρους ἐν ἑαυτῷ συνάψῃ. Τοῦτο γὰρ καὶ αὐτὸς εἴρηκε, σημαίνων ποίῳ θανάτῳ ἔμελλε λυτροῦσθαι τοὺς πάντας· ὅταν ὑψωθῶ, πάντας ἑλκύσω πρὸς ἐμαυτόν Καὶ πάλιν εἰ ὁ ἐχθρὸς τοῦ γένους ἡμῶν διάβολος, ἐκπεσὼν ἀπὸ τοῦ οὐρανοῦ, περὶ τὸν ἀέρα τὸν ὧδε κάτω πλανᾶται, κἀκεῖ τῶν σὺν αὐτῷ διαμόνων ὡς ὁμοίων ἐν τῇ ἀπειθεία ἐξουσιάζων, φαντασίας μὲν δ’ αὐτῶν ἐνεργεῖ τοῖς ἀπατωμένοις ἐπιχειρεῖ δὲ τοῖς ἀνερχομένοις ἐμποδίζειν· καὶ περὶ τούτου φησὶν ὁ ἀπόστολος· κατὰ τὸν ἄρχοντα τῆς ἐξουσίας τοῦ ἀέρος, τοῦ νῦν ἐνεργοῦντος ἐν τοῖς υἱοῖς τῆς ἀπειθείας· ἦλθε δὲ ὁ Κύριος ἵνα τὸν μὲν διάβολον καταβάλῃ, τὸν δὲ ἀέρα καθαρίσῃ, καὶ ὁδοποιήσῃ ἡμῖν τὴν εἰς οὐρανοὺς ἄνοδον, ὡς εἶπεν ὁ ἀπόστολος, διὰ τοῦ καταπετάσματος, τουτέστι τῆς σαρκὸς αὐτοῦ· τοῦτο δὲ ἔδει γενέσθαι διὰ τοῦ θανάτου· ποίῳ δ’ ἂν ἄλλῳ θανάτῳ ἐγεγόνει ταῦτα, ἢ τῷ ἐν ἀέρι γενομένῳ, φημὶ δὴ τῷ σταυρῷ; μόνος γὰρ ἐν τῷ ἀέρι τις ἀποθνήσκει, ὁ σταυρῷ τελειούμενος. διὸ καὶ εἰκότως τοῦτον ὑπέμεινεν ὁ Κύριος. Οὕτω γὰρ ὑψωθείς, τὸν μὲν ἀέρα ἐκαθάριζεν ἀπό τε τῆς διαβολικῆς καὶ πάσης τῶν δαιμόνων ἐπιβουλῆς λέγων Ἐθεώρουν τὸν Σατανᾶν ὡς ἀστραπὴν πεσόντα· τὴν δὲ εἰς οὐρανοὺς ἄνοδον ὁδοποιῶν ἐνεκαίνιζε λέγων πάλιν· Ἄρατε πύλας οἱ ἄρχοντες ὑμῶν καὶ ἐπάρθητε πύλαι αἰώνιοι. οὐ γὰρ αὐτὸς ὁ Λόγος ἦν ὁ χρῄζων ἀνοίξεως τῶν πυλῶν, πάντων Κύριος ὥν· οὐδὲ κεκλεισμένον ἦν τι τῶν ποιημάτων τῷ ποιητῇ· ἀλλ’ ἡμεῖς ἦμεν οἱ χρῄζοντες, οὕς ἀνέφερεν αὐτὸς δᾶ τοῦ ἰδίου σώματος αὐτοῦ. Ὡς γὰρ ὑπὲρ πάντων αὐτὸ προσήνεγκε τῷ θανάτῳ· οὕτως δέ’ αὐτοῦ πάλιν ὡδοποίησε τὴν εἰς οὐρανοὺς ἄνοδον."
+    },
+    {
+      "id": "eli-Isa-52-10",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.52:10"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "καὶ ἀποκαλύψει Κύριος τὸν βραχίονα τὸν ἅγιον αὐτοῦ ἐνώπιον πάντων τῶν ἐθνῶν, καὶ ὄψονται πάντα ἄκρα τῆς γῆς τὴν σωτηρίαν τὴν παρὰ τοῦ θεοῦ ἡμῶν."
+    },
+    {
+      "id": "eli-Isa-52-13",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.52:13"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "Ἰδοὺ συνήσει ὁ παῖς μου, καὶ ὑψωθήσεται καὶ δοξασθήσεται σφόδρα."
+    },
+    {
+      "id": "isaiah-grc1-52-13",
+      "kind": "tei",
+      "file": "isaiah-grc1",
+      "locator": {
+        "chapter": 52,
+        "verse": 13
+      },
+      "text": "Ἰδοὺ συνήσει ὁ παῖς μου, καὶ ὑψωθήσεται καὶ δοξασθήσεται σφόδρα."
+    },
+    {
+      "id": "isaiah-grc2-52-13",
+      "kind": "tei",
+      "file": "isaiah-grc2",
+      "locator": {
+        "chapter": 52,
+        "verse": 13
+      },
+      "text": "Ἰδοὺ συνήσει ὃ παῖς μου, καὶ ὑψωθήσεται καὶ δοξασθήσεται σφόδρα."
+    },
+    {
+      "id": "eli-Isa-52-14",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.52:14"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "ὃν τρόπον ἐκστήσονται ἐπὶ σὲ πολλοί, οὕτως ἀδοξήσει ἀπὸ ἀνθρώπων τὸ εἶδός σου, καὶ ἡ δόξα σου ἀπὸ τῶν ἀνθρώπων."
+    },
+    {
+      "id": "isaiah-grc1-52-14",
+      "kind": "tei",
+      "file": "isaiah-grc1",
+      "locator": {
+        "chapter": 52,
+        "verse": 14
+      },
+      "text": "ὃν τρόπον ἐκστήσονται ἐπὶ σέ πολλοί, οὕτως ἀδοξήσει ἀπὸ ἀνθρώπων τὸ εἶδός σου, καὶ ἡ δόξα σου ἀπὸ τῶν ἀνθρώπων."
+    },
+    {
+      "id": "isaiah-grc2-52-14",
+      "kind": "tei",
+      "file": "isaiah-grc2",
+      "locator": {
+        "chapter": 52,
+        "verse": 14
+      },
+      "text": "ὅν τρόπον ἐκστήσονται ἐπὶ σὲ πολλοί, οὕτως ἀδοξήσει ἀπὸ ἀνθρώπων τὸ εἶδός σου, καὶ ἡ δόξα σου ἀπὸ τῶν ἀνθρώπων."
+    },
+    {
+      "id": "eli-Isa-52-15",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.52:15"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "οὕτω θαυμάσονται ἔθνη πολλὰ ἐπ᾽ αὐτῷ, καὶ συνέξουσιν βασιλεῖς τὸ στόμα αὐτῶν· ὅτι οἷς οὐκ ἀνηγγέλη περὶ αὐτοῦ ὄψονται, καὶ οἳ οὐκ ἀκηκόασιν συνήσουσιν."
+    },
+    {
+      "id": "isaiah-grc1-52-15",
+      "kind": "tei",
+      "file": "isaiah-grc1",
+      "locator": {
+        "chapter": 52,
+        "verse": 15
+      },
+      "text": "οὕτω θαυμάσονται ἔθνη πολλὰ ἐπʼ αὐτῷ, καὶ συνέξουσιν βασιλεῖς τὸ στόμα αὐτῶν ὅτι οἷς οὐκ ἀνηγγέλη περὶ αὐτοῦ ὄψονται, καὶ οἳ οὐκ ἀκηκόασιν συνήσουσιν."
+    },
+    {
+      "id": "isaiah-grc2-52-15",
+      "kind": "tei",
+      "file": "isaiah-grc2",
+      "locator": {
+        "chapter": 52,
+        "verse": 15
+      },
+      "text": "οὕτως θαυμάσονται ἔθνη πολλὰ ἐπ’ αὐτῷ, καὶ συνάξουσιν βασιλεῖς τὸ στόμα αὐτῶν· ὅτι οἷς οὐκ ἀνηγγέλη περὶ αὐτοῦ ὄψονται, καὶ οἳ. οὐκ ἀκηκόασιν συνήσουσιν."
+    },
+    {
+      "id": "eli-Isa-53-1",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.53:1"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "Κύριε, τίς ἐπίστευσεν τῇ ἀκοῇ ἡμῶν; καὶ ὁ βραχίων Κυρίου τίνι ἀπεκαλύφθη;"
+    },
+    {
+      "id": "isaiah-grc1-53-1",
+      "kind": "tei",
+      "file": "isaiah-grc1",
+      "locator": {
+        "chapter": 53,
+        "verse": 1
+      },
+      "text": "Κύριε, τίς ἐπίστευσεν τῇ ἀκοῇ ἡμῶν; καὶ ὁ βραχίων Κυρίου τίνι ἀπεκαλύφθη;"
+    },
+    {
+      "id": "isaiah-grc2-53-1",
+      "kind": "tei",
+      "file": "isaiah-grc2",
+      "locator": {
+        "chapter": 53,
+        "verse": 1
+      },
+      "text": "Kύριε, τίς ἐπίστευσεν τῇ ἀκοῇ ἡμῶν; καὶ ὃ Κυρίου τίνι ἀπεκαλύφθη;"
+    },
+    {
+      "id": "eli-Isa-53-2",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.53:2"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "ἀνηγγείλαμεν ὡς παιδίον ἐναντίον αὐτοῦ, ὡς ῥίζα ἐν γῇ διψώσῃ· οὐκ ἔστιν εἶδος αὐτῷ οὐδὲ δόξα. καὶ εἴδομεν αὐτόν, καὶ οὐκ εἶχεν εἶδος οὐδὲ κάλλος,"
+    },
+    {
+      "id": "isaiah-grc1-53-2",
+      "kind": "tei",
+      "file": "isaiah-grc1",
+      "locator": {
+        "chapter": 53,
+        "verse": 2
+      },
+      "text": "ἀνηγγείλαμεν ὡς παιδίον ἐναντίον αὐτοῦ, ὡς ῥίζα ἐν γῇ διψώσῃ· οὐκ ἔστιν εἶδος αὐτῷ οὐδὲ δόξα. καὶ εἴδομεν αὐτόν, καὶ οὐκ εἶχεν εἶδος οὐδὲ κάλλος,"
+    },
+    {
+      "id": "isaiah-grc2-53-2",
+      "kind": "tei",
+      "file": "isaiah-grc2",
+      "locator": {
+        "chapter": 53,
+        "verse": 2
+      },
+      "text": "ἀνηγγείλαμεν ἐναντίον αὑτοῦ ὡς παιδίον, ὡς ῥίζα ἐν γῇ διψώσῃ· οὐκ ἔστιν εἶδος αὐτῷ οὐδὲ δόξα. καὶ ἴδομεν· αὐτόν, καὶ οὒκ εἶχεν εἶδος οὐδὲ κάλλος,"
+    },
+    {
+      "id": "eli-Isa-53-3",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.53:3"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "ἀλλὰ τὸ εἶδος αὐτοῦ ἄτιμον καὶ ἐκλιπὸν παρὰ τοὺς υἱοὺς τῶν ἀνθρώπων· ἄνθρωπος ἐν πληγῇ ὢν καὶ εἰδὼς φέρειν μαλακίαν, ὅτι ἀπέστραπται τὸ πρόσωπον αὐτοῦ, ⸆ ἠτιμάσθη καὶ οὐκ ἐλογίσθη."
+    },
+    {
+      "id": "isaiah-grc1-53-3",
+      "kind": "tei",
+      "file": "isaiah-grc1",
+      "locator": {
+        "chapter": 53,
+        "verse": 3
+      },
+      "text": "ἀλλὰ τὸ εἶδος αὐτοῦ ἄτιμον καὶ ἐκλιπὸν παρὰ τοὺς υἱοὺς τῶν ἀνθρώπων ἄνθρωπος ἐν πληγῇ ὢν καὶ εἰδὼς Γ φέρειν μαλακίαν, ὅτι ἀπέστραπται τὸ πρόσωπον αὐτοῦ,¶ ἠτιμάσθη καὶ οὐκ ἐλογίσθη."
+    },
+    {
+      "id": "isaiah-grc2-53-3",
+      "kind": "tei",
+      "file": "isaiah-grc2",
+      "locator": {
+        "chapter": 53,
+        "verse": 3
+      },
+      "text": "ἀλλὰ τὸ εἶδος αὐτοῦ· ἄτιμον, ἐκλεῖπον παρὰ πάντας ἀνθρώπους· ἅνθρωπος ἐν πληγῇ· ὢν καὶ εἰδὼς φέρειν μαλακίαν, ὅτι ἀπέστραπται τὸ πρόσωπον· αὑτοῦ, ἠτιμάσθη καὶ οὐκ ἐλογίσθη."
+    },
+    {
+      "id": "eli-Isa-53-4",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.53:4"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "οὗτος τὰς ἁμαρτίας ἡμῶν φέρει καὶ περὶ ἡμῶν ὀδυνᾶται, καὶ ἡμεῖς ἐλογισάμεθα αὐτὸν εἶναι ἐν πόνῳ καὶ ἐν πληγῇ καὶ ἐν κακώσει."
+    },
+    {
+      "id": "isaiah-grc1-53-4",
+      "kind": "tei",
+      "file": "isaiah-grc1",
+      "locator": {
+        "chapter": 53,
+        "verse": 4
+      },
+      "text": "οὗτος τὰς ἁμαρτίας ἡμῶν φέρει καὶ περὶ ἡμῶν ὀδυνᾶται, καὶ ἡμεῖς ἐλογισάμεθα αὐτὸν εἶναι ἐν πόνῳ καὶ ἐν πληγῇ καὶ ἐν κακώσει."
+    },
+    {
+      "id": "isaiah-grc2-53-4",
+      "kind": "tei",
+      "file": "isaiah-grc2",
+      "locator": {
+        "chapter": 53,
+        "verse": 4
+      },
+      "text": "οὗτος τὰς ἁμαρτίας φέρει καὶ περὶ ἡμῶν ὀδυνᾶται, καὶ ἡμεῖς ἐλογισάμεθα αὐτὸν εἶναι ἐν πόνῳ καὶ ἐν πληγῇ καὶ ἐν κακώσει."
+    },
+    {
+      "id": "eli-Isa-53-5",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.53:5"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "αὐτὸς δὲ ἐτραυματίσθη διὰ τὰς ἁμαρτίας ἡμῶν, καὶ μεμαλάκισται διὰ τὰς ἀνομίας ἡμῶν· παιδία εἰρήνης ἡμῶν ἐπ᾽ αὐτόν, τῷ μώλωπι αὐτοῦ ἡμεῖς ἰάθημεν."
+    },
+    {
+      "id": "isaiah-grc1-53-5",
+      "kind": "tei",
+      "file": "isaiah-grc1",
+      "locator": {
+        "chapter": 53,
+        "verse": 5
+      },
+      "text": "αὐτὸς δὲ ἐτραυματίσθη διὰ τὰς ἁμαρτίας ἡμῶν, καὶ μεμαλάκισται διὰ τὰς ἀνομίας ἡμῶν· παιδία εἰρήνης ἡμῶν ἐπʼ αὐτόν, τῷ μώλωπι αὐτοῦ ἡμεῖς ἰάθημεν."
+    },
+    {
+      "id": "isaiah-grc2-53-5",
+      "kind": "tei",
+      "file": "isaiah-grc2",
+      "locator": {
+        "chapter": 53,
+        "verse": 5
+      },
+      "text": "αὐτὸς δὲ ἐτραυματίσθη διὰ τὰς ἀνομίας ἡμῶν, καὶ ἐμαλακίσθη διὰ τὰς ἁμαρτίας παιδία εἰρήνης ἡμῶν ἐπ’ αὐτόν, τῷ μώλωπι αὑτοῦ ἡμεῖς ἰάθημεν."
+    },
+    {
+      "id": "eli-Isa-53-6",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.53:6"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "πάντες ὡς πρόβατα ἐπλανήθημεν, ἄνθρωπος τῇ ὁδῷ αὐτοῦ ἐπλανήθη· καὶ Κύριος παρέδωκεν αὐτὸν ταῖς ἁμαρτίαις ἡμῶν."
+    },
+    {
+      "id": "isaiah-grc1-53-6",
+      "kind": "tei",
+      "file": "isaiah-grc1",
+      "locator": {
+        "chapter": 53,
+        "verse": 6
+      },
+      "text": "πάντες ὡς πρόβατα ἐπλανήθημεν, ἄνθρωπος τῇ ὁδῷ αὐτοῦ ἐπλανήθη καὶ Κύριος παρέδωκεν αὐτὸν ταῖς ἁμαρτίαις ἡμῶν."
+    },
+    {
+      "id": "isaiah-grc2-53-6",
+      "kind": "tei",
+      "file": "isaiah-grc2",
+      "locator": {
+        "chapter": 53,
+        "verse": 6
+      },
+      "text": "πάντες ὡς πρόβατα ἐπλανήθημεν, ἅνθρωπος Τῇ ὁδῷ αὐτοῦ ἐπλανήθη· καὶ Κύριος παρέδωκεν αὐτὸν ταῖς ἁμαρτίαις ἡμῶν."
+    },
+    {
+      "id": "eli-Isa-53-7",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.53:7"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "καὶ αὐτὸς διὰ τὸ κεκακῶσθαι οὐκ ἀνοίγει τὸ στόμα· ὡς πρόβατον ἐπὶ σφαγὴν ἤχθη, καὶ ὡς ἀμνὸς ἐναντίον τοῦ κείροντος ἄφωνος, οὕτως οὐκ ἀνοίγει τὸ στόμα αὐτοῦ."
+    },
+    {
+      "id": "isaiah-grc1-53-7",
+      "kind": "tei",
+      "file": "isaiah-grc1",
+      "locator": {
+        "chapter": 53,
+        "verse": 7
+      },
+      "text": "καὶ αὐτὸς διὰ τὸ κεκακῶσθαι οὐκ ἀνοίγει τὸ στόμα· ὡς πρόβατον ἐπὶ σφαγὴν ἤχθη, καὶ ὡς ἀμνὸς ἐναντίον τοῦ κείροντος ἄφωνος, οὕτως οὐκ ἀνοίγει τὸ στόμα αὐτοῦ."
+    },
+    {
+      "id": "isaiah-grc2-53-7",
+      "kind": "tei",
+      "file": "isaiah-grc2",
+      "locator": {
+        "chapter": 53,
+        "verse": 7
+      },
+      "text": "καὶ αὐτὸς διὰ τὸ κεκακῶσθαι οὐκ ἀνοίγει τὸ στόμα· ὡς πρόβατον ἐπὶ σφαγὴν ἤχθη, καὶ ὡς ἀμνὸς ἐναντίον τοῦ κείραντος αὐτὸν ἄφωνος, οὕτως οὔκ ἀνοίγει τὸ στόμα αὑτοῦ."
+    },
+    {
+      "id": "eli-Isa-53-8",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.53:8"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "ἐν τῇ ταπεινώσει ἡ κρίσις αὐτοῦ ἤρθη· τὴν γενεὰν αὐτοῦ τίς διηγήσεται; ὅτι αἴρεται ἀπὸ τῆς γῆς ἡ ζωὴ αὐτοῦ, ἀπὸ τῶν ἀνομιῶν τοῦ λαοῦ μου ἤχθη εἰς θάνατον."
+    },
+    {
+      "id": "isaiah-grc1-53-8",
+      "kind": "tei",
+      "file": "isaiah-grc1",
+      "locator": {
+        "chapter": 53,
+        "verse": 8
+      },
+      "text": "ἐν τῇ ταπεινώσει ἡ κρίσις αὐτοῦ ἤρθη· τὴν γενεὰν αὐτοῦ τίς διηγήσεται ; ὅτι αἴρεται ἀπὸ τῆς γῆς ἡ ζωὴ αὐτοῦ, ἀπὸ τῶν ἀνομιῶν τοῦ λαοῦ μου ἤχθη εἰς θάνατον."
+    },
+    {
+      "id": "isaiah-grc2-53-8",
+      "kind": "tei",
+      "file": "isaiah-grc2",
+      "locator": {
+        "chapter": 53,
+        "verse": 8
+      },
+      "text": "ἐν τῇ ταπεινώσει ἦ κρίσις αὐτοῦ τὴν γενεὰν αὐτοῦ τίς διηγήσεται; ὅτι αἴρεται ἀπὸ τῆς γῆς ἡ ζωὴ αὐτοῦ, ἀπὸ τῶν ἀνομιῶν τοῦ λαοῦ μου ἤχθη εἰς θάνατον."
+    },
+    {
+      "id": "eli-Isa-53-9",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.53:9"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "καὶ δώσω τοὺς πονηροὺς ἀντὶ τῆς ταφῆς αὐτοῦ, καὶ τοὺς πλουσίους ἀντὶ τοῦ θανάτου· ὅτι ἀνομίαν οὐκ ἐποίησεν, οὐδὲ δόλον ἐν τῷ στόματι αὐτοῦ."
+    },
+    {
+      "id": "isaiah-grc1-53-9",
+      "kind": "tei",
+      "file": "isaiah-grc1",
+      "locator": {
+        "chapter": 53,
+        "verse": 9
+      },
+      "text": "καὶ δώσω τοὺς πονηροὺς ἀντὶ τῆς ταφῆς αὐτοῦ, καὶ τοὺς πλουσίους ἀντὶ τοῦ θανάτου· ὅτι ἀνομίαν οὐκ ἐποίησεν, οὐδὲ δόλον ἐν τῷ στόματι αὐτοῦ."
+    },
+    {
+      "id": "isaiah-grc2-53-9",
+      "kind": "tei",
+      "file": "isaiah-grc2",
+      "locator": {
+        "chapter": 53,
+        "verse": 9
+      },
+      "text": "καὶ δώσω τοὺς καὶ αὐτὸς διὰ τὸ πονηροὺς ἀντὶ τῆς ταφῆς αὐτοῦ, καὶ τοὺς πλουσίους ἀντὶ τοῦ θανάτου αὐτοῦ· ὅτι ἀνομίαν οὐκ ἐποίησεν, οὐδὲ εὑρέθη δόλος ἐν τῷ στόματι αὑτοῦ."
+    },
+    {
+      "id": "eli-Isa-53-10",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.53:10"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "καὶ Κύριος βούλεται καθαρίσαι αὐτὸν τῆς πληγῆς· ἐὰν δῶτε περὶ ἁμαρτίας, ἡ ψυχὴ ἡμῶν ὄψεται σπέρμα μακρόβιον· καὶ βούλεται Κύριος ἀφελεῖν ἀπὸ τοῦ πόνου τῆς ψυχῆς αὐτοῦ,"
+    },
+    {
+      "id": "isaiah-grc1-53-10",
+      "kind": "tei",
+      "file": "isaiah-grc1",
+      "locator": {
+        "chapter": 53,
+        "verse": 10
+      },
+      "text": "καὶ Κύριος βούλεται καθαρίσαι αὐτὸν τῆς πληγῆς· ἐὰν δῶτε περὶ ἁμαρτίας, ἡ ψυχὴ ἡμῶν ὄψεται σπέρμα μακρόβιον· καὶ βούλεται Κύριος ἀφελεῖν ἀπὸ τοῦ πόνου τῆς ψυχῆς αὐτοῦ,"
+    },
+    {
+      "id": "isaiah-grc2-53-10",
+      "kind": "tei",
+      "file": "isaiah-grc2",
+      "locator": {
+        "chapter": 53,
+        "verse": 10
+      },
+      "text": "καὶ Κύριος βούλεται καθαρίσαι αὐτὸν ἀπὸ τῆς πληγῆς· ἐὰν δῶτε περὶ ἁμαρτίας, ἡ ὑμῶν ὄψεται σπέρμα μακρόβιον· καὶ βούλεται Κύριος ἀφελεῖν ἀπὸ τοῦ πόνου τῆς ψυχῆς αὐτοῦ,"
+    },
+    {
+      "id": "eli-Isa-53-11",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.53:11"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "δεῖξαι αὐτῷ φῶς καὶ πλάσαι τῇ συνέσει, δικαιῶσαι δίκαιον εὖ δουλεύοντα πολλοῖς, καὶ τὰς ἁμαρτίας αὐτῶν αὐτὸς ἀνοίσει."
+    },
+    {
+      "id": "isaiah-grc1-53-11",
+      "kind": "tei",
+      "file": "isaiah-grc1",
+      "locator": {
+        "chapter": 53,
+        "verse": 11
+      },
+      "text": "δεῖξαι αὐτῷ φῶς καὶ πλάσαι τῇ συνέσει, δικαιῶσαι δίκαιον εὖ δουλεύοντα πολλοῖς, καὶ τὰς ἁμαρτίας αὐτῶν αὐτὸς ἀνοίσει."
+    },
+    {
+      "id": "isaiah-grc2-53-11",
+      "kind": "tei",
+      "file": "isaiah-grc2",
+      "locator": {
+        "chapter": 53,
+        "verse": 11
+      },
+      "text": "δεῖξαι αὐτῷ φῶς καὶ πλάσαι τῇ συνέσει, δικαιῶσαι δίκαιον εὖ δουλεύοντα πολλοῖς, καὶ τὰς ἁμαρτίας αὐτῶν αὑτὸς ἀνοίσει."
+    },
+    {
+      "id": "eli-Isa-53-12",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.53:12"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "διὰ τοῦτο αὐτὸς κληρονομήσει πολλούς, καὶ τῶν ἰσχυρῶν μεριεῖ σκῦλα· ἀνθ᾽ ὧν παρεδόθη εἰς θάνατον ἡ ψυχὴ αὐτοῦ, καὶ ἐν τοῖς ἀνόμοις ἐλογίσθη, καὶ αὐτὸς ἁμαρτίας πολλῶν ἀνήνεγκεν, καὶ διὰ τὰς ἀνομίας αὐτῶν παρεδόθη."
+    },
+    {
+      "id": "isaiah-grc1-53-12",
+      "kind": "tei",
+      "file": "isaiah-grc1",
+      "locator": {
+        "chapter": 53,
+        "verse": 12
+      },
+      "text": "διὰ τοῦτο αὐτὸς κληρονομήσει πολλούς, καὶ τῶν ἰσχυρῶν μεριεῖ σκῦλα· ἀνθʼ ὦν παρεδόθη εἰς θάνατον ἡ ψυχὴ αὐτοῦ, καὶ ἐν τοῖς ἀνόμοις ἐλογίσθη, καὶ αὐτὸς ἁμαρτίας πολλῶν ἀνήνεγκεν, καὶ διὰ τὰς ἀνομίας αὐτῶν παρεδόθη."
+    },
+    {
+      "id": "isaiah-grc2-53-12",
+      "kind": "tei",
+      "file": "isaiah-grc2",
+      "locator": {
+        "chapter": 53,
+        "verse": 12
+      },
+      "text": "διὰ τοῦτο αὐτὸς κληρονομήσει πολλούς, καὶ τῶν ἰσχυρῶν μεριεῖ σκῦλα· ἀνθ’ ὧν παρεδόθη εἷς θάνατον ἡ αὐτοῦ, καὶ ἐν τοῖς ἀνόμοις ἐλογίσθη, καὶ αὐτὸς ἁμαρτίας πολλῶν ἀνήνεγκεν, καὶ διὰ τὰς ἁμαρτίας αὐτῶν παρεδόθη."
+    },
+    {
+      "id": "eli-Isa-1-11",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.1:11"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "τί μοι πλῆθος τῶν θυσιῶν ὑμῶν; λέγει Κύριος· πλήρης εἰμὶ ὁλοκαυτωμάτων κριῶν, καὶ στέαρ ἀρνῶν καὶ αἷμα ταύρων καὶ τράγων οὐ βούλομαι,"
+    },
+    {
+      "id": "isaiah-grc1-1-11",
+      "kind": "tei",
+      "file": "isaiah-grc1",
+      "locator": {
+        "chapter": 1,
+        "verse": 11
+      },
+      "text": "τί μοι πλῆθος τῶν θυσιῶν ὑμῶν ; λέγει Κύριος· πλήρης εἰμὶ ὁλοκαυτωμάτων κριῶν, καὶ στέαρ ἀρνῶν καὶ αἷμα ταύρων καὶ τράγων οὐ βούλομαι,"
+    },
+    {
+      "id": "isaiah-grc2-1-11",
+      "kind": "tei",
+      "file": "isaiah-grc2",
+      "locator": {
+        "chapter": 1,
+        "verse": 11
+      },
+      "text": "τί ἐμοὶ πλῆθος τῶν θυσιῶν ὑμῶν ; λέγει Κύριος· πλήρης εἰμὶ ὁλοκαυτωμάτων κριῶν, καὶ στέαρ ἀρνῶν καὶ αἷμα ταύρων καὶ τράγων οὐ βούλομαι,"
+    },
+    {
+      "id": "eli-Isa-1-12",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.1:12"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "οὐδ᾽ ἂν ἔρχησθε ὀφθῆναί μοι. τίς γὰρ ἐξεζήτησεν ταῦτα ἐκ τῶν χειρῶν ὑμῶν; πατεῖν τὴν αὐλήν μου"
+    },
+    {
+      "id": "isaiah-grc1-1-12",
+      "kind": "tei",
+      "file": "isaiah-grc1",
+      "locator": {
+        "chapter": 1,
+        "verse": 12
+      },
+      "text": "οὐδ’ ἂν ἔρχησθε ὀφθῆναί μοι. τίς γὰρ ἐξεζήτησεν ταῦτα ἐκ τῶν χειρῶν ὑμῶν; πατεῖν τὴν αὐλὴν μου"
+    },
+    {
+      "id": "isaiah-grc2-1-12",
+      "kind": "tei",
+      "file": "isaiah-grc2",
+      "locator": {
+        "chapter": 1,
+        "verse": 12
+      },
+      "text": "οὐδ' ἂν ἔρχησθε ὀφθῆναί μοι. τίς γὰρ ἐξεζήτησεν ταῦτα ἐκ τῶν χειρῶν ὑμῶν; πατεῖν τὴν αὐλήν μου"
+    },
+    {
+      "id": "eli-Isa-1-13",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.1:13"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "οὐ προσθήσεσθε· ἐὰν φέρητε σεμίδαλιν, μάταιον· θυμίαμα, βδέλυγμά μοί ἐστιν· τὰς νουμηνίας ὑμῶν καὶ τὰ σάββατα καὶ ἡμέραν μεγάλην οὐκ ἀνέχομαι· νηστείαν καὶ ἀργίαν"
+    },
+    {
+      "id": "isaiah-grc1-1-13",
+      "kind": "tei",
+      "file": "isaiah-grc1",
+      "locator": {
+        "chapter": 1,
+        "verse": 13
+      },
+      "text": "οὐ προσθήσεσθε· ἐὰν φέρητε σεμίδαλιν, μάταιον· θυμίαμα, βδέλυγμά μοί ἐστιν· τὰς νουμηνίας ὑμῶν καὶ τὰ σάββατα καὶ ἡμέραν μεγάλην οὐκ ἀνέχομαι· νηστείαν καὶ ἀργίαν"
+    },
+    {
+      "id": "isaiah-grc2-1-13",
+      "kind": "tei",
+      "file": "isaiah-grc2",
+      "locator": {
+        "chapter": 1,
+        "verse": 13
+      },
+      "text": "οὐ προσθήσεσθε· ἐὰν φέρητέ μοι σεμίδαλιν, μάταιον· θυμίαμα, βδέλυγμά μοί ἐστιν· τὰς νουμηνίας ὑμῶν καὶ τὰ σάββατα καὶ ἡμέραν μεγάλην οὐκ ἀνέχομαι· νηστείαν καὶ ἀργείαν"
+    },
+    {
+      "id": "eli-Isa-1-14",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.1:14"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "καὶ τὰς νουμηνίας ὑμῶν καὶ τὰς ἑορτὰς ὑμῶν μισεῖ ἡ ψυχή μου· ἐγενήθητέ μοι εἰς πλησμονήν, οὐκέτι ἀνήσω τὰς ἁμαρτίας ὑμῶν."
+    },
+    {
+      "id": "isaiah-grc1-1-14",
+      "kind": "tei",
+      "file": "isaiah-grc1",
+      "locator": {
+        "chapter": 1,
+        "verse": 14
+      },
+      "text": "καὶ τὰς νουμηνίας ὑμῶν καὶ τὰς ἑορτὰς ὑμῶν μισεῖ ἡ ψυχή μου· ἐγενήθητέ μοι εἰς πλησμονήν, οὐκέτι ἀνήσω τὰς ἁμαρτίας ὑμῶν."
+    },
+    {
+      "id": "isaiah-grc2-1-14",
+      "kind": "tei",
+      "file": "isaiah-grc2",
+      "locator": {
+        "chapter": 1,
+        "verse": 14
+      },
+      "text": "καὶ τὰς νουμηνίας ὑμῶν καὶ τὰς ἑορτὰς ὑμῶν μισεῖ ἡ ψυχή μου· ἐγενήθητέ μοι εἷς πλησμονήν, οὐκέτι ἀνήσω τὰς ἁμαρτίας ὑμῶν."
+    },
+    {
+      "id": "eli-Isa-1-15",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.1:15"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "ὅταν ἐκτείνητε τὰς χεῖρας ἀποστρέψω τοὺς ὀφθαλμούς μου ἀφ᾽ ὑμῶν· καὶ ἐὰν πληθύνητε τὴν δέησιν, οὐκ εἰσακούσομαι ὑμῶν, αἱ γὰρ χεῖρες ὑμῶν αἵματος πλήρεις."
+    },
+    {
+      "id": "isaiah-grc1-1-15",
+      "kind": "tei",
+      "file": "isaiah-grc1",
+      "locator": {
+        "chapter": 1,
+        "verse": 15
+      },
+      "text": "ὅταν ἐκτείνητε τὰς χεῖρας ἀποστρέψω τοὺς ὀφθαλμούς μου ἀφʼ ὑμῶν· καὶ ἐὰν πληθύνητε τὴν δέησιν, οὐκ εἰσακούσομαι ὑμῶν, αἱ γὰρ χεῖρες ὑμῶν αἵματος πλήρεις."
+    },
+    {
+      "id": "isaiah-grc2-1-15",
+      "kind": "tei",
+      "file": "isaiah-grc2",
+      "locator": {
+        "chapter": 1,
+        "verse": 15
+      },
+      "text": "ὅταν τὰς χεῖρας ἐκτείνητε πρός με, ἀποστρέψει) τοὺς ὀφθαλμούς μου ἀφ’ ὑμῶν· καὶ ἐὰν πληθύνητε τὴν δέησιν, οὐκ εἰσακούσομαι ὑμῶν, αἱ γὰρ χεῖρες ὑμῶν αἵματος πλήρεις."
+    },
+    {
+      "id": "eli-Isa-1-16",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.1:16"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "λούσασθε, καθαροὶ γένεσθε, ἀφέλετε τὰς πονηρίας ἀπὸ τῶν ψυχῶν ὑμῶν ἀπέναντι τῶν ὀφθαλμῶν μου· παύσασθε ἀπὸ τῶν πονηριῶν ὑμῶν,"
+    },
+    {
+      "id": "isaiah-grc1-1-16",
+      "kind": "tei",
+      "file": "isaiah-grc1",
+      "locator": {
+        "chapter": 1,
+        "verse": 16
+      },
+      "text": "λούσασθε, καθαροὶ γένεσθε, ἀφέλετε τὰς πονηρίας ἀπὸ τῶν ψυχῶν ὑμῶν ἀπέναντι τῶν ὀφθαλμῶν μου· παύσασθε ἀπὸ τῶν πονηριῶν ὑμῶν,"
+    },
+    {
+      "id": "isaiah-grc2-1-16",
+      "kind": "tei",
+      "file": "isaiah-grc2",
+      "locator": {
+        "chapter": 1,
+        "verse": 16
+      },
+      "text": "λούσασθε, καθαροὶ γένεσθε, ἀφέλετε τὰς πονηρίας ἀπὸ τῶν ψυχῶν ὑμῶν ἀπέναντι τῶν ὀφθαλμῶν μου· παύσασθε ἀπὸ τῶν πονηριῶν ὑμῶν,"
+    },
+    {
+      "id": "eli-Isa-1-17",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.1:17"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "μάθετε καλὸν ποιεῖν, ἐκζητήσατε κρίσιν, ῥύσασθε ἀδικούμενον, κρίνατε ὀρφανῷ καὶ δικαιώσατε χήρᾳ."
+    },
+    {
+      "id": "isaiah-grc1-1-17",
+      "kind": "tei",
+      "file": "isaiah-grc1",
+      "locator": {
+        "chapter": 1,
+        "verse": 17
+      },
+      "text": "μάθετε καλὸν ποιεῖν, ἐκζητήσατε κρίσιν, ῥύσασθε ἀδικούμενον, κρίνατε ὀρφανῷ καὶ δικαιώσατε χήρᾳ."
+    },
+    {
+      "id": "isaiah-grc2-1-17",
+      "kind": "tei",
+      "file": "isaiah-grc2",
+      "locator": {
+        "chapter": 1,
+        "verse": 17
+      },
+      "text": "μάθετε καλὸν ποιεῖν, ἐκζητήσατε κρίσιν, ῥύσασθε ἀδικούμενον, κρίνατε ὀρφανῷ καὶ δικαιώσατε χήραν."
+    },
+    {
+      "id": "eli-Isa-1-18",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.1:18"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "καὶ δεῦτε διελεγχθῶμεν, λέγει Κύριος· καὶ ἐὰν ὦσιν αἱ ἁμαρτίαι ὑμῶν ὡς φοινικοῦν, ὡς χιόνα λευκανῶ, ἐὰν δὲ ὦσιν ὡς κόκκινον, ὡς ἔριον λευκανῶ."
+    },
+    {
+      "id": "eli-Isa-42-1",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.42:1"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "Ἰακὼβ ὁ παῖς μου, ἀντιλήμψομαι αὐτοῦ· Ἰσραὴλ ὁ ἐκλεκτός μου, προσεδέξατο αὐτὸν ἡ ψυχή μου· ἔδωκα τὸ πνεῦμά μου ἐπ᾽ αὐτόν, κρίσιν τοῖς ἔθνεσιν ἐξοίσει·"
+    },
+    {
+      "id": "eli-Isa-49-3",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.49:3"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "καὶ εἶπέν μοι Δοῦλός μου εἶ σύ, Ἰσραήλ, καὶ ἐν σοὶ ἐνδοξασθήσομαι."
+    },
+    {
+      "id": "eli-Isa-49-5",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.49:5"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "καὶ νῦν οὕτως λέγει Κύριος ὁ πλάσας με ἐκ κοιλίας δοῦλον ἑαυτῷ τοῦ συναγαγεῖν τὸν Ἰακὼβ πρὸς αὐτὸν καὶ Ἰσραήλ Συναχθήσομαι καὶ δοξασθήσομαι ἐναντίον Κυρίου, καὶ ὁ θεὸς ἔσται μοι ἰσχύς."
+    },
+    {
+      "id": "eli-Isa-49-6",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.49:6"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "καὶ εἶπέν μοι Μέγα σοί ἐστιν τοῦ κληθῆναί σε παῖδά μου, τοῦ στῆσαι τὰς φυλὰς Ἰακὼβ καὶ τὴν διασπορὰν τοῦ Ἰσραὴλ ἐπιστρέψαι· ἰδοὺ δέδωκά σε εἰς διαθήκην γένους, εἰς φῶς ἐθνῶν, τοῦ εἶναί σε εἰς σωτηρίαν ἕως ἐσχάτου τῆς γῆς."
+    },
+    {
+      "id": "eli-Isa-63-3",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.63:3"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "πλήρης καταπεπατημένης, καὶ τῶν ἐθνῶν οὐκ ἔστιν ἀνὴρ μετ᾽ ἐμοῦ, καὶ κατεπάτησα αὐτοὺς ἐν θυμῷ μου, καὶ κατέθλασα αὐτοὺς ὡς γῆν, καὶ κατήγαγον τὸ αἷμα αὐτῶν."
+    },
+    {
+      "id": "eli-Isa-6-7",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.6:7"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "καὶ ἥψατο τοῦ στόματός μου καὶ εἶπεν Ἰδοὺ ἥψατο τοῦτο τῶν χειλέων σου, καὶ ἀφελεῖ τὰς ἀνομίας σου, καὶ τὰς ἁμαρτίας σου περικαθαριεῖ."
+    },
+    {
+      "id": "eli-Isa-27-9",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.27:9"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "διὰ τοῦτο ἀφαιρεθήσεται ἀνομία Ἰακώβ, καὶ τοῦτό ἐστιν ἡ εὐλογία αὐτοῦ, ὅταν ἀφέλωμαι αὐτοῦ τὴν ἁμαρτίαν, ὅταν θῶσιν πάντας τοὺς λίθους τῶν βωμῶν κατακεκομμένους ὡς κονίαν λεπτήν· καὶ οὐ μὴ μείνῃ τὰ δένδρα αὐτῶν, καὶ τὰ εἴδωλα αὐτῶν ἐκκεκομμένα ὥσπερ δρυμὸς μακράν."
+    },
+    {
+      "id": "eli-Isa-28-18",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.28:18"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "μὴ καὶ ἀφέλῃ ὑμῶν τὴν διαθήκην τοῦ θανάτου, καὶ ἡ ἐλπὶς ὑμῶν ἡ πρὸς τὸν ᾅδην οὐ μὴ ἐμμείνῃ· καταιγὶς φερομένη ἐὰν ἐπέλθῃ, ἔσεσθε αὐτῇ εἰς καταπάτημα."
+    },
+    {
+      "id": "eli-Isa-55-7",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "locator": {
+        "verse": "Isa.55:7"
+      },
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "text": "ἀπολιπέτω ὁ ἀσεβὴς τὰς ὁδοὺς αὐτοῦ καὶ ἀνὴρ ἄνομος τὰς βουλὰς αὐτοῦ καὶ ἐπιστραφήτω ἐπὶ Κύριον, καὶ ἐλεηθήσεται, ὅτι ἐπὶ πολὺ ἀφήσει τὰς ἁμαρτίας ὑμῶν."
+    },
+    {
+      "id": "mt-Isa-52-10",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.52.10"
+      },
+      "text": "חָשַׂ֤ף יְהוָה֙ אֶת זְר֣וֹעַ קָדְשׁ֔וֹ לְעֵינֵ֖י כָּל הַגּוֹיִ֑ם וְרָאוּ֙ כָּל אַפְסֵי אָ֔רֶץ אֵ֖ת יְשׁוּעַ֥ת אֱלֹהֵֽינוּ"
+    },
+    {
+      "id": "mt-Isa-52-13",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.52.13"
+      },
+      "text": "הִנֵּ֥ה יַשְׂכִּ֖יל עַבְדִּ֑י יָר֧וּם וְנִשָּׂ֛א וְגָבַ֖הּ מְאֹֽד"
+    },
+    {
+      "id": "mt-Isa-52-14",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.52.14"
+      },
+      "text": "כַּאֲשֶׁ֨ר שָׁמְמ֤וּ עָלֶ֨יךָ֙ רַבִּ֔ים כֵּן מִשְׁחַ֥ת מֵאִ֖ישׁ מַרְאֵ֑הוּ וְתֹאֲר֖וֹ מִבְּנֵ֥י אָדָֽם"
+    },
+    {
+      "id": "mt-Isa-52-15",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.52.15"
+      },
+      "text": "כֵּ֤ן יַזֶּה֙ גּוֹיִ֣ם רַבִּ֔ים עָלָ֛יו יִקְפְּצ֥וּ מְלָכִ֖ים פִּיהֶ֑ם כִּ֠י אֲשֶׁ֨ר לֹֽא סֻפַּ֤ר לָהֶם֙ רָא֔וּ וַאֲשֶׁ֥ר לֹֽא שָׁמְע֖וּ הִתְבּוֹנָֽנוּ"
+    },
+    {
+      "id": "mt-Isa-53-1",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.53.1"
+      },
+      "text": "מִ֥י הֶאֱמִ֖ין לִשְׁמֻעָתֵ֑נוּ וּזְר֥וֹעַ יְהוָ֖ה עַל מִ֥י נִגְלָֽתָה"
+    },
+    {
+      "id": "mt-Isa-53-2",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.53.2"
+      },
+      "text": "וַיַּ֨עַל כַּיּוֹנֵ֜ק לְפָנָ֗יו וְכַשֹּׁ֨רֶשׁ֙ מֵאֶ֣רֶץ צִיָּ֔ה לֹא תֹ֥אַר ל֖וֹ וְלֹ֣א הָדָ֑ר וְנִרְאֵ֥הוּ וְלֹֽא מַרְאֶ֖ה וְנֶחְמְדֵֽהוּ"
+    },
+    {
+      "id": "mt-Isa-53-3",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.53.3"
+      },
+      "text": "נִבְזֶה֙ וַחֲדַ֣ל אִישִׁ֔ים אִ֥ישׁ מַכְאֹב֖וֹת וִיד֣וּעַ חֹ֑לִי וּכְמַסְתֵּ֤ר פָּנִים֙ מִמֶּ֔נּוּ נִבְזֶ֖ה וְלֹ֥א חֲשַׁבְנֻֽהוּ"
+    },
+    {
+      "id": "mt-Isa-53-4",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.53.4"
+      },
+      "text": "אָכֵ֤ן חֳלָיֵ֨נוּ֙ ה֣וּא נָשָׂ֔א וּמַכְאֹבֵ֖ינוּ סְבָלָ֑ם וַאֲנַ֣חְנוּ חֲשַׁבְנֻ֔הוּ נָג֛וּעַ מֻכֵּ֥ה אֱלֹהִ֖ים וּמְעֻנֶּֽה"
+    },
+    {
+      "id": "mt-Isa-53-5",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.53.5"
+      },
+      "text": "וְהוּא֙ מְחֹלָ֣ל מִפְּשָׁעֵ֔נוּ מְדֻכָּ֖א מֵעֲוֺנֹתֵ֑ינוּ מוּסַ֤ר שְׁלוֹמֵ֨נוּ֙ עָלָ֔יו וּבַחֲבֻרָת֖וֹ נִרְפָּא לָֽנוּ"
+    },
+    {
+      "id": "mt-Isa-53-6",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.53.6"
+      },
+      "text": "כֻּלָּ֨נוּ֙ כַּצֹּ֣אן תָּעִ֔ינוּ אִ֥ישׁ לְדַרְכּ֖וֹ פָּנִ֑ינוּ וַֽיהוָה֙ הִפְגִּ֣יעַ בּ֔וֹ אֵ֖ת עֲוֺ֥ן כֻּלָּֽנוּ"
+    },
+    {
+      "id": "mt-Isa-53-7",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.53.7"
+      },
+      "text": "נִגַּ֨שׂ וְה֣וּא נַעֲנֶה֮ וְלֹ֣א יִפְתַּח פִּיו֒ כַּשֶּׂה֙ לַטֶּ֣בַח יוּבָ֔ל וּכְרָחֵ֕ל לִפְנֵ֥י גֹזְזֶ֖יהָ נֶאֱלָ֑מָה וְלֹ֥א יִפְתַּ֖ח פִּֽיו"
+    },
+    {
+      "id": "mt-Isa-53-8",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.53.8"
+      },
+      "text": "מֵעֹ֤צֶר וּמִמִּשְׁפָּט֙ לֻקָּ֔ח וְאֶת דּוֹר֖וֹ מִ֣י יְשׂוֹחֵ֑חַ כִּ֤י נִגְזַר֙ מֵאֶ֣רֶץ חַיִּ֔ים מִפֶּ֥שַׁע עַמִּ֖י נֶ֥גַע לָֽמוֹ"
+    },
+    {
+      "id": "mt-Isa-53-9",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.53.9"
+      },
+      "text": "וַיִּתֵּ֤ן אֶת רְשָׁעִים֙ קִבְר֔וֹ וְאֶת עָשִׁ֖יר בְּמֹתָ֑יו עַ֚ל לֹא חָמָ֣ס עָשָׂ֔ה וְלֹ֥א מִרְמָ֖ה בְּפִֽיו"
+    },
+    {
+      "id": "mt-Isa-53-10",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.53.10"
+      },
+      "text": "וַיהוָ֞ה חָפֵ֤ץ דַּכְּאוֹ֙ הֶֽחֱלִ֔י אִם תָּשִׂ֤ים אָשָׁם֙ נַפְשׁ֔וֹ יִרְאֶ֥ה זֶ֖רַע יַאֲרִ֣יךְ יָמִ֑ים וְחֵ֥פֶץ יְהוָ֖ה בְּיָד֥וֹ יִצְלָֽח"
+    },
+    {
+      "id": "mt-Isa-53-11",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.53.11"
+      },
+      "text": "מֵעֲמַ֤ל נַפְשׁוֹ֙ יִרְאֶ֣ה יִשְׂבָּ֔ע בְּדַעְתּ֗וֹ יַצְדִּ֥יק צַדִּ֛יק עַבְדִּ֖י לָֽרַבִּ֑ים וַעֲוֺנֹתָ֖ם ה֥וּא יִסְבֹּֽל"
+    },
+    {
+      "id": "mt-Isa-53-12",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.53.12"
+      },
+      "text": "לָכֵ֞ן אֲחַלֶּק ל֣וֹ בָרַבִּ֗ים וְאֶת עֲצוּמִים֮ יְחַלֵּ֣ק שָׁלָל֒ תַּ֗חַת אֲשֶׁ֨ר הֶעֱרָ֤ה לַמָּ֨וֶת֙ נַפְשׁ֔וֹ וְאֶת פֹּשְׁעִ֖ים נִמְנָ֑ה וְהוּא֙ חֵטְא רַבִּ֣ים נָשָׂ֔א וְלַפֹּשְׁעִ֖ים יַפְגִּֽיעַ"
+    },
+    {
+      "id": "mt-Isa-1-11",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.1.11"
+      },
+      "text": "לָמָּה לִּ֤י רֹב זִבְחֵיכֶם֙ יֹאמַ֣ר יְהוָ֔ה שָׂבַ֛עְתִּי עֹל֥וֹת אֵילִ֖ים וְחֵ֣לֶב מְרִיאִ֑ים וְדַ֨ם פָּרִ֧ים וּכְבָשִׂ֛ים וְעַתּוּדִ֖ים לֹ֥א חָפָֽצְתִּי"
+    },
+    {
+      "id": "mt-Isa-1-12",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.1.12"
+      },
+      "text": "כִּ֣י תָבֹ֔אוּ לֵרָא֖וֹת פָּנָ֑י מִי בִקֵּ֥שׁ זֹ֛את מִיֶּדְכֶ֖ם רְמֹ֥ס חֲצֵרָֽי"
+    },
+    {
+      "id": "mt-Isa-1-13",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.1.13"
+      },
+      "text": "לֹ֣א תוֹסִ֗יפוּ הָבִיא֙ מִנְחַת שָׁ֔וְא קְטֹ֧רֶת תּוֹעֵבָ֛ה הִ֖יא לִ֑י חֹ֤דֶשׁ וְשַׁבָּת֙ קְרֹ֣א מִקְרָ֔א לֹא אוּכַ֥ל אָ֖וֶן וַעֲצָרָֽה"
+    },
+    {
+      "id": "mt-Isa-1-14",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.1.14"
+      },
+      "text": "חָדְשֵׁיכֶ֤ם וּמוֹעֲדֵיכֶם֙ שָׂנְאָ֣ה נַפְשִׁ֔י הָי֥וּ עָלַ֖י לָטֹ֑רַח נִלְאֵ֖יתִי נְשֹֽׂא"
+    },
+    {
+      "id": "mt-Isa-1-15",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.1.15"
+      },
+      "text": "וּבְפָרִשְׂכֶ֣ם כַּפֵּיכֶ֗ם אַעְלִ֤ים עֵינַי֙ מִכֶּ֔ם גַּ֛ם כִּֽי תַרְבּ֥וּ תְפִלָּ֖ה אֵינֶ֣נִּי שֹׁמֵ֑עַ יְדֵיכֶ֖ם דָּמִ֥ים מָלֵֽאוּ"
+    },
+    {
+      "id": "mt-Isa-1-16",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.1.16"
+      },
+      "text": "רַחֲצוּ֙ הִזַּכּ֔וּ הָסִ֛ירוּ רֹ֥עַ מַעַלְלֵיכֶ֖ם מִנֶּ֣גֶד עֵינָ֑י חִדְל֖וּ הָרֵֽעַ"
+    },
+    {
+      "id": "mt-Isa-1-17",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.1.17"
+      },
+      "text": "לִמְד֥וּ הֵיטֵ֛ב דִּרְשׁ֥וּ מִשְׁפָּ֖ט אַשְּׁר֣וּ חָמ֑וֹץ שִׁפְט֣וּ יָת֔וֹם רִ֖יבוּ אַלְמָנָֽה"
+    },
+    {
+      "id": "mt-Isa-1-18",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.1.18"
+      },
+      "text": "לְכוּ נָ֛א וְנִוָּֽכְחָ֖ה יֹאמַ֣ר יְהוָ֑ה אִם יִֽהְי֨וּ חֲטָאֵיכֶ֤ם כַּשָּׁנִים֙ כַּשֶּׁ֣לֶג יַלְבִּ֔ינוּ אִם יַאְדִּ֥ימוּ כַתּוֹלָ֖ע כַּצֶּ֥מֶר יִהְיֽוּ"
+    },
+    {
+      "id": "mt-Isa-42-1",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.42.1"
+      },
+      "text": "הֵ֤ן עַבְדִּי֙ אֶתְמָךְ בּ֔וֹ בְּחִירִ֖י רָצְתָ֣ה נַפְשִׁ֑י נָתַ֤תִּי רוּחִי֙ עָלָ֔יו מִשְׁפָּ֖ט לַגּוֹיִ֥ם יוֹצִֽיא"
+    },
+    {
+      "id": "mt-Isa-49-3",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.49.3"
+      },
+      "text": "וַיֹּ֥אמֶר לִ֖י עַבְדִּי אָ֑תָּה יִשְׂרָאֵ֕ל אֲשֶׁר בְּךָ֖ אֶתְפָּאָֽר"
+    },
+    {
+      "id": "mt-Isa-49-5",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.49.5"
+      },
+      "text": "וְעַתָּ֣ה אָמַ֣ר יְהוָ֗ה יֹצְרִ֤י מִבֶּ֨טֶן֙ לְעֶ֣בֶד ל֔וֹ לְשׁוֹבֵ֤ב יַֽעֲקֹב֙ אֵלָ֔יו וְיִשְׂרָאֵ֖ל לא יֵאָסֵ֑ף וְאֶכָּבֵד֙ בְּעֵינֵ֣י יְהוָ֔ה וֵאלֹהַ֖י הָיָ֥ה עֻזִּֽי"
+    },
+    {
+      "id": "mt-Isa-49-6",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.49.6"
+      },
+      "text": "וַיֹּ֗אמֶר נָקֵ֨ל מִֽהְיוֹתְךָ֥ לִי֙ עֶ֔בֶד לְהָקִים֙ אֶת שִׁבְטֵ֣י יַעֲקֹ֔ב ונצירי יִשְׂרָאֵ֖ל לְהָשִׁ֑יב וּנְתַתִּ֨יךָ֙ לְא֣וֹר גּוֹיִ֔ם לִֽהְי֥וֹת יְשׁוּעָתִ֖י עַד קְצֵ֥ה הָאָֽרֶץ"
+    },
+    {
+      "id": "mt-Isa-63-3",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.63.3"
+      },
+      "text": "פּוּרָ֣ה דָּרַ֣כְתִּי לְבַדִּ֗י וּמֵֽעַמִּים֙ אֵֽין אִ֣ישׁ אִתִּ֔י וְאֶדְרְכֵ֣ם בְּאַפִּ֔י וְאֶרְמְסֵ֖ם בַּחֲמָתִ֑י וְיֵ֤ז נִצְחָם֙ עַל בְּגָדַ֔י וְכָל מַלְבּוּשַׁ֖י אֶגְאָֽלְתִּי"
+    },
+    {
+      "id": "mt-Isa-6-7",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.6.7"
+      },
+      "text": "וַיַּגַּ֣ע עַל פִּ֔י וַיֹּ֕אמֶר הִנֵּ֛ה נָגַ֥ע זֶ֖ה עַל שְׂפָתֶ֑יךָ וְסָ֣ר עֲוֺנֶ֔ךָ וְחַטָּאתְךָ֖ תְּכֻפָּֽר"
+    },
+    {
+      "id": "mt-Isa-27-9",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.27.9"
+      },
+      "text": "לָכֵ֗ן בְּזֹאת֙ יְכֻפַּ֣ר עֲוֺֽן יַעֲקֹ֔ב וְזֶ֕ה כָּל פְּרִ֖י הָסִ֣ר חַטָּאת֑וֹ בְּשׂוּמ֣וֹ כָּל אַבְנֵ֣י מִזְבֵּ֗חַ כְּאַבְנֵי גִר֙ מְנֻפָּצ֔וֹת לֹֽא יָקֻ֥מוּ אֲשֵׁרִ֖ים וְחַמָּנִֽים"
+    },
+    {
+      "id": "mt-Isa-28-18",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.28.18"
+      },
+      "text": "וְכֻפַּ֤ר בְּרִֽיתְכֶם֙ אֶת מָ֔וֶת וְחָזוּתְכֶ֥ם אֶת שְׁא֖וֹל לֹ֣א תָק֑וּם שׁ֤וֹט שׁוֹטֵף֙ כִּ֣י יַֽעֲבֹ֔ר וִהְיִ֥יתֶם ל֖וֹ לְמִרְמָֽס"
+    },
+    {
+      "id": "mt-Isa-55-7",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.55.7"
+      },
+      "text": "יַעֲזֹ֤ב רָשָׁע֙ דַּרְכּ֔וֹ וְאִ֥ישׁ אָ֖וֶן מַחְשְׁבֹתָ֑יו וְיָשֹׁ֤ב אֶל יְהוָה֙ וִֽירַחֲמֵ֔הוּ וְאֶל אֱלֹהֵ֖ינוּ כִּֽי יַרְבֶּ֥ה לִסְלֽוֹחַ"
+    },
+    {
+      "id": "mt-Isa-43-3",
+      "kind": "osis",
+      "file": "mt/Isa",
+      "locator": {
+        "verse": "Isa.43.3"
+      },
+      "text": "כִּ֗י אֲנִי֙ יְהוָ֣ה אֱלֹהֶ֔יךָ קְד֥וֹשׁ יִשְׂרָאֵ֖ל מוֹשִׁיעֶ֑ךָ נָתַ֤תִּי כָפְרְךָ֙ מִצְרַ֔יִם כּ֥וּשׁ וּסְבָ֖א תַּחְתֶּֽיךָ"
+    },
+    {
+      "id": "mt-Hos-13-12",
+      "kind": "osis",
+      "file": "mt/Hos",
+      "locator": {
+        "verse": "Hos.13.12"
+      },
+      "text": "צָרוּר֙ עֲוֺ֣ן אֶפְרָ֔יִם צְפוּנָ֖ה חַטָּאתֽוֹ"
+    },
+    {
+      "id": "mt-Hos-13-13",
+      "kind": "osis",
+      "file": "mt/Hos",
+      "locator": {
+        "verse": "Hos.13.13"
+      },
+      "text": "חֶבְלֵ֥י יֽוֹלֵדָ֖ה יָבֹ֣אוּ ל֑וֹ הוּא בֵן֙ לֹ֣א חָכָ֔ם כִּֽי עֵ֥ת לֹֽא יַעֲמֹ֖ד בְּמִשְׁבַּ֥ר בָּנִֽים"
+    },
+    {
+      "id": "mt-Hos-13-14",
+      "kind": "osis",
+      "file": "mt/Hos",
+      "locator": {
+        "verse": "Hos.13.14"
+      },
+      "text": "מִיַּ֤ד שְׁאוֹל֙ אֶפְדֵּ֔ם מִמָּ֖וֶת אֶגְאָלֵ֑ם אֱהִ֨י דְבָרֶיךָ֜ מָ֗וֶת אֱהִ֤י קָֽטָבְךָ֙ שְׁא֔וֹל נֹ֖חַם יִסָּתֵ֥ר מֵעֵינָֽי"
+    },
+    {
+      "id": "mt-Hos-13-15",
+      "kind": "osis",
+      "file": "mt/Hos",
+      "locator": {
+        "verse": "Hos.13.15"
+      },
+      "text": "כִּ֣י ה֔וּא בֵּ֥ן אַחִ֖ים יַפְרִ֑יא יָב֣וֹא קָדִים֩ ר֨וּחַ יְהוָ֜ה מִמִּדְבָּ֣ר עֹלֶ֗ה וְיֵב֤וֹשׁ מְקוֹרוֹ֙ וְיֶחֱרַ֣ב מַעְיָנ֔וֹ ה֣וּא יִשְׁסֶ֔ה אוֹצַ֖ר כָּל כְּלִ֥י חֶמְדָּֽה"
+    },
+    {
+      "id": "mt-Hos-6-6",
+      "kind": "osis",
+      "file": "mt/Hos",
+      "locator": {
+        "verse": "Hos.6.6"
+      },
+      "text": "כִּ֛י חֶ֥סֶד חָפַ֖צְתִּי וְלֹא זָ֑בַח וְדַ֥עַת אֱלֹהִ֖ים מֵעֹלֽוֹת"
+    },
+    {
+      "id": "mt-Hos-7-13",
+      "kind": "osis",
+      "file": "mt/Hos",
+      "locator": {
+        "verse": "Hos.7.13"
+      },
+      "text": "א֤וֹי לָהֶם֙ כִּֽי נָדְד֣וּ מִמֶּ֔נִּי שֹׁ֥ד לָהֶ֖ם כִּֽי פָ֣שְׁעוּ בִ֑י וְאָנֹכִ֣י אֶפְדֵּ֔ם וְהֵ֕מָּה דִּבְּר֥וּ עָלַ֖י כְּזָבִֽים"
+    },
+    {
+      "id": "mt-Mic-6-6",
+      "kind": "osis",
+      "file": "mt/Mic",
+      "locator": {
+        "verse": "Mic.6.6"
+      },
+      "text": "בַּמָּה֙ אֲקַדֵּ֣ם יְהוָ֔ה אִכַּ֖ף לֵאלֹהֵ֣י מָר֑וֹם הַאֲקַדְּמֶ֣נּוּ בְעוֹל֔וֹת בַּעֲגָלִ֖ים בְּנֵ֥י שָׁנָֽה"
+    },
+    {
+      "id": "mt-Mic-6-7",
+      "kind": "osis",
+      "file": "mt/Mic",
+      "locator": {
+        "verse": "Mic.6.7"
+      },
+      "text": "הֲיִרְצֶ֤ה יְהוָה֙ בְּאַלְפֵ֣י אֵילִ֔ים בְּרִֽבְב֖וֹת נַֽחֲלֵי שָׁ֑מֶן הַאֶתֵּ֤ן בְּכוֹרִי֙ פִּשְׁעִ֔י פְּרִ֥י בִטְנִ֖י חַטַּ֥את נַפְשִֽׁי"
+    },
+    {
+      "id": "mt-Mic-6-8",
+      "kind": "osis",
+      "file": "mt/Mic",
+      "locator": {
+        "verse": "Mic.6.8"
+      },
+      "text": "הִגִּ֥יד לְךָ֛ אָדָ֖ם מַה טּ֑וֹב וּמָֽה יְהוָ֞ה דּוֹרֵ֣שׁ מִמְּךָ֗ כִּ֣י אִם עֲשׂ֤וֹת מִשְׁפָּט֙ וְאַ֣הֲבַת חֶ֔סֶד וְהַצְנֵ֥עַ לֶ֖כֶת עִם אֱלֹהֶֽיךָ"
+    },
+    {
+      "id": "mt-Mic-7-18",
+      "kind": "osis",
+      "file": "mt/Mic",
+      "locator": {
+        "verse": "Mic.7.18"
+      },
+      "text": "מִי אֵ֣ל כָּמ֗וֹךָ נֹשֵׂ֤א עָוֺן֙ וְעֹבֵ֣ר עַל פֶּ֔שַׁע לִשְׁאֵרִ֖ית נַחֲלָת֑וֹ לֹא הֶחֱזִ֤יק לָעַד֙ אַפּ֔וֹ כִּֽי חָפֵ֥ץ חֶ֖סֶד הֽוּא"
+    },
+    {
+      "id": "mt-Mic-7-19",
+      "kind": "osis",
+      "file": "mt/Mic",
+      "locator": {
+        "verse": "Mic.7.19"
+      },
+      "text": "יָשׁ֣וּב יְרַֽחֲמֵ֔נוּ יִכְבֹּ֖שׁ עֲוֺֽנֹתֵ֑ינוּ וְתַשְׁלִ֛יךְ בִּמְצֻל֥וֹת יָ֖ם כָּל חַטֹּאותָֽם"
+    },
+    {
+      "id": "mt-Mic-7-20",
+      "kind": "osis",
+      "file": "mt/Mic",
+      "locator": {
+        "verse": "Mic.7.20"
+      },
+      "text": "תִּתֵּ֤ן אֱמֶת֙ לְיַֽעֲקֹ֔ב חֶ֖סֶד לְאַבְרָהָ֑ם אֲשֶׁר נִשְׁבַּ֥עְתָּ לַאֲבֹתֵ֖ינוּ מִ֥ימֵי קֶֽדֶם"
+    },
+    {
+      "id": "mt-Amos-7-1",
+      "kind": "osis",
+      "file": "mt/Amos",
+      "locator": {
+        "verse": "Amos.7.1"
+      },
+      "text": "כֹּ֤ה הִרְאַ֨נִי֙ אֲדֹנָ֣י יְהוִ֔ה וְהִנֵּה֙ יוֹצֵ֣ר גֹּבַ֔י בִּתְחִלַּ֖ת עֲל֣וֹת הַלָּ֑קֶשׁ וְהִ֨נֵּה לֶ֔קֶשׁ אַחַ֖ר גִּזֵּ֥י הַמֶּֽלֶךְ"
+    },
+    {
+      "id": "mt-Amos-7-2",
+      "kind": "osis",
+      "file": "mt/Amos",
+      "locator": {
+        "verse": "Amos.7.2"
+      },
+      "text": "וְהָיָ֗ה אִם כִּלָּה֙ לֶֽאֱכוֹל֙ אֶת עֵ֣שֶׂב הָאָ֔רֶץ וָאֹמַ֗ר אֲדֹנָ֤י יְהוִה֙ סְֽלַֽח נָ֔א מִ֥י יָק֖וּם יַֽעֲקֹ֑ב כִּ֥י קָטֹ֖ן הֽוּא"
+    },
+    {
+      "id": "mt-Amos-7-3",
+      "kind": "osis",
+      "file": "mt/Amos",
+      "locator": {
+        "verse": "Amos.7.3"
+      },
+      "text": "נִחַ֥ם יְהוָ֖ה עַל זֹ֑את לֹ֥א תִהְיֶ֖ה אָמַ֥ר יְהוָֽה"
+    },
+    {
+      "id": "mt-Amos-5-10",
+      "kind": "osis",
+      "file": "mt/Amos",
+      "locator": {
+        "verse": "Amos.5.10"
+      },
+      "text": "שָׂנְא֥וּ בַשַּׁ֖עַר מוֹכִ֑יחַ וְדֹבֵ֥ר תָּמִ֖ים יְתָעֵֽבוּ"
+    },
+    {
+      "id": "mt-Amos-5-11",
+      "kind": "osis",
+      "file": "mt/Amos",
+      "locator": {
+        "verse": "Amos.5.11"
+      },
+      "text": "לָ֠כֵן יַ֣עַן בּוֹשַׁסְכֶ֞ם עַל דָּ֗ל וּמַשְׂאַת בַּר֙ תִּקְח֣וּ מִמֶּ֔נּוּ בָּתֵּ֥י גָזִ֛ית בְּנִיתֶ֖ם וְלֹא תֵ֣שְׁבוּ בָ֑ם כַּרְמֵי חֶ֣מֶד נְטַעְתֶּ֔ם וְלֹ֥א תִשְׁתּ֖וּ אֶת יֵינָֽם"
+    },
+    {
+      "id": "mt-Amos-5-12",
+      "kind": "osis",
+      "file": "mt/Amos",
+      "locator": {
+        "verse": "Amos.5.12"
+      },
+      "text": "כִּ֤י יָדַ֨עְתִּי֙ רַבִּ֣ים פִּשְׁעֵיכֶ֔ם וַעֲצֻמִ֖ים חַטֹּֽאתֵיכֶ֑ם צֹרְרֵ֤י צַדִּיק֙ לֹ֣קְחֵי כֹ֔פֶר וְאֶבְיוֹנִ֖ים בַּשַּׁ֥עַר הִטּֽוּ"
+    },
+    {
+      "id": "mt-Amos-5-13",
+      "kind": "osis",
+      "file": "mt/Amos",
+      "locator": {
+        "verse": "Amos.5.13"
+      },
+      "text": "לָכֵ֗ן הַמַּשְׂכִּ֛יל בָּעֵ֥ת הַהִ֖יא יִדֹּ֑ם כִּ֛י עֵ֥ת רָעָ֖ה הִֽיא"
+    },
+    {
+      "id": "mt-Amos-5-14",
+      "kind": "osis",
+      "file": "mt/Amos",
+      "locator": {
+        "verse": "Amos.5.14"
+      },
+      "text": "דִּרְשׁוּ ט֥וֹב וְאַל רָ֖ע לְמַ֣עַן תִּֽחְי֑וּ וִיהִי כֵ֞ן יְהוָ֧ה אֱלֹהֵֽי צְבָא֛וֹת אִתְּכֶ֖ם כַּאֲשֶׁ֥ר אֲמַרְתֶּֽם"
+    },
+    {
+      "id": "mt-Amos-5-15",
+      "kind": "osis",
+      "file": "mt/Amos",
+      "locator": {
+        "verse": "Amos.5.15"
+      },
+      "text": "שִׂנְאוּ רָע֙ וְאֶ֣הֱבוּ ט֔וֹב וְהַצִּ֥יגוּ בַשַּׁ֖עַר מִשְׁפָּ֑ט אוּלַ֗י יֶֽחֱנַ֛ן יְהוָ֥ה אֱלֹהֵֽי צְבָא֖וֹת שְׁאֵרִ֥ית יוֹסֵֽף"
+    },
+    {
+      "id": "mt-Amos-5-21",
+      "kind": "osis",
+      "file": "mt/Amos",
+      "locator": {
+        "verse": "Amos.5.21"
+      },
+      "text": "שָׂנֵ֥אתִי מָאַ֖סְתִּי חַגֵּיכֶ֑ם וְלֹ֥א אָרִ֖יחַ בְּעַצְּרֹֽתֵיכֶֽם"
+    },
+    {
+      "id": "mt-Amos-5-22",
+      "kind": "osis",
+      "file": "mt/Amos",
+      "locator": {
+        "verse": "Amos.5.22"
+      },
+      "text": "כִּ֣י אִם תַּעֲלוּ לִ֥י עֹל֛וֹת וּמִנְחֹתֵיכֶ֖ם לֹ֣א אֶרְצֶ֑ה וְשֶׁ֥לֶם מְרִיאֵיכֶ֖ם לֹ֥א אַבִּֽיט"
+    },
+    {
+      "id": "mt-Amos-5-23",
+      "kind": "osis",
+      "file": "mt/Amos",
+      "locator": {
+        "verse": "Amos.5.23"
+      },
+      "text": "הָסֵ֥ר מֵעָלַ֖י הֲמ֣וֹן שִׁרֶ֑יךָ וְזִמְרַ֥ת נְבָלֶ֖יךָ לֹ֥א אֶשְׁמָֽע"
+    },
+    {
+      "id": "mt-Amos-5-24",
+      "kind": "osis",
+      "file": "mt/Amos",
+      "locator": {
+        "verse": "Amos.5.24"
+      },
+      "text": "וְיִגַּ֥ל כַּמַּ֖יִם מִשְׁפָּ֑ט וּצְדָקָ֖ה כְּנַ֥חַל אֵיתָֽן"
+    },
+    {
+      "id": "mt-Amos-5-25",
+      "kind": "osis",
+      "file": "mt/Amos",
+      "locator": {
+        "verse": "Amos.5.25"
+      },
+      "text": "הַזְּבָחִ֨ים וּמִנְחָ֜ה הִֽגַּשְׁתֶּם לִ֧י בַמִּדְבָּ֛ר אַרְבָּעִ֥ים שָׁנָ֖ה בֵּ֥ית יִשְׂרָאֵֽל"
+    },
+    {
+      "id": "mt-Amos-5-26",
+      "kind": "osis",
+      "file": "mt/Amos",
+      "locator": {
+        "verse": "Amos.5.26"
+      },
+      "text": "וּנְשָׂאתֶ֗ם אֵ֚ת סִכּ֣וּת מַלְכְּכֶ֔ם וְאֵ֖ת כִּיּ֣וּן צַלְמֵיכֶ֑ם כּוֹכַב֙ אֱלֹ֣הֵיכֶ֔ם אֲשֶׁ֥ר עֲשִׂיתֶ֖ם לָכֶֽם"
+    },
+    {
+      "id": "mt-Amos-5-27",
+      "kind": "osis",
+      "file": "mt/Amos",
+      "locator": {
+        "verse": "Amos.5.27"
+      },
+      "text": "וְהִגְלֵיתִ֥י אֶתְכֶ֖ם מֵהָ֣לְאָה לְדַמָּ֑שֶׂק אָמַ֛ר יְהוָ֥ה אֱלֹהֵֽי צְבָא֖וֹת שְׁמֽוֹ"
+    },
+    {
+      "id": "mt-Ps-51-4",
+      "kind": "osis",
+      "file": "mt/Ps",
+      "locator": {
+        "verse": "Ps.51.4"
+      },
+      "text": "הרבה כַּבְּסֵ֣נִי מֵעֲוֺנִ֑י וּֽמֵחַטָּאתִ֥י טַהֲרֵֽנִי"
+    },
+    {
+      "id": "mt-Ps-51-9",
+      "kind": "osis",
+      "file": "mt/Ps",
+      "locator": {
+        "verse": "Ps.51.9"
+      },
+      "text": "תְּחַטְּאֵ֣נִי בְאֵז֣וֹב וְאֶטְהָ֑ר תְּ֝כַבְּסֵ֗נִי וּמִשֶּׁ֥לֶג אַלְבִּֽין"
+    },
+    {
+      "id": "mt-Ps-51-16",
+      "kind": "osis",
+      "file": "mt/Ps",
+      "locator": {
+        "verse": "Ps.51.16"
+      },
+      "text": "הַצִּ֘ילֵ֤נִי מִדָּמִ֨ים אֱֽלֹהִ֗ים אֱלֹהֵ֥י תְּשׁוּעָתִ֑י תְּרַנֵּ֥ן לְ֝שׁוֹנִ֗י צִדְקָתֶֽךָ"
+    },
+    {
+      "id": "mt-Ps-51-18",
+      "kind": "osis",
+      "file": "mt/Ps",
+      "locator": {
+        "verse": "Ps.51.18"
+      },
+      "text": "כִּ֤י לֹא תַחְפֹּ֣ץ זֶ֣בַח וְאֶתֵּ֑נָה ע֝וֹלָ֗ה לֹ֣א תִרְצֶֽה"
+    },
+    {
+      "id": "mt-Ps-51-19",
+      "kind": "osis",
+      "file": "mt/Ps",
+      "locator": {
+        "verse": "Ps.51.19"
+      },
+      "text": "זִֽבְחֵ֣י אֱלֹהִים֮ ר֪וּחַ נִשְׁבָּ֫רָ֥ה לֵב נִשְׁבָּ֥ר וְנִדְכֶּ֑ה אֱ֝לֹהִ֗ים לֹ֣א תִבְזֶֽה"
+    },
+    {
+      "id": "mt-Ps-51-20",
+      "kind": "osis",
+      "file": "mt/Ps",
+      "locator": {
+        "verse": "Ps.51.20"
+      },
+      "text": "הֵיטִ֣יבָה בִ֭רְצוֹנְךָ אֶת צִיּ֑וֹן תִּ֝בְנֶ֗ה חוֹמ֥וֹת יְרוּשָׁלִָֽם"
+    },
+    {
+      "id": "mt-Ps-51-21",
+      "kind": "osis",
+      "file": "mt/Ps",
+      "locator": {
+        "verse": "Ps.51.21"
+      },
+      "text": "אָ֤ז תַּחְפֹּ֣ץ זִבְחֵי צֶ֭דֶק עוֹלָ֣ה וְכָלִ֑יל אָ֤ז יַעֲל֖וּ עַל מִזְבַּחֲךָ֣ פָרִֽים"
+    },
+    {
+      "id": "nt-64-Jn-11-45",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "041145"
+      },
+      "text": "Πολλοὶ οὖν ἐκ τῶν Ἰουδαίων, οἱ ἐλθόντες πρὸς τὴν ⸀Μαριὰμ καὶ θεασάμενοι ⸀ἃ ⸀ἐποίησεν, ἐπίστευσαν εἰς αὐτόν·"
+    },
+    {
+      "id": "nt-64-Jn-11-46",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "041146"
+      },
+      "text": "τινὲς δὲ ἐξ αὐτῶν ἀπῆλθον πρὸς τοὺς Φαρισαίους καὶ εἶπαν αὐτοῖς ἃ ⸀ἐποίησεν Ἰησοῦς."
+    },
+    {
+      "id": "nt-64-Jn-11-47",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "041147"
+      },
+      "text": "συνήγαγον οὖν οἱ ἀρχιερεῖς καὶ οἱ Φαρισαῖοι συνέδριον, καὶ ἔλεγον· Τί ποιοῦμεν ὅτι οὗτος ὁ ἄνθρωπος πολλὰ ⸂ποιεῖ σημεῖα⸃;"
+    },
+    {
+      "id": "nt-64-Jn-11-48",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "041148"
+      },
+      "text": "ἐὰν ἀφῶμεν αὐτὸν οὕτως, πάντες πιστεύσουσιν εἰς αὐτόν, καὶ ἐλεύσονται οἱ Ῥωμαῖοι καὶ ἀροῦσιν ἡμῶν καὶ τὸν τόπον καὶ τὸ ἔθνος."
+    },
+    {
+      "id": "nt-64-Jn-11-49",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "041149"
+      },
+      "text": "εἷς δέ τις ἐξ αὐτῶν Καϊάφας, ἀρχιερεὺς ὢν τοῦ ἐνιαυτοῦ ἐκείνου, εἶπεν αὐτοῖς· Ὑμεῖς οὐκ οἴδατε οὐδέν,"
+    },
+    {
+      "id": "nt-64-Jn-11-50",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "041150"
+      },
+      "text": "οὐδὲ ⸀λογίζεσθε ὅτι συμφέρει ⸀ὑμῖν ἵνα εἷς ἄνθρωπος ἀποθάνῃ ὑπὲρ τοῦ λαοῦ καὶ μὴ ὅλον τὸ ἔθνος ἀπόληται."
+    },
+    {
+      "id": "nt-64-Jn-11-51",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "041151"
+      },
+      "text": "τοῦτο δὲ ἀφ’ ἑαυτοῦ οὐκ εἶπεν, ἀλλὰ ἀρχιερεὺς ὢν τοῦ ἐνιαυτοῦ ἐκείνου ἐπροφήτευσεν ὅτι ἔμελλεν Ἰησοῦς ἀποθνῄσκειν ὑπὲρ τοῦ ἔθνους,"
+    },
+    {
+      "id": "nt-64-Jn-11-52",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "041152"
+      },
+      "text": "καὶ οὐχ ὑπὲρ τοῦ ἔθνους μόνον, ἀλλ’ ἵνα καὶ τὰ τέκνα τοῦ θεοῦ τὰ διεσκορπισμένα συναγάγῃ εἰς ἕν."
+    },
+    {
+      "id": "nt-64-Jn-11-53",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "041153"
+      },
+      "text": "ἀπ’ ἐκείνης οὖν τῆς ἡμέρας ⸀ἐβουλεύσαντο ἵνα ἀποκτείνωσιν αὐτόν."
+    },
+    {
+      "id": "nt-64-Jn-11-54",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "041154"
+      },
+      "text": "⸂Ὁ οὖν Ἰησοῦς⸃ οὐκέτι παρρησίᾳ περιεπάτει ἐν τοῖς Ἰουδαίοις, ἀλλὰ ἀπῆλθεν ἐκεῖθεν εἰς τὴν χώραν ἐγγὺς τῆς ἐρήμου, εἰς Ἐφραὶμ λεγομένην πόλιν, κἀκεῖ ⸀ἔμεινεν μετὰ τῶν ⸀μαθητῶν."
+    },
+    {
+      "id": "nt-64-Jn-11-55",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "041155"
+      },
+      "text": "Ἦν δὲ ἐγγὺς τὸ πάσχα τῶν Ἰουδαίων, καὶ ἀνέβησαν πολλοὶ εἰς Ἱεροσόλυμα ἐκ τῆς χώρας πρὸ τοῦ πάσχα ἵνα ἁγνίσωσιν ἑαυτούς."
+    },
+    {
+      "id": "nt-64-Jn-11-56",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "041156"
+      },
+      "text": "ἐζήτουν οὖν τὸν Ἰησοῦν καὶ ἔλεγον μετ’ ἀλλήλων ἐν τῷ ἱερῷ ἑστηκότες· Τί δοκεῖ ὑμῖν; ὅτι οὐ μὴ ἔλθῃ εἰς τὴν ἑορτήν;"
+    },
+    {
+      "id": "nt-64-Jn-11-57",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "041157"
+      },
+      "text": "δεδώκεισαν ⸀δὲ οἱ ἀρχιερεῖς καὶ οἱ Φαρισαῖοι ⸀ἐντολὰς ἵνα ἐάν τις γνῷ ποῦ ἐστιν μηνύσῃ, ὅπως πιάσωσιν αὐτόν."
+    },
+    {
+      "id": "nt-64-Jn-1-12",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "040112"
+      },
+      "text": "ὅσοι δὲ ἔλαβον αὐτόν, ἔδωκεν αὐτοῖς ἐξουσίαν τέκνα θεοῦ γενέσθαι, τοῖς πιστεύουσιν εἰς τὸ ὄνομα αὐτοῦ,"
+    },
+    {
+      "id": "nt-64-Jn-1-13",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "040113"
+      },
+      "text": "οἳ οὐκ ἐξ αἱμάτων οὐδὲ ἐκ θελήματος σαρκὸς οὐδὲ ἐκ θελήματος ἀνδρὸς ἀλλ’ ἐκ θεοῦ ἐγεννήθησαν."
+    },
+    {
+      "id": "nt-64-Jn-5-34",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "040534"
+      },
+      "text": "ἐγὼ δὲ οὐ παρὰ ἀνθρώπου τὴν μαρτυρίαν λαμβάνω, ἀλλὰ ταῦτα λέγω ἵνα ὑμεῖς σωθῆτε."
+    },
+    {
+      "id": "nt-64-Jn-5-40",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "040540"
+      },
+      "text": "καὶ οὐ θέλετε ἐλθεῖν πρός με ἵνα ζωὴν ἔχητε."
+    },
+    {
+      "id": "nt-64-Jn-7-35",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "040735"
+      },
+      "text": "εἶπον οὖν οἱ Ἰουδαῖοι πρὸς ἑαυτούς· Ποῦ οὗτος μέλλει πορεύεσθαι ὅτι ἡμεῖς οὐχ εὑρήσομεν αὐτόν; μὴ εἰς τὴν διασπορὰν τῶν Ἑλλήνων μέλλει πορεύεσθαι καὶ διδάσκειν τοὺς Ἕλληνας;"
+    },
+    {
+      "id": "nt-64-Jn-10-14",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "041014"
+      },
+      "text": "ἐγώ εἰμι ὁ ποιμὴν ὁ καλός, καὶ γινώσκω τὰ ἐμὰ καὶ ⸂γινώσκουσί με τὰ ἐμά⸃,"
+    },
+    {
+      "id": "nt-64-Jn-10-15",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "041015"
+      },
+      "text": "καθὼς γινώσκει με ὁ πατὴρ κἀγὼ γινώσκω τὸν πατέρα, καὶ τὴν ψυχήν μου τίθημι ὑπὲρ τῶν προβάτων."
+    },
+    {
+      "id": "nt-64-Jn-10-16",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "041016"
+      },
+      "text": "καὶ ἄλλα πρόβατα ἔχω ἃ οὐκ ἔστιν ἐκ τῆς αὐλῆς ταύτης· κἀκεῖνα ⸂δεῖ με⸃ ἀγαγεῖν, καὶ τῆς φωνῆς μου ἀκούσουσιν, καὶ ⸀γενήσονται μία ποίμνη, εἷς ποιμήν."
+    },
+    {
+      "id": "nt-64-Jn-10-17",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "041017"
+      },
+      "text": "διὰ τοῦτό ⸂με ὁ πατὴρ⸃ ἀγαπᾷ ὅτι ἐγὼ τίθημι τὴν ψυχήν μου, ἵνα πάλιν λάβω αὐτήν."
+    },
+    {
+      "id": "nt-64-Jn-10-18",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "041018"
+      },
+      "text": "οὐδεὶς ⸀αἴρει αὐτὴν ἀπ’ ἐμοῦ, ἀλλ’ ἐγὼ τίθημι αὐτὴν ἀπ’ ἐμαυτοῦ. ἐξουσίαν ἔχω θεῖναι αὐτήν, καὶ ἐξουσίαν ἔχω πάλιν λαβεῖν αὐτήν· ταύτην τὴν ἐντολὴν ἔλαβον παρὰ τοῦ πατρός μου."
+    },
+    {
+      "id": "nt-64-Jn-10-26",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "041026"
+      },
+      "text": "ἀλλὰ ὑμεῖς οὐ πιστεύετε, ⸂ὅτι οὐκ⸃ ἐστὲ ἐκ τῶν προβάτων τῶν ⸀ἐμῶν."
+    },
+    {
+      "id": "nt-64-Jn-10-27",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "041027"
+      },
+      "text": "τὰ πρόβατα τὰ ἐμὰ τῆς φωνῆς μου ⸀ἀκούουσιν, κἀγὼ γινώσκω αὐτά, καὶ ἀκολουθοῦσίν μοι,"
+    },
+    {
+      "id": "nt-64-Jn-10-28",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "041028"
+      },
+      "text": "κἀγὼ ⸂δίδωμι αὐτοῖς ζωὴν αἰώνιον⸃, καὶ οὐ μὴ ἀπόλωνται εἰς τὸν αἰῶνα, καὶ οὐχ ἁρπάσει τις αὐτὰ ἐκ τῆς χειρός μου."
+    },
+    {
+      "id": "nt-64-Jn-12-32",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "041232"
+      },
+      "text": "κἀγὼ ⸀ἐὰν ὑψωθῶ ἐκ τῆς γῆς, πάντας ἑλκύσω πρὸς ἐμαυτόν."
+    },
+    {
+      "id": "nt-64-Jn-16-32",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "041632"
+      },
+      "text": "ἰδοὺ ἔρχεται ὥρα ⸀καὶ ἐλήλυθεν ἵνα σκορπισθῆτε ἕκαστος εἰς τὰ ἴδια κἀμὲ μόνον ἀφῆτε· καὶ οὐκ εἰμὶ μόνος, ὅτι ὁ πατὴρ μετ’ ἐμοῦ ἐστιν."
+    },
+    {
+      "id": "nt-64-Jn-17-19",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "041719"
+      },
+      "text": "καὶ ὑπὲρ αὐτῶν ἐγὼ ἁγιάζω ἐμαυτόν, ἵνα ⸂ὦσιν καὶ αὐτοὶ⸃ ἡγιασμένοι ἐν ἀληθείᾳ."
+    },
+    {
+      "id": "nt-64-Jn-17-20",
+      "kind": "morphgnt",
+      "file": "nt/64-Jn-morphgnt.txt",
+      "locator": {
+        "verse": "041720"
+      },
+      "text": "Οὐ περὶ τούτων δὲ ἐρωτῶ μόνον, ἀλλὰ καὶ περὶ τῶν πιστευόντων διὰ τοῦ λόγου αὐτῶν εἰς ἐμέ,"
+    },
+    {
+      "id": "nt-63-Lk-15-13",
+      "kind": "morphgnt",
+      "file": "nt/63-Lk-morphgnt.txt",
+      "locator": {
+        "verse": "031513"
+      },
+      "text": "καὶ μετ’ οὐ πολλὰς ἡμέρας συναγαγὼν ⸀πάντα ὁ νεώτερος υἱὸς ἀπεδήμησεν εἰς χώραν μακράν, καὶ ἐκεῖ διεσκόρπισεν τὴν οὐσίαν αὐτοῦ ζῶν ἀσώτως."
+    },
+    {
+      "id": "nt-63-Lk-1-51",
+      "kind": "morphgnt",
+      "file": "nt/63-Lk-morphgnt.txt",
+      "locator": {
+        "verse": "030151"
+      },
+      "text": "Ἐποίησεν κράτος ἐν βραχίονι αὐτοῦ, διεσκόρπισεν ὑπερηφάνους διανοίᾳ καρδίας αὐτῶν·"
+    },
+    {
+      "id": "nt-65-Ac-18-8",
+      "kind": "morphgnt",
+      "file": "nt/65-Ac-morphgnt.txt",
+      "locator": {
+        "verse": "051808"
+      },
+      "text": "Κρίσπος δὲ ὁ ἀρχισυνάγωγος ἐπίστευσεν τῷ κυρίῳ σὺν ὅλῳ τῷ οἴκῳ αὐτοῦ, καὶ πολλοὶ τῶν Κορινθίων ἀκούοντες ἐπίστευον καὶ ἐβαπτίζοντο."
+    },
+    {
+      "id": "nt-65-Ac-18-9",
+      "kind": "morphgnt",
+      "file": "nt/65-Ac-morphgnt.txt",
+      "locator": {
+        "verse": "051809"
+      },
+      "text": "εἶπεν δὲ ὁ κύριος ⸂ἐν νυκτὶ δι’ ὁράματος⸃ τῷ Παύλῳ· Μὴ φοβοῦ, ἀλλὰ λάλει καὶ μὴ σιωπήσῃς,"
+    },
+    {
+      "id": "nt-65-Ac-18-10",
+      "kind": "morphgnt",
+      "file": "nt/65-Ac-morphgnt.txt",
+      "locator": {
+        "verse": "051810"
+      },
+      "text": "διότι ἐγώ εἰμι μετὰ σοῦ καὶ οὐδεὶς ἐπιθήσεταί σοι τοῦ κακῶσαί σε, διότι λαός ἐστί μοι πολὺς ἐν τῇ πόλει ταύτῃ."
+    },
+    {
+      "id": "nt-65-Ac-26-14",
+      "kind": "morphgnt",
+      "file": "nt/65-Ac-morphgnt.txt",
+      "locator": {
+        "verse": "052614"
+      },
+      "text": "πάντων ⸀τε καταπεσόντων ἡμῶν εἰς τὴν γῆν ἤκουσα φωνὴν ⸀λέγουσαν πρός ⸀με τῇ Ἑβραΐδι διαλέκτῳ· Σαοὺλ Σαούλ, τί με διώκεις; σκληρόν σοι πρὸς κέντρα λακτίζειν."
+    },
+    {
+      "id": "nt-79-Heb-9-13",
+      "kind": "morphgnt",
+      "file": "nt/79-Heb-morphgnt.txt",
+      "locator": {
+        "verse": "190913"
+      },
+      "text": "εἰ γὰρ τὸ αἷμα ⸂τράγων καὶ ταύρων⸃ καὶ σποδὸς δαμάλεως ῥαντίζουσα τοὺς κεκοινωμένους ἁγιάζει πρὸς τὴν τῆς σαρκὸς καθαρότητα,"
+    },
+    {
+      "id": "nt-79-Heb-9-19",
+      "kind": "morphgnt",
+      "file": "nt/79-Heb-morphgnt.txt",
+      "locator": {
+        "verse": "190919"
+      },
+      "text": "λαληθείσης γὰρ πάσης ἐντολῆς κατὰ ⸀τὸν νόμον ὑπὸ Μωϋσέως παντὶ τῷ λαῷ, λαβὼν τὸ αἷμα τῶν ⸀μόσχων μετὰ ὕδατος καὶ ἐρίου κοκκίνου καὶ ὑσσώπου αὐτό τε τὸ βιβλίον καὶ πάντα τὸν λαὸν ἐράντισεν,"
+    },
+    {
+      "id": "nt-79-Heb-9-21",
+      "kind": "morphgnt",
+      "file": "nt/79-Heb-morphgnt.txt",
+      "locator": {
+        "verse": "190921"
+      },
+      "text": "καὶ τὴν σκηνὴν δὲ καὶ πάντα τὰ σκεύη τῆς λειτουργίας τῷ αἵματι ὁμοίως ἐράντισεν."
+    },
+    {
+      "id": "nt-79-Heb-10-22",
+      "kind": "morphgnt",
+      "file": "nt/79-Heb-morphgnt.txt",
+      "locator": {
+        "verse": "191022"
+      },
+      "text": "προσερχώμεθα μετὰ ἀληθινῆς καρδίας ἐν πληροφορίᾳ πίστεως, ῥεραντισμένοι τὰς καρδίας ἀπὸ συνειδήσεως πονηρᾶς καὶ λελουσμένοι τὸ σῶμα ὕδατι καθαρῷ·"
+    },
+    {
+      "id": "nt-87-Re-9-10",
+      "kind": "morphgnt",
+      "file": "nt/87-Re-morphgnt.txt",
+      "locator": {
+        "verse": "270910"
+      },
+      "text": "καὶ ἔχουσιν οὐρὰς ὁμοίας σκορπίοις καὶ κέντρα, καὶ ἐν ταῖς οὐραῖς αὐτῶν ⸂ἡ ἐξουσία αὐτῶν⸃ ἀδικῆσαι τοὺς ἀνθρώπους μῆνας πέντε."
+    },
+    {
+      "id": "nt-67-1Co-15-55",
+      "kind": "morphgnt",
+      "file": "nt/67-1Co-morphgnt.txt",
+      "locator": {
+        "verse": "071555"
+      },
+      "text": "ποῦ σου, θάνατε, τὸ ⸂νῖκος; ποῦ σου, θάνατε, τὸ κέντρον⸃;"
+    },
+    {
+      "id": "nt-67-1Co-15-56",
+      "kind": "morphgnt",
+      "file": "nt/67-1Co-morphgnt.txt",
+      "locator": {
+        "verse": "071556"
+      },
+      "text": "τὸ δὲ κέντρον τοῦ θανάτου ἡ ἁμαρτία, ἡ δὲ δύναμις τῆς ἁμαρτίας ὁ νόμος·"
+    },
+    {
+      "id": "eli-Ps-50-20",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "locator": {
+        "verse": "Psa.50:20"
+      },
+      "text": "ἀγάθυνον, Κύριε, ἐν τῇ εὐδοκίᾳ σου τὴν Σιών, καὶ οἰκοδομηθήτω τὰ τείχη Ἰερουσαλήμ."
+    },
+    {
+      "id": "eli-Ps-50-21",
+      "kind": "eli",
+      "file": "eli/00-Swete_versification.csv",
+      "wordsFile": "eli/01-Swete_word_with_punctuations.csv",
+      "locator": {
+        "verse": "Psa.50:21"
+      },
+      "text": "τότε εὐδοκήσεις θυσίαν δικαιοσύνης, ἀναφορὰν καὶ ὁλοκαυτώματα· τότε ἀνοίσουσιν ἐπὶ τὸ θυσιαστήριόν σου μόσχους."
+    },
+    {
+      "id": "s23-Isa-1-11",
+      "kind": "s23",
+      "file": "swete/data/48.Isaias.txt",
+      "locator": {
+        "verse": "48.1.11"
+      },
+      "text": "τί ἐμοὶ πλῆθος τῶν θυσιῶν ὑμῶν ; λέγει Κύριος· πλήρης εἰμὶ ὁλοκαυτωμάτων κριῶν, καὶ στέαρ ἀρνῶν καὶ αἷμα ταύρων καὶ τράγων οὐ βούλομαι,"
+    },
+    {
+      "id": "s23-Isa-1-12",
+      "kind": "s23",
+      "file": "swete/data/48.Isaias.txt",
+      "locator": {
+        "verse": "48.1.12"
+      },
+      "text": "οὐδ' ἂν ἔρχησθε ὀφθῆναί μοι. τίς γὰρ ἐξεζήτησεν ταῦτα ἐκ τῶν χειρῶν ὑμῶν; πατεῖν τὴν αὐλήν μου"
+    },
+    {
+      "id": "s23-Isa-1-13",
+      "kind": "s23",
+      "file": "swete/data/48.Isaias.txt",
+      "locator": {
+        "verse": "48.1.13"
+      },
+      "text": "οὐ προσθήσεσθε· ἐὰν φέρητέ μοι σεμίδαλιν, μάταιον· θυμίαμα, βδέλυγμά μοί ἐστιν· τὰς νουμηνίας ὑμῶν καὶ τὰ σάββατα καὶ ἡμέραν μεγάλην οὐκ ἀνέχομαι· νηστείαν καὶ ἀργείαν"
+    },
+    {
+      "id": "s23-Isa-1-14",
+      "kind": "s23",
+      "file": "swete/data/48.Isaias.txt",
+      "locator": {
+        "verse": "48.1.14"
+      },
+      "text": "καὶ τὰς νουμηνίας ὑμῶν καὶ τὰς ἑορτὰς ὑμῶν μισεῖ ἡ ψυχή μου· ἐγενήθητέ μοι εἷς πλησμονήν, οὐκέτι ἀνήσω τὰς ἁμαρτίας ὑμῶν."
+    },
+    {
+      "id": "s23-Isa-1-15",
+      "kind": "s23",
+      "file": "swete/data/48.Isaias.txt",
+      "locator": {
+        "verse": "48.1.15"
+      },
+      "text": "ὅταν τὰς χεῖρας ἐκτείνητε πρός με, ἀποστρέψει) τοὺς ὀφθαλμούς μου ἀφ’ ὑμῶν· καὶ ἐὰν πληθύνητε τὴν δέησιν, οὐκ εἰσακούσομαι ὑμῶν, αἱ γὰρ χεῖρες ὑμῶν αἵματος πλήρεις."
+    },
+    {
+      "id": "s23-Isa-1-16",
+      "kind": "s23",
+      "file": "swete/data/48.Isaias.txt",
+      "locator": {
+        "verse": "48.1.16"
+      },
+      "text": "λούσασθε, καθαροὶ γένεσθε, ἀφέλετε τὰς πονηρίας ἀπὸ τῶν ψυχῶν ὑμῶν ἀπέναντι τῶν ὀφθαλμῶν μου· παύσασθε ἀπὸ τῶν πονηριῶν ὑμῶν,"
+    },
+    {
+      "id": "s23-Isa-1-17",
+      "kind": "s23",
+      "file": "swete/data/48.Isaias.txt",
+      "locator": {
+        "verse": "48.1.17"
+      },
+      "text": "μάθετε καλὸν ποιεῖν, ἐκζητήσατε κρίσιν, ῥύσασθε ἀδικούμενον, κρίνατε ὀρφανῷ καὶ δικαιώσατε χήραν."
+    },
+    {
+      "id": "s23-Isa-52-13",
+      "kind": "s23",
+      "file": "swete/data/48.Isaias.txt",
+      "locator": {
+        "verse": "48.52.13"
+      },
+      "text": "Ἰδοὺ συνήσει ὃ παῖς μου, καὶ ὑψωθήσεται καὶ δοξασθήσεται σφόδρα."
+    },
+    {
+      "id": "s23-Isa-52-14",
+      "kind": "s23",
+      "file": "swete/data/48.Isaias.txt",
+      "locator": {
+        "verse": "48.52.14"
+      },
+      "text": "ὅν τρόπον ἐκστήσονται ἐπὶ σὲ πολλοί, οὕτως ἀδοξήσει ἀπὸ ἀνθρώπων τὸ εἶδός σου, καὶ ἡ δόξα σου ἀπὸ τῶν ἀνθρώπων."
+    },
+    {
+      "id": "s23-Isa-52-15",
+      "kind": "s23",
+      "file": "swete/data/48.Isaias.txt",
+      "locator": {
+        "verse": "48.52.15"
+      },
+      "text": "οὕτως θαυμάσονται ἔθνη πολλὰ ἐπ’ αὐτῷ, καὶ συνάξουσιν βασιλεῖς τὸ στόμα αὐτῶν· ὅτι οἷς οὐκ ἀνηγγέλη περὶ αὐτοῦ ὄψονται, καὶ οἳ. οὐκ ἀκηκόασιν συνήσουσιν."
+    },
+    {
+      "id": "s23-Isa-53-1",
+      "kind": "s23",
+      "file": "swete/data/48.Isaias.txt",
+      "locator": {
+        "verse": "48.53.1"
+      },
+      "text": "Kύριε, τίς ἐπίστευσεν τῇ ἀκοῇ ἡμῶν; καὶ ὃ Κυρίου τίνι ἀπεκαλύφθη;"
+    },
+    {
+      "id": "s23-Isa-53-2",
+      "kind": "s23",
+      "file": "swete/data/48.Isaias.txt",
+      "locator": {
+        "verse": "48.53.2"
+      },
+      "text": "ἀνηγγείλαμεν ἐναντίον αὑτοῦ ὡς παιδίον, ὡς ῥίζα ἐν γῇ διψώσῃ· οὐκ ἔστιν εἶδος αὐτῷ οὐδὲ δόξα. καὶ ἴδομεν· αὐτόν, καὶ οὒκ εἶχεν εἶδος οὐδὲ κάλλος,"
+    },
+    {
+      "id": "s23-Isa-53-3",
+      "kind": "s23",
+      "file": "swete/data/48.Isaias.txt",
+      "locator": {
+        "verse": "48.53.3"
+      },
+      "text": "ἀλλὰ τὸ εἶδος αὐτοῦ· ἄτιμον, ἐκλεῖπον παρὰ πάντας ἀνθρώπους· ἅνθρωπος ἐν πληγῇ· ὢν καὶ εἰδὼς φέρειν μαλακίαν, ὅτι ἀπέστραπται τὸ πρόσωπον· αὑτοῦ, ἠτιμάσθη καὶ οὐκ ἐλογίσθη."
+    },
+    {
+      "id": "s23-Isa-53-4",
+      "kind": "s23",
+      "file": "swete/data/48.Isaias.txt",
+      "locator": {
+        "verse": "48.53.4"
+      },
+      "text": "οὗτος τὰς ἁμαρτίας φέρει καὶ περὶ ἡμῶν ὀδυνᾶται, καὶ ἡμεῖς ἐλογισάμεθα αὐτὸν εἶναι ἐν πόνῳ καὶ ἐν πληγῇ καὶ ἐν κακώσει."
+    },
+    {
+      "id": "s23-Isa-53-5",
+      "kind": "s23",
+      "file": "swete/data/48.Isaias.txt",
+      "locator": {
+        "verse": "48.53.5"
+      },
+      "text": "αὐτὸς δὲ ἐτραυματίσθη διὰ τὰς ἀνομίας ἡμῶν, καὶ ἐμαλακίσθη διὰ τὰς ἁμαρτίας παιδία εἰρήνης ἡμῶν ἐπ’ αὐτόν, τῷ μώλωπι αὑτοῦ ἡμεῖς ἰάθημεν."
+    },
+    {
+      "id": "s23-Isa-53-6",
+      "kind": "s23",
+      "file": "swete/data/48.Isaias.txt",
+      "locator": {
+        "verse": "48.53.6"
+      },
+      "text": "πάντες ὡς πρόβατα ἐπλανήθημεν, ἅνθρωπος Τῇ ὁδῷ αὐτοῦ ἐπλανήθη· καὶ Κύριος παρέδωκεν αὐτὸν ταῖς ἁμαρτίαις ἡμῶν."
+    },
+    {
+      "id": "s23-Isa-53-7",
+      "kind": "s23",
+      "file": "swete/data/48.Isaias.txt",
+      "locator": {
+        "verse": "48.53.7"
+      },
+      "text": "καὶ αὐτὸς διὰ τὸ κεκακῶσθαι οὐκ ἀνοίγει τὸ στόμα· ὡς πρόβατον ἐπὶ σφαγὴν ἤχθη, καὶ ὡς ἀμνὸς ἐναντίον τοῦ κείραντος αὐτὸν ἄφωνος, οὕτως οὔκ ἀνοίγει τὸ στόμα αὑτοῦ."
+    },
+    {
+      "id": "s23-Isa-53-8",
+      "kind": "s23",
+      "file": "swete/data/48.Isaias.txt",
+      "locator": {
+        "verse": "48.53.8"
+      },
+      "text": "ἐν τῇ ταπεινώσει ἦ κρίσις αὐτοῦ τὴν γενεὰν αὐτοῦ τίς διηγήσεται; ὅτι αἴρεται ἀπὸ τῆς γῆς ἡ ζωὴ αὐτοῦ, ἀπὸ τῶν ἀνομιῶν τοῦ λαοῦ μου ἤχθη εἰς θάνατον."
+    },
+    {
+      "id": "s23-Isa-53-9",
+      "kind": "s23",
+      "file": "swete/data/48.Isaias.txt",
+      "locator": {
+        "verse": "48.53.9"
+      },
+      "text": "καὶ δώσω τοὺς καὶ αὐτὸς διὰ τὸ πονηροὺς ἀντὶ τῆς ταφῆς αὐτοῦ, καὶ τοὺς πλουσίους ἀντὶ τοῦ θανάτου αὐτοῦ· ὅτι ἀνομίαν οὐκ ἐποίησεν, οὐδὲ εὑρέθη δόλος ἐν τῷ στόματι αὑτοῦ."
+    },
+    {
+      "id": "s23-Isa-53-10",
+      "kind": "s23",
+      "file": "swete/data/48.Isaias.txt",
+      "locator": {
+        "verse": "48.53.10"
+      },
+      "text": "καὶ Κύριος βούλεται καθαρίσαι αὐτὸν ἀπὸ τῆς πληγῆς· ἐὰν δῶτε περὶ ἁμαρτίας, ἡ ὑμῶν ὄψεται σπέρμα μακρόβιον· καὶ βούλεται Κύριος ἀφελεῖν ἀπὸ τοῦ πόνου τῆς ψυχῆς αὐτοῦ,"
+    },
+    {
+      "id": "s23-Isa-53-11",
+      "kind": "s23",
+      "file": "swete/data/48.Isaias.txt",
+      "locator": {
+        "verse": "48.53.11"
+      },
+      "text": "δεῖξαι αὐτῷ φῶς καὶ πλάσαι τῇ συνέσει, δικαιῶσαι δίκαιον εὖ δουλεύοντα πολλοῖς, καὶ τὰς ἁμαρτίας αὐτῶν αὑτὸς ἀνοίσει."
+    },
+    {
+      "id": "s23-Isa-53-12",
+      "kind": "s23",
+      "file": "swete/data/48.Isaias.txt",
+      "locator": {
+        "verse": "48.53.12"
+      },
+      "text": "διὰ τοῦτο αὐτὸς κληρονομήσει πολλούς, καὶ τῶν ἰσχυρῶν μεριεῖ σκῦλα· ἀνθ’ ὧν παρεδόθη εἷς θάνατον ἡ αὐτοῦ, καὶ ἐν τοῖς ἀνόμοις ἐλογίσθη, καὶ αὐτὸς ἁμαρτίας πολλῶν ἀνήνεγκεν, καὶ διὰ τὰς ἁμαρτίας αὐτῶν παρεδόθη."
+    }
+  ],
+  "greekTokenCounts": [
+    {
+      "file": "gregory29",
+      "token": "αἵματος",
+      "count": 1,
+      "scope": "author body, no notes/heads; NFD accent folding; exact word, not lemma family"
+    },
+    {
+      "file": "gregory29",
+      "token": "σφαγήν",
+      "count": 1,
+      "scope": "author body, no notes/heads; NFD accent folding; exact word, not lemma family"
+    },
+    {
+      "file": "gregory30",
+      "token": "λύτρον",
+      "count": 1,
+      "scope": "author body, no notes/heads; NFD accent folding; exact word, not lemma family"
+    },
+    {
+      "file": "gregory30",
+      "token": "σφάγιον",
+      "count": 1,
+      "scope": "author body, no notes/heads; NFD accent folding; exact word, not lemma family"
+    },
+    {
+      "file": "athanasius",
+      "token": "λύτρον",
+      "count": 2,
+      "scope": "author body, no notes/heads; NFD accent folding; exact word, not lemma family"
+    }
+  ],
+  "mtLemmaSearches": [
+    {
+      "id": "H817-all",
+      "lemma": "817",
+      "books": [
+        "1Chr",
+        "1Kgs",
+        "1Sam",
+        "2Chr",
+        "2Kgs",
+        "2Sam",
+        "Amos",
+        "Dan",
+        "Deut",
+        "Eccl",
+        "Esth",
+        "Exod",
+        "Ezek",
+        "Ezra",
+        "Gen",
+        "Hab",
+        "Hag",
+        "Hos",
+        "Isa",
+        "Jer",
+        "Job",
+        "Joel",
+        "Jonah",
+        "Josh",
+        "Judg",
+        "Lam",
+        "Lev",
+        "Mal",
+        "Mic",
+        "Nah",
+        "Neh",
+        "Num",
+        "Obad",
+        "Prov",
+        "Ps",
+        "Ruth",
+        "Song",
+        "Zech",
+        "Zeph"
+      ],
+      "occurrences": [
+        "1Sam.6.3",
+        "1Sam.6.4",
+        "1Sam.6.8",
+        "1Sam.6.17",
+        "2Kgs.12.17",
+        "Ezek.40.39",
+        "Ezek.42.13",
+        "Ezek.44.29",
+        "Ezek.46.20",
+        "Gen.26.10",
+        "Isa.53.10",
+        "Jer.51.5",
+        "Lev.5.6",
+        "Lev.5.7",
+        "Lev.5.15",
+        "Lev.5.15",
+        "Lev.5.16",
+        "Lev.5.18",
+        "Lev.5.19",
+        "Lev.5.25",
+        "Lev.5.25",
+        "Lev.6.10",
+        "Lev.7.1",
+        "Lev.7.2",
+        "Lev.7.5",
+        "Lev.7.7",
+        "Lev.7.37",
+        "Lev.14.12",
+        "Lev.14.13",
+        "Lev.14.14",
+        "Lev.14.17",
+        "Lev.14.21",
+        "Lev.14.24",
+        "Lev.14.25",
+        "Lev.14.25",
+        "Lev.14.28",
+        "Lev.19.21",
+        "Lev.19.21",
+        "Lev.19.22",
+        "Num.5.7",
+        "Num.5.8",
+        "Num.5.8",
+        "Num.6.12",
+        "Num.18.9",
+        "Prov.14.9",
+        "Ps.68.22"
+      ],
+      "countingUnit": "word tokens, ketiv; notes/qere excluded"
+    },
+    {
+      "id": "H5137-all",
+      "lemma": "5137",
+      "books": [
+        "1Chr",
+        "1Kgs",
+        "1Sam",
+        "2Chr",
+        "2Kgs",
+        "2Sam",
+        "Amos",
+        "Dan",
+        "Deut",
+        "Eccl",
+        "Esth",
+        "Exod",
+        "Ezek",
+        "Ezra",
+        "Gen",
+        "Hab",
+        "Hag",
+        "Hos",
+        "Isa",
+        "Jer",
+        "Job",
+        "Joel",
+        "Jonah",
+        "Josh",
+        "Judg",
+        "Lam",
+        "Lev",
+        "Mal",
+        "Mic",
+        "Nah",
+        "Neh",
+        "Num",
+        "Obad",
+        "Prov",
+        "Ps",
+        "Ruth",
+        "Song",
+        "Zech",
+        "Zeph"
+      ],
+      "occurrences": [
+        "2Kgs.9.33",
+        "Exod.29.21",
+        "Isa.52.15",
+        "Isa.63.3",
+        "Lev.4.6",
+        "Lev.4.17",
+        "Lev.5.9",
+        "Lev.6.20",
+        "Lev.6.20",
+        "Lev.8.11",
+        "Lev.8.30",
+        "Lev.14.7",
+        "Lev.14.16",
+        "Lev.14.27",
+        "Lev.14.51",
+        "Lev.16.14",
+        "Lev.16.14",
+        "Lev.16.15",
+        "Lev.16.19",
+        "Num.8.7",
+        "Num.19.4",
+        "Num.19.18",
+        "Num.19.19",
+        "Num.19.21"
+      ],
+      "countingUnit": "word tokens, ketiv; notes/qere excluded"
+    },
+    {
+      "id": "H5445-all",
+      "lemma": "5445",
+      "books": [
+        "1Chr",
+        "1Kgs",
+        "1Sam",
+        "2Chr",
+        "2Kgs",
+        "2Sam",
+        "Amos",
+        "Dan",
+        "Deut",
+        "Eccl",
+        "Esth",
+        "Exod",
+        "Ezek",
+        "Ezra",
+        "Gen",
+        "Hab",
+        "Hag",
+        "Hos",
+        "Isa",
+        "Jer",
+        "Job",
+        "Joel",
+        "Jonah",
+        "Josh",
+        "Judg",
+        "Lam",
+        "Lev",
+        "Mal",
+        "Mic",
+        "Nah",
+        "Neh",
+        "Num",
+        "Obad",
+        "Prov",
+        "Ps",
+        "Ruth",
+        "Song",
+        "Zech",
+        "Zeph"
+      ],
+      "occurrences": [
+        "Eccl.12.5",
+        "Gen.49.15",
+        "Isa.46.4",
+        "Isa.46.4",
+        "Isa.46.7",
+        "Isa.53.4",
+        "Isa.53.11",
+        "Lam.5.7",
+        "Ps.144.14"
+      ],
+      "countingUnit": "word tokens, ketiv; notes/qere excluded"
+    },
+    {
+      "id": "H6986-all",
+      "lemma": "6986",
+      "books": [
+        "1Chr",
+        "1Kgs",
+        "1Sam",
+        "2Chr",
+        "2Kgs",
+        "2Sam",
+        "Amos",
+        "Dan",
+        "Deut",
+        "Eccl",
+        "Esth",
+        "Exod",
+        "Ezek",
+        "Ezra",
+        "Gen",
+        "Hab",
+        "Hag",
+        "Hos",
+        "Isa",
+        "Jer",
+        "Job",
+        "Joel",
+        "Jonah",
+        "Josh",
+        "Judg",
+        "Lam",
+        "Lev",
+        "Mal",
+        "Mic",
+        "Nah",
+        "Neh",
+        "Num",
+        "Obad",
+        "Prov",
+        "Ps",
+        "Ruth",
+        "Song",
+        "Zech",
+        "Zeph"
+      ],
+      "occurrences": [
+        "Deut.32.24",
+        "Isa.28.2",
+        "Ps.91.6"
+      ],
+      "countingUnit": "word tokens, ketiv; notes/qere excluded"
+    },
+    {
+      "id": "H6987-all",
+      "lemma": "6987",
+      "books": [
+        "1Chr",
+        "1Kgs",
+        "1Sam",
+        "2Chr",
+        "2Kgs",
+        "2Sam",
+        "Amos",
+        "Dan",
+        "Deut",
+        "Eccl",
+        "Esth",
+        "Exod",
+        "Ezek",
+        "Ezra",
+        "Gen",
+        "Hab",
+        "Hag",
+        "Hos",
+        "Isa",
+        "Jer",
+        "Job",
+        "Joel",
+        "Jonah",
+        "Josh",
+        "Judg",
+        "Lam",
+        "Lev",
+        "Mal",
+        "Mic",
+        "Nah",
+        "Neh",
+        "Num",
+        "Obad",
+        "Prov",
+        "Ps",
+        "Ruth",
+        "Song",
+        "Zech",
+        "Zeph"
+      ],
+      "occurrences": [
+        "Hos.13.14"
+      ],
+      "countingUnit": "word tokens, ketiv; notes/qere excluded"
+    },
+    {
+      "id": "H5522-all",
+      "lemma": "5522",
+      "books": [
+        "1Chr",
+        "1Kgs",
+        "1Sam",
+        "2Chr",
+        "2Kgs",
+        "2Sam",
+        "Amos",
+        "Dan",
+        "Deut",
+        "Eccl",
+        "Esth",
+        "Exod",
+        "Ezek",
+        "Ezra",
+        "Gen",
+        "Hab",
+        "Hag",
+        "Hos",
+        "Isa",
+        "Jer",
+        "Job",
+        "Joel",
+        "Jonah",
+        "Josh",
+        "Judg",
+        "Lam",
+        "Lev",
+        "Mal",
+        "Mic",
+        "Nah",
+        "Neh",
+        "Num",
+        "Obad",
+        "Prov",
+        "Ps",
+        "Ruth",
+        "Song",
+        "Zech",
+        "Zeph"
+      ],
+      "occurrences": [
+        "Amos.5.26"
+      ],
+      "countingUnit": "word tokens, ketiv; notes/qere excluded"
+    },
+    {
+      "id": "H3594-all",
+      "lemma": "3594",
+      "books": [
+        "1Chr",
+        "1Kgs",
+        "1Sam",
+        "2Chr",
+        "2Kgs",
+        "2Sam",
+        "Amos",
+        "Dan",
+        "Deut",
+        "Eccl",
+        "Esth",
+        "Exod",
+        "Ezek",
+        "Ezra",
+        "Gen",
+        "Hab",
+        "Hag",
+        "Hos",
+        "Isa",
+        "Jer",
+        "Job",
+        "Joel",
+        "Jonah",
+        "Josh",
+        "Judg",
+        "Lam",
+        "Lev",
+        "Mal",
+        "Mic",
+        "Nah",
+        "Neh",
+        "Num",
+        "Obad",
+        "Prov",
+        "Ps",
+        "Ruth",
+        "Song",
+        "Zech",
+        "Zeph"
+      ],
+      "occurrences": [
+        "Amos.5.26"
+      ],
+      "countingUnit": "word tokens, ketiv; notes/qere excluded"
+    },
+    {
+      "id": "H1698-all",
+      "lemma": "1698",
+      "books": [
+        "1Chr",
+        "1Kgs",
+        "1Sam",
+        "2Chr",
+        "2Kgs",
+        "2Sam",
+        "Amos",
+        "Dan",
+        "Deut",
+        "Eccl",
+        "Esth",
+        "Exod",
+        "Ezek",
+        "Ezra",
+        "Gen",
+        "Hab",
+        "Hag",
+        "Hos",
+        "Isa",
+        "Jer",
+        "Job",
+        "Joel",
+        "Jonah",
+        "Josh",
+        "Judg",
+        "Lam",
+        "Lev",
+        "Mal",
+        "Mic",
+        "Nah",
+        "Neh",
+        "Num",
+        "Obad",
+        "Prov",
+        "Ps",
+        "Ruth",
+        "Song",
+        "Zech",
+        "Zeph"
+      ],
+      "occurrences": [
+        "1Chr.21.12",
+        "1Chr.21.14",
+        "1Kgs.8.37",
+        "2Chr.6.28",
+        "2Chr.7.13",
+        "2Chr.20.9",
+        "2Sam.24.13",
+        "2Sam.24.15",
+        "Amos.4.10",
+        "Deut.28.21",
+        "Exod.5.3",
+        "Exod.9.3",
+        "Exod.9.15",
+        "Ezek.5.12",
+        "Ezek.5.17",
+        "Ezek.6.11",
+        "Ezek.6.12",
+        "Ezek.7.15",
+        "Ezek.7.15",
+        "Ezek.12.16",
+        "Ezek.14.19",
+        "Ezek.14.21",
+        "Ezek.28.23",
+        "Ezek.33.27",
+        "Ezek.38.22",
+        "Hab.3.5",
+        "Hos.13.14",
+        "Jer.14.12",
+        "Jer.21.6",
+        "Jer.21.7",
+        "Jer.21.9",
+        "Jer.24.10",
+        "Jer.27.8",
+        "Jer.27.13",
+        "Jer.28.8",
+        "Jer.29.17",
+        "Jer.29.18",
+        "Jer.32.24",
+        "Jer.32.36",
+        "Jer.34.17",
+        "Jer.38.2",
+        "Jer.42.17",
+        "Jer.42.22",
+        "Jer.44.13",
+        "Lev.26.25",
+        "Num.14.12",
+        "Ps.78.50",
+        "Ps.91.3",
+        "Ps.91.6"
+      ],
+      "countingUnit": "word tokens, ketiv; notes/qere excluded"
+    },
+    {
+      "id": "H4194-all",
+      "lemma": "4194",
+      "books": [
+        "1Chr",
+        "1Kgs",
+        "1Sam",
+        "2Chr",
+        "2Kgs",
+        "2Sam",
+        "Amos",
+        "Dan",
+        "Deut",
+        "Eccl",
+        "Esth",
+        "Exod",
+        "Ezek",
+        "Ezra",
+        "Gen",
+        "Hab",
+        "Hag",
+        "Hos",
+        "Isa",
+        "Jer",
+        "Job",
+        "Joel",
+        "Jonah",
+        "Josh",
+        "Judg",
+        "Lam",
+        "Lev",
+        "Mal",
+        "Mic",
+        "Nah",
+        "Neh",
+        "Num",
+        "Obad",
+        "Prov",
+        "Ps",
+        "Ruth",
+        "Song",
+        "Zech",
+        "Zeph"
+      ],
+      "occurrences": [
+        "1Chr.2.24",
+        "1Chr.22.5",
+        "1Kgs.2.26",
+        "1Kgs.11.40",
+        "1Sam.5.11",
+        "1Sam.15.32",
+        "1Sam.15.35",
+        "1Sam.20.3",
+        "1Sam.20.31",
+        "1Sam.26.16",
+        "2Chr.22.4",
+        "2Chr.24.15",
+        "2Chr.24.17",
+        "2Chr.25.25",
+        "2Chr.26.21",
+        "2Chr.32.33",
+        "2Kgs.1.1",
+        "2Kgs.2.21",
+        "2Kgs.3.5",
+        "2Kgs.4.40",
+        "2Kgs.14.17",
+        "2Kgs.15.5",
+        "2Sam.1.1",
+        "2Sam.1.23",
+        "2Sam.3.33",
+        "2Sam.6.23",
+        "2Sam.12.5",
+        "2Sam.15.21",
+        "2Sam.19.29",
+        "2Sam.20.3",
+        "2Sam.22.5",
+        "2Sam.22.6",
+        "Deut.19.6",
+        "Deut.21.22",
+        "Deut.22.26",
+        "Deut.30.15",
+        "Deut.30.19",
+        "Deut.31.27",
+        "Deut.31.29",
+        "Deut.33.1",
+        "Deut.34.7",
+        "Eccl.3.19",
+        "Eccl.3.19",
+        "Eccl.7.1",
+        "Eccl.7.26",
+        "Eccl.8.8",
+        "Eccl.10.1",
+        "Esth.2.7",
+        "Exod.10.17",
+        "Ezek.18.23",
+        "Ezek.18.32",
+        "Ezek.28.10",
+        "Ezek.31.14",
+        "Ezek.33.11",
+        "Gen.21.16",
+        "Gen.25.11",
+        "Gen.26.18",
+        "Gen.27.2",
+        "Gen.27.7",
+        "Gen.27.10",
+        "Gen.50.16",
+        "Hab.2.5",
+        "Hos.13.14",
+        "Hos.13.14",
+        "Isa.6.1",
+        "Isa.14.28",
+        "Isa.25.8",
+        "Isa.28.15",
+        "Isa.28.18",
+        "Isa.38.18",
+        "Isa.53.9",
+        "Isa.53.12",
+        "Jer.8.3",
+        "Jer.9.20",
+        "Jer.15.2",
+        "Jer.15.2",
+        "Jer.18.21",
+        "Jer.18.23",
+        "Jer.21.8",
+        "Jer.26.11",
+        "Jer.26.16",
+        "Jer.43.11",
+        "Jer.43.11",
+        "Jer.52.11",
+        "Jer.52.34",
+        "Job.3.21",
+        "Job.5.20",
+        "Job.7.15",
+        "Job.18.13",
+        "Job.27.15",
+        "Job.28.22",
+        "Job.30.23",
+        "Job.38.17",
+        "Jonah.4.3",
+        "Jonah.4.9",
+        "Josh.1.1",
+        "Josh.2.13",
+        "Josh.20.6",
+        "Judg.1.1",
+        "Judg.13.7",
+        "Judg.16.30",
+        "Lam.1.20",
+        "Lev.11.31",
+        "Lev.11.32",
+        "Lev.16.1",
+        "Num.6.7",
+        "Num.16.29",
+        "Num.23.10",
+        "Num.26.10",
+        "Num.33.39",
+        "Num.35.25",
+        "Num.35.28",
+        "Num.35.28",
+        "Num.35.32",
+        "Prov.2.18",
+        "Prov.5.5",
+        "Prov.7.27",
+        "Prov.8.36",
+        "Prov.10.2",
+        "Prov.11.4",
+        "Prov.11.7",
+        "Prov.11.19",
+        "Prov.12.28",
+        "Prov.13.14",
+        "Prov.14.12",
+        "Prov.14.27",
+        "Prov.14.32",
+        "Prov.16.14",
+        "Prov.16.25",
+        "Prov.18.21",
+        "Prov.21.6",
+        "Prov.24.11",
+        "Prov.26.18",
+        "Ps.6.6",
+        "Ps.7.14",
+        "Ps.9.14",
+        "Ps.13.4",
+        "Ps.18.5",
+        "Ps.18.6",
+        "Ps.22.16",
+        "Ps.33.19",
+        "Ps.49.15",
+        "Ps.49.18",
+        "Ps.55.5",
+        "Ps.56.14",
+        "Ps.68.21",
+        "Ps.73.4",
+        "Ps.78.50",
+        "Ps.89.49",
+        "Ps.107.18",
+        "Ps.116.3",
+        "Ps.116.8",
+        "Ps.116.15",
+        "Ps.118.18",
+        "Ruth.1.17",
+        "Ruth.2.11",
+        "Song.8.6"
+      ],
+      "countingUnit": "word tokens, ketiv; notes/qere excluded"
+    },
+    {
+      "id": "H7585-all",
+      "lemma": "7585",
+      "books": [
+        "1Chr",
+        "1Kgs",
+        "1Sam",
+        "2Chr",
+        "2Kgs",
+        "2Sam",
+        "Amos",
+        "Dan",
+        "Deut",
+        "Eccl",
+        "Esth",
+        "Exod",
+        "Ezek",
+        "Ezra",
+        "Gen",
+        "Hab",
+        "Hag",
+        "Hos",
+        "Isa",
+        "Jer",
+        "Job",
+        "Joel",
+        "Jonah",
+        "Josh",
+        "Judg",
+        "Lam",
+        "Lev",
+        "Mal",
+        "Mic",
+        "Nah",
+        "Neh",
+        "Num",
+        "Obad",
+        "Prov",
+        "Ps",
+        "Ruth",
+        "Song",
+        "Zech",
+        "Zeph"
+      ],
+      "occurrences": [
+        "1Kgs.2.6",
+        "1Kgs.2.9",
+        "1Sam.2.6",
+        "2Sam.22.6",
+        "Amos.9.2",
+        "Deut.32.22",
+        "Eccl.9.10",
+        "Ezek.31.15",
+        "Ezek.31.16",
+        "Ezek.31.17",
+        "Ezek.32.21",
+        "Ezek.32.27",
+        "Gen.37.35",
+        "Gen.42.38",
+        "Gen.44.29",
+        "Gen.44.31",
+        "Hab.2.5",
+        "Hos.13.14",
+        "Hos.13.14",
+        "Isa.5.14",
+        "Isa.7.11",
+        "Isa.14.9",
+        "Isa.14.11",
+        "Isa.14.15",
+        "Isa.28.15",
+        "Isa.28.18",
+        "Isa.38.10",
+        "Isa.38.18",
+        "Isa.57.9",
+        "Job.7.9",
+        "Job.11.8",
+        "Job.14.13",
+        "Job.17.13",
+        "Job.17.16",
+        "Job.21.13",
+        "Job.24.19",
+        "Job.26.6",
+        "Jonah.2.3",
+        "Num.16.30",
+        "Num.16.33",
+        "Prov.1.12",
+        "Prov.5.5",
+        "Prov.7.27",
+        "Prov.9.18",
+        "Prov.15.11",
+        "Prov.15.24",
+        "Prov.23.14",
+        "Prov.27.20",
+        "Prov.30.16",
+        "Ps.6.6",
+        "Ps.9.18",
+        "Ps.16.10",
+        "Ps.18.6",
+        "Ps.30.4",
+        "Ps.31.18",
+        "Ps.49.15",
+        "Ps.49.15",
+        "Ps.49.16",
+        "Ps.55.16",
+        "Ps.86.13",
+        "Ps.88.4",
+        "Ps.89.49",
+        "Ps.116.3",
+        "Ps.139.8",
+        "Ps.141.7",
+        "Song.8.6"
+      ],
+      "countingUnit": "word tokens, ketiv; notes/qere excluded"
+    },
+    {
+      "id": "H5545-Amos-Hos-Mic",
+      "lemma": "5545",
+      "books": [
+        "Amos",
+        "Hos",
+        "Mic"
+      ],
+      "occurrences": [
+        "Amos.7.2"
+      ],
+      "countingUnit": "word tokens, ketiv; notes/qere excluded"
+    },
+    {
+      "id": "H3722-Amos-Hos-Mic",
+      "lemma": "3722",
+      "books": [
+        "Amos",
+        "Hos",
+        "Mic"
+      ],
+      "occurrences": [],
+      "countingUnit": "word tokens, ketiv; notes/qere excluded"
+    },
+    {
+      "id": "H3722-Isa",
+      "lemma": "3722",
+      "books": [
+        "Isa"
+      ],
+      "occurrences": [
+        "Isa.6.7",
+        "Isa.22.14",
+        "Isa.27.9",
+        "Isa.28.18",
+        "Isa.47.11"
+      ],
+      "countingUnit": "word tokens, ketiv; notes/qere excluded"
+    },
+    {
+      "id": "H5545-Ps",
+      "lemma": "5545",
+      "books": [
+        "Ps"
+      ],
+      "occurrences": [
+        "Ps.25.11",
+        "Ps.103.3"
+      ],
+      "countingUnit": "word tokens, ketiv; notes/qere excluded"
+    },
+    {
+      "id": "H3722-Ps",
+      "lemma": "3722",
+      "books": [
+        "Ps"
+      ],
+      "occurrences": [
+        "Ps.65.4",
+        "Ps.78.38",
+        "Ps.79.9"
+      ],
+      "countingUnit": "word tokens, ketiv; notes/qere excluded"
+    }
+  ],
+  "ntLemmaSearches": [
+    {
+      "lemma": "ῥαντίζω",
+      "occurrences": [
+        "190913",
+        "190919",
+        "190921",
+        "191022"
+      ],
+      "countingUnit": "annotated lemma tokens, 27 books, eight-column py-sblgnt"
+    },
+    {
+      "lemma": "ῥαντισμός",
+      "occurrences": [
+        "191224",
+        "210102"
+      ],
+      "countingUnit": "annotated lemma tokens, 27 books, eight-column py-sblgnt"
+    },
+    {
+      "lemma": "κέντρον",
+      "occurrences": [
+        "052614",
+        "071555",
+        "071556",
+        "270910"
+      ],
+      "countingUnit": "annotated lemma tokens, 27 books, eight-column py-sblgnt"
+    },
+    {
+      "lemma": "νῖκος",
+      "occurrences": [
+        "011220",
+        "071554",
+        "071555",
+        "071557"
+      ],
+      "countingUnit": "annotated lemma tokens, 27 books, eight-column py-sblgnt"
+    },
+    {
+      "lemma": "σφάγιον",
+      "occurrences": [
+        "050742"
+      ],
+      "countingUnit": "annotated lemma tokens, 27 books, eight-column py-sblgnt"
+    }
+  ],
+  "webExcerpts": [
+    {
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "acquisitionMethod": "functions.fetch_page rendered text; selected excerpts retained, not raw HTML or printed edition",
+      "observedOnLocal": "2026-11-03",
+      "fullWorkReadingClaimed": false,
+      "rawObjectSha256": null,
+      "id": "WEB-ISAIAS",
+      "evidenceClass": "A2",
+      "url": "https://adw-goe.de/la/research/completed-research-projects/academies-programme/septuaginta/publications/septuaginta-vetus-testamentum-graecum/",
+      "locator": "Septuaginta Vetus Testamentum Graecum: entry Isaias; fetched chunk 1",
+      "excerpts": [
+        "Isaias, ed. Joseph Ziegler, Göttingen (Vandenhoeck & Ruprecht) 1939, 3. Auflage 1983."
+      ],
+      "finding": "Published edition exists; bibliographic access is not acquisition/reading of its apparatus."
+    },
+    {
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "acquisitionMethod": "functions.fetch_page rendered text; selected excerpts retained, not raw HTML or printed edition",
+      "observedOnLocal": "2026-11-03",
+      "fullWorkReadingClaimed": false,
+      "rawObjectSha256": null,
+      "id": "WEB-WESLEY",
+      "evidenceClass": "A1",
+      "url": "https://www.christianity.com/bible/commentary/john-wesley/john/11",
+      "locator": "Wesley’s Explanatory Notes, John 11, Verse 52; surrounding comments 46-55 read",
+      "excerpts": [
+        "But that, he might gather into one — Church, all the children of God that were scattered abroad - Through all ages and nations."
+      ],
+      "finding": "All children of God across ages/nations, not an assertion that all humans are already children; this excerpt alone does not settle Wesley’s entire soteriology."
+    },
+    {
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "acquisitionMethod": "functions.fetch_page rendered text; selected excerpts retained, not raw HTML or printed edition",
+      "observedOnLocal": "2026-11-03",
+      "fullWorkReadingClaimed": false,
+      "rawObjectSha256": null,
+      "id": "WEB-GILL",
+      "evidenceClass": "A1",
+      "url": "https://www.biblestudytools.com/commentaries/gills-exposition-of-the-bible/john-11-52.html",
+      "locator": "Gill’s Exposition, John 11:52; complete rendered comment read",
+      "excerpts": [
+        "but rather the elect of God among the Gentiles, called \"the children of God\",",
+        "and because they were the children of God by special adoption, in divine, predestination, and in the covenant of grace;",
+        "now Christ died for them, in order to bring them nigh to God, to the one true and living God; and to gather them together under one head, himself, their common head;"
+      ],
+      "finding": "Own explicit elect-Gentile adoption/predestination/covenant interpretation and death-for-them clause. The Persian-version remark remains Gill’s secondhand report, not a version independently acquired here."
+    }
+  ],
+  "method": {
+    "rawSourceObjects": "External only. Files verified against Git tree entries at acquisition and rehashed here. Full object means the named digital file, not a collated printed edition.",
+    "extracts": "Derived, NFC/whitespace normalized; TEI author body excludes notes and heads; OSIS direct verse words only; NT eight-column text=column5, lemma=column8; ELI token IDs with [start,nextStart).",
+    "counts": "Machine searches, not scoped reading receipts. MT inventory excludes VerseMap.xml. Normalized exact word search is not a lemma-family search.",
+    "independence": "S23 explicitly derives First1K; agreement is not an independent witness or a manuscript collation.",
+    "web": "Fetched rendered excerpts, not raw HTML/PDF archives; no invented byte hashes.",
+    "availability": "External source files may not survive workspace restoration. Absence on a future replay is an error, not a retroactive cancellation of the observed acquisition."
+  },
+  "initialByteVerifiedAt": "2026-11-02T21:35:03+00:00",
+  "timeConvention": "SUPERSEDED: the earlier Europe/Moscow explanation is withdrawn, not silently ratified by the current date. recordedOn is the task/document date; byteVerifiedAt and initialByteVerifiedAt retain their actual UTC instants. No fresh wave3 source replay or new reading is implied.",
+  "sourceRelationships": [
+    {
+      "source": "swete/data/48.Isaias.txt",
+      "relation": "DERIVED_NOT_INDEPENDENT",
+      "upstream": "OpenGreekAndLatin/First1KGreek, tlg0527",
+      "basisFiles": [
+        "swete/README.md",
+        "swete/utils/build.sh",
+        "swete/utils/convert-swete.py"
+      ],
+      "declaredUpstreamRevision": "eb81494731fd632f582c4b94634127bdbd596b43 (README: rebased to Jan 23, 2025 update; not this wave First1K commit)",
+      "observedBuildBehavior": "build.sh iterates grc XML files; convert-swete.py selects one filename by book id and opens it with w. Later inputs for a book can overwrite earlier outputs.",
+      "limit": "Selected Isaiah verse comparison is consistent with grc2/Ottley; no fresh build, manuscript collation or independence of witnesses is claimed."
+    }
+  ],
+  "uncompletedWebChecks": [
+    {
+      "url": "https://biblehub.com/commentary_on_john_volume_1/john_11_45-52.htm",
+      "result": "NO_USABLE_COMMENTARY_TEXT",
+      "newReadingClaimed": false
+    },
+    {
+      "url": "https://ccel.org/ccel/calvin/calcom34/calcom34.xvii.ix.html",
+      "result": "NO_USABLE_COMMENTARY_TEXT",
+      "newReadingClaimed": false
+    },
+    {
+      "url": "https://ccel.org/ccel/calvin/calcom34.xvii.ix.html",
+      "result": "NO_USABLE_COMMENTARY_TEXT",
+      "newReadingClaimed": false
+    }
+  ],
+  "timeConventionCorrection": {
+    "supersededText": "recordedOn is the local document date (Europe/Moscow); byteVerifiedAt is the actual UTC process timestamp. 2026-11-02 evening UTC is 2026-11-03 in Moscow. Earlier acquisition/replay receipts are not retimestamped as fresh reading.",
+    "recordedAtUtc": "2026-11-03T00:49:19+00:00",
+    "basis": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+    "actualUtcInstantsRetained": true
+  },
+  "subsequentAccessCorrection": {
+    "control": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+    "scope": "The listed unsuccessful wave3 Calvin addresses remain historical failures. Wave4 obtained the actual /library/calvin/ page; no globally-unavailable claim or retrospective wave3 reading."
+  }
+}

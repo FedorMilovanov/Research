@@ -370,5 +370,12 @@
   "mismatch": 22,
   "mismatch_live_verified": 14,
   "mismatch_two_corpora_only": 8
+ },
+ "historicalNotice": {
+  "status": "HISTORICAL_SNAPSHOT",
+  "explainedOn": "2026-11-02",
+  "scope": "Describes the pre-synchronization drafts, not their present text. Findings and counts are preserved, not silently relabelled as current.",
+  "currentRepairRecord": "ИСКУПЛЕНИЕ/evidence/synchronization_2026-11-02.json",
+  "verificationBoundary": "Current digital witness checks and local inherited-source comparisons are distinguished in that record. No new claim of printed-page verification."
  }
 }

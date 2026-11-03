@@ -49,6 +49,13 @@ import subprocess
 import sys
 from pathlib import Path
 
+# The clean-clone proof also loads this module with spec_from_file_location,
+# which does not add the scripts directory to sys.path as direct CLI execution does.
+_script_dir = str(Path(__file__).resolve().parent)
+if _script_dir not in sys.path:
+    sys.path.insert(0, _script_dir)
+from atonement_source_metrics import source_label_prefix
+
 ROOT = Path(__file__).resolve().parents[1]
 CORPUS = ROOT / "ИСКУПЛЕНИЕ" / "data" / "atonement-corpus-v1.json"
 INDEX = ROOT / "ИСКУПЛЕНИЕ" / "data" / "atonement-library-index.json"
@@ -393,16 +400,12 @@ DONOT_NEGATION = re.compile(r"(?i)(не\s|запрещ|ошибочн|непра
 
 
 def exhaust_matrix_scan(corp: dict) -> dict:
-    """Дуга VI: четыре числа на статью, которые печатает гейт, а не автор статьи.
+    """Structural support matrix, not a reading or exhaustiveness certificate.
 
-    Прочитано — строка таблицы опор с распознанным классом читаемости (A1–A3/B1–B2 по шкале
-    реестра массы); нечитаемо — строка без распознанного класса (для гейта не названо, по какому
-    изданию её читать; сюда же падает C-класс, и это слово проверяет приёмка: ни одной статьи,
-    где C-класс стоит в утверждении, а не в оговорке). Открытые конфликты — C-id статьи, чей
-    первый токен статуса не RESOLVED и не RESOLVED-BY-TEXT (запись без машиночитаемого статуса
-    считается открытой: закрытой её никто не назвал). Запреты — каждый слаг корневого `doNot`
-    обязан иметь подпись: сверка подписей с самим списком возвращается числом и входит в приёмку,
-    потому что «подписи нет» — это сверка, которую нельзя больше пройти молча."""
+    Counts recognized initial source labels; an unrecognized label says nothing
+    about readability. Class, access, exact locator, scoped reading and rights
+    are different facts. Conflict and doNot checks retain their prior force.
+    """
     root_donot = list(corp.get("doNot") or [])
     signed = set(DONOT_SIGNS) | set(DONOT_COMPOUND)
     miss = sorted(set(root_donot) - signed)
@@ -427,7 +430,7 @@ def exhaust_matrix_scan(corp: dict) -> dict:
     for pth in draft_paths():
         name = Path(pth).name
         text = Path(ROOT / pth).read_text(encoding="utf-8")
-        строкОпор = прочитано = нечитаемо = безЛокатора = сКлассомC = 0
+        строкОпор = сРаспознаннойМеткой = безРаспознаннойМетки = безЛокатора = сКлассомC = сКлассомD = 0
         lines, in_tab = text.split("\n"), False
         for ln in lines:
             if ln.startswith("| Опора | Класс"):
@@ -444,12 +447,15 @@ def exhaust_matrix_scan(corp: dict) -> dict:
                     continue
                 строкОпор += 1
                 cls, loc = cells[1], cells[2]
-                if re.match(r"(?:A[123]|B[12])\b", cls):
-                    прочитано += 1
+                label = source_label_prefix(cls)
+                if label is not None:
+                    сРаспознаннойМеткой += 1
                 else:
-                    нечитаемо += 1
-                if re.match(r"C\b", cls):
+                    безРаспознаннойМетки += 1
+                if label == "C":
                     сКлассомC += 1
+                if label == "D":
+                    сКлассомD += 1
                 if loc.strip().lower() in ("", "—", "-", "–", "нет", "n/a"):
                     безЛокатора += 1
         cids = sorted(set(re.findall(r"\bC-(\d{2})\b", text)))
@@ -473,8 +479,9 @@ def exhaust_matrix_scan(corp: dict) -> dict:
                     continue
                 нарушеноПодписей += 1
         статьи[name] = {
-            "строкОпор": строкОпор, "прочитано": прочитано, "нечитаемо": нечитаемо,
-            "безЛокатора": безЛокатора, "сКлассомC": сКлассомC,
+            "строкОпор": строкОпор, "сРаспознаннойМеткой": сРаспознаннойМеткой, "безРаспознаннойМетки": безРаспознаннойМетки,
+            "безЛокатора": безЛокатора, "сКлассомC": сКлассомC, "сКлассомD": сКлассомD,
+            "readingMeasured": False,
             "конфликтыВсего": cids, "конфликтыОткрытые": открытые,
             "запретовПроверено": len(root_donot) - len([s for s in root_donot
                                                         if s not in DONOT_SIGNS and s not in DONOT_COMPOUND]),
@@ -485,8 +492,8 @@ def exhaust_matrix_scan(corp: dict) -> dict:
     итог = {
         "статей": len(статьи),
         "строкОпор": sum(a["строкОпор"] for a in статьи.values()),
-        "прочитано": sum(a["прочитано"] for a in статьи.values()),
-        "нечитаемо": sum(a["нечитаемо"] for a in статьи.values()),
+        "сРаспознаннойМеткой": sum(a["сРаспознаннойМеткой"] for a in статьи.values()),
+        "безРаспознаннойМетки": sum(a["безРаспознаннойМетки"] for a in статьи.values()),
         "открытыхУникальных": len(union_open),
         "открытые": union_open,
         "запретовПар": len(root_donot) * len(статьи),
@@ -496,6 +503,7 @@ def exhaust_matrix_scan(corp: dict) -> dict:
         "статей": len(статьи),
         "строкОпорБезЛокатора": sum(a["безЛокатора"] for a in статьи.values()),
         "статейСКлассомC": len([a for a in статьи.values() if a["сКлассомC"]]),
+        "статейСКлассомD": len([a for a in статьи.values() if a["сКлассомD"]]),
         "доводовБезЛокатора": штрафыНеРазрешено,
         "нарушенийЗапретов": итог["нарушений"],
         "ссылокНаНеизвестныеЗаписи": len(неизвестные),
@@ -504,7 +512,8 @@ def exhaust_matrix_scan(corp: dict) -> dict:
         "неПодписано": miss, "лишниеПодписи": extra,
         "неизвестныеC": sorted(неизвестные),
     }
-    return {"статьи": статьи, "итог": итог, "приёмка": приёмка}
+    return {"статьи": статьи, "итог": итог, "приёмка": приёмка,
+            "readingMeasured": False, "exhaustivenessMeasured": False}
 
 
 def fathers_hold() -> dict:
@@ -704,7 +713,14 @@ PIPELINE_FILES = ("scripts/validate_atonement_corpus_integrity.py", "scripts/ato
                   "scripts/atonement_drive_mirror_round63.py", "scripts/atonement_library_index_round63.py",
                   "scripts/atonement_round_close.py",
                   "scripts/atonement_history_perturbation_probe.py",
-                  "scripts/atonement_drive_mirror_round66.py", "scripts/atonement_library_index_round66.py")
+                  "scripts/atonement_drive_mirror_round66.py", "scripts/atonement_library_index_round66.py",
+                  "scripts/atonement_draft_citation_audit.py", "scripts/atonement_sync_sources.py",
+                  "scripts/atonement_sync_check.py", "scripts/test_atonement_sync.py",
+                  "scripts/atonement_crossref_audit.py", "scripts/atonement_wave3_sources.py",
+                  "scripts/atonement_wave4_sources.py", "scripts/atonement_wave5_sources.py",
+                  "scripts/atonement_wave6_sources.py", "scripts/atonement_wave7_sources.py",
+                  "scripts/atonement_wave8_sources.py", "scripts/atonement_wave9_sources.py",
+                  "scripts/atonement_source_metrics.py")
 
 
 ENV_DECL_BLOCK = ENV_DECL_PREFIX + KEY_DATE + "r" + CIRCLE
@@ -1508,19 +1524,17 @@ def apply_corpus(corp: dict, n: dict) -> dict:
     # приходят обходом n["matrix"], руками поле не заполняется и не правится
     m = n["matrix"]
     corp["exhaustivenessMatrix20261028"] = {
-        "чтоЭто": ("матрица исчерпываемости (дуга VI): четыре числа на статью — прочитано, "
-                   "нечитаемо, открытые конфликты, проверенные запреты — печатает гейт "
-                   "(scripts/atonement_reshoot_state.py --write), а не автор статьи; строки "
-                   "матрицы документа 18_ §14 — тот же вывод"),
-        "метод": ("строки опоры = таблица «Опора | Класс | Локатор | HOLD» черновика; прочитано = "
-                  "класс читаемости A1–A3/B1–B2 (шкала реестра массы), нечитаемо = класс не "
-                  "распознан (для гейта не названо, по какому изданию читать; сюда же падает "
-                  "C-класс, что и проверяет приёмка); открытые конфликты = C-id статьи, чей первый "
-                  "токен статуса не RESOLVED и не RESOLVED-BY-TEXT; запреты = каждый слаг корневого "
-                  "doNot имеет механическую подпись нарушения, признак без отрицания в окне ±100 "
-                  "знаков — нарушение, отрицание рядом — текст о запрете (ручной обход дуги V лежит "
-                  "в примечаниях статей; подпись ловит маркер, её отсутствие — условие, не "
-                  "свидетельство)"),
+        "schemaVersion": 2,
+        "чтоЭто": "структурная матрица опор: метки классов, конфликты и механические запреты; не мера чтения/исчерпываемости",
+        "метод": ("строки = таблица «Опора | Класс | Локатор | HOLD»; распознаётся начальная "
+                  "каноническая метка A1/A2/A3/B1/C/D, но не удостоверяется правильность класса. "
+                  "B2 не канонический evidenceClass. Отсутствие метки не означает нечитаемости. "
+                  "Чтение, доступ, проверка локатора и права этим обходом не измеряются. "
+                  "Открытые конфликты = первый статус не RESOLVED/RESOLVED-BY-TEXT. "
+                  "doNot = механические подписи с окном отрицания ±100 знаков, не семантическая "
+                  "экспертиза текста. Прежние названия счётчиков отозваны в журнале синхронизации."),
+        "readingMeasured": False,
+        "exhaustivenessMeasured": False,
         "статьи": m["статьи"],
         "итог": m["итог"],
         "приёмка": m["приёмка"],
@@ -1817,8 +1831,8 @@ def doc_numbers(corp: dict, n: dict) -> list:
         # дуга VI (круг 81): строки матрицы исчерпываемости — генератор, не автор статьи
         *[
             (r"(?m)^\| `" + re.escape(bn) + r"` \| .*\|$",
-             "| `" + bn + "` | " + str(a["строкОпор"]) + " | " + str(a["прочитано"]) + " | "
-             + str(a["нечитаемо"]) + " | " + str(len(a["конфликтыОткрытые"])) + " ("
+             "| `" + bn + "` | " + str(a["строкОпор"]) + " | " + str(a["сРаспознаннойМеткой"]) + " | "
+             + str(a["безРаспознаннойМетки"]) + " | " + str(len(a["конфликтыОткрытые"])) + " ("
              + (", ".join("C-" + c_ for c_ in a["конфликтыОткрытые"]) or "—") + ") | "
              + f"{a['запретовПроверено']}/{len(DONOT_SIGNS) + len(DONOT_COMPOUND)} | "
              + str(a["запретовНарушений"]) + " |")
@@ -1826,7 +1840,7 @@ def doc_numbers(corp: dict, n: dict) -> list:
         ],
         (r"(?m)^\| \*\*итог\*\* \| .*\|$",
          "| **итог** | " + str(n["matrix"]["итог"]["строкОпор"]) + " | "
-         + str(n["matrix"]["итог"]["прочитано"]) + " | " + str(n["matrix"]["итог"]["нечитаемо"]) + " | "
+         + str(n["matrix"]["итог"]["сРаспознаннойМеткой"]) + " | " + str(n["matrix"]["итог"]["безРаспознаннойМетки"]) + " | "
          + str(n["matrix"]["итог"]["открытыхУникальных"]) + " уникальных ("
          + ", ".join("C-" + c_ for c_ in n["matrix"]["итог"]["открытые"]) + ") | "
          + f"{n['matrix']['итог']['запретовПар']}/{n['matrix']['итог']['запретовПар']} | "
@@ -1835,6 +1849,7 @@ def doc_numbers(corp: dict, n: dict) -> list:
          "Приёмка матрицы (дуга VI): строк опоры без локатора — "
          + str(n["matrix"]["приёмка"]["строкОпорБезЛокатора"])
          + "; статей, где C-класс в утверждении, — " + str(n["matrix"]["приёмка"]["статейСКлассомC"])
+         + "; статей с D-классом — " + str(n["matrix"]["приёмка"]["статейСКлассомD"])
          + "; доводов без локатора в реестрах — " + str(n["matrix"]["приёмка"]["доводовБезЛокатора"])
          + "; нарушений запретов — " + str(n["matrix"]["приёмка"]["нарушенийЗапретов"])
          + "; ссылок на несуществующие записи леджера — "
