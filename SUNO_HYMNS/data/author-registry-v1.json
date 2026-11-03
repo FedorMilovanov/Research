@@ -1,169 +1,169 @@
 {
- "schemaVersion": 1,
- "registryId": "SUNO-HYMNS-AUTHOR-REGISTRY-V1",
- "asOf": "2026-11-03",
- "authors": [
-  {
-   "id": "LOD-001",
-   "canonicalName": "Jodocus van Lodenstein",
-   "nameVariants": [
-    "Jodocus van Lodensteyn"
-   ],
-   "russianDisplayName": "Йодокус ван Лоденштейн",
-   "lifeDates": "1620–1677",
-   "roles": [
-    "Dutch Reformed pastor",
-    "devotional poet"
-   ],
-   "context": "Nadere Reformatie; Utrecht pastor 1653–1677 (called 1652, installed April 1653)",
-   "sourceIds": [
-    "SRC-L-1676",
-    "SRC-L-CRIT-2005",
-    "SRC-L-HERT-I-1673-34",
-    "SRC-L-HERT-II-1674-1971",
-    "SRC-L-1676-COLOPHON",
-    "SRC-L-1676-DEN-NEDRIGEN",
-    "SRC-L-1676-HERT-I-78-81",
-    "SRC-L-1676-HERT-II-82-84",
-    "SRC-L-1676-SIMEONS-29",
-    "SRC-L-UYT-1727",
-    "SRC-L-CRIT-2005-INTRO",
-    "SRC-L-BUIJNSTERS-1971",
-    "SRC-MEDITATIEN-1674"
-   ],
-   "notes": [
-    "Do not treat all Uyt-spanningen entries as a uniform public-worship hymnbook.",
-    "Ministry dates: Zoetermeer 1644, Sluis 1650, Utrecht from April 1653 to 1677 — 2005 critical-edition introduction, p. 645, read 2026-10-25. Sources that give 1644, 1650 and 1653 are listing the three pastorates, not disagreeing.",
-    "I. and II. Hert-sterckte in Jehova are distinct poems: I on printed pp. 78-81 (28 December 1673), II on pp. 82-84 (4 January 1674), sung to I's tune.",
-    "In December 1673 he was held as a French hostage away from Utrecht; the four consolation songs of that exile were printed in 1674 as 'Meditatien over eenige van 's Heeren Gods Eygenschappen'."
-   ]
-  },
-  {
-   "id": "RUT-001",
-   "canonicalName": "Abraham Rutgers",
-   "nameVariants": [],
-   "russianDisplayName": "Абрахам Рутгерс",
-   "lifeDates": "1751–1809",
-   "roles": [
-    "pastor",
-    "hymn writer",
-    "reviser",
-    "translator"
-   ],
-   "sourceIds": [
-    "SRC-RUTGERS-1806-68",
-    "SRC-RUTGERS-BIO",
-    "SRC-AFR-L276",
-    "SRC-AFR-L271"
-   ],
-   "notes": [
-    "For DUTCH-002, distinguish source author Lodenstein from Rutgers as later reviser.",
-    "Do not call the Russian adaptation a verbatim translation of the 1674 poem."
-   ]
-  },
-  {
-   "id": "REV-001",
-   "canonicalName": "Jacobus Revius",
-   "nameVariants": [
-    "Jacob Reefsen"
-   ],
-   "russianDisplayName": "Якобус Ревиус",
-   "lifeDates": "1586–1658",
-   "roles": [
-    "Dutch Reformed pastor",
-    "poet",
-    "historian"
-   ],
-   "sourceIds": [
-    "SRC-R-REVIUS-AUTHOR",
-    "SRC-R-OVER-YSSEL-CONTENTS",
-    "SRC-R-HY-DROEG",
-    "SRC-R-GEERDS-1976"
-   ],
-   "notes": [
-    "Hy droech onse smerten is a sonnet; the 1630 first edition is not independently acquired in this project.",
-    "No original tune direction is verified."
-   ]
-  },
-  {
-   "id": "ANON-PHOS-001",
-   "canonicalName": "Anonymous — the author of Φῶς ἱλαρόν",
-   "nameVariants": [
-    "Athenogenes of Sebasteia (attributed, not established)",
-    "Sophronius of Jerusalem (attributed, not established)"
-   ],
-   "russianDisplayName": "автор неизвестен",
-   "lifeDates": "unknown",
-   "roles": [
-    "hymnographer, name not preserved"
-   ],
-   "context": "Greek Christian hymn sung at the lighting of the lamps; already called ancient and anonymous by Basil of Caesarea c. 375",
-   "sourceIds": [
-    "SRC-PHOS-PRAVENC",
-    "SRC-PHOS-BASIL-DSS"
-   ],
-   "notes": [
-    "Basil writes that he cannot say who composed the lamp-lighting thanksgiving; that is the earliest and the strongest statement about authorship.",
-    "Athenogenes of Sebasteia (m. c. 305/311) is named because Basil mentions his hymn in the next sentence; the two testimonies were conflated. Sophronius of Jerusalem (560-638) is the ascription printed in the modern Russian Horologion and is contradicted by P. Lond. 2037B.",
-    "Neither attribution may be stated in public copy as fact."
-   ]
-  },
-  {
-   "id": "CLEM-001",
-   "canonicalName": "Clement of Alexandria",
-   "nameVariants": [
-    "Titus Flavius Clemens",
-    "Clemens Alexandrinus",
-    "Κλήμης ὁ Ἀλεξανδρεύς",
-    "Климент Александрийский"
-   ],
-   "russianDisplayName": "Климент Александрийский",
-   "lifeDates": "ок. 150 – ок. 215",
-   "roles": [
-    "Christian teacher in Alexandria",
-    "author of the Paedagogus"
-   ],
-   "context": "Alexandria at the end of the 2nd century. The hymn stands at the close of the third book of the Paedagogus (III 101; cited by Gordley as 3.12.101.4) and is the only hymn attributed to him.",
-   "sourceIds": [
-    "SRC-PHOS-CLEM-GORDLEY",
-    "SRC-PHOS-CLEM-MCCLINTOCK",
-    "SRC-PHOS-CLEM-BRILL-BIBL",
-    "SRC-PHOS-CLEM-TEXT"
-   ],
-   "notes": [
-    "Attribution is the common view but not unqualified: Gordley writes «Clement (or some other early Christian) has written this metrical hymn» — CLM-PHOS-CLEM-ATTRIBUTION-HEDGE.",
-    "The hymn is missing from one of the primary manuscripts of the Paedagogus, which is why some scholars ask whether it is a secondary addition — CLM-PHOS-CLEM-MS-ABSENT.",
-    "Nothing from this author may be stated in public copy before the owner decides whether the candidate enters the series."
-   ]
-  },
-  {
-   "id": "AMBR-001",
-   "canonicalName": "Ambrose of Milan",
-   "nameVariants": [
-    "Ambrosius Mediolanensis",
-    "Sant'Ambrogio",
-    "Αμβρόσιος Μεδιολάνων",
-    "Амвросий Медиоланский"
-   ],
-   "russianDisplayName": "Амвросий Медиоланский",
-   "lifeDates": "ок. 339/40 – 397",
-   "roles": [
-    "Bishop of Milan",
-    "author of the metrum Ambrosianum",
-    "father of Latin hymnody"
-   ],
-   "context": "Milan in the last quarter of the 4th century. Augustine's Sermon 372 and Celestine I (Rome, 430) both quote stanzas of Veni redemptor gentium and name him. Augustine lists four Ambrosian hymns: Aeterne rerum conditor, Deus creator omnium, Jam surgit hora tertia, Veni redemptor gentium. Fontaine 1992 counts fourteen hymns attributable to him with confidence or probability; this is among the confident ones.",
-   "sourceIds": [
-    "SRC-PHOS-VRG-AUG372",
-    "SRC-PHOS-VRG-CELEST430",
-    "SRC-PHOS-VRG-FONTAINE",
-    "SRC-PHOS-VRG-GRMS2017"
-   ],
-   "notes": [
-    "Named as author by two contemporaries, not inferred from a manuscript heading — the strongest attribution in the series.",
-    "The metre is his own contribution: the Ambrosian stanza, iambic dimeter, four lines of eight syllables (GRMS 2017, 104).",
-    "No melody of his survives; see CLM-PHOS-VRG-MELODY-LOST."
-   ]
-  }
- ]
+  "schemaVersion": 1,
+  "registryId": "SUNO-HYMNS-AUTHOR-REGISTRY-V1",
+  "asOf": "2026-11-03",
+  "authors": [
+    {
+      "id": "LOD-001",
+      "canonicalName": "Jodocus van Lodenstein",
+      "nameVariants": [
+        "Jodocus van Lodensteyn"
+      ],
+      "russianDisplayName": "Йодокус ван Лоденштейн",
+      "lifeDates": "1620–1677",
+      "roles": [
+        "Dutch Reformed pastor",
+        "devotional poet"
+      ],
+      "context": "Nadere Reformatie; Utrecht pastor 1653–1677 (called 1652, installed April 1653)",
+      "sourceIds": [
+        "SRC-L-1676",
+        "SRC-L-CRIT-2005",
+        "SRC-L-HERT-I-1673-34",
+        "SRC-L-HERT-II-1674-1971",
+        "SRC-L-1676-COLOPHON",
+        "SRC-L-1676-DEN-NEDRIGEN",
+        "SRC-L-1676-HERT-I-78-81",
+        "SRC-L-1676-HERT-II-82-84",
+        "SRC-L-1676-SIMEONS-29",
+        "SRC-L-UYT-1727",
+        "SRC-L-CRIT-2005-INTRO",
+        "SRC-L-BUIJNSTERS-1971",
+        "SRC-MEDITATIEN-1674"
+      ],
+      "notes": [
+        "Do not treat all Uyt-spanningen entries as a uniform public-worship hymnbook.",
+        "Ministry dates: Zoetermeer 1644, Sluis 1650, Utrecht from April 1653 to 1677 — 2005 critical-edition introduction, p. 645, read 2026-10-25. Sources that give 1644, 1650 and 1653 are listing the three pastorates, not disagreeing.",
+        "I. and II. Hert-sterckte in Jehova are distinct poems: I on printed pp. 78-81 (28 December 1673), II on pp. 82-84 (4 January 1674), sung to I's tune.",
+        "In December 1673 he was held as a French hostage away from Utrecht; the four consolation songs of that exile were printed in 1674 as 'Meditatien over eenige van 's Heeren Gods Eygenschappen'."
+      ]
+    },
+    {
+      "id": "RUT-001",
+      "canonicalName": "Abraham Rutgers",
+      "nameVariants": [],
+      "russianDisplayName": "Абрахам Рутгерс",
+      "lifeDates": "1751–1809",
+      "roles": [
+        "pastor",
+        "hymn writer",
+        "reviser",
+        "translator"
+      ],
+      "sourceIds": [
+        "SRC-RUTGERS-1806-68",
+        "SRC-RUTGERS-BIO",
+        "SRC-AFR-L276",
+        "SRC-AFR-L271"
+      ],
+      "notes": [
+        "For DUTCH-002, distinguish source author Lodenstein from Rutgers as later reviser.",
+        "Do not call the Russian adaptation a verbatim translation of the 1674 poem."
+      ]
+    },
+    {
+      "id": "REV-001",
+      "canonicalName": "Jacobus Revius",
+      "nameVariants": [
+        "Jacob Reefsen"
+      ],
+      "russianDisplayName": "Якобус Ревиус",
+      "lifeDates": "1586–1658",
+      "roles": [
+        "Dutch Reformed pastor",
+        "poet",
+        "historian"
+      ],
+      "sourceIds": [
+        "SRC-R-REVIUS-AUTHOR",
+        "SRC-R-OVER-YSSEL-CONTENTS",
+        "SRC-R-HY-DROEG",
+        "SRC-R-GEERDS-1976"
+      ],
+      "notes": [
+        "Hy droech onse smerten is a sonnet; the 1630 first edition is not independently acquired in this project.",
+        "No original tune direction is verified."
+      ]
+    },
+    {
+      "id": "ANON-PHOS-001",
+      "canonicalName": "Anonymous — the author of Φῶς ἱλαρόν",
+      "nameVariants": [
+        "Athenogenes of Sebasteia (attributed, not established)",
+        "Sophronius of Jerusalem (attributed, not established)"
+      ],
+      "russianDisplayName": "автор неизвестен",
+      "lifeDates": "unknown",
+      "roles": [
+        "hymnographer, name not preserved"
+      ],
+      "context": "Greek Christian hymn sung at the lighting of the lamps; already called ancient and anonymous by Basil of Caesarea c. 375",
+      "sourceIds": [
+        "SRC-PHOS-PRAVENC",
+        "SRC-PHOS-BASIL-DSS"
+      ],
+      "notes": [
+        "Basil writes that he cannot say who composed the lamp-lighting thanksgiving; that is the earliest and the strongest statement about authorship.",
+        "Athenogenes of Sebasteia (m. c. 305/311) is named because Basil mentions his hymn in the next sentence; the two testimonies were conflated. Sophronius of Jerusalem (560-638) is the ascription printed in the modern Russian Horologion and is contradicted by P. Lond. 2037B.",
+        "Neither attribution may be stated in public copy as fact."
+      ]
+    },
+    {
+      "id": "CLEM-001",
+      "canonicalName": "Clement of Alexandria",
+      "nameVariants": [
+        "Titus Flavius Clemens",
+        "Clemens Alexandrinus",
+        "Κλήμης ὁ Ἀλεξανδρεύς",
+        "Климент Александрийский"
+      ],
+      "russianDisplayName": "Климент Александрийский",
+      "lifeDates": "ок. 150 – ок. 215",
+      "roles": [
+        "Christian teacher in Alexandria",
+        "author of the Paedagogus"
+      ],
+      "context": "Alexandria at the end of the 2nd century. The hymn stands at the close of the third book of the Paedagogus (III 101; cited by Gordley as 3.12.101.4) and is the only hymn attributed to him.",
+      "sourceIds": [
+        "SRC-PHOS-CLEM-GORDLEY",
+        "SRC-PHOS-CLEM-MCCLINTOCK",
+        "SRC-PHOS-CLEM-BRILL-BIBL",
+        "SRC-PHOS-CLEM-TEXT"
+      ],
+      "notes": [
+        "Attribution is the common view but not unqualified: Gordley writes «Clement (or some other early Christian) has written this metrical hymn» — CLM-PHOS-CLEM-ATTRIBUTION-HEDGE.",
+        "The hymn is missing from one of the primary manuscripts of the Paedagogus, which is why some scholars ask whether it is a secondary addition — CLM-PHOS-CLEM-MS-ABSENT.",
+        "Nothing from this author may be stated in public copy before the owner decides whether the candidate enters the series."
+      ]
+    },
+    {
+      "id": "AMBR-001",
+      "canonicalName": "Ambrose of Milan",
+      "nameVariants": [
+        "Ambrosius Mediolanensis",
+        "Sant'Ambrogio",
+        "Αμβρόσιος Μεδιολάνων",
+        "Амвросий Медиоланский"
+      ],
+      "russianDisplayName": "Амвросий Медиоланский",
+      "lifeDates": "ок. 339/40 – 397",
+      "roles": [
+        "Bishop of Milan",
+        "author of the metrum Ambrosianum",
+        "father of Latin hymnody"
+      ],
+      "context": "Milan in the last quarter of the 4th century. Augustine's Sermon 372 and Celestine I (Rome, 430) both quote stanzas of Veni redemptor gentium and name him. Augustine lists four Ambrosian hymns: Aeterne rerum conditor, Deus creator omnium, Jam surgit hora tertia, Veni redemptor gentium. Fontaine 1992 counts fourteen hymns attributable to him with confidence or probability; this is among the confident ones.",
+      "sourceIds": [
+        "SRC-PHOS-VRG-AUG372",
+        "SRC-PHOS-VRG-CELEST430",
+        "SRC-PHOS-VRG-FONTAINE",
+        "SRC-PHOS-VRG-GRMS2017"
+      ],
+      "notes": [
+        "Named as author by two contemporaries, not inferred from a manuscript heading — the strongest attribution in the series.",
+        "The metre is his own contribution: the Ambrosian stanza, iambic dimeter, four lines of eight syllables (GRMS 2017, 104).",
+        "No melody of his survives; see CLM-PHOS-VRG-MELODY-LOST."
+      ]
+    }
+  ]
 }
