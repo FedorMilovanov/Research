@@ -20,6 +20,7 @@ import atonement_reshoot_state as reshoot
 import atonement_wave3_sources as wave3
 import atonement_wave4_sources as wave4
 import atonement_wave5_sources as wave5
+import atonement_wave6_sources as wave6
 from atonement_source_metrics import source_label_prefix, legacy_carrier_code
 
 from atonement_claim_register import classify_token
@@ -990,6 +991,203 @@ class ActualWave5Tests(unittest.TestCase):
         self.assertIn('CYRA-3', machine_ids('fathers'))
         p = ROOT / 'ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md'
         self.assertEqual(len([s for s in p.read_text().splitlines() if s.startswith('## CYRA-3.')]), 1)
+
+
+class ActualWave6Tests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.report = json.loads((ROOT / REPORT).read_text())
+        cls.control = json.loads((ROOT / wave6.CONTROL).read_text())
+
+    def errors(self, control=None, report=None):
+        return wave6.check_controls(ROOT, self.report if report is None else report,
+                                    self.control if control is None else control)
+
+    def test_actual_controls_and_git_preimages(self):
+        self.assertEqual(self.errors(), [])
+
+    def test_each_nonclosure_boundary_is_enforced(self):
+        for key in wave6.FALSE_BOUNDARIES:
+            with self.subTest(field=key):
+                c = deepcopy(self.control)
+                c[key] = True
+                self.assertTrue(any(key in e for e in self.errors(c)))
+
+    def test_file_context_and_count_coverage(self):
+        for key, message in [('files', 'file inventory'), ('contexts', 'context coverage')]:
+            for action in ('remove', 'duplicate'):
+                with self.subTest(key=key, action=action):
+                    c = deepcopy(self.control)
+                    c[key].pop() if action == 'remove' else c[key].append(deepcopy(c[key][0]))
+                    self.assertTrue(any(message in e for e in self.errors(c)))
+        c = deepcopy(self.control)
+        c['statistics']['verseInstances'] = 208
+        self.assertTrue(any('coverage statistics' in e for e in self.errors(c)))
+
+    def test_jeremiah_and_zechariah_maps_are_not_identity_or_global_offsets(self):
+        p = {r['id']: r for r in self.control['pairings']}
+        self.assertEqual(p['JER31']['verseMap'][0], {'mt': 'Jer.31.1', 'lxx': 'Jer.38.1'})
+        self.assertEqual(p['ZECH2']['verseMap'][-1], {'mt': 'Zech.2.17', 'lxx': 'Zech.2.13'})
+        for ident in ('JER31', 'ZECH2'):
+            c = deepcopy(self.control)
+            row = next(r for r in c['pairings'] if r['id'] == ident)
+            row['verseMap'][0]['lxx'] = row['verseMap'][0]['mt']
+            self.assertTrue(any('verse map' in e for e in self.errors(c)))
+
+    def test_missing_verse_caught_after_rehash(self):
+        c = deepcopy(self.control)
+        row = c['contexts'][0]
+        row['verses'].pop()
+        row['textSha256'] = wave6.context_digest(row['verses'])
+        self.assertTrue(any('context refs/text hash' in e for e in self.errors(c)))
+
+    def test_profile_axes_scope_and_file_bindings_are_distinct(self):
+        for key, value in [('evidenceClass', 'C'), ('publicationState', 'PROMOTE'), ('holds', []),
+                           ('rightsState', 'PUBLICATION_ELIGIBLE'), ('contextIds', []), ('sourceFileIds', [])]:
+            c = deepcopy(self.control)
+            c['sources'][0][key] = value
+            self.assertTrue(any('primary profile' in e for e in self.errors(c)))
+
+    def test_metadata_file_is_not_an_extra_quote_safe_biblical_witness(self):
+        c = deepcopy(self.control)
+        row = next(f for f in c['files'] if f['id'] == 'LXX-Isa-META')
+        row['evidenceClass'] = 'A1'
+        row['quoteSafe'] = True
+        self.assertTrue(any('file role' in e for e in self.errors(c)))
+
+    def test_isaiah_grc1_cannot_become_ottley_grc2_or_wrong_print_year(self):
+        for key, value in [('editionUrn', 'urn:cts:greekLit:tlg0527.tlg048.1st1K-grc2'),
+                           ('printYear', '1904'), ('printedCollationClaimed', True)]:
+            c = deepcopy(self.control)
+            row = next(e for e in c['editions'] if e['book'] == 'Isa')
+            row[key] = value
+            self.assertTrue(any('edition identity' in e for e in self.errors(c)))
+
+    def test_key_signals_survive_self_rehash(self):
+        for ident in ('CREATED-JACOB', 'FIRSTBORN', 'WINNOWING-NOT-DIASKORPIZO', 'ONE-SHEPHERD-37',
+                      'ZECH-GATHER-NOT-SPREAD', 'JOHN-WOLF', 'JOHN-FAITH-CHILDREN'):
+            c = deepcopy(self.control)
+            ctx, ref, phrase = wave6.SIGNALS[ident]
+            row = next(x for x in c['contexts'] if x['id'] == ctx)
+            verse = next(v for v in row['verses'] if v['ref'] == ref)
+            verse['text'] = verse['text'].replace(phrase, 'synthetic altered reading')
+            row['textSha256'] = wave6.context_digest(row['verses'])
+            self.assertTrue(any('changed digital signal' in e for e in self.errors(c)), ident)
+
+    def test_proposed_allusion_not_promoted_to_quotation(self):
+        c = deepcopy(self.control)
+        next(x for x in c['intertextAssessments'] if x['id'] == 'EZ37')['explicitQuotationEstablished'] = True
+        self.assertTrue(any('promoted to quotation' in e for e in self.errors(c)))
+
+    def test_digital_irregularity_not_silently_repaired_or_called_print_collation(self):
+        c = deepcopy(self.control)
+        c['digitalAnomalies'][0]['silentlyEmended'] = True
+        self.assertTrue(any('conjectural repair' in e for e in self.errors(c)))
+        c = deepcopy(self.control)
+        ctx, ref, phrase = wave6.ANOMALIES['EZ34-12']
+        row = next(x for x in c['contexts'] if x['id'] == ctx)
+        verse = next(v for v in row['verses'] if v['ref'] == ref)
+        verse['text'] = verse['text'].replace(phrase, 'διεσπάρησαν')
+        row['textSha256'] = wave6.context_digest(row['verses'])
+        self.assertTrue(any('changed digital signal/anomaly EZ34-12' in e for e in self.errors(c)))
+
+    def test_three_interpretations_are_retained_without_changing_c25(self):
+        c = deepcopy(self.control)
+        c['alternatives'] = [a for a in c['alternatives'] if a['id'] != 'ALL_HUMAN_CREATION']
+        self.assertTrue(any('alternatives' in e for e in self.errors(c)))
+        c = deepcopy(self.control)
+        c['c25'] = 'CLOSED'
+        self.assertTrue(any('closure drift' in e for e in self.errors(c)))
+
+    def test_john735_question_is_not_narrator_endorsement(self):
+        c = deepcopy(self.control)
+        c['speakerControl']['speaker'] = 'NARRATOR_ENDORSEMENT'
+        self.assertTrue(any('speaker' in e for e in self.errors(c)))
+
+    def test_non_equivalence_not_erased_by_harmonization(self):
+        c = deepcopy(self.control)
+        c['nonEquivalences'].pop()
+        self.assertTrue(any('silently harmonized' in e for e in self.errors(c)))
+
+    def test_hebrew_ketiv_excludes_qere_and_does_not_normalize_nfc(self):
+        # Intentionally noncanonical combining-mark order, per OSHB warning.
+        word = '\u05e9\u05c1\u05b8'
+        self.assertNotEqual(word, unicodedata.normalize('NFC', word))
+        raw = (f'<osis xmlns="{wave3.OSIS[1:-1]}"><verse osisID="Zech.2.10">'
+               f'<w>{word}</w><note type="variant"><w>qere</w></note><w>ב/ד</w></verse></osis>').encode()
+        row = dict(id='fixture', sourceFile='mt', kind='osis-ketiv', book='Zech', chapter=2, firstVerse=10, lastVerse=10)
+        got = wave6.extract_context(raw, row)
+        self.assertEqual(got, [{'ref': 'Zech.2.10', 'text': word + ' בד'}])
+        self.assertIn('qere', wave6.excluded_notes(raw, row)[0]['xml'])
+        self.assertNotEqual(wave6.context_digest(got), wave6.context_digest([
+            {'ref': 'Zech.2.10', 'text': unicodedata.normalize('NFC', word + ' בד')}]))
+
+    def test_tei_notes_excluded_but_tail_and_digital_artifact_preserved(self):
+        raw = (f'<TEI xmlns="{wave3.TEI[1:-1]}"><text><body><div subtype="chapter" n="34">'
+               '<div subtype="verse" n="12"><p>α <note>NOT BIBLE</note> διεσ πάρησαν'
+               '<pb n="2"/> τέλος</p></div></div></body></text></TEI>').encode()
+        row = dict(id='fixture', sourceFile='lxx', kind='tei-body', book='Ezek', chapter=34, firstVerse=12, lastVerse=12)
+        self.assertEqual(wave6.extract_context(raw, row), [{'ref': 'Ezek.34.12', 'text': 'α διεσ πάρησαν τέλος'}])
+        with self.assertRaises(ValueError):
+            wave6.extract_context(raw, dict(row, firstVerse=13, lastVerse=13))
+
+    def test_byte_replay_precedes_extraction_and_detects_changed_file(self):
+        raw = '040112 N- ----APN- N-APN τέκνα τέκνα τέκνα τέκνον\n'.encode()
+        row = dict(id='fixture', sourceFile='NT-JOHN', kind='morphgnt-8', book='John', chapter=1, firstVerse=12, lastVerse=12)
+        verses = wave6.extract_context(raw, row)
+        row.update(verses=verses, textSha256=wave6.context_digest(verses))
+        fixture = {'files': [{'id': 'NT-JOHN', 'externalRelativePath': 'book.txt', 'bytes': len(raw),
+                             'sha256': wave6.digest(raw), 'gitBlob': wave6.git_blob(raw)}], 'contexts': [row]}
+        with tempfile.TemporaryDirectory() as tmp:
+            p = Path(tmp, 'book.txt')
+            p.write_bytes(raw)
+            self.assertEqual(wave6.verify_sources(Path(tmp), fixture), [])
+            p.write_bytes(raw + b'\n')
+            with patch.object(wave6, 'extract_context', side_effect=AssertionError('Must not parse unverified bytes')):
+                self.assertTrue(any('file bytes changed' in e for e in wave6.verify_sources(Path(tmp), fixture)))
+
+    def test_replay_refuses_source_path_escape(self):
+        c = {'files': [deepcopy(self.control['files'][0])]}
+        c['files'][0]['externalRelativePath'] = '../outside.xml'
+        with tempfile.TemporaryDirectory() as tmp:
+            self.assertTrue(any('unsafe source path' in e for e in wave6.verify_sources(Path(tmp), c)))
+
+    def test_unavailable_source_package_is_not_empty_success(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            errs = wave6.verify_sources(Path(tmp), self.control)
+            self.assertEqual(sum('missing object' in e for e in errs), 21)
+            self.assertTrue(any('unavailable/invalid context' in e for e in errs))
+
+    def test_preimages_and_synthetic_guard_are_checked_against_actual_git(self):
+        r = deepcopy(self.report)
+        r['wave6']['supersededSnapshots'][0]['sha256'] = '0' * 64
+        self.assertTrue(any('actual preimage bytes differ' in e for e in self.errors(report=r)))
+        r = deepcopy(self.report)
+        next(x for x in r['repairs'] if x['id'] == 'W6-H11')['rejectedWordingPresentInBaseline'] = True
+        self.assertTrue(any('invented historical error' in e for e in self.errors(report=r)))
+
+    def test_all_wave6_owner_reversions_in_memory(self):
+        tested = set()
+        for row in self.report['repairs']:
+            if row['id'] not in wave6.REQUIRED_REPAIRS:
+                continue
+            text = (ROOT / row['file']).read_text()
+            self.assertIn(row['required'], text)
+            broken = text.replace(row['required'], row['removed'])
+            errors = check_repairs(ROOT, self.report, {row['file']: broken})
+            self.assertTrue(any(e.startswith(row['id'] + ':') for e in errors), row['id'])
+            tested.add(row['id'])
+        self.assertEqual(tested, wave6.REQUIRED_REPAIRS)
+
+    def test_native_inventory_and_bounded_existing_card_integration(self):
+        self.assertIn('scripts/atonement_wave6_sources.py', reshoot.PIPELINE_FILES)
+        self.assertIn('check_wave6(root, report, wave6_control)', (ROOT / 'scripts/atonement_sync_check.py').read_text())
+        self.assertIn('"atonement_wave6_sources.py"', (ROOT / '.github/workflows/atonement-corpus-integrity.yml').read_text())
+        ot = json.loads((ROOT / 'ИСКУПЛЕНИЕ/ot/data/ot-corpus-v1.json').read_text())
+        card = next(c for c in ot['cards'] if c['id'] == 14)['gatheringReviewWave6']
+        self.assertTrue(card['historicalCardFieldsNotRecertified'])
+        self.assertEqual(card['sourceControl'], wave6.CONTROL)
+        self.assertEqual(card['publicationState'], 'BLOCKED')
 
 
 if __name__ == "__main__":

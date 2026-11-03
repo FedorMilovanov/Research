@@ -3378,6 +3378,276 @@
       "kind": "WAVE5_SCOPED_CONTINUATION",
       "rejectedWordingPresentInBaseline": false,
       "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W6-NT15",
+      "file": "ИСКУПЛЕНИЕ/nt/15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md",
+      "removed": "- `O09`: сверить конкретные ВЗ-формулы рассеяния/собирания, не используя их вместо грамматики 11:52.",
+      "required": "**Волна 6 — ВЗ-интертекст сопоставлен, не превращён в цитату.**",
+      "reason": "Replace the previously open generic O09 queue with the actually performed bounded comparison; printed/critical and doctrinal questions remain open.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave6_2026-11-03.json",
+        "scope": "Eight paired MT/LXX contexts and four John contexts; digital limits, original addressees and later interpretation distinguished. No Greek Cyril or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE6_OT_INTERTEXT_CONTINUATION",
+      "rejectedWordingPresentInBaseline": true,
+      "controlType": "BASELINE_REMOVAL_OR_EXPLICIT_SUPERSESSION"
+    },
+    {
+      "id": "W6-OT14",
+      "file": "ИСКУПЛЕНИЕ/ot/14_JER31_JOB19_33.md",
+      "removed": "- Тексты из F1K tlg0527 (`tlg049`, `tlg032`; Swete), S23 (CC BY-SA 4.0) и ELI 1930 (GPL-3.0) — **только для сверки, не копируются в корпус** (NOT_STORED).",
+      "required": "**Волна 6 — ВЗ-фон и границы сверки:**",
+      "reason": "Integrate the bounded Jeremiah/gathering evidence and explicitly correct NOT_STORED versus raw-outside-Git/extracts distinction, without certifying the other old loci.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave6_2026-11-03.json",
+        "scope": "Eight paired MT/LXX contexts and four John contexts; digital limits, original addressees and later interpretation distinguished. No Greek Cyril or printed collation."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE6_OT_INTERTEXT_CONTINUATION",
+      "rejectedWordingPresentInBaseline": true,
+      "controlType": "BASELINE_REMOVAL_OR_EXPLICIT_SUPERSESSION"
+    },
+    {
+      "id": "W6-C25",
+      "file": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+      "removed": "ВЗ-фон автоматически доказывает единственный смысл чад, агента пассива и весь объём смерти.",
+      "required": "Волна 6 — O09 ограниченно выполнен:",
+      "reason": "Add a bounded OT/John intertext guard to the existing owner. This is not a claim that the synthetic rejected wording was historically present.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave6_2026-11-03.json",
+        "scope": "Bounded O09 comparison; C25 and publication remain open/blocked."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE6_OT_INTERTEXT_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W6-H11",
+      "file": "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md",
+      "removed": "ВЗ-фон автоматически доказывает единственный смысл чад, агента пассива и весь объём смерти.",
+      "required": "Волна 6 — собирание не равно всем исходам:",
+      "reason": "Add a bounded OT/John intertext guard to the existing owner. This is not a claim that the synthetic rejected wording was historically present.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave6_2026-11-03.json",
+        "scope": "Bounded O09 comparison; C25 and publication remain open/blocked."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE6_OT_INTERTEXT_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W6-P13",
+      "file": "ИСКУПЛЕНИЕ/nt/06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md",
+      "removed": "ВЗ-фон автоматически доказывает единственный смысл чад, агента пассива и весь объём смерти.",
+      "required": "Волна 6 — ВЗ-фон P13 уточнён:",
+      "reason": "Add a bounded OT/John intertext guard to the existing owner. This is not a claim that the synthetic rejected wording was historically present.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave6_2026-11-03.json",
+        "scope": "Bounded O09 comparison; C25 and publication remain open/blocked."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE6_OT_INTERTEXT_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W6-NT09",
+      "file": "ИСКУПЛЕНИЕ/nt/09_NT_EXTENT_THREE_COLUMN_TABLE.md",
+      "removed": "ВЗ-фон автоматически доказывает единственный смысл чад, агента пассива и весь объём смерти.",
+      "required": "Волна 6 — три колонки не превращены в счёт голосов:",
+      "reason": "Add a bounded OT/John intertext guard to the existing owner. This is not a claim that the synthetic rejected wording was historically present.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave6_2026-11-03.json",
+        "scope": "Bounded O09 comparison; C25 and publication remain open/blocked."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE6_OT_INTERTEXT_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W6-QMAP",
+      "file": "ИСКУПЛЕНИЕ/04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md",
+      "removed": "ВЗ-фон автоматически доказывает единственный смысл чад, агента пассива и весь объём смерти.",
+      "required": "Волна 6 — исходный адресат и последующее применение:",
+      "reason": "Add a bounded OT/John intertext guard to the existing owner. This is not a claim that the synthetic rejected wording was historically present.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave6_2026-11-03.json",
+        "scope": "Bounded O09 comparison; C25 and publication remain open/blocked."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE6_OT_INTERTEXT_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W6-P04",
+      "file": "docs/research/atonement/04_exegetical_defense_of_definite_atonement.md",
+      "removed": "ВЗ-фон автоматически доказывает единственный смысл чад, агента пассива и весь объём смерти.",
+      "required": "Волна 6 — ВЗ-фон не заменяет богословскую посылку:",
+      "reason": "Add a bounded OT/John intertext guard to the existing owner. This is not a claim that the synthetic rejected wording was historically present.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave6_2026-11-03.json",
+        "scope": "Bounded O09 comparison; C25 and publication remain open/blocked."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE6_OT_INTERTEXT_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W6-P06",
+      "file": "docs/research/atonement/06_detailed_refutation_of_prokopenko_arguments.md",
+      "removed": "ВЗ-фон автоматически доказывает единственный смысл чад, агента пассива и весь объём смерти.",
+      "required": "Волна 6 — ВЗ-фон не заменяет богословскую посылку:",
+      "reason": "Add a bounded OT/John intertext guard to the existing owner. This is not a claim that the synthetic rejected wording was historically present.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave6_2026-11-03.json",
+        "scope": "Bounded O09 comparison; C25 and publication remain open/blocked."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE6_OT_INTERTEXT_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W6-P18",
+      "file": "docs/research/atonement/18_juridical_fallacies_and_double_punishment_critique.md",
+      "removed": "ВЗ-фон автоматически доказывает единственный смысл чад, агента пассива и весь объём смерти.",
+      "required": "Волна 6 — ВЗ-фон не заменяет богословскую посылку:",
+      "reason": "Add a bounded OT/John intertext guard to the existing owner. This is not a claim that the synthetic rejected wording was historically present.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave6_2026-11-03.json",
+        "scope": "Bounded O09 comparison; C25 and publication remain open/blocked."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE6_OT_INTERTEXT_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W6-S04",
+      "file": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+      "removed": "ВЗ-фон автоматически доказывает единственный смысл чад, агента пассива и весь объём смерти.",
+      "required": "Волна 6 — ВЗ-фон не заменяет богословскую посылку:",
+      "reason": "Add a bounded OT/John intertext guard to the existing owner. This is not a claim that the synthetic rejected wording was historically present.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave6_2026-11-03.json",
+        "scope": "Bounded O09 comparison; C25 and publication remain open/blocked."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE6_OT_INTERTEXT_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W6-N00",
+      "file": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
+      "removed": "ВЗ-фон автоматически доказывает единственный смысл чад, агента пассива и весь объём смерти.",
+      "required": "**Волна 6, 2026-11-03 — ограниченный ВЗ-интертекст:**",
+      "reason": "Add a bounded OT/John intertext guard to the existing owner. This is not a claim that the synthetic rejected wording was historically present.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave6_2026-11-03.json",
+        "scope": "Bounded O09 comparison; C25 and publication remain open/blocked."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE6_OT_INTERTEXT_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W6-ROOT00",
+      "file": "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+      "removed": "ВЗ-фон автоматически доказывает единственный смысл чад, агента пассива и весь объём смерти.",
+      "required": "**Волна 6, 2026-11-03 — ограниченный ВЗ-интертекст:**",
+      "reason": "Add a bounded OT/John intertext guard to the existing owner. This is not a claim that the synthetic rejected wording was historically present.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave6_2026-11-03.json",
+        "scope": "Bounded O09 comparison; C25 and publication remain open/blocked."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE6_OT_INTERTEXT_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W6-O00",
+      "file": "ИСКУПЛЕНИЕ/ot/00_OT_AUTHORITY_2026-10-08.md",
+      "removed": "ВЗ-фон автоматически доказывает единственный смысл чад, агента пассива и весь объём смерти.",
+      "required": "**Синхронизация, волна 6 — O09 ограниченно выполнен:**",
+      "reason": "Add a bounded OT/John intertext guard to the existing owner. This is not a claim that the synthetic rejected wording was historically present.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave6_2026-11-03.json",
+        "scope": "Bounded O09 comparison; C25 and publication remain open/blocked."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE6_OT_INTERTEXT_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W6-ROOT-DATA",
+      "file": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+      "removed": "\"otGatheringReviewWave6\": {\"c25\": \"CLOSED\"}",
+      "required": "\"otGatheringReviewWave6\": {",
+      "reason": "Add a bounded current review to the existing SSOT, retaining historical Wave5 and historical OT wave numbering. Not a whole-card or whole-corpus certification.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave6_2026-11-03.json",
+        "scope": "Eight paired MT/LXX contexts /104 verse pairs; four John contexts /51 verse positions; 21 freshly byte-verified objects, not whole-book reading or replay of old packages."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE6_OT_INTERTEXT_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W6-NT-DATA",
+      "file": "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+      "removed": "\"otGatheringReviewWave6\": {\"c25\": \"CLOSED\"}",
+      "required": "\"otGatheringReviewWave6\": {",
+      "reason": "Add a bounded current review to the existing SSOT, retaining historical Wave5 and historical OT wave numbering. Not a whole-card or whole-corpus certification.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave6_2026-11-03.json",
+        "scope": "Eight paired MT/LXX contexts /104 verse pairs; four John contexts /51 verse positions; 21 freshly byte-verified objects, not whole-book reading or replay of old packages."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE6_OT_INTERTEXT_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W6-OT-DATA",
+      "file": "ИСКУПЛЕНИЕ/ot/data/ot-corpus-v1.json",
+      "removed": "\"otGatheringReviewWave6\": {\"c25\": \"CLOSED\"}",
+      "required": "\"otGatheringReviewWave6\": {",
+      "reason": "Add a bounded current review to the existing SSOT, retaining historical Wave5 and historical OT wave numbering. Not a whole-card or whole-corpus certification.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave6_2026-11-03.json",
+        "scope": "Eight paired MT/LXX contexts /104 verse pairs; four John contexts /51 verse positions; 21 freshly byte-verified objects, not whole-book reading or replay of old packages."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE6_OT_INTERTEXT_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
+    },
+    {
+      "id": "W6-S-DATA",
+      "file": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+      "removed": "\"otGatheringReviewWave6\": {\"c25\": \"CLOSED\"}",
+      "required": "\"otGatheringReviewWave6\": {",
+      "reason": "Add a bounded current review to the existing SSOT, retaining historical Wave5 and historical OT wave numbering. Not a whole-card or whole-corpus certification.",
+      "basis": {
+        "file": "ИСКУПЛЕНИЕ/evidence/source_controls_wave6_2026-11-03.json",
+        "scope": "Eight paired MT/LXX contexts /104 verse pairs; four John contexts /51 verse positions; 21 freshly byte-verified objects, not whole-book reading or replay of old packages."
+      },
+      "status": "INTEGRATED_REVIEWED",
+      "kind": "WAVE6_OT_INTERTEXT_CONTINUATION",
+      "rejectedWordingPresentInBaseline": false,
+      "controlType": "ADDITIVE_GUARD_NOT_A_HISTORICAL_QUOTE"
     }
   ],
   "pathRepairs": [
@@ -6368,5 +6638,573 @@
     "readingMeasuredByLabels": false,
     "readOnlyChecks": "PASS; file fingerprint unchanged during verification",
     "publicationEligible": false
+  },
+  "wave6": {
+    "status": "BOUNDED_PRIMARY_READING_AND_PRECOMMIT_GATES_VERIFIED",
+    "baselineCommit": "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
+    "recordedAtUtc": "2026-11-03T10:31:55.703488+00:00",
+    "controls": "ИСКУПЛЕНИЕ/evidence/source_controls_wave6_2026-11-03.json",
+    "repairIds": [
+      "W6-NT15",
+      "W6-OT14",
+      "W6-C25",
+      "W6-H11",
+      "W6-P13",
+      "W6-NT09",
+      "W6-QMAP",
+      "W6-P04",
+      "W6-P06",
+      "W6-P18",
+      "W6-S04",
+      "W6-N00",
+      "W6-ROOT00",
+      "W6-O00",
+      "W6-ROOT-DATA",
+      "W6-NT-DATA",
+      "W6-OT-DATA",
+      "W6-S-DATA"
+    ],
+    "supersededSnapshots": [
+      {
+        "path": ".github/workflows/atonement-corpus-integrity.yml",
+        "commit": "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
+        "blob": "aea059bebacf43239776b60680e39636d208bc1f",
+        "sha256": "59d4dc9e87dde244f06a312c19305368be629dedcb756a4e54759cd766158325",
+        "bytes": 14644,
+        "status": "BYTE_VERIFIED_GIT_PREIMAGE_WAVE6"
+      },
+      {
+        "path": "docs/research/atonement/04_exegetical_defense_of_definite_atonement.md",
+        "commit": "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
+        "blob": "a63b5540526e2016a64001e6567ffd5ef6d80b04",
+        "sha256": "a311eefc7cbd3d352930f4822af7b887a62051565a59740878fcdf1336e0e958",
+        "bytes": 54099,
+        "status": "BYTE_VERIFIED_GIT_PREIMAGE_WAVE6"
+      },
+      {
+        "path": "docs/research/atonement/06_detailed_refutation_of_prokopenko_arguments.md",
+        "commit": "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
+        "blob": "b5368e1a7f7d0cff70641edebc1a05e7c662e7a9",
+        "sha256": "e44dee4261acdd1a799cb016b08dba6dff2ce7ee6fee3ad8e9a3e3a7ab225b86",
+        "bytes": 138227,
+        "status": "BYTE_VERIFIED_GIT_PREIMAGE_WAVE6"
+      },
+      {
+        "path": "docs/research/atonement/18_juridical_fallacies_and_double_punishment_critique.md",
+        "commit": "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
+        "blob": "eaa43666c5147ec7d0c98a90a3c890fc7bee81c3",
+        "sha256": "fa19bc85bb93b93d1b1f9a55e0198d62ef922347d415932006d11184f88a4695",
+        "bytes": 36334,
+        "status": "BYTE_VERIFIED_GIT_PREIMAGE_WAVE6"
+      },
+      {
+        "path": "scripts/atonement_reshoot_state.py",
+        "commit": "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
+        "blob": "442555ef94f4d2a8997dcb9f5fa35eeccf6c487e",
+        "sha256": "5ca066fb310704921a733334250be9dd4221874175c28415691ff8ddc18da833",
+        "bytes": 166585,
+        "status": "BYTE_VERIFIED_GIT_PREIMAGE_WAVE6"
+      },
+      {
+        "path": "scripts/atonement_sync_check.py",
+        "commit": "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
+        "blob": "ab819631daf5952772e160c2a2b2033ae0534763",
+        "sha256": "73a716a45a73b573b2634f7ef8bc855e015d2cc1fc129e3c73308c6bb28a533f",
+        "bytes": 17738,
+        "status": "BYTE_VERIFIED_GIT_PREIMAGE_WAVE6"
+      },
+      {
+        "path": "scripts/test_atonement_sync.py",
+        "commit": "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
+        "blob": "06810dad15fc9e24e5b6d036abe580a21cad9092",
+        "sha256": "100268f19812c00e71309748c73c7350bf8fb8088b0b3d0ce2430ed6e51c6636",
+        "bytes": 54437,
+        "status": "BYTE_VERIFIED_GIT_PREIMAGE_WAVE6"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+        "commit": "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
+        "blob": "4baca06f8c146d37270e8233140af93a871f0822",
+        "sha256": "b1e11661bfec7b47bdab14e5c9cfde04afb28648c63637b2fca41ae38b7dc157",
+        "bytes": 49817,
+        "status": "BYTE_VERIFIED_GIT_PREIMAGE_WAVE6"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md",
+        "commit": "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
+        "blob": "8176670bf83c92f088fd154913bf2e4229c6388a",
+        "sha256": "8e8e5cac6d1b4598087bcae6ec3e301477bc0635df5d8d09a641b2b96fdf14bf",
+        "bytes": 36805,
+        "status": "BYTE_VERIFIED_GIT_PREIMAGE_WAVE6"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md",
+        "commit": "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
+        "blob": "0afbbfb0953909a08930d5b256ebc212f3c52f2d",
+        "sha256": "307a53374e3c445f5318b4d38f4448fcec358c7ca522da6fc55dd8e5d6e40485",
+        "bytes": 99194,
+        "status": "BYTE_VERIFIED_GIT_PREIMAGE_WAVE6"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
+        "commit": "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
+        "blob": "fa1386a8386160d3c4c359ef28162aedff23f87e",
+        "sha256": "4f9fc1c0e92cf4a6f8a7a8bec6ce63acc355ceac4bb189e0606a81540ec896fb",
+        "bytes": 1287191,
+        "status": "BYTE_VERIFIED_GIT_PREIMAGE_WAVE6"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+        "commit": "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
+        "blob": "20842e1e649c1f9d3df4c90b7202bd719ff89c06",
+        "sha256": "6333a001c631676ab22b2e5620c2d237cfe5a047d85d4230f4a8b57087e360ca",
+        "bytes": 1205047,
+        "status": "BYTE_VERIFIED_GIT_PREIMAGE_WAVE6"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/evidence/synchronization_2026-11-02.json",
+        "commit": "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
+        "blob": "89baaff8c83a4d1d494b9fbb3e6e6cba7cacd8cf",
+        "sha256": "47f86a1e7376690d32ef5e85a90fe7408d7e3eaa361793c60f60da48d390a174",
+        "bytes": 650381,
+        "status": "BYTE_VERIFIED_GIT_PREIMAGE_WAVE6"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+        "commit": "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
+        "blob": "ce7ab3536d30246145d8e66eb259fccfb2a98d88",
+        "sha256": "b9cb2e692a2bb0cc8a2a91abaf1072dd934646931d6fc49a2a628039489ab54e",
+        "bytes": 146901,
+        "status": "BYTE_VERIFIED_GIT_PREIMAGE_WAVE6"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
+        "commit": "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
+        "blob": "caf0a00ec1ebda4ac6fe2b4abf4c27a359e3f556",
+        "sha256": "a3a6711743a2516af8b5bdb57ff2b6d993154e6127616eabbcaf91041d64e459",
+        "bytes": 26752,
+        "status": "BYTE_VERIFIED_GIT_PREIMAGE_WAVE6"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md",
+        "commit": "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
+        "blob": "739f3bfdf4b926f67ba20aff8d7609d483cbabaa",
+        "sha256": "515619bc15377d1822a52409ea4add8512e232ab5d7debda4cc4bca44d00c002",
+        "bytes": 56245,
+        "status": "BYTE_VERIFIED_GIT_PREIMAGE_WAVE6"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/09_NT_EXTENT_THREE_COLUMN_TABLE.md",
+        "commit": "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
+        "blob": "fb6d2f5f9c5ce76fd3cc75d97164bb8058cd7a1f",
+        "sha256": "2b790e2eb576c7e3b7c381833241f19a7866bfd0724027e3746a0e7d5367f3ad",
+        "bytes": 43246,
+        "status": "BYTE_VERIFIED_GIT_PREIMAGE_WAVE6"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md",
+        "commit": "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
+        "blob": "0852fe70cffb01baee4a06747edae5a00b9f4438",
+        "sha256": "0bafd88c18b0d4ae069a135c2609151fd98ece7a13aca7ba3668e83e06b2a926",
+        "bytes": 54774,
+        "status": "BYTE_VERIFIED_GIT_PREIMAGE_WAVE6"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+        "commit": "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
+        "blob": "1038a0d1d3ebf76c5fa61d434b45122506dec2c7",
+        "sha256": "dcd7ae975219a6a3239131e9c3670b07afc27f55db344ab015183187a7344fad",
+        "bytes": 199063,
+        "status": "BYTE_VERIFIED_GIT_PREIMAGE_WAVE6"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/ot/00_OT_AUTHORITY_2026-10-08.md",
+        "commit": "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
+        "blob": "7c11cfe726da1cfe65405092097288e975a38f3a",
+        "sha256": "7ce766dae39bc9e8498e2de8606cb72d67bd4b42346432da30ca8ccb3058f0c6",
+        "bytes": 65552,
+        "status": "BYTE_VERIFIED_GIT_PREIMAGE_WAVE6"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/ot/14_JER31_JOB19_33.md",
+        "commit": "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
+        "blob": "47d8d57822c4c3c29d04397ee2de5cb277b745d5",
+        "sha256": "302de36c2a23fad16fda84dd8baddaab08a9a27fdc3fadd5e80bdb58aea8ab0f",
+        "bytes": 59826,
+        "status": "BYTE_VERIFIED_GIT_PREIMAGE_WAVE6"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/ot/data/ot-corpus-v1.json",
+        "commit": "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
+        "blob": "bb18657b3617de519008f151d4ba5bc7d398fa28",
+        "sha256": "6fb1d2203941b8a85e35e4e79a4f37e3df49e91c9eb1505ae1013f796133e8bf",
+        "bytes": 782480,
+        "status": "BYTE_VERIFIED_GIT_PREIMAGE_WAVE6"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+        "commit": "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
+        "blob": "be7bf4725a19ddd199b44970e66556a64ac9f8d1",
+        "sha256": "e977389417ceb64ea50a40255b356a436c4055d65de4429977d53941fe4774d2",
+        "bytes": 214936,
+        "status": "BYTE_VERIFIED_GIT_PREIMAGE_WAVE6"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+        "commit": "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
+        "blob": "15b53c42c1d6bfa55a9f7270cb8f6efb2d73e908",
+        "sha256": "a1de40a93dbb56fee4f955b5bb9e4d1d3021daf68ee87d857885564107e107e2",
+        "bytes": 36570,
+        "status": "BYTE_VERIFIED_GIT_PREIMAGE_WAVE6"
+      },
+      {
+        "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+        "commit": "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
+        "blob": "605e85a4755ad692481d26625c355d9d25041791",
+        "sha256": "ea9c74702d3db0acbc6380e646c24ccffc88eaafed32a68805edb6a250d8cf79",
+        "bytes": 198700,
+        "status": "BYTE_VERIFIED_GIT_PREIMAGE_WAVE6"
+      }
+    ],
+    "createdFiles": [
+      "ИСКУПЛЕНИЕ/evidence/source_controls_wave6_2026-11-03.json",
+      "scripts/atonement_wave6_sources.py"
+    ],
+    "scope": "Eight paired MT/LXX contexts /104 verse pairs; four John contexts /51 verse positions; 21 freshly byte-verified objects, not whole-book reading or replay of old packages.",
+    "findings": [
+      "Original Israel/Judah addressees and inclusion of nations both retained.",
+      "Isa43 combines creation and covenantal Jacob/Israel address; creation does not automatically imply an all-human referent.",
+      "Ezek34/37 give an argued shepherd/unity echo via John10, not a proved quotation in John11:52.",
+      "John7:35 is an interlocutors question, not narrator endorsement of a diaspora-only view.",
+      "OT agent is not imported into John11:52; geography, naming, applied salvation and all purposes of death remain distinct.",
+      "Digital irregularities and MT/LXX wording differences retained, not silently emended or collated against print."
+    ],
+    "readingScope": {
+      "MT": {
+        "version": "Open Scriptures Hebrew Bible / Westminster Leningrad Codex in morphhb@3d15126fb1ef74867fc1434be1942e837932691f",
+        "readingScope": "Eight declared OT contexts, direct ketiv words only; qere/editorial notes kept separately. Hebrew whitespace collapsed, no NFC. Five full book files acquired, not five full books read.",
+        "quoteSafeScope": "Exact selected digital passages as identified, with stated text-quality limitations. Not a critical reconstruction, a theorem about atonement extent or clearance for a public product."
+      },
+      "LXX": {
+        "version": "First1KGreek@ed91552c52530c8f5a3ddf2dd767e899372a804c; tlg0527 .1st1K-grc1; headers and matching CTS metadata: Swete vol.1 (1901) Deuteronomy; vol.3 (1905) Isaiah/Jeremiah/Ezekiel/Zechariah",
+        "readingScope": "Eight declared Greek OT contexts. Isaiah grc1 is the selected Swete edition, not Ottley grc2. Notes/head excluded, their tails retained; empty page/line milestones contribute no text; NFC and whitespace only. Visible textual irregularities retained, not repaired.",
+        "quoteSafeScope": "Exact selected digital passages as identified, with stated text-quality limitations. Not a critical reconstruction, a theorem about atonement extent or clearance for a public product."
+      },
+      "JOHN": {
+        "version": "MorphGNT SBLGNT via py-sblgnt@904fed08a14bffea6e1776d8c4c3eeb7c6092688; eight-column schema",
+        "readingScope": "John 1:9-18; 7:30-39; 10:1-18; 11:45-57, 51 verse positions. The rest of John and other NT books are not newly read; prior Wave5 contexts are retained historical evidence, not fresh old-package replay.",
+        "quoteSafeScope": "Exact selected digital passages as identified, with stated text-quality limitations. Not a critical reconstruction, a theorem about atonement extent or clearance for a public product."
+      }
+    },
+    "publicationEligible": false,
+    "mergePerformed": false,
+    "currentLocalPdfReplay": "NOT_RUN",
+    "oldWave3PackageReplay": "NOT_RUN",
+    "oldWave4PackageReplay": "NOT_RUN",
+    "oldWave5PackageReplay": "NOT_RUN_NOT_EQUIVALENT_TO_REACQUIRING_JOHN",
+    "printedCollationClaimed": false,
+    "regressionRecordSemantics": "18 integrated owner/SSOT guards, not 18 historical errors. Baseline removal/supersession distinguished from synthetic additive safeguards using actual Git bytes.",
+    "completedPriorNextAction": "Generic request for a bounded OT comparison in Wave5 next actions, only for the explicitly listed ranges. Older wave findings/receipts remain historical; Cyril Greek/critical transmission remains open.",
+    "nextSubstantiveStep": "Critical/printed collation of digital irregularities and proposed intertexts; separate Cyril Greek/critical transmission. No whole-OT/atonement closure.",
+    "checkoutRecovery": {
+      "recordedAtUtc": "2026-11-03T10:08:21.493157+00:00",
+      "branch": "arena/d7043ba0-research",
+      "fromHead": "ec722894e21b004900e9e44a2da9bdb9990f1f7c",
+      "toHead": "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
+      "filesComparedWithActualGitBlobs": 2693,
+      "workingBytesUnchanged": true,
+      "fingerprint": "d8467bc96b3adaeb00661fe202eb8da1b1e11093d41cb7089dc57d765a90524e",
+      "method": "Each working file compared to actual target Git blob bytes and executable mode; no extra untracked files. Only soft-reset/read-tree of Git metadata; no file checkout, source replay, or content rewrite."
+    },
+    "legacy30Battery": {
+      "status": "PREVIOUS_FAIL_NOT_REPAIRED_NOT_RERUN_IN_WORKING_TREE",
+      "basis": "wave5.preliminaryVerification",
+      "note": "Stale expected diagnostic and two unavailable live-mirror fixtures; not the read-only native 18 rule-trap mutations. Do not claim full-repository green."
+    },
+    "verification": {
+      "status": "PASS_SCOPED_PRECOMMIT_CHECKS",
+      "recordedAtUtc": "2026-11-03T10:50:33.494461+00:00",
+      "receiptSha256": "091c9e2b10ac78c4d30adfe72e479e26930a0953379b919f6be704f9c7c5c3d0",
+      "headAtRun": "75c9cb64d2c75805ca7fa05dca7f6c5f626c386f",
+      "exactCommitTree": false,
+      "precommitWorkingTreeFingerprint": "9d7482d035e30456d17460a3ef30382bd3f95aba690f056d05e0fd04b6240d4a",
+      "trackedFilesCheckedUnchanged": 2695,
+      "rawSourceFilesUnchanged": true,
+      "outcomes": [
+        {
+          "name": "workflow-ast",
+          "returncode": 0,
+          "expected": 0,
+          "files": 14
+        },
+        {
+          "name": "unit-tests",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/test_atonement_sync.py"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "84da65c65f3764cd79f568730501723f341d55a01d8b99e5cff9d086542bff6b"
+        },
+        {
+          "name": "sync",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_sync_check.py"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "6951b30778147671d46f9eb27dd66eedacfe991c560bc753db94ea704b27e853"
+        },
+        {
+          "name": "wave6-byte-replay",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_wave6_sources.py",
+            "--source-root",
+            "/home/user/source-materials/atonement-wave6-2026-11-03"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "961dbb93352c53631b814fa607f8d1de6e40db706006caa28a50debdd77dd15c"
+        },
+        {
+          "name": "wave3-retained-not-raw-replay",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_wave3_sources.py"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "19b72a815e481ad8cab4f80cf75038128361a337691f615f028e7b917fd90fef"
+        },
+        {
+          "name": "wave4-retained-not-raw-replay",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_wave4_sources.py"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "95cedcb51c25d01138e50a0af03887c8f1da90c6d6d490d35f0b811e500c9ca6"
+        },
+        {
+          "name": "wave5-retained-not-raw-replay",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_wave5_sources.py"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "ab719d925181f496700f5071d2cbfa7b1698358c58d309a2f5d5d040e254ba76"
+        },
+        {
+          "name": "crossrefs",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_crossref_audit.py",
+            "--check"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "edd3e4ed6d548561424ad7189dc7b5a214ee85e5f68df3a256e5f4a43c82602d"
+        },
+        {
+          "name": "native-integrity",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/validate_atonement_corpus_integrity.py"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "23399f763694c15f86b5eba7124f6492dc416675e82c3687eb349455dd952202"
+        },
+        {
+          "name": "claims",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_claim_register.py",
+            "--check"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "e6686f03629677f3d02af49877a2861702aefa868f547d1dc166d97b6c7b87fb"
+        },
+        {
+          "name": "claim-cross",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_claim_register.py",
+            "--cross"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "8c4cc031b64956e145eaa8729c2fd86007d1a63be69a8a157147a70cb4df108c"
+        },
+        {
+          "name": "reshoot",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_reshoot_state.py",
+            "--check"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "42220fecf0a8caeb2b97e0c21c2142733afa652691fe9ae1e98648784a7dbdfb"
+        },
+        {
+          "name": "round-plan",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_round_close.py",
+            "--plan"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "847edf97ecc904bf6245f4e68aa20929b94eaf01df5ab03b6657c03a0cecfd86"
+        },
+        {
+          "name": "round-selfcheck",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_round_close.py",
+            "--selfcheck"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "05425bf8e7836953dbfe04e90a2dad5dc56b2282acb24f5400a8f2e60d8351f0"
+        },
+        {
+          "name": "refuse-unapproved-writers",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_round_close.py",
+            "--run",
+            "--allow-appending-writers"
+          ],
+          "returncode": 2,
+          "expected": 2,
+          "logSha256": "501dccc4ce0438d85a7de038a64b7951e7a7618c45e70bc1e801be118645ea4c"
+        },
+        {
+          "name": "rule-traps",
+          "command": [
+            "python3",
+            "-B",
+            "scripts/atonement_reshoot_state.py",
+            "--rule-trap"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "123f1eae60188d544c715916d0d607ab6442f6d55a8f1fe727502141e57acb47"
+        },
+        {
+          "name": "diff-whitespace",
+          "command": [
+            "git",
+            "diff",
+            "--check",
+            "HEAD"
+          ],
+          "returncode": 0,
+          "expected": 0,
+          "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "workflow-guards",
+          "returncode": 0,
+          "expected": 0,
+          "guards": 37,
+          "failures": []
+        },
+        {
+          "name": "local-markdown-targets",
+          "returncode": 0,
+          "expected": 0,
+          "proseOwners": 14,
+          "targets": 200,
+          "missing": []
+        }
+      ],
+      "unitTests": 148,
+      "newTestMethods": 22,
+      "wave6ReversionSubcases": 18,
+      "workflowGuards": 37,
+      "workflowAstFiles": 14,
+      "nativeInMemoryMutations": 18,
+      "freshSourceFiles": 21,
+      "contextBlocks": 20,
+      "otVersePairs": 104,
+      "ntVerses": 51,
+      "selectedVerseInstances": 259,
+      "localMarkdownTargets": 200,
+      "markdownOwnerScope": 14,
+      "missingMarkdownTargets": 0,
+      "legacy30CaseBattery": "FAIL_RETAINED_SEPARATELY_NOT_RECLASSIFIED_AS_PASS",
+      "scope": "Actual working-tree acceptance before recording this receipt. This record does not certify its future commit; exact postcommit verification follows. No old-package replay, human-reading measurement, doctrinal closure, merge or publication."
+    },
+    "engineeringChanges": [
+      "Read-only Wave6 validator wired into synchronization gate, native 20-script inventory and 14-file workflow AST list.",
+      "22 new unit-test methods (148 total in initial completed run), including 18 owner-reversion subcases and semantic mutations after rehash; no repository fixture writes.",
+      "Default checks retained controls; optional --source-root replays 21 actual files, 20 contexts, explicit MT/LXX maps, excluded notes and edition identity.",
+      "Native OT mixed JSON layout retained; profile/file/context guard bindings added without changing source text. Initial freeze/integrate scripts are one-shot historical inputs, not safe overwrite commands."
+    ],
+    "derivedStateRefresh": {
+      "method": "Native claim register --write (exit1 described pre-write drift, followed by successful dedicated --check); existing §9.1 seven numeric cells from the native live rollup; native reshooter --write converged on iteration2, dedicated --check PASS.",
+      "claims": 914,
+      "perLane": {
+        "ot": 200,
+        "nt": 190,
+        "fathers": 108,
+        "synthesis": 244,
+        "root": 172
+      },
+      "table91Totals": [
+        914,
+        914,
+        91,
+        8,
+        1,
+        62,
+        41
+      ],
+      "metricsAreHumanReadingCoverage": false
+    },
+    "writerRetry": {
+      "cause": "Initial integration stopped at final C25 paragraph without a double newline, before any dependent-owner write.",
+      "recovery": "Only the two just-written NT15/OT14 files were restored from exact75 preimages, EOF handling corrected, integration rerun successfully. Raw sources and frozen source texts unchanged.",
+      "receipt": "External methods/integration-retry.json"
+    },
+    "firstUnitTestRun": {
+      "methods": 148,
+      "status": "PASS",
+      "scope": "Initial offline run, not the pending exact-commit proof.",
+      "recordedAtUtc": "2026-11-03T10:42:18.094281+00:00",
+      "logSha256": "ae09dd9b3b5f6d4856a37c9cc6ad2820df822bae3cf8691863ce48570254165a"
+    },
+    "preliminaryVerification": {
+      "status": "NOT_FINAL_ACCEPTANCE_WHITESPACE_SCOPE_CORRECTED",
+      "receiptSha256": "a3073f06d3e813f291e63011a4d8ffbe306301f12a69fb2b2d58cb7d70d9fae6",
+      "finishedAtUtc": "2026-11-03T10:45:33.098744+00:00",
+      "allReportedOutcomesMatched": true,
+      "filesUnchanged": true,
+      "rawSourcesUnchanged": true,
+      "limitation": "The staged tree made plain git diff --check vacuous. Replaced with git diff --check HEAD for working-tree runs, and baseline..HEAD for exact commits. A fresh complete accepted run follows; no weakening of gates."
+    }
   }
 }

@@ -698,6 +698,25 @@
     ],
     "nextAction": "Greek/critical transmission, comparison of VI10:14-15 and VII11:44/52, and bounded OT intertext; no whole-author eschatology/atonement closure."
   },
+  "otGatheringReviewWave6": {
+    "recordedAtUtc": "2026-11-03T10:31:55.703488+00:00",
+    "controls": "ИСКУПЛЕНИЕ/evidence/source_controls_wave6_2026-11-03.json",
+    "c25": "OPEN",
+    "o09": "BOUNDED_COMPARISON_DONE_CRITICAL_FOLLOWUP_OPEN",
+    "interpretationStatus": "ARGUED_PROVISIONAL_NOT_MACHINE_PROOF",
+    "scope": "Eight paired MT/LXX contexts /104 verse pairs; four John contexts /51 verse positions; 21 freshly byte-verified objects, not whole-book reading or replay of old packages.",
+    "publicationEligible": false,
+    "findings": [
+      "Original Israel/Judah addressees and inclusion of nations both retained.",
+      "Isa43 combines creation and covenantal Jacob/Israel address; creation does not automatically imply an all-human referent.",
+      "Ezek34/37 give an argued shepherd/unity echo via John10, not a proved quotation in John11:52.",
+      "John7:35 is an interlocutors question, not narrator endorsement of a diaspora-only view.",
+      "OT agent is not imported into John11:52; geography, naming, applied salvation and all purposes of death remain distinct.",
+      "Digital irregularities and MT/LXX wording differences retained, not silently emended or collated against print."
+    ],
+    "supersedesOnly": "Generic request for a bounded OT comparison in Wave5 next actions, only for the explicitly listed ranges. Older wave findings/receipts remain historical; Cyril Greek/critical transmission remains open.",
+    "nextAction": "Critical/printed collation of digital irregularities and proposed intertexts; separate Cyril Greek/critical transmission. No whole-OT/atonement closure."
+  },
   "claimRegister20261026": {
       "чтоЭто": "реестр доводов лана «synthesis»: строка = раздел прозы уровня ## с локатором, классом из её собственных маркеров и отметкой съёма",
       "чтоСчитаетсяДоводом": "заголовок «## » в любом .md лана, включая вложенные папки (synthesis/drafts, ot/tools); тело секции — до следующего «## » или до конца файла",
@@ -4224,8 +4243,8 @@
       ],
       "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
       "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check synthesis",
-      "measuredAt": "2026-11-03T08:21:47Z",
-      "checkedAt": "2026-11-03T08:21:47Z",
-      "предыдущийСъём": "2026-11-03T01:04:38Z"
+      "measuredAt": "2026-11-03T10:38:27Z",
+      "checkedAt": "2026-11-03T10:38:27Z",
+      "предыдущийСъём": "2026-11-03T08:21:47Z"
   }
 }
