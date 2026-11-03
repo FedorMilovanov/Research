@@ -1712,7 +1712,7 @@ The Greek lane is registered in the same file as the Dutch one because it is the
 свидетели живого пения с именем автора; один (GRMS 2017) решает вопрос о мелодии; пять
 описывают рукописи, из которых ни одна не смотрена в факсимиле.
 
-## SRC-PHOS-VRG-AUG372 — Августин Гиппонский, Проповедь 372 — цитата шестой строфы с именем Амвросия
+## SRC-PHOS-VRG-AUG372 — Проповедь 372 «На Рождество Господне», приписываемая Августину, — цитата шестой строфы с именем Амвросия
 
 - URL: https://www.hymnologyarchive.com/veni-redemptor-gentium
 - Source role/type: Патристическая проповедь, цитируемая во вторичной публикации с точным локатором
@@ -1721,9 +1721,9 @@ The Greek lane is registered in the same file as the Dutch one because it is the
 - Locator state: EXACT_LOCATOR_VERIFIED
 - Rights state: RIGHTS_UNKNOWN
 - Publication state: REFERENCE
-- HOLDs: RIGHTS_HOLD
-- Supports: Цитата шестой строфы целиком: «Egressus eius a Patre, regressus eius ad Patrem, excursus usque ad inferos, recursus ad sedem Dei»; Имя автора названо: «cecinit beatus Ambrosius in hymno»; Ключевые слова «quem paulo ante cantastis» — «который вы только что пели»: свидетельство о пении в собрании
-- Limits / caveats: Проповедь 372 прочитана в цитате, а не по изданию целиком; латинская форма цитаты взята из вторичной публикации и по критическому изданию не сверена.
+- HOLDs: EVIDENCE_HOLD, RIGHTS_HOLD
+- Supports: Цитата шестой строфы целиком: «Egressus eius a Patre, regressus eius ad Patrem, excursus usque ad inferos, recursus ad sedem Dei»; Имя автора названо: «cecinit beatus Ambrosius in hymno»; Ключевые слова «quem paulo ante cantastis» — «который вы только что пели»: свидетельство о пении в собрании; Точный локатор издания: Sermon 372, «On the Lord's nativity», в The Works of Saint Augustine, series III, vol. 10, пер. Edmund Hill (New City Press, 1995), с. 318; Текст проповеди (гл. III) подтверждает цитату шестой строфы: Hunc nostri gigantis excursum brevissime ac pulcherrime cecinit beatus Ambrosius in hymno, quem paulo ante cantastis
+- Limits / caveats: Проповедь 372 прочитана в цитате, а не по изданию целиком; латинская форма цитаты взята из вторичной публикации и по критическому изданию не сверена. АВТОРСТВО ПРОПОВЕДИ СПОРНО: «it is likely that Augustine is not the author of the sermon» — датировать свидетельство жизнью Августина нельзя. Разночтение объёма цитаты: текст проповеди даёт шестую строфу, одна из передач захватывает строфы 5–7; не разрешено.
 
 ## SRC-PHOS-VRG-CELEST430 — Келестин I, собор в Риме, 430 г. — цитата второй строфы с указанием на Амвросия
 
@@ -1748,8 +1748,8 @@ The Greek lane is registered in the same file as the Dutch one because it is the
 - Rights state: PERMISSION_REQUIRED
 - Publication state: REFERENCE
 - HOLDs: ARCHIVE_HOLD, RIGHTS_HOLD
-- Supports: Латинский текст восьми строф в проекте приведён по передаче, опирающейся на это издание; Аргумент Фонтена в защиту первой строфы передан: она опущена в двух третях свидетелей, но не опущена ни одним миланским и не опущена древнейшим; Фонтен отвергает аргумент от умолчания Келестина: папа цитировал вторую строфу в полемике с несторианами, а не потому, что не знал первой; Локатор точен и проверен по библиографической записи: издание 1992 г., с. 266–275; самой книги в работе нет
-- Limits / caveats: Издание 1992 г. НЕ открыто. Все суждения об атрибуции первой строфы — по вторичной передаче с точной ссылкой на страницу; собственные слова Фонтена не проверены.
+- Supports: Латинский текст восьми строф в проекте приведён по передаче, опирающейся на это издание; Аргумент Фонтена в защиту первой строфы передан: она опущена в двух третях свидетелей, но не опущена ни одним миланским и не опущена древнейшим; Фонтен отвергает аргумент от умолчания Келестина: папа цитировал вторую строфу в полемике с несторианами, а не потому, что не знал первой; Локатор точен и проверен по библиографической записи: издание 1992 г., с. 266–275; самой книги в работе нет; Локатор разбора Пс 79:2–3 по немецкому разбору гимна: Фонтен 1992, с. 276–279
+- Limits / caveats: Издание 1992 г. НЕ открыто. Все суждения об атрибуции первой строфы — по вторичной передаче с точной ссылкой на страницу; собственные слова Фонтена не проверены. Страницы расходятся между источниками: Hymnology Archive указывает с. 266, немецкий разбор гимна — с. 276–279 на разбор Пс 79:2–3.
 
 ## SRC-PHOS-VRG-VATREG11 — Biblioteca Apostolica Vaticana, Reg. lat. 11, л. 233r — древнейший список гимна, 2-я половина VIII в.
 
