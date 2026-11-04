@@ -156,6 +156,18 @@
 - [Digitale Editionen der Europäischen Religionsfrieden / TU Darmstadt](https://tueditions.ulb.tu-darmstadt.de/): немецкие тексты политико-религиозных документов.
 - [The Library of Congress — Martin Luther: Priest, Heretic, and Outlaw](https://guides.loc.gov/martin-luther-priest-heretic-outlaw): современный музейный путеводитель и доступ к коллекции.
 
+## Цюрихский городской совет, 3–29 января 1523 года — рукописные свидетели и тексты (05.11.2026)
+
+| ID | Объект и локатор | Проверка / предел |
+| --- | --- | --- |
+| REF-P49 | [B VI 249 fol.5r–v, черновик объявления 03.01](https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=4613026) | Архивная карточка, фото оригинала не получено |
+| REF-P50 | [E I 1.1 Nr.17, другой черновик, писец Kaspar Frey](https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1880495) | Архив сообщает о разночтениях; полная сверка отсутствует |
+| REF-P51 | [B VI 249 fol.5v–6v, решение 29.01](https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=4613028) | Каталог; критическая транскрипция отдельно REF-P54 |
+| REF-P52 | [B VI 249 fol.1r, запись 2: надзор за печатью, 03.01](https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=4681282) | Только каталог, практическое применение не проверено |
+| REF-P53 | [Университет Цюриха, Zwingli Werke 17 II, S.466–468](https://www.irg.uzh.ch/static/zwingli-werke/index.php?n=Werk.17II) | Прямо прочитанный текст критического издания 1905, не фотография рукописи |
+| REF-P54 | [Университет Цюриха, Zwingli Werke 17 III, S.469–471](https://www.irg.uzh.ch/static/zwingli-werke/index.php?n=Werk.17III) | Прямо прочитанное постановление совета 1905, не полная стенограмма прений |
+
+Новые PDF, фотокопии и оригинальные рукописные байты не получены; научный аппарат допускает только ссылку на каталог и критическую редакцию, не фиктивную колляцию.
 ## Матрица допустимого импорта
 
 | Материал | Личное чтение | Git / публичная перепубликация |

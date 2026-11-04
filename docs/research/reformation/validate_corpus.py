@@ -633,6 +633,33 @@ def validate() -> tuple[list[str], dict[str, int]]:
             "PDF p.5", "29 января 1523", "XIX", "XXIX", "Jon D. Wood", "254", "67", "Ramminger",
             "Wittemberg", "колофон", "PUBLICATION_HOLD")):
         problems.append("Zwingli original 1523 visual-page map or publisher limits lost")
+    # Zurich council 1523: catalogue metadata is not a manuscript scan.
+    municipal = {
+        "REF-P49": ("CATALOG_ONLY", "4613026"),
+        "REF-P50": ("CATALOG_ONLY", "1880495"),
+        "REF-P51": ("CATALOG_ONLY", "4613028"),
+        "REF-P52": ("CATALOG_ONLY", "4681282"),
+        "REF-P53": ("PARTIAL_OBJECT", "Werk.17II"),
+        "REF-P54": ("PARTIAL_OBJECT", "Werk.17III"),
+    }
+    for sid, (access, locator) in municipal.items():
+        x = corpus.get(sid, {})
+        if (x.get("accessState") != access or locator not in str(x.get("url", ""))
+                or x.get("publicationState") != "REFERENCE"
+                or not {"ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"} <= set(x.get("holds", []))):
+            problems.append(f"{sid}: Zurich city council access/rights/source link regression")
+    for cid, required in {
+        "C103": ("REF-P49", "REF-P53", "COUNCIL_SUMMONS_3_JAN_FOR_29_JAN"),
+        "C104": ("REF-P51", "REF-P54", "COUNCIL_DIRECTIVE_AND_SANCTIONS_NOT_TOLERATION"),
+        "C105": ("REF-P49", "REF-P50", "TWO_DRAFT_WITNESSES_NOT_TWO_EVENTS"),
+        "C106": ("REF-P52", "PRINT_CONTROL_CATALOG_ONLY"),
+    }.items():
+        if any(s not in claim_rows.get(cid, "") for s in required):
+            problems.append(f"{cid}: Zurich council evidence/claim mismatch")
+    if not all(f'| {sid} |' in source_readings for sid in municipal):
+        problems.append("Zurich council reference reading map incomplete")
+    if "## 11. Цюрих 1523" not in collation:
+        problems.append("Zurich council direct critical-text reading missing")
     # Enforce source interpretation without inventing independent eyewitnesses:
     # a byte receipt cannot prove the letter autograph or oral delivery.
     for file in HERE.glob("*.md"):
