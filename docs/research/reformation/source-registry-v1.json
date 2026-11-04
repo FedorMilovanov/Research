@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 56,
+  "sourceCount": 57,
   "sources": [
     {
       "id": "REF-P01",
@@ -878,7 +878,7 @@
     {
       "id": "REF-P31",
       "documentYear": 1539,
-      "title": "Denmark-Norway Kirkeordinansen 14 June 1539 in Rørdam 1883 edition",
+      "title": "Denmark-Norway Kirkeordinansen approved 1539, scholarly Rørdam 1883 text based on 1542 print",
       "evidenceClass": "A1",
       "accessState": "PARTIAL_OBJECT",
       "locatorState": "EXACT_LOCATOR_VERIFIED",
@@ -890,7 +890,7 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://danmarkshistorien.lex.dk/Kirkeordinansen,_14._juni_1539",
-      "verificationNote": "Primary law in scholarly reprint Rørdam Danske kirkelove I (1883) pp40-133. Text headings six pillars, Om Børne Scholer, poor fund/diaconal accounting, superintendents, books, church order directly read in Danish transcription. Latin 1537 and Danish 1542 prints not collated.",
+      "verificationNote": "Danmarkshistorien Rørdam 1883 I pp40-133 reproduces Hans Vingaard Copenhagen 1542 print, checked against independent 1540 Fyns Bispearkiv copy (see endnote iv and final editorial note of online text); 1539 is approval date/headline, NOT direct base of printed reading. School/poor relief/superintendents/books text verified via this reprint. University Copenhagen DUDS offers separate 1989 edition of full 1539 text pp150-244, NOT collated in current pass. Originals 1537/1539/1542 images still ARCHIVE_HOLD.",
       "checkedAt": "2026-11-04"
     },
     {
@@ -946,7 +946,7 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://agad.gov.pl/?page_id=966",
-      "verificationNote": "AGAD Polish source transcription explicitly forbids bloodshed, prison, confiscation, exile for religious disagreement, but next paragraph retains lords' authority over subjects in spiritualibus and in saecularibus. Archive page_id=968 gives parchment Zb.dok.perg.4467 and 209 hanging seal bowls (181 imprints, 27 blank, one remnant); 1579/1588 later editions separate. Images not visually collated. Additional AGAD archival PDF https://agad.gov.pl/wp-content/uploads/2022/08/Konfederacja-warszawska-1573.pdf p1 internally states 206 seal bowls in six rows then 209 seals with 128 identified/81 damaged; newer webpage says 209 bowls in seven rows (181 imprints, 27 blank, 1 remnant). Catalog discrepancy OPEN; do not equate identified seals/impressions and bowls.",
+      "verificationNote": "AGAD archive parchment 4467. Official PL transcription protects dissidentes de religione from persecution yet preserves lord's power over subjects in spiritualibus/saecularibus. Seal count correction RESOLVED: original 2010 AGAD inventory 206 bowls/six rows; conservator Justyna Król-Próba's 2016 work and published article pp709-715 renumbered 1-209 and demonstrated 209 bowls/seven rows. AGAD later page gives 181 imprints/27 blanks/1 remnant. Earlier 128 identified is category of attribution, not all impressions. Photo evidence not visually collated; external PDF screenshot returned 403; only textual extraction read.",
       "checkedAt": "2026-11-04"
     },
     {
@@ -1021,6 +1021,24 @@
       ],
       "url": "https://www.rcin.org.pl/dlibra/publication/29987/edition/41454/content",
       "verificationNote": "Polish Academy of Sciences journal 1974 pp7-30; listed Rights Reserved – Free Access, automated page showed secured object and challenge, full article not read; no claim attribution beyond metadata.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-S08",
+      "documentYear": 2017,
+      "title": "Justyna Król-Próba, Akt Konfederacji Generalnej Warszawskiej – odkrycia sfragistyczne dzięki interwencji konserwatorskiej",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://bibliotekanauki.pl/chapters/23352242.pdf",
+      "verificationNote": "Restorer directly reports 2010 inventory 206 seals in six rows (p709 note2), physical 2016 intervention/renumbering 1-209 (p712-13), conclusively 209 in seven rows (p715), hypothetical 224 original design slots. PDF text examined, web screenshot failed 403; photos not visually collated.",
       "checkedAt": "2026-11-04"
     }
   ]
