@@ -6,7 +6,7 @@
   "policy": "data/repository-evidence-policy-v2.json",
   "noExternalPublication": true,
   "fileBytesInGit": 0,
-  "sourceCount": 4,
+  "sourceCount": 6,
   "sourceRecords": [
     {
       "id": "REF-P09-PRINT",
@@ -83,6 +83,44 @@
       "sha256": null,
       "acquisitionState": "LINKS_VERIFIED_NO_DOWNLOAD",
       "intendedNextStep": "Acquire XML legally with attribution; visually collate with 1517 Nuremberg witness, not Oxford 2016 reprompted print"
+    },
+    {
+      "id": "REF-P24-BSB1",
+      "title": "Schleitheim 1527 first print, BSB Res/Polem.875#Beibd.6",
+      "date": "1527 (catalog dating)",
+      "institution": "Bayerische Staatsbibliothek",
+      "shelfmark": "VD16 S 1882; Res/Polem. 875#Beibd.6",
+      "catalog": "https://digitale-sammlungen.de/en/details/bsb00027178",
+      "downloadAccess": "BSB JS DFG Viewer / IIIF manifest; manifest endpoint inaccessible in current session",
+      "iiifManifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00027178/manifest",
+      "language": "German",
+      "rights": "Public Domain Mark 1.0 digital object, CC0 metadata per BSB",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "publicationState": "REFERENCE",
+      "sizeNote": "16 leaves, 32 scans (not byte size)",
+      "sha256": null,
+      "acquisitionState": "DOWNLOAD_ATTEMPT_FAILED",
+      "intendedNextStep": "Obtain original 32 scans with browser; SHA256 each acquired file; collate each of seven articles with ~1550 museum text"
+    },
+    {
+      "id": "REF-P24-BSB2",
+      "title": "Schleitheim 1527 first print, BSB Res/Mor.135#Beibd.2",
+      "date": "1527 (catalog dating)",
+      "institution": "Bayerische Staatsbibliothek",
+      "shelfmark": "VD16 S 1882; Res/Mor. 135#Beibd.2",
+      "catalog": "https://digitale-sammlungen.de/en/details/bsb00112324",
+      "downloadAccess": "BSB JS DFG Viewer / IIIF manifest; manifest endpoint inaccessible in current session",
+      "iiifManifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00112324/manifest",
+      "language": "German",
+      "rights": "Public Domain Mark 1.0 digital object, CC0 metadata per BSB",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "publicationState": "REFERENCE",
+      "sizeNote": "16 leaves, 34 scans",
+      "sha256": null,
+      "acquisitionState": "DOWNLOAD_ATTEMPT_FAILED",
+      "intendedNextStep": "Obtain 34 scans separately; compare variants against BSB1; do not assume differing frame counts imply differing text"
     }
   ],
   "requirements": {
