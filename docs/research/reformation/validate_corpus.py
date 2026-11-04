@@ -429,6 +429,21 @@ def validate() -> tuple[list[str], dict[str, int]]:
            ("REF-P47", "ZV23319", "ORIGINAL_TITLE_IMAGE_VISUALLY_CHECKED",
             "RECYCLED_PROPAGANDA_IMAGE_NOT_EVENT_RECORD")):
         problems.append("C93 P47 recycled woodcut context lost")
+    p47_receipt = next((rec for rec in items if rec.get("id") == "REF-P47"), {})
+    if (p47_receipt.get("acquisitionState") != "VERIFIED_TEMP_DISCARDED"
+            or p47_receipt.get("sha256") != p47_sha
+            or p47_receipt.get("actualBytes") != 3253175
+            or p47_receipt.get("catalog") != p47.get("url")
+            or p47_receipt.get("downloadAccess") != p47_pdf
+            or p47_receipt.get("accessState") != "PARTIAL_OBJECT"
+            or p47_receipt.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+            or p47_receipt.get("publicationState") != "REFERENCE"):
+        problems.append("Augsburg P47 acquisition manifest no longer matches verified source bytes")
+    if any(token not in str(p47_receipt.get("rights", "")) for token in
+           ("CC BY-NC-SA 3.0", "RIGHTS_HOLD", "PUBLICATION_HOLD")):
+        problems.append("Augsburg P47 acquisition image-reuse restrictions lost")
+    if "TEMP_CLEANED=True" not in str(p47_receipt.get("tempDisposition", "")):
+        problems.append("Augsburg P47 canonical temp cleanup receipt missing")
     if "| REF-P47 |" not in (HERE / "02_open_primary_sources_and_reading.md").read_text(
             encoding="utf-8"):
         problems.append("Augsburg P47 missing from primary-source reading list")
