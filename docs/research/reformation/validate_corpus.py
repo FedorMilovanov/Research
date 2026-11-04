@@ -271,6 +271,11 @@ def validate() -> tuple[list[str], dict[str, int]]:
         "REF-P43": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
         "REF-S13": ("PARTIAL_OBJECT", "PUBLICATION_ELIGIBLE"),
         "REF-S14": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
+        "REF-P44": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
+        "REF-P45": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
+        "REF-P46": ("PARTIAL_OBJECT", "RIGHTS_UNKNOWN"),
+        "REF-S15": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
+        "REF-S16": ("PARTIAL_OBJECT", "RIGHTS_UNKNOWN"),
     }
     for ref, (access, rights) in worms.items():
         w = corpus.get(ref, {})
@@ -285,10 +290,77 @@ def validate() -> tuple[list[str], dict[str, int]]:
         "C77": ("REF-P40", "REF-S13", "26"),
         "C79": ("REF-P40", "A1r", "B4"),
         "C84": ("REF-P43", "GHDI"),
+        "C85": ("REF-P44", "REF-P46", "1521", "Blatt 5v"),
+        "C86": ("REF-P44", "REF-P46", "REF-P39", "REF-P45"),
+        "C87": ("REF-P39", "REF-P44", "REF-S15"),
+        "C88": ("REF-S15", "F add", "S.581"),
+        "C89": ("REF-P45", "Neyn"),
+        "C90": ("REF-S15", "S.583"),
+        "C91": ("REF-S16", "REF-S14", "— нет"),
     }.items():
         row = claim_rows.get(id_, "")
         if any(term not in row for term in substrings):
             problems.append(f"{id_}: incomplete Worms first-print legal chronology or citation")
+    # Seven 1800px JPEG derivatives were viewed and discarded; this offline
+    # check covers receipt integrity only, NOT re-verification of remote bytes.
+    wrede = (HERE / "12_worms_1521_speech_edict_source_dossier.md").read_text(
+        encoding="utf-8")
+    if "### Текстологическая колляция" not in wrede:
+        problems.append("Wrede 1896 visual collation section missing")
+        wrede_section = ""
+    else:
+        wrede_section = wrede.split("### Текстологическая колляция", 1)[1].split(
+            "### P40.", 1)[0]
+    receipts = re.findall(
+        r"^\|\s*(\d{3})\s*\|\s*(\d{3})\s*\|\s*(\d+)\s*\|\s*\x60([a-f0-9]{64})\x60\s*\|$",
+        wrede_section, re.MULTILINE)
+    if [(p, scan) for p, scan, _, _ in receipts] != [
+            (str(p), str(p+16)) for p in range(578, 585)]:
+        problems.append("Wrede 1896 page/IIIF receipt sequence 578-584/594-600 incomplete")
+    if len({sha for _, _, _, sha in receipts}) != 7:
+        problems.append("Wrede 1896 SHA receipts missing, repeated or malformed")
+    lengths = [556830, 561385, 540789, 572148, 600618, 627903, 526127]
+    if [int(size) for _, _, size, _ in receipts] != lengths:
+        problems.append("Wrede 1896 downloaded JPEG byte counts changed")
+    expected_sha = [
+        "fc65a7e41da0daba033dd151c611132ecfa0e335477e22e065234f2eca7202ca",
+        "9f2ce265b268174454df83a65647d6863c6f1e5332b5a47339f9aaef17bad9c0",
+        "c85ba0f11b3de3c56091032c057f649ed4fe3ebf18ce273c47a1b46546d04316",
+        "c875be511e67cea417d2f16ac5b595fd7f041e38fef5cfdd3190e8086072f615",
+        "06f2453a6b055ef0d8900d98910338cf50dd8cfe43d04f597129fbc0d1f94c72",
+        "f762fb6261c45a2031cda9b602ceb13ce0c329b1a7ed0587d05a6487be78e383",
+        "7744574be57fb5de638612553662066659f94bf6ab1f23758f7b30168a091788",
+    ]
+    if [sha for _, _, _, sha in receipts] != expected_sha:
+        problems.append("Wrede 1896 SHA receipts changed without verified re-acquisition")
+    if "F add. Ich kan nicht anders, hie stehe ich" not in wrede_section:
+        problems.append("Wrede p582 variant apparatus has been removed")
+    if "NoC-NC/1.0" not in wrede_section:
+        problems.append("Wrede BSB digital photograph usage restriction removed")
+    if "TEMP_CLEANED=True" not in wrede_section:
+        problems.append("Wrede temporary photos cleanup not attested")
+    # LMU VD16 L3650 original three-page PDF was actually visually inspected;
+    # receipts pin the downloaded PDF bytes, not a live network reacquisition.
+    p46 = corpus.get("REF-P46", {})
+    if p46.get("locatorState") != "EXACT_LOCATOR_VERIFIED":
+        problems.append("Wittenberg Latin 1521 original PDF locator must stay verified")
+    if p46.get("url") != "https://epub.ub.uni-muenchen.de/14521/":
+        problems.append("Wittenberg Latin 1521 LMU item permalink changed")
+    if "LOCATOR_HOLD" in p46.get("holds", []):
+        problems.append("Wittenberg Latin 1521 checked leaf falsely still catalog-only")
+    if not {"RIGHTS_HOLD", "PUBLICATION_HOLD", "ARCHIVE_HOLD"} <= set(p46.get("holds", [])):
+        problems.append("Wittenberg Latin 1521 unresolved photo rights or attribution hold removed")
+    latin_pdf = "https://epub.ub.uni-muenchen.de/14521/1/4Luth.209_7.pdf"
+    latin_sha = "2b7bd600f28d1805a46d2d3b577c6f01dbbd2b21a7e70caa8ead518c037edb4f"
+    latin_note = p46.get("verificationNote", "")
+    if any(token not in latin_note for token in
+           (latin_pdf, latin_sha, "2451627", "TEMP_CLEANED=True", "not oral stenography")):
+        problems.append("Wittenberg Latin 1521 checked PDF identity/interpretation receipt missing")
+    if any(token not in wrede_section for token in
+           (latin_pdf, latin_sha, "2451627", "TEMP_CLEANED=True", "PDF 2")):
+        problems.append("Wittenberg Latin 1521 visual receipt missing from dossier 12")
+    if "REF-P46" not in claim_rows.get("C85", "") or "REF-P46" not in claim_rows.get("C86", ""):
+        problems.append("Latin 1521 print disconnected from comparative claims C85-C86")
     for file in HERE.glob("*.md"):
         text = file.read_text(encoding="utf-8")
         for match in MD_LINK_RE.finditer(text):
