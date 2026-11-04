@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "scope": "Research/reformation only",
+  "date": "2026-11-04",
+  "purpose": "Source acquisition and offline reading handoff; no copies assumed uploaded",
+  "policy": "data/repository-evidence-policy-v2.json",
+  "noExternalPublication": true,
+  "fileBytesInGit": 0,
+  "sourceCount": 4,
+  "sourceRecords": [
+    {
+      "id": "REF-P09-PRINT",
+      "title": "Zwingli, Verwenung der disputatz zü Zürch with 67 Articles",
+      "date": "1523",
+      "institution": "Emory University Pitts Theology Library",
+      "shelfmark": "1523 ZWIN A",
+      "catalog": "https://digital.pitts.emory.edu/s/digital-collections/item/14023",
+      "downloadAccess": "Download item provides first scanned JPG (P001) while full sequence is accessible via IIIF",
+      "iiifManifest": "https://digital.pitts.emory.edu/iiif/3/14023/manifest",
+      "language": "German",
+      "rights": "NO COPYRIGHT - UNITED STATES (Pitts library)",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "publicationState": "REFERENCE",
+      "sizeNote": "16 unnumbered pages; do not infer byte size",
+      "sha256": null,
+      "acquisitionState": "NOT_DOWNLOADED",
+      "intendedNextStep": "Review all 16 leaves; distinguish report and included 67 Articles; compute SHA256 of acquired files"
+    },
+    {
+      "id": "REF-P09-EXPLANATION",
+      "title": "Zwingli, Ußlegen und gründ der schlußreden oder Artickle[n]",
+      "date": "1523",
+      "institution": "Zentralbibliothek Zürich",
+      "shelfmark": "III N 105",
+      "catalog": "https://www.e-rara.ch/zuz/content/titleinfo/867320",
+      "downloadAccess": "Download PDF displayed at institution page",
+      "iiifManifest": "https://www.e-rara.ch/i3f/v20/867320/manifest",
+      "language": "German",
+      "rights": "Public Domain Mark (ZB Zürich e-rara)",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "publicationState": "REFERENCE",
+      "sizeNote": "254 leaves; PDF 130.39 MB as reported by institution",
+      "sha256": null,
+      "acquisitionState": "NOT_DOWNLOADED",
+      "intendedNextStep": "Keep separate from short 67-article print. Inspect opening preface and item chronology, then cross-refer conclusions"
+    },
+    {
+      "id": "REF-P15-PRINT",
+      "title": "Luther, Von den Jüden vnd iren Lügen, Wittenberg: Hans Lufft",
+      "date": "1543",
+      "institution": "Universitätsbibliothek Basel",
+      "shelfmark": "UBH FN XI 19:2; VD16 L 7153",
+      "catalog": "https://www.e-rara.ch/bau_1/content/titleinfo/30171079",
+      "downloadAccess": "https://www.e-rara.ch/bau_1/download/ftpack/plain/30171079",
+      "iiifManifest": "https://www.e-rara.ch/i3f/v20/30171079/manifest",
+      "language": "German",
+      "rights": "Public Domain Mark (UB Basel e-rara)",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "publicationState": "REFERENCE",
+      "sizeNote": "143 leaves; PDF 63.73 MB; OCR 392.15 kB (institution display)",
+      "sha256": null,
+      "acquisitionState": "DOWNLOAD_ATTEMPT_FAILED",
+      "intendedNextStep": "Acquire OCR and PDF only through archive-approved link; hash received bytes; align relevant leaves with WA 53:536–542; retain original spelling"
+    },
+    {
+      "id": "REF-P01",
+      "title": "Luther, 95 Theses Oxford Taylor transcription and new 2016 facsimile",
+      "date": "1517 (modern digital edition 2020)",
+      "institution": "Taylor Institution Library, University of Oxford",
+      "shelfmark": "Taylor Editions 95 Theses",
+      "catalog": "https://editions.mml.ox.ac.uk/editions/luther-95-theses/",
+      "downloadAccess": "XML/TEI available at edition page (follow rights for each component)",
+      "iiifManifest": null,
+      "language": "Latin",
+      "rights": "TEI/XML CC BY-SA 4.0; modern facsimile images CC BY-NC-ND 4.0",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "publicationState": "REFERENCE",
+      "sizeNote": null,
+      "sha256": null,
+      "acquisitionState": "LINKS_VERIFIED_NO_DOWNLOAD",
+      "intendedNextStep": "Acquire XML legally with attribution; visually collate with 1517 Nuremberg witness, not Oxford 2016 reprompted print"
+    }
+  ],
+  "requirements": {
+    "onDownload": [
+      "Verify license on specific institutional object",
+      "Record final download URL and timestamp",
+      "Record actual bytes and SHA-256 for each file",
+      "Compare original print and OCR; do not infer fidelity from OCR availability",
+      "Keep bulky scans out of repository; include only bibliographic manifest and validated citations"
+    ],
+    "onFailure": [
+      "Preserve failed state, never invent checksum or file name",
+      "Never assert FULL_OBJECT_VERIFIED without obtained object"
+    ]
+  }
+}
