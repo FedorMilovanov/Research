@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 32,
+  "sourceCount": 39,
   "sources": [
     {
       "id": "REF-P01",
@@ -579,6 +579,135 @@
       ],
       "url": "https://www.e-rara.ch/zuz/content/titleinfo/867320",
       "verificationNote": "Zentralbibliothek Zürich III N 105, VD16 Z821, 254 leaves, DOI 10.3931/e-rara-2782, Public Domain Mark; not identical to short printed 67 Articles; no full scan collation",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P21",
+      "documentYear": 1536,
+      "title": "Geneva General Council adoption of Reformation, AEG RC29 fols 112-112v",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://archives-etat-ge.ch/page_de_base/5-la-reforme/",
+      "verificationNote": "Archive transcription: 21 May 1536 Council vote and 1535 cessation of mass. Text consulted via AEG exhibition; original manuscript image not collated.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P22",
+      "documentYear": 1541,
+      "title": "Geneva Ecclesiastical Ordinances, AEG Cp Past R1 p1 / PH1384",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://archives-etat-ge.ch/page_de_base/18-sources/",
+      "verificationNote": "AEG manuscript/exhibition labels 20 Nov 1541 while education subsite says 30 Nov. Evidence conflict requires R.C. 1541 council manuscript; no resolved date.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P23",
+      "documentYear": 1535,
+      "title": "Geneva Saint-Pierre church furnishings inventory 17 August 1535, AEG PH1135 fols1–3v",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://archives-etat-ge.ch/page_de_base/4-exorciser-lidolatrie-conversion-religieuse-par-liconoclasme/",
+      "verificationNote": "AEG partial transcription catalogues church property and losses, not reliable basis to assert each perpetrator or personal assault.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P24",
+      "documentYear": 1527,
+      "title": "Schleitheim Brotherly Union articles, German transcribed later print (~1550)",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.museum-schleitheim.ch/taeuferbekenntnis_1.htm",
+      "verificationNote": "Museum documents first Worms Schöffer print 1527/latest 1529, two BSB copies; hosted transcription represents later edition. First three articles inspected; seven listed. Need original-print witness collation.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P25",
+      "documentYear": 1560,
+      "title": "Scottish Confession of Faith Ratification Act 1560 c1 (original Scots spelling)",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.legislation.gov.uk/aosp/1560/1",
+      "verificationNote": "Official UK legislation portal carries original Scots wording of ratification act; does not by itself resolve absence of Crown ratification in 1560; consult RPS editorial intro.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P25-RPS",
+      "documentYear": 1560,
+      "title": "Records of the Parliaments of Scotland entry A1560/8/3",
+      "evidenceClass": "A1",
+      "accessState": "LINK_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.rps.ac.uk/search.php?action=print&filename=maryi_ms&id=9393&type=ms",
+      "verificationNote": "RPS academic digital edition direct opening returned HTTP 503 in current pass; search snippets established A1560/8/3 and RPS intro warns 1560 parliament was not crown-ratified.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P26",
+      "documentYear": 1571,
+      "title": "Church of England Thirty-nine Articles, 1571 English print, Folger catalog",
+      "evidenceClass": "A2",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://catalog.folger.edu/record/394459",
+      "verificationNote": "Folger lists London 1571 Richard Jugge and John Cawood, 25+[3] pages, title says convocation 1562 old style; warns vendor-provided metadata can contain errors. EEBO source not accessed",
       "checkedAt": "2026-11-04"
     }
   ]
