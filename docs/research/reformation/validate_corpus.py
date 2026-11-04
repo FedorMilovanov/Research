@@ -274,6 +274,7 @@ def validate() -> tuple[list[str], dict[str, int]]:
         "REF-P44": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
         "REF-P45": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
         "REF-P46": ("PARTIAL_OBJECT", "RIGHTS_UNKNOWN"),
+        "REF-P47": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
         "REF-S15": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
         "REF-S16": ("PARTIAL_OBJECT", "RIGHTS_UNKNOWN"),
     }
@@ -291,12 +292,14 @@ def validate() -> tuple[list[str], dict[str, int]]:
         "C79": ("REF-P40", "A1r", "B4"),
         "C84": ("REF-P43", "GHDI"),
         "C85": ("REF-P44", "REF-P46", "REF-S15", "1521", "S.556", "NOT_INDEPENDENT"),
-        "C86": ("REF-P44", "REF-P46", "REF-P39", "REF-P45"),
+        "C86": ("REF-P44", "REF-P46", "REF-P39", "REF-P45", "REF-P47"),
         "C87": ("REF-P39", "REF-P44", "REF-S15"),
         "C88": ("REF-S15", "F add", "Q add", "S.570", "S.582", "NOT_INDEPENDENT"),
         "C89": ("REF-P45", "Neyn"),
         "C90": ("REF-S15", "S.583"),
         "C91": ("REF-S15", "REF-S16", "REF-S14", "S.556"),
+        "C92": ("REF-P47", "REF-S15", "nit anderst", "19 апреля", "NOT_STENOGRAPHY"),
+        "C93": ("REF-P47", "Lucifer", "ZV23319", "не"),
     }.items():
         row = claim_rows.get(id_, "")
         if any(term not in row for term in substrings):
@@ -395,6 +398,42 @@ def validate() -> tuple[list[str], dict[str, int]]:
         problems.append("Wittenberg Latin 1521 visual receipt missing from dossier 12")
     if "REF-P46" not in claim_rows.get("C85", "") or "REF-P46" not in claim_rows.get("C86", ""):
         problems.append("Latin 1521 print disconnected from comparative claims C85-C86")
+    # Augsburg VD16 A3024 is a genuine photographed early PRINT, but not
+    # Peutinger's original 19 April letter or an independent verbatim speech.
+    p47 = corpus.get("REF-P47", {})
+    p47_note = str(p47.get("verificationNote", ""))
+    p47_pdf = "https://www.dilibri.de/stbwo/download/pdf/2040713"
+    p47_sha = "4fd0fb21456c815bb6d701307bdfe97eeae9080f27aea7b64a1072659a48fe79"
+    if p47.get("url") != "https://www.dilibri.de/urn/urn:nbn:de:0128-5-2820":
+        problems.append("Augsburg 1521 P47 library locator changed")
+    if p47.get("locatorState") != "EXACT_LOCATOR_VERIFIED":
+        problems.append("Augsburg 1521 P47 original PDF locator no longer verified")
+    if not {"ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"} <= set(p47.get("holds", [])):
+        problems.append("Augsburg 1521 P47 letter/print rights hold removed")
+    if any(token not in p47_note for token in
+           (p47_pdf, p47_sha, "3253175", "ALL 16", "TEMP_CLEANED=True",
+            "original manuscript/letter was NOT photographed",
+            "NOT a stenographic transcript", "Pope pamphlet",
+            "NOT on-site iconography", "CC BY-NC-SA 3.0")):
+        problems.append("Augsburg 1521 P47 visual receipt, independence or rights lost")
+    if any(token not in wrede_section for token in
+           (p47_pdf, p47_sha, "3253175", "PDF", "кадре 10",
+            "самого автора сообщения", "не** сказанная Лютером",
+            "Пейтингера", "VD16 ZV23319")):
+        problems.append("Augsburg P47 primary-print/curatorial limits absent from dossier")
+    if any(token not in claim_rows.get("C92", "") for token in
+           ("REF-P47", "Got kum mir zehülff", "nit anderst",
+            "PRINTED_REPORT_NOT_AUTOGRAPH_NOT_STENOGRAPHY")):
+        problems.append("C92 P47 narrative voice misattribution or source lost")
+    if any(token not in claim_rows.get("C93", "") for token in
+           ("REF-P47", "ZV23319", "ORIGINAL_TITLE_IMAGE_VISUALLY_CHECKED",
+            "RECYCLED_PROPAGANDA_IMAGE_NOT_EVENT_RECORD")):
+        problems.append("C93 P47 recycled woodcut context lost")
+    if "| REF-P47 |" not in (HERE / "02_open_primary_sources_and_reading.md").read_text(
+            encoding="utf-8"):
+        problems.append("Augsburg P47 missing from primary-source reading list")
+    # Enforce source interpretation without inventing independent eyewitnesses:
+    # a byte receipt cannot prove the letter autograph or oral delivery.
     for file in HERE.glob("*.md"):
         text = file.read_text(encoding="utf-8")
         for match in MD_LINK_RE.finditer(text):
