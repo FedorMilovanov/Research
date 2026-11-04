@@ -160,3 +160,7 @@
   (вердикт по объёму, `EVIDENCE_HOLD`, minority). Полный текст — Drive `10.5`, в Git только локаторы и анализ;
   рядом EN-оригинал, собранный со страницы (§14), и программный аудит полноты перевода — тело доклада
   полное, потери названы (§15).
+
+### Research audit / navigation addition 2026-11-04
+
+- [20_SCHOLARLY_SERIES_AUDIT_AND_RESEARCH_GAPS_2026-11-04.md](20_SCHOLARLY_SERIES_AUDIT_AND_RESEARCH_GAPS_2026-11-04.md) - Искупление — аудит серии, научные дуги и границы доказательств; RESEARCH_ONLY / EVIDENCE_HOLD / LOCATOR_HOLD / PUBLICATION_HOLD.
