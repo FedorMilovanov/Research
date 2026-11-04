@@ -290,19 +290,20 @@ def validate() -> tuple[list[str], dict[str, int]]:
         "C77": ("REF-P40", "REF-S13", "26"),
         "C79": ("REF-P40", "A1r", "B4"),
         "C84": ("REF-P43", "GHDI"),
-        "C85": ("REF-P44", "REF-P46", "1521", "Blatt 5v"),
+        "C85": ("REF-P44", "REF-P46", "REF-S15", "1521", "S.556", "NOT_INDEPENDENT"),
         "C86": ("REF-P44", "REF-P46", "REF-P39", "REF-P45"),
         "C87": ("REF-P39", "REF-P44", "REF-S15"),
-        "C88": ("REF-S15", "F add", "S.581"),
+        "C88": ("REF-S15", "F add", "Q add", "S.570", "S.582", "NOT_INDEPENDENT"),
         "C89": ("REF-P45", "Neyn"),
         "C90": ("REF-S15", "S.583"),
-        "C91": ("REF-S16", "REF-S14", "— нет"),
+        "C91": ("REF-S15", "REF-S16", "REF-S14", "S.556"),
     }.items():
         row = claim_rows.get(id_, "")
         if any(term not in row for term in substrings):
             problems.append(f"{id_}: incomplete Worms first-print legal chronology or citation")
-    # Seven 1800px JPEG derivatives were viewed and discarded; this offline
-    # check covers receipt integrity only, NOT re-verification of remote bytes.
+    # Sixteen 1800px JPEG derivatives were viewed and discarded in two
+    # source-critical acquisition batches. This read-only check validates
+    # recorded bytes and provenance, NOT live remote bytes or publication rights.
     wrede = (HERE / "12_worms_1521_speech_edict_source_dossier.md").read_text(
         encoding="utf-8")
     if "### Текстологическая колляция" not in wrede:
@@ -314,12 +315,17 @@ def validate() -> tuple[list[str], dict[str, int]]:
     receipts = re.findall(
         r"^\|\s*(\d{3})\s*\|\s*(\d{3})\s*\|\s*(\d+)\s*\|\s*\x60([a-f0-9]{64})\x60\s*\|$",
         wrede_section, re.MULTILINE)
+    expected_pages = list(range(578, 585)) + [554, 555, 556] + list(range(569, 575))
     if [(p, scan) for p, scan, _, _ in receipts] != [
-            (str(p), str(p+16)) for p in range(578, 585)]:
-        problems.append("Wrede 1896 page/IIIF receipt sequence 578-584/594-600 incomplete")
-    if len({sha for _, _, _, sha in receipts}) != 7:
+            (str(p), str(p+16)) for p in expected_pages]:
+        problems.append("Wrede 1896 exact 16-page IIIF acquisition receipts incomplete")
+    if len({sha for _, _, _, sha in receipts}) != 16:
         problems.append("Wrede 1896 SHA receipts missing, repeated or malformed")
-    lengths = [556830, 561385, 540789, 572148, 600618, 627903, 526127]
+    lengths = [
+        556830, 561385, 540789, 572148, 600618, 627903, 526127,
+        532242, 517396, 578474, 568107, 520336, 588611,
+        641510, 569756, 577411,
+    ]
     if [int(size) for _, _, size, _ in receipts] != lengths:
         problems.append("Wrede 1896 downloaded JPEG byte counts changed")
     expected_sha = [
@@ -330,15 +336,43 @@ def validate() -> tuple[list[str], dict[str, int]]:
         "06f2453a6b055ef0d8900d98910338cf50dd8cfe43d04f597129fbc0d1f94c72",
         "f762fb6261c45a2031cda9b602ceb13ce0c329b1a7ed0587d05a6487be78e383",
         "7744574be57fb5de638612553662066659f94bf6ab1f23758f7b30168a091788",
+        "56c3e7c8456f746b7641995d9f85a67cd910711c8688a98a1a64dba8ffd03dbb",
+        "7c66c9a38b95078072fcd03185865cb68b94a73a07c165437e2a714f89181def",
+        "8135bce780447c78bc63c5d6b917260b94dbb78050da597e9c85a693a6f54da4",
+        "6211b4ef0c91287b2c616897cd2f158909a692b8c65dedb2edf123435301ce9e",
+        "9139d864063b8b21f37fb74c6e7c0e82e59f1ae631c22961c8c81f01c5c1cd97",
+        "af65ab1af979d3186f8d8352c98494ff06781602c3c0a8706f0c99df6ffed9a6",
+        "6ce0ac28cc69f1920230d62efd0c30fae3d4568fc7c9aadd28ef7bc846b57fd7",
+        "6f77a837fdb776ca246b52a942a44be3031fdc7bd0ad4f13a14dbd35a7f231e7",
+        "d17d21c0e0c6752092c6d4c8750f04e946360ddd2f16f1ba753fe46340db2725",
     ]
     if [sha for _, _, _, sha in receipts] != expected_sha:
         problems.append("Wrede 1896 SHA receipts changed without verified re-acquisition")
-    if "F add. Ich kan nicht anders, hie stehe ich" not in wrede_section:
-        problems.append("Wrede p582 variant apparatus has been removed")
+    for proof in (
+            "F add. Ich kan nicht anders, hie stehe ich",
+            "Q add. Ich kan nicht anderst, hie stehe ich",
+            "F ist jedenfalls ein Nachdruck von U",
+            "не два независимых источника",
+            "НЕ два независимых подтверждения",
+            "S.556", "S.570", "S.571", "S.573",
+            "F/Fa/Q", "NoC-NC/1.0"):
+        if proof not in wrede_section:
+            problems.append(f"Wrede source stemma/evidence independence guard missing: {proof}")
     if "NoC-NC/1.0" not in wrede_section:
         problems.append("Wrede BSB digital photograph usage restriction removed")
     if "TEMP_CLEANED=True" not in wrede_section:
         problems.append("Wrede temporary photos cleanup not attested")
+    if "TWO_INDEPENDENT_1521_PRINT_PAGES_VISUALLY_CHECKED" in claim_rows.get("C85", ""):
+        problems.append("Worms C85 falsely counts F/Q as two independent oral sources")
+    if "NOT_INDEPENDENT" not in claim_rows.get("C85", ""):
+        problems.append("Worms C85 missing print-dependence qualification")
+    if "NOT_INDEPENDENT" not in claim_rows.get("C88", ""):
+        problems.append("Worms C88 missing critical F/Q stemma verdict")
+    s15_note = corpus.get("REF-S15", {}).get("verificationNote", "")
+    for proof in ("no.79", "pp554-556", "pp569-574", "F Nachdruck von U",
+                  "NOT two independent oral witnesses", "16 files", "TEMP_CLEANED=True"):
+        if proof not in s15_note:
+            problems.append(f"Wrede source registry has lost verified original-print context: {proof}")
     # LMU VD16 L3650 original three-page PDF was actually visually inspected;
     # receipts pin the downloaded PDF bytes, not a live network reacquisition.
     p46 = corpus.get("REF-P46", {})
