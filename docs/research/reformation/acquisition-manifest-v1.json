@@ -267,7 +267,20 @@
         "actualBytes": 8239895,
         "sha256": "898107c6e63848aca753e8c0989520ffa3c008ca37bf33f7835bc6cfbbb49239",
         "storageClass": "PRIVATE_RESEARCH_ONLY",
-        "verifyResult": "Saved on authorized Windows host 2026-11-04, %PDF-, digest matches earlier separate temporary archival PDF download; no public upload and no git binary."
+        "verifyResult": "Saved on authorized Windows host 2026-11-04, %PDF-, digest matches earlier separate temporary archival PDF download; no public upload and no git binary.",
+        "visuallyCheckedPages": [
+          5,
+          6,
+          7,
+          8,
+          14,
+          15,
+          16,
+          28,
+          29,
+          30
+        ],
+        "fullPageCollationCompleted": false
       }
     },
     {
