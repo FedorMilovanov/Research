@@ -296,7 +296,7 @@ def validate() -> tuple[list[str], dict[str, int]]:
         "C88": ("REF-S15", "F add", "S.581"),
         "C89": ("REF-P45", "Neyn"),
         "C90": ("REF-S15", "S.583"),
-        "C91": ("REF-S16", "REF-S14", "не доказано"),
+        "C91": ("REF-S16", "REF-S14", "— нет"),
     }.items():
         row = claim_rows.get(id_, "")
         if any(term not in row for term in substrings):
@@ -322,6 +322,17 @@ def validate() -> tuple[list[str], dict[str, int]]:
     lengths = [556830, 561385, 540789, 572148, 600618, 627903, 526127]
     if [int(size) for _, _, size, _ in receipts] != lengths:
         problems.append("Wrede 1896 downloaded JPEG byte counts changed")
+    expected_sha = [
+        "fc65a7e41da0daba033dd151c611132ecfa0e335477e22e065234f2eca7202ca",
+        "9f2ce265b268174454df83a65647d6863c6f1e5332b5a47339f9aaef17bad9c0",
+        "c85ba0f11b3de3c56091032c057f649ed4fe3ebf18ce273c47a1b46546d04316",
+        "c875be511e67cea417d2f16ac5b595fd7f041e38fef5cfdd3190e8086072f615",
+        "06f2453a6b055ef0d8900d98910338cf50dd8cfe43d04f597129fbc0d1f94c72",
+        "f762fb6261c45a2031cda9b602ceb13ce0c329b1a7ed0587d05a6487be78e383",
+        "7744574be57fb5de638612553662066659f94bf6ab1f23758f7b30168a091788",
+    ]
+    if [sha for _, _, _, sha in receipts] != expected_sha:
+        problems.append("Wrede 1896 SHA receipts changed without verified re-acquisition")
     if "F add. Ich kan nicht anders, hie stehe ich" not in wrede_section:
         problems.append("Wrede p582 variant apparatus has been removed")
     if "NoC-NC/1.0" not in wrede_section:
