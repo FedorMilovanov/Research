@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 64,
+  "sourceCount": 65,
   "sources": [
     {
       "id": "REF-P01",
@@ -1167,6 +1167,24 @@
       ],
       "url": "https://archives-etat-ge.ch/page_de_base/5-1541-1556-retour-de-calvin/",
       "verificationNote": "AEG institutional exhibit Calvin et l'éducation includes exact archival P.H.475 and selected Latin excerpt of 1429 donation, also reports 1428 Council decision and 1502 statutes. Demonstrates pre-Calvin school exists, not mass literacy or equal enrollment. Original folio not scanned/fully collated by us.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P38",
+      "documentYear": 1542,
+      "title": "Registres du Consistoire de Genève au temps de Calvin, volume I (1542–1544), AEG Consistoire R.1; Lambert and Watt critical edition, Droz 1996",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://ge.ch/arvaegconsult/ws/consaeg/public/fiche/imageHeader?key=97289",
+      "verificationNote": "AEG Adhémar catalog Consistoire R1 covers 16 Feb 1542–3 Jul 1544 (237 original images noted), with licensed online scholarly Droz 1996 edition PDF 552 pages, ©2023 reproduction limits. Directly viewed modern printed page 1 (PDF zero-based page 42, screenshot) and note 2: 16 Feb 1542 is TENTH session; first NINE session minutes are lost. Editor's footnote cites R.C. 35 f442v (23 Dec 1541) and f485/489/494v (Feb 1542), and f499v (14 Feb 1542) for ongoing civic involvement. This is critical transcription and scholarly annotation, NOT visual collation of 1542 manuscript folio; no mass reproduction rights or full-object claim.",
       "checkedAt": "2026-11-04"
     }
   ]
