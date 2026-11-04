@@ -1093,7 +1093,7 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://www.e-rara.ch/zuz/content/titleinfo/215807",
-      "verificationNote": "Zentralbibliothek Zürich AW327, [14] leaves, VD16 L4693, printed Zürich by Christoph Froschauer 1525, PDF approx7.86MB and IIIF manifest 215807. This is a reprint, not automatically initial Wittenberg edition. Catalog directly inspected, individual leaves/text not collated.",
+      "verificationNote": "Zentralbibliothek Zürich AW327, [14] leaves, VD16 L4693, printed Zürich by Christoph Froschauer 1525, PDF approx7.86MB and IIIF manifest 215807. This is a reprint, not automatically initial Wittenberg edition. Catalog directly inspected, individual leaves/text not collated. Transient official archive PDF download independently succeeded via authorized Windows PowerShell 2026-11-04: %PDF- header, 8,239,895 bytes, SHA256 898107c6e63848aca753e8c0989520ffa3c008ca37bf33f7835bc6cfbbb49239. Temp file deleted. PDF page images/text still NOT visually collated; do not mark FULL_OBJECT_VERIFIED or quote-safe.",
       "checkedAt": "2026-11-04"
     },
     {
