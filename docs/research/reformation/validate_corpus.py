@@ -132,6 +132,100 @@ def validate() -> tuple[list[str], dict[str, int]]:
         if state == "VERIFIED_TEMP_DISCARDED":
             if not isinstance(record.get("tempDisposition"), str) or "TEMP_CLEANED=True" not in record["tempDisposition"]:
                 problems.append(f"acquisition {name}: discarded download has no cleanup proof")
+    # BSB 1527: verify a witnessed digital acquisition, not a fictitious
+    # full critical collation. The inventory holds SHA digests of 1200px
+    # generated IIIF JPEGs, NOT masters, manuscripts, or printed words.
+    bsb = json_read(HERE / "bsb-1527-iiif-derivatives-v1.json")
+    objects = bsb.get("objects", [])
+    scans = bsb.get("scans", [])
+    targets = {
+        "bsb00027178": ("REF-P24-BSB1", 32, 32, 0),
+        "bsb00112324": ("REF-P24-BSB2", 34, 32, 2),
+    }
+    if bsb.get("schemaVersion") != 1:
+        problems.append("BSB image receipt schemaVersion != 1")
+    if len(objects) != 2 or {o.get("id") for o in objects} != set(targets):
+        problems.append("BSB object inventory must contain two specific witnesses")
+    if len(scans) != 66:
+        problems.append("BSB 1527 receipts not exactly 66 scanned images")
+    if not bsb.get("tempFilesDeletedAtManifestConstruction"):
+        problems.append("BSB verification did not confirm temporary cleanup")
+    for flag in (
+        "masterImagesDownloaded", "printerTextFullyTranscribed",
+        "allPrintedPagesWordByWordCollated", "originalPhotosCommittedToGit",
+    ):
+        if bsb.get(flag) is not False:
+            problems.append(f"BSB not-verified flag altered: {flag}")
+    for obj in objects:
+        name = obj.get("id")
+        if name not in targets:
+            continue
+        src, count, printed, extra = targets[name]
+        if (obj.get("sourceId"), obj.get("canvases"),
+            obj.get("printedPages"), obj.get("additionalTargets")) != (
+                src, count, printed, extra
+            ):
+            problems.append(f"BSB {name}: wrong metadata / printed page count")
+        if obj.get("manifestUrl") != (
+            f"https://api.digitale-sammlungen.de/iiif/presentation/v2/{name}/manifest"
+        ):
+            problems.append(f"BSB {name}: wrong manifest URL")
+        if not re.fullmatch(r"[a-f0-9]{64}", str(obj.get("manifestSha256"))):
+            problems.append(f"BSB {name}: malformed manifest SHA")
+        if not isinstance(obj.get("manifestBytes"), int) or obj["manifestBytes"] <= 0:
+            problems.append(f"BSB {name}: manifest length invalid")
+        rec = next((x for x in items if x.get("id") == src), {})
+        if (rec.get("sha256"), rec.get("actualBytes")) != (
+            obj.get("manifestSha256"), obj.get("manifestBytes")
+        ):
+            problems.append(f"BSB {name}: acquisition manifest SHA/bytes contradict IIIF receipt")
+        if rec.get("derivativeReceipts") != "bsb-1527-iiif-derivatives-v1.json":
+            problems.append(f"BSB {name}: missing derivative receipt link")
+        if rec.get("acquisitionState") != "VERIFIED_TEMP_DISCARDED":
+            problems.append(f"BSB {name}: acquisition status missing verified-discarded")
+        entry = corpus.get(src, {})
+        if entry.get("accessState") != "PARTIAL_OBJECT":
+            problems.append(f"BSB {src}: must remain PARTIAL_OBJECT without full collation")
+        if entry.get("locatorState") != "EXACT_LOCATOR_VERIFIED":
+            problems.append(f"BSB {src}: scan locators not verified")
+        if "ARCHIVE_HOLD" not in entry.get("holds", []):
+            problems.append(f"BSB {src}: missing full-text-collation ARCHIVE_HOLD")
+    seen_scans: set[tuple[str, int]] = set()
+    for row in scans:
+        obj = row.get("objectId")
+        page = row.get("scan")
+        key = (obj, page)
+        if obj not in targets or not isinstance(page, int):
+            problems.append(f"BSB bad image key: {key}")
+            continue
+        max_page = targets[obj][1]
+        if not (1 <= page <= max_page):
+            problems.append(f"BSB page outside object: {key}")
+        if key in seen_scans:
+            problems.append(f"BSB duplicate image: {key}")
+        seen_scans.add(key)
+        expected_kind = (
+            "color-calibration-target" if obj == "bsb00112324" and page == 33
+            else "resolution-calibration-target" if obj == "bsb00112324" and page == 34
+            else "printed-page"
+        )
+        if row.get("kind") != expected_kind:
+            problems.append(f"BSB {key}: wrong printed/calibration kind")
+        expected_url = (
+            f"https://api.digitale-sammlungen.de/iiif/image/v2/"
+            f"{obj}_{page:05d}/full/1200,/0/default.jpg"
+        )
+        if row.get("url") != expected_url:
+            problems.append(f"BSB {key}: wrong IIIF source URL")
+        if not re.fullmatch(r"[a-f0-9]{64}", str(row.get("sha256"))):
+            problems.append(f"BSB {key}: malformed derivative SHA")
+        if not isinstance(row.get("bytes"), int) or row.get("bytes") <= 0:
+            problems.append(f"BSB {key}: derivative byte count invalid")
+    for obj, (_, count, _, _) in targets.items():
+        if {n for name, n in seen_scans if name == obj} != set(range(1, count + 1)):
+            problems.append(f"BSB {obj}: missing image sequence members")
+    if sum(s.get("bytes", 0) for s in scans if isinstance(s.get("bytes"), int)) != 24526953:
+        problems.append("BSB 1527 verified byte total drifted without re-acquisition")
     claims = (HERE / "03_claim_verification_register.md").read_text(encoding="utf-8")
     ids = [int(m.group(1)[1:]) for m in CLAIM_RE.finditer(claims)]
     if ids != list(range(1, len(ids) + 1)):
@@ -181,6 +275,7 @@ def validate() -> tuple[list[str], dict[str, int]]:
         "claims": len(ids),
         "acquisitions": len(items),
         "markdownFiles": len(list(HERE.glob("*.md"))),
+        "bsbIIIFDerivatives": len(scans),
     }
 
 
