@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 57,
+  "sourceCount": 58,
   "sources": [
     {
       "id": "REF-P01",
@@ -1039,6 +1039,24 @@
       ],
       "url": "https://bibliotekanauki.pl/chapters/23352242.pdf",
       "verificationNote": "Restorer directly reports 2010 inventory 206 seals in six rows (p709 note2), physical 2016 intervention/renumbering 1-209 (p712-13), conclusively 209 in seven rows (p715), hypothetical 224 original design slots. PDF text examined, web screenshot failed 403; photos not visually collated.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-S09",
+      "documentYear": 2009,
+      "title": "Sascha O. Becker and Ludger Woessmann, Was Weber Wrong? A Human Capital Theory of Protestant Economic History, QJE 124(2):531–596",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.stir.ac.uk/research/hub/publication/828431",
+      "verificationNote": "University of Stirling repository bibliographic publication info and abstract checked; journal article DOI 10.1162/qjec.2009.124.2.531. Primary data are late-19th-century Prussian counties; 1871 census literacy; NOT a measured estimate of 16th-century Europe's literacy. University repository offers full article PDF; full econometric analysis and rights not independently assessed in this pass.",
       "checkedAt": "2026-11-04"
     }
   ]
