@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 39,
+  "sourceCount": 40,
   "sources": [
     {
       "id": "REF-P01",
@@ -596,7 +596,7 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://archives-etat-ge.ch/page_de_base/5-la-reforme/",
-      "verificationNote": "Archive transcription: 21 May 1536 Council vote and 1535 cessation of mass. Text consulted via AEG exhibition; original manuscript image not collated.",
+      "verificationNote": "AEG special standalone historical transcription gives 21 May 1536, R.C.29 f.112-113, Registres du Conseil Geneve XIII (1940) pp576-577; overview page labels fol112-112v, image alt caption erroneously says 26 May. Actual manuscript leaf pagination/photo not collated.",
       "checkedAt": "2026-11-04"
     },
     {
@@ -708,6 +708,24 @@
       ],
       "url": "https://catalog.folger.edu/record/394459",
       "verificationNote": "Folger lists London 1571 Richard Jugge and John Cawood, 25+[3] pages, title says convocation 1562 old style; warns vendor-provided metadata can contain errors. EEBO source not accessed",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P21-EDITION",
+      "documentYear": 1940,
+      "title": "Registres du Conseil de Genève, t. XIII (1534–1536), pp.576–577; archival critical printed edition",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://ge.ch/arvaegrefdoc/PDF/17889.pdf",
+      "verificationNote": "AEG original-edition PDF and metadata accessed; exact pp576-577 published transcription given by AEG. Corresponding page screenshot tool returned 404, so no claim of visual collation of those pages; early printed 1940 edition not manuscript.",
       "checkedAt": "2026-11-04"
     }
   ]
