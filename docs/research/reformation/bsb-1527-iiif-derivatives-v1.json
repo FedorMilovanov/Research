@@ -8,8 +8,8 @@
   "printerTextFullyTranscribed": false,
   "allPrintedPagesWordByWordCollated": false,
   "originalPhotosCommittedToGit": false,
-  "tempFilesDeletedAtManifestConstruction": false,
-  "notes": "Actual image bytes fetched from official BSB API to authorized Windows temporary folder with Pillow verify and SHA-256 for each delivered 1200-pixel derivative; digital page pair layout inspected by model vision. Do not mistake 1200px derivatives for master scans or claim word-for-word identity between exemplars. Temp cleanup must be verified separately before the manifest is finalized.",
+  "tempFilesDeletedAtManifestConstruction": true,
+  "notes": "Actual image bytes fetched from official BSB API to authorized Windows temporary folder with Pillow verify and SHA-256 for each delivered 1200-pixel derivative; digital page pair layout inspected by model vision. Do not mistake 1200px derivatives for master scans or claim word-for-word identity between exemplars. After the receipts were committed, 72 temporary files (66 JPEG derivatives, 2 contact sheets, 2 IIIF manifests, receipt JSON and downloader script) were deleted from the user's authorized Windows temp directory. Separate PowerShell cleanup reported TEMP_CLEANED=True. No originals or derivatives remain on user's machine.",
   "objects": [
     {
       "id": "bsb00027178",
