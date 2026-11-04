@@ -21,7 +21,7 @@ ROOT = HERE.parents[2]
 POLICY_PATH = ROOT / "data" / "repository-evidence-policy-v2.json"
 EXPECTED_ORIGINAL_GIT_BLOB = "4e34cfe0e21d6b1e3d62c7adc04a44e227679ba0"
 SOURCE_ID_RE = re.compile(r"^REF-[A-Z][A-Z0-9]*(?:-[A-Z0-9]+)*$")
-CLAIM_RE = re.compile(r"^\|\s*(C\d\d+)\s*\|", re.MULTILINE)
+CLAIM_RE = re.compile(r"^\|\s*(C\d{2,})\s*\|", re.MULTILINE)
 MD_LINK_RE = re.compile(r"\]\(([^)]+)\)")
 EXACT_REF_RE = re.compile(r"\bREF-(?:P|S|C)\d\d(?:-[A-Z0-9]+)*\b")
 REQUIRED_SOURCE = {
@@ -94,16 +94,44 @@ def validate() -> tuple[list[str], dict[str, int]]:
         problems.append("manifest no longer states zero binary file bytes in Git")
     for record in items:
         name = record.get("id")
-        if name not in corpus and not re.fullmatch(r"REF-P\d\d-[A-Z0-9]+", str(name)):
-            problems.append(f"acquisition entry {name} does not correspond to a source")
+        parent_id = record.get("parentSourceId")
+        if name not in corpus:
+            # An individual acquired edition can be a child of a registered
+            # umbrella work. The parent relation MUST be explicitly recorded.
+            if not (
+                parent_id in corpus
+                and isinstance(name, str)
+                and name.startswith(parent_id + "-")
+                and SOURCE_ID_RE.fullmatch(name)
+            ):
+                problems.append(
+                    f"acquisition entry {name} lacks an explicit valid parentSourceId"
+                )
+        elif parent_id is not None:
+            problems.append(
+                f"acquisition {name}: parentSourceId is redundant for a registered source"
+            )
         sha = record.get("sha256")
         state = record.get("acquisitionState", "")
+        permitted_states = {
+            "NOT_DOWNLOADED", "DOWNLOAD_ATTEMPT_FAILED",
+            "LINKS_VERIFIED_NO_DOWNLOAD", "VERIFIED_TEMP_DISCARDED",
+            "DOWNLOADED_VERIFIED",
+        }
+        if state not in permitted_states:
+            problems.append(f"acquisition {name}: unknown acquisitionState {state}")
         if sha is not None and not re.fullmatch(r"[a-f0-9]{64}", str(sha)):
             problems.append(f"acquisition {name} claims malformed SHA256")
-        if sha is None and state == "DOWNLOADED_VERIFIED":
-            problems.append(f"acquisition {name} claims verified download without hash")
-        if sha is not None and state in {"NOT_DOWNLOADED", "DOWNLOAD_ATTEMPT_FAILED"}:
-            problems.append(f"acquisition {name}: SHA present despite no acquired bytes")
+        if state in {"VERIFIED_TEMP_DISCARDED", "DOWNLOADED_VERIFIED"}:
+            if sha is None:
+                problems.append(f"acquisition {name}: verified bytes without hash")
+            if not isinstance(record.get("actualBytes"), int) or record["actualBytes"] <= 0:
+                problems.append(f"acquisition {name}: verified bytes without positive size")
+        elif sha is not None:
+            problems.append(f"acquisition {name}: hash for an unverified download")
+        if state == "VERIFIED_TEMP_DISCARDED":
+            if not isinstance(record.get("tempDisposition"), str) or "TEMP_CLEANED=True" not in record["tempDisposition"]:
+                problems.append(f"acquisition {name}: discarded download has no cleanup proof")
     claims = (HERE / "03_claim_verification_register.md").read_text(encoding="utf-8")
     ids = [int(m.group(1)[1:]) for m in CLAIM_RE.finditer(claims)]
     if ids != list(range(1, len(ids) + 1)):
