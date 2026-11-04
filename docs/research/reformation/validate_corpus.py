@@ -271,6 +271,11 @@ def validate() -> tuple[list[str], dict[str, int]]:
         "REF-P43": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
         "REF-S13": ("PARTIAL_OBJECT", "PUBLICATION_ELIGIBLE"),
         "REF-S14": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
+        "REF-P44": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
+        "REF-P45": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
+        "REF-P46": ("CATALOG_ONLY", "RIGHTS_UNKNOWN"),
+        "REF-S15": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
+        "REF-S16": ("PARTIAL_OBJECT", "RIGHTS_UNKNOWN"),
     }
     for ref, (access, rights) in worms.items():
         w = corpus.get(ref, {})
@@ -285,10 +290,59 @@ def validate() -> tuple[list[str], dict[str, int]]:
         "C77": ("REF-P40", "REF-S13", "26"),
         "C79": ("REF-P40", "A1r", "B4"),
         "C84": ("REF-P43", "GHDI"),
+        "C85": ("REF-P44", "1521", "Blatt 5v"),
+        "C86": ("REF-P44", "REF-P39", "REF-P45"),
+        "C87": ("REF-P39", "REF-P44", "REF-S15"),
+        "C88": ("REF-S15", "F add", "S.581"),
+        "C89": ("REF-P45", "Neyn"),
+        "C90": ("REF-S15", "S.583"),
+        "C91": ("REF-S16", "REF-S14", "— нет"),
     }.items():
         row = claim_rows.get(id_, "")
         if any(term not in row for term in substrings):
             problems.append(f"{id_}: incomplete Worms first-print legal chronology or citation")
+    # Seven 1800px JPEG derivatives were viewed and discarded; this offline
+    # check covers receipt integrity only, NOT re-verification of remote bytes.
+    wrede = (HERE / "12_worms_1521_speech_edict_source_dossier.md").read_text(
+        encoding="utf-8")
+    if "### Текстологическая колляция" not in wrede:
+        problems.append("Wrede 1896 visual collation section missing")
+        wrede_section = ""
+    else:
+        wrede_section = wrede.split("### Текстологическая колляция", 1)[1].split(
+            "### P40.", 1)[0]
+    receipts = re.findall(
+        r"^\|\s*(\d{3})\s*\|\s*(\d{3})\s*\|\s*(\d+)\s*\|\s*\x60([a-f0-9]{64})\x60\s*\|$",
+        wrede_section, re.MULTILINE)
+    if [(p, scan) for p, scan, _, _ in receipts] != [
+            (str(p), str(p+16)) for p in range(578, 585)]:
+        problems.append("Wrede 1896 page/IIIF receipt sequence 578-584/594-600 incomplete")
+    if len({sha for _, _, _, sha in receipts}) != 7:
+        problems.append("Wrede 1896 SHA receipts missing, repeated or malformed")
+    lengths = [556830, 561385, 540789, 572148, 600618, 627903, 526127]
+    if [int(size) for _, _, size, _ in receipts] != lengths:
+        problems.append("Wrede 1896 downloaded JPEG byte counts changed")
+    expected_sha = [
+        "fc65a7e41da0daba033dd151c611132ecfa0e335477e22e065234f2eca7202ca",
+        "9f2ce265b268174454df83a65647d6863c6f1e5332b5a47339f9aaef17bad9c0",
+        "c85ba0f11b3de3c56091032c057f649ed4fe3ebf18ce273c47a1b46546d04316",
+        "c875be511e67cea417d2f16ac5b595fd7f041e38fef5cfdd3190e8086072f615",
+        "06f2453a6b055ef0d8900d98910338cf50dd8cfe43d04f597129fbc0d1f94c72",
+        "f762fb6261c45a2031cda9b602ceb13ce0c329b1a7ed0587d05a6487be78e383",
+        "7744574be57fb5de638612553662066659f94bf6ab1f23758f7b30168a091788",
+    ]
+    if [sha for _, _, _, sha in receipts] != expected_sha:
+        problems.append("Wrede 1896 SHA receipts changed without verified re-acquisition")
+    if "F add. Ich kan nicht anders, hie stehe ich" not in wrede_section:
+        problems.append("Wrede p582 variant apparatus has been removed")
+    if "NoC-NC/1.0" not in wrede_section:
+        problems.append("Wrede BSB digital photograph usage restriction removed")
+    if "TEMP_CLEANED=True" not in wrede_section:
+        problems.append("Wrede temporary photos cleanup not attested")
+    if corpus.get("REF-P46", {}).get("locatorState") != "COARSE_LOCATOR_ONLY":
+        problems.append("Wittenberg Latin 1521 photograph falsely marked fully checked")
+    if "LOCATOR_HOLD" not in corpus.get("REF-P46", {}).get("holds", []):
+        problems.append("Wittenberg Latin 1521 locator hold lost")
     for file in HERE.glob("*.md"):
         text = file.read_text(encoding="utf-8")
         for match in MD_LINK_RE.finditer(text):
