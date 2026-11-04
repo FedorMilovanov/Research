@@ -176,6 +176,15 @@ def make_clone(src, dest, *, depth=None, want_main=True):
     if want_main and not git(dest, "rev-parse", "--verify", "-q", "origin/main", check=False):
         git(dest, "fetch", "-q", "origin", "+refs/heads/main:refs/remotes/origin/main", check=False)
     if want_main and not git(dest, "rev-parse", "--verify", "-q", "origin/main", check=False):
+        # PR merge checkout бывает detached HEAD без refs/heads/main. Источник хранит
+        # новый main только в refs/remotes/origin/main; локальный file://clone
+        # не переносит такой ref автоматически, а его объект может быть НЕ предком HEAD
+        # (если main продвинулся между созданием test-merge и запуском пробы).
+        # Догружаем именно объявленную ссылку с объектами через Git, не рисуем ref
+        # update-ref'ом до подтверждения его существования и не ослабляем контроль E3.
+        git(dest, "fetch", "-q", "origin",
+            "+refs/remotes/origin/main:refs/remotes/origin/main", check=False)
+    if want_main and not git(dest, "rev-parse", "--verify", "-q", "origin/main", check=False):
         # источник может знать main только как remote-tracking (клон по HEAD, как в песочнице этого
         # круга, или чистый клон, где local `main` не создаётся); тогда указатель переносится явно —
         # объект в клоне с полной историей уже есть, а отказать здесь означало бы назвать неполной
