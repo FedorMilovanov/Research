@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 40,
+  "sourceCount": 44,
   "sources": [
     {
       "id": "REF-P01",
@@ -652,7 +652,7 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://www.museum-schleitheim.ch/taeuferbekenntnis_1.htm",
-      "verificationNote": "Museum documents first Worms Schöffer print 1527/latest 1529, two BSB copies; hosted transcription represents later edition. First three articles inspected; seven listed. Need original-print witness collation.",
+      "verificationNote": "Full seven-article German transcript of museum's later ~1550 printing read over _1.htm _2.htm _3.htm (articles I–VII, sword and oath included). Must distinguish later print from 1527 BSB witnesses VD16 S1882: both identified but visual original not collated.",
       "checkedAt": "2026-11-04"
     },
     {
@@ -688,7 +688,7 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://www.rps.ac.uk/search.php?action=print&filename=maryi_ms&id=9393&type=ms",
-      "verificationNote": "RPS academic digital edition direct opening returned HTTP 503 in current pass; search snippets established A1560/8/3 and RPS intro warns 1560 parliament was not crown-ratified.",
+      "verificationNote": "1560 RPS A1560/8/3 live direct page still returned 503; search indexed manuscript editor note original Confession manuscript lost; collate later Skene 1597 vs Lekpreuik 1568 (1567 context). New separate RPS-1567 document read.",
       "checkedAt": "2026-11-04"
     },
     {
@@ -726,6 +726,78 @@
       ],
       "url": "https://ge.ch/arvaegrefdoc/PDF/17889.pdf",
       "verificationNote": "AEG original-edition PDF and metadata accessed; exact pp576-577 published transcription given by AEG. Corresponding page screenshot tool returned 404, so no claim of visual collation of those pages; early printed 1940 edition not manuscript.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P24-BSB1",
+      "documentYear": 1527,
+      "title": "Brüderliche Vereinigung etzlicher Kinder Gottes siben Artickel betreffend; printed [Worms], [Peter Schöffer]; BSB first copy",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://digitale-sammlungen.de/en/details/bsb00027178",
+      "verificationNote": "BSB Res/Polem. 875#Beibd.6; VD16 S1882; OCLC 165927541; 16 leaves; 32 scans; PDM digital object, CC0 metadata. JS viewer/IIIF inaccessible here; no leaf collation, actual bytes or SHA256.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P24-BSB2",
+      "documentYear": 1527,
+      "title": "Brüderliche Vereinigung etzlicher Kinder Gottes siben Artickel betreffend; printed [Worms], [Peter Schöffer]; BSB second copy",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://digitale-sammlungen.de/en/details/bsb00112324",
+      "verificationNote": "BSB Res/Mor. 135#Beibd.2; VD16 S1882; OCLC 165927541; 16 leaves; 34 scans; PDM digital object, CC0 metadata. Difference in count of scans is not evidence of text variants. No leaf collation or SHA256.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P25-1567",
+      "documentYear": 1567,
+      "title": "Scottish Confession, RPS A1567/12/3 as reprinted in Robert Lekpreuik, Actis of James the Sext (Edinburgh 1568)",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.rps.ac.uk/search.php?action=print&filename=jamesvi_trans&id=9539&type=trans",
+      "verificationNote": "RPS English historical translation text read chapters 3,8,9,12,14-17,19-20; RPS editor identifies source Lekpreuik 1568 ff5v–10v; original Scottish manuscript of 1560 is missing and no print image collated.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P25-1581",
+      "documentYear": 1581,
+      "title": "Scottish parliamentary ratification of laws maintaining true kirk, RPS 1581/10/20",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.rps.ac.uk/search.php?action=print&filename=jamesvi_trans&id=10151&type=trans",
+      "verificationNote": "RPS translation of 1581 act explicitly ratifies laws on reformed kirk, lists Scots Confession and anti-papal acts; is later legal testimony, not Crown confirmation in 1560.",
       "checkedAt": "2026-11-04"
     }
   ]
