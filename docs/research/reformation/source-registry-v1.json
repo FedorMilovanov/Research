@@ -1349,18 +1349,17 @@
       "documentYear": 1521,
       "title": "Ad Cesaree Maiest. interrogata D. Martini L. responsum Wurmacie, Wittenberg Rhau-Grunenberg 1521, Latin print VD16 L3650, LMU Munich copy 4 Luth.209#7",
       "evidenceClass": "A1",
-      "accessState": "CATALOG_ONLY",
-      "locatorState": "COARSE_LOCATOR_ONLY",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
       "holds": [
         "ARCHIVE_HOLD",
-        "LOCATOR_HOLD",
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "url": "https://epub.ub.uni-muenchen.de/view/malte/malte16.signature.html",
-      "verificationNote": "LMU original Latin 1521 print identified in online item bibliography as 0001/4 Luth.209#7, [Wittenberg] [Rhau-Grunenberg], printed label xvii Aprilis; original image not personally read. Official Worms exhibition states Latin edition VD16 L3650 ends with German 'Ich kan nicht anderst, hie stehe ich, Got helff mir, Amen', but this is SECONDARY institutional report on print, not our visual collation. Need find stable LMU per-item permalink/scan and confirm exact typography and final leaf.",
+      "url": "https://epub.ub.uni-muenchen.de/14521/",
+      "verificationNote": "Original 1521 Wittenberg Latin imprint VD16 L3650, LMU Munich Universitätsbibliothek copy 0001/4 Luth. 209#7, item https://epub.ub.uni-muenchen.de/14521/ (library catalogue [2] Bl., date printed xvii. Aprilis, not proof that second Reichstag answer occurred on 17 Apr). Directly VISUALLY inspected ALL THREE digital PDF pages (0-index 0 title, 1 Latin text spread, 2 closing Latin/German leaf) in official https://epub.ub.uni-muenchen.de/14521/1/4Luth.209_7.pdf . On PDF p2 a separately emphasized German coda reads 'Ich kan nicht anderst / hie stehe ich / Got helff mir / Amen' immediately after the Latin reply ending; original 1521 PRINT, not oral stenography or proven Luther-authored insertion. Exact PDF obtained on 2026-11-04: 2451627 bytes, SHA256 2b7bd600f28d1805a46d2d3b577c6f01dbbd2b21a7e70caa8ead518c037edb4f; temporary local copy deleted (TEMP_CLEANED=True); SHA checks that download only, not the physical 1521 artifact. Partial object: visual collation of displayed 3 pages does not equal diplomatic transcription of every Latin word. Photo usage license not verified at item level: RIGHTS_UNKNOWN/RIGHTS_HOLD and PUBLICATION_HOLD remain; ARCHIVE_HOLD covers broader variant and attribution research.",
       "checkedAt": "2026-11-04"
     },
     {
