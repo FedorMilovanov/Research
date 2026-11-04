@@ -733,17 +733,16 @@
       "documentYear": 1527,
       "title": "Brüderliche Vereinigung etzlicher Kinder Gottes siben Artickel betreffend; printed [Worms], [Peter Schöffer]; BSB first copy",
       "evidenceClass": "A1",
-      "accessState": "CATALOG_ONLY",
-      "locatorState": "COARSE_LOCATOR_ONLY",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "PUBLICATION_ELIGIBLE",
       "publicationState": "REFERENCE",
       "holds": [
         "ARCHIVE_HOLD",
-        "LOCATOR_HOLD",
         "PUBLICATION_HOLD"
       ],
       "url": "https://digitale-sammlungen.de/en/details/bsb00027178",
-      "verificationNote": "BSB Res/Polem. 875#Beibd.6; VD16 S1882; OCLC 165927541; 16 leaves; 32 scans; PDM digital object, CC0 metadata. JS viewer/IIIF inaccessible here; no leaf collation, actual bytes or SHA256.",
+      "verificationNote": "BSB1 VD16 S1882; 32 IIIF canvases. The 32 IIIF canvas images were actually downloaded (1200px scaled JPEG derivatives), decoded, SHA256-hashed, visually inspected as full contact sheet; selected pages 1,4,5,6,7,8,9,10,11,12,13,14,15,16 directly viewed full page. Scan 4 lists seven topics, scan 11 begins VII on oath, scan 15 prints Acta Schlaten am Randen / auff Matthie / Anno M.D.XXvij (year of agreement, not independent colophon imprint). Scans 16–32 contain Sattler letter and additional text. No word-by-word variant collation of all 32 printed pages. Provenance/66 SHA receipts in bsb-1527-iiif-derivatives-v1.json, all temp files deleted.",
       "checkedAt": "2026-11-04"
     },
     {
@@ -751,17 +750,16 @@
       "documentYear": 1527,
       "title": "Brüderliche Vereinigung etzlicher Kinder Gottes siben Artickel betreffend; printed [Worms], [Peter Schöffer]; BSB second copy",
       "evidenceClass": "A1",
-      "accessState": "CATALOG_ONLY",
-      "locatorState": "COARSE_LOCATOR_ONLY",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "PUBLICATION_ELIGIBLE",
       "publicationState": "REFERENCE",
       "holds": [
         "ARCHIVE_HOLD",
-        "LOCATOR_HOLD",
         "PUBLICATION_HOLD"
       ],
       "url": "https://digitale-sammlungen.de/en/details/bsb00112324",
-      "verificationNote": "BSB Res/Mor. 135#Beibd.2; VD16 S1882; OCLC 165927541; 16 leaves; 34 scans; PDM digital object, CC0 metadata. Difference in count of scans is not evidence of text variants. No leaf collation or SHA256.",
+      "verificationNote": "BSB2 VD16 S1882; 34 IIIF canvases. Both original official IIIF manifests and all 34 scaled 1200px JPEG derivatives fetched, verified and hashed; direct visual contact-sheet inspection. Scans 1–32 correspond in print order/layout to first copy; 33 color calibration and 34 resolution target, NOT extra textual leaves. Sample cross-copy printed lines and breaks visually compared pages 4,8,11,13,15: matching typography without a claimed exhaustive lexical collation; BSB2 has owner marginalia/annotations and binding hardware. No full text transcription. 66 SHA receipts in bsb-1527-iiif-derivatives-v1.json; temp files deleted.",
       "checkedAt": "2026-11-04"
     },
     {
