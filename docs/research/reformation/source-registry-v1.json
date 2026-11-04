@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 58,
+  "sourceCount": 61,
   "sources": [
     {
       "id": "REF-P01",
@@ -153,16 +153,16 @@
       "title": "Luther Against the Robbing and Murdering Hordes",
       "evidenceClass": "A1",
       "accessState": "PARTIAL_OBJECT",
-      "locatorState": "COARSE_LOCATOR_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
       "holds": [
-        "LOCATOR_HOLD",
+        "ARCHIVE_HOLD",
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
       "url": "https://editions.mml.ox.ac.uk/editions/peasants-nuremberg/",
-      "verificationNote": "Oxford edition and some text checked; images under CC BY-NC-SA",
+      "verificationNote": "Oxford Taylor Editions 2025 Nuremberg print Taylorian ARCH.8°.G.1525(27), [Friedrich Peypus] 1525; printed a1v (contrasts previous book), a2r–a3r Rom13, a3v–a4r appeal to deathly force directly read in 1525 German transcription. Selective cross-reading with Oxford Erfurt variant REF-P08-ERF, not complete line-by-line original image collation. XML CC BY-SA4; scans CC BY-NC-SA3.",
       "checkedAt": "2026-11-04"
     },
     {
@@ -1057,6 +1057,62 @@
       ],
       "url": "https://www.stir.ac.uk/research/hub/publication/828431",
       "verificationNote": "University of Stirling repository bibliographic publication info and abstract checked; journal article DOI 10.1162/qjec.2009.124.2.531. Primary data are late-19th-century Prussian counties; 1871 census literacy; NOT a measured estimate of 16th-century Europe's literacy. University repository offers full article PDF; full econometric analysis and rights not independently assessed in this pass.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P08-ERF",
+      "documentYear": 1525,
+      "title": "Luther, Wider die sturmēden Bawren, Erfurt print Matthes Maler 1525, Oxford Taylorian ARCH.8°.G.1525(28)",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://editions.mml.ox.ac.uk/editions/peasants-erfurt/",
+      "verificationNote": "Oxford 2025 German transcription of physical [Erfurt Matthes Maler] 1525 original; a1v author refers to prior admonition, a2r-a3r Rom13/authority, a3v deathly-force call Steche schlahe wurge. Full facsimile/TEI accessible; images CC BY-NC-SA3 and text XML CC BY-SA4 separately. No claim to collate complete image corpus.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P07-ZRH",
+      "documentYear": 1525,
+      "title": "Luther, Ermanunnge zum Fride (Admonition to Peace), Zürich Christoph Froschauer print 1525, ZB AW327 VD16 L4693",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.e-rara.ch/zuz/content/titleinfo/215807",
+      "verificationNote": "Zentralbibliothek Zürich AW327, [14] leaves, VD16 L4693, printed Zürich by Christoph Froschauer 1525, PDF approx7.86MB and IIIF manifest 215807. This is a reprint, not automatically initial Wittenberg edition. Catalog directly inspected, individual leaves/text not collated.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P07-WIT",
+      "documentYear": 1525,
+      "title": "Luther, Ermanunge zum friede, Wittenberg Josef Klug early 1525 print Oxford Taylorian ARCH.8°.G.1525(11)",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://users.ox.ac.uk/~fmml2152/Reformation/Luther1525-Rotten.pdf",
+      "verificationNote": "Oxford printed-pamphlet historical/bibliographic introduction records Taylorian ARCH.8°.G.1525(11) [Wittenberg Josef Klug] VD16 L4690; earliest print-run with unfilled title border distinct from later version with Psalm text. Source document actual folios not collated; secondary scholarly identification of primary object.",
       "checkedAt": "2026-11-04"
     }
   ]
