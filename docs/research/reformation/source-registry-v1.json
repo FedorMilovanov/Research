@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 78,
+  "sourceCount": 79,
   "sources": [
     {
       "id": "REF-P01",
@@ -1414,6 +1414,24 @@
       ],
       "url": "https://www.dilibri.de/urn/urn:nbn:de:0128-5-2820",
       "verificationNote": "ORIGINAL PRINT FACSIMILE visually inspected ALL 16 zero-indexed digital frames in official Stadtbibliothek Worms PDF https://www.dilibri.de/stbwo/download/pdf/2040713 : frames 0-3 library binding/flyleaves, 4 original title and composite woodcut, 5 original blank verso, 6-10 historical printed German account, 11 original blank verso, 12-15 library/flyleaves/binding. Physical original [4] Bl. (4 leaves, NOT 16 printed pages); copy shelfmark W Gs 21, catalog VD16 A3024, [Augsburg] [Melchior Ramminger] [1521] are library attributions in square brackets, not proven imprint colophon. On PDF frame 6 report starts Tuesday Apr 16 arrival; frame 10 ends 'Jm beschluß sprach er die wort Got kum mir zehülff' followed by narrator's reaction and prayer, with NO 'hier stehe ich / ich kan nicht anderst' formula. This witnesses this PRINTED NARRATIVE only, NOT a stenographic transcript, NOT direct visual collation of the attributed Konrad Peutinger 19 April 1521 original letter. The independent City Library exhibition https://www.lutherschriften1521.de/luther-schriften/exponate/Reichstag/3-Ain-anzaigung-.php attributes printed narrative's source to Peutinger's letter of 19 April 1521; the original manuscript/letter was NOT photographed; do not falsely count as independent oral witness. The exhibition identifies the frontispiece's composite woodcut as reused from separate 1521 Lucifer and Pope pamphlet: pope did NOT attend the Diet, NOT on-site iconography or a literal scene. Official downloaded PDF on 2026-11-04: 3253175 bytes, SHA256 4fd0fb21456c815bb6d701307bdfe97eeae9080f27aea7b64a1072659a48fe79, %PDF header; temporary file discarded TEMP_CLEANED=True, SHA identifies obtained bytes only, no binary in Git. dilibri CC BY-NC-SA 3.0 digitization; image/translated text rights require separate review, noncommercial only; RIGHTS_HOLD and PUBLICATION_HOLD intact. PARTIAL_OBJECT even though all digital leaves viewed because not every early printed word diplomatically transcribed or compared against autographed letter.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P48",
+      "documentYear": 1521,
+      "title": "Martin Luther, autograph draft for second Worms hearing 17/18 April 1521, Thüringisches Hauptstaatsarchiv Weimar, Ernestinisches Gesamtarchiv Reg. E 81",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://artsandculture.google.com/asset/luther%E2%80%99s-address-before-the-imperial-diet-in-worms-notes-in-his-own-hand-martin-luther/uAEBA1Vc8H_uCQ?hl=en",
+      "verificationNote": "Autograph original HISTORICAL MANUSCRIPT, physically held Thüringisches Hauptstaatsarchiv Weimar Ernestinisches Gesamtarchiv Reg. E 81, dated 17/18 Apr 1521: shelfmark confirmed independently by institutional UNESCO German Commission Memory of the World register https://www.unesco.de/staette/fruehe-schriften-der-reformationsbewegung/ and Leibniz Association museum publication Google Arts & Culture https://artsandculture.google.com/asset/luther%E2%80%99s-address-before-the-imperial-diet-in-worms-notes-in-his-own-hand-martin-luther/uAEBA1Vc8H_uCQ?hl=en . An institutional PHOTOGRAPH of this sheet was visually inspected as paired photograph left side of Morgan Library & Museum online exhibition 006 Luther on Trial https://www.themorgan.org/exhibitions/online/word-and-image/5 (the right-hand printed edict is NOT part of Reg E 81). Arts & Culture institutional exhibition https://artsandculture.google.com/story/key-documentation-of-the-early-activity-of-martin-luther-leibniz-association/KQUxuklRxxPJJQ?hl=en says Luther wrote this German draft after first hearing, probably evening April 17, to prepare remarks on April 18; the manuscript first reviews 17 April questioning and BREAKS OFF IN THE MIDDLE OF A SENTENCE before the substantive closing defense. Morgan curator independently notes the draft stops mid-sentence. Thus Reg E 81 IS A REAL AUTOGRAPH DRAFT but IS NOT a complete speech record, oral verbatim transcript, proof of Luther's final words or evidence that the familiar printed formula was/was not spoken. Photograph visible, but full institutional scan, verso, archival foliation, transcription, line-level paleographic collation and direct rights license NOT personally verified. Access PARTIAL_OBJECT, NO downloaded photo, NO file bytes or SHA claimed, NO new acquisition-manifest row. The museum/archival rights for photographs are reserved to Thüringisches Hauptstaatsarchiv per Google Arts & Culture; RIGHTS_UNKNOWN / RIGHTS_HOLD / PUBLICATION_HOLD retained. Archive holds for full object and link to later independent print traditions. Contrast cannot be used as a quotation proof; only institutional catalog metadata and visible one-sheet fragment evidence are supported.",
       "checkedAt": "2026-11-04"
     }
   ]

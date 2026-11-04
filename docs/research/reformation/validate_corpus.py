@@ -275,6 +275,7 @@ def validate() -> tuple[list[str], dict[str, int]]:
         "REF-P45": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
         "REF-P46": ("PARTIAL_OBJECT", "RIGHTS_UNKNOWN"),
         "REF-P47": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
+        "REF-P48": ("PARTIAL_OBJECT", "RIGHTS_UNKNOWN"),
         "REF-S15": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
         "REF-S16": ("PARTIAL_OBJECT", "RIGHTS_UNKNOWN"),
     }
@@ -300,6 +301,7 @@ def validate() -> tuple[list[str], dict[str, int]]:
         "C91": ("REF-S15", "REF-S16", "REF-S14", "S.556"),
         "C92": ("REF-P47", "REF-S15", "nit anderst", "19 апреля", "NOT_STENOGRAPHY"),
         "C93": ("REF-P47", "Lucifer", "ZV23319", "не"),
+        "C94": ("REF-P48", "Reg. E 81", "обрывается", "INCOMPLETE_AUTOGRAPH_NOT_SPOKEN_CONCLUSION"),
     }.items():
         row = claim_rows.get(id_, "")
         if any(term not in row for term in substrings):
@@ -447,6 +449,42 @@ def validate() -> tuple[list[str], dict[str, int]]:
     if "| REF-P47 |" not in (HERE / "02_open_primary_sources_and_reading.md").read_text(
             encoding="utf-8"):
         problems.append("Augsburg P47 missing from primary-source reading list")
+    # The Weimar autograph Reg E 81 is an incomplete physical draft seen
+    # via institutional museum photography, NOT an acquired full facsimile,
+    # stenographic transcript, or proof of what Luther said at the ending.
+    p48 = corpus.get("REF-P48", {})
+    p48_note = str(p48.get("verificationNote", ""))
+    p48_url = ("https://artsandculture.google.com/asset/"
+               "luther%E2%80%99s-address-before-the-imperial-diet-in-worms-"
+               "notes-in-his-own-hand-martin-luther/uAEBA1Vc8H_uCQ?hl=en")
+    if p48.get("url") != p48_url:
+        problems.append("Weimar 1521 autograph Reg E81 museum photo locator changed")
+    if p48.get("locatorState") != "EXACT_LOCATOR_VERIFIED":
+        problems.append("Weimar Reg E81 autograph precise archive locator lost")
+    if not {"ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"} <= set(p48.get("holds", [])):
+        problems.append("Weimar Reg E81 manuscript/full-reuse hold removed")
+    if any(token not in p48_note for token in (
+            "Reg. E 81", "UNESCO", "Morgan Library",
+            "BREAKS OFF IN THE MIDDLE OF A SENTENCE",
+            "NOT a complete speech record", "NO downloaded photo",
+            "NO new acquisition-manifest row", "full institutional scan")):
+        problems.append("Weimar Reg E81 partial autograph provenance/limits lost")
+    if any(token not in wrede_section for token in (
+            "### P48.", "Reg. E 81", "музейной фотографии",
+            "обрывается посреди предложения", "13 записями",
+            "не доказательство, что фраза не прозвучала",
+            "RIGHTS_HOLD / PUBLICATION_HOLD")):
+        problems.append("Weimar Reg E81 incomplete autograph context absent from Worms dossier")
+    if any(token not in claim_rows.get("C94", "") for token in (
+            "REF-P48", "обрывается посреди предложения",
+            "не доказывает ни произнесение, ни непроизнесение",
+            "INCOMPLETE_AUTOGRAPH_NOT_SPOKEN_CONCLUSION")):
+        problems.append("C94 Weimar autograph falsely promoted into completed speech conclusion")
+    if any(rec.get("id") == "REF-P48" for rec in items):
+        problems.append("Weimar autograph museum photo falsely inserted as downloaded acquisition")
+    if "| REF-P48 |" not in (HERE / "02_open_primary_sources_and_reading.md").read_text(
+            encoding="utf-8"):
+        problems.append("Weimar Reg E81 autograph missing from primary source list")
     # Enforce source interpretation without inventing independent eyewitnesses:
     # a byte receipt cannot prove the letter autograph or oral delivery.
     for file in HERE.glob("*.md"):
