@@ -299,7 +299,7 @@ def tree_counts(root=None) -> dict:
 
     lane_glob = str(rel(ROOT / "docs" / "research" / "atonement")) + "/*.md"
     docs = stat(sorted(glob.glob(lane_glob)))
-    n_num = len([x for x in glob.glob(lane_glob) if re.search(r"/\d\d_", x)])
+    n_num = len([x for x in glob.glob(lane_glob) if re.match(r"^\d{2}_", Path(x).name)])
     rootmd = stat(sorted(glob.glob(str(rel(ROOT / "ИСКУПЛЕНИЕ")) + "/*.md")))
     b17 = rel(ROOT / "ИСКУПЛЕНИЕ" / "17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md").stat().st_size
     doc = rel(DOC)
