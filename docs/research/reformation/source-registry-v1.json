@@ -1210,15 +1210,14 @@
       "evidenceClass": "A1",
       "accessState": "PARTIAL_OBJECT",
       "locatorState": "EXACT_LOCATOR_VERIFIED",
-      "rightsState": "RIGHTS_UNKNOWN",
+      "rightsState": "PUBLICATION_ELIGIBLE",
       "publicationState": "REFERENCE",
       "holds": [
         "ARCHIVE_HOLD",
-        "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
       "url": "https://tueditions.ulb.tu-darmstadt.de/v/pa000008-0108",
-      "verificationNote": "Actual 1521 printed legal text in TU Darmstadt diplomatic digital edition with Blatt + line locators A1r 1-12 (includes Gesetz der Druckerey); B4r/B4v approximately lines 394-473 ban on sheltering, arrest, supporters/property, sale/printing/reading/storage of books and destruction; modern text editorial apparatus NOT manuscript original or image scan visually collated. Bibliographic attribution [Worms Hans von Erfurt] and BSB copy Res/4 H. ref. 287; original German Vatican parchment lost according to editorial intro, do not confuse with extant printed edition.",
+      "verificationNote": "Actual 1521 printed legal text in TU Darmstadt diplomatic digital edition with Blatt + line locators A1r 1-12 (includes Gesetz der Druckerey); B4r/B4v approximately lines 394-473 ban on sheltering, arrest, supporters/property, sale/printing/reading/storage of books and destruction; modern text editorial apparatus NOT manuscript original or image scan visually collated. Bibliographic attribution [Worms Hans von Erfurt] and BSB copy Res/4 H. ref. 287; original German Vatican parchment lost according to editorial intro, do not confuse with extant printed edition. EuReD scholarly online edition declared CC BY 4.0; this license pertains to edition text with attribution and does not remove PUBLICATION_HOLD or photo-source collation restrictions.",
       "checkedAt": "2026-11-04"
     },
     {
@@ -1228,20 +1227,19 @@
       "evidenceClass": "A1",
       "accessState": "PARTIAL_OBJECT",
       "locatorState": "EXACT_LOCATOR_VERIFIED",
-      "rightsState": "RIGHTS_UNKNOWN",
+      "rightsState": "PUBLICATION_ELIGIBLE",
       "publicationState": "REFERENCE",
       "holds": [
         "ARCHIVE_HOLD",
-        "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
       "url": "https://tueditions.ulb.tu-darmstadt.de/v/pa000008-0109",
-      "verificationNote": "Latin printed witness Vatican Arm LXIV 17 read by open text at A1r lines 1-25: anti-Luther, books, authors/printers/buyers/sellers and graphic images; NOT the autograph Latin parchment now catalogued Arm I-XVIII 254. Later passages edict partially checked; no original scan or side-by-side complete German/Latin collation.",
+      "verificationNote": "Latin printed witness Vatican Arm LXIV 17 read by open text at A1r lines 1-25: anti-Luther, books, authors/printers/buyers/sellers and graphic images; NOT the autograph Latin parchment now catalogued Arm I-XVIII 254. Later passages edict partially checked; no original scan or side-by-side complete German/Latin collation. EuReD scholarly online edition declared CC BY 4.0; this license pertains to edition text with attribution and does not remove PUBLICATION_HOLD or photo-source collation restrictions.",
       "checkedAt": "2026-11-04"
     },
     {
       "id": "REF-P42",
-      "documentYear": 1544,
+      "documentYear": 1540,
       "title": "Georg Spalatin Annalen historical recollection of Worms 1521, Forschungsbibliothek Gotha Chart. A 340",
       "evidenceClass": "A1",
       "accessState": "PARTIAL_OBJECT",
@@ -1254,25 +1252,24 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://blog-fbg.uni-erfurt.de/2021/04/augenzeugenbericht-der-luthersache-auf-dem-reichstag-zu-worms-1521/",
-      "verificationNote": "University of Erfurt/FB Gotha institution describes participant Spalatin's own *Annalen*, recollections of events 20 years later in early 1540s, manuscript Chart A 340, fol.25r/26r/26v/27v/28r short excerpts. Spalatin does not reproduce full April 18 speech and late chronicle was heroizing. Manuscript images not personally collated; 1544 is estimated literary completion/period, not proven exact year of each folio; institutional 2021 commentary vs 1540s manuscript distinguished.",
+      "verificationNote": "University of Erfurt/FB Gotha institution describes participant Spalatin's own *Annalen*, recollections of events 20 years later in early 1540s, manuscript Chart A 340, fol.25r/26r/26v/27v/28r short excerpts. Spalatin does not reproduce full April 18 speech and late chronicle was heroizing. Manuscript images not personally collated; 1540 is an approximate decade-indexing year ONLY, manuscript undated (o.D.; 1st half 16th c.) in Kalliope library record https://www.nachlassdatenbank.de/de/ead?ead.id=DE-611-HS-3410519. Chart A340 initial pages absent, companion Chart A341 disappeared in nineteenth century; no original folio seen. Institutional 2021 commentary vs early 1540s chronicle distinguished.",
       "checkedAt": "2026-11-04"
     },
     {
       "id": "REF-S13",
-      "documentYear": 2020,
+      "documentYear": 2021,
       "title": "Corinna Ehlers, Wormser Edikt (8./26. Mai 1521), source critique and historical introduction, TU Darmstadt Europäische Religionsfrieden Digital",
       "evidenceClass": "B1",
       "accessState": "PARTIAL_OBJECT",
       "locatorState": "EXACT_LOCATOR_VERIFIED",
-      "rightsState": "RIGHTS_UNKNOWN",
+      "rightsState": "PUBLICATION_ELIGIBLE",
       "publicationState": "REFERENCE",
       "holds": [
         "ARCHIVE_HOLD",
-        "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
       "url": "https://tueditions.ulb.tu-darmstadt.de/v/pa000008-0107",
-      "verificationNote": "Institutional critical scholarly introduction, sections Die Entstehung des Wormser Edikts, Inhalt, Überlieferung und Textvorlage; date 8 May stated on document, discussion and reading 25 May, Emperor signed German/Latin versions 26 May, printed in Worms 26-30 May. Wrede viewed original German parchment in Vatican 1896 old shelfmark Arm II caps I nr93; today not found, current corresponding Arm I-XVIII 255 contains signed Flemish early print. Regional enforcement inconsistent. Intro publication year exact NOT independently confirmed; documentYear 2020 is provisional website/editorial production, not an historical event year.",
+      "verificationNote": "Institutional critical scholarly introduction, sections Die Entstehung des Wormser Edikts, Inhalt, Überlieferung und Textvorlage; date 8 May stated on document, discussion and reading 25 May, Emperor signed German/Latin versions 26 May, printed in Worms 26-30 May. Wrede viewed original German parchment in Vatican 1896 old shelfmark Arm II caps I nr93; today not found, current corresponding Arm I-XVIII 255 contains signed Flemish early print. Regional enforcement inconsistent. Original edition release publicly dated 31 Oct 2021 by EuReD https://eured.de/aktuelles/500-jahre-wormser-edikt-neue-edition-online/; full digital scholarly edition under explicit CC BY 4.0 (https://eured.de), reuse requires attribution; rights for unrelated scans and translations remain separate. EuReD scholarly online edition declared CC BY 4.0; this license pertains to edition text with attribution and does not remove PUBLICATION_HOLD or photo-source collation restrictions.",
       "checkedAt": "2026-11-04"
     }
   ]
