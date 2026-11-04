@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 72,
+  "sourceCount": 78,
   "sources": [
     {
       "id": "REF-P01",
@@ -1306,6 +1306,114 @@
       ],
       "url": "https://www.bpb.de/themen/zeit-kulturgeschichte/reformation/235570/schlaglicht-1521-luther-und-karl-v-in-worms/",
       "verificationNote": "bpb article by historian Axel Gotthard dated 18 Jan 2017, sections on alleged formula Hier stehe ich and Charles's Catholic argument; considers popular formula unauthentic and attributed to contemporary editors, while early primary variants require Wrede apparatus. The article's text itself CC BY-NC-ND 3.0 DE, not CC BY 4.0 or original first print; no long quotation or commercial reproduction authorized.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P44",
+      "documentYear": 1521,
+      "title": "Die gancz handlung szo mit dem Hochgelerten D. Martino Luther — Wittenberg Rhau-Grunenberg 1521, Georg Spalatin translation, VD16 S7418/L3665, Worms Stadtbibliothek LB88",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.dilibri.de/urn/urn:nbn:de:0128-5-2769",
+      "verificationNote": "Directly inspected ORIGINAL PRINT PDF https://www.dilibri.de/stbwo/download/pdf/2039244, 18 digital pages versus [8] printed original leaves, p11 0-based = printed fol.5v, closing lines plainly 'Ich kan nicht anderst / hie stehe ich / Got helff mir / Amen'; this is contemporaneous publication, not proven spoken 18 April. Museum Stadtbibliothek Worms exhibition https://www.lutherschriften1521.de/luther-schriften/exponate/Reichstag/1-die-gancz-handlung.php identifies sig. LB88, VD16 S7418 / L3665 and discusses conjectural authorship and reception of phrase. No full 18-page transcription, no PDF stored in Git, no downloaded-byte SHA. Digital scan CC BY-NC-SA 3.0; publication hold maintained.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P45",
+      "documentYear": 1521,
+      "title": "Antwort Doctoris Martini Luthers vor K. M. ... Erfurt Matthes Maler 1521, VD16 L3656, Worms Stadtbibliothek LB87a",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.dilibri.de/urn/urn:nbn:de:0128-5-2819",
+      "verificationNote": "Directly viewed PDF https://www.dilibri.de/stbwo/download/pdf/2039355 with 16 digital pages vs historical [4] Bl.; image p10 0-based at end explicitly 'Neyn ich wils nit thun' following exchange with imperial official. Museum Worms notes printed reply is shorter than standard formula; end of story after response, not documentary proof of exact speech words. Print Erfurt [Matthes Maler] 1521 VD16 L3656. No full text collation, no binary kept; digital CC BY-NC-SA 3.0.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P46",
+      "documentYear": 1521,
+      "title": "Ad Cesaree Maiest. interrogata D. Martini L. responsum Wurmacie, Wittenberg Rhau-Grunenberg 1521, Latin print VD16 L3650, LMU Munich copy 4 Luth.209#7",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://epub.ub.uni-muenchen.de/14521/",
+      "verificationNote": "Original 1521 Wittenberg Latin imprint VD16 L3650, LMU Munich Universitätsbibliothek copy 0001/4 Luth. 209#7, item https://epub.ub.uni-muenchen.de/14521/ (library catalogue [2] Bl., date printed xvii. Aprilis, not proof that second Reichstag answer occurred on 17 Apr). Directly VISUALLY inspected ALL THREE digital PDF pages (0-index 0 title, 1 Latin text spread, 2 closing Latin/German leaf) in official https://epub.ub.uni-muenchen.de/14521/1/4Luth.209_7.pdf . On PDF p2 a separately emphasized German coda reads 'Ich kan nicht anderst / hie stehe ich / Got helff mir / Amen' immediately after the Latin reply ending; original 1521 PRINT, not oral stenography or proven Luther-authored insertion. Exact PDF obtained on 2026-11-04: 2451627 bytes, SHA256 2b7bd600f28d1805a46d2d3b577c6f01dbbd2b21a7e70caa8ead518c037edb4f; temporary local copy deleted (TEMP_CLEANED=True); SHA checks that download only, not the physical 1521 artifact. Partial object: visual collation of displayed 3 pages does not equal diplomatic transcription of every Latin word. Photo usage license not verified at item level: RIGHTS_UNKNOWN/RIGHTS_HOLD and PUBLICATION_HOLD remain; ARCHIVE_HOLD covers broader variant and attribution research.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-S15",
+      "documentYear": 1896,
+      "title": "Adolf Wrede (ed.), Deutsche Reichstagsakten JR II (1896), no.79-80 Worms 1521; original visual collation pp554-556, 569-574, 578-584, BSB bsb11833331",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.digitale-sammlungen.de/en/details/bsb11833331",
+      "verificationNote": "Adolf Wrede, Deutsche Reichstagsakten Jüngere Reihe II (1896), archival digitization BSB bsb11833331. Personally read original critical PRINT pages no.79 pp554-556 (p555 Q add. Ich kan nicht anderst, hie stehe ich; p556 Q Latin + F German same Wittenberg Grüneberg printer do NOT form independent sources for spoken words); no.80 pp569-574 (p569 Sp. copy in Spalatin handwriting NOT demonstrated original author; p570 F German Grüneberg print, Fa its revised impression, U Thomas Anshelm Hagenau; p571 F Nachdruck von U; p572 B Erfurt by Matthes Maler; p573 Wittenberg F/Fa/Q relatively late reprints); German critical text pp578-583 p582 F add. Ich kan nicht anders, hie stehe ich. Physical exemplars P44 Worms and P46 LMU are two direct 1521 imprints but one related PRINT transmission per Wrede, NOT two independent oral witnesses. Nine IIIF 1800px JPEG derivatives of pp554-556 and 569-574 acquired and SHA256/bytes recorded in dossier 12, in addition to seven derivative receipts pp578-584; total 16 files, all discarded TEMP_CLEANED=True. Wrede 1896 editorial stemma and conclusion on late Wittenberg addition do not establish which historical person edited it or what Luther literally said. 16 SHA receipts establish the acquired IIIF derivatives, not BSB master images. BSB manifest rights NoC-NC/1.0, RIGHTS_HOLD / PUBLICATION_HOLD remain. Further early manuscript archetype collation remains ARCHIVE_HOLD; do not treat partial images as all original 1521 manuscripts.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-S16",
+      "documentYear": 2021,
+      "title": "Stadtbibliothek Worms: Luther — Der Reichstag 1521 in Flugschriften; Die gancz handlung (1521 original print, textual history and myth)",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.lutherschriften1521.de/luther-schriften/exponate/Reichstag/1-die-gancz-handlung.php",
+      "verificationNote": "Institutional historical exhibition notes German Wittenberg 1521 [8] Bl VD16 S7418/L3665, Worms LB88, original printed phrase at Blatt 5v; Latin Wittenberg VD16 L3650 earlier also has line, conventional scholarly judgment 'not spoken', but authorial origin contested (Kaufmann considers Luther might append phrase in prepared text; bpb Gotthard suggests print editors). Cites Kaufmann 2021 pp78f and Mennecke 2014 pp215–244. This is exhibition prose, not manuscript transcript, and not full original text reading.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P47",
+      "documentYear": 1521,
+      "title": "Ain anzaigung wie D. Martinus Luther zu Wurms auff dem Reichstag eingefaren (VD16 A3024), early Augsburg [Melchior Ramminger] pamphlet, Worms Stadtbibliothek Lutherbibliothek W Gs 21",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.dilibri.de/urn/urn:nbn:de:0128-5-2820",
+      "verificationNote": "ORIGINAL PRINT FACSIMILE visually inspected ALL 16 zero-indexed digital frames in official Stadtbibliothek Worms PDF https://www.dilibri.de/stbwo/download/pdf/2040713 : frames 0-3 library binding/flyleaves, 4 original title and composite woodcut, 5 original blank verso, 6-10 historical printed German account, 11 original blank verso, 12-15 library/flyleaves/binding. Physical original [4] Bl. (4 leaves, NOT 16 printed pages); copy shelfmark W Gs 21, catalog VD16 A3024, [Augsburg] [Melchior Ramminger] [1521] are library attributions in square brackets, not proven imprint colophon. On PDF frame 6 report starts Tuesday Apr 16 arrival; frame 10 ends 'Jm beschluß sprach er die wort Got kum mir zehülff' followed by narrator's reaction and prayer, with NO 'hier stehe ich / ich kan nicht anderst' formula. This witnesses this PRINTED NARRATIVE only, NOT a stenographic transcript, NOT direct visual collation of the attributed Konrad Peutinger 19 April 1521 original letter. The independent City Library exhibition https://www.lutherschriften1521.de/luther-schriften/exponate/Reichstag/3-Ain-anzaigung-.php attributes printed narrative's source to Peutinger's letter of 19 April 1521; the original manuscript/letter was NOT photographed; do not falsely count as independent oral witness. The exhibition identifies the frontispiece's composite woodcut as reused from separate 1521 Lucifer and Pope pamphlet: pope did NOT attend the Diet, NOT on-site iconography or a literal scene. Official downloaded PDF on 2026-11-04: 3253175 bytes, SHA256 4fd0fb21456c815bb6d701307bdfe97eeae9080f27aea7b64a1072659a48fe79, %PDF header; temporary file discarded TEMP_CLEANED=True, SHA identifies obtained bytes only, no binary in Git. dilibri CC BY-NC-SA 3.0 digitization; image/translated text rights require separate review, noncommercial only; RIGHTS_HOLD and PUBLICATION_HOLD intact. PARTIAL_OBJECT even though all digital leaves viewed because not every early printed word diplomatically transcribed or compared against autographed letter.",
       "checkedAt": "2026-11-04"
     }
   ]

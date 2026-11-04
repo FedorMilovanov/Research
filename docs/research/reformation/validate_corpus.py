@@ -271,6 +271,12 @@ def validate() -> tuple[list[str], dict[str, int]]:
         "REF-P43": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
         "REF-S13": ("PARTIAL_OBJECT", "PUBLICATION_ELIGIBLE"),
         "REF-S14": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
+        "REF-P44": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
+        "REF-P45": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
+        "REF-P46": ("PARTIAL_OBJECT", "RIGHTS_UNKNOWN"),
+        "REF-P47": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
+        "REF-S15": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
+        "REF-S16": ("PARTIAL_OBJECT", "RIGHTS_UNKNOWN"),
     }
     for ref, (access, rights) in worms.items():
         w = corpus.get(ref, {})
@@ -285,10 +291,164 @@ def validate() -> tuple[list[str], dict[str, int]]:
         "C77": ("REF-P40", "REF-S13", "26"),
         "C79": ("REF-P40", "A1r", "B4"),
         "C84": ("REF-P43", "GHDI"),
+        "C85": ("REF-P44", "REF-P46", "REF-S15", "1521", "S.556", "NOT_INDEPENDENT"),
+        "C86": ("REF-P44", "REF-P46", "REF-P39", "REF-P45", "REF-P47"),
+        "C87": ("REF-P39", "REF-P44", "REF-S15"),
+        "C88": ("REF-S15", "F add", "Q add", "S.570", "S.582", "NOT_INDEPENDENT"),
+        "C89": ("REF-P45", "Neyn"),
+        "C90": ("REF-S15", "S.583"),
+        "C91": ("REF-S15", "REF-S16", "REF-S14", "S.556"),
+        "C92": ("REF-P47", "REF-S15", "nit anderst", "19 апреля", "NOT_STENOGRAPHY"),
+        "C93": ("REF-P47", "Lucifer", "ZV23319", "не"),
     }.items():
         row = claim_rows.get(id_, "")
         if any(term not in row for term in substrings):
             problems.append(f"{id_}: incomplete Worms first-print legal chronology or citation")
+    # Sixteen 1800px JPEG derivatives were viewed and discarded in two
+    # source-critical acquisition batches. This read-only check validates
+    # recorded bytes and provenance, NOT live remote bytes or publication rights.
+    wrede = (HERE / "12_worms_1521_speech_edict_source_dossier.md").read_text(
+        encoding="utf-8")
+    if "### Текстологическая колляция" not in wrede:
+        problems.append("Wrede 1896 visual collation section missing")
+        wrede_section = ""
+    else:
+        wrede_section = wrede.split("### Текстологическая колляция", 1)[1].split(
+            "### P40.", 1)[0]
+    receipts = re.findall(
+        r"^\|\s*(\d{3})\s*\|\s*(\d{3})\s*\|\s*(\d+)\s*\|\s*\x60([a-f0-9]{64})\x60\s*\|$",
+        wrede_section, re.MULTILINE)
+    expected_pages = list(range(578, 585)) + [554, 555, 556] + list(range(569, 575))
+    if [(p, scan) for p, scan, _, _ in receipts] != [
+            (str(p), str(p+16)) for p in expected_pages]:
+        problems.append("Wrede 1896 exact 16-page IIIF acquisition receipts incomplete")
+    if len({sha for _, _, _, sha in receipts}) != 16:
+        problems.append("Wrede 1896 SHA receipts missing, repeated or malformed")
+    lengths = [
+        556830, 561385, 540789, 572148, 600618, 627903, 526127,
+        532242, 517396, 578474, 568107, 520336, 588611,
+        641510, 569756, 577411,
+    ]
+    if [int(size) for _, _, size, _ in receipts] != lengths:
+        problems.append("Wrede 1896 downloaded JPEG byte counts changed")
+    expected_sha = [
+        "fc65a7e41da0daba033dd151c611132ecfa0e335477e22e065234f2eca7202ca",
+        "9f2ce265b268174454df83a65647d6863c6f1e5332b5a47339f9aaef17bad9c0",
+        "c85ba0f11b3de3c56091032c057f649ed4fe3ebf18ce273c47a1b46546d04316",
+        "c875be511e67cea417d2f16ac5b595fd7f041e38fef5cfdd3190e8086072f615",
+        "06f2453a6b055ef0d8900d98910338cf50dd8cfe43d04f597129fbc0d1f94c72",
+        "f762fb6261c45a2031cda9b602ceb13ce0c329b1a7ed0587d05a6487be78e383",
+        "7744574be57fb5de638612553662066659f94bf6ab1f23758f7b30168a091788",
+        "56c3e7c8456f746b7641995d9f85a67cd910711c8688a98a1a64dba8ffd03dbb",
+        "7c66c9a38b95078072fcd03185865cb68b94a73a07c165437e2a714f89181def",
+        "8135bce780447c78bc63c5d6b917260b94dbb78050da597e9c85a693a6f54da4",
+        "6211b4ef0c91287b2c616897cd2f158909a692b8c65dedb2edf123435301ce9e",
+        "9139d864063b8b21f37fb74c6e7c0e82e59f1ae631c22961c8c81f01c5c1cd97",
+        "af65ab1af979d3186f8d8352c98494ff06781602c3c0a8706f0c99df6ffed9a6",
+        "6ce0ac28cc69f1920230d62efd0c30fae3d4568fc7c9aadd28ef7bc846b57fd7",
+        "6f77a837fdb776ca246b52a942a44be3031fdc7bd0ad4f13a14dbd35a7f231e7",
+        "d17d21c0e0c6752092c6d4c8750f04e946360ddd2f16f1ba753fe46340db2725",
+    ]
+    if [sha for _, _, _, sha in receipts] != expected_sha:
+        problems.append("Wrede 1896 SHA receipts changed without verified re-acquisition")
+    for proof in (
+            "F add. Ich kan nicht anders, hie stehe ich",
+            "Q add. Ich kan nicht anderst, hie stehe ich",
+            "F ist jedenfalls ein Nachdruck von U",
+            "не два независимых источника",
+            "НЕ два независимых подтверждения",
+            "S.556", "S.570", "S.571", "S.573",
+            "F/Fa/Q", "NoC-NC/1.0"):
+        if proof not in wrede_section:
+            problems.append(f"Wrede source stemma/evidence independence guard missing: {proof}")
+    if "NoC-NC/1.0" not in wrede_section:
+        problems.append("Wrede BSB digital photograph usage restriction removed")
+    if "TEMP_CLEANED=True" not in wrede_section:
+        problems.append("Wrede temporary photos cleanup not attested")
+    if "TWO_INDEPENDENT_1521_PRINT_PAGES_VISUALLY_CHECKED" in claim_rows.get("C85", ""):
+        problems.append("Worms C85 falsely counts F/Q as two independent oral sources")
+    if "NOT_INDEPENDENT" not in claim_rows.get("C85", ""):
+        problems.append("Worms C85 missing print-dependence qualification")
+    if "NOT_INDEPENDENT" not in claim_rows.get("C88", ""):
+        problems.append("Worms C88 missing critical F/Q stemma verdict")
+    s15_note = corpus.get("REF-S15", {}).get("verificationNote", "")
+    for proof in ("no.79", "pp554-556", "pp569-574", "F Nachdruck von U",
+                  "NOT two independent oral witnesses", "16 files", "TEMP_CLEANED=True"):
+        if proof not in s15_note:
+            problems.append(f"Wrede source registry has lost verified original-print context: {proof}")
+    # LMU VD16 L3650 original three-page PDF was actually visually inspected;
+    # receipts pin the downloaded PDF bytes, not a live network reacquisition.
+    p46 = corpus.get("REF-P46", {})
+    if p46.get("locatorState") != "EXACT_LOCATOR_VERIFIED":
+        problems.append("Wittenberg Latin 1521 original PDF locator must stay verified")
+    if p46.get("url") != "https://epub.ub.uni-muenchen.de/14521/":
+        problems.append("Wittenberg Latin 1521 LMU item permalink changed")
+    if "LOCATOR_HOLD" in p46.get("holds", []):
+        problems.append("Wittenberg Latin 1521 checked leaf falsely still catalog-only")
+    if not {"RIGHTS_HOLD", "PUBLICATION_HOLD", "ARCHIVE_HOLD"} <= set(p46.get("holds", [])):
+        problems.append("Wittenberg Latin 1521 unresolved photo rights or attribution hold removed")
+    latin_pdf = "https://epub.ub.uni-muenchen.de/14521/1/4Luth.209_7.pdf"
+    latin_sha = "2b7bd600f28d1805a46d2d3b577c6f01dbbd2b21a7e70caa8ead518c037edb4f"
+    latin_note = p46.get("verificationNote", "")
+    if any(token not in latin_note for token in
+           (latin_pdf, latin_sha, "2451627", "TEMP_CLEANED=True", "not oral stenography")):
+        problems.append("Wittenberg Latin 1521 checked PDF identity/interpretation receipt missing")
+    if any(token not in wrede_section for token in
+           (latin_pdf, latin_sha, "2451627", "TEMP_CLEANED=True", "PDF 2")):
+        problems.append("Wittenberg Latin 1521 visual receipt missing from dossier 12")
+    if "REF-P46" not in claim_rows.get("C85", "") or "REF-P46" not in claim_rows.get("C86", ""):
+        problems.append("Latin 1521 print disconnected from comparative claims C85-C86")
+    # Augsburg VD16 A3024 is a genuine photographed early PRINT, but not
+    # Peutinger's original 19 April letter or an independent verbatim speech.
+    p47 = corpus.get("REF-P47", {})
+    p47_note = str(p47.get("verificationNote", ""))
+    p47_pdf = "https://www.dilibri.de/stbwo/download/pdf/2040713"
+    p47_sha = "4fd0fb21456c815bb6d701307bdfe97eeae9080f27aea7b64a1072659a48fe79"
+    if p47.get("url") != "https://www.dilibri.de/urn/urn:nbn:de:0128-5-2820":
+        problems.append("Augsburg 1521 P47 library locator changed")
+    if p47.get("locatorState") != "EXACT_LOCATOR_VERIFIED":
+        problems.append("Augsburg 1521 P47 original PDF locator no longer verified")
+    if not {"ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"} <= set(p47.get("holds", [])):
+        problems.append("Augsburg 1521 P47 letter/print rights hold removed")
+    if any(token not in p47_note for token in
+           (p47_pdf, p47_sha, "3253175", "ALL 16", "TEMP_CLEANED=True",
+            "original manuscript/letter was NOT photographed",
+            "NOT a stenographic transcript", "Pope pamphlet",
+            "NOT on-site iconography", "CC BY-NC-SA 3.0")):
+        problems.append("Augsburg 1521 P47 visual receipt, independence or rights lost")
+    if any(token not in wrede_section for token in
+           (p47_pdf, p47_sha, "3253175", "PDF", "кадре 10",
+            "самого автора сообщения", "не** сказанная Лютером",
+            "Пейтингера", "VD16 ZV23319")):
+        problems.append("Augsburg P47 primary-print/curatorial limits absent from dossier")
+    if any(token not in claim_rows.get("C92", "") for token in
+           ("REF-P47", "Got kum mir zehülff", "nit anderst",
+            "PRINTED_REPORT_NOT_AUTOGRAPH_NOT_STENOGRAPHY")):
+        problems.append("C92 P47 narrative voice misattribution or source lost")
+    if any(token not in claim_rows.get("C93", "") for token in
+           ("REF-P47", "ZV23319", "ORIGINAL_TITLE_IMAGE_VISUALLY_CHECKED",
+            "RECYCLED_PROPAGANDA_IMAGE_NOT_EVENT_RECORD")):
+        problems.append("C93 P47 recycled woodcut context lost")
+    p47_receipt = next((rec for rec in items if rec.get("id") == "REF-P47"), {})
+    if (p47_receipt.get("acquisitionState") != "VERIFIED_TEMP_DISCARDED"
+            or p47_receipt.get("sha256") != p47_sha
+            or p47_receipt.get("actualBytes") != 3253175
+            or p47_receipt.get("catalog") != p47.get("url")
+            or p47_receipt.get("downloadAccess") != p47_pdf
+            or p47_receipt.get("accessState") != "PARTIAL_OBJECT"
+            or p47_receipt.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+            or p47_receipt.get("publicationState") != "REFERENCE"):
+        problems.append("Augsburg P47 acquisition manifest no longer matches verified source bytes")
+    if any(token not in str(p47_receipt.get("rights", "")) for token in
+           ("CC BY-NC-SA 3.0", "RIGHTS_HOLD", "PUBLICATION_HOLD")):
+        problems.append("Augsburg P47 acquisition image-reuse restrictions lost")
+    if "TEMP_CLEANED=True" not in str(p47_receipt.get("tempDisposition", "")):
+        problems.append("Augsburg P47 canonical temp cleanup receipt missing")
+    if "| REF-P47 |" not in (HERE / "02_open_primary_sources_and_reading.md").read_text(
+            encoding="utf-8"):
+        problems.append("Augsburg P47 missing from primary-source reading list")
+    # Enforce source interpretation without inventing independent eyewitnesses:
+    # a byte receipt cannot prove the letter autograph or oral delivery.
     for file in HERE.glob("*.md"):
         text = file.read_text(encoding="utf-8")
         for match in MD_LINK_RE.finditer(text):

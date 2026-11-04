@@ -6,7 +6,7 @@
   "policy": "data/repository-evidence-policy-v2.json",
   "noExternalPublication": true,
   "fileBytesInGit": 0,
-  "sourceCount": 12,
+  "sourceCount": 13,
   "sourceRecords": [
     {
       "id": "REF-P09-PRINT",
@@ -248,6 +248,27 @@
       "actualBytes": 8239895,
       "tempDisposition": "Downloaded once in a GUID temp path on authorized Windows device, validated %PDF- magic, computed SHA256, deleted in finally (TEMP_CLEANED=True); NO retained local PDF or bytewise page collation.",
       "intendedNextStep": "User can download official PDF using verified link for personal study; after legal local acquisition compare actual leaves to Wittenberg Klug first print and later 1525 anti-peasant text, record witness variants"
+    },
+    {
+      "id": "REF-P47",
+      "title": "Ain anzaigung, Augsburg [Melchior Ramminger] 1521, VD16 A3024, Peutinger-derived report (NOT original letter)",
+      "date": "1521",
+      "institution": "Stadtbibliothek Worms / dilibri",
+      "shelfmark": "Luther-Bibliothek W Gs 21; VD16 A3024",
+      "catalog": "https://www.dilibri.de/urn/urn:nbn:de:0128-5-2820",
+      "downloadAccess": "https://www.dilibri.de/stbwo/download/pdf/2040713",
+      "iiifManifest": null,
+      "language": "Early New High German",
+      "rights": "Official digitization CC BY-NC-SA 3.0 (noncommercial and share-alike); no automatic commercial image reuse. Original 1521 print vs modern digitization/translation rights distinct; RIGHTS_HOLD / PUBLICATION_HOLD.",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "publicationState": "REFERENCE",
+      "sizeNote": "Historical object [4] printed leaves; 16 scanned digital frames including binding, blanks and library material; all 16 were visually inspected, critical line-by-line diplomatic collation not completed. Digital PDF 3,253,175 bytes.",
+      "sha256": "4fd0fb21456c815bb6d701307bdfe97eeae9080f27aea7b64a1072659a48fe79",
+      "acquisitionState": "VERIFIED_TEMP_DISCARDED",
+      "actualBytes": 3253175,
+      "tempDisposition": "Official library PDF downloaded on 2026-11-04 in unique GUID temp file on authorized Windows machine; %PDF verified, byte length and SHA256 computed, file deleted inside finally. TEMP_CLEANED=True, no PDF retained on local disk or committed to Git.",
+      "intendedNextStep": "Further investigate original 19 April 1521 Conrad Peutinger manuscript/letter; only this *printed report* was visually checked. Do NOT infer that narrator's 'Vnd hab in nit anderst gefunden' is Luther's 'Ich kann nicht anders', or that recycled title woodcut depicts real papal attendance. Reuse rights remain on hold."
     }
   ],
   "requirements": {
