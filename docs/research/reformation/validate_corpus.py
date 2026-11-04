@@ -524,6 +524,9 @@ def validate() -> tuple[list[str], dict[str, int]]:
             or retained.get("actualBytes") != 8239895
             or retained.get("storageClass") != "PRIVATE_RESEARCH_ONLY"):
         problems.append("Zurich 1525 verified retained PDF receipt inconsistent")
+    if (retained.get("visuallyCheckedPages") != [5, 6, 7, 8, 14, 15, 16, 28, 29, 30]
+            or retained.get("fullPageCollationCompleted") is not False):
+        problems.append("Zurich 1525 claimed page/complete-collation status not supported")
     if "Luther_1525_Froschauer_VD16_L4693" not in str(retained.get("localRelativePath", "")):
         problems.append("Zurich 1525 private-retention destination missing")
     if not {"RIGHTS_HOLD", "PUBLICATION_HOLD"} <= set(luther.get("holds", [])):
@@ -532,6 +535,7 @@ def validate() -> tuple[list[str], dict[str, int]]:
             "C95": ("REF-P09-PRINT", meta_sha, "NO_IMAGE_BYTES_NO_TEXT_COLLATION", "CNE/1.0"),
             "C96": ("REF-P09-PRINT", "27 января", "29 января", "DATE_HOLD_ON_EMORY_CARD"),
             "C97": ("REF-P07-ZRH", l_sha, "PERSISTENT_PRIVATE_SOURCE_NOT_PUBLICATION_APPROVAL"),
+            "C98": ("REF-P07-ZRH", "p.6", "p.30", "SAMPLED_PRINTED_LEAVES_NOT_FULL_COLLATION"),
     }.items():
         if any(token not in claim_rows.get(claim_id, "") for token in required):
             problems.append(f"{claim_id}: Zurich evidence/hold regression")
