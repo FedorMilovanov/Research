@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 70,
+  "sourceCount": 72,
   "sources": [
     {
       "id": "REF-P01",
@@ -1270,6 +1270,42 @@
       ],
       "url": "https://tueditions.ulb.tu-darmstadt.de/v/pa000008-0107",
       "verificationNote": "Institutional critical scholarly introduction, sections Die Entstehung des Wormser Edikts, Inhalt, Überlieferung und Textvorlage; date 8 May stated on document, discussion and reading 25 May, Emperor signed German/Latin versions 26 May, printed in Worms 26-30 May. Wrede viewed original German parchment in Vatican 1896 old shelfmark Arm II caps I nr93; today not found, current corresponding Arm I-XVIII 255 contains signed Flemish early print. Regional enforcement inconsistent. Original edition release publicly dated 31 Oct 2021 by EuReD https://eured.de/aktuelles/500-jahre-wormser-edikt-neue-edition-online/; full digital scholarly edition under explicit CC BY 4.0 (https://eured.de), reuse requires attribution; rights for unrelated scans and translations remain separate. EuReD scholarly online edition declared CC BY 4.0; this license pertains to edition text with attribution and does not remove PUBLICATION_HOLD or photo-source collation restrictions.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P43",
+      "documentYear": 1521,
+      "title": "Emperor Charles V public declaration 19 April 1521 in GHDI three-document scholarly translation from Hillerbrand (1964)",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://germanhistorydocs.org/en/from-the-reformations-to-the-thirty-years-war-1500-1648/ghdi:document-4371",
+      "verificationNote": "Part B (Emperor Charles's response) in German Historical Institute GHDI, English translation from Hans J. Hillerbrand 1964 pp89-91,94,99-100. Charles invokes dynasty, Catholic rites, Constance, faith and imperial duty; exact original first-print document NOT photographed, English translation/republication may have separate rights. Distinguish source's historical primary authorship from translation access quality.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-S14",
+      "documentYear": 2017,
+      "title": "Axel Gotthard, Schlaglicht 1521: Luther und Karl V. in Worms, Bundeszentrale für politische Bildung, 18 January 2017",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.bpb.de/themen/zeit-kulturgeschichte/reformation/235570/schlaglicht-1521-luther-und-karl-v-in-worms/",
+      "verificationNote": "bpb article by historian Axel Gotthard dated 18 Jan 2017, sections on alleged formula Hier stehe ich and Charles's Catholic argument; considers popular formula unauthentic and attributed to contemporary editors, while early primary variants require Wrede apparatus. The article's text itself CC BY-NC-ND 3.0 DE, not CC BY 4.0 or original first print; no long quotation or commercial reproduction authorized.",
       "checkedAt": "2026-11-04"
     }
   ]
