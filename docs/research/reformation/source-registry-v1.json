@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 86,
+  "sourceCount": 87,
   "sources": [
     {
       "id": "REF-P01",
@@ -1561,6 +1561,23 @@
       "url": "https://www.irg.uzh.ch/static/zwingli-werke/index.php?n=Werk.17III",
       "verificationNote": "Actual 1905 editorial German text fully read via University of Zurich website: council resolution dated 29 Jan orders Zwingli to continue preaching from Gospel and other priests to preach only supportable Scripture, bans mutual heresy insults and threatens sanctions. It is a Council-authored position, NOT neutral verbatim debate transcript or automatic modern religious toleration. Original B VI 249 photo not obtained.",
       "checkedAt": "2026-11-05"
+    },
+    {
+      "id": "REF-P55",
+      "documentYear": 1523,
+      "title": "Erhard Hegenwald, Handlung der versamlung in Zürich, Zurich 1523, VD16 H1252, ZB Zürich 18.444",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.e-rara.ch/zuz/content/titleinfo/866996",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "ORIGINAL PRINT physically represented by full official e-rara PDF https://www.e-rara.ch/zuz/download/pdf/866996; ZB Zürich 18.444, VD16 H1252, [44] historical printed leaves ≠ 93 digital PDF pages. Acquired full PDF 27360544 bytes SHA256 8554aa33cefb137e642ebba362e4bd9412da807e5efcc4318a99993d5a6c6edc twice independently verified, retained privately at Documents/Research-Primary-Sources/Hegenwald_1523_Zurich_Disputation_VD16_H1252/Hegenwald_Handlung_Zurich_1523_ZB_18_444.pdf. DIRECTLY VISUALLY READ selected PDF pages: p6 historical title XXIX January 1523, pp8-10 Hegenwald dedication, pp11-12 printed council text beginning 'Wir der Burgermeister, Rat vnnd der groß Rat', pp14-15 beginning of meeting report, p85 ending 29 January, p86 numbered 67 Zwingli articles start, pp87,89-91 selected articles, p92 final nos.61-67 with original end 'Getruckt zu Zürich', p93 library stamp. [Christoph Froschauer] is a LIBRARY printer attribution, not personally verified named imprint on original p92. This is a contemporary printed relation, not a council autograph or verbatim speech. Full 93 digital pages NOT all read, NO diplomatic transcription nor textual collation against short Zurich Z819, municipal B VI 249, E I 1.1, Zwingli Werke CR88 (1905) or Emory Augsburg Ramminger. Official e-rara Public Domain Mark with attribution/notice request; no direct publication authorization for unfinished research."
     }
   ]
 }
