@@ -1365,7 +1365,7 @@
     {
       "id": "REF-S15",
       "documentYear": 1896,
-      "title": "Adolf Wrede (ed.), Deutsche Reichstagsakten jüngere Reihe II, Der Reichstag zu Worms 1521, no.80, pp578–583 text and critical apparatus, digitally held BSB bsb11833331",
+      "title": "Adolf Wrede (ed.), Deutsche Reichstagsakten JR II (1896), no.79-80 Worms 1521; original visual collation pp554-556, 569-574, 578-584, BSB bsb11833331",
       "evidenceClass": "B1",
       "accessState": "PARTIAL_OBJECT",
       "locatorState": "EXACT_LOCATOR_VERIFIED",
@@ -1377,7 +1377,7 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://www.digitale-sammlungen.de/en/details/bsb11833331",
-      "verificationNote": "BSB IIIF https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb11833331/manifest 1028 canvases, confirmed labels 578–584 at images 00594–00600. Seven 1800px JPEG derivatives fetched, byte lengths + SHA256 in dossier 12, all removed (TEMP_CLEANED=True). Pages 578–583 reviewed visually; p581 final argument and footnotes, p582 top ending 'Gott helf mir! Amen' then FOOTNOTE c 'F add. Ich kan nicht anders, hie stehe ich.' p583 footnotes review one late printed narrative as very low historical value because it synthesizes more sources (mentions Peutinger letter). This is 1896 scholarly editing, B1, not original 1521 shorthand. MDZ manifest rights https://rightsstatements.org/vocab/NoC-NC/1.0/ noncommercial digitization; not arbitrary CC0.",
+      "verificationNote": "Adolf Wrede, Deutsche Reichstagsakten Jüngere Reihe II (1896), archival digitization BSB bsb11833331. Personally read original critical PRINT pages no.79 pp554-556 (p555 Q add. Ich kan nicht anderst, hie stehe ich; p556 Q Latin + F German same Wittenberg Grüneberg printer do NOT form independent sources for spoken words); no.80 pp569-574 (p569 Sp. copy in Spalatin handwriting NOT demonstrated original author; p570 F German Grüneberg print, Fa its revised impression, U Thomas Anshelm Hagenau; p571 F Nachdruck von U; p572 B Erfurt by Matthes Maler; p573 Wittenberg F/Fa/Q relatively late reprints); German critical text pp578-583 p582 F add. Ich kan nicht anders, hie stehe ich. Physical exemplars P44 Worms and P46 LMU are two direct 1521 imprints but one related PRINT transmission per Wrede, NOT two independent oral witnesses. Nine IIIF 1800px JPEG derivatives of pp554-556 and 569-574 acquired and SHA256/bytes recorded in dossier 12, in addition to seven derivative receipts pp578-584; total 16 files, all discarded TEMP_CLEANED=True. Wrede 1896 editorial stemma and conclusion on late Wittenberg addition do not establish which historical person edited it or what Luther literally said. 16 SHA receipts establish the acquired IIIF derivatives, not BSB master images. BSB manifest rights NoC-NC/1.0, RIGHTS_HOLD / PUBLICATION_HOLD remain. Further early manuscript archetype collation remains ARCHIVE_HOLD; do not treat partial images as all original 1521 manuscripts.",
       "checkedAt": "2026-11-04"
     },
     {
