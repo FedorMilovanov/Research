@@ -243,6 +243,12 @@ def validate() -> tuple[list[str], dict[str, int]]:
         "C49": ("REF-P34", None),
         "C50": ("REF-S08", None),
         "C55": ("REF-P31", None),
+        "C75": ("REF-P39", None),
+        "C77": ("REF-S13", None),
+        "C78": ("REF-S13", None),
+        "C79": ("REF-P40", None),
+        "C82": ("REF-P42", None),
+        "C84": ("REF-P43", None),
     }
     claim_rows = {CLAIM_RE.match(s).group(1): s for s in claims.splitlines() if CLAIM_RE.match(s)}
     for id_, (required, forbidden) in semantic.items():
@@ -255,6 +261,34 @@ def validate() -> tuple[list[str], dict[str, int]]:
         problems.append("REF-P31 provenance no longer identifies 1542 printed base")
     if "2016" not in str(corpus.get("REF-P34", {}).get("verificationNote", "")):
         problems.append("REF-P34 provenance no longer identifies 2016 conservation")
+    # Worms 1521 witness hierarchy and digitization rights are substantive
+    # provenance constraints, not permissions to publish any part of the corpus.
+    worms = {
+        "REF-P39": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
+        "REF-P40": ("PARTIAL_OBJECT", "PUBLICATION_ELIGIBLE"),
+        "REF-P41": ("PARTIAL_OBJECT", "PUBLICATION_ELIGIBLE"),
+        "REF-P42": ("PARTIAL_OBJECT", "RIGHTS_UNKNOWN"),
+        "REF-P43": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
+        "REF-S13": ("PARTIAL_OBJECT", "PUBLICATION_ELIGIBLE"),
+        "REF-S14": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
+    }
+    for ref, (access, rights) in worms.items():
+        w = corpus.get(ref, {})
+        if w.get("accessState") != access or w.get("rightsState") != rights:
+            problems.append(f"{ref}: Worms witness accessibility/rights regression")
+        if "PUBLICATION_HOLD" not in w.get("holds", []):
+            problems.append(f"{ref}: Worms publication hold unexpectedly removed")
+        if "ARCHIVE_HOLD" not in w.get("holds", []):
+            problems.append(f"{ref}: Worms uncollated primary-object hold removed")
+    for id_, substrings in {
+        "C75": ("REF-P39", "REF-S14", "формула"),
+        "C77": ("REF-P40", "REF-S13", "26"),
+        "C79": ("REF-P40", "A1r", "B4"),
+        "C84": ("REF-P43", "GHDI"),
+    }.items():
+        row = claim_rows.get(id_, "")
+        if any(term not in row for term in substrings):
+            problems.append(f"{id_}: incomplete Worms first-print legal chronology or citation")
     for file in HERE.glob("*.md"):
         text = file.read_text(encoding="utf-8")
         for match in MD_LINK_RE.finditer(text):
