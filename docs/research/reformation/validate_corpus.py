@@ -273,7 +273,7 @@ def validate() -> tuple[list[str], dict[str, int]]:
         "REF-S14": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
         "REF-P44": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
         "REF-P45": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
-        "REF-P46": ("CATALOG_ONLY", "RIGHTS_UNKNOWN"),
+        "REF-P46": ("PARTIAL_OBJECT", "RIGHTS_UNKNOWN"),
         "REF-S15": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
         "REF-S16": ("PARTIAL_OBJECT", "RIGHTS_UNKNOWN"),
     }
@@ -290,8 +290,8 @@ def validate() -> tuple[list[str], dict[str, int]]:
         "C77": ("REF-P40", "REF-S13", "26"),
         "C79": ("REF-P40", "A1r", "B4"),
         "C84": ("REF-P43", "GHDI"),
-        "C85": ("REF-P44", "1521", "Blatt 5v"),
-        "C86": ("REF-P44", "REF-P39", "REF-P45"),
+        "C85": ("REF-P44", "REF-P46", "1521", "Blatt 5v"),
+        "C86": ("REF-P44", "REF-P46", "REF-P39", "REF-P45"),
         "C87": ("REF-P39", "REF-P44", "REF-S15"),
         "C88": ("REF-S15", "F add", "S.581"),
         "C89": ("REF-P45", "Neyn"),
@@ -339,10 +339,28 @@ def validate() -> tuple[list[str], dict[str, int]]:
         problems.append("Wrede BSB digital photograph usage restriction removed")
     if "TEMP_CLEANED=True" not in wrede_section:
         problems.append("Wrede temporary photos cleanup not attested")
-    if corpus.get("REF-P46", {}).get("locatorState") != "COARSE_LOCATOR_ONLY":
-        problems.append("Wittenberg Latin 1521 photograph falsely marked fully checked")
-    if "LOCATOR_HOLD" not in corpus.get("REF-P46", {}).get("holds", []):
-        problems.append("Wittenberg Latin 1521 locator hold lost")
+    # LMU VD16 L3650 original three-page PDF was actually visually inspected;
+    # receipts pin the downloaded PDF bytes, not a live network reacquisition.
+    p46 = corpus.get("REF-P46", {})
+    if p46.get("locatorState") != "EXACT_LOCATOR_VERIFIED":
+        problems.append("Wittenberg Latin 1521 original PDF locator must stay verified")
+    if p46.get("url") != "https://epub.ub.uni-muenchen.de/14521/":
+        problems.append("Wittenberg Latin 1521 LMU item permalink changed")
+    if "LOCATOR_HOLD" in p46.get("holds", []):
+        problems.append("Wittenberg Latin 1521 checked leaf falsely still catalog-only")
+    if not {"RIGHTS_HOLD", "PUBLICATION_HOLD", "ARCHIVE_HOLD"} <= set(p46.get("holds", [])):
+        problems.append("Wittenberg Latin 1521 unresolved photo rights or attribution hold removed")
+    latin_pdf = "https://epub.ub.uni-muenchen.de/14521/1/4Luth.209_7.pdf"
+    latin_sha = "2b7bd600f28d1805a46d2d3b577c6f01dbbd2b21a7e70caa8ead518c037edb4f"
+    latin_note = p46.get("verificationNote", "")
+    if any(token not in latin_note for token in
+           (latin_pdf, latin_sha, "2451627", "TEMP_CLEANED=True", "not oral stenography")):
+        problems.append("Wittenberg Latin 1521 checked PDF identity/interpretation receipt missing")
+    if any(token not in wrede_section for token in
+           (latin_pdf, latin_sha, "2451627", "TEMP_CLEANED=True", "PDF 2")):
+        problems.append("Wittenberg Latin 1521 visual receipt missing from dossier 12")
+    if "REF-P46" not in claim_rows.get("C85", "") or "REF-P46" not in claim_rows.get("C86", ""):
+        problems.append("Latin 1521 print disconnected from comparative claims C85-C86")
     for file in HERE.glob("*.md"):
         text = file.read_text(encoding="utf-8")
         for match in MD_LINK_RE.finditer(text):
