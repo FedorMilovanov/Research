@@ -58,7 +58,7 @@
       "sizeNote": "[254] ORIGINAL historical leaves (508 faces), complete official digital PDF 513 PDF pages including platform and binding, 136718994 verified bytes. PDF p4 title, p5 Zwingli's first-person 29 January 1523 account; remainder NOT fully read.",
       "sha256": "3331c5863552131a3f3ad779bae0613b7651f499ed68fee40c8980a340ef77fa",
       "acquisitionState": "DOWNLOADED_VERIFIED",
-      "intendedNextStep": "Transcribe and analyse full 254-leaf commentary by thematic chapter, collate thesis numbers 1–67 against contemporaneous Zurich VD16 Z819 original. Keep title 19 Jan separate from author preface 29 Jan disputation. Rights Public Domain Mark with academic source attribution.",
+      "intendedNextStep": "Transcribe and analyse full 254-leaf commentary by thematic chapter, collate thesis numbers 1–67 against contemporaneous Zurich VD16 Z819 original. Study title's likely printing error XIX instead of XXIX per Wood 2019 p23 n25, comparing the author preface printed 29 January; do NOT fabricate an independent 19 January event. Rights Public Domain Mark with academic source attribution.",
       "actualBytes": 136718994,
       "tempDisposition": "Verified entire official e-rara PDF locally via streaming SHA-256; GUID .part transfer renamed to permanent private file on successful %PDF check; PART_CLEANED=True. Does not belong in public Git.",
       "retainedLocalCopy": {
@@ -78,7 +78,15 @@
         ],
         "fullWordByWordCollation": false,
         "firsthandDisputationDateFromPreface": "29 January 1523 at PDF p5",
-        "originalTitleOtherDate": "19 January 1523 stated in title, separate referent; not a competing event date"
+        "originalTitleOtherDate": "Title literally prints XIX (19 January 1523); Jon D Wood 2019 p23 n25 explicitly explains this is a likely numerical misprint for XXIX (29), not proven separate event date.",
+        "titleNumeralCriticalReading": {
+          "literalPrinted": "XIX",
+          "editorialCorrection": "XXIX",
+          "scholarlySource": "Jon D. Wood, Reforming Priesthood in Reformation Zurich (2019), p.23 note 25",
+          "scholarlyUrl": "https://www.vandenhoeck-ruprecht-verlage.com/downloads/productPreviewFiles/LP_978-3-525-57092-0.pdf",
+          "crossCheck": "Author first-person 1523 preface PDF p5: 29 January 1523; First Zurich Disputation",
+          "separateNineteenJanuaryDisputationEstablished": false
+        }
       }
     },
     {
