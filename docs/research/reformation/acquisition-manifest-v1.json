@@ -6,7 +6,7 @@
   "policy": "data/repository-evidence-policy-v2.json",
   "noExternalPublication": true,
   "fileBytesInGit": 0,
-  "sourceCount": 13,
+  "sourceCount": 14,
   "sourceRecords": [
     {
       "id": "REF-P09-PRINT",
@@ -48,17 +48,46 @@
       "institution": "Zentralbibliothek Zürich",
       "shelfmark": "III N 105",
       "catalog": "https://www.e-rara.ch/zuz/content/titleinfo/867320",
-      "downloadAccess": "Download PDF displayed at institution page",
+      "downloadAccess": "https://www.e-rara.ch/zuz/download/pdf/867320",
       "iiifManifest": "https://www.e-rara.ch/i3f/v20/867320/manifest",
       "language": "German",
       "rights": "Public Domain Mark (ZB Zürich e-rara)",
-      "accessState": "CATALOG_ONLY",
-      "locatorState": "COARSE_LOCATOR_ONLY",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
       "publicationState": "REFERENCE",
-      "sizeNote": "254 leaves; PDF 130.39 MB as reported by institution",
-      "sha256": null,
-      "acquisitionState": "NOT_DOWNLOADED",
-      "intendedNextStep": "Keep separate from short 67-article print. Inspect opening preface and item chronology, then cross-refer conclusions"
+      "sizeNote": "[254] ORIGINAL historical leaves (508 faces), complete official digital PDF 513 PDF pages including platform and binding, 136718994 verified bytes. PDF p4 title, p5 Zwingli's first-person 29 January 1523 account; remainder NOT fully read.",
+      "sha256": "3331c5863552131a3f3ad779bae0613b7651f499ed68fee40c8980a340ef77fa",
+      "acquisitionState": "DOWNLOADED_VERIFIED",
+      "intendedNextStep": "Transcribe and analyse full 254-leaf commentary by thematic chapter, collate thesis numbers 1–67 against contemporaneous Zurich VD16 Z819 original. Study title's likely printing error XIX instead of XXIX per Wood 2019 p23 n25, comparing the author preface printed 29 January; do NOT fabricate an independent 19 January event. Rights Public Domain Mark with academic source attribution.",
+      "actualBytes": 136718994,
+      "tempDisposition": "Verified entire official e-rara PDF locally via streaming SHA-256; GUID .part transfer renamed to permanent private file on successful %PDF check; PART_CLEANED=True. Does not belong in public Git.",
+      "retainedLocalCopy": {
+        "localRelativePath": "Documents/Research-Primary-Sources/Zwingli_1523_Froschauer_Usslegen_VD16_Z821/Zwingli_Usslegen_und_grund_1523_ZB_III_N_105.pdf",
+        "bytes": 136718994,
+        "sha256": "3331c5863552131a3f3ad779bae0613b7651f499ed68fee40c8980a340ef77fa",
+        "storageClass": "PRIVATE_RESEARCH_ONLY",
+        "digitalPages": 513,
+        "historicalLeaves": 254,
+        "sampledPdfPages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fullWordByWordCollation": false,
+        "firsthandDisputationDateFromPreface": "29 January 1523 at PDF p5",
+        "originalTitleOtherDate": "Title literally prints XIX (19 January 1523); Jon D Wood 2019 p23 n25 explicitly explains this is a likely numerical misprint for XXIX (29), not proven separate event date.",
+        "titleNumeralCriticalReading": {
+          "literalPrinted": "XIX",
+          "editorialCorrection": "XXIX",
+          "scholarlySource": "Jon D. Wood, Reforming Priesthood in Reformation Zurich (2019), p.23 note 25",
+          "scholarlyUrl": "https://www.vandenhoeck-ruprecht-verlage.com/downloads/productPreviewFiles/LP_978-3-525-57092-0.pdf",
+          "crossCheck": "Author first-person 1523 preface PDF p5: 29 January 1523; First Zurich Disputation",
+          "separateNineteenJanuaryDisputationEstablished": false
+        }
+      }
     },
     {
       "id": "REF-P15-PRINT",
@@ -261,7 +290,7 @@
       "acquisitionState": "DOWNLOADED_VERIFIED",
       "actualBytes": 8239895,
       "tempDisposition": "Earlier GUID temp copy deleted TEMP_CLEANED=True. A separate verified permanent PRIVATE local copy now retained under Documents/Research-Primary-Sources; no original JPEG/PDF committed to Git.",
-      "intendedNextStep": "Read full 33 digital pages, identify 14 original printed leaves and make diplomatic folio collation against original 1525 Wittenberg Josef Klug witness; obtain e-rara item-specific reproduction license before any public use.",
+      "intendedNextStep": "Read full 33 digital pages, identify 14 original printed leaves and make diplomatic folio collation against original 1525 Wittenberg Josef Klug witness; obtain e-rara item-specific reproduction license before any public use. Entire PDF digital sequence now visually screened including all original faces but NOT fully transcribed or compared with first Wittenberg Josef Klug print; title 'Wittemberg' vs final actual Zurich colophon prevents false print attribution.",
       "retainedLocalCopy": {
         "localRelativePath": "Documents/Research-Primary-Sources/Luther_1525_Froschauer_VD16_L4693/Luther_Ermanunnge_zum_Fride_Zurich_1525_official.pdf",
         "actualBytes": 8239895,
@@ -280,7 +309,16 @@
           29,
           30
         ],
-        "fullPageCollationCompleted": false
+        "fullPageCollationCompleted": false,
+        "wholePdfVisuallyInspected": true,
+        "digitalPages": 33,
+        "historicalLeaves": 14,
+        "titleImprint": "PDF p4 historic title claims Wittemberg 1525",
+        "actualPrinterColophon": "PDF p30 historic colophon states Zurich Cristoffel Froschauer and 1525",
+        "originalFaceRange": [
+          4,
+          31
+        ]
       }
     },
     {
@@ -303,6 +341,52 @@
       "actualBytes": 3253175,
       "tempDisposition": "Official library PDF downloaded on 2026-11-04 in unique GUID temp file on authorized Windows machine; %PDF verified, byte length and SHA256 computed, file deleted inside finally. TEMP_CLEANED=True, no PDF retained on local disk or committed to Git.",
       "intendedNextStep": "Further investigate original 19 April 1521 Conrad Peutinger manuscript/letter; only this *printed report* was visually checked. Do NOT infer that narrator's 'Vnd hab in nit anderst gefunden' is Luther's 'Ich kann nicht anders', or that recycled title woodcut depicts real papal attendance. Reuse rights remain on hold."
+    },
+    {
+      "id": "REF-P09-ZRH-67",
+      "title": "Huldrych Zwingli, Dis nachbestimpten Artikel und Meinungen: 67 short Zurich Articles, 1523, VD16 Z819",
+      "date": "1523",
+      "institution": "Zentralbibliothek Zürich / e-rara",
+      "shelfmark": "Zwingli 9: a.1; VD16 Z 819",
+      "catalog": "https://www.e-rara.ch/zuz/content/titleinfo/263765",
+      "downloadAccess": "https://www.e-rara.ch/zuz/download/pdf/263765",
+      "iiifManifest": "https://www.e-rara.ch/i3f/v20/263765/manifest",
+      "language": "Early New High German",
+      "rights": "Public Domain Mark on ZB Zürich e-rara catalogue; scholarly attribution, institution and stable DOI citation requested. PUBLICATION_HOLD remains until editorial verification.",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "publicationState": "REFERENCE",
+      "sizeNote": "Original FOUR printed leaves, EIGHT historical faces; 13 digital PDF pages (p1 platform, pp2–9 historical complete source, pp10–13 library blanks/binding). All 13 digital pages visually reviewed; 67 numbered articles verified in order. No word-by-word TEI/transcription or inter-print variant collation.",
+      "sha256": "6f7aa50455a95566c82328dc24f42907018ff6c882564a2da46cfcad2f1fe19f",
+      "acquisitionState": "DOWNLOADED_VERIFIED",
+      "actualBytes": 3349092,
+      "tempDisposition": "Downloaded by HTTPS from official e-rara record to GUID .part path, PDF signature/size checked and moved into permanent PRIVATE research archive; temporary parts cleaned PART_CLEANED=True. Public Git contains no binary image/PDF.",
+      "retainedLocalCopy": {
+        "localRelativePath": "Documents/Research-Primary-Sources/Zwingli_1523_Froschauer_67_Theses_VD16_Z819/Zwingli_67_Articles_1523_ZB_Zwingli9_a1.pdf",
+        "bytes": 3349092,
+        "sha256": "6f7aa50455a95566c82328dc24f42907018ff6c882564a2da46cfcad2f1fe19f",
+        "storageClass": "PRIVATE_RESEARCH_ONLY",
+        "digitalPages": 13,
+        "historicalLeaves": 4,
+        "originalPrintPdfPages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "firstArticlePdfPage": 3,
+        "lastArticlePdfPage": 9,
+        "firstNumberedArticle": 1,
+        "lastNumberedArticle": 67,
+        "allDigitalImagesViewed": true,
+        "fullWordByWordCollation": false,
+        "originalColophonPrinterConfirmed": false
+      },
+      "intendedNextStep": "Diplomatically transcribe all 67 articles and compare against Emory Augsburg report 1523 and ZB 254-leaf detailed Usslegen; do not assert editorial independence or copy variant identity from URL metadata."
     }
   ],
   "requirements": {

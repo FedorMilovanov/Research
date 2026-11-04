@@ -547,6 +547,92 @@ def validate() -> tuple[list[str], dict[str, int]]:
         # without reading external original images or their licensing terms.
         if token not in dossier_06 and token != "ЗВ":
             problems.append(f"Zurich main dossier lost audited evidence: {token}")
+    # New genuine 1523 originals: short four-leaf 67-article print and
+    # distinct 254-leaf commentary. Full PDF acquisition ≠ textual collation.
+    z67 = corpus.get("REF-P09-ZRH-67", {})
+    a67 = next((rec for rec in items if rec.get("id") == "REF-P09-ZRH-67"), {})
+    z67_disk = a67.get("retainedLocalCopy", {})
+    z67_sha = "6f7aa50455a95566c82328dc24f42907018ff6c882564a2da46cfcad2f1fe19f"
+    if (z67.get("accessState") != "PARTIAL_OBJECT"
+            or z67.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+            or z67.get("rightsState") != "PUBLICATION_ELIGIBLE"
+            or z67.get("publicationState") != "REFERENCE"
+            or not {"ARCHIVE_HOLD", "PUBLICATION_HOLD"} <= set(z67.get("holds", []))):
+        problems.append("Zwingli Z819 source rights/access prematurely promoted")
+    if (a67.get("acquisitionState") != "DOWNLOADED_VERIFIED"
+            or a67.get("actualBytes") != 3349092 or a67.get("sha256") != z67_sha
+            or z67_disk.get("bytes") != 3349092
+            or z67_disk.get("sha256") != z67_sha
+            or z67_disk.get("historicalLeaves") != 4
+            or z67_disk.get("digitalPages") != 13
+            or z67_disk.get("originalPrintPdfPages") != list(range(2, 10))
+            or z67_disk.get("firstNumberedArticle") != 1
+            or z67_disk.get("lastNumberedArticle") != 67
+            or z67_disk.get("allDigitalImagesViewed") is not True
+            or z67_disk.get("fullWordByWordCollation") is not False
+            or z67_disk.get("originalColophonPrinterConfirmed") is not False):
+        problems.append("Zwingli Z819 four-leaf original scanned/retained receipt, text or printer limit altered")
+    if ("Zwingli_1523_Froschauer_67_Theses_VD16_Z819"
+            not in str(z67_disk.get("localRelativePath", ""))):
+        problems.append("Zwingli Z819 original PDF destination lost")
+    if any(x not in str(z67.get("verificationNote", "")) for x in
+           (z67_sha, "13 DIGITAL", "67", "not a word-for-word", "LIBRARY BIBLIOGRAPHIC")):
+        problems.append("Zwingli Z819 provenance or printing caveat lost")
+    zlong = corpus.get("REF-P09-EXPLANATION", {})
+    a_long = next((rec for rec in items if rec.get("id") == "REF-P09-EXPLANATION"), {})
+    long_disk = a_long.get("retainedLocalCopy", {})
+    long_sha = "3331c5863552131a3f3ad779bae0613b7651f499ed68fee40c8980a340ef77fa"
+    if (zlong.get("accessState") != "PARTIAL_OBJECT"
+            or zlong.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+            or "ARCHIVE_HOLD" not in zlong.get("holds", [])
+            or "PUBLICATION_HOLD" not in zlong.get("holds", [])):
+        problems.append("Zwingli Z821 commentary research hold removed")
+    if (a_long.get("acquisitionState") != "DOWNLOADED_VERIFIED"
+            or a_long.get("sha256") != long_sha
+            or a_long.get("actualBytes") != 136718994
+            or long_disk.get("sha256") != long_sha
+            or long_disk.get("bytes") != 136718994
+            or long_disk.get("digitalPages") != 513
+            or long_disk.get("historicalLeaves") != 254
+            or long_disk.get("sampledPdfPages") != [1, 2, 3, 4, 5, 6]
+            or long_disk.get("fullWordByWordCollation") is not False
+            or long_disk.get("firsthandDisputationDateFromPreface") != "29 January 1523 at PDF p5"
+            or long_disk.get("titleNumeralCriticalReading", {}).get("literalPrinted") != "XIX"
+            or long_disk.get("titleNumeralCriticalReading", {}).get("editorialCorrection") != "XXIX"
+            or long_disk.get("titleNumeralCriticalReading", {}).get("separateNineteenJanuaryDisputationEstablished") is not False):
+        problems.append("Zwingli Z821 acquired 254-leaf original, date or incomplete collation altered")
+    if ("Zwingli_1523_Froschauer_Usslegen_VD16_Z821"
+            not in str(long_disk.get("localRelativePath", ""))):
+        problems.append("Zwingli Z821 retained original PDF path missing")
+    if any(x not in str(zlong.get("verificationNote", "")) for x in
+           (long_sha, "29 tag Jenners", "513 DIGITAL", "XIX [sic]", "XXIX", "NOT complete")):
+        problems.append("Zwingli 1523 original author dating/context lost")
+    if (retained.get("wholePdfVisuallyInspected") is not True
+            or retained.get("digitalPages") != 33
+            or retained.get("historicalLeaves") != 14
+            or retained.get("fullPageCollationCompleted") is not False
+            or "Wittemberg" not in str(retained.get("titleImprint", ""))
+            or "Zurich" not in str(retained.get("actualPrinterColophon", ""))):
+        problems.append("Zurich 1525 Froschauer actual colophon/title and full visual PDF limits lost")
+    for cid, substrings in {
+        "C99": ("REF-P09-ZRH-67", z67_sha, "ZURICH_67_FULL_IMAGE_SEQUENCE_NOT_FULL_TRANSCRIPTION"),
+        "C100": ("REF-P09-EXPLANATION", "29 января", "19 января", "1523_FIRST_PERSON_29_JAN_NOT_19_TITLE_OR_27_METADATA", "TITLE_XIX_SCHOLARLY_CORRECTED_TO_XXIX_NOT_SEPARATE_EVENT", "Wood"),
+        "C101": ("REF-P09-EXPLANATION", long_sha, "FULL_BYTES_NOT_FULL_TRANSCRIPTION"),
+        "C102": ("REF-P07-ZRH", "p.4", "p.30", "TITLE_WITTENBERG_COLOPHON_ZURICH"),
+    }.items():
+        if any(t not in claim_rows.get(cid, "") for t in substrings):
+            problems.append(f"{cid}: new primary-copy acquisition/chronology evidence lost")
+    source_readings = (HERE / "02_open_primary_sources_and_reading.md").read_text(encoding="utf-8")
+    if not all(f"| {k} |" in source_readings for k in
+               ("REF-P09-PRINT", "REF-P09-ZRH-67", "REF-P09-EXPLANATION")):
+        problems.append("Three distinct 1523 printed witness entries improperly conflated")
+    collation = (HERE / "06_primary_source_collation_2026-11-04.md").read_text(
+        encoding="utf-8")
+    if any(t not in collation for t in
+           ("## 10. Два реально сохранённых", z67_sha, long_sha,
+            "PDF p.5", "29 января 1523", "XIX", "XXIX", "Jon D. Wood", "254", "67", "Ramminger",
+            "Wittemberg", "колофон", "PUBLICATION_HOLD")):
+        problems.append("Zwingli original 1523 visual-page map or publisher limits lost")
     # Enforce source interpretation without inventing independent eyewitnesses:
     # a byte receipt cannot prove the letter autograph or oral delivery.
     for file in HERE.glob("*.md"):
