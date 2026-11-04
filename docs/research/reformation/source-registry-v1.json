@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 61,
+  "sourceCount": 65,
   "sources": [
     {
       "id": "REF-P01",
@@ -615,7 +615,7 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://archives-etat-ge.ch/page_de_base/18-sources/",
-      "verificationNote": "AEG manuscript/exhibition labels 20 Nov 1541 while education subsite says 30 Nov. Evidence conflict requires R.C. 1541 council manuscript; no resolved date.",
+      "verificationNote": "AEG Cp Past R1 pp1–15 and PH1384 identify ordinances (1541); AEG «La Réforme», «Présentation des sources» and Historisches Lexikon der Schweiz explicitly date General Council adoption 20 November 1541. Internal AEG education pages say 30 Nov in editorial prose but display original PH1384 caption 20 November. Independent Schaff 19c history §96 cites Council records Oct27, Nov9, Nov20 and 2 Jan 1542 (R.C. XXXV f449) as separate pre-print amendment stage. 20 Nov supported; 30 Nov likely web editorial error, provenance of typo not resolved. French manuscript folios and original R.C. images NOT physically collated. Four offices and text selected in AEG exhibit.",
       "checkedAt": "2026-11-04"
     },
     {
@@ -1113,6 +1113,78 @@
       ],
       "url": "https://users.ox.ac.uk/~fmml2152/Reformation/Luther1525-Rotten.pdf",
       "verificationNote": "Oxford printed-pamphlet historical/bibliographic introduction records Taylorian ARCH.8°.G.1525(11) [Wittenberg Josef Klug] VD16 L4690; earliest print-run with unfilled title border distinct from later version with Psalm text. Source document actual folios not collated; secondary scholarly identification of primary object.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-S10",
+      "documentYear": 1892,
+      "title": "Philip Schaff, History of the Christian Church, vol VIII, Swiss Reformation, section 96, council records chronology 1541–1542",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://ccel.org/ccel/schaff/hcc8/hcc8.iv.xii.iv.html",
+      "verificationNote": "Schaff vol. VIII first edition dated 1892 (author's 12 Oct 1892 postscript; 2nd edition preface dated 9 Aug 1893), §96 accessed; explicitly gives 27 October Small Council, 9 November Two Hundred, 20 November 1541 General Council, 2 January 1542 reconsideration before printing and quoted record R.C. vol XXXV f449. This is later printed scholarly citation of records, NOT personal reading of original manuscript; sect. numbering varies between editions.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P22-TRANSLATION",
+      "documentYear": 1541,
+      "title": "Geneva Ecclesiastical Ordinances 1541, English edited translation posted by University of Oregon history course",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://pages.uoregon.edu/sshoemak/323/texts/Calvin%20-%20Ecclesiastical%20Ordinances.htm",
+      "verificationNote": "Historical text via modern English translation University of Oregon. Text opened with section locators four orders, pastors' selection, school (notes pre-existing separate girls' school), elders elected partly by government, deacons/hospital, four annual communion seasons. Square-bracketed additions described as Genevan council amendments by translator. Exact French manuscript and edition provenance of English compilation NOT collated.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P37",
+      "documentYear": 1429,
+      "title": "François de Versonnex school donation, 30 Jan 1429, Archives d'État de Genève P.H. 475",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://archives-etat-ge.ch/page_de_base/5-1541-1556-retour-de-calvin/",
+      "verificationNote": "AEG institutional exhibit Calvin et l'éducation includes exact archival P.H.475 and selected Latin excerpt of 1429 donation, also reports 1428 Council decision and 1502 statutes. Demonstrates pre-Calvin school exists, not mass literacy or equal enrollment. Original folio not scanned/fully collated by us.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P38",
+      "documentYear": 1542,
+      "title": "Registres du Consistoire de Genève au temps de Calvin, volume I (1542–1544), AEG Consistoire R.1; Lambert and Watt critical edition, Droz 1996",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://ge.ch/arvaegconsult/ws/consaeg/public/fiche/imageHeader?key=97289",
+      "verificationNote": "AEG Adhémar catalog Consistoire R1 covers 16 Feb 1542–3 Jul 1544 (237 original images noted), with licensed online scholarly Droz 1996 edition PDF 552 pages, ©2023 reproduction limits. Directly viewed modern printed page 1 (PDF zero-based page 42, screenshot) and note 2: 16 Feb 1542 is TENTH session; first NINE session minutes are lost. Editor's footnote cites R.C. 35 f442v (23 Dec 1541) and f485/489/494v (Feb 1542), and f499v (14 Feb 1542) for ongoing civic involvement. This is critical transcription and scholarly annotation, NOT visual collation of 1542 manuscript folio; no mass reproduction rights or full-object claim.",
       "checkedAt": "2026-11-04"
     }
   ]
