@@ -6,7 +6,7 @@
   "policy": "data/repository-evidence-policy-v2.json",
   "noExternalPublication": true,
   "fileBytesInGit": 0,
-  "sourceCount": 11,
+  "sourceCount": 12,
   "sourceRecords": [
     {
       "id": "REF-P09-PRINT",
@@ -216,6 +216,27 @@
       "sha256": null,
       "acquisitionState": "NOT_DOWNLOADED",
       "intendedNextStep": "Confirm catalog entry via KB and locate folios in B17, original scan and separate Recess Vasteras record"
+    },
+    {
+      "id": "REF-P07-ZRH",
+      "title": "Luther, Ermanunnge zum Fride on Twelve Articles, Zürich Christoph Froschauer 1525, VD16 L4693",
+      "date": "1525",
+      "institution": "Zentralbibliothek Zürich / e-rara",
+      "shelfmark": "AW 327; VD16 L4693",
+      "catalog": "https://www.e-rara.ch/zuz/content/titleinfo/215807",
+      "downloadAccess": "https://www.e-rara.ch/download/pdf/215807.pdf",
+      "iiifManifest": "https://www.e-rara.ch/i3f/v20/215807/manifest",
+      "language": "Early New High German",
+      "rights": "Rights of complete reproduction not independently cleared for separate published product; archive item license/attribution must be checked",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "publicationState": "REFERENCE",
+      "sizeNote": "14 leaves; PDF actual 8,239,895 bytes on successful direct remote retrieval 2026-11-04",
+      "sha256": "898107c6e63848aca753e8c0989520ffa3c008ca37bf33f7835bc6cfbbb49239",
+      "acquisitionState": "VERIFIED_TEMP_DISCARDED",
+      "actualBytes": 8239895,
+      "tempDisposition": "Downloaded once in a GUID temp path on authorized Windows device, validated %PDF- magic, computed SHA256, deleted in finally (TEMP_CLEANED=True); NO retained local PDF or bytewise page collation.",
+      "intendedNextStep": "User can download official PDF using verified link for personal study; after legal local acquisition compare actual leaves to Wittenberg Klug first print and later 1525 anti-peasant text, record witness variants"
     }
   ],
   "requirements": {
