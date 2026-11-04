@@ -596,13 +596,16 @@ def validate() -> tuple[list[str], dict[str, int]]:
             or long_disk.get("historicalLeaves") != 254
             or long_disk.get("sampledPdfPages") != [1, 2, 3, 4, 5, 6]
             or long_disk.get("fullWordByWordCollation") is not False
-            or long_disk.get("firsthandDisputationDateFromPreface") != "29 January 1523 at PDF p5"):
+            or long_disk.get("firsthandDisputationDateFromPreface") != "29 January 1523 at PDF p5"
+            or long_disk.get("titleNumeralCriticalReading", {}).get("literalPrinted") != "XIX"
+            or long_disk.get("titleNumeralCriticalReading", {}).get("editorialCorrection") != "XXIX"
+            or long_disk.get("titleNumeralCriticalReading", {}).get("separateNineteenJanuaryDisputationEstablished") is not False):
         problems.append("Zwingli Z821 acquired 254-leaf original, date or incomplete collation altered")
     if ("Zwingli_1523_Froschauer_Usslegen_VD16_Z821"
             not in str(long_disk.get("localRelativePath", ""))):
         problems.append("Zwingli Z821 retained original PDF path missing")
     if any(x not in str(zlong.get("verificationNote", "")) for x in
-           (long_sha, "29 tag Jenners", "513 DIGITAL", "19", "NOT complete")):
+           (long_sha, "29 tag Jenners", "513 DIGITAL", "XIX [sic]", "XXIX", "NOT complete")):
         problems.append("Zwingli 1523 original author dating/context lost")
     if (retained.get("wholePdfVisuallyInspected") is not True
             or retained.get("digitalPages") != 33
@@ -613,7 +616,7 @@ def validate() -> tuple[list[str], dict[str, int]]:
         problems.append("Zurich 1525 Froschauer actual colophon/title and full visual PDF limits lost")
     for cid, substrings in {
         "C99": ("REF-P09-ZRH-67", z67_sha, "ZURICH_67_FULL_IMAGE_SEQUENCE_NOT_FULL_TRANSCRIPTION"),
-        "C100": ("REF-P09-EXPLANATION", "29 января", "19 января", "1523_FIRST_PERSON_29_JAN_NOT_19_TITLE_OR_27_METADATA"),
+        "C100": ("REF-P09-EXPLANATION", "29 января", "19 января", "1523_FIRST_PERSON_29_JAN_NOT_19_TITLE_OR_27_METADATA", "TITLE_XIX_SCHOLARLY_CORRECTED_TO_XXIX_NOT_SEPARATE_EVENT", "Wood"),
         "C101": ("REF-P09-EXPLANATION", long_sha, "FULL_BYTES_NOT_FULL_TRANSCRIPTION"),
         "C102": ("REF-P07-ZRH", "p.4", "p.30", "TITLE_WITTENBERG_COLOPHON_ZURICH"),
     }.items():
@@ -627,7 +630,7 @@ def validate() -> tuple[list[str], dict[str, int]]:
         encoding="utf-8")
     if any(t not in collation for t in
            ("## 10. Два реально сохранённых", z67_sha, long_sha,
-            "PDF p.5", "29 января 1523", "254", "67", "Ramminger",
+            "PDF p.5", "29 января 1523", "XIX", "XXIX", "Jon D. Wood", "254", "67", "Ramminger",
             "Wittemberg", "колофон", "PUBLICATION_HOLD")):
         problems.append("Zwingli original 1523 visual-page map or publisher limits lost")
     # Enforce source interpretation without inventing independent eyewitnesses:
