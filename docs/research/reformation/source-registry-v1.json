@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 30,
+  "sourceCount": 32,
   "sources": [
     {
       "id": "REF-P01",
@@ -543,6 +543,42 @@
       ],
       "url": "https://adfonteslibrary.org/work-council-trent-session-06",
       "verificationNote": "Historical English translation examined, chapters V-IX and Canons IX XI XII; Latin official text not independently collated; Trent does not claim prior good works merit first grace.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P09-PRINT",
+      "documentYear": 1523,
+      "title": "Zwingli, Verwenung der disputatz zü Zürch, printed 67 Articles, Augsburg Ramminger",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://digital.pitts.emory.edu/s/digital-collections/item/14023",
+      "verificationNote": "Pitts/Emory first edition, 1523, 16 pages, local call 1523 ZWIN A, NO COPYRIGHT US; original scan via IIIF not collated",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P09-EXPLANATION",
+      "documentYear": 1523,
+      "title": "Zwingli, Ußlegen und gründ der schlußreden oder Artickle[n], Zürich Froschauer",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.e-rara.ch/zuz/content/titleinfo/867320",
+      "verificationNote": "Zentralbibliothek Zürich III N 105, VD16 Z821, 254 leaves, DOI 10.3931/e-rara-2782, Public Domain Mark; not identical to short printed 67 Articles; no full scan collation",
       "checkedAt": "2026-11-04"
     }
   ]
