@@ -485,6 +485,64 @@ def validate() -> tuple[list[str], dict[str, int]]:
     if "| REF-P48 |" not in (HERE / "02_open_primary_sources_and_reading.md").read_text(
             encoding="utf-8"):
         problems.append("Weimar Reg E81 autograph missing from primary source list")
+    # Zurich research acquisition 2026-11-04: metadata manifest alone is NOT
+    # a photographed or read 1523 original; the 1525 official PDF is a real
+    # privately retained local copy, NOT released and NOT word-by-word collated.
+    zwingli = corpus.get("REF-P09-PRINT", {})
+    z_man = next((rec for rec in items if rec.get("id") == "REF-P09-PRINT"), {})
+    z_meta = z_man.get("metadataReceipt", {})
+    meta_sha = "367e21601ed4c3d66126977e0e4e83fc5792b04964861ed41e8a508ce1183fa7"
+    if zwingli.get("accessState") != "CATALOG_ONLY" or zwingli.get("locatorState") != "EXACT_LOCATOR_VERIFIED":
+        problems.append("Zurich 1523 image-blocked work falsely promoted to read source")
+    if zwingli.get("rightsState") != "RIGHTS_UNKNOWN" or not {
+            "ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"} <= set(zwingli.get("holds", [])):
+        problems.append("Zurich 1523 NoC-US/CNE image-rights discrepancy silently dropped")
+    if z_man.get("acquisitionState") != "NOT_DOWNLOADED" or z_man.get("sha256") is not None:
+        problems.append("Zurich 1523 original JPEGs falsely registered as downloaded")
+    if (z_meta.get("sha256") != meta_sha or z_meta.get("actualBytes") != 90592
+            or z_meta.get("canvases") != 29 or z_meta.get("physicalPrintedPages") != 16
+            or z_meta.get("imageFilesDownloaded") != 0 or z_meta.get("retained") is not True):
+        problems.append("Zurich 1523 verified bibliographic manifest receipt corrupted")
+    if (z_meta.get("rightsManifest") != "https://rightsstatements.org/vocab/CNE/1.0/"
+            or z_meta.get("rightsItem") != "https://rightsstatements.org/page/NoC-US/1.0/"):
+        problems.append("Zurich 1523 conflicting image-rights metadata lost")
+    if any(t not in str(zwingli.get("verificationNote", "")) for t in
+           (meta_sha, "HTTP 403", "29", "16", "NoC-US", "CNE/1.0")):
+        problems.append("Zurich 1523 original print metadata/copyright qualification lost")
+    luther = corpus.get("REF-P07-ZRH", {})
+    l_acq = next((rec for rec in items if rec.get("id") == "REF-P07-ZRH"), {})
+    retained = l_acq.get("retainedLocalCopy", {})
+    l_sha = "898107c6e63848aca753e8c0989520ffa3c008ca37bf33f7835bc6cfbbb49239"
+    if (luther.get("accessState") != "PARTIAL_OBJECT"
+            or luther.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+            or "ARCHIVE_HOLD" not in luther.get("holds", [])):
+        problems.append("Zurich 1525 original PDF access/partial transcription misclassified")
+    if (l_acq.get("acquisitionState") != "DOWNLOADED_VERIFIED"
+            or l_acq.get("actualBytes") != 8239895
+            or l_acq.get("sha256") != l_sha
+            or retained.get("sha256") != l_sha
+            or retained.get("actualBytes") != 8239895
+            or retained.get("storageClass") != "PRIVATE_RESEARCH_ONLY"):
+        problems.append("Zurich 1525 verified retained PDF receipt inconsistent")
+    if "Luther_1525_Froschauer_VD16_L4693" not in str(retained.get("localRelativePath", "")):
+        problems.append("Zurich 1525 private-retention destination missing")
+    if not {"RIGHTS_HOLD", "PUBLICATION_HOLD"} <= set(luther.get("holds", [])):
+        problems.append("Zurich 1525 private archive erroneously treated as publication permission")
+    for claim_id, required in {
+            "C95": ("REF-P09-PRINT", meta_sha, "NO_IMAGE_BYTES_NO_TEXT_COLLATION", "CNE/1.0"),
+            "C96": ("REF-P09-PRINT", "27 января", "29 января", "DATE_HOLD_ON_EMORY_CARD"),
+            "C97": ("REF-P07-ZRH", l_sha, "PERSISTENT_PRIVATE_SOURCE_NOT_PUBLICATION_APPROVAL"),
+    }.items():
+        if any(token not in claim_rows.get(claim_id, "") for token in required):
+            problems.append(f"{claim_id}: Zurich evidence/hold regression")
+    dossier_06 = (HERE / "06_primary_source_collation_2026-11-04.md").read_text(encoding="utf-8")
+    for token in ("## 9. Реальное пополнение", meta_sha, l_sha,
+                  "29 цифровых кадров", "NoC-US", "CNE/1.0",
+                  "ЗВ", "частной библиотеке"):
+        # A limited list of structural evidence/claims; cannot prove content
+        # without reading external original images or their licensing terms.
+        if token not in dossier_06 and token != "ЗВ":
+            problems.append(f"Zurich main dossier lost audited evidence: {token}")
     # Enforce source interpretation without inventing independent eyewitnesses:
     # a byte receipt cannot prove the letter autograph or oral delivery.
     for file in HERE.glob("*.md"):
