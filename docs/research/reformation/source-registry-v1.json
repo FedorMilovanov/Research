@@ -1,9 +1,9 @@
 {
   "schema": "reformation-research-sources-v1",
   "scope": "research-only",
-  "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04",
+  "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 27,
+  "sourceCount": 30,
   "sources": [
     {
       "id": "REF-P01",
@@ -19,7 +19,7 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://editions.mml.ox.ac.uk/editions/luther-95-theses/",
-      "verificationNote": "theses 43,62,71 checked in Latin transcription; modern facsimile is not 1517 print",
+      "verificationNote": "2026-11-04: Latin theses 21,27-28,36,43,45,49,62,71-72,76,82,86,89 and preamble checked in Oxford transcription; not collated against 1517 print",
       "checkedAt": "2026-11-04"
     },
     {
@@ -54,7 +54,7 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://www.gutenberg.org/cache/epub/31604/pg31604.html",
-      "verificationNote": "1915 English translation; original autograph not personally inspected",
+      "verificationNote": "1915 translation; institution THULB (Ott 2017) states original autograph in Stockholm but Leppin/Wengert (2015 p.379) states letters not surviving; original scan not inspected; separate source REF-P02-ARCHIVE",
       "checkedAt": "2026-11-04"
     },
     {
@@ -215,7 +215,7 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://tueditions.ulb.tu-darmstadt.de/v/pa000008-0123",
-      "verificationNote": "early printed witness transcript checked for document title and date",
+      "verificationNote": "DDE VD16 D3013, Vienna ONB *69.E.94.(12), Blatt B v lines 552-569 checked; no photographic page collation",
       "checkedAt": "2026-11-04"
     },
     {
@@ -224,7 +224,7 @@
       "title": "Speyer Reichsabschied and anti-anabaptist mandate",
       "evidenceClass": "A1",
       "accessState": "PARTIAL_OBJECT",
-      "locatorState": "COARSE_LOCATOR_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
       "holds": [
@@ -233,7 +233,7 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://tueditions.ulb.tu-darmstadt.de/v/pa000008-0111",
-      "verificationNote": "primary digital edition available; mandate dated 23 April",
+      "verificationNote": "DDE VD16 ZV13031, Halle ULB Kg2101 4°, appendix Blatt Dii r lines 876-900 and 930-946 checked; statute and mandate distinguished",
       "checkedAt": "2026-11-04"
     },
     {
@@ -250,7 +250,7 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://germanhistorydocs.org/en/from-the-reformations-to-the-thirty-years-war-1500-1648/ghdi:document-4311",
-      "verificationNote": "date 3 October and article 15 are text-specific references",
+      "verificationNote": "GHDI translated Articles 5-7,10,14,15 inspected; WA 30/3:160-171 and translator Ellen Yutzy Glebe identified; signed manuscript not collated",
       "checkedAt": "2026-11-04"
     },
     {
@@ -285,7 +285,7 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://els.org/beliefs/augsburgconfession/",
-      "verificationNote": "official denomination edition in English; not critical German/Latin 1530",
+      "verificationNote": "ELS English text Arts IV/VI checked; original German/Latin 1530 yet to collate",
       "checkedAt": "2026-11-04"
     },
     {
@@ -304,7 +304,7 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://archive.org/details/werkekritischege53luthuoft",
-      "verificationNote": "source map cites 536-542; no first-hand visual collation this turn",
+      "verificationNote": "WA 53 cited in inherited ledger only; independent e-rara first print VD16 L7153 now identified in REF-P15-PRINT; leaf correspondence with WA pages 536-542 NOT collated",
       "checkedAt": "2026-11-04"
     },
     {
@@ -394,7 +394,7 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/112615/Leppin_306.pdf?sequence=1",
-      "verificationNote": "2015 Lutheran Quarterly 29:373-398, first and final selected pages reviewed; not full 26-page reading",
+      "verificationNote": "2015 LQ 29:373–398 PDF sampled text/figures pp 374-390 incl for/against arguments pp 387–389 and conclusion p390; its p379 claim neither letter survived conflicts with THULB Ott 2017; full appendix not read",
       "checkedAt": "2026-11-04"
     },
     {
@@ -489,6 +489,60 @@
       ],
       "url": "source-ledger-2026-11-03-original.md",
       "verificationNote": "exact source text copied and verified against supplied attachment; claims not independently promoted",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P02-ARCHIVE",
+      "documentYear": 2017,
+      "title": "Joachim Ott, THULB Jena, Luther letter to Albrecht and Rörer translation",
+      "evidenceClass": "A2",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.db-thueringen.de/servlets/MCRFileNodeServlet/dbt_derivate_00056148/THULB_OdM_2017_10.pdf",
+      "verificationNote": "Official THULB PDF pp1-2: autograph stated in Riksarkivet Stockholm, attached theses lost; Rörer Ms Bos o17e fols 3v-5r in Jena. Contradicts Leppin/Wengert 2015 p379. Archive original still not inspected.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P15-PRINT",
+      "documentYear": 1543,
+      "title": "Luther, Von den Jüden vnd iren Lügen, Wittenberg Hans Lufft 1543, Basel print VD16 L 7153",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.e-rara.ch/bau_1/content/titleinfo/30171079",
+      "verificationNote": "Universitätsbibliothek Basel UBH FN XI 19:2, DOI 10.3931/e-rara-135864, 143 leaves. PDM indicated, 63.73MB PDF, 392KB OCR, IIIF; full PDF bytes not downloaded/hashed, primary leaves not collated. Not VD16 L7154.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P20",
+      "documentYear": 1547,
+      "title": "Council of Trent, Session VI, Decree on Justification (13 January 1547)",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://adfonteslibrary.org/work-council-trent-session-06",
+      "verificationNote": "Historical English translation examined, chapters V-IX and Canons IX XI XII; Latin official text not independently collated; Trent does not claim prior good works merit first grace.",
       "checkedAt": "2026-11-04"
     }
   ]
