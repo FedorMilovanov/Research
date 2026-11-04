@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 44,
+  "sourceCount": 48,
   "sources": [
     {
       "id": "REF-P01",
@@ -798,6 +798,81 @@
       ],
       "url": "https://www.rps.ac.uk/search.php?action=print&filename=jamesvi_trans&id=10151&type=trans",
       "verificationNote": "RPS translation of 1581 act explicitly ratifies laws on reformed kirk, lists Scots Confession and anti-papal acts; is later legal testimony, not Crown confirmation in 1560.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P27",
+      "documentYear": 1599,
+      "title": "Henri IV, Edict of Nantes 1598 in diplomatic Paris 1599 print, TU Darmstadt DDE",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://tueditions.ulb.tu-darmstadt.de/v/pa000001-0063",
+      "verificationNote": "DDE bilingual diplomatic/normalized French TEI source 1599 2332 lines with BnF Gallica leaf links; articles III ~L230-265, VI L309-324, VII starts L325, XIII L477-487, XIV L488-504, XVI L512-532, LXXIII-LXXIV L1681-1713 read. XML edition CC BY 4.0; early print photos not collated; distinct date of Edict (1598) and print registration (25 Feb 1599).",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P28",
+      "documentYear": 1559,
+      "title": "Confessio Gallicana / French Reformed Confession (1559/1571), original text in Schaff 1864-based reprint",
+      "evidenceClass": "A2",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://ccel.org/ccel/schaff/creeds3/creeds3.iv.vii.html",
+      "verificationNote": "Schaff reproduces 1864 Toulouse modernised French version, not original 1559; short 35 vs long 40 versions discussed in vol I. First synod Paris 1559 and La Rochelle 1571 confirmed by Musee protestant/Archives Charente-Maritime, but first printed witness not collated.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P29",
+      "documentYear": 1598,
+      "title": "Nantes Edict, Archives nationales J//943/2 (AE/II/763), original manuscript/image locator",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://fr.wikisource.org/wiki/Page:%C3%89dit_de_Nantes._Page_24_-_Archives_Nationales_-_AE-II-763.jpg",
+      "verificationNote": "Archive shelfmark given in Wikisource page of archives image; primary archive original not opened/compared to DDE Paris 1599 text. Not publication-rights cleared.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P30",
+      "documentYear": 1571,
+      "title": "Reformed church discipline and confession, Synod of La Rochelle 1571, Charente-Maritime departmental archive C134",
+      "evidenceClass": "A2",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://archives.charente-maritime.fr/actualites/document-du-mois-discipline-ecclesiastique-des-eglises-reformees-france",
+      "verificationNote": "Institutional article confirms 1559 Paris confession/discipline and 1571 La Rochelle, fonds C134; original archival document not fully imaged or collated.",
       "checkedAt": "2026-11-04"
     }
   ]
