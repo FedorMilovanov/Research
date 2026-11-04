@@ -6,7 +6,7 @@
   "policy": "data/repository-evidence-policy-v2.json",
   "noExternalPublication": true,
   "fileBytesInGit": 0,
-  "sourceCount": 14,
+  "sourceCount": 15,
   "sourceRecords": [
     {
       "id": "REF-P09-PRINT",
@@ -387,6 +387,55 @@
         "originalColophonPrinterConfirmed": false
       },
       "intendedNextStep": "Diplomatically transcribe all 67 articles and compare against Emory Augsburg report 1523 and ZB 254-leaf detailed Usslegen; do not assert editorial independence or copy variant identity from URL metadata."
+    },
+    {
+      "id": "REF-P55",
+      "title": "Erhard Hegenwald, Handlung der versamlung, Zürich 1523 (VD16 H1252)",
+      "date": "1523",
+      "institution": "Zentralbibliothek Zürich",
+      "shelfmark": "18.444",
+      "catalog": "https://www.e-rara.ch/zuz/content/titleinfo/866996",
+      "downloadAccess": "https://www.e-rara.ch/zuz/download/pdf/866996",
+      "iiifManifest": "https://www.e-rara.ch/i3f/v20/866996/manifest",
+      "language": "German",
+      "rights": "Public Domain Mark at e-rara; scholarly attribution requested; PUBLICATION_HOLD pending complete collation",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "publicationState": "REFERENCE",
+      "sizeNote": "[44] historical leaves, 93 digital PDF pages; some service/binding images",
+      "sha256": "8554aa33cefb137e642ebba362e4bd9412da807e5efcc4318a99993d5a6c6edc",
+      "acquisitionState": "DOWNLOADED_VERIFIED",
+      "actualBytes": 27360544,
+      "tempDisposition": "Completed verified download moved .part to retained final private PDF; no archive PDF committed to Git",
+      "retainedLocalCopy": {
+        "localRelativePath": "Documents/Research-Primary-Sources/Hegenwald_1523_Zurich_Disputation_VD16_H1252/Hegenwald_Handlung_Zurich_1523_ZB_18_444.pdf",
+        "bytes": 27360544,
+        "sha256": "8554aa33cefb137e642ebba362e4bd9412da807e5efcc4318a99993d5a6c6edc",
+        "digitalPages": 93,
+        "historicalLeaves": 44,
+        "visualSamplePdfPages": [
+          6,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14,
+          15,
+          85,
+          86,
+          87,
+          89,
+          90,
+          91,
+          92,
+          93
+        ],
+        "fullPageCollationCompleted": false,
+        "originalPlaceImprint": "Getruckt zu Zürich",
+        "printerNamedInImprint": false
+      },
+      "intendedNextStep": "Collate original 1523 Hegenwald print against independent VD16 Z819 and 1905 Zwingli Werke 17 II/III, municipal records B VI 249 and E I 1.1. No full text or oral verbatim claims."
     }
   ],
   "requirements": {
