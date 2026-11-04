@@ -139,7 +139,8 @@
       "sizeNote": null,
       "sha256": null,
       "acquisitionState": "NOT_DOWNLOADED",
-      "intendedNextStep": "Acquire full images with confirmed provider rights, record print imprint folios, collate Latin vs 1539 Danish"
+      "intendedNextStep": "Acquire full images with confirmed provider rights, record print imprint folios, collate Latin vs 1539 Danish",
+      "parentSourceId": "REF-P32"
     },
     {
       "id": "REF-P32-DA39",
@@ -158,7 +159,8 @@
       "sizeNote": null,
       "sha256": null,
       "acquisitionState": "NOT_DOWNLOADED",
-      "intendedNextStep": "Collate primary 1539 edition with Rordam 1883 transcription by heading and folio"
+      "intendedNextStep": "Collate primary 1539 edition with Rordam 1883 transcription by heading and folio",
+      "parentSourceId": "REF-P32"
     },
     {
       "id": "REF-P32-DA42",
@@ -177,7 +179,8 @@
       "sizeNote": null,
       "sha256": null,
       "acquisitionState": "NOT_DOWNLOADED",
-      "intendedNextStep": "Compare book distribution, music appendices, school and poor-law paragraphs to 1539 witness"
+      "intendedNextStep": "Compare book distribution, music appendices, school and poor-law paragraphs to 1539 witness",
+      "parentSourceId": "REF-P32"
     },
     {
       "id": "REF-P34",
