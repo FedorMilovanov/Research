@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 77,
+  "sourceCount": 78,
   "sources": [
     {
       "id": "REF-P01",
@@ -1396,6 +1396,24 @@
       ],
       "url": "https://www.lutherschriften1521.de/luther-schriften/exponate/Reichstag/1-die-gancz-handlung.php",
       "verificationNote": "Institutional historical exhibition notes German Wittenberg 1521 [8] Bl VD16 S7418/L3665, Worms LB88, original printed phrase at Blatt 5v; Latin Wittenberg VD16 L3650 earlier also has line, conventional scholarly judgment 'not spoken', but authorial origin contested (Kaufmann considers Luther might append phrase in prepared text; bpb Gotthard suggests print editors). Cites Kaufmann 2021 pp78f and Mennecke 2014 pp215–244. This is exhibition prose, not manuscript transcript, and not full original text reading.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P47",
+      "documentYear": 1521,
+      "title": "Ain anzaigung wie D. Martinus Luther zu Wurms auff dem Reichstag eingefaren (VD16 A3024), early Augsburg [Melchior Ramminger] pamphlet, Worms Stadtbibliothek Lutherbibliothek W Gs 21",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.dilibri.de/urn/urn:nbn:de:0128-5-2820",
+      "verificationNote": "ORIGINAL PRINT FACSIMILE visually inspected ALL 16 zero-indexed digital frames in official Stadtbibliothek Worms PDF https://www.dilibri.de/stbwo/download/pdf/2040713 : frames 0-3 library binding/flyleaves, 4 original title and composite woodcut, 5 original blank verso, 6-10 historical printed German account, 11 original blank verso, 12-15 library/flyleaves/binding. Physical original [4] Bl. (4 leaves, NOT 16 printed pages); copy shelfmark W Gs 21, catalog VD16 A3024, [Augsburg] [Melchior Ramminger] [1521] are library attributions in square brackets, not proven imprint colophon. On PDF frame 6 report starts Tuesday Apr 16 arrival; frame 10 ends 'Jm beschluß sprach er die wort Got kum mir zehülff' followed by narrator's reaction and prayer, with NO 'hier stehe ich / ich kan nicht anderst' formula. This witnesses this PRINTED NARRATIVE only, NOT a stenographic transcript, NOT direct visual collation of the attributed Konrad Peutinger 19 April 1521 original letter. The independent City Library exhibition https://www.lutherschriften1521.de/luther-schriften/exponate/Reichstag/3-Ain-anzaigung-.php attributes printed narrative's source to Peutinger's letter of 19 April 1521; the original manuscript/letter was NOT photographed; do not falsely count as independent oral witness. The exhibition identifies the frontispiece's composite woodcut as reused from separate 1521 Lucifer and Pope pamphlet: pope did NOT attend the Diet, NOT on-site iconography or a literal scene. Official downloaded PDF on 2026-11-04: 3253175 bytes, SHA256 4fd0fb21456c815bb6d701307bdfe97eeae9080f27aea7b64a1072659a48fe79, %PDF header; temporary file discarded TEMP_CLEANED=True, SHA identifies obtained bytes only, no binary in Git. dilibri CC BY-NC-SA 3.0 digitization; image/translated text rights require separate review, noncommercial only; RIGHTS_HOLD and PUBLICATION_HOLD intact. PARTIAL_OBJECT even though all digital leaves viewed because not every early printed word diplomatically transcribed or compared against autographed letter.",
       "checkedAt": "2026-11-04"
     }
   ]
