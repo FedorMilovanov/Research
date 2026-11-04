@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 48,
+  "sourceCount": 56,
   "sources": [
     {
       "id": "REF-P01",
@@ -873,6 +873,154 @@
       ],
       "url": "https://archives.charente-maritime.fr/actualites/document-du-mois-discipline-ecclesiastique-des-eglises-reformees-france",
       "verificationNote": "Institutional article confirms 1559 Paris confession/discipline and 1571 La Rochelle, fonds C134; original archival document not fully imaged or collated.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P31",
+      "documentYear": 1539,
+      "title": "Denmark-Norway Kirkeordinansen 14 June 1539 in Rørdam 1883 edition",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://danmarkshistorien.lex.dk/Kirkeordinansen,_14._juni_1539",
+      "verificationNote": "Primary law in scholarly reprint Rørdam Danske kirkelove I (1883) pp40-133. Text headings six pillars, Om Børne Scholer, poor fund/diaconal accounting, superintendents, books, church order directly read in Danish transcription. Latin 1537 and Danish 1542 prints not collated.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P32",
+      "documentYear": 1537,
+      "title": "Denmark-Norway Kirkeordinansen 1537 Latin original and 1539/1542 Danish print catalogue series",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://soeg.kb.dk/permalink/45KBDK_KGL/143rgf3/alma99122912600905763",
+      "verificationNote": "Royal Danish Library catalogue of Latin 1537; separate Danish 1539 alma99122852772605763 and Danish 1542 alma99122912590205763 listed by liturgimusik. Modern 1989 critical reprint is distinct; exact scans/language variants not visually checked.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P33",
+      "documentYear": 1527,
+      "title": "Swedish Västerås ordinantia 1527, manuscript catalogue work-103806 KB B17",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://manuscripta.kb.se/work/103806",
+      "verificationNote": "National catalog Manuscripta work-103806 links Kungliga biblioteket B17, incipit Biscopana besörgie soknakirkior...; metadata CC0, not scan license. Original catalog fetch returned 502, catalog search snippet only; full manuscript act NOT READ. Sweden parliamentary pre-1617 archive route at riksdagen.se.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P34",
+      "documentYear": 1573,
+      "title": "Warsaw General Confederation 28 January 1573, signed parchment AGAD 4467",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://agad.gov.pl/?page_id=966",
+      "verificationNote": "AGAD Polish source transcription explicitly forbids bloodshed, prison, confiscation, exile for religious disagreement, but next paragraph retains lords' authority over subjects in spiritualibus and in saecularibus. Archive page_id=968 gives parchment Zb.dok.perg.4467 and 209 hanging seal bowls (181 imprints, 27 blank, one remnant); 1579/1588 later editions separate. Images not visually collated.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P35",
+      "documentYear": 1568,
+      "title": "Transylvanian Diet Torda Jan 1568 religious preaching statute as translated in Balázs 2013",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://hunghist.org/83-articles/146-2013-1-balazs",
+      "verificationNote": "Historical act quoted in modern English translation by Balazs (Introduction: Legislation in 1568 and 1571). Community chooses preacher and rejects compulsion; original Hungarian 16c manuscript/critical text not collated. No enumeration of four confessions in quoted wording; claim of first enumeration 1595 is historian's separate analysis.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P36",
+      "documentYear": 1570,
+      "title": "Transylvanian Diet Medgyes January 1570 restrictive statute on newly emerging heresies as quoted Balázs",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://hunghist.org/83-articles/146-2013-1-balazs",
+      "verificationNote": "Balazs (The Limits of Tolerance) prints translated Medgyes law punishing new heresies; Jan 1571 Marosvasarhely act restores protection of preacher/listener with disciplinary exception. Original Hungarian primary text not independently collated.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-S06",
+      "documentYear": 2013,
+      "title": "Mihály Balázs, Tolerant Country – Misunderstood Laws, Hungarian Historical Review 2(1)",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://hunghist.org/83-articles/146-2013-1-balazs",
+      "verificationNote": "Scholarly original argument read Introduction/ Limits of Tolerance: 1568 and 1571 texts do not enumerate four received religions, first enumeration in 1595 (scholarly inference), 1570 repression of new heresies, 1568 separate provision on Wallachian bishop. Do not represent interpretation as words of 1568 law.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-S07",
+      "documentYear": 1974,
+      "title": "Stanisław Salmonowicz, Geneza i treść uchwał konfederacji warszawskiej, Odrodzenie i Reformacja w Polsce 19",
+      "evidenceClass": "B1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.rcin.org.pl/dlibra/publication/29987/edition/41454/content",
+      "verificationNote": "Polish Academy of Sciences journal 1974 pp7-30; listed Rights Reserved – Free Access, automated page showed secured object and challenge, full article not read; no claim attribution beyond metadata.",
       "checkedAt": "2026-11-04"
     }
   ]
