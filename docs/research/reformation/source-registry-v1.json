@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 103,
+  "sourceCount": 104,
   "sources": [
     {
       "id": "REF-P01",
@@ -1875,6 +1875,25 @@
       "url": "https://boris-portal.unibe.ch/server/api/core/bitstreams/515939e0-152f-4e98-914a-1b033cf74492/content",
       "checkedAt": "2026-11-05",
       "verificationNote": "Directly read the university-hosted 2023 SCHOLARLY PDF text, printed pp.90–93 (web PDF screenshot attempts failed; do not claim rendered visual inspection). The manuscript of the seven Schleitheim articles at Staatsarchiv Bern is cited as current StaBE A V 1453 Nr.9, former StaBE U.P.80 Nr.9. This is SECONDARY identification of a primary handwritten witness, NOT a downloaded/viewed original image, NOT an authenticated independent archive catalogue record. Scholars distinguish Haller's letter dated 25 Apr 1527 and Zwingli's reply dated 28 Apr 1527, and explicitly question whether the actual surviving Bern manuscript was among the copies transmitted to Zwingli. Seven articles, but printed preface/end framing letter is absent in manuscript; earliest printed copy cited as BSB VD16 S1882. No verified Matt 27/28 numerator from the manuscript; paid manuscript imaging not ordered. 2023 PDF indicates CC BY-NC 4.0 for text except illustrations, publication/third-party images require separate rights check. Official archive contact https://www.staatsarchiv.sta.be.ch/de/start/ueber-uns/kontakt.html ; inquiry sent via connected Gmail 2026-11-05, label SENT, not order. See C153-C156."
+    },
+    {
+      "id": "REF-S29",
+      "documentYear": 1910,
+      "title": "Heinrich Böhmer (ed.), Urkunden zur Geschichte des Bauernkrieges und der Wiedertäufer, Kleine Texte für Vorlesungen und Übungen 50/51, Bonn, A. Marcus und E. Weber, 1910, printed pp 25–29, especially A1/A2 transmission and Matt 28",
+      "evidenceClass": "B1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://archive.org/details/urkundenzurgesch00boeh",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "Wave 339 (2026-11-05): exact Open Library edition OL24772035M, Internet Archive identifier urkundenzurgesch00boeh; entire original 1910 SCANNED PDF 44 pages / 4,019,061 bytes downloaded from https://archive.org/download/urkundenzurgesch00boeh/urkundenzurgesch00boeh.pdf; SHA-256 f0dbcab8b6af238360f78ed11b09bb154fb763e4c8e3064ddd0c07fa760b1279. Directly RENDERED and visually read Böhmer original printed p.26 (digital PDF page 30) and p.29 (digital PDF page 33); table-of-content/title printed Bonn 1910 also verified. Printed p.26 explicitly distinguishes A1 (two Munich Hof/Staatsbibliothek specimens; no imprint place/year given) and A2 (Berlin königl. Bibliothek and Leipzig antiquarian Haupt); for A2 describes extra leaf D1 ('Von der Ehescheidung') and tail 'B. M. L. 1533'; states Walther Köhler REPRINTED A2 in Flugschriften Bd 2 Heft 3 (1908). On printed p.29 Article I his EDITED running text itself visually reads 'Mat 28 [v. 19]', not 'Mat 27'; the verse notation in square brackets is editorial. Böhmer notes A1 and A2 textual variants in surrounding apparatus, so 1910 running text MUST NOT be treated as photo/transcription proven identical to one physical 1533 A2 witness at disputed numeral without collating editorial basis and Köhler original. B1 scholarly historical edition, neither original 1527 nor physical original lost 1533. No 1908 Köhler pages obtained here, no 1533 article I A1/A2 physical image, no legal publication approval. Archival custody: private local original-file copy + DriveFS mounted folder copy, each PDF and new separate receipt checksum verified locally, cloud server-side upload/readback UNVERIFIED; previous 5-item central acquisition register intentionally unchanged. Open Library https://openlibrary.org/books/OL24772035M/Urkunden_zur_Geschichte_des_Bauernkrieges_und_der_Wiedert%C3%A4ufer"
     }
   ]
 }
