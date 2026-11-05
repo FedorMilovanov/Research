@@ -15,6 +15,7 @@ concurrency:
 
 jobs:
   validate:
+    name: Repository authority integrity
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout complete Research history
