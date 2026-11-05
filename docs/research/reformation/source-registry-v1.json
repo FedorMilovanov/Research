@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 96,
+  "sourceCount": 98,
   "sources": [
     {
       "id": "REF-P01",
@@ -1671,21 +1671,20 @@
     {
       "id": "REF-S20",
       "documentYear": 1977,
-      "title": "Piet Visser (advisor), IDC Publishers, The Anabaptist, Mennonite and Spiritualist Reformation: Radical Reformation Microfiche Project, second-edition catalogue (undated revision; original catalog 1977), digital listing at Concordia Seminary",
+      "title": "Piet Visser (advisor), IDC Publishers, The Anabaptist, Mennonite and Spiritualist Reformation: Radical Reformation Microfiche Project, second-edition titlelist (revision date undetermined), catalog sheet hosted by Calvin University / H. Henry Meeter Center",
       "evidenceClass": "B1",
       "accessState": "PARTIAL_OBJECT",
-      "locatorState": "COARSE_LOCATOR_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
       "holds": [
-        "LOCATOR_HOLD",
         "ARCHIVE_HOLD",
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "url": "https://scholar.csl.edu/ebooks/31",
+      "url": "https://calvin.edu/sites/default/files/migrated/centers-institutes-meeter-center-files-microform-collection-Anabaptist-Mennonite-and-Spiritualist-Reformation-Titlelist.pdf",
       "checkedAt": "2026-11-05",
-      "verificationNote": "PUBLIC MICR0FICHE CATALOGUE text layer read through university-linked PDF: 'Confessions of faith' lists original Dutch 1560 pamphlet [BO p29 HBR-2815], 2 microfiche, order ME-67/1; distinct 1565 [BO p29 HBR-2815a], 1 microfiche, ME-68/1. These are commercial reproduction product/order IDs, not original library shelfmarks or proof that microfiches are now on shelf. Browser screenshot of this PDF returned 403, so exact catalogue image page unverified; edition says 'Second edition' but publication year of revision is not verified. The 1977 date is repository metadata for first issue, not verified second-edition imprint year. NO MICROFICHE itself acquired or inspected."
+      "verificationNote": "2026-11-05 WAVE 331 UPDATE: EXACT PHOTOGRAPHIC LOCATOR of IDC print CATALOG checked on Calvin University public PDF, printed p2, PDF image page7 (0-index screenshot page6): first column Confessions of faith lists Dutch Broederlicke Vereeninge 1560 [BO p29 HBR-2815] 2 microfiche ORDER ME-67/1, and Dutch 1565 [BO p29 HBR-2815a] 1 microfiche ORDER ME-68/1. Previous wave327 Concordia Seminary PDF https://scholar.csl.edu/ebooks/31 text layer showed same entries but screenshot returned 403; this screenshot limitation is SUPERSEDED for catalogue visual verification ONLY by the Calvin PDF screenshot. Neither physical microfiche, the library's live inventory/shelfmark, nor Article I and Bible citation on either original print has been accessed; source/access claims beyond the catalogue remain EVIDENCE_HOLD / LOCATOR_HOLD / ARCHIVE_HOLD, despite catalog exact locator and removal of source-level LOCATOR_HOLD. 1977 metadata is original titlelist catalog series date, NOT verified date of this SECOND edition; copyright of catalog and original fiche must be evaluated separately. Calvin institutional page https://calvin.edu/meeter-center/resources links the titlelist but does not certify current holding of two particular items."
     },
     {
       "id": "REF-P58",
@@ -1740,6 +1739,44 @@
       "url": "https://commons.ptsem.edu/id/bibliothecarefor0005unse",
       "checkedAt": "2026-11-05",
       "verificationNote": "VERIFIED ORIGINAL 1909 BOOK SCAN IMAGES (not OCR alone) held through Princeton Theological Seminary / Theological Commons, Internet Archive identifier bibliothecarefor0005unse: bookreader image n598 printed p585; n599 p586; n600 p587; n616 facsimile of 1560 original Dutch TITLE only; n620 printed p607. On p607 baptism article I the right margin prints Matt.3.a. then 28.c., and separate Mat.28.c. after exclusion of infant baptism. On p587 Cramer states marginal Bible citations were added by compiler or translators, NOT the original authors, and acknowledges variation of the a/b/c divisions among Dutch scripture printings. This printed 1909 revised historical transcription is B1 for the 1560 original's reading (not a direct 1560 article-I scan and not 1533/1565 reading). Exactly verified page images accessible as https://archive.org/download/bibliothecarefor0005unse/page/n620/mode/1up etc; no full book PDF or original 1560 master archived into GitHub. Theological Commons explicitly says Image Copyright Not Evaluated, so rights and republication remain HOLD."
+    },
+    {
+      "id": "REF-P59",
+      "documentYear": 1527,
+      "title": "Huldrych Zwingli, In Catabaptistaruv Strophas elenchus, Zürich: Christoph Froschauer, 1527, VD16 Z 860, Zentralbibliothek Zürich 5.281, DOI 10.3931/e-rara-674; original digitized print and IIIF manifest",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.e-rara.ch/zuz/content/titleinfo/190035",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "2026-11-05 exact institutional e-rara record gives ZB Zürich 5.281, VD16 Z 860, publisher Zurich Froschauer 1527, DOI 10.3931/e-rara-674, 190+[2] pages, Public Domain Mark + credit instructions. Live IIIF https://www.e-rara.ch/i3f/v20/190035/manifest retrieved; 196 canvases. Select direct original historic page images observed: printed pp 7,17,27,37,47,57,77,97,117,137, one verifiable example printed p7 is image https://www.e-rara.ch/download/webcache/1000/190049 ('AD LECTOREM' and A 4). Exact locator VERIFIED for SAMPLED original pages only. No text or precise biblical Matt 27/28 locus from the LATIN article I has yet been found/read; NO direct witness to Dutch original Article I 1560/1565 or lost German 1533. Source-level rights remain unknown for Product promotion despite e-rara Public Domain Mark, rights/credit checks distinct. No full-image archive or original master SHA obtained, no images copied to public Git; claim-specific EVIDENCE_HOLD/LOCATOR_HOLD for Matthew reading."
+    },
+    {
+      "id": "REF-S23",
+      "documentYear": 2021,
+      "title": "Henning P. Jürgens, Die Schleitheimer Artikel als Dokument der Selbstmarginalisierung, in An den Rand gedrängt – den Rand gewählt (2021), printed pp 51-52 and notes 42-49 on manuscript diffusion and Zwingli's July 1527 Latin Elenchus",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/175484/Juergens_057.pdf?isAllowed=y&sequence=1",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "Institutionally served scholarly 2021 PDF text extracted (printed pp51-52; n42: Zwingli already had four manuscript copies within months; p52 n48: author says Elenchus written in July 1527 from various manuscripts includes full Latin translation and polemical response; n43 Worms, 1533 and late print descriptions; n45 Dutch 1560 and 1565; n44 French lost branch). Web screenshot of the university PDF page returned HTTP 404; exact visual page NOT newly verified, therefore coarse locator only and EVIDENCE/LOCATOR holds for any unsupported primary manuscript or biblical claim. None of four historic manuscripts have been opened or independently assigned shelfmarks; sample images of original 1527 Latin Zwingli print DO NOT establish its article I numerals or text stemma. B1 supports contextual scholarly attribution only."
     }
   ]
 }
