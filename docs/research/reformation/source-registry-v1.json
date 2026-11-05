@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 95,
+  "sourceCount": 96,
   "sources": [
     {
       "id": "REF-P01",
@@ -1722,6 +1722,24 @@
       "url": "https://assets.ctfassets.net/4wrp2um278k7/4cu0VnBl2zpexRzhTKbjVY/16e26210de56a2a3c8229f7185f27486/DB_15-1989.pdf",
       "checkedAt": "2026-11-05",
       "verificationNote": "1989 scholarly article, printed p56 n62, visually inspected ORIGINAL PDF image page index55 via web screenshot (not relying solely on extracted text). The singular 'Het enig bekende exemplaar' refers to an undated Concordantie held by Doopsgezinde Gemeente on loan Amsterdam UB; it is samengebonden with Broederlicke Vereeninge in a dated 1560 print explicitly said to be of a DIFFERENT printing house. Singular does NOT qualify number of surviving Schleitheim 1560 copies; physical identity of museum 2025 photographed volume vs 1989 description cannot be certified without current shelfmark. One cited PDF page verified, not a full study of 1989 volume and not an original 1560 article-I read. Copyright of 1989 research retained, no PDF archived in public repo."
+    },
+    {
+      "id": "REF-S22",
+      "documentYear": 1909,
+      "title": "S. Cramer (editor), Bibliotheca reformatoria neerlandica, vol. V: Nederlandsche Anabaptistica / De Broederlicke Vereeninge, Martinus Nijhoff 1909, intro pp.585-587, original title facsimile frame n616, edited baptism article p607",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://commons.ptsem.edu/id/bibliothecarefor0005unse",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "VERIFIED ORIGINAL 1909 BOOK SCAN IMAGES (not OCR alone) held through Princeton Theological Seminary / Theological Commons, Internet Archive identifier bibliothecarefor0005unse: bookreader image n598 printed p585; n599 p586; n600 p587; n616 facsimile of 1560 original Dutch TITLE only; n620 printed p607. On p607 baptism article I the right margin prints Matt.3.a. then 28.c., and separate Mat.28.c. after exclusion of infant baptism. On p587 Cramer states marginal Bible citations were added by compiler or translators, NOT the original authors, and acknowledges variation of the a/b/c divisions among Dutch scripture printings. This printed 1909 revised historical transcription is B1 for the 1560 original's reading (not a direct 1560 article-I scan and not 1533/1565 reading). Exactly verified page images accessible as https://archive.org/download/bibliothecarefor0005unse/page/n620/mode/1up etc; no full book PDF or original 1560 master archived into GitHub. Theological Commons explicitly says Image Copyright Not Evaluated, so rights and republication remain HOLD."
     }
   ]
 }
