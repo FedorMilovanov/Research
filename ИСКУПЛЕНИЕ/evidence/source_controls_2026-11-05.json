@@ -126,6 +126,66 @@
       "commit": "49a081fdbb11900cdccc46b8364208a0ace97a40",
       "gitBytes": 189902,
       "gitSha256": "155eb4de7abcb0cb8e2bc697f40e02b631a634228b2cf2c4ee7884aeec9baa07"
+    },
+    {
+      "path": "docs/research/atonement/01_prokopenko_article_review.md",
+      "commit": "4ecc6d54425a6b7229f74bc284441365c36fdb17",
+      "gitBytes": 374065,
+      "gitSha256": "38bc79760ac3ad1e54138b1217c2f57967cbf7c7ad46f0210273a2eaec79c219"
+    },
+    {
+      "path": "docs/research/atonement/06_detailed_refutation_of_prokopenko_arguments.md",
+      "commit": "4ecc6d54425a6b7229f74bc284441365c36fdb17",
+      "gitBytes": 169663,
+      "gitSha256": "f818c24b63238605b02160c1b45944e8d42008d3e2e00867f0a7df86ec76fd68"
+    },
+    {
+      "path": "docs/research/atonement/31_contemporary_doctoral_dissertations_survey.md",
+      "commit": "4ecc6d54425a6b7229f74bc284441365c36fdb17",
+      "gitBytes": 32726,
+      "gitSha256": "1f0da8723f019ff07fee78666ab8a4fac4489347b62f9d3179f88ec9441f5623"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+      "commit": "4ecc6d54425a6b7229f74bc284441365c36fdb17",
+      "gitBytes": 100557,
+      "gitSha256": "83897e7a5abc0f6985d1a197dcf2e30ec241f5812a14f1520e7077aefc4a6afc"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+      "commit": "4ecc6d54425a6b7229f74bc284441365c36fdb17",
+      "gitBytes": 227991,
+      "gitSha256": "70c9bd2a22b7af1bd7a7255d753303c8381d9512e07cdeed9581d757a5983d46"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+      "commit": "4ecc6d54425a6b7229f74bc284441365c36fdb17",
+      "gitBytes": 57654,
+      "gitSha256": "be0200d129c0a1eaba148ce09e2d98b99c8a0020fcf4ecc9188f087b4fae4e43"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+      "commit": "4ecc6d54425a6b7229f74bc284441365c36fdb17",
+      "gitBytes": 1222570,
+      "gitSha256": "88b38410c8dcc6e9028f5d075cfecab692401067bbe32cb48415109f1bf38ad0"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
+      "commit": "4ecc6d54425a6b7229f74bc284441365c36fdb17",
+      "gitBytes": 60910,
+      "gitSha256": "a3721e8630888297a72626e8046d658dc725d920b6b5fd22a2e3e42749fb7ccd"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
+      "commit": "4ecc6d54425a6b7229f74bc284441365c36fdb17",
+      "gitBytes": 1287192,
+      "gitSha256": "106fc2d4b8a6cca32a8af518b0be4c288cfabc76e72441ca5809aed4a0308af1"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+      "commit": "4ecc6d54425a6b7229f74bc284441365c36fdb17",
+      "gitBytes": 190488,
+      "gitSha256": "7710ae58f3c448e29a10e4c0f2b4e0e3da5c6f2e381e63efa2f300209fa85c2b"
     }
   ],
   "sources": [
@@ -1185,6 +1245,323 @@
       "holds": [
         "PUBLICATION_HOLD"
       ]
+    },
+    {
+      "id": "riccardi2022-propitiation-sermon",
+      "url": "https://www.thegracelifepulpit.com/sermons.aspx?code=2022-03-20-MR",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "externalCacheRelativePath": "sources/riccardi2022-propitiation-tinyfish.md",
+      "captureBytes": 46561,
+      "captureSha256": "096e4dcd501ddf8a972e8db3ba62710ef041a56c76c2ddf78e1b7ff087ce7ec9",
+      "readScope": "Complete main sermon transcript, Introduction through Conclusion; not audio or whole sermon series.",
+      "fullWorkRead": true,
+      "objectType": "sermon_transcript"
+    },
+    {
+      "id": "shultz2014-introduction-preview",
+      "url": "https://www.perlego.com/book/878051/a-multiintentioned-view-of-the-extent-of-the-atonement-pdf",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "externalCacheRelativePath": "sources/shultz2014-introduction-preview.md",
+      "captureBytes": 11711,
+      "captureSha256": "72bdb03b3ce0b6a37e4453d5fd0cf797b98788cbe19723dc2620d200f00a794e",
+      "readScope": "Provided Chapter1 introduction excerpt through mid-sentence truncation in multi-intentioned approach; not whole introduction or whole book.",
+      "fullWorkRead": false,
+      "objectType": "book_preview",
+      "bibliography": "Wipf & Stock, 2014; 206 pp., publisher-confirmed"
+    },
+    {
+      "id": "cone2015-original-paper",
+      "url": "https://drcone.com/2015/10/13/1-john-22-does-grace-extend-to-everyone/",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "externalCacheRelativePath": "sources/cone2015-original-tinyfish.md",
+      "captureBytes": 22444,
+      "captureSha256": "6f3f3734fed8cd0afbfd4e7122d81fc44b3b5d7ba30b73ba302a79d5510a45c1",
+      "readScope": "Complete authorial paper including footnotes, presented Free Grace Alliance 2015-10-13; not conference audio.",
+      "fullWorkRead": true,
+      "objectType": "authorial_paper",
+      "relatedDelivery": "Sharper Iron Part3 main article read as related publication of same argument, not independent corroboration"
+    },
+    {
+      "id": "shultz2014-publisher-metadata",
+      "url": "https://wipfandstock.com/9781498266536/a-multi-intentioned-view-of-the-extent-of-the-atonement/",
+      "evidenceClass": "A2",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "fullWorkRead": false,
+      "readScope": "Publisher bibliographic record, description, endorsements; not book argument.",
+      "externalCacheRelativePath": "sources/propitiation-shultz-20261106.json",
+      "captureJsonPointer": "/publisher/text",
+      "captureTextSha256": "6c3140ce1a880b1eddd45a28e721c352ed23406256e1697217127344b0859604",
+      "captureTextUtf8Bytes": 4006
+    },
+    {
+      "id": "propitiation-biblehub.com-text-numbers-16-46",
+      "url": "https://biblehub.com/text/numbers/16-46.htm",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "fullWorkRead": false,
+      "readScope": "Selected primary Greek or Hebrew context for cited argument; no critical apparatus or morphology-table verification.",
+      "externalCacheRelativePath": "sources/propitiation-shultz-20261106.json",
+      "captureJsonPointer": "/primaryContexts/results/1/text",
+      "captureTextSha256": "42a316cf537c57961477f48278e49bfb039b742fa498ac72f5dd2b0cb018c186",
+      "captureTextUtf8Bytes": 5780
+    },
+    {
+      "id": "propitiation-biblehub.com-text-numbers-25-13",
+      "url": "https://biblehub.com/text/numbers/25-13.htm",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "fullWorkRead": false,
+      "readScope": "Selected primary Greek or Hebrew context for cited argument; no critical apparatus or morphology-table verification.",
+      "externalCacheRelativePath": "sources/propitiation-shultz-20261106.json",
+      "captureJsonPointer": "/primaryContexts/results/2/text",
+      "captureTextSha256": "6e488a957298abdf6ab81124c134110ef5cad7e868eee30b4b8b15862f9328aa",
+      "captureTextUtf8Bytes": 3718
+    },
+    {
+      "id": "propitiation-biblehub.com-nestle-romans-3",
+      "url": "https://biblehub.com/nestle/romans/3.htm",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "fullWorkRead": false,
+      "readScope": "Selected primary Greek or Hebrew context for cited argument; no critical apparatus or morphology-table verification.",
+      "externalCacheRelativePath": "sources/propitiation-shultz-20261106.json",
+      "captureJsonPointer": "/primaryContexts/results/3/text",
+      "captureTextSha256": "401ed6bc0822b0fe974573f7de9e34525f57c781e730d0244d90835bc01e873a",
+      "captureTextUtf8Bytes": 5465
+    },
+    {
+      "id": "propitiation-biblehub.com-nestle-hebrews-2",
+      "url": "https://biblehub.com/nestle/hebrews/2.htm",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "fullWorkRead": false,
+      "readScope": "Selected primary Greek or Hebrew context for cited argument; no critical apparatus or morphology-table verification.",
+      "externalCacheRelativePath": "sources/propitiation-shultz-20261106.json",
+      "captureJsonPointer": "/primaryContexts/results/4/text",
+      "captureTextSha256": "200cd84db0996898e63a82e5a0504f78388ad88122a149a51fce78ae8419a82e",
+      "captureTextUtf8Bytes": 4366
+    },
+    {
+      "id": "propitiation-biblehub.com-nestle-1_john-2",
+      "url": "https://biblehub.com/nestle/1_john/2.htm",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "fullWorkRead": false,
+      "readScope": "Selected primary Greek or Hebrew context for cited argument; no critical apparatus or morphology-table verification.",
+      "externalCacheRelativePath": "sources/propitiation-shultz-20261106.json",
+      "captureJsonPointer": "/primaryContexts/results/5/text",
+      "captureTextSha256": "8308de8ae80d0cf895da9043c79c07d390ffffbbc96be77b8ac0ed711073259a",
+      "captureTextUtf8Bytes": 6977
+    },
+    {
+      "id": "propitiation-www.studylight.org-bible-gre-brg-numbers-16l",
+      "url": "https://www.studylight.org/bible/gre/brg/numbers/16.html",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "fullWorkRead": false,
+      "readScope": "Brenton Greek LXX Numbers16:41–50 = MT/LXX17:6–15, read passage; not whole book.",
+      "externalCacheRelativePath": "sources/propitiation-shultz-20261106.json",
+      "captureJsonPointer": "/additionalContexts/results/0/text",
+      "captureTextSha256": "5ebf13896a97a9bfb1dff6c28987c9ab0cfc1643a4675b85a6f4c467e510aad5",
+      "captureTextUtf8Bytes": 13188
+    },
+    {
+      "id": "propitiation-biblehub.com-nestle-john-11",
+      "url": "https://biblehub.com/nestle/john/11.htm",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "fullWorkRead": false,
+      "readScope": "Greek John11:45–53 context; not whole chapter.",
+      "externalCacheRelativePath": "sources/propitiation-shultz-20261106.json",
+      "captureJsonPointer": "/additionalContexts/results/1/text",
+      "captureTextSha256": "3393b5d2db49556ad48d6b740267235b08e627a1d0b396f2ff55bd8883fa02f3",
+      "captureTextUtf8Bytes": 10991
+    },
+    {
+      "id": "propitiation-biblehub.com-nestle-1_john-4",
+      "url": "https://biblehub.com/nestle/1_john/4.htm",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "fullWorkRead": false,
+      "readScope": "Selected primary Greek or Hebrew context for cited argument; no critical apparatus or morphology-table verification.",
+      "externalCacheRelativePath": "sources/propitiation-shultz-20261106.json",
+      "captureJsonPointer": "/additionalContexts/results/2/text",
+      "captureTextSha256": "66542910efc18012927a2dadd2a573bf1287cfe852fb465ee12f2ee57cf5e80c",
+      "captureTextUtf8Bytes": 5314
+    },
+    {
+      "id": "propitiation-biblehub.com-nestle-1_john-5",
+      "url": "https://biblehub.com/nestle/1_john/5.htm",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "fullWorkRead": false,
+      "readScope": "Selected primary Greek or Hebrew context for cited argument; no critical apparatus or morphology-table verification.",
+      "externalCacheRelativePath": "sources/propitiation-shultz-20261106.json",
+      "captureJsonPointer": "/additionalContexts/results/3/text",
+      "captureTextSha256": "0ddfc1b85eb7f5dd73067c945a2c5d5d9270bb3690f2a8276b059ab1d374413e",
+      "captureTextUtf8Bytes": 5045
+    },
+    {
+      "id": "propitiation-hebrews-9",
+      "url": "https://biblehub.com/nestle/hebrews/9.htm",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "fullWorkRead": false,
+      "readScope": "Selected Greek Hebrews9:5,24–28 or Hebrews10:10–18; not full commentary or critical apparatus.",
+      "externalCacheRelativePath": "sources/propitiation-hebrews-20261106.json",
+      "captureJsonPointer": "/results/0/text",
+      "captureTextSha256": "6b39edcc486c9dd487d779d8f0a49340a26b7ec4ab760cc3cef6dd16755977f2",
+      "captureTextUtf8Bytes": 6861
+    },
+    {
+      "id": "propitiation-hebrews-10",
+      "url": "https://biblehub.com/nestle/hebrews/10.htm",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "fullWorkRead": false,
+      "readScope": "Selected Greek Hebrews9:5,24–28 or Hebrews10:10–18; not full commentary or critical apparatus.",
+      "externalCacheRelativePath": "sources/propitiation-hebrews-20261106.json",
+      "captureJsonPointer": "/results/1/text",
+      "captureTextSha256": "93020727269360e8199167708a1624211db77041262005dfc429e543d905fcec",
+      "captureTextUtf8Bytes": 7742
     }
   ],
   "scans": [
@@ -1378,7 +1755,7 @@
     "Calvin commentary on 2 Corinthians 5:18–21, complete section",
     "Greek 2 Corinthians 5 chapter and selected Romans, John and Colossians verse contexts"
   ],
-  "updatedAtUtc": "2026-11-05T21:15:11Z",
+  "updatedAtUtc": "2026-11-05T21:43:44Z",
   "continuation20261106": {
     "reviewedAt": "2026-11-05T21:15:11Z",
     "baselineCommit": "49a081fdbb11900cdccc46b8364208a0ace97a40",
@@ -1454,6 +1831,64 @@
       "historicalBodyPreserved": true,
       "standaloneReportMatchesCurrentReview": true,
       "environmentNote": "Seven referenced files omitted by sparse checkout were materialized from exact HEAD bytes after main merge; repository validators unchanged."
+    }
+  },
+  "propitiationContinuation20261106": {
+    "reviewedAt": "2026-11-05T21:43:44Z",
+    "baselineCommit": "4ecc6d54425a6b7229f74bc284441365c36fdb17",
+    "baseMainCommit": "360db7ed63bf68c84d1b8de326df0243be09f0ec",
+    "articleSections": "P01 4.14–4.20",
+    "sourcesAdded": [
+      "riccardi2022-propitiation-sermon",
+      "shultz2014-introduction-preview",
+      "cone2015-original-paper",
+      "shultz2014-publisher-metadata",
+      "propitiation-biblehub.com-text-numbers-16-46",
+      "propitiation-biblehub.com-text-numbers-25-13",
+      "propitiation-biblehub.com-nestle-romans-3",
+      "propitiation-biblehub.com-nestle-hebrews-2",
+      "propitiation-biblehub.com-nestle-1_john-2",
+      "propitiation-www.studylight.org-bible-gre-brg-numbers-16l",
+      "propitiation-biblehub.com-nestle-john-11",
+      "propitiation-biblehub.com-nestle-1_john-4",
+      "propitiation-biblehub.com-nestle-1_john-5",
+      "propitiation-hebrews-9",
+      "propitiation-hebrews-10"
+    ],
+    "riccardi20220320CompleteMainTranscriptRead": true,
+    "cone20151013CompleteAuthorialPaperRead": true,
+    "shultz2014ReadScope": "Truncated introduction preview only",
+    "shultzNewDissertationPagesRead": [],
+    "shultzIndependentPagesStillPending": [
+      "116–117",
+      "176",
+      "181"
+    ],
+    "specificMacArthurStudyBiblePage1965Collated": false,
+    "macArthur1994ExistingPrimaryAnswerReread": true,
+    "acquisitionLimits": [
+      "Official SBTS entity 403 and original PDF fetch failure",
+      "Targeted connected Drive searches returned no Shultz dissertation",
+      "Search-result reproductions of Study Bible note do not replace cited edition"
+    ],
+    "doctrinalClosure": false,
+    "publicationEligible": false,
+    "c25": "OPEN",
+    "verification": {
+      "verifiedAtUtc": "2026-11-05T21:46:50Z",
+      "sourceControlsAndPreimages": "PASS",
+      "localObjectsChecked": 67,
+      "gitPreimagesChecked": 28,
+      "crossReferencesChecked": 80,
+      "sourceSync": "PASS",
+      "claimRegister": "PASS",
+      "corpusIntegrity": "PASS",
+      "reshootState": "PASS",
+      "diffWhitespace": "PASS",
+      "historicalBodyPreserved": true,
+      "standaloneReportMatchesCurrentReview": true,
+      "regressionSuiteLocalThisPass": "NOT_RERUN_PROSE_AND_METADATA_ONLY; required GitHub workflow will run its regression checks",
+      "repositoryValidatorsChanged": false
     }
   }
 }
