@@ -10,15 +10,15 @@
 ## 1. Header
 
 **Fedor Milovanov**
-Product engineer, technical editor and AI production operator
+Product engineer, technical editor, AI-assisted production lead and visual-direction reviewer
 
 St Petersburg, Russia (remote, UTC+3) · [gospod-bog.ru](https://gospod-bog.ru) · [thelegendarypoet.ru](https://thelegendarypoet.ru) · [milovicake.ru](https://milovicake.ru) · [YouTube @TheLegendaryPoet](https://www.youtube.com/@TheLegendaryPoet) · [GitHub](https://github.com/FedorMilovanov) · [email]
 
-**One line.** I build products and media with a team of AI agents — and I make the result verifiable: contracts, CI gates, evidence-based acceptance, publication.
+**One line.** I build products and media with AI agents, set functional and visual direction, define contracts, verify the results, and take responsibility for release.
 
 **Headline options**
 - I build systems you can trust an AI agent to work in: contracts, gates, evidence, rollback.
-- Five live products, a media line (music, clips, visuals) and 241 CI pipelines — one person plus agents.
+- Five live products, a media line (music, clips, visuals) and 241 CI workflow files in the dated snapshot — one person plus agents.
 - From research corpus to music video: product, content, engineering and media in one pair of hands.
 
 ---
@@ -40,7 +40,7 @@ Code and part of the media are AI-generated under my direction. Requirements, ar
 | | |
 |---|---|
 | 5 products live in production | 4 own domains |
-| 766,175 lines of application code under management (512,322 in six product repos; 824,453 including research validators) | 241 CI pipelines · 221,596 runs |
+| 766,175 lines of application code under management (512,322 in six product repos; 824,453 including research validators) | 241 CI workflow files · 221,596 runs |
 | 1,390 test and QA files | 20,990 commits in ten months |
 | Public editorial prose (exact word count unverified) | 2,076 research documents (Nov 1, 2026 snapshot) |
 
@@ -128,6 +128,20 @@ Two systems that exist because agents generate reports faster than humans can re
 
 ---
 
+### Visual direction and design review: five live cases (5 Nov 2026)
+
+My contribution to the visual layer is to **define each product's character**, brief the composition, typography and responsive behavior, compare alternatives, critique inconsistencies and review the revised output. The goal is fit for the audience and content, not ornament for its own sake. Some code, imagery, layouts and visual alternatives were created with AI and other tools. These cases **do not imply** that I hand-designed every asset, have professional Figma proficiency, or conducted formal UX studies.
+
+The [published visual-direction cases](https://fedormilovanov.github.io/portfolio/en/#visual) show **live products**, dated desktop/mobile screenshots and unresolved trade-offs:
+
+- **Theological library:** quiet academic typography, paper-like surface and original languages; long-form reading comfort and mobile interaction consistency still need review.
+- **The Legendary Poet:** a dark, museum-like atmosphere with arched portraits and cool blue light; its oversized heading competes with content above the fold, while small-screen navigation needs legibility checks.
+- **Milovi Cake:** product photography and warm premium colors; third-party messaging and rating badges sometimes interrupt palette consistency.
+- **Pâtisserie Russe / Milovi School:** an editorial identity with large serif display type and process photography; consent notices can obscure the mobile opening composition.
+- **Milovi Cake wedding page:** restrained ivory tones and a soft composition; the cake image is labeled as a **style visualization**, not evidence of a delivered order.
+
+**Evidence and boundaries:** [EN case studies](https://fedormilovanov.github.io/portfolio/en/#visual) · [RU case studies](https://fedormilovanov.github.io/portfolio/#visual) · [portfolio website PR #4](https://github.com/FedorMilovanov/FedorMilovanov.github.io/pull/4) (published 5 Nov 2026). There are no substantiated design-to-conversion metrics or verified before/after comparisons, and none are claimed.
+
 ## 5. Stack
 
 **Languages.** TypeScript, JavaScript, Python, Astro, SQL.
@@ -135,7 +149,7 @@ Two systems that exist because agents generate reports faster than humans can re
 **Backend and data.** Flask/Waitress, Telegram Bot API and Mini Apps, MongoDB Atlas, Cloudflare Workers and D1, SQLAlchemy and Alembic, Playwright.
 **AI.** Gemini API for video analysis, Yandex LiveDub, Suno for music, image and video generation for clips, ONNX Runtime Web with the open-source `vosk-tts` for in-browser speech, agent pipelines for task design, contracts and acceptance.
 **Media and distribution.** YouTube Data API, VK API, RuTube, Telegram Bot API, `yt-dlp`, ffmpeg, SHA-256 media fingerprints, waveforms.
-**Infrastructure.** GitHub Actions (240 pipelines), GitHub Pages, Vercel, Render, Docker, IndexNow, Pagefind, Lighthouse CI, service workers.
+**Infrastructure.** GitHub Actions (241 workflow files in the 1 Nov 2026 snapshot), GitHub Pages, Vercel, Render, Docker, IndexNow, Pagefind, Lighthouse CI, service workers.
 
 ---
 
