@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 93,
+  "sourceCount": 105,
   "sources": [
     {
       "id": "REF-P01",
@@ -652,8 +652,8 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://www.museum-schleitheim.ch/taeuferbekenntnis_1.htm",
-      "verificationNote": "Full seven-article German transcript of museum's later ~1550 printing read over _1.htm _2.htm _3.htm (articles I–VII, sword and oath included). Must distinguish later print from 1527 BSB witnesses VD16 S1882: both identified but visual original not collated. DIRECT_1550_PRINT_20261105: Original circa1550 Schleitheim print, separately catalogued as REF-P57 VD16 ZV30530, directly inspected via e-rara IIIF canvases 17-24. Article VI begins canvas18, ends canvas23 where VII begins. Museum website '_2.htm' repeats 'die nicht erkennen den willen Christi' twice in VI question: direct original circa1550 canvas19 has clause ONCE, also BSB 1527 original scan9 ONCE. This is an error/duplicate in ONLINE TRANSCRIPTION relative to examined print, NOT a proven historical reading. Preserve separate museum transcription vs original print labels; no complete 1550 PDF downloaded. WAVE325_ARTICLES_I_II_IV_VII: Museum modern online German transcript circa1550 differs from printed circa1550 original: in Article IV website repeats 'die gehorsam des glaubens' and 'Christus Christus' but direct e-rara original canvases 13-14 has one each (Christus split across pages); BSB 1527 scan6 also one each. In contrast Matt.27 in online article I is faithfully copied from original late print canvas9; true early 1527 variant is Matthew 28 on BSB scan5. Do not classify every modern difference as a typo.",
-      "checkedAt": "2026-11-04"
+      "verificationNote": "Full seven-article German transcript of museum's later ~1550 printing read over _1.htm _2.htm _3.htm (articles I–VII, sword and oath included). Must distinguish later print from 1527 BSB witnesses VD16 S1882: both identified but visual original not collated. DIRECT_1550_PRINT_20261105: Original circa1550 Schleitheim print, separately catalogued as REF-P57 VD16 ZV30530, directly inspected via e-rara IIIF canvases 17-24. Article VI begins canvas18, ends canvas23 where VII begins. Museum website '_2.htm' repeats 'die nicht erkennen den willen Christi' twice in VI question: direct original circa1550 canvas19 has clause ONCE, also BSB 1527 original scan9 ONCE. This is an error/duplicate in ONLINE TRANSCRIPTION relative to examined print, NOT a proven historical reading. Preserve separate museum transcription vs original print labels; no complete 1550 PDF downloaded. WAVE325_ARTICLES_I_II_IV_VII: Museum modern online German transcript circa1550 differs from printed circa1550 original: in Article IV website repeats 'die gehorsam des glaubens' and 'Christus Christus' but direct e-rara original canvases 13-14 has one each (Christus split across pages); BSB 1527 scan6 also one each. In contrast Matt.27 in online article I is faithfully copied from original late print canvas9; true early 1527 variant is Matthew 28 on BSB scan5. Do not classify every modern difference as a typo. WAVE333 museum institutional INTRO now separately verified: museum says third German late printing around 1550 known in two copies, own Schleitheimertal and Mennonite Historical Library Goshen; BOTH are reportedly bound with 'Concordanz und Zeiger der namhafftigsten Sprüch aller Biblischen Bücher alts und news Testament'. This is FIRST-PARTY museum custody for museum original, but ONLY INSTITUTIONAL REPORT, not physical autopsy or exact local shelfmark for Goshen. Goshen 2017 official page has ambiguous '(1527)' description; Goshen 2025 librarian interview mentions rare 1540s concordance without complete title/call-number; do not conflate these with a verified same printed state or bound-with item. Source's primary status for original museum transcription DOES NOT upgrade separate claims about Goshen copy to A1; relevant claim-level EVIDENCE/LOCATOR holds persist.",
+      "checkedAt": "2026-11-05"
     },
     {
       "id": "REF-P25",
@@ -1630,7 +1630,7 @@
       ],
       "url": "https://www.mennonitischer-geschichtsverein.de/wp-content/uploads/2024/11/MGBL-74-2017.pdf",
       "checkedAt": "2026-11-05",
-      "verificationNote": "SECONDARY SCHOLARLY BIBLIOGRAPHY, NOT ORIGINAL 1533. Original journal PDF text layer checked and printed page 58 screenshot visually inspected (footnote 41): VD16 S1881/S1883 = 1533 [Strasbourg Jakob Cammerlander]; same footnote attributes VD16 ZV30530 [probably Oberursel Nikolaus Henricus circa 1570, attribution Ulrich Kopp]. Other sources (e-rara and museum) date latter around 1550. No original 1533 scan acquired, no full scholarly PDF archived or SHA assigned. Do not infer original article-I Matthew numeral from this bibliography, or assert alternate dating is resolved."
+      "verificationNote": "SECONDARY SCHOLARLY BIBLIOGRAPHY, NOT ORIGINAL 1533. Original journal PDF text layer checked and printed page 58 screenshot visually inspected (footnote 41): VD16 S1881/S1883 = 1533 [Strasbourg Jakob Cammerlander]; same footnote attributes VD16 ZV30530 [probably Oberursel Nikolaus Henricus circa 1570, attribution Ulrich Kopp]. Other sources (e-rara and museum) date latter around 1550. No original 1533 scan acquired, no full scholarly PDF archived or SHA assigned. Do not infer original article-I Matthew numeral from this bibliography, or assert alternate dating is resolved. WAVE334 NEW VERIFIED EXPLICIT PRINTED p58 footnote41 image index59 (PDF#page=60): editions (5) VD16 ZV30530 [probably Oberursel Nikolaus Henricus circa1570, dating disputed vs Museum approx1550] and (6) ANOTHER separately numbered bibliographic edition Brüderlich ver=eyniung etlicher Kinder Gottes, unknown place/date [17th century], octavo 36 printed pages, copy Goshen Mennonite Historical Library, contains song 'Muß es nun sein gescheiden' (information from Joe Springer). This bibliographic entry is PREVIOUSLY OMITTED despite source's old registration; no 17th century original scan or exact Goshen shelfmark obtained. Do not infer (5) and (6) are identical or that two separately numbered catalog entries establish exact current number of physical Goshen volumes; no biblical Matthew numeral for (6) verified."
     },
     {
       "id": "REF-S18",
@@ -1666,26 +1666,253 @@
       ],
       "url": "https://dhkonline.nl/wp-content/uploads/sites/48/2023/02/DS01_Broederlijke_Vereniging_Tekst_en_commentaar.pdf",
       "checkedAt": "2026-11-05",
-      "verificationNote": "1974 copyrighted modern translation/commentary published by Doopsgezinde Historische Kring, current public PDF. Printed p.14 specifically reproduces FIRST TEXT PAGE of original 1560 Dutch print, said to be held at Doopsgezinde Bibliotheek Amsterdam; visually inspected as PDF page indexed 13. This photographed page is INTRODUCTION only, not baptism article I scriptural references. Printed p.16 visibly says Matth.28:19 in modern Dutch translation; NOT original 1560 page transcription. No complete original 1560 scan acquired; do not infer historical 1560 numeral or lost 1533 numeral from modern edition."
+      "verificationNote": "1974 copyrighted modern translation/commentary published by Doopsgezinde Historische Kring, current public PDF. Printed p.14 specifically reproduces FIRST TEXT PAGE of original 1560 Dutch print, said to be held at Doopsgezinde Bibliotheek Amsterdam; visually inspected as PDF page indexed 13. This photographed page is INTRODUCTION only, not baptism article I scriptural references. Printed p.16 visibly says Matth.28:19 in modern Dutch translation; NOT original 1560 page transcription. No complete original 1560 scan acquired; do not infer historical 1560 numeral or lost 1533 numeral from modern edition. Wave 337/2026-11-05: re-read its short bibliography via publisher PDF text layer, PRINTED p.49 (not a new original image); the 1974 author says oldest PRINTED Schleitheim edition dated 1533 and cites Köhler 1908 '238 ff.' (text-layer reading only; screenshot retrieval was unavailable). This is HISTORICAL SECONDARY BIBLIOGRAPHY, superseded for its 'oldest print' assertion by direct 1527 VD16 S1882 surviving printed copies (BSB Res/Polem.875#Beibd.6, digital id bsb00027178, among verified witnesses). Distinguish 'the 1527 original has been lost' (which may mean an autograph) from printed original exemplars dated 1527. Exact Köhler pagination is 280–337 from independent CiNii BA61216073 and LEO-BW PPN 51478055X, not '238 ff.'; need actual 1908 text for editor Vorlage and Article I numeral. No direct scan of Köhler 1908 acquired; no 1533 original read; retain source B1, PARTIAL_OBJECT, rights/publication HOLD."
     },
     {
       "id": "REF-S20",
       "documentYear": 1977,
-      "title": "Piet Visser (advisor), IDC Publishers, The Anabaptist, Mennonite and Spiritualist Reformation: Radical Reformation Microfiche Project, second-edition catalogue (undated revision; original catalog 1977), digital listing at Concordia Seminary",
+      "title": "Piet Visser (advisor), IDC Publishers, The Anabaptist, Mennonite and Spiritualist Reformation: Radical Reformation Microfiche Project, second-edition titlelist (revision date undetermined), catalog sheet hosted by Calvin University / H. Henry Meeter Center",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://calvin.edu/sites/default/files/migrated/centers-institutes-meeter-center-files-microform-collection-Anabaptist-Mennonite-and-Spiritualist-Reformation-Titlelist.pdf",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "2026-11-05 WAVE 331 UPDATE: EXACT PHOTOGRAPHIC LOCATOR of IDC print CATALOG checked on Calvin University public PDF, printed p2, PDF image page7 (0-index screenshot page6): first column Confessions of faith lists Dutch Broederlicke Vereeninge 1560 [BO p29 HBR-2815] 2 microfiche ORDER ME-67/1, and Dutch 1565 [BO p29 HBR-2815a] 1 microfiche ORDER ME-68/1. Previous wave327 Concordia Seminary PDF https://scholar.csl.edu/ebooks/31 text layer showed same entries but screenshot returned 403; this screenshot limitation is SUPERSEDED for catalogue visual verification ONLY by the Calvin PDF screenshot. Neither physical microfiche, the library's live inventory/shelfmark, nor Article I and Bible citation on either original print has been accessed; source/access claims beyond the catalogue remain EVIDENCE_HOLD / LOCATOR_HOLD / ARCHIVE_HOLD, despite catalog exact locator and removal of source-level LOCATOR_HOLD. 1977 metadata is original titlelist catalog series date, NOT verified date of this SECOND edition; copyright of catalog and original fiche must be evaluated separately. Calvin institutional page https://calvin.edu/meeter-center/resources links the titlelist but does not certify current holding of two particular items."
+    },
+    {
+      "id": "REF-P58",
+      "documentYear": 1560,
+      "title": "Original title page, Broederlicke Vereeninge (1560), Doopsgezinde Bibliotheek / Allard Pierson, photograph in curatorial blog dated 2025-01-21, figure 3",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.allardpierson.nl/blog/op-een-koude-winternacht-500-jaar-geleden",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "FIRST-PARTY FACSIMILE PHOTO of physical ORIGINAL title page, visible at official museum-hosted https://cms.allardpierson.nl/storage/media/3.-boekje-open-888x1024.jpg and caption Figure 3 (2025-01-21 blog by Nina Schroeder-van 't Schip and Gwendolyn Verbraak). Directly visually read printed 'Ghedruckt An. 1560.' but NO place/printer is printed on that original title; Emden and Willem Gailliart in REF-S17 are bibliographic attributions. Photograph shows physical binding and neighbouring page but no verified contemporary shelfmark, no article I text/bible numeral, no master-photo bytes or full object, no claim photograph itself is public-domain; rights separate. A1 exact locator refers to title page only."
+    },
+    {
+      "id": "REF-S21",
+      "documentYear": 1989,
+      "title": "P. Valkema Blouw, Een onbekende doperse drukkerij in Friesland, Doopsgezinde Bijdragen, nieuwe reeks 15 (1989), printed p.56 footnote 62; 1560 Broederlicke bound with undated Concordantie",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://assets.ctfassets.net/4wrp2um278k7/4cu0VnBl2zpexRzhTKbjVY/16e26210de56a2a3c8229f7185f27486/DB_15-1989.pdf",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "1989 scholarly article, printed p56 n62, visually inspected ORIGINAL PDF image page index55 via web screenshot (not relying solely on extracted text). The singular 'Het enig bekende exemplaar' refers to an undated Concordantie held by Doopsgezinde Gemeente on loan Amsterdam UB; it is samengebonden with Broederlicke Vereeninge in a dated 1560 print explicitly said to be of a DIFFERENT printing house. Singular does NOT qualify number of surviving Schleitheim 1560 copies; physical identity of museum 2025 photographed volume vs 1989 description cannot be certified without current shelfmark. One cited PDF page verified, not a full study of 1989 volume and not an original 1560 article-I read. Copyright of 1989 research retained, no PDF archived in public repo."
+    },
+    {
+      "id": "REF-S22",
+      "documentYear": 1909,
+      "title": "S. Cramer (editor), Bibliotheca reformatoria neerlandica, vol. V: Nederlandsche Anabaptistica / De Broederlicke Vereeninge, Martinus Nijhoff 1909, intro pp.585-587, original title facsimile frame n616, edited baptism article p607",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://commons.ptsem.edu/id/bibliothecarefor0005unse",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "VERIFIED ORIGINAL 1909 BOOK SCAN IMAGES (not OCR alone) held through Princeton Theological Seminary / Theological Commons, Internet Archive identifier bibliothecarefor0005unse: bookreader image n598 printed p585; n599 p586; n600 p587; n616 facsimile of 1560 original Dutch TITLE only; n620 printed p607. On p607 baptism article I the right margin prints Matt.3.a. then 28.c., and separate Mat.28.c. after exclusion of infant baptism. On p587 Cramer states marginal Bible citations were added by compiler or translators, NOT the original authors, and acknowledges variation of the a/b/c divisions among Dutch scripture printings. This printed 1909 revised historical transcription is B1 for the 1560 original's reading (not a direct 1560 article-I scan and not 1533/1565 reading). Exactly verified page images accessible as https://archive.org/download/bibliothecarefor0005unse/page/n620/mode/1up etc; no full book PDF or original 1560 master archived into GitHub. Theological Commons explicitly says Image Copyright Not Evaluated, so rights and republication remain HOLD."
+    },
+    {
+      "id": "REF-P59",
+      "documentYear": 1527,
+      "title": "Huldrych Zwingli, In Catabaptistaruv Strophas elenchus, Zürich: Christoph Froschauer, 1527, VD16 Z 860, Zentralbibliothek Zürich 5.281, DOI 10.3931/e-rara-674; original digitized print and IIIF manifest",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.e-rara.ch/zuz/content/titleinfo/190035",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "2026-11-05 exact institutional e-rara record gives ZB Zürich 5.281, VD16 Z 860, publisher Zurich Froschauer 1527, DOI 10.3931/e-rara-674, 190+[2] pages, Public Domain Mark + credit instructions. Live IIIF https://www.e-rara.ch/i3f/v20/190035/manifest retrieved; 196 canvases. Select direct original historic page images observed: printed pp 7,17,27,37,47,57,77,97,117,137, one verifiable example printed p7 is image https://www.e-rara.ch/download/webcache/1000/190049 ('AD LECTOREM' and A 4). Exact locator VERIFIED for SAMPLED original pages only. No text or precise biblical Matt 27/28 locus from the LATIN article I has yet been found/read; NO direct witness to Dutch original Article I 1560/1565 or lost German 1533. Source-level rights remain unknown for Product promotion despite e-rara Public Domain Mark, rights/credit checks distinct. No full-image archive or original master SHA obtained, no images copied to public Git; claim-specific EVIDENCE_HOLD/LOCATOR_HOLD for Matthew reading. WAVE 332 (2026-11-05): SUPERSEDES ONLY previous note that Latin article I / Matthew locus was not found. DIRECT ORIGINAL PRINT VISUAL READ: Zurich 1527 historic printed p72 https://www.e-rara.ch/download/webcache/1000/190114 has 'SECVNDA PARS' and states Latin quotation/refutation plan; p73 image 190115 'TITVLVS CATABAPTISTARVM ...', full 7 article list and E5 signature; p74 image https://www.e-rara.ch/download/webcache/1000/190116 includes complete Latin first baptism ARTICLE under 'CATABAPTISTAE' from 'Primo discite de baptismo' through 'Certi enim facti sumus'; right after comes separate 'RESPONSIO' by Zwingli. p75 image 190117 continues Zwingli RESPONSO (opponent's original voice NOT there). On the physically examined page 74, no numbered Matthew 27 or 28 citation appears anywhere in the LATIN article-I block or its margins; the statement instead invokes Scripture and apostolic practice in general. This is an exact A1 negative observation of the 1527 LATIN PRINT only; original German 1527 Math.xxviij continues independently established and the German 1533 and original Dutch 1560/1565 remain unverified. 196 manifest canvases available but ONLY select leaves visually inspected; PARTIAL_OBJECT, RIGHTS_UNKNOWN and all source-level archive/rights/publication holds remain. Do not claim entire facsimile archived, a master scan SHA, permissions, or that German reference is absent."
+    },
+    {
+      "id": "REF-S23",
+      "documentYear": 2021,
+      "title": "Henning P. Jürgens, Die Schleitheimer Artikel als Dokument der Selbstmarginalisierung, in An den Rand gedrängt – den Rand gewählt (2021), printed pp 51-52 and notes 42-49 on manuscript diffusion and Zwingli's July 1527 Latin Elenchus",
       "evidenceClass": "B1",
       "accessState": "PARTIAL_OBJECT",
       "locatorState": "COARSE_LOCATOR_ONLY",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
       "holds": [
+        "EVIDENCE_HOLD",
         "LOCATOR_HOLD",
         "ARCHIVE_HOLD",
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "url": "https://scholar.csl.edu/ebooks/31",
+      "url": "https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/175484/Juergens_057.pdf?isAllowed=y&sequence=1",
       "checkedAt": "2026-11-05",
-      "verificationNote": "PUBLIC MICR0FICHE CATALOGUE text layer read through university-linked PDF: 'Confessions of faith' lists original Dutch 1560 pamphlet [BO p29 HBR-2815], 2 microfiche, order ME-67/1; distinct 1565 [BO p29 HBR-2815a], 1 microfiche, ME-68/1. These are commercial reproduction product/order IDs, not original library shelfmarks or proof that microfiches are now on shelf. Browser screenshot of this PDF returned 403, so exact catalogue image page unverified; edition says 'Second edition' but publication year of revision is not verified. The 1977 date is repository metadata for first issue, not verified second-edition imprint year. NO MICROFICHE itself acquired or inspected."
+      "verificationNote": "Institutionally served scholarly 2021 PDF text extracted (printed pp51-52; n42: Zwingli already had four manuscript copies within months; p52 n48: author says Elenchus written in July 1527 from various manuscripts includes full Latin translation and polemical response; n43 Worms, 1533 and late print descriptions; n45 Dutch 1560 and 1565; n44 French lost branch). Web screenshot of the university PDF page returned HTTP 404; exact visual page NOT newly verified, therefore coarse locator only and EVIDENCE/LOCATOR holds for any unsupported primary manuscript or biblical claim. None of four historic manuscripts have been opened or independently assigned shelfmarks; sample images of original 1527 Latin Zwingli print DO NOT establish its article I numerals or text stemma. B1 supports contextual scholarly attribution only."
+    },
+    {
+      "id": "REF-S24",
+      "documentYear": 2017,
+      "title": "Goshen College official archive, Ervin Beck, Jeff Peachey '88 restores rare 1564 Ausbund for Mennonite Historical Library, 3 April 2017, terminal remark about a Schleitheim Confession rare edition",
+      "evidenceClass": "A3",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://archive.goshen.edu/news/jeff-peachey-88-restores-rare-1564-ausbund-mennonite-historical-library/",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "Full official institutional Goshen news article personally accessed, dated Apr 3 2017 and authored Ervin Beck. Terminal para says MHL rare book room contains a copy of 'an early edition of the Schleitheim Confession (1527), which is one of only two surviving copies of that edition in the world.' This A3 verifies that Goshen made this public statement, but NOT an edition/printing date, bibliographic VD16 ID, exact shelfmark, provenance, collated copy or original scan. Parenthetical 1527 can be confession composition date and is AMBIGUOUS. Museum Schleitheim says both original earliest Worms 1527/1529 copies are at BSB while Goshen is known for later third German print circa1550; Goshen article MUST NOT be silently elevated to a claimed third BSB original or overwritten; exact copy identity HOLD. No historical photo or private data copied."
+    },
+    {
+      "id": "REF-S25",
+      "documentYear": 2025,
+      "title": "Ana Alves Machado, Inside the Mennonite Historical Library, Goshen College student newspaper The Record, 4 December 2025: Eric Bradley interview on 1540s rare concordance",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://record.goshen.edu/features/inside-the-mennonite-historical-library",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "Journalistic, attributable contemporary interview published 2025-12-04. Exact paragraphs of The Record quote MHL head librarian Eric Bradley: the library possesses a 1540s concordance of which only two copies are known. Does not name the concordance full title, identify it with the Schleitheim museum's 'Concordanz und Zeiger ...', give physical shelfmark, assert it is bound with a Schleitheim edition, or determine Schleitheim's year. B1 for source statements, NOT direct historical item-catalogue autopsy. Institutional search policy at https://www.goshen.edu/facilities/mennonite-historical-library/search/ notes no entire-copy reproduction in general, and live WorldCat page returned JS-only view without specific holdings. Request for exactly one historical Article I line may be negotiated, not presumed available. Neither email sent nor fee authorized."
+    },
+    {
+      "id": "REF-S26",
+      "documentYear": 2022,
+      "title": "GAMEO (Global Anabaptist Mennonite Encyclopedia Online), Schleitheim Confession: historical 1954 article by J. C. Wenger and encyclopedic 2022 summary by James M. Stayer, pointers to 1686 edition and Archives-Goshen title-page scan",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://gameo.org/index.php?title=Schleitheim_Confession",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "GAMEO indexed search result reproduces historical 1954 John C. Wenger entry stating four editions then known, among them a mid-16th century undated Goshen copy and distinct 1686 edition bound with Christliches Glaubensbekantnus. Current James Stayer page likewise mentions a 17th century Swiss Brethren printing bound with Dordrecht Confession. Direct open of gameo.org webpage HTTP 403 in THIS wave; only search engine indexed text, NOT full live page or physical edition, accessed. Separate GAMEO file-page entry https://gameo.org/index.php?title=File:AMC_X-31-1_18_3.jpg labels title-page scan 'ca. 1560', from Mennonite Church USA Archives-Goshen X-31.1 Box18/3; that code is an ARCHIVAL IMAGE REFERENCE in a distinct archive, NOT call number of MHL rare printed original and not proof of identity to 1686, Rothkegel 17c 36pp, or ZV30530. Because direct page access blocked and no article-I original verified, B1 PARTIAL_OBJECT COARSE_LOCATOR_ONLY with EVIDENCE/LOCATOR/ARCHIVE/RIGHTS/PUBLICATION HOLDS for disputed bibliographic identity."
+    },
+    {
+      "id": "REF-S27",
+      "documentYear": 1908,
+      "title": "Walther Köhler (ed.), Brüderlich Vereinigung etzlicher Kinder Gottes sieben Artikel betreffend; Flugschriften aus den ersten Jahren der Reformation, vol. 2, fasc. 3, Leipzig R. Haupt, 1908, pp. 280–337: bibliographic record in CiNii Books and LEO-BW",
+      "evidenceClass": "B1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://ci.nii.ac.jp/ncid/BA61216073",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "EXACT institutional catalog RECORD for 1908 scientific EDITION: Japanese CiNii Books NCID BA61216073, Walther Köhler, Leipzig R. Haupt, 1908, series Flugschriften aus den ersten Jahren der Reformation vol2 fasc3, 61p separately numbered pp280-337. LEO-BW/SWB PPN 51478055X https://www.leo-bw.de/en-GB/detail/-/Detail/details/DOKUMENT/bsz_swb/51478055X/Br%C3%BCderlich%20Vereinigung%20etzlicher%20Kinder%20Gottes%20sieben%20Artikel%20betreffend%20item%20ein%20Sendbrief%20Michael%20Sattlers%20an%20eine%20Gem corroborates 280-337. Google Play Books https://play.google.com/store/books/details/Otto_Clemen_Flugschriften_aus_den_ersten_Jahren_de?id=-wgNAAAAIAAJ reports digitized vol2 1908 468pp; another id 3VRBAQAAMAAJ may be volume2 variant with 1907 date; direct Google scanned image of pp280-337 and 1908 editorial introduction on witness Vorlage NOT accessed, hence cannot infer exact 1533 Matt reference from this edition or claim a photo of original 1533. CATALOG_ONLY and publication/rights hold; EVIDENCE_HOLD is claim-specific for original historical text. Exact locator pertains to modern 1908 EDITION identity and pagination, not original witness. Wave 340, 2026-11-05: independently inspected CiNii BA61216073 holdings, Japanese Library of Economics, University of Tokyo 80:877:2, item 5505962091; confirmed university's official reference email on https://www.lib.e.u-tokyo.ac.jp/english/?page_id=3230 ; personally sent a targeted non-cost-bearing bibliographic enquiry to lib-unyo.e@gs.mail.u-tokyo.ac.jp via connected Gmail (SENT), requesting confirmation of physical holding, Koehler's Introduction/Vorlage and pp305–316. Email is not a scan and no reply yet. Google Play Books was independently read as a listing 'Band 2', Jan 1908, 468 pages, but no original German digital page was obtained. Do not promote accessState from CATALOG_ONLY."
+    },
+    {
+      "id": "REF-S28",
+      "documentYear": 2023,
+      "title": "Katharina Heyden / Martin Sallmann, Quellen auslegen: Konzepte und Methoden der Historischen Theologie (wbg Academic, 2023), 'Anwendungsbeispiel: Die Schleitheimer Artikel', printed pp. 90–93: current Bern manuscript call number StaBE A V 1453 Nr.9, prior StaBE U.P.80 Nr.9, transmission and Zwingli provenance open question",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://boris-portal.unibe.ch/server/api/core/bitstreams/515939e0-152f-4e98-914a-1b033cf74492/content",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "Directly read the university-hosted 2023 SCHOLARLY PDF text, printed pp.90–93 (web PDF screenshot attempts failed; do not claim rendered visual inspection). The manuscript of the seven Schleitheim articles at Staatsarchiv Bern is cited as current StaBE A V 1453 Nr.9, former StaBE U.P.80 Nr.9. This is SECONDARY identification of a primary handwritten witness, NOT a downloaded/viewed original image, NOT an authenticated independent archive catalogue record. Scholars distinguish Haller's letter dated 25 Apr 1527 and Zwingli's reply dated 28 Apr 1527, and explicitly question whether the actual surviving Bern manuscript was among the copies transmitted to Zwingli. Seven articles, but printed preface/end framing letter is absent in manuscript; earliest printed copy cited as BSB VD16 S1882. No verified Matt 27/28 numerator from the manuscript; paid manuscript imaging not ordered. 2023 PDF indicates CC BY-NC 4.0 for text except illustrations, publication/third-party images require separate rights check. Official archive contact https://www.staatsarchiv.sta.be.ch/de/start/ueber-uns/kontakt.html ; inquiry sent via connected Gmail 2026-11-05, label SENT, not order. See C153-C156."
+    },
+    {
+      "id": "REF-S29",
+      "documentYear": 1910,
+      "title": "Heinrich Böhmer (ed.), Urkunden zur Geschichte des Bauernkrieges und der Wiedertäufer, Kleine Texte für Vorlesungen und Übungen 50/51, Bonn, A. Marcus und E. Weber, 1910, printed pp 25–29, especially A1/A2 transmission and Matt 28",
+      "evidenceClass": "B1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://archive.org/details/urkundenzurgesch00boeh",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "Wave 339 (2026-11-05): exact Open Library edition OL24772035M, Internet Archive identifier urkundenzurgesch00boeh; entire original 1910 SCANNED PDF 44 pages / 4,019,061 bytes downloaded from https://archive.org/download/urkundenzurgesch00boeh/urkundenzurgesch00boeh.pdf; SHA-256 f0dbcab8b6af238360f78ed11b09bb154fb763e4c8e3064ddd0c07fa760b1279. Directly RENDERED and visually read Böhmer original printed p.26 (digital PDF page 30) and p.29 (digital PDF page 33); table-of-content/title printed Bonn 1910 also verified. Printed p.26 explicitly distinguishes A1 (two Munich Hof/Staatsbibliothek specimens; no imprint place/year given) and A2 (Berlin königl. Bibliothek and Leipzig antiquarian Haupt); for A2 describes extra leaf D1 ('Von der Ehescheidung') and tail 'B. M. L. 1533'; states Walther Köhler REPRINTED A2 in Flugschriften Bd 2 Heft 3 (1908). On printed p.29 Article I his EDITED running text itself visually reads 'Mat 28 [v. 19]', not 'Mat 27'; the verse notation in square brackets is editorial. Böhmer notes A1 and A2 textual variants in surrounding apparatus, so 1910 running text MUST NOT be treated as photo/transcription proven identical to one physical 1533 A2 witness at disputed numeral without collating editorial basis and Köhler original. B1 scholarly historical edition, neither original 1527 nor physical original lost 1533. No 1908 Köhler pages obtained here, no 1533 article I A1/A2 physical image, no legal publication approval. Archival custody: private local original-file copy + DriveFS mounted folder copy, each PDF and new separate receipt checksum verified locally, cloud server-side upload/readback UNVERIFIED; previous 5-item central acquisition register intentionally unchanged. Open Library https://openlibrary.org/books/OL24772035M/Urkunden_zur_Geschichte_des_Bauernkrieges_und_der_Wiedert%C3%A4ufer"
+    },
+    {
+      "id": "REF-S30",
+      "documentYear": 2010,
+      "title": "James M. Stayer, Pilgram Marpeck and the Austerlitz Brethren: A 'Disappeared' Anabaptist Denomination, Mennonite Life 64 (Summer 2010), Menno Simons Lecture delivered 3 Nov 2008: discussion of Werner O. Packull's hypothesis of Marpeck financing the 1533 Strasbourg Schleitheim edition",
+      "evidenceClass": "B1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://mla.bethelks.edu/ml-archive/2010/pilgram.php",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "Wave 340: Read full html article with page fetch from publisher Bethel College Mennonite Life, Summer 2010 vol64, attributed James M. Stayer (2008 Menno Simons Lecture). In section on Marpeck's Anabaptist printed pamphlets, Stayer expressly reports that Werner O. Packull HOLDS Marpeck saw to publishing the Seven Articles of Schleitheim (1533) with Jacob Cammerlander at Strasbourg. Stayer cites Packull's 2001 Preliminary Report on Pilgram Marpeck's Sponsorship of Anabaptist Flugschriften, Mennonite Quarterly Review 75 (2001), 75-88. This is Stayer's modern SCHOLARLY REPORT OF Packull's historical HYPOTHESIS, NOT direct 2001 Packull full text, NOT an archival contract between Marpeck and Cammerlander, NOT a surviving 1533 print or proof of its Matt 27/28. Its research value is identifying another possible chain of ownership/sponsorship and why one should seek a printer provenance and contemporary documentary records, not to assert Marpeck as sponsor. B1 for secondary scholarship; archive/rights/publication HOLD. Cross reference REF-S29 1910 A2 description."
     }
   ]
 }
