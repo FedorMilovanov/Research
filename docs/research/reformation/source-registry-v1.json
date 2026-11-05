@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 102,
+  "sourceCount": 103,
   "sources": [
     {
       "id": "REF-P01",
@@ -1856,6 +1856,25 @@
       "url": "https://ci.nii.ac.jp/ncid/BA61216073",
       "checkedAt": "2026-11-05",
       "verificationNote": "EXACT institutional catalog RECORD for 1908 scientific EDITION: Japanese CiNii Books NCID BA61216073, Walther Köhler, Leipzig R. Haupt, 1908, series Flugschriften aus den ersten Jahren der Reformation vol2 fasc3, 61p separately numbered pp280-337. LEO-BW/SWB PPN 51478055X https://www.leo-bw.de/en-GB/detail/-/Detail/details/DOKUMENT/bsz_swb/51478055X/Br%C3%BCderlich%20Vereinigung%20etzlicher%20Kinder%20Gottes%20sieben%20Artikel%20betreffend%20item%20ein%20Sendbrief%20Michael%20Sattlers%20an%20eine%20Gem corroborates 280-337. Google Play Books https://play.google.com/store/books/details/Otto_Clemen_Flugschriften_aus_den_ersten_Jahren_de?id=-wgNAAAAIAAJ reports digitized vol2 1908 468pp; another id 3VRBAQAAMAAJ may be volume2 variant with 1907 date; direct Google scanned image of pp280-337 and 1908 editorial introduction on witness Vorlage NOT accessed, hence cannot infer exact 1533 Matt reference from this edition or claim a photo of original 1533. CATALOG_ONLY and publication/rights hold; EVIDENCE_HOLD is claim-specific for original historical text. Exact locator pertains to modern 1908 EDITION identity and pagination, not original witness."
+    },
+    {
+      "id": "REF-S28",
+      "documentYear": 2023,
+      "title": "Katharina Heyden / Martin Sallmann, Quellen auslegen: Konzepte und Methoden der Historischen Theologie (wbg Academic, 2023), 'Anwendungsbeispiel: Die Schleitheimer Artikel', printed pp. 90–93: current Bern manuscript call number StaBE A V 1453 Nr.9, prior StaBE U.P.80 Nr.9, transmission and Zwingli provenance open question",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://boris-portal.unibe.ch/server/api/core/bitstreams/515939e0-152f-4e98-914a-1b033cf74492/content",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "Directly read the university-hosted 2023 SCHOLARLY PDF text, printed pp.90–93 (web PDF screenshot attempts failed; do not claim rendered visual inspection). The manuscript of the seven Schleitheim articles at Staatsarchiv Bern is cited as current StaBE A V 1453 Nr.9, former StaBE U.P.80 Nr.9. This is SECONDARY identification of a primary handwritten witness, NOT a downloaded/viewed original image, NOT an authenticated independent archive catalogue record. Scholars distinguish Haller's letter dated 25 Apr 1527 and Zwingli's reply dated 28 Apr 1527, and explicitly question whether the actual surviving Bern manuscript was among the copies transmitted to Zwingli. Seven articles, but printed preface/end framing letter is absent in manuscript; earliest printed copy cited as BSB VD16 S1882. No verified Matt 27/28 numerator from the manuscript; paid manuscript imaging not ordered. 2023 PDF indicates CC BY-NC 4.0 for text except illustrations, publication/third-party images require separate rights check. Official archive contact https://www.staatsarchiv.sta.be.ch/de/start/ueber-uns/kontakt.html ; inquiry sent via connected Gmail 2026-11-05, label SENT, not order. See C153-C156."
     }
   ]
 }
