@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 104,
+  "sourceCount": 105,
   "sources": [
     {
       "id": "REF-P01",
@@ -1855,7 +1855,7 @@
       ],
       "url": "https://ci.nii.ac.jp/ncid/BA61216073",
       "checkedAt": "2026-11-05",
-      "verificationNote": "EXACT institutional catalog RECORD for 1908 scientific EDITION: Japanese CiNii Books NCID BA61216073, Walther Köhler, Leipzig R. Haupt, 1908, series Flugschriften aus den ersten Jahren der Reformation vol2 fasc3, 61p separately numbered pp280-337. LEO-BW/SWB PPN 51478055X https://www.leo-bw.de/en-GB/detail/-/Detail/details/DOKUMENT/bsz_swb/51478055X/Br%C3%BCderlich%20Vereinigung%20etzlicher%20Kinder%20Gottes%20sieben%20Artikel%20betreffend%20item%20ein%20Sendbrief%20Michael%20Sattlers%20an%20eine%20Gem corroborates 280-337. Google Play Books https://play.google.com/store/books/details/Otto_Clemen_Flugschriften_aus_den_ersten_Jahren_de?id=-wgNAAAAIAAJ reports digitized vol2 1908 468pp; another id 3VRBAQAAMAAJ may be volume2 variant with 1907 date; direct Google scanned image of pp280-337 and 1908 editorial introduction on witness Vorlage NOT accessed, hence cannot infer exact 1533 Matt reference from this edition or claim a photo of original 1533. CATALOG_ONLY and publication/rights hold; EVIDENCE_HOLD is claim-specific for original historical text. Exact locator pertains to modern 1908 EDITION identity and pagination, not original witness."
+      "verificationNote": "EXACT institutional catalog RECORD for 1908 scientific EDITION: Japanese CiNii Books NCID BA61216073, Walther Köhler, Leipzig R. Haupt, 1908, series Flugschriften aus den ersten Jahren der Reformation vol2 fasc3, 61p separately numbered pp280-337. LEO-BW/SWB PPN 51478055X https://www.leo-bw.de/en-GB/detail/-/Detail/details/DOKUMENT/bsz_swb/51478055X/Br%C3%BCderlich%20Vereinigung%20etzlicher%20Kinder%20Gottes%20sieben%20Artikel%20betreffend%20item%20ein%20Sendbrief%20Michael%20Sattlers%20an%20eine%20Gem corroborates 280-337. Google Play Books https://play.google.com/store/books/details/Otto_Clemen_Flugschriften_aus_den_ersten_Jahren_de?id=-wgNAAAAIAAJ reports digitized vol2 1908 468pp; another id 3VRBAQAAMAAJ may be volume2 variant with 1907 date; direct Google scanned image of pp280-337 and 1908 editorial introduction on witness Vorlage NOT accessed, hence cannot infer exact 1533 Matt reference from this edition or claim a photo of original 1533. CATALOG_ONLY and publication/rights hold; EVIDENCE_HOLD is claim-specific for original historical text. Exact locator pertains to modern 1908 EDITION identity and pagination, not original witness. Wave 340, 2026-11-05: independently inspected CiNii BA61216073 holdings, Japanese Library of Economics, University of Tokyo 80:877:2, item 5505962091; confirmed university's official reference email on https://www.lib.e.u-tokyo.ac.jp/english/?page_id=3230 ; personally sent a targeted non-cost-bearing bibliographic enquiry to lib-unyo.e@gs.mail.u-tokyo.ac.jp via connected Gmail (SENT), requesting confirmation of physical holding, Koehler's Introduction/Vorlage and pp305–316. Email is not a scan and no reply yet. Google Play Books was independently read as a listing 'Band 2', Jan 1908, 468 pages, but no original German digital page was obtained. Do not promote accessState from CATALOG_ONLY."
     },
     {
       "id": "REF-S28",
@@ -1894,6 +1894,25 @@
       "url": "https://archive.org/details/urkundenzurgesch00boeh",
       "checkedAt": "2026-11-05",
       "verificationNote": "Wave 339 (2026-11-05): exact Open Library edition OL24772035M, Internet Archive identifier urkundenzurgesch00boeh; entire original 1910 SCANNED PDF 44 pages / 4,019,061 bytes downloaded from https://archive.org/download/urkundenzurgesch00boeh/urkundenzurgesch00boeh.pdf; SHA-256 f0dbcab8b6af238360f78ed11b09bb154fb763e4c8e3064ddd0c07fa760b1279. Directly RENDERED and visually read Böhmer original printed p.26 (digital PDF page 30) and p.29 (digital PDF page 33); table-of-content/title printed Bonn 1910 also verified. Printed p.26 explicitly distinguishes A1 (two Munich Hof/Staatsbibliothek specimens; no imprint place/year given) and A2 (Berlin königl. Bibliothek and Leipzig antiquarian Haupt); for A2 describes extra leaf D1 ('Von der Ehescheidung') and tail 'B. M. L. 1533'; states Walther Köhler REPRINTED A2 in Flugschriften Bd 2 Heft 3 (1908). On printed p.29 Article I his EDITED running text itself visually reads 'Mat 28 [v. 19]', not 'Mat 27'; the verse notation in square brackets is editorial. Böhmer notes A1 and A2 textual variants in surrounding apparatus, so 1910 running text MUST NOT be treated as photo/transcription proven identical to one physical 1533 A2 witness at disputed numeral without collating editorial basis and Köhler original. B1 scholarly historical edition, neither original 1527 nor physical original lost 1533. No 1908 Köhler pages obtained here, no 1533 article I A1/A2 physical image, no legal publication approval. Archival custody: private local original-file copy + DriveFS mounted folder copy, each PDF and new separate receipt checksum verified locally, cloud server-side upload/readback UNVERIFIED; previous 5-item central acquisition register intentionally unchanged. Open Library https://openlibrary.org/books/OL24772035M/Urkunden_zur_Geschichte_des_Bauernkrieges_und_der_Wiedert%C3%A4ufer"
+    },
+    {
+      "id": "REF-S30",
+      "documentYear": 2010,
+      "title": "James M. Stayer, Pilgram Marpeck and the Austerlitz Brethren: A 'Disappeared' Anabaptist Denomination, Mennonite Life 64 (Summer 2010), Menno Simons Lecture delivered 3 Nov 2008: discussion of Werner O. Packull's hypothesis of Marpeck financing the 1533 Strasbourg Schleitheim edition",
+      "evidenceClass": "B1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://mla.bethelks.edu/ml-archive/2010/pilgram.php",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "Wave 340: Read full html article with page fetch from publisher Bethel College Mennonite Life, Summer 2010 vol64, attributed James M. Stayer (2008 Menno Simons Lecture). In section on Marpeck's Anabaptist printed pamphlets, Stayer expressly reports that Werner O. Packull HOLDS Marpeck saw to publishing the Seven Articles of Schleitheim (1533) with Jacob Cammerlander at Strasbourg. Stayer cites Packull's 2001 Preliminary Report on Pilgram Marpeck's Sponsorship of Anabaptist Flugschriften, Mennonite Quarterly Review 75 (2001), 75-88. This is Stayer's modern SCHOLARLY REPORT OF Packull's historical HYPOTHESIS, NOT direct 2001 Packull full text, NOT an archival contract between Marpeck and Cammerlander, NOT a surviving 1533 print or proof of its Matt 27/28. Its research value is identifying another possible chain of ownership/sponsorship and why one should seek a printer provenance and contemporary documentary records, not to assert Marpeck as sponsor. B1 for secondary scholarship; archive/rights/publication HOLD. Cross reference REF-S29 1910 A2 description."
     }
   ]
 }
