@@ -274,6 +274,8 @@ def validate() -> tuple[list[str], dict[str, int]]:
         "REF-P44": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
         "REF-P45": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
         "REF-P46": ("PARTIAL_OBJECT", "RIGHTS_UNKNOWN"),
+        "REF-P47": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
+        "REF-P48": ("PARTIAL_OBJECT", "RIGHTS_UNKNOWN"),
         "REF-S15": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED"),
         "REF-S16": ("PARTIAL_OBJECT", "RIGHTS_UNKNOWN"),
     }
@@ -291,12 +293,15 @@ def validate() -> tuple[list[str], dict[str, int]]:
         "C79": ("REF-P40", "A1r", "B4"),
         "C84": ("REF-P43", "GHDI"),
         "C85": ("REF-P44", "REF-P46", "REF-S15", "1521", "S.556", "NOT_INDEPENDENT"),
-        "C86": ("REF-P44", "REF-P46", "REF-P39", "REF-P45"),
+        "C86": ("REF-P44", "REF-P46", "REF-P39", "REF-P45", "REF-P47"),
         "C87": ("REF-P39", "REF-P44", "REF-S15"),
         "C88": ("REF-S15", "F add", "Q add", "S.570", "S.582", "NOT_INDEPENDENT"),
         "C89": ("REF-P45", "Neyn"),
         "C90": ("REF-S15", "S.583"),
         "C91": ("REF-S15", "REF-S16", "REF-S14", "S.556"),
+        "C92": ("REF-P47", "REF-S15", "nit anderst", "19 апреля", "NOT_STENOGRAPHY"),
+        "C93": ("REF-P47", "Lucifer", "ZV23319", "не"),
+        "C94": ("REF-P48", "Reg. E 81", "обрывается", "INCOMPLETE_AUTOGRAPH_NOT_SPOKEN_CONCLUSION"),
     }.items():
         row = claim_rows.get(id_, "")
         if any(term not in row for term in substrings):
@@ -395,6 +400,268 @@ def validate() -> tuple[list[str], dict[str, int]]:
         problems.append("Wittenberg Latin 1521 visual receipt missing from dossier 12")
     if "REF-P46" not in claim_rows.get("C85", "") or "REF-P46" not in claim_rows.get("C86", ""):
         problems.append("Latin 1521 print disconnected from comparative claims C85-C86")
+    # Augsburg VD16 A3024 is a genuine photographed early PRINT, but not
+    # Peutinger's original 19 April letter or an independent verbatim speech.
+    p47 = corpus.get("REF-P47", {})
+    p47_note = str(p47.get("verificationNote", ""))
+    p47_pdf = "https://www.dilibri.de/stbwo/download/pdf/2040713"
+    p47_sha = "4fd0fb21456c815bb6d701307bdfe97eeae9080f27aea7b64a1072659a48fe79"
+    if p47.get("url") != "https://www.dilibri.de/urn/urn:nbn:de:0128-5-2820":
+        problems.append("Augsburg 1521 P47 library locator changed")
+    if p47.get("locatorState") != "EXACT_LOCATOR_VERIFIED":
+        problems.append("Augsburg 1521 P47 original PDF locator no longer verified")
+    if not {"ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"} <= set(p47.get("holds", [])):
+        problems.append("Augsburg 1521 P47 letter/print rights hold removed")
+    if any(token not in p47_note for token in
+           (p47_pdf, p47_sha, "3253175", "ALL 16", "TEMP_CLEANED=True",
+            "original manuscript/letter was NOT photographed",
+            "NOT a stenographic transcript", "Pope pamphlet",
+            "NOT on-site iconography", "CC BY-NC-SA 3.0")):
+        problems.append("Augsburg 1521 P47 visual receipt, independence or rights lost")
+    if any(token not in wrede_section for token in
+           (p47_pdf, p47_sha, "3253175", "PDF", "кадре 10",
+            "самого автора сообщения", "не** сказанная Лютером",
+            "Пейтингера", "VD16 ZV23319")):
+        problems.append("Augsburg P47 primary-print/curatorial limits absent from dossier")
+    if any(token not in claim_rows.get("C92", "") for token in
+           ("REF-P47", "Got kum mir zehülff", "nit anderst",
+            "PRINTED_REPORT_NOT_AUTOGRAPH_NOT_STENOGRAPHY")):
+        problems.append("C92 P47 narrative voice misattribution or source lost")
+    if any(token not in claim_rows.get("C93", "") for token in
+           ("REF-P47", "ZV23319", "ORIGINAL_TITLE_IMAGE_VISUALLY_CHECKED",
+            "RECYCLED_PROPAGANDA_IMAGE_NOT_EVENT_RECORD")):
+        problems.append("C93 P47 recycled woodcut context lost")
+    p47_receipt = next((rec for rec in items if rec.get("id") == "REF-P47"), {})
+    if (p47_receipt.get("acquisitionState") != "VERIFIED_TEMP_DISCARDED"
+            or p47_receipt.get("sha256") != p47_sha
+            or p47_receipt.get("actualBytes") != 3253175
+            or p47_receipt.get("catalog") != p47.get("url")
+            or p47_receipt.get("downloadAccess") != p47_pdf
+            or p47_receipt.get("accessState") != "PARTIAL_OBJECT"
+            or p47_receipt.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+            or p47_receipt.get("publicationState") != "REFERENCE"):
+        problems.append("Augsburg P47 acquisition manifest no longer matches verified source bytes")
+    if any(token not in str(p47_receipt.get("rights", "")) for token in
+           ("CC BY-NC-SA 3.0", "RIGHTS_HOLD", "PUBLICATION_HOLD")):
+        problems.append("Augsburg P47 acquisition image-reuse restrictions lost")
+    if "TEMP_CLEANED=True" not in str(p47_receipt.get("tempDisposition", "")):
+        problems.append("Augsburg P47 canonical temp cleanup receipt missing")
+    if "| REF-P47 |" not in (HERE / "02_open_primary_sources_and_reading.md").read_text(
+            encoding="utf-8"):
+        problems.append("Augsburg P47 missing from primary-source reading list")
+    # The Weimar autograph Reg E 81 is an incomplete physical draft seen
+    # via institutional museum photography, NOT an acquired full facsimile,
+    # stenographic transcript, or proof of what Luther said at the ending.
+    p48 = corpus.get("REF-P48", {})
+    p48_note = str(p48.get("verificationNote", ""))
+    p48_url = ("https://artsandculture.google.com/asset/"
+               "luther%E2%80%99s-address-before-the-imperial-diet-in-worms-"
+               "notes-in-his-own-hand-martin-luther/uAEBA1Vc8H_uCQ?hl=en")
+    if p48.get("url") != p48_url:
+        problems.append("Weimar 1521 autograph Reg E81 museum photo locator changed")
+    if p48.get("locatorState") != "EXACT_LOCATOR_VERIFIED":
+        problems.append("Weimar Reg E81 autograph precise archive locator lost")
+    if not {"ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"} <= set(p48.get("holds", [])):
+        problems.append("Weimar Reg E81 manuscript/full-reuse hold removed")
+    if any(token not in p48_note for token in (
+            "Reg. E 81", "UNESCO", "Morgan Library",
+            "BREAKS OFF IN THE MIDDLE OF A SENTENCE",
+            "NOT a complete speech record", "NO downloaded photo",
+            "NO new acquisition-manifest row", "full institutional scan")):
+        problems.append("Weimar Reg E81 partial autograph provenance/limits lost")
+    if any(token not in wrede_section for token in (
+            "### P48.", "Reg. E 81", "музейной фотографии",
+            "обрывается посреди предложения", "13 записями",
+            "не доказательство, что фраза не прозвучала",
+            "RIGHTS_HOLD / PUBLICATION_HOLD")):
+        problems.append("Weimar Reg E81 incomplete autograph context absent from Worms dossier")
+    if any(token not in claim_rows.get("C94", "") for token in (
+            "REF-P48", "обрывается посреди предложения",
+            "не доказывает ни произнесение, ни непроизнесение",
+            "INCOMPLETE_AUTOGRAPH_NOT_SPOKEN_CONCLUSION")):
+        problems.append("C94 Weimar autograph falsely promoted into completed speech conclusion")
+    if any(rec.get("id") == "REF-P48" for rec in items):
+        problems.append("Weimar autograph museum photo falsely inserted as downloaded acquisition")
+    if "| REF-P48 |" not in (HERE / "02_open_primary_sources_and_reading.md").read_text(
+            encoding="utf-8"):
+        problems.append("Weimar Reg E81 autograph missing from primary source list")
+    # Zurich research acquisition 2026-11-04: metadata manifest alone is NOT
+    # a photographed or read 1523 original; the 1525 official PDF is a real
+    # privately retained local copy, NOT released and NOT word-by-word collated.
+    zwingli = corpus.get("REF-P09-PRINT", {})
+    z_man = next((rec for rec in items if rec.get("id") == "REF-P09-PRINT"), {})
+    z_meta = z_man.get("metadataReceipt", {})
+    meta_sha = "367e21601ed4c3d66126977e0e4e83fc5792b04964861ed41e8a508ce1183fa7"
+    if zwingli.get("accessState") != "CATALOG_ONLY" or zwingli.get("locatorState") != "EXACT_LOCATOR_VERIFIED":
+        problems.append("Zurich 1523 image-blocked work falsely promoted to read source")
+    if zwingli.get("rightsState") != "RIGHTS_UNKNOWN" or not {
+            "ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"} <= set(zwingli.get("holds", [])):
+        problems.append("Zurich 1523 NoC-US/CNE image-rights discrepancy silently dropped")
+    if z_man.get("acquisitionState") != "NOT_DOWNLOADED" or z_man.get("sha256") is not None:
+        problems.append("Zurich 1523 original JPEGs falsely registered as downloaded")
+    if (z_meta.get("sha256") != meta_sha or z_meta.get("actualBytes") != 90592
+            or z_meta.get("canvases") != 29 or z_meta.get("physicalPrintedPages") != 16
+            or z_meta.get("imageFilesDownloaded") != 0 or z_meta.get("retained") is not True):
+        problems.append("Zurich 1523 verified bibliographic manifest receipt corrupted")
+    if (z_meta.get("rightsManifest") != "https://rightsstatements.org/vocab/CNE/1.0/"
+            or z_meta.get("rightsItem") != "https://rightsstatements.org/page/NoC-US/1.0/"):
+        problems.append("Zurich 1523 conflicting image-rights metadata lost")
+    if any(t not in str(zwingli.get("verificationNote", "")) for t in
+           (meta_sha, "HTTP 403", "29", "16", "NoC-US", "CNE/1.0")):
+        problems.append("Zurich 1523 original print metadata/copyright qualification lost")
+    luther = corpus.get("REF-P07-ZRH", {})
+    l_acq = next((rec for rec in items if rec.get("id") == "REF-P07-ZRH"), {})
+    retained = l_acq.get("retainedLocalCopy", {})
+    l_sha = "898107c6e63848aca753e8c0989520ffa3c008ca37bf33f7835bc6cfbbb49239"
+    if (luther.get("accessState") != "PARTIAL_OBJECT"
+            or luther.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+            or "ARCHIVE_HOLD" not in luther.get("holds", [])):
+        problems.append("Zurich 1525 original PDF access/partial transcription misclassified")
+    if (l_acq.get("acquisitionState") != "DOWNLOADED_VERIFIED"
+            or l_acq.get("actualBytes") != 8239895
+            or l_acq.get("sha256") != l_sha
+            or retained.get("sha256") != l_sha
+            or retained.get("actualBytes") != 8239895
+            or retained.get("storageClass") != "PRIVATE_RESEARCH_ONLY"):
+        problems.append("Zurich 1525 verified retained PDF receipt inconsistent")
+    if (retained.get("visuallyCheckedPages") != [5, 6, 7, 8, 14, 15, 16, 28, 29, 30]
+            or retained.get("fullPageCollationCompleted") is not False):
+        problems.append("Zurich 1525 claimed page/complete-collation status not supported")
+    if "Luther_1525_Froschauer_VD16_L4693" not in str(retained.get("localRelativePath", "")):
+        problems.append("Zurich 1525 private-retention destination missing")
+    if not {"RIGHTS_HOLD", "PUBLICATION_HOLD"} <= set(luther.get("holds", [])):
+        problems.append("Zurich 1525 private archive erroneously treated as publication permission")
+    for claim_id, required in {
+            "C95": ("REF-P09-PRINT", meta_sha, "NO_IMAGE_BYTES_NO_TEXT_COLLATION", "CNE/1.0"),
+            "C96": ("REF-P09-PRINT", "27 января", "29 января", "DATE_HOLD_ON_EMORY_CARD"),
+            "C97": ("REF-P07-ZRH", l_sha, "PERSISTENT_PRIVATE_SOURCE_NOT_PUBLICATION_APPROVAL"),
+            "C98": ("REF-P07-ZRH", "p.6", "p.30", "SAMPLED_PRINTED_LEAVES_NOT_FULL_COLLATION"),
+    }.items():
+        if any(token not in claim_rows.get(claim_id, "") for token in required):
+            problems.append(f"{claim_id}: Zurich evidence/hold regression")
+    dossier_06 = (HERE / "06_primary_source_collation_2026-11-04.md").read_text(encoding="utf-8")
+    for token in ("## 9. Реальное пополнение", meta_sha, l_sha,
+                  "29 цифровых кадров", "NoC-US", "CNE/1.0",
+                  "ЗВ", "частной библиотеке"):
+        # A limited list of structural evidence/claims; cannot prove content
+        # without reading external original images or their licensing terms.
+        if token not in dossier_06 and token != "ЗВ":
+            problems.append(f"Zurich main dossier lost audited evidence: {token}")
+    # New genuine 1523 originals: short four-leaf 67-article print and
+    # distinct 254-leaf commentary. Full PDF acquisition ≠ textual collation.
+    z67 = corpus.get("REF-P09-ZRH-67", {})
+    a67 = next((rec for rec in items if rec.get("id") == "REF-P09-ZRH-67"), {})
+    z67_disk = a67.get("retainedLocalCopy", {})
+    z67_sha = "6f7aa50455a95566c82328dc24f42907018ff6c882564a2da46cfcad2f1fe19f"
+    if (z67.get("accessState") != "PARTIAL_OBJECT"
+            or z67.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+            or z67.get("rightsState") != "PUBLICATION_ELIGIBLE"
+            or z67.get("publicationState") != "REFERENCE"
+            or not {"ARCHIVE_HOLD", "PUBLICATION_HOLD"} <= set(z67.get("holds", []))):
+        problems.append("Zwingli Z819 source rights/access prematurely promoted")
+    if (a67.get("acquisitionState") != "DOWNLOADED_VERIFIED"
+            or a67.get("actualBytes") != 3349092 or a67.get("sha256") != z67_sha
+            or z67_disk.get("bytes") != 3349092
+            or z67_disk.get("sha256") != z67_sha
+            or z67_disk.get("historicalLeaves") != 4
+            or z67_disk.get("digitalPages") != 13
+            or z67_disk.get("originalPrintPdfPages") != list(range(2, 10))
+            or z67_disk.get("firstNumberedArticle") != 1
+            or z67_disk.get("lastNumberedArticle") != 67
+            or z67_disk.get("allDigitalImagesViewed") is not True
+            or z67_disk.get("fullWordByWordCollation") is not False
+            or z67_disk.get("originalColophonPrinterConfirmed") is not False):
+        problems.append("Zwingli Z819 four-leaf original scanned/retained receipt, text or printer limit altered")
+    if ("Zwingli_1523_Froschauer_67_Theses_VD16_Z819"
+            not in str(z67_disk.get("localRelativePath", ""))):
+        problems.append("Zwingli Z819 original PDF destination lost")
+    if any(x not in str(z67.get("verificationNote", "")) for x in
+           (z67_sha, "13 DIGITAL", "67", "not a word-for-word", "LIBRARY BIBLIOGRAPHIC")):
+        problems.append("Zwingli Z819 provenance or printing caveat lost")
+    zlong = corpus.get("REF-P09-EXPLANATION", {})
+    a_long = next((rec for rec in items if rec.get("id") == "REF-P09-EXPLANATION"), {})
+    long_disk = a_long.get("retainedLocalCopy", {})
+    long_sha = "3331c5863552131a3f3ad779bae0613b7651f499ed68fee40c8980a340ef77fa"
+    if (zlong.get("accessState") != "PARTIAL_OBJECT"
+            or zlong.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+            or "ARCHIVE_HOLD" not in zlong.get("holds", [])
+            or "PUBLICATION_HOLD" not in zlong.get("holds", [])):
+        problems.append("Zwingli Z821 commentary research hold removed")
+    if (a_long.get("acquisitionState") != "DOWNLOADED_VERIFIED"
+            or a_long.get("sha256") != long_sha
+            or a_long.get("actualBytes") != 136718994
+            or long_disk.get("sha256") != long_sha
+            or long_disk.get("bytes") != 136718994
+            or long_disk.get("digitalPages") != 513
+            or long_disk.get("historicalLeaves") != 254
+            or long_disk.get("sampledPdfPages") != [1, 2, 3, 4, 5, 6]
+            or long_disk.get("fullWordByWordCollation") is not False
+            or long_disk.get("firsthandDisputationDateFromPreface") != "29 January 1523 at PDF p5"
+            or long_disk.get("titleNumeralCriticalReading", {}).get("literalPrinted") != "XIX"
+            or long_disk.get("titleNumeralCriticalReading", {}).get("editorialCorrection") != "XXIX"
+            or long_disk.get("titleNumeralCriticalReading", {}).get("separateNineteenJanuaryDisputationEstablished") is not False):
+        problems.append("Zwingli Z821 acquired 254-leaf original, date or incomplete collation altered")
+    if ("Zwingli_1523_Froschauer_Usslegen_VD16_Z821"
+            not in str(long_disk.get("localRelativePath", ""))):
+        problems.append("Zwingli Z821 retained original PDF path missing")
+    if any(x not in str(zlong.get("verificationNote", "")) for x in
+           (long_sha, "29 tag Jenners", "513 DIGITAL", "XIX [sic]", "XXIX", "NOT complete")):
+        problems.append("Zwingli 1523 original author dating/context lost")
+    if (retained.get("wholePdfVisuallyInspected") is not True
+            or retained.get("digitalPages") != 33
+            or retained.get("historicalLeaves") != 14
+            or retained.get("fullPageCollationCompleted") is not False
+            or "Wittemberg" not in str(retained.get("titleImprint", ""))
+            or "Zurich" not in str(retained.get("actualPrinterColophon", ""))):
+        problems.append("Zurich 1525 Froschauer actual colophon/title and full visual PDF limits lost")
+    for cid, substrings in {
+        "C99": ("REF-P09-ZRH-67", z67_sha, "ZURICH_67_FULL_IMAGE_SEQUENCE_NOT_FULL_TRANSCRIPTION"),
+        "C100": ("REF-P09-EXPLANATION", "29 января", "19 января", "1523_FIRST_PERSON_29_JAN_NOT_19_TITLE_OR_27_METADATA", "TITLE_XIX_SCHOLARLY_CORRECTED_TO_XXIX_NOT_SEPARATE_EVENT", "Wood"),
+        "C101": ("REF-P09-EXPLANATION", long_sha, "FULL_BYTES_NOT_FULL_TRANSCRIPTION"),
+        "C102": ("REF-P07-ZRH", "p.4", "p.30", "TITLE_WITTENBERG_COLOPHON_ZURICH"),
+    }.items():
+        if any(t not in claim_rows.get(cid, "") for t in substrings):
+            problems.append(f"{cid}: new primary-copy acquisition/chronology evidence lost")
+    source_readings = (HERE / "02_open_primary_sources_and_reading.md").read_text(encoding="utf-8")
+    if not all(f"| {k} |" in source_readings for k in
+               ("REF-P09-PRINT", "REF-P09-ZRH-67", "REF-P09-EXPLANATION")):
+        problems.append("Three distinct 1523 printed witness entries improperly conflated")
+    collation = (HERE / "06_primary_source_collation_2026-11-04.md").read_text(
+        encoding="utf-8")
+    if any(t not in collation for t in
+           ("## 10. Два реально сохранённых", z67_sha, long_sha,
+            "PDF p.5", "29 января 1523", "XIX", "XXIX", "Jon D. Wood", "254", "67", "Ramminger",
+            "Wittemberg", "колофон", "PUBLICATION_HOLD")):
+        problems.append("Zwingli original 1523 visual-page map or publisher limits lost")
+    # Zurich council 1523: catalogue metadata is not a manuscript scan.
+    municipal = {
+        "REF-P49": ("CATALOG_ONLY", "4613026"),
+        "REF-P50": ("CATALOG_ONLY", "1880495"),
+        "REF-P51": ("CATALOG_ONLY", "4613028"),
+        "REF-P52": ("CATALOG_ONLY", "4681282"),
+        "REF-P53": ("PARTIAL_OBJECT", "Werk.17II"),
+        "REF-P54": ("PARTIAL_OBJECT", "Werk.17III"),
+    }
+    for sid, (access, locator) in municipal.items():
+        x = corpus.get(sid, {})
+        if (x.get("accessState") != access or locator not in str(x.get("url", ""))
+                or x.get("publicationState") != "REFERENCE"
+                or not {"ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"} <= set(x.get("holds", []))):
+            problems.append(f"{sid}: Zurich city council access/rights/source link regression")
+    for cid, required in {
+        "C103": ("REF-P49", "REF-P53", "COUNCIL_SUMMONS_3_JAN_FOR_29_JAN"),
+        "C104": ("REF-P51", "REF-P54", "COUNCIL_DIRECTIVE_AND_SANCTIONS_NOT_TOLERATION"),
+        "C105": ("REF-P49", "REF-P50", "TWO_DRAFT_WITNESSES_NOT_TWO_EVENTS"),
+        "C106": ("REF-P52", "PRINT_CONTROL_CATALOG_ONLY"),
+    }.items():
+        if any(s not in claim_rows.get(cid, "") for s in required):
+            problems.append(f"{cid}: Zurich council evidence/claim mismatch")
+    if not all(f'| {sid} |' in source_readings for sid in municipal):
+        problems.append("Zurich council reference reading map incomplete")
+    if "## 11. Цюрих 1523" not in collation:
+        problems.append("Zurich council direct critical-text reading missing")
+    # Enforce source interpretation without inventing independent eyewitnesses:
+    # a byte receipt cannot prove the letter autograph or oral delivery.
     for file in HERE.glob("*.md"):
         text = file.read_text(encoding="utf-8")
         for match in MD_LINK_RE.finditer(text):
