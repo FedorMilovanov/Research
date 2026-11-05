@@ -66,6 +66,66 @@
       "commit": "fb4bfe2978c1987380a31502ec6fae88af7c5c0c",
       "gitBytes": 22206,
       "gitSha256": "018dc475ee047c8a701e272e9eaf2ebc37b3d3d25e28bb388b33e2ff4a19be72"
+    },
+    {
+      "path": "docs/research/atonement/01_prokopenko_article_review.md",
+      "commit": "49a081fdbb11900cdccc46b8364208a0ace97a40",
+      "gitBytes": 339229,
+      "gitSha256": "0663f2430b9adc1820fe322049f9e978e0b3b0a6725b605b103849a9cb4945c4"
+    },
+    {
+      "path": "docs/research/atonement/06_detailed_refutation_of_prokopenko_arguments.md",
+      "commit": "49a081fdbb11900cdccc46b8364208a0ace97a40",
+      "gitBytes": 165265,
+      "gitSha256": "178019da35f4cb1c8f4ccd41e8085bc2f8d526b5ab5d09385a3649f98eb17327"
+    },
+    {
+      "path": "docs/research/atonement/31_contemporary_doctoral_dissertations_survey.md",
+      "commit": "49a081fdbb11900cdccc46b8364208a0ace97a40",
+      "gitBytes": 27176,
+      "gitSha256": "ffa1b1706c7cce96caad374b275f229ca2bdf267e55ebbec6a348a10efd440a1"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+      "commit": "49a081fdbb11900cdccc46b8364208a0ace97a40",
+      "gitBytes": 95288,
+      "gitSha256": "273fa95794c554287c17755441f54567b94014600593c2a145426a3c4d21c041"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+      "commit": "49a081fdbb11900cdccc46b8364208a0ace97a40",
+      "gitBytes": 224820,
+      "gitSha256": "95d0f604797c944ac3fffdbcb5be7f7ee7e236c84a2514895a815a4711ee75cf"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+      "commit": "49a081fdbb11900cdccc46b8364208a0ace97a40",
+      "gitBytes": 56476,
+      "gitSha256": "3f574c88c80996dc21322e3201ffe8932734d6df4825d4637c37c97e249d2d16"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+      "commit": "49a081fdbb11900cdccc46b8364208a0ace97a40",
+      "gitBytes": 1221999,
+      "gitSha256": "63f9639cbc02ead2855ca6b3e6e2fc951d21c16bbbb7b683fe47e71cc4b66e03"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
+      "commit": "49a081fdbb11900cdccc46b8364208a0ace97a40",
+      "gitBytes": 38583,
+      "gitSha256": "592dc3e363c8ec07500447c9907d5a64db673d8f018ef3f4f12b6b316d8ae6c6"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
+      "commit": "49a081fdbb11900cdccc46b8364208a0ace97a40",
+      "gitBytes": 1287192,
+      "gitSha256": "ebf2a0ce9b8111efdc9b7727141b88a7fc5b89454c7bbee4437d87eabe8f9d4e"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+      "commit": "49a081fdbb11900cdccc46b8364208a0ace97a40",
+      "gitBytes": 189902,
+      "gitSha256": "155eb4de7abcb0cb8e2bc697f40e02b631a634228b2cf2c4ee7884aeec9baa07"
     }
   ],
   "sources": [
@@ -770,6 +830,361 @@
         "ARCHIVE_HOLD",
         "PUBLICATION_HOLD"
       ]
+    },
+    {
+      "id": "riccardi2022-triune-fulltext",
+      "url": "https://tms.edu/wp-content/uploads/2022/03/Spring-22-Triune-Particularism-159-83.pdf",
+      "evidenceClass": "A1",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "readScope": "Complete extracted article text, printed pp.159–183, including footnotes; not complete 2021 dissertation or 2023 book.",
+      "externalCacheRelativePath": "sources/riccardi2022-triune-tinyfish.md",
+      "captureBytes": 98995,
+      "captureSha256": "79828f7ddd6d86495c57737b97c53f8c230a88201b51b723af5b84b03dc39cca",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "fullWorkRead": true,
+      "objectType": "journal_article",
+      "captureMethod": "TinyFish full article extraction; original PDF bytes not locally verified",
+      "locatorVerificationMethod": "Printed page markers and article running headers in extracted text",
+      "bibliography": "TMSJ 33/1 (Spring 2022), 159–183; embedded PDF metadata suggesting Fall 2018 is not used as article date"
+    },
+    {
+      "id": "riccardi2022-reconcile-sermon",
+      "url": "https://www.thegracelifepulpit.com/sermons.aspx?code=2022-04-10-MR",
+      "evidenceClass": "A1",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "bytes": 148015,
+      "sha256": "66a188cd9dddb5da82f5fd4fd6b5974f4c8e9b44c5b5d75912fe393bd7a13314",
+      "externalCacheRelativePath": "sources/riccardi2022-reconcile.html",
+      "readScope": "Complete main transcript, Introduction through Conclusion; audio and rest of sermon series not read.",
+      "fullWorkRead": true,
+      "objectType": "sermon_transcript",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "calvin-2cor5-reconciliation",
+      "url": "https://ccel.org/ccel/calvin/calcom40/calcom40.xi.iv.html",
+      "evidenceClass": "A1",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "readScope": "Complete commentary section on 2 Corinthians 5:18–21, Pringle translation; not whole commentary.",
+      "externalCacheRelativePath": "sources/calvin-reconciliation-tinyfish.md",
+      "captureBytes": 21654,
+      "captureSha256": "ee2883a44ef4e9f7caef36426d07f08c87cecb483cc32358e1f3b9bfa2113fb3",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "fullWorkRead": false,
+      "captureMethod": "TinyFish extracted authorial commentary section",
+      "locatorVerificationMethod": "Verse-labelled complete section; not page-image collation"
+    },
+    {
+      "id": "biblehub-greek-text-2_corinthians-5-19",
+      "url": "https://biblehub.com/text/2_corinthians/5-19.htm",
+      "evidenceClass": "A1",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "fullWorkRead": false,
+      "readScope": "Greek verse text, or full 2 Corinthians 5 where chapter is supplied; morphology tables not independently adjudicated; no critical apparatus.",
+      "externalCacheRelativePath": "sources/tinyfish-continuation-2026-11-06.json",
+      "captureJsonPointer": "/calvinGreek/results/1/text",
+      "captureTextSha256": "39bedeccba7c1f2518f31d2243a43f950f76b5b8377fdb3883cf51c717735857",
+      "captureTextUtf8Bytes": 8010,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "biblehub-greek-text-romans-5-10",
+      "url": "https://biblehub.com/text/romans/5-10.htm",
+      "evidenceClass": "A1",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "fullWorkRead": false,
+      "readScope": "Greek verse text, or full 2 Corinthians 5 where chapter is supplied; morphology tables not independently adjudicated; no critical apparatus.",
+      "externalCacheRelativePath": "sources/tinyfish-continuation-2026-11-06.json",
+      "captureJsonPointer": "/calvinGreek/results/2/text",
+      "captureTextSha256": "99bcc3ba0d76a50ec6623b2c3874877d683fbe7106812b94c2dbd16416e0e3e3",
+      "captureTextUtf8Bytes": 7315,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "biblehub-greek-text-2_corinthians-5-14",
+      "url": "https://biblehub.com/text/2_corinthians/5-14.htm",
+      "evidenceClass": "A1",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "fullWorkRead": false,
+      "readScope": "Greek verse text, or full 2 Corinthians 5 where chapter is supplied; morphology tables not independently adjudicated; no critical apparatus.",
+      "externalCacheRelativePath": "sources/tinyfish-continuation-2026-11-06.json",
+      "captureJsonPointer": "/greekVerses/results/0/text",
+      "captureTextSha256": "47d8ea1585547b8d0aa6d1264fdbb2e62ba4e70e1ecb34fcbbe7349fdcf0b7ff",
+      "captureTextUtf8Bytes": 5964,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "biblehub-greek-text-2_corinthians-5-20",
+      "url": "https://biblehub.com/text/2_corinthians/5-20.htm",
+      "evidenceClass": "A1",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "fullWorkRead": false,
+      "readScope": "Greek verse text, or full 2 Corinthians 5 where chapter is supplied; morphology tables not independently adjudicated; no critical apparatus.",
+      "externalCacheRelativePath": "sources/tinyfish-continuation-2026-11-06.json",
+      "captureJsonPointer": "/greekVerses/results/1/text",
+      "captureTextSha256": "8b69018bd828c6a2a94143e97eb94fcfc4cdd32af76a2d197d2c90a9fcd0272e",
+      "captureTextUtf8Bytes": 6321,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "biblehub-greek-text-romans-5-9",
+      "url": "https://biblehub.com/text/romans/5-9.htm",
+      "evidenceClass": "A1",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "fullWorkRead": false,
+      "readScope": "Greek verse text, or full 2 Corinthians 5 where chapter is supplied; morphology tables not independently adjudicated; no critical apparatus.",
+      "externalCacheRelativePath": "sources/tinyfish-continuation-2026-11-06.json",
+      "captureJsonPointer": "/greekVerses/results/2/text",
+      "captureTextSha256": "a9d03ae73b1e833be45b6295ba2f20450f712fc56a57e5a88c8a045fb6bc28cd",
+      "captureTextUtf8Bytes": 5504,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "biblehub-greek-text-romans-5-11",
+      "url": "https://biblehub.com/text/romans/5-11.htm",
+      "evidenceClass": "A1",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "fullWorkRead": false,
+      "readScope": "Greek verse text, or full 2 Corinthians 5 where chapter is supplied; morphology tables not independently adjudicated; no critical apparatus.",
+      "externalCacheRelativePath": "sources/tinyfish-continuation-2026-11-06.json",
+      "captureJsonPointer": "/greekVerses/results/3/text",
+      "captureTextSha256": "47fc3a1d8ff21c61c0acaf84310523081e2d402c38e484f3f5f068b9c6b403f8",
+      "captureTextUtf8Bytes": 6942,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "biblehub-greek-text-colossians-1-20",
+      "url": "https://biblehub.com/text/colossians/1-20.htm",
+      "evidenceClass": "A1",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "fullWorkRead": false,
+      "readScope": "Greek verse text, or full 2 Corinthians 5 where chapter is supplied; morphology tables not independently adjudicated; no critical apparatus.",
+      "externalCacheRelativePath": "sources/tinyfish-continuation-2026-11-06.json",
+      "captureJsonPointer": "/greekVerses/results/4/text",
+      "captureTextSha256": "e3ea49b5d803f78f64747c6183bc3c9fd09d00bd9a4b13eb9a80cd6f7d47eeb1",
+      "captureTextUtf8Bytes": 8667,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "biblehub-greek-text-john-16-8",
+      "url": "https://biblehub.com/text/john/16-8.htm",
+      "evidenceClass": "A1",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "fullWorkRead": false,
+      "readScope": "Greek verse text, or full 2 Corinthians 5 where chapter is supplied; morphology tables not independently adjudicated; no critical apparatus.",
+      "externalCacheRelativePath": "sources/tinyfish-continuation-2026-11-06.json",
+      "captureJsonPointer": "/greekVerses/results/5/text",
+      "captureTextSha256": "2f6d851d57d0413c6fdc298537c4711c37287c73687261cd97846d6506df57c9",
+      "captureTextUtf8Bytes": 5343,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "biblehub-greek-nestle-2_corinthians-5",
+      "url": "https://biblehub.com/nestle/2_corinthians/5.htm",
+      "evidenceClass": "A1",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "fullWorkRead": false,
+      "readScope": "Greek verse text, or full 2 Corinthians 5 where chapter is supplied; morphology tables not independently adjudicated; no critical apparatus.",
+      "externalCacheRelativePath": "sources/tinyfish-continuation-2026-11-06.json",
+      "captureJsonPointer": "/greekChapter/results/0/text",
+      "captureTextSha256": "81b6b024691227f34a83f2d891eac77cdf178a3b2dd95fa23904ef2af59c2826",
+      "captureTextUtf8Bytes": 4322,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "biblehub-greek-text-john-16-11",
+      "url": "https://biblehub.com/text/john/16-11.htm",
+      "evidenceClass": "A1",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "fullWorkRead": false,
+      "readScope": "Greek verse text, or full 2 Corinthians 5 where chapter is supplied; morphology tables not independently adjudicated; no critical apparatus.",
+      "externalCacheRelativePath": "sources/tinyfish-continuation-2026-11-06.json",
+      "captureJsonPointer": "/contextVerses/results/0/text",
+      "captureTextSha256": "f65f8d4d3915838a039b7293ece8f8853e168486850fcb5ab4e835b5469d7946",
+      "captureTextUtf8Bytes": 4824,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "biblehub-greek-text-colossians-1-16",
+      "url": "https://biblehub.com/text/colossians/1-16.htm",
+      "evidenceClass": "A1",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "fullWorkRead": false,
+      "readScope": "Greek verse text, or full 2 Corinthians 5 where chapter is supplied; morphology tables not independently adjudicated; no critical apparatus.",
+      "externalCacheRelativePath": "sources/tinyfish-continuation-2026-11-06.json",
+      "captureJsonPointer": "/contextVerses/results/1/text",
+      "captureTextSha256": "4c03a3fc0148d869245f30f78d04df077ddb9c897f7ce5b889cafe229aff2009",
+      "captureTextUtf8Bytes": 10543,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "biblehub-greek-text-john-9-39",
+      "url": "https://biblehub.com/text/john/9-39.htm",
+      "evidenceClass": "A1",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "fullWorkRead": false,
+      "readScope": "Greek verse text, or full 2 Corinthians 5 where chapter is supplied; morphology tables not independently adjudicated; no critical apparatus.",
+      "externalCacheRelativePath": "sources/tinyfish-continuation-2026-11-06.json",
+      "captureJsonPointer": "/contextVerses/results/2/text",
+      "captureTextSha256": "5afa680261b281110791a26a091057926e828f79e5dc277605a742857a9c00ea",
+      "captureTextUtf8Bytes": 7270,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "biblehub-greek-text-john-12-40",
+      "url": "https://biblehub.com/text/john/12-40.htm",
+      "evidenceClass": "A1",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "fullWorkRead": false,
+      "readScope": "Greek verse text, or full 2 Corinthians 5 where chapter is supplied; morphology tables not independently adjudicated; no critical apparatus.",
+      "externalCacheRelativePath": "sources/tinyfish-continuation-2026-11-06.json",
+      "captureJsonPointer": "/contextVerses/results/3/text",
+      "captureTextSha256": "1412c4f14fd6a5bea0331818eaae715bde4d4289e0e4ed7145cd62bd75353e18",
+      "captureTextUtf8Bytes": 8093,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "riccardi2021-misleading-search-candidate",
+      "url": "https://s3.us-east-1.amazonaws.com/static.gracechurch.org/sundaysinjuly/2021-07-10-sij-riccardim.pdf",
+      "evidenceClass": "D",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "bytes": 1491995,
+      "sha256": "3192c9a795356fd98d4beb502fe2f8dec109d19d9ad5da2ab35b5aa2660d39c0",
+      "externalCacheRelativePath": "sources/riccardi2021-candidate.pdf",
+      "fullWorkRead": false,
+      "readScope": "First two extracted leaves of 66-page PDF and title; not full slideshow.",
+      "exclusionReason": "Search metadata resembles atonement dissertation, while received object begins with Riccardi title and anthropology slides; not used as dissertation or atonement evidence.",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
     }
   ],
   "scans": [
@@ -957,7 +1372,88 @@
     "Shedd printed pages 466,469,470,475,476 visually inspected",
     "Griffin 1819 p.182 visually inspected",
     "Prokopenko PDF pages 10,22,23,25,30,31,36 visually inspected",
-    "Second Helvetic XI,XV–XVI and LBCF VIII selected primary contexts"
+    "Second Helvetic XI,XV–XVI and LBCF VIII selected primary contexts",
+    "Riccardi 2022 Triune Particularism pp.159–183, entire extracted article including footnotes",
+    "Riccardi 2022-04-10 Reconciled through Death, full main transcript",
+    "Calvin commentary on 2 Corinthians 5:18–21, complete section",
+    "Greek 2 Corinthians 5 chapter and selected Romans, John and Colossians verse contexts"
   ],
-  "updatedAtUtc": "2026-11-05T04:45:38.188213+00:00"
+  "updatedAtUtc": "2026-11-05T21:15:11Z",
+  "continuation20261106": {
+    "reviewedAt": "2026-11-05T21:15:11Z",
+    "baselineCommit": "49a081fdbb11900cdccc46b8364208a0ace97a40",
+    "baseMainCommit": "590106b0ee8d69645ff6bcb41a0b79b9a18cd3a3",
+    "sourcesAdded": [
+      "riccardi2022-triune-fulltext",
+      "riccardi2022-reconcile-sermon",
+      "calvin-2cor5-reconciliation",
+      "biblehub-greek-text-2_corinthians-5-19",
+      "biblehub-greek-text-romans-5-10",
+      "biblehub-greek-text-2_corinthians-5-14",
+      "biblehub-greek-text-2_corinthians-5-20",
+      "biblehub-greek-text-romans-5-9",
+      "biblehub-greek-text-romans-5-11",
+      "biblehub-greek-text-colossians-1-20",
+      "biblehub-greek-text-john-16-8",
+      "biblehub-greek-nestle-2_corinthians-5",
+      "biblehub-greek-text-john-16-11",
+      "biblehub-greek-text-colossians-1-16",
+      "biblehub-greek-text-john-9-39",
+      "biblehub-greek-text-john-12-40",
+      "riccardi2021-misleading-search-candidate"
+    ],
+    "articleSections": "P01 4.7–4.13",
+    "riccardiArticleCompleteExtractedTextRead": true,
+    "riccardiArticleOriginalPdfBytesVerified": false,
+    "riccardiSermonCompleteMainTranscriptRead": true,
+    "calvin2Cor5CompleteSectionRead": true,
+    "shultzNewIndependentPagesRead": [],
+    "shultzPagesQuotedByCriticOnly": [
+      "116–117 / n.59",
+      "176",
+      "181"
+    ],
+    "fullShultzChapters3To5Read": false,
+    "fullRiccardiDissertationOrBookRead": false,
+    "directPublishedRepliesEstablished": false,
+    "acquisitions": {
+      "method": "TinyFish search and bounded multi-URL fetch",
+      "captureFile": "sources/tinyfish-continuation-2026-11-06.json",
+      "limitations": [
+        "SBTS handle 403; no new original Shultz pages obtained",
+        "Some Greek chapter URLs timed out; individual verse pages and 2 Corinthians 5 chapter used",
+        "No automated interactive runs started"
+      ]
+    },
+    "assessments": [
+      "Faith as receiving instrument remains distinct from merit and from source of faith",
+      "Riccardi explicitly engages common and particular intentions shared by all three persons",
+      "Purchase can secure later Spirit application; acting through Spirit is not by itself a competing cause",
+      "Reconciliation/non-imputation raises substantive difficulty for universal individual forgiveness",
+      "Common benefits and historical sequence do not establish universal personal payment"
+    ],
+    "publicationEligible": false,
+    "doctrinalClosure": false,
+    "c25": "OPEN",
+    "verification": {
+      "verifiedAtUtc": "2026-11-05T21:23:47Z",
+      "existingTests": {
+        "passed": 184,
+        "failed": 0,
+        "seconds": 209.911
+      },
+      "sourceControlsAndPreimages": "PASS",
+      "crossReferences": {
+        "passed": 80,
+        "failed": 0
+      },
+      "sourceSync": "PASS",
+      "claimRegister": "PASS",
+      "corpusIntegrity": "PASS",
+      "reshootState": "PASS",
+      "historicalBodyPreserved": true,
+      "standaloneReportMatchesCurrentReview": true,
+      "environmentNote": "Seven referenced files omitted by sparse checkout were materialized from exact HEAD bytes after main merge; repository validators unchanged."
+    }
+  }
 }
