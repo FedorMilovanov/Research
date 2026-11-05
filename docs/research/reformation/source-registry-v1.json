@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 100,
+  "sourceCount": 102,
   "sources": [
     {
       "id": "REF-P01",
@@ -1630,7 +1630,7 @@
       ],
       "url": "https://www.mennonitischer-geschichtsverein.de/wp-content/uploads/2024/11/MGBL-74-2017.pdf",
       "checkedAt": "2026-11-05",
-      "verificationNote": "SECONDARY SCHOLARLY BIBLIOGRAPHY, NOT ORIGINAL 1533. Original journal PDF text layer checked and printed page 58 screenshot visually inspected (footnote 41): VD16 S1881/S1883 = 1533 [Strasbourg Jakob Cammerlander]; same footnote attributes VD16 ZV30530 [probably Oberursel Nikolaus Henricus circa 1570, attribution Ulrich Kopp]. Other sources (e-rara and museum) date latter around 1550. No original 1533 scan acquired, no full scholarly PDF archived or SHA assigned. Do not infer original article-I Matthew numeral from this bibliography, or assert alternate dating is resolved."
+      "verificationNote": "SECONDARY SCHOLARLY BIBLIOGRAPHY, NOT ORIGINAL 1533. Original journal PDF text layer checked and printed page 58 screenshot visually inspected (footnote 41): VD16 S1881/S1883 = 1533 [Strasbourg Jakob Cammerlander]; same footnote attributes VD16 ZV30530 [probably Oberursel Nikolaus Henricus circa 1570, attribution Ulrich Kopp]. Other sources (e-rara and museum) date latter around 1550. No original 1533 scan acquired, no full scholarly PDF archived or SHA assigned. Do not infer original article-I Matthew numeral from this bibliography, or assert alternate dating is resolved. WAVE334 NEW VERIFIED EXPLICIT PRINTED p58 footnote41 image index59 (PDF#page=60): editions (5) VD16 ZV30530 [probably Oberursel Nikolaus Henricus circa1570, dating disputed vs Museum approx1550] and (6) ANOTHER separately numbered bibliographic edition Brüderlich ver=eyniung etlicher Kinder Gottes, unknown place/date [17th century], octavo 36 printed pages, copy Goshen Mennonite Historical Library, contains song 'Muß es nun sein gescheiden' (information from Joe Springer). This bibliographic entry is PREVIOUSLY OMITTED despite source's old registration; no 17th century original scan or exact Goshen shelfmark obtained. Do not infer (5) and (6) are identical or that two separately numbered catalog entries establish exact current number of physical Goshen volumes; no biblical Matthew numeral for (6) verified."
     },
     {
       "id": "REF-S18",
@@ -1817,6 +1817,45 @@
       "url": "https://record.goshen.edu/features/inside-the-mennonite-historical-library",
       "checkedAt": "2026-11-05",
       "verificationNote": "Journalistic, attributable contemporary interview published 2025-12-04. Exact paragraphs of The Record quote MHL head librarian Eric Bradley: the library possesses a 1540s concordance of which only two copies are known. Does not name the concordance full title, identify it with the Schleitheim museum's 'Concordanz und Zeiger ...', give physical shelfmark, assert it is bound with a Schleitheim edition, or determine Schleitheim's year. B1 for source statements, NOT direct historical item-catalogue autopsy. Institutional search policy at https://www.goshen.edu/facilities/mennonite-historical-library/search/ notes no entire-copy reproduction in general, and live WorldCat page returned JS-only view without specific holdings. Request for exactly one historical Article I line may be negotiated, not presumed available. Neither email sent nor fee authorized."
+    },
+    {
+      "id": "REF-S26",
+      "documentYear": 2022,
+      "title": "GAMEO (Global Anabaptist Mennonite Encyclopedia Online), Schleitheim Confession: historical 1954 article by J. C. Wenger and encyclopedic 2022 summary by James M. Stayer, pointers to 1686 edition and Archives-Goshen title-page scan",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://gameo.org/index.php?title=Schleitheim_Confession",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "GAMEO indexed search result reproduces historical 1954 John C. Wenger entry stating four editions then known, among them a mid-16th century undated Goshen copy and distinct 1686 edition bound with Christliches Glaubensbekantnus. Current James Stayer page likewise mentions a 17th century Swiss Brethren printing bound with Dordrecht Confession. Direct open of gameo.org webpage HTTP 403 in THIS wave; only search engine indexed text, NOT full live page or physical edition, accessed. Separate GAMEO file-page entry https://gameo.org/index.php?title=File:AMC_X-31-1_18_3.jpg labels title-page scan 'ca. 1560', from Mennonite Church USA Archives-Goshen X-31.1 Box18/3; that code is an ARCHIVAL IMAGE REFERENCE in a distinct archive, NOT call number of MHL rare printed original and not proof of identity to 1686, Rothkegel 17c 36pp, or ZV30530. Because direct page access blocked and no article-I original verified, B1 PARTIAL_OBJECT COARSE_LOCATOR_ONLY with EVIDENCE/LOCATOR/ARCHIVE/RIGHTS/PUBLICATION HOLDS for disputed bibliographic identity."
+    },
+    {
+      "id": "REF-S27",
+      "documentYear": 1908,
+      "title": "Walther Köhler (ed.), Brüderlich Vereinigung etzlicher Kinder Gottes sieben Artikel betreffend; Flugschriften aus den ersten Jahren der Reformation, vol. 2, fasc. 3, Leipzig R. Haupt, 1908, pp. 280–337: bibliographic record in CiNii Books and LEO-BW",
+      "evidenceClass": "B1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://ci.nii.ac.jp/ncid/BA61216073",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "EXACT institutional catalog RECORD for 1908 scientific EDITION: Japanese CiNii Books NCID BA61216073, Walther Köhler, Leipzig R. Haupt, 1908, series Flugschriften aus den ersten Jahren der Reformation vol2 fasc3, 61p separately numbered pp280-337. LEO-BW/SWB PPN 51478055X https://www.leo-bw.de/en-GB/detail/-/Detail/details/DOKUMENT/bsz_swb/51478055X/Br%C3%BCderlich%20Vereinigung%20etzlicher%20Kinder%20Gottes%20sieben%20Artikel%20betreffend%20item%20ein%20Sendbrief%20Michael%20Sattlers%20an%20eine%20Gem corroborates 280-337. Google Play Books https://play.google.com/store/books/details/Otto_Clemen_Flugschriften_aus_den_ersten_Jahren_de?id=-wgNAAAAIAAJ reports digitized vol2 1908 468pp; another id 3VRBAQAAMAAJ may be volume2 variant with 1907 date; direct Google scanned image of pp280-337 and 1908 editorial introduction on witness Vorlage NOT accessed, hence cannot infer exact 1533 Matt reference from this edition or claim a photo of original 1533. CATALOG_ONLY and publication/rights hold; EVIDENCE_HOLD is claim-specific for original historical text. Exact locator pertains to modern 1908 EDITION identity and pagination, not original witness."
     }
   ]
 }
