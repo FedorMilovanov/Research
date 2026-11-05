@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 108,
+  "sourceCount": 109,
   "sources": [
     {
       "id": "REF-P01",
@@ -1970,6 +1970,25 @@
       "url": "https://kalliope.staatsbibliothek-berlin.de/de/ead?ead.id=DE-611-HS-3076039",
       "checkedAt": "2026-11-06",
       "verificationNote": "Wave 343/2026-11-06: Kalliope SBB public archival finding aid DE-611-HS-3076039, Nachl.488 A0249 Mappe9, 1908, ca.100 manuscript leaves, names Walther Köhler (1870-1946), Eduard Kohlrausch, J.C.B. Mohr, K.F. Koehler (firm) and W. Kohlhammer as correspondents; 'keine Erfassung von Einzelkorrespondenzen' means no item-by-item description. Nearby SEPARATE Mappe8, DE-611-HS-3076021, also 1908 and circa 100 leaves, includes Walther Köhler among Gerhard Ködderitz and other publishing contacts (https://kalliope-verbund.info/de/findingaid?fa.enum=3970&fa.id=DE-611-BF-29316). Neither folder has been digitized or read in this research. No evidence their letters mention the Schleitheim edition, its textual Vorlage, the 1533 A2 print, a price, Matthew 27/28, nor Rudolf Haupt; K.F.Koehler publishing firm is not the person Walther Köhler or necessarily Rudolf Haupt. Treat Kalliope listing as archival LOCATION ONLY; reserve original evidence for item-by-item read. An additional third email to already-contacted SBB was intentionally NOT sent in this session, to avoid repeated unnecessary inquiries. Original 1908 printed Köhler issue remains CATALOG_ONLY in REF-S27."
+    },
+    {
+      "id": "REF-S34",
+      "documentYear": 1907,
+      "title": "Börsenblatt für den Deutschen Buchhandel, Nr. 16 (19 Jan. 1907), p. 798, Rudolf Haupt Verlag advertisement for Flugschriften aus den ersten Jahren der Reformation (series, vol. I, fascicles 6–8)",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://digital.slub-dresden.de/data/kitodo/Brsfded_39946221X-19070119/Brsfded_39946221X-19070119_tif/jpegs/Brsfded_39946221X-19070119.pdf",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Original contemporary trade-paper PDF extracted text (NOT screenshot-confirmed because screenshot failed due PDF size) has RUDOLF HAUPT VERLAG HALLE A.S. and Flugschriften aus den ersten Jahren der Reformation at p.798, expressly advertising vol.I fasc.6–8 NOT Köhler's different vol.II fasc.3. Independent CiNii https://ci.nii.ac.jp/ncid/BA61216073 records Walther Köhler 1908 vol.II fasc.3 pp280–337 as R. Haupt, Leipzig; SLUB https://katalog.slub-dresden.de/id/0-1089980256 records series vol.II (1908) Haupt. DLA Marbach https://www.dla-marbach.de/find/opac/id/PE00617568/ associates Karl Rudolf Haupt/Rudolf Haupt, Verleger and Antiquar, Halle 1903–1907 and Leipzig successor. Prior Cramer 1909 printed p.589 reports an 1905 antiquarian OFFER of 1533 print; neither acquisition/sale nor Köhler's exemplar, Vorlage nor Matthew 27/28 reading is established. Original 1908 edition and 1533 print remain unread; no PDFs acquired or published."
     }
   ]
 }

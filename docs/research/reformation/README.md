@@ -143,6 +143,10 @@
 
 Открытый материал структурирован в [досье §25](11_schleitheim_1527_original_iiif_audit.md), [C165 (уточнение) и C166](03_claim_verification_register.md). Дополнен имеющийся `REF-S32`, добавлен только отдельный `REF-S33` для нового архивного объекта, итого **108 источников / 166 утверждений**. Никакого доступа к первоначальным листам 1533/1560/1565 или изданию Köhler 1908, никакой новой разрешённой публикации; `EVIDENCE_HOLD / ARCHIVE_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD` и статус `TRANSFER_PENDING_VERIFICATION` сохраняются.
 
+## Волна 344: подтверждена связь антиквара Haupt с издательством Walther Köhler (06.11.2026)
+
+[*Börsenblatt*, №16, 19.01.1907, печ. с.798](https://digital.slub-dresden.de/data/kitodo/Brsfded_39946221X-19070119/Brsfded_39946221X-19070119_tif/jpegs/Brsfded_39946221X-19070119.pdf) в **PDF-текстовом слое** содержит издательскую рекламу `Rudolf Haupt Verlag` серии *Flugschriften aus den ersten Jahren der Reformation* (**том I, вып.6–8**; оригинальный снимок страницы визуально не открылся). Независимые [CiNii BA61216073](https://ci.nii.ac.jp/ncid/BA61216073) и [SLUB](https://katalog.slub-dresden.de/id/0-1089980256) указывают, что **том II, выпуск 3** этой серии, издание Walther Köhler 1908 (с.280–337), выпущен `R. Haupt` (Leipzig). [DLA Marbach](https://www.dla-marbach.de/find/opac/id/PE00617568/) отождествляет **Karl Rudolf / Rudolf Haupt** и прямо называет профессии `Verleger, Antiquar`, указывая Halle 1903–1907 и Leipzig с 1908. Совпадение книжной торговли и издательского дела подтверждено **на уровне фирмы и биографии**, но не доказывает продажу печати A2 1533 или использование её как Vorlage Кёлера. Матфея 27/28 не реконструировать из этой связи. Промежуточный результат — [досье §26](11_schleitheim_1527_original_iiif_audit.md), `REF-S34`, [C167](03_claim_verification_register.md): **109 источников / 167 утверждений**. Все архивные, доказательные, правовые и публикационные HOLD остаются, повторных запросов, оплат и новых исторических PDF нет.
+
 ## Автоматическая структурная приёмка (без изменений файлов)
 
 Запуск при наличии **Python 3.9+** из корня `Research`:
