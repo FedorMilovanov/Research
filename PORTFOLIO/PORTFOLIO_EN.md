@@ -63,7 +63,7 @@ A public library built on years of exegetical research: 111 pages, 57 article ro
 
 **The engineering story.** Three truths never conflated: source, build, production. Route ownership comes from machine registries; `document-authority.json` decides which document may override anything at all; a live `release.json` pins the commit SHA and CI verifies that SHAs quoted in documentation match real bytes.
 
-**The honest boundary.** The speech engine and voice are the open-source `vosk-tts` project (Apache-2.0), not my work. Mine: the browser integration (on-demand ONNX model, IndexedDB cache, lazy init), the Russian stress layer over three sources, and differential tests against the Python package.
+**The honest boundary.** Alpha Cephei's Vosk TTS **source code** is Apache-2.0; the Russian 0.9 voice-model **weights** are third-party assets whose modified redistribution rights have not yet been independently cleared (`MODEL_RIGHTS_HOLD`). Neither code nor voice was trained or authored by me. Mine: the browser integration (on-demand ONNX model, IndexedDB cache, lazy init), the Russian stress layer over three sources, and differential tests against the Python package.
 
 **Scale.** 3,308 files · 84,800 LOC · 77 workflows · 140,004 CI runs.
 
@@ -168,7 +168,7 @@ Working languages: Russian (native), English (working — actively improving).
 A large share of the code and part of the media, yes — under my direction. Mine are the requirements, architecture, contracts, editorial decisions, acceptance, publication and accountability. That is exactly why I built a verification methodology.
 
 **"Is the voice on your site yours?"**
-No. The engine and the voice belong to the open-source `vosk-tts` project (Apache-2.0). My work is the browser integration and the Russian stress layer. I state this everywhere the feature appears.
+No. The Vosk TTS source code is Alpha Cephei's Apache-2.0 project, while the Russian 0.9 voice-model weights are a separate third-party asset under an outstanding redistribution-rights check (`MODEL_RIGHTS_HOLD`). I built the browser integration and Russian stress layer, not the voice model.
 
 **"Is the music yours?"**
 The tracks are produced in Suno from my lyrics, prompts, selection and mastering. I am not a composer or performer; I am the editorial author and producer of the production. The poems are public domain; the audio and clips are my derivative works.
