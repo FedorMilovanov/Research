@@ -12,7 +12,7 @@ C-010;pull-requests;Pull request всего;4098;PR;15 репозиториев;
 C-011;pull-requests;Pull request по девяти репозиториям;3834;PR;9 репозиториев;METRICS.csv;PR минус Research;metrics_sum:pull_requests:not=Research;DERIVED;2026-11-01;это число стоит в текстах как «3 834 PR»
 C-012;pull-requests;Смержено PR по девяти репозиториям;2877;PR;9 репозиториев;METRICS.csv;pr_merged минус Research;metrics_sum:pr_merged:not=Research;DERIVED;2026-11-01;75,0 % от 3 834
 C-013;pull-requests;Смержено PR всего;3111;PR;15 репозиториев;METRICS.csv;сумма колонки pr_merged;metrics_sum:pr_merged:all;DERIVED;2026-11-01;
-C-014;ci;Запусков CI;119919;запусков;15 репозиториев;METRICS.csv;сумма колонки ci_runs;metrics_sum:ci_runs:all;DERIVED;2026-11-01;доля зелёных прогонов не измерена — см. C-030
+C-014;ci;Доступных workflow runs в 2026 году по десяти репозиториям;221596;запусков;10 репозиториев;CI_RUNS_2026-11-03.csv;Сумма UTC-окон created c глубиной разбиения до значения менее 2500;ci_sum:visible_runs:all;DERIVED;2026-11-03;Доступные API-запуски до 2026-11-03T21:05:16Z, удалённые runs не восстанавливаются
 C-015;ci;Workflow-файлов;241;файлов;10 репозиториев;METRICS.csv;сумма колонки workflow_files;metrics_sum:workflow_files:all;DERIVED;2026-11-01;183 в девяти + 58 в Research
 C-016;ci;Внешних uses в workflow;754;ссылок;10 репозиториев;measure_defense.py;полный обход файлов;measured;CONFIRMED;2026-11-01;вхождения, не уникальные пары
 C-017;ci;Из них прибиты к 40-hex SHA;754;ссылок;10 репозиториев;measure_defense.py;полный обход файлов;measured;CONFIRMED;2026-11-01;уникальных пар действие@ref — 62
@@ -29,6 +29,6 @@ C-026;quality;Закрытых записей реестра дефектов;11
 C-036;media;Счётчики аудитории (подписчики, просмотры, число роликов) в портфолио не заявляются;n/a;политика;медиа-линия;MEDIA_PRACTICE.md;решение владельца 01.11.2026;none;CONFIRMED;2026-11-01;извне не проверяются и о качестве работы не говорят; описывается процесс: протоколы, канон, приёмка
 C-037;words;Слов авторской прозы на публичных сайтах;365000;слов;сайты;ручной подсчёт;извлечение текста из astro-компонентов;none;UNPROVEN;2026-11-01;оценка, а не пересчёт: расхождение метода ±15 %
 C-038;words;Слов исследовательских документов;3930000;слов;10 репозиториев;ручной подсчёт;wc по md;none;CONFIRMED;2026-11-01;не складывается с прозой
-C-039;reliability;Доля зелёных прогонов CI;n/a;процент;15 репозиториев;GitHub API;невозможно;none;UNPROVEN;2026-11-01;actions/runs зажимает total_count на 2 500
+C-039;reliability;Доля зелёных прогонов CI;n/a;процент;10 репозиториев;GitHub API;отдельно не измерено;none;UNPROVEN;2026-11-03;Оконный замер доступных запусков не классифицирует conclusion и attempts, доля успехов не установлена
 C-040;reliability;Branch protection и rulesets;n/a;состояние;15 репозиториев;GitHub API;403 Resource not accessible;none;UNPROVEN;2026-11-01;проверяется только вручную в настройках
 C-041;reliability;Трафик и выручка;n/a;метрики;проекты;аналитика;нет доступа;none;UNPROVEN;2026-11-01;в портфолио не заявляются

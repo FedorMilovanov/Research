@@ -1,0 +1,567 @@
+{
+  "schemaVersion": 1,
+  "evidenceScope": "1527 Schleitheim original prints: BSB digitized copies VD16 S1882",
+  "checkedAt": "2026-11-04",
+  "evidenceType": "IIIF Presentation 2 manifests + IIIF Image API scaled JPEG derivative receipts",
+  "downloadedArtifact": "IIIF scaled image requests ending /full/1200,/0/default.jpg",
+  "masterImagesDownloaded": false,
+  "printerTextFullyTranscribed": false,
+  "allPrintedPagesWordByWordCollated": false,
+  "originalPhotosCommittedToGit": false,
+  "tempFilesDeletedAtManifestConstruction": true,
+  "notes": "Actual image bytes fetched from official BSB API to authorized Windows temporary folder with Pillow verify and SHA-256 for each delivered 1200-pixel derivative; digital page pair layout inspected by model vision. Do not mistake 1200px derivatives for master scans or claim word-for-word identity between exemplars. After the receipts were committed, 72 temporary files (66 JPEG derivatives, 2 contact sheets, 2 IIIF manifests, receipt JSON and downloader script) were deleted from the user's authorized Windows temp directory. Separate PowerShell cleanup reported TEMP_CLEANED=True. No originals or derivatives remain on user's machine.",
+  "objects": [
+    {
+      "id": "bsb00027178",
+      "sourceId": "REF-P24-BSB1",
+      "shelfmark": "Res/Polem. 875#Beibd.6",
+      "manifestUrl": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00027178/manifest",
+      "manifestBytes": 34660,
+      "manifestSha256": "7e743cbf4164ab41b7d38fc5040dc8a7dfa26dc890d227a035e8030b20823298",
+      "canvases": 32,
+      "printedPages": 32,
+      "additionalTargets": 0
+    },
+    {
+      "id": "bsb00112324",
+      "sourceId": "REF-P24-BSB2",
+      "shelfmark": "Res/Mor. 135#Beibd.2",
+      "manifestUrl": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00112324/manifest",
+      "manifestBytes": 36516,
+      "manifestSha256": "1349742e401180e91964243626c41d47a4f768b77d4838b66bb8769b29703909",
+      "canvases": 34,
+      "printedPages": 32,
+      "additionalTargets": 2
+    }
+  ],
+  "scans": [
+    {
+      "objectId": "bsb00027178",
+      "scan": 1,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00001/full/1200,/0/default.jpg",
+      "bytes": 229689,
+      "sha256": "df28a04f810f1cdcc442dc8a6dbd5fabab0e6a16840a682eadfc28aa06404fc6"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 2,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00002/full/1200,/0/default.jpg",
+      "bytes": 328562,
+      "sha256": "82dce7639576748402cfff402c9371be14b4daddf868b85801fd5b687359883d"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 3,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00003/full/1200,/0/default.jpg",
+      "bytes": 358168,
+      "sha256": "6a07fd98689f8bea33afa2408874ac3b263cdf5aba249f77e27f10fa8f52479a"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 4,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00004/full/1200,/0/default.jpg",
+      "bytes": 304822,
+      "sha256": "0cff855b38d10f06270fb1787bda06778431c4f0e4a8f301621f909f19b398c4"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 5,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00005/full/1200,/0/default.jpg",
+      "bytes": 349765,
+      "sha256": "23d36f7dd3619e177c2453efc830061056c60cbc6622839aafd32a98f4d4d693"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 6,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00006/full/1200,/0/default.jpg",
+      "bytes": 339434,
+      "sha256": "f52557508d286c6b3181fa3e24799f548c719e9351d82eb226d3e428371b3b80"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 7,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00007/full/1200,/0/default.jpg",
+      "bytes": 346170,
+      "sha256": "196a3e339ebe3a8743cd07cb16b61c45c4fbc5f8c7f201fc150c9633292eed1c"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 8,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00008/full/1200,/0/default.jpg",
+      "bytes": 322486,
+      "sha256": "a00d9fc56c5188290583bdd49773bb28ac1e1760e772af22899b933edfc89f04"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 9,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00009/full/1200,/0/default.jpg",
+      "bytes": 361572,
+      "sha256": "fb36d1d72dead4c1ba401e2de7797e3e2aaeb551a84ea1fef702673a886088f8"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 10,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00010/full/1200,/0/default.jpg",
+      "bytes": 353687,
+      "sha256": "2c03ddd829ce784950454f6e9eb21d71231bb7577b411b40aadb5481578ba49c"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 11,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00011/full/1200,/0/default.jpg",
+      "bytes": 367066,
+      "sha256": "5fc118ab25de23998cca1888d99467a0f4eb7be70cc9a915ddb0edd924d92b25"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 12,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00012/full/1200,/0/default.jpg",
+      "bytes": 339514,
+      "sha256": "62a74c471c3e38b3683be9dbfe7a53d1d995827808d20de53ac9f37b57e83170"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 13,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00013/full/1200,/0/default.jpg",
+      "bytes": 335856,
+      "sha256": "ba9234a8a7d88b62cdabaa4bbef9ee25e7559034d7d8ec89f876f16c09aea9b8"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 14,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00014/full/1200,/0/default.jpg",
+      "bytes": 303801,
+      "sha256": "a41609296e7537d3962d961f8cac31438272229b27efd6a4657085e4ed66be79"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 15,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00015/full/1200,/0/default.jpg",
+      "bytes": 220678,
+      "sha256": "e0e076935a1d502a39bb8e3339d264564513a48bd0a517b89299a0551f03b92f"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 16,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00016/full/1200,/0/default.jpg",
+      "bytes": 317699,
+      "sha256": "5095f3c4eba8ce24be7ff5d5e3242339447aaf2a7a01d014764789f982580f4f"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 17,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00017/full/1200,/0/default.jpg",
+      "bytes": 367221,
+      "sha256": "1b1e34c08bf3d0d81f51382d5a7826e2a33f61bb0263ba55b147cb4a1412a73e"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 18,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00018/full/1200,/0/default.jpg",
+      "bytes": 320610,
+      "sha256": "98719df57b06e7d9da2ef2ab156f99cec8539b1a629a897f732b167979e899c0"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 19,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00019/full/1200,/0/default.jpg",
+      "bytes": 359356,
+      "sha256": "6e396dcc28d761c924e3352c9bcce86de621a9d890a96fe7ad987b2b22e09bb7"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 20,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00020/full/1200,/0/default.jpg",
+      "bytes": 319383,
+      "sha256": "18a0b3f678167ad1e62af0819aab9c652dcd9bf2e179cffaf7e649f1b1d18ea5"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 21,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00021/full/1200,/0/default.jpg",
+      "bytes": 346251,
+      "sha256": "4df0a6512f851ad37c162e19487f935f810979f969fb45a40e3397db2c3aabd4"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 22,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00022/full/1200,/0/default.jpg",
+      "bytes": 335021,
+      "sha256": "04d93ebbe4bb1472ecfbbb66329096916b2e8fe7c7af8c8669ba97aacb0c5726"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 23,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00023/full/1200,/0/default.jpg",
+      "bytes": 367643,
+      "sha256": "4d62a3e940d4e42c502ae063ace94662aa4b7a0c3df688b1d8a3651916c7189b"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 24,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00024/full/1200,/0/default.jpg",
+      "bytes": 324493,
+      "sha256": "aa0651fa5725c9235873c9e908b0403fc1ea99a8ba4cb80c276e1708fcb983db"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 25,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00025/full/1200,/0/default.jpg",
+      "bytes": 346888,
+      "sha256": "9ea251e4f3344282ea7cb22b134701472a13c419777b00127e09fe943a683427"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 26,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00026/full/1200,/0/default.jpg",
+      "bytes": 312797,
+      "sha256": "0702faadb200a440e0c21960d732c510a8b907853791e22b073eb5d970179f0c"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 27,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00027/full/1200,/0/default.jpg",
+      "bytes": 365001,
+      "sha256": "a716683debe7f49eb55c0c13f1a407c2c1cb54d298ab91076b04ab4d02a3c207"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 28,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00028/full/1200,/0/default.jpg",
+      "bytes": 318577,
+      "sha256": "5548a7bc9b9aa77a0c3d67873c7c9bd1381ce4ce4b6244a9fea97f9a9a6d0c40"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 29,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00029/full/1200,/0/default.jpg",
+      "bytes": 362356,
+      "sha256": "815f18748d68c8d047c663994386704e075b765bc3b1e15acab1492b48081c85"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 30,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00030/full/1200,/0/default.jpg",
+      "bytes": 339069,
+      "sha256": "e6477640e7d13996e927a524e430751f1bf754a85b8e929c1dcb74484ca06dda"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 31,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00031/full/1200,/0/default.jpg",
+      "bytes": 363216,
+      "sha256": "3c24eef8d582d3de1fc61d27274c75d13128d92226c207971a7666f715e75077"
+    },
+    {
+      "objectId": "bsb00027178",
+      "scan": 32,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027178_00032/full/1200,/0/default.jpg",
+      "bytes": 218706,
+      "sha256": "ef3f569fb2b80e2ac79b7189dde0cfdddc2dd9ca7c27d6f96fa3553b42027024"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 1,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00001/full/1200,/0/default.jpg",
+      "bytes": 260531,
+      "sha256": "20e2ad349d48ded39d961c8283c55e8316df8a08d4a0b954fcf7b3efddcf1e18"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 2,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00002/full/1200,/0/default.jpg",
+      "bytes": 446849,
+      "sha256": "a34b4cd7b4ec874cedd124f31d9afa906c763e632dfc54ade2c1205ff9d2227b"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 3,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00003/full/1200,/0/default.jpg",
+      "bytes": 407081,
+      "sha256": "a6c007e84ae71c77f7932e7024932bfc3caa377e13b20b56872872e7881377dd"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 4,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00004/full/1200,/0/default.jpg",
+      "bytes": 429141,
+      "sha256": "f0d5b5ae679599bda184a033c84147deb4368da638f07396bc288824840fb123"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 5,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00005/full/1200,/0/default.jpg",
+      "bytes": 419157,
+      "sha256": "a087bac7fb339eb0d5277f2102138e1e61b3fedc6b10b86caf4c3f62d9f439e3"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 6,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00006/full/1200,/0/default.jpg",
+      "bytes": 436274,
+      "sha256": "021946c2087b08efeb21ade8bda54e7ca65ebfed724d14cdff66f4430de0567e"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 7,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00007/full/1200,/0/default.jpg",
+      "bytes": 388642,
+      "sha256": "971e956317833383d12e4311282df921ce14d26650e8bb9f696c95583b01841a"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 8,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00008/full/1200,/0/default.jpg",
+      "bytes": 448766,
+      "sha256": "45c2a6d6d4af7b219504069d0209e5afe6d811836350ffbf25c3f3436fd40f60"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 9,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00009/full/1200,/0/default.jpg",
+      "bytes": 417275,
+      "sha256": "2ee61c11448234a7174d0d045e9787893e26eb513d2acd9de7aad038631c158b"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 10,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00010/full/1200,/0/default.jpg",
+      "bytes": 460054,
+      "sha256": "6947bb351484b4be2bcdb6a856be23c9b1fbb133a264f3ada3ca435a5262c959"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 11,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00011/full/1200,/0/default.jpg",
+      "bytes": 405388,
+      "sha256": "b82856192daa745971c86a3337d0d0c14e4dd29d4b413ffdc9b96f279f2999e7"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 12,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00012/full/1200,/0/default.jpg",
+      "bytes": 447148,
+      "sha256": "7051a026e5cbd3fd18e65f96aaf2433eb87aa95f0c860b999843d6fefde86af9"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 13,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00013/full/1200,/0/default.jpg",
+      "bytes": 391700,
+      "sha256": "01625ff153a5f720e96e366359dfc9321ab229a0006048fb359941a7bcdb0e35"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 14,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00014/full/1200,/0/default.jpg",
+      "bytes": 421834,
+      "sha256": "2a419e54b6d114c47525436c33f6831413fc5b831677471de410e9231c3b13d0"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 15,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00015/full/1200,/0/default.jpg",
+      "bytes": 273832,
+      "sha256": "0756ecde387f9d0e8a47200ee95ad329d5d69b6a1a0ff1922fb1b71a15746b5a"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 16,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00016/full/1200,/0/default.jpg",
+      "bytes": 432210,
+      "sha256": "9f3378168b11d2833afb3681e90b7c6c1c9b10b4d9a04e17a2f999d747136bbe"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 17,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00017/full/1200,/0/default.jpg",
+      "bytes": 421203,
+      "sha256": "14652bf7f78c2d5bae9dc81331dca4d8a5d2e3623fa3220db5559773aae94f56"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 18,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00018/full/1200,/0/default.jpg",
+      "bytes": 440402,
+      "sha256": "5c2c607b61a570fe64290a360d48aac089a3e430c8b4a1e9fdcfcde17e8df5d4"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 19,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00019/full/1200,/0/default.jpg",
+      "bytes": 435700,
+      "sha256": "e8d9b6b7f6bfc11f38a21e3e0030e31749237a22b81e7a68f21a3aa2cf7333f2"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 20,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00020/full/1200,/0/default.jpg",
+      "bytes": 451707,
+      "sha256": "d6024ba8aac2118a0667f8a1414ad62b9d28393246980ed7bc05fd576b7266c6"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 21,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00021/full/1200,/0/default.jpg",
+      "bytes": 429154,
+      "sha256": "a9be035418b6c8af0fe603662f1e09ede9aea8c17e4bf8f35e1b9f65b1595eba"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 22,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00022/full/1200,/0/default.jpg",
+      "bytes": 462328,
+      "sha256": "7f5ab2f936596cd323e08246526f8ec5828409eed7612d77554076d4c8f1bbf5"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 23,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00023/full/1200,/0/default.jpg",
+      "bytes": 422917,
+      "sha256": "e4d50ac50879f139937fd5ad68cdba1856958f31972c1e8c1ca10f27e5178ee6"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 24,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00024/full/1200,/0/default.jpg",
+      "bytes": 447636,
+      "sha256": "9d60b5583376f0575eb14f492ccdf601748798a501485150d5232dae78ecdd83"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 25,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00025/full/1200,/0/default.jpg",
+      "bytes": 415673,
+      "sha256": "b78a44db0fe6481fdd115de453616d546e33ccaeb6a7def441938618243be37a"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 26,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00026/full/1200,/0/default.jpg",
+      "bytes": 431418,
+      "sha256": "6382f9cba6363f1a6bdeb192cc6bdcbf454264eb97042403658b67466304f6bb"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 27,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00027/full/1200,/0/default.jpg",
+      "bytes": 419086,
+      "sha256": "c506db0a70a2dab5383909e6a0cf05962a6f283e8b873a0133d75186ed1c3145"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 28,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00028/full/1200,/0/default.jpg",
+      "bytes": 446658,
+      "sha256": "4e4c04fd64a8f192f83d7d1561bb3caaeff130ed491ab19061f801cd0d824cd1"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 29,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00029/full/1200,/0/default.jpg",
+      "bytes": 419310,
+      "sha256": "47d844113136b91682bddd91cd23ad97f903b402293da83ec881a030285b294d"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 30,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00030/full/1200,/0/default.jpg",
+      "bytes": 459239,
+      "sha256": "728fce6b412663c09bd9c48aa15c5e2332f387e634e846fe53d817e35f1fb0f2"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 31,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00031/full/1200,/0/default.jpg",
+      "bytes": 437937,
+      "sha256": "f8b4fb142652fab4c651d8714be99cbfa644ab6f95349d6e744839be5c4ada6f"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 32,
+      "kind": "printed-page",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00032/full/1200,/0/default.jpg",
+      "bytes": 303877,
+      "sha256": "39352df287e77042dbd3f4147a1e45029daf43b786a976ead4b92cdb7e38436c"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 33,
+      "kind": "color-calibration-target",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00033/full/1200,/0/default.jpg",
+      "bytes": 301299,
+      "sha256": "1a2630a4d04765d411591da6434f97413011b98ac6e26be93b30e519cb084eb8"
+    },
+    {
+      "objectId": "bsb00112324",
+      "scan": 34,
+      "kind": "resolution-calibration-target",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00112324_00034/full/1200,/0/default.jpg",
+      "bytes": 349970,
+      "sha256": "538f7b1a6bdb54fda99afde150d03a024ffc0ee11b5ddd25d84dac09c1363985"
+    }
+  ]
+}

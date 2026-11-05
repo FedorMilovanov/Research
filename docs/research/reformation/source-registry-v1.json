@@ -1,0 +1,1782 @@
+{
+  "schema": "reformation-research-sources-v1",
+  "scope": "research-only",
+  "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
+  "noAutoPublication": true,
+  "sourceCount": 98,
+  "sources": [
+    {
+      "id": "REF-P01",
+      "documentYear": 1517,
+      "title": "Luther, 95 Theses: Oxford transcription",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://editions.mml.ox.ac.uk/editions/luther-95-theses/",
+      "verificationNote": "2026-11-04: Latin theses 21,27-28,36,43,45,49,62,71-72,76,82,86,89 and preamble checked in Oxford transcription; not collated against 1517 print",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P01-PRINT",
+      "documentYear": 1517,
+      "title": "Nuremberg print 1517 (LOC / Berlin)",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.loc.gov/resource/gdcwdl.wdl_07497/",
+      "verificationNote": "catalog identifies printer and date; LOC says no known restrictions; scan not line-by-line collated",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P02",
+      "documentYear": 1517,
+      "title": "Luther to Albrecht, 31 October",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.gutenberg.org/cache/epub/31604/pg31604.html",
+      "verificationNote": "1915 translation; institution THULB (Ott 2017) states original autograph in Stockholm but Leppin/Wengert (2015 p.379) states letters not surviving; original scan not inspected; separate source REF-P02-ARCHIVE",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P03",
+      "documentYear": 1520,
+      "title": "Address to the Christian Nobility, 1st print",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://digital.pitts.emory.edu/s/digital-collections/item/4806",
+      "verificationNote": "Emory catalog first edition first printing, public-domain US statement",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P04",
+      "documentYear": 1522,
+      "title": "Luther's September Testament",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "LOCATOR_MISSING",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://bawue.museum-digital.de/object/1734",
+      "verificationNote": "museum catalog only",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P05",
+      "documentYear": 1466,
+      "title": "Mentelin Bible printed before Luther",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.loc.gov/item/2021667069/",
+      "verificationNote": "bibliographic witness predating Luther's 1522 NT",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P06",
+      "documentYear": 1524,
+      "title": "Luther address on schools to city councils",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "LOCATOR_MISSING",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://digital.pitts.emory.edu/s/digital-collections/item/4819",
+      "verificationNote": "source map points to sections on girls and libraries; needs primary-page verification",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P07",
+      "documentYear": 1525,
+      "title": "Luther Admonition to Peace",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://digi.ub.uni-heidelberg.de/diglit/luther1525l/0010/text_ocr",
+      "verificationNote": "historical scanned/OCR text, pages 0010,0029,0032 from source map not re-collated",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P08",
+      "documentYear": 1525,
+      "title": "Luther Against the Robbing and Murdering Hordes",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://editions.mml.ox.ac.uk/editions/peasants-nuremberg/",
+      "verificationNote": "Oxford Taylor Editions 2025 Nuremberg print Taylorian ARCH.8°.G.1525(27), [Friedrich Peypus] 1525; printed a1v (contrasts previous book), a2r–a3r Rom13, a3v–a4r appeal to deathly force directly read in 1525 German transcription. Selective cross-reading with Oxford Erfurt variant REF-P08-ERF, not complete line-by-line original image collation. XML CC BY-SA4; scans CC BY-NC-SA3.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P09",
+      "documentYear": 1523,
+      "title": "Zwingli 67 Articles",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.uecf.net/books/collected-works/chapter1493.html",
+      "verificationNote": "later Schaff edition; 1523 print witness unverified",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P10",
+      "documentYear": 1527,
+      "title": "Schleitheim Confession (GHDI English)",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://germanhistorydocs.org/en/from-the-reformations-to-the-thirty-years-war-1500-1648/an-anabaptist-confession-of-faith-the-schleitheim-articles-1527",
+      "verificationNote": "translation of 1527 articles; original German critical edition not collated",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P11",
+      "documentYear": 1529,
+      "title": "Speyer Protestation, VD16 D3013",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://tueditions.ulb.tu-darmstadt.de/v/pa000008-0123",
+      "verificationNote": "DDE VD16 D3013, Vienna ONB *69.E.94.(12), Blatt B v lines 552-569 checked; no photographic page collation",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P12",
+      "documentYear": 1529,
+      "title": "Speyer Reichsabschied and anti-anabaptist mandate",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://tueditions.ulb.tu-darmstadt.de/v/pa000008-0111",
+      "verificationNote": "DDE VD16 ZV13031, Halle ULB Kg2101 4°, appendix Blatt Dii r lines 876-900 and 930-946 checked; statute and mandate distinguished",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P13",
+      "documentYear": 1529,
+      "title": "Marburg Articles, GHDI text",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://germanhistorydocs.org/en/from-the-reformations-to-the-thirty-years-war-1500-1648/ghdi:document-4311",
+      "verificationNote": "GHDI translated Articles 5-7,10,14,15 inspected; WA 30/3:160-171 and translator Ellen Yutzy Glebe identified; signed manuscript not collated",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P13-ARCHIVE",
+      "documentYear": 1529,
+      "title": "Marburg signed Zurich exemplar, Staatsarchiv E I 3.1 Nr54",
+      "evidenceClass": "A2",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=618165",
+      "verificationNote": "archive shelfmark and variants documented, manuscript image not collated",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P14",
+      "documentYear": 1530,
+      "title": "Augsburg Confession, Articles IV and VI",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://els.org/beliefs/augsburgconfession/",
+      "verificationNote": "ELS English text Arts IV/VI checked; original German/Latin 1530 yet to collate",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P15",
+      "documentYear": 1543,
+      "title": "Luther Von den Juden und ihren Lügen, WA 53",
+      "evidenceClass": "A1",
+      "accessState": "LINK_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://archive.org/details/werkekritischege53luthuoft",
+      "verificationNote": "WA 53 cited in inherited ledger only; independent e-rara first print VD16 L7153 now identified in REF-P15-PRINT; leaf correspondence with WA pages 536-542 NOT collated",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P16",
+      "documentYear": 1541,
+      "title": "Geneva Ecclesiastical Ordinances (museum overview)",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://museeprotestant.org/en/notice/the-ecclesiastical-ordinances-1541/",
+      "verificationNote": "secondary museum description, primary ordinances not obtained",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P17",
+      "documentYear": 1563,
+      "title": "Heidelberg Catechism 1563 editions Utrecht",
+      "evidenceClass": "A2",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.uu.nl/en/special-collections/collections/early-printed-books/theological-works/heidelberg-catechism-1563",
+      "verificationNote": "museum-quality university catalogue with links; first edition not collated",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P18",
+      "documentYear": 1563,
+      "title": "Council of Trent Session 23 Chapter 18",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://adfonteslibrary.org/work-council-trent-session-23",
+      "verificationNote": "English translation chapter 18 available; Latin original not collated",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P19",
+      "documentYear": 1598,
+      "title": "Edict of Nantes electronic French edition",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://classiques.uqam.ca/classiques/henri_iv/Edit_de_nantes_1598/edit_de_nantes.html",
+      "verificationNote": "HTML PDF RTF download pointers, original witness not collated",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-S01",
+      "documentYear": 2015,
+      "title": "Leppin & Wengert, posting of 95 theses",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/112615/Leppin_306.pdf?sequence=1",
+      "verificationNote": "2015 LQ 29:373–398 PDF sampled text/figures pp 374-390 incl for/against arguments pp 387–389 and conclusion p390; its p379 claim neither letter survived conflicts with THULB Ott 2017; full appendix not read",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-S02",
+      "documentYear": 2017,
+      "title": "Peter Marshall, 1517",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://blog.oup.com/2017/09/reformation-centenary-excerpt-1517/",
+      "verificationNote": "publisher excerpt only, full book not obtained",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-S03",
+      "documentYear": 1994,
+      "title": "Mark U Edwards Jr, Printing Propaganda and Martin Luther",
+      "evidenceClass": "B1",
+      "accessState": "LINK_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://publishing.cdlib.org/ucpressebooks/public/book/printing-propaganda-and-martin-luther.html",
+      "verificationNote": "open online book; not systematically read in this pass",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-S04",
+      "documentYear": 2016,
+      "title": "Ulinka Rublack ed Oxford Handbook Protestant Reformations",
+      "evidenceClass": "B1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "LOCATOR_MISSING",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://academic.oup.com/edited-volume/34628?searchresult=1",
+      "verificationNote": "publisher abstract and table; full contents behind access",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-S05",
+      "documentYear": 2025,
+      "title": "Kenneth G Appold Luther and the Peasants chapter 5",
+      "evidenceClass": "B1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "LOCATOR_MISSING",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://academic.oup.com/book/59785/chapter-abstract/511062426",
+      "verificationNote": "publisher abstract only",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-C01",
+      "documentYear": 2026,
+      "title": "User-supplied source map 2026-11-03",
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "source-ledger-2026-11-03-original.md",
+      "verificationNote": "exact source text copied and verified against supplied attachment; claims not independently promoted",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P02-ARCHIVE",
+      "documentYear": 2017,
+      "title": "Joachim Ott, THULB Jena, Luther letter to Albrecht and Rörer translation",
+      "evidenceClass": "A2",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.db-thueringen.de/servlets/MCRFileNodeServlet/dbt_derivate_00056148/THULB_OdM_2017_10.pdf",
+      "verificationNote": "Official THULB PDF pp1-2: autograph stated in Riksarkivet Stockholm, attached theses lost; Rörer Ms Bos o17e fols 3v-5r in Jena. Contradicts Leppin/Wengert 2015 p379. Archive original still not inspected.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P15-PRINT",
+      "documentYear": 1543,
+      "title": "Luther, Von den Jüden vnd iren Lügen, Wittenberg Hans Lufft 1543, Basel print VD16 L 7153",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.e-rara.ch/bau_1/content/titleinfo/30171079",
+      "verificationNote": "Universitätsbibliothek Basel UBH FN XI 19:2, DOI 10.3931/e-rara-135864, 143 leaves. PDM indicated, 63.73MB PDF, 392KB OCR, IIIF; full PDF bytes not downloaded/hashed, primary leaves not collated. Not VD16 L7154.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P20",
+      "documentYear": 1547,
+      "title": "Council of Trent, Session VI, Decree on Justification (13 January 1547)",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://adfonteslibrary.org/work-council-trent-session-06",
+      "verificationNote": "Historical English translation examined, chapters V-IX and Canons IX XI XII; Latin official text not independently collated; Trent does not claim prior good works merit first grace.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P09-PRINT",
+      "documentYear": 1523,
+      "title": "Zwingli, Verwenung der disputatz zü Zürch, printed 67 Articles, Augsburg Ramminger",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://digital.pitts.emory.edu/s/digital-collections/item/14023",
+      "verificationNote": "Original first Augsburg print (1523), Ulrich Zwingli, Verwenung der disputatz zü Zürch, Pitts Theology Library Emory system record 300000516288, 1523 ZWIN A, VD16 bibliographic information from library. Material printed book is [A–B]^4 = 8 leaves = 16 unnumbered printed pages, B4 verso blank; digital IIIF Presentation 3 manifest directly downloaded and retained privately on 2026-11-04: https://digital.pitts.emory.edu/iiif/3/14023/manifest; 90,592 bytes, SHA256 367e21601ed4c3d66126977e0e4e83fc5792b04964861ed41e8a508ce1183fa7; exactly 29 digital CANVASES, NOT 29 printed pages. The 29 JPEG endpoints redirect to CloudFront /files/large URLs, direct retrieval from authorized PC returned HTTP 403; imageFilesDownloaded=0 and NO original print pages actually viewed. Therefore CATALOG_ONLY, not PARTIAL_OBJECT/FULL_OBJECT_VERIFIED; separate private local manifest is metadata, NOT full 1523 printed source. Metadata's 27 January 1523 for actual disputation conflicts with reformed Zurich church institutional 29 January 1523; treat as an unresolved metadata error pending actual original witness collation. Rights conflict: item public catalogue says NO COPYRIGHT - UNITED STATES / NoC-US; IIIF 3 manifest rights URI is https://rightsstatements.org/vocab/CNE/1.0/ (copyright NOT evaluated). More restrictive RIGHTS_UNKNOWN / RIGHTS_HOLD until reconciliation; no blanket worldwide public-reproduction approval. No images copied into Git; await authorized digitization for textual analysis.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P09-EXPLANATION",
+      "documentYear": 1523,
+      "title": "Zwingli, Ußlegen und gründ der schlußreden oder Artickle[n], Zürich Froschauer",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.e-rara.ch/zuz/content/titleinfo/867320",
+      "verificationNote": "Original Zurich Christoph Froschauer 1523 'Ußlegen und gründ der schlußreden oder Artickle[n]' (VD16 Z821), Zentralbibliothek Zürich III N 105, [254] historical printed leaves, DOI https://doi.org/10.3931/e-rara-2782. FULL official e-rara PDF retrieved on authorized Windows machine 2026-11-04, 136718994 bytes, SHA256 3331c5863552131a3f3ad779bae0613b7651f499ed68fee40c8980a340ef77fa; %PDF- verified and permanently retained PRIVATE under Documents/Research-Primary-Sources/Zwingli_1523_Froschauer_Usslegen_VD16_Z821/; 513 DIGITAL PDF pages, NOT 513 historical printed leaves. PDF pp1-6 selectively visually reviewed; p4 original title mentions xix (19) day of January 1523 in title context; p5 printed first-person dedication to magistrate, council and community of Glarus explicitly says the Zurich disputation was on 'den 29 tag Jenners im MD und XXIII jar'. **CRITICAL TEXTUAL CORRECTION:** the original title literally prints 'xix' (19), but the first-person authorial preface p5 dates the same First Zurich Disputation to 'den 29 tag Jenners' (29 January 1523). Jon D. Wood, *Reforming Priesthood in Reformation Zurich* (2019), p.23 n.25 explicitly notes the title's XIX [sic] SHOULD read XXIX. Thus title XIX is a probable early PRINTING/NUMERAL ERROR, NOT proved to refer to a different event or separate 19-January meeting. Scholarly crosscheck https://www.vandenhoeck-ruprecht-verlage.com/downloads/productPreviewFiles/LP_978-3-525-57092-0.pdf . Maintain distinction between original literal witness spelling XIX and editorial correction XXIX; actual date of printing is unverified. This SIXTEENTH-CENTURY PRINT corroborates 29 January 1523 directly, versus Emory secondary metadata claiming 27 January. NOT complete collation of 254 historical leaves/508 historical faces; initial first-six-page visual sampling subsequently supplemented by direct original-image reading of articles 38 (PDF pp376-379) and 42 (PDF pp399-403) in wave 2026-11-05, no editio princeps relationship of alternative prints established. License on official catalogue Public Domain Mark with academic attribution and holder notification requests; publicationState REFERENCE and ARCHIVE_HOLD/PUBLICATION_HOLD remain. No PDF copied into Git. WAVE322_DIRECT_ARTICLE42: Original official 1523 Z821 PDF [254] leaves/513 digital pages, retained PRIVATE with 136718994 bytes SHA256 3331c5863552131a3f3ad779bae0613b7651f499ed68fee40c8980a340ef77fa rechecked unchanged on 2026-11-05. Original PDF's structured section bookmarks independently locate commentary ART.38 start p376 through p379 (39 begins there); ART.42 first begins near foot of p399 through p403 (43 begins there). All those selected original-page images directly rendered/visually read, no OCR or invented word-level collation. ARTICLE 38: disobedience of commands contrary to God, fidelity under coercion and witness/suffering; no automatic individual licence for violent revolt. ARTICLE 42: original p400 distinguishes imperfect private inner morality from publicly punishable conduct; p401 heading 'Wie man den tyrannen abstossen soll' explicitly rejects individual murder, war and uprising as method ('Nit mit todtschlegen / kriegen / vn uffruoren' approximated with line-break-normalized early orthography); p401 discusses ruler elected by people or narrower group of princes and action by relevant electors/superior political authority; p402 separately considers hereditary tyrant and the body of people/greater godly portion, NOT an isolated individual; p403 concludes lack of civic uprightness more than lack of possible routes for removing tyranny. This is the 1523 original PRINT, not the later CR89 scholarly edition. Locator CR 89 (Zwingli Werke, vol 2) pp343-346 identified in independent scholarship but editorial pages NOT directly collated. No full 254-leaf reading, no complete diplomatic transcription, no modern legal permission or causal demonstration of council policy. AccessState PARTIAL_OBJECT and ARCHIVE_HOLD/LOCATOR_HOLD/PUBLICATION_HOLD unchanged; source remains REFERENCE. Original digitization PDM with institutional credit/notification request. CR89_PAGE_COLLATION_20261105: New distinct critically edited textual layer REF-P56 independently read from University of Zurich full digital work Z20, CR89 vol2 (1908). Exact critical printed pages ART38=320-323 and ART42=342-346 (heading on 342, not only 343-346); direct comparison with selected original 1523 Z821 PDF pp376-379 and pp399-403 finds matching substantive reasoning in inspected clauses: divine-law obedience, patience under persecution; authority of electors and communal decision not individual assassination. Digital scholarly editorial text differs in typography/virgules and contains bracketed biblical reference expansions not present as such in the 1523 facsimile. NO full diplomatic collation of all lines or original print witness variants; original full PDF private SHA unchanged and HOLDs unchanged.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P21",
+      "documentYear": 1536,
+      "title": "Geneva General Council adoption of Reformation, AEG RC29 fols 112-112v",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://archives-etat-ge.ch/page_de_base/5-la-reforme/",
+      "verificationNote": "AEG special standalone historical transcription gives 21 May 1536, R.C.29 f.112-113, Registres du Conseil Geneve XIII (1940) pp576-577; overview page labels fol112-112v, image alt caption erroneously says 26 May. Actual manuscript leaf pagination/photo not collated.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P22",
+      "documentYear": 1541,
+      "title": "Geneva Ecclesiastical Ordinances, AEG Cp Past R1 p1 / PH1384",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://archives-etat-ge.ch/page_de_base/18-sources/",
+      "verificationNote": "AEG Cp Past R1 pp1–15 and PH1384 identify ordinances (1541); AEG «La Réforme», «Présentation des sources» and Historisches Lexikon der Schweiz explicitly date General Council adoption 20 November 1541. Internal AEG education pages say 30 Nov in editorial prose but display original PH1384 caption 20 November. Independent Schaff 19c history §96 cites Council records Oct27, Nov9, Nov20 and 2 Jan 1542 (R.C. XXXV f449) as separate pre-print amendment stage. 20 Nov supported; 30 Nov likely web editorial error, provenance of typo not resolved. French manuscript folios and original R.C. images NOT physically collated. Four offices and text selected in AEG exhibit.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P23",
+      "documentYear": 1535,
+      "title": "Geneva Saint-Pierre church furnishings inventory 17 August 1535, AEG PH1135 fols1–3v",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://archives-etat-ge.ch/page_de_base/4-exorciser-lidolatrie-conversion-religieuse-par-liconoclasme/",
+      "verificationNote": "AEG partial transcription catalogues church property and losses, not reliable basis to assert each perpetrator or personal assault.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P24",
+      "documentYear": 1527,
+      "title": "Schleitheim Brotherly Union articles, German transcribed later print (~1550)",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.museum-schleitheim.ch/taeuferbekenntnis_1.htm",
+      "verificationNote": "Full seven-article German transcript of museum's later ~1550 printing read over _1.htm _2.htm _3.htm (articles I–VII, sword and oath included). Must distinguish later print from 1527 BSB witnesses VD16 S1882: both identified but visual original not collated. DIRECT_1550_PRINT_20261105: Original circa1550 Schleitheim print, separately catalogued as REF-P57 VD16 ZV30530, directly inspected via e-rara IIIF canvases 17-24. Article VI begins canvas18, ends canvas23 where VII begins. Museum website '_2.htm' repeats 'die nicht erkennen den willen Christi' twice in VI question: direct original circa1550 canvas19 has clause ONCE, also BSB 1527 original scan9 ONCE. This is an error/duplicate in ONLINE TRANSCRIPTION relative to examined print, NOT a proven historical reading. Preserve separate museum transcription vs original print labels; no complete 1550 PDF downloaded. WAVE325_ARTICLES_I_II_IV_VII: Museum modern online German transcript circa1550 differs from printed circa1550 original: in Article IV website repeats 'die gehorsam des glaubens' and 'Christus Christus' but direct e-rara original canvases 13-14 has one each (Christus split across pages); BSB 1527 scan6 also one each. In contrast Matt.27 in online article I is faithfully copied from original late print canvas9; true early 1527 variant is Matthew 28 on BSB scan5. Do not classify every modern difference as a typo.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P25",
+      "documentYear": 1560,
+      "title": "Scottish Confession of Faith Ratification Act 1560 c1 (original Scots spelling)",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.legislation.gov.uk/aosp/1560/1",
+      "verificationNote": "Official UK legislation portal carries original Scots wording of ratification act; does not by itself resolve absence of Crown ratification in 1560; consult RPS editorial intro.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P25-RPS",
+      "documentYear": 1560,
+      "title": "Records of the Parliaments of Scotland entry A1560/8/3",
+      "evidenceClass": "A1",
+      "accessState": "LINK_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.rps.ac.uk/search.php?action=print&filename=maryi_ms&id=9393&type=ms",
+      "verificationNote": "1560 RPS A1560/8/3 live direct page still returned 503; search indexed manuscript editor note original Confession manuscript lost; collate later Skene 1597 vs Lekpreuik 1568 (1567 context). New separate RPS-1567 document read.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P26",
+      "documentYear": 1571,
+      "title": "Church of England Thirty-nine Articles, 1571 English print, Folger catalog",
+      "evidenceClass": "A2",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://catalog.folger.edu/record/394459",
+      "verificationNote": "Folger lists London 1571 Richard Jugge and John Cawood, 25+[3] pages, title says convocation 1562 old style; warns vendor-provided metadata can contain errors. EEBO source not accessed",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P21-EDITION",
+      "documentYear": 1940,
+      "title": "Registres du Conseil de Genève, t. XIII (1534–1536), pp.576–577; archival critical printed edition",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://ge.ch/arvaegrefdoc/PDF/17889.pdf",
+      "verificationNote": "AEG original-edition PDF and metadata accessed; exact pp576-577 published transcription given by AEG. Corresponding page screenshot tool returned 404, so no claim of visual collation of those pages; early printed 1940 edition not manuscript.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P24-BSB1",
+      "documentYear": 1527,
+      "title": "Brüderliche Vereinigung etzlicher Kinder Gottes siben Artickel betreffend; printed [Worms], [Peter Schöffer]; BSB first copy",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://digitale-sammlungen.de/en/details/bsb00027178",
+      "verificationNote": "BSB1 VD16 S1882; 32 IIIF canvases. The 32 IIIF canvas images were actually downloaded (1200px scaled JPEG derivatives), decoded, SHA256-hashed, visually inspected as full contact sheet; selected pages 1,4,5,6,7,8,9,10,11,12,13,14,15,16 directly viewed full page. Scan 4 lists seven topics, scan 11 begins VII on oath, scan 15 prints Acta Schlaten am Randen / auff Matthie / Anno M.D.XXvij (year of agreement, not independent colophon imprint). Scans 16–32 contain Sattler letter and additional text. No word-by-word variant collation of all 32 printed pages. Provenance/66 SHA receipts in bsb-1527-iiif-derivatives-v1.json, all temp files deleted. WAVE321_MAGISTRACY cross-tradition evidence using previous physical original 1527 BSB VD16 S1882 direct scan 8-10 and independently identified German later museum 1550 witness plus GHDI scholarly English translation article VI: civil sword is acknowledged God-ordained outside Christ's perfection, yet Christian disciples are not to employ civil sword or serve as magistrates. This is a specific 1527 Swiss Brethren text, not all Anabaptists or ancestry of all modern Baptists. No new BSB download nor new original-page collation this wave. 2026-11-05_DIRECT_ARTICLE_VI_1800PX: BSB first original 1527 scan 8-11 re-acquired temporarily at 1800px and visually compared with same pages BSB2 and original circa1550 REF-P57 scans 18-23. No established substantive main-type variants between BSB1/BSB2 on four inspected pages; layout equivalent. This is not full collation of all printed lines, and JPEG derivatives not archival masters; temporary JPEG deleted, 8 hashes/bytes documented in private receipt. WAVE325_ARTICLES_I_II_IV_VII: Original BSB1 VD16 S1882 1527 IIIF frames 4-13 reacquired as 1600px JPEG and visually reviewed alongside matching BSB2 frames 4-13 and separate circa1550 original. Printed article I biblical reference at scan5 Math. xxviij (=Matthew 28), unlike later ~1550 printed Matt.27 at e-rara canvas9. Articles II, IV, VII original page ranges 5, 6-7, 11-13; II private warnings before public ban and Eucharist, IV both papal and anti-papal services, VII testimony distinct from oath. Not full diplomatic collation.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P24-BSB2",
+      "documentYear": 1527,
+      "title": "Brüderliche Vereinigung etzlicher Kinder Gottes siben Artickel betreffend; printed [Worms], [Peter Schöffer]; BSB second copy",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://digitale-sammlungen.de/en/details/bsb00112324",
+      "verificationNote": "BSB2 VD16 S1882; 34 IIIF canvases. Both original official IIIF manifests and all 34 scaled 1200px JPEG derivatives fetched, verified and hashed; direct visual contact-sheet inspection. Scans 1–32 correspond in print order/layout to first copy; 33 color calibration and 34 resolution target, NOT extra textual leaves. Sample cross-copy printed lines and breaks visually compared pages 4,8,11,13,15: matching typography without a claimed exhaustive lexical collation; BSB2 has owner marginalia/annotations and binding hardware. No full text transcription. 66 SHA receipts in bsb-1527-iiif-derivatives-v1.json; temp files deleted. 2026-11-05_DIRECT_ARTICLE_VI_1800PX: BSB second physical original 1527 scan 8-11 re-acquired temporarily at 1800px and compared with first original. Same printed setting in checked sequence; this copy has owner red marginalia and binding/crop differences but no demonstrated substantive change of main printed type. No proof of total edition-wide lexical identity; 8 early derivative SHA/bytes in private receipt, temporary JPEG discarded. WAVE325_ARTICLES_I_II_IV_VII: Second BSB 1527 physical original IIIF frames 4-13, 1600px JPEG downloaded and verified, original print matches key typographic layout of BSB1; early biblical citation Math. xxviij on scan5, not 1550 Matt.27. Owner marginalia not printed textual variants; no assertion of entire wordwise identity.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P25-1567",
+      "documentYear": 1567,
+      "title": "Scottish Confession, RPS A1567/12/3 as reprinted in Robert Lekpreuik, Actis of James the Sext (Edinburgh 1568)",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.rps.ac.uk/search.php?action=print&filename=jamesvi_trans&id=9539&type=trans",
+      "verificationNote": "RPS English historical translation text read chapters 3,8,9,12,14-17,19-20; RPS editor identifies source Lekpreuik 1568 ff5v–10v; original Scottish manuscript of 1560 is missing and no print image collated.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P25-1581",
+      "documentYear": 1581,
+      "title": "Scottish parliamentary ratification of laws maintaining true kirk, RPS 1581/10/20",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.rps.ac.uk/search.php?action=print&filename=jamesvi_trans&id=10151&type=trans",
+      "verificationNote": "RPS translation of 1581 act explicitly ratifies laws on reformed kirk, lists Scots Confession and anti-papal acts; is later legal testimony, not Crown confirmation in 1560.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P27",
+      "documentYear": 1599,
+      "title": "Henri IV, Edict of Nantes 1598 in diplomatic Paris 1599 print, TU Darmstadt DDE",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://tueditions.ulb.tu-darmstadt.de/v/pa000001-0063",
+      "verificationNote": "DDE bilingual diplomatic/normalized French TEI source 1599 2332 lines with BnF Gallica leaf links; articles III ~L230-265, VI L309-324, VII starts L325, XIII L477-487, XIV L488-504, XVI L512-532, LXXIII-LXXIV L1681-1713 read. XML edition CC BY 4.0; early print photos not collated; distinct date of Edict (1598) and print registration (25 Feb 1599).",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P28",
+      "documentYear": 1559,
+      "title": "Confessio Gallicana / French Reformed Confession (1559/1571), original text in Schaff 1864-based reprint",
+      "evidenceClass": "A2",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://ccel.org/ccel/schaff/creeds3/creeds3.iv.vii.html",
+      "verificationNote": "Schaff reproduces 1864 Toulouse modernised French version, not original 1559; short 35 vs long 40 versions discussed in vol I. First synod Paris 1559 and La Rochelle 1571 confirmed by Musee protestant/Archives Charente-Maritime, but first printed witness not collated.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P29",
+      "documentYear": 1598,
+      "title": "Nantes Edict, Archives nationales J//943/2 (AE/II/763), original manuscript/image locator",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://fr.wikisource.org/wiki/Page:%C3%89dit_de_Nantes._Page_24_-_Archives_Nationales_-_AE-II-763.jpg",
+      "verificationNote": "Archive shelfmark given in Wikisource page of archives image; primary archive original not opened/compared to DDE Paris 1599 text. Not publication-rights cleared.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P30",
+      "documentYear": 1571,
+      "title": "Reformed church discipline and confession, Synod of La Rochelle 1571, Charente-Maritime departmental archive C134",
+      "evidenceClass": "A2",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://archives.charente-maritime.fr/actualites/document-du-mois-discipline-ecclesiastique-des-eglises-reformees-france",
+      "verificationNote": "Institutional article confirms 1559 Paris confession/discipline and 1571 La Rochelle, fonds C134; original archival document not fully imaged or collated.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P31",
+      "documentYear": 1539,
+      "title": "Denmark-Norway Kirkeordinansen approved 1539, scholarly Rørdam 1883 text based on 1542 print",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://danmarkshistorien.lex.dk/Kirkeordinansen,_14._juni_1539",
+      "verificationNote": "Danmarkshistorien Rørdam 1883 I pp40-133 reproduces Hans Vingaard Copenhagen 1542 print, checked against independent 1540 Fyns Bispearkiv copy (see endnote iv and final editorial note of online text); 1539 is approval date/headline, NOT direct base of printed reading. School/poor relief/superintendents/books text verified via this reprint. University Copenhagen DUDS offers separate 1989 edition of full 1539 text pp150-244, NOT collated in current pass. Originals 1537/1539/1542 images still ARCHIVE_HOLD.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P32",
+      "documentYear": 1537,
+      "title": "Denmark-Norway Kirkeordinansen 1537 Latin original and 1539/1542 Danish print catalogue series",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://soeg.kb.dk/permalink/45KBDK_KGL/143rgf3/alma99122912600905763",
+      "verificationNote": "Royal Danish Library catalogue of Latin 1537; separate Danish 1539 alma99122852772605763 and Danish 1542 alma99122912590205763 listed by liturgimusik. Modern 1989 critical reprint is distinct; exact scans/language variants not visually checked.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P33",
+      "documentYear": 1527,
+      "title": "Swedish Västerås ordinantia 1527, manuscript catalogue work-103806 KB B17",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://manuscripta.kb.se/work/103806",
+      "verificationNote": "National catalog Manuscripta work-103806 links Kungliga biblioteket B17, incipit Biscopana besörgie soknakirkior...; metadata CC0, not scan license. Original catalog fetch returned 502, catalog search snippet only; full manuscript act NOT READ. Sweden parliamentary pre-1617 archive route at riksdagen.se.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P34",
+      "documentYear": 1573,
+      "title": "Warsaw General Confederation 28 January 1573, signed parchment AGAD 4467",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://agad.gov.pl/?page_id=966",
+      "verificationNote": "AGAD archive parchment 4467. Official PL transcription protects dissidentes de religione from persecution yet preserves lord's power over subjects in spiritualibus/saecularibus. Seal count correction RESOLVED: original 2010 AGAD inventory 206 bowls/six rows; conservator Justyna Król-Próba's 2016 work and published article pp709-715 renumbered 1-209 and demonstrated 209 bowls/seven rows. AGAD later page gives 181 imprints/27 blanks/1 remnant. Earlier 128 identified is category of attribution, not all impressions. Photo evidence not visually collated; external PDF screenshot returned 403; only textual extraction read.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P35",
+      "documentYear": 1568,
+      "title": "Transylvanian Diet Torda Jan 1568 religious preaching statute as translated in Balázs 2013",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://hunghist.org/83-articles/146-2013-1-balazs",
+      "verificationNote": "Historical act quoted in modern English translation by Balazs (Introduction: Legislation in 1568 and 1571). Community chooses preacher and rejects compulsion; original Hungarian 16c manuscript/critical text not collated. No enumeration of four confessions in quoted wording; claim of first enumeration 1595 is historian's separate analysis.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P36",
+      "documentYear": 1570,
+      "title": "Transylvanian Diet Medgyes January 1570 restrictive statute on newly emerging heresies as quoted Balázs",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://hunghist.org/83-articles/146-2013-1-balazs",
+      "verificationNote": "Balazs (The Limits of Tolerance) prints translated Medgyes law punishing new heresies; Jan 1571 Marosvasarhely act restores protection of preacher/listener with disciplinary exception. Original Hungarian primary text not independently collated.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-S06",
+      "documentYear": 2013,
+      "title": "Mihály Balázs, Tolerant Country – Misunderstood Laws, Hungarian Historical Review 2(1)",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://hunghist.org/83-articles/146-2013-1-balazs",
+      "verificationNote": "Scholarly original argument read Introduction/ Limits of Tolerance: 1568 and 1571 texts do not enumerate four received religions, first enumeration in 1595 (scholarly inference), 1570 repression of new heresies, 1568 separate provision on Wallachian bishop. Do not represent interpretation as words of 1568 law.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-S07",
+      "documentYear": 1974,
+      "title": "Stanisław Salmonowicz, Geneza i treść uchwał konfederacji warszawskiej, Odrodzenie i Reformacja w Polsce 19",
+      "evidenceClass": "B1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.rcin.org.pl/dlibra/publication/29987/edition/41454/content",
+      "verificationNote": "Polish Academy of Sciences journal 1974 pp7-30; listed Rights Reserved – Free Access, automated page showed secured object and challenge, full article not read; no claim attribution beyond metadata.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-S08",
+      "documentYear": 2017,
+      "title": "Justyna Król-Próba, Akt Konfederacji Generalnej Warszawskiej – odkrycia sfragistyczne dzięki interwencji konserwatorskiej",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://bibliotekanauki.pl/chapters/23352242.pdf",
+      "verificationNote": "Restorer directly reports 2010 inventory 206 seals in six rows (p709 note2), physical 2016 intervention/renumbering 1-209 (p712-13), conclusively 209 in seven rows (p715), hypothetical 224 original design slots. PDF text examined, web screenshot failed 403; photos not visually collated.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-S09",
+      "documentYear": 2009,
+      "title": "Sascha O. Becker and Ludger Woessmann, Was Weber Wrong? A Human Capital Theory of Protestant Economic History, QJE 124(2):531–596",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.stir.ac.uk/research/hub/publication/828431",
+      "verificationNote": "University of Stirling repository bibliographic publication info and abstract checked; journal article DOI 10.1162/qjec.2009.124.2.531. Primary data are late-19th-century Prussian counties; 1871 census literacy; NOT a measured estimate of 16th-century Europe's literacy. University repository offers full article PDF; full econometric analysis and rights not independently assessed in this pass.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P08-ERF",
+      "documentYear": 1525,
+      "title": "Luther, Wider die sturmēden Bawren, Erfurt print Matthes Maler 1525, Oxford Taylorian ARCH.8°.G.1525(28)",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://editions.mml.ox.ac.uk/editions/peasants-erfurt/",
+      "verificationNote": "Oxford 2025 German transcription of physical [Erfurt Matthes Maler] 1525 original; a1v author refers to prior admonition, a2r-a3r Rom13/authority, a3v deathly-force call Steche schlahe wurge. Full facsimile/TEI accessible; images CC BY-NC-SA3 and text XML CC BY-SA4 separately. No claim to collate complete image corpus.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P07-ZRH",
+      "documentYear": 1525,
+      "title": "Luther, Ermanunnge zum Fride (Admonition to Peace), Zürich Christoph Froschauer print 1525, ZB AW327 VD16 L4693",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.e-rara.ch/zuz/content/titleinfo/215807",
+      "verificationNote": "Zurich 1525 Froschauer reprint Ermanunnge zum Fride, Zentralbibliothek Zürich AW327, VD16 L4693, DOI https://doi.org/10.3931/e-rara-744; not automatically first Wittenberg print. Official PDF https://www.e-rara.ch/download/pdf/215807.pdf downloaded again 2026-11-04 to PRIVATE LOCAL ARCHIVE (not Git); path relative to Windows user Documents: Research-Primary-Sources/Luther_1525_Froschauer_VD16_L4693/Luther_Ermanunnge_zum_Fride_Zurich_1525_official.pdf. Actual 8,239,895 bytes, %PDF- header, SHA256 898107c6e63848aca753e8c0989520ffa3c008ca37bf33f7835bc6cfbbb49239 matches earlier transient acquisition. Remote PDF tool reports 33 digital PDF pages, including platform metadata and archival protective views; historical book remains [14] printed leaves, not 33 printed leaves. First digital PDF service pages 1–3 and exactly TEN archival facsimile image pages 5–8, 14–16, 28–30 visually inspected: PDF p5 contains peasants address beginning Es hat die Baurchafft, PDF p6 heading An die fürsten vnd herren, PDF p16 mentions Christlich recht and avoidance of the sword, PDF p30 is original Zurich Cristoffel F. 1525 print colophon. This proves only sampled pages and specific printed imprint; NOT a complete line-by-line paleographic transcription, NOT compared to Wittenberg Klug original; ARCHIVE_HOLD retained. Platform cover notes item-specific license on catalog and does not confer unconditional image reuse. RIGHTS_UNKNOWN and RIGHTS_HOLD/PUBLICATION_HOLD remain. Verified private persistent local file, no PDF committed to Git. On 2026-11-04 the entire 33-frame e-rara PDF visually reviewed, not every word diplomatically transcribed: p1 official platform metadata, p2 library branding, p3 backing/binding, PDF p4 original elaborate title prints 'Wittemberg 1525', PDF p5-30 contain 26 textual faces, PDF p30 original colophon prints Zurich 'Cristoffel F.' and 1525, PDF p31 blank original verso, p32-33 binding/other leaves. This is a crucial first-print-vs-reprint distinction: 'Wittemberg 1525' on historic title does NOT prove Zurich Froschauer copy physically printed in Wittenberg. Primary print audience sections: p6 'An die fürsten vnd herren', p10 'An die Baurschafft', p25-27 numbered article responses and the heading 'Vermahnung beyde an die Oberkeit vnd Baurschafft' at p27. All 33 digital frames visually accounted for; full diplomatic letter-level text collation against Wittenberg Klug original NOT done, so stay PARTIAL_OBJECT / ARCHIVE_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P07-WIT",
+      "documentYear": 1525,
+      "title": "Luther, Ermanunge zum friede, Wittenberg Josef Klug early 1525 print Oxford Taylorian ARCH.8°.G.1525(11)",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://users.ox.ac.uk/~fmml2152/Reformation/Luther1525-Rotten.pdf",
+      "verificationNote": "Oxford printed-pamphlet historical/bibliographic introduction records Taylorian ARCH.8°.G.1525(11) [Wittenberg Josef Klug] VD16 L4690; earliest print-run with unfilled title border distinct from later version with Psalm text. Source document actual folios not collated; secondary scholarly identification of primary object.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-S10",
+      "documentYear": 1892,
+      "title": "Philip Schaff, History of the Christian Church, vol VIII, Swiss Reformation, section 96, council records chronology 1541–1542",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://ccel.org/ccel/schaff/hcc8/hcc8.iv.xii.iv.html",
+      "verificationNote": "Schaff vol. VIII first edition dated 1892 (author's 12 Oct 1892 postscript; 2nd edition preface dated 9 Aug 1893), §96 accessed; explicitly gives 27 October Small Council, 9 November Two Hundred, 20 November 1541 General Council, 2 January 1542 reconsideration before printing and quoted record R.C. vol XXXV f449. This is later printed scholarly citation of records, NOT personal reading of original manuscript; sect. numbering varies between editions.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P22-TRANSLATION",
+      "documentYear": 1541,
+      "title": "Geneva Ecclesiastical Ordinances 1541, English edited translation posted by University of Oregon history course",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://pages.uoregon.edu/sshoemak/323/texts/Calvin%20-%20Ecclesiastical%20Ordinances.htm",
+      "verificationNote": "Historical text via modern English translation University of Oregon. Text opened with section locators four orders, pastors' selection, school (notes pre-existing separate girls' school), elders elected partly by government, deacons/hospital, four annual communion seasons. Square-bracketed additions described as Genevan council amendments by translator. Exact French manuscript and edition provenance of English compilation NOT collated.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P37",
+      "documentYear": 1429,
+      "title": "François de Versonnex school donation, 30 Jan 1429, Archives d'État de Genève P.H. 475",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://archives-etat-ge.ch/page_de_base/5-1541-1556-retour-de-calvin/",
+      "verificationNote": "AEG institutional exhibit Calvin et l'éducation includes exact archival P.H.475 and selected Latin excerpt of 1429 donation, also reports 1428 Council decision and 1502 statutes. Demonstrates pre-Calvin school exists, not mass literacy or equal enrollment. Original folio not scanned/fully collated by us.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P38",
+      "documentYear": 1542,
+      "title": "Registres du Consistoire de Genève au temps de Calvin, volume I (1542–1544), AEG Consistoire R.1; Lambert and Watt critical edition, Droz 1996",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://ge.ch/arvaegconsult/ws/consaeg/public/fiche/imageHeader?key=97289",
+      "verificationNote": "AEG Adhémar catalog Consistoire R1 covers 16 Feb 1542–3 Jul 1544 (237 original images noted), with licensed online scholarly Droz 1996 edition PDF 552 pages, ©2023 reproduction limits. Directly viewed modern printed page 1 (PDF zero-based page 42, screenshot) and note 2: 16 Feb 1542 is TENTH session; first NINE session minutes are lost. Editor's footnote cites R.C. 35 f442v (23 Dec 1541) and f485/489/494v (Feb 1542), and f499v (14 Feb 1542) for ongoing civic involvement. This is critical transcription and scholarly annotation, NOT visual collation of 1542 manuscript folio; no mass reproduction rights or full-object claim.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P39",
+      "documentYear": 1521,
+      "title": "Luther Doctor Martini Luthers offentliche verhör zu Worms, Augsburg [Grimm und Wirsung] early print, VD16 L3653, Worms Stadtbibliothek dilibri",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.dilibri.de/stbwo/content/titleinfo/2039194",
+      "verificationNote": "Direct source photo PDF https://www.dilibri.de/stbwo/download/pdf/2039194 is 16 digitized pages including binding/library leaves, not 16 printed historical leaves; actual historical catalog [6] Bl., VD16 L3653. Visual screenshots PDF 0-based pages 0,3,6,10,11–15; page 6 bottom marks 'antwort des andern tags' 18 Apr despite title 17 Apr. Ending on page 11 lacks modern exact slogan 'Hier stehe ich, ich kann nicht anders', ends 'Got kum mir zu hilff/Amen. Da bin ich' in this particular print. Must collate other 1521 editions, several contain famous line. Digitization CC BY-NC-SA 3.0. PDF bytes not retained/hashed; no full lexical collation.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P40",
+      "documentYear": 1521,
+      "title": "Wormser Edikt German original official early edition, Worms [Hans von Erfurt], VD16 D 924, BSB Res/4 H. ref. 287, TU Darmstadt diplomatic transcription",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://tueditions.ulb.tu-darmstadt.de/v/pa000008-0108",
+      "verificationNote": "Actual 1521 printed legal text in TU Darmstadt diplomatic digital edition with Blatt + line locators A1r 1-12 (includes Gesetz der Druckerey); B4r/B4v approximately lines 394-473 ban on sheltering, arrest, supporters/property, sale/printing/reading/storage of books and destruction; modern text editorial apparatus NOT manuscript original or image scan visually collated. Bibliographic attribution [Worms Hans von Erfurt] and BSB copy Res/4 H. ref. 287; original German Vatican parchment lost according to editorial intro, do not confuse with extant printed edition. EuReD scholarly online edition declared CC BY 4.0; this license pertains to edition text with attribution and does not remove PUBLICATION_HOLD or photo-source collation restrictions.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P41",
+      "documentYear": 1521,
+      "title": "Wormser Edikt Latin original early print, Archivio Apostolico Vaticano Arm. LXIV 17, TU Darmstadt diplomatic text",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://tueditions.ulb.tu-darmstadt.de/v/pa000008-0109",
+      "verificationNote": "Latin printed witness Vatican Arm LXIV 17 read by open text at A1r lines 1-25: anti-Luther, books, authors/printers/buyers/sellers and graphic images; NOT the autograph Latin parchment now catalogued Arm I-XVIII 254. Later passages edict partially checked; no original scan or side-by-side complete German/Latin collation. EuReD scholarly online edition declared CC BY 4.0; this license pertains to edition text with attribution and does not remove PUBLICATION_HOLD or photo-source collation restrictions.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P42",
+      "documentYear": 1540,
+      "title": "Georg Spalatin Annalen historical recollection of Worms 1521, Forschungsbibliothek Gotha Chart. A 340",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://blog-fbg.uni-erfurt.de/2021/04/augenzeugenbericht-der-luthersache-auf-dem-reichstag-zu-worms-1521/",
+      "verificationNote": "University of Erfurt/FB Gotha institution describes participant Spalatin's own *Annalen*, recollections of events 20 years later in early 1540s, manuscript Chart A 340, fol.25r/26r/26v/27v/28r short excerpts. Spalatin does not reproduce full April 18 speech and late chronicle was heroizing. Manuscript images not personally collated; 1540 is an approximate decade-indexing year ONLY, manuscript undated (o.D.; 1st half 16th c.) in Kalliope library record https://www.nachlassdatenbank.de/de/ead?ead.id=DE-611-HS-3410519. Chart A340 initial pages absent, companion Chart A341 disappeared in nineteenth century; no original folio seen. Institutional 2021 commentary vs early 1540s chronicle distinguished.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-S13",
+      "documentYear": 2021,
+      "title": "Corinna Ehlers, Wormser Edikt (8./26. Mai 1521), source critique and historical introduction, TU Darmstadt Europäische Religionsfrieden Digital",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://tueditions.ulb.tu-darmstadt.de/v/pa000008-0107",
+      "verificationNote": "Institutional critical scholarly introduction, sections Die Entstehung des Wormser Edikts, Inhalt, Überlieferung und Textvorlage; date 8 May stated on document, discussion and reading 25 May, Emperor signed German/Latin versions 26 May, printed in Worms 26-30 May. Wrede viewed original German parchment in Vatican 1896 old shelfmark Arm II caps I nr93; today not found, current corresponding Arm I-XVIII 255 contains signed Flemish early print. Regional enforcement inconsistent. Original edition release publicly dated 31 Oct 2021 by EuReD https://eured.de/aktuelles/500-jahre-wormser-edikt-neue-edition-online/; full digital scholarly edition under explicit CC BY 4.0 (https://eured.de), reuse requires attribution; rights for unrelated scans and translations remain separate. EuReD scholarly online edition declared CC BY 4.0; this license pertains to edition text with attribution and does not remove PUBLICATION_HOLD or photo-source collation restrictions.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P43",
+      "documentYear": 1521,
+      "title": "Emperor Charles V public declaration 19 April 1521 in GHDI three-document scholarly translation from Hillerbrand (1964)",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://germanhistorydocs.org/en/from-the-reformations-to-the-thirty-years-war-1500-1648/ghdi:document-4371",
+      "verificationNote": "Part B (Emperor Charles's response) in German Historical Institute GHDI, English translation from Hans J. Hillerbrand 1964 pp89-91,94,99-100. Charles invokes dynasty, Catholic rites, Constance, faith and imperial duty; exact original first-print document NOT photographed, English translation/republication may have separate rights. Distinguish source's historical primary authorship from translation access quality.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-S14",
+      "documentYear": 2017,
+      "title": "Axel Gotthard, Schlaglicht 1521: Luther und Karl V. in Worms, Bundeszentrale für politische Bildung, 18 January 2017",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.bpb.de/themen/zeit-kulturgeschichte/reformation/235570/schlaglicht-1521-luther-und-karl-v-in-worms/",
+      "verificationNote": "bpb article by historian Axel Gotthard dated 18 Jan 2017, sections on alleged formula Hier stehe ich and Charles's Catholic argument; considers popular formula unauthentic and attributed to contemporary editors, while early primary variants require Wrede apparatus. The article's text itself CC BY-NC-ND 3.0 DE, not CC BY 4.0 or original first print; no long quotation or commercial reproduction authorized.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P44",
+      "documentYear": 1521,
+      "title": "Die gancz handlung szo mit dem Hochgelerten D. Martino Luther — Wittenberg Rhau-Grunenberg 1521, Georg Spalatin translation, VD16 S7418/L3665, Worms Stadtbibliothek LB88",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.dilibri.de/urn/urn:nbn:de:0128-5-2769",
+      "verificationNote": "Directly inspected ORIGINAL PRINT PDF https://www.dilibri.de/stbwo/download/pdf/2039244, 18 digital pages versus [8] printed original leaves, p11 0-based = printed fol.5v, closing lines plainly 'Ich kan nicht anderst / hie stehe ich / Got helff mir / Amen'; this is contemporaneous publication, not proven spoken 18 April. Museum Stadtbibliothek Worms exhibition https://www.lutherschriften1521.de/luther-schriften/exponate/Reichstag/1-die-gancz-handlung.php identifies sig. LB88, VD16 S7418 / L3665 and discusses conjectural authorship and reception of phrase. No full 18-page transcription, no PDF stored in Git, no downloaded-byte SHA. Digital scan CC BY-NC-SA 3.0; publication hold maintained.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P45",
+      "documentYear": 1521,
+      "title": "Antwort Doctoris Martini Luthers vor K. M. ... Erfurt Matthes Maler 1521, VD16 L3656, Worms Stadtbibliothek LB87a",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.dilibri.de/urn/urn:nbn:de:0128-5-2819",
+      "verificationNote": "Directly viewed PDF https://www.dilibri.de/stbwo/download/pdf/2039355 with 16 digital pages vs historical [4] Bl.; image p10 0-based at end explicitly 'Neyn ich wils nit thun' following exchange with imperial official. Museum Worms notes printed reply is shorter than standard formula; end of story after response, not documentary proof of exact speech words. Print Erfurt [Matthes Maler] 1521 VD16 L3656. No full text collation, no binary kept; digital CC BY-NC-SA 3.0.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P46",
+      "documentYear": 1521,
+      "title": "Ad Cesaree Maiest. interrogata D. Martini L. responsum Wurmacie, Wittenberg Rhau-Grunenberg 1521, Latin print VD16 L3650, LMU Munich copy 4 Luth.209#7",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://epub.ub.uni-muenchen.de/14521/",
+      "verificationNote": "Original 1521 Wittenberg Latin imprint VD16 L3650, LMU Munich Universitätsbibliothek copy 0001/4 Luth. 209#7, item https://epub.ub.uni-muenchen.de/14521/ (library catalogue [2] Bl., date printed xvii. Aprilis, not proof that second Reichstag answer occurred on 17 Apr). Directly VISUALLY inspected ALL THREE digital PDF pages (0-index 0 title, 1 Latin text spread, 2 closing Latin/German leaf) in official https://epub.ub.uni-muenchen.de/14521/1/4Luth.209_7.pdf . On PDF p2 a separately emphasized German coda reads 'Ich kan nicht anderst / hie stehe ich / Got helff mir / Amen' immediately after the Latin reply ending; original 1521 PRINT, not oral stenography or proven Luther-authored insertion. Exact PDF obtained on 2026-11-04: 2451627 bytes, SHA256 2b7bd600f28d1805a46d2d3b577c6f01dbbd2b21a7e70caa8ead518c037edb4f; temporary local copy deleted (TEMP_CLEANED=True); SHA checks that download only, not the physical 1521 artifact. Partial object: visual collation of displayed 3 pages does not equal diplomatic transcription of every Latin word. Photo usage license not verified at item level: RIGHTS_UNKNOWN/RIGHTS_HOLD and PUBLICATION_HOLD remain; ARCHIVE_HOLD covers broader variant and attribution research.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-S15",
+      "documentYear": 1896,
+      "title": "Adolf Wrede (ed.), Deutsche Reichstagsakten JR II (1896), no.79-80 Worms 1521; original visual collation pp554-556, 569-574, 578-584, BSB bsb11833331",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.digitale-sammlungen.de/en/details/bsb11833331",
+      "verificationNote": "Adolf Wrede, Deutsche Reichstagsakten Jüngere Reihe II (1896), archival digitization BSB bsb11833331. Personally read original critical PRINT pages no.79 pp554-556 (p555 Q add. Ich kan nicht anderst, hie stehe ich; p556 Q Latin + F German same Wittenberg Grüneberg printer do NOT form independent sources for spoken words); no.80 pp569-574 (p569 Sp. copy in Spalatin handwriting NOT demonstrated original author; p570 F German Grüneberg print, Fa its revised impression, U Thomas Anshelm Hagenau; p571 F Nachdruck von U; p572 B Erfurt by Matthes Maler; p573 Wittenberg F/Fa/Q relatively late reprints); German critical text pp578-583 p582 F add. Ich kan nicht anders, hie stehe ich. Physical exemplars P44 Worms and P46 LMU are two direct 1521 imprints but one related PRINT transmission per Wrede, NOT two independent oral witnesses. Nine IIIF 1800px JPEG derivatives of pp554-556 and 569-574 acquired and SHA256/bytes recorded in dossier 12, in addition to seven derivative receipts pp578-584; total 16 files, all discarded TEMP_CLEANED=True. Wrede 1896 editorial stemma and conclusion on late Wittenberg addition do not establish which historical person edited it or what Luther literally said. 16 SHA receipts establish the acquired IIIF derivatives, not BSB master images. BSB manifest rights NoC-NC/1.0, RIGHTS_HOLD / PUBLICATION_HOLD remain. Further early manuscript archetype collation remains ARCHIVE_HOLD; do not treat partial images as all original 1521 manuscripts.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-S16",
+      "documentYear": 2021,
+      "title": "Stadtbibliothek Worms: Luther — Der Reichstag 1521 in Flugschriften; Die gancz handlung (1521 original print, textual history and myth)",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.lutherschriften1521.de/luther-schriften/exponate/Reichstag/1-die-gancz-handlung.php",
+      "verificationNote": "Institutional historical exhibition notes German Wittenberg 1521 [8] Bl VD16 S7418/L3665, Worms LB88, original printed phrase at Blatt 5v; Latin Wittenberg VD16 L3650 earlier also has line, conventional scholarly judgment 'not spoken', but authorial origin contested (Kaufmann considers Luther might append phrase in prepared text; bpb Gotthard suggests print editors). Cites Kaufmann 2021 pp78f and Mennecke 2014 pp215–244. This is exhibition prose, not manuscript transcript, and not full original text reading.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P47",
+      "documentYear": 1521,
+      "title": "Ain anzaigung wie D. Martinus Luther zu Wurms auff dem Reichstag eingefaren (VD16 A3024), early Augsburg [Melchior Ramminger] pamphlet, Worms Stadtbibliothek Lutherbibliothek W Gs 21",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.dilibri.de/urn/urn:nbn:de:0128-5-2820",
+      "verificationNote": "ORIGINAL PRINT FACSIMILE visually inspected ALL 16 zero-indexed digital frames in official Stadtbibliothek Worms PDF https://www.dilibri.de/stbwo/download/pdf/2040713 : frames 0-3 library binding/flyleaves, 4 original title and composite woodcut, 5 original blank verso, 6-10 historical printed German account, 11 original blank verso, 12-15 library/flyleaves/binding. Physical original [4] Bl. (4 leaves, NOT 16 printed pages); copy shelfmark W Gs 21, catalog VD16 A3024, [Augsburg] [Melchior Ramminger] [1521] are library attributions in square brackets, not proven imprint colophon. On PDF frame 6 report starts Tuesday Apr 16 arrival; frame 10 ends 'Jm beschluß sprach er die wort Got kum mir zehülff' followed by narrator's reaction and prayer, with NO 'hier stehe ich / ich kan nicht anderst' formula. This witnesses this PRINTED NARRATIVE only, NOT a stenographic transcript, NOT direct visual collation of the attributed Konrad Peutinger 19 April 1521 original letter. The independent City Library exhibition https://www.lutherschriften1521.de/luther-schriften/exponate/Reichstag/3-Ain-anzaigung-.php attributes printed narrative's source to Peutinger's letter of 19 April 1521; the original manuscript/letter was NOT photographed; do not falsely count as independent oral witness. The exhibition identifies the frontispiece's composite woodcut as reused from separate 1521 Lucifer and Pope pamphlet: pope did NOT attend the Diet, NOT on-site iconography or a literal scene. Official downloaded PDF on 2026-11-04: 3253175 bytes, SHA256 4fd0fb21456c815bb6d701307bdfe97eeae9080f27aea7b64a1072659a48fe79, %PDF header; temporary file discarded TEMP_CLEANED=True, SHA identifies obtained bytes only, no binary in Git. dilibri CC BY-NC-SA 3.0 digitization; image/translated text rights require separate review, noncommercial only; RIGHTS_HOLD and PUBLICATION_HOLD intact. PARTIAL_OBJECT even though all digital leaves viewed because not every early printed word diplomatically transcribed or compared against autographed letter.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P48",
+      "documentYear": 1521,
+      "title": "Martin Luther, autograph draft for second Worms hearing 17/18 April 1521, Thüringisches Hauptstaatsarchiv Weimar, Ernestinisches Gesamtarchiv Reg. E 81",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://artsandculture.google.com/asset/luther%E2%80%99s-address-before-the-imperial-diet-in-worms-notes-in-his-own-hand-martin-luther/uAEBA1Vc8H_uCQ?hl=en",
+      "verificationNote": "Autograph original HISTORICAL MANUSCRIPT, physically held Thüringisches Hauptstaatsarchiv Weimar Ernestinisches Gesamtarchiv Reg. E 81, dated 17/18 Apr 1521: shelfmark confirmed independently by institutional UNESCO German Commission Memory of the World register https://www.unesco.de/staette/fruehe-schriften-der-reformationsbewegung/ and Leibniz Association museum publication Google Arts & Culture https://artsandculture.google.com/asset/luther%E2%80%99s-address-before-the-imperial-diet-in-worms-notes-in-his-own-hand-martin-luther/uAEBA1Vc8H_uCQ?hl=en . An institutional PHOTOGRAPH of this sheet was visually inspected as paired photograph left side of Morgan Library & Museum online exhibition 006 Luther on Trial https://www.themorgan.org/exhibitions/online/word-and-image/5 (the right-hand printed edict is NOT part of Reg E 81). Arts & Culture institutional exhibition https://artsandculture.google.com/story/key-documentation-of-the-early-activity-of-martin-luther-leibniz-association/KQUxuklRxxPJJQ?hl=en says Luther wrote this German draft after first hearing, probably evening April 17, to prepare remarks on April 18; the manuscript first reviews 17 April questioning and BREAKS OFF IN THE MIDDLE OF A SENTENCE before the substantive closing defense. Morgan curator independently notes the draft stops mid-sentence. Thus Reg E 81 IS A REAL AUTOGRAPH DRAFT but IS NOT a complete speech record, oral verbatim transcript, proof of Luther's final words or evidence that the familiar printed formula was/was not spoken. Photograph visible, but full institutional scan, verso, archival foliation, transcription, line-level paleographic collation and direct rights license NOT personally verified. Access PARTIAL_OBJECT, NO downloaded photo, NO file bytes or SHA claimed, NO new acquisition-manifest row. The museum/archival rights for photographs are reserved to Thüringisches Hauptstaatsarchiv per Google Arts & Culture; RIGHTS_UNKNOWN / RIGHTS_HOLD / PUBLICATION_HOLD retained. Archive holds for full object and link to later independent print traditions. Contrast cannot be used as a quotation proof; only institutional catalog metadata and visible one-sheet fragment evidence are supported.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P09-ZRH-67",
+      "documentYear": 1523,
+      "title": "Huldrych Zwingli, Dis nachbestimpten Artikel und Meinungen (original 67 Zurich Articles print), [Zurich] [Christoph Froschauer] 1523, VD16 Z819, ZB Zwingli 9: a.1",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.e-rara.ch/zuz/content/titleinfo/263765",
+      "verificationNote": "Official 1523 Zurich first-era 67-article print, VD16 Z819, Zentralbibliothek Zürich copy Zwingli 9: a.1, DOI https://doi.org/10.3931/e-rara-954; 4 PHYSICAL printed leaves = 8 historical printed faces, NO longer 67-article commentary, and NOT the Augsburg Ramminger Emory disputation account. [Zurich], [Christoph Froschauer] and [1523] are LIBRARY BIBLIOGRAPHIC ATTRIBUTIONS in brackets, NOT a printer colophon on image p9. Official e-rara PDF URL https://www.e-rara.ch/zuz/download/pdf/263765 successfully downloaded 2026-11-04 and retained privately, 3349092 bytes, SHA256 6f7aa50455a95566c82328dc24f42907018ff6c882564a2da46cfcad2f1fe19f, %PDF- verified; 13 DIGITAL PDF pages (p1 platform; p2-9 8 original faces including title and all numbered 1-67 articles; p10-13 blank/binding), ALL 13 visually inspected. Page map: PDF p3 articles 1-11; p4 11 end and 12-21; p5 22-30; p6 31-43; p7 44-54; p8 54 end and 55-65; p9 66-67 and final 'Des walt got'. Textological THEMES are supported by original print image: Christ as only Church head (article 7), Christ unique high priest/once sacrifice/mediator (17-21), spiritual versus temporal authority (34-43), reforms and clerical abuses (44-65); BUT not a word-for-word diplomatic transcription of all original sentences, nor independent comparison with other 1523 prints. Public Domain Mark on e-rara official item; scholarly attribution and library notice requested. RESEARCH_ONLY / ARCHIVE_HOLD / PUBLICATION_HOLD until full critical original-text examination and legally compliant citation. No historical PDF/image committed to public Git. COLLATION_WAVE_20261105: directly compared printed numerical sequence with Hegenwald H1252 pp86-92; original standalone Z819 pp3-9 contains all 1-67, last historical page p9 lacks the separate 'grund vnnd uslegung' prospectus printed after article 67 in H p92. Printed editions' complete text identity has NOT been established; no publication permission. WAVE321_MAGISTRACY direct facsimile Z819 PDF p6 original articles 34-43: art35 establishes legitimacy of secular civil power from teaching and work of Christ; 37 requires Christian obedience, 38 qualifies by refusing a command contrary to God, 42 allows wrongful magistrates to be removed in accord with God. Cross-read with H1252 pp89-90, not claimed complete diplomatic collation.",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "id": "REF-P49",
+      "documentYear": 1523,
+      "title": "Zurich council disputation summons draft 3 Jan 1523, StAZH B VI 249 fol.5r-v",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=4613026",
+      "verificationNote": "Official Staatsarchiv Zürich catalog verified: Council draft dated 03.01.1523, B VI 249 fol.5r-v, German; archival manuscript photo NOT read. Critical edition Zwingli Werke 17 II (1905) is separately identified as REF-P53; not the manuscript itself.",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "id": "REF-P50",
+      "documentYear": 1523,
+      "title": "Alternative draft of same Zurich summons 3 Jan 1523, StAZH E I 1.1 Nr.17",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1880495",
+      "verificationNote": "Official StAZH catalog: same 03.01.1523 mandate, city chancellery, scribe Kaspar Frey, draft with readings differing from B VI 249; described in Zwingli Werke 17 II 1 B vs 1 A. Two witness objects, NOT two disputations; full manuscript variant collation NOT done.",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "id": "REF-P51",
+      "documentYear": 1523,
+      "title": "Zurich council decision after disputation 29 Jan 1523, StAZH B VI 249 fol.5v-6v",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=4613028",
+      "verificationNote": "Official StAZH archival record confirms Abschied der Disputation dated 29.01.1523, B VI 249 fol.5v-6v; manuscript not photographed or read. The 1905 edited source text is separately checked as REF-P54.",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "id": "REF-P52",
+      "documentYear": 1523,
+      "title": "Zurich council record on printing oversight 3 Jan 1523, StAZH B VI 249 fol.1r entry 2",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=4681282",
+      "verificationNote": "Official StAZH catalog describes appointment of censorship committee on 03.01.1523 and names Zwingli, Heinrich Uttinger, Heinrich Walder and N. Binder. Catalog only; act text, sanctions and enforcement NOT read.",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "id": "REF-P53",
+      "documentYear": 1523,
+      "title": "Critical edition of Zurich 3 Jan 1523 summons, Zwingli Werke 17 II, CR 88 (1905), pp.466-468",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.irg.uzh.ch/static/zwingli-werke/index.php?n=Werk.17II",
+      "verificationNote": "Actual 1905 editorial German transcription read via University of Zurich digital full-text page: Council summoned preachers to Rathaus on 29 Jan, demanded proofs from Scripture in German, informed bishop of Constance. Edition differentiates witnesses II 1 A/1 B; original manuscript photos not personally collated. No downloaded volume or original autograph SHA.",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "id": "REF-P54",
+      "documentYear": 1523,
+      "title": "Critical edition of Zurich 29 Jan 1523 decision, Zwingli Werke 17 III, CR 88 (1905), pp.469-471",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.irg.uzh.ch/static/zwingli-werke/index.php?n=Werk.17III",
+      "verificationNote": "Actual 1905 editorial German text fully read via University of Zurich website: council resolution dated 29 Jan orders Zwingli to continue preaching from Gospel and other priests to preach only supportable Scripture, bans mutual heresy insults and threatens sanctions. It is a Council-authored position, NOT neutral verbatim debate transcript or automatic modern religious toleration. Original B VI 249 photo not obtained.",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "id": "REF-P55",
+      "documentYear": 1523,
+      "title": "Erhard Hegenwald, Handlung der versamlung in Zürich, Zurich 1523, VD16 H1252, ZB Zürich 18.444",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.e-rara.ch/zuz/content/titleinfo/866996",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "ORIGINAL PRINT physically represented by full official e-rara PDF https://www.e-rara.ch/zuz/download/pdf/866996; ZB Zürich 18.444, VD16 H1252, [44] historical printed leaves ≠ 93 digital PDF pages. Acquired full PDF 27360544 bytes SHA256 8554aa33cefb137e642ebba362e4bd9412da807e5efcc4318a99993d5a6c6edc twice independently verified, retained privately at Documents/Research-Primary-Sources/Hegenwald_1523_Zurich_Disputation_VD16_H1252/Hegenwald_Handlung_Zurich_1523_ZB_18_444.pdf. DIRECTLY VISUALLY READ selected PDF pages: p6 historical title XXIX January 1523, pp8-10 Hegenwald dedication, pp11-12 printed council text beginning 'Wir der Burgermeister, Rat vnnd der groß Rat', pp14-15 beginning of meeting report, p85 ending 29 January, p86 numbered 67 Zwingli articles start, pp87,89-91 selected articles, p92 final nos.61-67 with original end 'Getruckt zu Zürich', p93 library stamp. [Christoph Froschauer] is a LIBRARY printer attribution, not personally verified named imprint on original p92. This is a contemporary printed relation, not a council autograph or verbatim speech. Full 93 digital pages NOT all read, NO diplomatic transcription nor textual collation against short Zurich Z819, municipal B VI 249, E I 1.1, Zwingli Werke CR88 (1905) or Emory Augsburg Ramminger. Official e-rara Public Domain Mark with attribution/notice request; no direct publication authorization for unfinished research. COLLATION_WAVE_20261105: direct original-image comparison (not OCR) of entire printed article-number sequences: Z819 PDF pp3-9 ⇄ Hegenwald H1252 PDF pp86-92. Mapped 1-67 across pages without a missing numbered article. Exact range map Z819 p3 1-11⇄H pp86-87; Z p4 12-21⇄H pp87-88; Z p5 22-30⇄H pp88-89; Z p6 31-43⇄H pp89-90; Z p7 44-54⇄H pp90-91; Z p8 55-65⇄H pp91-92; Z p9 66-67⇄H p92. Sampled parallel lexical sections 1-7,12-17,31-37,55-60,66-67 have no confidently established substantive variants but FULL word-by-word text identity is NOT proven. Printed PARATEXT difference: Z819 PDF p9 closes after article 67 with 'Des walt got'; H H1252 p92 adds AFTER that a future-looking advertisement for printed 'grund vnnd uslegung' followed by 'Getruckt zu Zürich'. Neither line belongs to article 67 and no independent chronology of separate Z821 can be inferred solely. Printed text by Zurich burghermaster and councils at H pp11-12 is the 3 January SUMMONS of 29 January meeting, compared directly with 1905 CR88 Zwingli Werke 17 II pp466-468; it is NOT 29 January closing council DECISION (17 III pp469-471). Manuscripts B VI 249 and E I 1.1 not imaged, not fully collated; private sources bytewise unchanged, HOLD preserved. WAVE321_MAGISTRACY direct facsimile H1252 PDF pp89-90, matched Z819 p6 original article sequence 34-43; Christ-founded magistracy/conditional obedience/art42, historical theological reading not unrestricted modern tolerance or blind obedience. Original H1252 pp11-12 additionally visually read including own council summons date formula (Saturday after Circumcision, year 1523) and 29 January meeting date; cross-checked with critical Zwingli Werke 17 II pp466-468, NOT confused with separate 29 January concluding council act 17 III pp469-471; summons internal date NOT printing date of H1252."
+    },
+    {
+      "id": "REF-P56",
+      "documentYear": 1523,
+      "title": "Huldreich Zwinglis sämtliche Werke, vol. II, Corpus Reformatorum 89 (1908), work Z20 Auslegen und Gründe der Schlußreden, critical edition, article 38 pp.320-323 and article 42 pp.342-346",
+      "evidenceClass": "A2",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.irg.uzh.ch/static/zwingli-werke/index.php?n=Werk.20",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "CRITICAL EDITION NOT SIXTEENTH CENTURY PRINT. Zwingli Werke vol.2 (1908), Corpus Reformatorum vol.89, work Z20. University of Zurich digital transcription fetched completely as HTML in temporary workspace 2026-11-05 (1305825 bytes source HTML; no retained historical PDF; temporary HTML deleted after note integration). Specific target text directly read with the university's embedded printed page anchors: Art.38 pp.320-323, next Art.39 begins p.323; Art.42 begins on p.342 (not just p.343) and continues through p.346, where 43 begins. Compared selected German passages directly against privately retained ORIGINAL 1523 Z821 PDF pp.376-379 (Art.38) and pp.399-403 (Art.42), source REF-P09-EXPLANATION. Art.42 p.344 discusses avoiding todschlegen, kriegen, uffruoren, elected community and selected princes; p.345 hereditary rulers / communal consent and no private individual removal; p.343 distinguishes hidden sin and public misconduct. No proven substantive contradiction in selected passages, BUT not full line-by-line diplomatic collation or edition-to-edition stemma. University edition text contains editorial square-bracket scripture crossrefs such as [1. Cor. 7. 15], [1. Petr. 2. 20], [Röm. 14. 17], not statements those brackets occur in original 1523 print. Facsimile 1523 PDF p.401 has marginal heading about how a tyrant shall be removed; online critical transcription treats related wording in running text and does not establish exact reproduction of marginal layout. Rights of digital 1908 transcription separately unknown; PUBLICATION_HOLD. No scanned 1908 print pages read, only original university digital transcription."
+    },
+    {
+      "id": "REF-P57",
+      "documentYear": 1550,
+      "title": "Original circa-1550 Schleitheim Brüderlich vereinigung, Sturzenegger-Stiftung / Ortsmuseum Schleitheim, VD16 ZV 30530, 75 unnumbered historical leaves",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.e-rara.ch/zuz/content/titleinfo/17792168",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "NOT the 1527 BSB VD16 S1882 setting and NOT the later museum website transcription. Catalog is original circa 1550 print VD16 ZV 30530, [s.l.: s.n.], [um 1550], 75 unnumbered historical leaves, Sturzenegger-Stiftung (Schaffhausen), permanent loan to Ortsmuseum Schleitheim; DOI https://doi.org/10.3931/e-rara-65701. Official IIIF Presentation v2 https://www.e-rara.ch/i3f/v20/17792168/manifest: physically fetched 113637 bytes SHA256 e80ae4159427ecb0034f5b98b914f59442abf6af38783575425560efe7e8fc33, 159 digital canvases (NOT 159 original printed leaves). Original photographic images scans 17-24 directly acquired/viewed at service /full/1200,/0/default.jpg, SHA and bytes for EACH derivative retained in private research receipt Documents/Research-Primary-Sources/Schleitheim_1550_Sturzenegger_VD16_ZV30530/articleVI-1527-1550-direct-image-receipt.json. ARTICLE VI starts on historical original image numbered CANVAS 18, continues 19-23, article VII begins near foot of CANVAS 23. VI directly visually compared with two BSB 1527 copies scans 8-11 each (new 1800px temporary derivatives, separate documented hashes), BSB1 bsb00027178 and BSB2 bsb00112324. All scanned impressions state the worldly sword as God's ordinance outside perfection of Christ and distinguish church ban from civil punishment; no demonstrable substantive lexical variant in inspected segments, BUT no full diplomatic letter-by-letter collation. The museum's website taeuferbekenntnis_2.htm REPEATS 'die nicht erkennen den willen Christi' in the question about the sword while direct original circa1550 CANVAS 19 prints the clause ONCE, and both BSB 1527 originals scan9 also print it once; website repetition must NOT be quoted as a demonstrated sixteenth-century textual variant. IMPORTANT: attempted official 33894082-byte complete PDF download timed out; its partial file was NEVER archivally certified, SHA not assigned, and temporary data disposed of. Research receipt stores derivative hashes only, NOT source master SHA nor complete print PDF. Official digitization marked Public Domain Mark, institution requests scholarly attribution/notice; publication remains REFERENCE/PUBLICATION_HOLD due incomplete collation and rights verification of later website transcription. No binary included in Git. WAVE325_ARTICLES_I_II_IV_VII: Circa1550 separate original VD16 ZV30530 IIIF frames 7-17 and 23-32 (21 images at 1200px) visually checked. I scans8-9; II 9-10; IV 12-16; VII 23-29. Late printed Matt.27 in I scan9 contrasts with BSB 1527 Math. xxviij=28. Museum online transcript article IV duplicates 'die gehorsam des glaubens' and 'Christus Christus', while original prints each once on scans 13-14 ('Christus' split by page) and BSB 1527 scan6 each once. VII authentic distinction between zeugen and schweren. 41 temporary JPEG derivative hashes + URLs saved private receipt at Documents/Research-Primary-Sources/Schleitheim_1550_Sturzenegger_VD16_ZV30530/articles-I-II-IV-VII-1527-1550-iiif-receipts-20261105.json (16957 bytes, sha256 8516534279ddcd6f4f59e5f02807ac85cf6a08df13b0458cabb2dad405e9d76e). Full PDF not acquired, master-image SHA not claimed, scientific holds remain."
+    },
+    {
+      "id": "REF-S17",
+      "documentYear": 2017,
+      "title": "Martin Rothkegel, Daniel Graff über Pomponio Algieri von Nola, Mennonitische Geschichtsblätter 74 (2017), p.58 n.41; Schleitheim print bibliography and disputed ZV30530 dating",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.mennonitischer-geschichtsverein.de/wp-content/uploads/2024/11/MGBL-74-2017.pdf",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "SECONDARY SCHOLARLY BIBLIOGRAPHY, NOT ORIGINAL 1533. Original journal PDF text layer checked and printed page 58 screenshot visually inspected (footnote 41): VD16 S1881/S1883 = 1533 [Strasbourg Jakob Cammerlander]; same footnote attributes VD16 ZV30530 [probably Oberursel Nikolaus Henricus circa 1570, attribution Ulrich Kopp]. Other sources (e-rara and museum) date latter around 1550. No original 1533 scan acquired, no full scholarly PDF archived or SHA assigned. Do not infer original article-I Matthew numeral from this bibliography, or assert alternate dating is resolved."
+    },
+    {
+      "id": "REF-S18",
+      "documentYear": 2017,
+      "title": "Doris Brodbeck / Oliver Thiele, Schleitheims weltbekanntes Buch ist jetzt online!, Evangelisch-reformierte Kirche des Kantons Schaffhausen, 29 Dec 2017",
+      "evidenceClass": "B1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.ref-sh.ch/bericht/5735",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "Official institutional web article, full accessible HTML text directly read, says 1533 Strasbourg reprint had a single known Berlin copy regarded as wartime loss (Kriegsverlust). Historical custody report NOT verified against an individual current SBB16/VD16 holding record and NOT definitive proof all copies absent worldwide. Also dates Schleitheim museum's VD16 ZV30530 material circa1550; scholarly REF-S17 gives competing circa1570 hypothesis. Secondary custody testimony, not 1533 direct original."
+    },
+    {
+      "id": "REF-S19",
+      "documentYear": 1974,
+      "title": "H. W. Meihuizen, J. A. Oosterbaan, H. B. Kossen, Broederlijke Vereniging, Doperse Stemmen 1, Doopsgezinde Historische Kring, Amsterdam, 1974: facsimile of first 1560 Dutch text page (p.14), modern translation (p.16)",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://dhkonline.nl/wp-content/uploads/sites/48/2023/02/DS01_Broederlijke_Vereniging_Tekst_en_commentaar.pdf",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "1974 copyrighted modern translation/commentary published by Doopsgezinde Historische Kring, current public PDF. Printed p.14 specifically reproduces FIRST TEXT PAGE of original 1560 Dutch print, said to be held at Doopsgezinde Bibliotheek Amsterdam; visually inspected as PDF page indexed 13. This photographed page is INTRODUCTION only, not baptism article I scriptural references. Printed p.16 visibly says Matth.28:19 in modern Dutch translation; NOT original 1560 page transcription. No complete original 1560 scan acquired; do not infer historical 1560 numeral or lost 1533 numeral from modern edition."
+    },
+    {
+      "id": "REF-S20",
+      "documentYear": 1977,
+      "title": "Piet Visser (advisor), IDC Publishers, The Anabaptist, Mennonite and Spiritualist Reformation: Radical Reformation Microfiche Project, second-edition titlelist (revision date undetermined), catalog sheet hosted by Calvin University / H. Henry Meeter Center",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://calvin.edu/sites/default/files/migrated/centers-institutes-meeter-center-files-microform-collection-Anabaptist-Mennonite-and-Spiritualist-Reformation-Titlelist.pdf",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "2026-11-05 WAVE 331 UPDATE: EXACT PHOTOGRAPHIC LOCATOR of IDC print CATALOG checked on Calvin University public PDF, printed p2, PDF image page7 (0-index screenshot page6): first column Confessions of faith lists Dutch Broederlicke Vereeninge 1560 [BO p29 HBR-2815] 2 microfiche ORDER ME-67/1, and Dutch 1565 [BO p29 HBR-2815a] 1 microfiche ORDER ME-68/1. Previous wave327 Concordia Seminary PDF https://scholar.csl.edu/ebooks/31 text layer showed same entries but screenshot returned 403; this screenshot limitation is SUPERSEDED for catalogue visual verification ONLY by the Calvin PDF screenshot. Neither physical microfiche, the library's live inventory/shelfmark, nor Article I and Bible citation on either original print has been accessed; source/access claims beyond the catalogue remain EVIDENCE_HOLD / LOCATOR_HOLD / ARCHIVE_HOLD, despite catalog exact locator and removal of source-level LOCATOR_HOLD. 1977 metadata is original titlelist catalog series date, NOT verified date of this SECOND edition; copyright of catalog and original fiche must be evaluated separately. Calvin institutional page https://calvin.edu/meeter-center/resources links the titlelist but does not certify current holding of two particular items."
+    },
+    {
+      "id": "REF-P58",
+      "documentYear": 1560,
+      "title": "Original title page, Broederlicke Vereeninge (1560), Doopsgezinde Bibliotheek / Allard Pierson, photograph in curatorial blog dated 2025-01-21, figure 3",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.allardpierson.nl/blog/op-een-koude-winternacht-500-jaar-geleden",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "FIRST-PARTY FACSIMILE PHOTO of physical ORIGINAL title page, visible at official museum-hosted https://cms.allardpierson.nl/storage/media/3.-boekje-open-888x1024.jpg and caption Figure 3 (2025-01-21 blog by Nina Schroeder-van 't Schip and Gwendolyn Verbraak). Directly visually read printed 'Ghedruckt An. 1560.' but NO place/printer is printed on that original title; Emden and Willem Gailliart in REF-S17 are bibliographic attributions. Photograph shows physical binding and neighbouring page but no verified contemporary shelfmark, no article I text/bible numeral, no master-photo bytes or full object, no claim photograph itself is public-domain; rights separate. A1 exact locator refers to title page only."
+    },
+    {
+      "id": "REF-S21",
+      "documentYear": 1989,
+      "title": "P. Valkema Blouw, Een onbekende doperse drukkerij in Friesland, Doopsgezinde Bijdragen, nieuwe reeks 15 (1989), printed p.56 footnote 62; 1560 Broederlicke bound with undated Concordantie",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://assets.ctfassets.net/4wrp2um278k7/4cu0VnBl2zpexRzhTKbjVY/16e26210de56a2a3c8229f7185f27486/DB_15-1989.pdf",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "1989 scholarly article, printed p56 n62, visually inspected ORIGINAL PDF image page index55 via web screenshot (not relying solely on extracted text). The singular 'Het enig bekende exemplaar' refers to an undated Concordantie held by Doopsgezinde Gemeente on loan Amsterdam UB; it is samengebonden with Broederlicke Vereeninge in a dated 1560 print explicitly said to be of a DIFFERENT printing house. Singular does NOT qualify number of surviving Schleitheim 1560 copies; physical identity of museum 2025 photographed volume vs 1989 description cannot be certified without current shelfmark. One cited PDF page verified, not a full study of 1989 volume and not an original 1560 article-I read. Copyright of 1989 research retained, no PDF archived in public repo."
+    },
+    {
+      "id": "REF-S22",
+      "documentYear": 1909,
+      "title": "S. Cramer (editor), Bibliotheca reformatoria neerlandica, vol. V: Nederlandsche Anabaptistica / De Broederlicke Vereeninge, Martinus Nijhoff 1909, intro pp.585-587, original title facsimile frame n616, edited baptism article p607",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://commons.ptsem.edu/id/bibliothecarefor0005unse",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "VERIFIED ORIGINAL 1909 BOOK SCAN IMAGES (not OCR alone) held through Princeton Theological Seminary / Theological Commons, Internet Archive identifier bibliothecarefor0005unse: bookreader image n598 printed p585; n599 p586; n600 p587; n616 facsimile of 1560 original Dutch TITLE only; n620 printed p607. On p607 baptism article I the right margin prints Matt.3.a. then 28.c., and separate Mat.28.c. after exclusion of infant baptism. On p587 Cramer states marginal Bible citations were added by compiler or translators, NOT the original authors, and acknowledges variation of the a/b/c divisions among Dutch scripture printings. This printed 1909 revised historical transcription is B1 for the 1560 original's reading (not a direct 1560 article-I scan and not 1533/1565 reading). Exactly verified page images accessible as https://archive.org/download/bibliothecarefor0005unse/page/n620/mode/1up etc; no full book PDF or original 1560 master archived into GitHub. Theological Commons explicitly says Image Copyright Not Evaluated, so rights and republication remain HOLD."
+    },
+    {
+      "id": "REF-P59",
+      "documentYear": 1527,
+      "title": "Huldrych Zwingli, In Catabaptistaruv Strophas elenchus, Zürich: Christoph Froschauer, 1527, VD16 Z 860, Zentralbibliothek Zürich 5.281, DOI 10.3931/e-rara-674; original digitized print and IIIF manifest",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.e-rara.ch/zuz/content/titleinfo/190035",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "2026-11-05 exact institutional e-rara record gives ZB Zürich 5.281, VD16 Z 860, publisher Zurich Froschauer 1527, DOI 10.3931/e-rara-674, 190+[2] pages, Public Domain Mark + credit instructions. Live IIIF https://www.e-rara.ch/i3f/v20/190035/manifest retrieved; 196 canvases. Select direct original historic page images observed: printed pp 7,17,27,37,47,57,77,97,117,137, one verifiable example printed p7 is image https://www.e-rara.ch/download/webcache/1000/190049 ('AD LECTOREM' and A 4). Exact locator VERIFIED for SAMPLED original pages only. No text or precise biblical Matt 27/28 locus from the LATIN article I has yet been found/read; NO direct witness to Dutch original Article I 1560/1565 or lost German 1533. Source-level rights remain unknown for Product promotion despite e-rara Public Domain Mark, rights/credit checks distinct. No full-image archive or original master SHA obtained, no images copied to public Git; claim-specific EVIDENCE_HOLD/LOCATOR_HOLD for Matthew reading. WAVE 332 (2026-11-05): SUPERSEDES ONLY previous note that Latin article I / Matthew locus was not found. DIRECT ORIGINAL PRINT VISUAL READ: Zurich 1527 historic printed p72 https://www.e-rara.ch/download/webcache/1000/190114 has 'SECVNDA PARS' and states Latin quotation/refutation plan; p73 image 190115 'TITVLVS CATABAPTISTARVM ...', full 7 article list and E5 signature; p74 image https://www.e-rara.ch/download/webcache/1000/190116 includes complete Latin first baptism ARTICLE under 'CATABAPTISTAE' from 'Primo discite de baptismo' through 'Certi enim facti sumus'; right after comes separate 'RESPONSIO' by Zwingli. p75 image 190117 continues Zwingli RESPONSO (opponent's original voice NOT there). On the physically examined page 74, no numbered Matthew 27 or 28 citation appears anywhere in the LATIN article-I block or its margins; the statement instead invokes Scripture and apostolic practice in general. This is an exact A1 negative observation of the 1527 LATIN PRINT only; original German 1527 Math.xxviij continues independently established and the German 1533 and original Dutch 1560/1565 remain unverified. 196 manifest canvases available but ONLY select leaves visually inspected; PARTIAL_OBJECT, RIGHTS_UNKNOWN and all source-level archive/rights/publication holds remain. Do not claim entire facsimile archived, a master scan SHA, permissions, or that German reference is absent."
+    },
+    {
+      "id": "REF-S23",
+      "documentYear": 2021,
+      "title": "Henning P. Jürgens, Die Schleitheimer Artikel als Dokument der Selbstmarginalisierung, in An den Rand gedrängt – den Rand gewählt (2021), printed pp 51-52 and notes 42-49 on manuscript diffusion and Zwingli's July 1527 Latin Elenchus",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/175484/Juergens_057.pdf?isAllowed=y&sequence=1",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "Institutionally served scholarly 2021 PDF text extracted (printed pp51-52; n42: Zwingli already had four manuscript copies within months; p52 n48: author says Elenchus written in July 1527 from various manuscripts includes full Latin translation and polemical response; n43 Worms, 1533 and late print descriptions; n45 Dutch 1560 and 1565; n44 French lost branch). Web screenshot of the university PDF page returned HTTP 404; exact visual page NOT newly verified, therefore coarse locator only and EVIDENCE/LOCATOR holds for any unsupported primary manuscript or biblical claim. None of four historic manuscripts have been opened or independently assigned shelfmarks; sample images of original 1527 Latin Zwingli print DO NOT establish its article I numerals or text stemma. B1 supports contextual scholarly attribution only."
+    }
+  ]
+}

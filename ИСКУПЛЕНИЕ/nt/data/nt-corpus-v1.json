@@ -1969,7 +1969,7 @@
     {
       "id": "15",
       "file": "ИСКУПЛЕНИЕ/nt/15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md",
-      "topic": "15. Ин 11:52 — «рассеянных чад Божиих собрать воедино»: статус «чад» до веры",
+      "topic": "15. Ин 11:52: принадлежность до собирания; исправленная грамматика, контекст и границы вывода",
       "holds": [
         "EVIDENCE_HOLD",
         "LOCATOR_PARTIAL"
@@ -1977,6 +1977,151 @@
       "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
     }
   ],
+  "synchronizationReview": {
+    "date": "2026-11-03",
+    "evidence": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+    "scope": "NT15, P13 and extent-table dependencies; John11:45-57 and selected parallels, not full-corpus rereading",
+    "findings": [
+      "ὑπέρ occurs in 11:52a; purpose connects the gathering of children to Jesus death.",
+      "Repeated article does not set a numerical extent; perfect passive does not name scattering agent; purpose alone is not a guaranteed decree.",
+      "Wesley speaks of all children across ages/nations, not all humans as children. Gill expressly says Christ died for them.",
+      "Acts18:8 precedes the vision with actual Corinthian believers; 17:19 has ἡγιασμένοι."
+    ],
+    "c25": "OPEN on the basis of naming/full extent; corrected local facts are positively affirmed.",
+    "subsequentBoundedReview": "commentaryReviewWave4"
+  },
+  "commentaryReviewWave4": {
+    "recordedAtUtc": "2026-11-03T00:49:19+00:00",
+    "controls": "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json",
+    "scope": "John 11:52 commentator contexts only; five independent state axes; no full works, printed collation, Greek Chrysostom/Cyril or fresh Prokopenko PDF replay.",
+    "c25": "OPEN",
+    "findings": [
+      "Calvin: election before calling; faith/adoption/regeneration distinguished in different respects.",
+      "Alford: appointment-to-life expression and John1:12/10:16 among all nations; prophetic-scope difference from Augustine.",
+      "Chrysostom: future designation, faithful delivered from coming punishment, one body; English/Latin translations.",
+      "Augustine49.27: predestination AND not-yet-children/sheep before faith; Latin and English.",
+      "Published Cyril fragment: all mankind, children by creation, gathered through faith into the Church; transmission/attribution qualification retained."
+    ],
+    "publicationEligible": false,
+    "method": "Recorded after bounded primary-text reading; not an exact time of human reading. Source receipts, locators and read scopes are in the linked control; only their consistency/bytes are mechanically replayable.",
+    "recheckCommand": "python3 -B scripts/atonement_wave4_sources.py (offline); --source-root /external/files for actual new-file byte/extract replay"
+  },
+  "cyrilJohannineReviewWave5": {
+    "recordedAtUtc": "2026-11-03T08:16:59.467778+00:00",
+    "controls": "ИСКУПЛЕНИЕ/evidence/source_controls_wave5_2026-11-03.json",
+    "c25": "OPEN",
+    "interpretationStatus": "ARGUED_PROVISIONAL_NOT_MACHINE_PROOF",
+    "workingPreference": "Gathered believing people of God across nations as referent of John11:52; election/prolepsis can coexist. This is weighed contextual interpretation, not lexical proof, exclusion of all other purposes of death, or erasure of the published Cyril creation reading.",
+    "scope": "Bounded Cyril English I/VI and attributed VII fragments; eleven Greek Johannine contexts. Four fresh file pins, not replay of old full packages. Details and independent axes belong to source controls.",
+    "publicationEligible": false,
+    "findings": [
+      "Creation/incarnation/adoption through faith and Spirit/essential Sonship distinguished.",
+      "BookVI objection is distinct from the author reply; common humanity is not identical saving participation.",
+      "VII11:52 broad reading preserved; VII11:44 broad release language prevents a whole-author verdict from the BookVI punishment passage.",
+      "Greek contextual preference is argued, not proved by lexical counts or a future tense in John17:20."
+    ],
+    "nextAction": "Greek/critical transmission, comparison of VI10:14-15 and VII11:44/52, and bounded OT intertext; no whole-author eschatology/atonement closure."
+  },
+  "otGatheringReviewWave6": {
+    "recordedAtUtc": "2026-11-03T10:31:55.703488+00:00",
+    "controls": "ИСКУПЛЕНИЕ/evidence/source_controls_wave6_2026-11-03.json",
+    "c25": "OPEN",
+    "o09": "BOUNDED_COMPARISON_DONE_CRITICAL_FOLLOWUP_OPEN",
+    "interpretationStatus": "ARGUED_PROVISIONAL_NOT_MACHINE_PROOF",
+    "scope": "Eight paired MT/LXX contexts /104 verse pairs; four John contexts /51 verse positions; 21 freshly byte-verified objects, not whole-book reading or replay of old packages.",
+    "publicationEligible": false,
+    "findings": [
+      "Original Israel/Judah addressees and inclusion of nations both retained.",
+      "Isa43 combines creation and covenantal Jacob/Israel address; creation does not automatically imply an all-human referent.",
+      "Ezek34/37 give an argued shepherd/unity echo via John10, not a proved quotation in John11:52.",
+      "John7:35 is an interlocutors question, not narrator endorsement of a diaspora-only view.",
+      "OT agent is not imported into John11:52; geography, naming, applied salvation and all purposes of death remain distinct.",
+      "Digital irregularities and MT/LXX wording differences retained, not silently emended or collated against print."
+    ],
+    "supersedesOnly": "Generic request for a bounded OT comparison in Wave5 next actions, only for the explicitly listed ranges. Older wave findings/receipts remain historical; Cyril Greek/critical transmission remains open.",
+    "nextAction": "Critical/printed collation of digital irregularities and proposed intertexts; separate Cyril Greek/critical transmission. No whole-OT/atonement closure."
+  },
+  "greekTransmissionReviewWave7": {
+    "recordedAtUtc": "2026-11-03T11:39:18.078421+00:00",
+    "controls": "ИСКУПЛЕНИЕ/evidence/source_controls_wave7_2026-11-03.json",
+    "status": "CANDIDATE_GREEK_IDENTIFIED_PRINT_AND_ATTRIBUTION_OPEN",
+    "c25": "OPEN",
+    "o11": "DISCOVERY_AND_EDITORIAL_REVIEW_DONE_ORIGINAL_VERIFICATION_OPEN",
+    "candidateIds": [
+      "OG-JN11",
+      "AEGEAN-JN11"
+    ],
+    "candidateEvidenceClass": "C",
+    "greekCandidatesQuoteSafe": false,
+    "greekOriginalVerified": false,
+    "printedCollationClaimed": false,
+    "criticalAttributionSettled": false,
+    "publicationEligible": false,
+    "interpretationStatus": "ARGUED_PROVISIONAL_NOT_MACHINE_PROOF",
+    "scope": "Two bounded Greek digital candidate contexts; 11 verified Git objects plus two byte-matched ZIP members; three rendered web observations. No full-work reading, raw-HTML receipt, print/manuscript collation or new Greek-original quotation.",
+    "findings": [
+      "Liddon reports Greek and Syriac source text and marginal language notices; a particular fragment needs its own language/source identification.",
+      "Pearse’s later translated/abridged Pusey account supplies catena leads, not direct manuscript inspection or individual attribution.",
+      "Four literal digital differences are retained without silent repair or an assertion of ancient variants/established OCR cause.",
+      "The previously read and freshly reread English attributed fragment still supplies the all-human creation and faith-gathering reading."
+    ],
+    "supersedesOnly": "Undifferentiated search for a Greek candidate, only for the two located digital contexts and editorial review; no promotion of their evidence class and no closure of O11/C25.",
+    "nextAction": "Acquire and visually collate Randell II133–135 with margins; authenticate candidate Pusey II294–296 and its apparatus; map pg074_0039.1 to printed PG74; trace only the witnesses actually indicated for the target fragment."
+  },
+  "greekEditionAndApparatusReviewWave8": {
+    "recordedAtUtc": "2026-11-03T15:30:00+00:00",
+    "controls": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
+    "status": "PUSEY_VOL1_SCAN_VERIFIED_VOL2_AND_PG74_OCR_COLLATED_PRINT_SCAN_FOR_1152_OPEN",
+    "c25": "OPEN",
+    "o11": "EDITION_LOCATOR_APPARATUS_AND_MEDIUM_ESTABLISHED_1152_PRINT_IMAGE_OPEN",
+    "puseyVol1PraefatioEvidenceClass": "A1",
+    "puseyVol2AndPg74OcrEvidenceClass": "C",
+    "syriacInvolvementOnJohn1149_52": false,
+    "greekCandidatesQuoteSafe": false,
+    "greekOriginalVerified": false,
+    "puseyVol2PageImagesInspected": false,
+    "mignePg74PageImagesInspected": false,
+    "publicationEligible": false,
+    "scope": "32 byte-verified Git objects across five repositories (8 visually inspected printed page scans of Pusey 1872 Vol. I and 24 OCR/hOCR/XML/JSON witnesses for Pusey Vol. II-III, Migne PG 74, and pipeline provenance) plus five partial web observations. No page-image inspection of Pusey Vol. II pp. 294-296 or PG 74 cols. 69-70, no continuous Greek manuscript for Book VII, and no publication approval.",
+    "findings": [
+      "Pusey 1872 Vol. I printed page scans (title page, Latin Praefatio pp. vii-x, and bound-in Erratum slip) establish the Nicetas and Corderian Greek catena streams, warn of catena compression in Books VII-VIII, and show that Pusey p. ix non-Cyrilline disclaimer on p. 691 a targets the inner allegory on John 11:44 (Vol. II p. 292.15), not 692 a-693 b (John 11:49-52).",
+      "Aegean markers 2.294-2.296 match Pusey 1872 Vol. II pp. 294-296; open-greek locus pg074_0039.1 maps to Migne PG 74 cols. 69-70 (1859 leaf 41 = 1863 leaf 039, Aubert 692-693); Randell 1885 Vol. II prints John 11:49-52 on pp. 133-134 without any Syriac notice.",
+      "Discrepancies 1, 2, and 4a in OG-JN11 are Qwen3.6 OCR corruptions; Discrepancy 4b is Mai Vatican catena scholium (Reg. Svec. 9 fol. 129) placed in PG 74 col. 69 main column with footnote (2) and relegated to apparatus by Pusey; Discrepancy 3 is a genuine Greek catena split recorded in Pusey II 295 apparatus lines 16-17 (c. l. Cord. Paradise/divine-confession clause vs Nik. Ed. virtue clause), with both recensions preserving death for all humanity, creation sonship, scattering by Satan, and gathering through faith into the Church.",
+      "Book VII in Pusey contains 0 Syriac fragments (unlike the four explicitly flagged Syriac scholia at the end of Book VIII on pp. 332-334 = Randell p. 164 From the Syriac), proving John 11:49-52 is transmitted solely through Greek catenae."
+    ],
+    "supersedesOnly": "Wave 7 open edition-mapping, apparatus-identification, and Syriac-medium questions for John 11:49-52; does not supersede visual scan verification of Pusey Vol. II pp. 294-296 or PG 74 cols. 69-70 and does not close O11 or C25.",
+    "nextAction": "Acquire and visually inspect printed page images (not OCR) of Pusey 1872 Vol. II pp. 294-296 (operacyrilli04cyriuoft frames 306-308) and/or Migne PG 74 cols. 69-70 (patrologiaecurs25hopfgoog leaf 41), and evaluate the theological relationship between Book VII 11:44 and Book VI 10:14-15."
+  },
+  "patristicScanAndCyrilComparisonWave9": {
+    "recordedAtUtc": "2026-11-04T09:00:00+00:00",
+    "controls": "ИСКУПЛЕНИЕ/evidence/source_controls_wave9_2026-11-03.json",
+    "status": "PATRISTIC_ORIGINALS_AND_CATENA_SCANS_VERIFIED_PUSEY_V2_1152_SCAN_OPEN",
+    "c25": "OPEN",
+    "o10": "CHRYSOSTOM_CATENA_SCAN_VERIFIED_HOMILY_OCR_COLLATED_DIRECT_PRINT_SCAN_OPEN",
+    "o11": "CYRIL_FIVE_LOCUS_COMPARISON_AND_COISLIN23_CATENA_SCAN_VERIFIED_PUSEY_V2_1152_SCAN_OPEN",
+    "visuallyInspectedA1PrintScans": 21,
+    "correctedA1TeiXmlObjects": 3,
+    "classCOcrAndJsonlObjects": 27,
+    "controlledArtifacts": 51,
+    "cyrilComparedLoci": 5,
+    "cramerCoislin23CatenaScanEvidenceClass": "A1",
+    "coislin23AnonymousFor1152": true,
+    "puseyVol1John1_11_13ScanEvidenceClass": "A1",
+    "puseyVol2DualOcrEvidenceClass": "C",
+    "mason1899Oratio30ScanEvidenceClass": "A1",
+    "oratio4522GreekOcrEvidenceClass": "C",
+    "oratio4522GreekOcrQuoteSafe": false,
+    "pl54AndPl75CorrectedTeiEvidenceClass": "A1",
+    "puseyVol2PageImagesInspected": false,
+    "mignePg74PageImagesInspected": false,
+    "fullCyril1152FragmentGreekOriginalVerified": false,
+    "publicationEligible": false,
+    "holds": [
+      "EVIDENCE_HOLD",
+      "PUBLICATION_HOLD"
+    ],
+    "summary": "Wave 9 verifies 21 visual A1 print scans, 3 corrected A1 TEI-XML editions (PL 54, PL 75, First1KGreek Or. 30), and 27 class-C OCR/JSONL witnesses without promoting OCR to VERIFIED_ORIGINAL. Cramer 1841 Vol. II p. 322 (Coislin 23 catena scan, A1) confirms the shorter anonymous scholion on John 11:51-52 displaced after John 12:8; Pusey 1872 Vol. II pp. 294-296 and PG 74 cols. 69-70 remain without page scans, keeping C-25 OPEN. Five-locus comparison of Cyril In Joannem (1:11-13 A1 scan; 8:46-47, 10:14-16, 11:44 C OCR with Praefatio p. ix rejecting the 691A paragraph; 11:49-52) confirms a two-register Johannine grammar (universal creator kinship versus eschatological adoption through faith). GRG-1 is repaired from PL 75 cols. 524C/612B/614A/642B (sine aestimatione dabatur percipi, Misertus ergo creator ut redimeret); LEO-1 (PL 54 + Greek column scans), NAZ-1 (Mason 1899 pp. 140-143 scans; Or. 45.22 remains class C), and CHR-2 (Cramer II p. 320 scan + Hom. 65 OCR) are bound to exact locators."
+  },
   "claimRegister20261026": {
     "чтоЭто": "реестр доводов лана «nt»: строка = раздел прозы уровня ## с локатором, классом из её собственных маркеров и отметкой съёма",
     "чтоСчитаетсяДоводом": "заголовок «## » в любом .md лана, включая вложенные папки (synthesis/drafts, ot/tools); тело секции — до следующего «## » или до конца файла",
@@ -1991,13 +2136,13 @@
     "разрешеноЛокаторов": 190,
     "неРазрешено": 0,
     "поКлассам": {
-      "БЕЗ МАРКЕРА": 123,
-      "УДЕРЖИВАЕТСЯ": 66,
+      "БЕЗ МАРКЕРА": 126,
+      "УДЕРЖИВАЕТСЯ": 63,
       "ЗАКРЫТО": 1
     },
     "маркеры": {
-      "всего": 144,
-      "различных": 19,
+      "всего": 136,
+      "различных": 18,
       "словарь": {
         "BLOCKED": "УДЕРЖИВАЕТСЯ",
         "CONFLICT / LOCATOR_HOLD": "УДЕРЖИВАЕТСЯ",
@@ -2006,7 +2151,6 @@
         "FULL_OBJECT_VERIFIED": "ЗАКРЫТО",
         "LINK_ONLY": "СЛУЖЕБНОЕ",
         "LOCATOR_HOLD": "УДЕРЖИВАЕТСЯ",
-        "LOCATOR_PARTIAL": "УДЕРЖИВАЕТСЯ",
         "LXX_HOLD": "УДЕРЖИВАЕТСЯ",
         "MT_HOLD": "УДЕРЖИВАЕТСЯ",
         "NT_CORPUS_HOME": "СЛУЖЕБНОЕ",
@@ -2021,10 +2165,9 @@
       },
       "частоты": {
         "LOCATOR_HOLD": 63,
-        "EVIDENCE_HOLD": 22,
+        "EVIDENCE_HOLD": 21,
         "MT_HOLD": 21,
         "PUBLICATION_ELIGIBLE": 8,
-        "LOCATOR_PARTIAL": 7,
         "EXACT_LOCATOR_VERIFIED": 4,
         "LXX_HOLD": 3,
         "PUBLICATION_HOLD": 3,
@@ -2068,8 +2211,27 @@
       "записейВнеСтрокЛана": 0,
       "файловБезКарточкиСостояния": 0,
       "маркеровВПрозеНеОтражённыхВКарточке": 0,
-      "маркеровВКарточкеНеИзПрозыЛана": 0,
-      "детально": {}
+      "маркеровВКарточкеНеИзПрозыЛана": 2,
+      "детально": {
+        "06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md": {
+          "проза": 2,
+          "карточка": 3,
+          "вПрозеНеВКарточке": [],
+          "вКарточкеНеИзПрозы": [
+            "LOCATOR_PARTIAL"
+          ],
+          "естьКарточка": true
+        },
+        "15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md": {
+          "проза": 0,
+          "карточка": 2,
+          "вПрозеНеВКарточке": [],
+          "вКарточкеНеИзПрозы": [
+            "LOCATOR_PARTIAL"
+          ],
+          "естьКарточка": true
+        }
+      }
     },
     "правилоСверки": "запись лана считается относящейся к файлу, если в ней есть file|path|файл на этот .md;  HOLD-маркеры секций файла обязаны встретиться в маркерах его записей, а маркеры записи обязаны встречаться в прозе лана — так оба учёта проверяют друг друга, а не дополняются до совпадения",
     "строки": [
@@ -2667,12 +2829,9 @@
         "файл": "ИСКУПЛЕНИЕ/nt/06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md",
         "строка": 339,
         "срез": "06.13 Ин 11:50–52 — пророчество Каиафы и комментарий евангелиста",
-        "класс": "УДЕРЖИВАЕТСЯ",
-        "маркеров": 1,
-        "токены": [
-          "EVIDENCE_HOLD",
-          "LOCATOR_PARTIAL"
-        ],
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
         "машинно": false,
         "машинноПоФайлу": true
       },
@@ -2680,7 +2839,7 @@
         "код": "06.14@06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN",
         "лан": "nt",
         "файл": "ИСКУПЛЕНИЕ/nt/06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md",
-        "строка": 371,
+        "строка": 380,
         "срез": "06.14 Ин 12:32 — `κἀγὼ ἐὰν ὑψωθῶ ... πάντας ἑλκύσω`",
         "класс": "БЕЗ МАРКЕРА",
         "маркеров": 0,
@@ -2692,7 +2851,7 @@
         "код": "06.15@06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN",
         "лан": "nt",
         "файл": "ИСКУПЛЕНИЕ/nt/06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md",
-        "строка": 396,
+        "строка": 405,
         "срез": "06.15 Ин 17:2, 6, 9, 19, 20 — молитва Первосвященника",
         "класс": "БЕЗ МАРКЕРА",
         "маркеров": 0,
@@ -2704,7 +2863,7 @@
         "код": "06.16@06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN",
         "лан": "nt",
         "файл": "ИСКУПЛЕНИЕ/nt/06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md",
-        "строка": 430,
+        "строка": 439,
         "срез": "06.16 Ин 18:11 — чаша",
         "класс": "БЕЗ МАРКЕРА",
         "маркеров": 0,
@@ -2716,7 +2875,7 @@
         "код": "06.17@06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN",
         "лан": "nt",
         "файл": "ИСКУПЛЕНИЕ/nt/06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md",
-        "строка": 448,
+        "строка": 457,
         "срез": "06.17 Ин 17:24 — воля о данных",
         "класс": "БЕЗ МАРКЕРА",
         "маркеров": 0,
@@ -2728,7 +2887,7 @@
         "код": "СР@06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN",
         "лан": "nt",
         "файл": "ИСКУПЛЕНИЕ/nt/06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md",
-        "строка": 466,
+        "строка": 475,
         "срез": "Сводка по карточкам 06",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 1,
@@ -4391,11 +4550,9 @@
         "файл": "ИСКУПЛЕНИЕ/nt/15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md",
         "строка": 10,
         "срез": "0. Правила чтения этого документа",
-        "класс": "УДЕРЖИВАЕТСЯ",
-        "маркеров": 1,
-        "токены": [
-          "LOCATOR_PARTIAL"
-        ],
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
         "машинно": false,
         "машинноПоФайлу": true
       },
@@ -4403,7 +4560,7 @@
         "код": "1@15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23",
         "лан": "nt",
         "файл": "ИСКУПЛЕНИЕ/nt/15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md",
-        "строка": 16,
+        "строка": 17,
         "срез": "1. Текст",
         "класс": "БЕЗ МАРКЕРА",
         "маркеров": 0,
@@ -4415,8 +4572,8 @@
         "код": "2@15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23",
         "лан": "nt",
         "файл": "ИСКУПЛЕНИЕ/nt/15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md",
-        "строка": 24,
-        "срез": "2. Синтаксис периода — три данных, которые и держат вопрос",
+        "строка": 25,
+        "срез": "2. Синтаксис периода — что действительно следует из форм",
         "класс": "БЕЗ МАРКЕРА",
         "маркеров": 0,
         "токены": [],
@@ -4427,7 +4584,7 @@
         "код": "3@15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23",
         "лан": "nt",
         "файл": "ИСКУПЛЕНИЕ/nt/15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md",
-        "строка": 30,
+        "строка": 47,
         "срез": "3. Контекст в Евангелии",
         "класс": "БЕЗ МАРКЕРА",
         "маркеров": 0,
@@ -4439,7 +4596,7 @@
         "код": "4@15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23",
         "лан": "nt",
         "файл": "ИСКУПЛЕНИЕ/nt/15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md",
-        "строка": 47,
+        "строка": 60,
         "срез": "4. Лексика",
         "класс": "БЕЗ МАРКЕРА",
         "маркеров": 0,
@@ -4451,13 +4608,11 @@
         "код": "5@15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23",
         "лан": "nt",
         "файл": "ИСКУПЛЕНИЕ/nt/15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md",
-        "строка": 55,
-        "срез": "5. История чтений: что говорили именно об этом напряжении",
-        "класс": "УДЕРЖИВАЕТСЯ",
-        "маркеров": 1,
-        "токены": [
-          "LOCATOR_PARTIAL"
-        ],
+        "строка": 81,
+        "срез": "5. История чтений: раздельные, проверяемые позиции",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
         "машинно": false,
         "машинноПоФайлу": true
       },
@@ -4465,8 +4620,8 @@
         "код": "6@15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23",
         "лан": "nt",
         "файл": "ИСКУПЛЕНИЕ/nt/15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md",
-        "строка": 70,
-        "срез": "6. Параллельный корпус: особое отношение Бога к тем, кто ещё не верует",
+        "строка": 187,
+        "срез": "6. Параллели к вопросу о принадлежности до веры",
         "класс": "БЕЗ МАРКЕРА",
         "маркеров": 0,
         "токены": [],
@@ -4477,8 +4632,8 @@
         "код": "7@15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23",
         "лан": "nt",
         "файл": "ИСКУПЛЕНИЕ/nt/15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md",
-        "строка": 97,
-        "срез": "7. Чего 11:52 **не** говорит (обязательная колонка трёхколонника)",
+        "строка": 237,
+        "срез": "7. Чего 11:52 не устанавливает сам по себе",
         "класс": "БЕЗ МАРКЕРА",
         "маркеров": 0,
         "токены": [],
@@ -4489,8 +4644,8 @@
         "код": "8@15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23",
         "лан": "nt",
         "файл": "ИСКУПЛЕНИЕ/nt/15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md",
-        "строка": 106,
-        "срез": "8. Чем это закрывается (очередь; ничего не выдумано вместо снятия)",
+        "строка": 248,
+        "срез": "8. Следующие проверяемые действия",
         "класс": "БЕЗ МАРКЕРА",
         "маркеров": 0,
         "токены": [],
@@ -4501,8 +4656,8 @@
         "код": "9@15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23",
         "лан": "nt",
         "файл": "ИСКУПЛЕНИЕ/nt/15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md",
-        "строка": 119,
-        "срез": "9. Шов «двойного наказания» и аргументации Пр.",
+        "строка": 259,
+        "срез": "9. Шов «двойного наказания» и аргументации Прокопенко",
         "класс": "БЕЗ МАРКЕРА",
         "маркеров": 0,
         "токены": [],
@@ -4513,8 +4668,8 @@
         "код": "10@15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23",
         "лан": "nt",
         "файл": "ИСКУПЛЕНИЕ/nt/15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md",
-        "строка": 129,
-        "срез": "10. Съёмки и пересъём",
+        "строка": 270,
+        "срез": "10. Проверка и история",
         "класс": "БЕЗ МАРКЕРА",
         "маркеров": 0,
         "токены": [],
@@ -4524,8 +4679,8 @@
     ],
     "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
     "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check nt",
-    "measuredAt": "2026-11-01T02:28:17Z",
-    "checkedAt": "2026-11-01T02:28:17Z",
-    "предыдущийСъём": "2026-11-01T02:22:07Z"
+    "measuredAt": "2026-11-03T22:36:41Z",
+    "checkedAt": "2026-11-03T22:36:41Z",
+    "предыдущийСъём": "2026-11-03T22:33:30Z"
   }
 }

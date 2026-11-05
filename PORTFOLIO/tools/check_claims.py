@@ -48,14 +48,14 @@ CURRENT_STATE_DOCS = [
     "DEFECT_CLASSES.md",
     "DEFINITION_OF_DONE.md",
 ]
-STALE_TOKENS = ["17 831", "576/576", "658/658", "183 из 183", "239/239"]
+STALE_TOKENS = ["17 831", "576/576", "658/658", "183 из 183", "239/239", "119 919", "119,919"]
 # Ключевые числа: (русская запись, английская запись). EN-файл использует
 # запятую как разделитель разрядов, поэтому пары проверяются как есть.
 PARITY = [
     ("824 453", "824,453"),
     ("766 175", "766,175"),
     ("512 322", "512,322"),
-    ("119 919", "119,919"),
+    ("221 596", "221,596"),
     ("2 877", "2,877"),
     ("3 834", "3,834"),
     ("754/754", "754/754"),
@@ -138,6 +138,7 @@ def check_claims() -> tuple[int, int, int]:
 
     claims = load_csv(path)
     metrics = load_csv(PORTFOLIO / "METRICS.csv")
+    ci_runs = load_csv(PORTFOLIO / "CI_RUNS_2026-11-03.csv")
     media: list[dict[str, str]] = []  # счётчики аудитории сняты из портфолио по решению владельца
 
     seen: set[str] = set()
@@ -171,6 +172,8 @@ def check_claims() -> tuple[int, int, int]:
 
         if computable.startswith("metrics_sum:"):
             actual = metrics_value(metrics, computable.split(":", 1)[1])
+        elif computable.startswith("ci_sum:"):
+            actual = metrics_value(ci_runs, computable.split(":", 1)[1])
         elif computable.startswith("metrics_field:"):
             actual = metrics_field(metrics, computable.split(":", 1)[1])
         elif computable.startswith("media_value:"):
@@ -186,6 +189,30 @@ def check_claims() -> tuple[int, int, int]:
     return counts["CONFIRMED"], counts["DERIVED"], counts["UNPROVEN"]
 
 
+def check_ci_snapshot() -> None:
+    """Fail closed on missing/duplicated repos, mixed cutoffs or bad API counts."""
+    metrics = load_csv(PORTFOLIO / "METRICS.csv")
+    rows = load_csv(PORTFOLIO / "CI_RUNS_2026-11-03.csv")
+    expected = {row["repository"] for row in metrics if (row.get("ci_runs") or "0").isdigit()
+                and int(row["ci_runs"]) > 0}
+    names = [row.get("repository") for row in rows]
+    if len(names) != len(set(names)) or set(names) != expected:
+        fail("CI_RUNS: дубликаты или не все 10 репозиториев из METRICS.csv")
+    for row in rows:
+        if row.get("from_utc") != "2026-01-01T00:00:00Z" or row.get("through_utc") != "2026-11-03T21:05:16Z":
+            fail("CI_RUNS: несовместимые границы временного среза")
+        for column in ("visible_runs", "api_requests"):
+            value = (row.get(column) or "").strip()
+            if not value.isdigit() or int(value) < 1:
+                fail(f"CI_RUNS: неверное значение {column} для {row.get('repository')}")
+    try:
+        calls = sum(int(row["api_requests"]) for row in rows)
+    except (KeyError, ValueError):
+        calls = -1
+    if calls != 348:
+        fail(f"CI_RUNS: количество API-вызовов должно равняться 348, получено {calls}")
+
+
 def check_index() -> None:
     index = (PORTFOLIO / "README.md").read_text(encoding="utf-8")
     for path in sorted(PORTFOLIO.glob("*.md")):
@@ -193,7 +220,7 @@ def check_index() -> None:
             continue
         if path.name not in index:
             fail(f"README.md: не указан {path.name}")
-    for extra in ("CLAIMS.csv", "DEFINITION_OF_DONE.md", "tools/check_claims.py", "tools/measure_defense.py"):
+    for extra in ("CLAIMS.csv", "CI_RUNS_2026-11-03.csv", "DEFINITION_OF_DONE.md", "tools/check_claims.py", "tools/measure_defense.py", "tools/measure_ci_runs.py"):
         if extra not in index:
             fail(f"README.md: не указан {extra}")
 
@@ -241,6 +268,7 @@ def check_parity() -> None:
 
 def main() -> int:
     confirmed, derived, unproven = check_claims()
+    check_ci_snapshot()
     check_index()
     check_links()
     check_stale()

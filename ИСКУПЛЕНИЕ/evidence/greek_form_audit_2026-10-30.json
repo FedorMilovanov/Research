@@ -201,5 +201,12 @@
   "Евр|2|9": "τὸν δὲ βραχύ τι παρ’ ἀγγέλους ἠλαττωμένον βλέπομεν Ἰησοῦν διὰ τὸ πάθημα τοῦ θανάτου δόξῃ καὶ τιμῇ ἐστεφανωμένον, ὅπως χωρὶς θεοῦ ὑπὲρ παντὸς γεύσηται θανάτου.",
   "1Тим|4|10": "εἰς τοῦτο γὰρ κοπιῶμεν καὶ ὀνειδιζόμεθα, ὅτι ἠλπίκαμεν ἐπὶ θεῷ ζῶντι, ὅς ἐστιν σωτὴρ πάντων ἀνθρώπων, μάλιστα πιστῶν.",
   "Рим|5|18": "Ἄρα οὖν ὡς δι’ ἑνὸς παραπτώματος εἰς πάντας ἀνθρώπους εἰς κατάκριμα, οὕτως καὶ δι’ ἑνὸς δικαιώματος εἰς πάντας ἀνθρώπους εἰς δικαίωσιν ζωῆς·"
+ },
+ "historicalNotice": {
+  "status": "HISTORICAL_SNAPSHOT",
+  "explainedOn": "2026-11-02",
+  "scope": "Describes the pre-synchronization drafts, not their present text. Findings and counts are preserved, not silently relabelled as current.",
+  "currentRepairRecord": "ИСКУПЛЕНИЕ/evidence/synchronization_2026-11-02.json",
+  "verificationBoundary": "Current digital witness checks and local inherited-source comparisons are distinguished in that record. No new claim of printed-page verification."
  }
 }

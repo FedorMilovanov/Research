@@ -19,12 +19,12 @@ main: верно для своей среды, бесполезно как св�
                 ОТКАЗАТЬ и назвать причину словами про shallow/недостающую ссылку. Молчаливый PASS в
                 такой среде — тот же грех, что и тихое «совпало» над пустым обходом; шаг и поставлен,
                 чтобы молчание не вернулось вместе с починкой.
-  E4 отставание полная история, но origin/main отведён назад на 40 коммитов. Направление важно:
-                рост main (E2) для аудита sha-ссылок монотонен — ранее достижимое остаётся
-                достижимым, — а откат немонотонен, и только он и проверяет, что «живых ссылок 64»
-                не превращается в тихую пересъёмку по новому положению ссылки. Ожидание: обе проверки
-                красные И называют среду словом (недостижимый объект), а `--selfcheck` замыкающего
-                порядка не объявляет зелёного состояния.
+  E4 отставание полная история, но origin/main отведён назад до первого доступного доказуемого
+                нарушения: как минимум один SHA-токен, прежде достижимый из origin/main,
+                стал недостижим. Дистанция НЕ задана константой и выбирается по фактическому
+                реестру и Git-графу. Если такую среду построить нельзя, это отказ от фикстуры
+                (код 2), а не ложное подтверждение дефекта. Ожидание: оба валидатора находят
+                расхождение реестра SHA; замыкающий порядок отказывается объявить PASS.
 
 Употребление: `python3 -B scripts/atonement_history_perturbation_probe.py [ref] [--selftest] [--keep]`.
 ref — тот репозиторий, в котором лежит проб (по умолчанию его HEAD), поэтому вызов из чистого клона
@@ -48,6 +48,7 @@ ref — тот репозиторий, в котором лежит проб (п
 from __future__ import annotations
 
 import argparse
+import bisect
 import hashlib
 import json
 import re
@@ -62,9 +63,8 @@ RESHOOT = "scripts/atonement_reshoot_state.py"
 GATE = "scripts/validate_atonement_corpus_integrity.py"
 CORPUS_REL = "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json"
 CLOSER = "scripts/atonement_round_close.py"
-# на сколько коммитов отводить origin/main назад в E4: довольно много, чтобы число объектов
-# наверняка шевельнулось, и довольно мало, чтобы не утащить ссылку за пределы снятых деревьев
-MAIN_BACK = 40
+# Точный фильтр правила 20 в гейте и пересъёмщике: только строковые значения JSON.
+SHA_TOKEN = re.compile(r"\b[0-9a-f]{7,40}\b")
 ENV_TOKEN = re.compile(r"shallow|недоста|недостижим|нет локального|не видит ни одного коммита|"
                        r"пересъём невозможен", re.I)
 
@@ -75,6 +75,66 @@ def git(cwd, *args, check=True):
     if check and r.returncode != 0:
         raise RuntimeError(f"git {' '.join(args)} → {r.returncode}: {r.stderr.strip()[:160]}")
     return r.stdout.strip()
+
+
+def corpus_sha_tokens(src):
+    """SHA-токены канонического JSON: повторяем фильтр правила 20, не угадываем SHA по имени поля."""
+    registry = json.loads((Path(src) / CORPUS_REL).read_text(encoding="utf-8"))
+    result = set()
+
+    def walk(value):
+        if isinstance(value, dict):
+            for child in value.values():
+                walk(child)
+        elif isinstance(value, list):
+            for child in value:
+                walk(child)
+        elif isinstance(value, str):
+            for token in SHA_TOKEN.findall(value):
+                if len(token) in (7, 8, 40) and not token.isdigit():
+                    result.add(token)
+
+    walk(registry)
+    return result
+
+
+def reachable_tokens(cwd, commit, tokens):
+    """Те же Git-объекты и prefix semantics, что у правила 20: только достижимые из ref."""
+    ids = sorted(line.split(" ", 1)[0] for line in git(cwd, "rev-list", "--objects", commit).splitlines())
+    if not ids:
+        raise RuntimeError("E4: git rev-list --objects пуст — нельзя доказать достижимость SHA")
+    live = set()
+    for token in tokens:
+        idx = bisect.bisect_left(ids, token)
+        if idx < len(ids) and ids[idx].startswith(token):
+            live.add(token)
+    return live
+
+
+def select_e4_rollback(cwd, base):
+    """Подбирает откат по реальным пинам. Не принимает изменение числа объектов за доказательство."""
+    pins = corpus_sha_tokens(cwd)
+    live = reachable_tokens(cwd, base, pins)
+    if not live:
+        raise RuntimeError("E4: нет ни одного подтверждённо живого SHA-пина в исходном origin/main")
+    chain = git(cwd, "rev-list", "--first-parent", base).splitlines()
+    if len(chain) < 2:
+        raise RuntimeError("E4: нет предка origin/main для доказательного отката")
+    offsets = []
+    distance = 1
+    while distance < len(chain):
+        offsets.append(distance)
+        distance *= 2
+    if offsets[-1] != len(chain) - 1:
+        offsets.append(len(chain) - 1)
+    for offset in offsets:
+        ancestor = chain[offset]
+        lost = live - reachable_tokens(cwd, ancestor, live)
+        if lost:
+            return ancestor, offset, sorted(lost), len(live)
+    raise RuntimeError(
+        "E4: даже старейший первый предок не лишает реестр живого SHA-пина; "
+        "фикстура недоказуема, требуется иной контролируемый граф (не ложное FAIL гейта)")
 
 
 def run_tool(cwd, script, *args):
@@ -116,6 +176,15 @@ def make_clone(src, dest, *, depth=None, want_main=True):
     if want_main and not git(dest, "rev-parse", "--verify", "-q", "origin/main", check=False):
         git(dest, "fetch", "-q", "origin", "+refs/heads/main:refs/remotes/origin/main", check=False)
     if want_main and not git(dest, "rev-parse", "--verify", "-q", "origin/main", check=False):
+        # PR merge checkout бывает detached HEAD без refs/heads/main. Источник хранит
+        # новый main только в refs/remotes/origin/main; локальный file://clone
+        # не переносит такой ref автоматически, а его объект может быть НЕ предком HEAD
+        # (если main продвинулся между созданием test-merge и запуском пробы).
+        # Догружаем именно объявленную ссылку с объектами через Git, не рисуем ref
+        # update-ref'ом до подтверждения его существования и не ослабляем контроль E3.
+        git(dest, "fetch", "-q", "origin",
+            "+refs/remotes/origin/main:refs/remotes/origin/main", check=False)
+    if want_main and not git(dest, "rev-parse", "--verify", "-q", "origin/main", check=False):
         # источник может знать main только как remote-tracking (клон по HEAD, как в песочнице этого
         # круга, или чистый клон, где local `main` не создаётся); тогда указатель переносится явно —
         # объект в клоне с полной историей уже есть, а отказать здесь означало бы назвать неполной
@@ -142,7 +211,7 @@ class Env:
         return {"среда": self.name, "гейт": gcode, "пересъём": rcode,
                 "строки": [l.strip() for l in (gout + "\n" + rout).split("\n")
                            if l.lstrip().startswith("- ") or "PASS" in l or "FAIL" in l],
-                "вывод": gout + "\n" + rout}
+                "гейт_вывод": gout, "пересъём_вывод": rout, "вывод": gout + "\n" + rout}
 
     def snapshot_objects(self):
         out = git(self.path, "rev-list", "--objects", "origin/main")
@@ -168,8 +237,8 @@ def build(src, work):
     # сравнение меряло бы разницу клонирования, а не задуманное возмущение истории
     make_clone(src, e2)
     base = git(e2, "rev-parse", "--verify", "origin/main")
-    git(e2, "branch", "-f", "probe-main", base)
-    git(e2, "checkout", "-q", "probe-main")
+    # Synthetic history belongs to this disposable clone, not an authoring branch.
+    git(e2, "checkout", "-q", "--detach", base)
     git(e2, "-c", "user.name=probe", "-c", "user.email=probe@invalid", "commit", "-q", "--allow-empty",
         "-m", "проб круга 65: main вырос на коммит, дерево проверяемого ref не изменилось")
     new = git(e2, "rev-parse", "HEAD")
@@ -178,21 +247,26 @@ def build(src, work):
     e3 = Path(work) / "e3"
     make_clone(src, e3, depth=1, want_main=False)
     git(e3, "checkout", "-q", head)
-    # E4 — зеркальное возмущение: не «главная ветка убежала вперёд», а «отстала на 40 коммитов».
-    # Смысл не в знаке, а в том, что история полная и все проверяемые коммиты на месте: отказывать
-    # здесь среда не вправе, а число, привязанное к положению `origin/main`, обязано было бы
-    # покраснеть. Усечение глубины для этой проверки годилось бы только если угадать, какой именно
-    # глубины хватит правилам гейта, — угадывать же расстояние до самого старого проверяемого
-    # коммита значит построить проверку, которая краснеет от календаря
+    # E4 сначала доказывает потерю реального живого SHA-пина, и только потом меняет ref.
+    # Сдвиг на фиксированные N коммитов не доказывает ничего о достижимости источников.
     e4 = Path(work) / "e4"
     make_clone(src, e4)
     git(e4, "checkout", "-q", head)
-    back = git(e4, "rev-parse", "--verify", f"origin/main~{MAIN_BACK}")
+    e4_base = git(e4, "rev-parse", "--verify", "origin/main")
+    if e4_base != base:
+        raise RuntimeError("E4: несогласованные базовые main в независимых клонах")
+    back, distance, lost, live_count = select_e4_rollback(e4, e4_base)
     git(e4, "update-ref", "refs/remotes/origin/main", back)
+    still_live = reachable_tokens(e4, "origin/main", corpus_sha_tokens(e4))
+    if any(token in still_live for token in lost):
+        raise RuntimeError("E4: нарушенный SHA-пин неожиданно остался достижим после смены ref")
+    note = (f"origin/main отведён назад на {distance} коммитов ({back[:7]}), "
+            f"доказуемо потеряно {len(lost)}/{live_count} живых SHA-пинов; "
+            f"пример: {lost[0]}")
     return (Env("E1 контроль", e1, "полная история, origin/main = base"),
             Env("E2 возмущение", e2, f"origin/main сдвинут на 1 коммит ({base[:7]} → {new[:7]})"),
             Env("E3 неполнота", e3, "клон глубины 1, origin/main отсутствует"),
-            Env("E4 отставание", e4, f"origin/main отведён назад на {MAIN_BACK} коммитов ({back[:7]})"))
+            Env("E4 отставание", e4, note))
 
 
 TRAP_FIELD = "обход" + "Видел" + "Объектов"
@@ -284,8 +358,8 @@ def decide(broken: bool, bad: int, nchecks: int) -> tuple:
         return 1, (f"ПРОБ ИСТОРИИ: {plural(bad, 'расхождение', 'расхождения', 'расхождений')} {bad} "
                    f"из {nchecks} {plural(nchecks, 'проверки', 'проверок', 'проверок')} — "
                    "среда собрана, вывод читается выше дословно")
-    return 0, ("ПРОБ ИСТОРИИ: PASS — ни одно сверяемое число не отреагировало ни на рост, ни на "
-               "откат истории; в средах, где проверить нельзя, отказ назван словами")
+    return 0, ("ПРОБ ИСТОРИИ: PASS — рост истории не меняет проверяемые числа, доказанная "
+               "потеря SHA-пина при откате отвергается обоими валидаторами; неполный клон отклонён")
 
 
 def verdicts() -> int:
@@ -349,6 +423,7 @@ def main() -> int:
     try:
         e1, e2, e3, e4 = build(src, work)
         print(f"проб истории: ref {head[:7]}, main {main_sha[:7]}, среды-клоны в {work.name}")
+        print("  E4 доказательство: " + e4.note)
         v1, v2, v3, v4 = e1.verdict(), e2.verdict(), e3.verdict(), e4.verdict()
         bad += check("E1 — контроль: гейт и пересъём зелёные",
                      v1["гейт"] == 0 and v1["пересъём"] == 0,
@@ -371,14 +446,18 @@ def main() -> int:
         n1, n2 = e1.snapshot_objects(), e2.snapshot_objects()
         bad += check("обход E2 действительно видит больше объектов (возмущение настоящее)", n2 > n1,
                      f"{n1} → {n2}")
-        # E4 — не «числа должны совпасть», а «отказ обязан быть назван». Живость sha-ссылки
-        # определяется достижимостью из main, так что в среде с отведённым назад `origin/main`
-        # аудит обязан краснеть: молча пересчитать «живых» с 64 до 30 и назвать это PASS — ровно тот
-        # грех, из-за которого круг 63 и терял доверие к числам. Зелёным здесь быть нечему
-        bad += check("E4 — отставший origin/main: обе проверки обязаны краснеть и назвать причину",
-                     (v4["гейт"] != 0 or v4["пересъём"] != 0) and ENV_TOKEN.search(v4["вывод"]),
-                     f"гейт {v4['гейт']}, пересъём {v4['пересъём']}, "
-                     + ("среда названа" if ENV_TOKEN.search(v4["вывод"]) else "молчит — это дефект"))
+        # Оба инструмента обязаны обнаружить именно повреждение SHA-аудита.
+        # Отрицательный код от посторонней ошибки здесь НЕ является доказательством.
+        e4_found = (v4["гейт"] != 0 and v4["пересъём"] != 0
+                    and "shaCitationAudit20261023" in v4["гейт_вывод"]
+                    and "shaCitationAudit20261023" in v4["пересъём_вывод"])
+        bad += check("E4 — доказуемо потерян живой SHA-пин, оба валидатора отвергают аудит",
+                     e4_found, f"гейт {v4['гейт']}, пересъём {v4['пересъём']}, "
+                     + ("оба обнаружили shaCitationAudit20261023"
+                        if e4_found else "нужен вывод обоих валидаторов"))
+        if not e4_found:
+            print("     · E4 гейт: " + v4["гейт_вывод"][-500:])
+            print("     · E4 пересъём: " + v4["пересъём_вывод"][-500:])
         n4 = e4.snapshot_objects()
         bad += check("обход E4 действительно видит меньше объектов (отставание настоящее)", n4 < n1,
                      f"{n1} → {n4}")

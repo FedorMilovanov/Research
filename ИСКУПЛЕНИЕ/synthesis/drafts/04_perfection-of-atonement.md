@@ -6,15 +6,15 @@
 > **Автор:** агент №4 (синтез), 2026-10-07. Редакторская основа — корпус `ИСКУПЛЕНИЕ/`.
 > **Маршрут:** вне минимального набора `../06_` §3 — slug не утверждён, не внедрять.
 
-## Опорные карточки (все с проверенными локаторами и правами)
+## Опорные карточки и отдельные ограничения проверки
 
 | Опора | Класс | Локатор | HOLD |
 |---|---|---|---|
-| Писание, Синодальный перевод | A1 (как перевод; сверка по `../../BIBLE_CORPUS/` перед Product-gate) | стихи в тексте | нет на права; оговорка перевода обязательна |
-| `../03_BIBLICAL_CORPUS_AND_REDEMPTION_VOCABULARY.md` | research-карта корпуса | §V: Евр. 7–10 — A/perfection+nature; §VI группировка | PUBLICATION_HOLD |
-| `../13_DORT_II_CALVIN_OWEN_EXTENT.md` | исторический контроль | §1: Дорт II.3 — по номеру статьи | PUBLICATION_HOLD; исповедание — по номеру, без длинных цитат |
-| `../10_MURRAY_RAA_ARGUMENT_MAP_PRIVATE_STUDY.md` | B1 (private study) | §1: Мюррей I.3 — **пересказ с пометкой, не цитата** | RIGHTS_HOLD + PUBLICATION_HOLD; не quote-safe |
-| `../15_CALVIN_III24_AND_DORT_II_LOCATORS.md` | research-локаторы | §B: Дорт II.3/II.4 + Schaff Latin chunk 165 | PUBLICATION_HOLD; LOCATOR_HOLD на page издания |
+| Писание, Синодальный перевод | A1 для текста, не для его толкования | [цифровой контроль отмеченных цитат, 2026-11-02](../../evidence/source_controls_2026-11-02.json); `BIBLE_CORPUS` — политика прав, не текст Библии | печатные страницы и полный Product-корпус этой сверкой не утверждаются |
+| `../../03_BIBLICAL_CORPUS_AND_REDEMPTION_VOCABULARY.md` | research-карта корпуса | §V: Евр. 7–10 — A/perfection+nature; §VI группировка | PUBLICATION_HOLD |
+| `../../13_DORT_II_CALVIN_OWEN_EXTENT.md` | исторический контроль | §1: Дорт II.3 — по номеру статьи | PUBLICATION_HOLD; исповедание — по номеру, без длинных цитат |
+| `../../10_MURRAY_RAA_ARGUMENT_MAP_PRIVATE_STUDY.md` | B1 (private study) | §1: Мюррей I.3 — **пересказ с пометкой, не цитата** | RIGHTS_HOLD + PUBLICATION_HOLD; не quote-safe |
+| `../../15_CALVIN_III24_AND_DORT_II_LOCATORS.md` | research-локаторы | §B: Дорт II.3/II.4 + Schaff Latin chunk 165 | PUBLICATION_HOLD; LOCATOR_HOLD на page издания |
 | Мюррей, Пакер, Гибсон и др. (цитаты) | B1 | **не используются как цитаты** | RIGHTS_HOLD — ни одной цитаты |
 
 **Правило цитирования в этом черновике:** Писание — короткие цитаты, Синодальный перевод, с пометкой «(Синодальный)». Исповедания — только номера статей. Мюррей — только пересказ через research-файл `../10_` с пометкой B1. Современные авторы — ни одной цитаты. Всё остальное — своими словами со ссылкой на файл корпуса.

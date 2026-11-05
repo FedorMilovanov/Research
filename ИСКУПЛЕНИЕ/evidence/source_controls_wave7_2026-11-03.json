@@ -1,0 +1,742 @@
+{
+  "schemaVersion": 1,
+  "id": "ATONEMENT-WAVE7-CYRIL-TRANSMISSION-2026-11-03",
+  "recordedAtUtc": "2026-11-03T11:40:33.381239+00:00",
+  "baselineCommit": "27eeb240196805f9ca08d3553a22b849560ba6a5",
+  "status": "CANDIDATE_GREEK_IDENTIFIED_PRINT_AND_ATTRIBUTION_OPEN",
+  "c25": "OPEN",
+  "o11": "DISCOVERY_AND_EDITORIAL_REVIEW_DONE_ORIGINAL_VERIFICATION_OPEN",
+  "interpretationStatus": "ARGUED_PROVISIONAL_NOT_MACHINE_PROOF",
+  "fullWorksRead": false,
+  "greekOriginalVerified": false,
+  "printedCollationClaimed": false,
+  "criticalAttributionSettled": false,
+  "syriacTextRead": false,
+  "latinPraefatioDirectlyRead": false,
+  "quastenDirectlyRead": false,
+  "manuscriptsInspected": false,
+  "digitalDiscrepanciesAreAncientVariants": false,
+  "twoDigitalFilesAreIndependentWitnesses": false,
+  "zeroSearchProvesAbsence": false,
+  "corpusDefaultEditionAppliesToEveryRow": false,
+  "rawHtmlAcquired": false,
+  "publicationEligible": false,
+  "mergePerformed": false,
+  "doctrinalClosure": false,
+  "englishCreationReadingErased": false,
+  "oldMissingPackagesReplayed": false,
+  "humanReadingMeasured": false,
+  "statistics": {
+    "gitObjects": 11,
+    "zipMembers": 2,
+    "controlledArtifacts": 13,
+    "greekCandidateContexts": 2,
+    "digitalComparisonPoints": 4,
+    "renderedWebObservations": 3,
+    "verifiedGreekOriginalPassages": 0
+  },
+  "files": [
+    {
+      "id": "OG-README",
+      "kind": "git_blob",
+      "repo": "open-greek/open-greek-corpus",
+      "commit": "a152e69ef26c1b9f9da2218d303f36f5ba4ab5b9",
+      "path": "README.md",
+      "gitBlob": "2ee93af722fcbd23c9ae20e2e94f5b6f27560a03",
+      "sha256": "1a3b65cdd707d4b5cd09406ddefafa3e6a488b5e3ec94ffccf7986b99d21f9ff",
+      "bytes": 3162,
+      "externalRelativePath": "open-greek--open-greek-corpus/README.md",
+      "byteVerifiedAtUtc": "2026-11-03T11:08:46.109488+00:00",
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "quoteSafe": false,
+      "publicationEligible": false,
+      "locatorScope": "Exact acquired digital file/member only; not printed pagination, a manuscript, or a reliable Cyril quotation.",
+      "classScope": "Discovery/unverified representation for the Cyril transmission question; byte access does not promote it to an authenticated primary Greek text.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ]
+    },
+    {
+      "id": "OG-LICENSE",
+      "kind": "git_blob",
+      "repo": "open-greek/open-greek-corpus",
+      "commit": "a152e69ef26c1b9f9da2218d303f36f5ba4ab5b9",
+      "path": "LICENSE",
+      "gitBlob": "8259e21ad92848217dcdfd4067d8a919765eb4a7",
+      "sha256": "a22ef97184528a0a113b5d21b478af69d32b75daf70885acc02e63bf806e4141",
+      "bytes": 1277,
+      "externalRelativePath": "open-greek--open-greek-corpus/LICENSE",
+      "byteVerifiedAtUtc": "2026-11-03T11:08:46.511638+00:00",
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "quoteSafe": false,
+      "publicationEligible": false,
+      "locatorScope": "Exact acquired digital file/member only; not printed pagination, a manuscript, or a reliable Cyril quotation.",
+      "classScope": "Discovery/unverified representation for the Cyril transmission question; byte access does not promote it to an authenticated primary Greek text.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ]
+    },
+    {
+      "id": "OG-JOHN",
+      "kind": "git_blob",
+      "repo": "open-greek/open-greek-corpus",
+      "commit": "a152e69ef26c1b9f9da2218d303f36f5ba4ab5b9",
+      "path": "data/corpus/cyrillus-theology.commentarii-in-joannem.jsonl",
+      "gitBlob": "fb08ee551b2b44b58814f8a26b65f45b73159593",
+      "sha256": "2b5ae4204ca5cb142375465ce41357719aad44bdb315fd08a12da4d208870613",
+      "bytes": 5420775,
+      "externalRelativePath": "open-greek--open-greek-corpus/data/corpus/cyrillus-theology.commentarii-in-joannem.jsonl",
+      "byteVerifiedAtUtc": "2026-11-03T11:08:47.854900+00:00",
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "quoteSafe": false,
+      "publicationEligible": false,
+      "locatorScope": "Exact acquired digital file/member only; not printed pagination, a manuscript, or a reliable Cyril quotation.",
+      "classScope": "Discovery/unverified representation for the Cyril transmission question; byte access does not promote it to an authenticated primary Greek text.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ]
+    },
+    {
+      "id": "OG-CALFA-NOTE",
+      "kind": "git_blob",
+      "repo": "open-greek/open-greek-corpus",
+      "commit": "a152e69ef26c1b9f9da2218d303f36f5ba4ab5b9",
+      "path": "data/reference/calfa-pg73/README.md",
+      "gitBlob": "a42634b4b924664b227e0d7af50a4f043352b196",
+      "sha256": "7efd309e98bc2f416516bc1580241d6ab3447490625bfed0853d48587284b3c3",
+      "bytes": 888,
+      "externalRelativePath": "open-greek--open-greek-corpus/data/reference/calfa-pg73/README.md",
+      "byteVerifiedAtUtc": "2026-11-03T11:08:48.370925+00:00",
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "quoteSafe": false,
+      "publicationEligible": false,
+      "locatorScope": "Exact acquired digital file/member only; not printed pagination, a manuscript, or a reliable Cyril quotation.",
+      "classScope": "Discovery/unverified representation for the Cyril transmission question; byte access does not promote it to an authenticated primary Greek text.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ]
+    },
+    {
+      "id": "OG-REOCR-META",
+      "kind": "git_blob",
+      "repo": "open-greek/open-greek-corpus",
+      "commit": "a152e69ef26c1b9f9da2218d303f36f5ba4ab5b9",
+      "path": "data/inventory/reocr_provenance.json",
+      "gitBlob": "522a461209fa5761b3152d75bafbe93ccca34705",
+      "sha256": "5742bb15a1ed9ebeb22939dec614309e2529d9323d8caf68856a476a65eac674",
+      "bytes": 30885,
+      "externalRelativePath": "open-greek--open-greek-corpus/data/inventory/reocr_provenance.json",
+      "byteVerifiedAtUtc": "2026-11-03T11:08:48.765357+00:00",
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "quoteSafe": false,
+      "publicationEligible": false,
+      "locatorScope": "Exact acquired digital file/member only; not printed pagination, a manuscript, or a reliable Cyril quotation.",
+      "classScope": "Discovery/unverified representation for the Cyril transmission question; byte access does not promote it to an authenticated primary Greek text.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ]
+    },
+    {
+      "id": "OG-GAP-REQUEST",
+      "kind": "git_blob",
+      "repo": "open-greek/open-greek-corpus",
+      "commit": "a152e69ef26c1b9f9da2218d303f36f5ba4ab5b9",
+      "path": "data/ocr_requests/cyril-john-missing-pg74.json",
+      "gitBlob": "37f6134979faa070bd602df905cb78e0f5f70317",
+      "sha256": "d8fdf926338b676200402d896fed520f36b3036ef0fa7367c51edf6688f9087b",
+      "bytes": 1679,
+      "externalRelativePath": "open-greek--open-greek-corpus/data/ocr_requests/cyril-john-missing-pg74.json",
+      "byteVerifiedAtUtc": "2026-11-03T11:08:49.208837+00:00",
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "quoteSafe": false,
+      "publicationEligible": false,
+      "locatorScope": "Exact acquired digital file/member only; not printed pagination, a manuscript, or a reliable Cyril quotation.",
+      "classScope": "Discovery/unverified representation for the Cyril transmission question; byte access does not promote it to an authenticated primary Greek text.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ]
+    },
+    {
+      "id": "OGL-README",
+      "kind": "git_blob",
+      "repo": "OpenGreekAndLatin/greek-dev",
+      "commit": "0264701dbef6e02a49048c04109512c43f4eba5f",
+      "path": "README.md",
+      "gitBlob": "f08793a54b04ec49c545c046f9deb04a52b1d612",
+      "sha256": "fdb31ce7bc02bbc1fa22d5859e17f58d83e65305de0112b02c03e5df9e2ae2f9",
+      "bytes": 13372,
+      "externalRelativePath": "OpenGreekAndLatin--greek-dev/README.md",
+      "byteVerifiedAtUtc": "2026-11-03T11:08:49.641669+00:00",
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "quoteSafe": false,
+      "publicationEligible": false,
+      "locatorScope": "Exact acquired digital file/member only; not printed pagination, a manuscript, or a reliable Cyril quotation.",
+      "classScope": "Discovery/unverified representation for the Cyril transmission question; byte access does not promote it to an authenticated primary Greek text.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ]
+    },
+    {
+      "id": "OGL-INVENTORY",
+      "kind": "git_blob",
+      "repo": "OpenGreekAndLatin/greek-dev",
+      "commit": "0264701dbef6e02a49048c04109512c43f4eba5f",
+      "path": "inventory.json",
+      "gitBlob": "b0c45cf8afa89ab48467255940419ae95691be09",
+      "sha256": "605be863adb6a2a70c4315fed65c24969fb6dbc64f4ded136f346be23b9e4e8a",
+      "bytes": 21470,
+      "externalRelativePath": "OpenGreekAndLatin--greek-dev/inventory.json",
+      "byteVerifiedAtUtc": "2026-11-03T11:08:50.026830+00:00",
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "quoteSafe": false,
+      "publicationEligible": false,
+      "locatorScope": "Exact acquired digital file/member only; not printed pagination, a manuscript, or a reliable Cyril quotation.",
+      "classScope": "Discovery/unverified representation for the Cyril transmission question; byte access does not promote it to an authenticated primary Greek text.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ]
+    },
+    {
+      "id": "OGL-SUBMODULES",
+      "kind": "git_blob",
+      "repo": "OpenGreekAndLatin/greek-dev",
+      "commit": "0264701dbef6e02a49048c04109512c43f4eba5f",
+      "path": ".gitmodules",
+      "gitBlob": "1f2ec3e71149623193f3e3eb278ee337abb312f0",
+      "sha256": "9b96fab62be7cee1a3666917da915d7297c00f8f5842a0fe6b2ae59dc13d0ded",
+      "bytes": 17173,
+      "externalRelativePath": "OpenGreekAndLatin--greek-dev/.gitmodules",
+      "byteVerifiedAtUtc": "2026-11-03T11:08:50.417927+00:00",
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "quoteSafe": false,
+      "publicationEligible": false,
+      "locatorScope": "Exact acquired digital file/member only; not printed pagination, a manuscript, or a reliable Cyril quotation.",
+      "classScope": "Discovery/unverified representation for the Cyril transmission question; byte access does not promote it to an authenticated primary Greek text.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ]
+    },
+    {
+      "id": "OG-REGISTRY",
+      "kind": "git_blob",
+      "repo": "open-greek/open-greek-corpus",
+      "commit": "a152e69ef26c1b9f9da2218d303f36f5ba4ab5b9",
+      "path": "data/source_registry.json",
+      "gitBlob": "1bbe5bedb39dc508e3fe73aa844e844dfdd58ccf",
+      "sha256": "1f560628bafae42af6fa2b3a1b220d879db87b1078148090c6f73e2fe3b0d0e7",
+      "bytes": 9266800,
+      "externalRelativePath": "open-greek--open-greek-corpus/data/source_registry.json",
+      "byteVerifiedAtUtc": "2026-11-03T11:25:50.335325+00:00",
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "quoteSafe": false,
+      "publicationEligible": false,
+      "locatorScope": "Exact acquired digital file/member only; not printed pagination, a manuscript, or a reliable Cyril quotation.",
+      "classScope": "Discovery/unverified representation for the Cyril transmission question; byte access does not promote it to an authenticated primary Greek text.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ]
+    },
+    {
+      "id": "PG-C-ZIP",
+      "kind": "git_blob",
+      "repo": "JLCPutmans/Patrologia-Graeca-PG-txt-files",
+      "commit": "16cafa1381e9fac54a54df2d8910fe75adfebdff",
+      "path": "PG-C.zip",
+      "gitBlob": "5d77269c5cf1f2cb1510a935a7915dc60ba5cccc",
+      "sha256": "79d98f70b6fe7d8dd1dee1221a08be5d3a9b1a8152ccb4b96493839e7a7d9a9c",
+      "bytes": 23866213,
+      "externalRelativePath": "JLCPutmans--Patrologia-Graeca-PG-txt-files/PG-C.zip",
+      "byteVerifiedAtUtc": "2026-11-03T11:16:35.350100+00:00",
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "quoteSafe": false,
+      "publicationEligible": false,
+      "locatorScope": "Exact acquired digital file/member only; not printed pagination, a manuscript, or a reliable Cyril quotation.",
+      "classScope": "Discovery/unverified representation for the Cyril transmission question; byte access does not promote it to an authenticated primary Greek text.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "id": "AEGEAN-JOHN",
+      "kind": "zip_member",
+      "containerId": "PG-C-ZIP",
+      "member": "CYRIL-ALEXANDRIEN/Commentarii in Joannem.pdf.txt",
+      "sha256": "d967a3e4f407c93360f58dcbfcc7c943a651a4550978a2bbc3795b1f7b293bc8",
+      "bytes": 4906768,
+      "externalRelativePath": "JLCPutmans--Patrologia-Graeca-PG-txt-files/extracted/CYRIL-ALEXANDRIEN/Commentarii in Joannem.pdf.txt",
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "quoteSafe": false,
+      "publicationEligible": false,
+      "locatorScope": "Exact acquired digital file/member only; not printed pagination, a manuscript, or a reliable Cyril quotation.",
+      "classScope": "Discovery/unverified representation for the Cyril transmission question; byte access does not promote it to an authenticated primary Greek text.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "id": "AEGEAN-ADDENDA",
+      "kind": "zip_member",
+      "containerId": "PG-C-ZIP",
+      "member": "CYRIL-ALEXANDRIEN/Commentarii in Joannem Additamenta.pdf.txt",
+      "sha256": "c4fe54eb3bd416cc8ddfd55ad1e2259332fe998931fb9cd5a5480e1ba205265a",
+      "bytes": 22197,
+      "externalRelativePath": "JLCPutmans--Patrologia-Graeca-PG-txt-files/extracted/CYRIL-ALEXANDRIEN/Commentarii in Joannem Additamenta.pdf.txt",
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "quoteSafe": false,
+      "publicationEligible": false,
+      "locatorScope": "Exact acquired digital file/member only; not printed pagination, a manuscript, or a reliable Cyril quotation.",
+      "classScope": "Discovery/unverified representation for the Cyril transmission question; byte access does not promote it to an authenticated primary Greek text.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "id": "OG-JN11",
+      "sourceFile": "OG-JOHN",
+      "selector": {
+        "kind": "jsonl_loci",
+        "loci": [
+          "pg074_0038.5",
+          "pg074_0038.6",
+          "pg074_0039.1",
+          "pg074_0039.2",
+          "pg074_0039.3",
+          "pg074_0039.4"
+        ]
+      },
+      "rows": [
+        {
+          "line": 673,
+          "urn": "cyrillus-theology.commentarii-in-joannem",
+          "source": "ocr",
+          "license": "PD",
+          "edition": "migne-ocr-qwen36",
+          "locus": "pg074_0038.5",
+          "text": "D Εἰς δὲ τις δὲ αὐτῶν ἀρχιερεὺς ὢν τοῦ ἐνιαυτοῦ ἐκείνου , εἶπε , καὶ τὰ ἕξης ."
+        },
+        {
+          "line": 674,
+          "urn": "cyrillus-theology.commentarii-in-joannem",
+          "source": "ocr",
+          "license": "PD",
+          "edition": "migne-ocr-qwen36",
+          "locus": "pg074_0038.6",
+          "text": "Ἄλλ ’ ὅπερ Ἠλεγεν μὲν , ὅπερ λάθρα ἐμελέτων Ἰουδαῖοι ποιῆσαι , τοῦτο φανερῶς αὐτοῖς ὁ τούτων ἀρχιερεὺς συμβουλεύει ποιεῖν , καὶ φονεῦσαι τὸν Χριστὸν , ὡς ὑπὲρ τοῦ ἔθνους τοῦτο λέγων , καίπερ τὸ ἔθνος ἀδίκον ( 2 ) . Πράγμα δὲ ἀληθὲς φησιν , οὐχ ἐκ τῆς αὐτῶν δυστροπίας κατωρθωμένον , ἀλλ ’ ἐκ τῆς τοῦ Θεοῦ δυνάμεως καὶ σοφίας . Οἱ μὲν γὰρ ἐπ ’ ἑλέθρω ἰδίῳ τὸν Χριστὸν ἀπέκτειναν , ὁ δὲ θανατωθεὶς σαρκί , πάντων ἡμῖν γέγονεν αἴτιος τῶν ἀγαθῶν ."
+        },
+        {
+          "line": 675,
+          "urn": "cyrillus-theology.commentarii-in-joannem",
+          "source": "ocr",
+          "license": "PD",
+          "edition": "migne-ocr-qwen36",
+          "locus": "pg074_0039.1",
+          "text": "Ἀπωλείαν δὲ τοῦ ἔθνους καλεῖ, τὸ ὑπὸ χεῖρα γενέ-σθαι τὴν Ῥωμαϊκήν, καὶ ἀπολεῖσθαι τὴν τοῦ νόμου σκιάν ἣπερ ἀνατρέψει ζητοῦντες, ὑπέμειναν. Ἔξ ἀνόμου μὲν οὖν εἰπε γνώμης ὁ Καϊάφας ὁ εἰπεν, ὅμως ὁ λόγος γέγονε πράγματις ἀληθους ἐρμηνευ-τικὸς, ὡς ἐν τάξει προσιζενχὲς προφητείας. Ἄς γὰρ γέγονεν αἴτιος ἀγαθῶν ὁ τοῦ Χριστοῦ θάνατος, προαναφωνεῖ λέγων ὁ οὐκ οἶδε, καὶ δοξάζων τὸν Θεὸν ὡς ὁ Βαλαὰμ κατὰ ἀνάγκην, ἐπειδὴ ἦν ἔχων τὸ ἱερατικὸν ἀξίωμα, ὡς οὐκ αὐτῷ δοθείσης τῆς προφητείας, ἀλλὰ τῷ τῆς ἱερσύνης χρίσματι [al. σχήματι] ἤτοι ἐξ ὧν ὕστερον οὐ εἰρήμενα γέγονεν ὑπὸ τοῦ Καϊάφα καὶ ἀπέβη, οὐ πάντως λαβόντος προφητικὴν χάριν. Εἰκὼς γὰρ ὅτι ὁ λαλοῦσι τινες γίνεται· εἰ καὶ μὴ εἰδότες ὅτι πάντως ἔσται, λαλοῦ-σιν. Ὁ μὲν οὖν Καϊάφας ὕπερ μόνων Ἰουδαίων ἔλεγεν ἐσεσθαι τὸν Χριστοῦ θάνατον, ὁ δὲ ὑπὲρ πά- B σης αὐτὸν φησι γενέσθαι τῆς ἀνθρωπότητος. Γένος μὲν γὰρ καὶ τέκνα Θεοῦ ἀπαντες ὁνοματίζομεν, καθὸ πάντων ἐστὶ Πατὴρ τρώφῃ δημιουργικῇ γεν-νήσας, καὶ ἀγαθῶν ὅσπερ εἰς ὑπαρξιν ὁ οὐκ δυτα (1)· ἔτι δὲ καὶ ὅτι κατ’ εἰκόνα αὐτοῦ ἐτιμήθη-μεν γεγονότες ἐξ ἀρχῆς, καὶ ἀρχεῖν λαχόντες τῶν ἐπὶ γῆς, καὶ εὐτόνως τὴν ἀρετὴν ἐργάζομενοι. Ἄλλ’ ἐνσκόρτισεν ὁ Σατανᾶς, ἐν ταυτῷ μείναι μὴ συγχω-ρήσας, καὶ ἀποδουλοκήσας πολυτρόπως τῆς εἰς Θεὸν προεσθείας τὸν ἀνθρώπων· συνεισάγαγε δὲ πάλιν καὶ συνεκάθιμε πάντας διὰ τῆς πίστεως ὁ Χριστὸς εἰς μίαν αὐλὴν καὶ τὴν Ἐκκλησίαν, καὶ ὑπὸ ζυγὸν ἕνα παρεσκευάσε, πάντων ἐν γεγονότων, Ἰουδαίων, Ἑλ-λήνων, βαρβάρων, Σκυθῶν, καὶ εἰς ἕνα καινὸν ἄν-θρωπον ἀναπλαττομένων, καὶ προσκυνούντων ἕνα C Θεόν."
+        },
+        {
+          "line": 676,
+          "urn": "cyrillus-theology.commentarii-in-joannem",
+          "source": "ocr",
+          "license": "PD",
+          "edition": "migne-ocr-qwen36",
+          "locus": "pg074_0039.2",
+          "text": "Οὐχ ὡς (2) κατὰ πνεῦμα προφητείας ὑπὸ Καϊάφα ἐρρέθη· οὐ γὰρ τὸ πνεῦμα τὸ προφητικὸν ἐπιβουλήν συνίστησι κατὰ Χριστοῦ, ἀλλὰ κατὰ τινα σωτηρίαν τῷ ἀληθεῖ καὶ γνησιωμένῳ πράγματι συνδραμὼν συγχωρήθη αὐτῷ τῆς τοιαύτης ἐπιψάσαι καθ’ ὅτι ἦν ἀρχιερεὺς, ἵνα διὰ τοῦ στόματος αὐτοῦ φανερὸν γένηται τὸ κεχρυμμένον τοῖς ἀνθρώποις ἕως τότε καὶ ἀγνοούμενον."
+        },
+        {
+          "line": 677,
+          "urn": "cyrillus-theology.commentarii-in-joannem",
+          "source": "ocr",
+          "license": "PD",
+          "edition": "migne-ocr-qwen36",
+          "locus": "pg074_0039.3",
+          "text": "Ἀπ’ ἐκείνης οὖν τῆς ὥρας συνεβουλεύσαντο, ἵνα ἀποκτεῖνῶσιν αὐτόν."
+        },
+        {
+          "line": 678,
+          "urn": "cyrillus-theology.commentarii-in-joannem",
+          "source": "ocr",
+          "license": "PD",
+          "edition": "migne-ocr-qwen36",
+          "locus": "pg074_0039.4",
+          "text": "Εἶχον μὲν γὰρ τὴν ἐπιθυμίαν τῆς κατὰ Χριστοῦ μισοφονίας· ἀπὸ δὲ τοῦ καιροῦ καθ’ ὃν τὸ συνέδριον γέγονεν, ἀρχὴν ὡσπερ ἔλαβε, δημοσιευθείσης τῆς ἀπάντων εἰς τοῦτο συναίνεσεως. Οὐ γὰρ εἶπεν ὁ εὐαγγελιστής, ὅτι ἀπ’ ἐκείνης τῆς ὥρας ἐβουλεύ-σαντο ποιῆσαι τὸν φόνον, ἀλλὰ συνεβουλεύσαντο, τοῦτ’ ἐστιν, ὅπερ τῷ καθ’ ἕκαστον ἔδοκει, κοινὴ πά-σιν ἦρεσεν."
+        }
+      ],
+      "text": "D Εἰς δὲ τις δὲ αὐτῶν ἀρχιερεὺς ὢν τοῦ ἐνιαυτοῦ ἐκείνου , εἶπε , καὶ τὰ ἕξης .\nἌλλ ’ ὅπερ Ἠλεγεν μὲν , ὅπερ λάθρα ἐμελέτων Ἰουδαῖοι ποιῆσαι , τοῦτο φανερῶς αὐτοῖς ὁ τούτων ἀρχιερεὺς συμβουλεύει ποιεῖν , καὶ φονεῦσαι τὸν Χριστὸν , ὡς ὑπὲρ τοῦ ἔθνους τοῦτο λέγων , καίπερ τὸ ἔθνος ἀδίκον ( 2 ) . Πράγμα δὲ ἀληθὲς φησιν , οὐχ ἐκ τῆς αὐτῶν δυστροπίας κατωρθωμένον , ἀλλ ’ ἐκ τῆς τοῦ Θεοῦ δυνάμεως καὶ σοφίας . Οἱ μὲν γὰρ ἐπ ’ ἑλέθρω ἰδίῳ τὸν Χριστὸν ἀπέκτειναν , ὁ δὲ θανατωθεὶς σαρκί , πάντων ἡμῖν γέγονεν αἴτιος τῶν ἀγαθῶν .\nἈπωλείαν δὲ τοῦ ἔθνους καλεῖ, τὸ ὑπὸ χεῖρα γενέ-σθαι τὴν Ῥωμαϊκήν, καὶ ἀπολεῖσθαι τὴν τοῦ νόμου σκιάν ἣπερ ἀνατρέψει ζητοῦντες, ὑπέμειναν. Ἔξ ἀνόμου μὲν οὖν εἰπε γνώμης ὁ Καϊάφας ὁ εἰπεν, ὅμως ὁ λόγος γέγονε πράγματις ἀληθους ἐρμηνευ-τικὸς, ὡς ἐν τάξει προσιζενχὲς προφητείας. Ἄς γὰρ γέγονεν αἴτιος ἀγαθῶν ὁ τοῦ Χριστοῦ θάνατος, προαναφωνεῖ λέγων ὁ οὐκ οἶδε, καὶ δοξάζων τὸν Θεὸν ὡς ὁ Βαλαὰμ κατὰ ἀνάγκην, ἐπειδὴ ἦν ἔχων τὸ ἱερατικὸν ἀξίωμα, ὡς οὐκ αὐτῷ δοθείσης τῆς προφητείας, ἀλλὰ τῷ τῆς ἱερσύνης χρίσματι [al. σχήματι] ἤτοι ἐξ ὧν ὕστερον οὐ εἰρήμενα γέγονεν ὑπὸ τοῦ Καϊάφα καὶ ἀπέβη, οὐ πάντως λαβόντος προφητικὴν χάριν. Εἰκὼς γὰρ ὅτι ὁ λαλοῦσι τινες γίνεται· εἰ καὶ μὴ εἰδότες ὅτι πάντως ἔσται, λαλοῦ-σιν. Ὁ μὲν οὖν Καϊάφας ὕπερ μόνων Ἰουδαίων ἔλεγεν ἐσεσθαι τὸν Χριστοῦ θάνατον, ὁ δὲ ὑπὲρ πά- B σης αὐτὸν φησι γενέσθαι τῆς ἀνθρωπότητος. Γένος μὲν γὰρ καὶ τέκνα Θεοῦ ἀπαντες ὁνοματίζομεν, καθὸ πάντων ἐστὶ Πατὴρ τρώφῃ δημιουργικῇ γεν-νήσας, καὶ ἀγαθῶν ὅσπερ εἰς ὑπαρξιν ὁ οὐκ δυτα (1)· ἔτι δὲ καὶ ὅτι κατ’ εἰκόνα αὐτοῦ ἐτιμήθη-μεν γεγονότες ἐξ ἀρχῆς, καὶ ἀρχεῖν λαχόντες τῶν ἐπὶ γῆς, καὶ εὐτόνως τὴν ἀρετὴν ἐργάζομενοι. Ἄλλ’ ἐνσκόρτισεν ὁ Σατανᾶς, ἐν ταυτῷ μείναι μὴ συγχω-ρήσας, καὶ ἀποδουλοκήσας πολυτρόπως τῆς εἰς Θεὸν προεσθείας τὸν ἀνθρώπων· συνεισάγαγε δὲ πάλιν καὶ συνεκάθιμε πάντας διὰ τῆς πίστεως ὁ Χριστὸς εἰς μίαν αὐλὴν καὶ τὴν Ἐκκλησίαν, καὶ ὑπὸ ζυγὸν ἕνα παρεσκευάσε, πάντων ἐν γεγονότων, Ἰουδαίων, Ἑλ-λήνων, βαρβάρων, Σκυθῶν, καὶ εἰς ἕνα καινὸν ἄν-θρωπον ἀναπλαττομένων, καὶ προσκυνούντων ἕνα C Θεόν.\nΟὐχ ὡς (2) κατὰ πνεῦμα προφητείας ὑπὸ Καϊάφα ἐρρέθη· οὐ γὰρ τὸ πνεῦμα τὸ προφητικὸν ἐπιβουλήν συνίστησι κατὰ Χριστοῦ, ἀλλὰ κατὰ τινα σωτηρίαν τῷ ἀληθεῖ καὶ γνησιωμένῳ πράγματι συνδραμὼν συγχωρήθη αὐτῷ τῆς τοιαύτης ἐπιψάσαι καθ’ ὅτι ἦν ἀρχιερεὺς, ἵνα διὰ τοῦ στόματος αὐτοῦ φανερὸν γένηται τὸ κεχρυμμένον τοῖς ἀνθρώποις ἕως τότε καὶ ἀγνοούμενον.\nἈπ’ ἐκείνης οὖν τῆς ὥρας συνεβουλεύσαντο, ἵνα ἀποκτεῖνῶσιν αὐτόν.\nΕἶχον μὲν γὰρ τὴν ἐπιθυμίαν τῆς κατὰ Χριστοῦ μισοφονίας· ἀπὸ δὲ τοῦ καιροῦ καθ’ ὃν τὸ συνέδριον γέγονεν, ἀρχὴν ὡσπερ ἔλαβε, δημοσιευθείσης τῆς ἀπάντων εἰς τοῦτο συναίνεσεως. Οὐ γὰρ εἶπεν ὁ εὐαγγελιστής, ὅτι ἀπ’ ἐκείνης τῆς ὥρας ἐβουλεύ-σαντο ποιῆσαι τὸν φόνον, ἀλλὰ συνεβουλεύσαντο, τοῦτ’ ἐστιν, ὅπερ τῷ καθ’ ἕκαστον ἔδοκει, κοινὴ πά-σιν ἦρεσεν.",
+      "locator": "Pinned JSONL lines 673–678; target pg074_0039.1 at line 675. Opaque digital loci, not verified Migne columns.",
+      "version": "open-greek/open-greek-corpus@a152e69ef26c1b9f9da2218d303f36f5ba4ab5b9; selected rows are edition=migne-ocr-qwen36, not the default Calfa PG073 edition.",
+      "provenance": "Composite OCR corpus. The selected PG074 text is machine/generative OCR; neither the source scan nor this passage has been visually collated here.",
+      "textSha256": "38db038e09966b56a442999f84f9c9afa0799508e1fa711f0eaa988a5f356811",
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "quoteSafe": false,
+      "selectedDigitalContextRead": true,
+      "authorialContextVerified": false,
+      "originalLanguageVerified": false,
+      "printedCollationClaimed": false,
+      "fullWorkRead": false,
+      "publicationEligible": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "AEGEAN-JN11",
+      "sourceFile": "AEGEAN-JOHN",
+      "selector": {
+        "kind": "text_lines",
+        "first": 24340,
+        "last": 24408
+      },
+      "text": "ελευσονται οι Ῥωμαιοι και αρουσιν ημων και τον τοπον και το εθνος. Ἀμελει και οι\nμεν Φαρισαιοι το θαυμαζειν αφεντες, επι το λυπεισθαι τρεπονται, και θανατου αυτον\nκρειττονα βλε ποντες, αποκτειναι βουλευονται, ουκ εννοουντες την αφατον\nεξουσιαν, ως περι ανθρωπου δε ψιλου εννοουντες, ελαλουν Τι ποιουμεν οτι ο\nανθρωπος ουτος πολλα σημεια ποιει; καιτοι δεον εκ τουτου μαλλον πιστευσαι οτι\nαυτος ην ο Χριστος, ον η θεοπνευστος γραφη εν πολλοις προανεφωνησεν, οτι\nπολλων σημειων εσται δημιουργος. οι δε και αιτιαν προφασιζονται, δι' ης επειρωντο\nπεισαι τους ελαφροτερους αποκτειναι αυτον, και φασιν Ἐαν εασωμεν αυτον ουτως,\nαντι του, ζωντα και 2.294 θαυματουργουντα, πεισομεθα πανδεινα. εαν γαρ τουτωι τωι\nτον νομον καταλυοντι πιστευσωσι πολλοι, οιχησεται λοιπον τα ημετερα· και λοιπον\nως ασθενησαντων Ἰουδαιων εις τελος, επιθησονται ημιν οι Ῥωμαιοι, και ουκ\nεασουσιν ημας τοις πατρυοις εθεσιν αδεως χρησασθαι, ουτε του ιδιου αρχειν εθνους,\nουτε δικαζειν, αυτοι μαλλον δικαζοντες και ουχ ημεις ετι. Εις δε τις εξ αυτων\nΚαιαφας, αρχιερευς ὣν του ενιαυτου εκεινου, ειπεν αυτοις Ὑμεις ουκ οιδατε ουδεν,\nουδε διαλογι ζεσθε οτι συμφερει ημιν ινα εις ανθρωπος αποθανηι υπερ του λαου και\nμη ολον το εθνος αποληται. τουτο δε αφ' εαυτου ουκ ειπεν, αλλα αρχιερευς ων του\nενιαυτου εκεινου προεφητευσεν οτι ημελλεν ο Ἰησους αποθνησκειν υπερ του\nεθνους, και ουχ υπερ του εθνους μονον, αλλ' ινα και τα τεκνα του Θεου τα\nδιεσκορπισμενα συναγαγηι εις εν. Ἀλλ' οπερ ελεγομεν, οπερ λαθρα εμελετων\nἸουδαιοι ποιησαι, τουτο φανερως αυτοις ο τουτων αρχιερευς συμβου λευει ποιειν\nκαι φονευσαι τον Χριστον, ως υπερ του εθνους τουτο λεγων, καιπερ το εθνος\nαδικον. πραγμα δε αληθες φησιν, ουκ εκ της αυτων δυστροπιας κατωρθωμενον, αλλ'\nεκ της του Θεου δυναμεως και σοφιας. οι μεν γαρ επ' ολεθρωι ιδιωι τον Χριστον\nαπεκτειναν, ο δε \"θανατωθεις σαρκι,\" παντων ημιν γεγονεν αιτιος των αγαθων.\nαπωλειαν δε του εθνους καλει, το υπο χειρα γενεσθαι την Ῥωμαικην, και απολεσθαι\nτην του νομου σκιαν· οπερ ανατρεψαι ζητουντες, υπεμειναν. εξ ανομου μεν ουν ειπε\nγνωμης ο Καιαφας ο ειπεν· ομως ο λογος γεγονε πραγματος αληθους ερμηνευ 2.295\nτικος, ως εν ταξει προσενεχθεις προφητειας. οσων γαρ γεγονεν αιτιος αγαθων ο του\nΧριστου θανατος, προανα φωνει λεγων ο ουκ οιδε, και δοξαζων τον Θεον ως ο\nΒαλααμ κατα αναγκην, επειπερ ην εχων το ιερατικον αξιωμα, ως ουκ αυτωι δοθεισης\nτης προφητειας, αλλα τωι της ιερωσυνης σχηματι· ητοι εξ ων υστερον τα ειρημενα\nγεγονεν υπο του Καιαφα και απεβη ου παντως λαβοντος προφητικην χαριν. εικος\nγαρ οτι ο λαλουσι τινες γινεται· ει και μη ειδοτες οτι παντως εσται, λαλουσιν. ο μεν\nουν Καιαφας υπερ μονων Ἰουδαιων ελεγεν εσεσθαι τον Χριστου θανατον, ο δε υπερ\nπασης φησιν αυτον γενεσθαι της ανθρωποτητος. γενος μεν γαρ και τεκνα Θεου\nαπαντες χρηματιζομεν, καθο παντων εστι πατηρ τροπωι δημιουργικωι γεννησας και\nαγαγων ωσπερ εις υπαρξιν τα ουκ οντα. ετι δε και οτι κατ' εικονα αυτου ετιμηθημεν\nγεγονοτες εξ αρχης, και αρχειν λαχοντες των επι γης, και της θειας ομολογιας\nηξιωμενοι, και της εν παραδεισωι διαιτης τε και τρυφης απολαυοντες. αλλ' εσκορ\nπισεν ο σατανας εν ταυτωι μειναι μη συγχωρησας, και αποβουκολησας πολυτροπως\nτης εις Θεον προσεδρειας τον ανθρωπον. συνεισηγαγε δε παλιν και συνεκομισε\nπαντας δια της πιστεως ο Χριστος εις μιαν αυλην την Ἐκκλησιαν, και υπο ζυγον ενα\nπαρεσκευασε, παντων εν γεγονοτων, Ἰου δαιων, Ἑλληνων, Βαρβαρων, Σκυθων, και\n\"εις ενα καινον \"ανθρωπον\" αναπλαττομενων, και προσκυνουντων ενα Θεον. 2.296\nἈπ' εκεινης ουν της ωρας συνεβουλευσαντο ινα αποκτεινωσιν αυτον. Ειχον μεν γαρ\nτην επιθυμιαν της κατα Χριστου μιαι φονιας· απο δε του καιρου καθ' ον το\nσυνεδριον γεγονεν, αρχην ωσπερ ελαβε, δημοσιευθεισης της απαντων εις τουτο\n \n \n\n401\n\nΕρευνητικο εργο: ∆ΡΟΜΟΙ ΤΗΣ ΠΙΣΤΗΣ – ΨΗΦΙΑΚΗ ΠΑΤΡΟΛΟΓΙΑ.\nΕργαστηριο ∆ιαχειρισης Πολιτισµικης Κληρονοµιας, www.aegean.gr/culturaltec/chmlab.\nΧρηµατοδοτηση: ΚΠ Interreg ΙΙΙΑ (ETΠΑ 75%, Εθν. ποροι 25%).\nΠανεπιστηµιο Αιγαιου, Τµηµα Πολιτισµικης Τεχνολογιας και Επικοινωνιας, © 2006.\nΕπιτρεπεται η ελευθερη χρηση του υλικου µε αναφορα στην πηγη προελευσης του.\n\n\nσυναινεσεως. ου γαρ ειπεν ο Ευαγγελιστης, οτι Ἀπ' εκεινης της ωρας εβουλευσαντο\nποιησαι τον φονον, αλλα Συνεβουλευ σαντο, τουτεστιν, οπερ τωι καθ' εκαστον\nεδοκει, κοινηι πασιν ηρεσεν. Ὁ ουν Ἰησους ουκ ετι παρρησιαι περιεπατει εν τοις\nἸουδαιοις, αλλ' απηλθεν εκειθεν εγγυς της ερημου εις Ἐφραιμ λεγομενην πολιν και\nεκει εμεινε μετα των μαθητων αυτου. Και ενταυθα τοινυν ως Θεος το λαθρα δοξαν\nαυτοις ειδως και μηδενος αναγγειλαντος εις κατακριμα των Ἰουδαιων υποχωρει, ου\nδειλιασας, αλλ' ινα μη δοξηι ορωμενος ερεθιζειν αυτους, καιπερ φονωντας. διδασκει\nδε και ημας υπεικειν ταις των οργιζομενων ακμαις, και μη επιῤριπτειν εαυτους τοις\nκινδυνοις, μηδ' αν υπερ της αληθειας ωσιν· αλλα κατα λαμβανομενους μεν ιστασθαι,\nμελλοντας δε αναδυεσθαι, δια το της εκβασεως αδηλον. Ἦν δε εγγυς το πασχα των",
+      "locator": "Member lines 24340–24408; target 24373–24383, internal 2.295/2.296 markers and digital folio 401. These are not newly verified printed pages.",
+      "version": "JLCPutmans/Patrologia-Graeca-PG-txt-files@16cafa1381e9fac54a54df2d8910fe75adfebdff; PG-C.zip member CYRIL-ALEXANDRIEN/Commentarii in Joannem.pdf.txt.",
+      "provenance": "The file footer names University of the Aegean, Digital Patrology, 2006, with reuse-attribution wording. The upstream PDF, its bibliographic source and rights chain have not been authenticated; the repository title Patrologia Graeca is not proof that this member follows Migne.",
+      "textSha256": "5c56545037b37f4d9f07dc7101d0d911898d8ad85ec10a63b0bfa06d2c700d2c",
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "quoteSafe": false,
+      "selectedDigitalContextRead": true,
+      "authorialContextVerified": false,
+      "originalLanguageVerified": false,
+      "printedCollationClaimed": false,
+      "fullWorkRead": false,
+      "publicationEligible": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    }
+  ],
+  "digitalComparisons": [
+    {
+      "id": "NAMING",
+      "leftCandidate": "OG-JN11",
+      "left": "ὁνοματίζομεν",
+      "rightCandidate": "AEGEAN-JN11",
+      "right": "χρηματιζομεν",
+      "purpose": "Literal quality-control readings of digital files, NOT quote-safe quotations attributed to Cyril.",
+      "authorialVariantEstablished": false,
+      "ocrCauseEstablished": false,
+      "silentlyEmended": false
+    },
+    {
+      "id": "CREATION",
+      "leftCandidate": "OG-JN11",
+      "left": "τρώφῃ δημιουργικῇ",
+      "rightCandidate": "AEGEAN-JN11",
+      "right": "τροπωι δημιουργικωι",
+      "purpose": "Literal quality-control readings of digital files, NOT quote-safe quotations attributed to Cyril.",
+      "authorialVariantEstablished": false,
+      "ocrCauseEstablished": false,
+      "silentlyEmended": false
+    },
+    {
+      "id": "COVENANT-PARADISE",
+      "leftCandidate": "OG-JN11",
+      "left": "καὶ εὐτόνως τὴν ἀρετὴν ἐργάζομενοι",
+      "rightCandidate": "AEGEAN-JN11",
+      "right": "και της θειας ομολογιας\nηξιωμενοι, και της εν παραδεισωι διαιτης τε και τρυφης απολαυοντες",
+      "purpose": "Literal quality-control readings of digital files, NOT quote-safe quotations attributed to Cyril.",
+      "authorialVariantEstablished": false,
+      "ocrCauseEstablished": false,
+      "silentlyEmended": false
+    },
+    {
+      "id": "GATHERING",
+      "leftCandidate": "OG-JN11",
+      "left": "συνεισάγαγε δὲ πάλιν καὶ συνεκάθιμε",
+      "rightCandidate": "AEGEAN-JN11",
+      "right": "συνεισηγαγε δε παλιν και συνεκομισε",
+      "purpose": "Literal quality-control readings of digital files, NOT quote-safe quotations attributed to Cyril.",
+      "authorialVariantEstablished": false,
+      "ocrCauseEstablished": false,
+      "silentlyEmended": false
+    }
+  ],
+  "webObservations": [
+    {
+      "id": "LIDDON-PREFACE",
+      "url": "https://www.ccel.org/ccel/pearse/morefathers/files/cyril_on_john_00_intro2.htm",
+      "evidenceClass": "A1",
+      "author": "H. P. Liddon",
+      "version": "Preface to LFC vol. II (1885), transmitted by Roger Pearse/CCEL, 2005.",
+      "locator": "Rendered markers v and vii–viii; all three returned page chunks read, including preface signature and contents.",
+      "evidenceScope": "Primary evidence for what the prefacer says about the translation and its source languages, not independent proof of the manuscript source of John11:52.",
+      "passages": [
+        "This original text consists of 1636 pages octavo, partly Greek and partly Syriac.",
+        "The translator has also been careful to note in the margin of the second volume those passages of the Commentary in which the translation has been made from the Syriac version.",
+        "Accordingly, in translating passages of the New Testament that occur in the present volume----whether passages of the Holy Evangelist upon whom S. Cyril is commenting, or incidental quotations in the Commentary itself----especial care has been taken to render S. Cyril's own text as exactly as possible."
+      ],
+      "finding": "Greek and Syriac are distinct routes in the edition used for the translation; language provenance of this specific paragraph must be established, not assumed from a general label or an omitted margin.",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "ARCHIVE_HOLD"
+      ],
+      "publicationEligible": false,
+      "acquisitionKind": "RENDERED_WEB_OBSERVATION_NOT_RAW_HTML",
+      "rawHtmlAcquired": false,
+      "rawHtmlSha256": null,
+      "selectedExcerptSha256": "35bba36dd9821d391deafee54cb50a9656d40a51373451c724fb7b60c78e5eb4",
+      "excerptNormalization": "Selected passages copied from tool-rendered text; line wrapping collapsed, not a hash of a page or its HTTP bytes.",
+      "quoteSafe": true,
+      "contextVerified": true,
+      "printedCollationClaimed": false
+    },
+    {
+      "id": "PEARSE-EDITORIAL",
+      "url": "https://www.ccel.org/ccel/pearse/morefathers/files/cyril_on_john_00_eintro.htm",
+      "evidenceClass": "B1",
+      "author": "Roger Pearse",
+      "version": "Online preface, 14 December 2005; postscripts through 9 February 2006.",
+      "locator": "Account of Pusey’s praefatio, plus final postscript; all three returned chunks read.",
+      "evidenceScope": "Secondary, explicitly translated/abridged account of Pusey and reported authenticity discussion. Neither the Latin praefatio, Quasten, nor the named manuscripts was directly examined.",
+      "passages": [
+        "I have now examined Pusey's Greek text, and incorporated a chunk of his praefatio into this page.",
+        "The punctuation is that of Migne.",
+        "The preface should have discussed the source of these fragments, and also the manuscript tradition of the work. In its absence, I have here translated and abbreviated the following from the praefatio to Pusey's edition of the Greek text in 3 volumes,",
+        "Books seven and eight have long since perished. Aubert gave what could be fragments from them, from the Catena on S. John by Nicetas, using a manuscript which once belonged to D. de Harlay, Bishop of St. Malo, now in Paris in the Bibliothèque Imperiale, Ms. Suppl. Gr. 159, bomb. saec. ca. xiv. But Nicetas cites from many other works of Cyril, and it seemed necessary to omit many on these grounds."
+      ],
+      "finding": "The later supplement reports catena witnesses, including Nicetas/Harlay/Paris Suppl. gr.159 and additional manuscript sigla. This is a transmission lead, not the identification or authentication of the individual John11:52 fragment. The early complaint about unspecified sources is not the page’s final state.",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "ARCHIVE_HOLD"
+      ],
+      "publicationEligible": false,
+      "acquisitionKind": "RENDERED_WEB_OBSERVATION_NOT_RAW_HTML",
+      "rawHtmlAcquired": false,
+      "rawHtmlSha256": null,
+      "selectedExcerptSha256": "0019af4f9008a72aeb4e1a4eda8d34a1b32406a6968bbaaaab2552df80b962e5",
+      "excerptNormalization": "Selected passages copied from tool-rendered text; line wrapping collapsed, not a hash of a page or its HTTP bytes.",
+      "quoteSafe": false,
+      "contextVerified": true,
+      "printedCollationClaimed": false
+    },
+    {
+      "id": "RANDELL-JN11",
+      "url": "https://www.ccel.org/ccel/pearse/morefathers/files/cyril_on_john_07_book7.htm",
+      "evidenceClass": "A1",
+      "author": "Published fragment attributed to Cyril; English translation T. Randell",
+      "version": "LFC 43/48 (1874/1885), vol. II, Book VII extant fragments, Pearse/CCEL transcription.",
+      "locator": "Freshly reread heading (chunk 0), 11:44–54 and 49–52 target at markers 133–134 (chunks 10–11), footer at chunk 11. No whole-book rereading claimed.",
+      "evidenceScope": "Primary attributed fragment as published in English, not Greek-original verification or independently settled authorship.",
+      "passages": [
+        "Caiaphas then said that the death of Christ would be for the Jews only, but the Evangelist says that it would be for all mankind.",
+        "For we are all called the offspring and children of God inasmuch as He is the Father of all, having by way of creation begotten as it were and brought into existence the things that were not.",
+        "the Christ collected us all together again and brought us through faith into one fold, the Church;",
+        "The margin contains mainly biblical references and fragments of Greek. These have been omitted"
+      ],
+      "finding": "The broad creation reading and gathering through faith remain established for the English attributed fragment; uncertainty over the Greek representation cannot erase it. The omitted margin must be checked in print, not reconstructed silently.",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "ARCHIVE_HOLD"
+      ],
+      "publicationEligible": false,
+      "acquisitionKind": "RENDERED_WEB_OBSERVATION_NOT_RAW_HTML",
+      "rawHtmlAcquired": false,
+      "rawHtmlSha256": null,
+      "selectedExcerptSha256": "9e2175edbdac213b3c69420cc16f68b09367de9107355df8a6068729014ffa8c",
+      "excerptNormalization": "Selected passages copied from tool-rendered text; line wrapping collapsed, not a hash of a page or its HTTP bytes.",
+      "quoteSafe": true,
+      "contextVerified": true,
+      "printedCollationClaimed": false
+    }
+  ],
+  "catalogue": {
+    "sourceFile": "OG-REGISTRY",
+    "pointer": "/works/cyrillus-theology.commentarii-in-joannem",
+    "ctsAlias": "urn:cts:greekLit:tlg4090.tlg002",
+    "defaultEdition": "cyrillus-theology.commentarii-in-joannem.calfa-pg73-5895ab908dd4",
+    "puseyReference": {
+      "aliases": {},
+      "editor": "Pusey, P.E",
+      "license": "",
+      "name": "Sancti patris nostri Cyrilli archiepiscopi Alexandrini in D. Joannis evangelium, `3 vols",
+      "provider": "tlg-e-reference",
+      "scheme": "volume.page.line",
+      "scheme_inferred": false,
+      "servable": false,
+      "source": "",
+      "year": 1872
+    },
+    "sourceEditionClaims": [
+      {
+        "description": "Migne PG 73, 1859; scan 12 begins the commentary's prooimion; scan 569 ends John 10:17 above the Latin index.",
+        "sha256": "9de7832e644fd6f9436f15b51c940f7601738a90339c29f3350210ffad2802ab",
+        "url": "https://archive.org/details/patrologiaecurs43hopfgoog"
+      },
+      {
+        "description": "Migne PG 74, 1859; scan 12 begins Books VII/VIII fragments; scan 473 ends John at columns 755–756; scan 474 begins Acts; scan 482 begins Romans below the end of Acts.",
+        "sha256": "0150e7ffadcf5836ba6198cebdec113effe9e655b652a54388f1e8e8802b2005",
+        "url": "https://archive.org/details/patrologiaecurs25hopfgoog"
+      }
+    ],
+    "qualification": "PG074 Books VII and VIII survive as fragments in this edition; this does not reconstruct lost continuous books.",
+    "upstreamPdfChecksumsVerifiedHere": false,
+    "upstreamCalfaChecksumVerifiedHere": false,
+    "catalogueIsAcquiredPuseyText": false
+  },
+  "corpusComposition": {
+    "rows": 3105,
+    "editionCounts": {
+      "calfa-pg73-5895ab908dd4": 520,
+      "migne-ocr-qwen36": 2578,
+      "migne-pg74-gap-consensus-2026-10": 3,
+      "reviewed-duplicate-block-consensus-2026-10": 4
+    },
+    "measuredScope": "Machine row inventory only, not whole-work reading or independent witnesses."
+  },
+  "substantiveBasis": {
+    "control": "ИСКУПЛЕНИЕ/evidence/source_controls_wave5_2026-11-03.json",
+    "observationId": "CYRIL-JN11-52",
+    "freshEnglishObservation": "RANDELL-JN11",
+    "conclusion": "All-human creation naming and faith-gathering remain the English attributed fragment’s actual reading. No new Greek doctrinal conclusion is asserted."
+  },
+  "rights": {
+    "openGreek": "Aggregate CC BY-SA 4.0; project OCR additionally CC BY 4.0 per LICENSE. Selected row license=PD describes underlying edition, not automatic release of all digital components.",
+    "aegean": "Footer claims free use with attribution to University of the Aegean, Digital Patrology, 2006; upstream PDF and rights chain not authenticated. No TLG licensed text acquisition or rights inferred from a repository title.",
+    "web": "Pearse footer states public domain; raw HTML not acquired and publication has not been authorized."
+  },
+  "discoveryDispositions": [
+    {
+      "id": "ISSUE42",
+      "finding": "Actual gh issue response was CLOSED, updated 2026-10-18; cached web-search OPEN/PG073-missing report is stale.",
+      "role": "Discovery only, not primary text evidence."
+    },
+    {
+      "id": "ZERO-QUERY",
+      "finding": "Initial normalized search for διεσκορπισμενα or δημιουργια+τεκνα found no candidates. Smaller stems and context located pg074_0039.1. No absence inference accepted.",
+      "role": "Search log, not philological absence proof."
+    },
+    {
+      "id": "OGL-1868",
+      "finding": "Greek-dev inventory has three Opera Cyrilli references dated 1868; their work/volume identity has not been established here. They are not acquired In Joannem text.",
+      "role": "Catalogue only; complete bytes of inventory are not complete primary books."
+    },
+    {
+      "id": "OTHER-OCR",
+      "finding": "Clement315 README excludes scans and covers other listed PG volumes; BibliothecaPatristica README warns of LLM omissions/hallucinations and excludes images. Broad latter tree response was truncated, so no whole-repository absence claim.",
+      "role": "Rejected as a route to a checked target scan; not included in controlled source replay."
+    },
+    {
+      "id": "PDF-RENDER",
+      "finding": "fetch_page of sanctipatrisnos02pusegoog.pdf returned a partial, unreliable text conversion, including unrelated camera/diet questions and damaged Greek. It was not accepted as a transcription or visual collation; no PDF bytes/hash acquired.",
+      "role": "Excluded conversion; no printed evidence claimed."
+    },
+    {
+      "id": "PRAEFATIO-LINK",
+      "finding": "cyril_on_john_00_praefatio.htm is the English introduction to Cyril’s commentary, not Pusey’s Latin editorial praefatio.",
+      "role": "Disambiguated link, not Latin-preface reading."
+    }
+  ],
+  "nextAcquisition": [
+    {
+      "id": "PRINT-EN",
+      "target": "Randell 1885 vol.II pp.133–135, with margins and notes",
+      "acceptance": "Verified scan bytes, title/volume, page mapping and visual reading of language/source marks; no inference from missing HTML margins."
+    },
+    {
+      "id": "PRINT-PUSEY",
+      "target": "Pusey 1872 vol.II, candidate pages 294–296 suggested by the text member’s 2.294/2.295/2.296 markers",
+      "acceptance": "First authenticate the member-to-edition relationship; then read printed Greek and apparatus and identify sigla for the particular John11:52 paragraph. Candidate pagination is not verified pagination."
+    },
+    {
+      "id": "PRINT-MIGNE",
+      "target": "Migne PG74; locate the paragraph corresponding to opaque digital key pg074_0039.1, with adjacent context and notes",
+      "acceptance": "Acquire/verify actual scan and printed column mapping. Do not compute a global page/column offset or adopt the OCR-request PDF checksum as our own verification."
+    },
+    {
+      "id": "TRANSMISSION",
+      "target": "Pusey Latin praefatio and target apparatus; only then the indicated catena/manuscript witnesses and any Syriac counterpart",
+      "acceptance": "Distinguish edited attribution, Greek/Syriac transmission, translation and manuscript inspection. Do not assign the 11:52 fragment to every witness named in a general preface."
+    }
+  ]
+}

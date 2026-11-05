@@ -32,7 +32,7 @@ import re
 import sys
 from pathlib import Path
 
-FILE_REF = re.compile(r"((?:\.\./)*)((?:[a-z]+/)?)([0-9]{2}_[A-Za-z0-9_\-]+\.md)")
+FILE_REF = re.compile(r"((?:\.\./)*)((?:[A-Za-z0-9_\-]+/)*)([0-9]{2}_[A-Za-z0-9_\-]+\.md)")
 SECTION = re.compile(r"§\s*([A-ZА-Я]?\.?\s?\d+(?:\.\d+)?)")
 HEADING = re.compile(r"^#{1,6}\s+(.*)$")
 HEAD_ID = re.compile(r"^\s*([A-ZА-Я]?\.?\d+(?:\.\d+)?)\.?(?:\s|$)|^\s*([A-ZА-Я])\.(\d+)")
@@ -87,17 +87,12 @@ def main(argv=None) -> int:
                 cand = [f for f in filerefs if f.end() <= sec.start()]
                 if not cand:
                     continue
-                # Конвенция `../` в черновиках смешана: местами это synthesis/,
-                # местами корень корпуса. Поэтому пробуем несколько баз и честно
-                # записываем, какая сработала; «файл не найден» и «раздел не найден» —
-                # разные диагнозы и не должны сливаться.
+                # Разрешаем путь от содержащего его файла, как Markdown-ссылку.
+                # Подмена базы скрывала реальные ошибки ../ vs ../../ (исправлены
+                # в волне 2026-11-02). Полный многоуровневый путь нельзя обрезать
+                # до последней папки. Сокращения ../12_ этим аудитом не охвачены.
                 rel = cand[-1].group(1) + cand[-1].group(2) + cand[-1].group(3)
-                bases = [
-                    ("drafts", draft.parent),
-                    ("synthesis", draft.parent.parent),
-                    ("corpus", draft.parent.parent.parent),
-                    ("docs", Path(args.docs)),
-                ]
+                bases = [("drafts", draft.parent)]
                 target, used_base = None, None
                 for name, base in bases:
                     t = Path(os.path.normpath(base / rel))

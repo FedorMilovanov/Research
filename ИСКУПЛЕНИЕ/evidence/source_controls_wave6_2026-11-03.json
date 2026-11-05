@@ -1,0 +1,2968 @@
+{
+  "schemaVersion": "1.0",
+  "recordedAtUtc": "2026-11-03T10:26:10.077553+00:00",
+  "recordingTimeMeaning": "Time of control compilation after bounded digital reading, not the historical acquisition time of earlier waves or an invented Moscow provenance.",
+  "taskDate": "2026-11-03",
+  "c25": "OPEN",
+  "o09": "BOUNDED_COMPARISON_DONE_CRITICAL_FOLLOWUP_OPEN",
+  "interpretationStatus": "ARGUED_PROVISIONAL_NOT_MACHINE_PROOF",
+  "preferredReading": "GATHERED_MULTIETHNIC_COMMUNITY",
+  "files": [
+    {
+      "id": "LXX-Deut",
+      "repo": "OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "path": "data/tlg0527/tlg005/tlg0527.tlg005.1st1K-grc1.xml",
+      "gitBlob": "eb3751c4c52d4d29f3827974cf0757e2dc9b6ab5",
+      "sha256": "b2e3894c6ca82fa99a851c2ef172247c44c4509e749e1f17a7cae99d3a8dcf71",
+      "bytes": 474051,
+      "externalRelativePath": "OpenGreekAndLatin--First1KGreek/data/tlg0527/tlg005/tlg0527.tlg005.1st1K-grc1.xml",
+      "sourceUrl": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg0527/tlg005/tlg0527.tlg005.1st1K-grc1.xml",
+      "byteVerifiedAtUtc": "2026-11-03T10:11:01.736882+00:00",
+      "role": "PRIMARY_TEXT",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "locatorScope": "Named digital file; verse context reading is a separate step.",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "quoteSafe": false,
+      "classScope": "A1 identifies the biblical digital text, not an independent manuscript or error-free transcription. C metadata is locator/rights context, not an additional biblical witness. Quote-safe scope is specified by the bounded primary profiles, not this file inventory."
+    },
+    {
+      "id": "LXX-Deut-META",
+      "repo": "OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "path": "data/tlg0527/tlg005/__cts__.xml",
+      "gitBlob": "790ce633d86a4d11bacf1d73c8e32ddf16a45fb9",
+      "sha256": "157034d37e4147206d46827c01fff892b6eec3ee32376623770465c48199b01d",
+      "bytes": 645,
+      "externalRelativePath": "OpenGreekAndLatin--First1KGreek/data/tlg0527/tlg005/__cts__.xml",
+      "sourceUrl": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg0527/tlg005/__cts__.xml",
+      "byteVerifiedAtUtc": "2026-11-03T10:11:02.188081+00:00",
+      "role": "EDITION_METADATA",
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "locatorScope": "Named digital file; verse context reading is a separate step.",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "quoteSafe": false,
+      "classScope": "A1 identifies the biblical digital text, not an independent manuscript or error-free transcription. C metadata is locator/rights context, not an additional biblical witness. Quote-safe scope is specified by the bounded primary profiles, not this file inventory."
+    },
+    {
+      "id": "MT-Deut",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "path": "wlc/Deut.xml",
+      "gitBlob": "6966deedd88043fbef5a124d50e346711f652efa",
+      "sha256": "04f8087442a1e67a631cd70f2ac4e42fe0a780ae132edb165a3a29f3f290358f",
+      "bytes": 1315399,
+      "externalRelativePath": "openscriptures--morphhb/wlc/Deut.xml",
+      "sourceUrl": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Deut.xml",
+      "byteVerifiedAtUtc": "2026-11-03T10:11:02.721697+00:00",
+      "role": "PRIMARY_TEXT",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "locatorScope": "Named digital file; verse context reading is a separate step.",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "quoteSafe": false,
+      "classScope": "A1 identifies the biblical digital text, not an independent manuscript or error-free transcription. C metadata is locator/rights context, not an additional biblical witness. Quote-safe scope is specified by the bounded primary profiles, not this file inventory."
+    },
+    {
+      "id": "LXX-Isa",
+      "repo": "OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "path": "data/tlg0527/tlg048/tlg0527.tlg048.1st1K-grc1.xml",
+      "gitBlob": "26f2aa30ab0d48889b8aaf5a6dcd15b0617d6d27",
+      "sha256": "0c9cbad97585c5eb8927867d9ce6de6f612bc48b5f13fb0a2ef70a4801e2dca5",
+      "bytes": 688809,
+      "externalRelativePath": "OpenGreekAndLatin--First1KGreek/data/tlg0527/tlg048/tlg0527.tlg048.1st1K-grc1.xml",
+      "sourceUrl": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg0527/tlg048/tlg0527.tlg048.1st1K-grc1.xml",
+      "byteVerifiedAtUtc": "2026-11-03T10:11:03.435353+00:00",
+      "role": "PRIMARY_TEXT",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "locatorScope": "Named digital file; verse context reading is a separate step.",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "quoteSafe": false,
+      "classScope": "A1 identifies the biblical digital text, not an independent manuscript or error-free transcription. C metadata is locator/rights context, not an additional biblical witness. Quote-safe scope is specified by the bounded primary profiles, not this file inventory."
+    },
+    {
+      "id": "LXX-Isa-META",
+      "repo": "OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "path": "data/tlg0527/tlg048/__cts__.xml",
+      "gitBlob": "aa4712a92bfa44cad4991f0bd467e9a1e8805ff5",
+      "sha256": "6965d2511b1256a7a8c1e709e632a531616baaa9305c1658ca3b3b90b53cdf77",
+      "bytes": 3318,
+      "externalRelativePath": "OpenGreekAndLatin--First1KGreek/data/tlg0527/tlg048/__cts__.xml",
+      "sourceUrl": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg0527/tlg048/__cts__.xml",
+      "byteVerifiedAtUtc": "2026-11-03T10:11:03.849510+00:00",
+      "role": "EDITION_METADATA",
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "locatorScope": "Named digital file; verse context reading is a separate step.",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "quoteSafe": false,
+      "classScope": "A1 identifies the biblical digital text, not an independent manuscript or error-free transcription. C metadata is locator/rights context, not an additional biblical witness. Quote-safe scope is specified by the bounded primary profiles, not this file inventory."
+    },
+    {
+      "id": "MT-Isa",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "path": "wlc/Isa.xml",
+      "gitBlob": "b64ca328892a998d0540b5a6bf89ac6a19b574b0",
+      "sha256": "0807678de609bdef284bed5400b94ddab570d101b593c7f59ae1939015572fa2",
+      "bytes": 1548674,
+      "externalRelativePath": "openscriptures--morphhb/wlc/Isa.xml",
+      "sourceUrl": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Isa.xml",
+      "byteVerifiedAtUtc": "2026-11-03T10:11:04.530423+00:00",
+      "role": "PRIMARY_TEXT",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "locatorScope": "Named digital file; verse context reading is a separate step.",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "quoteSafe": false,
+      "classScope": "A1 identifies the biblical digital text, not an independent manuscript or error-free transcription. C metadata is locator/rights context, not an additional biblical witness. Quote-safe scope is specified by the bounded primary profiles, not this file inventory."
+    },
+    {
+      "id": "LXX-Jer",
+      "repo": "OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "path": "data/tlg0527/tlg049/tlg0527.tlg049.1st1K-grc1.xml",
+      "gitBlob": "a9a6d49374808e6fc2437b72e0a3beac81bf95c7",
+      "sha256": "6beecdc05482e53bd899d49274e323c234ccad9e6aadd1d89dc98c4f5ee1c6d5",
+      "bytes": 714624,
+      "externalRelativePath": "OpenGreekAndLatin--First1KGreek/data/tlg0527/tlg049/tlg0527.tlg049.1st1K-grc1.xml",
+      "sourceUrl": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg0527/tlg049/tlg0527.tlg049.1st1K-grc1.xml",
+      "byteVerifiedAtUtc": "2026-11-03T10:11:05.154047+00:00",
+      "role": "PRIMARY_TEXT",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "locatorScope": "Named digital file; verse context reading is a separate step.",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "quoteSafe": false,
+      "classScope": "A1 identifies the biblical digital text, not an independent manuscript or error-free transcription. C metadata is locator/rights context, not an additional biblical witness. Quote-safe scope is specified by the bounded primary profiles, not this file inventory."
+    },
+    {
+      "id": "LXX-Jer-META",
+      "repo": "OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "path": "data/tlg0527/tlg049/__cts__.xml",
+      "gitBlob": "563d13644a37a99f533ab26506e373e85f6af444",
+      "sha256": "8ebebaa0702966707847e07afe1460d2433898c7cdca31f901f8481fda55c826",
+      "bytes": 669,
+      "externalRelativePath": "OpenGreekAndLatin--First1KGreek/data/tlg0527/tlg049/__cts__.xml",
+      "sourceUrl": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg0527/tlg049/__cts__.xml",
+      "byteVerifiedAtUtc": "2026-11-03T10:11:05.630820+00:00",
+      "role": "EDITION_METADATA",
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "locatorScope": "Named digital file; verse context reading is a separate step.",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "quoteSafe": false,
+      "classScope": "A1 identifies the biblical digital text, not an independent manuscript or error-free transcription. C metadata is locator/rights context, not an additional biblical witness. Quote-safe scope is specified by the bounded primary profiles, not this file inventory."
+    },
+    {
+      "id": "MT-Jer",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "path": "wlc/Jer.xml",
+      "gitBlob": "de440367b576a694094ab7c6e6a861481c8c7f0d",
+      "sha256": "1a7ad7bc26a2cae1d3964230e8eb73043bc1f32505cb86cd69a25261dc39f493",
+      "bytes": 1977728,
+      "externalRelativePath": "openscriptures--morphhb/wlc/Jer.xml",
+      "sourceUrl": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Jer.xml",
+      "byteVerifiedAtUtc": "2026-11-03T10:11:06.326903+00:00",
+      "role": "PRIMARY_TEXT",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "locatorScope": "Named digital file; verse context reading is a separate step.",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "quoteSafe": false,
+      "classScope": "A1 identifies the biblical digital text, not an independent manuscript or error-free transcription. C metadata is locator/rights context, not an additional biblical witness. Quote-safe scope is specified by the bounded primary profiles, not this file inventory."
+    },
+    {
+      "id": "LXX-Ezek",
+      "repo": "OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "path": "data/tlg0527/tlg053/tlg0527.tlg053.1st1K-grc1.xml",
+      "gitBlob": "a2b50dcb20a314663c8020a29838434f12c3f6a6",
+      "sha256": "579c1c683cf79bfcab72629faa59aa65b59948a31dbcae7f2d53d04116401533",
+      "bytes": 618574,
+      "externalRelativePath": "OpenGreekAndLatin--First1KGreek/data/tlg0527/tlg053/tlg0527.tlg053.1st1K-grc1.xml",
+      "sourceUrl": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg0527/tlg053/tlg0527.tlg053.1st1K-grc1.xml",
+      "byteVerifiedAtUtc": "2026-11-03T10:11:07.101579+00:00",
+      "role": "PRIMARY_TEXT",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "locatorScope": "Named digital file; verse context reading is a separate step.",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "quoteSafe": false,
+      "classScope": "A1 identifies the biblical digital text, not an independent manuscript or error-free transcription. C metadata is locator/rights context, not an additional biblical witness. Quote-safe scope is specified by the bounded primary profiles, not this file inventory."
+    },
+    {
+      "id": "LXX-Ezek-META",
+      "repo": "OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "path": "data/tlg0527/tlg053/__cts__.xml",
+      "gitBlob": "bd47a579f868e24e2aa309a3b8227cb11261ef32",
+      "sha256": "680ecca9456a921d61f8aad6895beb59c17b29299b705c74c0af7a0ced9479c3",
+      "bytes": 669,
+      "externalRelativePath": "OpenGreekAndLatin--First1KGreek/data/tlg0527/tlg053/__cts__.xml",
+      "sourceUrl": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg0527/tlg053/__cts__.xml",
+      "byteVerifiedAtUtc": "2026-11-03T10:11:07.522325+00:00",
+      "role": "EDITION_METADATA",
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "locatorScope": "Named digital file; verse context reading is a separate step.",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "quoteSafe": false,
+      "classScope": "A1 identifies the biblical digital text, not an independent manuscript or error-free transcription. C metadata is locator/rights context, not an additional biblical witness. Quote-safe scope is specified by the bounded primary profiles, not this file inventory."
+    },
+    {
+      "id": "MT-Ezek",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "path": "wlc/Ezek.xml",
+      "gitBlob": "2b9cdaab9f434201f69d5a0d747d8a567f4b9432",
+      "sha256": "90bf8adfa66b2f6695c702263fe668755c99c6afc386202c12de4f704f5d4e46",
+      "bytes": 1724378,
+      "externalRelativePath": "openscriptures--morphhb/wlc/Ezek.xml",
+      "sourceUrl": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Ezek.xml",
+      "byteVerifiedAtUtc": "2026-11-03T10:11:08.248704+00:00",
+      "role": "PRIMARY_TEXT",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "locatorScope": "Named digital file; verse context reading is a separate step.",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "quoteSafe": false,
+      "classScope": "A1 identifies the biblical digital text, not an independent manuscript or error-free transcription. C metadata is locator/rights context, not an additional biblical witness. Quote-safe scope is specified by the bounded primary profiles, not this file inventory."
+    },
+    {
+      "id": "LXX-Zech",
+      "repo": "OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "path": "data/tlg0527/tlg046/tlg0527.tlg046.1st1K-grc1.xml",
+      "gitBlob": "14b10f9bb1b3c8e65337775f8a9d0de118699cb3",
+      "sha256": "797fb6e785dcabcb1b59acbe9d3e2df54d133c78059edf638b6087a16600831a",
+      "bytes": 110995,
+      "externalRelativePath": "OpenGreekAndLatin--First1KGreek/data/tlg0527/tlg046/tlg0527.tlg046.1st1K-grc1.xml",
+      "sourceUrl": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg0527/tlg046/tlg0527.tlg046.1st1K-grc1.xml",
+      "byteVerifiedAtUtc": "2026-11-03T10:11:08.717092+00:00",
+      "role": "PRIMARY_TEXT",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "locatorScope": "Named digital file; verse context reading is a separate step.",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "quoteSafe": false,
+      "classScope": "A1 identifies the biblical digital text, not an independent manuscript or error-free transcription. C metadata is locator/rights context, not an additional biblical witness. Quote-safe scope is specified by the bounded primary profiles, not this file inventory."
+    },
+    {
+      "id": "LXX-Zech-META",
+      "repo": "OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "path": "data/tlg0527/tlg046/__cts__.xml",
+      "gitBlob": "0a30c49833aad69848424123cc9ea5216677dc53",
+      "sha256": "6f7d2a624e25cbfa8352a044abfd409ccecda8f1d5393760c1d6af710451d6f0",
+      "bytes": 670,
+      "externalRelativePath": "OpenGreekAndLatin--First1KGreek/data/tlg0527/tlg046/__cts__.xml",
+      "sourceUrl": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg0527/tlg046/__cts__.xml",
+      "byteVerifiedAtUtc": "2026-11-03T10:11:09.131343+00:00",
+      "role": "EDITION_METADATA",
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "locatorScope": "Named digital file; verse context reading is a separate step.",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "quoteSafe": false,
+      "classScope": "A1 identifies the biblical digital text, not an independent manuscript or error-free transcription. C metadata is locator/rights context, not an additional biblical witness. Quote-safe scope is specified by the bounded primary profiles, not this file inventory."
+    },
+    {
+      "id": "MT-Zech",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "path": "wlc/Zech.xml",
+      "gitBlob": "d2b0328e0611559396df3c1acbe9d8abe7238199",
+      "sha256": "2e287c8d0e0abd3bf601eb8ef9b4ee6ca3ae12cf36c0ed1612a7dcca54a2e777",
+      "bytes": 300202,
+      "externalRelativePath": "openscriptures--morphhb/wlc/Zech.xml",
+      "sourceUrl": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Zech.xml",
+      "byteVerifiedAtUtc": "2026-11-03T10:11:09.679092+00:00",
+      "role": "PRIMARY_TEXT",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "locatorScope": "Named digital file; verse context reading is a separate step.",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "quoteSafe": false,
+      "classScope": "A1 identifies the biblical digital text, not an independent manuscript or error-free transcription. C metadata is locator/rights context, not an additional biblical witness. Quote-safe scope is specified by the bounded primary profiles, not this file inventory."
+    },
+    {
+      "id": "F1K-README",
+      "repo": "OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "path": "README.md",
+      "gitBlob": "77c1244cae16bf317232bfb51e6c948958af4bd8",
+      "sha256": "9ed880acddf0b303442c61e45bfc029fba329077d08fc0991c11aad76e3d7dda",
+      "bytes": 1857,
+      "externalRelativePath": "OpenGreekAndLatin--First1KGreek/README.md",
+      "sourceUrl": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/ed91552c52530c8f5a3ddf2dd767e899372a804c/README.md",
+      "byteVerifiedAtUtc": "2026-11-03T10:11:10.084401+00:00",
+      "role": "RIGHTS_OR_PROVENANCE_METADATA",
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "locatorScope": "Named digital file; verse context reading is a separate step.",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "quoteSafe": false,
+      "classScope": "A1 identifies the biblical digital text, not an independent manuscript or error-free transcription. C metadata is locator/rights context, not an additional biblical witness. Quote-safe scope is specified by the bounded primary profiles, not this file inventory."
+    },
+    {
+      "id": "F1K-LICENSE",
+      "repo": "OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "path": "license.md",
+      "gitBlob": "033217724f8631eeb12987b30d76e8a62f275ceb",
+      "sha256": "ccf0e8ce183761bf82700126cc45a4e907b2cede024e65e3fef5c2338b9b7063",
+      "bytes": 18625,
+      "externalRelativePath": "OpenGreekAndLatin--First1KGreek/license.md",
+      "sourceUrl": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/ed91552c52530c8f5a3ddf2dd767e899372a804c/license.md",
+      "byteVerifiedAtUtc": "2026-11-03T10:11:10.629314+00:00",
+      "role": "RIGHTS_OR_PROVENANCE_METADATA",
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "locatorScope": "Named digital file; verse context reading is a separate step.",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "quoteSafe": false,
+      "classScope": "A1 identifies the biblical digital text, not an independent manuscript or error-free transcription. C metadata is locator/rights context, not an additional biblical witness. Quote-safe scope is specified by the bounded primary profiles, not this file inventory."
+    },
+    {
+      "id": "MT-README",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "path": "README.md",
+      "gitBlob": "0ab32e4de54f034368abd343b08caa8f3e36da99",
+      "sha256": "2da25acf89375558b843dab582bdf00833137baf1c8afe2b32cf09e251179999",
+      "bytes": 5027,
+      "externalRelativePath": "openscriptures--morphhb/README.md",
+      "sourceUrl": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/README.md",
+      "byteVerifiedAtUtc": "2026-11-03T10:11:11.045946+00:00",
+      "role": "RIGHTS_OR_PROVENANCE_METADATA",
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "locatorScope": "Named digital file; verse context reading is a separate step.",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "quoteSafe": false,
+      "classScope": "A1 identifies the biblical digital text, not an independent manuscript or error-free transcription. C metadata is locator/rights context, not an additional biblical witness. Quote-safe scope is specified by the bounded primary profiles, not this file inventory."
+    },
+    {
+      "id": "MT-LICENSE",
+      "repo": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "path": "LICENSE.md",
+      "gitBlob": "906e051438bf66ef6f2f7f36110504cba2b6867f",
+      "sha256": "9bf4a2890c25372e4c1dc750d550bfb4eacfbfcb63c53123b0628159370d1878",
+      "bytes": 1476,
+      "externalRelativePath": "openscriptures--morphhb/LICENSE.md",
+      "sourceUrl": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/LICENSE.md",
+      "byteVerifiedAtUtc": "2026-11-03T10:11:11.450527+00:00",
+      "role": "RIGHTS_OR_PROVENANCE_METADATA",
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "locatorScope": "Named digital file; verse context reading is a separate step.",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "quoteSafe": false,
+      "classScope": "A1 identifies the biblical digital text, not an independent manuscript or error-free transcription. C metadata is locator/rights context, not an additional biblical witness. Quote-safe scope is specified by the bounded primary profiles, not this file inventory."
+    },
+    {
+      "id": "NT-README",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "path": "README.md",
+      "gitBlob": "c231c7c24085162fbdc20721eb568ada7b355a92",
+      "sha256": "eb3b7c36b95004747e59efd8c269fc7dbb1b46b15a5559b4adb4574b22423264",
+      "bytes": 1577,
+      "externalRelativePath": "morphgnt--py-sblgnt/README.md",
+      "sourceUrl": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/README.md",
+      "byteVerifiedAtUtc": "2026-11-03T10:11:11.813571+00:00",
+      "role": "RIGHTS_OR_PROVENANCE_METADATA",
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "locatorScope": "Named digital file; verse context reading is a separate step.",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "quoteSafe": false,
+      "classScope": "A1 identifies the biblical digital text, not an independent manuscript or error-free transcription. C metadata is locator/rights context, not an additional biblical witness. Quote-safe scope is specified by the bounded primary profiles, not this file inventory."
+    },
+    {
+      "id": "NT-JOHN",
+      "repo": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "path": "pysblgnt/sblgnt/64-Jn-morphgnt.txt",
+      "gitBlob": "2c1af0f23f5c1a1bf4c9da9afe7e480ca4a6e8c7",
+      "sha256": "5ca99310a5766110c79f09f500a9ffd897bae1b5471863c20266c5e18f7798c7",
+      "bytes": 1065501,
+      "externalRelativePath": "morphgnt--py-sblgnt/pysblgnt/sblgnt/64-Jn-morphgnt.txt",
+      "sourceUrl": "https://github.com/morphgnt/py-sblgnt/blob/904fed08a14bffea6e1776d8c4c3eeb7c6092688/pysblgnt/sblgnt/64-Jn-morphgnt.txt",
+      "byteVerifiedAtUtc": "2026-11-03T10:11:12.558277+00:00",
+      "role": "PRIMARY_TEXT",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "locatorScope": "Named digital file; verse context reading is a separate step.",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "quoteSafe": false,
+      "classScope": "A1 identifies the biblical digital text, not an independent manuscript or error-free transcription. C metadata is locator/rights context, not an additional biblical witness. Quote-safe scope is specified by the bounded primary profiles, not this file inventory."
+    }
+  ],
+  "sources": [
+    {
+      "id": "MT",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "contextVerified": true,
+      "version": "Open Scriptures Hebrew Bible / Westminster Leningrad Codex in morphhb@3d15126fb1ef74867fc1434be1942e837932691f",
+      "readingScope": "Eight declared OT contexts, direct ketiv words only; qere/editorial notes kept separately. Hebrew whitespace collapsed, no NFC. Five full book files acquired, not five full books read.",
+      "quoteSafeScope": "Exact selected digital passages as identified, with stated text-quality limitations. Not a critical reconstruction, a theorem about atonement extent or clearance for a public product.",
+      "rightsNote": "README/LICENSE distinguish public-domain WLC text from CC BY 4.0 morphology/lemma data; original attribution below. The linked full CC BY license was not fetched.",
+      "contextIds": [
+        "MT-DEUT30",
+        "MT-ISA11",
+        "MT-ISA43",
+        "MT-ISA56",
+        "MT-JER31",
+        "MT-EZ34",
+        "MT-EZ37",
+        "MT-ZECH2"
+      ],
+      "sourceFileIds": [
+        "MT-Deut",
+        "MT-Ezek",
+        "MT-Isa",
+        "MT-Jer",
+        "MT-Zech"
+      ]
+    },
+    {
+      "id": "LXX",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "contextVerified": true,
+      "version": "First1KGreek@ed91552c52530c8f5a3ddf2dd767e899372a804c; tlg0527 .1st1K-grc1; headers and matching CTS metadata: Swete vol.1 (1901) Deuteronomy; vol.3 (1905) Isaiah/Jeremiah/Ezekiel/Zechariah",
+      "readingScope": "Eight declared Greek OT contexts. Isaiah grc1 is the selected Swete edition, not Ottley grc2. Notes/head excluded, their tails retained; empty page/line milestones contribute no text; NFC and whitespace only. Visible textual irregularities retained, not repaired.",
+      "quoteSafeScope": "Exact selected digital passages as identified, with stated text-quality limitations. Not a critical reconstruction, a theorem about atonement extent or clearance for a public product.",
+      "rightsNote": "All five TEI headers and repository license declare CC BY-SA 4.0. Full 174-line license and README read; images/manuscripts/print not acquired. No release approval follows.",
+      "contextIds": [
+        "LXX-DEUT30",
+        "LXX-ISA11",
+        "LXX-ISA43",
+        "LXX-ISA56",
+        "LXX-JER31",
+        "LXX-EZ34",
+        "LXX-EZ37",
+        "LXX-ZECH2"
+      ],
+      "sourceFileIds": [
+        "LXX-Deut",
+        "LXX-Ezek",
+        "LXX-Isa",
+        "LXX-Jer",
+        "LXX-Zech"
+      ]
+    },
+    {
+      "id": "JOHN",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "contextVerified": true,
+      "version": "MorphGNT SBLGNT via py-sblgnt@904fed08a14bffea6e1776d8c4c3eeb7c6092688; eight-column schema",
+      "readingScope": "John 1:9-18; 7:30-39; 10:1-18; 11:45-57, 51 verse positions. The rest of John and other NT books are not newly read; prior Wave5 contexts are retained historical evidence, not fresh old-package replay.",
+      "quoteSafeScope": "Exact selected digital passages as identified, with stated text-quality limitations. Not a critical reconstruction, a theorem about atonement extent or clearance for a public product.",
+      "rightsNote": "README distinguishes SBLGNT text EULA, CC-BY-SA 3.0 morphology/lemmatization and MIT code. The linked SBLGNT EULA was not newly fetched/read; no new publication clearance.",
+      "contextIds": [
+        "JN1",
+        "JN7",
+        "JN10",
+        "JN11"
+      ],
+      "sourceFileIds": [
+        "NT-JOHN"
+      ]
+    }
+  ],
+  "editions": [
+    {
+      "book": "Deut",
+      "sourceFile": "LXX-Deut",
+      "metadataFile": "LXX-Deut-META",
+      "editionUrn": "urn:cts:greekLit:tlg0527.tlg005.1st1K-grc1",
+      "sourceDescription": "The Old Testament in Greek Genesis - IV Kings Henry Barclay Swete Septuaginta University Press Cambridge 1901 1 Internet Archive",
+      "matchingCtsDescription": "Δευτερονόμιον Septuaginta. The Old Testament in Greek According to the Septuagint. Volume 1: Genesis-IV Kings. Swete, Henry Barclay, editor. Cambridge: Cambridge University Press, 1901.",
+      "printYear": "1901",
+      "printedCollationClaimed": false
+    },
+    {
+      "book": "Isa",
+      "sourceFile": "LXX-Isa",
+      "metadataFile": "LXX-Isa-META",
+      "editionUrn": "urn:cts:greekLit:tlg0527.tlg048.1st1K-grc1",
+      "sourceDescription": "The Old Testament in Greek Henry Barclay Swete D.D. Septuaginta Cambridge University Press Cambridge 1905 3 The Internet Archive",
+      "matchingCtsDescription": "Isaias Septuaginta. The Old Testament in Greek According to the Septuagint. Volume 3: Hosea-4 Maccabees, Psalms of Solomon, Enoch, The Odes. Swete, Henry Barclay, editor. Cambridge: Cambridge University Press, 1905",
+      "printYear": "1905",
+      "printedCollationClaimed": false
+    },
+    {
+      "book": "Jer",
+      "sourceFile": "LXX-Jer",
+      "metadataFile": "LXX-Jer-META",
+      "editionUrn": "urn:cts:greekLit:tlg0527.tlg049.1st1K-grc1",
+      "sourceDescription": "The Old Testament in Greek Henry Barclay Swete D.D. Septuaginta Cambridge University Press Cambridge 1905 3 The Internet Archive",
+      "matchingCtsDescription": "Ἱερεμίας Septuaginta. The Old Testament in Greek According to the Septuagint. Volume 3: Hosea-4 Maccabees, Psalms of Solomon, Enoch, The Odes. Swete, Henry Barclay, editor. Cambridge: Cambridge University Press, 1905",
+      "printYear": "1905",
+      "printedCollationClaimed": false
+    },
+    {
+      "book": "Ezek",
+      "sourceFile": "LXX-Ezek",
+      "metadataFile": "LXX-Ezek-META",
+      "editionUrn": "urn:cts:greekLit:tlg0527.tlg053.1st1K-grc1",
+      "sourceDescription": "The Old Testament in Greek Henry Barclay Swete D.D. Septuaginta Cambridge University Press Cambridge 1905 3 The Internet Archive",
+      "matchingCtsDescription": "Ἰεζεκιήλ Septuaginta. The Old Testament in Greek According to the Septuagint. Volume 3: Hosea-4 Maccabees, Psalms of Solomon, Enoch, The Odes. Swete, Henry Barclay, editor. Cambridge: Cambridge University Press, 1905",
+      "printYear": "1905",
+      "printedCollationClaimed": false
+    },
+    {
+      "book": "Zech",
+      "sourceFile": "LXX-Zech",
+      "metadataFile": "LXX-Zech-META",
+      "editionUrn": "urn:cts:greekLit:tlg0527.tlg046.1st1K-grc1",
+      "sourceDescription": "The Old Testament in Greek Henry Barclay Swete D.D. Septuaginta Cambridge University Press Cambridge 1905 3 The Internet Archive",
+      "matchingCtsDescription": "Ζαχαρίας Septuaginta. The Old Testament in Greek According to the Septuagint. Volume 3: Hosea-4 Maccabees, Psalms of Solomon, Enoch, The Odes. Swete, Henry Barclay, editor. Cambridge: Cambridge University Press, 1905",
+      "printYear": "1905",
+      "printedCollationClaimed": false
+    }
+  ],
+  "contexts": [
+    {
+      "id": "MT-DEUT30",
+      "sourceFile": "MT-Deut",
+      "kind": "osis-ketiv",
+      "book": "Deut",
+      "chapter": 30,
+      "firstVerse": 1,
+      "lastVerse": 10,
+      "verses": [
+        {
+          "ref": "Deut.30.1",
+          "text": "וְהָיָה֩ כִֽי יָבֹ֨אוּ עָלֶ֜יךָ כָּל הַדְּבָרִ֣ים הָאֵ֗לֶּה הַבְּרָכָה֙ וְהַקְּלָלָ֔ה אֲשֶׁ֥ר נָתַ֖תִּי לְפָנֶ֑יךָ וַהֲשֵׁבֹתָ֙ אֶל לְבָבֶ֔ךָ בְּכָל הַגּוֹיִ֔ם אֲשֶׁ֧ר הִדִּיחֲךָ֛ יְהוָ֥ה אֱלֹהֶ֖יךָ שָֽׁמָּה"
+        },
+        {
+          "ref": "Deut.30.2",
+          "text": "וְשַׁבְתָּ֞ עַד יְהוָ֤ה אֱלֹהֶ֨יךָ֙ וְשָׁמַעְתָּ֣ בְקֹל֔וֹ כְּכֹ֛ל אֲשֶׁר אָנֹכִ֥י מְצַוְּךָ֖ הַיּ֑וֹם אַתָּ֣ה וּבָנֶ֔יךָ בְּכָל לְבָבְךָ֖ וּבְכָל נַפְשֶֽׁךָ"
+        },
+        {
+          "ref": "Deut.30.3",
+          "text": "וְשָׁ֨ב יְהוָ֧ה אֱלֹהֶ֛יךָ אֶת שְׁבוּתְךָ֖ וְרִחֲמֶ֑ךָ וְשָׁ֗ב וְקִבֶּצְךָ֙ מִכָּל הָ֣עַמִּ֔ים אֲשֶׁ֧ר הֱפִֽיצְךָ֛ יְהוָ֥ה אֱלֹהֶ֖יךָ שָֽׁמָּה"
+        },
+        {
+          "ref": "Deut.30.4",
+          "text": "אִם יִהְיֶ֥ה נִֽדַּחֲךָ֖ בִּקְצֵ֣ה הַשָּׁמָ֑יִם מִשָּׁ֗ם יְקַבֶּצְךָ֙ יְהוָ֣ה אֱלֹהֶ֔יךָ וּמִשָּׁ֖ם יִקָּחֶֽךָ"
+        },
+        {
+          "ref": "Deut.30.5",
+          "text": "וֶהֱבִֽיאֲךָ֞ יְהוָ֣ה אֱלֹהֶ֗יךָ אֶל הָאָ֛רֶץ אֲשֶׁר יָרְשׁ֥וּ אֲבֹתֶ֖יךָ וִֽירִשְׁתָּ֑הּ וְהֵיטִֽבְךָ֥ וְהִרְבְּךָ֖ מֵאֲבֹתֶֽיךָ"
+        },
+        {
+          "ref": "Deut.30.6",
+          "text": "וּמָ֨ל יְהוָ֧ה אֱלֹהֶ֛יךָ אֶת לְבָבְךָ֖ וְאֶת לְבַ֣ב זַרְעֶ֑ךָ לְאַהֲבָ֞ה אֶת יְהוָ֧ה אֱלֹהֶ֛יךָ בְּכָל לְבָבְךָ֥ וּבְכָל נַפְשְׁךָ֖ לְמַ֥עַן חַיֶּֽיךָ"
+        },
+        {
+          "ref": "Deut.30.7",
+          "text": "וְנָתַן֙ יְהוָ֣ה אֱלֹהֶ֔יךָ אֵ֥ת כָּל הָאָל֖וֹת הָאֵ֑לֶּה עַל אֹיְבֶ֥יךָ וְעַל שֹׂנְאֶ֖יךָ אֲשֶׁ֥ר רְדָפֽוּךָ"
+        },
+        {
+          "ref": "Deut.30.8",
+          "text": "וְאַתָּ֣ה תָשׁ֔וּב וְשָׁמַעְתָּ֖ בְּק֣וֹל יְהוָ֑ה וְעָשִׂ֨יתָ֙ אֶת כָּל מִצְוֺתָ֔יו אֲשֶׁ֛ר אָנֹכִ֥י מְצַוְּךָ֖ הַיּֽוֹם"
+        },
+        {
+          "ref": "Deut.30.9",
+          "text": "וְהוֹתִֽירְךָ֩ יְהוָ֨ה אֱלֹהֶ֜יךָ בְּכֹ֣ל מַעֲשֵׂ֣ה יָדֶ֗ךָ בִּפְרִ֨י בִטְנְךָ֜ וּבִפְרִ֧י בְהֶמְתְּךָ֛ וּבִפְרִ֥י אַדְמָתְךָ֖ לְטוֹבָ֑ה כִּ֣י יָשׁ֣וּב יְהוָ֗ה לָשׂ֤וּשׂ עָלֶ֨יךָ֙ לְט֔וֹב כַּאֲשֶׁר שָׂ֖שׂ עַל אֲבֹתֶֽיךָ"
+        },
+        {
+          "ref": "Deut.30.10",
+          "text": "כִּ֣י תִשְׁמַ֗ע בְּקוֹל֙ יְהוָ֣ה אֱלֹהֶ֔יךָ לִשְׁמֹ֤ר מִצְוֺתָיו֙ וְחֻקֹּתָ֔יו הַכְּתוּבָ֕ה בְּסֵ֥פֶר הַתּוֹרָ֖ה הַזֶּ֑ה כִּ֤י תָשׁוּב֙ אֶל יְהוָ֣ה אֱלֹהֶ֔יךָ בְּכָל לְבָבְךָ֖ וּבְכָל נַפְשֶֽׁךָ"
+        }
+      ],
+      "textSha256": "fbd3252dfd20c40acf6767cc7ae9e39fa3908c94d4a03666f8cf2777d688f101",
+      "contextVerified": true,
+      "readingScope": "SELECTED_DIGITAL_CONTEXT_NOT_WHOLE_BOOK_OR_PRINT",
+      "excludedNotes": []
+    },
+    {
+      "id": "LXX-DEUT30",
+      "sourceFile": "LXX-Deut",
+      "kind": "tei-body",
+      "book": "Deut",
+      "chapter": 30,
+      "firstVerse": 1,
+      "lastVerse": 10,
+      "verses": [
+        {
+          "ref": "Deut.30.1",
+          "text": "Καὶ ἔσται ὡς ἂν ἔλθωσιν ἐπὶ σὲ πάντα τὰ ῥήματα ταῦτα, ἡ εὐλογία καὶ ἡ κατάρα ἢν ἔδωκα πρὸ προσώπου σου, καὶ δέξῃ εἰς τὴν καρδίαν σου ἐν πᾶσιν τοῖς ἔθνεσιν οὗ ἐάν σε διασκορπίσῃ Κύριος ἐκεῖ,"
+        },
+        {
+          "ref": "Deut.30.2",
+          "text": "καὶ ἐπιστραφήσῃ ἐπὶ κύριον τὸν θεόν σου, καὶ εἰσακούσῃ τῆς φωνῆς αὐτοῦ κατὰ πάντα ὅσα ἐγὼ ἐντέλλομαί σοι σήμερον ἐξ ὅλης τῆς καρδίας σου καὶ ἐξ ὅλης τῆς ψυχῆς σου,"
+        },
+        {
+          "ref": "Deut.30.3",
+          "text": "καὶ ἰάσηται κύριος τὰς ἁμαρτίας σου· καὶ σε, καὶ πάλιν συνάξει σε ἐκ πάντων τῶν ἐθνῶν εἰς οὓς δίε σε κύριος ἐκεῖ."
+        },
+        {
+          "ref": "Deut.30.4",
+          "text": "ἐὰν ᾖ ἡ διασπορά σου ἀπ’ ἄκρου τοῦ οὐρανοῦ ἕως ἄκρου τοῦ οὐρανοῦ, ἐκεῖθεν συνάξει σε κύριος ὁ θεός σου, καὶ ἐκεῖθεν λήμψεταί σε κύριος ὁ θεός σου·"
+        },
+        {
+          "ref": "Deut.30.5",
+          "text": "καὶ εἰσάξει σε ὁ θεός σου ἐκεῖθεν εἰς τὴν γῆν ἣν ἐκληρονόμησαν οἱ πατέρες σου, καὶ κληρονομήσεις αὐτήν· καὶ εὖ σε ποιήσει, καὶ πλεοναστόν σε ὑπὲρ τοὺς πατέρας σου."
+        },
+        {
+          "ref": "Deut.30.6",
+          "text": "καὶ περικαθαριεῖ κύριος τὴν σου κοὶ τὴν καρδίαν τοῦ σπέρματός σου, ἀγαπᾷν Κύριον τὸν θεόν σου ἐξ ὅλης τῆς καρδίας σου καὶ ἐξ ὅλης τῆς ψυχῆς σου, ἵνα ζῆς σύ."
+        },
+        {
+          "ref": "Deut.30.7",
+          "text": "καὶ δώσει Κύριος ὁ θεός σου τὰς ἀρὰς ταύτας ἐπὶ τοὺς ἐχθρούς σου καὶ ἐπὶ τοὺς μισοῦντάς σε, οἳ ἐδίωξάν σε."
+        },
+        {
+          "ref": "Deut.30.8",
+          "text": "καὶ σὺ ἐπιστραφήσῃ ἐπὶ Κύριον καὶ εἰσακούσῃ τῆς φωνῆς Κυρίου τοῦ θεοῦ σου, καὶ ποιήσεις τὰς ἐντολὰς αὐτοῦ ὅσας ἐγὼ ἐντέλλομαί σοι σήμερον·"
+        },
+        {
+          "ref": "Deut.30.9",
+          "text": "καὶ εὐλογήσει σε Κύριος ὁ θεός σου ἐν παντὶ ἔργῳ τῶν χειρῶν σου, ἐν τοῖς ἐκγόνοις τῆς κοιλίας σου καὶ ἐν τοῖς γενήμασιν τῆς γῆς σου καὶ ἐν τοῖς ἐκγόνοις τῶν κτηνῶν σου. ὅτι ἐπιστρέψει Κύριος ὁ θεός σου εὐφρανθῆναι ἐπὶ σοὶ εἰς ἀγαθά, καθότι ηὐφράνθη ἐπὶ τοῖς πατράσιν σου."
+        },
+        {
+          "ref": "Deut.30.10",
+          "text": "ἐὰν εἰσακούσῃς τῆς φωνῆς κυρίου τοῦ θεοῦ σου, φυλάσσεσθαι τὰς ἐντολὰς αὐτοῦ καὶ τὰ δικαιώματα αὐτοῦ καὶ τὰς κρίσεις αὐτοῦ τὰς γεγραμμένας ἐν τῷ βιβλίῳ τοῦ νόμου τούτου, ἐὰν ἐπιστραφῇς τὸν θεόν σου ἐξ ὅλης τῆς καρδίας σου καὶ ἐξ ὅλης τῆς ψυχῆς"
+        }
+      ],
+      "textSha256": "63c8304c6d4128d2a030407cde7fb638f64202849c4a9451d1f7c3111608e466",
+      "contextVerified": true,
+      "readingScope": "SELECTED_DIGITAL_CONTEXT_NOT_WHOLE_BOOK_OR_PRINT"
+    },
+    {
+      "id": "MT-ISA11",
+      "sourceFile": "MT-Isa",
+      "kind": "osis-ketiv",
+      "book": "Isa",
+      "chapter": 11,
+      "firstVerse": 10,
+      "lastVerse": 16,
+      "verses": [
+        {
+          "ref": "Isa.11.10",
+          "text": "וְהָיָה֙ בַּיּ֣וֹם הַה֔וּא שֹׁ֣רֶשׁ יִשַׁ֗י אֲשֶׁ֤ר עֹמֵד֙ לְנֵ֣ס עַמִּ֔ים אֵלָ֖יו גּוֹיִ֣ם יִדְרֹ֑שׁוּ וְהָיְתָ֥ה מְנֻחָת֖וֹ כָּבֽוֹד"
+        },
+        {
+          "ref": "Isa.11.11",
+          "text": "וְהָיָ֣ה בַּיּ֣וֹם הַה֗וּא יוֹסִ֨יף אֲדֹנָ֤י שֵׁנִית֙ יָד֔וֹ לִקְנ֖וֹת אֶת שְׁאָ֣ר עַמּ֑וֹ אֲשֶׁ֣ר יִשָּׁאֵר֩ מֵאַשּׁ֨וּר וּמִמִּצְרַ֜יִם וּמִפַּתְר֣וֹס וּמִכּ֗וּשׁ וּמֵעֵילָ֤ם וּמִשִּׁנְעָר֙ וּמֵ֣חֲמָ֔ת וּמֵאִיֵּ֖י הַיָּֽם"
+        },
+        {
+          "ref": "Isa.11.12",
+          "text": "וְנָשָׂ֥א נֵס֙ לַגּוֹיִ֔ם וְאָסַ֖ף נִדְחֵ֣י יִשְׂרָאֵ֑ל וּנְפֻצ֤וֹת יְהוּדָה֙ יְקַבֵּ֔ץ מֵאַרְבַּ֖ע כַּנְפ֥וֹת הָאָֽרֶץ"
+        },
+        {
+          "ref": "Isa.11.13",
+          "text": "וְסָ֨רָה֙ קִנְאַ֣ת אֶפְרַ֔יִם וְצֹרְרֵ֥י יְהוּדָ֖ה יִכָּרֵ֑תוּ אֶפְרַ֨יִם֙ לֹֽא יְקַנֵּ֣א אֶת יְהוּדָ֔ה וִֽיהוּדָ֖ה לֹֽא יָצֹ֥ר אֶת אֶפְרָֽיִם"
+        },
+        {
+          "ref": "Isa.11.14",
+          "text": "וְעָפ֨וּ בְכָתֵ֤ף פְּלִשְׁתִּים֙ יָ֔מָּה יַחְדָּ֖ו יָבֹ֣זּוּ אֶת בְּנֵי קֶ֑דֶם אֱד֤וֹם וּמוֹאָב֙ מִשְׁל֣וֹח יָדָ֔ם וּבְנֵ֥י עַמּ֖וֹן מִשְׁמַעְתָּֽם"
+        },
+        {
+          "ref": "Isa.11.15",
+          "text": "וְהֶחֱרִ֣ים יְהוָ֗ה אֵ֚ת לְשׁ֣וֹן יָם מִצְרַ֔יִם וְהֵנִ֥יף יָד֛וֹ עַל הַנָּהָ֖ר בַּעְיָ֣ם רוּח֑וֹ וְהִכָּ֨הוּ֙ לְשִׁבְעָ֣ה נְחָלִ֔ים וְהִדְרִ֖יךְ בַּנְּעָלִֽים"
+        },
+        {
+          "ref": "Isa.11.16",
+          "text": "וְהָיְתָ֣ה מְסִלָּ֔ה לִשְׁאָ֣ר עַמּ֔וֹ אֲשֶׁ֥ר יִשָּׁאֵ֖ר מֵֽאַשּׁ֑וּר כַּאֲשֶׁ֤ר הָֽיְתָה֙ לְיִשְׂרָאֵ֔ל בְּי֥וֹם עֲלֹת֖וֹ מֵאֶ֥רֶץ מִצְרָֽיִם"
+        }
+      ],
+      "textSha256": "53e23fc9086e923557b52ae643b843a1813f213d0b693a9d0b0c86a9f08fbdb8",
+      "contextVerified": true,
+      "readingScope": "SELECTED_DIGITAL_CONTEXT_NOT_WHOLE_BOOK_OR_PRINT",
+      "excludedNotes": [
+        {
+          "ref": "Isa.11.14",
+          "xml": "<ns0:note xmlns:ns0=\"http://www.bibletechnologies.net/2003/OSIS/namespace\" n=\"1\">BHS has been faithful to the Leningrad Codex where there might be a question of the validity of the form and we keep the same form as BHS. </ns0:note>\n          "
+        }
+      ]
+    },
+    {
+      "id": "LXX-ISA11",
+      "sourceFile": "LXX-Isa",
+      "kind": "tei-body",
+      "book": "Isa",
+      "chapter": 11,
+      "firstVerse": 10,
+      "lastVerse": 16,
+      "verses": [
+        {
+          "ref": "Isa.11.10",
+          "text": "καὶ ἔσται ἐν τῇ ἡμέρᾳ ἐκείνῃ ἡ ῥίζα τοῦ Ἰεσσαὶ καὶ ὁ ἀνιστάμενος ἄρχειν ἐθνῶν, ἐπʼ αὐτῷ ἔθνη ἐλπιοῦσιν. καὶ ἔσται ἡ ἀνάπαυσις αὐτοῦ τιμή."
+        },
+        {
+          "ref": "Isa.11.11",
+          "text": "Καὶ ἔσται τῇ ἡμέρᾳ ἐκείνῃ προσθήσει ὁ κύριος τοῦ δεῖξαι τὴν χεῖρα αὐτοῦ τοῦ ζηλῶσαι τὸ καταλειφθὲν ὑπόλοιπον τοῦ λαοῦ, ὁ ἂν καταλειφθῇ ὑπὸ τῶν Ἀσσυρίων καὶ ἀπὸ Αἰγύπτου καὶ ἀπὸ Βαβυλωνίας καὶ Αἰθιοπίας καὶ ἀπὸ Αἰλαμειτῶν καὶ ἀπὸ ἡλίου ἀνατολῶν καὶ ἐξ Ἀραβίας."
+        },
+        {
+          "ref": "Isa.11.12",
+          "text": "καὶ ἀρεῖ σημεῖον εἰς τὰ ἔθνη, καὶ συνάξει τοὺς ἀπολομένους Ἰσραήλ, καὶ τοὺς διεσπαρμένους Ἰούδα συνάξει ἐκ τῶν τεσσάρων πτερύγων τῆς γῆς."
+        },
+        {
+          "ref": "Isa.11.13",
+          "text": "καὶ ἀφαιρεθήσεται ὁ ζῆλος Ἐφράιμ, καὶ οἱ ἐχθροὶ Ἰούδα ἀπολοῦνται· Ἐφράιμ οὐ ζηλώσει Ἰούδαν, καὶ Ἰούδας οὐ θλίψει Ἐφράιμ."
+        },
+        {
+          "ref": "Isa.11.14",
+          "text": "καὶ πετασθήσονται ἐν πλοίοις ἀλλοφύλων· θάλασσαν ἄμα προνομεύσουσιν καὶ τοὺς ἀφʼ ἡλίου ἀνατολῶν καὶ Ἰδουμαίαν, καὶ ἐπὶ Μωὰβ πρῶτον τὰς χεῖρας ἐπιβαλοῦσιν, οἱ δὲ υἱοὶ Ἀμμῶν πρῶτοι ὑπακούσονται."
+        },
+        {
+          "ref": "Isa.11.15",
+          "text": "καὶ ἐρημώσει Κύριος τὴν θάλασσαν Αἰγύπτου, καὶ ἐπιβαλεῖ τὴν χεῖρα αὐτοῦ ἐπὶ τὸν ποταμὸν πνεύματι βιαίῳ, καὶ πατάξει ἑπτὰ φάραγγας ὥστε διαπορεύεσθαι αὐτὸν ἐν ὑποδήμασιν·"
+        },
+        {
+          "ref": "Isa.11.16",
+          "text": "§ ¹6 καὶ ἔσται δίοδος τῷ καταλειφθέντι μου λαῷ ἐν Αἰγύπτῳ, καὶ ἔσται τῷ Ἰσραὴλ ὡς ἡ ἡμέρα ὅτε ἐξῆλθεν ἐκ γῆς Αἰγύπτου."
+        }
+      ],
+      "textSha256": "b69e41cde6dc7338d5429f9e89a379a579f1bbdf695d1fe6c89ef86d0d164de8",
+      "contextVerified": true,
+      "readingScope": "SELECTED_DIGITAL_CONTEXT_NOT_WHOLE_BOOK_OR_PRINT"
+    },
+    {
+      "id": "MT-ISA43",
+      "sourceFile": "MT-Isa",
+      "kind": "osis-ketiv",
+      "book": "Isa",
+      "chapter": 43,
+      "firstVerse": 1,
+      "lastVerse": 7,
+      "verses": [
+        {
+          "ref": "Isa.43.1",
+          "text": "וְעַתָּ֞ה כֹּֽה אָמַ֤ר יְהוָה֙ בֹּרַאֲךָ֣ יַעֲקֹ֔ב וְיֹצֶרְךָ֖ יִשְׂרָאֵ֑ל אַל תִּירָא֙ כִּ֣י גְאַלְתִּ֔יךָ קָרָ֥אתִי בְשִׁמְךָ֖ לִי אָֽתָּה"
+        },
+        {
+          "ref": "Isa.43.2",
+          "text": "כִּֽי תַעֲבֹ֤ר בַּמַּ֨יִם֙ אִתְּךָ אָ֔נִי וּבַנְּהָר֖וֹת לֹ֣א יִשְׁטְפ֑וּךָ כִּֽי תֵלֵ֤ךְ בְּמוֹ אֵשׁ֙ לֹ֣א תִכָּוֶ֔ה וְלֶהָבָ֖ה לֹ֥א תִבְעַר בָּֽךְ"
+        },
+        {
+          "ref": "Isa.43.3",
+          "text": "כִּ֗י אֲנִי֙ יְהוָ֣ה אֱלֹהֶ֔יךָ קְד֥וֹשׁ יִשְׂרָאֵ֖ל מוֹשִׁיעֶ֑ךָ נָתַ֤תִּי כָפְרְךָ֙ מִצְרַ֔יִם כּ֥וּשׁ וּסְבָ֖א תַּחְתֶּֽיךָ"
+        },
+        {
+          "ref": "Isa.43.4",
+          "text": "מֵאֲשֶׁ֨ר יָקַ֧רְתָּ בְעֵינַ֛י נִכְבַּ֖דְתָּ וַאֲנִ֣י אֲהַבְתִּ֑יךָ וְאֶתֵּ֤ן אָדָם֙ תַּחְתֶּ֔יךָ וּלְאֻמִּ֖ים תַּ֥חַת נַפְשֶֽׁךָ"
+        },
+        {
+          "ref": "Isa.43.5",
+          "text": "אַל תִּירָ֖א כִּ֣י אִתְּךָ אָ֑נִי מִמִּזְרָח֙ אָבִ֣יא זַרְעֶ֔ךָ וּמִֽמַּעֲרָ֖ב אֲקַבְּצֶֽךָּ"
+        },
+        {
+          "ref": "Isa.43.6",
+          "text": "אֹמַ֤ר לַצָּפוֹן֙ תֵּ֔נִי וּלְתֵימָ֖ן אַל תִּכְלָ֑אִי הָבִ֤יאִי בָנַי֙ מֵרָח֔וֹק וּבְנוֹתַ֖י מִקְצֵ֥ה הָאָֽרֶץ"
+        },
+        {
+          "ref": "Isa.43.7",
+          "text": "כֹּ֚ל הַנִּקְרָ֣א בִשְׁמִ֔י וְלִכְבוֹדִ֖י בְּרָאתִ֑יו יְצַרְתִּ֖יו אַף עֲשִׂיתִֽיו"
+        }
+      ],
+      "textSha256": "1d905f70465a9689365bfb4ce3c0f401c31ac6035478d22a071226aba0bfe994",
+      "contextVerified": true,
+      "readingScope": "SELECTED_DIGITAL_CONTEXT_NOT_WHOLE_BOOK_OR_PRINT",
+      "excludedNotes": []
+    },
+    {
+      "id": "LXX-ISA43",
+      "sourceFile": "LXX-Isa",
+      "kind": "tei-body",
+      "book": "Isa",
+      "chapter": 43,
+      "firstVerse": 1,
+      "lastVerse": 7,
+      "verses": [
+        {
+          "ref": "Isa.43.1",
+          "text": "Καὶ νῦν οὕτως λέγει Κύριος ὁ θεός, ὁ ποιήσας σε Ἰακώβ, καὶ ὁ πλάσας σε Ἰσραὴλ Μὴ φοβοῦ, ὅτι ἐλυτρωσάμην σε ἐκάλεσά σε τὸ ὄνομά σου, ἐμὸς εἶ σύ."
+        },
+        {
+          "ref": "Isa.43.2",
+          "text": "καὶ ἐὰν διαβαίνῃς δι᾿ ὕδατος, μετὰ σοῦ εἰμι. καὶ ποταμοὶ οὐ συνκλύσουσίν σε καὶ ἐὰν διέλθῃς διὰ πυρός, οὐ μὴ κατακαυθῇς, φλὸξ οὐ κατακαύσει σε."
+        },
+        {
+          "ref": "Isa.43.3",
+          "text": "ὅτι ἐγὼ Κύριος ὁ θεός σου, ὁ ἅγιος Ἰσραήλ, ὁ σώζων σε· ἐποίησά σου ἄλλαγμα Αἴγυπτον καὶ Αἰθιοπίαν, καὶ Σοήνην ὑπέρ σοῦ."
+        },
+        {
+          "ref": "Isa.43.4",
+          "text": "ἀφʼ οὖ ἔντιμος ἐγένου ἐναντίον ἐμοῦ, ἐδοξάσθης καὶ ἐγώ σε ἠγάπησα, καὶ δώσω ἀνθρώπους ὑπέρ σοῦ καὶ ἄρχοντας ὑπέρ τῆς κεφαλῆς σου."
+        },
+        {
+          "ref": "Isa.43.5",
+          "text": "μὴ φοβοῦ, ὅτι μετὰ σοῦ εἰμι· ἀπὸ ἀνατολῶν ἄξω τὸ σπέρμα σου, καὶ ἀπὸ δυσμῶν συνάξω σε."
+        },
+        {
+          "ref": "Isa.43.6",
+          "text": "ἐρῶ τῷ βορρᾷ Ἄγε, καὶ τῷ λιβί Μὴ κώλυε· ἄγε τοὺς υἱούς μου ἀπὸ γῆς πόρρωθεν, καὶ τὰς θυγατέρας μου ἀπʼ ἄκρων τῆς γῆς,"
+        },
+        {
+          "ref": "Isa.43.7",
+          "text": "πάντας ὅσοι ἐπικέκληνται τῷ ὀνόματί μου. ἐν γὰρ τῇ δόξῃ μου κατεσκεύασα αὐτὸν καὶ ἔπλασα αὐτὸν καὶ ἐποίησα αὐτόν,"
+        }
+      ],
+      "textSha256": "755824cf6226d7dc414bc358fe0bf73b56485bd746f1ce241c504c68c45b77a5",
+      "contextVerified": true,
+      "readingScope": "SELECTED_DIGITAL_CONTEXT_NOT_WHOLE_BOOK_OR_PRINT"
+    },
+    {
+      "id": "MT-ISA56",
+      "sourceFile": "MT-Isa",
+      "kind": "osis-ketiv",
+      "book": "Isa",
+      "chapter": 56,
+      "firstVerse": 1,
+      "lastVerse": 8,
+      "verses": [
+        {
+          "ref": "Isa.56.1",
+          "text": "כֹּ֚ה אָמַ֣ר יְהוָ֔ה שִׁמְר֥וּ מִשְׁפָּ֖ט וַעֲשׂ֣וּ צְדָקָ֑ה כִּֽי קְרוֹבָ֤ה יְשֽׁוּעָתִי֙ לָב֔וֹא וְצִדְקָתִ֖י לְהִגָּלֽוֹת"
+        },
+        {
+          "ref": "Isa.56.2",
+          "text": "אַשְׁרֵ֤י אֱנוֹשׁ֙ יַעֲשֶׂה זֹּ֔את וּבֶן אָדָ֖ם יַחֲזִ֣יק בָּ֑הּ שֹׁמֵ֤ר שַׁבָּת֙ מֵֽחַלְּל֔וֹ וְשֹׁמֵ֥ר יָד֖וֹ מֵעֲשׂ֥וֹת כָּל רָֽע"
+        },
+        {
+          "ref": "Isa.56.3",
+          "text": "וְאַל יֹאמַ֣ר בֶּן הַנֵּכָ֗ר הַנִּלְוָ֤ה אֶל יְהוָה֙ לֵאמֹ֔ר הַבְדֵּ֧ל יַבְדִּילַ֛נִי יְהוָ֖ה מֵעַ֣ל עַמּ֑וֹ וְאַל יֹאמַר֙ הַסָּרִ֔יס הֵ֥ן אֲנִ֖י עֵ֥ץ יָבֵֽשׁ"
+        },
+        {
+          "ref": "Isa.56.4",
+          "text": "כִּי כֹ֣ה אָמַ֣ר יְהוָ֗ה לַסָּֽרִיסִים֙ אֲשֶׁ֤ר יִשְׁמְרוּ֙ אֶת שַׁבְּתוֹתַ֔י וּבָֽחֲר֖וּ בַּאֲשֶׁ֣ר חָפָ֑צְתִּי וּמַחֲזִיקִ֖ים בִּבְרִיתִֽי"
+        },
+        {
+          "ref": "Isa.56.5",
+          "text": "וְנָתַתִּ֨י לָהֶ֜ם בְּבֵיתִ֤י וּבְחֽוֹמֹתַי֙ יָ֣ד וָשֵׁ֔ם ט֖וֹב מִבָּנִ֣ים וּמִבָּנ֑וֹת שֵׁ֤ם עוֹלָם֙ אֶתֶּן ל֔וֹ אֲשֶׁ֖ר לֹ֥א יִכָּרֵֽת"
+        },
+        {
+          "ref": "Isa.56.6",
+          "text": "וּבְנֵ֣י הַנֵּכָ֗ר הַנִּלְוִ֤ים עַל יְהוָה֙ לְשָׁ֣רְת֔וֹ וּֽלְאַהֲבָה֙ אֶת שֵׁ֣ם יְהוָ֔ה לִהְי֥וֹת ל֖וֹ לַעֲבָדִ֑ים כָּל שֹׁמֵ֤ר שַׁבָּת֙ מֵֽחַלְּל֔וֹ וּמַחֲזִיקִ֖ים בִּבְרִיתִֽי"
+        },
+        {
+          "ref": "Isa.56.7",
+          "text": "וַהֲבִיאוֹתִ֞ים אֶל הַ֣ר קָדְשִׁ֗י וְשִׂמַּחְתִּים֙ בְּבֵ֣ית תְּפִלָּתִ֔י עוֹלֹתֵיהֶ֧ם וְזִבְחֵיהֶ֛ם לְרָצ֖וֹן עַֽל מִזְבְּחִ֑י כִּ֣י בֵיתִ֔י בֵּית תְּפִלָּ֥ה יִקָּרֵ֖א לְכָל הָעַמִּֽים"
+        },
+        {
+          "ref": "Isa.56.8",
+          "text": "נְאֻם֙ אֲדֹנָ֣י יְהוִ֔ה מְקַבֵּ֖ץ נִדְחֵ֣י יִשְׂרָאֵ֑ל ע֛וֹד אֲקַבֵּ֥ץ עָלָ֖יו לְנִקְבָּצָֽיו"
+        }
+      ],
+      "textSha256": "5e1b353df2e2f1f6371653e2af3b440749fd59dc7cef755a04e9e31e1270a823",
+      "contextVerified": true,
+      "readingScope": "SELECTED_DIGITAL_CONTEXT_NOT_WHOLE_BOOK_OR_PRINT",
+      "excludedNotes": []
+    },
+    {
+      "id": "LXX-ISA56",
+      "sourceFile": "LXX-Isa",
+      "kind": "tei-body",
+      "book": "Isa",
+      "chapter": 56,
+      "firstVerse": 1,
+      "lastVerse": 8,
+      "verses": [
+        {
+          "ref": "Isa.56.1",
+          "text": "Τάδε λέγει Κύριος Φυλάσσεσθε κρίσιν καὶ ποιήσατε δικαιοσύνην· ἤγγικεν γὰρ τὸ σωτήριόν μου παραγίνεσθαι, καὶ τὸ ἔλεός μου ἀποκαλυφθῆναι."
+        },
+        {
+          "ref": "Isa.56.2",
+          "text": "μακάριος ἀνὴρ ὁ ποιῶν ταῦτα, καὶ ἄνθρωπος ὁ ἀντεχόμενος αὐτῶν, καὶ φυλάσσων τὰ σάββατα μὴ βεβηλοῦν, καὶ διατηρῶν τὰς χεῖρας αὐτοῦ μὴ ποιεῖν ἄδικα."
+        },
+        {
+          "ref": "Isa.56.3",
+          "text": "μὴ λεγέτω ὁ ἀλλογενὴς ὁ προσκείμενος πρὸς Κύριον Ἀφοριεῖ με ἄρα Κύριος ἀπὸ τοῦ λαοῦ αὐτοῦ· καὶ μὴ λεγέτω ὁ εὐνοῦχος ὅτι Ἐγὼ εἰμι ξύλον ξηρόν."
+        },
+        {
+          "ref": "Isa.56.4",
+          "text": "τάδε λέγει Κύριος τοῖς εὐνούχοις ὅσοι ἐὰν φυλάξωνται τὰ σάββατά μου καὶ ἐκλέξωνται ἃ ἐγὼ θέλω καὶ ἀντέχωνται τῆς διαθήκης μου,"
+        },
+        {
+          "ref": "Isa.56.5",
+          "text": "δώσω αὐτοῖς ἐν τῷ οἴκῳ μου καὶ ἐν τῷ τείχει μου τόπον ὀνομαστόν, κρείττω υἱῶν καὶ θυγατέρων, ὄνομα αἰώνιον δώσω αὐτοῖς καὶ οὐκ ἐκλείψει."
+        },
+        {
+          "ref": "Isa.56.6",
+          "text": "καὶ τοῖς ἀλλογενέσι τοῖς προσκειμένοις Κυρίῳ δουλεύειν αὐτῷ, καὶ ἀγαπᾶν τὸ ὄνομα Κυρίου τῷ εἶναι αὐτῷ εἰς δούλους καὶ δούλας, καὶ πάντας τοὺς φυλασσομένους τὰ σάββατά μου μὴ βεβηλοῦν καὶ ἀντεχομένους τῆς διαθήκης μου,"
+        },
+        {
+          "ref": "Isa.56.7",
+          "text": "εἰσάξω αὐτοὺς εἰς τὸ ὄρος τὸ ἅγιόν μου, καὶ εὐφρανῶ αὐτοὺς ἐν τῷ οἴκῳ τῆς προσευχῆς μου· τὰ ὁλοκαυτώματα αὐτῶν καὶ αἱ θυσίαι αὐτῶν ἔσονται δεκταὶ ἐπὶ τὸ θυσιαστήριόν μου. ὁ γὰρ οἶκός μου οἶκος προσευχῆς κληθήσεται πᾶσιν τοῖς ἔθνεσιν,"
+        },
+        {
+          "ref": "Isa.56.8",
+          "text": "εἶπεν Κύριος ὁ συνάγων τοὺς διεσπαρμένους Ἰσραήλ, ὅτι συνάξω ἐπʼ αὐτὸν συναγωγήν."
+        }
+      ],
+      "textSha256": "d26dd8d4e3ad466f66978cdfd9be155ee660c56b6e897c30fede0088b0864ca9",
+      "contextVerified": true,
+      "readingScope": "SELECTED_DIGITAL_CONTEXT_NOT_WHOLE_BOOK_OR_PRINT"
+    },
+    {
+      "id": "MT-JER31",
+      "sourceFile": "MT-Jer",
+      "kind": "osis-ketiv",
+      "book": "Jer",
+      "chapter": 31,
+      "firstVerse": 1,
+      "lastVerse": 14,
+      "verses": [
+        {
+          "ref": "Jer.31.1",
+          "text": "בָּעֵ֤ת הַהִיא֙ נְאֻם יְהוָ֔ה אֶֽהְיֶה֙ לֵֽאלֹהִ֔ים לְכֹ֖ל מִשְׁפְּח֣וֹת יִשְׂרָאֵ֑ל וְהֵ֖מָּה יִֽהְיוּ לִ֥י לְעָֽם"
+        },
+        {
+          "ref": "Jer.31.2",
+          "text": "כֹּ֚ה אָמַ֣ר יְהוָ֔ה מָצָ֥א חֵן֙ בַּמִּדְבָּ֔ר עַ֖ם שְׂרִ֣ידֵי חָ֑רֶב הָל֥וֹךְ לְהַרְגִּיע֖וֹ יִשְׂרָאֵֽל"
+        },
+        {
+          "ref": "Jer.31.3",
+          "text": "מֵרָח֕וֹק יְהוָ֖ה נִרְאָ֣ה לִ֑י וְאַהֲבַ֤ת עוֹלָם֙ אֲהַבְתִּ֔יךְ עַל כֵּ֖ן מְשַׁכְתִּ֥יךְ חָֽסֶד"
+        },
+        {
+          "ref": "Jer.31.4",
+          "text": "ע֤וֹד אֶבְנֵךְ֙ וְֽנִבְנֵ֔ית בְּתוּלַ֖ת יִשְׂרָאֵ֑ל ע֚וֹד תַּעְדִּ֣י תֻפַּ֔יִךְ וְיָצָ֖את בִּמְח֥וֹל מְשַׂחֲקִֽים"
+        },
+        {
+          "ref": "Jer.31.5",
+          "text": "ע֚וֹד תִּטְּעִ֣י כְרָמִ֔ים בְּהָרֵ֖י שֹֽׁמְר֑וֹן נָטְע֥וּ נֹטְעִ֖ים וְחִלֵּֽלוּ"
+        },
+        {
+          "ref": "Jer.31.6",
+          "text": "כִּ֣י יֶשׁ י֔וֹם קָרְא֥וּ נֹצְרִ֖ים בְּהַ֣ר אֶפְרָ֑יִם ק֚וּמוּ וְנַעֲלֶ֣ה צִיּ֔וֹן אֶל יְהוָ֖ה אֱלֹהֵֽינוּ"
+        },
+        {
+          "ref": "Jer.31.7",
+          "text": "כִּי כֹ֣ה אָמַ֣ר יְהוָ֗ה רָנּ֤וּ לְיַֽעֲקֹב֙ שִׂמְחָ֔ה וְצַהֲל֖וּ בְּרֹ֣אשׁ הַגּוֹיִ֑ם הַשְׁמִ֤יעוּ הַֽלְלוּ֙ וְאִמְר֔וּ הוֹשַׁ֤ע יְהוָה֙ אֶֽת עַמְּךָ֔ אֵ֖ת שְׁאֵרִ֥ית יִשְׂרָאֵֽל"
+        },
+        {
+          "ref": "Jer.31.8",
+          "text": "הִנְנִי֩ מֵבִ֨יא אוֹתָ֜ם מֵאֶ֣רֶץ צָפ֗וֹן וְקִבַּצְתִּים֮ מִיַּרְכְּתֵי אָרֶץ֒ בָּ֚ם עִוֵּ֣ר וּפִסֵּ֔חַ הָרָ֥ה וְיֹלֶ֖דֶת יַחְדָּ֑ו קָהָ֥ל גָּד֖וֹל יָשׁ֥וּבוּ הֵֽנָּה"
+        },
+        {
+          "ref": "Jer.31.9",
+          "text": "בִּבְכִ֣י יָבֹ֗אוּ וּֽבְתַחֲנוּנִים֮ אֽוֹבִילֵם֒ אֽוֹלִיכֵם֙ אֶל נַ֣חֲלֵי מַ֔יִם בְּדֶ֣רֶךְ יָשָׁ֔ר לֹ֥א יִכָּשְׁל֖וּ בָּ֑הּ כִּֽי הָיִ֤יתִי לְיִשְׂרָאֵל֙ לְאָ֔ב וְאֶפְרַ֖יִם בְּכֹ֥רִי הֽוּא"
+        },
+        {
+          "ref": "Jer.31.10",
+          "text": "שִׁמְע֤וּ דְבַר יְהוָה֙ גּוֹיִ֔ם וְהַגִּ֥ידוּ בָאִיִּ֖ים מִמֶּרְחָ֑ק וְאִמְר֗וּ מְזָרֵ֤ה יִשְׂרָאֵל֙ יְקַבְּצֶ֔נּוּ וּשְׁמָר֖וֹ כְּרֹעֶ֥ה עֶדְרֽוֹ"
+        },
+        {
+          "ref": "Jer.31.11",
+          "text": "כִּֽי פָדָ֥ה יְהוָ֖ה אֶֽת יַעֲקֹ֑ב וּגְאָל֕וֹ מִיַּ֖ד חָזָ֥ק מִמֶּֽנּוּ"
+        },
+        {
+          "ref": "Jer.31.12",
+          "text": "וּבָאוּ֮ וְרִנְּנ֣וּ בִמְרוֹם צִיּוֹן֒ וְנָהֲר֞וּ אֶל ט֣וּב יְהוָ֗ה עַל דָּגָן֙ וְעַל תִּירֹ֣שׁ וְעַל יִצְהָ֔ר וְעַל בְּנֵי צֹ֖אן וּבָקָ֑ר וְהָיְתָ֤ה נַפְשָׁם֙ כְּגַ֣ן רָוֶ֔ה וְלֹא יוֹסִ֥יפוּ לְדַאֲבָ֖ה עֽוֹד"
+        },
+        {
+          "ref": "Jer.31.13",
+          "text": "אָ֣ז תִּשְׂמַ֤ח בְּתוּלָה֙ בְּמָח֔וֹל וּבַחֻרִ֥ים וּזְקֵנִ֖ים יַחְדָּ֑ו וְהָפַכְתִּ֨י אֶבְלָ֤ם לְשָׂשׂוֹן֙ וְנִ֣חַמְתִּ֔ים וְשִׂמַּחְתִּ֖ים מִיגוֹנָֽם"
+        },
+        {
+          "ref": "Jer.31.14",
+          "text": "וְרִוֵּיתִ֛י נֶ֥פֶשׁ הַכֹּהֲנִ֖ים דָּ֑שֶׁן וְעַמִּ֛י אֶת טוּבִ֥י יִשְׂבָּ֖עוּ נְאֻם יְהוָֽה"
+        }
+      ],
+      "textSha256": "09e97e9e3e732658f10b63a0baf1defcd468d4461a020f5d81ce0834d8294ec9",
+      "contextVerified": true,
+      "readingScope": "SELECTED_DIGITAL_CONTEXT_NOT_WHOLE_BOOK_OR_PRINT",
+      "excludedNotes": []
+    },
+    {
+      "id": "LXX-JER31",
+      "sourceFile": "LXX-Jer",
+      "kind": "tei-body",
+      "book": "Jer",
+      "chapter": 38,
+      "firstVerse": 1,
+      "lastVerse": 14,
+      "verses": [
+        {
+          "ref": "Jer.38.1",
+          "text": "(24)Ἐν τῷ χρόνῳ ἐκείνῳ, εἶπεν Κύριος, ἔσομαι εἰς θεὸν τῷ γένει Ἰσραήλ, καὶ αὐτοὶ ἔσονταί μοι εἰς λαόν."
+        },
+        {
+          "ref": "Jer.38.2",
+          "text": "οὕτως εἶπεν Κύριος Εὗρον θερμὸν ἐν ἐρήμῳ μετὰ ὀλωλότων ἐν μαχαίρᾳ· βαδίσατε καὶ μὴ ὀλέσητε τὸν Ἰσραήλ."
+        },
+        {
+          "ref": "Jer.38.3",
+          "text": "Κύριος πόρρωθεν ὤφθη αὐτῷ. Ἀγάπησιν αἰώνιον ἠγάπησά σε, διὰ τοῦτο εἵλκυσά σε εἰς οἰκτείρημα."
+        },
+        {
+          "ref": "Jer.38.4",
+          "text": "ὅτι οἰκοδομήσω σε, καὶ οἰκοδομηθήσῃ παρθένος Ἰσραήλ· ἐπιλήμψει τύμπανόν σου καὶ ἐξελεύσῃ μετὰ συναγωγῆς παιζόντων."
+        },
+        {
+          "ref": "Jer.38.5",
+          "text": "ὅτι ἐφυτεύσατε ἀμπελῶνας ἐν ὄρεσιν Σαμαρείας, φυτεύσατε καὶ αἰνέσατε,"
+        },
+        {
+          "ref": "Jer.38.6",
+          "text": "ὅτι ἔστιν ἡμέρα κλήσεως ἀπολογουμένων ἐν ὄρεσιν Ἐφράιμ Ἀνάστητε καὶ ἀνάβητε εἰς Σειὼν πρὸς Κύριον τὸν θεὸν ἡμῶν."
+        },
+        {
+          "ref": "Jer.38.7",
+          "text": "ὅτι οὕτως εἶπεν Κύριος τῷ Ἰακώβ Ευφράνθητε καὶ χρεμετίσατε ἐπὶ κεφαλὴν ἐθνῶν, ἀκουστὰ ποιήσατε καὶ αἰνέσατε· εἴπατε Ἔσωσεν Κύριος τὸν λαὸν αὐτοῦ, τὸ κατάλοιπον τοῦ Ἰσραήλ."
+        },
+        {
+          "ref": "Jer.38.8",
+          "text": "ἰδοὺ ἐγὼ ἄγω αὐτοὺς ἀπὸ βορρᾶ, καὶ συνάξω αὐτοὺς ἀπʼ ἐσχάτου τῆς γῆς ἐν ἑορτῇ φάσεκ· καὶ τεκνοποιήσῃ ὄχλον πολύν, καὶ ἀποστρέψουσιν ὧδε."
+        },
+        {
+          "ref": "Jer.38.9",
+          "text": "ἐν κλαυθμῷ ἐξῆλθον, καὶ ἐν παρακλήσει ἀνάξω αὐτούς, αὐλίζων ἐπὶ διώρυγας ὑδάτων ἐν ὁδῷ ὀρθῇ, καὶ οὐ μὴ πλανηθῶσιν ἐν αὐτῇ· ὅτι ἐγενόμην τῷ Ἰσραὴλ εἰς πατέρα, καὶ Ἐφράιμ πρωτότοκός μού ἐστιν."
+        },
+        {
+          "ref": "Jer.38.10",
+          "text": "Ἀκούσατε λόγους Κυρίου, ἔθνη, καὶ ἀναγγείλατε εἰς νήσους τὰς μακρότερον· εἴπατε Ὁ λικμήσας τὸν Ἰσραὴλ συνάξει αὐτόν, καὶ φυλάξει αὐτὸν ὡς ὁ βόσκων ποίμνιον αὐτοῦ."
+        },
+        {
+          "ref": "Jer.38.11",
+          "text": "ὅτι ἐλυτρώσατο Κύριος τὸν Ἰακώβ, ἐξείλατο αὐτὸν ἐκ χειρὸς στερεωτέρων αὐτοῦ."
+        },
+        {
+          "ref": "Jer.38.12",
+          "text": "καὶ ἥξουσιν καὶ εὐφρανθήσονται ἐν τῷ ὄρει Σειών, καὶ ἥξουσιν ἐπʼ ἀγαθὰ Κυρίου, ἐπὶ γῆν σίτου καὶ οἴνου καὶ καρπῶν καὶ κτηνῶν καὶ προβάτων· καὶ ἔσται ἡ ψυχὴ αὐτῶν ὥσπερ ξύλον ἔνκαρπον, καὶ οὐ πεινάσουσιν ἔτι."
+        },
+        {
+          "ref": "Jer.38.13",
+          "text": "τότε χαρήσονται παρθένοι ἐν συναγωγῇ νεανίσκων, καὶ πρεσβῦται χαρήσονται, καὶ στρέψω τὸ πένθος αὐτῶν εἰς χαρμονήν, καὶ ποιήσω αὐτοὺς εὐφραινομένους."
+        },
+        {
+          "ref": "Jer.38.14",
+          "text": "μεγαλυνῶ καὶ μεθύσω τὴν ψυχὴν τῶν ἱερέων υἱῶν Λευεί, καὶ ὁ λαός μου τῶν ἀγαθῶν μου ἐμπλησθήσεται."
+        }
+      ],
+      "textSha256": "8228d8b5bf883eae3f9c81a7e90a5705548c7db5d59c54e0cc2b5307bb132183",
+      "contextVerified": true,
+      "readingScope": "SELECTED_DIGITAL_CONTEXT_NOT_WHOLE_BOOK_OR_PRINT"
+    },
+    {
+      "id": "MT-EZ34",
+      "sourceFile": "MT-Ezek",
+      "kind": "osis-ketiv",
+      "book": "Ezek",
+      "chapter": 34,
+      "firstVerse": 1,
+      "lastVerse": 31,
+      "verses": [
+        {
+          "ref": "Ezek.34.1",
+          "text": "וַיְהִ֥י דְבַר יְהוָ֖ה אֵלַ֥י לֵאמֹֽר"
+        },
+        {
+          "ref": "Ezek.34.2",
+          "text": "בֶּן אָדָ֕ם הִנָּבֵ֖א עַל רוֹעֵ֣י יִשְׂרָאֵ֑ל הִנָּבֵ֣א וְאָמַרְתָּ֩ אֲלֵיהֶ֨ם לָרֹעִ֜ים כֹּ֥ה אָמַ֣ר אֲדֹנָ֣י יְהוִ֗ה ה֤וֹי רֹעֵֽי יִשְׂרָאֵל֙ אֲשֶׁ֤ר הָיוּ֙ רֹעִ֣ים אוֹתָ֔ם הֲל֣וֹא הַצֹּ֔אן יִרְע֖וּ הָרֹעִֽים"
+        },
+        {
+          "ref": "Ezek.34.3",
+          "text": "אֶת הַחֵ֤לֶב תֹּאכֵ֨לוּ֙ וְאֶת הַצֶּ֣מֶר תִּלְבָּ֔שׁוּ הַבְּרִיאָ֖ה תִּזְבָּ֑חוּ הַצֹּ֖אן לֹ֥א תִרְעֽוּ"
+        },
+        {
+          "ref": "Ezek.34.4",
+          "text": "אֶֽת הַנַּחְלוֹת֩ לֹ֨א חִזַּקְתֶּ֜ם וְאֶת הַחוֹלָ֣ה לֹֽא רִפֵּאתֶ֗ם וְלַנִּשְׁבֶּ֨רֶת֙ לֹ֣א חֲבַשְׁתֶּ֔ם וְאֶת הַנִּדַּ֨חַת֙ לֹ֣א הֲשֵׁבֹתֶ֔ם וְאֶת הָאֹבֶ֖דֶת לֹ֣א בִקַּשְׁתֶּ֑ם וּבְחָזְקָ֛ה רְדִיתֶ֥ם אֹתָ֖ם וּבְפָֽרֶךְ"
+        },
+        {
+          "ref": "Ezek.34.5",
+          "text": "וַתְּפוּצֶ֖ינָה מִבְּלִ֣י רֹעֶ֑ה וַתִּהְיֶ֧ינָה לְאָכְלָ֛ה לְכָל חַיַּ֥ת הַשָּׂדֶ֖ה וַתְּפוּצֶֽינָה"
+        },
+        {
+          "ref": "Ezek.34.6",
+          "text": "יִשְׁגּ֤וּ צֹאנִי֙ בְּכָל הֶ֣הָרִ֔ים וְעַ֖ל כָּל גִּבְעָ֣ה רָמָ֑ה וְעַ֨ל כָּל פְּנֵ֤י הָאָ֨רֶץ֙ נָפֹ֣צוּ צֹאנִ֔י וְאֵ֥ין דּוֹרֵ֖שׁ וְאֵ֥ין מְבַקֵּֽשׁ"
+        },
+        {
+          "ref": "Ezek.34.7",
+          "text": "לָכֵ֣ן רֹעִ֔ים שִׁמְע֖וּ אֶת דְּבַ֥ר יְהוָֽה"
+        },
+        {
+          "ref": "Ezek.34.8",
+          "text": "חַי אָ֜נִי נְאֻ֣ם אֲדֹנָ֣י יְהוִ֗ה אִם לֹ֣א יַ֣עַן הֱיֽוֹת צֹאנִ֣י לָבַ֡ז וַתִּֽהְיֶינָה֩ צֹאנִ֨י לְאָכְלָ֜ה לְכָל חַיַּ֤ת הַשָּׂדֶה֙ מֵאֵ֣ין רֹעֶ֔ה וְלֹֽא דָרְשׁ֥וּ רֹעַ֖י אֶת צֹאנִ֑י וַיִּרְע֤וּ הָֽרֹעִים֙ אוֹתָ֔ם וְאֶת צֹאנִ֖י לֹ֥א רָעֽוּ"
+        },
+        {
+          "ref": "Ezek.34.9",
+          "text": "לָכֵן֙ הָֽרֹעִ֔ים שִׁמְע֖וּ דְּבַר יְהוָֽה"
+        },
+        {
+          "ref": "Ezek.34.10",
+          "text": "כֹּה אָמַ֞ר אֲדֹנָ֣י יְהוִ֗ה הִנְנִ֨י אֶֽל הָרֹעִ֜ים וְֽדָרַשְׁתִּ֧י אֶת צֹאנִ֣י מִיָּדָ֗ם וְהִשְׁבַּתִּים֙ מֵרְע֣וֹת צֹ֔אן וְלֹא יִרְע֥וּ ע֛וֹד הָרֹעִ֖ים אוֹתָ֑ם וְהִצַּלְתִּ֤י צֹאנִי֙ מִפִּיהֶ֔ם וְלֹֽא תִהְיֶ֥יןָ לָהֶ֖ם לְאָכְלָֽה"
+        },
+        {
+          "ref": "Ezek.34.11",
+          "text": "כִּ֛י כֹּ֥ה אָמַ֖ר אֲדֹנָ֣י יְהוִ֑ה הִנְנִי אָ֕נִי וְדָרַשְׁתִּ֥י אֶת צֹאנִ֖י וּבִקַּרְתִּֽים"
+        },
+        {
+          "ref": "Ezek.34.12",
+          "text": "כְּבַקָּרַת֩ רֹעֶ֨ה עֶדְר֜וֹ בְּיוֹם הֱיוֹת֤וֹ בְתוֹךְ צֹאנוֹ֙ נִפְרָשׁ֔וֹת כֵּ֖ן אֲבַקֵּ֣ר אֶת צֹאנִ֑י וְהִצַּלְתִּ֣י אֶתְהֶ֗ם מִכָּל הַמְּקוֹמֹת֙ אֲשֶׁ֣ר נָפֹ֣צוּ שָׁ֔ם בְּי֥וֹם עָנָ֖ן וַעֲרָפֶֽל"
+        },
+        {
+          "ref": "Ezek.34.13",
+          "text": "וְהוֹצֵאתִ֣ים מִן הָעַמִּ֗ים וְקִבַּצְתִּים֙ מִן הָ֣אֲרָצ֔וֹת וַהֲבִיאֹתִ֖ים אֶל אַדְמָתָ֑ם וּרְעִיתִים֙ אֶל הָרֵ֣י יִשְׂרָאֵ֔ל בָּאֲפִיקִ֕ים וּבְכֹ֖ל מוֹשְׁבֵ֥י הָאָֽרֶץ"
+        },
+        {
+          "ref": "Ezek.34.14",
+          "text": "בְּמִרְעֶה טּוֹב֙ אֶרְעֶ֣ה אֹתָ֔ם וּבְהָרֵ֥י מְרֽוֹם יִשְׂרָאֵ֖ל יִהְיֶ֣ה נְוֵהֶ֑ם שָׁ֤ם תִּרְבַּ֨צְנָה֙ בְּנָ֣וֶה טּ֔וֹב וּמִרְעֶ֥ה שָׁמֵ֛ן תִּרְעֶ֖ינָה אֶל הָרֵ֥י יִשְׂרָאֵֽל"
+        },
+        {
+          "ref": "Ezek.34.15",
+          "text": "אֲנִ֨י אֶרְעֶ֤ה צֹאנִי֙ וַאֲנִ֣י אַרְבִּיצֵ֔ם נְאֻ֖ם אֲדֹנָ֥י יְהוִֽה"
+        },
+        {
+          "ref": "Ezek.34.16",
+          "text": "אֶת הָאֹבֶ֤דֶת אֲבַקֵּשׁ֙ וְאֶת הַנִּדַּ֣חַת אָשִׁ֔יב וְלַנִּשְׁבֶּ֣רֶת אֶחֱבֹ֔שׁ וְאֶת הַחוֹלָ֖ה אֲחַזֵּ֑ק וְאֶת הַשְּׁמֵנָ֧ה וְאֶת הַחֲזָקָ֛ה אַשְׁמִ֖יד אֶרְעֶ֥נָּה בְמִשְׁפָּֽט"
+        },
+        {
+          "ref": "Ezek.34.17",
+          "text": "וְאַתֵּ֣נָה צֹאנִ֔י כֹּ֥ה אָמַ֖ר אֲדֹנָ֣י יְהוִ֑ה הִנְנִ֤י שֹׁפֵט֙ בֵּֽין שֶׂ֣ה לָשֶׂ֔ה לָאֵילִ֖ים וְלָעַתּוּדִֽים"
+        },
+        {
+          "ref": "Ezek.34.18",
+          "text": "הַמְעַ֣ט מִכֶּ֗ם הַמִּרְעֶ֤ה הַטּוֹב֙ תִּרְע֔וּ וְיֶ֨תֶר֙ מִרְעֵיכֶ֔ם תִּרְמְס֖וּ בְּרַגְלֵיכֶ֑ם וּמִשְׁקַע מַ֣יִם תִּשְׁתּ֔וּ וְאֵת֙ הַנּ֣וֹתָרִ֔ים בְּרַגְלֵיכֶ֖ם תִּרְפֹּשֽׂוּן"
+        },
+        {
+          "ref": "Ezek.34.19",
+          "text": "וְצֹאנִ֑י מִרְמַ֤ס רַגְלֵיכֶם֙ תִּרְעֶ֔ינָה וּמִרְפַּ֥שׂ רַגְלֵיכֶ֖ם תִּשְׁתֶּֽינָה"
+        },
+        {
+          "ref": "Ezek.34.20",
+          "text": "לָכֵ֗ן כֹּ֥ה אָמַ֛ר אֲדֹנָ֥י יְהוִ֖ה אֲלֵיהֶ֑ם הִנְנִי אָ֕נִי וְשָֽׁפַטְתִּי֙ בֵּֽין שֶׂ֣ה בִרְיָ֔ה וּבֵ֥ין שֶׂ֖ה רָזָֽה"
+        },
+        {
+          "ref": "Ezek.34.21",
+          "text": "יַ֗עַן בְּצַ֤ד וּבְכָתֵף֙ תֶּהְדֹּ֔פוּ וּבְקַרְנֵיכֶ֥ם תְּנַגְּח֖וּ כָּל הַנַּחְל֑וֹת עַ֣ד אֲשֶׁ֧ר הֲפִיצוֹתֶ֛ם אוֹתָ֖נָה אֶל הַחֽוּצָה"
+        },
+        {
+          "ref": "Ezek.34.22",
+          "text": "וְהוֹשַׁעְתִּ֣י לְצֹאנִ֔י וְלֹֽא תִהְיֶ֥ינָה ע֖וֹד לָבַ֑ז וְשָׁ֣פַטְתִּ֔י בֵּ֥ין שֶׂ֖ה לָשֶֽׂה"
+        },
+        {
+          "ref": "Ezek.34.23",
+          "text": "וַהֲקִמֹתִ֨י עֲלֵיהֶ֜ם רֹעֶ֤ה אֶחָד֙ וְרָעָ֣ה אֶתְהֶ֔ן אֵ֖ת עַבְדִּ֣י דָוִ֑יד ה֚וּא יִרְעֶ֣ה אֹתָ֔ם וְהֽוּא יִהְיֶ֥ה לָהֶ֖ן לְרֹעֶֽה"
+        },
+        {
+          "ref": "Ezek.34.24",
+          "text": "וַאֲנִ֣י יְהוָ֗ה אֶהְיֶ֤ה לָהֶם֙ לֵֽאלֹהִ֔ים וְעַבְדִּ֥י דָוִ֖ד נָשִׂ֣יא בְתוֹכָ֑ם אֲנִ֥י יְהוָ֖ה דִּבַּֽרְתִּי"
+        },
+        {
+          "ref": "Ezek.34.25",
+          "text": "וְכָרַתִּ֤י לָהֶם֙ בְּרִ֣ית שָׁל֔וֹם וְהִשְׁבַּתִּ֥י חַיָּֽה רָעָ֖ה מִן הָאָ֑רֶץ וְיָשְׁב֤וּ בַמִּדְבָּר֙ לָבֶ֔טַח וְיָשְׁנ֖וּ בַּיְּעָרִֽים"
+        },
+        {
+          "ref": "Ezek.34.26",
+          "text": "וְנָתַתִּ֥י אוֹתָ֛ם וּסְבִיב֥וֹת גִּבְעָתִ֖י בְּרָכָ֑ה וְהוֹרַדְתִּ֤י הַגֶּ֨שֶׁם֙ בְּעִתּ֔וֹ גִּשְׁמֵ֥י בְרָכָ֖ה יִֽהְיֽוּ"
+        },
+        {
+          "ref": "Ezek.34.27",
+          "text": "וְנָתַן֩ עֵ֨ץ הַשָּׂדֶ֜ה אֶת פִּרְי֗וֹ וְהָאָ֨רֶץ֙ תִּתֵּ֣ן יְבוּלָ֔הּ וְהָי֥וּ עַל אַדְמָתָ֖ם לָבֶ֑טַח וְֽיָדְע֞וּ כִּי אֲנִ֣י יְהוָ֗ה בְּשִׁבְרִי֙ אֶת מֹט֣וֹת עֻלָּ֔ם וְהִ֨צַּלְתִּ֔ים מִיַּ֖ד הָעֹבְדִ֥ים בָּהֶֽם"
+        },
+        {
+          "ref": "Ezek.34.28",
+          "text": "וְלֹא יִהְי֨וּ ע֥וֹד בַּז֙ לַגּוֹיִ֔ם וְחַיַּ֥ת הָאָ֖רֶץ לֹ֣א תֹאכְלֵ֑ם וְיָשְׁב֥וּ לָבֶ֖טַח וְאֵ֥ין מַחֲרִֽיד"
+        },
+        {
+          "ref": "Ezek.34.29",
+          "text": "וַהֲקִמֹתִ֥י לָהֶ֛ם מַטָּ֖ע לְשֵׁ֑ם וְלֹֽא יִהְי֨וּ ע֜וֹד אֲסֻפֵ֤י רָעָב֙ בָּאָ֔רֶץ וְלֹֽא יִשְׂא֥וּ ע֖וֹד כְּלִמַּ֥ת הַגּוֹיִֽם"
+        },
+        {
+          "ref": "Ezek.34.30",
+          "text": "וְיָדְע֗וּ כִּ֣י אֲנִ֧י יְהוָ֛ה אֱלֹהֵיהֶ֖ם אִתָּ֑ם וְהֵ֗מָּה עַמִּי֙ בֵּ֣ית יִשְׂרָאֵ֔ל נְאֻ֖ם אֲדֹנָ֥י יְהוִֽה"
+        },
+        {
+          "ref": "Ezek.34.31",
+          "text": "וְאַתֵּ֥ן צֹאנִ֛י צֹ֥אן מַרְעִיתִ֖י אָדָ֣ם אַתֶּ֑ם אֲנִי֙ אֱלֹ֣הֵיכֶ֔ם נְאֻ֖ם אֲדֹנָ֥י יְהוִֽה"
+        }
+      ],
+      "textSha256": "b11bb1a4b5171676cc395e2cfa6edc290e38e2c6770d56674404446062428dd3",
+      "contextVerified": true,
+      "readingScope": "SELECTED_DIGITAL_CONTEXT_NOT_WHOLE_BOOK_OR_PRINT",
+      "excludedNotes": [
+        {
+          "ref": "Ezek.34.2",
+          "xml": "<ns0:note xmlns:ns0=\"http://www.bibletechnologies.net/2003/OSIS/namespace\" n=\"1\">BHS has been faithful to the Leningrad Codex where there might be a question of the validity of the form and we keep the same form as BHS. </ns0:note>\n          "
+        }
+      ]
+    },
+    {
+      "id": "LXX-EZ34",
+      "sourceFile": "LXX-Ezek",
+      "kind": "tei-body",
+      "book": "Ezek",
+      "chapter": 34,
+      "firstVerse": 1,
+      "lastVerse": 31,
+      "verses": [
+        {
+          "ref": "Ezek.34.1",
+          "text": "Καὶ ἐγένετο λόγος Κυρίου πρὸς μ λέγων"
+        },
+        {
+          "ref": "Ezek.34.2",
+          "text": "Υἱὲ ἀνθρώπου, προφήτευσον ἐπὶ τοὺς ποιμένας τοῦ Ἰσραήλ, προφήτευσον καὶ εἰπὸν τοῖς ποιμέσι Τάδε λέγει κύριος Κύριος Ὦ ποιμένες Ἰσραήλ, μὴ βόσκουσιν ποιμένες ἑαυτούς; οὐ τὰ πρόβατα βόσκουσιν οἱ ποιμένες;"
+        },
+        {
+          "ref": "Ezek.34.3",
+          "text": "ἰδοὺ τὸ γάλα κατέσθετε καὶ τὰ ἔρια περιβάλλεσθε καὶ τὸ παχὺ σφάζετε, καὶ τὰ πρόβατά μου οὐ βόσκετε."
+        },
+        {
+          "ref": "Ezek.34.4",
+          "text": "τὸ ἠσθενηκὸς οὐκ ἐνισχύσατε, καὶ τὸ κακῶς ἔχον οὐκ ἐσαωματοποιήσατε, καὶ τὸ συντετριμμένον οὐ κατεδήσατε, καὶ τὸ πλανώμενον οὐκ ἀπεστρέψατε, καὶ τὸ ἀπολωλὸς οὐκ ἐζητήσατε, καὶ τὸ ἰσχυρὸν κατειργάσασθε μόχθῳ."
+        },
+        {
+          "ref": "Ezek.34.5",
+          "text": "καὶ διεσπάρη τὰ πρόβατά μου διὰ τὸ μὴ εἶναι ποιμένας, καὶ ἐγενήθη εἰς κατάβρωμα πᾶσι τοῖς θηρίοις τοῦ ἀγροῦ."
+        },
+        {
+          "ref": "Ezek.34.6",
+          "text": "καὶ διεσπάρη μου τὰ πρόβατα ἐν παντὶ ὄρει καὶ ἐπὶ πᾶν βουνὸν ὑψηλόν, καὶ ἐπὶ προσώπου τῆς γῆς διεσπάρη καὶ οὐκ ἦν ὁ ἐκζητῶν οὐδὲ ὁ ἀποστρέφων."
+        },
+        {
+          "ref": "Ezek.34.7",
+          "text": "διὰ τοῦτο, ποιμένες, ἀκούσατε λόγον Κυρίου"
+        },
+        {
+          "ref": "Ezek.34.8",
+          "text": "Ζῶ ἐγὠ, λέγει κύριος Κύριος, εἰ μὴν ἀντὶ τοῦ γενέσθαι τὰ πρόβατά μου εἰς προνομήν, καὶ γενέσθαι τὰ πρόβατά μου εἰς κατάβρωμα πᾶσι τοῖς θηρίοις τοῦ πεδίου παρὰ τὸ μὴ εἶναι ποιμένας, καὶ οὐκ ἐξεζήτησαν οἱ ποιμένες τὰ πρόβατά μου, καὶ ἐβόσκησαν οἱ ποιμένες ἑαυτοὺς τὰ δὲ πρόβατά μου οὐκ ἐβόσκησαν·"
+        },
+        {
+          "ref": "Ezek.34.9",
+          "text": "ἀντὶ τούτου, ποιμένες,"
+        },
+        {
+          "ref": "Ezek.34.10",
+          "text": "τάδε λέγει κύριος Κύριος Ἰδοὺ ἐγὼ ἐπὶ τοὺς ποιμένας, καὶ ἐκζητήσω τὰ πρόβατά μου ἐκ τῶν χειρῶν αὐτῶν, καὶ ἀποστρέψω αὐτοὺς τοῦ μὴ ποιμαίνειν τὰ πρόβατά μου, καὶ οὐ βοσκήσουσιν ἔτι οἱ ποιμένες αὐτά· καὶ ἐξελοῦμαι τὰ πρόβατά μου ἐκ τοῦ στόματος αὐτῶν, καὶ οὐκ ἔσονται αὐτοῖς ἔτι εἰς κατάβρωμα."
+        },
+        {
+          "ref": "Ezek.34.11",
+          "text": "διότι τάδε λέγει Κύριος Ἰδοὺ ἐγὼ ἐκζητήσω τὰ πρόβατά μου καὶ ἐπισκέψομαι αὐτά."
+        },
+        {
+          "ref": "Ezek.34.12",
+          "text": "Xώσπερ ζητεῖ ὁ ποιμὴν τὸ ποίμνιον αὐτοῦ ἐν ἡμέρᾳ ὅταν ᾖ γνόφος καὶ νεφέλη ἐν μέσῳ προβάτων διακεχυρισμέναων, οὕτως ἐκζητήσω τὰ πρόβατά μου καὶ ἀπελάσω αὐτὰ ἀπὸ παντὸς τόπου οὗ διεσ πάρησαν ἐκεῖ ἐν ἡμέρᾳ νεφέλης καὶ γνόφου."
+        },
+        {
+          "ref": "Ezek.34.13",
+          "text": "καὶ ἐξάξω αὐτοὺς ἐκ τῶν ἐθνῶν καὶ συνάξω αὐτοὺς ἀπὸ τῶν χωρῶν, καὶ εἰσάξω αὐτοὺς εἰς τὴν γῆν αὐτῶν, καὶ βοσκήσω αὐτοὺς ἐπὶ τὰ ὄρη Ἰσραὴλ καὶ ἐν ταῖς φάραγξιν καὶ ἐν πάσῃ κατοικίᾳ τῆς γῆς·"
+        },
+        {
+          "ref": "Ezek.34.14",
+          "text": "ἐν νομῇ ἀγαθῇ βοσκήσω αὐτούς, ἐν τῷ ὄρει τῷ ὑψηλῷ Ἰσραήλ. καὶ ἔσονται αἱ μάνδραι αὐτῶν ἐκεῖ καὶ κοιμηθήσονται, καὶ ἐκεῖ ἀναπαύσονται ἐν τρυφῇ ἀγαθῇ, καὶ ἐν νομῇ πίονι βοσκηθήσονται ἐπὶ τῶν ὀρέων Ἰσραήλ."
+        },
+        {
+          "ref": "Ezek.34.15",
+          "text": "ἐγὼ βοσκήσω τὰ πρόβατά μου καὶ ἐγὼ ἀναπαύσω αὐτά, καὶ γνώσονται ὅτι ἐγώ εἰμι Κύριος. τάδε λέγει κύριος Κύριος"
+        },
+        {
+          "ref": "Ezek.34.16",
+          "text": "Τὸ ἀπολωλὸς ζητήσω, καὶ τὸ πλανώμενον ἐπιστρέψω, καὶ τὸ συντετριμμένον καταδήσω, καὶ τὸ ἐκλιπὸν ἐνισχύσω, καὶ τὸ ἰσχυρὸν φυλάξω, καὶ βοσκήσω αὐτὰ μετὰ κρίματος."
+        },
+        {
+          "ref": "Ezek.34.17",
+          "text": "καὶ ὑμεῖς, πρόβατα, τάδε λέγει κύριος Κύριος Ἰδοὺ ἐγὼ διακρινῶ ἀνὰ μέσον προβάτου καὶ προβάτου, κριῶν καὶ τράγων."
+        },
+        {
+          "ref": "Ezek.34.18",
+          "text": "καὶ οὐχ ἱκανὸν ὑμῖν ὅτι τὴν καλὴν νομὴν ἐνέμεσθε, καὶ τὰ κατάλοιπα τῆς νομῆς ὑμῶν κατεπατεῖτε τοῖς ποσὶν ὑμῶν καὶ τὸ καθεστηκὸς ὕδωρ ἐπίνετε, καὶ τὸ λοιπὸν τοῖς ποσὶν ὑμῶν ἐταράσσετε;"
+        },
+        {
+          "ref": "Ezek.34.19",
+          "text": "καὶ τὰ πρόβατά μου τὰ πατήματα τῶν ποδῶν ὑμῶν ἐνέμοντο, καὶ τὸ τεταραγμένον ὕδωρ ὑπὸ τῶν ποδῶν ὑμῶν ἔπινον;"
+        },
+        {
+          "ref": "Ezek.34.20",
+          "text": "Διὰ τοῦτο τάδε λέγει κύριος Κύριος Ἰδοὺ ἐγὼ διακρινῶ ἀνὰ μέσον προβἀτου ἰσχυροῦ καὶ ἀνὰ μέσον προβάτου ἀσθενοῦς."
+        },
+        {
+          "ref": "Ezek.34.21",
+          "text": "ἐπὶ ταῖς πλευραῖς καὶ τοῖς ὤμοις ὑμῶν διωθεῖσθε, καὶ τοῖς κέρασιν ὑμῶν ἐκερατίζετε, καὶ πᾶν τὸ ἐκλεῖπον ἐξεθλίβετε."
+        },
+        {
+          "ref": "Ezek.34.22",
+          "text": "καὶ σώσω τὰ πρόβατά μου, καὶ οὐ μὴ ὦσιν ἔτι εἰς προνομήν, καὶ κρινῶ ἀνὰ μέσον κριοῦ πρὸς κριόν."
+        },
+        {
+          "ref": "Ezek.34.23",
+          "text": "καὶ ἀναστήσω ἐπʼ αὐτοὺς ποιμένα ἕνα καὶ ποιμαίνει αὐτούς, τὸν δοῦλόν μου Δαυείδ, καὶ ἔσται αὐτῶν ποιμήν·"
+        },
+        {
+          "ref": "Ezek.34.24",
+          "text": "καὶ ἐγὼ Κύριος ἔσομαι αὐτοῖς εἰς θεόν, καὶ Δαυεὶδ ἐν μέσῳ αὐτῶν ἄρχων· ἐγὼ Κύριος ἐλάλησα."
+        },
+        {
+          "ref": "Ezek.34.25",
+          "text": "καὶ διαθήσομαι τῷ Δαυεὶδ διαθήκην εἰρήνης. καὶ ἀφανιῶ θηρία πονηρὰ ἀπὸ τῆς γῆς, καὶ κατοικήσουσιν ἐν τῇ ἐρήμῳ καὶ ὑπνώσουσιν ἐν τοῖς δρυμοῖς."
+        },
+        {
+          "ref": "Ezek.34.26",
+          "text": "καὶ δώσω αὐτοὺς περικυκλῳ τοῦ ὄρους μου· καὶ δώσω τὸν ὑετὸν ὑμῖν, ὑετὸν εὐλογίας."
+        },
+        {
+          "ref": "Ezek.34.27",
+          "text": "καὶ τὰ ξύλα τὰ ἐν τῷ πεδίῳ δώσει τὸν καρπὸν αὐτῶν, καὶ ἡ γῆ δώσει τὴν ἰσχὺν αὐτῆς, καὶ κατοικήσουσιν ἐπὶ τῆς γῆς αὐτῶν ἐν ἐλπίδι εἰρήνης, καὶ γνώσονται ὅτι ἐγὼ εἰμι Κύριος, ἐν τῷ συντρίψαι με τὸν ζυγὸν αὐτῶν· καὶ ἐξελοῦμαι αὐτοὺς ἐκ χειρὸς τῶν καταδουλωσαμένων αὐτούς,"
+        },
+        {
+          "ref": "Ezek.34.28",
+          "text": "καὶ οὐκ ἔσονται ἔτι ἐν προνομῇ τοῖς ἔθνεσιν, καὶ τὰ θηρία τῆς γῆς οὐκέτι μὴ φάγωσιν αὐτοὺς· καὶ κατοικήσουσιν ἐν ἐλπίδι, καὶ οὐκ ἔσται ὁ ἐκφοβῶν αὐτούς."
+        },
+        {
+          "ref": "Ezek.34.29",
+          "text": "καὶ ἀναστήσω αὐτοῖς φυτὸν εἰρήνης, καὶ οὐκέτι ἔσονται ἀπολλύμενοι λιμῷ ἐπὶ τῆς γῆς, καὶ οὐ μὴ ἐνέγκωσιν ἔτι ὀνειδισμὸν ἐθνῶν."
+        },
+        {
+          "ref": "Ezek.34.30",
+          "text": "καὶ γνώσονται ὅτι ἐγώ εἰμι Κύριος ὁ θεὸς αὐτῶν, καὶ αὐτοὶ λαός μου. οἶκος Ἰσραήλ, λέγει Κύριος,"
+        },
+        {
+          "ref": "Ezek.34.31",
+          "text": "πρόβατά μου καὶ πρόβατα ποιμνίου μού ἐστε, καὶ ἐγὼ Κύριος ὁ θεὸς ὑμῶν, λέγει κύριος Κύριος."
+        }
+      ],
+      "textSha256": "e554e51f3e2008bce1eb166ffc76c681a1376c9b6ddf0ac003c9731f72aff6ed",
+      "contextVerified": true,
+      "readingScope": "SELECTED_DIGITAL_CONTEXT_NOT_WHOLE_BOOK_OR_PRINT"
+    },
+    {
+      "id": "MT-EZ37",
+      "sourceFile": "MT-Ezek",
+      "kind": "osis-ketiv",
+      "book": "Ezek",
+      "chapter": 37,
+      "firstVerse": 15,
+      "lastVerse": 28,
+      "verses": [
+        {
+          "ref": "Ezek.37.15",
+          "text": "וַיְהִ֥י דְבַר יְהוָ֖ה אֵלַ֥י לֵאמֹֽר"
+        },
+        {
+          "ref": "Ezek.37.16",
+          "text": "וְאַתָּ֣ה בֶן אָדָ֗ם קַח לְךָ֙ עֵ֣ץ אֶחָ֔ד וּכְתֹ֤ב עָלָיו֙ לִֽיהוּדָ֔ה וְלִבְנֵ֥י יִשְׂרָאֵ֖ל חברו וּלְקַח֙ עֵ֣ץ אֶחָ֔ד וּכְת֣וֹב עָלָ֗יו לְיוֹסֵף֙ עֵ֣ץ אֶפְרַ֔יִם וְכָל בֵּ֥ית יִשְׂרָאֵ֖ל חברו"
+        },
+        {
+          "ref": "Ezek.37.17",
+          "text": "וְקָרַ֨ב אֹתָ֜ם אֶחָ֧ד אֶל אֶחָ֛ד לְךָ֖ לְעֵ֣ץ אֶחָ֑ד וְהָי֥וּ לַאֲחָדִ֖ים בְּיָדֶֽךָ"
+        },
+        {
+          "ref": "Ezek.37.18",
+          "text": "וְכַֽאֲשֶׁר֙ יֹאמְר֣וּ אֵלֶ֔יךָ בְּנֵ֥י עַמְּךָ֖ לֵאמֹ֑ר הֲלֽוֹא תַגִּ֥יד לָ֖נוּ מָה אֵ֥לֶּה לָּֽךְ"
+        },
+        {
+          "ref": "Ezek.37.19",
+          "text": "דַּבֵּ֣ר אֲלֵהֶ֗ם כֹּֽה אָמַר֮ אֲדֹנָ֣י יְהוִה֒ הִנֵּה֩ אֲנִ֨י לֹקֵ֜חַ אֶת עֵ֤ץ יוֹסֵף֙ אֲשֶׁ֣ר בְּיַד אֶפְרַ֔יִם וְשִׁבְטֵ֥י יִשְׂרָאֵ֖ל חברו וְנָתַתִּי֩ אוֹתָ֨ם עָלָ֜יו אֶת עֵ֣ץ יְהוּדָ֗ה וַֽעֲשִׂיתִם֙ לְעֵ֣ץ אֶחָ֔ד וְהָי֥וּ אֶחָ֖ד בְּיָדִֽי"
+        },
+        {
+          "ref": "Ezek.37.20",
+          "text": "וְהָי֨וּ הָעֵצִ֜ים אֲֽשֶׁר תִּכְתֹּ֧ב עֲלֵיהֶ֛ם בְּיָדְךָ֖ לְעֵינֵיהֶֽם"
+        },
+        {
+          "ref": "Ezek.37.21",
+          "text": "וְדַבֵּ֣ר אֲלֵיהֶ֗ם כֹּֽה אָמַר֮ אֲדֹנָ֣י יְהוִה֒ הִנֵּ֨ה אֲנִ֤י לֹקֵ֨חַ֙ אֶת בְּנֵ֣י יִשְׂרָאֵ֔ל מִבֵּ֥ין הַגּוֹיִ֖ם אֲשֶׁ֣ר הָֽלְכוּ שָׁ֑ם וְקִבַּצְתִּ֤י אֹתָם֙ מִסָּבִ֔יב וְהֵבֵאתִ֥י אוֹתָ֖ם אֶל אַדְמָתָֽם"
+        },
+        {
+          "ref": "Ezek.37.22",
+          "text": "וְעָשִׂ֣יתִי אֹ֠תָם לְג֨וֹי אֶחָ֤ד בָּאָ֨רֶץ֙ בְּהָרֵ֣י יִשְׂרָאֵ֔ל וּמֶ֧לֶךְ אֶחָ֛ד יִֽהְיֶ֥ה לְכֻלָּ֖ם לְמֶ֑לֶךְ וְלֹ֤א יהיה עוֹד֙ לִשְׁנֵ֣י גוֹיִ֔ם וְלֹ֨א יֵחָ֥צוּ ע֛וֹד לִשְׁתֵּ֥י מַמְלָכ֖וֹת עֽוֹד"
+        },
+        {
+          "ref": "Ezek.37.23",
+          "text": "וְלֹ֧א יִֽטַמְּא֣וּ ע֗וֹד בְּגִלּֽוּלֵיהֶם֙ וּבְשִׁקּ֣וּצֵיהֶ֔ם וּבְכֹ֖ל פִּשְׁעֵיהֶ֑ם וְהוֹשַׁעְתִּ֣י אֹתָ֗ם מִכֹּ֤ל מוֹשְׁבֹֽתֵיהֶם֙ אֲשֶׁ֣ר חָטְא֣וּ בָהֶ֔ם וְטִהַרְתִּ֤י אוֹתָם֙ וְהָיוּ לִ֣י לְעָ֔ם וַאֲנִ֕י אֶהְיֶ֥ה לָהֶ֖ם לֵאלֹהִֽים"
+        },
+        {
+          "ref": "Ezek.37.24",
+          "text": "וְעַבְדִּ֤י דָוִד֙ מֶ֣לֶךְ עֲלֵיהֶ֔ם וְרוֹעֶ֥ה אֶחָ֖ד יִהְיֶ֣ה לְכֻלָּ֑ם וּבְמִשְׁפָּטַ֣י יֵלֵ֔כוּ וְחֻקֹּתַ֥י יִשְׁמְר֖וּ וְעָשׂ֥וּ אוֹתָֽם"
+        },
+        {
+          "ref": "Ezek.37.25",
+          "text": "וְיָשְׁב֣וּ עַל הָאָ֗רֶץ אֲשֶׁ֤ר נָתַ֨תִּי֙ לְעַבְדִּ֣י לְיַֽעֲקֹ֔ב אֲשֶׁ֥ר יָֽשְׁבוּ בָ֖הּ אֲבֽוֹתֵיכֶ֑ם וְיָשְׁב֣וּ עָלֶ֡יהָ הֵ֠מָּה וּבְנֵיהֶ֞ם וּבְנֵ֤י בְנֵיהֶם֙ עַד עוֹלָ֔ם וְדָוִ֣ד עַבְדִּ֔י נָשִׂ֥יא לָהֶ֖ם לְעוֹלָֽם"
+        },
+        {
+          "ref": "Ezek.37.26",
+          "text": "וְכָרַתִּ֤י לָהֶם֙ בְּרִ֣ית שָׁל֔וֹם בְּרִ֥ית עוֹלָ֖ם יִהְיֶ֣ה אוֹתָ֑ם וּנְתַתִּים֙ וְהִרְבֵּיתִ֣י אוֹתָ֔ם וְנָתַתִּ֧י אֶת מִקְדָּשִׁ֛י בְּתוֹכָ֖ם לְעוֹלָֽם"
+        },
+        {
+          "ref": "Ezek.37.27",
+          "text": "וְהָיָ֤ה מִשְׁכָּנִי֙ עֲלֵיהֶ֔ם וְהָיִ֥יתִי לָהֶ֖ם לֵֽאלֹהִ֑ים וְהֵ֖מָּה יִֽהְיוּ לִ֥י לְעָֽם"
+        },
+        {
+          "ref": "Ezek.37.28",
+          "text": "וְיָֽדְעוּ֙ הַגּוֹיִ֔ם כִּ֚י אֲנִ֣י יְהוָ֔ה מְקַדֵּ֖שׁ אֶת יִשְׂרָאֵ֑ל בִּהְי֧וֹת מִקְדָּשִׁ֛י בְּתוֹכָ֖ם לְעוֹלָֽם"
+        }
+      ],
+      "textSha256": "f2e68cbcf39c41645b569bb3e2efb7bb776178b9c864dc33e624b7c8db829cf1",
+      "contextVerified": true,
+      "readingScope": "SELECTED_DIGITAL_CONTEXT_NOT_WHOLE_BOOK_OR_PRINT",
+      "excludedNotes": [
+        {
+          "ref": "Ezek.37.16",
+          "xml": "<ns0:note xmlns:ns0=\"http://www.bibletechnologies.net/2003/OSIS/namespace\" type=\"variant\"><ns0:catchWord>חבר/ו</ns0:catchWord><ns0:rdg type=\"x-qere\"><ns0:w lemma=\"2270\" n=\"1\" morph=\"HNcmpc/Sp3ms\" id=\"26HZ4\">חֲבֵרָ֑י/ו</ns0:w></ns0:rdg></ns0:note>\n          "
+        },
+        {
+          "ref": "Ezek.37.16",
+          "xml": "<ns0:note xmlns:ns0=\"http://www.bibletechnologies.net/2003/OSIS/namespace\" type=\"variant\"><ns0:catchWord>חבר/ו</ns0:catchWord><ns0:rdg type=\"x-qere\"><ns0:w lemma=\"2270\" n=\"0\" morph=\"HNcmpc/Sp3ms\" id=\"26uQs\">חֲבֵרָֽי/ו</ns0:w></ns0:rdg></ns0:note>"
+        },
+        {
+          "ref": "Ezek.37.19",
+          "xml": "<ns0:note xmlns:ns0=\"http://www.bibletechnologies.net/2003/OSIS/namespace\" type=\"variant\"><ns0:catchWord>חבר/ו</ns0:catchWord><ns0:rdg type=\"x-qere\"><ns0:w lemma=\"2270\" n=\"1\" morph=\"HNcmpc/Sp3ms\" id=\"263Qd\">חֲבֵרָ֑י/ו</ns0:w></ns0:rdg></ns0:note>\n          "
+        },
+        {
+          "ref": "Ezek.37.22",
+          "xml": "<ns0:note xmlns:ns0=\"http://www.bibletechnologies.net/2003/OSIS/namespace\" type=\"variant\"><ns0:catchWord>יהיה</ns0:catchWord><ns0:rdg type=\"x-qere\"><ns0:w lemma=\"1961\" morph=\"HVqi3mp\" id=\"26Rnv\">יִֽהְיוּ</ns0:w></ns0:rdg></ns0:note>"
+        }
+      ]
+    },
+    {
+      "id": "LXX-EZ37",
+      "sourceFile": "LXX-Ezek",
+      "kind": "tei-body",
+      "book": "Ezek",
+      "chapter": 37,
+      "firstVerse": 15,
+      "lastVerse": 28,
+      "verses": [
+        {
+          "ref": "Ezek.37.15",
+          "text": "Καὶ ἐγένετο λόγος Κυρίου πρὸς μέ λέγων"
+        },
+        {
+          "ref": "Ezek.37.16",
+          "text": "Υἱὲ ἀνθρώπου, λάβε σεαυτῷ ῥάβδον καὶ γράψον ἐπʼ αὐτὴν τὸν Ἰούδαν καὶ τοὺς υἱοὺς Ἰσραὴλ τοὺς προσκειμένους ἐπʼ αὐτόν· καὶ ῥὰβδον δευτέραν λήμψῃ σεαυτῷ καὶ γράψεις αὐτὴν Τῷ Ἰωσήφ, ῥάβδον Ἐφρἀιμ καὶ πάντας τοὺς υἱοὺς Ἰσραὴλ τοὺς προστεθέντας πρὸς αὐτόν."
+        },
+        {
+          "ref": "Ezek.37.17",
+          "text": "καὶ συνάψεις αὐτὰς πρὸς ἀλλήλας σαυτῷ εἰς ῥάβδον μίαν τοῦ δῆσαι αὐτάς, καὶ ἔσονται ἐν τῇ χειρί σου."
+        },
+        {
+          "ref": "Ezek.37.18",
+          "text": "καὶ ἔσται ὅταν λέγωσιν πρὸς σέ οἱ υἱοὶ τοῦ λαοῦ σου Οὐκ ἀναγγέλλεις ἡμῖν τί ἐστιν ταῦτά σοι;"
+        },
+        {
+          "ref": "Ezek.37.19",
+          "text": "καὶ ἐρεῖς πρὸς αὐτοὺς Τάδε λέγει Κύριος Ἰδοὺ ἐγὼ λήμψομαι τὴν φυλὴν Ἰωσὴφ τὴν διὰ χειρὸς Ἐφράιμ καὶ τὰς φυλὰς Ἰσραὴλ τὰς προσκειμένας πρὸς αὐτόν, καὶ δώσω αὐτοὺς ἐπὶ τὴν φυλὴν Ἰούδα, καὶ ἔσονται εἰς ῥάβδον μίαν τῇ χειρὶ Ἰούδα."
+        },
+        {
+          "ref": "Ezek.37.20",
+          "text": "καὶ ἔσονται αἱ ῥάβδοι ἐφʼ ἂς σὺ ἔγραψας ἐπʼ αὐταῖς ἐν τῇ χειρί σου ἐνώπιον αὐτῶν,"
+        },
+        {
+          "ref": "Ezek.37.21",
+          "text": "καὶ ἐρεῖς αὐτοῖς Τάδε λέγει κύριος Κύριος Ἰδοὺ ἐγὼ λαμβάνω πάντα οἶκον Ἰσραὴλ ἐκ μέσου τῶν ἐθνῶν οὗ εἰσήλθοσαν ἐκεῖ, καὶ συνάξω αὐτοὺς ἀπὸ πάντων τῶν περικυκλῳ αὐτῶν καὶ εἰσάξω αὐτοὺς εἰς τὴν γῆν τοῦ Ἰσραήλ,"
+        },
+        {
+          "ref": "Ezek.37.22",
+          "text": "καὶ δώσω αὐτοὺς εἰς ἔθνος ἐν τῇ γῇ μου καὶ ἐν τοῖς ὄρεσιν Ἰσραήλ· καὶ ἄρχων εἷς ἔσται αὐτῶν, καὶ οὐκ ἔσονται ἔτι εἰς δύο ἔθνη, οὐδὲ μὴ διαιρεθῶσιν οὐκέτι εἰς δύο βασιλείας,"
+        },
+        {
+          "ref": "Ezek.37.23",
+          "text": "ἵνα μὴ μιαίνωνται ἔτι ἐν τοῖς εἰδώλοις αὐτῶν. καὶ ῥύσομαι αὐτοὺς ἀπὸ πασῶν τῶν ἀνομιῶν αὐτῶν ὧν ἡμάρτοσαν ἐυ αὐταῖς, καὶ καθαριῶ αὐτούς, καὶ ἔσονταί μοι εἰς λαόν, καὶ ἐγὼ Κύριος ἔσομαι αὐτοῖς εἰς θεόν·"
+        },
+        {
+          "ref": "Ezek.37.24",
+          "text": "καὶ ὁ δοῦλός μου Δαυεὶδ ἄρχων ἐν μέσῳ αὐτῶν· ἔσται ποιμὴν εἷς πάντων· ὅτι ἐν τοῖς προστάγμασίν μου πορεύσονται, καὶ τὰ κρίματά μου φυλάξονται καὶ ποιήσουσιν αὐτά."
+        },
+        {
+          "ref": "Ezek.37.25",
+          "text": "καὶ κατοικήσουσιν ἐπὶ τῆς γῆς αὐτῶν ἣν ἐγὼ δέδωκα τῷ δούλῳ μου Ἰακώβ, οὐ κατῴκησαν ἐκεῖ οἱ πατέρες αὐτῶν, καὶ κατοικήσουσιν ἐπʼ αὐτῆς αὐτοί. καὶ Δαυεὶδ ὁ δοῦλός μου ἄθρχων εἰς τὸν αἰῶνα."
+        },
+        {
+          "ref": "Ezek.37.26",
+          "text": "καὶ διαθήσομαι ὐτοῖς διαθήκην εἰρήνης, διαθήκη αἰωνία ἔσται μετʼ αὐτῶν· καὶ θήσω τὰ ἅγιά μου ἐν μέσῳ αὐτῶν εἰς τὸν αἰῶνα,"
+        },
+        {
+          "ref": "Ezek.37.27",
+          "text": "καὶ ἔσται ἡ κατασκήνωσίς μου ἐν αὐτοῖς, καὶ ἔσομαι αὐτοῖς θεός, καὶ αὐτοί μου ἔσονται λαός."
+        },
+        {
+          "ref": "Ezek.37.28",
+          "text": "καὶ γνώσονται τὰ ἔθνη ὅτι ἐγὼ εἰμι Κύριος ὁ ἁγιάζων αὐτούς, ἐν τῷ εἶναι τὰ ἄγιά μου ἐν μέσῳ αὐτῶν εἰς τὸν αἰῶνα."
+        }
+      ],
+      "textSha256": "6277f7b74b7c1d54edd9574c5ee76f6f21b7bf19299b7e1ee61c65c6a68cff19",
+      "contextVerified": true,
+      "readingScope": "SELECTED_DIGITAL_CONTEXT_NOT_WHOLE_BOOK_OR_PRINT"
+    },
+    {
+      "id": "MT-ZECH2",
+      "sourceFile": "MT-Zech",
+      "kind": "osis-ketiv",
+      "book": "Zech",
+      "chapter": 2,
+      "firstVerse": 5,
+      "lastVerse": 17,
+      "verses": [
+        {
+          "ref": "Zech.2.5",
+          "text": "וָאֶשָּׂ֥א עֵינַ֛י וָאֵ֖רֶא וְהִנֵּה אִ֑ישׁ וּבְיָד֖וֹ חֶ֥בֶל מִדָּֽה"
+        },
+        {
+          "ref": "Zech.2.6",
+          "text": "וָאֹמַ֕ר אָ֖נָה אַתָּ֣ה הֹלֵ֑ךְ וַיֹּ֣אמֶר אֵלַ֗י לָמֹד֙ אֶת יְר֣וּשָׁלִַ֔ם לִרְא֥וֹת כַּמָּֽה רָחְבָּ֖הּ וְכַמָּ֥ה אָרְכָּֽהּ"
+        },
+        {
+          "ref": "Zech.2.7",
+          "text": "וְהִנֵּ֗ה הַמַּלְאָ֛ךְ הַדֹּבֵ֥ר בִּ֖י יֹצֵ֑א וּמַלְאָ֣ךְ אַחֵ֔ר יֹצֵ֖א לִקְרָאתֽוֹ"
+        },
+        {
+          "ref": "Zech.2.8",
+          "text": "וַיֹּ֣אמֶר אֵלָ֔ו רֻ֗ץ דַּבֵּ֛ר אֶל הַנַּ֥עַר הַלָּ֖ז לֵאמֹ֑ר פְּרָזוֹת֙ תֵּשֵׁ֣ב יְרוּשָׁלִַ֔ם מֵרֹ֥ב אָדָ֛ם וּבְהֵמָ֖ה בְּתוֹכָֽהּ"
+        },
+        {
+          "ref": "Zech.2.9",
+          "text": "וַאֲנִ֤י אֶֽהְיֶה לָּהּ֙ נְאֻם יְהוָ֔ה ח֥וֹמַת אֵ֖שׁ סָבִ֑יב וּלְכָב֖וֹד אֶֽהְיֶ֥ה בְתוֹכָֽהּ"
+        },
+        {
+          "ref": "Zech.2.10",
+          "text": "ה֣וֹי ה֗וֹי וְנֻ֛סוּ מֵאֶ֥רֶץ צָפ֖וֹן נְאֻם יְהוָ֑ה כִּ֠י כְּאַרְבַּ֞ע רוּח֧וֹת הַשָּׁמַ֛יִם פֵּרַ֥שְׂתִּי אֶתְכֶ֖ם נְאֻם יְהוָֽה"
+        },
+        {
+          "ref": "Zech.2.11",
+          "text": "ה֥וֹי צִיּ֖וֹן הִמָּלְטִ֑י יוֹשֶׁ֖בֶת בַּת בָּבֶֽל"
+        },
+        {
+          "ref": "Zech.2.12",
+          "text": "כִּ֣י כֹ֣ה אָמַר֮ יְהוָ֣ה צְבָאוֹת֒ אַחַ֣ר כָּב֔וֹד שְׁלָחַ֕נִי אֶל הַגּוֹיִ֖ם הַשֹּׁלְלִ֣ים אֶתְכֶ֑ם כִּ֚י הַנֹּגֵ֣עַ בָּכֶ֔ם נֹגֵ֖עַ בְּבָבַ֥ת עֵינֽוֹ"
+        },
+        {
+          "ref": "Zech.2.13",
+          "text": "כִּ֠י הִנְנִ֨י מֵנִ֤יף אֶת יָדִי֙ עֲלֵיהֶ֔ם וְהָי֥וּ שָׁלָ֖ל לְעַבְדֵיהֶ֑ם וִֽידַעְתֶּ֕ם כִּֽי יְהוָ֥ה צְבָא֖וֹת שְׁלָחָֽנִי"
+        },
+        {
+          "ref": "Zech.2.14",
+          "text": "רָנִּ֥י וְשִׂמְחִ֖י בַּת צִיּ֑וֹן כִּ֧י הִנְנִי בָ֛א וְשָׁכַנְתִּ֥י בְתוֹכֵ֖ךְ נְאֻם יְהוָֽה"
+        },
+        {
+          "ref": "Zech.2.15",
+          "text": "וְנִלְווּ֩ גוֹיִ֨ם רַבִּ֤ים אֶל יְהוָה֙ בַּיּ֣וֹם הַה֔וּא וְהָ֥יוּ לִ֖י לְעָ֑ם וְשָׁכַנְתִּ֣י בְתוֹכֵ֔ךְ וְיָדַ֕עַתְּ כִּי יְהוָ֥ה צְבָא֖וֹת שְׁלָחַ֥נִי אֵלָֽיִךְ"
+        },
+        {
+          "ref": "Zech.2.16",
+          "text": "וְנָחַ֨ל יְהוָ֤ה אֶת יְהוּדָה֙ חֶלְק֔וֹ עַ֖ל אַדְמַ֣ת הַקֹּ֑דֶשׁ וּבָחַ֥ר ע֖וֹד בִּירוּשָׁלִָֽם"
+        },
+        {
+          "ref": "Zech.2.17",
+          "text": "הַ֥ס כָּל בָּשָׂ֖ר מִפְּנֵ֣י יְהוָ֑ה כִּ֥י נֵע֖וֹר מִמְּע֥וֹן קָדְשֽׁוֹ"
+        }
+      ],
+      "textSha256": "a7950aec5b4793ae0fefa511e8729699364ad79b1bb1dc87cba1c0b4592e2042",
+      "contextVerified": true,
+      "readingScope": "SELECTED_DIGITAL_CONTEXT_NOT_WHOLE_BOOK_OR_PRINT",
+      "excludedNotes": [
+        {
+          "ref": "Zech.2.5",
+          "xml": "<ns0:note xmlns:ns0=\"http://www.bibletechnologies.net/2003/OSIS/namespace\">KJV:Zech.2.1</ns0:note>\n          "
+        },
+        {
+          "ref": "Zech.2.6",
+          "xml": "<ns0:note xmlns:ns0=\"http://www.bibletechnologies.net/2003/OSIS/namespace\">KJV:Zech.2.2</ns0:note>\n          "
+        },
+        {
+          "ref": "Zech.2.7",
+          "xml": "<ns0:note xmlns:ns0=\"http://www.bibletechnologies.net/2003/OSIS/namespace\">KJV:Zech.2.3</ns0:note>\n          "
+        },
+        {
+          "ref": "Zech.2.8",
+          "xml": "<ns0:note xmlns:ns0=\"http://www.bibletechnologies.net/2003/OSIS/namespace\">KJV:Zech.2.4</ns0:note>\n          "
+        },
+        {
+          "ref": "Zech.2.8",
+          "xml": "<ns0:note xmlns:ns0=\"http://www.bibletechnologies.net/2003/OSIS/namespace\" n=\"Q\">Marks a place where we agree with BHQ against BHS in reading L. </ns0:note>\n          "
+        },
+        {
+          "ref": "Zech.2.8",
+          "xml": "<ns0:note xmlns:ns0=\"http://www.bibletechnologies.net/2003/OSIS/namespace\" n=\"q\">We have abandoned or added a ketib/qere relative to BHS. In doing this we agree with L against BHS. </ns0:note>\n          "
+        },
+        {
+          "ref": "Zech.2.9",
+          "xml": "<ns0:note xmlns:ns0=\"http://www.bibletechnologies.net/2003/OSIS/namespace\">KJV:Zech.2.5</ns0:note>\n          "
+        },
+        {
+          "ref": "Zech.2.10",
+          "xml": "<ns0:note xmlns:ns0=\"http://www.bibletechnologies.net/2003/OSIS/namespace\">KJV:Zech.2.6</ns0:note>\n          "
+        },
+        {
+          "ref": "Zech.2.11",
+          "xml": "<ns0:note xmlns:ns0=\"http://www.bibletechnologies.net/2003/OSIS/namespace\">KJV:Zech.2.7</ns0:note>\n          "
+        },
+        {
+          "ref": "Zech.2.12",
+          "xml": "<ns0:note xmlns:ns0=\"http://www.bibletechnologies.net/2003/OSIS/namespace\">KJV:Zech.2.8</ns0:note>\n          "
+        },
+        {
+          "ref": "Zech.2.13",
+          "xml": "<ns0:note xmlns:ns0=\"http://www.bibletechnologies.net/2003/OSIS/namespace\">KJV:Zech.2.9</ns0:note>\n          "
+        },
+        {
+          "ref": "Zech.2.13",
+          "xml": "<ns0:note xmlns:ns0=\"http://www.bibletechnologies.net/2003/OSIS/namespace\" type=\"exegesis\">WLC has this word divided as <ns0:rdg>עֲלֵ/יהֶ֔ם</ns0:rdg>.</ns0:note>\n          "
+        },
+        {
+          "ref": "Zech.2.14",
+          "xml": "<ns0:note xmlns:ns0=\"http://www.bibletechnologies.net/2003/OSIS/namespace\">KJV:Zech.2.10</ns0:note>\n          "
+        },
+        {
+          "ref": "Zech.2.15",
+          "xml": "<ns0:note xmlns:ns0=\"http://www.bibletechnologies.net/2003/OSIS/namespace\">KJV:Zech.2.11</ns0:note>\n          "
+        },
+        {
+          "ref": "Zech.2.16",
+          "xml": "<ns0:note xmlns:ns0=\"http://www.bibletechnologies.net/2003/OSIS/namespace\">KJV:Zech.2.12</ns0:note>\n          "
+        },
+        {
+          "ref": "Zech.2.17",
+          "xml": "<ns0:note xmlns:ns0=\"http://www.bibletechnologies.net/2003/OSIS/namespace\">KJV:Zech.2.13</ns0:note>\n          "
+        }
+      ]
+    },
+    {
+      "id": "LXX-ZECH2",
+      "sourceFile": "LXX-Zech",
+      "kind": "tei-body",
+      "book": "Zech",
+      "chapter": 2,
+      "firstVerse": 1,
+      "lastVerse": 13,
+      "verses": [
+        {
+          "ref": "Zech.2.1",
+          "text": "Καὶ ἦρα τοὺς ὀφθαλμούς μου καὶ εἶδον, καὶ ἰδοὺ ἀνὴρ καὶ ἐν τῇ χειρὶ αὐτοῦ σχοινίον γεωμετρικόν."
+        },
+        {
+          "ref": "Zech.2.2",
+          "text": "καὶ εἶπα πρὸς αὐτόν Ποῦ σὺ πορεύῃς; καὶ εἶπεν πρὸς μέ Διαμετρῆσαι τὴν Ἰερουσαλήμ, τοῦ ἰδεῖν πηλίκον τὸ πλάτος αὐτῆς ἐστιν καὶ πηλίκον τὸ μῆκος."
+        },
+        {
+          "ref": "Zech.2.3",
+          "text": "καὶ ἰδοὺ ὁ ἅγγελος ὁ λαλῶν ἐν ἐμοὶ ἱστήκει, καὶ ἄγγελος ἕτερος ἐξεπορεύετο εἰς συνάντησιν αὐτῷ,"
+        },
+        {
+          "ref": "Zech.2.4",
+          "text": "καὶ εἶπεν πρὸς αὐτὸν λέγων Δράμε καὶ λάλησον πρὸς τὸν νεανίαν ἐκεῖνον λέγων Κατακάρπαως κατοικηθήσεται Ἰερουσαλὴμ ἀπὸ πλήθους ἀνθρώπων κμὶ κτηνῶν ἐν μέσῳ αὐτῆς·"
+        },
+        {
+          "ref": "Zech.2.5",
+          "text": "καὶ ἐγὼ ἔσομαι αὐτῇ, λέγει Κύριος. τεῖχος πυρὸς κυκλόθεν, καὶ εἰς δόξαν ἔσομαι ἐν μέσῳ αὐτῆς."
+        },
+        {
+          "ref": "Zech.2.6",
+          "text": "ὢ ὢ φεύγετε ἀπὸ γῆς βορρᾶ, λέγει Κύριος, διότι ἐκ τῶν τεσσάρων ἀνέμων τοῦ οὐρανοῦ συνάξω ὑμᾶς, λέγει Κύριος·"
+        },
+        {
+          "ref": "Zech.2.7",
+          "text": "εἰς Σειὼν ἀνασώζεσθε, οἱ κατοικοῦντες θυγατέρα Βαβυλῶνος."
+        },
+        {
+          "ref": "Zech.2.8",
+          "text": "διότι τάδε λέγει Κύριος Παντοκράτωρ Οπίσω δόξης ἀπέσταλκέν με ἐπὶ τὰ ἔθνη τὰ σκυλεύσαντα ὑμᾶς, διότι ὁ ἁπτόμενος ὑμῶν ὡς ἁπτόμενος τῆς κόρης τοῦ ὀφθαλμοῦ αὐτοῦ·"
+        },
+        {
+          "ref": "Zech.2.9",
+          "text": "διότι ἰδοὺ ἐγὼ ἐπιφέρω τὴν χεῖρά μου ἐπʼ αὐτούς, καὶ ἔσονται σκῦλα τοῖς δουλεύουσιν αὐτοῖς, καὶ γνώσεσθε ὅτι Κύριος Παντοκράτωρ ἀπέσταλκέν με."
+        },
+        {
+          "ref": "Zech.2.10",
+          "text": "τέρπου καὶ εὐφραίνου, θύγατερ Σειών, διότι ἰδοὺ ἐγὼ ἔρχομαι καὶ κατασκηνώσω ἐν μέσῳ σου, λέγει Κύριος."
+        },
+        {
+          "ref": "Zech.2.11",
+          "text": "καὶ καταφεύξονται ἔθνη πολλὰ ἐπὶ τὸν κύριον ἐν τῇ ἡμέρᾳ ἐκείνῃ, καὶ ἔσονται αὐτῷ εἰς λαόν, καὶ κατασκηνώσουσιν ἐν μέσῳ σου, καὶ ἐπιγνώσῃ ὅτι Κύριος Παντοκράτωρ ἐξαπέσταλκέν με πρὸς σέ."
+        },
+        {
+          "ref": "Zech.2.12",
+          "text": "καὶ κατακληρονομήσει Κύριος τὸν Ἰούδαν, τῇ μερίδι αὐτοῦ ἐπὶ τὴν γῆν τὴν ἁγίαν, καὶ αἱρετιεῖ ἔτι τὴν Ἰερουσαλήμ."
+        },
+        {
+          "ref": "Zech.2.13",
+          "text": "εὐλαβείσθω πᾶσα σὰρξ ἀπὸ προσώπου Κυρίου, ὅτι ἐξεγήγερται ἐκ νεφελῶν ἁγίων αὐτοῦ."
+        }
+      ],
+      "textSha256": "9975f5554e029c4bafe7ac99c1b808970d8fcc264667c8afbf11bf088762414f",
+      "contextVerified": true,
+      "readingScope": "SELECTED_DIGITAL_CONTEXT_NOT_WHOLE_BOOK_OR_PRINT"
+    },
+    {
+      "id": "JN1",
+      "sourceFile": "NT-JOHN",
+      "kind": "morphgnt-8",
+      "book": "John",
+      "chapter": 1,
+      "firstVerse": 9,
+      "lastVerse": 18,
+      "verses": [
+        {
+          "ref": "040109",
+          "text": "ἦν τὸ φῶς τὸ ἀληθινὸν ὃ φωτίζει πάντα ἄνθρωπον ἐρχόμενον εἰς τὸν κόσμον."
+        },
+        {
+          "ref": "040110",
+          "text": "Ἐν τῷ κόσμῳ ἦν, καὶ ὁ κόσμος δι’ αὐτοῦ ἐγένετο, καὶ ὁ κόσμος αὐτὸν οὐκ ἔγνω."
+        },
+        {
+          "ref": "040111",
+          "text": "εἰς τὰ ἴδια ἦλθεν, καὶ οἱ ἴδιοι αὐτὸν οὐ παρέλαβον."
+        },
+        {
+          "ref": "040112",
+          "text": "ὅσοι δὲ ἔλαβον αὐτόν, ἔδωκεν αὐτοῖς ἐξουσίαν τέκνα θεοῦ γενέσθαι, τοῖς πιστεύουσιν εἰς τὸ ὄνομα αὐτοῦ,"
+        },
+        {
+          "ref": "040113",
+          "text": "οἳ οὐκ ἐξ αἱμάτων οὐδὲ ἐκ θελήματος σαρκὸς οὐδὲ ἐκ θελήματος ἀνδρὸς ἀλλ’ ἐκ θεοῦ ἐγεννήθησαν."
+        },
+        {
+          "ref": "040114",
+          "text": "Καὶ ὁ λόγος σὰρξ ἐγένετο καὶ ἐσκήνωσεν ἐν ἡμῖν, καὶ ἐθεασάμεθα τὴν δόξαν αὐτοῦ, δόξαν ὡς μονογενοῦς παρὰ πατρός, πλήρης χάριτος καὶ ἀληθείας·"
+        },
+        {
+          "ref": "040115",
+          "text": "(Ἰωάννης μαρτυρεῖ περὶ αὐτοῦ καὶ κέκραγεν λέγων· Οὗτος ἦν ⸂ὃν εἶπον⸃· Ὁ ὀπίσω μου ἐρχόμενος ἔμπροσθέν μου γέγονεν, ὅτι πρῶτός μου ἦν·)"
+        },
+        {
+          "ref": "040116",
+          "text": "⸀ὅτι ἐκ τοῦ πληρώματος αὐτοῦ ἡμεῖς πάντες ἐλάβομεν, καὶ χάριν ἀντὶ χάριτος·"
+        },
+        {
+          "ref": "040117",
+          "text": "ὅτι ὁ νόμος διὰ Μωϋσέως ἐδόθη, ἡ χάρις καὶ ἡ ἀλήθεια διὰ Ἰησοῦ Χριστοῦ ἐγένετο."
+        },
+        {
+          "ref": "040118",
+          "text": "θεὸν οὐδεὶς ἑώρακεν πώποτε· ⸂μονογενὴς θεὸς⸃ ὁ ὢν εἰς τὸν κόλπον τοῦ πατρὸς ἐκεῖνος ἐξηγήσατο."
+        }
+      ],
+      "textSha256": "ffff2d8e07dbd6832c1c52c252aec8068834d313c4249be5e3a9fd6ed358304d",
+      "contextVerified": true,
+      "readingScope": "SELECTED_DIGITAL_CONTEXT_NOT_WHOLE_BOOK_OR_PRINT"
+    },
+    {
+      "id": "JN7",
+      "sourceFile": "NT-JOHN",
+      "kind": "morphgnt-8",
+      "book": "John",
+      "chapter": 7,
+      "firstVerse": 30,
+      "lastVerse": 39,
+      "verses": [
+        {
+          "ref": "040730",
+          "text": "ἐζήτουν οὖν αὐτὸν πιάσαι, καὶ οὐδεὶς ἐπέβαλεν ἐπ’ αὐτὸν τὴν χεῖρα, ὅτι οὔπω ἐληλύθει ἡ ὥρα αὐτοῦ."
+        },
+        {
+          "ref": "040731",
+          "text": "⸂ἐκ τοῦ ὄχλου δὲ πολλοὶ⸃ ἐπίστευσαν εἰς αὐτόν, καὶ ⸀ἔλεγον· Ὁ χριστὸς ὅταν ἔλθῃ ⸀μὴ πλείονα ⸀σημεῖα ποιήσει ὧν οὗτος ἐποίησεν;"
+        },
+        {
+          "ref": "040732",
+          "text": "Ἤκουσαν οἱ Φαρισαῖοι τοῦ ὄχλου γογγύζοντος περὶ αὐτοῦ ταῦτα, καὶ ἀπέστειλαν ⸂οἱ ἀρχιερεῖς καὶ οἱ Φαρισαῖοι ὑπηρέτας⸃ ἵνα πιάσωσιν αὐτόν."
+        },
+        {
+          "ref": "040733",
+          "text": "εἶπεν οὖν ὁ Ἰησοῦς· Ἔτι ⸂χρόνον μικρὸν⸃ μεθ’ ὑμῶν εἰμι καὶ ὑπάγω πρὸς τὸν πέμψαντά με."
+        },
+        {
+          "ref": "040734",
+          "text": "ζητήσετέ με καὶ οὐχ ⸀εὑρήσετέ, καὶ ὅπου εἰμὶ ἐγὼ ὑμεῖς οὐ δύνασθε ἐλθεῖν."
+        },
+        {
+          "ref": "040735",
+          "text": "εἶπον οὖν οἱ Ἰουδαῖοι πρὸς ἑαυτούς· Ποῦ οὗτος μέλλει πορεύεσθαι ὅτι ἡμεῖς οὐχ εὑρήσομεν αὐτόν; μὴ εἰς τὴν διασπορὰν τῶν Ἑλλήνων μέλλει πορεύεσθαι καὶ διδάσκειν τοὺς Ἕλληνας;"
+        },
+        {
+          "ref": "040736",
+          "text": "τίς ἐστιν ⸂ὁ λόγος οὗτος⸃ ὃν εἶπε· Ζητήσετέ με καὶ οὐχ ⸀εὑρήσετέ, καὶ ὅπου εἰμὶ ἐγὼ ὑμεῖς οὐ δύνασθε ἐλθεῖν;"
+        },
+        {
+          "ref": "040737",
+          "text": "Ἐν δὲ τῇ ἐσχάτῃ ἡμέρᾳ τῇ μεγάλῃ τῆς ἑορτῆς εἱστήκει ὁ Ἰησοῦς, καὶ ἔκραξεν λέγων· Ἐάν τις διψᾷ ἐρχέσθω πρός με καὶ πινέτω."
+        },
+        {
+          "ref": "040738",
+          "text": "ὁ πιστεύων εἰς ἐμέ, καθὼς εἶπεν ἡ γραφή, ποταμοὶ ἐκ τῆς κοιλίας αὐτοῦ ῥεύσουσιν ὕδατος ζῶντος."
+        },
+        {
+          "ref": "040739",
+          "text": "τοῦτο δὲ εἶπεν περὶ τοῦ πνεύματος ⸀οὗ ἔμελλον λαμβάνειν οἱ ⸀πιστεύσαντες εἰς αὐτόν· οὔπω γὰρ ἦν ⸀πνεῦμα, ὅτι Ἰησοῦς ⸀οὐδέπω ἐδοξάσθη."
+        }
+      ],
+      "textSha256": "164709a9ab2646046406ffbc005c57f08d0905f5ac47627d45e5610349608d1c",
+      "contextVerified": true,
+      "readingScope": "SELECTED_DIGITAL_CONTEXT_NOT_WHOLE_BOOK_OR_PRINT"
+    },
+    {
+      "id": "JN10",
+      "sourceFile": "NT-JOHN",
+      "kind": "morphgnt-8",
+      "book": "John",
+      "chapter": 10,
+      "firstVerse": 1,
+      "lastVerse": 18,
+      "verses": [
+        {
+          "ref": "041001",
+          "text": "Ἀμὴν ἀμὴν λέγω ὑμῖν, ὁ μὴ εἰσερχόμενος διὰ τῆς θύρας εἰς τὴν αὐλὴν τῶν προβάτων ἀλλὰ ἀναβαίνων ἀλλαχόθεν ἐκεῖνος κλέπτης ἐστὶν καὶ λῃστής·"
+        },
+        {
+          "ref": "041002",
+          "text": "ὁ δὲ εἰσερχόμενος διὰ τῆς θύρας ποιμήν ἐστιν τῶν προβάτων."
+        },
+        {
+          "ref": "041003",
+          "text": "τούτῳ ὁ θυρωρὸς ἀνοίγει, καὶ τὰ πρόβατα τῆς φωνῆς αὐτοῦ ἀκούει καὶ τὰ ἴδια πρόβατα ⸀φωνεῖ κατ’ ὄνομα καὶ ἐξάγει αὐτά."
+        },
+        {
+          "ref": "041004",
+          "text": "⸀ὅταν τὰ ἴδια ⸀πάντα ἐκβάλῃ, ἔμπροσθεν αὐτῶν πορεύεται, καὶ τὰ πρόβατα αὐτῷ ἀκολουθεῖ, ὅτι οἴδασιν τὴν φωνὴν αὐτοῦ·"
+        },
+        {
+          "ref": "041005",
+          "text": "ἀλλοτρίῳ δὲ οὐ μὴ ⸀ἀκολουθήσουσιν ἀλλὰ φεύξονται ἀπ’ αὐτοῦ, ὅτι οὐκ οἴδασι τῶν ἀλλοτρίων τὴν φωνήν."
+        },
+        {
+          "ref": "041006",
+          "text": "ταύτην τὴν παροιμίαν εἶπεν αὐτοῖς ὁ Ἰησοῦς· ἐκεῖνοι δὲ οὐκ ἔγνωσαν τίνα ⸀ἦν ἃ ἐλάλει αὐτοῖς."
+        },
+        {
+          "ref": "041007",
+          "text": "Εἶπεν οὖν πάλιν ⸀αὐτοῖς ὁ Ἰησοῦς· Ἀμὴν ἀμὴν λέγω ὑμῖν ⸀ὅτι ἐγώ εἰμι ἡ θύρα τῶν προβάτων."
+        },
+        {
+          "ref": "041008",
+          "text": "πάντες ὅσοι ἦλθον ⸂πρὸ ἐμοῦ⸃ κλέπται εἰσὶν καὶ λῃσταί· ἀλλ’ οὐκ ἤκουσαν αὐτῶν τὰ πρόβατα."
+        },
+        {
+          "ref": "041009",
+          "text": "ἐγώ εἰμι ἡ θύρα· δι’ ἐμοῦ ἐάν τις εἰσέλθῃ σωθήσεται καὶ εἰσελεύσεται καὶ ἐξελεύσεται καὶ νομὴν εὑρήσει."
+        },
+        {
+          "ref": "041010",
+          "text": "ὁ κλέπτης οὐκ ἔρχεται εἰ μὴ ἵνα κλέψῃ καὶ θύσῃ καὶ ἀπολέσῃ· ἐγὼ ἦλθον ἵνα ζωὴν ἔχωσιν καὶ περισσὸν ἔχωσιν."
+        },
+        {
+          "ref": "041011",
+          "text": "Ἐγώ εἰμι ὁ ποιμὴν ὁ καλός· ὁ ποιμὴν ὁ καλὸς τὴν ψυχὴν αὐτοῦ τίθησιν ὑπὲρ τῶν προβάτων·"
+        },
+        {
+          "ref": "041012",
+          "text": "ὁ ⸀μισθωτὸς καὶ οὐκ ὢν ποιμήν, οὗ οὐκ ⸀ἔστιν τὰ πρόβατα ἴδια, θεωρεῖ τὸν λύκον ἐρχόμενον καὶ ἀφίησιν τὰ πρόβατα καὶ φεύγει— καὶ ὁ λύκος ἁρπάζει αὐτὰ καὶ ⸀σκορπίζει—"
+        },
+        {
+          "ref": "041013",
+          "text": "⸀ὅτι μισθωτός ἐστιν καὶ οὐ μέλει αὐτῷ περὶ τῶν προβάτων."
+        },
+        {
+          "ref": "041014",
+          "text": "ἐγώ εἰμι ὁ ποιμὴν ὁ καλός, καὶ γινώσκω τὰ ἐμὰ καὶ ⸂γινώσκουσί με τὰ ἐμά⸃,"
+        },
+        {
+          "ref": "041015",
+          "text": "καθὼς γινώσκει με ὁ πατὴρ κἀγὼ γινώσκω τὸν πατέρα, καὶ τὴν ψυχήν μου τίθημι ὑπὲρ τῶν προβάτων."
+        },
+        {
+          "ref": "041016",
+          "text": "καὶ ἄλλα πρόβατα ἔχω ἃ οὐκ ἔστιν ἐκ τῆς αὐλῆς ταύτης· κἀκεῖνα ⸂δεῖ με⸃ ἀγαγεῖν, καὶ τῆς φωνῆς μου ἀκούσουσιν, καὶ ⸀γενήσονται μία ποίμνη, εἷς ποιμήν."
+        },
+        {
+          "ref": "041017",
+          "text": "διὰ τοῦτό ⸂με ὁ πατὴρ⸃ ἀγαπᾷ ὅτι ἐγὼ τίθημι τὴν ψυχήν μου, ἵνα πάλιν λάβω αὐτήν."
+        },
+        {
+          "ref": "041018",
+          "text": "οὐδεὶς ⸀αἴρει αὐτὴν ἀπ’ ἐμοῦ, ἀλλ’ ἐγὼ τίθημι αὐτὴν ἀπ’ ἐμαυτοῦ. ἐξουσίαν ἔχω θεῖναι αὐτήν, καὶ ἐξουσίαν ἔχω πάλιν λαβεῖν αὐτήν· ταύτην τὴν ἐντολὴν ἔλαβον παρὰ τοῦ πατρός μου."
+        }
+      ],
+      "textSha256": "c22e5d840c28a3ad12804e694eab782cd205f4fa7e1e23344756671a966c7072",
+      "contextVerified": true,
+      "readingScope": "SELECTED_DIGITAL_CONTEXT_NOT_WHOLE_BOOK_OR_PRINT"
+    },
+    {
+      "id": "JN11",
+      "sourceFile": "NT-JOHN",
+      "kind": "morphgnt-8",
+      "book": "John",
+      "chapter": 11,
+      "firstVerse": 45,
+      "lastVerse": 57,
+      "verses": [
+        {
+          "ref": "041145",
+          "text": "Πολλοὶ οὖν ἐκ τῶν Ἰουδαίων, οἱ ἐλθόντες πρὸς τὴν ⸀Μαριὰμ καὶ θεασάμενοι ⸀ἃ ⸀ἐποίησεν, ἐπίστευσαν εἰς αὐτόν·"
+        },
+        {
+          "ref": "041146",
+          "text": "τινὲς δὲ ἐξ αὐτῶν ἀπῆλθον πρὸς τοὺς Φαρισαίους καὶ εἶπαν αὐτοῖς ἃ ⸀ἐποίησεν Ἰησοῦς."
+        },
+        {
+          "ref": "041147",
+          "text": "συνήγαγον οὖν οἱ ἀρχιερεῖς καὶ οἱ Φαρισαῖοι συνέδριον, καὶ ἔλεγον· Τί ποιοῦμεν ὅτι οὗτος ὁ ἄνθρωπος πολλὰ ⸂ποιεῖ σημεῖα⸃;"
+        },
+        {
+          "ref": "041148",
+          "text": "ἐὰν ἀφῶμεν αὐτὸν οὕτως, πάντες πιστεύσουσιν εἰς αὐτόν, καὶ ἐλεύσονται οἱ Ῥωμαῖοι καὶ ἀροῦσιν ἡμῶν καὶ τὸν τόπον καὶ τὸ ἔθνος."
+        },
+        {
+          "ref": "041149",
+          "text": "εἷς δέ τις ἐξ αὐτῶν Καϊάφας, ἀρχιερεὺς ὢν τοῦ ἐνιαυτοῦ ἐκείνου, εἶπεν αὐτοῖς· Ὑμεῖς οὐκ οἴδατε οὐδέν,"
+        },
+        {
+          "ref": "041150",
+          "text": "οὐδὲ ⸀λογίζεσθε ὅτι συμφέρει ⸀ὑμῖν ἵνα εἷς ἄνθρωπος ἀποθάνῃ ὑπὲρ τοῦ λαοῦ καὶ μὴ ὅλον τὸ ἔθνος ἀπόληται."
+        },
+        {
+          "ref": "041151",
+          "text": "τοῦτο δὲ ἀφ’ ἑαυτοῦ οὐκ εἶπεν, ἀλλὰ ἀρχιερεὺς ὢν τοῦ ἐνιαυτοῦ ἐκείνου ἐπροφήτευσεν ὅτι ἔμελλεν Ἰησοῦς ἀποθνῄσκειν ὑπὲρ τοῦ ἔθνους,"
+        },
+        {
+          "ref": "041152",
+          "text": "καὶ οὐχ ὑπὲρ τοῦ ἔθνους μόνον, ἀλλ’ ἵνα καὶ τὰ τέκνα τοῦ θεοῦ τὰ διεσκορπισμένα συναγάγῃ εἰς ἕν."
+        },
+        {
+          "ref": "041153",
+          "text": "ἀπ’ ἐκείνης οὖν τῆς ἡμέρας ⸀ἐβουλεύσαντο ἵνα ἀποκτείνωσιν αὐτόν."
+        },
+        {
+          "ref": "041154",
+          "text": "⸂Ὁ οὖν Ἰησοῦς⸃ οὐκέτι παρρησίᾳ περιεπάτει ἐν τοῖς Ἰουδαίοις, ἀλλὰ ἀπῆλθεν ἐκεῖθεν εἰς τὴν χώραν ἐγγὺς τῆς ἐρήμου, εἰς Ἐφραὶμ λεγομένην πόλιν, κἀκεῖ ⸀ἔμεινεν μετὰ τῶν ⸀μαθητῶν."
+        },
+        {
+          "ref": "041155",
+          "text": "Ἦν δὲ ἐγγὺς τὸ πάσχα τῶν Ἰουδαίων, καὶ ἀνέβησαν πολλοὶ εἰς Ἱεροσόλυμα ἐκ τῆς χώρας πρὸ τοῦ πάσχα ἵνα ἁγνίσωσιν ἑαυτούς."
+        },
+        {
+          "ref": "041156",
+          "text": "ἐζήτουν οὖν τὸν Ἰησοῦν καὶ ἔλεγον μετ’ ἀλλήλων ἐν τῷ ἱερῷ ἑστηκότες· Τί δοκεῖ ὑμῖν; ὅτι οὐ μὴ ἔλθῃ εἰς τὴν ἑορτήν;"
+        },
+        {
+          "ref": "041157",
+          "text": "δεδώκεισαν ⸀δὲ οἱ ἀρχιερεῖς καὶ οἱ Φαρισαῖοι ⸀ἐντολὰς ἵνα ἐάν τις γνῷ ποῦ ἐστιν μηνύσῃ, ὅπως πιάσωσιν αὐτόν."
+        }
+      ],
+      "textSha256": "42080016d9d225ef05eb70aa6963e589e8a006fb57d44e3fdab693ab00f07234",
+      "contextVerified": true,
+      "readingScope": "SELECTED_DIGITAL_CONTEXT_NOT_WHOLE_BOOK_OR_PRINT"
+    }
+  ],
+  "pairings": [
+    {
+      "id": "DEUT30",
+      "mtContext": "MT-DEUT30",
+      "lxxContext": "LXX-DEUT30",
+      "verseMap": [
+        {
+          "mt": "Deut.30.1",
+          "lxx": "Deut.30.1"
+        },
+        {
+          "mt": "Deut.30.2",
+          "lxx": "Deut.30.2"
+        },
+        {
+          "mt": "Deut.30.3",
+          "lxx": "Deut.30.3"
+        },
+        {
+          "mt": "Deut.30.4",
+          "lxx": "Deut.30.4"
+        },
+        {
+          "mt": "Deut.30.5",
+          "lxx": "Deut.30.5"
+        },
+        {
+          "mt": "Deut.30.6",
+          "lxx": "Deut.30.6"
+        },
+        {
+          "mt": "Deut.30.7",
+          "lxx": "Deut.30.7"
+        },
+        {
+          "mt": "Deut.30.8",
+          "lxx": "Deut.30.8"
+        },
+        {
+          "mt": "Deut.30.9",
+          "lxx": "Deut.30.9"
+        },
+        {
+          "mt": "Deut.30.10",
+          "lxx": "Deut.30.10"
+        }
+      ]
+    },
+    {
+      "id": "ISA11",
+      "mtContext": "MT-ISA11",
+      "lxxContext": "LXX-ISA11",
+      "verseMap": [
+        {
+          "mt": "Isa.11.10",
+          "lxx": "Isa.11.10"
+        },
+        {
+          "mt": "Isa.11.11",
+          "lxx": "Isa.11.11"
+        },
+        {
+          "mt": "Isa.11.12",
+          "lxx": "Isa.11.12"
+        },
+        {
+          "mt": "Isa.11.13",
+          "lxx": "Isa.11.13"
+        },
+        {
+          "mt": "Isa.11.14",
+          "lxx": "Isa.11.14"
+        },
+        {
+          "mt": "Isa.11.15",
+          "lxx": "Isa.11.15"
+        },
+        {
+          "mt": "Isa.11.16",
+          "lxx": "Isa.11.16"
+        }
+      ]
+    },
+    {
+      "id": "ISA43",
+      "mtContext": "MT-ISA43",
+      "lxxContext": "LXX-ISA43",
+      "verseMap": [
+        {
+          "mt": "Isa.43.1",
+          "lxx": "Isa.43.1"
+        },
+        {
+          "mt": "Isa.43.2",
+          "lxx": "Isa.43.2"
+        },
+        {
+          "mt": "Isa.43.3",
+          "lxx": "Isa.43.3"
+        },
+        {
+          "mt": "Isa.43.4",
+          "lxx": "Isa.43.4"
+        },
+        {
+          "mt": "Isa.43.5",
+          "lxx": "Isa.43.5"
+        },
+        {
+          "mt": "Isa.43.6",
+          "lxx": "Isa.43.6"
+        },
+        {
+          "mt": "Isa.43.7",
+          "lxx": "Isa.43.7"
+        }
+      ]
+    },
+    {
+      "id": "ISA56",
+      "mtContext": "MT-ISA56",
+      "lxxContext": "LXX-ISA56",
+      "verseMap": [
+        {
+          "mt": "Isa.56.1",
+          "lxx": "Isa.56.1"
+        },
+        {
+          "mt": "Isa.56.2",
+          "lxx": "Isa.56.2"
+        },
+        {
+          "mt": "Isa.56.3",
+          "lxx": "Isa.56.3"
+        },
+        {
+          "mt": "Isa.56.4",
+          "lxx": "Isa.56.4"
+        },
+        {
+          "mt": "Isa.56.5",
+          "lxx": "Isa.56.5"
+        },
+        {
+          "mt": "Isa.56.6",
+          "lxx": "Isa.56.6"
+        },
+        {
+          "mt": "Isa.56.7",
+          "lxx": "Isa.56.7"
+        },
+        {
+          "mt": "Isa.56.8",
+          "lxx": "Isa.56.8"
+        }
+      ]
+    },
+    {
+      "id": "JER31",
+      "mtContext": "MT-JER31",
+      "lxxContext": "LXX-JER31",
+      "verseMap": [
+        {
+          "mt": "Jer.31.1",
+          "lxx": "Jer.38.1"
+        },
+        {
+          "mt": "Jer.31.2",
+          "lxx": "Jer.38.2"
+        },
+        {
+          "mt": "Jer.31.3",
+          "lxx": "Jer.38.3"
+        },
+        {
+          "mt": "Jer.31.4",
+          "lxx": "Jer.38.4"
+        },
+        {
+          "mt": "Jer.31.5",
+          "lxx": "Jer.38.5"
+        },
+        {
+          "mt": "Jer.31.6",
+          "lxx": "Jer.38.6"
+        },
+        {
+          "mt": "Jer.31.7",
+          "lxx": "Jer.38.7"
+        },
+        {
+          "mt": "Jer.31.8",
+          "lxx": "Jer.38.8"
+        },
+        {
+          "mt": "Jer.31.9",
+          "lxx": "Jer.38.9"
+        },
+        {
+          "mt": "Jer.31.10",
+          "lxx": "Jer.38.10"
+        },
+        {
+          "mt": "Jer.31.11",
+          "lxx": "Jer.38.11"
+        },
+        {
+          "mt": "Jer.31.12",
+          "lxx": "Jer.38.12"
+        },
+        {
+          "mt": "Jer.31.13",
+          "lxx": "Jer.38.13"
+        },
+        {
+          "mt": "Jer.31.14",
+          "lxx": "Jer.38.14"
+        }
+      ]
+    },
+    {
+      "id": "EZ34",
+      "mtContext": "MT-EZ34",
+      "lxxContext": "LXX-EZ34",
+      "verseMap": [
+        {
+          "mt": "Ezek.34.1",
+          "lxx": "Ezek.34.1"
+        },
+        {
+          "mt": "Ezek.34.2",
+          "lxx": "Ezek.34.2"
+        },
+        {
+          "mt": "Ezek.34.3",
+          "lxx": "Ezek.34.3"
+        },
+        {
+          "mt": "Ezek.34.4",
+          "lxx": "Ezek.34.4"
+        },
+        {
+          "mt": "Ezek.34.5",
+          "lxx": "Ezek.34.5"
+        },
+        {
+          "mt": "Ezek.34.6",
+          "lxx": "Ezek.34.6"
+        },
+        {
+          "mt": "Ezek.34.7",
+          "lxx": "Ezek.34.7"
+        },
+        {
+          "mt": "Ezek.34.8",
+          "lxx": "Ezek.34.8"
+        },
+        {
+          "mt": "Ezek.34.9",
+          "lxx": "Ezek.34.9"
+        },
+        {
+          "mt": "Ezek.34.10",
+          "lxx": "Ezek.34.10"
+        },
+        {
+          "mt": "Ezek.34.11",
+          "lxx": "Ezek.34.11"
+        },
+        {
+          "mt": "Ezek.34.12",
+          "lxx": "Ezek.34.12"
+        },
+        {
+          "mt": "Ezek.34.13",
+          "lxx": "Ezek.34.13"
+        },
+        {
+          "mt": "Ezek.34.14",
+          "lxx": "Ezek.34.14"
+        },
+        {
+          "mt": "Ezek.34.15",
+          "lxx": "Ezek.34.15"
+        },
+        {
+          "mt": "Ezek.34.16",
+          "lxx": "Ezek.34.16"
+        },
+        {
+          "mt": "Ezek.34.17",
+          "lxx": "Ezek.34.17"
+        },
+        {
+          "mt": "Ezek.34.18",
+          "lxx": "Ezek.34.18"
+        },
+        {
+          "mt": "Ezek.34.19",
+          "lxx": "Ezek.34.19"
+        },
+        {
+          "mt": "Ezek.34.20",
+          "lxx": "Ezek.34.20"
+        },
+        {
+          "mt": "Ezek.34.21",
+          "lxx": "Ezek.34.21"
+        },
+        {
+          "mt": "Ezek.34.22",
+          "lxx": "Ezek.34.22"
+        },
+        {
+          "mt": "Ezek.34.23",
+          "lxx": "Ezek.34.23"
+        },
+        {
+          "mt": "Ezek.34.24",
+          "lxx": "Ezek.34.24"
+        },
+        {
+          "mt": "Ezek.34.25",
+          "lxx": "Ezek.34.25"
+        },
+        {
+          "mt": "Ezek.34.26",
+          "lxx": "Ezek.34.26"
+        },
+        {
+          "mt": "Ezek.34.27",
+          "lxx": "Ezek.34.27"
+        },
+        {
+          "mt": "Ezek.34.28",
+          "lxx": "Ezek.34.28"
+        },
+        {
+          "mt": "Ezek.34.29",
+          "lxx": "Ezek.34.29"
+        },
+        {
+          "mt": "Ezek.34.30",
+          "lxx": "Ezek.34.30"
+        },
+        {
+          "mt": "Ezek.34.31",
+          "lxx": "Ezek.34.31"
+        }
+      ]
+    },
+    {
+      "id": "EZ37",
+      "mtContext": "MT-EZ37",
+      "lxxContext": "LXX-EZ37",
+      "verseMap": [
+        {
+          "mt": "Ezek.37.15",
+          "lxx": "Ezek.37.15"
+        },
+        {
+          "mt": "Ezek.37.16",
+          "lxx": "Ezek.37.16"
+        },
+        {
+          "mt": "Ezek.37.17",
+          "lxx": "Ezek.37.17"
+        },
+        {
+          "mt": "Ezek.37.18",
+          "lxx": "Ezek.37.18"
+        },
+        {
+          "mt": "Ezek.37.19",
+          "lxx": "Ezek.37.19"
+        },
+        {
+          "mt": "Ezek.37.20",
+          "lxx": "Ezek.37.20"
+        },
+        {
+          "mt": "Ezek.37.21",
+          "lxx": "Ezek.37.21"
+        },
+        {
+          "mt": "Ezek.37.22",
+          "lxx": "Ezek.37.22"
+        },
+        {
+          "mt": "Ezek.37.23",
+          "lxx": "Ezek.37.23"
+        },
+        {
+          "mt": "Ezek.37.24",
+          "lxx": "Ezek.37.24"
+        },
+        {
+          "mt": "Ezek.37.25",
+          "lxx": "Ezek.37.25"
+        },
+        {
+          "mt": "Ezek.37.26",
+          "lxx": "Ezek.37.26"
+        },
+        {
+          "mt": "Ezek.37.27",
+          "lxx": "Ezek.37.27"
+        },
+        {
+          "mt": "Ezek.37.28",
+          "lxx": "Ezek.37.28"
+        }
+      ]
+    },
+    {
+      "id": "ZECH2",
+      "mtContext": "MT-ZECH2",
+      "lxxContext": "LXX-ZECH2",
+      "verseMap": [
+        {
+          "mt": "Zech.2.5",
+          "lxx": "Zech.2.1"
+        },
+        {
+          "mt": "Zech.2.6",
+          "lxx": "Zech.2.2"
+        },
+        {
+          "mt": "Zech.2.7",
+          "lxx": "Zech.2.3"
+        },
+        {
+          "mt": "Zech.2.8",
+          "lxx": "Zech.2.4"
+        },
+        {
+          "mt": "Zech.2.9",
+          "lxx": "Zech.2.5"
+        },
+        {
+          "mt": "Zech.2.10",
+          "lxx": "Zech.2.6"
+        },
+        {
+          "mt": "Zech.2.11",
+          "lxx": "Zech.2.7"
+        },
+        {
+          "mt": "Zech.2.12",
+          "lxx": "Zech.2.8"
+        },
+        {
+          "mt": "Zech.2.13",
+          "lxx": "Zech.2.9"
+        },
+        {
+          "mt": "Zech.2.14",
+          "lxx": "Zech.2.10"
+        },
+        {
+          "mt": "Zech.2.15",
+          "lxx": "Zech.2.11"
+        },
+        {
+          "mt": "Zech.2.16",
+          "lxx": "Zech.2.12"
+        },
+        {
+          "mt": "Zech.2.17",
+          "lxx": "Zech.2.13"
+        }
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "id": "DEUT-DIASPORA",
+      "context": "LXX-DEUT30",
+      "ref": "Deut.30.4",
+      "verbatim": "ἡ διασπορά σου"
+    },
+    {
+      "id": "DEUT-DIVINE-AGENT",
+      "context": "LXX-DEUT30",
+      "ref": "Deut.30.1",
+      "verbatim": "σε διασκορπίσῃ Κύριος"
+    },
+    {
+      "id": "ISA-NATIONS",
+      "context": "LXX-ISA11",
+      "ref": "Isa.11.10",
+      "verbatim": "ἐπʼ αὐτῷ ἔθνη ἐλπιοῦσιν"
+    },
+    {
+      "id": "ISA-SCATTERED",
+      "context": "LXX-ISA11",
+      "ref": "Isa.11.12",
+      "verbatim": "τοὺς διεσπαρμένους Ἰούδα"
+    },
+    {
+      "id": "CREATED-JACOB",
+      "context": "LXX-ISA43",
+      "ref": "Isa.43.1",
+      "verbatim": "ὁ ποιήσας σε Ἰακώβ"
+    },
+    {
+      "id": "SONS-DAUGHTERS",
+      "context": "LXX-ISA43",
+      "ref": "Isa.43.6",
+      "verbatim": "τοὺς υἱούς μου"
+    },
+    {
+      "id": "NAMED",
+      "context": "LXX-ISA43",
+      "ref": "Isa.43.7",
+      "verbatim": "πάντας ὅσοι ἐπικέκληνται τῷ ὀνόματί μου"
+    },
+    {
+      "id": "FOREIGNER",
+      "context": "LXX-ISA56",
+      "ref": "Isa.56.3",
+      "verbatim": "ὁ ἀλλογενὴς ὁ προσκείμενος"
+    },
+    {
+      "id": "COVENANT",
+      "context": "LXX-ISA56",
+      "ref": "Isa.56.6",
+      "verbatim": "ἀντεχομένους τῆς διαθήκης μου"
+    },
+    {
+      "id": "ADDED-GATHERING",
+      "context": "LXX-ISA56",
+      "ref": "Isa.56.8",
+      "verbatim": "συνάξω ἐπʼ αὐτὸν συναγωγήν"
+    },
+    {
+      "id": "FATHER-ISRAEL",
+      "context": "LXX-JER31",
+      "ref": "Jer.38.9",
+      "verbatim": "τῷ Ἰσραὴλ εἰς πατέρα"
+    },
+    {
+      "id": "FIRSTBORN",
+      "context": "LXX-JER31",
+      "ref": "Jer.38.9",
+      "verbatim": "Ἐφράιμ πρωτότοκός μού ἐστιν"
+    },
+    {
+      "id": "WINNOWING-NOT-DIASKORPIZO",
+      "context": "LXX-JER31",
+      "ref": "Jer.38.10",
+      "verbatim": "Ὁ λικμήσας τὸν Ἰσραὴλ συνάξει αὐτόν"
+    },
+    {
+      "id": "REDEEMED-JACOB",
+      "context": "LXX-JER31",
+      "ref": "Jer.38.11",
+      "verbatim": "ἐλυτρώσατο Κύριος τὸν Ἰακώβ"
+    },
+    {
+      "id": "NEGLECT",
+      "context": "LXX-EZ34",
+      "ref": "Ezek.34.5",
+      "verbatim": "διὰ τὸ μὴ εἶναι ποιμένας"
+    },
+    {
+      "id": "GATHER-COUNTRIES",
+      "context": "LXX-EZ34",
+      "ref": "Ezek.34.13",
+      "verbatim": "συνάξω αὐτοὺς ἀπὸ τῶν χωρῶν"
+    },
+    {
+      "id": "INTERNAL-JUDGMENT",
+      "context": "LXX-EZ34",
+      "ref": "Ezek.34.17",
+      "verbatim": "διακρινῶ ἀνὰ μέσον προβάτου καὶ προβάτου"
+    },
+    {
+      "id": "ONE-SHEPHERD-34",
+      "context": "LXX-EZ34",
+      "ref": "Ezek.34.23",
+      "verbatim": "ποιμένα ἕνα"
+    },
+    {
+      "id": "ISRAEL-PEOPLE",
+      "context": "LXX-EZ34",
+      "ref": "Ezek.34.30",
+      "verbatim": "οἶκος Ἰσραήλ"
+    },
+    {
+      "id": "TWO-NATIONS",
+      "context": "LXX-EZ37",
+      "ref": "Ezek.37.22",
+      "verbatim": "οὐκ ἔσονται ἔτι εἰς δύο ἔθνη"
+    },
+    {
+      "id": "ONE-SHEPHERD-37",
+      "context": "LXX-EZ37",
+      "ref": "Ezek.37.24",
+      "verbatim": "ποιμὴν εἷς πάντων"
+    },
+    {
+      "id": "ZECH-GATHER-NOT-SPREAD",
+      "context": "LXX-ZECH2",
+      "ref": "Zech.2.6",
+      "verbatim": "συνάξω ὑμᾶς"
+    },
+    {
+      "id": "MANY-NATIONS",
+      "context": "LXX-ZECH2",
+      "ref": "Zech.2.11",
+      "verbatim": "ἔθνη πολλὰ"
+    },
+    {
+      "id": "PEOPLE",
+      "context": "LXX-ZECH2",
+      "ref": "Zech.2.11",
+      "verbatim": "ἔσονται αὐτῷ εἰς λαόν"
+    },
+    {
+      "id": "JOHN-FAITH-CHILDREN",
+      "context": "JN1",
+      "ref": "040112",
+      "verbatim": "τέκνα θεοῦ γενέσθαι, τοῖς πιστεύουσιν"
+    },
+    {
+      "id": "JOHN-INTERLOCUTORS",
+      "context": "JN7",
+      "ref": "040735",
+      "verbatim": "εἶπον οὖν οἱ Ἰουδαῖοι πρὸς ἑαυτούς"
+    },
+    {
+      "id": "JOHN-DIASPORA",
+      "context": "JN7",
+      "ref": "040735",
+      "verbatim": "τὴν διασπορὰν τῶν Ἑλλήνων"
+    },
+    {
+      "id": "JOHN-WOLF",
+      "context": "JN10",
+      "ref": "041012",
+      "verbatim": "ὁ λύκος ἁρπάζει αὐτὰ καὶ ⸀σκορπίζει"
+    },
+    {
+      "id": "JOHN-ONE-FLOCK",
+      "context": "JN10",
+      "ref": "041016",
+      "verbatim": "μία ποίμνη, εἷς ποιμήν"
+    },
+    {
+      "id": "JOHN-GATHERING",
+      "context": "JN11",
+      "ref": "041152",
+      "verbatim": "συναγάγῃ εἰς ἕν"
+    }
+  ],
+  "digitalAnomalies": [
+    {
+      "id": "DEUT30-3",
+      "context": "LXX-DEUT30",
+      "ref": "Deut.30.3",
+      "verbatim": "καὶ σε",
+      "silentlyEmended": false,
+      "printedCauseVerified": false,
+      "note": "Visible digital irregularity, suspect fragment or retained verse marker. Located in actual TEI body, not invented by the parser; not a conjecturally corrected Greek reading or proof of a manuscript variant. Printed comparison remains open."
+    },
+    {
+      "id": "DEUT30-5",
+      "context": "LXX-DEUT30",
+      "ref": "Deut.30.5",
+      "verbatim": "πλεοναστόν σε",
+      "silentlyEmended": false,
+      "printedCauseVerified": false,
+      "note": "Visible digital irregularity, suspect fragment or retained verse marker. Located in actual TEI body, not invented by the parser; not a conjecturally corrected Greek reading or proof of a manuscript variant. Printed comparison remains open."
+    },
+    {
+      "id": "DEUT30-6",
+      "context": "LXX-DEUT30",
+      "ref": "Deut.30.6",
+      "verbatim": "τὴν σου κοὶ",
+      "silentlyEmended": false,
+      "printedCauseVerified": false,
+      "note": "Visible digital irregularity, suspect fragment or retained verse marker. Located in actual TEI body, not invented by the parser; not a conjecturally corrected Greek reading or proof of a manuscript variant. Printed comparison remains open."
+    },
+    {
+      "id": "DEUT30-10",
+      "context": "LXX-DEUT30",
+      "ref": "Deut.30.10",
+      "verbatim": "ἐὰν ἐπιστραφῇς τὸν θεόν σου",
+      "silentlyEmended": false,
+      "printedCauseVerified": false,
+      "note": "Visible digital irregularity, suspect fragment or retained verse marker. Located in actual TEI body, not invented by the parser; not a conjecturally corrected Greek reading or proof of a manuscript variant. Printed comparison remains open."
+    },
+    {
+      "id": "ISA11-16",
+      "context": "LXX-ISA11",
+      "ref": "Isa.11.16",
+      "verbatim": "§ ¹6",
+      "silentlyEmended": false,
+      "printedCauseVerified": false,
+      "note": "Visible digital irregularity, suspect fragment or retained verse marker. Located in actual TEI body, not invented by the parser; not a conjecturally corrected Greek reading or proof of a manuscript variant. Printed comparison remains open."
+    },
+    {
+      "id": "EZ34-1",
+      "context": "LXX-EZ34",
+      "ref": "Ezek.34.1",
+      "verbatim": "πρὸς μ λέγων",
+      "silentlyEmended": false,
+      "printedCauseVerified": false,
+      "note": "Visible digital irregularity, suspect fragment or retained verse marker. Located in actual TEI body, not invented by the parser; not a conjecturally corrected Greek reading or proof of a manuscript variant. Printed comparison remains open."
+    },
+    {
+      "id": "EZ34-4",
+      "context": "LXX-EZ34",
+      "ref": "Ezek.34.4",
+      "verbatim": "ἐσαωματοποιήσατε",
+      "silentlyEmended": false,
+      "printedCauseVerified": false,
+      "note": "Visible digital irregularity, suspect fragment or retained verse marker. Located in actual TEI body, not invented by the parser; not a conjecturally corrected Greek reading or proof of a manuscript variant. Printed comparison remains open."
+    },
+    {
+      "id": "EZ34-12",
+      "context": "LXX-EZ34",
+      "ref": "Ezek.34.12",
+      "verbatim": "διεσ πάρησαν",
+      "silentlyEmended": false,
+      "printedCauseVerified": false,
+      "note": "Visible digital irregularity, suspect fragment or retained verse marker. Located in actual TEI body, not invented by the parser; not a conjecturally corrected Greek reading or proof of a manuscript variant. Printed comparison remains open."
+    },
+    {
+      "id": "EZ37-25",
+      "context": "LXX-EZ37",
+      "ref": "Ezek.37.25",
+      "verbatim": "ἄθρχων",
+      "silentlyEmended": false,
+      "printedCauseVerified": false,
+      "note": "Visible digital irregularity, suspect fragment or retained verse marker. Located in actual TEI body, not invented by the parser; not a conjecturally corrected Greek reading or proof of a manuscript variant. Printed comparison remains open."
+    },
+    {
+      "id": "EZ37-26",
+      "context": "LXX-EZ37",
+      "ref": "Ezek.37.26",
+      "verbatim": "διαθήσομαι ὐτοῖς",
+      "silentlyEmended": false,
+      "printedCauseVerified": false,
+      "note": "Visible digital irregularity, suspect fragment or retained verse marker. Located in actual TEI body, not invented by the parser; not a conjecturally corrected Greek reading or proof of a manuscript variant. Printed comparison remains open."
+    },
+    {
+      "id": "ZECH2-4",
+      "context": "LXX-ZECH2",
+      "ref": "Zech.2.4",
+      "verbatim": "Κατακάρπαως",
+      "silentlyEmended": false,
+      "printedCauseVerified": false,
+      "note": "Visible digital irregularity, suspect fragment or retained verse marker. Located in actual TEI body, not invented by the parser; not a conjecturally corrected Greek reading or proof of a manuscript variant. Printed comparison remains open."
+    }
+  ],
+  "hebrewNormalization": "WHITESPACE_ONLY_NO_NFC_KETIV_NOT_QERE",
+  "statistics": {
+    "filePins": 21,
+    "primaryTextFiles": 11,
+    "metadataFiles": 10,
+    "otContexts": 16,
+    "otPairs": 104,
+    "ntContexts": 4,
+    "ntVerses": 51,
+    "verseInstances": 259
+  },
+  "intertextAssessments": [
+    {
+      "id": "DEUT30",
+      "assessment": "THEMATIC_BACKGROUND",
+      "explicitQuotationEstablished": false,
+      "grounds": "Exile and return, divine scattering at 30:1, diaspora/gathering at 30:4, covenantal turning and heart renewal in the MT context.",
+      "limits": "Greek 30:3/5/6/10 has suspect fragments. Neither lexical similarity nor a divine OT agent supplies the unnamed agent of John11:52."
+    },
+    {
+      "id": "ISA11",
+      "assessment": "THEMATIC_AND_LEXICAL_PARALLEL",
+      "explicitQuotationEstablished": false,
+      "grounds": "Scattered Israel/Judah gathered, reunited Ephraim/Judah; nations seek/hope in Jesse's root.",
+      "limits": "Original Israel/Judah referents and restoration imagery remain; conquest language at 11:14 is not erased. Not an unmarked verbatim quotation or proof that all individuals share salvation."
+    },
+    {
+      "id": "ISA43",
+      "assessment": "STRONG_SEMANTIC_PARALLEL_NOT_PROVEN_QUOTATION",
+      "explicitQuotationEstablished": false,
+      "grounds": "Creator/redeemer addresses Jacob/Israel; seed, sons and daughters gathered from afar; all called by the divine name.",
+      "limits": "Creation language is present but locally addressed to Jacob/Israel, not automatically humanity as a class. Greek uses sons/daughters, not the exact John11:52 phrase. Exchange/ransom imagery at 43:3-4 is not denied or turned into a full penal model."
+    },
+    {
+      "id": "ISA56",
+      "assessment": "INCLUSION_AND_GATHERING_PARALLEL",
+      "explicitQuotationEstablished": false,
+      "grounds": "Foreigners joining the Lord, covenant observance, prayer for all nations, gathering beyond those already gathered.",
+      "limits": "Inclusion is not ethnically exclusive, yet is described as relation to the Lord/covenant; neither every individual's salvation nor exclusion of every other purpose of Christ's death follows."
+    },
+    {
+      "id": "JER31",
+      "assessment": "STRONG_COMBINED_PARALLEL_NOT_PROVEN_QUOTATION",
+      "explicitQuotationEstablished": false,
+      "grounds": "MT31:1-14 / digital LXX38:1-14: people Israel, Father/firstborn Ephraim, gathering, shepherding, redemption of Jacob.",
+      "limits": "LXX38:10 reads likmesas, not John's diaskorpizo form. 31:8/38:8 are not line-for-line equivalents. No transfer of an OT scattering agent into John's passive; no mechanical reduction of all Johannine children to ethnic diaspora."
+    },
+    {
+      "id": "EZ34",
+      "assessment": "PROBABLE_SHEPHERD_ECHO_VIA_JOHN10_ARGUED",
+      "explicitQuotationEstablished": false,
+      "grounds": "Bad shepherds, scattered sheep, God's search/gathering, one Davidic shepherd; substantive context for John10 and thence the unity of John11.",
+      "limits": "Sheep are house Israel locally. Judgment within the flock in 34:17/20-22 stays visible; MT34:16 and the digital Greek differ. Jesus' self-giving in John10 is not a quotation of Ezekiel or established by one sheep word."
+    },
+    {
+      "id": "EZ37",
+      "assessment": "PROBABLE_UNITY_ECHO_VIA_JOHN10_ARGUED",
+      "explicitQuotationEstablished": false,
+      "grounds": "Two sticks/houses reunite, Israel gathered from nations, no longer two nations/kingdoms, one shepherd, purification and covenant.",
+      "limits": "Original Judah/Joseph-Ephraim unity is not erased by later application. John10/11 is a reasoned later connection, not a lexical identity or proof of exclusive death. Digital37:22 is not quoted as eis hen; a printed reading was not established."
+    },
+    {
+      "id": "ZECH2",
+      "assessment": "THEMATIC_AND_LEXICAL_PARALLEL",
+      "explicitQuotationEstablished": false,
+      "grounds": "MT2:5-17 maps to this Greek2:1-13. Restoration of Zion, departure from Babylon, many nations join and become the Lord's people.",
+      "limits": "MT2:10 spread toward/as four winds contrasts with Greek2:6 future synaxo. Exact digital difference is recorded without reconstructing its textual history. Many nations/all flesh in the surrounding address do not mean identical final salvation for each person."
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "DIASPORA_ONLY",
+      "grounds": "The selected OT gathering promises address Israel/Judah; John7:35 mentions diaspora in a question by Jesus' interlocutors.",
+      "limits": "Not simply dismissed, but the Johannine not-for-the-nation-only, other sheep and OT inclusion of nations give grounds for a broader community. John7:35 is not narrator endorsement, nor attribution of this hypothesis to a named commentator."
+    },
+    {
+      "id": "GATHERED_MULTIETHNIC_COMMUNITY",
+      "grounds": "John1:12-13 faith/birth/children, John10 other sheep/one flock/one shepherd, John11 death and gathering beyond the nation; Isa56 and Zech2 allow nations to join. Prior Wave5 unity contexts remain relevant.",
+      "limits": "Preferred contextual synthesis, not a lexical theorem. Does not cancel original Israel referents, settle the mechanism of pre-gathering naming, imply justification before faith or delimit all purposes of the death."
+    },
+    {
+      "id": "ALL_HUMAN_CREATION",
+      "grounds": "The already verified published Cyril11:52 fragment genuinely gives creation/image/Paradise and all-mankind language; Isa43 does connect creation and gathering.",
+      "limits": "Isa43's actual addressee is Jacob/Israel and children are named in that context. The OT matrix does not itself establish every human as the John11:52 referent, but neither erases Cyril nor rebrands him as election. No Greek Cyril or printed patristic collation this wave."
+    }
+  ],
+  "speakerControl": {
+    "ref": "040735",
+    "speaker": "INTERLOCUTORS_QUESTION_NOT_NARRATOR_ENDORSEMENT",
+    "lexemeCaution": "διασπορά, διασπείρω, λικμάω, σκορπίζω and διασκορπίζω are not one lemma; source signals are not automated lemmatization."
+  },
+  "nonEquivalences": [
+    {
+      "mt": "Jer.31.8",
+      "lxx": "Jer.38.8",
+      "observation": "MT blind/lame/pregnant/giving birth; selected Greek en heorte phasek and teknopoiese. Do not combine into one quotation or infer a Johannine Passover citation."
+    },
+    {
+      "mt": "Zech.2.10",
+      "lxx": "Zech.2.6",
+      "observation": "MT perasti / spread; Greek synaxo / I will gather. Different wording, not an offset error or license to silently harmonize."
+    },
+    {
+      "mt": "Ezek.34.16",
+      "lxx": "Ezek.34.16",
+      "observation": "MT destroy fat/strong versus Greek guard the strong. Read with 34:17/20-22; no harmonization or critical reconstruction."
+    }
+  ],
+  "acquisitionMethod": "Complete pinned recursive repository trees, then 21 GitHub blob objects; actual sizes, Git blob hashes and SHA256 verified on acquisition and again before freezing. Raw objects and trees remain outside Git.",
+  "attribution": [
+    "Original work of the Open Scriptures Hebrew Bible available at https://github.com/openscriptures/morphhb — WLC text public domain; morphology and lemmas CC BY 4.0, per acquired README/LICENSE. Hebrew extracts omit segmentation slashes, collapse whitespace, exclude note/qere words and preserve code-point order.",
+    "Open Greek and Latin / First1KGreek, with TEI credits to Digital Divide Data, University of Leipzig / Harvard College Library and named editors; H. B. Swete, The Old Testament in Greek, vol.1 (1901) and vol.3 (1905), as identified in the acquired headers. Digital extracts under Creative Commons Attribution-ShareAlike 4.0 International: https://creativecommons.org/licenses/by-sa/4.0/ ; source links are in each file pin. TEI notes/head and non-text milestones omitted, NFC/whitespace applied; visible defects not silently corrected. Provided as-is without warranties; no endorsement claimed.",
+    "The Greek New Testament: SBL Edition, MorphGNT / py-sblgnt: eight-column text extraction. Text EULA, morphology CC-BY-SA 3.0, code MIT, per acquired README; linked EULA not freshly read. Internal publication HOLD is a project release boundary, not an added legal restriction on CC-licensed source material."
+  ],
+  "nextAction": "Printed/critical collation of the identified digital irregularities and proposed intertexts, remaining OT contexts if needed; separate Greek/critical Cyril transmission. O09 bounded comparison is done, not the whole OT or C25.",
+  "fullBooksRead": false,
+  "printedCollationClaimed": false,
+  "criticalOriginalTextSettled": false,
+  "cyrilGreekRead": false,
+  "oldPackagesReplayed": false,
+  "publicationEligible": false,
+  "interpretationProvedByCode": false,
+  "quotationInJohn1152Established": false,
+  "agentImportedIntoJn1152": false,
+  "everyNationMeansEveryIndividual": false,
+  "covenantalMeansExclusiveDeath": false,
+  "creationMeansAllHumans": false,
+  "allMtLxxPairsVerbatimEquivalent": false,
+  "creationAlternativeErased": false,
+  "humanReadingMeasured": false,
+  "guardBindingsAddedAtUtc": "2026-11-03T10:34:10.020186+00:00",
+  "guardBindingsNote": "Profiles bound to exact contexts/files after initial freeze; no source text changed. Initial external freeze script is historical and must not overwrite these retained controls."
+}
