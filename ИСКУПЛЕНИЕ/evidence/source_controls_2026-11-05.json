@@ -1,0 +1,963 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-05",
+  "recordedAtUtc": "2026-11-05T04:38:25.914413+00:00",
+  "baselineCommit": "fb4bfe2978c1987380a31502ec6fae88af7c5c0c",
+  "scope": "Complete article text review, R01–R34, author comparisons and bounded primary-source checks",
+  "articleCompleteTextRead": true,
+  "allBibliographicEditionsCollated": false,
+  "fullHistoricalWorksRead": false,
+  "publicationEligible": false,
+  "doctrinalClosure": false,
+  "pullRequestMerged": false,
+  "continuationOf": {
+    "pullRequest": 309,
+    "headBeforeContinuation": "0fad60b770cde76b8148d47883f655c70761d881",
+    "mainSynchronized": "c92dd3917d4fbac8a34a7313f71b0fcb8f7c29e4"
+  },
+  "priorDrivePdfPreserved": true,
+  "newPublicPdfIsDifferentByteObject": true,
+  "sourceClassIsSeparateFromReadScope": true,
+  "preimages": [
+    {
+      "path": "docs/research/atonement/01_prokopenko_article_review.md",
+      "commit": "fb4bfe2978c1987380a31502ec6fae88af7c5c0c",
+      "gitBytes": 217410,
+      "gitSha256": "ee601b253a42c5f59446cbd7c4a154136e1a04640bde4f33a26372e71a5d9561"
+    },
+    {
+      "path": "docs/research/atonement/23_classical_four_point_calvinists_vs_prokopenko.md",
+      "commit": "fb4bfe2978c1987380a31502ec6fae88af7c5c0c",
+      "gitBytes": 47857,
+      "gitSha256": "dcafca1a15094e654e29ac5ace6eea32205134337473b99726f0d87c6bcb423b"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+      "commit": "fb4bfe2978c1987380a31502ec6fae88af7c5c0c",
+      "gitBytes": 87147,
+      "gitSha256": "c482d50e2e3c4e95e0a64b10c4baa3f963a801d14c241ad19505b6909c6dcab2"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+      "commit": "fb4bfe2978c1987380a31502ec6fae88af7c5c0c",
+      "gitBytes": 221028,
+      "gitSha256": "e377cb2650f1d0d84f8bd8c42b799f27dda2f1c3dd641a34f3a3410c66d9194d"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+      "commit": "fb4bfe2978c1987380a31502ec6fae88af7c5c0c",
+      "gitBytes": 55287,
+      "gitSha256": "b4336b871a8cb85c55e267aa4e369f652bd7440174041ee00d071127d4aa2173"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+      "commit": "fb4bfe2978c1987380a31502ec6fae88af7c5c0c",
+      "gitBytes": 1219865,
+      "gitSha256": "3223122fe54e8164568448cbd6104dc0a6d2ce2d7c5b62ae6059dc90971eedcc"
+    },
+    {
+      "path": "docs/research/atonement/06_detailed_refutation_of_prokopenko_arguments.md",
+      "commit": "fb4bfe2978c1987380a31502ec6fae88af7c5c0c",
+      "gitBytes": 161358,
+      "gitSha256": "f46214e714de9035b732927442d7112f9f4e93c6d919ad1f217b2c5b99bc79aa"
+    },
+    {
+      "path": "docs/research/atonement/31_contemporary_doctoral_dissertations_survey.md",
+      "commit": "fb4bfe2978c1987380a31502ec6fae88af7c5c0c",
+      "gitBytes": 22206,
+      "gitSha256": "018dc475ee047c8a701e272e9eaf2ebc37b3d3d25e28bb388b33e2ff4a19be72"
+    }
+  ],
+  "sources": [
+    {
+      "id": "prokopenko2019",
+      "url": "https://www.teoblogia.ru/_service/363701/download/id/438188/name/Прокопенко_За+кого+умер+Христос.pdf",
+      "bytes": 919996,
+      "sha256": "9c42c595dfb080a6f46c768e3a16c7df08d2778cc75273f44d5331fc76d99cc8",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "Extracted text of PDF pages 1–40, including notes and bibliography; visual review of pages 10,22,23,25,30,31,36",
+      "fullWorkRead": true,
+      "externalCacheRelativePath": "prokopenko-2019.pdf",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "Primary evidence for Prokopenko's own statements, not automatic verification of his historical attributions."
+    },
+    {
+      "id": "dort",
+      "url": "https://www.rca.org/about/theology/creeds-and-confessions/canons-of-dort/",
+      "finalUrl": "https://www.rca.org/about/theology/creeds-and-confessions/canons-of-dort/",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 201771,
+      "sha256": "07a132c5ba1b7bed1d79787be239e0674d6da2d148a3b781b4be5e44a936b782",
+      "status": "received",
+      "characters": 77792,
+      "evidenceClass": "A3",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "readScope": "Head II, articles 1–9 and rejections I–VII; III/IV articles 3,8–10",
+      "externalCacheRelativePath": "sources/dort.html",
+      "fullWorkRead": false,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "westminster",
+      "url": "https://www.opc.org/wcf.html",
+      "finalUrl": "https://www.opc.org/wcf.html",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 95154,
+      "sha256": "394820b74c08b6582b87dba28eab3a54eb51a1bfda053b5b2f7e15cce7c2736b",
+      "status": "received",
+      "characters": 74177,
+      "evidenceClass": "A3",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "readScope": "III.6–7, VIII.5–8, XI.1–4",
+      "externalCacheRelativePath": "sources/westminster.html",
+      "fullWorkRead": false,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "heidelberg",
+      "url": "https://www.frcna.org/heidelberg-catechism",
+      "finalUrl": "https://www.frcna.org/heidelberg-catechism",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 148652,
+      "sha256": "94db211820660cf46d75eb4061aca9e9b1574399a1065d564f87587051ba392d",
+      "status": "received",
+      "characters": 92014,
+      "evidenceClass": "A3",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "readScope": "Questions 20,37,54,61",
+      "externalCacheRelativePath": "sources/heidelberg.html",
+      "fullWorkRead": false,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "spurgeon",
+      "url": "https://www.spurgeon.org/sermons/general-and-yet-particular",
+      "finalUrl": "https://www.spurgeon.org/sermons/general-and-yet-particular",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 107930,
+      "sha256": "dce173a260e831b8173d7de7218844137af626d61ca284cc04faea0f9534f063",
+      "status": "received",
+      "characters": 40276,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "Opening exposition of John 17:2: common benefits and special design",
+      "externalCacheRelativePath": "sources/spurgeon.html",
+      "fullWorkRead": false,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "hodge",
+      "url": "https://ccel.org/ccel/hodge/theology2/theology2.iv.viii.ii.html",
+      "finalUrl": "https://ccel.org/ccel/hodge/theology2/theology2.iv.viii.ii.html",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 77723,
+      "sha256": "0d42f7eee4373a0bf6850f20b8cbae87cd72d05b5c45840adb397fa0155241fc",
+      "status": "received",
+      "characters": 46112,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "II.VIII.2, digital page markers 547–559, especially 557–559",
+      "externalCacheRelativePath": "sources/hodge.html",
+      "fullWorkRead": false,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "schreiner",
+      "url": "https://www.reformedontheweb.com/theology2/problematic-texts-definite-atonement-thomas-schreiner.pdf",
+      "finalUrl": "https://www.reformedontheweb.com/theology2/problematic-texts-definite-atonement-thomas-schreiner.pdf",
+      "contentType": "application/pdf",
+      "bytes": 361811,
+      "sha256": "db7974597a43ab2db8a17e4e4e919f083edeee7b866b0963736fdab27c089064",
+      "pages": 23,
+      "status": "received",
+      "characters": 66973,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "Chapter 14, printed pp.387–392 / PDF pp.13–18",
+      "externalCacheRelativePath": "sources/schreiner.pdf",
+      "fullWorkRead": false,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "allen-review",
+      "url": "https://evangelicalarminians.org/wp-content/uploads/2021/02/REVIEW-OF-FROM-HEAVEN-HE-CAME-AND-SOUGHT-HER-Part-15.pdf",
+      "finalUrl": "https://evangelicalarminians.org/wp-content/uploads/2021/02/REVIEW-OF-FROM-HEAVEN-HE-CAME-AND-SOUGHT-HER-Part-15.pdf",
+      "contentType": "application/pdf",
+      "bytes": 191217,
+      "sha256": "ef3949fb01847e10e671ba0bd733fc76d78a779db420dd4e371c45946ec90a7d",
+      "pages": 5,
+      "status": "received",
+      "characters": 13352,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "PDF pp.1–5; read full response; 2 Peter 2:1 on p.3",
+      "externalCacheRelativePath": "sources/allen-review.pdf",
+      "fullWorkRead": true,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "davenant2024",
+      "url": "https://davenantinstitute.org/davenant-press/on-the-death-of-christ/",
+      "finalUrl": "https://davenantinstitute.org/davenant-press/on-the-death-of-christ/",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 59087,
+      "sha256": "4bdc1c460f1e36b04d66943de34d770069bf098735898e476859a88b85238071",
+      "status": "received",
+      "characters": 8149,
+      "evidenceClass": "A2",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "readScope": "Publisher description and translator metadata only; not full Davenant volume",
+      "externalCacheRelativePath": "sources/davenant2024.html",
+      "fullWorkRead": false,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "schrock-review",
+      "url": "https://www.booksataglance.com/book-reviews/david-schrocks-review-of-the-extent-of-the-atonement-a-historical-and-critical-review-by-david-l-allen/",
+      "finalUrl": "https://www.booksataglance.com/book-reviews/david-schrocks-review-of-the-extent-of-the-atonement-a-historical-and-critical-review-by-david-l-allen/",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 133945,
+      "sha256": "ae1c22a0e01d37027ba6d0b37797c04cc1c0c2f5cd56b37e31b36565cdf28382",
+      "status": "received",
+      "characters": 62987,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "Introduction and new-covenant/priesthood argument; remaining review not claimed fully read",
+      "externalCacheRelativePath": "sources/schrock-review.html",
+      "fullWorkRead": false,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "articles39",
+      "url": "https://www.anglican.ca/resources/articles-of-religion/",
+      "finalUrl": "https://www.anglican.ca/resources/articles-of-religion/",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 155802,
+      "sha256": "f39fca8e4772ed7b229f117085735a85301476e60f53e4809900c4e2bc4ff316",
+      "status": "received",
+      "characters": 31356,
+      "evidenceClass": "A3",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "readScope": "Article XXXI",
+      "externalCacheRelativePath": "sources/articles39.html",
+      "fullWorkRead": false,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "remonstrance",
+      "url": "https://ccel.org/ccel/schaff/creeds3/creeds3.iv.xv.html",
+      "finalUrl": "https://ccel.org/ccel/schaff/creeds3/creeds3.iv.xv.html",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 51574,
+      "sha256": "2e1a13b8a3cf527341146f5a516a9d51277c3666a00757f9907e15a21dae6838",
+      "status": "received",
+      "characters": 16520,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "Articles II–V; English and Latin columns",
+      "externalCacheRelativePath": "sources/remonstrance.html",
+      "fullWorkRead": false,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "gty-common",
+      "url": "https://www.gty.org/sermons/70-15/bible-questions-and-answers-part-43",
+      "finalUrl": "https://www.gty.org/sermons/70-15/bible-questions-and-answers-part-43",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 196740,
+      "sha256": "2de1ff59f08218972a968e17260e0b8b31be4b45d67a6f94fed8fb02f0c81879",
+      "status": "received",
+      "characters": 52497,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "Atonement question: common grace, wrath and earthly blessings",
+      "externalCacheRelativePath": "sources/gty-common.html",
+      "fullWorkRead": false,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "allen-position",
+      "url": "https://drdavidlallen.com/whosoever-will-5-years-later/",
+      "finalUrl": "https://drdavidlallen.com/whosoever-will-5-years-later/",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 135241,
+      "sha256": "8968d14ad27dbc8053f6ddfb9e28561a8c7279d525a94a22478b86bfef07b529",
+      "status": "received",
+      "characters": 8591,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "Opening authorial characterization of Whosoever Will authors/editors",
+      "externalCacheRelativePath": "sources/allen-position.html",
+      "fullWorkRead": false,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "hodge-question",
+      "url": "https://ccel.org/ccel/hodge/theology2/theology2.iv.viii.i.html",
+      "finalUrl": "https://ccel.org/ccel/hodge/theology2/theology2.iv.viii.i.html",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 30363,
+      "sha256": "a63a69e04f1828305d1e722d7702f97fcfe390bf9ad5f69b4d36d94b2dbc8fd5",
+      "status": "received",
+      "characters": 8009,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "II.VIII.1, digital page markers 544–546",
+      "externalCacheRelativePath": "sources/hodge-question.html",
+      "fullWorkRead": false,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "calvin-romans",
+      "url": "https://ccel.org/ccel/c/calvin/calcom38/cache/calcom38.txt",
+      "finalUrl": "https://ccel.org/ccel/c/calvin/calcom38/cache/calcom38.txt",
+      "contentType": "text/plain",
+      "bytes": 1876171,
+      "sha256": "6090997ea412d298b9dadb0816d52db60d4960c564c8c1f421d0dd1292e562c7",
+      "status": "received",
+      "characters": 1876024,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "Commentary on Romans 5:18 only; complete book not read",
+      "externalCacheRelativePath": "sources/calvin-romans.html",
+      "fullWorkRead": false,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "calvin-galatians",
+      "url": "https://ccel.org/ccel/c/calvin/calcom41/cache/calcom41.txt",
+      "finalUrl": "https://ccel.org/ccel/c/calvin/calcom41/cache/calcom41.txt",
+      "contentType": "text/plain",
+      "bytes": 995872,
+      "sha256": "f1b96a880b69f0aa75adf598cf4c6ebe8091796bdf49dd5b23b9bd373eb800e9",
+      "status": "received",
+      "characters": 995872,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "Commentary on Galatians 5:12 only; complete book not read",
+      "externalCacheRelativePath": "sources/calvin-galatians.html",
+      "fullWorkRead": false,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "calvin-institutes",
+      "url": "https://www.ccel.org/ccel/calvin/institutes/cache/institutes.txt",
+      "finalUrl": "https://www.ccel.org/ccel/calvin/institutes/cache/institutes.txt",
+      "contentType": "text/plain",
+      "bytes": 4618688,
+      "sha256": "b527a27e234bc4a8cdbbbfb82d9243677d645d35f82d4762faf5e3f8cfc4085e",
+      "status": "received",
+      "characters": 4618322,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "IV.14.7 sacrament/offer paragraph; complete work not read",
+      "externalCacheRelativePath": "sources/calvin-institutes.html",
+      "fullWorkRead": false,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "augustine87",
+      "url": "https://www.newadvent.org/fathers/1701087.htm",
+      "finalUrl": "https://www.newadvent.org/fathers/1701087.htm",
+      "contentType": "text/html",
+      "bytes": 19311,
+      "sha256": "05ffb11da0cfef919cc90c05acb2af6276e751fffc74367b25ee1a8868fa52f3",
+      "status": "received",
+      "characters": 8523,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "Tractate 87, sections 1–4, especially 2–3",
+      "externalCacheRelativePath": "sources/augustine87.html",
+      "fullWorkRead": false,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "athanasius",
+      "url": "https://www.newadvent.org/fathers/2802.htm",
+      "finalUrl": "https://www.newadvent.org/fathers/2802.htm",
+      "contentType": "text/html",
+      "bytes": 205005,
+      "sha256": "8ed6fc33b310cd21659da02bf48b32adf53c78508f23220834e2da26df756b22",
+      "status": "received",
+      "characters": 153025,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "On the Incarnation sections 8–10,20; complete work not read",
+      "externalCacheRelativePath": "sources/athanasius.html",
+      "fullWorkRead": false,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "lynch2024",
+      "url": "https://adfontesjournal.com/web-exclusives/what-is-hypothetical-universalism-anyway/",
+      "finalUrl": "https://adfontesjournal.com/web-exclusives/what-is-hypothetical-universalism-anyway/",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 70310,
+      "sha256": "e2dad0cfe5eef3744b36fb54620f2a13e897a01ae487fb0ffa7c47c18504b778",
+      "status": "received",
+      "characters": 14962,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "Whole authorial explanatory essay; A1 for Lynch's position, B1 when reconstructing Davenant",
+      "externalCacheRelativePath": "sources/lynch2024.html",
+      "fullWorkRead": true,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "shedd1888",
+      "url": "https://archive.org/download/dogmatictheology02sheduoft/dogmatictheology02sheduoft_djvu.txt",
+      "finalUrl": "https://dn790001.ca.archive.org/0/items/dogmatictheology02sheduoft/dogmatictheology02sheduoft_djvu.txt",
+      "contentType": "text/plain; charset=utf-8",
+      "bytes": 1989151,
+      "sha256": "18a47d3f1dc36cbada22bb9ad017414af33762af65e2d253c773654c2764c534",
+      "status": "received",
+      "characters": 1988553,
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "OCR located pp.466,469–470,475–476; scans controlled separately",
+      "externalCacheRelativePath": "sources/shedd1888.html",
+      "fullWorkRead": false,
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD"
+      ]
+    },
+    {
+      "id": "griffin1819",
+      "url": "https://archive.org/download/humbleattempttor00grif/humbleattempttor00grif_djvu.txt",
+      "finalUrl": "https://dn760008.eu.archive.org/0/items/humbleattempttor00grif/humbleattempttor00grif_djvu.txt",
+      "contentType": "text/plain; charset=utf-8",
+      "bytes": 991674,
+      "sha256": "2cd7952ab1c63eee28c3cec26f7b13eed9dac51685c21a7a0cde9032103efd95",
+      "status": "received",
+      "characters": 990177,
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "OCR discovery only; printed p.182 controlled separately by image",
+      "externalCacheRelativePath": "sources/griffin1819.html",
+      "fullWorkRead": false,
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD"
+      ]
+    },
+    {
+      "id": "ware-lecture",
+      "url": "https://www.biblicaltraining.org/learn/institute/th504-systematic-theology-ii/th504-08-the-work-of-jesus-christ-summary",
+      "finalUrl": "https://www.biblicaltraining.org/learn/institute/th504-systematic-theology-ii/th504-08-the-work-of-jesus-christ-summary",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 482208,
+      "sha256": "33dc072cd79ae6ecefa6bcda56db4934eecef77799eba68cf2fb9c51cb489940",
+      "status": "received",
+      "characters": 90672,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "Lesson 8, §4 Extent of the Atonement through Necessity of Saving Faith Argument; rest of lecture not read",
+      "externalCacheRelativePath": "sources/ware-lecture.html",
+      "fullWorkRead": false,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "helvetic1566",
+      "url": "https://www.ccel.org/creeds/helvetic.htm",
+      "finalUrl": "https://www.ccel.org/creeds/helvetic.htm",
+      "contentType": "text/html",
+      "bytes": 202712,
+      "sha256": "ff87ca24675bda1808687587a8962ccebc26cd5108a9c89c73d1e4eaa1d52972",
+      "status": "received",
+      "characters": 189164,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "XI: fruit of death/resurrection and only Savior; XV justification; XVI opening definition and gift of faith",
+      "externalCacheRelativePath": "sources/helvetic1566.html",
+      "fullWorkRead": false,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "london1689-8",
+      "url": "https://1689confession.org/christ-the-mediator/",
+      "finalUrl": "https://1689confession.org/christ-the-mediator/",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 37595,
+      "sha256": "1a186a9877e7ec27fb824e0d2fafcc952ecc70d2d314aae37df95984323fb82b",
+      "status": "received",
+      "characters": 6247,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "Chapter VIII paragraphs 1,4–10; especially 5 and 8; not whole confession",
+      "externalCacheRelativePath": "sources/london1689-8.html",
+      "fullWorkRead": false,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "piper-faith",
+      "url": "https://www.desiringgod.org/interviews/what-is-definite-atonement-and-why-does-it-matter",
+      "finalUrl": "https://www.desiringgod.org/interviews/what-is-definite-atonement-and-why-does-it-matter",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 74140,
+      "sha256": "fa9d17f169f2d391632e904a7a1c191298dece0b94ba4d650cfb73c4c0067201",
+      "status": "received",
+      "characters": 12308,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "Complete interview transcript dated February 8, 2013; not the complete 2013 book",
+      "externalCacheRelativePath": "sources/piper-faith.html",
+      "fullWorkRead": true,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "augustine-conf5",
+      "url": "https://www.newadvent.org/fathers/110105.htm",
+      "finalUrl": "https://www.newadvent.org/fathers/110105.htm",
+      "contentType": "text/html",
+      "bytes": 60823,
+      "sha256": "47f04b603b19bbc2420714087a23c3d6342ac862bbb94364d8c2538ee93f0a2c",
+      "status": "received",
+      "characters": 41674,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "Confessions V.9.16, Manichaean phantom Christ and absence of forgiveness; rest of book not read",
+      "externalCacheRelativePath": "sources/augustine-conf5.html",
+      "fullWorkRead": false,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "lxx2sam7",
+      "url": "https://www.cumorah.com/articles/multiLingualScripts/19/Greek%2BSeptuagint%2BOld%2BTestament/10/2%2BSamuel",
+      "finalUrl": "https://www.cumorah.com/articles/multiLingualScripts/19/Greek%2BSeptuagint%2BOld%2BTestament/10/2%2BSamuel",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 304385,
+      "sha256": "fb392870aead41b21c504d60b679fb0c895e131a6e7ab85f142b572fe9ed1ea9",
+      "status": "received",
+      "characters": 121667,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "Greek transcription 2 Samuel 7:23 only; no complete text-critical collation",
+      "externalCacheRelativePath": "sources/lxx2sam7.html",
+      "fullWorkRead": false,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "savoy8-web",
+      "url": "https://tfcchurch.co.uk/the-savoy-declaration-of-faith-and-order-1658/208-2/",
+      "evidenceClass": "A3",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "Chapter VIII, paragraphs 1–8 in rendered institutional page; especially 5,8",
+      "fullWorkRead": false,
+      "captureMethod": "Web text; local download 503; no local full-object hash asserted",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "calvin-1john-web",
+      "url": "https://ccel.org/ccel/c/calvin/calcom45/cache/calcom45.txt",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "1 John 2:1–2, rendered web text lines around 6322–6336; full source download timed out",
+      "captureMethod": "Web retrieval; no local full-object hash asserted",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "helvetic-web",
+      "url": "https://heidelblog.net/2012/09/helvetic-consensus-formula-1675/",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "Canons VI and XIII–XVI in Klauber translation via rendered web text",
+      "captureMethod": "Web retrieval; direct local request 403; no local full-object hash asserted",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "akin-sermon-web",
+      "url": "https://www.danielakin.com/wp-content/uploads/old/Resource_48/1%20John%201.5-22%20When%20Men%20Call%20God%20A%20Liar.pdf",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "PDF pp.7–8; universal provision/limited application on p.8",
+      "captureMethod": "Rendered web PDF text; no local full-object hash asserted",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "lynch2021-preview",
+      "url": "https://api.pageplace.de/preview/DT0400.9780197555156_A41792471/preview-9780197555156_A41792471.pdf",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "Publisher preview: title, contents, research introduction; not complete monograph",
+      "captureMethod": "Rendered web PDF; local download timed out; no local full-object hash asserted",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "shultz2008-web-selected",
+      "url": "https://repository.sbts.edu/bitstream/handle/10392/461/3356774.pdf?isAllowed=y&sequence=1",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "fullWorkRead": false,
+      "readScope": "Web-extracted text of printed pp.154–158, especially p.155 n.195; pp.250–255. Not complete dissertation.",
+      "captureMethod": "Official repository PDF exposed through web text; direct local retrieval 403; no original-byte hash asserted.",
+      "locatorVerificationMethod": "Printed page markers in extracted web text, not page-image collation",
+      "facsimileVerified": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    }
+  ],
+  "scans": [
+    {
+      "id": "humbleattempttor00grif-p182",
+      "printedPage": 182,
+      "leaf": 188,
+      "url": "https://iiif.archive.org/iiif/humbleattempttor00grif$188/full/1100,/0/default.jpg",
+      "bytes": 397600,
+      "sha256": "e0cf3bc05af3d4131f3a535b7741a289a289e7c1c47d95888df1c18ae5cd6e65",
+      "status": "received",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "visuallyInspected": true,
+      "readScope": "Whole image of printed page 182; not full volume",
+      "externalCacheRelativePath": "sources/humbleattempttor00grif-p182.jpg",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "archiveId": "humbleattempttor00grif"
+    },
+    {
+      "id": "dogmatictheology02sheduoft-p466",
+      "printedPage": 466,
+      "leaf": 476,
+      "url": "https://iiif.archive.org/iiif/dogmatictheology02sheduoft$476/full/1100,/0/default.jpg",
+      "bytes": 336445,
+      "sha256": "745822219196157a4dc7aaf51ad08de296dc55ec796231bc8d1e7fdd11ee12ce",
+      "status": "received",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "visuallyInspected": true,
+      "readScope": "Whole image of printed page 466; not full volume",
+      "externalCacheRelativePath": "sources/dogmatictheology02sheduoft-p466.jpg",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "archiveId": "dogmatictheology02sheduoft"
+    },
+    {
+      "id": "dogmatictheology02sheduoft-p469",
+      "printedPage": 469,
+      "leaf": 479,
+      "url": "https://iiif.archive.org/iiif/dogmatictheology02sheduoft$479/full/1100,/0/default.jpg",
+      "bytes": 356063,
+      "sha256": "fface8dfe73a04aaa8e977e08146e34e4748a9108a1abace57577c4806401cfa",
+      "status": "received",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "visuallyInspected": true,
+      "readScope": "Whole image of printed page 469; not full volume",
+      "externalCacheRelativePath": "sources/dogmatictheology02sheduoft-p469.jpg",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "archiveId": "dogmatictheology02sheduoft"
+    },
+    {
+      "id": "dogmatictheology02sheduoft-p470",
+      "printedPage": 470,
+      "leaf": 480,
+      "url": "https://iiif.archive.org/iiif/dogmatictheology02sheduoft$480/full/1100,/0/default.jpg",
+      "bytes": 333103,
+      "sha256": "9162def9c1f41adc21f5b794584ab0d9ef8d0813aa1cfa3f48a9d42a3c81223e",
+      "status": "received",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "visuallyInspected": true,
+      "readScope": "Whole image of printed page 470; not full volume",
+      "externalCacheRelativePath": "sources/dogmatictheology02sheduoft-p470.jpg",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "archiveId": "dogmatictheology02sheduoft"
+    },
+    {
+      "id": "dogmatictheology02sheduoft-p475",
+      "printedPage": 475,
+      "leaf": 485,
+      "url": "https://iiif.archive.org/iiif/dogmatictheology02sheduoft$485/full/1100,/0/default.jpg",
+      "bytes": 351615,
+      "sha256": "3d4a898195be3d3154c05943b2368f0b5e5b31cd4732624f5f496e85dd02f2a7",
+      "status": "received",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "visuallyInspected": true,
+      "readScope": "Whole image of printed page 475; not full volume",
+      "externalCacheRelativePath": "sources/dogmatictheology02sheduoft-p475.jpg",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "archiveId": "dogmatictheology02sheduoft"
+    },
+    {
+      "id": "dogmatictheology02sheduoft-p476",
+      "printedPage": 476,
+      "leaf": 486,
+      "url": "https://iiif.archive.org/iiif/dogmatictheology02sheduoft$486/full/1100,/0/default.jpg",
+      "bytes": 344705,
+      "sha256": "c5968dc086e4112f8288380768df908aeed9bfa766121713d010429ff864e2af",
+      "status": "received",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "visuallyInspected": true,
+      "readScope": "Whole image of printed page 476; not full volume",
+      "externalCacheRelativePath": "sources/dogmatictheology02sheduoft-p476.jpg",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "archiveId": "dogmatictheology02sheduoft"
+    }
+  ],
+  "argumentIds": [
+    "R01",
+    "R02",
+    "R03",
+    "R04",
+    "R05",
+    "R06",
+    "R07",
+    "R08",
+    "R09",
+    "R10",
+    "R11",
+    "R12",
+    "R13",
+    "R14",
+    "R15",
+    "R16",
+    "R17",
+    "R18",
+    "R19",
+    "R20",
+    "R21",
+    "R22",
+    "R23",
+    "R24",
+    "R25",
+    "R26",
+    "R27",
+    "R28",
+    "R29",
+    "R30",
+    "R31",
+    "R32",
+    "R33",
+    "R34"
+  ],
+  "acceptedBy": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+  "retiredClaims": [
+    "Autonomous faith attributed to Prokopenko",
+    "Common benefits treated as a modern dispensational invention",
+    "David Allen labelled a four-point Calvinist",
+    "Textual similarity treated as proof of hidden Baxter dependence"
+  ],
+  "acquisitionLimits": [
+    "Firecrawl connected-account credit exhaustion; ordinary web and public downloads used",
+    "Lynch 2021 only publisher preview, not full monograph",
+    "Schreiner 2003 p.329 edition not independently collated; authorial 2013 chapter read instead",
+    "No direct published Prokopenko reply to all these objections established"
+  ],
+  "verification": "Checks verify bytes, inventory, paths and retained corrections; theological assessments require reading.",
+  "newEvidenceThisPass": [
+    "Ware primary lecture extent section",
+    "Piper 2013 primary interview transcript",
+    "Shultz 2008 pp.154–158 and 250–255, selected web text, particularly n.195",
+    "Shedd printed pages 466,469,470,475,476 visually inspected",
+    "Griffin 1819 p.182 visually inspected",
+    "Prokopenko PDF pages 10,22,23,25,30,31,36 visually inspected",
+    "Second Helvetic XI,XV–XVI and LBCF VIII selected primary contexts"
+  ],
+  "updatedAtUtc": "2026-11-05T04:45:38.188213+00:00"
+}
