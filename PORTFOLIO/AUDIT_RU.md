@@ -144,7 +144,8 @@ Safety-first платформа управления каналами: read-only
 
 | Компонент | Чей | Как писать |
 |---|---|---|
-| Движок и модель `vosk-tts` | alphacep, Apache-2.0 | «интеграция открытого движка в браузер», не «мой синтез речи» |
+| Исходный код `vosk-tts` | Alpha Cephei, Apache-2.0 | «интеграция стороннего открытого движка в браузер», не «мой синтез речи» |
+| Веса русской модели Vosk TTS 0.9 | Alpha Cephei, права на изменённое распространение не доказаны отдельно (`MODEL_RIGHTS_HOLD`) | Не выдавать метку Apache-2.0 для кода за независимое подтверждение лицензии весов |
 | Словарь `russian-stress-marker` | zdarsch, MIT | «вендоренный словарь», не «мой словарь» |
 | Голос в озвучке сайта | модель vosk-tts | «голос движка», не «мой голос» |
 | Музыка | Suno по твоим Lyrics/Style | «песни собраны в Suno по моим текстам и промтам» — и проверить условия тарифа на монетизацию |
@@ -215,6 +216,8 @@ Safety-first платформа управления каналами: read-only
 **R11 — исторический этап 4 ноября 2026 года (до последующей live-сверки).** В `FedorMilovanov/gb-vosk-tts` [PR #4](https://github.com/FedorMilovanov/gb-vosk-tts/pull/4) смержен в защищённый `main` (`a31ed9f3817a29f91201be123a546dad3e9c0aad`): `src/vosk-tts-core.js` квалифицирован как порт Apache-2.0, сохранены полный upstream Apache-текст, оригинальный MIT-текст `zdarsch/russian-stress-marker`, SPDX-заголовки и карта `LICENSING.md`. 60/60 локальных тестов и обязательный `gitleaks` прошли; бинарный словарь побайтно совпадает с оригиналом (Git blob `90405393b518f31b36220fcdf9abb6b89db58e9b`). Это **закрывает риск ложной общей MIT-атрибуции в исходном репозитории**, но **не закрывает downstream**: `gb-is-my-strength` распространяет отдельные копии `js/vosk-tts-core.js` и `js/vosk-stress-lookup.js` без новых заголовков и полного notice; по `AGENTS.md` это защищённые `js/**`, нужна отдельная согласованная SYSTEM-правка с проверкой финального HEAD и публикации. Модель `CurtMil/gb-vosk-tts-model` размещена отдельно на Hugging Face (карточка указывает Apache-2.0); описание её квантования и полноту правовых уведомлений на этом хостинге нельзя автоматически считать проверенными. **Итог на этот этап: R11 = PARTIAL, без заявления о полном rights-clearance.**
 
 **R11 — последующая прямая сверка 4 ноября 2026 года.** На текущем `gb-is-my-strength/main` обе downstream JS-копии уже имеют правильные SPDX-заголовки и явные ссылки на notices; на опубликованном `gospod-bog.ru` получены HTTP 200 для `js/vosk-tts-core.js`, `js/vosk-stress-lookup.js`, `legal/tts/ATTRIBUTION.txt`, `legal/tts/vosk-tts-APACHE-2.0.txt`, `legal/tts/russian-stress-marker-MIT.txt`. Поэтому прежняя фраза об отсутствующих downstream notices **устарела**: source + downstream attribution **CLOSED**. Отдельная quantized-модель на Hugging Face имеет лишь метаданные `license: apache-2.0` и минимальную карточку; происхождение весов, конкретные изменения при квантовании и правовые notices требуют первичной сверки, **MODEL_RIGHTS_HOLD** сохраняется.
+**R11 — документация хостинга 5 ноября 2026 года.** В [CurtMil/gb-vosk-tts-model](https://huggingface.co/CurtMil/gb-vosk-tts-model) опубликована полноценная карточка модели ([коммит `30bfb2bfaa9dec599ea97ff0c04166a595d4d7eb`](https://huggingface.co/CurtMil/gb-vosk-tts-model/commit/30bfb2bfaa9dec599ea97ff0c04166a595d4d7eb)): указаны авторство Alpha Cephei, BERT-only INT8-квантование, неподвергнутый квантованию VITS, опубликованные LFS SHA-256 и недоказанные условия распространения. Это заменяет исторический статус «карточка только 28 байт» **для состояния на 05.11**, но не устанавливает полную идентичность официального исходного ZIP, NOTICE из него и model-specific license clearance. **R11 остаётся PARTIAL / `MODEL_RIGHTS_HOLD`.**
+
 
 ---
 
