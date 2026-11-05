@@ -2146,8 +2146,8 @@ def main() -> int:
         corp = apply_corpus(corp, n)
         # писать надо оба файла на каждом витке: байты корпуса входят в строку документа, а байты
         # документа — в реестр; пока хоть один не записан, следующий виток считает по чужим байтам
-        CORPUS.write_text(json.dumps(corp, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-        DOC.write_text(apply_doc(corp, n), encoding="utf-8")
+        CORPUS.write_text(json.dumps(corp, ensure_ascii=False, indent=1) + "\n", encoding="utf-8", newline="\n")
+        DOC.write_text(apply_doc(corp, n), encoding="utf-8", newline="\n")
         corp = json.loads(CORPUS.read_text(encoding="utf-8"))
         idx_file = json.loads(INDEX.read_text(encoding="utf-8"))
         new = registry_numbers(corp, idx_file)
