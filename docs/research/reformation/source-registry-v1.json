@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 105,
+  "sourceCount": 107,
   "sources": [
     {
       "id": "REF-P01",
@@ -1913,6 +1913,44 @@
       "url": "https://mla.bethelks.edu/ml-archive/2010/pilgram.php",
       "checkedAt": "2026-11-05",
       "verificationNote": "Wave 340: Read full html article with page fetch from publisher Bethel College Mennonite Life, Summer 2010 vol64, attributed James M. Stayer (2008 Menno Simons Lecture). In section on Marpeck's Anabaptist printed pamphlets, Stayer expressly reports that Werner O. Packull HOLDS Marpeck saw to publishing the Seven Articles of Schleitheim (1533) with Jacob Cammerlander at Strasbourg. Stayer cites Packull's 2001 Preliminary Report on Pilgram Marpeck's Sponsorship of Anabaptist Flugschriften, Mennonite Quarterly Review 75 (2001), 75-88. This is Stayer's modern SCHOLARLY REPORT OF Packull's historical HYPOTHESIS, NOT direct 2001 Packull full text, NOT an archival contract between Marpeck and Cammerlander, NOT a surviving 1533 print or proof of its Matt 27/28. Its research value is identifying another possible chain of ownership/sponsorship and why one should seek a printer provenance and contemporary documentary records, not to assert Marpeck as sponsor. B1 for secondary scholarship; archive/rights/publication HOLD. Cross reference REF-S29 1910 A2 description."
+    },
+    {
+      "id": "REF-S31",
+      "documentYear": 1905,
+      "title": "Kalliope catalog record, Staatsbibliothek zu Berlin, Archiv des Verlags J. C. B. Mohr (Paul Siebeck), Nachl. 488, A 0197, Mappe 8: 1905 correspondence including Karl Rudolf / Rudolf Haupt, ca. 200 leaves",
+      "evidenceClass": "B1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://kalliope.staatsbibliothek-berlin.de/query?q=ead.creator.gnd%3D%3D%2235259-7%22",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Scientific wave 342: Read publicly indexed Kalliope FINDING-AID metadata from Staatsbibliothek zu Berlin, Handschriftenabteilung, J.C.B. Mohr (Paul Siebeck) publishers archive. Exact shelfmark Nachl. 488, A 0197, Mappe 8; 1905, approximately 200 leaves, correspondents list includes Karl Rudolf Haupt and Rudolf Haupt (Halle). EAD DE-611-HS-3097103 from Kalliope query. This is the archival description of a MIXED FILE, not reading any letter, not proof a letter discusses a 1533 Schleitheim print or completed sale. A separate targeted no-cost follow-up reference enquiry to infohhd@sbb.spk-berlin.de was SENT from authorized Gmail 2026-11-06, beyond prior archival SBB enquiry. No manuscript pages received, permissions unknown."
+    },
+    {
+      "id": "REF-S32",
+      "documentYear": 1904,
+      "title": "Rudolf Haupt antiquarian contemporary advertisement, Katalog 2: Das Zeitalter der Reformation, 859 entries, in German literary magazine October 1904, digitized Silesian Digital Library",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://sbc.org.pl/Content/702516/iii29342-1904_1905-01-0001.pdf",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Wave 342: public scanned magazine PDF's extracted text near final advertisement lines directly names Rudolf Haupt Antiquariat Halle a.S. and advertises Katalog 2 Das Zeitalter der Reformation, 859 numbers, including original reformer imprints. The source is the 1904 commercial advertisement, NOT the 859-item catalogue itself. Web PDF screenshot returned cache miss; authorized Windows download attempt timed out, so do not claim visual photographic page inspection or verified full PDF bytes. No specific 1533 Sattler/Schleitheim entry is in the accessible advertisement text; publication predates Cramer's separately reported 1905 offer. Scholarly bibliographic abbreviations in https://brill.com/display/book/9789004610392/front-3.pdf identify a DISTINCT Haupt catalogue 12 printed Halle 1906, only bibliographic reference (original catalog not acquired). KBR online metadata confirms physical Katalog 6 Romanische Philologie 1905, 161pp/2274 lots, KBR record 16151925 / shelfmark 9 A/2011/8.495/97; KBR possession of catalog 2 or 12 NOT proven. Targeted research-only reference enquiry SENT to info@kbr.be 2026-11-06, no paid order."
     }
   ]
 }
