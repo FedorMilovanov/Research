@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 91,
+  "sourceCount": 93,
   "sources": [
     {
       "id": "REF-P01",
@@ -1649,6 +1649,43 @@
       "url": "https://www.ref-sh.ch/bericht/5735",
       "checkedAt": "2026-11-05",
       "verificationNote": "Official institutional web article, full accessible HTML text directly read, says 1533 Strasbourg reprint had a single known Berlin copy regarded as wartime loss (Kriegsverlust). Historical custody report NOT verified against an individual current SBB16/VD16 holding record and NOT definitive proof all copies absent worldwide. Also dates Schleitheim museum's VD16 ZV30530 material circa1550; scholarly REF-S17 gives competing circa1570 hypothesis. Secondary custody testimony, not 1533 direct original."
+    },
+    {
+      "id": "REF-S19",
+      "documentYear": 1974,
+      "title": "H. W. Meihuizen, J. A. Oosterbaan, H. B. Kossen, Broederlijke Vereniging, Doperse Stemmen 1, Doopsgezinde Historische Kring, Amsterdam, 1974: facsimile of first 1560 Dutch text page (p.14), modern translation (p.16)",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://dhkonline.nl/wp-content/uploads/sites/48/2023/02/DS01_Broederlijke_Vereniging_Tekst_en_commentaar.pdf",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "1974 copyrighted modern translation/commentary published by Doopsgezinde Historische Kring, current public PDF. Printed p.14 specifically reproduces FIRST TEXT PAGE of original 1560 Dutch print, said to be held at Doopsgezinde Bibliotheek Amsterdam; visually inspected as PDF page indexed 13. This photographed page is INTRODUCTION only, not baptism article I scriptural references. Printed p.16 visibly says Matth.28:19 in modern Dutch translation; NOT original 1560 page transcription. No complete original 1560 scan acquired; do not infer historical 1560 numeral or lost 1533 numeral from modern edition."
+    },
+    {
+      "id": "REF-S20",
+      "documentYear": 1977,
+      "title": "Piet Visser (advisor), IDC Publishers, The Anabaptist, Mennonite and Spiritualist Reformation: Radical Reformation Microfiche Project, second-edition catalogue (undated revision; original catalog 1977), digital listing at Concordia Seminary",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://scholar.csl.edu/ebooks/31",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "PUBLIC MICR0FICHE CATALOGUE text layer read through university-linked PDF: 'Confessions of faith' lists original Dutch 1560 pamphlet [BO p29 HBR-2815], 2 microfiche, order ME-67/1; distinct 1565 [BO p29 HBR-2815a], 1 microfiche, ME-68/1. These are commercial reproduction product/order IDs, not original library shelfmarks or proof that microfiches are now on shelf. Browser screenshot of this PDF returned 403, so exact catalogue image page unverified; edition says 'Second edition' but publication year of revision is not verified. The 1977 date is repository metadata for first issue, not verified second-edition imprint year. NO MICROFICHE itself acquired or inspected."
     }
   ]
 }
