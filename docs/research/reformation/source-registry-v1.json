@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 107,
+  "sourceCount": 108,
   "sources": [
     {
       "id": "REF-P01",
@@ -1950,7 +1950,26 @@
       ],
       "url": "https://sbc.org.pl/Content/702516/iii29342-1904_1905-01-0001.pdf",
       "checkedAt": "2026-11-06",
-      "verificationNote": "Wave 342: public scanned magazine PDF's extracted text near final advertisement lines directly names Rudolf Haupt Antiquariat Halle a.S. and advertises Katalog 2 Das Zeitalter der Reformation, 859 numbers, including original reformer imprints. The source is the 1904 commercial advertisement, NOT the 859-item catalogue itself. Web PDF screenshot returned cache miss; authorized Windows download attempt timed out, so do not claim visual photographic page inspection or verified full PDF bytes. No specific 1533 Sattler/Schleitheim entry is in the accessible advertisement text; publication predates Cramer's separately reported 1905 offer. Scholarly bibliographic abbreviations in https://brill.com/display/book/9789004610392/front-3.pdf identify a DISTINCT Haupt catalogue 12 printed Halle 1906, only bibliographic reference (original catalog not acquired). KBR online metadata confirms physical Katalog 6 Romanische Philologie 1905, 161pp/2274 lots, KBR record 16151925 / shelfmark 9 A/2011/8.495/97; KBR possession of catalog 2 or 12 NOT proven. Targeted research-only reference enquiry SENT to info@kbr.be 2026-11-06, no paid order."
+      "verificationNote": "Wave 342: public scanned magazine PDF's extracted text near final advertisement lines directly names Rudolf Haupt Antiquariat Halle a.S. and advertises Katalog 2 Das Zeitalter der Reformation, 859 numbers, including original reformer imprints. The source is the 1904 commercial advertisement, NOT the 859-item catalogue itself. Web PDF screenshot returned cache miss; authorized Windows download attempt timed out, so do not claim visual photographic page inspection or verified full PDF bytes. No specific 1533 Sattler/Schleitheim entry is in the accessible advertisement text; publication predates Cramer's separately reported 1905 offer. Scholarly bibliographic abbreviations in https://brill.com/display/book/9789004610392/front-3.pdf identify a DISTINCT Haupt catalogue 12 printed Halle 1906, only bibliographic reference (original catalog not acquired). KBR online metadata confirms physical Katalog 6 Romanische Philologie 1905, 161pp/2274 lots, KBR record 16151925 / shelfmark 9 A/2011/8.495/97; KBR possession of catalog 2 or 12 NOT proven. Targeted research-only reference enquiry SENT to info@kbr.be 2026-11-06, no paid order. Wave 343/2026-11-06: exact original printed Haupt catalog no.12 (Inkunabeln, Drucke des 16. Jhs., Reformations-Literatur in Originaldrucken, Halle, 1905–06) appears as one component in an advertised extant six-catalog bound volume nos.5,6,7,8,9,12 sold/listed by Musikantiquariat Dr. Bernhard A. Kohl GmbH, Stuttgart (online antiquarian marketplace indexed result https://www.abebooks.de/buch-suchen/autor/buch-und-schrift--antiquariats--und-auktionskataloge/ and vendor https://www.zvab.com/Musikantiquariat-Dr-Bernhard-A-Kohl-GmbH/1713246/sf). Offer metadata describes approx.730 total pages; sale listing freshness and continuing stock availability not independently established. This is modern dealer listing of the physical 1905–06 ORIGINAL catalogue, not an actual consulted scan of catalog 12 and NOT a confirmed Sattler/Schleitheim lot. Vendor's verified public contact info@musikantiquariat-kohl.de (German Music Information Centre and seller) was sent a targeted no-cost enquiry through connected Gmail 2026-11-06 requesting a catalog 12 Sattler/Schleitheim entry or already available photo; SENT is not seller response, no order or charges authorized. Existing 1904 original advertisement still only text-layer; do not conflate original catalog no.2, no.6, no.12 or an offered 1905 1533 print."
+    },
+    {
+      "id": "REF-S33",
+      "documentYear": 1908,
+      "title": "Kalliope finding aid, Staatsbibliothek zu Berlin, J.C.B. Mohr (Paul Siebeck) publisher archive, Nachl. 488 A 0249 Mappe 9: Walther Köhler's 1908 correspondence among other letters, ca. 100 leaves",
+      "evidenceClass": "B1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://kalliope.staatsbibliothek-berlin.de/de/ead?ead.id=DE-611-HS-3076039",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Wave 343/2026-11-06: Kalliope SBB public archival finding aid DE-611-HS-3076039, Nachl.488 A0249 Mappe9, 1908, ca.100 manuscript leaves, names Walther Köhler (1870-1946), Eduard Kohlrausch, J.C.B. Mohr, K.F. Koehler (firm) and W. Kohlhammer as correspondents; 'keine Erfassung von Einzelkorrespondenzen' means no item-by-item description. Nearby SEPARATE Mappe8, DE-611-HS-3076021, also 1908 and circa 100 leaves, includes Walther Köhler among Gerhard Ködderitz and other publishing contacts (https://kalliope-verbund.info/de/findingaid?fa.enum=3970&fa.id=DE-611-BF-29316). Neither folder has been digitized or read in this research. No evidence their letters mention the Schleitheim edition, its textual Vorlage, the 1533 A2 print, a price, Matthew 27/28, nor Rudolf Haupt; K.F.Koehler publishing firm is not the person Walther Köhler or necessarily Rudolf Haupt. Treat Kalliope listing as archival LOCATION ONLY; reserve original evidence for item-by-item read. An additional third email to already-contacted SBB was intentionally NOT sent in this session, to avoid repeated unnecessary inquiries. Original 1908 printed Köhler issue remains CATALOG_ONLY in REF-S27."
     }
   ]
 }
