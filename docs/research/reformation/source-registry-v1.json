@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 105,
+  "sourceCount": 108,
   "sources": [
     {
       "id": "REF-P01",
@@ -1727,7 +1727,7 @@
       "documentYear": 1909,
       "title": "S. Cramer (editor), Bibliotheca reformatoria neerlandica, vol. V: Nederlandsche Anabaptistica / De Broederlicke Vereeninge, Martinus Nijhoff 1909, intro pp.585-587, original title facsimile frame n616, edited baptism article p607",
       "evidenceClass": "B1",
-      "accessState": "PARTIAL_OBJECT",
+      "accessState": "FULL_OBJECT_VERIFIED",
       "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
@@ -1737,8 +1737,8 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://commons.ptsem.edu/id/bibliothecarefor0005unse",
-      "checkedAt": "2026-11-05",
-      "verificationNote": "VERIFIED ORIGINAL 1909 BOOK SCAN IMAGES (not OCR alone) held through Princeton Theological Seminary / Theological Commons, Internet Archive identifier bibliothecarefor0005unse: bookreader image n598 printed p585; n599 p586; n600 p587; n616 facsimile of 1560 original Dutch TITLE only; n620 printed p607. On p607 baptism article I the right margin prints Matt.3.a. then 28.c., and separate Mat.28.c. after exclusion of infant baptism. On p587 Cramer states marginal Bible citations were added by compiler or translators, NOT the original authors, and acknowledges variation of the a/b/c divisions among Dutch scripture printings. This printed 1909 revised historical transcription is B1 for the 1560 original's reading (not a direct 1560 article-I scan and not 1533/1565 reading). Exactly verified page images accessible as https://archive.org/download/bibliothecarefor0005unse/page/n620/mode/1up etc; no full book PDF or original 1560 master archived into GitHub. Theological Commons explicitly says Image Copyright Not Evaluated, so rights and republication remain HOLD."
+      "checkedAt": "2026-11-06",
+      "verificationNote": "VERIFIED ORIGINAL 1909 BOOK SCAN IMAGES (not OCR alone) held through Princeton Theological Seminary / Theological Commons, Internet Archive identifier bibliothecarefor0005unse: bookreader image n598 printed p585; n599 p586; n600 p587; n616 facsimile of 1560 original Dutch TITLE only; n620 printed p607. On p607 baptism article I the right margin prints Matt.3.a. then 28.c., and separate Mat.28.c. after exclusion of infant baptism. On p587 Cramer states marginal Bible citations were added by compiler or translators, NOT the original authors, and acknowledges variation of the a/b/c divisions among Dutch scripture printings. This printed 1909 revised historical transcription is B1 for the 1560 original's reading (not a direct 1560 article-I scan and not 1533/1565 reading). Exactly verified page images accessible as https://archive.org/download/bibliothecarefor0005unse/page/n620/mode/1up etc; no full book PDF or original 1560 master archived into GitHub. Theological Commons explicitly says Image Copyright Not Evaluated, so rights and republication remain HOLD. Wave 341: whole scanned 1909 Cramer book PDF 682 pages/40,856,469 bytes, SHA256 2a5cd18abf943f24b2e8c865a276534b26e9b283c09fbd3d8f00b83b9a932b32 obtained on local research machine and image-verified pp587/589/607. NEW p589: Cramer reports 1905 OFFER (not sale) of German A2 to public by antiquary Haupt in Halle at f600; cited Koehler 1908 copy. He used Dutch 1560 as basis but supplied two missing pages of one M-quire leaf (Mjr/v) from virtually identical 1565 reprint. DLA authority confirms Haupt firm Halle 1903-1907 and Leipzig thereafter, NOT the transfer of the 1533 object. Exact original Dutch 1560/1565 folios and 1533 A2 still unexamined; 1909 complete edition is B1, no first-hand original A1/A2 upgrade. Full PDF verified only in Windows temporary workspace, no durable or authenticated cloud server backup verified. See C161-C162."
     },
     {
       "id": "REF-P59",
@@ -1913,6 +1913,63 @@
       "url": "https://mla.bethelks.edu/ml-archive/2010/pilgram.php",
       "checkedAt": "2026-11-05",
       "verificationNote": "Wave 340: Read full html article with page fetch from publisher Bethel College Mennonite Life, Summer 2010 vol64, attributed James M. Stayer (2008 Menno Simons Lecture). In section on Marpeck's Anabaptist printed pamphlets, Stayer expressly reports that Werner O. Packull HOLDS Marpeck saw to publishing the Seven Articles of Schleitheim (1533) with Jacob Cammerlander at Strasbourg. Stayer cites Packull's 2001 Preliminary Report on Pilgram Marpeck's Sponsorship of Anabaptist Flugschriften, Mennonite Quarterly Review 75 (2001), 75-88. This is Stayer's modern SCHOLARLY REPORT OF Packull's historical HYPOTHESIS, NOT direct 2001 Packull full text, NOT an archival contract between Marpeck and Cammerlander, NOT a surviving 1533 print or proof of its Matt 27/28. Its research value is identifying another possible chain of ownership/sponsorship and why one should seek a printer provenance and contemporary documentary records, not to assert Marpeck as sponsor. B1 for secondary scholarship; archive/rights/publication HOLD. Cross reference REF-S29 1910 A2 description."
+    },
+    {
+      "id": "REF-S31",
+      "documentYear": 1905,
+      "title": "Kalliope catalog record, Staatsbibliothek zu Berlin, Archiv des Verlags J. C. B. Mohr (Paul Siebeck), Nachl. 488, A 0197, Mappe 8: 1905 correspondence including Karl Rudolf / Rudolf Haupt, ca. 200 leaves",
+      "evidenceClass": "B1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://kalliope.staatsbibliothek-berlin.de/query?q=ead.creator.gnd%3D%3D%2235259-7%22",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Scientific wave 342: Read publicly indexed Kalliope FINDING-AID metadata from Staatsbibliothek zu Berlin, Handschriftenabteilung, J.C.B. Mohr (Paul Siebeck) publishers archive. Exact shelfmark Nachl. 488, A 0197, Mappe 8; 1905, approximately 200 leaves, correspondents list includes Karl Rudolf Haupt and Rudolf Haupt (Halle). EAD DE-611-HS-3097103 from Kalliope query. This is the archival description of a MIXED FILE, not reading any letter, not proof a letter discusses a 1533 Schleitheim print or completed sale. A separate targeted no-cost follow-up reference enquiry to infohhd@sbb.spk-berlin.de was SENT from authorized Gmail 2026-11-06, beyond prior archival SBB enquiry. No manuscript pages received, permissions unknown."
+    },
+    {
+      "id": "REF-S32",
+      "documentYear": 1904,
+      "title": "Rudolf Haupt antiquarian contemporary advertisement, Katalog 2: Das Zeitalter der Reformation, 859 entries, in German literary magazine October 1904, digitized Silesian Digital Library",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://sbc.org.pl/Content/702516/iii29342-1904_1905-01-0001.pdf",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Wave 342: public scanned magazine PDF's extracted text near final advertisement lines directly names Rudolf Haupt Antiquariat Halle a.S. and advertises Katalog 2 Das Zeitalter der Reformation, 859 numbers, including original reformer imprints. The source is the 1904 commercial advertisement, NOT the 859-item catalogue itself. Web PDF screenshot returned cache miss; authorized Windows download attempt timed out, so do not claim visual photographic page inspection or verified full PDF bytes. No specific 1533 Sattler/Schleitheim entry is in the accessible advertisement text; publication predates Cramer's separately reported 1905 offer. Scholarly bibliographic abbreviations in https://brill.com/display/book/9789004610392/front-3.pdf identify a DISTINCT Haupt catalogue 12 printed Halle 1906, only bibliographic reference (original catalog not acquired). KBR online metadata confirms physical Katalog 6 Romanische Philologie 1905, 161pp/2274 lots, KBR record 16151925 / shelfmark 9 A/2011/8.495/97; KBR possession of catalog 2 or 12 NOT proven. Targeted research-only reference enquiry SENT to info@kbr.be 2026-11-06, no paid order. Wave 343/2026-11-06: exact original printed Haupt catalog no.12 (Inkunabeln, Drucke des 16. Jhs., Reformations-Literatur in Originaldrucken, Halle, 1905–06) appears as one component in an advertised extant six-catalog bound volume nos.5,6,7,8,9,12 sold/listed by Musikantiquariat Dr. Bernhard A. Kohl GmbH, Stuttgart (online antiquarian marketplace indexed result https://www.abebooks.de/buch-suchen/autor/buch-und-schrift--antiquariats--und-auktionskataloge/ and vendor https://www.zvab.com/Musikantiquariat-Dr-Bernhard-A-Kohl-GmbH/1713246/sf). Offer metadata describes approx.730 total pages; sale listing freshness and continuing stock availability not independently established. This is modern dealer listing of the physical 1905–06 ORIGINAL catalogue, not an actual consulted scan of catalog 12 and NOT a confirmed Sattler/Schleitheim lot. Vendor's verified public contact info@musikantiquariat-kohl.de (German Music Information Centre and seller) was sent a targeted no-cost enquiry through connected Gmail 2026-11-06 requesting a catalog 12 Sattler/Schleitheim entry or already available photo; SENT is not seller response, no order or charges authorized. Existing 1904 original advertisement still only text-layer; do not conflate original catalog no.2, no.6, no.12 or an offered 1905 1533 print."
+    },
+    {
+      "id": "REF-S33",
+      "documentYear": 1908,
+      "title": "Kalliope finding aid, Staatsbibliothek zu Berlin, J.C.B. Mohr (Paul Siebeck) publisher archive, Nachl. 488 A 0249 Mappe 9: Walther Köhler's 1908 correspondence among other letters, ca. 100 leaves",
+      "evidenceClass": "B1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://kalliope.staatsbibliothek-berlin.de/de/ead?ead.id=DE-611-HS-3076039",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Wave 343/2026-11-06: Kalliope SBB public archival finding aid DE-611-HS-3076039, Nachl.488 A0249 Mappe9, 1908, ca.100 manuscript leaves, names Walther Köhler (1870-1946), Eduard Kohlrausch, J.C.B. Mohr, K.F. Koehler (firm) and W. Kohlhammer as correspondents; 'keine Erfassung von Einzelkorrespondenzen' means no item-by-item description. Nearby SEPARATE Mappe8, DE-611-HS-3076021, also 1908 and circa 100 leaves, includes Walther Köhler among Gerhard Ködderitz and other publishing contacts (https://kalliope-verbund.info/de/findingaid?fa.enum=3970&fa.id=DE-611-BF-29316). Neither folder has been digitized or read in this research. No evidence their letters mention the Schleitheim edition, its textual Vorlage, the 1533 A2 print, a price, Matthew 27/28, nor Rudolf Haupt; K.F.Koehler publishing firm is not the person Walther Köhler or necessarily Rudolf Haupt. Treat Kalliope listing as archival LOCATION ONLY; reserve original evidence for item-by-item read. An additional third email to already-contacted SBB was intentionally NOT sent in this session, to avoid repeated unnecessary inquiries. Original 1908 printed Köhler issue remains CATALOG_ONLY in REF-S27."
     }
   ]
 }
