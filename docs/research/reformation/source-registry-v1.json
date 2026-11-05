@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 98,
+  "sourceCount": 100,
   "sources": [
     {
       "id": "REF-P01",
@@ -652,8 +652,8 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://www.museum-schleitheim.ch/taeuferbekenntnis_1.htm",
-      "verificationNote": "Full seven-article German transcript of museum's later ~1550 printing read over _1.htm _2.htm _3.htm (articles I–VII, sword and oath included). Must distinguish later print from 1527 BSB witnesses VD16 S1882: both identified but visual original not collated. DIRECT_1550_PRINT_20261105: Original circa1550 Schleitheim print, separately catalogued as REF-P57 VD16 ZV30530, directly inspected via e-rara IIIF canvases 17-24. Article VI begins canvas18, ends canvas23 where VII begins. Museum website '_2.htm' repeats 'die nicht erkennen den willen Christi' twice in VI question: direct original circa1550 canvas19 has clause ONCE, also BSB 1527 original scan9 ONCE. This is an error/duplicate in ONLINE TRANSCRIPTION relative to examined print, NOT a proven historical reading. Preserve separate museum transcription vs original print labels; no complete 1550 PDF downloaded. WAVE325_ARTICLES_I_II_IV_VII: Museum modern online German transcript circa1550 differs from printed circa1550 original: in Article IV website repeats 'die gehorsam des glaubens' and 'Christus Christus' but direct e-rara original canvases 13-14 has one each (Christus split across pages); BSB 1527 scan6 also one each. In contrast Matt.27 in online article I is faithfully copied from original late print canvas9; true early 1527 variant is Matthew 28 on BSB scan5. Do not classify every modern difference as a typo.",
-      "checkedAt": "2026-11-04"
+      "verificationNote": "Full seven-article German transcript of museum's later ~1550 printing read over _1.htm _2.htm _3.htm (articles I–VII, sword and oath included). Must distinguish later print from 1527 BSB witnesses VD16 S1882: both identified but visual original not collated. DIRECT_1550_PRINT_20261105: Original circa1550 Schleitheim print, separately catalogued as REF-P57 VD16 ZV30530, directly inspected via e-rara IIIF canvases 17-24. Article VI begins canvas18, ends canvas23 where VII begins. Museum website '_2.htm' repeats 'die nicht erkennen den willen Christi' twice in VI question: direct original circa1550 canvas19 has clause ONCE, also BSB 1527 original scan9 ONCE. This is an error/duplicate in ONLINE TRANSCRIPTION relative to examined print, NOT a proven historical reading. Preserve separate museum transcription vs original print labels; no complete 1550 PDF downloaded. WAVE325_ARTICLES_I_II_IV_VII: Museum modern online German transcript circa1550 differs from printed circa1550 original: in Article IV website repeats 'die gehorsam des glaubens' and 'Christus Christus' but direct e-rara original canvases 13-14 has one each (Christus split across pages); BSB 1527 scan6 also one each. In contrast Matt.27 in online article I is faithfully copied from original late print canvas9; true early 1527 variant is Matthew 28 on BSB scan5. Do not classify every modern difference as a typo. WAVE333 museum institutional INTRO now separately verified: museum says third German late printing around 1550 known in two copies, own Schleitheimertal and Mennonite Historical Library Goshen; BOTH are reportedly bound with 'Concordanz und Zeiger der namhafftigsten Sprüch aller Biblischen Bücher alts und news Testament'. This is FIRST-PARTY museum custody for museum original, but ONLY INSTITUTIONAL REPORT, not physical autopsy or exact local shelfmark for Goshen. Goshen 2017 official page has ambiguous '(1527)' description; Goshen 2025 librarian interview mentions rare 1540s concordance without complete title/call-number; do not conflate these with a verified same printed state or bound-with item. Source's primary status for original museum transcription DOES NOT upgrade separate claims about Goshen copy to A1; relevant claim-level EVIDENCE/LOCATOR holds persist.",
+      "checkedAt": "2026-11-05"
     },
     {
       "id": "REF-P25",
@@ -1777,6 +1777,46 @@
       "url": "https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/175484/Juergens_057.pdf?isAllowed=y&sequence=1",
       "checkedAt": "2026-11-05",
       "verificationNote": "Institutionally served scholarly 2021 PDF text extracted (printed pp51-52; n42: Zwingli already had four manuscript copies within months; p52 n48: author says Elenchus written in July 1527 from various manuscripts includes full Latin translation and polemical response; n43 Worms, 1533 and late print descriptions; n45 Dutch 1560 and 1565; n44 French lost branch). Web screenshot of the university PDF page returned HTTP 404; exact visual page NOT newly verified, therefore coarse locator only and EVIDENCE/LOCATOR holds for any unsupported primary manuscript or biblical claim. None of four historic manuscripts have been opened or independently assigned shelfmarks; sample images of original 1527 Latin Zwingli print DO NOT establish its article I numerals or text stemma. B1 supports contextual scholarly attribution only."
+    },
+    {
+      "id": "REF-S24",
+      "documentYear": 2017,
+      "title": "Goshen College official archive, Ervin Beck, Jeff Peachey '88 restores rare 1564 Ausbund for Mennonite Historical Library, 3 April 2017, terminal remark about a Schleitheim Confession rare edition",
+      "evidenceClass": "A3",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://archive.goshen.edu/news/jeff-peachey-88-restores-rare-1564-ausbund-mennonite-historical-library/",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "Full official institutional Goshen news article personally accessed, dated Apr 3 2017 and authored Ervin Beck. Terminal para says MHL rare book room contains a copy of 'an early edition of the Schleitheim Confession (1527), which is one of only two surviving copies of that edition in the world.' This A3 verifies that Goshen made this public statement, but NOT an edition/printing date, bibliographic VD16 ID, exact shelfmark, provenance, collated copy or original scan. Parenthetical 1527 can be confession composition date and is AMBIGUOUS. Museum Schleitheim says both original earliest Worms 1527/1529 copies are at BSB while Goshen is known for later third German print circa1550; Goshen article MUST NOT be silently elevated to a claimed third BSB original or overwritten; exact copy identity HOLD. No historical photo or private data copied."
+    },
+    {
+      "id": "REF-S25",
+      "documentYear": 2025,
+      "title": "Ana Alves Machado, Inside the Mennonite Historical Library, Goshen College student newspaper The Record, 4 December 2025: Eric Bradley interview on 1540s rare concordance",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://record.goshen.edu/features/inside-the-mennonite-historical-library",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "Journalistic, attributable contemporary interview published 2025-12-04. Exact paragraphs of The Record quote MHL head librarian Eric Bradley: the library possesses a 1540s concordance of which only two copies are known. Does not name the concordance full title, identify it with the Schleitheim museum's 'Concordanz und Zeiger ...', give physical shelfmark, assert it is bound with a Schleitheim edition, or determine Schleitheim's year. B1 for source statements, NOT direct historical item-catalogue autopsy. Institutional search policy at https://www.goshen.edu/facilities/mennonite-historical-library/search/ notes no entire-copy reproduction in general, and live WorldCat page returned JS-only view without specific holdings. Request for exactly one historical Article I line may be negotiated, not presumed available. Neither email sent nor fee authorized."
     }
   ]
 }
