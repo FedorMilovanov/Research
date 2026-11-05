@@ -1727,7 +1727,7 @@
       "documentYear": 1909,
       "title": "S. Cramer (editor), Bibliotheca reformatoria neerlandica, vol. V: Nederlandsche Anabaptistica / De Broederlicke Vereeninge, Martinus Nijhoff 1909, intro pp.585-587, original title facsimile frame n616, edited baptism article p607",
       "evidenceClass": "B1",
-      "accessState": "PARTIAL_OBJECT",
+      "accessState": "FULL_OBJECT_VERIFIED",
       "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
@@ -1737,8 +1737,8 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://commons.ptsem.edu/id/bibliothecarefor0005unse",
-      "checkedAt": "2026-11-05",
-      "verificationNote": "VERIFIED ORIGINAL 1909 BOOK SCAN IMAGES (not OCR alone) held through Princeton Theological Seminary / Theological Commons, Internet Archive identifier bibliothecarefor0005unse: bookreader image n598 printed p585; n599 p586; n600 p587; n616 facsimile of 1560 original Dutch TITLE only; n620 printed p607. On p607 baptism article I the right margin prints Matt.3.a. then 28.c., and separate Mat.28.c. after exclusion of infant baptism. On p587 Cramer states marginal Bible citations were added by compiler or translators, NOT the original authors, and acknowledges variation of the a/b/c divisions among Dutch scripture printings. This printed 1909 revised historical transcription is B1 for the 1560 original's reading (not a direct 1560 article-I scan and not 1533/1565 reading). Exactly verified page images accessible as https://archive.org/download/bibliothecarefor0005unse/page/n620/mode/1up etc; no full book PDF or original 1560 master archived into GitHub. Theological Commons explicitly says Image Copyright Not Evaluated, so rights and republication remain HOLD."
+      "checkedAt": "2026-11-06",
+      "verificationNote": "VERIFIED ORIGINAL 1909 BOOK SCAN IMAGES (not OCR alone) held through Princeton Theological Seminary / Theological Commons, Internet Archive identifier bibliothecarefor0005unse: bookreader image n598 printed p585; n599 p586; n600 p587; n616 facsimile of 1560 original Dutch TITLE only; n620 printed p607. On p607 baptism article I the right margin prints Matt.3.a. then 28.c., and separate Mat.28.c. after exclusion of infant baptism. On p587 Cramer states marginal Bible citations were added by compiler or translators, NOT the original authors, and acknowledges variation of the a/b/c divisions among Dutch scripture printings. This printed 1909 revised historical transcription is B1 for the 1560 original's reading (not a direct 1560 article-I scan and not 1533/1565 reading). Exactly verified page images accessible as https://archive.org/download/bibliothecarefor0005unse/page/n620/mode/1up etc; no full book PDF or original 1560 master archived into GitHub. Theological Commons explicitly says Image Copyright Not Evaluated, so rights and republication remain HOLD. Wave 341: whole scanned 1909 Cramer book PDF 682 pages/40,856,469 bytes, SHA256 2a5cd18abf943f24b2e8c865a276534b26e9b283c09fbd3d8f00b83b9a932b32 obtained on local research machine and image-verified pp587/589/607. NEW p589: Cramer reports 1905 OFFER (not sale) of German A2 to public by antiquary Haupt in Halle at f600; cited Koehler 1908 copy. He used Dutch 1560 as basis but supplied two missing pages of one M-quire leaf (Mjr/v) from virtually identical 1565 reprint. DLA authority confirms Haupt firm Halle 1903-1907 and Leipzig thereafter, NOT the transfer of the 1533 object. Exact original Dutch 1560/1565 folios and 1533 A2 still unexamined; 1909 complete edition is B1, no first-hand original A1/A2 upgrade. Full PDF verified only in Windows temporary workspace, no durable or authenticated cloud server backup verified. See C161-C162."
     },
     {
       "id": "REF-P59",
