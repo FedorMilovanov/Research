@@ -22,6 +22,16 @@
 - **Vosk:** [gb-vosk-tts #4](https://github.com/FedorMilovanov/gb-vosk-tts/pull/4) смержен; Apache-2.0 для производного порта и исходный MIT для словаря задокументированы. Риск **R11 = PARTIAL только по внешней модели**: 04.11 на живом сайте проверены HTTP 200 обе JS-копии со SPDX-заголовками и три юридических notice в `/legal/tts/`; provenance квантованных весов, reproduction и hosting notices остаются отдельным MODEL_RIGHTS_HOLD.
 - **Изменения только по делу:** собственная ветка от проверенного `main` → содержательный commit → PR → CI на точном HEAD → merge → post-merge. Не делать косметические «пиар-коммиты» и дублирующие PR ради счётчиков, не отключать обязательные проверки.
 
+### Актуализация: 5 ноября 2026 — публичная публикация и оставшиеся блокеры
+
+Эта запись дополняет датированные срезы 01–04.11 и не пересчитывает исторические показатели `METRICS.csv`.
+
+- **Отдельный сайт портфолио готов.** [PR #3 FedorMilovanov.github.io](https://github.com/FedorMilovanov/FedorMilovanov.github.io/pull/3) влит коммитом `2ff7db9eb9025e32960a8ebd1dbbca2b3154b894`. [GitHub Pages run 42072510490](https://github.com/FedorMilovanov/FedorMilovanov.github.io/actions/runs/42072510490) завершил сборку, публикационный отчёт и deploy успешно. Внешне проверены [RU](https://fedormilovanov.github.io/portfolio/) и [EN](https://fedormilovanov.github.io/portfolio/en/); прежний редирект корня `/` на богословский сайт сохранён.
+- **Главный GitHub-профиль связан с сайтом.** [PR #3 FedorMilovanov](https://github.com/FedorMilovanov/FedorMilovanov/pull/3) влит как `6ca9c3d3330d2847a8357ff4236c27cdc86115be`: публично видны ссылки на RU/EN сайт вместе с прежними документами Research. Это **не** означает настройки GitHub Bio, Website или шести pinned repositories.
+- **Research authority CI переименован.** [PR #298](https://github.com/FedorMilovanov/Research/pull/298) влит как `5d95f5c4796fa4ab79ad24dbd0dae368362c1919`; `main.protected=true`. На следующем проверенном `main` `89bc16596ca6558da7bedd5bd75986717ada8ce6` завершились SUCCESS `Repository authority integrity`, `Security baseline`, `Atonement corpus integrity`. Однако [issue #196](https://github.com/FedorMilovanov/Research/issues/196) **остаётся открытым**: GitHub App отвечает 403 при доступе к детальному branch-protection rule, обязательность уникального CI-контекста не подтверждена; path-filtered G3 не может быть безусловно required без переработки триггера.
+- **HF Vosk card опубликована, права не сняты.** [Коммит `30bfb2bfaa9dec599ea97ff0c04166a595d4d7eb`](https://huggingface.co/CurtMil/gb-vosk-tts-model/commit/30bfb2bfaa9dec599ea97ff0c04166a595d4d7eb) документирует Alpha Cephei, BERT-only квантование и SHA-256 размещённых файлов. `MODEL_RIGHTS_HOLD` для внешних весов 0.9 сохраняется: карточка не заменяет лицензию и независимую проверку исходного архива.
+- **Стадия 4 всё ещё неполная.** Сайт и профиль опубликованы; публикации на hh.ru и LinkedIn не подтверждены. Также не доказан отзыв исторических cookie-сессий частного `sermon_MP3_bot`, а тарифное ограничение защиты его `main` не снято. Эти остатки нельзя объявлять `DONE` только закрытием PR.
+
 
 ---
 
@@ -56,7 +66,7 @@ python3 PORTFOLIO/tools/check_claims.py
 | `AUDIT_RU.md` | готов | 10 клонов, API, пересчёт всех чисел; 8 раундов проверки |
 | `PORTFOLIO_RU.md` | готов к публикации | все числа из реестра, паритет с EN |
 | `PORTFOLIO_EN.md` | готов к публикации | то же, плюс честный FAQ про ИИ и чужой TTS |
-| `PROFILE_README.md` | **опубликован** | [профильный репозиторий](https://github.com/FedorMilovanov/FedorMilovanov) создан публичным 03.11.2026, README в `main`; опубликованный текст очищен от плейсхолдеров и недоказанного числа слов |
+| `PROFILE_README.md` | **опубликован** | [профильный репозиторий](https://github.com/FedorMilovanov/FedorMilovanov) создан 03.11; с 05.11 README содержит ссылки на работающие [RU](https://fedormilovanov.github.io/portfolio/) и [EN](https://fedormilovanov.github.io/portfolio/en/) страницы, без плейсхолдеров и недоказанного числа слов |
 | `METRICS.csv` | готов | 15 строк, `data_as_of=2026-11-01` |
 | `MEDIA_PRACTICE.md` | готов | медиа-линия описана процессом, без счётчиков аудитории |
 | `HISTORY_AND_PRINCIPLES.md` | готов | 17 836 коммитов, хронология, словарь |
@@ -133,11 +143,10 @@ python3 PORTFOLIO/tools/check_claims.py
    **Документы исследования достигли этой стадии; часть материала уже опубликована на GitHub.**
 4. **Опубликовано** — материалы выложены (сайт, hh, LinkedIn, профиль-README) и ссылки
    на них добавлены в реестр. Требует действий владельца аккаунтов.
-   **Частично исполнено:** профильный README и ссылки на RU/EN-портфолио опубликованы в GitHub. Публикация на отдельном сайте/hh/LinkedIn не подтверждена; полную стадию 4 не заявлять.
+   **Частично исполнено (05.11.2026):** профильный README и отдельные страницы [RU](https://fedormilovanov.github.io/portfolio/) / [EN](https://fedormilovanov.github.io/portfolio/en/) опубликованы, ссылки взаимно связаны. Публикации на hh.ru и LinkedIn не подтверждены; полную стадию 4 не заявлять.
 
 Разница между 3 и 4 — не качество текста, а факт публикации: портфолио в репозитории
-и портфолио, которое размещено на внешних профессиональных площадках, — разные состояния, и второе этой сессией не
-достигается.
+и портфолио, которое размещено на внешних профессиональных площадках, — разные состояния. Публичный сайт готов; hh.ru и LinkedIn остаются отдельными неподтверждёнными площадками.
 
 ---
 

@@ -1,12 +1,12 @@
 # Профиль GitHub и гигиена репозиториев
 
-Публикационная заготовка и справочник по GitHub-гигиене. Числа относятся к историческому срезу 1 ноября 2026, а опубликованный GitHub README синхронизирован с `main` на 3 ноября.
+Публикационная заготовка и справочник по GitHub-гигиене. Числа относятся к историческому срезу 1 ноября 2026; 5 ноября к GitHub README добавлены ссылки на опубликованное двуязычное портфолио. Исторические показатели не пересчитываются автоматически.
 
 ---
 
 ## 1. Профиль-README
 
-**Выполнено 03.11.2026:** публичный [FedorMilovanov/FedorMilovanov](https://github.com/FedorMilovanov/FedorMilovanov) создан, `README.md` в `main`, ссылки на RU/EN-портфолио и аудит действуют. Блок ниже повторяет фактически опубликованный текст; не копировать прежние плейсхолдеры и непроверенные показатели.
+**Выполнено 03–05.11.2026:** публичный [профиль](https://github.com/FedorMilovanov) связан с работающими [RU](https://fedormilovanov.github.io/portfolio/) и [EN](https://fedormilovanov.github.io/portfolio/en/) страницами и полными портфельными материалами Research. Блок ниже отражает опубликованный README без плейсхолдеров.
 
 ### `README.md`
 
@@ -22,6 +22,8 @@ machine-checked contracts — and I make the result verifiable.
 ---
 
 ### Портфолио / Portfolio
+
+[Портфолио на сайте](https://fedormilovanov.github.io/portfolio/) · [Portfolio website](https://fedormilovanov.github.io/portfolio/en/)
 
 [Портфолио на русском](https://github.com/FedorMilovanov/Research/blob/main/PORTFOLIO/PORTFOLIO_RU.md) · [Portfolio in English](https://github.com/FedorMilovanov/Research/blob/main/PORTFOLIO/PORTFOLIO_EN.md) · [Аудит и метод проверки](https://github.com/FedorMilovanov/Research/blob/main/PORTFOLIO/AUDIT_RU.md)
 
@@ -111,7 +113,7 @@ machine-checked contracts — and I make the result verifiable.
 | `baptist---2` | Архивировать или удалить | пустой, 0 байт |
 | `baptist2` | Архивировать | заглушка из двух файлов |
 | `baptist` | Архивировать | брошенный прототип, шесть коммитов |
-| `FedorMilovanov.github.io` | Оставить, добавить описание «redirect hub» | 155 МБ медиа при одном редиректе — сжать или вынести медиа |
+| `FedorMilovanov.github.io` | Оставить: теперь здесь портфолио RU/EN и сохранён старый редирект `/` | Около 155 МБ исторических медиа в репозитории: не удалять без доказанного аудита ссылок; уменьшение публикационного артефакта — отдельная задача |
 
 Правило простое: на профиле не должно быть ничего, что читается как «не довёл».
 
@@ -121,7 +123,7 @@ machine-checked contracts — and I make the result verifiable.
 
 - [ ] **Bio** (до 160 символов): `Строю и проверяю ИИ-продукты: инженерные контракты, CI, релизы и доказательная приёмка.`
 - [ ] **Location:** Санкт-Петербург, Россия.
-- [ ] **Website:** ссылка на портфолио; до его появления — `gospod-bog.ru`.
+- [ ] **Website:** указать `https://fedormilovanov.github.io/portfolio/` в настройках профиля; ссылки в README добавлены, отдельное поле Website ещё не подтверждено.
 - [ ] **Social links:** добавлять только реальные публично разрешённые контакты (Telegram, LinkedIn, почта по решению владельца), не публиковать приватный email из GitHub API.
 - [ ] **Двухфакторная аутентификация** и Dependabot alerts на всех репозиториях: для зарубежного заказчика это маркер профессионализма, для тебя — защита активов.
 
