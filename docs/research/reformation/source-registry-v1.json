@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 89,
+  "sourceCount": 91,
   "sources": [
     {
       "id": "REF-P01",
@@ -1613,6 +1613,42 @@
       "url": "https://www.e-rara.ch/zuz/content/titleinfo/17792168",
       "checkedAt": "2026-11-05",
       "verificationNote": "NOT the 1527 BSB VD16 S1882 setting and NOT the later museum website transcription. Catalog is original circa 1550 print VD16 ZV 30530, [s.l.: s.n.], [um 1550], 75 unnumbered historical leaves, Sturzenegger-Stiftung (Schaffhausen), permanent loan to Ortsmuseum Schleitheim; DOI https://doi.org/10.3931/e-rara-65701. Official IIIF Presentation v2 https://www.e-rara.ch/i3f/v20/17792168/manifest: physically fetched 113637 bytes SHA256 e80ae4159427ecb0034f5b98b914f59442abf6af38783575425560efe7e8fc33, 159 digital canvases (NOT 159 original printed leaves). Original photographic images scans 17-24 directly acquired/viewed at service /full/1200,/0/default.jpg, SHA and bytes for EACH derivative retained in private research receipt Documents/Research-Primary-Sources/Schleitheim_1550_Sturzenegger_VD16_ZV30530/articleVI-1527-1550-direct-image-receipt.json. ARTICLE VI starts on historical original image numbered CANVAS 18, continues 19-23, article VII begins near foot of CANVAS 23. VI directly visually compared with two BSB 1527 copies scans 8-11 each (new 1800px temporary derivatives, separate documented hashes), BSB1 bsb00027178 and BSB2 bsb00112324. All scanned impressions state the worldly sword as God's ordinance outside perfection of Christ and distinguish church ban from civil punishment; no demonstrable substantive lexical variant in inspected segments, BUT no full diplomatic letter-by-letter collation. The museum's website taeuferbekenntnis_2.htm REPEATS 'die nicht erkennen den willen Christi' in the question about the sword while direct original circa1550 CANVAS 19 prints the clause ONCE, and both BSB 1527 originals scan9 also print it once; website repetition must NOT be quoted as a demonstrated sixteenth-century textual variant. IMPORTANT: attempted official 33894082-byte complete PDF download timed out; its partial file was NEVER archivally certified, SHA not assigned, and temporary data disposed of. Research receipt stores derivative hashes only, NOT source master SHA nor complete print PDF. Official digitization marked Public Domain Mark, institution requests scholarly attribution/notice; publication remains REFERENCE/PUBLICATION_HOLD due incomplete collation and rights verification of later website transcription. No binary included in Git. WAVE325_ARTICLES_I_II_IV_VII: Circa1550 separate original VD16 ZV30530 IIIF frames 7-17 and 23-32 (21 images at 1200px) visually checked. I scans8-9; II 9-10; IV 12-16; VII 23-29. Late printed Matt.27 in I scan9 contrasts with BSB 1527 Math. xxviij=28. Museum online transcript article IV duplicates 'die gehorsam des glaubens' and 'Christus Christus', while original prints each once on scans 13-14 ('Christus' split by page) and BSB 1527 scan6 each once. VII authentic distinction between zeugen and schweren. 41 temporary JPEG derivative hashes + URLs saved private receipt at Documents/Research-Primary-Sources/Schleitheim_1550_Sturzenegger_VD16_ZV30530/articles-I-II-IV-VII-1527-1550-iiif-receipts-20261105.json (16957 bytes, sha256 8516534279ddcd6f4f59e5f02807ac85cf6a08df13b0458cabb2dad405e9d76e). Full PDF not acquired, master-image SHA not claimed, scientific holds remain."
+    },
+    {
+      "id": "REF-S17",
+      "documentYear": 2017,
+      "title": "Martin Rothkegel, Daniel Graff über Pomponio Algieri von Nola, Mennonitische Geschichtsblätter 74 (2017), p.58 n.41; Schleitheim print bibliography and disputed ZV30530 dating",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.mennonitischer-geschichtsverein.de/wp-content/uploads/2024/11/MGBL-74-2017.pdf",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "SECONDARY SCHOLARLY BIBLIOGRAPHY, NOT ORIGINAL 1533. Original journal PDF text layer checked and printed page 58 screenshot visually inspected (footnote 41): VD16 S1881/S1883 = 1533 [Strasbourg Jakob Cammerlander]; same footnote attributes VD16 ZV30530 [probably Oberursel Nikolaus Henricus circa 1570, attribution Ulrich Kopp]. Other sources (e-rara and museum) date latter around 1550. No original 1533 scan acquired, no full scholarly PDF archived or SHA assigned. Do not infer original article-I Matthew numeral from this bibliography, or assert alternate dating is resolved."
+    },
+    {
+      "id": "REF-S18",
+      "documentYear": 2017,
+      "title": "Doris Brodbeck / Oliver Thiele, Schleitheims weltbekanntes Buch ist jetzt online!, Evangelisch-reformierte Kirche des Kantons Schaffhausen, 29 Dec 2017",
+      "evidenceClass": "B1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.ref-sh.ch/bericht/5735",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "Official institutional web article, full accessible HTML text directly read, says 1533 Strasbourg reprint had a single known Berlin copy regarded as wartime loss (Kriegsverlust). Historical custody report NOT verified against an individual current SBB16/VD16 holding record and NOT definitive proof all copies absent worldwide. Also dates Schleitheim museum's VD16 ZV30530 material circa1550; scholarly REF-S17 gives competing circa1570 hypothesis. Secondary custody testimony, not 1533 direct original."
     }
   ]
 }
