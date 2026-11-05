@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 93,
+  "sourceCount": 95,
   "sources": [
     {
       "id": "REF-P01",
@@ -1686,6 +1686,42 @@
       "url": "https://scholar.csl.edu/ebooks/31",
       "checkedAt": "2026-11-05",
       "verificationNote": "PUBLIC MICR0FICHE CATALOGUE text layer read through university-linked PDF: 'Confessions of faith' lists original Dutch 1560 pamphlet [BO p29 HBR-2815], 2 microfiche, order ME-67/1; distinct 1565 [BO p29 HBR-2815a], 1 microfiche, ME-68/1. These are commercial reproduction product/order IDs, not original library shelfmarks or proof that microfiches are now on shelf. Browser screenshot of this PDF returned 403, so exact catalogue image page unverified; edition says 'Second edition' but publication year of revision is not verified. The 1977 date is repository metadata for first issue, not verified second-edition imprint year. NO MICROFICHE itself acquired or inspected."
+    },
+    {
+      "id": "REF-P58",
+      "documentYear": 1560,
+      "title": "Original title page, Broederlicke Vereeninge (1560), Doopsgezinde Bibliotheek / Allard Pierson, photograph in curatorial blog dated 2025-01-21, figure 3",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.allardpierson.nl/blog/op-een-koude-winternacht-500-jaar-geleden",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "FIRST-PARTY FACSIMILE PHOTO of physical ORIGINAL title page, visible at official museum-hosted https://cms.allardpierson.nl/storage/media/3.-boekje-open-888x1024.jpg and caption Figure 3 (2025-01-21 blog by Nina Schroeder-van 't Schip and Gwendolyn Verbraak). Directly visually read printed 'Ghedruckt An. 1560.' but NO place/printer is printed on that original title; Emden and Willem Gailliart in REF-S17 are bibliographic attributions. Photograph shows physical binding and neighbouring page but no verified contemporary shelfmark, no article I text/bible numeral, no master-photo bytes or full object, no claim photograph itself is public-domain; rights separate. A1 exact locator refers to title page only."
+    },
+    {
+      "id": "REF-S21",
+      "documentYear": 1989,
+      "title": "P. Valkema Blouw, Een onbekende doperse drukkerij in Friesland, Doopsgezinde Bijdragen, nieuwe reeks 15 (1989), printed p.56 footnote 62; 1560 Broederlicke bound with undated Concordantie",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://assets.ctfassets.net/4wrp2um278k7/4cu0VnBl2zpexRzhTKbjVY/16e26210de56a2a3c8229f7185f27486/DB_15-1989.pdf",
+      "checkedAt": "2026-11-05",
+      "verificationNote": "1989 scholarly article, printed p56 n62, visually inspected ORIGINAL PDF image page index55 via web screenshot (not relying solely on extracted text). The singular 'Het enig bekende exemplaar' refers to an undated Concordantie held by Doopsgezinde Gemeente on loan Amsterdam UB; it is samengebonden with Broederlicke Vereeninge in a dated 1560 print explicitly said to be of a DIFFERENT printing house. Singular does NOT qualify number of surviving Schleitheim 1560 copies; physical identity of museum 2025 photographed volume vs 1989 description cannot be certified without current shelfmark. One cited PDF page verified, not a full study of 1989 volume and not an original 1560 article-I read. Copyright of 1989 research retained, no PDF archived in public repo."
     }
   ]
 }
