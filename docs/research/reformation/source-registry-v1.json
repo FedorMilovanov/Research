@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 120,
+  "sourceCount": 121,
   "sources": [
     {
       "id": "REF-P01",
@@ -2373,19 +2373,18 @@
       "title": "Elisabeth Zotz, Neuerworbene Wormser Drucke des 16. Jahrhunderts im Besitze der Stadtbibliothek Worms, Der Wormsgau vol.1 (issued 1926–1933), pp93–100, item4 p95: 'Dencken Widerruff' under 1529",
       "evidenceClass": "B1",
       "accessState": "PARTIAL_OBJECT",
-      "locatorState": "COARSE_LOCATOR_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
       "holds": [
         "EVIDENCE_HOLD",
-        "LOCATOR_HOLD",
         "ARCHIVE_HOLD",
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
       "url": "https://www.worms.de/neu-de-wAssets/docs/bildung-bieten/Stadtarchiv/Wormsgau/Der-Wormsgau-1-1926-1933/Nr.13_WG_-1.-Band.pdf",
       "checkedAt": "2026-11-06",
-      "verificationNote": "Official City of Worms journal archive attributes article to Elisabeth Zotz (not Zoth) in Der Wormsgau vol.1 issued 1926–1933, printed pp93–100; exact article publication year within that range NOT established. documentYear=1933 is bound-volume TERMINUS AD QUEM, NOT an assertion of issue publication in 1933. Downloadable historical article machine-readable PDF text at printed p95 places item 4 'Dencken widerruff' under heading 1529, gives octavo, 7 leaves (last blank leaf missing), gathering signature a, no printed year or printer, and attribution to Peter Schöffer from comparing types, preceded by introductory notice of newly acquired Worms Stadtbibliothek copies of 'Hans Denk' and 'Hans Denkens Widerruf'. This is a contemporary twentieth-century bibliographic cataloguing judgement and an archival historical holding claim, NOT the 16th-century book's date or proof Worms held a distinct edition, nor evidence this copy remains available today, nor proof of typography identity with BSB VD16 D573. PDF screenshot tool attempted on first 3 pages but returned cache-miss; exact printed page 95 assessed via machine-readable extraction only, so image-level LOCATOR_HOLD and comparison ARCHIVE_HOLD preserved. Modern rights unclear; no PDF bytes stored/distributed. Machine state aligned with repository evidence-policy v2: PARTIAL_OBJECT = OCR text passage only, COARSE_LOCATOR_ONLY even though printed p95 identified because original printed-page screenshot did not render, and RIGHTS_UNKNOWN with restriction to link/reference only."
+      "verificationNote": "Official City of Worms journal archive attributes article to Elisabeth Zotz (not Zoth) in Der Wormsgau vol.1 issued 1926–1933, printed pp93–100; exact article publication year within that range NOT established. documentYear=1933 is bound-volume TERMINUS AD QUEM, NOT an assertion of issue publication in 1933. Downloadable historical article machine-readable PDF text at printed p95 places item 4 'Dencken widerruff' under heading 1529, gives octavo, 7 leaves (last blank leaf missing), gathering signature a, no printed year or printer, and attribution to Peter Schöffer from comparing types, preceded by introductory notice of newly acquired Worms Stadtbibliothek copies of 'Hans Denk' and 'Hans Denkens Widerruf'. This is a contemporary twentieth-century bibliographic cataloguing judgement and an archival historical holding claim, NOT the 16th-century book's date or proof Worms held a distinct edition, nor evidence this copy remains available today, nor proof of typography identity with BSB VD16 D573. Wave356 initial screenshot of pages 0–2 returned a cache miss. SUPERSEDED BY W357 on 2026-11-06: the official Worms 8-page PDF reopened in the web viewer, screenshot of PDF page index 2, printed p.95, visually verified the full item 4 under the 1529 heading, octavo 7 extant leaves with last blank missing, signature a, absence of printer/date, and Schöffer attribution by types. LOCATOR_HOLD for the 20th-century published page is resolved (EXACT_LOCATOR_VERIFIED); separate ARCHIVE_HOLD on surviving 16th-century Worms physical copy/edition comparison remains. Modern rights unclear; no PDF bytes stored/distributed. Machine state aligned with repository evidence-policy v2: PARTIAL_OBJECT = selected journal text and photographed original p95 read (full article not collated), EXACT_LOCATOR_VERIFIED for printed p95, RIGHTS_UNKNOWN and citation/reference only. Modern rights unchanged; no PDF binary was archived."
     },
     {
       "id": "REF-S42",
@@ -2405,6 +2404,25 @@
       "url": "https://katalog.slub-dresden.de/id/0-1072322293",
       "checkedAt": "2026-11-06",
       "verificationNote": "Official SLUB Dresden holding entry directly checked: Goeters published book Gütersloh Bertelsmann **1957**, in Quellen und Forschungen zur Reformationsgeschichte vol.25, 160pp; catalog separately describes prior University of Zurich dissertation as **1955** ('Vollst. zugl.: Zürich, Univ., Diss., 1955'). Shelfmark Z.4.377-25 and a catalogue status 'Ausleihbar, bitte bestellen' were displayed, but no book pages 137–138 or Zurich dissertation text acquired and no actual order placed. Therefore Oelschläger 2008 references to 'Karlsruhe 1955, 137f' relate to dissertation-year/source identity; cannot assume 1957 printed volume has identical pagination, text, or cited page. Access CATALOG_ONLY. Catalog year for public volume verified, not the Denck early print-year. Scholarly book copyrighted/rights unknown."
+    },
+    {
+      "id": "REF-S43",
+      "documentYear": 1962,
+      "title": "Josef Benzing, Peter Schöffer d. J. zu Worms und seine Drucke (1518–1529), Der Wormsgau 5 (1961–1962), pp108–118: printer-type attribution caution p108 and Hans Denck Widerruff item44 p116",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.worms.de/neu-de-wAssets/docs/bildung-bieten/Stadtarchiv/Wormsgau/Der-Wormsgau-5-1961-1962/Nr.5_bd.5WG_-5.-Band.pdf",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "The official City of Worms facsimile PDF was opened and its actual journal-page screenshots visually inspected: PDF index0 = printed p108 and index8 = printed p116. Benzing's inventory item44 at printed p116 reads Denck, 'H. Dencken wid'ruff', with ESTIMATED date [1528], octavo eight leaves including final blank, gathering a8; bibliography explicitly cites Weller 3763/3764, Zotz item4 and Baring A VII, and lists historical library locations including Worms Stadtbibliothek, Munich and others. This is a later bibliographic dating, NOT an imprint date or an inspected 16th-century title-page date. Zotz p95 places its seven EXTANT leaves under 1529, explicitly saying the last blank is missing; 7 extant versus 8 ideal is structurally compatible but does NOT establish identical edition/setting or prove modern custody. Because Benzing expressly cites Zotz, these 20th-century bibliographies are NOT two independent autoptic primary-print witnesses. On visually inspected p108 Benzing warns that Peter Schöffer and Jakob Schmidt used completely identical types and Lombard initials, so Schöffer attribution by typographic similarity alone is not mechanically unique; this does NOT prove that the Denck tract was printed by Schmidt. Neither a Goeters 1955/1957 page collation nor original historical type-setting cross-comparison was performed. Rights of 1961/62 magazine publication not verified, citation-only; no copyrighted PDF or new images archived. Exact pages visually confirmed, but object only selectively read (PARTIAL_OBJECT); physical-copy ARCHIVE_HOLD, print-date EVIDENCE_HOLD and PUBLICATION_HOLD remain."
     }
   ]
 }
