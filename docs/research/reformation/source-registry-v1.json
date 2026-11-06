@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 119,
+  "sourceCount": 120,
   "sources": [
     {
       "id": "REF-P01",
@@ -2327,7 +2327,7 @@
       ],
       "url": "https://doi.org/10.5169/seals-877832",
       "checkedAt": "2026-11-06",
-      "verificationNote": "Direct academic-journal PDF bibliographic metadata and machine-readable text (Theologische Zeitschrift 64, 2008, issue 2, Ulrich Oelschläger, pp169–198) located. In printed p175, text attributes to Goeters (Ludwig Hätzer, 1955, 137–138) ONLY a possibility: Hätzer may have forwarded Denck's Widerruf to Peter Schöffer in 1528 and printer MAY have printed it early 1529. This is a reported possibility, NOT a new authenticated imprint date. Official BSB catalog for verified VD16 D573 copy reads '[Worms] [Schöffer] [1528]'; do not silently replace catalog estimate by scholarly hypothesis or assert identity of all copies. Full scholarly-page image was not obtained, PDF screenshot attempt failed, original Goeters pp137–138 not acquired, and reuse rights for the 2008 journal image are NOT PDM. RESEARCH_ONLY; hypothesis is a publication-date uncertainty, not evidence against the source's substantive theology."
+      "verificationNote": "Direct academic-journal PDF bibliographic metadata and machine-readable text (Theologische Zeitschrift 64, 2008, issue 2, Ulrich Oelschläger, pp169–198) located. In printed p175, text attributes to Goeters (Ludwig Hätzer, 1955, 137–138) ONLY a possibility: Hätzer may have forwarded Denck's Widerruf to Peter Schöffer in 1528 and printer MAY have printed it early 1529. This is a reported possibility, NOT a new authenticated imprint date. Official BSB catalog for verified VD16 D573 copy reads '[Worms] [Schöffer] [1528]'; do not silently replace catalog estimate by scholarly hypothesis or assert identity of all copies. Full scholarly-page image was not obtained, PDF screenshot attempt failed, original Goeters pp137–138 not acquired, and reuse rights for the 2008 journal image are NOT PDM. RESEARCH_ONLY; hypothesis is a publication-date uncertainty, not evidence against the source's substantive theology. Wave356 publication-year provenance correction (SLUB official REF-S42): 1955 refers to the prior Zurich dissertation of Goeters, while published Bertelsmann book is dated 1957. Oelschläger's cited 1955 pp137–138 are not yet proven identical to published-1957 pp137–138. Distinguish exact referenced edition before assigning text locator."
     },
     {
       "id": "REF-S39",
@@ -2386,6 +2386,25 @@
       "url": "https://www.worms.de/neu-de-wAssets/docs/bildung-bieten/Stadtarchiv/Wormsgau/Der-Wormsgau-1-1926-1933/Nr.13_WG_-1.-Band.pdf",
       "checkedAt": "2026-11-06",
       "verificationNote": "Official City of Worms journal archive attributes article to Elisabeth Zotz (not Zoth) in Der Wormsgau vol.1 issued 1926–1933, printed pp93–100; exact article publication year within that range NOT established. documentYear=1933 is bound-volume TERMINUS AD QUEM, NOT an assertion of issue publication in 1933. Downloadable historical article machine-readable PDF text at printed p95 places item 4 'Dencken widerruff' under heading 1529, gives octavo, 7 leaves (last blank leaf missing), gathering signature a, no printed year or printer, and attribution to Peter Schöffer from comparing types, preceded by introductory notice of newly acquired Worms Stadtbibliothek copies of 'Hans Denk' and 'Hans Denkens Widerruf'. This is a contemporary twentieth-century bibliographic cataloguing judgement and an archival historical holding claim, NOT the 16th-century book's date or proof Worms held a distinct edition, nor evidence this copy remains available today, nor proof of typography identity with BSB VD16 D573. PDF screenshot tool attempted on first 3 pages but returned cache-miss; exact printed page 95 assessed via machine-readable extraction only, so image-level LOCATOR_HOLD and comparison ARCHIVE_HOLD preserved. Modern rights unclear; no PDF bytes stored/distributed. Machine state aligned with repository evidence-policy v2: PARTIAL_OBJECT = OCR text passage only, COARSE_LOCATOR_ONLY even though printed p95 identified because original printed-page screenshot did not render, and RIGHTS_UNKNOWN with restriction to link/reference only."
+    },
+    {
+      "id": "REF-S42",
+      "documentYear": 1957,
+      "title": "SLUB Dresden official holding catalog: J. F. Gerhard Goeters, Ludwig Hätzer (ca. 1500 bis 1529), Spiritualist und Antitrinitarier, Gütersloh: C. Bertelsmann, 1957, 160 pp; dissertation Zurich University 1955",
+      "evidenceClass": "A2",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://katalog.slub-dresden.de/id/0-1072322293",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Official SLUB Dresden holding entry directly checked: Goeters published book Gütersloh Bertelsmann **1957**, in Quellen und Forschungen zur Reformationsgeschichte vol.25, 160pp; catalog separately describes prior University of Zurich dissertation as **1955** ('Vollst. zugl.: Zürich, Univ., Diss., 1955'). Shelfmark Z.4.377-25 and a catalogue status 'Ausleihbar, bitte bestellen' were displayed, but no book pages 137–138 or Zurich dissertation text acquired and no actual order placed. Therefore Oelschläger 2008 references to 'Karlsruhe 1955, 137f' relate to dissertation-year/source identity; cannot assume 1957 printed volume has identical pagination, text, or cited page. Access CATALOG_ONLY. Catalog year for public volume verified, not the Denck early print-year. Scholarly book copyrighted/rights unknown."
     }
   ]
 }
