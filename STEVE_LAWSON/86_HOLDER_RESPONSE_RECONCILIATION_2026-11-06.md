@@ -63,6 +63,23 @@ This is a **material new institutional positive record**, discovered after the s
 
 ---
 
+### 1C. 2026-11-06 decisive catalog-level next locator — **Steven Lawson (Football), 1970**
+
+**New direct university-archive finding aid (not a privately acquired athlete file):** [Texas Tech Southwest Collection / TARO, *Guide to U 193.1 Athletic Media Relations Collection, 1928–2011*](https://txarchives.org/ttusw/finding_aids/20149.xml) explicitly indexes **`Lawson, Steven (Football), 1970` — Box 11, Folder 59**. This is a specific **person-labeled football athlete-file catalog record**. It independently reinforces the archive pathway from the later `Lawson, Steve — 1972` entry in Athletics' cumulative all-time Letterwinners register; the two are not proven to be one individual merely because of overlapping first/last names and context.
+
+The [Texas Tech University's own athletic collections guide](https://resources.swco.ttu.edu/university-archive/ttu-sports.php) says that **collection U 193.1 athlete files as a class** contain original portraits, news clippings, statistics and pre-participation information sheets, and that athlete files absent from this archive may still be retained by the athletics department. **The contents of Box 11/Folder 59 were NOT inspected**, and it is **not** established that this particular folder includes a complete questionnaire, photograph, middle name, jersey, scholarship document, roster or 1972 letter award.
+
+**Calibrated evidentiary ladder:**
+- `EXACT_OFFICIAL_ARCHIVAL_FINDING_AID_LOCATOR = VERIFIED`: collection **U 193.1 / Box 11 / Folder 59**, heading `Lawson, Steven (Football), 1970`.
+- `1970 = ARCHIVAL_CATALOG_DATE`, **not a demonstrated varsity letter, played season, roster slot, or total career length**. Do not conflate the catalog date with the distinct *all-time Letterwinners* **1972** award entry.
+- `IDENTITY_LINK_TO_PREACHER_STEVEN_JAMES_LAWSON = STRONGLY_SUGGESTED_NOT_DOCUMENTARILY_CLOSED`: 1973 Texas Tech `Steven James Lawson` BBA graduation, Texas Tech's 1970 football file for `Steven Lawson`, the 1972 letterwinner for `Steve Lawson`, 1971 University Daily sports reporter staff credit, RTS 2013 football biography and a secondary excerpt attributed to Lawson's 1992 *Men Who Win* collectively form an unusually coherent **convergent identity hypothesis**. They lack one unambiguous shared identifier (middle name, original signed player-card biography, hometown/birth detail, dated roster number linked to a graduation record).
+- `PHYSICAL_FILE_CONTENT_AND_IMAGE = NOT_ACQUIRED`: only online institutional description directly inspected; no private file, photo or reproduction rights obtained.
+- `TARGET_ARCHIVAL_ACTION`: in the **existing Texas Tech reference correspondence**, request preliminary lookup of precisely **Box 11, Folder 59** and compare its personal identifiers with **Steven James Lawson (1973 BBA)** and the **1972 all-time letterwinner**. A single direct file-level name/position/class/career chronology could permit narrowly lifting `IDENTITY_HOLD`, never blanket sportswriter or football scholarship claims.
+
+**Operational receipt:** The existing Texas Tech **unsent Gmail draft** was updated on 2026-11-06 with this exact box/folder and the request for a no-charge preliminary description, not recreated and not sent. No authorization for paid inspection, copies or publishing personal athlete information; no current published article changed, no new V7 trigger. This is a significant **archive-finding upgrade**, not acquisition or direct verification of underlying primary personal records.
+
+---
+
 ### 2. Wheaton Archives & Special Collections — received 2026-10-01
 
 Sender: Emily Banas, Public Services Archivist, Wheaton Archives & Special Collections. Collection **CN 074**, Box **8**, Folders **8-2/8-3**, Arkansas 1989 Crusade scrapbooks.
