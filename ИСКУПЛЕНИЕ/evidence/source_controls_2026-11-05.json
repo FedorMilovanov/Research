@@ -504,6 +504,114 @@
       "commit": "07d7abc09b9f11f31a1833fd68ec1b015802d054",
       "gitBytes": 192321,
       "gitSha256": "72b91d2d8558e1c3eb0c08b4bc8e4712711208567c4a88039380a01601af4e70"
+    },
+    {
+      "path": "docs/research/atonement/01_prokopenko_article_review.md",
+      "commit": "c5c81467b0c57470a308baf97697984c4051dd9b",
+      "gitBytes": 432708,
+      "gitSha256": "d2fb4a4137c21354154d3e5c0ff0c23cb13df5bd6e8867f185e1bb7531722958"
+    },
+    {
+      "path": "docs/research/atonement/06_detailed_refutation_of_prokopenko_arguments.md",
+      "commit": "c5c81467b0c57470a308baf97697984c4051dd9b",
+      "gitBytes": 439079,
+      "gitSha256": "0ca748d1c36cae0b8ed3e040b737a743d56104a1acacda914a064a750d0948a6"
+    },
+    {
+      "path": "docs/research/atonement/17_quote_mining_and_theological_equivocation.md",
+      "commit": "c5c81467b0c57470a308baf97697984c4051dd9b",
+      "gitBytes": 113346,
+      "gitSha256": "17f4241b097b9cc5c67b41486554cba5886f487b2e6d5f8d6106bbf18976c299"
+    },
+    {
+      "path": "docs/research/atonement/23_classical_four_point_calvinists_vs_prokopenko.md",
+      "commit": "c5c81467b0c57470a308baf97697984c4051dd9b",
+      "gitBytes": 62842,
+      "gitSha256": "5cfd45802406dd8a12c4c2a155775198fa89ff7ffa9a7b6cd29a1996643d2466"
+    },
+    {
+      "path": "docs/research/atonement/29_verbatim_primary_textual_clash_macarthur_vs_prokopenko.md",
+      "commit": "c5c81467b0c57470a308baf97697984c4051dd9b",
+      "gitBytes": 23814,
+      "gitSha256": "e81c27c87450987fafdafd79beac2461e04ff1def25796e736787ea4f58ea4c4"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/01_MASTER_RESEARCH_MAP_AND_SERIES_ARCHITECTURE.md",
+      "commit": "c5c81467b0c57470a308baf97697984c4051dd9b",
+      "gitBytes": 22685,
+      "gitSha256": "5c5c4ce2e04e0b241bf301fb0ab4c235147e001be85a24e68fc6067e7302b89a"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md",
+      "commit": "c5c81467b0c57470a308baf97697984c4051dd9b",
+      "gitBytes": 97485,
+      "gitSha256": "0890343fc4e4fd2c091f907f6683f65f5ea5b88190551a3ed28496c6466a4e29"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md",
+      "commit": "c5c81467b0c57470a308baf97697984c4051dd9b",
+      "gitBytes": 149391,
+      "gitSha256": "c3caf1a2b594a7b8667dd92c8f919e4230717ca3bf450b41fa5d8af6c4b5fcf7"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/20_SCHOLARLY_SERIES_AUDIT_AND_RESEARCH_GAPS_2026-11-04.md",
+      "commit": "c5c81467b0c57470a308baf97697984c4051dd9b",
+      "gitBytes": 61610,
+      "gitSha256": "b00bd4228524c26f2ae055278d19cb0c1b45e431e43123b6a98d9ea4d4e214d6"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/01_SERIES_PLAN_AND_ARTICLE_COUNT.md",
+      "commit": "c5c81467b0c57470a308baf97697984c4051dd9b",
+      "gitBytes": 44732,
+      "gitSha256": "a50cf04cecefddc56b87728af0359805fe54948e2eabf5d2a8c766c29c7e57bb"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+      "commit": "c5c81467b0c57470a308baf97697984c4051dd9b",
+      "gitBytes": 62047,
+      "gitSha256": "020f63587336ce91c28f469771ff708b0bf15cbe5b47c9cf7493b2113230142f"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+      "commit": "c5c81467b0c57470a308baf97697984c4051dd9b",
+      "gitBytes": 121123,
+      "gitSha256": "2402a609b480727d347f79203ea01f20211c56dfc9205d2a0feba970c01689d7"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+      "commit": "c5c81467b0c57470a308baf97697984c4051dd9b",
+      "gitBytes": 239680,
+      "gitSha256": "7feeb0921947cfbcfb3ca4ff8fb41707795bab19c025a7d149bb4f7a28c7593f"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
+      "commit": "c5c81467b0c57470a308baf97697984c4051dd9b",
+      "gitBytes": 1292349,
+      "gitSha256": "9bd89864e54686529f1dcbd9c87add90d823947b8a249ba674dcd3a35ce94e7c"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
+      "commit": "c5c81467b0c57470a308baf97697984c4051dd9b",
+      "gitBytes": 392175,
+      "gitSha256": "244d9764a512b6cdf3c1bd96a42a03910952dbd1fe145706c3c456069e17d48c"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+      "commit": "c5c81467b0c57470a308baf97697984c4051dd9b",
+      "gitBytes": 1232031,
+      "gitSha256": "1a2ab1ed3e2341d42a035e9da1675529baf78ba3dd9a92d2a7a4c8b204f7ecfc"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+      "commit": "c5c81467b0c57470a308baf97697984c4051dd9b",
+      "gitBytes": 198187,
+      "gitSha256": "8b118e14d73e6d8fe01023d92e1e6e97997cd713c22d8afcfa0d884cd3830a67"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/09_free-offer-of-the-gospel.md",
+      "commit": "c5c81467b0c57470a308baf97697984c4051dd9b",
+      "gitBytes": 28670,
+      "gitSha256": "f472387f5c63c39a70ad5560983e14bd28255c779752989c5bd7bd0ad66c7ba1"
     }
   ],
   "sources": [
@@ -4915,6 +5023,495 @@
         "ARCHIVE_HOLD",
         "PUBLICATION_HOLD"
       ]
+    },
+    {
+      "id": "judas-owen-display-ix",
+      "url": "https://ccel.org/ccel/owen/display/display.i.xvi.html",
+      "title": "John Owen: Display of Arminianism -\n        Christian Classics Ethereal Library",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "readScope": "Complete authorial chapterIX, digital pp88–100 including notes/table; Pharaoh/Judas named. Remonstrant quotations separated from author. Not whole Display.",
+      "fullWorkRead": false,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/judas-capture-02.json",
+      "captureBytes": 197033,
+      "captureSha256": "ec83bbc1caf51b01c7238580068257d976c1eb5ec5aa4be97da13c39fd517578",
+      "captureJsonPointer": "/results/0/text",
+      "captureTextUtf8Bytes": 36827,
+      "captureTextSha256": "279aade1ecd58d775c2b13e4dec82e23b708895a7f47acd20032b3e39d97a0ce",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "completeAuthorialChapterRead": true
+    },
+    {
+      "id": "judas-spurgeon-warrant",
+      "url": "https://www.spurgeon.org/sermons/the-warrant-of-faith",
+      "title": "The Warrant of Faith | The Spurgeon Library",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "readScope": "Complete sermon main text, 20September1863; actual missionary address and warrant, not all Puritan originals quoted.",
+      "fullWorkRead": true,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/judas-capture-02.json",
+      "captureBytes": 197033,
+      "captureSha256": "ec83bbc1caf51b01c7238580068257d976c1eb5ec5aa4be97da13c39fd517578",
+      "captureJsonPointer": "/results/1/text",
+      "captureTextUtf8Bytes": 41397,
+      "captureTextSha256": "6dbe4555886e879a9946673992997e262e07a1645f771618e8da97b74e034b2f",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "judas-piper-session7-2008",
+      "url": "https://www.desiringgod.org/messages/limited-atonement-session-7",
+      "title": "Limited Atonement",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "Complete authorial Session7 main transcript; common conditional saving aspect plus special purchase of faith; not whole seminar or all lifetime positions.",
+      "fullWorkRead": true,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/judas-capture-02.json",
+      "captureBytes": 197033,
+      "captureSha256": "ec83bbc1caf51b01c7238580068257d976c1eb5ec5aa4be97da13c39fd517578",
+      "captureJsonPointer": "/results/2/text",
+      "captureTextUtf8Bytes": 32998,
+      "captureTextSha256": "f249fd78b5576f6a81935587503d645b9d32ada6f2ec25a1ca51c1a9fa560903",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "judas-riccardi-sermon-jan2022",
+      "url": "https://www.thegracelifepulpit.com/sermons.aspx?code=2022-01-16-MR",
+      "title": "O Perfect Redemption! A Re-Introduction (Mike Riccardi)",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "Complete authorial main sermon transcript, 16January2022; opponent conditional formulation separated from own view; audio not audited.",
+      "fullWorkRead": true,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/judas-capture-01.json",
+      "captureBytes": 85392,
+      "captureSha256": "a4e1a5932c139331f07f90c066b84d0366c3bc693ca449c8b9532e3f18ca7dc6",
+      "captureJsonPointer": "/results/2/text",
+      "captureTextUtf8Bytes": 41205,
+      "captureTextSha256": "039cc5a56b729c2de9239f19a5a433c22989becde2db70cbdd76ed85d78cc698",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "judas-beeke2009-article",
+      "url": "https://banneroftruth.org/us/resources/articles/2009/defending-definite-atonement/",
+      "title": "Defending Definite Atonement",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "Complete main article plus notes, excluding ads/navigation; article by JoelBeeke, uploader metadata not treated as author. Original quotations via Spurgeon/Nicole/Symington separately scoped.",
+      "fullWorkRead": true,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/judas-capture-01.json",
+      "captureBytes": 85392,
+      "captureSha256": "a4e1a5932c139331f07f90c066b84d0366c3bc693ca449c8b9532e3f18ca7dc6",
+      "captureJsonPointer": "/results/0/text",
+      "captureTextUtf8Bytes": 20630,
+      "captureTextSha256": "db22076e9050764372ab0813fb7f0858d1699d58e01657df6e50987c7dec5b7c",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "judas-beeke2009-attribution",
+      "url": "https://banneroftruth.org/us/resource-author/beeke-dr-joel/",
+      "title": "Joel Beeke Archives",
+      "evidenceClass": "A2",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "Publisher author-index entry DefendingDefiniteAtonement, AuthorJoelBeeke,22December2009; selected entry, not full archive read.",
+      "fullWorkRead": false,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/judas-capture-08.json",
+      "captureBytes": 19071,
+      "captureSha256": "c5c6dc7943817f7f192408a554d5781caebab5c18980123588fa5fe113347441",
+      "captureJsonPointer": "/results/1/text",
+      "captureTextUtf8Bytes": 11825,
+      "captureTextSha256": "69f8878c90a12540efa3d62336b515b3f61a42539082ebc26f83ed765d07c551",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "judas-packer-pastoral",
+      "url": "https://www.monergism.com/thethreshold/sdg/packer_deathintro.html",
+      "title": "Packer - Death of Death Introduction",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "Selected continuous pastoral section approx characters39500–63000 and subsequent sectionIII/conclusion to end; first39500 characters not newly read. Full extraction received, not whole introduction read.",
+      "fullWorkRead": false,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/judas-capture-03.json",
+      "captureBytes": 139096,
+      "captureSha256": "bf2e8c976f830399fcb85ad4bf0ac484f3d8adda54022f802261af93cfc59492",
+      "captureJsonPointer": "/results/0/text",
+      "captureTextUtf8Bytes": 68837,
+      "captureTextSha256": "e9336593dc847204e7d73d9fc1e512183919dd8bc38d2837b956a003d9052c8a",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "judas-wesley-freegrace",
+      "url": "https://wesley.nnu.edu/john-wesley/the-sermons-of-john-wesley-1872-edition/sermon-128-free-grace/",
+      "title": "The Wesley Center Online: Sermon 128 - Free Grace",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "readScope": "Complete authorial sermon §§1–30 in digital1872edition including preface/header; received header Bristol1740, no independent first-publication dating claimed.",
+      "fullWorkRead": true,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/judas-capture-03.json",
+      "captureBytes": 139096,
+      "captureSha256": "bf2e8c976f830399fcb85ad4bf0ac484f3d8adda54022f802261af93cfc59492",
+      "captureJsonPointer": "/results/2/text",
+      "captureTextUtf8Bytes": 32583,
+      "captureTextSha256": "adc7a72c81459f22a2f4e6fcec3b4d297d2c97588ecade2b211e91615c842293",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "judas-augustine-psalm69-english",
+      "url": "https://www.newadvent.org/fathers/1801069.htm",
+      "title": "CHURCH FATHERS: Exposition on Psalm 69 (Augustine)",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "readScope": "English §27 and immediate context; merged numbering Psalm69 corresponds LatinPs68sermoII.11. Not whole psalm commentary read.",
+      "fullWorkRead": false,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/judas-capture-05.json",
+      "captureBytes": 176053,
+      "captureSha256": "da4e59b74a8770596b48d124b15b80e981f862f7125f5c13df1a1545ebbbeca8",
+      "captureJsonPointer": "/results/1/text",
+      "captureTextUtf8Bytes": 63296,
+      "captureTextSha256": "c89414cea612cbb286c1ba4a256df38b6c76c5f28c8538dfb12c380ae700bcaf",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "judas-augustine-psalm68-latin",
+      "url": "https://www.clerus.org/bibliaclerusonline/IT/dk4.htm",
+      "title": "Aug. in Psalmos enar. 68",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "readScope": "Latin §11 on verse27 in sermoII, Judas/redemptuserat and context; opening and embedded heading establish second sermon. Not all psalm read.",
+      "fullWorkRead": false,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/judas-capture-09.json",
+      "captureBytes": 82033,
+      "captureSha256": "d3f6960275604e1d6ebc9a1fac3f79964f0f7ce9daa05266a67d6f42c1bda4c6",
+      "captureJsonPointer": "/results/0/text",
+      "captureTextUtf8Bytes": 34018,
+      "captureTextSha256": "1fb24d361d1f9058c3b6618d42d6d5fd9c085ee718f7a2543cdb73895c04300b",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "judas-augustine-john48",
+      "url": "https://www.newadvent.org/fathers/1701048.htm",
+      "title": "CHURCH FATHERS: Tractates on the Gospel of John (Augustine)",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "readScope": "Tractate48 §§4–6 and surrounding opening: notwonbypriceofblood TOETERNALLIFE. Not whole tractate read.",
+      "fullWorkRead": false,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/judas-capture-06.json",
+      "captureBytes": 166843,
+      "captureSha256": "c905d21a4fcadad15bf9ae143a3b8360a87e304e7d53511ff0b209b6de3170ac",
+      "captureJsonPointer": "/results/1/text",
+      "captureTextUtf8Bytes": 18871,
+      "captureTextSha256": "a1afa397d8cdb9cd62d84d82ca2cb693ba3b739ff1f2b4578d14db0642d75e25",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "judas-owen-justification-faith",
+      "url": "https://www.ccel.org/ccel/o/owen/just/cache/just.txt",
+      "title": null,
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "readScope": "Selected coherent passage characters257500–269000 on justifying faith and assurance, plus earlier overlapping passage. Entire1492261charbook received, not whole book or formal-justification chapter read.",
+      "fullWorkRead": false,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/judas-capture-04.json",
+      "captureBytes": 1580941,
+      "captureSha256": "372c31da63bba57beee070b70373d3c6b0a1f4e3cd313385d898b6c5107abe07",
+      "captureJsonPointer": "/results/3/text",
+      "captureTextUtf8Bytes": 1492733,
+      "captureTextSha256": "5b997c7db4d387f5b09ade6aabded24206a9ae156525332d88b3c4cf1f564ec3",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "judas-owen-death-iv1-offer",
+      "url": "https://www.monergism.com/thethreshold/sdg/owen_deathbk4.html",
+      "title": "Owen - THE DEATH OF DEATH IN THE DEATH OF CHRIST",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "readScope": "New selected continuous BookIVchapterI paragraphs9–10, chars52000–61200: general tender, faithsteps, sufficientobject; not whole BookIV read in this wave.",
+      "fullWorkRead": false,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/fullscope1-capture.json",
+      "captureBytes": 418968,
+      "captureSha256": "e83599b65398166ebd4ebb29d23e9b7da0a70a79e923911c494fa1f962557d6d",
+      "captureJsonPointer": "/results/3/text",
+      "captureTextUtf8Bytes": 315084,
+      "captureTextSha256": "e786590157a73fe23d0cfafe4cab4871ec206cb928b10907c5e32410aea5bbdb",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "judas-gower-preface-attribution",
+      "url": "https://www.ccel.org/ccel/o/owen/deathofdeath/cache/deathofdeath.txt",
+      "title": null,
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "readScope": "Selected first attestation approx chars28500–34500, signatureStanleyGower at close of Judas/Cain paragraph; adjoining secondattestation not fully read or assigned to guessed author.",
+      "fullWorkRead": false,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-14.json",
+      "captureBytes": 2831249,
+      "captureSha256": "4224ee75461289a8c45f8f4aa83232f99e9c7201e760f6cc3f0a4d4f14e2cde5",
+      "captureJsonPointer": "/results/0/text",
+      "captureTextUtf8Bytes": 2779122,
+      "captureTextSha256": "971b1b9501d3cea8f04b8b58156529d146639175a0499cd8a2607f1c252c9ff9",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "judas-davenant-peterjudas",
+      "url": "https://archive.org/download/expositionofepis02dave/expositionofepis02dave_djvu.txt",
+      "title": null,
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "readScope": "Continuous objections/replies14–16, printed392–398, OCRchars533650–548200; conditionalcommonordinance and specialfaith, limits minister promises. Not whole treatise/Lynchbook read.",
+      "fullWorkRead": false,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/fullscope8-capture.json",
+      "captureBytes": 1589245,
+      "captureSha256": "6458f9d09a6149bb50c3cd3dd025434c8feaf2387521118633733db0917820c4",
+      "captureJsonPointer": "/results/1/text",
+      "captureTextUtf8Bytes": 922308,
+      "captureTextSha256": "ed4ee9d31ba664d00f7b6ea0f57f0edfc21da6b01ca23cfcd86c180f7237c6a4",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "judas-clark-lynch-review",
+      "url": "https://northamanglican.com/book-review-john-davenants-hypothetical-universalism/",
+      "title": "Book Review: \"John Davenant's Hypothetical Universalism\" | The North American Anglican",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "readScope": "Complete review main text by JamesClark; reviewer ownvoice A1, transferred claims about Davenant/Lynch B1 until independent primary place; not RScottClark or Lynchbook.",
+      "fullWorkRead": true,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/judas-capture-01.json",
+      "captureBytes": 85392,
+      "captureSha256": "a4e1a5932c139331f07f90c066b84d0366c3bc693ca449c8b9532e3f18ca7dc6",
+      "captureJsonPointer": "/results/1/text",
+      "captureTextUtf8Bytes": 7055,
+      "captureTextSha256": "e0991ef0f791043ca2837b7dd2980076189dc3a9585a8bb6c6b686d700b6d84c",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "judas-greek-acts13",
+      "url": "https://biblehub.com/nestle/acts/13.htm",
+      "title": "ΠΡΑΞΕΙΣ ΑΠΟΣΤΟΛΩΝ 13 Nestle 1904",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "readScope": "Acts13:26–52, proclamation/faith/warning and appointed-believers context",
+      "fullWorkRead": false,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/judas-capture-07.json",
+      "captureBytes": 30691,
+      "captureSha256": "6af3ed581c547a17795da07f8e4643a2377e3023ae3821e297302791fe37eeb3",
+      "captureJsonPointer": "/results/2/text",
+      "captureTextUtf8Bytes": 11704,
+      "captureTextSha256": "1e41552164dbadebe0b3a30385d16ffe1f2562211db400da5e1cc30861b29d7b",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "judas-greek-1cor15",
+      "url": "https://biblehub.com/nestle/1_corinthians/15.htm",
+      "title": "ΠΡΟΣ ΚΟΡΙΝΘΙΟΥΣ Α΄ 15 Nestle 1904",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "readScope": "1Cor15:1–11 including our/receivedgospel; no criticalapparatus",
+      "fullWorkRead": false,
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/judas-capture-07.json",
+      "captureBytes": 30691,
+      "captureSha256": "6af3ed581c547a17795da07f8e4643a2377e3023ae3821e297302791fe37eeb3",
+      "captureJsonPointer": "/results/3/text",
+      "captureTextUtf8Bytes": 10270,
+      "captureTextSha256": "4d0476240867175d96006f30228f1ba0bafe472435529d9ad9d06442af75f6f6",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "judas-hodge-question-544546",
+      "url": "https://ccel.org/ccel/hodge/theology2/theology2.iv.viii.i.html",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "fullWorkRead": false,
+      "readScope": "Complete authorial section1, printed544–546; navigation excluded; not fullvolume or fullchapter.",
+      "originalObjectBytesVerified": false,
+      "externalCacheRelativePath": "sources/hodge-question.txt",
+      "bytes": 8330,
+      "sha256": "43c7493c6f31ae4b0aae0cee464fb5e310d9d37f214546e9eca6926e9b973f3e",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "judas-owen23-original-ocr",
+      "url": "https://ia801502.us.archive.org/16/items/worksofjohnowend0023owen/worksofjohnowend0023owen_djvu.txt",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "externalCacheRelativePath": "sources/judas-owen23-text-direct.txt",
+      "bytes": 1766054,
+      "sha256": "9828a1ac916fcaf092b5e146d750890071ab3d2f566549033c6f56fa95143ca5",
+      "fullWorkRead": false,
+      "originalObjectBytesVerified": true,
+      "facsimileVerified": false,
+      "readScope": "Full raw OCR received, selected printed543–548 read and collated with all6pageimages; entire volume not read.",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "judas-owen23-scandata",
+      "url": "https://archive.org/download/worksofjohnowend0023owen/worksofjohnowend0023owen_scandata.xml",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "externalCacheRelativePath": "sources/judas-owen23-pages.xml",
+      "bytes": 648540,
+      "sha256": "4c955f41690b2141f082017783d2cc8cfefc5ad8609774bbd4596c5a227a4127",
+      "fullWorkRead": false,
+      "originalObjectBytesVerified": true,
+      "readScope": "Titleleaf5 and printed543–548 map to leaves549–554; machinepage-map verified against7images; no totalvolume reading claimed.",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ]
     }
   ],
   "scans": [
@@ -5872,6 +6469,160 @@
       "fullWorkRead": false,
       "archiveId": "wholeworkswithli12usshuoft",
       "leaf": 5
+    },
+    {
+      "url": "https://iiif.archive.org/iiif/worksofjohnowend0023owen$5/full/1500,/0/default.jpg",
+      "printedPage": "title",
+      "externalCacheRelativePath": "sources/judas-owen23-title.jpg",
+      "bytes": 328467,
+      "sha256": "f0b942193270a19132816c2bc519d0f3409e53b015435f8fa0e17668650eabe3",
+      "leaf": 5,
+      "id": "judas-owen23-title",
+      "visuallyInspected": true,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "readScope": "Physical title volXXIII M.DCCC.LV=1855",
+      "fullWorkRead": false,
+      "archiveId": "worksofjohnowend0023owen",
+      "editionYear": 1855
+    },
+    {
+      "url": "https://iiif.archive.org/iiif/worksofjohnowend0023owen$549/full/1500,/0/default.jpg",
+      "printedPage": "543",
+      "externalCacheRelativePath": "sources/judas-owen23-543.jpg",
+      "bytes": 688903,
+      "sha256": "891557f55683eddf0f11c482ef1dbbf76daaaf3bc610931035142b0d5d90560b",
+      "leaf": 549,
+      "id": "judas-owen23-543",
+      "visuallyInspected": true,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "readScope": "Complete printedpage 543 read visually; Hebrews10:29context",
+      "fullWorkRead": false,
+      "archiveId": "worksofjohnowend0023owen",
+      "editionYear": 1855
+    },
+    {
+      "url": "https://iiif.archive.org/iiif/worksofjohnowend0023owen$550/full/1500,/0/default.jpg",
+      "printedPage": "544",
+      "externalCacheRelativePath": "sources/judas-owen23-544.jpg",
+      "bytes": 628466,
+      "sha256": "c3ae028cf1981aa207ad0389e22501a9ea938e0e894eda9780e2b2da7e007985",
+      "leaf": 550,
+      "id": "judas-owen23-544",
+      "visuallyInspected": true,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "readScope": "Complete printedpage 544 read visually; Hebrews10:29context",
+      "fullWorkRead": false,
+      "archiveId": "worksofjohnowend0023owen",
+      "editionYear": 1855
+    },
+    {
+      "url": "https://iiif.archive.org/iiif/worksofjohnowend0023owen$551/full/1500,/0/default.jpg",
+      "printedPage": "545",
+      "externalCacheRelativePath": "sources/judas-owen23-545.jpg",
+      "bytes": 679412,
+      "sha256": "42f2d70a06b0732abad359c70a445a2836b142e997adeb57b999811c92879c5e",
+      "leaf": 551,
+      "id": "judas-owen23-545",
+      "visuallyInspected": true,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "readScope": "Complete printedpage 545 read visually; Hebrews10:29context",
+      "fullWorkRead": false,
+      "archiveId": "worksofjohnowend0023owen",
+      "editionYear": 1855
+    },
+    {
+      "url": "https://iiif.archive.org/iiif/worksofjohnowend0023owen$552/full/1500,/0/default.jpg",
+      "printedPage": "546",
+      "externalCacheRelativePath": "sources/judas-owen23-546.jpg",
+      "bytes": 707664,
+      "sha256": "cae9c2bace86bf38948715f73000a0b2f433d9bbbd7abb5685d6963fe2867def",
+      "leaf": 552,
+      "id": "judas-owen23-546",
+      "visuallyInspected": true,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "readScope": "Complete printedpage 546 read visually; Hebrews10:29context",
+      "fullWorkRead": false,
+      "archiveId": "worksofjohnowend0023owen",
+      "editionYear": 1855
+    },
+    {
+      "url": "https://iiif.archive.org/iiif/worksofjohnowend0023owen$553/full/1500,/0/default.jpg",
+      "printedPage": "547",
+      "externalCacheRelativePath": "sources/judas-owen23-547.jpg",
+      "bytes": 648651,
+      "sha256": "419447ed4f844a63a7e8c7b53d9d4dfc611f5c20da721a30966aeb8a51ec00e9",
+      "leaf": 553,
+      "id": "judas-owen23-547",
+      "visuallyInspected": true,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "readScope": "Complete printedpage 547 read visually; Hebrews10:29context",
+      "fullWorkRead": false,
+      "archiveId": "worksofjohnowend0023owen",
+      "editionYear": 1855
+    },
+    {
+      "url": "https://iiif.archive.org/iiif/worksofjohnowend0023owen$554/full/1500,/0/default.jpg",
+      "printedPage": "548",
+      "externalCacheRelativePath": "sources/judas-owen23-548.jpg",
+      "bytes": 659267,
+      "sha256": "d51e68243e3c032bdc3525ca9aa86b5a48387950a64db8264ec1a906ebe9c4d4",
+      "leaf": 554,
+      "id": "judas-owen23-548",
+      "visuallyInspected": true,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "readScope": "Complete printedpage 548 read visually; Hebrews10:29context",
+      "fullWorkRead": false,
+      "archiveId": "worksofjohnowend0023owen",
+      "editionYear": 1855
     }
   ],
   "argumentIds": [
@@ -8325,5 +9076,139 @@
       "Greek Nestle1904/TR1550 comparisons do not close complete manuscript apparatus or Luke22variants.",
       "Continental additions SYS35–39 remain acquisition leads; three Heritage pages bot-blocked, no claims of reading their books or exact relevant chapters."
     ]
+  },
+  "judasPreachingContinuation20261106": {
+    "reviewedAt": "2026-11-06T03:27:15Z",
+    "baselineCommit": "c5c81467b0c57470a308baf97697984c4051dd9b",
+    "baseMainCommit": "c5599525570f80abe7cf0ae72a91e706a24dc7e3",
+    "sourcesAdded": [
+      "judas-owen-display-ix",
+      "judas-spurgeon-warrant",
+      "judas-piper-session7-2008",
+      "judas-riccardi-sermon-jan2022",
+      "judas-beeke2009-article",
+      "judas-beeke2009-attribution",
+      "judas-packer-pastoral",
+      "judas-wesley-freegrace",
+      "judas-augustine-psalm69-english",
+      "judas-augustine-psalm68-latin",
+      "judas-augustine-john48",
+      "judas-owen-justification-faith",
+      "judas-owen-death-iv1-offer",
+      "judas-gower-preface-attribution",
+      "judas-davenant-peterjudas",
+      "judas-clark-lynch-review",
+      "judas-greek-acts13",
+      "judas-greek-1cor15",
+      "judas-hodge-question-544546",
+      "judas-owen23-original-ocr",
+      "judas-owen23-scandata"
+    ],
+    "scanIds": [
+      "judas-owen23-title",
+      "judas-owen23-543",
+      "judas-owen23-544",
+      "judas-owen23-545",
+      "judas-owen23-546",
+      "judas-owen23-547",
+      "judas-owen23-548"
+    ],
+    "owners": {
+      "comparison": "docs/research/atonement/17_quote_mining_and_theological_equivocation.md",
+      "readerArticle": "ИСКУПЛЕНИЕ/synthesis/drafts/09_free-offer-of-the-gospel.md",
+      "hardTexts": "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md",
+      "plan": "ИСКУПЛЕНИЕ/synthesis/01_SERIES_PLAN_AND_ARTICLE_COUNT.md",
+      "queue": "ИСКУПЛЕНИЕ/05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md",
+      "status": "ИСКУПЛЕНИЕ/20_SCHOLARLY_SERIES_AUDIT_AND_RESEARCH_GAPS_2026-11-04.md"
+    },
+    "sourceRecordsBefore": 186,
+    "scanRecordsBefore": 45,
+    "preimageRecordsBefore": 81,
+    "comparisonProfiles": 18,
+    "comparisonSections": "15–27",
+    "readerRouteArticle": 17,
+    "workingReaderArticles": 18,
+    "existingDrafts": 13,
+    "libraryGroups": 99,
+    "allSystematicsRead": false,
+    "allBibliographicOriginalsCollated": false,
+    "actualProkopenkoNamedJudasQuoteFound": false,
+    "purchasedFaithMentionInProkopenkoRetained": true,
+    "lateOwenPrintedYearVerified": 1855,
+    "lateOwen1854EditionCollated": false,
+    "lateOwenPagesRead": [
+      "543",
+      "544",
+      "545",
+      "546",
+      "547",
+      "548"
+    ],
+    "lateOwenAllowsExternalSanctificationAndPrefersChrist": true,
+    "davenantOwnPeterJudasPagesRead": [
+      "392",
+      "393",
+      "394",
+      "395",
+      "396",
+      "397",
+      "398"
+    ],
+    "piper2008CommonConditionalAspectAndSpecialFaith": true,
+    "spurgeonActualMissionaryOurSinsAddress": true,
+    "augustineJudasLatinComparedWithTranslation": true,
+    "actualNewPublishedProkopenkoReplyEstablished": false,
+    "C25": "OPEN",
+    "historicalBodiesPreserved": {
+      "ИСКУПЛЕНИЕ/synthesis/drafts/09_free-offer-of-the-gospel.md": "## HISTORICAL — черновик 09 до проверки проповеди и Иуды 2026-11-06"
+    },
+    "acquisitionLimits": [
+      "TinyFish Augustine framed indexes returned frame shells; no doctrinal use; Latin original found by subsequent search and fetched fromClerus.",
+      "Wrong Archiveidentifier returnedempty; publiccorrectidentifier obtained. CanonicalOCRtimedout; observedpublicIAhost subsequently returned rawOCR; no accessbarrier bypass.",
+      "Owen1855printing obtained, separately cited1854printing not collated. WholeHebrewsvolume not read.",
+      "Packer pastoralportion and chapterIII/conclusion read; first39500characters not newly read.",
+      "Complete digital OwenJustification received; only specified faith passage read. Full formaljustificationchapter not newly read.",
+      "JamesClark review is independent reviewervoice; not wholeLynchmonograph.",
+      "Ussher/AAHodge/Dabney/Ware/Shultz profiles retain previously scoped primary readings; no newly found namedJudasquote or invented sermon.",
+      "All99librarygroups and other inaccessible modernbooks remain per queue; no doctrinalclosure or publicationrelease."
+    ],
+    "verification": {
+      "status": "PASS",
+      "oldSourceRecordsPreserved": 186,
+      "oldScansPreserved": 45,
+      "oldPreimagesPreserved": 81,
+      "newScopedSourcesVerified": 21,
+      "newScansVerified": 7,
+      "gitPinsVerified": 99,
+      "exactHistoricalBodies": 6,
+      "authorProfiles": 18,
+      "libraryGroups": 99,
+      "workingReaderArticles": 18,
+      "actualDraftFiles": 13,
+      "newReaderArticleBytes": 37522,
+      "unchangedMainStudySections": [
+        35,
+        59
+      ],
+      "unchangedArgumentNodes": 182,
+      "scopePaths": 18,
+      "repositoryValidatorsChanged": false,
+      "verifiedAtUtc": "2026-11-06T03:49:35.376243+00:00",
+      "sourceSync": "PASS",
+      "crossReferences": "PASS:80",
+      "claimRegister": "PASS:968",
+      "claimCrossCheck": "PASS",
+      "corpusIntegrity": "PASS",
+      "reshootState": "PASS",
+      "regressionTestsPassed": 184,
+      "regressionSeconds": 364.037,
+      "diffWhitespace": "PASS",
+      "allSystematicsRead": false,
+      "allBibliographicOriginalsCollated": false,
+      "localRegressionScope": "After final doctrinal assessment; followed only by reverting unverified Puritan given names in acquisition queue and writing verification receipts. Exact pushed head is separately checked by repository CI.",
+      "bibliographicNameReview": "Queue follows actual Spurgeon digital text: Baxter/Alleyne/Rogers of Dedham/Shepherd/Thomas Hooker. No unverified given-name attribution to Richard Rogers retained."
+    },
+    "universalPriceNotAutomaticallyIdenticalToFinalPenalty": true,
+    "prokopenkoPages31And36Distinction": "Page31 assigns actual penal substitution to elect; page36 universalprice requires further juridical explanation. Named Judas and identicalfinalpenalty are not attributed as direct PDF statements."
   }
 }
