@@ -167,7 +167,37 @@ class ActualSynchronizationTests(unittest.TestCase):
         errors, summary = check(ROOT, self.report, self.control)
         self.assertEqual(errors, [])
         self.assertEqual(summary["markedCitations"], self.report["markedCitationCount"])
-        self.assertEqual(summary["drafts"], 13)
+        # The 2026-11-02 evidence still records its historical 13-draft scope.
+        # New drafts require a separately declared, byte-pinned addition.
+        self.assertEqual(self.report["draftCount"], 13)
+        additions = self.report.get("postReviewDrafts", [])
+        self.assertEqual(summary["drafts"], self.report["draftCount"] + len(additions))
+        self.assertEqual(
+            {r["path"] for r in additions},
+            {"ИСКУПЛЕНИЕ/synthesis/drafts/article08_particular_redemption_positive_case.md"},
+        )
+
+    def test_post_review_draft_manifest_fails_closed(self):
+        additions = self.report.get("postReviewDrafts", [])
+        self.assertEqual(len(additions), 1)
+        for case, replacement in (
+            ("missing-declaration", []),
+            ("incorrect-sha256", [{**additions[0], "sha256": "0" * 64}]),
+            ("publication-authorized", [{**additions[0], "publicationEligible": True}]),
+        ):
+            with self.subTest(case=case):
+                bad_report = {**self.report, "postReviewDrafts": replacement}
+                errors, _ = check(ROOT, bad_report, self.control)
+                self.assertTrue(errors, f"{case} unexpectedly passed")
+                self.assertTrue(
+                    any(
+                        "draft inventory differs" in e
+                        or "post-review draft bytes differ" in e
+                        or "post-review draft must remain unpublished" in e
+                        for e in errors
+                    ),
+                    errors,
+                )
 
     def test_each_refuted_greek_claim_cannot_be_restored(self):
         for row in self.report["repairs"]:
