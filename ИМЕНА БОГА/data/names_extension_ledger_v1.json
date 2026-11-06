@@ -1,0 +1,415 @@
+{
+  "schemaVersion": 1,
+  "corpusId": "NAMES_OF_GOD_EXTENSION",
+  "createdAt": "2026-11-07",
+  "researchAuthority": "../00_README_AND_NAVIGATION.md",
+  "evidencePolicy": "../../data/repository-evidence-policy-v2.json",
+  "relationshipToBaseline": "Research-side additive queue; never mutate baseline historical 29 count",
+  "description": "13 distinct, independently traced candidate expressions. A single digitally identified verse form is not a completed lexical or textual-critical study.",
+  "counts": {
+    "candidates": 13,
+    "promotedToBaseline": 0,
+    "criticalCollations": 0,
+    "publicationEligible": 0
+  },
+  "records": [
+    {
+      "id": "yah",
+      "ordinal": 1,
+      "editorialLabel": "Ях / Йах",
+      "language": "hebrew",
+      "verifiedDigitalForm": "יָהּ",
+      "verseLocator": "Exodus 15:2",
+      "sourceEdition": "Mechon-Mamre MT online transcription",
+      "sourceUrl": "https://mechon-mamre.org/p/pt/pt0215.htm",
+      "category": "abbreviated_divine_name",
+      "editorialCaution": "Краткая форма божественного имени, отдельно от тетраграмматона. См. повтор во Пс. 68:5 (еврейская нумерация).",
+      "relatedBaselineIds": [
+        "yhwh"
+      ],
+      "relationshipType": "thematic_or_textual_cross_reference_not_etymology",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "digitalFormStatus": "ONE_VERSE_DIGITAL_SURFACE_CHECKED",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "etymologyStatus": "NOT_RESOLVED",
+      "note": "Additional research candidate, not part of Arena original 29, not Product-ready."
+    },
+    {
+      "id": "eloah",
+      "ordinal": 2,
+      "editorialLabel": "Элоах",
+      "language": "hebrew",
+      "verifiedDigitalForm": "אֱלוֹהַּ",
+      "verseLocator": "Deuteronomy 32:15",
+      "sourceEdition": "Mechon-Mamre MT online transcription",
+      "sourceUrl": "https://mechon-mamre.org/p/pt/pt0532.htm",
+      "category": "deity_designation",
+      "editorialCaution": "Форма существительного God; историческая деривация от אל/אלהים неоднозначна, её не выводить только из сходства.",
+      "relatedBaselineIds": [
+        "elohim",
+        "el"
+      ],
+      "relationshipType": "thematic_or_textual_cross_reference_not_etymology",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "digitalFormStatus": "ONE_VERSE_DIGITAL_SURFACE_CHECKED",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "etymologyStatus": "NOT_RESOLVED",
+      "note": "Additional research candidate, not part of Arena original 29, not Product-ready."
+    },
+    {
+      "id": "elah-shmaya",
+      "ordinal": 3,
+      "editorialLabel": "Элах Шемайя / Бог Небес",
+      "language": "aramaic",
+      "verifiedDigitalForm": "אֱלָהּ שְׁמַיָּא",
+      "verseLocator": "Daniel 2:18",
+      "sourceEdition": "Mechon-Mamre MT online transcription",
+      "sourceUrl": "https://mechon-mamre.org/p/pt/pt3402.htm",
+      "category": "aramaic_divine_title",
+      "editorialCaution": "Арамейское обозначение. Не вставлять автоматически в еврейский словарь без языковой пометы.",
+      "relatedBaselineIds": [
+        "atiq-yomin"
+      ],
+      "relationshipType": "thematic_or_textual_cross_reference_not_etymology",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "digitalFormStatus": "ONE_VERSE_DIGITAL_SURFACE_CHECKED",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "etymologyStatus": "NOT_RESOLVED",
+      "note": "Additional research candidate, not part of Arena original 29, not Product-ready."
+    },
+    {
+      "id": "el-hay",
+      "ordinal": 4,
+      "editorialLabel": "Бог живой",
+      "language": "hebrew",
+      "verifiedDigitalForm": "לְאֵל חָי",
+      "verseLocator": "Psalm 42:3 (Hebrew numbering; English 42:2)",
+      "sourceEdition": "Mechon-Mamre MT online transcription",
+      "sourceUrl": "https://mechon-mamre.org/p/pt/pt2642.htm",
+      "category": "divine_epithet_in_prayer",
+      "editorialCaution": "Форма в стихе с предлогом לְ; при цитировании нельзя молча выдавать לְאֵל за אֵל.",
+      "relatedBaselineIds": [
+        "el"
+      ],
+      "relationshipType": "thematic_or_textual_cross_reference_not_etymology",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "digitalFormStatus": "ONE_VERSE_DIGITAL_SURFACE_CHECKED",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "etymologyStatus": "NOT_RESOLVED",
+      "note": "Additional research candidate, not part of Arena original 29, not Product-ready."
+    },
+    {
+      "id": "avinu",
+      "ordinal": 5,
+      "editorialLabel": "Отец наш",
+      "language": "hebrew",
+      "verifiedDigitalForm": "אַתָּה יְהוָה אָבִינוּ",
+      "verseLocator": "Isaiah 63:16",
+      "sourceEdition": "Mechon-Mamre MT online transcription",
+      "sourceUrl": "https://mechon-mamre.org/p/pt/pt1063.htm",
+      "category": "covenantal_address_to_god",
+      "editorialCaution": "Полная синтаксическая конструкция с прямым обращением. Именование Отцом засвидетельствовано в ВЗ задолго до новозаветного Авва.",
+      "relatedBaselineIds": [
+        "abba",
+        "yhwh"
+      ],
+      "relationshipType": "thematic_or_textual_cross_reference_not_etymology",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "digitalFormStatus": "ONE_VERSE_DIGITAL_SURFACE_CHECKED",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "etymologyStatus": "NOT_RESOLVED",
+      "note": "Additional research candidate, not part of Arena original 29, not Product-ready."
+    },
+    {
+      "id": "yhwh-ori",
+      "ordinal": 6,
+      "editorialLabel": "ЯХВЕ — свет мой",
+      "language": "hebrew",
+      "verifiedDigitalForm": "יְהוָה אוֹרִי וְיִשְׁעִי",
+      "verseLocator": "Psalm 27:1",
+      "sourceEdition": "Mechon-Mamre MT online transcription",
+      "sourceUrl": "https://mechon-mamre.org/p/pt/pt2627.htm",
+      "category": "poetic_predication",
+      "editorialCaution": "Не превращать два образных предиката в самостоятельное имя «ЯХВЕ-Ори».",
+      "relatedBaselineIds": [
+        "yhwh",
+        "ro-i"
+      ],
+      "relationshipType": "thematic_or_textual_cross_reference_not_etymology",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "digitalFormStatus": "ONE_VERSE_DIGITAL_SURFACE_CHECKED",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "etymologyStatus": "NOT_RESOLVED",
+      "note": "Additional research candidate, not part of Arena original 29, not Product-ready."
+    },
+    {
+      "id": "el-emunah",
+      "ordinal": 7,
+      "editorialLabel": "Бог верный",
+      "language": "hebrew",
+      "verifiedDigitalForm": "אֵל אֱמוּנָה",
+      "verseLocator": "Deuteronomy 32:4",
+      "sourceEdition": "Mechon-Mamre MT online transcription",
+      "sourceUrl": "https://mechon-mamre.org/p/pt/pt0532.htm",
+      "category": "divine_attribute_phrase",
+      "editorialCaution": "Контекст поэтической характеристики Бога; а не новый эквивалент тетраграмматона.",
+      "relatedBaselineIds": [
+        "el",
+        "tsur"
+      ],
+      "relationshipType": "thematic_or_textual_cross_reference_not_etymology",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "digitalFormStatus": "ONE_VERSE_DIGITAL_SURFACE_CHECKED",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "etymologyStatus": "NOT_RESOLVED",
+      "note": "Additional research candidate, not part of Arena original 29, not Product-ready."
+    },
+    {
+      "id": "el-rahum-hannun",
+      "ordinal": 8,
+      "editorialLabel": "Бог милосердный и милостивый",
+      "language": "hebrew",
+      "verifiedDigitalForm": "אֵל רַחוּם וְחַנּוּן",
+      "verseLocator": "Exodus 34:6",
+      "sourceEdition": "Mechon-Mamre MT online transcription",
+      "sourceUrl": "https://mechon-mamre.org/p/pt/pt0234.htm",
+      "category": "divine_attribute_phrase",
+      "editorialCaution": "В собственном раскрытии Бога в Исх. 34:6; связь с другими исповедальными формулами отдельно верифицировать.",
+      "relatedBaselineIds": [
+        "yhwh",
+        "el"
+      ],
+      "relationshipType": "thematic_or_textual_cross_reference_not_etymology",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "digitalFormStatus": "ONE_VERSE_DIGITAL_SURFACE_CHECKED",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "etymologyStatus": "NOT_RESOLVED",
+      "note": "Additional research candidate, not part of Arena original 29, not Product-ready."
+    },
+    {
+      "id": "kyrios-ho-theos",
+      "ordinal": 9,
+      "editorialLabel": "Господь Бог",
+      "language": "greek",
+      "verifiedDigitalForm": "κύριος ὁ θεὸς",
+      "verseLocator": "Luke 1:32 (THGNT)",
+      "sourceEdition": "THGNT 2017",
+      "sourceUrl": "https://www.biblegateway.com/passage/?search=Luke+1%3A30-1%3A35&version=THGNT",
+      "category": "new_testament_divine_title",
+      "editorialCaution": "В данном контексте Господь Бог действует по отношению к Сыну; нельзя без доказательства отождествить грамматический субъект и Иисуса.",
+      "relatedBaselineIds": [
+        "yhwh",
+        "elohim"
+      ],
+      "relationshipType": "thematic_or_textual_cross_reference_not_etymology",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "digitalFormStatus": "ONE_VERSE_DIGITAL_SURFACE_CHECKED",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "etymologyStatus": "NOT_RESOLVED",
+      "note": "Additional research candidate, not part of Arena original 29, not Product-ready."
+    },
+    {
+      "id": "poimen-ho-kalos",
+      "ordinal": 10,
+      "editorialLabel": "Добрый Пастырь",
+      "language": "greek",
+      "verifiedDigitalForm": "ὁ ποιμὴν ὁ καλός",
+      "verseLocator": "John 10:11",
+      "sourceEdition": "SBLGNT 2010",
+      "sourceUrl": "https://www.biblegateway.com/passage/?search=John+10%3A11&version=SBLGNT",
+      "category": "christological_predicative_title",
+      "editorialCaution": "Самоописание Иисуса в полной фразе Ἐγώ εἰμι ...; не то же самое, что абсолютное ἐγώ εἰμι Ин. 8:58.",
+      "relatedBaselineIds": [
+        "ego-eimi",
+        "ro-i"
+      ],
+      "relationshipType": "thematic_or_textual_cross_reference_not_etymology",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "digitalFormStatus": "ONE_VERSE_DIGITAL_SURFACE_CHECKED",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "etymologyStatus": "NOT_RESOLVED",
+      "note": "Additional research candidate, not part of Arena original 29, not Product-ready."
+    },
+    {
+      "id": "anastasis-zoe",
+      "ordinal": 11,
+      "editorialLabel": "Воскресение и жизнь",
+      "language": "greek",
+      "verifiedDigitalForm": "ἡ ἀνάστασις καὶ ἡ ζωή",
+      "verseLocator": "John 11:25",
+      "sourceEdition": "SBLGNT 2010",
+      "sourceUrl": "https://www.biblegateway.com/passage/?search=John+11%3A25&version=SBLGNT",
+      "category": "christological_predicative_title",
+      "editorialCaution": "У Иисуса есть грамматический предикат после Ἐγώ εἰμι, в отличие от Ин. 8:58.",
+      "relatedBaselineIds": [
+        "ego-eimi"
+      ],
+      "relationshipType": "thematic_or_textual_cross_reference_not_etymology",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "digitalFormStatus": "ONE_VERSE_DIGITAL_SURFACE_CHECKED",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "etymologyStatus": "NOT_RESOLVED",
+      "note": "Additional research candidate, not part of Arena original 29, not Product-ready."
+    },
+    {
+      "id": "ho-on-erchomenos",
+      "ordinal": 12,
+      "editorialLabel": "Тот, Кто есть, был и грядёт",
+      "language": "greek",
+      "verifiedDigitalForm": "ὁ ὢν καὶ ὁ ἦν καὶ ὁ ἐρχόμενος",
+      "verseLocator": "Revelation 1:4",
+      "sourceEdition": "SBLGNT 2010",
+      "sourceUrl": "https://www.biblegateway.com/passage/?search=Revelation+1%3A4&version=SBLGNT",
+      "category": "apocalyptic_divine_epithet",
+      "editorialCaution": "SBLGNT: ἀπὸ ὁ ὢν ... (необычная грамматика); источник аллюзии в Исх. 3:14 обсуждать, не подменять полной цитатой LXX.",
+      "relatedBaselineIds": [
+        "ehyeh",
+        "alpha-omega"
+      ],
+      "relationshipType": "thematic_or_textual_cross_reference_not_etymology",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "digitalFormStatus": "ONE_VERSE_DIGITAL_SURFACE_CHECKED",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "etymologyStatus": "NOT_RESOLVED",
+      "note": "Additional research candidate, not part of Arena original 29, not Product-ready."
+    },
+    {
+      "id": "arche-telos",
+      "ordinal": 13,
+      "editorialLabel": "Начало и конец",
+      "language": "greek",
+      "verifiedDigitalForm": "ἡ ἀρχὴ καὶ τὸ τέλος",
+      "verseLocator": "Revelation 21:6",
+      "sourceEdition": "SBLGNT 2010",
+      "sourceUrl": "https://www.biblegateway.com/passage/?search=Revelation+21%3A6&version=SBLGNT",
+      "category": "apocalyptic_self_designation",
+      "editorialCaution": "В Откр. 21:6 употреблено вместе с «Альфой и Омегой», но в 1:8 у SBLGNT та же дополнительная формула отсутствует; следить за редакцией.",
+      "relatedBaselineIds": [
+        "alpha-omega"
+      ],
+      "relationshipType": "thematic_or_textual_cross_reference_not_etymology",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "digitalFormStatus": "ONE_VERSE_DIGITAL_SURFACE_CHECKED",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "etymologyStatus": "NOT_RESOLVED",
+      "note": "Additional research candidate, not part of Arena original 29, not Product-ready."
+    }
+  ]
+}
