@@ -5,7 +5,6 @@
   "totalImageCount": 23,
   "rightsNote": "Only PDM historical scans. Modern Peachey conservation photograph excluded from this public repo. Editorial publication requires separate approval and attribution.",
   "binaryState": "REMOTE_PC_ONLY_VERIFIED_NOT_IN_GIT",
-  "remotePath": "C:\\Users\\Fedor\\Downloads\\REFORMATION_SCHLEITHEIM_IMAGES",
   "provenanceNote": "Original e-rara and BSB IIIF source URLs; filenames/hash describe particular locally downloaded 1600-pixel JPEG derivatives, not master scans.",
   "entries": [
     {
@@ -256,5 +255,6 @@
       "rights": "PDM",
       "local_integrity": "SHA256_VERIFIED_2026-11-06"
     }
-  ]
+  ],
+  "archiveCustody": "Private offline author archive (not a Git-hosted binary); exact path deliberately omitted from public registry."
 }
