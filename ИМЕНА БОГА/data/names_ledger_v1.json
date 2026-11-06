@@ -10,7 +10,10 @@
   "counts": {
     "arenaCandidateCount": 29,
     "exactDigitalVerseChecks": 29,
-    "pendingVerseChecks": 0
+    "pendingVerseChecks": 0,
+    "criticalEditionCollationsCompleted": 0,
+    "finalEtymologyDecisions": 0,
+    "publicationEligible": 0
   },
   "records": [
     {
@@ -31,7 +34,11 @@
       "holds": [
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
-      ]
+      ],
+      "sourceEdition": "Mechon-Mamre MT digital transcription",
+      "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
     },
     {
       "id": "ehyeh",
@@ -51,7 +58,28 @@
       "holds": [
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
-      ]
+      ],
+      "researchNote": "אֶהְיֶה = 1cs imperfect (yiqtol) of היה; Ex 3:12 occurrence belongs to the interpretive context. Present/future rendering debated; not a one-word proof that YHWH is the etymological root of all divine titles.",
+      "witnesses": [
+        {
+          "edition": "Mechon-Mamre MT",
+          "verse": "Exodus 3:12,14-15",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0203.htm",
+          "referent": "first-person self-declaration and third-person YHWH name",
+          "status": "DIGITAL_SURFACE_VERIFIED"
+        },
+        {
+          "edition": "BiblIndex online Septuagint transcription (precise edition not ascertained)",
+          "verse": "Exodus 3:14",
+          "sourceUrl": "https://dapytains.biblindex.org/fr/bible/septuaginta/ex-3",
+          "referent": "Ἐγώ εἰμι ὁ ὤν / Ὁ ὢν",
+          "status": "DIGITAL_SURFACE_VERIFIED_CRITICAL_APPARATUS_HOLD"
+        }
+      ],
+      "sourceEdition": "Mechon-Mamre MT digital transcription",
+      "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
     },
     {
       "id": "yireh",
@@ -62,7 +90,7 @@
       "verseLocator": "Genesis 22:14",
       "category": "place_name",
       "textCheck": "EXACT_VERSE_CHECKED_IN_NAMED_DIGITAL_EDITION",
-      "sourceUrl": "https://www.stepbible.org/?q=version%3DNET2full%7Creference%3DGen.22.14",
+      "sourceUrl": "https://mechon-mamre.org/p/pt/pt0122.htm",
       "evidenceClass": "B1",
       "accessState": "PARTIAL_OBJECT",
       "locatorState": "EXACT_LOCATOR_VERIFIED",
@@ -71,7 +99,21 @@
       "holds": [
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
-      ]
+      ],
+      "researchNote": "In Genesis 22:14 Abraham names THE PLACE; later biblical/theological application to God's provision is an interpretive layer. Compare 22:8 and 22:14, including יִרְאֶה vs יֵרָאֶה.",
+      "witnesses": [
+        {
+          "edition": "Mechon-Mamre, Masoretic Hebrew online transcription",
+          "verse": "Genesis 22:14",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0122.htm",
+          "referent": "place",
+          "status": "DIGITAL_SURFACE_VERIFIED"
+        }
+      ],
+      "sourceEdition": "Mechon-Mamre MT digital transcription",
+      "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
     },
     {
       "id": "rapha",
@@ -92,7 +134,11 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "researchNote": "Predication: 'I am YHWH, your healer', not a new independent proper name."
+      "researchNote": "Predication: 'I am YHWH, your healer', not a new independent proper name.",
+      "sourceEdition": "Mechon-Mamre MT digital transcription",
+      "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
     },
     {
       "id": "nissi",
@@ -112,7 +158,11 @@
       "holds": [
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
-      ]
+      ],
+      "sourceEdition": "Mechon-Mamre MT digital transcription",
+      "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
     },
     {
       "id": "mekoddishkem",
@@ -132,7 +182,11 @@
       "holds": [
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
-      ]
+      ],
+      "sourceEdition": "Mechon-Mamre MT digital transcription",
+      "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
     },
     {
       "id": "ro-i",
@@ -153,7 +207,11 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "researchNote": "First-person possessive 'my shepherd'; not an invented compound proper name."
+      "researchNote": "First-person possessive 'my shepherd'; not an invented compound proper name.",
+      "sourceEdition": "Mechon-Mamre MT digital transcription",
+      "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
     },
     {
       "id": "shalom",
@@ -173,7 +231,11 @@
       "holds": [
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
-      ]
+      ],
+      "sourceEdition": "Mechon-Mamre MT digital transcription",
+      "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
     },
     {
       "id": "tsidkenu",
@@ -181,7 +243,7 @@
       "arenaLabel": "ЯХВЕ-Цидкену",
       "language": "hebrew",
       "verifiedForm": "יְהוָה צִדְקֵנוּ",
-      "verseLocator": "Jeremiah 23:6; 33:16",
+      "verseLocator": "Jeremiah 23:6 (royal name); Jeremiah 33:16 (city name in MT; passage absent from Old Greek Jeremiah)",
       "category": "symbolic_royal_and_city_name",
       "textCheck": "EXACT_VERSE_CHECKED_IN_NAMED_DIGITAL_EDITION",
       "sourceUrl": "https://mechon-mamre.org/p/pt/pt1123.htm",
@@ -193,7 +255,35 @@
       "holds": [
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
-      ]
+      ],
+      "researchNote": "Do not collapse two referents and textual traditions. MT Jer 23:6 names the Davidic king; MT Jer 33:16 names Jerusalem. Old Greek Jeremiah omits the MT section 33:14–26; do not fabricate an LXX verse-level parallel.",
+      "witnesses": [
+        {
+          "edition": "Mechon-Mamre Masoretic text",
+          "verse": "Jeremiah 23:6",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt1123.htm",
+          "referent": "Davidic king",
+          "status": "DIGITAL_SURFACE_VERIFIED"
+        },
+        {
+          "edition": "Mechon-Mamre Masoretic text",
+          "verse": "Jeremiah 33:16",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt1133.htm",
+          "referent": "Jerusalem",
+          "status": "DIGITAL_SURFACE_VERIFIED"
+        },
+        {
+          "edition": "Old Greek Jeremiah",
+          "verse": "MT Jeremiah 33:14-26",
+          "sourceUrl": "https://doi.org/10.1093/oxfordhb/9780190693060.013.25",
+          "referent": "passage absent in Old Greek edition",
+          "status": "TEXT_CRITICAL_SECONDARY_CORROBORATION_NOT_DIRECT_COLLATION"
+        }
+      ],
+      "sourceEdition": "Mechon-Mamre MT digital transcription",
+      "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
     },
     {
       "id": "shammah",
@@ -213,7 +303,11 @@
       "holds": [
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
-      ]
+      ],
+      "sourceEdition": "Mechon-Mamre MT digital transcription",
+      "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
     },
     {
       "id": "sabaoth",
@@ -234,7 +328,11 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "researchNote": "Divine epithet/title; not a claim of derivation from an unrelated root."
+      "researchNote": "Divine epithet/title; not a claim of derivation from an unrelated root.",
+      "sourceEdition": "Mechon-Mamre MT digital transcription",
+      "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
     },
     {
       "id": "elohim",
@@ -254,7 +352,11 @@
       "holds": [
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
-      ]
+      ],
+      "sourceEdition": "Mechon-Mamre MT digital transcription",
+      "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
     },
     {
       "id": "el",
@@ -275,7 +377,11 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "researchNote": "One word within the phrase אֵל רַחוּם וְחַנּוּן; distinguishes lexeme from a unique proper name."
+      "researchNote": "One word within the phrase אֵל רַחוּם וְחַנּוּן; distinguishes lexeme from a unique proper name.",
+      "sourceEdition": "Mechon-Mamre MT digital transcription",
+      "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
     },
     {
       "id": "el-shaddai",
@@ -295,7 +401,11 @@
       "holds": [
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
-      ]
+      ],
+      "sourceEdition": "Mechon-Mamre MT digital transcription",
+      "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
     },
     {
       "id": "el-elyon",
@@ -316,7 +426,11 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "researchNote": "Verifies standalone surface form in v20; Gen14:18-19 has prefixed לְאֵל."
+      "researchNote": "Verifies standalone surface form in v20; Gen14:18-19 has prefixed לְאֵל.",
+      "sourceEdition": "Mechon-Mamre MT digital transcription",
+      "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
     },
     {
       "id": "el-olam",
@@ -337,7 +451,11 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "researchNote": "Abraham invoked YHWH, El Olam; original syntactic context retained."
+      "researchNote": "Abraham invoked YHWH, El Olam; original syntactic context retained.",
+      "sourceEdition": "Mechon-Mamre MT digital transcription",
+      "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
     },
     {
       "id": "el-roi",
@@ -357,7 +475,11 @@
       "holds": [
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
-      ]
+      ],
+      "sourceEdition": "Mechon-Mamre MT digital transcription",
+      "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
     },
     {
       "id": "el-gibbor",
@@ -378,7 +500,27 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "researchNote": "Royal naming context Isaiah9 and divine designation Isaiah10; contextual distinction pending extended exegesis."
+      "researchNote": "Royal naming context Isaiah9 and divine designation Isaiah10; contextual distinction pending extended exegesis.",
+      "witnesses": [
+        {
+          "edition": "Mechon-Mamre MT",
+          "verse": "Isaiah 9:5 (Hebrew numbering)",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt1009.htm",
+          "referent": "royal child naming",
+          "status": "DIGITAL_SURFACE_VERIFIED"
+        },
+        {
+          "edition": "Mechon-Mamre MT",
+          "verse": "Isaiah 10:21",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt1010.htm",
+          "referent": "God of Israel context",
+          "status": "SECOND_LOCATOR_REQUIRES_DIRECT_EXCERPT_REPLAY"
+        }
+      ],
+      "sourceEdition": "Mechon-Mamre MT digital transcription",
+      "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
     },
     {
       "id": "el-bethel",
@@ -398,7 +540,11 @@
       "holds": [
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
-      ]
+      ],
+      "sourceEdition": "Mechon-Mamre MT digital transcription",
+      "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
     },
     {
       "id": "el-qanna",
@@ -419,7 +565,11 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "researchNote": "Divine epithet within a full statement including קַנָּא שְׁמוֹ."
+      "researchNote": "Divine epithet within a full statement including קַנָּא שְׁמוֹ.",
+      "sourceEdition": "Mechon-Mamre MT digital transcription",
+      "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
     },
     {
       "id": "adonai",
@@ -440,7 +590,11 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "researchNote": "Not the same form as אֲדֹנֵינוּ in Psalm 8:2; reading practice and niqqud require separate discussion."
+      "researchNote": "Not the same form as אֲדֹנֵינוּ in Psalm 8:2; reading practice and niqqud require separate discussion.",
+      "sourceEdition": "Mechon-Mamre MT digital transcription",
+      "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
     },
     {
       "id": "qedosh-yisrael",
@@ -461,7 +615,11 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "researchNote": "Divine epithet 'Holy One of Israel'."
+      "researchNote": "Divine epithet 'Holy One of Israel'.",
+      "sourceEdition": "Mechon-Mamre MT digital transcription",
+      "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
     },
     {
       "id": "tsur",
@@ -482,7 +640,11 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "researchNote": "Surface form includes definite article; metaphorical designation."
+      "researchNote": "Surface form includes definite article; metaphorical designation.",
+      "sourceEdition": "Mechon-Mamre MT digital transcription",
+      "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
     },
     {
       "id": "atiq-yomin",
@@ -503,7 +665,11 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "researchNote": "Aramaic, not Hebrew. Dan7:13/22 uses עַתִּיק יוֹמַיָּא variant form."
+      "researchNote": "Aramaic, not Hebrew. Dan7:13/22 uses עַתִּיק יוֹמַיָּא variant form.",
+      "sourceEdition": "Mechon-Mamre MT digital transcription",
+      "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
     },
     {
       "id": "abba",
@@ -514,7 +680,7 @@
       "verseLocator": "Mark 14:36",
       "category": "address_to_father",
       "textCheck": "EXACT_VERSE_CHECKED_IN_NAMED_DIGITAL_EDITION",
-      "sourceUrl": "https://www.biblegateway.com/passage/?search=Mark+14%3A36&version=SBLGNT",
+      "sourceUrl": "https://www.biblegateway.com/verse/grc/Mark%2014%3A36",
       "evidenceClass": "B1",
       "accessState": "PARTIAL_OBJECT",
       "locatorState": "EXACT_LOCATOR_VERIFIED",
@@ -524,7 +690,11 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "researchNote": "SBLGNT surface Αββα; Aramaic word transliterated into Greek, not an original Greek lexical root."
+      "researchNote": "SBLGNT prints Αββα (without the accent shown in many other editions); THGNT and Nestle 1904 display a different accentuation/capitalization. Aramaic origin vs Greek script is not a contradiction; keep orthography tied to edition.",
+      "sourceEdition": "SBLGNT 2010 via BibleGateway (digital display)",
+      "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
     },
     {
       "id": "pantokrator",
@@ -545,7 +715,11 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "researchNote": "Speaker designated λέγει κύριος, ὁ θεός; do not attribute this occurrence to Son uncritically."
+      "researchNote": "Speaker designated λέγει κύριος, ὁ θεός; do not attribute this occurrence to Son uncritically.",
+      "sourceEdition": "SBLGNT 2010 via BibleGateway (digital display)",
+      "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
     },
     {
       "id": "alpha-omega",
@@ -566,7 +740,25 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "researchNote": "This verse self-identifies speaker as κύριος, ὁ θεός; other occurrences need independent contextual analysis."
+      "researchNote": "SBLGNT Rev 1:8 reads τὸ Ἄλφα καὶ τὸ Ὦ; Textus Receptus has longer clause ἀρχὴ καὶ τέλος, not present here in SBLGNT. Speaker reference requires separate contextual exegesis; compare Rev 21:6 and 22:13 independently.",
+      "witnesses": [
+        {
+          "edition": "SBLGNT",
+          "verse": "Revelation 1:8",
+          "sourceUrl": "https://www.biblegateway.com/passage/?search=Revelation+1%3A8&version=SBLGNT",
+          "status": "DIGITAL_SURFACE_VERIFIED"
+        },
+        {
+          "edition": "Stephanus TR 1550",
+          "verse": "Revelation 1:8",
+          "sourceUrl": "https://www.biblegateway.com/passage/?search=Revelation+1%3A8&version=TR1550",
+          "status": "DIGITAL_VARIANT_VERIFIED"
+        }
+      ],
+      "sourceEdition": "SBLGNT 2010 via BibleGateway (digital display)",
+      "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
     },
     {
       "id": "ego-eimi",
@@ -586,7 +778,11 @@
       "holds": [
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
-      ]
+      ],
+      "sourceEdition": "SBLGNT 2010 via BibleGateway (digital display)",
+      "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
     },
     {
       "id": "immanuel",
@@ -607,8 +803,40 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "researchNote": "Matthew's exact Greek form verified; Hebrew Isa7:14 comparison https://mechon-mamre.org/p/pt/pt1007.htm; distinct source traditions."
+      "researchNote": "Matthew's exact Greek form verified; Hebrew Isa7:14 comparison https://mechon-mamre.org/p/pt/pt1007.htm; distinct source traditions.",
+      "witnesses": [
+        {
+          "edition": "Mechon-Mamre MT",
+          "verse": "Isaiah 7:14",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt1007.htm",
+          "referent": "child symbolic name",
+          "status": "DIGITAL_SURFACE_VERIFIED"
+        },
+        {
+          "edition": "SBLGNT 2010",
+          "verse": "Matthew 1:23",
+          "sourceUrl": "https://www.biblegateway.com/passage/?search=Matthew+1%3A23&version=SBLGNT",
+          "referent": "Christological quotation and explanation",
+          "status": "DIGITAL_SURFACE_VERIFIED"
+        }
+      ],
+      "sourceEdition": "MT Isaiah 7:14 + SBLGNT Matthew 1:23",
+      "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
+      "criticalEditionStatus": "NOT_COLLATED",
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
     }
   ],
-  "coverageNote": "29/29 candidate forms anchored to a stated digital verse witness only. NOT 29 fully verified etymologies, all-verse collation, or textual-critical/rights/publication approval. Sources are conservative class B1, not critical primary manuscripts."
+  "coverageNote": "29/29 candidate forms anchored to a stated digital verse witness only. NOT 29 fully verified etymologies, all-verse collation, or textual-critical/rights/publication approval. Sources are conservative class B1, not critical primary manuscripts.",
+  "sourceTranscript": {
+    "document": "Вставленный текст(20261106-224240).txt",
+    "evidence": "Exact 29 IDs under 'Order of names array' in Arena copied transcript; not current compiled product source",
+    "authority": "transcript C-class; technical claims not runtime verified"
+  },
+  "auditProtocol": {
+    "formInVerse": "Surface checked in a named digital transcription, NOT critical manuscript collation",
+    "morphology": "Separate scholarly/grammar review still open",
+    "interpretation": "Not certified by surface-form verification",
+    "productWrite": "Not authorized",
+    "rights": "Not granted by source URL"
+  }
 }
