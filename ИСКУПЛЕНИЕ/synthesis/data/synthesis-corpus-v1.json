@@ -141,6 +141,12 @@
       "path": "ИСКУПЛЕНИЕ/synthesis/06_MERGE_READINESS.md",
       "role": "исторический аудит PR217; не authority текущего merge",
       "status": "HISTORICAL"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article08_particular_redemption_positive_case.md",
+      "role": "Статья №8 действующего маршрута из 18: положительный довод особого искупления, вывод из Ин. 6/10/17, Рим. 8, Еф. 5, Евр. 7–10, честный широкий монергистский ответ, собственные пределы",
+      "status": "DRAFT / NOT PUBLISHED / EVIDENCE_HOLD / PUBLICATION_HOLD / RIGHTS_HOLD",
+      "quotePolicy": "Новые длинные библейские цитаты отсутствуют; Дорт и 1689 по первичным статьям; современные авторы не цитируются дословно. Исторический синтез не равен полной колляции."
     }
   ],
   "seriesWorkingPlan": {
@@ -805,7 +811,7 @@
     "seriesOwner": "ИСКУПЛЕНИЕ/synthesis/01_SERIES_PLAN_AND_ARTICLE_COUNT.md",
     "workingReaderArticles": 18,
     "articleCountFrozen": false,
-    "existingDrafts": 13,
+    "existingDrafts": 14,
     "existingDraftsNotAutomaticallyComplete": true,
     "sourceQueueOwner": "ИСКУПЛЕНИЕ/05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md",
     "hardTextOwner": "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md",
@@ -817,7 +823,8 @@
     "articleExchangeGroups": 14,
     "allSystematicsRead": false,
     "allBibliographicOriginalsCollated": false,
-    "C25": "OPEN"
+    "C25": "OPEN",
+    "newDraftArticle08": "ИСКУПЛЕНИЕ/synthesis/drafts/article08_particular_redemption_positive_case.md"
   },
   "judasPreachingContinuation20261106": {
     "reviewedAt": "2026-11-06T03:27:15Z",
@@ -885,24 +892,24 @@
     "чтоСчитаетсяДоводом": "заголовок «## » в любом .md лана, включая вложенные папки (synthesis/drafts, ot/tools); тело секции — до следующего «## » или до конца файла",
     "приоритет": "УДЕРЖИВАЕТСЯ > ОТКРЫТО > ЗАКРЫТО; маркеров нет -> БЕЗ МАРКЕРА; маркер вне классификации -> ошибка съёма, а не «прочее»",
     "метод": "scripts/atonement_claim_register.py обходит прозу лана целиком (без выборки), разбирает маркеры вида `ВЕРДИКТ`, сверяет локатор побайтово (файл + номер строки + текст)",
-    "строк": 273,
-    "файлов": 23,
+    "строк": 284,
+    "файлов": 24,
     "покрытоМашинно": 0,
-    "покрытоПоФайлу": 273,
-    "файловПрозы": 23,
+    "покрытоПоФайлу": 284,
+    "файловПрозы": 24,
     "файловБезКарточки": 0,
-    "разрешеноЛокаторов": 273,
+    "разрешеноЛокаторов": 284,
     "неРазрешено": 0,
     "поКлассам": {
-      "БЕЗ МАРКЕРА": 156,
-      "УДЕРЖИВАЕТСЯ": 91,
+      "БЕЗ МАРКЕРА": 166,
+      "УДЕРЖИВАЕТСЯ": 92,
       "ОТКРЫТО": 11,
       "СЛУЖЕБНОЕ": 9,
       "ЗАКРЫТО": 6
     },
     "маркеры": {
-      "всего": 465,
-      "различных": 36,
+      "всего": 470,
+      "различных": 38,
       "словарь": {
         "ACCESS_INTERRUPTED": "ОТКРЫТО",
         "AGENT_RULES": "СЛУЖЕБНОЕ",
@@ -921,6 +928,8 @@
         "FORBIDDEN": "УДЕРЖИВАЕТСЯ",
         "FULL_OBJECT_VERIFIED": "ЗАКРЫТО",
         "HOLD": "УДЕРЖИВАЕТСЯ",
+        "JUDAS_NAMED_QUOTE_HOLD": "УДЕРЖИВАЕТСЯ",
+        "LECTURE_III_VERBATIM_HOLD": "УДЕРЖИВАЕТСЯ",
         "LEGACY_NO_CLASSES": "СЛУЖЕБНОЕ",
         "LOCATOR_HOLD": "УДЕРЖИВАЕТСЯ",
         "LOCATOR_PARTIAL": "УДЕРЖИВАЕТСЯ",
@@ -942,9 +951,9 @@
         "TEXT_CRIT_NOTE": "СЛУЖЕБНОЕ"
       },
       "частоты": {
-        "EVIDENCE_HOLD": 98,
-        "PUBLICATION_HOLD": 68,
-        "RIGHTS_HOLD": 55,
+        "EVIDENCE_HOLD": 99,
+        "PUBLICATION_HOLD": 69,
+        "RIGHTS_HOLD": 56,
         "ATTRIBUTION_HOLD": 40,
         "EDITION_HOLD": 35,
         "LOCATOR_HOLD": 31,
@@ -970,6 +979,8 @@
         "EXACT_LOCATOR_VERIFIED": 1,
         "FORBIDDEN": 1,
         "FULL_OBJECT_VERIFIED": 1,
+        "JUDAS_NAMED_QUOTE_HOLD": 1,
+        "LECTURE_III_VERBATIM_HOLD": 1,
         "LOCATOR_SINGLE_ATTESTATION": 1,
         "OPEN / LEAD": 1,
         "PERMISSION_REQUIRED": 1,
@@ -1002,15 +1013,15 @@
       ]
     },
     "сверкаСКарточками": {
-      "файловПрозы": 23,
-      "файловСКарточкой": 23,
+      "файловПрозы": 24,
+      "файловСКарточкой": 24,
       "файловБезКарточки": 0,
       "ссылокНаНесуществующийФайл": 0,
       "ссылокВнеОбходаЛана": 0,
       "записейВнеСтрокЛана": 0,
       "файловБезКарточкиСостояния": 0,
-      "маркеровВПрозеНеОтражённыхВКарточке": 1,
-      "маркеровВКарточкеНеИзПрозыЛана": 13,
+      "маркеровВПрозеНеОтражённыхВКарточке": 6,
+      "маркеровВКарточкеНеИзПрозыЛана": 14,
       "детально": {
         "04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md": {
           "проза": 5,
@@ -1135,6 +1146,21 @@
           "вПрозеНеВКарточке": [],
           "вКарточкеНеИзПрозы": [
             "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD"
+          ],
+          "естьКарточка": true
+        },
+        "article08_particular_redemption_positive_case.md": {
+          "проза": 5,
+          "карточка": 1,
+          "вПрозеНеВКарточке": [
+            "EVIDENCE_HOLD",
+            "JUDAS_NAMED_QUOTE_HOLD",
+            "LECTURE_III_VERBATIM_HOLD",
+            "PUBLICATION_HOLD",
+            "RIGHTS_HOLD"
+          ],
+          "вКарточкеНеИзПрозы": [
+            "UBLICATION_HOLD / RIGHTS_HOLD"
           ],
           "естьКарточка": true
         }
@@ -4767,12 +4793,150 @@
         ],
         "машинно": false,
         "машинноПоФайлу": true
+      },
+      {
+        "код": "СР@article08_particular_redemption_positive_case",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/article08_particular_redemption_positive_case.md",
+        "строка": 10,
+        "срез": "Опорные карточки и отдельные ограничения проверки",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "1@article08_particular_redemption_positive_case",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/article08_particular_redemption_positive_case.md",
+        "строка": 29,
+        "срез": "1. Ин. 6:37–44 — дар Отца, приход, воскресение",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "2@article08_particular_redemption_positive_case",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/article08_particular_redemption_positive_case.md",
+        "строка": 39,
+        "срез": "2. Ин. 10:11–30 — Пастырь не только предлагает жизнь, но хранит овец",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "3@article08_particular_redemption_positive_case",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/article08_particular_redemption_positive_case.md",
+        "строка": 51,
+        "срез": "3. Ин. 17:1–26 — данный народ, освящение и молитва о мире",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "4@article08_particular_redemption_positive_case",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/article08_particular_redemption_positive_case.md",
+        "строка": 63,
+        "срез": "4. Рим. 8:28–39 — группа, которой Сын дан, и гарантированный результат",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "5@article08_particular_redemption_positive_case",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/article08_particular_redemption_positive_case.md",
+        "строка": 73,
+        "срез": "5. Еф. 5:25–27, Тит. 2:14 и Деян. 20:28 — у жертвы есть избранный ею народ",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "6@article08_particular_redemption_positive_case",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/article08_particular_redemption_positive_case.md",
+        "строка": 83,
+        "срез": "6. Евр. 7–10 — Жертва, Первосвященник, ходатайство и завершённый результат",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "7@article08_particular_redemption_positive_case",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/article08_particular_redemption_positive_case.md",
+        "строка": 93,
+        "срез": "7. Как соединяется довод: не «пять стихов про овец», а сеть заявлений",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "8@article08_particular_redemption_positive_case",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/article08_particular_redemption_positive_case.md",
+        "строка": 108,
+        "срез": "8. Сильнейший широкий монергистский ответ — не подмена строгой позиции",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "9@article08_particular_redemption_positive_case",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/article08_particular_redemption_positive_case.md",
+        "строка": 130,
+        "срез": "9. Исповедальная формулировка и её собственные пределы",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "10@article08_particular_redemption_positive_case",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/article08_particular_redemption_positive_case.md",
+        "строка": 140,
+        "срез": "10. Каков итог положительного аргумента и что нельзя выдавать за итог",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "EVIDENCE_HOLD",
+          "JUDAS_NAMED_QUOTE_HOLD",
+          "LECTURE_III_VERBATIM_HOLD",
+          "PUBLICATION_HOLD",
+          "RIGHTS_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
       }
     ],
     "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
     "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check synthesis",
-    "measuredAt": "2026-11-06T16:33:46Z",
-    "checkedAt": "2026-11-06T16:33:46Z",
-    "предыдущийСъём": "2026-11-06T15:49:09Z"
+    "measuredAt": "2026-11-06T20:08:32Z",
+    "checkedAt": "2026-11-06T20:08:32Z",
+    "предыдущийСъём": "2026-11-06T20:02:49Z"
   }
 }

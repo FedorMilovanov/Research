@@ -8666,5 +8666,14 @@
       "publicationEligible": false,
       "mergePerformed": false
     }
-  }
+  },
+  "postReviewDrafts": [
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article08_particular_redemption_positive_case.md",
+      "sha256": "dcd5e947b44d7140aee4368b8f19f1f7d94509b15c2cb5c978fc6b93045bda06",
+      "reviewedAt": "2026-11-06",
+      "note": "Пост-базовый черновик статьи 08: новый файл после исторического контролируемого объёма 13 черновиков; цитаты и экзегеза не объявлены подтверждёнными этим включением",
+      "publicationEligible": false
+    }
+  ]
 }
