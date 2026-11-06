@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 145,
+  "sourceCount": 147,
   "sources": [
     {
       "id": "REF-P01",
@@ -2605,7 +2605,7 @@
       ],
       "url": "https://www.mennlex.de/doku.php?id=art%3Adenck_hans",
       "checkedAt": "2026-11-06",
-      "verificationNote": "Complete entry on original MennLex V scholarly encyclopedia site read, authored Geoffrey Dipple, heading 'Denck, Hans', biographic narrative (especially paragraphs about late 1527 Basel and Widerruf), as well as bibliographic references. Mennonitischer Geschichtsverein's editor Hans-Jürgen Goertz and print Band V 2020 established independently via publisher info/official MennLex start page; online page last changed June 2024, NOT necessarily original text written in 2024. Dipple says Denck wrote his faith-account at Oecolampadius' request, and 'Oecolampad nach dem Tod Dencks als Hans Denken Widerruf (1528) veröffentlichte' (attributing edition/publishing agency to Oecolampadius, printed 1528). This conflicts at least in publication DATE and procedural narrative with 2008 Oelschläger reporting Goeters' possible Hätzer-to-Schöffer 1528 delivery and early-1529 print. Oecolampadius as sponsor and Schöffer as printer could theoretically coexist, but no primary transmission chain establishes coexistence, or a distinct 1528 vs 1529 edition. This is modern secondary scholarship, not autoptic colophon, editor's actual printing contract, or proved agent. His assessment of Denck's manuscript/soteriology is historian's interpretation, not literal original wording. No copies made, rights unknown."
+      "verificationNote": "Complete entry on original MennLex V scholarly encyclopedia site read, authored Geoffrey Dipple, heading 'Denck, Hans', biographic narrative (especially paragraphs about late 1527 Basel and Widerruf), as well as bibliographic references. Mennonitischer Geschichtsverein's editor Hans-Jürgen Goertz and print Band V 2020 established independently via publisher info/official MennLex start page; online page last changed June 2024, NOT necessarily original text written in 2024. Dipple says Denck wrote his faith-account at Oecolampadius' request, and 'Oecolampad nach dem Tod Dencks als Hans Denken Widerruf (1528) veröffentlichte' (attributing edition/publishing agency to Oecolampadius, printed 1528). This conflicts at least in publication DATE and procedural narrative with 2008 Oelschläger reporting Goeters' possible Hätzer-to-Schöffer 1528 delivery and early-1529 print. Oecolampadius as sponsor and Schöffer as printer could theoretically coexist, but no primary transmission chain establishes coexistence, or a distinct 1528 vs 1529 edition. This is modern secondary scholarship, not autoptic colophon, editor's actual printing contract, or proved agent. His assessment of Denck's manuscript/soteriology is historian's interpretation, not literal original wording. No copies made, rights unknown. Additional directly read same 2026-11-06: MennLex V article says literally 'Am 27. Juni 1527 schlug Kautz ein Reformmanifest an die Tür der Dominikanerkirche.' This third SECONDARY posting date differs from KGK 7 June and the 2015 Capito edition editorial 9 June. No separately evidenced 'second manifesto' or printed 27 June date found. Do not assume TYPO without original corroboration; 13 June invitation pre-dates 27 June if same document."
     },
     {
       "id": "REF-S54",
@@ -2815,18 +2815,17 @@
       "title": "Critical Karlstadt Edition KGK 306, introduction to Dialogus von dem fremden Glauben, Glauben der Kirche, Taufe der Kinder, scholarly section Publikation in Worms 1527, n17: Kautz seven theses posted 7 June 1527 (Friday before Pentecost), countertheses 13 June",
       "evidenceClass": "B1",
       "accessState": "PARTIAL_OBJECT",
-      "locatorState": "COARSE_LOCATOR_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
       "holds": [
         "EVIDENCE_HOLD",
-        "LOCATOR_HOLD",
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
       "url": "https://dev2.hab.de/apps/edoc/view.html?id=kgk_306_introduction",
       "checkedAt": "2026-11-06",
-      "verificationNote": "Authoritative digital scholarly critical Karlstadt Edition introduction KGK306, printed volume VIII (Briefe und Schriften 1525–1529, Gütersloh 2025, ISBN 9783579011752; official SLUB Dresden catalog for whole series https://katalog.slub-dresden.de/en/id/0-1556789092), 'Publikation in Worms 1527', machine-indexed complete online prose directly read via web search. Institution's dev2.hab.de HTML returned HTTP403 on open, so webpage itself not interactively loaded and footnote n17 sources were not independently followed/verified. Says Kautz on Friday 7 June 1527 before Pentecost posted seven theses at Dominikanerkirche Worms, third opposed infant baptism, Lutheran opponents responded with seven countertheses on 13 June, public disputation planned but not held; gives 1 July expulsion. Dates and event sequence are modern editorial reconstruction, not an original contemporaneous manuscript explicitly writing 7 June; photo original Frankfurt printed response does not by itself decide posting date. No assertion of DateCertain or full textual critical apparatus access."
+      "verificationNote": "Official Karlstadt critical edition KGK306 introduction by Wolfgang Huber, scholarly printed volume VIII (2025), was FULLY opened in institutional HTML on 2026-11-06 (earlier 403 no longer active). Printed original 'Dialogus von dem fremden Glauben ...' VD16 D1342 is cataloged as anonymous 1527 [Worms: Peter Schöffer], 28 leaves, ZB Zürich RARA AW6045/25.1002.4 and UB München 0001/8 Liturg433#3. Critical editor attributes the composition to Andreas Karlstadt, 1524, and hypothesizes Ludwig Hätzer helped transmit the manuscript to the Worms printer in 1527: neither Denck nor Hätzer is established as author of that distinct pamphlet. Scholarly introduction dates Kautz posting Friday 7 June 1527 and seven countertheses 13 June; online footnote17 was directly READ and quotes thesis III in Laube Flugschriften p703 lines2–4: footnote17 DOES NOT offer a separate autoptic dated posting record; footnote18 cites Laube pp702–707 and 1161–1166. LOCATOR_HOLD is removed for this now accessible KGK scholarly HTML only; historic Karlsruhe original sheet, images of D1342 and original date still NOT autoptically verified; retain EVIDENCE_HOLD/PUBLICATION_HOLD."
     },
     {
       "id": "REF-S66",
@@ -2864,6 +2863,44 @@
       "url": "https://dlibra.bibliotekaelblaska.pl/Content/53005/PDF/05-07.pdf",
       "checkedAt": "2026-11-06",
       "verificationNote": "Full 1902 journal PDF from Elblag library directly opened, PRINTED p153 visually inspected at PDF index 26. Ludwig Keller reports historically having identified an anonymous 4-leaf printing of 'Etliche Hauptreden' in an unspecified assembled volume together with Denck 'Ordnung Gottes und der Creaturen Werk' (parenthetical '1526') and 'Brüderliche Vereinigung etzlicher Kinder Gottes', and he interprets types, authorship, relations to Urbanus Rhegius disputation 1526, Hätzer 1528 Schöffer publication. Keller is a 1902 historical bibliographic witness/interpretive researcher and his 1526 is NOT demonstrably a dated original 1526 imprint: no pictured D560 leaf or direct printed colophon given on p153, physical bound volume identity/call number not established. Contrast BSB VD16 D560 inferred [1527], whose scanned leaf images are uninspected; both are provisional estimates; do not infer that Keller's assembled volume equals BSB Hom. 315#Beibd.7 or another specific digital object. 1902 source itself historically PDM likely, but no reproduction rights certification performed; no article PDF archived."
+    },
+    {
+      "id": "REF-S68",
+      "documentYear": 1670,
+      "title": "Benedikt Bahnsen 1670 Amsterdam auction library catalog reconstructed by HAB Wolfenbüttel (digital 2019): printed p9 lots 114 Dencks Ordnung Gottes and 115 Idem",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://bibliotheksrekonstruktion.hab.de/bahnsen/bahnsen-catSubjectFormat.html",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "HAB Wolfenbüttel/MWW scholarly digital reconstruction from 1670 Amsterdam auction catalog of books of Benedikt Bahnsen (d1669), by Dietrich Hakelberg, Jörn Münkner, Katrin Schmidt, 2019. Web search-indexed official catalog records include historical printed p9 no114 'Dencks. Ordnung GOttes und der Creaturen wercks' and no115 'Idem', EACH linked by today's editors to ONE BSB D560 digitization bsb00037013. These are two numbered historical auction LOT RECORDS, not proven two different editions or today's surviving physical copies; no verified crosswalk to BSB original Hom315#Beibd7. Original 1670 printed catalog p9 not photographically viewed and official HAB direct open returned HTTP403, hence PARTIAL_OBJECT/COARSE_LOCATOR_ONLY and holds. A 1670 witness to historic possession/circulation, not first-imprint date or colophon."
+    },
+    {
+      "id": "REF-S69",
+      "documentYear": 2015,
+      "title": "Erika Rummel and Milton Kooistra, The Correspondence of Wolfgang Capito, vol3 (1532–1536), Toronto UP 2015, editor headnote Letter488a printed p70 and 1532 letter English translation p71",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/20/71/95/37/2020719537/2020719537.pdf",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "University of Toronto Press 2015 ebook hosted on US Library of Congress. Original publisher PDF screen directly visually checked pageno100 (printed p70), pageno101 (printed p71), and book copyright page; p70 MODERN EDITORS' headnote to Letter488a says Kautz nailed seven theses on 9 June 1527, addressed audience 13 June, and cites QGT4 pp113–114 no129. This 9 June NOT quoted from the 1532 letter. The translated October14-16 1532 letter manuscript at Strasbourg AVCU 1AST76 no7, additions/corrections by Bucer, printed CorrBucer9 pp23–31 Ep634; content p71 about Kautz sacramental views but not an autograph date for his 1527 action. 2015 editors mention later Kautz association with Schöffer in Haguenau, not evidence this is Worms 1527 press. Book copyright CC-BY-NC-ND, no pages copied/reused; physical autograph not seen; clear source dependency on QGT4."
     }
   ]
 }
