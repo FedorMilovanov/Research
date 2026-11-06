@@ -1,8 +1,8 @@
 # Steven J. Lawson — CURRENT
 
-**Snapshot:** 2026-09-30  
+**Snapshot:** 2026-11-06 (original V6 snapshot remains 2026-09-30)  
 **Corpus:** `LAWSON-2024-2026` + canonical biography closure + active external acquisitions  
-**Status:** `PUBLICATION_READY_WITH_GUARDRAILS / V6 CANONICAL / BIOGRAPHY PUBLIC-WEB CLOSED / MAIN AUTHORITATIVE / ARENA RETIRED / OUTBOUND ACQUISITIONS ACTIVE`
+**Status:** `PUBLICATION_READY_WITH_GUARDRAILS / V6 CANONICAL / BIOGRAPHY PUBLIC-WEB CLOSED / ARENA RETIRED / FOUR HOLDER RESPONSES RECORDED / REMAINDER PENDING`
 
 ## Canonical stack
 
@@ -12,14 +12,15 @@
 4. `82_FINAL_BIOGRAPHY_OPEN_ITEMS_AND_NEGATIVE_SEARCH_RECEIPT_2026-09-30.md` — exhausted public routes / exact external-only remainder.
 5. `83_POST_BIOGRAPHY_CLOSURE_V6_CONSISTENCY_AUDIT_2026-09-30.md` — post-closure audit: PASS / no V7 trigger.
 6. `84_EXTERNAL_ACQUISITION_OUTREACH_AND_GRACE_MEDIA_FIRST_PARTY_UPGRADE_2026-09-30.md` — current acquisition authority: first-party Grace media upgrade + 11 dispatched holder requests.
-7. `85_OUTBOUND_ACQUISITION_DELIVERY_CHECKPOINT_2026-09-30.md` — **delivery-state control: FSU ticket #58057 confirmed; immediate bounce check clean; no other substantive response yet**.
-8. `80_BIOGRAPHY_PASS48_RECONCILIATION_2026-09-30.md` — last arena-push provenance reconciliation.
-9. `78_FRESH_100_PLUS_LINK_P1_GOLD_PASS_2026-09-30.md` — fresh targeted P1/gold pass.
-10. `79_GRP_POD_BACKEND_ENDMATTER_AND_NAMED_SUPPORT_TARGETED_PASS_2026-09-30.md` — GRP/POD/endmatter/named-support pass.
-11. `76_CONTENDING_2026_DECLINED_INVITATION_PLATFORM_RETURN_GUARDRAIL_2026-09-30.md` — July-2026 false-comeback guardrail.
-12. `77_BOOK_DISTRIBUTION_METADATA_SPLIT_AUDIT_2026-09-30.md` — book metadata/POD audit.
-13. `62_LOGICAL_SYNTHESIS_AND_RESEARCH_VERDICT_2026-09-29.md` — stable research verdict.
-14. `_START_HERE.md` — operational navigation.
+7. `85_OUTBOUND_ACQUISITION_DELIVERY_CHECKPOINT_2026-09-30.md` — **historical delivery-state control, accurate strictly as of 2026-09-30**; the later responses are recorded in `86_`.
+8. `86_HOLDER_RESPONSE_RECONCILIATION_2026-11-06.md` — four institutional replies (TTU, Wheaton, BGEA, FSU), response ceilings, current 11-holder status matrix.
+9. `80_BIOGRAPHY_PASS48_RECONCILIATION_2026-09-30.md` — last arena-push provenance reconciliation.
+10. `78_FRESH_100_PLUS_LINK_P1_GOLD_PASS_2026-09-30.md` — fresh targeted P1/gold pass.
+11. `79_GRP_POD_BACKEND_ENDMATTER_AND_NAMED_SUPPORT_TARGETED_PASS_2026-09-30.md` — GRP/POD/endmatter/named-support pass.
+12. `76_CONTENDING_2026_DECLINED_INVITATION_PLATFORM_RETURN_GUARDRAIL_2026-09-30.md` — July-2026 false-comeback guardrail.
+13. `77_BOOK_DISTRIBUTION_METADATA_SPLIT_AUDIT_2026-09-30.md` — book metadata/POD audit.
+14. `62_LOGICAL_SYNTHESIS_AND_RESEARCH_VERDICT_2026-09-29.md` — stable research verdict.
+15. `_START_HERE.md` — operational navigation.
 
 Historical reconciliation/planning only: `64_`, `68_`, `69_`, `70_`, `71_`, `73_` and arena control files.
 
@@ -104,7 +105,7 @@ On 2026-09-30 exact source requests were dispatched. Governing ledger: `84_`.
 
 ### Delivery checkpoint
 
-`85_` records the immediate delivery control:
+`85_` records the **historical 2026-09-30** immediate delivery control:
 
 - FSU Special Collections returned an automated receipt and assigned **ticket #58057** for the Tampa Times request;
 - no bounce/undeliverable object was observed in the immediate cross-domain check;
@@ -119,6 +120,20 @@ Do not promote silence into `accepted` or `research in progress` without a holde
 Operational rule:
 
 > **Do not restart generic web searches for these exact objects while authoritative-holder requests are pending. When a response arrives, preserve the original email/attachment or source locator, classify it, and update only the claim it actually resolves.**
+
+---
+
+## 2026-11-06 — holder replies supersede the September dispatch state
+
+See `86_HOLDER_RESPONSE_RECONCILIATION_2026-11-06.md` for evidence-limited readback from original incoming threads:
+
+- **Texas Tech, 2026-10-16:** University staff did not identify Lawson in the checked La Ventana/Toreador/athletic-guide football listings; four **1971 campus sportswriter** references surfaced. This is a bounded negative search and a positive campus-journalism lead, **not a proof he never played or worked for professional teams**.
+- **Wheaton, 2026-10-01:** staff located a `Stephen Lawson` **volunteer** mention in CN 074 Box 8 folder 8-3; original clipping image still uncollated; **1989 committee chair role not verified**.
+- **BGEA, 2026-10-19:** confirmed **five boxes** for the 1989 Little Rock Crusade and a **maximum of 30 remotely newly digitized pages**, asked researcher to choose onsite/remote. No page-level record received and **no fee/payment consent**.
+- **FSU, 2026-09-30:** requested `The Tampa Times` April 20, 1981 p.14 film is in general collection; external researchers cannot obtain FSU remote scans via its restricted service; actual page not received.
+- Other seven September 30 institutional recipients had **no substantive response located in the scoped 2026-11-06 inbox review**; this means neither refusal nor proven delivery failure.
+
+These four replies correct only the **acquisition/status ledger**. They do **not** justify changing canonical V6 narrative, reversing prior factual caution, asserting archive proof of the 1989 committee role, or importing source scans. The original `84_`/`85_` are intentionally retained as dated history.
 
 ---
 
@@ -204,7 +219,7 @@ Do not state as fact that:
 **Self-service/public-web biography work:** `CLOSED`  
 **Canonical biography in main:** `COMPLETE FOR CURRENT ARTICLE`  
 **Arena dependency:** `RETIRED`  
-**Exact external acquisitions:** `DISPATCHED / FSU TICKETED / AWAITING HOLDER RESPONSES`  
+**Exact external acquisitions:** `DISPATCHED / 4 SUBSTANTIVE INSTITUTIONAL REPLIES RECONCILED / BGEA REMOTE-VS-ONSITE CHOICE PENDING / OTHER HOLDERS AWAITING RESPONSE`  
 **V6 publication state:** `PASS / READY WITH GUARDRAILS`  
 **V7 trigger:** `NONE`
 
