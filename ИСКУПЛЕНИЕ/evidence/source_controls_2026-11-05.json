@@ -264,6 +264,126 @@
       "commit": "5a23d3222f22905f03542dc2686ba047610f0fc6",
       "gitBytes": 191104,
       "gitSha256": "5efeda5f7566a02447057bbf98bf96fd6218fa37de8c2cf00ac9b1f7eb8c0330"
+    },
+    {
+      "path": "docs/research/atonement/01_prokopenko_article_review.md",
+      "commit": "6823af4f9905dae9e78da6fc49e45e43df797fc1",
+      "gitBytes": 417045,
+      "gitSha256": "126489e8f1c59af67530c5d37eb5effe70232fec158758fa5f7f57b8088b89e4"
+    },
+    {
+      "path": "docs/research/atonement/06_detailed_refutation_of_prokopenko_arguments.md",
+      "commit": "6823af4f9905dae9e78da6fc49e45e43df797fc1",
+      "gitBytes": 175325,
+      "gitSha256": "6dce46f6a99490bbe34b9ea2208e265dc85eeda8188b668c70f77bb5aa3dd5d9"
+    },
+    {
+      "path": "docs/research/atonement/07_refutation_of_four_goals_theory.md",
+      "commit": "6823af4f9905dae9e78da6fc49e45e43df797fc1",
+      "gitBytes": 14532,
+      "gitSha256": "a8b730ca2630aec3cf6b5df20adf1be87826a0716547aeefe7a4d18733079e64"
+    },
+    {
+      "path": "docs/research/atonement/11_anti_tulip_polemic_and_terminology_critique.md",
+      "commit": "6823af4f9905dae9e78da6fc49e45e43df797fc1",
+      "gitBytes": 27183,
+      "gitSha256": "aacb72c9b3e0c3d5b467133cfbb94a88a1b75a8ed4682a3013d8617f54bd5bb0"
+    },
+    {
+      "path": "docs/research/atonement/12_grammatical_and_historical_errors_critique.md",
+      "commit": "6823af4f9905dae9e78da6fc49e45e43df797fc1",
+      "gitBytes": 39553,
+      "gitSha256": "3f6396bf780d9a7319785e9dedcb76c5076b67118b06c8397e269af32a110345"
+    },
+    {
+      "path": "docs/research/atonement/15_patristic_and_reformation_misattributions.md",
+      "commit": "6823af4f9905dae9e78da6fc49e45e43df797fc1",
+      "gitBytes": 32089,
+      "gitSha256": "e8683c75b291b583544d62688314514c5d8df5352f17ab146bd7af6343e30af5"
+    },
+    {
+      "path": "docs/research/atonement/16_lapsarian_critique_and_theological_flaws.md",
+      "commit": "6823af4f9905dae9e78da6fc49e45e43df797fc1",
+      "gitBytes": 55646,
+      "gitSha256": "ae470453d02af246aed3c29d16f88d8181c1336844d04ad3bd27461228f8e11c"
+    },
+    {
+      "path": "docs/research/atonement/17_quote_mining_and_theological_equivocation.md",
+      "commit": "6823af4f9905dae9e78da6fc49e45e43df797fc1",
+      "gitBytes": 39183,
+      "gitSha256": "a5e8669cd062dd3e99f0ec15a84bcad84cfa5cd452a52918f914e29c49a10916"
+    },
+    {
+      "path": "docs/research/atonement/23_classical_four_point_calvinists_vs_prokopenko.md",
+      "commit": "6823af4f9905dae9e78da6fc49e45e43df797fc1",
+      "gitBytes": 59747,
+      "gitSha256": "d484a9d6c512b2097b5bbd58f4adeebce7c36f9ee13b703e49a3803deeafe1db"
+    },
+    {
+      "path": "docs/research/atonement/27_pan_european_reformed_controversies_and_saumur_condemnation.md",
+      "commit": "6823af4f9905dae9e78da6fc49e45e43df797fc1",
+      "gitBytes": 31603,
+      "gitSha256": "e2236a7e3e3527321c2c9b70e5152fe4dd39f3c93008294aedfc548d8de6c779"
+    },
+    {
+      "path": "docs/research/atonement/33_analogies_and_illustrations_in_prokopenko_critique.md",
+      "commit": "6823af4f9905dae9e78da6fc49e45e43df797fc1",
+      "gitBytes": 21983,
+      "gitSha256": "8f8f2aee5546578f81e0545688bc423ed690af0650e9bd1f9fb269905aea6c9b"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+      "commit": "6823af4f9905dae9e78da6fc49e45e43df797fc1",
+      "gitBytes": 60144,
+      "gitSha256": "add5607ad1302bfe818f408ca4c7ec1461007a24692632800e4fb3f1b8819c9c"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
+      "commit": "6823af4f9905dae9e78da6fc49e45e43df797fc1",
+      "gitBytes": 1287192,
+      "gitSha256": "e04b4d3d7a57e9a648b092f3afa4770ada31da4b9755142fea54f07d3d434106"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
+      "commit": "6823af4f9905dae9e78da6fc49e45e43df797fc1",
+      "gitBytes": 156475,
+      "gitSha256": "099b6a6d19d7fa4e0da74af7a95aa2a2655e08a2d9745a2523938b0d84cb9061"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+      "commit": "6823af4f9905dae9e78da6fc49e45e43df797fc1",
+      "gitBytes": 110719,
+      "gitSha256": "0cf2b7aa1f4bd1da2a1300f34a8a260f83815066adf321af862c214e26b09767"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+      "commit": "6823af4f9905dae9e78da6fc49e45e43df797fc1",
+      "gitBytes": 233373,
+      "gitSha256": "c418b520c90a5b02fea884781763fb06b77da9acc512c9787ead3aadce6d317f"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+      "commit": "6823af4f9905dae9e78da6fc49e45e43df797fc1",
+      "gitBytes": 1223775,
+      "gitSha256": "0d56090d2abfde4a4e2648f1275d79b6910c5418666da56a770d7c154bea7620"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+      "commit": "6823af4f9905dae9e78da6fc49e45e43df797fc1",
+      "gitBytes": 191685,
+      "gitSha256": "a731466e0f9e696109a081daefb82b550d0eb78b31cdcdc38c0e28fed023aeb2"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md",
+      "commit": "6823af4f9905dae9e78da6fc49e45e43df797fc1",
+      "gitBytes": 438696,
+      "gitSha256": "aad55509b299c3c32ed0add71300ec13e3a3779bbbbe532c92d1657c24645a88"
+    },
+    {
+      "path": "docs/research/atonement/35_four_point_authors_mass_registry.md",
+      "commit": "6823af4f9905dae9e78da6fc49e45e43df797fc1",
+      "gitBytes": 645827,
+      "gitSha256": "12625374b9570d87b5aa7d5afc9bc5b33cfa553aecc6df2c482f1eca70728d9e"
     }
   ],
   "sources": [
@@ -2590,6 +2710,961 @@
         "PUBLICATION_HOLD"
       ],
       "classScope": "Primary translated biblical text, not independent proof of disputed interpretation."
+    },
+    {
+      "id": "allargs-greek-1john3",
+      "url": "https://biblehub.com/nestle/1_john/3.htm",
+      "title": "ΙΩΑΝΝΟΥ Α΄ 3 Nestle 1904",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-01.json",
+      "captureBytes": 35132,
+      "captureSha256": "7ff63137d9cc6d40659b6da3186d6c67bb90930cf7d3fadafe1d5da91b71ab74",
+      "captureJsonPointer": "/results/0/text",
+      "captureTextSha256": "b4b09ceed908d7a4dc41b048b1723e0b2ee3b50556a2c235f9e316669245364c",
+      "readScope": "Complete Nestle1904 Greek chapter 3 including 3:17; navigation excluded. All occurrences of kosmos checked; not a manuscript collation.",
+      "fullWorkRead": false,
+      "objectType": "biblical_chapter",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "Primary for the named author’s own words in the stated selected scope; historical claims about other writers require their own evidence. Full extraction is not full-work reading."
+    },
+    {
+      "id": "allargs-consensus1675-all26",
+      "url": "https://apostles-creed.org/wp-content/uploads/2014/07/Creed_Helvetic.pdf",
+      "title": null,
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-01.json",
+      "captureBytes": 35132,
+      "captureSha256": "7ff63137d9cc6d40659b6da3186d6c67bb90930cf7d3fadafe1d5da91b71ab74",
+      "captureJsonPointer": "/results/1/text",
+      "captureTextSha256": "2b8fe52425708e08b092d8a1994c5c568c6e9b6ba1cdf07d8543a200c414d6de",
+      "readScope": "Complete supplied English translation of all 26 canons. Not full Klauber journal article pp103–127; p113 not received. Translation verified as text, not original Latin facsimile.",
+      "fullWorkRead": false,
+      "objectType": "confessional_translation",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "Primary for the named author’s own words in the stated selected scope; historical claims about other writers require their own evidence. Full extraction is not full-work reading."
+    },
+    {
+      "id": "allargs-pca-tulip-history",
+      "url": "https://thisday.pcahistory.org/2013/09/originator-of-the-t-u-l-i-p-acrostic/",
+      "title": "September 25: Originator of the T.U.L.I.P Acrostic? – This Day in Presbyterian History",
+      "evidenceClass": "A2",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-02.json",
+      "captureBytes": 104429,
+      "captureSha256": "d31c054c710c10c2d93f3329ec6d57da048c11134194535f360c346d9a290e9f",
+      "captureJsonPointer": "/results/1/text",
+      "captureTextSha256": "0be70abdebb079e5470399cbe8cfccfc60fabfa82ee9ebab6bca09b032ec1795",
+      "readScope": "Complete institutional page with Vail1913 excerpt and approximately1905 lecture report. Original1913 issue not collated.",
+      "fullWorkRead": true,
+      "objectType": "institutional_historical_publication",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "A2 for PCA Historical Center publication and reproduced witness; not original1913 issue verification."
+    },
+    {
+      "id": "allargs-akin-personal-statement",
+      "url": "https://founders.org/articles/sage-courageous-counsel-from-dr-danny-akin/",
+      "title": "Sage, Courageous Counsel from Dr. Danny Akin - Founders Ministries",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-02.json",
+      "captureBytes": 104429,
+      "captureSha256": "d31c054c710c10c2d93f3329ec6d57da048c11134194535f360c346d9a290e9f",
+      "captureJsonPointer": "/results/2/text",
+      "captureTextSha256": "71f705a7428a3ba2a25ee1004ba9a4372b4f990ea4aaf3300752a408f38e04c4",
+      "readScope": "Selected own published email: unconditional election, effectual calling, universal provision and limited application. Surrounding editorial history not independently adopted.",
+      "fullWorkRead": false,
+      "objectType": "authorial_text",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "A1 for Akin’s reproduced personal statement only; Founders editorial claims are not Akin’s words."
+    },
+    {
+      "id": "allargs-calvin-iv14-7",
+      "url": "https://ccel.org/ccel/calvin/institutes.vi.xv.html",
+      "title": "John Calvin: Institutes of the Christian Religion -\n        Christian Classics Ethereal Library",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-03.json",
+      "captureBytes": 124734,
+      "captureSha256": "867d29325320aa6eb8616eb6517c1a10d947586a9c3358a2acd4eba24d63aafc",
+      "captureJsonPointer": "/results/0/text",
+      "captureTextSha256": "01ab92eb8cf43a82d84f662f8a418cda643c5780758d8fc537e58a0df2e27bd7",
+      "readScope": "Selected full section IV.14.7 on sacraments and application; surrounding chapter received but not wholly newly read.",
+      "fullWorkRead": false,
+      "objectType": "authorial_text",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "Primary for the named author’s own words in the stated selected scope; historical claims about other writers require their own evidence. Full extraction is not full-work reading."
+    },
+    {
+      "id": "allargs-calvin-ii12-1-4",
+      "url": "https://ccel.org/ccel/calvin/institutes.iv.xiii.html",
+      "title": "John Calvin: Institutes of the Christian Religion -\n        Christian Classics Ethereal Library",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-03.json",
+      "captureBytes": 124734,
+      "captureSha256": "867d29325320aa6eb8616eb6517c1a10d947586a9c3358a2acd4eba24d63aafc",
+      "captureJsonPointer": "/results/1/text",
+      "captureTextSha256": "e7df97ba85b4825659c2c948563a9cfee6f2b17323e65071234bbab008cf3746",
+      "readScope": "Sections II.12.1–4 read; especially angels needing a Head, shared nature and satisfaction. Remaining chapter not claimed wholly read.",
+      "fullWorkRead": false,
+      "objectType": "authorial_text",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "Primary for the named author’s own words in the stated selected scope; historical claims about other writers require their own evidence. Full extraction is not full-work reading."
+    },
+    {
+      "id": "allargs-greek-1john1",
+      "url": "https://biblehub.com/nestle/1_john/1.htm",
+      "title": "ΙΩΑΝΝΟΥ Α΄ 1 Nestle 1904",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-04.json",
+      "captureBytes": 61691,
+      "captureSha256": "3b85a705c186f1b65a04097a65c4926b1fa439a7bf230586fa6da2098969da87",
+      "captureJsonPointer": "/results/0/text",
+      "captureTextSha256": "da43d3985b9dac191249d6efe78062d6195e62283d545b7f164cde96acfe3fa2",
+      "readScope": "Complete Nestle1904 Greek chapter 1; all kosmos occurrences checked. Not all textual variants or whole NT.",
+      "fullWorkRead": false,
+      "objectType": "biblical_chapter",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "Primary for the named author’s own words in the stated selected scope; historical claims about other writers require their own evidence. Full extraction is not full-work reading."
+    },
+    {
+      "id": "allargs-greek-1john2",
+      "url": "https://biblehub.com/nestle/1_john/2.htm",
+      "title": "ΙΩΑΝΝΟΥ Α΄ 2 Nestle 1904",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-04.json",
+      "captureBytes": 61691,
+      "captureSha256": "3b85a705c186f1b65a04097a65c4926b1fa439a7bf230586fa6da2098969da87",
+      "captureJsonPointer": "/results/1/text",
+      "captureTextSha256": "8308de8ae80d0cf895da9043c79c07d390ffffbbc96be77b8ac0ed711073259a",
+      "readScope": "Complete Nestle1904 Greek chapter 2; all kosmos occurrences checked. Not all textual variants or whole NT.",
+      "fullWorkRead": false,
+      "objectType": "biblical_chapter",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "Primary for the named author’s own words in the stated selected scope; historical claims about other writers require their own evidence. Full extraction is not full-work reading."
+    },
+    {
+      "id": "allargs-greek-1john4",
+      "url": "https://biblehub.com/nestle/1_john/4.htm",
+      "title": "ΙΩΑΝΝΟΥ Α΄ 4 Nestle 1904",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-04.json",
+      "captureBytes": 61691,
+      "captureSha256": "3b85a705c186f1b65a04097a65c4926b1fa439a7bf230586fa6da2098969da87",
+      "captureJsonPointer": "/results/2/text",
+      "captureTextSha256": "66542910efc18012927a2dadd2a573bf1287cfe852fb465ee12f2ee57cf5e80c",
+      "readScope": "Complete Nestle1904 Greek chapter 4; all kosmos occurrences checked. Not all textual variants or whole NT.",
+      "fullWorkRead": false,
+      "objectType": "biblical_chapter",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "Primary for the named author’s own words in the stated selected scope; historical claims about other writers require their own evidence. Full extraction is not full-work reading."
+    },
+    {
+      "id": "allargs-greek-1john5",
+      "url": "https://biblehub.com/nestle/1_john/5.htm",
+      "title": "ΙΩΑΝΝΟΥ Α΄ 5 Nestle 1904",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-04.json",
+      "captureBytes": 61691,
+      "captureSha256": "3b85a705c186f1b65a04097a65c4926b1fa439a7bf230586fa6da2098969da87",
+      "captureJsonPointer": "/results/3/text",
+      "captureTextSha256": "0ddfc1b85eb7f5dd73067c945a2c5d5d9270bb3690f2a8276b059ab1d374413e",
+      "readScope": "Complete Nestle1904 Greek chapter 5; all kosmos occurrences checked. Not all textual variants or whole NT.",
+      "fullWorkRead": false,
+      "objectType": "biblical_chapter",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "Primary for the named author’s own words in the stated selected scope; historical claims about other writers require their own evidence. Full extraction is not full-work reading."
+    },
+    {
+      "id": "allargs-chidester2025-full",
+      "url": "https://profiles.rpts.edu/wp-content/uploads/2025/07/CH630-Chidester-paper.pdf",
+      "title": null,
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-04.json",
+      "captureBytes": 61691,
+      "captureSha256": "3b85a705c186f1b65a04097a65c4926b1fa439a7bf230586fa6da2098969da87",
+      "captureJsonPointer": "/results/5/text",
+      "captureTextSha256": "b31c43029e45f6203af15b5833256dab1ab359ec5e3f24096b3da17ed06ce4df",
+      "readScope": "Complete main paper pp1–13 and bibliography p14 as supplied. Course CH630 paper dated May27,2025, not a doctoral dissertation. Cited original books not all obtained.",
+      "fullWorkRead": true,
+      "objectType": "authorial_text",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "A1 for student author’s own arguments; B1 contextual use for historical claims, not sole quote-safe evidence of cited originals."
+    },
+    {
+      "id": "allargs-stewart2008-full",
+      "url": "https://www.biblicalstudies.gospelstudies.org.uk/pdf/sbet/26-2_187.pdf",
+      "title": null,
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": true,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-05.json",
+      "captureBytes": 49149,
+      "captureSha256": "93e36c736bc8946cb186632e48861c5c8090a2e47394290050dde54863c358c3",
+      "captureJsonPointer": "/results/0/text",
+      "captureTextSha256": "a99ec5ad91cb3b76a4cdaf01894b5e05a9b5b52955219584c8f815dcfea0805b",
+      "readScope": "Complete main article pp187–203, with notes. Source text distinguishes Latin Sylloge1804 from Scott’s English editions1811/1818. Scott1811p725 not independently received.",
+      "fullWorkRead": true,
+      "objectType": "authorial_text",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "A1 for Stewart’s own article and bibliographic claim; B1 for historical events and unavailable originals cited in it.",
+      "originalObjectUrl": "https://www.reformedontheweb.com/calvinism/points-calvinism-retrospect-prospect-kenneth-stewart.pdf",
+      "originalObjectBytes": 752426,
+      "originalObjectSha256": "08d09699816dd64737bda0c70a3bc57a3709677052773ac187efa82d71c656e7",
+      "originalObjectExternalCacheRelativePath": "sources/stewart2008.pdf",
+      "originalObjectPageCount": 17
+    },
+    {
+      "id": "allargs-hodges1993-selected",
+      "url": "https://faithalone.org/journal-articles/new-puritanism-part-1/",
+      "title": "The New Puritanism Part 1: Carson on Christian Assurance - Grace Evangelical Society",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-06.json",
+      "captureBytes": 74490,
+      "captureSha256": "f964dfe958a56252e41c5d86f547ceb3d241446f30f3c43fe9bf95b34a31797a",
+      "captureJsonPointer": "/results/0/text",
+      "captureTextSha256": "b3c0ef0422c80cbcce4d9935eff77871ab4dced7d111e5cdba4e095faab1b2fc",
+      "readScope": "Own introduction and section I of New Puritanism Part1 read. Remaining article received, not wholly read; no blanket five-point classification inferred.",
+      "fullWorkRead": false,
+      "objectType": "authorial_text",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "A1 for Hodges’s own discussion; institution membership is not proof of individual full soteriology."
+    },
+    {
+      "id": "allargs-hiebert-archival-bio",
+      "url": "https://oac.cdlib.org/findaid/ark:/13030/c87d3323",
+      "title": "Inventory of the D. Edmond Hiebert Papers, 1928-1995 - OAC",
+      "evidenceClass": "A2",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-06.json",
+      "captureBytes": 74490,
+      "captureSha256": "f964dfe958a56252e41c5d86f547ceb3d241446f30f3c43fe9bf95b34a31797a",
+      "captureJsonPointer": "/results/1/text",
+      "captureTextSha256": "29a8e07cdd05b187d366180dc27c5a37fdbfe6a62f344373e4023e33063b48c1",
+      "readScope": "Complete supplied finding-aid biography and collection description. Faculty/publisher distinction checked; personal theology not inferred from denomination.",
+      "fullWorkRead": true,
+      "objectType": "institutional_archival_biography",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "Primary for the named author’s own words in the stated selected scope; historical claims about other writers require their own evidence. Full extraction is not full-work reading."
+    },
+    {
+      "id": "allargs-bunyan-reprobation-x",
+      "url": "https://www.reformedreader.org/rbb/bunyan/reprobation/chapter10.htm",
+      "title": "Reprobation Asserted, John Bunyan | The Reformed Reader",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-06.json",
+      "captureBytes": 74490,
+      "captureSha256": "f964dfe958a56252e41c5d86f547ceb3d241446f30f3c43fe9bf95b34a31797a",
+      "captureJsonPointer": "/results/2/text",
+      "captureTextSha256": "e6b71400461782b9864b62f080e3f01fbadc904ae69fbaa8e93a66dac6f3e602",
+      "readScope": "Complete supplied chapter X of Reprobation Asserted. Whole book not read; contested authorship considered with Greaves and Helm.",
+      "fullWorkRead": false,
+      "objectType": "authorial_text",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "Primary for the named author’s own words in the stated selected scope; historical claims about other writers require their own evidence. Full extraction is not full-work reading."
+    },
+    {
+      "id": "allargs-bible-habakkuk1",
+      "url": "https://www.biblegateway.com/passage/?search=Habakkuk%201&version=ASV",
+      "title": "Bible Gateway passage: Habakkuk 1 - American Standard Version",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-07.json",
+      "captureBytes": 186549,
+      "captureSha256": "07188b2f7f96dac951be990e51b9ec1bae6af92a55d506064b8df4041be201d4",
+      "captureJsonPointer": "/results/1/text",
+      "captureTextSha256": "be489c935f34ac0fffaa29abcdd524232e0996feec9b37225932799c7aebfccf",
+      "readScope": "Complete ASV chapter1 and contextual complaint about God’s patience; site navigation excluded.",
+      "fullWorkRead": false,
+      "objectType": "biblical_chapter",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "Primary for the named author’s own words in the stated selected scope; historical claims about other writers require their own evidence. Full extraction is not full-work reading."
+    },
+    {
+      "id": "allargs-bible-2peter2",
+      "url": "https://www.biblegateway.com/passage/?search=2%20Peter%202&version=ASV",
+      "title": "Bible Gateway passage: 2 Peter 2 - American Standard Version",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-07.json",
+      "captureBytes": 186549,
+      "captureSha256": "07188b2f7f96dac951be990e51b9ec1bae6af92a55d506064b8df4041be201d4",
+      "captureJsonPointer": "/results/2/text",
+      "captureTextSha256": "59f59bc4e2263dc9ad37878cf2c8d50a25116cedd522945f3083208cbddaa1b5",
+      "readScope": "Complete ASV chapter2 including warnings and supplied notes; site navigation excluded.",
+      "fullWorkRead": false,
+      "objectType": "biblical_chapter",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "Primary for the named author’s own words in the stated selected scope; historical claims about other writers require their own evidence. Full extraction is not full-work reading."
+    },
+    {
+      "id": "allargs-bible-deuteronomy32",
+      "url": "https://www.biblegateway.com/passage/?search=Deuteronomy%2032&version=ASV",
+      "title": "Bible Gateway passage: Deuteronomy 32 - American Standard Version",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-07.json",
+      "captureBytes": 186549,
+      "captureSha256": "07188b2f7f96dac951be990e51b9ec1bae6af92a55d506064b8df4041be201d4",
+      "captureJsonPointer": "/results/3/text",
+      "captureTextSha256": "eef9ef1de1dc44bc8db964ce880427c229dc6283b0efd53bab8b3a807e55cd6d",
+      "readScope": "Complete ASV chapter32 and supplied notes; covenant purchase image, not an LXX text collation.",
+      "fullWorkRead": false,
+      "objectType": "biblical_chapter",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "Primary for the named author’s own words in the stated selected scope; historical claims about other writers require their own evidence. Full extraction is not full-work reading."
+    },
+    {
+      "id": "allargs-bible-hebrews9",
+      "url": "https://www.biblegateway.com/passage/?search=Hebrews%209&version=ASV",
+      "title": "Bible Gateway passage: Hebrews 9 - American Standard Version",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-07.json",
+      "captureBytes": 186549,
+      "captureSha256": "07188b2f7f96dac951be990e51b9ec1bae6af92a55d506064b8df4041be201d4",
+      "captureJsonPointer": "/results/4/text",
+      "captureTextSha256": "24037a79e5ab75b7bec860a0fa635a523db586b3a07f71828769029f8936b7d5",
+      "readScope": "Complete ASV chapter9 and supplied notes; cultic cleansing context. Not all Hebrews.",
+      "fullWorkRead": false,
+      "objectType": "biblical_chapter",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "Primary for the named author’s own words in the stated selected scope; historical claims about other writers require their own evidence. Full extraction is not full-work reading."
+    },
+    {
+      "id": "allargs-bunyan-reprobation-ix",
+      "url": "https://www.reformedreader.org/rbb/bunyan/reprobation/chapter09.htm",
+      "title": "Reprobation Asserted, John Bunyan | The Reformed Reader",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-08.json",
+      "captureBytes": 28347,
+      "captureSha256": "3f45f38620948379fd6efe77fd877a76413a7ec0825ea600c9129383546dcdf6",
+      "captureJsonPointer": "/results/1/text",
+      "captureTextSha256": "8cc2e3af965170223ecb6d1ad32057a26804af93afe8b77d5ecf9dd2eac14090",
+      "readScope": "Complete supplied chapter IX. Not full book; authorship disputed independently.",
+      "fullWorkRead": false,
+      "objectType": "authorial_text",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "Primary for the named author’s own words in the stated selected scope; historical claims about other writers require their own evidence. Full extraction is not full-work reading."
+    },
+    {
+      "id": "allargs-greaves1965-main",
+      "url": "https://reformed.org/wp-content/uploads/2019/04/JohnBunyanReprobationAsserted.pdf",
+      "title": null,
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-08.json",
+      "captureBytes": 28347,
+      "captureSha256": "3f45f38620948379fd6efe77fd877a76413a7ec0825ea600c9129383546dcdf6",
+      "captureJsonPointer": "/results/2/text",
+      "captureTextSha256": "a7c6452e64c7e9ae97f71bffc07278c31deb8875d5d516cf2c824f714bebed79",
+      "readScope": "Complete main article pp126–131 and supplied in-page notes. Final notes continued on p125 are missing; entire work therefore not fully obtained/read.",
+      "fullWorkRead": false,
+      "objectType": "authorial_text",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "A1 for Greaves’s own case against authorship; B1 historical analysis, not final primary proof that Bunyan did not author it."
+    },
+    {
+      "id": "allargs-schaff-consensus-context",
+      "url": "https://www.ccel.org/ccel/schaff/creeds1.ix.ii.xi.html",
+      "title": "Philip Schaff: Creeds of Christendom, with a History and Critical notes. Volume I. The History of Creeds. -\n        Christian Classics Ethereal Library",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-09.json",
+      "captureBytes": 77955,
+      "captureSha256": "77c54ca7f0d93a99203b1eee362ff8960263336461a55d223048226a944845e2",
+      "captureJsonPointer": "/results/0/text",
+      "captureTextSha256": "ef4a8c6b774d67dfcaf013f08cde5266319b90fee2e216cca041e75c0acc790f",
+      "readScope": "Selected section61 pp486–489, footnote932 and Amyraut charity paragraphs. Full chapter received, not wholly read. Latin preface excerpts read in this secondary edition.",
+      "fullWorkRead": false,
+      "objectType": "authorial_text",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "B1 for historical narrative; quoted preface excerpts inspected through Schaff only, not independent original synod acts."
+    },
+    {
+      "id": "allargs-bunyan-reprobation-xi-selected",
+      "url": "https://www.reformedreader.org/rbb/bunyan/reprobation/chapter11.htm",
+      "title": "Reprobation Asserted, John Bunyan | The Reformed Reader",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-09.json",
+      "captureBytes": 77955,
+      "captureSha256": "77c54ca7f0d93a99203b1eee362ff8960263336461a55d223048226a944845e2",
+      "captureJsonPointer": "/results/1/text",
+      "captureTextSha256": "f7cc3c011b47d7a39f29191d4579e2a987d1f9c16df3708ed4f61a220af531ec",
+      "readScope": "Selected context of chapter XI only; full extracted33041 characters not wholly read.",
+      "fullWorkRead": false,
+      "objectType": "authorial_text",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "Primary for the named author’s own words in the stated selected scope; historical claims about other writers require their own evidence. Full extraction is not full-work reading."
+    },
+    {
+      "id": "allargs-helm1979-full",
+      "url": "https://www.biblicalstudies.gospelstudies.org.uk/pdf/bq/28-2_087.pdf",
+      "title": null,
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-10.json",
+      "captureBytes": 21927,
+      "captureSha256": "e8f1053e0da84d5b384eb7aa52f28aa0b3e837adb5bcf242a3cea34948be64d3",
+      "captureJsonPointer": "/results/0/text",
+      "captureTextSha256": "2338b010ee34623d3db34b6558a5805c877692b3adbf4f7618ddc3d7e0111614",
+      "readScope": "Complete main article pp87–93 and16 notes, defending Bunyan authorship and conditional sufficiency. Adjacent preceding article/book-review excluded.",
+      "fullWorkRead": true,
+      "objectType": "authorial_text",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "A1 for Helm’s actual reply and interpretation; B1 historical analysis, not final primary determination of disputed authorship."
+    },
+    {
+      "id": "allargs-bunyan-advocate-selected",
+      "url": "https://acacia.pairsite.com/Acacia.John.Bunyan/Sermons.Allegories/Jesus.Christ.Advocate/5.html",
+      "title": "Acacia John Bunyan - Online Library - Sermons & Allegories - The Work of Jesus Christ As An Advocate: 5",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-11.json",
+      "captureBytes": 43597,
+      "captureSha256": "f78beba2cec27881d4543f10a6905a2c2ba8041ee9732268963b96a8f06ff6a3",
+      "captureJsonPointer": "/results/0/text",
+      "captureTextSha256": "eab142f82430280b2414d8c0d4b81eb2757fc3836a82c7916c8ed91c7b903030",
+      "readScope": "Selected complete Who have Christ for an Advocate? context, section III, approximately4000characters: current called children versus priesthood including future elect, retaining possible-wider-extent qualification. Not whole39121-character extraction.",
+      "fullWorkRead": false,
+      "objectType": "authorial_text",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "Primary for the named author’s own words in the stated selected scope; historical claims about other writers require their own evidence. Full extraction is not full-work reading."
+    },
+    {
+      "id": "allargs-cyril-xiii-selected",
+      "url": "https://www.newadvent.org/fathers/310113.htm",
+      "title": "CHURCH FATHERS: Catechetical Lecture 13 (Cyril of Jerusalem)",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-12.json",
+      "captureBytes": 335739,
+      "captureSha256": "51b3b13f3ff59816834a3a668dedf5031859fa47d853148010ce1174d94ebd72",
+      "captureJsonPointer": "/results/0/text",
+      "captureTextSha256": "ea1d46a909b6e2ed3dd6bb2a401a606b2284cede02c686d874aeaed2d6e52838",
+      "readScope": "Sections XIII.1–5 and beginning6 read: dignity, universal language and actual suffering. Not entire CatecheticalLectureXIII.",
+      "fullWorkRead": false,
+      "objectType": "authorial_text",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "Primary for the named author’s own words in the stated selected scope; historical claims about other writers require their own evidence. Full extraction is not full-work reading."
+    },
+    {
+      "id": "allargs-anglican-articles17-31",
+      "url": "https://www.churchofengland.org/prayer-and-worship/worship-texts-and-resources/book-common-prayer/articles-religion",
+      "title": "Articles of Religion | The Church of England",
+      "evidenceClass": "A2",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-12.json",
+      "captureBytes": 335739,
+      "captureSha256": "51b3b13f3ff59816834a3a668dedf5031859fa47d853148010ce1174d94ebd72",
+      "captureJsonPointer": "/results/2/text",
+      "captureTextSha256": "0702849703e1ed69c26a0ad091dd460c5baeeccb502c88a39e22057519ae1ded",
+      "readScope": "Articles XVII and XXXI read in their supplied official context. Not every article or a new historical-edition collation.",
+      "fullWorkRead": false,
+      "objectType": "institutional_confessional_text",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "A2 for official Church of England text; no retrospective claim about all signatories."
+    },
+    {
+      "id": "allargs-greek-1timothy2",
+      "url": "https://biblehub.com/nestle/1_timothy/2.htm",
+      "title": "ΠΡΟΣ ΤΙΜΟΘΕΟΝ Α΄ 2 Nestle 1904",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-12.json",
+      "captureBytes": 335739,
+      "captureSha256": "51b3b13f3ff59816834a3a668dedf5031859fa47d853148010ce1174d94ebd72",
+      "captureJsonPointer": "/results/3/text",
+      "captureTextSha256": "80f231ce3e564dd7687dbb05ef65389a1a973fb7de437bf4e866db2834c33020",
+      "readScope": "1Tim2:1–7 read, entire chapter extracted; not all epistle.",
+      "fullWorkRead": false,
+      "objectType": "biblical_selected_context",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "Primary for the named author’s own words in the stated selected scope; historical claims about other writers require their own evidence. Full extraction is not full-work reading."
+    },
+    {
+      "id": "allargs-greek-hebrews2",
+      "url": "https://biblehub.com/nestle/hebrews/2.htm",
+      "title": "ΠΡΟΣ ΕΒΡΑΙΟΥΣ 2 Nestle 1904",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-12.json",
+      "captureBytes": 335739,
+      "captureSha256": "51b3b13f3ff59816834a3a668dedf5031859fa47d853148010ce1174d94ebd72",
+      "captureJsonPointer": "/results/4/text",
+      "captureTextSha256": "200cd84db0996898e63a82e5a0504f78388ad88122a149a51fce78ae8419a82e",
+      "readScope": "Heb2:9–18 read, entire chapter extracted; not all epistle.",
+      "fullWorkRead": false,
+      "objectType": "biblical_selected_context",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "Primary for the named author’s own words in the stated selected scope; historical claims about other writers require their own evidence. Full extraction is not full-work reading."
+    },
+    {
+      "id": "allargs-greek-romans14",
+      "url": "https://biblehub.com/nestle/romans/14.htm",
+      "title": "ΠΡΟΣ ΡΩΜΑΙΟΥΣ 14 Nestle 1904",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-12.json",
+      "captureBytes": 335739,
+      "captureSha256": "51b3b13f3ff59816834a3a668dedf5031859fa47d853148010ce1174d94ebd72",
+      "captureJsonPointer": "/results/5/text",
+      "captureTextSha256": "f3b2e34801dec2c3a24f4ba1cc3af1340168747dbfc75597154efe720197d0b7",
+      "readScope": "Rom14:13–23 read, entire chapter extracted; not all epistle.",
+      "fullWorkRead": false,
+      "objectType": "biblical_selected_context",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "Primary for the named author’s own words in the stated selected scope; historical claims about other writers require their own evidence. Full extraction is not full-work reading."
+    },
+    {
+      "id": "allargs-greek-1corinthians8",
+      "url": "https://biblehub.com/nestle/1_corinthians/8.htm",
+      "title": "ΠΡΟΣ ΚΟΡΙΝΘΙΟΥΣ Α΄ 8 Nestle 1904",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-12.json",
+      "captureBytes": 335739,
+      "captureSha256": "51b3b13f3ff59816834a3a668dedf5031859fa47d853148010ce1174d94ebd72",
+      "captureJsonPointer": "/results/6/text",
+      "captureTextSha256": "cac61c8b7342f0da9a7edab81eec2bad652d33965a0e4f7c87ab39e1d54fbfbb",
+      "readScope": "1Cor8:7–13 read, entire chapter extracted; not all epistle.",
+      "fullWorkRead": false,
+      "objectType": "biblical_selected_context",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "Primary for the named author’s own words in the stated selected scope; historical claims about other writers require their own evidence. Full extraction is not full-work reading."
+    },
+    {
+      "id": "allargs-greek-john10",
+      "url": "https://biblehub.com/nestle/john/10.htm",
+      "title": "ΚΑΤΑ ΙΩΑΝΝΗΝ 10 Nestle 1904",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-12.json",
+      "captureBytes": 335739,
+      "captureSha256": "51b3b13f3ff59816834a3a668dedf5031859fa47d853148010ce1174d94ebd72",
+      "captureJsonPointer": "/results/7/text",
+      "captureTextSha256": "b964c417c62bc7fcef1a1c6a0eebf708067f1fd167edaf53dea2df98b7d3b967",
+      "readScope": "Jn10:11,14–18,25–30 read, entire chapter extracted; not whole Gospel.",
+      "fullWorkRead": false,
+      "objectType": "biblical_selected_context",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "Primary for the named author’s own words in the stated selected scope; historical claims about other writers require their own evidence. Full extraction is not full-work reading."
+    },
+    {
+      "id": "allargs-chrysostom-colossians-homiii",
+      "url": "https://www.newadvent.org/fathers/230303.htm",
+      "title": "CHURCH FATHERS: Homily 3 on Colossians (Chrysostom)",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-13.json",
+      "captureBytes": 39290,
+      "captureSha256": "1f42e6628b0ad06ead3321a5d8df47125c195d37b6716958cbf7bce810ff449f",
+      "captureJsonPointer": "/results/0/text",
+      "captureTextSha256": "8e9b76312b6e6729f331c19ad9795c3ebcd85a8dad3a0193db2eed278d935c70",
+      "readScope": "Selected HomilyIII context on Col1:20, approximately4700characters: angelic hostility to sinful humanity. Not entire supplied homily.",
+      "fullWorkRead": false,
+      "objectType": "authorial_text",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "Primary for the named author’s own words in the stated selected scope; historical claims about other writers require their own evidence. Full extraction is not full-work reading."
+    },
+    {
+      "id": "allargs-owen-ii4-selected",
+      "url": "https://www.ccel.org/ccel/o/owen/deathofdeath/cache/deathofdeath.txt",
+      "title": null,
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-14.json",
+      "captureBytes": 2831249,
+      "captureSha256": "4224ee75461289a8c45f8f4aa83232f99e9c7201e760f6cc3f0a4d4f14e2cde5",
+      "captureJsonPointer": "/results/0/text",
+      "captureTextSha256": "971b1b9501d3cea8f04b8b58156529d146639175a0499cd8a2607f1c252c9ff9",
+      "readScope": "Selected BookII chapter4, extracted offsets approximately263000–277000: acquisition/application distinctions and same-object arguments including objections. Not whole II.4 or2.78M-character book.",
+      "fullWorkRead": false,
+      "objectType": "authorial_text",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "Primary for the named author’s own words in the stated selected scope; historical claims about other writers require their own evidence. Full extraction is not full-work reading."
+    },
+    {
+      "id": "allargs-ussher-xii-letters",
+      "url": "https://archive.org/download/wholeworkswithli12usshuoft/wholeworkswithli12usshuoft_djvu.txt",
+      "title": null,
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-17.json",
+      "captureBytes": 1117149,
+      "captureSha256": "7f16f17ee82c945d6e84525291a99c5c03d66aefb4b99ec038fb38ba037bb91a",
+      "captureJsonPointer": "/results/0/text",
+      "captureTextSha256": "256b5a583b4212b7769b7792089bcc049db838fdb8f356714526f2a099362ec8",
+      "readScope": "Whole relevant letter WorksXII pp553–560 and reply pp563–570 read in OCR, selected key pages visually collated. Not whole volume; anthology imprint year not independently fixed beyond Archive metadata1847–64.",
+      "fullWorkRead": false,
+      "objectType": "authorial_text",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "A1 for Ussher’s own letters in the selected pages; quoted patristic authorship not independently resolved."
+    },
+    {
+      "id": "allargs-strong1907-e-intercession",
+      "url": "https://www.gutenberg.org/ebooks/44555.txt.utf-8",
+      "title": null,
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-capture-19.json",
+      "captureBytes": 2079985,
+      "captureSha256": "cecc3d791b87ca31c33404cce5d6d2676d87e7a152702919ca4f9444eb752267",
+      "captureJsonPointer": "/results/0/text",
+      "captureTextSha256": "9a6ae83168ab4e0b34f97837220939394fd06b78b8b026695f74312ce8576441",
+      "readScope": "Title/front matter identifies1907. Entire section E on extent read, offsets1963257–1973262 and context1961600–1973600; intercession A–C, especially B, offsets1975050–1980300 read. Not full volume; printedp771 image not received.",
+      "fullWorkRead": false,
+      "objectType": "authorial_text",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "Primary for the named author’s own words in the stated selected scope; historical claims about other writers require their own evidence. Full extraction is not full-work reading."
+    },
+    {
+      "id": "allargs-cheek2025-full-review",
+      "url": "https://seminary.bju.edu/files/2025/11/JBTW6.1_Review03_BirdHarrower.pdf",
+      "title": "Jonathan M. Cheek, review of Bird/Harrower, JBTW6.1,2025,pp94–99",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": true,
+      "facsimileVerified": true,
+      "externalCacheRelativePath": "sources/bju2025-review.pdf",
+      "bytes": 1846323,
+      "sha256": "964091497ebb2f246738ebf9631cc80562caced9648992ae37b38c7bbb2ae460",
+      "originalObjectPageCount": 6,
+      "readScope": "All six image pages printed94–99 read visually. This is the full review, not the240-page Bird/Harrower2023 book.",
+      "fullWorkRead": true,
+      "objectType": "authorial_book_review",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "A1 for Cheek’s own assessment; B1 for the reviewed book’s contents, which were not independently read."
+    },
+    {
+      "id": "allargs-prokopenko-video-captions-selected",
+      "url": "https://www.youtube.com/watch?v=HKlAGsbwWwE",
+      "title": "Discussion with Prokopenko, Gurtaev and Gerdov; automatic Russian captions",
+      "evidenceClass": "C",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "originalObjectBytesVerified": false,
+      "facsimileVerified": false,
+      "externalCacheRelativePath": "sources/allargs-video-transcript.json",
+      "captureBytes": 317806,
+      "captureSha256": "d307258c28493e4d001909c047aaca8c3377952ecd277ea343c06ce7d5a86980",
+      "readScope": "Complete captions47:13–1:18:44 read in two blocks. No full-video reading/listening, audio collation, publication-date verification or final voice attribution. Automated caption errors and missing English retained as limits.",
+      "fullWorkRead": false,
+      "objectType": "automatic_video_captions",
+      "quoteSafe": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "classScope": "C for machine captions only; no precise verbatim speaker attribution.2019 article remains A1 characterization basis.",
+      "acquisitionCredits": 5
     }
   ],
   "scans": [
@@ -3180,6 +4255,373 @@
       ],
       "readScope": "Complete displayed page image; printed page number verified visually. Not whole book.",
       "fullWorkRead": false
+    },
+    {
+      "id": "allargs-scan-prokopenko-p15",
+      "url": "https://www.teoblogia.ru/_service/363701/download/id/438188/name/Прокопенко_За+кого+умер+Христос.pdf",
+      "printedPage": 15,
+      "externalCacheRelativePath": "tmp/pdfs/prokopenko-p15.png",
+      "bytes": 38470,
+      "sha256": "45f54dcdde1a277156764a33a70ae3a969694fdd416ef688ef3f2aafa299371f",
+      "visuallyInspected": true,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "readScope": "Whole displayed article PDF page visually checked, including table/notes. Render is not a separate bibliographic edition.",
+      "fullWorkRead": false,
+      "parentOriginalSha256": "9c42c595dfb080a6f46c768e3a16c7df08d2778cc75273f44d5331fc76d99cc8"
+    },
+    {
+      "id": "allargs-scan-prokopenko-p29",
+      "url": "https://www.teoblogia.ru/_service/363701/download/id/438188/name/Прокопенко_За+кого+умер+Христос.pdf",
+      "printedPage": 29,
+      "externalCacheRelativePath": "tmp/pdfs/prokopenko-p29.png",
+      "bytes": 47254,
+      "sha256": "2048cbcac55096f1c2c733ac27546143fb07cbe37bcd2780e4dc55ef207a6706",
+      "visuallyInspected": true,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "readScope": "Whole displayed article PDF page visually checked, including table/notes. Render is not a separate bibliographic edition.",
+      "fullWorkRead": false,
+      "parentOriginalSha256": "9c42c595dfb080a6f46c768e3a16c7df08d2778cc75273f44d5331fc76d99cc8"
+    },
+    {
+      "id": "allargs-scan-prokopenko-p30",
+      "url": "https://www.teoblogia.ru/_service/363701/download/id/438188/name/Прокопенко_За+кого+умер+Христос.pdf",
+      "printedPage": 30,
+      "externalCacheRelativePath": "tmp/pdfs/prokopenko-p30.png",
+      "bytes": 42698,
+      "sha256": "677bfc340302825f1e967b88cf0ce98930efb5d1bdfe2168751efb4e3d26a870",
+      "visuallyInspected": true,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "readScope": "Whole displayed article PDF page visually checked, including table/notes. Render is not a separate bibliographic edition.",
+      "fullWorkRead": false,
+      "parentOriginalSha256": "9c42c595dfb080a6f46c768e3a16c7df08d2778cc75273f44d5331fc76d99cc8"
+    },
+    {
+      "id": "allargs-scan-prokopenko-p34",
+      "url": "https://www.teoblogia.ru/_service/363701/download/id/438188/name/Прокопенко_За+кого+умер+Христос.pdf",
+      "printedPage": 34,
+      "externalCacheRelativePath": "tmp/pdfs/prokopenko-p34.png",
+      "bytes": 42194,
+      "sha256": "1ff5dec23a79af0fc1f255fab55f7ada76ac25deb4e1e3e8b6fd4af2c0d8eedc",
+      "visuallyInspected": true,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "readScope": "Whole displayed article PDF page visually checked, including table/notes. Render is not a separate bibliographic edition.",
+      "fullWorkRead": false,
+      "parentOriginalSha256": "9c42c595dfb080a6f46c768e3a16c7df08d2778cc75273f44d5331fc76d99cc8"
+    },
+    {
+      "id": "allargs-scan-prokopenko-p35",
+      "url": "https://www.teoblogia.ru/_service/363701/download/id/438188/name/Прокопенко_За+кого+умер+Христос.pdf",
+      "printedPage": 35,
+      "externalCacheRelativePath": "tmp/pdfs/prokopenko-p35.png",
+      "bytes": 39520,
+      "sha256": "f6b80bbf601011edb4eb73257264e5d78fde8996e92eb9fbb1df01cced2c6392",
+      "visuallyInspected": true,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "readScope": "Whole displayed article PDF page visually checked, including table/notes. Render is not a separate bibliographic edition.",
+      "fullWorkRead": false,
+      "parentOriginalSha256": "9c42c595dfb080a6f46c768e3a16c7df08d2778cc75273f44d5331fc76d99cc8"
+    },
+    {
+      "id": "allargs-scan-cheek2025-p94",
+      "url": "https://seminary.bju.edu/files/2025/11/JBTW6.1_Review03_BirdHarrower.pdf",
+      "printedPage": 94,
+      "externalCacheRelativePath": "tmp/pdfs/bju2025-1.png",
+      "bytes": 39595,
+      "sha256": "72d9035deaebb0c1f4fd7ac8e7a904bdf16a9a5cf3ee665a207c1cf30c9882ec",
+      "visuallyInspected": true,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "readScope": "Complete displayed review page read visually; printed page number confirmed. Not reviewed book.",
+      "fullWorkRead": false,
+      "parentOriginalSha256": "964091497ebb2f246738ebf9631cc80562caced9648992ae37b38c7bbb2ae460"
+    },
+    {
+      "id": "allargs-scan-cheek2025-p95",
+      "url": "https://seminary.bju.edu/files/2025/11/JBTW6.1_Review03_BirdHarrower.pdf",
+      "printedPage": 95,
+      "externalCacheRelativePath": "tmp/pdfs/bju2025-2.png",
+      "bytes": 41123,
+      "sha256": "9dbdabe7212f37c9980976716f6422c0bdb346f2faadb7407897b78af322ba0e",
+      "visuallyInspected": true,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "readScope": "Complete displayed review page read visually; printed page number confirmed. Not reviewed book.",
+      "fullWorkRead": false,
+      "parentOriginalSha256": "964091497ebb2f246738ebf9631cc80562caced9648992ae37b38c7bbb2ae460"
+    },
+    {
+      "id": "allargs-scan-cheek2025-p96",
+      "url": "https://seminary.bju.edu/files/2025/11/JBTW6.1_Review03_BirdHarrower.pdf",
+      "printedPage": 96,
+      "externalCacheRelativePath": "tmp/pdfs/bju2025-3.png",
+      "bytes": 42211,
+      "sha256": "e0dfc4e800e52093c8f854fcede2a07f0275347d24b15b7efda841711ea8c3b8",
+      "visuallyInspected": true,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "readScope": "Complete displayed review page read visually; printed page number confirmed. Not reviewed book.",
+      "fullWorkRead": false,
+      "parentOriginalSha256": "964091497ebb2f246738ebf9631cc80562caced9648992ae37b38c7bbb2ae460"
+    },
+    {
+      "id": "allargs-scan-cheek2025-p97",
+      "url": "https://seminary.bju.edu/files/2025/11/JBTW6.1_Review03_BirdHarrower.pdf",
+      "printedPage": 97,
+      "externalCacheRelativePath": "tmp/pdfs/bju2025-4.png",
+      "bytes": 40996,
+      "sha256": "7e483ddcc4c1c2f8132c41b66119f471863978e7e93ba51238d9834d8f8710b4",
+      "visuallyInspected": true,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "readScope": "Complete displayed review page read visually; printed page number confirmed. Not reviewed book.",
+      "fullWorkRead": false,
+      "parentOriginalSha256": "964091497ebb2f246738ebf9631cc80562caced9648992ae37b38c7bbb2ae460"
+    },
+    {
+      "id": "allargs-scan-cheek2025-p98",
+      "url": "https://seminary.bju.edu/files/2025/11/JBTW6.1_Review03_BirdHarrower.pdf",
+      "printedPage": 98,
+      "externalCacheRelativePath": "tmp/pdfs/bju2025-5.png",
+      "bytes": 40923,
+      "sha256": "e3706cabb66814842db1622729dd4216ef81a4a816b834aaf5b9b68beb2fe8a1",
+      "visuallyInspected": true,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "readScope": "Complete displayed review page read visually; printed page number confirmed. Not reviewed book.",
+      "fullWorkRead": false,
+      "parentOriginalSha256": "964091497ebb2f246738ebf9631cc80562caced9648992ae37b38c7bbb2ae460"
+    },
+    {
+      "id": "allargs-scan-cheek2025-p99",
+      "url": "https://seminary.bju.edu/files/2025/11/JBTW6.1_Review03_BirdHarrower.pdf",
+      "printedPage": 99,
+      "externalCacheRelativePath": "tmp/pdfs/bju2025-6.png",
+      "bytes": 8637,
+      "sha256": "a58bb393a16ac14e09e173ae40fb316219291ee6428c20e5eb8eed01794eaaf8",
+      "visuallyInspected": true,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "readScope": "Complete displayed review page read visually; printed page number confirmed. Not reviewed book.",
+      "fullWorkRead": false,
+      "parentOriginalSha256": "964091497ebb2f246738ebf9631cc80562caced9648992ae37b38c7bbb2ae460"
+    },
+    {
+      "id": "allargs-scan-ussher-p553",
+      "url": "https://iiif.archive.org/iiif/wholeworkswithli12usshuoft$565/full/1500,/0/default.jpg",
+      "printedPage": 553,
+      "externalCacheRelativePath": "sources/ussh-p553.jpg",
+      "bytes": 438178,
+      "sha256": "c470d3470fe830985e6e3889d64272612b9a8a63f3fc1b05f57d865547bbb9b0",
+      "visuallyInspected": true,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "readScope": "Complete displayed selected page visually checked. First treatise page553 has no printed number; identity established from heading and followingpagination. Other selected pages have displayed printed numbers.",
+      "fullWorkRead": false,
+      "archiveId": "wholeworkswithli12usshuoft",
+      "leaf": 565
+    },
+    {
+      "id": "allargs-scan-ussher-p559",
+      "url": "https://iiif.archive.org/iiif/wholeworkswithli12usshuoft$571/full/1500,/0/default.jpg",
+      "printedPage": 559,
+      "externalCacheRelativePath": "sources/ussh-p559.jpg",
+      "bytes": 509962,
+      "sha256": "5a25b91eaec5fb100a2fdb55b9e4e4b72500a867d8c27004692e47a8f382ea59",
+      "visuallyInspected": true,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "readScope": "Complete displayed selected page visually checked. First treatise page553 has no printed number; identity established from heading and followingpagination. Other selected pages have displayed printed numbers.",
+      "fullWorkRead": false,
+      "archiveId": "wholeworkswithli12usshuoft",
+      "leaf": 571
+    },
+    {
+      "id": "allargs-scan-ussher-p564",
+      "url": "https://iiif.archive.org/iiif/wholeworkswithli12usshuoft$576/full/1500,/0/default.jpg",
+      "printedPage": 564,
+      "externalCacheRelativePath": "sources/ussh-p564.jpg",
+      "bytes": 557947,
+      "sha256": "7fabe263c88937551910b28fb66e019bfc61c177bc94fde2c5f31b3341481dae",
+      "visuallyInspected": true,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "readScope": "Complete displayed selected page visually checked. First treatise page553 has no printed number; identity established from heading and followingpagination. Other selected pages have displayed printed numbers.",
+      "fullWorkRead": false,
+      "archiveId": "wholeworkswithli12usshuoft",
+      "leaf": 576
+    },
+    {
+      "id": "allargs-scan-ussher-p567",
+      "url": "https://iiif.archive.org/iiif/wholeworkswithli12usshuoft$579/full/1500,/0/default.jpg",
+      "printedPage": 567,
+      "externalCacheRelativePath": "sources/ussh-p567.jpg",
+      "bytes": 560205,
+      "sha256": "1aa600ea7b1698bce64d5724e5f0f2a2bc04e391d6f36380d34fa42e40a9c079",
+      "visuallyInspected": true,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "readScope": "Complete displayed selected page visually checked. First treatise page553 has no printed number; identity established from heading and followingpagination. Other selected pages have displayed printed numbers.",
+      "fullWorkRead": false,
+      "archiveId": "wholeworkswithli12usshuoft",
+      "leaf": 579
+    },
+    {
+      "id": "allargs-scan-ussher-p569",
+      "url": "https://iiif.archive.org/iiif/wholeworkswithli12usshuoft$581/full/1500,/0/default.jpg",
+      "printedPage": 569,
+      "externalCacheRelativePath": "sources/ussh-p569.jpg",
+      "bytes": 547881,
+      "sha256": "d3c65de48d75b2ce494806ae1858680c6825a1b38a2298ec4dfbbc1071504933",
+      "visuallyInspected": true,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "readScope": "Complete displayed selected page visually checked. First treatise page553 has no printed number; identity established from heading and followingpagination. Other selected pages have displayed printed numbers.",
+      "fullWorkRead": false,
+      "archiveId": "wholeworkswithli12usshuoft",
+      "leaf": 581
+    },
+    {
+      "id": "allargs-scan-ussher-p565",
+      "url": "https://iiif.archive.org/iiif/wholeworkswithli12usshuoft$577/full/1500,/0/default.jpg",
+      "printedPage": 565,
+      "externalCacheRelativePath": "sources/ussh-leaf577.jpg",
+      "bytes": 533059,
+      "sha256": "4342b40e8ea51b5bd13cf5ff78030234a01fe3689a978dc5084834f5d1ca1700",
+      "visuallyInspected": true,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "readScope": "Complete numbered565 page read; confirms local mapping. Not whole volume.",
+      "fullWorkRead": false,
+      "archiveId": "wholeworkswithli12usshuoft",
+      "leaf": 577
+    },
+    {
+      "id": "allargs-scan-ussher-volxii-half-title",
+      "url": "https://iiif.archive.org/iiif/wholeworkswithli12usshuoft$5/full/1500,/0/default.jpg",
+      "printedPage": "Vol.XII half-title",
+      "externalCacheRelativePath": "sources/ussh-leaf5.jpg",
+      "bytes": 268195,
+      "sha256": "83b2222fd857473486ce5bbdd1177663f4201db20b633672882b604379bfd1ee",
+      "visuallyInspected": true,
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "readScope": "Half-title establishes volumeXII; no imprint year visible, no1864date verification claimed.",
+      "fullWorkRead": false,
+      "archiveId": "wholeworkswithli12usshuoft",
+      "leaf": 5
     }
   ],
   "argumentIds": [
@@ -3490,6 +4932,2016 @@
       "repositoryValidatorsChanged": false,
       "remainingSourceAccessLimitsRetained": true,
       "allBibliographicEditionsCollated": false
+    }
+  },
+  "allArgumentsContinuation20261106": {
+    "recordedAtUtc": "2026-11-06T00:26:48.647036+00:00",
+    "baselineCommit": "6823af4f9905dae9e78da6fc49e45e43df797fc1",
+    "synchronizedMain": "c5599525570f80abe7cf0ae72a91e706a24dc7e3",
+    "mainStudy": "docs/research/atonement/06_detailed_refutation_of_prokopenko_arguments.md",
+    "studySections": 59,
+    "articleCompleteTextRead": true,
+    "articlePdfPages": 40,
+    "articleFootnotesRead": 112,
+    "argumentNodes": 182,
+    "argumentMetric": "Arguments, supporting claims, interpretive alternatives and illustrations; not182 independent sources or syllogisms.",
+    "argumentInventory": [
+      {
+        "id": "A001",
+        "articlePdfPages": [
+          1,
+          2
+        ],
+        "studySection": 3,
+        "claim": "Компетентность учителей и разнообразие кальвинистских взглядов",
+        "assessment": "Контекст значим; истинность экзегезы проверяется отдельно",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A002",
+        "articlePdfPages": [
+          1,
+          2
+        ],
+        "studySection": 3,
+        "claim": "Учебная и научная биография Роберта Томаса",
+        "assessment": "Биографическая опора; все указанные должности заново не коллированы",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A003",
+        "articlePdfPages": [
+          2
+        ],
+        "studySection": 3,
+        "claim": "Ответ Томаса об официальной позиции Master's",
+        "assessment": "Личное недатированное свидетельство; институциональный вывод ограничен",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A004",
+        "articlePdfPages": [
+          2
+        ],
+        "studySection": 1,
+        "claim": "План истории, экзегезы, логики, терминов, схем и целей",
+        "assessment": "Все заявленные разделы включены в проверку",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A005",
+        "articlePdfPages": [
+          3
+        ],
+        "studySection": 4,
+        "claim": "Практически все отцы исповедовали всеобщее искупление",
+        "assessment": "Историческое обобщение не установлено такой выборкой",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A006",
+        "articlePdfPages": [
+          3
+        ],
+        "studySection": 4,
+        "claim": "Афанасий: общий долг и смерть за всех",
+        "assessment": "Универсальные формулы реальны; механизм нужно определять в его контексте",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A007",
+        "articlePdfPages": [
+          3
+        ],
+        "studySection": 4,
+        "claim": "Кирилл XIII.4: действительное страдание за всех",
+        "assessment": "Подтверждено в §§1-4; полнота позднейшей системы из этого не следует",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A008",
+        "articlePdfPages": [
+          3
+        ],
+        "studySection": 5,
+        "claim": "Августин включён в единое патристическое согласие",
+        "assessment": "Нужны и широкие, и ограничительные собственные тексты",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A009",
+        "articlePdfPages": [
+          3
+        ],
+        "studySection": 6,
+        "claim": "Лютер о грехах от первого до последнего человека",
+        "assessment": "Широкое направление верно; названный том заново по изображениям не сверён",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A010",
+        "articlePdfPages": [
+          3
+        ],
+        "studySection": 6,
+        "claim": "Все лютеране следовали универсальному взгляду",
+        "assessment": "Оценивается как конфессиональная линия, а не перепись всех носителей имени",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A011",
+        "articlePdfPages": [
+          3
+        ],
+        "studySection": 6,
+        "claim": "Англиканская статья XXXI: все грехи всего мира",
+        "assessment": "Подтверждено; учтены XVII и полемика против повторяемых месс",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A012",
+        "articlePdfPages": [
+          3
+        ],
+        "studySection": 6,
+        "claim": "Цвингли, Буллингер, Мускулус, Вермильи, Урсин составляют одну линию",
+        "assessment": "Каждому требуется самостоятельный первичный контекст",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A013",
+        "articlePdfPages": [
+          3
+        ],
+        "studySection": 6,
+        "claim": "Цвингли: грехи всех когда-либо живших",
+        "assessment": "Русское издание 2005 года заново не сверено; функция формулы рассмотрена",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A014",
+        "articlePdfPages": [
+          3,
+          4
+        ],
+        "studySection": 7,
+        "claim": "Общая человеческая природа у Кальвина доказывает всеобщее представительство",
+        "assessment": "Отсутствует посылка о тождестве природной и юридической общности",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A015",
+        "articlePdfPages": [
+          4
+        ],
+        "studySection": 8,
+        "claim": "Всеобщее предложение Христа в рассуждении о таинствах",
+        "assessment": "Текст подтверждён; юридическое приобретение требует отдельного вывода",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A016",
+        "articlePdfPages": [
+          4
+        ],
+        "studySection": 8,
+        "claim": "Локатор цитаты Кальвина «4.7»",
+        "assessment": "Исправлен функциональный локатор: IV.14.7; русская печатная страница не сверена",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A017",
+        "articlePdfPages": [
+          4
+        ],
+        "studySection": 8,
+        "claim": "Кальвин на Гал. 5:12 связывает молитву за всех и страдание за мир",
+        "assessment": "Сильное подлинное всеобщее свидетельство; сохранён полный полемический контекст",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A018",
+        "articlePdfPages": [
+          3,
+          4
+        ],
+        "studySection": 9,
+        "claim": "Кальвин на 1 Ин. 2:2 и 1 Тим. 2:4 отвергает только всеобщее спасение",
+        "assessment": "Неполно: ограничивается также референт универсального выражения",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A019",
+        "articlePdfPages": [
+          4
+        ],
+        "studySection": 9,
+        "claim": "Ответ Гессгусену касается участия в Евхаристии",
+        "assessment": "Жанр верен; предложенная вставка об убеждении нечестивого требует оригинала",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A020",
+        "articlePdfPages": [
+          4,
+          5
+        ],
+        "studySection": 11,
+        "claim": "Всеобщее искупление преобладало до XVII века",
+        "assessment": "Требуются определение доктрины и репрезентативное сравнение",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A021",
+        "articlePdfPages": [
+          5
+        ],
+        "studySection": 10,
+        "claim": "Гейдельберг 37: гнев против греха человеческого рода",
+        "assessment": "Формула подтверждена; прочитана с вопросами 20-21 и 54",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A022",
+        "articlePdfPages": [
+          5
+        ],
+        "studySection": 10,
+        "claim": "Второе гельветическое XI: единственный Спаситель мира",
+        "assessment": "Формула подтверждена; учтена её полемическая задача",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A023",
+        "articlePdfPages": [
+          5
+        ],
+        "studySection": 10,
+        "claim": "Оба ранних документа прямо исповедуют одну неограниченную модель",
+        "assessment": "Более сильный вывод, чем установлено приведёнными фразами",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A024",
+        "articlePdfPages": [
+          5
+        ],
+        "studySection": 11,
+        "claim": "Беза ввёл определённое искупление в реформатство",
+        "assessment": "Исключительное авторство не доказано",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A025",
+        "articlePdfPages": [
+          5
+        ],
+        "studySection": 11,
+        "claim": "Схоластический метод объясняет сужение доктрины",
+        "assessment": "Метод и конкретный доктринальный вывод различены",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A026",
+        "articlePdfPages": [
+          5
+        ],
+        "studySection": 11,
+        "claim": "Оуэн 1647 и длительный спор с Бакстером",
+        "assessment": "Историческая линия реальна; приобретение и применение у Оуэна различены",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A027",
+        "articlePdfPages": [
+          5
+        ],
+        "studySection": 39,
+        "claim": "Вестминстер 1648 и Лондон 1689 как пик конфессионализации",
+        "assessment": "Даты требуют указания этапа; тексты приобретения рассмотрены",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A028",
+        "articlePdfPages": [
+          5
+        ],
+        "studySection": 40,
+        "claim": "TULIP популяризировал ограниченный взгляд вне реформатства",
+        "assessment": "Мнемоника поздняя; её возраст не датирует саму доктрину",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A029",
+        "articlePdfPages": [
+          5
+        ],
+        "studySection": 12,
+        "claim": "Буньян как свидетель всеобщего искупления",
+        "assessment": "Проверены спор Гривза и Хелма и другой собственный текст Буньяна",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A030",
+        "articlePdfPages": [
+          5
+        ],
+        "studySection": 17,
+        "claim": "Гриффит Томас и Чейфер как позднейшие сторонники широкой позиции",
+        "assessment": "Индивидуальная первичная колляция по всем пунктам остаётся открытой",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A031",
+        "articlePdfPages": [
+          6
+        ],
+        "studySection": 13,
+        "claim": "Трактат Амиро 1634 и происхождение амиральдианства",
+        "assessment": "Историческая атрибуция рассмотрена без тождества всех широких моделей",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A032",
+        "articlePdfPages": [
+          6
+        ],
+        "studySection": 13,
+        "claim": "Не всякое всеобщее искупление равно амиральдианству",
+        "assessment": "Верное различение; подтверждается современными спорами",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A033",
+        "articlePdfPages": [
+          6,
+          7
+        ],
+        "studySection": 13,
+        "claim": "У Амиро всеобщее условное установление и особый декрет веры",
+        "assessment": "Особый декрет подтверждён; прежнее отрицание отозвано",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A034",
+        "articlePdfPages": [
+          6
+        ],
+        "studySection": 13,
+        "claim": "Условное установление неэффективно и поэтому иллюзорно",
+        "assessment": "Вывод требует различить условный и безусловный объект намерения",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A035",
+        "articlePdfPages": [
+          6
+        ],
+        "studySection": 13,
+        "claim": "Одинаковое предложение благодати всему человечеству",
+        "assessment": "Для точного содержания требуется оригинал соответствующих страниц",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A036",
+        "articlePdfPages": [
+          6
+        ],
+        "studySection": 13,
+        "claim": "Два пути или способа веры через Евангелие и природу",
+        "assessment": "Проанализирован смысл обвинения; первичная колляция этого локуса не получена",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A037",
+        "articlePdfPages": [
+          6
+        ],
+        "studySection": 14,
+        "claim": "Фраза «за всех одинаково» и требования Алансона 1637",
+        "assessment": "Отделены история решения и богословское следствие; полный акт заново не получен",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A038",
+        "articlePdfPages": [
+          7
+        ],
+        "studySection": 13,
+        "claim": "Амиро признавал неспособность, избрание и действенный призыв",
+        "assessment": "Подтверждается самой статьёй и сохранённым первичным локусом",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A039",
+        "articlePdfPages": [
+          7
+        ],
+        "studySection": 14,
+        "claim": "Шарантон и Лудён не признали Амиро еретиком",
+        "assessment": "Юрисдикция и стадии решения различены; цитатный статус протоколов не повышен",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A040",
+        "articlePdfPages": [
+          7
+        ],
+        "studySection": 14,
+        "claim": "Сохранение кафедры доказывает церковное положение Амиро",
+        "assessment": "Институциональное положение не заменяет оценки каждого учения",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A041",
+        "articlePdfPages": [
+          7,
+          8
+        ],
+        "studySection": 14,
+        "claim": "Весь спор реформатов с Амиро был только братским",
+        "assessment": "Французские решения нельзя распространить на все церкви",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A042",
+        "articlePdfPages": [
+          7,
+          8
+        ],
+        "studySection": 15,
+        "claim": "Формула 1675, канон XIII, связывает поручительство с избранием",
+        "assessment": "Подтверждено вместе с канонами XIV, XVI и XIX",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A043",
+        "articlePdfPages": [
+          7,
+          8
+        ],
+        "studySection": 15,
+        "claim": "Формула предполагает избрание прежде особого искупления",
+        "assessment": "Подтверждено её собственным порядком IV-VI",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A044",
+        "articlePdfPages": [
+          8
+        ],
+        "studySection": 15,
+        "claim": "Хайдеггер называл сомюрцев братьями",
+        "assessment": "Подтверждены латинские выдержки предисловия у Шаффа; неодобрение учений сохранено",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A045",
+        "articlePdfPages": [
+          8
+        ],
+        "studySection": 15,
+        "claim": "Местреза и Троншен возражали против сужения рамок",
+        "assessment": "Идентификация уточнена; полный текст Клаубера с. 113 не получен",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A046",
+        "articlePdfPages": [
+          8
+        ],
+        "studySection": 15,
+        "claim": "Формула отменена в Швейцарии в 1706 году",
+        "assessment": "Требует территориального ограничения и отдельного акта; общий срок неприемлем без уточнений",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A047",
+        "articlePdfPages": [
+          8
+        ],
+        "studySection": 16,
+        "claim": "Павлов 1906 и Одинцов 1928 не определяют точный объём",
+        "assessment": "Молчание документа не устанавливает противоположную доктрину; издания заново не коллированы",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A048",
+        "articlePdfPages": [
+          8
+        ],
+        "studySection": 3,
+        "claim": "Вероучение Grace не выносило объём в отдельный принцип",
+        "assessment": "Нужны версия и дата; личная позиция Мак-Артура самим автором признана",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A049",
+        "articlePdfPages": [
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "studySection": 16,
+        "claim": "Баланс «за всех / не за всех» необходим",
+        "assessment": "Верно после определения предмета всеобщности",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A050",
+        "articlePdfPages": [
+          9
+        ],
+        "studySection": 17,
+        "claim": "Ашшер: в одном смысле за всех, в другом не за всех",
+        "assessment": "Подтверждено в первичном Works XII с. 559 и567; рассмотрены553-560 и563-570",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A051",
+        "articlePdfPages": [
+          9
+        ],
+        "studySection": 17,
+        "claim": "Ашшер одобряет амвросиевскую формулу",
+        "assessment": "Фраза присутствует на первичнойс. 567; точное патристическое авторство требует своего локуса",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A052",
+        "articlePdfPages": [
+          9
+        ],
+        "studySection": 17,
+        "claim": "Бакстер: за всех с разным намерением",
+        "assessment": "Структура нескольких намерений реальна; тождество всей сотериологии не установлено",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A053",
+        "articlePdfPages": [
+          9
+        ],
+        "studySection": 18,
+        "claim": "Эдвардс условно допускает общий аспект при особом замысле",
+        "assessment": "Условная уступка не равна полному исповеданию всеобщего удовлетворения",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A054",
+        "articlePdfPages": [
+          9
+        ],
+        "studySection": 18,
+        "claim": "Чарльз Ходж: разные смыслы всеобщего и частного",
+        "assessment": "Подтверждено собственным контекстом приобретения и применения",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A055",
+        "articlePdfPages": [
+          9,
+          10
+        ],
+        "studySection": 18,
+        "claim": "Арчибальд Ходж: временные милости приобретены кровью",
+        "assessment": "Содержание имеет прямую историческую опору; учтена особая гарантия спасения",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A056",
+        "articlePdfPages": [
+          10
+        ],
+        "studySection": 19,
+        "claim": "Шедд разводит atonement и redemption",
+        "assessment": "Подтверждено; определения сохранены",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A057",
+        "articlePdfPages": [
+          10
+        ],
+        "studySection": 19,
+        "claim": "Шедд ограничивает планируемое применение, но не ценность",
+        "assessment": "Подтверждено; статья сама приводит уточнение в примечании39",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A058",
+        "articlePdfPages": [
+          10
+        ],
+        "studySection": 19,
+        "claim": "Формула Шедда объясняет все тексты без непонимания",
+        "assessment": "Полезная терминология не снимает содержательных споров",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A059",
+        "articlePdfPages": [
+          11
+        ],
+        "studySection": 20,
+        "claim": "Стронг: искупление за всех при особом применении",
+        "assessment": "Подтверждено всем собственным разделом E электронного текста 1907; факсимиле771 отдельно не сверено",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A060",
+        "articlePdfPages": [
+          11
+        ],
+        "studySection": 20,
+        "claim": "Риторика Сперджена зависит от оппонента",
+        "assessment": "Для каждой проповеди нужны её контекст и дата",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A061",
+        "articlePdfPages": [
+          11
+        ],
+        "studySection": 20,
+        "claim": "General and yet Particular: всеобщее посредническое благо",
+        "assessment": "Подтверждено полным доступным авторским текстом",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A062",
+        "articlePdfPages": [
+          11
+        ],
+        "studySection": 20,
+        "claim": "Спасительная вера есть доверие Христу без предварительного решения объёма",
+        "assessment": "Содержание верно; отдельная цитата через Мюррея не повышена до новой печатной колляции",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A063",
+        "articlePdfPages": [
+          11,
+          12
+        ],
+        "studySection": 20,
+        "claim": "Беркхоф: общие блага, Marrow-men, ангелы и новое творение",
+        "assessment": "Реальное разнообразие результатов; полная личная уплата всем не следует",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A064",
+        "articlePdfPages": [
+          12
+        ],
+        "studySection": 20,
+        "claim": "Куйпер называет небрежным отрицание любых общих целей",
+        "assessment": "Предмет цитаты — общие блага; R.B.Kuiper отличён от Abraham Kuyper",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A065",
+        "articlePdfPages": [
+          12
+        ],
+        "studySection": 20,
+        "claim": "Даути: особое отношение не равно исключительному",
+        "assessment": "Логическое различие принято; точная страница и вся классификация не сверены",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A066",
+        "articlePdfPages": [
+          12,
+          13
+        ],
+        "studySection": 22,
+        "claim": "2 Пет. 2:1 соединяет покупку и погибель",
+        "assessment": "Реальная экзегетическая трудность; характер покупки нуждается в определении",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A067",
+        "articlePdfPages": [
+          13
+        ],
+        "studySection": 23,
+        "claim": "Вариант утраты спасения отвергается Ин. 5 и 10",
+        "assessment": "Последователен внутри системы автора; межсистемная экзегеза требует сопоставления предупреждений",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A068",
+        "articlePdfPages": [
+          13
+        ],
+        "studySection": 22,
+        "claim": "ἀγοράζω нельзя без доказательства перевести как сотворение",
+        "assessment": "Лексическое возражение сильно; образ приобретения народа рассмотрен отдельно",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A069",
+        "articlePdfPages": [
+          13
+        ],
+        "studySection": 22,
+        "claim": "1 Кор. 6:20,7:23 и Откр. 5:9 задают искупительный смысл",
+        "assessment": "Поддерживают кандидата, но не вставляют неназванную цену автоматически",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A070",
+        "articlePdfPages": [
+          13
+        ],
+        "studySection": 23,
+        "claim": "Вариант одного исповедания добавляет отсутствующие слова",
+        "assessment": "Нужно обосновать общинную перспективу контекстом; простая вставка недостаточна",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A071",
+        "articlePdfPages": [
+          13
+        ],
+        "studySection": 24,
+        "claim": "Шрайнер признаёт кровь и церковную принадлежность лжеучителей",
+        "assessment": "Отделено лексическое признание от его окончательного объяснения 2013",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A072",
+        "articlePdfPages": [
+          13
+        ],
+        "studySection": 29,
+        "claim": "Гангел: заплаченная цена не применена неверующим",
+        "assessment": "Модель прямо рассмотрена; должность не устанавливает все остальные пункты автора",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A073",
+        "articlePdfPages": [
+          14
+        ],
+        "studySection": 25,
+        "claim": "Грин: исход как образ покупки народа",
+        "assessment": "Историческое избавление не тождественно личному вечному прощению",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A074",
+        "articlePdfPages": [
+          14
+        ],
+        "studySection": 25,
+        "claim": "Во 2 Цар. 7:23 LXX употреблён тот же ἀγοράζω",
+        "assessment": "Ошибка: λυτρώσασθαι от λυτρόομαι",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A075",
+        "articlePdfPages": [
+          14
+        ],
+        "studySection": 25,
+        "claim": "Из Египта избавлены и будущие погибшие",
+        "assessment": "Факт поддерживает различение видов избавления, но требует точного антитипа",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A076",
+        "articlePdfPages": [
+          14
+        ],
+        "studySection": 23,
+        "claim": "Мак-Артур: покупка рабов и Втор.32",
+        "assessment": "Серьёзная заветная альтернатива; не простое словарное тождество с созданием",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A077",
+        "articlePdfPages": [
+          14
+        ],
+        "studySection": 23,
+        "claim": "Кровь должна обеспечить Христу права на всех как рабов",
+        "assessment": "Различены творческое господство, посредническая власть и приобретение прощения",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A078",
+        "articlePdfPages": [
+          14
+        ],
+        "studySection": 22,
+        "claim": "Пока доказаны некоторые погибающие, а не обязательно все",
+        "assessment": "Точное авторское ограничение сохранено",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A079",
+        "articlePdfPages": [
+          14,
+          15,
+          16
+        ],
+        "studySection": 26,
+        "claim": "Остальные16 стихов с κόσμος делятся на две группы",
+        "assessment": "Счёт стихов верен; бинарная классификация неполна",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A080",
+        "articlePdfPages": [
+          15
+        ],
+        "studySection": 26,
+        "claim": "1 Ин. 3:17 принадлежит группе ἐν/εἰς",
+        "assessment": "Ошибка: τοῦ κόσμου без указанных предлогов",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A081",
+        "articlePdfPages": [
+          15
+        ],
+        "studySection": 26,
+        "claim": "Предлог у κόσμος соответствует географическому значению",
+        "assessment": "2:15-16 и собственная оговорка4:4 показывают неполноту правила",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A082",
+        "articlePdfPages": [
+          15
+        ],
+        "studySection": 26,
+        "claim": "Генитив «грехи мира» означает обязательное олицетворение",
+        "assessment": "Грамматика сама по себе не устанавливает действующего лица",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A083",
+        "articlePdfPages": [
+          15,
+          16
+        ],
+        "studySection": 26,
+        "claim": "Нравственное употребление мира везде противопоставлено верующим",
+        "assessment": "Общий мотив реален; система ценностей не равна списку всех отдельных людей",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A084",
+        "articlePdfPages": [
+          16
+        ],
+        "studySection": 26,
+        "claim": "Ясного κόσμος = избранные в посланиях нет",
+        "assessment": "Сильный лексический довод против необоснованной подстановки",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A085",
+        "articlePdfPages": [
+          16
+        ],
+        "studySection": 29,
+        "claim": "Хиберт представлен кальвинистом из Bob Jones",
+        "assessment": "Архив не подтверждает преподавательскую связьс Bob Jones; издателя и личную сотериологию надо различать",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A086",
+        "articlePdfPages": [
+          16,
+          17
+        ],
+        "studySection": 27,
+        "claim": "В 2:1 и2:3 «мы» не выделяет особую духовную касту",
+        "assessment": "Сильное контекстное наблюдение",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A087",
+        "articlePdfPages": [
+          16,
+          17
+        ],
+        "studySection": 27,
+        "claim": "1:6-10 переходит от апостолов к всем верующим",
+        "assessment": "Правила универсальны; полный референт каждого местоимения отдельно не установлен",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A088",
+        "articlePdfPages": [
+          17
+        ],
+        "studySection": 27,
+        "claim": "«Наши» включает всех верующих всех времён",
+        "assessment": "Нужна дополнительная посылка; исследована альтернатива ещё не призванных",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A089",
+        "articlePdfPages": [
+          17
+        ],
+        "studySection": 27,
+        "claim": "«Мир» после «не только наши» обязательно все остальные личности",
+        "assessment": "Широкое звучание сильно; точный юридический объём ещё нуждается в доказательстве",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A090",
+        "articlePdfPages": [
+          17
+        ],
+        "studySection": 29,
+        "claim": "Хиберт: умилостивление столь же широко, как грех",
+        "assessment": "Толкование рассмотрено; русское издание заново не коллировано",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A091",
+        "articlePdfPages": [
+          17,
+          18
+        ],
+        "studySection": 29,
+        "claim": "Эйкин: всеобщее обеспечение при получении через веру",
+        "assessment": "Подтверждено собственным открытым материалом и личным исповеданием",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A092",
+        "articlePdfPages": [
+          18
+        ],
+        "studySection": 28,
+        "claim": "Универсальное provision не ведёт к универсальному спасению",
+        "assessment": "Возможно при определённом содержании обеспечения и применения",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A093",
+        "articlePdfPages": [
+          18
+        ],
+        "studySection": 29,
+        "claim": "Ходжес и кальвинистская Dallas",
+        "assessment": "Слова об учреждении не приравнены к личной монергистской классификации автора",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A094",
+        "articlePdfPages": [
+          18
+        ],
+        "studySection": 29,
+        "claim": "Робертсон: предоставлено достаточное для спасения всех",
+        "assessment": "Довод рассмотрен отдельно от институционального авторитета",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A095",
+        "articlePdfPages": [
+          19
+        ],
+        "studySection": 46,
+        "claim": "Мак-Артур допускает временное умилостивительное значение",
+        "assessment": "Общие блага подтверждены прямым Q&A; Study Bible1997 с. 1965 ещё требует своей колляции",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A096",
+        "articlePdfPages": [
+          19
+        ],
+        "studySection": 30,
+        "claim": "Популярный довод «за один грех не платят дважды»",
+        "assessment": "Различены слабая денежная и сильная заветная формы",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A097",
+        "articlePdfPages": [
+          19
+        ],
+        "studySection": 31,
+        "claim": "Бесконечная вина допускает многократное наказание",
+        "assessment": "Не устанавливает повторение полного удовлетворения принятого поручителя",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A098",
+        "articlePdfPages": [
+          19
+        ],
+        "studySection": 31,
+        "claim": "Потоп и последующий суд",
+        "assessment": "Верно против запрета любых повторных последствий",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A099",
+        "articlePdfPages": [
+          19
+        ],
+        "studySection": 31,
+        "claim": "Содом и будущий суд, Мк. 6:11",
+        "assessment": "Учтена традиция русского текста; общий довод о судах рассмотрен",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A100",
+        "articlePdfPages": [
+          19
+        ],
+        "studySection": 30,
+        "claim": "Автор сам усиливает довод до полного бесконечного удовлетворения",
+        "assessment": "Оговорка сохранена; обвинение в полном игнорировании сильной формы отозвано",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A101",
+        "articlePdfPages": [
+          20
+        ],
+        "studySection": 30,
+        "claim": "Сильный довод будто исключает обращение и искажает Евангелие",
+        "assessment": "Вывод не достигает приобретения будущей веры и применения",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A102",
+        "articlePdfPages": [
+          20
+        ],
+        "studySection": 32,
+        "claim": "До обращения 50-летнего избранного Бог не мог бы гневаться",
+        "assessment": "Такое следствие требует модели немедленного личного освобождения",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A103",
+        "articlePdfPages": [
+          20
+        ],
+        "studySection": 32,
+        "claim": "Отеческая скорбь отличается от судебного гнева",
+        "assessment": "Различение реально; природа и особый замысел не отождествлены",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A104",
+        "articlePdfPages": [
+          20
+        ],
+        "studySection": 32,
+        "claim": "Еф. 2:3: избранные по природе чада гнева",
+        "assessment": "Подтверждено; не устанавливает тождества всех намерений Бога",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A105",
+        "articlePdfPages": [
+          20,
+          21
+        ],
+        "studySection": 32,
+        "claim": "1 Фес. 5:9 относится к предназначению, а не уже полученному статусу",
+        "assessment": "Различие предназначения и состояния сохранено",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A106",
+        "articlePdfPages": [
+          21
+        ],
+        "studySection": 32,
+        "claim": "Рим. 11:30 и1 Пет. 2:10 описывают предшествующее непослушание и немилость",
+        "assessment": "Поддерживают реальную перемену, а не всеобщее вечное личное оправдание",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A107",
+        "articlePdfPages": [
+          21,
+          22
+        ],
+        "studySection": 33,
+        "claim": "Авраам до Быт. 15 ещё не верил",
+        "assessment": "Ошибка относительно первого уверования: Евр. 11:8 и Быт. 12",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A108",
+        "articlePdfPages": [
+          21,
+          22
+        ],
+        "studySection": 33,
+        "claim": "Рим. 4 связывает вменение с верой до обрезания",
+        "assessment": "Верно; не равно исчерпывающей дате первого обращения",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A109",
+        "articlePdfPages": [
+          22
+        ],
+        "studySection": 33,
+        "claim": "μέλλει λογίζεσθαι датирует первое вменение каждого адресата",
+        "assessment": "Грамматическая форма сама по себе этого не устанавливает",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A110",
+        "articlePdfPages": [
+          22,
+          23
+        ],
+        "studySection": 32,
+        "claim": "Тит. 3 и1 Кор. 6 подтверждают перемену статуса",
+        "assessment": "Принято; выполнено различение приобретения и применения",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A111",
+        "articlePdfPages": [
+          23
+        ],
+        "studySection": 32,
+        "claim": "Без покаяния нет вменения и оправдания",
+        "assessment": "Условие получения совместимо с приобретённым действенным даром",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A112",
+        "articlePdfPages": [
+          23
+        ],
+        "studySection": 30,
+        "claim": "Вечно неверующий может остаться виновным при универсальной уплате",
+        "assessment": "Требует определения всеобщей уплаты; временный пример не доказывает вечный случай",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A113",
+        "articlePdfPages": [
+          23
+        ],
+        "studySection": 52,
+        "claim": "Такое неполучение не делает жертву неэффективной",
+        "assessment": "Оценивается по предмету намерения и характеру приобретённого",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A114",
+        "articlePdfPages": [
+          23,
+          24
+        ],
+        "studySection": 35,
+        "claim": "Два английских термина имеют разный акцент",
+        "assessment": "Полезное авторское различение; не обязательный словарь всего богословия",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A115",
+        "articlePdfPages": [
+          24
+        ],
+        "studySection": 35,
+        "claim": "Atonement как at-one-ment и компенсация",
+        "assessment": "Этимология рассмотрена без вывода о круге предназначения",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A116",
+        "articlePdfPages": [
+          24
+        ],
+        "studySection": 35,
+        "claim": "Redemption означает только конечный результат",
+        "assessment": "Неполно: собственные предложения WCF различают приобретение и применение",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A117",
+        "articlePdfPages": [
+          24
+        ],
+        "studySection": 36,
+        "claim": "Ὑπέρ и for передают пользу либо замещение",
+        "assessment": "Контекст важен; отношения могут совпадать",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A118",
+        "articlePdfPages": [
+          24
+        ],
+        "studySection": 36,
+        "claim": "Работа за напарника и еда за родителей",
+        "assessment": "Реальные авторские примеры; доказательный предел установлен",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A119",
+        "articlePdfPages": [
+          24
+        ],
+        "studySection": 36,
+        "claim": "Обед друга и оплата музейной поездки",
+        "assessment": "Реальные примеры; полезность не исключает замещения",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A120",
+        "articlePdfPages": [
+          24
+        ],
+        "studySection": 36,
+        "claim": "Выбор акцента ведёт к разным моделям масштаба",
+        "assessment": "Терминологический выбор не заменяет экзегезу содержания",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A121",
+        "articlePdfPages": [
+          24
+        ],
+        "studySection": 44,
+        "claim": "Дорт отвечал группе Арминия и Гомара",
+        "assessment": "Ошибка роли Гомара; учтена смерть Арминия до Ремонстрации 1610",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A122",
+        "articlePdfPages": [
+          24,
+          25
+        ],
+        "studySection": 37,
+        "claim": "Дорт II.3-4: бесконечная достаточность",
+        "assessment": "Подтверждено; различена ценность и личное предназначение",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A123",
+        "articlePdfPages": [
+          25
+        ],
+        "studySection": 37,
+        "claim": "Дорт II.5: возвещение всем без различия",
+        "assessment": "Подтверждено; указаны содержание обещания и обязанность веры",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A124",
+        "articlePdfPages": [
+          25
+        ],
+        "studySection": 37,
+        "claim": "II.6 отвергает мысль об отсутствии личной жертвы за погибающих",
+        "assessment": "Ошибка перехода от недостатка ценности к границам представительства",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A125",
+        "articlePdfPages": [
+          25
+        ],
+        "studySection": 38,
+        "claim": "II.8: особая вера и действенное избавление",
+        "assessment": "Авторская полная цитата сохранена; вера названа приобретённым даром",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A126",
+        "articlePdfPages": [
+          25,
+          26
+        ],
+        "studySection": 38,
+        "claim": "Каноны ограничивают только применение, а не приобретение",
+        "assessment": "Недостаточно учитываются II.8 и Отвержения II.2-6",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A127",
+        "articlePdfPages": [
+          26
+        ],
+        "studySection": 40,
+        "claim": "Томас Скотт как сторонник общего искупления и переводчик Дорта",
+        "assessment": "Ошибка даты:1804 у Стюарта относится к латинскому Sylloge; английский перевод отнесён к Reply 1811",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A128",
+        "articlePdfPages": [
+          26
+        ],
+        "studySection": 39,
+        "claim": "WCF III.6 прямо ограничивает искупленных избранными",
+        "assessment": "Подтверждено; исследованы также VIII и XI",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A129",
+        "articlePdfPages": [
+          26
+        ],
+        "studySection": 39,
+        "claim": "Отсутствие atonement и счёт redeem определяют смысл WCF",
+        "assessment": "Лексическое наблюдение не устанавливает предложенное семантическое правило",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A130",
+        "articlePdfPages": [
+          26
+        ],
+        "studySection": 35,
+        "claim": "Ранние авторы ориентировались на достаточность, схоласты на эффективность",
+        "assessment": "Общая историческая гипотеза требует сопоставимого корпуса",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A131",
+        "articlePdfPages": [
+          27
+        ],
+        "studySection": 39,
+        "claim": "1689 дословно повторяет WCF в искупительных пунктах",
+        "assessment": "Неверно в сильной форме; показаны уточнения VIII.8",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A132",
+        "articlePdfPages": [
+          27
+        ],
+        "studySection": 40,
+        "claim": "Limited atonement возник как часть TULIP",
+        "assessment": "Опровергнуто первичным Гриффином 1819 с. 182",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A133",
+        "articlePdfPages": [
+          27
+        ],
+        "studySection": 40,
+        "claim": "Две группы современных кальвинистов у Стюарта",
+        "assessment": "Авторская типология передана по существу верно",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A134",
+        "articlePdfPages": [
+          27
+        ],
+        "studySection": 40,
+        "claim": "1932 — самый ранний печатный TULIP",
+        "assessment": "Обновлено свидетельством 1913; полный номер 1913 ещё не коллирован",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A135",
+        "articlePdfPages": [
+          27
+        ],
+        "studySection": 40,
+        "claim": "До XX века лишь Топлади приблизился к выражению",
+        "assessment": "Опровергнуто ранним употреблением 1819",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A136",
+        "articlePdfPages": [
+          27,
+          28
+        ],
+        "studySection": 40,
+        "claim": "Limited и particular по существу не синонимы",
+        "assessment": "Предпочтение названий не доказывает обязательной разницы доктрин",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A137",
+        "articlePdfPages": [
+          28
+        ],
+        "studySection": 35,
+        "claim": "Частное искупление не ограничивает число грехов или ценность",
+        "assessment": "Достоинство жертвы различено с кругом представляемых",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A138",
+        "articlePdfPages": [
+          28
+        ],
+        "studySection": 41,
+        "claim": "Схемы показывают логическое решение видимого парадокса",
+        "assessment": "Верно как проверка совместимости; не самостоятельное библейское доказательство",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A139",
+        "articlePdfPages": [
+          29
+        ],
+        "studySection": 41,
+        "claim": "Порядок решений логический, не хронологический",
+        "assessment": "Прямо сохранено; приписывание обучения Бога отозвано",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A140",
+        "articlePdfPages": [
+          29,
+          30
+        ],
+        "studySection": 42,
+        "claim": "Супралапсарианство определяет невиновных к наказанию",
+        "assessment": "Смешаны логический объект решения и основание исполнения приговора",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A141",
+        "articlePdfPages": [
+          29,
+          30
+        ],
+        "studySection": 42,
+        "claim": "Исторические исповедания не следуют супра-схеме",
+        "assessment": "Формулировка документов не равна исключению всех супра-подписантов",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A142",
+        "articlePdfPages": [
+          29
+        ],
+        "studySection": 43,
+        "claim": "Инфра исключает двойное безусловное предопределение",
+        "assessment": "Сохранена оговорка автора; отдельно разобраны оставление и осуждение",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A143",
+        "articlePdfPages": [
+          29
+        ],
+        "studySection": 43,
+        "claim": "Отвержение полностью условно из-за предвиденного греха",
+        "assessment": "Неполно без вопроса о различающем оставлении",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A144",
+        "articlePdfPages": [
+          29,
+          30
+        ],
+        "studySection": 41,
+        "claim": "Суб ставит всеобщее искупление прежде особого избрания",
+        "assessment": "Известная модель; не авторское изобретение и не готовое доказательство объёма",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A145",
+        "articlePdfPages": [
+          29
+        ],
+        "studySection": 41,
+        "claim": "Историческая синонимия infra и sub и её изменение",
+        "assessment": "Статья сама предупреждает о вариативности; оговорка сохранена",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A146",
+        "articlePdfPages": [
+          30
+        ],
+        "studySection": 42,
+        "claim": "Таблица ставит творение первым во всех схемах",
+        "assessment": "Уточнено отличие распространённого строгого супра-порядка",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A147",
+        "articlePdfPages": [
+          30
+        ],
+        "studySection": 41,
+        "claim": "Все три схемы признают неспособность, избрание, действенный призыв, стойкость",
+        "assessment": "Подтверждено прямым текстом статьи",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A148",
+        "articlePdfPages": [
+          30
+        ],
+        "studySection": 44,
+        "claim": "Арминианское условное избрание исключает полную испорченность",
+        "assessment": "Опровергается Ремонстрацией III-IV",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A149",
+        "articlePdfPages": [
+          30
+        ],
+        "studySection": 44,
+        "claim": "Все арминиане отрицают стойкость",
+        "assessment": "Недопустимое обобщение; статья V1610 оставляет вопрос для исследования",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A150",
+        "articlePdfPages": [
+          30,
+          31
+        ],
+        "studySection": 53,
+        "claim": "Демарест: всеобщее обеспечение и особое применение",
+        "assessment": "Реальное родство формулы; полная колляция с. 193 не выполнена",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A151",
+        "articlePdfPages": [
+          31
+        ],
+        "studySection": 45,
+        "claim": "Особая заместительная цель для сосудов милосердия",
+        "assessment": "Положительное монергистское содержание признано",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A152",
+        "articlePdfPages": [
+          31
+        ],
+        "studySection": 45,
+        "claim": "Независимость избрания от заслуг, качеств и решений",
+        "assessment": "Прямой текст сохранён без приписывания автономной веры",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A153",
+        "articlePdfPages": [
+          31
+        ],
+        "studySection": 45,
+        "claim": "Бог возрождает, привлекает славой и дарует спасительную веру",
+        "assessment": "Прямое исповедание автора; доказательная функция ссылок уточнена",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A154",
+        "articlePdfPages": [
+          31
+        ],
+        "studySection": 45,
+        "claim": "2 Кор. 5:21 исполняется в избранных",
+        "assessment": "Связь заместительства и результата исследована",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A155",
+        "articlePdfPages": [
+          31,
+          32
+        ],
+        "studySection": 46,
+        "claim": "Временное умилостивление для человечества",
+        "assessment": "Есть исторические аналоги; юридическое содержание не тождественно полному прощению",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A156",
+        "articlePdfPages": [
+          31
+        ],
+        "studySection": 46,
+        "claim": "Дожди и пища в Деян. 17:16-17",
+        "assessment": "Исправлен номер: Деян. 14:16-17",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A157",
+        "articlePdfPages": [
+          32
+        ],
+        "studySection": 46,
+        "claim": "Благость не противоречит справедливости",
+        "assessment": "Принято; отсрочка суда и личная уплата за каждого требуют дополнительных посылок",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A158",
+        "articlePdfPages": [
+          32
+        ],
+        "studySection": 46,
+        "claim": "Авв. 1:13 требует немедленного суда либо умилостивления за каждого",
+        "assessment": "Контекст — жалоба о Божьем долготерпении; нужный общий закон не сформулирован",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A159",
+        "articlePdfPages": [
+          32
+        ],
+        "studySection": 46,
+        "claim": "Рим. 3:25-26 показывает оправданное долготерпение до креста",
+        "assessment": "Сильная связь; различены πάρεσις и полученное прощение",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A160",
+        "articlePdfPages": [
+          32
+        ],
+        "studySection": 28,
+        "claim": "Вторая половина1 Ин. 2:2 означает именно временную милость миру",
+        "assessment": "Спасительный контекст требует отдельного обоснования такого ограничения",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A161",
+        "articlePdfPages": [
+          32
+        ],
+        "studySection": 32,
+        "claim": "Избранные до обращения нуждаются в милости при невменённой праведности",
+        "assessment": "Реальное состояние признано; особый замысел и вина различены",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A162",
+        "articlePdfPages": [
+          32,
+          33
+        ],
+        "studySection": 47,
+        "claim": "Проклятие земли и космический замысел",
+        "assessment": "Сильное библейское основание общих последствий",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A163",
+        "articlePdfPages": [
+          32,
+          33
+        ],
+        "studySection": 47,
+        "claim": "Широта падения требует столь же широкой цели искупления",
+        "assessment": "Верно для сфер; тождество участи каждой личности не следует",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A164",
+        "articlePdfPages": [
+          33
+        ],
+        "studySection": 47,
+        "claim": "Смерть всех животных началась после падения",
+        "assessment": "Требует самостоятельной экзегезы Быт. 1-3; из одного Рим. 5 не выводится",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A165",
+        "articlePdfPages": [
+          33
+        ],
+        "studySection": 47,
+        "claim": "Душа уже искуплена, тело только будет искуплено",
+        "assessment": "Полезно для завершения; тело уже приобретено и принадлежит Христу",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A166",
+        "articlePdfPages": [
+          33
+        ],
+        "studySection": 47,
+        "claim": "Будущее исцеление исключает автоматическое здоровье сейчас",
+        "assessment": "Смысл будущего телесного избавления принят; этапы тысячелетнего царства требуют отдельного доказательства",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A167",
+        "articlePdfPages": [
+          33
+        ],
+        "studySection": 48,
+        "claim": "День очищения включает народ и святилище",
+        "assessment": "Подтверждено; очищение неодушевлённого объекта реально",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A168",
+        "articlePdfPages": [
+          33,
+          34
+        ],
+        "studySection": 48,
+        "claim": "כפר везде означает выкуп посредством замещения",
+        "assessment": "Нельзя переносить одно словарное значение на все объекты",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A169",
+        "articlePdfPages": [
+          33
+        ],
+        "studySection": 48,
+        "claim": "Национальный обряд охватывает верующих и неверующих",
+        "assessment": "Учтены заветная общность, условия Лев. 23 и превосходство жертвы Евр. 9-10",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A170",
+        "articlePdfPages": [
+          34
+        ],
+        "studySection": 49,
+        "claim": "Кол.1:20 иЕф.1:10 дают гипотезу космического примирения",
+        "assessment": "Библейское основание реально; гипотетический статус автора сохранён",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A171",
+        "articlePdfPages": [
+          34
+        ],
+        "studySection": 49,
+        "claim": "Златоуст: ангелы стали врагами людей",
+        "assessment": "Подтверждён собственный контекст беседы III; это не вина святых ангелов",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A172",
+        "articlePdfPages": [
+          34
+        ],
+        "studySection": 49,
+        "claim": "Генри, Винсент и другие имеют более широкое объяснение",
+        "assessment": "Различены варианты; Винсент датируется концом XIX века",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A173",
+        "articlePdfPages": [
+          35
+        ],
+        "studySection": 49,
+        "claim": "ἀποκαταλλάσσω исключает всякое объяснение через покорение",
+        "assessment": "Лексическое значение не определяет все способы космического мира",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A174",
+        "articlePdfPages": [
+          35
+        ],
+        "studySection": 49,
+        "claim": "Мелик включает все сферы творения",
+        "assessment": "Смысл довода исследован; полный комментарий с. 225 заново не коллирован",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A175",
+        "articlePdfPages": [
+          35
+        ],
+        "studySection": 49,
+        "claim": "Гайслер исключает преисподних по отсутствию третьего члена",
+        "assessment": "Аргумент одной неполной формулы недостаточен без прямых мест суда",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A176",
+        "articlePdfPages": [
+          35
+        ],
+        "studySection": 49,
+        "claim": "Всеобщая гармония позволяет будущее царство",
+        "assessment": "Общий результат принят; одинаковое личное спасение всех автором отвергается",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A177",
+        "articlePdfPages": [
+          35,
+          36
+        ],
+        "studySection": 59,
+        "claim": "Итог о раннем историческом господстве широкой модели",
+        "assessment": "Обобщение остаётся недоказанным выбранной подборкой",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A178",
+        "articlePdfPages": [
+          36
+        ],
+        "studySection": 59,
+        "claim": "Всеобщая личная уплата совместима с вечным невменением при неверии",
+        "assessment": "Логическая оценка зависит от юридического определения уплаты",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A179",
+        "articlePdfPages": [
+          36
+        ],
+        "studySection": 59,
+        "claim": "Исповедания утверждают неограниченную цену и ограниченный только результат",
+        "assessment": "Ценность подтверждена; особое приобретение также присутствует",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A180",
+        "articlePdfPages": [
+          36
+        ],
+        "studySection": 59,
+        "claim": "Сублапсарианство согласует всеобщий аспект и особое спасение",
+        "assessment": "Возможная логическая конструкция; библейская истинность требует экзегезы",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A181",
+        "articlePdfPages": [
+          36
+        ],
+        "studySection": 59,
+        "claim": "Четыре цели суммируют позицию автора",
+        "assessment": "Сохранены разные объекты, смыслы и гипотетический статус четвёртой",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      },
+      {
+        "id": "A182",
+        "articlePdfPages": [
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "studySection": 58,
+        "claim": "Библиография и112 примечаний образуют опорный аппарат",
+        "assessment": "Прочитаны как аппарат статьи; наличие ссылок не равно колляции всех изданий",
+        "scope": "Argument or supporting assertion evaluated; edition collation is a separate axis"
+      }
+    ],
+    "sourcesAdded": [
+      "allargs-greek-1john3",
+      "allargs-consensus1675-all26",
+      "allargs-pca-tulip-history",
+      "allargs-akin-personal-statement",
+      "allargs-calvin-iv14-7",
+      "allargs-calvin-ii12-1-4",
+      "allargs-greek-1john1",
+      "allargs-greek-1john2",
+      "allargs-greek-1john4",
+      "allargs-greek-1john5",
+      "allargs-chidester2025-full",
+      "allargs-stewart2008-full",
+      "allargs-hodges1993-selected",
+      "allargs-hiebert-archival-bio",
+      "allargs-bunyan-reprobation-x",
+      "allargs-bible-habakkuk1",
+      "allargs-bible-2peter2",
+      "allargs-bible-deuteronomy32",
+      "allargs-bible-hebrews9",
+      "allargs-bunyan-reprobation-ix",
+      "allargs-greaves1965-main",
+      "allargs-schaff-consensus-context",
+      "allargs-bunyan-reprobation-xi-selected",
+      "allargs-helm1979-full",
+      "allargs-bunyan-advocate-selected",
+      "allargs-cyril-xiii-selected",
+      "allargs-anglican-articles17-31",
+      "allargs-greek-1timothy2",
+      "allargs-greek-hebrews2",
+      "allargs-greek-romans14",
+      "allargs-greek-1corinthians8",
+      "allargs-greek-john10",
+      "allargs-chrysostom-colossians-homiii",
+      "allargs-owen-ii4-selected",
+      "allargs-ussher-xii-letters",
+      "allargs-strong1907-e-intercession",
+      "allargs-cheek2025-full-review",
+      "allargs-prokopenko-video-captions-selected"
+    ],
+    "scanIds": [
+      "allargs-scan-prokopenko-p15",
+      "allargs-scan-prokopenko-p29",
+      "allargs-scan-prokopenko-p30",
+      "allargs-scan-prokopenko-p34",
+      "allargs-scan-prokopenko-p35",
+      "allargs-scan-cheek2025-p94",
+      "allargs-scan-cheek2025-p95",
+      "allargs-scan-cheek2025-p96",
+      "allargs-scan-cheek2025-p97",
+      "allargs-scan-cheek2025-p98",
+      "allargs-scan-cheek2025-p99",
+      "allargs-scan-ussher-p553",
+      "allargs-scan-ussher-p559",
+      "allargs-scan-ussher-p564",
+      "allargs-scan-ussher-p567",
+      "allargs-scan-ussher-p569",
+      "allargs-scan-ussher-p565",
+      "allargs-scan-ussher-volxii-half-title"
+    ],
+    "fullWorksNotAutomaticallyInferredFromExtraction": true,
+    "allBibliographicEditionsCollated": false,
+    "fullHistoricalWorksRead": false,
+    "publicationEligible": false,
+    "doctrinalClosure": false,
+    "C25": "OPEN",
+    "historicalBodiesPreserved": [
+      "P06",
+      "P07",
+      "P11",
+      "P12",
+      "P15",
+      "P16",
+      "P17",
+      "P27",
+      "P33"
+    ],
+    "currentOverviewSections": "4.27–4.31",
+    "newSourceScope": "Additional originals and exchanges;105 previous source records,27 scans and41 preimage pins preserved unchanged.",
+    "acquisitionLimits": [
+      "Full Baxter/Michigan original blocked; modern comparisons do not count as full-work reading.",
+      "All cited earlyReformer/Russian editions, CalvinHeshusius full Latin, full French/Swiss synod acts and Klauberp113 not newly obtained.",
+      "Scott1811p725 and originalVail1913issue not facsimile-collated; Stewart/PCA claim scopes retained.",
+      "Ussher printed553 beginning has heading without displayed page number;567/569 individually visually collated. Volume imprint year not independently verified.",
+      "Strong1907 sectionE and intercessionA–C read; printp771facsimile and wholevolume not read.",
+      "Greaves main126–131 read, finalnotes continued125missing; Helm reply87–93 read, Bunyan authorship not finally settled.",
+      "Bird/Harrower2023book not obtained; Cheek2025fullreview and Chidester2025coursepaper are distinct source types.",
+      "MacArthurStudyBible1997p1965 remains uncollated; original1994Q&A checked previously.",
+      "Direct written answer from Prokopenko to a specific critic of this article not established; reconstructed replies explicitly marked.",
+      "YouTube automatic captions47:13–1:18:44 read without audio/date/full voice collation, classC, no quote-safe attribution.",
+      "Previously recorded Williams/Lynch fullarticles and Shultz additionalpages access limits remain."
+    ],
+    "verification": {
+      "status": "PASS",
+      "verifiedAtUtc": "2026-11-06T00:38:50.217041+00:00",
+      "oldSourceRecordsPreserved": 105,
+      "oldScanRecordsPreserved": 27,
+      "oldPreimageRecordsPreserved": 41,
+      "availableSourceCaptureAndImageRecordsVerified": 182,
+      "gitPreimagesChecked": 61,
+      "newScopedSourceRecords": 38,
+      "newVisuallyInspectedImages": 18,
+      "exactHistoricalBodies": 9,
+      "fullStudySections": 59,
+      "fullStudyWords": 19783,
+      "argumentNodes": 182,
+      "articlePagesCovered": 40,
+      "articleFootnotesRead": 112,
+      "currentOverviewGroups": 34,
+      "newOverviewSections": 5,
+      "standaloneReportsMatch": 3,
+      "sourceSync": "PASS",
+      "crossReferences": "PASS:80",
+      "claimRegister": "PASS:930",
+      "corpusIntegrity": "PASS",
+      "reshootState": "PASS",
+      "regressionSuite": "PASS:184 tests in408.878s",
+      "diffWhitespace": "PASS",
+      "repositoryValidatorsChanged": false,
+      "remainingSourceAccessLimitsRetained": true,
+      "allBibliographicEditionsCollated": false
+    },
+    "mainIntegrationCommit": "24b90507f829517c9d1f8bf81286593e27edacad",
+    "historicalRegistryBlobReplay": {
+      "gitObjectType": "blob",
+      "gitBlobSha1": "8654c98e08de1308d05bc02d729bbf3ff2ac6f70",
+      "bytes": 70948,
+      "sha256": "c23e635ba54c066b34af6d15e2f44b898fb0156830d6e5b30d54e45e7f004b12",
+      "reachableRecordCommit": "c5599525570f80abe7cf0ae72a91e706a24dc7e3",
+      "recordPath": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+      "recordContainsBothTokens": true,
+      "purpose": "Historical registry maintenance after main update; exact blob verified, not a theological source or commit citation."
     }
   }
 }
