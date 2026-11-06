@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 134,
+  "sourceCount": 140,
   "sources": [
     {
       "id": "REF-P01",
@@ -2660,6 +2660,118 @@
       "url": "https://onlinelibrary.wiley.com/doi/10.1111/1467-9809.00039",
       "checkedAt": "2026-11-06",
       "verificationNote": "Publisher DOI 10.1111/1467-9809.00039 confirms article identity and formal journal pages. Read freely accessible third-party personal-library PDF mirror 'downloads.whitehorsetc.com/Icarus_of_Basel_Oecolampadius_and_the_Ea.pdf' and directly visually inspected PDF index7 = printed p275, including footnotes 49–52. Fudge reports Oecolampadius in Nov1527 told correspondents Denck converted, later stated he had Denck's manuscript and could publish it; source attribution in Fudge is Jan J. Kiwiet, Mennonite Quarterly Review 31 (1957), p258. He further records Kiwiet's claim Oecolampadius wrote part of the ostensible recantation, and warns in note52 that manuscript evidence does not affirm this accusation. The underlying manuscript, epistolary quotation in original language, and Kiwiet 1957 pp257–258 have NOT been personally examined. Do not present an original quotation as own autopsy, nor conclude physical possession, falsification, or full genuine authorship as established facts. Official published 1997 modern scholarly PDF has copyright; no PDF or screenshot archived or reused."
+    },
+    {
+      "id": "REF-S57",
+      "documentYear": 1962,
+      "title": "Martin Bucers Deutsche Schriften, Band 2: Schriften der Jahre 1524–1528 (1962), critical edition, Getrewe Warnung editorial intro pp225–233 (esp 227), 1527 polemical original transcription pp234–258 (esp 234)",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://digi.hadw-bw.de/view/bds2/0232",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Heidelberger Akademie der Wissenschaften / Heidelberg University Library online edition directly consulted in text/OCR rendering at https://digi.hadw-bw.de/view/bds2/0232 (printed p227, critical introduction) and https://digi.hadw-bw.de/view/bds2/0239 (printed p234, transcript of 1527 original folio A1a-b). Editor (Manfred Krebs) compares original single-sheet Kautz seven theses (surviving Generallandesarchiv Karlsruhe, printed in Täuferakten 4 [1951] pp113f no129) against Friedrich Zorn's Worms chronicle: Kautz single sheet says 'Jacob Kautz, predicant zu Wormbs, mit seinen brüdern ...'; chronicle inserted named Hätzer, Denck, Rink. Edition says original makes Kautz responsible author; a planned debate June13 1527 apparently did not occur. Editor gives Kautz posting Friday 7 June 1527. Printed p234 transcribes contemporary polemical Strasbourg preachers' Getrewe Warnung title explicitly mentioning Denck and hostile allegations he opposes redemption, Scripture and civil order. This is ADVERSARIAL SOURCE, NOT impartial proof Denck held all charges, and Kautz ≠ automatically Denck coauthor. Text of modern edition available selectively in institutional HTML OCR; page scans/original Kautz single sheet NOT independently visually inspected. No complete critical volume copied or redistribution, modern editorial rights unresolved."
+    },
+    {
+      "id": "REF-S58",
+      "documentYear": 2018,
+      "title": "Bernd Breitenbruch, Der erste Katalog der Stadtbibliothek Ulm von 1549: Edition und Bestandsanalyse, Veröffentlichungen der Stadtbibliothek Ulm 26 (2018), printed p76, catalog items P8-3/I34-3 and P8-4/I34-4",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.ulm.de/-/media/bibliothek/downloads/volltexte/der-erste-katalog-der-stadtbibliothek-ulm-von-1549.pdf?rev=58d8bd0ae5794598ba62d00900a7aad2",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Official City of Ulm/City Library copyrighted PDF of 2018 scholarly edition of historic city library inventory compiled in 1549; extracted text of PRINTED p76 directly inspected; web screenshot p90 of official PDF blocked HTTP403, so no independent image check. Historic catalog adjacent entries: P 8-3 = I 34-3 'Warnung der prediger zu Straßburg, über die artikel Jacob Kautzens' identified by editor as Martin Bucer Getrewe Warnung, [Straßburg: Knobloch] 1527, VD16 B8887, [24] leaves, catalog/editor item 2785 'Sam.', numerous marginal notes; P 8-4 = I 34-4 'Jo[hannes] Baders warnung vor dem orden der widertauffer' editorial Bader Brüderliche Warnung, [Straßburg: Knobloch] 1527, VD16 B108, [116] leaves, item 2786. A historically dated 1549 LIBRARY INVENTORY recorded both publications, not proof their surviving shelf/copies in 2026, not direct author/coauthor testimony. The modern editorial text and margin descriptions require direct physical provenance check; current LOCATOR_HOLD for failed page-image verification. Copyright © 2018 Stadtbibliothek Ulm explicitly in PDF front matter; no PDF redistribution."
+    },
+    {
+      "id": "REF-S59",
+      "documentYear": 1527,
+      "title": "Martin Bucer / Strasbourg evangelical preachers, Getrewe Warnung der Prediger des Evangelii zu Straßburg, Strasbourg [Johann Knobloch], 2 July 1527, [24] leaves 8°, VD16 B8887, BSB digital identity bsb00026087",
+      "evidenceClass": "A2",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.leo-bw.de/en-GB/detail/-/Detail/details/DOKUMENT/bsz_swb/567316998/Getrewe%20Warnung%20der%20%7C%7C%20Prediger%20des%20Euangelij%20z%C5%AF%20Stra%C3%9Fburg-%20vber%20%7C%7C%20die%20Artickel-%20so%20Jacob%20Kautz%20Prediger%20z%C5%AF%20Wor%7C%7Cmbs-%20k",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Landesarchiv Baden-Württemberg LEO-BW/Südwestdeutscher Bibliotheksverbund source catalog record BSZ PPN567316998, identified author Bucer bibliographically assigned, source imprint text '(Straßburg am amdern tag Julij. M D xxvij.)' (=2 July 1527), inferred printer [Johann Knobloch the Elder], octavo, [24] leaves, digitized BSB bsb00026087, original BSB URN urn:nbn:de:bvb:12-bsb00026087-4. Web text verified via structured indexed official catalogue; attempt to open exact LEO-BW page returned 403 in crawler and BSB original digitized pages NOT visually read (so CATALOG_ONLY). This is the ORIGINAL 1527 Bucer anti-Kautz printed work, bibliographically different from 1527 Kautz seven theses and Denck's Widerruf VD16 D573. The exact dated imprint belongs to Bucer pamphlet and cannot date Widerruf. No 1527 original image downloaded, original rights/PDM not assumed from BSB other digitizations."
+    },
+    {
+      "id": "REF-S60",
+      "documentYear": 1527,
+      "title": "Johannes Bader, Brüderliche warnung für dem newen Abgöttischen orden der Widertäuffer ... Ein sonderlich gesprech mit Hans Dencken ... den heyligen Kindertauff betreffend, [Straßburg: Johann Knobloch], 1527, VD16 B108, [116] leaves",
+      "evidenceClass": "A2",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://books.google.com/books/about/Br%C3%BCderliche_warnung_f%C3%BCr_dem_newen_Abg.html?id=EFtYAAAAcAAJ",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Bibliographic identity and lengthy title verified from 2018 authoritative Ulm 1549 catalog scholarly edition p76 and digitized physical-book metadata Google Books for Austrian National Library copy (id EFtYAAAAcAAJ) and distinct Bavarian State Library scan (id dQYFeE8s0S8C). Print [Strasbourg: Knobloch] inferred/catalogued 1527, VD16 B108, [116] leaves. Ulm text includes special conversation 'mit Hans Dencken ... den heyligen Kindertauff betreffend', so an opponent-written printed account specifically engages baptism. Cannot assume exact conversation date Jan20 1527, Denck direct word-for-word authenticity or two BSB/ÖNB copies are same typography without leaf and collation comparison. No historical printed page image viewed in this turn; modern metadata and transcribed 1549 catalog only. Attribution and author rhetoric remain adversarial Bader source, not neutral Denck confession; no JPG archive or publication permission assumed."
+    },
+    {
+      "id": "REF-S61",
+      "documentYear": 2006,
+      "title": "C. Arnold Snyder, The Birth and Evolution of Swiss Anabaptism (1520–1530), Mennonite Quarterly Review 80 (October 2006), discussion of Hans Denck Strasbourg private Cellarius meeting and public 22 Dec 1526 debate, printed p630",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://peacetheology.net/wp-content/uploads/2013/02/snydere2809422birth-and-evolution-of-swiss-anabaptism22.pdf",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Open PDF secondary paper read via search-extracted scholarly text at printed p630 (PDF view too large ~12MB for web screenshot; image-level verification failed, maintain LOCATOR_HOLD). Snyder distinguishes earlier PRIVATE discussion involving Martin Cellarius/Borrhaus and Denck at Wolfgang Capito's house, and later PUBLIC 22 December 1526 Denck debate led by Martin Bucer in Strasbourg; subsequent expulsion 25 Dec 1526. Snyder cites Hans-Werner Müsing, 'The Anabaptist Movement in Strasbourg from Early 1526 to July 1527', MQR April1977 pp91–126, esp pp101–107, and original QGT Alsace corpus; these underlying printed pages NOT independently examined. Capito's letter 18 August 1527 to Zwingli (REF-S55) reports prior Cellarius discussion, but its letter date is NOT the discussion date. The distinction plausible, exact private discussion date not established from this PDF alone. Copyright modern and no facsimile storage."
+    },
+    {
+      "id": "REF-S62",
+      "documentYear": 1957,
+      "title": "Mennonite Quarterly Review original official article index, The Life of Hans Denck (ca.1500–1527), by John [Jan J.] Kiwiet, volume 31, pp227–259, October 1957",
+      "evidenceClass": "A2",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://mqr-search.goshen.edu/search.php?max=10&start=11&subjID=556",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "MQR Goshen University original index directly inspected; exact item 'The life of Hans Denck (ca.1500-1527)' author catalog indexed 'John Kiwiet', 31:227–259 O 1957 (October). Modern MennLex historian Dipple bibliography identifies same title/volume/pages under 'Jan Kiwiet'; Fudge scholarly 1997 uses 'Jan J. Kiwiet'. Index variation John/Jan J. should not produce two separate scholarly authors without author authority research. Relevant disputed manuscript interpolation claims trace specifically to pp257–258 (Fudge 1997 p275), but page CONTENT of Kiwiet 1957 has NOT been acquired or read. Exact locator verified for official bibliographic coverage ONLY, NOT page content. No access to 1957 rights-protected article; preserve EVIDENCE_HOLD and publication holds."
     }
   ]
 }
