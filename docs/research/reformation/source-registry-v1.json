@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 110,
+  "sourceCount": 112,
   "sources": [
     {
       "id": "REF-P01",
@@ -2009,6 +2009,45 @@
       "url": "https://digital.slub-dresden.de/data/kitodo/Brsfded_39946221X-19080501/Brsfded_39946221X-19080501_tif/jpegs/Brsfded_39946221X-19080501.pdf",
       "checkedAt": "2026-11-06",
       "verificationNote": "Wave345: issue no.100 dated Friday 1 May 1908, contemporary original Börsenblatt PDF digital.slub-dresden.de; page content in searchable PDF text block and visual_element description indexed via web fetch at lines 1599–1616 explicitly says 'RUDOLF HAUPT BUCHHANDLUNG UND ANTIQUARIAT. LEIPZIG', 'DÖRRIENSTR. 1', and advertisement of 'KATALOG 15' for non-European language studies with more than 4000 lots. This is catalog 15, not catalog 12, not actual original catalog 15 pages, not Schleitheim book listing. Direct webpage/PDF visual screenshot attempted for PDF pages but failed because PDF size ~10.98 MB exceeds screenshot service limit. Access PARTIAL_OBJECT and locator COARSE_LOCATOR_ONLY: issue number and OCR text range are known, but printed page and PDF page index not established; no source image inspected. It independently grounds the 1908 Leipzig trade address/business continuity after the catalogue 12 claimed in Köhler 1908 and the older 1905 offer in Cramer 1909; original catalog12 p136, Mk1000 and 1533 printed physical leaf remain unread/unverified. No PDF saved, expenses, orders or emails. Publisher identity from DLA Marbach and CiNii not a receipt."
+    },
+    {
+      "id": "REF-S36",
+      "documentYear": 1924,
+      "title": "Otto Leuze, Isnyer Reformations-Drucke (1924), printed p. VII: abbreviation 'Haupt, Katalog' identifies Rudolf Haupt Buchhandlung und Antiquariat Halle a. S., Katalog 12: Inkunabeln, Drucke des 16. Jahrh., (Halle) 1906",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://brill.com/display/book/9789004610392/front-3.pdf",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Wave346: the historical 1924 scholarly bibliography by Otto Leuze (original Isny, Selbstverlag Ev. Kirchengemeinderat; first-edition year corroborated by SLUB and antiquarian metadata) at ORIGINAL printed Roman page VII, line 'Haupt, Katalog = Rudolf Haupt, Buchhandlung und Antiquariat Halle a. S. Katalog 12: Inkunabeln, Drucke des 16. Jahrh. usw. (Halle) 1906.' Brill digital PDF OCR text visible at https://brill.com/display/book/9789004610392/front-3.pdf, page VII, but live PDF screenshot was attempted and returned HTTP 403: this is OCR/text layer partial access NOT visual printed page collation. This establishes Leuze's 1924 BIBLIOGRAPHIC DATING of catalog No.12 to Halle 1906, NOT independent autopsy of the catalog title-page or p136, not date of offer 1905 in Cramer 1909, and no proof the physical 1533 print was transacted. REF-S27 Köhler 1908 provides separate pointer catalog12 p136 Mk1000 in OCR; neither document substitutes original printed p136. No files downloaded or rights licensed."
+    },
+    {
+      "id": "REF-S37",
+      "documentYear": 2026,
+      "title": "ZVAB/AbeBooks archived retail metadata: Rudolf Haupt bound 6-catalogue volume nos. 5–9 and 12; seller Kohl, seller inventory 1655B; direct listing 22543675043 says item no longer available",
+      "evidenceClass": "C",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.zvab.com/Konvolut-Antiquariatskatalogen-%C3%84gyptologie-Koptische-Sprache-Literatur/22543675043/bd",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Wave346: CURRENT direct ZVAB item URL /22543675043/bd shows 'Dieser Artikel ist nicht verfügbar'/'Dieser Artikel ist nicht mehr verfügbar' and seller inventory 1655B, Dr Bernhard A Kohl GmbH. Seller's description: bound 6 catalogues numbered 5,6,7,8,9,12, last headed Inkunabeln / Drucke 16. Jhs / Reformations-Literatur in Originaldrucken, binding mixed dating 1905–1906, roughly 730 pages. Direct item page shows archived EUR28 price, while older ZVAB search/rollup page inconsistently shows EUR50 and '1 verfügbar'; do NOT assert live stock or current price, and do NOT treat listing as photo of the catalogue's own leaf, title page, page 136 or Schleitheim entry. Prior narrowly scoped inquiry to seller sent 2026-11-05 and not repeated; no substantive reply found yet. Class C because this is trade metadata for location search, NOT independent scholarly printed-source evidence. No orders/payments."
     }
   ]
 }
