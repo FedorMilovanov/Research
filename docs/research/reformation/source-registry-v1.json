@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 114,
+  "sourceCount": 115,
   "sources": [
     {
       "id": "REF-P01",
@@ -2123,6 +2123,25 @@
         "C181 Hans Denck polemical allegation present but independent truth unverified"
       ],
       "officialIiifManifestUrl": "https://www.e-rara.ch/i3f/v20/31421750/manifest"
+    },
+    {
+      "id": "REF-P62",
+      "documentYear": 1528,
+      "title": "H. Dencken wid[e]ruff. Uff die zehen artikel: 1 Von der geschrifft; 2 Von der bezalung Christi; 3 Vom Glauben; 4 Vom freien willen; 5 Von guten wercken; 6 Von Secten; 7 Von Ceremonien; 8 Vom Tauff; 9 Vom Nachtmal; 10 Vom Eyd",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_14_SCANS_ACQUIRED",
+      "locatorState": "ORIGINAL_TITLE_AND_SECTION_VIII_FACSIMILE_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN_MARK",
+      "publicationState": "RESEARCH_ONLY",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.digitale-sammlungen.de/en/details/bsb00054820",
+      "iiifManifestUrl": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00054820/manifest",
+      "catalog": "Bayerische Staatsbibliothek München; VD16 D 573; BSB-ID 991071328859707356; BV006163643; bsb00054820; [Worms]: [Peter Schöffer], [1528]; [7] Bl. / 14 digital scans; PDM 1.0",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Source acquired FULL 14 IIIF original 1600px JPEGs by download from BSB official image API; all 14 independently SHA256 verified and archived in connected private Google Drive with subsequent individual cloud readback (14/14 SHA256 matched). Archive zip 8,784,454 bytes and its cloud download SHA256 09c59f4d841f46649c85b6476f0d94af410c810c72cccbb6aa95dd297742c513, exact byte parity. Not all 14 leaves textually fully collated: confirmed original title/ten numbered headings image scan01, section IV on scan07, VII on scan10, section VIII 'Vom Tauuff' scan11–12, concluding oath text scan14. Scan11 explicitly says 'Kindertauff ist eyn menschen gebott/ vnnd der Christen freyheyt' and opposes treating child baptism as direct Christ command; it also describes baptism as admission/mark into believers' community. Scan12 admits previous zeal led him astray and warns against making a compulsory rule from ritual disputes. The title Widerruf is part of posthumous printed editorial framing; authorship/editorship and precise history according to scholarly MennLex/GAMEO still need historical-critical collation, cannot infer complete repudiation. Distinguish Denck text as printed, editor's title, and hostile independent Schmid assertion on Bern 1528 [201]. Public-domain original does not itself authorize editorial release; PUBLICATION_HOLD. Source corpus entry is not an endorsement of Denck's theology."
     }
   ]
 }
