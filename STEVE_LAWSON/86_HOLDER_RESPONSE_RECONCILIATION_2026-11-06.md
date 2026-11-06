@@ -38,6 +38,31 @@ A distinct **direct historical newspaper-text readback** now improves on Texas T
 
 ---
 
+### 1B. 2026-11-06 Texas Tech official football letterwinner record — strong new lead, PERSON_IDENTITY_HOLD
+
+This is a **material new institutional positive record**, discovered after the scoped negative October 16 Texas Tech staff response, that requires targeted reconciliation rather than either ignoring it or declaring the preacher conclusively identified.
+
+**Exact institution-authored sources, direct PDF text inspection (no page-image screenshot):**
+
+1. [Texas Tech Athletics, *2006 Texas Tech Football Media Guide*](https://texastech.com/documents/download/2020/4/15/2006_Texas_Tech_Media_Guide.pdf), official History and Tradition → **Letterwinners** all-time alphabetic register: **`Lawson, Steve, 1972`**. The cover/colophon explicitly calls it the official guide produced by Texas Tech Athletics Media Relations Office.
+2. [Texas Tech Athletics, *2008 Texas Tech Football Media Guide*](https://texastech.com/documents/download/2020/4/15/2008_Texas_Tech_Media_Guide.pdf), same all-time **Letterwinners** entry: **`Lawson, Steve, 1972`**.
+3. [Texas Tech Athletics, *2021 Texas Tech Football Media Guide*](https://texastech.com/documents/download/2021/8/18/TexasTechFinalMediaGuide.pdf), **Texas Tech All-Time Letterwinners**, same **`Lawson, Steve, 1972`**. This is **continued institutional custody of an entry**, not three independent 1972 documents. In 2021 the register is in the printed history section near pp.144–145; avoid a precise page claim before verifying the facsimile.
+
+**Independent institutional biographical context:** [RTS 2013 *Ministry & Leadership*, “One Passion”](https://cdn.rts.edu/wp-content/uploads/2019/02/ML_Fall_2013.pdf) expressly identifies the *future preacher* Steven Lawson as a former college football player, reportedly recruited to play quarterback and shifted to wide receiver at **Texas Tech University**. This is a later biographical profile, **not an original 1972 roster, photocard, letter certificate, or cross-identified full-name entry**.
+
+**State model:**
+- `OFFICIAL_TTU_ALL_TIME_LETTERWINNER_NAME_1972_VERIFIED` — the **Steve Lawson / 1972** register entry definitely exists in multiple official athletics PDF text layers;
+- `LATER_RTS_BIOGRAPHICAL_FOOTBALL_CLAIM_CONFIRMED_AS_MADE` — RTS really said that about Steven Lawson;
+- `IDENTITY_LINK_STEVE_LAWSON_1972_TO_STEVEN_JAMES_LAWSON = PROBABLE_NOT_DOCUMENTARILY_CLOSED` — same university, name and eligible chronology create a *plausible correspondence*, but the athletics entry gives **no middle name, photo, hometown, date of birth, position, jersey, roster ID or link to a later pastor**;
+- `1972_SQUAD_ROLE_POSITION_SCHOLARSHIP_LETTER_OF_THIS_PERSON = IDENTITY_HOLD` — do not state the preacher definitely earned a letter or played receiver in 1972 until cross-identified. The letterwinner record contradicts a **broad** claim `nobody by that name played`, but the archivist's **limited searched-source negative** remains a true account of what staff found in specified documents;
+- `PHYSICAL_1972_GUIDE_AND_IMAGE_VERIFICATION = NOT_ACQUIRED`: attempts to obtain web PDF page images through the screenshot tool returned cache misses; a PDF text extract is not certified phototypographic custody.
+
+**Key namesake exclusions:** The **1972 Rangers pitcher Steven George Lawson** was a different man; the **1971 NFL Cincinnati Bengal draftee Steve/Stephen Lawson** was a Kansas collegiate guard, not a Texas Tech player. Neither name creates proof about the preacher nor should be silently joined to the TTU record. Do not equate a football **letterwinner** entry with a pro football career or a baseball byline.
+
+**Best remaining action:** Send one *targeted follow-up in the existing Texas Tech archive email thread* quoting the exact three university guide links and the 2013 RTS claim. Ask staff to look up the master letterwinner ledger, **1972 varsity roster/press guide and player card**, confirm full identity/position/jersey/class, and explain the difference from the prior search. **No message, fee-bearing search or copy order is sent or authorized in this research patch.** No unsourced rewrite of the live Lawson article and no V7 trigger; only the evidence ledger changes.
+
+---
+
 ### 2. Wheaton Archives & Special Collections — received 2026-10-01
 
 Sender: Emily Banas, Public Services Archivist, Wheaton Archives & Special Collections. Collection **CN 074**, Box **8**, Folders **8-2/8-3**, Arkansas 1989 Crusade scrapbooks.
