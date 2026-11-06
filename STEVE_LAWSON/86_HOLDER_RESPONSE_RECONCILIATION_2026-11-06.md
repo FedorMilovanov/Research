@@ -23,6 +23,21 @@ Sender: Shelby Newman, Unit Manager, Reference Services, Southwest Collection/Sp
 
 **Claims changed:** the sportswriter *campus* lead is strengthened, the narrow negative football search is documented; RTS 2013 retrospective biographical wording is now expressly qualified by the staff search, but not contradicted as an established falsity.
 
+### 1A. 2026-11-06 public newspaper text-layer acquisition — university-hosted 1971 editorial mastheads
+
+A distinct **direct historical newspaper-text readback** now improves on Texas Tech staff's 2026-10-16 second-hand inventory:
+
+1. **`The University Daily`, Texas Tech University, 21 April 1971, volume 46, number 130, printed p. 2.** In the paper's own editorial masthead, the staff role **`Sports Reporter`** includes **`Steve Lawson`**, together with John Rawlings and Leslie Moorehead. University-held digital source: https://newspapers.swco.ttu.edu/bitstreams/a2ac97db-4a6c-4155-b79f-f732314a233a/download .
+2. **`The University Daily`, Texas Tech University, 30 April 1971, volume 46, number 137, printed p. 2-A.** The paper's own editorial masthead again lists **`Steve Lawson`** under **`Sports Reporter`**. University-held digital source: https://newspapers.swco.ttu.edu/server/api/core/bitstreams/57c80147-46f1-4cde-a315-717938e3e7e9/content (equivalent `/bitstreams/57c80147-46f1-4cde-a315-717938e3e7e9/download`).
+
+**Acquisition standard:** The university-hosted newspaper **PDF text layer / direct indexed page transcription** was inspected and the date and role independently matched across both editions. Web PDF page-image screenshot retrieval failed with **cache miss**, and direct binary download was unsuccessful in this execution environment. Thus **do NOT claim a visually reviewed facsimile, downloaded/hashed PDF, unique newspaper-story byline or photographic proof**. The **contemporary masthead text** itself is positive, original-period evidence for **a campus student-newspaper sports-reporter credit in April 1971**, more specific than a modern biographical assertion.
+
+**Claim ceiling:** `TTU_CAMPUS_SPORTS_REPORTER_MASTHEAD_TEXT_DIRECTLY_READ_1971_04_21_AND_04_30`. This strengthens the reported newspaper employment/participation at Texas Tech; it **does not establish** coverage of the Texas Rangers or Dallas Cowboys, any full-time professional post, nor sports participation, letter, quarterback/receiver position or scholarship. The institutional staff report of **four** 1971 references is still **a staff-reported total**; only **two** named dated masthead locations were inspected as text in this pass. Identity linkage is reinforced by TTU's institutional correspondent and contemporary university context, but no story individual byline was found in these two mastheads.
+
+**Article decision:** `V6_NO_CHANGE`; this is a precision upgrade for the source dossier, not a new V7/publication trigger or proof that all unresolved archival requests are satisfied.
+
+---
+
 ### 2. Wheaton Archives & Special Collections — received 2026-10-01
 
 Sender: Emily Banas, Public Services Archivist, Wheaton Archives & Special Collections. Collection **CN 074**, Box **8**, Folders **8-2/8-3**, Arkansas 1989 Crusade scrapbooks.
