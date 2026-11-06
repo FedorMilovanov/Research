@@ -13,6 +13,7 @@ import sys
 from pathlib import Path
 
 LEDGER = Path(__file__).resolve().parent / "data" / "names_ledger_v1.json"
+EXTENSION = Path(__file__).resolve().parent / "data" / "names_extension_ledger_v1.json"
 ALLOWED_CLASSES = {"A1", "A2", "A3", "B1", "C", "D"}
 ALLOWED_ACCESS = {"FULL_OBJECT_VERIFIED", "PARTIAL_OBJECT", "CATALOG_ONLY", "LINK_ONLY", "NOT_ACQUIRED"}
 ALLOWED_LOCATOR = {"EXACT_LOCATOR_VERIFIED", "COARSE_LOCATOR_ONLY", "LOCATOR_MISSING"}
@@ -134,9 +135,86 @@ def validate(data: dict) -> list[str]:
     return errors
 
 
+def validate_extension(extension: dict, baseline: dict) -> list[str]:
+    """Validate separately researched candidate expressions without changing Arena IDs.
+
+    Structural checks only: not textual, lexical, legal, or doctrinal certification.
+    """
+    errors: list[str] = []
+    if not isinstance(extension, dict) or extension.get("schemaVersion") != 1:
+        return ["extension: expected schemaVersion 1 JSON object"]
+    if extension.get("corpusId") != "NAMES_OF_GOD_EXTENSION":
+        errors.append("extension: unexpected corpusId")
+    rows = extension.get("records")
+    if not isinstance(rows, list) or not rows:
+        return errors + ["extension: nonempty records list is required"]
+    baseline_ids = {x.get("id") for x in baseline.get("records", []) if isinstance(x, dict)}
+    extension_ids: set[str] = set()
+    for i, row in enumerate(rows, start=1):
+        label = f"extension[{i}]"
+        if not isinstance(row, dict):
+            errors.append(f"{label}: expected object")
+            continue
+        rid = row.get("id")
+        if not isinstance(rid, str) or not rid:
+            errors.append(f"{label}: missing id")
+            continue
+        if rid in extension_ids or rid in baseline_ids:
+            errors.append(f"{label}: duplicate ID across historical/extension ledgers: {rid}")
+        extension_ids.add(rid)
+        if row.get("ordinal") != i:
+            errors.append(f"{label}: ordinal must be {i}")
+        for field in ("editorialLabel", "verifiedDigitalForm", "verseLocator",
+                      "sourceEdition", "sourceUrl", "category", "editorialCaution"):
+            if not isinstance(row.get(field), str) or not row[field].strip():
+                errors.append(f"{label}: blank {field}")
+        form = str(row.get("verifiedDigitalForm", ""))
+        lang = row.get("language")
+        if lang not in {"hebrew", "aramaic", "greek"}:
+            errors.append(f"{label}: language must be a single original-language layer")
+        if lang in {"hebrew", "aramaic"} and not HEBREW.search(form):
+            errors.append(f"{label}: original Hebrew/Aramaic script absent")
+        if lang == "greek" and not GREEK.search(form):
+            errors.append(f"{label}: Greek script absent")
+        if not URL.match(str(row.get("sourceUrl", ""))):
+            errors.append(f"{label}: sourceUrl must be explicit HTTPS")
+        if row.get("category") == "personal_divine_name":
+            errors.append(f"{label}: candidate cannot silently claim a new personal name")
+        if row.get("evidenceClass") not in ALLOWED_CLASSES or row.get("rightsState") not in ALLOWED_RIGHTS:
+            errors.append(f"{label}: evidence/rights code out of policy")
+        if row.get("accessState") not in ALLOWED_ACCESS or row.get("locatorState") not in ALLOWED_LOCATOR:
+            errors.append(f"{label}: access/locator code out of policy")
+        if row.get("publicationState") != "BLOCKED":
+            errors.append(f"{label}: publication must remain BLOCKED pending explicit review")
+        holds = row.get("holds", [])
+        if not isinstance(holds, list) or not {"PUBLICATION_HOLD", "RIGHTS_HOLD"}.issubset(set(holds)):
+            errors.append(f"{label}: mandatory publication and rights holds missing")
+        elif any(h not in ALLOWED_HOLDS for h in holds):
+            errors.append(f"{label}: unsupported HOLD value")
+        if row.get("digitalFormStatus") != "ONE_VERSE_DIGITAL_SURFACE_CHECKED":
+            errors.append(f"{label}: digital surface status missing or inflated")
+        if row.get("criticalEditionStatus") != "NOT_COLLATED":
+            errors.append(f"{label}: unsupported critical edition closure")
+        related = row.get("relatedBaselineIds", [])
+        if not isinstance(related, list) or not related or any(x not in baseline_ids for x in related):
+            errors.append(f"{label}: links must reference existing original Arena IDs")
+        if row.get("relationshipType") != "thematic_or_textual_cross_reference_not_etymology":
+            errors.append(f"{label}: cross-reference must not invent lexical derivation")
+    counts = extension.get("counts", {})
+    if not isinstance(counts, dict):
+        errors.append("extension counts must be object")
+    else:
+        if counts.get("candidates") != len(rows):
+            errors.append("extension candidate count mismatch")
+        if counts.get("promotedToBaseline") != 0 or counts.get("publicationEligible") != 0 or counts.get("criticalCollations") != 0:
+            errors.append("extension: unreviewed promotion, publication, or critical collation")
+    return errors
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--ledger", type=Path, default=LEDGER)
+    parser.add_argument("--extension", type=Path, default=EXTENSION)
     args = parser.parse_args()
     try:
         with args.ledger.open("r", encoding="utf-8") as stream:
@@ -144,13 +222,20 @@ def main() -> int:
     except (OSError, ValueError) as exc:
         print(f"FAIL: cannot read ledger: {exc}", file=sys.stderr)
         return 1
-    issues = validate(data)
+    try:
+        with args.extension.open("r", encoding="utf-8") as stream:
+            extension = json.load(stream)
+    except (OSError, ValueError) as exc:
+        print(f"FAIL: cannot read extension: {exc}", file=sys.stderr)
+        return 1
+    issues = validate(data) + validate_extension(extension, data)
     if issues:
         for issue in issues:
             print("FAIL:", issue, file=sys.stderr)
         return 1
-    print(f"PASS: {len(data['records'])} Arena baseline rows; publication blocked. "
-          "This is a STRUCTURAL test, not an external text/rights check.")
+    print(f"PASS: {len(data['records'])} Arena baseline + "
+          f"{len(extension['records'])} extension rows; publication blocked. "
+          "STRUCTURAL only; original-language/content/rights checks are separate.")
     return 0
 
 
