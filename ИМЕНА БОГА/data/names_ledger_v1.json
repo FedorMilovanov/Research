@@ -69,9 +69,9 @@
           "status": "DIGITAL_SURFACE_VERIFIED"
         },
         {
-          "edition": "BiblIndex online Septuagint transcription (precise edition not ascertained)",
+          "edition": "STEP Bible digital LXX display (exact underlying edition NOT independently pinned)",
           "verse": "Exodus 3:14",
-          "sourceUrl": "https://dapytains.biblindex.org/fr/bible/septuaginta/ex-3",
+          "sourceUrl": "https://www.stepbible.org/?display=INTERLEAVED&q=version%3DFreLSG%7Cversion%3DTHOT%7Cversion%3DLXX%7Creference%3DExod.3",
           "referent": "Ἐγώ εἰμι ὁ ὤν / Ὁ ὢν",
           "status": "DIGITAL_SURFACE_VERIFIED_CRITICAL_APPARATUS_HOLD"
         }
@@ -837,6 +837,7 @@
     "morphology": "Separate scholarly/grammar review still open",
     "interpretation": "Not certified by surface-form verification",
     "productWrite": "Not authorized",
-    "rights": "Not granted by source URL"
+    "rights": "Not granted by source URL",
+    "lxxSourceCorrection": "2026-11-07: deprecated inaccessible SBL-site Septuaginta PDF and intermittent BiblIndex URL, use STEP parallel THOT/LXX for Exod.3:14-15; specific LXX edition/apparatus still HOLD"
   }
 }
