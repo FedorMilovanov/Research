@@ -67,6 +67,7 @@ Final arena provenance checkpoint:
 - Lawson's own 2018 account places him at The Bible Church of Little Rock during the 1989 Billy Graham crusade; 1992 publisher biography says he had been BCLR senior pastor for over ten years.
 - Dauphin Way 1995–2003 and Christ Fellowship 2003 onward are sufficiently established for the article-level chronology.
 - 1992 *Men Who Win* publisher biography already carried the claim that Lawson had been a sportswriter covering the Texas Rangers and Dallas Cowboys. This is a real period claim, not modern AI-slop; exact byline/outlet/employment status is still an archive question.
+- **April 1971 direct university newspaper mastheads (new readback 2026-11-06):** **`The University Daily` 21 Apr 1971 p.2** and **30 Apr 1971 p.2-A** list **`Steve Lawson` as `Sports Reporter`** in the editorial staff. Direct **university-hosted PDF text-layer transcription** checked in both issues, original page-image screenshots/binaries not obtained, exact links and provenance in `86_`. This establishes a contemporaneous **Texas Tech campus sports-journalism credit** (not a pro-team byline, full-time employment, or football participation).
 
 Namesake guardrail: never merge preacher Steven J. Lawson with Steven George Lawson, the 1972 Texas Rangers pitcher, or the separate NFL offensive lineman Steve Lawson.
 
@@ -128,6 +129,7 @@ Operational rule:
 See `86_HOLDER_RESPONSE_RECONCILIATION_2026-11-06.md` for evidence-limited readback from original incoming threads:
 
 - **Texas Tech, 2026-10-16:** University staff did not identify Lawson in the checked La Ventana/Toreador/athletic-guide football listings; four **1971 campus sportswriter** references surfaced. This is a bounded negative search and a positive campus-journalism lead, **not a proof he never played or worked for professional teams**.
+  **Direct text readback 2026-11-06:** Two original dated newspaper mastheads, `The University Daily` 21 Apr (p.2) and 30 Apr (p.2-A), themselves credit `Steve Lawson` as `Sports Reporter`. University PDFs referenced in `86_`; photographic facsimile not independently reviewed. The count **four** still comes from the staff search, not four directly collated issues.
 - **Wheaton, 2026-10-01:** staff located a `Stephen Lawson` **volunteer** mention in CN 074 Box 8 folder 8-3; original clipping image still uncollated; **1989 committee chair role not verified**.
 - **BGEA, 2026-10-19:** confirmed **five boxes** for the 1989 Little Rock Crusade and a **maximum of 30 remotely newly digitized pages**, asked researcher to choose onsite/remote. No page-level record received and **no fee/payment consent**.
 - **FSU, 2026-09-30:** requested `The Tampa Times` April 20, 1981 p.14 film is in general collection; external researchers cannot obtain FSU remote scans via its restricted service; actual page not received.
