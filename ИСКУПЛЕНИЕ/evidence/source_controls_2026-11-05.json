@@ -384,6 +384,24 @@
       "commit": "6823af4f9905dae9e78da6fc49e45e43df797fc1",
       "gitBytes": 645827,
       "gitSha256": "12625374b9570d87b5aa7d5afc9bc5b33cfa553aecc6df2c482f1eca70728d9e"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+      "commit": "834b6bb98c03ac36975da6cfcb93d95fdead7fd8",
+      "gitBytes": 1224525,
+      "gitSha256": "13ae6458b9457a62284d31ed20fb24dbf34af5c3542566d32e9f498a41b4eab8"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
+      "commit": "834b6bb98c03ac36975da6cfcb93d95fdead7fd8",
+      "gitBytes": 1290083,
+      "gitSha256": "91572a722719eef5ff771f17fa4d374b88a9f4741185ff2ccf2e7d98c9f1aef4"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
+      "commit": "834b6bb98c03ac36975da6cfcb93d95fdead7fd8",
+      "gitBytes": 320921,
+      "gitSha256": "f44b0b1db228f0999e439eb1b52d4ada7507e1f598bade85d062d5bf2f1336df"
     }
   ],
   "sources": [
@@ -6909,7 +6927,7 @@
       "oldScanRecordsPreserved": 27,
       "oldPreimageRecordsPreserved": 41,
       "availableSourceCaptureAndImageRecordsVerified": 182,
-      "gitPreimagesChecked": 61,
+      "gitPreimagesChecked": 64,
       "newScopedSourceRecords": 38,
       "newVisuallyInspectedImages": 18,
       "exactHistoricalBodies": 9,
@@ -6930,7 +6948,8 @@
       "diffWhitespace": "PASS",
       "repositoryValidatorsChanged": false,
       "remainingSourceAccessLimitsRetained": true,
-      "allBibliographicEditionsCollated": false
+      "allBibliographicEditionsCollated": false,
+      "completeGitHistoryWalkVerified": true
     },
     "mainIntegrationCommit": "24b90507f829517c9d1f8bf81286593e27edacad",
     "historicalRegistryBlobReplay": {
@@ -6942,6 +6961,19 @@
       "recordPath": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
       "recordContainsBothTokens": true,
       "purpose": "Historical registry maintenance after main update; exact blob verified, not a theological source or commit citation."
+    },
+    "localHistoryWalkCorrection20261106": {
+      "recordedAtUtc": "2026-11-06T00:49:39.620328+00:00",
+      "failedWorkflowRun": 42138940708,
+      "failedJob": 127634052439,
+      "previousLocalWalkReturnCode": 128,
+      "previousLocalWalkWasIncomplete": true,
+      "reason": "Promisor remote lazy tree fetch blocked in restricted local execution; the unmodified validator had received incomplete stdout. CI had the complete history.",
+      "completedWalkReturnCode": 0,
+      "completedObjectCount": 21382,
+      "historicalBlobReachableFromMain": true,
+      "earlierUnreachableClaimWithdrawn": true,
+      "fix": "Refetched complete commit/tree history with blob:none; rescanned using unchanged repository scripts. Research prose and source readings unaffected."
     }
   }
 }
