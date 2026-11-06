@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 124,
+  "sourceCount": 127,
   "sources": [
     {
       "id": "REF-P01",
@@ -2478,6 +2478,61 @@
       "url": "https://katalog.slub-dresden.de/id/0-1072759098",
       "checkedAt": "2026-11-06",
       "verificationNote": "Official live SLUB Dresden title page for Walter Fellmann edition verifies 1956 title 'Schriften / 2, Religiöse Schriften', series QF Reformationsgeschichte 24/2 and Quellen zur Geschichte der Täufer 6/2, publisher Bertelsmann, 119 pages, physical stack/circulation shelfmark Z. 4. 377-24,2 and barcode 31399699, with 'Bestellen zur Benutzung im Haus, kein Versand per Fernleihe, nur Kopienlieferung' notice. This is a concrete modern cataloged SCHOLARLY BOOK holding, not a current 16th-century Dresden Widerruf copy or a successor of Jones historical Theol. Cathol. 817. Modern critical text pages/Denck's Widerruf internal page and variant readings were NOT read; order and payment NOT placed. Access CATALOG_ONLY, no acquisition of copyrighted contents."
+    },
+    {
+      "id": "REF-S47",
+      "documentYear": 2019,
+      "title": "SLUB Dresden official press release, Kriegsverluste kehren zurück an die SLUB, 4 December 2019: nine recovered Reformation-era and other old volumes, examples of 1945 losses/relocations",
+      "evidenceClass": "A3",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.slub-dresden.de/ueber-uns/presse/pressemitteilung/2019/12/4/kriegsverluste-kehren-zurueck-an-die-slub",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Official SLUB press release dated 2019-12-04 directly opened. It describes return of nine sermon/devotional prints from 16th–18th centuries, says approximately 24 percent of ~7,400 prewar sermon/prayer books in that PARTICULAR category were classed as war losses, and separately reports historic wartime storage/relocation and return problems. This confirms institutional plausibility of relocation, loss and later recovery and presence of provenance research, not the fate or current status of Hans Denck's 'Widerruf' cited by Rufus M. Jones as Dresden old shelfmark Theol. Cathol. 817. No source directly links THAT shelfmark to the nine returned items. An unmatched online catalog query is no proof of destruction or extant custody; exact item-specific holdings correspondence remains ARCHIVE_HOLD. Do not use the 24% subgroup rate as a probability for the Denck copy."
+    },
+    {
+      "id": "REF-S48",
+      "documentYear": 1526,
+      "title": "BSB MDZ official digitized catalog record for Hans Denck, Wer die warheit warlich lieb hat, VD16 D570, [Augsburg: Ulhart, 1526], 8 leaves, bsb00027173",
+      "evidenceClass": "A2",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://digitale-sammlungen.de/de/details/bsb00027173",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Direct official Munich BSB/MDZ discoverability metadata in web index, NOT direct visual inspection of XVI-century printed leaf. Distinct object: title 'Wer die warheit warlich lieb hat, mag sich hierin brüfen im erkandtnuß seynes glaubens', VD16 D570, inferred date [1526], place [Augsburg], printer [Ulhart], extent [8] leaves, digital ID bsb00027173, 16 digital scans, shelfmark 'Res/Polem. 875#Beibd.5'. Digitized object marked Public Domain Mark 1.0 and metadata CC0 by BSB. [1526] and printer/place are institutional inferred catalog claims, not an inspected internal date or colophon. No images copied or full text collated; exact locator verified for catalog identity only. Must NOT confuse with the firstprint Widerruf VD16 D573 or assume Jones's undated item (5) matches this particular print without context/copy comparison."
+    },
+    {
+      "id": "REF-S49",
+      "documentYear": 1528,
+      "title": "BSB MDZ official digitized catalog record for Hans Denck, Wer die Warheit warlich lieb hat, VD16 D572, [Augsburg: Ulhart, 1528], 7 leaves, bsb00028429",
+      "evidenceClass": "A2",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.digitale-sammlungen.de/de/details/bsb00028429",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Direct official BSB MDZ indexed catalog metadata (HTML detail full result) for a different edition/print identity under near-identical opening title: VD16 D572, inferred [Augsburg: Ulhart, 1528], extent [7] leaves, digital ID bsb00028429, 14 digital scans, shelfmark 'Res/Asc. 1868 l#Beibd.4'. Digitization marked PDM and metadata CC0. Not the 'Widerruf' VD16 D573, although same approximate bibliographic year; the VD16 ID, title completion, extent, holding and digitized object differ from VD16 D570 (bsb00027173). No leaf images, colophon, or textual variants inspected; exact locator applies to catalog records not full historical text. BSB [1528] for this OTHER work does not resolve Widerruf [1528]/1529 dating. Mennonitica index also names a third D571 record; not independently checked against primary BSB in this wave, so no assertions about D571 characteristics."
     }
   ]
 }
