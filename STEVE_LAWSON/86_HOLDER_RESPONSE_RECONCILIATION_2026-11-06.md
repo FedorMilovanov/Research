@@ -65,7 +65,7 @@ This is a **material new institutional positive record**, discovered after the s
 
 ### 1C. 2026-11-06 decisive catalog-level next locator — **Steven Lawson (Football), 1970**
 
-**Catalog crosscheck / erratum for merged PR #367 (2026-11-06):** The [institutional TARO finding aid](https://txarchives.org/ttusw/finding_aids/20149.xml) actually lists consecutive **Box 11** entries: **Folder 59 = `Lawhorn, Floyd (Unknown), undated`**, **Folder 60 = `Lawson, Steven (Football), 1970`**, **Folder 61 = `Lawson, Ted (Football), undated`**. The earlier research readback and unsent correspondence wrongly identified Folder **59** as Steven Lawson's; this was a **one-folder indexing mistake** and is not harmless because Folder 59 belongs to a different named person. All *Lawson, Steven* target references in CURRENT and this dossier are now corrected to **Folder 60**. The existing Texas Tech Gmail draft was corrected in place and verified as `DRAFT`; it has **not been sent**. Do not claim the contents of either personal folder were inspected. This correction does **not** change the 1970 archival-catalog date, 1972 all-time letterwinner uncertainty, or `IDENTITY_HOLD`.
+**Catalog crosscheck / erratum for merged PR #367 (2026-11-06):** The [institutional TARO finding aid](https://txarchives.org/ttusw/finding_aids/20149.xml) actually lists consecutive **Box 11** entries: **Folder 59 = `Lawhorn, Floyd (Unknown), undated`**, **Folder 60 = `Lawson, Steven (Football), 1970`**, **Folder 61 = `Lawson, Ted (Football), undated`**. The earlier research readback and unsent correspondence wrongly identified Folder **59** as Steven Lawson's; this was a **one-folder indexing mistake** and is not harmless because Folder 59 belongs to a different named person. All *Lawson, Steven* target references in CURRENT and this dossier are now corrected to **Folder 60**. The corrected Texas Tech request was **sent on 2026-11-06** to `reference.swco@ttu.edu` and verified in Gmail `SENT` (message `1a1b22dfe97337ac`), with **Box 11 / Folder 60** and an explicit prohibition on unapproved charges. Do not claim the contents of either personal folder were inspected. This correction does **not** change the 1970 archival-catalog date, 1972 all-time letterwinner uncertainty, or `IDENTITY_HOLD`.
 
 
 
@@ -80,7 +80,7 @@ The [Texas Tech University's own athletic collections guide](https://resources.s
 - `PHYSICAL_FILE_CONTENT_AND_IMAGE = NOT_ACQUIRED`: only online institutional description directly inspected; no private file, photo or reproduction rights obtained.
 - `TARGET_ARCHIVAL_ACTION`: in the **existing Texas Tech reference correspondence**, request preliminary lookup of precisely **Box 11, Folder 60** and compare its personal identifiers with **Steven James Lawson (1973 BBA)** and the **1972 all-time letterwinner**. A single direct file-level name/position/class/career chronology could permit narrowly lifting `IDENTITY_HOLD`, never blanket sportswriter or football scholarship claims.
 
-**Operational receipt:** The existing Texas Tech **unsent Gmail draft** was updated on 2026-11-06 with this exact box/folder and the request for a no-charge preliminary description, not recreated and not sent. No authorization for paid inspection, copies or publishing personal athlete information; no current published article changed, no new V7 trigger. This is a significant **archive-finding upgrade**, not acquisition or direct verification of underlying primary personal records.
+**Operational receipt:** The existing Texas Tech draft was corrected in place with this exact folder and the nonbillable locator request, then **sent on 2026-11-06** (Gmail `SENT`, message `1a1b22dfe97337ac`). No authorization for paid inspection, copies or publishing personal athlete information; no current published article changed, no new V7 trigger. This is a significant **archive-finding upgrade**, not acquisition or direct verification of underlying primary personal records.
 
 ---
 
@@ -92,6 +92,26 @@ Sender: Emily Banas, Public Services Archivist, Wheaton Archives & Special Colle
 - Staff found a **loose clipping at the back of Folder 8-3** referring to **“Stephen Lawson” as a volunteer**; an external attached JPEG/link was offered in the reply. The **clipping itself has not been independently visually collated** in this research pass; the spelling is preserved exactly as the archivist supplied it.
 - This establishes **`HOLDER_REPORTS_VOLUNTEER_MENTION`**, *not* `CHAIRMAN_OF_COUNSELING_CONFIRMED`, and not an independent item-level validation of the entire committee structure or counselor totals.
 - Wheaton pointed to the Billy Graham Archive and Research Center as principal holder of behind-the-scenes crusade material.
+
+### 2A. 2026-11-06 direct public institutional chronology check — aggregate 1989 event figures
+
+**New first-party archive compilation, distinct from a new holder email:** [Wheaton College Archives & Special Collections, *The Evangelism & Missions Archives — Select Chronology* (last updated 2024-11-20)](https://www.wheaton.edu/media/billy-graham-center-archives/Chronology-1934-2018.pdf). Wheaton explicitly says its **attendance** and **inquirer** figures are taken from BGEA press releases, statistical reports or similar BGEA-prepared documents. The **public 2024 compilation itself was consulted**; the underlying individual **1989 BGEA statistical report / releases were not separately obtained or inspected**. Its 1989 `Arkansas Crusade` row states:
+
+| Field in archive chronology | Exact value | Evidence boundary |
+| --- | --- | --- |
+| Location | Little Rock, AR | Event, not Lawson's position |
+| Event dates | **17–24 September 1989** | Archive's recorded campaign dates; not a counselor-training schedule |
+| Archives collection | **74** | Collection pointer, not person/committee file |
+| **Attendance** | **282,800** | BGEA-derived **aggregate event attendance**; counts visits, not necessarily unique people |
+| **Inquirers** | **6,677** | People **coming forward at an invitation**; not identical to first-time conversions, trained counselors, or church follow-up completions |
+
+**Numerical rule:** [Steven Lawson's signed 2018 retrospective](https://thecripplegate.com/three-lessons-from-the-example-of-billy-graham/) says he was asked to chair counseling/follow-up and oversaw training of **3,000 counselors**. That is a **self-reported count of people trained**, whereas **6,677 inquirers** were event participants responding to invitations and **282,800 attendance** is cumulative visitation. `3,000 ≠ 6,677 ≠ 282,800` is **not itself an inconsistency or misconduct evidence**; denominators, collection methods and unique-person definitions differ. The Wheaton 2024 chronology **does not name Lawson** and **does not establish his chairman title, authority, trained/certified totals or individual follow-up role**.
+
+**Evidence grades:** `ARCHIVE_PUBLISHED_BGEA_DERIVED_AGGREGATE_STUDIED` / `UNDERLYING_1989_STATISTICAL_REPORT_NOT_ACQUIRED` / `LAWSON_CHAIRMAN_ROLE_SELF_REPORTED` / `3K_TRAINED_COUNSELORS_SELF_REPORTED`. Existing Wheaton archivist's separate `Stephen Lawson` volunteer clipping remains **`STAFF_REPORTED`**, its JPEG still uncollated. Preserve all publication cautions; no V7 trigger, no new rights to distribute copies.
+
+**Acquisition state:** The existing BGEA Gmail draft was updated on 2026-11-06 to cite exact Wheaton statistics, then **sent on 2026-11-06** (Gmail `SENT`, message `1a1b22e6307f112b`), prioritizing (1) committee roster / Lawson title and (2) counselor trained/certified categories and definitions; request initial nonbillable folder index and costs **before** any remote digitization. These two explicitly approved follow-up emails were sent; **no payment, archive-file access, or public article edit occurred**.
+
+---
 
 ### 3. Billy Graham Archive and Research Center — received 2026-10-19
 
@@ -131,6 +151,17 @@ Sender: Kristin Hagaman, FSU Special Collections & Archives, ticket **#58057**.
 
 "No reply located" means **no message retrieved in this scoped mailbox review**. It is neither delivery failure nor an authoritative refusal.
 
+## Outbound archive-request closure — 2026-11-06
+
+The user explicitly authorized sending the two prepared, targeted follow-up requests. The final messages were re-read from Gmail `SENT` after dispatch:
+
+- **Texas Tech:** `reference.swco@ttu.edu`, message `1a1b22dfe97337ac` (thread `1a1b0802ce9306c4`), direct question about **U 193.1, Box 11, Folder 60** (`Lawson, Steven (Football), 1970`) and identity cross-check to 1972 letterwinner and 1973 B.B.A. graduate. The correction from Lawhorn's Folder 59 was included.
+- **Billy Graham Archive:** `archives@bgea.org`, message `1a1b22e6307f112b` (thread `1a1b04b955f59380`), narrow request for **a free box/folder list**, committee/chairman's title evidence and counselor-training categories, using the independently researched Wheaton **282,800 cumulative attendance / 6,677 inquirers** as different denominators from Lawson's **self-reported 3,000 trainees**.
+- **Delivery status:** Gmail `SENT` confirmed for both; former drafts no longer exist. This proves dispatch, **not receipt by archivist, opening of physical files, a substantive reply, or a commitment to process the requests**. Both letters expressly state **no paid research, duplication or scanning is authorized**.
+- **Active dependencies:** `TTU_FOLDER_60_CONTENT_PENDING` / `BGEA_COMMITTEE_ROSTER_PENDING` / `NO_FEES_AUTHORIZED` / `IDENTITY_HOLD` / `CHAIRMAN_TITLE_HOLD`. Do not send duplicate requests without a new reason, and do not convert archive silence into a negative archival finding.
+
+---
+
 ## Publication and source-state decision
 
 - **V6 remains authoritative**. No holder reply above establishes a material counterexample to a claim that the current published article affirmatively makes. Existing cautious chronology and denominator safeguards stay unchanged. A wholly new `V7` article version is not justified by these receipts alone.
@@ -142,4 +173,4 @@ Sender: Kristin Hagaman, FSU Special Collections & Archives, ticket **#58057**.
 
 ## Focused next action
 
-The one active requester-response dependency is **BGEA**: an owner-approved choice of *remote/onsite* and price ceiling. Prioritize documentary structure (counseling committee roster; chairman/title; final participation categories; final campaign attendance reports). Ask for a free box/folder list before any fee-bearing scan, and require explicit authorization before any charge. The remaining holders may be followed up in their original threads later, not restarted from scratch.
+The targeted **TTU and BGEA requests are sent**; the remaining action is to **evaluate the institutions' replies**. TTU: review Box 11, Folder 60 identity evidence before any preacher/player conflation. BGEA: seek a free folder-level list and committee/counselor documentation; defer the remote/onsite choice, price ceiling and any copies until written terms are presented and separately authorized. Do not send another duplicate follow-up without new circumstances. Other outstanding holders stay on their original historical threads.
