@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 140,
+  "sourceCount": 145,
   "sources": [
     {
       "id": "REF-P01",
@@ -2772,6 +2772,98 @@
       "url": "https://mqr-search.goshen.edu/search.php?max=10&start=11&subjID=556",
       "checkedAt": "2026-11-06",
       "verificationNote": "MQR Goshen University original index directly inspected; exact item 'The life of Hans Denck (ca.1500-1527)' author catalog indexed 'John Kiwiet', 31:227–259 O 1957 (October). Modern MennLex historian Dipple bibliography identifies same title/volume/pages under 'Jan Kiwiet'; Fudge scholarly 1997 uses 'Jan J. Kiwiet'. Index variation John/Jan J. should not produce two separate scholarly authors without author authority research. Relevant disputed manuscript interpolation claims trace specifically to pp257–258 (Fudge 1997 p275), but page CONTENT of Kiwiet 1957 has NOT been acquired or read. Exact locator verified for official bibliographic coverage ONLY, NOT page content. No access to 1957 rights-protected article; preserve EVIDENCE_HOLD and publication holds."
+    },
+    {
+      "id": "REF-S63",
+      "documentYear": 1527,
+      "title": "BSB MDZ official catalog: Hans Denck, Ordnung Gottes und der Creaturen Werk, [Worms: Peter Schöffer, 1527], VD16 D560, [15] leaves, bsb00037013, Hom. 315#Beibd.7",
+      "evidenceClass": "A2",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://digitale-sammlungen.de/de/details/bsb00037013",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Direct official BSB Digital Collections indexed HTML catalog record: title Ordnung Gottes, und der Creaturen Werk, author Denck (1495–1527), bibliographic estimate place [Worms], printer [Schöffer], date [1527] (ALL bracketed inferred), extent [15] leaves, original shelfmark Hom. 315#Beibd.7, VD16 D560, BSB digital object bsb00037013 with metadata showing 54 scans, PDM 1.0 digital object/CC0 metadata, OCLC 311885946. 54 digital files are NOT 54 historical folios and not 54 new archived images. Physical imprint leaf, signature sequence, typography and colophon have NOT been independently inspected in this wave; attempts to access individual IIIF image from automated web tools failed. Does not prove year 1527, nor the same edition or physical copy as Keller's unspecified 1902 bound volume, nor same printed setting as Denck Widerruf D573. Rights metadata PDM is source-provided eligibility only; no binaries copied and publication remains held."
+    },
+    {
+      "id": "REF-S64",
+      "documentYear": 1527,
+      "title": "UB Johann Christian Senckenberg Frankfurt original 1527 print Syben Artickel zu Wormbs von Jacob Kautzen angeschlagen vnnd gepredigt. Verworffen vnnd widerlegt..., Ms. germ. oct. 43 Nr. 3, 12 leaves, 24 scanned pages",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://sammlungen.ub.uni-frankfurt.de/msneuz/download/pdf/7227577",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "University Library Frankfurt digitization direct institutional PDF 24 page-images original historic object. Visually inspected PDF page indices 0 (title 'Syben Artickel...Verworffen und widerlegt... Anno M.D.XXVII'), 2 (first textual page, author as Jacob Kautz Predicant zu Wormbs mit seinen Brüdern, printed invitation for upcoming Thursday 13th June to explain and defend seven articles), 3 (article 1–4 including article 3 opposing infant baptism), and 4 (article 5–7). Other 20 pages NOT read and no item-level complete collation. Official Frankfurt catalog shelfmark Ms. germ. oct. 43 Nr.3, 12 leaves, digitized 2015 and PDM1.0 digital object; its metadata specifically warns 'nicht eindeutig VD16 K 558 zuordbar', hence K558 NOT unqualified authoritative edition identification. This is a bound 12-leaf printed collection of Kautz's seven theses and their printed refutation, NOT demonstrated to be same physical original single-sheet 7 June posting conserved in Karlsruhe, cited by BDS2. The 13 June Thursday is a PLANNED disputation date in text and DOES NOT date actual posting to 7 or 9 June, nor prove disputation was held. No explicit Denck/Hätzer/Rink coauthor names on the first printed author formula. Photographic visual verification of selected original leaves is stronger than just bibliographic citation, but incomplete."
+    },
+    {
+      "id": "REF-S65",
+      "documentYear": 2025,
+      "title": "Critical Karlstadt Edition KGK 306, introduction to Dialogus von dem fremden Glauben, Glauben der Kirche, Taufe der Kinder, scholarly section Publikation in Worms 1527, n17: Kautz seven theses posted 7 June 1527 (Friday before Pentecost), countertheses 13 June",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://dev2.hab.de/apps/edoc/view.html?id=kgk_306_introduction",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Authoritative digital scholarly critical Karlstadt Edition introduction KGK306, printed volume VIII (Briefe und Schriften 1525–1529, Gütersloh 2025, ISBN 9783579011752; official SLUB Dresden catalog for whole series https://katalog.slub-dresden.de/en/id/0-1556789092), 'Publikation in Worms 1527', machine-indexed complete online prose directly read via web search. Institution's dev2.hab.de HTML returned HTTP403 on open, so webpage itself not interactively loaded and footnote n17 sources were not independently followed/verified. Says Kautz on Friday 7 June 1527 before Pentecost posted seven theses at Dominikanerkirche Worms, third opposed infant baptism, Lutheran opponents responded with seven countertheses on 13 June, public disputation planned but not held; gives 1 July expulsion. Dates and event sequence are modern editorial reconstruction, not an original contemporaneous manuscript explicitly writing 7 June; photo original Frankfurt printed response does not by itself decide posting date. No assertion of DateCertain or full textual critical apparatus access."
+    },
+    {
+      "id": "REF-S66",
+      "documentYear": 1882,
+      "title": "Adolf Brecher, Jakob Kautz, Allgemeine Deutsche Biographie vol15 (1882), pp510–511, older account: posting seven theses on Pentecost 9 June 1527",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.deutsche-biographie.de/gnd122482778.html#adbcontent",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Original ADB biographic entry of 1882 (Brecher author), printed vol15 pp510–511 and official Deutsche Biographie digitized article text directly read: 'am Pfingstfest 1527 (9. Juni)' seven theses displayed in Worms, dispute proposed Friday 13 June; outdated historiographic account contains polemical judgments about Kautz. Contrary to modern KGK 306 7 June and BDS2 editorial 7 June. No contemporaneous first-person dated manuscript directly consulted proving 9 June or 7 June; this is an older secondary claim, not equivalent to newly checked primary Frankfurt print (which gives Thursday 13 June as invitation). As one author/source rather than second independent original print, date remains historiographical disagreement, modern scholarly 7 June provisionally favored but physical Karlsruhe original one-sheet not inspected."
+    },
+    {
+      "id": "REF-S67",
+      "documentYear": 1902,
+      "title": "Ludwig Keller, Die Gottesfreunde, die Deutsche Theologie und die Rosenkreuzer. Nebst Johann Dencks Schrift Etliche Hauptreden, Monatshefte der Comenius-Gesellschaft XI (Heft 5–7, May–July 1902), printed p153",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://dlibra.bibliotekaelblaska.pl/Content/53005/PDF/05-07.pdf",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Full 1902 journal PDF from Elblag library directly opened, PRINTED p153 visually inspected at PDF index 26. Ludwig Keller reports historically having identified an anonymous 4-leaf printing of 'Etliche Hauptreden' in an unspecified assembled volume together with Denck 'Ordnung Gottes und der Creaturen Werk' (parenthetical '1526') and 'Brüderliche Vereinigung etzlicher Kinder Gottes', and he interprets types, authorship, relations to Urbanus Rhegius disputation 1526, Hätzer 1528 Schöffer publication. Keller is a 1902 historical bibliographic witness/interpretive researcher and his 1526 is NOT demonstrably a dated original 1526 imprint: no pictured D560 leaf or direct printed colophon given on p153, physical bound volume identity/call number not established. Contrast BSB VD16 D560 inferred [1527], whose scanned leaf images are uninspected; both are provisional estimates; do not infer that Keller's assembled volume equals BSB Hom. 315#Beibd.7 or another specific digital object. 1902 source itself historically PDM likely, but no reproduction rights certification performed; no article PDF archived."
     }
   ]
 }
