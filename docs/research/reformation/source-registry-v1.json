@@ -2353,9 +2353,9 @@
       "documentYear": 1991,
       "title": "Clarence Bauman, The Spiritual Legacy of Hans Denck: Interpretation and Translation of Key Texts (Brill 1991), original German critical text from Baring/Fellmann and English facing translation; table of contents 'Protestation or Recantation (1528)'",
       "evidenceClass": "B1",
-      "accessState": "PUBLISHER_FRONT_MATTER_ONLY",
-      "locatorState": "EXACT_TOC_LOCATOR_VERIFIED_NOT_BODY",
-      "rightsState": "COPYRIGHT_RESTRICTED",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
       "publicationState": "REFERENCE",
       "holds": [
         "EVIDENCE_HOLD",
@@ -2365,15 +2365,15 @@
       ],
       "url": "https://brill.com/display/book/9789004476936/front-1.pdf",
       "checkedAt": "2026-11-06",
-      "verificationNote": "Official Brill volume front matter directly inspected via publisher PDF text: editor/translator Clarence Bauman; original volume date 1991, ISBN 9004 09291 9; TOC separately lists Denck 'Letter to Oecolampadius (1527)' and 'Protestation or Recantation (1528)' and 'Some Propositions (1528)'; verso says Denck's German 'Schriften' reproduced by permission from critical editions Baring/Fellmann, Quellen und Forschungen zur Reformationsgeschichte XXIV, part2 (1956) pp20–113 and part3 (1960) pp132–133. Publisher front matter explicitly ©1991 Brill, all rights reserved. Full original critical passage/parallel English text NOT acquired, NOT quoted or translated from this copyrighted book; web PDF screenshot request failed, but machine-readable publisher front-matter lines independently exposed. Chronological labels (1527 composition and 1528) in book TOC are editorial labeling, not image-based evidence of the exact print-year of BSB VD16 D573. This is a critical edition/translation lead, not PDM source and not permission to upload whole book to public Drive or Product."
+      "verificationNote": "Official Brill volume front matter directly inspected via publisher PDF text: editor/translator Clarence Bauman; original volume date 1991, ISBN 9004 09291 9; TOC separately lists Denck 'Letter to Oecolampadius (1527)' and 'Protestation or Recantation (1528)' and 'Some Propositions (1528)'; verso says Denck's German 'Schriften' reproduced by permission from critical editions Baring/Fellmann, Quellen und Forschungen zur Reformationsgeschichte XXIV, part2 (1956) pp20–113 and part3 (1960) pp132–133. Publisher front matter explicitly ©1991 Brill, all rights reserved. Full original critical passage/parallel English text NOT acquired, NOT quoted or translated from this copyrighted book; web PDF screenshot request failed, but machine-readable publisher front-matter lines independently exposed. Chronological labels (1527 composition and 1528) in book TOC are editorial labeling, not image-based evidence of the exact print-year of BSB VD16 D573. This is a critical edition/translation lead, not PDM source and not permission to upload whole book to public Drive or Product. Machine state aligned with repository evidence-policy v2: PARTIAL_OBJECT only (publisher front matter + TOC), EXACT_LOCATOR_VERIFIED only for this TOC metadata, PERMISSION_REQUIRED for copyrighted critical translation; no page-level content has been read."
     },
     {
       "id": "REF-S41",
       "documentYear": 1933,
       "title": "Elisabeth Zotz, Neuerworbene Wormser Drucke des 16. Jahrhunderts im Besitze der Stadtbibliothek Worms, Der Wormsgau vol.1 (issued 1926–1933), pp93–100, item4 p95: 'Dencken Widerruff' under 1529",
       "evidenceClass": "B1",
-      "accessState": "PUBLISHED_HISTORIC_BIBLIOGRAPHIC_OCR_TEXT_ONLY",
-      "locatorState": "EXACT_PRINTED_PAGE_95_TEXT_FOUND_IMAGE_NOT_RENDERED",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
       "holds": [
@@ -2385,7 +2385,7 @@
       ],
       "url": "https://www.worms.de/neu-de-wAssets/docs/bildung-bieten/Stadtarchiv/Wormsgau/Der-Wormsgau-1-1926-1933/Nr.13_WG_-1.-Band.pdf",
       "checkedAt": "2026-11-06",
-      "verificationNote": "Official City of Worms journal archive attributes article to Elisabeth Zotz (not Zoth) in Der Wormsgau vol.1 issued 1926–1933, printed pp93–100; exact article publication year within that range NOT established. documentYear=1933 is bound-volume TERMINUS AD QUEM, NOT an assertion of issue publication in 1933. Downloadable historical article machine-readable PDF text at printed p95 places item 4 'Dencken widerruff' under heading 1529, gives octavo, 7 leaves (last blank leaf missing), gathering signature a, no printed year or printer, and attribution to Peter Schöffer from comparing types, preceded by introductory notice of newly acquired Worms Stadtbibliothek copies of 'Hans Denk' and 'Hans Denkens Widerruf'. This is a contemporary twentieth-century bibliographic cataloguing judgement and an archival historical holding claim, NOT the 16th-century book's date or proof Worms held a distinct edition, nor evidence this copy remains available today, nor proof of typography identity with BSB VD16 D573. PDF screenshot tool attempted on first 3 pages but returned cache-miss; exact printed page 95 assessed via machine-readable extraction only, so image-level LOCATOR_HOLD and comparison ARCHIVE_HOLD preserved. Modern rights unclear; no PDF bytes stored/distributed."
+      "verificationNote": "Official City of Worms journal archive attributes article to Elisabeth Zotz (not Zoth) in Der Wormsgau vol.1 issued 1926–1933, printed pp93–100; exact article publication year within that range NOT established. documentYear=1933 is bound-volume TERMINUS AD QUEM, NOT an assertion of issue publication in 1933. Downloadable historical article machine-readable PDF text at printed p95 places item 4 'Dencken widerruff' under heading 1529, gives octavo, 7 leaves (last blank leaf missing), gathering signature a, no printed year or printer, and attribution to Peter Schöffer from comparing types, preceded by introductory notice of newly acquired Worms Stadtbibliothek copies of 'Hans Denk' and 'Hans Denkens Widerruf'. This is a contemporary twentieth-century bibliographic cataloguing judgement and an archival historical holding claim, NOT the 16th-century book's date or proof Worms held a distinct edition, nor evidence this copy remains available today, nor proof of typography identity with BSB VD16 D573. PDF screenshot tool attempted on first 3 pages but returned cache-miss; exact printed page 95 assessed via machine-readable extraction only, so image-level LOCATOR_HOLD and comparison ARCHIVE_HOLD preserved. Modern rights unclear; no PDF bytes stored/distributed. Machine state aligned with repository evidence-policy v2: PARTIAL_OBJECT = OCR text passage only, COARSE_LOCATOR_ONLY even though printed p95 identified because original printed-page screenshot did not render, and RIGHTS_UNKNOWN with restriction to link/reference only."
     }
   ]
 }
