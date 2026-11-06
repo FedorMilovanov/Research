@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 127,
+  "sourceCount": 130,
   "sources": [
     {
       "id": "REF-P01",
@@ -2533,6 +2533,61 @@
       "url": "https://www.digitale-sammlungen.de/de/details/bsb00028429",
       "checkedAt": "2026-11-06",
       "verificationNote": "Direct official BSB MDZ indexed catalog metadata (HTML detail full result) for a different edition/print identity under near-identical opening title: VD16 D572, inferred [Augsburg: Ulhart, 1528], extent [7] leaves, digital ID bsb00028429, 14 digital scans, shelfmark 'Res/Asc. 1868 l#Beibd.4'. Digitization marked PDM and metadata CC0. Not the 'Widerruf' VD16 D573, although same approximate bibliographic year; the VD16 ID, title completion, extent, holding and digitized object differ from VD16 D570 (bsb00027173). No leaf images, colophon, or textual variants inspected; exact locator applies to catalog records not full historical text. BSB [1528] for this OTHER work does not resolve Widerruf [1528]/1529 dating. Mennonitica index also names a third D571 record; not independently checked against primary BSB in this wave, so no assertions about D571 characteristics."
+    },
+    {
+      "id": "REF-S50",
+      "documentYear": 1965,
+      "title": "Ernst Staehelin, Oecolampadiana: Nachträge und Berichtigungen zu Briefe und Akten zum Leben Oekolampads, Basler Zeitschrift für Geschichte und Altertumskunde 65 (1965), pp165–194, printed p178, document 613",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://doi.org/10.5169/seals-117465",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "University ETH E-Periodica digital journal catalog & PDF extracted text directly accessed and identified: Staehelin (1965), journal vol65, printed p178, entry No.613, Oecolampad to Ludwig [?], Basel 9 November 1528. Corrects note4 in two places to 'Peter Schöffer in Worms' instead of 'in Mainz' in his earlier critical edition. Bibliographic scholarly cross-references on same page are Baring Schriften part1 (1955) p38ff, Fellmann part2 (1956) p18f & 104ff on Widerruf, and Denck letter to Oecolampad, Staehelin document No.523, printed Fellmann part3 (1960) p133ff. These are precise REPORTED page locators only: none of Baring, Fellmann or underlying 1528 letter pages has been read from those volumes and this correction does not establish a 1528 Widerruf imprint. ETH digital-journal page screenshot attempt returned crawler verification rather than rendered image; source is machine-readable original PDF text and p178 visible in its extracted text only, thus COARSE_LOCATOR_ONLY and LOCATOR_HOLD for independent facsimile visual confirmation. Copyright image reuse requires permission according to ETH front matter; no original article PDF or screenshots redistributed."
+    },
+    {
+      "id": "REF-S51",
+      "documentYear": 1962,
+      "title": "Walter Klaassen, book review Hans Denck Schriften 1–3, Mennonite Life 17(1), January 1962, printed pp44–45, original journal scan",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://mla.bethelks.edu/ml-archive/pre2000/1962jan.pdf",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Original institutional Mennonite Life PDF January 1962, volXVII no1, printed p44 and p45, directly visually checked by screenshots at PDF indexes 45 and 46. Review titled 'Hans Denck', reviewer signed Walter Klaassen at bottom of printed p45. Review reports entire three-volume critical edition Baring 1955 / Fellmann 1956 & 1960 and explains bibliographical roles. It represents an interpretive disagreement: Klaassen argues Fellmann overreads Denck's distinction between printed Scripture/book and Spirit/inner Word as rejection of sola scriptura, while Klaassen's own counter-interpretation stresses life-giving Spirit's operation through Scripture; do not ascribe either synthesis as direct original 1527 Denck quote. Review p45 asserts Denck regretted participation in public ministry but did not abandon Anabaptism; says Fellmann also concedes core Anabaptist beliefs remained; report both perspectives, not a proven full historical verdict. Review describes 68,120,148 pp (bibliographic counting differences); independent SLUB catalogs list 119 for part2 and 146 for part3. The journal is modern non-PDM; no PDF or image reused in GitHub/Drive and PUBLICATION_HOLD retained."
+    },
+    {
+      "id": "REF-S52",
+      "documentYear": 1960,
+      "title": "SLUB Dresden official item-level catalog for Walter Fellmann (ed.), Hans Denck Schriften part 3: Exegetische Schriften, Gedichte und Briefe, Gütersloh Mohn 1960, catalog extent 146 pages, Z. 4. 377-24,3",
+      "evidenceClass": "A2",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://katalog.slub-dresden.de/en/id/0-1072759101",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Current official SLUB detailed library catalog directly checked for part 3 of Denck series, editor Walter Fellmann, Gütersloh Mohn 1960, in Quellen und Forschungen zur Reformationsgeschichte 24/3 and Quellen zur Geschichte der Täufer 6/3, 146 pages per SLUB metadata. Modern holding in Central Library magazine: exact shelfmark Z. 4. 377-24,3, barcode 31399698, available to order for on-site use or copies via policies; source is catalog metadata ONLY. Compare 1962 Mennonite Life reviewer listing p148 as different bibliographic extent/convention, not proof of textual additions/loss or edition difference. Printed p133ff of Denck letter to Oecolampad is cross-reference in Staehelin 1965 p178, NOT read directly in this book. Old 1914 Dresden historic Theol. Cathol.817 remains a DIFFERENT object, no modern shelfmark crosswalk proven. Modern text protected by rights; no order, scan download or payment made."
     }
   ]
 }
