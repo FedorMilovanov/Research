@@ -1,0 +1,30 @@
+name: Names of God ledger integrity
+
+on:
+  pull_request:
+    paths:
+      - 'ИМЕНА БОГА/**'
+      - '.github/workflows/names-of-god-ledger-integrity.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'ИМЕНА БОГА/**'
+      - '.github/workflows/names-of-god-ledger-integrity.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate-names-ledger:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate Names of God research ledger (read-only)
+        run: python3 'ИМЕНА БОГА/validate_names_ledger.py'
