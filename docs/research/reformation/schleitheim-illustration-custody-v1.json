@@ -2,7 +2,7 @@
   "schema": "reformation-schleitheim-illustration-custody-v1",
   "scope": "research-only",
   "createdAt": "2026-11-06",
-  "totalImageCount": 28,
+  "totalImageCount": 42,
   "rightsNote": "Only PDM historical scans. Modern Peachey conservation photograph excluded from this public repo. Editorial publication requires separate approval and attribution.",
   "binaryState": "PRIVATE_GOOGLE_DRIVE_VERIFIED_23_IMAGES_AND_ZIP",
   "provenanceNote": "Original e-rara and BSB IIIF source URLs; filenames/hash describe particular locally downloaded 1600-pixel JPEG derivatives, not master scans.",
@@ -319,6 +319,146 @@
       "originalTransportFilename": "05_BERN_1528_ELECTION_PRIMARY_W352/Bern_1528_digital_p202_original.jpg",
       "originalPageLabel": "[201]",
       "officialIiifManifestUrl": "https://www.e-rara.ch/i3f/v20/31421750/manifest"
+    },
+    {
+      "file": "06_DENCK_1528_WIDERRUF_FIRSTPRINT_W353/Denck_Widerruf_1528_VD16_D573_BSB_scan01.jpg",
+      "bytes": 513213,
+      "sha256": "4ADFA4479B2585E8585BA0B9A69C45C5B0ADD301CB3993202DD3BC531720EB27",
+      "iiif_image_url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00001/full/1600,/0/default.jpg",
+      "source_record": "https://www.digitale-sammlungen.de/en/details/bsb00054820",
+      "locator": "BSB MDZ bsb00054820, VD16 D 573, official image scan 1 of 14",
+      "rights": "PDM",
+      "local_integrity": "SHA256_VERIFIED_ORIGINAL_AND_PRIVATE_CLOUD_BACKREAD_2026-11-06"
+    },
+    {
+      "file": "06_DENCK_1528_WIDERRUF_FIRSTPRINT_W353/Denck_Widerruf_1528_VD16_D573_BSB_scan02.jpg",
+      "bytes": 464910,
+      "sha256": "95A8E797325EF1A867031B2AEC5B1854AF968599459705AB4EF6E1D8E7BE2E59",
+      "iiif_image_url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00002/full/1600,/0/default.jpg",
+      "source_record": "https://www.digitale-sammlungen.de/en/details/bsb00054820",
+      "locator": "BSB MDZ bsb00054820, VD16 D 573, official image scan 2 of 14",
+      "rights": "PDM",
+      "local_integrity": "SHA256_VERIFIED_ORIGINAL_AND_PRIVATE_CLOUD_BACKREAD_2026-11-06"
+    },
+    {
+      "file": "06_DENCK_1528_WIDERRUF_FIRSTPRINT_W353/Denck_Widerruf_1528_VD16_D573_BSB_scan03.jpg",
+      "bytes": 649491,
+      "sha256": "F675D31AE9D8E92691692216B3C52116A9867688348A313F907EA09DB16A3C3A",
+      "iiif_image_url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00003/full/1600,/0/default.jpg",
+      "source_record": "https://www.digitale-sammlungen.de/en/details/bsb00054820",
+      "locator": "BSB MDZ bsb00054820, VD16 D 573, official image scan 3 of 14",
+      "rights": "PDM",
+      "local_integrity": "SHA256_VERIFIED_ORIGINAL_AND_PRIVATE_CLOUD_BACKREAD_2026-11-06"
+    },
+    {
+      "file": "06_DENCK_1528_WIDERRUF_FIRSTPRINT_W353/Denck_Widerruf_1528_VD16_D573_BSB_scan04.jpg",
+      "bytes": 716563,
+      "sha256": "CB01D30CFAD7E4D2E78EDCA5F9EA94316E91C09B15A71ACF641FD1408FA7A4A0",
+      "iiif_image_url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00004/full/1600,/0/default.jpg",
+      "source_record": "https://www.digitale-sammlungen.de/en/details/bsb00054820",
+      "locator": "BSB MDZ bsb00054820, VD16 D 573, official image scan 4 of 14",
+      "rights": "PDM",
+      "local_integrity": "SHA256_VERIFIED_ORIGINAL_AND_PRIVATE_CLOUD_BACKREAD_2026-11-06"
+    },
+    {
+      "file": "06_DENCK_1528_WIDERRUF_FIRSTPRINT_W353/Denck_Widerruf_1528_VD16_D573_BSB_scan05.jpg",
+      "bytes": 647801,
+      "sha256": "F1700BA63D08A96DDE5FC8C8491E1EB6DED2C2FE2F74383DAD0BA3E346C716AF",
+      "iiif_image_url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00005/full/1600,/0/default.jpg",
+      "source_record": "https://www.digitale-sammlungen.de/en/details/bsb00054820",
+      "locator": "BSB MDZ bsb00054820, VD16 D 573, official image scan 5 of 14",
+      "rights": "PDM",
+      "local_integrity": "SHA256_VERIFIED_ORIGINAL_AND_PRIVATE_CLOUD_BACKREAD_2026-11-06"
+    },
+    {
+      "file": "06_DENCK_1528_WIDERRUF_FIRSTPRINT_W353/Denck_Widerruf_1528_VD16_D573_BSB_scan06.jpg",
+      "bytes": 688718,
+      "sha256": "07A00855007E4D5CE56A5C782F499228C49F02863D5F2DC02EF0FC1E62158596",
+      "iiif_image_url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00006/full/1600,/0/default.jpg",
+      "source_record": "https://www.digitale-sammlungen.de/en/details/bsb00054820",
+      "locator": "BSB MDZ bsb00054820, VD16 D 573, official image scan 6 of 14",
+      "rights": "PDM",
+      "local_integrity": "SHA256_VERIFIED_ORIGINAL_AND_PRIVATE_CLOUD_BACKREAD_2026-11-06"
+    },
+    {
+      "file": "06_DENCK_1528_WIDERRUF_FIRSTPRINT_W353/Denck_Widerruf_1528_VD16_D573_BSB_scan07.jpg",
+      "bytes": 605324,
+      "sha256": "F9104D02EC7493A961739E6DBAB3F3251D3F359B55BF6004C48259D15FADB513",
+      "iiif_image_url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00007/full/1600,/0/default.jpg",
+      "source_record": "https://www.digitale-sammlungen.de/en/details/bsb00054820",
+      "locator": "BSB MDZ bsb00054820, VD16 D 573, official image scan 7 of 14",
+      "rights": "PDM",
+      "local_integrity": "SHA256_VERIFIED_ORIGINAL_AND_PRIVATE_CLOUD_BACKREAD_2026-11-06"
+    },
+    {
+      "file": "06_DENCK_1528_WIDERRUF_FIRSTPRINT_W353/Denck_Widerruf_1528_VD16_D573_BSB_scan08.jpg",
+      "bytes": 677576,
+      "sha256": "B191F2A909577A4408CB679135EDEB48B950DC357EC7A9132EB3B1EBB168DA6A",
+      "iiif_image_url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00008/full/1600,/0/default.jpg",
+      "source_record": "https://www.digitale-sammlungen.de/en/details/bsb00054820",
+      "locator": "BSB MDZ bsb00054820, VD16 D 573, official image scan 8 of 14",
+      "rights": "PDM",
+      "local_integrity": "SHA256_VERIFIED_ORIGINAL_AND_PRIVATE_CLOUD_BACKREAD_2026-11-06"
+    },
+    {
+      "file": "06_DENCK_1528_WIDERRUF_FIRSTPRINT_W353/Denck_Widerruf_1528_VD16_D573_BSB_scan09.jpg",
+      "bytes": 688365,
+      "sha256": "7C0619E09451767A58A27F3C4E07BA9B3960A47C5BBDB5380EEA737007B94C95",
+      "iiif_image_url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00009/full/1600,/0/default.jpg",
+      "source_record": "https://www.digitale-sammlungen.de/en/details/bsb00054820",
+      "locator": "BSB MDZ bsb00054820, VD16 D 573, official image scan 9 of 14",
+      "rights": "PDM",
+      "local_integrity": "SHA256_VERIFIED_ORIGINAL_AND_PRIVATE_CLOUD_BACKREAD_2026-11-06"
+    },
+    {
+      "file": "06_DENCK_1528_WIDERRUF_FIRSTPRINT_W353/Denck_Widerruf_1528_VD16_D573_BSB_scan10.jpg",
+      "bytes": 653391,
+      "sha256": "613F9D0DD779C9ED51C19BF6B680D31586B4767B3F54C9F4B4F5096D27B145D1",
+      "iiif_image_url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00010/full/1600,/0/default.jpg",
+      "source_record": "https://www.digitale-sammlungen.de/en/details/bsb00054820",
+      "locator": "BSB MDZ bsb00054820, VD16 D 573, official image scan 10 of 14",
+      "rights": "PDM",
+      "local_integrity": "SHA256_VERIFIED_ORIGINAL_AND_PRIVATE_CLOUD_BACKREAD_2026-11-06"
+    },
+    {
+      "file": "06_DENCK_1528_WIDERRUF_FIRSTPRINT_W353/Denck_Widerruf_1528_VD16_D573_BSB_scan11.jpg",
+      "bytes": 611035,
+      "sha256": "26C7294A84F85EE628F80F1DCF4BDEBC6EB2E6278E0B1F502D3D3B5B143EC599",
+      "iiif_image_url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00011/full/1600,/0/default.jpg",
+      "source_record": "https://www.digitale-sammlungen.de/en/details/bsb00054820",
+      "locator": "BSB MDZ bsb00054820, VD16 D 573, official image scan 11 of 14",
+      "rights": "PDM",
+      "local_integrity": "SHA256_VERIFIED_ORIGINAL_AND_PRIVATE_CLOUD_BACKREAD_2026-11-06"
+    },
+    {
+      "file": "06_DENCK_1528_WIDERRUF_FIRSTPRINT_W353/Denck_Widerruf_1528_VD16_D573_BSB_scan12.jpg",
+      "bytes": 683144,
+      "sha256": "7B3953A6660AB18E8EE0D9791F3336FE327A4F15AC8F69F85E30E21CD5C09565",
+      "iiif_image_url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00012/full/1600,/0/default.jpg",
+      "source_record": "https://www.digitale-sammlungen.de/en/details/bsb00054820",
+      "locator": "BSB MDZ bsb00054820, VD16 D 573, official image scan 12 of 14",
+      "rights": "PDM",
+      "local_integrity": "SHA256_VERIFIED_ORIGINAL_AND_PRIVATE_CLOUD_BACKREAD_2026-11-06"
+    },
+    {
+      "file": "06_DENCK_1528_WIDERRUF_FIRSTPRINT_W353/Denck_Widerruf_1528_VD16_D573_BSB_scan13.jpg",
+      "bytes": 629335,
+      "sha256": "247886C5917AC718C24C56FC7163E4A59465B0F43BACAFD14F01F7CE09CBEE3F",
+      "iiif_image_url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00013/full/1600,/0/default.jpg",
+      "source_record": "https://www.digitale-sammlungen.de/en/details/bsb00054820",
+      "locator": "BSB MDZ bsb00054820, VD16 D 573, official image scan 13 of 14",
+      "rights": "PDM",
+      "local_integrity": "SHA256_VERIFIED_ORIGINAL_AND_PRIVATE_CLOUD_BACKREAD_2026-11-06"
+    },
+    {
+      "file": "06_DENCK_1528_WIDERRUF_FIRSTPRINT_W353/Denck_Widerruf_1528_VD16_D573_BSB_scan14.jpg",
+      "bytes": 556110,
+      "sha256": "3581E9566A462ECF1F69EC8642EBD6E3DDC1EEA6847F9C65C3F2BD6E5179A9AF",
+      "iiif_image_url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00014/full/1600,/0/default.jpg",
+      "source_record": "https://www.digitale-sammlungen.de/en/details/bsb00054820",
+      "locator": "BSB MDZ bsb00054820, VD16 D 573, official image scan 14 of 14",
+      "rights": "PDM",
+      "local_integrity": "SHA256_VERIFIED_ORIGINAL_AND_PRIVATE_CLOUD_BACKREAD_2026-11-06"
     }
   ],
   "archiveCustody": "All 23 PDM JPEG image derivatives and a complete ZIP are stored in a separate restricted Google Drive Research/Reformation/Schleitheim archive folder; the private folder locator is intentionally omitted from the public repository. Workstation originals were not deleted. Binaries are not tracked in Git.",
@@ -386,13 +526,59 @@
   "cumulativeHistoricalImages": {
     "earlier23": 23,
     "wave352Added5": 5,
-    "total": 28,
-    "totalBytes": 13999046,
-    "all28IndividuallyReadBackAndSHA256Matched": true,
+    "wave353DenckAdded14": 14,
+    "total": 42,
+    "totalBytes": 22784022,
+    "all42IndividuallyReadBackAndSHA256Matched": true,
     "cloudArchives": [
       "REFORMATION_SCHLEITHEIM_23_PDM_IMAGES.zip",
-      "BERN_1528_W352_5_CANONICAL_IIIF_LABELS.zip"
+      "BERN_1528_W352_5_CANONICAL_IIIF_LABELS.zip",
+      "REFORMATION_DENCK_1528_W353_14_ORIGINALS.zip"
     ],
-    "note": "Two separate archives cover 23 and 5 files respectively; never imply that the original 23-image ZIP contains the new five pages."
+    "note": "Three distinct archival packages 23+5+14. BSB Denck 1528 14 images acquired and hash verified. Images research-only; no license to make undocumented historical claims."
+  },
+  "wave353Addendum": {
+    "wave": "353",
+    "acquiredAt": "2026-11-06",
+    "sourceId": "REF-P62",
+    "title": "Hans Dencken Widerruff (BSB bsb00054820, VD16 D 573, 1528)",
+    "officialIIIFManifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00054820/manifest",
+    "rights": "PDM",
+    "newHistoricalImageCount": 14,
+    "newHistoricalImageBytes": 8784976,
+    "scanIndexes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "visuallyInspectedTitleAndSelectedSections": [
+      1,
+      7,
+      10,
+      11,
+      12,
+      14
+    ],
+    "keyOriginalSection": "VIII Vom Tauuff: scan11–12",
+    "privateDriveArchiveFile": "REFORMATION_DENCK_1528_W353_14_ORIGINALS.zip",
+    "privateDriveArchiveBytes": 8784454,
+    "privateDriveArchiveSHA256": "09c59f4d841f46649c85b6476f0d94af410c810c72cccbb6aa95dd297742c513",
+    "individualImagesReadBack": 14,
+    "individualImagesSha256Matched": 14,
+    "archiveCloudReadBackByteParity": true,
+    "publicationHold": true,
+    "publicGitBinaryCount": 0,
+    "rightsRestrictedModernPhotoUploaded": false
   }
 }
