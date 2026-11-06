@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 112,
+  "sourceCount": 113,
   "sources": [
     {
       "id": "REF-P01",
@@ -2048,6 +2048,26 @@
       "url": "https://www.zvab.com/Konvolut-Antiquariatskatalogen-%C3%84gyptologie-Koptische-Sprache-Literatur/22543675043/bd",
       "checkedAt": "2026-11-06",
       "verificationNote": "Wave346: CURRENT direct ZVAB item URL /22543675043/bd shows 'Dieser Artikel ist nicht verfügbar'/'Dieser Artikel ist nicht mehr verfügbar' and seller inventory 1655B, Dr Bernhard A Kohl GmbH. Seller's description: bound 6 catalogues numbered 5,6,7,8,9,12, last headed Inkunabeln / Drucke 16. Jhs / Reformations-Literatur in Originaldrucken, binding mixed dating 1905–1906, roughly 730 pages. Direct item page shows archived EUR28 price, while older ZVAB search/rollup page inconsistently shows EUR50 and '1 verfügbar'; do NOT assert live stock or current price, and do NOT treat listing as photo of the catalogue's own leaf, title page, page 136 or Schleitheim entry. Prior narrowly scoped inquiry to seller sent 2026-11-05 and not repeated; no substantive reply found yet. Class C because this is trade metadata for location search, NOT independent scholarly printed-source evidence. No orders/payments."
+    },
+    {
+      "id": "REF-P60",
+      "documentYear": 1690,
+      "title": "Brüderlich vereynigung etlicher Kinder Gottes, sieben Artickel betreffendt; Luzern ZHB G4.249.d.12 (K4), print catalog-dated [um 1690] although title contains 'M D XXVII'",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.e-rara.ch/search/quick?query=Satler",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Wave347. AUTHORITATIVE INSTITUTIONAL SEARCH LISTING only, not original image inspected: e-rara search Satler first title, 'Brüderlich vereynigung etlicher Kinder Gottes, sieben Artickel betreffendt; Jtem, Ein Sendbrieff Michael Satlers ... M D XXVII' catalog imprint [Erscheinungsort nicht ermittelbar] [Verlag nicht ermittelbar] [um 1690], owner Zentral- & Hochschulbibliothek Luzern, signature G4.249.d.12 (K4). Click from e-rara search to individual-work search https://www.e-rara.ch/zhb/content/search/31438253?query=Satler confirms platform internal work ID 31438253; searchable hits at ['Seite 1',29,34] do not equal page-level reading of Article I and its Matt 27/28 numeral. Direct titleinfo, pages and anticipated IIIF manifest inaccessible to web fetch (server errors) and TinyFish browser returned 'Verifying your browser', so original source scans, typesetting, complete collation and licensing NOT inspected. Source class A1 refers to nature of the historic pamphlet, NOT verification confidence; access CATALOG_ONLY. 'M D XXVII' in edition's long title points to 1527 Sattler event/early text, not a verified 1527 imprint for THIS Luzern object. Bibliographic date approx 1690 is estimate, not proven exact year. This item has NOT been identified with the distinct 1686 edition mentioned in GAMEO REF-S26, or Goshen early-seventeenth-century witness in REF-S17 or other 1527/1533/1550 physical copies. Status holds fail closed. No binaries downloaded, copied, purchased or shared. Official search item links: https://www.e-rara.ch/zhb/content/search/31438253?query=Satler"
     }
   ]
 }
