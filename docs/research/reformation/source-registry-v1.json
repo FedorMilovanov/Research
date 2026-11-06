@@ -2084,44 +2084,45 @@
       ],
       "url": "https://www.e-rara.ch/bes_1/content/titleinfo/31421750",
       "checkedAt": "2026-11-06",
-      "verificationNote": "Official e-rara bibliographic record directly checked: Zurich Christoph Froschauer 1528, VD16 P4757, UB Bern MUE AD 409 : 2, DOI 10.3931/e-rara-145380; 214 unnumbered pages + one leaf, 8vo, Public Domain Mark. Locally downloaded and SHA256-verified two specific IIIF JPEG page derivatives: digital title page 1 (SHA F38FBC99AAF7DCB1ABEF555293C448D782C1C764613560321878D06C6D9805A6), and beginning of separately titled refutation section p185 (SHA F272F0B4C30AB90AAD08D662533B6B48BBEC8522025F3B9E4323E760A2C34A8D). This is the historical author's polemical speech, not a neutral record or direct 1527 Schleitheim text. Wave 352 correction (2026-11-06): the previous OCR-only status of the election/infant-baptism passage is SUPERSEDED for exact digital original-page locators 200, 201, 202. Digital p200 visually confirms baptism presented as a sign of Christian brotherhood/covenant grounded in eternal divine election; p201 quotes Ephesians 1 and applies the sign to infants; p202 acknowledges that no person can know with certainty whether a particular child is elect, using Jacob and Esau. Digital pp198-199 visually reviewed for polemical context. Five additional historical PDM IIIF derivatives have SHA-256 verified, stored in the correct restricted Google Drive, and independently downloaded back at matching checksums. Digital pages are not printed pagination. Handwritten marginalia are not attributed to Schmid. p202's allegation concerning Hans Denck's deathbed recantation remains ONLY an adversarial statement, NOT independent biographical proof. A full 214-page collation and independent doctrinal comparison remain open. Source-level holds concern unverified wider claims and publication, not the now verified image locator for C179; preserve PUBLICATION_HOLD and do not transfer to Product. See schleitheim-illustration-custody-v1.json and claims C179–C181.",
+      "verificationNote": "Official e-rara bibliographic record directly checked: Zurich Christoph Froschauer 1528, VD16 P4757, UB Bern MUE AD 409 : 2, DOI 10.3931/e-rara-145380; 214 unnumbered pages + one leaf, 8vo, Public Domain Mark. Locally downloaded and SHA256-verified two specific IIIF JPEG page derivatives: digital title page 1 (SHA F38FBC99AAF7DCB1ABEF555293C448D782C1C764613560321878D06C6D9805A6), and beginning of separately titled refutation section p185 (SHA F272F0B4C30AB90AAD08D662533B6B48BBEC8522025F3B9E4323E760A2C34A8D). This is the historical author's polemical speech, not a neutral record or direct 1527 Schleitheim text. Wave 352 definitive IIIF pagination correction (2026-11-06): original five IIIF image IDs 31421948, 31421949, 31421950, 31421951, 31421952 carry OFFICIAL canvas labels [197], [198], [199], [200], [201] respectively, as read from https://www.e-rara.ch/i3f/v20/31421750/manifest (NOT [198]–[202]). Digital [199] confirms baptism as sign of brotherhood/covenant grounded in eternal divine election; [200] cites Ephesians 1 and the author's infant-baptism argument; [201] states election of an individual child is unknowable to humans, citing Jacob and Esau, and later contains an adversarial Hans Denck deathbed-recantation allegation whose historical truth is NOT independently verified. [197]–[198] visually inspected for hostile polemical context. Five historical PDM original-image derivatives stored in separate restricted Google Drive, individually read back and matching SHA-256; replacement archive filenames agree with OFFICIAL canvas labels and ZIP independently verified byte-identical. Title of separate refutation section: official label [185], image ID 31421936. No printed-page pagination inferred from digital labels. Handwritten marginalia have unknown authorship/dating. Whole 220-canvas object not collated. Preserve source-level holds for wider claims and editorial PUBLICATION_HOLD; precise facsimile locator for C179 is now VERIFIED, superseding the earlier OCR-only note.",
       "verifiedPageLocators": [
         {
-          "digitalPage": 185,
-          "iiifCanvasId": 31421935,
-          "facsimileVisualCheck": "WAVE351_VERIFIED"
+          "canvasLabel": "[185]",
+          "iiifCanvasId": 31421936,
+          "visualCheck": "WAVE351_VERIFIED"
         },
         {
-          "digitalPage": 198,
-          "iiifCanvasId": 31421948,
-          "facsimileVisualCheck": "WAVE352_VERIFIED"
+          "canvasLabel": "[197]",
+          "iiifCanvasId": 31422148,
+          "visualCheck": "WAVE352_MANIFEST_AND_FACSIMILE_VERIFIED"
         },
         {
-          "digitalPage": 199,
-          "iiifCanvasId": 31421949,
-          "facsimileVisualCheck": "WAVE352_VERIFIED"
+          "canvasLabel": "[198]",
+          "iiifCanvasId": 31422149,
+          "visualCheck": "WAVE352_MANIFEST_AND_FACSIMILE_VERIFIED"
         },
         {
-          "digitalPage": 200,
-          "iiifCanvasId": 31421950,
-          "facsimileVisualCheck": "WAVE352_VERIFIED"
+          "canvasLabel": "[199]",
+          "iiifCanvasId": 31422150,
+          "visualCheck": "WAVE352_MANIFEST_AND_FACSIMILE_VERIFIED"
         },
         {
-          "digitalPage": 201,
-          "iiifCanvasId": 31421951,
-          "facsimileVisualCheck": "WAVE352_VERIFIED"
+          "canvasLabel": "[200]",
+          "iiifCanvasId": 31422151,
+          "visualCheck": "WAVE352_MANIFEST_AND_FACSIMILE_VERIFIED"
         },
         {
-          "digitalPage": 202,
-          "iiifCanvasId": 31421952,
-          "facsimileVisualCheck": "WAVE352_VERIFIED"
+          "canvasLabel": "[201]",
+          "iiifCanvasId": 31422152,
+          "visualCheck": "WAVE352_MANIFEST_AND_FACSIMILE_VERIFIED"
         }
       ],
       "verifiedClaimScope": [
         "C179 original printed passage",
         "C180 individual election caveat",
         "C181 Hans Denck polemical allegation present but independent truth unverified"
-      ]
+      ],
+      "officialIiifManifestUrl": "https://www.e-rara.ch/i3f/v20/31421750/manifest"
     }
   ]
 }
