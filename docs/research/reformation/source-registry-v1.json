@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 130,
+  "sourceCount": 134,
   "sources": [
     {
       "id": "REF-P01",
@@ -2588,6 +2588,78 @@
       "url": "https://katalog.slub-dresden.de/en/id/0-1072759101",
       "checkedAt": "2026-11-06",
       "verificationNote": "Current official SLUB detailed library catalog directly checked for part 3 of Denck series, editor Walter Fellmann, Gütersloh Mohn 1960, in Quellen und Forschungen zur Reformationsgeschichte 24/3 and Quellen zur Geschichte der Täufer 6/3, 146 pages per SLUB metadata. Modern holding in Central Library magazine: exact shelfmark Z. 4. 377-24,3, barcode 31399698, available to order for on-site use or copies via policies; source is catalog metadata ONLY. Compare 1962 Mennonite Life reviewer listing p148 as different bibliographic extent/convention, not proof of textual additions/loss or edition difference. Printed p133ff of Denck letter to Oecolampad is cross-reference in Staehelin 1965 p178, NOT read directly in this book. Old 1914 Dresden historic Theol. Cathol.817 remains a DIFFERENT object, no modern shelfmark crosswalk proven. Modern text protected by rights; no order, scan download or payment made."
+    },
+    {
+      "id": "REF-S53",
+      "documentYear": 2020,
+      "title": "Geoffrey Dipple, Denck Hans, Mennonitisches Lexikon volume V Revision und Ergänzung (published print edition 2020; online revised until 2024), entry biographies/works/literature",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.mennlex.de/doku.php?id=art%3Adenck_hans",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Complete entry on original MennLex V scholarly encyclopedia site read, authored Geoffrey Dipple, heading 'Denck, Hans', biographic narrative (especially paragraphs about late 1527 Basel and Widerruf), as well as bibliographic references. Mennonitischer Geschichtsverein's editor Hans-Jürgen Goertz and print Band V 2020 established independently via publisher info/official MennLex start page; online page last changed June 2024, NOT necessarily original text written in 2024. Dipple says Denck wrote his faith-account at Oecolampadius' request, and 'Oecolampad nach dem Tod Dencks als Hans Denken Widerruf (1528) veröffentlichte' (attributing edition/publishing agency to Oecolampadius, printed 1528). This conflicts at least in publication DATE and procedural narrative with 2008 Oelschläger reporting Goeters' possible Hätzer-to-Schöffer 1528 delivery and early-1529 print. Oecolampadius as sponsor and Schöffer as printer could theoretically coexist, but no primary transmission chain establishes coexistence, or a distinct 1528 vs 1529 edition. This is modern secondary scholarship, not autoptic colophon, editor's actual printing contract, or proved agent. His assessment of Denck's manuscript/soteriology is historian's interpretation, not literal original wording. No copies made, rights unknown."
+    },
+    {
+      "id": "REF-S54",
+      "documentYear": 1526,
+      "title": "Wolfgang Capito with Oecolampadius postscript to Ulrich Zwingli, 26 December 1526, letter 314, ZwBr II pp819–821 Ep564; interpubs one-page English editorial summary",
+      "evidenceClass": "A2",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://capito.iterpubs.org/letters/1526/Letter_314.pdf",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Directly opened capito.iterpubs.org editor-created 1-page PDF and visually screenshotted page0. Header specifies Wolfgang Capito and Johannes Oecolampadius postscript to Zwingli 26 Dec 1526, printed historic correspondence ZwBr volume2 pp819-821 Ep564. Bracketed editorial [Summary] (NOT full 1526 original letter transcription!) says Strasbourg reformers debated Hans Denck 22 December concerning [Vom Gesatz Gottes]; hostile evaluation of his apparent rhetorical strategy is Capito's reported viewpoint. Denck ordered to depart and left Strasbourg 25 December. Important chronology independently predates 1527 Widerruf composition. Original 16th-century text and ZwBr 2 pp819-821 NOT acquired, translated line-by-line, or photographed; do not call current PDF a primary manuscript, direct first-person statement, or original-language quotation."
+    },
+    {
+      "id": "REF-S55",
+      "documentYear": 1527,
+      "title": "Wolfgang Capito to Ulrich Zwingli, 18 August 1527, letter 338, ZwBr III pp191–194 Ep643; interpubs 1-page English editorial summary",
+      "evidenceClass": "A2",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://capito.iterpubs.org/letters/1527/Letter_338.pdf",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Directly opened capito.iterpubs.org editor-created 1-page PDF and visually checked image page0. It states letter Capito to Zwingli, 18 Aug 1527, printed ZwBr vol3 pp191-194 Ep643. Bracketed editorial [Summary] reports Martin Cellarius had debated Denck in Ludwig Hätzer's presence over Denck's free-will work 'Was geredt sei...' (1526); they reached an agreement on its reading, while Hätzer continued criticizing Cellarius. This is Capito's partisan report on the issue of whether CELLARIUS was an Anabaptist; NOT proof Denck agreed with the Reformed on all theology, not a new exact debate date (only terminus before Aug 18), NOT direct verbatim German/Latin original. Distinct from 26 Dec 1526 Capito letter and not about Widerruf print date. Access to summary not original letters; retain evidence and publication holds."
+    },
+    {
+      "id": "REF-S56",
+      "documentYear": 1997,
+      "title": "Thomas A. Fudge, Icarus of Basel? Oecolampadius and the Early Swiss Reformation, Journal of Religious History 21(3), October 1997, pp268–284, particularly printed p275 nn49–52",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/1467-9809.00039",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Publisher DOI 10.1111/1467-9809.00039 confirms article identity and formal journal pages. Read freely accessible third-party personal-library PDF mirror 'downloads.whitehorsetc.com/Icarus_of_Basel_Oecolampadius_and_the_Ea.pdf' and directly visually inspected PDF index7 = printed p275, including footnotes 49–52. Fudge reports Oecolampadius in Nov1527 told correspondents Denck converted, later stated he had Denck's manuscript and could publish it; source attribution in Fudge is Jan J. Kiwiet, Mennonite Quarterly Review 31 (1957), p258. He further records Kiwiet's claim Oecolampadius wrote part of the ostensible recantation, and warns in note52 that manuscript evidence does not affirm this accusation. The underlying manuscript, epistolary quotation in original language, and Kiwiet 1957 pp257–258 have NOT been personally examined. Do not present an original quotation as own autopsy, nor conclude physical possession, falsification, or full genuine authorship as established facts. Official published 1997 modern scholarly PDF has copyright; no PDF or screenshot archived or reused."
     }
   ]
 }
