@@ -121,6 +121,22 @@ def validate(data: dict) -> list[str]:
         if rid == "immanuel" and (not isinstance(witnesses, list) or len(witnesses) < 2):
             errors.append(f"{prefix}: must retain both Isaiah Hebrew and Matthew Greek witnesses")
 
+    # The Russian transcription "Рои" obscures different Hebrew consonantal roots.
+    index = {row.get("id"): row for row in rows if isinstance(row, dict)}
+    roi_seeing = index.get("el-roi", {})
+    roi_shepherd = index.get("ro-i", {})
+    if roi_seeing.get("lexicalRoot") != "ראה" or roi_shepherd.get("lexicalRoot") != "רעה":
+        errors.append("lexical collision: El-Roi seeing and YHWH-ro-i shepherding must remain distinct roots")
+    if roi_seeing.get("consonantalForm") != "אל ראי" or roi_shepherd.get("consonantalForm") != "יהוה רעי":
+        errors.append("lexical collision: consonantal spellings must preserve א vs ע")
+    if not roi_seeing.get("transliterationCollisionGroup") or roi_seeing.get("transliterationCollisionGroup") != roi_shepherd.get("transliterationCollisionGroup"):
+        errors.append("lexical collision group must be preserved")
+    yireh = index.get("yireh", {})
+    morphological = yireh.get("morphologyNote", {})
+    if not isinstance(morphological, dict):
+        errors.append("Genesis 22:14 morphology note missing")
+    elif (morphological.get("verb1"), morphological.get("verb2")) != ("יִרְאֶה", "יֵרָאֶה"):
+        errors.append("Genesis 22:14: Qal/Niphal digital forms have been conflated")
     counts = data.get("counts", {})
     if not isinstance(counts, dict):
         errors.append("counts must be object")
