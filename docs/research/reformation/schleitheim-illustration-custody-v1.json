@@ -2,7 +2,7 @@
   "schema": "reformation-schleitheim-illustration-custody-v1",
   "scope": "research-only",
   "createdAt": "2026-11-06",
-  "totalImageCount": 23,
+  "totalImageCount": 28,
   "rightsNote": "Only PDM historical scans. Modern Peachey conservation photograph excluded from this public repo. Editorial publication requires separate approval and attribution.",
   "binaryState": "PRIVATE_GOOGLE_DRIVE_VERIFIED_23_IMAGES_AND_ZIP",
   "provenanceNote": "Original e-rara and BSB IIIF source URLs; filenames/hash describe particular locally downloaded 1600-pixel JPEG derivatives, not master scans.",
@@ -254,6 +254,56 @@
       "locator": "UB Bern; VD16 P4757; digital page 185; beginning Conrad Schmid refutation",
       "rights": "PDM",
       "local_integrity": "SHA256_VERIFIED_2026-11-06"
+    },
+    {
+      "file": "05_BERN_1528_ELECTION_PRIMARY_W352/Bern_1528_digital_p198_original.jpg",
+      "bytes": 592171,
+      "sha256": "EFC0FF257B2D7CB55645DD75FDF99690DEA0D3EF380AEE552238B2A62AB0D855",
+      "iiif_image_url": "https://www.e-rara.ch/i3f/v20/31421948/full/1600,/0/default.jpg",
+      "source_record": "https://www.e-rara.ch/bes_1/content/titleinfo/31421750",
+      "locator": "UB Bern MUE AD 409 : 2, VD16 P4757, digital p198; printed pagination not inferred",
+      "rights": "PDM",
+      "local_integrity": "SHA256_VERIFIED_LOCAL_AND_CLOUD_2026-11-06"
+    },
+    {
+      "file": "05_BERN_1528_ELECTION_PRIMARY_W352/Bern_1528_digital_p199_original.jpg",
+      "bytes": 578718,
+      "sha256": "25E080D7F6D24C6AE90249E402F218D2AF28AA5AEA0E7BDC1F9B3D0195AE3385",
+      "iiif_image_url": "https://www.e-rara.ch/i3f/v20/31421949/full/1600,/0/default.jpg",
+      "source_record": "https://www.e-rara.ch/bes_1/content/titleinfo/31421750",
+      "locator": "UB Bern MUE AD 409 : 2, VD16 P4757, digital p199; printed pagination not inferred",
+      "rights": "PDM",
+      "local_integrity": "SHA256_VERIFIED_LOCAL_AND_CLOUD_2026-11-06"
+    },
+    {
+      "file": "05_BERN_1528_ELECTION_PRIMARY_W352/Bern_1528_digital_p200_original.jpg",
+      "bytes": 594568,
+      "sha256": "9D0B3F9394D0C98934D2012448F68C2E3560EA653EB4CC044C40183DBB5BB9E7",
+      "iiif_image_url": "https://www.e-rara.ch/i3f/v20/31421950/full/1600,/0/default.jpg",
+      "source_record": "https://www.e-rara.ch/bes_1/content/titleinfo/31421750",
+      "locator": "UB Bern MUE AD 409 : 2, VD16 P4757, digital p200; printed pagination not inferred",
+      "rights": "PDM",
+      "local_integrity": "SHA256_VERIFIED_LOCAL_AND_CLOUD_2026-11-06"
+    },
+    {
+      "file": "05_BERN_1528_ELECTION_PRIMARY_W352/Bern_1528_digital_p201_original.jpg",
+      "bytes": 581005,
+      "sha256": "794B4E8B0B5F62775B80FCC7F89ABE6316562859AFBEB12E96968CB3620DAA22",
+      "iiif_image_url": "https://www.e-rara.ch/i3f/v20/31421951/full/1600,/0/default.jpg",
+      "source_record": "https://www.e-rara.ch/bes_1/content/titleinfo/31421750",
+      "locator": "UB Bern MUE AD 409 : 2, VD16 P4757, digital p201; printed pagination not inferred",
+      "rights": "PDM",
+      "local_integrity": "SHA256_VERIFIED_LOCAL_AND_CLOUD_2026-11-06"
+    },
+    {
+      "file": "05_BERN_1528_ELECTION_PRIMARY_W352/Bern_1528_digital_p202_original.jpg",
+      "bytes": 595951,
+      "sha256": "E43DDC88C76A9DEAD4D0F28298502CAE8B6C994AAC563B232948F434F974A071",
+      "iiif_image_url": "https://www.e-rara.ch/i3f/v20/31421952/full/1600,/0/default.jpg",
+      "source_record": "https://www.e-rara.ch/bes_1/content/titleinfo/31421750",
+      "locator": "UB Bern MUE AD 409 : 2, VD16 P4757, digital p202; printed pagination not inferred",
+      "rights": "PDM",
+      "local_integrity": "SHA256_VERIFIED_LOCAL_AND_CLOUD_2026-11-06"
     }
   ],
   "archiveCustody": "All 23 PDM JPEG image derivatives and a complete ZIP are stored in a separate restricted Google Drive Research/Reformation/Schleitheim archive folder; the private folder locator is intentionally omitted from the public repository. Workstation originals were not deleted. Binaries are not tracked in Git.",
@@ -274,6 +324,51 @@
     "originalPreTransferBundleSha256": "07dd54ad9ff8bb60c7f5fa68530d214bc6e3d77cf840c9573855abc5330c1c7e",
     "rightsRestrictedModernPhotoUploaded": false,
     "otherDriveFsAccountIdentityUnverified": true,
-    "publicationHoldsPreserved": true
+    "publicationHoldsPreserved": true,
+    "snapshotWave": "351",
+    "snapshotScope": "Original 23 historical JPEGs and their immutable ZIP only; the five new wave352 images have a separate additional ZIP and were independently verified."
+  },
+  "wave352Addendum": {
+    "wave": "352",
+    "acquiredAt": "2026-11-06",
+    "sourceId": "REF-P61",
+    "newHistoricalImageCount": 5,
+    "originalDigitalPages": [
+      198,
+      199,
+      200,
+      201,
+      202
+    ],
+    "originalIIIFIdentifiers": [
+      31421948,
+      31421949,
+      31421950,
+      31421951,
+      31421952
+    ],
+    "originalImageBytes": 2942413,
+    "imagesReadBackFromPrivateCloud": 5,
+    "imagesSha256Matched": 5,
+    "privateDriveFolder": "PRIVATE_RESEARCH_REFORMATION_SCHLEITHEIM/02_IMAGES/05_BERN_1528_ELECTION_PRIMARY_W352",
+    "archiveFile": "REFORMATION_BERN_1528_W352_FIVE_ORIGINALS.zip",
+    "archiveBytes": 2938325,
+    "archiveSha256": "1c34149bf63c8238f1db8b0a98f5bc24f96c74aa6ae06ab6e4e94410a2f1751e",
+    "archiveDownloadedAndBitIdentical": true,
+    "rightsRestrictedModernPhotoUploaded": false,
+    "publicRepoImageBinaries": false,
+    "publicationHold": true
+  },
+  "cumulativeHistoricalImages": {
+    "earlier23": 23,
+    "wave352Added5": 5,
+    "total": 28,
+    "totalBytes": 13999046,
+    "all28IndividuallyReadBackAndSHA256Matched": true,
+    "cloudArchives": [
+      "REFORMATION_SCHLEITHEIM_23_PDM_IMAGES.zip",
+      "REFORMATION_BERN_1528_W352_FIVE_ORIGINALS.zip"
+    ],
+    "note": "Two separate archives cover 23 and 5 files respectively; never imply that the original 23-image ZIP contains the new five pages."
   }
 }
