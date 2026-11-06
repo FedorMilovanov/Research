@@ -113,7 +113,19 @@
       "sourceEdition": "Mechon-Mamre MT digital transcription",
       "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
       "criticalEditionStatus": "NOT_COLLATED",
-      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass",
+      "lexicalRoot": "ראה",
+      "consonantalForm": "יהוה יראה",
+      "morphologyNote": {
+        "namedPlaceForm": "יְהוָה יִרְאֶה",
+        "verb1": "יִרְאֶה",
+        "traditionalMorphology1": "Qal yiqtol 3ms",
+        "mountainFormula": "בְּהַר יְהוָה יֵרָאֶה",
+        "verb2": "יֵרָאֶה",
+        "traditionalMorphology2": "Niphal yiqtol 3ms",
+        "morphologicalStatus": "GRAMMATICAL_ANALYSIS_NEEDS_GRAMMAR_REFERENCE_FOR_QUOTE_SAFE",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt0122.htm"
+      }
     },
     {
       "id": "rapha",
@@ -211,7 +223,12 @@
       "sourceEdition": "Mechon-Mamre MT digital transcription",
       "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
       "criticalEditionStatus": "NOT_COLLATED",
-      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass",
+      "lexicalRoot": "רעה",
+      "consonantalForm": "יהוה רעי",
+      "semanticDomain": "shepherding, pastoral metaphor",
+      "transliterationCollisionGroup": "Roi_Roi_Ru",
+      "lexicalBoundary": "NOT SAME ROOT AS EL_ROI_SEEING; ע vs א"
     },
     {
       "id": "shalom",
@@ -479,7 +496,12 @@
       "sourceEdition": "Mechon-Mamre MT digital transcription",
       "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
       "criticalEditionStatus": "NOT_COLLATED",
-      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass",
+      "lexicalRoot": "ראה",
+      "consonantalForm": "אל ראי",
+      "semanticDomain": "seeing, vision; Hagar's response",
+      "transliterationCollisionGroup": "Roi_Roi_Ru",
+      "lexicalBoundary": "NOT SAME ROOT AS YHWH_ROI_PASTORAL; א vs ע"
     },
     {
       "id": "el-gibbor",
@@ -838,6 +860,8 @@
     "interpretation": "Not certified by surface-form verification",
     "productWrite": "Not authorized",
     "rights": "Not granted by source URL",
-    "lxxSourceCorrection": "2026-11-07: deprecated inaccessible SBL-site Septuaginta PDF and intermittent BiblIndex URL, use STEP parallel THOT/LXX for Exod.3:14-15; specific LXX edition/apparatus still HOLD"
+    "lxxSourceCorrection": "2026-11-07: deprecated inaccessible SBL-site Septuaginta PDF and intermittent BiblIndex URL, use STEP parallel THOT/LXX for Exod.3:14-15; specific LXX edition/apparatus still HOLD",
+    "collisionGuard": "El-Roi (root ראה) and YHWH-ro-i (root רעה) are not the same Hebrew lexeme despite Russian homography; preserve both consonantal roots and separate semantics",
+    "gen2214Contrast": "MT contrasts יִרְאֶה with יֵרָאֶה; do not collapse separate stems. Interpretive rendering remains context dependent"
   }
 }
