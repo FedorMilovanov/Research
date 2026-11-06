@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 115,
+  "sourceCount": 117,
   "sources": [
     {
       "id": "REF-P01",
@@ -2141,7 +2141,7 @@
       "iiifManifestUrl": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00054820/manifest",
       "catalog": "Bayerische Staatsbibliothek München; VD16 D 573; BSB-ID 991071328859707356; BV006163643; bsb00054820; [Worms]: [Peter Schöffer], [1528]; [7] Bl. / 14 digital scans; PDM 1.0",
       "checkedAt": "2026-11-06",
-      "verificationNote": "Source acquired FULL 14 IIIF original 1600px JPEGs by download from BSB official image API; all 14 independently SHA256 verified and archived in connected private Google Drive with subsequent individual cloud readback (14/14 SHA256 matched). Archive zip 8,784,454 bytes and its cloud download SHA256 09c59f4d841f46649c85b6476f0d94af410c810c72cccbb6aa95dd297742c513, exact byte parity. Not all 14 leaves textually fully collated: confirmed original title/ten numbered headings image scan01, section IV on scan07, VII on scan10, section VIII 'Vom Tauuff' scan11–12, concluding oath text scan14. Scan11 explicitly says 'Kindertauff ist eyn menschen gebott/ vnnd der Christen freyheyt' and opposes treating child baptism as direct Christ command; it also describes baptism as admission/mark into believers' community. Scan12 admits previous zeal led him astray and warns against making a compulsory rule from ritual disputes. The title Widerruf is part of posthumous printed editorial framing; authorship/editorship and precise history according to scholarly MennLex/GAMEO still need historical-critical collation, cannot infer complete repudiation. Distinguish Denck text as printed, editor's title, and hostile independent Schmid assertion on Bern 1528 [201]. Public-domain original does not itself authorize editorial release; PUBLICATION_HOLD. Source corpus entry is not an endorsement of Denck's theology. Additional wave354 direct facsimile check (2026-11-06): Scan03 internal printed heading is 'Protestation vnd bekantnus etlicher puncten halb / in welchen sich Hans Denck (kurtzlich vor seinem end) selbst ...' (early modern typography, original wording must be collated letter-by-letter before quotation). This internal heading is not identical in scope to external publisher's cover label Widerruff; neither can, on its own, establish a total recantation. Scan11 §VIII further contains first-person CONDITIONAL undertaking 'Hierumb will ich (ob Gott will) des tauffens ewiglich still stehen / so ich keynen andern beruff vom Herren haben wird' (spellings normalized only for locating; do not present as diplomatic transcript): he proposes to stop administering baptisms unless he has another calling from the Lord, not to accept infant baptism as mandated by Christ. Crucial same-leaf qualification on scan11: Denck says childhood baptism does not by itself harm the believer and, where Christian congregational order is maintained, God does not require an additional baptism; he expressly suspends judgement where that order is not kept. This excludes both universal infant-baptism approval and any automatic, unconditional demand to rebaptize every infant-baptized individual. Same original section invokes uncertainty of distinguishing Jacob versus Esau among infants. Schmid's original Bern 1528 IIIF-[201] invokes Jacob/Esau in arguing uncertainty of visible individual election but uses it to defend infant-baptism participation; distinct interpretations, no direct exchange/influence established. Digital source image services scan03/scan11 independently visually inspected, PDM archival custody already verified in 42-image manifest; no new binary or duplicate source. Preserve textual-critical and publication holds.",
+      "verificationNote": "Source acquired FULL 14 IIIF original 1600px JPEGs by download from BSB official image API; all 14 independently SHA256 verified and archived in connected private Google Drive with subsequent individual cloud readback (14/14 SHA256 matched). Archive zip 8,784,454 bytes and its cloud download SHA256 09c59f4d841f46649c85b6476f0d94af410c810c72cccbb6aa95dd297742c513, exact byte parity. Not all 14 leaves textually fully collated: confirmed original title/ten numbered headings image scan01, section IV on scan07, VII on scan10, section VIII 'Vom Tauuff' scan11–12, concluding oath text scan14. Scan11 explicitly says 'Kindertauff ist eyn menschen gebott/ vnnd der Christen freyheyt' and opposes treating child baptism as direct Christ command; it also describes baptism as admission/mark into believers' community. Scan12 admits previous zeal led him astray and warns against making a compulsory rule from ritual disputes. The title Widerruf is part of posthumous printed editorial framing; authorship/editorship and precise history according to scholarly MennLex/GAMEO still need historical-critical collation, cannot infer complete repudiation. Distinguish Denck text as printed, editor's title, and hostile independent Schmid assertion on Bern 1528 [201]. Public-domain original does not itself authorize editorial release; PUBLICATION_HOLD. Source corpus entry is not an endorsement of Denck's theology. Additional wave354 direct facsimile check (2026-11-06): Scan03 internal printed heading is 'Protestation vnd bekantnus etlicher puncten halb / in welchen sich Hans Denck (kurtzlich vor seinem end) selbst ...' (early modern typography, original wording must be collated letter-by-letter before quotation). This internal heading is not identical in scope to external publisher's cover label Widerruff; neither can, on its own, establish a total recantation. Scan11 §VIII further contains first-person CONDITIONAL undertaking 'Hierumb will ich (ob Gott will) des tauffens ewiglich still stehen / so ich keynen andern beruff vom Herren haben wird' (spellings normalized only for locating; do not present as diplomatic transcript): he proposes to stop administering baptisms unless he has another calling from the Lord, not to accept infant baptism as mandated by Christ. Crucial same-leaf qualification on scan11: Denck says childhood baptism does not by itself harm the believer and, where Christian congregational order is maintained, God does not require an additional baptism; he expressly suspends judgement where that order is not kept. This excludes both universal infant-baptism approval and any automatic, unconditional demand to rebaptize every infant-baptized individual. Same original section invokes uncertainty of distinguishing Jacob versus Esau among infants. Schmid's original Bern 1528 IIIF-[201] invokes Jacob/Esau in arguing uncertainty of visible individual election but uses it to defend infant-baptism participation; distinct interpretations, no direct exchange/influence established. Digital source image services scan03/scan11 independently visually inspected, PDM archival custody already verified in 42-image manifest; no new binary or duplicate source. Preserve textual-critical and publication holds. Wave355 section-by-section digital facsimile map added for I–X (scan05–14), with 10 exact start and continuation locations and key guarded propositions; original print 14/14 pages already acquired, no additional copies or new PDM scan count. Direct reading of §II scan06 distinguishes satisfaction of Christ for sins of all people from Spirit-mediated participation by the elect: not automatic universal salvation or modern Reformed atonement taxonomy. §V scan08 divine mercy vs earned merit; §IX scan12–13 spiritual Lord's Supper; §X scan13–14 conditional oath practice. No full diplomatic transcription/translation completed. Publication date unresolved: BSB inferred [1528], specialist journal relays Goeters possible early 1529. Full source of Goeters not directly read, see REF-S38. MennLex specialist context REF-S39. Preserve EVIDENCE_HOLD and PUBLICATION_HOLD.",
       "keyAdditionalPassages": [
         {
           "digitalScan": 3,
@@ -2153,7 +2153,198 @@
           "concept": "conditional first-person resolution to refrain from baptizing without renewed divine calling, and Jacob versus Esau in infant-baptism argument",
           "iiifUrl": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00011/full/1600,/0/default.jpg"
         }
-      ]
+      ],
+      "tenSectionFacsimileIndex": [
+        {
+          "section": 1,
+          "heading": "Von der H. Geschrifft",
+          "originalScanNumbers": [
+            5
+          ],
+          "iiifPageUrls": [
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00005/full/1600,/0/default.jpg"
+          ],
+          "verifiedScope": "HEADING_AND_KEY_ARGUMENT_VISUAL_REVIEW_NOT_FULL_DIPLOMATIC_TRANSCRIPTION",
+          "readingRu": "Писание высоко ценится, но живое Слово Божье/Дух прямо не отождествляется с написанной буквой; спасение не представлено механически зависящим от чтения книг.",
+          "guardrail": "SCRIPTURE_VS_INWARD_WORD"
+        },
+        {
+          "section": 2,
+          "heading": "Von der bezalung Christi",
+          "originalScanNumbers": [
+            6
+          ],
+          "iiifPageUrls": [
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00006/full/1600,/0/default.jpg"
+          ],
+          "verifiedScope": "HEADING_AND_KEY_ARGUMENT_VISUAL_REVIEW_NOT_FULL_DIPLOMATIC_TRANSCRIPTION",
+          "readingRu": "Страдания Христа названы достаточным удовлетворением за грехи всех людей, даже при гипотетическом отсутствии спасённых; усвоение связано с Духом Христовым и избранными, не утверждается всеобщее спасение.",
+          "guardrail": "UNIVERSAL_SATISFACTION_NOT_UNIVERSAL_SALVATION"
+        },
+        {
+          "section": 3,
+          "heading": "Vom Glauben",
+          "originalScanNumbers": [
+            6,
+            7
+          ],
+          "iiifPageUrls": [
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00006/full/1600,/0/default.jpg",
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00007/full/1600,/0/default.jpg"
+          ],
+          "verifiedScope": "HEADING_AND_KEY_ARGUMENT_VISUAL_REVIEW_NOT_FULL_DIPLOMATIC_TRANSCRIPTION",
+          "readingRu": "Вера охарактеризована через послушание Богу и доверие Его обетованию во Христе; согласие сердца, слов и дел существенно.",
+          "guardrail": "FAITH_OBEDIENCE_CONFIDENCE"
+        },
+        {
+          "section": 4,
+          "heading": "Vom freien willen",
+          "originalScanNumbers": [
+            7,
+            8
+          ],
+          "iiifPageUrls": [
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00007/full/1600,/0/default.jpg",
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00008/full/1600,/0/default.jpg"
+          ],
+          "verifiedScope": "HEADING_AND_KEY_ARGUMENT_VISUAL_REVIEW_NOT_FULL_DIPLOMATIC_TRANSCRIPTION",
+          "readingRu": "Свобода понимается в связи с добровольным подчинением воли Богу и действием любви; названия свободной и связанной воли сами по себе не стоят спора.",
+          "guardrail": "WILL_AND_GRACE_COMPLEXITY"
+        },
+        {
+          "section": 5,
+          "heading": "Von guten wercken",
+          "originalScanNumbers": [
+            8
+          ],
+          "iiifPageUrls": [
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00008/full/1600,/0/default.jpg"
+          ],
+          "verifiedScope": "HEADING_AND_KEY_ARGUMENT_VISUAL_REVIEW_NOT_FULL_DIPLOMATIC_TRANSCRIPTION",
+          "readingRu": "Вечная жизнь связана с Божьим милосердием, а не долгом, заслуженным человеком; дела рассматриваются как плод прежде данного Богом дара.",
+          "guardrail": "WORKS_NOT_EARNING_DIVINE_DEBT"
+        },
+        {
+          "section": 6,
+          "heading": "Von absunderung vnd Secten",
+          "originalScanNumbers": [
+            8,
+            9,
+            10
+          ],
+          "iiifPageUrls": [
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00008/full/1600,/0/default.jpg",
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00009/full/1600,/0/default.jpg",
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00010/full/1600,/0/default.jpg"
+          ],
+          "verifiedScope": "HEADING_AND_KEY_ARGUMENT_VISUAL_REVIEW_NOT_FULL_DIPLOMATIC_TRANSCRIPTION",
+          "readingRu": "Различает допустимое отделение от принуждающих в вопросах веры и насильственное навязывание чужого вероисповедания; выражает предпочтение мирному следованию Христу.",
+          "guardrail": "SEPARATION_AND_NONCOERCION"
+        },
+        {
+          "section": 7,
+          "heading": "Von Ceremonien",
+          "originalScanNumbers": [
+            10
+          ],
+          "iiifPageUrls": [
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00010/full/1600,/0/default.jpg"
+          ],
+          "verifiedScope": "HEADING_AND_KEY_ARGUMENT_VISUAL_REVIEW_NOT_FULL_DIPLOMATIC_TRANSCRIPTION",
+          "readingRu": "Внешние церемонии не имеют самостоятельной спасительной силы; их обожествление и суеверие критикуются, а отношение к ним должно учитывать совесть.",
+          "guardrail": "CEREMONY_NOT_SAVING_ENOUGH"
+        },
+        {
+          "section": 8,
+          "heading": "Vom Tauff",
+          "originalScanNumbers": [
+            11,
+            12
+          ],
+          "iiifPageUrls": [
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00011/full/1600,/0/default.jpg",
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00012/full/1600,/0/default.jpg"
+          ],
+          "verifiedScope": "HEADING_AND_KEY_ARGUMENT_VISUAL_REVIEW_NOT_FULL_DIPLOMATIC_TRANSCRIPTION",
+          "readingRu": "Крещение как знак общины; детокрещение не утверждается Христовой заповедью, но не объявляется автоматически вредным либо всегда требующим повторения; условное личное прекращение крещения без нового призвания.",
+          "guardrail": "BAPTISM_DISTINCTIONS"
+        },
+        {
+          "section": 9,
+          "heading": "Vom brot vnd kelch/Nachtmal",
+          "originalScanNumbers": [
+            12,
+            13
+          ],
+          "iiifPageUrls": [
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00012/full/1600,/0/default.jpg",
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00013/full/1600,/0/default.jpg"
+          ],
+          "verifiedScope": "HEADING_AND_KEY_ARGUMENT_VISUAL_REVIEW_NOT_FULL_DIPLOMATIC_TRANSCRIPTION",
+          "readingRu": "Излагает духовное истолкование Христовых слов о вкушении Плоти и Крови, хлебе и вине; нельзя без колляции свести его ко всем позднейшим конфессиональным евхаристическим формулам.",
+          "guardrail": "SPIRITUAL_SUPPER_NOT_ANACHRONISTIC"
+        },
+        {
+          "section": 10,
+          "heading": "Von dem Eyd",
+          "originalScanNumbers": [
+            13,
+            14
+          ],
+          "iiifPageUrls": [
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00013/full/1600,/0/default.jpg",
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00014/full/1600,/0/default.jpg"
+          ],
+          "verifiedScope": "HEADING_AND_KEY_ARGUMENT_VISUAL_REVIEW_NOT_FULL_DIPLOMATIC_TRANSCRIPTION",
+          "readingRu": "Критикует поспешные клятвы и самонадеянные обеты; допускает правдивое свидетельство с призыванием Бога как свидетеля при условии смирения и зависимости от благодати.",
+          "guardrail": "OATH_NUANCE"
+        }
+      ],
+      "tenSectionOriginalIndexStatus": "ALL_TEN_SECTION_BOUNDARIES_GROUNDED_IN_14_HISTORICAL_SCANS; SELECTED_ARGUMENTS_VISUALLY_REVIEWED; NOT_COMPLETE_PHILOLOGICAL_TRANSLATION",
+      "imprintChronologyCaveat": {
+        "historicalText": "composed near author death in Basel in 1527 according to scholarly synthesis",
+        "catalogDating": "[1528] BSB catalog VD16 D573; square brackets denote inferred date",
+        "scholarlyHypothesis": "Oelschläger 2008 p175 footnote18 recounts Goeters 1955: possible Hätzer-mediated transmission in 1528 and printing in early 1529, NOT VERIFIED IN ORIGINAL GOETERS",
+        "status": "EXACT_IMPRINT_YEAR_UNRESOLVED",
+        "doNotConflate": "Composition year, retrospective imprint catalog guess, and scholarship about possible edition timing are not the same fact"
+      }
+    },
+    {
+      "id": "REF-S38",
+      "documentYear": 2008,
+      "title": "Ulrich Oelschläger, Die Wormser Propheten von 1527. Eine vorlutherische Teilübersetzung der Bibel, Theologische Zeitschrift 64/2 (2008), 169–198, esp. 175 n.18",
+      "evidenceClass": "B1",
+      "accessState": "PDF_TEXT_PARTIAL_REVIEWED",
+      "locatorState": "PRINTED_PAGE_175_TEXT_LOCATED_IMAGE_NOT_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://doi.org/10.5169/seals-877832",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Direct academic-journal PDF bibliographic metadata and machine-readable text (Theologische Zeitschrift 64, 2008, issue 2, Ulrich Oelschläger, pp169–198) located. In printed p175, text attributes to Goeters (Ludwig Hätzer, 1955, 137–138) ONLY a possibility: Hätzer may have forwarded Denck's Widerruf to Peter Schöffer in 1528 and printer MAY have printed it early 1529. This is a reported possibility, NOT a new authenticated imprint date. Official BSB catalog for verified VD16 D573 copy reads '[Worms] [Schöffer] [1528]'; do not silently replace catalog estimate by scholarly hypothesis or assert identity of all copies. Full scholarly-page image was not obtained, PDF screenshot attempt failed, original Goeters pp137–138 not acquired, and reuse rights for the 2008 journal image are NOT PDM. RESEARCH_ONLY; hypothesis is a publication-date uncertainty, not evidence against the source's substantive theology."
+    },
+    {
+      "id": "REF-S39",
+      "documentYear": 2020,
+      "title": "Mennonitisches Lexikon, Band V (2010–2020 online; revised print edition 2020), Hans-Jürgen Goertz (ed.), article 'Denck, Hans'",
+      "evidenceClass": "B1",
+      "accessState": "INDEXED_EXCERPT_AND_WEB_TEXT",
+      "locatorState": "ARTICLE_LEVEL_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.mennlex.de/doku.php?id=art%3Adenck_hans",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Retrieved specialist encyclopedia indexed text: after Basel stay Oecolampadius requested a written statement; he published it after Denck's death under title Hans Denken Widerruf (1528); encyclopedic assessment stresses continuing spiritualist theological thread despite alleged recantation, notably distinction between written Scripture and inward divine Word. Author/version and full article page/paragraph citation have not been independently verified; not a replacement for 1528 firstprint REF-P62, which was visually checked. The 1528 catalog date versus Oelschläger/Goeters tentative early-1529 imprint timing remains unresolved; do not assert that any named editor physically printed this particular VD16 copy. Bibliographic date precision correction: publication year 2020 is that of the revised PRINT volume V (ISBN 978-3-921881-23-1); online editorial project was developed 2010–2020. The precise posting/revision year of the individual 'Denck, Hans' entry was NOT established. Do not treat current checkedAt 2026 as publication year. Editorial series metadata directly confirmed at https://www.mennlex.de/doku.php?id=start and https://www.mennlex.de/doku.php?id=vorwort."
     }
   ]
 }
