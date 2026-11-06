@@ -4,7 +4,7 @@
   "createdAt": "2026-11-06",
   "totalImageCount": 23,
   "rightsNote": "Only PDM historical scans. Modern Peachey conservation photograph excluded from this public repo. Editorial publication requires separate approval and attribution.",
-  "binaryState": "REMOTE_PC_ONLY_VERIFIED_NOT_IN_GIT",
+  "binaryState": "PRIVATE_GOOGLE_DRIVE_VERIFIED_23_IMAGES_AND_ZIP",
   "provenanceNote": "Original e-rara and BSB IIIF source URLs; filenames/hash describe particular locally downloaded 1600-pixel JPEG derivatives, not master scans.",
   "entries": [
     {
@@ -256,5 +256,24 @@
       "local_integrity": "SHA256_VERIFIED_2026-11-06"
     }
   ],
-  "archiveCustody": "Private offline author archive (not a Git-hosted binary); exact path deliberately omitted from public registry."
+  "archiveCustody": "All 23 PDM JPEG image derivatives and a complete ZIP are stored in a separate restricted Google Drive Research/Reformation/Schleitheim archive folder; the private folder locator is intentionally omitted from the public repository. Workstation originals were not deleted. Binaries are not tracked in Git.",
+  "cloudVerification": {
+    "verifiedAt": "2026-11-06",
+    "cloudLocation": "PRIVATE_GOOGLE_DRIVE_REFORMATION_SCHLEITHEIM_2026-11-06",
+    "individualImageCount": 23,
+    "originals18": 18,
+    "zwingli3": 3,
+    "bern2": 2,
+    "totalIndividualImageBytes": 11056633,
+    "individualImagesReadBack": 23,
+    "individualImagesSha256Matched": 23,
+    "archiveFileName": "REFORMATION_SCHLEITHEIM_23_PDM_IMAGES.zip",
+    "archiveBytes": 11041438,
+    "cloudArchiveDownloadedAndByteCompared": true,
+    "cloudArchiveSha256": "4cfad317ef2fed56edc5138a8cf1e2240c8d28b25dceb77a5ea7045131bced7d",
+    "originalPreTransferBundleSha256": "07dd54ad9ff8bb60c7f5fa68530d214bc6e3d77cf840c9573855abc5330c1c7e",
+    "rightsRestrictedModernPhotoUploaded": false,
+    "otherDriveFsAccountIdentityUnverified": true,
+    "publicationHoldsPreserved": true
+  }
 }
