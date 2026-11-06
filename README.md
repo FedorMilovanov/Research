@@ -50,6 +50,7 @@ Genesis 6 имеет собственный machine-guarded authority graph. Е�
 
 - «Серия Сердце»: [`СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-02.md`](%D0%A1%D0%95%D0%A0%D0%98%D0%AF%20%D0%A1%D0%95%D0%A0%D0%94%D0%A6%D0%95/00_CURRENT_AUTHORITY_2026-08-02.md).
 - Искупление (ограниченное/всеобщее, кальвинизм, термины): [`ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md`](%D0%98%D0%A1%D0%9A%D0%A3%D0%9F%D0%9B%D0%95%D0%9D%D0%98%D0%95/00_CURRENT_AUTHORITY_2026-10-07.md). Corpus-specific; не меняет корневой root.
+- Имена Бога (еврейский, арамейский, греческий; аудит Arena): [`ИМЕНА БОГА/00_README_AND_NAVIGATION.md`](%D0%98%D0%9C%D0%95%D0%9D%D0%90%20%D0%91%D0%9E%D0%93%D0%90/00_README_AND_NAVIGATION.md). Исследовательский отдел; 29 кандидатов Arena, не публикационный допуск.
 - Библейский атлас: [`БИБЛЕЙСКИЙ АТЛАС/00_CURRENT_AUTHORITY_2026-08-02.md`](%D0%91%D0%98%D0%91%D0%9B%D0%95%D0%99%D0%A1%D0%9A%D0%98%D0%99%20%D0%90%D0%A2%D0%9B%D0%90%D0%A1/00_CURRENT_AUTHORITY_2026-08-02.md).
 - Баптистские архивы: [`RUSSIAN_BAPTISTS_ARCHIVE/SCAN_ACQUISITION_CURRENT_AUTHORITY_2026-08-02.md`](RUSSIAN_BAPTISTS_ARCHIVE/SCAN_ACQUISITION_CURRENT_AUTHORITY_2026-08-02.md).
 - Биографии: [`БИОГРАФИИ/00_README_AND_NAVIGATION.md`](%D0%91%D0%98%D0%9E%D0%93%D0%A0%D0%90%D0%A4%D0%98%D0%98/00_README_AND_NAVIGATION.md) — отдел серии биографий (канонический дом).
