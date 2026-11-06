@@ -1996,18 +1996,19 @@
       "title": "Börsenblatt für den Deutschen Buchhandel, 1 May 1908, Nr.100, original Rudolf Haupt Buchhandlung und Antiquariat Leipzig advertisement: Dör(r)ienstr.1 and Katalog 15 for non-European languages",
       "evidenceClass": "B1",
       "accessState": "PARTIAL_OBJECT",
-      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "locatorState": "COARSE_LOCATOR_ONLY",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
       "holds": [
         "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
         "ARCHIVE_HOLD",
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
       "url": "https://digital.slub-dresden.de/data/kitodo/Brsfded_39946221X-19080501/Brsfded_39946221X-19080501_tif/jpegs/Brsfded_39946221X-19080501.pdf",
       "checkedAt": "2026-11-06",
-      "verificationNote": "Wave345: issue no.100 dated Friday 1 May 1908, contemporary original Börsenblatt PDF digital.slub-dresden.de; page content in searchable PDF text block and visual_element description indexed via web fetch at lines 1599–1616 explicitly says 'RUDOLF HAUPT BUCHHANDLUNG UND ANTIQUARIAT. LEIPZIG', 'DÖRRIENSTR. 1', and advertisement of 'KATALOG 15' for non-European language studies with more than 4000 lots. This is catalog 15, not catalog 12, not actual original catalog 15 pages, not Schleitheim book listing. Direct webpage/PDF visual screenshot attempted for PDF pages but failed because PDF size ~10.98 MB exceeds screenshot service limit. Source access PARTIAL_OBJECT text and page layout metadata, NO original page photograph claimed. It independently grounds the 1908 Leipzig trade address/business continuity after the catalogue 12 claimed in Köhler 1908 and the older 1905 offer in Cramer 1909; original catalog12 p136, Mk1000 and 1533 printed physical leaf remain unread/unverified. No PDF saved, expenses, orders or emails. Publisher identity from DLA Marbach and CiNii not a receipt."
+      "verificationNote": "Wave345: issue no.100 dated Friday 1 May 1908, contemporary original Börsenblatt PDF digital.slub-dresden.de; page content in searchable PDF text block and visual_element description indexed via web fetch at lines 1599–1616 explicitly says 'RUDOLF HAUPT BUCHHANDLUNG UND ANTIQUARIAT. LEIPZIG', 'DÖRRIENSTR. 1', and advertisement of 'KATALOG 15' for non-European language studies with more than 4000 lots. This is catalog 15, not catalog 12, not actual original catalog 15 pages, not Schleitheim book listing. Direct webpage/PDF visual screenshot attempted for PDF pages but failed because PDF size ~10.98 MB exceeds screenshot service limit. Access PARTIAL_OBJECT and locator COARSE_LOCATOR_ONLY: issue number and OCR text range are known, but printed page and PDF page index not established; no source image inspected. It independently grounds the 1908 Leipzig trade address/business continuity after the catalogue 12 claimed in Köhler 1908 and the older 1905 offer in Cramer 1909; original catalog12 p136, Mk1000 and 1533 printed physical leaf remain unread/unverified. No PDF saved, expenses, orders or emails. Publisher identity from DLA Marbach and CiNii not a receipt."
     }
   ]
 }
