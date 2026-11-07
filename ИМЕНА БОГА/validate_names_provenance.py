@@ -445,7 +445,7 @@ SHADDAI_SABAOTH_CONTEXT_CONTROLS = {
         "speaker": "narrator",
         "contextRole": "worship_destination",
         "originalPrefix": "לַ",
-        "isDivineDesignation": true,
+        "isDivineDesignation": True,
         "sourceUrl": "https://mechon-mamre.org/p/pt/pt08a01.htm",
     },
     "ATT-BASE-SABAOTH-02": {
