@@ -202,7 +202,10 @@ def validate(data: dict) -> list[str]:
                 errors.append(f"{rid}/{verse}: speaker/speech act/named object regression")
         if not set(expected_occurrences).issubset(occurrences_by_verse):
             errors.append(f"{rid}: mandatory contextual witnesses are missing")
-    total = sum(len(row.get("attestations", [])) for row in rows if isinstance(row, dict) and isinstance(row.get("attestations", []), list))
+    # The patriarchal counter is corpus-specific, never a global attestation total.
+    total = sum(len(index.get(rid, {}).get("attestations", []))
+                for rid in attestations_required
+                if isinstance(index.get(rid, {}).get("attestations"), list))
     if data.get("auditProtocol", {}).get("patriarchalAttestations", {}).get("totalAttestations") != total:
         errors.append("patriarchal attestation counter drift")
     if total < 11:
@@ -677,8 +680,28 @@ def validate_prophetic_namings(baseline: dict) -> list[str]:
                 if occ.get(key) != val:
                     errors.append(f"prophetic {rid}/{verse}: textual critical status incorrectly promoted")
             if lang == "greek":
-                if occ.get("rightsState") != "PERMISSION_REQUIRED" or occ.get("edition") != "Rahlfs-Hanhart 2006 via Deutsche Bibelgesellschaft":
-                    errors.append(f"prophetic {rid}/{verse}: copyrighted publisher LXX witness was substituted")
+                # Explicit per-witness source contract: Greek LXX ≠ Greek NT edition.
+                greek_sources = {
+                    "Isaiah 7:14 LXX Rahlfs-Hanhart": (
+                        "Rahlfs-Hanhart 2006 via Deutsche Bibelgesellschaft",
+                        "PERMISSION_REQUIRED",
+                        "EDITORIAL_GREEK_TRANSLATION_NO_MANUSCRIPT_APPARATUS"),
+                    "Matthew 1:23": (
+                        "SBLGNT 2010 via BibleGateway",
+                        "RIGHTS_UNKNOWN",
+                        "NEW_TESTAMENT_CITATION_AND_TRANSLATION"),
+                }
+                allowed = greek_sources.get(verse)
+                if allowed is None:
+                    errors.append(f"prophetic {rid}/{verse}: unregistered Greek edition")
+                elif (occ.get("edition"), occ.get("rightsState")) != allowed[:2]:
+                    errors.append(f"prophetic {rid}/{verse}: edition-specific rights/witness provenance changed")
+                elif (verse == "Isaiah 7:14 LXX Rahlfs-Hanhart"
+                      and occ.get("sourceRole") != allowed[2]):
+                    errors.append(f"prophetic {rid}/{verse}: LXX source role changed")
+                elif (verse == "Matthew 1:23"
+                      and occ.get("receptionLayer") != allowed[2]):
+                    errors.append(f"prophetic {rid}/{verse}: NT reception role changed")
             elif occ.get("rightsState") != "RIGHTS_UNKNOWN":
                 errors.append(f"prophetic {rid}/{verse}: unreviewed source rights were changed")
             if not URL.match(str(occ.get("sourceUrl",""))):
