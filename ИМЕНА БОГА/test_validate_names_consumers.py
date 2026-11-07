@@ -97,7 +97,7 @@ class ConsumerCompatibilityTests(unittest.TestCase):
     def test_generic_contract_locus_cannot_be_backfilled_inline(self):
         d = copy.deepcopy(self.docs)
         d["general"]["lockedAttestations"][0]["locusId"] = "arbitrary-legacy"
-        self.assertTrue(any("general 22-history contract must remain without locusId" in x for x in self.check(docs=d)))
+        self.assertTrue(any("generic 22-history contract must remain without locusId" in x for x in self.check(docs=d)))
 
     def test_generic_contract_surface_mutation_loses_uniqueness(self):
         d = copy.deepcopy(self.docs)
