@@ -83,15 +83,28 @@ def main(argv=None) -> int:
                 continue
             for sec in SECTION.finditer(line):
                 sec_id = sec.group(1).replace(" ", "")
-                # целевой файл — ближайшая ссылка слева от номера
-                cand = [f for f in filerefs if f.end() <= sec.start()]
-                if not cand:
-                    continue
-                # Разрешаем путь от содержащего его файла, как Markdown-ссылку.
-                # Подмена базы скрывала реальные ошибки ../ vs ../../ (исправлены
-                # в волне 2026-11-02). Полный многоуровневый путь нельзя обрезать
-                # до последней папки. Сокращения ../12_ этим аудитом не охвачены.
-                rel = cand[-1].group(1) + cand[-1].group(2) + cand[-1].group(3)
+                # Если § находится в подписи Markdown-ссылки, её URL — источник
+                # этого раздела, даже если слева уже есть другая ссылка.
+                # Иначе используем прежнюю ближайшую ссылку слева (в тексте
+                # вида `../12_SOMETHING.md` §3.1). Нельзя привязывать
+                # к предыдущему локальному файлу раздел из внешней ссылки.
+                containing_link = next(
+                    (link for link in re.finditer(r"\[([^\]]+)\]\(([^)]+)\)", line)
+                     if link.start(1) <= sec.start() < link.end(1)),
+                    None,
+                )
+                if containing_link is not None:
+                    own_ref = FILE_REF.search(containing_link.group(2))
+                    if own_ref is None:
+                        continue
+                    rel = own_ref.group(0)
+                else:
+                    cand = [f for f in filerefs if f.end() <= sec.start()]
+                    if not cand:
+                        continue
+                    rel = cand[-1].group(0)
+                # База пути остаётся каталогом текущего черновика.
+                # Полный относительный путь нельзя усекать до имени файла.
                 bases = [("drafts", draft.parent)]
                 target, used_base = None, None
                 for name, base in bases:

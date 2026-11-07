@@ -156,6 +156,45 @@ class CrossReferenceTests(unittest.TestCase):
                 status = crossref_main(["--drafts", str(drafts), "--check"])
             self.assertEqual(status, 0)
 
+    def test_section_inside_second_markdown_link_belongs_to_second_target(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            drafts = root / "drafts"
+            drafts.mkdir()
+            (root / "01_hard.md").write_text("## 3. H3 context\n", encoding="utf-8")
+            (root / "02_nt.md").write_text("## 08.20 Correct NT section\n", encoding="utf-8")
+            (drafts / "01_draft.md").write_text(
+                "[H3](../01_hard.md), [NT 08 §08.20](../02_nt.md)\n",
+                encoding="utf-8",
+            )
+            with redirect_stdout(io.StringIO()):
+                status = crossref_main(["--drafts", str(drafts), "--check"])
+            self.assertEqual(status, 0)
+
+    def test_wrong_section_inside_second_link_cannot_borrow_first_target(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            drafts = root / "drafts"
+            drafts.mkdir()
+            (root / "01_hard.md").write_text("## 08.20 Only in first\n", encoding="utf-8")
+            (root / "02_nt.md").write_text("## 08.19 Not the cited section\n", encoding="utf-8")
+            (drafts / "01_draft.md").write_text(
+                "[H3](../01_hard.md), [NT 08 §08.20](../02_nt.md)\n",
+                encoding="utf-8",
+            )
+            output = io.StringIO()
+            with redirect_stdout(output):
+                status = crossref_main(["--drafts", str(drafts), "--check"])
+            self.assertEqual(status, 1)
+            self.assertIn("SECTION_NOT_FOUND", output.getvalue())
+            self.assertIn("02_nt.md", output.getvalue())
+
+    def test_real_research_draft_sections_resolve(self):
+        output = io.StringIO()
+        with redirect_stdout(output):
+            status = crossref_main(["--check"])
+        self.assertEqual(status, 0, output.getvalue())
+
 
 class ActualSynchronizationTests(unittest.TestCase):
     @classmethod
@@ -163,11 +202,169 @@ class ActualSynchronizationTests(unittest.TestCase):
         cls.report = json.loads((ROOT / REPORT).read_text(encoding="utf-8"))
         cls.control = json.loads((ROOT / CONTROL).read_text(encoding="utf-8"))
 
+    def test_colossians_1_22_both_edition_readings_are_named(self):
+        card = (ROOT / "ИСКУПЛЕНИЕ/nt/07_NT_PERICOPE_CARDS_ACTS_AND_PAUL.md").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("ἀποκατηλλάγητε", card)
+        self.assertIn("ἀποκατήλλαξεν", card)
+        self.assertIn("SBLGNT", card)
+        self.assertIn("NA28", card)
+
+    def test_article13_separates_critical_source_holds(self):
+        p = ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md"
+        text = p.read_text(encoding="utf-8")
+        for marker in (
+            "DABNEY_OTHER_PAGES_HOLD",
+            "DABNEY_521_FACSIMILE_VERIFIED",
+            "DABNEY_648_FACSIMILE_VERIFIED",
+            "DAVENANT_LATIN_EDITION_HOLD",
+            "AI_TRANSLATION_HOLD",
+            "OWEN_WCF_TIMING_HOLD",
+            "NO PUBLICATION AUTHORIZATION",
+        ):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, text)
+
+    def test_article13_payment_and_application_distinction_not_erased(self):
+        p = ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md"
+        text = p.read_text(encoding="utf-8")
+        for marker in (
+            "solutio ejusdem",
+            "solutio tantidem",
+            "actual right",
+            "actual possession",
+            "Дорт II.8",
+            "WCF XI.4",
+        ):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, text)
+        self.assertIn("A2 в узком месте", text)
+        self.assertIn("B1", text)
+        self.assertIn("**A2 scoped**", text)
+        self.assertIn("DAVENANT_1650_THREE_PRINT_LOCI_VERIFIED", text)
+        self.assertIn("DABNEY_FULL_BOOK_COLLATION_HOLD", text)
+
+    def test_wave1_primary_dabney_context_and_print_hold_stay_distinct(self):
+        text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md").read_text(encoding="utf-8")
+        dossier = (ROOT / "ИСКУПЛЕНИЕ/evidence/WAVE1_DABNEY_DAVENANT_OWEN_PRIMARY_WITNESSES_2026-11-07.md").read_text(encoding="utf-8")
+        for marker in ("DABNEY_520_523_FACSIMILE_VERIFIED", "DABNEY_648_FACSIMILE_VERIFIED", "DABNEY_FULL_BOOK_COLLATION_HOLD", "sermonindex.net/books/writings-of-robert-l-dabney/57"):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, text)
+                self.assertIn(marker, dossier)
+        for token in ("Inconclusive Proofs", "Real Proofs", "strict Calvinistic", "QUOTE_SAFE=NO"):
+            self.assertIn(token.lower(), dossier.lower())
+
+    def test_wave1_dabney_648_is_justification_not_extent(self):
+        article = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md").read_text(encoding="utf-8")
+        dossier = (ROOT / "ИСКУПЛЕНИЕ/evidence/WAVE1_DABNEY_DAVENANT_OWEN_PRIMARY_WITNESSES_2026-11-07.md").read_text(encoding="utf-8")
+        self.assertIn("archive.org/details/syllabusnotesofc00dabn/page/648", dossier)
+        self.assertIn("archive.org/details/syllabusnotesofc00dabn/page/521", dossier)
+        self.assertIn("антиномист", dossier.lower())
+        self.assertIn("DABNEY_FULL_BOOK_COLLATION_HOLD", article)
+        self.assertIn("/page/520/mode/1up", dossier)
+        self.assertIn("/page/522/mode/1up", dossier)
+        self.assertIn("/page/523/mode/1up", dossier)
+        self.assertIn("нравственную обязанность", article.lower())
+
+    def test_wave1_davenant_latin_web_segments_are_not_print_pages(self):
+        text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md").read_text(encoding="utf-8")
+        dossier = (ROOT / "ИСКУПЛЕНИЕ/evidence/WAVE1_DABNEY_DAVENANT_OWEN_PRIMARY_WITNESSES_2026-11-07.md").read_text(encoding="utf-8")
+        for marker in ("DAVENANT_1650_THREE_PRINT_LOCI_VERIFIED", "AI_TRANSLATION_HOLD", "§75", "foedus Evangelicum"):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, text)
+                self.assertIn(marker, dossier)
+        self.assertIn("веб-локатор", dossier)
+        for leaf in ("n10", "n41", "n78"):
+            with self.subTest(leaf=leaf):
+                self.assertIn(f"/page/{leaf}/mode/1up", text)
+                self.assertIn(f"/page/{leaf}/mode/1up", dossier)
+        self.assertIn("Именно **69**, а не 70", text)
+        self.assertIn("буквальная", dossier)
+        self.assertIn("PUBLICATION_HOLD", dossier)
+
+    def test_wave0_hodge_source_target_and_owen_distinction(self):
+        text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md").read_text(encoding="utf-8")
+        self.assertIn("https://ccel.org/ccel/hodge/theology2.iv.viii.ii.html", text)
+        self.assertNotIn("theology2.iv.vii.iii.html", text)
+        self.assertIn("не то же самое", text)
+        self.assertIn("actual right", text)
+        self.assertIn("actual possession", text)
+
+    def test_wave0_conflict_cards_are_current_without_false_closure(self):
+        text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md").read_text(encoding="utf-8")
+        def section(name, following):
+            begin = text.index("## " + name + ".")
+            end = text.index("## " + following + ".", begin)
+            return text[begin:end]
+        calvin = section("C-06", "C-07")
+        fathers = section("C-07", "C-08")
+        confessions = section("C-14", "C-15")
+        complex_case = section("C-16", "C-17")
+        self.assertIn("1855", calvin)
+        self.assertIn("172–173", calvin)
+        self.assertNotIn("страница не в руках", calvin)
+        self.assertIn("GAP-B1", calvin)
+        self.assertIn("12 действующих Markdown-досье", fathers)
+        self.assertNotIn("слой `fathers/` ещё не создан", fathers)
+        self.assertIn("`OPEN`", fathers)
+        self.assertIn("obtained eternal redemption", confessions)
+        self.assertIn("purchased redemption", confessions)
+        self.assertNotIn("1689 не прочитан постатейно", confessions)
+        for atom in ("C16-LEX", "C16-HIST", "C16-INTENT", "C16-APPLICATION"):
+            self.assertIn(atom, complex_case)
+        self.assertIn("`OPEN`", complex_case)
+        self.assertIn("EVIDENCE_HOLD", complex_case)
+
     def test_current_corpus_and_coverage(self):
         errors, summary = check(ROOT, self.report, self.control)
         self.assertEqual(errors, [])
         self.assertEqual(summary["markedCitations"], self.report["markedCitationCount"])
-        self.assertEqual(summary["drafts"], 13)
+        # The 2026-11-02 evidence still records its historical 13-draft scope.
+        # New drafts require a separately declared, byte-pinned addition.
+        self.assertEqual(self.report["draftCount"], 13)
+        additions = self.report.get("postReviewDrafts", [])
+        self.assertEqual(summary["drafts"], self.report["draftCount"] + len(additions))
+        self.assertEqual(
+            {r["path"] for r in additions},
+            {
+                "ИСКУПЛЕНИЕ/synthesis/drafts/article08_particular_redemption_positive_case.md",
+                "ИСКУПЛЕНИЕ/synthesis/drafts/article09_world_and_propitiation_johannine_case.md",
+                "ИСКУПЛЕНИЕ/synthesis/drafts/article10_ransom_for_all_two_adams_paul_hebrews.md",
+                "ИСКУПЛЕНИЕ/synthesis/drafts/article11_bought_apostates_covenant_blood_and_weak_brother.md",
+                "ИСКУПЛЕНИЕ/synthesis/drafts/article12_cosmic_reconciliation_heaven_earth_new_creation.md",
+                "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md",
+            },
+        )
+
+    def test_post_review_draft_manifest_fails_closed(self):
+        additions = self.report.get("postReviewDrafts", [])
+        self.assertEqual(len(additions), 6)
+        cases = [
+            (f"missing-declaration-{i}", additions[:i] + additions[i + 1 :])
+            for i in range(len(additions))
+        ]
+        for i in range(len(additions)):
+            altered_sha = list(additions)
+            altered_sha[i] = {**additions[i], "sha256": "0" * 64}
+            cases.append((f"incorrect-sha256-{i}", altered_sha))
+            altered_publication = list(additions)
+            altered_publication[i] = {**additions[i], "publicationEligible": True}
+            cases.append((f"publication-authorized-{i}", altered_publication))
+        for case, replacement in cases:
+            with self.subTest(case=case):
+                bad_report = {**self.report, "postReviewDrafts": replacement}
+                errors, _ = check(ROOT, bad_report, self.control)
+                self.assertTrue(errors, f"{case} unexpectedly passed")
+                self.assertTrue(
+                    any(
+                        "draft inventory differs" in e
+                        or "post-review draft bytes differ" in e
+                        or "post-review draft must remain unpublished" in e
+                        for e in errors
+                    ),
+                    errors,
+                )
 
     def test_each_refuted_greek_claim_cannot_be_restored(self):
         for row in self.report["repairs"]:
