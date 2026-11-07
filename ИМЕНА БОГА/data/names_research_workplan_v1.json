@@ -61,7 +61,7 @@
     "locusCompatPublicationApprovals": 0,
     "consumerContractPinnedInline": 50,
     "consumerContractPinnedGeneralNoLocus": 22,
-    "consumerContractRegressionTests": 25,
+    "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0
   },
@@ -270,9 +270,10 @@
         "31_NG02_INTERNAL_CONSUMER_WITNESS_EXTERNAL_BLOCK_20261107.md: 4 independently locked internal contract groups 16+12+14+8 = 50 exactly pin all legacy inline locusIds; fifth generic group 22 without locator source matches sidecar-only witnesses",
         "data/names_consumer_compat_v1.json: machine-readable Research consumer evidence, three selected external GitHub default-branch read-only searches nonproof, Product V2 blocked",
         "validate_names_consumers.py: true original snapshot roundtrip with verse/surface/edition/sourceUrl/rights/critical/status crosswalk and fail-closed external upgrade guard",
-        "test_validate_names_consumers.py: 25 original consumer mutation and approval negative tests, included in existing GitHub workflow"
+        "test_validate_names_consumers.py: 25 original consumer mutation and approval negative tests, included in existing GitHub workflow",
+        "NG-02 pinned source-control entrypoint audit: 3 exact repository SHAs and 8 original source blob SHAs (GB/Poet/Pages), still no runtime witness; 4 more negative snapshot integrity tests"
       ],
-      "verification": "105_OF_105_CLAIM_STRUCTURAL_LINKS; 105_OF_105_RESEARCH_LOCATOR_RESOLVED; 50_OF_50_OLD_INLINE_IDS_PINNED_BY_INDEPENDENT_CONTRACTS; 22_OF_22_GENERIC_WITHOUT_INLINE_PINNED; 55_V1_INLINE_FIELDS_STILL_MISSING; 25_CONSUMER_MUTATION_TESTS; 0_EXTERNAL_PRODUCT_CONSUMERS_VERIFIED; 0_V2_PRODUCT_APPROVALS; 0_CRITICAL_COLLATIONS; SCIENTIFIC_RIGHTS_PRODUCT_RESEARCH_HOLD; NEW_EXACT_SHA_CI_PENDING",
+      "verification": "105_OF_105_CLAIM_STRUCTURAL_LINKS; 105_OF_105_RESEARCH_LOCATOR_RESOLVED; 50_OF_50_OLD_INLINE_IDS_PINNED_BY_INDEPENDENT_CONTRACTS; 22_OF_22_GENERIC_WITHOUT_INLINE_PINNED; 55_V1_INLINE_FIELDS_STILL_MISSING; 29_CONSUMER_MUTATION_TESTS; 0_EXTERNAL_PRODUCT_CONSUMERS_VERIFIED; 0_V2_PRODUCT_APPROVALS; 0_CRITICAL_COLLATIONS; SCIENTIFIC_RIGHTS_PRODUCT_RESEARCH_HOLD; NEW_EXACT_SHA_CI_PENDING",
       "closureAt": null,
       "owner": "Research editorial"
     },
@@ -887,10 +888,13 @@
       "consumerMutationPolicy": "V1_PRESERVED_SIDECAR_OPT_IN_V2_ONLY_AFTER_EXTERNAL_CONTRACT_TEST",
       "consumerContractPinnedInline": 50,
       "consumerContractPinnedGeneralNoLocus": 22,
-      "consumerContractRegressionTests": 25,
+      "consumerContractRegressionTests": 29,
       "consumerContractExternalVerified": 0,
       "consumerMigrationV2Approvals": 0,
-      "consumerVerificationStatus": "INTERNAL_50_INLINE_22_GENERIC_VALIDATED_EXTERNAL_RUNTIME_NOT_VERIFIED"
+      "consumerVerificationStatus": "INTERNAL_50_INLINE_22_GENERIC_VALIDATED_EXTERNAL_RUNTIME_NOT_VERIFIED",
+      "externalSourceControlPinnedRepos": 3,
+      "externalSourceControlFilesRead": 8,
+      "externalRuntimeConsumersVerified": 0
     }
   }
 }

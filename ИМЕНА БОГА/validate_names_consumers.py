@@ -21,6 +21,74 @@ EXPECTED_CONTRACTS = (
     ("core", "data/core_name_lexeme_contract_v1.json", "baselineId", 8, "P"),
     ("general", "data/attestation_contract_v1.json", "baselineId", 22, "G"),
 )
+# Independent, pinned source-control entrypoint readbacks. No runtime evidence.
+EXPECTED_SOURCE_CONTROL_SNAPSHOTS = {
+  "checkedAt": "2026-11-07",
+  "method": "GITHUB_PINNED_COMMIT_AND_BLOB_READ_ONLY_NO_DEPLOY_OR_BUNDLE_TEST",
+  "status": "SCOPED_SOURCE_ENTRYPOINTS_READ_NOT_CONSUMER_ATTESTATION",
+  "candidates": [
+    {
+      "repo": "FedorMilovanov/gb-is-my-strength",
+      "revisionSha": "5e2db6f0fdd0257818f1a215fca16d4cc884e2d8",
+      "readScope": "SELECTED_SOURCE_ENTRYPOINTS_ONLY_NOT_BUILD_OR_RUNTIME",
+      "observation": "NO_DIRECT_NAMES_CORPUS_IMPORT_IN_INSPECTED_FILES",
+      "runtimeVerified": False,
+      "inspectedFiles": [
+        {
+          "path": "src/pages/index.astro",
+          "blobSha": "dba91b0d51d84d00d3541d493cd6687386177bdb"
+        },
+        {
+          "path": "src/data/site.ts",
+          "blobSha": "0f2713923979bbc14c8821c23c8208de42bbf4c9"
+        },
+        {
+          "path": "src/pages/app/index.astro",
+          "blobSha": "b1803910fb4240b664cc34aa33dc94e767df3d78"
+        }
+      ]
+    },
+    {
+      "repo": "FedorMilovanov/TheLegendaryPoet",
+      "revisionSha": "46c66f2251168d5aaebe1455b5ba96dad5a8c884",
+      "readScope": "SELECTED_SOURCE_ENTRYPOINTS_ONLY_NOT_BUILD_OR_RUNTIME",
+      "observation": "NO_DIRECT_NAMES_CORPUS_IMPORT_IN_INSPECTED_FILES",
+      "runtimeVerified": False,
+      "inspectedFiles": [
+        {
+          "path": "src/routes/routeModules.ts",
+          "blobSha": "fe54ccfea147aa23f716a34cfad88e5020342bf0"
+        },
+        {
+          "path": "src/routes/route-contract.json",
+          "blobSha": "5ba44865039a66b2f1c7de733f799b300ececfd2"
+        },
+        {
+          "path": "src/App.tsx",
+          "blobSha": "b524046498c1a94b83a88b6119b8fdce49c624f6"
+        }
+      ]
+    },
+    {
+      "repo": "FedorMilovanov/FedorMilovanov.github.io",
+      "revisionSha": "117314ef8a927d6eacfd135e1dfd347873c1cea0",
+      "readScope": "SELECTED_SOURCE_ENTRYPOINTS_ONLY_NOT_BUILD_OR_RUNTIME",
+      "observation": "NO_DIRECT_NAMES_CORPUS_IMPORT_IN_INSPECTED_FILES",
+      "runtimeVerified": False,
+      "inspectedFiles": [
+        {
+          "path": "index.html",
+          "blobSha": "96b66e22f9ed7bbe1638c89d485c2b885d9d9b30"
+        },
+        {
+          "path": "portfolio/index.html",
+          "blobSha": "43d7a1a57a440fcd3b3ca3678b2b6ff0fe7fe613"
+        }
+      ]
+    }
+  ]
+}
+
 EXPECTED_PRODUCT_STATE = "BLOCKED_PENDING_EXTERNAL_CONSUMER_CONTRACT"
 EXPECTED_STATUS = "INTERNAL_RESEARCH_CONTRACT_VERIFIED_EXTERNAL_CONSUMERS_NOT_ATTESTED"
 CHECK_FIELDS = (
@@ -66,6 +134,8 @@ def validate_consumer_contracts(
                    or r.get("evidenceLevel") != "READ_ONLY_INDEX_AND_TREE_SEARCH_NO_DIRECT_MATCH_NOT_RUNTIME_PROOF"
                    for r in ex)):
         errors.append("consumer: inspected external repository results are not runtime proofs")
+    if inventory.get("sourceControlSnapshots") != EXPECTED_SOURCE_CONTROL_SNAPSHOTS:
+        errors.append("consumer: pinned external source-control snapshot drift or runtime scope promotion")
     cfg = inventory.get("internalEvidence")
     expected_cfg = [
         {"id": name, "path": path, "parentKey": parent,

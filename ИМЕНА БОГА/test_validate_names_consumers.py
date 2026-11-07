@@ -139,6 +139,26 @@ class ConsumerCompatibilityTests(unittest.TestCase):
         d["externalCandidates"][0]["consumerContract"] = "VERIFIED"
         self.assertTrue(any("inspected external repository results are not runtime proofs" in x for x in self.check(inv=d)))
 
+    def test_external_snapshot_sha_cannot_be_invented(self):
+        d = copy.deepcopy(self.inv)
+        d["sourceControlSnapshots"]["candidates"][0]["revisionSha"] = "0" * 40
+        self.assertTrue(any("pinned external source-control snapshot drift" in x for x in self.check(inv=d)))
+
+    def test_external_snapshot_file_blob_cannot_drift(self):
+        d = copy.deepcopy(self.inv)
+        d["sourceControlSnapshots"]["candidates"][1]["inspectedFiles"][0]["blobSha"] = "0" * 40
+        self.assertTrue(any("pinned external source-control snapshot drift" in x for x in self.check(inv=d)))
+
+    def test_external_snapshot_cannot_be_promoted_to_runtime(self):
+        d = copy.deepcopy(self.inv)
+        d["sourceControlSnapshots"]["candidates"][2]["runtimeVerified"] = True
+        self.assertTrue(any("pinned external source-control snapshot drift" in x for x in self.check(inv=d)))
+
+    def test_external_snapshot_cannot_omit_inspected_path(self):
+        d = copy.deepcopy(self.inv)
+        d["sourceControlSnapshots"]["candidates"][0]["inspectedFiles"].pop()
+        self.assertTrue(any("pinned external source-control snapshot drift" in x for x in self.check(inv=d)))
+
     def test_legacy_source_50_and_general_22_disjoint(self):
         d = copy.deepcopy(self.crosswalk)
         generic_aid = "ATT-BASE-SABAOTH-01"

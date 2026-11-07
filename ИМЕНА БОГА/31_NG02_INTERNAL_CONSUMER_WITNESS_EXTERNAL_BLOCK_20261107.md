@@ -31,6 +31,20 @@
 
 **Важное различие:** структурное покрытие 105/105 claims и разрешаемые Research-side locator 105/105 — не согласованная внешняя v2-модель. Исходные 55 полей до сих пор отсутствуют; 50 старых полей нельзя менять; согласование всех внешних потребителей, dual-read контракт и одобрение владельца нужны до любой Product миграции.
 
+## Дополнение: pinned external source-control witness (NG-02, 2026-11-07)
+
+Это **узкий read-only аудит 8 реально прочитанных файлов** в трёх репозиториях, не доказательство отсутствия Product/Arena-потребителей. Полные 40-символьные revision SHA и blob SHA каждого файла зафиксированы в `data/names_consumer_compat_v1.json → sourceControlSnapshots` и защищены валидатором.
+
+| Репозиторий / pinned commit | Прочитанные файлы и сокращённые Git blob SHA | Результат |
+| --- | --- | --- |
+| [gb-is-my-strength · 5e2db6f](https://github.com/FedorMilovanov/gb-is-my-strength/tree/5e2db6f0fdd0257818f1a215fca16d4cc884e2d8) | `src/pages/index.astro` · `dba91b0`; `src/data/site.ts` · `0f27139`; `src/pages/app/index.astro` · `b180391` | Astro homepage, SITE metadata, app page: прямого импорта данных «Имён Бога» в этих файлах нет |
+| [TheLegendaryPoet · 46c66f2](https://github.com/FedorMilovanov/TheLegendaryPoet/tree/46c66f2251168d5aaebe1455b5ba96dad5a8c884) | `src/routes/routeModules.ts` · `fe54ccf`; `src/routes/route-contract.json` · `5ba4486`; `src/App.tsx` · `b524046` | Прочитаны React-router и root; прямого импорта Research в этих файлах нет |
+| [FedorMilovanov.github.io · 117314e](https://github.com/FedorMilovanov/FedorMilovanov.github.io/tree/117314ef8a927d6eacfd135e1dfd347873c1cea0) | `index.html` · `96b66e2`; `portfolio/index.html` · `43d7a1a` | Root — редирект на `/gb-is-my-strength/`; portfolio — страница портфолио |
+
+**Область вывода:** индекс + пути + содержимое именно указанных файлов по точным коммитам; другие ветки, chunks, динамические fetch, production bundle/deploy, оба исходных Arena ZIP и Product contract tests НЕ проверены. Поэтому `consumerContract=NOT_ATTESTED`, `runtimeVerified=false`, `v2Gate=BLOCKED_PENDING_EXTERNAL_CONSUMER_CONTRACT`, scholarly/rights/Product HOLD остаются неизменными.
+
+Добавлены **4 негативных regression tests**: замена SHA коммита, замена SHA исходного файла, фиктивное `runtimeVerified=true`, удалённая entrypoint-запись. Локальный валидатор проверяет закреплённый snapshot, **не делает сетевых запросов к GitHub**, не подтверждает актуальный deployment. STOP_DISCOVERY: без нового exact import path, исходного Arena архива или pinned deployed build не повторять выборочный поиск по тем же файлам.
+
 ## Next bounded action
 
 Собрать exact pinned revision и реально исполняемые consumer tests продукта (если он интегрирует данные), получить свидетельство чтения v1/v2 и отказа от сломанного old inline, после чего отдельным решением разрешить versioned v2. Если ни один внешний потребитель не существует, нельзя выдавать это за факт без деплой-проверки. Все оригинально-языковые академические claims и права источников остаются Research HOLD.
