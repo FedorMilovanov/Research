@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 33,
+    "sourceRecords": 37,
     "approvedForProduct": 0
   },
   "records": [
@@ -806,13 +806,119 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ]
+    },
+    {
+      "id": "SRC-SBLGNT-ABBA-PAUL-MARK",
+      "title": "SBLGNT 2010: Abba Father in Mark 14:36, Romans 8:15 and Galatians 4:6",
+      "creator": "Michael W. Holmes, SBLGNT editor, Society of Biblical Literature and Logos",
+      "year": 2010,
+      "url": "https://www.biblegateway.com/passage/?search=Mark+14&version=SBLGNT",
+      "otherUrls": [
+        "https://www.biblegateway.com/passage/?search=Romans+8%3A12-17&version=SBLGNT",
+        "https://www.biblegateway.com/verse/grc/Galatians%204%3A6",
+        "https://www.biblegateway.com/verse/grc/%CE%9A%CE%91%CE%A4%CE%91%20%CE%9C%CE%91%CE%A1%CE%9A%CE%9F%CE%9D%2014%3A36"
+      ],
+      "objectType": "edited_greek_NT_verse_digital_displays",
+      "sourceRole": "GREEK_ABBA_DIRECT_PRAYER_AND_PAULINE_ADOPTION",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "sourceObjectState": "Exact verses in SBLGNT 2010 directly read; Mark, Romans, Galatians display Αββα ὁ πατήρ. Printed THGNT Mark comparison shows ἀββᾶ but THGNT license is distinct.",
+      "supportedUse": "Mark Jesus prayer καὶ ἔλεγεν, Rom8:15 believers κράζομεν, Gal4:6 Spirit of Son κρᾶζον; separate agents with same Greek Aramaic transliteration",
+      "forbiddenUse": "Conflate grammatical agents, claim Αββα uniquely means baby language 'daddy', treat THGNT or BibleGateway layout as publisher-licensed CC BY",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "SRC-SBLGNT-JOHN-EGO",
+      "title": "SBLGNT 2010: ego eimi in John 6:20; 8:58; 9:9; 18:5–8",
+      "creator": "Michael W. Holmes, SBLGNT editor, Society of Biblical Literature and Logos",
+      "year": 2010,
+      "url": "https://www.biblegateway.com/passage/?search=John+9%3A1-9&version=SBLGNT",
+      "otherUrls": [
+        "https://www.biblegateway.com/passage/?search=John+8%3A58&version=SBLGNT",
+        "https://www.biblegateway.com/passage/?search=John+6%3A20&version=SBLGNT",
+        "https://www.biblegateway.com/passage/?search=John+18&version=SBLGNT"
+      ],
+      "objectType": "edited_greek_NT_contextual_speaker_surfaces",
+      "sourceRole": "GREEK_EGO_EIMI_WITH_HUMAN_NEGATIVE_CONTROL",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "sourceObjectState": "Direct passages and immediate speaking agents checked in SBLGNT, John9:9 human formerly blind man explicitly says Ἐγώ εἰμι",
+      "supportedUse": "Distinguish Jesus' pre-Abraham self-declaration John8:58, presence/identity scenes John6 and 18, and ordinary human affirmation John9:9; do not collapse into unique proper name lexeme",
+      "forbiddenUse": "Erase John9:9 human speaker; treat Greek two-word expression as intrinsically divine, or assert John8:58 is exact unshortened LXX Exodus3:14 quote",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "SRC-RAHLFS-EXODUS3",
+      "title": "Rahlfs–Hanhart 2006 Septuaginta: Exodus 3:12–15 original Greek edited text",
+      "creator": "Alfred Rahlfs; revised by Robert Hanhart; Deutsche Bibelgesellschaft",
+      "year": 2006,
+      "url": "https://www.die-bibel.de/bibel/LXX/EXO.3",
+      "objectType": "publisher_edited_greek_OT_digital_reading_edition",
+      "sourceRole": "PUBLISHER_GREEK_LXX_EXODUS3_SELF_REVELATION",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "sourceObjectState": "Direct publisher full chapter displayed; Ex3:14 exact Ἐγώ εἰμι ὁ ὤν followed by Ὁ ὢν ἀπέσταλκέν με. No independent manuscript variant collation.",
+      "supportedUse": "Exact printed Greek full Exodus3 self-revelation and comparison with MT Ex3:14 and SBLGNT John8:58 while preserving full ὁ ὤν",
+      "forbiddenUse": "Delete ὁ ὤν to claim exact John8:58 quote, infer underlying ancient witnesses from publisher reading text alone, or inherit SBLGNT CC BY publisher text license",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "SRC-BARR-ABBA-1988",
+      "title": "ʽABBĀ ISN’T ʽDADDY’ (Journal of Theological Studies 39.1, 1988, 28–47)",
+      "creator": "James Barr",
+      "year": 1988,
+      "url": "https://doi.org/10.1093/jts/39.1.28",
+      "objectType": "academic_journal_article_publisher_metadata_abstract_only",
+      "sourceRole": "ATTRIBUTED_ABBA_LEXICAL_CRITIQUE_CATALOG_ONLY",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "PERMISSION_REQUIRED",
+      "sourceObjectState": "Oxford Academic confirms exact article title, author, JTS new series volume 39 issue 1 April 1988 pp 28–47; paywalled PDF/full text not obtained or read",
+      "supportedUse": "Bibliographical evidence that Barr explicitly challenges simplistic equation 'Abba = daddy'; report author/editor debate as a citation to article title only",
+      "forbiddenUse": "Present quotation or detailed arguments of Barr's article as checked original primary full text; claim Jeremias debate conclusively resolved from the paywalled catalog alone",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "LOCATOR_HOLD",
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
     }
   ],
   "auditRevision": {
     "date": "2026-11-07",
-    "correctedSources": [
-      "SRC-RAHLFS-EXODUS17"
+    "newSources": [
+      "SRC-SBLGNT-ABBA-PAUL-MARK",
+      "SRC-SBLGNT-JOHN-EGO",
+      "SRC-RAHLFS-EXODUS3",
+      "SRC-BARR-ABBA-1988"
     ],
-    "rationale": "CI required exact Greek lemma καταφυγή in the source's supported-use evidence; fixed provenance record, not validation logic."
+    "rationale": "Source scope for three distinct NT Abba prayer actors, human John9:9 ego eimi negative control, exact full LXX Ex3:14 and Barr publisher metadata-only"
   }
 }
