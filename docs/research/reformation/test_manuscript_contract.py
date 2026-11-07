@@ -44,6 +44,42 @@ class ReformationManuscriptTests(unittest.TestCase):
         self.assertIn("NOT_EDITORIAL_READY", readme)
         self.assertIn("PUBLICATION_HOLD", readme)
 
+    def test_single_biblical_epilogue_separate_from_twelve_histories(self):
+        epilogue = HERE / "epilogue_reformation_last_restoration_manuscript.md"
+        self.assertTrue(epilogue.is_file())
+        s = epilogue.read_text(encoding="utf-8")
+        self.assertTrue(s.startswith("# Эпилог."))
+        self.assertGreaterEqual(len(s.split()), 1600)
+        for marker in ("RESEARCH_MANUSCRIPT_DRAFT", "NOT_EDITORIAL_READY",
+                       "PUBLICATION_HOLD", "премилленарист",
+                       "амилленарист", "постмилленарист", "Откр. 20",
+                       "1 Кор. 15", "глава 32", "глава 31"):
+            self.assertIn(marker.lower(), s.lower())
+        self.assertNotRegex(epilogue.name, r"^episode\d{2}_")
+        for name in ("README.md", "04_series_blueprint.md",
+                     "SELF_PLAN.md", "episode12_reformation_everyday_life_1520_1600_manuscript.md"):
+            self.assertIn(epilogue.name,(HERE/name).read_text(encoding="utf-8"))
+        # There is still exactly one introductory book text and 12 histories.
+        self.assertEqual(len(list(HERE.glob("episode[0-9][0-9]_*_manuscript.md"))) + 1, 12)
+
+    def test_reader_edits_keep_facts_and_full_apparatus(self):
+        intro = INTRO.read_text(encoding="utf-8")
+        ch1 = EPISODE01.read_text(encoding="utf-8")
+        a = intro.split("## Источниковедческие и редакционные примечания", 1)
+        b = ch1.split("## Источниковедческий аппарат и статус", 1)
+        self.assertEqual(len(a), 2)
+        self.assertEqual(len(b), 2)
+        self.assertLess(len(a[0].split()), 5300)
+        self.assertLess(len(b[0].split()), 4500)
+        self.assertIn("NOT_EDITORIAL_READY", intro)
+        self.assertIn("NOT_EDITORIAL_READY", ch1)
+        # Editor moves evidence, not the historic witness or numbered concordance.
+        self.assertIn("Маркион",a[1])
+        for marker in ("Kalliope", "Theodor Dieter", "### Досье к октябрю",
+                       "| Стандартный №", "95 тезисов"):
+            self.assertIn(marker,b[1])
+        self.assertIn("### Исторические свидетельства ранней",a[1])
+
     def test_episode02_is_still_inside_existing_series(self):
         p = HERE / "episode02_indulgences_1517_manuscript.md"
         self.assertTrue(p.is_file())
