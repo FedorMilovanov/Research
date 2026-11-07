@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 29,
+    "sourceRecords": 33,
     "approvedForProduct": 0
   },
   "records": [
@@ -710,14 +710,108 @@
       "citation": "Nicholas Adams, 'God's pronouns', Scottish Journal of Theology 77(4), November 2024, 313–328, first online May 23, 2024",
       "license": "Creative Commons Attribution 4.0 International (CC BY 4.0), © author 2024 Cambridge University Press, applies to this article; proper attribution required",
       "licenseScope": "CAMBRIDGE_ARTICLE_ONLY_NOT_BIBLICAL_TRANSLATIONS"
+    },
+    {
+      "id": "SRC-RAHLFS-EXODUS17",
+      "title": "Rahlfs–Hanhart Septuaginta (2006), published Greek Exodus 17:15–16",
+      "creator": "Alfred Rahlfs / Robert Hanhart; Deutsche Bibelgesellschaft",
+      "year": 2006,
+      "url": "https://www.die-bibel.de/bibel/LXX/EXO.17",
+      "objectType": "publisher_digital_greek_OT_reading_edition",
+      "sourceRole": "PUBLISHER_LXX_EXODUS_TRANSLATIONAL_SURFACE",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "sourceObjectState": "Publisher's full digital Exodus17 chapter visible, both 17:15 κύριός μου καταφυγή and 17:16 ἐν χειρὶ κρυφαίᾳ verified by direct reading; no manuscript variants collated",
+      "supportedUse": "Distinguish altar name refuge in Rahlfs-Hanhart Ex17:15 from MT banner and Greek secret-hand clause 17:16 from MT difficult hand/throne phrase",
+      "forbiddenUse": "Assert different ancient Hebrew Vorlage without inspecting witnesses; claim publisher's copyrighted LXX Greek text CC BY by analogy with SBLGNT; equate the two Greek/Hebrew expressions etymologically",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "SRC-NET-EXODUS17",
+      "title": "NET Bible translator notes: Exodus 17:16 hand/throne/banner textual problem",
+      "creator": "NET Bible translation committee",
+      "year": null,
+      "url": "https://classic.net.bible.org/verse.php?book=Exo&chapter=17&tab=commentaries&theme=false&verse=16",
+      "objectType": "attributed_modern_translation_notes",
+      "sourceRole": "ATTRIBUTED_TRANSLATION_TEXTUAL_HYPOTHESES",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "sourceObjectState": "NET Ex17:16 translator notes read, discuss difficult כס יה and suggested emendation נס; no ancient manuscript facsimile or full MT-LXX apparatus",
+      "supportedUse": "Attribute possible throne interpretation, nēs banner conjecture and ambiguity of MT phrase; record conjecture as proposed emendation only",
+      "forbiddenUse": "Treat a conjectured נס as original Hebrew MT, silently replace the printed כס or claim all scholars unanimously agree",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "SRC-NET-GENESIS22",
+      "title": "NET Bible translator notes: Genesis 22:14 name of place and Niphal appear/provide",
+      "creator": "NET Bible translation committee",
+      "year": null,
+      "url": "https://classic.net.bible.org/verse.php?book=Gen&chapter=22&theme=false&verse=14",
+      "objectType": "attributed_modern_translation_notes",
+      "sourceRole": "ATTRIBUTED_TRANSLATION_GRAMMAR_ALTERNATIVES",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "sourceObjectState": "Verse and full 3 translator notes inspected: naming place, sense of Hebrew yir'eh, ambiguity Niphal in mountain proverb; grammar still secondary and not checked BDB directly",
+      "supportedUse": "Attribute alternatives 'it will be seen/provided' and 'YHWH will appear' and preserve active vs Niphal verbal forms",
+      "forbiddenUse": "Present only 'provide' as inevitable literal passive interpretation or claim the alternative implies different attested manuscript readings",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "SRC-SBLGNT-JOHN10",
+      "title": "SBLGNT John 10:11: Christ's self-description as good shepherd",
+      "creator": "Michael W. Holmes, SBLGNT editor",
+      "year": 2010,
+      "url": "https://www.biblegateway.com/passage/?search=John+10%3A11&version=SBLGNT",
+      "objectType": "greek_NT_edition_surface_browser_host",
+      "sourceRole": "CHRISTOLOGICAL_INTERTEXTUAL_SURFACE",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "sourceObjectState": "John10:11 digital SBLGNT Greek text and explicit speaker context checked; SBLGNT publisher licenses text CC BY 4.0 separately, does not grant host layout rights",
+      "supportedUse": "Record Jesus' explicit ἐγώ εἰμι ὁ ποιμὴν ὁ καλός, distinguish original Greek from Psalm23 Hebrew",
+      "forbiddenUse": "Claim John10:11 is a direct lexical quotation of Hebrew Ps23:1 or auto-approve BibleGateway layout and modern translations",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
     }
   ],
   "auditRevision": {
     "date": "2026-11-07",
-    "newSources": [],
-    "correctedSources": [
-      "SRC-CAMBRIDGE-GOD-PRONOUNS"
+    "newSources": [
+      "SRC-RAHLFS-EXODUS17",
+      "SRC-NET-EXODUS17",
+      "SRC-NET-GENESIS22",
+      "SRC-SBLGNT-JOHN10"
     ],
-    "rationale": "Publisher metadata confirms Nicholas Adams, 2024, DOI, CC BY 4.0; text-specific, not permission for Bible translations."
+    "rationale": "Memorial place/altar vs divine self predications, publisher LXX divergence, attributed translator note on conjectural emendation, copyright separated."
   }
 }
