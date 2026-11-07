@@ -349,6 +349,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-THGNT-REV216": "GREEK_TEXT_SURFACE_ONLY",
     "SRC-DANIEL-ARAMAIC": "ARAMAIC_TEXT_SURFACE_ONLY",
     "SRC-SBL-INTRO": "EDITION_METHOD_NOT_MANUSCRIPT_APPARATUS",
+    "SRC-SBLGNT-CCBY-LICENSE": "PUBLISHER_LICENSE_TEXT_ONLY",
 }
 
 
@@ -400,7 +401,7 @@ def validate_source_access(sources: dict) -> list[str]:
             errors.append(f"{prefix}: unknown HOLD token")
         if source.get("criticalEditionCollated") is not False:
             errors.append(f"{prefix}: falsely claims edition collation")
-        if source.get("rightsState") == "PUBLICATION_ELIGIBLE" and rid not in {"SRC-VANWOLDE-2021", "SRC-TR1550-REV18"}:
+        if source.get("rightsState") == "PUBLICATION_ELIGIBLE" and rid not in {"SRC-VANWOLDE-2021", "SRC-TR1550-REV18", "SRC-SBLGNT-CCBY-LICENSE"}:
             errors.append(f"{prefix}: evidence of a source-level license missing")
         if rid == "SRC-TR1550-REV18":
             if source.get("rightsState") != "PUBLICATION_ELIGIBLE" or "Public Domain" not in str(source.get("license", "")):
@@ -414,6 +415,18 @@ def validate_source_access(sources: dict) -> list[str]:
             errors.append(f"{prefix}: Aramaic text cannot be promoted to fully collated Hebrew or manuscript")
         if rid == "SRC-SBL-INTRO" and "manuscript collation" not in str(source.get("forbiddenUse", "")).lower():
             errors.append(f"{prefix}: SBLGNT introduction must remain non-manuscript provenance")
+        if rid == "SRC-SBLGNT-CCBY-LICENSE":
+            if (source.get("rightsState") != "PUBLICATION_ELIGIBLE"
+                or source.get("evidenceClass") != "A2"
+                or source.get("accessState") != "FULL_OBJECT_VERIFIED"
+                or "CC BY 4.0" not in str(source.get("license", ""))):
+                errors.append(f"{prefix}: official CC BY 4.0 publisher-license evidence lost")
+            if source.get("licenseScope") != "GREEK_EDITED_TEXT_ONLY_NOT_HOST_WEBSITE_OR_OTHER_EDITIONS":
+                errors.append(f"{prefix}: text-only license boundaries changed")
+            if source.get("publicationState") != "BLOCKED":
+                errors.append(f"{prefix}: copyright eligibility is not publication approval")
+        if rid == "SRC-SBL-REVELATION" and source.get("rightsState") != "RIGHTS_UNKNOWN":
+            errors.append(f"{prefix}: publisher license must not be inferred for host website display")
         if rid == "SRC-VANWOLDE-2021":
             if source.get("rightsState") != "PUBLICATION_ELIGIBLE" or "CC BY 4.0" not in str(source.get("license", "")):
                 errors.append(f"{prefix}: verified article-specific CC BY license lost")
