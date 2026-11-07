@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "corpusId": "NAMES_OF_GOD_CLAIM_LEVEL_EVIDENCE",
   "createdAt": "2026-11-07",
-  "scope": "Initial 10 curated cross-verse claims, not a complete enumeration of 105 attestation-level semantic assertions",
+  "scope": "Ten historically curated seed claims are immutable minima, not a ceiling; additional claim IDs require provenance review. Semantic edges express editorial contrasts rather than scientific agreement or Product clearance.",
   "editorialPolicy": "Never infer Product approval from link completeness, never replace a cited verse or alternative theory silently; new claims require independent review.",
   "records": [
     {
@@ -225,6 +225,40 @@
         "independent sound/phonology scholarship",
         "manuscript reading traditions and opposing views"
       ]
+    }
+  ],
+  "semanticRelations": [
+    {
+      "relationId": "REL-IS43-EL-REFERENT",
+      "fromClaimId": "CLM-IS43-10-NEGATED-EL",
+      "toClaimId": "CLM-IS43-12-YHWH-EL",
+      "relationType": "CONTRASTS_REFERENT",
+      "rationale": "Identical lexeme family does not imply the same referent in negated and first-person divine contexts.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-MEMORIAL-PLACE-ALTAR",
+      "fromClaimId": "CLM-GEN22-14-PLACE-NAME",
+      "toClaimId": "CLM-EX17-15-ALTAR-MT-LXX",
+      "relationType": "CONTRASTS_NAMED_OBJECT",
+      "rationale": "A named place and a named altar must remain distinct types of commemorative naming.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-EGO-EIMI-CONTEXT",
+      "fromClaimId": "CLM-JOHN9-9-HUMAN-EGO-EIMI",
+      "toClaimId": "CLM-LXX-EX3-JOHN8-DIFFERENT-CLAUSES",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "Human use of ego eimi limits inference from the grammatical phrase alone; possible Johannine intertext requires contextual argument.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-YHWH-PRONUNCIATION",
+      "fromClaimId": "CLM-EX3-15-DIVINE-NAME",
+      "toClaimId": "CLM-YHWH-HISTORICAL-PRONUNCIATION",
+      "relationType": "REQUIRES_INDEPENDENT_ATTESTATION",
+      "rationale": "Explicit naming in Exodus does not itself reconstruct the sound of ancient YHWH pronunciation.",
+      "publicationState": "BLOCKED"
     }
   ]
 }

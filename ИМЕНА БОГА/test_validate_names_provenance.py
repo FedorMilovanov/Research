@@ -128,5 +128,89 @@ class ProvenanceGraphTests(unittest.TestCase):
         self.assertTrue(any("copyright of Greek edition" in e for e in self.check(editions=d)))
 
 
+    def test_new_research_claim_can_be_added_without_editing_seed_list(self) -> None:
+        d = copy.deepcopy(self.claims)
+        c = copy.deepcopy(d["records"][0])
+        c["claimId"] = "CLM-NEW-VERIFIED-EDGE"
+        c["statement"] = "A strictly provisional original-script locus claim for review."
+        d["records"].append(c)
+        self.assertEqual([], self.check(claims=d))
+
+    def test_new_claim_cannot_avoid_mandatory_direct_source(self) -> None:
+        d = copy.deepcopy(self.claims)
+        c = copy.deepcopy(d["records"][0])
+        c["claimId"] = "CLM-NEW-BROKEN-EDGE"
+        c["sourceIds"] = ["SRC-ROESEL-2007"]
+        d["records"].append(c)
+        self.assertTrue(any("lost mandatory direct textual sources" in e for e in self.check(claims=d)))
+
+    def test_duplicate_claim_id_rejected_even_when_seed_count_preserved(self) -> None:
+        d = copy.deepcopy(self.claims)
+        d["records"].append(copy.deepcopy(d["records"][0]))
+        self.assertTrue(any("duplicate claim ID" in e for e in self.check(claims=d)))
+
+    def test_malformed_claim_is_a_validation_failure_not_exception(self) -> None:
+        d = copy.deepcopy(self.claims)
+        d["records"].append({"claimId": ["not-a-string"]})
+        self.assertTrue(any("malformed claim ID" in e for e in self.check(claims=d)))
+
+    def test_unknown_claim_type_cannot_be_inferred(self) -> None:
+        d = copy.deepcopy(self.claims)
+        d["records"][0]["claimType"] = "FULLY_CERTIFIED"
+        self.assertTrue(any("untyped editorial assertion" in e for e in self.check(claims=d)))
+
+    def test_claim_must_preserve_pending_review_tasks(self) -> None:
+        d = copy.deepcopy(self.claims)
+        d["records"][0]["reviewNeeded"] = []
+        self.assertTrue(any("pending independent review tasks" in e for e in self.check(claims=d)))
+
+    def test_orphaned_relation_is_rejected(self) -> None:
+        d = copy.deepcopy(self.claims)
+        d["semanticRelations"][0]["toClaimId"] = "CLM-NONEXISTENT"
+        self.assertTrue(any("orphaned or self-referential claim edge" in e for e in self.check(claims=d)))
+
+    def test_unknown_relation_type_does_not_pass(self) -> None:
+        d = copy.deepcopy(self.claims)
+        d["semanticRelations"][0]["relationType"] = "SAME_DIVINE_NAME"
+        self.assertTrue(any("unknown semantic relation type" in e for e in self.check(claims=d)))
+
+    def test_immutable_relation_cannot_be_dropped(self) -> None:
+        d = copy.deepcopy(self.claims)
+        d["semanticRelations"].pop()
+        self.assertTrue(any("required semantic boundary" in e for e in self.check(claims=d)))
+
+    def test_relation_cannot_promote_to_product(self) -> None:
+        d = copy.deepcopy(self.claims)
+        d["semanticRelations"][0]["publicationState"] = "READY"
+        self.assertTrue(any("unlawfully promoted relationship" in e for e in self.check(claims=d)))
+
+    def test_relation_self_loop_is_rejected(self) -> None:
+        d = copy.deepcopy(self.claims)
+        d["semanticRelations"][0]["toClaimId"] = d["semanticRelations"][0]["fromClaimId"]
+        self.assertTrue(any("self-referential claim edge" in e for e in self.check(claims=d)))
+
+    def test_unhashable_attestation_reference_fails_closed(self) -> None:
+        d = copy.deepcopy(self.claims)
+        d["records"][0]["attestationIds"] = [["malformed"]]
+        self.assertTrue(any("non-string or duplicate text references" in e for e in self.check(claims=d)))
+
+    def test_non_string_source_reference_fails_closed(self) -> None:
+        d = copy.deepcopy(self.claims)
+        d["records"][0]["sourceIds"] = [{"not": "an ID"}]
+        self.assertTrue(any("lacking unique source references" in e for e in self.check(claims=d)))
+
+    def test_new_semantic_relation_with_valid_research_edges_is_allowed(self) -> None:
+        d = copy.deepcopy(self.claims)
+        d["semanticRelations"].append({
+            "relationId": "REL-EXTRA-VALID",
+            "fromClaimId": "CLM-EX3-15-DIVINE-NAME",
+            "toClaimId": "CLM-ABBA-THREE-PRAYER-SUBJECTS",
+            "relationType": "LIMITS_INFERENCE",
+            "rationale": "Merely a typed research-only comparative boundary, not a doctrinal identity.",
+            "publicationState": "BLOCKED",
+        })
+        self.assertEqual([], self.check(claims=d))
+
+
 if __name__ == "__main__":
     unittest.main()

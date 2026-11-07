@@ -20,7 +20,7 @@
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 16,
-    "provenanceRegressionTests": 18,
+    "provenanceRegressionTests": 32,
     "canonicalEditions": 4,
     "curatedClaims": 10,
     "allAttestationForeignKeys": 105
@@ -147,9 +147,12 @@
         "data/names_edition_registry_v1.json",
         "data/names_claim_registry_v1.json",
         "ИМЕНА БОГА/data/names_ledger_v1.json: 87 new attestation/edition/source identifiers",
-        "ИМЕНА БОГА/data/names_extension_ledger_v1.json: 18 new attestation/edition/source identifiers"
+        "ИМЕНА БОГА/data/names_extension_ledger_v1.json: 18 new attestation/edition/source identifiers",
+        "data/names_claim_registry_v1.json: four stable semantic claim relationships, all publication-blocked",
+        "validate_names_provenance.py: curated core as immutable minimum with typed extensible additions",
+        "test_validate_names_provenance.py: 32 positive and adversarial graph tests, local run pending CI"
       ],
-      "verification": "105_FOREIGN_KEYS_AND_4_EDITION_REGISTRY_AND_10_CURATED_CLAIM_SEEDS_ENTERED; QA_PENDING; full claim exhaustiveness NOT complete",
+      "verification": "105_FOREIGN_KEYS_4_EDITIONS_10_CURATED_CLAIM_SEEDS_4_TYPED_SEMANTIC_EDGES_32_GRAPH_REGRESSIONS_LOCAL; FULL_CLAIM_EXHAUSTIVENESS_AND_INDEPENDENT_SCHOLARLY_REVIEW_PENDING_CI",
       "closureAt": null,
       "owner": "Research editorial"
     },
@@ -548,7 +551,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NG-02: independent review of 10 linked claims, 4 multiedition Greek URL rechecks and extension of claim graph; NG-05 read Valdizan 2024 with original MT/LXX and alternative scholarly research.",
+  "nextAction": "NG-02: independent review of first 10 claims, expand proof-level decisions for remaining attestations, verify 4 multiedition Greek URLs, add independent witness-level critical edition checks; NG-05 full Valdizan/Ross and opposing scholarship review.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {

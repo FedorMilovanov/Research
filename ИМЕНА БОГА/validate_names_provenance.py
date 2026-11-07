@@ -48,6 +48,48 @@ CORE_CLAIMS = {
     "CLM-ABBA-THREE-PRAYER-SUBJECTS",
     "CLM-YHWH-HISTORICAL-PRONUNCIATION",
 }
+# The original reviewed seeds are a required minimum, not a cap on future work.
+# Additional claims must pass the same foreign-key, editorial and publication gates.
+ALLOWED_CLAIM_TYPES = {
+    "DIRECT_TEXTUAL_NAMING",
+    "NEGATIVE_REFERENT_CONTROL",
+    "POSITIVE_REFERENT_CONTROL",
+    "NAMED_OBJECT_CONTROL",
+    "EDITED_TEXT_DIFFERENCE",
+    "NARRATIVE_SPEECH_VS_NAMING",
+    "HUMAN_NEGATIVE_CONTROL",
+    "CANONICAL_INTERTEXT_BOUNDARY",
+    "SPEECH_AGENT_CONTROL",
+    "ATTRIBUTED_HISTORICAL_RECONSTRUCTION",
+}
+ALLOWED_INTERPRETIVE_SCOPES = {
+    "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+    "AUTHOR_ARGUMENT_NOT_CLOSED",
+}
+ALLOWED_RELATION_TYPES = {
+    "CONTRASTS_REFERENT",
+    "CONTRASTS_NAMED_OBJECT",
+    "LIMITS_INFERENCE",
+    "REQUIRES_INDEPENDENT_ATTESTATION",
+}
+# These four editorial comparisons must not silently disappear in later waves.
+REQUIRED_SEMANTIC_RELATIONS = {
+    "REL-IS43-EL-REFERENT": (
+        "CLM-IS43-10-NEGATED-EL", "CLM-IS43-12-YHWH-EL", "CONTRASTS_REFERENT"
+    ),
+    "REL-MEMORIAL-PLACE-ALTAR": (
+        "CLM-GEN22-14-PLACE-NAME", "CLM-EX17-15-ALTAR-MT-LXX",
+        "CONTRASTS_NAMED_OBJECT"
+    ),
+    "REL-EGO-EIMI-CONTEXT": (
+        "CLM-JOHN9-9-HUMAN-EGO-EIMI", "CLM-LXX-EX3-JOHN8-DIFFERENT-CLAUSES",
+        "LIMITS_INFERENCE"
+    ),
+    "REL-YHWH-PRONUNCIATION": (
+        "CLM-EX3-15-DIVINE-NAME", "CLM-YHWH-HISTORICAL-PRONUNCIATION",
+        "REQUIRES_INDEPENDENT_ATTESTATION"
+    ),
+}
 CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-EX3-15-DIVINE-NAME": {"ATT-BASE-YHWH-01"},
     "CLM-IS43-10-NEGATED-EL": {"ATT-BASE-EL-04"},
@@ -193,23 +235,46 @@ def validate_provenance(
     claim_rows = claims.get("records", [])
     if not isinstance(claim_rows, list):
         return errors + ["provenance: claim record list missing"]
-    claim_map = {c.get("claimId"): c for c in claim_rows if isinstance(c, dict)}
-    if set(claim_map) != CORE_CLAIMS or len(claim_rows) != len(CORE_CLAIMS):
-        errors.append("provenance: ten curated stable claims missing or duplicate")
+    claim_map: dict[str, dict] = {}
+    for idx, claim in enumerate(claim_rows):
+        cid = claim.get("claimId") if isinstance(claim, dict) else None
+        if not isinstance(cid, str) or not re.fullmatch(r"CLM-[A-Z0-9]+(?:-[A-Z0-9]+)*", cid):
+            errors.append(f"provenance: malformed claim ID or record at index {idx}")
+            continue
+        if cid in claim_map:
+            errors.append(f"provenance: duplicate claim ID {cid}")
+            continue
+        claim_map[cid] = claim
+    if not CORE_CLAIMS.issubset(claim_map):
+        errors.append("provenance: one or more original curated claim seeds missing")
     for cid, claim in claim_map.items():
         if not isinstance(claim, dict):
             errors.append(f"provenance: malformed claim {cid}")
             continue
         refs = claim.get("attestationIds", [])
         sources_refs = claim.get("sourceIds", [])
-        if not isinstance(refs, list) or not refs or len(refs) != len(set(refs)):
-            errors.append(f"provenance: claim {cid} missing or duplicate text references")
+        if (not isinstance(refs, list) or not refs
+            or any(not isinstance(ref, str) for ref in refs)
+            or len(refs) != len(set(refs))):
+            errors.append(f"provenance: claim {cid} missing, non-string or duplicate text references")
             continue
-        if not isinstance(sources_refs, list) or not sources_refs:
-            errors.append(f"provenance: claim {cid} lacking scholarly bibliography")
+        if (not isinstance(sources_refs, list) or not sources_refs
+            or any(not isinstance(s, str) for s in sources_refs)
+            or len(sources_refs) != len(set(sources_refs))):
+            errors.append(f"provenance: claim {cid} lacking unique source references")
             continue
-        if set(refs) != CLAIM_REQUIRED_ATTESTATIONS.get(cid, set()):
+        expected = CLAIM_REQUIRED_ATTESTATIONS.get(cid)
+        if expected is not None and set(refs) != expected:
             errors.append(f"provenance: claim {cid} lost its independently reviewed text witnesses")
+        if claim.get("claimType") not in ALLOWED_CLAIM_TYPES:
+            errors.append(f"provenance: claim {cid} has untyped editorial assertion")
+        if claim.get("interpretiveScope") not in ALLOWED_INTERPRETIVE_SCOPES:
+            errors.append(f"provenance: claim {cid} has unbounded interpretation")
+        if claim.get("evidenceTier") != "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT":
+            errors.append(f"provenance: claim {cid} overstates its evidence tier")
+        needs = claim.get("reviewNeeded")
+        if not isinstance(needs, list) or not needs or any(not isinstance(n, str) or not n.strip() for n in needs):
+            errors.append(f"provenance: claim {cid} lacks pending independent review tasks")
         if any(r not in att_by_id for r in refs):
             errors.append(f"provenance: claim {cid} cites orphaned attestation")
         if any(r not in source_map for r in sources_refs):
@@ -222,8 +287,44 @@ def validate_provenance(
             or claim.get("editorialState") != "RESEARCH_HOLD"
             or claim.get("publicationState") != "BLOCKED"):
             errors.append(f"provenance: claim {cid} falsely authorized for Product")
-        if not str(claim.get("statement", "")).strip():
+        if not isinstance(claim.get("statement"), str) or not claim["statement"].strip():
             errors.append(f"provenance: claim {cid} lacks factual language")
+
+    relation_rows = claims.get("semanticRelations")
+    if not isinstance(relation_rows, list):
+        return errors + ["provenance: typed claim relations missing"]
+    relation_ids: set[str] = set()
+    relation_map: dict[str, tuple[str, str, str]] = {}
+    for idx, relation in enumerate(relation_rows):
+        if not isinstance(relation, dict):
+            errors.append(f"provenance: malformed semantic relation at index {idx}")
+            continue
+        rid, src, dst, kind = (
+            relation.get("relationId"), relation.get("fromClaimId"),
+            relation.get("toClaimId"), relation.get("relationType")
+        )
+        if not isinstance(rid, str) or not re.fullmatch(r"REL-[A-Z0-9]+(?:-[A-Z0-9]+)*", rid):
+            errors.append(f"provenance: invalid semantic relation ID at index {idx}")
+            continue
+        if rid in relation_ids:
+            errors.append(f"provenance: duplicate semantic relation ID {rid}")
+            continue
+        relation_ids.add(rid)
+        if (not isinstance(src, str) or not isinstance(dst, str)
+            or src not in claim_map or dst not in claim_map or src == dst):
+            errors.append(f"provenance: {rid} orphaned or self-referential claim edge")
+            continue
+        if kind not in ALLOWED_RELATION_TYPES:
+            errors.append(f"provenance: {rid} unknown semantic relation type")
+            continue
+        if relation.get("publicationState") != "BLOCKED":
+            errors.append(f"provenance: {rid} unlawfully promoted relationship")
+        if not isinstance(relation.get("rationale"), str) or not relation["rationale"].strip():
+            errors.append(f"provenance: {rid} lacks evidence-bounded explanation")
+        relation_map[rid] = (src, dst, kind)
+    for rid, expected in REQUIRED_SEMANTIC_RELATIONS.items():
+        if relation_map.get(rid) != expected:
+            errors.append(f"provenance: required semantic boundary {rid} missing or modified")
     return errors
 
 
@@ -241,8 +342,8 @@ def main() -> int:
         for p in problems:
             print("FAIL: " + p, file=sys.stderr)
         return 1
-    print("PASS: all 105 immutable evidence IDs linked to 4 text editions and source records; "
-          "10 curated claim IDs have non-orphan, HOLD-guarded evidence")
+    print("PASS: 105 immutable attestation IDs linked to 4 editions and source records; "
+          "original 10 claim seeds retained; extensible typed claim graph and semantic boundaries are HOLD-guarded")
     return 0
 
 
