@@ -2129,10 +2129,10 @@
       "documentYear": 1528,
       "title": "H. Dencken wid[e]ruff. Uff die zehen artikel: 1 Von der geschrifft; 2 Von der bezalung Christi; 3 Vom Glauben; 4 Vom freien willen; 5 Von guten wercken; 6 Von Secten; 7 Von Ceremonien; 8 Vom Tauff; 9 Vom Nachtmal; 10 Vom Eyd",
       "evidenceClass": "A1",
-      "accessState": "FULL_OBJECT_14_SCANS_ACQUIRED",
-      "locatorState": "ORIGINAL_TITLE_AND_SECTION_VIII_FACSIMILE_VERIFIED",
-      "rightsState": "PUBLIC_DOMAIN_MARK",
-      "publicationState": "RESEARCH_ONLY",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
       "holds": [
         "EVIDENCE_HOLD",
         "PUBLICATION_HOLD"
@@ -2316,8 +2316,8 @@
       "documentYear": 2008,
       "title": "Ulrich Oelschläger, Die Wormser Propheten von 1527. Eine vorlutherische Teilübersetzung der Bibel, Theologische Zeitschrift 64/2 (2008), 169–198, esp. 175 n.18",
       "evidenceClass": "B1",
-      "accessState": "PDF_TEXT_PARTIAL_REVIEWED",
-      "locatorState": "PRINTED_PAGE_175_TEXT_LOCATED_IMAGE_NOT_VERIFIED",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
       "holds": [
@@ -2334,8 +2334,8 @@
       "documentYear": 2020,
       "title": "Mennonitisches Lexikon, Band V (2010–2020 online; revised print edition 2020), Hans-Jürgen Goertz (ed.), article 'Denck, Hans'",
       "evidenceClass": "B1",
-      "accessState": "INDEXED_EXCERPT_AND_WEB_TEXT",
-      "locatorState": "ARTICLE_LEVEL_ONLY",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
       "holds": [

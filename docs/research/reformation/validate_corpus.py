@@ -40,6 +40,23 @@ def git_blob_sha(data: bytes) -> str:
     return hashlib.sha1(header + data).hexdigest()
 
 
+def canonical_ledger_blob_sha(data: bytes) -> str:
+    """Accept only an unchanged Git blob or an all-CRLF Windows checkout.
+
+    Git's core.autocrlf may expand the canonical LF-only Markdown from HEAD
+    to CRLF on Windows. Preserve the source-ledger hash rather than changing
+    the expected hash to match platform-dependent working-tree bytes.
+    Mixed line endings and actual content modifications still fail closed.
+    """
+    raw_sha = git_blob_sha(data)
+    if raw_sha == EXPECTED_ORIGINAL_GIT_BLOB:
+        return raw_sha
+    crlf_count = data.count(b"\r\n")
+    if crlf_count and data.count(b"\r") == data.count(b"\n") == crlf_count:
+        return git_blob_sha(data.replace(b"\r\n", b"\n"))
+    return raw_sha
+
+
 def validate() -> tuple[list[str], dict[str, int]]:
     problems: list[str] = []
     policy = json_read(POLICY_PATH)
@@ -83,8 +100,14 @@ def validate() -> tuple[list[str], dict[str, int]]:
             problems.append(f"{name}: publication status not REFERENCE; manual audit required")
         if "PUBLICATION_HOLD" not in hs:
             problems.append(f"{name}: missing PUBLICATION_HOLD")
-        if item.get("accessState") == "FULL_OBJECT_VERIFIED" and "ARCHIVE_HOLD" in hs:
-            problems.append(f"{name}: FULL_OBJECT_VERIFIED with ARCHIVE_HOLD: review status")
+        # Full access to a B1 scholarly article does not imply access to the
+        # underlying sixteenth-century autograph/print cited by that article.
+        # Keep ARCHIVE_HOLD in those records; only full A-class source objects
+        # require a manual inconsistency review for this combination.
+        if (item.get("accessState") == "FULL_OBJECT_VERIFIED"
+                and "ARCHIVE_HOLD" in hs
+                and item.get("evidenceClass") != "B1"):
+            problems.append(f"{name}: full primary object with ARCHIVE_HOLD: review status")
     items = manifest.get("sourceRecords", [])
     if manifest.get("sourceCount") != len(items):
         problems.append("acquisition sourceCount differs from row count")
@@ -674,7 +697,7 @@ def validate() -> tuple[list[str], dict[str, int]]:
             elif not resolved.is_file():
                 problems.append(f"{file.name}: broken relative link: {target}")
     ledger_bytes = (HERE / "source-ledger-2026-11-03-original.md").read_bytes()
-    observed = git_blob_sha(ledger_bytes)
+    observed = canonical_ledger_blob_sha(ledger_bytes)
     if observed != EXPECTED_ORIGINAL_GIT_BLOB:
         problems.append("user-supplied original ledger has changed (Git blob mismatch)")
     return problems, {
