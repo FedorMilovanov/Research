@@ -1545,6 +1545,143 @@ class ProvenanceGraphTests(unittest.TestCase):
         x["relationType"]="CONTRASTS_GRAMMATICAL_FORM"
         self.assertTrue(any("required semantic boundary" in e for e in self.check(claims=d)))
 
+    def test_hagar_gen16_actor_not_abraham(self) -> None:
+        d,o=self.mutate("el-roi","baseline",0)
+        o["speaker"]="Abraham"
+        self.assertTrue(any("Hagar/ElOlam/Isaiah9-10/YHWH hymn MT context changed" in err for err in self.check(baseline=d)))
+
+    def test_hagar_gen16_explicit_call_not_mere_narration(self) -> None:
+        d,o=self.mutate("el-roi","baseline",0)
+        o["speechAct"]="narrator_only"
+        self.assertTrue(any("Hagar/ElOlam/Isaiah9-10/YHWH hymn MT context changed" in err for err in self.check(baseline=d)))
+
+    def test_hagar_gen16_el_roi_not_ps23_pastoral_roi(self) -> None:
+        d,o=self.mutate("el-roi","baseline",0)
+        o["surface"]="אַתָּה יְהוָה רֹעִי"
+        self.assertTrue(any("Hagar/ElOlam/Isaiah9-10/YHWH hymn MT context changed" in err for err in self.check(baseline=d)))
+
+    def test_elolam_gen21_abraham_invoker_not_yhwh_speaker(self) -> None:
+        d,o=self.mutate("el-olam","baseline",0)
+        o["speaker"]="YHWH"
+        self.assertTrue(any("Hagar/ElOlam/Isaiah9-10/YHWH hymn MT context changed" in err for err in self.check(baseline=d)))
+
+    def test_elolam_gen21_invocation_not_new_beersheba_naming(self) -> None:
+        d,o=self.mutate("el-olam","baseline",0)
+        o["speechAct"]="place_naming"
+        self.assertTrue(any("Hagar/ElOlam/Isaiah9-10/YHWH hymn MT context changed" in err for err in self.check(baseline=d)))
+
+    def test_elolam_gen21_tetragrammaton_not_lost(self) -> None:
+        d,o=self.mutate("el-olam","baseline",0)
+        o["surface"]="אֵל עוֹלָם"
+        self.assertTrue(any("Hagar/ElOlam/Isaiah9-10/YHWH hymn MT context changed" in err for err in self.check(baseline=d)))
+
+    def test_isa9_child_naming_verb_not_erased(self) -> None:
+        d,o=self.mutate("el-gibbor","baseline",0)
+        o["nameDelimiter"]="none"
+        self.assertTrue(any("Hagar/ElOlam/Isaiah9-10/YHWH hymn MT context changed" in err for err in self.check(baseline=d)))
+
+    def test_isa9_context_dispute_not_pretend_solved(self) -> None:
+        d,o=self.mutate("el-gibbor","baseline",0)
+        o["contextualTitleSegmentation"]="ALL_TITLES_ONE_PERSON_CERTAIN"
+        self.assertTrue(any("Hagar/ElOlam/Isaiah9-10/YHWH hymn MT context changed" in err for err in self.check(baseline=d)))
+
+    def test_isa9_royal_child_named_object_retained(self) -> None:
+        d,o=self.mutate("el-gibbor","baseline",0)
+        o["namedObject"]="YHWH only no child"
+        self.assertTrue(any("Hagar/ElOlam/Isaiah9-10/YHWH hymn MT context changed" in err for err in self.check(baseline=d)))
+
+    def test_isa10_el_to_el_first_preposition_retained(self) -> None:
+        d,o=self.mutate("el-gibbor","baseline",1)
+        o["surface"]="אֵל גִּבּוֹר"
+        self.assertTrue(any("Hagar/ElOlam/Isaiah9-10/YHWH hymn MT context changed" in err for err in self.check(baseline=d)))
+
+    def test_isa10_remnant_return_to_god_not_royal_naming(self) -> None:
+        d,o=self.mutate("el-gibbor","baseline",1)
+        o["speechAct"]="royal_child_naming_formula"
+        self.assertTrue(any("Hagar/ElOlam/Isaiah9-10/YHWH hymn MT context changed" in err for err in self.check(baseline=d)))
+
+    def test_isa10_direct_divine_referent_guarantee(self) -> None:
+        d,o=self.mutate("el-gibbor","baseline",1)
+        o["contextualTitleSegmentation"]="INTERPRETIVE_DISPUTE"
+        self.assertTrue(any("Hagar/ElOlam/Isaiah9-10/YHWH hymn MT context changed" in err for err in self.check(baseline=d)))
+
+    def test_ex15_yhwh_song_moses_israel_not_divine_direct(self) -> None:
+        d,o=self.mutate("yhwh","baseline",2)
+        o["speaker"]="YHWH first person direct"
+        self.assertTrue(any("Hagar/ElOlam/Isaiah9-10/YHWH hymn MT context changed" in err for err in self.check(baseline=d)))
+
+    def test_ex15_yhwh_shemo_explicit_name_clause(self) -> None:
+        d,o=self.mutate("yhwh","baseline",2)
+        o["nameClaim"]="YHWH named by unknown king"
+        self.assertTrue(any("Hagar/ElOlam/Isaiah9-10/YHWH hymn MT context changed" in err for err in self.check(baseline=d)))
+
+    def test_ex15_yhwh_adjacency_to_yah_stays(self) -> None:
+        d,o=self.mutate("yhwh","baseline",2)
+        o["adjacentShortForm"]="none"
+        self.assertTrue(any("Hagar/ElOlam/Isaiah9-10/YHWH hymn MT context changed" in err for err in self.check(baseline=d)))
+
+    def test_hagar_elolam_isaiah_hymn_five_new_claims_remain_held(self) -> None:
+        expected={
+            "CLM-GEN16-13-HAGAR-YHWH-NAME-CALLING":"ATT-BASE-EL-ROI-01",
+            "CLM-GEN21-33-ABRAHAM-EL-OLAM-INVOCATION":"ATT-BASE-EL-OLAM-01",
+            "CLM-ISA9-5-ROYAL-NAME-EL-GIBBOR":"ATT-BASE-EL-GIBBOR-01",
+            "CLM-ISA10-21-REMNANT-TO-MIGHTY-GOD":"ATT-BASE-EL-GIBBOR-02",
+            "CLM-EX15-3-YHWH-NAME-IN-MOSES-ISRAEL-SONG":"ATT-BASE-YHWH-03",
+        }
+        for cid,att in expected.items():
+            r=next(x for x in self.claims["records"] if x["claimId"]==cid)
+            self.assertEqual([att],r["attestationIds"])
+            self.assertEqual("RESEARCH_HOLD",r["editorialState"])
+            self.assertEqual("BLOCKED",r["publicationState"])
+
+    def test_elroi_seeing_root_negative_control_not_shepherd(self) -> None:
+        d=copy.deepcopy(self.baseline)
+        r=next(x for x in d["records"] if x["id"]=="el-roi")
+        r["lexicalRoot"]="רעה"
+        self.assertTrue(any("El Roi Hagar root-seeing versus pastoral shepherd root boundary lost" in x for x in self.check(baseline=d)))
+
+    def test_isa9_primary_publisher_short_reading_not_replaced_by_expanded(self) -> None:
+        d=copy.deepcopy(self.baseline)
+        r=next(x for x in d["records"] if x["id"]=="el-gibbor")
+        r["printedGreekWitnesses"][0]["exactEditedPhrase"]="Θεὸς ἰσχυρός"
+        self.assertTrue(any("Isaiah9 printed shorter LXX versus unpinned Orthodox Greek readings boundary lost" in x for x in self.check(baseline=d)))
+
+    def test_isa9_unpinned_orthodox_reading_not_reclassified_as_manuscript(self) -> None:
+        d=copy.deepcopy(self.baseline)
+        r=next(x for x in d["records"] if x["id"]=="el-gibbor")
+        r["printedGreekWitnesses"][1]["criticalEditionCollated"]=True
+        self.assertTrue(any("Isaiah9 printed shorter LXX versus unpinned Orthodox Greek readings boundary lost" in x for x in self.check(baseline=d)))
+
+    def test_isa9_reception_remains_attributed_not_mythical_unanimity(self) -> None:
+        d=copy.deepcopy(self.claims)
+        r=next(x for x in d["records"] if x["claimId"]=="CLM-ISA9-5-ROYAL-NAME-EL-GIBBOR")
+        r["receptionStatus"]="CONSENSUS_ALL_TITLES_ONLY_OF_SAME_PERSON"
+        self.assertTrue(any("royal/reception/actor interpretation status changed" in x for x in self.check(claims=d)))
+
+    def test_isa9_reception_and_greek_sources_cannot_be_silent_deleted(self) -> None:
+        d=copy.deepcopy(self.claims)
+        r=next(x for x in d["records"] if x["claimId"]=="CLM-ISA9-5-ROYAL-NAME-EL-GIBBOR")
+        r["sourceIds"]=["SRC-MT-MECHON","SRC-RAHLFS-ISAIAH"]
+        self.assertTrue(any("Isaiah9 Greek/Jewish source distinctions removed" in x for x in self.check(claims=d)))
+
+    def test_hagar_name_and_abraham_place_semantic_edge_required(self) -> None:
+        d=copy.deepcopy(self.claims)
+        r=next(x for x in d["semanticRelations"] if x["relationId"]=="REL-HAGAR-ELROI-BEER-WELL")
+        r["relationType"]="CONTRASTS_SPEAKER_EVIDENCE"
+        self.assertTrue(any("required semantic boundary" in x for x in self.check(claims=d)))
+
+    def test_isaiah9_isaiah10_no_silent_referent_conflation(self) -> None:
+        d=copy.deepcopy(self.claims)
+        r=next(x for x in d["semanticRelations"] if x["relationId"]=="REL-EL-GIBBOR-ROYAL-VS-REMNANT")
+        r["relationType"]="CONTRASTS_REFERENT"
+        self.assertTrue(any("required semantic boundary" in x for x in self.check(claims=d)))
+
+    def test_exodus15_short_yah_and_yhwh_name_link_remains(self) -> None:
+        d=copy.deepcopy(self.claims)
+        r=next(x for x in d["semanticRelations"] if x["relationId"]=="REL-YHWH-YAH-EX15-HYMN")
+        r["relationType"]="CONTRASTS_SPEAKER_EVIDENCE"
+        self.assertTrue(any("required semantic boundary" in x for x in self.check(claims=d)))
+
 
 if __name__ == "__main__":
     unittest.main()

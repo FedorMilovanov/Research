@@ -727,6 +727,71 @@ YAH_REQUIRED_ATTRIBUTED_SOURCES = {
     "CLM-YAH-EX15-2-SUNG-ABBREVIATED-NAME": {"SRC-MT-MECHON","SRC-JBQ-YAH-2014"},
     "CLM-YAH-PS68-5-BET-NAME-CONJECTURE": {"SRC-MT-MECHON","SRC-NET-PS68","SRC-JBQ-YAH-2014"},
 }
+REQUIRED_ELROI_ELOLAM_GIBBOR_HYMN_CLAIMS = {
+    "CLM-GEN16-13-HAGAR-YHWH-NAME-CALLING",
+    "CLM-GEN21-33-ABRAHAM-EL-OLAM-INVOCATION",
+    "CLM-ISA9-5-ROYAL-NAME-EL-GIBBOR",
+    "CLM-ISA10-21-REMNANT-TO-MIGHTY-GOD",
+    "CLM-EX15-3-YHWH-NAME-IN-MOSES-ISRAEL-SONG",
+}
+# Independent printed MT observations; no ancient critical collation.
+ELROI_ELOLAM_GIBBOR_HYMN_GUARDS = {
+    "ATT-BASE-EL-ROI-01": {
+        "verse": "Genesis 16:13",
+        "surface": "אַתָּה אֵל רֳאִי",
+        "speaker": "Hagar",
+        "speechAct": "divine_name_invocation_and_direct_address",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt0116.htm",
+    },
+    "ATT-BASE-EL-OLAM-01": {
+        "verse": "Genesis 21:33",
+        "surface": "יְהוָה אֵל עוֹלָם",
+        "speaker": "Abraham",
+        "speechAct": "name_invocation",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt0121.htm",
+    },
+    "ATT-BASE-EL-GIBBOR-01": {
+        "verse": "Isaiah 9:5 MT (English 9:6)",
+        "surface": "אֵל גִּבּוֹר",
+        "narrativeSpeaker": "Isaiah, prophetic proclamation",
+        "speechAct": "royal_child_naming_formula",
+        "namedObject": "royal child in complex naming sequence",
+        "nameDelimiter": "וַיִּקְרָא שְׁמוֹ",
+        "contextualTitleSegmentation": "INTERPRETIVE_DISPUTE",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt1009.htm",
+    },
+    "ATT-BASE-EL-GIBBOR-02": {
+        "verse": "Isaiah 10:21",
+        "surface": "אֶל-אֵל, גִּבּוֹר",
+        "narrativeSpeaker": "Isaiah, prophecy on remnant",
+        "speechAct": "return_to_God",
+        "namedObject": "God of Israel",
+        "contextualTitleSegmentation": "DIRECT_DIVINE_REFERENT",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt1010.htm",
+    },
+    "ATT-BASE-YHWH-03": {
+        "verse": "Exodus 15:3",
+        "surface": "יְהוָה שְׁמוֹ",
+        "speaker": "Moses and Israel singing",
+        "speechAct": "hymnic_confession_of_divine_name",
+        "adjacentShortForm": "Exodus15:2 יָהּ",
+        "nameClaim": "יְהוָה שְׁמוֹ",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt0215.htm",
+    },
+}
+ELROI_ELOLAM_GIBBOR_INTERPRETATION_GUARDS = {
+    "CLM-GEN16-13-HAGAR-YHWH-NAME-CALLING": {"nameEvidenceStatus": "EXPLICIT_HAGAR_CALLS_YHWH_NAME_NOT_WELL_NAMING", "rootEvidenceStatus": "HEBREW_RAH_SEE_NOT_RA_AH_SHEPHERD"},
+    "CLM-GEN21-33-ABRAHAM-EL-OLAM-INVOCATION": {"nameEvidenceStatus": "ABRAHAM_CALLING_ON_YHWH_NOT_NEW_PLACE_NAME"},
+    "CLM-ISA9-5-ROYAL-NAME-EL-GIBBOR": {"nameEvidenceStatus": "ROYAL_CHILD_NAMING_SEQUENCE_ATTRIBUTION_OF_TITLES_DISPUTED", "greekWitnessStatus": "PUBLISHER_LXX_SHORTER_VS_UNPINNED_ORTHODOX_LONGER_NOT_MANUSCRIPT_PROOF", "receptionStatus": "RASHI_RADAK_AND_CHRISTIAN_READINGS_DISTINGUISHED"},
+    "CLM-ISA10-21-REMNANT-TO-MIGHTY-GOD": {"nameEvidenceStatus": "DIRECT_GOD_REFERENT_OF_REMNANT_RETURN_PREPOSITION_PRESERVED"},
+    "CLM-EX15-3-YHWH-NAME-IN-MOSES-ISRAEL-SONG": {"nameEvidenceStatus": "HUMAN_HYMN_CONFESSES_YHWH_NAME_NOT_GOD_DIRECT_SPEECH"},
+}
+ISA9_REQUIRED_ATTRIBUTED_SOURCES = {
+    "CLM-ISA9-5-ROYAL-NAME-EL-GIBBOR": {
+        "SRC-MT-MECHON", "SRC-RAHLFS-ISAIAH", "SRC-ORTHODOX-ISAIAH9",
+        "SRC-RASHI-ISAIAH9", "SRC-RADAK-ISAIAH9"
+    },
+}
 # The original reviewed seeds are a required minimum, not a cap on future work.
 # Additional claims must pass the same foreign-key, editorial and publication gates.
 ALLOWED_CLAIM_TYPES = {
@@ -868,6 +933,12 @@ REQUIRED_SEMANTIC_RELATIONS = {
     "REL-QEDOSH-REDEEMER-SABAOTH": ("CLM-QEDOSH-ISA47-4-REDEEMER-DOXOLOGY", "CLM-SABAOTH-ISA6-3-SERAPHIM-HYMN", "CONTRASTS_SPEAKER_EVIDENCE"),
     "REL-YAH-EX15-PS68-PREFIX": ("CLM-YAH-EX15-2-SUNG-ABBREVIATED-NAME", "CLM-YAH-PS68-5-BET-NAME-CONJECTURE", "CONTRASTS_GRAMMATICAL_FORM"),
     "REL-YAH-PS68-YHWH-SHORT-NAME": ("CLM-YAH-PS68-5-BET-NAME-CONJECTURE", "CLM-EX3-15-DIVINE-NAME", "LIMITS_INFERENCE"),
+    "REL-HAGAR-ELROI-BEER-WELL": ("CLM-GEN16-13-HAGAR-YHWH-NAME-CALLING", "CLM-GEN22-14-PLACE-NAME", "CONTRASTS_NAMED_OBJECT"),
+    "REL-HAGAR-ELROI-SHEPHERD-ROOT": ("CLM-GEN16-13-HAGAR-YHWH-NAME-CALLING", "CLM-PS23-YHWH-MY-SHEPHERD", "LIMITS_INFERENCE"),
+    "REL-EL-OLAM-NAME-PLACE": ("CLM-GEN21-33-ABRAHAM-EL-OLAM-INVOCATION", "CLM-GEN22-14-PLACE-NAME", "CONTRASTS_NAMED_OBJECT"),
+    "REL-ELROI-ELOLAM-SPEAKER": ("CLM-GEN16-13-HAGAR-YHWH-NAME-CALLING", "CLM-GEN21-33-ABRAHAM-EL-OLAM-INVOCATION", "CONTRASTS_SPEAKER_EVIDENCE"),
+    "REL-EL-GIBBOR-ROYAL-VS-REMNANT": ("CLM-ISA9-5-ROYAL-NAME-EL-GIBBOR", "CLM-ISA10-21-REMNANT-TO-MIGHTY-GOD", "CONTRASTS_NAMED_OBJECT"),
+    "REL-YHWH-YAH-EX15-HYMN": ("CLM-YAH-EX15-2-SUNG-ABBREVIATED-NAME", "CLM-EX15-3-YHWH-NAME-IN-MOSES-ISRAEL-SONG", "CONTRASTS_GRAMMATICAL_FORM"),
 }
 CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-EX3-15-DIVINE-NAME": {"ATT-BASE-YHWH-01"},
@@ -950,6 +1021,11 @@ CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-QEDOSH-ISA47-4-REDEEMER-DOXOLOGY": {"ATT-BASE-QEDOSH-YISRAEL-03"},
     "CLM-YAH-EX15-2-SUNG-ABBREVIATED-NAME": {"ATT-EXT-YAH-01"},
     "CLM-YAH-PS68-5-BET-NAME-CONJECTURE": {"ATT-EXT-YAH-02"},
+    "CLM-GEN16-13-HAGAR-YHWH-NAME-CALLING": {"ATT-BASE-EL-ROI-01"},
+    "CLM-GEN21-33-ABRAHAM-EL-OLAM-INVOCATION": {"ATT-BASE-EL-OLAM-01"},
+    "CLM-ISA9-5-ROYAL-NAME-EL-GIBBOR": {"ATT-BASE-EL-GIBBOR-01"},
+    "CLM-ISA10-21-REMNANT-TO-MIGHTY-GOD": {"ATT-BASE-EL-GIBBOR-02"},
+    "CLM-EX15-3-YHWH-NAME-IN-MOSES-ISRAEL-SONG": {"ATT-BASE-YHWH-03"},
 }
 
 
@@ -1020,6 +1096,10 @@ def validate_provenance(
                     continue
                 seen.add(aid)
                 att_by_id[aid] = obs
+                if aid in ELROI_ELOLAM_GIBBOR_HYMN_GUARDS:
+                    for field, expected in ELROI_ELOLAM_GIBBOR_HYMN_GUARDS[aid].items():
+                        if obs.get(field) != expected:
+                            errors.append(f"provenance: {aid} Hagar/ElOlam/Isaiah9-10/YHWH hymn MT context changed ({field})")
                 if aid in ADONAI_QEDOSH_YAH_CONTEXT_GUARDS:
                     for field, expected in ADONAI_QEDOSH_YAH_CONTEXT_GUARDS[aid].items():
                         if obs.get(field) != expected:
@@ -1193,6 +1273,31 @@ def validate_provenance(
         errors.append("provenance: required Daniel7/Revelation narrow claims missing")
     if not REQUIRED_ADONAI_QEDOSH_YAH_CLAIMS.issubset(claim_map):
         errors.append("provenance: required Adonai/Qedosh/Yah speech/name claims missing")
+    if not REQUIRED_ELROI_ELOLAM_GIBBOR_HYMN_CLAIMS.issubset(claim_map):
+        errors.append("provenance: required Hagar/ElOlam/Isaiah9-10/YHWH hymn claims missing")
+    for cid, requirements in ELROI_ELOLAM_GIBBOR_INTERPRETATION_GUARDS.items():
+        item=claim_map.get(cid,{})
+        for field, expected in requirements.items():
+            if item.get(field)!=expected:
+                errors.append(f"provenance: {cid} royal/reception/actor interpretation status changed ({field})")
+    for cid, sources in ISA9_REQUIRED_ATTRIBUTED_SOURCES.items():
+        if not sources.issubset(set(claim_map.get(cid,{}).get("sourceIds",[]))):
+            errors.append(f"provenance: {cid} Isaiah9 Greek/Jewish source distinctions removed")
+    roi_rows=[r for r in baseline.get("records",[]) if r.get("id")=="el-roi"]
+    if len(roi_rows)!=1 or roi_rows[0].get("lexicalRoot")!="ראה" or roi_rows[0].get("lexicalBoundary")!="NOT SAME ROOT AS YHWH_ROI_PASTORAL; א vs ע":
+        errors.append("provenance: El Roi Hagar root-seeing versus pastoral shepherd root boundary lost")
+    gibbor_rows=[r for r in baseline.get("records",[]) if r.get("id")=="el-gibbor"]
+    greek_pair=(gibbor_rows[0].get("printedGreekWitnesses",[]) if len(gibbor_rows)==1 else [])
+    if len(greek_pair)!=2 or not any(
+        item.get("exactEditedPhrase")=="Μεγάλης βουλῆς ἄγγελος"
+        and item.get("edition")=="Rahlfs-Hanhart 2006 (Deutsche Bibelgesellschaft)"
+        and item.get("criticalEditionCollated") is False for item in greek_pair
+    ) or not any(
+        item.get("exactEditedPhrase")=="Θεὸς ἰσχυρός"
+        and item.get("editionType")=="modern_orthodox_web_greek_reading"
+        and item.get("criticalEditionCollated") is False for item in greek_pair
+    ):
+        errors.append("provenance: Isaiah9 printed shorter LXX versus unpinned Orthodox Greek readings boundary lost")
     for cid, required_fields in ADONAI_QEDOSH_YAH_INTERPRETIVE_GUARDS.items():
         item=claim_map.get(cid,{})
         for field, expected in required_fields.items():
@@ -1345,8 +1450,8 @@ def main() -> int:
         for p in problems:
             print("FAIL: " + p, file=sys.stderr)
         return 1
-    print("PASS: 105 attestation IDs / 4 editions; 74 provisional claims, "
-          "59 relations, 8 Adonai/Qedosh/Yah original-text context controls and all publication HOLD gates")
+    print("PASS: 105 attestation IDs / 4 editions; 79 provisional claims, "
+          "65 relations, 5 Hagar/ElOlam/Isaiah9-10/Ex15 text-role controls and all publication HOLD gates")
     return 0
 
 

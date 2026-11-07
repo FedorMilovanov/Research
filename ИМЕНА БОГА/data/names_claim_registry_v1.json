@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "corpusId": "NAMES_OF_GOD_CLAIM_LEVEL_EVIDENCE",
   "createdAt": "2026-11-07",
-  "scope": "74 provisional research-held claims and 59 typed semantic relations, including Adonai prayer/vision/suffixed form, Qedosh prophetic/oracle/communal voices, and Yah printed MT vs NET conjecture. No source rights or scholarly/Product approval.",
+  "scope": "79 research-held source-linked provisional claims, 65 semantic relations, 96 of 105 attestation IDs linked, including Hagar explicit naming vs well, Abraham invoking El Olam vs place, Isaiah9 royal naming / Isaiah10 direct God, and Exodus15 YHWH hymn.",
   "editorialPolicy": "Never infer Product approval from link completeness, never replace a cited verse or alternative theory silently; new claims require independent review.",
   "records": [
     {
@@ -1712,6 +1712,128 @@
       ],
       "nameEvidenceStatus": "PRINTED_MT_BET_PREFIX_NOT_NET_HYPOTHETICAL_KI",
       "textualReconstructionStatus": "NET_CONJECTURE_NOT_ATTESTED_MT"
+    },
+    {
+      "claimId": "CLM-GEN16-13-HAGAR-YHWH-NAME-CALLING",
+      "claimType": "DIRECT_TEXTUAL_NAMING",
+      "attestationIds": [
+        "ATT-BASE-EL-ROI-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "statement": "Genesis 16:13 MT explicitly uses וַתִּקְרָא שֵׁם-יְהוָה regarding Hagar's calling the name of YHWH who spoke to her, and records her address אַתָּה אֵל רֳאִי. Thus naming/calling of the LORD genuinely occurs in verse 13, but the status of the entire phrase as a later fixed independent proper name is an interpretive question. The following Genesis 16:14 *separately* gives the name of the well Beer-lahai-roi; do not conflate named object, and do not confuse ראה seeing with רעה shepherding just because transliterations resemble 'Roi'.",
+      "nameEvidenceStatus": "EXPLICIT_HAGAR_CALLS_YHWH_NAME_NOT_WELL_NAMING",
+      "rootEvidenceStatus": "HEBREW_RAH_SEE_NOT_RA_AH_SHEPHERD",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independent original Hebrew textual-critical apparatus and full context not yet collated, digital edited displays only",
+        "Editorial interpretation of Hebrew royal-name clause and traditional Jewish/Christian reception remains disputed",
+        "Do not promote unpinned Greek web presentation to identified ancient manuscript variant; printed Rahlfs-Hanhart only",
+        "Check original-language source permissions, academic review and separate Product editorial gate"
+      ]
+    },
+    {
+      "claimId": "CLM-GEN21-33-ABRAHAM-EL-OLAM-INVOCATION",
+      "claimType": "NARRATIVE_SPEECH_VS_NAMING",
+      "attestationIds": [
+        "ATT-BASE-EL-OLAM-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "statement": "In Genesis 21:33 MT, Abraham plants a tree at Beer-sheba and calls there upon בְּשֵׁם יְהוָה, אֵל עוֹלָם, the name of YHWH El Olam, God everlasting. This is an act of calling on YHWH, not YHWH speaking first-person, and not a fresh naming of Beer-sheba (whose place naming context appears in Genesis 21:31). The temporal designation can be translated 'everlasting God' without claiming an independently verified full historical etymology of עוֹלָם.",
+      "nameEvidenceStatus": "ABRAHAM_CALLING_ON_YHWH_NOT_NEW_PLACE_NAME",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independent original Hebrew textual-critical apparatus and full context not yet collated, digital edited displays only",
+        "Editorial interpretation of Hebrew royal-name clause and traditional Jewish/Christian reception remains disputed",
+        "Do not promote unpinned Greek web presentation to identified ancient manuscript variant; printed Rahlfs-Hanhart only",
+        "Check original-language source permissions, academic review and separate Product editorial gate"
+      ]
+    },
+    {
+      "claimId": "CLM-ISA9-5-ROYAL-NAME-EL-GIBBOR",
+      "claimType": "CANONICAL_INTERTEXT_BOUNDARY",
+      "attestationIds": [
+        "ATT-BASE-EL-GIBBOR-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-RAHLFS-ISAIAH",
+        "SRC-ORTHODOX-ISAIAH9",
+        "SRC-RASHI-ISAIAH9",
+        "SRC-RADAK-ISAIAH9"
+      ],
+      "statement": "Isaiah 9:5 Hebrew MT (English 9:6) records אֵל גִּבּוֹר within the complex royal child-name phrase introduced by וַיִּקְרָא שְׁמוֹ. The verse names a child but grammatical division/which title is predicated of whom is disputed in Jewish (separately Rashi and Radak) and Christian reception. The publisher's Rahlfs-Hanhart LXX printed Isaiah 9:5 reads καλεῖται τὸ ὄνομα αὐτοῦ Μεγάλης βουλῆς ἄγγελος; a different unpinned Greek Orthodox web display includes Θεὸς ἰσχυρός. Distinguish these printed web presentations, do not infer a precise ancient Greek manuscript witness or universal LXX reading. The printed Hebrew name words remain visible independently of debated messianic identification.",
+      "nameEvidenceStatus": "ROYAL_CHILD_NAMING_SEQUENCE_ATTRIBUTION_OF_TITLES_DISPUTED",
+      "greekWitnessStatus": "PUBLISHER_LXX_SHORTER_VS_UNPINNED_ORTHODOX_LONGER_NOT_MANUSCRIPT_PROOF",
+      "receptionStatus": "RASHI_RADAK_AND_CHRISTIAN_READINGS_DISTINGUISHED",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independent original Hebrew textual-critical apparatus and full context not yet collated, digital edited displays only",
+        "Editorial interpretation of Hebrew royal-name clause and traditional Jewish/Christian reception remains disputed",
+        "Do not promote unpinned Greek web presentation to identified ancient manuscript variant; printed Rahlfs-Hanhart only",
+        "Check original-language source permissions, academic review and separate Product editorial gate"
+      ]
+    },
+    {
+      "claimId": "CLM-ISA10-21-REMNANT-TO-MIGHTY-GOD",
+      "claimType": "POSITIVE_REFERENT_CONTROL",
+      "attestationIds": [
+        "ATT-BASE-EL-GIBBOR-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "statement": "Isaiah 10:21 MT says a remnant of Jacob shall return אֶל-אֵל, גִּבּוֹר: the first אֶל- is the preposition 'to/unto' and אֵל, גִּבּוֹר refers to mighty God as the destination of the remnant's return. This is not Isaiah 9:5's royal child naming sequence; preserving both אֶל- and אֵל prevents reading it as two gods or flattening the direct divine referent into a child-name argument.",
+      "nameEvidenceStatus": "DIRECT_GOD_REFERENT_OF_REMNANT_RETURN_PREPOSITION_PRESERVED",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independent original Hebrew textual-critical apparatus and full context not yet collated, digital edited displays only",
+        "Editorial interpretation of Hebrew royal-name clause and traditional Jewish/Christian reception remains disputed",
+        "Do not promote unpinned Greek web presentation to identified ancient manuscript variant; printed Rahlfs-Hanhart only",
+        "Check original-language source permissions, academic review and separate Product editorial gate"
+      ]
+    },
+    {
+      "claimId": "CLM-EX15-3-YHWH-NAME-IN-MOSES-ISRAEL-SONG",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "attestationIds": [
+        "ATT-BASE-YHWH-03"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "statement": "Exodus 15:1–3 introduces the song of Moses and Israel. After the song's short יָהּ in verse 2, verse 3 says יְהוָה שְׁמוֹ, 'YHWH is his name', in a hymnic confession of YHWH as warrior. This is an explicit divine-name clause spoken by Moses and Israel in song, NOT a direct first-person naming revelation newly uttered by God; preserve the nearby short form Yah as related but nonidentical printed morphology.",
+      "nameEvidenceStatus": "HUMAN_HYMN_CONFESSES_YHWH_NAME_NOT_GOD_DIRECT_SPEECH",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independent original Hebrew textual-critical apparatus and full context not yet collated, digital edited displays only",
+        "Editorial interpretation of Hebrew royal-name clause and traditional Jewish/Christian reception remains disputed",
+        "Do not promote unpinned Greek web presentation to identified ancient manuscript variant; printed Rahlfs-Hanhart only",
+        "Check original-language source permissions, academic review and separate Product editorial gate"
+      ]
     }
   ],
   "semanticRelations": [
@@ -2185,6 +2307,54 @@
       "toClaimId": "CLM-EX3-15-DIVINE-NAME",
       "relationType": "LIMITS_INFERENCE",
       "rationale": "Yah is a shortened biblical name designation associated with YHWH; the common divine referent does not make an unrelated deity or settle the historical vocalization of the full tetragrammaton.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-HAGAR-ELROI-BEER-WELL",
+      "fromClaimId": "CLM-GEN16-13-HAGAR-YHWH-NAME-CALLING",
+      "toClaimId": "CLM-GEN22-14-PLACE-NAME",
+      "relationType": "CONTRASTS_NAMED_OBJECT",
+      "rationale": "Genesis16:13 Hagar explicitly calls YHWH's name, Genesis16:14 separately names a well; Genesis22:14 Abraham names a place, not a new divine utterance.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-HAGAR-ELROI-SHEPHERD-ROOT",
+      "fromClaimId": "CLM-GEN16-13-HAGAR-YHWH-NAME-CALLING",
+      "toClaimId": "CLM-PS23-YHWH-MY-SHEPHERD",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "El Roi Hagar seeing root ראה is distinct from psalm shepherd רעה; transliteration similarity is not common Hebrew etymology.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-EL-OLAM-NAME-PLACE",
+      "fromClaimId": "CLM-GEN21-33-ABRAHAM-EL-OLAM-INVOCATION",
+      "toClaimId": "CLM-GEN22-14-PLACE-NAME",
+      "relationType": "CONTRASTS_NAMED_OBJECT",
+      "rationale": "Abraham calls YHWH El Olam's name in Genesis21:33; Gen22:14 explicitly names a different place, showing naming-object difference.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-ELROI-ELOLAM-SPEAKER",
+      "fromClaimId": "CLM-GEN16-13-HAGAR-YHWH-NAME-CALLING",
+      "toClaimId": "CLM-GEN21-33-ABRAHAM-EL-OLAM-INVOCATION",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Hagar addresses/calls YHWH in Gen16:13; Abraham invokes YHWH in Gen21:33. Distinct speakers/context, not two YHWH self-speeches.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-EL-GIBBOR-ROYAL-VS-REMNANT",
+      "fromClaimId": "CLM-ISA9-5-ROYAL-NAME-EL-GIBBOR",
+      "toClaimId": "CLM-ISA10-21-REMNANT-TO-MIGHTY-GOD",
+      "relationType": "CONTRASTS_NAMED_OBJECT",
+      "rationale": "Isa9:5 child-naming context with disputed allocation of titles differs from Isa10:21 clear God-referent in remnant's return, not a proof deciding all Isa9 messianic questions.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-YHWH-YAH-EX15-HYMN",
+      "fromClaimId": "CLM-YAH-EX15-2-SUNG-ABBREVIATED-NAME",
+      "toClaimId": "CLM-EX15-3-YHWH-NAME-IN-MOSES-ISRAEL-SONG",
+      "relationType": "CONTRASTS_GRAMMATICAL_FORM",
+      "rationale": "Ex15:2 יָהּ and Ex15:3 יְהוָה שְׁמוֹ are adjacent short/full divine designations in same hymn; neither creates a separate god or two direct divine self naming acts.",
       "publicationState": "BLOCKED"
     }
   ]

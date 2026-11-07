@@ -20,15 +20,15 @@
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 16,
-    "provenanceRegressionTests": 259,
+    "provenanceRegressionTests": 283,
     "canonicalEditions": 4,
-    "curatedClaims": 74,
+    "curatedClaims": 79,
     "allAttestationForeignKeys": 105,
     "editionSpecificGreekUrlsVerified": 21,
     "unselectedGreekEditionUrls": 0,
-    "attestationsReferencedByClaims": 91,
-    "attestationsWithoutClaimReference": 14,
-    "typedClaimRelations": 59,
+    "attestationsReferencedByClaims": 96,
+    "attestationsWithoutClaimReference": 9,
+    "typedClaimRelations": 65,
     "correctedExodusDivineReferentRows": 3,
     "semanticScopeAudits": 15,
     "independentScholarlyClaimApprovals": 0,
@@ -49,7 +49,8 @@
     "shaddaiSabaothSpeakerGuards": 8,
     "elyonQannaSpeakerNameGuards": 6,
     "danielRevelationDiscourseGuards": 6,
-    "adonaiQedoshYahContextGuards": 8
+    "adonaiQedoshYahContextGuards": 8,
+    "hagarOlamGibborHymnGuards": 5
   },
   "allowedStatuses": [
     "DONE",
@@ -239,9 +240,13 @@
         "27_ADONAI_QEDOSH_YAH_SPEAKER_MORPHOLOGY_AUDIT_20261107.md: direct printed MT Ex34:9, Isa6:1, Ps8:2, Isa1:4,43:3,47:4, Ex15:2 and Ps68:5; Gen23 human adoni negative control",
         "data/names_claim_registry_v1.json: 8 new research-held claims linking 8 old source/edition-stable attestationId, 7 typed semantic boundaries",
         "validate_names_provenance.py: eight independent original-form and speaker guards including Genesis23 human honorific, NET Ps68 conjecture vs MT bet prefix/source",
-        "test_validate_names_provenance.py: 259 provenance tests; 26 new positive/adversarial checks"
+        "test_validate_names_provenance.py: 259 provenance tests; 26 new positive/adversarial checks",
+        "28_HAGAR_EL_OLAM_ISH9_10_AND_EX15_NAME_20261107.md: Gen16:13 Hagar explicitly calls YHWH's name vs v14 well; Gen21:33 Abraham invokes YHWH El Olam vs v31 place; Isa9:5 royal child title and printed publisher LXX vs unpinned Orthodox variant, Isa10:21 clear God referent; Ex15:3 sung YHWH His name",
+        "data/names_claim_registry_v1.json: 5 provisional source-bound claims and 6 typed relations covering 5 prior unlinked records",
+        "validate_names_provenance.py: 5 independent printed MT speech/name locks, El Roi seeing versus shepherd negative control, two digital Greek Isaiah9 source status locks, attributed Rashi/Radak source preservation",
+        "test_validate_names_provenance.py: 24 new positive/adversarial tests, total 283 provenance tests"
       ],
-      "verification": "105_STABLE_ATTESTATION_SOURCE_EDITION_FK; 48_SOURCES; 74_RESEARCH_HELD_CLAIMS; 59_TYPED_RELATIONS; 91_OF_105_CLAIM_LINKED; 14_WITHOUT_CLAIM; 8_NEW_CONTEXT_GUARDS_AND_ADONI_HUMAN_NEGATIVE_CONTROL; 440_CI_TESTS_EXPECTED; CRITICAL_COLLATIONS_0; PRODUCT_APPROVALS_0",
+      "verification": "105_STABLE_ATTEST_SOURCE_EDITION; 48_SOURCES; 79_RESEARCH_HELD_CLAIMS; 65_TYPED_RELATIONS; 96_OF_105_CLAIM_LINKED; 9_UNLINKED; 5_GUARDS; 464_TESTS_EXPECTED_EXACT_SHA_CI; CRITICAL_COLLATIONS_0; PRODUCT_APPROVALS_0",
       "closureAt": null,
       "owner": "Research editorial"
     },
@@ -640,7 +645,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NG-02: 14 of 105 attestation IDs have source/edition links but no bounded independent claim, not evidence FK breakage. Next bounded waves: prose and poetic YHWH uses (Ex15:3, Gen21:33, Gen16:13), El Gibbor Isa9:5 MT and Isa10:21, remaining extension one-off divine attributes and Rev/John intertext. Do NOT force zero by creating unreviewed claims. The 55 historic missing locusIds need compatible consumer schema and migration checks; original-language scholarly collation and Product release signoffs remain separate.",
+  "nextAction": "NG-02: exactly 9/105 attestationIds remain without bounded research claims, all edition/source stable: Deut32:15 Eloah, Dan2:18-19 Elah Shmaya, Ps42:3 living God, Isa63:16 Our Father, Ps27:1 YHWH my light, Deut32:4 God of faithfulness, Ex34:6 merciful and gracious God, John11:25 Resurrection and Life. Group by direct prayer/poetry/Aramaic address/Greek Christology; do not force 9 into one unjustified claim. 55 historic missing locusIds require compatibility review; critical manuscripts and Product rights approvals remain incomplete.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -722,7 +727,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-07",
-    "planStatus": "NG-01 DONE; NG-02 IN_PROGRESS: 74 provisional claims, 59 relations, 91/105 linked",
+    "planStatus": "NG-01 DONE; NG-02 IN_PROGRESS: 79 research-held claims, 65 semantic relations, 96/105 claim linked",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -780,14 +785,19 @@
       "Adonai in Moses' double prayer (Ex34:9), prophetic Isaiah6 vision object, Psalm8 adoneinu suffix; Genesis23 human honorific adoni independent adversarial control",
       "Qadosh of Israel Isa1 prophetic accusation, Isa43 direct YHWH self speech, Isa47 Redeemer/YHWH Sabaoth communal/literary attribution unresolved",
       "Yah abbreviated divine name in Ex15 song and prefixed bet Yah Ps68:5 MT (English68:4), NET hypothetical ki alternative attributed and rights held",
-      "8 source-bound claims, 7 required links, 8 observation guards, 26 new positive/negative tests"
+      "8 source-bound claims, 7 required links, 8 observation guards, 26 new positive/negative tests",
+      "Gen16 Hagar calls name of YHWH with El Roi, separate v14 well and unrelated shepherd root; Gen21 Abraham invokes YHWH El Olam not place naming",
+      "Isaiah9 child naming includes El Gibbor, exact title attribution disputed, Rahlfs publisher LXX 'Messenger of Great Counsel' contrasted with unpinned Orthodox expanded Greek display; Isaiah10:21 direct God return with two separate el terms",
+      "Exodus15:3 Moses/Israel sing YHWH His name immediately after abbreviated Yah verse2, not a divine direct self-revelation",
+      "5 new provisional claims, 6 typed links, 5 guards, 24 new adversarial tests; 96/105 linked"
     ],
     "stillOpen": [
-      "NG-02: 14 of 105 original attestation IDs without narrow research claim links; source/edition FKs complete",
-      "55 old missing locusId need explicit backward-compatible consumer policy; no invented IDs",
-      "Isa47:4 literary speech agency remains open, NET Ps68 conjecture and rights are unapproved",
-      "Original-language textual collation and independent academic review not completed; Product publication blocked on all 74 claims",
-      "Check exact GitHub SHA all CI and 440 tests before calling wave structurally green"
+      "NG-02: 9 original source/edition-linked attestationIds still without separately reviewed claim links",
+      "55 historic missing locusId fields need backward compatible migration planning, not invented values",
+      "Isaiah9 royal title segmentation, Jewish and Christian receptions, ancient LXX Greek textual apparatus remain contested and not fully collated",
+      "El Roi Hagar lexical question and original-language textual apparatus not independently checked for variants",
+      "0 independent scholarly signoffs or Product rights approvals, all 79 research-only claims publication blocked",
+      "Run exact GitHub SHA CI to validate 464 tests before declaring structurally green"
     ]
   },
   "originalResearchCheckpoint": {
@@ -804,14 +814,14 @@
       "sourceForeignKeys": 105,
       "editionForeignKeys": 105,
       "canonicalEditions": 4,
-      "curatedClaims": 74,
+      "curatedClaims": 79,
       "locusIdMissingHistorically": 55,
       "editionSelectionRecheckHolds": 0,
-      "notes": "Ex34:9 Adonai twice Moses prayer; Isa6:1 object of vision; Ps8:2 YHWH adoneinu distinct. Isa1:4 Holy One rejection, Isa43:3 divine self oracle, Isa47:4 Redeemer community/uncertain voice. Yah Ex15:2 song versus Ps68:5 printed בְּיָהּ and NET conjectural כי. 91/105 linked. 0 Product approval.",
-      "typedClaimRelations": 59,
+      "notes": "Genesis16:13 Hagar explicitly calls YHWH's name distinct from Gen16:14 well; Gen21:33 Abraham invokes YHWH El Olam distinct from Beer-sheba naming v31; Isa9:5 royal child-name with disputed title distribution vs Isa10:21 direct divine recipient with el preposition; Rahlfs Greek publisher shorter wording vs unpinned Orthodox expanded online text not manuscript proof; Ex15:3 Moses/Israel song has YHWH shemo next to Yah v2. 96/105 linked.",
+      "typedClaimRelations": 65,
       "editionSpecificDigitalVerseRechecksCompleted": 21,
-      "attestationsLinkedToClaims": 91,
-      "attestationsWithoutClaimReferences": 14,
+      "attestationsLinkedToClaims": 96,
+      "attestationsWithoutClaimReferences": 9,
       "divineReferentAddresseeControls": 3,
       "semanticScopeAudits": 15,
       "scholarlyClaimApprovals": 0,
@@ -829,7 +839,8 @@
       "shaddaiSabaothSpeakerGuards": 8,
       "elyonQannaSpeakerNameGuards": 6,
       "danielRevelationDiscourseGuards": 6,
-      "adonaiQedoshYahContextGuards": 8
+      "adonaiQedoshYahContextGuards": 8,
+      "hagarOlamGibborHymnGuards": 5
     }
   }
 }
