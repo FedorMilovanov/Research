@@ -675,7 +675,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "Two bounded deliverables only: NG-03 still IN_PROGRESS semantic supersession dossiers 01-10; CH-PILOT-01 has undergone one internal adversarial edit, next INDEPENDENT reader/editorial review of SAME FILE. DO NOT create another dossier/chapter or expand systematic bibliography without a concrete claim gap. No print-rights/academic/manuscript or Product status promotion.",
+  "nextAction": "Keep two bounded deliverables: NG-03 historical/current semantic supersession dossiers 01-10; CH-PILOT-01 now internally edited twice, obtain EXTERNAL independent theology/philology/editorial appraisal of same file before editorial acceptance. No further general bibliography, duplicate dossier, critical edition claims or Product promotion.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -757,7 +757,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-08",
-    "planStatus": "NG-02 structurally DONE; NG-03 IN_PROGRESS; CH-PILOT-01 REVISED DRAFT with INTERNAL_ADVERSARIAL_EDIT_DONE / independent review pending. No scholarly/rights/Product approval.",
+    "planStatus": "NG-02 structural DONE; NG-03 IN_PROGRESS; CH-PILOT-01 revised with 2 internal editorial passes including Gen16 direct naming contrast; external independent peer review, rights and Product remain blocked.",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -835,7 +835,8 @@
       "2026-11-08: NG-02 graph-only closure from exact 6/6 CI ff6199a, 105/105 FKs, 50 immutable legacy inline IDs and 55 intentionally absent inline keys; external Arena/rights/scientific gates unchanged.",
       "2026-11-08: Started NG-03 historical/current supersession review and bounded systematic Gill/Berkhof/Bavinck intake for one reader pilot, with stop-discovery criterion.",
       "2026-11-08: Wrote a single ~2400-word connected CH-PILOT-01 reader manuscript with separate source/rights critical appendix; checked Exodus 3, 34, 15, Genesis 22, Judges 6, Psalm 23 primary digital Hebrew and selected Gill/Berkhof/Bavinck secondary passages. Await independent adversarial editorial review, no publish.",
-      "2026-11-08: Internal adversarial edit on existing CH-PILOT-01: verified Ex3 angel/narrator, Ex34 ambiguous v5 verb and named God v6, Gen22 place vs altar, Judg6 altar vs spoken peace, Ex15:26 conditional healer context, Ps23:1/3 metaphor/name, Gill cites Zanchius, Berkhof/Bavinck self-revelation category and Gen1:1 Elohim singular verb negative control. No new files, source registry count unchanged, independent peer review still pending."
+      "2026-11-08: Internal adversarial edit on existing CH-PILOT-01: verified Ex3 angel/narrator, Ex34 ambiguous v5 verb and named God v6, Gen22 place vs altar, Judg6 altar vs spoken peace, Ex15:26 conditional healer context, Ps23:1/3 metaphor/name, Gill cites Zanchius, Berkhof/Bavinck self-revelation category and Gen1:1 Elohim singular verb negative control. No new files, source registry count unchanged, independent peer review still pending.",
+      "2026-11-08: SECOND internal editor-source review of existing reader pilot: added Gen16:13 Hagar DIRECTLY names/invokes God contrasting separately named well Gen16:14, disputed 'sees me/I see' NET nuance, deleted redundant Ex3:14 sentence; separately checked Gill, Berkhof and Bavinck original accessible HTML sections. Independent scientific peer review NOT obtained."
     ],
     "stillOpen": [
       "External Product/Arena consumers and zip prototypes still NOT independently authenticated by exact deployment/build; no dual-read v2 test witness",
@@ -908,7 +909,7 @@
   "editorialExecution": {
     "asOf": "2026-11-08",
     "owner": "ИМЕНА БОГА/11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md §0a/§3b",
-    "state": "READER_MANUSCRIPT_REVISED_INTERNAL_ADVERSARIAL_EDIT_DONE_EXTERNAL_REVIEW_PENDING",
+    "state": "READER_MANUSCRIPT_REVISED_TWO_INTERNAL_EDITORIAL_PASSES_EXTERNAL_PEER_REVIEW_PENDING",
     "readerChapterCountApproved": null,
     "subjectDirectionsProvisional": 14,
     "readerManuscriptsAccepted": 0,
@@ -924,10 +925,10 @@
         "kind": "READER_MANUSCRIPT_PILOT",
         "target": "What does Scripture mean by the name of God?",
         "acceptance": "One continuous readable manuscript distinguishing God's revealed name, proper name, title, attribute, predicate and named object, primary verses, one strong alternative, and evidence/rights limitations.",
-        "status": "RESEARCH_MANUSCRIPT_REVISED_INTERNAL_ADVERSARIAL_EDIT_DONE_INDEPENDENT_REVIEW_PENDING_NOT_EDITORIAL_READY",
+        "status": "RESEARCH_MANUSCRIPT_REVISED_INTERNAL_EDITORIAL_PASS_2_DONE_EXTERNAL_PEER_REVIEW_PENDING_NOT_EDITORIAL_READY",
         "file": "ИМЕНА БОГА/reader/CH-PILOT-01_WHAT_SCRIPTURE_CALLS_GODS_NAME.md",
-        "verification": "10_FACTUAL_REVIEW_POINTS_FIXED_WITH_DIGITAL_MT_GILL_BERKHOF_BAVINCK_AND_NET_NOT_INDEPENDENT_PEER_REVIEW",
-        "nextReview": "Independent reviewer to assess manuscript's rhythm, theological objections, attributed Exod34:5 speaker ambiguity, exact print editions and permissions; no additional systematic book without explicit gap."
+        "verification": "10_FACTUAL_REVIEW_POINTS_FIXED_WITH_DIGITAL_MT_GILL_BERKHOF_BAVINCK_AND_NET_NOT_INDEPENDENT_PEER_REVIEW; SECOND_EDITORIAL_SOURCE_CHECK_GEN16_13_14_HAGAR_DIRECT_NAME_VS_WELL_AND_EX3_14_REDUNDANCY_FIX",
+        "nextReview": "External independent domain reviewer needed for biblical languages, systematic-theology attribution, book editions and rights; current assistant's second source check is NOT external independent peer review. Preserve 0 scientific approvals."
       }
     ],
     "nextChapterCandidates": [
@@ -938,7 +939,8 @@
     "sourcePolicy": "SECONDARY_B1_AUTHOR_ATTRIBUTED_NOT_CRITICAL_WITNESS",
     "publicationGate": "ALL_PRODUCT_RIGHTS_SCHOLARLY_HOLDS_REMAIN",
     "readerManuscriptsDrafted": 1,
-    "internalAdversarialPasses": 1
+    "internalAdversarialPasses": 2,
+    "independentScholarlyReviewsAccepted": 0
   },
   "systematicTheologyTriage": {
     "asOf": "2026-11-08",
