@@ -723,7 +723,7 @@
       "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "PERMISSION_REQUIRED",
       "sourceObjectState": "Publisher's full digital Exodus17 chapter visible, both 17:15 κύριός μου καταφυγή and 17:16 ἐν χειρὶ κρυφαίᾳ verified by direct reading; no manuscript variants collated",
-      "supportedUse": "Distinguish altar name refuge in Rahlfs-Hanhart Ex17:15 from MT banner and Greek secret-hand clause 17:16 from MT difficult hand/throne phrase",
+      "supportedUse": "Publisher's exact Greek altar name Κύριός μου καταφυγή (Lord my refuge), Exodus 17:15, distinct from MT יְהוָה נִסִּי (YHWH my banner); 17:16 ἐν χειρὶ κρυφαίᾳ contrasted with MT כִּי-יָד עַל-כֵּס יָהּ. Direct comparison of edited digital reading surfaces only, not independent manuscript collation.",
       "forbiddenUse": "Assert different ancient Hebrew Vorlage without inspecting witnesses; claim publisher's copyrighted LXX Greek text CC BY by analogy with SBLGNT; equate the two Greek/Hebrew expressions etymologically",
       "evidenceClass": "B1",
       "publicationState": "BLOCKED",
@@ -732,7 +732,11 @@
         "EVIDENCE_HOLD",
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
-      ]
+      ],
+      "exactGreekNames": {
+        "Exodus17_15": "Κύριός μου καταφυγή",
+        "Exodus17_16": "ἐν χειρὶ κρυφαίᾳ"
+      }
     },
     {
       "id": "SRC-NET-EXODUS17",
@@ -806,12 +810,9 @@
   ],
   "auditRevision": {
     "date": "2026-11-07",
-    "newSources": [
-      "SRC-RAHLFS-EXODUS17",
-      "SRC-NET-EXODUS17",
-      "SRC-NET-GENESIS22",
-      "SRC-SBLGNT-JOHN10"
+    "correctedSources": [
+      "SRC-RAHLFS-EXODUS17"
     ],
-    "rationale": "Memorial place/altar vs divine self predications, publisher LXX divergence, attributed translator note on conjectural emendation, copyright separated."
+    "rationale": "CI required exact Greek lemma καταφυγή in the source's supported-use evidence; fixed provenance record, not validation logic."
   }
 }
