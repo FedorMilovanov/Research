@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 163,
+  "sourceCount": 165,
   "sources": [
     {
       "id": "REF-P01",
@@ -250,7 +250,7 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://germanhistorydocs.org/en/from-the-reformations-to-the-thirty-years-war-1500-1648/ghdi:document-4311",
-      "verificationNote": "GHDI translated Articles 5-7,10,14,15 inspected; WA 30/3:160-171 and translator Ellen Yutzy Glebe identified; signed manuscript not collated",
+      "verificationNote": "GHDI translated Articles 5-7,10,14,15 inspected; WA 30/3:160-171 and translator Ellen Yutzy Glebe identified; signed manuscript not collated CHECKPOINT 2026-11-07: entire GHDI English presentation of all 15 Marburg Articles and all 10 signatories read; Articles 5-8,10-15 checked. Article 9's bracketed Matthew 28:15 verse pointer is editorially erroneous for Great Commission 'go baptize' (Matthew 28:19); do not repeat. Translation according to WA 30/3 pp160-171; does not elevate full historical 1529 German manuscript access; status PARTIAL_OBJECT remains.",
       "checkedAt": "2026-11-04"
     },
     {
@@ -3194,6 +3194,42 @@
       "url": "https://jps.library.utoronto.ca/index.php/renref/article/view/11429",
       "checkedAt": "2026-11-07",
       "verificationNote": "Official journal HTML metadata/abstract DIRECTLY READ. Historical research article on 29 January 1523 disputation: Zwingli and Bishop of Constance's vicar Johann Faber argued over eucharistic sacrifice; Faber's case included scholastic and other doctrinal authorities; polemical atmosphere prevented clarity. Article issue-year and online publish date metadata can differ: online page published 2009-01-20; no assumption the paper was originally written/published in 2009 print. FULL ARTICLE BODY NOT READ. No original Faber text or purported transcript collated. Scholarly B1 abstract cannot ground a literal quote or prove exact words, triumph or each participant's motives; REF-P55 Hegenwald partisan printed witness has different evidentiary level. Archive/rights/publication HOLDs kept."
+    },
+    {
+      "id": "REF-P73",
+      "documentYear": 1529,
+      "title": "Andreas Osiander, eyewitness report of Marburg Colloquy to the Nuremberg council, GHDI English translation of WA 30/3:144-151",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://germanhistorydocs.org/en/from-the-reformations-to-the-thirty-years-war-1500-1648/ghdi:document-4284",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Complete GHDI English translation read; original report is 1529 participant-created primary testimony, translation Ellen Yutzy Glebe after WA 30/3 (1910) pp144-151, not direct collation of German original. Osiander sided with Luther, wrote to Nuremberg council, arrived after some opening conversations (reports earliest parts secondhand); chalk scene, John 6:63 and corporeal presence argument, limited brotherhood and signature process are his PARTICIPANT NARRATIVE, not neutral court transcript. Do not treat his claimed victory, opponents' motives, or alleged renunciations as independent proven facts. Rights/archives/publication HOLD remain."
+    },
+    {
+      "id": "REF-P74",
+      "documentYear": 1529,
+      "title": "Huldrych Zwingli to Joachim Vadian, 20 October 1529, GHDI English rendering from Latin original via Samuel M. Jackson 1901 pp319-322",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://germanhistorydocs.org/en/from-the-reformations-to-the-thirty-years-war-1500-1648/ghdi:document-4300",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Complete GHDI English text directly read; Zwingli personal letter of 20 Oct 1529 to Joachim Vadian, translated from Latin in Jackson ed. 1901 pp319-322 and edited by GHI. Participant asserts own success and Philip of Hesse privately agreeing, but this is SELF-PRESENTATION, not independently established outcome. Private Melanchthon/Zwingli and Luther/Oecolampadius meetings and later joint colloquies described from this partisan perspective. Original 1529 Latin autograph not read/compared; English text not literal original quotation. Archive/rights/publication HOLD remain."
     }
   ]
 }
