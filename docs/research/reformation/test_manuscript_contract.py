@@ -55,7 +55,7 @@ class ReformationManuscriptTests(unittest.TestCase):
                        "амилленарист", "постмилленарист", "Откр. 20",
                        "1 Кор. 15", "глава 32", "глава 31"):
             self.assertIn(marker.lower(), s.lower())
-        self.assertNotRegex(epilogue.name, r"^episode\\d{2}_")
+        self.assertNotRegex(epilogue.name, r"^episode\d{2}_")
         for name in ("README.md", "04_series_blueprint.md",
                      "SELF_PLAN.md", "episode12_reformation_everyday_life_1520_1600_manuscript.md"):
             self.assertIn(epilogue.name,(HERE/name).read_text(encoding="utf-8"))
@@ -74,7 +74,7 @@ class ReformationManuscriptTests(unittest.TestCase):
         self.assertIn("NOT_EDITORIAL_READY", intro)
         self.assertIn("NOT_EDITORIAL_READY", ch1)
         # Editor moves evidence, not the historic witness or numbered concordance.
-        self.assertIn("Сохранён",a[1])
+        self.assertIn("Маркион",a[1])
         for marker in ("Kalliope", "Theodor Dieter", "### Досье к октябрю",
                        "| Стандартный №", "95 тезисов"):
             self.assertIn(marker,b[1])
