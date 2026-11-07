@@ -17,7 +17,7 @@ class Luther1517WormsEditorialTests(unittest.TestCase):
     def test_ch02_instruction_does_not_erase_papal_intercession_or_thesis35(self):
         s = self.two
         reader, apparatus = s.split("## Источниковедческий аппарат", 1)
-        for marker in ("первой", "тезис 35", "тезис 26", "тезис 28",
+        for marker in ("первой", "тезис 35", "тезисе 26", "тезис 28",
                        "тезис 71", "тезис 72", "не", "сокрушени",
                        "Kidd", "REF-P01"):
             with self.subTest(marker=marker):

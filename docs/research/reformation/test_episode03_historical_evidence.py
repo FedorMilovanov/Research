@@ -53,7 +53,9 @@ class Episode03HistoricalEvidenceTests(unittest.TestCase):
     def test_publication_hold_and_precise_edict_dates(self):
         text = self.manuscript
         self.assertTrue(text.startswith("# Эпизод 03."))
-        self.assertIn("RESEARCH_MANUSCRIPT_DRAFT / PUBLICATION_HOLD", text)
+        self.assertIn("RESEARCH_MANUSCRIPT_DRAFT", text)
+        self.assertIn("NOT_EDITORIAL_READY", text)
+        self.assertIn("PUBLICATION_HOLD", text)
         for expected in ("8 мая", "12 мая", "25 мая", "26 мая",
                          "15 июня", "3 января", "VD16 L3759", "VD16 L4189",
                          "REG. E 81", "REF-P63", "REF-S72"):
