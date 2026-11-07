@@ -379,6 +379,12 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-BARR-ABBA-1988": "ATTRIBUTED_ABBA_LEXICAL_CRITIQUE_CATALOG_ONLY",
     "SRC-JBQ-YAH-2014": "ATTRIBUTED_SECONDARY_YAH_NAME_USAGE_AND_TRANSLATION_HISTORY",
     "SRC-NET-PS68": "ATTRIBUTED_PS68_HEBREW_BET_OR_CONJECTURAL_KI",
+    "SRC-SBLGNT-DIGITAL-NT": "GREEK_NT_EDITION_CORPUS_LEVEL_TEXT_WITNESS",
+    "SRC-TMSJ-VALDIZAN-EX3-2024": "ATTRIBUTED_EXODUS3_DIVINE_NAME_TRANSLATION_2024",
+    "SRC-TMSJ-VALDIZAN-ACTS2-2024": "ATTRIBUTED_ACTS2_YHWH_KYRIOS_CHRISTOLOGY_2024",
+    "SRC-TMSJ-CHOU-TRANSLATION-2024": "ATTRIBUTED_TRANSLATION_FORMAL_EQUIVALENCE_THEOLOGY_2024",
+    "SRC-TMSJ-BARRICK-TRANSLATION-2024": "ATTRIBUTED_BIBLICAL_TRANSLATION_NEHEMIAH8_2024",
+    "SRC-TMSJ-CHOU-DANIEL-2024": "ATTRIBUTED_DANIEL7_CHRISTOLOGY_JOURNAL_CATALOG_2024",
 }
 
 
@@ -506,6 +512,34 @@ def validate_source_access(sources: dict) -> list[str]:
                 source.get("evidenceClass") != "B1" or
                 "כִּי יָהּ שְׁמוֹ" not in str(source.get("supportedUse", ""))):
                 errors.append(f"{prefix}: conjectural NET Psalm68 ki Yah must be attributed, not substituted for MT")
+        if rid == "SRC-SBLGNT-DIGITAL-NT":
+            if (source.get("rightsState") != "RIGHTS_UNKNOWN" or
+                source.get("accessState") != "PARTIAL_OBJECT" or
+                source.get("criticalEditionCollated") is not False):
+                errors.append(f"{prefix}: SBLGNT hosted Greek verse rights cannot inherit publisher license or manuscript authority")
+        if rid.startswith("SRC-TMSJ-"):
+            if (source.get("year") != 2024 or
+                source.get("rightsState") != "PERMISSION_REQUIRED" or
+                source.get("criticalEditionCollated") is not False or
+                source.get("publicationState") != "BLOCKED"):
+                errors.append(f"{prefix}: TMSJ 2024 article copyright or source status falsely promoted")
+            if source.get("licenseScope") is None or "permission" not in str(source.get("licenseScope", "")).lower():
+                errors.append(f"{prefix}: original TMSJ permission terms not recorded")
+        if rid == "SRC-TMSJ-VALDIZAN-EX3-2024":
+            if (source.get("printedPages") != "53–74" or
+                source.get("pdfStartPageZeroBased") != 54 or
+                source.get("accessState") != "PARTIAL_OBJECT"):
+                errors.append(f"{prefix}: Valdizan Exodus3 title page not full article review")
+        if rid == "SRC-TMSJ-VALDIZAN-ACTS2-2024":
+            if (source.get("printedPages") != "257–272" or
+                source.get("pdfStartPageZeroBased") != 109 or
+                source.get("accessState") != "PARTIAL_OBJECT"):
+                errors.append(f"{prefix}: Valdizan Acts2 reviewed title page claim overreached")
+        if rid == "SRC-TMSJ-CHOU-DANIEL-2024" and (
+            source.get("accessState") != "CATALOG_ONLY" or
+            source.get("locatorState") != "COARSE_LOCATOR_ONLY"
+        ):
+            errors.append(f"{prefix}: Chou Daniel paper cannot claim full read on publisher table of contents")
         if rid == "SRC-SUCHARD-ELOHIM-2025":
             if (source.get("evidenceClass") != "B1" or
                 source.get("rightsState") != "PUBLICATION_ELIGIBLE" or
