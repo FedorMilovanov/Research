@@ -412,7 +412,7 @@ def validate_source_access(sources: dict) -> list[str]:
         if rid == "SRC-DANIEL-ARAMAIC" and (source.get("sourceRole") != "ARAMAIC_TEXT_SURFACE_ONLY"
             or source.get("accessState") != "PARTIAL_OBJECT"):
             errors.append(f"{prefix}: Aramaic text cannot be promoted to fully collated Hebrew or manuscript")
-        if rid == "SRC-SBL-INTRO" and "not" not in str(source.get("forbiddenUse","")).lower():
+        if rid == "SRC-SBL-INTRO" and "manuscript collation" not in str(source.get("forbiddenUse", "")).lower():
             errors.append(f"{prefix}: SBLGNT introduction must remain non-manuscript provenance")
         if rid == "SRC-VANWOLDE-2021":
             if source.get("rightsState") != "PUBLICATION_ELIGIBLE" or "CC BY 4.0" not in str(source.get("license", "")):
