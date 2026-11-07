@@ -215,10 +215,11 @@ class ActualSynchronizationTests(unittest.TestCase):
         p = ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md"
         text = p.read_text(encoding="utf-8")
         for marker in (
-            "DABNEY_OTHER_PAGES_HOLD",
-            "DABNEY_521_FACSIMILE_VERIFIED",
+            "DABNEY_FULL_BOOK_COLLATION_HOLD",
+            "DABNEY_520_523_FACSIMILE_VERIFIED",
             "DABNEY_648_FACSIMILE_VERIFIED",
-            "DAVENANT_LATIN_EDITION_HOLD",
+            "DAVENANT_1650_THREE_PRINT_LOCI_VERIFIED",
+            "DAVENANT_LATIN_DIPLOMATIC_COLLATION_HOLD",
             "AI_TRANSLATION_HOLD",
             "OWEN_WCF_TIMING_HOLD",
             "NO PUBLICATION AUTHORIZATION",
@@ -244,6 +245,25 @@ class ActualSynchronizationTests(unittest.TestCase):
         self.assertIn("**A2 scoped**", text)
         self.assertIn("DAVENANT_1650_THREE_PRINT_LOCI_VERIFIED", text)
         self.assertIn("DABNEY_FULL_BOOK_COLLATION_HOLD", text)
+
+    def test_article13_time_decree_application_and_gill_countercase(self):
+        text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md").read_text(encoding="utf-8")
+        for marker in (
+            "Вечный замысел не означает вечного личного оправдания",
+            "Серьёзное историческое возражение: Джон Гилл",
+            "Турретин", "XVI.9", "600–602",
+            "Гилл", "вечное активное оправдание",
+            "Вестминстерское исповедание XI.4",
+            "Божья вневременность — не скрытая посылка о круге искупления",
+            "DABNEY_FULL_BOOK_COLLATION_HOLD",
+            "DAVENANT_LATIN_DIPLOMATIC_COLLATION_HOLD",
+            "AI_TRANSLATION_HOLD", "OWEN_WCF_TIMING_HOLD",
+        ):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, text)
+        self.assertIn("P05 §§19–31", text)
+        self.assertIn("R. T. Mullins (2023)", text)
+        self.assertIn("не цитируются как прочитанные", text)
 
     def test_wave1_primary_dabney_context_and_print_hold_stay_distinct(self):
         text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md").read_text(encoding="utf-8")
