@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 26,
+    "sourceRecords": 29,
     "approvedForProduct": 0
   },
   "records": [
@@ -636,19 +636,85 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ]
+    },
+    {
+      "id": "SRC-SBLGNT-NT-SABAOTH",
+      "title": "SBLGNT 2010: James 5:4 and Romans 9:29 Greek Sabaoth occurrences",
+      "creator": "Michael W. Holmes, editor; Society of Biblical Literature / Logos",
+      "year": 2010,
+      "url": "https://www.biblegateway.com/verse/grc/James%205%3A4",
+      "alternateUrl": "https://www.biblegateway.com/verse/grc/%CE%A0%CE%A1%CE%9F%CE%A3%20%CE%A1%CE%A9%CE%9C%CE%91%CE%99%CE%9F%CE%A5%CE%A3%209%3A29",
+      "objectType": "digitally_displayed_greek_nt_edited_text",
+      "sourceRole": "GREEK_NT_SEMITIC_TRANSLITERATION_WITNESS",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "sourceObjectState": "SBLGNT digital comparative Greek verse displays verified James 5:4 Κυρίου Σαβαὼθ and Romans 9:29 κύριος Σαβαὼθ; host-page UI rights are distinct from official CC BY 4.0 publisher Greek text.",
+      "supportedUse": "Separate genitive vs nominative Κυρίου/κύριος and semitic transliteration Σαβαὼθ from Hebrew hosts title; Romans explicitly quotes Isaiah.",
+      "forbiddenUse": "Treat σαβαὼθ as σαββάτον Sabbath; claim copy of website UI licensed by publisher's Greek text license or infer manuscript apparatus.",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ]
+    },
+    {
+      "id": "SRC-SUCHARD-ELOHIM-2025",
+      "title": "Semitic *ʾilāh- and Hebrew אלהים: From plural 'gods' to singular 'God'",
+      "creator": "Benjamin D. Suchard",
+      "year": 2025,
+      "url": "https://doi.org/10.1177/03090892251332286",
+      "objectType": "scholarly_journal_article_historical_linguistics",
+      "sourceRole": "ATTRIBUTED_SECONDARY_SEMITIC_MORPHOLOGY_HYPOTHESIS",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "sourceObjectState": "Publisher's full HTML and abstract available; initial sections and stated argument read; full article and its cited grammars not collated page by page. Published online May 29 2025.",
+      "supportedUse": "Attribute research that Hebrew Elohim is morphologically plural but syntactically singular in Genesis 1:1 (bara) and has both singular and plural referent uses; source advances *ʾilāh- historical morphology reconstruction.",
+      "forbiddenUse": "Present Suchard reconstruction as universally accepted or infer Trinity or historical polytheism directly from plural suffix.",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ]
+    },
+    {
+      "id": "SRC-CAMBRIDGE-GOD-PRONOUNS",
+      "title": "God's pronouns, Scottish Journal of Theology (Cambridge)",
+      "creator": "Scottish Journal of Theology author — bibliographic author name not edition-pinned in this audit",
+      "year": 2024,
+      "url": "https://www.cambridge.org/core/journals/scottish-journal-of-theology/article/gods-pronouns/9DE1514A0851A0024E32FE3EBC71B062",
+      "objectType": "scholarly_theological_article_discussing_Hebrew_grammar",
+      "sourceRole": "ATTRIBUTED_SECONDARY_GRAMMAR_AND_THEOLOGY",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "sourceObjectState": "Cambridge article online section about Elohim plural noun and bara singular verb read; academic full pagination and original reference bibliographical metadata not independently pinned.",
+      "supportedUse": "Secondary corroboration of morphologically plural Elohim in Gen1:1 agreeing with singular bara; theological interpretation treated separately.",
+      "forbiddenUse": "Represent commentary on pronouns as a linguistic-critical MT apparatus or as direct proof/disproof of Trinity.",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ]
     }
   ],
   "auditRevision": {
     "date": "2026-11-07",
     "newSources": [
-      "SRC-RAHLFS-ISAIAH",
-      "SRC-ORTHODOX-ISAIAH9",
-      "SRC-RASHI-ISAIAH9",
-      "SRC-RADAK-ISAIAH9",
-      "SRC-NET-ISAIAH7",
-      "SRC-LEUCHTER-JER33",
-      "SRC-RASHI-EZEK48"
+      "SRC-SBLGNT-NT-SABAOTH",
+      "SRC-SUCHARD-ELOHIM-2025",
+      "SRC-CAMBRIDGE-GOD-PRONOUNS"
     ],
-    "rationale": "Prophetic naming, textual edition divergence, Jewish exegetical witnesses and publisher abstracts strictly separated from manuscript collation and licenses."
+    "rationale": "Distinguish exact NT Greek transliteration witnesses from editor's CC BY license; modern Semitic reconstruction and theology are attributed B1, not critical MT."
   }
 }
