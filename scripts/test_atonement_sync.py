@@ -296,7 +296,7 @@ class ActualSynchronizationTests(unittest.TestCase):
         self.assertIn("../../evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md", article)
         for marker in (
             "Исх. 13:13–15", "Числ. 3", "Евр. 9:19",
-            "σχεδόν", "χωρὶς αἱματεκχυσίας", "не содержит слова «почти»",
+            "σχεδόν", "χωρὶς αἱματεκχυσίας", "не повторяет слова «почти»",
             "τῷ ἀποπομπαίῳ", "εἰς τὴν ἀποπομπήν",
             "τὸν διεσταλμένον εἰς ἄφεσιν", "θαυμάσονται",
             "τοῖς αὐτὸν ἀπεκδεχομένοις", "не** две «предложные группы»",
@@ -315,6 +315,36 @@ class ActualSynchronizationTests(unittest.TestCase):
         self.assertIn("не внешнее рецензирование", memo)
         self.assertIn("PUBLICATION_HOLD", memo)
         self.assertIn("publicationEligible=false", memo)
+
+    def test_article02_external_primary_and_competing_scholarly_readings_are_guarded(self):
+        article = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md").read_text(encoding="utf-8")
+        memo = (ROOT / "ИСКУПЛЕНИЕ/evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md").read_text(encoding="utf-8")
+        board = (ROOT / "ИСКУПЛЕНИЕ/synthesis/07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        for marker in (
+            "без масла и ладана", "приношением **за грех**",
+            "σχεδόν", "синтаксически", "риторическое",
+            "Элликотт", "τοῦ ἀποπομπαίου",
+            "εἰς τὴν ἀποπομπήν",
+            "τὸν διεσταλμένον εἰς ἄφεσιν",
+            "RHETORICAL_SCOPE_OPEN", "ETYMOLOGY_HOLD",
+        ):
+            with self.subTest(article_marker=marker):
+                self.assertIn(marker, article)
+        for marker in (
+            "## AT-010-R2", "R2-09", "R2-13",
+            "https://www.saet.ac.uk/Christianity/SacrificeandtheOldTestament",
+            "https://www.die-bibel.de/en/bible/LXX/LEV.16",
+            "https://www.kingjamesbibleonline.org/Hebrews-9_Commentary-Ellicott/",
+            "https://www.bsw.org/biblica/",
+            "De Roo", "NET Bible", "печaт",
+            "RHETORICAL_SCOPE_OPEN", "ETYMOLOGY_HOLD",
+            "Публикационный статус", "STOP_DISCOVERY",
+        ):
+            with self.subTest(memo_marker=marker):
+                if marker != "печaт":
+                    self.assertIn(marker, memo)
+        self.assertIn("AT-010-R2", board)
+        self.assertIn("PUBLICATION_HOLD", memo)
 
     def test_article11_named_judas_primary_witnesses_and_hebrews_hold(self):
         text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article11_bought_apostates_covenant_blood_and_weak_brother.md").read_text(encoding="utf-8")
