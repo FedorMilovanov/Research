@@ -350,6 +350,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-DANIEL-ARAMAIC": "ARAMAIC_TEXT_SURFACE_ONLY",
     "SRC-SBL-INTRO": "EDITION_METHOD_NOT_MANUSCRIPT_APPARATUS",
     "SRC-SBLGNT-CCBY-LICENSE": "PUBLISHER_LICENSE_TEXT_ONLY",
+    "SRC-JUDISCH-DAN7-ARAMAIC": "ATTRIBUTED_B1_ARAMAIC_GRAMMAR",
 }
 
 
@@ -415,6 +416,13 @@ def validate_source_access(sources: dict) -> list[str]:
             errors.append(f"{prefix}: Aramaic text cannot be promoted to fully collated Hebrew or manuscript")
         if rid == "SRC-SBL-INTRO" and "manuscript collation" not in str(source.get("forbiddenUse", "")).lower():
             errors.append(f"{prefix}: SBLGNT introduction must remain non-manuscript provenance")
+        if rid == "SRC-JUDISCH-DAN7-ARAMAIC":
+            if source.get("evidenceClass") != "B1" or source.get("rightsState") != "RIGHTS_UNKNOWN":
+                errors.append(f"{prefix}: confessional lexical commentary has wrong rights/evidence class")
+            if source.get("primaryLexiconStatus") != "BDB_REFERENCED_BY_AUTHOR_NOT_DIRECTLY_VERIFIED":
+                errors.append(f"{prefix}: unpublished primary lexicon verification falsely claimed")
+            if source.get("interpretiveTradition") != "Confessional Lutheran":
+                errors.append(f"{prefix}: confessional provenance must not be erased")
         if rid == "SRC-SBLGNT-CCBY-LICENSE":
             if (source.get("rightsState") != "PUBLICATION_ELIGIBLE"
                 or source.get("evidenceClass") != "A2"
@@ -522,8 +530,29 @@ def validate_apocalyptic(baseline: dict, extension: dict) -> list[str]:
                 errors.extend(unicode_surface_issues(f"{rid}/{verse}", o["surface"]))
         if rid == "atiq-yomin":
             note = row.get("lexicalNote", {})
-            if note.get("morphologicalExplanationStatus") != "PENDING_ARABIBLICAL_GRAMMAR_REFERENCE":
-                errors.append("Daniel7 Aramaic morphological inference improperly marked resolved")
+            if note.get("morphologicalExplanationStatus") != "B1_SECONDARY_PARSE_VERIFIED_LEXICON_PENDING":
+                errors.append("Daniel7 Aramaic B1 morphological status inflated or regressed")
+            parsing = note.get("parsingEvidence", {})
+            if not isinstance(parsing, dict):
+                errors.append("Daniel7 Aramaic B1 parsing provenance missing")
+            else:
+                if (parsing.get("evidenceClass"), parsing.get("accessState")) != ("B1", "PARTIAL_OBJECT"):
+                    errors.append("Daniel7 Aramaic grammar erroneously promoted to primary source")
+                analyses = parsing.get("analyses", [])
+                expected_states = {
+                    "Daniel 7:9": ("יוֹמִין", "absolute"),
+                    "Daniel 7:13": ("יוֹמַיָּא", "emphatic"),
+                    "Daniel 7:22": ("יוֹמַיָּא", "emphatic"),
+                }
+                mapped = {x.get("verse"): x for x in analyses if isinstance(x, dict)} if isinstance(analyses, list) else {}
+                if set(mapped) != set(expected_states):
+                    errors.append("Daniel7 B1 grammar verse set must stay 9/13/22")
+                for verse, (form, state) in expected_states.items():
+                    p = mapped.get(verse, {})
+                    if (p.get("form"), p.get("state")) != (form, state):
+                        errors.append(f"Daniel7 {verse}: B1 absolute/emphatic plural parsing changed")
+                    if p.get("certainty") != "ATTRIBUTED_SECONDARY_GRAMMATICAL_PARSE":
+                        errors.append(f"Daniel7 {verse}: secondary grammar overclaimed")
             if "COMING TO" not in str(row.get("referentBoundary", "")):
                 errors.append("Daniel7:13 two vision figures no longer distinguished")
     if baseline.get("auditProtocol", {}).get("apocalypticAttestations", {}).get("totalAttestations") != 8:
