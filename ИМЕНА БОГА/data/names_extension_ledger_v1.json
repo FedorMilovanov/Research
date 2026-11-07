@@ -576,7 +576,7 @@
           "narrativeSpeaker": "Gabriel speaking to Mary",
           "speechAct": "reported_divine_agent_gives_Davidic_throne",
           "referent": "Lord God, grammatical agent of δώσει; distinct from recipient Jesus",
-          "sourceUrl": "https://www.biblegateway.com/verse/grc/Luke%201%3A32",
+          "sourceUrl": "https://www.biblegateway.com/passage/?search=Luke+1%3A30-33&version=THGNT",
           "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
           "rightsState": "PERMISSION_REQUIRED",
@@ -590,7 +590,7 @@
           "attestationId": "ATT-EXT-KYRIOS-HO-THEOS-01",
           "editionId": "ED-THGNT-2017-BIBLEGATEWAY",
           "sourceId": "SRC-THGNT-LUKE",
-          "editionPinStatus": "MULTI_EDITION_DISPLAY_REQUIRES_RECHECK"
+          "editionPinStatus": "URL_VERSION_PINNED"
         }
       ],
       "contextualAssertion": "Luke1:32 THGNT Gabriel is literary speaker to Mary, Lord God is grammatical subject of δώσει, Jesus is recipient αὐτῷ, throne of David promised object. Do not collapse speaker/agent/recipient. SBLGNT displays Δαυὶδ vs THGNT Δαυεὶδ in David."

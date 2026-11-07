@@ -11,6 +11,7 @@ import json
 import re
 import sys
 from pathlib import Path
+from urllib.parse import parse_qs, urlsplit
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
@@ -31,6 +32,49 @@ ED_SBL = "ED-SBLGNT-2010-BIBLEGATEWAY"
 ED_THG = "ED-THGNT-2017-BIBLEGATEWAY"
 ED_LXX = "ED-RAHLFS-HANHART-2006-PUBLISHER"
 
+# Four publisher-edition URLs were verified as single-version displays.
+# These exact anchors protect against edition drift and wrong-verse substitutions.
+# This is NOT a manuscript collation or independent scholarship review.
+PINNED_GREEK_SOURCE_URLS = {
+    "ATT-BASE-SABAOTH-05": "https://www.biblegateway.com/passage/?search=James+5%3A1-11&version=SBLGNT",
+    "ATT-BASE-SABAOTH-06": "https://www.biblegateway.com/passage/?search=Romans+9%3A14-29&version=SBLGNT",
+    "ATT-BASE-ABBA-03": "https://www.biblegateway.com/passage/?search=Galatians+4%3A4-7&version=SBLGNT",
+    "ATT-EXT-KYRIOS-HO-THEOS-01": "https://www.biblegateway.com/passage/?search=Luke+1%3A30-33&version=THGNT",
+}
+
+
+def pinned_bible_gateway_passage(url: object, version: str, verse: object) -> bool:
+    """Verify HTTPS host, exactly one edition, and coverage of the recorded verse.
+
+    No network request is made here. The original publisher display is manually
+    checked and its URL then locked into the evidence contract.
+    """
+    if not isinstance(url, str) or not isinstance(verse, str):
+        return False
+    try:
+        page = urlsplit(url)
+        if (page.scheme != "https" or page.hostname != "www.biblegateway.com"
+            or page.path != "/passage/" or page.username or page.password
+            or page.port is not None or page.fragment):
+            return False
+        values = parse_qs(page.query, keep_blank_values=True)
+    except ValueError:
+        return False
+    if (values.get("version") != [version]
+        or len(values.get("search", [])) != 1
+        or any(k not in {"version", "search"} for k in values)):
+        return False
+    required = re.fullmatch(r"(.+?)\s+(\d+):(\d+)", verse)
+    location = re.fullmatch(r"(.+?)\s+(\d+)(?::(\d+)(?:-(\d+))?)?", values["search"][0])
+    if required is None or location is None:
+        return False
+    book, chapter, number = required.group(1).casefold(), int(required.group(2)), int(required.group(3))
+    if book != location.group(1).casefold() or chapter != int(location.group(2)):
+        return False
+    start, end = location.group(3), location.group(4)
+    return start is None or (int(start) <= number <= int(end or start))
+
+
 PUBLISHER_LXX = {
     "EXO.3": "SRC-RAHLFS-EXODUS3",
     "EXO.17": "SRC-RAHLFS-EXODUS17",
@@ -48,6 +92,14 @@ CORE_CLAIMS = {
     "CLM-ABBA-THREE-PRAYER-SUBJECTS",
     "CLM-YHWH-HISTORICAL-PRONUNCIATION",
 }
+# The ten original research seeds and four new edition-pinned seeds are required
+# minima, not a ceiling. These are digitally evidenced, not scholarly approved.
+NEW_GREEK_SOURCE_CLAIMS = {
+    "CLM-JAS5-4-SABAOTH-GENITIVE",
+    "CLM-ROM9-29-SABAOTH-ISAIAH",
+    "CLM-GAL4-6-ABBA-SPIRIT",
+    "CLM-LUK1-32-GABRIEL-AGENT",
+}
 # The original reviewed seeds are a required minimum, not a cap on future work.
 # Additional claims must pass the same foreign-key, editorial and publication gates.
 ALLOWED_CLAIM_TYPES = {
@@ -61,6 +113,8 @@ ALLOWED_CLAIM_TYPES = {
     "CANONICAL_INTERTEXT_BOUNDARY",
     "SPEECH_AGENT_CONTROL",
     "ATTRIBUTED_HISTORICAL_RECONSTRUCTION",
+    "MORPHOLOGICAL_CASE_CONTEXT",
+    "CITATION_SPEECH_CONTEXT",
 }
 ALLOWED_INTERPRETIVE_SCOPES = {
     "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
@@ -71,6 +125,8 @@ ALLOWED_RELATION_TYPES = {
     "CONTRASTS_NAMED_OBJECT",
     "LIMITS_INFERENCE",
     "REQUIRES_INDEPENDENT_ATTESTATION",
+    "CONTRASTS_GRAMMATICAL_FORM",
+    "SPECIFIES_SPEECH_AGENT",
 }
 # These four editorial comparisons must not silently disappear in later waves.
 REQUIRED_SEMANTIC_RELATIONS = {
@@ -89,6 +145,14 @@ REQUIRED_SEMANTIC_RELATIONS = {
         "CLM-EX3-15-DIVINE-NAME", "CLM-YHWH-HISTORICAL-PRONUNCIATION",
         "REQUIRES_INDEPENDENT_ATTESTATION"
     ),
+    "REL-SABAOTH-CASING-CONTEXT": (
+        "CLM-JAS5-4-SABAOTH-GENITIVE", "CLM-ROM9-29-SABAOTH-ISAIAH",
+        "CONTRASTS_GRAMMATICAL_FORM"
+    ),
+    "REL-ABBA-SPIRIT-SPEECH": (
+        "CLM-ABBA-THREE-PRAYER-SUBJECTS", "CLM-GAL4-6-ABBA-SPIRIT",
+        "SPECIFIES_SPEECH_AGENT"
+    ),
 }
 CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-EX3-15-DIVINE-NAME": {"ATT-BASE-YHWH-01"},
@@ -101,6 +165,10 @@ CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-LXX-EX3-JOHN8-DIFFERENT-CLAUSES": {"ATT-BASE-EHYEH-03", "ATT-BASE-EGO-EIMI-02"},
     "CLM-ABBA-THREE-PRAYER-SUBJECTS": {"ATT-BASE-ABBA-01", "ATT-BASE-ABBA-02", "ATT-BASE-ABBA-03"},
     "CLM-YHWH-HISTORICAL-PRONUNCIATION": {"ATT-BASE-YHWH-01", "ATT-BASE-YHWH-02"},
+    "CLM-JAS5-4-SABAOTH-GENITIVE": {"ATT-BASE-SABAOTH-05"},
+    "CLM-ROM9-29-SABAOTH-ISAIAH": {"ATT-BASE-SABAOTH-06"},
+    "CLM-GAL4-6-ABBA-SPIRIT": {"ATT-BASE-ABBA-03"},
+    "CLM-LUK1-32-GABRIEL-AGENT": {"ATT-EXT-KYRIOS-HO-THEOS-01"},
 }
 
 
@@ -206,29 +274,24 @@ def validate_provenance(
                 if edition_id == ED_SBL:
                     if source_id != "SRC-SBLGNT-DIGITAL-NT":
                         errors.append(f"provenance: {aid} SBLGNT passage source incorrectly assigned")
-                    has_pin = bool(re.search(r"[?&]version=SBLGNT(?:&|$|%3B)", url, re.IGNORECASE))
-                    if has_pin and obs.get("editionPinStatus") != "URL_VERSION_PINNED":
-                        errors.append(f"provenance: {aid} incorrect URL edition-pin status")
-                    if not has_pin and (
-                        obs.get("editionPinStatus") != "MULTI_EDITION_DISPLAY_REQUIRES_RECHECK"
-                        or aid not in {
-                            "ATT-BASE-SABAOTH-05",
-                            "ATT-BASE-SABAOTH-06",
-                            "ATT-BASE-ABBA-03",
-                        }
-                    ):
-                        errors.append(f"provenance: {aid} unpinned Greek edition not explicitly review-held")
+                    if (obs.get("editionPinStatus") != "URL_VERSION_PINNED"
+                        or not pinned_bible_gateway_passage(url, "SBLGNT", obs.get("verse"))):
+                        errors.append(f"provenance: {aid} unpinned Greek edition or wrong SBLGNT verse")
+                    expected_url = PINNED_GREEK_SOURCE_URLS.get(aid)
+                    if expected_url is not None and url != expected_url:
+                        errors.append(f"provenance: {aid} verified pinned Greek passage URL changed")
                 if edition_id == ED_LXX:
                     match = [value for key, value in PUBLISHER_LXX.items() if key in url]
                     if len(match) != 1 or source_id != match[0] or "die-bibel.de" not in url:
                         errors.append(f"provenance: {aid} publisher LXX chapter/edition misattributed")
                 if edition_id == ED_THG:
-                    if source_id != "SRC-THGNT-LUKE" or "Luke" not in url:
-                        errors.append(f"provenance: {aid} THGNT Luke1 provenance incorrect")
-                    if aid != "ATT-EXT-KYRIOS-HO-THEOS-01" or (
-                        obs.get("editionPinStatus") != "MULTI_EDITION_DISPLAY_REQUIRES_RECHECK"
-                    ):
-                        errors.append(f"provenance: {aid} THGNT multiedition display needs explicit edition review HOLD")
+                    if source_id != "SRC-THGNT-LUKE" or aid != "ATT-EXT-KYRIOS-HO-THEOS-01":
+                        errors.append(f"provenance: {aid} THGNT source or locus attribution invalid")
+                    if (obs.get("editionPinStatus") != "URL_VERSION_PINNED"
+                        or not pinned_bible_gateway_passage(url, "THGNT", obs.get("verse"))):
+                        errors.append(f"provenance: {aid} THGNT multiedition display or wrong verse")
+                    if url != PINNED_GREEK_SOURCE_URLS["ATT-EXT-KYRIOS-HO-THEOS-01"]:
+                        errors.append(f"provenance: {aid} verified pinned THGNT passage URL changed")
     if num != 105 or len(seen) != 105:
         errors.append(f"provenance: all 105 current original-language attestations must be uniquely linked, not {num}/{len(seen)}")
 
@@ -247,6 +310,8 @@ def validate_provenance(
         claim_map[cid] = claim
     if not CORE_CLAIMS.issubset(claim_map):
         errors.append("provenance: one or more original curated claim seeds missing")
+    if not NEW_GREEK_SOURCE_CLAIMS.issubset(claim_map):
+        errors.append("provenance: one or more Greek source-pinned claim seeds missing")
     for cid, claim in claim_map.items():
         if not isinstance(claim, dict):
             errors.append(f"provenance: malformed claim {cid}")
@@ -342,8 +407,8 @@ def main() -> int:
         for p in problems:
             print("FAIL: " + p, file=sys.stderr)
         return 1
-    print("PASS: 105 immutable attestation IDs linked to 4 editions and source records; "
-          "original 10 claim seeds retained; extensible typed claim graph and semantic boundaries are HOLD-guarded")
+    print("PASS: 105 attestation IDs linked to 4 editions; 14 provisional claim seeds and "
+          "6 typed relations retain mandatory source/verse HOLD boundaries and publication BLOCKED")
     return 0
 
 

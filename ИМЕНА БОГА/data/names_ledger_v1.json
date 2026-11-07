@@ -988,7 +988,7 @@
           "speaker": "James, epistolary warning",
           "referent": "Lord Sabaoth hearing exploited workers",
           "isDivineDesignation": true,
-          "sourceUrl": "https://www.biblegateway.com/verse/grc/James%205%3A4",
+          "sourceUrl": "https://www.biblegateway.com/passage/?search=James+5%3A1-11&version=SBLGNT",
           "sourceAccess": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
           "rightsState": "RIGHTS_UNKNOWN",
@@ -998,7 +998,7 @@
           "attestationId": "ATT-BASE-SABAOTH-05",
           "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
           "sourceId": "SRC-SBLGNT-DIGITAL-NT",
-          "editionPinStatus": "MULTI_EDITION_DISPLAY_REQUIRES_RECHECK"
+          "editionPinStatus": "URL_VERSION_PINNED"
         },
         {
           "verse": "Romans 9:29",
@@ -1009,7 +1009,7 @@
           "speaker": "Paul quoting Isaiah",
           "referent": "Lord of Hosts, leaving remnant",
           "isDivineDesignation": true,
-          "sourceUrl": "https://www.biblegateway.com/verse/grc/%CE%A0%CE%A1%CE%9F%CE%A3%20%CE%A1%CE%A9%CE%9C%CE%91%CE%99%CE%9F%CE%A5%CE%A3%209%3A29",
+          "sourceUrl": "https://www.biblegateway.com/passage/?search=Romans+9%3A14-29&version=SBLGNT",
           "sourceAccess": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
           "rightsState": "RIGHTS_UNKNOWN",
@@ -1020,7 +1020,7 @@
           "attestationId": "ATT-BASE-SABAOTH-06",
           "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
           "sourceId": "SRC-SBLGNT-DIGITAL-NT",
-          "editionPinStatus": "MULTI_EDITION_DISPLAY_REQUIRES_RECHECK"
+          "editionPinStatus": "URL_VERSION_PINNED"
         }
       ],
       "contextualAssertion": "Hosts title in worship at Shiloh, David's human battle context, heavenly seraphim's hymn, Zechariah oracle and Greek NT transliteration. Greek Σαβαὼθ is not σάββατον (Sabbath). No single context fully resolves historical title origin."
@@ -2287,7 +2287,7 @@
           "speaker": "Paul writing about Spirit's action",
           "referent": "God the Father",
           "speechAct": "sonship_spirit_cry",
-          "sourceUrl": "https://www.biblegateway.com/verse/grc/Galatians%204%3A6",
+          "sourceUrl": "https://www.biblegateway.com/passage/?search=Galatians+4%3A4-7&version=SBLGNT",
           "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
           "rightsState": "RIGHTS_UNKNOWN",
@@ -2309,7 +2309,7 @@
           "attestationId": "ATT-BASE-ABBA-03",
           "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
           "sourceId": "SRC-SBLGNT-DIGITAL-NT",
-          "editionPinStatus": "MULTI_EDITION_DISPLAY_REQUIRES_RECHECK"
+          "editionPinStatus": "URL_VERSION_PINNED"
         }
       ],
       "contextualAssertion": "SBLGNT three occurrences same Greek transcription Αββα ὁ πατήρ but Mark Jesus prays, Rom believers cry κράζομεν, Gal Spirit of Son cries κρᾶζον. Article+nominative πατήρ functions as address; Aramaic derivation not separate manuscript in Hebrew script. English daddy exclusive lexical claim not established from Barr abstract.",

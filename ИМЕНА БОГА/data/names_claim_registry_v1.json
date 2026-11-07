@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "corpusId": "NAMES_OF_GOD_CLAIM_LEVEL_EVIDENCE",
   "createdAt": "2026-11-07",
-  "scope": "Ten historically curated seed claims are immutable minima, not a ceiling; additional claim IDs require provenance review. Semantic edges express editorial contrasts rather than scientific agreement or Product clearance.",
+  "scope": "14 provisional curated source-linked claims (including ten original seeds), six typed semantic relations. No independent scholarly signoff or Product clearance.",
   "editorialPolicy": "Never infer Product approval from link completeness, never replace a cited verse or alternative theory silently; new claims require independent review.",
   "records": [
     {
@@ -225,6 +225,94 @@
         "independent sound/phonology scholarship",
         "manuscript reading traditions and opposing views"
       ]
+    },
+    {
+      "claimId": "CLM-JAS5-4-SABAOTH-GENITIVE",
+      "claimType": "MORPHOLOGICAL_CASE_CONTEXT",
+      "statement": "The printed SBLGNT James 5:4 has Κυρίου Σαβαὼθ in a genitive construction in the warning over withheld wages; this grammatical form differs from κύριος Σαβαὼθ in Romans 9:29.",
+      "attestationIds": [
+        "ATT-BASE-SABAOTH-05"
+      ],
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent morphological and edition review",
+        "separate critical manuscript collation where relevant",
+        "theological reception and historical translation boundaries",
+        "source rights and Product editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-ROM9-29-SABAOTH-ISAIAH",
+      "claimType": "CITATION_SPEECH_CONTEXT",
+      "statement": "The printed SBLGNT Romans 9:29 introduces an Isaiah quotation and gives the form κύριος Σαβαὼθ; it does not itself establish an ancient Greek Vorlage or the manuscript history of the cited Isaiah text.",
+      "attestationIds": [
+        "ATT-BASE-SABAOTH-06"
+      ],
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent morphological and edition review",
+        "separate critical manuscript collation where relevant",
+        "theological reception and historical translation boundaries",
+        "source rights and Product editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-GAL4-6-ABBA-SPIRIT",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "In SBLGNT Galatians 4:6, Paul describes the Spirit of God's Son as crying Αββα ὁ πατήρ, distinct from Paul's first-person plural 'we cry' in Romans 8:15.",
+      "attestationIds": [
+        "ATT-BASE-ABBA-03"
+      ],
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent morphological and edition review",
+        "separate critical manuscript collation where relevant",
+        "theological reception and historical translation boundaries",
+        "source rights and Product editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-LUK1-32-GABRIEL-AGENT",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "In THGNT Luke 1:32 the narrative speaker is Gabriel, κύριος ὁ θεὸς is the nominative subject of δώσει, and αὐτῷ refers to Jesus as recipient of the promised throne.",
+      "attestationIds": [
+        "ATT-EXT-KYRIOS-HO-THEOS-01"
+      ],
+      "sourceIds": [
+        "SRC-THGNT-LUKE"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent morphological and edition review",
+        "separate critical manuscript collation where relevant",
+        "theological reception and historical translation boundaries",
+        "source rights and Product editorial acceptance"
+      ]
     }
   ],
   "semanticRelations": [
@@ -258,6 +346,22 @@
       "toClaimId": "CLM-YHWH-HISTORICAL-PRONUNCIATION",
       "relationType": "REQUIRES_INDEPENDENT_ATTESTATION",
       "rationale": "Explicit naming in Exodus does not itself reconstruct the sound of ancient YHWH pronunciation.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-SABAOTH-CASING-CONTEXT",
+      "fromClaimId": "CLM-JAS5-4-SABAOTH-GENITIVE",
+      "toClaimId": "CLM-ROM9-29-SABAOTH-ISAIAH",
+      "relationType": "CONTRASTS_GRAMMATICAL_FORM",
+      "rationale": "Greek Κυρίου at James 5:4 is genitive whereas κύριος at Romans 9:29 is nominative; the shared Σαβαὼθ does not erase differences of case and discourse.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-ABBA-SPIRIT-SPEECH",
+      "fromClaimId": "CLM-ABBA-THREE-PRAYER-SUBJECTS",
+      "toClaimId": "CLM-GAL4-6-ABBA-SPIRIT",
+      "relationType": "SPECIFIES_SPEECH_AGENT",
+      "rationale": "The broader three-passage observation is narrowed to the Galatians 4:6 account of the Spirit crying; editorial grammar still requires independent review.",
       "publicationState": "BLOCKED"
     }
   ]

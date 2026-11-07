@@ -80,7 +80,7 @@ class ProvenanceGraphTests(unittest.TestCase):
 
     def test_untagged_multiedition_james5_4_not_edition_pinned(self) -> None:
         d, att = self.mutate("sabaoth", "baseline", 4)
-        att["editionPinStatus"] = "URL_VERSION_PINNED"
+        att["sourceUrl"] = "https://www.biblegateway.com/verse/grc/James%205%3A4"
         self.assertTrue(any("unpinned Greek edition" in e for e in self.check(baseline=d)))
 
     def test_new_multiedition_page_cannot_be_whitelisted_by_accident(self) -> None:
@@ -91,7 +91,7 @@ class ProvenanceGraphTests(unittest.TestCase):
 
     def test_thgnt_luke_edition_selection_hold_must_remain(self) -> None:
         d, att = self.mutate("kyrios-ho-theos", "extension")
-        att["editionPinStatus"] = "URL_VERSION_PINNED"
+        att["sourceUrl"] = "https://www.biblegateway.com/verse/grc/Luke%201%3A32"
         self.assertTrue(any("THGNT multiedition display" in e for e in self.check(extension=d)))
 
     def test_claim_cannot_point_to_no_original_verse(self) -> None:
@@ -210,6 +210,106 @@ class ProvenanceGraphTests(unittest.TestCase):
             "publicationState": "BLOCKED",
         })
         self.assertEqual([], self.check(claims=d))
+
+
+    def test_four_greek_urls_are_single_edition_and_original_verse_covered(self) -> None:
+        for rid, index, kind in [
+            ("sabaoth", 4, "baseline"),
+            ("sabaoth", 5, "baseline"),
+            ("abba", 2, "baseline"),
+            ("kyrios-ho-theos", 0, "extension"),
+        ]:
+            doc = self.baseline if kind == "baseline" else self.extension
+            row = next(x for x in doc["records"] if x["id"] == rid)["attestations"][index]
+            self.assertEqual("URL_VERSION_PINNED", row["editionPinStatus"])
+            self.assertIn(row["sourceUrl"], [
+                "https://www.biblegateway.com/passage/?search=James+5%3A1-11&version=SBLGNT",
+                "https://www.biblegateway.com/passage/?search=Romans+9%3A14-29&version=SBLGNT",
+                "https://www.biblegateway.com/passage/?search=Galatians+4%3A4-7&version=SBLGNT",
+                "https://www.biblegateway.com/passage/?search=Luke+1%3A30-33&version=THGNT",
+            ])
+
+    def test_greek_version_must_not_be_multi_edition_encoded(self) -> None:
+        d, att = self.mutate("abba", "baseline", 2)
+        att["sourceUrl"] = "https://www.biblegateway.com/passage/?search=Galatians+4%3A4-7&version=SBLGNT%3BTHGNT"
+        self.assertTrue(any("unpinned Greek edition" in e for e in self.check(baseline=d)))
+
+    def test_greek_version_must_not_be_repeated(self) -> None:
+        d, att = self.mutate("abba", "baseline", 2)
+        att["sourceUrl"] += "&version=SBLGNT"
+        self.assertTrue(any("unpinned Greek edition" in e for e in self.check(baseline=d)))
+
+    def test_pinned_greek_book_cannot_be_switched(self) -> None:
+        d, att = self.mutate("abba", "baseline", 2)
+        att["sourceUrl"] = "https://www.biblegateway.com/passage/?search=Romans+4%3A4-7&version=SBLGNT"
+        self.assertTrue(any("wrong SBLGNT verse" in e for e in self.check(baseline=d)))
+
+    def test_pinned_greek_verse_must_be_in_passage_range(self) -> None:
+        d, att = self.mutate("abba", "baseline", 2)
+        att["sourceUrl"] = "https://www.biblegateway.com/passage/?search=Galatians+4%3A1-5&version=SBLGNT"
+        self.assertTrue(any("wrong SBLGNT verse" in e for e in self.check(baseline=d)))
+
+    def test_pinned_greek_passage_cannot_be_a_fake_host(self) -> None:
+        d, att = self.mutate("abba", "baseline", 2)
+        att["sourceUrl"] = "https://evil.invalid/passage/?search=Galatians+4%3A4-7&version=SBLGNT"
+        self.assertTrue(any("unpinned Greek edition" in e for e in self.check(baseline=d)))
+
+    def test_pinned_greek_passage_requires_https(self) -> None:
+        d, att = self.mutate("abba", "baseline", 2)
+        att["sourceUrl"] = att["sourceUrl"].replace("https:", "http:", 1)
+        self.assertTrue(any("unpinned Greek edition" in e for e in self.check(baseline=d)))
+
+    def test_pinned_greek_evidence_anchor_drift_rejected(self) -> None:
+        d, att = self.mutate("abba", "baseline", 2)
+        att["sourceUrl"] = "https://www.biblegateway.com/passage/?search=Galatians+4&version=SBLGNT"
+        self.assertTrue(any("verified pinned Greek passage URL changed" in e for e in self.check(baseline=d)))
+
+    def test_thgnt_cannot_inherit_sblgnt_link(self) -> None:
+        d, att = self.mutate("kyrios-ho-theos", "extension", 0)
+        att["sourceUrl"] = "https://www.biblegateway.com/passage/?search=Luke+1%3A30-33&version=SBLGNT"
+        self.assertTrue(any("THGNT multiedition display" in e for e in self.check(extension=d)))
+
+    def test_thgnt_original_verse_cannot_be_replaced_by_neighbor(self) -> None:
+        d, att = self.mutate("kyrios-ho-theos", "extension", 0)
+        att["sourceUrl"] = "https://www.biblegateway.com/passage/?search=Luke+1%3A33&version=THGNT"
+        self.assertTrue(any("wrong verse" in e for e in self.check(extension=d)))
+
+
+    def test_four_new_claims_provisionally_link_pinned_original_verses(self) -> None:
+        expected = {
+            "CLM-JAS5-4-SABAOTH-GENITIVE": "ATT-BASE-SABAOTH-05",
+            "CLM-ROM9-29-SABAOTH-ISAIAH": "ATT-BASE-SABAOTH-06",
+            "CLM-GAL4-6-ABBA-SPIRIT": "ATT-BASE-ABBA-03",
+            "CLM-LUK1-32-GABRIEL-AGENT": "ATT-EXT-KYRIOS-HO-THEOS-01",
+        }
+        for cid, aid in expected.items():
+            row = next(c for c in self.claims["records"] if c["claimId"] == cid)
+            self.assertEqual([aid], row["attestationIds"])
+            self.assertEqual("RESEARCH_HOLD", row["editorialState"])
+            self.assertEqual("BLOCKED", row["publicationState"])
+
+    def test_required_greek_claim_cannot_be_erased(self) -> None:
+        d = copy.deepcopy(self.claims)
+        d["records"] = [r for r in d["records"] if r["claimId"] != "CLM-ROM9-29-SABAOTH-ISAIAH"]
+        self.assertTrue(any("Greek source-pinned claim seeds missing" in e for e in self.check(claims=d)))
+
+    def test_greek_claim_cannot_swap_pinned_attestation(self) -> None:
+        d = copy.deepcopy(self.claims)
+        row = next(c for c in d["records"] if c["claimId"] == "CLM-JAS5-4-SABAOTH-GENITIVE")
+        row["attestationIds"] = ["ATT-BASE-SABAOTH-06"]
+        self.assertTrue(any("lost its independently reviewed text witnesses" in e for e in self.check(claims=d)))
+
+    def test_new_greek_claim_must_retain_direct_edition_source(self) -> None:
+        d = copy.deepcopy(self.claims)
+        row = next(c for c in d["records"] if c["claimId"] == "CLM-LUK1-32-GABRIEL-AGENT")
+        row["sourceIds"] = ["SRC-SBLGNT-DIGITAL-NT"]
+        self.assertTrue(any("lost mandatory direct textual sources" in e for e in self.check(claims=d)))
+
+    def test_new_semantic_relation_cannot_silently_change_case(self) -> None:
+        d = copy.deepcopy(self.claims)
+        row = next(x for x in d["semanticRelations"] if x["relationId"] == "REL-SABAOTH-CASING-CONTEXT")
+        row["relationType"] = "CONTRASTS_REFERENT"
+        self.assertTrue(any("required semantic boundary" in e for e in self.check(claims=d)))
 
 
 if __name__ == "__main__":
