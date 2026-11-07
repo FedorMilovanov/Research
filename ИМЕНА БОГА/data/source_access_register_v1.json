@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 19,
+    "sourceRecords": 26,
     "approvedForProduct": 0
   },
   "records": [
@@ -473,13 +473,182 @@
       ],
       "interpretiveTradition": "Confessional Lutheran",
       "primaryLexiconStatus": "BDB_REFERENCED_BY_AUTHOR_NOT_DIRECTLY_VERIFIED"
+    },
+    {
+      "id": "SRC-RAHLFS-ISAIAH",
+      "title": "Septuaginta, Rahlfs, revised by Hanhart (2006) — publisher's digital Isaiah 7 and 9",
+      "creator": "Alfred Rahlfs; revised by Robert Hanhart; Deutsche Bibelgesellschaft",
+      "year": 2006,
+      "url": "https://www.die-bibel.de/bibel/LXX/ISA.9",
+      "additionalUrl": "https://www.die-bibel.de/en/bible/LXX/ISA.7.14",
+      "objectType": "publisher_digital_reading_of_edited_LXX",
+      "sourceRole": "PUBLISHER_EDITED_GREEK_LXX_SURFACE",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "sourceObjectState": "Direct publisher LXX digital chapter read; publisher identifies Rahlfs/Hanhart ©2006. No manuscript images or full critical variant apparatus.",
+      "supportedUse": "Read exact name formula Μεγάλης βουλῆς ἄγγελος in Isaias 9:5 and καλέσεις in 7:14; compare digital editions explicitly",
+      "forbiddenUse": "Claim entire LXX tradition has no longer list, reproduce publisher's copyrighted critical text without permissions, or invent apparatus/source manuscripts",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "SRC-ORTHODOX-ISAIAH9",
+      "title": "Greek Orthodox Archdiocese web reading of Isaiah 9, expanded Greek naming list",
+      "creator": "Greek Orthodox Archdiocese of America",
+      "year": null,
+      "url": "https://www.septuagint.bible/-/hesaias-kephalaio-9",
+      "objectType": "church_web_greek_bible_text_unpinned_academic_edition",
+      "sourceRole": "UNPINNED_ORTHODOX_GREEK_WEB_SURFACE",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "sourceObjectState": "Webpage shows long name sequence with Θεὸς ἰσχυρός and more; exact editorial/mss provenance of the expansion not supplied/verified",
+      "supportedUse": "Note existence of a different modern Greek textual display including Θεὸς ἰσχυρός, with edition ambiguity explicit",
+      "forbiddenUse": "Present as a specifically dated ancient manuscript or imply all Septuagint manuscripts have this expansion",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "SRC-RASHI-ISAIAH9",
+      "title": "Rashi on Isaiah 9:5:2 with Hebrew and Judaica Press English",
+      "creator": "Rashi; online Sefaria reproduction and Judaica Press translator",
+      "year": null,
+      "url": "https://www.sefaria.org/Rashi_on_Isaiah.9.5.2?lang=bi",
+      "objectType": "historical_Jewish_commentary_web_reproduction",
+      "sourceRole": "ATTRIBUTED_JEWISH_EXEGETICAL_RECEPTION",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "sourceObjectState": "Relevant original Hebrew commentary and English translation available in indexed full passage; original medieval manuscript and printed text not collated",
+      "supportedUse": "Attribute Rashi interpretation that God bears preceding titles and calls Hezekiah 'Prince of Peace'",
+      "forbiddenUse": "Assert Rashi's syntax is sole possible meaning of Isa 9:5 or treat medieval polemic as textual variant in MT",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "SRC-RADAK-ISAIAH9",
+      "title": "Radak on Isaiah 9:5:6-9 — theological naming of the child",
+      "creator": "David Kimhi (Radak); Sefaria reproduction",
+      "year": null,
+      "url": "https://www.sefaria.org/Radak_on_Isaiah.9.5.6",
+      "objectType": "historical_Jewish_commentary_web_reproduction",
+      "sourceRole": "ATTRIBUTED_JEWISH_EXEGETICAL_RECEPTION",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "sourceObjectState": "Relevant Hebrew segments of Radak surfaced; full original book and editor metadata not collated",
+      "supportedUse": "Record Radak explanation for God as name-giving agent and historical Hezekiah reading",
+      "forbiddenUse": "Blend with Rashi as one single ancient source or assert definitive original prophetic authorial intent",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "SRC-NET-ISAIAH7",
+      "title": "NET Bible notes Isaiah 7:14 and Matthew 1:23",
+      "creator": "NET Bible translators and editors",
+      "year": null,
+      "url": "https://classic.net.bible.org/passage.php?mode=print&passage=Isa+7%3A14%3BMt+1%3A22-23",
+      "objectType": "copyrighted_translation_and_explanatory_notes",
+      "sourceRole": "ATTRIBUTED_TRANSLATION_NOTES",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "sourceObjectState": "Original Hebrew name verb notes and English interpretation surfaced; scripture excerpts/notes copyrighted; no original manuscript images",
+      "supportedUse": "Attribute scholarly grammatical dispute Isa7:14 וְקָרָאת 2fs vs older 3fs analysis; preserve differences in Hebrew and Matthew Greek naming verbs",
+      "forbiddenUse": "Conclude Hebrew almah necessarily implies or necessarily excludes virginity as a pure morphology theorem; treat NET note as autograph",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "SRC-LEUCHTER-JER33",
+      "title": "The Reengagement of the Royal Line in Jeremiah 33:14–26 (Excursus 2)",
+      "creator": "Mark Leuchter; Cambridge University Press",
+      "year": 2007,
+      "url": "https://doi.org/10.1017/CBO9780511551147.006",
+      "objectType": "academic_publisher_chapter_abstract",
+      "sourceRole": "ATTRIBUTED_ACADEMIC_TEXTUAL_CRITICISM_ABSTRACT",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "PERMISSION_REQUIRED",
+      "sourceObjectState": "Cambridge published chapter metadata, abstract, pp72–81 read; chapter and original Old Greek critical text not opened",
+      "supportedUse": "State published scholarly position and noted alternatives about MT Jer33:14–26 absent in Old Greek Jeremiah",
+      "forbiddenUse": "Pretend Old Greek Jeremiah 33:16 was independently collated or that a specific compositional theory is unanimously proven",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "SRC-RASHI-EZEK48",
+      "title": "Rashi on Ezekiel 48:35:2 (Sefaria excerpt)",
+      "creator": "Rashi; Sefaria reproduction and translated commentary",
+      "year": null,
+      "url": "https://www.sefaria.org/Rashi_on_Ezekiel.48.35.2",
+      "objectType": "historical_Jewish_commentary_web_reproduction",
+      "sourceRole": "ATTRIBUTED_JEWISH_EXEGETICAL_RECEPTION",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "sourceObjectState": "Commentary excerpt and alternate explanations read from Sefaria indexed text, not original medieval text edition",
+      "supportedUse": "Attribute interpretations of divine presence/city name in Ezek48:35 with Targum Jonathan mentioned",
+      "forbiddenUse": "Replace city's explicit name with a personal divine name or claim one Jewish interpretation represents all traditions",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
     }
   ],
   "auditRevision": {
     "date": "2026-11-07",
     "newSources": [
-      "SRC-JUDISCH-DAN7-ARAMAIC"
+      "SRC-RAHLFS-ISAIAH",
+      "SRC-ORTHODOX-ISAIAH9",
+      "SRC-RASHI-ISAIAH9",
+      "SRC-RADAK-ISAIAH9",
+      "SRC-NET-ISAIAH7",
+      "SRC-LEUCHTER-JER33",
+      "SRC-RASHI-EZEK48"
     ],
-    "rationale": "Qualified B1 grammatical analysis of absolute/emphatic plural in Daniel7, strictly separated from confessional christology and unexamined original BDB."
+    "rationale": "Prophetic naming, textual edition divergence, Jewish exegetical witnesses and publisher abstracts strictly separated from manuscript collation and licenses."
   }
 }
