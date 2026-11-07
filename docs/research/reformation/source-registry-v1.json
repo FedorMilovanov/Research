@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 175,
+  "sourceCount": 179,
   "sources": [
     {
       "id": "REF-P01",
@@ -777,7 +777,7 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://www.rps.ac.uk/search.php?action=print&filename=jamesvi_trans&id=9539&type=trans",
-      "verificationNote": "RPS English historical translation text read chapters 3,8,9,12,14-17,19-20; RPS editor identifies source Lekpreuik 1568 ff5v–10v; original Scottish manuscript of 1560 is missing and no print image collated.",
+      "verificationNote": "RPS English historical translation text read chapters 3,8,9,12,14-17,19-20; RPS editor identifies source Lekpreuik 1568 ff5v–10v; original Scottish manuscript of 1560 is missing and no print image collated. WAVE377 2026-11-07: RPS edition directly inspected for all chapter headings. After 'Faith in the Holy Ghost, chapter 12', jumps to 'The cause of good works, chapter 14', and ends 'The gifts freely given to the kirk, chapter 26'. This is a skipped numeral 13, not a 26th independently numbered chapter; 25 distinct headings. Compare conventional modern 1–25 scheme. Original 1568 impression NOT collated, origin of numeral skip unknown.",
       "checkedAt": "2026-11-04"
     },
     {
@@ -3410,6 +3410,78 @@
       ],
       "url": "https://hls-dhs-dss.ch/fr/articles/011327/2010-09-09/",
       "verificationNote": "2026-11-07: HLS French institutional biographical text directly read; civil Geneva magistrate condemned Servetus, burned 27 Oct 1553, Geneva court consulted Swiss Protestant cantons. Musée protestant biographical note independently consulted, identifies Calvin theological consultation and civil Small/Grand Council criminal jurisdiction. Original judicial record and Calvin's full letters NOT read; no individual procedure/cause detail to be invented.",
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "id": "REF-S83",
+      "documentYear": 1534,
+      "title": "UK Parliament Living Heritage, Act of Supremacy 1534 and institutional Reformation sequence",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.parliament.uk/about/living-heritage/transformingsociety/private-lives/religion/overview/reformation/",
+      "verificationNote": "2026-11-07: UK Parliament Reformation overview and Act of Supremacy official exhibition read, identifying 26 Hen VIII c1, Parliamentary Archives HL/PO/PU/1/1534/26H8n1 and Henry VIII Supreme Head; National Archives C65/143 separately checked. Original Act full text NOT diplomatically collated; exhibit class B1.",
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "id": "REF-S84",
+      "documentYear": 1559,
+      "title": "UK Parliament Act of Uniformity 1559 and institutional religious timeline, History of Parliament Elizabethan settlement",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.parliament.uk/about/living-heritage/transformingsociety/private-lives/religion/collections/common-prayer/act-of-uniformity-1559/",
+      "verificationNote": "2026-11-07: institutional UK Parliament exhibit read: 1549/1552 prayerbook, 1559 settlement and revised prayerbook, 1 Eliz I c2 Parliamentary Archives HL/PO/PU/1/1558/1Eliz1n2. Elizabeth Supreme Governor via History of Parliament secondary institutional article. Full Act and original Prayer Books uncollated.",
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "id": "REF-P78",
+      "documentYear": 1571,
+      "title": "Thirty-Nine Articles, English authorized Cawood 1571 edited historical transcription via Philip Schaff / Hardwick, compared with Wolfe 1563 Latin",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://ccel.org/ccel/schaff/creeds3/creeds3.iv.xi.html",
+      "verificationNote": "2026-11-07: textual sections VI XI XII XVII XXXVII read in Philip Schaff Creeds of Christendom III republished 1571 English Cawood via Charles Hardwick; also historical intro 1563 Wolfe Latin, omission of article XXIX in 1563 print, restoration 1571. Side-by-side American 1801 is NOT English 1571. Not direct original 1571 edition. REF-P26 Folger original CATALOG_ONLY remains unraised.",
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "id": "REF-S85",
+      "documentYear": 1567,
+      "title": "Records of the Parliaments of Scotland, Historical and Editorial Introductions, K M Brown and colleagues",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.rps.ac.uk/static/rae/historicalintro6.html",
+      "verificationNote": "2026-11-07: academic RPS historical section Reformation 1560-1603 and editorial intro directly read. Scottish parliamentary Protestant confession 1560 without Crown sanction, re-enacted December 1567; changes in royal/estate balance. Institutional research narrative, not full 1560 original manuscript. Distinguish RPS 1567 translation's skipped heading 13 from standard 25-chapter text.",
       "checkedAt": "2026-11-07"
     }
   ]
