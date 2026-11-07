@@ -246,6 +246,27 @@ class ActualSynchronizationTests(unittest.TestCase):
         self.assertIn("DAVENANT_1650_THREE_PRINT_LOCI_VERIFIED", text)
         self.assertIn("DABNEY_FULL_BOOK_COLLATION_HOLD", text)
 
+    def test_article11_named_judas_primary_witnesses_and_hebrews_hold(self):
+        text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article11_bought_apostates_covenant_blood_and_weak_brother.md").read_text(encoding="utf-8")
+        cards = (ROOT / "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md").read_text(encoding="utf-8")
+        p17 = (ROOT / "docs/research/atonement/17_quote_mining_and_theological_equivocation.md").read_text(encoding="utf-8")
+        for marker in (
+            "14.1. Иуда Искариот", "14.2. Сильнейшее широкое возражение",
+            "14.3. Граница свидетельства о Прокопенко",
+            "A Display of Arminianism", "Стэнли Гауэр",
+            "redemptus erat", "Сперджен", "Девенант",
+            "392–398", "1855", "543–548",
+            "JUDAS_NAMED_REDEMPTION_QUOTE_HOLD",
+            "2026_ORAL_RESPONSE_HOLD",
+            "OWEN_OTHER_LOCATORS_HOLD",
+            "HEBREWS_EXEGESIS_HOLD", "PUBLICATION_HOLD",
+        ):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, text)
+        self.assertIn("543–548", cards)
+        self.assertIn("§11", p17)
+        self.assertIn("Иуда", text)
+
     def test_article13_time_decree_application_and_gill_countercase(self):
         text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md").read_text(encoding="utf-8")
         for marker in (
