@@ -1,0 +1,66 @@
+#!/usr/bin/env python3
+"""Regression guards for Zurich 1523/1525 evidence limits and actual manuscript."""
+from pathlib import Path
+import json
+import re
+import unittest
+
+HERE = Path(__file__).resolve().parent
+CH = HERE / "episode04_zurich_zwingli_1523_1525_manuscript.md"
+
+class Episode04HistoricalEvidenceTests(unittest.TestCase):
+    def test_navigation_and_publication_hold(self):
+        self.assertTrue(CH.is_file())
+        s = CH.read_text(encoding="utf-8")
+        self.assertTrue(s.startswith("# Эпизод 04."))
+        self.assertIn("RESEARCH_MANUSCRIPT_DRAFT", s)
+        self.assertIn("PUBLICATION_HOLD", s)
+        self.assertIn("не выполнена", s)
+        self.assertGreaterEqual(len(s.split()), 1800)
+        for f in ("README.md", "SELF_PLAN.md", "04_series_blueprint.md", "episode03_luther_worms_1520_1521_manuscript.md"):
+            with self.subTest(file=f):
+                self.assertIn(CH.name, (HERE / f).read_text(encoding="utf-8"))
+
+    def test_four_archival_objects_are_distinct_and_not_falsely_read(self):
+        j = json.loads((HERE/"source-registry-v1.json").read_text(encoding="utf-8"))
+        src = {x["id"]: x for x in j["sources"]}
+        for id_,exact_url in {
+            "REF-P67": "ID=4652025",
+            "REF-P68": "ID=4652027",
+            "REF-P69": "ID=1158607",
+            "REF-P70": "ID=4652028",
+        }.items():
+            with self.subTest(id=id_):
+                o=src[id_]
+                self.assertEqual(o["accessState"],"CATALOG_ONLY")
+                self.assertEqual(o["locatorState"],"COARSE_LOCATOR_ONLY")
+                self.assertIn("ARCHIVE_HOLD",o["holds"])
+                self.assertIn("PUBLICATION_HOLD",o["holds"])
+                self.assertIn(exact_url,o["url"])
+        self.assertNotEqual(src["REF-P68"]["url"],src["REF-P69"]["url"])
+        self.assertEqual(src["REF-P71"]["documentYear"],1524)
+        self.assertIn("ARCHIVE_HOLD",src["REF-P71"]["holds"])
+        self.assertEqual(src["REF-S73"]["evidenceClass"],"B1")
+
+    def test_incompatible_conclusions_remain_rejected(self):
+        s = (HERE / "03_claim_verification_register.md").read_text(encoding="utf-8")
+        rows = {}
+        for line in s.splitlines():
+            cols = [part.strip() for part in line.split("|")]
+            if len(cols) > 2 and cols[1].startswith("C") and cols[1][1:].isdigit():
+                rows[int(cols[1][1:])] = line
+        for n in range(236,243):
+            with self.subTest(n=n):
+                self.assertIn(n,rows)
+                self.assertIn("REJECTED_FORMULATION",rows[n])
+                self.assertIn("PUBLICATION_HOLD",rows[n])
+        self.assertIn("REF-P68",rows[239])
+        self.assertIn("REF-P69",rows[239])
+        self.assertIn("REF-S73",rows[239])
+        chapter = CH.read_text(encoding="utf-8")
+        for token in ("3 января", "29 января", "12 января", "18 января", "21 января", "5 сентября 1524", "в течение восьми дней"):
+            with self.subTest(token=token):
+                self.assertIn(token,chapter)
+
+if __name__ == "__main__":
+    unittest.main()

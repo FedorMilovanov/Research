@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 154,
+  "sourceCount": 160,
   "sources": [
     {
       "id": "REF-P01",
@@ -3027,6 +3027,119 @@
       "url": "https://tueditions.ulb.tu-darmstadt.de/v/pa000008-0107",
       "checkedAt": "2026-11-07",
       "verificationNote": "Production scholarly HTML article (not experimental preview site) directly checked: decision 8 May, postponed signature 12 May, reading before certain estates 25 May, signatures of German/Latin texts and publication mandate 26 May. Official German first print VD16 D924 not identical to now-lost German original parchment formerly seen by Wrede; survives at BSB. Latin print Vatican Arm LXIV 17 not same physical object as signed original. Differentiated legislation and uneven local enforcement; research-critical historical account, not all original images collated. Site suggested citation year 2026."
+    },
+    {
+      "id": "REF-P67",
+      "documentYear": 1525,
+      "title": "Zurich Council, 12 January 1525: council-book notice on infant baptism, B VI 248 fol.226v entry 1 (QGTS I no.21; Egli no.617)",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=4652025",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Official archive catalogue directly checked. The council-book entry on announcement from the pulpit is expressly marked incomplete. Its displayed title says 'Verbot der Kindertaufe'; THIS CATALOGUE HEADING IS AMBIGUOUS/CONTRADICTED by contemporary 18 January infant-baptism-duty mandate and scholarly UZH summary. No original page image or QGTS I no.21 diplomatic text read; do not quote original German or infer the substantive law from the displayed heading alone."
+    },
+    {
+      "id": "REF-P68",
+      "documentYear": 1525,
+      "title": "Zurich Council, 18 January 1525: council-book entry B VI 248 fol.227v entry 1, QGTS I no.24, Egli no.621",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=4652027",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Original council register exists per official catalog, documentary date 1525-01-18, folio 227v entry 1, QGTS I no.24. Important metadata anomaly: catalog title says renewed 'Verbot der Kindertaufe' while same title also mentions expulsion for failed infant baptism in 8 days and separate official original mandate REF-P69 says DUTY of infant baptism; University of Zurich independent 2025 explanatory publication supports duty. CATALOG_ONLY: no original text, no literal quote, no verified enforcement outcome."
+    },
+    {
+      "id": "REF-P69",
+      "documentYear": 1525,
+      "title": "Zurich mayor and councils, 18 January 1525: issued single-sheet infant-baptism mandate A 42.1.12 Nr.2 (Widikon), Zürcher Kirchenordnungen I no.15 / Egli no.622",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1158607",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Official Staatsarchiv Zurich catalog directly checked: distinct issued original (Ausfertigung, Einzelblatt) 22x27cm paper, verso 'Widikon', municipal mandate titled obligation of infant baptism, dated 18 Jan 1525. This is NOT council-minute REF-P68. Edition Zürcher Kirchenordnungen I no.15, Egli 1879 no.622. No original image or critical-edition text read; 8-day sanction context from separate records and UZH REF-S73, not direct reading of this leaf. Publication and reproduction rights not inferred from date of document."
+    },
+    {
+      "id": "REF-P70",
+      "documentYear": 1525,
+      "title": "Zurich Council, 21 January 1525: enforcement decision and end of debate with Grebel/Manz, B VI 248 fol.227v entry 2 (QGTS I no.26 / Egli no.624)",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=4652028",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Staatsarchiv Zurich catalogue directly checked: council register entry dated 1525-01-21, folio 227v entry 2, on implementation of ordinance and stopping further discussions with Conrad Grebel/Felix Manz. Edition QGTS I no.26, Egli no.624. CATALOG_ONLY, no original German full text or execution record read; decision to enforce is not proof that every expulsion or sanction was actually carried out."
+    },
+    {
+      "id": "REF-P71",
+      "documentYear": 1524,
+      "title": "Conrad Grebel and fellow signers to Thomas Muentzer, 5 September 1524, English translation GHDI from QGTS I (1952) pp.13-19",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://germanhistorydocs.org/en/from-the-reformations-to-the-thirty-years-war-1500-1648/definition-and-demarcation-conrad-grebel-and-others-to-thomas-muentzer-september-5-1524",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "GHDI historical participant letter (translated text) directly checked in English webpage: church community and rule (sections near Matt 18); rejection of defense by worldly sword; adult baptism tied to faith; objection to infant baptism. Original German printed QGTS I pp13-19 NOT directly collated; exact English phrases are NOT verified literal sixteenth-century German quotations. Whether letter reached Muentzer is uncertain. Modern English translation carries separate rights; no extensive reproduction."
+    },
+    {
+      "id": "REF-S73",
+      "documentYear": 2025,
+      "title": "University of Zurich Institut fuer Schweizerische Reformationsgeschichte, presentation of Quellen zur Geschichte der Taeufer in der Schweiz (2025)",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.irg.uzh.ch/de/publikationen/alle_publikationen/250526_ScheideggerJammerthal_QuellenTaeuferBd6.html",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Directly read institutional modern scholarly/publication summary stating on 18 Jan 1525 City Council ordered infant baptism within eight days on pain of expulsion, and on evening 21 Jan adult baptisms took place at Felix Manz's home. This is B1 historical explanatory source, NOT a primary council act or witnessed German textual collation. QGTS vol5/6 concern much later periods; do not misrepresent these volumes as original edition for January 1525 (QGTS I)."
     }
   ]
 }
