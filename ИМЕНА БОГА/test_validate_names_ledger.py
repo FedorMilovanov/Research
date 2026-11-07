@@ -6,7 +6,7 @@ import json
 import unittest
 from pathlib import Path
 
-from validate_names_ledger import validate, validate_extension, validate_source_access, validate_apocalyptic, validate_prophetic_namings
+from validate_names_ledger import validate, validate_extension, validate_source_access, validate_apocalyptic, validate_prophetic_namings, validate_six_title_attestations
 
 ROOT = Path(__file__).resolve().parent
 
@@ -17,6 +17,7 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         cls.baseline = json.loads((ROOT / "data" / "names_ledger_v1.json").read_text(encoding="utf-8"))
         cls.extension = json.loads((ROOT / "data" / "names_extension_ledger_v1.json").read_text(encoding="utf-8"))
         cls.sources = json.loads((ROOT / "data" / "source_access_register_v1.json").read_text(encoding="utf-8"))
+        cls.title_contract = json.loads((ROOT / "data" / "attestation_contract_v1.json").read_text(encoding="utf-8"))
 
     def test_current_research_corpora_pass_structure(self) -> None:
         self.assertEqual([], validate(self.baseline))
@@ -24,6 +25,7 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertEqual([], validate_source_access(self.sources))
         self.assertEqual([], validate_apocalyptic(self.baseline, self.extension))
         self.assertEqual([], validate_prophetic_namings(self.baseline))
+        self.assertEqual([], validate_six_title_attestations(self.baseline, self.title_contract))
 
     def test_altar_cannot_be_promoted_to_personal_name(self) -> None:
         data = copy.deepcopy(self.baseline)
@@ -392,6 +394,116 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         witness["edition"] = "SBLGNT 2010 via BibleGateway"
         self.assertTrue(any("edition-specific rights/witness provenance" in issue
                             for issue in validate_prophetic_namings(data)))
+
+
+    def test_six_title_corpus_contract_requires_22_exact_witnesses(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(x for x in data["records"] if x["id"] == "sabaoth")
+        row["attestations"].pop()
+        self.assertTrue(any("22 reviewed contextual" in e for e in validate_six_title_attestations(data, self.title_contract)))
+
+    def test_six_title_contract_core_fields_cannot_be_weakened(self) -> None:
+        contract = copy.deepcopy(self.title_contract)
+        contract["requiredFields"].remove("sourceUrl")
+        self.assertTrue(any("schema weakened" in e for e in validate_six_title_attestations(self.baseline, contract)))
+
+    def test_six_title_source_url_must_match_independently_locked_contract(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(x for x in data["records"] if x["id"] == "qedosh-yisrael")
+        row["attestations"][1]["sourceUrl"] = "https://example.com/unknown-greek"
+        self.assertTrue(any("field sourceUrl differs" in e for e in validate_six_title_attestations(data, self.title_contract)))
+
+    def test_sabaoth_in_samuel_lamed_is_preserved(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(x for x in data["records"] if x["id"] == "sabaoth")
+        row["attestations"][0]["surface"] = "יְהוָה צְבָאוֹת"
+        self.assertTrue(any("1 Sam 1:3 lamed" in e for e in validate_six_title_attestations(data, self.title_contract)))
+
+    def test_sabaoth_james_genitive_not_roman_nominative(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(x for x in data["records"] if x["id"] == "sabaoth")
+        row["attestations"][4]["surface"] = "κύριος Σαβαὼθ"
+        self.assertTrue(any("James genitive Greek" in e for e in validate_six_title_attestations(data, self.title_contract)))
+
+    def test_sabaoth_romans_nominative_not_james_genitive(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(x for x in data["records"] if x["id"] == "sabaoth")
+        row["attestations"][5]["surface"] = "Κυρίου Σαβαὼθ"
+        self.assertTrue(any("Romans nominative Greek" in e for e in validate_six_title_attestations(data, self.title_contract)))
+
+    def test_qanna_naming_is_not_erased_from_exodus_34_14(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(x for x in data["records"] if x["id"] == "el-qanna")
+        row["attestations"][0]["nameClause"] = ""
+        self.assertTrue(any("naming formula suppressed" in e for e in validate_six_title_attestations(data, self.title_contract)))
+
+    def test_qanna_deuteronomy_is_descriptor_not_repeated_naming_ritual(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(x for x in data["records"] if x["id"] == "el-qanna")
+        row["attestations"][1]["selfNamingInVerse"] = True
+        self.assertTrue(any("wrongly promoted" in e for e in validate_six_title_attestations(data, self.title_contract)))
+
+    def test_deuteronomy_other_rock_cannot_be_yhwh(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(x for x in data["records"] if x["id"] == "tsur")
+        next(x for x in row["attestations"] if x["verse"] == "Deuteronomy 32:37")["isDivineDesignation"] = True
+        self.assertTrue(any("foreign rock falsely" in e for e in validate_six_title_attestations(data, self.title_contract)))
+
+    def test_deuteronomy_two_contrasted_rocks_cannot_be_collapsed(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(x for x in data["records"] if x["id"] == "tsur")
+        next(x for x in row["attestations"] if x["verse"] == "Deuteronomy 32:31")["referentClass"] = "YHWH_ONLY"
+        self.assertTrue(any("foreign rock falsely" in e for e in validate_six_title_attestations(data, self.title_contract)))
+
+    def test_isaiah_holy_one_grammatical_object_is_marked(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(x for x in data["records"] if x["id"] == "qedosh-yisrael")
+        row["attestations"][0]["grammaticalMarker"] = ""
+        self.assertTrue(any("Isaiah 1:4 object marker" in e for e in validate_six_title_attestations(data, self.title_contract)))
+
+    def test_adonai_moses_uses_twice_in_exodus_34_9(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(x for x in data["records"] if x["id"] == "adonai")
+        row["attestations"][0]["tokenOccurrenceCount"] = 1
+        self.assertTrue(any("repeated Adonai" in e for e in validate_six_title_attestations(data, self.title_contract)))
+
+    def test_adoni_human_address_cannot_become_divine(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(x for x in data["records"] if x["id"] == "adonai")
+        row["negativeControls"] = []
+        self.assertTrue(any("human adoni negative control" in e for e in validate_six_title_attestations(data, self.title_contract)))
+
+    def test_psalm_eight_adonenu_cannot_be_normalized_to_adonai(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(x for x in data["records"] if x["id"] == "adonai")
+        row["attestations"][2]["surface"] = "יְהוָה אֲדֹנָי"
+        self.assertTrue(any("Psalm 8 suffixed" in e for e in validate_six_title_attestations(data, self.title_contract)))
+
+    def test_elohim_plural_noun_does_not_override_singular_bara(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(x for x in data["records"] if x["id"] == "elohim")
+        row["attestations"][0]["verbAgreement"] = "plural"
+        self.assertTrue(any("singular agreement" in e for e in validate_six_title_attestations(data, self.title_contract)))
+
+    def test_exodus_20_2_versification_and_other_gods_are_both_required(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(x for x in data["records"] if x["id"] == "elohim")
+        rx = row["attestations"][1]
+        rx["numbering"]["mechonMamreHebrew"] = "Exodus 20:3"
+        rx["referentClass"] = "YHWH"
+        self.assertTrue(any("Exodus 20 false gods or versification" in e for e in validate_six_title_attestations(data, self.title_contract)))
+
+    def test_cambridge_article_rights_are_ccby_but_not_bible_versions(self) -> None:
+        data = copy.deepcopy(self.sources)
+        row = next(x for x in data["records"] if x["id"] == "SRC-CAMBRIDGE-GOD-PRONOUNS")
+        row["licenseScope"] = "ALL_BIBLE_VERSIONS_AND_IMAGES"
+        self.assertTrue(any("Nicholas Adams Cambridge" in e for e in validate_source_access(data)))
+
+    def test_suchard_historical_grammar_is_still_secondary(self) -> None:
+        data = copy.deepcopy(self.sources)
+        row = next(x for x in data["records"] if x["id"] == "SRC-SUCHARD-ELOHIM-2025")
+        row["evidenceClass"] = "A1"
+        self.assertTrue(any("Suchard 2025" in e for e in validate_source_access(data)))
 
 
 if __name__ == "__main__":
