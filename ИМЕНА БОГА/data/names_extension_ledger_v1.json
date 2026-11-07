@@ -589,7 +589,8 @@
           "textWitnessFull": "καὶ δώσει αὐτῷ κύριος ὁ θεὸς τὸν θρόνον Δαυεὶδ",
           "attestationId": "ATT-EXT-KYRIOS-HO-THEOS-01",
           "editionId": "ED-THGNT-2017-BIBLEGATEWAY",
-          "sourceId": "SRC-THGNT-LUKE"
+          "sourceId": "SRC-THGNT-LUKE",
+          "editionPinStatus": "MULTI_EDITION_DISPLAY_REQUIRES_RECHECK"
         }
       ],
       "contextualAssertion": "Luke1:32 THGNT Gabriel is literary speaker to Mary, Lord God is grammatical subject of δώσει, Jesus is recipient αὐτῷ, throne of David promised object. Do not collapse speaker/agent/recipient. SBLGNT displays Δαυὶδ vs THGNT Δαυεὶδ in David."
@@ -649,7 +650,8 @@
           "intertext": "Psalm 23 Hebrew shepherd is separate original-language wording",
           "attestationId": "ATT-EXT-POIMEN-HO-KALOS-01",
           "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
-          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT",
+          "editionPinStatus": "URL_VERSION_PINNED"
         },
         {
           "locusId": "ext-poimen-john1014",
@@ -671,7 +673,8 @@
           "intertext": "Psalm 23 Hebrew distinct",
           "attestationId": "ATT-EXT-POIMEN-HO-KALOS-02",
           "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
-          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT",
+          "editionPinStatus": "URL_VERSION_PINNED"
         }
       ],
       "contextualAssertion": "John10:11 and 14 Jesus says ego eimi WITH explicit predicate Good Shepherd; not John8:58 absolute-type Jesus declaration. Greek SBLGNT 10:14 has separate edition comparison AFTER the predicate, not variation in designation."
@@ -730,7 +733,8 @@
           "addressee": "Martha",
           "attestationId": "ATT-EXT-ANASTASIS-ZOE-01",
           "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
-          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT",
+          "editionPinStatus": "URL_VERSION_PINNED"
         }
       ],
       "contextualAssertion": "John11:25 Jesus speaking to Martha: explicit predicates ἡ ἀνάστασις καὶ ἡ ζωή after Ἐγώ εἰμι; not bare formula John8:58."
@@ -785,7 +789,8 @@
           "rightsState": "RIGHTS_UNKNOWN",
           "attestationId": "ATT-EXT-HO-ON-ERCHOMENOS-01",
           "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
-          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT",
+          "editionPinStatus": "URL_VERSION_PINNED"
         },
         {
           "verse": "Revelation 1:8",
@@ -800,7 +805,8 @@
           "rightsState": "RIGHTS_UNKNOWN",
           "attestationId": "ATT-EXT-HO-ON-ERCHOMENOS-02",
           "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
-          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT",
+          "editionPinStatus": "URL_VERSION_PINNED"
         }
       ]
     },
@@ -847,7 +853,8 @@
           "rightsState": "RIGHTS_UNKNOWN",
           "attestationId": "ATT-EXT-ARCHE-TELOS-01",
           "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
-          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT",
+          "editionPinStatus": "URL_VERSION_PINNED"
         },
         {
           "verse": "Revelation 22:13",
@@ -862,7 +869,8 @@
           "rightsState": "RIGHTS_UNKNOWN",
           "attestationId": "ATT-EXT-ARCHE-TELOS-02",
           "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
-          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT",
+          "editionPinStatus": "URL_VERSION_PINNED"
         }
       ]
     }
