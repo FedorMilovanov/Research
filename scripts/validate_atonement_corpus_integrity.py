@@ -1246,7 +1246,7 @@ else:
             continue
         try:
             import subprocess as _sp
-            blob = _sp.run(["git", "show", "%s:%s" % (rc, REG.relative_to(ROOT))], cwd=ROOT,
+            blob = _sp.run(["git", "show", "%s:%s" % (rc, REG.relative_to(ROOT).as_posix())], cwd=ROOT,
                            capture_output=True, text=True)
             if blob.returncode != 0 or tok not in blob.stdout:
                 _badRec.append(tok)

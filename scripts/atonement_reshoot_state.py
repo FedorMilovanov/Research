@@ -41,6 +41,7 @@
 from __future__ import annotations
 
 import collections
+from datetime import datetime, timezone
 import glob
 import hashlib
 import json
@@ -1291,7 +1292,7 @@ def tree_counts_trap():
         for relpath, content in files.items():
             dst = Path(tmp) / relpath
             dst.parent.mkdir(parents=True, exist_ok=True)
-            dst.write_text(content, encoding="utf-8")
+            dst.write_text(content, encoding="utf-8", newline="\n")
         t = tree_counts(Path(tmp))
         problems = []
         if (t["docs"][0], t["docsNumbered"]) != (4, 3) or t["rootmd"][0] != 2:
@@ -1306,9 +1307,9 @@ def tree_counts_trap():
                             "файлов по ланам %d (4)" % (t["massRows"], t["massSections"], t["sub"][0]))
         # посадка: правка в файле обязана двигать числа
         (Path(tmp) / "docs/research/atonement/01_a.md").write_text("одна\nвторая\nтретья\n",
-                                                                    encoding="utf-8")
+                                                                    encoding="utf-8", newline="\n")
         (Path(tmp) / "docs/research/atonement/35_four_point_authors_mass_registry.md").write_text(
-            mass_text + "| FP-3 | 30 |\n", encoding="utf-8")
+            mass_text + "| FP-3 | 30 |\n", encoding="utf-8", newline="\n")
         (Path(tmp) / "ИСКУПЛЕНИЕ/nt/a.md").unlink()
         t2 = tree_counts(Path(tmp))
         moved = []
@@ -2111,7 +2112,7 @@ def main() -> int:
         raise SystemExit("употребление: atonement_reshoot_state.py "
                          "[--check|--write|--report|--rule-trap]")
     global now
-    now = subprocess.run(["date", "-u", "+%Y-%m-%dT%H:%M:%SZ"], capture_output=True, text=True).stdout.strip()
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     corp = json.loads(CORPUS.read_text(encoding="utf-8"))
     idx_file = json.loads(INDEX.read_text(encoding="utf-8"))
     if mode == "--report":
