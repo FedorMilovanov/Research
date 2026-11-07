@@ -461,7 +461,7 @@ def validate_source_access(sources: dict) -> list[str]:
             if ((source.get("accessState"), source.get("locatorState"))
                  != ("CATALOG_ONLY", "COARSE_LOCATOR_ONLY")
                 or source.get("rightsState") != "PERMISSION_REQUIRED"
-                or "not" not in str(source.get("forbiddenUse", "")).lower()):
+                or "paywalled catalog" not in str(source.get("forbiddenUse", "")).lower()):
                 errors.append(f"{prefix}: Barr paywalled full article cannot be promoted from catalog")
         if rid == "SRC-RAHLFS-EXODUS17":
             if (source.get("rightsState") != "PERMISSION_REQUIRED" or
