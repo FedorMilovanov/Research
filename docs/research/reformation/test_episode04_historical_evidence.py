@@ -80,6 +80,23 @@ class Episode04HistoricalEvidenceTests(unittest.TestCase):
         self.assertIn("PUBLICATION_HOLD", chapter)
         self.assertIn("EXTERNAL_REVIEW_OPEN", (HERE/"SELF_PLAN.md").read_text(encoding="utf-8"))
 
+    def test_faber_and_grebel_critical_counterposition(self):
+        source = json.loads((HERE / "source-registry-v1.json").read_text(encoding="utf-8"))
+        s = {v["id"]: v for v in source["sources"]}
+        self.assertEqual(s["REF-S75"]["evidenceClass"], "B1")
+        self.assertEqual(s["REF-S75"]["accessState"], "PARTIAL_OBJECT")
+        self.assertIn("ARCHIVE_HOLD", s["REF-S75"]["holds"])
+        self.assertIn("FULL ARTICLE BODY NOT READ", s["REF-S75"]["verificationNote"])
+        chapter = CH.read_text(encoding="utf-8")
+        before_apparatus = chapter.split("## Источниковедческий аппарат")[0]
+        for phrase in ("Иоганна Фабера", "евхаристической жертвы", "церковного пения на немецком языке", "Еф. 5", "Кол. 3", "общая чаша"):
+            self.assertIn(phrase, before_apparatus)
+        self.assertIn("REF-S75", chapter)
+        self.assertIn("INDEPENDENT_EXTERNAL_REVIEW_OPEN", (HERE/"SELF_PLAN.md").read_text(encoding="utf-8"))
+        ledger = (HERE/"03_claim_verification_register.md").read_text(encoding="utf-8")
+        self.assertIn("| C246 |", ledger)
+        self.assertIn("| C247 |", ledger)
+
     def test_incompatible_conclusions_remain_rejected(self):
         s = (HERE / "03_claim_verification_register.md").read_text(encoding="utf-8")
         rows = {}

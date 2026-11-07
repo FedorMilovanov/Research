@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 162,
+  "sourceCount": 163,
   "sources": [
     {
       "id": "REF-P01",
@@ -3176,6 +3176,24 @@
       "url": "https://hls-dhs-dss.ch/de/articles/013328/2013-01-29/",
       "checkedAt": "2026-11-07",
       "verificationNote": "German institutional historical-lexicon text directly read and cross-checked with Zentralbibliothek Zurich historical exhibition https://www.zb.uzh.ch/de/fokus/beitrag/reformation : Second Disputation late October 1523 on Mass/images, Zurich council political implementation, image removal actually in JUNE 1524, Mass abolished and new Lord's Supper in APRIL 1525, founding of Prophezey Bible interpretation in 1525. These are institutional B1 chronological synthesis, NOT newly collated 1523/1524 municipal original ordinances. No automatic publication or photography rights."
+    },
+    {
+      "id": "REF-S75",
+      "documentYear": 2009,
+      "title": "Keith D. Lewis, Unica Oblatio Christi: Eucharistic Sacrifice and the First Zürich Disputation, Renaissance and Reformation (scholarly article metadata and abstract)",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://jps.library.utoronto.ca/index.php/renref/article/view/11429",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Official journal HTML metadata/abstract DIRECTLY READ. Historical research article on 29 January 1523 disputation: Zwingli and Bishop of Constance's vicar Johann Faber argued over eucharistic sacrifice; Faber's case included scholastic and other doctrinal authorities; polemical atmosphere prevented clarity. Article issue-year and online publish date metadata can differ: online page published 2009-01-20; no assumption the paper was originally written/published in 2009 print. FULL ARTICLE BODY NOT READ. No original Faber text or purported transcript collated. Scholarly B1 abstract cannot ground a literal quote or prove exact words, triumph or each participant's motives; REF-P55 Hegenwald partisan printed witness has different evidentiary level. Archive/rights/publication HOLDs kept."
     }
   ]
 }
