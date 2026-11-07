@@ -20,15 +20,15 @@
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 16,
-    "provenanceRegressionTests": 161,
+    "provenanceRegressionTests": 185,
     "canonicalEditions": 4,
-    "curatedClaims": 49,
+    "curatedClaims": 56,
     "allAttestationForeignKeys": 105,
     "editionSpecificGreekUrlsVerified": 18,
     "unselectedGreekEditionUrls": 0,
-    "attestationsReferencedByClaims": 63,
-    "attestationsWithoutClaimReference": 42,
-    "typedClaimRelations": 35,
+    "attestationsReferencedByClaims": 71,
+    "attestationsWithoutClaimReference": 34,
+    "typedClaimRelations": 41,
     "correctedExodusDivineReferentRows": 3,
     "semanticScopeAudits": 15,
     "independentScholarlyClaimApprovals": 0,
@@ -45,7 +45,8 @@
     "covenantShepherdAttestationsGuarded": 8,
     "covenantSpeakerSpeechVersusPrayerDistinctions": 2,
     "johnEgoDiscourseGuards": 4,
-    "yirehNissiPlaceAltarExplanationGuards": 4
+    "yirehNissiPlaceAltarExplanationGuards": 4,
+    "shaddaiSabaothSpeakerGuards": 8
   },
   "allowedStatuses": [
     "DONE",
@@ -219,9 +220,13 @@
         "23_YIREH_NISSI_ANSWER_PLACE_MOUNTAIN_EDITION_CRUX_20261107.md: original MT Gen22:8,14 and MT/LXX Ex17:16 with attributed NET alternatives and explicit object naming in 22:14 / Ex17:15",
         "data/names_claim_registry_v1.json: four provisional research-only claim IDs across four previously unlinked observations, four typed semantic relations",
         "validate_names_provenance.py: four independently pinned exact verse/role/textual-state observation contracts plus source-specific NET/LXX attributed-source gates",
-        "test_validate_names_provenance.py: 19 added anti-conflation/edition/grammatical-source mutation tests; 161 provenance tests overall"
+        "test_validate_names_provenance.py: 19 added anti-conflation/edition/grammatical-source mutation tests; 161 provenance tests overall",
+        "24_EL_SHADDAI_SABAOTH_SPEECH_ORIGIN_BOUNDARIES_20261107.md: 8 MT loci in Gen17,28,35,Ex6,1Sam1,17,Isa6,Zech10; NET Ex6 commentary properly attributed, lexical/revelation controversy unresolved",
+        "data/names_claim_registry_v1.json: 7 new research-only claims, 6 typed relations, original stable attestation IDs preserved",
+        "validate_names_provenance.py: 8 independent script-level printed form/speaker/role/url locks plus separate guarded unresolved Shaddai etymology and NET source attribution",
+        "test_validate_names_provenance.py: 24 new adversarial and positive regressions"
       ],
-      "verification": "105_STABLE_ATTESTATIONS_SOURCE_FK_EDITION_FK; 48_SOURCE_RECORDS; 49_PROVISIONAL_CLAIMS; 35_TYPED_RELATIONS; 63_OF_105_CLAIM_LINKED; 42_UNLINKED; 4_YIREH_NISSI_TEXT_ROLE_GUARDS; 342_TESTS_EXPECTED_GITHUB_CI; 0_CRITICAL_MANUSCRIPT_COLLATIONS; 0_PRODUCT_APPROVALS",
+      "verification": "105_STABLE_ATTESTATION_SOURCE_EDITION_FK; 48_REGISTERED_SOURCES; 56_PROVISIONAL_CLAIMS; 41_RELATIONS; 71_OF_105_LINKED; 34_WITHOUT_CLAIM; 8_NEW_SPEECH_GUARDS; 366_TESTS_EXPECTED_GITHUB_EXACT_SHA_CI; CRITICAL_COLLATIONS_0; PRODUCT_APPROVALS_0",
       "closureAt": null,
       "owner": "Research editorial"
     },
@@ -620,7 +625,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NG-02: remaining 42 previously attestation/source/edition-linked observations without curated claim links. Next bounded wave prioritize historical divine titles El Shaddai (Gen 17:1,28:3,35:11, Ex6:3) and YHWH Sabaoth cross-locus invocation (1 Sam1:3, 17:45, Isa6:3, Zech10:3), with scholarly ambiguity and no forced etymology. 55 historic missing locusId need consumer-compatible versioning plan. Do not claim manuscript critical collation or Product permission.",
+  "nextAction": "NG-02: 34 of 105 existing original-language attestationIds remain without claim-level references, though all are source/edition linked. Next bounded wave: Genesis 14 El Elyon and Exodus 34 / Deut 4 El Qanna name-versus-epithet distinctions; no metric-only artificial claims. Historic 55 missing locusId require backward-compatible consumer policy. Manuscript collation and Product approvals remain separately blocked.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -702,7 +707,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-07",
-    "planStatus": "NG-01 DONE; NG-02 IN_PROGRESS: 49 research-held claims, 35 typed relations, 63 of 105 claim-linked",
+    "planStatus": "NG-01 DONE; NG-02 IN_PROGRESS: 56 provisional claims, 41 relations, 71/105 with narrow source-bound claim links",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -749,14 +754,16 @@
       "4 newly claim-linked John occurrences, four required exact edition URLs, 5 typed relations and 15 negative/positive regression checks; SBLGNT original digital reading verified and human John9:9 negative control retained",
       "Bounded Yireh/Nissi textual pass: Gen22:8 Abraham assurance distinct from naming PLACE Gen22:14, and Niphal mountain formula; no one mandatory English rendering from two verb forms",
       "Ex17:16 digital MT כֵּס 'throne' not conjectural נֵס 'banner'; Rahlfs-Hanhart Greek ἐν χειρὶ κρυφαίᾳ differs from MT, no ancient Vorlage proved",
-      "4 newly linked attestations, 4 source-bound research-held claims, 4 typed relations, 19 adversarial checks, 4 independent source-text guards"
+      "4 newly linked attestations, 4 source-bound research-held claims, 4 typed relations, 19 adversarial checks, 4 independent source-text guards",
+      "7 research-held claims over 8 original MT El Shaddai and YHWH Sabaoth observations, 6 new semantic relations, 24 adversarial/positive tests, exact voice and printed-vocalization locks",
+      "Ex6:3 debated revelation/existing use in Genesis and unresolved Shaddai etymology not marked scientific consensus; original NET source registered and used without new source duplication"
     ],
     "stillOpen": [
-      "NG-02: 42/105 original-language attestations without claim-level curated links despite 105 source/edition FKs",
-      "55 historic missing locusIds remain a versioning/consumer compatibility issue",
-      "Critical Hebrew/Greek manuscript collation and full historical/grammatical scholarly comparison not done",
-      "All 49 claims research-held, not verified by independent scholarly review, Product publication blocked",
-      "New GitHub SHA exact CI must be checked before calling this wave green"
+      "NG-02: 34/105 attestationIds without narrow claim links, though all retain edition/source FKs",
+      "55 old missing locusId need consumer/versioning policy before any backfill",
+      "Critical manuscripts, Shaddai name historical-etymology and multi-view Exodus6 scholarly debate remain open",
+      "56 research-only claims, 0 scientific signoffs and Product approvals",
+      "Exact SHA CI must be checked before considering wave structurally green"
     ]
   },
   "originalResearchCheckpoint": {
@@ -773,14 +780,14 @@
       "sourceForeignKeys": 105,
       "editionForeignKeys": 105,
       "canonicalEditions": 4,
-      "curatedClaims": 49,
+      "curatedClaims": 56,
       "locusIdMissingHistorically": 55,
       "editionSelectionRecheckHolds": 0,
-      "notes": "Gen22:8 Abraham-to-Isaac assurance versus 22:14 Abraham's naming of a place versus mountain formula using Niphal; Ex17:15 Moses names altar, 17:16 MT obscure כֵּס vs proposed נֵס and LXX secret hand, no manuscript collation. 63/105 linked, 42 without; all research-only.",
-      "typedClaimRelations": 35,
+      "notes": "El Shaddai direct divine self-speech vs Isaac benediction vs Ex6 retrospective statement with unresolved revelation/etymology; YHWH Sabaoth in narrator, David, seraphim, Zechariah mixed speech. 71/105 linked; no critical witnesses or Product license.",
+      "typedClaimRelations": 41,
       "editionSpecificDigitalVerseRechecksCompleted": 18,
-      "attestationsLinkedToClaims": 63,
-      "attestationsWithoutClaimReferences": 42,
+      "attestationsLinkedToClaims": 71,
+      "attestationsWithoutClaimReferences": 34,
       "divineReferentAddresseeControls": 3,
       "semanticScopeAudits": 15,
       "scholarlyClaimApprovals": 0,
@@ -794,7 +801,8 @@
       "lexicalReferentAndNamedObjectGuards": 8,
       "covenantShepherdAttestationsGuarded": 8,
       "johnEgoDiscourseGuards": 4,
-      "yirehNissiPlaceAltarExplanationGuards": 4
+      "yirehNissiPlaceAltarExplanationGuards": 4,
+      "shaddaiSabaothSpeakerGuards": 8
     }
   }
 }

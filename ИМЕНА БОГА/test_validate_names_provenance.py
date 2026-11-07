@@ -990,6 +990,142 @@ class ProvenanceGraphTests(unittest.TestCase):
         row["relationType"]="CONTRASTS_REFERENT"
         self.assertTrue(any("required semantic boundary" in e for e in self.check(claims=d)))
 
+    def test_shaddai_gen17_speaker_cannot_be_isaac(self) -> None:
+        d,o=self.mutate("el-shaddai","baseline",0)
+        o["speaker"]="Isaac"
+        self.assertTrue(any("Shaddai/Sabaoth speaker and printed surface guard changed" in e for e in self.check(baseline=d)))
+
+    def test_shaddai_gen17_self_speech_cannot_be_blessing(self) -> None:
+        d,o=self.mutate("el-shaddai","baseline",0)
+        o["speechAct"]="benediction"
+        self.assertTrue(any("Shaddai/Sabaoth speaker and printed surface guard changed" in e for e in self.check(baseline=d)))
+
+    def test_shaddai_gen28_benediction_speaker_cannot_be_yhwh(self) -> None:
+        d,o=self.mutate("el-shaddai","baseline",1)
+        o["speaker"]="YHWH"
+        self.assertTrue(any("Shaddai/Sabaoth speaker and printed surface guard changed" in e for e in self.check(baseline=d)))
+
+    def test_shaddai_gen28_original_prefix_must_remain(self) -> None:
+        d,o=self.mutate("el-shaddai","baseline",1)
+        o["surface"]="אֵל שַׁדַּי"
+        self.assertTrue(any("Shaddai/Sabaoth speaker and printed surface guard changed" in e for e in self.check(baseline=d)))
+
+    def test_shaddai_gen35_god_not_isaac(self) -> None:
+        d,o=self.mutate("el-shaddai","baseline",2)
+        o["speaker"]="Isaac"
+        self.assertTrue(any("Shaddai/Sabaoth speaker and printed surface guard changed" in e for e in self.check(baseline=d)))
+
+    def test_shaddai_gen35_self_speech_not_place_naming(self) -> None:
+        d,o=self.mutate("el-shaddai","baseline",2)
+        o["speechAct"]="place_naming"
+        self.assertTrue(any("Shaddai/Sabaoth speaker and printed surface guard changed" in e for e in self.check(baseline=d)))
+
+    def test_shaddai_ex6_vowel_written_form_not_normalized(self) -> None:
+        d,o=self.mutate("el-shaddai","baseline",3)
+        o["surface"]="בְּאֵל שַׁדַּי"
+        self.assertTrue(any("Shaddai/Sabaoth speaker and printed surface guard changed" in e for e in self.check(baseline=d)))
+
+    def test_shaddai_ex6_speaker_is_not_moses(self) -> None:
+        d,o=self.mutate("el-shaddai","baseline",3)
+        o["speaker"]="Moses"
+        self.assertTrue(any("Shaddai/Sabaoth speaker and printed surface guard changed" in e for e in self.check(baseline=d)))
+
+    def test_shaddai_ex6_retrospective_is_not_benediction(self) -> None:
+        d,o=self.mutate("el-shaddai","baseline",3)
+        o["speechAct"]="benediction"
+        self.assertTrue(any("Shaddai/Sabaoth speaker and printed surface guard changed" in e for e in self.check(baseline=d)))
+
+    def test_sabaoth_1sam1_worship_preposition_locked(self) -> None:
+        d,o=self.mutate("sabaoth","baseline",0)
+        o["originalPrefix"]="none"
+        self.assertTrue(any("Shaddai/Sabaoth speaker and printed surface guard changed" in e for e in self.check(baseline=d)))
+
+    def test_sabaoth_1sam1_narrator_not_direct_yhwh_speech(self) -> None:
+        d,o=self.mutate("sabaoth","baseline",0)
+        o["speaker"]="YHWH"
+        self.assertTrue(any("Shaddai/Sabaoth speaker and printed surface guard changed" in e for e in self.check(baseline=d)))
+
+    def test_sabaoth_1sam1_source_not_switched_to_sam17(self) -> None:
+        d,o=self.mutate("sabaoth","baseline",0)
+        o["sourceUrl"]="https://mechon-mamre.org/p/pt/pt08a17.htm"
+        self.assertTrue(any("Shaddai/Sabaoth speaker and printed surface guard changed" in e for e in self.check(baseline=d)))
+
+    def test_sabaoth_david_speech_not_angelic(self) -> None:
+        d,o=self.mutate("sabaoth","baseline",1)
+        o["speaker"]="seraphim addressing each other"
+        self.assertTrue(any("Shaddai/Sabaoth speaker and printed surface guard changed" in e for e in self.check(baseline=d)))
+
+    def test_sabaoth_david_military_context_must_stay(self) -> None:
+        d,o=self.mutate("sabaoth","baseline",1)
+        o["contextClause"]="only angelic forces"
+        self.assertTrue(any("Shaddai/Sabaoth speaker and printed surface guard changed" in e for e in self.check(baseline=d)))
+
+    def test_sabaoth_isaiah_seraphim_not_isaiah(self) -> None:
+        d,o=self.mutate("sabaoth","baseline",2)
+        o["speaker"]="Isaiah"
+        self.assertTrue(any("Shaddai/Sabaoth speaker and printed surface guard changed" in e for e in self.check(baseline=d)))
+
+    def test_sabaoth_isaiah_hymn_not_david_invocation(self) -> None:
+        d,o=self.mutate("sabaoth","baseline",2)
+        o["contextRole"]="warrior_invocation"
+        self.assertTrue(any("Shaddai/Sabaoth speaker and printed surface guard changed" in e for e in self.check(baseline=d)))
+
+    def test_sabaoth_zechariah_mixed_voice_not_only_divine_i(self) -> None:
+        d,o=self.mutate("sabaoth","baseline",3)
+        o["speaker"]="YHWH direct only"
+        self.assertTrue(any("Shaddai/Sabaoth speaker and printed surface guard changed" in e for e in self.check(baseline=d)))
+
+    def test_sabaoth_zechariah_third_person_flock_fixed(self) -> None:
+        d,o=self.mutate("sabaoth","baseline",3)
+        o["referent"]="unknown human general"
+        self.assertTrue(any("Shaddai/Sabaoth speaker and printed surface guard changed" in e for e in self.check(baseline=d)))
+
+
+    def test_shaddai_sabaoth_claim_seven_ids_cover_eight_attestations(self) -> None:
+        exp={
+            "CLM-ELSHADDAI-GEN17-35-DIVINE-SELF":{"ATT-BASE-EL-SHADDAI-01","ATT-BASE-EL-SHADDAI-03"},
+            "CLM-ELSHADDAI-GEN28-ISAAC-BLESSING":{"ATT-BASE-EL-SHADDAI-02"},
+            "CLM-ELSHADDAI-EX6-RETROSPECTIVE-REVELATION":{"ATT-BASE-EL-SHADDAI-04"},
+            "CLM-SABAOTH-1SAM1-3-NARRATOR-WORSHIP":{"ATT-BASE-SABAOTH-01"},
+            "CLM-SABAOTH-1SAM17-45-DAVID-BATTLE":{"ATT-BASE-SABAOTH-02"},
+            "CLM-SABAOTH-ISA6-3-SERAPHIM-HYMN":{"ATT-BASE-SABAOTH-03"},
+            "CLM-SABAOTH-ZECH10-3-PROPHETIC-VOICE":{"ATT-BASE-SABAOTH-04"},
+        }
+        for cid,att in exp.items():
+            item=next(x for x in self.claims["records"] if x["claimId"]==cid)
+            self.assertEqual(att,set(item["attestationIds"]))
+            self.assertEqual("RESEARCH_HOLD",item["editorialState"])
+            self.assertEqual("BLOCKED",item["publicationState"])
+
+    def test_shaddai_ex6_uncertain_etymology_not_promoted_to_certainty(self) -> None:
+        d=copy.deepcopy(self.claims)
+        item=next(x for x in d["records"] if x["claimId"]=="CLM-ELSHADDAI-EX6-RETROSPECTIVE-REVELATION")
+        item["etymologyStatus"]="CERTAIN_MOUNTAIN"
+        self.assertTrue(any("unresolved Shaddai Exodus6 hypothesis guard changed" in e for e in self.check(claims=d)))
+
+    def test_shaddai_ex6_revelation_controversy_not_resolved_by_fiat(self) -> None:
+        d=copy.deepcopy(self.claims)
+        item=next(x for x in d["records"] if x["claimId"]=="CLM-ELSHADDAI-EX6-RETROSPECTIVE-REVELATION")
+        item["revelationInterpretationStatus"]="SCHOLARLY_CONSENSUS"
+        self.assertTrue(any("unresolved Shaddai Exodus6 hypothesis guard changed" in e for e in self.check(claims=d)))
+
+    def test_shaddai_ex6_net_notes_must_remain_attributed(self) -> None:
+        d=copy.deepcopy(self.claims)
+        item=next(x for x in d["records"] if x["claimId"]=="CLM-ELSHADDAI-EX6-RETROSPECTIVE-REVELATION")
+        item["sourceIds"]=["SRC-MT-MECHON"]
+        self.assertTrue(any("NET Exodus6 attributed notes and MT source pairing lost" in e for e in self.check(claims=d)))
+
+    def test_shaddai_isaac_blessing_claim_required(self) -> None:
+        d=copy.deepcopy(self.claims)
+        d["records"]=[x for x in d["records"] if x["claimId"]!="CLM-ELSHADDAI-GEN28-ISAAC-BLESSING"]
+        self.assertTrue(any("required Shaddai/Sabaoth speaker claims missing" in e for e in self.check(claims=d)))
+
+    def test_sabaoth_isaiah6_not_roman9_direct_quote(self) -> None:
+        d=copy.deepcopy(self.claims)
+        item=next(x for x in d["semanticRelations"] if x["relationId"]=="REL-SABAOTH-ISA6-ROM9-QUOTE")
+        item["relationType"]="CONTRASTS_REFERENT"
+        self.assertTrue(any("required semantic boundary" in e for e in self.check(claims=d)))
+
 
 if __name__ == "__main__":
     unittest.main()

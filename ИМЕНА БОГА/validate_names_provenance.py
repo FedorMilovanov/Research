@@ -400,6 +400,83 @@ YIREH_NISSI_REQUIRED_SECONDARY = {
     "CLM-EX17-16-MT-HAND-THRONE-CRUX": {"SRC-MT-MECHON", "SRC-NET-EXODUS17"},
     "CLM-EX17-16-LXX-HIDDEN-HAND": {"SRC-MT-MECHON", "SRC-RAHLFS-EXODUS17"},
 }
+REQUIRED_SHADDAI_SABAOTH_CLAIMS = {
+    "CLM-ELSHADDAI-GEN17-35-DIVINE-SELF",
+    "CLM-ELSHADDAI-GEN28-ISAAC-BLESSING",
+    "CLM-ELSHADDAI-EX6-RETROSPECTIVE-REVELATION",
+    "CLM-SABAOTH-1SAM1-3-NARRATOR-WORSHIP",
+    "CLM-SABAOTH-1SAM17-45-DAVID-BATTLE",
+    "CLM-SABAOTH-ISA6-3-SERAPHIM-HYMN",
+    "CLM-SABAOTH-ZECH10-3-PROPHETIC-VOICE",
+}
+# Original printed MT observation guards; not historical-etymology proof.
+SHADDAI_SABAOTH_CONTEXT_CONTROLS = {
+    "ATT-BASE-EL-SHADDAI-01": {
+        "verse": "Genesis 17:1",
+        "surface": "אֵל שַׁדַּי",
+        "speaker": "YHWH",
+        "speechAct": "divine_self_identification",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt0117.htm",
+    },
+    "ATT-BASE-EL-SHADDAI-02": {
+        "verse": "Genesis 28:3",
+        "surface": "וְאֵל שַׁדַּי",
+        "speaker": "Isaac",
+        "speechAct": "benediction",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt0128.htm",
+    },
+    "ATT-BASE-EL-SHADDAI-03": {
+        "verse": "Genesis 35:11",
+        "surface": "אֵל שַׁדַּי",
+        "speaker": "God",
+        "speechAct": "divine_self_identification",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt0135.htm",
+    },
+    "ATT-BASE-EL-SHADDAI-04": {
+        "verse": "Exodus 6:3",
+        "surface": "בְּאֵל שַׁדָּי",
+        "speaker": "YHWH",
+        "speechAct": "retrospective_revelation_statement",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt0206.htm",
+    },
+    "ATT-BASE-SABAOTH-01": {
+        "verse": "1 Samuel 1:3",
+        "surface": "לַיהוָה צְבָאוֹת",
+        "speaker": "narrator",
+        "contextRole": "worship_destination",
+        "originalPrefix": "לַ",
+        "isDivineDesignation": true,
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt08a01.htm",
+    },
+    "ATT-BASE-SABAOTH-02": {
+        "verse": "1 Samuel 17:45",
+        "surface": "יְהוָה צְבָאוֹת",
+        "speaker": "David addressing Goliath",
+        "contextRole": "warrior_invocation",
+        "contextClause": "אֱלֹהֵי מַעַרְכוֹת יִשְׂרָאֵל",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt08a17.htm",
+    },
+    "ATT-BASE-SABAOTH-03": {
+        "verse": "Isaiah 6:3",
+        "surface": "יְהוָה צְבָאוֹת",
+        "speaker": "seraphim addressing each other",
+        "contextRole": "heavenly_hymn",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt1006.htm",
+    },
+    "ATT-BASE-SABAOTH-04": {
+        "verse": "Zechariah 10:3",
+        "surface": "יְהוָה צְבָאוֹת",
+        "speaker": "Zechariah, divine speech and third-person report intertwined",
+        "contextRole": "prophetic_oracle",
+        "referent": "YHWH attending to flock Judah",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt2310.htm",
+    },
+}
+EX6_UNCERTAINTY_CONTROLS = {
+    "etymologyStatus": "UNRESOLVED_MULTIPLE_HYPOTHESES",
+    "revelationInterpretationStatus": "DISPUTED_NOT_RESOLVED_BY_ONE_NOTE",
+    "speakerEvidenceLevel": "YHWH_RETROSPECTIVE_DIVINE_SPEECH",
+}
 # The original reviewed seeds are a required minimum, not a cap on future work.
 # Additional claims must pass the same foreign-key, editorial and publication gates.
 ALLOWED_CLAIM_TYPES = {
@@ -517,6 +594,12 @@ REQUIRED_SEMANTIC_RELATIONS = {
     "REL-GEN22-NAME-NIPHAL-DISTINCTION": ("CLM-GEN22-14-PLACE-NAME", "CLM-GEN22-14-MOUNTAIN-NIPHAL", "CONTRASTS_GRAMMATICAL_FORM"),
     "REL-EX17-ALTAR-VERSE16-CONTEXT": ("CLM-EX17-15-ALTAR-MT-LXX", "CLM-EX17-16-MT-HAND-THRONE-CRUX", "LIMITS_INFERENCE"),
     "REL-EX17-MT-LXX-SECRET-HAND": ("CLM-EX17-16-MT-HAND-THRONE-CRUX", "CLM-EX17-16-LXX-HIDDEN-HAND", "CONTRASTS_PRINTED_EDITION"),
+    "REL-SHADDAI-SELF-BLESSING": ("CLM-ELSHADDAI-GEN17-35-DIVINE-SELF", "CLM-ELSHADDAI-GEN28-ISAAC-BLESSING", "CONTRASTS_SPEAKER_EVIDENCE"),
+    "REL-SHADDAI-GEN-EX6": ("CLM-ELSHADDAI-GEN17-35-DIVINE-SELF", "CLM-ELSHADDAI-EX6-RETROSPECTIVE-REVELATION", "LIMITS_INFERENCE"),
+    "REL-SABAOTH-SHILOH-BATTLE": ("CLM-SABAOTH-1SAM1-3-NARRATOR-WORSHIP", "CLM-SABAOTH-1SAM17-45-DAVID-BATTLE", "CONTRASTS_SPEAKER_EVIDENCE"),
+    "REL-SABAOTH-BATTLE-SERAPHIM": ("CLM-SABAOTH-1SAM17-45-DAVID-BATTLE", "CLM-SABAOTH-ISA6-3-SERAPHIM-HYMN", "CONTRASTS_SPEAKER_EVIDENCE"),
+    "REL-SABAOTH-SERAPHIM-ZECH": ("CLM-SABAOTH-ISA6-3-SERAPHIM-HYMN", "CLM-SABAOTH-ZECH10-3-PROPHETIC-VOICE", "CONTRASTS_SPEAKER_EVIDENCE"),
+    "REL-SABAOTH-ISA6-ROM9-QUOTE": ("CLM-SABAOTH-ISA6-3-SERAPHIM-HYMN", "CLM-ROM9-29-SABAOTH-ISAIAH", "LIMITS_INFERENCE"),
 }
 CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-EX3-15-DIVINE-NAME": {"ATT-BASE-YHWH-01"},
@@ -574,6 +657,13 @@ CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-GEN22-14-MOUNTAIN-NIPHAL": {"ATT-BASE-YIREH-03"},
     "CLM-EX17-16-MT-HAND-THRONE-CRUX": {"ATT-BASE-NISSI-03"},
     "CLM-EX17-16-LXX-HIDDEN-HAND": {"ATT-BASE-NISSI-04"},
+    "CLM-ELSHADDAI-GEN17-35-DIVINE-SELF": {"ATT-BASE-EL-SHADDAI-01", "ATT-BASE-EL-SHADDAI-03"},
+    "CLM-ELSHADDAI-GEN28-ISAAC-BLESSING": {"ATT-BASE-EL-SHADDAI-02"},
+    "CLM-ELSHADDAI-EX6-RETROSPECTIVE-REVELATION": {"ATT-BASE-EL-SHADDAI-04"},
+    "CLM-SABAOTH-1SAM1-3-NARRATOR-WORSHIP": {"ATT-BASE-SABAOTH-01"},
+    "CLM-SABAOTH-1SAM17-45-DAVID-BATTLE": {"ATT-BASE-SABAOTH-02"},
+    "CLM-SABAOTH-ISA6-3-SERAPHIM-HYMN": {"ATT-BASE-SABAOTH-03"},
+    "CLM-SABAOTH-ZECH10-3-PROPHETIC-VOICE": {"ATT-BASE-SABAOTH-04"},
 }
 
 
@@ -644,6 +734,10 @@ def validate_provenance(
                     continue
                 seen.add(aid)
                 att_by_id[aid] = obs
+                if aid in SHADDAI_SABAOTH_CONTEXT_CONTROLS:
+                    for field, expected in SHADDAI_SABAOTH_CONTEXT_CONTROLS[aid].items():
+                        if obs.get(field) != expected:
+                            errors.append(f"provenance: {aid} Shaddai/Sabaoth speaker and printed surface guard changed ({field})")
                 if aid in YIREH_NISSI_LOCI_GUARDS:
                     for field, expected in YIREH_NISSI_LOCI_GUARDS[aid].items():
                         if obs.get(field) != expected:
@@ -793,6 +887,14 @@ def validate_provenance(
         errors.append("provenance: required John6/18 discourse claims missing")
     if not REQUIRED_YIREH_NISSI_CLAIMS.issubset(claim_map):
         errors.append("provenance: required Yireh/Nissi name-versus-explanation claims missing")
+    if not REQUIRED_SHADDAI_SABAOTH_CLAIMS.issubset(claim_map):
+        errors.append("provenance: required Shaddai/Sabaoth speaker claims missing")
+    ex6 = claim_map.get("CLM-ELSHADDAI-EX6-RETROSPECTIVE-REVELATION", {})
+    for field, expected in EX6_UNCERTAINTY_CONTROLS.items():
+        if ex6.get(field) != expected:
+            errors.append(f"provenance: unresolved Shaddai Exodus6 hypothesis guard changed ({field})")
+    if not {"SRC-MT-MECHON","SRC-NET-EXO6"}.issubset(set(ex6.get("sourceIds", []))):
+        errors.append("provenance: NET Exodus6 attributed notes and MT source pairing lost")
     for cid, needed in YIREH_NISSI_REQUIRED_SECONDARY.items():
         if not needed.issubset(set(claim_map.get(cid,{}).get("sourceIds",[]))):
             errors.append(f"provenance: {cid} Hebrew/Greek or NET attributed source triangle lost")
@@ -907,8 +1009,8 @@ def main() -> int:
         for p in problems:
             print("FAIL: " + p, file=sys.stderr)
         return 1
-    print("PASS: 105 attestation IDs / 4 editions; 49 provisional claims, "
-          "35 relations, 4 Gen22/Ex17 text-role controls and all publication HOLD gates")
+    print("PASS: 105 attestation IDs / 4 editions; 56 provisional claims, "
+          "41 relations, 8 Shaddai/Sabaoth discourse controls and all publication HOLD gates")
     return 0
 
 

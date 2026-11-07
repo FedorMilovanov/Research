@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "corpusId": "NAMES_OF_GOD_CLAIM_LEVEL_EVIDENCE",
   "createdAt": "2026-11-07",
-  "scope": "49 research-held provisional claims; 35 typed relations, including four separately source-bound Gen22/Ex17 naming and edition guards, no manuscript collation or Product clearance.",
+  "scope": "56 research-held provisional claims and 41 semantic relations; eight Shaddai/Sabaoth observations newly evidence-linked, disputed Shaddai origin and Exodus 6:3 reading not declared settled.",
   "editorialPolicy": "Never infer Product approval from link completeness, never replace a cited verse or alternative theory silently; new claims require independent review.",
   "records": [
     {
@@ -1123,6 +1123,165 @@
         "Keep naming actor and named object separate from etymological/translator explanation",
         "Check source-specific rights, independent scholarly acceptance, and Product editorial gate before publishing"
       ]
+    },
+    {
+      "claimId": "CLM-ELSHADDAI-GEN17-35-DIVINE-SELF",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "In Genesis 17:1 and Genesis 35:11 printed MT the deity identifies himself in first-person speech as אֲנִי אֵל שַׁדַּי to Abram/Jacob in separate covenant settings. This direct divine speech is not Isaac's blessing or an act of naming the Bethel site; the exact etymology of Shaddai is not derived by the two appearances.",
+      "attestationIds": [
+        "ATT-BASE-EL-SHADDAI-01",
+        "ATT-BASE-EL-SHADDAI-03"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Check independent Hebrew textual-critical apparatus and grammar before adding variants",
+        "Keep Exodus 6:3 Hebrew name-knowledge and Shaddai etymology debates unresolved; compare independent historical and confessional readings",
+        "Keep each narrator, benediction, human invocation, seraphic hymn and divine oracle distinct",
+        "Obtain source rights and separate scholarly/Product editorial approvals"
+      ]
+    },
+    {
+      "claimId": "CLM-ELSHADDAI-GEN28-ISAAC-BLESSING",
+      "claimType": "NARRATIVE_SPEECH_VS_NAMING",
+      "statement": "Genesis 28:3 printed MT has Isaac invoking וְאֵל שַׁדַּי in blessing Jacob with fruitfulness; the opening conjunction belongs to the verse surface. Isaac, not YHWH, speaks. The title is not newly given to God by a divine self-naming act in this passage.",
+      "attestationIds": [
+        "ATT-BASE-EL-SHADDAI-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Check independent Hebrew textual-critical apparatus and grammar before adding variants",
+        "Keep Exodus 6:3 Hebrew name-knowledge and Shaddai etymology debates unresolved; compare independent historical and confessional readings",
+        "Keep each narrator, benediction, human invocation, seraphic hymn and divine oracle distinct",
+        "Obtain source rights and separate scholarly/Product editorial approvals"
+      ]
+    },
+    {
+      "claimId": "CLM-ELSHADDAI-EX6-RETROSPECTIVE-REVELATION",
+      "claimType": "CANONICAL_INTERTEXT_BOUNDARY",
+      "statement": "Exodus 6:2–3 has YHWH speaking retrospectively to Moses about divine appearances to Abraham, Isaac and Jacob with בְּאֵל שַׁדָּי and the explicit knowledge-of-name claim וּשְׁמִי יְהוָה לֹא נוֹדַעְתִּי לָהֶם. The printed שַׁדָּי versus Genesis שַׁדַּי pointed forms are kept as written, without claiming new ancient manuscript evidence. NET's experiential/promise-fulfilment reading is one attributed interpretive model; how this relates to explicit Genesis use of YHWH is disputed, and the historical etymology of Shaddai is unsettled.",
+      "attestationIds": [
+        "ATT-BASE-EL-SHADDAI-04"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-NET-EXO6"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Check independent Hebrew textual-critical apparatus and grammar before adding variants",
+        "Keep Exodus 6:3 Hebrew name-knowledge and Shaddai etymology debates unresolved; compare independent historical and confessional readings",
+        "Keep each narrator, benediction, human invocation, seraphic hymn and divine oracle distinct",
+        "Obtain source rights and separate scholarly/Product editorial approvals"
+      ],
+      "etymologyStatus": "UNRESOLVED_MULTIPLE_HYPOTHESES",
+      "revelationInterpretationStatus": "DISPUTED_NOT_RESOLVED_BY_ONE_NOTE",
+      "speakerEvidenceLevel": "YHWH_RETROSPECTIVE_DIVINE_SPEECH"
+    },
+    {
+      "claimId": "CLM-SABAOTH-1SAM1-3-NARRATOR-WORSHIP",
+      "claimType": "POSITIVE_REFERENT_CONTROL",
+      "statement": "1 Samuel 1:3 printed MT narrates Elkanah going to worship and sacrifice לַיהוָה צְבָאוֹת at Shiloh. The prefixed לַ is part of the original passage; the title is narrated as worship's divine target, not spoken by YHWH as a fresh name or invented by Elkanah.",
+      "attestationIds": [
+        "ATT-BASE-SABAOTH-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Check independent Hebrew textual-critical apparatus and grammar before adding variants",
+        "Keep Exodus 6:3 Hebrew name-knowledge and Shaddai etymology debates unresolved; compare independent historical and confessional readings",
+        "Keep each narrator, benediction, human invocation, seraphic hymn and divine oracle distinct",
+        "Obtain source rights and separate scholarly/Product editorial approvals"
+      ]
+    },
+    {
+      "claimId": "CLM-SABAOTH-1SAM17-45-DAVID-BATTLE",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "In 1 Samuel 17:45 printed MT David addresses Goliath, invoking יהוה צבאות together with the explanatory epithet אֱלֹהֵי מַעַרְכוֹת יִשְׂרָאֵל. David is speaker, and the battle array context is explicit; it does not settle the title's entire historical origin or mean YHWH is only God of human infantry.",
+      "attestationIds": [
+        "ATT-BASE-SABAOTH-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Check independent Hebrew textual-critical apparatus and grammar before adding variants",
+        "Keep Exodus 6:3 Hebrew name-knowledge and Shaddai etymology debates unresolved; compare independent historical and confessional readings",
+        "Keep each narrator, benediction, human invocation, seraphic hymn and divine oracle distinct",
+        "Obtain source rights and separate scholarly/Product editorial approvals"
+      ]
+    },
+    {
+      "claimId": "CLM-SABAOTH-ISA6-3-SERAPHIM-HYMN",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "Isaiah 6:3 printed MT has seraphim calling to one another a holiness hymn addressing YHWH Sabaoth in the throne vision. The heavenly hymn's agents are seraphim, not David or direct divine first-person self-disclosure. The title is not restricted to the military application of 1 Samuel 17:45.",
+      "attestationIds": [
+        "ATT-BASE-SABAOTH-03"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Check independent Hebrew textual-critical apparatus and grammar before adding variants",
+        "Keep Exodus 6:3 Hebrew name-knowledge and Shaddai etymology debates unresolved; compare independent historical and confessional readings",
+        "Keep each narrator, benediction, human invocation, seraphic hymn and divine oracle distinct",
+        "Obtain source rights and separate scholarly/Product editorial approvals"
+      ]
+    },
+    {
+      "claimId": "CLM-SABAOTH-ZECH10-3-PROPHETIC-VOICE",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "Zechariah 10:3 printed MT mixes divine first-person judgment and a third-person clause כִּי-פָקַד יְהוָה צְבָאוֹת regarding YHWH tending Judah's flock. Do not project the opening first-person voice onto every clause or misidentify the title as spoken there solely in first person.",
+      "attestationIds": [
+        "ATT-BASE-SABAOTH-04"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Check independent Hebrew textual-critical apparatus and grammar before adding variants",
+        "Keep Exodus 6:3 Hebrew name-knowledge and Shaddai etymology debates unresolved; compare independent historical and confessional readings",
+        "Keep each narrator, benediction, human invocation, seraphic hymn and divine oracle distinct",
+        "Obtain source rights and separate scholarly/Product editorial approvals"
+      ]
     }
   ],
   "semanticRelations": [
@@ -1404,6 +1563,54 @@
       "toClaimId": "CLM-EX17-16-LXX-HIDDEN-HAND",
       "relationType": "CONTRASTS_PRINTED_EDITION",
       "rationale": "Printed MT wording in hand/throne/Yah differs from printed LXX secret-hand explanation; this does not independently establish a distinct ancient Vorlage.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-SHADDAI-SELF-BLESSING",
+      "fromClaimId": "CLM-ELSHADDAI-GEN17-35-DIVINE-SELF",
+      "toClaimId": "CLM-ELSHADDAI-GEN28-ISAAC-BLESSING",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Two direct divine identification speeches differ from Isaac's human blessing.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-SHADDAI-GEN-EX6",
+      "fromClaimId": "CLM-ELSHADDAI-GEN17-35-DIVINE-SELF",
+      "toClaimId": "CLM-ELSHADDAI-EX6-RETROSPECTIVE-REVELATION",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "The retrospect in Ex6:3 alongside Genesis first-person forms does not resolve historical revelation or the contested name-knowledge issue by fiat.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-SABAOTH-SHILOH-BATTLE",
+      "fromClaimId": "CLM-SABAOTH-1SAM1-3-NARRATOR-WORSHIP",
+      "toClaimId": "CLM-SABAOTH-1SAM17-45-DAVID-BATTLE",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Third-person Shiloh worship narration differs from David addressing Goliath.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-SABAOTH-BATTLE-SERAPHIM",
+      "fromClaimId": "CLM-SABAOTH-1SAM17-45-DAVID-BATTLE",
+      "toClaimId": "CLM-SABAOTH-ISA6-3-SERAPHIM-HYMN",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "David's battle invocation differs from the seraphim's heavenly holiness hymn.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-SABAOTH-SERAPHIM-ZECH",
+      "fromClaimId": "CLM-SABAOTH-ISA6-3-SERAPHIM-HYMN",
+      "toClaimId": "CLM-SABAOTH-ZECH10-3-PROPHETIC-VOICE",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Seraphim call one another versus Zechariah's first/third-person prophetic speech contexts.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-SABAOTH-ISA6-ROM9-QUOTE",
+      "fromClaimId": "CLM-SABAOTH-ISA6-3-SERAPHIM-HYMN",
+      "toClaimId": "CLM-ROM9-29-SABAOTH-ISAIAH",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "Romans 9:29 quotes Isaiah 1:9, not the seraphim hymn Isaiah 6:3; a common divine title does not prove direct quotation of Isa6.",
       "publicationState": "BLOCKED"
     }
   ]
