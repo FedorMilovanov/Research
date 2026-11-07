@@ -110,7 +110,7 @@
       "id": "NG-01",
       "priority": "P0",
       "title": "Единый живой план, правила обновления статусов и приёмки",
-      "status": "IN_PROGRESS",
+      "status": "DONE",
       "dependsOn": [
         "NG-00"
       ],
@@ -119,10 +119,13 @@
       ],
       "evidence": [
         "11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md",
-        "data/names_research_workplan_v1.json"
+        "data/names_research_workplan_v1.json",
+        "GitHub workflow Names of God ledger integrity run 42333369066, head b0a7730, complete success (all 6 job steps)",
+        "ИМЕНА БОГА/validate_names_workplan.py",
+        "ИМЕНА БОГА/test_validate_names_workplan.py"
       ],
-      "verification": "NOT_APPLICABLE_UNTIL_DONE",
-      "closureAt": null,
+      "verification": "EXACT_SHA_b0a77301289a80f10ee71ce2babe7dbd254325ab_NAMES_LEDGER_WORKFLOW_RUN_42333369066_SUCCESS_ALL_6_STEPS",
+      "closureAt": "2026-11-07",
       "owner": "Research editorial"
     },
     {
@@ -545,7 +548,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "Finish CI/NG01, then verify NG02 evidence graph including 4 unpinned Greek edition displays; read Valdizan/Chou/Barrick TMSJ pages and TMS course videos, log independent critical-text checks.",
+  "nextAction": "NG-02: independent review of 10 linked claims, 4 multiedition Greek URL rechecks and extension of claim graph; NG-05 read Valdizan 2024 with original MT/LXX and alternative scholarly research.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -614,7 +617,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-07",
-    "planStatus": "NG-01 IN_PROGRESS awaiting all six HEAD checks; NG-02 IN_PROGRESS proof graph",
+    "planStatus": "NG-01 DONE with CI-witness; NG-02 IN_PROGRESS first source/edition/claim evidence graph",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -622,7 +625,8 @@
       "Created four normalized edition records and ten curated claim seed links",
       "Added original TMSJ 35/1 and 35/2 journal articles with exact first PDF page verification and publisher copyright boundary",
       "Created an independent provenance validator with 18 negative tests and CI integration",
-      "Marked 4 Greek multiedition URL source locators for explicit edition pin recheck"
+      "Marked 4 Greek multiedition URL source locators for explicit edition pin recheck",
+      "NG-01 closed with exact successful names-ledger workflow 42333369066 and three independent test groups"
     ],
     "stillOpen": [
       "CI must pass exact final SHA for both existing and new graph tests",
