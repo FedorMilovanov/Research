@@ -34,3 +34,7 @@ jobs:
         run: python3 'ИМЕНА БОГА/validate_names_workplan.py'
       - name: Run workplan state and media negative regression tests (read-only)
         run: python3 -m unittest discover -s 'ИМЕНА БОГА' -p 'test_validate_names_workplan.py' -v
+      - name: Validate canonical text-edition and claim-to-source provenance graph (read-only)
+        run: python3 'ИМЕНА БОГА/validate_names_provenance.py'
+      - name: Run provenance anti-conflation and rights regression tests (read-only)
+        run: python3 -m unittest discover -s 'ИМЕНА БОГА' -p 'test_validate_names_provenance.py' -v
