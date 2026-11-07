@@ -8,7 +8,6 @@
   "mediaResearch": "ИМЕНА БОГА/12_TMS_BARRICK_CHOU_SOURCE_REVIEW.md",
   "scope": "Research branch draft PR379 only, no site or main mutations",
   "baseline": {
-    "reviewedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "draftPr": "https://github.com/FedorMilovanov/Research/pull/379",
     "arenaRecords": 29,
     "extensionRecords": 13,
@@ -17,7 +16,14 @@
     "regressionTests": 157,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "SUCCESS_ON_REVIEWED_COMMIT"
+    "allSixCiChecks": "SUCCESS_ON_REVIEWED_COMMIT",
+    "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
+    "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
+    "planRegressionTests": 16,
+    "provenanceRegressionTests": 18,
+    "canonicalEditions": 4,
+    "curatedClaims": 10,
+    "allAttestationForeignKeys": 105
   },
   "allowedStatuses": [
     "DONE",
@@ -539,7 +545,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NG-01 CI and workplan checks, NG-02 provenance graph integrity and source-link mutation tests; read Valdizan 2024 with original Exodus apparatus, complete Chou/Barrick audio review.",
+  "nextAction": "Finish CI/NG01, then verify NG02 evidence graph including 4 unpinned Greek edition displays; read Valdizan/Chou/Barrick TMSJ pages and TMS course videos, log independent critical-text checks.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -613,12 +619,36 @@
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
       "Minted 105 stable attestation IDs with foreign source/edition links",
-      "Created four normalized edition records and ten curated claim seed links"
+      "Created four normalized edition records and ten curated claim seed links",
+      "Added original TMSJ 35/1 and 35/2 journal articles with exact first PDF page verification and publisher copyright boundary",
+      "Created an independent provenance validator with 18 negative tests and CI integration",
+      "Marked 4 Greek multiedition URL source locators for explicit edition pin recheck"
     ],
     "stillOpen": [
-      "Run provenance CI and negative mutation tests",
-      "Complete individual claim-level source review and 105 semantic assertions",
-      "Read all cited TMSJ articles and watch videos with original audio"
+      "CI must pass exact final SHA for both existing and new graph tests",
+      "NG02: claim-by-claim semantic coverage and 4 Greek multiedition page verifications",
+      "NG04/NG05/NG08/NG09: read original full TMS journal articles and independently check philological claims",
+      "NG06/NG07/NG09: watch and listen to original video audio; transcripts are only partial aids"
     ]
+  },
+  "originalResearchCheckpoint": {
+    "commit": "70442271aadf1bcae2afeaad729336218874f180",
+    "sourceRecords": 39,
+    "contextAttestations": 105,
+    "baselineRegressionTests": 157,
+    "gitHubCi6Of6Success": true
+  },
+  "architectureProgress": {
+    "NG02": {
+      "level": "FIRST_LINKED_PASS_NOT_EDITORIALLY_APPROVED",
+      "stableAttestationIds": 105,
+      "sourceForeignKeys": 105,
+      "editionForeignKeys": 105,
+      "canonicalEditions": 4,
+      "curatedClaims": 10,
+      "locusIdMissingHistorically": 55,
+      "editionSelectionRecheckHolds": 4,
+      "notes": "SBLGNT/THGNT multiedition display caveats explicitly marked on 4 occurrences; claim graph is initial 10 curated claims only, not 105 fully reviewed semantic claims."
+    }
   }
 }
