@@ -1,2 +1,6 @@
 # Preserve byte-identical evidence hashes across Windows and Linux.
+/scripts/*atonement*.py text eol=lf
+/docs/research/atonement/*.md text eol=lf
+/ИСКУПЛЕНИЕ/**/*.md text eol=lf
+/ИСКУПЛЕНИЕ/**/*.json text eol=lf
 /ИСКУПЛЕНИЕ/synthesis/drafts/article08_particular_redemption_positive_case.md text eol=lf

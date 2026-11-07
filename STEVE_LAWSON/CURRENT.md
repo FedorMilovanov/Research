@@ -1,8 +1,8 @@
 # Steven J. Lawson — CURRENT
 
-**Snapshot:** 2026-09-30  
+**Snapshot:** 2026-11-06 (original V6 snapshot remains 2026-09-30)  
 **Corpus:** `LAWSON-2024-2026` + canonical biography closure + active external acquisitions  
-**Status:** `PUBLICATION_READY_WITH_GUARDRAILS / V6 CANONICAL / BIOGRAPHY PUBLIC-WEB CLOSED / MAIN AUTHORITATIVE / ARENA RETIRED / OUTBOUND ACQUISITIONS ACTIVE`
+**Status:** `PUBLICATION_READY_WITH_GUARDRAILS / V6 CANONICAL / BIOGRAPHY PUBLIC-WEB CLOSED / ARENA RETIRED / FOUR HOLDER RESPONSES RECORDED / REMAINDER PENDING`
 
 ## Canonical stack
 
@@ -12,14 +12,15 @@
 4. `82_FINAL_BIOGRAPHY_OPEN_ITEMS_AND_NEGATIVE_SEARCH_RECEIPT_2026-09-30.md` — exhausted public routes / exact external-only remainder.
 5. `83_POST_BIOGRAPHY_CLOSURE_V6_CONSISTENCY_AUDIT_2026-09-30.md` — post-closure audit: PASS / no V7 trigger.
 6. `84_EXTERNAL_ACQUISITION_OUTREACH_AND_GRACE_MEDIA_FIRST_PARTY_UPGRADE_2026-09-30.md` — current acquisition authority: first-party Grace media upgrade + 11 dispatched holder requests.
-7. `85_OUTBOUND_ACQUISITION_DELIVERY_CHECKPOINT_2026-09-30.md` — **delivery-state control: FSU ticket #58057 confirmed; immediate bounce check clean; no other substantive response yet**.
-8. `80_BIOGRAPHY_PASS48_RECONCILIATION_2026-09-30.md` — last arena-push provenance reconciliation.
-9. `78_FRESH_100_PLUS_LINK_P1_GOLD_PASS_2026-09-30.md` — fresh targeted P1/gold pass.
-10. `79_GRP_POD_BACKEND_ENDMATTER_AND_NAMED_SUPPORT_TARGETED_PASS_2026-09-30.md` — GRP/POD/endmatter/named-support pass.
-11. `76_CONTENDING_2026_DECLINED_INVITATION_PLATFORM_RETURN_GUARDRAIL_2026-09-30.md` — July-2026 false-comeback guardrail.
-12. `77_BOOK_DISTRIBUTION_METADATA_SPLIT_AUDIT_2026-09-30.md` — book metadata/POD audit.
-13. `62_LOGICAL_SYNTHESIS_AND_RESEARCH_VERDICT_2026-09-29.md` — stable research verdict.
-14. `_START_HERE.md` — operational navigation.
+7. `85_OUTBOUND_ACQUISITION_DELIVERY_CHECKPOINT_2026-09-30.md` — **historical delivery-state control, accurate strictly as of 2026-09-30**; the later responses are recorded in `86_`.
+8. `86_HOLDER_RESPONSE_RECONCILIATION_2026-11-06.md` — four institutional replies (TTU, Wheaton, BGEA, FSU), response ceilings, current 11-holder status matrix.
+9. `80_BIOGRAPHY_PASS48_RECONCILIATION_2026-09-30.md` — last arena-push provenance reconciliation.
+10. `78_FRESH_100_PLUS_LINK_P1_GOLD_PASS_2026-09-30.md` — fresh targeted P1/gold pass.
+11. `79_GRP_POD_BACKEND_ENDMATTER_AND_NAMED_SUPPORT_TARGETED_PASS_2026-09-30.md` — GRP/POD/endmatter/named-support pass.
+12. `76_CONTENDING_2026_DECLINED_INVITATION_PLATFORM_RETURN_GUARDRAIL_2026-09-30.md` — July-2026 false-comeback guardrail.
+13. `77_BOOK_DISTRIBUTION_METADATA_SPLIT_AUDIT_2026-09-30.md` — book metadata/POD audit.
+14. `62_LOGICAL_SYNTHESIS_AND_RESEARCH_VERDICT_2026-09-29.md` — stable research verdict.
+15. `_START_HERE.md` — operational navigation.
 
 Historical reconciliation/planning only: `64_`, `68_`, `69_`, `70_`, `71_`, `73_` and arena control files.
 
@@ -61,11 +62,15 @@ Final arena provenance checkpoint:
 - Official Ligonier independently gives B.B.A. Texas Tech / Th.M. Dallas Theological Seminary / D.Min. Reformed Theological Seminary.
 - Official RTS 2013 confirms the D.Min. while Lawson was a pastor in Little Rock; preserved RTS institutional wording gives `D.Min. '90`.
 - RTS 2013 identifies Lawson as a former college football player, recruited at quarterback and shifted to wide receiver at Texas Tech. Exact scholarship/letter/season/Picadors mechanics remain archive precision, not a missing biography theory.
+- **New official Texas Tech all-time football letterwinner lead (checked 2026-11-06):** the **2006, 2008 and 2021 official TTU football media guides** all list **`Lawson, Steve, 1972`** in **Letterwinners**, while RTS 2013 separately profiles the *preacher* Steven Lawson as a former TTU college football player. The three TTU editions preserve one cumulative institutional record (not three independent 1972 proof objects). The critical full-name/roster/position/portrait cross-link to **Steven James Lawson** is **NOT yet obtained**; therefore **do not claim definitively that the preacher earned a varsity letter in 1972**. Exact records and identity/negative-search reconciliation are in `86_`.
+- **Verified archival correction (2026-11-06):** the TARO finding aid lists `Lawhorn, Floyd (Unknown)` at **Box 11, Folder 59**, `Lawson, Steven (Football), 1970` at **Box 11, Folder 60**, and `Lawson, Ted (Football)` at **Box 11, Folder 61**. Previous research PR #367 incorrectly assigned Steven Lawson to Folder 59; that is a neighboring different-person file. The corrected Texas Tech request for **Folder 60** was **sent 2026-11-06** (Gmail `SENT`, `1a1b22dfe97337ac`). Precise locator corrected in `86_`; identity and original-file-content holds unchanged.
+- **New direct university athlete-file locator (2026-11-06):** Texas Tech's official TARO finding aid for **U 193.1 Athletic Media Relations** explicitly names **`Lawson, Steven (Football), 1970` — Box 11, Folder 60** ([institutional archival catalog](https://txarchives.org/ttusw/finding_aids/20149.xml); [TTU athletics collections guide](https://resources.swco.ttu.edu/university-archive/ttu-sports.php)). Unlike the 1972 all-time-letterwinner row, this is an **individual football-file heading**, but the folder's original documents have NOT been opened. Its `1970` archival date is not proof of a 1970 varsity letter; the exact middle-name/1973 BBA/1972 letterwinner cross-link remains `IDENTITY_HOLD`. Details and no-fee archival verification next step are in `86_`.
 - RTS 2013 + direct Homiletix 2016 establish Memphis upbringing, preaching beginning in college, post-college exposure to Adrian Rogers at Bellevue, and Lawson's own statement that God called him into ministry there.
 - Contemporary April 1981 record places Lawson in ministry at University Baptist Church, Fayetteville, and records his marriage to Anne Crowell, then with Campus Crusade for Christ.
 - Lawson's own 2018 account places him at The Bible Church of Little Rock during the 1989 Billy Graham crusade; 1992 publisher biography says he had been BCLR senior pastor for over ten years.
 - Dauphin Way 1995–2003 and Christ Fellowship 2003 onward are sufficiently established for the article-level chronology.
 - 1992 *Men Who Win* publisher biography already carried the claim that Lawson had been a sportswriter covering the Texas Rangers and Dallas Cowboys. This is a real period claim, not modern AI-slop; exact byline/outlet/employment status is still an archive question.
+- **April 1971 direct university newspaper mastheads (new readback 2026-11-06):** **`The University Daily` 21 Apr 1971 p.2** and **30 Apr 1971 p.2-A** list **`Steve Lawson` as `Sports Reporter`** in the editorial staff. Direct **university-hosted PDF text-layer transcription** checked in both issues, original page-image screenshots/binaries not obtained, exact links and provenance in `86_`. This establishes a contemporaneous **Texas Tech campus sports-journalism credit** (not a pro-team byline, full-time employment, or football participation).
 
 Namesake guardrail: never merge preacher Steven J. Lawson with Steven George Lawson, the 1972 Texas Rangers pitcher, or the separate NFL offensive lineman Steve Lawson.
 
@@ -104,7 +109,7 @@ On 2026-09-30 exact source requests were dispatched. Governing ledger: `84_`.
 
 ### Delivery checkpoint
 
-`85_` records the immediate delivery control:
+`85_` records the **historical 2026-09-30** immediate delivery control:
 
 - FSU Special Collections returned an automated receipt and assigned **ticket #58057** for the Tampa Times request;
 - no bounce/undeliverable object was observed in the immediate cross-domain check;
@@ -119,6 +124,26 @@ Do not promote silence into `accepted` or `research in progress` without a holde
 Operational rule:
 
 > **Do not restart generic web searches for these exact objects while authoritative-holder requests are pending. When a response arrives, preserve the original email/attachment or source locator, classify it, and update only the claim it actually resolves.**
+
+---
+
+## 2026-11-06 — holder replies supersede the September dispatch state
+
+See `86_HOLDER_RESPONSE_RECONCILIATION_2026-11-06.md` for evidence-limited readback from original incoming threads:
+
+- **Texas Tech, 2026-10-16:** University staff did not identify Lawson in the checked La Ventana/Toreador/athletic-guide football listings; four **1971 campus sportswriter** references surfaced. This is a bounded negative search and a positive campus-journalism lead, **not a proof he never played or worked for professional teams**.
+  **2026-11-06 institutional counterlead:** Texas Tech Athletics' official 2006/2008/2021 historical **Letterwinners** indexes independently of the Oct 16 staff search list `Steve Lawson — 1972`; no unambiguous personal ID yet. Do not extrapolate the staff's searched-source negative to `no TTU player/letterwinner ever existed`. Request the 1972 record/player card to cross-identify. Source links and caveats: `86_`.
+  **Direct text readback 2026-11-06:** Two original dated newspaper mastheads, `The University Daily` 21 Apr (p.2) and 30 Apr (p.2-A), themselves credit `Steve Lawson` as `Sports Reporter`. University PDFs referenced in `86_`; photographic facsimile not independently reviewed. The count **four** still comes from the staff search, not four directly collated issues.
+  **New person-file source 2026-11-06:** University Archives `U 193.1`, `Box 11`, `Folder 60`, catalogs `Lawson, Steven (Football), 1970`. Contents not read; no personal identifiers independently matched. A no-charge preliminary inquiry was **sent 2026-11-06**; no paid research ordered or physical records acquired. See `86_`.
+- **Wheaton, 2026-10-01:** staff located a `Stephen Lawson` **volunteer** mention in CN 074 Box 8 folder 8-3; original clipping image still uncollated; **1989 committee chair role not verified**.
+- **BGEA, 2026-10-19:** confirmed **five boxes** for the 1989 Little Rock Crusade and a **maximum of 30 remotely newly digitized pages**, asked researcher to choose onsite/remote. No page-level record received and **no fee/payment consent**.
+- **Wheaton chronology, direct public readback 2026-11-06:** Wheaton Archives' [Select Chronology, last updated 2024-11-20](https://www.wheaton.edu/media/billy-graham-center-archives/Chronology-1934-2018.pdf) lists 1989 Arkansas Crusade, **Little Rock, Sept 17–24**, **282,800 aggregate attendance** and **6,677 inquirers** (people who came forward at invitation), pointing to **Collection 74**. Wheaton says figures derive from BGEA reports/releases; original BGEA 1989 report was **not** inspected. Lawson's separate **3,000 trained counselors** is his 2018 self-report about an entirely **different denominator**, not a conflicting count. Chronology neither names Lawson nor verifies his chairman role. Full evidence classification and source link in `86_`; no article revision.
+- **FSU, 2026-09-30:** requested `The Tampa Times` April 20, 1981 p.14 film is in general collection; external researchers cannot obtain FSU remote scans via its restricted service; actual page not received.
+- Other seven September 30 institutional recipients had **no substantive response located in the scoped 2026-11-06 inbox review**; this means neither refusal nor proven delivery failure.
+
+**Outbound update (2026-11-06):** TTU `reference.swco@ttu.edu` — Gmail `SENT` `1a1b22dfe97337ac`, exact football archive **U 193.1 / Box 11 / Folder 60**. BGEA `archives@bgea.org` — Gmail `SENT` `1a1b22e6307f112b`, requests free collection/folder index, committee roster and counselor-category definitions; explicitly no paid copying, scans or research authorized. **No incoming answer or direct physical document yet.** See `86_` for the outbound receipt and source-strength holds.
+
+These four replies correct only the **acquisition/status ledger**. They do **not** justify changing canonical V6 narrative, reversing prior factual caution, asserting archive proof of the 1989 committee role, or importing source scans. The original `84_`/`85_` are intentionally retained as dated history.
 
 ---
 
@@ -204,7 +229,7 @@ Do not state as fact that:
 **Self-service/public-web biography work:** `CLOSED`  
 **Canonical biography in main:** `COMPLETE FOR CURRENT ARTICLE`  
 **Arena dependency:** `RETIRED`  
-**Exact external acquisitions:** `DISPATCHED / FSU TICKETED / AWAITING HOLDER RESPONSES`  
+**Exact external acquisitions:** `DISPATCHED / 4 SUBSTANTIVE INSTITUTIONAL REPLIES RECONCILED / BGEA REMOTE-VS-ONSITE CHOICE PENDING / OTHER HOLDERS AWAITING RESPONSE`  
 **V6 publication state:** `PASS / READY WITH GUARDRAILS`  
 **V7 trigger:** `NONE`
 

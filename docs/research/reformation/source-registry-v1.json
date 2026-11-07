@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 112,
+  "sourceCount": 147,
   "sources": [
     {
       "id": "REF-P01",
@@ -1855,7 +1855,7 @@
       ],
       "url": "https://ci.nii.ac.jp/ncid/BA61216073",
       "checkedAt": "2026-11-06",
-      "verificationNote": "EXACT institutional catalog RECORD for 1908 scientific EDITION: Japanese CiNii Books NCID BA61216073, Walther Köhler, Leipzig R. Haupt, 1908, series Flugschriften aus den ersten Jahren der Reformation vol2 fasc3, 61p separately numbered pp280-337. LEO-BW/SWB PPN 51478055X https://www.leo-bw.de/en-GB/detail/-/Detail/details/DOKUMENT/bsz_swb/51478055X/Br%C3%BCderlich%20Vereinigung%20etzlicher%20Kinder%20Gottes%20sieben%20Artikel%20betreffend%20item%20ein%20Sendbrief%20Michael%20Sattlers%20an%20eine%20Gem corroborates 280-337. Google Play Books https://play.google.com/store/books/details/Otto_Clemen_Flugschriften_aus_den_ersten_Jahren_de?id=-wgNAAAAIAAJ reports digitized vol2 1908 468pp; another id 3VRBAQAAMAAJ may be volume2 variant with 1907 date; direct Google scanned image of pp280-337 and 1908 editorial introduction on witness Vorlage NOT accessed, hence cannot infer exact 1533 Matt reference from this edition or claim a photo of original 1533. CATALOG_ONLY and publication/rights hold; EVIDENCE_HOLD is claim-specific for original historical text. Exact locator pertains to modern 1908 EDITION identity and pagination, not original witness. Wave 340, 2026-11-05: independently inspected CiNii BA61216073 holdings, Japanese Library of Economics, University of Tokyo 80:877:2, item 5505962091; confirmed university's official reference email on https://www.lib.e.u-tokyo.ac.jp/english/?page_id=3230 ; personally sent a targeted non-cost-bearing bibliographic enquiry to lib-unyo.e@gs.mail.u-tokyo.ac.jp via connected Gmail (SENT), requesting confirmation of physical holding, Koehler's Introduction/Vorlage and pp305–316. Email is not a scan and no reply yet. HISTORICAL wave 340: Google Play Books was only a listing, CATALOG_ONLY. SUPERSEDED by wave 344 on 2026-11-06: original 1908 edition OCR text is now directly readable at Google Books https://books.google.com/books?id=-wgNAAAAIAAJ&pg=PA300&output=text and https://books.google.com/books?id=-wgNAAAAIAAJ&pg=PA307&output=text (digitization of volume II, not a 1533 print). In the 1908 Bibliographie, Köhler lists his item (1) as 20 leaves, terminal 1533 colophon and states present at Rudolf Haupt bookseller Leipzig, citing Katalog Nr.12, S.136, Mk.1000. His item (2) is the 16-leaf Munich print without terminal 1533 colophon, which HE regards as a secondary edited form on the basis of perceived smoothing (his historiographical opinion, not new bibliographic proof). In OCR of Article I, citation reads 'Mat. 28 [v. 19]', not Mat.27. Text has been directly read, but page-image verification of either passage was attempted and failed (Google Books image/PDF tools inaccessible): image, typesetting, OCR correctness, editorial status of the numeral, 1533 original and catalog No.12 leaf remain NOT directly inspected. Access PARTIAL_OBJECT, not FULL_OBJECT_VERIFIED; preserve evidence/archival/rights/publication holds."
+      "verificationNote": "EXACT institutional catalog RECORD for 1908 scientific EDITION: Japanese CiNii Books NCID BA61216073, Walther Köhler, Leipzig R. Haupt, 1908, series Flugschriften aus den ersten Jahren der Reformation vol2 fasc3, 61p separately numbered pp280-337. LEO-BW/SWB PPN 51478055X https://www.leo-bw.de/en-GB/detail/-/Detail/details/DOKUMENT/bsz_swb/51478055X/Br%C3%BCderlich%20Vereinigung%20etzlicher%20Kinder%20Gottes%20sieben%20Artikel%20betreffend%20item%20ein%20Sendbrief%20Michael%20Sattlers%20an%20eine%20Gem corroborates 280-337. Google Play Books https://play.google.com/store/books/details/Otto_Clemen_Flugschriften_aus_den_ersten_Jahren_de?id=-wgNAAAAIAAJ reports digitized vol2 1908 468pp; another id 3VRBAQAAMAAJ may be volume2 variant with 1907 date; direct Google scanned image of pp280-337 and 1908 editorial introduction on witness Vorlage NOT accessed, hence cannot infer exact 1533 Matt reference from this edition or claim a photo of original 1533. CATALOG_ONLY and publication/rights hold; EVIDENCE_HOLD is claim-specific for original historical text. Exact locator pertains to modern 1908 EDITION identity and pagination, not original witness. Wave 340, 2026-11-05: independently inspected CiNii BA61216073 holdings, Japanese Library of Economics, University of Tokyo 80:877:2, item 5505962091; confirmed university's official reference email on https://www.lib.e.u-tokyo.ac.jp/english/?page_id=3230 ; personally sent a targeted non-cost-bearing bibliographic enquiry to lib-unyo.e@gs.mail.u-tokyo.ac.jp via connected Gmail (SENT), requesting confirmation of physical holding, Koehler's Introduction/Vorlage and pp305–316. Email is not a scan and no reply yet. HISTORICAL wave 340: Google Play Books was only a listing, CATALOG_ONLY. SUPERSEDED by wave 344 on 2026-11-06: original 1908 edition OCR text is now directly readable at Google Books https://books.google.com/books?id=-wgNAAAAIAAJ&pg=PA300&output=text and https://books.google.com/books?id=-wgNAAAAIAAJ&pg=PA307&output=text (digitization of volume II, not a 1533 print). In the 1908 Bibliographie, Köhler lists his item (1) as 20 leaves, terminal 1533 colophon and states present at Rudolf Haupt bookseller Leipzig, citing Katalog Nr.12, S.136, Mk.1000. His item (2) is the 16-leaf Munich print without terminal 1533 colophon, which HE regards as a secondary edited form on the basis of perceived smoothing (his historiographical opinion, not new bibliographic proof). In OCR of Article I, citation reads 'Mat. 28 [v. 19]', not Mat.27. Text has been directly read, but page-image verification of either passage was attempted and failed (Google Books image/PDF tools inaccessible): image, typesetting, OCR correctness, editorial status of the numeral, 1533 original and catalog No.12 leaf remain NOT directly inspected. Access PARTIAL_OBJECT, not FULL_OBJECT_VERIFIED; preserve evidence/archival/rights/publication holds. UPDATE 2026-11-06 RECEIVED-INSTITUTION-REPLY (private Gmail institutional response, Library of Economics University of Tokyo): library affirmatively confirms it currently holds the cited 1908 Köhler book. Its local old shelf mark and identifier have been modified following binding/combination with other volumes; library supplied current OPAC bibliographic URI https://opac.dl.itc.u-tokyo.ac.jp/opac/opac_link/bibid/2001654935 . Library has NO OWN DIGITAL COPY and knows no online digitization within its own search; this is not a refutation of separately discovered partial Google Books OCR, and NOT page-image custody. Personal onsite consultation requires advance reservation; fee-bearing photocopy delivery may be arranged via institutional/interlibrary request, priced per pages/shipping. Library declines bespoke text-critical research and did NOT supply photographs, PDF, pp305–316 readback, 1533 imprint, Vorlage or Matt.27/28 judgment. This confirms physical HOLDING and current catalog locator only, with scanned-pages and exact textual-variant ARCHIVE_HOLD and EVIDENCE_HOLD unchanged. No paid order/authorization, no reproduction license. Original message date 2026-11-06; historical pre-response SENT/pending clauses above are superseded as to holder reply status only."
     },
     {
       "id": "REF-S28",
@@ -2048,6 +2048,859 @@
       "url": "https://www.zvab.com/Konvolut-Antiquariatskatalogen-%C3%84gyptologie-Koptische-Sprache-Literatur/22543675043/bd",
       "checkedAt": "2026-11-06",
       "verificationNote": "Wave346: CURRENT direct ZVAB item URL /22543675043/bd shows 'Dieser Artikel ist nicht verfügbar'/'Dieser Artikel ist nicht mehr verfügbar' and seller inventory 1655B, Dr Bernhard A Kohl GmbH. Seller's description: bound 6 catalogues numbered 5,6,7,8,9,12, last headed Inkunabeln / Drucke 16. Jhs / Reformations-Literatur in Originaldrucken, binding mixed dating 1905–1906, roughly 730 pages. Direct item page shows archived EUR28 price, while older ZVAB search/rollup page inconsistently shows EUR50 and '1 verfügbar'; do NOT assert live stock or current price, and do NOT treat listing as photo of the catalogue's own leaf, title page, page 136 or Schleitheim entry. Prior narrowly scoped inquiry to seller sent 2026-11-05 and not repeated; no substantive reply found yet. Class C because this is trade metadata for location search, NOT independent scholarly printed-source evidence. No orders/payments."
+    },
+    {
+      "id": "REF-P60",
+      "documentYear": 1690,
+      "title": "Brüderlich vereynigung etlicher Kinder Gottes, sieben Artickel betreffendt; Luzern ZHB G4.249.d.12 (K4), print catalog-dated [um 1690] although title contains 'M D XXVII'",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.e-rara.ch/zhb/content/titleinfo/31438253",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Wave347. AUTHORITATIVE INSTITUTIONAL SEARCH LISTING only, not original image inspected: e-rara search Satler first title, 'Brüderlich vereynigung etlicher Kinder Gottes, sieben Artickel betreffendt; Jtem, Ein Sendbrieff Michael Satlers ... M D XXVII' catalog imprint [Erscheinungsort nicht ermittelbar] [Verlag nicht ermittelbar] [um 1690], owner Zentral- & Hochschulbibliothek Luzern, signature G4.249.d.12 (K4). Click from e-rara search to individual-work search https://www.e-rara.ch/zhb/content/search/31438253?query=Satler confirms platform internal work ID 31438253; searchable hits at ['Seite 1',29,34] do not equal page-level reading of Article I and its Matt 27/28 numeral. Direct titleinfo, pages and anticipated IIIF manifest inaccessible to web fetch (server errors) and TinyFish browser returned 'Verifying your browser', so original source scans, typesetting, complete collation and licensing NOT inspected. Source class A1 refers to nature of the historic pamphlet, NOT verification confidence; access CATALOG_ONLY. 'M D XXVII' in edition's long title points to 1527 Sattler event/early text, not a verified 1527 imprint for THIS Luzern object. Bibliographic date approx 1690 is estimate, not proven exact year. This item has NOT been identified with the distinct 1686 edition mentioned in GAMEO REF-S26, or Goshen early-seventeenth-century witness in REF-S17 or other 1527/1533/1550 physical copies. Status holds fail closed. No binaries downloaded, copied, purchased or shared. Official search item links: https://www.e-rara.ch/zhb/content/search/31438253?query=Satler WAVE348 DIRECT ORIGINAL VISUAL CORRECTION OF PRIOR ACCESS BLOCK: official e-rara work 31438253 reachable by clicking indexed search title result (not direct URL fetch); bibliographic title page https://www.e-rara.ch/zhb/content/titleinfo/31438253 confirms 36 printed pages; 16 cm (8°); publisher/place unidentified, catalog estimated around 1690, DOI https://doi.org/10.3931/e-rara-145536, 2025-08-26 online, Public Domain Mark and standard credit/notice guidance. Original official downloadable PDF https://www.e-rara.ch/download/pdf/31438253.pdf is 41 PDF pages including prefatory digital cover; official IIIF manifest https://www.e-rara.ch/i3f/v20/31438253/manifest available via title-page link (not fetched+hashed in full). Historic original PAGE IMAGES were VISUALLY inspected via PDF screenshot at zero-based PDF P1/title (prints M D XXVII, no demonstrated 1527 print date), P5/historic printed page 5 first Article I beginning, P6/historic printed page 6 Article I end ORIGINAL TYPE `Matt.28. Marc.16. Act.2.8.16.19` (letter-spacing and punctuation approximate, numeral 28 visually certain), P10/printed10 VI sword God's ordinance outside perfection of Christ and weltlichen Oberkeiten, P12/printed12 transition to VII Eyd, P36/printed36 ENDE and ornament, no imprint date on that final inspected page. Original public-domain scanned paper PDM, separate institutional reproduction attribution/notification requests; digital RESEARCH_ONLY and downstream PUBLICATION_HOLD remain. Original PDF was opened/read through live web screenshot and indexed digital text but PDF bytes were NOT downloaded, file hashes NOT generated, only selected original page images actually visually checked; NO FULL 36-page diplomatic collation, no master-image inspection or complete variant stemma. Compare BSB VD16 S1882 original 1527 BSB1 scan5 Math.xxviij (=28), late original ~1550 VD16 ZV30530 scan9 Matt.27, Köhler 1908 OCR Mat.28. LU c1690 Mat.28 shows the later printing does NOT simply inherit Matt27 from one mid-sixteenth-century witness; it does NOT prove dependence on the 1527 original nor exclusion/inclusion in 1686 edition, Goshen 17c or lost 1533. Status access PARTIAL_OBJECT, exact for inspected page loci; evidence/archival/publication HOLD remain. Prior Wave347 browser access failure is historical and now SUPERSEDED for inspected PDF pages, but all-page complete object verification was NOT achieved. Rights state PUBLICATION_ELIGIBLE only for original object with explicit institutional PDM, not editorial approval to publish/reproduce OCR/translation and not evidence of compliance with institutional request for scientific attribution. WAVE348 FOLLOWUP PHYSICAL BIBLIOGRAPHIC CANDIDATE: visual verified original printed p35 of LU c1690 is headed 'Ein Scheid-Lied in der Weiß deß 6. Psalma...' and first line 'Muß es nun sein gescheiden'; p36 continues same hymn and ends ENDE. Independent existing REF-S17 Rothkegel 2017 scholarly journal printed p58 footnote41, PDF page index 59, ORIGINAL SCHOLARLY PAGE visual screenshot inspected, reports a GOSHEN Mennonite Historical Library 17th-century edition (its separate item 6): title line breaks 'Brüderlich ver=|eynigung etlicher Kinder | Gottes', octavo, 36 printed pages, and same song 'Muß es nun sein gescheiden', citing Joe Springer. LU original title PHOTO p1 line breaks strongly match those short opening lines and LU has same octavo/36 pp/hymn. These 3 CONVERGENT bibliographic clues make a Goshen-vs-Luzern SAME TYPOGRAPHICAL SETTING priority for comparison, but NO Goshen images/collation/signature or shelfmark are acquired and even shared song, format and title cannot prove edition identity. Historical title A1 source not promoted beyond PARTIAL_OBJECT and provenance HOLDs are preserved."
+    },
+    {
+      "id": "REF-P61",
+      "documentYear": 1528,
+      "title": "Konrad Schmid in Bern Disputation sermon/anti-Anabaptist articles collection, Zurich Froschauer 1528, VD16 P4757 (UB Bern MUE AD 409 : 2)",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.e-rara.ch/bes_1/content/titleinfo/31421750",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Official e-rara bibliographic record directly checked: Zurich Christoph Froschauer 1528, VD16 P4757, UB Bern MUE AD 409 : 2, DOI 10.3931/e-rara-145380; 214 unnumbered pages + one leaf, 8vo, Public Domain Mark. Locally downloaded and SHA256-verified two specific IIIF JPEG page derivatives: digital title page 1 (SHA F38FBC99AAF7DCB1ABEF555293C448D782C1C764613560321878D06C6D9805A6), and beginning of separately titled refutation section p185 (SHA F272F0B4C30AB90AAD08D662533B6B48BBEC8522025F3B9E4323E760A2C34A8D). This is the historical author's polemical speech, not a neutral record or direct 1527 Schleitheim text. Wave 352 definitive IIIF pagination correction (2026-11-06): original five IIIF image IDs 31421948, 31421949, 31421950, 31421951, 31421952 carry OFFICIAL canvas labels [197], [198], [199], [200], [201] respectively, as read from https://www.e-rara.ch/i3f/v20/31421750/manifest (NOT [198]–[202]). Digital [199] confirms baptism as sign of brotherhood/covenant grounded in eternal divine election; [200] cites Ephesians 1 and the author's infant-baptism argument; [201] states election of an individual child is unknowable to humans, citing Jacob and Esau, and later contains an adversarial Hans Denck deathbed-recantation allegation whose historical truth is NOT independently verified. [197]–[198] visually inspected for hostile polemical context. Five historical PDM original-image derivatives stored in separate restricted Google Drive, individually read back and matching SHA-256; replacement archive filenames agree with OFFICIAL canvas labels and ZIP independently verified byte-identical. Title of separate refutation section: official label [185], image ID 31421936. No printed-page pagination inferred from digital labels. Handwritten marginalia have unknown authorship/dating. Whole 220-canvas object not collated. Preserve source-level holds for wider claims and editorial PUBLICATION_HOLD; precise facsimile locator for C179 is now VERIFIED, superseding the earlier OCR-only note.",
+      "verifiedPageLocators": [
+        {
+          "canvasLabel": "[185]",
+          "iiifCanvasId": 31421936,
+          "visualCheck": "WAVE351_VERIFIED"
+        },
+        {
+          "canvasLabel": "[197]",
+          "iiifCanvasId": 31421948,
+          "visualCheck": "WAVE352_MANIFEST_AND_FACSIMILE_VERIFIED"
+        },
+        {
+          "canvasLabel": "[198]",
+          "iiifCanvasId": 31421949,
+          "visualCheck": "WAVE352_MANIFEST_AND_FACSIMILE_VERIFIED"
+        },
+        {
+          "canvasLabel": "[199]",
+          "iiifCanvasId": 31421950,
+          "visualCheck": "WAVE352_MANIFEST_AND_FACSIMILE_VERIFIED"
+        },
+        {
+          "canvasLabel": "[200]",
+          "iiifCanvasId": 31421951,
+          "visualCheck": "WAVE352_MANIFEST_AND_FACSIMILE_VERIFIED"
+        },
+        {
+          "canvasLabel": "[201]",
+          "iiifCanvasId": 31421952,
+          "visualCheck": "WAVE352_MANIFEST_AND_FACSIMILE_VERIFIED"
+        }
+      ],
+      "verifiedClaimScope": [
+        "C179 original printed passage",
+        "C180 individual election caveat",
+        "C181 Hans Denck polemical allegation present but independent truth unverified"
+      ],
+      "officialIiifManifestUrl": "https://www.e-rara.ch/i3f/v20/31421750/manifest"
+    },
+    {
+      "id": "REF-P62",
+      "documentYear": 1528,
+      "title": "H. Dencken wid[e]ruff. Uff die zehen artikel: 1 Von der geschrifft; 2 Von der bezalung Christi; 3 Vom Glauben; 4 Vom freien willen; 5 Von guten wercken; 6 Von Secten; 7 Von Ceremonien; 8 Vom Tauff; 9 Vom Nachtmal; 10 Vom Eyd",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_14_SCANS_ACQUIRED",
+      "locatorState": "ORIGINAL_TITLE_AND_SECTION_VIII_FACSIMILE_VERIFIED",
+      "rightsState": "PUBLIC_DOMAIN_MARK",
+      "publicationState": "RESEARCH_ONLY",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.digitale-sammlungen.de/en/details/bsb00054820",
+      "iiifManifestUrl": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00054820/manifest",
+      "catalog": "Bayerische Staatsbibliothek München; VD16 D 573; BSB-ID 991071328859707356; BV006163643; bsb00054820; [Worms]: [Peter Schöffer], [1528]; [7] Bl. / 14 digital scans; PDM 1.0",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Source acquired FULL 14 IIIF original 1600px JPEGs by download from BSB official image API; all 14 independently SHA256 verified and archived in connected private Google Drive with subsequent individual cloud readback (14/14 SHA256 matched). Archive zip 8,784,454 bytes and its cloud download SHA256 09c59f4d841f46649c85b6476f0d94af410c810c72cccbb6aa95dd297742c513, exact byte parity. Not all 14 leaves textually fully collated: confirmed original title/ten numbered headings image scan01, section IV on scan07, VII on scan10, section VIII 'Vom Tauuff' scan11–12, concluding oath text scan14. Scan11 explicitly says 'Kindertauff ist eyn menschen gebott/ vnnd der Christen freyheyt' and opposes treating child baptism as direct Christ command; it also describes baptism as admission/mark into believers' community. Scan12 admits previous zeal led him astray and warns against making a compulsory rule from ritual disputes. The title Widerruf is part of posthumous printed editorial framing; authorship/editorship and precise history according to scholarly MennLex/GAMEO still need historical-critical collation, cannot infer complete repudiation. Distinguish Denck text as printed, editor's title, and hostile independent Schmid assertion on Bern 1528 [201]. Public-domain original does not itself authorize editorial release; PUBLICATION_HOLD. Source corpus entry is not an endorsement of Denck's theology. Additional wave354 direct facsimile check (2026-11-06): Scan03 internal printed heading is 'Protestation vnd bekantnus etlicher puncten halb / in welchen sich Hans Denck (kurtzlich vor seinem end) selbst ...' (early modern typography, original wording must be collated letter-by-letter before quotation). This internal heading is not identical in scope to external publisher's cover label Widerruff; neither can, on its own, establish a total recantation. Scan11 §VIII further contains first-person CONDITIONAL undertaking 'Hierumb will ich (ob Gott will) des tauffens ewiglich still stehen / so ich keynen andern beruff vom Herren haben wird' (spellings normalized only for locating; do not present as diplomatic transcript): he proposes to stop administering baptisms unless he has another calling from the Lord, not to accept infant baptism as mandated by Christ. Crucial same-leaf qualification on scan11: Denck says childhood baptism does not by itself harm the believer and, where Christian congregational order is maintained, God does not require an additional baptism; he expressly suspends judgement where that order is not kept. This excludes both universal infant-baptism approval and any automatic, unconditional demand to rebaptize every infant-baptized individual. Same original section invokes uncertainty of distinguishing Jacob versus Esau among infants. Schmid's original Bern 1528 IIIF-[201] invokes Jacob/Esau in arguing uncertainty of visible individual election but uses it to defend infant-baptism participation; distinct interpretations, no direct exchange/influence established. Digital source image services scan03/scan11 independently visually inspected, PDM archival custody already verified in 42-image manifest; no new binary or duplicate source. Preserve textual-critical and publication holds. Wave355 section-by-section digital facsimile map added for I–X (scan05–14), with 10 exact start and continuation locations and key guarded propositions; original print 14/14 pages already acquired, no additional copies or new PDM scan count. Direct reading of §II scan06 distinguishes satisfaction of Christ for sins of all people from Spirit-mediated participation by the elect: not automatic universal salvation or modern Reformed atonement taxonomy. §V scan08 divine mercy vs earned merit; §IX scan12–13 spiritual Lord's Supper; §X scan13–14 conditional oath practice. No full diplomatic transcription/translation completed. Publication date unresolved: BSB inferred [1528], specialist journal relays Goeters possible early 1529. Full source of Goeters not directly read, see REF-S38. MennLex specialist context REF-S39. Preserve EVIDENCE_HOLD and PUBLICATION_HOLD. Wave356 independent Worms bibliographic control: Elisabeth Zotz's city-library historic report (printed p95, Der Wormsgau vol1 1926–1933; REF-S41) classified a seven-leaf octavo copy of Dencken Widerruff under 1529, specifically lacking any printed authorizing printer/date and attributing Schöffer by type comparison. This is independent early cataloguing for the 1529 hypothesis, not verified direct original type collated against current BSB VD16 D573, not proof of current Worms custody or exact issue date. Brill scholarly 1991 bilingual study critical German Baring/Fellmann and English translation (REF-S40) lists both 'Letter to Oecolampadius' and 'Protestation or Recantation'; available publisher front matter only, copyrighted. §II BSB original facsimile scan06 short research reading 'Das leyde Christi hat gnüg gethon für aller menschen sünd / so schon keyn mensch nimmer selig würde' (historical spelling, linebreaks approximate; no full diplomatic edition): this supports satisfaction for all human sins as a thought-experiment even if no one were saved; next lines distinguish saving participation by Spirit. All original PDM JPEG unchanged. Exact original publication date unresolved with two 20th-century bibliographic assessments [1528]/1529.",
+      "keyAdditionalPassages": [
+        {
+          "digitalScan": 3,
+          "concept": "internal printed title Protestantion and confession versus external Widerruff cover",
+          "iiifUrl": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00003/full/1600,/0/default.jpg"
+        },
+        {
+          "digitalScan": 11,
+          "concept": "conditional first-person resolution to refrain from baptizing without renewed divine calling, and Jacob versus Esau in infant-baptism argument",
+          "iiifUrl": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00011/full/1600,/0/default.jpg"
+        }
+      ],
+      "tenSectionFacsimileIndex": [
+        {
+          "section": 1,
+          "heading": "Von der H. Geschrifft",
+          "originalScanNumbers": [
+            5
+          ],
+          "iiifPageUrls": [
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00005/full/1600,/0/default.jpg"
+          ],
+          "verifiedScope": "HEADING_AND_KEY_ARGUMENT_VISUAL_REVIEW_NOT_FULL_DIPLOMATIC_TRANSCRIPTION",
+          "readingRu": "Писание высоко ценится, но живое Слово Божье/Дух прямо не отождествляется с написанной буквой; спасение не представлено механически зависящим от чтения книг.",
+          "guardrail": "SCRIPTURE_VS_INWARD_WORD"
+        },
+        {
+          "section": 2,
+          "heading": "Von der bezalung Christi",
+          "originalScanNumbers": [
+            6
+          ],
+          "iiifPageUrls": [
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00006/full/1600,/0/default.jpg"
+          ],
+          "verifiedScope": "HEADING_AND_KEY_ARGUMENT_VISUAL_REVIEW_NOT_FULL_DIPLOMATIC_TRANSCRIPTION",
+          "readingRu": "Страдания Христа названы достаточным удовлетворением за грехи всех людей, даже при гипотетическом отсутствии спасённых; усвоение связано с Духом Христовым и избранными, не утверждается всеобщее спасение.",
+          "guardrail": "UNIVERSAL_SATISFACTION_NOT_UNIVERSAL_SALVATION"
+        },
+        {
+          "section": 3,
+          "heading": "Vom Glauben",
+          "originalScanNumbers": [
+            6,
+            7
+          ],
+          "iiifPageUrls": [
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00006/full/1600,/0/default.jpg",
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00007/full/1600,/0/default.jpg"
+          ],
+          "verifiedScope": "HEADING_AND_KEY_ARGUMENT_VISUAL_REVIEW_NOT_FULL_DIPLOMATIC_TRANSCRIPTION",
+          "readingRu": "Вера охарактеризована через послушание Богу и доверие Его обетованию во Христе; согласие сердца, слов и дел существенно.",
+          "guardrail": "FAITH_OBEDIENCE_CONFIDENCE"
+        },
+        {
+          "section": 4,
+          "heading": "Vom freien willen",
+          "originalScanNumbers": [
+            7,
+            8
+          ],
+          "iiifPageUrls": [
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00007/full/1600,/0/default.jpg",
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00008/full/1600,/0/default.jpg"
+          ],
+          "verifiedScope": "HEADING_AND_KEY_ARGUMENT_VISUAL_REVIEW_NOT_FULL_DIPLOMATIC_TRANSCRIPTION",
+          "readingRu": "Свобода понимается в связи с добровольным подчинением воли Богу и действием любви; названия свободной и связанной воли сами по себе не стоят спора.",
+          "guardrail": "WILL_AND_GRACE_COMPLEXITY"
+        },
+        {
+          "section": 5,
+          "heading": "Von guten wercken",
+          "originalScanNumbers": [
+            8
+          ],
+          "iiifPageUrls": [
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00008/full/1600,/0/default.jpg"
+          ],
+          "verifiedScope": "HEADING_AND_KEY_ARGUMENT_VISUAL_REVIEW_NOT_FULL_DIPLOMATIC_TRANSCRIPTION",
+          "readingRu": "Вечная жизнь связана с Божьим милосердием, а не долгом, заслуженным человеком; дела рассматриваются как плод прежде данного Богом дара.",
+          "guardrail": "WORKS_NOT_EARNING_DIVINE_DEBT"
+        },
+        {
+          "section": 6,
+          "heading": "Von absunderung vnd Secten",
+          "originalScanNumbers": [
+            8,
+            9,
+            10
+          ],
+          "iiifPageUrls": [
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00008/full/1600,/0/default.jpg",
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00009/full/1600,/0/default.jpg",
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00010/full/1600,/0/default.jpg"
+          ],
+          "verifiedScope": "HEADING_AND_KEY_ARGUMENT_VISUAL_REVIEW_NOT_FULL_DIPLOMATIC_TRANSCRIPTION",
+          "readingRu": "Различает допустимое отделение от принуждающих в вопросах веры и насильственное навязывание чужого вероисповедания; выражает предпочтение мирному следованию Христу.",
+          "guardrail": "SEPARATION_AND_NONCOERCION"
+        },
+        {
+          "section": 7,
+          "heading": "Von Ceremonien",
+          "originalScanNumbers": [
+            10
+          ],
+          "iiifPageUrls": [
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00010/full/1600,/0/default.jpg"
+          ],
+          "verifiedScope": "HEADING_AND_KEY_ARGUMENT_VISUAL_REVIEW_NOT_FULL_DIPLOMATIC_TRANSCRIPTION",
+          "readingRu": "Внешние церемонии не имеют самостоятельной спасительной силы; их обожествление и суеверие критикуются, а отношение к ним должно учитывать совесть.",
+          "guardrail": "CEREMONY_NOT_SAVING_ENOUGH"
+        },
+        {
+          "section": 8,
+          "heading": "Vom Tauff",
+          "originalScanNumbers": [
+            11,
+            12
+          ],
+          "iiifPageUrls": [
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00011/full/1600,/0/default.jpg",
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00012/full/1600,/0/default.jpg"
+          ],
+          "verifiedScope": "HEADING_AND_KEY_ARGUMENT_VISUAL_REVIEW_NOT_FULL_DIPLOMATIC_TRANSCRIPTION",
+          "readingRu": "Крещение как знак общины; детокрещение не утверждается Христовой заповедью, но не объявляется автоматически вредным либо всегда требующим повторения; условное личное прекращение крещения без нового призвания.",
+          "guardrail": "BAPTISM_DISTINCTIONS"
+        },
+        {
+          "section": 9,
+          "heading": "Vom brot vnd kelch/Nachtmal",
+          "originalScanNumbers": [
+            12,
+            13
+          ],
+          "iiifPageUrls": [
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00012/full/1600,/0/default.jpg",
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00013/full/1600,/0/default.jpg"
+          ],
+          "verifiedScope": "HEADING_AND_KEY_ARGUMENT_VISUAL_REVIEW_NOT_FULL_DIPLOMATIC_TRANSCRIPTION",
+          "readingRu": "Излагает духовное истолкование Христовых слов о вкушении Плоти и Крови, хлебе и вине; нельзя без колляции свести его ко всем позднейшим конфессиональным евхаристическим формулам.",
+          "guardrail": "SPIRITUAL_SUPPER_NOT_ANACHRONISTIC"
+        },
+        {
+          "section": 10,
+          "heading": "Von dem Eyd",
+          "originalScanNumbers": [
+            13,
+            14
+          ],
+          "iiifPageUrls": [
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00013/full/1600,/0/default.jpg",
+            "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00054820_00014/full/1600,/0/default.jpg"
+          ],
+          "verifiedScope": "HEADING_AND_KEY_ARGUMENT_VISUAL_REVIEW_NOT_FULL_DIPLOMATIC_TRANSCRIPTION",
+          "readingRu": "Критикует поспешные клятвы и самонадеянные обеты; допускает правдивое свидетельство с призыванием Бога как свидетеля при условии смирения и зависимости от благодати.",
+          "guardrail": "OATH_NUANCE"
+        }
+      ],
+      "tenSectionOriginalIndexStatus": "ALL_TEN_SECTION_BOUNDARIES_GROUNDED_IN_14_HISTORICAL_SCANS; SELECTED_ARGUMENTS_VISUALLY_REVIEWED; NOT_COMPLETE_PHILOLOGICAL_TRANSLATION",
+      "imprintChronologyCaveat": {
+        "historicalText": "composed near author death in Basel in 1527 according to scholarly synthesis",
+        "catalogDating": "[1528] BSB catalog VD16 D573; square brackets denote inferred date",
+        "scholarlyHypothesis": "Oelschläger 2008 p175 footnote18 recounts Goeters 1955: possible Hätzer-mediated transmission in 1528 and printing in early 1529, NOT VERIFIED IN ORIGINAL GOETERS",
+        "status": "EXACT_FIRSTPRINT_YEAR_UNRESOLVED_WITH_MULTIPLE_BIBLIOGRAPHIC_ESTIMATES",
+        "doNotConflate": "Composition year, retrospective imprint catalog guess, and scholarship about possible edition timing are not the same fact",
+        "independentHistoricWormsPrintedBibliography": "Elisabeth Zotz, Der Wormsgau vol1 (1926–1933), printed p95, historically lists undated, unsigned Dencken Widerruff under 1529, attributing Peter Schöffer by type comparison; article original PDF screenshot not obtained; REF-S41",
+        "modernCriticalEdition": "Clarence Bauman 1991 Brill, front matter and TOC only (not book text or print date evidence); REF-S40"
+      }
+    },
+    {
+      "id": "REF-S38",
+      "documentYear": 2008,
+      "title": "Ulrich Oelschläger, Die Wormser Propheten von 1527. Eine vorlutherische Teilübersetzung der Bibel, Theologische Zeitschrift 64/2 (2008), 169–198, esp. 175 n.18",
+      "evidenceClass": "B1",
+      "accessState": "PDF_TEXT_PARTIAL_REVIEWED",
+      "locatorState": "PRINTED_PAGE_175_TEXT_LOCATED_IMAGE_NOT_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://doi.org/10.5169/seals-877832",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Direct academic-journal PDF bibliographic metadata and machine-readable text (Theologische Zeitschrift 64, 2008, issue 2, Ulrich Oelschläger, pp169–198) located. In printed p175, text attributes to Goeters (Ludwig Hätzer, 1955, 137–138) ONLY a possibility: Hätzer may have forwarded Denck's Widerruf to Peter Schöffer in 1528 and printer MAY have printed it early 1529. This is a reported possibility, NOT a new authenticated imprint date. Official BSB catalog for verified VD16 D573 copy reads '[Worms] [Schöffer] [1528]'; do not silently replace catalog estimate by scholarly hypothesis or assert identity of all copies. Full scholarly-page image was not obtained, PDF screenshot attempt failed, original Goeters pp137–138 not acquired, and reuse rights for the 2008 journal image are NOT PDM. RESEARCH_ONLY; hypothesis is a publication-date uncertainty, not evidence against the source's substantive theology. Wave356 publication-year provenance correction (SLUB official REF-S42): 1955 refers to the prior Zurich dissertation of Goeters, while published Bertelsmann book is dated 1957. Oelschläger's cited 1955 pp137–138 are not yet proven identical to published-1957 pp137–138. Distinguish exact referenced edition before assigning text locator."
+    },
+    {
+      "id": "REF-S39",
+      "documentYear": 2020,
+      "title": "Mennonitisches Lexikon, Band V (2010–2020 online; revised print edition 2020), Hans-Jürgen Goertz (ed.), article 'Denck, Hans'",
+      "evidenceClass": "B1",
+      "accessState": "INDEXED_EXCERPT_AND_WEB_TEXT",
+      "locatorState": "ARTICLE_LEVEL_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.mennlex.de/doku.php?id=art%3Adenck_hans",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Retrieved specialist encyclopedia indexed text: after Basel stay Oecolampadius requested a written statement; he published it after Denck's death under title Hans Denken Widerruf (1528); encyclopedic assessment stresses continuing spiritualist theological thread despite alleged recantation, notably distinction between written Scripture and inward divine Word. Author/version and full article page/paragraph citation have not been independently verified; not a replacement for 1528 firstprint REF-P62, which was visually checked. The 1528 catalog date versus Oelschläger/Goeters tentative early-1529 imprint timing remains unresolved; do not assert that any named editor physically printed this particular VD16 copy. Bibliographic date precision correction: publication year 2020 is that of the revised PRINT volume V (ISBN 978-3-921881-23-1); online editorial project was developed 2010–2020. The precise posting/revision year of the individual 'Denck, Hans' entry was NOT established. Do not treat current checkedAt 2026 as publication year. Editorial series metadata directly confirmed at https://www.mennlex.de/doku.php?id=start and https://www.mennlex.de/doku.php?id=vorwort."
+    },
+    {
+      "id": "REF-S40",
+      "documentYear": 1991,
+      "title": "Clarence Bauman, The Spiritual Legacy of Hans Denck: Interpretation and Translation of Key Texts (Brill 1991), original German critical text from Baring/Fellmann and English facing translation; table of contents 'Protestation or Recantation (1528)'",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://brill.com/display/book/9789004476936/front-1.pdf",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Official Brill volume front matter directly inspected via publisher PDF text: editor/translator Clarence Bauman; original volume date 1991, ISBN 9004 09291 9; TOC separately lists Denck 'Letter to Oecolampadius (1527)' and 'Protestation or Recantation (1528)' and 'Some Propositions (1528)'; verso says Denck's German 'Schriften' reproduced by permission from critical editions Baring/Fellmann, Quellen und Forschungen zur Reformationsgeschichte XXIV, part2 (1956) pp20–113 and part3 (1960) pp132–133. Publisher front matter explicitly ©1991 Brill, all rights reserved. Full original critical passage/parallel English text NOT acquired, NOT quoted or translated from this copyrighted book; web PDF screenshot request failed, but machine-readable publisher front-matter lines independently exposed. Chronological labels (1527 composition and 1528) in book TOC are editorial labeling, not image-based evidence of the exact print-year of BSB VD16 D573. This is a critical edition/translation lead, not PDM source and not permission to upload whole book to public Drive or Product. Machine state aligned with repository evidence-policy v2: PARTIAL_OBJECT only (publisher front matter + TOC), EXACT_LOCATOR_VERIFIED only for this TOC metadata, PERMISSION_REQUIRED for copyrighted critical translation; no page-level content has been read."
+    },
+    {
+      "id": "REF-S41",
+      "documentYear": 1933,
+      "title": "Elisabeth Zotz, Neuerworbene Wormser Drucke des 16. Jahrhunderts im Besitze der Stadtbibliothek Worms, Der Wormsgau vol.1 (issued 1926–1933), pp93–100, item4 p95: 'Dencken Widerruff' under 1529",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.worms.de/neu-de-wAssets/docs/bildung-bieten/Stadtarchiv/Wormsgau/Der-Wormsgau-1-1926-1933/Nr.13_WG_-1.-Band.pdf",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Official City of Worms journal archive attributes article to Elisabeth Zotz (not Zoth) in Der Wormsgau vol.1 issued 1926–1933, printed pp93–100; exact article publication year within that range NOT established. documentYear=1933 is bound-volume TERMINUS AD QUEM, NOT an assertion of issue publication in 1933. Downloadable historical article machine-readable PDF text at printed p95 places item 4 'Dencken widerruff' under heading 1529, gives octavo, 7 leaves (last blank leaf missing), gathering signature a, no printed year or printer, and attribution to Peter Schöffer from comparing types, preceded by introductory notice of newly acquired Worms Stadtbibliothek copies of 'Hans Denk' and 'Hans Denkens Widerruf'. This is a contemporary twentieth-century bibliographic cataloguing judgement and an archival historical holding claim, NOT the 16th-century book's date or proof Worms held a distinct edition, nor evidence this copy remains available today, nor proof of typography identity with BSB VD16 D573. Wave356 initial screenshot of pages 0–2 returned a cache miss. SUPERSEDED BY W357 on 2026-11-06: the official Worms 8-page PDF reopened in the web viewer, screenshot of PDF page index 2, printed p.95, visually verified the full item 4 under the 1529 heading, octavo 7 extant leaves with last blank missing, signature a, absence of printer/date, and Schöffer attribution by types. LOCATOR_HOLD for the 20th-century published page is resolved (EXACT_LOCATOR_VERIFIED); separate ARCHIVE_HOLD on surviving 16th-century Worms physical copy/edition comparison remains. Modern rights unclear; no PDF bytes stored/distributed. Machine state aligned with repository evidence-policy v2: PARTIAL_OBJECT = selected journal text and photographed original p95 read (full article not collated), EXACT_LOCATOR_VERIFIED for printed p95, RIGHTS_UNKNOWN and citation/reference only. Modern rights unchanged; no PDF binary was archived."
+    },
+    {
+      "id": "REF-S42",
+      "documentYear": 1957,
+      "title": "SLUB Dresden official holding catalog: J. F. Gerhard Goeters, Ludwig Hätzer (ca. 1500 bis 1529), Spiritualist und Antitrinitarier, Gütersloh: C. Bertelsmann, 1957, 160 pp; dissertation Zurich University 1955",
+      "evidenceClass": "A2",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://katalog.slub-dresden.de/id/0-1072322293",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Official SLUB Dresden holding entry directly checked: Goeters published book Gütersloh Bertelsmann **1957**, in Quellen und Forschungen zur Reformationsgeschichte vol.25, 160pp; catalog separately describes prior University of Zurich dissertation as **1955** ('Vollst. zugl.: Zürich, Univ., Diss., 1955'). Shelfmark Z.4.377-25 and a catalogue status 'Ausleihbar, bitte bestellen' were displayed, but no book pages 137–138 or Zurich dissertation text acquired and no actual order placed. Therefore Oelschläger 2008 references to 'Karlsruhe 1955, 137f' relate to dissertation-year/source identity; cannot assume 1957 printed volume has identical pagination, text, or cited page. Access CATALOG_ONLY. Catalog year for public volume verified, not the Denck early print-year. Scholarly book copyrighted/rights unknown."
+    },
+    {
+      "id": "REF-S43",
+      "documentYear": 1962,
+      "title": "Josef Benzing, Peter Schöffer d. J. zu Worms und seine Drucke (1518–1529), Der Wormsgau 5 (1961–1962), pp108–118: printer-type attribution caution p108 and Hans Denck Widerruff item44 p116",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.worms.de/neu-de-wAssets/docs/bildung-bieten/Stadtarchiv/Wormsgau/Der-Wormsgau-5-1961-1962/Nr.5_bd.5WG_-5.-Band.pdf",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "The official City of Worms facsimile PDF was opened and its actual journal-page screenshots visually inspected: PDF index0 = printed p108 and index8 = printed p116. Benzing's inventory item44 at printed p116 reads Denck, 'H. Dencken wid'ruff', with ESTIMATED date [1528], octavo eight leaves including final blank, gathering a8; bibliography explicitly cites Weller 3763/3764, Zotz item4 and Baring A VII, and lists historical library locations including Worms Stadtbibliothek, Munich and others. This is a later bibliographic dating, NOT an imprint date or an inspected 16th-century title-page date. Zotz p95 places its seven EXTANT leaves under 1529, explicitly saying the last blank is missing; 7 extant versus 8 ideal is structurally compatible but does NOT establish identical edition/setting or prove modern custody. Because Benzing expressly cites Zotz, these 20th-century bibliographies are NOT two independent autoptic primary-print witnesses. On visually inspected p108 Benzing warns that Peter Schöffer and Jakob Schmidt used completely identical types and Lombard initials, so Schöffer attribution by typographic similarity alone is not mechanically unique; this does NOT prove that the Denck tract was printed by Schmidt. Neither a Goeters 1955/1957 page collation nor original historical type-setting cross-comparison was performed. Rights of 1961/62 magazine publication not verified, citation-only; no copyrighted PDF or new images archived. Exact pages visually confirmed, but object only selectively read (PARTIAL_OBJECT); physical-copy ARCHIVE_HOLD, print-date EVIDENCE_HOLD and PUBLICATION_HOLD remain."
+    },
+    {
+      "id": "REF-S44",
+      "documentYear": 1914,
+      "title": "Rufus M. Jones, Spiritual Reformers in the 16th & 17th Centuries (Macmillan 1914), chapter II Hans Denck and the Inward Word, note 14: author's first-person statement using Dresden Royal Library Denck Widerruf copy Theol. Cathol. 817",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.gutenberg.org/cache/epub/24934/pg24934.html",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Original 1914 author/title/imprint and chapter II note[14] directly checked in a freely hosted Project Gutenberg transcription. Exact text locator is chapter II footnote14; verified in digitized editorial transcription, NOT against a photographed physical 1914 book page or archival library catalog. Jones writes in the first person that he used 'Widerruf' at the Royal Library of Dresden, shelfmark 'Theol. Cathol. 817', and puts date '1527' in his own informal bibliography. This provides a distinct HISTORICAL claimed 1914 Dresden copy and actionable old shelfmark, NOT a verified extant 2026 SLUB holding, identical edition with BSB/Worms, or a 1527 dated imprint. His interpretive narrative about 'inward Word' reflects Jones's spiritualist/Quaker historiographic perspective and does not override primary Denck print. Google and official SLUB searches did not produce a verified current match to historical signature. Rights of modern e-text and 1914 edition must be evaluated separately; no complete text or scans archived."
+    },
+    {
+      "id": "REF-S45",
+      "documentYear": 1955,
+      "title": "Georg Baring, Hans Denck: Schriften, Teil 1 Bibliographie, Quellen zur Geschichte der Täufer 6/1 = Quellen und Forschungen zur Reformationsgeschichte 24/1, Bertelsmann Gütersloh 1955; Widerruf bibliographic section begins p38",
+      "evidenceClass": "A2",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://books.google.com/books/about/Quellen_und_Forschungen_zur_Reformations.html?id=q6vjAAAAMAAJ",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Google Books bibliographic metadata for series volume24 issue1 published 1955 lists its table of contents, including 'Widerruf' at PRINTED p38 and next major entry 'Hans Dencks Niederschrift über die Taufe für Johannes Bader in Landau' at p52. Separate Japan NII CiNii catalog NCID BC08347101 verifies author Georg Baring, title Bibliographie, Bertelsmann 1955, extent 68 pages, and Hitotsubashi University Library catalog shelfmark Abe/D448:1:1. The TOC locus p38 is EXACT_LOCATOR_VERIFIED only for the section START, not for a primary German printed text or a reconstructed complete section range; pages themselves were NOT read and no publisher images copied. Crucial distinction: this is the bibliography PART ONE (1955), not editor Walter Fellmann's actual religious writings volume TWO (1956), and not Goeters 1955 dissertation on Hätzer. A firstprint edition identity, Baring's detailed bibliographic collation, and extant Dresden/Worms holdings remain to be checked in original reference pages."
+    },
+    {
+      "id": "REF-S46",
+      "documentYear": 1956,
+      "title": "SLUB Dresden current official catalog of Walter Fellmann (ed.), Hans Denck Schriften 2: Religiöse Schriften, Bertelsmann 1956, 119 pages; shelfmark Z. 4. 377-24,2",
+      "evidenceClass": "A2",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://katalog.slub-dresden.de/id/0-1072759098",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Official live SLUB Dresden title page for Walter Fellmann edition verifies 1956 title 'Schriften / 2, Religiöse Schriften', series QF Reformationsgeschichte 24/2 and Quellen zur Geschichte der Täufer 6/2, publisher Bertelsmann, 119 pages, physical stack/circulation shelfmark Z. 4. 377-24,2 and barcode 31399699, with 'Bestellen zur Benutzung im Haus, kein Versand per Fernleihe, nur Kopienlieferung' notice. This is a concrete modern cataloged SCHOLARLY BOOK holding, not a current 16th-century Dresden Widerruf copy or a successor of Jones historical Theol. Cathol. 817. Modern critical text pages/Denck's Widerruf internal page and variant readings were NOT read; order and payment NOT placed. Access CATALOG_ONLY, no acquisition of copyrighted contents."
+    },
+    {
+      "id": "REF-S47",
+      "documentYear": 2019,
+      "title": "SLUB Dresden official press release, Kriegsverluste kehren zurück an die SLUB, 4 December 2019: nine recovered Reformation-era and other old volumes, examples of 1945 losses/relocations",
+      "evidenceClass": "A3",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.slub-dresden.de/ueber-uns/presse/pressemitteilung/2019/12/4/kriegsverluste-kehren-zurueck-an-die-slub",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Official SLUB press release dated 2019-12-04 directly opened. It describes return of nine sermon/devotional prints from 16th–18th centuries, says approximately 24 percent of ~7,400 prewar sermon/prayer books in that PARTICULAR category were classed as war losses, and separately reports historic wartime storage/relocation and return problems. This confirms institutional plausibility of relocation, loss and later recovery and presence of provenance research, not the fate or current status of Hans Denck's 'Widerruf' cited by Rufus M. Jones as Dresden old shelfmark Theol. Cathol. 817. No source directly links THAT shelfmark to the nine returned items. An unmatched online catalog query is no proof of destruction or extant custody; exact item-specific holdings correspondence remains ARCHIVE_HOLD. Do not use the 24% subgroup rate as a probability for the Denck copy."
+    },
+    {
+      "id": "REF-S48",
+      "documentYear": 1526,
+      "title": "BSB MDZ official digitized catalog record for Hans Denck, Wer die warheit warlich lieb hat, VD16 D570, [Augsburg: Ulhart, 1526], 8 leaves, bsb00027173",
+      "evidenceClass": "A2",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://digitale-sammlungen.de/de/details/bsb00027173",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Direct official Munich BSB/MDZ discoverability metadata in web index, NOT direct visual inspection of XVI-century printed leaf. Distinct object: title 'Wer die warheit warlich lieb hat, mag sich hierin brüfen im erkandtnuß seynes glaubens', VD16 D570, inferred date [1526], place [Augsburg], printer [Ulhart], extent [8] leaves, digital ID bsb00027173, 16 digital scans, shelfmark 'Res/Polem. 875#Beibd.5'. Digitized object marked Public Domain Mark 1.0 and metadata CC0 by BSB. [1526] and printer/place are institutional inferred catalog claims, not an inspected internal date or colophon. No images copied or full text collated; exact locator verified for catalog identity only. Must NOT confuse with the firstprint Widerruf VD16 D573 or assume Jones's undated item (5) matches this particular print without context/copy comparison."
+    },
+    {
+      "id": "REF-S49",
+      "documentYear": 1528,
+      "title": "BSB MDZ official digitized catalog record for Hans Denck, Wer die Warheit warlich lieb hat, VD16 D572, [Augsburg: Ulhart, 1528], 7 leaves, bsb00028429",
+      "evidenceClass": "A2",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.digitale-sammlungen.de/de/details/bsb00028429",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Direct official BSB MDZ indexed catalog metadata (HTML detail full result) for a different edition/print identity under near-identical opening title: VD16 D572, inferred [Augsburg: Ulhart, 1528], extent [7] leaves, digital ID bsb00028429, 14 digital scans, shelfmark 'Res/Asc. 1868 l#Beibd.4'. Digitization marked PDM and metadata CC0. Not the 'Widerruf' VD16 D573, although same approximate bibliographic year; the VD16 ID, title completion, extent, holding and digitized object differ from VD16 D570 (bsb00027173). No leaf images, colophon, or textual variants inspected; exact locator applies to catalog records not full historical text. BSB [1528] for this OTHER work does not resolve Widerruf [1528]/1529 dating. Mennonitica index also names a third D571 record; not independently checked against primary BSB in this wave, so no assertions about D571 characteristics."
+    },
+    {
+      "id": "REF-S50",
+      "documentYear": 1965,
+      "title": "Ernst Staehelin, Oecolampadiana: Nachträge und Berichtigungen zu Briefe und Akten zum Leben Oekolampads, Basler Zeitschrift für Geschichte und Altertumskunde 65 (1965), pp165–194, printed p178, document 613",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://doi.org/10.5169/seals-117465",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "University ETH E-Periodica digital journal catalog & PDF extracted text directly accessed and identified: Staehelin (1965), journal vol65, printed p178, entry No.613, Oecolampad to Ludwig [?], Basel 9 November 1528. Corrects note4 in two places to 'Peter Schöffer in Worms' instead of 'in Mainz' in his earlier critical edition. Bibliographic scholarly cross-references on same page are Baring Schriften part1 (1955) p38ff, Fellmann part2 (1956) p18f & 104ff on Widerruf, and Denck letter to Oecolampad, Staehelin document No.523, printed Fellmann part3 (1960) p133ff. These are precise REPORTED page locators only: none of Baring, Fellmann or underlying 1528 letter pages has been read from those volumes and this correction does not establish a 1528 Widerruf imprint. ETH digital-journal page screenshot attempt returned crawler verification rather than rendered image; source is machine-readable original PDF text and p178 visible in its extracted text only, thus COARSE_LOCATOR_ONLY and LOCATOR_HOLD for independent facsimile visual confirmation. Copyright image reuse requires permission according to ETH front matter; no original article PDF or screenshots redistributed."
+    },
+    {
+      "id": "REF-S51",
+      "documentYear": 1962,
+      "title": "Walter Klaassen, book review Hans Denck Schriften 1–3, Mennonite Life 17(1), January 1962, printed pp44–45, original journal scan",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://mla.bethelks.edu/ml-archive/pre2000/1962jan.pdf",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Original institutional Mennonite Life PDF January 1962, volXVII no1, printed p44 and p45, directly visually checked by screenshots at PDF indexes 45 and 46. Review titled 'Hans Denck', reviewer signed Walter Klaassen at bottom of printed p45. Review reports entire three-volume critical edition Baring 1955 / Fellmann 1956 & 1960 and explains bibliographical roles. It represents an interpretive disagreement: Klaassen argues Fellmann overreads Denck's distinction between printed Scripture/book and Spirit/inner Word as rejection of sola scriptura, while Klaassen's own counter-interpretation stresses life-giving Spirit's operation through Scripture; do not ascribe either synthesis as direct original 1527 Denck quote. Review p45 asserts Denck regretted participation in public ministry but did not abandon Anabaptism; says Fellmann also concedes core Anabaptist beliefs remained; report both perspectives, not a proven full historical verdict. Review describes 68,120,148 pp (bibliographic counting differences); independent SLUB catalogs list 119 for part2 and 146 for part3. The journal is modern non-PDM; no PDF or image reused in GitHub/Drive and PUBLICATION_HOLD retained."
+    },
+    {
+      "id": "REF-S52",
+      "documentYear": 1960,
+      "title": "SLUB Dresden official item-level catalog for Walter Fellmann (ed.), Hans Denck Schriften part 3: Exegetische Schriften, Gedichte und Briefe, Gütersloh Mohn 1960, catalog extent 146 pages, Z. 4. 377-24,3",
+      "evidenceClass": "A2",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://katalog.slub-dresden.de/en/id/0-1072759101",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Current official SLUB detailed library catalog directly checked for part 3 of Denck series, editor Walter Fellmann, Gütersloh Mohn 1960, in Quellen und Forschungen zur Reformationsgeschichte 24/3 and Quellen zur Geschichte der Täufer 6/3, 146 pages per SLUB metadata. Modern holding in Central Library magazine: exact shelfmark Z. 4. 377-24,3, barcode 31399698, available to order for on-site use or copies via policies; source is catalog metadata ONLY. Compare 1962 Mennonite Life reviewer listing p148 as different bibliographic extent/convention, not proof of textual additions/loss or edition difference. Printed p133ff of Denck letter to Oecolampad is cross-reference in Staehelin 1965 p178, NOT read directly in this book. Old 1914 Dresden historic Theol. Cathol.817 remains a DIFFERENT object, no modern shelfmark crosswalk proven. Modern text protected by rights; no order, scan download or payment made."
+    },
+    {
+      "id": "REF-S53",
+      "documentYear": 2020,
+      "title": "Geoffrey Dipple, Denck Hans, Mennonitisches Lexikon volume V Revision und Ergänzung (published print edition 2020; online revised until 2024), entry biographies/works/literature",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.mennlex.de/doku.php?id=art%3Adenck_hans",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Complete entry on original MennLex V scholarly encyclopedia site read, authored Geoffrey Dipple, heading 'Denck, Hans', biographic narrative (especially paragraphs about late 1527 Basel and Widerruf), as well as bibliographic references. Mennonitischer Geschichtsverein's editor Hans-Jürgen Goertz and print Band V 2020 established independently via publisher info/official MennLex start page; online page last changed June 2024, NOT necessarily original text written in 2024. Dipple says Denck wrote his faith-account at Oecolampadius' request, and 'Oecolampad nach dem Tod Dencks als Hans Denken Widerruf (1528) veröffentlichte' (attributing edition/publishing agency to Oecolampadius, printed 1528). This conflicts at least in publication DATE and procedural narrative with 2008 Oelschläger reporting Goeters' possible Hätzer-to-Schöffer 1528 delivery and early-1529 print. Oecolampadius as sponsor and Schöffer as printer could theoretically coexist, but no primary transmission chain establishes coexistence, or a distinct 1528 vs 1529 edition. This is modern secondary scholarship, not autoptic colophon, editor's actual printing contract, or proved agent. His assessment of Denck's manuscript/soteriology is historian's interpretation, not literal original wording. No copies made, rights unknown. Additional directly read same 2026-11-06: MennLex V article says literally 'Am 27. Juni 1527 schlug Kautz ein Reformmanifest an die Tür der Dominikanerkirche.' This third SECONDARY posting date differs from KGK 7 June and the 2015 Capito edition editorial 9 June. No separately evidenced 'second manifesto' or printed 27 June date found. Do not assume TYPO without original corroboration; 13 June invitation pre-dates 27 June if same document."
+    },
+    {
+      "id": "REF-S54",
+      "documentYear": 1526,
+      "title": "Wolfgang Capito with Oecolampadius postscript to Ulrich Zwingli, 26 December 1526, letter 314, ZwBr II pp819–821 Ep564; interpubs one-page English editorial summary",
+      "evidenceClass": "A2",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://capito.iterpubs.org/letters/1526/Letter_314.pdf",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Directly opened capito.iterpubs.org editor-created 1-page PDF and visually screenshotted page0. Header specifies Wolfgang Capito and Johannes Oecolampadius postscript to Zwingli 26 Dec 1526, printed historic correspondence ZwBr volume2 pp819-821 Ep564. Bracketed editorial [Summary] (NOT full 1526 original letter transcription!) says Strasbourg reformers debated Hans Denck 22 December concerning [Vom Gesatz Gottes]; hostile evaluation of his apparent rhetorical strategy is Capito's reported viewpoint. Denck ordered to depart and left Strasbourg 25 December. Important chronology independently predates 1527 Widerruf composition. Original 16th-century text and ZwBr 2 pp819-821 NOT acquired, translated line-by-line, or photographed; do not call current PDF a primary manuscript, direct first-person statement, or original-language quotation."
+    },
+    {
+      "id": "REF-S55",
+      "documentYear": 1527,
+      "title": "Wolfgang Capito to Ulrich Zwingli, 18 August 1527, letter 338, ZwBr III pp191–194 Ep643; interpubs 1-page English editorial summary",
+      "evidenceClass": "A2",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://capito.iterpubs.org/letters/1527/Letter_338.pdf",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Directly opened capito.iterpubs.org editor-created 1-page PDF and visually checked image page0. It states letter Capito to Zwingli, 18 Aug 1527, printed ZwBr vol3 pp191-194 Ep643. Bracketed editorial [Summary] reports Martin Cellarius had debated Denck in Ludwig Hätzer's presence over Denck's free-will work 'Was geredt sei...' (1526); they reached an agreement on its reading, while Hätzer continued criticizing Cellarius. This is Capito's partisan report on the issue of whether CELLARIUS was an Anabaptist; NOT proof Denck agreed with the Reformed on all theology, not a new exact debate date (only terminus before Aug 18), NOT direct verbatim German/Latin original. Distinct from 26 Dec 1526 Capito letter and not about Widerruf print date. Access to summary not original letters; retain evidence and publication holds."
+    },
+    {
+      "id": "REF-S56",
+      "documentYear": 1997,
+      "title": "Thomas A. Fudge, Icarus of Basel? Oecolampadius and the Early Swiss Reformation, Journal of Religious History 21(3), October 1997, pp268–284, particularly printed p275 nn49–52",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/1467-9809.00039",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Publisher DOI 10.1111/1467-9809.00039 confirms article identity and formal journal pages. Read freely accessible third-party personal-library PDF mirror 'downloads.whitehorsetc.com/Icarus_of_Basel_Oecolampadius_and_the_Ea.pdf' and directly visually inspected PDF index7 = printed p275, including footnotes 49–52. Fudge reports Oecolampadius in Nov1527 told correspondents Denck converted, later stated he had Denck's manuscript and could publish it; source attribution in Fudge is Jan J. Kiwiet, Mennonite Quarterly Review 31 (1957), p258. He further records Kiwiet's claim Oecolampadius wrote part of the ostensible recantation, and warns in note52 that manuscript evidence does not affirm this accusation. The underlying manuscript, epistolary quotation in original language, and Kiwiet 1957 pp257–258 have NOT been personally examined. Do not present an original quotation as own autopsy, nor conclude physical possession, falsification, or full genuine authorship as established facts. Official published 1997 modern scholarly PDF has copyright; no PDF or screenshot archived or reused."
+    },
+    {
+      "id": "REF-S57",
+      "documentYear": 1962,
+      "title": "Martin Bucers Deutsche Schriften, Band 2: Schriften der Jahre 1524–1528 (1962), critical edition, Getrewe Warnung editorial intro pp225–233 (esp 227), 1527 polemical original transcription pp234–258 (esp 234)",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://digi.hadw-bw.de/view/bds2/0232",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Heidelberger Akademie der Wissenschaften / Heidelberg University Library online edition directly consulted in text/OCR rendering at https://digi.hadw-bw.de/view/bds2/0232 (printed p227, critical introduction) and https://digi.hadw-bw.de/view/bds2/0239 (printed p234, transcript of 1527 original folio A1a-b). Editor (Manfred Krebs) compares original single-sheet Kautz seven theses (surviving Generallandesarchiv Karlsruhe, printed in Täuferakten 4 [1951] pp113f no129) against Friedrich Zorn's Worms chronicle: Kautz single sheet says 'Jacob Kautz, predicant zu Wormbs, mit seinen brüdern ...'; chronicle inserted named Hätzer, Denck, Rink. Edition says original makes Kautz responsible author; a planned debate June13 1527 apparently did not occur. Editor gives Kautz posting Friday 7 June 1527. Printed p234 transcribes contemporary polemical Strasbourg preachers' Getrewe Warnung title explicitly mentioning Denck and hostile allegations he opposes redemption, Scripture and civil order. This is ADVERSARIAL SOURCE, NOT impartial proof Denck held all charges, and Kautz ≠ automatically Denck coauthor. Text of modern edition available selectively in institutional HTML OCR; page scans/original Kautz single sheet NOT independently visually inspected. No complete critical volume copied or redistribution, modern editorial rights unresolved."
+    },
+    {
+      "id": "REF-S58",
+      "documentYear": 2018,
+      "title": "Bernd Breitenbruch, Der erste Katalog der Stadtbibliothek Ulm von 1549: Edition und Bestandsanalyse, Veröffentlichungen der Stadtbibliothek Ulm 26 (2018), printed p76, catalog items P8-3/I34-3 and P8-4/I34-4",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.ulm.de/-/media/bibliothek/downloads/volltexte/der-erste-katalog-der-stadtbibliothek-ulm-von-1549.pdf?rev=58d8bd0ae5794598ba62d00900a7aad2",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Official City of Ulm/City Library copyrighted PDF of 2018 scholarly edition of historic city library inventory compiled in 1549; extracted text of PRINTED p76 directly inspected; web screenshot p90 of official PDF blocked HTTP403, so no independent image check. Historic catalog adjacent entries: P 8-3 = I 34-3 'Warnung der prediger zu Straßburg, über die artikel Jacob Kautzens' identified by editor as Martin Bucer Getrewe Warnung, [Straßburg: Knobloch] 1527, VD16 B8887, [24] leaves, catalog/editor item 2785 'Sam.', numerous marginal notes; P 8-4 = I 34-4 'Jo[hannes] Baders warnung vor dem orden der widertauffer' editorial Bader Brüderliche Warnung, [Straßburg: Knobloch] 1527, VD16 B108, [116] leaves, item 2786. A historically dated 1549 LIBRARY INVENTORY recorded both publications, not proof their surviving shelf/copies in 2026, not direct author/coauthor testimony. The modern editorial text and margin descriptions require direct physical provenance check; current LOCATOR_HOLD for failed page-image verification. Copyright © 2018 Stadtbibliothek Ulm explicitly in PDF front matter; no PDF redistribution."
+    },
+    {
+      "id": "REF-S59",
+      "documentYear": 1527,
+      "title": "Martin Bucer / Strasbourg evangelical preachers, Getrewe Warnung der Prediger des Evangelii zu Straßburg, Strasbourg [Johann Knobloch], 2 July 1527, [24] leaves 8°, VD16 B8887, BSB digital identity bsb00026087",
+      "evidenceClass": "A2",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.leo-bw.de/en-GB/detail/-/Detail/details/DOKUMENT/bsz_swb/567316998/Getrewe%20Warnung%20der%20%7C%7C%20Prediger%20des%20Euangelij%20z%C5%AF%20Stra%C3%9Fburg-%20vber%20%7C%7C%20die%20Artickel-%20so%20Jacob%20Kautz%20Prediger%20z%C5%AF%20Wor%7C%7Cmbs-%20k",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Landesarchiv Baden-Württemberg LEO-BW/Südwestdeutscher Bibliotheksverbund source catalog record BSZ PPN567316998, identified author Bucer bibliographically assigned, source imprint text '(Straßburg am amdern tag Julij. M D xxvij.)' (=2 July 1527), inferred printer [Johann Knobloch the Elder], octavo, [24] leaves, digitized BSB bsb00026087, original BSB URN urn:nbn:de:bvb:12-bsb00026087-4. Web text verified via structured indexed official catalogue; attempt to open exact LEO-BW page returned 403 in crawler and BSB original digitized pages NOT visually read (so CATALOG_ONLY). This is the ORIGINAL 1527 Bucer anti-Kautz printed work, bibliographically different from 1527 Kautz seven theses and Denck's Widerruf VD16 D573. The exact dated imprint belongs to Bucer pamphlet and cannot date Widerruf. No 1527 original image downloaded, original rights/PDM not assumed from BSB other digitizations."
+    },
+    {
+      "id": "REF-S60",
+      "documentYear": 1527,
+      "title": "Johannes Bader, Brüderliche warnung für dem newen Abgöttischen orden der Widertäuffer ... Ein sonderlich gesprech mit Hans Dencken ... den heyligen Kindertauff betreffend, [Straßburg: Johann Knobloch], 1527, VD16 B108, [116] leaves",
+      "evidenceClass": "A2",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://books.google.com/books/about/Br%C3%BCderliche_warnung_f%C3%BCr_dem_newen_Abg.html?id=EFtYAAAAcAAJ",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Bibliographic identity and lengthy title verified from 2018 authoritative Ulm 1549 catalog scholarly edition p76 and digitized physical-book metadata Google Books for Austrian National Library copy (id EFtYAAAAcAAJ) and distinct Bavarian State Library scan (id dQYFeE8s0S8C). Print [Strasbourg: Knobloch] inferred/catalogued 1527, VD16 B108, [116] leaves. Ulm text includes special conversation 'mit Hans Dencken ... den heyligen Kindertauff betreffend', so an opponent-written printed account specifically engages baptism. Cannot assume exact conversation date Jan20 1527, Denck direct word-for-word authenticity or two BSB/ÖNB copies are same typography without leaf and collation comparison. No historical printed page image viewed in this turn; modern metadata and transcribed 1549 catalog only. Attribution and author rhetoric remain adversarial Bader source, not neutral Denck confession; no JPG archive or publication permission assumed."
+    },
+    {
+      "id": "REF-S61",
+      "documentYear": 2006,
+      "title": "C. Arnold Snyder, The Birth and Evolution of Swiss Anabaptism (1520–1530), Mennonite Quarterly Review 80 (October 2006), discussion of Hans Denck Strasbourg private Cellarius meeting and public 22 Dec 1526 debate, printed p630",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://peacetheology.net/wp-content/uploads/2013/02/snydere2809422birth-and-evolution-of-swiss-anabaptism22.pdf",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Open PDF secondary paper read via search-extracted scholarly text at printed p630 (PDF view too large ~12MB for web screenshot; image-level verification failed, maintain LOCATOR_HOLD). Snyder distinguishes earlier PRIVATE discussion involving Martin Cellarius/Borrhaus and Denck at Wolfgang Capito's house, and later PUBLIC 22 December 1526 Denck debate led by Martin Bucer in Strasbourg; subsequent expulsion 25 Dec 1526. Snyder cites Hans-Werner Müsing, 'The Anabaptist Movement in Strasbourg from Early 1526 to July 1527', MQR April1977 pp91–126, esp pp101–107, and original QGT Alsace corpus; these underlying printed pages NOT independently examined. Capito's letter 18 August 1527 to Zwingli (REF-S55) reports prior Cellarius discussion, but its letter date is NOT the discussion date. The distinction plausible, exact private discussion date not established from this PDF alone. Copyright modern and no facsimile storage."
+    },
+    {
+      "id": "REF-S62",
+      "documentYear": 1957,
+      "title": "Mennonite Quarterly Review original official article index, The Life of Hans Denck (ca.1500–1527), by John [Jan J.] Kiwiet, volume 31, pp227–259, October 1957",
+      "evidenceClass": "A2",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://mqr-search.goshen.edu/search.php?max=10&start=11&subjID=556",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "MQR Goshen University original index directly inspected; exact item 'The life of Hans Denck (ca.1500-1527)' author catalog indexed 'John Kiwiet', 31:227–259 O 1957 (October). Modern MennLex historian Dipple bibliography identifies same title/volume/pages under 'Jan Kiwiet'; Fudge scholarly 1997 uses 'Jan J. Kiwiet'. Index variation John/Jan J. should not produce two separate scholarly authors without author authority research. Relevant disputed manuscript interpolation claims trace specifically to pp257–258 (Fudge 1997 p275), but page CONTENT of Kiwiet 1957 has NOT been acquired or read. Exact locator verified for official bibliographic coverage ONLY, NOT page content. No access to 1957 rights-protected article; preserve EVIDENCE_HOLD and publication holds."
+    },
+    {
+      "id": "REF-S63",
+      "documentYear": 1527,
+      "title": "BSB MDZ official catalog: Hans Denck, Ordnung Gottes und der Creaturen Werk, [Worms: Peter Schöffer, 1527], VD16 D560, [15] leaves, bsb00037013, Hom. 315#Beibd.7",
+      "evidenceClass": "A2",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://digitale-sammlungen.de/de/details/bsb00037013",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Direct official BSB Digital Collections indexed HTML catalog record: title Ordnung Gottes, und der Creaturen Werk, author Denck (1495–1527), bibliographic estimate place [Worms], printer [Schöffer], date [1527] (ALL bracketed inferred), extent [15] leaves, original shelfmark Hom. 315#Beibd.7, VD16 D560, BSB digital object bsb00037013 with metadata showing 54 scans, PDM 1.0 digital object/CC0 metadata, OCLC 311885946. 54 digital files are NOT 54 historical folios and not 54 new archived images. Physical imprint leaf, signature sequence, typography and colophon have NOT been independently inspected in this wave; attempts to access individual IIIF image from automated web tools failed. Does not prove year 1527, nor the same edition or physical copy as Keller's unspecified 1902 bound volume, nor same printed setting as Denck Widerruf D573. Rights metadata PDM is source-provided eligibility only; no binaries copied and publication remains held."
+    },
+    {
+      "id": "REF-S64",
+      "documentYear": 1527,
+      "title": "UB Johann Christian Senckenberg Frankfurt original 1527 print Syben Artickel zu Wormbs von Jacob Kautzen angeschlagen vnnd gepredigt. Verworffen vnnd widerlegt..., Ms. germ. oct. 43 Nr. 3, 12 leaves, 24 scanned pages",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://sammlungen.ub.uni-frankfurt.de/msneuz/download/pdf/7227577",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "University Library Frankfurt digitization direct institutional PDF 24 page-images original historic object. Visually inspected PDF page indices 0 (title 'Syben Artickel...Verworffen und widerlegt... Anno M.D.XXVII'), 2 (first textual page, author as Jacob Kautz Predicant zu Wormbs mit seinen Brüdern, printed invitation for upcoming Thursday 13th June to explain and defend seven articles), 3 (article 1–4 including article 3 opposing infant baptism), and 4 (article 5–7). Other 20 pages NOT read and no item-level complete collation. Official Frankfurt catalog shelfmark Ms. germ. oct. 43 Nr.3, 12 leaves, digitized 2015 and PDM1.0 digital object; its metadata specifically warns 'nicht eindeutig VD16 K 558 zuordbar', hence K558 NOT unqualified authoritative edition identification. This is a bound 12-leaf printed collection of Kautz's seven theses and their printed refutation, NOT demonstrated to be same physical original single-sheet 7 June posting conserved in Karlsruhe, cited by BDS2. The 13 June Thursday is a PLANNED disputation date in text and DOES NOT date actual posting to 7 or 9 June, nor prove disputation was held. No explicit Denck/Hätzer/Rink coauthor names on the first printed author formula. Photographic visual verification of selected original leaves is stronger than just bibliographic citation, but incomplete."
+    },
+    {
+      "id": "REF-S65",
+      "documentYear": 2025,
+      "title": "Critical Karlstadt Edition KGK 306, introduction to Dialogus von dem fremden Glauben, Glauben der Kirche, Taufe der Kinder, scholarly section Publikation in Worms 1527, n17: Kautz seven theses posted 7 June 1527 (Friday before Pentecost), countertheses 13 June",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://dev2.hab.de/apps/edoc/view.html?id=kgk_306_introduction",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Official Karlstadt critical edition KGK306 introduction by Wolfgang Huber, scholarly printed volume VIII (2025), was FULLY opened in institutional HTML on 2026-11-06 (earlier 403 no longer active). Printed original 'Dialogus von dem fremden Glauben ...' VD16 D1342 is cataloged as anonymous 1527 [Worms: Peter Schöffer], 28 leaves, ZB Zürich RARA AW6045/25.1002.4 and UB München 0001/8 Liturg433#3. Critical editor attributes the composition to Andreas Karlstadt, 1524, and hypothesizes Ludwig Hätzer helped transmit the manuscript to the Worms printer in 1527: neither Denck nor Hätzer is established as author of that distinct pamphlet. Scholarly introduction dates Kautz posting Friday 7 June 1527 and seven countertheses 13 June; online footnote17 was directly READ and quotes thesis III in Laube Flugschriften p703 lines2–4: footnote17 DOES NOT offer a separate autoptic dated posting record; footnote18 cites Laube pp702–707 and 1161–1166. LOCATOR_HOLD is removed for this now accessible KGK scholarly HTML only; historic Karlsruhe original sheet, images of D1342 and original date still NOT autoptically verified; retain EVIDENCE_HOLD/PUBLICATION_HOLD."
+    },
+    {
+      "id": "REF-S66",
+      "documentYear": 1882,
+      "title": "Adolf Brecher, Jakob Kautz, Allgemeine Deutsche Biographie vol15 (1882), pp510–511, older account: posting seven theses on Pentecost 9 June 1527",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.deutsche-biographie.de/gnd122482778.html#adbcontent",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Original ADB biographic entry of 1882 (Brecher author), printed vol15 pp510–511 and official Deutsche Biographie digitized article text directly read: 'am Pfingstfest 1527 (9. Juni)' seven theses displayed in Worms, dispute proposed Friday 13 June; outdated historiographic account contains polemical judgments about Kautz. Contrary to modern KGK 306 7 June and BDS2 editorial 7 June. No contemporaneous first-person dated manuscript directly consulted proving 9 June or 7 June; this is an older secondary claim, not equivalent to newly checked primary Frankfurt print (which gives Thursday 13 June as invitation). As one author/source rather than second independent original print, date remains historiographical disagreement, modern scholarly 7 June provisionally favored but physical Karlsruhe original one-sheet not inspected."
+    },
+    {
+      "id": "REF-S67",
+      "documentYear": 1902,
+      "title": "Ludwig Keller, Die Gottesfreunde, die Deutsche Theologie und die Rosenkreuzer. Nebst Johann Dencks Schrift Etliche Hauptreden, Monatshefte der Comenius-Gesellschaft XI (Heft 5–7, May–July 1902), printed p153",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://dlibra.bibliotekaelblaska.pl/Content/53005/PDF/05-07.pdf",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "Full 1902 journal PDF from Elblag library directly opened, PRINTED p153 visually inspected at PDF index 26. Ludwig Keller reports historically having identified an anonymous 4-leaf printing of 'Etliche Hauptreden' in an unspecified assembled volume together with Denck 'Ordnung Gottes und der Creaturen Werk' (parenthetical '1526') and 'Brüderliche Vereinigung etzlicher Kinder Gottes', and he interprets types, authorship, relations to Urbanus Rhegius disputation 1526, Hätzer 1528 Schöffer publication. Keller is a 1902 historical bibliographic witness/interpretive researcher and his 1526 is NOT demonstrably a dated original 1526 imprint: no pictured D560 leaf or direct printed colophon given on p153, physical bound volume identity/call number not established. Contrast BSB VD16 D560 inferred [1527], whose scanned leaf images are uninspected; both are provisional estimates; do not infer that Keller's assembled volume equals BSB Hom. 315#Beibd.7 or another specific digital object. 1902 source itself historically PDM likely, but no reproduction rights certification performed; no article PDF archived."
+    },
+    {
+      "id": "REF-S68",
+      "documentYear": 1670,
+      "title": "Benedikt Bahnsen 1670 Amsterdam auction library catalog reconstructed by HAB Wolfenbüttel (digital 2019): printed p9 lots 114 Dencks Ordnung Gottes and 115 Idem",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://bibliotheksrekonstruktion.hab.de/bahnsen/bahnsen-catSubjectFormat.html",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "HAB Wolfenbüttel/MWW scholarly digital reconstruction from 1670 Amsterdam auction catalog of books of Benedikt Bahnsen (d1669), by Dietrich Hakelberg, Jörn Münkner, Katrin Schmidt, 2019. Web search-indexed official catalog records include historical printed p9 no114 'Dencks. Ordnung GOttes und der Creaturen wercks' and no115 'Idem', EACH linked by today's editors to ONE BSB D560 digitization bsb00037013. These are two numbered historical auction LOT RECORDS, not proven two different editions or today's surviving physical copies; no verified crosswalk to BSB original Hom315#Beibd7. Original 1670 printed catalog p9 not photographically viewed and official HAB direct open returned HTTP403, hence PARTIAL_OBJECT/COARSE_LOCATOR_ONLY and holds. A 1670 witness to historic possession/circulation, not first-imprint date or colophon."
+    },
+    {
+      "id": "REF-S69",
+      "documentYear": 2015,
+      "title": "Erika Rummel and Milton Kooistra, The Correspondence of Wolfgang Capito, vol3 (1532–1536), Toronto UP 2015, editor headnote Letter488a printed p70 and 1532 letter English translation p71",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/20/71/95/37/2020719537/2020719537.pdf",
+      "checkedAt": "2026-11-06",
+      "verificationNote": "University of Toronto Press 2015 ebook hosted on US Library of Congress. Original publisher PDF screen directly visually checked pageno100 (printed p70), pageno101 (printed p71), and book copyright page; p70 MODERN EDITORS' headnote to Letter488a says Kautz nailed seven theses on 9 June 1527, addressed audience 13 June, and cites QGT4 pp113–114 no129. This 9 June NOT quoted from the 1532 letter. The translated October14-16 1532 letter manuscript at Strasbourg AVCU 1AST76 no7, additions/corrections by Bucer, printed CorrBucer9 pp23–31 Ep634; content p71 about Kautz sacramental views but not an autograph date for his 1527 action. 2015 editors mention later Kautz association with Schöffer in Haguenau, not evidence this is Worms 1527 press. Book copyright CC-BY-NC-ND, no pages copied/reused; physical autograph not seen; clear source dependency on QGT4."
     }
   ]
 }
