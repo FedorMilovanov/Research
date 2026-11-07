@@ -346,6 +346,42 @@ class ActualSynchronizationTests(unittest.TestCase):
         self.assertIn("AT-010-R2", board)
         self.assertIn("PUBLICATION_HOLD", memo)
 
+    def test_article02_isaiah_r3_publisher_text_syntax_and_reception_remain_separate(self):
+        article = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md").read_text(encoding="utf-8")
+        memo = (ROOT / "ИСКУПЛЕНИЕ/evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md").read_text(encoding="utf-8")
+        source = (ROOT / "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md").read_text(encoding="utf-8")
+        board = (ROOT / "ИСКУПЛЕНИЕ/synthesis/07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        for marker in (
+            "גּוֹיִם רַבִּים", "без обычного", "θαυμάσονται",
+            "חֳלָיֵנוּ", "מַכְאֹבֵינוּ",
+            "οὗτος τὰς ἁμαρτίας ἡμῶν φέρει",
+            "ἀσθενείας", "νόσους", "δῶτε", "ὑμῶν",
+            "2-е лицо множ.", "3-е лицо жен. ед.",
+            "SYNTAX_LEXEME_OPEN", "RECEPTION_SCOPE_OPEN",
+        ):
+            with self.subTest(article=marker):
+                self.assertIn(marker, article)
+        for marker in (
+            "## AT-010-R3", "R3-17", "R3-16", "R3-10",
+            "https://www.die-bibel.de/en/bible/LXX/ISA.52",
+            "https://www.die-bibel.de/en/bible/LXX/ISA.53",
+            "https://biblia.com/bible/sblgnt/matthew/8/16-18",
+            "Rahlfs", "Hanhart", "2006",
+            "NET Bible", "παιδία", "παιδεία",
+            "EDITION_WITNESS_HOLD", "EDITORIAL_TRANSCRIPTION_HOLD",
+            "ARCHIVE_HOLD", "RIGHTS_HOLD",
+            "publicationEligible=false", "STOP_DISCOVERY",
+        ):
+            with self.subTest(memo=marker):
+                self.assertIn(marker, memo)
+        for marker in ("## 11. R3", "53:5", "παιδία", "παιδεία", "53:10",
+                       "SYNTAX_LEXEME_OPEN", "EDITION_WITNESS_HOLD", "PUBLICATION_HOLD"):
+            with self.subTest(source=marker):
+                self.assertIn(marker, source)
+        self.assertIn("## 13. AT-010-R3", board)
+        self.assertIn("201/201", board)
+        self.assertIn("NO MERGE / NO PUBLICATION", board)
+
     def test_article11_named_judas_primary_witnesses_and_hebrews_hold(self):
         text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article11_bought_apostates_covenant_blood_and_weak_brother.md").read_text(encoding="utf-8")
         cards = (ROOT / "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md").read_text(encoding="utf-8")
