@@ -903,8 +903,11 @@ def validate_six_title_attestations(baseline: dict, contract: dict) -> list[str]
     if obj("adonai","Exodus 34:9").get("tokenOccurrenceCount") != 2:
         errors.append("six-titles: Ex 34:9 repeated Adonai token count lost")
     controls = bmap.get("adonai", {}).get("negativeControls", [])
-    if not any(isinstance(x,dict) and x.get("surface") == "אֲדֹנִי"
-               and "Abraham" in x.get("referent","") for x in controls if isinstance(controls,list)):
+    if not isinstance(controls, list) or not any(
+        isinstance(x, dict) and x.get("surface") == "אֲדֹנִי"
+        and "Abraham" in str(x.get("referent", ""))
+        for x in controls
+    ):
         errors.append("six-titles: Genesis 23 human adoni negative control lost")
     if obj("adonai","Psalms 8:2 MT").get("surface") != "יְהוָה אֲדֹנֵינוּ":
         errors.append("six-titles: Psalm 8 suffixed Adonenu collapsed into Adonai")
