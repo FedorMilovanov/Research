@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 9,
+    "sourceRecords": 12,
     "approvedForProduct": 0
   },
   "records": [
@@ -229,6 +229,85 @@
       ],
       "criticalEditionCollated": false,
       "sourceRole": "GREEK_TEXT_SURFACE_ONLY"
+    },
+    {
+      "id": "SRC-RASHI-EXO6",
+      "title": "Rashi on Exodus 6:3, comment 3; Sefaria Hebrew with Rosenbaum/Silbermann English",
+      "creator": "Rashi (historical author); M. Rosenbaum & A. M. Silbermann (English translation, 1929–34)",
+      "year": null,
+      "url": "https://www.sefaria.org/Rashi_on_Exodus.6.3.3?with=Exodus",
+      "objectType": "historical_commentary_in_translation",
+      "sourceRole": "HISTORICAL_JEWISH_COMMENTARY",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "sourceObjectState": "Sefaria displayed comment segments and translation in indexed result; original manuscript/edition and complete history not independently checked",
+      "supportedUse": "Attribute Rashi interpretation that lo noda'ti is not lo hoda'ti, covenant fulfillment rather than initial lexical disclosure",
+      "forbiddenUse": "Assert definitive root etymology or imply direct influence from Rashi on Calvin, or reproduce extensive modern translation",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "EVIDENCE_HOLD"
+      ]
+    },
+    {
+      "id": "SRC-NET-GEN14",
+      "title": "NET Bible translation notes to Genesis 14:19, 22",
+      "creator": "NET Bible translators and editors",
+      "year": null,
+      "url": "https://classic.net.bible.org/passage.php/b/o/passage.php?passage=Gen+14%3A19%2C22",
+      "objectType": "translation_notes",
+      "sourceRole": "ATTRIBUTED_TRANSLATION_NOTES",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "sourceObjectState": "Online verse and translation notes inspected, not a collated original Hebrew lexicon or edition apparatus",
+      "supportedUse": "Attribute contested creator versus possessor translation of qoneh, with NET editor preference for creator",
+      "forbiddenUse": "Claim one translation is proved by grammar alone or copy NET copyrighted notes in full",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "EVIDENCE_HOLD"
+      ]
+    },
+    {
+      "id": "SRC-CARGILL-2019",
+      "title": "From ʾEl ʿElyon to YHWH: Conflating Deities and Monotheistic Apologetics",
+      "creator": "Robert R. Cargill",
+      "year": 2019,
+      "url": "https://doi.org/10.1093/oso/9780190946968.003.0005",
+      "objectType": "academic_book_chapter_abstract",
+      "sourceRole": "ATTRIBUTED_HISTORICAL_CRITICAL_HYPOTHESIS_ABSTRACT",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "PERMISSION_REQUIRED",
+      "sourceObjectState": "Oxford publisher abstract and chapter pp.36–41 metadata inspected; full chapter and manuscript evidence not collated",
+      "supportedUse": "Attribute Cargill's hypothesis that YHWH in Genesis 14:22 is later editorial gloss",
+      "forbiddenUse": "Present a gloss hypothesis as an attested absent YHWH manuscript reading or as unanimous scholarly conclusion",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "LOCATOR_HOLD",
+        "EVIDENCE_HOLD"
+      ]
     }
-  ]
+  ],
+  "auditRevision": {
+    "date": "2026-11-07",
+    "newSources": [
+      "SRC-RASHI-EXO6",
+      "SRC-NET-GEN14",
+      "SRC-CARGILL-2019"
+    ],
+    "rationale": "Patriarchal El titles: record independent Jewish reception, lexeme translation controversy, and one published historical reconstruction; never launder secondary abstracts into manuscript variants."
+  }
 }
