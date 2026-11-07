@@ -1,5 +1,7 @@
 # Именования места и жертвенника; предикаты исцеления, освящения и пастырства
 
+**NG-03 supersession (08.11.2026):** **CURRENT / HISTORICAL / HOLD:** Быт. 22:14 именует **место**; Исх. 17:15 и Суд. 6:24 — **жертвенники**; Исх. 15:26 — условная заветная Божья предикация; Пс. 23:1 — поэтическое исповедание. Эти **CURRENT** контексты далее ограничены исследованиями [20](20_LEXEME_REFERENT_PLACE_ALTAR_AUDIT_20261107.md), [21](21_HEALER_SANCTIFIER_SHEPHERD_SPEAKER_AUDIT_20261107.md), [23](23_YIREH_NISSI_ANSWER_PLACE_MOUNTAIN_EDITION_CRUX_20261107.md); дополнительный **контраст** Быт. 16:13 (Агарь прямо обращается к Богу) рассмотрен в [читательской главе](reader/CH-PILOT-01_WHAT_SCRIPTURE_CALLS_GODS_NAME.md). **HOLD**: греческий рукописный источник Исх. 17, оригиналы словарей/изданий, Product. [Самоплан](11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md).
+
 **Research / дата проверки:** 2026-11-07 · **Кандидаты Arena (существующие ID):** `yireh`, `rapha`, `nissi`, `mekoddishkem`, `ro-i`, `shalom`.  
 **Статус:** DIGITAL-VERSE-SURFACE-LOCATED / EDITION-DIFFERENCE-REVIEWED / CRITICAL-WITNESS-NOT-COLLATED / PUBLICATION=BLOCKED.
 

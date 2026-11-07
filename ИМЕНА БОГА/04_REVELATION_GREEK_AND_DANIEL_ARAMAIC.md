@@ -1,5 +1,7 @@
 # Имена и самообозначения Бога в Откровении и видении Даниила 7
 
+**NG-03 supersession (08.11.2026):** **CURRENT / HISTORICAL / HOLD:** различия печатных SBLGNT/TR1550, говорящие Откровения и две арамейские формы Дан. 7 — **CURRENT цифровая издательская поверхность**, позднее закреплённая также досье [19](19_REVELATION_ALPHA_OMEGA_SPEAKER_EDITION_AUDIT_20261107.md) и [26](26_DANIEL7_REVELATION1_21_DISCOURSE_AND_FORM_AUDIT_20261107.md). Исторические решения комментаторов — не рукописная колляция. **HOLD**: первичная сверка кодексов, критические аппараты и права; `NG-02 DONE` относится только к связности Research-аттестаций. [Самоплан](11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md).
+
 **Дата цифровой сверки:** 2026-11-07 · **Статус:** VERSE-SURFACE-REVIEWED / CRITICAL-APPARATUS-HOLD / NO PUBLICATION.  
 **Параллельные материалы:** [основной реестр Arena](data/names_ledger_v1.json), [расширение](data/names_extension_ledger_v1.json), [реестр доступа и прав](data/source_access_register_v1.json), [правила Research](../AGENT_RULES.md).
 

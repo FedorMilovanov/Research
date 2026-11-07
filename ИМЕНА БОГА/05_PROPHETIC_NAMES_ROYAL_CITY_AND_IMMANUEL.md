@@ -1,5 +1,7 @@
 # Пророческие именования: ребёнок, царь, Иерусалим, город и Бог
 
+**NG-03 supersession (08.11.2026):** **CURRENT / HISTORICAL / HOLD:** различие *царя* Иер. 23:6, *Иерусалима* Иер. 33:16 и *города* Иез. 48:35 — **CURRENT** и дополнительно закреплено в досье [16](16_PROPHETIC_ROYAL_CITY_NAMING_SOURCE_AUDIT_20261107.md), [18](18_IMMANUEL_HEBREW_GREEK_INTERTEXT_BOUNDARIES_20261107.md) и [28](28_HAGAR_EL_OLAM_ISH9_10_AND_EX15_NAME_20261107.md). Сопоставление MT/печатных греческих редакций — не самостоятельная колляция Old Greek Jeremiah; историческая реконструкция Ис. 9 остаётся **HOLD**, как и Product-публикация. [Самоплан](11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md).
+
 **Волна источников:** 2026-11-07 · **Статус:** DIGITAL MT/NT SURFACE REVIEWED; SCHOLARLY CLAIMS ATTRIBUTED; CRITICAL EDITION / RIGHTS / PUBLICATION HOLD.  
 **Исследуемые ID:** `el-gibbor`, `tsidkenu`, `shammah`, `immanuel`. Этот документ — уточнение уже существующих записей в [основном реестре](data/names_ledger_v1.json), **не** список новых собственных имён.
 

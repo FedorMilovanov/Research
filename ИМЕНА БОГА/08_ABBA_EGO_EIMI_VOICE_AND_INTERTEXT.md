@@ -1,5 +1,7 @@
 # «Авва, Отче» и «Я есмь»: обращение, грамматика, говорящие и христологическая рецепция
 
+**NG-03 supersession (08.11.2026):** **CURRENT / HISTORICAL / HOLD:** формулы `Αββα`, `ἐγώ εἰμι` и полная LXX `Ἐγώ εἰμι ὁ ὤν` не отождествляются механически; говорящие Ин. 8/9 и Павловых текстов различены. **CURRENT** контексты Ин. 6/18 и отрицательный контроль Ин. 9 закреплены также досье [22](22_JOHN_EGO_EIMI_DISCOURSE_WAVE_20261107.md); греческая орфография SBLGNT/THGNT — редакционное, не установленное рукописное разночтение. **HOLD**: полный текст Barr 1988, арамейские лексиконы, критические аппараты и права. [Самоплан](11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md).
+
 **Проверка:** 2026-11-07 · **Затрагиваемые существующие Arena ID:** `abba`, `ego-eimi`, `ehyeh`.  
 **Статус:** DIGITAL-EDITION-SURFACE-VERIFIED / SCHOLARLY-INTERPRETATION-ATTRIBUTED / CRITICAL-WITNESS-NOT-COLLATED / PUBLICATION BLOCKED.
 

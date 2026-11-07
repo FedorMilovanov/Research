@@ -1,5 +1,7 @@
 # Саваоф, Ревнитель, Скала, Святой Израилев, Адонай и Элохим
 
+**NG-03 supersession (08.11.2026):** **CURRENT / HISTORICAL / HOLD:** разграничения «Саваоф ≠ суббота», `צור` как Божья/не-Божья Скала, `אֲדֹנָי`/человеческое `אֲדֹנִי`, референты `אֱלֹהִים` — **CURRENT** по конкретным стихам. Поздние контроли в досье [17](17_TSUR_ROCK_REFERENTS_AND_PRONOUN_BOUNDARY_20261107.md), [24](24_EL_SHADDAI_SABAOTH_SPEECH_ORIGIN_BOUNDARIES_20261107.md), [25](25_EL_ELYON_EL_QANNA_NARRATIVE_AND_NAME_CLAUSES_20261107.md), [27](27_ADONAI_QEDOSH_YAH_SPEAKER_MORPHOLOGY_AUDIT_20261107.md); **HOLD** — полные BDB/HALOT, диахронические реконструкции, рукописные и правовые утверждения. [Самоплан](11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md).
+
 **Редакция:** 2026-11-07 · **Статус:** RESEARCH ONLY, DIGITAL-VERSE-SURFACE CHECKED, ORIGINAL MANUSCRIPT/CRITICAL APPARATUS NOT COLLATED.  
 **Arena baseline IDs:** `sabaoth`, `el-qanna`, `tsur`, `qedosh-yisrael`, `adonai`, `elohim`. Они **не** увеличивают число 29 Arena + 13 extension; отдельные стихи — это **attestations, а не новые имена**.
 

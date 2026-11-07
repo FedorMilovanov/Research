@@ -283,7 +283,7 @@
       "id": "NG-03",
       "priority": "P0",
       "title": "Матрица устаревших формулировок и supersession для глав 01–10",
-      "status": "IN_PROGRESS",
+      "status": "DONE",
       "dependsOn": [
         "NG-02"
       ],
@@ -291,12 +291,22 @@
         "Каждая обнаруженная старая недостоверная/устаревшая формулировка явно ссылается на заменяющее доказательство; в оглавлении только актуальные authority, старые досье не удалены"
       ],
       "evidence": [
-        "01_NAMES_LEXICAL_SOURCE_AND_ARENA_AUDIT.md",
-        "00_README_AND_NAVIGATION.md",
-        "11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md §0a: typed historical/current/superseded matrix; 00_README_AND_NAVIGATION.md: current metrics and historical snapshot boundary; remaining detailed 01-10 supersession review not done."
+        "01_NAMES_LEXICAL_SOURCE_AND_ARENA_AUDIT.md: formerly claimed Rahlfs-Hanhart PDF status explicitly SUPERSEDED by STEP digital LXX, not manuscript collation",
+        "02_YHWH_EHYEH_CRITICAL_DOSSIER.md: original language, contemporary interpretation and historical etymology explicitly separated",
+        "03_PATRIARCHAL_EL_TITLES_AND_REFERENTS.md: former attestation/CI next action marked historical and structurally completed by NG02",
+        "04_REVELATION_GREEK_AND_DANIEL_ARAMAIC.md: exact printed edition and speakers bounded by dossiers 19/26, manuscripts HOLD",
+        "05_PROPHETIC_NAMES_ROYAL_CITY_AND_IMMANUEL.md: king/Jerusalem/city bounded by dossiers 16/18 and Old Greek HOLD",
+        "06_HOSTS_JEALOUS_ROCK_HOLY_ADONAI_ELOHIM.md: current contextual referent cautions and later 17/24/25/27 evidence",
+        "07_MEMORIAL_NAMES_DIVINE_ACTIONS_AND_SHEPHERD.md: place/altar/predication constrained by dossiers 20/21/23 and Hagar reader contrast",
+        "08_ABBA_EGO_EIMI_VOICE_AND_INTERTEXT.md: LXX full Greek formula and John different, dossier 22, Barr source restrictions",
+        "09_EXTENSION_FORMS_LANGUAGE_AND_REFERENTS.md: historical status of 11 newly detailed; all 13 extension 105/105 research claims from dossier 29",
+        "10_YHWH_AND_EL_PERSONAL_NAME_VS_GENERIC_DESIGNATION.md: historical lack of independent attestation objects superseded by 8 additions",
+        "11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md §0a: 10-row CURRENT/HISTORICAL/SUPERSEDED/HOLD matrix and exact original dossier evidence",
+        "00_README_AND_NAVIGATION.md: current status and historical separation",
+        "data/names_research_workplan_v1.json: machine task closure, unchanged scholarly/rights/Product HOLD"
       ],
-      "verification": "PARTIAL_SUPERSESSION_MATRIX_REVIEWED_2026-11-08; canonical master plan section 0a and navigation current snapshot flag legacy source/claim/test/status numbers HISTORICAL; 01-10 full semantic review remains OPEN.",
-      "closureAt": null,
+      "verification": "NG03_EDITORIAL_SUPERSESSION_10_OF_10_DOSSIERS_UPDATED_2026_11_08; dated source-specific CURRENT/HISTORICAL/SUPERSEDED/HOLD blocks and 3 in-place stale-claim fixes in dossier 01,03,10; crosslinks master/navigation; original 105 research-only attestation links and 48 source records unchanged; original 55 absent inline locusIds unchanged. New exact-commit CI to be verified separately; NOT independent scholarly manuscript/rights/Product approval.",
+      "closureAt": "2026-11-08",
       "owner": "Research editorial"
     },
     {
@@ -675,7 +685,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "Keep two bounded deliverables: NG-03 historical/current semantic supersession dossiers 01-10; CH-PILOT-01 now internally edited twice, obtain EXTERNAL independent theology/philology/editorial appraisal of same file before editorial acceptance. No further general bibliography, duplicate dossier, critical edition claims or Product promotion.",
+  "nextAction": "NG-03 DONE editorial supersession only (10/10 old dossiers); primary writing task CH-PILOT-02 one contiguous chapter on YHWH / Ehyeh in Exod 3/6 from existing dossiers, no new global bibliography. CH-PILOT-01 external independent philology/theology review still pending; no scholar/rights/Product approval, 55 inline locusId absence not erased, critical manuscripts and Arena runtime remain HOLD.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -757,7 +767,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-08",
-    "planStatus": "NG-02 structural DONE; NG-03 IN_PROGRESS; CH-PILOT-01 revised with 2 internal editorial passes including Gen16 direct naming contrast; external independent peer review, rights and Product remain blocked.",
+    "planStatus": "NG-02 DONE graph-only; NG-03 DONE editorial supersession 10/10; CH-PILOT-01 revised research draft external review pending; CH-PILOT-02 FRAME_NEXT_NOT_DRAFTED. No research Product/rights/manuscript promotion.",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -836,7 +846,8 @@
       "2026-11-08: Started NG-03 historical/current supersession review and bounded systematic Gill/Berkhof/Bavinck intake for one reader pilot, with stop-discovery criterion.",
       "2026-11-08: Wrote a single ~2400-word connected CH-PILOT-01 reader manuscript with separate source/rights critical appendix; checked Exodus 3, 34, 15, Genesis 22, Judges 6, Psalm 23 primary digital Hebrew and selected Gill/Berkhof/Bavinck secondary passages. Await independent adversarial editorial review, no publish.",
       "2026-11-08: Internal adversarial edit on existing CH-PILOT-01: verified Ex3 angel/narrator, Ex34 ambiguous v5 verb and named God v6, Gen22 place vs altar, Judg6 altar vs spoken peace, Ex15:26 conditional healer context, Ps23:1/3 metaphor/name, Gill cites Zanchius, Berkhof/Bavinck self-revelation category and Gen1:1 Elohim singular verb negative control. No new files, source registry count unchanged, independent peer review still pending.",
-      "2026-11-08: SECOND internal editor-source review of existing reader pilot: added Gen16:13 Hagar DIRECTLY names/invokes God contrasting separately named well Gen16:14, disputed 'sees me/I see' NET nuance, deleted redundant Ex3:14 sentence; separately checked Gill, Berkhof and Bavinck original accessible HTML sections. Independent scientific peer review NOT obtained."
+      "2026-11-08: SECOND internal editor-source review of existing reader pilot: added Gen16:13 Hagar DIRECTLY names/invokes God contrasting separately named well Gen16:14, disputed 'sees me/I see' NET nuance, deleted redundant Ex3:14 sentence; separately checked Gill, Berkhof and Bavinck original accessible HTML sections. Independent scientific peer review NOT obtained.",
+      "2026-11-08: NG-03 editorial supersession completed 10/10 original dossiers 01-10 with in-file CURRENT/HISTORICAL/SUPERSEDED/HOLD annotations. Corrected stale LXX PDF impression (01), historical attestations/CI TODO (03), former missing YHWH/El attestations (10); indexed 10-row authority matrix §0a, synced navigation. No source/claim/edition/attestation IDs or Product altered."
     ],
     "stillOpen": [
       "External Product/Arena consumers and zip prototypes still NOT independently authenticated by exact deployment/build; no dual-read v2 test witness",
@@ -909,30 +920,35 @@
   "editorialExecution": {
     "asOf": "2026-11-08",
     "owner": "ИМЕНА БОГА/11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md §0a/§3b",
-    "state": "READER_MANUSCRIPT_REVISED_TWO_INTERNAL_EDITORIAL_PASSES_EXTERNAL_PEER_REVIEW_PENDING",
+    "state": "NG03_EDITORIAL_DONE_CH01_EXTERNAL_REVIEW_PENDING_CH02_FRAME_NEXT",
     "readerChapterCountApproved": null,
     "subjectDirectionsProvisional": 14,
     "readerManuscriptsAccepted": 0,
     "twoActiveDeliverables": [
       {
-        "id": "NG-03",
-        "kind": "EXISTING_WORKPLAN_TASK",
-        "target": "Source- and edition-linked supersession of outdated statements in existing dossiers 01-10",
-        "acceptance": "Every changed factual claim has linked current authority; preserve older snapshots and mark them HISTORICAL/SUPERSEDED."
+        "id": "CH-PILOT-02",
+        "kind": "READER_MANUSCRIPT_PILOT",
+        "target": "YHWH and Ehyeh in Exodus 3 and 6",
+        "acceptance": "One contiguous narrative chapter using original MT Exod 3:12/14/15 and 6:2-8, edition-aware Greek LXX, contrasting attributed Calvin/Rashi/modern scholarship, separate scholarly/rights/critical apparatus HOLDs.",
+        "status": "FRAME_NEXT_NOT_DRAFTED",
+        "sourceFiles": [
+          "02_YHWH_EHYEH_CRITICAL_DOSSIER.md",
+          "10_YHWH_AND_EL_PERSONAL_NAME_VS_GENERIC_DESIGNATION.md",
+          "13_TMSJ_2024_DIVINE_NAME_AND_TRANSLATION_SCHOLARLY_REVIEW.md"
+        ]
       },
       {
         "id": "CH-PILOT-01",
         "kind": "READER_MANUSCRIPT_PILOT",
         "target": "What does Scripture mean by the name of God?",
         "acceptance": "One continuous readable manuscript distinguishing God's revealed name, proper name, title, attribute, predicate and named object, primary verses, one strong alternative, and evidence/rights limitations.",
-        "status": "RESEARCH_MANUSCRIPT_REVISED_INTERNAL_EDITORIAL_PASS_2_DONE_EXTERNAL_PEER_REVIEW_PENDING_NOT_EDITORIAL_READY",
+        "status": "EXTERNAL_INDEPENDENT_PEER_REVIEW_PENDING_NOT_EDITORIAL_READY",
         "file": "ИМЕНА БОГА/reader/CH-PILOT-01_WHAT_SCRIPTURE_CALLS_GODS_NAME.md",
         "verification": "10_FACTUAL_REVIEW_POINTS_FIXED_WITH_DIGITAL_MT_GILL_BERKHOF_BAVINCK_AND_NET_NOT_INDEPENDENT_PEER_REVIEW; SECOND_EDITORIAL_SOURCE_CHECK_GEN16_13_14_HAGAR_DIRECT_NAME_VS_WELL_AND_EX3_14_REDUNDANCY_FIX",
         "nextReview": "External independent domain reviewer needed for biblical languages, systematic-theology attribution, book editions and rights; current assistant's second source check is NOT external independent peer review. Preserve 0 scientific approvals."
       }
     ],
     "nextChapterCandidates": [
-      "CH-PILOT-02:YHWH-EHYEH",
       "CH-PILOT-03:EL-ELOHIM-SHADDAI"
     ],
     "discoveryStop": "STOP_SYSTEMATICS_DISCOVERY_AFTER_GILL_BERKHOF_BAVINCK_UNTIL_SPECIFIC_MANUSCRIPT_GAP",
@@ -940,7 +956,9 @@
     "publicationGate": "ALL_PRODUCT_RIGHTS_SCHOLARLY_HOLDS_REMAIN",
     "readerManuscriptsDrafted": 1,
     "internalAdversarialPasses": 2,
-    "independentScholarlyReviewsAccepted": 0
+    "independentScholarlyReviewsAccepted": 0,
+    "ng03OriginalDossiersReviewed": 10,
+    "ng03FinalMatrix": "ИМЕНА БОГА/11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md §0a: ten-row typed supersession authority matrix"
   },
   "systematicTheologyTriage": {
     "asOf": "2026-11-08",
