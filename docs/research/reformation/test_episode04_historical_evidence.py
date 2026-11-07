@@ -62,6 +62,24 @@ class Episode04HistoricalEvidenceTests(unittest.TestCase):
             self.assertIn("| C%d |" % n,ledger)
         self.assertIn("REF-P72",ledger)
 
+    def test_editorial_voice_chronology_and_institutional_source(self):
+        source = json.loads((HERE/"source-registry-v1.json").read_text(encoding="utf-8"))
+        records = {v["id"]:v for v in source["sources"]}
+        self.assertEqual(records["REF-S74"]["evidenceClass"], "B1")
+        self.assertIn("ARCHIVE_HOLD", records["REF-S74"]["holds"])
+        chapter = CH.read_text(encoding="utf-8")
+        main_text = chapter.split("## Источниковедческий аппарат")[0]
+        self.assertIn("июне 1524", main_text)
+        self.assertIn("апреле 1525", main_text)
+        self.assertIn("без требования сознательной веры", main_text)
+        self.assertIn("приказе о высылке", main_text)
+        self.assertNotIn("нами непосредственно прочитаны", main_text)
+        self.assertNotIn("в прежнем исследовании", main_text)
+        self.assertIn("REF-P71", chapter)
+        self.assertIn("REF-S74", chapter)
+        self.assertIn("PUBLICATION_HOLD", chapter)
+        self.assertIn("EXTERNAL_REVIEW_OPEN", (HERE/"SELF_PLAN.md").read_text(encoding="utf-8"))
+
     def test_incompatible_conclusions_remain_rejected(self):
         s = (HERE / "03_claim_verification_register.md").read_text(encoding="utf-8")
         rows = {}

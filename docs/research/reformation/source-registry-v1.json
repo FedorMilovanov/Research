@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 161,
+  "sourceCount": 162,
   "sources": [
     {
       "id": "REF-P01",
@@ -3158,6 +3158,24 @@
       "url": "https://www.digitale-sammlungen.de/de/details/bsb11389154",
       "checkedAt": "2026-11-07",
       "verificationNote": "Direct visual inspection of three separate OFFICIAL Bavarian State Library IIIF digitized page images of Egli EDITED COLLECTION published 1879, not the manuscript originals: PRINT p275 (IIIF canvas289; SHA256 e61cc5baccdc8f1bcb40e96e348ed5c72cfbecccf8ee8e9df47efa6d256b8768), PRINT p276 (canvas290; SHA256 04b012d424e55edba9551b72af543d741e31a1277fafd38870fccfe7ab1f9b71), PRINT p278 (canvas292; SHA256 56af32815ffa0a5e1bfee12dc2120631854454e6417f860d52e130473b9e16a8). Selected page JPG copies retained privately under Documents/Research-Primary-Sources/Egli_1879_Actensammlung_Zurich_1525_selected_pages, source sizes 702708,637855,626699 bytes respectively, verified SHA256 identical after copy; institutional OCR used as navigation only, German verified from scanned PRINT images. Egli no621 (pp275–276) has EDITORIAL REGEST of Jan18 decision with 8-day infant baptism duty and family expulsion sanction; no622 (p276) contains edited historical mandate wording in early German, including command to baptize previously unbaptized children in 8 days or leave jurisdiction with wife, children, belongings; no624 (p278) has EDITORIAL REGEST and brief primary-text excerpts of Jan21 council decision: halt private doctrinal schools, prohibit further Grebel/Manz disputations, and named order that Wilhelm Roeubli (Wytikon), Broetli (Zollikon), Ludwig Hetzer and Andreas auf der Stuelzen leave territory within 8 days. These are ORDERS, not evidence of their actual departure. This record is a selected historical EDITED TRANSCRIPTION/REGEST, NOT a 1525 manuscript facsimile, NOT full source QGTS I 1952 or Zuercher Kirchenordnungen I, and NOT complete reading of Egli's 968 digital images. Independent collation original council folios B VI 248 and A42.1.12 Nr2 still ARCHIVE_HOLD. Institution says scan is no copyright with non-commercial-use notice, do not transfer images to public Git or infer reproduction rights."
+    },
+    {
+      "id": "REF-S74",
+      "documentYear": 2013,
+      "title": "Historisches Lexikon der Schweiz, Reformation, institutional secondary synthesis on Zurich 1523–1525",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://hls-dhs-dss.ch/de/articles/013328/2013-01-29/",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "German institutional historical-lexicon text directly read and cross-checked with Zentralbibliothek Zurich historical exhibition https://www.zb.uzh.ch/de/fokus/beitrag/reformation : Second Disputation late October 1523 on Mass/images, Zurich council political implementation, image removal actually in JUNE 1524, Mass abolished and new Lord's Supper in APRIL 1525, founding of Prophezey Bible interpretation in 1525. These are institutional B1 chronological synthesis, NOT newly collated 1523/1524 municipal original ordinances. No automatic publication or photography rights."
     }
   ]
 }
