@@ -376,5 +376,23 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("prophetic immanuel" in issue for issue in validate_prophetic_namings(data)))
 
 
+    def test_matthew_greek_is_not_mislabelled_rahlfs_lxx(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(r for r in data["records"] if r["id"] == "immanuel")
+        witness = next(x for x in row["attestations"] if x["verse"] == "Matthew 1:23")
+        witness["edition"] = "Rahlfs-Hanhart 2006 via Deutsche Bibelgesellschaft"
+        self.assertTrue(any("edition-specific rights/witness provenance" in issue
+                            for issue in validate_prophetic_namings(data)))
+
+    def test_greek_lxx_cannot_inherit_sblgnt_licensed_edition(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(r for r in data["records"] if r["id"] == "immanuel")
+        witness = next(x for x in row["attestations"] if x["verse"] == "Isaiah 7:14 LXX Rahlfs-Hanhart")
+        witness["rightsState"] = "RIGHTS_UNKNOWN"
+        witness["edition"] = "SBLGNT 2010 via BibleGateway"
+        self.assertTrue(any("edition-specific rights/witness provenance" in issue
+                            for issue in validate_prophetic_namings(data)))
+
+
 if __name__ == "__main__":
     unittest.main()
