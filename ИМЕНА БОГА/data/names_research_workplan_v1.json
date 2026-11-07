@@ -685,7 +685,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NG-03 DONE editorial supersession only (10/10 old dossiers); primary writing task CH-PILOT-02 one contiguous chapter on YHWH / Ehyeh in Exod 3/6 from existing dossiers, no new global bibliography. CH-PILOT-01 external independent philology/theology review still pending; no scholar/rights/Product approval, 55 inline locusId absence not erased, critical manuscripts and Arena runtime remain HOLD.",
+  "nextAction": "CH-PILOT-02 full reader manuscript exists; perform target-limited adversarial textual/editorial review of SAME FILE Exod3/6, not a new source search. CH-PILOT-01 awaits external independent peer review (not satisfied by assistant's internal checks). NG-03 DONE; scholarly critical apparatus/rights/Product/Arena and 55 legacy absent inline fields remain HOLD.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -767,7 +767,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-08",
-    "planStatus": "NG-02 DONE graph-only; NG-03 DONE editorial supersession 10/10; CH-PILOT-01 revised research draft external review pending; CH-PILOT-02 FRAME_NEXT_NOT_DRAFTED. No research Product/rights/manuscript promotion.",
+    "planStatus": "NG-02 Research-only graph DONE; NG-03 editor supersession 10/10 DONE; CH-PILOT-01 internally twice revised awaiting external peer review; CH-PILOT-02 continuous first reader DRAFT pending internal adversarial editing, neither scholarly nor Product approved.",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -847,7 +847,8 @@
       "2026-11-08: Wrote a single ~2400-word connected CH-PILOT-01 reader manuscript with separate source/rights critical appendix; checked Exodus 3, 34, 15, Genesis 22, Judges 6, Psalm 23 primary digital Hebrew and selected Gill/Berkhof/Bavinck secondary passages. Await independent adversarial editorial review, no publish.",
       "2026-11-08: Internal adversarial edit on existing CH-PILOT-01: verified Ex3 angel/narrator, Ex34 ambiguous v5 verb and named God v6, Gen22 place vs altar, Judg6 altar vs spoken peace, Ex15:26 conditional healer context, Ps23:1/3 metaphor/name, Gill cites Zanchius, Berkhof/Bavinck self-revelation category and Gen1:1 Elohim singular verb negative control. No new files, source registry count unchanged, independent peer review still pending.",
       "2026-11-08: SECOND internal editor-source review of existing reader pilot: added Gen16:13 Hagar DIRECTLY names/invokes God contrasting separately named well Gen16:14, disputed 'sees me/I see' NET nuance, deleted redundant Ex3:14 sentence; separately checked Gill, Berkhof and Bavinck original accessible HTML sections. Independent scientific peer review NOT obtained.",
-      "2026-11-08: NG-03 editorial supersession completed 10/10 original dossiers 01-10 with in-file CURRENT/HISTORICAL/SUPERSEDED/HOLD annotations. Corrected stale LXX PDF impression (01), historical attestations/CI TODO (03), former missing YHWH/El attestations (10); indexed 10-row authority matrix §0a, synced navigation. No source/claim/edition/attestation IDs or Product altered."
+      "2026-11-08: NG-03 editorial supersession completed 10/10 original dossiers 01-10 with in-file CURRENT/HISTORICAL/SUPERSEDED/HOLD annotations. Corrected stale LXX PDF impression (01), historical attestations/CI TODO (03), former missing YHWH/El attestations (10); indexed 10-row authority matrix §0a, synced navigation. No source/claim/edition/attestation IDs or Product altered.",
+      "2026-11-08: Wrote a second ~2700-word connected CH-PILOT-02 reader draft, Exodus 3/6 and LXX publisher HTML, covenant fulfillment vs historical literary alternative with attributed Rashi/Calvin and author-specific science limits. Separate evidence/rights appendix, no new registry IDs, no external publishing."
     ],
     "stillOpen": [
       "External Product/Arena consumers and zip prototypes still NOT independently authenticated by exact deployment/build; no dual-read v2 test witness",
@@ -920,7 +921,7 @@
   "editorialExecution": {
     "asOf": "2026-11-08",
     "owner": "ИМЕНА БОГА/11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md §0a/§3b",
-    "state": "NG03_EDITORIAL_DONE_CH01_EXTERNAL_REVIEW_PENDING_CH02_FRAME_NEXT",
+    "state": "NG03_DONE_CH01_EXTERNAL_REVIEW_PENDING_CH02_READER_MANUSCRIPT_DRAFT_ADVERSARIAL_REVIEW_PENDING",
     "readerChapterCountApproved": null,
     "subjectDirectionsProvisional": 14,
     "readerManuscriptsAccepted": 0,
@@ -930,12 +931,15 @@
         "kind": "READER_MANUSCRIPT_PILOT",
         "target": "YHWH and Ehyeh in Exodus 3 and 6",
         "acceptance": "One contiguous narrative chapter using original MT Exod 3:12/14/15 and 6:2-8, edition-aware Greek LXX, contrasting attributed Calvin/Rashi/modern scholarship, separate scholarly/rights/critical apparatus HOLDs.",
-        "status": "FRAME_NEXT_NOT_DRAFTED",
+        "status": "RESEARCH_MANUSCRIPT_DRAFT_INTERNAL_ADVERSARIAL_REVIEW_PENDING_NOT_EDITORIAL_READY",
         "sourceFiles": [
           "02_YHWH_EHYEH_CRITICAL_DOSSIER.md",
           "10_YHWH_AND_EL_PERSONAL_NAME_VS_GENERIC_DESIGNATION.md",
           "13_TMSJ_2024_DIVINE_NAME_AND_TRANSLATION_SCHOLARLY_REVIEW.md"
-        ]
+        ],
+        "file": "ИМЕНА БОГА/reader/CH-PILOT-02_YHWH_EHYEH_EXODUS_3_6.md",
+        "verification": "CONTIGUOUS_~2700_WORD_READER_MANUSCRIPT_WITH_SEPARATE_EDITORIAL_SOURCE_RIGHTS_HOLD_APPARATUS; MT_EX3_EX6_EX15_AND_PUBLISHER_RAHFLS_HANHART_GREEK_HTML; ATTRIBUTED_RASHI_CALVIN_ALTERNATIVE; NOT_CRITICAL_COLLATION",
+        "nextReview": "Internal adversarial review of ONE existing CH-PILOT-02 draft, especially Exod6:3 qal/niphal, document composition alternative exact support, printed Rahlfs section, tense and naming referents, reader rhythm; no new dossiers or source catalogue."
       },
       {
         "id": "CH-PILOT-01",
@@ -954,7 +958,7 @@
     "discoveryStop": "STOP_SYSTEMATICS_DISCOVERY_AFTER_GILL_BERKHOF_BAVINCK_UNTIL_SPECIFIC_MANUSCRIPT_GAP",
     "sourcePolicy": "SECONDARY_B1_AUTHOR_ATTRIBUTED_NOT_CRITICAL_WITNESS",
     "publicationGate": "ALL_PRODUCT_RIGHTS_SCHOLARLY_HOLDS_REMAIN",
-    "readerManuscriptsDrafted": 1,
+    "readerManuscriptsDrafted": 2,
     "internalAdversarialPasses": 2,
     "independentScholarlyReviewsAccepted": 0,
     "ng03OriginalDossiersReviewed": 10,
