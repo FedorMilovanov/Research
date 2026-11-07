@@ -50,6 +50,10 @@ PINNED_GREEK_SOURCE_URLS = {
     "ATT-BASE-RO-I-02": "https://www.biblegateway.com/passage/?search=John+10%3A11&version=SBLGNT",
     "ATT-EXT-POIMEN-HO-KALOS-01": "https://www.biblegateway.com/passage/?search=John+10%3A11&version=SBLGNT",
     "ATT-EXT-POIMEN-HO-KALOS-02": "https://www.biblegateway.com/passage/?search=John+10%3A14&version=SBLGNT",
+    "ATT-BASE-EGO-EIMI-01": "https://www.biblegateway.com/passage/?search=John+6%3A20&version=SBLGNT",
+    "ATT-BASE-EGO-EIMI-04": "https://www.biblegateway.com/passage/?search=John+18&version=SBLGNT",
+    "ATT-BASE-EGO-EIMI-05": "https://www.biblegateway.com/passage/?search=John+18&version=SBLGNT",
+    "ATT-BASE-EGO-EIMI-06": "https://www.biblegateway.com/passage/?search=John+18&version=SBLGNT",
 }
 
 
@@ -296,6 +300,52 @@ COVENANT_SHEPHERD_CONTROLS = {
         "syntax": "EXPLICIT_NOMINAL_PREDICATE",
     },
 }
+REQUIRED_JOHN_EGO_CONTEXT_CLAIMS = {
+    "CLM-JOHN6-20-ASSURANCE",
+    "CLM-JOHN18-5-ARREST-IDENTITY",
+    "CLM-JOHN18-6-NARRATOR-REPRISE",
+    "CLM-JOHN18-8-IDENTITY-AND-RELEASE",
+}
+# Per-locus source-text speech controls, independently specified in code rather
+# than copied from ledger or narrative contract snapshots; not a manuscript collation.
+JOHN_EGO_DISCOURSE_CONTROLS = {
+    "ATT-BASE-EGO-EIMI-01": {
+        "speaker": "Jesus",
+        "speakerReferent": "Jesus",
+        "speechAct": "identity_assurance_possible_theophanic_allusion",
+        "speechTarget": "disciples on lake",
+        "surface": "Ἐγώ εἰμι",
+        "divineNameClaim": "CONTEXTUAL_THEOLOGICAL_INFERENCE_NOT_LEXICAL_PROOF",
+        "claimScope": "Jesus self identification with do not be afraid; theophany possible interpretive layer",
+    },
+    "ATT-BASE-EGO-EIMI-04": {
+        "speaker": "Jesus",
+        "speakerReferent": "Jesus",
+        "speechAct": "identity_answer_with_theological_narrative_potential",
+        "speechTarget": "arresting party",
+        "surface": "Ἐγώ εἰμι",
+        "divineNameClaim": "CONTEXTUAL_THEOLOGICAL_INFERENCE_NOT_LEXICAL_PROOF",
+        "claimScope": "Asked for Jesus the Nazarene; Jesus answers it is I",
+    },
+    "ATT-BASE-EGO-EIMI-05": {
+        "speaker": "Jesus, reported in narration",
+        "speakerReferent": "Jesus, reported in narration",
+        "speechAct": "narrative_repetition_of_identity_answer",
+        "speechTarget": "arresting party",
+        "surface": "Ἐγώ εἰμι",
+        "divineNameClaim": "CONTEXTUAL_THEOLOGICAL_INFERENCE_NOT_LEXICAL_PROOF",
+        "claimScope": "people go backward and fall on ground after utterance; interpretation is narrative contextual",
+    },
+    "ATT-BASE-EGO-EIMI-06": {
+        "speaker": "Jesus",
+        "speakerReferent": "Jesus",
+        "speechAct": "identity_answer_with_request_to_release_disciples",
+        "speechTarget": "arresting party",
+        "surface": "ἐγώ εἰμι",
+        "divineNameClaim": "CONTEXTUAL_THEOLOGICAL_INFERENCE_NOT_LEXICAL_PROOF",
+        "claimScope": "explicit εἰ οὖν ἐμὲ ζητεῖτε, ἄφετε τούτους",
+    },
+}
 # The original reviewed seeds are a required minimum, not a cap on future work.
 # Additional claims must pass the same foreign-key, editorial and publication gates.
 ALLOWED_CLAIM_TYPES = {
@@ -404,6 +454,11 @@ REQUIRED_SEMANTIC_RELATIONS = {
     "REL-YHWH-SANCTIFY-HEAL-SUFFIX": ("CLM-EX15-26-YHWH-HEALER", "CLM-EX31-LEV20-YHWH-SANCTIFIES", "CONTRASTS_GRAMMATICAL_FORM"),
     "REL-PS23-JOHN10-SHEPHERD-BOUNDARY": ("CLM-PS23-YHWH-MY-SHEPHERD", "CLM-JOHN10-JESUS-GOOD-SHEPHERD", "LIMITS_INFERENCE"),
 
+    "REL-JOHN6-JOHN18-SITUATION": ("CLM-JOHN6-20-ASSURANCE", "CLM-JOHN18-5-ARREST-IDENTITY", "LIMITS_INFERENCE"),
+    "REL-JOHN18-5-6-REPRISE": ("CLM-JOHN18-5-ARREST-IDENTITY", "CLM-JOHN18-6-NARRATOR-REPRISE", "LIMITS_INFERENCE"),
+    "REL-JOHN18-6-8-AGENCY": ("CLM-JOHN18-6-NARRATOR-REPRISE", "CLM-JOHN18-8-IDENTITY-AND-RELEASE", "CONTRASTS_SPEAKER_EVIDENCE"),
+    "REL-JOHN9-JOHN18-IDENTIFICATION": ("CLM-JOHN9-9-HUMAN-EGO-EIMI", "CLM-JOHN18-5-ARREST-IDENTITY", "CONTRASTS_REFERENT"),
+    "REL-JOHN6-JOHN8-LXX-BOUNDARY": ("CLM-JOHN6-20-ASSURANCE", "CLM-LXX-EX3-JOHN8-DIFFERENT-CLAUSES", "LIMITS_INFERENCE"),
 }
 CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-EX3-15-DIVINE-NAME": {"ATT-BASE-YHWH-01"},
@@ -453,6 +508,10 @@ CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-PS23-YHWH-MY-SHEPHERD": {"ATT-BASE-RO-I-01"},
     "CLM-JOHN10-JESUS-GOOD-SHEPHERD": {"ATT-BASE-RO-I-02", "ATT-EXT-POIMEN-HO-KALOS-01", "ATT-EXT-POIMEN-HO-KALOS-02"},
 
+    "CLM-JOHN6-20-ASSURANCE": {"ATT-BASE-EGO-EIMI-01"},
+    "CLM-JOHN18-5-ARREST-IDENTITY": {"ATT-BASE-EGO-EIMI-04"},
+    "CLM-JOHN18-6-NARRATOR-REPRISE": {"ATT-BASE-EGO-EIMI-05"},
+    "CLM-JOHN18-8-IDENTITY-AND-RELEASE": {"ATT-BASE-EGO-EIMI-06"},
 }
 
 
@@ -523,6 +582,10 @@ def validate_provenance(
                     continue
                 seen.add(aid)
                 att_by_id[aid] = obs
+                if aid in JOHN_EGO_DISCOURSE_CONTROLS:
+                    for field, expected in JOHN_EGO_DISCOURSE_CONTROLS[aid].items():
+                        if obs.get(field) != expected:
+                            errors.append(f"provenance: {aid} John6/18 speaker/discourse control changed ({field})")
                 if aid in COVENANT_SHEPHERD_CONTROLS:
                     for field,expected in COVENANT_SHEPHERD_CONTROLS[aid].items():
                         if obs.get(field) != expected:
@@ -660,6 +723,8 @@ def validate_provenance(
         errors.append("provenance: required lexical referent or named-object claim missing")
     if not REQUIRED_COVENANT_SHEPHERD_CLAIMS.issubset(claim_map):
         errors.append("provenance: required covenant and shepherd speech claims missing")
+    if not REQUIRED_JOHN_EGO_CONTEXT_CLAIMS.issubset(claim_map):
+        errors.append("provenance: required John6/18 discourse claims missing")
     for cid,level,review in (
         ("CLM-REV1-8-LORD-GOD-ALPHA","EXPLICIT_SAME_VERSE",False),
         ("CLM-REV21-6-THRONE-SPEAKER","EXPLICIT_PRIOR_NARRATOR_CUE",False),
@@ -771,8 +836,8 @@ def main() -> int:
         for p in problems:
             print("FAIL: " + p, file=sys.stderr)
         return 1
-    print("PASS: 105 attestation IDs / 4 editions; 41 provisional claims, "
-          "26 relations, 8 covenant and shepherd controls and all publication HOLD gates")
+    print("PASS: 105 attestation IDs / 4 editions; 45 provisional claims, "
+          "31 relations, 4 John6/18 discourse controls and all publication HOLD gates")
     return 0
 
 

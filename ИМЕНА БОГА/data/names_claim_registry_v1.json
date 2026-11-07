@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "corpusId": "NAMES_OF_GOD_CLAIM_LEVEL_EVIDENCE",
   "createdAt": "2026-11-07",
-  "scope": "41 provisional claims, 26 semantic relations; healer prayer versus divine address, 2mp sanctifier, original Hebrew shepherd and Greek Christ predicate clearly separated and all publication blocked.",
+  "scope": "45 provisional claims; 31 typed links. Four John 6/18 self-identification observations linked with narration-versus-speech controls, research-held and publication-blocked.",
   "editorialPolicy": "Never infer Product approval from link completeness, never replace a cited verse or alternative theory silently; new claims require independent review.",
   "records": [
     {
@@ -939,6 +939,98 @@
         "Separate direct speaker, prayer addressee, nominal predicate and poetic theological intertext",
         "Verify author/editor rights and independent Product editorial approval"
       ]
+    },
+    {
+      "claimId": "CLM-JOHN6-20-ASSURANCE",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "attestationIds": [
+        "ATT-BASE-EGO-EIMI-01"
+      ],
+      "statement": "In SBLGNT John 6:20 Jesus says Ἐγώ εἰμι, μὴ φοβεῖσθε in a scene of frightened disciples seeing him walk on the sea. The first-person expression identifies and reassures his hearers in its discourse; a theological or theophanic allusion is possible but not a unique lexically entailed divine proper name or an exact unshortened LXX Exodus 3:14 quotation.",
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT",
+        "SRC-SBLGNT-JOHN-EGO"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independent SBLGNT reading and printed critical variant apparatus audit for John 6 and 18",
+        "Compare historical and modern discourse/intertext readings of ordinary identification versus theophanic inference",
+        "Do not infer a unique divine proper name solely from unpredicated ἐγώ εἰμι; check John 9:9 human control",
+        "Separate academic and Product permissions; source-specific editorial review remains outstanding"
+      ]
+    },
+    {
+      "claimId": "CLM-JOHN18-5-ARREST-IDENTITY",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "attestationIds": [
+        "ATT-BASE-EGO-EIMI-04"
+      ],
+      "statement": "In SBLGNT John 18:4–5 the arresting party answers Jesus' question 'Whom do you seek?' with 'Jesus the Nazarene' and Jesus responds Ἐγώ εἰμι. He identifies himself as the requested person. Narrative or Christological implications require context and cannot be proved by the two Greek words without the interlocutors' immediately preceding answer.",
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT",
+        "SRC-SBLGNT-JOHN-EGO"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independent SBLGNT reading and printed critical variant apparatus audit for John 6 and 18",
+        "Compare historical and modern discourse/intertext readings of ordinary identification versus theophanic inference",
+        "Do not infer a unique divine proper name solely from unpredicated ἐγώ εἰμι; check John 9:9 human control",
+        "Separate academic and Product permissions; source-specific editorial review remains outstanding"
+      ]
+    },
+    {
+      "claimId": "CLM-JOHN18-6-NARRATOR-REPRISE",
+      "claimType": "NARRATIVE_SPEECH_VS_NAMING",
+      "attestationIds": [
+        "ATT-BASE-EGO-EIMI-05"
+      ],
+      "statement": "SBLGNT John 18:6 recounts what happened when Jesus said Ἐγώ εἰμι: the arresting party stepped backwards and fell. This is the narrator's reference back to the utterance quoted in 18:5, NOT a separately recorded second new utterance in verse 6. The fall invites contextual literary or theological interpretation, but the text does not by itself state a mechanism of miraculous force.",
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT",
+        "SRC-SBLGNT-JOHN-EGO"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independent SBLGNT reading and printed critical variant apparatus audit for John 6 and 18",
+        "Compare historical and modern discourse/intertext readings of ordinary identification versus theophanic inference",
+        "Do not infer a unique divine proper name solely from unpredicated ἐγώ εἰμι; check John 9:9 human control",
+        "Separate academic and Product permissions; source-specific editorial review remains outstanding"
+      ]
+    },
+    {
+      "claimId": "CLM-JOHN18-8-IDENTITY-AND-RELEASE",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "attestationIds": [
+        "ATT-BASE-EGO-EIMI-06"
+      ],
+      "statement": "In SBLGNT John 18:8 Jesus says 'I told you that ἐγώ εἰμι' and continues 'if you seek me, let these men go.' This direct repetition is part of Jesus' response to the arresting party and his request for release of the disciples; it is not an independently coined divine-name formula or a predicate-bearing title such as 'the Good Shepherd' in John 10.",
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT",
+        "SRC-SBLGNT-JOHN-EGO"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independent SBLGNT reading and printed critical variant apparatus audit for John 6 and 18",
+        "Compare historical and modern discourse/intertext readings of ordinary identification versus theophanic inference",
+        "Do not infer a unique divine proper name solely from unpredicated ἐγώ εἰμι; check John 9:9 human control",
+        "Separate academic and Product permissions; source-specific editorial review remains outstanding"
+      ]
     }
   ],
   "semanticRelations": [
@@ -1148,6 +1240,46 @@
       "toClaimId": "CLM-JOHN10-JESUS-GOOD-SHEPHERD",
       "relationType": "LIMITS_INFERENCE",
       "rationale": "Thematic canonical connection does not prove Hebrew and Greek are the same original-language clause, nor does it erase the difference between psalmist and Jesus as speaker.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-JOHN6-JOHN18-SITUATION",
+      "fromClaimId": "CLM-JOHN6-20-ASSURANCE",
+      "toClaimId": "CLM-JOHN18-5-ARREST-IDENTITY",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "The same formula in a fearful disciple scene and in an arrest identity-answer scene is not one speech act or automatically the same theological allusion.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-JOHN18-5-6-REPRISE",
+      "fromClaimId": "CLM-JOHN18-5-ARREST-IDENTITY",
+      "toClaimId": "CLM-JOHN18-6-NARRATOR-REPRISE",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "The narrator in 18:6 cites the utterance of 18:5 when relating the party's fall; this cannot be counted as a second independent 'I am' statement.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-JOHN18-6-8-AGENCY",
+      "fromClaimId": "CLM-JOHN18-6-NARRATOR-REPRISE",
+      "toClaimId": "CLM-JOHN18-8-IDENTITY-AND-RELEASE",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "John18:6 narrates and reports the earlier quote; John18:8 quotes Jesus directly, adding his protection request.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-JOHN9-JOHN18-IDENTIFICATION",
+      "fromClaimId": "CLM-JOHN9-9-HUMAN-EGO-EIMI",
+      "toClaimId": "CLM-JOHN18-5-ARREST-IDENTITY",
+      "relationType": "CONTRASTS_REFERENT",
+      "rationale": "The previously blind man uses the same self-identification wording in John9:9; Jesus is speaker in John18:5, so wording alone cannot establish a divine lexeme.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-JOHN6-JOHN8-LXX-BOUNDARY",
+      "fromClaimId": "CLM-JOHN6-20-ASSURANCE",
+      "toClaimId": "CLM-LXX-EX3-JOHN8-DIFFERENT-CLAUSES",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "John6:20 contains a short identity/assurance clause; the Greek Ex3:14 full wording and John8:58 intertext need independent investigation, not automatic equivalence.",
       "publicationState": "BLOCKED"
     }
   ]

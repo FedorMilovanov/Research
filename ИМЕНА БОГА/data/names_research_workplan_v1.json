@@ -20,15 +20,15 @@
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 16,
-    "provenanceRegressionTests": 127,
+    "provenanceRegressionTests": 142,
     "canonicalEditions": 4,
-    "curatedClaims": 41,
+    "curatedClaims": 45,
     "allAttestationForeignKeys": 105,
-    "editionSpecificGreekUrlsVerified": 14,
+    "editionSpecificGreekUrlsVerified": 18,
     "unselectedGreekEditionUrls": 0,
-    "attestationsReferencedByClaims": 55,
-    "attestationsWithoutClaimReference": 50,
-    "typedClaimRelations": 26,
+    "attestationsReferencedByClaims": 59,
+    "attestationsWithoutClaimReference": 46,
+    "typedClaimRelations": 31,
     "correctedExodusDivineReferentRows": 3,
     "semanticScopeAudits": 15,
     "independentScholarlyClaimApprovals": 0,
@@ -43,7 +43,8 @@
     "historicalMissingLocusIdsRecounted": 55,
     "lexicalReferentAndNamedObjectGuards": 8,
     "covenantShepherdAttestationsGuarded": 8,
-    "covenantSpeakerSpeechVersusPrayerDistinctions": 2
+    "covenantSpeakerSpeechVersusPrayerDistinctions": 2,
+    "johnEgoDiscourseGuards": 4
   },
   "allowedStatuses": [
     "DONE",
@@ -209,9 +210,13 @@
         "21_HEALER_SANCTIFIER_SHEPHERD_SPEAKER_AUDIT_20261107.md: original MT and SBLGNT distinction among divine healing speech, Jeremiah healing prayer, covenant sanctification and Johannine shepherd self-predication",
         "data/names_claim_registry_v1.json: five source-linked provisional claims and 3 semantic relations for eight existing attestation IDs",
         "validate_names_provenance.py: eight independent speech act/morphology/predicate/root controls and three extra exact pinned SBLGNT John10 URLs",
-        "test_validate_names_provenance.py: 17 additional positive/adversarial checks on speaker, suffix, biblical verse, root confusion and Greek predicate"
+        "test_validate_names_provenance.py: 17 additional positive/adversarial checks on speaker, suffix, biblical verse, root confusion and Greek predicate",
+        "22_JOHN_EGO_EIMI_DISCOURSE_WAVE_20261107.md: SBLGNT John6:20,18:5,18:6,18:8 with John9:9 human negative control, John8:58/LXX Ex3:14 distinction",
+        "data/names_claim_registry_v1.json: 4 provisional John6/18 speech act claims and 5 typed semantic boundary links, all RESEARCH_HOLD",
+        "validate_names_provenance.py: 4 independent speaker/target/scope controls + 4 exact edition-pinned SBLGNT John URLs",
+        "test_validate_names_provenance.py: 15 additional adversarial/positive tests against a falsely new second saying in 18:6, false lexical divinity and scene swaps"
       ],
-      "verification": "105_STABLE_ATT_SOURCE_EDITION_FK; 48_SOURCES; 41_RESEARCH_HOLD_CLAIMS; 26_TYPED_RELATIONS; 55_OF_105_CLAIM_LINKED; 50_WITHOUT_CLAIM; 8_SPEECH_PRAYER_SANCTIFICATION_SHEPHERD_CONTROLS; 14_PINNED_GREEK_URLS; 308_LOCAL_TESTS_EXPECTED_FULL_RUN; EXACT_SHA_CI_PENDING; CRITICAL_COLLATIONS_0; PRODUCT_APPROVAL_0",
+      "verification": "105_ATTESTATION_EDITION_SOURCE_LINKS; 48_SOURCE_RECORDS; 45_PROVISIONAL_CLAIMS_31_RELATIONS; 59_OF_105_CLAIM_LINKED; 46_WITHOUT_CLAIM; 4_JOHN6_18_DISCOURSE_GUARDS; 18_PINNED_GREEK_URLS; 323_TESTS_EXPECTED_BY_GITHUB_CI; CRITICAL_COLLATIONS_0; PRODUCT_APPROVAL_0",
       "closureAt": null,
       "owner": "Research editorial"
     },
@@ -610,7 +615,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NG-02: 50 current attestations lack linked provisional claims, prioritize title-interpretation risks, including the John 6/18 ego eimi narrative/absolute clause distinctions, and ambiguous covenantal forms. Preserve 55 historical missing locusId occurrences without inventing identifiers; no full corpus auto-promotion. Scientific apparatus, multi-tradition review, source rights and Product publication are separately blocked.",
+  "nextAction": "NG-02: 46 original-language attestation IDs still without bounded claim links. Prioritize source-rich but vulnerable cases, especially YHWH-Yireh Gen22:8/14 three speech frames; Nissi Ex17:16 MT/LXX difficult explanation, El Shaddai in Ex6:3, and Sabaoth plural/invocation. Preserve 55 missing historic locusId as versioning issue. No automatic Product promotion or fictional critical collation.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -692,7 +697,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-07",
-    "planStatus": "NG-01 DONE; NG-02 IN_PROGRESS: 41 provisional claims, 26 typed semantic relations, 55/105 attestations with narrow claim links",
+    "planStatus": "NG-01 DONE; NG-02 IN_PROGRESS: 45 provisional claims, 31 typed semantic relations, 59/105 linked",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -734,14 +739,16 @@
       "NG-02 speaker and syntax boundary: 8 original attestations, 5 narrow claims, 3 relations",
       "Exodus15:26 YHWH self-predication 2ms versus Jeremiah17:14 human prayer/imperative 1cs; Exodus31:13/Leviticus20:8 YHWH sanctifies 2mp covenant addressee",
       "Psalm23:1 MT YHWH my shepherd Hebrew רעה (not Hagar's seeing ראה) versus John10:11/14 Jesus explicit Greek nominal predicate; 3 John10 SBLGNT exact source URL locks",
-      "17 adversarial regressions added; total 308 local tests expected from 165 ledger, 16 plan and 127 provenance"
+      "17 adversarial regressions added; total 308 local tests expected from 165 ledger, 16 plan and 127 provenance",
+      "John6:20 Jesus 'it is I; do not fear' versus John18:5 Jesus answer, 18:6 narrator's backward reference to 18:5 rather than independent second new utterance, and 18:8 direct repetition with release request",
+      "4 newly claim-linked John occurrences, four required exact edition URLs, 5 typed relations and 15 negative/positive regression checks; SBLGNT original digital reading verified and human John9:9 negative control retained"
     ],
     "stillOpen": [
-      "NG-02: 50/105 original-language attestations still without provisional claim links",
-      "Critical Greek and Hebrew apparatus and comprehensive rival scholarship not collated/reviewed",
-      "55 historical absent locusIds remain a version/consumer question, not broken source FKs",
-      "All 41 research-held claims have no scholarly/Product approval, publication BLOCKED",
-      "Verify final commit SHA and 6 CI workflows before accepting complete wave"
+      "NG-02: 46 of 105 original-language attestations remain without curated claim links though source/edition keys all stable",
+      "55 historic records missing locusId need stable consumer compatibility policy",
+      "Historical manuscript-critical collation and scholarly alternative exegesis are still incomplete",
+      "All 45 provisional claims are research-only, no independent scholarly or Product publication approval",
+      "GitHub exact-SHA CI must be evaluated after this commit"
     ]
   },
   "originalResearchCheckpoint": {
@@ -758,14 +765,14 @@
       "sourceForeignKeys": 105,
       "editionForeignKeys": 105,
       "canonicalEditions": 4,
-      "curatedClaims": 41,
+      "curatedClaims": 45,
       "locusIdMissingHistorically": 55,
       "editionSelectionRecheckHolds": 0,
-      "notes": "8 existing observations have narrow source-bound claims across YHWH healing first-person, Jeremiah imperative request, divine covenantal 2mp sanctification, Psalm YHWH my shepherd (root רעה), and Jesus Greek nominal good shepherd; 50 unlinked remain. All holds preserved.",
-      "typedClaimRelations": 26,
-      "editionSpecificDigitalVerseRechecksCompleted": 14,
-      "attestationsLinkedToClaims": 55,
-      "attestationsWithoutClaimReferences": 50,
+      "notes": "John6:20 Jesus assures disciples, John18:5 answers arresting party, John18:6 narrator quotes earlier utterance rather than a second new saying, John18:8 Jesus repeats response and requests disciple release. Human John9:9 remains negative control; John8:58 distinct wider clause. 46 without curated claims; all scientific and Product holds remain.",
+      "typedClaimRelations": 31,
+      "editionSpecificDigitalVerseRechecksCompleted": 18,
+      "attestationsLinkedToClaims": 59,
+      "attestationsWithoutClaimReferences": 46,
       "divineReferentAddresseeControls": 3,
       "semanticScopeAudits": 15,
       "scholarlyClaimApprovals": 0,
@@ -777,7 +784,8 @@
       "revelationSpeakerEditionAttestations": 6,
       "historicalMissingLocusIdsRecounted": 55,
       "lexicalReferentAndNamedObjectGuards": 8,
-      "covenantShepherdAttestationsGuarded": 8
+      "covenantShepherdAttestationsGuarded": 8,
+      "johnEgoDiscourseGuards": 4
     }
   }
 }

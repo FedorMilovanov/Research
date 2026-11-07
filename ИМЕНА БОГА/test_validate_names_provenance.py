@@ -797,5 +797,91 @@ class ProvenanceGraphTests(unittest.TestCase):
         self.assertTrue(any("required semantic boundary" in e for e in self.check(claims=d)))
 
 
+    def test_john6_18_claims_link_exact_source_loci(self) -> None:
+        expected = {
+            "CLM-JOHN6-20-ASSURANCE": "ATT-BASE-EGO-EIMI-01",
+            "CLM-JOHN18-5-ARREST-IDENTITY": "ATT-BASE-EGO-EIMI-04",
+            "CLM-JOHN18-6-NARRATOR-REPRISE": "ATT-BASE-EGO-EIMI-05",
+            "CLM-JOHN18-8-IDENTITY-AND-RELEASE": "ATT-BASE-EGO-EIMI-06",
+        }
+        for cid, aid in expected.items():
+            item = next(c for c in self.claims["records"] if c["claimId"] == cid)
+            self.assertEqual([aid], item["attestationIds"])
+            self.assertEqual("RESEARCH_HOLD", item["editorialState"])
+            self.assertEqual("BLOCKED", item["publicationState"])
+
+    def test_john6_20_jesus_not_reclassified_as_human_healed(self) -> None:
+        d,obs=self.mutate("ego-eimi","baseline",0)
+        obs["speaker"]="formerly blind man"
+        self.assertTrue(any("John6/18 speaker/discourse control changed" in e for e in self.check(baseline=d)))
+
+    def test_john6_20_assurance_not_promoted_to_inherent_divine_lexeme(self) -> None:
+        d,obs=self.mutate("ego-eimi","baseline",0)
+        obs["divineNameClaim"]="INHERENT_UNIQUE_PROPER_NAME"
+        self.assertTrue(any("John6/18 speaker/discourse control changed" in e for e in self.check(baseline=d)))
+
+    def test_john6_20_disciples_not_replaced_by_arrest_party(self) -> None:
+        d,obs=self.mutate("ego-eimi","baseline",0)
+        obs["speechTarget"]="arresting party"
+        self.assertTrue(any("John6/18 speaker/discourse control changed" in e for e in self.check(baseline=d)))
+
+    def test_john6_20_single_edition_url_stays_fixed(self) -> None:
+        d,obs=self.mutate("ego-eimi","baseline",0)
+        obs["sourceUrl"]="https://www.biblegateway.com/passage/?search=John+6&version=SBLGNT"
+        self.assertTrue(any("verified pinned Greek passage URL changed" in e for e in self.check(baseline=d)))
+
+    def test_john18_5_explicit_nazarene_question_not_erased(self) -> None:
+        d,obs=self.mutate("ego-eimi","baseline",3)
+        obs["claimScope"]="God announces unique name"
+        self.assertTrue(any("John6/18 speaker/discourse control changed" in e for e in self.check(baseline=d)))
+
+    def test_john18_5_identity_answer_not_changed_to_absolute_divine_naming(self) -> None:
+        d,obs=self.mutate("ego-eimi","baseline",3)
+        obs["speechAct"]="absolute_divine_proper_name"
+        self.assertTrue(any("John6/18 speaker/discourse control changed" in e for e in self.check(baseline=d)))
+
+    def test_john18_6_narrator_reprise_is_not_a_second_new_utterance(self) -> None:
+        d,obs=self.mutate("ego-eimi","baseline",4)
+        obs["speechAct"]="new_independent_utterance"
+        self.assertTrue(any("John6/18 speaker/discourse control changed" in e for e in self.check(baseline=d)))
+
+    def test_john18_6_falling_not_deleted_or_turned_into_unproved_mechanism(self) -> None:
+        d,obs=self.mutate("ego-eimi","baseline",4)
+        obs["claimScope"]="divine force literally pushes people backwards"
+        self.assertTrue(any("John6/18 speaker/discourse control changed" in e for e in self.check(baseline=d)))
+
+    def test_john18_6_narrative_attribution_not_direct_jesus_new_speech(self) -> None:
+        d,obs=self.mutate("ego-eimi","baseline",4)
+        obs["speaker"]="Jesus"
+        self.assertTrue(any("John6/18 speaker/discourse control changed" in e for e in self.check(baseline=d)))
+
+    def test_john18_8_release_request_not_lost(self) -> None:
+        d,obs=self.mutate("ego-eimi","baseline",5)
+        obs["claimScope"]="only a name revelation"
+        self.assertTrue(any("John6/18 speaker/discourse control changed" in e for e in self.check(baseline=d)))
+
+    def test_john18_8_edition_url_not_switched_to_other_publisher(self) -> None:
+        d,obs=self.mutate("ego-eimi","baseline",5)
+        obs["sourceUrl"]="https://www.biblegateway.com/passage/?search=John+18&version=KJV"
+        self.assertTrue(any("verified pinned Greek passage URL changed" in e for e in self.check(baseline=d)))
+
+    def test_john18_reprise_claim_witness_cannot_swap_to_new_speech(self) -> None:
+        d=copy.deepcopy(self.claims)
+        row=next(x for x in d["records"] if x["claimId"]=="CLM-JOHN18-6-NARRATOR-REPRISE")
+        row["attestationIds"]=["ATT-BASE-EGO-EIMI-06"]
+        self.assertTrue(any("lost its independently reviewed text witnesses" in e for e in self.check(claims=d)))
+
+    def test_john6_speech_claim_required(self) -> None:
+        d=copy.deepcopy(self.claims)
+        d["records"]=[x for x in d["records"] if x["claimId"]!="CLM-JOHN6-20-ASSURANCE"]
+        self.assertTrue(any("required John6/18 discourse claims missing" in e for e in self.check(claims=d)))
+
+    def test_john18_narrator_vs_direct_semantic_relation_required(self) -> None:
+        d=copy.deepcopy(self.claims)
+        row=next(x for x in d["semanticRelations"] if x["relationId"]=="REL-JOHN18-6-8-AGENCY")
+        row["relationType"]="CONTRASTS_NAMED_OBJECT"
+        self.assertTrue(any("required semantic boundary" in e for e in self.check(claims=d)))
+
+
 if __name__ == "__main__":
     unittest.main()
