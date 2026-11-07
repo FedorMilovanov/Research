@@ -15,7 +15,10 @@ class ReformationManuscriptTests(unittest.TestCase):
         chapters = [EPISODE01, *sorted(HERE.glob("episode[0-9][0-9]_*_manuscript.md"))]
         ids = [int(re.search(r"episode(\d{2})_", p.name).group(1)) for p in chapters]
         self.assertEqual(len(ids), len(set(ids)), "two manuscripts for same episode")
-        self.assertTrue(all(1 <= n <= 12 for n in ids), ids)
+        # Before wave 380 a missing chapter (e.g. #11) did not fail this test.
+        # The accepted book has exactly twelve historical episodes, no gaps.
+        self.assertEqual(ids, list(range(1, 13)),
+                         "one or more historical chapters missing or duplicated")
 
     def test_all_manuscripts_remain_publication_hold(self):
         chapters = [INTRO, EPISODE01, *sorted(HERE.glob("episode[0-9][0-9]_*_manuscript.md"))]
@@ -32,8 +35,14 @@ class ReformationManuscriptTests(unittest.TestCase):
         chapters = [EPISODE01, *sorted(HERE.glob("episode[0-9][0-9]_*_manuscript.md"))]
         for path in chapters:
             with self.subTest(path=path.name):
-                self.assertIn(path.name, readme)
-                self.assertIn(path.name, blueprint)
+                self.assertRegex(readme,
+                                 r"\]\(" + re.escape(path.name) + r"(?:#[^)]*)?\)")
+                self.assertRegex(blueprint,
+                                 r"\]\(" + re.escape(path.name) + r"(?:#[^)]*)?\)")
+        # All public release gates remain closed even if an individual early
+        # chapter uses a shorter historical status line.
+        self.assertIn("NOT_EDITORIAL_READY", readme)
+        self.assertIn("PUBLICATION_HOLD", readme)
 
     def test_episode02_is_still_inside_existing_series(self):
         p = HERE / "episode02_indulgences_1517_manuscript.md"
