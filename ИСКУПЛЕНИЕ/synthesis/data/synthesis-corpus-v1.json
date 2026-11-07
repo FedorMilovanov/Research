@@ -938,8 +938,8 @@
       "ЗАКРЫТО": 8
     },
     "маркеры": {
-      "всего": 569,
-      "различных": 65,
+      "всего": 572,
+      "различных": 66,
       "словарь": {
         "ACCESS_INTERRUPTED": "ОТКРЫТО",
         "AI_TRANSLATION_HOLD": "УДЕРЖИВАЕТСЯ",
@@ -954,6 +954,7 @@
         "CONFESSIONAL_EDITION_HOLD": "УДЕРЖИВАЕТСЯ",
         "CONTEXT_HOLD": "УДЕРЖИВАЕТСЯ",
         "COSMOLOGY_HOLD": "УДЕРЖИВАЕТСЯ",
+        "DABNEY_FULL_BOOK_COLLATION_HOLD": "УДЕРЖИВАЕТСЯ",
         "DABNEY_OTHER_PAGES_HOLD": "УДЕРЖИВАЕТСЯ",
         "DABNEY_PAGE_SCAN_HOLD": "УДЕРЖИВАЕТСЯ",
         "DATE_HOLD": "УДЕРЖИВАЕТСЯ",
@@ -1009,8 +1010,8 @@
       },
       "частоты": {
         "EVIDENCE_HOLD": 110,
-        "PUBLICATION_HOLD": 81,
-        "RIGHTS_HOLD": 64,
+        "PUBLICATION_HOLD": 82,
+        "RIGHTS_HOLD": 65,
         "ATTRIBUTION_HOLD": 40,
         "RESOLVED-BY-TEXT": 37,
         "EDITION_HOLD": 35,
@@ -1020,16 +1021,17 @@
         "ARCHIVE_HOLD": 11,
         "BIBLE_CORPUS": 11,
         "PRIVATE_STUDY_ONLY": 9,
-        "DABNEY_OTHER_PAGES_HOLD": 6,
-        "DAVENANT_LATIN_EDITION_HOLD": 6,
-        "AI_TRANSLATION_HOLD": 5,
+        "AI_TRANSLATION_HOLD": 6,
         "DABNEY_PAGE_SCAN_HOLD": 5,
+        "DAVENANT_LATIN_EDITION_HOLD": 5,
         "OPEN-LAYER": 5,
         "CONTEXT_HOLD": 4,
+        "DABNEY_OTHER_PAGES_HOLD": 4,
         "FULL_TEXT_HOLD": 4,
         "MEYER_EDITION_HOLD": 4,
         "TEXTUAL_APPARATUS_HOLD": 4,
         "ATTRIBUTION_SECONDARY": 3,
+        "DABNEY_FULL_BOOK_COLLATION_HOLD": 3,
         "EDITION_UNAVAILABLE": 3,
         "LEGACY_NO_CLASSES": 3,
         "HOLD": 2,
@@ -1103,7 +1105,7 @@
       "ссылокВнеОбходаЛана": 0,
       "записейВнеСтрокЛана": 0,
       "файловБезКарточкиСостояния": 3,
-      "маркеровВПрозеНеОтражённыхВКарточке": 72,
+      "маркеровВПрозеНеОтражённыхВКарточке": 74,
       "маркеровВКарточкеНеИзПрозыЛана": 18,
       "детально": {
         "01_SERIES_PLAN_AND_ARTICLE_COUNT.md": {
@@ -1148,10 +1150,11 @@
           "естьКарточка": true
         },
         "07_LIVING_EXECUTION_BOARD_2026-11-07.md": {
-          "проза": 9,
+          "проза": 10,
           "карточка": 0,
           "вПрозеНеВКарточке": [
             "AI_TRANSLATION_HOLD",
+            "DABNEY_FULL_BOOK_COLLATION_HOLD",
             "DABNEY_PAGE_SCAN_HOLD",
             "DAVENANT_LATIN_EDITION_HOLD",
             "EVIDENCE_HOLD",
@@ -1364,12 +1367,13 @@
           "естьКарточка": true
         },
         "article13_double_payment_unbelief_and_acquired_faith.md": {
-          "проза": 13,
+          "проза": 14,
           "карточка": 1,
           "вПрозеНеВКарточке": [
             "AI_TRANSLATION_HOLD",
             "BIBLICAL_EXEGESIS_HOLD",
             "CONFESSIONAL_EDITION_HOLD",
+            "DABNEY_FULL_BOOK_COLLATION_HOLD",
             "DABNEY_OTHER_PAGES_HOLD",
             "DAVENANT_LATIN_EDITION_HOLD",
             "HODGE_PAGE_CHECK_HOLD",
@@ -3250,8 +3254,11 @@
         "маркеров": 1,
         "токены": [
           "AI_TRANSLATION_HOLD",
+          "DABNEY_FULL_BOOK_COLLATION_HOLD",
           "DABNEY_PAGE_SCAN_HOLD",
-          "DAVENANT_LATIN_EDITION_HOLD"
+          "DAVENANT_LATIN_EDITION_HOLD",
+          "PUBLICATION_HOLD",
+          "RIGHTS_HOLD"
         ],
         "машинно": false,
         "машинноПоФайлу": true
@@ -6145,7 +6152,7 @@
         "маркеров": 1,
         "токены": [
           "AI_TRANSLATION_HOLD",
-          "DABNEY_OTHER_PAGES_HOLD",
+          "DABNEY_FULL_BOOK_COLLATION_HOLD",
           "PUBLICATION_HOLD"
         ],
         "машинно": false,
@@ -6220,7 +6227,7 @@
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 1,
         "токены": [
-          "DABNEY_OTHER_PAGES_HOLD"
+          "DABNEY_FULL_BOOK_COLLATION_HOLD"
         ],
         "машинно": false,
         "машинноПоФайлу": true
@@ -6234,8 +6241,7 @@
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 1,
         "токены": [
-          "AI_TRANSLATION_HOLD",
-          "DAVENANT_LATIN_EDITION_HOLD"
+          "AI_TRANSLATION_HOLD"
         ],
         "машинно": false,
         "машинноПоФайлу": true
@@ -6367,8 +6373,8 @@
     ],
     "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
     "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check synthesis",
-    "measuredAt": "2026-11-07T13:42:04Z",
-    "checkedAt": "2026-11-07T13:42:04Z",
+    "measuredAt": "2026-11-07T15:48:46Z",
+    "checkedAt": "2026-11-07T15:48:46Z",
     "предыдущийСъём": "2026-11-07T13:42:04Z"
   }
 }

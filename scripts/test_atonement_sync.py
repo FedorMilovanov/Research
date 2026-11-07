@@ -241,12 +241,14 @@ class ActualSynchronizationTests(unittest.TestCase):
                 self.assertIn(marker, text)
         self.assertIn("A2 в узком месте", text)
         self.assertIn("B1", text)
-        self.assertIn("B1 (ограниченный цифровой свидетель)", text)
+        self.assertIn("**A2 scoped**", text)
+        self.assertIn("DAVENANT_1650_THREE_PRINT_LOCI_VERIFIED", text)
+        self.assertIn("DABNEY_FULL_BOOK_COLLATION_HOLD", text)
 
     def test_wave1_primary_dabney_context_and_print_hold_stay_distinct(self):
         text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md").read_text(encoding="utf-8")
         dossier = (ROOT / "ИСКУПЛЕНИЕ/evidence/WAVE1_DABNEY_DAVENANT_OWEN_PRIMARY_WITNESSES_2026-11-07.md").read_text(encoding="utf-8")
-        for marker in ("DABNEY_521_FACSIMILE_VERIFIED", "DABNEY_648_FACSIMILE_VERIFIED", "DABNEY_OTHER_PAGES_HOLD", "sermonindex.net/books/writings-of-robert-l-dabney/57"):
+        for marker in ("DABNEY_520_523_FACSIMILE_VERIFIED", "DABNEY_648_FACSIMILE_VERIFIED", "DABNEY_FULL_BOOK_COLLATION_HOLD", "sermonindex.net/books/writings-of-robert-l-dabney/57"):
             with self.subTest(marker=marker):
                 self.assertIn(marker, text)
                 self.assertIn(marker, dossier)
@@ -259,17 +261,27 @@ class ActualSynchronizationTests(unittest.TestCase):
         self.assertIn("archive.org/details/syllabusnotesofc00dabn/page/648", dossier)
         self.assertIn("archive.org/details/syllabusnotesofc00dabn/page/521", dossier)
         self.assertIn("антиномист", dossier.lower())
-        self.assertIn("DABNEY_OTHER_PAGES_HOLD", article)
+        self.assertIn("DABNEY_FULL_BOOK_COLLATION_HOLD", article)
+        self.assertIn("/page/520/mode/1up", dossier)
+        self.assertIn("/page/522/mode/1up", dossier)
+        self.assertIn("/page/523/mode/1up", dossier)
         self.assertIn("нравственную обязанность", article.lower())
 
     def test_wave1_davenant_latin_web_segments_are_not_print_pages(self):
         text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md").read_text(encoding="utf-8")
         dossier = (ROOT / "ИСКУПЛЕНИЕ/evidence/WAVE1_DABNEY_DAVENANT_OWEN_PRIMARY_WITNESSES_2026-11-07.md").read_text(encoding="utf-8")
-        for marker in ("DAVENANT_LATIN_EDITION_HOLD", "AI_TRANSLATION_HOLD", "§75", "foedus Evangelicum"):
+        for marker in ("DAVENANT_1650_THREE_PRINT_LOCI_VERIFIED", "AI_TRANSLATION_HOLD", "§75", "foedus Evangelicum"):
             with self.subTest(marker=marker):
                 self.assertIn(marker, text)
                 self.assertIn(marker, dossier)
         self.assertIn("веб-локатор", dossier)
+        for leaf in ("n10", "n41", "n78"):
+            with self.subTest(leaf=leaf):
+                self.assertIn(f"/page/{leaf}/mode/1up", text)
+                self.assertIn(f"/page/{leaf}/mode/1up", dossier)
+        self.assertIn("Именно **69**, а не 70", text)
+        self.assertIn("буквальная", dossier)
+        self.assertIn("PUBLICATION_HOLD", dossier)
 
     def test_wave0_hodge_source_target_and_owen_distinction(self):
         text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md").read_text(encoding="utf-8")
