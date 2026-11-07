@@ -45,7 +45,7 @@ class FranceTrentNantesTests(unittest.TestCase):
         s=CH.read_text(encoding="utf-8")
         for piece in ("статья VI", "статья XIII", "статья XIV", "92 статей",
                       "56 особых", "25 февраля 1599", "2 апреля 1571",
-                      "12 апреля", "безуслов", "не"):
+                      "12 апреля", "совест", "не"):
             self.assertIn(piece.lower(),s.lower())
 
 if __name__=="__main__":
