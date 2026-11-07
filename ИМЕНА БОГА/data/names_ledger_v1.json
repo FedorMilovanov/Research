@@ -870,7 +870,56 @@
       "sourceEdition": "Mechon-Mamre MT digital transcription",
       "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
       "criticalEditionStatus": "NOT_COLLATED",
-      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass",
+      "attestations": [
+        {
+          "verse": "Daniel 7:9",
+          "surface": "עַתִּיק יוֹמִין",
+          "language": "aramaic",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "speaker": "Daniel, reporting visionary scene",
+          "speakerEvidence": "direct_scene_narration",
+          "referent": "Ancient of Days (sitting judge)",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt3407.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN"
+        },
+        {
+          "verse": "Daniel 7:13",
+          "surface": "עַתִּיק יוֹמַיָּא",
+          "language": "aramaic",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "speaker": "Daniel, reporting visionary scene",
+          "speakerEvidence": "direct_scene_narration",
+          "referent": "Ancient of Days (approached by figure like son of man)",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt3407.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN"
+        },
+        {
+          "verse": "Daniel 7:22",
+          "surface": "עַתִּיק יוֹמַיָּא",
+          "language": "aramaic",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "speaker": "Daniel, reporting visionary scene",
+          "speakerEvidence": "direct_scene_narration",
+          "referent": "Ancient of Days (coming to grant judgment for saints)",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt3407.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN"
+        }
+      ],
+      "referentBoundary": "Daniel 7:13 narrates one like a son of man COMING TO the Ancient of Days. They are distinguishable literary figures in this verse; later NT christology is an interpretive reception question, not lexical identity.",
+      "lexicalNote": {
+        "language": "biblical_aramaic",
+        "verse9Form": "עַתִּיק יוֹמִין",
+        "verses13and22Form": "עַתִּיק יוֹמַיָּא",
+        "twoForms": "VISIBLE_DIGITAL_EDITION",
+        "morphologicalExplanationStatus": "PENDING_ARABIBLICAL_GRAMMAR_REFERENCE"
+      }
     },
     {
       "id": "abba",
@@ -920,7 +969,36 @@
       "sourceEdition": "SBLGNT 2010 via BibleGateway (digital display)",
       "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
       "criticalEditionStatus": "NOT_COLLATED",
-      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass",
+      "attestations": [
+        {
+          "verse": "Revelation 1:8",
+          "surface": "ὁ παντοκράτωρ",
+          "language": "greek",
+          "edition": "SBLGNT 2010 via BibleGateway",
+          "speaker": "κύριος, ὁ θεός (Lord God)",
+          "speakerEvidence": "explicit_speech_attribution_in_verse",
+          "referent": "Lord God Almighty",
+          "sourceUrl": "https://www.biblegateway.com/passage/?search=Revelation+1%3A4-8&version=SBLGNT",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN"
+        },
+        {
+          "verse": "Revelation 21:22",
+          "surface": "ὁ παντοκράτωρ",
+          "language": "greek",
+          "edition": "SBLGNT 2010 via BibleGateway",
+          "speaker": "John, description of city",
+          "speakerEvidence": "vision_narration",
+          "referent": "Lord God Almighty, mentioned distinctly from the Lamb",
+          "sourceUrl": "https://www.biblegateway.com/passage/?search=Revelation+21&version=SBLGNT",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN"
+        }
+      ],
+      "referentBoundary": "Rev21:22 says ὁ κύριος ὁ θεός ὁ παντοκράτωρ and τὸ ἀρνίον; maintain distinction between grammatical expressions, no automatic collapse to Son as referent."
     },
     {
       "id": "alpha-omega",
@@ -959,7 +1037,74 @@
       "sourceEdition": "SBLGNT 2010 via BibleGateway (digital display)",
       "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
       "criticalEditionStatus": "NOT_COLLATED",
-      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass",
+      "attestations": [
+        {
+          "verse": "Revelation 1:8",
+          "surface": "τὸ Ἄλφα καὶ τὸ Ὦ",
+          "language": "greek",
+          "edition": "SBLGNT 2010 via BibleGateway",
+          "speaker": "κύριος, ὁ θεός (Lord God)",
+          "speakerEvidence": "explicit_speech_attribution_in_verse",
+          "referent": "divine first-person declaration",
+          "sourceUrl": "https://www.biblegateway.com/passage/?search=Revelation+1%3A4-8&version=SBLGNT",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN"
+        },
+        {
+          "verse": "Revelation 21:6",
+          "surface": "τὸ Ἄλφα καὶ τὸ Ὦ",
+          "language": "greek",
+          "edition": "SBLGNT 2010 via BibleGateway",
+          "speaker": "the one seated on throne",
+          "speakerEvidence": "narrative_speaker_introduced_in_Revelation_21_5",
+          "referent": "divine first-person declaration",
+          "sourceUrl": "https://www.biblegateway.com/passage/?search=Revelation+21&version=SBLGNT",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN"
+        },
+        {
+          "verse": "Revelation 22:13",
+          "surface": "τὸ Ἄλφα καὶ τὸ Ὦ",
+          "language": "greek",
+          "edition": "SBLGNT 2010 via BibleGateway",
+          "speaker": "speaker inferred in immediate context; explicit I Jesus in 22:16",
+          "speakerEvidence": "contextual_inference_with_intervening_angelic_speech",
+          "referent": "apocalyptic first-person declaration",
+          "sourceUrl": "https://www.biblegateway.com/passage/?search=Revelation+22&version=SBLGNT",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN"
+        }
+      ],
+      "referentBoundary": "No universal globalSpeaker for same epithet; Rev 1:8 explicitly κύριος ὁ θεός; Rev21:5 speaker seated on throne; Rev22:13 Jesus identification is contextual (22:16 explicit) not a local 'λέγει Ἰησοῦς' in v13.",
+      "printedEditionDiffs": [
+        {
+          "verse": "Revelation 1:8",
+          "editionA": "SBLGNT 2010",
+          "editionB": "Stephanus TR1550",
+          "editionASurface": "λέγει κύριος, ὁ θεός",
+          "editionBSurface": "λεγει ο κυριος",
+          "variant1": "TR1550 adds αρχη και τελος, SBLGNT 1:8 does not contain that clause",
+          "variant2": "SBLGNT has ὁ θεός, TR1550 does not",
+          "sourceA": "https://www.biblegateway.com/passage/?search=Revelation+1%3A4-8&version=SBLGNT",
+          "sourceB": "https://www.biblegateway.com/passage/?search=Revelation+1%3A8&version=TR1550",
+          "claimScope": "PRINTED_EDITIONS_NOT_MANUSCRIPT_COLLATION"
+        },
+        {
+          "verse": "Revelation 21:6",
+          "editionA": "SBLGNT 2010",
+          "editionB": "THGNT 2017",
+          "editionASurface": "ἐγὼ τὸ Ἄλφα",
+          "editionBSurface": "ἐγώ εἰμι τὸ ἄλφα",
+          "variant1": "SBLGNT has no explicit εἰμι after first ἐγὼ; THGNT has εἰμι",
+          "sourceA": "https://www.biblegateway.com/passage/?search=Revelation+21&version=SBLGNT",
+          "sourceB": "https://www.biblegateway.com/verse/grc/Revelation%2021%3A6",
+          "claimScope": "PRINTED_EDITIONS_NOT_MANUSCRIPT_COLLATION"
+        }
+      ]
     },
     {
       "id": "ego-eimi",
@@ -1054,6 +1199,17 @@
       "totalAttestations": 11,
       "exactVerseSurface": "DIGITAL_VERSE_SURFACE_CHECKED_NOT_MANUSCRIPT_COLLATION",
       "referentGuard": "namedObject and speechAct must be preserved independently of shared el lexeme"
+    },
+    "apocalypticAttestations": {
+      "phase": "REVELATION_DANIEL_TEXT_WITNESS_2026_11_07",
+      "baselineIds": [
+        "atiq-yomin",
+        "alpha-omega",
+        "pantokrator"
+      ],
+      "totalAttestations": 8,
+      "editionDiffStatus": "PRINTED_EDITIONS_ONLY_NO_MANUSCRIPT_COLLATION",
+      "speakerRule": "REVELATION_VERSE_BY_VERSE_CONTEXTUAL_ATTRIBUTION_NOT_GLOBAL_SPEAKER"
     }
   }
 }
