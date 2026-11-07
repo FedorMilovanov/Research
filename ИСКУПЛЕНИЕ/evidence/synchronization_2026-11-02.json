@@ -8669,6 +8669,13 @@
   },
   "postReviewDrafts": [
     {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md",
+      "sha256": "926b8c898b90f65319430c031d34e3f57538428e58c815ed5a99085cadf9bad6",
+      "reviewedAt": "2026-11-07",
+      "note": "Статья №2/18, отдельная от исторического черновика 02_why-the-cross-necessity: Пасха Исх. 12, кровь завета Исх. 24, Лев. 1–7 и мучное исключение 5:11–13, Лев. 16/17, Ис. 53 и Евр. 9–10; 21 scoped semantic claims F02-01…F02-21 из предыдущих OT/NT карточек, не самостоятельная новая рукописная колляция. EVIDENCE/LOCATOR/ARCHIVE/RIGHTS/PUBLICATION HOLD действуют; независимый reviewer не подписывал",
+      "publicationEligible": false
+    },
+    {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article08_particular_redemption_positive_case.md",
       "sha256": "be87f48ddff8ce8d55c2bfa1e95e6c90893a3936036e75fe640d3776f4b30c53",
       "reviewedAt": "2026-11-07",

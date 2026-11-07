@@ -246,6 +246,43 @@ class ActualSynchronizationTests(unittest.TestCase):
         self.assertIn("DAVENANT_1650_THREE_PRINT_LOCI_VERIFIED", text)
         self.assertIn("DABNEY_FULL_BOOK_COLLATION_HOLD", text)
 
+    def test_article02_sacrifice_covenant_distinguishes_rituals_and_has_semantic_claim_map(self):
+        rel = "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md"
+        p = ROOT / rel
+        article = p.read_text(encoding="utf-8")
+        plan = (ROOT / "ИСКУПЛЕНИЕ/synthesis/01_SERIES_PLAN_AND_ARTICLE_COUNT.md").read_text(encoding="utf-8")
+        for marker in (
+            "ARTICLE 02 / 18", "Исх. 12:13", "Исх. 24:8",
+            "Лев. 5:11–13", "Лев. 16:21–22", "Лев. 17:11",
+            "Ис. 52:15", "Ис. 53:4", "Евр. 9:12", "Евр. 9:22",
+            "святилище", "живым", "почти", "Евр. 10:1–4",
+            "AT-010", "LOCATOR_HOLD", "RIGHTS_HOLD",
+            "PUBLICATION_HOLD", "не", "Göttingen",
+        ):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, article)
+        for i in range(1, 22):
+            with self.subTest(claim=i):
+                self.assertEqual(article.count("| F02-%02d |" % i), 1)
+        self.assertEqual(article.count("| F02-"), 21)
+        self.assertIn("article02_sacrifice_covenant_passover_day_of_atonement.md", plan)
+        self.assertIn("исторического черновика", plan)
+        for source in (
+            "../../ot/06_PESAH_EXOD12.md",
+            "../../ot/10_EXOD24_GEN22.md",
+            "../../ot/07_LEV1_7_SISTEMA_ZHERTV.md",
+            "../../ot/08_LEV16_KAPPORET_AZAZEL.md",
+            "../../ot/11_ISA52_53_SERVANT.md",
+            "../../nt/08_NT_PERICOPE_CARDS_HEBREWS_CATHOLICS_APOCALYPSE.md",
+        ):
+            with self.subTest(source=source):
+                self.assertTrue((p.parent / source).resolve().is_file())
+        controls = json.loads((ROOT / "ИСКУПЛЕНИЕ/evidence/synchronization_2026-11-02.json").read_text(encoding="utf-8"))
+        matching = [m for m in controls.get("postReviewDrafts", []) if m.get("path") == rel]
+        self.assertEqual(len(matching), 1)
+        self.assertEqual(matching[0]["sha256"], hashlib.sha256(p.read_bytes()).hexdigest())
+        self.assertFalse(matching[0]["publicationEligible"])
+
     def test_article11_named_judas_primary_witnesses_and_hebrews_hold(self):
         text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article11_bought_apostates_covenant_blood_and_weak_brother.md").read_text(encoding="utf-8")
         cards = (ROOT / "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md").read_text(encoding="utf-8")
@@ -369,6 +406,7 @@ class ActualSynchronizationTests(unittest.TestCase):
         self.assertEqual(
             {r["path"] for r in additions},
             {
+                "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md",
                 "ИСКУПЛЕНИЕ/synthesis/drafts/article08_particular_redemption_positive_case.md",
                 "ИСКУПЛЕНИЕ/synthesis/drafts/article09_world_and_propitiation_johannine_case.md",
                 "ИСКУПЛЕНИЕ/synthesis/drafts/article10_ransom_for_all_two_adams_paul_hebrews.md",
@@ -380,7 +418,7 @@ class ActualSynchronizationTests(unittest.TestCase):
 
     def test_post_review_draft_manifest_fails_closed(self):
         additions = self.report.get("postReviewDrafts", [])
-        self.assertEqual(len(additions), 6)
+        self.assertEqual(len(additions), 7)
         cases = [
             (f"missing-declaration-{i}", additions[:i] + additions[i + 1 :])
             for i in range(len(additions))
