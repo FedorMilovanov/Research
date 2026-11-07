@@ -10,6 +10,7 @@ import argparse
 import json
 import re
 import sys
+import unicodedata
 from pathlib import Path
 
 LEDGER = Path(__file__).resolve().parent / "data" / "names_ledger_v1.json"
@@ -37,6 +38,16 @@ EXPECTED_TYPES = {
 HEBREW = re.compile(r"[\u0590-\u05ff]")
 GREEK = re.compile(r"[\u0370-\u03ff\u1f00-\u1fff]")
 URL = re.compile(r"^https://[^\s]+$")
+
+
+def unicode_surface_issues(label: str, form: str) -> list[str]:
+    """Reject invisible format-controls and non-NFC original-script surface forms."""
+    problems: list[str] = []
+    if unicodedata.normalize("NFC", form) != form:
+        problems.append(f"{label}: original-script text must be NFC-normalized")
+    if any(unicodedata.category(char) == "Cf" for char in form):
+        problems.append(f"{label}: invisible Unicode format/bidi control in text surface")
+    return problems
 
 
 def validate(data: dict) -> list[str]:
@@ -72,6 +83,8 @@ def validate(data: dict) -> list[str]:
             if not isinstance(row.get(field), str) or not row[field].strip():
                 errors.append(f"{prefix}: {field} must be nonblank")
         form = row.get("verifiedForm", "")
+        if isinstance(form, str):
+            errors.extend(unicode_surface_issues(prefix, form))
         lang = row.get("language")
         if lang not in ALLOWED_LANGUAGES:
             errors.append(f"{prefix}: unknown language {lang!r}")
@@ -186,6 +199,7 @@ def validate_extension(extension: dict, baseline: dict) -> list[str]:
             if not isinstance(row.get(field), str) or not row[field].strip():
                 errors.append(f"{label}: blank {field}")
         form = str(row.get("verifiedDigitalForm", ""))
+        errors.extend(unicode_surface_issues(label, form))
         lang = row.get("language")
         if lang not in {"hebrew", "aramaic", "greek"}:
             errors.append(f"{label}: language must be a single original-language layer")
