@@ -12,6 +12,8 @@
 
 Нельзя выбирать «самый свежий по имени» датированный `00_RESEARCH_CURRENT_AUTHORITY_*.md`. Корневой current owner определяется только machine registry и проверяемым stable entrypoint.
 
+**Исследовательские САМОПЛАНЫ:** [динамический протокол](docs/research/SELF_PLAN_PROTOCOL.md), [шаблон серии](docs/research/templates/SELF_PLAN_SERIES.md), [шаблон статьи](docs/research/templates/SELF_PLAN_ARTICLE.md). Работа с книгами, видео и Drive имеет ограниченный маршрут и критерии прекращения поиска. Протокол подчинён AGENT_RULES и evidence-policy; он не новый root authority.
+
 ## Evidence model
 
 Глобальные классы источников: `A1`, `A2`, `A3`, `B1`, `C`, `D`. `HOLD` не является классом источника. Независимо фиксируются:

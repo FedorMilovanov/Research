@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 147,
+  "sourceCount": 154,
   "sources": [
     {
       "id": "REF-P01",
@@ -2129,10 +2129,10 @@
       "documentYear": 1528,
       "title": "H. Dencken wid[e]ruff. Uff die zehen artikel: 1 Von der geschrifft; 2 Von der bezalung Christi; 3 Vom Glauben; 4 Vom freien willen; 5 Von guten wercken; 6 Von Secten; 7 Von Ceremonien; 8 Vom Tauff; 9 Vom Nachtmal; 10 Vom Eyd",
       "evidenceClass": "A1",
-      "accessState": "FULL_OBJECT_14_SCANS_ACQUIRED",
-      "locatorState": "ORIGINAL_TITLE_AND_SECTION_VIII_FACSIMILE_VERIFIED",
-      "rightsState": "PUBLIC_DOMAIN_MARK",
-      "publicationState": "RESEARCH_ONLY",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
       "holds": [
         "EVIDENCE_HOLD",
         "PUBLICATION_HOLD"
@@ -2316,8 +2316,8 @@
       "documentYear": 2008,
       "title": "Ulrich Oelschläger, Die Wormser Propheten von 1527. Eine vorlutherische Teilübersetzung der Bibel, Theologische Zeitschrift 64/2 (2008), 169–198, esp. 175 n.18",
       "evidenceClass": "B1",
-      "accessState": "PDF_TEXT_PARTIAL_REVIEWED",
-      "locatorState": "PRINTED_PAGE_175_TEXT_LOCATED_IMAGE_NOT_VERIFIED",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
       "holds": [
@@ -2334,8 +2334,8 @@
       "documentYear": 2020,
       "title": "Mennonitisches Lexikon, Band V (2010–2020 online; revised print edition 2020), Hans-Jürgen Goertz (ed.), article 'Denck, Hans'",
       "evidenceClass": "B1",
-      "accessState": "INDEXED_EXCERPT_AND_WEB_TEXT",
-      "locatorState": "ARTICLE_LEVEL_ONLY",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
       "holds": [
@@ -2901,6 +2901,132 @@
       "url": "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/20/71/95/37/2020719537/2020719537.pdf",
       "checkedAt": "2026-11-06",
       "verificationNote": "University of Toronto Press 2015 ebook hosted on US Library of Congress. Original publisher PDF screen directly visually checked pageno100 (printed p70), pageno101 (printed p71), and book copyright page; p70 MODERN EDITORS' headnote to Letter488a says Kautz nailed seven theses on 9 June 1527, addressed audience 13 June, and cites QGT4 pp113–114 no129. This 9 June NOT quoted from the 1532 letter. The translated October14-16 1532 letter manuscript at Strasbourg AVCU 1AST76 no7, additions/corrections by Bucer, printed CorrBucer9 pp23–31 Ep634; content p71 about Kautz sacramental views but not an autograph date for his 1527 action. 2015 editors mention later Kautz association with Schöffer in Haguenau, not evidence this is Worms 1527 press. Book copyright CC-BY-NC-ND, no pages copied/reused; physical autograph not seen; clear source dependency on QGT4."
+    },
+    {
+      "id": "REF-P63",
+      "documentYear": 1520,
+      "title": "Martin Luther, An den Christlichenn Adel deutscher Nation, author-enlarged and corrected 1520 edition; UB Paderborn VD16 L3759 / Benzing 684",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://digital.ub.uni-paderborn.de/eab/content/titleinfo/1928970",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Official Paderborn bibliographic title explicitly says Durch yhn selbs gemehret vnd corrigirt, Wittenberg [Melchior Lotter] 1520; VD16 L3759 / Benzing 684 and URN nbn:de:hbz:466:1-36728 confirmed. Catalog says final leaf missing from THIS physical copy. Library image-reuse notice says CC BY 4.0; no rights-generalization or editorial publication approval. This is not REF-P03 first printing and not a fully read second-edition text; direct page-by-page original collation is pending."
+    },
+    {
+      "id": "REF-P64",
+      "documentYear": 1520,
+      "title": "Martin Luther, De captivitate Babylonica ecclesiae praeludium, Wittenberg 1520, Stadtbibliothek Worms LB45, VD16 L4189",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.lutherschriften1521.de/luther-schriften/exponate/Widerruf/lateinische-Lutherschriften/14-De-captivitate-Babilonica.php",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Stadtbibliothek Worms institutional exhibit identifies VD16 L4189, Benzing 704, Wittenberg [Melchior Lotter d.J.] [1520], 44 ORIGINAL LEAVES and shelfmark LB45. Museum summary describes initial three sacraments (penance, baptism, Eucharist) and final stricter count two; original Latin print has not been diplomatically read here. Project Wittenberg translation maps to WA 6:497-573 but translation is NOT a second original print. Russian State Library 1520 catalog record is another copy of same work without established distinct edition."
+    },
+    {
+      "id": "REF-P65",
+      "documentYear": 1520,
+      "title": "Martin Luther, Von der Freyheyt eynisz Christen Menschen, Wittenberg 1520, Taylor Institution Library ARCH.8o.G.1520(25), Oxford Taylor Editions facsimile/transcription",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://editions.mml.ox.ac.uk/editions/freiheit-1520/",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Oxford scholarly TEI digital edition exposes German transcription/facsimile/English translation of specific Taylorian 1520 print. Title a1r and dedication a1v-a2r directly read online; dedication has Hieronymus Mühlpfort whereas editor identifies Hermann Mühlpfort; closing conclusion also located in text. Modern edition and translation require own attribution. Original image-by-image collation and full German/Latin stemma remain unclosed."
+    },
+    {
+      "id": "REF-P66",
+      "documentYear": 1520,
+      "title": "Martin Luther, Von der Freyhayt Aines Christen menschen, Pitts Theology Library Emory copy of fourth German printing, 1520",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://digital.pitts.emory.edu/s/digital-collections/item/13912",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Pitts institutional catalog explicitly calls item 13912 FOURTH printing of Luther's own German translation, issued 1520. It is not the first print of the work. Copyright notice from the institutional record addresses the online edition in the US; it does not authorize arbitrary reuse of other photos or later scholarly translations. Historical images not collated."
+    },
+    {
+      "id": "REF-S70",
+      "documentYear": 2020,
+      "title": "Oxford History of the Book, Freedom by Faith (2020), historical book-history analysis of Luther three tracts and dating of the Leo X letter",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://historyofthebook.mml.ox.ac.uk/2020/10/29/freedom-by-faith/",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Oxford institutional historical essay states letter attached to Freedom of Christian was backdated to 6 September 1520 and distinguishes publications in August, October, and November. It is scholarly reconstruction, not an autograph of Luther or proven first-print collation; do not convert article's date claim to original letter date of composition without an independent primary witness."
+    },
+    {
+      "id": "REF-S71",
+      "documentYear": null,
+      "title": "Landesarchiv Baden-Württemberg, Martin Luther und seine Ausstrahlung im deutschen Südwesten, institutional historical timeline of Exsurge Domine / Decet Romanum Pontificem",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.landesarchiv-bw.de/de/themen/praesentationen---themenzugaenge/62155",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Official regional archive narrative confirms Exsurge Domine 15 June 1520, later publication sequence, Luther's public burning 10 December 1520, actual excommunication by Decet Romanum Pontificem 3 January 1521. Exact issue year of online narrative not established, hence null documentYear; accessible secondary institutional analysis, not original signed or printed bull images."
+    },
+    {
+      "id": "REF-S72",
+      "documentYear": 2026,
+      "title": "Corinna Ehlers, Wormser Edikt (8 / 26 Mai 1521), Europäische Religionsfrieden Digital critical introduction",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://tueditions.ulb.tu-darmstadt.de/v/pa000008-0107",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Production scholarly HTML article (not experimental preview site) directly checked: decision 8 May, postponed signature 12 May, reading before certain estates 25 May, signatures of German/Latin texts and publication mandate 26 May. Official German first print VD16 D924 not identical to now-lost German original parchment formerly seen by Wrede; survives at BSB. Latin print Vatican Arm LXIV 17 not same physical object as signed original. Differentiated legislation and uneven local enforcement; research-critical historical account, not all original images collated. Site suggested citation year 2026."
     }
   ]
 }
