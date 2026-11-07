@@ -6,7 +6,7 @@ import json
 import unittest
 from pathlib import Path
 
-from validate_names_ledger import validate, validate_extension, validate_source_access, validate_apocalyptic, validate_prophetic_namings, validate_six_title_attestations
+from validate_names_ledger import validate, validate_extension, validate_source_access, validate_apocalyptic, validate_prophetic_namings, validate_six_title_attestations, validate_memorial_attestations
 
 ROOT = Path(__file__).resolve().parent
 
@@ -18,6 +18,7 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         cls.extension = json.loads((ROOT / "data" / "names_extension_ledger_v1.json").read_text(encoding="utf-8"))
         cls.sources = json.loads((ROOT / "data" / "source_access_register_v1.json").read_text(encoding="utf-8"))
         cls.title_contract = json.loads((ROOT / "data" / "attestation_contract_v1.json").read_text(encoding="utf-8"))
+        cls.memorial_contract = json.loads((ROOT / "data" / "memorial_attestation_contract_v1.json").read_text(encoding="utf-8"))
 
     def test_current_research_corpora_pass_structure(self) -> None:
         self.assertEqual([], validate(self.baseline))
@@ -26,6 +27,7 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertEqual([], validate_apocalyptic(self.baseline, self.extension))
         self.assertEqual([], validate_prophetic_namings(self.baseline))
         self.assertEqual([], validate_six_title_attestations(self.baseline, self.title_contract))
+        self.assertEqual([], validate_memorial_attestations(self.baseline, self.memorial_contract))
 
     def test_altar_cannot_be_promoted_to_personal_name(self) -> None:
         data = copy.deepcopy(self.baseline)
@@ -504,6 +506,107 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         row = next(x for x in data["records"] if x["id"] == "SRC-SUCHARD-ELOHIM-2025")
         row["evidenceClass"] = "A1"
         self.assertTrue(any("Suchard 2025" in e for e in validate_source_access(data)))
+
+
+    def test_memorial_place_is_not_altar_in_genesis_22(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "yireh")
+        r["attestations"][1]["namedObject"] = "altar"
+        self.assertTrue(any("Gen22:14 names PLACE" in e for e in validate_memorial_attestations(d, self.memorial_contract)))
+
+    def test_memorial_qal_not_niphal_in_genesis_22(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "yireh")
+        r["attestations"][2]["surface"] = "בְּהַר יְהוָה יִרְאֶה"
+        self.assertTrue(any("Gen22 Qal versus Niphal" in e for e in validate_memorial_attestations(d, self.memorial_contract)))
+
+    def test_memorial_exodus_17_15_moses_named_altar_not_yhwh(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "nissi")
+        r["attestations"][0]["namedObject"] = "God"
+        self.assertTrue(any("Ex17:15 altar name" in e for e in validate_memorial_attestations(d, self.memorial_contract)))
+
+    def test_memorial_exodus_17_lxx_refuge_not_rewritten_as_banner(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "nissi")
+        r["attestations"][1]["surface"] = "Κύριός μου σημεῖον"
+        self.assertTrue(any("MT banner vs LXX refuge" in e for e in validate_memorial_attestations(d, self.memorial_contract)))
+
+    def test_memorial_exodus_17_16_conjecture_not_presented_as_mt(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "nissi")
+        r["attestations"][2]["surface"] = "כִּי-יָד עַל-נֵס יָהּ"
+        self.assertTrue(any("secret-hand and conjecture" in e for e in validate_memorial_attestations(d, self.memorial_contract)))
+
+    def test_memorial_lxx_exodus_cannot_inherit_sblgnt_license(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "nissi")
+        r["attestations"][1]["rightsState"] = "PUBLICATION_ELIGIBLE"
+        self.assertTrue(any("Rahlfs Exodus17 reuse gate" in e for e in validate_memorial_attestations(d, self.memorial_contract)))
+
+    def test_memorial_judges_speech_not_same_as_altar_name(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "shalom")
+        r["attestations"][0]["namedObject"] = "altar"
+        self.assertTrue(any("Judg6 peace speech" in e for e in validate_memorial_attestations(d, self.memorial_contract)))
+
+    def test_memorial_baal_altar_does_not_become_gideon_altar(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "shalom")
+        r["attestations"][2]["namedObject"] = "altar"
+        self.assertTrue(any("Baal altar conflated" in e for e in validate_memorial_attestations(d, self.memorial_contract)))
+
+    def test_memorial_healer_addressee_is_second_masculine_singular(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "rapha")
+        r["attestations"][0]["morphology"] = "2mp plural"
+        self.assertTrue(any("healer 2ms" in e for e in validate_memorial_attestations(d, self.memorial_contract)))
+
+    def test_memorial_sanctifier_addressee_is_second_masculine_plural(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "mekoddishkem")
+        r["attestations"][0]["morphology"] = "1cs first person"
+        self.assertTrue(any("sanctification 2mp" in e for e in validate_memorial_attestations(d, self.memorial_contract)))
+
+    def test_memorial_psalm_shepherd_does_not_inherit_hagar_seeing_root(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "ro-i")
+        r["attestations"][0]["root"] = "ראה"
+        self.assertTrue(any("seeing/shepherd roots" in e for e in validate_memorial_attestations(d, self.memorial_contract)))
+
+    def test_memorial_john_christological_speaker_not_psalmist(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "ro-i")
+        r["attestations"][1]["namingActor"] = "psalmist"
+        self.assertTrue(any("NT speaker/intertext" in e for e in validate_memorial_attestations(d, self.memorial_contract)))
+
+    def test_memorial_cannot_delete_whole_shepherd_occurrence_set(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "ro-i")
+        r["attestations"] = []
+        self.assertTrue(any("16 unique reviewed contexts" in e for e in validate_memorial_attestations(d, self.memorial_contract)))
+
+    def test_memorial_contract_locus_ids_cannot_be_swapped(self) -> None:
+        c = copy.deepcopy(self.memorial_contract)
+        c["lockedAttestations"][0]["locusId"] = c["lockedAttestations"][1]["locusId"]
+        self.assertTrue(any("duplicate contract locus" in e for e in validate_memorial_attestations(self.baseline, c)))
+
+    def test_memorial_contract_cannot_drop_source_locator_schema(self) -> None:
+        c = copy.deepcopy(self.memorial_contract)
+        c["lockedFields"].remove("sourceUrl")
+        self.assertTrue(any("contract weakened" in e for e in validate_memorial_attestations(self.baseline, c)))
+
+    def test_memorial_source_rights_are_specific_to_rahlfs_greek(self) -> None:
+        d = copy.deepcopy(self.sources)
+        r = next(x for x in d["records"] if x["id"] == "SRC-RAHLFS-EXODUS17")
+        r["rightsState"] = "PUBLICATION_ELIGIBLE"
+        self.assertTrue(any("Rahlfs Exodus17 digital LXX" in e for e in validate_source_access(d)))
+
+    def test_net_exodus_17_banner_textual_emendation_stays_conjecture(self) -> None:
+        d = copy.deepcopy(self.sources)
+        r = next(x for x in d["records"] if x["id"] == "SRC-NET-EXODUS17")
+        r["forbiddenUse"] = "Publisher fully approves literal textual proof"
+        self.assertTrue(any("textual emendation" in e for e in validate_source_access(d)))
 
 
 if __name__ == "__main__":
