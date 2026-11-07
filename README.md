@@ -4,6 +4,8 @@
 
 ## Читать сначала
 
+**Для coding-агентов:** сначала [AGENTS.md](AGENTS.md) — короткий автоматически обнаруживаемый маршрутизатор к настоящим правилам, а не второй root authority.
+
 1. [`CURRENT_AUTHORITY.md`](CURRENT_AUTHORITY.md) — стабильная точка входа в текущую межкорпусную authority.
 2. [`AGENT_RULES.md`](AGENT_RULES.md) — обязательные правила агентов.
 3. [`data/research-authority-registry-v1.json`](data/research-authority-registry-v1.json) — машинный SSOT корневой authority и её зависимостей.
