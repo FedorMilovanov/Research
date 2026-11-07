@@ -13,7 +13,7 @@
     "arenaRecords": 29,
     "extensionRecords": 13,
     "contextAttestations": 105,
-    "sourceRegisterEntries": 39,
+    "sourceRegisterEntries": 45,
     "regressionTests": 157,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
@@ -123,19 +123,24 @@
       "id": "NG-02",
       "priority": "P0",
       "title": "Нормализация evidence graph: ID утверждения → употребление → редакция → источник",
-      "status": "OPEN",
+      "status": "IN_PROGRESS",
       "dependsOn": [
         "NG-01"
       ],
       "acceptance": [
-        "Каждому доказательному утверждению присвоен claimId и тип (факт/морфология/толкование/гипотеза); все 105 употреблений имеют проверенный sourceId и editionId; 0 потерянных ссылок"
+        "Каждому доказательному утверждению присвоен claimId и тип (факт/морфология/толкование/гипотеза); все 105 употреблений имеют проверенный sourceId и editionId; 0 потерянных ссылок",
+        "Полностью типизированный граф должен иметь отдельное независимое CI и не терять 55 исторических записей без locusId; когда всё сойдётся, проверить сохраняемость ID при новой версии."
       ],
       "evidence": [
         "data/names_ledger_v1.json",
         "data/names_extension_ledger_v1.json",
-        "data/source_access_register_v1.json"
+        "data/source_access_register_v1.json",
+        "data/names_edition_registry_v1.json",
+        "data/names_claim_registry_v1.json",
+        "ИМЕНА БОГА/data/names_ledger_v1.json: 87 new attestation/edition/source identifiers",
+        "ИМЕНА БОГА/data/names_extension_ledger_v1.json: 18 new attestation/edition/source identifiers"
       ],
-      "verification": "NOT_APPLICABLE_UNTIL_DONE",
+      "verification": "105_FOREIGN_KEYS_AND_4_EDITION_REGISTRY_AND_10_CURATED_CLAIM_SEEDS_ENTERED; QA_PENDING; full claim exhaustiveness NOT complete",
       "closureAt": null,
       "owner": "Research editorial"
     },
@@ -171,7 +176,9 @@
       ],
       "evidence": [
         "02_YHWH_EHYEH_CRITICAL_DOSSIER.md",
-        "07_MEMORIAL_NAMES_DIVINE_ACTIONS_AND_SHEPHERD.md"
+        "07_MEMORIAL_NAMES_DIVINE_ACTIONS_AND_SHEPHERD.md",
+        "SRC-TMSJ-VALDIZAN-EX3-2024",
+        "13_TMSJ_2024_DIVINE_NAME_AND_TRANSLATION_SCHOLARLY_REVIEW.md"
       ],
       "verification": "NOT_APPLICABLE_UNTIL_DONE",
       "closureAt": null,
@@ -192,7 +199,10 @@
       ],
       "evidence": [
         "02_YHWH_EHYEH_CRITICAL_DOSSIER.md",
-        "12_TMS_BARRICK_CHOU_SOURCE_REVIEW.md"
+        "12_TMS_BARRICK_CHOU_SOURCE_REVIEW.md",
+        "SRC-TMSJ-VALDIZAN-EX3-2024",
+        "SRC-TMSJ-VALDIZAN-ACTS2-2024",
+        "13_TMSJ_2024_DIVINE_NAME_AND_TRANSLATION_SCHOLARLY_REVIEW.md"
       ],
       "verification": "NOT_APPLICABLE_UNTIL_DONE",
       "closureAt": null,
@@ -249,7 +259,9 @@
       ],
       "evidence": [
         "https://drbarrick.org/wp-content/uploads/2017/01/B_B_Hebrew_Grammar_2005.pdf",
-        "https://drbarrick.org/files/studynotes/Other/Heb%20Exeg%20I_Study%20Notes_YouTube.pdf"
+        "https://drbarrick.org/files/studynotes/Other/Heb%20Exeg%20I_Study%20Notes_YouTube.pdf",
+        "SRC-TMSJ-BARRICK-TRANSLATION-2024",
+        "13_TMSJ_2024_DIVINE_NAME_AND_TRANSLATION_SCHOLARLY_REVIEW.md"
       ],
       "verification": "NOT_APPLICABLE_UNTIL_DONE",
       "closureAt": null,
@@ -269,7 +281,9 @@
       "evidence": [
         "https://www.youtube.com/watch?v=0sjpFs3U6jI",
         "https://lsbible.org/faqs/",
-        "https://info.tms.edu/lsb"
+        "https://info.tms.edu/lsb",
+        "SRC-TMSJ-CHOU-TRANSLATION-2024",
+        "13_TMSJ_2024_DIVINE_NAME_AND_TRANSLATION_SCHOLARLY_REVIEW.md"
       ],
       "verification": "NOT_APPLICABLE_UNTIL_DONE",
       "closureAt": null,
@@ -288,7 +302,9 @@
       ],
       "evidence": [
         "05_PROPHETIC_NAMES_ROYAL_CITY_AND_IMMANUEL.md",
-        "04_REVELATION_GREEK_AND_DANIEL_ARAMAIC.md"
+        "04_REVELATION_GREEK_AND_DANIEL_ARAMAIC.md",
+        "SRC-TMSJ-CHOU-DANIEL-2024",
+        "13_TMSJ_2024_DIVINE_NAME_AND_TRANSLATION_SCHOLARLY_REVIEW.md"
       ],
       "verification": "NOT_APPLICABLE_UNTIL_DONE",
       "closureAt": null,
@@ -307,7 +323,9 @@
       ],
       "evidence": [
         "04_REVELATION_GREEK_AND_DANIEL_ARAMAIC.md",
-        "08_ABBA_EGO_EIMI_VOICE_AND_INTERTEXT.md"
+        "08_ABBA_EGO_EIMI_VOICE_AND_INTERTEXT.md",
+        "SRC-TMSJ-VALDIZAN-ACTS2-2024",
+        "13_TMSJ_2024_DIVINE_NAME_AND_TRANSLATION_SCHOLARLY_REVIEW.md"
       ],
       "verification": "NOT_APPLICABLE_UNTIL_DONE",
       "closureAt": null,
@@ -521,6 +539,86 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NG-01 then NG-02; in parallel acquire accessible MEDIA-TMS-JZ-01 and fully review MEDIA-CHOU-JZ-02",
-  "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations."
+  "nextAction": "NG-01 CI and workplan checks, NG-02 provenance graph integrity and source-link mutation tests; read Valdizan 2024 with original Exodus apparatus, complete Chou/Barrick audio review.",
+  "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
+  "researchPeople": [
+    {
+      "personId": "PERSON-TMS-WILLIAM-D-BARRICK",
+      "originalName": "William D. Barrick",
+      "primaryRussianName": "Уильям Беррик",
+      "searchAliases": [
+        "Уильям Баррик",
+        "Уильям Бэррик",
+        "Билл Беррик",
+        "William D. Barrick",
+        "Bill Barrick"
+      ],
+      "role": "former TMS professor of Old Testament and Hebrew",
+      "identityStatus": "OFFICIAL_SELF_IDENTIFICATION_AND_RUSSIAN_PUBLISHER_VARIANTS_CHECKED"
+    }
+  ],
+  "scholarlyQueue": [
+    {
+      "sourceId": "SRC-TMSJ-VALDIZAN-EX3-2024",
+      "priority": "P0",
+      "taskIds": [
+        "NG-04",
+        "NG-05"
+      ],
+      "printedPages": "53–74",
+      "status": "TITLE_ABSTRACT_CHECKED_FULL_READING_PENDING"
+    },
+    {
+      "sourceId": "SRC-TMSJ-VALDIZAN-ACTS2-2024",
+      "priority": "P0",
+      "taskIds": [
+        "NG-11",
+        "NG-05"
+      ],
+      "printedPages": "257–272",
+      "status": "TITLE_ABSTRACT_CHECKED_FULL_READING_PENDING"
+    },
+    {
+      "sourceId": "SRC-TMSJ-CHOU-TRANSLATION-2024",
+      "priority": "P1",
+      "taskIds": [
+        "NG-09"
+      ],
+      "printedPages": "5–26",
+      "status": "TITLE_ABSTRACT_CHECKED_FULL_READING_PENDING"
+    },
+    {
+      "sourceId": "SRC-TMSJ-BARRICK-TRANSLATION-2024",
+      "priority": "P1",
+      "taskIds": [
+        "NG-08"
+      ],
+      "printedPages": "45–52",
+      "status": "CONTENTS_CHECKED_FULL_READING_PENDING"
+    },
+    {
+      "sourceId": "SRC-TMSJ-CHOU-DANIEL-2024",
+      "priority": "P1",
+      "taskIds": [
+        "NG-10"
+      ],
+      "printedPages": null,
+      "status": "CATALOG_ONLY_EXACT_PAGINATION_PENDING"
+    }
+  ],
+  "lastWorkReport": {
+    "date": "2026-11-07",
+    "planStatus": "NG-01 IN_PROGRESS awaiting all six HEAD checks; NG-02 IN_PROGRESS proof graph",
+    "workCompleted": [
+      "Preferred Russian name Уильям Беррик with original William D. Barrick",
+      "Added authentic TMSJ 2024 published journal article metadata and permissions",
+      "Minted 105 stable attestation IDs with foreign source/edition links",
+      "Created four normalized edition records and ten curated claim seed links"
+    ],
+    "stillOpen": [
+      "Run provenance CI and negative mutation tests",
+      "Complete individual claim-level source review and 105 semantic assertions",
+      "Read all cited TMSJ articles and watch videos with original audio"
+    ]
+  }
 }
