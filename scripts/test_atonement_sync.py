@@ -283,6 +283,39 @@ class ActualSynchronizationTests(unittest.TestCase):
         self.assertEqual(matching[0]["sha256"], hashlib.sha256(p.read_bytes()).hexdigest())
         self.assertFalse(matching[0]["publicationEligible"])
 
+    def test_article02_semantic_review_keeps_eight_counterreadings_and_text_boundaries(self):
+        article_path = ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md"
+        memo_path = ROOT / "ИСКУПЛЕНИЕ/evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md"
+        article = article_path.read_text(encoding="utf-8")
+        memo = memo_path.read_text(encoding="utf-8")
+        for i in (1, 3, 6, 9, 13, 16, 17, 20):
+            with self.subTest(claim=i):
+                self.assertEqual(memo.count("### F02-%02d —" % i), 1)
+        self.assertEqual(memo.count("**Сильнейшее возражение:**"), 8)
+        self.assertEqual(memo.count("**Итог:**"), 8)
+        self.assertIn("../../evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md", article)
+        for marker in (
+            "Исх. 13:13–15", "Числ. 3", "Евр. 9:19",
+            "σχεδόν", "χωρὶς αἱματεκχυσίας", "не содержит слова «почти»",
+            "τῷ ἀποπομπαίῳ", "εἰς τὴν ἀποπομπήν",
+            "τὸν διεσταλμένον εἰς ἄφεσιν", "θαυμάσονται",
+            "τοῖς αὐτὸν ἀπεκδεχομένοις", "не** две «предложные группы»",
+            "01_what-is-atonement.md", "02_why-the-cross-necessity.md",
+        ):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, article if marker != "не** две «предложные группы»" else memo)
+        for source in (
+            "../ot/06_PESAH_EXOD12.md",
+            "../ot/02_GAL_PADAH_PIDYON.md",
+            "../ot/08_LEV16_KAPPORET_AZAZEL.md",
+            "../nt/08_NT_PERICOPE_CARDS_HEBREWS_CATHOLICS_APOCALYPSE.md",
+        ):
+            with self.subTest(source=source):
+                self.assertTrue((memo_path.parent / source).resolve().is_file())
+        self.assertIn("не внешнее рецензирование", memo)
+        self.assertIn("PUBLICATION_HOLD", memo)
+        self.assertIn("publicationEligible=false", memo)
+
     def test_article11_named_judas_primary_witnesses_and_hebrews_hold(self):
         text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article11_bought_apostates_covenant_blood_and_weak_brother.md").read_text(encoding="utf-8")
         cards = (ROOT / "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md").read_text(encoding="utf-8")
