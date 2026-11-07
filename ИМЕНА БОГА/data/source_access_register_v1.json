@@ -686,16 +686,16 @@
     },
     {
       "id": "SRC-CAMBRIDGE-GOD-PRONOUNS",
-      "title": "God's pronouns, Scottish Journal of Theology (Cambridge)",
-      "creator": "Scottish Journal of Theology author — bibliographic author name not edition-pinned in this audit",
+      "title": "God's pronouns",
+      "creator": "Nicholas Adams",
       "year": 2024,
-      "url": "https://www.cambridge.org/core/journals/scottish-journal-of-theology/article/gods-pronouns/9DE1514A0851A0024E32FE3EBC71B062",
+      "url": "https://doi.org/10.1017/S0036930624000322",
       "objectType": "scholarly_theological_article_discussing_Hebrew_grammar",
       "sourceRole": "ATTRIBUTED_SECONDARY_GRAMMAR_AND_THEOLOGY",
       "accessState": "PARTIAL_OBJECT",
       "locatorState": "EXACT_LOCATOR_VERIFIED",
-      "rightsState": "PERMISSION_REQUIRED",
-      "sourceObjectState": "Cambridge article online section about Elohim plural noun and bara singular verb read; academic full pagination and original reference bibliographical metadata not independently pinned.",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "sourceObjectState": "Full Cambridge HTML article available; relevant passage on Elohim morphological plural with bara singular read, abstract and publisher bibliographical metadata and CC BY permission verified. Whole article not reviewed claim by claim.",
       "supportedUse": "Secondary corroboration of morphologically plural Elohim in Gen1:1 agreeing with singular bara; theological interpretation treated separately.",
       "forbiddenUse": "Represent commentary on pronouns as a linguistic-critical MT apparatus or as direct proof/disproof of Trinity.",
       "evidenceClass": "B1",
@@ -705,16 +705,19 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD",
         "EVIDENCE_HOLD"
-      ]
+      ],
+      "alternateUrl": "https://www.cambridge.org/core/journals/scottish-journal-of-theology/article/gods-pronouns/9DE1514A0851A0024E32FE3EBC71B062",
+      "citation": "Nicholas Adams, 'God's pronouns', Scottish Journal of Theology 77(4), November 2024, 313–328, first online May 23, 2024",
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0), © author 2024 Cambridge University Press, applies to this article; proper attribution required",
+      "licenseScope": "CAMBRIDGE_ARTICLE_ONLY_NOT_BIBLICAL_TRANSLATIONS"
     }
   ],
   "auditRevision": {
     "date": "2026-11-07",
-    "newSources": [
-      "SRC-SBLGNT-NT-SABAOTH",
-      "SRC-SUCHARD-ELOHIM-2025",
+    "newSources": [],
+    "correctedSources": [
       "SRC-CAMBRIDGE-GOD-PRONOUNS"
     ],
-    "rationale": "Distinguish exact NT Greek transliteration witnesses from editor's CC BY license; modern Semitic reconstruction and theology are attributed B1, not critical MT."
+    "rationale": "Publisher metadata confirms Nicholas Adams, 2024, DOI, CC BY 4.0; text-specific, not permission for Bible translations."
   }
 }
