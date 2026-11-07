@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 179,
+  "sourceCount": 184,
   "sources": [
     {
       "id": "REF-P01",
@@ -3482,6 +3482,100 @@
       ],
       "url": "https://www.rps.ac.uk/static/rae/historicalintro6.html",
       "verificationNote": "2026-11-07: academic RPS historical section Reformation 1560-1603 and editorial intro directly read. Scottish parliamentary Protestant confession 1560 without Crown sanction, re-enacted December 1567; changes in royal/estate balance. Institutional research narrative, not full 1560 original manuscript. Distinguish RPS 1567 translation's skipped heading 13 from standard 25-chapter text.",
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "id": "REF-S86",
+      "documentYear": 1571,
+      "title": "Hubert Bost (EPHE), France Mémoire, Ratification de la Confession de foi de La Rochelle: 2 and 12 April 1571",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.france-memoire.fr/confession-de-foi-de-la-rochelle/",
+      "verificationNote": "2026-11-07: historian Hubert Bost's direct institutional article read. Formal national synod adoption 2 April 1571, 32 witnesses' parchment attestation 12 April, original parchment still said to be preserved Geneva; sketches 35 articles from Geneva but 40 articles edited by French pastors and ratified 1571. Original parchment not independently viewed, so B1 not A1, no quote-safe reproduction.",
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "id": "REF-S87",
+      "documentYear": 1562,
+      "title": "Musée protestant historical overview, January Edict 17 Jan and Wassy massacre 1 Mar 1562",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://museeprotestant.org/notice/le-massacre-de-wassy-1562/",
+      "verificationNote": "2026-11-07: confessional museum overview read. January edict 17 Jan 1562 provisionally permits Protestant worship outside city walls; Wassy 1 Mar 1562 deaths and injury; museum notes barn likely inside walls and competing Catholic narrative cites Condé taking Orléans on 2 Apr as wars' beginning. Not independent victims register, not original Guise orders or firsthand proof of premeditation. Louvre Tortorel/Perrissin later print used as visual memory only, not contemporary photograph.",
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "id": "REF-S88",
+      "documentYear": 1572,
+      "title": "Musée protestant historical overview, Saint Bartholomew massacre 24 Aug 1572 and subsequent province episodes",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://museeprotestant.org/notice/la-saint-barthelemy-24-aout-1572/",
+      "verificationNote": "2026-11-07: museum overview directly read, 1570 peace, Henri de Navarre/Marguerite marriage 18 Aug, Coligny wounded 22 Aug, killings night 23–24 Aug, spreading to provinces into Sept. Museum numbers casualties but neither local court/manorial registers nor independent demography examined; precise totals deliberately not adopted. Individual court intentions and royal orders require archival tests, no fabricated quotes.",
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "id": "REF-S89",
+      "documentYear": 1598,
+      "title": "Musée protestant, Edict of Nantes 1598 legal package and conditions of limited worship",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://museeprotestant.org/notice/ledit-de-nantes/",
+      "verificationNote": "2026-11-07: institutional secondary overview directly read: 92 general articles, 56 particular articles, two distinct brevets on financial support and cities of safety; religious conscience protected, Protestant public worship geographically restricted incl Paris/five leagues, Catholic mass restored; adoption 1598 distinct Paris printed 1599. Reported local registration delays do not prove each community complied. Particular articles/brevets originals not collated.",
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "id": "REF-S90",
+      "documentYear": 2023,
+      "title": "Musée de l'Armée, exhibition La Haine des clans: Guerres de Religion 1559–1610 (2023), institutional synthesis",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.musee-armee.fr/au-programme/expositions/detail/la-haine-des-clans-guerres-de-religion-1559-1610.html",
+      "verificationNote": "2026-11-07: Musée de l'Armée exhibition institution article directly read; political factional/royal diplomacy, Wassy and Saint-Bartholomew, iconoclasm and violence by different groups, print propaganda. Distinct from Musée protestant secondary synthesis. The historic exhibition sources and all catalog artifacts not comprehensively collated; museum image reuse permissions unknown. 2023 exposition, not 16th-century primary witness.",
       "checkedAt": "2026-11-07"
     }
   ]
