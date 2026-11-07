@@ -17,7 +17,7 @@ class EverydayLifeBookTests(unittest.TestCase):
                      "печат","школ","бедн","миграц","монахин","Варшав",
                      "RESEARCH_MANUSCRIPT_DRAFT","NOT_EDITORIAL_READY","PUBLICATION_HOLD"):
             with self.subTest(part=part):self.assertIn(part.lower(),text.lower())
-        self.assertIn("не написанный",text.lower()) if False else None
+        self.assertIn("книжный эпилог",text.lower())
 
     def test_source_states_are_honest_and_originals_not_misdeclared(self):
         r=json.loads((D/"source-registry-v1.json").read_text(encoding="utf-8"))
