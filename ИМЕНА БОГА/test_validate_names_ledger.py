@@ -6,7 +6,7 @@ import json
 import unittest
 from pathlib import Path
 
-from validate_names_ledger import validate, validate_extension, validate_source_access, validate_apocalyptic
+from validate_names_ledger import validate, validate_extension, validate_source_access, validate_apocalyptic, validate_prophetic_namings
 
 ROOT = Path(__file__).resolve().parent
 
@@ -23,6 +23,7 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertEqual([], validate_extension(self.extension, self.baseline))
         self.assertEqual([], validate_source_access(self.sources))
         self.assertEqual([], validate_apocalyptic(self.baseline, self.extension))
+        self.assertEqual([], validate_prophetic_namings(self.baseline))
 
     def test_altar_cannot_be_promoted_to_personal_name(self) -> None:
         data = copy.deepcopy(self.baseline)
@@ -289,6 +290,90 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         row["lexicalNote"]["parsingEvidence"]["evidenceClass"] = "A1"
         self.assertTrue(any("erroneously promoted" in issue
                             for issue in validate_apocalyptic(data, self.extension)))
+
+
+    def test_isaiah_9_5_cannot_be_renumbered_as_mt_9_6(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(r for r in data["records"] if r["id"] == "el-gibbor")
+        row["attestations"][0]["numbering"]["hebrew"] = "Isaiah 9:6"
+        self.assertTrue(any("numbering systems" in issue for issue in validate_prophetic_namings(data)))
+
+    def test_isaiah_10_21_lexical_el_prefix_cannot_be_removed(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(r for r in data["records"] if r["id"] == "el-gibbor")
+        row["attestations"][1]["surface"] = "אֵל גִּבּוֹר"
+        self.assertTrue(any("Isaiah 10:21" in issue for issue in validate_prophetic_namings(data)))
+
+    def test_isaiah_9_greek_expansion_cannot_be_silently_ascribed_to_rahlfs(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(r for r in data["records"] if r["id"] == "el-gibbor")
+        row["printedGreekWitnesses"][0]["longListTheosIschyros"] = True
+        self.assertTrue(any("Rahlfs-Hanhart short name" in issue for issue in validate_prophetic_namings(data)))
+
+    def test_greek_orthodox_expanded_text_requires_edition_provenance(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(r for r in data["records"] if r["id"] == "el-gibbor")
+        row["printedGreekWitnesses"][1]["claimScope"] = "ORIGINAL_LXX_MANUSCRIPT_VERIFIED"
+        self.assertTrue(any("Greek digital variants falsely promoted" in issue for issue in validate_prophetic_namings(data)))
+
+    def test_jeremiah_33_16_jerusalem_feminine_not_royal_masculine(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(r for r in data["records"] if r["id"] == "tsidkenu")
+        r33 = next(x for x in row["attestations"] if x["verse"] == "Jeremiah 33:16")
+        r33["nameDelimiter"] = "וְזֶה-שְּׁמוֹ"
+        self.assertTrue(any("feminine city cue" in issue for issue in validate_prophetic_namings(data)))
+
+    def test_jeremiah_old_greek_absence_cannot_be_replaced_with_fake_greek(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(r for r in data["records"] if r["id"] == "tsidkenu")
+        r33 = next(x for x in row["attestations"] if x["verse"] == "Jeremiah 33:16")
+        r33["oldGreekPassageStatus"] = "LXX_JEREMIAH_33_16_VERIFIED"
+        self.assertTrue(any("Old Greek absence" in issue for issue in validate_prophetic_namings(data)))
+
+    def test_ezekiel_48_35_city_cannot_be_named_personal_yhwh(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(r for r in data["records"] if r["id"] == "shammah")
+        row["attestations"][0]["namedObject"] = "God"
+        self.assertTrue(any("Ezekiel 48:35" in issue for issue in validate_prophetic_namings(data)))
+
+    def test_lxx_isaiah_7_naming_verb_is_not_matthew_plural(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(r for r in data["records"] if r["id"] == "immanuel")
+        rx = next(x for x in row["attestations"] if x["verse"] == "Isaiah 7:14 LXX Rahlfs-Hanhart")
+        rx["nameDelimiter"] = "καλέσουσιν τὸ ὄνομα αὐτοῦ"
+        self.assertTrue(any("LXX Isaiah 7:14 singular" in issue for issue in validate_prophetic_namings(data)))
+
+    def test_matthew_1_23_name_verb_cannot_be_hebrew_singular(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(r for r in data["records"] if r["id"] == "immanuel")
+        rx = next(x for x in row["attestations"] if x["verse"] == "Matthew 1:23")
+        rx["namingVerbForm"] = "καλέσεις 2nd singular"
+        self.assertTrue(any("Matthew 1:23 plural" in issue for issue in validate_prophetic_namings(data)))
+
+    def test_isaiah_8_10_is_assurance_not_child_naming(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(r for r in data["records"] if r["id"] == "immanuel")
+        rx = next(x for x in row["attestations"] if x["verse"] == "Isaiah 8:10")
+        rx["receptionLayer"] = "NEW_PERSONAL_NAME"
+        self.assertTrue(any("Isaiah 8:10 assurance" in issue for issue in validate_prophetic_namings(data)))
+
+    def test_rahlfs_publisher_edition_cannot_become_public_domain(self) -> None:
+        data = copy.deepcopy(self.sources)
+        row = next(r for r in data["records"] if r["id"] == "SRC-RAHLFS-ISAIAH")
+        row["rightsState"] = "PUBLICATION_ELIGIBLE"
+        self.assertTrue(any("Rahlfs-Hanhart edited digital text" in issue for issue in validate_source_access(data)))
+
+    def test_leuchter_abstract_cannot_become_verified_old_greek_codex(self) -> None:
+        data = copy.deepcopy(self.sources)
+        row = next(r for r in data["records"] if r["id"] == "SRC-LEUCHTER-JER33")
+        row["accessState"] = "FULL_OBJECT_VERIFIED"
+        self.assertTrue(any("Leuchter abstract" in issue for issue in validate_source_access(data)))
+
+    def test_prophetic_empty_witnesses_are_rejected_without_exceptions(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(r for r in data["records"] if r["id"] == "immanuel")
+        row["attestations"] = []
+        self.assertTrue(any("prophetic immanuel" in issue for issue in validate_prophetic_namings(data)))
 
 
 if __name__ == "__main__":
