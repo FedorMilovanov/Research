@@ -156,12 +156,60 @@ class CrossReferenceTests(unittest.TestCase):
                 status = crossref_main(["--drafts", str(drafts), "--check"])
             self.assertEqual(status, 0)
 
+    def test_section_inside_second_markdown_link_belongs_to_second_target(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            drafts = root / "drafts"
+            drafts.mkdir()
+            (root / "01_hard.md").write_text("## 3. H3 context\n", encoding="utf-8")
+            (root / "02_nt.md").write_text("## 08.20 Correct NT section\n", encoding="utf-8")
+            (drafts / "01_draft.md").write_text(
+                "[H3](../01_hard.md), [NT 08 §08.20](../02_nt.md)\n",
+                encoding="utf-8",
+            )
+            with redirect_stdout(io.StringIO()):
+                status = crossref_main(["--drafts", str(drafts), "--check"])
+            self.assertEqual(status, 0)
+
+    def test_wrong_section_inside_second_link_cannot_borrow_first_target(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            drafts = root / "drafts"
+            drafts.mkdir()
+            (root / "01_hard.md").write_text("## 08.20 Only in first\n", encoding="utf-8")
+            (root / "02_nt.md").write_text("## 08.19 Not the cited section\n", encoding="utf-8")
+            (drafts / "01_draft.md").write_text(
+                "[H3](../01_hard.md), [NT 08 §08.20](../02_nt.md)\n",
+                encoding="utf-8",
+            )
+            output = io.StringIO()
+            with redirect_stdout(output):
+                status = crossref_main(["--drafts", str(drafts), "--check"])
+            self.assertEqual(status, 1)
+            self.assertIn("SECTION_NOT_FOUND", output.getvalue())
+            self.assertIn("02_nt.md", output.getvalue())
+
+    def test_real_research_draft_sections_resolve(self):
+        output = io.StringIO()
+        with redirect_stdout(output):
+            status = crossref_main(["--check"])
+        self.assertEqual(status, 0, output.getvalue())
+
 
 class ActualSynchronizationTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.report = json.loads((ROOT / REPORT).read_text(encoding="utf-8"))
         cls.control = json.loads((ROOT / CONTROL).read_text(encoding="utf-8"))
+
+    def test_colossians_1_22_both_edition_readings_are_named(self):
+        card = (ROOT / "ИСКУПЛЕНИЕ/nt/07_NT_PERICOPE_CARDS_ACTS_AND_PAUL.md").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("ἀποκατηλλάγητε", card)
+        self.assertIn("ἀποκατήλλαξεν", card)
+        self.assertIn("SBLGNT", card)
+        self.assertIn("NA28", card)
 
     def test_current_corpus_and_coverage(self):
         errors, summary = check(ROOT, self.report, self.control)
@@ -179,12 +227,13 @@ class ActualSynchronizationTests(unittest.TestCase):
                 "ИСКУПЛЕНИЕ/synthesis/drafts/article09_world_and_propitiation_johannine_case.md",
                 "ИСКУПЛЕНИЕ/synthesis/drafts/article10_ransom_for_all_two_adams_paul_hebrews.md",
                 "ИСКУПЛЕНИЕ/synthesis/drafts/article11_bought_apostates_covenant_blood_and_weak_brother.md",
+                "ИСКУПЛЕНИЕ/synthesis/drafts/article12_cosmic_reconciliation_heaven_earth_new_creation.md",
             },
         )
 
     def test_post_review_draft_manifest_fails_closed(self):
         additions = self.report.get("postReviewDrafts", [])
-        self.assertEqual(len(additions), 4)
+        self.assertEqual(len(additions), 5)
         cases = [
             (f"missing-declaration-{i}", additions[:i] + additions[i + 1 :])
             for i in range(len(additions))
