@@ -20,20 +20,22 @@
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 16,
-    "provenanceRegressionTests": 58,
+    "provenanceRegressionTests": 67,
     "canonicalEditions": 4,
-    "curatedClaims": 18,
+    "curatedClaims": 21,
     "allAttestationForeignKeys": 105,
     "editionSpecificGreekUrlsVerified": 4,
     "unselectedGreekEditionUrls": 0,
-    "attestationsReferencedByClaims": 23,
-    "attestationsWithoutClaimReference": 82,
-    "typedClaimRelations": 9,
+    "attestationsReferencedByClaims": 28,
+    "attestationsWithoutClaimReference": 77,
+    "typedClaimRelations": 11,
     "correctedExodusDivineReferentRows": 3,
     "semanticScopeAudits": 15,
     "independentScholarlyClaimApprovals": 0,
     "propheticRoyalCityClaims": 3,
-    "registeredPeerReviewedSelectedPageSources": 1
+    "registeredPeerReviewedSelectedPageSources": 1,
+    "rockReferentAttestations": 5,
+    "rockPronounVerse30AwaitingDiscourseReview": true
   },
   "allowedStatuses": [
     "DONE",
@@ -176,9 +178,13 @@
         "source_access_register_v1.json: Liebermann 2023 Vetus Testamentum 73/1 62-81, first online 2022, accepted manuscript p8 partially examined",
         "names_claim_registry_v1.json: 3 royal/city claimIds and 2 typed semantic relations, all Research HOLD",
         "test_validate_names_provenance.py: anti-conflation, missing-claim and direct Hebrew source guards",
-        "test_validate_names_ledger.py: independent academic source rights, dates and critical-collation adversarial guards"
+        "test_validate_names_ledger.py: independent academic source rights, dates and critical-collation adversarial guards",
+        "17_TSUR_ROCK_REFERENTS_AND_PRONOUN_BOUNDARY_20261107.md: MT context for Deut32:4,18,30,31,37 and Ps18:32; separate divine, mixed and foreign Rock referents",
+        "data/names_claim_registry_v1.json: 3 Rock claim seeds and 2 semantic boundaries, all Research HOLD",
+        "validate_names_provenance.py: 5 per-attestation Rock referent controls, fail closed even with duplicated corrupted contract",
+        "test_validate_names_provenance.py: 9 Rock-context adversarial regressions, retaining 32:30 pronoun caution"
       ],
-      "verification": "105_STABLE_ATTESTATION_EDITION_SOURCE_LINKS; 46_REGISTERED_SOURCES; 18_PROVISIONAL_CLAIMS_9_RELATIONS; 23_OF_105_CLAIM_LINKED; 82_WITHOUT_CLAIM; 3_PROPHECY_NAMED_OBJECTS_WITH_PRIMARY_MT_AND_PARTIAL_SECONDARY_SCHOLARSHIP; 236_TESTS_LOCAL_PASS_EXACT_SHA_CI_PENDING; EXACT_SHA_CI_PENDING; SCIENTIFIC_AND_PRODUCT_APPROVAL_0",
+      "verification": "105_STABLE_ATTESTATION_EDITION_SOURCE_LINKS; 46_REGISTERED_SOURCES; 21_PROVISIONAL_CLAIMS_11_SEMANTIC_RELATIONS; 28_OF_105_CLAIM_LINKED; 77_WITHOUT_CLAIM; 5_TSUR_REF_CLASSES_GUARDED_AND_DEUT32_30_PRONOUN_HOLD; 245_TESTS_LOCAL_PASS; EXACT_SHA_CI_PENDING; CRITICAL_COLLATIONS_0; PUBLICATION_APPROVAL_0",
       "closureAt": null,
       "owner": "Research editorial"
     },
@@ -577,7 +583,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NG-02: next highest-risk semantic controls on 82 unlinked attestations: Rock in Deuteronomy 32:31/37, Immanuel Isaiah 7/8, and Revelation 22 speaker shifts; independent critical editions and peer reviewed disputes before declaring the semantic graph complete. Keep scholarly source rights and exact SHA CI.",
+  "nextAction": "NG-02: next finite wave is Immanuel Isaiah 7:14, Isaiah 8:8/10, Matthew 1:23 Hebrew/Greek intertext and named-object/speaker boundaries; then Revelation 22 speaker shift. Before scientific release independently collate critical apparatus and textual counterarguments. Do not substitute claim-link counts for philological editorial signoff.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -659,7 +665,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-07",
-    "planStatus": "NG-01 DONE; NG-02 IN_PROGRESS: 18 provisional claims, 9 relations, 46 sources",
+    "planStatus": "NG-01 DONE; NG-02 IN_PROGRESS: 21 provisional claims, 11 semantic relations, Rock 5 contextual uses guarded",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -682,13 +688,18 @@
       "Verified three MT prophetic naming referents: king Jer23:6, Jerusalem Jer33:16, city Ezek48:35",
       "Registered Liebermann's peer-reviewed Vetus Testamentum article with 2023 volume / 2022 online dates and selected manuscript page 8 access state",
       "Added 3 provisional named object claims and 2 required semantic boundaries; 23 distinct attestation IDs now referenced",
-      "Expanded negative controls for Hebrew source attribution, peer-reviewed manuscript HOLD, bibliographic years and rights"
+      "Expanded negative controls for Hebrew source attribution, peer-reviewed manuscript HOLD, bibliographic years and rights",
+      "NG-02 Rock: 5 attestation referent classes independently guarded: 3 divine, 1 mixed, 1 negative",
+      "Separated Deut32:31 our Rock / their rock from Deut32:37 idol refuge, with Deut32:30 pronoun caveat",
+      "Registered three provisional Rock claims and two semantic relations; 28/105 original observations now linked",
+      "Added nine Rock mutation tests; 245 local tests pass (162 corpus, 16 plan, 67 provenance)"
     ],
     "stillOpen": [
-      "NG-02: 82/105 attestation IDs without any claim reference and all 18 claims pending independent scholarly review",
-      "Independent collations of Old Greek Jeremiah and other critical apparatus not performed; Liebermann only selected page checked",
-      "Exact SHA GitHub workflow verification required for 236 tests and source inventory extension",
-      "Audio/video Zhakevich, Barrick, Chou and remaining scholarly articles still in research queue"
+      "NG-02: 77 distinct original attestation IDs without a provisional claim reference",
+      "Deut32:30–31 speaker/antecedent and historical textual alternatives remain pending independent research",
+      "Immanuel Isaiah 7/8 and Matthew 1 Greek/Hebrew intertext and Revelation 22 remain priority risk controls",
+      "All 21 claims still RESEARCH_HOLD, 0 collated textual apparatus, 0 Product approvals",
+      "Latest exact GitHub SHA and all required CI workflow checks pending verification"
     ]
   },
   "originalResearchCheckpoint": {
@@ -705,19 +716,21 @@
       "sourceForeignKeys": 105,
       "editionForeignKeys": 105,
       "canonicalEditions": 4,
-      "curatedClaims": 18,
+      "curatedClaims": 21,
       "locusIdMissingHistorically": 55,
       "editionSelectionRecheckHolds": 0,
-      "notes": "Three royal/city naming loci source-linked to distinct research-held claims. Liebermann 2023 source accepted manuscript p8 only, not critical manuscript collation; 82 observations remain without a claim reference; all approvals blocked.",
-      "typedClaimRelations": 9,
+      "notes": "Five Rock observations are type-guarded in three HOLD claims, with distinction between YHWH, mixed comparative, and polemic against false refuge. Deut32:30 pronoun remains independent editorial question; 77 observations still unlinked. No manuscript or Product signoff.",
+      "typedClaimRelations": 11,
       "editionSpecificDigitalVerseRechecksCompleted": 4,
-      "attestationsLinkedToClaims": 23,
-      "attestationsWithoutClaimReferences": 82,
+      "attestationsLinkedToClaims": 28,
+      "attestationsWithoutClaimReferences": 77,
       "divineReferentAddresseeControls": 3,
       "semanticScopeAudits": 15,
       "scholarlyClaimApprovals": 0,
       "propheticRoyalCityClaims": 3,
-      "sourceRegisterEntries": 46
+      "sourceRegisterEntries": 46,
+      "rockReferentAttestations": 5,
+      "rockPronounVerse30AwaitingDiscourseReview": true
     }
   }
 }

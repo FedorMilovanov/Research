@@ -384,5 +384,65 @@ class ProvenanceGraphTests(unittest.TestCase):
 
 
 
+    def test_rock_three_claims_cover_five_distinct_loci(self) -> None:
+        exact = {
+            "CLM-DEUT32-ROCK-DIVINE-METAPHOR": {
+                "ATT-BASE-TSUR-01", "ATT-BASE-TSUR-02", "ATT-BASE-TSUR-05"
+            },
+            "CLM-DEUT32-31-ROCK-CONTRAST": {"ATT-BASE-TSUR-03"},
+            "CLM-DEUT32-37-FOREIGN-REFUGE": {"ATT-BASE-TSUR-04"},
+        }
+        for cid, wanted in exact.items():
+            item = next(x for x in self.claims["records"] if x["claimId"] == cid)
+            self.assertEqual(wanted, set(item["attestationIds"]))
+            self.assertEqual("RESEARCH_HOLD", item["editorialState"])
+            self.assertEqual("BLOCKED", item["publicationState"])
+
+    def test_rock_divine_context_does_not_become_foreign(self) -> None:
+        d,obs = self.mutate("tsur","baseline",0)
+        obs["referentClass"] = "FALSE_OBJECT_OF_REFUGE"
+        self.assertTrue(any("Rock referent/isDivineDesignation conflated" in e for e in self.check(baseline=d)))
+
+    def test_rock_mixed_context_does_not_become_all_divine(self) -> None:
+        d,obs = self.mutate("tsur","baseline",2)
+        obs["referentClass"] = "TRUE_GOD"
+        obs["isDivineDesignation"] = True
+        self.assertTrue(any("Rock referent/isDivineDesignation conflated" in e for e in self.check(baseline=d)))
+
+    def test_rock_foreign_context_does_not_become_yhwh(self) -> None:
+        d,obs = self.mutate("tsur","baseline",3)
+        obs["referentClass"] = "TRUE_GOD"
+        obs["isDivineDesignation"] = True
+        self.assertTrue(any("Rock referent/isDivineDesignation conflated" in e for e in self.check(baseline=d)))
+
+    def test_rock_is_divine_designation_cannot_be_inferred_for_mixed(self) -> None:
+        d,obs = self.mutate("tsur","baseline",2)
+        obs["isDivineDesignation"] = False
+        self.assertTrue(any("Rock referent/isDivineDesignation conflated" in e for e in self.check(baseline=d)))
+
+    def test_rock_claim_cannot_swap_a_mixed_locus_for_positive_one(self) -> None:
+        d = copy.deepcopy(self.claims)
+        item = next(x for x in d["records"] if x["claimId"] == "CLM-DEUT32-31-ROCK-CONTRAST")
+        item["attestationIds"] = ["ATT-BASE-TSUR-01"]
+        self.assertTrue(any("lost its independently reviewed text witnesses" in e for e in self.check(claims=d)))
+
+    def test_rock_required_claim_cannot_be_deleted(self) -> None:
+        d = copy.deepcopy(self.claims)
+        d["records"] = [x for x in d["records"] if x["claimId"] != "CLM-DEUT32-37-FOREIGN-REFUGE"]
+        self.assertTrue(any("required Rock contrast claim boundary missing" in e for e in self.check(claims=d)))
+
+    def test_rock_relation_cannot_collapse_mixed_and_foreign(self) -> None:
+        d = copy.deepcopy(self.claims)
+        item = next(x for x in d["semanticRelations"] if x["relationId"] == "REL-TSUR-MIXED-AND-FOREIGN")
+        item["toClaimId"] = "CLM-DEUT32-ROCK-DIVINE-METAPHOR"
+        self.assertTrue(any("required semantic boundary" in e for e in self.check(claims=d)))
+
+    def test_deut_32_30_pronoun_warning_cannot_be_lost(self) -> None:
+        d = copy.deepcopy(self.claims)
+        item = next(x for x in d["records"] if x["claimId"] == "CLM-DEUT32-31-ROCK-CONTRAST")
+        item["statement"] = item["statement"].replace("32:30", "32:31")
+        self.assertTrue(any("32:30 pronoun antecedent caution lost" in e for e in self.check(claims=d)))
+
+
 if __name__ == "__main__":
     unittest.main()

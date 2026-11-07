@@ -111,6 +111,21 @@ REQUIRED_PROPHETIC_NAMING_CLAIMS = {
     "CLM-JER33-16-JERUSALEM-CITY-NAME",
     "CLM-EZ48-35-CITY-NAMING",
 }
+REQUIRED_ROCK_CLAIMS = {
+    "CLM-DEUT32-ROCK-DIVINE-METAPHOR",
+    "CLM-DEUT32-31-ROCK-CONTRAST",
+    "CLM-DEUT32-37-FOREIGN-REFUGE",
+}
+# The first group may contain YHWH, the second contains TWO different
+# referents, and the third is a polemic against foreign gods. Never certify
+# a duplicated but semantically corrupted primary/contract reading.
+ROCK_REFERENT_CONTROLS = {
+    "ATT-BASE-TSUR-01": ("TRUE_GOD", True),
+    "ATT-BASE-TSUR-02": ("TRUE_GOD", True),
+    "ATT-BASE-TSUR-03": ("MIXED_TRUE_GOD_AND_OTHER_ROCK", None),
+    "ATT-BASE-TSUR-04": ("FALSE_OBJECT_OF_REFUGE", False),
+    "ATT-BASE-TSUR-05": ("TRUE_GOD", True),
+}
 # The original reviewed seeds are a required minimum, not a cap on future work.
 # Additional claims must pass the same foreign-key, editorial and publication gates.
 ALLOWED_CLAIM_TYPES = {
@@ -126,6 +141,7 @@ ALLOWED_CLAIM_TYPES = {
     "ATTRIBUTED_HISTORICAL_RECONSTRUCTION",
     "MORPHOLOGICAL_CASE_CONTEXT",
     "CITATION_SPEECH_CONTEXT",
+    "MIXED_REFERENT_CONTROL",
 }
 ALLOWED_INTERPRETIVE_SCOPES = {
     "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
@@ -179,6 +195,14 @@ REQUIRED_SEMANTIC_RELATIONS = {
         "CLM-EZ48-35-CITY-NAMING",
         "LIMITS_INFERENCE"
     ),
+    "REL-TSUR-DIVINE-AND-MIXED": (
+        "CLM-DEUT32-ROCK-DIVINE-METAPHOR", "CLM-DEUT32-31-ROCK-CONTRAST",
+        "CONTRASTS_REFERENT"
+    ),
+    "REL-TSUR-MIXED-AND-FOREIGN": (
+        "CLM-DEUT32-31-ROCK-CONTRAST", "CLM-DEUT32-37-FOREIGN-REFUGE",
+        "LIMITS_INFERENCE"
+    ),
 }
 CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-EX3-15-DIVINE-NAME": {"ATT-BASE-YHWH-01"},
@@ -201,6 +225,11 @@ CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-JER23-6-DAVIDIC-ROYAL-NAME": {"ATT-BASE-TSIDKENU-01"},
     "CLM-JER33-16-JERUSALEM-CITY-NAME": {"ATT-BASE-TSIDKENU-02"},
     "CLM-EZ48-35-CITY-NAMING": {"ATT-BASE-SHAMMAH-01"},
+    "CLM-DEUT32-ROCK-DIVINE-METAPHOR": {
+        "ATT-BASE-TSUR-01", "ATT-BASE-TSUR-02", "ATT-BASE-TSUR-05"
+    },
+    "CLM-DEUT32-31-ROCK-CONTRAST": {"ATT-BASE-TSUR-03"},
+    "CLM-DEUT32-37-FOREIGN-REFUGE": {"ATT-BASE-TSUR-04"},
 }
 
 
@@ -271,6 +300,11 @@ def validate_provenance(
                     continue
                 seen.add(aid)
                 att_by_id[aid] = obs
+                if aid in ROCK_REFERENT_CONTROLS:
+                    expected_ref, expected_divine = ROCK_REFERENT_CONTROLS[aid]
+                    if (obs.get("referentClass") != expected_ref
+                        or obs.get("isDivineDesignation") is not expected_divine):
+                        errors.append(f"provenance: {aid} Rock referent/isDivineDesignation conflated")
                 if aid in REQUIRED_EHYEH_IDS:
                     if obs.get("referent") != "God of Israel, the divine first-person speaker":
                         errors.append(f"provenance: {aid} divine self-reference wrongly attributed to addressee")
@@ -355,6 +389,11 @@ def validate_provenance(
         errors.append("provenance: Exodus 3 divine referent claim missing")
     if not REQUIRED_PROPHETIC_NAMING_CLAIMS.issubset(claim_map):
         errors.append("provenance: required prophetic royal/city claim boundary missing")
+    if not REQUIRED_ROCK_CLAIMS.issubset(claim_map):
+        errors.append("provenance: required Rock contrast claim boundary missing")
+    rock_statement = claim_map.get("CLM-DEUT32-31-ROCK-CONTRAST", {}).get("statement","")
+    if not isinstance(rock_statement, str) or "32:30" not in rock_statement:
+        errors.append("provenance: Deuteronomy 32:30 pronoun antecedent caution lost")
     for cid, claim in claim_map.items():
         if not isinstance(claim, dict):
             errors.append(f"provenance: malformed claim {cid}")
@@ -450,8 +489,8 @@ def main() -> int:
         for p in problems:
             print("FAIL: " + p, file=sys.stderr)
         return 1
-    print("PASS: 105 attestation IDs linked to 4 editions; 18 provisional claim seeds, "
-          "9 typed relations, 3 Exodus speech and 3 prophetic royal/city name boundaries HOLD-guarded")
+    print("PASS: 105 attestation IDs linked to 4 editions; 21 provisional claims, "
+          "11 typed relations, 5 Rock referent controls and all publication HOLD gates")
     return 0
 
 

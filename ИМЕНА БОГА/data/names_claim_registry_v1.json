@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "corpusId": "NAMES_OF_GOD_CLAIM_LEVEL_EVIDENCE",
   "createdAt": "2026-11-07",
-  "scope": "18 preliminary research-only claims and nine semantic relations. Three prophetic naming statements now distinguish royal person from cities; no independent textual-critical apparatus collated and no Product approvals.",
+  "scope": "21 provisional claims, 11 semantic relations, Rock contrast with 32:30 pronoun-caution; no manuscript critical collation or Product clearance.",
   "editorialPolicy": "Never infer Product approval from link completeness, never replace a cited verse or alternative theory silently; new claims require independent review.",
   "records": [
     {
@@ -406,6 +406,74 @@
         "compare contrary critical scholarship, attribution and copyright",
         "separate theological reception and Product publication review"
       ]
+    },
+    {
+      "claimId": "CLM-DEUT32-ROCK-DIVINE-METAPHOR",
+      "claimType": "POSITIVE_REFERENT_CONTROL",
+      "statement": "In Deuteronomy 32:4 and 32:18 and Psalm 18:32 MT, צור is a poetic Rock designation referring to YHWH as faithful God, divine giver of life, or uniquely trustworthy Rock. It is contextual divine metaphor, not a direct personal name or proof that every occurrence of צור in Deuteronomy 32 has the same referent.",
+      "attestationIds": [
+        "ATT-BASE-TSUR-01",
+        "ATT-BASE-TSUR-02",
+        "ATT-BASE-TSUR-05"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent reading of Deuteronomy 32 poetry and pronoun shifts, especially 32:30–31",
+        "compare Jewish and Christian interpretations and critical Hebrew manuscript readings",
+        "verify the scope of metaphor rather than universal proper-name classification",
+        "review reuse rights, critical apparatus and Product editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-DEUT32-31-ROCK-CONTRAST",
+      "claimType": "MIXED_REFERENT_CONTROL",
+      "statement": "In Deuteronomy 32:31 MT כְצוּרֵנוּ צוּרָם juxtaposes 'our Rock' with 'their rock'; the verse has mixed divine and rival referents rather than a universal divine self-name. The pronoun in Deuteronomy 32:30 ('their Rock') occurs in another discourse context and must NOT be mechanically mapped onto the rival referent of 32:31; the 32:30 antecedent and voice require independent discourse review.",
+      "attestationIds": [
+        "ATT-BASE-TSUR-03"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent reading of Deuteronomy 32 poetry and pronoun shifts, especially 32:30–31",
+        "compare Jewish and Christian interpretations and critical Hebrew manuscript readings",
+        "verify the scope of metaphor rather than universal proper-name classification",
+        "review reuse rights, critical apparatus and Product editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-DEUT32-37-FOREIGN-REFUGE",
+      "claimType": "NEGATIVE_REFERENT_CONTROL",
+      "statement": "In Deuteronomy 32:37–38 MT, 'Where are their gods, the rock in which they took refuge?' uses צור ironically in a challenge to foreign objects of trust. This is not an additional personal title or self-designation of YHWH.",
+      "attestationIds": [
+        "ATT-BASE-TSUR-04"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent reading of Deuteronomy 32 poetry and pronoun shifts, especially 32:30–31",
+        "compare Jewish and Christian interpretations and critical Hebrew manuscript readings",
+        "verify the scope of metaphor rather than universal proper-name classification",
+        "review reuse rights, critical apparatus and Product editorial acceptance"
+      ]
     }
   ],
   "semanticRelations": [
@@ -479,6 +547,22 @@
       "toClaimId": "CLM-EZ48-35-CITY-NAMING",
       "relationType": "LIMITS_INFERENCE",
       "rationale": "Both Hebrew loci name a city in their respective narrative contexts; this does not convert either expression into a stand-alone, verbatim divine personal self-naming.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-TSUR-DIVINE-AND-MIXED",
+      "fromClaimId": "CLM-DEUT32-ROCK-DIVINE-METAPHOR",
+      "toClaimId": "CLM-DEUT32-31-ROCK-CONTRAST",
+      "relationType": "CONTRASTS_REFERENT",
+      "rationale": "Positive Rock metaphors referring to YHWH do not imply the two Rock expressions in Deut32:31 share a referent or are divine proper names.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-TSUR-MIXED-AND-FOREIGN",
+      "fromClaimId": "CLM-DEUT32-31-ROCK-CONTRAST",
+      "toClaimId": "CLM-DEUT32-37-FOREIGN-REFUGE",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "Deut32:31 contains two opposed Rock referents, Deut32:37 rhetorically challenges non-YHWH gods; poetic pronoun changes and 32:30 are separately reviewed.",
       "publicationState": "BLOCKED"
     }
   ]
