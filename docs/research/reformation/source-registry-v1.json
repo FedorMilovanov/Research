@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 147,
+  "sourceCount": 172,
   "sources": [
     {
       "id": "REF-P01",
@@ -250,7 +250,7 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://germanhistorydocs.org/en/from-the-reformations-to-the-thirty-years-war-1500-1648/ghdi:document-4311",
-      "verificationNote": "GHDI translated Articles 5-7,10,14,15 inspected; WA 30/3:160-171 and translator Ellen Yutzy Glebe identified; signed manuscript not collated",
+      "verificationNote": "GHDI translated Articles 5-7,10,14,15 inspected; WA 30/3:160-171 and translator Ellen Yutzy Glebe identified; signed manuscript not collated CHECKPOINT 2026-11-07: entire GHDI English presentation of all 15 Marburg Articles and all 10 signatories read; Articles 5-8,10-15 checked. Article 9's bracketed Matthew 28:15 verse pointer is editorially erroneous for Great Commission 'go baptize' (Matthew 28:19); do not repeat. Translation according to WA 30/3 pp160-171; does not elevate full historical 1529 German manuscript access; status PARTIAL_OBJECT remains.",
       "checkedAt": "2026-11-04"
     },
     {
@@ -268,7 +268,7 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=618165",
-      "verificationNote": "archive shelfmark and variants documented, manuscript image not collated",
+      "verificationNote": "archive shelfmark and variants documented, manuscript image not collated CHECKPOINT 2026-11-07: Zurich archive description explicitly distinguishes Z with additions in 7/13/15 from K without; Hessian catalog REF-P75 confirms archival group HStAM 3,245 with digitally available JPG but no scanned pages personally inspected. Modern editorial site REF-S77 identifies themes, NOT a direct German manuscript collation. Academic Engeler 2023 REF-S76 discusses drafting-stage emendations 8/15/possibly 11: DIFFERENT comparison dimension.",
       "checkedAt": "2026-11-04"
     },
     {
@@ -2129,10 +2129,10 @@
       "documentYear": 1528,
       "title": "H. Dencken wid[e]ruff. Uff die zehen artikel: 1 Von der geschrifft; 2 Von der bezalung Christi; 3 Vom Glauben; 4 Vom freien willen; 5 Von guten wercken; 6 Von Secten; 7 Von Ceremonien; 8 Vom Tauff; 9 Vom Nachtmal; 10 Vom Eyd",
       "evidenceClass": "A1",
-      "accessState": "FULL_OBJECT_14_SCANS_ACQUIRED",
-      "locatorState": "ORIGINAL_TITLE_AND_SECTION_VIII_FACSIMILE_VERIFIED",
-      "rightsState": "PUBLIC_DOMAIN_MARK",
-      "publicationState": "RESEARCH_ONLY",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
       "holds": [
         "EVIDENCE_HOLD",
         "PUBLICATION_HOLD"
@@ -2316,8 +2316,8 @@
       "documentYear": 2008,
       "title": "Ulrich Oelschläger, Die Wormser Propheten von 1527. Eine vorlutherische Teilübersetzung der Bibel, Theologische Zeitschrift 64/2 (2008), 169–198, esp. 175 n.18",
       "evidenceClass": "B1",
-      "accessState": "PDF_TEXT_PARTIAL_REVIEWED",
-      "locatorState": "PRINTED_PAGE_175_TEXT_LOCATED_IMAGE_NOT_VERIFIED",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
       "holds": [
@@ -2334,8 +2334,8 @@
       "documentYear": 2020,
       "title": "Mennonitisches Lexikon, Band V (2010–2020 online; revised print edition 2020), Hans-Jürgen Goertz (ed.), article 'Denck, Hans'",
       "evidenceClass": "B1",
-      "accessState": "INDEXED_EXCERPT_AND_WEB_TEXT",
-      "locatorState": "ARTICLE_LEVEL_ONLY",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
       "holds": [
@@ -2901,6 +2901,462 @@
       "url": "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/20/71/95/37/2020719537/2020719537.pdf",
       "checkedAt": "2026-11-06",
       "verificationNote": "University of Toronto Press 2015 ebook hosted on US Library of Congress. Original publisher PDF screen directly visually checked pageno100 (printed p70), pageno101 (printed p71), and book copyright page; p70 MODERN EDITORS' headnote to Letter488a says Kautz nailed seven theses on 9 June 1527, addressed audience 13 June, and cites QGT4 pp113–114 no129. This 9 June NOT quoted from the 1532 letter. The translated October14-16 1532 letter manuscript at Strasbourg AVCU 1AST76 no7, additions/corrections by Bucer, printed CorrBucer9 pp23–31 Ep634; content p71 about Kautz sacramental views but not an autograph date for his 1527 action. 2015 editors mention later Kautz association with Schöffer in Haguenau, not evidence this is Worms 1527 press. Book copyright CC-BY-NC-ND, no pages copied/reused; physical autograph not seen; clear source dependency on QGT4."
+    },
+    {
+      "id": "REF-P63",
+      "documentYear": 1520,
+      "title": "Martin Luther, An den Christlichenn Adel deutscher Nation, author-enlarged and corrected 1520 edition; UB Paderborn VD16 L3759 / Benzing 684",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://digital.ub.uni-paderborn.de/eab/content/titleinfo/1928970",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Official Paderborn bibliographic title explicitly says Durch yhn selbs gemehret vnd corrigirt, Wittenberg [Melchior Lotter] 1520; VD16 L3759 / Benzing 684 and URN nbn:de:hbz:466:1-36728 confirmed. Catalog says final leaf missing from THIS physical copy. Library image-reuse notice says CC BY 4.0; no rights-generalization or editorial publication approval. This is not REF-P03 first printing and not a fully read second-edition text; direct page-by-page original collation is pending."
+    },
+    {
+      "id": "REF-P64",
+      "documentYear": 1520,
+      "title": "Martin Luther, De captivitate Babylonica ecclesiae praeludium, Wittenberg 1520, Stadtbibliothek Worms LB45, VD16 L4189",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.lutherschriften1521.de/luther-schriften/exponate/Widerruf/lateinische-Lutherschriften/14-De-captivitate-Babilonica.php",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Stadtbibliothek Worms institutional exhibit identifies VD16 L4189, Benzing 704, Wittenberg [Melchior Lotter d.J.] [1520], 44 ORIGINAL LEAVES and shelfmark LB45. Museum summary describes initial three sacraments (penance, baptism, Eucharist) and final stricter count two; original Latin print has not been diplomatically read here. Project Wittenberg translation maps to WA 6:497-573 but translation is NOT a second original print. Russian State Library 1520 catalog record is another copy of same work without established distinct edition."
+    },
+    {
+      "id": "REF-P65",
+      "documentYear": 1520,
+      "title": "Martin Luther, Von der Freyheyt eynisz Christen Menschen, Wittenberg 1520, Taylor Institution Library ARCH.8o.G.1520(25), Oxford Taylor Editions facsimile/transcription",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://editions.mml.ox.ac.uk/editions/freiheit-1520/",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Oxford scholarly TEI digital edition exposes German transcription/facsimile/English translation of specific Taylorian 1520 print. Title a1r and dedication a1v-a2r directly read online; dedication has Hieronymus Mühlpfort whereas editor identifies Hermann Mühlpfort; closing conclusion also located in text. Modern edition and translation require own attribution. Original image-by-image collation and full German/Latin stemma remain unclosed."
+    },
+    {
+      "id": "REF-P66",
+      "documentYear": 1520,
+      "title": "Martin Luther, Von der Freyhayt Aines Christen menschen, Pitts Theology Library Emory copy of fourth German printing, 1520",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://digital.pitts.emory.edu/s/digital-collections/item/13912",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Pitts institutional catalog explicitly calls item 13912 FOURTH printing of Luther's own German translation, issued 1520. It is not the first print of the work. Copyright notice from the institutional record addresses the online edition in the US; it does not authorize arbitrary reuse of other photos or later scholarly translations. Historical images not collated."
+    },
+    {
+      "id": "REF-S70",
+      "documentYear": 2020,
+      "title": "Oxford History of the Book, Freedom by Faith (2020), historical book-history analysis of Luther three tracts and dating of the Leo X letter",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://historyofthebook.mml.ox.ac.uk/2020/10/29/freedom-by-faith/",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Oxford institutional historical essay states letter attached to Freedom of Christian was backdated to 6 September 1520 and distinguishes publications in August, October, and November. It is scholarly reconstruction, not an autograph of Luther or proven first-print collation; do not convert article's date claim to original letter date of composition without an independent primary witness."
+    },
+    {
+      "id": "REF-S71",
+      "documentYear": null,
+      "title": "Landesarchiv Baden-Württemberg, Martin Luther und seine Ausstrahlung im deutschen Südwesten, institutional historical timeline of Exsurge Domine / Decet Romanum Pontificem",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.landesarchiv-bw.de/de/themen/praesentationen---themenzugaenge/62155",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Official regional archive narrative confirms Exsurge Domine 15 June 1520, later publication sequence, Luther's public burning 10 December 1520, actual excommunication by Decet Romanum Pontificem 3 January 1521. Exact issue year of online narrative not established, hence null documentYear; accessible secondary institutional analysis, not original signed or printed bull images."
+    },
+    {
+      "id": "REF-S72",
+      "documentYear": 2026,
+      "title": "Corinna Ehlers, Wormser Edikt (8 / 26 Mai 1521), Europäische Religionsfrieden Digital critical introduction",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://tueditions.ulb.tu-darmstadt.de/v/pa000008-0107",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Production scholarly HTML article (not experimental preview site) directly checked: decision 8 May, postponed signature 12 May, reading before certain estates 25 May, signatures of German/Latin texts and publication mandate 26 May. Official German first print VD16 D924 not identical to now-lost German original parchment formerly seen by Wrede; survives at BSB. Latin print Vatican Arm LXIV 17 not same physical object as signed original. Differentiated legislation and uneven local enforcement; research-critical historical account, not all original images collated. Site suggested citation year 2026."
+    },
+    {
+      "id": "REF-P67",
+      "documentYear": 1525,
+      "title": "Zurich Council, 12 January 1525: council-book notice on infant baptism, B VI 248 fol.226v entry 1 (QGTS I no.21; Egli no.617)",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=4652025",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Official archive catalogue directly checked. The council-book entry on announcement from the pulpit is expressly marked incomplete. Its displayed title says 'Verbot der Kindertaufe'; THIS CATALOGUE HEADING IS AMBIGUOUS/CONTRADICTED by contemporary 18 January infant-baptism-duty mandate and scholarly UZH summary. No original page image or QGTS I no.21 diplomatic text read; do not quote original German or infer the substantive law from the displayed heading alone."
+    },
+    {
+      "id": "REF-P68",
+      "documentYear": 1525,
+      "title": "Zurich Council, 18 January 1525: council-book entry B VI 248 fol.227v entry 1, QGTS I no.24, Egli no.621",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=4652027",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Original council register exists per official catalog, documentary date 1525-01-18, folio 227v entry 1, QGTS I no.24. Important metadata anomaly: catalog title says renewed 'Verbot der Kindertaufe' while same title also mentions expulsion for failed infant baptism in 8 days and separate official original mandate REF-P69 says DUTY of infant baptism; University of Zurich independent 2025 explanatory publication supports duty. CATALOG_ONLY: no original text, no literal quote, no verified enforcement outcome. CROSSCHECK 2026-11-07: REF-P72 Egli 1879 visual print pages 275–276/278 now read: edited source gives duty to baptize infants in 8 days under jurisdiction-expulsion sanction and (p278 no624) four named expulsion ORDERS on Jan21. The ORIGINAL manuscript/copy identified by THIS record was not imaged; accessState still CATALOG_ONLY, no false promotion."
+    },
+    {
+      "id": "REF-P69",
+      "documentYear": 1525,
+      "title": "Zurich mayor and councils, 18 January 1525: issued single-sheet infant-baptism mandate A 42.1.12 Nr.2 (Widikon), Zürcher Kirchenordnungen I no.15 / Egli no.622",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1158607",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Official Staatsarchiv Zurich catalog directly checked: distinct issued original (Ausfertigung, Einzelblatt) 22x27cm paper, verso 'Widikon', municipal mandate titled obligation of infant baptism, dated 18 Jan 1525. This is NOT council-minute REF-P68. Edition Zürcher Kirchenordnungen I no.15, Egli 1879 no.622. No original image or critical-edition text read; 8-day sanction context from separate records and UZH REF-S73, not direct reading of this leaf. Publication and reproduction rights not inferred from date of document. CROSSCHECK 2026-11-07: REF-P72 Egli 1879 visual print pages 275–276/278 now read: edited source gives duty to baptize infants in 8 days under jurisdiction-expulsion sanction and (p278 no624) four named expulsion ORDERS on Jan21. The ORIGINAL manuscript/copy identified by THIS record was not imaged; accessState still CATALOG_ONLY, no false promotion."
+    },
+    {
+      "id": "REF-P70",
+      "documentYear": 1525,
+      "title": "Zurich Council, 21 January 1525: enforcement decision and end of debate with Grebel/Manz, B VI 248 fol.227v entry 2 (QGTS I no.26 / Egli no.624)",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=4652028",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Staatsarchiv Zurich catalogue directly checked: council register entry dated 1525-01-21, folio 227v entry 2, on implementation of ordinance and stopping further discussions with Conrad Grebel/Felix Manz. Edition QGTS I no.26, Egli no.624. CATALOG_ONLY, no original German full text or execution record read; decision to enforce is not proof that every expulsion or sanction was actually carried out. CROSSCHECK 2026-11-07: REF-P72 Egli 1879 visual print pages 275–276/278 now read: edited source gives duty to baptize infants in 8 days under jurisdiction-expulsion sanction and (p278 no624) four named expulsion ORDERS on Jan21. The ORIGINAL manuscript/copy identified by THIS record was not imaged; accessState still CATALOG_ONLY, no false promotion."
+    },
+    {
+      "id": "REF-P71",
+      "documentYear": 1524,
+      "title": "Conrad Grebel and fellow signers to Thomas Muentzer, 5 September 1524, English translation GHDI from QGTS I (1952) pp.13-19",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://germanhistorydocs.org/en/from-the-reformations-to-the-thirty-years-war-1500-1648/definition-and-demarcation-conrad-grebel-and-others-to-thomas-muentzer-september-5-1524",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "GHDI historical participant letter (translated text) directly checked in English webpage: church community and rule (sections near Matt 18); rejection of defense by worldly sword; adult baptism tied to faith; objection to infant baptism. Original German printed QGTS I pp13-19 NOT directly collated; exact English phrases are NOT verified literal sixteenth-century German quotations. Whether letter reached Muentzer is uncertain. Modern English translation carries separate rights; no extensive reproduction."
+    },
+    {
+      "id": "REF-S73",
+      "documentYear": 2025,
+      "title": "University of Zurich Institut fuer Schweizerische Reformationsgeschichte, presentation of Quellen zur Geschichte der Taeufer in der Schweiz (2025)",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.irg.uzh.ch/de/publikationen/alle_publikationen/250526_ScheideggerJammerthal_QuellenTaeuferBd6.html",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Directly read institutional modern scholarly/publication summary stating on 18 Jan 1525 City Council ordered infant baptism within eight days on pain of expulsion, and on evening 21 Jan adult baptisms took place at Felix Manz's home. This is B1 historical explanatory source, NOT a primary council act or witnessed German textual collation. QGTS vol5/6 concern much later periods; do not misrepresent these volumes as original edition for January 1525 (QGTS I)."
+    },
+    {
+      "id": "REF-P72",
+      "documentYear": 1879,
+      "title": "Emil Egli (ed.), Actensammlung zur Geschichte der Zuercher Reformation in den Jahren 1519–1533 (Zuerich: Schabelitz, 1879), no. 621 p.275–276, no. 622 p.276, no. 624 p.278",
+      "evidenceClass": "A2",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.digitale-sammlungen.de/de/details/bsb11389154",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Direct visual inspection of three separate OFFICIAL Bavarian State Library IIIF digitized page images of Egli EDITED COLLECTION published 1879, not the manuscript originals: PRINT p275 (IIIF canvas289; SHA256 e61cc5baccdc8f1bcb40e96e348ed5c72cfbecccf8ee8e9df47efa6d256b8768), PRINT p276 (canvas290; SHA256 04b012d424e55edba9551b72af543d741e31a1277fafd38870fccfe7ab1f9b71), PRINT p278 (canvas292; SHA256 56af32815ffa0a5e1bfee12dc2120631854454e6417f860d52e130473b9e16a8). Selected page JPG copies retained privately under Documents/Research-Primary-Sources/Egli_1879_Actensammlung_Zurich_1525_selected_pages, source sizes 702708,637855,626699 bytes respectively, verified SHA256 identical after copy; institutional OCR used as navigation only, German verified from scanned PRINT images. Egli no621 (pp275–276) has EDITORIAL REGEST of Jan18 decision with 8-day infant baptism duty and family expulsion sanction; no622 (p276) contains edited historical mandate wording in early German, including command to baptize previously unbaptized children in 8 days or leave jurisdiction with wife, children, belongings; no624 (p278) has EDITORIAL REGEST and brief primary-text excerpts of Jan21 council decision: halt private doctrinal schools, prohibit further Grebel/Manz disputations, and named order that Wilhelm Roeubli (Wytikon), Broetli (Zollikon), Ludwig Hetzer and Andreas auf der Stuelzen leave territory within 8 days. These are ORDERS, not evidence of their actual departure. This record is a selected historical EDITED TRANSCRIPTION/REGEST, NOT a 1525 manuscript facsimile, NOT full source QGTS I 1952 or Zuercher Kirchenordnungen I, and NOT complete reading of Egli's 968 digital images. Independent collation original council folios B VI 248 and A42.1.12 Nr2 still ARCHIVE_HOLD. Institution says scan is no copyright with non-commercial-use notice, do not transfer images to public Git or infer reproduction rights."
+    },
+    {
+      "id": "REF-S74",
+      "documentYear": 2013,
+      "title": "Historisches Lexikon der Schweiz, Reformation, institutional secondary synthesis on Zurich 1523–1525",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://hls-dhs-dss.ch/de/articles/013328/2013-01-29/",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "German institutional historical-lexicon text directly read and cross-checked with Zentralbibliothek Zurich historical exhibition https://www.zb.uzh.ch/de/fokus/beitrag/reformation : Second Disputation late October 1523 on Mass/images, Zurich council political implementation, image removal actually in JUNE 1524, Mass abolished and new Lord's Supper in APRIL 1525, founding of Prophezey Bible interpretation in 1525. These are institutional B1 chronological synthesis, NOT newly collated 1523/1524 municipal original ordinances. No automatic publication or photography rights."
+    },
+    {
+      "id": "REF-S75",
+      "documentYear": 2009,
+      "title": "Keith D. Lewis, Unica Oblatio Christi: Eucharistic Sacrifice and the First Zürich Disputation, Renaissance and Reformation (scholarly article metadata and abstract)",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://jps.library.utoronto.ca/index.php/renref/article/view/11429",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Official journal HTML metadata/abstract DIRECTLY READ. Historical research article on 29 January 1523 disputation: Zwingli and Bishop of Constance's vicar Johann Faber argued over eucharistic sacrifice; Faber's case included scholastic and other doctrinal authorities; polemical atmosphere prevented clarity. Article issue-year and online publish date metadata can differ: online page published 2009-01-20; no assumption the paper was originally written/published in 2009 print. FULL ARTICLE BODY NOT READ. No original Faber text or purported transcript collated. Scholarly B1 abstract cannot ground a literal quote or prove exact words, triumph or each participant's motives; REF-P55 Hegenwald partisan printed witness has different evidentiary level. Archive/rights/publication HOLDs kept."
+    },
+    {
+      "id": "REF-P73",
+      "documentYear": 1529,
+      "title": "Andreas Osiander, eyewitness report of Marburg Colloquy to the Nuremberg council, GHDI English translation of WA 30/3:144-151",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://germanhistorydocs.org/en/from-the-reformations-to-the-thirty-years-war-1500-1648/ghdi:document-4284",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Complete GHDI English translation read; original report is 1529 participant-created primary testimony, translation Ellen Yutzy Glebe after WA 30/3 (1910) pp144-151, not direct collation of German original. Osiander sided with Luther, wrote to Nuremberg council, arrived after some opening conversations (reports earliest parts secondhand); chalk scene, John 6:63 and corporeal presence argument, limited brotherhood and signature process are his PARTICIPANT NARRATIVE, not neutral court transcript. Do not treat his claimed victory, opponents' motives, or alleged renunciations as independent proven facts. Rights/archives/publication HOLD remain."
+    },
+    {
+      "id": "REF-P74",
+      "documentYear": 1529,
+      "title": "Huldrych Zwingli to Joachim Vadian, 20 October 1529, GHDI English rendering from Latin original via Samuel M. Jackson 1901 pp319-322",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://germanhistorydocs.org/en/from-the-reformations-to-the-thirty-years-war-1500-1648/ghdi:document-4300",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Complete GHDI English text directly read; Zwingli personal letter of 20 Oct 1529 to Joachim Vadian, translated from Latin in Jackson ed. 1901 pp319-322 and edited by GHI. Participant asserts own success and Philip of Hesse privately agreeing, but this is SELF-PRESENTATION, not independently established outcome. Private Melanchthon/Zwingli and Luther/Oecolampadius meetings and later joint colloquies described from this partisan perspective. Original 1529 Latin autograph not read/compared; English text not literal original quotation. Archive/rights/publication HOLD remain."
+    },
+    {
+      "id": "REF-P75",
+      "documentYear": 1529,
+      "title": "Marburg Articles Hessian signed exemplar K: Hessisches Staatsarchiv Marburg HStAM, fonds 3 no.245 fol.60r–64v (archive catalogue and digital-viewer availability)",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails?archivalDescriptionId=5447099",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Direct official Hessen Arcinsys archival catalogue for HStAM 3, Nr.245 read: file of Philip's letters includes signed protocol/articles of the Marburg disputation; the site marks a Nutzungsdigitalisat JPG and a digital-media viewer, but NO autograph images were directly retrieved or visually collated. Exact leaves 60r–64v and K designation identified independently in Zurich archive REF-P13-ARCHIVE; no false claim that whole HStAM 3 Nr245 exclusively contains the 15 articles. The Zurich copy Z is a DISTINCT archive object and has 3 additions to articles 7,13,15, absent from K. CATALOG_ONLY and ARCHIVE_HOLD persist."
+    },
+    {
+      "id": "REF-S76",
+      "documentYear": 2023,
+      "title": "Judith Engeler, Das Erste Helvetische Bekenntnis von 1536: Die Schweizer Protestanten zwischen Bekenntnis und Bündnis (TVZ, open-access monograph), printed page 64 footnote 65",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.tvz-verlag.ch/_files_media/open_access/9783290185220.pdf",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Scholarly monograph PDF, DOI 10.34313/978-3-290-18522-0, 2023, ISBN 9783290185220. Only Marburg discussion PRINT pp64–66 and specifically print p64 footnote65 were inspected (p64 visual web screenshot, PDF zero-index page65); NOT whole scholarly book read. She discusses changes made by Swiss participants in drafting negotiations, allegedly articles 8 and 15, probably 11, citing Fritz Buesser Zwingli Werke VI/2 pp510f and Locher. These NEGOTIATION-stage changes are not identical to archive catalog's Z-specific physical additions to articles 7,13,15; do not infer conflict without checking editorial definitions. PDF says Creative Commons 4.0 International but precise reuse rights and commercial/public use not independently approved here; publication HOLD."
+    },
+    {
+      "id": "REF-S77",
+      "documentYear": 2026,
+      "title": "Reformed Dogmatika, The Marburg Articles, editorial reproduction of Martin E. Lehmann's Luther's Works 38 English rendering and notes on textual variants",
+      "evidenceClass": "C",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://reformeddogmatika.com/marburg-articles/",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Directly inspected online editorial text and footnotes. English bracketed clauses under article 7 monastic vows as salvation aid, article 13 forbidding clerical marriage, article 15 meritorious Mass for others. Site notes 7 only in Zurich witness, 15 only in Zurich; says 13 is a manuscript variant, while Zurich archive independently says Z has addition article 13. Footnotes refer to Luther's Works vol38 pp86,88 and WA 30/III pp164,169. This is a secondary/possibly copyright-sensitive web reproduction of an English translation, not historical manuscript, not full WA collation and not strong B1 independent corroboration. Treat as C discovery lead, do not quote long translated clauses or republish their text; verify with full critical German apparatus or scans before claiming exact readings."
+    },
+    {
+      "id": "REF-P76",
+      "documentYear": 1525,
+      "title": "Sebastian Lotzer, Twelve Articles of the Swabian Peasants, Memmingen 1525, complete English historical translation GHDI from Guenther Franz 1963 original German edition",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://germanhistorydocs.org/en/from-the-reformations-to-the-thirty-years-war-1500-1648/grievances-and-demands-the-twelve-articles-of-the-swabian-peasants-february-27-march-1-1525",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "DIRECT full HTML read in the GHDI official historical-document presentation including preamble and articles 1-12, English translation James Harvey Robinson 1904-06 vol II pp94-99 on German edited text Guenther Franz (1963) pp174-179. GHDI dates drafts Feb27-Mar1 1525 and identifies Lotzer and preface collaborator Schappeler; city archive REF-S78 says 28 Feb-3 Mar, a harmless interval uncertainty not evidence of three distinct Twelve-Article documents. Article1 pastor election; 2 tithe distinctions; 3 rejects serfdom BUT explicitly says not absolutely free of authority; 4-5 hunting/fishing/woods; 6-8 labor/rents; 9-11 laws/common pasture/heriot; article12 scripture-based right of correction and further demands. Text is participant-created 1525 pamphlet, but direct historical German printing and edition-level variants have NOT been collated; English site is not a 1525 facsimile. No lengthy copyrighted reproduced translation and no automatic publication rights. FOLLOWUP 2026-11-07 wave374: original-language edited GHDI German publication directly read in relevant preamble and Art 1,2,3,12; confirms elected pastor, tithe, serfdom with obedience to legitimate authorities, Scripture-grounded article revision. This is a modern edited German transcription, NOT 1525 physical impression line collation; accessState remains PARTIAL_OBJECT and ARCHIVE_HOLD remains."
+    },
+    {
+      "id": "REF-S78",
+      "documentYear": 2026,
+      "title": "Stadtarchiv Memmingen, local history and primary-document guide Memmingen und das Aufbegehren von Bauern und Buergern 1525",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://stadtarchiv.memmingen.de/publikationen/memmingen-und-das-aufbegehren-von-bauern-und-buergern-1525.html",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Full public archival-institution chronological exhibition page and subindex read; city archive dates regional Twelve Articles between 28 Feb and 3 Mar 1525, local Memmingen Ten Articles distinct from regional Twelve, establishment Upper Swabian Christian Union ordinance 6/7 March, municipal response to local ten-point list on 15 March. Archive includes excerpts of municipal council protocol but this work does NOT claim personal line-by-line study of whole original register or all 25 early printings; B1 is scholarly/institutional presentation, not an A1 manuscript transcript. No rights on institutional photographs inferred."
+    },
+    {
+      "id": "REF-S79",
+      "documentYear": 2025,
+      "title": "Barbara Schratzenstaller, Bauernkrieg 1524–1526, Historisches Lexikon Bayerns, historical synthesis of causes and divergent regional violence/negotiation",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.historisches-lexikon-bayerns.de/Lexikon/Bauernkrieg,_1524-1526",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Institutional academic HLB page directly read: complex uprising including nonpeasants, earliest southwestern 1524; 1525 regional Christian Union; Weinsberg 16/17 April count of nobles killed, Weingarten contract 17 April negotiated with Seehaufen; escalation and 1525 military repression; distinct Thuringian Muentzer/Frankenhausen movement. The page synthesizes scholarship, not personal independent viewing of every execution/court order. Do not assign all casualties to a particular Luther text, or to Muentzer, or assert Weingarten applied across entire Empire; terms RIGHTS_UNKNOWN + ARCHIVE_HOLD."
+    },
+    {
+      "id": "REF-P77",
+      "documentYear": 1563,
+      "title": "Heidelberg Catechism 1563, contemporary English publication by Reformed Church in America, Q&A 60-64",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.rca.org/about/theology/creeds-and-confessions/the-heidelberg-catechism/",
+      "verificationNote": "2026-11-07: RCA online modern English text read specifically Lord's Days 23-24, Q&A 60-64; justification by the credited righteousness of Christ received by faith, good works as grateful fruits. Dating 1563 from institutional page. Distinct REF-P17 holds catalogue for historic 1563 edition; original German 1563 printing NOT collated, no whole-book or scanned-print claim.",
+      "checkedAt": "2026-11-07"
     }
   ]
 }
