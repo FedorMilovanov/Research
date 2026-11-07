@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "corpusId": "NAMES_OF_GOD_CLAIM_LEVEL_EVIDENCE",
   "createdAt": "2026-11-07",
-  "scope": "56 research-held provisional claims and 41 semantic relations; eight Shaddai/Sabaoth observations newly evidence-linked, disputed Shaddai origin and Exodus 6:3 reading not declared settled.",
+  "scope": "61 source-linked research-held claims and 46 typed relations, 77/105 attestation-linked; El Elyon narrator/priest blessing/oath and El Qanna explicit-name vs Moses epithet safeguards; no critical manuscript collation or Product clearance.",
   "editorialPolicy": "Never infer Product approval from link completeness, never replace a cited verse or alternative theory silently; new claims require independent review.",
   "records": [
     {
@@ -1282,6 +1282,125 @@
         "Keep each narrator, benediction, human invocation, seraphic hymn and divine oracle distinct",
         "Obtain source rights and separate scholarly/Product editorial approvals"
       ]
+    },
+    {
+      "claimId": "CLM-ELYON-GEN14-18-PRIEST-NARRATOR",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "attestationIds": [
+        "ATT-BASE-EL-ELYON-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "statement": "MT Genesis 14:18 narrates Melchizedek as priest לְאֵל עֶלְיוֹן (of God Most High); the verse is narrative third-person priesthood designation, not a direct Melchizedek spoken blessing, not Abram's oath and not an explicit self-naming speech of YHWH. The prefixed לְ belongs to the printed phrase; namedObject=God is referent of priesthood designation.",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Compare digital Masoretic reading to independent Hebrew apparatus and grammatical treatments before inferring an ancient editorial layer",
+        "Keep Melchizedek narrative identification, spoken blessing and Abram oath as distinct speaker contexts; do not resolve ancient religious identity by editorial assertion",
+        "Preserve creator/possessor translation disagreement for קֹנֵה and identify modern secondary hypotheses as attributed, not verified manuscript variants",
+        "Obtain independent exegetical review, source-specific rights and separate Product editorial approval"
+      ]
+    },
+    {
+      "claimId": "CLM-ELYON-GEN14-19-20-PRIEST-BLESS-DOXOLOGY",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "attestationIds": [
+        "ATT-BASE-EL-ELYON-02",
+        "ATT-BASE-EL-ELYON-03"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-NET-GEN14"
+      ],
+      "statement": "Genesis 14:19–20 MT has Melchizedek speaking: first a blessing of Abram with prefixed לְאֵל עֶלְיוֹן, then a doxology beginning וּבָרוּךְ אֵל עֶלְיוֹן (registered surface אֵל עֶלְיוֹן). Verse 19 calls God קֹנֵה שָׁמַיִם וָאָרֶץ; NET attributes translation alternatives 'creator' and 'possessor' rather than one demonstrably mandatory English gloss. Neither verse is spoken by God in the first person or an Abram oath.",
+      "creatorPossessorStatus": "NET_TRANSLATION_ALTERNATIVES_NOT_LEXICAL_CERTAINTY",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Compare digital Masoretic reading to independent Hebrew apparatus and grammatical treatments before inferring an ancient editorial layer",
+        "Keep Melchizedek narrative identification, spoken blessing and Abram oath as distinct speaker contexts; do not resolve ancient religious identity by editorial assertion",
+        "Preserve creator/possessor translation disagreement for קֹנֵה and identify modern secondary hypotheses as attributed, not verified manuscript variants",
+        "Obtain independent exegetical review, source-specific rights and separate Product editorial approval"
+      ]
+    },
+    {
+      "claimId": "CLM-ELYON-GEN14-22-ABRAM-YHWH-OATH",
+      "claimType": "CANONICAL_INTERTEXT_BOUNDARY",
+      "attestationIds": [
+        "ATT-BASE-EL-ELYON-04"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-NET-GEN14",
+        "SRC-CARGILL-2019"
+      ],
+      "statement": "MT Genesis 14:22 records Abram speaking an oath to the king of Sodom, using יְהוָה אֵל עֶלְיוֹן and קֹנֵה שָׁמַיִם וָאָרֶץ. In the current printed MT this identifies YHWH with Most High God in Abram's oath, without demonstrating Melchizedek's independent historical cult identity. Robert R. Cargill (2019) proposes as secondary historical-critical hypothesis that YHWH in v22 is a later editorial gloss; the consulted catalogue/abstract does NOT constitute a collated manuscript reading lacking YHWH or settled scholarly consensus. NET's creator/possessor alternatives remain lexical interpretations.",
+      "historicalHypothesisStatus": "ATTRIBUTED_GLOSS_HYPOTHESIS_NO_DIRECT_MANUSCRIPT_COLLATION",
+      "creatorPossessorStatus": "NET_TRANSLATION_ALTERNATIVES_NOT_LEXICAL_CERTAINTY",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Compare digital Masoretic reading to independent Hebrew apparatus and grammatical treatments before inferring an ancient editorial layer",
+        "Keep Melchizedek narrative identification, spoken blessing and Abram oath as distinct speaker contexts; do not resolve ancient religious identity by editorial assertion",
+        "Preserve creator/possessor translation disagreement for קֹנֵה and identify modern secondary hypotheses as attributed, not verified manuscript variants",
+        "Obtain independent exegetical review, source-specific rights and separate Product editorial approval"
+      ]
+    },
+    {
+      "claimId": "CLM-QANNA-EX34-14-NAME-CHARACTER",
+      "claimType": "DIRECT_TEXTUAL_NAMING",
+      "attestationIds": [
+        "ATT-BASE-EL-QANNA-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "statement": "Exodus 34:14 MT contains explicit קַנָּא שְׁמוֹ ('Jealous/Zealous is his name') and also אֵל קַנָּא הוּא ('he is a jealous God') in the covenant command against worshiping לְאֵל אַחֵר (another god). The overall divine speech to Moses refers to YHWH in third-person self-description; do not erase the actual name clause, but do not turn its covenant-character epithet into an etymologically unrelated deity or independent proper name distinct from YHWH.",
+      "nameEvidenceStatus": "EXPLICIT_NAME_CLAUSE_CHARACTER_EPITHET",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Compare digital Masoretic reading to independent Hebrew apparatus and grammatical treatments before inferring an ancient editorial layer",
+        "Keep Melchizedek narrative identification, spoken blessing and Abram oath as distinct speaker contexts; do not resolve ancient religious identity by editorial assertion",
+        "Preserve creator/possessor translation disagreement for קֹנֵה and identify modern secondary hypotheses as attributed, not verified manuscript variants",
+        "Obtain independent exegetical review, source-specific rights and separate Product editorial approval"
+      ]
+    },
+    {
+      "claimId": "CLM-QANNA-DEUT4-24-MOSES-WARNING",
+      "claimType": "MORPHOLOGICAL_CASE_CONTEXT",
+      "attestationIds": [
+        "ATT-BASE-EL-QANNA-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "statement": "Deuteronomy 4:23–24 MT is Moses' covenantal warning against idolatry. The description of YHWH as consuming fire אֵשׁ אֹכְלָה and אֵל, קַנָּא ('a jealous/zealous God') is in Moses' speech, and unlike Exodus 34:14 Deuteronomy 4:24 does NOT contain the separate name clause קַנָּא שְׁמוֹ. Same character emphasis does not prove a new independent act of naming in this verse.",
+      "nameEvidenceStatus": "NO_NAME_CLAUSE_DESCRIPTIVE_EPITHET",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Compare digital Masoretic reading to independent Hebrew apparatus and grammatical treatments before inferring an ancient editorial layer",
+        "Keep Melchizedek narrative identification, spoken blessing and Abram oath as distinct speaker contexts; do not resolve ancient religious identity by editorial assertion",
+        "Preserve creator/possessor translation disagreement for קֹנֵה and identify modern secondary hypotheses as attributed, not verified manuscript variants",
+        "Obtain independent exegetical review, source-specific rights and separate Product editorial approval"
+      ]
     }
   ],
   "semanticRelations": [
@@ -1611,6 +1730,46 @@
       "toClaimId": "CLM-ROM9-29-SABAOTH-ISAIAH",
       "relationType": "LIMITS_INFERENCE",
       "rationale": "Romans 9:29 quotes Isaiah 1:9, not the seraphim hymn Isaiah 6:3; a common divine title does not prove direct quotation of Isa6.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-ELYON-PRIESTHOOD-BLESSING",
+      "fromClaimId": "CLM-ELYON-GEN14-18-PRIEST-NARRATOR",
+      "toClaimId": "CLM-ELYON-GEN14-19-20-PRIEST-BLESS-DOXOLOGY",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Genesis14:18 narrator reports Melchizedek as priest; 14:19–20 Melchizedek speaks blessing and doxology; do not treat narration as an utterance.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-ELYON-MELCHIZEDEK-ABRAM",
+      "fromClaimId": "CLM-ELYON-GEN14-19-20-PRIEST-BLESS-DOXOLOGY",
+      "toClaimId": "CLM-ELYON-GEN14-22-ABRAM-YHWH-OATH",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Melchizedek's blessing/doxology differs from Abram's oath to the king of Sodom with YHWH explicitly in the MT.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-ELYON-YHWH-ORIGIN-BOUNDARY",
+      "fromClaimId": "CLM-ELYON-GEN14-18-PRIEST-NARRATOR",
+      "toClaimId": "CLM-ELYON-GEN14-22-ABRAM-YHWH-OATH",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "Abram's oath joins YHWH+El Elyon in printed MT, but that does not independently settle ancient historical identity of Melchizedek's cult or prove/disprove Cargill's attributed gloss hypothesis.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-QANNA-NAME-VERSUS-ATTRIBUTE",
+      "fromClaimId": "CLM-QANNA-EX34-14-NAME-CHARACTER",
+      "toClaimId": "CLM-QANNA-DEUT4-24-MOSES-WARNING",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Ex34:14 gives explicit name/character clause inside divine speech; Deut4:24 is Moses' covenantal description with no name clause.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-QANNA-OTHER-GOD-CONTRAST",
+      "fromClaimId": "CLM-EX20-OTHER-GODS-NEGATIVE",
+      "toClaimId": "CLM-QANNA-EX34-14-NAME-CHARACTER",
+      "relationType": "CONTRASTS_REFERENT",
+      "rationale": "Exodus 34:14 distinguishes another worshiped god (לְאֵל אַחֵר) from YHWH, whose name/character is jealous; generic el cannot always be treated as divine YHWH designation.",
       "publicationState": "BLOCKED"
     }
   ]

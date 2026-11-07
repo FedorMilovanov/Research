@@ -477,6 +477,75 @@ EX6_UNCERTAINTY_CONTROLS = {
     "revelationInterpretationStatus": "DISPUTED_NOT_RESOLVED_BY_ONE_NOTE",
     "speakerEvidenceLevel": "YHWH_RETROSPECTIVE_DIVINE_SPEECH",
 }
+REQUIRED_ELYON_QANNA_CLAIMS = {
+    "CLM-ELYON-GEN14-18-PRIEST-NARRATOR",
+    "CLM-ELYON-GEN14-19-20-PRIEST-BLESS-DOXOLOGY",
+    "CLM-ELYON-GEN14-22-ABRAM-YHWH-OATH",
+    "CLM-QANNA-EX34-14-NAME-CHARACTER",
+    "CLM-QANNA-DEUT4-24-MOSES-WARNING",
+}
+# Per-attestation independently verified MT printed-form and narrative actor controls.
+ELYON_QANNA_LOCUS_CONTROLS = {
+    "ATT-BASE-EL-ELYON-01": {
+        "verse": "Genesis 14:18",
+        "surface": "לְאֵל עֶלְיוֹן",
+        "speaker": "narrator",
+        "speechAct": "priesthood_designation",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt0114.htm",
+    },
+    "ATT-BASE-EL-ELYON-02": {
+        "verse": "Genesis 14:19",
+        "surface": "לְאֵל עֶלְיוֹן",
+        "speaker": "Melchizedek",
+        "speechAct": "blessing",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt0114.htm",
+    },
+    "ATT-BASE-EL-ELYON-03": {
+        "verse": "Genesis 14:20",
+        "surface": "אֵל עֶלְיוֹן",
+        "speaker": "Melchizedek",
+        "speechAct": "doxology",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt0114.htm",
+    },
+    "ATT-BASE-EL-ELYON-04": {
+        "verse": "Genesis 14:22",
+        "surface": "יְהוָה אֵל עֶלְיוֹן",
+        "speaker": "Abram",
+        "speechAct": "oath_invocation",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt0114.htm",
+    },
+    "ATT-BASE-EL-QANNA-01": {
+        "verse": "Exodus 34:14",
+        "surface": "קַנָּא שְׁמוֹ, אֵל קַנָּא",
+        "speaker": "YHWH in divine speech to Moses, third-person self-reference",
+        "contextRole": "name_statement_and_epithet_in_same_verse",
+        "nameClause": "קַנָּא שְׁמוֹ",
+        "descriptorClause": "אֵל קַנָּא הוּא",
+        "contrast": "לְאֵל אַחֵר",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt0234.htm",
+    },
+    "ATT-BASE-EL-QANNA-02": {
+        "verse": "Deuteronomy 4:24",
+        "surface": "אֵל, קַנָּא",
+        "speaker": "Moses warning Israel",
+        "contextRole": "covenantal_warning_descriptor",
+        "selfNamingInVerse": False,
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt0504.htm",
+    },
+}
+ELYON_QANNA_CLAIM_GUARDS = {
+    "CLM-ELYON-GEN14-19-20-PRIEST-BLESS-DOXOLOGY": {"creatorPossessorStatus": "NET_TRANSLATION_ALTERNATIVES_NOT_LEXICAL_CERTAINTY"},
+    "CLM-ELYON-GEN14-22-ABRAM-YHWH-OATH": {
+        "historicalHypothesisStatus": "ATTRIBUTED_GLOSS_HYPOTHESIS_NO_DIRECT_MANUSCRIPT_COLLATION",
+        "creatorPossessorStatus": "NET_TRANSLATION_ALTERNATIVES_NOT_LEXICAL_CERTAINTY",
+    },
+    "CLM-QANNA-EX34-14-NAME-CHARACTER": {"nameEvidenceStatus": "EXPLICIT_NAME_CLAUSE_CHARACTER_EPITHET"},
+    "CLM-QANNA-DEUT4-24-MOSES-WARNING": {"nameEvidenceStatus": "NO_NAME_CLAUSE_DESCRIPTIVE_EPITHET"},
+}
+ELYON_QANNA_SOURCE_TRIANGLES = {
+    "CLM-ELYON-GEN14-19-20-PRIEST-BLESS-DOXOLOGY": {"SRC-MT-MECHON", "SRC-NET-GEN14"},
+    "CLM-ELYON-GEN14-22-ABRAM-YHWH-OATH": {"SRC-MT-MECHON", "SRC-NET-GEN14", "SRC-CARGILL-2019"},
+}
 # The original reviewed seeds are a required minimum, not a cap on future work.
 # Additional claims must pass the same foreign-key, editorial and publication gates.
 ALLOWED_CLAIM_TYPES = {
@@ -600,6 +669,11 @@ REQUIRED_SEMANTIC_RELATIONS = {
     "REL-SABAOTH-BATTLE-SERAPHIM": ("CLM-SABAOTH-1SAM17-45-DAVID-BATTLE", "CLM-SABAOTH-ISA6-3-SERAPHIM-HYMN", "CONTRASTS_SPEAKER_EVIDENCE"),
     "REL-SABAOTH-SERAPHIM-ZECH": ("CLM-SABAOTH-ISA6-3-SERAPHIM-HYMN", "CLM-SABAOTH-ZECH10-3-PROPHETIC-VOICE", "CONTRASTS_SPEAKER_EVIDENCE"),
     "REL-SABAOTH-ISA6-ROM9-QUOTE": ("CLM-SABAOTH-ISA6-3-SERAPHIM-HYMN", "CLM-ROM9-29-SABAOTH-ISAIAH", "LIMITS_INFERENCE"),
+    "REL-ELYON-PRIESTHOOD-BLESSING": ("CLM-ELYON-GEN14-18-PRIEST-NARRATOR", "CLM-ELYON-GEN14-19-20-PRIEST-BLESS-DOXOLOGY", "CONTRASTS_SPEAKER_EVIDENCE"),
+    "REL-ELYON-MELCHIZEDEK-ABRAM": ("CLM-ELYON-GEN14-19-20-PRIEST-BLESS-DOXOLOGY", "CLM-ELYON-GEN14-22-ABRAM-YHWH-OATH", "CONTRASTS_SPEAKER_EVIDENCE"),
+    "REL-ELYON-YHWH-ORIGIN-BOUNDARY": ("CLM-ELYON-GEN14-18-PRIEST-NARRATOR", "CLM-ELYON-GEN14-22-ABRAM-YHWH-OATH", "LIMITS_INFERENCE"),
+    "REL-QANNA-NAME-VERSUS-ATTRIBUTE": ("CLM-QANNA-EX34-14-NAME-CHARACTER", "CLM-QANNA-DEUT4-24-MOSES-WARNING", "CONTRASTS_SPEAKER_EVIDENCE"),
+    "REL-QANNA-OTHER-GOD-CONTRAST": ("CLM-EX20-OTHER-GODS-NEGATIVE", "CLM-QANNA-EX34-14-NAME-CHARACTER", "CONTRASTS_REFERENT"),
 }
 CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-EX3-15-DIVINE-NAME": {"ATT-BASE-YHWH-01"},
@@ -664,6 +738,11 @@ CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-SABAOTH-1SAM17-45-DAVID-BATTLE": {"ATT-BASE-SABAOTH-02"},
     "CLM-SABAOTH-ISA6-3-SERAPHIM-HYMN": {"ATT-BASE-SABAOTH-03"},
     "CLM-SABAOTH-ZECH10-3-PROPHETIC-VOICE": {"ATT-BASE-SABAOTH-04"},
+    "CLM-ELYON-GEN14-18-PRIEST-NARRATOR": {"ATT-BASE-EL-ELYON-01"},
+    "CLM-ELYON-GEN14-19-20-PRIEST-BLESS-DOXOLOGY": {"ATT-BASE-EL-ELYON-02", "ATT-BASE-EL-ELYON-03"},
+    "CLM-ELYON-GEN14-22-ABRAM-YHWH-OATH": {"ATT-BASE-EL-ELYON-04"},
+    "CLM-QANNA-EX34-14-NAME-CHARACTER": {"ATT-BASE-EL-QANNA-01"},
+    "CLM-QANNA-DEUT4-24-MOSES-WARNING": {"ATT-BASE-EL-QANNA-02"},
 }
 
 
@@ -734,6 +813,10 @@ def validate_provenance(
                     continue
                 seen.add(aid)
                 att_by_id[aid] = obs
+                if aid in ELYON_QANNA_LOCUS_CONTROLS:
+                    for field, expected in ELYON_QANNA_LOCUS_CONTROLS[aid].items():
+                        if obs.get(field) != expected:
+                            errors.append(f"provenance: {aid} Elyon/Qanna actor/name/MT printed locus changed ({field})")
                 if aid in SHADDAI_SABAOTH_CONTEXT_CONTROLS:
                     for field, expected in SHADDAI_SABAOTH_CONTEXT_CONTROLS[aid].items():
                         if obs.get(field) != expected:
@@ -889,6 +972,16 @@ def validate_provenance(
         errors.append("provenance: required Yireh/Nissi name-versus-explanation claims missing")
     if not REQUIRED_SHADDAI_SABAOTH_CLAIMS.issubset(claim_map):
         errors.append("provenance: required Shaddai/Sabaoth speaker claims missing")
+    if not REQUIRED_ELYON_QANNA_CLAIMS.issubset(claim_map):
+        errors.append("provenance: required Elyon/Qanna speech/name claims missing")
+    for cid, fields in ELYON_QANNA_CLAIM_GUARDS.items():
+        row = claim_map.get(cid, {})
+        for field, expected in fields.items():
+            if row.get(field) != expected:
+                errors.append(f"provenance: {cid} Elyon/Qanna cautious attribution and name evidence lost ({field})")
+    for cid, needed in ELYON_QANNA_SOURCE_TRIANGLES.items():
+        if not needed.issubset(set(claim_map.get(cid,{}).get("sourceIds", []))):
+            errors.append(f"provenance: {cid} NET / Cargill attribution source link lost")
     ex6 = claim_map.get("CLM-ELSHADDAI-EX6-RETROSPECTIVE-REVELATION", {})
     for field, expected in EX6_UNCERTAINTY_CONTROLS.items():
         if ex6.get(field) != expected:
@@ -1009,8 +1102,8 @@ def main() -> int:
         for p in problems:
             print("FAIL: " + p, file=sys.stderr)
         return 1
-    print("PASS: 105 attestation IDs / 4 editions; 56 provisional claims, "
-          "41 relations, 8 Shaddai/Sabaoth discourse controls and all publication HOLD gates")
+    print("PASS: 105 attestation IDs / 4 editions; 61 provisional claims, "
+          "46 relations, 6 Elyon/Qanna original-text speaker controls and all publication HOLD gates")
     return 0
 
 

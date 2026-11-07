@@ -1126,6 +1126,130 @@ class ProvenanceGraphTests(unittest.TestCase):
         item["relationType"]="CONTRASTS_REFERENT"
         self.assertTrue(any("required semantic boundary" in e for e in self.check(claims=d)))
 
+    def test_elyon_narrator_not_melchizedek_speaker(self) -> None:
+        d,o=self.mutate("el-elyon","baseline",0)
+        o["speaker"]="Melchizedek"
+        self.assertTrue(any("Elyon/Qanna actor/name/MT printed locus changed" in e for e in self.check(baseline=d)))
+
+    def test_elyon_gen14_18_priest_not_oath(self) -> None:
+        d,o=self.mutate("el-elyon","baseline",0)
+        o["speechAct"]="oath_invocation"
+        self.assertTrue(any("Elyon/Qanna actor/name/MT printed locus changed" in e for e in self.check(baseline=d)))
+
+    def test_elyon_gen14_18_lamed_not_lost(self) -> None:
+        d,o=self.mutate("el-elyon","baseline",0)
+        o["surface"]="אֵל עֶלְיוֹן"
+        self.assertTrue(any("Elyon/Qanna actor/name/MT printed locus changed" in e for e in self.check(baseline=d)))
+
+    def test_elyon_gen14_19_melchizedek_not_abram(self) -> None:
+        d,o=self.mutate("el-elyon","baseline",1)
+        o["speaker"]="Abram"
+        self.assertTrue(any("Elyon/Qanna actor/name/MT printed locus changed" in e for e in self.check(baseline=d)))
+
+    def test_elyon_gen14_19_blessing_not_doxology(self) -> None:
+        d,o=self.mutate("el-elyon","baseline",1)
+        o["speechAct"]="doxology"
+        self.assertTrue(any("Elyon/Qanna actor/name/MT printed locus changed" in e for e in self.check(baseline=d)))
+
+    def test_elyon_gen14_20_doxology_not_blessing(self) -> None:
+        d,o=self.mutate("el-elyon","baseline",2)
+        o["speechAct"]="blessing"
+        self.assertTrue(any("Elyon/Qanna actor/name/MT printed locus changed" in e for e in self.check(baseline=d)))
+
+    def test_elyon_gen14_20_unprefixed_form_protected(self) -> None:
+        d,o=self.mutate("el-elyon","baseline",2)
+        o["surface"]="לְאֵל עֶלְיוֹן"
+        self.assertTrue(any("Elyon/Qanna actor/name/MT printed locus changed" in e for e in self.check(baseline=d)))
+
+    def test_elyon_gen14_22_abram_oath_speaker(self) -> None:
+        d,o=self.mutate("el-elyon","baseline",3)
+        o["speaker"]="Melchizedek"
+        self.assertTrue(any("Elyon/Qanna actor/name/MT printed locus changed" in e for e in self.check(baseline=d)))
+
+    def test_elyon_gen14_22_yhwh_explicit_mt_not_silent(self) -> None:
+        d,o=self.mutate("el-elyon","baseline",3)
+        o["surface"]="אֵל עֶלְיוֹן"
+        self.assertTrue(any("Elyon/Qanna actor/name/MT printed locus changed" in e for e in self.check(baseline=d)))
+
+    def test_qanna_ex34_name_clause_protected(self) -> None:
+        d,o=self.mutate("el-qanna","baseline",0)
+        o["nameClause"]="none"
+        self.assertTrue(any("Elyon/Qanna actor/name/MT printed locus changed" in e for e in self.check(baseline=d)))
+
+    def test_qanna_ex34_other_god_not_yhwh(self) -> None:
+        d,o=self.mutate("el-qanna","baseline",0)
+        o["contrast"]="לְאֵל קַנָּא"
+        self.assertTrue(any("Elyon/Qanna actor/name/MT printed locus changed" in e for e in self.check(baseline=d)))
+
+    def test_qanna_ex34_speaker_not_moses(self) -> None:
+        d,o=self.mutate("el-qanna","baseline",0)
+        o["speaker"]="Moses warning Israel"
+        self.assertTrue(any("Elyon/Qanna actor/name/MT printed locus changed" in e for e in self.check(baseline=d)))
+
+    def test_qanna_deut4_moses_not_yhwh(self) -> None:
+        d,o=self.mutate("el-qanna","baseline",1)
+        o["speaker"]="YHWH"
+        self.assertTrue(any("Elyon/Qanna actor/name/MT printed locus changed" in e for e in self.check(baseline=d)))
+
+    def test_qanna_deut4_no_name_statement(self) -> None:
+        d,o=self.mutate("el-qanna","baseline",1)
+        o["selfNamingInVerse"]=True
+        self.assertTrue(any("Elyon/Qanna actor/name/MT printed locus changed" in e for e in self.check(baseline=d)))
+
+    def test_qanna_deut4_fiery_descriptor_not_exodus_syntax(self) -> None:
+        d,o=self.mutate("el-qanna","baseline",1)
+        o["surface"]="קַנָּא שְׁמוֹ"
+        self.assertTrue(any("Elyon/Qanna actor/name/MT printed locus changed" in e for e in self.check(baseline=d)))
+
+    def test_elyon_qanna_five_claims_cover_six_printed_attestations(self) -> None:
+        expected = {
+            "CLM-ELYON-GEN14-18-PRIEST-NARRATOR":{"ATT-BASE-EL-ELYON-01"},
+            "CLM-ELYON-GEN14-19-20-PRIEST-BLESS-DOXOLOGY":{"ATT-BASE-EL-ELYON-02","ATT-BASE-EL-ELYON-03"},
+            "CLM-ELYON-GEN14-22-ABRAM-YHWH-OATH":{"ATT-BASE-EL-ELYON-04"},
+            "CLM-QANNA-EX34-14-NAME-CHARACTER":{"ATT-BASE-EL-QANNA-01"},
+            "CLM-QANNA-DEUT4-24-MOSES-WARNING":{"ATT-BASE-EL-QANNA-02"},
+        }
+        for cid, att in expected.items():
+            row=next(r for r in self.claims["records"] if r["claimId"]==cid)
+            self.assertEqual(att,set(row["attestationIds"]))
+            self.assertEqual("RESEARCH_HOLD",row["editorialState"])
+            self.assertEqual("BLOCKED",row["publicationState"])
+
+    def test_elyon_gen14_22_cargill_gloss_not_upgraded_to_verified_variant(self) -> None:
+        d=copy.deepcopy(self.claims)
+        row=next(r for r in d["records"] if r["claimId"]=="CLM-ELYON-GEN14-22-ABRAM-YHWH-OATH")
+        row["historicalHypothesisStatus"]="MANUSCRIPT_OMISSION_PROVED"
+        self.assertTrue(any("Elyon/Qanna cautious attribution and name evidence lost" in e for e in self.check(claims=d)))
+
+    def test_elyon_gen14_22_cargill_secondary_source_cannot_be_dropped(self) -> None:
+        d=copy.deepcopy(self.claims)
+        row=next(r for r in d["records"] if r["claimId"]=="CLM-ELYON-GEN14-22-ABRAM-YHWH-OATH")
+        row["sourceIds"]=["SRC-MT-MECHON","SRC-NET-GEN14"]
+        self.assertTrue(any("NET / Cargill attribution source link lost" in e for e in self.check(claims=d)))
+
+    def test_elyon_creator_possessor_lexical_alternatives_still_visible(self) -> None:
+        d=copy.deepcopy(self.claims)
+        row=next(r for r in d["records"] if r["claimId"]=="CLM-ELYON-GEN14-19-20-PRIEST-BLESS-DOXOLOGY")
+        row["creatorPossessorStatus"]="CREATOR_ONLY_CERTAIN"
+        self.assertTrue(any("Elyon/Qanna cautious attribution and name evidence lost" in e for e in self.check(claims=d)))
+
+    def test_qanna_deut4_cannot_be_promoted_to_explicit_name_clause(self) -> None:
+        d=copy.deepcopy(self.claims)
+        row=next(r for r in d["records"] if r["claimId"]=="CLM-QANNA-DEUT4-24-MOSES-WARNING")
+        row["nameEvidenceStatus"]="EXPLICIT_NAME_CLAUSE_CHARACTER_EPITHET"
+        self.assertTrue(any("Elyon/Qanna cautious attribution and name evidence lost" in e for e in self.check(claims=d)))
+
+    def test_qanna_ex34_explicit_name_clause_claim_required(self) -> None:
+        d=copy.deepcopy(self.claims)
+        d["records"]=[r for r in d["records"] if r["claimId"]!="CLM-QANNA-EX34-14-NAME-CHARACTER"]
+        self.assertTrue(any("required Elyon/Qanna speech/name claims missing" in e for e in self.check(claims=d)))
+
+    def test_elyon_melchizedek_abram_edge_must_distinguish_speakers(self) -> None:
+        d=copy.deepcopy(self.claims)
+        row=next(r for r in d["semanticRelations"] if r["relationId"]=="REL-ELYON-MELCHIZEDEK-ABRAM")
+        row["relationType"]="CONTRASTS_REFERENT"
+        self.assertTrue(any("required semantic boundary" in e for e in self.check(claims=d)))
+
 
 if __name__ == "__main__":
     unittest.main()
