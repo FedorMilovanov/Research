@@ -13,7 +13,7 @@
     "extensionRecords": 13,
     "contextAttestations": 105,
     "sourceRegisterEntries": 45,
-    "regressionTests": 157,
+    "regressionTests": 159,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
     "allSixCiChecks": "SUCCESS_ON_REVIEWED_COMMIT",
@@ -167,9 +167,11 @@
         "data/names_ledger_v1.json: three Exodus first-person referents corrected from Moses to God and addressee=Moses",
         "data/speech_intertext_contract_v1.json: independently locked copies corrected without changing original-language text",
         "data/names_claim_registry_v1.json: CLM-EX3-EHYEH-DIVINE-REFERENT + required typed semantic link",
-        "test_validate_names_provenance.py: six new regressions for referent, addressee, speaker and claim edge"
+        "test_validate_names_provenance.py: six new regressions for referent, addressee, speaker and claim edge",
+        "validate_names_ledger.py: independent referent/addressee semantic invariant checks both ledger and contract, even if both are modified identically",
+        "test_validate_names_ledger.py: 2 independent negative tests reject a corrupted copied source and a missing contract addressee"
       ],
-      "verification": "105_STABLE_ATTESTATION_EDITION_SOURCE_LINKS; 15_PROVISIONAL_CLAIMS_7_RELATIONS; 20_DISTINCT_ATTESTATIONS_LINKED_TO_CLAIMS; 85_WITHOUT_CLAIM; 3_EXODUS_REFERENT_AND_ADDRESSEE_ERRORS_FIXED_IN_LEDGER_AND_CONTRACT; 226_TESTS_LOCAL_PASS; EXACT_SHA_CI_PENDING; NO_INDEPENDENT_SCHOLARLY_CLAIM_APPROVAL",
+      "verification": "105_STABLE_ATTESTATION_EDITION_SOURCE_LINKS; 15_PROVISIONAL_CLAIMS_7_RELATIONS; 20_DISTINCT_ATTESTATIONS_LINKED_TO_CLAIMS; 85_WITHOUT_CLAIM; 3_EXODUS_REFERENT_AND_ADDRESSEE_ERRORS_FIXED_IN_LEDGER_AND_CONTRACT; 228_TESTS_LOCAL_PASS; EXACT_SHA_CI_PENDING; NO_INDEPENDENT_SCHOLARLY_CLAIM_APPROVAL",
       "closureAt": null,
       "owner": "Research editorial"
     },
@@ -650,12 +652,13 @@
       "Resolved four SBLGNT/THGNT multi-edition original-language URLs with pinned single-edition links",
       "Updated three independent locked contracts and provenance mutation tests",
       "Added four provisional research claims and two semantic typed links, 18/105 attestations referenced",
-      "220 local tests PASS: 157 corpus + 16 plan + 47 provenance; GitHub exact-sha CI pending",
+      "220 local tests PASS: 159 corpus + 16 plan + 47 provenance; GitHub exact-sha CI pending",
       "Found and corrected 3 Exodus 3 Hebrew/Greek observations with Moses incorrectly stored as referent; added separate addressee=Moses",
       "Updated three independently locked speech/intertext contract copies",
       "Registered new Exodus divine speech role claim and a semantic relation",
-      "Added six adversarial regressions; 226 total tests pass locally (157 corpus + 16 plan + 53 provenance)",
-      "Added a fifteen-claim semantic scope dossier without awarding any scholarly approval"
+      "Added six adversarial regressions; 228 total tests pass locally (159 corpus + 16 plan + 53 provenance)",
+      "Added a fifteen-claim semantic scope dossier without awarding any scholarly approval",
+      "Independent anti-tautology guard rejects semantic corruption copied into both ledger and locked contract"
     ],
     "stillOpen": [
       "NG-02: 85 attestation IDs have no claim references; 20 referenced do not constitute independent scholarly certification",

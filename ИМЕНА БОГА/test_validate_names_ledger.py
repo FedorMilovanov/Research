@@ -1001,5 +1001,25 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("extension/yah unreviewed Product promotion" in e for e in validate_full_coverage(self.baseline, d)))
 
 
+    def test_speech_contract_cannot_drop_exodus_moses_addressee(self) -> None:
+        c = copy.deepcopy(self.speech_contract)
+        row = next(x for x in c["lockedAttestations"] if x["locusId"] == "ehyeh-ex3-greek")
+        row.pop("addressee")
+        self.assertTrue(any("divine referent/addressee error in locked contract" in e
+                            for e in validate_speech_intertext(self.baseline, c)))
+
+    def test_wrong_referent_in_both_ledger_and_contract_still_fails(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        c = copy.deepcopy(self.speech_contract)
+        row = next(x for x in d["records"] if x["id"] == "ehyeh")
+        for occ in row["attestations"]:
+            occ["referent"] = "Moses"
+        for occ in c["lockedAttestations"]:
+            if occ.get("baselineId") == "ehyeh":
+                occ["referent"] = "Moses"
+        self.assertTrue(any("divine referent/addressee error" in e
+                            for e in validate_speech_intertext(d, c)))
+
+
 if __name__ == "__main__":
     unittest.main()

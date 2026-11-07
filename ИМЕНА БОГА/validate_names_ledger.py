@@ -1301,6 +1301,14 @@ def validate_speech_intertext(baseline: dict, contract: dict) -> list[str]:
         or item("ehyeh-ex3-greek").get("rightsState") != "PERMISSION_REQUIRED"
         or item("ehyeh-ex3-greek").get("intertextRelation") != "ALLUSION_POSSIBLE_NOT_IDENTICAL_FULL_QUOTE"):
         errors.append("speech-intertext: LXX Exodus 3:14 full ὁ ὤν / license / contextual relation erased")
+    # Independent fact invariant: a copied contract and the source ledger must
+    # not mutually certify the same mistaken addressee/referent interpretation.
+    for loc in ("ehyeh-ex3-promise", "ehyeh-ex3-hebrew", "ehyeh-ex3-greek"):
+        for label, source_row in (("ledger", actual.get(loc, {})),
+                                  ("locked contract", expected.get(loc, {}))):
+            if (source_row.get("referent") != "God of Israel, the divine first-person speaker"
+                or source_row.get("addressee") != "Moses"):
+                errors.append(f"speech-intertext: {loc} divine referent/addressee error in {label}")
     return errors
 
 
