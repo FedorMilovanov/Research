@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 39,
+    "sourceRecords": 45,
     "approvedForProduct": 0
   },
   "records": [
@@ -959,17 +959,170 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ]
+    },
+    {
+      "id": "SRC-SBLGNT-DIGITAL-NT",
+      "title": "SBLGNT 2010 online Greek New Testament passage surfaces",
+      "creator": "Michael W. Holmes, Society of Biblical Literature and Logos",
+      "year": 2010,
+      "url": "https://www.biblegateway.com/passage/?search=John+9%3A9&version=SBLGNT",
+      "objectType": "modern_greek_nt_edited_digital_verse_surfaces",
+      "sourceRole": "GREEK_NT_EDITION_CORPUS_LEVEL_TEXT_WITNESS",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "sourceObjectState": "Many verse-specific BibleGateway displays of SBLGNT Greek have been inspected in previous dossiers; this generic record links edition family, not a manuscript apparatus or proof that every NT verse was read here.",
+      "supportedUse": "Reference exact linked SBLGNT passage URL in each of 25 existing research occurrence records, with Greek edition ID, without misusing a different verse-specific research card.",
+      "forbiddenUse": "Treat generic provenance reference as direct critical apparatus or infer hosting site rights from separate SBLGNT publisher CC BY Greek text license; auto-approve Product content.",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "SRC-TMSJ-VALDIZAN-EX3-2024",
+      "title": "Aaron Valdizan, The Significance of the Divine Name: An Analysis of Exodus 3:14–15, TMSJ 35/1, 53–74",
+      "creator": "Aaron Valdizan",
+      "url": "https://tms.edu/wp-content/uploads/2024/11/TMSJ-35.1-rev.11.24.pdf",
+      "objectType": "published_scholarly_article_title_abstract_and_selected_pages",
+      "sourceRole": "ATTRIBUTED_EXODUS3_DIVINE_NAME_TRANSLATION_2024",
+      "printedPages": "53–74",
+      "pdfStartPageZeroBased": 54,
+      "sourceObjectState": "Original publisher PDF physical page 54, printed 53, and abstract directly inspected. Remaining full article and referenced earlier scholarly work not yet read/collated.",
+      "supportedUse": "Attribute Valdizan 2024 thesis on YHWH personal name and Ex3:14–15 and original bibliography Allen P. Ross 2003 pp323–339 for Ex6:3 question",
+      "forbiddenUse": "Treat his proposed pronunciation/translation as the only scholarly result or an ancient manuscript; claim fully read all 22 pages; republish the copyrighted article outside publisher's terms",
+      "year": 2024,
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "licenseScope": "TMSJ printing rights: classroom/church free copies up to 100 with source marking as specified; any other reproduction requires publisher permission. No automatic Product reprint."
+    },
+    {
+      "id": "SRC-TMSJ-VALDIZAN-ACTS2-2024",
+      "title": "Aaron Valdizan, The Significance of the Divine Name in Peter’s Pentecost Sermon, TMSJ 35/2, 257–272",
+      "creator": "Aaron Valdizan",
+      "url": "https://tms.edu/wp-content/uploads/2024/12/TMSJ-35.2-rev.11.24.pdf",
+      "objectType": "published_scholarly_article_title_abstract_and_selected_pages",
+      "sourceRole": "ATTRIBUTED_ACTS2_YHWH_KYRIOS_CHRISTOLOGY_2024",
+      "printedPages": "257–272",
+      "pdfStartPageZeroBased": 109,
+      "sourceObjectState": "Original publisher PDF physical page 109 (printed 257) and abstract inspected; subsequent full argument and NT textual apparatus not critically reviewed.",
+      "supportedUse": "Attribute Valdizan argument that Peter's Acts2:14–36 applies Hebrew YHWH passages to Jesus through Greek kyrios; check quotations and original editions independently",
+      "forbiddenUse": "Conflate Greek κύριος with identical Hebrew יהוה orthography; treat single abstract as critical NT manuscript evidence or license for long quotes",
+      "year": 2024,
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "licenseScope": "TMSJ printing rights: classroom/church free copies up to 100 with source marking as specified; any other reproduction requires publisher permission. No automatic Product reprint."
+    },
+    {
+      "id": "SRC-TMSJ-CHOU-TRANSLATION-2024",
+      "title": "Abner Chou, Unless Someone Guides Me? Some Theological Underpinnings of Translation and the Need for an Expositor, TMSJ 35/1, 5–26",
+      "creator": "Abner Chou",
+      "url": "https://tms.edu/wp-content/uploads/2024/11/TMSJ-35.1-rev.11.24.pdf",
+      "objectType": "published_scholarly_translation_theory_article",
+      "sourceRole": "ATTRIBUTED_TRANSLATION_FORMAL_EQUIVALENCE_THEOLOGY_2024",
+      "printedPages": "5–26",
+      "pdfStartPageZeroBased": 6,
+      "sourceObjectState": "Publisher PDF physical page 6 / printed 5 and abstract checked by image; article not read in its entirety.",
+      "supportedUse": "Attribute Chou case for formal equivalence and translator versus expositor roles as a confessional hermeneutical position; compare with independent translation theory",
+      "forbiddenUse": "Call author's preferred translation philosophy universal academic consensus or proof of original YHWH pronunciation; publish extended passages without publisher permission",
+      "year": 2024,
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "licenseScope": "TMSJ printing rights: classroom/church free copies up to 100 with source marking as specified; any other reproduction requires publisher permission. No automatic Product reprint."
+    },
+    {
+      "id": "SRC-TMSJ-BARRICK-TRANSLATION-2024",
+      "title": "William D. Barrick (Уильям Беррик), An Early Scriptural Example of Bible Translation, TMSJ 35/1, 45–52",
+      "creator": "William D. Barrick",
+      "url": "https://tms.edu/wp-content/uploads/2024/11/TMSJ-35.1-rev.11.24.pdf",
+      "objectType": "published_scholarly_translation_historical_article",
+      "sourceRole": "ATTRIBUTED_BIBLICAL_TRANSLATION_NEHEMIAH8_2024",
+      "printedPages": "45–52",
+      "pdfStartPageZeroBased": 46,
+      "sourceObjectState": "Published title and author located in publisher contents pp45–52, no full page-by-page article review or independent ancient-language verdict.",
+      "supportedUse": "Document Barrick's research agenda on translation/explanation in Nehemiah 8, not automatically proven direct Aramaic translation of every speech act",
+      "forbiddenUse": "Pretend the entire argument or ancient language history was reviewed; copy copyrighted pages to Product; claim all Bible translation models invalid from one article",
+      "year": 2024,
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "licenseScope": "TMSJ printing rights: classroom/church free copies up to 100 with source marking as specified; any other reproduction requires publisher permission. No automatic Product reprint."
+    },
+    {
+      "id": "SRC-TMSJ-CHOU-DANIEL-2024",
+      "title": "Abner Chou, All That Is In a Name: Daniel’s Deliberate Christology and the Concept of the Son of Man, TMSJ 35/2",
+      "creator": "Abner Chou",
+      "url": "https://tms.edu/wp-content/uploads/2024/12/TMSJ-35.2-rev.11.24.pdf",
+      "objectType": "published_scholarly_article_publisher_contents_only",
+      "sourceRole": "ATTRIBUTED_DANIEL7_CHRISTOLOGY_JOURNAL_CATALOG_2024",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "sourceObjectState": "Publisher journal contents confirms title and author; precise article pagination and full argument not checked.",
+      "supportedUse": "Queue author and title for future independent evaluation of Daniel7 Aramaic Old of Days and son-of-man narrative roles",
+      "forbiddenUse": "Claim exact page numbers, approved translation, or that identity of the two Daniel7 figures is already established",
+      "year": 2024,
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "LOCATOR_HOLD",
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "licenseScope": "TMSJ printing rights: classroom/church free copies up to 100 with source marking as specified; any other reproduction requires publisher permission. No automatic Product reprint."
     }
   ],
   "auditRevision": {
     "date": "2026-11-07",
     "newSources": [
-      "SRC-JBQ-YAH-2014",
-      "SRC-NET-PS68"
+      "SRC-SBLGNT-DIGITAL-NT",
+      "SRC-TMSJ-VALDIZAN-EX3-2024",
+      "SRC-TMSJ-VALDIZAN-ACTS2-2024",
+      "SRC-TMSJ-CHOU-TRANSLATION-2024",
+      "SRC-TMSJ-BARRICK-TRANSLATION-2024",
+      "SRC-TMSJ-CHOU-DANIEL-2024"
     ],
-    "correctedSources": [
-      "SRC-SUCHARD-ELOHIM-2025"
-    ],
-    "rationale": "Direct SAGE publisher confirms Suchard article full HTML and CC BY 4.0 while hypothesis remains B1; new publisher Yah 2014 and NET textual criticism source roles."
+    "rationale": "NG02 adds corpus-level exact-verse SBLGNT edition provenance; NG05/08/09 add original TMSJ 2024 source objects, article permissions and title-only vs selected-page scope."
   }
 }
