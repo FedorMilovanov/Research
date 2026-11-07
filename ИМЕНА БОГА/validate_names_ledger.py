@@ -211,10 +211,34 @@ def validate(data: dict) -> list[str]:
     for rid in attestations_required:
         if not source_roles.get(rid):
             errors.append(f"{rid}: missing assertion with claim boundary")
-    if index.get("el-shaddai", {}).get("attestations", [{}])[-1].get("surface") != "בְּאֵל שַׁדָּי":
-        errors.append("Exodus 6:3 precise pointed Shaddai surface changed")
-    if index.get("el-bethel", {}).get("attestations", [{}])[0].get("namedObject") != "place":
-        errors.append("Genesis 35:7 is place-naming, not altar-naming")
+    # Exact checked extracts guard prepositions, conjunctions and verse-specific pointing.
+    # Separate from manuscript collation; changing an edition requires explicit review.
+    expected_surfaces = {
+        "el-shaddai": {
+            "Genesis 17:1": "אֵל שַׁדַּי",
+            "Genesis 28:3": "וְאֵל שַׁדַּי",
+            "Genesis 35:11": "אֵל שַׁדַּי",
+            "Exodus 6:3": "בְּאֵל שַׁדָּי",
+        },
+        "el-elyon": {
+            "Genesis 14:18": "לְאֵל עֶלְיוֹן",
+            "Genesis 14:19": "לְאֵל עֶלְיוֹן",
+            "Genesis 14:20": "אֵל עֶלְיוֹן",
+            "Genesis 14:22": "יְהוָה אֵל עֶלְיוֹן",
+        },
+        "el-olam": {"Genesis 21:33": "יְהוָה אֵל עוֹלָם"},
+        "el-roi": {"Genesis 16:13": "אַתָּה אֵל רֳאִי"},
+        "el-bethel": {"Genesis 35:7": "אֵל בֵּית-אֵל"},
+    }
+    for rid, by_verse in expected_surfaces.items():
+        occurrences = index.get(rid, {}).get("attestations")
+        if not isinstance(occurrences, list):
+            occurrences = []
+        for verse, exact in by_verse.items():
+            observation = next((x for x in occurrences
+                                if isinstance(x, dict) and x.get("verse") == verse), {})
+            if observation.get("surface") != exact:
+                errors.append(f"{rid}/{verse}: exact digitally checked Hebrew surface changed")
 
     counts = data.get("counts", {})
     if not isinstance(counts, dict):
