@@ -1,0 +1,7 @@
+# Exactly one reviewed false positive from the Names of God research bibliography.
+# GitHub Gitleaks 8.24.3; NOT a token/credential.
+# OhioLINK 2002 University of Cincinnati dissertation *public accession identifier*
+# in a scholarly catalogue query parameter, flagged as generic-api-key.
+# Fingerprint scoped to exact introducing commit + file + rule + line.
+# This DOES NOT suppress new matches, other commits, paths, or rule instances.
+9288a809dd91304fced63a7f6620fe20d14b0dcc:ИМЕНА БОГА/data/source_access_register_v1.json:generic-api-key:87

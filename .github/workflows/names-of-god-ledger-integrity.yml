@@ -1,0 +1,40 @@
+name: Names of God ledger integrity
+
+on:
+  pull_request:
+    paths:
+      - 'ИМЕНА БОГА/**'
+      - '.github/workflows/names-of-god-ledger-integrity.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'ИМЕНА БОГА/**'
+      - '.github/workflows/names-of-god-ledger-integrity.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate-names-ledger:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Set up Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.11'
+      - name: Validate Names of God research ledger (read-only)
+        run: python3 'ИМЕНА БОГА/validate_names_ledger.py'
+      - name: Run adverse-mutation regression tests (read-only)
+        run: python3 -m unittest discover -s 'ИМЕНА БОГА' -p 'test_validate_names_ledger.py' -v
+      - name: Validate persistent research workplan (read-only)
+        run: python3 'ИМЕНА БОГА/validate_names_workplan.py'
+      - name: Run workplan state and media negative regression tests (read-only)
+        run: python3 -m unittest discover -s 'ИМЕНА БОГА' -p 'test_validate_names_workplan.py' -v
+      - name: Validate canonical text-edition and claim-to-source provenance graph (read-only)
+        run: python3 'ИМЕНА БОГА/validate_names_provenance.py'
+      - name: Run provenance anti-conflation and rights regression tests (read-only)
+        run: python3 -m unittest discover -s 'ИМЕНА БОГА' -p 'test_validate_names_provenance.py' -v

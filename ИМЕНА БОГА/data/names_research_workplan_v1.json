@@ -1,0 +1,816 @@
+{
+  "schemaVersion": 1,
+  "planId": "NAMES_OF_GOD_MASTER_WORKPLAN",
+  "createdAt": "2026-11-07",
+  "updatedAt": "2026-11-07",
+  "statusOwner": "ИМЕНА БОГА/data/names_research_workplan_v1.json",
+  "humanGuide": "ИМЕНА БОГА/11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md",
+  "mediaResearch": "ИМЕНА БОГА/12_TMS_BARRICK_CHOU_SOURCE_REVIEW.md",
+  "scope": "Research branch draft PR379 only, no site or main mutations",
+  "baseline": {
+    "draftPr": "https://github.com/FedorMilovanov/Research/pull/379",
+    "arenaRecords": 29,
+    "extensionRecords": 13,
+    "contextAttestations": 105,
+    "sourceRegisterEntries": 48,
+    "regressionTests": 165,
+    "criticalCollationsCompleted": 0,
+    "productApprovals": 0,
+    "allSixCiChecks": "SUCCESS_ON_REVIEWED_COMMIT",
+    "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
+    "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
+    "planRegressionTests": 16,
+    "provenanceRegressionTests": 207,
+    "canonicalEditions": 4,
+    "curatedClaims": 61,
+    "allAttestationForeignKeys": 105,
+    "editionSpecificGreekUrlsVerified": 18,
+    "unselectedGreekEditionUrls": 0,
+    "attestationsReferencedByClaims": 77,
+    "attestationsWithoutClaimReference": 28,
+    "typedClaimRelations": 46,
+    "correctedExodusDivineReferentRows": 3,
+    "semanticScopeAudits": 15,
+    "independentScholarlyClaimApprovals": 0,
+    "propheticRoyalCityClaims": 3,
+    "registeredPeerReviewedSelectedPageSources": 1,
+    "rockReferentAttestations": 5,
+    "rockPronounVerse30AwaitingDiscourseReview": true,
+    "immanuelDistinctEvidenceLociGuarded": 5,
+    "immanuelTextualCriticalCollationCompleted": 0,
+    "revelationSpeakerEditionAttestations": 6,
+    "revelationSecondaryCommentariesRegistered": 2,
+    "historicalMissingLocusIdsRecounted": 55,
+    "lexicalReferentAndNamedObjectGuards": 8,
+    "covenantShepherdAttestationsGuarded": 8,
+    "covenantSpeakerSpeechVersusPrayerDistinctions": 2,
+    "johnEgoDiscourseGuards": 4,
+    "yirehNissiPlaceAltarExplanationGuards": 4,
+    "shaddaiSabaothSpeakerGuards": 8,
+    "elyonQannaSpeakerNameGuards": 6
+  },
+  "allowedStatuses": [
+    "DONE",
+    "IN_PROGRESS",
+    "OPEN",
+    "BLOCKED_SOURCE",
+    "BLOCKED_ACCESS",
+    "BLOCKED_ARTIFACT",
+    "BLOCKED_DEPENDENCY"
+  ],
+  "closureRule": "DONE only when acceptance evidence actually exists with exact source or test witness; transcript existence not full video watch; a branch CI green is not manuscript verification.",
+  "phases": [
+    {
+      "id": "PH0",
+      "label": "Control plane and reproducible evidence model",
+      "tasks": [
+        "NG-00",
+        "NG-01",
+        "NG-02",
+        "NG-03"
+      ],
+      "exit": "Source IDs, edition IDs and claim IDs have no orphaned references; supersession documented."
+    },
+    {
+      "id": "PH1",
+      "label": "TMS and translation-media primary-source review",
+      "tasks": [
+        "NG-05",
+        "NG-06",
+        "NG-07",
+        "NG-08",
+        "NG-09"
+      ],
+      "exit": "Both Zhakevich name lectures and priority Chou/Barrick materials reviewed against originals and documented with timestamps, not transcript-only claims."
+    },
+    {
+      "id": "PH2",
+      "label": "Critical-text and diachronic philology",
+      "tasks": [
+        "NG-04",
+        "NG-10",
+        "NG-11",
+        "NG-12"
+      ],
+      "exit": "Publisher critical apparatus loci, witnesses, alternatives and exact page anchors reviewed independently."
+    },
+    {
+      "id": "PH3",
+      "label": "Theological and editorial claim-level certification",
+      "tasks": [
+        "NG-13"
+      ],
+      "exit": "Approved claims distinguished from disputed claims; no unauthorized promotion."
+    },
+    {
+      "id": "PH4",
+      "label": "Arena source/runtime QA and Product handoff",
+      "tasks": [
+        "NG-14",
+        "NG-15"
+      ],
+      "exit": "Exact build audited, rights checked, explicit signoff and deployment verification external to Research."
+    }
+  ],
+  "tasks": [
+    {
+      "id": "NG-00",
+      "priority": "P0",
+      "title": "Зафиксировать точку продолжения и статус PR #379",
+      "status": "DONE",
+      "dependsOn": [],
+      "acceptance": [
+        "Исходный SHA 70442271aadf1bcae2afeaad729336218874f180 проверен: PR draft open, 6/6 CI success; 29+13 ID, 105 употреблений, 39 источников, 157 тестов, 0 допусков"
+      ],
+      "evidence": [
+        "PR #379",
+        "workflow checks for exact SHA"
+      ],
+      "verification": "GITHUB_6_OF_6_SUCCESS_AND_REPO_INSPECTION_2026-11-07",
+      "closureAt": "2026-11-07",
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-01",
+      "priority": "P0",
+      "title": "Единый живой план, правила обновления статусов и приёмки",
+      "status": "DONE",
+      "dependsOn": [
+        "NG-00"
+      ],
+      "acceptance": [
+        "Один machine-status SSOT и один человекочитаемый план; все задания имеют постоянный ID, приоритет, зависимости, критерии приёмки, доказательство закрытия, явное состояние HOLD"
+      ],
+      "evidence": [
+        "11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md",
+        "data/names_research_workplan_v1.json",
+        "GitHub workflow Names of God ledger integrity run 42333369066, head b0a7730, complete success (all 6 job steps)",
+        "ИМЕНА БОГА/validate_names_workplan.py",
+        "ИМЕНА БОГА/test_validate_names_workplan.py"
+      ],
+      "verification": "EXACT_SHA_b0a77301289a80f10ee71ce2babe7dbd254325ab_NAMES_LEDGER_WORKFLOW_RUN_42333369066_SUCCESS_ALL_6_STEPS",
+      "closureAt": "2026-11-07",
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-02",
+      "priority": "P0",
+      "title": "Нормализация evidence graph: ID утверждения → употребление → редакция → источник",
+      "status": "IN_PROGRESS",
+      "dependsOn": [
+        "NG-01"
+      ],
+      "acceptance": [
+        "Каждому доказательному утверждению присвоен claimId и тип (факт/морфология/толкование/гипотеза); все 105 употреблений имеют проверенный sourceId и editionId; 0 потерянных ссылок",
+        "Полностью типизированный граф должен иметь отдельное независимое CI и не терять 55 исторических записей без locusId; когда всё сойдётся, проверить сохраняемость ID при новой версии."
+      ],
+      "evidence": [
+        "data/names_ledger_v1.json",
+        "data/names_extension_ledger_v1.json",
+        "data/source_access_register_v1.json",
+        "data/names_edition_registry_v1.json",
+        "data/names_claim_registry_v1.json",
+        "ИМЕНА БОГА/data/names_ledger_v1.json: 87 new attestation/edition/source identifiers",
+        "ИМЕНА БОГА/data/names_extension_ledger_v1.json: 18 new attestation/edition/source identifiers",
+        "data/names_claim_registry_v1.json: four stable semantic claim relationships, all publication-blocked",
+        "validate_names_provenance.py: curated core as immutable minimum with typed extensible additions",
+        "test_validate_names_provenance.py: 32 positive and adversarial graph tests, local run pending CI",
+        "14_GREEK_EDITION_PINNING_AND_CLAIM_QA_20261107.md: publisher-edition verification of 4 Greek original-language links",
+        "three locked attestation JSON contracts upgraded to single-edition URLs",
+        "data/names_claim_registry_v1.json: 14 provisional source-linked claims, 6 typed semantic edges",
+        "test_validate_names_provenance.py: 47 provenance tests, including 15 new mutation checks on this wave",
+        "15_CLAIM_SEMANTIC_ROLE_AUDIT_20261107.md: 15 claim-level scope and interpretation boundary review",
+        "data/names_ledger_v1.json: three Exodus first-person referents corrected from Moses to God and addressee=Moses",
+        "data/speech_intertext_contract_v1.json: independently locked copies corrected without changing original-language text",
+        "data/names_claim_registry_v1.json: CLM-EX3-EHYEH-DIVINE-REFERENT + required typed semantic link",
+        "test_validate_names_provenance.py: six new regressions for referent, addressee, speaker and claim edge",
+        "validate_names_ledger.py: independent referent/addressee semantic invariant checks both ledger and contract, even if both are modified identically",
+        "test_validate_names_ledger.py: 2 independent negative tests reject a corrupted copied source and a missing contract addressee",
+        "16_PROPHETIC_ROYAL_CITY_NAMING_SOURCE_AUDIT_20261107.md: independently checked MT of Jer 23:6, 33:16, Ezek48:35; distinguish king, Jerusalem and visionary city",
+        "source_access_register_v1.json: Liebermann 2023 Vetus Testamentum 73/1 62-81, first online 2022, accepted manuscript p8 partially examined",
+        "names_claim_registry_v1.json: 3 royal/city claimIds and 2 typed semantic relations, all Research HOLD",
+        "test_validate_names_provenance.py: anti-conflation, missing-claim and direct Hebrew source guards",
+        "test_validate_names_ledger.py: independent academic source rights, dates and critical-collation adversarial guards",
+        "17_TSUR_ROCK_REFERENTS_AND_PRONOUN_BOUNDARY_20261107.md: MT context for Deut32:4,18,30,31,37 and Ps18:32; separate divine, mixed and foreign Rock referents",
+        "data/names_claim_registry_v1.json: 3 Rock claim seeds and 2 semantic boundaries, all Research HOLD",
+        "validate_names_provenance.py: 5 per-attestation Rock referent controls, fail closed even with duplicated corrupted contract",
+        "test_validate_names_provenance.py: 9 Rock-context adversarial regressions, retaining 32:30 pronoun caution",
+        "18_IMMANUEL_HEBREW_GREEK_INTERTEXT_BOUNDARIES_20261107.md: Hebrew Isa7:14; Isa8:8/10; printed LXX Isa7:14 and SBLGNT Matt1:23 with 2sg/3pl Greek contrast",
+        "data/names_claim_registry_v1.json: five provisional Immanuel claims with four required relations MT/LXX/Matthew/Isa8",
+        "validate_names_provenance.py: exact written form and name/speech act controls for five attestation IDs, single-edition Matthew URL",
+        "test_validate_names_provenance.py: 14 Immanuel mutation checks including edition orthography, naming-verb ambiguity and Greek source URL",
+        "19_REVELATION_ALPHA_OMEGA_SPEAKER_EDITION_AUDIT_20261107.md: exact SBLGNT Rev1:8,21:5-7,22:12-16 speaker hierarchy and TR1550 printed longer Rev1:8",
+        "source_access_register_v1.json: registered two secondary excerpts NET Rev1:8 and Brian J Tabb Rev22 without promoting to manuscript collation",
+        "data/names_claim_registry_v1.json: four narrow Revelation claims, four required typed relations, explicit vs contextual speaker evidence levels, all HOLD",
+        "validate_names_provenance.py: six independent Revelation first-person speaker anchors and six exact digital SBLGNT URL locks",
+        "test_validate_names_provenance.py: 15 Revelation negative/positive tests incl speaker, edition, graph and source attribution",
+        "test_validate_names_ledger.py: three new secondary-source permissions/critical-collation mutation tests",
+        "20_LEXEME_REFERENT_PLACE_ALTAR_AUDIT_20261107.md: creator vs forbidden other gods; affirmative vs negated El; Gideon's vs Baal altars; Jacob's named place; Ex20 numbering",
+        "data/names_claim_registry_v1.json: six narrow blocked claims over eight previously unlinked observations, four fixed semantic contrasts",
+        "validate_names_provenance.py: independent exact contextual/morphological/numbering/named-object controls on 8 attestation IDs",
+        "test_validate_names_provenance.py: 14 additional adversarial tests, do not collapse MT verse numbering or named-object boundaries",
+        "Recounted 55 older missing locusId entries without inventing IDs or changing stable attestation/source/edition IDs",
+        "21_HEALER_SANCTIFIER_SHEPHERD_SPEAKER_AUDIT_20261107.md: original MT and SBLGNT distinction among divine healing speech, Jeremiah healing prayer, covenant sanctification and Johannine shepherd self-predication",
+        "data/names_claim_registry_v1.json: five source-linked provisional claims and 3 semantic relations for eight existing attestation IDs",
+        "validate_names_provenance.py: eight independent speech act/morphology/predicate/root controls and three extra exact pinned SBLGNT John10 URLs",
+        "test_validate_names_provenance.py: 17 additional positive/adversarial checks on speaker, suffix, biblical verse, root confusion and Greek predicate",
+        "22_JOHN_EGO_EIMI_DISCOURSE_WAVE_20261107.md: SBLGNT John6:20,18:5,18:6,18:8 with John9:9 human negative control, John8:58/LXX Ex3:14 distinction",
+        "data/names_claim_registry_v1.json: 4 provisional John6/18 speech act claims and 5 typed semantic boundary links, all RESEARCH_HOLD",
+        "validate_names_provenance.py: 4 independent speaker/target/scope controls + 4 exact edition-pinned SBLGNT John URLs",
+        "test_validate_names_provenance.py: 15 additional adversarial/positive tests against a falsely new second saying in 18:6, false lexical divinity and scene swaps",
+        "23_YIREH_NISSI_ANSWER_PLACE_MOUNTAIN_EDITION_CRUX_20261107.md: original MT Gen22:8,14 and MT/LXX Ex17:16 with attributed NET alternatives and explicit object naming in 22:14 / Ex17:15",
+        "data/names_claim_registry_v1.json: four provisional research-only claim IDs across four previously unlinked observations, four typed semantic relations",
+        "validate_names_provenance.py: four independently pinned exact verse/role/textual-state observation contracts plus source-specific NET/LXX attributed-source gates",
+        "test_validate_names_provenance.py: 19 added anti-conflation/edition/grammatical-source mutation tests; 161 provenance tests overall",
+        "24_EL_SHADDAI_SABAOTH_SPEECH_ORIGIN_BOUNDARIES_20261107.md: 8 MT loci in Gen17,28,35,Ex6,1Sam1,17,Isa6,Zech10; NET Ex6 commentary properly attributed, lexical/revelation controversy unresolved",
+        "data/names_claim_registry_v1.json: 7 new research-only claims, 6 typed relations, original stable attestation IDs preserved",
+        "validate_names_provenance.py: 8 independent script-level printed form/speaker/role/url locks plus separate guarded unresolved Shaddai etymology and NET source attribution",
+        "test_validate_names_provenance.py: 24 new adversarial and positive regressions",
+        "25_EL_ELYON_EL_QANNA_NARRATIVE_AND_NAME_CLAUSES_20261107.md: MT Gen14:18–22 Melchizedek priesthood/blessing/doxology vs Abram oath; Ex34:14 exact qanna shemo + el qanna vs Moses Deut4:24 el qanna descriptor",
+        "data/names_claim_registry_v1.json: 5 new research-only claims with 6 prior unlinked original Hebrew attestation IDs and 5 constrained relations",
+        "validate_names_provenance.py: 6 independently pinned MT surface/role/source guards, distinct qanna name evidence controls; NET qoneh and catalog-only Cargill editorial hypothesis never promoted to collated variants",
+        "test_validate_names_provenance.py: 22 additional positive/adversarial original-language speaker/name/secondary-source tests; 207 provenance total"
+      ],
+      "verification": "105_STABLE_ATT_SOURCE_EDITION; 48_SOURCE_RECORDS; 61_PROVISIONAL_CLAIMS; 46_TYPED_RELATIONS; 77_OF_105_LINKED; 28_UNLINKED; 6_ELYON_QANNA_ORIGINAL_TEXT_GUARDS; 388_TESTS_EXPECTED_CI; CRITICAL_COLLATIONS_0; PRODUCT_APPROVALS_0",
+      "closureAt": null,
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-03",
+      "priority": "P0",
+      "title": "Матрица устаревших формулировок и supersession для глав 01–10",
+      "status": "OPEN",
+      "dependsOn": [
+        "NG-02"
+      ],
+      "acceptance": [
+        "Каждая обнаруженная старая недостоверная/устаревшая формулировка явно ссылается на заменяющее доказательство; в оглавлении только актуальные authority, старые досье не удалены"
+      ],
+      "evidence": [
+        "01_NAMES_LEXICAL_SOURCE_AND_ARENA_AUDIT.md",
+        "00_README_AND_NAVIGATION.md"
+      ],
+      "verification": "NOT_APPLICABLE_UNTIL_DONE",
+      "closureAt": null,
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-04",
+      "priority": "P0",
+      "title": "Критические аппараты Исх. 3:12–15; 6:2–3; 17:15–16 и роль qere",
+      "status": "BLOCKED_SOURCE",
+      "dependsOn": [
+        "NG-02"
+      ],
+      "acceptance": [
+        "Прочитаны необходимые страницы BHS/BHQ и Göttingen Exodus, отдельно зафиксированы MT, LXX, варианты, conjecture, права и точные страницы/сиглы; как минимум 3 стиховых комплекта с независимой проверкой"
+      ],
+      "evidence": [
+        "02_YHWH_EHYEH_CRITICAL_DOSSIER.md",
+        "07_MEMORIAL_NAMES_DIVINE_ACTIONS_AND_SHEPHERD.md",
+        "SRC-TMSJ-VALDIZAN-EX3-2024",
+        "13_TMSJ_2024_DIVINE_NAME_AND_TRANSLATION_SCHOLARLY_REVIEW.md"
+      ],
+      "verification": "NOT_APPLICABLE_UNTIL_DONE",
+      "closureAt": null,
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-05",
+      "priority": "P0",
+      "title": "История реконструкции произношения יהוה / традиция Adonai/Elohim",
+      "status": "OPEN",
+      "dependsOn": [
+        "NG-06",
+        "NG-07",
+        "NG-08"
+      ],
+      "acceptance": [
+        "Отдельная таблица консонантного текста, MT точек, qere, теофорных имен, греческих транскрипций и авторских реконструкций; проведено сравнение минимум 3 независимых источников, контраргументы и неопределённость описаны"
+      ],
+      "evidence": [
+        "02_YHWH_EHYEH_CRITICAL_DOSSIER.md",
+        "12_TMS_BARRICK_CHOU_SOURCE_REVIEW.md",
+        "SRC-TMSJ-VALDIZAN-EX3-2024",
+        "SRC-TMSJ-VALDIZAN-ACTS2-2024",
+        "13_TMSJ_2024_DIVINE_NAME_AND_TRANSLATION_SCHOLARLY_REVIEW.md"
+      ],
+      "verification": "NOT_APPLICABLE_UNTIL_DONE",
+      "closureAt": null,
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-06",
+      "priority": "P0",
+      "title": "Просмотреть Joe Zhakevich, God's Many Names, обе видеолекции и слайды",
+      "status": "BLOCKED_ACCESS",
+      "dependsOn": [
+        "NG-01"
+      ],
+      "acceptance": [
+        "Реально просмотрены части 1 и 2, проверены слайды; цитаты сведены в журнал таймкодов, форма и стихи сверены с MT, найденные неточности и полезные тезисы отделены"
+      ],
+      "evidence": [
+        "https://www.foiequip.org/courses/gods-many-names",
+        "12_TMS_BARRICK_CHOU_SOURCE_REVIEW.md"
+      ],
+      "verification": "NOT_APPLICABLE_UNTIL_DONE",
+      "closureAt": null,
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-07",
+      "priority": "P0",
+      "title": "Изучить Chou + Joe Zhakevich, Why LSB Translates Yahweh",
+      "status": "IN_PROGRESS",
+      "dependsOn": [
+        "NG-01"
+      ],
+      "acceptance": [
+        "Оригинальное видео просмотрено полностью, таймкоды сверены с аудио, тезисы 05:18–11:40 проверены по критическим и грамматическим источникам; редакторский вывод не выдаёт реконструкцию за бесспорную фонетическую запись"
+      ],
+      "evidence": [
+        "https://www.youtube.com/watch?v=2hFKPHZL5qI",
+        "12_TMS_BARRICK_CHOU_SOURCE_REVIEW.md"
+      ],
+      "verification": "NOT_APPLICABLE_UNTIL_DONE",
+      "closureAt": null,
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-08",
+      "priority": "P0",
+      "title": "Проверить Barrick/Busenitz grammar p25 и Barrick Hebrew Exegesis I p64",
+      "status": "IN_PROGRESS",
+      "dependsOn": [
+        "NG-01"
+      ],
+      "acceptance": [
+        "Проверены оригинальные страницы PDF и контекст учебного материала, выписаны все проверяемые утверждения и указанные ими первичные ссылки на древних авторов; проверена корректность пересказа и ограничения лицензии"
+      ],
+      "evidence": [
+        "https://drbarrick.org/wp-content/uploads/2017/01/B_B_Hebrew_Grammar_2005.pdf",
+        "https://drbarrick.org/files/studynotes/Other/Heb%20Exeg%20I_Study%20Notes_YouTube.pdf",
+        "SRC-TMSJ-BARRICK-TRANSLATION-2024",
+        "13_TMSJ_2024_DIVINE_NAME_AND_TRANSLATION_SCHOLARLY_REVIEW.md"
+      ],
+      "verification": "NOT_APPLICABLE_UNTIL_DONE",
+      "closureAt": null,
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-09",
+      "priority": "P1",
+      "title": "Разобрать беседы Abner Chou/LSB о переводах, kyrios/YHWH, именах и сносках",
+      "status": "IN_PROGRESS",
+      "dependsOn": [
+        "NG-01"
+      ],
+      "acceptance": [
+        "Оригинальная видеозапись roundtable и лекционные материалы просмотрены, фрагмент 38:48–44:35 сверён со звуком; решения LSB отделены от универсальных правил и прав на перепечатку LSB"
+      ],
+      "evidence": [
+        "https://www.youtube.com/watch?v=0sjpFs3U6jI",
+        "https://lsbible.org/faqs/",
+        "https://info.tms.edu/lsb",
+        "SRC-TMSJ-CHOU-TRANSLATION-2024",
+        "13_TMSJ_2024_DIVINE_NAME_AND_TRANSLATION_SCHOLARLY_REVIEW.md"
+      ],
+      "verification": "NOT_APPLICABLE_UNTIL_DONE",
+      "closureAt": null,
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-10",
+      "priority": "P1",
+      "title": "Сопоставить критические тексты Ис. 7/9, Иер. 23/33, Иез. 48, Дан. 7",
+      "status": "BLOCKED_SOURCE",
+      "dependsOn": [
+        "NG-02"
+      ],
+      "acceptance": [
+        "Есть проверенные редакции, страницы аппаратов, варианты, референты, нумерация и список неразрешённых текстологических вопросов, а не только цифровые перепечатки"
+      ],
+      "evidence": [
+        "05_PROPHETIC_NAMES_ROYAL_CITY_AND_IMMANUEL.md",
+        "04_REVELATION_GREEK_AND_DANIEL_ARAMAIC.md",
+        "SRC-TMSJ-CHOU-DANIEL-2024",
+        "13_TMSJ_2024_DIVINE_NAME_AND_TRANSLATION_SCHOLARLY_REVIEW.md"
+      ],
+      "verification": "NOT_APPLICABLE_UNTIL_DONE",
+      "closureAt": null,
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-11",
+      "priority": "P1",
+      "title": "Проверить ECM VI Revelation / NA28 / THGNT в титулатуре Откровения и Ин. 8",
+      "status": "BLOCKED_SOURCE",
+      "dependsOn": [
+        "NG-02"
+      ],
+      "acceptance": [
+        "Три минимум спорных локуса Откровения сведены с ECM VI и явными говорящими, разночтения грамотно классифицированы, Ин. 8:58/9:9 различены без механических цитат"
+      ],
+      "evidence": [
+        "04_REVELATION_GREEK_AND_DANIEL_ARAMAIC.md",
+        "08_ABBA_EGO_EIMI_VOICE_AND_INTERTEXT.md",
+        "SRC-TMSJ-VALDIZAN-ACTS2-2024",
+        "13_TMSJ_2024_DIVINE_NAME_AND_TRANSLATION_SCHOLARLY_REVIEW.md"
+      ],
+      "verification": "NOT_APPLICABLE_UNTIL_DONE",
+      "closureAt": null,
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-12",
+      "priority": "P1",
+      "title": "Этимологии Шаддай, Элохим, Эль, Элоах и Sabaoth; альтернативы BDB/HALOT",
+      "status": "BLOCKED_SOURCE",
+      "dependsOn": [
+        "NG-02"
+      ],
+      "acceptance": [
+        "По каждой спорной этимологии есть ≥2 независимых академических источника, грамматика, атрибуция авторской гипотезы, критический статус и русский редакторский вердикт"
+      ],
+      "evidence": [
+        "03_PATRIARCHAL_EL_TITLES_AND_REFERENTS.md",
+        "06_HOSTS_JEALOUS_ROCK_HOLY_ADONAI_ELOHIM.md",
+        "09_EXTENSION_FORMS_LANGUAGE_AND_REFERENTS.md"
+      ],
+      "verification": "NOT_APPLICABLE_UNTIL_DONE",
+      "closureAt": null,
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-13",
+      "priority": "P1",
+      "title": "Независимая богословская и филологическая рецензия всех claim-пакетов",
+      "status": "BLOCKED_DEPENDENCY",
+      "dependsOn": [
+        "NG-04",
+        "NG-05",
+        "NG-10",
+        "NG-11",
+        "NG-12"
+      ],
+      "acceptance": [
+        "Каждая публикуемая формулировка имеет отдельный claim/source review, альтернативу, контекст и редакторское решение; 0 скрытых спорных утверждений"
+      ],
+      "evidence": [
+        "11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md"
+      ],
+      "verification": "NOT_APPLICABLE_UNTIL_DONE",
+      "closureAt": null,
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-14",
+      "priority": "P2",
+      "title": "Аудит исходников двух сайтов Arena, RTL, рёбер графа и переводов",
+      "status": "BLOCKED_ARTIFACT",
+      "dependsOn": [
+        "NG-02"
+      ],
+      "acceptance": [
+        "Получены точные SHA/архивы обоих билдов; проверены UI, RTL, подсветка поиска, связи, accessibility, тексты и 12 исторических BA-дефектов с runtime-witness"
+      ],
+      "evidence": [
+        "01_NAMES_LEXICAL_SOURCE_AND_ARENA_AUDIT.md",
+        "BA-01..BA-12"
+      ],
+      "verification": "NOT_APPLICABLE_UNTIL_DONE",
+      "closureAt": null,
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-15",
+      "priority": "P2",
+      "title": "Пакет доказательных утверждений и лицензий → Product, без автопубликации",
+      "status": "BLOCKED_DEPENDENCY",
+      "dependsOn": [
+        "NG-13",
+        "NG-14"
+      ],
+      "acceptance": [
+        "По каждой выпускаемой единице отдельный claim/source/rights handoff, редакторское и Product QA, явное одобрение; Research не пишет в прод без отдельной команды"
+      ],
+      "evidence": [
+        "README.md",
+        "11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md"
+      ],
+      "verification": "NOT_APPLICABLE_UNTIL_DONE",
+      "closureAt": null,
+      "owner": "Research editorial"
+    }
+  ],
+  "mediaQueue": [
+    {
+      "id": "MEDIA-TMS-JZ-01",
+      "title": "God's Many Names: Parts 1–2 and slides",
+      "presenters": [
+        "Joe (Iosif J.) Zhakevich"
+      ],
+      "url": "https://www.foiequip.org/courses/gods-many-names",
+      "access": "FREE_ENROLLMENT_POSSIBLY_REQUIRED",
+      "verification": "PUBLISHER_COURSE_CATALOG_CHECKED_NOT_WATCHED",
+      "status": "WATCH_PENDING",
+      "task": "NG-06",
+      "questions": [
+        "Which Hebrew names/verses precisely?",
+        "Does presenter distinguish altar/place vs God?",
+        "What is the evidence for pronunciation?"
+      ]
+    },
+    {
+      "id": "MEDIA-CHOU-JZ-02",
+      "title": "Why the Legacy Standard Bible Translates Yahweh in the Old Testament",
+      "presenters": [
+        "Abner Chou",
+        "Joe Zhakevich"
+      ],
+      "url": "https://www.youtube.com/watch?v=2hFKPHZL5qI",
+      "transcript": "https://lawwu.github.io/transcripts/2hFKPHZL5qI.html",
+      "verification": "TIMESTAMPED_THIRD_PARTY_TRANSCRIPT_SPOT_CHECKED_AUDIO_NOT_WATCHED",
+      "status": "WATCH_PENDING",
+      "task": "NG-07",
+      "segments": [
+        {
+          "from": "05:18",
+          "to": "08:05",
+          "topic": "Exodus 3 / proposed derivation and pronunciation Yahweh"
+        },
+        {
+          "from": "09:35",
+          "to": "11:40",
+          "topic": "Masoretic replacement vowels and Jehovah reading"
+        }
+      ]
+    },
+    {
+      "id": "MEDIA-BARRICK-03",
+      "title": "Barrick & Busenitz, A Grammar for Biblical Hebrew, chapter 2 p. 25",
+      "presenters": [
+        "William D. Barrick",
+        "Irvin A. Busenitz"
+      ],
+      "url": "https://drbarrick.org/wp-content/uploads/2017/01/B_B_Hebrew_Grammar_2005.pdf",
+      "verification": "PUBLISHER_PDF_PAGE_25_SCREENSHOT_CHECKED",
+      "status": "PAGE_VERIFIED_INTERPRETATION_REVIEW_PENDING",
+      "task": "NG-08"
+    },
+    {
+      "id": "MEDIA-BARRICK-04",
+      "title": "Barrick Hebrew Exegesis I study notes p.64",
+      "presenters": [
+        "William D. Barrick"
+      ],
+      "url": "https://drbarrick.org/files/studynotes/Other/Heb%20Exeg%20I_Study%20Notes_YouTube.pdf",
+      "verification": "PUBLISHER_PDF_PAGE_64_SCREENSHOT_CHECKED",
+      "status": "PAGE_VERIFIED_HISTORICAL_CLAIMS_UNCOLLATED",
+      "task": "NG-08"
+    },
+    {
+      "id": "MEDIA-BARRICK-05",
+      "title": "Barrick free TMS Beginning Hebrew / Hebrew Grammar / Exegesis lectures",
+      "presenters": [
+        "William D. Barrick"
+      ],
+      "url": "https://drbarrick.org/courses/",
+      "verification": "INSTRUCTOR_COURSE_CATALOG_CHECKED_NOT_WATCHED",
+      "status": "SELECT_LECTURES_PENDING",
+      "task": "NG-08"
+    },
+    {
+      "id": "MEDIA-CHOU-06",
+      "title": "Legacy Standard Bible roundtable Q1 2023",
+      "presenters": [
+        "Abner Chou",
+        "William Varner",
+        "Jason Beals"
+      ],
+      "url": "https://www.youtube.com/watch?v=0sjpFs3U6jI",
+      "transcript": "https://lawwu.github.io/transcripts/0sjpFs3U6jI.html",
+      "verification": "TIMESTAMPED_THIRD_PARTY_TRANSCRIPT_SPOT_CHECKED_NOT_WATCHED",
+      "status": "WATCH_PENDING",
+      "task": "NG-09",
+      "segments": [
+        {
+          "from": "06:13",
+          "to": "07:40",
+          "topic": "KYRIOS versus YHWH in NT references/footnotes"
+        },
+        {
+          "from": "38:48",
+          "to": "44:35",
+          "topic": "Why Yahweh personal name vs Elohim/Adonai as titles"
+        }
+      ]
+    },
+    {
+      "id": "MEDIA-LSB-07",
+      "title": "Legacy Standard Bible FAQ and editorial rationale",
+      "presenters": [
+        "Legacy Standard Bible translation committee"
+      ],
+      "url": "https://lsbible.org/faqs/",
+      "verification": "OFFICIAL_WEB_FAQ_CHECKED",
+      "status": "TEXT_READ_INTERPRETIVE_COMPARISON_PENDING",
+      "task": "NG-09"
+    },
+    {
+      "id": "MEDIA-CHOU-TMS-08",
+      "title": "Abner Chou: Legacy Standard Bible translation philosophy (TMS)",
+      "presenters": [
+        "Abner Chou"
+      ],
+      "url": "https://info.tms.edu/lsb",
+      "verification": "INSTITUTIONAL_ARTICLE_READ",
+      "status": "ANALYSIS_PENDING",
+      "task": "NG-09"
+    }
+  ],
+  "nextAction": "NG-02: 28 of 105 attestation IDs remain without bounded claim-level editorial links (not missing original source or edition FKs); prioritize claims by semantic error risk, not metric-only zero. Assess remaining original attestations by grouping before another wave; 55 historic locusId omissions demand nonbreaking consumer compatibility plan. Manuscript apparatus, genuine scholarly peer review, source rights and Product editorial clearance remain open.",
+  "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
+  "researchPeople": [
+    {
+      "personId": "PERSON-TMS-WILLIAM-D-BARRICK",
+      "originalName": "William D. Barrick",
+      "primaryRussianName": "Уильям Беррик",
+      "searchAliases": [
+        "Уильям Баррик",
+        "Уильям Бэррик",
+        "Билл Беррик",
+        "William D. Barrick",
+        "Bill Barrick"
+      ],
+      "role": "former TMS professor of Old Testament and Hebrew",
+      "identityStatus": "OFFICIAL_SELF_IDENTIFICATION_AND_RUSSIAN_PUBLISHER_VARIANTS_CHECKED"
+    }
+  ],
+  "scholarlyQueue": [
+    {
+      "sourceId": "SRC-TMSJ-VALDIZAN-EX3-2024",
+      "priority": "P0",
+      "taskIds": [
+        "NG-04",
+        "NG-05"
+      ],
+      "printedPages": "53–74",
+      "status": "TITLE_ABSTRACT_CHECKED_FULL_READING_PENDING"
+    },
+    {
+      "sourceId": "SRC-TMSJ-VALDIZAN-ACTS2-2024",
+      "priority": "P0",
+      "taskIds": [
+        "NG-11",
+        "NG-05"
+      ],
+      "printedPages": "257–272",
+      "status": "TITLE_ABSTRACT_CHECKED_FULL_READING_PENDING"
+    },
+    {
+      "sourceId": "SRC-TMSJ-CHOU-TRANSLATION-2024",
+      "priority": "P1",
+      "taskIds": [
+        "NG-09"
+      ],
+      "printedPages": "5–26",
+      "status": "TITLE_ABSTRACT_CHECKED_FULL_READING_PENDING"
+    },
+    {
+      "sourceId": "SRC-TMSJ-BARRICK-TRANSLATION-2024",
+      "priority": "P1",
+      "taskIds": [
+        "NG-08"
+      ],
+      "printedPages": "45–52",
+      "status": "CONTENTS_CHECKED_FULL_READING_PENDING"
+    },
+    {
+      "sourceId": "SRC-TMSJ-CHOU-DANIEL-2024",
+      "priority": "P1",
+      "taskIds": [
+        "NG-10"
+      ],
+      "printedPages": null,
+      "status": "CATALOG_ONLY_EXACT_PAGINATION_PENDING"
+    },
+    {
+      "sourceId": "SRC-VT-LIEBERMANN-JEREMIAH-2023",
+      "priority": "P0",
+      "taskIds": [
+        "NG-02",
+        "NG-10"
+      ],
+      "printedPages": "62–81",
+      "issueYear": 2023,
+      "firstOnlineYear": 2022,
+      "status": "AUTHOR_ACCEPTED_MANUSCRIPT_COVER_AND_P8_CHECKED_FULL_REVIEW_PENDING",
+      "reviewQuestion": "Why MT Jeremiah 33:16 Jerusalem-naming absent from much of Old Greek and which text-critical alternatives exist; independent critical apparatus needed."
+    }
+  ],
+  "lastWorkReport": {
+    "date": "2026-11-07",
+    "planStatus": "NG-01 DONE; NG-02 IN_PROGRESS: 61 research-only provisional claims, 46 relations, 77/105 claim-linked",
+    "workCompleted": [
+      "Preferred Russian name Уильям Беррик with original William D. Barrick",
+      "Added authentic TMSJ 2024 published journal article metadata and permissions",
+      "Minted 105 stable attestation IDs with foreign source/edition links",
+      "Created four normalized edition records and ten curated claim seed links",
+      "Added original TMSJ 35/1 and 35/2 journal articles with exact first PDF page verification and publisher copyright boundary",
+      "Created an independent provenance validator with 18 negative tests and CI integration",
+      "Marked 4 Greek multiedition URL source locators for explicit edition pin recheck",
+      "NG-01 closed with exact successful names-ledger workflow 42333369066 and three independent test groups",
+      "Resolved four SBLGNT/THGNT multi-edition original-language URLs with pinned single-edition links",
+      "Updated three independent locked contracts and provenance mutation tests",
+      "Added four provisional research claims and two semantic typed links, 18/105 attestations referenced",
+      "220 local tests PASS: 159 corpus + 16 plan + 47 provenance; GitHub exact-sha CI pending",
+      "Found and corrected 3 Exodus 3 Hebrew/Greek observations with Moses incorrectly stored as referent; added separate addressee=Moses",
+      "Updated three independently locked speech/intertext contract copies",
+      "Registered new Exodus divine speech role claim and a semantic relation",
+      "Added six adversarial regressions; 228 total tests pass locally (159 corpus + 16 plan + 53 provenance)",
+      "Added a fifteen-claim semantic scope dossier without awarding any scholarly approval",
+      "Independent anti-tautology guard rejects semantic corruption copied into both ledger and locked contract",
+      "Verified three MT prophetic naming referents: king Jer23:6, Jerusalem Jer33:16, city Ezek48:35",
+      "Registered Liebermann's peer-reviewed Vetus Testamentum article with 2023 volume / 2022 online dates and selected manuscript page 8 access state",
+      "Added 3 provisional named object claims and 2 required semantic boundaries; 23 distinct attestation IDs now referenced",
+      "Expanded negative controls for Hebrew source attribution, peer-reviewed manuscript HOLD, bibliographic years and rights",
+      "NG-02 Rock: 5 attestation referent classes independently guarded: 3 divine, 1 mixed, 1 negative",
+      "Separated Deut32:31 our Rock / their rock from Deut32:37 idol refuge, with Deut32:30 pronoun caveat",
+      "Registered three provisional Rock claims and two semantic relations; 28/105 original observations now linked",
+      "Added nine Rock mutation tests; 245 local tests pass (162 corpus, 16 plan, 67 provenance)",
+      "Immanuel NG-02: five distinct MT Isaiah7/8, LXX Isaiah7 and SBLGNT Matthew1:23 occurrence claims, four typed context/intertext differences",
+      "Verified printed καλέσεις (LXX 2sg) vs καλέσουσιν (SBLGNT 3pl), Ἐμμανουήλ explanatory gloss; Hebrew וְקָרָאת interpretation remains disputed",
+      "Pinned fifth single-edition Greek passage URL and guarded five exact source surfaces, avoiding implied manuscript collations",
+      "14 added provenance regressions; 259 total local tests (162 baseline,16 plan,81 provenance)",
+      "Revelation Greek discourse: distinct explicit in-verse Lord God (1:8), prior narrator throne speaker (21:6), and Christological contextual inference (22:13), never treating 22:16 'I Jesus' as within v13.",
+      "Rev1:8 printed source boundary: SBLGNT shorter Alpha/Omega versus TR1550 longer beginning/end; NET secondary textual note source attributed, not independent manuscript collation.",
+      "Registered Brian J Tabb's Rev22 contextual speaker reading separately from original Greek text and original critical apparatus.",
+      "Added 4 research-held claims, 4 typed relations, 2 secondary sources, 6 speaker-control checks and 18 mutation tests; 277 local tests planned (165+16+96).",
+      "NG-02 eight lexical/object contexts: 6 narrow claims, 4 semantic contrasts, 14 regression tests, exact MT Hebrew/English Exodus 20 numbering kept",
+      "Recounted 55 missing historic locusIds without changing stable attestation source or edition keys",
+      "Provenance guard independently locks 8 context meanings, speech acts, and named objects; no new critical manuscript claim",
+      "NG-02 speaker and syntax boundary: 8 original attestations, 5 narrow claims, 3 relations",
+      "Exodus15:26 YHWH self-predication 2ms versus Jeremiah17:14 human prayer/imperative 1cs; Exodus31:13/Leviticus20:8 YHWH sanctifies 2mp covenant addressee",
+      "Psalm23:1 MT YHWH my shepherd Hebrew רעה (not Hagar's seeing ראה) versus John10:11/14 Jesus explicit Greek nominal predicate; 3 John10 SBLGNT exact source URL locks",
+      "17 adversarial regressions added; total 308 local tests expected from 165 ledger, 16 plan and 127 provenance",
+      "John6:20 Jesus 'it is I; do not fear' versus John18:5 Jesus answer, 18:6 narrator's backward reference to 18:5 rather than independent second new utterance, and 18:8 direct repetition with release request",
+      "4 newly claim-linked John occurrences, four required exact edition URLs, 5 typed relations and 15 negative/positive regression checks; SBLGNT original digital reading verified and human John9:9 negative control retained",
+      "Bounded Yireh/Nissi textual pass: Gen22:8 Abraham assurance distinct from naming PLACE Gen22:14, and Niphal mountain formula; no one mandatory English rendering from two verb forms",
+      "Ex17:16 digital MT כֵּס 'throne' not conjectural נֵס 'banner'; Rahlfs-Hanhart Greek ἐν χειρὶ κρυφαίᾳ differs from MT, no ancient Vorlage proved",
+      "4 newly linked attestations, 4 source-bound research-held claims, 4 typed relations, 19 adversarial checks, 4 independent source-text guards",
+      "7 research-held claims over 8 original MT El Shaddai and YHWH Sabaoth observations, 6 new semantic relations, 24 adversarial/positive tests, exact voice and printed-vocalization locks",
+      "Ex6:3 debated revelation/existing use in Genesis and unresolved Shaddai etymology not marked scientific consensus; original NET source registered and used without new source duplication",
+      "Gen14:18 narrator versus Melchizedek Gen14:19–20 priestly blessing/doxology versus Abram oath Gen14:22 explicitly names YHWH-El Elyon in printed MT; qoneh creator/possessor alternatives attributed to NET and Cargill 2019 gloss hypothesis kept catalog-only",
+      "Ex34:14 explicit qanna shemo/character clause in divine discourse and Deut4:24 Moses warning with merely descriptive qanna; exact speakers/words protected by 6 guards, 22 tests and 5 semantic links"
+    ],
+    "stillOpen": [
+      "NG-02: 28 of 105 original attestation IDs have no curated claim link, though all FKs are stable and rights held",
+      "Historical missing locusId 55 needs nonbreaking consumer evolution policy",
+      "Ancient MT/Greek critical collation for Gen14:22 and Ex34, etymology and alternative historical scholarship remain incomplete",
+      "All 61 provisional claims remain RESEARCH_HOLD, no scholarly or Product editorial approvals and permission rights",
+      "GitHub exact-SHA CI pending for new test count"
+    ]
+  },
+  "originalResearchCheckpoint": {
+    "commit": "70442271aadf1bcae2afeaad729336218874f180",
+    "sourceRecords": 39,
+    "contextAttestations": 105,
+    "baselineRegressionTests": 157,
+    "gitHubCi6Of6Success": true
+  },
+  "architectureProgress": {
+    "NG02": {
+      "level": "FIRST_LINKED_PASS_NOT_EDITORIALLY_APPROVED",
+      "stableAttestationIds": 105,
+      "sourceForeignKeys": 105,
+      "editionForeignKeys": 105,
+      "canonicalEditions": 4,
+      "curatedClaims": 61,
+      "locusIdMissingHistorically": 55,
+      "editionSelectionRecheckHolds": 0,
+      "notes": "Gen14:18 narrator priesthood; Gen14:19–20 Melchizedek blessing+doxology; Gen14:22 Abram oath includes YHWH El Elyon, Cargill editorial gloss idea catalogue-level, qoneh NET creator/possessor alternative. Ex34:14 YHWH divine speech has explicit qanna shemo and qanna description, Deut4:24 Moses descriptive warning no name clause. 77 of 105 claim-linked, all HOLD.",
+      "typedClaimRelations": 46,
+      "editionSpecificDigitalVerseRechecksCompleted": 18,
+      "attestationsLinkedToClaims": 77,
+      "attestationsWithoutClaimReferences": 28,
+      "divineReferentAddresseeControls": 3,
+      "semanticScopeAudits": 15,
+      "scholarlyClaimApprovals": 0,
+      "propheticRoyalCityClaims": 3,
+      "sourceRegisterEntries": 48,
+      "rockReferentAttestations": 5,
+      "rockPronounVerse30AwaitingDiscourseReview": true,
+      "immanuelDistinctEvidenceLociGuarded": 5,
+      "revelationSpeakerEditionAttestations": 6,
+      "historicalMissingLocusIdsRecounted": 55,
+      "lexicalReferentAndNamedObjectGuards": 8,
+      "covenantShepherdAttestationsGuarded": 8,
+      "johnEgoDiscourseGuards": 4,
+      "yirehNissiPlaceAltarExplanationGuards": 4,
+      "shaddaiSabaothSpeakerGuards": 8,
+      "elyonQannaSpeakerNameGuards": 6
+    }
+  }
+}
