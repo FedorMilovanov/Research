@@ -240,6 +240,39 @@ class ActualSynchronizationTests(unittest.TestCase):
         self.assertIn("B1: идентифицированная печатная книга", text)
         self.assertIn("B1 (ограниченный цифровой свидетель)", text)
 
+    def test_wave0_hodge_source_target_and_owen_distinction(self):
+        text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md").read_text(encoding="utf-8")
+        self.assertIn("https://ccel.org/ccel/hodge/theology2.iv.viii.ii.html", text)
+        self.assertNotIn("theology2.iv.vii.iii.html", text)
+        self.assertIn("не то же самое", text)
+        self.assertIn("actual right", text)
+        self.assertIn("actual possession", text)
+
+    def test_wave0_conflict_cards_are_current_without_false_closure(self):
+        text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md").read_text(encoding="utf-8")
+        def section(name, following):
+            begin = text.index("## " + name + ".")
+            end = text.index("## " + following + ".", begin)
+            return text[begin:end]
+        calvin = section("C-06", "C-07")
+        fathers = section("C-07", "C-08")
+        confessions = section("C-14", "C-15")
+        complex_case = section("C-16", "C-17")
+        self.assertIn("1855", calvin)
+        self.assertIn("172–173", calvin)
+        self.assertNotIn("страница не в руках", calvin)
+        self.assertIn("GAP-B1", calvin)
+        self.assertIn("12 действующих Markdown-досье", fathers)
+        self.assertNotIn("слой `fathers/` ещё не создан", fathers)
+        self.assertIn("`OPEN`", fathers)
+        self.assertIn("obtained eternal redemption", confessions)
+        self.assertIn("purchased redemption", confessions)
+        self.assertNotIn("1689 не прочитан постатейно", confessions)
+        for atom in ("C16-LEX", "C16-HIST", "C16-INTENT", "C16-APPLICATION"):
+            self.assertIn(atom, complex_case)
+        self.assertIn("`OPEN`", complex_case)
+        self.assertIn("EVIDENCE_HOLD", complex_case)
+
     def test_current_corpus_and_coverage(self):
         errors, summary = check(ROOT, self.report, self.control)
         self.assertEqual(errors, [])
