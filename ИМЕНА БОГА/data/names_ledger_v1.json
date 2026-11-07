@@ -300,7 +300,43 @@
       "sourceEdition": "Mechon-Mamre MT digital transcription",
       "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
       "criticalEditionStatus": "NOT_COLLATED",
-      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass",
+      "attestations": [
+        {
+          "verse": "Jeremiah 23:6",
+          "surface": "יְהוָה צִדְקֵנוּ",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "narrativeSpeaker": "Jeremiah, reporting prophetic oracle of YHWH",
+          "speechAct": "naming_royal_Davidic_branch",
+          "namedObject": "Davidic king",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt1123.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "nameDelimiter": "וְזֶה-שְּׁמוֹ אֲשֶׁר-יִקְרְאוֹ",
+          "genderCue": "שְּׁמוֹ masculine possessive his name",
+          "oldGreekPassageStatus": "NOT_APPLICABLE_TO_VERSE_23_6"
+        },
+        {
+          "verse": "Jeremiah 33:16",
+          "surface": "יְהוָה צִדְקֵנוּ",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "narrativeSpeaker": "Jeremiah, reporting prophetic oracle of YHWH",
+          "speechAct": "naming_Jerusalem",
+          "namedObject": "Jerusalem",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt1133.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "nameDelimiter": "וְזֶה אֲשֶׁר-יִקְרָא-לָהּ",
+          "genderCue": "לָהּ feminine dative she/her city",
+          "oldGreekPassageStatus": "MT_33_14_26_ABSENT_IN_OLD_GREEK_JEREMIAH",
+          "absenceEvidenceClass": "B1_SECONDARY_CRITICAL_STUDY_NOT_COLLATION"
+        }
+      ],
+      "contextualAssertion": "Identical string YHWH tsidqenu in 23:6 refers to male royal Davidic branch, 33:16 to Jerusalem female named city. MT 33:14–26 absent from Old Greek; no invented Greek equivalent."
     },
     {
       "id": "shammah",
@@ -324,7 +360,25 @@
       "sourceEdition": "Mechon-Mamre MT digital transcription",
       "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
       "criticalEditionStatus": "NOT_COLLATED",
-      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass",
+      "attestations": [
+        {
+          "verse": "Ezekiel 48:35",
+          "surface": "יְהוָה שָׁמָּה",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "narrativeSpeaker": "Ezekiel, closing city vision",
+          "speechAct": "city_naming",
+          "namedObject": "city",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt1248.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "nameDelimiter": "וְשֵׁם-הָעִיר מִיּוֹם",
+          "lexicalNotice": "שָׁמָּה locative adverb there, not independent divine proper noun"
+        }
+      ],
+      "contextualAssertion": "Explicit וְשֵׁם-הָעִיר = name of city; Yahweh is there is a city designation reflecting divine presence. Not personal divine name or equation of city with YHWH."
     },
     {
       "id": "sabaoth",
@@ -684,7 +738,7 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "researchNote": "Royal naming context Isaiah9 and divine designation Isaiah10; contextual distinction pending extended exegesis.",
+      "researchNote": "Royal naming context Isaiah9 and divine designation Isaiah10; contextual distinction pending extended exegesis. Expanded original verse context; Rashi/ Radak attribution differs from Christian messianic application, both separately attributed. In Isaiah10:21 preserve preposition אֶל- before אֵל.",
       "witnesses": [
         {
           "edition": "Mechon-Mamre MT",
@@ -704,7 +758,45 @@
       "sourceEdition": "Mechon-Mamre MT digital transcription",
       "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
       "criticalEditionStatus": "NOT_COLLATED",
-      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass",
+      "attestations": [
+        {
+          "verse": "Isaiah 9:5 MT (English 9:6)",
+          "surface": "אֵל גִּבּוֹר",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "narrativeSpeaker": "Isaiah, prophetic proclamation",
+          "speechAct": "royal_child_naming_formula",
+          "namedObject": "royal child in complex naming sequence",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt1009.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "nameDelimiter": "וַיִּקְרָא שְׁמוֹ",
+          "contextualTitleSegmentation": "INTERPRETIVE_DISPUTE",
+          "namedObjectConfidence": "CHILD_NAMED_BUT_ATTRIBUTION_OF_EACH_TITLE_DEBATED",
+          "numbering": {
+            "hebrew": "Isaiah 9:5",
+            "english": "Isaiah 9:6"
+          }
+        },
+        {
+          "verse": "Isaiah 10:21",
+          "surface": "אֶל-אֵל, גִּבּוֹר",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "narrativeSpeaker": "Isaiah, prophecy on remnant",
+          "speechAct": "return_to_God",
+          "namedObject": "God of Israel",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt1010.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "sourceGrammarNote": "first אֶל- is preposition unto; second אֵל is designation God; גִּבּוֹר adjective; name card extracted, full local surface kept",
+          "contextualTitleSegmentation": "DIRECT_DIVINE_REFERENT"
+        }
+      ],
+      "contextualAssertion": "Isa9:5 MT royal naming context (English 9:6), interpretation of who bears each title disputed between Jewish and Christian traditions. Isa10:21 God is the explicit recipient of a remnant's return. Preposition אֶל- not silently removed."
     },
     {
       "id": "el-bethel",
@@ -1206,7 +1298,73 @@
       "sourceEdition": "MT Isaiah 7:14 + SBLGNT Matthew 1:23",
       "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
       "criticalEditionStatus": "NOT_COLLATED",
-      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass",
+      "attestations": [
+        {
+          "verse": "Isaiah 7:14",
+          "surface": "עִמָּנוּ אֵל",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "narrativeSpeaker": "Isaiah, delivering sign to house of David",
+          "speechAct": "prophetic_child_naming",
+          "namedObject": "child in prophecy",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt1007.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "nameDelimiter": "וְקָרָאת שְׁמוֹ",
+          "namingVerbAnalysis": "2fs vs archaic 3fs B1 grammatical dispute",
+          "originalTerm": "הָעַלְמָה",
+          "receptionLayer": "HEBREW_ORIGINAL_CONTEXT"
+        },
+        {
+          "verse": "Isaiah 8:8",
+          "surface": "עִמָּנוּ אֵל",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "narrativeSpeaker": "Isaiah, prophetic description of Judah",
+          "speechAct": "vocative_or_name_allusion",
+          "namedObject": "Immanuel as addressee/allusion (contextual interpretation)",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt1008.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "receptionLayer": "HEBREW_NAME_ALLUSION",
+          "speakerConfidence": "INTERPRETIVE_CONTEXT"
+        },
+        {
+          "verse": "Isaiah 8:10",
+          "surface": "כִּי עִמָּנוּ אֵל",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "narrativeSpeaker": "Isaiah, prophetic assurance",
+          "speechAct": "divine_presence_assertion",
+          "namedObject": "God is with us, an assertion not new child-naming",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt1008.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "receptionLayer": "HEBREW_ASSURANCE_SENTENCE"
+        },
+        {
+          "verse": "Matthew 1:23",
+          "surface": "Ἐμμανουήλ",
+          "language": "greek",
+          "edition": "SBLGNT 2010 via BibleGateway",
+          "narrativeSpeaker": "Matthew, narration citing Isaiah",
+          "speechAct": "christological_prophetic_quotation",
+          "namedObject": "Jesus identified with prophetic name in quotation",
+          "sourceUrl": "https://www.biblegateway.com/passage/?search=Matthew+1%3A23&version=SBLGNT",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "nameDelimiter": "καλέσουσιν τὸ ὄνομα αὐτοῦ",
+          "translationInVerse": "Μεθ’ ἡμῶν ὁ θεός",
+          "namingVerbForm": "καλέσουσιν 3rd plural",
+          "receptionLayer": "NEW_TESTAMENT_CITATION_AND_TRANSLATION"
+        }
+      ],
+      "contextualAssertion": "Isaiah 7:14 child-naming; 8:8 name invocation/allusion; 8:10 assertion for God with us; Matthew 1:23 Christian citation with 3pl καλέσουσιν and Greek gloss. MT naming verb וְקָרָאת grammatically debated; Matthew cannot be copied into MT."
     }
   ],
   "coverageNote": "29/29 candidate forms anchored to a stated digital verse witness only. NOT 29 fully verified etymologies, all-verse collation, or textual-critical/rights/publication approval. Sources are conservative class B1, not critical primary manuscripts.",
@@ -1247,6 +1405,19 @@
       "totalAttestations": 8,
       "editionDiffStatus": "PRINTED_EDITIONS_ONLY_NO_MANUSCRIPT_COLLATION",
       "speakerRule": "REVELATION_VERSE_BY_VERSE_CONTEXTUAL_ATTRIBUTION_NOT_GLOBAL_SPEAKER"
+    },
+    "propheticAttestations": {
+      "phase": "PROPHETIC_NAMING_ROYAL_CITY_AND_IMMANUEL_2026_11_07",
+      "baselineIds": [
+        "el-gibbor",
+        "tsidkenu",
+        "shammah",
+        "immanuel"
+      ],
+      "totalAttestations": 9,
+      "claimBoundary": "ROYAL_CHILD_VS_DIVINE_TITLE_CITY_VS_PROPHECY_NOT_ALL_DIVINE_PERSONAL_NAMES",
+      "textualAbsence": "MT Jeremiah33:14–26 absent Old Greek, secondary scholarly confirmation only",
+      "publicationEligible": 0
     }
   }
 }
