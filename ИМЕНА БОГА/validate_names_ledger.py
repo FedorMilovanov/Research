@@ -20,6 +20,7 @@ ATTESTATION_CONTRACT = Path(__file__).resolve().parent / "data" / "attestation_c
 MEMORIAL_CONTRACT = Path(__file__).resolve().parent / "data" / "memorial_attestation_contract_v1.json"
 SPEECH_INTERTEXT_CONTRACT = Path(__file__).resolve().parent / "data" / "speech_intertext_contract_v1.json"
 EXTENSION_ATTESTATION_CONTRACT = Path(__file__).resolve().parent / "data" / "extension_attestation_contract_v1.json"
+CORE_NAME_LEXEME_CONTRACT = Path(__file__).resolve().parent / "data" / "core_name_lexeme_contract_v1.json"
 ALLOWED_CLASSES = {"A1", "A2", "A3", "B1", "C", "D"}
 ALLOWED_ACCESS = {"FULL_OBJECT_VERIFIED", "PARTIAL_OBJECT", "CATALOG_ONLY", "LINK_ONLY", "NOT_ACQUIRED"}
 ALLOWED_LOCATOR = {"EXACT_LOCATOR_VERIFIED", "COARSE_LOCATOR_ONLY", "LOCATOR_MISSING"}
@@ -1436,6 +1437,133 @@ def validate_extension_attestations(extension: dict, contract: dict) -> list[str
     return errors
 
 
+CORE_NAME_IDS = {"yhwh", "el"}
+CORE_NAME_FIELDS = (
+    "locusId", "verse", "surface", "language", "edition", "speaker",
+    "speechAct", "referent", "referentClass", "sourceUrl", "checkState",
+    "criticalEditionStatus", "rightsState", "publicationState"
+)
+
+
+def validate_core_name_lexeme(baseline: dict, contract: dict) -> list[str]:
+    """Pin YHWH as personal divine name and El as context-variable noun.
+
+    These checks are exact digital-source integrity, not historical
+    vocalization claims or manuscript-critical certainties.
+    """
+    errors: list[str] = []
+    if (not isinstance(contract, dict) or contract.get("schemaVersion") != 1
+        or contract.get("corpusId") != "NAMES_YHWH_PERSONAL_NAME_EL_GENERIC_LEXEME_V1"):
+        return ["core-names: invalid reviewer-pinned contract"]
+    if set(contract.get("baselineIds", [])) != CORE_NAME_IDS:
+        errors.append("core-names: baseline ID set must be YHWH and El only")
+    if tuple(contract.get("lockedFields", [])) != CORE_NAME_FIELDS:
+        errors.append("core-names: exact scripture form, speaker and referent lock weakened")
+    if contract.get("counts") != {"records": 2, "occurrences": 8, "publicationEligible": 0}:
+        errors.append("core-names: pinned contract counts or publication hold changed")
+    snapshot = contract.get("lockedAttestations", [])
+    if not isinstance(snapshot, list):
+        return errors + ["core-names: missing source snapshots"]
+    expected: dict[str, dict] = {}
+    for row in snapshot:
+        if not isinstance(row, dict):
+            errors.append("core-names: malformed source snapshot")
+            continue
+        key = row.get("locusId")
+        if not isinstance(key, str) or not key or key in expected:
+            errors.append(f"core-names: missing or duplicate source locus {key}")
+            continue
+        expected[key] = row
+        if row.get("baselineId") not in CORE_NAME_IDS:
+            errors.append(f"core-names: non-core ID in source contract {key}")
+    records = baseline.get("records", [])
+    bmap = {r.get("id"):r for r in records if isinstance(r, dict)} if isinstance(records, list) else {}
+    actual: dict[str, dict] = {}
+    count: dict[str, int] = {}
+    for rid in CORE_NAME_IDS:
+        row = bmap.get(rid, {})
+        attestations = row.get("attestations", [])
+        if not isinstance(attestations, list):
+            errors.append(f"core-names: missing attestations list for {rid}")
+            continue
+        count[rid] = len(attestations)
+        if not isinstance(row.get("contextualAssertion"), str) or not row["contextualAssertion"]:
+            errors.append(f"core-names: no contextual claim scope for {rid}")
+        for obj in attestations:
+            if not isinstance(obj, dict):
+                errors.append(f"core-names: invalid attestation object for {rid}")
+                continue
+            key = obj.get("locusId")
+            if not isinstance(key, str) or not key or key in actual:
+                errors.append(f"core-names: duplicate/empty occurrence ID {key}")
+                continue
+            actual[key] = obj
+            ref = expected.get(key)
+            if ref is None or ref.get("baselineId") != rid:
+                errors.append(f"core-names: unexpected or moved source {rid}/{key}")
+                continue
+            for field in CORE_NAME_FIELDS:
+                if field not in obj or field not in ref or obj.get(field) != ref.get(field):
+                    errors.append(f"core-names: {rid}/{key}: {field} source contract drifted")
+            if obj.get("checkState") != "DIGITAL_VERSE_SURFACE_CHECKED":
+                errors.append(f"core-names: {rid}/{key}: source marked checked without review")
+            if obj.get("criticalEditionStatus") != "NOT_COLLATED":
+                errors.append(f"core-names: {rid}/{key}: false critical witness approval")
+            if obj.get("publicationState") != "BLOCKED" or obj.get("rightsState") != "RIGHTS_UNKNOWN":
+                errors.append(f"core-names: {rid}/{key}: rights or publication silently promoted")
+            surface = obj.get("surface")
+            if isinstance(surface, str):
+                errors.extend(unicode_surface_issues(f"core-names/{key}", surface))
+                if not HEBREW.search(surface):
+                    errors.append(f"core-names: original Hebrew script lost for {key}")
+            else:
+                errors.append(f"core-names: original-script form missing for {key}")
+            if not URL.match(str(obj.get("sourceUrl", ""))):
+                errors.append(f"core-names: source URL missing {key}")
+    if len(expected) != 8 or len(actual) != 8 or set(expected) != set(actual):
+        errors.append("core-names: exactly eight unique YHWH/El contexts required")
+    if count != {"yhwh": 3, "el": 5}:
+        errors.append("core-names: three YHWH and five El contexts required")
+    audit = baseline.get("auditProtocol", {}).get("coreNameVsLexeme", {})
+    if (set(audit.get("baselineIds", [])) != CORE_NAME_IDS
+        or audit.get("totalAttestations") != 8
+        or audit.get("negativeElReferents") != 2
+        or audit.get("finalEtymologyDecisions") != 0
+        or audit.get("criticalEditionStatus") != "NOT_COLLATED"
+        or audit.get("publicationEligible") != 0):
+        errors.append("core-names: audit count / etymology / Product gate changed")
+    def obj(loc: str) -> dict:
+        return actual.get(loc, {})
+    if (obj("core-yhwh-ex3-name").get("nameClaim") != "זֶה-שְּׁמִי לְעֹלָם"
+        or obj("core-yhwh-ex3-name").get("relatedButDistinct") !=
+           "Exodus3:14 אֶהְיֶה אֲשֶׁר אֶהְיֶה"):
+        errors.append("core-names: Exodus3 YHWH divine personal name confused with Ehyeh")
+    if (obj("core-yhwh-ex6-self").get("surface") != "אֲנִי יְהוָה"
+        or "לֹא נוֹדַעְתִּי" not in str(obj("core-yhwh-ex6-self").get("nextVerseQualifier",""))):
+        errors.append("core-names: Exodus6:2 self-revelation or 6:3 known-to-patriarchs nuance lost")
+    if (obj("core-yhwh-ex15-hymn").get("nameClaim") != "יְהוָה שְׁמוֹ"
+        or obj("core-yhwh-ex15-hymn").get("speaker") != "Moses and Israel singing"):
+        errors.append("core-names: Exodus15 YHWH name hymn confused with divine self-speech")
+    if (obj("core-el-ex34-merciful").get("contextualClause") !=
+        "יְהוָה יְהוָה, אֵל רַחוּם וְחַנּוּן"
+        or obj("core-el-deut32-faithful").get("poeticParallel") !=
+           "הַצּוּר תָּמִים פָּעֳלוֹ"):
+        errors.append("core-names: El attribute phrases and YHWH context lost")
+    negative = ("core-el-deut32-foreign","core-el-isa43-negated")
+    if any(obj(loc).get("referentClass") != "OTHER_GOD_NEGATED"
+           or obj(loc).get("isYHWH") is not False for loc in negative):
+        errors.append("core-names: El foreign or putative god wrongly equated with YHWH")
+    if (obj("core-el-deut32-foreign").get("negationClause") !=
+        "וְאֵין עִמּוֹ, אֵל נֵכָר"
+        or obj("core-el-isa43-negated").get("negationClause") != "לֹא-נוֹצַר אֵל"):
+        errors.append("core-names: negative El clauses deleted")
+    if (obj("core-el-isa43-i-am").get("isYHWH") is not True
+        or obj("core-el-isa43-i-am").get("referentClass") != "YHWH"
+        or obj("core-el-isa43-i-am").get("surface") != "וַאֲנִי-אֵל"):
+        errors.append("core-names: Isaiah43:12 positive El divine self-predication lost")
+    return errors
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--ledger", type=Path, default=LEDGER)
@@ -1445,6 +1573,7 @@ def main() -> int:
     parser.add_argument("--memorial-contract", type=Path, default=MEMORIAL_CONTRACT)
     parser.add_argument("--speech-contract", type=Path, default=SPEECH_INTERTEXT_CONTRACT)
     parser.add_argument("--extension-contract", type=Path, default=EXTENSION_ATTESTATION_CONTRACT)
+    parser.add_argument("--core-names-contract", type=Path, default=CORE_NAME_LEXEME_CONTRACT)
     args = parser.parse_args()
     try:
         with args.ledger.open("r", encoding="utf-8") as stream:
@@ -1488,13 +1617,20 @@ def main() -> int:
     except (OSError, ValueError) as exc:
         print(f"FAIL: cannot read extension attestation contract: {exc}", file=sys.stderr)
         return 1
+    try:
+        with args.core_names_contract.open("r", encoding="utf-8") as stream:
+            core_contract = json.load(stream)
+    except (OSError, ValueError) as exc:
+        print(f"FAIL: cannot read core name/lexeme contract: {exc}", file=sys.stderr)
+        return 1
     issues = (validate(data) + validate_extension(extension, data) +
               validate_source_access(sources) + validate_apocalyptic(data, extension) +
               validate_prophetic_namings(data) +
               validate_six_title_attestations(data, title_contract) +
               validate_memorial_attestations(data, memorial_contract) +
               validate_speech_intertext(data, speech_contract) +
-              validate_extension_attestations(extension, extension_contract))
+              validate_extension_attestations(extension, extension_contract) +
+              validate_core_name_lexeme(data, core_contract))
     if issues:
         for issue in issues:
             print("FAIL:", issue, file=sys.stderr)
