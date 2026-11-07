@@ -47,6 +47,9 @@ PINNED_GREEK_SOURCE_URLS = {
     "ATT-EXT-ARCHE-TELOS-01": "https://www.biblegateway.com/passage/?search=Revelation+21&version=SBLGNT",
     "ATT-BASE-ALPHA-OMEGA-03": "https://www.biblegateway.com/passage/?search=Revelation+22&version=SBLGNT",
     "ATT-EXT-ARCHE-TELOS-02": "https://www.biblegateway.com/passage/?search=Revelation+22&version=SBLGNT",
+    "ATT-BASE-RO-I-02": "https://www.biblegateway.com/passage/?search=John+10%3A11&version=SBLGNT",
+    "ATT-EXT-POIMEN-HO-KALOS-01": "https://www.biblegateway.com/passage/?search=John+10%3A11&version=SBLGNT",
+    "ATT-EXT-POIMEN-HO-KALOS-02": "https://www.biblegateway.com/passage/?search=John+10%3A14&version=SBLGNT",
 }
 
 
@@ -230,6 +233,69 @@ LEXICAL_NAMED_OBJECT_CONTROLS = {
         "speaker": "Jacob",
     },
 }
+REQUIRED_COVENANT_SHEPHERD_CLAIMS = {
+    "CLM-EX15-26-YHWH-HEALER",
+    "CLM-JER17-14-HEAL-ME-PRAYER",
+    "CLM-EX31-LEV20-YHWH-SANCTIFIES",
+    "CLM-PS23-YHWH-MY-SHEPHERD",
+    "CLM-JOHN10-JESUS-GOOD-SHEPHERD",
+}
+# Independent attestation-specific speech/morphology controls. Neither the
+# copied locked data contracts nor a broad regex can override these boundaries.
+COVENANT_SHEPHERD_CONTROLS = {
+    "ATT-BASE-RAPHA-01": {
+        "surface": "כִּי אֲנִי יְהוָה, רֹפְאֶךָ",
+        "speechAct": "divine_self_predication",
+        "namingActor": "YHWH, narration says 'he said'",
+        "namedObject": "none",
+        "morphology": "רֹפְאֶךָ active participle with 2ms suffix",
+    },
+    "ATT-BASE-RAPHA-02": {
+        "surface": "רְפָאֵנִי יְהוָה וְאֵרָפֵא",
+        "speechAct": "prayer_for_healing",
+        "namingActor": "Jeremiah, direct address to YHWH",
+        "morphology": "imperative + 1cs object; NOT participial רֹפְאֶךָ",
+    },
+    "ATT-BASE-MEKODDISHKEM-01": {
+        "surface": "כִּי אֲנִי יְהוָה מְקַדִּשְׁכֶם",
+        "speechAct": "divine_covenant_sanctification_predication",
+        "morphology": "מְקַדִּשְׁכֶם participle with 2mp suffix",
+        "covenantSetting": "Sabbath sign between YHWH and Israel",
+        "namedObject": "none",
+    },
+    "ATT-BASE-MEKODDISHKEM-02": {
+        "surface": "אֲנִי יְהוָה, מְקַדִּשְׁכֶם",
+        "speechAct": "divine_covenant_sanctification_predication",
+        "morphology": "מְקַדִּשְׁכֶם participle with 2mp suffix",
+        "covenantSetting": "commandments and holiness regulations",
+        "namedObject": "none",
+    },
+    "ATT-BASE-RO-I-01": {
+        "surface": "יְהוָה רֹעִי",
+        "speechAct": "poetic_shepherd_confession",
+        "morphology": "רֹעִי 1cs suffix my shepherd; root רעה",
+        "root": "רעה",
+        "notSameRootAs": "ראה (Hagar's El-Roi seeing)",
+    },
+    "ATT-BASE-RO-I-02": {
+        "surface": "Ἐγώ εἰμι ὁ ποιμὴν ὁ καλός",
+        "namingActor": "Jesus",
+        "speechAct": "christological_shepherd_self_description",
+        "languageBoundary": "Greek NT self-predication not literal Hebrew Psalm transcription",
+    },
+    "ATT-EXT-POIMEN-HO-KALOS-01": {
+        "surface": "ὁ ποιμὴν ὁ καλός",
+        "narrativeSpeaker": "Jesus addressing hearers",
+        "fullClause": "Ἐγώ εἰμι ὁ ποιμὴν ὁ καλός",
+        "syntax": "EXPLICIT_NOMINAL_PREDICATE",
+    },
+    "ATT-EXT-POIMEN-HO-KALOS-02": {
+        "surface": "ὁ ποιμὴν ὁ καλός",
+        "narrativeSpeaker": "Jesus addressing hearers",
+        "fullClause": "ἐγώ εἰμι ὁ ποιμὴν ὁ καλός",
+        "syntax": "EXPLICIT_NOMINAL_PREDICATE",
+    },
+}
 # The original reviewed seeds are a required minimum, not a cap on future work.
 # Additional claims must pass the same foreign-key, editorial and publication gates.
 ALLOWED_CLAIM_TYPES = {
@@ -334,6 +400,10 @@ REQUIRED_SEMANTIC_RELATIONS = {
     "REL-GIDEON-YHWH-BAAL-ALTAR": ("CLM-JUD6-23-24-PEACE-ALTAR", "CLM-JUD6-25-BAAL-ALTAR-DISTINCTION", "CONTRASTS_NAMED_OBJECT"),
     "REL-GEN35-PLACE-JUD6-ALTAR": ("CLM-GEN35-7-EL-BETHEL-PLACE", "CLM-JUD6-23-24-PEACE-ALTAR", "CONTRASTS_NAMED_OBJECT"),
 
+    "REL-RAPHA-EXODUS-JEREMIAH-VOICE": ("CLM-EX15-26-YHWH-HEALER", "CLM-JER17-14-HEAL-ME-PRAYER", "CONTRASTS_SPEAKER_EVIDENCE"),
+    "REL-YHWH-SANCTIFY-HEAL-SUFFIX": ("CLM-EX15-26-YHWH-HEALER", "CLM-EX31-LEV20-YHWH-SANCTIFIES", "CONTRASTS_GRAMMATICAL_FORM"),
+    "REL-PS23-JOHN10-SHEPHERD-BOUNDARY": ("CLM-PS23-YHWH-MY-SHEPHERD", "CLM-JOHN10-JESUS-GOOD-SHEPHERD", "LIMITS_INFERENCE"),
+
 }
 CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-EX3-15-DIVINE-NAME": {"ATT-BASE-YHWH-01"},
@@ -376,6 +446,12 @@ CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-DEUT32-12-FOREIGN-EL-NEGATED": {"ATT-BASE-EL-03"},
     "CLM-JUD6-25-BAAL-ALTAR-DISTINCTION": {"ATT-BASE-SHALOM-03"},
     "CLM-GEN35-7-EL-BETHEL-PLACE": {"ATT-BASE-EL-BETHEL-01"},
+
+    "CLM-EX15-26-YHWH-HEALER": {"ATT-BASE-RAPHA-01"},
+    "CLM-JER17-14-HEAL-ME-PRAYER": {"ATT-BASE-RAPHA-02"},
+    "CLM-EX31-LEV20-YHWH-SANCTIFIES": {"ATT-BASE-MEKODDISHKEM-01", "ATT-BASE-MEKODDISHKEM-02"},
+    "CLM-PS23-YHWH-MY-SHEPHERD": {"ATT-BASE-RO-I-01"},
+    "CLM-JOHN10-JESUS-GOOD-SHEPHERD": {"ATT-BASE-RO-I-02", "ATT-EXT-POIMEN-HO-KALOS-01", "ATT-EXT-POIMEN-HO-KALOS-02"},
 
 }
 
@@ -447,6 +523,10 @@ def validate_provenance(
                     continue
                 seen.add(aid)
                 att_by_id[aid] = obs
+                if aid in COVENANT_SHEPHERD_CONTROLS:
+                    for field,expected in COVENANT_SHEPHERD_CONTROLS[aid].items():
+                        if obs.get(field) != expected:
+                            errors.append(f"provenance: {aid} covenant/shepherd speaker morphology/predicate corrupted ({field})")
                 if aid in LEXICAL_NAMED_OBJECT_CONTROLS:
                     for k, expected in LEXICAL_NAMED_OBJECT_CONTROLS[aid].items():
                         if obs.get(k) != expected:
@@ -578,6 +658,8 @@ def validate_provenance(
         errors.append("provenance: required Revelation speaker/edition claim missing")
     if not REQUIRED_LEXICAL_NAMING_CLAIMS.issubset(claim_map):
         errors.append("provenance: required lexical referent or named-object claim missing")
+    if not REQUIRED_COVENANT_SHEPHERD_CLAIMS.issubset(claim_map):
+        errors.append("provenance: required covenant and shepherd speech claims missing")
     for cid,level,review in (
         ("CLM-REV1-8-LORD-GOD-ALPHA","EXPLICIT_SAME_VERSE",False),
         ("CLM-REV21-6-THRONE-SPEAKER","EXPLICIT_PRIOR_NARRATOR_CUE",False),
@@ -689,8 +771,8 @@ def main() -> int:
         for p in problems:
             print("FAIL: " + p, file=sys.stderr)
         return 1
-    print("PASS: 105 attestation IDs / 4 editions; 36 provisional claims, "
-          "23 relations, 8 lexical/foreign/place contrast guards and all publication HOLD gates")
+    print("PASS: 105 attestation IDs / 4 editions; 41 provisional claims, "
+          "26 relations, 8 covenant and shepherd controls and all publication HOLD gates")
     return 0
 
 

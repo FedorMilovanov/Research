@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "corpusId": "NAMES_OF_GOD_CLAIM_LEVEL_EVIDENCE",
   "createdAt": "2026-11-07",
-  "scope": "36 source-bound provisional claims, 23 typed relations; six lexical/named-object contrast claims covering eight existing attestations. No new collated witnesses or Product permissions.",
+  "scope": "41 provisional claims, 26 semantic relations; healer prayer versus divine address, 2mp sanctifier, original Hebrew shepherd and Greek Christ predicate clearly separated and all publication blocked.",
   "editorialPolicy": "Never infer Product approval from link completeness, never replace a cited verse or alternative theory silently; new claims require independent review.",
   "records": [
     {
@@ -826,6 +826,119 @@
         "avoid converting contextual noun, place or altar name into divine personal self-naming",
         "check publication rights and separate Product editorial signoff"
       ]
+    },
+    {
+      "claimId": "CLM-EX15-26-YHWH-HEALER",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "Exodus 15:26 MT uses a conditional YHWH speech after Marah: כי אני יהוה רפאך, with רֹפְאֶךָ a participial 'your healer' addressed to Israel (2ms grammar). This is a predication about YHWH in covenant speech and not an independent new Hebrew compound proper name or unrestricted individual medical guarantee.",
+      "attestationIds": [
+        "ATT-BASE-RAPHA-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independent original-language print edition and critical apparatus verification",
+        "Compare grammatical and historical exegetical alternatives before theological cross-testament application",
+        "Separate direct speaker, prayer addressee, nominal predicate and poetic theological intertext",
+        "Verify author/editor rights and independent Product editorial approval"
+      ]
+    },
+    {
+      "claimId": "CLM-JER17-14-HEAL-ME-PRAYER",
+      "claimType": "NARRATIVE_SPEECH_VS_NAMING",
+      "statement": "Jeremiah 17:14 MT uses רְפָאֵנִי יְהוָה וְאֵרָפֵא, an imperative petition 'heal me, LORD' addressed TO YHWH; Jeremiah is the praying speaker, not God declaring himself 'my healer' here. The imperative with a 1cs object and the active participle with 2ms suffix in Ex15:26 must remain distinct.",
+      "attestationIds": [
+        "ATT-BASE-RAPHA-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independent original-language print edition and critical apparatus verification",
+        "Compare grammatical and historical exegetical alternatives before theological cross-testament application",
+        "Separate direct speaker, prayer addressee, nominal predicate and poetic theological intertext",
+        "Verify author/editor rights and independent Product editorial approval"
+      ]
+    },
+    {
+      "claimId": "CLM-EX31-LEV20-YHWH-SANCTIFIES",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "Exodus 31:13 and Leviticus 20:8 MT contain YHWH's first-person covenant predication מְקַדִּשְׁכֶם ('sanctifying you [plural]'). The 2mp suffix marks the addressed community Israel, not an individual 'me'. Exodus 31:13 states Sabbath sign context; Leviticus 20:8 law/holiness context. Neither is the biblical narration of a separate new proper name or automatic transfer of the Sabbath command to all later communities.",
+      "attestationIds": [
+        "ATT-BASE-MEKODDISHKEM-01",
+        "ATT-BASE-MEKODDISHKEM-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independent original-language print edition and critical apparatus verification",
+        "Compare grammatical and historical exegetical alternatives before theological cross-testament application",
+        "Separate direct speaker, prayer addressee, nominal predicate and poetic theological intertext",
+        "Verify author/editor rights and independent Product editorial approval"
+      ]
+    },
+    {
+      "claimId": "CLM-PS23-YHWH-MY-SHEPHERD",
+      "claimType": "POSITIVE_REFERENT_CONTROL",
+      "statement": "Psalm 23:1 MT (commonly Psalm 22:1 in Russian Synodal numbering) is the psalmist's poetic confession יְהוָה רֹעִי, YHWH my shepherd. The 1cs possessive suffix and root רעה (shepherding) are distinct from Hagar's אֵל רֳאִי root ראה (seeing). This is a hymn's third-person statement about YHWH, not God speaking the words 'I am a shepherd' or a fabricated two-word divine proper name.",
+      "attestationIds": [
+        "ATT-BASE-RO-I-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independent original-language print edition and critical apparatus verification",
+        "Compare grammatical and historical exegetical alternatives before theological cross-testament application",
+        "Separate direct speaker, prayer addressee, nominal predicate and poetic theological intertext",
+        "Verify author/editor rights and independent Product editorial approval"
+      ]
+    },
+    {
+      "claimId": "CLM-JOHN10-JESUS-GOOD-SHEPHERD",
+      "claimType": "CANONICAL_INTERTEXT_BOUNDARY",
+      "statement": "In SBLGNT John 10:11 and 10:14 Jesus explicitly says ἐγώ εἰμι ὁ ποιμὴν ὁ καλός, 'I am the good shepherd', with a definite nominative predicate. This is Jesus' self-description and relates thematically and canonically to Psalm 23's portrayal of YHWH as shepherd, but the Greek predicate is not the identical Hebrew lexical root and is not an absolute predicate-less ἐγώ εἰμι formula such as the form discussed at John 8:58. The separate edition issue after the predicate in John 10:14 does not itself change this title.",
+      "attestationIds": [
+        "ATT-BASE-RO-I-02",
+        "ATT-EXT-POIMEN-HO-KALOS-01",
+        "ATT-EXT-POIMEN-HO-KALOS-02"
+      ],
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independent original-language print edition and critical apparatus verification",
+        "Compare grammatical and historical exegetical alternatives before theological cross-testament application",
+        "Separate direct speaker, prayer addressee, nominal predicate and poetic theological intertext",
+        "Verify author/editor rights and independent Product editorial approval"
+      ]
     }
   ],
   "semanticRelations": [
@@ -1011,6 +1124,30 @@
       "toClaimId": "CLM-JUD6-23-24-PEACE-ALTAR",
       "relationType": "CONTRASTS_NAMED_OBJECT",
       "rationale": "Gen35:7 explicitly names a place, Jud6:24 explicitly names an altar; do not force a single naming type based on sacred vocabulary.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-RAPHA-EXODUS-JEREMIAH-VOICE",
+      "fromClaimId": "CLM-EX15-26-YHWH-HEALER",
+      "toClaimId": "CLM-JER17-14-HEAL-ME-PRAYER",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Ex15:26 YHWH addresses Israel, Jer17:14 Jeremiah requests healing FROM YHWH. Root identity does not turn prayer into divine first-person speech.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-YHWH-SANCTIFY-HEAL-SUFFIX",
+      "fromClaimId": "CLM-EX15-26-YHWH-HEALER",
+      "toClaimId": "CLM-EX31-LEV20-YHWH-SANCTIFIES",
+      "relationType": "CONTRASTS_GRAMMATICAL_FORM",
+      "rationale": "רֹפְאֶךָ has the second-person masculine singular suffix; מְקַדִּשְׁכֶם has second-person masculine plural. Context and addressee cannot be flattened.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-PS23-JOHN10-SHEPHERD-BOUNDARY",
+      "fromClaimId": "CLM-PS23-YHWH-MY-SHEPHERD",
+      "toClaimId": "CLM-JOHN10-JESUS-GOOD-SHEPHERD",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "Thematic canonical connection does not prove Hebrew and Greek are the same original-language clause, nor does it erase the difference between psalmist and Jesus as speaker.",
       "publicationState": "BLOCKED"
     }
   ]

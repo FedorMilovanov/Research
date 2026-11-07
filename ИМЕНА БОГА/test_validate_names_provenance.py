@@ -699,5 +699,103 @@ class ProvenanceGraphTests(unittest.TestCase):
         self.assertTrue(any("required semantic boundary" in e for e in self.check(claims=d)))
 
 
+    def test_five_speech_claims_link_exact_eight_original_attestations(self) -> None:
+        mapping={
+            "CLM-EX15-26-YHWH-HEALER": {"ATT-BASE-RAPHA-01"},
+            "CLM-JER17-14-HEAL-ME-PRAYER": {"ATT-BASE-RAPHA-02"},
+            "CLM-EX31-LEV20-YHWH-SANCTIFIES": {"ATT-BASE-MEKODDISHKEM-01","ATT-BASE-MEKODDISHKEM-02"},
+            "CLM-PS23-YHWH-MY-SHEPHERD": {"ATT-BASE-RO-I-01"},
+            "CLM-JOHN10-JESUS-GOOD-SHEPHERD": {"ATT-BASE-RO-I-02","ATT-EXT-POIMEN-HO-KALOS-01","ATT-EXT-POIMEN-HO-KALOS-02"},
+        }
+        for cid,att in mapping.items():
+            row=next(x for x in self.claims["records"] if x["claimId"]==cid)
+            self.assertEqual(att,set(row["attestationIds"]))
+            self.assertEqual("RESEARCH_HOLD",row["editorialState"])
+            self.assertEqual("BLOCKED",row["publicationState"])
+
+    def test_exodus_healer_divine_speaker_not_changed_to_prophet(self) -> None:
+        d,o=self.mutate("rapha","baseline",0)
+        o["namingActor"]="Jeremiah"
+        self.assertTrue(any("covenant/shepherd speaker morphology" in e for e in self.check(baseline=d)))
+
+    def test_exodus_healer_second_person_singular_not_plural(self) -> None:
+        d,o=self.mutate("rapha","baseline",0)
+        o["morphology"]="2mp"
+        self.assertTrue(any("covenant/shepherd speaker morphology" in e for e in self.check(baseline=d)))
+
+    def test_jeremiah_prayer_not_changed_to_yhwh_predication(self) -> None:
+        d,o=self.mutate("rapha","baseline",1)
+        o["speechAct"]="divine_self_predication"
+        self.assertTrue(any("covenant/shepherd speaker morphology" in e for e in self.check(baseline=d)))
+
+    def test_jeremiah_heal_me_not_participle_your_healer(self) -> None:
+        d,o=self.mutate("rapha","baseline",1)
+        o["morphology"]="רֹפְאֶךָ 2ms"
+        self.assertTrue(any("covenant/shepherd speaker morphology" in e for e in self.check(baseline=d)))
+
+    def test_exodus_sanctification_sabbath_context_not_erased(self) -> None:
+        d,o=self.mutate("mekoddishkem","baseline",0)
+        o["covenantSetting"]="no historical context"
+        self.assertTrue(any("covenant/shepherd speaker morphology" in e for e in self.check(baseline=d)))
+
+    def test_leviticus_sanctifier_plural_not_made_first_person(self) -> None:
+        d,o=self.mutate("mekoddishkem","baseline",1)
+        o["morphology"]="1cs"
+        self.assertTrue(any("covenant/shepherd speaker morphology" in e for e in self.check(baseline=d)))
+
+    def test_psalm_shepherd_not_same_root_as_hagar_el_roi(self) -> None:
+        d,o=self.mutate("ro-i","baseline",0)
+        o["root"]="ראה"
+        self.assertTrue(any("covenant/shepherd speaker morphology" in e for e in self.check(baseline=d)))
+
+    def test_psalm_hebrew_shepherd_not_ascribed_to_jesus_as_speaker(self) -> None:
+        d,o=self.mutate("ro-i","baseline",0)
+        o["speechAct"]="christological_shepherd_self_description"
+        self.assertTrue(any("covenant/shepherd speaker morphology" in e for e in self.check(baseline=d)))
+
+    def test_john10_11_speech_not_made_literal_psalm_hebrew(self) -> None:
+        d,o=self.mutate("ro-i","baseline",1)
+        o["languageBoundary"]="same Hebrew lexeme"
+        self.assertTrue(any("covenant/shepherd speaker morphology" in e for e in self.check(baseline=d)))
+
+    def test_john10_11_explicit_nominal_predicate_not_absolute_ego_eimi(self) -> None:
+        d,o=self.mutate("poimen-ho-kalos","extension",0)
+        o["syntax"]="ABSOLUTE_EGO_EIMI"
+        self.assertTrue(any("covenant/shepherd speaker morphology" in e for e in self.check(extension=d)))
+
+    def test_john10_14_same_predicate_not_removed(self) -> None:
+        d,o=self.mutate("poimen-ho-kalos","extension",1)
+        o["fullClause"]="ἐγώ εἰμι"
+        self.assertTrue(any("covenant/shepherd speaker morphology" in e for e in self.check(extension=d)))
+
+    def test_john10_14_pinned_single_edition_url_not_replaced(self) -> None:
+        d,o=self.mutate("poimen-ho-kalos","extension",1)
+        o["sourceUrl"]="https://www.biblegateway.com/passage/?search=John+10%3A11&version=SBLGNT"
+        self.assertTrue(any("verified pinned Greek passage URL changed" in e for e in self.check(extension=d)))
+
+    def test_healing_prayer_cannot_swap_divine_self_predication_witness(self) -> None:
+        d=copy.deepcopy(self.claims)
+        r=next(x for x in d["records"] if x["claimId"]=="CLM-JER17-14-HEAL-ME-PRAYER")
+        r["attestationIds"]=["ATT-BASE-RAPHA-01"]
+        self.assertTrue(any("lost its independently reviewed text witnesses" in e for e in self.check(claims=d)))
+
+    def test_covenant_sanctifier_claim_cannot_silently_disappear(self) -> None:
+        d=copy.deepcopy(self.claims)
+        d["records"]=[x for x in d["records"] if x["claimId"]!="CLM-EX31-LEV20-YHWH-SANCTIFIES"]
+        self.assertTrue(any("required covenant and shepherd speech claims missing" in e for e in self.check(claims=d)))
+
+    def test_psalm_and_john_shepherd_boundary_must_stay_limited(self) -> None:
+        d=copy.deepcopy(self.claims)
+        r=next(x for x in d["semanticRelations"] if x["relationId"]=="REL-PS23-JOHN10-SHEPHERD-BOUNDARY")
+        r["relationType"]="CONTRASTS_REFERENT"
+        self.assertTrue(any("required semantic boundary" in e for e in self.check(claims=d)))
+
+    def test_healer_and_sanctifier_suffix_boundary_must_stay_typed(self) -> None:
+        d=copy.deepcopy(self.claims)
+        r=next(x for x in d["semanticRelations"] if x["relationId"]=="REL-YHWH-SANCTIFY-HEAL-SUFFIX")
+        r["relationType"]="CONTRASTS_NAMED_OBJECT"
+        self.assertTrue(any("required semantic boundary" in e for e in self.check(claims=d)))
+
+
 if __name__ == "__main__":
     unittest.main()

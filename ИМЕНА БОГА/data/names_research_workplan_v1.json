@@ -20,15 +20,15 @@
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 16,
-    "provenanceRegressionTests": 110,
+    "provenanceRegressionTests": 127,
     "canonicalEditions": 4,
-    "curatedClaims": 36,
+    "curatedClaims": 41,
     "allAttestationForeignKeys": 105,
-    "editionSpecificGreekUrlsVerified": 11,
+    "editionSpecificGreekUrlsVerified": 14,
     "unselectedGreekEditionUrls": 0,
-    "attestationsReferencedByClaims": 47,
-    "attestationsWithoutClaimReference": 58,
-    "typedClaimRelations": 23,
+    "attestationsReferencedByClaims": 55,
+    "attestationsWithoutClaimReference": 50,
+    "typedClaimRelations": 26,
     "correctedExodusDivineReferentRows": 3,
     "semanticScopeAudits": 15,
     "independentScholarlyClaimApprovals": 0,
@@ -41,7 +41,9 @@
     "revelationSpeakerEditionAttestations": 6,
     "revelationSecondaryCommentariesRegistered": 2,
     "historicalMissingLocusIdsRecounted": 55,
-    "lexicalReferentAndNamedObjectGuards": 8
+    "lexicalReferentAndNamedObjectGuards": 8,
+    "covenantShepherdAttestationsGuarded": 8,
+    "covenantSpeakerSpeechVersusPrayerDistinctions": 2
   },
   "allowedStatuses": [
     "DONE",
@@ -203,9 +205,13 @@
         "data/names_claim_registry_v1.json: six narrow blocked claims over eight previously unlinked observations, four fixed semantic contrasts",
         "validate_names_provenance.py: independent exact contextual/morphological/numbering/named-object controls on 8 attestation IDs",
         "test_validate_names_provenance.py: 14 additional adversarial tests, do not collapse MT verse numbering or named-object boundaries",
-        "Recounted 55 older missing locusId entries without inventing IDs or changing stable attestation/source/edition IDs"
+        "Recounted 55 older missing locusId entries without inventing IDs or changing stable attestation/source/edition IDs",
+        "21_HEALER_SANCTIFIER_SHEPHERD_SPEAKER_AUDIT_20261107.md: original MT and SBLGNT distinction among divine healing speech, Jeremiah healing prayer, covenant sanctification and Johannine shepherd self-predication",
+        "data/names_claim_registry_v1.json: five source-linked provisional claims and 3 semantic relations for eight existing attestation IDs",
+        "validate_names_provenance.py: eight independent speech act/morphology/predicate/root controls and three extra exact pinned SBLGNT John10 URLs",
+        "test_validate_names_provenance.py: 17 additional positive/adversarial checks on speaker, suffix, biblical verse, root confusion and Greek predicate"
       ],
-      "verification": "105_STABLE_ATTESTATION_EDITION_SOURCE_FKS; 48_REGISTERED_SOURCES; 36_PROVISIONAL_CLAIMS_23_RELATIONS; 47_OF_105_LINKED; 58_WITHOUT_CLAIM; 55_HISTORICAL_MISSING_LOCUS_ID_RECOUNTED_WITHOUT_BACKFILL; 8_INDEPENDENT_LEXEME_OR_OBJECT_GUARDS; 291_EXPECTED_LOCAL_TESTS_FULL_RUN_AND_EXACT_SHA_CI_PENDING; CRITICAL_COLLATIONS_0; SCIENTIFIC_APPROVAL_0; PRODUCT_APPROVAL_0",
+      "verification": "105_STABLE_ATT_SOURCE_EDITION_FK; 48_SOURCES; 41_RESEARCH_HOLD_CLAIMS; 26_TYPED_RELATIONS; 55_OF_105_CLAIM_LINKED; 50_WITHOUT_CLAIM; 8_SPEECH_PRAYER_SANCTIFICATION_SHEPHERD_CONTROLS; 14_PINNED_GREEK_URLS; 308_LOCAL_TESTS_EXPECTED_FULL_RUN; EXACT_SHA_CI_PENDING; CRITICAL_COLLATIONS_0; PRODUCT_APPROVAL_0",
       "closureAt": null,
       "owner": "Research editorial"
     },
@@ -604,7 +610,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NG-02: next strictly bounded high-risk pass on 58 claim-unlinked attestations, prioritizing divine self-predications versus human address (Rapha, Mekoddishkem) and poetic/NT shepherd comparison. The 55 old rows lacking locusId are NOT orphan sources; agree consumer/backward-compatible policy before backfilling. Critical apparatus and expert editorial challenge remain prerequisites, no Product publication.",
+  "nextAction": "NG-02: 50 current attestations lack linked provisional claims, prioritize title-interpretation risks, including the John 6/18 ego eimi narrative/absolute clause distinctions, and ambiguous covenantal forms. Preserve 55 historical missing locusId occurrences without inventing identifiers; no full corpus auto-promotion. Scientific apparatus, multi-tradition review, source rights and Product publication are separately blocked.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -686,7 +692,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-07",
-    "planStatus": "NG-01 DONE; NG-02 IN_PROGRESS: 36 research-held claims, 23 semantic links, 47/105 contexts linked",
+    "planStatus": "NG-01 DONE; NG-02 IN_PROGRESS: 41 provisional claims, 26 typed semantic relations, 55/105 attestations with narrow claim links",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -724,14 +730,18 @@
       "Added 4 research-held claims, 4 typed relations, 2 secondary sources, 6 speaker-control checks and 18 mutation tests; 277 local tests planned (165+16+96).",
       "NG-02 eight lexical/object contexts: 6 narrow claims, 4 semantic contrasts, 14 regression tests, exact MT Hebrew/English Exodus 20 numbering kept",
       "Recounted 55 missing historic locusIds without changing stable attestation source or edition keys",
-      "Provenance guard independently locks 8 context meanings, speech acts, and named objects; no new critical manuscript claim"
+      "Provenance guard independently locks 8 context meanings, speech acts, and named objects; no new critical manuscript claim",
+      "NG-02 speaker and syntax boundary: 8 original attestations, 5 narrow claims, 3 relations",
+      "Exodus15:26 YHWH self-predication 2ms versus Jeremiah17:14 human prayer/imperative 1cs; Exodus31:13/Leviticus20:8 YHWH sanctifies 2mp covenant addressee",
+      "Psalm23:1 MT YHWH my shepherd Hebrew רעה (not Hagar's seeing ראה) versus John10:11/14 Jesus explicit Greek nominal predicate; 3 John10 SBLGNT exact source URL locks",
+      "17 adversarial regressions added; total 308 local tests expected from 165 ledger, 16 plan and 127 provenance"
     ],
     "stillOpen": [
-      "NG-02: 58/105 source-and-edition-linked attestations without curated claim links",
-      "55 historic locusId gaps need consumer/backward-compatibility policy before any migrations",
-      "Independent critical Hebrew manuscripts, lexical disputes, and competing historical viewpoints not fully researched",
-      "All 36 provisional claims RESEARCH_HOLD and publication blocked; 0 full scientific / Product approvals",
-      "Exact GitHub CI for new SHA must be verified"
+      "NG-02: 50/105 original-language attestations still without provisional claim links",
+      "Critical Greek and Hebrew apparatus and comprehensive rival scholarship not collated/reviewed",
+      "55 historical absent locusIds remain a version/consumer question, not broken source FKs",
+      "All 41 research-held claims have no scholarly/Product approval, publication BLOCKED",
+      "Verify final commit SHA and 6 CI workflows before accepting complete wave"
     ]
   },
   "originalResearchCheckpoint": {
@@ -748,14 +758,14 @@
       "sourceForeignKeys": 105,
       "editionForeignKeys": 105,
       "canonicalEditions": 4,
-      "curatedClaims": 36,
+      "curatedClaims": 41,
       "locusIdMissingHistorically": 55,
       "editionSelectionRecheckHolds": 0,
-      "notes": "Distinct MT contexts for Elohim (creator/foreign/Shema), El (YHWH/foreign), Baal altar vs Gideon's altar, El Bethel place. 55 historic missing locusId rows remain stable via attestationId/sourceId/editionId, no invented backfill. 58 still unlinked, 0 Product clearance.",
-      "typedClaimRelations": 23,
-      "editionSpecificDigitalVerseRechecksCompleted": 11,
-      "attestationsLinkedToClaims": 47,
-      "attestationsWithoutClaimReferences": 58,
+      "notes": "8 existing observations have narrow source-bound claims across YHWH healing first-person, Jeremiah imperative request, divine covenantal 2mp sanctification, Psalm YHWH my shepherd (root רעה), and Jesus Greek nominal good shepherd; 50 unlinked remain. All holds preserved.",
+      "typedClaimRelations": 26,
+      "editionSpecificDigitalVerseRechecksCompleted": 14,
+      "attestationsLinkedToClaims": 55,
+      "attestationsWithoutClaimReferences": 50,
       "divineReferentAddresseeControls": 3,
       "semanticScopeAudits": 15,
       "scholarlyClaimApprovals": 0,
@@ -766,7 +776,8 @@
       "immanuelDistinctEvidenceLociGuarded": 5,
       "revelationSpeakerEditionAttestations": 6,
       "historicalMissingLocusIdsRecounted": 55,
-      "lexicalReferentAndNamedObjectGuards": 8
+      "lexicalReferentAndNamedObjectGuards": 8,
+      "covenantShepherdAttestationsGuarded": 8
     }
   }
 }
