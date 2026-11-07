@@ -675,7 +675,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "Exactly two active deliverables: (1) NG-03 finish CURRENT/HISTORICAL/SUPERSEDED review for documents 01-10; (2) CH-PILOT-01 write one coherent reader manuscript on what counts as God's name, with biblical original-language witnesses and three selected systematic theologies as explicitly attributed secondary interpretive sources. STOP_SYSTEMATICS_DISCOVERY until manuscript identifies a concrete Tier-1/2 gap. NG-02 DONE research graph only; NG-04/10/11/12/13 scholarly gates and NG-14/15 Arena/Product/rights gates still blocked. No new plan, PR, branch, or publication.",
+  "nextAction": "Two active deliverables only: (1) NG-03 complete semantic supersession of old dossiers 01-10; (2) adversarial EDIT existing reader/CH-PILOT-01_WHAT_SCRIPTURE_CALLS_GODS_NAME.md draft, check named objects/speakers, biblical original verses, strong alternative and reader logic; no more broad systematic research until concrete claim gap. Scholarly/rights/critical apparatus/Arena Product remain blocked.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -757,7 +757,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-08",
-    "planStatus": "NG-02 RESEARCH GRAPH DONE on ff6199a 6/6 CI; NG-03 supersession IN_PROGRESS; CH-PILOT-01 FRAME/READ; scholarly/rights/Product NOT APPROVED",
+    "planStatus": "NG-02 research graph DONE; NG-03 IN_PROGRESS; CH-PILOT-01 full RESEARCH_MANUSCRIPT_DRAFT exists pending adversarial edit; 0 editorial approvals, scholarly/rights/Product unchanged.",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -833,7 +833,8 @@
       "Recorded scoped negative GitHub default-branch read-only code search in three relevant site repos as NOT a product runtime proof",
       "New distinct consumer contract gate, validator and 25 adversarial checks wired into Names of God specialized CI; no Product modifications",
       "2026-11-08: NG-02 graph-only closure from exact 6/6 CI ff6199a, 105/105 FKs, 50 immutable legacy inline IDs and 55 intentionally absent inline keys; external Arena/rights/scientific gates unchanged.",
-      "2026-11-08: Started NG-03 historical/current supersession review and bounded systematic Gill/Berkhof/Bavinck intake for one reader pilot, with stop-discovery criterion."
+      "2026-11-08: Started NG-03 historical/current supersession review and bounded systematic Gill/Berkhof/Bavinck intake for one reader pilot, with stop-discovery criterion.",
+      "2026-11-08: Wrote a single ~2400-word connected CH-PILOT-01 reader manuscript with separate source/rights critical appendix; checked Exodus 3, 34, 15, Genesis 22, Judges 6, Psalm 23 primary digital Hebrew and selected Gill/Berkhof/Bavinck secondary passages. Await independent adversarial editorial review, no publish."
     ],
     "stillOpen": [
       "External Product/Arena consumers and zip prototypes still NOT independently authenticated by exact deployment/build; no dual-read v2 test witness",
@@ -906,7 +907,7 @@
   "editorialExecution": {
     "asOf": "2026-11-08",
     "owner": "ИМЕНА БОГА/11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md §0a/§3b",
-    "state": "FRAME_AND_READ_NOT_MANUSCRIPT_READY",
+    "state": "READER_MANUSCRIPT_DRAFT_EXISTS_ADVERSARIAL_REVIEW_PENDING",
     "readerChapterCountApproved": null,
     "subjectDirectionsProvisional": 14,
     "readerManuscriptsAccepted": 0,
@@ -922,7 +923,10 @@
         "kind": "READER_MANUSCRIPT_PILOT",
         "target": "What does Scripture mean by the name of God?",
         "acceptance": "One continuous readable manuscript distinguishing God's revealed name, proper name, title, attribute, predicate and named object, primary verses, one strong alternative, and evidence/rights limitations.",
-        "status": "FRAME_READ_NOT_DRAFT"
+        "status": "RESEARCH_MANUSCRIPT_DRAFT_ADVERSARIAL_REVIEW_PENDING_NOT_EDITORIAL_READY",
+        "file": "ИМЕНА БОГА/reader/CH-PILOT-01_WHAT_SCRIPTURE_CALLS_GODS_NAME.md",
+        "verification": "EXISTING_CONTIGUOUS_READER_TEXT_WITH_SEPARATE_SOURCED_EDITORIAL_APPENDIX_2026-11-08",
+        "nextReview": "Check exact named object/speaker in Exod3:12-15;34:5-7;Gen22:14;Judg6:23-25, Hebrew subject-verb and Russian phrasing, systematic attribution and non-licensing. Do not mark editorial ready until adversarial check."
       }
     ],
     "nextChapterCandidates": [
@@ -931,7 +935,8 @@
     ],
     "discoveryStop": "STOP_SYSTEMATICS_DISCOVERY_AFTER_GILL_BERKHOF_BAVINCK_UNTIL_SPECIFIC_MANUSCRIPT_GAP",
     "sourcePolicy": "SECONDARY_B1_AUTHOR_ATTRIBUTED_NOT_CRITICAL_WITNESS",
-    "publicationGate": "ALL_PRODUCT_RIGHTS_SCHOLARLY_HOLDS_REMAIN"
+    "publicationGate": "ALL_PRODUCT_RIGHTS_SCHOLARLY_HOLDS_REMAIN",
+    "readerManuscriptsDrafted": 1
   },
   "systematicTheologyTriage": {
     "asOf": "2026-11-08",
