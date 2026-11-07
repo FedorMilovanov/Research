@@ -1094,9 +1094,9 @@
       "url": "https://tms.edu/wp-content/uploads/2024/12/TMSJ-35.2-rev.11.24.pdf",
       "objectType": "published_scholarly_article_publisher_contents_only",
       "sourceRole": "ATTRIBUTED_DANIEL7_CHRISTOLOGY_JOURNAL_CATALOG_2024",
-      "accessState": "PARTIAL_OBJECT",
-      "locatorState": "EXACT_LOCATOR_VERIFIED",
-      "sourceObjectState": "Publisher journal contents confirms title and author; precise article pagination and full argument not checked.",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "sourceObjectState": "Publisher official issue contents confirms Abner Chou paper title. Full article, article pagination and textual arguments NOT read or verified; no independent manuscript collation.",
       "supportedUse": "Queue author and title for future independent evaluation of Daniel7 Aramaic Old of Days and son-of-man narrative roles",
       "forbiddenUse": "Claim exact page numbers, approved translation, or that identity of the two Daniel7 figures is already established",
       "year": 2024,
@@ -1115,14 +1115,9 @@
   ],
   "auditRevision": {
     "date": "2026-11-07",
-    "newSources": [
-      "SRC-SBLGNT-DIGITAL-NT",
-      "SRC-TMSJ-VALDIZAN-EX3-2024",
-      "SRC-TMSJ-VALDIZAN-ACTS2-2024",
-      "SRC-TMSJ-CHOU-TRANSLATION-2024",
-      "SRC-TMSJ-BARRICK-TRANSLATION-2024",
+    "correctedSourceIds": [
       "SRC-TMSJ-CHOU-DANIEL-2024"
     ],
-    "rationale": "NG02 adds corpus-level exact-verse SBLGNT edition provenance; NG05/08/09 add original TMSJ 2024 source objects, article permissions and title-only vs selected-page scope."
+    "rationale": "GitHub CI correctly caught inherited PARTIAL_OBJECT metadata. Restrict Chou Daniel to catalog only until exact publisher article pages are read."
   }
 }
