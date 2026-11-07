@@ -59,7 +59,10 @@
           "publicationState": "BLOCKED",
           "prefixOnName": "NONE",
           "nameRole": "ABBREVIATED_DIVINE_NAME",
-          "speakerConfidence": "EXPLICIT_SONG_INTRODUCED_IN_15_1"
+          "speakerConfidence": "EXPLICIT_SONG_INTRODUCED_IN_15_1",
+          "attestationId": "ATT-EXT-YAH-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "locusId": "ext-yah-ps68-prefixed",
@@ -82,7 +85,10 @@
             "commonEnglish": "Psalms 68:4"
           },
           "textualConjecture": "NET proposes כִּי יָהּ שְׁמוֹ; NOT printed MT",
-          "grammaticalAlternative": "bet of identity in NET translator note"
+          "grammaticalAlternative": "bet of identity in NET translator note",
+          "attestationId": "ATT-EXT-YAH-02",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         }
       ],
       "contextualAssertion": "MT Ex15:2 contains Yah alone, while MT Ps68:5 uses prefixed בְּיָהּ; alternative conjecture כי יה שמו is NET interpretation and not attested MT. Yah is not an entirely unrelated personal name or the word Sabbath."
@@ -135,7 +141,10 @@
           "grammaticalActor": "Jeshurun, וַיִּטֹּשׁ",
           "grammaticalObject": "אֱלוֹהַּ",
           "contextParallel": "צוּר יְשֻׁעָתוֹ",
-          "historicalMorphology": "Suchard 2025 reconstruction of ʾilāh- remains scholarly hypothesis"
+          "historicalMorphology": "Suchard 2025 reconstruction of ʾilāh- remains scholarly hypothesis",
+          "attestationId": "ATT-EXT-ELOAH-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         }
       ],
       "contextualAssertion": "Deut32:15 Eloah is the object of Jeshurun's rejection, not subject of verb abandoned. Suchard (JSOT 2025) presents modern diachronic morphology, not a final lexical proof from this single verse."
@@ -186,7 +195,10 @@
           "publicationState": "BLOCKED",
           "contextualActor": "Daniel's companions with Daniel",
           "grammaticalPrefix": "מִן-קֳדָם",
-          "divineReferent": "God of Israel"
+          "divineReferent": "God of Israel",
+          "attestationId": "ATT-EXT-ELAH-SHMAYA-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-DANIEL-ARAMAIC"
         },
         {
           "locusId": "ext-elah-dan2-praise",
@@ -204,7 +216,10 @@
           "publicationState": "BLOCKED",
           "contextualActor": "Daniel",
           "grammaticalPrefix": "לֶ",
-          "divineReferent": "God of Israel"
+          "divineReferent": "God of Israel",
+          "attestationId": "ATT-EXT-ELAH-SHMAYA-02",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-DANIEL-ARAMAIC"
         }
       ],
       "negativeControls": [
@@ -277,7 +292,10 @@
             "commonEnglish": "Psalms 42:2"
           },
           "contextParallel": "לֵאלֹהִים",
-          "speechAddressee": "God, in a first-person description of longing"
+          "speechAddressee": "God, in a first-person description of longing",
+          "attestationId": "ATT-EXT-EL-HAY-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         }
       ],
       "contextualAssertion": "Ps42:3 MT verse shows לְאֵל חָי, with lamed, and 42:2 common English; living qualifies God within poetic thirst, not a new personal naming ritual."
@@ -329,7 +347,10 @@
           "publicationState": "BLOCKED",
           "immediateContext": "כִּי-אַתָּה אָבִינוּ ... contrasted with Abraham and Israel not knowing us",
           "addressee": "YHWH",
-          "notIdenticalTo": "Αββα in Greek New Testament represents a different Aramaic lexical item/transliteration"
+          "notIdenticalTo": "Αββα in Greek New Testament represents a different Aramaic lexical item/transliteration",
+          "attestationId": "ATT-EXT-AVINU-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         }
       ],
       "contextualAssertion": "Isaiah63:16 already addresses YHWH as our Father before the NT Abba; both languages and historical/covenantal contexts remain distinct and NT trinitarian identifications require further argument."
@@ -381,7 +402,10 @@
           "publicationState": "BLOCKED",
           "linkedPoeticMetaphor": "יְהוָה מָעוֹז-חַיַּי",
           "namingActInVerse": false,
-          "suffixMorphology": "אוֹרִי and יִשְׁעִי first-person singular possessive forms"
+          "suffixMorphology": "אוֹרִי and יִשְׁעִי first-person singular possessive forms",
+          "attestationId": "ATT-EXT-YHWH-ORI-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         }
       ],
       "contextualAssertion": "Ps27:1 two poetic first-person predicates light and salvation plus third stronghold in same verse; no ויקרא שם act naming an independent YHWH-Ori personal name."
@@ -433,7 +457,10 @@
           "publicationState": "BLOCKED",
           "contextParallel": "הַצּוּר תָּמִים פָּעֳלוֹ",
           "contrast": "וְאֵין עָוֶל",
-          "namingActInVerse": false
+          "namingActInVerse": false,
+          "attestationId": "ATT-EXT-EL-EMUNAH-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         }
       ],
       "contextualAssertion": "Deut32:4 poetic God of faithfulness, with Rock and without injustice in same verse; divine attribute, not a second secret personal name."
@@ -485,7 +512,10 @@
           "publicationState": "BLOCKED",
           "introductoryClause": "וַיִּקְרָא, יְהוָה יְהוָה",
           "followingAttributes": "אֶרֶךְ אַפַּיִם, וְרַב-חֶסֶד וֶאֱמֶת",
-          "qualifier": "NAME_PROCLAMATION_NOT_EACH_ADJECTIVE_AS_PROPER_NAME"
+          "qualifier": "NAME_PROCLAMATION_NOT_EACH_ADJECTIVE_AS_PROPER_NAME",
+          "attestationId": "ATT-EXT-EL-RAHUM-HANNUN-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         }
       ],
       "contextualAssertion": "Ex34:6 directly narrates divine name proclamation and attributes mercy, grace, patience and truth; unlike an arbitrary epithet yet not each lexical adjective an independent personal name."
@@ -556,7 +586,10 @@
           "recipient": "Jesus (αὐτῷ)",
           "promisedObject": "τὸν θρόνον Δαυεὶδ",
           "speakerNotDivineAgent": true,
-          "textWitnessFull": "καὶ δώσει αὐτῷ κύριος ὁ θεὸς τὸν θρόνον Δαυεὶδ"
+          "textWitnessFull": "καὶ δώσει αὐτῷ κύριος ὁ θεὸς τὸν θρόνον Δαυεὶδ",
+          "attestationId": "ATT-EXT-KYRIOS-HO-THEOS-01",
+          "editionId": "ED-THGNT-2017-BIBLEGATEWAY",
+          "sourceId": "SRC-THGNT-LUKE"
         }
       ],
       "contextualAssertion": "Luke1:32 THGNT Gabriel is literary speaker to Mary, Lord God is grammatical subject of δώσει, Jesus is recipient αὐτῷ, throne of David promised object. Do not collapse speaker/agent/recipient. SBLGNT displays Δαυὶδ vs THGNT Δαυεὶδ in David."
@@ -613,7 +646,10 @@
           "publicationState": "BLOCKED",
           "fullClause": "Ἐγώ εἰμι ὁ ποιμὴν ὁ καλός",
           "syntax": "EXPLICIT_NOMINAL_PREDICATE",
-          "intertext": "Psalm 23 Hebrew shepherd is separate original-language wording"
+          "intertext": "Psalm 23 Hebrew shepherd is separate original-language wording",
+          "attestationId": "ATT-EXT-POIMEN-HO-KALOS-01",
+          "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
         },
         {
           "locusId": "ext-poimen-john1014",
@@ -632,7 +668,10 @@
           "fullClause": "ἐγώ εἰμι ὁ ποιμὴν ὁ καλός",
           "syntax": "EXPLICIT_NOMINAL_PREDICATE",
           "printedVariant": "SBLGNT critical apparatus 10:14 differs in subsequent γινώσκουσί με τὰ ἐμά vs RP γινώσκομαι ὑπὸ τῶν ἐμῶν, not in predicate",
-          "intertext": "Psalm 23 Hebrew distinct"
+          "intertext": "Psalm 23 Hebrew distinct",
+          "attestationId": "ATT-EXT-POIMEN-HO-KALOS-02",
+          "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
         }
       ],
       "contextualAssertion": "John10:11 and 14 Jesus says ego eimi WITH explicit predicate Good Shepherd; not John8:58 absolute-type Jesus declaration. Greek SBLGNT 10:14 has separate edition comparison AFTER the predicate, not variation in designation."
@@ -688,7 +727,10 @@
           "publicationState": "BLOCKED",
           "fullClause": "Ἐγώ εἰμι ἡ ἀνάστασις καὶ ἡ ζωή",
           "syntax": "TWO_COORDINATED_NOMINAL_PREDICATES",
-          "addressee": "Martha"
+          "addressee": "Martha",
+          "attestationId": "ATT-EXT-ANASTASIS-ZOE-01",
+          "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
         }
       ],
       "contextualAssertion": "John11:25 Jesus speaking to Martha: explicit predicates ἡ ἀνάστασις καὶ ἡ ζωή after Ἐγώ εἰμι; not bare formula John8:58."
@@ -740,7 +782,10 @@
           "sourceUrl": "https://www.biblegateway.com/passage/?search=Revelation+1%3A4-8&version=SBLGNT",
           "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
-          "rightsState": "RIGHTS_UNKNOWN"
+          "rightsState": "RIGHTS_UNKNOWN",
+          "attestationId": "ATT-EXT-HO-ON-ERCHOMENOS-01",
+          "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
         },
         {
           "verse": "Revelation 1:8",
@@ -752,7 +797,10 @@
           "sourceUrl": "https://www.biblegateway.com/passage/?search=Revelation+1%3A4-8&version=SBLGNT",
           "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
-          "rightsState": "RIGHTS_UNKNOWN"
+          "rightsState": "RIGHTS_UNKNOWN",
+          "attestationId": "ATT-EXT-HO-ON-ERCHOMENOS-02",
+          "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
         }
       ]
     },
@@ -796,7 +844,10 @@
           "sourceUrl": "https://www.biblegateway.com/passage/?search=Revelation+21&version=SBLGNT",
           "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
-          "rightsState": "RIGHTS_UNKNOWN"
+          "rightsState": "RIGHTS_UNKNOWN",
+          "attestationId": "ATT-EXT-ARCHE-TELOS-01",
+          "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
         },
         {
           "verse": "Revelation 22:13",
@@ -808,7 +859,10 @@
           "sourceUrl": "https://www.biblegateway.com/passage/?search=Revelation+22&version=SBLGNT",
           "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
-          "rightsState": "RIGHTS_UNKNOWN"
+          "rightsState": "RIGHTS_UNKNOWN",
+          "attestationId": "ATT-EXT-ARCHE-TELOS-02",
+          "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
         }
       ]
     }
