@@ -125,7 +125,66 @@
         "traditionalMorphology2": "Niphal yiqtol 3ms",
         "morphologicalStatus": "GRAMMATICAL_ANALYSIS_NEEDS_GRAMMAR_REFERENCE_FOR_QUOTE_SAFE",
         "sourceUrl": "https://mechon-mamre.org/p/pt/pt0122.htm"
-      }
+      },
+      "attestations": [
+        {
+          "locusId": "gen22-abraham-answer",
+          "verse": "Genesis 22:8",
+          "surface": "אֱלֹהִים יִרְאֶה-לּוֹ",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "namingActor": "Abraham speaking",
+          "namedObject": "none",
+          "speechAct": "divine_provision_predication",
+          "referent": "God provides/foresees offering",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0122.htm",
+          "sourceAccess": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "morphology": "יִרְאֶה Qal yiqtol 3ms (secondary preliminary)",
+          "directAddress": "Abraham to Isaac"
+        },
+        {
+          "locusId": "gen22-memorial-place",
+          "verse": "Genesis 22:14",
+          "surface": "יְהוָה יִרְאֶה",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "namingActor": "Abraham",
+          "namedObject": "place",
+          "speechAct": "place_naming",
+          "referent": "YHWH referenced in named place",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0122.htm",
+          "sourceAccess": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "nameClause": "שֵׁם-הַמָּקוֹם הַהוּא",
+          "morphology": "יִרְאֶה Qal yiqtol 3ms (secondary preliminary)",
+          "notNamedObject": "altar"
+        },
+        {
+          "locusId": "gen22-mountain-proverb",
+          "verse": "Genesis 22:14",
+          "surface": "בְּהַר יְהוָה יֵרָאֶה",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "namingActor": "narrator / community quotation",
+          "namedObject": "none",
+          "speechAct": "mountain_formula_about_appearance_or_provision",
+          "referent": "YHWH in proverbial formula",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0122.htm",
+          "sourceAccess": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "morphology": "יֵרָאֶה Niphal yiqtol 3ms (secondary preliminary)",
+          "translationScope": "NET alternatives it will be seen/provided or YHWH will appear",
+          "notIdenticalVerbTo": "יִרְאֶה"
+        }
+      ],
+      "contextualAssertion": "Genesis22:9 Abraham builds ALTAR, but 22:14 explicitly names PLACE. Gen22:8 and 22:14a יִרְאֶה Qal versus 22:14b יֵרָאֶה Niphal; NET offers competing 'provide/appear' renderings, not one settled etymology."
     },
     {
       "id": "rapha",
@@ -150,7 +209,45 @@
       "sourceEdition": "Mechon-Mamre MT digital transcription",
       "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
       "criticalEditionStatus": "NOT_COLLATED",
-      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass",
+      "attestations": [
+        {
+          "locusId": "exo15-yhwh-healer",
+          "verse": "Exodus 15:26",
+          "surface": "כִּי אֲנִי יְהוָה, רֹפְאֶךָ",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "namingActor": "YHWH, narration says 'he said'",
+          "namedObject": "none",
+          "speechAct": "divine_self_predication",
+          "referent": "YHWH heals the Israelite addressee",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0215.htm",
+          "sourceAccess": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "morphology": "רֹפְאֶךָ active participle with 2ms suffix",
+          "context": "conditional covenant address after Mara water"
+        },
+        {
+          "locusId": "jer17-heal-my-prayer",
+          "verse": "Jeremiah 17:14",
+          "surface": "רְפָאֵנִי יְהוָה וְאֵרָפֵא",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "namingActor": "Jeremiah, direct address to YHWH",
+          "namedObject": "none",
+          "speechAct": "prayer_for_healing",
+          "referent": "YHWH as addressee of prophet's request",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt1117.htm",
+          "sourceAccess": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "morphology": "imperative + 1cs object; NOT participial רֹפְאֶךָ"
+        }
+      ],
+      "contextualAssertion": "Exodus15:26 participial 'your healer' (2ms) in conditional divine covenant speech after Mara; Jer17:14 petition 'heal me' is different verbal morphology and speaker. Neither scene formally coins a new independent personal name."
     },
     {
       "id": "nissi",
@@ -174,7 +271,86 @@
       "sourceEdition": "Mechon-Mamre MT digital transcription",
       "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
       "criticalEditionStatus": "NOT_COLLATED",
-      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass",
+      "attestations": [
+        {
+          "locusId": "ex17-mt-altar",
+          "verse": "Exodus 17:15",
+          "surface": "יְהוָה נִסִּי",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "namingActor": "Moses",
+          "namedObject": "altar",
+          "speechAct": "altar_naming",
+          "referent": "YHWH in battle memorial",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0217.htm",
+          "sourceAccess": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "nameClause": "וַיִּבֶן מֹשֶׁה, מִזְבֵּחַ; וַיִּקְרָא שְׁמוֹ",
+          "altarNamed": true
+        },
+        {
+          "locusId": "ex17-lxx-altar",
+          "verse": "Exodus 17:15",
+          "surface": "Κύριός μου καταφυγή",
+          "language": "greek",
+          "edition": "Rahlfs-Hanhart 2006 LXX via Deutsche Bibelgesellschaft",
+          "namingActor": "Moses",
+          "namedObject": "altar",
+          "speechAct": "altar_naming_in_Greek_translation",
+          "referent": "the Lord, my refuge in Greek textual rendering",
+          "sourceUrl": "https://www.die-bibel.de/bibel/LXX/EXO.17",
+          "sourceAccess": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "PERMISSION_REQUIRED",
+          "publicationState": "BLOCKED",
+          "nameClause": "ἐπωνόμασεν τὸ ὄνομα αὐτοῦ",
+          "sourceRelation": "DIFFERENT_GREEK_TRANSLATIONAL_RENDERING_NOT_IDENTICAL_BANNER",
+          "rightsScope": "PUBLISHER_LXX_GREEK_ONLY"
+        },
+        {
+          "locusId": "ex17-mt-hand-throne",
+          "verse": "Exodus 17:16",
+          "surface": "כִּי-יָד עַל-כֵּס יָהּ",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "namingActor": "Moses, narrative attribution debated",
+          "namedObject": "none",
+          "speechAct": "difficult_memorial_explanation",
+          "referent": "Yah within obscure hand/throne clause",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0217.htm",
+          "sourceAccess": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "readingsUnderDebate": [
+            "throne כֵּס (digital MT)",
+            "suggested emendation נֵס as scholarly reconstruction"
+          ],
+          "textualStatus": "MT_SURFACE_AND_HYPOTHETICAL_EMENDATION_SEPARATE"
+        },
+        {
+          "locusId": "ex17-lxx-secret-hand",
+          "verse": "Exodus 17:16",
+          "surface": "ὅτι ἐν χειρὶ κρυφαίᾳ",
+          "language": "greek",
+          "edition": "Rahlfs-Hanhart 2006 LXX via Deutsche Bibelgesellschaft",
+          "namingActor": "narrative connector",
+          "namedObject": "none",
+          "speechAct": "different_Greek_explanation_of_memorial",
+          "referent": "Lord acting by secret hand",
+          "sourceUrl": "https://www.die-bibel.de/bibel/LXX/EXO.17",
+          "sourceAccess": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "PERMISSION_REQUIRED",
+          "publicationState": "BLOCKED",
+          "textualStatus": "LXX_READING_NOT_LITERAL_MT_HAND_THRONE",
+          "sourceRelation": "PRINTED_GREEK_TRANSLATION_DIFFERENCE"
+        }
+      ],
+      "contextualAssertion": "Exodus17:15 Moses names altar, not God or Massah/Meribah place (17:7). LXX Rahlfs Ex17:15 Κύριός μου καταφυγή not literal 'banner'; v16 MT יד על כס יה vs LXX εν χειρι κρυφαια; hypothetical emendation כס→נס is not attested MT."
     },
     {
       "id": "mekoddishkem",
@@ -198,7 +374,46 @@
       "sourceEdition": "Mechon-Mamre MT digital transcription",
       "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
       "criticalEditionStatus": "NOT_COLLATED",
-      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass",
+      "attestations": [
+        {
+          "locusId": "exo31-sanctify-israel",
+          "verse": "Exodus 31:13",
+          "surface": "כִּי אֲנִי יְהוָה מְקַדִּשְׁכֶם",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "namingActor": "YHWH, instruction mediated through Moses",
+          "namedObject": "none",
+          "speechAct": "divine_covenant_sanctification_predication",
+          "referent": "YHWH sanctifies Israel, plural addressee",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0231.htm",
+          "sourceAccess": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "morphology": "מְקַדִּשְׁכֶם participle with 2mp suffix",
+          "covenantSetting": "Sabbath sign between YHWH and Israel"
+        },
+        {
+          "locusId": "lev20-sanctify-israel",
+          "verse": "Leviticus 20:8",
+          "surface": "אֲנִי יְהוָה, מְקַדִּשְׁכֶם",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "namingActor": "YHWH speaking to Israel through Moses",
+          "namedObject": "none",
+          "speechAct": "divine_covenant_sanctification_predication",
+          "referent": "YHWH sanctifies Israel, plural addressee",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0320.htm",
+          "sourceAccess": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "morphology": "מְקַדִּשְׁכֶם participle with 2mp suffix",
+          "covenantSetting": "commandments and holiness regulations"
+        }
+      ],
+      "contextualAssertion": "Ex31:13 and Lev20:8 both divine first-person covenant predications, with מְקַדִּשְׁכֶם 2mp not a person-name or a 1cs experience quote; cannot transfer every Mosaic Sabbath application to NT church without separate exegesis."
     },
     {
       "id": "ro-i",
@@ -228,7 +443,47 @@
       "consonantalForm": "יהוה רעי",
       "semanticDomain": "shepherding, pastoral metaphor",
       "transliterationCollisionGroup": "Roi_Roi_Ru",
-      "lexicalBoundary": "NOT SAME ROOT AS EL_ROI_SEEING; ע vs א"
+      "lexicalBoundary": "NOT SAME ROOT AS EL_ROI_SEEING; ע vs א",
+      "attestations": [
+        {
+          "locusId": "ps23-yhwh-shepherd",
+          "verse": "Psalms 23:1",
+          "surface": "יְהוָה רֹעִי",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "namingActor": "psalmist (David in superscription)",
+          "namedObject": "none",
+          "speechAct": "poetic_shepherd_confession",
+          "referent": "YHWH as my shepherd",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt2623.htm",
+          "sourceAccess": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "morphology": "רֹעִי 1cs suffix my shepherd; root רעה",
+          "root": "רעה",
+          "notSameRootAs": "ראה (Hagar's El-Roi seeing)"
+        },
+        {
+          "locusId": "jn10-christ-good-shepherd",
+          "verse": "John 10:11",
+          "surface": "Ἐγώ εἰμι ὁ ποιμὴν ὁ καλός",
+          "language": "greek",
+          "edition": "SBLGNT 2010 via BibleGateway",
+          "namingActor": "Jesus",
+          "namedObject": "none",
+          "speechAct": "christological_shepherd_self_description",
+          "referent": "Jesus presents himself as good shepherd",
+          "sourceUrl": "https://www.biblegateway.com/passage/?search=John+10%3A11&version=SBLGNT",
+          "sourceAccess": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "languageBoundary": "Greek NT self-predication not literal Hebrew Psalm transcription",
+          "rootRelation": "thematic intertextual relation NOT shared lexical root"
+        }
+      ],
+      "contextualAssertion": "Psalm23:1 YHWH is MY shepherd, root רעה, not Hagar's El Roi ראה; John10:11 Jesus explicitly says Ἐγώ εἰμι ὁ ποιμὴν ὁ καλός, with Christological canonical relation not identical original language or independent third deity."
     },
     {
       "id": "shalom",
@@ -252,7 +507,61 @@
       "sourceEdition": "Mechon-Mamre MT digital transcription",
       "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
       "criticalEditionStatus": "NOT_COLLATED",
-      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass",
+      "attestations": [
+        {
+          "locusId": "jud6-divine-assurance",
+          "verse": "Judges 6:23",
+          "surface": "שָׁלוֹם לְךָ",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "namingActor": "YHWH, according to narrator",
+          "namedObject": "none",
+          "speechAct": "divine_speech_of_peace",
+          "referent": "Gideon receives assurance",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0706.htm",
+          "sourceAccess": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "nameClause": null
+        },
+        {
+          "locusId": "jud6-gideon-altar",
+          "verse": "Judges 6:24",
+          "surface": "יְהוָה שָׁלוֹם",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "namingActor": "Gideon",
+          "namedObject": "altar",
+          "speechAct": "altar_naming",
+          "referent": "YHWH remembered through peace given",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0706.htm",
+          "sourceAccess": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "nameClause": "וַיִּבֶן שָׁם גִּדְעוֹן מִזְבֵּחַ לַיהוָה, וַיִּקְרָא-לוֹ"
+        },
+        {
+          "locusId": "jud6-baal-altar-control",
+          "verse": "Judges 6:25",
+          "surface": "מִזְבַּח הַבַּעַל",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "namingActor": "YHWH instructing Gideon",
+          "namedObject": "Baal altar",
+          "speechAct": "foreign_altar_to_be_destroyed",
+          "referent": "Baal cult altar, not Gideon's YHWH-shalom altar",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0706.htm",
+          "sourceAccess": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "isDivineName": false
+        }
+      ],
+      "contextualAssertion": "Judges6:23 YHWH SPEAKS peace, 6:24 Gideon NAMES an altar, 6:25 references DIFFERENT Baal altar to destroy. No direct divine self-naming in 6:24."
     },
     {
       "id": "tsidkenu",
@@ -1897,6 +2206,22 @@
       ],
       "criticalCollationStatus": "NOT_COLLATED",
       "publicationEligible": 0
+    },
+    "memorialsAndPredications": {
+      "phase": "ALTAR_PLACE_HEALER_SANCTIFIER_SHEPHERD_2026_11_07",
+      "ids": [
+        "yireh",
+        "nissi",
+        "shalom",
+        "rapha",
+        "mekoddishkem",
+        "ro-i"
+      ],
+      "totalAttestations": 16,
+      "criticalEditionCollated": false,
+      "publicationEligible": 0,
+      "lxxContrast": "MT Exodus17:15-16 vs publisher Rahlfs-Hanhart 2006 Greek edition, not manuscript collation",
+      "contractStatus": "PENDING_SEPARATE_VERSIONED_CONTRACT"
     }
   }
 }
