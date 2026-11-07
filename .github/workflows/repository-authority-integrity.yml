@@ -85,6 +85,12 @@ jobs:
           GILL_PRODUCT_REPO: ../Product
         run: python3 scripts/validate_repository_authority_integrity.py
 
+      - name: Guard Reformation evidence on every pull request
+        working-directory: Research
+        run: |
+          python3 -B docs/research/reformation/validate_corpus.py
+          python3 -B -m unittest discover -s docs/research/reformation -p 'test_*.py' -v
+
       - name: Run deterministic corpus validators
         working-directory: Research
         env:
