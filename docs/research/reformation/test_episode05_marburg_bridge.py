@@ -33,6 +33,26 @@ class MarburgEpisodeTests(unittest.TestCase):
         self.assertEqual(src["REF-P13-ARCHIVE"]["accessState"],"CATALOG_ONLY")
         self.assertIn("article 9",src["REF-P13"]["verificationNote"].lower())
 
+    def test_z_k_editorial_variants_not_promoted_to_autographs(self):
+        j = json.loads((D/"source-registry-v1.json").read_text(encoding="utf-8"))
+        src = {v["id"]:v for v in j["sources"]}
+        self.assertEqual(j["sourceCount"], len(j["sources"]))
+        self.assertEqual(src["REF-P75"]["accessState"], "CATALOG_ONLY")
+        self.assertEqual(src["REF-P13-ARCHIVE"]["accessState"], "CATALOG_ONLY")
+        self.assertIn("ARCHIVE_HOLD",src["REF-P75"]["holds"])
+        self.assertEqual(src["REF-S76"]["evidenceClass"],"B1")
+        self.assertEqual(src["REF-S77"]["evidenceClass"],"C")
+        self.assertIn("EVIDENCE_HOLD",src["REF-S77"]["holds"])
+        chapter = EP05.read_text(encoding="utf-8")
+        for phrase in ("монашеские обеты", "брака духовенства", "живым или умершим", "REF-P75", "REF-S76", "REF-S77"):
+            self.assertIn(phrase,chapter)
+        self.assertIn("не просмотрен построчно",chapter)
+        self.assertIn("PUBLICATION_HOLD",chapter)
+        ledger = (D/"03_claim_verification_register.md").read_text(encoding="utf-8")
+        for idx in (254,255,256):
+            self.assertIn("| C%d |" % idx,ledger)
+        self.assertIn("STOP_DISCOVERY", (D/"SELF_PLAN.md").read_text(encoding="utf-8"))
+
     def test_book_navigation_and_evidence_limits(self):
         for f in ("README.md","04_series_blueprint.md",
                   "episode03_luther_worms_1520_1521_manuscript.md",

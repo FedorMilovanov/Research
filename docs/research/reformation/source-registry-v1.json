@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 165,
+  "sourceCount": 168,
   "sources": [
     {
       "id": "REF-P01",
@@ -268,7 +268,7 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=618165",
-      "verificationNote": "archive shelfmark and variants documented, manuscript image not collated",
+      "verificationNote": "archive shelfmark and variants documented, manuscript image not collated CHECKPOINT 2026-11-07: Zurich archive description explicitly distinguishes Z with additions in 7/13/15 from K without; Hessian catalog REF-P75 confirms archival group HStAM 3,245 with digitally available JPG but no scanned pages personally inspected. Modern editorial site REF-S77 identifies themes, NOT a direct German manuscript collation. Academic Engeler 2023 REF-S76 discusses drafting-stage emendations 8/15/possibly 11: DIFFERENT comparison dimension.",
       "checkedAt": "2026-11-04"
     },
     {
@@ -3230,6 +3230,61 @@
       "url": "https://germanhistorydocs.org/en/from-the-reformations-to-the-thirty-years-war-1500-1648/ghdi:document-4300",
       "checkedAt": "2026-11-07",
       "verificationNote": "Complete GHDI English text directly read; Zwingli personal letter of 20 Oct 1529 to Joachim Vadian, translated from Latin in Jackson ed. 1901 pp319-322 and edited by GHI. Participant asserts own success and Philip of Hesse privately agreeing, but this is SELF-PRESENTATION, not independently established outcome. Private Melanchthon/Zwingli and Luther/Oecolampadius meetings and later joint colloquies described from this partisan perspective. Original 1529 Latin autograph not read/compared; English text not literal original quotation. Archive/rights/publication HOLD remain."
+    },
+    {
+      "id": "REF-P75",
+      "documentYear": 1529,
+      "title": "Marburg Articles Hessian signed exemplar K: Hessisches Staatsarchiv Marburg HStAM, fonds 3 no.245 fol.60r–64v (archive catalogue and digital-viewer availability)",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails?archivalDescriptionId=5447099",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Direct official Hessen Arcinsys archival catalogue for HStAM 3, Nr.245 read: file of Philip's letters includes signed protocol/articles of the Marburg disputation; the site marks a Nutzungsdigitalisat JPG and a digital-media viewer, but NO autograph images were directly retrieved or visually collated. Exact leaves 60r–64v and K designation identified independently in Zurich archive REF-P13-ARCHIVE; no false claim that whole HStAM 3 Nr245 exclusively contains the 15 articles. The Zurich copy Z is a DISTINCT archive object and has 3 additions to articles 7,13,15, absent from K. CATALOG_ONLY and ARCHIVE_HOLD persist."
+    },
+    {
+      "id": "REF-S76",
+      "documentYear": 2023,
+      "title": "Judith Engeler, Das Erste Helvetische Bekenntnis von 1536: Die Schweizer Protestanten zwischen Bekenntnis und Bündnis (TVZ, open-access monograph), printed page 64 footnote 65",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.tvz-verlag.ch/_files_media/open_access/9783290185220.pdf",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Scholarly monograph PDF, DOI 10.34313/978-3-290-18522-0, 2023, ISBN 9783290185220. Only Marburg discussion PRINT pp64–66 and specifically print p64 footnote65 were inspected (p64 visual web screenshot, PDF zero-index page65); NOT whole scholarly book read. She discusses changes made by Swiss participants in drafting negotiations, allegedly articles 8 and 15, probably 11, citing Fritz Buesser Zwingli Werke VI/2 pp510f and Locher. These NEGOTIATION-stage changes are not identical to archive catalog's Z-specific physical additions to articles 7,13,15; do not infer conflict without checking editorial definitions. PDF says Creative Commons 4.0 International but precise reuse rights and commercial/public use not independently approved here; publication HOLD."
+    },
+    {
+      "id": "REF-S77",
+      "documentYear": 2026,
+      "title": "Reformed Dogmatika, The Marburg Articles, editorial reproduction of Martin E. Lehmann's Luther's Works 38 English rendering and notes on textual variants",
+      "evidenceClass": "C",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://reformeddogmatika.com/marburg-articles/",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Directly inspected online editorial text and footnotes. English bracketed clauses under article 7 monastic vows as salvation aid, article 13 forbidding clerical marriage, article 15 meritorious Mass for others. Site notes 7 only in Zurich witness, 15 only in Zurich; says 13 is a manuscript variant, while Zurich archive independently says Z has addition article 13. Footnotes refer to Luther's Works vol38 pp86,88 and WA 30/III pp164,169. This is a secondary/possibly copyright-sensitive web reproduction of an English translation, not historical manuscript, not full WA collation and not strong B1 independent corroboration. Treat as C discovery lead, do not quote long translated clauses or republish their text; verify with full critical German apparatus or scans before claiming exact readings."
     }
   ]
 }
