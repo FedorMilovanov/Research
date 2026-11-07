@@ -512,7 +512,7 @@ def validate_source_access(sources: dict) -> list[str]:
                 "CC BY 4.0" not in str(source.get("license", "")) or
                 source.get("licenseScope") != "SUCHARD_ARTICLE_2025_ONLY_NOT_QUOTED_TRANSLATIONS_OR_THIRD_PARTY_REFERENCES" or
                 source.get("publicationState") != "BLOCKED"):
-                errors.append(f"{prefix}: Suchard article CC BY 4.0 limited rights / B1 hypothesis distinction lost")
+                errors.append(f"{prefix}: Suchard 2025; Suchard article CC BY 4.0 limited rights / B1 hypothesis distinction lost")
         if rid == "SRC-RAHLFS-ISAIAH":
             if (source.get("rightsState") != "PERMISSION_REQUIRED"
                 or source.get("accessState") != "PARTIAL_OBJECT"
