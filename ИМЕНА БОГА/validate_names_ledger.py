@@ -17,6 +17,7 @@ LEDGER = Path(__file__).resolve().parent / "data" / "names_ledger_v1.json"
 EXTENSION = Path(__file__).resolve().parent / "data" / "names_extension_ledger_v1.json"
 SOURCES = Path(__file__).resolve().parent / "data" / "source_access_register_v1.json"
 ATTESTATION_CONTRACT = Path(__file__).resolve().parent / "data" / "attestation_contract_v1.json"
+MEMORIAL_CONTRACT = Path(__file__).resolve().parent / "data" / "memorial_attestation_contract_v1.json"
 ALLOWED_CLASSES = {"A1", "A2", "A3", "B1", "C", "D"}
 ALLOWED_ACCESS = {"FULL_OBJECT_VERIFIED", "PARTIAL_OBJECT", "CATALOG_ONLY", "LINK_ONLY", "NOT_ACQUIRED"}
 ALLOWED_LOCATOR = {"EXACT_LOCATOR_VERIFIED", "COARSE_LOCATOR_ONLY", "LOCATOR_MISSING"}
@@ -365,6 +366,10 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-SBLGNT-NT-SABAOTH": "GREEK_NT_SEMITIC_TRANSLITERATION_WITNESS",
     "SRC-SUCHARD-ELOHIM-2025": "ATTRIBUTED_SECONDARY_SEMITIC_MORPHOLOGY_HYPOTHESIS",
     "SRC-CAMBRIDGE-GOD-PRONOUNS": "ATTRIBUTED_SECONDARY_GRAMMAR_AND_THEOLOGY",
+    "SRC-RAHLFS-EXODUS17": "PUBLISHER_LXX_EXODUS_TRANSLATIONAL_SURFACE",
+    "SRC-NET-EXODUS17": "ATTRIBUTED_TRANSLATION_TEXTUAL_HYPOTHESES",
+    "SRC-NET-GENESIS22": "ATTRIBUTED_TRANSLATION_GRAMMAR_ALTERNATIVES",
+    "SRC-SBLGNT-JOHN10": "CHRISTOLOGICAL_INTERTEXTUAL_SURFACE",
 }
 
 
@@ -430,6 +435,23 @@ def validate_source_access(sources: dict) -> list[str]:
             errors.append(f"{prefix}: Aramaic text cannot be promoted to fully collated Hebrew or manuscript")
         if rid == "SRC-SBL-INTRO" and "manuscript collation" not in str(source.get("forbiddenUse", "")).lower():
             errors.append(f"{prefix}: SBLGNT introduction must remain non-manuscript provenance")
+        if rid == "SRC-RAHLFS-EXODUS17":
+            if (source.get("rightsState") != "PERMISSION_REQUIRED" or
+                source.get("accessState") != "PARTIAL_OBJECT" or
+                source.get("criticalEditionCollated") is not False):
+                errors.append(f"{prefix}: Rahlfs Exodus17 digital LXX cannot claim free rights or collated manuscript")
+            if "καταφυγή" not in str(source.get("supportedUse", "")):
+                errors.append(f"{prefix}: LXX altar refuge text witness not identified")
+        if rid == "SRC-NET-EXODUS17":
+            if (source.get("rightsState") != "PERMISSION_REQUIRED" or
+                "conjecture" not in str(source.get("forbiddenUse", ""))):
+                errors.append(f"{prefix}: textual emendation must remain attributed conjecture")
+        if rid == "SRC-NET-GENESIS22":
+            if source.get("rightsState") != "PERMISSION_REQUIRED":
+                errors.append(f"{prefix}: NET translation copyright gate removed")
+        if rid == "SRC-SBLGNT-JOHN10":
+            if source.get("rightsState") != "RIGHTS_UNKNOWN":
+                errors.append(f"{prefix}: host SBLGNT webpage rights wrongly inherited from publisher license")
         if rid == "SRC-CAMBRIDGE-GOD-PRONOUNS":
             if (source.get("creator") != "Nicholas Adams"
                 or source.get("year") != 2024
@@ -925,12 +947,160 @@ def validate_six_title_attestations(baseline: dict, contract: dict) -> list[str]
     return errors
 
 
+MEMORIAL_IDS = {"yireh", "nissi", "shalom", "rapha", "mekoddishkem", "ro-i"}
+MEMORIAL_LOCK_FIELDS = (
+    "locusId", "verse", "surface", "language", "edition", "namingActor",
+    "namedObject", "speechAct", "referent", "sourceUrl", "sourceAccess",
+    "criticalEditionStatus", "rightsState", "publicationState",
+)
+
+
+def validate_memorial_attestations(baseline: dict, contract: dict) -> list[str]:
+    """Compare 16 verse contexts to independently committed locked expectations.
+
+    Checks are structural and edition-specific. It cannot attest underlying
+    manuscript authenticity, semantic exhaustiveness, theological truth,
+    or rights outside one source object.
+    """
+    errors: list[str] = []
+    if (not isinstance(contract, dict) or contract.get("schemaVersion") != 1
+        or contract.get("corpusId") != "NAMES_MEMORIAL_DIVINE_PREDICATION_OCCURRENCE_CONTRACT"):
+        return ["memorials: malformed contract"]
+    if set(contract.get("baselineIds", [])) != MEMORIAL_IDS:
+        errors.append("memorials: baseline ID set changed")
+    if tuple(contract.get("lockedFields", [])) != MEMORIAL_LOCK_FIELDS:
+        errors.append("memorials: required witness field contract weakened")
+    if contract.get("counts") != {
+        "records": 6, "occurrences": 16, "publicationEligible": 0
+    }:
+        errors.append("memorials: independently pinned counts or HOLD changed")
+    expected = contract.get("lockedAttestations", [])
+    if not isinstance(expected, list):
+        return errors + ["memorials: expected attestations not a list"]
+    expected_by_id: dict[str, dict] = {}
+    for witness in expected:
+        if not isinstance(witness, dict):
+            errors.append("memorials: contract contains invalid witness")
+            continue
+        loc = witness.get("locusId")
+        if not isinstance(loc, str) or not loc or loc in expected_by_id:
+            errors.append(f"memorials: missing/duplicate contract locus {loc}")
+            continue
+        if witness.get("baselineId") not in MEMORIAL_IDS:
+            errors.append(f"memorials: unreviewed baseline ID {loc}")
+        expected_by_id[loc] = witness
+    b = baseline.get("records", [])
+    by_row = {r.get("id"): r for r in b if isinstance(r, dict)} if isinstance(b, list) else {}
+    seen: dict[str, dict] = {}
+    counts: dict[str, int] = {}
+    for rid in MEMORIAL_IDS:
+        row = by_row.get(rid, {})
+        arr = row.get("attestations")
+        if not isinstance(arr, list):
+            errors.append(f"memorials: missing attestation list {rid}")
+            continue
+        counts[rid] = len(arr)
+        if not row.get("contextualAssertion"):
+            errors.append(f"memorials: missing contextual claim scope {rid}")
+        for obs in arr:
+            if not isinstance(obs, dict):
+                errors.append(f"memorials: malformed witness for {rid}")
+                continue
+            loc = obs.get("locusId")
+            if not isinstance(loc, str) or not loc or loc in seen:
+                errors.append(f"memorials: missing/duplicate locus {loc}")
+                continue
+            seen[loc] = obs
+            reference = expected_by_id.get(loc)
+            if reference is None or reference.get("baselineId") != rid:
+                errors.append(f"memorials: orphan/unreviewed locus {rid}/{loc}")
+                continue
+            for field in MEMORIAL_LOCK_FIELDS:
+                if field not in obs or field not in reference or obs.get(field) != reference.get(field):
+                    errors.append(f"memorials: {rid}/{loc}: reviewed {field} changed")
+            if obs.get("sourceAccess") != "DIGITAL_VERSE_SURFACE_CHECKED":
+                errors.append(f"memorials: {rid}/{loc}: false source check")
+            if obs.get("criticalEditionStatus") != "NOT_COLLATED":
+                errors.append(f"memorials: {rid}/{loc}: false critical manuscript collation")
+            if obs.get("publicationState") != "BLOCKED":
+                errors.append(f"memorials: {rid}/{loc}: illegal publication")
+            if obs.get("rightsState") not in {"PERMISSION_REQUIRED", "RIGHTS_UNKNOWN"}:
+                errors.append(f"memorials: {rid}/{loc}: unsupported source license")
+            form = obs.get("surface")
+            if isinstance(form, str):
+                errors.extend(unicode_surface_issues(f"memorials/{loc}", form))
+                if obs.get("language") == "hebrew" and not HEBREW.search(form):
+                    errors.append(f"memorials: {rid}/{loc}: Hebrew script missing")
+                if obs.get("language") == "greek" and not GREEK.search(form):
+                    errors.append(f"memorials: {rid}/{loc}: Greek script missing")
+            else:
+                errors.append(f"memorials: {rid}/{loc}: no original-language surface")
+            if not URL.match(str(obs.get("sourceUrl", ""))):
+                errors.append(f"memorials: {rid}/{loc}: source URL must be HTTPS")
+    if len(seen) != 16 or len(expected_by_id) != 16 or set(seen) != set(expected_by_id):
+        errors.append("memorials: 16 unique reviewed contexts required")
+    if counts != {
+        "yireh": 3, "nissi": 4, "shalom": 3,
+        "rapha": 2, "mekoddishkem": 2, "ro-i": 2
+    }:
+        errors.append("memorials: per-lemma occurrence counts drifted")
+    audit = baseline.get("auditProtocol", {}).get("memorialsAndPredications", {})
+    if (set(audit.get("ids", [])) != MEMORIAL_IDS or
+        audit.get("totalAttestations") != 16 or
+        audit.get("criticalEditionCollated") is not False or
+        audit.get("publicationEligible") != 0):
+        errors.append("memorials: ledger phase count / critical / Product HOLD changed")
+    # Independent semantic checks beyond the JSON-pinned exact-surface fixture:
+    def o(loc: str) -> dict:
+        return seen.get(loc, {})
+    if (o("gen22-memorial-place").get("namedObject") != "place"
+        or o("gen22-memorial-place").get("nameClause") != "שֵׁם-הַמָּקוֹם הַהוּא"
+        or o("gen22-memorial-place").get("notNamedObject") != "altar"):
+        errors.append("memorials: Gen22:14 names PLACE, not earlier altar")
+    if (o("gen22-abraham-answer").get("surface") != "אֱלֹהִים יִרְאֶה-לּוֹ"
+        or o("gen22-mountain-proverb").get("surface") != "בְּהַר יְהוָה יֵרָאֶה"
+        or o("gen22-mountain-proverb").get("notIdenticalVerbTo") != "יִרְאֶה"):
+        errors.append("memorials: Gen22 Qal versus Niphal/vision/provision distinction erased")
+    if (o("ex17-mt-altar").get("namedObject") != "altar"
+        or o("ex17-lxx-altar").get("namedObject") != "altar"
+        or o("ex17-mt-altar").get("surface") != "יְהוָה נִסִּי"
+        or o("ex17-lxx-altar").get("surface") != "Κύριός μου καταφυγή"):
+        errors.append("memorials: Ex17:15 altar name, MT banner vs LXX refuge distinction lost")
+    if (o("ex17-lxx-altar").get("rightsState") != "PERMISSION_REQUIRED"
+        or o("ex17-lxx-secret-hand").get("rightsState") != "PERMISSION_REQUIRED"):
+        errors.append("memorials: copyrighted Rahlfs Exodus17 reuse gate removed")
+    if (o("ex17-mt-hand-throne").get("surface") != "כִּי-יָד עַל-כֵּס יָהּ"
+        or o("ex17-lxx-secret-hand").get("surface") != "ὅτι ἐν χειρὶ κρυφαίᾳ"
+        or o("ex17-mt-hand-throne").get("textualStatus") !=
+           "MT_SURFACE_AND_HYPOTHETICAL_EMENDATION_SEPARATE"):
+        errors.append("memorials: Ex17:16 MT versus Greek secret-hand and conjecture collapsed")
+    if (o("jud6-divine-assurance").get("namedObject") != "none"
+        or o("jud6-gideon-altar").get("namedObject") != "altar"
+        or o("jud6-baal-altar-control").get("namedObject") != "Baal altar"):
+        errors.append("memorials: Judg6 peace speech / Gideon altar / Baal altar conflated")
+    if (o("exo15-yhwh-healer").get("namedObject") != "none"
+        or "2ms" not in str(o("exo15-yhwh-healer").get("morphology", ""))
+        or o("jer17-heal-my-prayer").get("speechAct") != "prayer_for_healing"):
+        errors.append("memorials: healer 2ms divine predication versus Jeremiah prayer erased")
+    if any("2mp" not in str(o(loc).get("morphology", "")) for loc in (
+        "exo31-sanctify-israel", "lev20-sanctify-israel"
+    )):
+        errors.append("memorials: sanctification 2mp 'you plural' incorrectly converted")
+    if (o("ps23-yhwh-shepherd").get("root") != "רעה"
+        or o("ps23-yhwh-shepherd").get("notSameRootAs") != "ראה (Hagar's El-Roi seeing)"
+        or o("jn10-christ-good-shepherd").get("namingActor") != "Jesus"
+        or "NOT shared lexical root" not in str(o("jn10-christ-good-shepherd").get("rootRelation", ""))):
+        errors.append("memorials: seeing/shepherd roots or NT speaker/intertext conflated")
+    return errors
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--ledger", type=Path, default=LEDGER)
     parser.add_argument("--extension", type=Path, default=EXTENSION)
     parser.add_argument("--sources", type=Path, default=SOURCES)
     parser.add_argument("--attestation-contract", type=Path, default=ATTESTATION_CONTRACT)
+    parser.add_argument("--memorial-contract", type=Path, default=MEMORIAL_CONTRACT)
     args = parser.parse_args()
     try:
         with args.ledger.open("r", encoding="utf-8") as stream:
@@ -956,10 +1126,17 @@ def main() -> int:
     except (OSError, ValueError) as exc:
         print(f"FAIL: cannot read attestation contract: {exc}", file=sys.stderr)
         return 1
+    try:
+        with args.memorial_contract.open("r", encoding="utf-8") as stream:
+            memorial_contract = json.load(stream)
+    except (OSError, ValueError) as exc:
+        print(f"FAIL: cannot read memorial attestation contract: {exc}", file=sys.stderr)
+        return 1
     issues = (validate(data) + validate_extension(extension, data) +
               validate_source_access(sources) + validate_apocalyptic(data, extension) +
               validate_prophetic_namings(data) +
-              validate_six_title_attestations(data, title_contract))
+              validate_six_title_attestations(data, title_contract) +
+              validate_memorial_attestations(data, memorial_contract))
     if issues:
         for issue in issues:
             print("FAIL:", issue, file=sys.stderr)
