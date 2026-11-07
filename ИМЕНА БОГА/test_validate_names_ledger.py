@@ -242,5 +242,32 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("apocalyptic" in v for v in validate_apocalyptic(data, self.extension)))
 
 
+    def test_sblgnt_official_license_is_text_only_and_cannot_be_widened(self) -> None:
+        data = copy.deepcopy(self.sources)
+        row = next(r for r in data["records"] if r["id"] == "SRC-SBLGNT-CCBY-LICENSE")
+        row["licenseScope"] = "ALL_VERSES_ALL_BIBLEGATEWAY_GRAPHICS_ALL_TRANSLATIONS"
+        self.assertTrue(any("text-only license boundaries" in issue
+                            for issue in validate_source_access(data)))
+
+    def test_sblgnt_license_does_not_automatically_license_host_page(self) -> None:
+        data = copy.deepcopy(self.sources)
+        row = next(r for r in data["records"] if r["id"] == "SRC-SBL-REVELATION")
+        row["rightsState"] = "PUBLICATION_ELIGIBLE"
+        self.assertTrue(any("host website display" in issue for issue in validate_source_access(data)))
+
+    def test_sblgnt_license_rights_do_not_approve_unreviewed_claims(self) -> None:
+        data = copy.deepcopy(self.sources)
+        row = next(r for r in data["records"] if r["id"] == "SRC-SBLGNT-CCBY-LICENSE")
+        row["publicationState"] = "PROMOTE"
+        self.assertTrue(any("publication" in issue for issue in validate_source_access(data)))
+
+    def test_sblgnt_publisher_license_must_have_ccby_attestation(self) -> None:
+        data = copy.deepcopy(self.sources)
+        row = next(r for r in data["records"] if r["id"] == "SRC-SBLGNT-CCBY-LICENSE")
+        row["license"] = "License unknown"
+        self.assertTrue(any("official CC BY 4.0 publisher-license" in issue
+                            for issue in validate_source_access(data)))
+
+
 if __name__ == "__main__":
     unittest.main()
