@@ -29,7 +29,7 @@ class EnglandScotlandTests(unittest.TestCase):
         self.assertEqual(s["REF-P25-RPS"]["accessState"],"LINK_ONLY")
         for k in ("REF-P78","REF-P26","REF-P25-1567","REF-P25-1581","REF-S83","REF-S84","REF-S85"):
             self.assertIn("PUBLICATION_HOLD",s[k]["holds"])
-        self.assertIn("skipped heading 13",s["REF-P25-1567"]["verificationNote"].lower())
+        self.assertIn("skipped numeral 13",s["REF-P25-1567"]["verificationNote"].lower())
 
     def test_claim_guards_and_published_chapter_numbering(self):
         ledger=(D/"03_claim_verification_register.md").read_text(encoding="utf-8")
