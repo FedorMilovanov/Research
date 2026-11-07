@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "corpusId": "NAMES_OF_GOD_CLAIM_LEVEL_EVIDENCE",
   "createdAt": "2026-11-07",
-  "scope": "15 provisional curated claims including a corrected Exodus 3 divine referent/addressee boundary and seven typed relations. No independent critical manuscript collation or Product clearance.",
+  "scope": "18 preliminary research-only claims and nine semantic relations. Three prophetic naming statements now distinguish royal person from cities; no independent textual-critical apparatus collated and no Product approvals.",
   "editorialPolicy": "Never infer Product approval from link completeness, never replace a cited verse or alternative theory silently; new claims require independent review.",
   "records": [
     {
@@ -338,6 +338,74 @@
         "separate theological reception and source rights",
         "Product editorial acceptance"
       ]
+    },
+    {
+      "claimId": "CLM-JER23-6-DAVIDIC-ROYAL-NAME",
+      "claimType": "DIRECT_TEXTUAL_NAMING",
+      "statement": "In the Mechon-Mamre MT of Jeremiah 23:6, the words יהוה צדקנו are explicitly called the name of the future Davidic royal figure in the preceding context (23:5). The masculine designation of his name must not be silently attributed to Jerusalem in this locus, nor identified by grammar alone as a new divine self-naming act.",
+      "attestationIds": [
+        "ATT-BASE-TSIDKENU-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-VT-LIEBERMANN-JEREMIAH-2023"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent MT verse/named object and grammatical review",
+        "historical Hebrew syntax and other textual witnesses, including Old Greek Jeremiah",
+        "compare contrary critical scholarship, attribution and copyright",
+        "separate theological reception and Product publication review"
+      ]
+    },
+    {
+      "claimId": "CLM-JER33-16-JERUSALEM-CITY-NAME",
+      "claimType": "NAMED_OBJECT_CONTROL",
+      "statement": "In the Mechon-Mamre MT of Jeremiah 33:16 the name יהוה צדקנו is applied to Jerusalem (לָהּ, feminine dative), contrasting the male royal referent of 23:6. Liebermann's secondary academic account notes an Old Greek textual-history objection, which is NOT independently collated here.",
+      "attestationIds": [
+        "ATT-BASE-TSIDKENU-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-VT-LIEBERMANN-JEREMIAH-2023"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent MT verse/named object and grammatical review",
+        "historical Hebrew syntax and other textual witnesses, including Old Greek Jeremiah",
+        "compare contrary critical scholarship, attribution and copyright",
+        "separate theological reception and Product publication review"
+      ]
+    },
+    {
+      "claimId": "CLM-EZ48-35-CITY-NAMING",
+      "claimType": "NAMED_OBJECT_CONTROL",
+      "statement": "In the Mechon-Mamre MT of Ezekiel 48:35, וְשֵׁם-הָעִיר identifies the named object explicitly as the city; יהוה שמה is therefore a city designation about YHWH's presence, not an explicit act of God naming himself.",
+      "attestationIds": [
+        "ATT-BASE-SHAMMAH-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent MT verse/named object and grammatical review",
+        "historical Hebrew syntax and other textual witnesses, including Old Greek Jeremiah",
+        "compare contrary critical scholarship, attribution and copyright",
+        "separate theological reception and Product publication review"
+      ]
     }
   ],
   "semanticRelations": [
@@ -395,6 +463,22 @@
       "toClaimId": "CLM-LXX-EX3-JOHN8-DIFFERENT-CLAUSES",
       "relationType": "SPECIFIES_SPEECH_AGENT",
       "rationale": "God is the referent of the self-identifying first-person formula; Moses is addressed. Comparison with John 8:58 must keep the referent, addressee, printed Greek wording and possible intertext distinct.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-JER-ROYAL-CITY-NAMING",
+      "fromClaimId": "CLM-JER23-6-DAVIDIC-ROYAL-NAME",
+      "toClaimId": "CLM-JER33-16-JERUSALEM-CITY-NAME",
+      "relationType": "CONTRASTS_NAMED_OBJECT",
+      "rationale": "One identical MT expression belongs to the royal figure in Jer23:6 and the feminine city Jerusalem in Jer33:16. The latter's Old Greek status is a separate secondary research question, not the basis for confusing the Hebrew referents.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-JER-EZEK-CITY-NAME-LIMIT",
+      "fromClaimId": "CLM-JER33-16-JERUSALEM-CITY-NAME",
+      "toClaimId": "CLM-EZ48-35-CITY-NAMING",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "Both Hebrew loci name a city in their respective narrative contexts; this does not convert either expression into a stand-alone, verbatim divine personal self-naming.",
       "publicationState": "BLOCKED"
     }
   ]

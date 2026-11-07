@@ -347,5 +347,42 @@ class ProvenanceGraphTests(unittest.TestCase):
         self.assertTrue(any("required semantic boundary" in e for e in self.check(claims=d)))
 
 
+    def test_three_prophetic_names_remain_correctly_typed_and_held(self) -> None:
+        cases = {
+            "CLM-JER23-6-DAVIDIC-ROYAL-NAME": "ATT-BASE-TSIDKENU-01",
+            "CLM-JER33-16-JERUSALEM-CITY-NAME": "ATT-BASE-TSIDKENU-02",
+            "CLM-EZ48-35-CITY-NAMING": "ATT-BASE-SHAMMAH-01",
+        }
+        for cid,aid in cases.items():
+            row = next(x for x in self.claims["records"] if x["claimId"]==cid)
+            self.assertEqual([aid],row["attestationIds"])
+            self.assertEqual("RESEARCH_HOLD",row["editorialState"])
+            self.assertEqual("BLOCKED",row["publicationState"])
+
+    def test_jeremiah_royal_claim_cannot_be_reassigned_to_city_verse(self) -> None:
+        d = copy.deepcopy(self.claims)
+        row=next(x for x in d["records"] if x["claimId"]=="CLM-JER23-6-DAVIDIC-ROYAL-NAME")
+        row["attestationIds"]=["ATT-BASE-TSIDKENU-02"]
+        self.assertTrue(any("lost its independently reviewed text witnesses" in x for x in self.check(claims=d)))
+
+    def test_city_claim_cannot_erase_mt_verse_source(self) -> None:
+        d=copy.deepcopy(self.claims)
+        row=next(x for x in d["records"] if x["claimId"]=="CLM-JER33-16-JERUSALEM-CITY-NAME")
+        row["sourceIds"]=["SRC-VT-LIEBERMANN-JEREMIAH-2023"]
+        self.assertTrue(any("lost mandatory direct textual sources" in x for x in self.check(claims=d)))
+
+    def test_prophetic_city_claim_cannot_disappear_silently(self) -> None:
+        d=copy.deepcopy(self.claims)
+        d["records"]=[r for r in d["records"] if r["claimId"]!="CLM-EZ48-35-CITY-NAMING"]
+        self.assertTrue(any("required prophetic royal/city claim boundary missing" in x for x in self.check(claims=d)))
+
+    def test_royal_and_city_semantic_relation_is_immutable(self) -> None:
+        d=copy.deepcopy(self.claims)
+        row=next(x for x in d["semanticRelations"] if x["relationId"]=="REL-JER-ROYAL-CITY-NAMING")
+        row["relationType"]="SPECIFIES_SPEECH_AGENT"
+        self.assertTrue(any("required semantic boundary" in x for x in self.check(claims=d)))
+
+
+
 if __name__ == "__main__":
     unittest.main()

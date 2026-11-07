@@ -12,26 +12,28 @@
     "arenaRecords": 29,
     "extensionRecords": 13,
     "contextAttestations": 105,
-    "sourceRegisterEntries": 45,
-    "regressionTests": 159,
+    "sourceRegisterEntries": 46,
+    "regressionTests": 162,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
     "allSixCiChecks": "SUCCESS_ON_REVIEWED_COMMIT",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 16,
-    "provenanceRegressionTests": 53,
+    "provenanceRegressionTests": 58,
     "canonicalEditions": 4,
-    "curatedClaims": 15,
+    "curatedClaims": 18,
     "allAttestationForeignKeys": 105,
     "editionSpecificGreekUrlsVerified": 4,
     "unselectedGreekEditionUrls": 0,
-    "attestationsReferencedByClaims": 20,
-    "attestationsWithoutClaimReference": 85,
-    "typedClaimRelations": 7,
+    "attestationsReferencedByClaims": 23,
+    "attestationsWithoutClaimReference": 82,
+    "typedClaimRelations": 9,
     "correctedExodusDivineReferentRows": 3,
     "semanticScopeAudits": 15,
-    "independentScholarlyClaimApprovals": 0
+    "independentScholarlyClaimApprovals": 0,
+    "propheticRoyalCityClaims": 3,
+    "registeredPeerReviewedSelectedPageSources": 1
   },
   "allowedStatuses": [
     "DONE",
@@ -169,9 +171,14 @@
         "data/names_claim_registry_v1.json: CLM-EX3-EHYEH-DIVINE-REFERENT + required typed semantic link",
         "test_validate_names_provenance.py: six new regressions for referent, addressee, speaker and claim edge",
         "validate_names_ledger.py: independent referent/addressee semantic invariant checks both ledger and contract, even if both are modified identically",
-        "test_validate_names_ledger.py: 2 independent negative tests reject a corrupted copied source and a missing contract addressee"
+        "test_validate_names_ledger.py: 2 independent negative tests reject a corrupted copied source and a missing contract addressee",
+        "16_PROPHETIC_ROYAL_CITY_NAMING_SOURCE_AUDIT_20261107.md: independently checked MT of Jer 23:6, 33:16, Ezek48:35; distinguish king, Jerusalem and visionary city",
+        "source_access_register_v1.json: Liebermann 2023 Vetus Testamentum 73/1 62-81, first online 2022, accepted manuscript p8 partially examined",
+        "names_claim_registry_v1.json: 3 royal/city claimIds and 2 typed semantic relations, all Research HOLD",
+        "test_validate_names_provenance.py: anti-conflation, missing-claim and direct Hebrew source guards",
+        "test_validate_names_ledger.py: independent academic source rights, dates and critical-collation adversarial guards"
       ],
-      "verification": "105_STABLE_ATTESTATION_EDITION_SOURCE_LINKS; 15_PROVISIONAL_CLAIMS_7_RELATIONS; 20_DISTINCT_ATTESTATIONS_LINKED_TO_CLAIMS; 85_WITHOUT_CLAIM; 3_EXODUS_REFERENT_AND_ADDRESSEE_ERRORS_FIXED_IN_LEDGER_AND_CONTRACT; 228_TESTS_LOCAL_PASS; EXACT_SHA_CI_PENDING; NO_INDEPENDENT_SCHOLARLY_CLAIM_APPROVAL",
+      "verification": "105_STABLE_ATTESTATION_EDITION_SOURCE_LINKS; 46_REGISTERED_SOURCES; 18_PROVISIONAL_CLAIMS_9_RELATIONS; 23_OF_105_CLAIM_LINKED; 82_WITHOUT_CLAIM; 3_PROPHECY_NAMED_OBJECTS_WITH_PRIMARY_MT_AND_PARTIAL_SECONDARY_SCHOLARSHIP; 236_TESTS_LOCAL_PASS_EXACT_SHA_CI_PENDING; EXACT_SHA_CI_PENDING; SCIENTIFIC_AND_PRODUCT_APPROVAL_0",
       "closureAt": null,
       "owner": "Research editorial"
     },
@@ -570,7 +577,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NG-02: independently verify source-critical alternatives and academic interpretations for 15 claims; add claim-level review decisions for 85 currently unreferenced attestations, prioritizing divine-speech/addressee/named-object conflations; NG-04/05: critical apparatus and phonology, followed by NG-03 supersession history. CI on exact final SHA required before engineering completion.",
+  "nextAction": "NG-02: next highest-risk semantic controls on 82 unlinked attestations: Rock in Deuteronomy 32:31/37, Immanuel Isaiah 7/8, and Revelation 22 speaker shifts; independent critical editions and peer reviewed disputes before declaring the semantic graph complete. Keep scholarly source rights and exact SHA CI.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -635,11 +642,24 @@
       ],
       "printedPages": null,
       "status": "CATALOG_ONLY_EXACT_PAGINATION_PENDING"
+    },
+    {
+      "sourceId": "SRC-VT-LIEBERMANN-JEREMIAH-2023",
+      "priority": "P0",
+      "taskIds": [
+        "NG-02",
+        "NG-10"
+      ],
+      "printedPages": "62–81",
+      "issueYear": 2023,
+      "firstOnlineYear": 2022,
+      "status": "AUTHOR_ACCEPTED_MANUSCRIPT_COVER_AND_P8_CHECKED_FULL_REVIEW_PENDING",
+      "reviewQuestion": "Why MT Jeremiah 33:16 Jerusalem-naming absent from much of Old Greek and which text-critical alternatives exist; independent critical apparatus needed."
     }
   ],
   "lastWorkReport": {
     "date": "2026-11-07",
-    "planStatus": "NG-01 DONE; NG-02 IN_PROGRESS with 3 Exodus referent corrections and 15 provisional claims",
+    "planStatus": "NG-01 DONE; NG-02 IN_PROGRESS: 18 provisional claims, 9 relations, 46 sources",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -658,14 +678,17 @@
       "Registered new Exodus divine speech role claim and a semantic relation",
       "Added six adversarial regressions; 228 total tests pass locally (159 corpus + 16 plan + 53 provenance)",
       "Added a fifteen-claim semantic scope dossier without awarding any scholarly approval",
-      "Independent anti-tautology guard rejects semantic corruption copied into both ledger and locked contract"
+      "Independent anti-tautology guard rejects semantic corruption copied into both ledger and locked contract",
+      "Verified three MT prophetic naming referents: king Jer23:6, Jerusalem Jer33:16, city Ezek48:35",
+      "Registered Liebermann's peer-reviewed Vetus Testamentum article with 2023 volume / 2022 online dates and selected manuscript page 8 access state",
+      "Added 3 provisional named object claims and 2 required semantic boundaries; 23 distinct attestation IDs now referenced",
+      "Expanded negative controls for Hebrew source attribution, peer-reviewed manuscript HOLD, bibliographic years and rights"
     ],
     "stillOpen": [
-      "NG-02: 85 attestation IDs have no claim references; 20 referenced do not constitute independent scholarly certification",
-      "NG-02: 15 provisional claims reviewed for logical scope, none fully critically collated or Product approved",
-      "NG-02: exact final SHA GitHub CI needed; explicit editor signoff remains OPEN",
-      "NG-04/05/08/09/10/11: original critical editions and full peer-reviewed arguments",
-      "NG-06/07/09: original TMS lectures and Abner Chou audio still to be watched"
+      "NG-02: 82/105 attestation IDs without any claim reference and all 18 claims pending independent scholarly review",
+      "Independent collations of Old Greek Jeremiah and other critical apparatus not performed; Liebermann only selected page checked",
+      "Exact SHA GitHub workflow verification required for 236 tests and source inventory extension",
+      "Audio/video Zhakevich, Barrick, Chou and remaining scholarly articles still in research queue"
     ]
   },
   "originalResearchCheckpoint": {
@@ -682,17 +705,19 @@
       "sourceForeignKeys": 105,
       "editionForeignKeys": 105,
       "canonicalEditions": 4,
-      "curatedClaims": 15,
+      "curatedClaims": 18,
       "locusIdMissingHistorically": 55,
       "editionSelectionRecheckHolds": 0,
-      "notes": "Exodus 3:12/14 Hebrew and LXX now distinguish divine first-person referent from Moses as addressee in 3 ledger observations and 3 locked contract copies. Claim scope reviewed for all 15 provisionally; no full scholarly review or publication.",
-      "typedClaimRelations": 7,
+      "notes": "Three royal/city naming loci source-linked to distinct research-held claims. Liebermann 2023 source accepted manuscript p8 only, not critical manuscript collation; 82 observations remain without a claim reference; all approvals blocked.",
+      "typedClaimRelations": 9,
       "editionSpecificDigitalVerseRechecksCompleted": 4,
-      "attestationsLinkedToClaims": 20,
-      "attestationsWithoutClaimReferences": 85,
+      "attestationsLinkedToClaims": 23,
+      "attestationsWithoutClaimReferences": 82,
       "divineReferentAddresseeControls": 3,
       "semanticScopeAudits": 15,
-      "scholarlyClaimApprovals": 0
+      "scholarlyClaimApprovals": 0,
+      "propheticRoyalCityClaims": 3,
+      "sourceRegisterEntries": 46
     }
   }
 }

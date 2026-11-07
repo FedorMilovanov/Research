@@ -1021,5 +1021,24 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                             for e in validate_speech_intertext(d, c)))
 
 
+    def test_liebermann_accepted_manuscript_cannot_be_misreported_as_critical_apparatus(self) -> None:
+        d=copy.deepcopy(self.sources)
+        src=next(r for r in d["records"] if r["id"]=="SRC-VT-LIEBERMANN-JEREMIAH-2023")
+        src["criticalEditionCollated"]=True
+        self.assertTrue(any("falsely claims edition collation" in e for e in validate_source_access(d)))
+
+    def test_liebermann_2022_online_publication_not_same_as_2023_journal_issue(self) -> None:
+        d=copy.deepcopy(self.sources)
+        src=next(r for r in d["records"] if r["id"]=="SRC-VT-LIEBERMANN-JEREMIAH-2023")
+        src["firstOnlineYear"]=2023
+        self.assertTrue(any("Liebermann issue/online year" in e for e in validate_source_access(d)))
+
+    def test_liebermann_reuse_rights_not_automatically_cleared(self) -> None:
+        d=copy.deepcopy(self.sources)
+        src=next(r for r in d["records"] if r["id"]=="SRC-VT-LIEBERMANN-JEREMIAH-2023")
+        src["rightsState"]="PUBLICATION_ELIGIBLE"
+        self.assertTrue(any("Liebermann issue/online year" in e for e in validate_source_access(d)))
+
+
 if __name__ == "__main__":
     unittest.main()

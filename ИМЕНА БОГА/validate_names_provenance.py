@@ -106,6 +106,11 @@ REQUIRED_EHYEH_ROLE_CLAIM = "CLM-EX3-EHYEH-DIVINE-REFERENT"
 REQUIRED_EHYEH_IDS = {
     "ATT-BASE-EHYEH-01", "ATT-BASE-EHYEH-02", "ATT-BASE-EHYEH-03"
 }
+REQUIRED_PROPHETIC_NAMING_CLAIMS = {
+    "CLM-JER23-6-DAVIDIC-ROYAL-NAME",
+    "CLM-JER33-16-JERUSALEM-CITY-NAME",
+    "CLM-EZ48-35-CITY-NAMING",
+}
 # The original reviewed seeds are a required minimum, not a cap on future work.
 # Additional claims must pass the same foreign-key, editorial and publication gates.
 ALLOWED_CLAIM_TYPES = {
@@ -164,6 +169,16 @@ REQUIRED_SEMANTIC_RELATIONS = {
         "CLM-LXX-EX3-JOHN8-DIFFERENT-CLAUSES",
         "SPECIFIES_SPEECH_AGENT"
     ),
+    "REL-JER-ROYAL-CITY-NAMING": (
+        "CLM-JER23-6-DAVIDIC-ROYAL-NAME",
+        "CLM-JER33-16-JERUSALEM-CITY-NAME",
+        "CONTRASTS_NAMED_OBJECT"
+    ),
+    "REL-JER-EZEK-CITY-NAME-LIMIT": (
+        "CLM-JER33-16-JERUSALEM-CITY-NAME",
+        "CLM-EZ48-35-CITY-NAMING",
+        "LIMITS_INFERENCE"
+    ),
 }
 CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-EX3-15-DIVINE-NAME": {"ATT-BASE-YHWH-01"},
@@ -183,6 +198,9 @@ CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-EX3-EHYEH-DIVINE-REFERENT": {
         "ATT-BASE-EHYEH-01", "ATT-BASE-EHYEH-02", "ATT-BASE-EHYEH-03"
     },
+    "CLM-JER23-6-DAVIDIC-ROYAL-NAME": {"ATT-BASE-TSIDKENU-01"},
+    "CLM-JER33-16-JERUSALEM-CITY-NAME": {"ATT-BASE-TSIDKENU-02"},
+    "CLM-EZ48-35-CITY-NAMING": {"ATT-BASE-SHAMMAH-01"},
 }
 
 
@@ -335,6 +353,8 @@ def validate_provenance(
         errors.append("provenance: one or more Greek source-pinned claim seeds missing")
     if REQUIRED_EHYEH_ROLE_CLAIM not in claim_map:
         errors.append("provenance: Exodus 3 divine referent claim missing")
+    if not REQUIRED_PROPHETIC_NAMING_CLAIMS.issubset(claim_map):
+        errors.append("provenance: required prophetic royal/city claim boundary missing")
     for cid, claim in claim_map.items():
         if not isinstance(claim, dict):
             errors.append(f"provenance: malformed claim {cid}")
@@ -430,8 +450,8 @@ def main() -> int:
         for p in problems:
             print("FAIL: " + p, file=sys.stderr)
         return 1
-    print("PASS: 105 attestation IDs linked to 4 editions; 15 provisional claim seeds, "
-          "7 typed relations and 3 Exodus first-person speech referents are HOLD-guarded")
+    print("PASS: 105 attestation IDs linked to 4 editions; 18 provisional claim seeds, "
+          "9 typed relations, 3 Exodus speech and 3 prophetic royal/city name boundaries HOLD-guarded")
     return 0
 
 

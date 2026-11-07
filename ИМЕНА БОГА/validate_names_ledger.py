@@ -385,6 +385,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-TMSJ-CHOU-TRANSLATION-2024": "ATTRIBUTED_TRANSLATION_FORMAL_EQUIVALENCE_THEOLOGY_2024",
     "SRC-TMSJ-BARRICK-TRANSLATION-2024": "ATTRIBUTED_BIBLICAL_TRANSLATION_NEHEMIAH8_2024",
     "SRC-TMSJ-CHOU-DANIEL-2024": "ATTRIBUTED_DANIEL7_CHRISTOLOGY_JOURNAL_CATALOG_2024",
+    "SRC-VT-LIEBERMANN-JEREMIAH-2023": "ATTRIBUTED_JEREMIAH_DAVIDIC_NAME_TEXTUAL_VARIANTS_2023",
 }
 
 
@@ -560,6 +561,16 @@ def validate_source_access(sources: dict) -> list[str]:
                 errors.append(f"{prefix}: unpinned Orthodox Greek textual provenance/rights must be retained")
         if rid == "SRC-LEUCHTER-JER33" and (source.get("accessState"), source.get("locatorState")) != ("CATALOG_ONLY", "COARSE_LOCATOR_ONLY"):
             errors.append(f"{prefix}: Leuchter abstract cannot be promoted to directly collated Old Greek witness")
+        if rid == "SRC-VT-LIEBERMANN-JEREMIAH-2023":
+            if (source.get("year") != 2023 or source.get("firstOnlineYear") != 2022
+                or source.get("printedPages") != "62–81"
+                or source.get("acceptedManuscriptPage") != "8"
+                or source.get("doi") != "10.1163/15685330-bja10091"
+                or source.get("rightsState") != "PERMISSION_REQUIRED"
+                or source.get("accessState") != "PARTIAL_OBJECT"
+                or source.get("criticalEditionCollated") is not False
+                or "NOT independently collated" not in str(source.get("supportedUse",""))):
+                errors.append(f"{prefix}: Liebermann issue/online year, selected page, licensing or manuscript HOLD changed")
         if rid == "SRC-JUDISCH-DAN7-ARAMAIC":
             if source.get("evidenceClass") != "B1" or source.get("rightsState") != "RIGHTS_UNKNOWN":
                 errors.append(f"{prefix}: confessional lexical commentary has wrong rights/evidence class")

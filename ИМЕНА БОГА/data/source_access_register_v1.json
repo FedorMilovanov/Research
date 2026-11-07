@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 45,
+    "sourceRecords": 46,
     "approvedForProduct": 0
   },
   "records": [
@@ -1111,13 +1111,35 @@
         "PUBLICATION_HOLD"
       ],
       "licenseScope": "TMSJ printing rights: classroom/church free copies up to 100 with source marking as specified; any other reproduction requires publisher permission. No automatic Product reprint."
+    },
+    {
+      "id": "SRC-VT-LIEBERMANN-JEREMIAH-2023",
+      "title": "Rosanne Liebermann, Justice, Righteousness, and the Davidic Dispute in Jeremiah and Ezekiel, Vetus Testamentum 73/1 (2023), 62–81",
+      "creator": "Rosanne Liebermann",
+      "url": "https://pure.au.dk/ws/portalfiles/portal/415104344/Justice_Righteousness_and_the_Davidic_Dispute_in_Jeremiah_and_Ezekiel_Accepted_manuscript.pdf",
+      "objectType": "peer_reviewed_scholarly_article_accepted_manuscript_selected_pages",
+      "sourceRole": "ATTRIBUTED_JEREMIAH_DAVIDIC_NAME_TEXTUAL_VARIANTS_2023",
+      "year": 2023,
+      "firstOnlineYear": 2022,
+      "printedPages": "62–81",
+      "acceptedManuscriptPage": "8",
+      "doi": "10.1163/15685330-bja10091",
+      "sourceObjectState": "Accepted author manuscript cover, author/institution and p.8 argument on Jer23:6 and 33:16 inspected visually; AU bibliographic record and Brill issue contents checked. Entire twenty-page final journal text, full bibliography and original critical apparatus NOT independently reviewed.",
+      "supportedUse": "Attribute Liebermann's documented distinction between MT Jeremiah 23:6 Davidic future king and MT Jeremiah 33:16 Jerusalem; describe her reported scholarly view that 33:16 is absent from most Greek witnesses and may reflect a later edition. This is attributed secondary evaluation, not direct collated manuscript testimony. Greek manuscript witnesses NOT independently collated in the present research.",
+      "forbiddenUse": "Claim directly collated Old Greek codices, assume full scholarly consensus on date of interpolation, prove original authorial wording, cite 2023 issue date as identical to 2022 online first publication, or reproduce article/PDF for Product.",
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "licenseScope": "Aarhus accepted manuscript permits private study/research and linking to URL; copyright and further republication restrictions apply. No full article redistribution or Product reproduction permission."
     }
   ],
-  "auditRevision": {
-    "date": "2026-11-07",
-    "correctedSourceIds": [
-      "SRC-TMSJ-CHOU-DANIEL-2024"
-    ],
-    "rationale": "GitHub CI correctly caught inherited PARTIAL_OBJECT metadata. Restrict Chou Daniel to catalog only until exact publisher article pages are read."
-  }
+  "auditRevision": "NG02_JEREMIAH_REFERENT_AND_LIEBERMANN_PARTIAL_SOURCE_20261107"
 }
