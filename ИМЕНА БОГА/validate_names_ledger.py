@@ -151,6 +151,71 @@ def validate(data: dict) -> list[str]:
         errors.append("Genesis 22:14 morphology note missing")
     elif (morphological.get("verb1"), morphological.get("verb2")) != ("יִרְאֶה", "יֵרָאֶה"):
         errors.append("Genesis 22:14: Qal/Niphal digital forms have been conflated")
+    # Genesis 14–35: linked "El" expressions have distinct acts/referents.
+    attestations_required = {
+        "el-shaddai": {
+            "Genesis 17:1": ("YHWH", "divine_self_identification", "God"),
+            "Genesis 28:3": ("Isaac", "benediction", "God"),
+            "Genesis 35:11": ("God", "divine_self_identification", "God"),
+            "Exodus 6:3": ("YHWH", "retrospective_revelation_statement", "God"),
+        },
+        "el-elyon": {
+            "Genesis 14:18": ("narrator", "priesthood_designation", "God"),
+            "Genesis 14:19": ("Melchizedek", "blessing", "God"),
+            "Genesis 14:20": ("Melchizedek", "doxology", "God"),
+            "Genesis 14:22": ("Abram", "oath_invocation", "God"),
+        },
+        "el-olam": {"Genesis 21:33": ("Abraham", "name_invocation", "God")},
+        "el-roi": {"Genesis 16:13": ("Hagar", "divine_name_invocation_and_direct_address", "God")},
+        "el-bethel": {"Genesis 35:7": ("Jacob", "place_naming", "place")},
+    }
+    for rid, expected_occurrences in attestations_required.items():
+        observations = index.get(rid, {}).get("attestations", [])
+        if not isinstance(observations, list):
+            errors.append(f"{rid}: attestations must be a list")
+            continue
+        occurrences_by_verse = {}
+        for occurrence in observations:
+            if not isinstance(occurrence, dict):
+                errors.append(f"{rid}: invalid occurrence object")
+                continue
+            verse = occurrence.get("verse")
+            if verse in occurrences_by_verse:
+                errors.append(f"{rid}: duplicate exact-verse attestation: {verse}")
+            occurrences_by_verse[verse] = occurrence
+            form = occurrence.get("surface")
+            if not isinstance(form, str) or not HEBREW.search(form):
+                errors.append(f"{rid}: missing Hebrew-script verse surface")
+            else:
+                errors.extend(unicode_surface_issues(f"{rid}/{verse}", form))
+            if not URL.match(str(occurrence.get("sourceUrl", ""))):
+                errors.append(f"{rid}: missing exact-verse source URL")
+            if occurrence.get("edition") != "Mechon-Mamre MT digital transcription":
+                errors.append(f"{rid}: source edition was changed without review")
+            if occurrence.get("checkState") != "DIGITAL_VERSE_SURFACE_CHECKED" or occurrence.get("criticalEditionStatus") != "NOT_COLLATED":
+                errors.append(f"{rid}: digital check has been falsely promoted to manuscript collation")
+            if occurrence.get("rightsState") != "RIGHTS_UNKNOWN":
+                errors.append(f"{rid}: source rights approved without evidence")
+        for verse, (speaker, act, obj) in expected_occurrences.items():
+            found = occurrences_by_verse.get(verse, {})
+            if (found.get("speaker"), found.get("speechAct"), found.get("namedObject")) != (speaker, act, obj):
+                errors.append(f"{rid}/{verse}: speaker/speech act/named object regression")
+        if not set(expected_occurrences).issubset(occurrences_by_verse):
+            errors.append(f"{rid}: mandatory contextual witnesses are missing")
+    total = sum(len(row.get("attestations", [])) for row in rows if isinstance(row, dict) and isinstance(row.get("attestations", []), list))
+    if data.get("auditProtocol", {}).get("patriarchalAttestations", {}).get("totalAttestations") != total:
+        errors.append("patriarchal attestation counter drift")
+    if total < 11:
+        errors.append("core patriarchal attestation set incomplete")
+    source_roles = {key: row.get("contextualAssertion", "") for key, row in index.items()}
+    for rid in attestations_required:
+        if not source_roles.get(rid):
+            errors.append(f"{rid}: missing assertion with claim boundary")
+    if index.get("el-shaddai", {}).get("attestations", [{}])[-1].get("surface") != "בְּאֵל שַׁדָּי":
+        errors.append("Exodus 6:3 precise pointed Shaddai surface changed")
+    if index.get("el-bethel", {}).get("attestations", [{}])[0].get("namedObject") != "place":
+        errors.append("Genesis 35:7 is place-naming, not altar-naming")
+
     counts = data.get("counts", {})
     if not isinstance(counts, dict):
         errors.append("counts must be object")
@@ -252,6 +317,9 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-CALVIN-EXODUS": "HISTORICAL_INTERPRETATION_IN_TRANSLATION",
     "SRC-NET-EXO6": "ATTRIBUTED_TRANSLATION_NOTES",
     "SRC-THGNT-LUKE": "GREEK_TEXT_SURFACE_ONLY",
+    "SRC-RASHI-EXO6": "HISTORICAL_JEWISH_COMMENTARY",
+    "SRC-NET-GEN14": "ATTRIBUTED_TRANSLATION_NOTES",
+    "SRC-CARGILL-2019": "ATTRIBUTED_HISTORICAL_CRITICAL_HYPOTHESIS_ABSTRACT",
 }
 
 
@@ -312,6 +380,15 @@ def validate_source_access(sources: dict) -> list[str]:
             errors.append(f"{prefix}: catalogue falsely promoted to full manuscript witness")
         if rid == "SRC-GREEVER-2020" and "יָהּ" not in str(source.get("forbiddenUse", "")):
             errors.append(f"{prefix}: Psalm 68:18 typology cannot prove Yah lexeme")
+        if rid == "SRC-CARGILL-2019":
+            if source.get("accessState") != "CATALOG_ONLY" or source.get("locatorState") != "COARSE_LOCATOR_ONLY":
+                errors.append(f"{prefix}: Cargill chapter abstract cannot be promoted to collated manuscript evidence")
+            if "gloss" not in str(source.get("supportedUse", "")):
+                errors.append(f"{prefix}: Cargill hypothesis attribution lost")
+        if rid == "SRC-NET-GEN14" and source.get("rightsState") != "PERMISSION_REQUIRED":
+            errors.append(f"{prefix}: NET Genesis 14 rights gate removed")
+        if rid == "SRC-RASHI-EXO6" and source.get("accessState") != "PARTIAL_OBJECT":
+            errors.append(f"{prefix}: Rashi online excerpt cannot claim complete original edition")
         if rid == "SRC-THGNT-LUKE" and source.get("rightsState") != "PERMISSION_REQUIRED":
             errors.append(f"{prefix}: THGNT must retain reuse restriction")
     if ids != set(EXPECTED_SOURCE_ROLES):
