@@ -351,6 +351,13 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-SBL-INTRO": "EDITION_METHOD_NOT_MANUSCRIPT_APPARATUS",
     "SRC-SBLGNT-CCBY-LICENSE": "PUBLISHER_LICENSE_TEXT_ONLY",
     "SRC-JUDISCH-DAN7-ARAMAIC": "ATTRIBUTED_B1_ARAMAIC_GRAMMAR",
+    "SRC-RAHLFS-ISAIAH": "PUBLISHER_EDITED_GREEK_LXX_SURFACE",
+    "SRC-ORTHODOX-ISAIAH9": "UNPINNED_ORTHODOX_GREEK_WEB_SURFACE",
+    "SRC-RASHI-ISAIAH9": "ATTRIBUTED_JEWISH_EXEGETICAL_RECEPTION",
+    "SRC-RADAK-ISAIAH9": "ATTRIBUTED_JEWISH_EXEGETICAL_RECEPTION",
+    "SRC-NET-ISAIAH7": "ATTRIBUTED_TRANSLATION_NOTES",
+    "SRC-LEUCHTER-JER33": "ATTRIBUTED_ACADEMIC_TEXTUAL_CRITICISM_ABSTRACT",
+    "SRC-RASHI-EZEK48": "ATTRIBUTED_JEWISH_EXEGETICAL_RECEPTION",
 }
 
 
@@ -416,6 +423,18 @@ def validate_source_access(sources: dict) -> list[str]:
             errors.append(f"{prefix}: Aramaic text cannot be promoted to fully collated Hebrew or manuscript")
         if rid == "SRC-SBL-INTRO" and "manuscript collation" not in str(source.get("forbiddenUse", "")).lower():
             errors.append(f"{prefix}: SBLGNT introduction must remain non-manuscript provenance")
+        if rid == "SRC-RAHLFS-ISAIAH":
+            if (source.get("rightsState") != "PERMISSION_REQUIRED"
+                or source.get("accessState") != "PARTIAL_OBJECT"
+                or source.get("criticalEditionCollated") is not False):
+                errors.append(f"{prefix}: Rahlfs-Hanhart edited digital text cannot be promoted to licensed/collated manuscript")
+            if "Rahlfs" not in str(source.get("title","")):
+                errors.append(f"{prefix}: Rahlfs editorial edition name lost")
+        if rid == "SRC-ORTHODOX-ISAIAH9":
+            if source.get("rightsState") != "PERMISSION_REQUIRED" or "unpinned" not in str(source.get("objectType", "")).lower():
+                errors.append(f"{prefix}: unpinned Orthodox Greek textual provenance/rights must be retained")
+        if rid == "SRC-LEUCHTER-JER33" and (source.get("accessState"), source.get("locatorState")) != ("CATALOG_ONLY", "COARSE_LOCATOR_ONLY"):
+            errors.append(f"{prefix}: Leuchter abstract cannot be promoted to directly collated Old Greek witness")
         if rid == "SRC-JUDISCH-DAN7-ARAMAIC":
             if source.get("evidenceClass") != "B1" or source.get("rightsState") != "RIGHTS_UNKNOWN":
                 errors.append(f"{prefix}: confessional lexical commentary has wrong rights/evidence class")
@@ -610,6 +629,120 @@ def validate_apocalyptic(baseline: dict, extension: dict) -> list[str]:
     return errors
 
 
+PROPHETIC_NAMING_WITNESSES = {
+    "el-gibbor": {
+        "Isaiah 9:5 MT (English 9:6)": ("אֵל גִּבּוֹר", "royal_child_naming_formula", "royal child in complex naming sequence", "hebrew"),
+        "Isaiah 10:21": ("אֶל-אֵל, גִּבּוֹר", "return_to_God", "God of Israel", "hebrew"),
+    },
+    "tsidkenu": {
+        "Jeremiah 23:6": ("יְהוָה צִדְקֵנוּ", "naming_royal_Davidic_branch", "Davidic king", "hebrew"),
+        "Jeremiah 33:16": ("יְהוָה צִדְקֵנוּ", "naming_Jerusalem", "Jerusalem", "hebrew"),
+    },
+    "shammah": {
+        "Ezekiel 48:35": ("יְהוָה שָׁמָּה", "city_naming", "city", "hebrew"),
+    },
+    "immanuel": {
+        "Isaiah 7:14": ("עִמָּנוּ אֵל", "prophetic_child_naming", "child in prophecy", "hebrew"),
+        "Isaiah 7:14 LXX Rahlfs-Hanhart": ("Εμμανουηλ", "prophetic_child_naming", "child in Isaiah prophecy", "greek"),
+        "Isaiah 8:8": ("עִמָּנוּ אֵל", "vocative_or_name_allusion", "Immanuel as addressee/allusion (contextual interpretation)", "hebrew"),
+        "Isaiah 8:10": ("כִּי עִמָּנוּ אֵל", "divine_presence_assertion", "God is with us, an assertion not new child-naming", "hebrew"),
+        "Matthew 1:23": ("Ἐμμανουήλ", "christological_prophetic_quotation", "Jesus identified with prophetic name in quotation", "greek"),
+    },
+}
+
+
+def validate_prophetic_namings(baseline: dict) -> list[str]:
+    """Pin researched naming roles, original-script verse forms, and editorial scope."""
+    errors: list[str] = []
+    rows = baseline.get("records", [])
+    index = {r.get("id"): r for r in rows if isinstance(r, dict)} if isinstance(rows, list) else {}
+    expected_total = sum(len(group) for group in PROPHETIC_NAMING_WITNESSES.values())
+    if expected_total != 10:
+        errors.append("prophetic: unexpected historical naming contract count")
+    for rid, expected in PROPHETIC_NAMING_WITNESSES.items():
+        row = index.get(rid, {})
+        records = row.get("attestations")
+        if not isinstance(records, list):
+            errors.append(f"prophetic {rid}: attestation list missing")
+            records = []
+        witnesses = {r.get("verse"):r for r in records if isinstance(r,dict)}
+        if len(witnesses) != len(records) or set(witnesses) != set(expected):
+            errors.append(f"prophetic {rid}: verse witness set drift or duplicate")
+        for verse, (surface, action, obj, lang) in expected.items():
+            occ = witnesses.get(verse, {})
+            if (occ.get("surface"), occ.get("speechAct"), occ.get("namedObject"), occ.get("language")) != (surface, action, obj, lang):
+                errors.append(f"prophetic {rid}/{verse}: source surface, language or named object corrupted")
+            for key, val in (("checkState", "DIGITAL_VERSE_SURFACE_CHECKED"),
+                             ("criticalEditionStatus", "NOT_COLLATED")):
+                if occ.get(key) != val:
+                    errors.append(f"prophetic {rid}/{verse}: textual critical status incorrectly promoted")
+            if lang == "greek":
+                if occ.get("rightsState") != "PERMISSION_REQUIRED" or occ.get("edition") != "Rahlfs-Hanhart 2006 via Deutsche Bibelgesellschaft":
+                    errors.append(f"prophetic {rid}/{verse}: copyrighted publisher LXX witness was substituted")
+            elif occ.get("rightsState") != "RIGHTS_UNKNOWN":
+                errors.append(f"prophetic {rid}/{verse}: unreviewed source rights were changed")
+            if not URL.match(str(occ.get("sourceUrl",""))):
+                errors.append(f"prophetic {rid}/{verse}: missing HTTPS text locator")
+            if isinstance(occ.get("surface"),str):
+                errors.extend(unicode_surface_issues(f"prophetic {rid}/{verse}",occ["surface"]))
+        if not isinstance(row.get("contextualAssertion"),str) or not row["contextualAssertion"].strip():
+            errors.append(f"prophetic {rid}: claim boundary missing")
+
+    el = index.get("el-gibbor", {})
+    r9 = next((a for a in el.get("attestations",[]) if isinstance(a,dict)
+               and a.get("verse") == "Isaiah 9:5 MT (English 9:6)"), {})
+    if r9.get("numbering") != {"hebrew": "Isaiah 9:5", "english": "Isaiah 9:6"}:
+        errors.append("prophetic Isaiah 9:5 numbering systems conflated")
+    if r9.get("contextualTitleSegmentation") != "INTERPRETIVE_DISPUTE":
+        errors.append("prophetic Isaiah 9 royal naming dispute suppressed")
+    r10 = next((a for a in el.get("attestations",[]) if isinstance(a,dict)
+                and a.get("verse")=="Isaiah 10:21"),{})
+    if "first אֶל- is preposition" not in str(r10.get("sourceGrammarNote","")):
+        errors.append("prophetic Isaiah 10:21 Hebrew preposition was silently erased")
+    greek = el.get("printedGreekWitnesses", [])
+    if not isinstance(greek,list) or len(greek)!=2:
+        errors.append("prophetic Isaiah 9 publisher/Orthodox printed witnesses missing")
+    else:
+        by_role = {w.get("sourceRole"):w for w in greek if isinstance(w,dict)}
+        if set(by_role) != {"PUBLISHER_DIGITAL_GREEK_READ_EDITION","UNPINNED_GREEK_WEB_EDITION"}:
+            errors.append("prophetic Isaiah 9: witness editions unreviewedly replaced")
+        rh=by_role.get("PUBLISHER_DIGITAL_GREEK_READ_EDITION",{})
+        orth=by_role.get("UNPINNED_GREEK_WEB_EDITION",{})
+        if (rh.get("longListTheosIschyros"),rh.get("exactEditedPhrase"),rh.get("rightsState")) != (False,"Μεγάλης βουλῆς ἄγγελος","PERMISSION_REQUIRED"):
+            errors.append("prophetic Isaiah 9: Rahlfs-Hanhart short name / publisher rights lost")
+        if (orth.get("longListTheosIschyros"),orth.get("exactEditedPhrase"),orth.get("rightsState")) != (True,"Θεὸς ἰσχυρός","RIGHTS_UNKNOWN"):
+            errors.append("prophetic Isaiah 9: unpinned Orthodox expanded name lost")
+        for witness in greek:
+            if not isinstance(witness,dict):
+                continue
+            if witness.get("criticalEditionCollated") is not False or "NO_MANUSCRIPT_CRITICAL_COLLATION" not in str(witness.get("claimScope","")):
+                errors.append("prophetic Isaiah 9 Greek digital variants falsely promoted to manuscript collation")
+            if not URL.match(str(witness.get("sourceUrl",""))):
+                errors.append("prophetic Isaiah 9 Greek edition locator missing")
+    ts=index.get("tsidkenu",{}).get("attestations",[])
+    by_verse={r.get("verse"):r for r in ts if isinstance(r,dict)}
+    if "שְּׁמוֹ" not in str(by_verse.get("Jeremiah 23:6",{}).get("genderCue","")):
+        errors.append("prophetic Jeremiah 23:6 masculine royal name cue lost")
+    if ("לָהּ" not in str(by_verse.get("Jeremiah 33:16",{}).get("nameDelimiter",""))
+        or by_verse.get("Jeremiah 33:16",{}).get("oldGreekPassageStatus") != "MT_33_14_26_ABSENT_IN_OLD_GREEK_JEREMIAH"):
+        errors.append("prophetic Jeremiah 33:16 feminine city cue or Old Greek absence lost")
+    city=index.get("shammah",{}).get("attestations",[])
+    if not any(isinstance(r,dict) and r.get("nameDelimiter") == "וְשֵׁם-הָעִיר מִיּוֹם" for r in city):
+        errors.append("prophetic Ezekiel 48:35 explicit city-name phrase lost")
+    im=index.get("immanuel",{}).get("attestations",[])
+    names={r.get("verse"):r for r in im if isinstance(r,dict)}
+    if names.get("Isaiah 7:14 LXX Rahlfs-Hanhart",{}).get("nameDelimiter") != "καλέσεις τὸ ὄνομα αὐτοῦ":
+        errors.append("prophetic LXX Isaiah 7:14 singular naming verb lost")
+    if names.get("Matthew 1:23",{}).get("namingVerbForm") != "καλέσουσιν 3rd plural":
+        errors.append("prophetic Matthew 1:23 plural naming verb lost")
+    if names.get("Isaiah 8:10",{}).get("receptionLayer") != "HEBREW_ASSURANCE_SENTENCE":
+        errors.append("prophetic Isaiah 8:10 assurance falsely converted into a new name")
+    audit=baseline.get("auditProtocol",{}).get("propheticAttestations",{})
+    if audit.get("totalAttestations") != expected_total or audit.get("publicationEligible") != 0:
+        errors.append("prophetic attestation count or Product gate changed")
+    return errors
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--ledger", type=Path, default=LEDGER)
@@ -635,7 +768,8 @@ def main() -> int:
         print(f"FAIL: cannot read sources: {exc}", file=sys.stderr)
         return 1
     issues = (validate(data) + validate_extension(extension, data) +
-              validate_source_access(sources) + validate_apocalyptic(data, extension))
+              validate_source_access(sources) + validate_apocalyptic(data, extension) +
+              validate_prophetic_namings(data))
     if issues:
         for issue in issues:
             print("FAIL:", issue, file=sys.stderr)
