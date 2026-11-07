@@ -111,5 +111,53 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("NFC-normalized" in error for error in validate_extension(data, self.baseline)))
 
 
+    def test_genesis_35_7_place_is_not_altar(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(x for x in data["records"] if x["id"] == "el-bethel")
+        row["attestations"][0]["namedObject"] = "altar"
+        self.assertTrue(any("Genesis 35:7" in issue and "regression" in issue for issue in validate(data)))
+
+    def test_el_elyon_abram_speech_not_melchizedek(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(x for x in data["records"] if x["id"] == "el-elyon")
+        next(x for x in row["attestations"] if x["verse"] == "Genesis 14:22")["speaker"] = "Melchizedek"
+        self.assertTrue(any("Genesis 14:22" in issue and "regression" in issue for issue in validate(data)))
+
+    def test_shaddai_is_not_all_divine_first_person_speech(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(x for x in data["records"] if x["id"] == "el-shaddai")
+        next(x for x in row["attestations"] if x["verse"] == "Genesis 28:3")["speaker"] = "God"
+        self.assertTrue(any("Genesis 28:3" in issue and "regression" in issue for issue in validate(data)))
+
+    def test_hagar_name_invocation_not_place_naming(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(x for x in data["records"] if x["id"] == "el-roi")
+        row["attestations"][0]["speechAct"] = "place_naming"
+        self.assertTrue(any("Genesis 16:13" in issue and "regression" in issue for issue in validate(data)))
+
+    def test_el_olam_invocation_not_beersheba_place_name(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(x for x in data["records"] if x["id"] == "el-olam")
+        row["attestations"][0]["namedObject"] = "place"
+        self.assertTrue(any("Genesis 21:33" in issue and "regression" in issue for issue in validate(data)))
+
+    def test_exodus_6_3_pointing_cannot_be_silently_normalized(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(x for x in data["records"] if x["id"] == "el-shaddai")
+        row["attestations"][-1]["surface"] = "בְּאֵל שַׁדַּי"
+        self.assertTrue(any("Exodus 6:3" in issue for issue in validate(data)))
+
+    def test_cargill_abstract_cannot_be_promoted_to_fully_collated_text(self) -> None:
+        data = copy.deepcopy(self.sources)
+        row = next(x for x in data["records"] if x["id"] == "SRC-CARGILL-2019")
+        row["accessState"] = "FULL_OBJECT_VERIFIED"
+        self.assertTrue(any("Cargill chapter abstract" in issue for issue in validate_source_access(data)))
+
+    def test_patriarchal_attestation_counter_drift_is_rejected(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        data["auditProtocol"]["patriarchalAttestations"]["totalAttestations"] = 29
+        self.assertTrue(any("patriarchal attestation counter drift" in issue for issue in validate(data)))
+
+
 if __name__ == "__main__":
     unittest.main()
