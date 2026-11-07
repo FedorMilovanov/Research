@@ -796,7 +796,40 @@
           "contextualTitleSegmentation": "DIRECT_DIVINE_REFERENT"
         }
       ],
-      "contextualAssertion": "Isa9:5 MT royal naming context (English 9:6), interpretation of who bears each title disputed between Jewish and Christian traditions. Isa10:21 God is the explicit recipient of a remnant's return. Preposition אֶל- not silently removed."
+      "contextualAssertion": "Isa9:5 MT royal naming context (English 9:6), interpretation of who bears each title disputed between Jewish and Christian traditions. Isa10:21 God is the explicit recipient of a remnant's return. Preposition אֶל- not silently removed.",
+      "printedGreekWitnesses": [
+        {
+          "edition": "Rahlfs-Hanhart 2006 (Deutsche Bibelgesellschaft)",
+          "editionType": "printed_critical_greek_reading_text_digitally_displayed",
+          "verse": "Isaias 9:5 LXX (MT Isaiah 9:5; some English Isaiah 9:6)",
+          "exactEditedPhrase": "Μεγάλης βουλῆς ἄγγελος",
+          "fullGreekNameClause": "καλεῖται τὸ ὄνομα αὐτοῦ Μεγάλης βουλῆς ἄγγελος",
+          "longListTheosIschyros": false,
+          "sourceUrl": "https://www.die-bibel.de/bibel/LXX/ISA.9",
+          "rightsState": "PERMISSION_REQUIRED",
+          "criticalEditionCollated": false,
+          "sourceRole": "PUBLISHER_DIGITAL_GREEK_READ_EDITION",
+          "claimScope": "THIS_EDITION_ONLY_NO_MANUSCRIPT_CRITICAL_COLLATION"
+        },
+        {
+          "edition": "Greek Orthodox Archdiocese of America web Greek Isaiah 9, exact academic edition not pinned",
+          "editionType": "modern_orthodox_web_greek_reading",
+          "verse": "Isaiah 9:6 per Orthodox site numbering",
+          "exactEditedPhrase": "Θεὸς ἰσχυρός",
+          "fullGreekNameClause": "μεγάλης βουλῆς ἄγγελος, θαυμαστὸς σύμβουλος, Θεὸς ἰσχυρός",
+          "longListTheosIschyros": true,
+          "sourceUrl": "https://www.septuagint.bible/-/hesaias-kephalaio-9",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "criticalEditionCollated": false,
+          "sourceRole": "UNPINNED_GREEK_WEB_EDITION",
+          "claimScope": "THIS_DISPLAY_ONLY_NO_MANUSCRIPT_CRITICAL_COLLATION"
+        }
+      ],
+      "criticalGreekContrast": {
+        "status": "TWO_PRINTED_DIGITAL_READINGS_VERIFIED",
+        "interpretiveRisk": "Cannot attribute expansion to specific ancient manuscript or assert only one LXX reading",
+        "orthographyRule": "Do not infer Hebrew wording from one Greek digital site"
+      }
     },
     {
       "id": "el-bethel",
@@ -1318,6 +1351,23 @@
           "receptionLayer": "HEBREW_ORIGINAL_CONTEXT"
         },
         {
+          "verse": "Isaiah 7:14 LXX Rahlfs-Hanhart",
+          "surface": "Εμμανουηλ",
+          "language": "greek",
+          "edition": "Rahlfs-Hanhart 2006 via Deutsche Bibelgesellschaft",
+          "narrativeSpeaker": "Greek Isaiah, oracle addressed to Davidic house",
+          "speechAct": "prophetic_child_naming",
+          "namedObject": "child in Isaiah prophecy",
+          "sourceUrl": "https://www.die-bibel.de/en/bible/LXX/ISA.7.14",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "PERMISSION_REQUIRED",
+          "nameDelimiter": "καλέσεις τὸ ὄνομα αὐτοῦ",
+          "namingVerbForm": "καλέσεις second person singular",
+          "crossEditionRelation": "MATTHEW_SBLGNT_USES_καλέσουσιν_THIRD_PERSON_PLURAL",
+          "sourceRole": "EDITORIAL_GREEK_TRANSLATION_NO_MANUSCRIPT_APPARATUS"
+        },
+        {
           "verse": "Isaiah 8:8",
           "surface": "עִמָּנוּ אֵל",
           "language": "hebrew",
@@ -1364,7 +1414,7 @@
           "receptionLayer": "NEW_TESTAMENT_CITATION_AND_TRANSLATION"
         }
       ],
-      "contextualAssertion": "Isaiah 7:14 child-naming; 8:8 name invocation/allusion; 8:10 assertion for God with us; Matthew 1:23 Christian citation with 3pl καλέσουσιν and Greek gloss. MT naming verb וְקָרָאת grammatically debated; Matthew cannot be copied into MT."
+      "contextualAssertion": "Isaiah 7:14 child-naming; 8:8 name invocation/allusion; 8:10 assertion for God with us; Matthew 1:23 Christian citation with 3pl καλέσουσιν and Greek gloss. MT naming verb וְקָרָאת grammatically debated; Matthew cannot be copied into MT. Rahlfs-Hanhart 2006 LXX Isaiah 7:14 prints καλέσεις (2sg) as compared with SBLGNT Matthew 1:23 καλέσουσιν (3pl); direct digital editions checked, underlying textual apparatus not collated."
     }
   ],
   "coverageNote": "29/29 candidate forms anchored to a stated digital verse witness only. NOT 29 fully verified etymologies, all-verse collation, or textual-critical/rights/publication approval. Sources are conservative class B1, not critical primary manuscripts.",
@@ -1414,10 +1464,15 @@
         "shammah",
         "immanuel"
       ],
-      "totalAttestations": 9,
+      "totalAttestations": 10,
       "claimBoundary": "ROYAL_CHILD_VS_DIVINE_TITLE_CITY_VS_PROPHECY_NOT_ALL_DIVINE_PERSONAL_NAMES",
       "textualAbsence": "MT Jeremiah33:14–26 absent Old Greek, secondary scholarly confirmation only",
-      "publicationEligible": 0
+      "publicationEligible": 0,
+      "criticalGreekWitnesses": {
+        "isaiah9RahlfsVsOrthodox": "DIFFERING_DIGITAL_GREEK_EDITIONS; THEOS_ISCHYROS_NOT_IN_PUBLISHER_RH_READING",
+        "isaiah7RahlfsVsMatthew": "καλέσεις versus καλέσουσιν",
+        "rights": "PUBLISHER_RH_COPYRIGHTED; NO_TRANSITIVE_LICENSE"
+      }
     }
   }
 }
