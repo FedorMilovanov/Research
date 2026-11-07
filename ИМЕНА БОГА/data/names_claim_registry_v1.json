@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "corpusId": "NAMES_OF_GOD_CLAIM_LEVEL_EVIDENCE",
   "createdAt": "2026-11-07",
-  "scope": "26 research-held provisional claims / 15 typed links: added 5 Immanuel Hebrew/LXX/NT loci without critical manuscript collation, authorial motive assertion or Product permissions.",
+  "scope": "30 provisional source-linked claims; 19 typed relations, including explicit versus contextual Revelation speakers and historic printed variant; no critical manuscript collation.",
   "editorialPolicy": "Never infer Product approval from link completeness, never replace a cited verse or alternative theory silently; new claims require independent review.",
   "records": [
     {
@@ -587,6 +587,111 @@
         "compare Isaiah Greek and Matthew citation variants without inferring authorial motive from one text",
         "separate confessional/historical reception, copyright and Product editorial acceptance"
       ]
+    },
+    {
+      "claimId": "CLM-REV1-8-LORD-GOD-ALPHA",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "Rev1:8 SBLGNT directly says λέγει κύριος, ὁ θεός and applies Alpha/Omega and Almighty to the Lord God. In this printed edition the phrase ἀρχὴ καὶ τέλος is not present in this verse. The in-verse attribution is explicit, while an equation with the speaker in Rev22:13 would require separate argument.",
+      "attestationIds": [
+        "ATT-BASE-ALPHA-OMEGA-01",
+        "ATT-BASE-PANTOKRATOR-01"
+      ],
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT",
+        "SRC-SBL-REVELATION"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "speakerEvidenceLevel": "EXPLICIT_SAME_VERSE",
+      "requiresIndependentSpeakerReview": false,
+      "reviewNeeded": [
+        "Ancient Greek manuscript readings and full textual apparatus not collated",
+        "Review speaker handoffs in Rev22:6–16 including angels, Christ and John",
+        "Attribute commentary conclusions; compare alternate academic readings and reception history",
+        "Evaluate permissions before Product/Arena publication"
+      ]
+    },
+    {
+      "claimId": "CLM-REV21-6-THRONE-SPEAKER",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "In Rev21:5 SBLGNT the narrator introduces ὁ καθήμενος ἐπὶ τῷ θρόνῳ, the one seated on the throne, as speaker. The continuing speech at Rev21:6 contains Alpha/Omega and Beginning/End; 21:7 says 'I will be God to him'. The speaker is established by a preceding narrator cue, not an explicit 'I Jesus' at verse 6.",
+      "attestationIds": [
+        "ATT-BASE-ALPHA-OMEGA-02",
+        "ATT-EXT-ARCHE-TELOS-01"
+      ],
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT",
+        "SRC-SBL-REVELATION"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "speakerEvidenceLevel": "EXPLICIT_PRIOR_NARRATOR_CUE",
+      "requiresIndependentSpeakerReview": false,
+      "reviewNeeded": [
+        "Ancient Greek manuscript readings and full textual apparatus not collated",
+        "Review speaker handoffs in Rev22:6–16 including angels, Christ and John",
+        "Attribute commentary conclusions; compare alternate academic readings and reception history",
+        "Evaluate permissions before Product/Arena publication"
+      ]
+    },
+    {
+      "claimId": "CLM-REV22-13-CHRISTOLOGICAL-INFERENCE",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "Rev22:13 SBLGNT includes Alpha/Omega, First/Last and Beginning/End. Its verse itself does not name Jesus; the explicit phrase Ἐγὼ Ἰησοῦς occurs in Rev22:16. A Christ-speaker reading is supported by 22:12's coming promise, 22:16 and Tabb's attributed commentary, but intervening angel/John voices mean it remains an inference from discourse, not a speaker named verbatim at v13.",
+      "attestationIds": [
+        "ATT-BASE-ALPHA-OMEGA-03",
+        "ATT-EXT-ARCHE-TELOS-02"
+      ],
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT",
+        "SRC-SBL-REVELATION",
+        "SRC-TABB-REVELATION22"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "speakerEvidenceLevel": "CONTEXT_INFERRED_NOT_NAMED_AT_VERSE_13",
+      "requiresIndependentSpeakerReview": true,
+      "reviewNeeded": [
+        "Ancient Greek manuscript readings and full textual apparatus not collated",
+        "Review speaker handoffs in Rev22:6–16 including angels, Christ and John",
+        "Attribute commentary conclusions; compare alternate academic readings and reception history",
+        "Evaluate permissions before Product/Arena publication"
+      ]
+    },
+    {
+      "claimId": "CLM-REV1-8-SBL-TR-EXPANSION",
+      "claimType": "EDITED_TEXT_DIFFERENCE",
+      "statement": "Printed SBLGNT Rev1:8 has κύριος, ὁ θεός without 'beginning and end'; historic Stephanus TR1550 adds ἀρχὴ καὶ τέλος and differs in speech attribution. The NET Bible textual note discusses the longer variant in several witnesses. Comparing two printed texts and an editorial note is not direct collation of ancient Greek manuscripts.",
+      "attestationIds": [
+        "ATT-BASE-ALPHA-OMEGA-01"
+      ],
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT",
+        "SRC-TR1550-REV18",
+        "SRC-NET-REV1-8"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "speakerEvidenceLevel": "PRINTED_VARIANT_NOT_NEW_SPEAKER",
+      "requiresIndependentSpeakerReview": false,
+      "reviewNeeded": [
+        "Ancient Greek manuscript readings and full textual apparatus not collated",
+        "Review speaker handoffs in Rev22:6–16 including angels, Christ and John",
+        "Attribute commentary conclusions; compare alternate academic readings and reception history",
+        "Evaluate permissions before Product/Arena publication"
+      ]
     }
   ],
   "semanticRelations": [
@@ -708,6 +813,38 @@
       "toClaimId": "CLM-MATT1-23-IMMANUEL-GLOSS",
       "relationType": "REQUIRES_INDEPENDENT_ATTESTATION",
       "rationale": "Matthew's christological citation and gloss of Isaiah are canonical reception, while precise historical Hebrew antecedent and original naming-verb forms need separate historical/critical evidence.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-REV-1-21-SPEAKER",
+      "fromClaimId": "CLM-REV1-8-LORD-GOD-ALPHA",
+      "toClaimId": "CLM-REV21-6-THRONE-SPEAKER",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Same verse identifies Lord God in 1:8; narrator identifies throne speaker in 21:5. This distinguishes evidence, not necessarily persons.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-REV-21-22-SPEAKER",
+      "fromClaimId": "CLM-REV21-6-THRONE-SPEAKER",
+      "toClaimId": "CLM-REV22-13-CHRISTOLOGICAL-INFERENCE",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "21:6 is tied to throne speaker in v5; 22:13 is contextually linked to Jesus, named at 22:16; the evidence types differ.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-REV-1-22-TITLE-CAUTION",
+      "fromClaimId": "CLM-REV1-8-LORD-GOD-ALPHA",
+      "toClaimId": "CLM-REV22-13-CHRISTOLOGICAL-INFERENCE",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "Shared Alpha/Omega title does not erase explicit Lord God speech cue in 1:8 versus contextual inference in 22:13.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-REV-1-TR-PRINTED",
+      "fromClaimId": "CLM-REV1-8-LORD-GOD-ALPHA",
+      "toClaimId": "CLM-REV1-8-SBL-TR-EXPANSION",
+      "relationType": "CONTRASTS_PRINTED_EDITION",
+      "rationale": "TR1550 longer 1:8 cannot silently rewrite the attested SBLGNT 1:8 verse.",
       "publicationState": "BLOCKED"
     }
   ]

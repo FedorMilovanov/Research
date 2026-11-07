@@ -12,23 +12,23 @@
     "arenaRecords": 29,
     "extensionRecords": 13,
     "contextAttestations": 105,
-    "sourceRegisterEntries": 46,
-    "regressionTests": 162,
+    "sourceRegisterEntries": 48,
+    "regressionTests": 165,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
     "allSixCiChecks": "SUCCESS_ON_REVIEWED_COMMIT",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 16,
-    "provenanceRegressionTests": 81,
+    "provenanceRegressionTests": 96,
     "canonicalEditions": 4,
-    "curatedClaims": 26,
+    "curatedClaims": 30,
     "allAttestationForeignKeys": 105,
-    "editionSpecificGreekUrlsVerified": 5,
+    "editionSpecificGreekUrlsVerified": 11,
     "unselectedGreekEditionUrls": 0,
-    "attestationsReferencedByClaims": 33,
-    "attestationsWithoutClaimReference": 72,
-    "typedClaimRelations": 15,
+    "attestationsReferencedByClaims": 39,
+    "attestationsWithoutClaimReference": 66,
+    "typedClaimRelations": 19,
     "correctedExodusDivineReferentRows": 3,
     "semanticScopeAudits": 15,
     "independentScholarlyClaimApprovals": 0,
@@ -37,7 +37,9 @@
     "rockReferentAttestations": 5,
     "rockPronounVerse30AwaitingDiscourseReview": true,
     "immanuelDistinctEvidenceLociGuarded": 5,
-    "immanuelTextualCriticalCollationCompleted": 0
+    "immanuelTextualCriticalCollationCompleted": 0,
+    "revelationSpeakerEditionAttestations": 6,
+    "revelationSecondaryCommentariesRegistered": 2
   },
   "allowedStatuses": [
     "DONE",
@@ -188,9 +190,15 @@
         "18_IMMANUEL_HEBREW_GREEK_INTERTEXT_BOUNDARIES_20261107.md: Hebrew Isa7:14; Isa8:8/10; printed LXX Isa7:14 and SBLGNT Matt1:23 with 2sg/3pl Greek contrast",
         "data/names_claim_registry_v1.json: five provisional Immanuel claims with four required relations MT/LXX/Matthew/Isa8",
         "validate_names_provenance.py: exact written form and name/speech act controls for five attestation IDs, single-edition Matthew URL",
-        "test_validate_names_provenance.py: 14 Immanuel mutation checks including edition orthography, naming-verb ambiguity and Greek source URL"
+        "test_validate_names_provenance.py: 14 Immanuel mutation checks including edition orthography, naming-verb ambiguity and Greek source URL",
+        "19_REVELATION_ALPHA_OMEGA_SPEAKER_EDITION_AUDIT_20261107.md: exact SBLGNT Rev1:8,21:5-7,22:12-16 speaker hierarchy and TR1550 printed longer Rev1:8",
+        "source_access_register_v1.json: registered two secondary excerpts NET Rev1:8 and Brian J Tabb Rev22 without promoting to manuscript collation",
+        "data/names_claim_registry_v1.json: four narrow Revelation claims, four required typed relations, explicit vs contextual speaker evidence levels, all HOLD",
+        "validate_names_provenance.py: six independent Revelation first-person speaker anchors and six exact digital SBLGNT URL locks",
+        "test_validate_names_provenance.py: 15 Revelation negative/positive tests incl speaker, edition, graph and source attribution",
+        "test_validate_names_ledger.py: three new secondary-source permissions/critical-collation mutation tests"
       ],
-      "verification": "105_STABLE_ATT_EDITION_SOURCE_IDS; 46_SOURCES; 26_PROVISIONAL_CLAIMS_15_RELATIONS; 33_OF_105_WITH_CLAIM; 72_WITHOUT_CLAIM; 5_IMMANUEL_ORIGINAL_SOURCE_FORM_ROLE_GUARDS; 5_SINGLE_EDITION_GREEK_PINS; 259_LOCAL_TESTS_PASS; CI_EXACT_SHA_PENDING; CRITICAL_COLLATIONS_0; PRODUCT_APPROVAL_0",
+      "verification": "105_STABLE_ORIGINAL_ATTESTATION_IDS; 48_SOURCES; 30_PROVISIONAL_CLAIMS_19_TYPED_RELATIONS; 39_OF_105_CLAIM_LINKED; 66_WITHOUT_CLAIM; 6_REVELATION_SPEAKER_GUARDS; 11_PINNED_SINGLE_EDITION_GREEK_PAGES; 277_LOCAL_TESTS_PASS_EXPECTED_AFTER_FULL_RUN; EXACT_SHA_CI_PENDING; CRITICAL_COLLATIONS_0; SCHOLARLY_APPROVAL_0; PRODUCT_APPROVAL_0",
       "closureAt": null,
       "owner": "Research editorial"
     },
@@ -589,7 +597,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NG-02: next strictly limited wave on Revelation 1:8 / 21:6 / 22:13 first-person speaking-agent shifts and Alpha/Omega versus beginning/end; guard theological inference vs printed Greek edition. Then review remaining 72 attestation IDs by priority and inspect 55 historic locusId omissions; critical manuscript apparatus and independent academic review remain upstream of any publication.",
+  "nextAction": "NG-02: 66 original-language attestation IDs remain without narrow claim references. Next bounded wave: prioritize original form and mixed/addressee problems, classifying true divine name, descriptive epithet, human/title reuse and possible literary intertext. Review 55 historic locusId omissions before new semantic links, without manufacturing unnecessary claims. Critical Greek Revelation 1:8,21:6,22:13 manuscripts and alternative scholarly voices require independent source review. No publication/merging before separate Product gate.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -671,7 +679,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-07",
-    "planStatus": "NG-01 DONE; NG-02 IN_PROGRESS: 26 provisional claims, 15 semantic links, 33/105 attestation references",
+    "planStatus": "NG-01 DONE; NG-02 IN_PROGRESS: 30 research-held claims, 19 semantic relations, 39/105 observations linked",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -702,14 +710,19 @@
       "Immanuel NG-02: five distinct MT Isaiah7/8, LXX Isaiah7 and SBLGNT Matthew1:23 occurrence claims, four typed context/intertext differences",
       "Verified printed καλέσεις (LXX 2sg) vs καλέσουσιν (SBLGNT 3pl), Ἐμμανουήλ explanatory gloss; Hebrew וְקָרָאת interpretation remains disputed",
       "Pinned fifth single-edition Greek passage URL and guarded five exact source surfaces, avoiding implied manuscript collations",
-      "14 added provenance regressions; 259 total local tests (162 baseline,16 plan,81 provenance)"
+      "14 added provenance regressions; 259 total local tests (162 baseline,16 plan,81 provenance)",
+      "Revelation Greek discourse: distinct explicit in-verse Lord God (1:8), prior narrator throne speaker (21:6), and Christological contextual inference (22:13), never treating 22:16 'I Jesus' as within v13.",
+      "Rev1:8 printed source boundary: SBLGNT shorter Alpha/Omega versus TR1550 longer beginning/end; NET secondary textual note source attributed, not independent manuscript collation.",
+      "Registered Brian J Tabb's Rev22 contextual speaker reading separately from original Greek text and original critical apparatus.",
+      "Added 4 research-held claims, 4 typed relations, 2 secondary sources, 6 speaker-control checks and 18 mutation tests; 277 local tests planned (165+16+96)."
     ],
     "stillOpen": [
-      "NG-02: 72/105 original-language contexts still lack curated claim links, though all 105 preserve edition/source FK",
-      "Independent historical source criticism of 1QIsaa, LXX/MT and Matt1:23 variants not completed",
-      "No scholarly signoff and no Product permissions; all 26 provisional claims blocked",
-      "Revelation 22 speaker-shift and Alpha/Omega implications next priority",
-      "Exact GitHub head SHA CI run and branch integrity to be verified"
+      "NG-02: 66/105 attestation IDs without separate provisional claim reference despite source/edition FKs for all 105",
+      "55 historic locusId omissions require versioned policy rather than forced backfills",
+      "Independent manuscripts and full critical apparatus for Rev1:8, 21:6, 22:13 not collated",
+      "Historical and contemporary competing interpretations of apocalyptic voices not exhaustively reviewed",
+      "All 30 claims RESEARCH_HOLD, 0 scientific approval and 0 Product publication permission",
+      "Exact new HEAD SHA and all six GitHub CI checks require verification"
     ]
   },
   "originalResearchCheckpoint": {
@@ -726,22 +739,23 @@
       "sourceForeignKeys": 105,
       "editionForeignKeys": 105,
       "canonicalEditions": 4,
-      "curatedClaims": 26,
+      "curatedClaims": 30,
       "locusIdMissingHistorically": 55,
       "editionSelectionRecheckHolds": 0,
-      "notes": "Five Immanuel MT/LXX/SBLGNT attestations independently role- and original-form-guarded. Greek LXX καλέσεις vs Matthew καλέσουσιν pinned, but Hebrew verb, textual variants and historical intertext remain scholarly HOLD; 72 attestation IDs unlinked; 0 Product approvals.",
-      "typedClaimRelations": 15,
-      "editionSpecificDigitalVerseRechecksCompleted": 5,
-      "attestationsLinkedToClaims": 33,
-      "attestationsWithoutClaimReferences": 72,
+      "notes": "Rev1:8 explicitly Lord God, Rev21:6 prior throne narrator cue, Rev22:13 speaker inferred from 22:12–16; registered SBL vs TR1550 historic printed differences and two attributed secondary sources. Six original occurrences guarded. 66 remains claim-unlinked; no scholarly or Product approval.",
+      "typedClaimRelations": 19,
+      "editionSpecificDigitalVerseRechecksCompleted": 11,
+      "attestationsLinkedToClaims": 39,
+      "attestationsWithoutClaimReferences": 66,
       "divineReferentAddresseeControls": 3,
       "semanticScopeAudits": 15,
       "scholarlyClaimApprovals": 0,
       "propheticRoyalCityClaims": 3,
-      "sourceRegisterEntries": 46,
+      "sourceRegisterEntries": 48,
       "rockReferentAttestations": 5,
       "rockPronounVerse30AwaitingDiscourseReview": true,
-      "immanuelDistinctEvidenceLociGuarded": 5
+      "immanuelDistinctEvidenceLociGuarded": 5,
+      "revelationSpeakerEditionAttestations": 6
     }
   }
 }

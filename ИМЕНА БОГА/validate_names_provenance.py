@@ -41,6 +41,12 @@ PINNED_GREEK_SOURCE_URLS = {
     "ATT-BASE-ABBA-03": "https://www.biblegateway.com/passage/?search=Galatians+4%3A4-7&version=SBLGNT",
     "ATT-EXT-KYRIOS-HO-THEOS-01": "https://www.biblegateway.com/passage/?search=Luke+1%3A30-33&version=THGNT",
     "ATT-BASE-IMMANUEL-05": "https://www.biblegateway.com/passage/?search=Matthew+1%3A23&version=SBLGNT",
+    "ATT-BASE-ALPHA-OMEGA-01": "https://www.biblegateway.com/passage/?search=Revelation+1%3A4-8&version=SBLGNT",
+    "ATT-BASE-PANTOKRATOR-01": "https://www.biblegateway.com/passage/?search=Revelation+1%3A4-8&version=SBLGNT",
+    "ATT-BASE-ALPHA-OMEGA-02": "https://www.biblegateway.com/passage/?search=Revelation+21&version=SBLGNT",
+    "ATT-EXT-ARCHE-TELOS-01": "https://www.biblegateway.com/passage/?search=Revelation+21&version=SBLGNT",
+    "ATT-BASE-ALPHA-OMEGA-03": "https://www.biblegateway.com/passage/?search=Revelation+22&version=SBLGNT",
+    "ATT-EXT-ARCHE-TELOS-02": "https://www.biblegateway.com/passage/?search=Revelation+22&version=SBLGNT",
 }
 
 
@@ -149,6 +155,17 @@ IMMANUEL_ROLE_CONTROLS = {
     "ATT-BASE-IMMANUEL-04": ("divine_presence_assertion", "God is with us, an assertion not new child-naming"),
     "ATT-BASE-IMMANUEL-05": ("christological_prophetic_quotation", "Jesus identified with prophetic name in quotation"),
 }
+REQUIRED_REVELATION_CLAIMS={
+    "CLM-REV1-8-LORD-GOD-ALPHA","CLM-REV21-6-THRONE-SPEAKER",
+    "CLM-REV22-13-CHRISTOLOGICAL-INFERENCE","CLM-REV1-8-SBL-TR-EXPANSION"}
+REV_SPEAKER_CONTROLS={
+    "ATT-BASE-ALPHA-OMEGA-01":("speaker","κύριος, ὁ θεός (Lord God)","speakerEvidence","explicit_speech_attribution_in_verse"),
+    "ATT-BASE-PANTOKRATOR-01":("speaker","κύριος, ὁ θεός (Lord God)","speakerEvidence","explicit_speech_attribution_in_verse"),
+    "ATT-BASE-ALPHA-OMEGA-02":("speaker","the one seated on throne","speakerEvidence","narrative_speaker_introduced_in_Revelation_21_5"),
+    "ATT-EXT-ARCHE-TELOS-01":("speaker","the one seated upon throne, introduced at Revelation 21:5","speakerCue","narrator explicit at 21:5, continuous statement"),
+    "ATT-BASE-ALPHA-OMEGA-03":("speaker","speaker inferred in immediate context; explicit I Jesus in 22:16","speakerEvidence","contextual_inference_with_intervening_angelic_speech"),
+    "ATT-EXT-ARCHE-TELOS-02":("speaker","speaker in Rev22:12–13 inferred contextually; 22:16 explicit I Jesus","speakerCue","direct verse 13 not independently named; note angel interleaving"),
+}
 # The original reviewed seeds are a required minimum, not a cap on future work.
 # Additional claims must pass the same foreign-key, editorial and publication gates.
 ALLOWED_CLAIM_TYPES = {
@@ -177,6 +194,8 @@ ALLOWED_RELATION_TYPES = {
     "REQUIRES_INDEPENDENT_ATTESTATION",
     "CONTRASTS_GRAMMATICAL_FORM",
     "SPECIFIES_SPEECH_AGENT",
+    "CONTRASTS_SPEAKER_EVIDENCE",
+    "CONTRASTS_PRINTED_EDITION",
 }
 # These four editorial comparisons must not silently disappear in later waves.
 REQUIRED_SEMANTIC_RELATIONS = {
@@ -242,6 +261,10 @@ REQUIRED_SEMANTIC_RELATIONS = {
         "CLM-ISA7-14-CHILD-NAMING", "CLM-MATT1-23-IMMANUEL-GLOSS",
         "REQUIRES_INDEPENDENT_ATTESTATION"
     ),
+    "REL-REV-1-21-SPEAKER": ("CLM-REV1-8-LORD-GOD-ALPHA","CLM-REV21-6-THRONE-SPEAKER","CONTRASTS_SPEAKER_EVIDENCE"),
+    "REL-REV-21-22-SPEAKER": ("CLM-REV21-6-THRONE-SPEAKER","CLM-REV22-13-CHRISTOLOGICAL-INFERENCE","CONTRASTS_SPEAKER_EVIDENCE"),
+    "REL-REV-1-22-TITLE-CAUTION": ("CLM-REV1-8-LORD-GOD-ALPHA","CLM-REV22-13-CHRISTOLOGICAL-INFERENCE","LIMITS_INFERENCE"),
+    "REL-REV-1-TR-PRINTED": ("CLM-REV1-8-LORD-GOD-ALPHA","CLM-REV1-8-SBL-TR-EXPANSION","CONTRASTS_PRINTED_EDITION"),
 }
 CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-EX3-15-DIVINE-NAME": {"ATT-BASE-YHWH-01"},
@@ -274,6 +297,10 @@ CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-ISA8-8-IMMANUEL-ADDRESS": {"ATT-BASE-IMMANUEL-03"},
     "CLM-ISA8-10-DIVINE-PRESENCE": {"ATT-BASE-IMMANUEL-04"},
     "CLM-MATT1-23-IMMANUEL-GLOSS": {"ATT-BASE-IMMANUEL-05"},
+    "CLM-REV1-8-LORD-GOD-ALPHA":{"ATT-BASE-ALPHA-OMEGA-01","ATT-BASE-PANTOKRATOR-01"},
+    "CLM-REV21-6-THRONE-SPEAKER":{"ATT-BASE-ALPHA-OMEGA-02","ATT-EXT-ARCHE-TELOS-01"},
+    "CLM-REV22-13-CHRISTOLOGICAL-INFERENCE":{"ATT-BASE-ALPHA-OMEGA-03","ATT-EXT-ARCHE-TELOS-02"},
+    "CLM-REV1-8-SBL-TR-EXPANSION":{"ATT-BASE-ALPHA-OMEGA-01"},
 }
 
 
@@ -344,6 +371,12 @@ def validate_provenance(
                     continue
                 seen.add(aid)
                 att_by_id[aid] = obs
+                if aid in REV_SPEAKER_CONTROLS:
+                    sk,sv,ek,ev=REV_SPEAKER_CONTROLS[aid]
+                    if obs.get(sk)!=sv or obs.get(ek)!=ev:
+                        errors.append(f"provenance: {aid} Revelation speaker evidence conflated")
+                    if obs.get("surface") not in {"τὸ Ἄλφα καὶ τὸ Ὦ","ὁ παντοκράτωρ","ἡ ἀρχὴ καὶ τὸ τέλος"}:
+                        errors.append(f"provenance: {aid} Revelation printed title changed")
                 if aid in IMMANUEL_ROLE_CONTROLS:
                     want_act, want_named = IMMANUEL_ROLE_CONTROLS[aid]
                     if obs.get("surface") != IMMANUEL_PRINTED_SURFACES[aid]:
@@ -455,6 +488,21 @@ def validate_provenance(
         errors.append("provenance: required Rock contrast claim boundary missing")
     if not REQUIRED_IMMANUEL_CLAIMS.issubset(claim_map):
         errors.append("provenance: required Immanuel textual role claims missing")
+    if not REQUIRED_REVELATION_CLAIMS.issubset(claim_map):
+        errors.append("provenance: required Revelation speaker/edition claim missing")
+    for cid,level,review in (
+        ("CLM-REV1-8-LORD-GOD-ALPHA","EXPLICIT_SAME_VERSE",False),
+        ("CLM-REV21-6-THRONE-SPEAKER","EXPLICIT_PRIOR_NARRATOR_CUE",False),
+        ("CLM-REV22-13-CHRISTOLOGICAL-INFERENCE","CONTEXT_INFERRED_NOT_NAMED_AT_VERSE_13",True),
+        ("CLM-REV1-8-SBL-TR-EXPANSION","PRINTED_VARIANT_NOT_NEW_SPEAKER",False)):
+        r=claim_map.get(cid,{})
+        if r.get("speakerEvidenceLevel")!=level or r.get("requiresIndependentSpeakerReview") is not review:
+            errors.append(f"provenance: {cid} speaker evidence tier promoted")
+    if not {"SRC-SBLGNT-DIGITAL-NT","SRC-TR1550-REV18","SRC-NET-REV1-8"}.issubset(
+        set(claim_map.get("CLM-REV1-8-SBL-TR-EXPANSION",{}).get("sourceIds",[]))):
+        errors.append("provenance: Revelation printed edition comparison lost direct sources")
+    if "SRC-TABB-REVELATION22" not in claim_map.get("CLM-REV22-13-CHRISTOLOGICAL-INFERENCE",{}).get("sourceIds",[]):
+        errors.append("provenance: Revelation 22 speaker commentary attribution lost")
     rock_statement = claim_map.get("CLM-DEUT32-31-ROCK-CONTRAST", {}).get("statement","")
     if not isinstance(rock_statement, str) or "32:30" not in rock_statement:
         errors.append("provenance: Deuteronomy 32:30 pronoun antecedent caution lost")
@@ -553,8 +601,8 @@ def main() -> int:
         for p in problems:
             print("FAIL: " + p, file=sys.stderr)
         return 1
-    print("PASS: 105 attestation IDs / 4 editions; 26 provisional claims, "
-          "15 typed relations, 5 Immanuel role/edition guards and publication HOLD gates")
+    print("PASS: 105 attestation IDs / 4 editions; 30 provisional claims, "
+          "19 typed relations, 6 Revelation speaker anchors and all publication HOLD gates")
     return 0
 
 

@@ -525,5 +525,95 @@ class ProvenanceGraphTests(unittest.TestCase):
         self.assertTrue(any("verified pinned Greek passage URL changed" in e for e in self.check(baseline=d)))
 
 
+    def test_revelation_five_loci_claims_keep_edition_speaker_tiers(self) -> None:
+        expected={
+          "CLM-REV1-8-LORD-GOD-ALPHA":({"ATT-BASE-ALPHA-OMEGA-01","ATT-BASE-PANTOKRATOR-01"},"EXPLICIT_SAME_VERSE"),
+          "CLM-REV21-6-THRONE-SPEAKER":({"ATT-BASE-ALPHA-OMEGA-02","ATT-EXT-ARCHE-TELOS-01"},"EXPLICIT_PRIOR_NARRATOR_CUE"),
+          "CLM-REV22-13-CHRISTOLOGICAL-INFERENCE":({"ATT-BASE-ALPHA-OMEGA-03","ATT-EXT-ARCHE-TELOS-02"},"CONTEXT_INFERRED_NOT_NAMED_AT_VERSE_13"),
+          "CLM-REV1-8-SBL-TR-EXPANSION":({"ATT-BASE-ALPHA-OMEGA-01"},"PRINTED_VARIANT_NOT_NEW_SPEAKER"),
+        }
+        for cid,(att,tier) in expected.items():
+            row=next(x for x in self.claims["records"] if x["claimId"]==cid)
+            self.assertEqual(att,set(row["attestationIds"]))
+            self.assertEqual(tier,row["speakerEvidenceLevel"])
+            self.assertEqual("BLOCKED",row["publicationState"])
+
+    def test_revelation_1_8_cannot_substitute_jesus_as_explicit_name(self) -> None:
+        d,o=self.mutate("alpha-omega","baseline",0)
+        o["speaker"]="I Jesus in Rev1:8"
+        self.assertTrue(any("Revelation speaker evidence conflated" in e for e in self.check(baseline=d)))
+
+    def test_revelation_pantokrator_speech_attribution_cannot_disappear(self) -> None:
+        d,o=self.mutate("pantokrator","baseline",0)
+        o["speakerEvidence"]="inferred_from_Rev22"
+        self.assertTrue(any("Revelation speaker evidence conflated" in e for e in self.check(baseline=d)))
+
+    def test_revelation_21_6_inherited_throne_speaker_not_jesus_direct(self) -> None:
+        d,o=self.mutate("alpha-omega","baseline",1)
+        o["speakerEvidence"]="explicit I Jesus in Rev21:6"
+        self.assertTrue(any("Revelation speaker evidence conflated" in e for e in self.check(baseline=d)))
+
+    def test_revelation_21_6_beginning_end_throne_link_not_lost(self) -> None:
+        d,o=self.mutate("arche-telos","extension",0)
+        o["speaker"]="speaker inferred contextually"
+        self.assertTrue(any("Revelation speaker evidence conflated" in e for e in self.check(extension=d)))
+
+    def test_revelation_22_13_jesus_not_named_directly_in_verse(self) -> None:
+        d,o=self.mutate("alpha-omega","baseline",2)
+        o["speakerEvidence"]="explicit I Jesus in same verse"
+        self.assertTrue(any("Revelation speaker evidence conflated" in e for e in self.check(baseline=d)))
+
+    def test_revelation_22_13_arche_telos_interleaved_voices_not_removed(self) -> None:
+        d,o=self.mutate("arche-telos","extension",1)
+        o["speakerCue"]="unambiguous single speaker whole book"
+        self.assertTrue(any("Revelation speaker evidence conflated" in e for e in self.check(extension=d)))
+
+    def test_revelation_explicit_claim_cannot_become_context_inferred(self) -> None:
+        d=copy.deepcopy(self.claims)
+        row=next(x for x in d["records"] if x["claimId"]=="CLM-REV1-8-LORD-GOD-ALPHA")
+        row["speakerEvidenceLevel"]="CONTEXT_INFERRED_NOT_NAMED_AT_VERSE_13"
+        self.assertTrue(any("speaker evidence tier promoted" in e for e in self.check(claims=d)))
+
+    def test_revelation_22_13_claim_must_retain_review_hold(self) -> None:
+        d=copy.deepcopy(self.claims)
+        row=next(x for x in d["records"] if x["claimId"]=="CLM-REV22-13-CHRISTOLOGICAL-INFERENCE")
+        row["requiresIndependentSpeakerReview"]=False
+        self.assertTrue(any("speaker evidence tier promoted" in e for e in self.check(claims=d)))
+
+    def test_revelation_21_speaker_claim_cannot_be_deleted(self) -> None:
+        d=copy.deepcopy(self.claims)
+        d["records"]=[x for x in d["records"] if x["claimId"]!="CLM-REV21-6-THRONE-SPEAKER"]
+        self.assertTrue(any("required Revelation speaker/edition claim missing" in e for e in self.check(claims=d)))
+
+    def test_revelation_22_claim_cannot_inherit_revelation_1_witness(self) -> None:
+        d=copy.deepcopy(self.claims)
+        row=next(x for x in d["records"] if x["claimId"]=="CLM-REV22-13-CHRISTOLOGICAL-INFERENCE")
+        row["attestationIds"]=["ATT-BASE-ALPHA-OMEGA-01","ATT-EXT-ARCHE-TELOS-02"]
+        self.assertTrue(any("lost its independently reviewed text witnesses" in e for e in self.check(claims=d)))
+
+    def test_revelation_semantic_boundary_cannot_be_renamed_as_identity(self) -> None:
+        d=copy.deepcopy(self.claims)
+        row=next(x for x in d["semanticRelations"] if x["relationId"]=="REL-REV-21-22-SPEAKER")
+        row["relationType"]="CONTRASTS_REFERENT"
+        self.assertTrue(any("required semantic boundary" in e for e in self.check(claims=d)))
+
+    def test_revelation_1_8_variant_requires_both_edition_sources(self) -> None:
+        d=copy.deepcopy(self.claims)
+        row=next(x for x in d["records"] if x["claimId"]=="CLM-REV1-8-SBL-TR-EXPANSION")
+        row["sourceIds"]=["SRC-SBLGNT-DIGITAL-NT"]
+        self.assertTrue(any("Revelation printed edition comparison lost direct sources" in e for e in self.check(claims=d)))
+
+    def test_revelation_22_commentary_not_silently_unattributed(self) -> None:
+        d=copy.deepcopy(self.claims)
+        row=next(x for x in d["records"] if x["claimId"]=="CLM-REV22-13-CHRISTOLOGICAL-INFERENCE")
+        row["sourceIds"].remove("SRC-TABB-REVELATION22")
+        self.assertTrue(any("Revelation 22 speaker commentary attribution lost" in e for e in self.check(claims=d)))
+
+    def test_revelation_pinned_22_sblgnt_url_not_silent_edition_switch(self) -> None:
+        d,o=self.mutate("alpha-omega","baseline",2)
+        o["sourceUrl"]="https://www.biblegateway.com/passage/?search=Revelation+22&version=TR1550"
+        self.assertTrue(any("verified pinned Greek passage URL changed" in e for e in self.check(baseline=d)))
+
+
 if __name__ == "__main__":
     unittest.main()

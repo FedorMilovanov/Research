@@ -386,6 +386,8 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-TMSJ-BARRICK-TRANSLATION-2024": "ATTRIBUTED_BIBLICAL_TRANSLATION_NEHEMIAH8_2024",
     "SRC-TMSJ-CHOU-DANIEL-2024": "ATTRIBUTED_DANIEL7_CHRISTOLOGY_JOURNAL_CATALOG_2024",
     "SRC-VT-LIEBERMANN-JEREMIAH-2023": "ATTRIBUTED_JEREMIAH_DAVIDIC_NAME_TEXTUAL_VARIANTS_2023",
+    "SRC-NET-REV1-8": "ATTRIBUTED_TRANSLATION_CRITICAL_NOTES",
+    "SRC-TABB-REVELATION22": "ATTRIBUTED_COMMENTARY_REVELATION_SPEAKER_INFERENCE",
 }
 
 
@@ -439,6 +441,12 @@ def validate_source_access(sources: dict) -> list[str]:
             errors.append(f"{prefix}: falsely claims edition collation")
         if source.get("rightsState") == "PUBLICATION_ELIGIBLE" and rid not in {"SRC-VANWOLDE-2021", "SRC-TR1550-REV18", "SRC-SBLGNT-CCBY-LICENSE", "SRC-CAMBRIDGE-GOD-PRONOUNS", "SRC-SUCHARD-ELOHIM-2025"}:
             errors.append(f"{prefix}: evidence of a source-level license missing")
+        if rid in {"SRC-NET-REV1-8","SRC-TABB-REVELATION22"}:
+            if (source.get("rightsState") != "PERMISSION_REQUIRED"
+                or source.get("accessState") != "PARTIAL_OBJECT"
+                or source.get("publicationState") != "BLOCKED"
+                or source.get("criticalEditionCollated") is not False):
+                errors.append(f"{prefix}: Revelation secondary source falsely promoted")
         if rid == "SRC-TR1550-REV18":
             if source.get("rightsState") != "PUBLICATION_ELIGIBLE" or "Public Domain" not in str(source.get("license", "")):
                 errors.append(f"{prefix}: source-specific public-domain TR1550 status changed")

@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 46,
+    "sourceRecords": 48,
     "approvedForProduct": 0
   },
   "records": [
@@ -1139,6 +1139,50 @@
       "accessState": "PARTIAL_OBJECT",
       "locatorState": "EXACT_LOCATOR_VERIFIED",
       "licenseScope": "Aarhus accepted manuscript permits private study/research and linking to URL; copyright and further republication restrictions apply. No full article redistribution or Product reproduction permission."
+    },
+    {
+      "id": "SRC-NET-REV1-8",
+      "sourceRole": "ATTRIBUTED_TRANSLATION_CRITICAL_NOTES",
+      "title": "NET Bible editorial notes to Revelation 1:8 on longer Alpha–Omega readings",
+      "creator": "NET Bible translation and editorial team",
+      "url": "https://classic.net.bible.org/verse.php?book=Rev&chapter=1&tab=commentaries&verse=8",
+      "objectType": "attributed_online_secondary_commentary_not_ancient_manuscript",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "sourceObjectState": "Web note inspected for textual variants, manuscript identifiers and an explanatory opinion; none of the actual ancient manuscripts or full critical edition apparatus was collated here.",
+      "supportedUse": "Attribute NET discussion of absent/added ἀρχὴ καὶ τέλος in Rev1:8 and witness groups as its editorial analysis, not independent project verification.",
+      "forbiddenUse": "Treat translator notes as manuscript inspection, prove autograph, or republish copyrighted commentary.",
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "publicationState": "BLOCKED",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "SRC-TABB-REVELATION22",
+      "sourceRole": "ATTRIBUTED_COMMENTARY_REVELATION_SPEAKER_INFERENCE",
+      "title": "Brian J. Tabb, Revelation (TGC Bible Commentary), conclusion Revelation 22:6–21",
+      "creator": "Brian J. Tabb",
+      "url": "https://www.thegospelcoalition.org/commentary/Revelation/",
+      "objectType": "attributed_online_secondary_commentary_not_ancient_manuscript",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "sourceObjectState": "Relevant web section inspected: Tabb identifies multiple speakers in Revelation 22 and Christ as principal speaker in 22:12–16; he explicitly notes 'I Jesus' in 22:16, not v13.",
+      "supportedUse": "Attribute a reasoned christological identification of Rev22:13 based on discourse and nearby 22:12,16.",
+      "forbiddenUse": "Call the contextual identification an explicit speaker name inside v13 or infer universal scholarly consensus.",
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "publicationState": "BLOCKED",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
     }
   ],
   "auditRevision": "NG02_JEREMIAH_REFERENT_AND_LIEBERMANN_PARTIAL_SOURCE_20261107"

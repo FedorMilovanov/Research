@@ -1040,5 +1040,24 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("Liebermann issue/online year" in e for e in validate_source_access(d)))
 
 
+    def test_revelation_net_note_must_not_claim_manuscript_collation(self) -> None:
+        d=copy.deepcopy(self.sources)
+        row=next(x for x in d["records"] if x["id"]=="SRC-NET-REV1-8")
+        row["criticalEditionCollated"]=True
+        self.assertTrue(any("falsely claims edition collation" in e for e in validate_source_access(d)))
+
+    def test_revelation_tabb_commentary_rights_not_waived(self) -> None:
+        d=copy.deepcopy(self.sources)
+        row=next(x for x in d["records"] if x["id"]=="SRC-TABB-REVELATION22")
+        row["rightsState"]="PUBLICATION_ELIGIBLE"
+        self.assertTrue(any("Revelation secondary source falsely promoted" in e for e in validate_source_access(d)))
+
+    def test_revelation_edition_note_not_mislabeled_as_primary_text(self) -> None:
+        d=copy.deepcopy(self.sources)
+        row=next(x for x in d["records"] if x["id"]=="SRC-NET-REV1-8")
+        row["sourceRole"]="GREEK_TEXT_SURFACE_ONLY"
+        self.assertTrue(any("source relevance/role changed" in e for e in validate_source_access(d)))
+
+
 if __name__ == "__main__":
     unittest.main()
