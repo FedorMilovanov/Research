@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 1,
+  "corpusId": "NAMES_OF_GOD_CLAIM_LEVEL_EVIDENCE",
+  "createdAt": "2026-11-07",
+  "scope": "Initial 10 curated cross-verse claims, not a complete enumeration of 105 attestation-level semantic assertions",
+  "editorialPolicy": "Never infer Product approval from link completeness, never replace a cited verse or alternative theory silently; new claims require independent review.",
+  "records": [
+    {
+      "claimId": "CLM-EX3-15-DIVINE-NAME",
+      "claimType": "DIRECT_TEXTUAL_NAMING",
+      "statement": "In Exodus 3:15 YHWH is presented in divine first-person discourse together with the explicit formula 'this is my name'.",
+      "attestationIds": [
+        "ATT-BASE-YHWH-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition witness check",
+        "source rights",
+        "editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-IS43-10-NEGATED-EL",
+      "claimType": "NEGATIVE_REFERENT_CONTROL",
+      "statement": "Isaiah 43:10 uses אל in a clause that denies any other god being formed, not to say YHWH himself is a formed deity.",
+      "attestationIds": [
+        "ATT-BASE-EL-04"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition witness check",
+        "source rights",
+        "editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-IS43-12-YHWH-EL",
+      "claimType": "POSITIVE_REFERENT_CONTROL",
+      "statement": "Isaiah 43:12 uses אל in a positive YHWH first-person identification, different in reference from 43:10.",
+      "attestationIds": [
+        "ATT-BASE-EL-05"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition witness check",
+        "source rights",
+        "editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-GEN22-14-PLACE-NAME",
+      "claimType": "NAMED_OBJECT_CONTROL",
+      "statement": "Abraham names the place in Genesis 22:14; the altar he built earlier is not the explicitly named object of 22:14.",
+      "attestationIds": [
+        "ATT-BASE-YIREH-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition witness check",
+        "source rights",
+        "editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-EX17-15-ALTAR-MT-LXX",
+      "claimType": "EDITED_TEXT_DIFFERENCE",
+      "statement": "Exodus 17:15 names Moses' altar; the MT form יהוה נסי and Rahlfs-Hanhart Greek Κυριός μου καταφυγή are not identical word-for-word readings.",
+      "attestationIds": [
+        "ATT-BASE-NISSI-01",
+        "ATT-BASE-NISSI-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-RAHLFS-EXODUS17",
+        "SRC-NET-EXODUS17"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition witness check",
+        "source rights",
+        "editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-JUD6-23-24-PEACE-ALTAR",
+      "claimType": "NARRATIVE_SPEECH_VS_NAMING",
+      "statement": "Judges 6:23 has YHWH speaking peace, 6:24 has Gideon naming an altar; both refer to peace but have distinct speech acts.",
+      "attestationIds": [
+        "ATT-BASE-SHALOM-01",
+        "ATT-BASE-SHALOM-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition witness check",
+        "source rights",
+        "editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-JOHN9-9-HUMAN-EGO-EIMI",
+      "claimType": "HUMAN_NEGATIVE_CONTROL",
+      "statement": "In John 9:9 the formerly blind man uses the Greek expression ego eimi, demonstrating the form is not inherently a proper divine name.",
+      "attestationIds": [
+        "ATT-BASE-EGO-EIMI-03"
+      ],
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition witness check",
+        "source rights",
+        "editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-LXX-EX3-JOHN8-DIFFERENT-CLAUSES",
+      "claimType": "CANONICAL_INTERTEXT_BOUNDARY",
+      "statement": "The printed Rahlfs-Hanhart Exodus 3:14 Greek self-revelation has an extra ho on phrase absent from the immediate printed SBLGNT John 8:58 clause; intertextual theology requires argument rather than an asserted verbatim quote.",
+      "attestationIds": [
+        "ATT-BASE-EHYEH-03",
+        "ATT-BASE-EGO-EIMI-02"
+      ],
+      "sourceIds": [
+        "SRC-RAHLFS-EXODUS3",
+        "SRC-SBLGNT-DIGITAL-NT"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition witness check",
+        "source rights",
+        "editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-ABBA-THREE-PRAYER-SUBJECTS",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "Mark 14:36 presents Jesus praying; Romans 8:15 has believers crying; Galatians 4:6 describes the Spirit of the Son crying despite the shared Abba ho pater phrase.",
+      "attestationIds": [
+        "ATT-BASE-ABBA-01",
+        "ATT-BASE-ABBA-02",
+        "ATT-BASE-ABBA-03"
+      ],
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition witness check",
+        "source rights",
+        "editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-YHWH-HISTORICAL-PRONUNCIATION",
+      "claimType": "ATTRIBUTED_HISTORICAL_RECONSTRUCTION",
+      "statement": "The reconstruction Yahweh is supported by multiple interpretive lines but is NOT directly proved as audible Mosaic-period pronunciation by the pointed digital MT.",
+      "attestationIds": [
+        "ATT-BASE-YHWH-01",
+        "ATT-BASE-YHWH-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-ROESEL-2007",
+        "SRC-TMSJ-VALDIZAN-EX3-2024"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "AUTHOR_ARGUMENT_NOT_CLOSED",
+      "reviewNeeded": [
+        "original pronunciations from dated ancient witnesses",
+        "independent sound/phonology scholarship",
+        "manuscript reading traditions and opposing views"
+      ]
+    }
+  ]
+}
