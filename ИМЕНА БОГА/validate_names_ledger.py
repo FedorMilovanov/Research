@@ -18,6 +18,7 @@ EXTENSION = Path(__file__).resolve().parent / "data" / "names_extension_ledger_v
 SOURCES = Path(__file__).resolve().parent / "data" / "source_access_register_v1.json"
 ATTESTATION_CONTRACT = Path(__file__).resolve().parent / "data" / "attestation_contract_v1.json"
 MEMORIAL_CONTRACT = Path(__file__).resolve().parent / "data" / "memorial_attestation_contract_v1.json"
+SPEECH_INTERTEXT_CONTRACT = Path(__file__).resolve().parent / "data" / "speech_intertext_contract_v1.json"
 ALLOWED_CLASSES = {"A1", "A2", "A3", "B1", "C", "D"}
 ALLOWED_ACCESS = {"FULL_OBJECT_VERIFIED", "PARTIAL_OBJECT", "CATALOG_ONLY", "LINK_ONLY", "NOT_ACQUIRED"}
 ALLOWED_LOCATOR = {"EXACT_LOCATOR_VERIFIED", "COARSE_LOCATOR_ONLY", "LOCATOR_MISSING"}
@@ -370,6 +371,10 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-NET-EXODUS17": "ATTRIBUTED_TRANSLATION_TEXTUAL_HYPOTHESES",
     "SRC-NET-GENESIS22": "ATTRIBUTED_TRANSLATION_GRAMMAR_ALTERNATIVES",
     "SRC-SBLGNT-JOHN10": "CHRISTOLOGICAL_INTERTEXTUAL_SURFACE",
+    "SRC-SBLGNT-ABBA-PAUL-MARK": "GREEK_ABBA_DIRECT_PRAYER_AND_PAULINE_ADOPTION",
+    "SRC-SBLGNT-JOHN-EGO": "GREEK_EGO_EIMI_WITH_HUMAN_NEGATIVE_CONTROL",
+    "SRC-RAHLFS-EXODUS3": "PUBLISHER_GREEK_LXX_EXODUS3_SELF_REVELATION",
+    "SRC-BARR-ABBA-1988": "ATTRIBUTED_ABBA_LEXICAL_CRITIQUE_CATALOG_ONLY",
 }
 
 
@@ -435,6 +440,29 @@ def validate_source_access(sources: dict) -> list[str]:
             errors.append(f"{prefix}: Aramaic text cannot be promoted to fully collated Hebrew or manuscript")
         if rid == "SRC-SBL-INTRO" and "manuscript collation" not in str(source.get("forbiddenUse", "")).lower():
             errors.append(f"{prefix}: SBLGNT introduction must remain non-manuscript provenance")
+        if rid in {"SRC-SBLGNT-ABBA-PAUL-MARK", "SRC-SBLGNT-JOHN-EGO"}:
+            if (source.get("rightsState") != "RIGHTS_UNKNOWN"
+                or source.get("criticalEditionCollated") is not False):
+                errors.append(f"{prefix}: SBLGNT digital host rights or apparatus falsely approved")
+        if rid == "SRC-SBLGNT-ABBA-PAUL-MARK":
+            if not all(t in str(source.get("supportedUse", "")) for t in (
+                "κράζομεν", "κρᾶζον", "Mark"
+            )):
+                errors.append(f"{prefix}: Abba subjects Mark, believers and Spirit were conflated")
+        if rid == "SRC-SBLGNT-JOHN-EGO":
+            if "John9:9" not in str(source.get("supportedUse", "")):
+                errors.append(f"{prefix}: nondivine John9:9 Greek usage suppressed")
+        if rid == "SRC-RAHLFS-EXODUS3":
+            if (source.get("rightsState") != "PERMISSION_REQUIRED"
+                or source.get("accessState") != "PARTIAL_OBJECT"
+                or "ὁ ὤν" not in str(source.get("supportedUse", ""))):
+                errors.append(f"{prefix}: publisher LXX full divine self-declaration and license lost")
+        if rid == "SRC-BARR-ABBA-1988":
+            if ((source.get("accessState"), source.get("locatorState"))
+                 != ("CATALOG_ONLY", "COARSE_LOCATOR_ONLY")
+                or source.get("rightsState") != "PERMISSION_REQUIRED"
+                or "not" not in str(source.get("forbiddenUse", "")).lower()):
+                errors.append(f"{prefix}: Barr paywalled full article cannot be promoted from catalog")
         if rid == "SRC-RAHLFS-EXODUS17":
             if (source.get("rightsState") != "PERMISSION_REQUIRED" or
                 source.get("accessState") != "PARTIAL_OBJECT" or
@@ -1094,6 +1122,136 @@ def validate_memorial_attestations(baseline: dict, contract: dict) -> list[str]:
     return errors
 
 
+SPEECH_INTERTEXT_IDS = {"abba", "ego-eimi", "ehyeh"}
+SPEECH_INTERTEXT_LOCK_FIELDS = (
+    "locusId", "verse", "surface", "language", "edition", "speaker",
+    "referent", "speechAct", "sourceUrl", "checkState",
+    "criticalEditionStatus", "rightsState", "publicationState"
+)
+
+
+def validate_speech_intertext(baseline: dict, contract: dict) -> list[str]:
+    """Guard 12 speech-context witnesses; no intrinsic proper-name inference."""
+    errors: list[str] = []
+    if (not isinstance(contract, dict) or contract.get("schemaVersion") != 1
+        or contract.get("corpusId") != "NAMES_ABBA_EGO_EIMI_EHYEH_INTERTEXT_V1"):
+        return ["speech-intertext: invalid contract and version"]
+    if set(contract.get("baselineIds", [])) != SPEECH_INTERTEXT_IDS:
+        errors.append("speech-intertext: baseline IDs changed")
+    if tuple(contract.get("lockedFields", [])) != SPEECH_INTERTEXT_LOCK_FIELDS:
+        errors.append("speech-intertext: required source/speaker fields removed")
+    if contract.get("counts") != {"records": 3, "occurrences": 12, "publicationEligible": 0}:
+        errors.append("speech-intertext: reviewed occurrence counts or Product block changed")
+    snapshots = contract.get("lockedAttestations", [])
+    if not isinstance(snapshots, list):
+        return errors + ["speech-intertext: expected snapshots absent"]
+    expected: dict[str, dict] = {}
+    for rec in snapshots:
+        if not isinstance(rec, dict):
+            errors.append("speech-intertext: invalid snapshot object")
+            continue
+        loc = rec.get("locusId")
+        if not isinstance(loc, str) or not loc or loc in expected:
+            errors.append(f"speech-intertext: missing/duplicate snapshot {loc}")
+            continue
+        if rec.get("baselineId") not in SPEECH_INTERTEXT_IDS:
+            errors.append(f"speech-intertext: unreviewed snapshot baseline {loc}")
+        expected[loc] = rec
+    records = baseline.get("records", [])
+    by_id = {r.get("id"): r for r in records if isinstance(r, dict)} if isinstance(records, list) else {}
+    actual: dict[str, dict] = {}
+    counters: dict[str, int] = {}
+    for rid in SPEECH_INTERTEXT_IDS:
+        row = by_id.get(rid, {})
+        arr = row.get("attestations", [])
+        if not isinstance(arr, list):
+            errors.append(f"speech-intertext: non-list attestations {rid}")
+            continue
+        counters[rid] = len(arr)
+        if not row.get("contextualAssertion"):
+            errors.append(f"speech-intertext: missing editorial boundary {rid}")
+        for obs in arr:
+            if not isinstance(obs, dict):
+                errors.append(f"speech-intertext: non-object observation in {rid}")
+                continue
+            loc = obs.get("locusId")
+            if not isinstance(loc, str) or not loc or loc in actual:
+                errors.append(f"speech-intertext: missing/duplicate locusId {loc}")
+                continue
+            actual[loc] = obs
+            ref = expected.get(loc)
+            if ref is None or ref.get("baselineId") != rid:
+                errors.append(f"speech-intertext: unreviewed witness {rid}/{loc}")
+                continue
+            for key in SPEECH_INTERTEXT_LOCK_FIELDS:
+                if key not in obs or key not in ref or obs.get(key) != ref.get(key):
+                    errors.append(f"speech-intertext: {rid}/{loc} changed {key}")
+            if obs.get("checkState") != "DIGITAL_VERSE_SURFACE_CHECKED":
+                errors.append(f"speech-intertext: {rid}/{loc} unverified source falsely marked")
+            if (obs.get("criticalEditionStatus") != "NOT_COLLATED"
+                or obs.get("publicationState") != "BLOCKED"):
+                errors.append(f"speech-intertext: {rid}/{loc} unauthorized publication/critical promotion")
+            surface = obs.get("surface")
+            if isinstance(surface, str):
+                errors.extend(unicode_surface_issues(f"speech-intertext/{loc}", surface))
+                if obs.get("language") == "greek" and not GREEK.search(surface):
+                    errors.append(f"speech-intertext: {loc} has no Greek script")
+                if obs.get("language") == "hebrew" and not HEBREW.search(surface):
+                    errors.append(f"speech-intertext: {loc} has no Hebrew script")
+            else:
+                errors.append(f"speech-intertext: {loc} lacks original written form")
+            if not URL.match(str(obs.get("sourceUrl", ""))):
+                errors.append(f"speech-intertext: {loc} missing edition URL")
+    if (len(actual), len(expected), set(actual) == set(expected)) != (12, 12, True):
+        errors.append("speech-intertext: 12 unique locked verse-loci required")
+    if counters != {"abba": 3, "ego-eimi": 6, "ehyeh": 3}:
+        errors.append("speech-intertext: per-ID counts changed")
+    meta = baseline.get("auditProtocol", {}).get("abbaEgoIntertext", {})
+    if (set(meta.get("baselineIds", [])) != SPEECH_INTERTEXT_IDS
+        or meta.get("totalAttestations") != 12
+        or meta.get("negativeControl") != "ego-john9-human"
+        or meta.get("criticalCollationStatus") != "NOT_COLLATED"
+        or meta.get("publicationEligible") != 0):
+        errors.append("speech-intertext: audit and human lexical control drifted")
+    def item(loc: str) -> dict:
+        return actual.get(loc, {})
+    abba_forms = (
+        item("abba-mark14-prayer").get("surface"),
+        item("abba-rom8-adoption").get("surface"),
+        item("abba-gal4-spirit").get("surface")
+    )
+    if abba_forms != ("Αββα ὁ πατήρ",)*3:
+        errors.append("speech-intertext: SBLGNT Abba original Greek forms changed")
+    if (item("abba-mark14-prayer").get("agentOfCry") != "Jesus"
+        or "κράζομεν" not in str(item("abba-rom8-adoption").get("agentOfCry", ""))
+        or "κρᾶζον" not in str(item("abba-gal4-spirit").get("agentOfCry", ""))):
+        errors.append("speech-intertext: Jesus/believers/Spirit crying agents collapsed")
+    if any(item(loc).get("languageOrigin") != "ARAMAIC_WORD_GREEK_SCRIPT" for loc in (
+        "abba-mark14-prayer", "abba-rom8-adoption", "abba-gal4-spirit"
+    )):
+        errors.append("speech-intertext: Abba Greek script versus Aramaic lexical origin confused")
+    orth = by_id.get("abba", {}).get("printedOrthography", {})
+    if ((orth.get("sblgnt"), orth.get("thgnt"), orth.get("nestle1904")) !=
+        ("Αββα", "ἀββᾶ", "Ἀββᾶ")):
+        errors.append("speech-intertext: publisher-specific accents and case erased")
+    if (item("ego-john9-human").get("isDivineDesignation") is not False
+        or item("ego-john9-human").get("speaker") != "formerly blind man"
+        or item("ego-john9-human").get("surface") != "Ἐγώ εἰμι"):
+        errors.append("speech-intertext: John 9:9 ordinary human ego eimi control lost")
+    if (item("ego-john8-preabraham").get("surface") != "ἐγὼ εἰμί"
+        or "πρὶν Ἀβραὰμ γενέσθαι" not in str(item("ego-john8-preabraham").get("claimScope", ""))):
+        errors.append("speech-intertext: John 8:58 before-Abraham claim context lost")
+    if (item("ehyeh-ex3-promise").get("surface") != "כִּי-אֶהְיֶה עִמָּךְ"
+        or item("ehyeh-ex3-hebrew").get("surface") != "אֶהְיֶה אֲשֶׁר אֶהְיֶה"):
+        errors.append("speech-intertext: Exodus 3 Hebrew promise/naming distinction lost")
+    if (item("ehyeh-ex3-greek").get("surface") != "Ἐγώ εἰμι ὁ ὤν"
+        or item("ehyeh-ex3-greek").get("greekSecondClause") != "Ὁ ὢν ἀπέσταλκέν με"
+        or item("ehyeh-ex3-greek").get("rightsState") != "PERMISSION_REQUIRED"
+        or item("ehyeh-ex3-greek").get("intertextRelation") != "ALLUSION_POSSIBLE_NOT_IDENTICAL_FULL_QUOTE"):
+        errors.append("speech-intertext: LXX Exodus 3:14 full ὁ ὤν / license / contextual relation erased")
+    return errors
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--ledger", type=Path, default=LEDGER)
@@ -1101,6 +1259,7 @@ def main() -> int:
     parser.add_argument("--sources", type=Path, default=SOURCES)
     parser.add_argument("--attestation-contract", type=Path, default=ATTESTATION_CONTRACT)
     parser.add_argument("--memorial-contract", type=Path, default=MEMORIAL_CONTRACT)
+    parser.add_argument("--speech-contract", type=Path, default=SPEECH_INTERTEXT_CONTRACT)
     args = parser.parse_args()
     try:
         with args.ledger.open("r", encoding="utf-8") as stream:
@@ -1132,11 +1291,18 @@ def main() -> int:
     except (OSError, ValueError) as exc:
         print(f"FAIL: cannot read memorial attestation contract: {exc}", file=sys.stderr)
         return 1
+    try:
+        with args.speech_contract.open("r", encoding="utf-8") as stream:
+            speech_contract = json.load(stream)
+    except (OSError, ValueError) as exc:
+        print(f"FAIL: cannot read speech/intertext contract: {exc}", file=sys.stderr)
+        return 1
     issues = (validate(data) + validate_extension(extension, data) +
               validate_source_access(sources) + validate_apocalyptic(data, extension) +
               validate_prophetic_namings(data) +
               validate_six_title_attestations(data, title_contract) +
-              validate_memorial_attestations(data, memorial_contract))
+              validate_memorial_attestations(data, memorial_contract) +
+              validate_speech_intertext(data, speech_contract))
     if issues:
         for issue in issues:
             print("FAIL:", issue, file=sys.stderr)
