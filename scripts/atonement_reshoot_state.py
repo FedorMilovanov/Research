@@ -888,6 +888,7 @@ SCAN_EXEMPT = {
     "apply_corpus": "писатель: подставляет измеренные числа в корпус; читает и сравнивает — другие; якорь `main`",
     "doc_numbers": "генератор: (регулярка, строка) для документа; сверка результата — в петле apply/check; якорь `diff_state_scan`",
     "apply_doc": "писатель: применяет сгенерированные строки к документу, отказывается при двух якорях; якорь `main`",
+    "refresh_table_91": "писатель: строит таблицу §9.1 исключительно из актуального claimsPerRegistry; отдельная сверка check_table_91 контролирует результат; якорь `apply_doc`",
     "report_not_generated": "служебная фраза отчёта о блоках, которые генератор не создаёт; сравнивает ничего; якорь `main`",
     "main": "разбор флагов и вызов шагов; сверок в теле не определено; корневой якорь `main` — его никто не зовёт",
 }
@@ -1859,6 +1860,44 @@ def doc_numbers(corp: dict, n: dict) -> list:
     ]
 
 
+def refresh_table_91(corp: dict, text: str) -> str:
+    """Rebuild the scoped §9.1 rows from the existing claim-register measurement.
+
+    The original round-61 finalizer is absent. A hand-maintained copy of its
+    numbers drifted whenever new drafts were added. The live producer is the
+    claim register, and this function owns only the seven displayed columns.
+    Refuse absent/duplicate rows instead of inventing a second measurement.
+    """
+    cpr = corp["integrityGate"]["scopeOfMeasurementRules"]["claimsPerRegistry"]
+    by_lan = cpr["сверкаСКарточками"]
+    lines = text.splitlines(keepends=True)
+    start = next((i for i, row in enumerate(lines) if row.startswith("### 9.1 ")), None)
+    if start is None:
+        raise SystemExit("§9.1: cannot find the claim reconciliation chapter")
+    stop = next((i for i in range(start + 1, len(lines))
+                 if lines[i].startswith(("### ", "## "))), len(lines))
+    column_names = ("строк", "покрытоПоФайлу", "файлов", "карточекБезСостояния",
+                    "неОтраженоВКарточке", "терминовКарточкиВнеПрозы",
+                    "ссылокВнеОбходаЛана")
+    totals = [0] * len(column_names)
+    for lan in (*SUBLANES, "корпус"):
+        data = by_lan[lan]
+        vals = [int(data[k]) for k in column_names]
+        totals = [a + b for a, b in zip(totals, vals)]
+        needle = "| `" + lan + "` |"
+        matches = [i for i in range(start, stop) if lines[i].startswith(needle)]
+        if len(matches) != 1:
+            raise SystemExit(f"§9.1: expected one {lan} row, got {len(matches)}")
+        lines[matches[0]] = "| `" + lan + "` | " + " | ".join(str(v) for v in vals) + " |\n"
+    if totals[0] != int(cpr["всего"]) or totals[1] != int(cpr["детально"]["покрытоПоФайлу"]):
+        raise SystemExit("§9.1: claim-register subtotal does not match the corpus")
+    matches = [i for i in range(start, stop) if lines[i].startswith("| **всего** |")]
+    if len(matches) != 1:
+        raise SystemExit(f"§9.1: expected one total row, got {len(matches)}")
+    lines[matches[0]] = "| **всего** | " + " | ".join("**" + str(v) + "**" for v in totals) + " |\n"
+    return "".join(lines)
+
+
 def apply_doc(corp: dict, n: dict) -> str:
     text = DOC.read_text(encoding="utf-8")
     for pat, new in doc_numbers(corp, n):
@@ -1867,12 +1906,12 @@ def apply_doc(corp: dict, n: dict) -> str:
             raise SystemExit(f"якорь {pat!r} нашёл {len(hits)} строк вместо одной — генератор "
                              "остановлен, чтобы не писать в две строки или не пропустить свою")
         text = re.sub(pat, lambda _m, s=new: s, text, count=1, flags=re.M)
-    return text
+    return refresh_table_91(corp, text)
 
 
 def check_table_91(corp: dict, text: str = None) -> list:
-    """Таблицу §9.1 этот скрипт не порождает (её производитель — утраченный финалайзер круга 61),
-    но право её сверить оставляет: каждая ячейка обязана равняться полю реестра.
+    """Таблицу §9.1 переснимает refresh_table_91 по claim-register, а этот
+    независимый разбор проверяет, что каждая ячейка равна полю реестра.
 
     `text` — тот же обход, но по поданному тексту: он нужен ловушке, чтобы посадить расхождение в
     строку, не трогая документ (круг 65, правка 12). Без этой опции сверка была непроверяема:

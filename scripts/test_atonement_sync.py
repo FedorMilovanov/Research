@@ -174,17 +174,24 @@ class ActualSynchronizationTests(unittest.TestCase):
         self.assertEqual(summary["drafts"], self.report["draftCount"] + len(additions))
         self.assertEqual(
             {r["path"] for r in additions},
-            {"ИСКУПЛЕНИЕ/synthesis/drafts/article08_particular_redemption_positive_case.md"},
+            {
+                "ИСКУПЛЕНИЕ/synthesis/drafts/article08_particular_redemption_positive_case.md",
+                "ИСКУПЛЕНИЕ/synthesis/drafts/article09_world_and_propitiation_johannine_case.md",
+            },
         )
 
     def test_post_review_draft_manifest_fails_closed(self):
         additions = self.report.get("postReviewDrafts", [])
-        self.assertEqual(len(additions), 1)
-        for case, replacement in (
-            ("missing-declaration", []),
-            ("incorrect-sha256", [{**additions[0], "sha256": "0" * 64}]),
-            ("publication-authorized", [{**additions[0], "publicationEligible": True}]),
-        ):
+        self.assertEqual(len(additions), 2)
+        cases = [("missing-declaration", additions[:-1])]
+        for i in range(len(additions)):
+            altered_sha = list(additions)
+            altered_sha[i] = {**additions[i], "sha256": "0" * 64}
+            cases.append((f"incorrect-sha256-{i}", altered_sha))
+            altered_publication = list(additions)
+            altered_publication[i] = {**additions[i], "publicationEligible": True}
+            cases.append((f"publication-authorized-{i}", altered_publication))
+        for case, replacement in cases:
             with self.subTest(case=case):
                 bad_report = {**self.report, "postReviewDrafts": replacement}
                 errors, _ = check(ROOT, bad_report, self.control)

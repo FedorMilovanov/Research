@@ -8674,6 +8674,13 @@
       "reviewedAt": "2026-11-07",
       "note": "Пост-базовый черновик статьи 08: новый файл после исторического контролируемого объёма 13 черновиков; цитаты и экзегеза не объявлены подтверждёнными этим включением",
       "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article09_world_and_propitiation_johannine_case.md",
+      "sha256": "44248e4d514ba2c453e8617d527610ccdfaf0ec31fbf65b5bcb0ee79a2d341d0",
+      "reviewedAt": "2026-11-07",
+      "note": "Статья №9/18, положительный анализ Иоанновых текстов о мире и умилостивлении; первичные греческие формы и исторические авторы отделены от вторичных пересказов, FULL_TEXT_HOLD/RIGHTS_HOLD/EVIDENCE_HOLD/PUBLICATION_HOLD сохранены",
+      "publicationEligible": false
     }
   ]
 }
