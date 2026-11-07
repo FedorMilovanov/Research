@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 37,
+    "sourceRecords": 39,
     "approvedForProduct": 0
   },
   "records": [
@@ -663,7 +663,7 @@
     },
     {
       "id": "SRC-SUCHARD-ELOHIM-2025",
-      "title": "Semitic *ʾilāh- and Hebrew אלהים: From plural 'gods' to singular 'God'",
+      "title": "Semitic *ʾilāh- and Hebrew אלהים: From plural ‘gods’ to singular ‘God’",
       "creator": "Benjamin D. Suchard",
       "year": 2025,
       "url": "https://doi.org/10.1177/03090892251332286",
@@ -671,18 +671,22 @@
       "sourceRole": "ATTRIBUTED_SECONDARY_SEMITIC_MORPHOLOGY_HYPOTHESIS",
       "accessState": "PARTIAL_OBJECT",
       "locatorState": "EXACT_LOCATOR_VERIFIED",
-      "rightsState": "PERMISSION_REQUIRED",
-      "sourceObjectState": "Publisher's full HTML and abstract available; initial sections and stated argument read; full article and its cited grammars not collated page by page. Published online May 29 2025.",
-      "supportedUse": "Attribute research that Hebrew Elohim is morphologically plural but syntactically singular in Genesis 1:1 (bara) and has both singular and plural referent uses; source advances *ʾilāh- historical morphology reconstruction.",
-      "forbiddenUse": "Present Suchard reconstruction as universally accepted or infer Trinity or historical polytheism directly from plural suffix.",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "sourceObjectState": "Entire article available as SAGE publisher HTML (not merely abstract); relevant Introduction, core paradigm, notes, publication metadata and publisher CC BY statement independently checked; full cited literature and PDF-version layout not yet independently collated.",
+      "supportedUse": "Attribute Suchard historical-linguistic hypothesis: reconstructed *ʾilāh- broken plural from *ʾil-, singular/plural semantics, Eloah אֱלוֹהַּ in Deut32:15, poetic and later Hebrew distributions; scholarly reconstruction NOT universal consensus",
+      "forbiddenUse": "Treat CC BY license as permission for embedded third-party Bible translations or borrowed visuals; portray hypothesized *ʾilāh- origin as proved philological consensus or as single-word proof of Trinity",
       "evidenceClass": "B1",
       "publicationState": "BLOCKED",
       "criticalEditionCollated": false,
       "holds": [
-        "RIGHTS_HOLD",
-        "PUBLICATION_HOLD",
-        "EVIDENCE_HOLD"
-      ]
+        "EVIDENCE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "publisherFullTextUrl": "https://journals.sagepub.com/doi/full/10.1177/03090892251332286",
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0); © The Author(s) 2025, per publisher Rights and permissions section",
+      "licenseScope": "SUCHARD_ARTICLE_2025_ONLY_NOT_QUOTED_TRANSLATIONS_OR_THIRD_PARTY_REFERENCES",
+      "publisherBibliography": "Journal for the Study of the Old Testament 49(4) (2025), 460–474; published online 2025-05-29; version of record 2025-06-09",
+      "fullTextWebAccessible": true
     },
     {
       "id": "SRC-CAMBRIDGE-GOD-PRONOUNS",
@@ -909,16 +913,63 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ]
+    },
+    {
+      "id": "SRC-JBQ-YAH-2014",
+      "title": "Yah: A Name of God",
+      "creator": "Clifford Hubert Durousseau",
+      "year": 2014,
+      "url": "https://www.jewishbible.org/articles/yah-a-name-of-god/",
+      "objectType": "scholarly_essay_full_publisher_HTML",
+      "sourceRole": "ATTRIBUTED_SECONDARY_YAH_NAME_USAGE_AND_TRANSLATION_HISTORY",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "sourceObjectState": "Publisher Jewish Bible Quarterly Volume 42.1 (Jan–Mar 2014) pp21–26 full HTML body read. Theological/halakhic judgments remain author's argument; referenced source literature not independently collated.",
+      "supportedUse": "Attribute history of Yah abbreviation and transliteration, independently noted Psalm68:5 MT Yah with preposition, Exodus15:2 free Yah and variants among English translations",
+      "forbiddenUse": "Claim author's halakhic assertion is unanimous rabbinic consensus or historical rule without further corroboration; reprint article without rights clearance",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "SRC-NET-PS68",
+      "title": "NET Bible translators' notes for Psalms 68:4 (English) = MT Psalms 68:5",
+      "creator": "NET Bible translation committee",
+      "year": null,
+      "url": "https://classic.net.bible.org/passage.php/xml/xml/passage.php?mode=print&passage=Psa+68%3A4%2C5",
+      "objectType": "copyrighted_translation_textual_notes",
+      "sourceRole": "ATTRIBUTED_PS68_HEBREW_BET_OR_CONJECTURAL_KI",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "sourceObjectState": "Relevant translator text-critical note 2 read, includes MT bet-of-identity interpretation and proposed כי יה שמו emendation; no Hebrew manuscript evidence supplied for emendation.",
+      "supportedUse": "Distinguish MT בְּיָהּ שְׁמוֹ from scholarly conjecture כִּי יָהּ שְׁמוֹ; note MT Ps68:5 corresponds to NET English 68:4",
+      "forbiddenUse": "Rewrite MT with conjectural emendation without flag, assert a new manuscript reading exists, or publish NET notes without permission",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
     }
   ],
   "auditRevision": {
     "date": "2026-11-07",
     "newSources": [
-      "SRC-SBLGNT-ABBA-PAUL-MARK",
-      "SRC-SBLGNT-JOHN-EGO",
-      "SRC-RAHLFS-EXODUS3",
-      "SRC-BARR-ABBA-1988"
+      "SRC-JBQ-YAH-2014",
+      "SRC-NET-PS68"
     ],
-    "rationale": "Source scope for three distinct NT Abba prayer actors, human John9:9 ego eimi negative control, exact full LXX Ex3:14 and Barr publisher metadata-only"
+    "correctedSources": [
+      "SRC-SUCHARD-ELOHIM-2025"
+    ],
+    "rationale": "Direct SAGE publisher confirms Suchard article full HTML and CC BY 4.0 while hypothesis remains B1; new publisher Yah 2014 and NET textual criticism source roles."
   }
 }
