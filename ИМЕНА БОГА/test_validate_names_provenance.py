@@ -444,5 +444,86 @@ class ProvenanceGraphTests(unittest.TestCase):
         self.assertTrue(any("32:30 pronoun antecedent caution lost" in e for e in self.check(claims=d)))
 
 
+    def test_immanuel_five_loci_must_have_distinct_claims(self) -> None:
+        for i,cid in enumerate([
+            "CLM-ISA7-14-CHILD-NAMING", "CLM-ISA7-14-LXX-NAMING-VERB",
+            "CLM-ISA8-8-IMMANUEL-ADDRESS", "CLM-ISA8-10-DIVINE-PRESENCE",
+            "CLM-MATT1-23-IMMANUEL-GLOSS"
+        ], start=1):
+            row=next(x for x in self.claims["records"] if x["claimId"]==cid)
+            self.assertEqual([f"ATT-BASE-IMMANUEL-0{i}"],row["attestationIds"])
+            self.assertEqual("RESEARCH_HOLD",row["editorialState"])
+            self.assertEqual("BLOCKED",row["publicationState"])
+
+    def test_isaiah_8_10_assurance_cannot_become_child_naming(self) -> None:
+        d,o=self.mutate("immanuel","baseline",3)
+        o["speechAct"]="prophetic_child_naming"
+        self.assertTrue(any("Immanuel speech act/named object conflated" in e for e in self.check(baseline=d)))
+
+    def test_isaiah_8_8_contextual_address_must_stay_uncertain(self) -> None:
+        d,o=self.mutate("immanuel","baseline",2)
+        o["namedObject"]="Jesus definitively addressed in the eighth-century oracle"
+        self.assertTrue(any("Immanuel speech act/named object conflated" in e for e in self.check(baseline=d)))
+
+    def test_isaiah_7_child_naming_cannot_become_divine_self_naming(self) -> None:
+        d,o=self.mutate("immanuel","baseline",0)
+        o["namedObject"]="God naming Himself"
+        self.assertTrue(any("Immanuel speech act/named object conflated" in e for e in self.check(baseline=d)))
+
+    def test_immanuel_lxx_verb_cannot_inherit_matthews_plural(self) -> None:
+        d,o=self.mutate("immanuel","baseline",1)
+        o["namingVerbForm"]="καλέσουσιν 3rd plural"
+        self.assertTrue(any("LXX Isaiah καλέσεις vs Matthew" in e for e in self.check(baseline=d)))
+
+    def test_immanuel_matthew_cannot_inherit_lxx_singular(self) -> None:
+        d,o=self.mutate("immanuel","baseline",4)
+        o["namingVerbForm"]="καλέσεις second person singular"
+        self.assertTrue(any("Matthew Immanuel name grammar/gloss lost" in e for e in self.check(baseline=d)))
+
+    def test_matthew_immanuel_explanatory_gloss_must_remain(self) -> None:
+        d,o=self.mutate("immanuel","baseline",4)
+        o.pop("translationInVerse")
+        self.assertTrue(any("Matthew Immanuel name grammar/gloss lost" in e for e in self.check(baseline=d)))
+
+    def test_immanuel_citation_cannot_be_reassigned_to_isaiah_8_10(self) -> None:
+        d=json.loads(json.dumps(self.claims))
+        row=next(x for x in d["records"] if x["claimId"]=="CLM-MATT1-23-IMMANUEL-GLOSS")
+        row["attestationIds"]=["ATT-BASE-IMMANUEL-04"]
+        self.assertTrue(any("lost its independently reviewed text witnesses" in e for e in self.check(claims=d)))
+
+    def test_required_immanuel_claim_cannot_disappear(self) -> None:
+        d=json.loads(json.dumps(self.claims))
+        d["records"]=[x for x in d["records"] if x["claimId"]!="CLM-ISA8-8-IMMANUEL-ADDRESS"]
+        self.assertTrue(any("required Immanuel textual role claims missing" in e for e in self.check(claims=d)))
+
+    def test_immanuel_greek_comparison_relation_cannot_change(self) -> None:
+        d=json.loads(json.dumps(self.claims))
+        row=next(x for x in d["semanticRelations"] if x["relationId"]=="REL-IMMANUEL-LXX-MATTHEW-VERB")
+        row["relationType"]="CONTRASTS_REFERENT"
+        self.assertTrue(any("required semantic boundary" in e for e in self.check(claims=d)))
+
+    def test_isaiah_8_8_10_semantic_boundary_cannot_change(self) -> None:
+        d=json.loads(json.dumps(self.claims))
+        row=next(x for x in d["semanticRelations"] if x["relationId"]=="REL-IMMANUEL-ISA8-ADDRESS-ASSERTION")
+        row["toClaimId"]="CLM-MATT1-23-IMMANUEL-GLOSS"
+        self.assertTrue(any("required semantic boundary" in e for e in self.check(claims=d)))
+
+
+    def test_edition_specific_greek_immanuel_diacritics_not_interchanged(self) -> None:
+        d,o=self.mutate("immanuel","baseline",1)
+        o["surface"]="Ἐμμανουήλ"
+        self.assertTrue(any("exact printed Immanuel source form changed" in e for e in self.check(baseline=d)))
+
+    def test_isaiah_7_hebrew_almah_and_naming_verb_uncertainty_retained(self) -> None:
+        d,o=self.mutate("immanuel","baseline",0)
+        o["namingVerbAnalysis"]="no contested issue; exact same as Matthew"
+        self.assertTrue(any("Isaiah 7 Hebrew lexeme/naming verb uncertainty erased" in e for e in self.check(baseline=d)))
+
+    def test_sblgnt_matthew_single_edition_url_cannot_change(self) -> None:
+        d,o=self.mutate("immanuel","baseline",4)
+        o["sourceUrl"]="https://www.biblegateway.com/passage/?search=Matthew+1&version=SBLGNT"
+        self.assertTrue(any("verified pinned Greek passage URL changed" in e for e in self.check(baseline=d)))
+
+
 if __name__ == "__main__":
     unittest.main()

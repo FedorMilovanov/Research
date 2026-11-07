@@ -20,22 +20,24 @@
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 16,
-    "provenanceRegressionTests": 67,
+    "provenanceRegressionTests": 81,
     "canonicalEditions": 4,
-    "curatedClaims": 21,
+    "curatedClaims": 26,
     "allAttestationForeignKeys": 105,
-    "editionSpecificGreekUrlsVerified": 4,
+    "editionSpecificGreekUrlsVerified": 5,
     "unselectedGreekEditionUrls": 0,
-    "attestationsReferencedByClaims": 28,
-    "attestationsWithoutClaimReference": 77,
-    "typedClaimRelations": 11,
+    "attestationsReferencedByClaims": 33,
+    "attestationsWithoutClaimReference": 72,
+    "typedClaimRelations": 15,
     "correctedExodusDivineReferentRows": 3,
     "semanticScopeAudits": 15,
     "independentScholarlyClaimApprovals": 0,
     "propheticRoyalCityClaims": 3,
     "registeredPeerReviewedSelectedPageSources": 1,
     "rockReferentAttestations": 5,
-    "rockPronounVerse30AwaitingDiscourseReview": true
+    "rockPronounVerse30AwaitingDiscourseReview": true,
+    "immanuelDistinctEvidenceLociGuarded": 5,
+    "immanuelTextualCriticalCollationCompleted": 0
   },
   "allowedStatuses": [
     "DONE",
@@ -182,9 +184,13 @@
         "17_TSUR_ROCK_REFERENTS_AND_PRONOUN_BOUNDARY_20261107.md: MT context for Deut32:4,18,30,31,37 and Ps18:32; separate divine, mixed and foreign Rock referents",
         "data/names_claim_registry_v1.json: 3 Rock claim seeds and 2 semantic boundaries, all Research HOLD",
         "validate_names_provenance.py: 5 per-attestation Rock referent controls, fail closed even with duplicated corrupted contract",
-        "test_validate_names_provenance.py: 9 Rock-context adversarial regressions, retaining 32:30 pronoun caution"
+        "test_validate_names_provenance.py: 9 Rock-context adversarial regressions, retaining 32:30 pronoun caution",
+        "18_IMMANUEL_HEBREW_GREEK_INTERTEXT_BOUNDARIES_20261107.md: Hebrew Isa7:14; Isa8:8/10; printed LXX Isa7:14 and SBLGNT Matt1:23 with 2sg/3pl Greek contrast",
+        "data/names_claim_registry_v1.json: five provisional Immanuel claims with four required relations MT/LXX/Matthew/Isa8",
+        "validate_names_provenance.py: exact written form and name/speech act controls for five attestation IDs, single-edition Matthew URL",
+        "test_validate_names_provenance.py: 14 Immanuel mutation checks including edition orthography, naming-verb ambiguity and Greek source URL"
       ],
-      "verification": "105_STABLE_ATTESTATION_EDITION_SOURCE_LINKS; 46_REGISTERED_SOURCES; 21_PROVISIONAL_CLAIMS_11_SEMANTIC_RELATIONS; 28_OF_105_CLAIM_LINKED; 77_WITHOUT_CLAIM; 5_TSUR_REF_CLASSES_GUARDED_AND_DEUT32_30_PRONOUN_HOLD; 245_TESTS_LOCAL_PASS; EXACT_SHA_CI_PENDING; CRITICAL_COLLATIONS_0; PUBLICATION_APPROVAL_0",
+      "verification": "105_STABLE_ATT_EDITION_SOURCE_IDS; 46_SOURCES; 26_PROVISIONAL_CLAIMS_15_RELATIONS; 33_OF_105_WITH_CLAIM; 72_WITHOUT_CLAIM; 5_IMMANUEL_ORIGINAL_SOURCE_FORM_ROLE_GUARDS; 5_SINGLE_EDITION_GREEK_PINS; 259_LOCAL_TESTS_PASS; CI_EXACT_SHA_PENDING; CRITICAL_COLLATIONS_0; PRODUCT_APPROVAL_0",
       "closureAt": null,
       "owner": "Research editorial"
     },
@@ -583,7 +589,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NG-02: next finite wave is Immanuel Isaiah 7:14, Isaiah 8:8/10, Matthew 1:23 Hebrew/Greek intertext and named-object/speaker boundaries; then Revelation 22 speaker shift. Before scientific release independently collate critical apparatus and textual counterarguments. Do not substitute claim-link counts for philological editorial signoff.",
+  "nextAction": "NG-02: next strictly limited wave on Revelation 1:8 / 21:6 / 22:13 first-person speaking-agent shifts and Alpha/Omega versus beginning/end; guard theological inference vs printed Greek edition. Then review remaining 72 attestation IDs by priority and inspect 55 historic locusId omissions; critical manuscript apparatus and independent academic review remain upstream of any publication.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -665,7 +671,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-07",
-    "planStatus": "NG-01 DONE; NG-02 IN_PROGRESS: 21 provisional claims, 11 semantic relations, Rock 5 contextual uses guarded",
+    "planStatus": "NG-01 DONE; NG-02 IN_PROGRESS: 26 provisional claims, 15 semantic links, 33/105 attestation references",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -692,14 +698,18 @@
       "NG-02 Rock: 5 attestation referent classes independently guarded: 3 divine, 1 mixed, 1 negative",
       "Separated Deut32:31 our Rock / their rock from Deut32:37 idol refuge, with Deut32:30 pronoun caveat",
       "Registered three provisional Rock claims and two semantic relations; 28/105 original observations now linked",
-      "Added nine Rock mutation tests; 245 local tests pass (162 corpus, 16 plan, 67 provenance)"
+      "Added nine Rock mutation tests; 245 local tests pass (162 corpus, 16 plan, 67 provenance)",
+      "Immanuel NG-02: five distinct MT Isaiah7/8, LXX Isaiah7 and SBLGNT Matthew1:23 occurrence claims, four typed context/intertext differences",
+      "Verified printed καλέσεις (LXX 2sg) vs καλέσουσιν (SBLGNT 3pl), Ἐμμανουήλ explanatory gloss; Hebrew וְקָרָאת interpretation remains disputed",
+      "Pinned fifth single-edition Greek passage URL and guarded five exact source surfaces, avoiding implied manuscript collations",
+      "14 added provenance regressions; 259 total local tests (162 baseline,16 plan,81 provenance)"
     ],
     "stillOpen": [
-      "NG-02: 77 distinct original attestation IDs without a provisional claim reference",
-      "Deut32:30–31 speaker/antecedent and historical textual alternatives remain pending independent research",
-      "Immanuel Isaiah 7/8 and Matthew 1 Greek/Hebrew intertext and Revelation 22 remain priority risk controls",
-      "All 21 claims still RESEARCH_HOLD, 0 collated textual apparatus, 0 Product approvals",
-      "Latest exact GitHub SHA and all required CI workflow checks pending verification"
+      "NG-02: 72/105 original-language contexts still lack curated claim links, though all 105 preserve edition/source FK",
+      "Independent historical source criticism of 1QIsaa, LXX/MT and Matt1:23 variants not completed",
+      "No scholarly signoff and no Product permissions; all 26 provisional claims blocked",
+      "Revelation 22 speaker-shift and Alpha/Omega implications next priority",
+      "Exact GitHub head SHA CI run and branch integrity to be verified"
     ]
   },
   "originalResearchCheckpoint": {
@@ -716,21 +726,22 @@
       "sourceForeignKeys": 105,
       "editionForeignKeys": 105,
       "canonicalEditions": 4,
-      "curatedClaims": 21,
+      "curatedClaims": 26,
       "locusIdMissingHistorically": 55,
       "editionSelectionRecheckHolds": 0,
-      "notes": "Five Rock observations are type-guarded in three HOLD claims, with distinction between YHWH, mixed comparative, and polemic against false refuge. Deut32:30 pronoun remains independent editorial question; 77 observations still unlinked. No manuscript or Product signoff.",
-      "typedClaimRelations": 11,
-      "editionSpecificDigitalVerseRechecksCompleted": 4,
-      "attestationsLinkedToClaims": 28,
-      "attestationsWithoutClaimReferences": 77,
+      "notes": "Five Immanuel MT/LXX/SBLGNT attestations independently role- and original-form-guarded. Greek LXX καλέσεις vs Matthew καλέσουσιν pinned, but Hebrew verb, textual variants and historical intertext remain scholarly HOLD; 72 attestation IDs unlinked; 0 Product approvals.",
+      "typedClaimRelations": 15,
+      "editionSpecificDigitalVerseRechecksCompleted": 5,
+      "attestationsLinkedToClaims": 33,
+      "attestationsWithoutClaimReferences": 72,
       "divineReferentAddresseeControls": 3,
       "semanticScopeAudits": 15,
       "scholarlyClaimApprovals": 0,
       "propheticRoyalCityClaims": 3,
       "sourceRegisterEntries": 46,
       "rockReferentAttestations": 5,
-      "rockPronounVerse30AwaitingDiscourseReview": true
+      "rockPronounVerse30AwaitingDiscourseReview": true,
+      "immanuelDistinctEvidenceLociGuarded": 5
     }
   }
 }

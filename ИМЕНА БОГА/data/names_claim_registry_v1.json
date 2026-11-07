@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "corpusId": "NAMES_OF_GOD_CLAIM_LEVEL_EVIDENCE",
   "createdAt": "2026-11-07",
-  "scope": "21 provisional claims, 11 semantic relations, Rock contrast with 32:30 pronoun-caution; no manuscript critical collation or Product clearance.",
+  "scope": "26 research-held provisional claims / 15 typed links: added 5 Immanuel Hebrew/LXX/NT loci without critical manuscript collation, authorial motive assertion or Product permissions.",
   "editorialPolicy": "Never infer Product approval from link completeness, never replace a cited verse or alternative theory silently; new claims require independent review.",
   "records": [
     {
@@ -474,6 +474,119 @@
         "verify the scope of metaphor rather than universal proper-name classification",
         "review reuse rights, critical apparatus and Product editorial acceptance"
       ]
+    },
+    {
+      "claimId": "CLM-ISA7-14-CHILD-NAMING",
+      "claimType": "NAMED_OBJECT_CONTROL",
+      "statement": "In Mechon-Mamre MT Isaiah 7:14, the expression עִמָּנוּ אֵל appears as the prophetic child's assigned name, not an explicit first-person divine self-naming act. The Hebrew וְקָרָאת name-giving verb has a recognized grammatical-person dispute and is not settled here merely by comparison with Greek.",
+      "attestationIds": [
+        "ATT-BASE-IMMANUEL-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-NET-ISAIAH7"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition-versus-manuscript check with Hebrew and Greek apparatus",
+        "Hebrew Isa7:14 naming verb person and lexical context, including contested interpretations",
+        "compare Isaiah Greek and Matthew citation variants without inferring authorial motive from one text",
+        "separate confessional/historical reception, copyright and Product editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-ISA7-14-LXX-NAMING-VERB",
+      "claimType": "EDITED_TEXT_DIFFERENCE",
+      "statement": "The publisher's Rahlfs-Hanhart LXX Isaiah 7:14 prints καλέσεις (second-person singular 'you will call') with the name Εμμανουηλ. SBLGNT Matthew 1:23 instead prints καλέσουσιν (third-person plural 'they will call'). This verifies a difference between named printed editions, NOT its origin in original Greek manuscripts or the Evangelist's motivation.",
+      "attestationIds": [
+        "ATT-BASE-IMMANUEL-02"
+      ],
+      "sourceIds": [
+        "SRC-RAHLFS-ISAIAH",
+        "SRC-SBLGNT-DIGITAL-NT"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition-versus-manuscript check with Hebrew and Greek apparatus",
+        "Hebrew Isa7:14 naming verb person and lexical context, including contested interpretations",
+        "compare Isaiah Greek and Matthew citation variants without inferring authorial motive from one text",
+        "separate confessional/historical reception, copyright and Product editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-ISA8-8-IMMANUEL-ADDRESS",
+      "claimType": "NAMED_OBJECT_CONTROL",
+      "statement": "In Mechon-Mamre MT Isaiah 8:8, עִמָּנוּ אֵל occurs in the clause about the land and invading wings. A vocative/address to Immanuel and a name-allusion are contextually discussed readings; the text does not include a fresh child-naming formula here or force a single identity of the referent from syntax alone.",
+      "attestationIds": [
+        "ATT-BASE-IMMANUEL-03"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition-versus-manuscript check with Hebrew and Greek apparatus",
+        "Hebrew Isa7:14 naming verb person and lexical context, including contested interpretations",
+        "compare Isaiah Greek and Matthew citation variants without inferring authorial motive from one text",
+        "separate confessional/historical reception, copyright and Product editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-ISA8-10-DIVINE-PRESENCE",
+      "claimType": "NARRATIVE_SPEECH_VS_NAMING",
+      "statement": "In Mechon-Mamre MT Isaiah 8:10, כִּי עִמָּנוּ אֵל functions as a clause 'for God is with us' explaining why hostile plans fail. This is a statement of divine presence, not a distinct act of assigning a child's name in that verse.",
+      "attestationIds": [
+        "ATT-BASE-IMMANUEL-04"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition-versus-manuscript check with Hebrew and Greek apparatus",
+        "Hebrew Isa7:14 naming verb person and lexical context, including contested interpretations",
+        "compare Isaiah Greek and Matthew citation variants without inferring authorial motive from one text",
+        "separate confessional/historical reception, copyright and Product editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-MATT1-23-IMMANUEL-GLOSS",
+      "claimType": "CANONICAL_INTERTEXT_BOUNDARY",
+      "statement": "The SBLGNT of Matthew 1:23 explicitly cites Isaiah's prophetic child name as Ἐμμανουήλ and glosses it Μεθ’ ἡμῶν ὁ θεός ('God with us'); its καλέσουσιν is third-person plural. This describes Matthew's narrative reception and philological gloss, not a proof that the original Hebrew naming verb or every Isaianic use has the same grammatical person.",
+      "attestationIds": [
+        "ATT-BASE-IMMANUEL-05"
+      ],
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT",
+        "SRC-NET-ISAIAH7"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition-versus-manuscript check with Hebrew and Greek apparatus",
+        "Hebrew Isa7:14 naming verb person and lexical context, including contested interpretations",
+        "compare Isaiah Greek and Matthew citation variants without inferring authorial motive from one text",
+        "separate confessional/historical reception, copyright and Product editorial acceptance"
+      ]
     }
   ],
   "semanticRelations": [
@@ -563,6 +676,38 @@
       "toClaimId": "CLM-DEUT32-37-FOREIGN-REFUGE",
       "relationType": "LIMITS_INFERENCE",
       "rationale": "Deut32:31 contains two opposed Rock referents, Deut32:37 rhetorically challenges non-YHWH gods; poetic pronoun changes and 32:30 are separately reviewed.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-IMMANUEL-MT-LXX-NAME",
+      "fromClaimId": "CLM-ISA7-14-CHILD-NAMING",
+      "toClaimId": "CLM-ISA7-14-LXX-NAMING-VERB",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "MT child's naming in Hebrew and Rahlfs-Hanhart printed καλέσεις are different textual editions with morphology that must be investigated, not silently made verbatim identical.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-IMMANUEL-LXX-MATTHEW-VERB",
+      "fromClaimId": "CLM-ISA7-14-LXX-NAMING-VERB",
+      "toClaimId": "CLM-MATT1-23-IMMANUEL-GLOSS",
+      "relationType": "CONTRASTS_GRAMMATICAL_FORM",
+      "rationale": "Rahlfs-Hanhart LXX Isaiah 7:14 καλέσεις (2 singular) and SBLGNT Matthew 1:23 καλέσουσιν (3 plural) differ as printed; textual/authorial explanation is open.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-IMMANUEL-ISA8-ADDRESS-ASSERTION",
+      "fromClaimId": "CLM-ISA8-8-IMMANUEL-ADDRESS",
+      "toClaimId": "CLM-ISA8-10-DIVINE-PRESENCE",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "Isa 8:8 vocative/name allusion remains contextually contested, whereas Isa 8:10 is an explicit assurance clause; identical consonants do not make both child namings.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-IMMANUEL-MT-MATTHEW-RECEPTION",
+      "fromClaimId": "CLM-ISA7-14-CHILD-NAMING",
+      "toClaimId": "CLM-MATT1-23-IMMANUEL-GLOSS",
+      "relationType": "REQUIRES_INDEPENDENT_ATTESTATION",
+      "rationale": "Matthew's christological citation and gloss of Isaiah are canonical reception, while precise historical Hebrew antecedent and original naming-verb forms need separate historical/critical evidence.",
       "publicationState": "BLOCKED"
     }
   ]

@@ -40,6 +40,7 @@ PINNED_GREEK_SOURCE_URLS = {
     "ATT-BASE-SABAOTH-06": "https://www.biblegateway.com/passage/?search=Romans+9%3A14-29&version=SBLGNT",
     "ATT-BASE-ABBA-03": "https://www.biblegateway.com/passage/?search=Galatians+4%3A4-7&version=SBLGNT",
     "ATT-EXT-KYRIOS-HO-THEOS-01": "https://www.biblegateway.com/passage/?search=Luke+1%3A30-33&version=THGNT",
+    "ATT-BASE-IMMANUEL-05": "https://www.biblegateway.com/passage/?search=Matthew+1%3A23&version=SBLGNT",
 }
 
 
@@ -126,6 +127,28 @@ ROCK_REFERENT_CONTROLS = {
     "ATT-BASE-TSUR-04": ("FALSE_OBJECT_OF_REFUGE", False),
     "ATT-BASE-TSUR-05": ("TRUE_GOD", True),
 }
+REQUIRED_IMMANUEL_CLAIMS = {
+    "CLM-ISA7-14-CHILD-NAMING",
+    "CLM-ISA7-14-LXX-NAMING-VERB",
+    "CLM-ISA8-8-IMMANUEL-ADDRESS",
+    "CLM-ISA8-10-DIVINE-PRESENCE",
+    "CLM-MATT1-23-IMMANUEL-GLOSS",
+}
+# Exact locus/role controls, not manuscripts or editorial interpretations.
+IMMANUEL_PRINTED_SURFACES = {
+    "ATT-BASE-IMMANUEL-01": "עִמָּנוּ אֵל",
+    "ATT-BASE-IMMANUEL-02": "Εμμανουηλ",
+    "ATT-BASE-IMMANUEL-03": "עִמָּנוּ אֵל",
+    "ATT-BASE-IMMANUEL-04": "כִּי עִמָּנוּ אֵל",
+    "ATT-BASE-IMMANUEL-05": "Ἐμμανουήλ",
+}
+IMMANUEL_ROLE_CONTROLS = {
+    "ATT-BASE-IMMANUEL-01": ("prophetic_child_naming", "child in prophecy"),
+    "ATT-BASE-IMMANUEL-02": ("prophetic_child_naming", "child in Isaiah prophecy"),
+    "ATT-BASE-IMMANUEL-03": ("vocative_or_name_allusion", "Immanuel as addressee/allusion (contextual interpretation)"),
+    "ATT-BASE-IMMANUEL-04": ("divine_presence_assertion", "God is with us, an assertion not new child-naming"),
+    "ATT-BASE-IMMANUEL-05": ("christological_prophetic_quotation", "Jesus identified with prophetic name in quotation"),
+}
 # The original reviewed seeds are a required minimum, not a cap on future work.
 # Additional claims must pass the same foreign-key, editorial and publication gates.
 ALLOWED_CLAIM_TYPES = {
@@ -203,6 +226,22 @@ REQUIRED_SEMANTIC_RELATIONS = {
         "CLM-DEUT32-31-ROCK-CONTRAST", "CLM-DEUT32-37-FOREIGN-REFUGE",
         "LIMITS_INFERENCE"
     ),
+    "REL-IMMANUEL-MT-LXX-NAME": (
+        "CLM-ISA7-14-CHILD-NAMING", "CLM-ISA7-14-LXX-NAMING-VERB",
+        "LIMITS_INFERENCE"
+    ),
+    "REL-IMMANUEL-LXX-MATTHEW-VERB": (
+        "CLM-ISA7-14-LXX-NAMING-VERB", "CLM-MATT1-23-IMMANUEL-GLOSS",
+        "CONTRASTS_GRAMMATICAL_FORM"
+    ),
+    "REL-IMMANUEL-ISA8-ADDRESS-ASSERTION": (
+        "CLM-ISA8-8-IMMANUEL-ADDRESS", "CLM-ISA8-10-DIVINE-PRESENCE",
+        "LIMITS_INFERENCE"
+    ),
+    "REL-IMMANUEL-MT-MATTHEW-RECEPTION": (
+        "CLM-ISA7-14-CHILD-NAMING", "CLM-MATT1-23-IMMANUEL-GLOSS",
+        "REQUIRES_INDEPENDENT_ATTESTATION"
+    ),
 }
 CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-EX3-15-DIVINE-NAME": {"ATT-BASE-YHWH-01"},
@@ -230,6 +269,11 @@ CLAIM_REQUIRED_ATTESTATIONS = {
     },
     "CLM-DEUT32-31-ROCK-CONTRAST": {"ATT-BASE-TSUR-03"},
     "CLM-DEUT32-37-FOREIGN-REFUGE": {"ATT-BASE-TSUR-04"},
+    "CLM-ISA7-14-CHILD-NAMING": {"ATT-BASE-IMMANUEL-01"},
+    "CLM-ISA7-14-LXX-NAMING-VERB": {"ATT-BASE-IMMANUEL-02"},
+    "CLM-ISA8-8-IMMANUEL-ADDRESS": {"ATT-BASE-IMMANUEL-03"},
+    "CLM-ISA8-10-DIVINE-PRESENCE": {"ATT-BASE-IMMANUEL-04"},
+    "CLM-MATT1-23-IMMANUEL-GLOSS": {"ATT-BASE-IMMANUEL-05"},
 }
 
 
@@ -300,6 +344,24 @@ def validate_provenance(
                     continue
                 seen.add(aid)
                 att_by_id[aid] = obs
+                if aid in IMMANUEL_ROLE_CONTROLS:
+                    want_act, want_named = IMMANUEL_ROLE_CONTROLS[aid]
+                    if obs.get("surface") != IMMANUEL_PRINTED_SURFACES[aid]:
+                        errors.append(f"provenance: {aid} exact printed Immanuel source form changed")
+                    if aid == "ATT-BASE-IMMANUEL-01":
+                        if (obs.get("originalTerm") != "הָעַלְמָה"
+                            or "grammatical dispute" not in str(obs.get("namingVerbAnalysis",""))):
+                            errors.append("provenance: Isaiah 7 Hebrew lexeme/naming verb uncertainty erased")
+                    if obs.get("speechAct") != want_act or obs.get("namedObject") != want_named:
+                        errors.append(f"provenance: {aid} Immanuel speech act/named object conflated")
+                    if aid == "ATT-BASE-IMMANUEL-02":
+                        if (obs.get("namingVerbForm") != "καλέσεις second person singular"
+                            or obs.get("crossEditionRelation") != "MATTHEW_SBLGNT_USES_καλέσουσιν_THIRD_PERSON_PLURAL"):
+                            errors.append("provenance: LXX Isaiah καλέσεις vs Matthew καλέσουσιν contrast lost")
+                    if aid == "ATT-BASE-IMMANUEL-05":
+                        if (obs.get("namingVerbForm") != "καλέσουσιν 3rd plural"
+                            or obs.get("translationInVerse") != "Μεθ’ ἡμῶν ὁ θεός"):
+                            errors.append("provenance: Matthew Immanuel name grammar/gloss lost")
                 if aid in ROCK_REFERENT_CONTROLS:
                     expected_ref, expected_divine = ROCK_REFERENT_CONTROLS[aid]
                     if (obs.get("referentClass") != expected_ref
@@ -391,6 +453,8 @@ def validate_provenance(
         errors.append("provenance: required prophetic royal/city claim boundary missing")
     if not REQUIRED_ROCK_CLAIMS.issubset(claim_map):
         errors.append("provenance: required Rock contrast claim boundary missing")
+    if not REQUIRED_IMMANUEL_CLAIMS.issubset(claim_map):
+        errors.append("provenance: required Immanuel textual role claims missing")
     rock_statement = claim_map.get("CLM-DEUT32-31-ROCK-CONTRAST", {}).get("statement","")
     if not isinstance(rock_statement, str) or "32:30" not in rock_statement:
         errors.append("provenance: Deuteronomy 32:30 pronoun antecedent caution lost")
@@ -489,8 +553,8 @@ def main() -> int:
         for p in problems:
             print("FAIL: " + p, file=sys.stderr)
         return 1
-    print("PASS: 105 attestation IDs linked to 4 editions; 21 provisional claims, "
-          "11 typed relations, 5 Rock referent controls and all publication HOLD gates")
+    print("PASS: 105 attestation IDs / 4 editions; 26 provisional claims, "
+          "15 typed relations, 5 Immanuel role/edition guards and publication HOLD gates")
     return 0
 
 
