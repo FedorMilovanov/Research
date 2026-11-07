@@ -1408,7 +1408,7 @@ def validate_extension_attestations(extension: dict, contract: dict) -> list[str
         or obs("ext-avinu-isa63").get("speechAct") != "corporate_direct_address_to_God_as_Father"):
         errors.append("extension-witness: Isaiah63 Hebrew corporate Father prayer conflated with Abba")
     if (obs("ext-yhwhori-ps27").get("namingActInVerse") is not False
-        or "מוֹע" in str(obs("ext-yhwhori-ps27").get("linkedPoeticMetaphor", ""))):
+        or obs("ext-yhwhori-ps27").get("linkedPoeticMetaphor") != "יְהוָה מָעוֹז-חַיַּי"):
         errors.append("extension-witness: Psalm27 poetic light falsely turned into name act")
     if (obs("ext-elemuna-deut32").get("namingActInVerse") is not False
         or "הַצּוּר" not in str(obs("ext-elemuna-deut32").get("contextParallel",""))):
