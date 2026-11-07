@@ -159,5 +159,20 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("patriarchal attestation counter drift" in issue for issue in validate(data)))
 
 
+    def test_genesis_14_19_lamed_prefix_cannot_be_silently_dropped(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(x for x in data["records"] if x["id"] == "el-elyon")
+        occurrence = next(x for x in row["attestations"] if x["verse"] == "Genesis 14:19")
+        occurrence["surface"] = "אֵל עֶלְיוֹן"
+        self.assertTrue(any("Genesis 14:19" in issue and "surface changed" in issue for issue in validate(data)))
+
+    def test_missing_all_shaddai_attestations_rejects_without_exception(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(x for x in data["records"] if x["id"] == "el-shaddai")
+        row["attestations"] = []
+        errors = validate(data)
+        self.assertTrue(any("el-shaddai" in issue for issue in errors))
+
+
 if __name__ == "__main__":
     unittest.main()
