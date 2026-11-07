@@ -38,7 +38,65 @@
       "sourceEdition": "Mechon-Mamre MT digital transcription",
       "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
       "criticalEditionStatus": "NOT_COLLATED",
-      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass",
+      "attestations": [
+        {
+          "locusId": "core-yhwh-ex3-name",
+          "verse": "Exodus 3:15",
+          "surface": "יְהוָה אֱלֹהֵי אֲבֹתֵיכֶם",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "speaker": "God speaking to Moses",
+          "speechAct": "divine_name_revelation_to_Moses",
+          "referent": "YHWH God of Israel",
+          "referentClass": "YHWH",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0203.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "nameClaim": "זֶה-שְּׁמִי לְעֹלָם",
+          "addressedAudience": "Moses instructed to speak to Israel",
+          "relatedButDistinct": "Exodus3:14 אֶהְיֶה אֲשֶׁר אֶהְיֶה"
+        },
+        {
+          "locusId": "core-yhwh-ex6-self",
+          "verse": "Exodus 6:2",
+          "surface": "אֲנִי יְהוָה",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "speaker": "God speaking to Moses",
+          "speechAct": "divine_first_person_self_identification",
+          "referent": "YHWH God of Israel",
+          "referentClass": "YHWH",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0206.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "nextVerseQualifier": "וּשְׁמִי יְהוָה, לֹא נוֹדַעְתִּי לָהֶם",
+          "contextualCaution": "Rashi Calvin NET differ on nuance of revelation/known; don't resolve from isolated morphology"
+        },
+        {
+          "locusId": "core-yhwh-ex15-hymn",
+          "verse": "Exodus 15:3",
+          "surface": "יְהוָה שְׁמוֹ",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "speaker": "Moses and Israel singing",
+          "speechAct": "hymnic_confession_of_divine_name",
+          "referent": "YHWH God of Israel",
+          "referentClass": "YHWH",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0215.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "adjacentShortForm": "Exodus15:2 יָהּ",
+          "nameClaim": "יְהוָה שְׁמוֹ"
+        }
+      ],
+      "contextualAssertion": "YHWH is explicit covenantal divine name: Exodus3:15 God identifies His name, 6:2 God self identifies, 15:3 Moses and Israel sing YHWH His name. MT vocalization is a reading tradition, not proof of original pronunciation; distinguish Ehyeh first person, Yah short form and Greek Kyrios."
     },
     {
       "id": "ehyeh",
@@ -984,7 +1042,99 @@
       "sourceEdition": "Mechon-Mamre MT digital transcription",
       "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
       "criticalEditionStatus": "NOT_COLLATED",
-      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass",
+      "attestations": [
+        {
+          "locusId": "core-el-ex34-merciful",
+          "verse": "Exodus 34:6",
+          "surface": "אֵל רַחוּם וְחַנּוּן",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "speaker": "YHWH proclamation, narrator describing scene",
+          "speechAct": "divine_attributes_in_name_proclamation",
+          "referent": "YHWH described as merciful God",
+          "referentClass": "YHWH",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0234.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "contextualClause": "יְהוָה יְהוָה, אֵל רַחוּם וְחַנּוּן",
+          "nameActStatus": "PROCLAIMED_NAME_AND_ATTRIBUTES"
+        },
+        {
+          "locusId": "core-el-deut32-faithful",
+          "verse": "Deuteronomy 32:4",
+          "surface": "אֵל אֱמוּנָה",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "speaker": "Moses in Song of Moses",
+          "speechAct": "divine_faithfulness_poetic_predication",
+          "referent": "YHWH described as faithful God",
+          "referentClass": "YHWH",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0532.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "poeticParallel": "הַצּוּר תָּמִים פָּעֳלוֹ"
+        },
+        {
+          "locusId": "core-el-deut32-foreign",
+          "verse": "Deuteronomy 32:12",
+          "surface": "אֵל נֵכָר",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "speaker": "Moses in Song of Moses",
+          "speechAct": "negative_foreign_god_contrast",
+          "referent": "foreign god whose presence is denied",
+          "referentClass": "OTHER_GOD_NEGATED",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0532.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "negationClause": "וְאֵין עִמּוֹ, אֵל נֵכָר",
+          "isYHWH": false
+        },
+        {
+          "locusId": "core-el-isa43-negated",
+          "verse": "Isaiah 43:10",
+          "surface": "לְפָנַי לֹא-נוֹצַר אֵל",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "speaker": "YHWH speaking to witnesses through Isaiah",
+          "speechAct": "negative_assertion_no_other_god_formed",
+          "referent": "any putative god whose being formed is denied",
+          "referentClass": "OTHER_GOD_NEGATED",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt1043.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "negationClause": "לֹא-נוֹצַר אֵל",
+          "isYHWH": false
+        },
+        {
+          "locusId": "core-el-isa43-i-am",
+          "verse": "Isaiah 43:12",
+          "surface": "וַאֲנִי-אֵל",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "speaker": "YHWH speaking to witnesses through Isaiah",
+          "speechAct": "first_person_divine_self_designation",
+          "referent": "YHWH God of Israel",
+          "referentClass": "YHWH",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt1043.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "immediateContext": "וְאֵין בָּכֶם זָר",
+          "isYHWH": true
+        }
+      ],
+      "contextualAssertion": "El is noun meaning god/God: Ex34:6, Deut32:4 and Isa43:12 positive YHWH referent; Deut32:12 and Isa43:10 negated foreign/possible god referent, NOT YHWH. Two lexical occurrences in Isa43 same chapter have opposite referent roles."
     },
     {
       "id": "el-shaddai",
@@ -2492,6 +2642,20 @@
         "RAHLFS_HANHART_2006_LXX"
       ],
       "criticalCollationStatus": "NOT_COLLATED",
+      "publicationEligible": 0
+    },
+    "coreNameVsLexeme": {
+      "phase": "YHWH_PERSONAL_NAME_EL_NOUN_REFERENT_2026_11_07",
+      "baselineIds": [
+        "yhwh",
+        "el"
+      ],
+      "totalAttestations": 8,
+      "personalNameCount": 3,
+      "genericElCount": 5,
+      "negativeElReferents": 2,
+      "criticalEditionStatus": "NOT_COLLATED",
+      "finalEtymologyDecisions": 0,
       "publicationEligible": 0
     }
   }
