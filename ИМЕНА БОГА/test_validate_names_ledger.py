@@ -6,7 +6,7 @@ import json
 import unittest
 from pathlib import Path
 
-from validate_names_ledger import validate, validate_extension, validate_source_access, validate_apocalyptic, validate_prophetic_namings, validate_six_title_attestations, validate_memorial_attestations, validate_speech_intertext, validate_extension_attestations
+from validate_names_ledger import validate, validate_extension, validate_source_access, validate_apocalyptic, validate_prophetic_namings, validate_six_title_attestations, validate_memorial_attestations, validate_speech_intertext, validate_extension_attestations, validate_core_name_lexeme, validate_full_coverage
 
 ROOT = Path(__file__).resolve().parent
 
@@ -21,6 +21,7 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         cls.memorial_contract = json.loads((ROOT / "data" / "memorial_attestation_contract_v1.json").read_text(encoding="utf-8"))
         cls.speech_contract = json.loads((ROOT / "data" / "speech_intertext_contract_v1.json").read_text(encoding="utf-8"))
         cls.extension_contract = json.loads((ROOT / "data" / "extension_attestation_contract_v1.json").read_text(encoding="utf-8"))
+        cls.core_contract = json.loads((ROOT / "data" / "core_name_lexeme_contract_v1.json").read_text(encoding="utf-8"))
 
     def test_current_research_corpora_pass_structure(self) -> None:
         self.assertEqual([], validate(self.baseline))
@@ -32,6 +33,8 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertEqual([], validate_memorial_attestations(self.baseline, self.memorial_contract))
         self.assertEqual([], validate_speech_intertext(self.baseline, self.speech_contract))
         self.assertEqual([], validate_extension_attestations(self.extension, self.extension_contract))
+        self.assertEqual([], validate_core_name_lexeme(self.baseline, self.core_contract))
+        self.assertEqual([], validate_full_coverage(self.baseline, self.extension))
 
     def test_altar_cannot_be_promoted_to_personal_name(self) -> None:
         data = copy.deepcopy(self.baseline)
@@ -887,6 +890,115 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         x = next(r for r in d["records"] if r["id"] == "SRC-NET-PS68")
         x["supportedUse"] = "MT already reads conjectural ki Yah"
         self.assertTrue(any("conjectural NET Psalm68" in e for e in validate_source_access(d)))
+
+
+    def test_core_yhwh_exodus3_divine_name_marker_cannot_disappear(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "yhwh")
+        r["attestations"][0]["nameClaim"] = "not a name"
+        self.assertTrue(any("Exodus3 YHWH divine personal name" in e for e in validate_core_name_lexeme(d, self.core_contract)))
+
+    def test_core_yhwh_ex3_ehyeh_1cs_distinct_from_full_name(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "yhwh")
+        r["attestations"][0]["relatedButDistinct"] = "both words identical letters"
+        self.assertTrue(any("confused with Ehyeh" in e for e in validate_core_name_lexeme(d, self.core_contract)))
+
+    def test_core_yhwh_ex6_self_declaration_not_ehyeh_substitution(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "yhwh")
+        r["attestations"][1]["surface"] = "אֲנִי אֶהְיֶה"
+        self.assertTrue(any("Exodus6:2 self-revelation" in e for e in validate_core_name_lexeme(d, self.core_contract)))
+
+    def test_core_ex6_name_known_to_patriarchs_has_contextual_issue(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "yhwh")
+        r["attestations"][1]["nextVerseQualifier"] = "simple unequivocal pronunciation problem"
+        self.assertTrue(any("6:3 known-to-patriarchs nuance" in e for e in validate_core_name_lexeme(d, self.core_contract)))
+
+    def test_core_ex15_yhwh_name_hymn_is_not_direct_divine_speech(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "yhwh")
+        r["attestations"][2]["speaker"] = "God speaking first person"
+        self.assertTrue(any("Exodus15 YHWH name hymn" in e for e in validate_core_name_lexeme(d, self.core_contract)))
+
+    def test_core_el_ex34_attribute_phrase_with_proclaimed_yhwh(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "el")
+        r["attestations"][0]["contextualClause"] = "El as unique distinct deity"
+        self.assertTrue(any("El attribute phrases" in e for e in validate_core_name_lexeme(d, self.core_contract)))
+
+    def test_core_el_deut32_faithful_rock_parallel_preserved(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "el")
+        r["attestations"][1]["poeticParallel"] = "not the Rock"
+        self.assertTrue(any("El attribute phrases" in e for e in validate_core_name_lexeme(d, self.core_contract)))
+
+    def test_core_el_deut32_strange_god_cannot_be_identified_as_yhwh(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "el")
+        r["attestations"][2]["isYHWH"] = True
+        self.assertTrue(any("foreign or putative god wrongly" in e for e in validate_core_name_lexeme(d, self.core_contract)))
+
+    def test_core_el_deut32_strange_god_negation_must_remain(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "el")
+        r["attestations"][2]["negationClause"] = "YHWH and a second true god"
+        self.assertTrue(any("negative El clauses deleted" in e for e in validate_core_name_lexeme(d, self.core_contract)))
+
+    def test_core_el_isa43_10_formed_god_negation_must_remain(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "el")
+        r["attestations"][3]["negationClause"] = "I was formed"
+        self.assertTrue(any("negative El clauses deleted" in e for e in validate_core_name_lexeme(d, self.core_contract)))
+
+    def test_core_el_isa43_10_other_god_not_yhwh(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "el")
+        r["attestations"][3]["referentClass"] = "YHWH"
+        self.assertTrue(any("foreign or putative god wrongly" in e for e in validate_core_name_lexeme(d, self.core_contract)))
+
+    def test_core_el_isa43_12_positive_divine_self_predication(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "el")
+        r["attestations"][4]["isYHWH"] = False
+        self.assertTrue(any("positive El divine self-predication" in e for e in validate_core_name_lexeme(d, self.core_contract)))
+
+    def test_core_referents_not_collapsible_to_a_single_global_el_name(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "el")
+        for item in r["attestations"]:
+            item["referentClass"] = "YHWH"
+        self.assertTrue(any("foreign or putative god wrongly" in e for e in validate_core_name_lexeme(d, self.core_contract)))
+
+    def test_core_source_contract_rejects_deleted_exact_verse(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "el")
+        r["attestations"].pop()
+        self.assertTrue(any("eight unique YHWH/El contexts" in e for e in validate_core_name_lexeme(d, self.core_contract)))
+
+    def test_core_contract_cannot_drop_speaker_and_referent_lock(self) -> None:
+        c = copy.deepcopy(self.core_contract)
+        c["lockedFields"].remove("referentClass")
+        self.assertTrue(any("referent lock weakened" in e for e in validate_core_name_lexeme(self.baseline, c)))
+
+    def test_full_coverage_cannot_lose_yhwh_baseline_attestations(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "yhwh")
+        r["attestations"] = []
+        self.assertTrue(any("Arena/yhwh lacks independently" in e for e in validate_full_coverage(d, self.extension)))
+
+    def test_full_coverage_cannot_lose_unrelated_extension_attestations(self) -> None:
+        d = copy.deepcopy(self.extension)
+        r = next(x for x in d["records"] if x["id"] == "anastasis-zoe")
+        r["attestations"] = []
+        self.assertTrue(any("extension/anastasis-zoe lacks" in e for e in validate_full_coverage(self.baseline, d)))
+
+    def test_full_coverage_not_product_approval_after_one_form_checked(self) -> None:
+        d = copy.deepcopy(self.extension)
+        r = next(x for x in d["records"] if x["id"] == "yah")
+        r["publicationState"] = "PROMOTE"
+        self.assertTrue(any("extension/yah unreviewed Product promotion" in e for e in validate_full_coverage(self.baseline, d)))
 
 
 if __name__ == "__main__":
