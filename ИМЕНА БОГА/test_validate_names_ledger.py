@@ -6,7 +6,7 @@ import json
 import unittest
 from pathlib import Path
 
-from validate_names_ledger import validate, validate_extension, validate_source_access, validate_apocalyptic, validate_prophetic_namings, validate_six_title_attestations, validate_memorial_attestations
+from validate_names_ledger import validate, validate_extension, validate_source_access, validate_apocalyptic, validate_prophetic_namings, validate_six_title_attestations, validate_memorial_attestations, validate_speech_intertext
 
 ROOT = Path(__file__).resolve().parent
 
@@ -19,6 +19,7 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         cls.sources = json.loads((ROOT / "data" / "source_access_register_v1.json").read_text(encoding="utf-8"))
         cls.title_contract = json.loads((ROOT / "data" / "attestation_contract_v1.json").read_text(encoding="utf-8"))
         cls.memorial_contract = json.loads((ROOT / "data" / "memorial_attestation_contract_v1.json").read_text(encoding="utf-8"))
+        cls.speech_contract = json.loads((ROOT / "data" / "speech_intertext_contract_v1.json").read_text(encoding="utf-8"))
 
     def test_current_research_corpora_pass_structure(self) -> None:
         self.assertEqual([], validate(self.baseline))
@@ -28,6 +29,7 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertEqual([], validate_prophetic_namings(self.baseline))
         self.assertEqual([], validate_six_title_attestations(self.baseline, self.title_contract))
         self.assertEqual([], validate_memorial_attestations(self.baseline, self.memorial_contract))
+        self.assertEqual([], validate_speech_intertext(self.baseline, self.speech_contract))
 
     def test_altar_cannot_be_promoted_to_personal_name(self) -> None:
         data = copy.deepcopy(self.baseline)
@@ -607,6 +609,114 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         r = next(x for x in d["records"] if x["id"] == "SRC-NET-EXODUS17")
         r["forbiddenUse"] = "Publisher fully approves literal textual proof"
         self.assertTrue(any("textual emendation" in e for e in validate_source_access(d)))
+
+
+    def test_abba_mark_prayer_speaker_cannot_be_paul(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "abba")
+        r["attestations"][0]["speaker"] = "Paul"
+        self.assertTrue(any("changed speaker" in e for e in validate_speech_intertext(d, self.speech_contract)))
+
+    def test_abba_romans_cannot_exchange_our_cry_with_spirit_agent(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "abba")
+        r["attestations"][1]["agentOfCry"] = "Spirit of Son, κρᾶζον"
+        self.assertTrue(any("crying agents collapsed" in e for e in validate_speech_intertext(d, self.speech_contract)))
+
+    def test_abba_galatians_spirit_cries_not_paul_plural(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "abba")
+        r["attestations"][2]["agentOfCry"] = "we, κράζομεν"
+        self.assertTrue(any("crying agents collapsed" in e for e in validate_speech_intertext(d, self.speech_contract)))
+
+    def test_abba_is_aramaic_transliteration_in_greek_not_hebrew_mss(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "abba")
+        r["attestations"][0]["languageOrigin"] = "ORIGINAL_HEBREW_MANUSCRIPT"
+        self.assertTrue(any("Greek script versus Aramaic" in e for e in validate_speech_intertext(d, self.speech_contract)))
+
+    def test_abba_thgnt_accents_do_not_replace_sblgnt_surface(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "abba")
+        r["attestations"][0]["surface"] = "ἀββᾶ ὁ πατήρ"
+        self.assertTrue(any("SBLGNT Abba original Greek" in e for e in validate_speech_intertext(d, self.speech_contract)))
+
+    def test_abba_editorial_accent_differences_remain_labeled(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "abba")
+        r["printedOrthography"]["thgnt"] = "Αββα"
+        self.assertTrue(any("publisher-specific accents" in e for e in validate_speech_intertext(d, self.speech_contract)))
+
+    def test_john9_ego_eimi_spoken_by_nondivine_healed_man(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "ego-eimi")
+        rx = next(x for x in r["attestations"] if x["locusId"] == "ego-john9-human")
+        rx["isDivineDesignation"] = True
+        self.assertTrue(any("ordinary human ego eimi" in e for e in validate_speech_intertext(d, self.speech_contract)))
+
+    def test_john9_speaker_cannot_be_replaced_by_jesus(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "ego-eimi")
+        rx = next(x for x in r["attestations"] if x["locusId"] == "ego-john9-human")
+        rx["speaker"] = "Jesus"
+        self.assertTrue(any("ordinary human ego eimi" in e for e in validate_speech_intertext(d, self.speech_contract)))
+
+    def test_john8_preabraham_context_not_ordinary_identity(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "ego-eimi")
+        rx = next(x for x in r["attestations"] if x["locusId"] == "ego-john8-preabraham")
+        rx["claimScope"] = "just saying I am the same man"
+        self.assertTrue(any("before-Abraham" in e for e in validate_speech_intertext(d, self.speech_contract)))
+
+    def test_lxx_ex3_14_full_ho_on_not_removed_to_force_john8_quote(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "ehyeh")
+        rx = next(x for x in r["attestations"] if x["locusId"] == "ehyeh-ex3-greek")
+        rx["surface"] = "Ἐγώ εἰμι"
+        self.assertTrue(any("LXX Exodus 3:14 full" in e for e in validate_speech_intertext(d, self.speech_contract)))
+
+    def test_lxx_ex3_cannot_inherit_sblgnt_ccby_license(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "ehyeh")
+        rx = next(x for x in r["attestations"] if x["locusId"] == "ehyeh-ex3-greek")
+        rx["rightsState"] = "PUBLICATION_ELIGIBLE"
+        self.assertTrue(any("license / contextual relation" in e for e in validate_speech_intertext(d, self.speech_contract)))
+
+    def test_exodus3_12_promise_vs_exodus3_14_self_declaration(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "ehyeh")
+        rx = next(x for x in r["attestations"] if x["locusId"] == "ehyeh-ex3-promise")
+        rx["surface"] = "אֶהְיֶה אֲשֶׁר אֶהְיֶה"
+        self.assertTrue(any("Hebrew promise/naming distinction" in e for e in validate_speech_intertext(d, self.speech_contract)))
+
+    def test_speech_intertext_contract_cannot_drop_speaker(self) -> None:
+        c = copy.deepcopy(self.speech_contract)
+        c["lockedFields"].remove("speaker")
+        self.assertTrue(any("source/speaker fields removed" in e for e in validate_speech_intertext(self.baseline, c)))
+
+    def test_speech_intertext_dropped_loci_fail_closed(self) -> None:
+        d = copy.deepcopy(self.baseline)
+        r = next(x for x in d["records"] if x["id"] == "ego-eimi")
+        r["attestations"] = []
+        self.assertTrue(any("12 unique locked" in e for e in validate_speech_intertext(d, self.speech_contract)))
+
+    def test_barr_full_article_not_falsely_claimed_read(self) -> None:
+        d = copy.deepcopy(self.sources)
+        r = next(x for x in d["records"] if x["id"] == "SRC-BARR-ABBA-1988")
+        r["accessState"] = "FULL_OBJECT_VERIFIED"
+        self.assertTrue(any("Barr paywalled full article" in e for e in validate_source_access(d)))
+
+    def test_rahlfs_exodus3_license_not_from_sblgnt(self) -> None:
+        d = copy.deepcopy(self.sources)
+        r = next(x for x in d["records"] if x["id"] == "SRC-RAHLFS-EXODUS3")
+        r["rightsState"] = "PUBLICATION_ELIGIBLE"
+        self.assertTrue(any("publisher LXX full" in e for e in validate_source_access(d)))
+
+    def test_sblgnt_john_9_human_source_role_cannot_be_erased(self) -> None:
+        d = copy.deepcopy(self.sources)
+        r = next(x for x in d["records"] if x["id"] == "SRC-SBLGNT-JOHN-EGO")
+        r["supportedUse"] = "John8:58 divine name in every utterance"
+        self.assertTrue(any("nondivine John9:9" in e for e in validate_source_access(d)))
 
 
 if __name__ == "__main__":
