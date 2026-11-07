@@ -19,6 +19,7 @@ SOURCES = Path(__file__).resolve().parent / "data" / "source_access_register_v1.
 ATTESTATION_CONTRACT = Path(__file__).resolve().parent / "data" / "attestation_contract_v1.json"
 MEMORIAL_CONTRACT = Path(__file__).resolve().parent / "data" / "memorial_attestation_contract_v1.json"
 SPEECH_INTERTEXT_CONTRACT = Path(__file__).resolve().parent / "data" / "speech_intertext_contract_v1.json"
+EXTENSION_ATTESTATION_CONTRACT = Path(__file__).resolve().parent / "data" / "extension_attestation_contract_v1.json"
 ALLOWED_CLASSES = {"A1", "A2", "A3", "B1", "C", "D"}
 ALLOWED_ACCESS = {"FULL_OBJECT_VERIFIED", "PARTIAL_OBJECT", "CATALOG_ONLY", "LINK_ONLY", "NOT_ACQUIRED"}
 ALLOWED_LOCATOR = {"EXACT_LOCATOR_VERIFIED", "COARSE_LOCATOR_ONLY", "LOCATOR_MISSING"}
@@ -375,6 +376,8 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-SBLGNT-JOHN-EGO": "GREEK_EGO_EIMI_WITH_HUMAN_NEGATIVE_CONTROL",
     "SRC-RAHLFS-EXODUS3": "PUBLISHER_GREEK_LXX_EXODUS3_SELF_REVELATION",
     "SRC-BARR-ABBA-1988": "ATTRIBUTED_ABBA_LEXICAL_CRITIQUE_CATALOG_ONLY",
+    "SRC-JBQ-YAH-2014": "ATTRIBUTED_SECONDARY_YAH_NAME_USAGE_AND_TRANSLATION_HISTORY",
+    "SRC-NET-PS68": "ATTRIBUTED_PS68_HEBREW_BET_OR_CONJECTURAL_KI",
 }
 
 
@@ -426,7 +429,7 @@ def validate_source_access(sources: dict) -> list[str]:
             errors.append(f"{prefix}: unknown HOLD token")
         if source.get("criticalEditionCollated") is not False:
             errors.append(f"{prefix}: falsely claims edition collation")
-        if source.get("rightsState") == "PUBLICATION_ELIGIBLE" and rid not in {"SRC-VANWOLDE-2021", "SRC-TR1550-REV18", "SRC-SBLGNT-CCBY-LICENSE", "SRC-CAMBRIDGE-GOD-PRONOUNS"}:
+        if source.get("rightsState") == "PUBLICATION_ELIGIBLE" and rid not in {"SRC-VANWOLDE-2021", "SRC-TR1550-REV18", "SRC-SBLGNT-CCBY-LICENSE", "SRC-CAMBRIDGE-GOD-PRONOUNS", "SRC-SUCHARD-ELOHIM-2025"}:
             errors.append(f"{prefix}: evidence of a source-level license missing")
         if rid == "SRC-TR1550-REV18":
             if source.get("rightsState") != "PUBLICATION_ELIGIBLE" or "Public Domain" not in str(source.get("license", "")):
@@ -491,11 +494,25 @@ def validate_source_access(sources: dict) -> list[str]:
             if (source.get("rightsState") != "RIGHTS_UNKNOWN"
                 or source.get("sourceRole") != "GREEK_NT_SEMITIC_TRANSLITERATION_WITNESS"):
                 errors.append(f"{prefix}: NT Sabaoth display rights/Greek transliteration role lost")
+        if rid == "SRC-JBQ-YAH-2014":
+            if (source.get("evidenceClass") != "B1" or
+                source.get("rightsState") != "RIGHTS_UNKNOWN" or
+                source.get("creator") != "Clifford Hubert Durousseau" or
+                source.get("year") != 2014):
+                errors.append(f"{prefix}: JBQ Yah bibliography/rights mistaken for editorial consensus")
+        if rid == "SRC-NET-PS68":
+            if (source.get("rightsState") != "PERMISSION_REQUIRED" or
+                source.get("evidenceClass") != "B1" or
+                "כִּי יָהּ שְׁמוֹ" not in str(source.get("supportedUse", ""))):
+                errors.append(f"{prefix}: conjectural NET Psalm68 ki Yah must be attributed, not substituted for MT")
         if rid == "SRC-SUCHARD-ELOHIM-2025":
             if (source.get("evidenceClass") != "B1" or
-                source.get("rightsState") != "PERMISSION_REQUIRED" or
-                source.get("year") != 2025):
-                errors.append(f"{prefix}: Suchard 2025 hypothesis raised to unchecked primary authority")
+                source.get("rightsState") != "PUBLICATION_ELIGIBLE" or
+                source.get("year") != 2025 or
+                "CC BY 4.0" not in str(source.get("license", "")) or
+                source.get("licenseScope") != "SUCHARD_ARTICLE_2025_ONLY_NOT_QUOTED_TRANSLATIONS_OR_THIRD_PARTY_REFERENCES" or
+                source.get("publicationState") != "BLOCKED"):
+                errors.append(f"{prefix}: Suchard article CC BY 4.0 limited rights / B1 hypothesis distinction lost")
         if rid == "SRC-RAHLFS-ISAIAH":
             if (source.get("rightsState") != "PERMISSION_REQUIRED"
                 or source.get("accessState") != "PARTIAL_OBJECT"
@@ -1252,6 +1269,173 @@ def validate_speech_intertext(baseline: dict, contract: dict) -> list[str]:
     return errors
 
 
+EXTENSION_NEW_IDS = {
+    "yah", "eloah", "elah-shmaya", "el-hay", "avinu",
+    "yhwh-ori", "el-emunah", "el-rahum-hannun",
+    "kyrios-ho-theos", "poimen-ho-kalos", "anastasis-zoe",
+}
+EXTENSION_NEW_LOCK_FIELDS = (
+    "locusId", "verse", "surface", "language", "edition", "narrativeSpeaker",
+    "speechAct", "referent", "sourceUrl", "checkState",
+    "criticalEditionStatus", "rightsState", "publicationState"
+)
+
+
+def validate_extension_attestations(extension: dict, contract: dict) -> list[str]:
+    """Fail closed on 14 independent Greek/Hebrew/Aramaic attestation witnesses.
+
+    Structural original-script contract only, not independent manuscript
+    collation. The editor must revise snapshots explicitly; never regenerate.
+    """
+    errors: list[str] = []
+    if (not isinstance(contract, dict) or contract.get("schemaVersion") != 1
+        or contract.get("corpusId") != "NAMES_EXTENSION_ORIGINAL_LANGUAGE_OCCURRENCES_V1"):
+        return ["extension-witness: missing or malformed versioned contract"]
+    if set(contract.get("extensionIds", [])) != EXTENSION_NEW_IDS:
+        errors.append("extension-witness: reviewed additional ID set was changed")
+    if tuple(contract.get("lockedFields", [])) != EXTENSION_NEW_LOCK_FIELDS:
+        errors.append("extension-witness: exact verse/source/speaker contract weakened")
+    if contract.get("counts") != {"records": 11, "occurrences": 14, "publicationEligible": 0}:
+        errors.append("extension-witness: independent count/approval lock altered")
+    items = contract.get("lockedAttestations", [])
+    if not isinstance(items, list):
+        return errors + ["extension-witness: fixed source snapshots missing"]
+    expected: dict[str, dict] = {}
+    for obj in items:
+        if not isinstance(obj, dict):
+            errors.append("extension-witness: non-object source snapshot")
+            continue
+        loc = obj.get("locusId")
+        if not isinstance(loc, str) or not loc or loc in expected:
+            errors.append(f"extension-witness: duplicate/missing snapshot ID {loc}")
+            continue
+        if obj.get("extensionId") not in EXTENSION_NEW_IDS:
+            errors.append(f"extension-witness: unknown extension ID in snapshot {loc}")
+        expected[loc] = obj
+    rows = extension.get("records", [])
+    by_id = {r.get("id"): r for r in rows if isinstance(r, dict)} if isinstance(rows, list) else {}
+    seen: dict[str, dict] = {}
+    counts: dict[str, int] = {}
+    for rid in EXTENSION_NEW_IDS:
+        row = by_id.get(rid, {})
+        att = row.get("attestations")
+        if not isinstance(att, list):
+            errors.append(f"extension-witness: no attestation list for {rid}")
+            continue
+        counts[rid] = len(att)
+        if not row.get("contextualAssertion"):
+            errors.append(f"extension-witness: claim boundary missing for {rid}")
+        for obj in att:
+            if not isinstance(obj, dict):
+                errors.append(f"extension-witness: malformed occurrence in {rid}")
+                continue
+            loc = obj.get("locusId")
+            if not isinstance(loc, str) or not loc or loc in seen:
+                errors.append(f"extension-witness: missing/duplicate occurrence ID {loc}")
+                continue
+            seen[loc] = obj
+            ref = expected.get(loc)
+            if ref is None or ref.get("extensionId") != rid:
+                errors.append(f"extension-witness: unreviewed source ID {rid}/{loc}")
+                continue
+            for field in EXTENSION_NEW_LOCK_FIELDS:
+                if field not in obj or field not in ref or obj.get(field) != ref.get(field):
+                    errors.append(f"extension-witness: {rid}/{loc}: reviewed {field} changed")
+            if obj.get("checkState") != "DIGITAL_VERSE_SURFACE_CHECKED":
+                errors.append(f"extension-witness: {rid}/{loc}: unreviewed digital status")
+            if obj.get("criticalEditionStatus") != "NOT_COLLATED":
+                errors.append(f"extension-witness: {rid}/{loc}: source promoted to false collation")
+            if obj.get("publicationState") != "BLOCKED":
+                errors.append(f"extension-witness: {rid}/{loc}: unauthorized Product release")
+            surface = obj.get("surface")
+            if not isinstance(surface, str):
+                errors.append(f"extension-witness: {rid}/{loc}: original-script surface missing")
+            else:
+                errors.extend(unicode_surface_issues(f"extension-witness/{loc}", surface))
+                if obj.get("language") == "hebrew" and not HEBREW.search(surface):
+                    errors.append(f"extension-witness: {loc}: expected Hebrew script")
+                if obj.get("language") == "aramaic" and not HEBREW.search(surface):
+                    errors.append(f"extension-witness: {loc}: expected Hebrew script for Aramaic text")
+                if obj.get("language") == "greek" and not GREEK.search(surface):
+                    errors.append(f"extension-witness: {loc}: expected Greek script")
+            if not URL.match(str(obj.get("sourceUrl", ""))):
+                errors.append(f"extension-witness: {loc}: source URL invalid")
+    if len(expected) != 14 or len(seen) != 14 or set(expected) != set(seen):
+        errors.append("extension-witness: exactly 14 unique verified source contexts required")
+    if counts != {
+        "yah": 2, "eloah": 1, "elah-shmaya": 2, "el-hay": 1, "avinu": 1,
+        "yhwh-ori": 1, "el-emunah": 1, "el-rahum-hannun": 1,
+        "kyrios-ho-theos": 1, "poimen-ho-kalos": 2, "anastasis-zoe": 1,
+    }:
+        errors.append("extension-witness: reviewed per-lemma occurrence counters altered")
+    audit = extension.get("auditProtocol", {}).get("extensionAudit", {})
+    if (set(audit.get("ids", [])) != EXTENSION_NEW_IDS or
+        audit.get("totalAttestations") != 14 or
+        audit.get("finalEtymologiesSettled") != 0 or
+        audit.get("publicationEligible") != 0 or
+        audit.get("criticalEditionStatus") != "NOT_COLLATED"):
+        errors.append("extension-witness: extra corpus status or publication hold changed")
+    def obs(locus: str) -> dict:
+        return seen.get(locus, {})
+    if (obs("ext-yah-ex15-song").get("prefixOnName") != "NONE"
+        or obs("ext-yah-ps68-prefixed").get("surface") != "בְּיָהּ שְׁמוֹ"
+        or obs("ext-yah-ps68-prefixed").get("prefixOnName") != "בְּ"):
+        errors.append("extension-witness: Psalm68 bet prefix and Exodus15 standalone Yah conflated")
+    ps = obs("ext-yah-ps68-prefixed")
+    if (ps.get("numbering") != {"mt": "Psalms 68:5", "commonEnglish": "Psalms 68:4"}
+        or "NET proposes" not in str(ps.get("textualConjecture", ""))):
+        errors.append("extension-witness: Psalm68 versification/conjecture promoted to MT")
+    if (obs("ext-eloah-deut32").get("grammaticalActor") != "Jeshurun, וַיִּטֹּשׁ"
+        or obs("ext-eloah-deut32").get("grammaticalObject") != "אֱלוֹהַּ"):
+        errors.append("extension-witness: Eloah object of Jeshurun's rejection lost")
+    if (obs("ext-elah-dan2-request").get("language") != "aramaic"
+        or obs("ext-elah-dan2-praise").get("surface") != "לֶאֱלָהּ שְׁמַיָּא"
+        or obs("ext-elah-dan2-praise").get("grammaticalPrefix") != "לֶ"):
+        errors.append("extension-witness: Daniel2 Aramaic language/lamed prefix lost")
+    controls = by_id.get("elah-shmaya", {}).get("negativeControls", [])
+    if (not isinstance(controls, list) or
+        not any(isinstance(x, dict) and x.get("verse") == "Daniel 2:11"
+                and x.get("surface") == "אֱלָהִין" for x in controls) or
+        not any(isinstance(x, dict) and x.get("verse") == "Daniel 2:28"
+                and x.get("surface") == "אֱלָהּ בִּשְׁמַיָּא" for x in controls)):
+        errors.append("extension-witness: Aramaic pagan gods vs God in heaven contrast removed")
+    if (obs("ext-elhay-ps42").get("prefixOnEl") != "לְ"
+        or obs("ext-elhay-ps42").get("numbering") != {
+            "mt": "Psalms 42:3", "commonEnglish": "Psalms 42:2"
+        }):
+        errors.append("extension-witness: Psalm42 lamed and verse numbering lost")
+    if (obs("ext-avinu-isa63").get("language") != "hebrew"
+        or obs("ext-avinu-isa63").get("speechAct") != "corporate_direct_address_to_God_as_Father"):
+        errors.append("extension-witness: Isaiah63 Hebrew corporate Father prayer conflated with Abba")
+    if (obs("ext-yhwhori-ps27").get("namingActInVerse") is not False
+        or "מוֹע" in str(obs("ext-yhwhori-ps27").get("linkedPoeticMetaphor", ""))):
+        errors.append("extension-witness: Psalm27 poetic light falsely turned into name act")
+    if (obs("ext-elemuna-deut32").get("namingActInVerse") is not False
+        or "הַצּוּר" not in str(obs("ext-elemuna-deut32").get("contextParallel",""))):
+        errors.append("extension-witness: Deut32 faithful God separated from Rock parallel")
+    if (obs("ext-elrahum-ex34").get("introductoryClause") != "וַיִּקְרָא, יְהוָה יְהוָה"
+        or obs("ext-elrahum-ex34").get("qualifier") != "NAME_PROCLAMATION_NOT_EACH_ADJECTIVE_AS_PROPER_NAME"):
+        errors.append("extension-witness: Exodus34 naming proclamation vs adjectives distinction lost")
+    luke = obs("ext-kyrios-luke1")
+    if (luke.get("grammaticalSubject") != "κύριος ὁ θεὸς"
+        or luke.get("grammaticalVerb") != "δώσει"
+        or luke.get("recipient") != "Jesus (αὐτῷ)"
+        or luke.get("narrativeSpeaker") != "Gabriel speaking to Mary"
+        or luke.get("rightsState") != "PERMISSION_REQUIRED"):
+        errors.append("extension-witness: Luke1:32 Gabriel/Lord God/Jesus role and THGNT rights conflated")
+    for loc in ("ext-poimen-john1011","ext-poimen-john1014","ext-anastasis-john11"):
+        if obs(loc).get("syntax") not in {
+            "EXPLICIT_NOMINAL_PREDICATE", "TWO_COORDINATED_NOMINAL_PREDICATES"
+        }:
+            errors.append(f"extension-witness: {loc} John predicate silently made absolute ego-eimi")
+    if (obs("ext-poimen-john1011").get("fullClause") != "Ἐγώ εἰμι ὁ ποιμὴν ὁ καλός"
+        or obs("ext-poimen-john1014").get("fullClause") != "ἐγώ εἰμι ὁ ποιμὴν ὁ καλός"):
+        errors.append("extension-witness: John10 shepherd verses' edition-specific clauses drifted")
+    if obs("ext-anastasis-john11").get("fullClause") != "Ἐγώ εἰμι ἡ ἀνάστασις καὶ ἡ ζωή":
+        errors.append("extension-witness: John11 both resurrection and life predicates lost")
+    return errors
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--ledger", type=Path, default=LEDGER)
@@ -1260,6 +1444,7 @@ def main() -> int:
     parser.add_argument("--attestation-contract", type=Path, default=ATTESTATION_CONTRACT)
     parser.add_argument("--memorial-contract", type=Path, default=MEMORIAL_CONTRACT)
     parser.add_argument("--speech-contract", type=Path, default=SPEECH_INTERTEXT_CONTRACT)
+    parser.add_argument("--extension-contract", type=Path, default=EXTENSION_ATTESTATION_CONTRACT)
     args = parser.parse_args()
     try:
         with args.ledger.open("r", encoding="utf-8") as stream:
@@ -1297,12 +1482,19 @@ def main() -> int:
     except (OSError, ValueError) as exc:
         print(f"FAIL: cannot read speech/intertext contract: {exc}", file=sys.stderr)
         return 1
+    try:
+        with args.extension_contract.open("r", encoding="utf-8") as stream:
+            extension_contract = json.load(stream)
+    except (OSError, ValueError) as exc:
+        print(f"FAIL: cannot read extension attestation contract: {exc}", file=sys.stderr)
+        return 1
     issues = (validate(data) + validate_extension(extension, data) +
               validate_source_access(sources) + validate_apocalyptic(data, extension) +
               validate_prophetic_namings(data) +
               validate_six_title_attestations(data, title_contract) +
               validate_memorial_attestations(data, memorial_contract) +
-              validate_speech_intertext(data, speech_contract))
+              validate_speech_intertext(data, speech_contract) +
+              validate_extension_attestations(extension, extension_contract))
     if issues:
         for issue in issues:
             print("FAIL:", issue, file=sys.stderr)
