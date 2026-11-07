@@ -1844,7 +1844,7 @@ class ProvenanceGraphTests(unittest.TestCase):
         d=copy.deepcopy(self.extension)
         row=next(x for x in d["records"] if x["id"]=="eloah")
         new=copy.deepcopy(row["attestations"][0])
-        new["attestationId"]="ATT-EXT-ELOAH-UNLINKED-NEW"
+        new["attestationId"]="ATT-EXT-ELOAH-02"
         new["locusId"]="ext-eloah-unlinked-new"
         row["attestations"].append(new)
         self.assertTrue(any("NG02 complete attestation-to-claim coverage not sustained" in err for err in self.check(extension=d)))

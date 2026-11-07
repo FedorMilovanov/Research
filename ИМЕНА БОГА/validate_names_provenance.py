@@ -1427,7 +1427,11 @@ def validate_provenance(
     source_att_ids=set(att_by_id)
     linked_att_ids=set()
     for claim_item in claim_map.values():
-        linked_att_ids.update(claim_item.get("attestationIds",[]))
+        # References are untrusted JSON data. Earlier guards report wrong types;
+        # never crash the completeness check on an unhashable list/dict.
+        for att_id in claim_item.get("attestationIds",[]):
+            if isinstance(att_id,str):
+                linked_att_ids.add(att_id)
     if linked_att_ids != source_att_ids:
         errors.append("provenance: NG02 complete attestation-to-claim coverage not sustained")
 
