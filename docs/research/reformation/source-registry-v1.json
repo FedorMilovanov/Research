@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 189,
+  "sourceCount": 193,
   "sources": [
     {
       "id": "REF-P01",
@@ -3667,6 +3667,79 @@
       "url": "https://www.stir.ac.uk/research/hub/publication/828431",
       "verificationNote": "2026-11-07 directly read official University of Stirling/QJE scholarly metadata, abstract and independent public IZA discussion record; researchers used district-level late-19th-century Prussian data (1871 Population Census, schools later period), estimated education-human-capital mediation via distance Wittenberg instrument. This is NOT a 16th-century literacy measurement or direct causal proof for every town circa 1520. Full identification model not independently replicated.",
       "checkedAt": "2026-11-07"
+    },
+    {
+      "id": "REF-P82",
+      "documentYear": 1876,
+      "title": "Russian Synodal Bible, eBible RUSSYN electronic edition, Revelation 19–22 and 1 Corinthians 15",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://ebible.org/russyn/REV20.htm",
+      "verificationNote": "2026-11-08: specific Russian Synodal eBible RUSSYN chapters Revelation 19, 20, 21, 22 and 1 Corinthians 15 read directly; exact verse locators verified. Online distributor identifies translation as Public Domain, but the precise selected Russian print edition, biblical textual variants and final quote/publication rights are not comprehensively settled. This records modern translated biblical text, not direct inspection of the oldest Greek witnesses or a historical original autograph. Interpretative chronology Rev19->20 belongs to a marked reading, not a fact guaranteed by this source.",
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "REF-P83",
+      "documentYear": 1689,
+      "title": "Second London Baptist Confession 1677/1689, chapters 31 state of mankind after death and resurrection; 32 last judgment",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.acbcuk.org/1689-baptist-confession-of-faith/",
+      "verificationNote": "2026-11-08: digital historical confessional text chapters 31 and 32 directly consulted. Chapter 31 covers resurrection and intermediate state, chapter 32 judgment; confessional consensus does not prove mandatory premillennial order. No original physical 1677 or 1689 printed copy collated; modern website content not cleared for wholesale reuse.",
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "REF-P84",
+      "documentYear": 1646,
+      "title": "Westminster Confession of Faith historical text, chapters 32 resurrection and 33 last judgment, Westminster Theological Seminary presentation",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.wts.edu/wcf",
+      "verificationNote": "2026-11-08: chapters 32 and 33 directly read via WTS digital historical text, with chapter numbering distinct from 1689 Baptist Confession (31/32). Does not prescribe the asserted future millennial chronology in those chapters. No independent 17th-century first-print or word-by-word critical collation, no quotation/rights clearance for web translation.",
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "REF-S93",
+      "documentYear": 2015,
+      "title": "Ben Witherington III, Revelation: Appendix A Millennial Problem, Cambridge University Press online academic abstract",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.cambridge.org/core/books/abs/revelation/appendix-a-millennial-problem/1229E28DF76CDF4BE40A97E87E6C9E27",
+      "verificationNote": "2026-11-08: Cambridge University Press official book-chapter public abstract directly read; premillennial, amillennial, postmillennial interpretations of Revelation 20:4-6 are expressly named as contested scholarly interpretations. Cambridge digital publication 2015, chapter/book full text not read; B1 cannot be sole support for dispute quote-safe proof. No blanket endorsement by Witherington of author's premillennial interpretation inferred.",
+      "checkedAt": "2026-11-08"
     }
   ]
 }
