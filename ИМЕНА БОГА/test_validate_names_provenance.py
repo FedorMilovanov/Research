@@ -1397,6 +1397,154 @@ class ProvenanceGraphTests(unittest.TestCase):
         x["relationType"]="CONTRASTS_GRAMMATICAL_FORM"
         self.assertTrue(any("required semantic boundary" in e for e in self.check(claims=d)))
 
+    def test_adonai_ex34_moses_not_yhwh_direct_speech(self) -> None:
+        d,o=self.mutate("adonai","baseline",0)
+        o["speaker"]="YHWH first-person naming"
+        self.assertTrue(any("Adonai/Qedosh/Yah original-language speech/form guard changed" in err for err in self.check(baseline=d)))
+
+    def test_adonai_ex34_two_tokens_same_verse_protected(self) -> None:
+        d,o=self.mutate("adonai","baseline",0)
+        o["tokenOccurrenceCount"]=1
+        self.assertTrue(any("Adonai/Qedosh/Yah original-language speech/form guard changed" in err for err in self.check(baseline=d)))
+
+    def test_adonai_ex34_speech_is_prayer(self) -> None:
+        d,o=self.mutate("adonai","baseline",0)
+        o["contextRole"]="new_proper_name_revelation"
+        self.assertTrue(any("Adonai/Qedosh/Yah original-language speech/form guard changed" in err for err in self.check(baseline=d)))
+
+    def test_adonai_isa6_accusative_marker_not_lost(self) -> None:
+        d,o=self.mutate("adonai","baseline",1)
+        o["grammaticalMarker"]="none"
+        self.assertTrue(any("Adonai/Qedosh/Yah original-language speech/form guard changed" in err for err in self.check(baseline=d)))
+
+    def test_adonai_isa6_throne_vision_not_moses_prayer(self) -> None:
+        d,o=self.mutate("adonai","baseline",1)
+        o["speaker"]="Moses addressing God"
+        self.assertTrue(any("Adonai/Qedosh/Yah original-language speech/form guard changed" in err for err in self.check(baseline=d)))
+
+    def test_adonai_ps8_suffixed_form_not_plain_adonai(self) -> None:
+        d,o=self.mutate("adonai","baseline",2)
+        o["surface"]="יְהוָה אֲדֹנָי"
+        self.assertTrue(any("Adonai/Qedosh/Yah original-language speech/form guard changed" in err for err in self.check(baseline=d)))
+
+    def test_adonai_ps8_possessive_vocalization_not_same(self) -> None:
+        d,o=self.mutate("adonai","baseline",2)
+        o["notExactSameVocalization"]=False
+        self.assertTrue(any("Adonai/Qedosh/Yah original-language speech/form guard changed" in err for err in self.check(baseline=d)))
+
+    def test_qedosh_isa1_object_marker_not_lost(self) -> None:
+        d,o=self.mutate("qedosh-yisrael","baseline",0)
+        o["grammaticalMarker"]="none"
+        self.assertTrue(any("Adonai/Qedosh/Yah original-language speech/form guard changed" in err for err in self.check(baseline=d)))
+
+    def test_qedosh_isa1_prophetic_accusation_not_yhwh_direct(self) -> None:
+        d,o=self.mutate("qedosh-yisrael","baseline",0)
+        o["speaker"]="YHWH speaking through prophet"
+        self.assertTrue(any("Adonai/Qedosh/Yah original-language speech/form guard changed" in err for err in self.check(baseline=d)))
+
+    def test_qedosh_isa43_i_yhwh_self_reference_necessary(self) -> None:
+        d,o=self.mutate("qedosh-yisrael","baseline",1)
+        o["selfReferenceClause"]="only human king says I"
+        self.assertTrue(any("Adonai/Qedosh/Yah original-language speech/form guard changed" in err for err in self.check(baseline=d)))
+
+    def test_qedosh_isa43_yhwh_voice_not_prophet_address(self) -> None:
+        d,o=self.mutate("qedosh-yisrael","baseline",1)
+        o["speaker"]="Isaiah, own voice"
+        self.assertTrue(any("Adonai/Qedosh/Yah original-language speech/form guard changed" in err for err in self.check(baseline=d)))
+
+    def test_qedosh_isa47_comma_editorial_not_new_lexeme(self) -> None:
+        d,o=self.mutate("qedosh-yisrael","baseline",2)
+        o["editionPunctuation"]="new name Kadosh only"
+        self.assertTrue(any("Adonai/Qedosh/Yah original-language speech/form guard changed" in err for err in self.check(baseline=d)))
+
+    def test_qedosh_isa47_speaker_uncertainty_not_certain_divine(self) -> None:
+        d,o=self.mutate("qedosh-yisrael","baseline",2)
+        o["speaker"]="YHWH personally named from mouth"
+        self.assertTrue(any("Adonai/Qedosh/Yah original-language speech/form guard changed" in err for err in self.check(baseline=d)))
+
+    def test_yah_ex15_free_yah_not_bet_prefix(self) -> None:
+        d,o=self.mutate("yah","extension",0)
+        o["prefixOnName"]="בְּ"
+        self.assertTrue(any("Adonai/Qedosh/Yah original-language speech/form guard changed" in err for err in self.check(extension=d)))
+
+    def test_yah_ex15_speakers_moses_and_israel(self) -> None:
+        d,o=self.mutate("yah","extension",0)
+        o["narrativeSpeaker"]="YHWH speaks from cloud"
+        self.assertTrue(any("Adonai/Qedosh/Yah original-language speech/form guard changed" in err for err in self.check(extension=d)))
+
+    def test_yah_ex15_short_name_not_other_deity(self) -> None:
+        d,o=self.mutate("yah","extension",0)
+        o["nameRole"]="UNRELATED_NAME_OF_OTHER_GOD"
+        self.assertTrue(any("Adonai/Qedosh/Yah original-language speech/form guard changed" in err for err in self.check(extension=d)))
+
+    def test_yah_ps68_bet_must_not_swap_to_conjectural_ki(self) -> None:
+        d,o=self.mutate("yah","extension",1)
+        o["surface"]="כִּי יָהּ שְׁמוֹ"
+        self.assertTrue(any("Adonai/Qedosh/Yah original-language speech/form guard changed" in err for err in self.check(extension=d)))
+
+    def test_yah_ps68_english_mt_verse_numbering_protected(self) -> None:
+        d,o=self.mutate("yah","extension",1)
+        o["verse"]="Psalms 68:4 MT"
+        self.assertTrue(any("Adonai/Qedosh/Yah original-language speech/form guard changed" in err for err in self.check(extension=d)))
+
+    def test_yah_ps68_net_conjecture_status_remains_hypothetical(self) -> None:
+        d,o=self.mutate("yah","extension",1)
+        o["textualConjecture"]="NET proves MT is כִּי יָהּ שְׁמוֹ"
+        self.assertTrue(any("Adonai/Qedosh/Yah original-language speech/form guard changed" in err for err in self.check(extension=d)))
+
+    def test_adonai_qedosh_yah_all_eight_claim_links_hold(self) -> None:
+        expected={
+            "CLM-ADONAI-EX34-9-MOSES-PRAYER":"ATT-BASE-ADONAI-01",
+            "CLM-ADONAI-ISA6-1-VISION":"ATT-BASE-ADONAI-02",
+            "CLM-ADONAI-PS8-2-OUR-LORD-SUFFIX":"ATT-BASE-ADONAI-03",
+            "CLM-QEDOSH-ISA1-4-REJECTED-HOLY":"ATT-BASE-QEDOSH-YISRAEL-01",
+            "CLM-QEDOSH-ISA43-3-GOD-SELF-SAVIOR":"ATT-BASE-QEDOSH-YISRAEL-02",
+            "CLM-QEDOSH-ISA47-4-REDEEMER-DOXOLOGY":"ATT-BASE-QEDOSH-YISRAEL-03",
+            "CLM-YAH-EX15-2-SUNG-ABBREVIATED-NAME":"ATT-EXT-YAH-01",
+            "CLM-YAH-PS68-5-BET-NAME-CONJECTURE":"ATT-EXT-YAH-02",
+        }
+        for cid,aid in expected.items():
+            r=next(x for x in self.claims["records"] if x["claimId"]==cid)
+            self.assertEqual([aid],r["attestationIds"])
+            self.assertEqual("RESEARCH_HOLD",r["editorialState"])
+            self.assertEqual("BLOCKED",r["publicationState"])
+
+    def test_adonai_human_genesis23_negative_control_must_remain(self) -> None:
+        d=copy.deepcopy(self.baseline)
+        row=next(x for x in d["records"] if x["id"]=="adonai")
+        row["negativeControls"]=[]
+        self.assertTrue(any("Adonai human honorific Genesis23 negative-control lost" in x for x in self.check(baseline=d)))
+
+    def test_yah_ps68_source_net_conjecture_attribution_required(self) -> None:
+        d=copy.deepcopy(self.claims)
+        r=next(x for x in d["records"] if x["claimId"]=="CLM-YAH-PS68-5-BET-NAME-CONJECTURE")
+        r["sourceIds"]=["SRC-MT-MECHON","SRC-JBQ-YAH-2014"]
+        self.assertTrue(any("Yah original MT / secondary source attribution lost" in x for x in self.check(claims=d)))
+
+    def test_yah_ps68_conjecture_cannot_promote_to_printed_mt(self) -> None:
+        d=copy.deepcopy(self.claims)
+        r=next(x for x in d["records"] if x["claimId"]=="CLM-YAH-PS68-5-BET-NAME-CONJECTURE")
+        r["textualReconstructionStatus"]="DIRECT_ANCIENT_MANUSCRIPT_CERTIFIED"
+        self.assertTrue(any("Adonai/Qedosh/Yah interpretive boundary changed" in x for x in self.check(claims=d)))
+
+    def test_qedosh_isa47_speaker_doubt_cannot_be_removed(self) -> None:
+        d=copy.deepcopy(self.claims)
+        r=next(x for x in d["records"] if x["claimId"]=="CLM-QEDOSH-ISA47-4-REDEEMER-DOXOLOGY")
+        r["nameEvidenceStatus"]="DIRECT_YHWH_NEW_PERSONAL_NAME"
+        self.assertTrue(any("Adonai/Qedosh/Yah interpretive boundary changed" in x for x in self.check(claims=d)))
+
+    def test_adonai_ps8_not_lexically_identical_to_ex34(self) -> None:
+        d=copy.deepcopy(self.claims)
+        x=next(r for r in d["semanticRelations"] if r["relationId"]=="REL-ADONAI-ADONEINU-SUFFIX")
+        x["relationType"]="CONTRASTS_REFERENT"
+        self.assertTrue(any("required semantic boundary" in e for e in self.check(claims=d)))
+
+    def test_qedosh_isa1_oracle_speaker_relation_must_stay(self) -> None:
+        d=copy.deepcopy(self.claims)
+        x=next(r for r in d["semanticRelations"] if r["relationId"]=="REL-QEDOSH-ACCUSATION-ORACLE")
+        x["relationType"]="CONTRASTS_GRAMMATICAL_FORM"
+        self.assertTrue(any("required semantic boundary" in e for e in self.check(claims=d)))
+
 
 if __name__ == "__main__":
     unittest.main()

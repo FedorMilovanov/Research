@@ -20,15 +20,15 @@
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 16,
-    "provenanceRegressionTests": 233,
+    "provenanceRegressionTests": 259,
     "canonicalEditions": 4,
-    "curatedClaims": 66,
+    "curatedClaims": 74,
     "allAttestationForeignKeys": 105,
     "editionSpecificGreekUrlsVerified": 21,
     "unselectedGreekEditionUrls": 0,
-    "attestationsReferencedByClaims": 83,
-    "attestationsWithoutClaimReference": 22,
-    "typedClaimRelations": 52,
+    "attestationsReferencedByClaims": 91,
+    "attestationsWithoutClaimReference": 14,
+    "typedClaimRelations": 59,
     "correctedExodusDivineReferentRows": 3,
     "semanticScopeAudits": 15,
     "independentScholarlyClaimApprovals": 0,
@@ -48,7 +48,8 @@
     "yirehNissiPlaceAltarExplanationGuards": 4,
     "shaddaiSabaothSpeakerGuards": 8,
     "elyonQannaSpeakerNameGuards": 6,
-    "danielRevelationDiscourseGuards": 6
+    "danielRevelationDiscourseGuards": 6,
+    "adonaiQedoshYahContextGuards": 8
   },
   "allowedStatuses": [
     "DONE",
@@ -234,9 +235,13 @@
         "26_DANIEL7_REVELATION1_21_DISCOURSE_AND_FORM_AUDIT_20261107.md: exact Daniel7 Aramaic original forms and narrator/figure distinctions, Rev1 greeting vs explicit God speech, Rev21:22 narrative Lord God/Lamb",
         "data/names_claim_registry_v1.json: 5 narrow new claims covering 5 previously unlinked IDs, plus extend existing Rev1:8 explicit-speaker claim with its distinct extension attestation and 6 semantic relations",
         "validate_names_provenance.py: 6 independent original-form/source/role guards, 3 exact pinned SBLGNT URLs, Judisch secondary grammar uncertainty and greeting-vs-direct-speech distinctions",
-        "test_validate_names_provenance.py: 26 new mutation and positive regressions, total 233 provenance tests"
+        "test_validate_names_provenance.py: 26 new mutation and positive regressions, total 233 provenance tests",
+        "27_ADONAI_QEDOSH_YAH_SPEAKER_MORPHOLOGY_AUDIT_20261107.md: direct printed MT Ex34:9, Isa6:1, Ps8:2, Isa1:4,43:3,47:4, Ex15:2 and Ps68:5; Gen23 human adoni negative control",
+        "data/names_claim_registry_v1.json: 8 new research-held claims linking 8 old source/edition-stable attestationId, 7 typed semantic boundaries",
+        "validate_names_provenance.py: eight independent original-form and speaker guards including Genesis23 human honorific, NET Ps68 conjecture vs MT bet prefix/source",
+        "test_validate_names_provenance.py: 259 provenance tests; 26 new positive/adversarial checks"
       ],
-      "verification": "105_STABLE_ATTESTATION_SOURCE_EDITION; 48_SOURCES; 66_RESEARCH_HELD_CLAIMS; 52_TYPED_RELATIONS; 83_OF_105_CLAIM_LINKED; 22_UNLINKED; 21_SINGLE_EDITION_GREEK_URLS; 6_DAN7_REV_ORIGINAL_TEXT_GUARDS; 414_CI_TESTS_EXPECTED; CRITICAL_COLLATIONS_0; PRODUCT_APPROVALS_0",
+      "verification": "105_STABLE_ATTESTATION_SOURCE_EDITION_FK; 48_SOURCES; 74_RESEARCH_HELD_CLAIMS; 59_TYPED_RELATIONS; 91_OF_105_CLAIM_LINKED; 14_WITHOUT_CLAIM; 8_NEW_CONTEXT_GUARDS_AND_ADONI_HUMAN_NEGATIVE_CONTROL; 440_CI_TESTS_EXPECTED; CRITICAL_COLLATIONS_0; PRODUCT_APPROVALS_0",
       "closureAt": null,
       "owner": "Research editorial"
     },
@@ -635,7 +640,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NG-02 22/105 stable source/edition-attested observations still without claim-level editorial links. Assess bounded high-confusion groups: Adonai three pronoun/suffix usages, Qedosh Yisrael three prophecy/oracle/response agents, and Yah Exodus15/Ps68 short-name forms; then review other remaining 13 scattered original-language titles. The 55 legacy missing locusId entries remain a versioned consumer-compatibility problem; stop on budget rather than artificially manufacturing claims. Critical collation and Product approval still zero.",
+  "nextAction": "NG-02: 14 of 105 attestation IDs have source/edition links but no bounded independent claim, not evidence FK breakage. Next bounded waves: prose and poetic YHWH uses (Ex15:3, Gen21:33, Gen16:13), El Gibbor Isa9:5 MT and Isa10:21, remaining extension one-off divine attributes and Rev/John intertext. Do NOT force zero by creating unreviewed claims. The 55 historic missing locusIds need compatible consumer schema and migration checks; original-language scholarly collation and Product release signoffs remain separate.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -717,7 +722,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-07",
-    "planStatus": "NG-01 DONE; NG-02 IN_PROGRESS: 66 research-held claims, 52 typed semantic relations, 83/105 link-reviewed source attestations",
+    "planStatus": "NG-01 DONE; NG-02 IN_PROGRESS: 74 provisional claims, 59 relations, 91/105 linked",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -771,15 +776,18 @@
       "Ex34:14 explicit qanna shemo/character clause in divine discourse and Deut4:24 Moses warning with merely descriptive qanna; exact speakers/words protected by 6 guards, 22 tests and 5 semantic links",
       "Daniel 7:9/13/22 Aramaic Ancient-of-Days two forms and three narrative scenes: throne, another figure approaching, judgment to saints, secondary grammatical attribution only",
       "Revelation 1:4 John greeting ἀπὸ nominative construction distinct from Rev1:8 explicit Lord God speaker; appended separate Rev1:8 ext witness to existing claim rather than duplicating it; Rev21:22 God Almighty and Lamb grammatically distinct yet jointly temple",
-      "5 new research claims plus one expanded existing claim, 6 typed relations, 6 independent source text guards, 3 extra pinned Greek edition URLs and 26 extra regression tests"
+      "5 new research claims plus one expanded existing claim, 6 typed relations, 6 independent source text guards, 3 extra pinned Greek edition URLs and 26 extra regression tests",
+      "Adonai in Moses' double prayer (Ex34:9), prophetic Isaiah6 vision object, Psalm8 adoneinu suffix; Genesis23 human honorific adoni independent adversarial control",
+      "Qadosh of Israel Isa1 prophetic accusation, Isa43 direct YHWH self speech, Isa47 Redeemer/YHWH Sabaoth communal/literary attribution unresolved",
+      "Yah abbreviated divine name in Ex15 song and prefixed bet Yah Ps68:5 MT (English68:4), NET hypothetical ki alternative attributed and rights held",
+      "8 source-bound claims, 7 required links, 8 observation guards, 26 new positive/negative tests"
     ],
     "stillOpen": [
-      "NG-02: 22 of 105 original attestation IDs remain without narrowly reviewed claim links; stable source/edition IDs complete",
-      "55 historic locusId omissions need compatible schema and consumer migration evidence",
-      "Daniel7 Aramaic morphological BDB original and ancient manuscripts not collated; Judisch interpretation attributed",
-      "Rev1/21 original edited SBLGNT checked but Greek manuscript critical apparatus and diverse speaker exegesis outstanding",
-      "66 claims RESEARCH_HOLD; no independent scholarly approvals and no Product publication rights",
-      "GitHub exact-SHA CI must be checked after push"
+      "NG-02: 14 of 105 original attestation IDs without narrow research claim links; source/edition FKs complete",
+      "55 old missing locusId need explicit backward-compatible consumer policy; no invented IDs",
+      "Isa47:4 literary speech agency remains open, NET Ps68 conjecture and rights are unapproved",
+      "Original-language textual collation and independent academic review not completed; Product publication blocked on all 74 claims",
+      "Check exact GitHub SHA all CI and 440 tests before calling wave structurally green"
     ]
   },
   "originalResearchCheckpoint": {
@@ -796,14 +804,14 @@
       "sourceForeignKeys": 105,
       "editionForeignKeys": 105,
       "canonicalEditions": 4,
-      "curatedClaims": 66,
+      "curatedClaims": 74,
       "locusIdMissingHistorically": 55,
       "editionSelectionRecheckHolds": 0,
-      "notes": "Daniel7:9 Ancient throne scene (yomin), 7:13 Ancient approached by like son-of-man (yomayya), 7:22 judgment for saints (yomayya), all Aramaic and Daniel narration; Rev1:4 John greeting nominative apo phrase vs Rev1:8 explicitly Lord God speech with same formula; Rev21:22 John narrative with Lord God Almighty and Lamb distinguished. 83/105 linked, 22 without; no Product approval.",
-      "typedClaimRelations": 52,
+      "notes": "Ex34:9 Adonai twice Moses prayer; Isa6:1 object of vision; Ps8:2 YHWH adoneinu distinct. Isa1:4 Holy One rejection, Isa43:3 divine self oracle, Isa47:4 Redeemer community/uncertain voice. Yah Ex15:2 song versus Ps68:5 printed בְּיָהּ and NET conjectural כי. 91/105 linked. 0 Product approval.",
+      "typedClaimRelations": 59,
       "editionSpecificDigitalVerseRechecksCompleted": 21,
-      "attestationsLinkedToClaims": 83,
-      "attestationsWithoutClaimReferences": 22,
+      "attestationsLinkedToClaims": 91,
+      "attestationsWithoutClaimReferences": 14,
       "divineReferentAddresseeControls": 3,
       "semanticScopeAudits": 15,
       "scholarlyClaimApprovals": 0,
@@ -820,7 +828,8 @@
       "yirehNissiPlaceAltarExplanationGuards": 4,
       "shaddaiSabaothSpeakerGuards": 8,
       "elyonQannaSpeakerNameGuards": 6,
-      "danielRevelationDiscourseGuards": 6
+      "danielRevelationDiscourseGuards": 6,
+      "adonaiQedoshYahContextGuards": 8
     }
   }
 }

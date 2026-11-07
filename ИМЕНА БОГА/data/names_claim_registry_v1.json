@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "corpusId": "NAMES_OF_GOD_CLAIM_LEVEL_EVIDENCE",
   "createdAt": "2026-11-07",
-  "scope": "66 research-held claims; 52 typed relations; 83/105 existing original-language attestation IDs claim linked, with Daniel 7 ancient-days Aramaic distinctions and Revelation greeting/direct speech/temple narration separated.",
+  "scope": "74 provisional research-held claims and 59 typed semantic relations, including Adonai prayer/vision/suffixed form, Qedosh prophetic/oracle/communal voices, and Yah printed MT vs NET conjecture. No source rights or scholarly/Product approval.",
   "editorialPolicy": "Never infer Product approval from link completeness, never replace a cited verse or alternative theory silently; new claims require independent review.",
   "records": [
     {
@@ -1524,6 +1524,194 @@
         "Distinguish biblical scene participants and narration/speech attribution before assigning Christian trinitarian interpretation",
         "Review diverse historical reception, source permissions, and separate Product editorial approval"
       ]
+    },
+    {
+      "claimId": "CLM-ADONAI-EX34-9-MOSES-PRAYER",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "Exodus 34:9 printed MT records Moses in direct prayer to YHWH saying אֲדֹנָי twice in one verse, requesting the Lord's presence and pardon for Israel. Both are in Moses' voice, not a divine first-person self-naming speech, and should not be equated automatically with human honorific אֲדֹנִי to Abraham in Genesis 23.",
+      "attestationIds": [
+        "ATT-BASE-ADONAI-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Use original printed Mechon-Mamre Hebrew as witness; no manuscript or critical-edition apparatus independently collated",
+        "Separate narrator, Moses prayer, seer, God oracle, editorial punctuation and communal hymn, as applicable",
+        "Check source-specific rights and attribution; NET conjectures and Yah reception references are secondary, not MT text",
+        "Require independent philological/editorial/Product approval before publishing"
+      ],
+      "nameEvidenceStatus": "DIVINE_PRAYER_ADDRESS_TWO_TOKENS_ONE_VERSE"
+    },
+    {
+      "claimId": "CLM-ADONAI-ISA6-1-VISION",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "In Isaiah 6:1, the prophetic seer Isaiah narrates his vision וָאֶרְאֶה אֶת-אֲדֹנָי ('I saw the Lord') seated on a throne. The prefixed אֶת marks the object of seeing, in contrast to Moses' spoken prayer vocative in Exodus 34:9; verse 1 is not the throne occupant's direct quote of a new title.",
+      "attestationIds": [
+        "ATT-BASE-ADONAI-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Use original printed Mechon-Mamre Hebrew as witness; no manuscript or critical-edition apparatus independently collated",
+        "Separate narrator, Moses prayer, seer, God oracle, editorial punctuation and communal hymn, as applicable",
+        "Check source-specific rights and attribution; NET conjectures and Yah reception references are secondary, not MT text",
+        "Require independent philological/editorial/Product approval before publishing"
+      ],
+      "nameEvidenceStatus": "VISION_OBJECT_WITH_ET_MARKER"
+    },
+    {
+      "claimId": "CLM-ADONAI-PS8-2-OUR-LORD-SUFFIX",
+      "claimType": "MORPHOLOGICAL_CASE_CONTEXT",
+      "statement": "Psalm 8:2 in Hebrew MT (commonly Psalm 8:1 in English translations) addresses יְהוָה אֲדֹנֵינוּ, 'YHWH our Lord', a communal possessive-suffix form. It is not identical pointed surface אֲדֹנָי in Exodus 34:9 or the human honorific אֲדֹנִי in Genesis 23; shared root/context does not imply every lord address refers to YHWH.",
+      "attestationIds": [
+        "ATT-BASE-ADONAI-03"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Use original printed Mechon-Mamre Hebrew as witness; no manuscript or critical-edition apparatus independently collated",
+        "Separate narrator, Moses prayer, seer, God oracle, editorial punctuation and communal hymn, as applicable",
+        "Check source-specific rights and attribution; NET conjectures and Yah reception references are secondary, not MT text",
+        "Require independent philological/editorial/Product approval before publishing"
+      ],
+      "nameEvidenceStatus": "LORD_WITH_1CP_POSSESSIVE_AND_EXPLICIT_YHWH"
+    },
+    {
+      "claimId": "CLM-QEDOSH-ISA1-4-REJECTED-HOLY",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "Isaiah 1:4 rebukes Judah for forsaking YHWH and despising אֶת-קְדוֹשׁ יִשְׂרָאֵל, the Holy One of Israel. This is prophetic indictment with direct-object marker אֶת, not God addressing Israel in self-identifying first-person in the immediate phrase.",
+      "attestationIds": [
+        "ATT-BASE-QEDOSH-YISRAEL-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Use original printed Mechon-Mamre Hebrew as witness; no manuscript or critical-edition apparatus independently collated",
+        "Separate narrator, Moses prayer, seer, God oracle, editorial punctuation and communal hymn, as applicable",
+        "Check source-specific rights and attribution; NET conjectures and Yah reception references are secondary, not MT text",
+        "Require independent philological/editorial/Product approval before publishing"
+      ],
+      "nameEvidenceStatus": "PROPHETIC_ACCUSATION_OBJECT_OF_REJECTION"
+    },
+    {
+      "claimId": "CLM-QEDOSH-ISA43-3-GOD-SELF-SAVIOR",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "Isaiah 43:3 is divine first-person assurance אֲנִי יְהוָה אֱלֹהֶיךָ, קְדוֹשׁ יִשְׂרָאֵל, מוֹשִׁיעֶךָ: YHWH calls himself Israel's God, Holy One, and Savior. The title is one part of an explicit divine oracle and must not be reassigned to a human prophet as grammatical first-person speaker or detached from Savior and YHWH.",
+      "attestationIds": [
+        "ATT-BASE-QEDOSH-YISRAEL-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Use original printed Mechon-Mamre Hebrew as witness; no manuscript or critical-edition apparatus independently collated",
+        "Separate narrator, Moses prayer, seer, God oracle, editorial punctuation and communal hymn, as applicable",
+        "Check source-specific rights and attribution; NET conjectures and Yah reception references are secondary, not MT text",
+        "Require independent philological/editorial/Product approval before publishing"
+      ],
+      "nameEvidenceStatus": "DIRECT_DIVINE_ORACLE_IDENTIFICATION_AND_SAVIOR"
+    },
+    {
+      "claimId": "CLM-QEDOSH-ISA47-4-REDEEMER-DOXOLOGY",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "Isaiah 47:4 MT reads a short plural-community/narrative intervention 'Our Redeemer, YHWH of hosts is his name, the Holy One of Israel' (גֹּאֲלֵנוּ ... קְדוֹשׁ, יִשְׂרָאֵל). Literary speaker assignment is not settled beyond the existing guarded attribution 'prophetic-community voice ... subject to review'; digital Mechon-Mamre comma is editorial punctuation and not a separate Hebrew lexeme or independently verified manuscript segmentation.",
+      "attestationIds": [
+        "ATT-BASE-QEDOSH-YISRAEL-03"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Use original printed Mechon-Mamre Hebrew as witness; no manuscript or critical-edition apparatus independently collated",
+        "Separate narrator, Moses prayer, seer, God oracle, editorial punctuation and communal hymn, as applicable",
+        "Check source-specific rights and attribution; NET conjectures and Yah reception references are secondary, not MT text",
+        "Require independent philological/editorial/Product approval before publishing"
+      ],
+      "nameEvidenceStatus": "REDEEMER_YHWH_SABAOTH_COMMUNITY_INTERJECTION_UNCERTAIN_SPEAKER"
+    },
+    {
+      "claimId": "CLM-YAH-EX15-2-SUNG-ABBREVIATED-NAME",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "In Exodus 15:1–2, Moses and Israelites sing praise, calling the Lord יָהּ in עָזִּי וְזִמְרָת יָהּ. Here יָהּ is an abbreviated divine name in a sung confession, not a standalone unrelated deity or an independently given name by God in direct speech. The song continues with the divine identification יְהוָה שְׁמוֹ in 15:3; historical usage claims beyond the printed text are secondary.",
+      "attestationIds": [
+        "ATT-EXT-YAH-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-JBQ-YAH-2014"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Use original printed Mechon-Mamre Hebrew as witness; no manuscript or critical-edition apparatus independently collated",
+        "Separate narrator, Moses prayer, seer, God oracle, editorial punctuation and communal hymn, as applicable",
+        "Check source-specific rights and attribution; NET conjectures and Yah reception references are secondary, not MT text",
+        "Require independent philological/editorial/Product approval before publishing"
+      ],
+      "nameEvidenceStatus": "SHORT_NAME_IN_MOSES_ISRAEL_SONG_NOT_NEW_DEITY"
+    },
+    {
+      "claimId": "CLM-YAH-PS68-5-BET-NAME-CONJECTURE",
+      "claimType": "MORPHOLOGICAL_CASE_CONTEXT",
+      "statement": "Psalm 68:5 MT (common English Psalm 68:4) prints בְּיָהּ שְׁמוֹ with preposition בְּ on the short name Yah. The NET translator note considers a bet-of-identity interpretation and a conjectural כִּי יָהּ שְׁמוֹ; this is an attributed proposed emendation, NOT the digital printed MT, an independently collated ancient manuscript variant, or proof that the Yah abbreviation is another god. Preserve MT vs common English verse numbering.",
+      "attestationIds": [
+        "ATT-EXT-YAH-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-NET-PS68",
+        "SRC-JBQ-YAH-2014"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Use original printed Mechon-Mamre Hebrew as witness; no manuscript or critical-edition apparatus independently collated",
+        "Separate narrator, Moses prayer, seer, God oracle, editorial punctuation and communal hymn, as applicable",
+        "Check source-specific rights and attribution; NET conjectures and Yah reception references are secondary, not MT text",
+        "Require independent philological/editorial/Product approval before publishing"
+      ],
+      "nameEvidenceStatus": "PRINTED_MT_BET_PREFIX_NOT_NET_HYPOTHETICAL_KI",
+      "textualReconstructionStatus": "NET_CONJECTURE_NOT_ATTESTED_MT"
     }
   ],
   "semanticRelations": [
@@ -1941,6 +2129,62 @@
       "toClaimId": "CLM-REV21-22-LORD-GOD-LAMB-TEMPLE",
       "relationType": "LIMITS_INFERENCE",
       "rationale": "Daniel's Ancient and an approaching son-of-man-like figure, and Revelation's Lord God/Lamb coordinated as temple, are literary scenes with distinct lexemes; cross-testament Christology requires separate evidence, not automatic lexical identity.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-ADONAI-PRAYER-THRONE",
+      "fromClaimId": "CLM-ADONAI-EX34-9-MOSES-PRAYER",
+      "toClaimId": "CLM-ADONAI-ISA6-1-VISION",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Moses' two prayer addresses to YHWH differ from Isaiah's reporting seeing Adonai as an object, not two direct divine utterances.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-ADONAI-ADONEINU-SUFFIX",
+      "fromClaimId": "CLM-ADONAI-EX34-9-MOSES-PRAYER",
+      "toClaimId": "CLM-ADONAI-PS8-2-OUR-LORD-SUFFIX",
+      "relationType": "CONTRASTS_GRAMMATICAL_FORM",
+      "rationale": "Psalm8 אֲדֹנֵינוּ with communal first-person suffix is not vocalized אֲדֹנָי in Exodus34 nor the human honorific אֲדֹנִי in Genesis23.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-QEDOSH-ACCUSATION-ORACLE",
+      "fromClaimId": "CLM-QEDOSH-ISA1-4-REJECTED-HOLY",
+      "toClaimId": "CLM-QEDOSH-ISA43-3-GOD-SELF-SAVIOR",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Isaiah1 prophetic indictment names Holy One as rejected object; Isaiah43 YHWH gives first-person identification as Israel's God and Savior.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-QEDOSH-ORACLE-REDEEMER",
+      "fromClaimId": "CLM-QEDOSH-ISA43-3-GOD-SELF-SAVIOR",
+      "toClaimId": "CLM-QEDOSH-ISA47-4-REDEEMER-DOXOLOGY",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Isa43 divine self-declaration differs from Isa47 poetically placed plural-community Redeemer intervention with literary voice requiring review.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-QEDOSH-REDEEMER-SABAOTH",
+      "fromClaimId": "CLM-QEDOSH-ISA47-4-REDEEMER-DOXOLOGY",
+      "toClaimId": "CLM-SABAOTH-ISA6-3-SERAPHIM-HYMN",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Isa47 community/narrative Redeemer YHWH Sabaoth line cannot be recast as the angelic Isa6 holiness hymn simply because YHWH of hosts appears in both.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-YAH-EX15-PS68-PREFIX",
+      "fromClaimId": "CLM-YAH-EX15-2-SUNG-ABBREVIATED-NAME",
+      "toClaimId": "CLM-YAH-PS68-5-BET-NAME-CONJECTURE",
+      "relationType": "CONTRASTS_GRAMMATICAL_FORM",
+      "rationale": "Ex15 song records a free Yah while Ps68:5 MT records prefixed bet Yah; NET suggested ki substitution is not the printed Hebrew line.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-YAH-PS68-YHWH-SHORT-NAME",
+      "fromClaimId": "CLM-YAH-PS68-5-BET-NAME-CONJECTURE",
+      "toClaimId": "CLM-EX3-15-DIVINE-NAME",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "Yah is a shortened biblical name designation associated with YHWH; the common divine referent does not make an unrelated deity or settle the historical vocalization of the full tetragrammaton.",
       "publicationState": "BLOCKED"
     }
   ]

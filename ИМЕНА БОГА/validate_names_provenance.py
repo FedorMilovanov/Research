@@ -630,6 +630,103 @@ DAN7_REV_SECONDARY_SOURCES = {
     "CLM-DAN7-13-ANCIENT-SON-OF-MAN-DISTINCT": {"SRC-DANIEL-ARAMAIC", "SRC-JUDISCH-DAN7-ARAMAIC"},
     "CLM-DAN7-22-ANCIENT-GRANTS-JUDGMENT": {"SRC-DANIEL-ARAMAIC", "SRC-JUDISCH-DAN7-ARAMAIC"},
 }
+REQUIRED_ADONAI_QEDOSH_YAH_CLAIMS = {
+    "CLM-ADONAI-EX34-9-MOSES-PRAYER",
+    "CLM-ADONAI-ISA6-1-VISION",
+    "CLM-ADONAI-PS8-2-OUR-LORD-SUFFIX",
+    "CLM-QEDOSH-ISA1-4-REJECTED-HOLY",
+    "CLM-QEDOSH-ISA43-3-GOD-SELF-SAVIOR",
+    "CLM-QEDOSH-ISA47-4-REDEEMER-DOXOLOGY",
+    "CLM-YAH-EX15-2-SUNG-ABBREVIATED-NAME",
+    "CLM-YAH-PS68-5-BET-NAME-CONJECTURE",
+}
+# Source-anchored independent digital MT locus controls, not manuscript collation.
+ADONAI_QEDOSH_YAH_CONTEXT_GUARDS = {
+    "ATT-BASE-ADONAI-01": {
+        "verse": "Exodus 34:9",
+        "surface": "אֲדֹנָי",
+        "speaker": "Moses addressing God, two tokens in one verse",
+        "contextRole": "prayer_direct_address",
+        "tokenOccurrenceCount": 2,
+        "verseContains": "אֲדֹנָי, יֵלֶךְ-נָא אֲדֹנָי",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt0234.htm",
+    },
+    "ATT-BASE-ADONAI-02": {
+        "verse": "Isaiah 6:1",
+        "surface": "אֶת-אֲדֹנָי",
+        "speaker": "Isaiah, witness of throne vision",
+        "contextRole": "prophetic_vision_narration",
+        "grammaticalMarker": "אֶת-",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt1006.htm",
+    },
+    "ATT-BASE-ADONAI-03": {
+        "verse": "Psalms 8:2 MT",
+        "surface": "יְהוָה אֲדֹנֵינוּ",
+        "speaker": "psalmist, praise address",
+        "contextRole": "suffixed_lord_address",
+        "surfaceDiffersFromAdonai": "אֲדֹנֵינוּ",
+        "notExactSameVocalization": True,
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt2608.htm",
+    },
+    "ATT-BASE-QEDOSH-YISRAEL-01": {
+        "verse": "Isaiah 1:4",
+        "surface": "אֶת-קְדוֹשׁ יִשְׂרָאֵל",
+        "speaker": "Isaiah prophetic accusation",
+        "contextRole": "object_of_rejection",
+        "grammaticalMarker": "אֶת-",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt1001.htm",
+    },
+    "ATT-BASE-QEDOSH-YISRAEL-02": {
+        "verse": "Isaiah 43:3",
+        "surface": "קְדוֹשׁ יִשְׂרָאֵל",
+        "speaker": "YHWH speaking through prophet",
+        "contextRole": "divine_self_description_in_oracle",
+        "selfReferenceClause": "אֲנִי יְהוָה אֱלֹהֶיךָ",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt1043.htm",
+    },
+    "ATT-BASE-QEDOSH-YISRAEL-03": {
+        "verse": "Isaiah 47:4",
+        "surface": "קְדוֹשׁ, יִשְׂרָאֵל",
+        "speaker": "prophetic-community voice, literary attribution subject to review",
+        "contextRole": "redemption_doxology",
+        "editionPunctuation": "comma after קְדוֹשׁ in Mechon-Mamre, no separate lexical name",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt1047.htm",
+    },
+    "ATT-EXT-YAH-01": {
+        "verse": "Exodus 15:2",
+        "surface": "עָזִּי וְזִמְרָת יָהּ",
+        "narrativeSpeaker": "Moses and children of Israel, sung praise",
+        "speechAct": "divine_short_name_in_song",
+        "prefixOnName": "NONE",
+        "nameRole": "ABBREVIATED_DIVINE_NAME",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt0215.htm",
+    },
+    "ATT-EXT-YAH-02": {
+        "verse": "Psalms 68:5 MT (English 68:4)",
+        "surface": "בְּיָהּ שְׁמוֹ",
+        "narrativeSpeaker": "psalmist, summons praise",
+        "speechAct": "divine_short_name_in_poetic_name_statement",
+        "prefixOnName": "בְּ",
+        "nameRole": "ABBREVIATED_DIVINE_NAME_WITH_PREPOSITION",
+        "textualConjecture": "NET proposes כִּי יָהּ שְׁמוֹ; NOT printed MT",
+        "grammaticalAlternative": "bet of identity in NET translator note",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt2668.htm",
+    },
+}
+ADONAI_QEDOSH_YAH_INTERPRETIVE_GUARDS = {
+    "CLM-ADONAI-EX34-9-MOSES-PRAYER": {"nameEvidenceStatus": "DIVINE_PRAYER_ADDRESS_TWO_TOKENS_ONE_VERSE"},
+    "CLM-ADONAI-ISA6-1-VISION": {"nameEvidenceStatus": "VISION_OBJECT_WITH_ET_MARKER"},
+    "CLM-ADONAI-PS8-2-OUR-LORD-SUFFIX": {"nameEvidenceStatus": "LORD_WITH_1CP_POSSESSIVE_AND_EXPLICIT_YHWH"},
+    "CLM-QEDOSH-ISA1-4-REJECTED-HOLY": {"nameEvidenceStatus": "PROPHETIC_ACCUSATION_OBJECT_OF_REJECTION"},
+    "CLM-QEDOSH-ISA43-3-GOD-SELF-SAVIOR": {"nameEvidenceStatus": "DIRECT_DIVINE_ORACLE_IDENTIFICATION_AND_SAVIOR"},
+    "CLM-QEDOSH-ISA47-4-REDEEMER-DOXOLOGY": {"nameEvidenceStatus": "REDEEMER_YHWH_SABAOTH_COMMUNITY_INTERJECTION_UNCERTAIN_SPEAKER"},
+    "CLM-YAH-EX15-2-SUNG-ABBREVIATED-NAME": {"nameEvidenceStatus": "SHORT_NAME_IN_MOSES_ISRAEL_SONG_NOT_NEW_DEITY"},
+    "CLM-YAH-PS68-5-BET-NAME-CONJECTURE": {"nameEvidenceStatus": "PRINTED_MT_BET_PREFIX_NOT_NET_HYPOTHETICAL_KI", "textualReconstructionStatus": "NET_CONJECTURE_NOT_ATTESTED_MT"},
+}
+YAH_REQUIRED_ATTRIBUTED_SOURCES = {
+    "CLM-YAH-EX15-2-SUNG-ABBREVIATED-NAME": {"SRC-MT-MECHON","SRC-JBQ-YAH-2014"},
+    "CLM-YAH-PS68-5-BET-NAME-CONJECTURE": {"SRC-MT-MECHON","SRC-NET-PS68","SRC-JBQ-YAH-2014"},
+}
 # The original reviewed seeds are a required minimum, not a cap on future work.
 # Additional claims must pass the same foreign-key, editorial and publication gates.
 ALLOWED_CLAIM_TYPES = {
@@ -764,6 +861,13 @@ REQUIRED_SEMANTIC_RELATIONS = {
     "REL-REV1-8-REV21-22-DIVINE-TITLE": ("CLM-REV1-8-LORD-GOD-ALPHA", "CLM-REV21-22-LORD-GOD-LAMB-TEMPLE", "CONTRASTS_SPEAKER_EVIDENCE"),
     "REL-REV21-6-REV21-22-NARRATOR-CUE": ("CLM-REV21-6-THRONE-SPEAKER", "CLM-REV21-22-LORD-GOD-LAMB-TEMPLE", "CONTRASTS_SPEAKER_EVIDENCE"),
     "REL-DAN7-13-REV21-22-ONTOLOGY-CAUTION": ("CLM-DAN7-13-ANCIENT-SON-OF-MAN-DISTINCT", "CLM-REV21-22-LORD-GOD-LAMB-TEMPLE", "LIMITS_INFERENCE"),
+    "REL-ADONAI-PRAYER-THRONE": ("CLM-ADONAI-EX34-9-MOSES-PRAYER", "CLM-ADONAI-ISA6-1-VISION", "CONTRASTS_SPEAKER_EVIDENCE"),
+    "REL-ADONAI-ADONEINU-SUFFIX": ("CLM-ADONAI-EX34-9-MOSES-PRAYER", "CLM-ADONAI-PS8-2-OUR-LORD-SUFFIX", "CONTRASTS_GRAMMATICAL_FORM"),
+    "REL-QEDOSH-ACCUSATION-ORACLE": ("CLM-QEDOSH-ISA1-4-REJECTED-HOLY", "CLM-QEDOSH-ISA43-3-GOD-SELF-SAVIOR", "CONTRASTS_SPEAKER_EVIDENCE"),
+    "REL-QEDOSH-ORACLE-REDEEMER": ("CLM-QEDOSH-ISA43-3-GOD-SELF-SAVIOR", "CLM-QEDOSH-ISA47-4-REDEEMER-DOXOLOGY", "CONTRASTS_SPEAKER_EVIDENCE"),
+    "REL-QEDOSH-REDEEMER-SABAOTH": ("CLM-QEDOSH-ISA47-4-REDEEMER-DOXOLOGY", "CLM-SABAOTH-ISA6-3-SERAPHIM-HYMN", "CONTRASTS_SPEAKER_EVIDENCE"),
+    "REL-YAH-EX15-PS68-PREFIX": ("CLM-YAH-EX15-2-SUNG-ABBREVIATED-NAME", "CLM-YAH-PS68-5-BET-NAME-CONJECTURE", "CONTRASTS_GRAMMATICAL_FORM"),
+    "REL-YAH-PS68-YHWH-SHORT-NAME": ("CLM-YAH-PS68-5-BET-NAME-CONJECTURE", "CLM-EX3-15-DIVINE-NAME", "LIMITS_INFERENCE"),
 }
 CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-EX3-15-DIVINE-NAME": {"ATT-BASE-YHWH-01"},
@@ -838,6 +942,14 @@ CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-DAN7-22-ANCIENT-GRANTS-JUDGMENT": {"ATT-BASE-ATIQ-YOMIN-03"},
     "CLM-REV1-4-JOHN-GREETING-TRIAD": {"ATT-EXT-HO-ON-ERCHOMENOS-01"},
     "CLM-REV21-22-LORD-GOD-LAMB-TEMPLE": {"ATT-BASE-PANTOKRATOR-02"},
+    "CLM-ADONAI-EX34-9-MOSES-PRAYER": {"ATT-BASE-ADONAI-01"},
+    "CLM-ADONAI-ISA6-1-VISION": {"ATT-BASE-ADONAI-02"},
+    "CLM-ADONAI-PS8-2-OUR-LORD-SUFFIX": {"ATT-BASE-ADONAI-03"},
+    "CLM-QEDOSH-ISA1-4-REJECTED-HOLY": {"ATT-BASE-QEDOSH-YISRAEL-01"},
+    "CLM-QEDOSH-ISA43-3-GOD-SELF-SAVIOR": {"ATT-BASE-QEDOSH-YISRAEL-02"},
+    "CLM-QEDOSH-ISA47-4-REDEEMER-DOXOLOGY": {"ATT-BASE-QEDOSH-YISRAEL-03"},
+    "CLM-YAH-EX15-2-SUNG-ABBREVIATED-NAME": {"ATT-EXT-YAH-01"},
+    "CLM-YAH-PS68-5-BET-NAME-CONJECTURE": {"ATT-EXT-YAH-02"},
 }
 
 
@@ -908,6 +1020,10 @@ def validate_provenance(
                     continue
                 seen.add(aid)
                 att_by_id[aid] = obs
+                if aid in ADONAI_QEDOSH_YAH_CONTEXT_GUARDS:
+                    for field, expected in ADONAI_QEDOSH_YAH_CONTEXT_GUARDS[aid].items():
+                        if obs.get(field) != expected:
+                            errors.append(f"provenance: {aid} Adonai/Qedosh/Yah original-language speech/form guard changed ({field})")
                 if aid in DAN7_REV_CONTEXT_GUARDS:
                     for field, expected in DAN7_REV_CONTEXT_GUARDS[aid].items():
                         if obs.get(field) != expected:
@@ -1075,6 +1191,24 @@ def validate_provenance(
         errors.append("provenance: required Elyon/Qanna speech/name claims missing")
     if not REQUIRED_DAN7_REV_CONTEXT_CLAIMS.issubset(claim_map):
         errors.append("provenance: required Daniel7/Revelation narrow claims missing")
+    if not REQUIRED_ADONAI_QEDOSH_YAH_CLAIMS.issubset(claim_map):
+        errors.append("provenance: required Adonai/Qedosh/Yah speech/name claims missing")
+    for cid, required_fields in ADONAI_QEDOSH_YAH_INTERPRETIVE_GUARDS.items():
+        item=claim_map.get(cid,{})
+        for field, expected in required_fields.items():
+            if item.get(field)!=expected:
+                errors.append(f"provenance: {cid} Adonai/Qedosh/Yah interpretive boundary changed ({field})")
+    for cid, ids in YAH_REQUIRED_ATTRIBUTED_SOURCES.items():
+        if not ids.issubset(set(claim_map.get(cid,{}).get("sourceIds",[]))):
+            errors.append(f"provenance: {cid} Yah original MT / secondary source attribution lost")
+    adonai_rows=[r for r in baseline.get("records",[]) if r.get("id")=="adonai"]
+    if len(adonai_rows)!=1 or not any(
+        item.get("verse")=="Genesis 23:6,11,15"
+        and item.get("surface")=="אֲדֹנִי"
+        and item.get("referent")=="Abraham, human interlocutor"
+        for item in adonai_rows[0].get("negativeControls",[])
+    ):
+        errors.append("provenance: Adonai human honorific Genesis23 negative-control lost")
     for cid, fields in DAN7_REV_CLAIM_LEVEL_GUARDS.items():
         row=claim_map.get(cid, {})
         for field,expected in fields.items():
@@ -1211,8 +1345,8 @@ def main() -> int:
         for p in problems:
             print("FAIL: " + p, file=sys.stderr)
         return 1
-    print("PASS: 105 attestation IDs / 4 editions; 66 provisional claims, "
-          "52 relations, 6 Daniel7/Revelation original-text context controls and all publication HOLD gates")
+    print("PASS: 105 attestation IDs / 4 editions; 74 provisional claims, "
+          "59 relations, 8 Adonai/Qedosh/Yah original-text context controls and all publication HOLD gates")
     return 0
 
 
