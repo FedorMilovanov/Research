@@ -422,7 +422,66 @@
       "sourceEdition": "Mechon-Mamre MT digital transcription",
       "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
       "criticalEditionStatus": "NOT_COLLATED",
-      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass",
+      "attestations": [
+        {
+          "verse": "Genesis 17:1",
+          "surface": "אֵל שַׁדַּי",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "speaker": "YHWH",
+          "speechAct": "divine_self_identification",
+          "referentClass": "God",
+          "namedObject": "God",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0117.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN"
+        },
+        {
+          "verse": "Genesis 28:3",
+          "surface": "וְאֵל שַׁדַּי",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "speaker": "Isaac",
+          "speechAct": "benediction",
+          "referentClass": "God",
+          "namedObject": "God",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0128.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN"
+        },
+        {
+          "verse": "Genesis 35:11",
+          "surface": "אֵל שַׁדַּי",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "speaker": "God",
+          "speechAct": "divine_self_identification",
+          "referentClass": "God",
+          "namedObject": "God",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0135.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN"
+        },
+        {
+          "verse": "Exodus 6:3",
+          "surface": "בְּאֵל שַׁדָּי",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "speaker": "YHWH",
+          "speechAct": "retrospective_revelation_statement",
+          "referentClass": "God",
+          "namedObject": "God",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0206.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN"
+        }
+      ],
+      "contextualAssertion": "Divine self-identification vs Isaac's benediction vs retrospective revelation. Mechon-Mamre shows שַׁדַּי in Genesis and שַׁדָּי in Exodus 6:3; preserve edition-specific points and don't attribute an unverified etymology or phonetic explanation."
     },
     {
       "id": "el-elyon",
@@ -447,7 +506,76 @@
       "sourceEdition": "Mechon-Mamre MT digital transcription",
       "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
       "criticalEditionStatus": "NOT_COLLATED",
-      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass",
+      "attestations": [
+        {
+          "verse": "Genesis 14:18",
+          "surface": "לְאֵל עֶלְיוֹן",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "speaker": "narrator",
+          "speechAct": "priesthood_designation",
+          "referentClass": "God",
+          "namedObject": "God",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0114.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN"
+        },
+        {
+          "verse": "Genesis 14:19",
+          "surface": "לְאֵל עֶלְיוֹן",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "speaker": "Melchizedek",
+          "speechAct": "blessing",
+          "referentClass": "God",
+          "namedObject": "God",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0114.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN"
+        },
+        {
+          "verse": "Genesis 14:20",
+          "surface": "אֵל עֶלְיוֹן",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "speaker": "Melchizedek",
+          "speechAct": "doxology",
+          "referentClass": "God",
+          "namedObject": "God",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0114.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN"
+        },
+        {
+          "verse": "Genesis 14:22",
+          "surface": "יְהוָה אֵל עֶלְיוֹן",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "speaker": "Abram",
+          "speechAct": "oath_invocation",
+          "referentClass": "God",
+          "namedObject": "God",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0114.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN"
+        }
+      ],
+      "contextualAssertion": "MT Gen 14:22 joins YHWH and El Elyon in Abram's oath. Cargill 2019 hypothesis of a later gloss is secondary scholarship, not a verified manuscript variant here.",
+      "lexicalNote": {
+        "relatedWord": "קֹנֵה",
+        "relatedVerse": "Genesis 14:19,22",
+        "allowedInterpretations": [
+          "creator",
+          "possessor"
+        ],
+        "status": "INTERPRETIVE_DISAGREEMENT_NOT_FINALLY_COLLATED",
+        "secondaryUrl": "https://classic.net.bible.org/passage.php/b/o/passage.php?passage=Gen+14%3A19%2C22"
+      }
     },
     {
       "id": "el-olam",
@@ -472,7 +600,24 @@
       "sourceEdition": "Mechon-Mamre MT digital transcription",
       "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
       "criticalEditionStatus": "NOT_COLLATED",
-      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass",
+      "attestations": [
+        {
+          "verse": "Genesis 21:33",
+          "surface": "יְהוָה אֵל עוֹלָם",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "speaker": "Abraham",
+          "speechAct": "name_invocation",
+          "referentClass": "God",
+          "namedObject": "God",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0121.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN"
+        }
+      ],
+      "contextualAssertion": "Genesis 21:31 names Beer-sheba as place; 21:33 Abraham invokes YHWH, El Olam. The latter is not another name of the place."
     },
     {
       "id": "el-roi",
@@ -501,7 +646,24 @@
       "consonantalForm": "אל ראי",
       "semanticDomain": "seeing, vision; Hagar's response",
       "transliterationCollisionGroup": "Roi_Roi_Ru",
-      "lexicalBoundary": "NOT SAME ROOT AS YHWH_ROI_PASTORAL; א vs ע"
+      "lexicalBoundary": "NOT SAME ROOT AS YHWH_ROI_PASTORAL; א vs ע",
+      "attestations": [
+        {
+          "verse": "Genesis 16:13",
+          "surface": "אַתָּה אֵל רֳאִי",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "speaker": "Hagar",
+          "speechAct": "divine_name_invocation_and_direct_address",
+          "referentClass": "God",
+          "namedObject": "God",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0116.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN"
+        }
+      ],
+      "contextualAssertion": "Narrator explicitly says וַתִּקְרָא שֵׁם־יְהוָה: Hagar calls the name of YHWH in 16:13. Verse 14 separately names the well. Do not wrongly assert no divine naming occurs; classification as permanent proper name is open."
     },
     {
       "id": "el-gibbor",
@@ -566,7 +728,24 @@
       "sourceEdition": "Mechon-Mamre MT digital transcription",
       "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
       "criticalEditionStatus": "NOT_COLLATED",
-      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass",
+      "attestations": [
+        {
+          "verse": "Genesis 35:7",
+          "surface": "אֵל בֵּית-אֵל",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "speaker": "Jacob",
+          "speechAct": "place_naming",
+          "referentClass": "place",
+          "namedObject": "place",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0135.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN"
+        }
+      ],
+      "contextualAssertion": "Jacob builds an altar, but names the PLACE (לַמָּקוֹם), not the altar. Gen 28:19 and 35:15 independently name Beth-El."
     },
     {
       "id": "el-qanna",
@@ -862,6 +1041,19 @@
     "rights": "Not granted by source URL",
     "lxxSourceCorrection": "2026-11-07: deprecated inaccessible SBL-site Septuaginta PDF and intermittent BiblIndex URL, use STEP parallel THOT/LXX for Exod.3:14-15; specific LXX edition/apparatus still HOLD",
     "collisionGuard": "El-Roi (root ראה) and YHWH-ro-i (root רעה) are not the same Hebrew lexeme despite Russian homography; preserve both consonantal roots and separate semantics",
-    "gen2214Contrast": "MT contrasts יִרְאֶה with יֵרָאֶה; do not collapse separate stems. Interpretive rendering remains context dependent"
+    "gen2214Contrast": "MT contrasts יִרְאֶה with יֵרָאֶה; do not collapse separate stems. Interpretive rendering remains context dependent",
+    "patriarchalAttestations": {
+      "phase": "GENESIS_EL_TITLES_2026_11_07",
+      "ids": [
+        "el-shaddai",
+        "el-elyon",
+        "el-olam",
+        "el-roi",
+        "el-bethel"
+      ],
+      "totalAttestations": 11,
+      "exactVerseSurface": "DIGITAL_VERSE_SURFACE_CHECKED_NOT_MANUSCRIPT_COLLATION",
+      "referentGuard": "namedObject and speechAct must be preserved independently of shared el lexeme"
+    }
   }
 }
