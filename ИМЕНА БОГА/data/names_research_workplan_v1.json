@@ -52,7 +52,13 @@
     "adonaiQedoshYahContextGuards": 8,
     "hagarOlamGibborHymnGuards": 5,
     "finalNg02OriginalTextContextGuards": 9,
-    "claimCoverageStructuralClosure": "105_OF_105_CLAIM_LINKED_ONLY_NO_SCHOLARLY_OR_PRODUCT_ACCEPTANCE"
+    "claimCoverageStructuralClosure": "105_OF_105_CLAIM_LINKED_ONLY_NO_SCHOLARLY_OR_PRODUCT_ACCEPTANCE",
+    "locusCompatResolvedTotal": 105,
+    "locusCompatPreservedInline": 50,
+    "locusCompatSidecarAliases": 55,
+    "locusCompatLegacyInlineMissing": 55,
+    "locusCompatRegressionTests": 24,
+    "locusCompatPublicationApprovals": 0
   },
   "allowedStatuses": [
     "DONE",
@@ -250,9 +256,14 @@
         "29_NG02_FINAL_NINE_ATTESTATIONS_STRUCTURAL_ZERO_20261107.md: nine previously unlinked original-language observations now bounded in eight claims: Eloah Deut32:15, Elah Shmaya Dan2:18-19, living God Ps42, Father Isa63, light Ps27, faithfulness Deut32:4, mercy/grace Ex34:6, Christ's Resurrection/Life John11:25",
         "data/names_claim_registry_v1.json: all 105 original 29+13 ledger attestations linked to at least one evidence-scoped research-only claim; 87 claims, 75 semantic relations, still BLOCKED",
         "validate_names_provenance.py: fail-closed exact set equality of source attestations and claim links; nine independent source/speaker/text guards, one added SBLGNT URL pin; no extra manuscript claims",
-        "test_validate_names_provenance.py: 36 new positive and adversarial tests; 319 provenance tests; 500 expected total for exact-SHA GitHub CI"
+        "test_validate_names_provenance.py: 36 new positive and adversarial tests; 319 provenance tests; 500 expected total for exact-SHA GitHub CI",
+        "30_NG02_LOCUS_ID_COMPATIBILITY_20261107.md: audited 51 baseline + 4 extension absent inline locusId; 50 existing inline keys unchanged; consumer contract evidence and opt-in strategy",
+        "data/names_locus_compat_v1.json: all 105 original attestationId->resolvedLocusId pinned with verse/source/edition, 50 preserved and 55 sidecar-only stable legacy aliases",
+        "validate_names_locus_compat.py: standalone source/edition/parent/verse and original-inline identity validation with strict opt-in resolver, fail-closed exact 105 coverage, zero conflicts",
+        "test_validate_names_locus_compat.py: 24 isolated mutation regressions for silent alias migration, duplicate/missing/unknown IDs, incorrect permissions and source metadata",
+        ".github/workflows/names-of-god-ledger-integrity.yml: two CI checks for new sidecar validator and its adversarial tests"
       ],
-      "verification": "105_STABLE_ATTESTATIONS; 105_OF_105_CLAIM_LINKED_STRUCTURAL_ONLY; 0_UNLINKED; 87_PROVISIONAL_CLAIMS; 75_TYPED_RELATIONS; 48_SOURCES; 22_EXACT_SBLGNT_URL_PINS; 9_FINAL_CONTEXT_GUARDS; 500_TESTS_EXPECTED_EXACT_SHA; 0_INDEPENDENT_SCHOLARLY_SIGNOFFS; 0_CRITICAL_MANUSCRIPT_COLLATIONS; 0_PRODUCT_APPROVALS; NG02_RESEARCH_HOLD",
+      "verification": "105_OF_105_ATTESTATION_CLAIM_LINKED; 0_UNLINKED_CLAIM; 105_OF_105_RESEARCH_COMPAT_RESOLVED_LOCUS_KEYS; 50_ORIGINAL_V1_LOCUS_IDS_PRESERVED; 55_V1_FIELDS_MISSING_SIDECAR_ONLY_ALIASES; 24_LOCUS_COMPAT_TESTS; 87_RESEARCH_CLAIMS; 75_RELATIONS; 0_SCHOLARLY_SIGNOFFS; 0_CRITICAL_MANUSCRIPT_COLLATIONS; 0_PRODUCT_APPROVALS; EXACT_SHA_CI_PENDING",
       "closureAt": null,
       "owner": "Research editorial"
     },
@@ -651,7 +662,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NG-02 structural attestation-to-claim coverage is ZERO OPEN (105/105) with hard guards. Transition to CLOSURE QUALITY phase: nonbreaking consumer/schema strategy for 55 historical missing locusIds, independent ancient manuscript/critical apparatus collation and provenance for disputed loci, diversity of scholarly readings, rights/license checks for all 48 sources and Product editorial sign-off. Do not merge or publish or mark NG-02 fully DONE merely because claim linkage 105/105.",
+  "nextAction": "NG-02 claim coverage 105/105 and research-side locus resolution 105/105 (50 native inline, 55 stable sidecar-only aliases; 55 original v1 fields deliberately remain absent). Next bounded task: explicit external Product/Arena consumer compatibility witness before any v2 inline backfill; independent critical manuscript apparatus, scholarly disputes/peer review, rights and Product approvals remain blocked. Do not treat compatibility map as publication permission or close NG-02 scientific gates.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -733,7 +744,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-07",
-    "planStatus": "NG-01 DONE; NG-02 CLAIM-LINKAGE STRUCTURAL_ZERO (105/105); NG-02 SCIENTIFIC/RIGHTS/PRODUCT IN_PROGRESS",
+    "planStatus": "NG-01 DONE; NG-02 attestation graph 105/105 and locus research-side lookup 105/105; NG-02 scientific/rights/Product and external consumers remain IN_PROGRESS",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -800,15 +811,17 @@
       "Daniel2:18 Aramaic mercy request through companions vs Daniel2:19 praise after revelation, exact different prepositional phrases and narratorial voices",
       "Psalm42 Living God poetic longing, Isaiah63 our Father communal prayer Hebrew not NT Abba lexical identity, Psalm27 YHWH my light/salvation possessive metaphors",
       "Exodus34 divine proclamation of YHWH's name WITH mercy/grace and other attributes, each adjective NOT additional independent proper name; John11 Christ speaks to Martha 'I am resurrection and life' two predicates distinct from bare ego-eimi",
-      "Nine formerly unlinked original attestations mapped to eight tightly scoped claims; one exact SBLGNT verse pin; all 105/105 source attestations structurally linked, new forward fail-closed completeness equality control"
+      "Nine formerly unlinked original attestations mapped to eight tightly scoped claims; one exact SBLGNT verse pin; all 105/105 source attestations structurally linked, new forward fail-closed completeness equality control",
+      "Audited 105 witness rows: 50 existing inline locusId, 55 historically missing (51 baseline/4 extension); internal contract consumers depend on existing exact IDs",
+      "Registered all 105 attestationId->resolvedLocusId mapping in sidecar, pinned original 50 and supplied 55 opt-in stable aliases without mutating legacy v1 evidence or Product consumers",
+      "New standalone locator adapter/validator and 24 fail-closed mutation tests wired into Names of God GitHub Actions workflow"
     ],
     "stillOpen": [
-      "Claim-level linkage structural zero reached 105/105; do NOT equate with original-language manuscript validation, scientific review or approval",
-      "55 historic missing locusId values require explicit nonbreaking consumer migration/versioned design; current 105 rows stable and must not be rewritten automatically",
-      "No independent critical Hebrew/Aramaic/Greek manuscript collation or BHS/BHQ/critical NT apparatus verified; high-ambiguity loci remain scholarly research",
-      "All 87 claims still RESEARCH_HOLD/BLOCKED; 48 source registrations have rights/access state, not blanket reuse permission, Product approval 0",
-      "Independent theological/editorial peer review for contested passages, source rights and site/Arena release gates remain unresolved",
-      "Verify exact final SHA GitHub CI success before declaring even structural completion"
+      "55 legacy v1 inline locusId fields remain intentionally absent: sidecar-only opt-in, not migrated; no external Product/Arena consumers audited",
+      "Full Product/Arena consumer contract witness and backwards-compatible v2 dual-read rollout plan required before any inline backfill",
+      "Critical Hebrew/Aramaic/Greek apparatus and independent scholarly proof/peer review incomplete; no source rights grant or Product permission",
+      "All 87 claim records remain RESEARCH_HOLD/BLOCKED and 48 sources not all licensed for Product",
+      "Verify exact SHA CI successful before claiming locator compatibility is structurally green"
     ]
   },
   "originalResearchCheckpoint": {
@@ -828,7 +841,7 @@
       "curatedClaims": 87,
       "locusIdMissingHistorically": 55,
       "editionSelectionRecheckHolds": 0,
-      "notes": "Claim-level structural linkage complete 105/105; 87 research-only source-bound claims and 75 typed relations. Deut32 Eloah and faithfulness, Dan2 Aramaic God of heaven in request/praise, poetic living God/light/father, Ex34 name attributes, John11 Jesus two coordinated predicates. This is NOT manuscript collation, independent peer review, rights grant, or Product publication closure.",
+      "notes": "All 105 attestation IDs have reviewed claim links and now 105 collision-free research-side resolved locus keys through dedicated immutable sidecar: 50 V1 inline IDs untouched, 55 missing V1 fields have sidecar-only aliases. External Product/Arena consumers not audited; NO inline v1 migration performed; scholarly and permissions HOLD retained.",
       "typedClaimRelations": 75,
       "editionSpecificDigitalVerseRechecksCompleted": 22,
       "attestationsLinkedToClaims": 105,
@@ -852,7 +865,13 @@
       "danielRevelationDiscourseGuards": 6,
       "adonaiQedoshYahContextGuards": 8,
       "hagarOlamGibborHymnGuards": 5,
-      "finalNg02OriginalTextContextGuards": 9
+      "finalNg02OriginalTextContextGuards": 9,
+      "locusCompatResolvedTotal": 105,
+      "locusCompatPreservedInline": 50,
+      "locusCompatSidecarAliases": 55,
+      "locusCompatLegacyInlineMissing": 55,
+      "locusCompatRegressionTests": 24,
+      "consumerMutationPolicy": "V1_PRESERVED_SIDECAR_OPT_IN_V2_ONLY_AFTER_EXTERNAL_CONTRACT_TEST"
     }
   }
 }

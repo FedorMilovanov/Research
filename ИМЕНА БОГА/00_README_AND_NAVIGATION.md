@@ -39,6 +39,9 @@
 
 ## Текущий прогресс связанной системы доказательств (NG-02)
 
+**Волна 2026-11-07 — [досье 30: совместимые `locusId` без мутации v1](30_NG02_LOCUS_ID_COMPATIBILITY_20261107.md).** Прямой аудит: **50 оригинальных inline locusId, 55 исторически отсутствующих (51 baseline/4 extension)**. Созданы `data/names_locus_compat_v1.json`, `validate_names_locus_compat.py` и **24 отрицательных/позитивных тестов**, добавлены в CI. Все **105/105** `attestationId` получили *Research-only opt-in* разрешимый ключ: 50 точных старых значений и 55 sidecar алиасов; **исходные JSON, main и внешние Product/Arena потребители не изменены**. Счётчик реально отсутствующих inline полей по-прежнему **55**, не выдавать за нуль. Публикация/научная колляция/права HOLD.
+
+
 **Волна 2026-11-07 — [досье 29: последний девятислойный корпус и структурный claim-coverage нуль](29_NG02_FINAL_NINE_ATTESTATIONS_STRUCTURAL_ZERO_20261107.md).** Последние **9 старых attestationId получили 8 bounded research-held claims**, при этом Дан.2:18+19 сохранены в одном claim с различением просьбы и славословия; созданы **10 типизированных связей, 9 независимых original-language guards и 36 новых regression-тестов**, 1 exact SBLGNT pin для Ин.11:25. **Теперь 105/105 source/edition-linked наблюдений связаны с claim; структурно 0 без claim. 87 research-held claims, 75 typed relations, 48 sources, 500 ожидаемых тестов (165+16+319)**. Это *не* научная/рукописная/правовая/Product приемка: NG-02 остаётся RESEARCH_HOLD, все публикации BLOCKED; 55 legacy locusIds требуют compatibility plan.
 
 
