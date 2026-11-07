@@ -8681,6 +8681,13 @@
       "reviewedAt": "2026-11-07",
       "note": "Статья №9/18, положительный анализ Иоанновых текстов о мире и умилостивлении; первичные греческие формы и исторические авторы отделены от вторичных пересказов, FULL_TEXT_HOLD/RIGHTS_HOLD/EVIDENCE_HOLD/PUBLICATION_HOLD сохранены",
       "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article10_ransom_for_all_two_adams_paul_hebrews.md",
+      "sha256": "54bf5ca3facddd965774e65d17bca99bc66b3a419688e9d55f2b0050322d4947",
+      "reviewedAt": "2026-11-07",
+      "note": "Статья №10/18, 1 Тим. 2/4, Тит. 2, Евр. 2:9, Рим. 5, 1 Кор. 15 и 2 Кор. 5; греческие формы, варианты, кальвинистские и широкие чтения, эллипсис Рим. 5:18; аппарат/полные книги остаются под HOLD",
+      "publicationEligible": false
     }
   ]
 }

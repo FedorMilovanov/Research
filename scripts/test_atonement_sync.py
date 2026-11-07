@@ -177,13 +177,17 @@ class ActualSynchronizationTests(unittest.TestCase):
             {
                 "ИСКУПЛЕНИЕ/synthesis/drafts/article08_particular_redemption_positive_case.md",
                 "ИСКУПЛЕНИЕ/synthesis/drafts/article09_world_and_propitiation_johannine_case.md",
+                "ИСКУПЛЕНИЕ/synthesis/drafts/article10_ransom_for_all_two_adams_paul_hebrews.md",
             },
         )
 
     def test_post_review_draft_manifest_fails_closed(self):
         additions = self.report.get("postReviewDrafts", [])
-        self.assertEqual(len(additions), 2)
-        cases = [("missing-declaration", additions[:-1])]
+        self.assertEqual(len(additions), 3)
+        cases = [
+            (f"missing-declaration-{i}", additions[:i] + additions[i + 1 :])
+            for i in range(len(additions))
+        ]
         for i in range(len(additions)):
             altered_sha = list(additions)
             altered_sha[i] = {**additions[i], "sha256": "0" * 64}
