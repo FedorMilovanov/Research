@@ -264,11 +264,11 @@
       "editorialLabel": "Господь Бог",
       "language": "greek",
       "verifiedDigitalForm": "κύριος ὁ θεὸς",
-      "verseLocator": "Luke 1:32 (THGNT)",
+      "verseLocator": "Luke 1:26–33 (quotation 1:32, THGNT 2017)",
       "sourceEdition": "THGNT 2017",
-      "sourceUrl": "https://www.biblegateway.com/passage/?search=Luke+1%3A30-1%3A35&version=THGNT",
+      "sourceUrl": "https://www.biblegateway.com/passage/?search=Luke+1%3A30-33&version=THGNT",
       "category": "new_testament_divine_title",
-      "editorialCaution": "В данном контексте Господь Бог действует по отношению к Сыну; нельзя без доказательства отождествить грамматический субъект и Иисуса.",
+      "editorialCaution": "Говорящий в повествовании — ангел Гавриил, обращающийся к Марии (Лк. 1:26,30). В ст. 32 κύριος ὁ θεὸς — грамматический субъект дώσει; αὐτῷ — Иисус, получатель престола Давида. Не отождествлять narratorial speaker (Гавриил), grammatical agent (Бог) и recipient (Иисус). Отнесение Бога к Отцу — богословское/контекстуальное толкование, а не идентичность одного поля speaker.",
       "relatedBaselineIds": [
         "yhwh",
         "elohim"
@@ -287,7 +287,23 @@
       "digitalFormStatus": "ONE_VERSE_DIGITAL_SURFACE_CHECKED",
       "criticalEditionStatus": "NOT_COLLATED",
       "etymologyStatus": "NOT_RESOLVED",
-      "note": "Additional research candidate, not part of Arena original 29, not Product-ready."
+      "note": "Additional research candidate, not part of Arena original 29, not Product-ready.",
+      "discourseRoles": {
+        "narrativeSpeaker": "Gabriel, messenger addressing Mary",
+        "grammaticalAgent": "κύριος ὁ θεὸς (the Lord God), nominative subject of δώσει",
+        "recipient": "Jesus, referent of αὐτῷ in Luke 1:32",
+        "recipientItem": "τὸν θρόνον Δαυεὶδ, the throne of David",
+        "agentIdentificationStatus": "LITERAL_GREEK_SYNTAX_VERIFIED",
+        "fatherIdentificationStatus": "THEOLOGICAL_INTERPRETATION_SEPARATE"
+      },
+      "textWitness": {
+        "edition": "THGNT 2017",
+        "verse": "Luke 1:32",
+        "exactRelevantClause": "καὶ δώσει αὐτῷ κύριος ὁ θεὸς τὸν θρόνον Δαυεὶδ",
+        "url": "https://www.biblegateway.com/passage/?search=Luke+1%3A30-33&version=THGNT",
+        "rights": "ALL_RIGHTS_RESERVED",
+        "sourceDisplay": "THGNT on BibleGateway"
+      }
     },
     {
       "id": "poimen-ho-kalos",
@@ -318,7 +334,12 @@
       "digitalFormStatus": "ONE_VERSE_DIGITAL_SURFACE_CHECKED",
       "criticalEditionStatus": "NOT_COLLATED",
       "etymologyStatus": "NOT_RESOLVED",
-      "note": "Additional research candidate, not part of Arena original 29, not Product-ready."
+      "note": "Additional research candidate, not part of Arena original 29, not Product-ready.",
+      "discourseRoles": {
+        "narrativeSpeaker": "Jesus, first person predicative self-identification",
+        "designationReferent": "Jesus",
+        "syntacticObservation": "ἐγώ εἰμι with predicate ὁ ποιμὴν ὁ καλός, not absolute self-identification"
+      }
     },
     {
       "id": "anastasis-zoe",
@@ -348,7 +369,12 @@
       "digitalFormStatus": "ONE_VERSE_DIGITAL_SURFACE_CHECKED",
       "criticalEditionStatus": "NOT_COLLATED",
       "etymologyStatus": "NOT_RESOLVED",
-      "note": "Additional research candidate, not part of Arena original 29, not Product-ready."
+      "note": "Additional research candidate, not part of Arena original 29, not Product-ready.",
+      "discourseRoles": {
+        "narrativeSpeaker": "Jesus, first person predicative self-identification",
+        "designationReferent": "Jesus",
+        "syntacticObservation": "ἐγώ εἰμι with predicate ἡ ἀνάστασις καὶ ἡ ζωή"
+      }
     },
     {
       "id": "ho-on-erchomenos",
@@ -379,7 +405,13 @@
       "digitalFormStatus": "ONE_VERSE_DIGITAL_SURFACE_CHECKED",
       "criticalEditionStatus": "NOT_COLLATED",
       "etymologyStatus": "NOT_RESOLVED",
-      "note": "Additional research candidate, not part of Arena original 29, not Product-ready."
+      "note": "Additional research candidate, not part of Arena original 29, not Product-ready.",
+      "discourseRoles": {
+        "narrativeSpeaker": "John, epistolary greeting in Revelation 1:4",
+        "designationReferent": "the One who is, was, and is coming",
+        "subjectIdentity": "to be established by literary context",
+        "syntacticObservation": "ἀπὸ ὁ ὢν has nominative expression after preposition; preserve edition"
+      }
     },
     {
       "id": "arche-telos",
@@ -411,5 +443,9 @@
       "etymologyStatus": "NOT_RESOLVED",
       "note": "Additional research candidate, not part of Arena original 29, not Product-ready."
     }
-  ]
+  ],
+  "auditRevision": {
+    "date": "2026-11-07",
+    "rationale": "Correct Luke 1:32: angel Gabriel speaks; God acts; Jesus receives. Source THGNT exact verse crosschecked. Distinguish text, narrative voices, and theology."
+  }
 }
