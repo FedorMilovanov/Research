@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 184,
+  "sourceCount": 189,
   "sources": [
     {
       "id": "REF-P01",
@@ -3576,6 +3576,96 @@
       ],
       "url": "https://www.musee-armee.fr/au-programme/expositions/detail/la-haine-des-clans-guerres-de-religion-1559-1610.html",
       "verificationNote": "2026-11-07: Musée de l'Armée exhibition institution article directly read; political factional/royal diplomacy, Wassy and Saint-Bartholomew, iconoclasm and violence by different groups, print propaganda. Distinct from Musée protestant secondary synthesis. The historic exhibition sources and all catalog artifacts not comprehensively collated; museum image reuse permissions unknown. 2023 exposition, not 16th-century primary witness.",
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "id": "REF-P79",
+      "documentYear": 1539,
+      "title": "Marie Dentière, Epistre très utile (1539), original Antwerp Martin l'empereur printing, e-rara catalogue MHR D Den 1 GLN-1329",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.e-rara.ch/mhr_g/content/titleinfo/3930460",
+      "verificationNote": "2026-11-07 official e-rara/Musée historique de la Réformation Geneva record DIRECTLY READ: title, author Marie Dentière, imprint Anvers Martin l'empereur 1539, 32 printed folios, GLN-1329, physical MHR D Den 1, DOI 10.3931/e-rara-12685, IIIF manifest link present. Original digitized images NOT read or fully collated in this wave, no verbatim historic text quotations nor reuse permission inferred. CATALOG_ONLY despite online image availability.",
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "id": "REF-P80",
+      "documentYear": 1524,
+      "title": "Ursula Weyda, polemic against abbot of Pegau 1524, historical original excerpt in GHDI English translation",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://germanhistorydocs.org/en/from-the-reformations-to-the-thirty-years-war-1500-1648/ursula-weydas-attack-on-the-abbott-of-pegau-1524",
+      "verificationNote": "2026-11-07 GHDI institutional excerpt and historical introduction read in English: named author Ursula Weyda, polemic 1524 against Simon Abbot of Pegau on Scripture/papal authority/clerical marriage. Modern translation and selection, original German historical printed witness NOT independently collated. Not evidence of universal female equality.",
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "id": "REF-P81",
+      "documentYear": 1526,
+      "title": "Dominican nuns of St Margaret Strasbourg, historical defense of convent communal life in 1526, GHDI English source excerpt",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://germanhistorydocs.org/en/from-the-reformations-to-the-thirty-years-war-1500-1648/defending-womens-communal-life-dominican-nuns-at-strasbourg-1526",
+      "verificationNote": "2026-11-07 direct GHDI historical translation excerpt [2r] and framing read: Dominican nuns St Margaret Strasbourg under municipal pressure to hear Martin Bucer in 1520s refused conversion. Source is nuns' confessional account not an impartial city hearing record. Original German ms/print folios not directly viewed; no inference that every nun held identical views.",
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "id": "REF-S91",
+      "documentYear": 2024,
+      "title": "G. Sujin Pak, Marie Dentière c1495–1561, Oxford Handbook of the Bible and Reformation (2024), university academic abstract",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://academic.oup.com/edited-volume/58970/chapter-abstract/494436128",
+      "verificationNote": "2026-11-07 Oxford Academic official 2024 chapter metadata and abstract READ, not full book. Scholar G. Sujin Pak examines Marie Dentière 1539 use of biblical examples in arguing for women's role in reform, interpretation and Protestant unity. Separate Oxford/Chicago University Press catalogue 2004 English translation described. No original 1539 text inspection or unlicensed quotation, no claim that all women gained ministerial office.",
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "id": "REF-S92",
+      "documentYear": 2009,
+      "title": "Sascha O Becker and Ludger Woessmann, Was Weber Wrong? A Human Capital Theory of Protestant Economic History, QJE 124(2):531–596, 2009",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.stir.ac.uk/research/hub/publication/828431",
+      "verificationNote": "2026-11-07 directly read official University of Stirling/QJE scholarly metadata, abstract and independent public IZA discussion record; researchers used district-level late-19th-century Prussian data (1871 Population Census, schools later period), estimated education-human-capital mediation via distance Wittenberg instrument. This is NOT a 16th-century literacy measurement or direct causal proof for every town circa 1520. Full identification model not independently replicated.",
       "checkedAt": "2026-11-07"
     }
   ]
