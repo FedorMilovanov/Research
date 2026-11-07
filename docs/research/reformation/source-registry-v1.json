@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 168,
+  "sourceCount": 171,
   "sources": [
     {
       "id": "REF-P01",
@@ -3285,6 +3285,60 @@
       "url": "https://reformeddogmatika.com/marburg-articles/",
       "checkedAt": "2026-11-07",
       "verificationNote": "Directly inspected online editorial text and footnotes. English bracketed clauses under article 7 monastic vows as salvation aid, article 13 forbidding clerical marriage, article 15 meritorious Mass for others. Site notes 7 only in Zurich witness, 15 only in Zurich; says 13 is a manuscript variant, while Zurich archive independently says Z has addition article 13. Footnotes refer to Luther's Works vol38 pp86,88 and WA 30/III pp164,169. This is a secondary/possibly copyright-sensitive web reproduction of an English translation, not historical manuscript, not full WA collation and not strong B1 independent corroboration. Treat as C discovery lead, do not quote long translated clauses or republish their text; verify with full critical German apparatus or scans before claiming exact readings."
+    },
+    {
+      "id": "REF-P76",
+      "documentYear": 1525,
+      "title": "Sebastian Lotzer, Twelve Articles of the Swabian Peasants, Memmingen 1525, complete English historical translation GHDI from Guenther Franz 1963 original German edition",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://germanhistorydocs.org/en/from-the-reformations-to-the-thirty-years-war-1500-1648/grievances-and-demands-the-twelve-articles-of-the-swabian-peasants-february-27-march-1-1525",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "DIRECT full HTML read in the GHDI official historical-document presentation including preamble and articles 1-12, English translation James Harvey Robinson 1904-06 vol II pp94-99 on German edited text Guenther Franz (1963) pp174-179. GHDI dates drafts Feb27-Mar1 1525 and identifies Lotzer and preface collaborator Schappeler; city archive REF-S78 says 28 Feb-3 Mar, a harmless interval uncertainty not evidence of three distinct Twelve-Article documents. Article1 pastor election; 2 tithe distinctions; 3 rejects serfdom BUT explicitly says not absolutely free of authority; 4-5 hunting/fishing/woods; 6-8 labor/rents; 9-11 laws/common pasture/heriot; article12 scripture-based right of correction and further demands. Text is participant-created 1525 pamphlet, but direct historical German printing and edition-level variants have NOT been collated; English site is not a 1525 facsimile. No lengthy copyrighted reproduced translation and no automatic publication rights."
+    },
+    {
+      "id": "REF-S78",
+      "documentYear": 2026,
+      "title": "Stadtarchiv Memmingen, local history and primary-document guide Memmingen und das Aufbegehren von Bauern und Buergern 1525",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://stadtarchiv.memmingen.de/publikationen/memmingen-und-das-aufbegehren-von-bauern-und-buergern-1525.html",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Full public archival-institution chronological exhibition page and subindex read; city archive dates regional Twelve Articles between 28 Feb and 3 Mar 1525, local Memmingen Ten Articles distinct from regional Twelve, establishment Upper Swabian Christian Union ordinance 6/7 March, municipal response to local ten-point list on 15 March. Archive includes excerpts of municipal council protocol but this work does NOT claim personal line-by-line study of whole original register or all 25 early printings; B1 is scholarly/institutional presentation, not an A1 manuscript transcript. No rights on institutional photographs inferred."
+    },
+    {
+      "id": "REF-S79",
+      "documentYear": 2025,
+      "title": "Barbara Schratzenstaller, Bauernkrieg 1524–1526, Historisches Lexikon Bayerns, historical synthesis of causes and divergent regional violence/negotiation",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.historisches-lexikon-bayerns.de/Lexikon/Bauernkrieg,_1524-1526",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Institutional academic HLB page directly read: complex uprising including nonpeasants, earliest southwestern 1524; 1525 regional Christian Union; Weinsberg 16/17 April count of nobles killed, Weingarten contract 17 April negotiated with Seehaufen; escalation and 1525 military repression; distinct Thuringian Muentzer/Frankenhausen movement. The page synthesizes scholarship, not personal independent viewing of every execution/court order. Do not assign all casualties to a particular Luther text, or to Muentzer, or assert Weingarten applied across entire Empire; terms RIGHTS_UNKNOWN + ARCHIVE_HOLD."
     }
   ]
 }
