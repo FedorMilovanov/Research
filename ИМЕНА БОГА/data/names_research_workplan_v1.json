@@ -20,15 +20,15 @@
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 16,
-    "provenanceRegressionTests": 283,
+    "provenanceRegressionTests": 319,
     "canonicalEditions": 4,
-    "curatedClaims": 79,
+    "curatedClaims": 87,
     "allAttestationForeignKeys": 105,
-    "editionSpecificGreekUrlsVerified": 21,
+    "editionSpecificGreekUrlsVerified": 22,
     "unselectedGreekEditionUrls": 0,
-    "attestationsReferencedByClaims": 96,
-    "attestationsWithoutClaimReference": 9,
-    "typedClaimRelations": 65,
+    "attestationsReferencedByClaims": 105,
+    "attestationsWithoutClaimReference": 0,
+    "typedClaimRelations": 75,
     "correctedExodusDivineReferentRows": 3,
     "semanticScopeAudits": 15,
     "independentScholarlyClaimApprovals": 0,
@@ -50,7 +50,9 @@
     "elyonQannaSpeakerNameGuards": 6,
     "danielRevelationDiscourseGuards": 6,
     "adonaiQedoshYahContextGuards": 8,
-    "hagarOlamGibborHymnGuards": 5
+    "hagarOlamGibborHymnGuards": 5,
+    "finalNg02OriginalTextContextGuards": 9,
+    "claimCoverageStructuralClosure": "105_OF_105_CLAIM_LINKED_ONLY_NO_SCHOLARLY_OR_PRODUCT_ACCEPTANCE"
   },
   "allowedStatuses": [
     "DONE",
@@ -244,9 +246,13 @@
         "28_HAGAR_EL_OLAM_ISH9_10_AND_EX15_NAME_20261107.md: Gen16:13 Hagar explicitly calls YHWH's name vs v14 well; Gen21:33 Abraham invokes YHWH El Olam vs v31 place; Isa9:5 royal child title and printed publisher LXX vs unpinned Orthodox variant, Isa10:21 clear God referent; Ex15:3 sung YHWH His name",
         "data/names_claim_registry_v1.json: 5 provisional source-bound claims and 6 typed relations covering 5 prior unlinked records",
         "validate_names_provenance.py: 5 independent printed MT speech/name locks, El Roi seeing versus shepherd negative control, two digital Greek Isaiah9 source status locks, attributed Rashi/Radak source preservation",
-        "test_validate_names_provenance.py: 24 new positive/adversarial tests, total 283 provenance tests"
+        "test_validate_names_provenance.py: 24 new positive/adversarial tests, total 283 provenance tests",
+        "29_NG02_FINAL_NINE_ATTESTATIONS_STRUCTURAL_ZERO_20261107.md: nine previously unlinked original-language observations now bounded in eight claims: Eloah Deut32:15, Elah Shmaya Dan2:18-19, living God Ps42, Father Isa63, light Ps27, faithfulness Deut32:4, mercy/grace Ex34:6, Christ's Resurrection/Life John11:25",
+        "data/names_claim_registry_v1.json: all 105 original 29+13 ledger attestations linked to at least one evidence-scoped research-only claim; 87 claims, 75 semantic relations, still BLOCKED",
+        "validate_names_provenance.py: fail-closed exact set equality of source attestations and claim links; nine independent source/speaker/text guards, one added SBLGNT URL pin; no extra manuscript claims",
+        "test_validate_names_provenance.py: 36 new positive and adversarial tests; 319 provenance tests; 500 expected total for exact-SHA GitHub CI"
       ],
-      "verification": "105_STABLE_ATTEST_SOURCE_EDITION; 48_SOURCES; 79_RESEARCH_HELD_CLAIMS; 65_TYPED_RELATIONS; 96_OF_105_CLAIM_LINKED; 9_UNLINKED; 5_GUARDS; 464_TESTS_EXPECTED_EXACT_SHA_CI; CRITICAL_COLLATIONS_0; PRODUCT_APPROVALS_0",
+      "verification": "105_STABLE_ATTESTATIONS; 105_OF_105_CLAIM_LINKED_STRUCTURAL_ONLY; 0_UNLINKED; 87_PROVISIONAL_CLAIMS; 75_TYPED_RELATIONS; 48_SOURCES; 22_EXACT_SBLGNT_URL_PINS; 9_FINAL_CONTEXT_GUARDS; 500_TESTS_EXPECTED_EXACT_SHA; 0_INDEPENDENT_SCHOLARLY_SIGNOFFS; 0_CRITICAL_MANUSCRIPT_COLLATIONS; 0_PRODUCT_APPROVALS; NG02_RESEARCH_HOLD",
       "closureAt": null,
       "owner": "Research editorial"
     },
@@ -645,7 +651,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NG-02: exactly 9/105 attestationIds remain without bounded research claims, all edition/source stable: Deut32:15 Eloah, Dan2:18-19 Elah Shmaya, Ps42:3 living God, Isa63:16 Our Father, Ps27:1 YHWH my light, Deut32:4 God of faithfulness, Ex34:6 merciful and gracious God, John11:25 Resurrection and Life. Group by direct prayer/poetry/Aramaic address/Greek Christology; do not force 9 into one unjustified claim. 55 historic missing locusIds require compatibility review; critical manuscripts and Product rights approvals remain incomplete.",
+  "nextAction": "NG-02 structural attestation-to-claim coverage is ZERO OPEN (105/105) with hard guards. Transition to CLOSURE QUALITY phase: nonbreaking consumer/schema strategy for 55 historical missing locusIds, independent ancient manuscript/critical apparatus collation and provenance for disputed loci, diversity of scholarly readings, rights/license checks for all 48 sources and Product editorial sign-off. Do not merge or publish or mark NG-02 fully DONE merely because claim linkage 105/105.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -727,7 +733,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-07",
-    "planStatus": "NG-01 DONE; NG-02 IN_PROGRESS: 79 research-held claims, 65 semantic relations, 96/105 claim linked",
+    "planStatus": "NG-01 DONE; NG-02 CLAIM-LINKAGE STRUCTURAL_ZERO (105/105); NG-02 SCIENTIFIC/RIGHTS/PRODUCT IN_PROGRESS",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -789,15 +795,20 @@
       "Gen16 Hagar calls name of YHWH with El Roi, separate v14 well and unrelated shepherd root; Gen21 Abraham invokes YHWH El Olam not place naming",
       "Isaiah9 child naming includes El Gibbor, exact title attribution disputed, Rahlfs publisher LXX 'Messenger of Great Counsel' contrasted with unpinned Orthodox expanded Greek display; Isaiah10:21 direct God return with two separate el terms",
       "Exodus15:3 Moses/Israel sing YHWH His name immediately after abbreviated Yah verse2, not a divine direct self-revelation",
-      "5 new provisional claims, 6 typed links, 5 guards, 24 new adversarial tests; 96/105 linked"
+      "5 new provisional claims, 6 typed links, 5 guards, 24 new adversarial tests; 96/105 linked",
+      "Elōah object of Jeshurun's rejection Deut32:15 and faithful God/rock Deut32:4 as human Song of Moses, not rival divinities",
+      "Daniel2:18 Aramaic mercy request through companions vs Daniel2:19 praise after revelation, exact different prepositional phrases and narratorial voices",
+      "Psalm42 Living God poetic longing, Isaiah63 our Father communal prayer Hebrew not NT Abba lexical identity, Psalm27 YHWH my light/salvation possessive metaphors",
+      "Exodus34 divine proclamation of YHWH's name WITH mercy/grace and other attributes, each adjective NOT additional independent proper name; John11 Christ speaks to Martha 'I am resurrection and life' two predicates distinct from bare ego-eimi",
+      "Nine formerly unlinked original attestations mapped to eight tightly scoped claims; one exact SBLGNT verse pin; all 105/105 source attestations structurally linked, new forward fail-closed completeness equality control"
     ],
     "stillOpen": [
-      "NG-02: 9 original source/edition-linked attestationIds still without separately reviewed claim links",
-      "55 historic missing locusId fields need backward compatible migration planning, not invented values",
-      "Isaiah9 royal title segmentation, Jewish and Christian receptions, ancient LXX Greek textual apparatus remain contested and not fully collated",
-      "El Roi Hagar lexical question and original-language textual apparatus not independently checked for variants",
-      "0 independent scholarly signoffs or Product rights approvals, all 79 research-only claims publication blocked",
-      "Run exact GitHub SHA CI to validate 464 tests before declaring structurally green"
+      "Claim-level linkage structural zero reached 105/105; do NOT equate with original-language manuscript validation, scientific review or approval",
+      "55 historic missing locusId values require explicit nonbreaking consumer migration/versioned design; current 105 rows stable and must not be rewritten automatically",
+      "No independent critical Hebrew/Aramaic/Greek manuscript collation or BHS/BHQ/critical NT apparatus verified; high-ambiguity loci remain scholarly research",
+      "All 87 claims still RESEARCH_HOLD/BLOCKED; 48 source registrations have rights/access state, not blanket reuse permission, Product approval 0",
+      "Independent theological/editorial peer review for contested passages, source rights and site/Arena release gates remain unresolved",
+      "Verify exact final SHA GitHub CI success before declaring even structural completion"
     ]
   },
   "originalResearchCheckpoint": {
@@ -814,14 +825,14 @@
       "sourceForeignKeys": 105,
       "editionForeignKeys": 105,
       "canonicalEditions": 4,
-      "curatedClaims": 79,
+      "curatedClaims": 87,
       "locusIdMissingHistorically": 55,
       "editionSelectionRecheckHolds": 0,
-      "notes": "Genesis16:13 Hagar explicitly calls YHWH's name distinct from Gen16:14 well; Gen21:33 Abraham invokes YHWH El Olam distinct from Beer-sheba naming v31; Isa9:5 royal child-name with disputed title distribution vs Isa10:21 direct divine recipient with el preposition; Rahlfs Greek publisher shorter wording vs unpinned Orthodox expanded online text not manuscript proof; Ex15:3 Moses/Israel song has YHWH shemo next to Yah v2. 96/105 linked.",
-      "typedClaimRelations": 65,
-      "editionSpecificDigitalVerseRechecksCompleted": 21,
-      "attestationsLinkedToClaims": 96,
-      "attestationsWithoutClaimReferences": 9,
+      "notes": "Claim-level structural linkage complete 105/105; 87 research-only source-bound claims and 75 typed relations. Deut32 Eloah and faithfulness, Dan2 Aramaic God of heaven in request/praise, poetic living God/light/father, Ex34 name attributes, John11 Jesus two coordinated predicates. This is NOT manuscript collation, independent peer review, rights grant, or Product publication closure.",
+      "typedClaimRelations": 75,
+      "editionSpecificDigitalVerseRechecksCompleted": 22,
+      "attestationsLinkedToClaims": 105,
+      "attestationsWithoutClaimReferences": 0,
       "divineReferentAddresseeControls": 3,
       "semanticScopeAudits": 15,
       "scholarlyClaimApprovals": 0,
@@ -840,7 +851,8 @@
       "elyonQannaSpeakerNameGuards": 6,
       "danielRevelationDiscourseGuards": 6,
       "adonaiQedoshYahContextGuards": 8,
-      "hagarOlamGibborHymnGuards": 5
+      "hagarOlamGibborHymnGuards": 5,
+      "finalNg02OriginalTextContextGuards": 9
     }
   }
 }

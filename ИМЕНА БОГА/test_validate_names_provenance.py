@@ -1682,6 +1682,214 @@ class ProvenanceGraphTests(unittest.TestCase):
         r["relationType"]="CONTRASTS_SPEAKER_EVIDENCE"
         self.assertTrue(any("required semantic boundary" in x for x in self.check(claims=d)))
 
+    def test_ng02_eloah_actor_cannot_be_god(self) -> None:
+        d,o=self.mutate("eloah","extension",0)
+        o["grammaticalActor"]="Eloah"
+        self.assertTrue(any("final NG02 original-language context/speaker/predicate guard changed" in e for e in self.check(extension=d)))
+
+    def test_ng02_eloah_object_cannot_be_jeshurun(self) -> None:
+        d,o=self.mutate("eloah","extension",0)
+        o["grammaticalObject"]="Jeshurun"
+        self.assertTrue(any("final NG02 original-language context/speaker/predicate guard changed" in e for e in self.check(extension=d)))
+
+    def test_ng02_eloah_song_context_not_direct_divine_name(self) -> None:
+        d,o=self.mutate("eloah","extension",0)
+        o["speechAct"]="direct_yhwh_name_self_speech"
+        self.assertTrue(any("final NG02 original-language context/speaker/predicate guard changed" in e for e in self.check(extension=d)))
+
+    def test_ng02_dan2_18_request_prefix_not_blessing(self) -> None:
+        d,o=self.mutate("elah-shmaya","extension",0)
+        o["grammaticalPrefix"]="לֶ"
+        self.assertTrue(any("final NG02 original-language context/speaker/predicate guard changed" in e for e in self.check(extension=d)))
+
+    def test_ng02_dan2_18_daniel_companions_request_must_remain(self) -> None:
+        d,o=self.mutate("elah-shmaya","extension",0)
+        o["contextualActor"]="Daniel alone after revelation"
+        self.assertTrue(any("final NG02 original-language context/speaker/predicate guard changed" in e for e in self.check(extension=d)))
+
+    def test_ng02_dan2_18_aramaic_language_not_hebrew(self) -> None:
+        d,o=self.mutate("elah-shmaya","extension",0)
+        o["language"]="hebrew"
+        self.assertTrue(any("final NG02 original-language context/speaker/predicate guard changed" in e for e in self.check(extension=d)))
+
+    def test_ng02_dan2_19_blessing_not_request(self) -> None:
+        d,o=self.mutate("elah-shmaya","extension",1)
+        o["speechAct"]="request_mercy_from_God_of_heaven"
+        self.assertTrue(any("final NG02 original-language context/speaker/predicate guard changed" in e for e in self.check(extension=d)))
+
+    def test_ng02_dan2_19_blessing_prefix_protected(self) -> None:
+        d,o=self.mutate("elah-shmaya","extension",1)
+        o["grammaticalPrefix"]="מִן-קֳדָם"
+        self.assertTrue(any("final NG02 original-language context/speaker/predicate guard changed" in e for e in self.check(extension=d)))
+
+    def test_ng02_ps42_masoretic_english_verse_number(self) -> None:
+        d,o=self.mutate("el-hay","extension",0)
+        o["verse"]="Psalms 42:2 MT"
+        self.assertTrue(any("final NG02 original-language context/speaker/predicate guard changed" in e for e in self.check(extension=d)))
+
+    def test_ng02_ps42_lamed_not_lost(self) -> None:
+        d,o=self.mutate("el-hay","extension",0)
+        o["prefixOnEl"]="none"
+        self.assertTrue(any("final NG02 original-language context/speaker/predicate guard changed" in e for e in self.check(extension=d)))
+
+    def test_ng02_ps42_poetic_thirst_not_ritual_naming(self) -> None:
+        d,o=self.mutate("el-hay","extension",0)
+        o["speechAct"]="divine_new_name_ritual"
+        self.assertTrue(any("final NG02 original-language context/speaker/predicate guard changed" in e for e in self.check(extension=d)))
+
+    def test_ng02_isa63_our_father_voice_not_god_self(self) -> None:
+        d,o=self.mutate("avinu","extension",0)
+        o["narrativeSpeaker"]="YHWH first person self-naming"
+        self.assertTrue(any("final NG02 original-language context/speaker/predicate guard changed" in e for e in self.check(extension=d)))
+
+    def test_ng02_isa63_yhwh_addressee_protected(self) -> None:
+        d,o=self.mutate("avinu","extension",0)
+        o["addressee"]="Abraham"
+        self.assertTrue(any("final NG02 original-language context/speaker/predicate guard changed" in e for e in self.check(extension=d)))
+
+    def test_ng02_isa63_avinu_not_nt_aba_same_surface(self) -> None:
+        d,o=self.mutate("avinu","extension",0)
+        o["notIdenticalTo"]="same Greek Abba"
+        self.assertTrue(any("final NG02 original-language context/speaker/predicate guard changed" in e for e in self.check(extension=d)))
+
+    def test_ng02_ps27_light_and_salvation_suffix(self) -> None:
+        d,o=self.mutate("yhwh-ori","extension",0)
+        o["suffixMorphology"]="no first-person suffix"
+        self.assertTrue(any("final NG02 original-language context/speaker/predicate guard changed" in e for e in self.check(extension=d)))
+
+    def test_ng02_ps27_no_personal_name_event(self) -> None:
+        d,o=self.mutate("yhwh-ori","extension",0)
+        o["namingActInVerse"]=True
+        self.assertTrue(any("final NG02 original-language context/speaker/predicate guard changed" in e for e in self.check(extension=d)))
+
+    def test_ng02_ps27_stronghold_parallel_cannot_drop(self) -> None:
+        d,o=self.mutate("yhwh-ori","extension",0)
+        o["linkedPoeticMetaphor"]="none"
+        self.assertTrue(any("final NG02 original-language context/speaker/predicate guard changed" in e for e in self.check(extension=d)))
+
+    def test_ng02_deut32_4_rock_parallel_cannot_remove(self) -> None:
+        d,o=self.mutate("el-emunah","extension",0)
+        o["contextParallel"]="false gods"
+        self.assertTrue(any("final NG02 original-language context/speaker/predicate guard changed" in e for e in self.check(extension=d)))
+
+    def test_ng02_deut32_4_faithfulness_not_new_proper_name(self) -> None:
+        d,o=self.mutate("el-emunah","extension",0)
+        o["namingActInVerse"]=True
+        self.assertTrue(any("final NG02 original-language context/speaker/predicate guard changed" in e for e in self.check(extension=d)))
+
+    def test_ng02_ex34_6_divine_proclamation_not_moses_prayer(self) -> None:
+        d,o=self.mutate("el-rahum-hannun","extension",0)
+        o["narrativeSpeaker"]="Moses addressing YHWH twice"
+        self.assertTrue(any("final NG02 original-language context/speaker/predicate guard changed" in e for e in self.check(extension=d)))
+
+    def test_ng02_ex34_6_intro_name_yhwh_cannot_delete(self) -> None:
+        d,o=self.mutate("el-rahum-hannun","extension",0)
+        o["introductoryClause"]="אֵל רַחוּם"
+        self.assertTrue(any("final NG02 original-language context/speaker/predicate guard changed" in e for e in self.check(extension=d)))
+
+    def test_ng02_ex34_6_adjectives_not_all_proper_names(self) -> None:
+        d,o=self.mutate("el-rahum-hannun","extension",0)
+        o["qualifier"]="EVERY_ADJECTIVE_IS_NEW_PROPER_NAME"
+        self.assertTrue(any("final NG02 original-language context/speaker/predicate guard changed" in e for e in self.check(extension=d)))
+
+    def test_ng02_john11_greek_speaker_jesus_martha(self) -> None:
+        d,o=self.mutate("anastasis-zoe","extension",0)
+        o["narrativeSpeaker"]="formerly blind human in John9"
+        self.assertTrue(any("final NG02 original-language context/speaker/predicate guard changed" in e for e in self.check(extension=d)))
+
+    def test_ng02_john11_two_predicates_not_bare_ego(self) -> None:
+        d,o=self.mutate("anastasis-zoe","extension",0)
+        o["syntax"]="BARE_EGO_EIMI_NO_PREDICATE"
+        self.assertTrue(any("final NG02 original-language context/speaker/predicate guard changed" in e for e in self.check(extension=d)))
+
+    def test_ng02_john11_full_explicit_self_predication_cannot_drop(self) -> None:
+        d,o=self.mutate("anastasis-zoe","extension",0)
+        o["fullClause"]="Ἐγώ εἰμι"
+        self.assertTrue(any("final NG02 original-language context/speaker/predicate guard changed" in e for e in self.check(extension=d)))
+
+    def test_ng02_john11_addressee_is_martha(self) -> None:
+        d,o=self.mutate("anastasis-zoe","extension",0)
+        o["addressee"]="Mary"
+        self.assertTrue(any("final NG02 original-language context/speaker/predicate guard changed" in e for e in self.check(extension=d)))
+
+
+    def test_ng02_all_nine_linked_and_all_eight_new_claims_held(self) -> None:
+        expected={
+            "CLM-DEUT32-15-ELOAH-REJECTED-CREATOR":{"ATT-EXT-ELOAH-01"},
+            "CLM-DAN2-18-19-ELAH-SHMAYA-PETITION-PRAISE":{"ATT-EXT-ELAH-SHMAYA-01","ATT-EXT-ELAH-SHMAYA-02"},
+            "CLM-PS42-3-EL-HAY-LIVING-GOD-THIRST":{"ATT-EXT-EL-HAY-01"},
+            "CLM-ISA63-16-AVINU-YHWH-COMMUNAL-FATHER":{"ATT-EXT-AVINU-01"},
+            "CLM-PS27-1-YHWH-ORI-POETIC-PREDICATES":{"ATT-EXT-YHWH-ORI-01"},
+            "CLM-DEUT32-4-EL-EMUNAH-FAITHFUL-ROCK":{"ATT-EXT-EL-EMUNAH-01"},
+            "CLM-EX34-6-YHWH-RAHUM-HANNUN-NAME-ATTRIBUTES":{"ATT-EXT-EL-RAHUM-HANNUN-01"},
+            "CLM-JOHN11-25-JESUS-RESURRECTION-LIFE-PREDICATES":{"ATT-EXT-ANASTASIS-ZOE-01"},
+        }
+        for cid, att in expected.items():
+            record=next(x for x in self.claims["records"] if x["claimId"]==cid)
+            self.assertEqual(att,set(record["attestationIds"]))
+            self.assertEqual("RESEARCH_HOLD",record["editorialState"])
+            self.assertEqual("BLOCKED",record["publicationState"])
+        source_ids={a["attestationId"] for r in self.baseline["records"]+self.extension["records"] for a in r["attestations"]}
+        linked={x for r in self.claims["records"] for x in r["attestationIds"]}
+        self.assertEqual(105,len(source_ids))
+        self.assertEqual(source_ids,linked)
+
+    def test_ng02_coverage_missing_an_old_attestation_fails_closed(self) -> None:
+        d=copy.deepcopy(self.claims)
+        c=next(x for x in d["records"] if x["claimId"]=="CLM-PS42-3-EL-HAY-LIVING-GOD-THIRST")
+        c["attestationIds"]=[]
+        self.assertTrue(any("NG02 complete attestation-to-claim coverage not sustained" in err for err in self.check(claims=d)))
+
+    def test_ng02_coverage_new_attestation_without_claim_fails_closed(self) -> None:
+        d=copy.deepcopy(self.extension)
+        row=next(x for x in d["records"] if x["id"]=="eloah")
+        new=copy.deepcopy(row["attestations"][0])
+        new["attestationId"]="ATT-EXT-ELOAH-UNLINKED-NEW"
+        new["locusId"]="ext-eloah-unlinked-new"
+        row["attestations"].append(new)
+        self.assertTrue(any("NG02 complete attestation-to-claim coverage not sustained" in err for err in self.check(extension=d)))
+
+    def test_ng02_john11_christological_predicates_scope_not_lxx_verbatim(self) -> None:
+        d=copy.deepcopy(self.claims)
+        r=next(x for x in d["records"] if x["claimId"]=="CLM-JOHN11-25-JESUS-RESURRECTION-LIFE-PREDICATES")
+        r["claimScopeStatus"]="DIRECT_VERBATIM_LXX_EX3_YHWH_NAME"
+        self.assertTrue(any("final NG02 claim scope/new-name boundary changed" in err for err in self.check(claims=d)))
+
+    def test_ng02_ex34_mercy_not_per_adjective_new_name_claim(self) -> None:
+        d=copy.deepcopy(self.claims)
+        r=next(x for x in d["records"] if x["claimId"]=="CLM-EX34-6-YHWH-RAHUM-HANNUN-NAME-ATTRIBUTES")
+        r["claimScopeStatus"]="EACH_ADJECTIVE_INDIVIDUAL_PROPER_NAME"
+        self.assertTrue(any("final NG02 claim scope/new-name boundary changed" in err for err in self.check(claims=d)))
+
+    def test_ng02_isa63_hebrew_father_cannot_be_equated_to_nt_lexeme(self) -> None:
+        d=copy.deepcopy(self.claims)
+        r=next(x for x in d["semanticRelations"] if x["relationId"]=="REL-ISA63-AVINU-NT-ABBA")
+        r["relationType"]="CONTRASTS_NAMED_OBJECT"
+        self.assertTrue(any("required semantic boundary" in err for err in self.check(claims=d)))
+
+    def test_ng02_deut32_faithfulness_not_a_rival_deity(self) -> None:
+        d=copy.deepcopy(self.claims)
+        r=next(x for x in d["semanticRelations"] if x["relationId"]=="REL-DEUT32-ELOAH-FAITHFULNESS")
+        r["relationType"]="CONTRASTS_REFERENT"
+        self.assertTrue(any("required semantic boundary" in err for err in self.check(claims=d)))
+
+    def test_ng02_john11_human_ego_negative_control_not_silent(self) -> None:
+        d=copy.deepcopy(self.claims)
+        r=next(x for x in d["semanticRelations"] if x["relationId"]=="REL-JOHN11-JOHN9-HUMAN-IDENTIFICATION")
+        r["relationType"]="LIMITS_INFERENCE"
+        self.assertTrue(any("required semantic boundary" in err for err in self.check(claims=d)))
+
+    def test_ng02_daniel18_19_both_witnesses_required_for_one_claim(self) -> None:
+        d=copy.deepcopy(self.claims)
+        r=next(x for x in d["records"] if x["claimId"]=="CLM-DAN2-18-19-ELAH-SHMAYA-PETITION-PRAISE")
+        r["attestationIds"]=["ATT-EXT-ELAH-SHMAYA-01"]
+        self.assertTrue(any("lost its independently reviewed text witnesses" in err for err in self.check(claims=d)))
+
+    def test_ng02_john11_sblgnt_exact_edition_url_required(self) -> None:
+        d,o=self.mutate("anastasis-zoe","extension",0)
+        o["sourceUrl"]="https://www.biblegateway.com/passage/?search=John+11%3A25&version=TR1550"
+        self.assertTrue(any("verified pinned Greek passage URL changed" in err for err in self.check(extension=d)))
+
 
 if __name__ == "__main__":
     unittest.main()

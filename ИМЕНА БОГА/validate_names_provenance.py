@@ -57,6 +57,7 @@ PINNED_GREEK_SOURCE_URLS = {
     "ATT-EXT-HO-ON-ERCHOMENOS-01": "https://www.biblegateway.com/passage/?search=Revelation+1%3A4-8&version=SBLGNT",
     "ATT-EXT-HO-ON-ERCHOMENOS-02": "https://www.biblegateway.com/passage/?search=Revelation+1%3A4-8&version=SBLGNT",
     "ATT-BASE-PANTOKRATOR-02": "https://www.biblegateway.com/passage/?search=Revelation+21&version=SBLGNT",
+    "ATT-EXT-ANASTASIS-ZOE-01": "https://www.biblegateway.com/passage/?search=John+11%3A25&version=SBLGNT",
 }
 
 
@@ -792,6 +793,125 @@ ISA9_REQUIRED_ATTRIBUTED_SOURCES = {
         "SRC-RASHI-ISAIAH9", "SRC-RADAK-ISAIAH9"
     },
 }
+REQUIRED_FINAL_NG02_EIGHT_CLAIMS = {
+    "CLM-DEUT32-15-ELOAH-REJECTED-CREATOR",
+    "CLM-DAN2-18-19-ELAH-SHMAYA-PETITION-PRAISE",
+    "CLM-PS42-3-EL-HAY-LIVING-GOD-THIRST",
+    "CLM-ISA63-16-AVINU-YHWH-COMMUNAL-FATHER",
+    "CLM-PS27-1-YHWH-ORI-POETIC-PREDICATES",
+    "CLM-DEUT32-4-EL-EMUNAH-FAITHFUL-ROCK",
+    "CLM-EX34-6-YHWH-RAHUM-HANNUN-NAME-ATTRIBUTES",
+    "CLM-JOHN11-25-JESUS-RESURRECTION-LIFE-PREDICATES",
+}
+# End-of-coverage independent exact digital observation controls, not manuscript apparatus.
+FINAL_NG02_CONTEXT_GUARDS = {
+    "ATT-EXT-ELOAH-01": {
+        "verse": "Deuteronomy 32:15",
+        "surface": "אֱלוֹהַּ עָשָׂהוּ",
+        "language": "hebrew",
+        "narrativeSpeaker": "Moses, Song of Moses",
+        "speechAct": "singular_deity_noun_object_of_rejection",
+        "grammaticalActor": "Jeshurun, וַיִּטֹּשׁ",
+        "grammaticalObject": "אֱלוֹהַּ",
+        "contextParallel": "צוּר יְשֻׁעָתוֹ",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt0532.htm",
+    },
+    "ATT-EXT-ELAH-SHMAYA-01": {
+        "verse": "Daniel 2:18",
+        "surface": "מִן-קֳדָם אֱלָהּ שְׁמַיָּא",
+        "language": "aramaic",
+        "narrativeSpeaker": "narrator reporting instruction to Daniel's companions",
+        "speechAct": "request_mercy_from_God_of_heaven",
+        "contextualActor": "Daniel's companions with Daniel",
+        "grammaticalPrefix": "מִן-קֳדָם",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt3402.htm",
+    },
+    "ATT-EXT-ELAH-SHMAYA-02": {
+        "verse": "Daniel 2:19",
+        "surface": "לֶאֱלָהּ שְׁמַיָּא",
+        "language": "aramaic",
+        "narrativeSpeaker": "narrator reporting Daniel's praise",
+        "speechAct": "blessing_God_after_vision",
+        "contextualActor": "Daniel",
+        "grammaticalPrefix": "לֶ",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt3402.htm",
+    },
+    "ATT-EXT-EL-HAY-01": {
+        "verse": "Psalms 42:3 MT (English 42:2)",
+        "surface": "לְאֵל חָי",
+        "language": "hebrew",
+        "narrativeSpeaker": "psalmist (sons of Korah superscription)",
+        "speechAct": "prayer_desire_for_living_God",
+        "prefixOnEl": "לְ",
+        "contextParallel": "לֵאלֹהִים",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt2642.htm",
+    },
+    "ATT-EXT-AVINU-01": {
+        "verse": "Isaiah 63:16",
+        "surface": "אַתָּה יְהוָה אָבִינוּ",
+        "language": "hebrew",
+        "narrativeSpeaker": "communal voice in prophetic petition",
+        "speechAct": "corporate_direct_address_to_God_as_Father",
+        "addressee": "YHWH",
+        "notIdenticalTo": "Αββα in Greek New Testament represents a different Aramaic lexical item/transliteration",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt1063.htm",
+    },
+    "ATT-EXT-YHWH-ORI-01": {
+        "verse": "Psalms 27:1",
+        "surface": "יְהוָה אוֹרִי וְיִשְׁעִי",
+        "language": "hebrew",
+        "narrativeSpeaker": "psalmist (David in superscription)",
+        "speechAct": "first_person_poetic_light_and_salvation_predication",
+        "linkedPoeticMetaphor": "יְהוָה מָעוֹז-חַיַּי",
+        "namingActInVerse": False,
+        "suffixMorphology": "אוֹרִי and יִשְׁעִי first-person singular possessive forms",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt2627.htm",
+    },
+    "ATT-EXT-EL-EMUNAH-01": {
+        "verse": "Deuteronomy 32:4",
+        "surface": "אֵל אֱמוּנָה",
+        "language": "hebrew",
+        "narrativeSpeaker": "Moses in Song of Moses",
+        "speechAct": "divine_faithfulness_attribute",
+        "contextParallel": "הַצּוּר תָּמִים פָּעֳלוֹ",
+        "contrast": "וְאֵין עָוֶל",
+        "namingActInVerse": False,
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt0532.htm",
+    },
+    "ATT-EXT-EL-RAHUM-HANNUN-01": {
+        "verse": "Exodus 34:6",
+        "surface": "אֵל רַחוּם וְחַנּוּן",
+        "language": "hebrew",
+        "narrativeSpeaker": "YHWH in proclamation of His name, as narrator reports",
+        "speechAct": "divine_name_proclamation_with_attributes",
+        "introductoryClause": "וַיִּקְרָא, יְהוָה יְהוָה",
+        "followingAttributes": "אֶרֶךְ אַפַּיִם, וְרַב-חֶסֶד וֶאֱמֶת",
+        "qualifier": "NAME_PROCLAMATION_NOT_EACH_ADJECTIVE_AS_PROPER_NAME",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt0234.htm",
+    },
+    "ATT-EXT-ANASTASIS-ZOE-01": {
+        "verse": "John 11:25",
+        "surface": "ἡ ἀνάστασις καὶ ἡ ζωή",
+        "language": "greek",
+        "narrativeSpeaker": "Jesus speaking to Martha",
+        "speechAct": "christological_first_person_predicative_title",
+        "fullClause": "Ἐγώ εἰμι ἡ ἀνάστασις καὶ ἡ ζωή",
+        "syntax": "TWO_COORDINATED_NOMINAL_PREDICATES",
+        "addressee": "Martha",
+        "editionPinStatus": "URL_VERSION_PINNED",
+        "sourceUrl": "https://www.biblegateway.com/passage/?search=John+11%3A25&version=SBLGNT",
+    },
+}
+FINAL_NG02_CLAIM_STATUS_GUARDS = {
+    "CLM-DEUT32-15-ELOAH-REJECTED-CREATOR": {"claimScopeStatus": "MOSES_SONG_OBJECT_OF_REJECTION_NOT_NEW_DEITY"},
+    "CLM-DAN2-18-19-ELAH-SHMAYA-PETITION-PRAISE": {"claimScopeStatus": "ARAMAIC_REQUEST_BLESSING_DISTINCT_NOT_DIVINE_SPEECH"},
+    "CLM-PS42-3-EL-HAY-LIVING-GOD-THIRST": {"claimScopeStatus": "POETIC_LONGING_LAMED_LIVING_GOD_NOT_NAME_RITUAL"},
+    "CLM-ISA63-16-AVINU-YHWH-COMMUNAL-FATHER": {"claimScopeStatus": "COVENANT_COMMUNAL_ADDRESS_DISTINCT_FROM_NT_ABBA"},
+    "CLM-PS27-1-YHWH-ORI-POETIC-PREDICATES": {"claimScopeStatus": "METAPHOR_FIRST_PERSON_SUFFIX_NO_NAMING_CLAUSE"},
+    "CLM-DEUT32-4-EL-EMUNAH-FAITHFUL-ROCK": {"claimScopeStatus": "FAITHFULNESS_PARALLEL_TO_ROCK_NO_NEW_NAMING"},
+    "CLM-EX34-6-YHWH-RAHUM-HANNUN-NAME-ATTRIBUTES": {"claimScopeStatus": "NAME_PROCLAMATION_WITH_ATTRIBUTES_NOT_EACH_NEW_PROPER_NAME"},
+    "CLM-JOHN11-25-JESUS-RESURRECTION-LIFE-PREDICATES": {"claimScopeStatus": "JESUS_TO_MARTHA_TWO_NOMINAL_PREDICATES_NOT_BARE_EGO_EIMI"},
+}
 # The original reviewed seeds are a required minimum, not a cap on future work.
 # Additional claims must pass the same foreign-key, editorial and publication gates.
 ALLOWED_CLAIM_TYPES = {
@@ -939,6 +1059,16 @@ REQUIRED_SEMANTIC_RELATIONS = {
     "REL-ELROI-ELOLAM-SPEAKER": ("CLM-GEN16-13-HAGAR-YHWH-NAME-CALLING", "CLM-GEN21-33-ABRAHAM-EL-OLAM-INVOCATION", "CONTRASTS_SPEAKER_EVIDENCE"),
     "REL-EL-GIBBOR-ROYAL-VS-REMNANT": ("CLM-ISA9-5-ROYAL-NAME-EL-GIBBOR", "CLM-ISA10-21-REMNANT-TO-MIGHTY-GOD", "CONTRASTS_NAMED_OBJECT"),
     "REL-YHWH-YAH-EX15-HYMN": ("CLM-YAH-EX15-2-SUNG-ABBREVIATED-NAME", "CLM-EX15-3-YHWH-NAME-IN-MOSES-ISRAEL-SONG", "CONTRASTS_GRAMMATICAL_FORM"),
+    "REL-DEUT32-ELOAH-FAITHFULNESS": ("CLM-DEUT32-15-ELOAH-REJECTED-CREATOR", "CLM-DEUT32-4-EL-EMUNAH-FAITHFUL-ROCK", "LIMITS_INFERENCE"),
+    "REL-DEUT32-EMUNAH-ROCK": ("CLM-DEUT32-4-EL-EMUNAH-FAITHFUL-ROCK", "CLM-DEUT32-ROCK-DIVINE-METAPHOR", "LIMITS_INFERENCE"),
+    "REL-DAN2-GODOFHEAVEN-DAN7-ARAMAIC": ("CLM-DAN2-18-19-ELAH-SHMAYA-PETITION-PRAISE", "CLM-DAN7-9-ANCIENT-THRONED-JUDGE", "LIMITS_INFERENCE"),
+    "REL-PS42-LIVING-PS27-LIGHT": ("CLM-PS42-3-EL-HAY-LIVING-GOD-THIRST", "CLM-PS27-1-YHWH-ORI-POETIC-PREDICATES", "CONTRASTS_GRAMMATICAL_FORM"),
+    "REL-ISA63-AVINU-NT-ABBA": ("CLM-ISA63-16-AVINU-YHWH-COMMUNAL-FATHER", "CLM-ABBA-THREE-PRAYER-SUBJECTS", "LIMITS_INFERENCE"),
+    "REL-PS27-LIGHT-PS23-SHEPHERD": ("CLM-PS27-1-YHWH-ORI-POETIC-PREDICATES", "CLM-PS23-YHWH-MY-SHEPHERD", "LIMITS_INFERENCE"),
+    "REL-EX34-MERCY-MOSES-ADONAI": ("CLM-EX34-6-YHWH-RAHUM-HANNUN-NAME-ATTRIBUTES", "CLM-ADONAI-EX34-9-MOSES-PRAYER", "CONTRASTS_SPEAKER_EVIDENCE"),
+    "REL-EX34-MERCY-QANNA-CHARACTER": ("CLM-EX34-6-YHWH-RAHUM-HANNUN-NAME-ATTRIBUTES", "CLM-QANNA-EX34-14-NAME-CHARACTER", "LIMITS_INFERENCE"),
+    "REL-JOHN11-JOHN10-CHRIST-PREDICATES": ("CLM-JOHN11-25-JESUS-RESURRECTION-LIFE-PREDICATES", "CLM-JOHN10-JESUS-GOOD-SHEPHERD", "LIMITS_INFERENCE"),
+    "REL-JOHN11-JOHN9-HUMAN-IDENTIFICATION": ("CLM-JOHN11-25-JESUS-RESURRECTION-LIFE-PREDICATES", "CLM-JOHN9-9-HUMAN-EGO-EIMI", "CONTRASTS_SPEAKER_EVIDENCE"),
 }
 CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-EX3-15-DIVINE-NAME": {"ATT-BASE-YHWH-01"},
@@ -1026,6 +1156,14 @@ CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-ISA9-5-ROYAL-NAME-EL-GIBBOR": {"ATT-BASE-EL-GIBBOR-01"},
     "CLM-ISA10-21-REMNANT-TO-MIGHTY-GOD": {"ATT-BASE-EL-GIBBOR-02"},
     "CLM-EX15-3-YHWH-NAME-IN-MOSES-ISRAEL-SONG": {"ATT-BASE-YHWH-03"},
+    "CLM-DEUT32-15-ELOAH-REJECTED-CREATOR": {"ATT-EXT-ELOAH-01"},
+    "CLM-DAN2-18-19-ELAH-SHMAYA-PETITION-PRAISE": {"ATT-EXT-ELAH-SHMAYA-01", "ATT-EXT-ELAH-SHMAYA-02"},
+    "CLM-PS42-3-EL-HAY-LIVING-GOD-THIRST": {"ATT-EXT-EL-HAY-01"},
+    "CLM-ISA63-16-AVINU-YHWH-COMMUNAL-FATHER": {"ATT-EXT-AVINU-01"},
+    "CLM-PS27-1-YHWH-ORI-POETIC-PREDICATES": {"ATT-EXT-YHWH-ORI-01"},
+    "CLM-DEUT32-4-EL-EMUNAH-FAITHFUL-ROCK": {"ATT-EXT-EL-EMUNAH-01"},
+    "CLM-EX34-6-YHWH-RAHUM-HANNUN-NAME-ATTRIBUTES": {"ATT-EXT-EL-RAHUM-HANNUN-01"},
+    "CLM-JOHN11-25-JESUS-RESURRECTION-LIFE-PREDICATES": {"ATT-EXT-ANASTASIS-ZOE-01"},
 }
 
 
@@ -1096,6 +1234,10 @@ def validate_provenance(
                     continue
                 seen.add(aid)
                 att_by_id[aid] = obs
+                if aid in FINAL_NG02_CONTEXT_GUARDS:
+                    for field, expected in FINAL_NG02_CONTEXT_GUARDS[aid].items():
+                        if obs.get(field) != expected:
+                            errors.append(f"provenance: {aid} final NG02 original-language context/speaker/predicate guard changed ({field})")
                 if aid in ELROI_ELOLAM_GIBBOR_HYMN_GUARDS:
                     for field, expected in ELROI_ELOLAM_GIBBOR_HYMN_GUARDS[aid].items():
                         if obs.get(field) != expected:
@@ -1275,6 +1417,20 @@ def validate_provenance(
         errors.append("provenance: required Adonai/Qedosh/Yah speech/name claims missing")
     if not REQUIRED_ELROI_ELOLAM_GIBBOR_HYMN_CLAIMS.issubset(claim_map):
         errors.append("provenance: required Hagar/ElOlam/Isaiah9-10/YHWH hymn claims missing")
+    if not REQUIRED_FINAL_NG02_EIGHT_CLAIMS.issubset(claim_map):
+        errors.append("provenance: required final NG02 nine-attestation research claims missing")
+    for cid, fields in FINAL_NG02_CLAIM_STATUS_GUARDS.items():
+        item=claim_map.get(cid,{})
+        for field,expected in fields.items():
+            if item.get(field)!=expected:
+                errors.append(f"provenance: {cid} final NG02 claim scope/new-name boundary changed ({field})")
+    source_att_ids=set(att_by_id)
+    linked_att_ids=set()
+    for claim_item in claim_map.values():
+        linked_att_ids.update(claim_item.get("attestationIds",[]))
+    if linked_att_ids != source_att_ids:
+        errors.append("provenance: NG02 complete attestation-to-claim coverage not sustained")
+
     for cid, requirements in ELROI_ELOLAM_GIBBOR_INTERPRETATION_GUARDS.items():
         item=claim_map.get(cid,{})
         for field, expected in requirements.items():
@@ -1450,8 +1606,8 @@ def main() -> int:
         for p in problems:
             print("FAIL: " + p, file=sys.stderr)
         return 1
-    print("PASS: 105 attestation IDs / 4 editions; 79 provisional claims, "
-          "65 relations, 5 Hagar/ElOlam/Isaiah9-10/Ex15 text-role controls and all publication HOLD gates")
+    print("PASS: 105 attestation IDs / 4 editions; 87 provisional claims, "
+          "75 relations, 105/105 attestation-to-claim structurally linked; all manuscript/editorial/Product HOLD gates retained")
     return 0
 
 

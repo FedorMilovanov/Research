@@ -39,6 +39,9 @@
 
 ## Текущий прогресс связанной системы доказательств (NG-02)
 
+**Волна 2026-11-07 — [досье 29: последний девятислойный корпус и структурный claim-coverage нуль](29_NG02_FINAL_NINE_ATTESTATIONS_STRUCTURAL_ZERO_20261107.md).** Последние **9 старых attestationId получили 8 bounded research-held claims**, при этом Дан.2:18+19 сохранены в одном claim с различением просьбы и славословия; созданы **10 типизированных связей, 9 независимых original-language guards и 36 новых regression-тестов**, 1 exact SBLGNT pin для Ин.11:25. **Теперь 105/105 source/edition-linked наблюдений связаны с claim; структурно 0 без claim. 87 research-held claims, 75 typed relations, 48 sources, 500 ожидаемых тестов (165+16+319)**. Это *не* научная/рукописная/правовая/Product приемка: NG-02 остаётся RESEARCH_HOLD, все публикации BLOCKED; 55 legacy locusIds требуют compatibility plan.
+
+
 **Волна 2026-11-07 — [досье 28: Агарь/Эль-Рои; Авраам/Эль-Олам; Ис.9–10 Эль-Гиббор; Исх.15:3](28_HAGAR_EL_OLAM_ISH9_10_AND_EX15_NAME_20261107.md).** Пять прежних MT attestationId получили **5 research-held claims, 6 semantic boundaries, 24 regression tests**. Не стирается прямой акт наречения имени ЯХВЕ Агарью в Быт.16:13; Быт.16:14 отдельно именует колодец; Быт.21:33 Авраам призывает ЯХВЕ Бога вечного, не называет снова Беэр-Шеву. Ис.9:5 MT — спорная царская именовательная конструкция, Ис.10:21 — ясно к Богу могущественному с отдельным `אֶל-`; Rahlfs-Hanhart LXX отличается от unpinned Orthodox Greek display без рукописной колляции. В Исх.15:2 Ях и 15:3 ЯХВЕ — разные формы одного Бога в одной песне. **79 claims, 65 relations, 96/105 linked, 9 без claim, 48 source records; 464 ожидаемых тестов (165+16+283)**. Product, rights, manuscript apparatus остаются HOLD.
 
 
