@@ -19,7 +19,7 @@ class PeasantsWarBookTests(unittest.TestCase):
                        "Вайнгартен", "Мюнцер", "Источниковедческий аппарат"):
             with self.subTest(phrase=phrase):
                 self.assertIn(phrase.lower(),chapter.lower())
-        self.assertIn("не проверены",chapter.lower())
+        self.assertIn("не выдана за прочитанную",chapter.lower())
 
     def test_unmerged_print_objects_and_primary_provenance(self):
         j=json.loads((D/"source-registry-v1.json").read_text(encoding="utf-8"))
@@ -51,7 +51,7 @@ class PeasantsWarBookTests(unittest.TestCase):
 
     def test_no_publication_and_no_undocumented_literal_quote(self):
         s=CH.read_text(encoding="utf-8")
-        self.assertIn("не завершена полная строковая колляция",s)
+        self.assertIn("Полное дипломатическое сопоставление каждой строки двух факсимиле в данной волне не выполнено",s)
         self.assertIn("не выдана за прочитанную полная критическая",s)
         self.assertIn("призыв",s)
         self.assertIn("не документирует судьбу каждой деревни",s)
