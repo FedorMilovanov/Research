@@ -195,3 +195,17 @@
 | URL в исходном ledger, который здесь не открыт | Можно пытаться получить | `LINK_ONLY`; все утверждения, зависящие от полного текста, в HOLD |
 
 **Итог приобретения:** ссылки и библиография оформлены; **новых PDF-байтов и сканов в Git не добавлено**, чтобы не засорять репозиторий и не допустить нарушения прав. Для локального офлайн-зеркала перед скачиванием фиксировать `source_id / edition / URL / date / content type / bytes / sha256 / rights`; результаты вне Git (каталог `downloads/` в `.gitignore`) и переносить только после проверки.
+
+## Дополнение — волна 364: оригиналы и каталоги ключевых трактатов 1520 года
+
+| Источник | Официальный доступ | Статус и строгое ограничение |
+| --- | --- | --- |
+| REF-P03, первопечать «К дворянству» | [Pitts / Emory, item 4806](https://digital.pitts.emory.edu/s/digital-collections/item/4806) | FIRST_PRINT / CATALOG_ONLY: библиотечная идентификация не равна полной колляции |
+| REF-P63, исправленное и дополненное автором издание того же года | [UB Paderborn, VD16 L3759](https://digital.ub.uni-paderborn.de/eab/content/titleinfo/1928970) | CATALOG_ONLY / ARCHIVE_HOLD: в данном экземпляре не хватает последнего листа |
+| REF-P64, латинское «Вавилонское пленение» | [Worms LB45, VD16 L4189](https://www.lutherschriften1521.de/luther-schriften/exponate/Widerruf/lateinische-Lutherschriften/14-De-captivitate-Babilonica.php) | CATALOG_ONLY; [перевод с WA 6](https://ctsfw.edu/etext/luther/babylonian/babylonian.htm) — другой редакторский объект |
+| REF-P65, «Свобода христианина» | [Oxford Taylor Editions, ARCH.8o.G.1520(25)](https://editions.mml.ox.ac.uk/editions/freiheit-1520/) | PARTIAL_OBJECT; facsimile/transcription/translation, полная фотоколляция открыта |
+| REF-P66, четвёртая немецкая печать «Свободы» | [Pitts / Emory item 13912](https://digital.pitts.emory.edu/s/digital-collections/item/13912) | CATALOG_ONLY; не подписывать первой редакцией |
+| REF-S71, история двух папских булл | [Landesarchiv Baden-Württemberg](https://www.landesarchiv-bw.de/de/themen/praesentationen---themenzugaenge/62155) | Вторичный институциональный обзор, не снимки булл |
+| REF-S72, критическое введение к Вормсскому эдикту | [EuReD, Corinna Ehlers](https://tueditions.ulb.tu-darmstadt.de/v/pa000008-0107) | Различает дату, подписание, публикацию и сохранившиеся печати |
+
+**Материал введён в источниковый реестр, но PUBLICATION_HOLD остаётся на всех семи записях.** Библиотечные картинки, полные переводы и сканы не копировались в Git.
