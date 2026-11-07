@@ -166,6 +166,70 @@ REV_SPEAKER_CONTROLS={
     "ATT-BASE-ALPHA-OMEGA-03":("speaker","speaker inferred in immediate context; explicit I Jesus in 22:16","speakerEvidence","contextual_inference_with_intervening_angelic_speech"),
     "ATT-EXT-ARCHE-TELOS-02":("speaker","speaker in Rev22:12–13 inferred contextually; 22:16 explicit I Jesus","speakerCue","direct verse 13 not independently named; note angel interleaving"),
 }
+REQUIRED_LEXICAL_NAMING_CLAIMS = {
+    "CLM-GEN1-DEUT6-DIVINE-ELOHIM",
+    "CLM-EX20-OTHER-GODS-NEGATIVE",
+    "CLM-EX34-DEUT32-POSITIVE-EL",
+    "CLM-DEUT32-12-FOREIGN-EL-NEGATED",
+    "CLM-JUD6-25-BAAL-ALTAR-DISTINCTION",
+    "CLM-GEN35-7-EL-BETHEL-PLACE",
+}
+# Locus-specific invariants external to the baseline/contract copies. Fields
+# here define independently tested referent, naming target, or morphology.
+# These are digitally evidenced invariants, not a completed critical apparatus.
+LEXICAL_NAMED_OBJECT_CONTROLS = {
+    "ATT-BASE-ELOHIM-01": {
+        "surface": "בָּרָא אֱלֹהִים",
+        "contextRole": "creator_subject_singular_agreement",
+        "referentClass": "SINGULAR_CREATOR_GOD",
+        "isDivineDesignation": True,
+        "verbAgreement": "בָּרָא Qal perfect 3ms (singular)",
+    },
+    "ATT-BASE-ELOHIM-02": {
+        "surface": "אֱלֹהִים אֲחֵרִים",
+        "contextRole": "other_gods_prohibited",
+        "referentClass": "OTHER_GODS",
+        "isDivineDesignation": False,
+        "adjectiveAgreement": "אֲחֵרִים masculine plural",
+        "verse": "Exodus 20:2 MT (English 20:3)",
+    },
+    "ATT-BASE-ELOHIM-03": {
+        "surface": "יְהוָה אֱלֹהֵינוּ",
+        "contextRole": "shema_confession",
+        "isDivineDesignation": True,
+        "verse": "Deuteronomy 6:4",
+    },
+    "ATT-BASE-EL-01": {
+        "surface": "אֵל רַחוּם וְחַנּוּן",
+        "referentClass": "YHWH",
+        "speechAct": "divine_attributes_in_name_proclamation",
+    },
+    "ATT-BASE-EL-02": {
+        "surface": "אֵל אֱמוּנָה",
+        "referentClass": "YHWH",
+        "speechAct": "divine_faithfulness_poetic_predication",
+    },
+    "ATT-BASE-EL-03": {
+        "surface": "אֵל נֵכָר",
+        "referentClass": "OTHER_GOD_NEGATED",
+        "speechAct": "negative_foreign_god_contrast",
+        "negationClause": "וְאֵין עִמּוֹ, אֵל נֵכָר",
+        "isYHWH": False,
+    },
+    "ATT-BASE-SHALOM-03": {
+        "surface": "מִזְבַּח הַבַּעַל",
+        "namedObject": "Baal altar",
+        "speechAct": "foreign_altar_to_be_destroyed",
+        "isDivineName": False,
+    },
+    "ATT-BASE-EL-BETHEL-01": {
+        "surface": "אֵל בֵּית-אֵל",
+        "namedObject": "place",
+        "referentClass": "place",
+        "speechAct": "place_naming",
+        "speaker": "Jacob",
+    },
+}
 # The original reviewed seeds are a required minimum, not a cap on future work.
 # Additional claims must pass the same foreign-key, editorial and publication gates.
 ALLOWED_CLAIM_TYPES = {
@@ -265,6 +329,11 @@ REQUIRED_SEMANTIC_RELATIONS = {
     "REL-REV-21-22-SPEAKER": ("CLM-REV21-6-THRONE-SPEAKER","CLM-REV22-13-CHRISTOLOGICAL-INFERENCE","CONTRASTS_SPEAKER_EVIDENCE"),
     "REL-REV-1-22-TITLE-CAUTION": ("CLM-REV1-8-LORD-GOD-ALPHA","CLM-REV22-13-CHRISTOLOGICAL-INFERENCE","LIMITS_INFERENCE"),
     "REL-REV-1-TR-PRINTED": ("CLM-REV1-8-LORD-GOD-ALPHA","CLM-REV1-8-SBL-TR-EXPANSION","CONTRASTS_PRINTED_EDITION"),
+    "REL-ELOHIM-YHWH-OTHER": ("CLM-GEN1-DEUT6-DIVINE-ELOHIM", "CLM-EX20-OTHER-GODS-NEGATIVE", "CONTRASTS_REFERENT"),
+    "REL-EL-YHWH-FOREIGN": ("CLM-EX34-DEUT32-POSITIVE-EL", "CLM-DEUT32-12-FOREIGN-EL-NEGATED", "CONTRASTS_REFERENT"),
+    "REL-GIDEON-YHWH-BAAL-ALTAR": ("CLM-JUD6-23-24-PEACE-ALTAR", "CLM-JUD6-25-BAAL-ALTAR-DISTINCTION", "CONTRASTS_NAMED_OBJECT"),
+    "REL-GEN35-PLACE-JUD6-ALTAR": ("CLM-GEN35-7-EL-BETHEL-PLACE", "CLM-JUD6-23-24-PEACE-ALTAR", "CONTRASTS_NAMED_OBJECT"),
+
 }
 CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-EX3-15-DIVINE-NAME": {"ATT-BASE-YHWH-01"},
@@ -301,6 +370,13 @@ CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-REV21-6-THRONE-SPEAKER":{"ATT-BASE-ALPHA-OMEGA-02","ATT-EXT-ARCHE-TELOS-01"},
     "CLM-REV22-13-CHRISTOLOGICAL-INFERENCE":{"ATT-BASE-ALPHA-OMEGA-03","ATT-EXT-ARCHE-TELOS-02"},
     "CLM-REV1-8-SBL-TR-EXPANSION":{"ATT-BASE-ALPHA-OMEGA-01"},
+    "CLM-GEN1-DEUT6-DIVINE-ELOHIM": {"ATT-BASE-ELOHIM-01","ATT-BASE-ELOHIM-03"},
+    "CLM-EX20-OTHER-GODS-NEGATIVE": {"ATT-BASE-ELOHIM-02"},
+    "CLM-EX34-DEUT32-POSITIVE-EL": {"ATT-BASE-EL-01","ATT-BASE-EL-02"},
+    "CLM-DEUT32-12-FOREIGN-EL-NEGATED": {"ATT-BASE-EL-03"},
+    "CLM-JUD6-25-BAAL-ALTAR-DISTINCTION": {"ATT-BASE-SHALOM-03"},
+    "CLM-GEN35-7-EL-BETHEL-PLACE": {"ATT-BASE-EL-BETHEL-01"},
+
 }
 
 
@@ -371,6 +447,16 @@ def validate_provenance(
                     continue
                 seen.add(aid)
                 att_by_id[aid] = obs
+                if aid in LEXICAL_NAMED_OBJECT_CONTROLS:
+                    for k, expected in LEXICAL_NAMED_OBJECT_CONTROLS[aid].items():
+                        if obs.get(k) != expected:
+                            errors.append(f"provenance: {aid} lexical referent/named object/numbering guard violated ({k})")
+                    if aid == "ATT-BASE-ELOHIM-02":
+                        n = obs.get("numbering", {})
+                        if (not isinstance(n,dict) or
+                            n.get("mechonMamreHebrew") != "Exodus 20:2" or
+                            n.get("commonEnglishRussian") != "Exodus 20:3"):
+                            errors.append("provenance: Exodus 20 Hebrew versus common English/Russian numbering lost")
                 if aid in REV_SPEAKER_CONTROLS:
                     sk,sv,ek,ev=REV_SPEAKER_CONTROLS[aid]
                     if obs.get(sk)!=sv or obs.get(ek)!=ev:
@@ -490,6 +576,8 @@ def validate_provenance(
         errors.append("provenance: required Immanuel textual role claims missing")
     if not REQUIRED_REVELATION_CLAIMS.issubset(claim_map):
         errors.append("provenance: required Revelation speaker/edition claim missing")
+    if not REQUIRED_LEXICAL_NAMING_CLAIMS.issubset(claim_map):
+        errors.append("provenance: required lexical referent or named-object claim missing")
     for cid,level,review in (
         ("CLM-REV1-8-LORD-GOD-ALPHA","EXPLICIT_SAME_VERSE",False),
         ("CLM-REV21-6-THRONE-SPEAKER","EXPLICIT_PRIOR_NARRATOR_CUE",False),
@@ -601,8 +689,8 @@ def main() -> int:
         for p in problems:
             print("FAIL: " + p, file=sys.stderr)
         return 1
-    print("PASS: 105 attestation IDs / 4 editions; 30 provisional claims, "
-          "19 typed relations, 6 Revelation speaker anchors and all publication HOLD gates")
+    print("PASS: 105 attestation IDs / 4 editions; 36 provisional claims, "
+          "23 relations, 8 lexical/foreign/place contrast guards and all publication HOLD gates")
     return 0
 
 

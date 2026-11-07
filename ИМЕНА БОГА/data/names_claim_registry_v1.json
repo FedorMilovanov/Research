@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "corpusId": "NAMES_OF_GOD_CLAIM_LEVEL_EVIDENCE",
   "createdAt": "2026-11-07",
-  "scope": "30 provisional source-linked claims; 19 typed relations, including explicit versus contextual Revelation speakers and historic printed variant; no critical manuscript collation.",
+  "scope": "36 source-bound provisional claims, 23 typed relations; six lexical/named-object contrast claims covering eight existing attestations. No new collated witnesses or Product permissions.",
   "editorialPolicy": "Never infer Product approval from link completeness, never replace a cited verse or alternative theory silently; new claims require independent review.",
   "records": [
     {
@@ -692,6 +692,140 @@
         "Attribute commentary conclusions; compare alternate academic readings and reception history",
         "Evaluate permissions before Product/Arena publication"
       ]
+    },
+    {
+      "claimId": "CLM-GEN1-DEUT6-DIVINE-ELOHIM",
+      "claimType": "POSITIVE_REFERENT_CONTROL",
+      "statement": "Genesis 1:1 MT uses morphologically plural אֱלֹהִים with singular בָּרָא (Qal 3ms) as creator subject; Deuteronomy 6:4 uses suffixed אֱלֹהֵינוּ for YHWH 'our God' in the Shema. Both designate Israel's one God in their own contexts; morphology of the noun by itself proves neither a plurality of gods nor an independent grammatical proof of Trinitarian persons.",
+      "attestationIds": [
+        "ATT-BASE-ELOHIM-01",
+        "ATT-BASE-ELOHIM-03"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent Hebrew textual-critical apparatus and comparative translation readings",
+        "lexical and grammatical evaluation by more than one scholarly tradition",
+        "avoid converting contextual noun, place or altar name into divine personal self-naming",
+        "check publication rights and separate Product editorial signoff"
+      ]
+    },
+    {
+      "claimId": "CLM-EX20-OTHER-GODS-NEGATIVE",
+      "claimType": "NEGATIVE_REFERENT_CONTROL",
+      "statement": "In Exodus 20:2 Hebrew MT Mechon-Mamre, אֱלֹהִים אֲחֵרִים is plural 'other gods', prohibited in YHWH's speech. The same clause is normally cited Exodus 20:3 in English/Russian verse numbering. This is explicitly NOT a divine name of YHWH, and the different printed verse-numbering conventions must be kept.",
+      "attestationIds": [
+        "ATT-BASE-ELOHIM-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent Hebrew textual-critical apparatus and comparative translation readings",
+        "lexical and grammatical evaluation by more than one scholarly tradition",
+        "avoid converting contextual noun, place or altar name into divine personal self-naming",
+        "check publication rights and separate Product editorial signoff"
+      ]
+    },
+    {
+      "claimId": "CLM-EX34-DEUT32-POSITIVE-EL",
+      "claimType": "POSITIVE_REFERENT_CONTROL",
+      "statement": "Exodus 34:6 MT describes YHWH as אֵל רַחוּם וְחַנּוּן in a proclamation of name and attributes, whereas Deuteronomy 32:4 poetically describes him as אֵל אֱמוּנָה. Both אֵל readings designate YHWH in context; descriptive attributes are not automatically additional independent proper-name self-naming acts.",
+      "attestationIds": [
+        "ATT-BASE-EL-01",
+        "ATT-BASE-EL-02"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent Hebrew textual-critical apparatus and comparative translation readings",
+        "lexical and grammatical evaluation by more than one scholarly tradition",
+        "avoid converting contextual noun, place or altar name into divine personal self-naming",
+        "check publication rights and separate Product editorial signoff"
+      ]
+    },
+    {
+      "claimId": "CLM-DEUT32-12-FOREIGN-EL-NEGATED",
+      "claimType": "NEGATIVE_REFERENT_CONTROL",
+      "statement": "Deuteronomy 32:12 MT writes וְאֵין עִמּוֹ אֵל נֵכָר, denying the presence of a foreign god alongside YHWH. The אֵל in this negated foreign-god expression is NOT an additional YHWH name; this is a contextual negative control independent of positive אֵל in 32:4 and Isaiah 43:12.",
+      "attestationIds": [
+        "ATT-BASE-EL-03"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent Hebrew textual-critical apparatus and comparative translation readings",
+        "lexical and grammatical evaluation by more than one scholarly tradition",
+        "avoid converting contextual noun, place or altar name into divine personal self-naming",
+        "check publication rights and separate Product editorial signoff"
+      ]
+    },
+    {
+      "claimId": "CLM-JUD6-25-BAAL-ALTAR-DISTINCTION",
+      "claimType": "NAMED_OBJECT_CONTROL",
+      "statement": "Judges 6:25 MT names the מִזְבַּח הַבַּעַל, Baal altar belonging to Gideon's father, as an object ordered to be demolished. It is NOT the YHWH-shalom altar Gideon built and named in Judges 6:24; their immediate narrative proximity does not make the foreign altar a divine name or synonym.",
+      "attestationIds": [
+        "ATT-BASE-SHALOM-03"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent Hebrew textual-critical apparatus and comparative translation readings",
+        "lexical and grammatical evaluation by more than one scholarly tradition",
+        "avoid converting contextual noun, place or altar name into divine personal self-naming",
+        "check publication rights and separate Product editorial signoff"
+      ]
+    },
+    {
+      "claimId": "CLM-GEN35-7-EL-BETHEL-PLACE",
+      "claimType": "NAMED_OBJECT_CONTROL",
+      "statement": "In Genesis 35:7 MT Jacob built an altar at the site but וַיִּקְרָא לַמָּקוֹם אֵל בֵּית-אֵל explicitly says he named the PLACE El-bethel. This site name includes the divine element אֵל, but the named object in this verse is the place, not the altar and not God's self-identification by a newly spoken personal name.",
+      "attestationIds": [
+        "ATT-BASE-EL-BETHEL-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent Hebrew textual-critical apparatus and comparative translation readings",
+        "lexical and grammatical evaluation by more than one scholarly tradition",
+        "avoid converting contextual noun, place or altar name into divine personal self-naming",
+        "check publication rights and separate Product editorial signoff"
+      ]
     }
   ],
   "semanticRelations": [
@@ -845,6 +979,38 @@
       "toClaimId": "CLM-REV1-8-SBL-TR-EXPANSION",
       "relationType": "CONTRASTS_PRINTED_EDITION",
       "rationale": "TR1550 longer 1:8 cannot silently rewrite the attested SBLGNT 1:8 verse.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-ELOHIM-YHWH-OTHER",
+      "fromClaimId": "CLM-GEN1-DEUT6-DIVINE-ELOHIM",
+      "toClaimId": "CLM-EX20-OTHER-GODS-NEGATIVE",
+      "relationType": "CONTRASTS_REFERENT",
+      "rationale": "Same plural-shaped lexeme can designate the creator YHWH or other gods depending on verb agreement and discourse; no morphological shortcut.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-EL-YHWH-FOREIGN",
+      "fromClaimId": "CLM-EX34-DEUT32-POSITIVE-EL",
+      "toClaimId": "CLM-DEUT32-12-FOREIGN-EL-NEGATED",
+      "relationType": "CONTRASTS_REFERENT",
+      "rationale": "YHWH in Ex34:6 and Deut32:4 versus a foreign god whose presence is explicitly denied in Deut32:12.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-GIDEON-YHWH-BAAL-ALTAR",
+      "fromClaimId": "CLM-JUD6-23-24-PEACE-ALTAR",
+      "toClaimId": "CLM-JUD6-25-BAAL-ALTAR-DISTINCTION",
+      "relationType": "CONTRASTS_NAMED_OBJECT",
+      "rationale": "Gideon names a new YHWH-shalom altar in 6:24 and is instructed to destroy his father's Baal altar in 6:25. Distinct cult objects.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-GEN35-PLACE-JUD6-ALTAR",
+      "fromClaimId": "CLM-GEN35-7-EL-BETHEL-PLACE",
+      "toClaimId": "CLM-JUD6-23-24-PEACE-ALTAR",
+      "relationType": "CONTRASTS_NAMED_OBJECT",
+      "rationale": "Gen35:7 explicitly names a place, Jud6:24 explicitly names an altar; do not force a single naming type based on sacred vocabulary.",
       "publicationState": "BLOCKED"
     }
   ]

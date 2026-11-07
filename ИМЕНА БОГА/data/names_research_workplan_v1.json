@@ -20,15 +20,15 @@
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 16,
-    "provenanceRegressionTests": 96,
+    "provenanceRegressionTests": 110,
     "canonicalEditions": 4,
-    "curatedClaims": 30,
+    "curatedClaims": 36,
     "allAttestationForeignKeys": 105,
     "editionSpecificGreekUrlsVerified": 11,
     "unselectedGreekEditionUrls": 0,
-    "attestationsReferencedByClaims": 39,
-    "attestationsWithoutClaimReference": 66,
-    "typedClaimRelations": 19,
+    "attestationsReferencedByClaims": 47,
+    "attestationsWithoutClaimReference": 58,
+    "typedClaimRelations": 23,
     "correctedExodusDivineReferentRows": 3,
     "semanticScopeAudits": 15,
     "independentScholarlyClaimApprovals": 0,
@@ -39,7 +39,9 @@
     "immanuelDistinctEvidenceLociGuarded": 5,
     "immanuelTextualCriticalCollationCompleted": 0,
     "revelationSpeakerEditionAttestations": 6,
-    "revelationSecondaryCommentariesRegistered": 2
+    "revelationSecondaryCommentariesRegistered": 2,
+    "historicalMissingLocusIdsRecounted": 55,
+    "lexicalReferentAndNamedObjectGuards": 8
   },
   "allowedStatuses": [
     "DONE",
@@ -196,9 +198,14 @@
         "data/names_claim_registry_v1.json: four narrow Revelation claims, four required typed relations, explicit vs contextual speaker evidence levels, all HOLD",
         "validate_names_provenance.py: six independent Revelation first-person speaker anchors and six exact digital SBLGNT URL locks",
         "test_validate_names_provenance.py: 15 Revelation negative/positive tests incl speaker, edition, graph and source attribution",
-        "test_validate_names_ledger.py: three new secondary-source permissions/critical-collation mutation tests"
+        "test_validate_names_ledger.py: three new secondary-source permissions/critical-collation mutation tests",
+        "20_LEXEME_REFERENT_PLACE_ALTAR_AUDIT_20261107.md: creator vs forbidden other gods; affirmative vs negated El; Gideon's vs Baal altars; Jacob's named place; Ex20 numbering",
+        "data/names_claim_registry_v1.json: six narrow blocked claims over eight previously unlinked observations, four fixed semantic contrasts",
+        "validate_names_provenance.py: independent exact contextual/morphological/numbering/named-object controls on 8 attestation IDs",
+        "test_validate_names_provenance.py: 14 additional adversarial tests, do not collapse MT verse numbering or named-object boundaries",
+        "Recounted 55 older missing locusId entries without inventing IDs or changing stable attestation/source/edition IDs"
       ],
-      "verification": "105_STABLE_ORIGINAL_ATTESTATION_IDS; 48_SOURCES; 30_PROVISIONAL_CLAIMS_19_TYPED_RELATIONS; 39_OF_105_CLAIM_LINKED; 66_WITHOUT_CLAIM; 6_REVELATION_SPEAKER_GUARDS; 11_PINNED_SINGLE_EDITION_GREEK_PAGES; 277_LOCAL_TESTS_PASS_EXPECTED_AFTER_FULL_RUN; EXACT_SHA_CI_PENDING; CRITICAL_COLLATIONS_0; SCHOLARLY_APPROVAL_0; PRODUCT_APPROVAL_0",
+      "verification": "105_STABLE_ATTESTATION_EDITION_SOURCE_FKS; 48_REGISTERED_SOURCES; 36_PROVISIONAL_CLAIMS_23_RELATIONS; 47_OF_105_LINKED; 58_WITHOUT_CLAIM; 55_HISTORICAL_MISSING_LOCUS_ID_RECOUNTED_WITHOUT_BACKFILL; 8_INDEPENDENT_LEXEME_OR_OBJECT_GUARDS; 291_EXPECTED_LOCAL_TESTS_FULL_RUN_AND_EXACT_SHA_CI_PENDING; CRITICAL_COLLATIONS_0; SCIENTIFIC_APPROVAL_0; PRODUCT_APPROVAL_0",
       "closureAt": null,
       "owner": "Research editorial"
     },
@@ -597,7 +604,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NG-02: 66 original-language attestation IDs remain without narrow claim references. Next bounded wave: prioritize original form and mixed/addressee problems, classifying true divine name, descriptive epithet, human/title reuse and possible literary intertext. Review 55 historic locusId omissions before new semantic links, without manufacturing unnecessary claims. Critical Greek Revelation 1:8,21:6,22:13 manuscripts and alternative scholarly voices require independent source review. No publication/merging before separate Product gate.",
+  "nextAction": "NG-02: next strictly bounded high-risk pass on 58 claim-unlinked attestations, prioritizing divine self-predications versus human address (Rapha, Mekoddishkem) and poetic/NT shepherd comparison. The 55 old rows lacking locusId are NOT orphan sources; agree consumer/backward-compatible policy before backfilling. Critical apparatus and expert editorial challenge remain prerequisites, no Product publication.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -679,7 +686,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-07",
-    "planStatus": "NG-01 DONE; NG-02 IN_PROGRESS: 30 research-held claims, 19 semantic relations, 39/105 observations linked",
+    "planStatus": "NG-01 DONE; NG-02 IN_PROGRESS: 36 research-held claims, 23 semantic links, 47/105 contexts linked",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -714,15 +721,17 @@
       "Revelation Greek discourse: distinct explicit in-verse Lord God (1:8), prior narrator throne speaker (21:6), and Christological contextual inference (22:13), never treating 22:16 'I Jesus' as within v13.",
       "Rev1:8 printed source boundary: SBLGNT shorter Alpha/Omega versus TR1550 longer beginning/end; NET secondary textual note source attributed, not independent manuscript collation.",
       "Registered Brian J Tabb's Rev22 contextual speaker reading separately from original Greek text and original critical apparatus.",
-      "Added 4 research-held claims, 4 typed relations, 2 secondary sources, 6 speaker-control checks and 18 mutation tests; 277 local tests planned (165+16+96)."
+      "Added 4 research-held claims, 4 typed relations, 2 secondary sources, 6 speaker-control checks and 18 mutation tests; 277 local tests planned (165+16+96).",
+      "NG-02 eight lexical/object contexts: 6 narrow claims, 4 semantic contrasts, 14 regression tests, exact MT Hebrew/English Exodus 20 numbering kept",
+      "Recounted 55 missing historic locusIds without changing stable attestation source or edition keys",
+      "Provenance guard independently locks 8 context meanings, speech acts, and named objects; no new critical manuscript claim"
     ],
     "stillOpen": [
-      "NG-02: 66/105 attestation IDs without separate provisional claim reference despite source/edition FKs for all 105",
-      "55 historic locusId omissions require versioned policy rather than forced backfills",
-      "Independent manuscripts and full critical apparatus for Rev1:8, 21:6, 22:13 not collated",
-      "Historical and contemporary competing interpretations of apocalyptic voices not exhaustively reviewed",
-      "All 30 claims RESEARCH_HOLD, 0 scientific approval and 0 Product publication permission",
-      "Exact new HEAD SHA and all six GitHub CI checks require verification"
+      "NG-02: 58/105 source-and-edition-linked attestations without curated claim links",
+      "55 historic locusId gaps need consumer/backward-compatibility policy before any migrations",
+      "Independent critical Hebrew manuscripts, lexical disputes, and competing historical viewpoints not fully researched",
+      "All 36 provisional claims RESEARCH_HOLD and publication blocked; 0 full scientific / Product approvals",
+      "Exact GitHub CI for new SHA must be verified"
     ]
   },
   "originalResearchCheckpoint": {
@@ -739,14 +748,14 @@
       "sourceForeignKeys": 105,
       "editionForeignKeys": 105,
       "canonicalEditions": 4,
-      "curatedClaims": 30,
+      "curatedClaims": 36,
       "locusIdMissingHistorically": 55,
       "editionSelectionRecheckHolds": 0,
-      "notes": "Rev1:8 explicitly Lord God, Rev21:6 prior throne narrator cue, Rev22:13 speaker inferred from 22:12–16; registered SBL vs TR1550 historic printed differences and two attributed secondary sources. Six original occurrences guarded. 66 remains claim-unlinked; no scholarly or Product approval.",
-      "typedClaimRelations": 19,
+      "notes": "Distinct MT contexts for Elohim (creator/foreign/Shema), El (YHWH/foreign), Baal altar vs Gideon's altar, El Bethel place. 55 historic missing locusId rows remain stable via attestationId/sourceId/editionId, no invented backfill. 58 still unlinked, 0 Product clearance.",
+      "typedClaimRelations": 23,
       "editionSpecificDigitalVerseRechecksCompleted": 11,
-      "attestationsLinkedToClaims": 39,
-      "attestationsWithoutClaimReferences": 66,
+      "attestationsLinkedToClaims": 47,
+      "attestationsWithoutClaimReferences": 58,
       "divineReferentAddresseeControls": 3,
       "semanticScopeAudits": 15,
       "scholarlyClaimApprovals": 0,
@@ -755,7 +764,9 @@
       "rockReferentAttestations": 5,
       "rockPronounVerse30AwaitingDiscourseReview": true,
       "immanuelDistinctEvidenceLociGuarded": 5,
-      "revelationSpeakerEditionAttestations": 6
+      "revelationSpeakerEditionAttestations": 6,
+      "historicalMissingLocusIdsRecounted": 55,
+      "lexicalReferentAndNamedObjectGuards": 8
     }
   }
 }

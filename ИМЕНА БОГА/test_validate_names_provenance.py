@@ -614,6 +614,90 @@ class ProvenanceGraphTests(unittest.TestCase):
         o["sourceUrl"]="https://www.biblegateway.com/passage/?search=Revelation+22&version=TR1550"
         self.assertTrue(any("verified pinned Greek passage URL changed" in e for e in self.check(baseline=d)))
 
+    def test_eight_lexical_loci_have_six_non_product_claims(self) -> None:
+        mapping = {
+            "CLM-GEN1-DEUT6-DIVINE-ELOHIM": {"ATT-BASE-ELOHIM-01","ATT-BASE-ELOHIM-03"},
+            "CLM-EX20-OTHER-GODS-NEGATIVE": {"ATT-BASE-ELOHIM-02"},
+            "CLM-EX34-DEUT32-POSITIVE-EL": {"ATT-BASE-EL-01","ATT-BASE-EL-02"},
+            "CLM-DEUT32-12-FOREIGN-EL-NEGATED": {"ATT-BASE-EL-03"},
+            "CLM-JUD6-25-BAAL-ALTAR-DISTINCTION": {"ATT-BASE-SHALOM-03"},
+            "CLM-GEN35-7-EL-BETHEL-PLACE": {"ATT-BASE-EL-BETHEL-01"},
+        }
+        for cid,att in mapping.items():
+            row=next(x for x in self.claims["records"] if x["claimId"]==cid)
+            self.assertEqual(att,set(row["attestationIds"]))
+            self.assertEqual("RESEARCH_HOLD",row["editorialState"])
+            self.assertEqual("BLOCKED",row["publicationState"])
+
+    def test_elo_him_creator_cannot_be_made_a_plural_creator_subject(self) -> None:
+        d,o=self.mutate("elohim","baseline",0)
+        o["verbAgreement"]="Qal 3mp plural"
+        self.assertTrue(any("lexical referent/named object" in e for e in self.check(baseline=d)))
+
+    def test_elo_him_foreign_gods_cannot_become_yhwh(self) -> None:
+        d,o=self.mutate("elohim","baseline",1)
+        o["referentClass"]="SINGULAR_CREATOR_GOD"
+        o["isDivineDesignation"]=True
+        self.assertTrue(any("lexical referent/named object" in e for e in self.check(baseline=d)))
+
+    def test_exodus_20_reversed_numbering_rejected(self) -> None:
+        d,o=self.mutate("elohim","baseline",1)
+        o["numbering"]["mechonMamreHebrew"]="Exodus 20:3"
+        self.assertTrue(any("Hebrew versus common English/Russian numbering lost" in e for e in self.check(baseline=d)))
+
+    def test_exodus_20_verse_label_swap_without_numbering_edit_rejected(self) -> None:
+        d,o=self.mutate("elohim","baseline",1)
+        o["verse"]="Exodus 20:3 MT"
+        self.assertTrue(any("lexical referent/named object" in e for e in self.check(baseline=d)))
+
+    def test_shema_yhwh_identity_not_converted_to_foreign_god(self) -> None:
+        d,o=self.mutate("elohim","baseline",2)
+        o["contextRole"]="other_gods_prohibited"
+        self.assertTrue(any("lexical referent/named object" in e for e in self.check(baseline=d)))
+
+    def test_el_ex34_attributes_not_changed_to_foreign_referent(self) -> None:
+        d,o=self.mutate("el","baseline",0)
+        o["referentClass"]="OTHER_GOD_NEGATED"
+        self.assertTrue(any("lexical referent/named object" in e for e in self.check(baseline=d)))
+
+    def test_el_deut32_positive_not_changed_to_foreign_referent(self) -> None:
+        d,o=self.mutate("el","baseline",1)
+        o["speechAct"]="negative_foreign_god_contrast"
+        self.assertTrue(any("lexical referent/named object" in e for e in self.check(baseline=d)))
+
+    def test_el_deut32_12_negated_foreign_el_not_promoted_to_yhwh(self) -> None:
+        d,o=self.mutate("el","baseline",2)
+        o["isYHWH"]=True
+        o["referentClass"]="YHWH"
+        self.assertTrue(any("lexical referent/named object" in e for e in self.check(baseline=d)))
+
+    def test_judges_baal_altar_not_mapped_to_yhwh_shalom_altar(self) -> None:
+        d,o=self.mutate("shalom","baseline",2)
+        o["namedObject"]="YHWH-shalom altar"
+        self.assertTrue(any("lexical referent/named object" in e for e in self.check(baseline=d)))
+
+    def test_gen35_7_place_naming_not_reassigned_to_altar(self) -> None:
+        d,o=self.mutate("el-bethel","baseline",0)
+        o["namedObject"]="altar"
+        self.assertTrue(any("lexical referent/named object" in e for e in self.check(baseline=d)))
+
+    def test_context_claim_cannot_swap_foreign_el_with_yhwh_el(self) -> None:
+        d=copy.deepcopy(self.claims)
+        row=next(x for x in d["records"] if x["claimId"]=="CLM-DEUT32-12-FOREIGN-EL-NEGATED")
+        row["attestationIds"]=["ATT-BASE-EL-02"]
+        self.assertTrue(any("lost its independently reviewed text witnesses" in e for e in self.check(claims=d)))
+
+    def test_mandatory_lexical_claim_cannot_be_deleted(self) -> None:
+        d=copy.deepcopy(self.claims)
+        d["records"]=[x for x in d["records"] if x["claimId"]!="CLM-GEN35-7-EL-BETHEL-PLACE"]
+        self.assertTrue(any("required lexical referent or named-object claim missing" in e for e in self.check(claims=d)))
+
+    def test_cross_locus_object_contrast_cannot_collapse_into_same_referent(self) -> None:
+        d=copy.deepcopy(self.claims)
+        row=next(x for x in d["semanticRelations"] if x["relationId"]=="REL-GIDEON-YHWH-BAAL-ALTAR")
+        row["relationType"]="SPECIFIES_SPEECH_AGENT"
+        self.assertTrue(any("required semantic boundary" in e for e in self.check(claims=d)))
+
 
 if __name__ == "__main__":
     unittest.main()
