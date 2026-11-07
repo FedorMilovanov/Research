@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 17,
+    "sourceRecords": 18,
     "approvedForProduct": 0
   },
   "records": [
@@ -414,17 +414,46 @@
         "PUBLICATION_HOLD",
         "EVIDENCE_HOLD"
       ]
+    },
+    {
+      "id": "SRC-SBLGNT-CCBY-LICENSE",
+      "title": "SBLGNT — official copyright holder's current CC BY 4.0 license for Greek text",
+      "creator": "Society of Biblical Literature / Logos (Faithlife)",
+      "year": null,
+      "url": "https://www.sblgnt.com/license/",
+      "alternateUrl": "https://www.sblgnt.com/",
+      "objectType": "official_publisher_license_for_text",
+      "sourceRole": "PUBLISHER_LICENSE_TEXT_ONLY",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0) for SBLGNT licensed Greek text; attribution, source/copyright link and modification note required",
+      "sourceObjectState": "Official SBLGNT home page and full official CC BY 4.0 terms read, including attribution section 3. Old print/embed EULAs may describe additional distribution restrictions; do not infer they override the current official digitally licensed text without version-by-version provenance.",
+      "supportedUse": "Attribution-compliant use of publisher-licensed SBLGNT Greek text itself; record title, copyright, edition source, CC BY 4.0 and modifications; independent edition/rights/claim review for Product remains necessary",
+      "forbiddenUse": "Treat CC BY 4.0 of Greek text as license to THGNT, BibleGateway site graphics or interface, NET translations, Jewish manuscript photographs, commentary excerpts, or automatic publication approval",
+      "evidenceClass": "A2",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "licenseScope": "GREEK_EDITED_TEXT_ONLY_NOT_HOST_WEBSITE_OR_OTHER_EDITIONS",
+      "publicationRightsEvidence": "PUBLISHER_LICENSE_VERIFIED_ONLY",
+      "attributionChecklist": [
+        "source title and editor (SBLGNT / Michael W. Holmes)",
+        "copyright Society of Biblical Literature and Logos",
+        "CC BY 4.0 URI",
+        "link to source",
+        "indicate modifications and retain prior modification notices if applicable"
+      ]
     }
   ],
   "auditRevision": {
     "date": "2026-11-07",
     "newSources": [
-      "SRC-SBL-REVELATION",
-      "SRC-TR1550-REV18",
-      "SRC-THGNT-REV216",
-      "SRC-DANIEL-ARAMAIC",
-      "SRC-SBL-INTRO"
+      "SRC-SBLGNT-CCBY-LICENSE"
     ],
-    "rationale": "Greek edition divergence and Aramaic Daniel; separate full witnesses, public-domain TR and proprietary THGNT while keeping global publication blocked"
+    "rationale": "Official current SBLGNT digital Greek text is CC BY 4.0. Distinguish publisher license from hosting website graphics and unrelated THGNT/NET rights. Research claims remain BLOCKED."
   }
 }
