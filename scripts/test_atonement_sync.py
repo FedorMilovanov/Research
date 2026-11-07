@@ -237,8 +237,27 @@ class ActualSynchronizationTests(unittest.TestCase):
         ):
             with self.subTest(marker=marker):
                 self.assertIn(marker, text)
-        self.assertIn("B1: идентифицированная печатная книга", text)
+        self.assertIn("B1: **полный собственный текст главы в цифровой транскрипции теперь прочитан**", text)
         self.assertIn("B1 (ограниченный цифровой свидетель)", text)
+
+    def test_wave1_primary_dabney_context_and_print_hold_stay_distinct(self):
+        text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md").read_text(encoding="utf-8")
+        dossier = (ROOT / "ИСКУПЛЕНИЕ/evidence/WAVE1_DABNEY_DAVENANT_OWEN_PRIMARY_WITNESSES_2026-11-07.md").read_text(encoding="utf-8")
+        for marker in ("DABNEY_PAGE_SCAN_HOLD", "DABNEY_648_HOLD", "sermonindex.net/books/writings-of-robert-l-dabney/57"):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, text)
+                self.assertIn(marker, dossier)
+        for token in ("Inconclusive Proofs", "Real Proofs", "strict Calvinistic", "QUOTE_SAFE=NO"):
+            self.assertIn(token.lower(), dossier.lower())
+
+    def test_wave1_davenant_latin_web_segments_are_not_print_pages(self):
+        text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md").read_text(encoding="utf-8")
+        dossier = (ROOT / "ИСКУПЛЕНИЕ/evidence/WAVE1_DABNEY_DAVENANT_OWEN_PRIMARY_WITNESSES_2026-11-07.md").read_text(encoding="utf-8")
+        for marker in ("DAVENANT_LATIN_EDITION_HOLD", "AI_TRANSLATION_HOLD", "§75", "foedus Evangelicum"):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, text)
+                self.assertIn(marker, dossier)
+        self.assertIn("веб-локатор", dossier)
 
     def test_wave0_hodge_source_target_and_owen_distinction(self):
         text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md").read_text(encoding="utf-8")
