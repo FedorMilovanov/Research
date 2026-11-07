@@ -39,6 +39,9 @@
 
 ## Текущий прогресс связанной системы доказательств (NG-02)
 
+**Волна 2026-11-07 — [досье 31: проверенный Research consumer-контракт и внешний Product HOLD](31_NG02_INTERNAL_CONSUMER_WITNESS_EXTERNAL_BLOCK_20261107.md).** Реально сверены **50/50 существующих inline-locusId** по четырём независимым locked JSON contracts (16+12+14+8) и **22/22 общих исторических записей без inline** по пятому контракту; все они сопоставлены с оригинальными `attestationId`, стихом, написанием, изданием и sidecar. Созданы `names_consumer_compat_v1.json`, `validate_names_consumers.py` и **25 дополнительных mutation-тестов**, добавленных к специализированному CI. Проверены ограниченные default-branch репозитории GB/Poet/GitHub Pages, но **ни один внешний runtime/Product consumer НЕ подтверждён**: миграция v2 BLOCKED, старые 55 inline-пропусков сохраняются, original ledgers unchanged.
+
+
 **Волна 2026-11-07 — [досье 30: совместимые `locusId` без мутации v1](30_NG02_LOCUS_ID_COMPATIBILITY_20261107.md).** Прямой аудит: **50 оригинальных inline locusId, 55 исторически отсутствующих (51 baseline/4 extension)**. Созданы `data/names_locus_compat_v1.json`, `validate_names_locus_compat.py` и **24 отрицательных/позитивных тестов**, добавлены в CI. Все **105/105** `attestationId` получили *Research-only opt-in* разрешимый ключ: 50 точных старых значений и 55 sidecar алиасов; **исходные JSON, main и внешние Product/Arena потребители не изменены**. Счётчик реально отсутствующих inline полей по-прежнему **55**, не выдавать за нуль. Публикация/научная колляция/права HOLD.
 
 

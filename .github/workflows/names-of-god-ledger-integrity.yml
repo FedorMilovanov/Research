@@ -42,3 +42,7 @@ jobs:
         run: python3 'ИМЕНА БОГА/validate_names_locus_compat.py'
       - name: Run locus compatibility mutation regressions (read-only)
         run: python3 -m unittest discover -s 'ИМЕНА БОГА' -p 'test_validate_names_locus_compat.py' -v
+      - name: Validate independent research consumer snapshot compatibility (read-only)
+        run: python3 'ИМЕНА БОГА/validate_names_consumers.py'
+      - name: Run consumer snapshot and external release-gate mutation regressions (read-only)
+        run: python3 -m unittest discover -s 'ИМЕНА БОГА' -p 'test_validate_names_consumers.py' -v
