@@ -386,7 +386,7 @@
       "sourceEdition": "SBLGNT 2010",
       "sourceUrl": "https://www.biblegateway.com/passage/?search=Revelation+1%3A4&version=SBLGNT",
       "category": "apocalyptic_divine_epithet",
-      "editorialCaution": "SBLGNT: ἀπὸ ὁ ὢν ... (необычная грамматика); источник аллюзии в Исх. 3:14 обсуждать, не подменять полной цитатой LXX.",
+      "editorialCaution": "Rev 1:4–5: John offers greeting ἀπὸ the One who is/was/is coming, then ἀπὸ seven spirits, then ἀπὸ Jesus Christ; referents are grammatically distinguished. Preserve odd ἀπὸ ὁ ὢν (nominative article after preposition). Rev 1:8 applies formula to speaker κύριος, ὁ θεός. Allusion to LXX Exod 3:14 is interpretive, not complete verbal identity.",
       "relatedBaselineIds": [
         "ehyeh",
         "alpha-omega"
@@ -411,7 +411,33 @@
         "designationReferent": "the One who is, was, and is coming",
         "subjectIdentity": "to be established by literary context",
         "syntacticObservation": "ἀπὸ ὁ ὢν has nominative expression after preposition; preserve edition"
-      }
+      },
+      "attestations": [
+        {
+          "verse": "Revelation 1:4",
+          "surface": "ὁ ὢν καὶ ὁ ἦν καὶ ὁ ἐρχόμενος",
+          "language": "greek",
+          "edition": "SBLGNT 2010 via BibleGateway",
+          "speaker": "the One who is/was/is coming, separately listed from Jesus Christ in 1:5",
+          "speakerCue": "John's greeting distinguishes three ἀπό sources",
+          "sourceUrl": "https://www.biblegateway.com/passage/?search=Revelation+1%3A4-8&version=SBLGNT",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN"
+        },
+        {
+          "verse": "Revelation 1:8",
+          "surface": "ὁ ὢν καὶ ὁ ἦν καὶ ὁ ἐρχόμενος",
+          "language": "greek",
+          "edition": "SBLGNT 2010 via BibleGateway",
+          "speaker": "Lord God",
+          "speakerCue": "λέγει κύριος, ὁ θεός",
+          "sourceUrl": "https://www.biblegateway.com/passage/?search=Revelation+1%3A4-8&version=SBLGNT",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN"
+        }
+      ]
     },
     {
       "id": "arche-telos",
@@ -423,7 +449,7 @@
       "sourceEdition": "SBLGNT 2010",
       "sourceUrl": "https://www.biblegateway.com/passage/?search=Revelation+21%3A6&version=SBLGNT",
       "category": "apocalyptic_self_designation",
-      "editorialCaution": "В Откр. 21:6 употреблено вместе с «Альфой и Омегой», но в 1:8 у SBLGNT та же дополнительная формула отсутствует; следить за редакцией.",
+      "editorialCaution": "SBLGNT Rev21:6 and Rev22:13 contain ἡ ἀρχὴ καὶ τὸ τέλος. In Rev1:8 SBLGNT lacks this clause, TR1550 contains αρχη και τελος. Rev21:6 SBLGNT has ἐγὼ without εἰμι; THGNT and TR1550 include the verb. In Rev22:13 speaker identification through 22:16 is a contextual inference with intervening angelic voice, not explicit attribution in v13.",
       "relatedBaselineIds": [
         "alpha-omega"
       ],
@@ -441,11 +467,49 @@
       "digitalFormStatus": "ONE_VERSE_DIGITAL_SURFACE_CHECKED",
       "criticalEditionStatus": "NOT_COLLATED",
       "etymologyStatus": "NOT_RESOLVED",
-      "note": "Additional research candidate, not part of Arena original 29, not Product-ready."
+      "note": "Additional research candidate, not part of Arena original 29, not Product-ready.",
+      "attestations": [
+        {
+          "verse": "Revelation 21:6",
+          "surface": "ἡ ἀρχὴ καὶ τὸ τέλος",
+          "language": "greek",
+          "edition": "SBLGNT 2010 via BibleGateway",
+          "speaker": "the one seated upon throne, introduced at Revelation 21:5",
+          "speakerCue": "narrator explicit at 21:5, continuous statement",
+          "sourceUrl": "https://www.biblegateway.com/passage/?search=Revelation+21&version=SBLGNT",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN"
+        },
+        {
+          "verse": "Revelation 22:13",
+          "surface": "ἡ ἀρχὴ καὶ τὸ τέλος",
+          "language": "greek",
+          "edition": "SBLGNT 2010 via BibleGateway",
+          "speaker": "speaker in Rev22:12–13 inferred contextually; 22:16 explicit I Jesus",
+          "speakerCue": "direct verse 13 not independently named; note angel interleaving",
+          "sourceUrl": "https://www.biblegateway.com/passage/?search=Revelation+22&version=SBLGNT",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN"
+        }
+      ]
     }
   ],
   "auditRevision": {
     "date": "2026-11-07",
     "rationale": "Correct Luke 1:32: angel Gabriel speaks; God acts; Jesus receives. Source THGNT exact verse crosschecked. Distinguish text, narrative voices, and theology."
+  },
+  "auditProtocol": {
+    "apocalypticAttestations": {
+      "phase": "REVELATION_GREEK_2026_11_07",
+      "extensionIds": [
+        "ho-on-erchomenos",
+        "arche-telos"
+      ],
+      "totalAttestations": 4,
+      "speakerRule": "NO_GLOBAL_SPEAKER_FOR_REPEATED_EPITHET"
+    },
+    "overallResearchHolds": "PUBLICATION_HOLD_REMAINS_FOR_ALL"
   }
 }
