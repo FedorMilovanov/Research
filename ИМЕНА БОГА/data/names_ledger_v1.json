@@ -79,7 +79,63 @@
       "sourceEdition": "Mechon-Mamre MT digital transcription",
       "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
       "criticalEditionStatus": "NOT_COLLATED",
-      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass",
+      "attestations": [
+        {
+          "locusId": "ehyeh-ex3-promise",
+          "verse": "Exodus 3:12",
+          "surface": "כִּי-אֶהְיֶה עִמָּךְ",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "speaker": "YHWH speaking to Moses",
+          "referent": "Moses",
+          "speechAct": "presence_promise",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0203.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "grammaticalPerson": "אֶהְיֶה first person singular",
+          "claimScope": "HEBREW_MT_GOD_PROMISE_NOT_PROPER_NAMING_ACT"
+        },
+        {
+          "locusId": "ehyeh-ex3-hebrew",
+          "verse": "Exodus 3:14 MT",
+          "surface": "אֶהְיֶה אֲשֶׁר אֶהְיֶה",
+          "language": "hebrew",
+          "edition": "Mechon-Mamre MT digital transcription",
+          "speaker": "God addressing Moses",
+          "referent": "Moses",
+          "speechAct": "divine_self_revelation_answer_to_name_question",
+          "sourceUrl": "https://mechon-mamre.org/p/pt/pt0203.htm",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "grammaticalPerson": "אֶהְיֶה first person singular",
+          "claimScope": "MT_FORM_NOT_IDENTICAL_TO_LXX_GREEK",
+          "interpretiveNotes": "Present/future lexical reading disputed"
+        },
+        {
+          "locusId": "ehyeh-ex3-greek",
+          "verse": "Exodus 3:14 LXX Rahlfs-Hanhart",
+          "surface": "Ἐγώ εἰμι ὁ ὤν",
+          "language": "greek",
+          "edition": "Rahlfs-Hanhart 2006 via Deutsche Bibelgesellschaft",
+          "speaker": "God addressing Moses",
+          "referent": "Moses",
+          "speechAct": "Greek_translation_of_divine_self_declaration",
+          "sourceUrl": "https://www.die-bibel.de/bibel/LXX/EXO.3",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "PERMISSION_REQUIRED",
+          "publicationState": "BLOCKED",
+          "greekSecondClause": "Ὁ ὢν ἀπέσταλκέν με",
+          "claimScope": "OFFICIAL_PUBLISHER_GREEK_READING_NOT_DIRECT_QUOTATION_IN_JOHN8_58",
+          "intertextRelation": "ALLUSION_POSSIBLE_NOT_IDENTICAL_FULL_QUOTE"
+        }
+      ],
+      "contextualAssertion": "Direct publisher LXX Rahlfs-Hanhart Ex3:14 Ἐγώ εἰμι ὁ ὤν, Ὁ ὢν ἀπέσταλκέν με; MT אֶהְיֶה אֲשֶׁר אֶהְיֶה, Ex3:12 presence promise. John8:58 only ἐγὼ εἰμί, no ὁ ὤν. Linguistic/editorial distinctions do not negate Christian interpretation."
     },
     {
       "id": "yireh",
@@ -1817,7 +1873,84 @@
       "sourceEdition": "SBLGNT 2010 via BibleGateway (digital display)",
       "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
       "criticalEditionStatus": "NOT_COLLATED",
-      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass",
+      "attestations": [
+        {
+          "locusId": "abba-mark14-prayer",
+          "verse": "Mark 14:36",
+          "surface": "Αββα ὁ πατήρ",
+          "language": "greek",
+          "edition": "SBLGNT 2010 via BibleGateway",
+          "speaker": "Jesus praying in Gethsemane",
+          "referent": "God the Father",
+          "speechAct": "direct_son_to_father_prayer",
+          "sourceUrl": "https://www.biblegateway.com/passage/?search=Mark+14&version=SBLGNT",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "agentOfCry": "Jesus",
+          "syntax": "ἔλεγεν; ὁ πατήρ article+nominative functioning as address",
+          "languageOrigin": "ARAMAIC_WORD_GREEK_SCRIPT",
+          "ntBookRole": "GOSPEL_REPORTED_DIRECT_PRAYER"
+        },
+        {
+          "locusId": "abba-rom8-adoption",
+          "verse": "Romans 8:15",
+          "surface": "Αββα ὁ πατήρ",
+          "language": "greek",
+          "edition": "SBLGNT 2010 via BibleGateway",
+          "speaker": "Paul writing; we believers cry",
+          "referent": "God the Father",
+          "speechAct": "believer_adoption_prayer",
+          "sourceUrl": "https://www.biblegateway.com/passage/?search=Romans+8%3A12-17&version=SBLGNT",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "agentOfCry": "we/believers, κράζομεν first person plural",
+          "subjectCue": "ἐν ᾧ κράζομεν",
+          "languageOrigin": "ARAMAIC_WORD_GREEK_SCRIPT",
+          "ntBookRole": "PAULINE_ADOPTION_EXHORTATION"
+        },
+        {
+          "locusId": "abba-gal4-spirit",
+          "verse": "Galatians 4:6",
+          "surface": "Αββα ὁ πατήρ",
+          "language": "greek",
+          "edition": "SBLGNT 2010 via BibleGateway",
+          "speaker": "Paul writing about Spirit's action",
+          "referent": "God the Father",
+          "speechAct": "sonship_spirit_cry",
+          "sourceUrl": "https://www.biblegateway.com/verse/grc/Galatians%204%3A6",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "agentOfCry": "Spirit of Son, τὸ πνεῦμα ... κρᾶζον",
+          "subjectCue": "τὸ πνεῦμα τοῦ υἱοῦ αὐτοῦ ... κρᾶζον",
+          "languageOrigin": "ARAMAIC_WORD_GREEK_SCRIPT",
+          "ntBookRole": "PAULINE_SPIRIT_OF_SON_PRAYER",
+          "printedVariants": [
+            {
+              "edition": "SBLGNT 2010",
+              "phrase": "εἰς τὰς καρδίας ἡμῶν"
+            },
+            {
+              "edition": "Stephanus TR1550",
+              "phrase": "εις τας καρδιας υμων"
+            }
+          ]
+        }
+      ],
+      "contextualAssertion": "SBLGNT three occurrences same Greek transcription Αββα ὁ πατήρ but Mark Jesus prays, Rom believers cry κράζομεν, Gal Spirit of Son cries κρᾶζον. Article+nominative πατήρ functions as address; Aramaic derivation not separate manuscript in Hebrew script. English daddy exclusive lexical claim not established from Barr abstract.",
+      "printedOrthography": {
+        "sblgnt": "Αββα",
+        "thgnt": "ἀββᾶ",
+        "nestle1904": "Ἀββᾶ",
+        "variantScope": "PRINTED_ACCENTS_OR_CAPITALIZATION_ONLY_NOT_PROOF_OF_THREE_DIFFERENT_ARAMAIC_WORDS",
+        "sourceUrl": "https://www.biblegateway.com/verse/grc/%CE%9A%CE%91%CE%A4%CE%91%20%CE%9C%CE%91%CE%A1%CE%9A%CE%9F%CE%9D%2014%3A36"
+      }
     },
     {
       "id": "pantokrator",
@@ -2001,7 +2134,125 @@
       "sourceEdition": "SBLGNT 2010 via BibleGateway (digital display)",
       "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
       "criticalEditionStatus": "NOT_COLLATED",
-      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass"
+      "provenance": "Arena 29-ID list; verse form assigned in Research independent pass",
+      "attestations": [
+        {
+          "locusId": "ego-john6-it-is-i",
+          "verse": "John 6:20",
+          "surface": "Ἐγώ εἰμι",
+          "language": "greek",
+          "edition": "SBLGNT 2010 via BibleGateway",
+          "speaker": "Jesus",
+          "referent": "speaker's own identity",
+          "speechAct": "identity_assurance_possible_theophanic_allusion",
+          "sourceUrl": "https://www.biblegateway.com/passage/?search=John+6%3A20&version=SBLGNT",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "claimScope": "Jesus self identification with do not be afraid; theophany possible interpretive layer",
+          "divineNameClaim": "CONTEXTUAL_THEOLOGICAL_INFERENCE_NOT_LEXICAL_PROOF",
+          "speakerReferent": "Jesus",
+          "speechTarget": "disciples on lake"
+        },
+        {
+          "locusId": "ego-john8-preabraham",
+          "verse": "John 8:58",
+          "surface": "ἐγὼ εἰμί",
+          "language": "greek",
+          "edition": "SBLGNT 2010 via BibleGateway",
+          "speaker": "Jesus",
+          "referent": "speaker's own identity",
+          "speechAct": "pre_abraham_christological_self_declaration",
+          "sourceUrl": "https://www.biblegateway.com/passage/?search=John+8%3A58&version=SBLGNT",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "claimScope": "πρὶν Ἀβραὰμ γενέσθαι: preexistence claim with distinct syntax",
+          "divineNameClaim": "CHRISTOLOGICAL_EXEGESIS_REQUIRES_INTERTEXTUAL_ARGUMENT",
+          "speakerReferent": "Jesus",
+          "speechTarget": "Jewish opponents"
+        },
+        {
+          "locusId": "ego-john9-human",
+          "verse": "John 9:9",
+          "surface": "Ἐγώ εἰμι",
+          "language": "greek",
+          "edition": "SBLGNT 2010 via BibleGateway",
+          "speaker": "formerly blind man",
+          "referent": "speaker's own identity",
+          "speechAct": "ordinary_human_identity_answer",
+          "sourceUrl": "https://www.biblegateway.com/passage/?search=John+9%3A1-9&version=SBLGNT",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "claimScope": "He is identifying himself as the formerly blind person",
+          "isDivineDesignation": false,
+          "divineNameClaim": "EXPLICIT_NEGATIVE_CONTROL_HUMAN_SPEAKER",
+          "speakerReferent": "formerly blind man",
+          "speechTarget": "neighbors and onlookers"
+        },
+        {
+          "locusId": "ego-john18-answer",
+          "verse": "John 18:5",
+          "surface": "Ἐγώ εἰμι",
+          "language": "greek",
+          "edition": "SBLGNT 2010 via BibleGateway",
+          "speaker": "Jesus",
+          "referent": "speaker's own identity",
+          "speechAct": "identity_answer_with_theological_narrative_potential",
+          "sourceUrl": "https://www.biblegateway.com/passage/?search=John+18&version=SBLGNT",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "claimScope": "Asked for Jesus the Nazarene; Jesus answers it is I",
+          "divineNameClaim": "CONTEXTUAL_THEOLOGICAL_INFERENCE_NOT_LEXICAL_PROOF",
+          "speakerReferent": "Jesus",
+          "speechTarget": "arresting party"
+        },
+        {
+          "locusId": "ego-john18-repeat",
+          "verse": "John 18:6",
+          "surface": "Ἐγώ εἰμι",
+          "language": "greek",
+          "edition": "SBLGNT 2010 via BibleGateway",
+          "speaker": "Jesus, reported in narration",
+          "referent": "speaker's own identity",
+          "speechAct": "narrative_repetition_of_identity_answer",
+          "sourceUrl": "https://www.biblegateway.com/passage/?search=John+18&version=SBLGNT",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "claimScope": "people go backward and fall on ground after utterance; interpretation is narrative contextual",
+          "divineNameClaim": "CONTEXTUAL_THEOLOGICAL_INFERENCE_NOT_LEXICAL_PROOF",
+          "speakerReferent": "Jesus, reported in narration",
+          "speechTarget": "arresting party"
+        },
+        {
+          "locusId": "ego-john18-again",
+          "verse": "John 18:8",
+          "surface": "ἐγώ εἰμι",
+          "language": "greek",
+          "edition": "SBLGNT 2010 via BibleGateway",
+          "speaker": "Jesus",
+          "referent": "speaker's own identity",
+          "speechAct": "identity_answer_with_request_to_release_disciples",
+          "sourceUrl": "https://www.biblegateway.com/passage/?search=John+18&version=SBLGNT",
+          "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
+          "criticalEditionStatus": "NOT_COLLATED",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED",
+          "claimScope": "explicit εἰ οὖν ἐμὲ ζητεῖτε, ἄφετε τούτους",
+          "divineNameClaim": "CONTEXTUAL_THEOLOGICAL_INFERENCE_NOT_LEXICAL_PROOF",
+          "speakerReferent": "Jesus",
+          "speechTarget": "arresting party"
+        }
+      ],
+      "contextualAssertion": "John9:9 healed man uses exact Ἐγώ εἰμι while John8:58 Jesus places ἐγὼ εἰμί alongside πρὶν Ἀβραὰμ γενέσθαι. Lexical two-word formula itself not unique divine name; Christology rests on context/intertext, not exact quote of LXX Ex3:14 Ἐγώ εἰμι ὁ ὤν. John18:5,6,8 repeated identity answers."
     },
     {
       "id": "immanuel",
@@ -2222,6 +2473,26 @@
       "publicationEligible": 0,
       "lxxContrast": "MT Exodus17:15-16 vs publisher Rahlfs-Hanhart 2006 Greek edition, not manuscript collation",
       "contractStatus": "PENDING_SEPARATE_VERSIONED_CONTRACT"
+    },
+    "abbaEgoIntertext": {
+      "phase": "ABBA_EGO_EIMI_EXODUS_INTERTEXT_2026_11_07",
+      "baselineIds": [
+        "abba",
+        "ego-eimi",
+        "ehyeh"
+      ],
+      "totalAttestations": 12,
+      "abbaCount": 3,
+      "egoEimiCount": 6,
+      "ehyehCount": 3,
+      "negativeControl": "ego-john9-human",
+      "sourceModes": [
+        "SBLGNT_2010_GREEK",
+        "MECHON_MAMRE_MT",
+        "RAHLFS_HANHART_2006_LXX"
+      ],
+      "criticalCollationStatus": "NOT_COLLATED",
+      "publicationEligible": 0
     }
   }
 }
