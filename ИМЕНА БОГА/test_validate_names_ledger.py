@@ -95,5 +95,21 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertNotEqual(roles["narrativeSpeaker"], roles["grammaticalAgent"])
 
 
+    def test_hidden_bidi_controls_are_not_permitted_in_script_forms(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(row for row in data["records"] if row["id"] == "yhwh")
+        row["verifiedForm"] += chr(0x202E)  # RIGHT-TO-LEFT OVERRIDE
+        self.assertTrue(any("format/bidi control" in error for error in validate(data)))
+
+    def test_non_nfc_greek_is_rejected(self) -> None:
+        import unicodedata
+        data = copy.deepcopy(self.extension)
+        row = next(row for row in data["records"] if row["id"] == "ho-on-erchomenos")
+        form = unicodedata.normalize("NFD", row["verifiedDigitalForm"])
+        self.assertNotEqual(form, row["verifiedDigitalForm"])
+        row["verifiedDigitalForm"] = form
+        self.assertTrue(any("NFC-normalized" in error for error in validate_extension(data, self.baseline)))
+
+
 if __name__ == "__main__":
     unittest.main()
