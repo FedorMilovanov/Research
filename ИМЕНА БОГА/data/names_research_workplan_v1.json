@@ -20,15 +20,18 @@
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 16,
-    "provenanceRegressionTests": 47,
+    "provenanceRegressionTests": 53,
     "canonicalEditions": 4,
-    "curatedClaims": 14,
+    "curatedClaims": 15,
     "allAttestationForeignKeys": 105,
     "editionSpecificGreekUrlsVerified": 4,
     "unselectedGreekEditionUrls": 0,
-    "attestationsReferencedByClaims": 18,
-    "attestationsWithoutClaimReference": 87,
-    "typedClaimRelations": 6
+    "attestationsReferencedByClaims": 20,
+    "attestationsWithoutClaimReference": 85,
+    "typedClaimRelations": 7,
+    "correctedExodusDivineReferentRows": 3,
+    "semanticScopeAudits": 15,
+    "independentScholarlyClaimApprovals": 0
   },
   "allowedStatuses": [
     "DONE",
@@ -159,9 +162,14 @@
         "14_GREEK_EDITION_PINNING_AND_CLAIM_QA_20261107.md: publisher-edition verification of 4 Greek original-language links",
         "three locked attestation JSON contracts upgraded to single-edition URLs",
         "data/names_claim_registry_v1.json: 14 provisional source-linked claims, 6 typed semantic edges",
-        "test_validate_names_provenance.py: 47 provenance tests, including 15 new mutation checks on this wave"
+        "test_validate_names_provenance.py: 47 provenance tests, including 15 new mutation checks on this wave",
+        "15_CLAIM_SEMANTIC_ROLE_AUDIT_20261107.md: 15 claim-level scope and interpretation boundary review",
+        "data/names_ledger_v1.json: three Exodus first-person referents corrected from Moses to God and addressee=Moses",
+        "data/speech_intertext_contract_v1.json: independently locked copies corrected without changing original-language text",
+        "data/names_claim_registry_v1.json: CLM-EX3-EHYEH-DIVINE-REFERENT + required typed semantic link",
+        "test_validate_names_provenance.py: six new regressions for referent, addressee, speaker and claim edge"
       ],
-      "verification": "105_ATT_ID_EDITION_SOURCE; 4_SINGLE_EDITION_GREEK_SOURCES_VERIFIED; 14_PROVISIONAL_CLAIMS_6_RELATIONS; 18_OF_105_ATTESTATIONS_REFERENCED; 87_WITHOUT_CLAIM_REFERENCE; 47_GRAPH_TESTS_LOCAL_PASS; CI_EXACT_SHA_PENDING; INDEPENDENT_CRITICAL_SCHOLARLY_REVIEW_PENDING",
+      "verification": "105_STABLE_ATTESTATION_EDITION_SOURCE_LINKS; 15_PROVISIONAL_CLAIMS_7_RELATIONS; 20_DISTINCT_ATTESTATIONS_LINKED_TO_CLAIMS; 85_WITHOUT_CLAIM; 3_EXODUS_REFERENT_AND_ADDRESSEE_ERRORS_FIXED_IN_LEDGER_AND_CONTRACT; 226_TESTS_LOCAL_PASS; EXACT_SHA_CI_PENDING; NO_INDEPENDENT_SCHOLARLY_CLAIM_APPROVAL",
       "closureAt": null,
       "owner": "Research editorial"
     },
@@ -560,7 +568,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NG-02: independently evaluate 14 provisional claims, expand links for 87 occurrences currently without any claim; NG-04/05/10/11: consult original critical apparatus and scholarship; do not certify manuscript variants from online edition alone; check final exact-sha GitHub CI.",
+  "nextAction": "NG-02: independently verify source-critical alternatives and academic interpretations for 15 claims; add claim-level review decisions for 85 currently unreferenced attestations, prioritizing divine-speech/addressee/named-object conflations; NG-04/05: critical apparatus and phonology, followed by NG-03 supersession history. CI on exact final SHA required before engineering completion.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -629,7 +637,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-07",
-    "planStatus": "NG-01 DONE; NG-02 IN_PROGRESS, four digital Greek edition links fixed",
+    "planStatus": "NG-01 DONE; NG-02 IN_PROGRESS with 3 Exodus referent corrections and 15 provisional claims",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -642,13 +650,19 @@
       "Resolved four SBLGNT/THGNT multi-edition original-language URLs with pinned single-edition links",
       "Updated three independent locked contracts and provenance mutation tests",
       "Added four provisional research claims and two semantic typed links, 18/105 attestations referenced",
-      "220 local tests PASS: 157 corpus + 16 plan + 47 provenance; GitHub exact-sha CI pending"
+      "220 local tests PASS: 157 corpus + 16 plan + 47 provenance; GitHub exact-sha CI pending",
+      "Found and corrected 3 Exodus 3 Hebrew/Greek observations with Moses incorrectly stored as referent; added separate addressee=Moses",
+      "Updated three independently locked speech/intertext contract copies",
+      "Registered new Exodus divine speech role claim and a semantic relation",
+      "Added six adversarial regressions; 226 total tests pass locally (157 corpus + 16 plan + 53 provenance)",
+      "Added a fifteen-claim semantic scope dossier without awarding any scholarly approval"
     ],
     "stillOpen": [
-      "NG-02: 87 attestation IDs not yet referenced by any claim; 18 referenced occurrences not independently scholarly reviewed",
-      "NG-02: confirm all GitHub checks on final commit, keep PR draft",
-      "NG-04/05/08/09/10/11: critical apparatus, original scholarly papers and alternative interpretations",
-      "NG-06/07/09: original TMS/Chou/Barrick video/audio must be checked, transcript alone insufficient"
+      "NG-02: 85 attestation IDs have no claim references; 20 referenced do not constitute independent scholarly certification",
+      "NG-02: 15 provisional claims reviewed for logical scope, none fully critically collated or Product approved",
+      "NG-02: exact final SHA GitHub CI needed; explicit editor signoff remains OPEN",
+      "NG-04/05/08/09/10/11: original critical editions and full peer-reviewed arguments",
+      "NG-06/07/09: original TMS lectures and Abner Chou audio still to be watched"
     ]
   },
   "originalResearchCheckpoint": {
@@ -665,14 +679,17 @@
       "sourceForeignKeys": 105,
       "editionForeignKeys": 105,
       "canonicalEditions": 4,
-      "curatedClaims": 14,
+      "curatedClaims": 15,
       "locusIdMissingHistorically": 55,
       "editionSelectionRecheckHolds": 0,
-      "notes": "Four Greek links now use correct one-edition digital displays; all 14 claims remain research-held; 18/105 attestation IDs referenced by at least one claim, 87 with none, 0 independent scholarly signoffs.",
-      "typedClaimRelations": 6,
+      "notes": "Exodus 3:12/14 Hebrew and LXX now distinguish divine first-person referent from Moses as addressee in 3 ledger observations and 3 locked contract copies. Claim scope reviewed for all 15 provisionally; no full scholarly review or publication.",
+      "typedClaimRelations": 7,
       "editionSpecificDigitalVerseRechecksCompleted": 4,
-      "attestationsLinkedToClaims": 18,
-      "attestationsWithoutClaimReferences": 87
+      "attestationsLinkedToClaims": 20,
+      "attestationsWithoutClaimReferences": 85,
+      "divineReferentAddresseeControls": 3,
+      "semanticScopeAudits": 15,
+      "scholarlyClaimApprovals": 0
     }
   }
 }

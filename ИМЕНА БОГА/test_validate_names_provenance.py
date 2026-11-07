@@ -312,5 +312,40 @@ class ProvenanceGraphTests(unittest.TestCase):
         self.assertTrue(any("required semantic boundary" in e for e in self.check(claims=d)))
 
 
+    def test_divine_egoeimi_in_exodus_cannot_refer_to_moses(self) -> None:
+        for idx in (0, 1, 2):
+            d, obs = self.mutate("ehyeh", "baseline", idx)
+            obs["referent"] = "Moses"
+            self.assertTrue(any("divine self-reference wrongly attributed" in e for e in self.check(baseline=d)))
+
+    def test_moses_is_addressee_not_formal_divine_referent(self) -> None:
+        for idx in (0, 1, 2):
+            d, obs = self.mutate("ehyeh", "baseline", idx)
+            obs.pop("addressee")
+            self.assertTrue(any("missing or incorrect speech addressee" in e for e in self.check(baseline=d)))
+
+    def test_exodus_three_speech_cannot_be_reassigned_to_moses(self) -> None:
+        d, obs = self.mutate("ehyeh", "baseline", 1)
+        obs["speaker"] = "Moses"
+        self.assertTrue(any("divine first-person speaker changed" in e for e in self.check(baseline=d)))
+
+    def test_exodus_role_claim_is_required(self) -> None:
+        d = copy.deepcopy(self.claims)
+        d["records"] = [x for x in d["records"] if x["claimId"] != "CLM-EX3-EHYEH-DIVINE-REFERENT"]
+        self.assertTrue(any("Exodus 3 divine referent claim missing" in e for e in self.check(claims=d)))
+
+    def test_exodus_role_claim_requires_all_three_loci(self) -> None:
+        d = copy.deepcopy(self.claims)
+        row = next(x for x in d["records"] if x["claimId"] == "CLM-EX3-EHYEH-DIVINE-REFERENT")
+        row["attestationIds"].remove("ATT-BASE-EHYEH-01")
+        self.assertTrue(any("lost its independently reviewed text witnesses" in e for e in self.check(claims=d)))
+
+    def test_exodus_role_relation_stays_bound_to_correct_claims(self) -> None:
+        d = copy.deepcopy(self.claims)
+        row = next(x for x in d["semanticRelations"] if x["relationId"] == "REL-EX3-SELF-SPEECH-VS-ADDRESSEE")
+        row["toClaimId"] = "CLM-YHWH-HISTORICAL-PRONUNCIATION"
+        self.assertTrue(any("required semantic boundary" in e for e in self.check(claims=d)))
+
+
 if __name__ == "__main__":
     unittest.main()

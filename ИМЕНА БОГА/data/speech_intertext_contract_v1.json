@@ -182,13 +182,14 @@
       "language": "hebrew",
       "edition": "Mechon-Mamre MT digital transcription",
       "speaker": "YHWH speaking to Moses",
-      "referent": "Moses",
+      "referent": "God of Israel, the divine first-person speaker",
       "speechAct": "presence_promise",
       "sourceUrl": "https://mechon-mamre.org/p/pt/pt0203.htm",
       "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
       "criticalEditionStatus": "NOT_COLLATED",
       "rightsState": "RIGHTS_UNKNOWN",
-      "publicationState": "BLOCKED"
+      "publicationState": "BLOCKED",
+      "addressee": "Moses"
     },
     {
       "baselineId": "ehyeh",
@@ -198,13 +199,14 @@
       "language": "hebrew",
       "edition": "Mechon-Mamre MT digital transcription",
       "speaker": "God addressing Moses",
-      "referent": "Moses",
+      "referent": "God of Israel, the divine first-person speaker",
       "speechAct": "divine_self_revelation_answer_to_name_question",
       "sourceUrl": "https://mechon-mamre.org/p/pt/pt0203.htm",
       "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
       "criticalEditionStatus": "NOT_COLLATED",
       "rightsState": "RIGHTS_UNKNOWN",
-      "publicationState": "BLOCKED"
+      "publicationState": "BLOCKED",
+      "addressee": "Moses"
     },
     {
       "baselineId": "ehyeh",
@@ -214,13 +216,14 @@
       "language": "greek",
       "edition": "Rahlfs-Hanhart 2006 via Deutsche Bibelgesellschaft",
       "speaker": "God addressing Moses",
-      "referent": "Moses",
+      "referent": "God of Israel, the divine first-person speaker",
       "speechAct": "Greek_translation_of_divine_self_declaration",
       "sourceUrl": "https://www.die-bibel.de/bibel/LXX/EXO.3",
       "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
       "criticalEditionStatus": "NOT_COLLATED",
       "rightsState": "PERMISSION_REQUIRED",
-      "publicationState": "BLOCKED"
+      "publicationState": "BLOCKED",
+      "addressee": "Moses"
     }
   ],
   "semanticControls": [

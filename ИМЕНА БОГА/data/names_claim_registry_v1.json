@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "corpusId": "NAMES_OF_GOD_CLAIM_LEVEL_EVIDENCE",
   "createdAt": "2026-11-07",
-  "scope": "14 provisional curated source-linked claims (including ten original seeds), six typed semantic relations. No independent scholarly signoff or Product clearance.",
+  "scope": "15 provisional curated claims including a corrected Exodus 3 divine referent/addressee boundary and seven typed relations. No independent critical manuscript collation or Product clearance.",
   "editorialPolicy": "Never infer Product approval from link completeness, never replace a cited verse or alternative theory silently; new claims require independent review.",
   "records": [
     {
@@ -273,7 +273,7 @@
     {
       "claimId": "CLM-GAL4-6-ABBA-SPIRIT",
       "claimType": "SPEECH_AGENT_CONTROL",
-      "statement": "In SBLGNT Galatians 4:6, Paul describes the Spirit of God's Son as crying Αββα ὁ πατήρ, distinct from Paul's first-person plural 'we cry' in Romans 8:15.",
+      "statement": "In printed SBLGNT Galatians 4:6, God (ὁ θεός) is the subject of ἐξαπέστειλεν, the Spirit (τὸ πνεῦμα) is its accusative object, and the agreeing accusative participle κρᾶζον depicts the Spirit crying Αββα ὁ πατήρ; in Romans 8:15 Paul instead writes κράζομεν ('we cry').",
       "attestationIds": [
         "ATT-BASE-ABBA-03"
       ],
@@ -312,6 +312,31 @@
         "separate critical manuscript collation where relevant",
         "theological reception and historical translation boundaries",
         "source rights and Product editorial acceptance"
+      ]
+    },
+    {
+      "claimId": "CLM-EX3-EHYEH-DIVINE-REFERENT",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "statement": "In MT Exodus 3:12 and 3:14 and printed Rahlfs-Hanhart Exodus 3:14, first-person divine speech refers to the God of Israel, while Moses is the addressee. The promise in 3:12 and the naming answer in 3:14 retain different discourse functions.",
+      "attestationIds": [
+        "ATT-BASE-EHYEH-01",
+        "ATT-BASE-EHYEH-02",
+        "ATT-BASE-EHYEH-03"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-RAHLFS-EXODUS3"
+      ],
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "independent edition and grammatical review",
+        "Hebrew imperfect interpretation and ancient variants",
+        "separate theological reception and source rights",
+        "Product editorial acceptance"
       ]
     }
   ],
@@ -362,6 +387,14 @@
       "toClaimId": "CLM-GAL4-6-ABBA-SPIRIT",
       "relationType": "SPECIFIES_SPEECH_AGENT",
       "rationale": "The broader three-passage observation is narrowed to the Galatians 4:6 account of the Spirit crying; editorial grammar still requires independent review.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-EX3-SELF-SPEECH-VS-ADDRESSEE",
+      "fromClaimId": "CLM-EX3-EHYEH-DIVINE-REFERENT",
+      "toClaimId": "CLM-LXX-EX3-JOHN8-DIFFERENT-CLAUSES",
+      "relationType": "SPECIFIES_SPEECH_AGENT",
+      "rationale": "God is the referent of the self-identifying first-person formula; Moses is addressed. Comparison with John 8:58 must keep the referent, addressee, printed Greek wording and possible intertext distinct.",
       "publicationState": "BLOCKED"
     }
   ]

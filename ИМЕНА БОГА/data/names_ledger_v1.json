@@ -155,7 +155,7 @@
           "language": "hebrew",
           "edition": "Mechon-Mamre MT digital transcription",
           "speaker": "YHWH speaking to Moses",
-          "referent": "Moses",
+          "referent": "God of Israel, the divine first-person speaker",
           "speechAct": "presence_promise",
           "sourceUrl": "https://mechon-mamre.org/p/pt/pt0203.htm",
           "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
@@ -166,7 +166,8 @@
           "claimScope": "HEBREW_MT_GOD_PROMISE_NOT_PROPER_NAMING_ACT",
           "attestationId": "ATT-BASE-EHYEH-01",
           "editionId": "ED-MECHON-MT-ONLINE",
-          "sourceId": "SRC-MT-MECHON"
+          "sourceId": "SRC-MT-MECHON",
+          "addressee": "Moses"
         },
         {
           "locusId": "ehyeh-ex3-hebrew",
@@ -175,7 +176,7 @@
           "language": "hebrew",
           "edition": "Mechon-Mamre MT digital transcription",
           "speaker": "God addressing Moses",
-          "referent": "Moses",
+          "referent": "God of Israel, the divine first-person speaker",
           "speechAct": "divine_self_revelation_answer_to_name_question",
           "sourceUrl": "https://mechon-mamre.org/p/pt/pt0203.htm",
           "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
@@ -187,7 +188,8 @@
           "interpretiveNotes": "Present/future lexical reading disputed",
           "attestationId": "ATT-BASE-EHYEH-02",
           "editionId": "ED-MECHON-MT-ONLINE",
-          "sourceId": "SRC-MT-MECHON"
+          "sourceId": "SRC-MT-MECHON",
+          "addressee": "Moses"
         },
         {
           "locusId": "ehyeh-ex3-greek",
@@ -196,7 +198,7 @@
           "language": "greek",
           "edition": "Rahlfs-Hanhart 2006 via Deutsche Bibelgesellschaft",
           "speaker": "God addressing Moses",
-          "referent": "Moses",
+          "referent": "God of Israel, the divine first-person speaker",
           "speechAct": "Greek_translation_of_divine_self_declaration",
           "sourceUrl": "https://www.die-bibel.de/bibel/LXX/EXO.3",
           "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
@@ -208,7 +210,8 @@
           "intertextRelation": "ALLUSION_POSSIBLE_NOT_IDENTICAL_FULL_QUOTE",
           "attestationId": "ATT-BASE-EHYEH-03",
           "editionId": "ED-RAHLFS-HANHART-2006-PUBLISHER",
-          "sourceId": "SRC-RAHLFS-EXODUS3"
+          "sourceId": "SRC-RAHLFS-EXODUS3",
+          "addressee": "Moses"
         }
       ],
       "contextualAssertion": "Direct publisher LXX Rahlfs-Hanhart Ex3:14 Ἐγώ εἰμι ὁ ὤν, Ὁ ὢν ἀπέσταλκέν με; MT אֶהְיֶה אֲשֶׁר אֶהְיֶה, Ex3:12 presence promise. John8:58 only ἐγὼ εἰμί, no ὁ ὤν. Linguistic/editorial distinctions do not negate Christian interpretation."

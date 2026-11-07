@@ -100,6 +100,12 @@ NEW_GREEK_SOURCE_CLAIMS = {
     "CLM-GAL4-6-ABBA-SPIRIT",
     "CLM-LUK1-32-GABRIEL-AGENT",
 }
+# The Exodus 3 referent/address correction is an independently inspectable
+# semantic boundary, rather than a copied assertion from a static snapshot.
+REQUIRED_EHYEH_ROLE_CLAIM = "CLM-EX3-EHYEH-DIVINE-REFERENT"
+REQUIRED_EHYEH_IDS = {
+    "ATT-BASE-EHYEH-01", "ATT-BASE-EHYEH-02", "ATT-BASE-EHYEH-03"
+}
 # The original reviewed seeds are a required minimum, not a cap on future work.
 # Additional claims must pass the same foreign-key, editorial and publication gates.
 ALLOWED_CLAIM_TYPES = {
@@ -153,6 +159,11 @@ REQUIRED_SEMANTIC_RELATIONS = {
         "CLM-ABBA-THREE-PRAYER-SUBJECTS", "CLM-GAL4-6-ABBA-SPIRIT",
         "SPECIFIES_SPEECH_AGENT"
     ),
+    "REL-EX3-SELF-SPEECH-VS-ADDRESSEE": (
+        "CLM-EX3-EHYEH-DIVINE-REFERENT",
+        "CLM-LXX-EX3-JOHN8-DIFFERENT-CLAUSES",
+        "SPECIFIES_SPEECH_AGENT"
+    ),
 }
 CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-EX3-15-DIVINE-NAME": {"ATT-BASE-YHWH-01"},
@@ -169,6 +180,9 @@ CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-ROM9-29-SABAOTH-ISAIAH": {"ATT-BASE-SABAOTH-06"},
     "CLM-GAL4-6-ABBA-SPIRIT": {"ATT-BASE-ABBA-03"},
     "CLM-LUK1-32-GABRIEL-AGENT": {"ATT-EXT-KYRIOS-HO-THEOS-01"},
+    "CLM-EX3-EHYEH-DIVINE-REFERENT": {
+        "ATT-BASE-EHYEH-01", "ATT-BASE-EHYEH-02", "ATT-BASE-EHYEH-03"
+    },
 }
 
 
@@ -239,6 +253,13 @@ def validate_provenance(
                     continue
                 seen.add(aid)
                 att_by_id[aid] = obs
+                if aid in REQUIRED_EHYEH_IDS:
+                    if obs.get("referent") != "God of Israel, the divine first-person speaker":
+                        errors.append(f"provenance: {aid} divine self-reference wrongly attributed to addressee")
+                    if obs.get("addressee") != "Moses":
+                        errors.append(f"provenance: {aid} missing or incorrect speech addressee")
+                    if not str(obs.get("speaker", "")).startswith(("God ", "YHWH ")):
+                        errors.append(f"provenance: {aid} divine first-person speaker changed")
                 edition_id = obs.get("editionId")
                 source_id = obs.get("sourceId")
                 edition = edition_map.get(edition_id, {})
@@ -312,6 +333,8 @@ def validate_provenance(
         errors.append("provenance: one or more original curated claim seeds missing")
     if not NEW_GREEK_SOURCE_CLAIMS.issubset(claim_map):
         errors.append("provenance: one or more Greek source-pinned claim seeds missing")
+    if REQUIRED_EHYEH_ROLE_CLAIM not in claim_map:
+        errors.append("provenance: Exodus 3 divine referent claim missing")
     for cid, claim in claim_map.items():
         if not isinstance(claim, dict):
             errors.append(f"provenance: malformed claim {cid}")
@@ -407,8 +430,8 @@ def main() -> int:
         for p in problems:
             print("FAIL: " + p, file=sys.stderr)
         return 1
-    print("PASS: 105 attestation IDs linked to 4 editions; 14 provisional claim seeds and "
-          "6 typed relations retain mandatory source/verse HOLD boundaries and publication BLOCKED")
+    print("PASS: 105 attestation IDs linked to 4 editions; 15 provisional claim seeds, "
+          "7 typed relations and 3 Exodus first-person speech referents are HOLD-guarded")
     return 0
 
 
