@@ -57,7 +57,10 @@
           "publicationState": "BLOCKED",
           "nameClaim": "זֶה-שְּׁמִי לְעֹלָם",
           "addressedAudience": "Moses instructed to speak to Israel",
-          "relatedButDistinct": "Exodus3:14 אֶהְיֶה אֲשֶׁר אֶהְיֶה"
+          "relatedButDistinct": "Exodus3:14 אֶהְיֶה אֲשֶׁר אֶהְיֶה",
+          "attestationId": "ATT-BASE-YHWH-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "locusId": "core-yhwh-ex6-self",
@@ -75,7 +78,10 @@
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
           "nextVerseQualifier": "וּשְׁמִי יְהוָה, לֹא נוֹדַעְתִּי לָהֶם",
-          "contextualCaution": "Rashi Calvin NET differ on nuance of revelation/known; don't resolve from isolated morphology"
+          "contextualCaution": "Rashi Calvin NET differ on nuance of revelation/known; don't resolve from isolated morphology",
+          "attestationId": "ATT-BASE-YHWH-02",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "locusId": "core-yhwh-ex15-hymn",
@@ -93,7 +99,10 @@
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
           "adjacentShortForm": "Exodus15:2 יָהּ",
-          "nameClaim": "יְהוָה שְׁמוֹ"
+          "nameClaim": "יְהוָה שְׁמוֹ",
+          "attestationId": "ATT-BASE-YHWH-03",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         }
       ],
       "contextualAssertion": "YHWH is explicit covenantal divine name: Exodus3:15 God identifies His name, 6:2 God self identifies, 15:3 Moses and Israel sing YHWH His name. MT vocalization is a reading tradition, not proof of original pronunciation; distinguish Ehyeh first person, Yah short form and Greek Kyrios."
@@ -154,7 +163,10 @@
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
           "grammaticalPerson": "אֶהְיֶה first person singular",
-          "claimScope": "HEBREW_MT_GOD_PROMISE_NOT_PROPER_NAMING_ACT"
+          "claimScope": "HEBREW_MT_GOD_PROMISE_NOT_PROPER_NAMING_ACT",
+          "attestationId": "ATT-BASE-EHYEH-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "locusId": "ehyeh-ex3-hebrew",
@@ -172,7 +184,10 @@
           "publicationState": "BLOCKED",
           "grammaticalPerson": "אֶהְיֶה first person singular",
           "claimScope": "MT_FORM_NOT_IDENTICAL_TO_LXX_GREEK",
-          "interpretiveNotes": "Present/future lexical reading disputed"
+          "interpretiveNotes": "Present/future lexical reading disputed",
+          "attestationId": "ATT-BASE-EHYEH-02",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "locusId": "ehyeh-ex3-greek",
@@ -190,7 +205,10 @@
           "publicationState": "BLOCKED",
           "greekSecondClause": "Ὁ ὢν ἀπέσταλκέν με",
           "claimScope": "OFFICIAL_PUBLISHER_GREEK_READING_NOT_DIRECT_QUOTATION_IN_JOHN8_58",
-          "intertextRelation": "ALLUSION_POSSIBLE_NOT_IDENTICAL_FULL_QUOTE"
+          "intertextRelation": "ALLUSION_POSSIBLE_NOT_IDENTICAL_FULL_QUOTE",
+          "attestationId": "ATT-BASE-EHYEH-03",
+          "editionId": "ED-RAHLFS-HANHART-2006-PUBLISHER",
+          "sourceId": "SRC-RAHLFS-EXODUS3"
         }
       ],
       "contextualAssertion": "Direct publisher LXX Rahlfs-Hanhart Ex3:14 Ἐγώ εἰμι ὁ ὤν, Ὁ ὢν ἀπέσταλκέν με; MT אֶהְיֶה אֲשֶׁר אֶהְיֶה, Ex3:12 presence promise. John8:58 only ἐγὼ εἰμί, no ὁ ὤν. Linguistic/editorial distinctions do not negate Christian interpretation."
@@ -257,7 +275,10 @@
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
           "morphology": "יִרְאֶה Qal yiqtol 3ms (secondary preliminary)",
-          "directAddress": "Abraham to Isaac"
+          "directAddress": "Abraham to Isaac",
+          "attestationId": "ATT-BASE-YIREH-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "locusId": "gen22-memorial-place",
@@ -276,7 +297,10 @@
           "publicationState": "BLOCKED",
           "nameClause": "שֵׁם-הַמָּקוֹם הַהוּא",
           "morphology": "יִרְאֶה Qal yiqtol 3ms (secondary preliminary)",
-          "notNamedObject": "altar"
+          "notNamedObject": "altar",
+          "attestationId": "ATT-BASE-YIREH-02",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "locusId": "gen22-mountain-proverb",
@@ -295,7 +319,10 @@
           "publicationState": "BLOCKED",
           "morphology": "יֵרָאֶה Niphal yiqtol 3ms (secondary preliminary)",
           "translationScope": "NET alternatives it will be seen/provided or YHWH will appear",
-          "notIdenticalVerbTo": "יִרְאֶה"
+          "notIdenticalVerbTo": "יִרְאֶה",
+          "attestationId": "ATT-BASE-YIREH-03",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         }
       ],
       "contextualAssertion": "Genesis22:9 Abraham builds ALTAR, but 22:14 explicitly names PLACE. Gen22:8 and 22:14a יִרְאֶה Qal versus 22:14b יֵרָאֶה Niphal; NET offers competing 'provide/appear' renderings, not one settled etymology."
@@ -341,7 +368,10 @@
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
           "morphology": "רֹפְאֶךָ active participle with 2ms suffix",
-          "context": "conditional covenant address after Mara water"
+          "context": "conditional covenant address after Mara water",
+          "attestationId": "ATT-BASE-RAPHA-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "locusId": "jer17-heal-my-prayer",
@@ -358,7 +388,10 @@
           "criticalEditionStatus": "NOT_COLLATED",
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
-          "morphology": "imperative + 1cs object; NOT participial רֹפְאֶךָ"
+          "morphology": "imperative + 1cs object; NOT participial רֹפְאֶךָ",
+          "attestationId": "ATT-BASE-RAPHA-02",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         }
       ],
       "contextualAssertion": "Exodus15:26 participial 'your healer' (2ms) in conditional divine covenant speech after Mara; Jer17:14 petition 'heal me' is different verbal morphology and speaker. Neither scene formally coins a new independent personal name."
@@ -403,7 +436,10 @@
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
           "nameClause": "וַיִּבֶן מֹשֶׁה, מִזְבֵּחַ; וַיִּקְרָא שְׁמוֹ",
-          "altarNamed": true
+          "altarNamed": true,
+          "attestationId": "ATT-BASE-NISSI-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "locusId": "ex17-lxx-altar",
@@ -422,7 +458,10 @@
           "publicationState": "BLOCKED",
           "nameClause": "ἐπωνόμασεν τὸ ὄνομα αὐτοῦ",
           "sourceRelation": "DIFFERENT_GREEK_TRANSLATIONAL_RENDERING_NOT_IDENTICAL_BANNER",
-          "rightsScope": "PUBLISHER_LXX_GREEK_ONLY"
+          "rightsScope": "PUBLISHER_LXX_GREEK_ONLY",
+          "attestationId": "ATT-BASE-NISSI-02",
+          "editionId": "ED-RAHLFS-HANHART-2006-PUBLISHER",
+          "sourceId": "SRC-RAHLFS-EXODUS17"
         },
         {
           "locusId": "ex17-mt-hand-throne",
@@ -443,7 +482,10 @@
             "throne כֵּס (digital MT)",
             "suggested emendation נֵס as scholarly reconstruction"
           ],
-          "textualStatus": "MT_SURFACE_AND_HYPOTHETICAL_EMENDATION_SEPARATE"
+          "textualStatus": "MT_SURFACE_AND_HYPOTHETICAL_EMENDATION_SEPARATE",
+          "attestationId": "ATT-BASE-NISSI-03",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "locusId": "ex17-lxx-secret-hand",
@@ -461,7 +503,10 @@
           "rightsState": "PERMISSION_REQUIRED",
           "publicationState": "BLOCKED",
           "textualStatus": "LXX_READING_NOT_LITERAL_MT_HAND_THRONE",
-          "sourceRelation": "PRINTED_GREEK_TRANSLATION_DIFFERENCE"
+          "sourceRelation": "PRINTED_GREEK_TRANSLATION_DIFFERENCE",
+          "attestationId": "ATT-BASE-NISSI-04",
+          "editionId": "ED-RAHLFS-HANHART-2006-PUBLISHER",
+          "sourceId": "SRC-RAHLFS-EXODUS17"
         }
       ],
       "contextualAssertion": "Exodus17:15 Moses names altar, not God or Massah/Meribah place (17:7). LXX Rahlfs Ex17:15 Κύριός μου καταφυγή not literal 'banner'; v16 MT יד על כס יה vs LXX εν χειρι κρυφαια; hypothetical emendation כס→נס is not attested MT."
@@ -506,7 +551,10 @@
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
           "morphology": "מְקַדִּשְׁכֶם participle with 2mp suffix",
-          "covenantSetting": "Sabbath sign between YHWH and Israel"
+          "covenantSetting": "Sabbath sign between YHWH and Israel",
+          "attestationId": "ATT-BASE-MEKODDISHKEM-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "locusId": "lev20-sanctify-israel",
@@ -524,7 +572,10 @@
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
           "morphology": "מְקַדִּשְׁכֶם participle with 2mp suffix",
-          "covenantSetting": "commandments and holiness regulations"
+          "covenantSetting": "commandments and holiness regulations",
+          "attestationId": "ATT-BASE-MEKODDISHKEM-02",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         }
       ],
       "contextualAssertion": "Ex31:13 and Lev20:8 both divine first-person covenant predications, with מְקַדִּשְׁכֶם 2mp not a person-name or a 1cs experience quote; cannot transfer every Mosaic Sabbath application to NT church without separate exegesis."
@@ -576,7 +627,10 @@
           "publicationState": "BLOCKED",
           "morphology": "רֹעִי 1cs suffix my shepherd; root רעה",
           "root": "רעה",
-          "notSameRootAs": "ראה (Hagar's El-Roi seeing)"
+          "notSameRootAs": "ראה (Hagar's El-Roi seeing)",
+          "attestationId": "ATT-BASE-RO-I-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "locusId": "jn10-christ-good-shepherd",
@@ -594,7 +648,10 @@
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
           "languageBoundary": "Greek NT self-predication not literal Hebrew Psalm transcription",
-          "rootRelation": "thematic intertextual relation NOT shared lexical root"
+          "rootRelation": "thematic intertextual relation NOT shared lexical root",
+          "attestationId": "ATT-BASE-RO-I-02",
+          "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
         }
       ],
       "contextualAssertion": "Psalm23:1 YHWH is MY shepherd, root רעה, not Hagar's El Roi ראה; John10:11 Jesus explicitly says Ἐγώ εἰμι ὁ ποιμὴν ὁ καλός, with Christological canonical relation not identical original language or independent third deity."
@@ -638,7 +695,10 @@
           "criticalEditionStatus": "NOT_COLLATED",
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
-          "nameClause": null
+          "nameClause": null,
+          "attestationId": "ATT-BASE-SHALOM-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "locusId": "jud6-gideon-altar",
@@ -655,7 +715,10 @@
           "criticalEditionStatus": "NOT_COLLATED",
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
-          "nameClause": "וַיִּבֶן שָׁם גִּדְעוֹן מִזְבֵּחַ לַיהוָה, וַיִּקְרָא-לוֹ"
+          "nameClause": "וַיִּבֶן שָׁם גִּדְעוֹן מִזְבֵּחַ לַיהוָה, וַיִּקְרָא-לוֹ",
+          "attestationId": "ATT-BASE-SHALOM-02",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "locusId": "jud6-baal-altar-control",
@@ -672,7 +735,10 @@
           "criticalEditionStatus": "NOT_COLLATED",
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
-          "isDivineName": false
+          "isDivineName": false,
+          "attestationId": "ATT-BASE-SHALOM-03",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         }
       ],
       "contextualAssertion": "Judges6:23 YHWH SPEAKS peace, 6:24 Gideon NAMES an altar, 6:25 references DIFFERENT Baal altar to destroy. No direct divine self-naming in 6:24."
@@ -739,7 +805,10 @@
           "rightsState": "RIGHTS_UNKNOWN",
           "nameDelimiter": "וְזֶה-שְּׁמוֹ אֲשֶׁר-יִקְרְאוֹ",
           "genderCue": "שְּׁמוֹ masculine possessive his name",
-          "oldGreekPassageStatus": "NOT_APPLICABLE_TO_VERSE_23_6"
+          "oldGreekPassageStatus": "NOT_APPLICABLE_TO_VERSE_23_6",
+          "attestationId": "ATT-BASE-TSIDKENU-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "verse": "Jeremiah 33:16",
@@ -756,7 +825,10 @@
           "nameDelimiter": "וְזֶה אֲשֶׁר-יִקְרָא-לָהּ",
           "genderCue": "לָהּ feminine dative she/her city",
           "oldGreekPassageStatus": "MT_33_14_26_ABSENT_IN_OLD_GREEK_JEREMIAH",
-          "absenceEvidenceClass": "B1_SECONDARY_CRITICAL_STUDY_NOT_COLLATION"
+          "absenceEvidenceClass": "B1_SECONDARY_CRITICAL_STUDY_NOT_COLLATION",
+          "attestationId": "ATT-BASE-TSIDKENU-02",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         }
       ],
       "contextualAssertion": "Identical string YHWH tsidqenu in 23:6 refers to male royal Davidic branch, 33:16 to Jerusalem female named city. MT 33:14–26 absent from Old Greek; no invented Greek equivalent."
@@ -798,7 +870,10 @@
           "criticalEditionStatus": "NOT_COLLATED",
           "rightsState": "RIGHTS_UNKNOWN",
           "nameDelimiter": "וְשֵׁם-הָעִיר מִיּוֹם",
-          "lexicalNotice": "שָׁמָּה locative adverb there, not independent divine proper noun"
+          "lexicalNotice": "שָׁמָּה locative adverb there, not independent divine proper noun",
+          "attestationId": "ATT-BASE-SHAMMAH-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         }
       ],
       "contextualAssertion": "Explicit וְשֵׁם-הָעִיר = name of city; Yahweh is there is a city designation reflecting divine presence. Not personal divine name or equation of city with YHWH."
@@ -843,7 +918,10 @@
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
           "originalPrefix": "לַ",
-          "originalTextNote": "prepositional לַ is part of recorded surface"
+          "originalTextNote": "prepositional לַ is part of recorded surface",
+          "attestationId": "ATT-BASE-SABAOTH-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "verse": "1 Samuel 17:45",
@@ -859,7 +937,10 @@
           "criticalEditionStatus": "NOT_COLLATED",
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
-          "contextClause": "אֱלֹהֵי מַעַרְכוֹת יִשְׂרָאֵל"
+          "contextClause": "אֱלֹהֵי מַעַרְכוֹת יִשְׂרָאֵל",
+          "attestationId": "ATT-BASE-SABAOTH-02",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "verse": "Isaiah 6:3",
@@ -874,7 +955,10 @@
           "sourceAccess": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
           "rightsState": "RIGHTS_UNKNOWN",
-          "publicationState": "BLOCKED"
+          "publicationState": "BLOCKED",
+          "attestationId": "ATT-BASE-SABAOTH-03",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "verse": "Zechariah 10:3",
@@ -889,7 +973,10 @@
           "sourceAccess": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
           "rightsState": "RIGHTS_UNKNOWN",
-          "publicationState": "BLOCKED"
+          "publicationState": "BLOCKED",
+          "attestationId": "ATT-BASE-SABAOTH-04",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "verse": "James 5:4",
@@ -906,7 +993,10 @@
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
           "greekCase": "genitive Κυρίου",
-          "transliterationStatus": "SABAOTH_NOT_SABBATH"
+          "transliterationStatus": "SABAOTH_NOT_SABBATH",
+          "attestationId": "ATT-BASE-SABAOTH-05",
+          "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
         },
         {
           "verse": "Romans 9:29",
@@ -924,7 +1014,10 @@
           "publicationState": "BLOCKED",
           "greekCase": "nominative κύριος",
           "sourceVerseCrossRef": "Isaiah 1:9 MT",
-          "transliterationStatus": "SABAOTH_NOT_SABBATH"
+          "transliterationStatus": "SABAOTH_NOT_SABBATH",
+          "attestationId": "ATT-BASE-SABAOTH-06",
+          "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
         }
       ],
       "contextualAssertion": "Hosts title in worship at Shiloh, David's human battle context, heavenly seraphim's hymn, Zechariah oracle and Greek NT transliteration. Greek Σαβαὼθ is not σάββατον (Sabbath). No single context fully resolves historical title origin."
@@ -969,7 +1062,10 @@
           "publicationState": "BLOCKED",
           "morphologicalNumberOfNoun": "masculine plural form -ים",
           "verbAgreement": "בָּרָא Qal perfect 3ms (singular)",
-          "referentClass": "SINGULAR_CREATOR_GOD"
+          "referentClass": "SINGULAR_CREATOR_GOD",
+          "attestationId": "ATT-BASE-ELOHIM-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "verse": "Exodus 20:2 MT (English 20:3)",
@@ -991,7 +1087,10 @@
           "numbering": {
             "mechonMamreHebrew": "Exodus 20:2",
             "commonEnglishRussian": "Exodus 20:3"
-          }
+          },
+          "attestationId": "ATT-BASE-ELOHIM-02",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "verse": "Deuteronomy 6:4",
@@ -1007,7 +1106,10 @@
           "criticalEditionStatus": "NOT_COLLATED",
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
-          "morphologicalNote": "suffix -ֵינוּ (our); distinct from unsuffixed אֱלֹהִים"
+          "morphologicalNote": "suffix -ֵינוּ (our); distinct from unsuffixed אֱלֹהִים",
+          "attestationId": "ATT-BASE-ELOHIM-03",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         }
       ],
       "contextualAssertion": "Gen1:1 morphologically plural אֱלֹהִים governs singular בָּרָא for one Creator; Ex20:2 MT / Eng20:3 same lexeme for other gods with plural adjective; Deut6:4 suffixed אֱלֹהֵינוּ. Morphology alone neither proves Trinity nor multiple creators.",
@@ -1060,7 +1162,10 @@
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
           "contextualClause": "יְהוָה יְהוָה, אֵל רַחוּם וְחַנּוּן",
-          "nameActStatus": "PROCLAIMED_NAME_AND_ATTRIBUTES"
+          "nameActStatus": "PROCLAIMED_NAME_AND_ATTRIBUTES",
+          "attestationId": "ATT-BASE-EL-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "locusId": "core-el-deut32-faithful",
@@ -1077,7 +1182,10 @@
           "criticalEditionStatus": "NOT_COLLATED",
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
-          "poeticParallel": "הַצּוּר תָּמִים פָּעֳלוֹ"
+          "poeticParallel": "הַצּוּר תָּמִים פָּעֳלוֹ",
+          "attestationId": "ATT-BASE-EL-02",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "locusId": "core-el-deut32-foreign",
@@ -1095,7 +1203,10 @@
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
           "negationClause": "וְאֵין עִמּוֹ, אֵל נֵכָר",
-          "isYHWH": false
+          "isYHWH": false,
+          "attestationId": "ATT-BASE-EL-03",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "locusId": "core-el-isa43-negated",
@@ -1113,7 +1224,10 @@
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
           "negationClause": "לֹא-נוֹצַר אֵל",
-          "isYHWH": false
+          "isYHWH": false,
+          "attestationId": "ATT-BASE-EL-04",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "locusId": "core-el-isa43-i-am",
@@ -1131,7 +1245,10 @@
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
           "immediateContext": "וְאֵין בָּכֶם זָר",
-          "isYHWH": true
+          "isYHWH": true,
+          "attestationId": "ATT-BASE-EL-05",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         }
       ],
       "contextualAssertion": "El is noun meaning god/God: Ex34:6, Deut32:4 and Isa43:12 positive YHWH referent; Deut32:12 and Isa43:10 negated foreign/possible god referent, NOT YHWH. Two lexical occurrences in Isa43 same chapter have opposite referent roles."
@@ -1172,7 +1289,10 @@
           "sourceUrl": "https://mechon-mamre.org/p/pt/pt0117.htm",
           "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
-          "rightsState": "RIGHTS_UNKNOWN"
+          "rightsState": "RIGHTS_UNKNOWN",
+          "attestationId": "ATT-BASE-EL-SHADDAI-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "verse": "Genesis 28:3",
@@ -1186,7 +1306,10 @@
           "sourceUrl": "https://mechon-mamre.org/p/pt/pt0128.htm",
           "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
-          "rightsState": "RIGHTS_UNKNOWN"
+          "rightsState": "RIGHTS_UNKNOWN",
+          "attestationId": "ATT-BASE-EL-SHADDAI-02",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "verse": "Genesis 35:11",
@@ -1200,7 +1323,10 @@
           "sourceUrl": "https://mechon-mamre.org/p/pt/pt0135.htm",
           "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
-          "rightsState": "RIGHTS_UNKNOWN"
+          "rightsState": "RIGHTS_UNKNOWN",
+          "attestationId": "ATT-BASE-EL-SHADDAI-03",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "verse": "Exodus 6:3",
@@ -1214,7 +1340,10 @@
           "sourceUrl": "https://mechon-mamre.org/p/pt/pt0206.htm",
           "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
-          "rightsState": "RIGHTS_UNKNOWN"
+          "rightsState": "RIGHTS_UNKNOWN",
+          "attestationId": "ATT-BASE-EL-SHADDAI-04",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         }
       ],
       "contextualAssertion": "Divine self-identification vs Isaac's benediction vs retrospective revelation. Mechon-Mamre shows שַׁדַּי in Genesis and שַׁדָּי in Exodus 6:3; preserve edition-specific points and don't attribute an unverified etymology or phonetic explanation."
@@ -1256,7 +1385,10 @@
           "sourceUrl": "https://mechon-mamre.org/p/pt/pt0114.htm",
           "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
-          "rightsState": "RIGHTS_UNKNOWN"
+          "rightsState": "RIGHTS_UNKNOWN",
+          "attestationId": "ATT-BASE-EL-ELYON-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "verse": "Genesis 14:19",
@@ -1270,7 +1402,10 @@
           "sourceUrl": "https://mechon-mamre.org/p/pt/pt0114.htm",
           "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
-          "rightsState": "RIGHTS_UNKNOWN"
+          "rightsState": "RIGHTS_UNKNOWN",
+          "attestationId": "ATT-BASE-EL-ELYON-02",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "verse": "Genesis 14:20",
@@ -1284,7 +1419,10 @@
           "sourceUrl": "https://mechon-mamre.org/p/pt/pt0114.htm",
           "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
-          "rightsState": "RIGHTS_UNKNOWN"
+          "rightsState": "RIGHTS_UNKNOWN",
+          "attestationId": "ATT-BASE-EL-ELYON-03",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "verse": "Genesis 14:22",
@@ -1298,7 +1436,10 @@
           "sourceUrl": "https://mechon-mamre.org/p/pt/pt0114.htm",
           "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
-          "rightsState": "RIGHTS_UNKNOWN"
+          "rightsState": "RIGHTS_UNKNOWN",
+          "attestationId": "ATT-BASE-EL-ELYON-04",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         }
       ],
       "contextualAssertion": "MT Gen 14:22 joins YHWH and El Elyon in Abram's oath. Cargill 2019 hypothesis of a later gloss is secondary scholarship, not a verified manuscript variant here.",
@@ -1350,7 +1491,10 @@
           "sourceUrl": "https://mechon-mamre.org/p/pt/pt0121.htm",
           "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
-          "rightsState": "RIGHTS_UNKNOWN"
+          "rightsState": "RIGHTS_UNKNOWN",
+          "attestationId": "ATT-BASE-EL-OLAM-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         }
       ],
       "contextualAssertion": "Genesis 21:31 names Beer-sheba as place; 21:33 Abraham invokes YHWH, El Olam. The latter is not another name of the place."
@@ -1396,7 +1540,10 @@
           "sourceUrl": "https://mechon-mamre.org/p/pt/pt0116.htm",
           "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
-          "rightsState": "RIGHTS_UNKNOWN"
+          "rightsState": "RIGHTS_UNKNOWN",
+          "attestationId": "ATT-BASE-EL-ROI-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         }
       ],
       "contextualAssertion": "Narrator explicitly says וַתִּקְרָא שֵׁם־יְהוָה: Hagar calls the name of YHWH in 16:13. Verse 14 separately names the well. Do not wrongly assert no divine naming occurs; classification as permanent proper name is open."
@@ -1460,7 +1607,10 @@
           "numbering": {
             "hebrew": "Isaiah 9:5",
             "english": "Isaiah 9:6"
-          }
+          },
+          "attestationId": "ATT-BASE-EL-GIBBOR-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "verse": "Isaiah 10:21",
@@ -1475,7 +1625,10 @@
           "criticalEditionStatus": "NOT_COLLATED",
           "rightsState": "RIGHTS_UNKNOWN",
           "sourceGrammarNote": "first אֶל- is preposition unto; second אֵל is designation God; גִּבּוֹר adjective; name card extracted, full local surface kept",
-          "contextualTitleSegmentation": "DIRECT_DIVINE_REFERENT"
+          "contextualTitleSegmentation": "DIRECT_DIVINE_REFERENT",
+          "attestationId": "ATT-BASE-EL-GIBBOR-02",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         }
       ],
       "contextualAssertion": "Isa9:5 MT royal naming context (English 9:6), interpretation of who bears each title disputed between Jewish and Christian traditions. Isa10:21 God is the explicit recipient of a remnant's return. Preposition אֶל- not silently removed.",
@@ -1549,7 +1702,10 @@
           "sourceUrl": "https://mechon-mamre.org/p/pt/pt0135.htm",
           "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
-          "rightsState": "RIGHTS_UNKNOWN"
+          "rightsState": "RIGHTS_UNKNOWN",
+          "attestationId": "ATT-BASE-EL-BETHEL-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         }
       ],
       "contextualAssertion": "Jacob builds an altar, but names the PLACE (לַמָּקוֹם), not the altar. Gen 28:19 and 35:15 independently name Beth-El."
@@ -1595,7 +1751,10 @@
           "publicationState": "BLOCKED",
           "nameClause": "קַנָּא שְׁמוֹ",
           "descriptorClause": "אֵל קַנָּא הוּא",
-          "contrast": "לְאֵל אַחֵר"
+          "contrast": "לְאֵל אַחֵר",
+          "attestationId": "ATT-BASE-EL-QANNA-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "verse": "Deuteronomy 4:24",
@@ -1611,7 +1770,10 @@
           "criticalEditionStatus": "NOT_COLLATED",
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
-          "selfNamingInVerse": false
+          "selfNamingInVerse": false,
+          "attestationId": "ATT-BASE-EL-QANNA-02",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         }
       ],
       "contextualAssertion": "Ex34:14 explicitly includes קַנָּא שְׁמוֹ and אֵל קַנָּא; Deut4:24 is a covenant-warning descriptive epithet. Do not erase divine naming clause or make every adjective a new etymologically independent proper name."
@@ -1656,7 +1818,10 @@
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
           "tokenOccurrenceCount": 2,
-          "verseContains": "אֲדֹנָי, יֵלֶךְ-נָא אֲדֹנָי"
+          "verseContains": "אֲדֹנָי, יֵלֶךְ-נָא אֲדֹנָי",
+          "attestationId": "ATT-BASE-ADONAI-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "verse": "Isaiah 6:1",
@@ -1672,7 +1837,10 @@
           "criticalEditionStatus": "NOT_COLLATED",
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
-          "grammaticalMarker": "אֶת-"
+          "grammaticalMarker": "אֶת-",
+          "attestationId": "ATT-BASE-ADONAI-02",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "verse": "Psalms 8:2 MT",
@@ -1689,7 +1857,10 @@
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
           "surfaceDiffersFromAdonai": "אֲדֹנֵינוּ",
-          "notExactSameVocalization": true
+          "notExactSameVocalization": true,
+          "attestationId": "ATT-BASE-ADONAI-03",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         }
       ],
       "negativeControls": [
@@ -1742,7 +1913,10 @@
           "criticalEditionStatus": "NOT_COLLATED",
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
-          "grammaticalMarker": "אֶת-"
+          "grammaticalMarker": "אֶת-",
+          "attestationId": "ATT-BASE-QEDOSH-YISRAEL-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "verse": "Isaiah 43:3",
@@ -1758,7 +1932,10 @@
           "criticalEditionStatus": "NOT_COLLATED",
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
-          "selfReferenceClause": "אֲנִי יְהוָה אֱלֹהֶיךָ"
+          "selfReferenceClause": "אֲנִי יְהוָה אֱלֹהֶיךָ",
+          "attestationId": "ATT-BASE-QEDOSH-YISRAEL-02",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "verse": "Isaiah 47:4",
@@ -1774,7 +1951,10 @@
           "criticalEditionStatus": "NOT_COLLATED",
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
-          "editionPunctuation": "comma after קְדוֹשׁ in Mechon-Mamre, no separate lexical name"
+          "editionPunctuation": "comma after קְדוֹשׁ in Mechon-Mamre, no separate lexical name",
+          "attestationId": "ATT-BASE-QEDOSH-YISRAEL-03",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         }
       ],
       "contextualAssertion": "Isa1:4 object of rejection with את marker, Isa43:3 explicit YHWH first-person self-description, Isa47:4 adjoining Redeemer and YHWH of hosts with edition punctuation. Editorial punctuation is not manuscript lexical segmentation."
@@ -1818,7 +1998,10 @@
           "criticalEditionStatus": "NOT_COLLATED",
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
-          "referentClass": "TRUE_GOD"
+          "referentClass": "TRUE_GOD",
+          "attestationId": "ATT-BASE-TSUR-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "verse": "Deuteronomy 32:18",
@@ -1834,7 +2017,10 @@
           "criticalEditionStatus": "NOT_COLLATED",
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
-          "referentClass": "TRUE_GOD"
+          "referentClass": "TRUE_GOD",
+          "attestationId": "ATT-BASE-TSUR-02",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "verse": "Deuteronomy 32:31",
@@ -1851,7 +2037,10 @@
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
           "referentClass": "MIXED_TRUE_GOD_AND_OTHER_ROCK",
-          "contrastRole": "OUR_ROCK_VS_THEIR_ROCK"
+          "contrastRole": "OUR_ROCK_VS_THEIR_ROCK",
+          "attestationId": "ATT-BASE-TSUR-03",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "verse": "Deuteronomy 32:37",
@@ -1868,7 +2057,10 @@
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
           "referentClass": "FALSE_OBJECT_OF_REFUGE",
-          "contrastRole": "FOREIGN_GODS"
+          "contrastRole": "FOREIGN_GODS",
+          "attestationId": "ATT-BASE-TSUR-04",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "verse": "Psalms 18:32 MT",
@@ -1884,7 +2076,10 @@
           "criticalEditionStatus": "NOT_COLLATED",
           "rightsState": "RIGHTS_UNKNOWN",
           "publicationState": "BLOCKED",
-          "referentClass": "TRUE_GOD"
+          "referentClass": "TRUE_GOD",
+          "attestationId": "ATT-BASE-TSUR-05",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         }
       ],
       "contextualAssertion": "The same צור lemma appears in positive metaphors of YHWH and ironic references to another people's rock/foreign gods. Never classify all occurrences as direct personal names of YHWH; Deut32:31 is mixed and 32:37 negative."
@@ -1925,7 +2120,10 @@
           "sourceUrl": "https://mechon-mamre.org/p/pt/pt3407.htm",
           "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
-          "rightsState": "RIGHTS_UNKNOWN"
+          "rightsState": "RIGHTS_UNKNOWN",
+          "attestationId": "ATT-BASE-ATIQ-YOMIN-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-DANIEL-ARAMAIC"
         },
         {
           "verse": "Daniel 7:13",
@@ -1938,7 +2136,10 @@
           "sourceUrl": "https://mechon-mamre.org/p/pt/pt3407.htm",
           "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
-          "rightsState": "RIGHTS_UNKNOWN"
+          "rightsState": "RIGHTS_UNKNOWN",
+          "attestationId": "ATT-BASE-ATIQ-YOMIN-02",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-DANIEL-ARAMAIC"
         },
         {
           "verse": "Daniel 7:22",
@@ -1951,7 +2152,10 @@
           "sourceUrl": "https://mechon-mamre.org/p/pt/pt3407.htm",
           "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
-          "rightsState": "RIGHTS_UNKNOWN"
+          "rightsState": "RIGHTS_UNKNOWN",
+          "attestationId": "ATT-BASE-ATIQ-YOMIN-03",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-DANIEL-ARAMAIC"
         }
       ],
       "referentBoundary": "Daniel 7:13 narrates one like a son of man COMING TO the Ancient of Days. They are distinguishable literary figures in this verse; later NT christology is an interpretive reception question, not lexical identity.",
@@ -2042,7 +2246,10 @@
           "agentOfCry": "Jesus",
           "syntax": "ἔλεγεν; ὁ πατήρ article+nominative functioning as address",
           "languageOrigin": "ARAMAIC_WORD_GREEK_SCRIPT",
-          "ntBookRole": "GOSPEL_REPORTED_DIRECT_PRAYER"
+          "ntBookRole": "GOSPEL_REPORTED_DIRECT_PRAYER",
+          "attestationId": "ATT-BASE-ABBA-01",
+          "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
         },
         {
           "locusId": "abba-rom8-adoption",
@@ -2061,7 +2268,10 @@
           "agentOfCry": "we/believers, κράζομεν first person plural",
           "subjectCue": "ἐν ᾧ κράζομεν",
           "languageOrigin": "ARAMAIC_WORD_GREEK_SCRIPT",
-          "ntBookRole": "PAULINE_ADOPTION_EXHORTATION"
+          "ntBookRole": "PAULINE_ADOPTION_EXHORTATION",
+          "attestationId": "ATT-BASE-ABBA-02",
+          "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
         },
         {
           "locusId": "abba-gal4-spirit",
@@ -2090,7 +2300,10 @@
               "edition": "Stephanus TR1550",
               "phrase": "εις τας καρδιας υμων"
             }
-          ]
+          ],
+          "attestationId": "ATT-BASE-ABBA-03",
+          "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
         }
       ],
       "contextualAssertion": "SBLGNT three occurrences same Greek transcription Αββα ὁ πατήρ but Mark Jesus prays, Rom believers cry κράζομεν, Gal Spirit of Son cries κρᾶζον. Article+nominative πατήρ functions as address; Aramaic derivation not separate manuscript in Hebrew script. English daddy exclusive lexical claim not established from Barr abstract.",
@@ -2138,7 +2351,10 @@
           "sourceUrl": "https://www.biblegateway.com/passage/?search=Revelation+1%3A4-8&version=SBLGNT",
           "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
-          "rightsState": "RIGHTS_UNKNOWN"
+          "rightsState": "RIGHTS_UNKNOWN",
+          "attestationId": "ATT-BASE-PANTOKRATOR-01",
+          "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
         },
         {
           "verse": "Revelation 21:22",
@@ -2151,7 +2367,10 @@
           "sourceUrl": "https://www.biblegateway.com/passage/?search=Revelation+21&version=SBLGNT",
           "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
-          "rightsState": "RIGHTS_UNKNOWN"
+          "rightsState": "RIGHTS_UNKNOWN",
+          "attestationId": "ATT-BASE-PANTOKRATOR-02",
+          "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
         }
       ],
       "referentBoundary": "Rev21:22 says ὁ κύριος ὁ θεός ὁ παντοκράτωρ and τὸ ἀρνίον; maintain distinction between grammatical expressions, no automatic collapse to Son as referent."
@@ -2206,7 +2425,10 @@
           "sourceUrl": "https://www.biblegateway.com/passage/?search=Revelation+1%3A4-8&version=SBLGNT",
           "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
-          "rightsState": "RIGHTS_UNKNOWN"
+          "rightsState": "RIGHTS_UNKNOWN",
+          "attestationId": "ATT-BASE-ALPHA-OMEGA-01",
+          "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
         },
         {
           "verse": "Revelation 21:6",
@@ -2219,7 +2441,10 @@
           "sourceUrl": "https://www.biblegateway.com/passage/?search=Revelation+21&version=SBLGNT",
           "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
-          "rightsState": "RIGHTS_UNKNOWN"
+          "rightsState": "RIGHTS_UNKNOWN",
+          "attestationId": "ATT-BASE-ALPHA-OMEGA-02",
+          "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
         },
         {
           "verse": "Revelation 22:13",
@@ -2232,7 +2457,10 @@
           "sourceUrl": "https://www.biblegateway.com/passage/?search=Revelation+22&version=SBLGNT",
           "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
-          "rightsState": "RIGHTS_UNKNOWN"
+          "rightsState": "RIGHTS_UNKNOWN",
+          "attestationId": "ATT-BASE-ALPHA-OMEGA-03",
+          "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
         }
       ],
       "referentBoundary": "No universal globalSpeaker for same epithet; Rev 1:8 explicitly κύριος ὁ θεός; Rev21:5 speaker seated on throne; Rev22:13 Jesus identification is contextual (22:16 explicit) not a local 'λέγει Ἰησοῦς' in v13.",
@@ -2303,7 +2531,10 @@
           "claimScope": "Jesus self identification with do not be afraid; theophany possible interpretive layer",
           "divineNameClaim": "CONTEXTUAL_THEOLOGICAL_INFERENCE_NOT_LEXICAL_PROOF",
           "speakerReferent": "Jesus",
-          "speechTarget": "disciples on lake"
+          "speechTarget": "disciples on lake",
+          "attestationId": "ATT-BASE-EGO-EIMI-01",
+          "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
         },
         {
           "locusId": "ego-john8-preabraham",
@@ -2322,7 +2553,10 @@
           "claimScope": "πρὶν Ἀβραὰμ γενέσθαι: preexistence claim with distinct syntax",
           "divineNameClaim": "CHRISTOLOGICAL_EXEGESIS_REQUIRES_INTERTEXTUAL_ARGUMENT",
           "speakerReferent": "Jesus",
-          "speechTarget": "Jewish opponents"
+          "speechTarget": "Jewish opponents",
+          "attestationId": "ATT-BASE-EGO-EIMI-02",
+          "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
         },
         {
           "locusId": "ego-john9-human",
@@ -2342,7 +2576,10 @@
           "isDivineDesignation": false,
           "divineNameClaim": "EXPLICIT_NEGATIVE_CONTROL_HUMAN_SPEAKER",
           "speakerReferent": "formerly blind man",
-          "speechTarget": "neighbors and onlookers"
+          "speechTarget": "neighbors and onlookers",
+          "attestationId": "ATT-BASE-EGO-EIMI-03",
+          "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
         },
         {
           "locusId": "ego-john18-answer",
@@ -2361,7 +2598,10 @@
           "claimScope": "Asked for Jesus the Nazarene; Jesus answers it is I",
           "divineNameClaim": "CONTEXTUAL_THEOLOGICAL_INFERENCE_NOT_LEXICAL_PROOF",
           "speakerReferent": "Jesus",
-          "speechTarget": "arresting party"
+          "speechTarget": "arresting party",
+          "attestationId": "ATT-BASE-EGO-EIMI-04",
+          "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
         },
         {
           "locusId": "ego-john18-repeat",
@@ -2380,7 +2620,10 @@
           "claimScope": "people go backward and fall on ground after utterance; interpretation is narrative contextual",
           "divineNameClaim": "CONTEXTUAL_THEOLOGICAL_INFERENCE_NOT_LEXICAL_PROOF",
           "speakerReferent": "Jesus, reported in narration",
-          "speechTarget": "arresting party"
+          "speechTarget": "arresting party",
+          "attestationId": "ATT-BASE-EGO-EIMI-05",
+          "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
         },
         {
           "locusId": "ego-john18-again",
@@ -2399,7 +2642,10 @@
           "claimScope": "explicit εἰ οὖν ἐμὲ ζητεῖτε, ἄφετε τούτους",
           "divineNameClaim": "CONTEXTUAL_THEOLOGICAL_INFERENCE_NOT_LEXICAL_PROOF",
           "speakerReferent": "Jesus",
-          "speechTarget": "arresting party"
+          "speechTarget": "arresting party",
+          "attestationId": "ATT-BASE-EGO-EIMI-06",
+          "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
         }
       ],
       "contextualAssertion": "John9:9 healed man uses exact Ἐγώ εἰμι while John8:58 Jesus places ἐγὼ εἰμί alongside πρὶν Ἀβραὰμ γενέσθαι. Lexical two-word formula itself not unique divine name; Christology rests on context/intertext, not exact quote of LXX Ex3:14 Ἐγώ εἰμι ὁ ὤν. John18:5,6,8 repeated identity answers."
@@ -2460,7 +2706,10 @@
           "nameDelimiter": "וְקָרָאת שְׁמוֹ",
           "namingVerbAnalysis": "2fs vs archaic 3fs B1 grammatical dispute",
           "originalTerm": "הָעַלְמָה",
-          "receptionLayer": "HEBREW_ORIGINAL_CONTEXT"
+          "receptionLayer": "HEBREW_ORIGINAL_CONTEXT",
+          "attestationId": "ATT-BASE-IMMANUEL-01",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "verse": "Isaiah 7:14 LXX Rahlfs-Hanhart",
@@ -2477,7 +2726,10 @@
           "nameDelimiter": "καλέσεις τὸ ὄνομα αὐτοῦ",
           "namingVerbForm": "καλέσεις second person singular",
           "crossEditionRelation": "MATTHEW_SBLGNT_USES_καλέσουσιν_THIRD_PERSON_PLURAL",
-          "sourceRole": "EDITORIAL_GREEK_TRANSLATION_NO_MANUSCRIPT_APPARATUS"
+          "sourceRole": "EDITORIAL_GREEK_TRANSLATION_NO_MANUSCRIPT_APPARATUS",
+          "attestationId": "ATT-BASE-IMMANUEL-02",
+          "editionId": "ED-RAHLFS-HANHART-2006-PUBLISHER",
+          "sourceId": "SRC-RAHLFS-ISAIAH"
         },
         {
           "verse": "Isaiah 8:8",
@@ -2492,7 +2744,10 @@
           "criticalEditionStatus": "NOT_COLLATED",
           "rightsState": "RIGHTS_UNKNOWN",
           "receptionLayer": "HEBREW_NAME_ALLUSION",
-          "speakerConfidence": "INTERPRETIVE_CONTEXT"
+          "speakerConfidence": "INTERPRETIVE_CONTEXT",
+          "attestationId": "ATT-BASE-IMMANUEL-03",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "verse": "Isaiah 8:10",
@@ -2506,7 +2761,10 @@
           "checkState": "DIGITAL_VERSE_SURFACE_CHECKED",
           "criticalEditionStatus": "NOT_COLLATED",
           "rightsState": "RIGHTS_UNKNOWN",
-          "receptionLayer": "HEBREW_ASSURANCE_SENTENCE"
+          "receptionLayer": "HEBREW_ASSURANCE_SENTENCE",
+          "attestationId": "ATT-BASE-IMMANUEL-04",
+          "editionId": "ED-MECHON-MT-ONLINE",
+          "sourceId": "SRC-MT-MECHON"
         },
         {
           "verse": "Matthew 1:23",
@@ -2523,7 +2781,10 @@
           "nameDelimiter": "καλέσουσιν τὸ ὄνομα αὐτοῦ",
           "translationInVerse": "Μεθ’ ἡμῶν ὁ θεός",
           "namingVerbForm": "καλέσουσιν 3rd plural",
-          "receptionLayer": "NEW_TESTAMENT_CITATION_AND_TRANSLATION"
+          "receptionLayer": "NEW_TESTAMENT_CITATION_AND_TRANSLATION",
+          "attestationId": "ATT-BASE-IMMANUEL-05",
+          "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
         }
       ],
       "contextualAssertion": "Isaiah 7:14 child-naming; 8:8 name invocation/allusion; 8:10 assertion for God with us; Matthew 1:23 Christian citation with 3pl καλέσουσιν and Greek gloss. MT naming verb וְקָרָאת grammatically debated; Matthew cannot be copied into MT. Rahlfs-Hanhart 2006 LXX Isaiah 7:14 prints καλέσεις (2sg) as compared with SBLGNT Matthew 1:23 καλέσουσιν (3pl); direct digital editions checked, underlying textual apparatus not collated."
