@@ -1564,6 +1564,44 @@ def validate_core_name_lexeme(baseline: dict, contract: dict) -> list[str]:
     return errors
 
 
+def validate_full_coverage(baseline: dict, extension: dict) -> list[str]:
+    """All 42 researched IDs must retain at least one conservative verse witness.
+
+    This is a coverage gate, not a claim of exhaustive attestations per name,
+    independent critical collation, or readiness for public deployment.
+    """
+    errors: list[str] = []
+    for label, data, count in (("Arena", baseline, 29), ("extension", extension, 13)):
+        records = data.get("records", []) if isinstance(data, dict) else []
+        if not isinstance(records, list) or len(records) != count:
+            errors.append(f"coverage: {label} count changed from {count}")
+            continue
+        for record in records:
+            if not isinstance(record, dict):
+                errors.append(f"coverage: malformed {label} candidate")
+                continue
+            rid = record.get("id", "<unknown>")
+            uses = record.get("attestations")
+            if not isinstance(uses, list) or not uses:
+                errors.append(f"coverage: {label}/{rid} lacks independently source-located contexts")
+                continue
+            if record.get("publicationState") != "BLOCKED":
+                errors.append(f"coverage: {label}/{rid} unreviewed Product promotion")
+            for use in uses:
+                if not isinstance(use, dict):
+                    errors.append(f"coverage: {label}/{rid} contains malformed verse")
+                    continue
+                if not str(use.get("verse", "")).strip():
+                    errors.append(f"coverage: {label}/{rid} missing verse locator")
+                if not isinstance(use.get("surface"), str) or not use["surface"].strip():
+                    errors.append(f"coverage: {label}/{rid} missing original written form")
+                if not URL.match(str(use.get("sourceUrl", ""))):
+                    errors.append(f"coverage: {label}/{rid} missing source URL")
+                if use.get("criticalEditionStatus") != "NOT_COLLATED":
+                    errors.append(f"coverage: {label}/{rid} falsely marked as manuscript-collated")
+    return errors
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--ledger", type=Path, default=LEDGER)
@@ -1630,7 +1668,8 @@ def main() -> int:
               validate_memorial_attestations(data, memorial_contract) +
               validate_speech_intertext(data, speech_contract) +
               validate_extension_attestations(extension, extension_contract) +
-              validate_core_name_lexeme(data, core_contract))
+              validate_core_name_lexeme(data, core_contract) +
+              validate_full_coverage(data, extension))
     if issues:
         for issue in issues:
             print("FAIL:", issue, file=sys.stderr)
