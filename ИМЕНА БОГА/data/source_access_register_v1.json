@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 12,
+    "sourceRecords": 17,
     "approvedForProduct": 0
   },
   "records": [
@@ -299,15 +299,132 @@
         "LOCATOR_HOLD",
         "EVIDENCE_HOLD"
       ]
+    },
+    {
+      "id": "SRC-SBL-REVELATION",
+      "title": "SBL Greek New Testament: Revelation chapters 1, 21, 22",
+      "creator": "Michael W. Holmes, editor; Society of Biblical Literature / Logos",
+      "year": 2010,
+      "url": "https://www.biblegateway.com/passage/?search=Revelation+1%3A4-8&version=SBLGNT",
+      "objectType": "critical_edited_greek_reading_edition_digital",
+      "sourceRole": "GREEK_TEXT_SURFACE_ONLY",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "sourceObjectState": "Selected Greek chapter digital displays and their edition footnotes verified; this is not full manuscript critical apparatus",
+      "supportedUse": "Verse-specific printed SBLGNT clauses and editorial comparisons Revelation 1:4,1:8,21:5-7,21:22,22:6-16,22:20",
+      "forbiddenUse": "Claim manuscript variant counts or identify all apocalyptic speakers by a universal label; republish full SBLGNT",
+      "publicationState": "BLOCKED",
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ]
+    },
+    {
+      "id": "SRC-TR1550-REV18",
+      "title": "Stephanus Greek New Testament (TR1550) Revelation 1:8",
+      "creator": "Robert Estienne (Stephanus); BibleGateway digital display",
+      "year": 1550,
+      "url": "https://www.biblegateway.com/passage/?search=Revelation+1%3A8&version=TR1550",
+      "objectType": "historic_printed_greek_nt_edition_digital",
+      "sourceRole": "HISTORIC_PRINTED_EDITION_SURFACE",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "license": "BibleGateway identifies TR1550 text as Public Domain; permission for website graphics, page markup and other editorial content not implied",
+      "sourceObjectState": "TR1550 Revelation 1:8 digital text verified as printed; NOT any proof of original readings in autographs",
+      "supportedUse": "Compare αρχη και τελος inclusion and absence of ὁ θεός with SBLGNT in Revelation 1:8",
+      "forbiddenUse": "Treat TR as primary manuscript or use its public-domain status for other editions",
+      "publicationState": "BLOCKED",
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ]
+    },
+    {
+      "id": "SRC-THGNT-REV216",
+      "title": "THGNT 2017 Revelation 21:6, Greek text printed on BibleGateway",
+      "creator": "Tyndale House Cambridge / Crossway",
+      "year": 2017,
+      "url": "https://www.biblegateway.com/verse/grc/Revelation%2021%3A6",
+      "objectType": "critical_edited_greek_nt_edition_digital",
+      "sourceRole": "GREEK_TEXT_SURFACE_ONLY",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "sourceObjectState": "Comparative display of Greek editions lists THGNT 21:6 εἰμι and SBLGNT lack of εἰμι; THGNT attributed All Rights Reserved",
+      "supportedUse": "Edition-specific surface of ἐγώ εἰμι in THGNT Revelation 21:6, not SBLGNT",
+      "forbiddenUse": "Assume an identified Greek manuscript or apply SBLGNT rights status to THGNT",
+      "publicationState": "BLOCKED",
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ]
+    },
+    {
+      "id": "SRC-DANIEL-ARAMAIC",
+      "title": "Mechon-Mamre MT: Daniel chapter 7, Aramaic text",
+      "creator": "Mechon-Mamre",
+      "year": null,
+      "url": "https://mechon-mamre.org/p/pt/pt3407.htm",
+      "objectType": "digital_transcription_of_masoretic_aramaic",
+      "sourceRole": "ARAMAIC_TEXT_SURFACE_ONLY",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "sourceObjectState": "Daniel 7:9,13,22 digitally read and located; original codex, Qumran Aramaic manuscript and manuscript variants not checked",
+      "supportedUse": "Record עַתִּיק יוֹמִין (7:9), עַתִּיק יוֹמַיָּא (7:13,22), distinct person-like son of man approaches Ancient",
+      "forbiddenUse": "Promote to Hebrew language or claim exact Aramaic morphology explained by a grammar not yet checked",
+      "publicationState": "BLOCKED",
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ]
+    },
+    {
+      "id": "SRC-SBL-INTRO",
+      "title": "SBLGNT editor Michael W. Holmes, Introduction",
+      "creator": "Michael W. Holmes",
+      "year": 2010,
+      "url": "https://sblgnt.com/about/introduction/",
+      "objectType": "edition_methodological_introduction",
+      "sourceRole": "EDITION_METHOD_NOT_MANUSCRIPT_APPARATUS",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "sourceObjectState": "The establishment and variant apparatus sections read; apparatus compares printed WH/Treg/NIV/RP editions, not comprehensive manuscript witnesses",
+      "supportedUse": "Explain distinction between a critically edited reading text and exhaustive manuscript-critical apparatus",
+      "forbiddenUse": "Use publication edition differences as proof of direct manuscript collation",
+      "publicationState": "BLOCKED",
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ]
     }
   ],
   "auditRevision": {
     "date": "2026-11-07",
     "newSources": [
-      "SRC-RASHI-EXO6",
-      "SRC-NET-GEN14",
-      "SRC-CARGILL-2019"
+      "SRC-SBL-REVELATION",
+      "SRC-TR1550-REV18",
+      "SRC-THGNT-REV216",
+      "SRC-DANIEL-ARAMAIC",
+      "SRC-SBL-INTRO"
     ],
-    "rationale": "Patriarchal El titles: record independent Jewish reception, lexeme translation controversy, and one published historical reconstruction; never launder secondary abstracts into manuscript variants."
+    "rationale": "Greek edition divergence and Aramaic Daniel; separate full witnesses, public-domain TR and proprietary THGNT while keeping global publication blocked"
   }
 }
