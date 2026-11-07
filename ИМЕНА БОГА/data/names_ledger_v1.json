@@ -866,7 +866,7 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "researchNote": "Aramaic, not Hebrew. Dan7:13/22 uses עַתִּיק יוֹמַיָּא variant form.",
+      "researchNote": "Aramaic, not Hebrew. Dan7:13/22 uses עַתִּיק יוֹמַיָּא variant form. Secondary grammar (Judisch/CTSFW citing BDB) reads יוֹמִין as plural absolute in 7:9 and יוֹמַיָּא as emphatic plural in 7:13/22; B1 only, not independently verified BDB; his identification with Father is theological interpretation.",
       "sourceEdition": "Mechon-Mamre MT digital transcription",
       "claimScope": "VERIFIED_DIGITAL_SURFACE_ONLY",
       "criticalEditionStatus": "NOT_COLLATED",
@@ -918,7 +918,44 @@
         "verse9Form": "עַתִּיק יוֹמִין",
         "verses13and22Form": "עַתִּיק יוֹמַיָּא",
         "twoForms": "VISIBLE_DIGITAL_EDITION",
-        "morphologicalExplanationStatus": "PENDING_ARABIBLICAL_GRAMMAR_REFERENCE"
+        "morphologicalExplanationStatus": "B1_SECONDARY_PARSE_VERIFIED_LEXICON_PENDING",
+        "parsingEvidence": {
+          "source": "Douglas McC.L. Judisch, Exegetical Notes on Daniel 7:9-10 and 7:13-14",
+          "sourceUrl": "https://media.ctsfw.edu/Item/GetFullText/2608",
+          "otherPassageUrl": "https://www.ctsfw.edu/etext/judisch/fulfilb.htm",
+          "evidenceClass": "B1",
+          "accessState": "PARTIAL_OBJECT",
+          "sourceSection": "Full text, A Literal Translation and Comments on 7:9; discussion of verse 13",
+          "authorityLimit": "Author cites Brown–Driver–Briggs; original dictionary pages NOT separately acquired or checked. Lutheran confessional Christology is author's interpretation, not a grammatical entailment.",
+          "analyses": [
+            {
+              "verse": "Daniel 7:9",
+              "form": "יוֹמִין",
+              "partOfSpeech": "Aramaic masculine plural noun day",
+              "state": "absolute",
+              "certainty": "ATTRIBUTED_SECONDARY_GRAMMATICAL_PARSE"
+            },
+            {
+              "verse": "Daniel 7:13",
+              "form": "יוֹמַיָּא",
+              "partOfSpeech": "Aramaic masculine plural noun day",
+              "state": "emphatic",
+              "certainty": "ATTRIBUTED_SECONDARY_GRAMMATICAL_PARSE"
+            },
+            {
+              "verse": "Daniel 7:22",
+              "form": "יוֹמַיָּא",
+              "partOfSpeech": "Aramaic masculine plural noun day",
+              "state": "emphatic",
+              "certainty": "ATTRIBUTED_SECONDARY_GRAMMATICAL_PARSE"
+            }
+          ],
+          "furtherReview": [
+            "BDB Biblical Aramaic s.v. עַתִּיק and יוֹם, original pages",
+            "independent Aramaic grammar and comparison",
+            "critical manuscript and Qumran evidence"
+          ]
+        }
       }
     },
     {
