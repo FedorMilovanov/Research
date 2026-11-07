@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 18,
+    "sourceRecords": 19,
     "approvedForProduct": 0
   },
   "records": [
@@ -447,13 +447,39 @@
         "link to source",
         "indicate modifications and retain prior modification notices if applicable"
       ]
+    },
+    {
+      "id": "SRC-JUDISCH-DAN7-ARAMAIC",
+      "title": "Exegetical Notes on Daniel 7:9–10 and 7:13–14 (Aramaic parsing)",
+      "creator": "Douglas McC.L. Judisch, Concordia Theological Seminary",
+      "year": null,
+      "url": "https://media.ctsfw.edu/Item/GetFullText/2608",
+      "otherUrl": "https://www.ctsfw.edu/etext/judisch/fulfilb.htm",
+      "objectType": "confessional_exegetical_notes_with_lexical_analysis",
+      "sourceRole": "ATTRIBUTED_B1_ARAMAIC_GRAMMAR",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "sourceObjectState": "Institutional full HTML reproduced; relevant morphological sections inspected: Daniel 7:9 absolute plural yomin; 7:13/22 emphatic plural yomayya; author cites BDB but primary lexicon has not been inspected",
+      "supportedUse": "Attribute author's grammatical contrast of Aramaic absolute vs emphatic plural and substantivized adjective 'attiq' in Dan7",
+      "forbiddenUse": "Present Lutheran Christological interpretation of Ancient as Father as an original-Aramaic lexical meaning; or represent Judisch as independent BDB original checked",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "interpretiveTradition": "Confessional Lutheran",
+      "primaryLexiconStatus": "BDB_REFERENCED_BY_AUTHOR_NOT_DIRECTLY_VERIFIED"
     }
   ],
   "auditRevision": {
     "date": "2026-11-07",
     "newSources": [
-      "SRC-SBLGNT-CCBY-LICENSE"
+      "SRC-JUDISCH-DAN7-ARAMAIC"
     ],
-    "rationale": "Official current SBLGNT digital Greek text is CC BY 4.0. Distinguish publisher license from hosting website graphics and unrelated THGNT/NET rights. Research claims remain BLOCKED."
+    "rationale": "Qualified B1 grammatical analysis of absolute/emphatic plural in Daniel7, strictly separated from confessional christology and unexamined original BDB."
   }
 }
