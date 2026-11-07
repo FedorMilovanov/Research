@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 171,
+  "sourceCount": 172,
   "sources": [
     {
       "id": "REF-P01",
@@ -3302,7 +3302,7 @@
       ],
       "url": "https://germanhistorydocs.org/en/from-the-reformations-to-the-thirty-years-war-1500-1648/grievances-and-demands-the-twelve-articles-of-the-swabian-peasants-february-27-march-1-1525",
       "checkedAt": "2026-11-07",
-      "verificationNote": "DIRECT full HTML read in the GHDI official historical-document presentation including preamble and articles 1-12, English translation James Harvey Robinson 1904-06 vol II pp94-99 on German edited text Guenther Franz (1963) pp174-179. GHDI dates drafts Feb27-Mar1 1525 and identifies Lotzer and preface collaborator Schappeler; city archive REF-S78 says 28 Feb-3 Mar, a harmless interval uncertainty not evidence of three distinct Twelve-Article documents. Article1 pastor election; 2 tithe distinctions; 3 rejects serfdom BUT explicitly says not absolutely free of authority; 4-5 hunting/fishing/woods; 6-8 labor/rents; 9-11 laws/common pasture/heriot; article12 scripture-based right of correction and further demands. Text is participant-created 1525 pamphlet, but direct historical German printing and edition-level variants have NOT been collated; English site is not a 1525 facsimile. No lengthy copyrighted reproduced translation and no automatic publication rights."
+      "verificationNote": "DIRECT full HTML read in the GHDI official historical-document presentation including preamble and articles 1-12, English translation James Harvey Robinson 1904-06 vol II pp94-99 on German edited text Guenther Franz (1963) pp174-179. GHDI dates drafts Feb27-Mar1 1525 and identifies Lotzer and preface collaborator Schappeler; city archive REF-S78 says 28 Feb-3 Mar, a harmless interval uncertainty not evidence of three distinct Twelve-Article documents. Article1 pastor election; 2 tithe distinctions; 3 rejects serfdom BUT explicitly says not absolutely free of authority; 4-5 hunting/fishing/woods; 6-8 labor/rents; 9-11 laws/common pasture/heriot; article12 scripture-based right of correction and further demands. Text is participant-created 1525 pamphlet, but direct historical German printing and edition-level variants have NOT been collated; English site is not a 1525 facsimile. No lengthy copyrighted reproduced translation and no automatic publication rights. FOLLOWUP 2026-11-07 wave374: original-language edited GHDI German publication directly read in relevant preamble and Art 1,2,3,12; confirms elected pastor, tithe, serfdom with obedience to legitimate authorities, Scripture-grounded article revision. This is a modern edited German transcription, NOT 1525 physical impression line collation; accessState remains PARTIAL_OBJECT and ARCHIVE_HOLD remains."
     },
     {
       "id": "REF-S78",
@@ -3339,6 +3339,24 @@
       "url": "https://www.historisches-lexikon-bayerns.de/Lexikon/Bauernkrieg,_1524-1526",
       "checkedAt": "2026-11-07",
       "verificationNote": "Institutional academic HLB page directly read: complex uprising including nonpeasants, earliest southwestern 1524; 1525 regional Christian Union; Weinsberg 16/17 April count of nobles killed, Weingarten contract 17 April negotiated with Seehaufen; escalation and 1525 military repression; distinct Thuringian Muentzer/Frankenhausen movement. The page synthesizes scholarship, not personal independent viewing of every execution/court order. Do not assign all casualties to a particular Luther text, or to Muentzer, or assert Weingarten applied across entire Empire; terms RIGHTS_UNKNOWN + ARCHIVE_HOLD."
+    },
+    {
+      "id": "REF-P77",
+      "documentYear": 1563,
+      "title": "Heidelberg Catechism 1563, contemporary English publication by Reformed Church in America, Q&A 60-64",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.rca.org/about/theology/creeds-and-confessions/the-heidelberg-catechism/",
+      "verificationNote": "2026-11-07: RCA online modern English text read specifically Lord's Days 23-24, Q&A 60-64; justification by the credited righteousness of Christ received by faith, good works as grateful fruits. Dating 1563 from institutional page. Distinct REF-P17 holds catalogue for historic 1563 edition; original German 1563 printing NOT collated, no whole-book or scanned-print claim.",
+      "checkedAt": "2026-11-07"
     }
   ]
 }
