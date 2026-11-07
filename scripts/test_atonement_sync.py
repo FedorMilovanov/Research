@@ -211,6 +211,35 @@ class ActualSynchronizationTests(unittest.TestCase):
         self.assertIn("SBLGNT", card)
         self.assertIn("NA28", card)
 
+    def test_article13_separates_critical_source_holds(self):
+        p = ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md"
+        text = p.read_text(encoding="utf-8")
+        for marker in (
+            "DABNEY_PAGE_SCAN_HOLD",
+            "DAVENANT_LATIN_EDITION_HOLD",
+            "AI_TRANSLATION_HOLD",
+            "OWEN_WCF_TIMING_HOLD",
+            "NO PUBLICATION AUTHORIZATION",
+        ):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, text)
+
+    def test_article13_payment_and_application_distinction_not_erased(self):
+        p = ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md"
+        text = p.read_text(encoding="utf-8")
+        for marker in (
+            "solutio ejusdem",
+            "solutio tantidem",
+            "actual right",
+            "actual possession",
+            "Дорт II.8",
+            "WCF XI.4",
+        ):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, text)
+        self.assertIn("B1: идентифицированная печатная книга", text)
+        self.assertIn("B1 (ограниченный цифровой свидетель)", text)
+
     def test_current_corpus_and_coverage(self):
         errors, summary = check(ROOT, self.report, self.control)
         self.assertEqual(errors, [])
@@ -228,12 +257,13 @@ class ActualSynchronizationTests(unittest.TestCase):
                 "ИСКУПЛЕНИЕ/synthesis/drafts/article10_ransom_for_all_two_adams_paul_hebrews.md",
                 "ИСКУПЛЕНИЕ/synthesis/drafts/article11_bought_apostates_covenant_blood_and_weak_brother.md",
                 "ИСКУПЛЕНИЕ/synthesis/drafts/article12_cosmic_reconciliation_heaven_earth_new_creation.md",
+                "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md",
             },
         )
 
     def test_post_review_draft_manifest_fails_closed(self):
         additions = self.report.get("postReviewDrafts", [])
-        self.assertEqual(len(additions), 5)
+        self.assertEqual(len(additions), 6)
         cases = [
             (f"missing-declaration-{i}", additions[:i] + additions[i + 1 :])
             for i in range(len(additions))
