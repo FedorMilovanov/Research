@@ -42,6 +42,26 @@ class Episode04HistoricalEvidenceTests(unittest.TestCase):
         self.assertIn("ARCHIVE_HOLD",src["REF-P71"]["holds"])
         self.assertEqual(src["REF-S73"]["evidenceClass"],"B1")
 
+    def test_egli_1879_original_print_selected_not_council_autograph(self):
+        j = json.loads((HERE / "source-registry-v1.json").read_text(encoding="utf-8"))
+        x = {v["id"]:v for v in j["sources"]}
+        self.assertEqual(x["REF-P72"]["documentYear"],1879)
+        self.assertEqual(x["REF-P72"]["accessState"],"PARTIAL_OBJECT")
+        self.assertEqual(x["REF-P72"]["locatorState"],"EXACT_LOCATOR_VERIFIED")
+        self.assertIn("ARCHIVE_HOLD",x["REF-P72"]["holds"])
+        self.assertIn("PUBLICATION_HOLD",x["REF-P72"]["holds"])
+        for token in ("p275", "p276", "p278", "canvas289", "canvas290", "canvas292", "SHA256"):
+            self.assertIn(token,x["REF-P72"]["verificationNote"])
+        for ref in ("REF-P68", "REF-P69", "REF-P70"):
+            self.assertEqual(x[ref]["accessState"],"CATALOG_ONLY")
+        chapter = CH.read_text(encoding="utf-8")
+        for phrase in ("№621", "№622", "№624", "Рёубли", "Хетцеру", "рукописный"):
+            self.assertIn(phrase,chapter)
+        ledger = (HERE/"03_claim_verification_register.md").read_text(encoding="utf-8")
+        for n in (243,244,245):
+            self.assertIn("| C%d |" % n,ledger)
+        self.assertIn("REF-P72",ledger)
+
     def test_incompatible_conclusions_remain_rejected(self):
         s = (HERE / "03_claim_verification_register.md").read_text(encoding="utf-8")
         rows = {}

@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 160,
+  "sourceCount": 161,
   "sources": [
     {
       "id": "REF-P01",
@@ -3064,7 +3064,7 @@
       ],
       "url": "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=4652027",
       "checkedAt": "2026-11-07",
-      "verificationNote": "Original council register exists per official catalog, documentary date 1525-01-18, folio 227v entry 1, QGTS I no.24. Important metadata anomaly: catalog title says renewed 'Verbot der Kindertaufe' while same title also mentions expulsion for failed infant baptism in 8 days and separate official original mandate REF-P69 says DUTY of infant baptism; University of Zurich independent 2025 explanatory publication supports duty. CATALOG_ONLY: no original text, no literal quote, no verified enforcement outcome."
+      "verificationNote": "Original council register exists per official catalog, documentary date 1525-01-18, folio 227v entry 1, QGTS I no.24. Important metadata anomaly: catalog title says renewed 'Verbot der Kindertaufe' while same title also mentions expulsion for failed infant baptism in 8 days and separate official original mandate REF-P69 says DUTY of infant baptism; University of Zurich independent 2025 explanatory publication supports duty. CATALOG_ONLY: no original text, no literal quote, no verified enforcement outcome. CROSSCHECK 2026-11-07: REF-P72 Egli 1879 visual print pages 275–276/278 now read: edited source gives duty to baptize infants in 8 days under jurisdiction-expulsion sanction and (p278 no624) four named expulsion ORDERS on Jan21. The ORIGINAL manuscript/copy identified by THIS record was not imaged; accessState still CATALOG_ONLY, no false promotion."
     },
     {
       "id": "REF-P69",
@@ -3083,7 +3083,7 @@
       ],
       "url": "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1158607",
       "checkedAt": "2026-11-07",
-      "verificationNote": "Official Staatsarchiv Zurich catalog directly checked: distinct issued original (Ausfertigung, Einzelblatt) 22x27cm paper, verso 'Widikon', municipal mandate titled obligation of infant baptism, dated 18 Jan 1525. This is NOT council-minute REF-P68. Edition Zürcher Kirchenordnungen I no.15, Egli 1879 no.622. No original image or critical-edition text read; 8-day sanction context from separate records and UZH REF-S73, not direct reading of this leaf. Publication and reproduction rights not inferred from date of document."
+      "verificationNote": "Official Staatsarchiv Zurich catalog directly checked: distinct issued original (Ausfertigung, Einzelblatt) 22x27cm paper, verso 'Widikon', municipal mandate titled obligation of infant baptism, dated 18 Jan 1525. This is NOT council-minute REF-P68. Edition Zürcher Kirchenordnungen I no.15, Egli 1879 no.622. No original image or critical-edition text read; 8-day sanction context from separate records and UZH REF-S73, not direct reading of this leaf. Publication and reproduction rights not inferred from date of document. CROSSCHECK 2026-11-07: REF-P72 Egli 1879 visual print pages 275–276/278 now read: edited source gives duty to baptize infants in 8 days under jurisdiction-expulsion sanction and (p278 no624) four named expulsion ORDERS on Jan21. The ORIGINAL manuscript/copy identified by THIS record was not imaged; accessState still CATALOG_ONLY, no false promotion."
     },
     {
       "id": "REF-P70",
@@ -3102,7 +3102,7 @@
       ],
       "url": "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=4652028",
       "checkedAt": "2026-11-07",
-      "verificationNote": "Staatsarchiv Zurich catalogue directly checked: council register entry dated 1525-01-21, folio 227v entry 2, on implementation of ordinance and stopping further discussions with Conrad Grebel/Felix Manz. Edition QGTS I no.26, Egli no.624. CATALOG_ONLY, no original German full text or execution record read; decision to enforce is not proof that every expulsion or sanction was actually carried out."
+      "verificationNote": "Staatsarchiv Zurich catalogue directly checked: council register entry dated 1525-01-21, folio 227v entry 2, on implementation of ordinance and stopping further discussions with Conrad Grebel/Felix Manz. Edition QGTS I no.26, Egli no.624. CATALOG_ONLY, no original German full text or execution record read; decision to enforce is not proof that every expulsion or sanction was actually carried out. CROSSCHECK 2026-11-07: REF-P72 Egli 1879 visual print pages 275–276/278 now read: edited source gives duty to baptize infants in 8 days under jurisdiction-expulsion sanction and (p278 no624) four named expulsion ORDERS on Jan21. The ORIGINAL manuscript/copy identified by THIS record was not imaged; accessState still CATALOG_ONLY, no false promotion."
     },
     {
       "id": "REF-P71",
@@ -3140,6 +3140,24 @@
       "url": "https://www.irg.uzh.ch/de/publikationen/alle_publikationen/250526_ScheideggerJammerthal_QuellenTaeuferBd6.html",
       "checkedAt": "2026-11-07",
       "verificationNote": "Directly read institutional modern scholarly/publication summary stating on 18 Jan 1525 City Council ordered infant baptism within eight days on pain of expulsion, and on evening 21 Jan adult baptisms took place at Felix Manz's home. This is B1 historical explanatory source, NOT a primary council act or witnessed German textual collation. QGTS vol5/6 concern much later periods; do not misrepresent these volumes as original edition for January 1525 (QGTS I)."
+    },
+    {
+      "id": "REF-P72",
+      "documentYear": 1879,
+      "title": "Emil Egli (ed.), Actensammlung zur Geschichte der Zuercher Reformation in den Jahren 1519–1533 (Zuerich: Schabelitz, 1879), no. 621 p.275–276, no. 622 p.276, no. 624 p.278",
+      "evidenceClass": "A2",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.digitale-sammlungen.de/de/details/bsb11389154",
+      "checkedAt": "2026-11-07",
+      "verificationNote": "Direct visual inspection of three separate OFFICIAL Bavarian State Library IIIF digitized page images of Egli EDITED COLLECTION published 1879, not the manuscript originals: PRINT p275 (IIIF canvas289; SHA256 e61cc5baccdc8f1bcb40e96e348ed5c72cfbecccf8ee8e9df47efa6d256b8768), PRINT p276 (canvas290; SHA256 04b012d424e55edba9551b72af543d741e31a1277fafd38870fccfe7ab1f9b71), PRINT p278 (canvas292; SHA256 56af32815ffa0a5e1bfee12dc2120631854454e6417f860d52e130473b9e16a8). Selected page JPG copies retained privately under Documents/Research-Primary-Sources/Egli_1879_Actensammlung_Zurich_1525_selected_pages, source sizes 702708,637855,626699 bytes respectively, verified SHA256 identical after copy; institutional OCR used as navigation only, German verified from scanned PRINT images. Egli no621 (pp275–276) has EDITORIAL REGEST of Jan18 decision with 8-day infant baptism duty and family expulsion sanction; no622 (p276) contains edited historical mandate wording in early German, including command to baptize previously unbaptized children in 8 days or leave jurisdiction with wife, children, belongings; no624 (p278) has EDITORIAL REGEST and brief primary-text excerpts of Jan21 council decision: halt private doctrinal schools, prohibit further Grebel/Manz disputations, and named order that Wilhelm Roeubli (Wytikon), Broetli (Zollikon), Ludwig Hetzer and Andreas auf der Stuelzen leave territory within 8 days. These are ORDERS, not evidence of their actual departure. This record is a selected historical EDITED TRANSCRIPTION/REGEST, NOT a 1525 manuscript facsimile, NOT full source QGTS I 1952 or Zuercher Kirchenordnungen I, and NOT complete reading of Egli's 968 digital images. Independent collation original council folios B VI 248 and A42.1.12 Nr2 still ARCHIVE_HOLD. Institution says scan is no copyright with non-commercial-use notice, do not transfer images to public Git or infer reproduction rights."
     }
   ]
 }
