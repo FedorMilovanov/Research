@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "planId": "NAMES_OF_GOD_MASTER_WORKPLAN",
   "createdAt": "2026-11-07",
-  "updatedAt": "2026-11-07",
+  "updatedAt": "2026-11-08",
   "statusOwner": "ИМЕНА БОГА/data/names_research_workplan_v1.json",
   "humanGuide": "ИМЕНА БОГА/11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md",
   "mediaResearch": "ИМЕНА БОГА/12_TMS_BARRICK_CHOU_SOURCE_REVIEW.md",
@@ -63,7 +63,8 @@
     "consumerContractPinnedGeneralNoLocus": 22,
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
-    "consumerMigrationV2Approvals": 0
+    "consumerMigrationV2Approvals": 0,
+    "lastConfirmedAllSixChecksSha": "ff6199a7c02a3057cadb569afdc2d4e1bb9e4fcc"
   },
   "allowedStatuses": [
     "DONE",
@@ -172,7 +173,7 @@
       "id": "NG-02",
       "priority": "P0",
       "title": "Нормализация evidence graph: ID утверждения → употребление → редакция → источник",
-      "status": "IN_PROGRESS",
+      "status": "DONE",
       "dependsOn": [
         "NG-01"
       ],
@@ -271,17 +272,18 @@
         "data/names_consumer_compat_v1.json: machine-readable Research consumer evidence, three selected external GitHub default-branch read-only searches nonproof, Product V2 blocked",
         "validate_names_consumers.py: true original snapshot roundtrip with verse/surface/edition/sourceUrl/rights/critical/status crosswalk and fail-closed external upgrade guard",
         "test_validate_names_consumers.py: 25 original consumer mutation and approval negative tests, included in existing GitHub workflow",
-        "NG-02 pinned source-control entrypoint audit: 3 exact repository SHAs and 8 original source blob SHAs (GB/Poet/Pages), still no runtime witness; 4 more negative snapshot integrity tests"
+        "NG-02 pinned source-control entrypoint audit: 3 exact repository SHAs and 8 original source blob SHAs (GB/Poet/Pages), still no runtime witness; 4 more negative snapshot integrity tests",
+        "GitHub PR #379 SHA ff6199a7c02a3057cadb569afdc2d4e1bb9e4fcc: 6/6 workflow runs SUCCESS (Names ledger, Research root, Repository authority, Reformation, Atonement, Security), independent crosswalk and consumer contract regressions PASS; closure is Research-only graph not Product."
       ],
-      "verification": "105_OF_105_CLAIM_STRUCTURAL_LINKS; 105_OF_105_RESEARCH_LOCATOR_RESOLVED; 50_OF_50_OLD_INLINE_IDS_PINNED_BY_INDEPENDENT_CONTRACTS; 22_OF_22_GENERIC_WITHOUT_INLINE_PINNED; 55_V1_INLINE_FIELDS_STILL_MISSING; 29_CONSUMER_MUTATION_TESTS; 0_EXTERNAL_PRODUCT_CONSUMERS_VERIFIED; 0_V2_PRODUCT_APPROVALS; 0_CRITICAL_COLLATIONS; SCIENTIFIC_RIGHTS_PRODUCT_RESEARCH_HOLD; NEW_EXACT_SHA_CI_PENDING",
-      "closureAt": null,
+      "verification": "RESEARCH_GRAPH_ONLY_DONE_ON_ff6199a7c02a3057cadb569afdc2d4e1bb9e4fcc_ALL_SIX_CI_SUCCESS; 105/105 source-edition-claim linked, 87 provisional blocked claims, 75 typed relations; 50 legacy inline IDs pinned, 55 V1 absent inline preserved, opt-in sidecar 105/105, independent locked consumer snapshots 50 inline + 22 general, 29 consumer mutation tests. NO scholarly/rights/critical manuscript approval, NO external Arena runtime/V2 compatibility, NO Product publication.",
+      "closureAt": "2026-11-08",
       "owner": "Research editorial"
     },
     {
       "id": "NG-03",
       "priority": "P0",
       "title": "Матрица устаревших формулировок и supersession для глав 01–10",
-      "status": "OPEN",
+      "status": "IN_PROGRESS",
       "dependsOn": [
         "NG-02"
       ],
@@ -290,9 +292,10 @@
       ],
       "evidence": [
         "01_NAMES_LEXICAL_SOURCE_AND_ARENA_AUDIT.md",
-        "00_README_AND_NAVIGATION.md"
+        "00_README_AND_NAVIGATION.md",
+        "11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md §0a: typed historical/current/superseded matrix; 00_README_AND_NAVIGATION.md: current metrics and historical snapshot boundary; remaining detailed 01-10 supersession review not done."
       ],
-      "verification": "NOT_APPLICABLE_UNTIL_DONE",
+      "verification": "PARTIAL_SUPERSESSION_MATRIX_REVIEWED_2026-11-08; canonical master plan section 0a and navigation current snapshot flag legacy source/claim/test/status numbers HISTORICAL; 01-10 full semantic review remains OPEN.",
       "closureAt": null,
       "owner": "Research editorial"
     },
@@ -672,7 +675,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NG-02: internal consumer contract confirmed 50 inline/22 generic snapshots in read-only CI, external Consumer Product/Arena remains NOT ATTESTED. Before any V2 inline migration obtain exact deployed Product/Arena repo/version and execute dual-read compatibility test on actual consumer; no license/peer review/export until separately cleared. Existing 55 historical absent inline fields intentionally not backfilled. Scope boundary: stop Research search once negative default-branch checks recorded, do not create fake verified consumer.",
+  "nextAction": "Exactly two active deliverables: (1) NG-03 finish CURRENT/HISTORICAL/SUPERSEDED review for documents 01-10; (2) CH-PILOT-01 write one coherent reader manuscript on what counts as God's name, with biblical original-language witnesses and three selected systematic theologies as explicitly attributed secondary interpretive sources. STOP_SYSTEMATICS_DISCOVERY until manuscript identifies a concrete Tier-1/2 gap. NG-02 DONE research graph only; NG-04/10/11/12/13 scholarly gates and NG-14/15 Arena/Product/rights gates still blocked. No new plan, PR, branch, or publication.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -753,8 +756,8 @@
     }
   ],
   "lastWorkReport": {
-    "date": "2026-11-07",
-    "planStatus": "NG-02 research locator lookup 105/105; 50/50 internal legacy ID contract witnesses + 22/22 generic no-inline source snapshots; external Product and scientific/rights gates IN_PROGRESS",
+    "date": "2026-11-08",
+    "planStatus": "NG-02 RESEARCH GRAPH DONE on ff6199a 6/6 CI; NG-03 supersession IN_PROGRESS; CH-PILOT-01 FRAME/READ; scholarly/rights/Product NOT APPROVED",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -828,7 +831,9 @@
       "Audited all four internal V1 locator-consuming contracts: 16 memorial + 12 speech + 14 extension + 8 core = 50 matching old inline IDs exactly with zero collisions",
       "Audited generic old snapshot: 22 original no-locus contract witnesses match uniquely 22 sidecar-only aliases; no silent backfill or new requirements",
       "Recorded scoped negative GitHub default-branch read-only code search in three relevant site repos as NOT a product runtime proof",
-      "New distinct consumer contract gate, validator and 25 adversarial checks wired into Names of God specialized CI; no Product modifications"
+      "New distinct consumer contract gate, validator and 25 adversarial checks wired into Names of God specialized CI; no Product modifications",
+      "2026-11-08: NG-02 graph-only closure from exact 6/6 CI ff6199a, 105/105 FKs, 50 immutable legacy inline IDs and 55 intentionally absent inline keys; external Arena/rights/scientific gates unchanged.",
+      "2026-11-08: Started NG-03 historical/current supersession review and bounded systematic Gill/Berkhof/Bavinck intake for one reader pilot, with stop-discovery criterion."
     ],
     "stillOpen": [
       "External Product/Arena consumers and zip prototypes still NOT independently authenticated by exact deployment/build; no dual-read v2 test witness",
@@ -855,7 +860,7 @@
       "curatedClaims": 87,
       "locusIdMissingHistorically": 55,
       "editionSelectionRecheckHolds": 0,
-      "notes": "Structural 105/105 claim coverage and research-side 105/105 locator map; actual internal independent locked contracts 50/50 inline plus 22/22 general no-inline snapshots pinned against original source/edition/rights. 55 old V1 locusId absent remain by design. No external runtime/deploy/zip/Product versioned dual-read contract; all scientific/rights/Product gates remain HOLD.",
+      "notes": "Structural 105/105 claim coverage and research-side 105/105 locator map; actual internal independent locked contracts 50/50 inline plus 22/22 general no-inline snapshots pinned against original source/edition/rights. 55 old V1 locusId absent remain by design. No external runtime/deploy/zip/Product versioned dual-read contract; all scientific/rights/Product gates remain HOLD. Structural NG-02 acceptance closed after 6/6 exact-SHA CI; no source, manuscript, rights, Product or deployment promotion.",
       "typedClaimRelations": 75,
       "editionSpecificDigitalVerseRechecksCompleted": 22,
       "attestationsLinkedToClaims": 105,
@@ -894,7 +899,73 @@
       "consumerVerificationStatus": "INTERNAL_50_INLINE_22_GENERIC_VALIDATED_EXTERNAL_RUNTIME_NOT_VERIFIED",
       "externalSourceControlPinnedRepos": 3,
       "externalSourceControlFilesRead": 8,
-      "externalRuntimeConsumersVerified": 0
+      "externalRuntimeConsumersVerified": 0,
+      "structuralClosure": "DONE_RESEARCH_GRAPH_ONLY_exactSHA_ff6199a"
     }
+  },
+  "editorialExecution": {
+    "asOf": "2026-11-08",
+    "owner": "ИМЕНА БОГА/11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md §0a/§3b",
+    "state": "FRAME_AND_READ_NOT_MANUSCRIPT_READY",
+    "readerChapterCountApproved": null,
+    "subjectDirectionsProvisional": 14,
+    "readerManuscriptsAccepted": 0,
+    "twoActiveDeliverables": [
+      {
+        "id": "NG-03",
+        "kind": "EXISTING_WORKPLAN_TASK",
+        "target": "Source- and edition-linked supersession of outdated statements in existing dossiers 01-10",
+        "acceptance": "Every changed factual claim has linked current authority; preserve older snapshots and mark them HISTORICAL/SUPERSEDED."
+      },
+      {
+        "id": "CH-PILOT-01",
+        "kind": "READER_MANUSCRIPT_PILOT",
+        "target": "What does Scripture mean by the name of God?",
+        "acceptance": "One continuous readable manuscript distinguishing God's revealed name, proper name, title, attribute, predicate and named object, primary verses, one strong alternative, and evidence/rights limitations.",
+        "status": "FRAME_READ_NOT_DRAFT"
+      }
+    ],
+    "nextChapterCandidates": [
+      "CH-PILOT-02:YHWH-EHYEH",
+      "CH-PILOT-03:EL-ELOHIM-SHADDAI"
+    ],
+    "discoveryStop": "STOP_SYSTEMATICS_DISCOVERY_AFTER_GILL_BERKHOF_BAVINCK_UNTIL_SPECIFIC_MANUSCRIPT_GAP",
+    "sourcePolicy": "SECONDARY_B1_AUTHOR_ATTRIBUTED_NOT_CRITICAL_WITNESS",
+    "publicationGate": "ALL_PRODUCT_RIGHTS_SCHOLARLY_HOLDS_REMAIN"
+  },
+  "systematicTheologyTriage": {
+    "asOf": "2026-11-08",
+    "status": "BOUNDED_THREE_SOURCE_INTAKE_DONE_NO_NEW_SOURCE_REGISTER_ROWS_OR_EDITION_LICENSES",
+    "humanEvidence": "ИМЕНА БОГА/11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md §3b",
+    "sources": [
+      {
+        "author": "John Gill",
+        "title": "A Body of Doctrinal Divinity",
+        "locator": "Book I ch 3 Of the Names of God",
+        "url": "https://ccel.org/ccel/gill/doctrinal/doctrinal.ii.iii.html",
+        "access": "SELECTED_HTML_SECTION_READ",
+        "use": "BAPTIST_DOGMATIC_CLASSIFICATION",
+        "caution": "ELOHIM_PLURAL_TO_TRINITY_IS_INTERPRETATION_NOT_MORPHOLOGICAL_PROOF"
+      },
+      {
+        "author": "Louis Berkhof",
+        "title": "Systematic Theology",
+        "locator": "The Being of God IV A-B The Names of God",
+        "url": "https://www.ccel.org/ccel/berkhof/systematictheology.iii.i.iv.html",
+        "access": "SELECTED_HTML_SECTION_READ",
+        "use": "BROAD_REVELATION_NAME_VS_PROPER_NAME",
+        "caution": "HISTORICAL_SHADDAI_ETYMOLGY_NOT_CORROBORATED"
+      },
+      {
+        "author": "Herman Bavinck",
+        "title": "Reformed Dogmatics Vol 2",
+        "locator": "The Names of God and Classification of the Names of God",
+        "url": "https://www.uecf.net/books/reformed-dogmatics-bavinck-vol-2/chapter4.html",
+        "access": "SELECTED_THIRD_PARTY_HTML_READ_AND_PUBLISHER_CATALOG_CONFIRMED",
+        "use": "NOMEN_EDITUM_NOMINA_INDITA_ANALOGICAL_LANGUAGE",
+        "caution": "2004_TRANSLATION_COPYRIGHT_AND_PRINTING_NOT_VERIFIED"
+      }
+    ],
+    "stopRule": "Only re-open targeted dogmatic inquiry if CH-PILOT-01 manuscript identifies an evidence-changing gap; else write."
   }
 }
