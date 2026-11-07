@@ -6,7 +6,7 @@ import json
 import unittest
 from pathlib import Path
 
-from validate_names_ledger import validate, validate_extension, validate_source_access, validate_apocalyptic, validate_prophetic_namings, validate_six_title_attestations, validate_memorial_attestations, validate_speech_intertext
+from validate_names_ledger import validate, validate_extension, validate_source_access, validate_apocalyptic, validate_prophetic_namings, validate_six_title_attestations, validate_memorial_attestations, validate_speech_intertext, validate_extension_attestations
 
 ROOT = Path(__file__).resolve().parent
 
@@ -20,6 +20,7 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         cls.title_contract = json.loads((ROOT / "data" / "attestation_contract_v1.json").read_text(encoding="utf-8"))
         cls.memorial_contract = json.loads((ROOT / "data" / "memorial_attestation_contract_v1.json").read_text(encoding="utf-8"))
         cls.speech_contract = json.loads((ROOT / "data" / "speech_intertext_contract_v1.json").read_text(encoding="utf-8"))
+        cls.extension_contract = json.loads((ROOT / "data" / "extension_attestation_contract_v1.json").read_text(encoding="utf-8"))
 
     def test_current_research_corpora_pass_structure(self) -> None:
         self.assertEqual([], validate(self.baseline))
@@ -30,6 +31,7 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertEqual([], validate_six_title_attestations(self.baseline, self.title_contract))
         self.assertEqual([], validate_memorial_attestations(self.baseline, self.memorial_contract))
         self.assertEqual([], validate_speech_intertext(self.baseline, self.speech_contract))
+        self.assertEqual([], validate_extension_attestations(self.extension, self.extension_contract))
 
     def test_altar_cannot_be_promoted_to_personal_name(self) -> None:
         data = copy.deepcopy(self.baseline)
@@ -717,6 +719,174 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         r = next(x for x in d["records"] if x["id"] == "SRC-SBLGNT-JOHN-EGO")
         r["supportedUse"] = "John8:58 divine name in every utterance"
         self.assertTrue(any("nondivine John9:9" in e for e in validate_source_access(d)))
+
+
+    def test_extension_yah_psalm68_bet_prefix_cannot_be_erased(self) -> None:
+        d = copy.deepcopy(self.extension)
+        x = next(r for r in d["records"] if r["id"] == "yah")
+        x["attestations"][1]["surface"] = "יָהּ שְׁמוֹ"
+        self.assertTrue(any("Psalm68 bet prefix" in e for e in validate_extension_attestations(d, self.extension_contract)))
+
+    def test_extension_yah_psalm68_mt_vs_english_numbering(self) -> None:
+        d = copy.deepcopy(self.extension)
+        x = next(r for r in d["records"] if r["id"] == "yah")
+        x["attestations"][1]["numbering"]["mt"] = "Psalms 68:4"
+        self.assertTrue(any("Psalm68 versification" in e for e in validate_extension_attestations(d, self.extension_contract)))
+
+    def test_extension_psalm68_net_conjecture_is_not_printed_mt(self) -> None:
+        d = copy.deepcopy(self.extension)
+        x = next(r for r in d["records"] if r["id"] == "yah")
+        x["attestations"][1]["textualConjecture"] = "MT conclusively reads כִּי יָהּ שְׁמוֹ"
+        self.assertTrue(any("conjecture promoted to MT" in e for e in validate_extension_attestations(d, self.extension_contract)))
+
+    def test_extension_eloah_deut32_rejected_object_not_jeshurun_subject(self) -> None:
+        d = copy.deepcopy(self.extension)
+        x = next(r for r in d["records"] if r["id"] == "eloah")
+        x["attestations"][0]["grammaticalActor"] = "Eloah"
+        self.assertTrue(any("Eloah object of Jeshurun" in e for e in validate_extension_attestations(d, self.extension_contract)))
+
+    def test_extension_daniel_2_aramaic_cannot_be_labelled_hebrew(self) -> None:
+        d = copy.deepcopy(self.extension)
+        x = next(r for r in d["records"] if r["id"] == "elah-shmaya")
+        x["attestations"][0]["language"] = "hebrew"
+        self.assertTrue(any("Daniel2 Aramaic language" in e for e in validate_extension_attestations(d, self.extension_contract)))
+
+    def test_extension_daniel_2_19_prefix_lamed_is_preserved(self) -> None:
+        d = copy.deepcopy(self.extension)
+        x = next(r for r in d["records"] if r["id"] == "elah-shmaya")
+        x["attestations"][1]["surface"] = "אֱלָהּ שְׁמַיָּא"
+        self.assertTrue(any("Aramaic language/lamed prefix" in e for e in validate_extension_attestations(d, self.extension_contract)))
+
+    def test_extension_daniel_2_pagan_gods_negative_control_not_lost(self) -> None:
+        d = copy.deepcopy(self.extension)
+        x = next(r for r in d["records"] if r["id"] == "elah-shmaya")
+        x["negativeControls"] = [y for y in x["negativeControls"] if y["verse"] != "Daniel 2:11"]
+        self.assertTrue(any("pagan gods vs God" in e for e in validate_extension_attestations(d, self.extension_contract)))
+
+    def test_extension_daniel_2_28_god_in_heaven_is_not_same_surface(self) -> None:
+        d = copy.deepcopy(self.extension)
+        x = next(r for r in d["records"] if r["id"] == "elah-shmaya")
+        x["negativeControls"][1]["surface"] = "אֱלָהּ שְׁמַיָּא"
+        self.assertTrue(any("pagan gods vs God" in e for e in validate_extension_attestations(d, self.extension_contract)))
+
+    def test_extension_psalm_42_bet_not_substituted_for_lamed(self) -> None:
+        d = copy.deepcopy(self.extension)
+        x = next(r for r in d["records"] if r["id"] == "el-hay")
+        x["attestations"][0]["prefixOnEl"] = "בְּ"
+        self.assertTrue(any("Psalm42 lamed" in e for e in validate_extension_attestations(d, self.extension_contract)))
+
+    def test_extension_psalm_42_3_mt_vs_english_42_2(self) -> None:
+        d = copy.deepcopy(self.extension)
+        x = next(r for r in d["records"] if r["id"] == "el-hay")
+        x["attestations"][0]["numbering"]["commonEnglish"] = "Psalms 42:3"
+        self.assertTrue(any("Psalm42 lamed and verse numbering" in e for e in validate_extension_attestations(d, self.extension_contract)))
+
+    def test_extension_isaiah_63_our_father_not_novel_aramaic_abba(self) -> None:
+        d = copy.deepcopy(self.extension)
+        x = next(r for r in d["records"] if r["id"] == "avinu")
+        x["attestations"][0]["language"] = "aramaic"
+        self.assertTrue(any("Hebrew corporate Father prayer" in e for e in validate_extension_attestations(d, self.extension_contract)))
+
+    def test_extension_psalm_27_poetic_light_not_named_personal_name(self) -> None:
+        d = copy.deepcopy(self.extension)
+        x = next(r for r in d["records"] if r["id"] == "yhwh-ori")
+        x["attestations"][0]["namingActInVerse"] = True
+        self.assertTrue(any("poetic light falsely turned" in e for e in validate_extension_attestations(d, self.extension_contract)))
+
+    def test_extension_psalm_27_stronghold_poetic_parallel_preserved(self) -> None:
+        d = copy.deepcopy(self.extension)
+        x = next(r for r in d["records"] if r["id"] == "yhwh-ori")
+        x["attestations"][0]["linkedPoeticMetaphor"] = "יְהוָה אוֹרִי"
+        self.assertTrue(any("poetic light falsely turned" in e for e in validate_extension_attestations(d, self.extension_contract)))
+
+    def test_extension_deuteronomy_32_faithful_god_and_rock_parallel(self) -> None:
+        d = copy.deepcopy(self.extension)
+        x = next(r for r in d["records"] if r["id"] == "el-emunah")
+        x["attestations"][0]["contextParallel"] = "no rock"
+        self.assertTrue(any("faithful God separated from Rock" in e for e in validate_extension_attestations(d, self.extension_contract)))
+
+    def test_extension_exodus_34_moral_descriptors_not_each_own_name(self) -> None:
+        d = copy.deepcopy(self.extension)
+        x = next(r for r in d["records"] if r["id"] == "el-rahum-hannun")
+        x["attestations"][0]["qualifier"] = "EACH_ADJECTIVE_PROVEN_TO_BE_A_PERSONAL_NAME"
+        self.assertTrue(any("Exodus34 naming proclamation" in e for e in validate_extension_attestations(d, self.extension_contract)))
+
+    def test_extension_luke1_32_gabriel_must_remain_speaker(self) -> None:
+        d = copy.deepcopy(self.extension)
+        x = next(r for r in d["records"] if r["id"] == "kyrios-ho-theos")
+        x["attestations"][0]["narrativeSpeaker"] = "Jesus"
+        self.assertTrue(any("Luke1:32 Gabriel" in e for e in validate_extension_attestations(d, self.extension_contract)))
+
+    def test_extension_luke1_32_god_agent_jesus_dative_recipient(self) -> None:
+        d = copy.deepcopy(self.extension)
+        x = next(r for r in d["records"] if r["id"] == "kyrios-ho-theos")
+        x["attestations"][0]["recipient"] = "YHWH"
+        self.assertTrue(any("Luke1:32 Gabriel/Lord God/Jesus" in e for e in validate_extension_attestations(d, self.extension_contract)))
+
+    def test_extension_luke_thgnt_copyright_not_sblgnt_licensed(self) -> None:
+        d = copy.deepcopy(self.extension)
+        x = next(r for r in d["records"] if r["id"] == "kyrios-ho-theos")
+        x["attestations"][0]["rightsState"] = "PUBLICATION_ELIGIBLE"
+        self.assertTrue(any("THGNT rights conflated" in e for e in validate_extension_attestations(d, self.extension_contract)))
+
+    def test_extension_john10_good_shepherd_explicit_predicate(self) -> None:
+        d = copy.deepcopy(self.extension)
+        x = next(r for r in d["records"] if r["id"] == "poimen-ho-kalos")
+        x["attestations"][0]["syntax"] = "ABSOLUTE_EGO_EIMI_WITHOUT_PREDICATE"
+        self.assertTrue(any("John predicate silently made absolute" in e for e in validate_extension_attestations(d, self.extension_contract)))
+
+    def test_extension_john10_14_ego_eimi_case_remains_edition_specific(self) -> None:
+        d = copy.deepcopy(self.extension)
+        x = next(r for r in d["records"] if r["id"] == "poimen-ho-kalos")
+        x["attestations"][1]["fullClause"] = "Ἐγώ εἰμι ὁ ποιμὴν ὁ καλός"
+        self.assertTrue(any("John10 shepherd verses" in e for e in validate_extension_attestations(d, self.extension_contract)))
+
+    def test_extension_john11_resurrection_and_life_not_solo_word(self) -> None:
+        d = copy.deepcopy(self.extension)
+        x = next(r for r in d["records"] if r["id"] == "anastasis-zoe")
+        x["attestations"][0]["fullClause"] = "Ἐγώ εἰμι ἡ ἀνάστασις"
+        self.assertTrue(any("John11 both resurrection and life" in e for e in validate_extension_attestations(d, self.extension_contract)))
+
+    def test_extension_independent_contract_cannot_drop_provenance_field(self) -> None:
+        c = copy.deepcopy(self.extension_contract)
+        c["lockedFields"].remove("sourceUrl")
+        self.assertTrue(any("source/speaker contract weakened" in e for e in validate_extension_attestations(self.extension, c)))
+
+    def test_extension_dropping_14_contexts_fails_closed(self) -> None:
+        d = copy.deepcopy(self.extension)
+        x = next(r for r in d["records"] if r["id"] == "anastasis-zoe")
+        x["attestations"] = []
+        self.assertTrue(any("exactly 14 unique" in e for e in validate_extension_attestations(d, self.extension_contract)))
+
+    def test_suchard_article_ccby_does_not_imply_lexical_consensus(self) -> None:
+        d = copy.deepcopy(self.sources)
+        x = next(r for r in d["records"] if r["id"] == "SRC-SUCHARD-ELOHIM-2025")
+        x["evidenceClass"] = "A1"
+        self.assertTrue(any("Suchard article CC BY" in e for e in validate_source_access(d)))
+
+    def test_suchard_ccby_must_remain_article_only(self) -> None:
+        d = copy.deepcopy(self.sources)
+        x = next(r for r in d["records"] if r["id"] == "SRC-SUCHARD-ELOHIM-2025")
+        x["licenseScope"] = "ALL_OTHER_BIBLICAL_TRANSLATIONS"
+        self.assertTrue(any("Suchard article CC BY" in e for e in validate_source_access(d)))
+
+    def test_suchard_article_cannot_be_reset_to_unverified_rights(self) -> None:
+        d = copy.deepcopy(self.sources)
+        x = next(r for r in d["records"] if r["id"] == "SRC-SUCHARD-ELOHIM-2025")
+        x["rightsState"] = "RIGHTS_UNKNOWN"
+        self.assertTrue(any("Suchard article CC BY" in e for e in validate_source_access(d)))
+
+    def test_jbq_yah_article_not_auto_primary_or_open_license(self) -> None:
+        d = copy.deepcopy(self.sources)
+        x = next(r for r in d["records"] if r["id"] == "SRC-JBQ-YAH-2014")
+        x["rightsState"] = "PUBLICATION_ELIGIBLE"
+        self.assertTrue(any("JBQ Yah bibliography" in e for e in validate_source_access(d)))
+
+    def test_net_psalm68_emendation_not_a_cited_manuscript(self) -> None:
+        d = copy.deepcopy(self.sources)
+        x = next(r for r in d["records"] if r["id"] == "SRC-NET-PS68")
+        x["supportedUse"] = "MT already reads conjectural ki Yah"
+        self.assertTrue(any("conjectural NET Psalm68" in e for e in validate_source_access(d)))
 
 
 if __name__ == "__main__":
