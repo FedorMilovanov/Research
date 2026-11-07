@@ -14,6 +14,7 @@ from pathlib import Path
 
 LEDGER = Path(__file__).resolve().parent / "data" / "names_ledger_v1.json"
 EXTENSION = Path(__file__).resolve().parent / "data" / "names_extension_ledger_v1.json"
+SOURCES = Path(__file__).resolve().parent / "data" / "source_access_register_v1.json"
 ALLOWED_CLASSES = {"A1", "A2", "A3", "B1", "C", "D"}
 ALLOWED_ACCESS = {"FULL_OBJECT_VERIFIED", "PARTIAL_OBJECT", "CATALOG_ONLY", "LINK_ONLY", "NOT_ACQUIRED"}
 ALLOWED_LOCATOR = {"EXACT_LOCATOR_VERIFIED", "COARSE_LOCATOR_ONLY", "LOCATOR_MISSING"}
@@ -227,10 +228,91 @@ def validate_extension(extension: dict, baseline: dict) -> list[str]:
     return errors
 
 
+EXPECTED_SOURCE_ROLES = {
+    "SRC-MT-MECHON": "DIGITAL_TEXT_SURFACE_ONLY",
+    "SRC-VANWOLDE-2021": "ATTRIBUTED_SECONDARY_EXEGESIS",
+    "SRC-ROESEL-2007": "ATTRIBUTED_ABSTRACT_HYPOTHESIS",
+    "SRC-SHAW-2002": "CATALOGUE_ABSTRACT_ONLY",
+    "SRC-LEE-8HEV": "CATALOGUE_ABSTRACT_ONLY",
+    "SRC-GREEVER-2020": "RECEPTION_TYPOLOGY_ONLY",
+    "SRC-CALVIN-EXODUS": "HISTORICAL_INTERPRETATION_IN_TRANSLATION",
+    "SRC-NET-EXO6": "ATTRIBUTED_TRANSLATION_NOTES",
+    "SRC-THGNT-LUKE": "GREEK_TEXT_SURFACE_ONLY",
+}
+
+
+def validate_source_access(sources: dict) -> list[str]:
+    """Structural provenance/rights gate; never certifies actual content or licenses."""
+    errors: list[str] = []
+    if not isinstance(sources, dict) or sources.get("schemaVersion") != 1:
+        return ["source register must be a schemaVersion=1 JSON object"]
+    if sources.get("corpusId") != "NAMES_OF_GOD_SOURCE_ACCESS":
+        errors.append("sources: wrong corpusId")
+    rows = sources.get("records")
+    if not isinstance(rows, list):
+        return errors + ["sources: records must be list"]
+    ids: set[str] = set()
+    for idx, source in enumerate(rows, start=1):
+        prefix = f"source[{idx}]"
+        if not isinstance(source, dict):
+            errors.append(f"{prefix}: not an object")
+            continue
+        rid = source.get("id", "")
+        if not rid or rid in ids:
+            errors.append(f"{prefix}: missing or duplicate id")
+        ids.add(rid)
+        if rid not in EXPECTED_SOURCE_ROLES:
+            errors.append(f"{prefix}: unreviewed source id {rid}")
+        if source.get("sourceRole") != EXPECTED_SOURCE_ROLES.get(rid):
+            errors.append(f"{prefix}: source relevance/role changed without research review")
+        for name in ("title", "creator", "url", "objectType",
+                     "supportedUse", "forbiddenUse", "sourceObjectState"):
+            if not isinstance(source.get(name), str) or not source[name].strip():
+                errors.append(f"{prefix}: {name} empty")
+        if not URL.match(str(source.get("url", ""))):
+            errors.append(f"{prefix}: invalid https source URL")
+        for name, accepted in (
+            ("evidenceClass", ALLOWED_CLASSES),
+            ("accessState", ALLOWED_ACCESS),
+            ("locatorState", ALLOWED_LOCATOR),
+            ("rightsState", ALLOWED_RIGHTS),
+            ("publicationState", ALLOWED_PUBLICATION),
+        ):
+            if source.get(name) not in accepted:
+                errors.append(f"{prefix}: invalid {name}")
+        if source.get("publicationState") != "BLOCKED":
+            errors.append(f"{prefix}: publication not authorized")
+        holds = source.get("holds", [])
+        if not isinstance(holds, list) or "PUBLICATION_HOLD" not in holds:
+            errors.append(f"{prefix}: mandatory PUBLICATION_HOLD absent")
+        elif any(h not in ALLOWED_HOLDS for h in holds):
+            errors.append(f"{prefix}: unknown HOLD token")
+        if source.get("criticalEditionCollated") is not False:
+            errors.append(f"{prefix}: falsely claims edition collation")
+        if source.get("rightsState") == "PUBLICATION_ELIGIBLE" and rid != "SRC-VANWOLDE-2021":
+            errors.append(f"{prefix}: evidence of a source-level license missing")
+        if rid == "SRC-VANWOLDE-2021":
+            if source.get("rightsState") != "PUBLICATION_ELIGIBLE" or "CC BY 4.0" not in str(source.get("license", "")):
+                errors.append(f"{prefix}: verified article-specific CC BY license lost")
+        if rid in {"SRC-SHAW-2002", "SRC-LEE-8HEV"} and source.get("accessState") != "CATALOG_ONLY":
+            errors.append(f"{prefix}: catalogue falsely promoted to full manuscript witness")
+        if rid == "SRC-GREEVER-2020" and "יָהּ" not in str(source.get("forbiddenUse", "")):
+            errors.append(f"{prefix}: Psalm 68:18 typology cannot prove Yah lexeme")
+        if rid == "SRC-THGNT-LUKE" and source.get("rightsState") != "PERMISSION_REQUIRED":
+            errors.append(f"{prefix}: THGNT must retain reuse restriction")
+    if ids != set(EXPECTED_SOURCE_ROLES):
+        errors.append("sources: source-inventory IDs changed")
+    counts = sources.get("counts", {})
+    if not isinstance(counts, dict) or counts.get("sourceRecords") != len(rows) or counts.get("approvedForProduct") != 0:
+        errors.append("sources: count/status mismatch")
+    return errors
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--ledger", type=Path, default=LEDGER)
     parser.add_argument("--extension", type=Path, default=EXTENSION)
+    parser.add_argument("--sources", type=Path, default=SOURCES)
     args = parser.parse_args()
     try:
         with args.ledger.open("r", encoding="utf-8") as stream:
@@ -244,13 +326,20 @@ def main() -> int:
     except (OSError, ValueError) as exc:
         print(f"FAIL: cannot read extension: {exc}", file=sys.stderr)
         return 1
-    issues = validate(data) + validate_extension(extension, data)
+    try:
+        with args.sources.open("r", encoding="utf-8") as stream:
+            sources = json.load(stream)
+    except (OSError, ValueError) as exc:
+        print(f"FAIL: cannot read sources: {exc}", file=sys.stderr)
+        return 1
+    issues = validate(data) + validate_extension(extension, data) + validate_source_access(sources)
     if issues:
         for issue in issues:
             print("FAIL:", issue, file=sys.stderr)
         return 1
     print(f"PASS: {len(data['records'])} Arena baseline + "
-          f"{len(extension['records'])} extension rows; publication blocked. "
+          f"{len(extension['records'])} extension rows + "
+          f"{len(sources['records'])} source records; publication blocked. "
           "STRUCTURAL only; original-language/content/rights checks are separate.")
     return 0
 
