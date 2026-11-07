@@ -161,16 +161,32 @@ def validate_provenance(
                     correct = "SRC-DANIEL-ARAMAIC" if obs.get("language") == "aramaic" else "SRC-MT-MECHON"
                     if source_id != correct or "mechon-mamre.org" not in url:
                         errors.append(f"provenance: {aid} MT Aramaic/Hebrew source binding incorrect")
-                if edition_id == ED_SBL and (source_id != "SRC-SBLGNT-DIGITAL-NT" or
-                                             ("SBLGNT" not in url and "sblgnt" not in url.lower())):
-                    errors.append(f"provenance: {aid} SBLGNT passage rights/source assigned incorrectly")
+                if edition_id == ED_SBL:
+                    if source_id != "SRC-SBLGNT-DIGITAL-NT":
+                        errors.append(f"provenance: {aid} SBLGNT passage source incorrectly assigned")
+                    has_pin = bool(re.search(r"[?&]version=SBLGNT(?:&|$|%3B)", url, re.IGNORECASE))
+                    if has_pin and obs.get("editionPinStatus") != "URL_VERSION_PINNED":
+                        errors.append(f"provenance: {aid} incorrect URL edition-pin status")
+                    if not has_pin and (
+                        obs.get("editionPinStatus") != "MULTI_EDITION_DISPLAY_REQUIRES_RECHECK"
+                        or aid not in {
+                            "ATT-BASE-SABAOTH-05",
+                            "ATT-BASE-SABAOTH-06",
+                            "ATT-BASE-ABBA-03",
+                        }
+                    ):
+                        errors.append(f"provenance: {aid} unpinned Greek edition not explicitly review-held")
                 if edition_id == ED_LXX:
                     match = [value for key, value in PUBLISHER_LXX.items() if key in url]
                     if len(match) != 1 or source_id != match[0] or "die-bibel.de" not in url:
                         errors.append(f"provenance: {aid} publisher LXX chapter/edition misattributed")
-                if edition_id == ED_THG and (source_id != "SRC-THGNT-LUKE"
-                                             or "Luke" not in url):
-                    errors.append(f"provenance: {aid} THGNT Luke1 provenance incorrect")
+                if edition_id == ED_THG:
+                    if source_id != "SRC-THGNT-LUKE" or "Luke" not in url:
+                        errors.append(f"provenance: {aid} THGNT Luke1 provenance incorrect")
+                    if aid != "ATT-EXT-KYRIOS-HO-THEOS-01" or (
+                        obs.get("editionPinStatus") != "MULTI_EDITION_DISPLAY_REQUIRES_RECHECK"
+                    ):
+                        errors.append(f"provenance: {aid} THGNT multiedition display needs explicit edition review HOLD")
     if num != 105 or len(seen) != 105:
         errors.append(f"provenance: all 105 current original-language attestations must be uniquely linked, not {num}/{len(seen)}")
 
