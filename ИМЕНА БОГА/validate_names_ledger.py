@@ -344,6 +344,11 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-RASHI-EXO6": "HISTORICAL_JEWISH_COMMENTARY",
     "SRC-NET-GEN14": "ATTRIBUTED_TRANSLATION_NOTES",
     "SRC-CARGILL-2019": "ATTRIBUTED_HISTORICAL_CRITICAL_HYPOTHESIS_ABSTRACT",
+    "SRC-SBL-REVELATION": "GREEK_TEXT_SURFACE_ONLY",
+    "SRC-TR1550-REV18": "HISTORIC_PRINTED_EDITION_SURFACE",
+    "SRC-THGNT-REV216": "GREEK_TEXT_SURFACE_ONLY",
+    "SRC-DANIEL-ARAMAIC": "ARAMAIC_TEXT_SURFACE_ONLY",
+    "SRC-SBL-INTRO": "EDITION_METHOD_NOT_MANUSCRIPT_APPARATUS",
 }
 
 
@@ -395,8 +400,20 @@ def validate_source_access(sources: dict) -> list[str]:
             errors.append(f"{prefix}: unknown HOLD token")
         if source.get("criticalEditionCollated") is not False:
             errors.append(f"{prefix}: falsely claims edition collation")
-        if source.get("rightsState") == "PUBLICATION_ELIGIBLE" and rid != "SRC-VANWOLDE-2021":
+        if source.get("rightsState") == "PUBLICATION_ELIGIBLE" and rid not in {"SRC-VANWOLDE-2021", "SRC-TR1550-REV18"}:
             errors.append(f"{prefix}: evidence of a source-level license missing")
+        if rid == "SRC-TR1550-REV18":
+            if source.get("rightsState") != "PUBLICATION_ELIGIBLE" or "Public Domain" not in str(source.get("license", "")):
+                errors.append(f"{prefix}: source-specific public-domain TR1550 status changed")
+            if source.get("publicationState") != "BLOCKED":
+                errors.append(f"{prefix}: public domain is not permission to publish unreviewed interpretations")
+        if rid in {"SRC-THGNT-REV216", "SRC-THGNT-LUKE"} and source.get("rightsState") != "PERMISSION_REQUIRED":
+            errors.append(f"{prefix}: restricted THGNT rights changed")
+        if rid == "SRC-DANIEL-ARAMAIC" and (source.get("sourceRole") != "ARAMAIC_TEXT_SURFACE_ONLY"
+            or source.get("accessState") != "PARTIAL_OBJECT"):
+            errors.append(f"{prefix}: Aramaic text cannot be promoted to fully collated Hebrew or manuscript")
+        if rid == "SRC-SBL-INTRO" and "not" not in str(source.get("forbiddenUse","")).lower():
+            errors.append(f"{prefix}: SBLGNT introduction must remain non-manuscript provenance")
         if rid == "SRC-VANWOLDE-2021":
             if source.get("rightsState") != "PUBLICATION_ELIGIBLE" or "CC BY 4.0" not in str(source.get("license", "")):
                 errors.append(f"{prefix}: verified article-specific CC BY license lost")
@@ -420,6 +437,134 @@ def validate_source_access(sources: dict) -> list[str]:
     counts = sources.get("counts", {})
     if not isinstance(counts, dict) or counts.get("sourceRecords") != len(rows) or counts.get("approvedForProduct") != 0:
         errors.append("sources: count/status mismatch")
+    return errors
+
+
+APOCALYPTIC_BASELINE_SURFACES = {
+    "atiq-yomin": {
+        "Daniel 7:9": ("עַתִּיק יוֹמִין", "aramaic", "direct_scene_narration"),
+        "Daniel 7:13": ("עַתִּיק יוֹמַיָּא", "aramaic", "direct_scene_narration"),
+        "Daniel 7:22": ("עַתִּיק יוֹמַיָּא", "aramaic", "direct_scene_narration"),
+    },
+    "alpha-omega": {
+        "Revelation 1:8": ("τὸ Ἄλφα καὶ τὸ Ὦ", "greek", "explicit_speech_attribution_in_verse"),
+        "Revelation 21:6": ("τὸ Ἄλφα καὶ τὸ Ὦ", "greek", "narrative_speaker_introduced_in_Revelation_21_5"),
+        "Revelation 22:13": ("τὸ Ἄλφα καὶ τὸ Ὦ", "greek", "contextual_inference_with_intervening_angelic_speech"),
+    },
+    "pantokrator": {
+        "Revelation 1:8": ("ὁ παντοκράτωρ", "greek", "explicit_speech_attribution_in_verse"),
+        "Revelation 21:22": ("ὁ παντοκράτωρ", "greek", "vision_narration"),
+    },
+}
+APOCALYPTIC_EXTENSION_SURFACES = {
+    "ho-on-erchomenos": {
+        "Revelation 1:4": "ὁ ὢν καὶ ὁ ἦν καὶ ὁ ἐρχόμενος",
+        "Revelation 1:8": "ὁ ὢν καὶ ὁ ἦν καὶ ὁ ἐρχόμενος",
+    },
+    "arche-telos": {
+        "Revelation 21:6": "ἡ ἀρχὴ καὶ τὸ τέλος",
+        "Revelation 22:13": "ἡ ἀρχὴ καὶ τὸ τέλος",
+    },
+}
+
+
+def validate_apocalyptic(baseline: dict, extension: dict) -> list[str]:
+    """Fail closed on digital witness and narrative-attribution regressions.
+
+    This is a pinned, reviewed verse-surface contract, NOT a claim of
+    manuscript-critical collation, or endorsement of interpretive speakers.
+    """
+    errors: list[str] = []
+    bmap = {r.get("id"): r for r in baseline.get("records", []) if isinstance(r, dict)}
+    emap = {r.get("id"): r for r in extension.get("records", []) if isinstance(r, dict)}
+    for rid, expected in APOCALYPTIC_BASELINE_SURFACES.items():
+        row = bmap.get(rid, {})
+        att = row.get("attestations", [])
+        if not isinstance(att, list):
+            errors.append(f"{rid}: apocalyptic attestation list missing")
+            att = []
+        found = {r.get("verse"): r for r in att if isinstance(r, dict)}
+        if set(found) != set(expected) or len(att) != len(expected):
+            errors.append(f"{rid}: apocalyptic verse set drift")
+        for verse, (surface, language, cue) in expected.items():
+            o = found.get(verse, {})
+            if o.get("surface") != surface or o.get("language") != language:
+                errors.append(f"{rid}/{verse}: original-script surface or language changed")
+            if o.get("speakerEvidence") != cue:
+                errors.append(f"{rid}/{verse}: narrative voice evidence was conflated")
+            if not isinstance(o.get("speaker"), str) or not o["speaker"]:
+                errors.append(f"{rid}/{verse}: speaker attribution missing")
+            if not isinstance(o.get("referent"), str) or not o["referent"]:
+                errors.append(f"{rid}/{verse}: referent missing")
+            for field, expected_value in (
+                ("checkState", "DIGITAL_VERSE_SURFACE_CHECKED"),
+                ("criticalEditionStatus", "NOT_COLLATED"),
+                ("rightsState", "RIGHTS_UNKNOWN"),
+            ):
+                if o.get(field) != expected_value:
+                    errors.append(f"{rid}/{verse}: unwarranted promotion of {field}")
+            if not URL.match(str(o.get("sourceUrl", ""))):
+                errors.append(f"{rid}/{verse}: witness source URL invalid")
+            if isinstance(o.get("surface"), str):
+                errors.extend(unicode_surface_issues(f"{rid}/{verse}", o["surface"]))
+        if rid == "atiq-yomin":
+            note = row.get("lexicalNote", {})
+            if note.get("morphologicalExplanationStatus") != "PENDING_ARABIBLICAL_GRAMMAR_REFERENCE":
+                errors.append("Daniel7 Aramaic morphological inference improperly marked resolved")
+            if "COMING TO" not in str(row.get("referentBoundary", "")):
+                errors.append("Daniel7:13 two vision figures no longer distinguished")
+    if baseline.get("auditProtocol", {}).get("apocalypticAttestations", {}).get("totalAttestations") != 8:
+        errors.append("apocalyptic baseline count must stay 8 unless separately reviewed")
+    for rid, expected in APOCALYPTIC_EXTENSION_SURFACES.items():
+        row = emap.get(rid, {})
+        att = row.get("attestations", [])
+        if not isinstance(att, list):
+            errors.append(f"{rid}: apocalyptic extension attestation list missing")
+            att = []
+        found = {r.get("verse"): r for r in att if isinstance(r, dict)}
+        if set(found) != set(expected) or len(att) != len(expected):
+            errors.append(f"{rid}: apocalyptic extension verse set drift")
+        for verse, surface in expected.items():
+            o = found.get(verse, {})
+            if o.get("surface") != surface or o.get("language") != "greek":
+                errors.append(f"{rid}/{verse}: Greek original surface changed")
+            if not isinstance(o.get("speakerCue"), str) or not o["speakerCue"]:
+                errors.append(f"{rid}/{verse}: speakerCue missing")
+            if o.get("edition") != "SBLGNT 2010 via BibleGateway":
+                errors.append(f"{rid}/{verse}: edition silently replaced")
+            if o.get("checkState") != "DIGITAL_VERSE_SURFACE_CHECKED" or o.get("criticalEditionStatus") != "NOT_COLLATED":
+                errors.append(f"{rid}/{verse}: false manuscript approval")
+            if o.get("rightsState") != "RIGHTS_UNKNOWN":
+                errors.append(f"{rid}/{verse}: source-specific rights silently changed")
+            if not URL.match(str(o.get("sourceUrl", ""))):
+                errors.append(f"{rid}/{verse}: missing source URL")
+            if isinstance(o.get("surface"), str):
+                errors.extend(unicode_surface_issues(f"{rid}/{verse}", o["surface"]))
+    if extension.get("auditProtocol", {}).get("apocalypticAttestations", {}).get("totalAttestations") != 4:
+        errors.append("apocalyptic extension count must stay 4 unless reviewed")
+    ao = bmap.get("alpha-omega", {})
+    variants = ao.get("printedEditionDiffs", [])
+    if not isinstance(variants, list) or len(variants) != 2:
+        errors.append("Rev printed-edition contrasts missing: need 1:8 and 21:6")
+    else:
+        index = {v.get("verse"): v for v in variants if isinstance(v, dict)}
+        if set(index) != {"Revelation 1:8", "Revelation 21:6"}:
+            errors.append("Rev printed-edition verse attribution changed")
+        for verse, reading in index.items():
+            if reading.get("claimScope") != "PRINTED_EDITIONS_NOT_MANUSCRIPT_COLLATION":
+                errors.append(f"{verse}: printed-edition comparison improperly promoted")
+            if not URL.match(str(reading.get("sourceA", ""))) or not URL.match(str(reading.get("sourceB", ""))):
+                errors.append(f"{verse}: edition comparison URLs missing")
+        r18 = index.get("Revelation 1:8", {})
+        if (r18.get("editionA"), r18.get("editionB")) != ("SBLGNT 2010", "Stephanus TR1550"):
+            errors.append("Rev1:8 printed editions swapped")
+        if "SBLGNT has ὁ θεός, TR1550 does not" != r18.get("variant2"):
+            errors.append("Rev1:8 θεός difference lost")
+        r216 = index.get("Revelation 21:6", {})
+        if (r216.get("editionA"), r216.get("editionB")) != ("SBLGNT 2010", "THGNT 2017"):
+            errors.append("Rev21:6 printed editions swapped")
+        if "without εἰμι" not in str(r216.get("variant1", "")) and "no explicit εἰμι" not in str(r216.get("variant1", "")):
+            errors.append("Rev21:6 εἰμι omission must be explicit")
     return errors
 
 
@@ -447,7 +592,8 @@ def main() -> int:
     except (OSError, ValueError) as exc:
         print(f"FAIL: cannot read sources: {exc}", file=sys.stderr)
         return 1
-    issues = validate(data) + validate_extension(extension, data) + validate_source_access(sources)
+    issues = (validate(data) + validate_extension(extension, data) +
+              validate_source_access(sources) + validate_apocalyptic(data, extension))
     if issues:
         for issue in issues:
             print("FAIL:", issue, file=sys.stderr)
