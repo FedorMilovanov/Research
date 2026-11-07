@@ -24,7 +24,14 @@
 - [data/extension_attestation_contract_v1.json](data/extension_attestation_contract_v1.json) — четвёртый независимый контракт **14 исследовательских употреблений** одиннадцати дополнений, с отрицательными референтами Дан. 2:11/28 и контролем прав THGNT/SBLGNT.
 - [10_YHWH_AND_EL_PERSONAL_NAME_VS_GENERIC_DESIGNATION.md](10_YHWH_AND_EL_PERSONAL_NAME_VS_GENERIC_DESIGNATION.md) — **базовые ЯХВЕ и Эль**: Исх. 3:15, 6:2, 15:3; Исх. 34:6, Втор. 32:4/12, Ис. 43:10/12. ЯХВЕ как личное имя с прямыми формулами именования, Эль как контекстное существительное, в том числе **отрицание чужого бога**.
 - [data/core_name_lexeme_contract_v1.json](data/core_name_lexeme_contract_v1.json) — дополнительный независимый контракт **8 аттестаций** двух фундаментальных ID; и общий CI-контроль наличия хотя бы одного свидетельства у всех 42 кандидатов.
+- **[11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md](11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md) — единый обязательный план работ отдела**: 16 задач с постоянными `NG-00..NG-15`, 5 стадий, критерии приёмки, причины блокировки, очередность, source/claim/edition/rights gates и правила изменения статуса. **Каждую следующую волну начинать с проверки этого плана, обновлять выполненные задачи и не создавать блуждающих новых «планов».**
+- [data/names_research_workplan_v1.json](data/names_research_workplan_v1.json) — **machine-SSOT статусов задач**; человеческий план объясняет критерии. Состояния `DONE/IN_PROGRESS/OPEN/BLOCKED_*` проверяются отдельно.
+- **[12_TMS_BARRICK_CHOU_SOURCE_REVIEW.md](12_TMS_BARRICK_CHOU_SOURCE_REVIEW.md) — лекции и переводчики**: две части *God's Many Names* Joe/Иосифа Жакевича (TMS), его беседа с Абнером Чау о Yahweh, записи и учебные PDF Баррика, roundtable Chou/LSB, таймкоды, независимые источники и отметки WATCH_PENDING.
 - [Research — CURRENT_AUTHORITY](../CURRENT_AUTHORITY.md), [AGENT_RULES](../AGENT_RULES.md), [evidence policy](../data/repository-evidence-policy-v2.json). Отдел не конкурирует за корневую authority и не подменяет Product.
+
+## Постоянный контроль плана и научных заданий
+
+**Каноническое действие при старте каждого нового «Продолжай»:** сначала проверить [основной план](11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md) и [машинные состояния](data/names_research_workplan_v1.json), выбрать конкретный `NG-xx`, указать, что будет принято/что остаётся `HOLD`. При завершении волны **обновить оба файла и PR** с фактическими результатами. Просмотренный сайт или сторонняя расшифровка видео **не** означают просмотренного видео, а зелёный CI **не** означает критической колляции/публикационного допуска.
 
 ## Обязательные научные разграничения
 
