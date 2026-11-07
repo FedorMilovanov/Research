@@ -651,7 +651,8 @@
           "rootRelation": "thematic intertextual relation NOT shared lexical root",
           "attestationId": "ATT-BASE-RO-I-02",
           "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
-          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT",
+          "editionPinStatus": "URL_VERSION_PINNED"
         }
       ],
       "contextualAssertion": "Psalm23:1 YHWH is MY shepherd, root רעה, not Hagar's El Roi ראה; John10:11 Jesus explicitly says Ἐγώ εἰμι ὁ ποιμὴν ὁ καλός, with Christological canonical relation not identical original language or independent third deity."
@@ -996,7 +997,8 @@
           "transliterationStatus": "SABAOTH_NOT_SABBATH",
           "attestationId": "ATT-BASE-SABAOTH-05",
           "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
-          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT",
+          "editionPinStatus": "MULTI_EDITION_DISPLAY_REQUIRES_RECHECK"
         },
         {
           "verse": "Romans 9:29",
@@ -1017,7 +1019,8 @@
           "transliterationStatus": "SABAOTH_NOT_SABBATH",
           "attestationId": "ATT-BASE-SABAOTH-06",
           "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
-          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT",
+          "editionPinStatus": "MULTI_EDITION_DISPLAY_REQUIRES_RECHECK"
         }
       ],
       "contextualAssertion": "Hosts title in worship at Shiloh, David's human battle context, heavenly seraphim's hymn, Zechariah oracle and Greek NT transliteration. Greek Σαβαὼθ is not σάββατον (Sabbath). No single context fully resolves historical title origin."
@@ -2249,7 +2252,8 @@
           "ntBookRole": "GOSPEL_REPORTED_DIRECT_PRAYER",
           "attestationId": "ATT-BASE-ABBA-01",
           "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
-          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT",
+          "editionPinStatus": "URL_VERSION_PINNED"
         },
         {
           "locusId": "abba-rom8-adoption",
@@ -2271,7 +2275,8 @@
           "ntBookRole": "PAULINE_ADOPTION_EXHORTATION",
           "attestationId": "ATT-BASE-ABBA-02",
           "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
-          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT",
+          "editionPinStatus": "URL_VERSION_PINNED"
         },
         {
           "locusId": "abba-gal4-spirit",
@@ -2303,7 +2308,8 @@
           ],
           "attestationId": "ATT-BASE-ABBA-03",
           "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
-          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT",
+          "editionPinStatus": "MULTI_EDITION_DISPLAY_REQUIRES_RECHECK"
         }
       ],
       "contextualAssertion": "SBLGNT three occurrences same Greek transcription Αββα ὁ πατήρ but Mark Jesus prays, Rom believers cry κράζομεν, Gal Spirit of Son cries κρᾶζον. Article+nominative πατήρ functions as address; Aramaic derivation not separate manuscript in Hebrew script. English daddy exclusive lexical claim not established from Barr abstract.",
@@ -2354,7 +2360,8 @@
           "rightsState": "RIGHTS_UNKNOWN",
           "attestationId": "ATT-BASE-PANTOKRATOR-01",
           "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
-          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT",
+          "editionPinStatus": "URL_VERSION_PINNED"
         },
         {
           "verse": "Revelation 21:22",
@@ -2370,7 +2377,8 @@
           "rightsState": "RIGHTS_UNKNOWN",
           "attestationId": "ATT-BASE-PANTOKRATOR-02",
           "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
-          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT",
+          "editionPinStatus": "URL_VERSION_PINNED"
         }
       ],
       "referentBoundary": "Rev21:22 says ὁ κύριος ὁ θεός ὁ παντοκράτωρ and τὸ ἀρνίον; maintain distinction between grammatical expressions, no automatic collapse to Son as referent."
@@ -2428,7 +2436,8 @@
           "rightsState": "RIGHTS_UNKNOWN",
           "attestationId": "ATT-BASE-ALPHA-OMEGA-01",
           "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
-          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT",
+          "editionPinStatus": "URL_VERSION_PINNED"
         },
         {
           "verse": "Revelation 21:6",
@@ -2444,7 +2453,8 @@
           "rightsState": "RIGHTS_UNKNOWN",
           "attestationId": "ATT-BASE-ALPHA-OMEGA-02",
           "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
-          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT",
+          "editionPinStatus": "URL_VERSION_PINNED"
         },
         {
           "verse": "Revelation 22:13",
@@ -2460,7 +2470,8 @@
           "rightsState": "RIGHTS_UNKNOWN",
           "attestationId": "ATT-BASE-ALPHA-OMEGA-03",
           "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
-          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT",
+          "editionPinStatus": "URL_VERSION_PINNED"
         }
       ],
       "referentBoundary": "No universal globalSpeaker for same epithet; Rev 1:8 explicitly κύριος ὁ θεός; Rev21:5 speaker seated on throne; Rev22:13 Jesus identification is contextual (22:16 explicit) not a local 'λέγει Ἰησοῦς' in v13.",
@@ -2534,7 +2545,8 @@
           "speechTarget": "disciples on lake",
           "attestationId": "ATT-BASE-EGO-EIMI-01",
           "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
-          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT",
+          "editionPinStatus": "URL_VERSION_PINNED"
         },
         {
           "locusId": "ego-john8-preabraham",
@@ -2556,7 +2568,8 @@
           "speechTarget": "Jewish opponents",
           "attestationId": "ATT-BASE-EGO-EIMI-02",
           "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
-          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT",
+          "editionPinStatus": "URL_VERSION_PINNED"
         },
         {
           "locusId": "ego-john9-human",
@@ -2579,7 +2592,8 @@
           "speechTarget": "neighbors and onlookers",
           "attestationId": "ATT-BASE-EGO-EIMI-03",
           "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
-          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT",
+          "editionPinStatus": "URL_VERSION_PINNED"
         },
         {
           "locusId": "ego-john18-answer",
@@ -2601,7 +2615,8 @@
           "speechTarget": "arresting party",
           "attestationId": "ATT-BASE-EGO-EIMI-04",
           "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
-          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT",
+          "editionPinStatus": "URL_VERSION_PINNED"
         },
         {
           "locusId": "ego-john18-repeat",
@@ -2623,7 +2638,8 @@
           "speechTarget": "arresting party",
           "attestationId": "ATT-BASE-EGO-EIMI-05",
           "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
-          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT",
+          "editionPinStatus": "URL_VERSION_PINNED"
         },
         {
           "locusId": "ego-john18-again",
@@ -2645,7 +2661,8 @@
           "speechTarget": "arresting party",
           "attestationId": "ATT-BASE-EGO-EIMI-06",
           "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
-          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT",
+          "editionPinStatus": "URL_VERSION_PINNED"
         }
       ],
       "contextualAssertion": "John9:9 healed man uses exact Ἐγώ εἰμι while John8:58 Jesus places ἐγὼ εἰμί alongside πρὶν Ἀβραὰμ γενέσθαι. Lexical two-word formula itself not unique divine name; Christology rests on context/intertext, not exact quote of LXX Ex3:14 Ἐγώ εἰμι ὁ ὤν. John18:5,6,8 repeated identity answers."
@@ -2784,7 +2801,8 @@
           "receptionLayer": "NEW_TESTAMENT_CITATION_AND_TRANSLATION",
           "attestationId": "ATT-BASE-IMMANUEL-05",
           "editionId": "ED-SBLGNT-2010-BIBLEGATEWAY",
-          "sourceId": "SRC-SBLGNT-DIGITAL-NT"
+          "sourceId": "SRC-SBLGNT-DIGITAL-NT",
+          "editionPinStatus": "URL_VERSION_PINNED"
         }
       ],
       "contextualAssertion": "Isaiah 7:14 child-naming; 8:8 name invocation/allusion; 8:10 assertion for God with us; Matthew 1:23 Christian citation with 3pl καλέσουσιν and Greek gloss. MT naming verb וְקָרָאת grammatically debated; Matthew cannot be copied into MT. Rahlfs-Hanhart 2006 LXX Isaiah 7:14 prints καλέσεις (2sg) as compared with SBLGNT Matthew 1:23 καλέσουσιν (3pl); direct digital editions checked, underlying textual apparatus not collated."
