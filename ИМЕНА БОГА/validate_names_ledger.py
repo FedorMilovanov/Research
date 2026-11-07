@@ -16,6 +16,7 @@ from pathlib import Path
 LEDGER = Path(__file__).resolve().parent / "data" / "names_ledger_v1.json"
 EXTENSION = Path(__file__).resolve().parent / "data" / "names_extension_ledger_v1.json"
 SOURCES = Path(__file__).resolve().parent / "data" / "source_access_register_v1.json"
+ATTESTATION_CONTRACT = Path(__file__).resolve().parent / "data" / "attestation_contract_v1.json"
 ALLOWED_CLASSES = {"A1", "A2", "A3", "B1", "C", "D"}
 ALLOWED_ACCESS = {"FULL_OBJECT_VERIFIED", "PARTIAL_OBJECT", "CATALOG_ONLY", "LINK_ONLY", "NOT_ACQUIRED"}
 ALLOWED_LOCATOR = {"EXACT_LOCATOR_VERIFIED", "COARSE_LOCATOR_ONLY", "LOCATOR_MISSING"}
@@ -361,6 +362,9 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-NET-ISAIAH7": "ATTRIBUTED_TRANSLATION_NOTES",
     "SRC-LEUCHTER-JER33": "ATTRIBUTED_ACADEMIC_TEXTUAL_CRITICISM_ABSTRACT",
     "SRC-RASHI-EZEK48": "ATTRIBUTED_JEWISH_EXEGETICAL_RECEPTION",
+    "SRC-SBLGNT-NT-SABAOTH": "GREEK_NT_SEMITIC_TRANSLITERATION_WITNESS",
+    "SRC-SUCHARD-ELOHIM-2025": "ATTRIBUTED_SECONDARY_SEMITIC_MORPHOLOGY_HYPOTHESIS",
+    "SRC-CAMBRIDGE-GOD-PRONOUNS": "ATTRIBUTED_SECONDARY_GRAMMAR_AND_THEOLOGY",
 }
 
 
@@ -412,7 +416,7 @@ def validate_source_access(sources: dict) -> list[str]:
             errors.append(f"{prefix}: unknown HOLD token")
         if source.get("criticalEditionCollated") is not False:
             errors.append(f"{prefix}: falsely claims edition collation")
-        if source.get("rightsState") == "PUBLICATION_ELIGIBLE" and rid not in {"SRC-VANWOLDE-2021", "SRC-TR1550-REV18", "SRC-SBLGNT-CCBY-LICENSE"}:
+        if source.get("rightsState") == "PUBLICATION_ELIGIBLE" and rid not in {"SRC-VANWOLDE-2021", "SRC-TR1550-REV18", "SRC-SBLGNT-CCBY-LICENSE", "SRC-CAMBRIDGE-GOD-PRONOUNS"}:
             errors.append(f"{prefix}: evidence of a source-level license missing")
         if rid == "SRC-TR1550-REV18":
             if source.get("rightsState") != "PUBLICATION_ELIGIBLE" or "Public Domain" not in str(source.get("license", "")):
@@ -426,6 +430,22 @@ def validate_source_access(sources: dict) -> list[str]:
             errors.append(f"{prefix}: Aramaic text cannot be promoted to fully collated Hebrew or manuscript")
         if rid == "SRC-SBL-INTRO" and "manuscript collation" not in str(source.get("forbiddenUse", "")).lower():
             errors.append(f"{prefix}: SBLGNT introduction must remain non-manuscript provenance")
+        if rid == "SRC-CAMBRIDGE-GOD-PRONOUNS":
+            if (source.get("creator") != "Nicholas Adams"
+                or source.get("year") != 2024
+                or source.get("rightsState") != "PUBLICATION_ELIGIBLE"
+                or "CC BY 4.0" not in str(source.get("license", ""))
+                or source.get("licenseScope") != "CAMBRIDGE_ARTICLE_ONLY_NOT_BIBLICAL_TRANSLATIONS"):
+                errors.append(f"{prefix}: Nicholas Adams Cambridge CC BY article-only provenance lost")
+        if rid == "SRC-SBLGNT-NT-SABAOTH":
+            if (source.get("rightsState") != "RIGHTS_UNKNOWN"
+                or source.get("sourceRole") != "GREEK_NT_SEMITIC_TRANSLITERATION_WITNESS"):
+                errors.append(f"{prefix}: NT Sabaoth display rights/Greek transliteration role lost")
+        if rid == "SRC-SUCHARD-ELOHIM-2025":
+            if (source.get("evidenceClass") != "B1" or
+                source.get("rightsState") != "PERMISSION_REQUIRED" or
+                source.get("year") != 2025):
+                errors.append(f"{prefix}: Suchard 2025 hypothesis raised to unchecked primary authority")
         if rid == "SRC-RAHLFS-ISAIAH":
             if (source.get("rightsState") != "PERMISSION_REQUIRED"
                 or source.get("accessState") != "PARTIAL_OBJECT"
@@ -766,11 +786,148 @@ def validate_prophetic_namings(baseline: dict) -> list[str]:
     return errors
 
 
+SIX_TITLE_BASELINE_IDS = {
+    "sabaoth", "el-qanna", "tsur", "qedosh-yisrael", "adonai", "elohim"
+}
+SIX_TITLE_LOCK_FIELDS = (
+    "verse", "surface", "language", "edition", "contextRole",
+    "speaker", "referent", "isDivineDesignation", "sourceUrl",
+    "sourceAccess", "criticalEditionStatus", "rightsState", "publicationState"
+)
+
+
+def validate_six_title_attestations(baseline: dict, contract: dict) -> list[str]:
+    """Reusable reviewer-pinned occurrence comparison; not textual-critical collation.
+
+    Independent, committed contract must be reviewed together with ledger on
+    edits. No contract regeneration occurs in CI.
+    """
+    errors: list[str] = []
+    if (not isinstance(contract, dict) or contract.get("schemaVersion") != 1
+        or contract.get("corpusId") != "NAMES_DIVINE_TITLES_FALSE_REFERENT_ATTESTATION_CONTRACT"):
+        return ["six-titles: malformed versioned attestation contract"]
+    if set(contract.get("baselineIds", [])) != SIX_TITLE_BASELINE_IDS:
+        errors.append("six-titles: fixed baseline ID set changed")
+    if tuple(contract.get("requiredFields", [])) != SIX_TITLE_LOCK_FIELDS:
+        errors.append("six-titles: core locked-field schema weakened")
+    expect = contract.get("lockedAttestations", [])
+    if not isinstance(expect, list):
+        return errors + ["six-titles: locked witnesses missing"]
+    expected_rows: dict[tuple[str, str], dict] = {}
+    for idx, item in enumerate(expect):
+        if not isinstance(item, dict):
+            errors.append(f"six-titles: locked witness {idx} not an object")
+            continue
+        rid, verse = item.get("baselineId"), item.get("verse")
+        key = (str(rid), str(verse))
+        if rid not in SIX_TITLE_BASELINE_IDS or key in expected_rows:
+            errors.append(f"six-titles: duplicate/unreviewed contract key {key}")
+        expected_rows[key] = item
+        if any(k not in item for k in SIX_TITLE_LOCK_FIELDS):
+            errors.append(f"six-titles: required original-script field absent in contract {key}")
+    b_rows = baseline.get("records", [])
+    bmap = {r.get("id"):r for r in b_rows if isinstance(r, dict)} if isinstance(b_rows, list) else {}
+    actual: dict[tuple[str,str],dict] = {}
+    for rid in SIX_TITLE_BASELINE_IDS:
+        arr = bmap.get(rid, {}).get("attestations")
+        if not isinstance(arr, list):
+            errors.append(f"six-titles: missing occurrence list for {rid}")
+            continue
+        for occurrence in arr:
+            if not isinstance(occurrence,dict):
+                errors.append(f"six-titles: invalid occurrence for {rid}")
+                continue
+            key = (rid,str(occurrence.get("verse")))
+            if key in actual:
+                errors.append(f"six-titles: duplicate occurrence {key}")
+            actual[key] = occurrence
+            if occurrence.get("sourceAccess") != "DIGITAL_VERSE_SURFACE_CHECKED":
+                errors.append(f"six-titles: unverified source access {key}")
+            if occurrence.get("criticalEditionStatus") != "NOT_COLLATED":
+                errors.append(f"six-titles: false manuscript critical collation {key}")
+            if occurrence.get("publicationState") != "BLOCKED":
+                errors.append(f"six-titles: unauthorized Product promotion {key}")
+            form = occurrence.get("surface")
+            if not isinstance(form, str):
+                errors.append(f"six-titles: original surface missing {key}")
+            else:
+                errors.extend(unicode_surface_issues(f"six-titles/{key}", form))
+                lang = occurrence.get("language")
+                if lang == "greek" and not GREEK.search(form):
+                    errors.append(f"six-titles: Greek script absent in {key}")
+                if lang == "hebrew" and not HEBREW.search(form):
+                    errors.append(f"six-titles: Hebrew script absent in {key}")
+            if not URL.match(str(occurrence.get("sourceUrl",""))):
+                errors.append(f"six-titles: invalid exact verse locator {key}")
+    if len(expected_rows) != 22 or len(actual) != 22:
+        errors.append("six-titles: 22 reviewed contextual occurrences required")
+    if set(expected_rows) != set(actual):
+        errors.append("six-titles: occurrence IDs/verse set changed")
+    for key, exp in expected_rows.items():
+        obj = actual.get(key)
+        if obj is None:
+            continue
+        for fld in SIX_TITLE_LOCK_FIELDS:
+            if obj.get(fld) != exp.get(fld) or fld not in obj:
+                errors.append(f"six-titles: {key} field {fld} differs from reviewed witness contract")
+    audit = baseline.get("auditProtocol", {}).get("semanticsAndReferents", {})
+    if (set(audit.get("ids", [])) != SIX_TITLE_BASELINE_IDS
+        or audit.get("totalAttestations") != 22
+        or audit.get("publicationEligible") != 0
+        or audit.get("criticalCollationStatus") != "NOT_COLLATED"):
+        errors.append("six-titles: phase counters or publication hold changed")
+    if (contract.get("counts") !=
+        {"records": 6, "occurrences": 22, "publicationEligible": 0}):
+        errors.append("six-titles: pinned contract counters changed")
+    # Cross-object semantic prohibitions not solely controlled by a JSON fixture.
+    byid: dict[str,dict[str,dict]] = {}
+    for (rid,verse), item in actual.items():
+        byid.setdefault(rid, {})[verse] = item
+    def obj(rid: str, verse: str) -> dict:
+        return byid.get(rid, {}).get(verse, {})
+    if obj("sabaoth", "1 Samuel 1:3").get("surface") != "לַיהוָה צְבָאוֹת":
+        errors.append("six-titles: 1 Sam 1:3 lamed preposition removed")
+    if obj("sabaoth","James 5:4").get("surface") != "Κυρίου Σαβαὼθ":
+        errors.append("six-titles: James genitive Greek Sabaoth altered")
+    if obj("sabaoth","Romans 9:29").get("surface") != "κύριος Σαβαὼθ":
+        errors.append("six-titles: Romans nominative Greek Sabaoth altered")
+    if obj("el-qanna","Exodus 34:14").get("nameClause") != "קַנָּא שְׁמוֹ":
+        errors.append("six-titles: Exodus 34:14 naming formula suppressed")
+    if obj("el-qanna","Deuteronomy 4:24").get("selfNamingInVerse") is not False:
+        errors.append("six-titles: Deut 4:24 wrongly promoted to new naming act")
+    if (obj("tsur","Deuteronomy 32:31").get("referentClass") != "MIXED_TRUE_GOD_AND_OTHER_ROCK"
+        or obj("tsur","Deuteronomy 32:37").get("isDivineDesignation") is not False):
+        errors.append("six-titles: foreign rock falsely identified as YHWH")
+    if obj("qedosh-yisrael","Isaiah 1:4").get("grammaticalMarker") != "אֶת-":
+        errors.append("six-titles: Isaiah 1:4 object marker deleted")
+    if obj("adonai","Exodus 34:9").get("tokenOccurrenceCount") != 2:
+        errors.append("six-titles: Ex 34:9 repeated Adonai token count lost")
+    controls = bmap.get("adonai", {}).get("negativeControls", [])
+    if not any(isinstance(x,dict) and x.get("surface") == "אֲדֹנִי"
+               and "Abraham" in x.get("referent","") for x in controls if isinstance(controls,list)):
+        errors.append("six-titles: Genesis 23 human adoni negative control lost")
+    if obj("adonai","Psalms 8:2 MT").get("surface") != "יְהוָה אֲדֹנֵינוּ":
+        errors.append("six-titles: Psalm 8 suffixed Adonenu collapsed into Adonai")
+    g = obj("elohim","Genesis 1:1")
+    if (g.get("verbAgreement") != "בָּרָא Qal perfect 3ms (singular)"
+        or g.get("referentClass") != "SINGULAR_CREATOR_GOD"):
+        errors.append("six-titles: singular agreement of Gen 1:1 creator lost")
+    other = obj("elohim","Exodus 20:2 MT (English 20:3)")
+    if (other.get("referentClass") != "OTHER_GODS"
+        or other.get("isDivineDesignation") is not False
+        or other.get("numbering") != {
+            "mechonMamreHebrew": "Exodus 20:2",
+            "commonEnglishRussian": "Exodus 20:3"}):
+        errors.append("six-titles: Exodus 20 false gods or versification conflated")
+    return errors
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--ledger", type=Path, default=LEDGER)
     parser.add_argument("--extension", type=Path, default=EXTENSION)
     parser.add_argument("--sources", type=Path, default=SOURCES)
+    parser.add_argument("--attestation-contract", type=Path, default=ATTESTATION_CONTRACT)
     args = parser.parse_args()
     try:
         with args.ledger.open("r", encoding="utf-8") as stream:
@@ -790,9 +947,16 @@ def main() -> int:
     except (OSError, ValueError) as exc:
         print(f"FAIL: cannot read sources: {exc}", file=sys.stderr)
         return 1
+    try:
+        with args.attestation_contract.open("r", encoding="utf-8") as stream:
+            title_contract = json.load(stream)
+    except (OSError, ValueError) as exc:
+        print(f"FAIL: cannot read attestation contract: {exc}", file=sys.stderr)
+        return 1
     issues = (validate(data) + validate_extension(extension, data) +
               validate_source_access(sources) + validate_apocalyptic(data, extension) +
-              validate_prophetic_namings(data))
+              validate_prophetic_namings(data) +
+              validate_six_title_attestations(data, title_contract))
     if issues:
         for issue in issues:
             print("FAIL:", issue, file=sys.stderr)
