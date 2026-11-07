@@ -269,5 +269,27 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                             for issue in validate_source_access(data)))
 
 
+    def test_daniel_absolute_emphatic_parsing_cannot_be_swapped(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(r for r in data["records"] if r["id"] == "atiq-yomin")
+        row["lexicalNote"]["parsingEvidence"]["analyses"][0]["state"] = "emphatic"
+        self.assertTrue(any("absolute/emphatic plural parsing" in issue
+                            for issue in validate_apocalyptic(data, self.extension)))
+
+    def test_confessional_daniel_grammar_cannot_be_called_primary_lexicon(self) -> None:
+        data = copy.deepcopy(self.sources)
+        row = next(r for r in data["records"] if r["id"] == "SRC-JUDISCH-DAN7-ARAMAIC")
+        row["primaryLexiconStatus"] = "BDB_FULL_TEXT_COLLATED"
+        self.assertTrue(any("primary lexicon verification" in issue
+                            for issue in validate_source_access(data)))
+
+    def test_daniel_grammar_is_still_secondary_B1(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(r for r in data["records"] if r["id"] == "atiq-yomin")
+        row["lexicalNote"]["parsingEvidence"]["evidenceClass"] = "A1"
+        self.assertTrue(any("erroneously promoted" in issue
+                            for issue in validate_apocalyptic(data, self.extension)))
+
+
 if __name__ == "__main__":
     unittest.main()
