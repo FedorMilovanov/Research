@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "corpusId": "NAMES_OF_GOD_CLAIM_LEVEL_EVIDENCE",
   "createdAt": "2026-11-07",
-  "scope": "61 source-linked research-held claims and 46 typed relations, 77/105 attestation-linked; El Elyon narrator/priest blessing/oath and El Qanna explicit-name vs Moses epithet safeguards; no critical manuscript collation or Product clearance.",
+  "scope": "66 research-held claims; 52 typed relations; 83/105 existing original-language attestation IDs claim linked, with Daniel 7 ancient-days Aramaic distinctions and Revelation greeting/direct speech/temple narration separated.",
   "editorialPolicy": "Never infer Product approval from link completeness, never replace a cited verse or alternative theory silently; new claims require independent review.",
   "records": [
     {
@@ -591,10 +591,11 @@
     {
       "claimId": "CLM-REV1-8-LORD-GOD-ALPHA",
       "claimType": "SPEECH_AGENT_CONTROL",
-      "statement": "Rev1:8 SBLGNT directly says λέγει κύριος, ὁ θεός and applies Alpha/Omega and Almighty to the Lord God. In this printed edition the phrase ἀρχὴ καὶ τέλος is not present in this verse. The in-verse attribution is explicit, while an equation with the speaker in Rev22:13 would require separate argument.",
+      "statement": "Rev1:8 SBLGNT directly says λέγει κύριος, ὁ θεός and applies Alpha/Omega, the One who is/was/is coming, and Almighty to the Lord God. The newly linked ATT-EXT-HO-ON-ERCHOMENOS-02 records the same explicit SBLGNT Lord-God speaker cue. In this printed edition the phrase ἀρχὴ καὶ τέλος is not present in this verse. The in-verse attribution is explicit, while an equation with the speaker in Rev22:13 would require separate argument.",
       "attestationIds": [
         "ATT-BASE-ALPHA-OMEGA-01",
-        "ATT-BASE-PANTOKRATOR-01"
+        "ATT-BASE-PANTOKRATOR-01",
+        "ATT-EXT-HO-ON-ERCHOMENOS-02"
       ],
       "sourceIds": [
         "SRC-SBLGNT-DIGITAL-NT",
@@ -612,7 +613,8 @@
         "Review speaker handoffs in Rev22:6–16 including angels, Christ and John",
         "Attribute commentary conclusions; compare alternate academic readings and reception history",
         "Evaluate permissions before Product/Arena publication"
-      ]
+      ],
+      "linkedGreetingVersusSpeechStatus": "EXPLICIT_GOD_SPEECH_IN_VERSE8_NOT_JOHN_GREETING_IN_VERSE4"
     },
     {
       "claimId": "CLM-REV21-6-THRONE-SPEAKER",
@@ -1401,6 +1403,127 @@
         "Preserve creator/possessor translation disagreement for קֹנֵה and identify modern secondary hypotheses as attributed, not verified manuscript variants",
         "Obtain independent exegetical review, source-specific rights and separate Product editorial approval"
       ]
+    },
+    {
+      "claimId": "CLM-DAN7-9-ANCIENT-THRONED-JUDGE",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "attestationIds": [
+        "ATT-BASE-ATIQ-YOMIN-01"
+      ],
+      "sourceIds": [
+        "SRC-DANIEL-ARAMAIC",
+        "SRC-JUDISCH-DAN7-ARAMAIC"
+      ],
+      "statement": "Daniel 7:9 Aramaic has עַתִּיק יוֹמִין as the enthroned Ancient of Days in Daniel's vision, with throne/fire judicial imagery continuing into v10. Daniel narrates a figure he sees; the figure does not pronounce a new name for himself here. The יוֹמִין plural-absolute morphological parsing is an attributed secondary Judisch analysis (citing lexicon not yet checked), not an independently collated BDB conclusion.",
+      "grammaticalEvidenceStatus": "PUBLISHED_DIGITAL_FORM_SECONDARY_ABSOLUTE_PARSE_ONLY",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Inspect independent Aramaic grammar and lexicon page; Judisch's absolute/emphatic plural parsing remains secondary, not directly consulted BDB",
+        "Check independent manuscripts and edited Greek textual apparatus; only pinned printed digital MT/SBLGNT surfaces inspected",
+        "Distinguish biblical scene participants and narration/speech attribution before assigning Christian trinitarian interpretation",
+        "Review diverse historical reception, source permissions, and separate Product editorial approval"
+      ]
+    },
+    {
+      "claimId": "CLM-DAN7-13-ANCIENT-SON-OF-MAN-DISTINCT",
+      "claimType": "CANONICAL_INTERTEXT_BOUNDARY",
+      "attestationIds": [
+        "ATT-BASE-ATIQ-YOMIN-02"
+      ],
+      "sourceIds": [
+        "SRC-DANIEL-ARAMAIC",
+        "SRC-JUDISCH-DAN7-ARAMAIC"
+      ],
+      "statement": "Daniel 7:13 Aramaic עַתִּיק יוֹמַיָּא designates the Ancient of Days to whom another visionary figure כְּבַר אֱנָשׁ ('like a son of man') comes and is brought near. These are distinct literary participants in this scene; later NT christological identification is an interpretive/reception claim, not a claim that Ancient of Days and the approaching figure are one and the same grammatical subject in v13. Judisch's emphatic-plural parse is attributed secondary grammar.",
+      "grammaticalEvidenceStatus": "PUBLISHED_DIGITAL_FORM_SECONDARY_EMPHATIC_PARSE_ONLY",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Inspect independent Aramaic grammar and lexicon page; Judisch's absolute/emphatic plural parsing remains secondary, not directly consulted BDB",
+        "Check independent manuscripts and edited Greek textual apparatus; only pinned printed digital MT/SBLGNT surfaces inspected",
+        "Distinguish biblical scene participants and narration/speech attribution before assigning Christian trinitarian interpretation",
+        "Review diverse historical reception, source permissions, and separate Product editorial approval"
+      ]
+    },
+    {
+      "claimId": "CLM-DAN7-22-ANCIENT-GRANTS-JUDGMENT",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "attestationIds": [
+        "ATT-BASE-ATIQ-YOMIN-03"
+      ],
+      "sourceIds": [
+        "SRC-DANIEL-ARAMAIC",
+        "SRC-JUDISCH-DAN7-ARAMAIC"
+      ],
+      "statement": "Daniel 7:22 repeats עַתִּיק יוֹמַיָּא, describing the Ancient of Days coming while judgment is given for the holy ones of the Most High. This is Daniel's narrated vision with an explicit judgment/outcome, not a recorded first-person direct quote, and not a new separate proper name. The same recorded form as v13 does not collapse the scene into the same action as v13 or prove any later Christian theological identification solely from morphology.",
+      "grammaticalEvidenceStatus": "PUBLISHED_DIGITAL_FORM_SECONDARY_EMPHATIC_PARSE_ONLY",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Inspect independent Aramaic grammar and lexicon page; Judisch's absolute/emphatic plural parsing remains secondary, not directly consulted BDB",
+        "Check independent manuscripts and edited Greek textual apparatus; only pinned printed digital MT/SBLGNT surfaces inspected",
+        "Distinguish biblical scene participants and narration/speech attribution before assigning Christian trinitarian interpretation",
+        "Review diverse historical reception, source permissions, and separate Product editorial approval"
+      ]
+    },
+    {
+      "claimId": "CLM-REV1-4-JOHN-GREETING-TRIAD",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "attestationIds": [
+        "ATT-EXT-HO-ON-ERCHOMENOS-01"
+      ],
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT",
+        "SRC-SBL-REVELATION"
+      ],
+      "statement": "In printed SBLGNT Revelation 1:4–5 John gives an epistolary greeting listing ἀπὸ ὁ ὢν καὶ ὁ ἦν καὶ ὁ ἐρχόμενος, then from the seven spirits before the throne, then ἀπὸ Ἰησοῦ Χριστοῦ. The formula is a source of John's greeting, NOT a direct utterance spoken in v4 by the named deity; the attestation's legacy speaker field labels designation referent rather than literal narrator, recorded separately in discourseRoles.narrativeSpeaker. Preserve the unusual printed nominative article after ἀπὸ, do not normalize it silently; triadic sources are syntactically distinguished, and theological links to Exodus 3:14 need independent argument.",
+      "speakerEvidenceLevel": "JOHN_GREETING_NOT_DIRECT_DIVINE_UTTERANCE",
+      "grammaticalEvidenceStatus": "SBLGNT_NOMINATIVE_AFTER_APO_VERIFIED",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Inspect independent Aramaic grammar and lexicon page; Judisch's absolute/emphatic plural parsing remains secondary, not directly consulted BDB",
+        "Check independent manuscripts and edited Greek textual apparatus; only pinned printed digital MT/SBLGNT surfaces inspected",
+        "Distinguish biblical scene participants and narration/speech attribution before assigning Christian trinitarian interpretation",
+        "Review diverse historical reception, source permissions, and separate Product editorial approval"
+      ]
+    },
+    {
+      "claimId": "CLM-REV21-22-LORD-GOD-LAMB-TEMPLE",
+      "claimType": "SPEECH_AGENT_CONTROL",
+      "attestationIds": [
+        "ATT-BASE-PANTOKRATOR-02"
+      ],
+      "sourceIds": [
+        "SRC-SBLGNT-DIGITAL-NT",
+        "SRC-SBL-REVELATION"
+      ],
+      "statement": "Revelation 21:22 SBLGNT is John's first-person description that he saw no temple in the New Jerusalem, because ὁ κύριος, ὁ θεός, ὁ παντοκράτωρ and τὸ ἀρνίον are its temple. The printed text grammatically distinguishes Lord God Almighty and the Lamb while relating both to temple reality; these are not interchangeable referential strings, and the verse is not a new direct speech by Lord God or a proof that their shared temple role means no Christology.",
+      "speakerEvidenceLevel": "JOHN_CITY_VISION_NARRATION",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Inspect independent Aramaic grammar and lexicon page; Judisch's absolute/emphatic plural parsing remains secondary, not directly consulted BDB",
+        "Check independent manuscripts and edited Greek textual apparatus; only pinned printed digital MT/SBLGNT surfaces inspected",
+        "Distinguish biblical scene participants and narration/speech attribution before assigning Christian trinitarian interpretation",
+        "Review diverse historical reception, source permissions, and separate Product editorial approval"
+      ]
     }
   ],
   "semanticRelations": [
@@ -1770,6 +1893,54 @@
       "toClaimId": "CLM-QANNA-EX34-14-NAME-CHARACTER",
       "relationType": "CONTRASTS_REFERENT",
       "rationale": "Exodus 34:14 distinguishes another worshiped god (לְאֵל אַחֵר) from YHWH, whose name/character is jealous; generic el cannot always be treated as divine YHWH designation.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-DAN7-9-13-APPROACH-DISTINCTION",
+      "fromClaimId": "CLM-DAN7-9-ANCIENT-THRONED-JUDGE",
+      "toClaimId": "CLM-DAN7-13-ANCIENT-SON-OF-MAN-DISTINCT",
+      "relationType": "CONTRASTS_REFERENT",
+      "rationale": "Ancient of Days is the enthroned recipient of approach by a distinct 'like a son of man' visionary figure; theological later reception not identical to grammar.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-DAN7-13-22-ROLE-DISTINCTION",
+      "fromClaimId": "CLM-DAN7-13-ANCIENT-SON-OF-MAN-DISTINCT",
+      "toClaimId": "CLM-DAN7-22-ANCIENT-GRANTS-JUDGMENT",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "Ancient of Days in v13 is approached; in v22 arrives and judgment benefits the saints. Shared title does not create a single scene/action nor fix later Christological reception.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-REV1-4-REV1-8-GREETING-VS-QUOTE",
+      "fromClaimId": "CLM-REV1-4-JOHN-GREETING-TRIAD",
+      "toClaimId": "CLM-REV1-8-LORD-GOD-ALPHA",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Rev1:4 John's greeting contains sources introduced by ἀπὸ; Rev1:8 has the explicit quote attribution λέγει κύριος, ὁ θεός.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-REV1-8-REV21-22-DIVINE-TITLE",
+      "fromClaimId": "CLM-REV1-8-LORD-GOD-ALPHA",
+      "toClaimId": "CLM-REV21-22-LORD-GOD-LAMB-TEMPLE",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Rev1:8 God is directly named speaker whereas Rev21:22 John narrates a temple vision, with Lord God Almighty alongside Lamb.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-REV21-6-REV21-22-NARRATOR-CUE",
+      "fromClaimId": "CLM-REV21-6-THRONE-SPEAKER",
+      "toClaimId": "CLM-REV21-22-LORD-GOD-LAMB-TEMPLE",
+      "relationType": "CONTRASTS_SPEAKER_EVIDENCE",
+      "rationale": "Rev21:5–6 direct speech of throne-sitter introduced by narrator versus Rev21:22 John narrating the city's absent temple.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-DAN7-13-REV21-22-ONTOLOGY-CAUTION",
+      "fromClaimId": "CLM-DAN7-13-ANCIENT-SON-OF-MAN-DISTINCT",
+      "toClaimId": "CLM-REV21-22-LORD-GOD-LAMB-TEMPLE",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "Daniel's Ancient and an approaching son-of-man-like figure, and Revelation's Lord God/Lamb coordinated as temple, are literary scenes with distinct lexemes; cross-testament Christology requires separate evidence, not automatic lexical identity.",
       "publicationState": "BLOCKED"
     }
   ]

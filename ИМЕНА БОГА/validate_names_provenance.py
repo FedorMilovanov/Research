@@ -54,6 +54,9 @@ PINNED_GREEK_SOURCE_URLS = {
     "ATT-BASE-EGO-EIMI-04": "https://www.biblegateway.com/passage/?search=John+18&version=SBLGNT",
     "ATT-BASE-EGO-EIMI-05": "https://www.biblegateway.com/passage/?search=John+18&version=SBLGNT",
     "ATT-BASE-EGO-EIMI-06": "https://www.biblegateway.com/passage/?search=John+18&version=SBLGNT",
+    "ATT-EXT-HO-ON-ERCHOMENOS-01": "https://www.biblegateway.com/passage/?search=Revelation+1%3A4-8&version=SBLGNT",
+    "ATT-EXT-HO-ON-ERCHOMENOS-02": "https://www.biblegateway.com/passage/?search=Revelation+1%3A4-8&version=SBLGNT",
+    "ATT-BASE-PANTOKRATOR-02": "https://www.biblegateway.com/passage/?search=Revelation+21&version=SBLGNT",
 }
 
 
@@ -546,6 +549,87 @@ ELYON_QANNA_SOURCE_TRIANGLES = {
     "CLM-ELYON-GEN14-19-20-PRIEST-BLESS-DOXOLOGY": {"SRC-MT-MECHON", "SRC-NET-GEN14"},
     "CLM-ELYON-GEN14-22-ABRAM-YHWH-OATH": {"SRC-MT-MECHON", "SRC-NET-GEN14", "SRC-CARGILL-2019"},
 }
+REQUIRED_DAN7_REV_CONTEXT_CLAIMS = {
+    "CLM-DAN7-9-ANCIENT-THRONED-JUDGE",
+    "CLM-DAN7-13-ANCIENT-SON-OF-MAN-DISTINCT",
+    "CLM-DAN7-22-ANCIENT-GRANTS-JUDGMENT",
+    "CLM-REV1-4-JOHN-GREETING-TRIAD",
+    "CLM-REV21-22-LORD-GOD-LAMB-TEMPLE",
+}
+# Independent digital text witness roles, not silently reconstructed manuscript history.
+DAN7_REV_CONTEXT_GUARDS = {
+    "ATT-BASE-ATIQ-YOMIN-01": {
+        "verse": "Daniel 7:9",
+        "language": "aramaic",
+        "surface": "עַתִּיק יוֹמִין",
+        "speaker": "Daniel, reporting visionary scene",
+        "speakerEvidence": "direct_scene_narration",
+        "referent": "Ancient of Days (sitting judge)",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt3407.htm",
+    },
+    "ATT-BASE-ATIQ-YOMIN-02": {
+        "verse": "Daniel 7:13",
+        "language": "aramaic",
+        "surface": "עַתִּיק יוֹמַיָּא",
+        "speaker": "Daniel, reporting visionary scene",
+        "speakerEvidence": "direct_scene_narration",
+        "referent": "Ancient of Days (approached by figure like son of man)",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt3407.htm",
+    },
+    "ATT-BASE-ATIQ-YOMIN-03": {
+        "verse": "Daniel 7:22",
+        "language": "aramaic",
+        "surface": "עַתִּיק יוֹמַיָּא",
+        "speaker": "Daniel, reporting visionary scene",
+        "speakerEvidence": "direct_scene_narration",
+        "referent": "Ancient of Days (coming to grant judgment for saints)",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt3407.htm",
+    },
+    "ATT-EXT-HO-ON-ERCHOMENOS-01": {
+        "verse": "Revelation 1:4",
+        "language": "greek",
+        "surface": "ὁ ὢν καὶ ὁ ἦν καὶ ὁ ἐρχόμενος",
+        "speaker": "the One who is/was/is coming, separately listed from Jesus Christ in 1:5",
+        "speakerCue": "John's greeting distinguishes three ἀπό sources",
+        "sourceUrl": "https://www.biblegateway.com/passage/?search=Revelation+1%3A4-8&version=SBLGNT",
+        "editionPinStatus": "URL_VERSION_PINNED",
+    },
+    "ATT-EXT-HO-ON-ERCHOMENOS-02": {
+        "verse": "Revelation 1:8",
+        "language": "greek",
+        "surface": "ὁ ὢν καὶ ὁ ἦν καὶ ὁ ἐρχόμενος",
+        "speaker": "Lord God",
+        "speakerCue": "λέγει κύριος, ὁ θεός",
+        "sourceUrl": "https://www.biblegateway.com/passage/?search=Revelation+1%3A4-8&version=SBLGNT",
+        "editionPinStatus": "URL_VERSION_PINNED",
+    },
+    "ATT-BASE-PANTOKRATOR-02": {
+        "verse": "Revelation 21:22",
+        "language": "greek",
+        "surface": "ὁ παντοκράτωρ",
+        "speaker": "John, description of city",
+        "speakerEvidence": "vision_narration",
+        "referent": "Lord God Almighty, mentioned distinctly from the Lamb",
+        "sourceUrl": "https://www.biblegateway.com/passage/?search=Revelation+21&version=SBLGNT",
+        "editionPinStatus": "URL_VERSION_PINNED",
+    },
+}
+DAN7_REV_CLAIM_LEVEL_GUARDS = {
+    "CLM-DAN7-9-ANCIENT-THRONED-JUDGE": {"grammaticalEvidenceStatus": "PUBLISHED_DIGITAL_FORM_SECONDARY_ABSOLUTE_PARSE_ONLY"},
+    "CLM-DAN7-13-ANCIENT-SON-OF-MAN-DISTINCT": {"grammaticalEvidenceStatus": "PUBLISHED_DIGITAL_FORM_SECONDARY_EMPHATIC_PARSE_ONLY"},
+    "CLM-DAN7-22-ANCIENT-GRANTS-JUDGMENT": {"grammaticalEvidenceStatus": "PUBLISHED_DIGITAL_FORM_SECONDARY_EMPHATIC_PARSE_ONLY"},
+    "CLM-REV1-4-JOHN-GREETING-TRIAD": {
+        "speakerEvidenceLevel": "JOHN_GREETING_NOT_DIRECT_DIVINE_UTTERANCE",
+        "grammaticalEvidenceStatus": "SBLGNT_NOMINATIVE_AFTER_APO_VERIFIED",
+    },
+    "CLM-REV21-22-LORD-GOD-LAMB-TEMPLE": {"speakerEvidenceLevel": "JOHN_CITY_VISION_NARRATION"},
+    "CLM-REV1-8-LORD-GOD-ALPHA": {"linkedGreetingVersusSpeechStatus": "EXPLICIT_GOD_SPEECH_IN_VERSE8_NOT_JOHN_GREETING_IN_VERSE4"},
+}
+DAN7_REV_SECONDARY_SOURCES = {
+    "CLM-DAN7-9-ANCIENT-THRONED-JUDGE": {"SRC-DANIEL-ARAMAIC", "SRC-JUDISCH-DAN7-ARAMAIC"},
+    "CLM-DAN7-13-ANCIENT-SON-OF-MAN-DISTINCT": {"SRC-DANIEL-ARAMAIC", "SRC-JUDISCH-DAN7-ARAMAIC"},
+    "CLM-DAN7-22-ANCIENT-GRANTS-JUDGMENT": {"SRC-DANIEL-ARAMAIC", "SRC-JUDISCH-DAN7-ARAMAIC"},
+}
 # The original reviewed seeds are a required minimum, not a cap on future work.
 # Additional claims must pass the same foreign-key, editorial and publication gates.
 ALLOWED_CLAIM_TYPES = {
@@ -674,6 +758,12 @@ REQUIRED_SEMANTIC_RELATIONS = {
     "REL-ELYON-YHWH-ORIGIN-BOUNDARY": ("CLM-ELYON-GEN14-18-PRIEST-NARRATOR", "CLM-ELYON-GEN14-22-ABRAM-YHWH-OATH", "LIMITS_INFERENCE"),
     "REL-QANNA-NAME-VERSUS-ATTRIBUTE": ("CLM-QANNA-EX34-14-NAME-CHARACTER", "CLM-QANNA-DEUT4-24-MOSES-WARNING", "CONTRASTS_SPEAKER_EVIDENCE"),
     "REL-QANNA-OTHER-GOD-CONTRAST": ("CLM-EX20-OTHER-GODS-NEGATIVE", "CLM-QANNA-EX34-14-NAME-CHARACTER", "CONTRASTS_REFERENT"),
+    "REL-DAN7-9-13-APPROACH-DISTINCTION": ("CLM-DAN7-9-ANCIENT-THRONED-JUDGE", "CLM-DAN7-13-ANCIENT-SON-OF-MAN-DISTINCT", "CONTRASTS_REFERENT"),
+    "REL-DAN7-13-22-ROLE-DISTINCTION": ("CLM-DAN7-13-ANCIENT-SON-OF-MAN-DISTINCT", "CLM-DAN7-22-ANCIENT-GRANTS-JUDGMENT", "LIMITS_INFERENCE"),
+    "REL-REV1-4-REV1-8-GREETING-VS-QUOTE": ("CLM-REV1-4-JOHN-GREETING-TRIAD", "CLM-REV1-8-LORD-GOD-ALPHA", "CONTRASTS_SPEAKER_EVIDENCE"),
+    "REL-REV1-8-REV21-22-DIVINE-TITLE": ("CLM-REV1-8-LORD-GOD-ALPHA", "CLM-REV21-22-LORD-GOD-LAMB-TEMPLE", "CONTRASTS_SPEAKER_EVIDENCE"),
+    "REL-REV21-6-REV21-22-NARRATOR-CUE": ("CLM-REV21-6-THRONE-SPEAKER", "CLM-REV21-22-LORD-GOD-LAMB-TEMPLE", "CONTRASTS_SPEAKER_EVIDENCE"),
+    "REL-DAN7-13-REV21-22-ONTOLOGY-CAUTION": ("CLM-DAN7-13-ANCIENT-SON-OF-MAN-DISTINCT", "CLM-REV21-22-LORD-GOD-LAMB-TEMPLE", "LIMITS_INFERENCE"),
 }
 CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-EX3-15-DIVINE-NAME": {"ATT-BASE-YHWH-01"},
@@ -706,7 +796,7 @@ CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-ISA8-8-IMMANUEL-ADDRESS": {"ATT-BASE-IMMANUEL-03"},
     "CLM-ISA8-10-DIVINE-PRESENCE": {"ATT-BASE-IMMANUEL-04"},
     "CLM-MATT1-23-IMMANUEL-GLOSS": {"ATT-BASE-IMMANUEL-05"},
-    "CLM-REV1-8-LORD-GOD-ALPHA":{"ATT-BASE-ALPHA-OMEGA-01","ATT-BASE-PANTOKRATOR-01"},
+    "CLM-REV1-8-LORD-GOD-ALPHA":{"ATT-BASE-ALPHA-OMEGA-01","ATT-BASE-PANTOKRATOR-01","ATT-EXT-HO-ON-ERCHOMENOS-02"},
     "CLM-REV21-6-THRONE-SPEAKER":{"ATT-BASE-ALPHA-OMEGA-02","ATT-EXT-ARCHE-TELOS-01"},
     "CLM-REV22-13-CHRISTOLOGICAL-INFERENCE":{"ATT-BASE-ALPHA-OMEGA-03","ATT-EXT-ARCHE-TELOS-02"},
     "CLM-REV1-8-SBL-TR-EXPANSION":{"ATT-BASE-ALPHA-OMEGA-01"},
@@ -743,6 +833,11 @@ CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-ELYON-GEN14-22-ABRAM-YHWH-OATH": {"ATT-BASE-EL-ELYON-04"},
     "CLM-QANNA-EX34-14-NAME-CHARACTER": {"ATT-BASE-EL-QANNA-01"},
     "CLM-QANNA-DEUT4-24-MOSES-WARNING": {"ATT-BASE-EL-QANNA-02"},
+    "CLM-DAN7-9-ANCIENT-THRONED-JUDGE": {"ATT-BASE-ATIQ-YOMIN-01"},
+    "CLM-DAN7-13-ANCIENT-SON-OF-MAN-DISTINCT": {"ATT-BASE-ATIQ-YOMIN-02"},
+    "CLM-DAN7-22-ANCIENT-GRANTS-JUDGMENT": {"ATT-BASE-ATIQ-YOMIN-03"},
+    "CLM-REV1-4-JOHN-GREETING-TRIAD": {"ATT-EXT-HO-ON-ERCHOMENOS-01"},
+    "CLM-REV21-22-LORD-GOD-LAMB-TEMPLE": {"ATT-BASE-PANTOKRATOR-02"},
 }
 
 
@@ -813,6 +908,10 @@ def validate_provenance(
                     continue
                 seen.add(aid)
                 att_by_id[aid] = obs
+                if aid in DAN7_REV_CONTEXT_GUARDS:
+                    for field, expected in DAN7_REV_CONTEXT_GUARDS[aid].items():
+                        if obs.get(field) != expected:
+                            errors.append(f"provenance: {aid} Daniel7/Revelation Greek or Aramaic context control changed ({field})")
                 if aid in ELYON_QANNA_LOCUS_CONTROLS:
                     for field, expected in ELYON_QANNA_LOCUS_CONTROLS[aid].items():
                         if obs.get(field) != expected:
@@ -974,6 +1073,16 @@ def validate_provenance(
         errors.append("provenance: required Shaddai/Sabaoth speaker claims missing")
     if not REQUIRED_ELYON_QANNA_CLAIMS.issubset(claim_map):
         errors.append("provenance: required Elyon/Qanna speech/name claims missing")
+    if not REQUIRED_DAN7_REV_CONTEXT_CLAIMS.issubset(claim_map):
+        errors.append("provenance: required Daniel7/Revelation narrow claims missing")
+    for cid, fields in DAN7_REV_CLAIM_LEVEL_GUARDS.items():
+        row=claim_map.get(cid, {})
+        for field,expected in fields.items():
+            if row.get(field)!=expected:
+                errors.append(f"provenance: {cid} Daniel7/Revelation grammar, speaker or interpretation guard changed ({field})")
+    for cid, needed in DAN7_REV_SECONDARY_SOURCES.items():
+        if not needed.issubset(set(claim_map.get(cid,{}).get("sourceIds",[]))):
+            errors.append(f"provenance: {cid} original Aramaic and attributed Judisch secondary source lost")
     for cid, fields in ELYON_QANNA_CLAIM_GUARDS.items():
         row = claim_map.get(cid, {})
         for field, expected in fields.items():
@@ -1102,8 +1211,8 @@ def main() -> int:
         for p in problems:
             print("FAIL: " + p, file=sys.stderr)
         return 1
-    print("PASS: 105 attestation IDs / 4 editions; 61 provisional claims, "
-          "46 relations, 6 Elyon/Qanna original-text speaker controls and all publication HOLD gates")
+    print("PASS: 105 attestation IDs / 4 editions; 66 provisional claims, "
+          "52 relations, 6 Daniel7/Revelation original-text context controls and all publication HOLD gates")
     return 0
 
 

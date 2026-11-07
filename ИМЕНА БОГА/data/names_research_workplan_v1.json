@@ -20,15 +20,15 @@
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 16,
-    "provenanceRegressionTests": 207,
+    "provenanceRegressionTests": 233,
     "canonicalEditions": 4,
-    "curatedClaims": 61,
+    "curatedClaims": 66,
     "allAttestationForeignKeys": 105,
-    "editionSpecificGreekUrlsVerified": 18,
+    "editionSpecificGreekUrlsVerified": 21,
     "unselectedGreekEditionUrls": 0,
-    "attestationsReferencedByClaims": 77,
-    "attestationsWithoutClaimReference": 28,
-    "typedClaimRelations": 46,
+    "attestationsReferencedByClaims": 83,
+    "attestationsWithoutClaimReference": 22,
+    "typedClaimRelations": 52,
     "correctedExodusDivineReferentRows": 3,
     "semanticScopeAudits": 15,
     "independentScholarlyClaimApprovals": 0,
@@ -47,7 +47,8 @@
     "johnEgoDiscourseGuards": 4,
     "yirehNissiPlaceAltarExplanationGuards": 4,
     "shaddaiSabaothSpeakerGuards": 8,
-    "elyonQannaSpeakerNameGuards": 6
+    "elyonQannaSpeakerNameGuards": 6,
+    "danielRevelationDiscourseGuards": 6
   },
   "allowedStatuses": [
     "DONE",
@@ -229,9 +230,13 @@
         "25_EL_ELYON_EL_QANNA_NARRATIVE_AND_NAME_CLAUSES_20261107.md: MT Gen14:18–22 Melchizedek priesthood/blessing/doxology vs Abram oath; Ex34:14 exact qanna shemo + el qanna vs Moses Deut4:24 el qanna descriptor",
         "data/names_claim_registry_v1.json: 5 new research-only claims with 6 prior unlinked original Hebrew attestation IDs and 5 constrained relations",
         "validate_names_provenance.py: 6 independently pinned MT surface/role/source guards, distinct qanna name evidence controls; NET qoneh and catalog-only Cargill editorial hypothesis never promoted to collated variants",
-        "test_validate_names_provenance.py: 22 additional positive/adversarial original-language speaker/name/secondary-source tests; 207 provenance total"
+        "test_validate_names_provenance.py: 22 additional positive/adversarial original-language speaker/name/secondary-source tests; 207 provenance total",
+        "26_DANIEL7_REVELATION1_21_DISCOURSE_AND_FORM_AUDIT_20261107.md: exact Daniel7 Aramaic original forms and narrator/figure distinctions, Rev1 greeting vs explicit God speech, Rev21:22 narrative Lord God/Lamb",
+        "data/names_claim_registry_v1.json: 5 narrow new claims covering 5 previously unlinked IDs, plus extend existing Rev1:8 explicit-speaker claim with its distinct extension attestation and 6 semantic relations",
+        "validate_names_provenance.py: 6 independent original-form/source/role guards, 3 exact pinned SBLGNT URLs, Judisch secondary grammar uncertainty and greeting-vs-direct-speech distinctions",
+        "test_validate_names_provenance.py: 26 new mutation and positive regressions, total 233 provenance tests"
       ],
-      "verification": "105_STABLE_ATT_SOURCE_EDITION; 48_SOURCE_RECORDS; 61_PROVISIONAL_CLAIMS; 46_TYPED_RELATIONS; 77_OF_105_LINKED; 28_UNLINKED; 6_ELYON_QANNA_ORIGINAL_TEXT_GUARDS; 388_TESTS_EXPECTED_CI; CRITICAL_COLLATIONS_0; PRODUCT_APPROVALS_0",
+      "verification": "105_STABLE_ATTESTATION_SOURCE_EDITION; 48_SOURCES; 66_RESEARCH_HELD_CLAIMS; 52_TYPED_RELATIONS; 83_OF_105_CLAIM_LINKED; 22_UNLINKED; 21_SINGLE_EDITION_GREEK_URLS; 6_DAN7_REV_ORIGINAL_TEXT_GUARDS; 414_CI_TESTS_EXPECTED; CRITICAL_COLLATIONS_0; PRODUCT_APPROVALS_0",
       "closureAt": null,
       "owner": "Research editorial"
     },
@@ -630,7 +635,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NG-02: 28 of 105 attestation IDs remain without bounded claim-level editorial links (not missing original source or edition FKs); prioritize claims by semantic error risk, not metric-only zero. Assess remaining original attestations by grouping before another wave; 55 historic locusId omissions demand nonbreaking consumer compatibility plan. Manuscript apparatus, genuine scholarly peer review, source rights and Product editorial clearance remain open.",
+  "nextAction": "NG-02 22/105 stable source/edition-attested observations still without claim-level editorial links. Assess bounded high-confusion groups: Adonai three pronoun/suffix usages, Qedosh Yisrael three prophecy/oracle/response agents, and Yah Exodus15/Ps68 short-name forms; then review other remaining 13 scattered original-language titles. The 55 legacy missing locusId entries remain a versioned consumer-compatibility problem; stop on budget rather than artificially manufacturing claims. Critical collation and Product approval still zero.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -712,7 +717,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-07",
-    "planStatus": "NG-01 DONE; NG-02 IN_PROGRESS: 61 research-only provisional claims, 46 relations, 77/105 claim-linked",
+    "planStatus": "NG-01 DONE; NG-02 IN_PROGRESS: 66 research-held claims, 52 typed semantic relations, 83/105 link-reviewed source attestations",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -763,14 +768,18 @@
       "7 research-held claims over 8 original MT El Shaddai and YHWH Sabaoth observations, 6 new semantic relations, 24 adversarial/positive tests, exact voice and printed-vocalization locks",
       "Ex6:3 debated revelation/existing use in Genesis and unresolved Shaddai etymology not marked scientific consensus; original NET source registered and used without new source duplication",
       "Gen14:18 narrator versus Melchizedek Gen14:19–20 priestly blessing/doxology versus Abram oath Gen14:22 explicitly names YHWH-El Elyon in printed MT; qoneh creator/possessor alternatives attributed to NET and Cargill 2019 gloss hypothesis kept catalog-only",
-      "Ex34:14 explicit qanna shemo/character clause in divine discourse and Deut4:24 Moses warning with merely descriptive qanna; exact speakers/words protected by 6 guards, 22 tests and 5 semantic links"
+      "Ex34:14 explicit qanna shemo/character clause in divine discourse and Deut4:24 Moses warning with merely descriptive qanna; exact speakers/words protected by 6 guards, 22 tests and 5 semantic links",
+      "Daniel 7:9/13/22 Aramaic Ancient-of-Days two forms and three narrative scenes: throne, another figure approaching, judgment to saints, secondary grammatical attribution only",
+      "Revelation 1:4 John greeting ἀπὸ nominative construction distinct from Rev1:8 explicit Lord God speaker; appended separate Rev1:8 ext witness to existing claim rather than duplicating it; Rev21:22 God Almighty and Lamb grammatically distinct yet jointly temple",
+      "5 new research claims plus one expanded existing claim, 6 typed relations, 6 independent source text guards, 3 extra pinned Greek edition URLs and 26 extra regression tests"
     ],
     "stillOpen": [
-      "NG-02: 28 of 105 original attestation IDs have no curated claim link, though all FKs are stable and rights held",
-      "Historical missing locusId 55 needs nonbreaking consumer evolution policy",
-      "Ancient MT/Greek critical collation for Gen14:22 and Ex34, etymology and alternative historical scholarship remain incomplete",
-      "All 61 provisional claims remain RESEARCH_HOLD, no scholarly or Product editorial approvals and permission rights",
-      "GitHub exact-SHA CI pending for new test count"
+      "NG-02: 22 of 105 original attestation IDs remain without narrowly reviewed claim links; stable source/edition IDs complete",
+      "55 historic locusId omissions need compatible schema and consumer migration evidence",
+      "Daniel7 Aramaic morphological BDB original and ancient manuscripts not collated; Judisch interpretation attributed",
+      "Rev1/21 original edited SBLGNT checked but Greek manuscript critical apparatus and diverse speaker exegesis outstanding",
+      "66 claims RESEARCH_HOLD; no independent scholarly approvals and no Product publication rights",
+      "GitHub exact-SHA CI must be checked after push"
     ]
   },
   "originalResearchCheckpoint": {
@@ -787,14 +796,14 @@
       "sourceForeignKeys": 105,
       "editionForeignKeys": 105,
       "canonicalEditions": 4,
-      "curatedClaims": 61,
+      "curatedClaims": 66,
       "locusIdMissingHistorically": 55,
       "editionSelectionRecheckHolds": 0,
-      "notes": "Gen14:18 narrator priesthood; Gen14:19–20 Melchizedek blessing+doxology; Gen14:22 Abram oath includes YHWH El Elyon, Cargill editorial gloss idea catalogue-level, qoneh NET creator/possessor alternative. Ex34:14 YHWH divine speech has explicit qanna shemo and qanna description, Deut4:24 Moses descriptive warning no name clause. 77 of 105 claim-linked, all HOLD.",
-      "typedClaimRelations": 46,
-      "editionSpecificDigitalVerseRechecksCompleted": 18,
-      "attestationsLinkedToClaims": 77,
-      "attestationsWithoutClaimReferences": 28,
+      "notes": "Daniel7:9 Ancient throne scene (yomin), 7:13 Ancient approached by like son-of-man (yomayya), 7:22 judgment for saints (yomayya), all Aramaic and Daniel narration; Rev1:4 John greeting nominative apo phrase vs Rev1:8 explicitly Lord God speech with same formula; Rev21:22 John narrative with Lord God Almighty and Lamb distinguished. 83/105 linked, 22 without; no Product approval.",
+      "typedClaimRelations": 52,
+      "editionSpecificDigitalVerseRechecksCompleted": 21,
+      "attestationsLinkedToClaims": 83,
+      "attestationsWithoutClaimReferences": 22,
       "divineReferentAddresseeControls": 3,
       "semanticScopeAudits": 15,
       "scholarlyClaimApprovals": 0,
@@ -810,7 +819,8 @@
       "johnEgoDiscourseGuards": 4,
       "yirehNissiPlaceAltarExplanationGuards": 4,
       "shaddaiSabaothSpeakerGuards": 8,
-      "elyonQannaSpeakerNameGuards": 6
+      "elyonQannaSpeakerNameGuards": 6,
+      "danielRevelationDiscourseGuards": 6
     }
   }
 }

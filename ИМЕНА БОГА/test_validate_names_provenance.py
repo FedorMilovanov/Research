@@ -1250,6 +1250,153 @@ class ProvenanceGraphTests(unittest.TestCase):
         row["relationType"]="CONTRASTS_REFERENT"
         self.assertTrue(any("required semantic boundary" in e for e in self.check(claims=d)))
 
+    def test_dan7_9_absolute_form_not_emphatic(self) -> None:
+        d,o=self.mutate("atiq-yomin","baseline",0)
+        o["surface"]="עַתִּיק יוֹמַיָּא"
+        self.assertTrue(any("Daniel7/Revelation Greek or Aramaic context control changed" in e for e in self.check(baseline=d)))
+
+    def test_dan7_9_vision_speaker_not_ancient_self(self) -> None:
+        d,o=self.mutate("atiq-yomin","baseline",0)
+        o["speaker"]="Ancient of Days speaks directly"
+        self.assertTrue(any("Daniel7/Revelation Greek or Aramaic context control changed" in e for e in self.check(baseline=d)))
+
+    def test_dan7_9_sitting_judge_referent(self) -> None:
+        d,o=self.mutate("atiq-yomin","baseline",0)
+        o["referent"]="son of man approaching"
+        self.assertTrue(any("Daniel7/Revelation Greek or Aramaic context control changed" in e for e in self.check(baseline=d)))
+
+    def test_dan7_13_emphatic_form_not_absolute(self) -> None:
+        d,o=self.mutate("atiq-yomin","baseline",1)
+        o["surface"]="עַתִּיק יוֹמִין"
+        self.assertTrue(any("Daniel7/Revelation Greek or Aramaic context control changed" in e for e in self.check(baseline=d)))
+
+    def test_dan7_13_ancient_not_same_as_approaching_figure(self) -> None:
+        d,o=self.mutate("atiq-yomin","baseline",1)
+        o["referent"]="approaching son of man is Ancient of Days"
+        self.assertTrue(any("Daniel7/Revelation Greek or Aramaic context control changed" in e for e in self.check(baseline=d)))
+
+    def test_dan7_13_speaker_is_daniel_vision(self) -> None:
+        d,o=self.mutate("atiq-yomin","baseline",1)
+        o["speaker"]="an angel speaks in direct address"
+        self.assertTrue(any("Daniel7/Revelation Greek or Aramaic context control changed" in e for e in self.check(baseline=d)))
+
+    def test_dan7_22_ancient_judgment_not_sonman_approach(self) -> None:
+        d,o=self.mutate("atiq-yomin","baseline",2)
+        o["referent"]="Ancient approached by son of man"
+        self.assertTrue(any("Daniel7/Revelation Greek or Aramaic context control changed" in e for e in self.check(baseline=d)))
+
+    def test_dan7_22_different_verse_must_remain(self) -> None:
+        d,o=self.mutate("atiq-yomin","baseline",2)
+        o["verse"]="Daniel 7:13"
+        self.assertTrue(any("Daniel7/Revelation Greek or Aramaic context control changed" in e for e in self.check(baseline=d)))
+
+    def test_rev1_4_formula_is_greeting_not_christ_direct_speech(self) -> None:
+        d,o=self.mutate("ho-on-erchomenos","extension",0)
+        o["speakerCue"]="Jesus explicitly says I am"
+        self.assertTrue(any("Daniel7/Revelation Greek or Aramaic context control changed" in e for e in self.check(extension=d)))
+
+    def test_rev1_4_formula_exact_sblgnt_preserved(self) -> None:
+        d,o=self.mutate("ho-on-erchomenos","extension",0)
+        o["surface"]="ὁ ὤν"
+        self.assertTrue(any("Daniel7/Revelation Greek or Aramaic context control changed" in e for e in self.check(extension=d)))
+
+    def test_rev1_4_source_cannot_change_edition(self) -> None:
+        d,o=self.mutate("ho-on-erchomenos","extension",0)
+        o["sourceUrl"]="https://www.biblegateway.com/passage/?search=Revelation+1%3A4-8&version=KJV"
+        self.assertTrue(any("Daniel7/Revelation Greek or Aramaic context control changed" in e for e in self.check(extension=d)))
+
+    def test_rev1_8_explicit_lord_god_speaker(self) -> None:
+        d,o=self.mutate("ho-on-erchomenos","extension",1)
+        o["speaker"]="John addressing churches"
+        self.assertTrue(any("Daniel7/Revelation Greek or Aramaic context control changed" in e for e in self.check(extension=d)))
+
+    def test_rev1_8_explicit_speaker_cue_locked(self) -> None:
+        d,o=self.mutate("ho-on-erchomenos","extension",1)
+        o["speakerCue"]="John's greeting distinguishes three ἀπό sources"
+        self.assertTrue(any("Daniel7/Revelation Greek or Aramaic context control changed" in e for e in self.check(extension=d)))
+
+    def test_rev1_8_formula_same_printed_surface(self) -> None:
+        d,o=self.mutate("ho-on-erchomenos","extension",1)
+        o["surface"]="ἐγώ εἰμι ὁ ὤν"
+        self.assertTrue(any("Daniel7/Revelation Greek or Aramaic context control changed" in e for e in self.check(extension=d)))
+
+    def test_rev21_22_john_narration_not_lord_god_direct_speech(self) -> None:
+        d,o=self.mutate("pantokrator","baseline",1)
+        o["speaker"]="κύριος, ὁ θεός (Lord God)"
+        self.assertTrue(any("Daniel7/Revelation Greek or Aramaic context control changed" in e for e in self.check(baseline=d)))
+
+    def test_rev21_22_lamb_referent_preserved(self) -> None:
+        d,o=self.mutate("pantokrator","baseline",1)
+        o["referent"]="God and Lamb same grammatical noun"
+        self.assertTrue(any("Daniel7/Revelation Greek or Aramaic context control changed" in e for e in self.check(baseline=d)))
+
+    def test_rev21_22_separate_verse_not_rev1_8(self) -> None:
+        d,o=self.mutate("pantokrator","baseline",1)
+        o["verse"]="Revelation 1:8"
+        self.assertTrue(any("Daniel7/Revelation Greek or Aramaic context control changed" in e for e in self.check(baseline=d)))
+
+    def test_rev21_22_edition_pin_exact_chapter(self) -> None:
+        d,o=self.mutate("pantokrator","baseline",1)
+        o["sourceUrl"]="https://www.biblegateway.com/passage/?search=Revelation+21&version=THGNT"
+        self.assertTrue(any("Daniel7/Revelation Greek or Aramaic context control changed" in e for e in self.check(baseline=d)))
+
+    def test_dan7_rev_six_new_attestation_links(self) -> None:
+        expected={
+            "CLM-DAN7-9-ANCIENT-THRONED-JUDGE":{"ATT-BASE-ATIQ-YOMIN-01"},
+            "CLM-DAN7-13-ANCIENT-SON-OF-MAN-DISTINCT":{"ATT-BASE-ATIQ-YOMIN-02"},
+            "CLM-DAN7-22-ANCIENT-GRANTS-JUDGMENT":{"ATT-BASE-ATIQ-YOMIN-03"},
+            "CLM-REV1-4-JOHN-GREETING-TRIAD":{"ATT-EXT-HO-ON-ERCHOMENOS-01"},
+            "CLM-REV21-22-LORD-GOD-LAMB-TEMPLE":{"ATT-BASE-PANTOKRATOR-02"},
+            "CLM-REV1-8-LORD-GOD-ALPHA":{"ATT-EXT-HO-ON-ERCHOMENOS-02","ATT-BASE-PANTOKRATOR-01","ATT-BASE-ALPHA-OMEGA-01"},
+        }
+        for cid, att in expected.items():
+            r=next(x for x in self.claims["records"] if x["claimId"]==cid)
+            self.assertTrue(att.issubset(set(r["attestationIds"])))
+            self.assertEqual("RESEARCH_HOLD",r["editorialState"])
+            self.assertEqual("BLOCKED",r["publicationState"])
+
+    def test_dan7_absolute_secondary_parse_cannot_be_certified_as_BDB(self) -> None:
+        d=copy.deepcopy(self.claims)
+        x=next(c for c in d["records"] if c["claimId"]=="CLM-DAN7-9-ANCIENT-THRONED-JUDGE")
+        x["grammaticalEvidenceStatus"]="PRIMARY_BDB_COLLATED_CONFIRMED"
+        self.assertTrue(any("Daniel7/Revelation grammar, speaker or interpretation guard changed" in e for e in self.check(claims=d)))
+
+    def test_dan7_judisch_source_not_silently_deleted(self) -> None:
+        d=copy.deepcopy(self.claims)
+        x=next(c for c in d["records"] if c["claimId"]=="CLM-DAN7-13-ANCIENT-SON-OF-MAN-DISTINCT")
+        x["sourceIds"]=["SRC-DANIEL-ARAMAIC"]
+        self.assertTrue(any("original Aramaic and attributed Judisch secondary source lost" in e for e in self.check(claims=d)))
+
+    def test_rev1_4_greeting_not_promoted_to_divine_direct_quote(self) -> None:
+        d=copy.deepcopy(self.claims)
+        x=next(c for c in d["records"] if c["claimId"]=="CLM-REV1-4-JOHN-GREETING-TRIAD")
+        x["speakerEvidenceLevel"]="EXPLICIT_LORD_GOD_SPEECH_IN_1_4"
+        self.assertTrue(any("Daniel7/Revelation grammar, speaker or interpretation guard changed" in e for e in self.check(claims=d)))
+
+    def test_rev1_8_existing_claim_must_retain_new_extension_witness(self) -> None:
+        d=copy.deepcopy(self.claims)
+        x=next(c for c in d["records"] if c["claimId"]=="CLM-REV1-8-LORD-GOD-ALPHA")
+        x["attestationIds"].remove("ATT-EXT-HO-ON-ERCHOMENOS-02")
+        self.assertTrue(any("lost its independently reviewed text witnesses" in e for e in self.check(claims=d)))
+
+    def test_rev21_22_john_narration_speaker_tag_preserved(self) -> None:
+        d=copy.deepcopy(self.claims)
+        x=next(c for c in d["records"] if c["claimId"]=="CLM-REV21-22-LORD-GOD-LAMB-TEMPLE")
+        x["speakerEvidenceLevel"]="GOD_SPEAKS_DIRECTLY_IN_21_22"
+        self.assertTrue(any("Daniel7/Revelation grammar, speaker or interpretation guard changed" in e for e in self.check(claims=d)))
+
+    def test_dan7_scene_figures_not_collapsed_semantic_relation(self) -> None:
+        d=copy.deepcopy(self.claims)
+        x=next(c for c in d["semanticRelations"] if c["relationId"]=="REL-DAN7-9-13-APPROACH-DISTINCTION")
+        x["relationType"]="CONTRASTS_NAMED_OBJECT"
+        self.assertTrue(any("required semantic boundary" in e for e in self.check(claims=d)))
+
+    def test_rev1_4_vs_1_8_speech_relation_must_be_preserved(self) -> None:
+        d=copy.deepcopy(self.claims)
+        x=next(c for c in d["semanticRelations"] if c["relationId"]=="REL-REV1-4-REV1-8-GREETING-VS-QUOTE")
+        x["relationType"]="CONTRASTS_GRAMMATICAL_FORM"
+        self.assertTrue(any("required semantic boundary" in e for e in self.check(claims=d)))
+
 
 if __name__ == "__main__":
     unittest.main()
