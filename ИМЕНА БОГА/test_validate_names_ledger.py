@@ -6,7 +6,7 @@ import json
 import unittest
 from pathlib import Path
 
-from validate_names_ledger import validate, validate_extension, validate_source_access
+from validate_names_ledger import validate, validate_extension, validate_source_access, validate_apocalyptic
 
 ROOT = Path(__file__).resolve().parent
 
@@ -22,6 +22,7 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertEqual([], validate(self.baseline))
         self.assertEqual([], validate_extension(self.extension, self.baseline))
         self.assertEqual([], validate_source_access(self.sources))
+        self.assertEqual([], validate_apocalyptic(self.baseline, self.extension))
 
     def test_altar_cannot_be_promoted_to_personal_name(self) -> None:
         data = copy.deepcopy(self.baseline)
@@ -172,6 +173,73 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         row["attestations"] = []
         errors = validate(data)
         self.assertTrue(any("el-shaddai" in issue for issue in errors))
+
+
+    def test_daniel_7_9_yomin_cannot_be_silently_normalized_to_yomaya(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(r for r in data["records"] if r["id"] == "atiq-yomin")
+        next(x for x in row["attestations"] if x["verse"] == "Daniel 7:9")["surface"] = "עַתִּיק יוֹמַיָּא"
+        self.assertTrue(any("Daniel 7:9" in v for v in validate_apocalyptic(data, self.extension)))
+
+    def test_daniel_7_13_ancient_cannot_be_made_same_as_son_of_man(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(r for r in data["records"] if r["id"] == "atiq-yomin")
+        row["referentBoundary"] = "The Ancient is the figure who comes toward himself"
+        self.assertTrue(any("two vision figures" in v for v in validate_apocalyptic(data, self.extension)))
+
+    def test_revelation_1_8_theos_difference_must_be_retained(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(r for r in data["records"] if r["id"] == "alpha-omega")
+        row["printedEditionDiffs"][0]["variant2"] = "Both SBL and TR have ὁ θεός"
+        self.assertTrue(any("θεός difference" in v for v in validate_apocalyptic(data, self.extension)))
+
+    def test_revelation_21_6_eimi_difference_must_be_retained(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(r for r in data["records"] if r["id"] == "alpha-omega")
+        row["printedEditionDiffs"][1]["variant1"] = "Both editions have ἐγώ εἰμι"
+        self.assertTrue(any("εἰμι omission" in v for v in validate_apocalyptic(data, self.extension)))
+
+    def test_revelation_22_13_speaker_evidence_not_promoted_to_explicit(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(r for r in data["records"] if r["id"] == "alpha-omega")
+        next(x for x in row["attestations"] if x["verse"] == "Revelation 22:13")["speakerEvidence"] = "explicit_speech_attribution_in_verse"
+        self.assertTrue(any("narrative voice" in v for v in validate_apocalyptic(data, self.extension)))
+
+    def test_revelation_21_22_almighty_cannot_be_deleted(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(r for r in data["records"] if r["id"] == "pantokrator")
+        row["attestations"] = row["attestations"][:1]
+        self.assertTrue(any("apocalyptic verse set drift" in v for v in validate_apocalyptic(data, self.extension)))
+
+    def test_revelation_1_4_separate_from_jesus_in_verse_5(self) -> None:
+        data = copy.deepcopy(self.extension)
+        row = next(r for r in data["records"] if r["id"] == "ho-on-erchomenos")
+        row["attestations"][0]["surface"] = "ὁ ἐρχόμενος"
+        self.assertTrue(any("Greek original surface" in v for v in validate_apocalyptic(self.baseline, data)))
+
+    def test_public_domain_tr1550_cannot_override_publication_hold(self) -> None:
+        data = copy.deepcopy(self.sources)
+        row = next(r for r in data["records"] if r["id"] == "SRC-TR1550-REV18")
+        row["publicationState"] = "PROMOTE"
+        self.assertTrue(any("publication" in v for v in validate_source_access(data)))
+
+    def test_proprietary_thgnt_revelation_must_retain_rights(self) -> None:
+        data = copy.deepcopy(self.sources)
+        row = next(r for r in data["records"] if r["id"] == "SRC-THGNT-REV216")
+        row["rightsState"] = "PUBLICATION_ELIGIBLE"
+        self.assertTrue(any("THGNT" in v or "license" in v for v in validate_source_access(data)))
+
+    def test_sbl_editorial_intro_cannot_be_collated_manuscript_apparatus(self) -> None:
+        data = copy.deepcopy(self.sources)
+        row = next(r for r in data["records"] if r["id"] == "SRC-SBL-INTRO")
+        row["sourceRole"] = "MANUSCRIPT_CRITICAL_APPARATUS"
+        self.assertTrue(any("relevance/role" in v for v in validate_source_access(data)))
+
+    def test_missing_apocalyptic_attestation_list_is_fail_closed(self) -> None:
+        data = copy.deepcopy(self.baseline)
+        row = next(r for r in data["records"] if r["id"] == "atiq-yomin")
+        row.pop("attestations")
+        self.assertTrue(any("apocalyptic" in v for v in validate_apocalyptic(data, self.extension)))
 
 
 if __name__ == "__main__":
