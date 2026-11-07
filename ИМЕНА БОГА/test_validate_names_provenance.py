@@ -883,5 +883,113 @@ class ProvenanceGraphTests(unittest.TestCase):
         self.assertTrue(any("required semantic boundary" in e for e in self.check(claims=d)))
 
 
+    def test_yireh_nissi_claims_cover_four_previous_unlinked_loci(self) -> None:
+        targets = {
+            "CLM-GEN22-8-ABRAHAM-PROVISION-ANSWER":"ATT-BASE-YIREH-01",
+            "CLM-GEN22-14-MOUNTAIN-NIPHAL":"ATT-BASE-YIREH-03",
+            "CLM-EX17-16-MT-HAND-THRONE-CRUX":"ATT-BASE-NISSI-03",
+            "CLM-EX17-16-LXX-HIDDEN-HAND":"ATT-BASE-NISSI-04",
+        }
+        for cid, aid in targets.items():
+            row=next(c for c in self.claims["records"] if c["claimId"]==cid)
+            self.assertEqual([aid],row["attestationIds"])
+            self.assertEqual("RESEARCH_HOLD",row["editorialState"])
+            self.assertEqual("BLOCKED",row["publicationState"])
+
+    def test_gen22_8_abraham_not_replaced_by_yhwh_divine_self_naming(self) -> None:
+        d,o=self.mutate("yireh","baseline",0)
+        o["namingActor"]="YHWH, direct divine self naming"
+        self.assertTrue(any("Gen22/Ex17 Hebrew or LXX locus text/role guard" in e for e in self.check(baseline=d)))
+
+    def test_gen22_8_not_silent_place_naming(self) -> None:
+        d,o=self.mutate("yireh","baseline",0)
+        o["namedObject"]="place"
+        self.assertTrue(any("Gen22/Ex17 Hebrew or LXX locus text/role guard" in e for e in self.check(baseline=d)))
+
+    def test_gen22_8_morphology_not_niphal_from_proverb(self) -> None:
+        d,o=self.mutate("yireh","baseline",0)
+        o["morphology"]="יֵרָאֶה Niphal yiqtol 3ms (secondary preliminary)"
+        self.assertTrue(any("Gen22/Ex17 Hebrew or LXX locus text/role guard" in e for e in self.check(baseline=d)))
+
+    def test_gen22_8_speech_target_is_isaac(self) -> None:
+        d,o=self.mutate("yireh","baseline",0)
+        o["directAddress"]="Abraham to an altar"
+        self.assertTrue(any("Gen22/Ex17 Hebrew or LXX locus text/role guard" in e for e in self.check(baseline=d)))
+
+    def test_gen22_14_mountain_niphal_not_qal_place_name(self) -> None:
+        d,o=self.mutate("yireh","baseline",2)
+        o["surface"]="יְהוָה יִרְאֶה"
+        self.assertTrue(any("Gen22/Ex17 Hebrew or LXX locus text/role guard" in e for e in self.check(baseline=d)))
+
+    def test_gen22_14_community_proverb_not_new_abraham_naming(self) -> None:
+        d,o=self.mutate("yireh","baseline",2)
+        o["namingActor"]="Abraham"
+        self.assertTrue(any("Gen22/Ex17 Hebrew or LXX locus text/role guard" in e for e in self.check(baseline=d)))
+
+    def test_gen22_14_niphal_translation_alternatives_preserved(self) -> None:
+        d,o=self.mutate("yireh","baseline",2)
+        o["translationScope"]="always only YHWH will provide"
+        self.assertTrue(any("Gen22/Ex17 Hebrew or LXX locus text/role guard" in e for e in self.check(baseline=d)))
+
+    def test_gen22_mountain_does_not_lose_attributed_NET_review(self) -> None:
+        d=copy.deepcopy(self.claims)
+        row=next(c for c in d["records"] if c["claimId"]=="CLM-GEN22-14-MOUNTAIN-NIPHAL")
+        row["sourceIds"]=["SRC-MT-MECHON"]
+        self.assertTrue(any("Hebrew/Greek or NET attributed source triangle lost" in e for e in self.check(claims=d)))
+
+    def test_ex17_16_mt_throne_not_conjectural_banner(self) -> None:
+        d,o=self.mutate("nissi","baseline",2)
+        o["surface"]="כִּי-יָד עַל-נֵס יָהּ"
+        self.assertTrue(any("Gen22/Ex17 Hebrew or LXX locus text/role guard" in e for e in self.check(baseline=d)))
+
+    def test_ex17_16_mt_conjecture_not_promoted_to_attested_reading(self) -> None:
+        d,o=self.mutate("nissi","baseline",2)
+        o["textualStatus"]="N_ES_ATTESTED_AS_MT"
+        self.assertTrue(any("Gen22/Ex17 Hebrew or LXX locus text/role guard" in e for e in self.check(baseline=d)))
+
+    def test_ex17_16_mt_readings_under_debate_not_silently_deleted(self) -> None:
+        d,o=self.mutate("nissi","baseline",2)
+        o["readingsUnderDebate"]=["banner נֵס is certain"]
+        self.assertTrue(any("Gen22/Ex17 Hebrew or LXX locus text/role guard" in e for e in self.check(baseline=d)))
+
+    def test_ex17_16_lxx_secret_hand_not_replaced_by_hebrew_throne(self) -> None:
+        d,o=self.mutate("nissi","baseline",3)
+        o["surface"]="כִּי-יָד עַל-כֵּס יָהּ"
+        self.assertTrue(any("Gen22/Ex17 Hebrew or LXX locus text/role guard" in e for e in self.check(baseline=d)))
+
+    def test_ex17_16_lxx_labeled_not_literal_to_mt(self) -> None:
+        d,o=self.mutate("nissi","baseline",3)
+        o["textualStatus"]="DIRECT_LITERAL_TRANSLATION_MT_HAND_THRONE"
+        self.assertTrue(any("Gen22/Ex17 Hebrew or LXX locus text/role guard" in e for e in self.check(baseline=d)))
+
+    def test_ex17_16_lxx_publisher_source_cannot_switch(self) -> None:
+        d,o=self.mutate("nissi","baseline",3)
+        o["sourceUrl"]="https://mechon-mamre.org/p/pt/pt0217.htm"
+        self.assertTrue(any("Gen22/Ex17 Hebrew or LXX locus text/role guard" in e for e in self.check(baseline=d)))
+
+    def test_ex17_16_hypothesis_not_allowed_without_translator_note(self) -> None:
+        d=copy.deepcopy(self.claims)
+        row=next(c for c in d["records"] if c["claimId"]=="CLM-EX17-16-MT-HAND-THRONE-CRUX")
+        row["sourceIds"]=["SRC-MT-MECHON"]
+        self.assertTrue(any("Hebrew/Greek or NET attributed source triangle lost" in e for e in self.check(claims=d)))
+
+    def test_ex17_16_claim_cannot_inherit_altar_named_observation(self) -> None:
+        d=copy.deepcopy(self.claims)
+        row=next(c for c in d["records"] if c["claimId"]=="CLM-EX17-16-LXX-HIDDEN-HAND")
+        row["attestationIds"]=["ATT-BASE-NISSI-02"]
+        self.assertTrue(any("lost its independently reviewed text witnesses" in e for e in self.check(claims=d)))
+
+    def test_gen22_niphal_claim_cannot_be_removed(self) -> None:
+        d=copy.deepcopy(self.claims)
+        d["records"]=[c for c in d["records"] if c["claimId"]!="CLM-GEN22-14-MOUNTAIN-NIPHAL"]
+        self.assertTrue(any("required Yireh/Nissi name-versus-explanation claims missing" in e for e in self.check(claims=d)))
+
+    def test_ex17_16_mt_lxx_relation_type_not_turned_into_equivalence(self) -> None:
+        d=copy.deepcopy(self.claims)
+        row=next(c for c in d["semanticRelations"] if c["relationId"]=="REL-EX17-MT-LXX-SECRET-HAND")
+        row["relationType"]="CONTRASTS_REFERENT"
+        self.assertTrue(any("required semantic boundary" in e for e in self.check(claims=d)))
+
+
 if __name__ == "__main__":
     unittest.main()

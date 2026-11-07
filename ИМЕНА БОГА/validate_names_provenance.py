@@ -346,6 +346,60 @@ JOHN_EGO_DISCOURSE_CONTROLS = {
         "claimScope": "explicit εἰ οὖν ἐμὲ ζητεῖτε, ἄφετε τούτους",
     },
 }
+REQUIRED_YIREH_NISSI_CLAIMS = {
+    "CLM-GEN22-8-ABRAHAM-PROVISION-ANSWER",
+    "CLM-GEN22-14-MOUNTAIN-NIPHAL",
+    "CLM-EX17-16-MT-HAND-THRONE-CRUX",
+    "CLM-EX17-16-LXX-HIDDEN-HAND",
+}
+# Independent source-text observations; digital edited readings, not direct manuscript collation.
+YIREH_NISSI_LOCI_GUARDS = {
+    "ATT-BASE-YIREH-01": {
+        "verse": "Genesis 22:8",
+        "surface": "אֱלֹהִים יִרְאֶה-לּוֹ",
+        "namingActor": "Abraham speaking",
+        "namedObject": "none",
+        "speechAct": "divine_provision_predication",
+        "morphology": "יִרְאֶה Qal yiqtol 3ms (secondary preliminary)",
+        "directAddress": "Abraham to Isaac",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt0122.htm",
+    },
+    "ATT-BASE-YIREH-03": {
+        "verse": "Genesis 22:14",
+        "surface": "בְּהַר יְהוָה יֵרָאֶה",
+        "namingActor": "narrator / community quotation",
+        "namedObject": "none",
+        "speechAct": "mountain_formula_about_appearance_or_provision",
+        "morphology": "יֵרָאֶה Niphal yiqtol 3ms (secondary preliminary)",
+        "notIdenticalVerbTo": "יִרְאֶה",
+        "translationScope": "NET alternatives it will be seen/provided or YHWH will appear",
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt0122.htm",
+    },
+    "ATT-BASE-NISSI-03": {
+        "verse": "Exodus 17:16",
+        "surface": "כִּי-יָד עַל-כֵּס יָהּ",
+        "namedObject": "none",
+        "speechAct": "difficult_memorial_explanation",
+        "textualStatus": "MT_SURFACE_AND_HYPOTHETICAL_EMENDATION_SEPARATE",
+        "readingsUnderDebate": ["throne כֵּס (digital MT)","suggested emendation נֵס as scholarly reconstruction"],
+        "sourceUrl": "https://mechon-mamre.org/p/pt/pt0217.htm",
+    },
+    "ATT-BASE-NISSI-04": {
+        "verse": "Exodus 17:16",
+        "surface": "ὅτι ἐν χειρὶ κρυφαίᾳ",
+        "namedObject": "none",
+        "speechAct": "different_Greek_explanation_of_memorial",
+        "textualStatus": "LXX_READING_NOT_LITERAL_MT_HAND_THRONE",
+        "sourceRelation": "PRINTED_GREEK_TRANSLATION_DIFFERENCE",
+        "sourceUrl": "https://www.die-bibel.de/bibel/LXX/EXO.17",
+    },
+}
+# Secondary source evidence explicitly remains attributed translator interpretation.
+YIREH_NISSI_REQUIRED_SECONDARY = {
+    "CLM-GEN22-14-MOUNTAIN-NIPHAL": {"SRC-MT-MECHON", "SRC-NET-GENESIS22"},
+    "CLM-EX17-16-MT-HAND-THRONE-CRUX": {"SRC-MT-MECHON", "SRC-NET-EXODUS17"},
+    "CLM-EX17-16-LXX-HIDDEN-HAND": {"SRC-MT-MECHON", "SRC-RAHLFS-EXODUS17"},
+}
 # The original reviewed seeds are a required minimum, not a cap on future work.
 # Additional claims must pass the same foreign-key, editorial and publication gates.
 ALLOWED_CLAIM_TYPES = {
@@ -459,6 +513,10 @@ REQUIRED_SEMANTIC_RELATIONS = {
     "REL-JOHN18-6-8-AGENCY": ("CLM-JOHN18-6-NARRATOR-REPRISE", "CLM-JOHN18-8-IDENTITY-AND-RELEASE", "CONTRASTS_SPEAKER_EVIDENCE"),
     "REL-JOHN9-JOHN18-IDENTIFICATION": ("CLM-JOHN9-9-HUMAN-EGO-EIMI", "CLM-JOHN18-5-ARREST-IDENTITY", "CONTRASTS_REFERENT"),
     "REL-JOHN6-JOHN8-LXX-BOUNDARY": ("CLM-JOHN6-20-ASSURANCE", "CLM-LXX-EX3-JOHN8-DIFFERENT-CLAUSES", "LIMITS_INFERENCE"),
+    "REL-GEN22-8-PLACE-NAMING-BOUNDARY": ("CLM-GEN22-8-ABRAHAM-PROVISION-ANSWER", "CLM-GEN22-14-PLACE-NAME", "CONTRASTS_NAMED_OBJECT"),
+    "REL-GEN22-NAME-NIPHAL-DISTINCTION": ("CLM-GEN22-14-PLACE-NAME", "CLM-GEN22-14-MOUNTAIN-NIPHAL", "CONTRASTS_GRAMMATICAL_FORM"),
+    "REL-EX17-ALTAR-VERSE16-CONTEXT": ("CLM-EX17-15-ALTAR-MT-LXX", "CLM-EX17-16-MT-HAND-THRONE-CRUX", "LIMITS_INFERENCE"),
+    "REL-EX17-MT-LXX-SECRET-HAND": ("CLM-EX17-16-MT-HAND-THRONE-CRUX", "CLM-EX17-16-LXX-HIDDEN-HAND", "CONTRASTS_PRINTED_EDITION"),
 }
 CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-EX3-15-DIVINE-NAME": {"ATT-BASE-YHWH-01"},
@@ -512,6 +570,10 @@ CLAIM_REQUIRED_ATTESTATIONS = {
     "CLM-JOHN18-5-ARREST-IDENTITY": {"ATT-BASE-EGO-EIMI-04"},
     "CLM-JOHN18-6-NARRATOR-REPRISE": {"ATT-BASE-EGO-EIMI-05"},
     "CLM-JOHN18-8-IDENTITY-AND-RELEASE": {"ATT-BASE-EGO-EIMI-06"},
+    "CLM-GEN22-8-ABRAHAM-PROVISION-ANSWER": {"ATT-BASE-YIREH-01"},
+    "CLM-GEN22-14-MOUNTAIN-NIPHAL": {"ATT-BASE-YIREH-03"},
+    "CLM-EX17-16-MT-HAND-THRONE-CRUX": {"ATT-BASE-NISSI-03"},
+    "CLM-EX17-16-LXX-HIDDEN-HAND": {"ATT-BASE-NISSI-04"},
 }
 
 
@@ -582,6 +644,10 @@ def validate_provenance(
                     continue
                 seen.add(aid)
                 att_by_id[aid] = obs
+                if aid in YIREH_NISSI_LOCI_GUARDS:
+                    for field, expected in YIREH_NISSI_LOCI_GUARDS[aid].items():
+                        if obs.get(field) != expected:
+                            errors.append(f"provenance: {aid} Gen22/Ex17 Hebrew or LXX locus text/role guard changed ({field})")
                 if aid in JOHN_EGO_DISCOURSE_CONTROLS:
                     for field, expected in JOHN_EGO_DISCOURSE_CONTROLS[aid].items():
                         if obs.get(field) != expected:
@@ -725,6 +791,11 @@ def validate_provenance(
         errors.append("provenance: required covenant and shepherd speech claims missing")
     if not REQUIRED_JOHN_EGO_CONTEXT_CLAIMS.issubset(claim_map):
         errors.append("provenance: required John6/18 discourse claims missing")
+    if not REQUIRED_YIREH_NISSI_CLAIMS.issubset(claim_map):
+        errors.append("provenance: required Yireh/Nissi name-versus-explanation claims missing")
+    for cid, needed in YIREH_NISSI_REQUIRED_SECONDARY.items():
+        if not needed.issubset(set(claim_map.get(cid,{}).get("sourceIds",[]))):
+            errors.append(f"provenance: {cid} Hebrew/Greek or NET attributed source triangle lost")
     for cid,level,review in (
         ("CLM-REV1-8-LORD-GOD-ALPHA","EXPLICIT_SAME_VERSE",False),
         ("CLM-REV21-6-THRONE-SPEAKER","EXPLICIT_PRIOR_NARRATOR_CUE",False),
@@ -836,8 +907,8 @@ def main() -> int:
         for p in problems:
             print("FAIL: " + p, file=sys.stderr)
         return 1
-    print("PASS: 105 attestation IDs / 4 editions; 45 provisional claims, "
-          "31 relations, 4 John6/18 discourse controls and all publication HOLD gates")
+    print("PASS: 105 attestation IDs / 4 editions; 49 provisional claims, "
+          "35 relations, 4 Gen22/Ex17 text-role controls and all publication HOLD gates")
     return 0
 
 

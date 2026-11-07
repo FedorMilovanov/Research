@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "corpusId": "NAMES_OF_GOD_CLAIM_LEVEL_EVIDENCE",
   "createdAt": "2026-11-07",
-  "scope": "45 provisional claims; 31 typed links. Four John 6/18 self-identification observations linked with narration-versus-speech controls, research-held and publication-blocked.",
+  "scope": "49 research-held provisional claims; 35 typed relations, including four separately source-bound Gen22/Ex17 naming and edition guards, no manuscript collation or Product clearance.",
   "editorialPolicy": "Never infer Product approval from link completeness, never replace a cited verse or alternative theory silently; new claims require independent review.",
   "records": [
     {
@@ -1031,6 +1031,98 @@
         "Do not infer a unique divine proper name solely from unpredicated ἐγώ εἰμι; check John 9:9 human control",
         "Separate academic and Product permissions; source-specific editorial review remains outstanding"
       ]
+    },
+    {
+      "claimId": "CLM-GEN22-8-ABRAHAM-PROVISION-ANSWER",
+      "claimType": "NARRATIVE_SPEECH_VS_NAMING",
+      "attestationIds": [
+        "ATT-BASE-YIREH-01"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-NET-GENESIS22"
+      ],
+      "statement": "Genesis 22:8 MT records Abraham answering Isaac with אֱלֹהִים יִרְאֶה-לּוֹ, 'God will see/provide for himself', regarding the offering. This is Abraham-to-Isaac future assurance/predication, not a direct divine self-naming speech or naming of either altar or place at verse 8. NET Genesis 22:14 refers back to the 22:8 'provide' argument, while lexical 'see' and contextual provision must be distinguished.",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independently compare MT and LXX critical apparatus and extant ancient manuscripts before naming a textual variant or Vorlage",
+        "Review Hebrew syntax, Qal/Niphal and readings of Ex17:16 with grammars and competing scholarship",
+        "Keep naming actor and named object separate from etymological/translator explanation",
+        "Check source-specific rights, independent scholarly acceptance, and Product editorial gate before publishing"
+      ]
+    },
+    {
+      "claimId": "CLM-GEN22-14-MOUNTAIN-NIPHAL",
+      "claimType": "MORPHOLOGICAL_CASE_CONTEXT",
+      "attestationIds": [
+        "ATT-BASE-YIREH-03"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-NET-GENESIS22"
+      ],
+      "statement": "Genesis 22:14 MT preserves a closing communal/narratorial saying בְּהַר יְהוָה יֵרָאֶה with a Niphal-form יֵרָאֶה, distinct from active Qal-form יִרְאֶה in Abraham's place-name clause earlier in the same verse and in 22:8. NET translators attribute multiple interpretive translations to the Niphal, including 'it will be seen/provided' and 'YHWH will appear'. It is a formula about the mountain, not another new naming of an altar or unambiguous English proof of 'provide' as the only gloss.",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independently compare MT and LXX critical apparatus and extant ancient manuscripts before naming a textual variant or Vorlage",
+        "Review Hebrew syntax, Qal/Niphal and readings of Ex17:16 with grammars and competing scholarship",
+        "Keep naming actor and named object separate from etymological/translator explanation",
+        "Check source-specific rights, independent scholarly acceptance, and Product editorial gate before publishing"
+      ]
+    },
+    {
+      "claimId": "CLM-EX17-16-MT-HAND-THRONE-CRUX",
+      "claimType": "ATTRIBUTED_HISTORICAL_RECONSTRUCTION",
+      "attestationIds": [
+        "ATT-BASE-NISSI-03"
+      ],
+      "sourceIds": [
+        "SRC-MT-MECHON",
+        "SRC-NET-EXODUS17"
+      ],
+      "statement": "The digital Masoretic Hebrew Exodus 17:16 reads כִּי-יָד עַל-כֵּס יָהּ, an obscure explanatory clause following Moses' altar naming in v15, with the written כֵּס ('throne') rather than נֵס ('banner'). NET Bible translator notes discuss possible interpretations and conjectural emendation כֵּס → נֵס; that proposal is scholarly reconstruction, NOT a quoted Masoretic reading or independently verified manuscript variant. The clause is not a second object-naming act.",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independently compare MT and LXX critical apparatus and extant ancient manuscripts before naming a textual variant or Vorlage",
+        "Review Hebrew syntax, Qal/Niphal and readings of Ex17:16 with grammars and competing scholarship",
+        "Keep naming actor and named object separate from etymological/translator explanation",
+        "Check source-specific rights, independent scholarly acceptance, and Product editorial gate before publishing"
+      ]
+    },
+    {
+      "claimId": "CLM-EX17-16-LXX-HIDDEN-HAND",
+      "claimType": "EDITED_TEXT_DIFFERENCE",
+      "attestationIds": [
+        "ATT-BASE-NISSI-04"
+      ],
+      "sourceIds": [
+        "SRC-RAHLFS-EXODUS17",
+        "SRC-MT-MECHON"
+      ],
+      "statement": "The publisher's Rahlfs-Hanhart Greek Exodus 17:16 prints ὅτι ἐν χειρὶ κρυφαίᾳ and continues with the Lord fighting Amalek. This edited Greek 'in/with a hidden hand' wording is not a word-for-word transcription of MT כִּי-יָד עַל-כֵּס יָהּ; its distinct shape does NOT by itself prove a different ancient Hebrew Vorlage or that the MT ought to be emended. Neither verse 16 surface names a second altar.",
+      "criticalWitnessStatus": "NOT_COLLATED",
+      "evidenceTier": "DIGITAL_VERSE_SURFACE_AND_ATTRIBUTED_ARGUMENT",
+      "editorialState": "RESEARCH_HOLD",
+      "publicationState": "BLOCKED",
+      "interpretiveScope": "NARROW_LOCUS_CLAIM_NOT_GENERAL_DICTIONARY_CLAIM",
+      "reviewNeeded": [
+        "Independently compare MT and LXX critical apparatus and extant ancient manuscripts before naming a textual variant or Vorlage",
+        "Review Hebrew syntax, Qal/Niphal and readings of Ex17:16 with grammars and competing scholarship",
+        "Keep naming actor and named object separate from etymological/translator explanation",
+        "Check source-specific rights, independent scholarly acceptance, and Product editorial gate before publishing"
+      ]
     }
   ],
   "semanticRelations": [
@@ -1280,6 +1372,38 @@
       "toClaimId": "CLM-LXX-EX3-JOHN8-DIFFERENT-CLAUSES",
       "relationType": "LIMITS_INFERENCE",
       "rationale": "John6:20 contains a short identity/assurance clause; the Greek Ex3:14 full wording and John8:58 intertext need independent investigation, not automatic equivalence.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-GEN22-8-PLACE-NAMING-BOUNDARY",
+      "fromClaimId": "CLM-GEN22-8-ABRAHAM-PROVISION-ANSWER",
+      "toClaimId": "CLM-GEN22-14-PLACE-NAME",
+      "relationType": "CONTRASTS_NAMED_OBJECT",
+      "rationale": "Gen22:8 is Abraham's answer to Isaac without object naming; the named object in Gen22:14 is explicitly the place, not the altar.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-GEN22-NAME-NIPHAL-DISTINCTION",
+      "fromClaimId": "CLM-GEN22-14-PLACE-NAME",
+      "toClaimId": "CLM-GEN22-14-MOUNTAIN-NIPHAL",
+      "relationType": "CONTRASTS_GRAMMATICAL_FORM",
+      "rationale": "Gen22:14 active Qal יִרְאֶה in place-name and Niphal יֵרָאֶה in subsequent communal mountain saying must remain distinct printed forms.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-EX17-ALTAR-VERSE16-CONTEXT",
+      "fromClaimId": "CLM-EX17-15-ALTAR-MT-LXX",
+      "toClaimId": "CLM-EX17-16-MT-HAND-THRONE-CRUX",
+      "relationType": "LIMITS_INFERENCE",
+      "rationale": "Moses' 17:15 naming of an altar is distinct from the difficult explanatory clause in 17:16; proposed נֵס is not the written MT כֵּס.",
+      "publicationState": "BLOCKED"
+    },
+    {
+      "relationId": "REL-EX17-MT-LXX-SECRET-HAND",
+      "fromClaimId": "CLM-EX17-16-MT-HAND-THRONE-CRUX",
+      "toClaimId": "CLM-EX17-16-LXX-HIDDEN-HAND",
+      "relationType": "CONTRASTS_PRINTED_EDITION",
+      "rationale": "Printed MT wording in hand/throne/Yah differs from printed LXX secret-hand explanation; this does not independently establish a distinct ancient Vorlage.",
       "publicationState": "BLOCKED"
     }
   ]

@@ -20,15 +20,15 @@
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 16,
-    "provenanceRegressionTests": 142,
+    "provenanceRegressionTests": 161,
     "canonicalEditions": 4,
-    "curatedClaims": 45,
+    "curatedClaims": 49,
     "allAttestationForeignKeys": 105,
     "editionSpecificGreekUrlsVerified": 18,
     "unselectedGreekEditionUrls": 0,
-    "attestationsReferencedByClaims": 59,
-    "attestationsWithoutClaimReference": 46,
-    "typedClaimRelations": 31,
+    "attestationsReferencedByClaims": 63,
+    "attestationsWithoutClaimReference": 42,
+    "typedClaimRelations": 35,
     "correctedExodusDivineReferentRows": 3,
     "semanticScopeAudits": 15,
     "independentScholarlyClaimApprovals": 0,
@@ -44,7 +44,8 @@
     "lexicalReferentAndNamedObjectGuards": 8,
     "covenantShepherdAttestationsGuarded": 8,
     "covenantSpeakerSpeechVersusPrayerDistinctions": 2,
-    "johnEgoDiscourseGuards": 4
+    "johnEgoDiscourseGuards": 4,
+    "yirehNissiPlaceAltarExplanationGuards": 4
   },
   "allowedStatuses": [
     "DONE",
@@ -214,9 +215,13 @@
         "22_JOHN_EGO_EIMI_DISCOURSE_WAVE_20261107.md: SBLGNT John6:20,18:5,18:6,18:8 with John9:9 human negative control, John8:58/LXX Ex3:14 distinction",
         "data/names_claim_registry_v1.json: 4 provisional John6/18 speech act claims and 5 typed semantic boundary links, all RESEARCH_HOLD",
         "validate_names_provenance.py: 4 independent speaker/target/scope controls + 4 exact edition-pinned SBLGNT John URLs",
-        "test_validate_names_provenance.py: 15 additional adversarial/positive tests against a falsely new second saying in 18:6, false lexical divinity and scene swaps"
+        "test_validate_names_provenance.py: 15 additional adversarial/positive tests against a falsely new second saying in 18:6, false lexical divinity and scene swaps",
+        "23_YIREH_NISSI_ANSWER_PLACE_MOUNTAIN_EDITION_CRUX_20261107.md: original MT Gen22:8,14 and MT/LXX Ex17:16 with attributed NET alternatives and explicit object naming in 22:14 / Ex17:15",
+        "data/names_claim_registry_v1.json: four provisional research-only claim IDs across four previously unlinked observations, four typed semantic relations",
+        "validate_names_provenance.py: four independently pinned exact verse/role/textual-state observation contracts plus source-specific NET/LXX attributed-source gates",
+        "test_validate_names_provenance.py: 19 added anti-conflation/edition/grammatical-source mutation tests; 161 provenance tests overall"
       ],
-      "verification": "105_ATTESTATION_EDITION_SOURCE_LINKS; 48_SOURCE_RECORDS; 45_PROVISIONAL_CLAIMS_31_RELATIONS; 59_OF_105_CLAIM_LINKED; 46_WITHOUT_CLAIM; 4_JOHN6_18_DISCOURSE_GUARDS; 18_PINNED_GREEK_URLS; 323_TESTS_EXPECTED_BY_GITHUB_CI; CRITICAL_COLLATIONS_0; PRODUCT_APPROVAL_0",
+      "verification": "105_STABLE_ATTESTATIONS_SOURCE_FK_EDITION_FK; 48_SOURCE_RECORDS; 49_PROVISIONAL_CLAIMS; 35_TYPED_RELATIONS; 63_OF_105_CLAIM_LINKED; 42_UNLINKED; 4_YIREH_NISSI_TEXT_ROLE_GUARDS; 342_TESTS_EXPECTED_GITHUB_CI; 0_CRITICAL_MANUSCRIPT_COLLATIONS; 0_PRODUCT_APPROVALS",
       "closureAt": null,
       "owner": "Research editorial"
     },
@@ -615,7 +620,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NG-02: 46 original-language attestation IDs still without bounded claim links. Prioritize source-rich but vulnerable cases, especially YHWH-Yireh Gen22:8/14 three speech frames; Nissi Ex17:16 MT/LXX difficult explanation, El Shaddai in Ex6:3, and Sabaoth plural/invocation. Preserve 55 missing historic locusId as versioning issue. No automatic Product promotion or fictional critical collation.",
+  "nextAction": "NG-02: remaining 42 previously attestation/source/edition-linked observations without curated claim links. Next bounded wave prioritize historical divine titles El Shaddai (Gen 17:1,28:3,35:11, Ex6:3) and YHWH Sabaoth cross-locus invocation (1 Sam1:3, 17:45, Isa6:3, Zech10:3), with scholarly ambiguity and no forced etymology. 55 historic missing locusId need consumer-compatible versioning plan. Do not claim manuscript critical collation or Product permission.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -697,7 +702,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-07",
-    "planStatus": "NG-01 DONE; NG-02 IN_PROGRESS: 45 provisional claims, 31 typed semantic relations, 59/105 linked",
+    "planStatus": "NG-01 DONE; NG-02 IN_PROGRESS: 49 research-held claims, 35 typed relations, 63 of 105 claim-linked",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -741,14 +746,17 @@
       "Psalm23:1 MT YHWH my shepherd Hebrew רעה (not Hagar's seeing ראה) versus John10:11/14 Jesus explicit Greek nominal predicate; 3 John10 SBLGNT exact source URL locks",
       "17 adversarial regressions added; total 308 local tests expected from 165 ledger, 16 plan and 127 provenance",
       "John6:20 Jesus 'it is I; do not fear' versus John18:5 Jesus answer, 18:6 narrator's backward reference to 18:5 rather than independent second new utterance, and 18:8 direct repetition with release request",
-      "4 newly claim-linked John occurrences, four required exact edition URLs, 5 typed relations and 15 negative/positive regression checks; SBLGNT original digital reading verified and human John9:9 negative control retained"
+      "4 newly claim-linked John occurrences, four required exact edition URLs, 5 typed relations and 15 negative/positive regression checks; SBLGNT original digital reading verified and human John9:9 negative control retained",
+      "Bounded Yireh/Nissi textual pass: Gen22:8 Abraham assurance distinct from naming PLACE Gen22:14, and Niphal mountain formula; no one mandatory English rendering from two verb forms",
+      "Ex17:16 digital MT כֵּס 'throne' not conjectural נֵס 'banner'; Rahlfs-Hanhart Greek ἐν χειρὶ κρυφαίᾳ differs from MT, no ancient Vorlage proved",
+      "4 newly linked attestations, 4 source-bound research-held claims, 4 typed relations, 19 adversarial checks, 4 independent source-text guards"
     ],
     "stillOpen": [
-      "NG-02: 46 of 105 original-language attestations remain without curated claim links though source/edition keys all stable",
-      "55 historic records missing locusId need stable consumer compatibility policy",
-      "Historical manuscript-critical collation and scholarly alternative exegesis are still incomplete",
-      "All 45 provisional claims are research-only, no independent scholarly or Product publication approval",
-      "GitHub exact-SHA CI must be evaluated after this commit"
+      "NG-02: 42/105 original-language attestations without claim-level curated links despite 105 source/edition FKs",
+      "55 historic missing locusIds remain a versioning/consumer compatibility issue",
+      "Critical Hebrew/Greek manuscript collation and full historical/grammatical scholarly comparison not done",
+      "All 49 claims research-held, not verified by independent scholarly review, Product publication blocked",
+      "New GitHub SHA exact CI must be checked before calling this wave green"
     ]
   },
   "originalResearchCheckpoint": {
@@ -765,14 +773,14 @@
       "sourceForeignKeys": 105,
       "editionForeignKeys": 105,
       "canonicalEditions": 4,
-      "curatedClaims": 45,
+      "curatedClaims": 49,
       "locusIdMissingHistorically": 55,
       "editionSelectionRecheckHolds": 0,
-      "notes": "John6:20 Jesus assures disciples, John18:5 answers arresting party, John18:6 narrator quotes earlier utterance rather than a second new saying, John18:8 Jesus repeats response and requests disciple release. Human John9:9 remains negative control; John8:58 distinct wider clause. 46 without curated claims; all scientific and Product holds remain.",
-      "typedClaimRelations": 31,
+      "notes": "Gen22:8 Abraham-to-Isaac assurance versus 22:14 Abraham's naming of a place versus mountain formula using Niphal; Ex17:15 Moses names altar, 17:16 MT obscure כֵּס vs proposed נֵס and LXX secret hand, no manuscript collation. 63/105 linked, 42 without; all research-only.",
+      "typedClaimRelations": 35,
       "editionSpecificDigitalVerseRechecksCompleted": 18,
-      "attestationsLinkedToClaims": 59,
-      "attestationsWithoutClaimReferences": 46,
+      "attestationsLinkedToClaims": 63,
+      "attestationsWithoutClaimReferences": 42,
       "divineReferentAddresseeControls": 3,
       "semanticScopeAudits": 15,
       "scholarlyClaimApprovals": 0,
@@ -785,7 +793,8 @@
       "historicalMissingLocusIdsRecounted": 55,
       "lexicalReferentAndNamedObjectGuards": 8,
       "covenantShepherdAttestationsGuarded": 8,
-      "johnEgoDiscourseGuards": 4
+      "johnEgoDiscourseGuards": 4,
+      "yirehNissiPlaceAltarExplanationGuards": 4
     }
   }
 }
