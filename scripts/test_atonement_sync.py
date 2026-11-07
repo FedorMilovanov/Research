@@ -215,7 +215,9 @@ class ActualSynchronizationTests(unittest.TestCase):
         p = ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md"
         text = p.read_text(encoding="utf-8")
         for marker in (
-            "DABNEY_PAGE_SCAN_HOLD",
+            "DABNEY_OTHER_PAGES_HOLD",
+            "DABNEY_521_FACSIMILE_VERIFIED",
+            "DABNEY_648_FACSIMILE_VERIFIED",
             "DAVENANT_LATIN_EDITION_HOLD",
             "AI_TRANSLATION_HOLD",
             "OWEN_WCF_TIMING_HOLD",
@@ -237,18 +239,28 @@ class ActualSynchronizationTests(unittest.TestCase):
         ):
             with self.subTest(marker=marker):
                 self.assertIn(marker, text)
-        self.assertIn("B1: **полный собственный текст главы в цифровой транскрипции теперь прочитан**", text)
+        self.assertIn("A2 в узком месте", text)
+        self.assertIn("B1", text)
         self.assertIn("B1 (ограниченный цифровой свидетель)", text)
 
     def test_wave1_primary_dabney_context_and_print_hold_stay_distinct(self):
         text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md").read_text(encoding="utf-8")
         dossier = (ROOT / "ИСКУПЛЕНИЕ/evidence/WAVE1_DABNEY_DAVENANT_OWEN_PRIMARY_WITNESSES_2026-11-07.md").read_text(encoding="utf-8")
-        for marker in ("DABNEY_PAGE_SCAN_HOLD", "DABNEY_648_HOLD", "sermonindex.net/books/writings-of-robert-l-dabney/57"):
+        for marker in ("DABNEY_521_FACSIMILE_VERIFIED", "DABNEY_648_FACSIMILE_VERIFIED", "DABNEY_OTHER_PAGES_HOLD", "sermonindex.net/books/writings-of-robert-l-dabney/57"):
             with self.subTest(marker=marker):
                 self.assertIn(marker, text)
                 self.assertIn(marker, dossier)
         for token in ("Inconclusive Proofs", "Real Proofs", "strict Calvinistic", "QUOTE_SAFE=NO"):
             self.assertIn(token.lower(), dossier.lower())
+
+    def test_wave1_dabney_648_is_justification_not_extent(self):
+        article = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md").read_text(encoding="utf-8")
+        dossier = (ROOT / "ИСКУПЛЕНИЕ/evidence/WAVE1_DABNEY_DAVENANT_OWEN_PRIMARY_WITNESSES_2026-11-07.md").read_text(encoding="utf-8")
+        self.assertIn("archive.org/details/syllabusnotesofc00dabn/page/648", dossier)
+        self.assertIn("archive.org/details/syllabusnotesofc00dabn/page/521", dossier)
+        self.assertIn("антиномист", dossier.lower())
+        self.assertIn("DABNEY_OTHER_PAGES_HOLD", article)
+        self.assertIn("нравственную обязанность", article.lower())
 
     def test_wave1_davenant_latin_web_segments_are_not_print_pages(self):
         text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md").read_text(encoding="utf-8")
