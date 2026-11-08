@@ -1500,18 +1500,18 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                             for e in validate_source_access(d)))
 
 
-    def test_4q120_iaa_catalogue_is_not_direct_iaw_glyph_autopsy(self) -> None:
+    def test_4q120_iaa_preliminary_iaw_photo_is_not_djd_critical_collation(self) -> None:
         d = copy.deepcopy(self.sources)
         row = next(x for x in d["records"] if x["id"] == "SRC-IAA-DSS-4Q120-B503715-2015")
         row["reportedIaoEvidenceBoundary"] = "IAA_PRIMARY_PHOTO_DIRECT_IAO_PROOF_ORIGINAL_LXX_AND_PUBLIC_DOMAIN"
-        self.assertTrue(any("IAA 4Q120 archival photo metadata cannot become glyph proof" in e
+        self.assertTrue(any("IAA 4Q120 browser photo observation must not become critical collation" in e
                             for e in validate_source_access(d)))
 
     def test_4q120_iaa_photo_requires_separate_reproduction_permission(self) -> None:
         d = copy.deepcopy(self.sources)
         row = next(x for x in d["records"] if x["id"] == "SRC-IAA-DSS-4Q120-B503715-2015")
         row["rightsState"] = "PUBLICATION_ELIGIBLE"
-        self.assertTrue(any("IAA 4Q120 archival photo metadata cannot become glyph proof" in e
+        self.assertTrue(any("IAA 4Q120 browser photo observation must not become critical collation" in e
                             for e in validate_source_access(d)))
 
 
