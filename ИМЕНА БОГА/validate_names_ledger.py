@@ -728,7 +728,7 @@ def validate_source_access(sources: dict) -> list[str]:
                 and historical.get("status") == "CATALOG_METADATA_ONLY_NO_PIXEL_INSPECTION"
                 and isinstance(candidates, list)
                 and len(candidates) == len(expected_historical)
-                and all(isinstance(c, dict) for c in candidates)
+                and all(isinstance(c, dict) and isinstance(c.get("imageId"), str) for c in candidates)
                 and {c.get("imageId") for c in candidates} == set(expected_historical)
                 and all(
                     c.get("url") == f"https://www.deadseascrolls.org.il/explore-the-archive/image/{c.get('imageId')}"
