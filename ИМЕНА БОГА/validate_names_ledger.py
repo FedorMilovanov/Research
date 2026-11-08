@@ -640,8 +640,15 @@ def validate_source_access(sources: dict) -> list[str]:
             if (not isinstance(box9, dict)
                 or box9.get("status") != "BOX9_HISTORIC_INVENTORY_TEXT_VERIFIED_PHOTOGRAPHIC_OBJECTS_NOT_SEEN_CURRENT_CUSTODY_UNVERIFIED"
                 or box9.get("url") != "https://livrepository.liverpool.ac.uk/3058583/1/201230666_MAY2019.pdf"
-                or "does NOT authenticate current 2026 location" not in str(box9.get("holdingBoundary", ""))):
+                or "Does NOT authenticate current 2026 custody" not in str(box9.get("holdingBoundary", ""))):
                 errors.append(f"{prefix}: Liverpool 2019 Box 9 inventory is not verified 2026 custody or actual image access")
+            if (not isinstance(box9, dict)
+                or box9.get("documentedAsOf2019Ownership") != "HALBERTSMA_2019_PRINT_P11_STATES_DEIR_ALLA_ARCHIVE_PROPERTY_OF_DUTCH_NATIONAL_MUSEUM_OF_ANTIQUITIES_NOT_2026_CUSTODY_CONFIRMATION"
+                or box9.get("additionalPhotographBox41") != "HALBERTSMA_2019_PRINT_P37_BOX41_FIELD_AND_OBJECT_PHOTOGRAPHS_FROM_ALL_FRANKEN_EXCAVATION_SEASONS_NOT_CONFIRMED_1967_IR_NEGATIVES"
+                or box9.get("originalPhotoRegister") != "HALBERTSMA_2019_PRINT_P38_MANY_PHOTOS_NUMBERED_AND_MATCHED_TO_HISTORIC_PHOTO_REGISTER_NO_SPECIFIC_NEGATIVE_NUMBER_IDENTIFIED"
+                or "not fully publicly accessible" not in str(source.get("rmoOfficialModernArchiveSearchLimit", ""))
+                or "DOES NOT extend" not in str(source.get("rmoOfficialPhotoRightsBoundary", ""))):
+                errors.append(f"{prefix}: 2019 RMO archive ownership, Box 41 and photo-register rights require source-specific holds")
         if rid in {"SRC-CAQUOT-LEMAIRE-DEIRALLA-REASSEMBLY-1977-P193198",
                    "SRC-HOFTIJZER-BALAAM-ARTICLE-1976-BA39-1",
                    "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3"}:
