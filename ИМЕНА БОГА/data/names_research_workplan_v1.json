@@ -13,10 +13,10 @@
     "extensionRecords": 13,
     "contextAttestations": 105,
     "sourceRegisterEntries": 80,
-    "regressionTests": 243,
+    "regressionTests": 245,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_d2440c57_ALL_SIX_SUCCESS_NEW_4Q120_NUMBERING_CROSSWALK_HEAD_CI_PENDING",
+    "allSixCiChecks": "PRIOR_66c69963_ALL_SIX_SUCCESS_NEW_VASILEIADIS_AUTHOR_PDF_P24_CAPTION_WITNESS_HEAD_CI_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "d2440c579723e5147a1ccf47e834b9935887b1cc"
+    "lastConfirmedAllSixChecksSha": "66c69963bc9ce4ae2d8cec5c52f1096680e9ecdc"
   },
   "allowedStatuses": [
     "DONE",
@@ -816,7 +816,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-08",
-    "planStatus": "2026-11-08 later wave: previous b4fbfe09 reached exact-SHA 6/6 SUCCESS. On official IAA photo B-503715 read-only browser successfully rendered genuine color papyrus image tiles and observed probable visible ΙΑΩ, noted lower Omega faded. This is preliminary direct photographic sighting by browser visual observer only, NOT DJD IX critical collation, independent academic peer approval, photo license or original LXX vocal reconstruction. Source IAA record adjusted from CATALOG_ONLY to PARTIAL_OBJECT; original evidence and rights holds stay. 80 sources, 236 corpus tests, 21 workplan tests. NG05 OPEN, NG12 BLOCKED_SOURCE, 0 scholarly critical collations, 0 Product approvals. Current exact HEAD CI pending. Later 2026-11-08 narrow follow-up: IAA official catalog confirms two candidate 4Q120 multi-manuscript infrared-negative records B-278297/M40.633 (1953) and B-284588/M43.560 (1960). Historical candidates catalogued, not pixel-inspected, not proven to depict the same 2015 Frag15, and not a DJD IX/IAO sign collation. Added three fail-closed regression tests. 239 core tests; prior 294eb1fe had 6/6 workflows SUCCESS; post-update exact HEAD CI pending. NG05 OPEN and NG12 BLOCKED_SOURCE unchanged. 2026-11-08 subsequent NG-05 number-concordance repair: 1999 García Martínez/Tigchelaar Study Edition vol.1 printed p293 directly inspected; DJD IX cited pp167-186/pl XXXIX-XLI with editorial frags20-21 Lev4:26-28 versus editorial frags12-15 Lev4:6-8, ROC plates376/378/379. 2015 IAA B-503715 label 'Plate378 Frag15' is a different museum-plate coordinate. A Vasileiadis 2017 p24 fig1 crosswalk editorial frag20 line4 to museum plate378 frag15 is *attributed secondary*; original author-deposit file registered in Zenodo but p24 PDF not directly opened, original DJD IX remains uncollated. 4 targeted negative guards added; 243 core tests and zero scholarly/product approvals. Prior exact d2440c5 has 6/6 SUCCESS, new HEAD pending CI, NG05 OPEN, NG12 BLOCKED_SOURCE.",
+    "planStatus": "2026-11-08 later wave: previous b4fbfe09 reached exact-SHA 6/6 SUCCESS. On official IAA photo B-503715 read-only browser successfully rendered genuine color papyrus image tiles and observed probable visible ΙΑΩ, noted lower Omega faded. This is preliminary direct photographic sighting by browser visual observer only, NOT DJD IX critical collation, independent academic peer approval, photo license or original LXX vocal reconstruction. Source IAA record adjusted from CATALOG_ONLY to PARTIAL_OBJECT; original evidence and rights holds stay. 80 sources, 236 corpus tests, 21 workplan tests. NG05 OPEN, NG12 BLOCKED_SOURCE, 0 scholarly critical collations, 0 Product approvals. Current exact HEAD CI pending. Later 2026-11-08 narrow follow-up: IAA official catalog confirms two candidate 4Q120 multi-manuscript infrared-negative records B-278297/M40.633 (1953) and B-284588/M43.560 (1960). Historical candidates catalogued, not pixel-inspected, not proven to depict the same 2015 Frag15, and not a DJD IX/IAO sign collation. Added three fail-closed regression tests. 239 core tests; prior 294eb1fe had 6/6 workflows SUCCESS; post-update exact HEAD CI pending. NG05 OPEN and NG12 BLOCKED_SOURCE unchanged. 2026-11-08 subsequent NG-05 number-concordance repair: 1999 García Martínez/Tigchelaar Study Edition vol.1 printed p293 directly inspected; DJD IX cited pp167-186/pl XXXIX-XLI with editorial frags20-21 Lev4:26-28 versus editorial frags12-15 Lev4:6-8, ROC plates376/378/379. 2015 IAA B-503715 label 'Plate378 Frag15' is a different museum-plate coordinate. A Vasileiadis 2017 p24 fig1 crosswalk editorial frag20 line4 to museum plate378 frag15 is *attributed secondary*; original author-deposit file registered in Zenodo but p24 PDF not directly opened, original DJD IX remains uncollated. 4 targeted negative guards added; 243 core tests and zero scholarly/product approvals. Prior exact d2440c5 has 6/6 SUCCESS, new HEAD pending CI, NG05 OPEN, NG12 BLOCKED_SOURCE. 2026-11-09 NG05: the 31-page 2017 Vasileiadis paper's author-deposited Zenodo PDF was fetched HTTP200 and its printed p24 Figure 1 caption directly extracted in first 6 pages (fragment20:4/Plate378 Frag15 for Lev4:27 ΙΑΩ). This upgrades *caption provenance* only, NOT illustration pixel autopsy, DJD IX pp167-186/plates XXXIX-XLI critical collation, IAA photo rights or historical 1953/1960 negative identity. Two negative tests protect image/rights gates, 245 core tests. Previous exact SHA 66c69963 has 6/6 SUCCESS; updated HEAD CI requires separate pass. NG05 remains OPEN; NG12 remains BLOCKED_SOURCE; 0 independent approvals or Product handoffs.",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
