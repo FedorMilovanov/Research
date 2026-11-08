@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 65,
+    "sourceRecords": 66,
     "approvedForProduct": 0
   },
   "records": [
@@ -1613,7 +1613,35 @@
       ],
       "datingScope": "ADAJ1979_PHASE_IX_PROBABLY_EIGHTH_BCE_PRELIMINARY_ARTIFACTS_C14_PENDING_AT_1979",
       "imageScope": "OFFICIAL_PDF_PARSED_PP49_50_WEB_SCREENSHOT_HTTP502_NO_INDEPENDENT_VISUAL_VALIDATION"
+    },
+    {
+      "id": "SRC-LEMAIRE-DEIRALLA-1985-RADIOCARBON-PP271272",
+      "title": "André Lemaire, Les inscriptions de Deir 'Alla et la littérature araméenne antique, CRAI 129/2 (1985), 270–285, pp.271–272 on dating",
+      "creator": "André Lemaire",
+      "year": 1985,
+      "url": "https://www.persee.fr/doc/crai_0065-0536_1985_num_129_2_14268?pageId=T1_272",
+      "alternateUrl": "https://www.persee.fr/doc/crai_0065-0536_1985_num_129_2_14268?pageId=T1_271",
+      "doi": "10.3406/crai.1985.14268",
+      "objectType": "author_original_scholarly_1985_article_archive_print_pp271_272_text_directly_read_not_entire_article",
+      "sourceRole": "LEMAIRE_1985_ATTRIBUTED_C14_FRANKEN1976_P16_POSSIBLE_AMOS_EARTHQUAKE",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "locator": "Persée original CRAI 129/2 pp270–285; targeted printed pages 271–272 direct archived text. P271 discusses Naveh vs Hackett/Cross palaeographic dating, primary Ibrahim/van der Kooij 1979 p50; p272 first paragraph quotes a C14 estimate circa 800 BCE with indicated 70-year margin and ~66% probability, note10 ATDA original 1976 p16. P272 note11 references Ibrahim/van der Kooij 1983 p583 on stratigraphy, and p272 links Amos 1:1 earthquake as possibility.",
+      "sourceObjectState": "Author Lemaire 1985 text p271–272 directly consulted in Persée page text. He asserts a circa 800 BCE radiocarbon estimate with +/- circa 70-year range and 66% stated probability sourced in a note to earlier ATDA (=Hoftijzer/van der Kooij 1976) p16. Actual original 1976 radiocarbon sample/granularity/calibration was NOT directly read; Persée text may have OCR flaws ('+ 70' instead of a plus-minus sign), no independently recalibrated date. Lemaire argues ~750 BCE plausible and tentatively connects destruction to Amos 1:1 famous earthquake; no proof same seismic event. 1979 field report says SOME samples were still under study then: may be different sample series; do not assert no C14 measurements existed before 1979, nor that the series are definitely identical/different without original sample IDs.",
+      "supportedUse": "Document historically reported radiocarbon evidence predating and cited by Lemaire 1985 without claiming first-edition ATDA 1976 p16 was inspected. Distinguish approximate C14 dates of burn layer from inscription production, hypothetical literary precursor, archaeologists' preliminary date, and conjectural linkage to biblical Amos 1:1 quake; source-bound citation + caveat.",
+      "forbiddenUse": "Claim direct independent reading of ATDA 1976 p16, raw sample identifiers/modern IntCal calibration, statistically established 750 BCE earthquake, proof of Amos 1:1 identification or publication date, assert 1979 report contradicted the earlier C14 result or that no earlier C14 analyses existed, reproduce journal pages without permission, mark epigraphic collation DONE.",
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "publicationState": "BLOCKED",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "carbonScope": "LEMAIRE1985_ATTRIBUTED_PRIOR_1976_P16_C14_CIRCA800_MARGIN70_PROBABILITY66_NOT_PRIMARY_SAMPLE_REVIEW",
+      "earthquakeScope": "LEMAIRE1985_AMOS1_1_EARTHQUAKE_SPECULATIVE_NOT_EVIDENCED_IDENTITY"
     }
   ],
-  "auditRevision": "NG12_ORIGINAL_ADAJ1979_PHASEIX_PRIMARY_ARCHAEOLOGICAL_DATING_TEXT_20261108"
+  "auditRevision": "NG12_LEMAIRE1985_C14_1976_P16_ATTRIBUTED_AND_AMOS_QUAKE_HOLD_20261108"
 }

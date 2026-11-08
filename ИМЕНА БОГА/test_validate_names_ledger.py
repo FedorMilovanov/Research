@@ -1159,6 +1159,18 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         row["imageScope"] = "ALL_ANCIENT_PLASTER_FACSIMILES_VISUALLY_COLLATED"
         self.assertTrue(any("PDF visual scope falsely promoted" in e for e in validate_source_access(d)))
 
+    def test_deir_alla_lemaire1985_atda_1976_p16_was_not_directly_checked(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-LEMAIRE-DEIRALLA-1985-RADIOCARBON-PP271272")
+        row["carbonScope"] = "1976_C14_SAMPLE_PHOTO_AND_MODERN_RECALIBRATION_DIRECTLY_VALIDATED"
+        self.assertTrue(any("radiocarbon provenance" in e for e in validate_source_access(d)))
+
+    def test_deir_alla_lemaire1985_amos1_1_earthquake_is_not_certain(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-LEMAIRE-DEIRALLA-1985-RADIOCARBON-PP271272")
+        row["earthquakeScope"] = "CERTAIN_MATCH_OF_AMOS_1_1_QUAKE_AND_DEIRALLA_DESTRUCTION"
+        self.assertTrue(any("Amos-earthquake conjecture" in e for e in validate_source_access(d)))
+
     def test_deir_alla_livius_translation_cannot_inherit_photo_cc0_rights(self) -> None:
         d = copy.deepcopy(self.sources)
         row = next(x for x in d["records"] if x["id"] == "SRC-LIVIUS-LEVINE-COMPOSITE-TRANSLATION-2003")
