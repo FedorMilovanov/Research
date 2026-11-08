@@ -35,6 +35,36 @@ class ReformationAdversarialTenTwelve(unittest.TestCase):
                 self.assertIn("REF-P", apparatus)
                 self.assertIn("HOLD", apparatus)
 
+    def test_reader_research_apparatus_separation_and_no_evidence_loss(self):
+        """After editing, witness locators stay in apparatus, not the reader."""
+        import re
+        for number in (10, 11, 12):
+            reader, apparatus = self.books[number].split("## Источниковедческий аппарат", 1)
+            with self.subTest(chapter=number):
+                self.assertGreaterEqual(len(reader.split()), 1700)
+                self.assertIsNone(re.search(r"\\bREF-[SP]\\d+|CATALOG_ONLY|DDE\\s+L\\d{3}", reader))
+                self.assertNotIn("COPY_DATE_CONFLICT_22_29_MAY_1599", reader)
+                self.assertIn("PUBLICATION_HOLD", self.books[number])
+                self.assertIn("REF-P", apparatus)
+        nant_reader, nant_notes = self.books[11].split("## Источниковедческий аппарат", 1)
+        self.assertIn("Перенесённые источниковедческие пояснения", nant_notes)
+        self.assertEqual(nant_notes.count("**Перенесённое пояснение "), 8)
+        for fact in ("13 апреля", "30 апреля", "статья XI", "93–95",
+                     "25 февраля 1599", "22 и 29 мая 1599 года"):
+            self.assertIn(fact.lower(), nant_reader.lower())
+        for proof in ("L198–231", "L423–463", "L926–935",
+                      "ORIGINAL_GENEVAN_COLLATION_HOLD", "EARLY_XI_COLLATION_HOLD",
+                      "COPY_DATE_CONFLICT_22_29_MAY_1599", "J//943/2"):
+            self.assertIn(proof, nant_notes)
+        lives_reader, lives_notes = self.books[12].split("## Источниковедческий аппарат", 1)
+        self.assertIn("Перенесённые справочные локаторы", lives_notes)
+        self.assertEqual(lives_notes.count("**Перенесённое пояснение "), 3)
+        self.assertIn("1524 году", lives_reader)
+        self.assertIn("1537 года", lives_reader)
+        for proof in ("REF-P06: CATALOG_ONLY / LOCATOR_MISSING",
+                      "StAZH B VI 249 fol.1r", "1883 года", "1542 года"):
+            self.assertIn(proof, lives_notes)
+
     def test_scots_and_english_legislation_not_conflated(self):
         s = self.books[10]
         for term in ("Supreme Head", "Supreme Governor", "1549", "1552", "1559",
