@@ -16,7 +16,7 @@
     "regressionTests": 165,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "SUCCESS_ON_PREVIOUS_REVIEWED_COMMIT_NEW_CH03_COMMIT_REQUIRES_EXACT_SHA_CI",
+    "allSixCiChecks": "SUCCESS_ON_PREVIOUS_CH03_SOURCE_REVIEW_COMMIT_086605ED_NEW_NG12_SHA_CI_REQUIRED",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 16,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "6051f077c5662c98ffbf02d73bac9b1461f8d671"
+    "lastConfirmedAllSixChecksSha": "086605ed00315b5e7434927e9b5f4f0d6098f901"
   },
   "allowedStatuses": [
     "DONE",
@@ -491,7 +491,15 @@
       "evidence": [
         "03_PATRIARCHAL_EL_TITLES_AND_REFERENTS.md",
         "06_HOSTS_JEALOUS_ROCK_HOLY_ADONAI_ELOHIM.md",
-        "09_EXTENSION_FORMS_LANGUAGE_AND_REFERENTS.md"
+        "09_EXTENSION_FORMS_LANGUAGE_AND_REFERENTS.md",
+        "reader/CH-PILOT-03_EL_ELOHIM_SHADDAI.md",
+        "03_PATRIARCHAL_EL_TITLES_AND_REFERENTS.md §3.3 NG12_20261108_SHADDAY_SOURCE_COMPARISON",
+        "BDB 1906 H7706 digital: https://biblehub.com/bdb/7706.htm",
+        "Wilson-Wright 2019 published article UT Austin PDF pp149-155,160: https://sites.utexas.edu/scripts/files/2020/10/2019-AWW-The-Helpful-God.pdf",
+        "Krogevoll 2025 publisher sample 26 PDF pages; printed pp19-25 https://www.vandenhoeck-ruprecht-verlage.com/media/pdf/f2/66/7f/9783647502274_sample.pdf",
+        "Dewrell 2024 VT 74/2 297-302 abstract https://doi.org/10.1163/15685330-bja10132",
+        "Angelini 2022 HBAI 11/3 235-249 abstract https://www.mohrsiebeck.com/en/article/divine-names-from-the-hebrew-bible-to-the-septuagint-methodological-remarks-and-a-case-study-101628hebai-2022-0032/",
+        "Kruger 2023 In die Skriflig 57/1 available HTML https://www.scielo.org.za/scielo.php?pid=S2305-08532023000100037&script=sci_arttext"
       ],
       "verification": "NOT_APPLICABLE_UNTIL_DONE",
       "closureAt": null,
@@ -685,7 +693,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "Three reader manuscripts CH01 (2 internal passes), CH02 (1), CH03 (2) drafted and internally revised; obtain independent qualified scholarly peer review of existing manuscripts and separate full critical source/rights work. Confirmed shorter Shaddai in Naomi Ruth1:20-21 and Eliphaz Job5:17 bounded by Job42:7. NG12, NG04/05, NG13 scholarly and Product remain HOLD. Do not create another reader chapter or duplicate source registry automatically.",
+  "nextAction": "CH01-03 reader manuscripts drafted, internally checked, 0 externally approved. NG12 Shadday subtopic exact opposing etymologies sourced at full/partial/abstract tiers and reader updated, but NG12 still BLOCKED_SOURCE: targeted full Krogevoll 2025 pp51-108, Dewrell 2024 297-302, Angelini 2022 235-249, HALOT and original Semitic witness + remaining El/Elohim/Eloah/Sabaoth; obtain qualified independent scholarly peer reviews, rights, critical editions before approval. NO generalized new author search.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -767,7 +775,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-08",
-    "planStatus": "NG02 Research graph DONE; NG03 editorial supersession 10/10 DONE; CH01/CH02/CH03 2/1/2 internal passes complete, 0 independent scholarly approvals and 0 editorial acceptances, critical/rights/Product HOLD.",
+    "planStatus": "NG02 technical DONE; NG03 editorial DONE; 3 connected reader manuscripts 2/1/2 internal passes; NG12_SHADDAY competing academic positions reconciled BDB/Wilson-Wright/Krogevoll/Dewrell/Angelini/Kruger by exact access, full historical etymology and other lexemes blocked; 0 external scholarly approvals, rights/Product HOLD.",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -851,7 +859,8 @@
       "2026-11-08: Wrote a second ~2700-word connected CH-PILOT-02 reader draft, Exodus 3/6 and LXX publisher HTML, covenant fulfillment vs historical literary alternative with attributed Rashi/Calvin and author-specific science limits. Separate evidence/rights appendix, no new registry IDs, no external publishing.",
       "2026-11-08: CH-PILOT-02 first internal adversarial check corrected exact Exod6:3 vocalized נוֹדַעְתִּי in apparatus, kept source attribution for NET/Rashi/Calvin and clear digital Greek-vs-manuscript boundary; no external peer review.",
       "2026-11-08: CH-PILOT-03 third connected reader manuscript on El, Elohim and Shaddai written (~2800 words with separate scholarly appendix). Original MT Gen1/14/17/28/35, Ex6/20, Ps91, Deut32, Isa43, Aramaic Dan2 and scholarly Suchard 2025 compared. First internal adversarial pass named Cargill 2019 abstract-only explicitly, fixed Ps91/90 numbering; all manuscripts still external-scholarly HOLD, no content registry or Product writes.",
-      "2026-11-08: second internal source/text review CH-PILOT-03: added Ruth1:20-21 Naomi's Shaddai without El + Job5:17 Eliphaz's Shaddai bounded by Job42:7; editorial source bullets for exact MT, verified Exodus20:2 MT vs Synodal20:2–3 numbering with independently opened text. Scientific/rights/peer gates stay HOLD."
+      "2026-11-08: second internal source/text review CH-PILOT-03: added Ruth1:20-21 Naomi's Shaddai without El + Job5:17 Eliphaz's Shaddai bounded by Job42:7; editorial source bullets for exact MT, verified Exodus20:2 MT vs Synodal20:2–3 numbering with independently opened text. Scientific/rights/peer gates stay HOLD.",
+      "2026-11-08: NG12 source-limited substantive etymology advance in ORIGINAL dossier 03 and reader CH03: checked BDB H7706 actual digital entry; Wilson-Wright 2019 UT Austin published PDF pp149-155,160; Krogevoll 2025 publisher 26-page PDF sample and printed pp19-25 with main chapter3/4 inaccessible; Dewrell 2024 and Angelini 2022 publisher abstracts; Kruger 2023 full HTML selected paragraphs. Conflicting Helper vs Destroyer vs Mountain explicitly attributed; source rights and original critical HOLD kept, 0 claims promoted; no new source registry IDs."
     ],
     "stillOpen": [
       "External Product/Arena consumers and zip prototypes still NOT independently authenticated by exact deployment/build; no dual-read v2 test witness",
@@ -924,7 +933,7 @@
   "editorialExecution": {
     "asOf": "2026-11-08",
     "owner": "ИМЕНА БОГА/11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md §0a/§3b",
-    "state": "THREE_READER_MANUSCRIPTS_TWO_INTERNAL_PASSES_CH01_CH03_ONE_CH02_ZERO_EXTERNAL_APPROVALS",
+    "state": "THREE_READER_MANUSCRIPTS_REVISED_NG12_SHADDAY_CONFLICT_SOURCE_BOUNDED_NO_SCHOLARLY_APPROVAL",
     "readerChapterCountApproved": null,
     "subjectDirectionsProvisional": 14,
     "readerManuscriptsAccepted": 0,
@@ -993,7 +1002,63 @@
       "CH-PILOT-02",
       "CH-PILOT-03"
     ],
-    "nextDistinctReaderQuestion": "UNSELECTED: assess distinct topic against 14 provisional directions and available sources after checking editorial reviews; no automatic CH-PILOT-04."
+    "nextDistinctReaderQuestion": "UNSELECTED: assess distinct topic against 14 provisional directions and available sources after checking editorial reviews; no automatic CH-PILOT-04.",
+    "ng12ShaddaySubtopic": {
+      "state": "COMPETING_HYPOTHESES_RECONCILED_WITH_EXACT_SOURCES_ETYM_HOLD",
+      "asOf": "2026-11-08",
+      "readerFile": "ИМЕНА БОГА/reader/CH-PILOT-03_EL_ELOHIM_SHADDAI.md",
+      "sourceMatrix": "ИМЕНА БОГА/03_PATRIARCHAL_EL_TITLES_AND_REFERENTS.md §3.3",
+      "namedPositions": [
+        {
+          "author": "Aren M. Wilson-Wright",
+          "year": 2019,
+          "meaning": "HELPER",
+          "access": "PUBLISHED_ORIGINAL_SELECTED_PP_149_155_160_READ"
+        },
+        {
+          "author": "Heath D. Dewrell",
+          "year": 2024,
+          "meaning": "DESTROYER",
+          "access": "ABSTRACT_ONLY"
+        },
+        {
+          "author": "Aleksander Krogevoll",
+          "year": 2025,
+          "meaning": "MOUNTAIN",
+          "access": "PUBLISHER_SAMPLE_TOC_PRINTED_PP_19_25_READ_FULL_CH3_4_HOLD"
+        },
+        {
+          "author": "Anna Angelini",
+          "year": 2022,
+          "meaning": "GREEK_TRANSLATION_HISTORY_VARIABLE",
+          "access": "PUBLISHER_ABSTRACT_ONLY"
+        },
+        {
+          "author": "Brown-Driver-Briggs",
+          "year": 1906,
+          "meaning": "ETYMOLOGY_DUBIOUS_ALTERNATIVE_HISTORICAL_HYPOTHESES",
+          "access": "FULL_DIGITAL_LEXICON_ENTRY_H7706_READ"
+        },
+        {
+          "author": "Margaretha J. Kruger",
+          "year": 2023,
+          "meaning": "CONTEXTUAL_PRAGMATIC_JOBS_SPEECH_AND_MULTIPLE_ETYMOLOGIES",
+          "access": "PUBLISHER_FULL_HTML_SELECTED_SECTIONS_READ"
+        }
+      ],
+      "unresolved": [
+        "HALOT_FULL_LEXICON_ENTRY",
+        "KROGEVOLL_2025_CH3_PP51_78_CH4_PP79_108",
+        "DEWRELL_2024_FULL_ARTICLE_PP297_302",
+        "ANGELINI_2022_FULL_ARTICLE_PP235_249",
+        "ORIGINAL_AKKADIAN_UGARITIC_DEIR_ALLA_WITNESSES",
+        "OTHER_LEXEMES_EL_ELOHIM_ELOAH_SABAOTH_IN_NG12",
+        "INDEPENDENT_SCHOLARLY_PEER_REVIEW",
+        "LICENSE_AND_PRODUCT_APPROVAL"
+      ],
+      "scientificApproval": false,
+      "editorialVerdict": "NO_UNIQUELY_ATTESTED_ETYM; traditional Almighty translation history is not derivation; confident modern alternatives are author-specific and directly conflict; keep Shadday original in key reader passages; all critical and Product holds unchanged."
+    }
   },
   "systematicTheologyTriage": {
     "asOf": "2026-11-08",
