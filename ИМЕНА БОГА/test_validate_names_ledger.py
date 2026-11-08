@@ -1515,5 +1515,25 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                             for e in validate_source_access(d)))
 
 
+
+    def test_4q120_historical_composite_is_not_proven_same_fragment_as_2015(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-IAA-DSS-4Q120-B503715-2015")
+        row["historicalCompositeNegatives20261108"]["candidates"][0]["sameFragmentAsB503715"] = True
+        self.assertTrue(any("historical composite negatives" in e for e in validate_source_access(d)))
+
+    def test_4q120_historical_composite_is_not_sign_level_iaw_evidence(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-IAA-DSS-4Q120-B503715-2015")
+        row["historicalCompositeNegatives20261108"]["candidates"][1]["signLevelIaoReadingVerified"] = True
+        self.assertTrue(any("historical composite negatives" in e for e in validate_source_access(d)))
+
+    def test_4q120_historical_composite_malformed_image_id_is_validation_error(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-IAA-DSS-4Q120-B503715-2015")
+        row["historicalCompositeNegatives20261108"]["candidates"][0]["imageId"] = []
+        self.assertTrue(any("historical composite negatives" in e for e in validate_source_access(d)))
+
+
 if __name__ == "__main__":
     unittest.main()
