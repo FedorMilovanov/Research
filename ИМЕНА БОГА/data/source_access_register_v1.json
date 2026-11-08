@@ -1189,26 +1189,29 @@
       "title": "J. Hoftijzer and G. van der Kooij (eds.), The Balaam Text from Deir 'Alla Re-Evaluated, Brill (1991), digitized by NYU Ancient World Digital Library",
       "creator": "J. Hoftijzer; G. van der Kooij (eds.)",
       "year": 1991,
-      "url": "https://sites.dlib.nyu.edu/viewer/books/brill_awdl000034/3",
-      "alternateUrl": "https://mc.dlib.nyu.edu/files/books/brill_awdl000034/brill_awdl000034_lo.pdf",
+      "url": "https://mc.dlib.nyu.edu/files/books/brill_awdl000034/brill_awdl000034_lo.pdf",
+      "alternateUrl": "https://sites.dlib.nyu.edu/viewer/books/brill_awdl000034/3",
       "objectType": "complete_digitized_peer_scholarly_symposium_volume_selected_original_chapters_read_via_ocr",
       "sourceRole": "DEIR_ALLA_CONTESTED_EARLY_INSCRIPTION_READING_AND_BIBLICAL_SHADDAY_RELATION",
-      "locator": "Jo Ann Hackett, 'Response to Baruch Levine and André Lemaire,' printed pp. 73–86 (especially 76–77); Jonas C. Greenfield, 'Philological Observations on the Deir Alla Inscription,' 109–120; J. Hoftijzer, 'What Did the Gods Say?', 121–141; Manfred Weippert, 151–184 (especially 169–170)",
+      "locator": "Brill original 1991 symposium print Hackett 76–77 (ʾlhn/šdyn as one group), 80–81 (older manuscript criticism); Hoftijzer 121–122 (editio princeps line 8 vs Caquot Lemaire line 6), 135–137 (fragment Ic space / tpry discourse), Weippert 169–170 (šēdîm/šaddayyîm objection), 176 (no demonstrated direct Numbers dependence); original NYU volume parsed OCR only, image screenshots fail 48MB limit.",
       "accessState": "PARTIAL_OBJECT",
-      "locatorState": "COARSE_LOCATOR_ONLY",
-      "sourceObjectState": "Complete NYU scan confirmed; indexed original 1991 scholarly text/contents directly read, including Hackett 76–77 on one versus rival assemblies of ʾlhn and šdyn, selected Greenfield, Hoftijzer, and Weippert pages. OCR of ancient forms may be corrupt. Screenshot service rejected whole PDF as too large; exact page facsimile and original plaster remain uncollated.",
-      "supportedUse": "Compare conflicting scholarly arguments on šdyn and biblical šēdîm/Šadday, distinguish epigraphic reading from conjectural biblical connection, and locate original published pages for image-level verification. Cite Hackett's specific disagreement with Levine over whether šdyn and ʾlhn constitute one divine assembly or two opposed groups.",
-      "forbiddenUse": "Claim independent inspection of Deir 'Alla fragments, exact Hebrew spelling based solely on OCR, established identification of šdyn with biblical El Shadday, quotation-safe transcription, or permission to republish Brill pages.",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "sourceObjectState": "Authentic Brill 1991 symposium entire scan served by NYU; original scholarly printed-page locators and selected author arguments directly inspected via machine-extracted text: Hackett pp76–77,80–81, Hoftijzer pp121–122,135–137, Weippert pp169–170,176. PDF screenshot service rejects ~48MB object; no proof that OCR faithfully preserves Aramaic/Hebrew signs and no first-hand inspection of ancient 1967 plaster or 1976 original 33 plates. This is not full page-by-page review of the 1991 book.",
+      "supportedUse": "Compare conflicting scholarly arguments on šdyn and biblical šēdîm/Šadday, distinguish epigraphic reading from conjectural biblical connection, and locate original published pages for image-level verification. Cite Hackett's specific disagreement with Levine over whether šdyn and ʾlhn constitute one divine assembly or two opposed groups. Current selected-page originals support precise 1976/1977 line-number crosswalk; editor Hoftijzer's placement/verb criticism; Hackett's one-council reading and nuanced earlier manuscript objection; Weippert's direct counterargument to biblical shedim revocalization and warning against literary-dependence claims.",
+      "forbiddenUse": "Claim independent inspection of Deir 'Alla fragments, exact Hebrew spelling based solely on OCR, established identification of šdyn with biblical El Shadday, quotation-safe transcription, or permission to republish Brill pages. Never call selected 1991 OCR a visual autopsy of the publisher plate, original 1976 page173 or the plaster; never treat line I.8(6) as independent witnesses, treat a 1984 vocalization as preserved vowels, or claim 1991 scholarly consensus.",
       "evidenceClass": "B1",
       "criticalEditionCollated": false,
       "rightsState": "PERMISSION_REQUIRED",
       "publicationState": "BLOCKED",
       "holds": [
-        "LOCATOR_HOLD",
         "EVIDENCE_HOLD",
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
-      ]
+      ],
+      "exact1991SourceScope": "NYU_1991_BRILL_ORIGINAL_SCHOLARLY_SCAN_SELECTED_PRINT_PAGES_HACKETT_76_77_80_81_HOFTIJZER_121_122_135_137_WEIPPERT_169_170_176_OCR_NO_SCREENSHOT",
+      "lineConcordance1991": "HOFTIJZER_1991_PRINT_P121_NOTE_EDITIO_PRINCEPS_I8_CAQUOT_LEMAIRE1977_I6_BRACKETED_NOT_TWO_WITNESSES",
+      "scholarshipBoundary1991": "WEIPPERT1991_P170_REJECTS_HACKETT_SHEDIM_REVOCALIZATION_P176_DIRECT_NUMBERS_DEPENDENCE_AMBIGUOUS_HACKETT_P80_81_DOES_NOT_PROVE_ANCIENT_SCROLL",
+      "visualAutopsy1991": "1991_FULL_NYU_PDF_CRAWLER_TEXT_ONLY_48MB_WEB_SCREENSHOT_FAILED_1976_P173_AND_33_PLATES_NOT_COLLATED"
     },
     {
       "id": "SRC-DEIRALLA-STEINER-WAGEMAKERS-2019",
@@ -1812,5 +1815,5 @@
       "original1976Boundary": "1976_P173_CITED_SECONDHAND_IN_2023_THIRD_PARTY_OCR_NOT_DIRECT_ORIGINAL_1976_TRANSCRIPTION_OR_33_PLATES"
     }
   ],
-  "auditRevision": "NG12_HACKETT1984_SELECTED_SCRIBD_OCR_AND_ELLIFF_COLEMAN2023_PUBLISHER_ABSTRACT_WITH_ACCESS_BOUNDARIES_20261108"
+  "auditRevision": "NG12_1991_BRILL_NYU_DIRECT_SELECTED_PAGES_HOFTIJZER_HACKETT_WEIPPERT_20261108"
 }

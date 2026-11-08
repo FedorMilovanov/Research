@@ -1275,5 +1275,30 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("Elliff Coleman 2023 I.6 hypothesis" in e for e in validate_source_access(d)))
 
 
+    def test_hoftijzer_1991_nyu_selected_pages_cannot_become_direct_ancient_autopsy(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-DEIRALLA-SYMPOSIUM-1991-NYU")
+        row["exact1991SourceScope"] = "COMPLETE_1991_FACSIMILE_PHOTOCOLLATED"
+        self.assertTrue(any("1991 symposium selected-page text scope" in e for e in validate_source_access(d)))
+
+    def test_hoftijzer_1991_1976_1977_line_concordance_not_two_inscriptions(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-DEIRALLA-SYMPOSIUM-1991-NYU")
+        row["lineConcordance1991"] = "I8_AND_I6_INDEPENDENT_ANCIENT_WITNESSES"
+        self.assertTrue(any("1976/1977 line concordance conflated" in e for e in validate_source_access(d)))
+
+    def test_weippert_1991_shedim_and_numeri_dependence_not_consensus(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-DEIRALLA-SYMPOSIUM-1991-NYU")
+        row["scholarshipBoundary1991"] = "PROVED_SHEDIM_EQUALS_SHADDAY_AND_DIRECT_NUMBERS_DEPENDENCE"
+        self.assertTrue(any("1991 scholarly dispute on shedim" in e for e in validate_source_access(d)))
+
+    def test_hoftijzer_1991_ocr_cannot_be_marked_as_plaster_plate_collation(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-DEIRALLA-SYMPOSIUM-1991-NYU")
+        row["visualAutopsy1991"] = "1976_P173_AND_33_PLATES_AND_ANCIENT_GRAPHEMES_READ"
+        self.assertTrue(any("1991 text-only OCR promoted" in e for e in validate_source_access(d)))
+
+
 if __name__ == "__main__":
     unittest.main()

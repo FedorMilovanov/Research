@@ -418,7 +418,7 @@ EXPECTED_SOURCE_ROLES = {
 # These are source-specific, closed-review provenance locks. They do NOT authorize
 # Product publication: the per-record publicationState remains BLOCKED.
 DEIR_ALLA_SOURCE_GUARDS = {
-    "SRC-DEIRALLA-SYMPOSIUM-1991-NYU": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED", "COARSE_LOCATOR_ONLY"),
+    "SRC-DEIRALLA-SYMPOSIUM-1991-NYU": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED", "EXACT_LOCATOR_VERIFIED"),
     "SRC-DEIRALLA-STEINER-WAGEMAKERS-2019": ("PARTIAL_OBJECT", "RIGHTS_UNKNOWN", "COARSE_LOCATOR_ONLY"),
     "SRC-DEIRALLA-BLUM-EBR-2013": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED", "EXACT_LOCATOR_VERIFIED"),
     "SRC-DEIRALLA-HOFTIJZER-VANDERKOOIJ-1976-CONTENTS": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED", "EXACT_LOCATOR_VERIFIED"),
@@ -572,6 +572,15 @@ def validate_source_access(sources: dict) -> list[str]:
             if (source.get("comparisonBoundary") != "PUBLISHER_ABSTRACT_CONFIRMS_CONTESTED_SHAMASH_TPRY_FASTEN_PROPOSAL_NOT_ACCEPTED_CONSENSUS"
                 or source.get("original1976Boundary") != "1976_P173_CITED_SECONDHAND_IN_2023_THIRD_PARTY_OCR_NOT_DIRECT_ORIGINAL_1976_TRANSCRIPTION_OR_33_PLATES"):
                 errors.append(f"{prefix}: Elliff Coleman 2023 I.6 hypothesis or original 1976 access overstated")
+        if rid == "SRC-DEIRALLA-SYMPOSIUM-1991-NYU":
+            if source.get("exact1991SourceScope") != "NYU_1991_BRILL_ORIGINAL_SCHOLARLY_SCAN_SELECTED_PRINT_PAGES_HACKETT_76_77_80_81_HOFTIJZER_121_122_135_137_WEIPPERT_169_170_176_OCR_NO_SCREENSHOT":
+                errors.append(f"{prefix}: 1991 symposium selected-page text scope or image proof overclaimed")
+            if source.get("lineConcordance1991") != "HOFTIJZER_1991_PRINT_P121_NOTE_EDITIO_PRINCEPS_I8_CAQUOT_LEMAIRE1977_I6_BRACKETED_NOT_TWO_WITNESSES":
+                errors.append(f"{prefix}: original Hoftijzer 1991 1976/1977 line concordance conflated")
+            if source.get("scholarshipBoundary1991") != "WEIPPERT1991_P170_REJECTS_HACKETT_SHEDIM_REVOCALIZATION_P176_DIRECT_NUMBERS_DEPENDENCE_AMBIGUOUS_HACKETT_P80_81_DOES_NOT_PROVE_ANCIENT_SCROLL":
+                errors.append(f"{prefix}: 1991 scholarly dispute on shedim and ancient scroll falsely resolved")
+            if source.get("visualAutopsy1991") != "1991_FULL_NYU_PDF_CRAWLER_TEXT_ONLY_48MB_WEB_SCREENSHOT_FAILED_1976_P173_AND_33_PLATES_NOT_COLLATED":
+                errors.append(f"{prefix}: 1991 text-only OCR promoted to ancient plate/image autopsy")
         if rid in DEIR_ALLA_SOURCE_GUARDS:
             required_state = DEIR_ALLA_SOURCE_GUARDS[rid]
             actual_state = (source.get("accessState"), source.get("rightsState"), source.get("locatorState"))
