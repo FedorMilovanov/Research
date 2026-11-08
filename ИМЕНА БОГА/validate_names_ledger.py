@@ -614,10 +614,19 @@ def validate_source_access(sources: dict) -> list[str]:
         if rid == "SRC-DANS-TELL-DEIRALLA-SLIDES-ARCHIVE-XS5-KPQN":
             if source.get("archiveDatasetIdentityBoundary") != "DANS_ARCHIVE_SLIDES_DATASET_10_17026_DANS_XS5_KPQN_1960_2009_FIELDWORK_CONTAINS_NO_VERIFIED_LIST_OF_1967_BALAAM_FRAGMENT_FILES":
                 errors.append(f"{prefix}: DANS excavation Slides dataset cannot become direct 1967 Balaam inscription image evidence")
-            if source.get("archiveFileAccessBoundary") != "B2FIND_METADATA_AND_LEIDEN_DESCRIPTION_ONLY_CATALOG_OPEN_CC_BY4_NOT_AUDITED_FILE_IMAGE_RIGHTS_OR_ORIGINAL_1976_PLATES":
+            if source.get("archiveFileAccessBoundary") != "DANS_OFFICIAL_DATAVERSE_API_SLIDES_NEGATIVES_PAPER_THREE_COMPLETE_FILE_METADATA_MANIFESTS_READ_NO_INDIVIDUAL_IMAGE_BYTES_OR_1976_PLATES_NO_VERIFIED_RIGHTS":
                 errors.append(f"{prefix}: DANS catalog level CC BY4/metadata cannot become exact image file or 1976 plate license")
             if source.get("archiveCollectionSeparationBoundary") != "DANS_SLIDES_XS5_KPQN_DISTINCT_FROM_PAPER_ARCHIVE_X4N_WKHU_AND_FROM_BRILL_1976_FRONT2_AND_P29_DRAWING":
                 errors.append(f"{prefix}: DANS Slides, Paper Archive and Brill drawing must stay separate objects")
+        if rid == "SRC-DANS-TELL-DEIRALLA-SLIDES-ARCHIVE-XS5-KPQN":
+            if source.get("archiveSlidesManifestEvidence") != "DANS_OFFICIAL_2026_DATAVERSE_PUBLISHED_SLIDES_MANIFEST_2560_FILES_DIRECTORY_YEARS_1978_TO_2004_NO_1967_LABELS_OR_BALAAM_PLASTER_FILENAMES":
+                errors.append(f"{prefix}: DANS slides 1960-2009 dataset abstract is not a 1967 file inventory")
+            if source.get("archiveNegativesManifestEvidence") != "DANS_OFFICIAL_2026_DATAVERSE_PUBLISHED_NEGATIVES_MANIFEST_4012_FILES_EARLIEST_LABELLED_1976_NO_1967_BALAAM_INSCRIPTION_FILENAME_OR_DIRECTORY":
+                errors.append(f"{prefix}: DANS negatives 1976+ must not be described as original 1967 field negatives")
+            if source.get("archivePaperManifestEvidence") != "DANS_OFFICIAL_2026_DATAVERSE_PUBLISHED_PAPER_MANIFEST_1389_FILES_EARLIEST_LABELLED_1976_ONE_1996_PDF_FILENAME_1967SECTIONS_DOES_NOT_PROVE_ORIGINAL_1967_IMAGE":
+                errors.append(f"{prefix}: DANS 1996 paper filename containing 1967 is not a 1967 photograph")
+            if source.get("archiveHistoricCustodyNotCurrentProof") != "DANS_HISTORICAL_2019_METADATA_1960_1967_SUBARCHIVE_AT_LEIDEN_UNIVERSITY_PLANNED_TRANSFER_RMO_NOT_VERIFIED_2026_TRANSFER_RMO_2011_OBJECTS_NOT_FIELD_PHOTO_PROOF":
+                errors.append(f"{prefix}: historical planned Leiden-to-RMO transfer is not verified current archive custody")
         if rid in DEIR_ALLA_SOURCE_GUARDS:
             required_state = DEIR_ALLA_SOURCE_GUARDS[rid]
             actual_state = (source.get("accessState"), source.get("rightsState"), source.get("locatorState"))

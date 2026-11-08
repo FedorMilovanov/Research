@@ -13,10 +13,10 @@
     "extensionRecords": 13,
     "contextAttestations": 105,
     "sourceRegisterEntries": 75,
-    "regressionTests": 217,
+    "regressionTests": 221,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_0C741C9_ALL_SIX_SUCCESS_NEW_DANS_ORIGINAL_ARCHIVE_METADATA_CI_PENDING",
+    "allSixCiChecks": "PRIOR_F85988B_ALL_SIX_SUCCESS_NEW_DANS_THREE_MANIFEST_CUSTODY_CORRECTION_CI_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 17,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "0c741c95145ef307686a44b0e058ef373a1e1955"
+    "lastConfirmedAllSixChecksSha": "f85988bac9d8bc70b9149e4db865e981eb585273"
   },
   "allowedStatuses": [
     "DONE",
@@ -533,7 +533,8 @@
         "Original SBL 2015 Pat-El/Wilson-Wright pp13–24 four academic language positions, authors argue Canaanite based on relative 'sh and G absolute/construct infinitives, screenshot PDF 403 OCR text only https://www.sbl-site.org/wp-content/uploads/2025/01/9780884140801_OA.pdf",
         "1976 acquisition target refined by secondary Way 2011 p63n186 and UCLA Donnelly-Lewis 2023 fig8.3 p380: 1976 Plate3 and Plate29 Combination I fragment d line12, not proven same letters as sdyn; original 1976 173–178, 179–182 and plate scans not read https://escholarship.org/content/qt983511cd/qt983511cd_noSplash_c2f3faddffc6ebaf53da67313b0619b0.pdf",
         "Publisher-authored 1976 original 'List of Plates' Brill front-2.pdf text inspected: PL1=I(a) colour, PL2=I(c) colour, PL3=I(d) colour, PL9+10 fragment details, PL27+28 sign detail drawings, PL29 explicitly EDITORIAL DRAWING of combination i not photograph; screenshot 403, body p173/actual plates NOT seen https://brill.com/edcollchap/book/9789004670327/front-2.pdf",
-        "DANS original Tell Deir Alla 1960-2009 excavation Slides catalog (B2FIND verified) DOI:10.17026/dans-xs5-kpqn, metadata says CC BY4; Leiden University 2018 confirms negatives/colour slides, distinct Paper Archive DOI:10.17026/dans-x4n-wkhu. DANS file listing blocked Anubis, 1967 Balaam file IDs/image rights/material NOT inspected; only archival acquisition route, no 1976 plate or p173 autopsy https://doi.org/10.17026/dans-xs5-kpqn"
+        "DANS original Tell Deir Alla 1960-2009 excavation Slides catalog (B2FIND verified) DOI:10.17026/dans-xs5-kpqn, metadata says CC BY4; Leiden University 2018 confirms negatives/colour slides, distinct Paper Archive DOI:10.17026/dans-x4n-wkhu. DANS file listing blocked Anubis, 1967 Balaam file IDs/image rights/material NOT inspected; only archival acquisition route, no 1976 plate or p173 autopsy https://doi.org/10.17026/dans-xs5-kpqn",
+        "Direct official DANS Dataverse read-only JSON metadata files for 3 2026 published datasets: Slides DOI 10.17026/dans-xs5-kpqn 2560 names/folders 1978-2004, Negatives DOI 10.17026/dans-zfm-9dx2 4012 names earliest 1976, Paper DOI 10.17026/dans-x4n-wkhu 1389 earliest 1976; only filename 1967 in 1996 PDF ID 3959575. No file content viewed. Historical metadata says original 1960-67 archive at Leiden University planned transfer to RMO (not verified complete). RMO site separately verifies artifact-collection transfer 2011, not photo negatives. Relevant archival contact m.bulsink@rmo.nl. NO original p173/plates or independent palaeographic autopsy."
       ],
       "verification": "NOT_APPLICABLE_UNTIL_DONE",
       "closureAt": null,

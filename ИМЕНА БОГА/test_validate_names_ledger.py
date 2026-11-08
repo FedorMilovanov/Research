@@ -1382,5 +1382,30 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("DANS Slides, Paper Archive and Brill drawing" in e for e in validate_source_access(d)))
 
 
+    def test_dans_2560_slide_manifest_has_no_dated_1967_directory(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-DANS-TELL-DEIRALLA-SLIDES-ARCHIVE-XS5-KPQN")
+        row["archiveSlidesManifestEvidence"] = "ARCHIVE_HAS_1967_BALAAM_DIRECT_PHOTOS"
+        self.assertTrue(any("DANS slides 1960-2009 dataset abstract" in e for e in validate_source_access(d)))
+
+    def test_dans_4012_negatives_manifest_1976_start_does_not_prove_1967_images(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-DANS-TELL-DEIRALLA-SLIDES-ARCHIVE-XS5-KPQN")
+        row["archiveNegativesManifestEvidence"] = "DANS_1967_NEGATIVES_PHOTO_INDEX_VERIFIED"
+        self.assertTrue(any("DANS negatives 1976+" in e for e in validate_source_access(d)))
+
+    def test_dans_paper_archive_1996_1967sections_filename_not_1967_photo(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-DANS-TELL-DEIRALLA-SLIDES-ARCHIVE-XS5-KPQN")
+        row["archivePaperManifestEvidence"] = "1996_PDF_PROVES_ORIGINAL_1967_BALAAM_NEGATIVE"
+        self.assertTrue(any("DANS 1996 paper filename" in e for e in validate_source_access(d)))
+
+    def test_leiden_rmo_transfer_intent_and_2011_objects_not_proof_of_photo_custody(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-DANS-TELL-DEIRALLA-SLIDES-ARCHIVE-XS5-KPQN")
+        row["archiveHistoricCustodyNotCurrentProof"] = "RMO_1967_BALAAM_PHOTO_NEGATIVES_VERIFIED_IN_POSSESSION"
+        self.assertTrue(any("historical planned Leiden-to-RMO transfer" in e for e in validate_source_access(d)))
+
+
 if __name__ == "__main__":
     unittest.main()
