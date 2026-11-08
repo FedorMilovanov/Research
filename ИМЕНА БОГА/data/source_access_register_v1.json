@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 75,
+    "sourceRecords": 77,
     "approvedForProduct": 0
   },
   "records": [
@@ -1934,7 +1934,60 @@
       "rmoArchiveContactPage": "https://archieven.rmo.nl/bezoeken/",
       "rmoPhotoServicePage": "https://www.rmo.nl/en/research/photo-service/",
       "original1967Availability": "NOT_VERIFIED_IN_PUBLISHED_2026_DANS_METADATA_FOLDERS_OR_FILENAMES_NOT_A_CLAIM_ABOUT_UNINDEXED_FILES_OR_UNPUBLISHED_ARCHIVES"
+    },
+    {
+      "id": "SRC-HOFTIJZER-BALAAM-ARTICLE-1976-BA39-1",
+      "title": "J. Hoftijzer, The Prophet Balaam in a 6th Century Aramaic Inscription, The Biblical Archaeologist 39/1 (March 1976), 11–17 (publisher metadata and abstract only)",
+      "creator": "Jacob Hoftijzer",
+      "year": 1976,
+      "url": "https://doi.org/10.2307/3209412",
+      "linkedErratumId": "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3",
+      "linkedErratumUrl": "https://doi.org/10.2307/3209398",
+      "objectType": "journal_article_publisher_metadata_and_abstract_only_not_1976_Brill_editio_princeps",
+      "sourceRole": "EARLY_DEIR_ALLA_PUBLICATION_WITH_FORMALLY_PUBLISHED_CORRIGENDUM_ACCESS_HOLD",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "sourceObjectState": "University of Chicago Press official 1976 journal page directly confirms author, original title, March 1 1976, BA volume 39 issue 1 pages 11–17, DOI and publisher abstract. Paywalled article PDF and any original 1967 photo NOT examined. An official separate erratum to THIS JOURNAL ARTICLE appears in September 1976 issue 39/3 p87; full correction content is paywalled and UNKNOWN. This record is different from Hoftijzer/van der Kooij 1976 Brill critical edition.",
+      "locator": "The Biblical Archaeologist 39/1 (1976), 11–17, DOI 10.2307/3209412; article's officially registered erratum BA 39/3 (1976), p87, DOI 10.2307/3209398.",
+      "supportedUse": "Identify both original and erratum as a pair for future institutional retrieval and check whether article's text/photo/caption requires correction before reliance. The historical sixth-century wording belongs to the ORIGINAL TITLE; it is not accepted as the current date of the Deir Alla inscription.",
+      "forbiddenUse": "Claim text of article, images, exact erratum wording, corrected epigraphy or photographs were read; assume the erratum changed the dating or transcription; cite headline '6th century' as proven dating; equate this article with separate 1976 Brill monograph.",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "LOCATOR_CONTENT_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "criticalEditionCollated": false
+    },
+    {
+      "id": "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3",
+      "title": "Erratum: The Prophet Balaam in a 6th-Century Aramaic Inscription, The Biblical Archaeologist 39/3 (1 September 1976), 87",
+      "creator": "The Biblical Archaeologist / ASOR (publisher erratum; authorship not separately confirmed)",
+      "year": 1976,
+      "url": "https://doi.org/10.2307/3209398",
+      "correctingSourceId": "SRC-HOFTIJZER-BALAAM-ARTICLE-1976-BA39-1",
+      "objectType": "publisher_registered_erratum_catalog_only_text_paywalled",
+      "sourceRole": "ORIGINAL_1976_JOURNAL_ARTICLE_CORRECTION_TO_FETCH_BEFORE_EXEGETICAL_RELIANCE",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "locator": "The Biblical Archaeologist 39/3 (1 September 1976), p.87; DOI 10.2307/3209398, publisher's official bibliographic listing.",
+      "sourceObjectState": "Publisher page independently verifies erratum title, date, issue, page and DOI. Publisher's full-text view leads to restricted access; correction text and any images were NOT retrieved. No causal assertion about what was fixed.",
+      "supportedUse": "Warn researchers that the initial March 1976 article has a formal published erratum requiring full-text verification before precise quotation or illustration comparison.",
+      "forbiddenUse": "Invent the erratum's correction, claim it changes century, name, reading, photograph or date, use it as original 1976 Brill page 173 or as evidence of independent palaeographic collation.",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "LOCATOR_CONTENT_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "criticalEditionCollated": false
     }
   ],
-  "auditRevision": "NG12_DANS_OFFICIAL_DATAVERSE_THREE_FULL_MANIFESTS_7961_FILES_NO_1967_LABELLED_ARCHIVE_RMO_CUSTODY_UNVERIFIED_20261108"
+  "auditRevision": "NG12_1976_EARLY_HOFTIJZER_JOURNAL_AND_OFFICIAL_ERRATUM_BIBLIOGRAPHIC_GATE_20261108"
 }
