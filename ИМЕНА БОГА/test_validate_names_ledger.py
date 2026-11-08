@@ -1423,3 +1423,16 @@ if __name__ == "__main__":
         row["sourceObjectState"] = "FULL_TEXT_READ_AND_VERIFIED"
         self.assertTrue(any("publisher erratum text cannot be claimed seen" in e
                             for e in validate_source_access(d)))
+    def test_phoenix1976_ir_photo_caption_not_claimed_as_collation(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-HOFTIJZER-PHOENIX22-DEIRALLA-1976-FIG41-42")
+        row["historicalFigure42Evidence"] = "PHOTO_VISUALLY_READ_SHDYN_AND_LICENSED"
+        self.assertTrue(any("Phoenix 1976 infrared photo caption and Shadday translation" in e
+                            for e in validate_source_access(d)))
+
+    def test_phoenix1976_interpretive_shadday_translation_not_literal_ancient_reading(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-HOFTIJZER-PHOENIX22-DEIRALLA-1976-FIG41-42")
+        row["shaddayTranslationBoundary"] = "ANCIENT_SHDYN_GRAPHEMES_VERIFIED_DIRECTLY"
+        self.assertTrue(any("Phoenix 1976 infrared photo caption and Shadday translation" in e
+                            for e in validate_source_access(d)))
