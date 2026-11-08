@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 77,
+    "sourceRecords": 78,
     "approvedForProduct": 0
   },
   "records": [
@@ -1987,7 +1987,35 @@
         "EVIDENCE_HOLD"
       ],
       "criticalEditionCollated": false
+    },
+    {
+      "id": "SRC-HOFTIJZER-PHOENIX22-DEIRALLA-1976-FIG41-42",
+      "title": "Jacob Hoftijzer, De Aramese teksten uit Deir 'Alla, Phoenix 22 (1976): 84–91, figures 41–42; full original Dutch issue exposed by Ex Oriente Lux",
+      "creator": "Jacob Hoftijzer",
+      "year": 1976,
+      "url": "https://www.exorientelux.nl/download/phoenix22.pdf",
+      "publisher": "Ex Oriente Lux, Leiden; article signed Leiden, August 1976; volume dated 1976, journal volume published 1977",
+      "objectType": "original_1976_dutch_scholarly_article_full_scanned_issued_pdf_machine_text_original_photo_figures_NOT_VISUALLY_CHECKED",
+      "sourceRole": "EARLY_DEIR_ALLA_HOFTIJZER1976_AUTHOR_ARTICLE_WITH_IR_PHOTO_CAPTION_AND_RECONSTRUCTED_SHADDAY_TRANSLATION",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "locator": "Phoenix 22 (1976), 84–91; original full-issue PDF p84 article begins; p85 fig41 in-situ excavation fragment caption; p88 fig42 caption identifies large Combination I fragment from infrared photograph made in Jerusalem shortly after excavation; p90 original author's tentative Dutch prose translation Shadday goddesses and gods; p91 signature Leiden August 1976. PDF pagination means printed-page locators; page images NOT independently visualized.",
+      "sourceObjectState": "Original full Phoenix 22 scanned journal served openly by Ex Oriente Lux and machine-extracted Dutch text directly read 2026-11-08. Figure41 p85 caption states inscribed plaster fragments of Combination I in situ, with treated back of another fragment. Figure42 p88 caption identifies early infrared photograph of a large fragment of Combination I taken in Jerusalem shortly after excavation; print reproduces at approximately 30% of actual size. However web PDF page-screenshot tool failed HTTP 503 and source PDF bytes could not be downloaded locally: only TEXT OF THE PRINTED CAPTIONS and issue contents have been verified, NOT visible ancient letters, NOT image surface, NOT identification that fig42 contains šdyn, NOT photo reuse rights. At printed p90 author offers a highly reconstructed Dutch translation distinguishing Shadday goddesses and Shadday gods; this is Hoftijzer's 1976 interpretation, NOT an independent transliteration of ancient physical letters. Distinct from 1976 Brill critical edition and 1976 The Biblical Archaeologist article/erratum.",
+      "supportedUse": "Primary 1976 author-signed textual evidence that an immediate post-excavation infrared photograph of a Combination I fragment was reproduced as Phoenix 22 fig42 p88; new targeted acquisition path to printed image and possible original infrared negative in Jerusalem/Leiden archives. Contrast author-attributed 1976 Dutch reconstructed 'Shadday-godinnen' / 'Shadday-goden' translation on p90 with later disputed šdyn/El Shadday readings, noting author's warning about uncertainty and reconstructions.",
+      "forbiddenUse": "Claim actual inspection of fig41/42 photographic pixels or independent palaeographic šdyn collation, assume fig42 images exact disputed graphemes, assume 1976 infrared photo was located in the DANS manifests, claim this is Brill editio princeps plates, turn a 1976 author's interpretive gendered divine council translation into literal biblical monotheistic naming, or reuse figures as licensed images; machine-extracted text does not grant photo reproduction rights.",
+      "historicalFigure42Evidence": "PHOENIX_1976_P88_FIG42_COMBINATION_I_EARLY_JERUSALEM_INFRARED_PHOTO_REPRODUCTION_CAPTION_ONLY_NOT_VISUAL_AUTOPSY",
+      "shaddayTranslationBoundary": "PHOENIX_1976_P90_HOFTIJZER_RECONSTRUCTED_DUTCH_GENDERED_SHADDAY_GODS_TRANSLATION_NOT_INDEPENDENT_SHDYN_COLLATION"
     }
   ],
-  "auditRevision": "NG12_1976_EARLY_HOFTIJZER_JOURNAL_AND_OFFICIAL_ERRATUM_BIBLIOGRAPHIC_GATE_20261108"
+  "auditRevision": "NG12_PHOENIX1976_AUTHOR_IR_FIG42_EXACT_LOCATOR_CAPTION_ONLY_TEXT_SHADDAY_RECONSTRUCTION_20261108"
 }
