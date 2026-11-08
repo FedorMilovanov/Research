@@ -2195,7 +2195,7 @@
         "academicEditorialFragmentsLev46": "EDITORIAL_FRAGMENTS_12_15_LEVITICUS_4_6_8",
         "reportedCrosswalk": "VASILEIADIS_2017_P24_FIG1_EDITORIAL_FRAGMENT20_LINE4_TO_MUSEUM_PLATE378_FRAGMENT15",
         "reportedCrosswalkSource": "https://zenodo.org/records/4260519",
-        "reportedCrosswalkAccess": "AUTHOR_DEPOSIT_RECORD_VERIFIED_CROSSWALK_FROM_INDEXED_SECONDARY_TEXT_AUTHOR_PDF_P24_NOT_DIRECTLY_INSPECTED",
+        "reportedCrosswalkAccess": "AUTHOR_DEPOSIT_PDF_PRINTED_P24_FIG1_CAPTION_DIRECTLY_EXTRACTED_NO_FIGURE_PIXEL_PALEOGRAPHY",
         "distinctNumberingSchemes": true,
         "publishedCrosswalkSourceNotDirectDjdReview": true,
         "directDjdPageAndPlateChecked": false,
@@ -2203,7 +2203,22 @@
         "historicalNegativeSamePhysicalFragmentVerified": false,
         "glyphByGlyphCriticalCollationComplete": false,
         "imageReproductionPermissionGranted": false,
-        "nextAction": "Inspect source author PDF p24 and DJD IX original pp167-186/pl XXXIX-XLI, map editor fragment20 line4 to museum Plate378 Frag15 via the photographed signs and check 1953/1960 composite plates separately; respect IAA rights."
+        "nextAction": "Extracted p24 author-published Fig1 caption is verified; next inspect original figure pixels, DJD IX pp167-186/plates XXXIX-XLI, and physical-fraction identity with museum 2015 B-503715 and historical negatives. Respect IAA and journal image rights.",
+        "authorPdfCaptionWitness20261109": {
+          "url": "https://zenodo.org/records/4260519/files/PV%20VTeH%20The%20god%20Iao%20and%20his%20connection%20with%20the%20Biblical%20God%2C%20with%20special%20emphasis%20on%20the%20manuscript%204QpapLXXLevb.pdf",
+          "repository": "ZENODO_AUTHOR_DEPOSIT",
+          "publishedIssue": "VETUS_TESTAMENTUM_ET_HELLAS_4_2017_PP21_51",
+          "printedPage": 24,
+          "figure": "FIGURE_1",
+          "report": "CAPTION_ASSOCIATES_LEV4_27_GREEK_ENTOLON_IAO_EDITORIAL_FRAGMENT20_LINE4_WITH_MUSEUM_PLATE378_FRAGMENT15",
+          "machineRead": "PDF_HTTP_200_TEXT_EXTRACTED_FROM_FIRST_6_OF_31_PAGES_CAPTION_VERIFIED",
+          "zenodoFileMd5": "b78bcc5c94e202a15c2392f39dfcbd2f",
+          "authorImagePixelsIndependentlyAutopsied": false,
+          "directDjdCriticalEditionCollation": false,
+          "historicalNegativeComparisonCompleted": false,
+          "independentEpigrapherApproved": false,
+          "reprintRightsConfirmed": false
+        }
       }
     }
   ],
