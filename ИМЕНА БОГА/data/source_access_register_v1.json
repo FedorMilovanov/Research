@@ -1957,7 +1957,7 @@
       "holds": [
         "PUBLICATION_HOLD",
         "RIGHTS_HOLD",
-        "LOCATOR_CONTENT_HOLD",
+        "LOCATOR_HOLD",
         "EVIDENCE_HOLD"
       ],
       "criticalEditionCollated": false
@@ -1983,7 +1983,7 @@
       "holds": [
         "PUBLICATION_HOLD",
         "RIGHTS_HOLD",
-        "LOCATOR_CONTENT_HOLD",
+        "LOCATOR_HOLD",
         "EVIDENCE_HOLD"
       ],
       "criticalEditionCollated": false
