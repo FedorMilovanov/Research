@@ -13,13 +13,13 @@
     "extensionRecords": 13,
     "contextAttestations": 105,
     "sourceRegisterEntries": 79,
-    "regressionTests": 231,
+    "regressionTests": 233,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PREVIOUS_64f9093_ALL_SIX_SUCCESS_NEW_NG12_1977_ERRATUM_WITNESS_AND_TEST_DISCOVERY_FIX_HEAD_CI_PENDING",
+    "allSixCiChecks": "PRIOR_b635d54_ALL_SIX_SUCCESS_CURRENT_AST_DISCOVERY_AND_2019_ARCHIVE_PROVENANCE_CI_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
-    "planRegressionTests": 17,
+    "planRegressionTests": 21,
     "provenanceRegressionTests": 319,
     "canonicalEditions": 4,
     "curatedClaims": 87,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "64f9093e648159f064d74691848aa3445d9a1328"
+    "lastConfirmedAllSixChecksSha": "b635d54eca37021084a471b6446d59f3dd20b4f3"
   },
   "allowedStatuses": [
     "DONE",
@@ -734,7 +734,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NEW ARCHIVAL TARGET, WITHOUT CLAIMING 2026 CUSTODY: Halbertsma 2019 University of Liverpool MPhil thesis printed p37 reports physical Deir Alla archive Box 9 contains Iron II plaster inscription photographs/drawings and materials for 1976 edition. Request RMO archivist specifically historical Box9 inventory, photo-registry IDs, Combination I fragment mapping, 1967 original infrared film/negative, publication figure and image rights. This does NOT establish actual 2026 holding, digital files, or šdyn reading. FIRST: verify exact final SHA with all six GitHub Actions. Newly corrected seven post-unittest-main methods are now discovered; add two provenance regressions, 230 core tests total. NEW NG12: Caquot/Lemaire 1977 Syria54 p189 footnote 1 explicitly reports BA1976 p87 corrected the original '6th century' title/dating to '8th-7th century'. Original erratum text remains NOT_OBTAINED; use attributed later witness only. NG12 TARGETED ACQUISITION WITHOUT ABUSING PROXIES: Seek LEGITIMATELY ACCESSIBLE SCAN OF PRINTED P481 OF H J FRANKEN VETUS TESTAMENTUM 17/4 (1967), DOI 10.1163/156853367X00187 JSTOR 1516696; p480 already seen in browser and contains no ancient inscription photograph. JSTOR p481 requires a registered account/library access; no sign-in bypass or user credentials requested. Lemaire1985 says first fragment image appears in the two-page notice, but precise image location and photographic modality cannot be asserted. When obtained, verify (a) whether p481 has photo and caption (b) fragment/Combination I mapping (c) whether it includes disputed šdyn letters (d) copyright/archival identity. Next independent requests: Phoenix22 p85 fig41 and p88 fig42, Brill1976 original p173–178 + plates, 1976 journal erratum actual wording, original 1967 Jerusalem negatives custody. NG12 remains BLOCKED_SOURCE, 0 palaeography collations, 0 Product approvals.",
+  "nextAction": "NG12: independently inspect author text in Halbertsma 2019 pp11,37-38: archive described as RMO property AS OF 2019, Box9 plaster photo/drawings, Box41 field/object photos all Franken excavation seasons, historic photo register. CURRENT 2026 physical custody and 1967 IR negatives not verified. Official RMO archivist contact verified; targeted external inquiry drafted but NOT SENT (no promised archival reply). Request both boxes plus original photo registry, digitized filenames, sign-level image and rights; BHS/BHQ and editor-source tasks remain blocked. Structural workplan now validates discoverable corpus tests via Python AST and fails on orphan/duplicate methods, not regex definitions. 233 corpus, 21 plan negative checks. NEW ARCHIVAL TARGET, WITHOUT CLAIMING 2026 CUSTODY: Halbertsma 2019 University of Liverpool MPhil thesis printed p37 reports physical Deir Alla archive Box 9 contains Iron II plaster inscription photographs/drawings and materials for 1976 edition. Request RMO archivist specifically historical Box9 inventory, photo-registry IDs, Combination I fragment mapping, 1967 original infrared film/negative, publication figure and image rights. This does NOT establish actual 2026 holding, digital files, or šdyn reading. FIRST: verify exact final SHA with all six GitHub Actions. Newly corrected seven post-unittest-main methods are now discovered; add two provenance regressions, 230 core tests total. NEW NG12: Caquot/Lemaire 1977 Syria54 p189 footnote 1 explicitly reports BA1976 p87 corrected the original '6th century' title/dating to '8th-7th century'. Original erratum text remains NOT_OBTAINED; use attributed later witness only. NG12 TARGETED ACQUISITION WITHOUT ABUSING PROXIES: Seek LEGITIMATELY ACCESSIBLE SCAN OF PRINTED P481 OF H J FRANKEN VETUS TESTAMENTUM 17/4 (1967), DOI 10.1163/156853367X00187 JSTOR 1516696; p480 already seen in browser and contains no ancient inscription photograph. JSTOR p481 requires a registered account/library access; no sign-in bypass or user credentials requested. Lemaire1985 says first fragment image appears in the two-page notice, but precise image location and photographic modality cannot be asserted. When obtained, verify (a) whether p481 has photo and caption (b) fragment/Combination I mapping (c) whether it includes disputed šdyn letters (d) copyright/archival identity. Next independent requests: Phoenix22 p85 fig41 and p88 fig42, Brill1976 original p173–178 + plates, 1976 journal erratum actual wording, original 1967 Jerusalem negatives custody. NG12 remains BLOCKED_SOURCE, 0 palaeography collations, 0 Product approvals.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -816,7 +816,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-08",
-    "planStatus": "2026-11-08 NG12 source improvement: primary 1977 scholarly page p189 footnote read from Persée HTML; original BA1976 erratum still unviewed. Reused three existing registered source records, no source-count inflation. Added two provenance negative tests; restored discovery for seven previously misplaced tests outside TestCase. Count 79 sources, 231 corpus-test methods (all now within TestCase), 0 ancient glyph collations, 0 independent approvals, 0 Product release. Previous exact SHA 64f9093 had 6/6 SUCCESS; current post-edit SHA needs independent CI. Remaining sources: JSTOR p481, Phoenix1976 fig42 original image, Brill1976 pp173-178/plates, original BA1976 erratum text. Independently sourced 2019 physical archival Box9 lead, one negative source-integrity regression, current custody unverified; exact final CI pending.",
+    "planStatus": "2026-11-08 wave2 verified previous b635d54 six of six SUCCESS; strengthened corpus test counting via ast.parse TestCase discovery to prevent regression from seven previously invisible tests; added four plan mutation tests and two archival rights/custody mutation tests. 79 sources, 233 discovered corpus tests, 21 plan tests; original Liverpool Halbertsma thesis 2019 pp11/37-38 shows archive RMO property AS OF 2019, Box9 inscription photos, Box41 field photos, historic photo register; current 2026 custody unknown. Institution enquiry prepared as unsent private draft. NG12 BLOCKED_SOURCE; original 1967/1976 photo pixels and Brill critical edition not inspected, 0 ancient grapheme collations, no scholarly/Product approval. Exact new SHA CI pending.",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
