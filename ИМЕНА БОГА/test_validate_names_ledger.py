@@ -1363,5 +1363,24 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("1976 original textual plate index" in e for e in validate_source_access(d)))
 
 
+    def test_dans_1960_2009_archive_metadata_not_verified_1967_balaam_photo(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-DANS-TELL-DEIRALLA-SLIDES-ARCHIVE-XS5-KPQN")
+        row["archiveDatasetIdentityBoundary"] = "DIRECT_BALAAM_1967_PLASTER_PHOTOGRAPH_FOUND_VERIFIED"
+        self.assertTrue(any("DANS excavation Slides dataset" in e for e in validate_source_access(d)))
+
+    def test_dans_dataset_metadata_ccby4_does_not_approve_unchecked_specific_photo(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-DANS-TELL-DEIRALLA-SLIDES-ARCHIVE-XS5-KPQN")
+        row["archiveFileAccessBoundary"] = "ALL_1976_PHOTO_PLATES_LICENSED_CC_BY4_BY_DANS"
+        self.assertTrue(any("DANS catalog level CC BY4" in e for e in validate_source_access(d)))
+
+    def test_dans_slides_doi_cannot_be_conflated_with_paper_archive_or_editorial_drawing(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-DANS-TELL-DEIRALLA-SLIDES-ARCHIVE-XS5-KPQN")
+        row["archiveCollectionSeparationBoundary"] = "DANS_SLIDES_EQUALS_PAPER_ARCHIVE_EQUALS_BRILL_PLATE29"
+        self.assertTrue(any("DANS Slides, Paper Archive and Brill drawing" in e for e in validate_source_access(d)))
+
+
 if __name__ == "__main__":
     unittest.main()

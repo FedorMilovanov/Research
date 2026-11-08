@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 74,
+    "sourceRecords": 75,
     "approvedForProduct": 0
   },
   "records": [
@@ -1885,7 +1885,39 @@
       "forbiddenUse": "Claim all scholars agree language is Canaanite or 1976 authors' original argument was directly checked; treat distorted OCR graphemes as verified ancient lettering or vocalization, claim this reprints 1976 original plates or establishes ancient El Shadday/šdyn identification; publish images or substantial text under assumed CC0 or commercial permissions.",
       "patElLanguageBoundary2015": "SBL2015_PRINT_P13_TO24_CANAANITE_AUTHOR_ARGUMENT_RELATIVE_ASH_AND_ABSOLUTE_VS_CONSTRUCT_INFINITIVES_VS_ALTERNATIVE_FOUR_WAYS_NO_CONSENSUS",
       "patElOriginalEvidenceScope2015": "ORIGINAL_SBL_PRESS_2015_OA_PDF_CHAPTER_PRINT_P13_24_TEXT_READ_SCREENSHOT_403_NO_ANCIENT_PLASTER_PHOTOCOLLATION"
+    },
+    {
+      "id": "SRC-DANS-TELL-DEIRALLA-SLIDES-ARCHIVE-XS5-KPQN",
+      "title": "DANS Data Station Archaeology, Excavation archive of the Tell Deir Alla project, Jordan — Slides, DOI 10.17026/dans-xs5-kpqn, original archaeological photographic archive catalog metadata",
+      "creator": "G. van der Kooij; H. J. Franken; M. M. Ibrahim; Z. A. Kafafi",
+      "year": 2020,
+      "url": "https://doi.org/10.17026/dans-xs5-kpqn",
+      "metadataUrl": "https://b2find.eudat.eu/dataset/bd8ca525-b6a3-5e55-b19c-6a83f863da16",
+      "companionPaperArchiveUrl": "https://doi.org/10.17026/dans-x4n-wkhu",
+      "universityProvenanceUrl": "https://www.universiteitleiden.nl/en/news/2018/05/subsidy-for-digitalisation-of-tell-deir-alla-fieldwork",
+      "objectType": "original_1960_2009_excavation_slides_archive_metadata_only_no_photographic_file_content_inspected",
+      "sourceRole": "PRIMARY_DANS_TELL_DEIR_ALLA_ARCHAEOLOGICAL_SLIDES_ARCHIVE_CATALOG_ONLY",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "LOCATOR_HOLD",
+        "ARCHIVE_HOLD",
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "locator": "DOI:10.17026/dans-xs5-kpqn, B2FIND Slides dataset record: creators van der Kooij, Franken, Ibrahim, Kafafi; 1960–2009 archaeological excavation archive; image/jpeg, application/zip, application/pdf dataset formats; B2FIND notes dataset metadata Open Access/CC BY 4.0. Leiden University news 2018 corroborates original negatives/colour slides and 1960-67 subproject; related but different DANS Paper Archive DOI:10.17026/dans-x4n-wkhu. Exact file/1967 Balaam fragments NOT located, DANS webpage JS challenge.",
+      "sourceObjectState": "Directly checked B2FIND archive dataset catalog and Leiden University 2018 news, not any archaeological image or 1976 original edition page. Current DANS landing page served Anubis anti-bot blocking listing/download. Dataset metadata implies open-access collection, but exact 1967 inscription fragments, identifiers, file-level image rights and association with the original 1976 plates have NOT been verified; paper archives are a different DOI. No actual ancient šdyn glyph verified, original 1976 p173 and 33 plates still inaccessible.",
+      "supportedUse": "Identify institutional original excavation Slides collection and exact DOI as an actionable route to request original 1967 photographs or negatives and find 1976 fragment image correspondences, with separate Paper Archive metadata, not to assert that any specific Balaam photo or 1976 critical edition page was seen. State metadata labels CC BY4 without extrapolating to verified derivative licenses.",
+      "forbiddenUse": "Pretend a catalog/DOI establishes a specifically accessible 1967 Balaam image, proved fragment i(a/c/d) mapping, independent paleographic reading of šdyn, or 1976 original facsimile; assume CC BY4 metadata permits reproduction of a specific photo, or conflate Slides DOI with Paper Archive DOI or unrelated Tell Hammeh photos.",
+      "archiveDatasetIdentityBoundary": "DANS_ARCHIVE_SLIDES_DATASET_10_17026_DANS_XS5_KPQN_1960_2009_FIELDWORK_CONTAINS_NO_VERIFIED_LIST_OF_1967_BALAAM_FRAGMENT_FILES",
+      "archiveFileAccessBoundary": "B2FIND_METADATA_AND_LEIDEN_DESCRIPTION_ONLY_CATALOG_OPEN_CC_BY4_NOT_AUDITED_FILE_IMAGE_RIGHTS_OR_ORIGINAL_1976_PLATES",
+      "archiveCollectionSeparationBoundary": "DANS_SLIDES_XS5_KPQN_DISTINCT_FROM_PAPER_ARCHIVE_X4N_WKHU_AND_FROM_BRILL_1976_FRONT2_AND_P29_DRAWING"
     }
   ],
-  "auditRevision": "NG12_SBL2015_PATEL_WILSONWRIGHT_4_LANGUAGE_HYPOTHESES_PLUS_1976_PLATE3_29_ACQUISITION_20261108"
+  "auditRevision": "NG12_DANS_ORIGINAL_EXCAVATION_SLIDES_DATASET_DISCOVERED_METADATA_ONLY_DOI_XS5_KPQN_20261108"
 }

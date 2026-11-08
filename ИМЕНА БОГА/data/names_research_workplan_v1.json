@@ -12,11 +12,11 @@
     "arenaRecords": 29,
     "extensionRecords": 13,
     "contextAttestations": 105,
-    "sourceRegisterEntries": 74,
-    "regressionTests": 214,
+    "sourceRegisterEntries": 75,
+    "regressionTests": 217,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_99EC496_ALL_SIX_SUCCESS_ORIGINAL_1976_PLATE_INDEX_NEW_EXACT_SHA_CI_PENDING",
+    "allSixCiChecks": "PRIOR_0C741C9_ALL_SIX_SUCCESS_NEW_DANS_ORIGINAL_ARCHIVE_METADATA_CI_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 17,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "99ec4961eadba2851ac7de88c970aeb413fdc683"
+    "lastConfirmedAllSixChecksSha": "0c741c95145ef307686a44b0e058ef373a1e1955"
   },
   "allowedStatuses": [
     "DONE",
@@ -532,7 +532,8 @@
         "Direct original Erhard Blum de Gruyter chapter, Metatexte 2016 pp24–26,35–36,44n94,n97,45: author-only Combination A, context-inferred 'Hohe/Erhabene' for šdyn, attributed messengers vs council, solar goddess/cloud-blocked sky-sluice variant; image screenshot 404 no 1976 pp173/photo plates/rights release. https://uplopen.com/books/9325/files/12c5a59d-f2d2-4a93-91f0-2941f88ea05f.pdf",
         "Original SBL 2015 Pat-El/Wilson-Wright pp13–24 four academic language positions, authors argue Canaanite based on relative 'sh and G absolute/construct infinitives, screenshot PDF 403 OCR text only https://www.sbl-site.org/wp-content/uploads/2025/01/9780884140801_OA.pdf",
         "1976 acquisition target refined by secondary Way 2011 p63n186 and UCLA Donnelly-Lewis 2023 fig8.3 p380: 1976 Plate3 and Plate29 Combination I fragment d line12, not proven same letters as sdyn; original 1976 173–178, 179–182 and plate scans not read https://escholarship.org/content/qt983511cd/qt983511cd_noSplash_c2f3faddffc6ebaf53da67313b0619b0.pdf",
-        "Publisher-authored 1976 original 'List of Plates' Brill front-2.pdf text inspected: PL1=I(a) colour, PL2=I(c) colour, PL3=I(d) colour, PL9+10 fragment details, PL27+28 sign detail drawings, PL29 explicitly EDITORIAL DRAWING of combination i not photograph; screenshot 403, body p173/actual plates NOT seen https://brill.com/edcollchap/book/9789004670327/front-2.pdf"
+        "Publisher-authored 1976 original 'List of Plates' Brill front-2.pdf text inspected: PL1=I(a) colour, PL2=I(c) colour, PL3=I(d) colour, PL9+10 fragment details, PL27+28 sign detail drawings, PL29 explicitly EDITORIAL DRAWING of combination i not photograph; screenshot 403, body p173/actual plates NOT seen https://brill.com/edcollchap/book/9789004670327/front-2.pdf",
+        "DANS original Tell Deir Alla 1960-2009 excavation Slides catalog (B2FIND verified) DOI:10.17026/dans-xs5-kpqn, metadata says CC BY4; Leiden University 2018 confirms negatives/colour slides, distinct Paper Archive DOI:10.17026/dans-x4n-wkhu. DANS file listing blocked Anubis, 1967 Balaam file IDs/image rights/material NOT inspected; only archival acquisition route, no 1976 plate or p173 autopsy https://doi.org/10.17026/dans-xs5-kpqn"
       ],
       "verification": "NOT_APPLICABLE_UNTIL_DONE",
       "closureAt": null,
