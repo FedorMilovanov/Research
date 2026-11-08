@@ -105,7 +105,11 @@ class NamesResearchWorkplanTests(unittest.TestCase):
         self.assertTrue(any("unearned critical collation" in e for e in self.check(plan)))
 
     def test_live_navigation_source_count_cannot_remain_historical(self) -> None:
-        stale = self.nav.replace("— **61 источник", "— **48 источник")
+        # Derive current count from registry: avoid a brittle 61/62 literal in this regression.
+        count = len(self.sources["records"])
+        marker = f"— **{count} источник"
+        self.assertIn(marker, self.nav)
+        stale = self.nav.replace(marker, f"— **{count - 1} источник", 1)
         self.assertNotEqual(stale, self.nav)
         self.assertTrue(any("current source register count" in e for e in
                             self.check(navigation=stale)))
