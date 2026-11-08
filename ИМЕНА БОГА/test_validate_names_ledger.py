@@ -1102,6 +1102,15 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("misidentified as Balaam" in e for e in validate_source_access(d)))
 
 
+    def test_deir_alla_livius_actual_museum_photo_cc0_is_source_specific(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-IMG-DEIRALLA-LENDERING-LIVIUS-CC0")
+        row["license"] = "CC BY-SA 4.0"
+        self.assertTrue(any("Deir Alla image license or attribution evidence" in e for e in validate_source_access(d)))
+        row["license"] = "CC0 1.0"
+        row["rightsState"] = "PERMISSION_REQUIRED"
+        self.assertTrue(any("Deir Alla access/rights/locator status changed" in e for e in validate_source_access(d)))
+
 
 if __name__ == "__main__":
     unittest.main()

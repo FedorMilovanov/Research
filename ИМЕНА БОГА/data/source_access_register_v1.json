@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 58,
+    "sourceRecords": 59,
     "approvedForProduct": 0
   },
   "records": [
@@ -1432,7 +1432,33 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ]
+    },
+    {
+      "id": "SRC-IMG-DEIRALLA-LENDERING-LIVIUS-CC0",
+      "title": "Jona Lendering, Deir 'Alla Inscription, original plaster fragments photographed in Jordan Museum, Livius.org",
+      "creator": "Jona Lendering",
+      "year": null,
+      "url": "https://www.livius.org/pictures/jordan/deir-alla/deir-alla-inscription/",
+      "imageUrl": "https://www.livius.org/site/assets/files/11449/tal_dayr_alla_bileam_jordanmus.jpg",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "objectType": "author_original_museum_object_photograph_site_specific_cc0",
+      "sourceRole": "ACTUAL_DEIR_ALLA_MUSEUM_PLASTER_PHOTOGRAPH_CC0",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "locator": "Livius.org photograph record, creator Jona Lendering, museum Amman Jordan Museum, copyright notice photo-specific CC0 1.0, updated 9 October 2020",
+      "sourceObjectState": "Photograph displayed and direct image source checked. Livius explicitly specifies CC0 1.0 Universal for this exact photograph despite site-wide footer copyright. Image depicts reconstructed physical plaster fragments rather than a modern digital transcription. The physical lettering was NOT collated.",
+      "supportedUse": "Embed this exact authenticated CC0 museum photograph in CH-PILOT-03 with creator/source credit, alongside separate modern drawn transcript; credit despite CC0 as scholarly practice.",
+      "forbiddenUse": "Imply image is facsimile/textual collated edition, all fragments of original are present, or all Livius photos are CC0; generalise source-specific CC0 to other museum pictures.",
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "proposedReaderUse": "EMBEDDED_RESEARCH_READER_ONLY"
     }
   ],
-  "auditRevision": "NG12_DEIR_ALLA_2025_NEW_LITERARY_AND_PLACEMENT_MODEL_20261108"
+  "auditRevision": "NG12_DEIR_ALLA_CC0_ORIGINAL_MUSEUM_PHOTO_AND_READER_PUBLISHING_20261108"
 }
