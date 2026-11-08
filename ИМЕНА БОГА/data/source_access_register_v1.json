@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 48,
+    "sourceRecords": 52,
     "approvedForProduct": 0
   },
   "records": [
@@ -1183,7 +1183,108 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ]
+    },
+    {
+      "id": "SRC-DEIRALLA-SYMPOSIUM-1991-NYU",
+      "title": "J. Hoftijzer and G. van der Kooij (eds.), The Balaam Text from Deir 'Alla Re-Evaluated, Brill (1991), digitized by NYU Ancient World Digital Library",
+      "creator": "J. Hoftijzer; G. van der Kooij (eds.)",
+      "year": 1991,
+      "url": "https://sites.dlib.nyu.edu/viewer/books/brill_awdl000034/3",
+      "alternateUrl": "https://mc.dlib.nyu.edu/files/books/brill_awdl000034/brill_awdl000034_lo.pdf",
+      "objectType": "complete_digitized_peer_scholarly_symposium_volume_selected_original_chapters_read_via_ocr",
+      "sourceRole": "DEIR_ALLA_CONTESTED_EARLY_INSCRIPTION_READING_AND_BIBLICAL_SHADDAY_RELATION",
+      "locator": "Greenfield printed pp. 109–120; Hoftijzer pp. 121–141; Weippert pp. 151–184, especially pp. 169–170 and discussion of Numbers 24",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "sourceObjectState": "NYU library exposes a complete scanned 1991 Brill volume; selected scholarly passages read in searchable OCR. Facsimile text and ancient letters have not been independently visually collated; OCR Hebrew/transliterations can be corrupt. Weippert objects to a simple re-vocalization linking biblical shedim with Shadday and warns against treating Balaam narrative parallels as literary-dependency proof. These are explicitly attributed scholarly positions.",
+      "supportedUse": "Compare conflicting scholarly arguments on šdyn and biblical šēdîm/Šadday, distinguish epigraphic reading from conjectural biblical connection, and locate original published pages for image-level verification.",
+      "forbiddenUse": "Claim independent inspection of Deir 'Alla fragments, exact Hebrew spelling based solely on OCR, established identification of šdyn with biblical El Shadday, quotation-safe transcription, or permission to republish Brill pages.",
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "LOCATOR_HOLD",
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "SRC-DEIRALLA-STEINER-WAGEMAKERS-2019",
+      "title": "Margreet L. Steiner and Bart Wagemakers, Digging up the Bible? The Excavations at Tell Deir Alla, Jordan (1960–1967), Sidestone Press, 2019",
+      "creator": "Margreet L. Steiner; Bart Wagemakers",
+      "year": 2019,
+      "url": "https://www.sidestone.com/openaccess/9789088908736.pdf",
+      "alternateUrl": "https://www.sidestone.com/books/digging-up-the-bible",
+      "objectType": "open_access_archaeological_excavation_report_with_original_photographic_reproductions",
+      "sourceRole": "DEIR_ALLA_FIND_CONTEXT_FRAGMENTS_AND_PHOTO_LOCATORS",
+      "locator": "Printed pp. 141–144; figs. 5.15–5.17; excavation rooms EE334/EE335",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "sourceObjectState": "Publisher confirms complete open-access illustrated volume; relevant excavation context and figure captions located via document text. Detailed letters on original plaster and all photographic facsimiles NOT independently collated. Open access does not automatically grant reuse of third-party images.",
+      "supportedUse": "Ground archaeological provenance, room association, plaster-fragment restoration and exact visual-verification targets separate from philological etymology.",
+      "forbiddenUse": "Treat excavation photographs as full palaeographic autopsy or transfer copyrighted archival images to Product without rights review.",
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "LOCATOR_HOLD",
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "SRC-DEIRALLA-BLUM-EBR-2013",
+      "title": "Erhard Blum, Deir 'Alla, Encyclopedia of the Bible and Its Reception 6 (2013), 475–477",
+      "creator": "Erhard Blum",
+      "year": 2013,
+      "url": "https://courses.edx.org/asset-v1%3AIsraelX%2BBIBARC101%2B3T2018%2Btype%40asset%2Bblock/Deir_All_EBR_online.pdf",
+      "objectType": "scholarly_encyclopedia_entry_author_reprint",
+      "sourceRole": "DEIR_ALLA_CONTROVERSIAL_RELIGIOUS_AND_ARCHAEOLOGICAL_INTERPRETATION",
+      "locator": "EBR 6 (2013), printed pp. 475–477; discussed Combination I and fragment's context",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "sourceObjectState": "Three-page institutional PDF excerpt located; relevant pages visually inspected and scholarly bibliography identified. Secondary expert synthesis, not a new reading from the original plaster. Access via course host is not a statement of reuse license.",
+      "supportedUse": "Attribute Blum's description of competing accounts of the divine assembly, šdyn and the site's possible literary or educational setting, as an alternative to definitive shrine and Shadday-identification claims.",
+      "forbiddenUse": "Present Blum's historical reconstruction as direct epigraphic proof or independently collated manuscript evidence; reprint article or figures without permission.",
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "SRC-DEIRALLA-HOFTIJZER-VANDERKOOIJ-1976-CONTENTS",
+      "title": "J. Hoftijzer and G. van der Kooij, Aramaic Texts from Deir 'Alla, Brill, 1976 (original critical edition; contents only)",
+      "creator": "J. Hoftijzer; G. van der Kooij",
+      "year": 1976,
+      "url": "https://books.google.com/books/about/Aramaic_Texts_from_Deir_%CA%BBAlla.html?id=fpo3AAAAIAAJ",
+      "objectType": "original_epigraphic_editio_princeps_bibliographic_contents_only",
+      "sourceRole": "DEIR_ALLA_ORIGINAL_EDITION_ACQUISITION_QUEUE",
+      "locator": "Fragment catalogue printed pp. 97ff; original transcription near p. 173; translation p. 179; grammatical survey p. 283; 33 plates (as reported by Caquot and Lemaire 1977)",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "sourceObjectState": "Google Books publisher bibliographic record/table of contents and 1977 scholarly review verify the edition and section/page targets; the original transcription, photographs and textual notes have NOT been obtained/read.",
+      "supportedUse": "Request exact original volume sections, plate numbers and fragment inventory for future direct epigraphic collation.",
+      "forbiddenUse": "Claim this editio princeps has been read, that its variants have been independently collated or that original images may be republished.",
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "LOCATOR_HOLD",
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
     }
   ],
-  "auditRevision": "NG02_JEREMIAH_REFERENT_AND_LIEBERMANN_PARTIAL_SOURCE_20261107"
+  "auditRevision": "NG12_DEIR_ALLA_1976_1991_2013_2019_CRITICAL_SOURCE_LOCATORS_20261108"
 }
