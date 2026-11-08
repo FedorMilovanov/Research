@@ -456,7 +456,7 @@ class ActualSynchronizationTests(unittest.TestCase):
                        "https://www.themorgan.org/collection/isaiah/77430/115",
                        "https://www.themorgan.org/collection/isaiah/77430/116",
                        "https://bodmerlab.unige.ch/fr/constellations/papyri/barcode/1072205362",
-                       "page 034", "sa 48", "n+yHre", "n+te(n)irHnH",
+                       "page=034", "sa 48", "n+yHre", "n+te(n)irHnH",
                        "tetn+TuCH", "tepn+TuCH",
                        "PUBLISHED_SAHIDIC_CRITICAL_EDITION_VERIFIED",
                        "COPTIC_CHILDREN_READING_LOCATED",
@@ -472,6 +472,40 @@ class ActualSynchronizationTests(unittest.TestCase):
         self.assertIn("GREEK_VORLAGE_AMBIGUOUS", source)
         self.assertIn("## 16. AT-010-R6", board)
         self.assertIn("NO MERGE / NO PUBLICATION", board)
+
+    def test_article02_r7_bodmer_photo_frame_locator_corrects_034_without_greek_promotion(self):
+        article = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md").read_text(encoding="utf-8")
+        memo = (ROOT / "ИСКУПЛЕНИЕ/evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md").read_text(encoding="utf-8")
+        owner = (ROOT / "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md").read_text(encoding="utf-8")
+        board = (ROOT / "ИСКУПЛЕНИЕ/synthesis/07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        for marker in ("проверка первичных фотографий", "кадр 034",
+                       "кадр 041", "кадр 042", "53:5", "53:10",
+                       "непосредственно просмотрены", "не удостоверено",
+                       "παιδία / παιδεία"):
+            with self.subTest(article_marker=marker):
+                self.assertIn(marker.lower(), article.lower())
+        for marker in ("## AT-010-R7", "95 canvases", "6132 × 8176",
+                       "034", "50, 11–51, 4", "041", "53, 3–8",
+                       "042", "53, 8–12", "039", "040", "043",
+                       "https://bodmerlab.unige.ch/fr/constellations/papyri/manifest/1072205362?page=041",
+                       "https://bodmerlab.unige.ch/fr/constellations/papyri/mirador/1072205362?page=041",
+                       "https://bodmerlab.unige.ch/fr/constellations/papyri/mirador/1072205362?page=042",
+                       "fc1dc1759f728e49401c521964be370e3165e2039cded04220728f8d5a0bcc3f",
+                       "eb17fcf65a96c9da0d43ca5712a64dd15c3175e371edde5a9da9e9f56cb556d4",
+                       "BODMER23_FRAME_VERIFIED", "SA48_GLYPH_READ_HOLD",
+                       "MORGAN_M568_IMAGE_ACCESS_HOLD",
+                       "GREEK_VORLAGE_AMBIGUOUS",
+                       "GOTTINGEN_APPARATUS_HOLD", "CODEX_WITNESS_HOLD",
+                       "RIGHTS_HOLD", "PUBLICATION_HOLD",
+                       "publicationEligible=false", "STOP_DISCOVERY"):
+            with self.subTest(memo_marker=marker):
+                self.assertIn(marker, memo)
+        self.assertIn("## 15. AT-010-R7", owner)
+        self.assertIn("## 17. AT-010-R7", board)
+        self.assertIn("SUPERSEDED", owner)
+        self.assertIn("NO MERGE / NO PUBLICATION", board)
+        self.assertIn("Bąk", memo)
+        self.assertIn("не установлена", memo)
 
     def test_article11_named_judas_primary_witnesses_and_hebrews_hold(self):
         text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article11_bought_apostates_covenant_blood_and_weak_brother.md").read_text(encoding="utf-8")

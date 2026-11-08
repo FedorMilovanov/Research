@@ -2092,21 +2092,21 @@
       "чтоСчитаетсяДоводом": "заголовок «## » в любом .md лана, включая вложенные папки (synthesis/drafts, ot/tools); тело секции — до следующего «## » или до конца файла",
       "приоритет": "УДЕРЖИВАЕТСЯ > ОТКРЫТО > ЗАКРЫТО; маркеров нет -> БЕЗ МАРКЕРА; маркер вне классификации -> ошибка съёма, а не «прочее»",
       "метод": "scripts/atonement_claim_register.py обходит прозу лана целиком (без выборки), разбирает маркеры вида `ВЕРДИКТ`, сверяет локатор побайтово (файл + номер строки + текст)",
-      "строк": 204,
+      "строк": 205,
       "файлов": 19,
       "покрытоМашинно": 0,
-      "покрытоПоФайлу": 204,
+      "покрытоПоФайлу": 205,
       "файловПрозы": 19,
       "файловБезКарточки": 0,
-      "разрешеноЛокаторов": 204,
+      "разрешеноЛокаторов": 205,
       "неРазрешено": 0,
       "поКлассам": {
           "БЕЗ МАРКЕРА": 189,
-          "УДЕРЖИВАЕТСЯ": 14,
+          "УДЕРЖИВАЕТСЯ": 15,
           "СЛУЖЕБНОЕ": 1
       },
       "маркеры": {
-          "всего": 97,
+          "всего": 103,
           "различных": 20,
           "словарь": {
               "ARCHIVE_HOLD": "УДЕРЖИВАЕТСЯ",
@@ -2134,19 +2134,19 @@
               "ARCHIVE_HOLD": 23,
               "LOCATOR_HOLD": 21,
               "EVIDENCE_HOLD": 16,
-              "PUBLICATION_HOLD": 9,
-              "RIGHTS_HOLD": 6,
-              "CODEX_WITNESS_HOLD": 3,
-              "GOTTINGEN_APPARATUS_HOLD": 3,
+              "PUBLICATION_HOLD": 10,
+              "RIGHTS_HOLD": 7,
+              "CODEX_WITNESS_HOLD": 4,
+              "GOTTINGEN_APPARATUS_HOLD": 4,
               "SYNTAX_LEXEME_OPEN": 3,
+              "GREEK_BACKTRANSLATION_HOLD": 2,
+              "GREEK_VORLAGE_AMBIGUOUS": 2,
               "SUBJECT_OPEN": 2,
               "COPTIC_CHILDREN_READING_LOCATED": 1,
               "COPTIC_POSSESSIVE_FORM_LOCATED": 1,
               "EDITION_VARIANT_LOCATED": 1,
               "EDITORIAL_TRANSCRIPTION_HOLD": 1,
               "GOTTINGEN_WITNESS_COLLATED": 1,
-              "GREEK_BACKTRANSLATION_HOLD": 1,
-              "GREEK_VORLAGE_AMBIGUOUS": 1,
               "OT-AUTH": 1,
               "RECEPTION_SCOPE_OPEN": 1,
               "SUBJECT_OPEN / EDITION_WITNESS_HOLD": 1,
@@ -4127,6 +4127,25 @@
               "машинноПоФайлу": true
           },
           {
+              "код": "15@11_ISA52_53_SERVANT",
+              "лан": "ot",
+              "файл": "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md",
+              "строка": 296,
+              "срез": "15. AT-010-R7 — первичная фотографическая локализация sa 48, честный предел чтения (08.11.2026)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "CODEX_WITNESS_HOLD",
+                  "GOTTINGEN_APPARATUS_HOLD",
+                  "GREEK_BACKTRANSLATION_HOLD",
+                  "GREEK_VORLAGE_AMBIGUOUS",
+                  "PUBLICATION_HOLD",
+                  "RIGHTS_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
               "код": "1@12_DAN9_SEVENTY_WEEKS",
               "лан": "ot",
               "файл": "ИСКУПЛЕНИЕ/ot/12_DAN9_SEVENTY_WEEKS.md",
@@ -4825,8 +4844,8 @@
       ],
       "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
       "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
-      "measuredAt": "2026-11-08T01:46:27Z",
-      "checkedAt": "2026-11-08T01:46:27Z",
-      "предыдущийСъём": "2026-11-08T01:45:02Z"
+      "measuredAt": "2026-11-08T04:45:15Z",
+      "checkedAt": "2026-11-08T04:45:15Z",
+      "предыдущийСъём": "2026-11-08T01:46:27Z"
   }
 }
