@@ -1436,3 +1436,16 @@ if __name__ == "__main__":
         row["shaddayTranslationBoundary"] = "ANCIENT_SHDYN_GRAPHEMES_VERIFIED_DIRECTLY"
         self.assertTrue(any("Phoenix 1976 infrared photo caption and Shadday translation" in e
                             for e in validate_source_access(d)))
+    def test_1967_franken_first_printed_photo_is_reported_not_read(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-FRANKEN-1967-VT-FIRST-INSCRIPTION-PHOTO-480481")
+        row["firstPhotoBoundary"] = "ORIGINAL_1967_IR_NEGATIVE_VISUALLY_READ_WITH_SHDYN"
+        self.assertTrue(any("1967 Franken first photograph report" in e
+                            for e in validate_source_access(d)))
+
+    def test_1967_jerusalem_museum_appointment_does_not_prove_current_archive(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-DEIRALLA-STEINER-WAGEMAKERS-2019")
+        row["excavationPhotoChain1967"]["status"] = "IAA_ARCHIVE_ORIGINAL_1967_NEGATIVES_LOCATED"
+        self.assertTrue(any("1967 museum appointment cannot prove archived infrared negatives" in e
+                            for e in validate_source_access(d)))
