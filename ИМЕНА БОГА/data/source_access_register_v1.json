@@ -2148,6 +2148,38 @@
         "scientificStatus": "PRELIMINARY_PHOTOGRAPHIC_OBSERVATION_NOT_INDEPENDENT_EPI_GRAPHIC_CRITICAL_COLLATION",
         "rightsStatus": "IAA_ALL_RIGHTS_RESERVED_REUSE_PERMISSION_REQUIRED_NO_BYTES_COPIED",
         "notEvidenceFor": "ORIGINAL_LXX_ARCHETYPE_OR_EXACT_YHWH_PRONUNCIATION_OR_DEIR_ALLA_SHDYN"
+      },
+      "historicalCompositeNegatives20261108": {
+        "status": "CATALOG_METADATA_ONLY_NO_PIXEL_INSPECTION",
+        "purpose": "Potential alternate historical photographs of 4Q120 to request for comparative inspection; multi-manuscript composite negatives, not isolated proof of IAO, fragment 20 or 2015 Frag 15.",
+        "candidates": [
+          {
+            "imageId": "B-278297",
+            "url": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-278297",
+            "date": "1953-05",
+            "pamNumber": "M40.633",
+            "photographer": "Najib Anton Albina",
+            "imageType": "Scanned Infrared Negative",
+            "plate378Included": true,
+            "containsOtherManuscripts": true,
+            "sameFragmentAsB503715": null,
+            "signLevelIaoReadingVerified": false
+          },
+          {
+            "imageId": "B-284588",
+            "url": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-284588",
+            "date": "1960-06",
+            "pamNumber": "M43.560",
+            "photographer": "Najib Anton Albina",
+            "imageType": "Scanned Infrared Negative",
+            "plate378Included": true,
+            "containsOtherManuscripts": true,
+            "sameFragmentAsB503715": null,
+            "signLevelIaoReadingVerified": false
+          }
+        ],
+        "nextAction": "Locate the actual 4Q120 portion on each historical composite, establish its plate/physical-fragment identity, then compare photographic pixels against B-503715 and DJD IX; independently verify permission for reuse.",
+        "notEvidenceFor": "EXACT_FRAGMENT15_IDENTITY_OR_FRAGMENT20_EQUIVALENCE_OR_IAO_CRITICAL_COLLATION_OR_ORIGINAL_LXX_PRONUNCIATION_OR_REPRODUCTION_RIGHTS"
       }
     }
   ],
