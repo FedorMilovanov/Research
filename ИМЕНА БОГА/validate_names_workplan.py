@@ -7,6 +7,7 @@ lectures, collate manuscripts, verify external licensing or approve Product.
 """
 from __future__ import annotations
 
+import ast
 import json
 import re
 import sys
@@ -42,6 +43,37 @@ REQUIRED_EXPLANATIONS = (
 def _count_attestations(data: dict) -> int:
     return sum(len(x.get("attestations", [])) for x in data.get("records", [])
                if isinstance(x, dict) and isinstance(x.get("attestations"), list))
+
+
+
+def _count_discoverable_corpus_tests(source: str) -> tuple[int, list[str]]:
+    """Use the Python AST instead of counting indented text that unittest may skip."""
+    try:
+        module = ast.parse(source)
+    except SyntaxError as exc:
+        return 0, [f"workplan: corpus test module has invalid syntax: {exc.msg}"]
+    all_tests = [node for node in ast.walk(module)
+                 if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef))
+                 and node.name.startswith("test_")]
+    discovered: list[tuple[str, str]] = []
+    for cls in module.body:
+        if not isinstance(cls, ast.ClassDef):
+            continue
+        if not any(
+            (isinstance(base, ast.Attribute) and base.attr == "TestCase")
+            or (isinstance(base, ast.Name) and base.id == "TestCase")
+            for base in cls.bases
+        ):
+            continue
+        for method in cls.body:
+            if isinstance(method, (ast.FunctionDef, ast.AsyncFunctionDef)) and method.name.startswith("test_"):
+                discovered.append((cls.name, method.name))
+    errors: list[str] = []
+    if len(all_tests) != len(discovered) or not discovered:
+        errors.append("workplan: corpus test definitions outside discoverable unittest.TestCase")
+    if len(discovered) != len(set(discovered)):
+        errors.append("workplan: duplicate test method name silently overrides earlier definition")
+    return len(discovered), errors
 
 
 def validate_names_workplan(
@@ -180,12 +212,14 @@ def validate_names_workplan(
     recorded = plan.get("baseline", {})
     if not isinstance(recorded, dict):
         return errors + ["workplan: frozen snapshot missing"]
+    discovered_test_count, test_errors = _count_discoverable_corpus_tests(corpus_tests)
+    errors.extend(test_errors)
     checks = {
         "arenaRecords": len(baseline.get("records", [])),
         "extensionRecords": len(extension.get("records", [])),
         "contextAttestations": _count_attestations(baseline) + _count_attestations(extension),
         "sourceRegisterEntries": len(sources.get("records", [])),
-        "regressionTests": len(re.findall(r"^    def test_", corpus_tests, re.MULTILINE)),
+        "regressionTests": discovered_test_count,
     }
     for k, current in checks.items():
         if recorded.get(k) != current:
