@@ -1469,5 +1469,13 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                             for e in validate_source_access(d)))
 
 
+    def test_liverpool_2019_box9_is_not_proof_of_current_photo_access(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-DANS-TELL-DEIRALLA-SLIDES-ARCHIVE-XS5-KPQN")
+        row["independentPhysicalArchiveInventory2019"]["status"] = "ORIGINAL_1967_INFRARED_NEGATIVES_OBTAINED"
+        self.assertTrue(any("Liverpool 2019 Box 9 inventory is not verified 2026 custody" in e
+                            for e in validate_source_access(d)))
+
+
 if __name__ == "__main__":
     unittest.main()
