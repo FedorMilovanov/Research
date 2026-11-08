@@ -128,5 +128,29 @@ class NamesResearchWorkplanTests(unittest.TestCase):
         self.assertTrue(any("corpus unexpectedly published" in e for e in self.check(sources=sources)))
 
 
+    def test_corpus_test_count_rejects_methods_hidden_after_main(self) -> None:
+        source = self.tests + "\n    def test_hidden_after_main(self):\n        pass\n"
+        errors = self.check(corpus_tests=source)
+        self.assertTrue(any("outside discoverable unittest.TestCase" in e for e in errors))
+
+    def test_corpus_test_count_rejects_lookalike_non_testcase_methods(self) -> None:
+        source = self.tests + "\nclass FakeCase:\n    def test_not_discovered(self):\n        pass\n"
+        errors = self.check(corpus_tests=source)
+        self.assertTrue(any("outside discoverable unittest.TestCase" in e for e in errors))
+
+    def test_corpus_test_count_rejects_duplicate_method_override(self) -> None:
+        source = self.tests.replace(
+            "    def test_current_research_corpora_pass_structure(self) -> None:",
+            "    def test_current_research_corpora_pass_structure(self) -> None:\n        pass\n\n    def test_current_research_corpora_pass_structure(self) -> None:",
+            1,
+        )
+        errors = self.check(corpus_tests=source)
+        self.assertTrue(any("duplicate test method name" in e for e in errors))
+
+    def test_corpus_test_count_rejects_invalid_python_syntax(self) -> None:
+        errors = self.check(corpus_tests=self.tests + "\ndef test_broken(\n")
+        self.assertTrue(any("invalid syntax" in e for e in errors))
+
+
 if __name__ == "__main__":
     unittest.main()
