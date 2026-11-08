@@ -677,19 +677,19 @@
       "documentYear": 1560,
       "title": "Records of the Parliaments of Scotland entry A1560/8/3",
       "evidenceClass": "A1",
-      "accessState": "LINK_ONLY",
-      "locatorState": "COARSE_LOCATOR_ONLY",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
       "holds": [
         "EVIDENCE_HOLD",
-        "LOCATOR_HOLD",
+        "ARCHIVE_HOLD",
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "url": "https://www.rps.ac.uk/search.php?action=print&filename=maryi_ms&id=9393&type=ms",
-      "verificationNote": "1560 RPS A1560/8/3 live direct page still returned 503; search indexed manuscript editor note original Confession manuscript lost; collate later Skene 1597 vs Lekpreuik 1568 (1567 context). New separate RPS-1567 document read.",
-      "checkedAt": "2026-11-04"
+      "url": "https://www.rps.ac.uk/search.php?action=print&filename=maryi_trans&id=8733&type=trans",
+      "verificationNote": "2026-11-08 DIRECT READ of public RPS academic modern English edited translation of A1560/8/3 at maryi_trans id 8733, lines 1-142, including preface, election, signs of true kirk, sacraments, infant baptism, magistrate and final Estates ratification formula Edinburgh 17 Aug 1560 (modern page lines 132); editor footnotes lines 133-140. RPS expressly states that 1560 ORIGINAL CONFESSION MANUSCRIPT IS LOST; basis nearest official 1597 Skene The Lawes and Acts sect6 ff3r-9v, with some preface/marginalia not in Skene and other readings from PRO SP52/05 pp771-789 and Robert Lekpreuik 1568 ff5v-10v. Distinguish scholarly 1560 document presentation (headings unnumbered) from RPS A1567/12/3 modern translation of Lekpreuik 1568 (headings numbered 1..12,14..26, 25 visible). This upgrade is access to TRANSLATED CRITICAL EDITION not an original autograph or full collation of early historical prints. OLD maryi_ms id9393 endpoint had 503; it remains unverified. Scholarly RPS presentation DOES NOT prove contemporary Crown sanction in 1560. Preserve ORIGINAL_LOST / ARCHIVE_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD.",
+      "checkedAt": "2026-11-08"
     },
     {
       "id": "REF-P26",
