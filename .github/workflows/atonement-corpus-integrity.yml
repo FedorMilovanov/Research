@@ -73,6 +73,32 @@ jobs:
       - name: Atonement corpus integrity (read-only)
         run: python3 -B scripts/validate_atonement_corpus_integrity.py
 
+      # A tracked textual source must retain exactly its Git blob bytes on every runner.
+      # This detects platform-specific checkout mutations before a stale byte count is blamed
+      # on the scientific sources or hidden by rerunning a writer in CI.
+      - name: Assert sub-lane Markdown byte identity with Git
+        run: |
+          python3 -B - <<'PY'
+          import subprocess
+          from pathlib import Path
+
+          paths = sorted(p for lane in ("ot", "nt", "fathers", "synthesis")
+                         for p in (Path("ИСКУПЛЕНИЕ") / lane).glob("*.md"))
+          assert len(paths) == 57, f"unexpected source inventory: {len(paths)}"
+          drift = []
+          for path in paths:
+              original = subprocess.check_output(["git", "show", f"HEAD:{path.as_posix()}"])
+              live = path.read_bytes()
+              if original != live:
+                  drift.append((str(path), len(live) - len(original),
+                                live.count(bytes((13, 10))), original.count(bytes((13, 10)))))
+          print(f"Source byte parity: {len(paths)} files, {len(drift)} deviations")
+          for filename, delta, live_crlf, git_crlf in drift:
+              print(f"DIFF: {filename}: delta={delta}, CRLF live={live_crlf}, Git={git_crlf}")
+          if drift:
+              raise SystemExit("Tracked manuscript bytes differ from Git on this runner")
+          PY
+
       # Числа, которые живут и в реестре, и в прозе аудита, переснимает скрипт; этот шаг не даёт
       # им протухать: без него «счётчик есть в реестре» означает «кто-то когда-то посчитал» (круг 63
       # нашёл в §1 123 записи при 124 в дереве — и ни одна проверка об этом не сообщила).
