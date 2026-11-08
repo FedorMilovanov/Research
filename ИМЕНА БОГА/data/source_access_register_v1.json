@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 52,
+    "sourceRecords": 57,
     "approvedForProduct": 0
   },
   "records": [
@@ -1284,7 +1284,129 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ]
+    },
+    {
+      "id": "SRC-IMG-DEIRALLA-DISDERO-2020",
+      "title": "Deir 'Alla Inscription.png: Disdero modern transcription/composite visualization of Combination I",
+      "creator": "Disdero",
+      "url": "https://commons.wikimedia.org/wiki/File:Deir_%27Alla_Inscription.png",
+      "year": 2020,
+      "objectType": "editorial_visual_or_scholarly_acquisition",
+      "sourceRole": "ILLUSTRATION_OF_RECONSTRUCTED_TEXT_CC_BY_SA_4",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "locator": "Commons file description and full 2172×1861 source, author Disdero, 14 July 2020, CC BY-SA 4.0",
+      "sourceObjectState": "Image and creator/licence verified directly on Commons. Modern graphical transcription, NOT photograph of original plaster, NOT a critical scholarly edition. Exact original: https://upload.wikimedia.org/wikipedia/commons/9/91/Deir_%27Alla_Inscription.png",
+      "supportedUse": "Embed within reader Research draft with author, source URL, CC BY-SA 4.0 licence link and notice of modifications (none). Any transformed image must retain compatible ShareAlike on adaptation.",
+      "forbiddenUse": "Depict as photograph of artifact; imply all reconstructed letters are archaeologically certain; reuse without author credit/licence; treat image permission as Product approval.",
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "proposedReaderUse": "EMBEDDED_RESEARCH_READER_ONLY"
+    },
+    {
+      "id": "SRC-IMG-DEIRALLA-LEIDEN-POSTER-1989",
+      "title": "Een verhaal voor het oprapen: excavations in the Jordan Valley, archaeological exhibition poster (1989)",
+      "creator": "Henk de Bruin; Rijksmuseum van Oudheden; Erfgoed Leiden en Omstreken",
+      "url": "https://commons.wikimedia.org/wiki/File:Een_verhaal_voor_het_oprapen._Opgravingen_te_Deir_Alla_in_de_Jordaanvallei,_Objectnr_AF_B429.jpg",
+      "year": 1989,
+      "objectType": "editorial_visual_or_scholarly_acquisition",
+      "sourceRole": "HISTORICAL_EXHIBITION_POSTER_CC0",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "locator": "Commons object AF_B429, 2687×3722 source, CC0 1.0",
+      "sourceObjectState": "Original source image and Commons credit/licence directly verified; poster includes excavation scene, sculpture and plaster image, NOT an excavation photo made by this project's author. High-quality file via https://upload.wikimedia.org/wikipedia/commons/c/cb/Een_verhaal_voor_het_oprapen._Opgravingen_te_Deir_Alla_in_de_Jordaanvallei%2C_Objectnr_AF_B429.jpg",
+      "supportedUse": "Illustrate history of research with an accurate 1989 museum-poster caption and CC0/source credit; distinct from archaeological original evidence.",
+      "forbiddenUse": "Present poster as photograph of the 1967 discovery itself or as primary epigraphic evidence; generalize poster CC0 rights to unrelated museum photographs.",
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "proposedReaderUse": "EMBEDDED_RESEARCH_READER_ONLY"
+    },
+    {
+      "id": "SRC-IMG-DEIRALLA-AMIN-WHE-2019",
+      "title": "Osama Shukir Muhammed Amin, photograph of Balaam plaster in Jordan Museum, World History Encyclopedia",
+      "creator": "Osama Shukir Muhammed Amin",
+      "url": "https://www.worldhistory.org/image/10089/the-balam-text-from-deir-alla/",
+      "year": 2019,
+      "objectType": "editorial_visual_or_scholarly_acquisition",
+      "sourceRole": "ORIGINAL_MUSEUM_OBJECT_PHOTO_LINK_ONLY",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "locator": "Image record and explicit license/copyright lines 51–75",
+      "sourceObjectState": "Actual museum image available on linked WHE page; explicitly says COPYRIGHT; no reprint/distribution/alteration without author permission.",
+      "supportedUse": "Provide external clickable link to genuine original museum photograph; rights request if reproduction is desired.",
+      "forbiddenUse": "Embed downloaded photo, assume World History Encyclopedia nonprofit status grants third-party website rights.",
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "publicationState": "BLOCKED",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "SRC-IMG-DEIRALLA-ACOR-LAPP-1987-NOT-BALAAM",
+      "title": "ACOR photo item: Jordan. Deir Alla, Phase IX inscription (likely NOT Balaam inscription)",
+      "creator": "Nancy L. Lapp",
+      "url": "https://archives.acorjordan.org/s/acor/item/112732",
+      "year": 1987,
+      "objectType": "editorial_visual_or_scholarly_acquisition",
+      "sourceRole": "IMAGE_MISIDENTIFICATION_GUARD_ACOR_ARCHIVE",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "locator": "ACOR record NL_J_2_S_6_012 (1987), field 'Description' and 'Access Rights'",
+      "sourceObjectState": "ACOR expressly states a 1987 photographed inscription likely not the 1967 Balaam prophecy. Academic/scholarly usage conditions; noncommercial high-res requests, commercial by case-by-case permission.",
+      "supportedUse": "Use as negative image-identity warning in editorial provenance; request permission for separate illustrations if genuinely relevant.",
+      "forbiddenUse": "Label it a Balaam inscription photograph or a 1967 find; assume unrestricted commercial reproduction.",
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "publicationState": "BLOCKED",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "SRC-SCHOLAR-SAUNDERS-DEIRALLA-2024",
+      "title": "Matthew Saunders, Balaam Inscription from Tell Deir ‘Allā, Database of Religious History",
+      "creator": "Matthew Saunders",
+      "url": "https://zenodo.org/records/12574440",
+      "year": 2024,
+      "objectType": "editorial_visual_or_scholarly_acquisition",
+      "sourceRole": "SCHOLARLY_SURVEY_DEIRALLA_REFERENTS_AND_DIALECT_CONTROVERSY",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "locator": "Zenodo record DOI 10.5281/zenodo.12574440; description discussion of šdyn, dialect alternatives and Combination II",
+      "sourceObjectState": "Full Zenodo abstract/description read directly; PDF exists but not independently inspected. Distinguishes Canaanite, Aramaic, mixed Northwest Semitic, 'Gileadite' hypotheses; claims connection šdyn to Šadday as author's strongly held view, not independent physical collation.",
+      "supportedUse": "Attribute Saunders' arguments and compare with 1991 Weippert/Hackett; use as bibliographic route to Pat-El/Wilson-Wright 2015 and Rendsburg 1992.",
+      "forbiddenUse": "Treat 'undoubtedly related' as proven etymology or speak for scholarly consensus; republish full PDF.",
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "publicationState": "BLOCKED",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
     }
   ],
-  "auditRevision": "NG12_DEIR_ALLA_1976_1991_2013_2019_CRITICAL_SOURCE_LOCATORS_20261108"
+  "auditRevision": "NG12_DEIR_ALLA_ILLUSTRATION_RIGHTS_AND_INSCRIPTION_RECHECK_20261108"
 }
