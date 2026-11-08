@@ -28,6 +28,37 @@ class Luther1517WormsEditorialTests(unittest.TestCase):
         self.assertIn("PUBLICATION_HOLD", s)
         self.assertIn("NOT_EDITORIAL_READY", s)
 
+    def test_wave399_reader_apparatus_boundary_and_verbatim_evidence_retention(self):
+        """Keep original witness qualifications without interrupting reader prose."""
+        import re
+        for chapter, expected in ((self.two, 5), (self.three, 10)):
+            reader, apparatus = chapter.split("## Источниковедческий аппарат", 1)
+            with self.subTest(original_explanations=expected):
+                self.assertGreater(len(reader.split()), 2000)
+                self.assertEqual(apparatus.count("**Первоначальное пояснение "), expected)
+                self.assertNotRegex(reader, r"\bREF-[PS]\d+|\bVD16\b|CATALOG_ONLY|ORIGINAL_PRINT_COLLATION_HOLD")
+                self.assertIn("PUBLICATION_HOLD", chapter)
+                self.assertIn("ORIGINAL_PRINT_COLLATION_HOLD", apparatus)
+                self.assertIn("RIGHTS_HOLD", apparatus)
+        reader2, apparatus2 = self.two.split("## Источниковедческий аппарат", 1)
+        for marker in ("Оксфордское издание", "тезисом 35", "31 октября 1517 года",
+                       "лейпцигской печати последний номер оказался 87",
+                       "тезисе 71", "тезис 72"):
+            self.assertIn(marker.lower(), reader2.lower())
+        for preserved in ("Jnstructiones Confessorum", "Instructio summaria",
+                          "**Тезис 71** сформулирован", "Нюрнбергский и базельский",
+                          "Для научной ссылки нужно различать"):
+            self.assertIn(preserved, apparatus2)
+        reader3, apparatus3 = self.three.split("## Источниковедческий аппарат", 1)
+        for marker in ("1.18", "9.3", "видимого знака", "Reg. E 81",
+                       "зависим", "8 мая", "12 мая", "25 мая", "26 мая"):
+            self.assertIn(marker.lower(), reader3.lower())
+        for witness in ("VD16 L3759", "VD16 L4189", "VD16 L3653",
+                        "VD16 A3024", "REF-P64", "Taylor Institution Library"):
+            self.assertIn(witness, apparatus3)
+        self.assertIn("https://editions.mml.ox.ac.uk/editions/freiheit-1520/", apparatus3)
+        self.assertIn("https://tueditions.ulb.tu-darmstadt.de/v/pa000008-0107", apparatus3)
+
     def test_ch02_1517_prints_and_letter_details_stay_in_backstage(self):
         s = self.two
         reader, apparatus = s.split("## Источниковедческий аппарат", 1)
