@@ -635,6 +635,13 @@ def validate_source_access(sources: dict) -> list[str]:
                 errors.append(f"{prefix}: DANS 1996 paper filename containing 1967 is not a 1967 photograph")
             if source.get("archiveHistoricCustodyNotCurrentProof") != "DANS_HISTORICAL_2019_METADATA_1960_1967_SUBARCHIVE_AT_LEIDEN_UNIVERSITY_PLANNED_TRANSFER_RMO_NOT_VERIFIED_2026_TRANSFER_RMO_2011_OBJECTS_NOT_FIELD_PHOTO_PROOF":
                 errors.append(f"{prefix}: historical planned Leiden-to-RMO transfer is not verified current archive custody")
+        if rid == "SRC-DANS-TELL-DEIRALLA-SLIDES-ARCHIVE-XS5-KPQN":
+            box9 = source.get("independentPhysicalArchiveInventory2019")
+            if (not isinstance(box9, dict)
+                or box9.get("status") != "BOX9_HISTORIC_INVENTORY_TEXT_VERIFIED_PHOTOGRAPHIC_OBJECTS_NOT_SEEN_CURRENT_CUSTODY_UNVERIFIED"
+                or box9.get("url") != "https://livrepository.liverpool.ac.uk/3058583/1/201230666_MAY2019.pdf"
+                or "does NOT authenticate current 2026 location" not in str(box9.get("holdingBoundary", ""))):
+                errors.append(f"{prefix}: Liverpool 2019 Box 9 inventory is not verified 2026 custody or actual image access")
         if rid in {"SRC-CAQUOT-LEMAIRE-DEIRALLA-REASSEMBLY-1977-P193198",
                    "SRC-HOFTIJZER-BALAAM-ARTICLE-1976-BA39-1",
                    "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3"}:
