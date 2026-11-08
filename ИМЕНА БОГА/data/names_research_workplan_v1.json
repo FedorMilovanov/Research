@@ -16,7 +16,7 @@
     "regressionTests": 165,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "SUCCESS_ON_PREVIOUS_NG12_SABAOTH_COMMIT_C8476FD_NEW_EL_LEXICOGRAPHY_SHA_PENDING_EXACT_CI",
+    "allSixCiChecks": "SUCCESS_ON_PREVIOUS_LEXICOLOGY_COMMIT_D2BD70D_NEW_CRITICAL_SOURCE_LOCATORS_SHA_EXACT_CI_REQUIRED",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 16,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "c8476fdf4a720c2e41bbb00936c2b61da3b6c2f9"
+    "lastConfirmedAllSixChecksSha": "d2bd70d53ccc3d22c3dec8bf8ed2f27c16f0e080"
   },
   "allowedStatuses": [
     "DONE",
@@ -324,7 +324,9 @@
         "02_YHWH_EHYEH_CRITICAL_DOSSIER.md",
         "07_MEMORIAL_NAMES_DIVINE_ACTIONS_AND_SHEPHERD.md",
         "SRC-TMSJ-VALDIZAN-EX3-2024",
-        "13_TMSJ_2024_DIVINE_NAME_AND_TRANSLATION_SCHOLARLY_REVIEW.md"
+        "13_TMSJ_2024_DIVINE_NAME_AND_TRANSLATION_SCHOLARLY_REVIEW.md",
+        "Publishers verified BHQ Exodus Peter Schwagmeier IN_PREPARATION not available Nov 2026; BHS standard 1997 with critical apparatus EXISTS but exact Exodus3/6 pages not read https://www.die-bibel.de/en/home/current-projects/biblia-hebraica-quinta-bhq",
+        "Göttingen Exodus Wevers Quast 1991 critical edition exists, NETS UPenn PDF English translation based on it NOT its critical apparatus https://septuaginta.uni-goettingen.de/publications/septuaginta/"
       ],
       "verification": "NOT_APPLICABLE_UNTIL_DONE",
       "closureAt": null,
@@ -511,7 +513,19 @@
         "Benjamin D Suchard 2025 Journal for the Study of the Old Testament 49/4 pp460-474 DOI 10.1177/03090892251332286 full publisher HTML read",
         "Encyclopaedia Judaica God Names of sections El/Eloah/Elohim source reproduction https://jewishvirtuallibrary.org/jsource/judaica/ejud_0002_0007_0_07449.html",
         "Bernard Gosse Old Testament Essays 36/3 2023 pp635-648 online Jan2024 DOI 10.17159/2312-3621/2023/v36n3a6 PUBLISHER_ABSTRACT_ONLY",
-        "MT Deut32:15-18 Gen1:1 Job3:4 Dan11:37-39 Hebrew and Dan2:18-19 Aramaic Mechon-Mamre"
+        "MT Deut32:15-18 Gen1:1 Job3:4 Dan11:37-39 Hebrew and Dan2:18-19 Aramaic Mechon-Mamre",
+        "03_PATRIARCHAL_EL_TITLES_AND_REFERENTS.md §3.3 critical sources acquisition 20261108 edition-specific verified locators and Deir Alla source read scopes",
+        "BHQ publisher official catalog Genesis2016 Deuteronomy2007 Job2024 Ruth2004 and Exodus not yet published https://www.die-bibel.de/en/home/current-projects/biblia-hebraica-quinta-bhq",
+        "BHS standard 1997 with actual apparatus vs reader edition without apparatus https://www.die-bibel.de/en/biblia-hebraica-stuttgartensia-bhs-publications",
+        "Göttingen Septuaginta official Wevers Quast Exodus II/1 1991 and Ziegler Isaias XIV 1983 https://septuaginta.uni-goettingen.de/publications/septuaginta/",
+        "NETS Exodus full pdf UPenn introduction printed p43 translated from Wevers critical Greek edition not equivalent to critical apparatus https://ccat.sas.upenn.edu/nets/edition/02-exod-nets.pdf",
+        "HALOT university subscription description https://lib.biu.ac.il/en/node/1710",
+        "Dead Sea Scrolls Electronic Library Biblical Texts publisher transcription/photo access https://scholarlyeditions.brill.com/dsbo/",
+        "Deir Alla editio princeps Hoftijzer van der Kooij 1976 from source Caquot Lemaire 1977 pp189-208 https://www.persee.fr/doc/syria_0039-7946_1977_num_54_3_6603",
+        "Lemaire 1985 Deir Alla epigraphy pp270-285 https://www.persee.fr/doc/crai_0065-0536_1985_num_129_2_14268",
+        "Wilson Wright 2019 Vetus Testamentum 69 149-166 p153 visually verified Deir Alla Combination I lines5-6 plural shdyn contrasted lhn https://sites.utexas.edu/scripts/files/2020/10/2019-AWW-The-Helpful-God.pdf",
+        "Anna Angelini 2021 Brill OA L imaginaire du demoniaque dans la Septante selective searchable original text excerpt but PDF page screenshot 403 ISBN 9789004468474",
+        "Emile Puech Balaam and Deir Alla Brill published PDF preview first 2 pages text only screenshot 403 https://brill.com/previewpdf/book/edcoll/9789047433132/Bej.9789004165649.i-329_003.xml"
       ],
       "verification": "NOT_APPLICABLE_UNTIL_DONE",
       "closureAt": null,
@@ -705,7 +719,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "All three NG12 lexical subtopics now investigated with context-sensitive original language citations and bounded scholarly alternatives: Shaddai, Sabaoth, El/Eloah/Elohim. NG12 BLOCKED_SOURCE remains: need HALOT, full specific academic articles/chapters, original Semitic comparative corpora and critical witnesses, independent external scholarly reviewers; 0 accepted etymology, rights/Product/HALOT blocked. CH01/02/03 drafts preserved, do not create new chapters or source IDs. Subsequent work should address concrete source gaps or evidence-based acceptance, not reopen general discovery.",
+  "nextAction": "Targeted critical access: BHS standard Exodus3:14-15 and 6:3 apparatus (BHQ Exodus in preparation, not published), BHQ Genesis 2016, Deuteronomy 2007, Job 2024, Ruth 2004 exact apparatus; Göttingen Wevers Quast 1991 Exodus and Ziegler 1983 Isaias; HALOT authorized institutional pages; Deir Alla Hoftijzer van der Kooij 1976 plates and Hackett 1984; no invented readings. Then independent external reviews of three draft chapters; NG12 remains BLOCKED_SOURCE, peer, rights and Product hold.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -787,7 +801,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-08",
-    "planStatus": "NG02 structural graph DONE; NG03 editorial supersession DONE; NG12 named morphological/etymological alternatives source-scoped for Shaddai, Sabaoth, El/Eloah/Elohim, BUT NG12 BLOCKED_SOURCE full completion pending HALOT/original critical sources/peer review; 3 reader drafts, zero external approvals.",
+    "planStatus": "NG12 critical editions official locators verified and Deir Alla Combination I lines5-6 plural shdyn source quoted with visual p153; BHQ Exodus explicitly unpublished, BHS standard and Göttingen Exodus exist but exact critical apparatus unread; 0 critical collations, 3 reader drafts, 0 scholarly peer, 0 Product.",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -874,7 +888,8 @@
       "2026-11-08: second internal source/text review CH-PILOT-03: added Ruth1:20-21 Naomi's Shaddai without El + Job5:17 Eliphaz's Shaddai bounded by Job42:7; editorial source bullets for exact MT, verified Exodus20:2 MT vs Synodal20:2–3 numbering with independently opened text. Scientific/rights/peer gates stay HOLD.",
       "2026-11-08: NG12 source-limited substantive etymology advance in ORIGINAL dossier 03 and reader CH03: checked BDB H7706 actual digital entry; Wilson-Wright 2019 UT Austin published PDF pp149-155,160; Krogevoll 2025 publisher 26-page PDF sample and printed pp19-25 with main chapter3/4 inaccessible; Dewrell 2024 and Angelini 2022 publisher abstracts; Kruger 2023 full HTML selected paragraphs. Conflicting Helper vs Destroyer vs Mountain explicitly attributed; source rights and original critical HOLD kept, 0 claims promoted; no new source registry IDs.",
       "2026-11-08: NG12 Sabaoth provenance audit expanded existing dossier06: full digital BDB H6635, 2024 Șopterean selected full-journal PDF sections and printed page images 56/59/63, Byrne 2006 Maynooth thesis selected Isaiah chapter2 sections and printed p51 image; MT 1Sam4:4,17:45 Isa6:3 Genesis2:1; publisher Rahlfs-Hanhart LXX Isa6:3 and SBLGNT Romans9:29, James5:4. Explicit conflicting origin models and no false single angel/Israel/creation interpretation; no new claim/source IDs.",
-      "2026-11-08: NG12 comparative El/Eloah/Elohim source-bounded review using BDB 1906 full digital entries H410 H430 H433; Benjamin Suchard 2025 full original publisher open HTML, Encyclopaedia Judaica selected secondary sections; Bernard Gosse 2024 online abstract only. MT Gen1:1 Deut32:15/17/18 Job3:4 Dan11:37-39 Hebrew contrasted with Dan2:18-19 Aramaic. Revised existing dossier09 and CH03, no new claim/source IDs, no full HALOT, no external scientific acceptance."
+      "2026-11-08: NG12 comparative El/Eloah/Elohim source-bounded review using BDB 1906 full digital entries H410 H430 H433; Benjamin Suchard 2025 full original publisher open HTML, Encyclopaedia Judaica selected secondary sections; Bernard Gosse 2024 online abstract only. MT Gen1:1 Deut32:15/17/18 Job3:4 Dan11:37-39 Hebrew contrasted with Dan2:18-19 Aramaic. Revised existing dossier09 and CH03, no new claim/source IDs, no full HALOT, no external scientific acceptance.",
+      "2026-11-08: critical source discovery: official DBG BHQ published Genesis2016 Deuteronomy2007 Job2024 Ruth2004, Exodus Peter Schwagmeier still in preparation; BHS standard revised1997 with apparatus (Reader edition no apparatus); official Göttingen Wevers/Quast Exodus 1991, Ziegler Isaias1983; UPenn NETS Exodus full PDF introduction p43 screenshot says Wevers basis only; HALOT and DSSEL institutional access endpoints, no full text; Deir Alla Hoftijzer van der Kooij1976 exact editio princeps, Caquot/Lemaire1977 and Lemaire1985 archive first pages, Wilson Wright2019 original p153 screenshot Combo I lines5-6 šdyn plural; Angelini2021 OA Brill selected indexed text but PDF screenshot 403. No sourceId or claimId or ancient collation invented."
     ],
     "stillOpen": [
       "External Product/Arena consumers and zip prototypes still NOT independently authenticated by exact deployment/build; no dual-read v2 test witness",
@@ -947,7 +962,7 @@
   "editorialExecution": {
     "asOf": "2026-11-08",
     "owner": "ИМЕНА БОГА/11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md §0a/§3b",
-    "state": "NG12_SHADDAY_SABAOTH_EL_ELOAH_ELOHIM_SOURCE_BOUNDED_DIVERGENT_ETYMOLOGIES_ALL_MAJOR_LEXEMES_STILL_HOLD",
+    "state": "NG12_EXACT_CRITICAL_EDITION_LOCATORS_FOUND_BHQ_EXODUS_NOT_PUBLISHED_EPIGRAPHY_UNCOLLATED",
     "readerChapterCountApproved": null,
     "subjectDirectionsProvisional": 14,
     "readerManuscriptsAccepted": 0,
@@ -1207,6 +1222,169 @@
       ],
       "verdict": "EL_ELOAH_ELOHIM_DISTINCT_SYNTACTIC_REFERENCE_AND_LANGUAGE_WHILE_HISTORICAL_ROOT_PROPOSALS_CONFLICT_NOT_DEMONSTRATED_AS_CERTAIN; DENY_PROPER_NAME_EXPORT_WITHOUT_CONTEXT",
       "scientificApproval": false
+    },
+    "criticalSourceAcquisition20261108": {
+      "state": "PUBLISHER_IDENTITIES_VERIFIED_BHQ_EXODUS_NOT_PUBLISHED_EPIGRAPHIC_LOCUS_FOUND_CRITICAL_COLLATION_HOLD",
+      "asOf": "2026-11-08",
+      "owner": "ИМЕНА БОГА/03_PATRIARCHAL_EL_TITLES_AND_REFERENTS.md §3.3 critical-source audit",
+      "editions": [
+        {
+          "kind": "BHQ",
+          "book": "Genesis",
+          "editor": "Abraham Tal",
+          "year": 2016,
+          "locators": [
+            "Gen14:22",
+            "Gen17:1",
+            "Gen35:11"
+          ],
+          "status": "PUBLISHED_OFFICIAL_CATALOG_APPARATUS_NOT_READ"
+        },
+        {
+          "kind": "BHQ",
+          "book": "Deuteronomy",
+          "editor": "Carmel McCarthy",
+          "year": 2007,
+          "locators": [
+            "Deut32:15",
+            "Deut32:17",
+            "Deut32:18"
+          ],
+          "status": "PUBLISHED_OFFICIAL_CATALOG_APPARATUS_NOT_READ"
+        },
+        {
+          "kind": "BHQ",
+          "book": "Job",
+          "editor": "Robert Althann",
+          "year": 2024,
+          "locators": [
+            "Job5:17",
+            "Job42:7"
+          ],
+          "status": "PUBLISHED_OFFICIAL_CATALOG_APPARATUS_NOT_READ"
+        },
+        {
+          "kind": "BHQ",
+          "book": "Ruth",
+          "editor": "Jan de Waard",
+          "year": 2004,
+          "locators": [
+            "Ruth1:20",
+            "Ruth1:21"
+          ],
+          "status": "PUBLISHED_OFFICIAL_CATALOG_APPARATUS_NOT_READ"
+        },
+        {
+          "kind": "BHQ",
+          "book": "Exodus",
+          "editor": "Peter Schwagmeier",
+          "year": null,
+          "locators": [
+            "Exod3:14",
+            "Exod6:3"
+          ],
+          "status": "IN_PREPARATION_OFFICIAL_PUBLISHER_NO_SUCH_PUBLISHED_VOLUME"
+        },
+        {
+          "kind": "BHS",
+          "book": "Exodus",
+          "editors": "Karl Elliger; Wilhelm Rudolph; Adrian Schenker revised 1997",
+          "year": 1997,
+          "locators": [
+            "Exod3:14",
+            "Exod3:15",
+            "Exod6:3"
+          ],
+          "status": "PUBLISHED_STANDARD_WITH_APPARATUS_NOT_READ_READERS_EDITION_HAS_NO_CRITICAL_APPARATUS"
+        },
+        {
+          "kind": "GOTTINGEN_LXX",
+          "book": "Exodus",
+          "editors": "J.W. Wevers; Udo Quast",
+          "volume": "II/1",
+          "year": 1991,
+          "locators": [
+            "Exod3:14",
+            "Exod6:3"
+          ],
+          "status": "PUBLISHED_EDITORIAL_CATALOG_APPARATUS_NOT_READ_NETS_BASED_ON_EDITION_NOT_CRITICAL_APPARATUS"
+        },
+        {
+          "kind": "GOTTINGEN_LXX",
+          "book": "Isaiah",
+          "editor": "Joseph Ziegler",
+          "volume": "XIV",
+          "year": 1983,
+          "locators": [
+            "Isa6:3"
+          ],
+          "status": "PUBLISHED_EDITORIAL_CATALOG_APPARATUS_NOT_READ"
+        },
+        {
+          "kind": "HALOT",
+          "book": "Lexicon",
+          "editor": "Koehler Baumgartner Stamm",
+          "year": null,
+          "locators": [
+            "El",
+            "Eloah",
+            "Elohim",
+            "Shadday",
+            "Sabaoth"
+          ],
+          "status": "INSTITUTIONAL_ONLINE_FULL_TEXT_LISTED_NO_LEMMA_ACTUALLY_OPENED"
+        },
+        {
+          "kind": "DSSEL",
+          "book": "Dead Sea Scrolls Biblical Texts",
+          "year": null,
+          "locators": [],
+          "status": "PUBLISHER_CORPUS_IMAGES_AND_TRANSCRIPTIONS_IDENTIFIED_NO_FRAGMENT_AND_VERSE_COLLATION"
+        }
+      ],
+      "epigraphy": {
+        "artifact": "Deir Alla plaster inscription, Combination I lines 5-6",
+        "primaEditio": "J Hoftijzer and G van der Kooij Aramaic Texts from Deir Alla 1976 324 pages 33 plates",
+        "earlyStudies": [
+          {
+            "authors": "Andre Caquot and Andre Lemaire",
+            "year": 1977,
+            "pages": "189-208",
+            "access": "ARCHIVE_FRONT_PAGE_HTML_AND_EDITION_METADATA_READ_REST_NOT_VERIFIED"
+          },
+          {
+            "author": "Andre Lemaire",
+            "year": 1985,
+            "pages": "270-285",
+            "access": "ARCHIVE_FRONT_PAGE_HTML_AND_EDITION_METADATA_READ_REST_NOT_VERIFIED"
+          },
+          {
+            "author": "Aren M Wilson-Wright",
+            "year": 2019,
+            "pages": "153",
+            "access": "FULL_PUBLISHED_ARTICLE_AVAILABLE_SELECTED_P153_ORIGINAL_VISUAL_SCREENSHOT_READ",
+            "locus": "plural šdyn in parallel to ʾlhn; source proposes association, not direct singular El Shadday proof"
+          },
+          {
+            "author": "Anna Angelini",
+            "year": 2021,
+            "access": "BRILL_INDEXED_SELECTED_TEXT_READ_PDF_PAGE_SCREENSHOT_HTTP403",
+            "scope": "Deuteronomy32:17 Shedim and possible analogy to Shadday only author-specific theory; CC BY NC ND 4"
+          }
+        ],
+        "originalFacsimileAutopsy": false
+      },
+      "targetedNext": [
+        "Get existing BHS STANDARD apparatus exact Exod3:14-15 and Exod6:3; do NOT wait for BHQ Exodus",
+        "Get published BHQ Gen14:22 Gen17:1 Deut32:15-18 Job5:17 Ruth1:20-21 textual apparatus pages",
+        "Get Göttingen Wevers Quast Exodus 1991 and Ziegler Isaiah 1983 original Greek variant apparatus",
+        "Get Hoftijzer van der Kooij 1976 plates and Hackett 1984 pp25/86-87 Deir Alla Combination I lines5-6, collate exact inscription alternative readings",
+        "Get actual HALOT lemma text via authorized library account and Brill DSS witness photos only for precise attested fragments",
+        "Keep Anglo NETS Exodus as derivative English text with declared Wevers base, not independent Greek variant witness"
+      ],
+      "criticalCollationsCompleted": 0,
+      "externalReviewsCompleted": 0,
+      "productApproval": false
     }
   },
   "systematicTheologyTriage": {
