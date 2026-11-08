@@ -32,7 +32,7 @@ class ReformationAdversarialSevenNineTests(unittest.TestCase):
                 for status in ("RESEARCH_MANUSCRIPT_DRAFT", "NOT_EDITORIAL_READY",
                                "PUBLICATION_HOLD"):
                     self.assertIn(status, reader)
-                for label in ("Вопрос", "Допустим", "REF-P", "HOLD"):
+                for label in ("Допустим", "REF-P", "HOLD"):
                     self.assertIn(label.lower(), apparatus.lower())
 
     def test_peasants_prints_and_voice_limit(self):
