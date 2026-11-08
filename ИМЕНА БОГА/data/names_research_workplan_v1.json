@@ -12,11 +12,11 @@
     "arenaRecords": 29,
     "extensionRecords": 13,
     "contextAttestations": 105,
-    "sourceRegisterEntries": 67,
-    "regressionTests": 186,
+    "sourceRegisterEntries": 68,
+    "regressionTests": 188,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "NEW_ADAJ1986_ORIGINAL_C14_HEAD_EXACT_SHA_CI_REQUIRED",
+    "allSixCiChecks": "PRIOR_CDACFDA_EXACT_SHA_6_OF_6_SUCCESS_NEW_WEINSTEIN_CONFLICT_COMMIT_REQUIRES_CI",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 17,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "2a369ed6828dd5636d1090363d2bd6d629a99aba"
+    "lastConfirmedAllSixChecksSha": "cdacfda954d894a38f166e232b027790edff9c1f"
   },
   "allowedStatuses": [
     "DONE",
@@ -719,7 +719,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NG12 focus: separate historical 1986 880–770 BCE radiocarbon interpretation from modern calibrated sample distributions and date of ink; check 1976 ATDA p16 (GrN5633 previous report) and published newer chronology. For text obtain primary 1976 original plates/transcription p173 and Hackett1984 full material to adjudicate Combination I fragment joins and shdyn; leave peer and rights gates blocked. No new branch.",
+  "nextAction": "Highest priority NG12: obtain original isotope lab list Vogel and Waterbolk 1972 Groningen Radiocarbon Dates X Radiocarbon14(1) p53 (Cambridge publisher access) to compare GrN5283/GrN5633 provenience and 1984 vs 1986 numeric records; obtain ATDA 1976 p16 before any claim of mistaken C14 numbers or a precise date. Separately 1976 original inscription p173+plates and Hackett1984 full material for šdyn and line numbering, then external scholarly review. No Product.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -801,7 +801,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-08",
-    "planStatus": "NG12 direct primary ADAJ 1986 exact original pages 137 and 142 visually read, pp141 text: 2 sample identifiers GrN5633/GrN8119 with 1986 historical calibrated 880-770BCE archaeological destruction interval; do not ascribe exact 750BCE Amos earthquake or temple. 67 registered sources, 186 corpus tests, 0 ancient epigraphic collations/peer approvals/Product. Current commit exact SHA CI required.",
+    "planStatus": "NG12 new edition-specific published lab-ID discrepancy between Weinstein 1984 original Radiocarbon p351 and Ibrahim/van der Kooij 1986 ADAJ p142. GrN5283 2690±60 pit vs GrN5633 2600±50 destruction in 1984, while 1986 GrN5633 2690±60. Original 1972 Groningen Radiocarbon14 p53 and ATDA1976 p16 NOT READ, do not pronounce typo. 68 registered sources, 188 baseline tests; source/photo limits preserved, no ancient epigraphic collation/reviews/Product. Prior exact SHA cdacfda 6/6 CI; new SHA pending.",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -896,14 +896,15 @@
       "NG12 targeted French original Lemaire 1984 review of Hackett printed p142, red-line/fragment Ve/XVc and line8 dispute plus 8th/7th dating conflict. Reader03 and dossier03 amended, 1 source with partial reading, 2 negative tests, not manuscript collation.",
       "NG12 direct field archaeology: official Jordan Department of Antiquities PDF Ibrahim/van der Kooij ADAJ 23 (1979), print pp49-50; distinguish preliminary eighth-century phase IX/M from unknown absolute date of inscription or any imagined 750 BCE earthquake; C14 still pending in 1979 author report. Two negative guards, Dossier03/Reader03 updated.",
       "08.11.2026 NG12 independently inspected Lemaire 1985 CRAI pages271–272 via Persée HTML original journal: found ATDA 1976 p16 C14 circa800 B.C. +/-70 @66% cited, 1983 ADAJ p583 reference, and tentative Amos1:1 quake correlation. Explicitly reconciled 1979 unfinished samples with older available published C14 data without asserting shared/different batch; Reader03, dossier03, source register and two fail-closed tests updated.",
-      "08.11.2026 NG12 first-hand Jordanian archaeological field report 1986 pp137 and142 visually verified: C14 two identified burned-plant samples GrN5633 2690±60 BP / GrN8119 2590±70 BP with contemporary 770–880 BCE calibrations, phase IX physical plaster/bench rooms, no incontrovertible sanctuary; historical dated samples distinguished from epigraphic writing. Source ledger+2 negative tests, Dossier03+Reader03 and navigation updated."
+      "08.11.2026 NG12 first-hand Jordanian archaeological field report 1986 pp137 and142 visually verified: C14 two identified burned-plant samples GrN5633 2690±60 BP / GrN8119 2590±70 BP with contemporary 770–880 BCE calibrations, phase IX physical plaster/bench rooms, no incontrovertible sanctuary; historical dated samples distinguished from epigraphic writing. Source ledger+2 negative tests, Dossier03+Reader03 and navigation updated.",
+      "08.11.2026 NG12 forensic radiocarbon provenance: official Cambridge publisher PDF Weinstein 1984 p351 visually checked; exact source conflict with original ADAJ 1986 p142 in GrN5283/5633 IDs, values and pit-vs-destruction provenience; created source record, two negative source guards, dossier and Reader03 attribution, requiring Vogel/Waterbolk 1972 p53 before resolution."
     ],
     "stillOpen": [
       "External Product/Arena consumers and zip prototypes still NOT independently authenticated by exact deployment/build; no dual-read v2 test witness",
       "55 old missing inline V1 locus fields remain absent by design; 50 old existing fields preserved, additional 33 sidecar-only witnesses not represented in old 22 generic snapshot",
       "Critical biblical textual manuscripts/collation, independent scholarly assessment, source rights and Product signoff remain HOLD",
       "Run 6/6 GitHub workflows on this audit update's exact new SHA before calling the updated control plane green; pre-update 5a97a3b succeeded but does not certify later commits.",
-      "67 source registrations, with direct 1986 ADAJ P137/142 screenshots. Need 1976 ATDA p16 raw sample context and modern recalibration if relevant, original epigraphic transcription p173 and photo plates for shdyn, scholarly independently authored line concordance, independent peer and Product rights."
+      "68 source registrations; 1984 versus 1986 lab ID/numeric discrepancy unadjudicated, original Vogel/Waterbolk 1972 Radiocarbon14 p53 and ATDA1976 p16 must be read. No modern C14 recalibration or inscription epigraphic facsimile autopsy."
     ]
   },
   "originalResearchCheckpoint": {
@@ -1472,6 +1473,21 @@
       "criticalEditionCollated": false,
       "independentPeerReview": false,
       "productApproval": false
+    },
+    "ng12Weinstein1984VsADAJ1986": {
+      "sourceId": "SRC-WEINSTEIN-1984-DEIRALLA-C14-CONFLICT-P351",
+      "state": "PRINTED_ORIGINAL_1984_P351_VS_1986_P142_SAMPLE_ID_CONFLICT_DOCUMENTED_NOT_RESOLVED",
+      "evidence": "Weinstein1984 p351 GrN5283 2690±60 BP phase M pit; GrN5633 2600±50 BP phase M destruction grain, both cite original 1972 Radiocarbon14 p53. Directly checked excavators' 1986 p142 GrN5633 2690±60 BP, GrN8119 2590±70 BP. Do not hypothesize typo as fact.",
+      "unreadPrimary": "Vogel and Waterbolk 1972 Groningen Radiocarbon Dates X printed p53, and ATDA1976 printed p16",
+      "negativeControls": [
+        "No silent sample ID reassignment",
+        "No treating 1986 880–770 BCE calibration as verified modern precise date",
+        "No merging pit/destruction provenience",
+        "No Amos1:1 quake identity"
+      ],
+      "criticalCollations": 0,
+      "externalPeerAccepted": 0,
+      "productApproval": 0
     }
   },
   "systematicTheologyTriage": {

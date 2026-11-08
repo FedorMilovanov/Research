@@ -1183,6 +1183,18 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         row["functionScope"] = "EXCAVATION_PROVES_FULL_SANCTUARY_FUNCTION"
         self.assertTrue(any("room function" in e for e in validate_source_access(d)))
 
+    def test_deir_alla_weinstein_vs_1986_lab_number_conflict_is_open(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-WEINSTEIN-1984-DEIRALLA-C14-CONFLICT-P351")
+        row["discrepancyScope"] = "C14_SAMPLE_CONFLICT_RESOLVED_WITHOUT_ORIGINAL_LAB_LIST"
+        self.assertTrue(any("GrN-5283/5633 source conflict" in e for e in validate_source_access(d)))
+
+    def test_deir_alla_weinstein_does_not_invent_1972_lab_autopsy(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-WEINSTEIN-1984-DEIRALLA-C14-CONFLICT-P351")
+        row["laboratorySourceAccess"] = "VOGEL_WATERBOLK_1972_R14_P53_FULL_ORIGINAL_READ"
+        self.assertTrue(any("1972 laboratory-access boundary" in e for e in validate_source_access(d)))
+
     def test_deir_alla_livius_translation_cannot_inherit_photo_cc0_rights(self) -> None:
         d = copy.deepcopy(self.sources)
         row = next(x for x in d["records"] if x["id"] == "SRC-LIVIUS-LEVINE-COMPOSITE-TRANSLATION-2003")

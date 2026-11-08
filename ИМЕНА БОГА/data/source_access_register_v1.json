@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 67,
+    "sourceRecords": 68,
     "approvedForProduct": 0
   },
   "records": [
@@ -1668,7 +1668,34 @@
       "carbonScope": "ADAJ1986_SAMPLES_GRN5633_2690PM60_BP_GRN8119_2590PM70_BP_770_880_BCE_HISTORIC_CALIBRATION_NOT_MODERN_EXACT_INSCRIPTION_DATE",
       "functionScope": "ADAJ1986_NO_CLEAR_SANCTUARY_FUNCTION_TRADE_LIVING_AND_RELIGIOUS_HYPOTHESES_OPEN",
       "imageScope": "ADAJ1986_ORIGINAL_PAGES137_AND142_SCREENSHOTS_VERIFIED_NOT_ALL_ARTIFACT_PLATES"
+    },
+    {
+      "id": "SRC-WEINSTEIN-1984-DEIRALLA-C14-CONFLICT-P351",
+      "title": "James M. Weinstein, Radiocarbon Dating in the Southern Levant, Radiocarbon 26/3 (1984), 297–366, original table p351",
+      "creator": "James M. Weinstein",
+      "year": 1984,
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0086FF0E2C859B1064BC8FC782E928B0/S0033822200006731a.pdf/radiocarbon-dating-in-the-southern-levant.pdf",
+      "doi": "10.1017/S0033822200006731",
+      "objectType": "cambridge_original_1984_scholarly_radiocarbon_table_exact_p351_visually_verified",
+      "sourceRole": "WEINSTEIN1984_GRN5283_GRN5633_SAMPLE_ID_CONFLICT_WITH_ADAJ1986",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "publicationState": "BLOCKED",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "locator": "Original Cambridge journal PDF printed p351 zero-based page54 screenshot checked; Deir Alla Phase M pit and destruction rows, cited 1972 Groningen lab list original printed p53 not directly read.",
+      "sourceObjectState": "Original Weinstein 1984 printed p351 visually checked. Phase M PIT GrN-5283=2690±60 BP historical calibrated 890–765 BCE; Phase M DESTRUCTION DEBRIS charred grain GrN-5633=2600±50 BP historical calibrated 820–765 BCE, both referencing Radiocarbon 1972 vol14 p53. Directly checked excavation ADAJ 1986 p142 instead lists GrN-5633=2690±60 BP with GrN-8119=2590±70 BP, and historical 880–770 BCE range. There is a real published mismatch of sample ID,value,provenience, not yet a demonstrated typo. Original lab authors Vogel and Waterbolk 1972 paper metadata known but p53 unpublished to this research, and 1976 ATDA p16 not read.",
+      "supportedUse": "Present a specific 1984-versus-1986 source conflict for GrN-5283, GrN-5633, GrN-8119, with exact author's numerical data and layer contexts as printed, separately attributed; require access to the original Vogel/Waterbolk 1972 Radiocarbon 14 p53 and 1976 ATDA p16 to adjudicate.",
+      "forbiddenUse": "Do not silently relabel GrN-5633 to GrN-5283 or label either scholarly publisher certainly mistaken; do not merge pit and destruction sample context, claim raw laboratory 1972 viewed or recalibrate modern IntCal results, or publish protected figure without permission.",
+      "discrepancyScope": "VERIFIED_1984_P351_GRN5283_2690PM60_PIT_GRN5633_2600PM50_DESTRUCTION_VS_1986_P142_GRN5633_2690PM60_UNRESOLVED",
+      "laboratorySourceAccess": "VOGEL_WATERBOLK_1972_R14_P53_PUBLISHER_METADATA_ONLY_SOURCE_PAGE_NOT_READ"
     }
   ],
-  "auditRevision": "NG12_ADAJ1986_ORIGINAL_TWO_C14_SAMPLES_AND_CAUTIOUS_SITE_FUNCTION_20261108"
+  "auditRevision": "NG12_WEINSTEIN1984_ADAJ1986_C14_NUMERIC_AND_SAMPLE_CONTEXT_CONFLICT_20261108"
 }
