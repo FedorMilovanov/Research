@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 64,
+    "sourceRecords": 65,
     "approvedForProduct": 0
   },
   "records": [
@@ -1587,7 +1587,33 @@
       ],
       "comparisonScope": "SPECIFIC_FRAGMENT_INK_DATING_OBJECTIONS_IN_LEMAIRE1984_PRINT_P142_NOT_FINAL_VERDICT",
       "autopsyBoundary": "LEMAIRE_CITES_OWN_EPIGRAPHIC_INSPECTION_OUR_ACCESS_ONE_ARCHIVED_REVIEW_PAGE_NOT_PLASTER"
+    },
+    {
+      "id": "SRC-ADAJ1979-IBRAHIM-VANDERKOOIJ-PHASEIX",
+      "title": "Moawiyah M. Ibrahim and Gerrit van der Kooij, Excavations at Tell Deir ‘Alla: Season 1979, ADAJ 23 (1979), 41–50",
+      "creator": "Moawiyah M. Ibrahim; Gerrit van der Kooij",
+      "year": 1979,
+      "url": "https://publication.doa.gov.jo/uploads/publications/105/ADAJ_1979_23-41-50.pdf",
+      "objectType": "jordan_department_of_antiquities_original_1979_excavation_field_report_text_selected_pages_read_figures_uninspected",
+      "sourceRole": "PRIMARY_EXCAVATION_1979_PHASE_M_IX_PROVISIONAL_DATING_DESTRUCTION_OBSERVATION",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "locator": "Original Department of Antiquities of Jordan ADAJ 1979 vol23 pp41–50; official PDF printed pp49–50 exact paragraph 'Phase IX' (same as old phase M), p50 'Some general remarks'; 10-page scan with archaeological figures; web screenshot attempted p9/p8 but returned 502. Text extracted by official-web viewer not manuscript photographs.",
+      "sourceObjectState": "Report authors describe 1979 excavation square B/C6 next to B/C5 and say phase IX is former phase M. P49 mentions excavation in 1967 and archaeological evidence of earth-shock and fire; 1979 B/C6 room filled with burned roof/wall debris and standing walls; plan Fig5 shows phase IX relative to 1967/1976 squares. Printed p50: 'Phase IX probably has to be dated in the 8th century B.C.' and explicit admission that phase dates are preliminary, artifacts require careful study and 14C samples were still being analysed as of 1979. Official PDF parsed text available, visual screenshot on p49/50 failed HTTP502. Does not independently date inscription's composition or establish a specific earthquake event date.",
+      "supportedUse": "Directly ground Lemaire 1984 p142 reference to excavators' dated report p50; separate archaeological physical phase M/IX with observed burning/architecture from uncertain palaeography, radiocarbon and proposed copy composition dates. Only claim a provisional eighth-century phase assignment by excavators in 1979, not a closed absolute date.",
+      "forbiddenUse": "Claim C14 test results measured or returned 750 BCE, claim 1979 field report authorizes full epigraphic restoration or textual reading of šdyn, infer the original literary composition is eighth century, claim independently visually inspected plans/photographs, republish original PDF graphics without license, use 1979 preliminary phase dates as current settled archaeological consensus.",
+      "evidenceClass": "A2",
+      "criticalEditionCollated": false,
+      "publicationState": "BLOCKED",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "datingScope": "ADAJ1979_PHASE_IX_PROBABLY_EIGHTH_BCE_PRELIMINARY_ARTIFACTS_C14_PENDING_AT_1979",
+      "imageScope": "OFFICIAL_PDF_PARSED_PP49_50_WEB_SCREENSHOT_HTTP502_NO_INDEPENDENT_VISUAL_VALIDATION"
     }
   ],
-  "auditRevision": "NG12_LEMAIRE1984_HACKETT_CRITICAL_COMPARISON_PAGE142_20261108"
+  "auditRevision": "NG12_ORIGINAL_ADAJ1979_PHASEIX_PRIMARY_ARCHAEOLOGICAL_DATING_TEXT_20261108"
 }

@@ -1147,6 +1147,18 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         row["comparisonScope"] = "CERTAIN_CHRONOLOGY_AND_FINAL_PLACEMENT_OF_ALL_FRAGMENTS"
         self.assertTrue(any("one-page source scope" in e for e in validate_source_access(d)))
 
+    def test_deir_alla_adaj1979_phase_IX_stays_preliminary_not_c14_absolute(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-ADAJ1979-IBRAHIM-VANDERKOOIJ-PHASEIX")
+        row["datingScope"] = "C14_CONFIRMED_750_BCE_WITHOUT_ERROR"
+        self.assertTrue(any("provisional phase dating" in e for e in validate_source_access(d)))
+
+    def test_deir_alla_adaj1979_parsed_pdf_cannot_imply_visual_photo_check(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-ADAJ1979-IBRAHIM-VANDERKOOIJ-PHASEIX")
+        row["imageScope"] = "ALL_ANCIENT_PLASTER_FACSIMILES_VISUALLY_COLLATED"
+        self.assertTrue(any("PDF visual scope falsely promoted" in e for e in validate_source_access(d)))
+
     def test_deir_alla_livius_translation_cannot_inherit_photo_cc0_rights(self) -> None:
         d = copy.deepcopy(self.sources)
         row = next(x for x in d["records"] if x["id"] == "SRC-LIVIUS-LEVINE-COMPOSITE-TRANSLATION-2003")
