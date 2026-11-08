@@ -16,7 +16,7 @@
     "regressionTests": 165,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "SUCCESS_ON_PREVIOUS_CH03_SOURCE_REVIEW_COMMIT_086605ED_NEW_NG12_SHA_CI_REQUIRED",
+    "allSixCiChecks": "SUCCESS_ON_PREVIOUS_NG12_SHADDAY_RECONCILIATION_COMMIT_1950BE9_NEW_NG12_SABAOTH_SHA_REQUIRES_CI",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 16,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "086605ed00315b5e7434927e9b5f4f0d6098f901"
+    "lastConfirmedAllSixChecksSha": "1950be9533c1dce299af240ea841595e86480ffe"
   },
   "allowedStatuses": [
     "DONE",
@@ -499,7 +499,13 @@
         "Krogevoll 2025 publisher sample 26 PDF pages; printed pp19-25 https://www.vandenhoeck-ruprecht-verlage.com/media/pdf/f2/66/7f/9783647502274_sample.pdf",
         "Dewrell 2024 VT 74/2 297-302 abstract https://doi.org/10.1163/15685330-bja10132",
         "Angelini 2022 HBAI 11/3 235-249 abstract https://www.mohrsiebeck.com/en/article/divine-names-from-the-hebrew-bible-to-the-septuagint-methodological-remarks-and-a-case-study-101628hebai-2022-0032/",
-        "Kruger 2023 In die Skriflig 57/1 available HTML https://www.scielo.org.za/scielo.php?pid=S2305-08532023000100037&script=sci_arttext"
+        "Kruger 2023 In die Skriflig 57/1 available HTML https://www.scielo.org.za/scielo.php?pid=S2305-08532023000100037&script=sci_arttext",
+        "06_HOSTS_JEALOUS_ROCK_HOLY_ADONAI_ELOHIM.md §2 NG-12 Sabaoth 2026-11-08 source-boundary",
+        "Brown Driver Briggs 1906 H6635 digital expanded entry https://www.studylight.org/lexicons/eng/hebrew/6635.html",
+        "Șopterean 2024 ROOTS 12/2 56-68 accessible full journal PDF selected sections read printed pp56/59/63 images https://napocaroots.reviste.ubbcluj.ro/index.php/roots/article/download/103/129/462",
+        "Máire Byrne 2006 Maynooth PhD selected thesis sections ch2 pp48-55 and visually printed p51 https://mural.maynoothuniversity.ie/id/eprint/5139/1/Marie_Byrne_20140624150650.pdf",
+        "Deutsche Bibelgesellschaft LXX Rahlfs Hanhart 2006 Isaiah6:3 kyrios sabaoth official HTML https://www.die-bibel.de/bibel/LXX/ISA.6",
+        "SBLGNT 2010 Romans9:29 and James5:4 transliteration Sabaoth context; Isaiah1:9 MT cited by Paul"
       ],
       "verification": "NOT_APPLICABLE_UNTIL_DONE",
       "closureAt": null,
@@ -693,7 +699,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "CH01-03 reader manuscripts drafted, internally checked, 0 externally approved. NG12 Shadday subtopic exact opposing etymologies sourced at full/partial/abstract tiers and reader updated, but NG12 still BLOCKED_SOURCE: targeted full Krogevoll 2025 pp51-108, Dewrell 2024 297-302, Angelini 2022 235-249, HALOT and original Semitic witness + remaining El/Elohim/Eloah/Sabaoth; obtain qualified independent scholarly peer reviews, rights, critical editions before approval. NO generalized new author search.",
+  "nextAction": "NG12 Shadday and Sabaoth subtopics now have bounded opposing scholarly sources with explicit access tiers; still BLOCKED_SOURCE including unfinished El/Elohim/Eloah historical lexicography, HALOT, original witness critical editions and independent peer review. Three reader manuscripts remain drafts, 0 scholarly approvals, 0 product rights, and no expansion of manuscript count. Next targeted El/Eloah lexeme differentiation or full unavailable sources only on evidence availability; do not turn semantic alternatives into proven original etymologies.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -775,7 +781,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-08",
-    "planStatus": "NG02 technical DONE; NG03 editorial DONE; 3 connected reader manuscripts 2/1/2 internal passes; NG12_SHADDAY competing academic positions reconciled BDB/Wilson-Wright/Krogevoll/Dewrell/Angelini/Kruger by exact access, full historical etymology and other lexemes blocked; 0 external scholarly approvals, rights/Product HOLD.",
+    "planStatus": "NG02 graph and NG03 10/10 supersession DONE, NG12 Shadday and Sabaoth etymological alternatives bounded with original Hebrew/Greek and scholarly sources, FULL NG12 BLOCKED_SOURCE; 3 reader manuscripts drafted, 0 externally accepted or scientific claims approved, critical/rights/Product HOLD.",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -860,7 +866,8 @@
       "2026-11-08: CH-PILOT-02 first internal adversarial check corrected exact Exod6:3 vocalized נוֹדַעְתִּי in apparatus, kept source attribution for NET/Rashi/Calvin and clear digital Greek-vs-manuscript boundary; no external peer review.",
       "2026-11-08: CH-PILOT-03 third connected reader manuscript on El, Elohim and Shaddai written (~2800 words with separate scholarly appendix). Original MT Gen1/14/17/28/35, Ex6/20, Ps91, Deut32, Isa43, Aramaic Dan2 and scholarly Suchard 2025 compared. First internal adversarial pass named Cargill 2019 abstract-only explicitly, fixed Ps91/90 numbering; all manuscripts still external-scholarly HOLD, no content registry or Product writes.",
       "2026-11-08: second internal source/text review CH-PILOT-03: added Ruth1:20-21 Naomi's Shaddai without El + Job5:17 Eliphaz's Shaddai bounded by Job42:7; editorial source bullets for exact MT, verified Exodus20:2 MT vs Synodal20:2–3 numbering with independently opened text. Scientific/rights/peer gates stay HOLD.",
-      "2026-11-08: NG12 source-limited substantive etymology advance in ORIGINAL dossier 03 and reader CH03: checked BDB H7706 actual digital entry; Wilson-Wright 2019 UT Austin published PDF pp149-155,160; Krogevoll 2025 publisher 26-page PDF sample and printed pp19-25 with main chapter3/4 inaccessible; Dewrell 2024 and Angelini 2022 publisher abstracts; Kruger 2023 full HTML selected paragraphs. Conflicting Helper vs Destroyer vs Mountain explicitly attributed; source rights and original critical HOLD kept, 0 claims promoted; no new source registry IDs."
+      "2026-11-08: NG12 source-limited substantive etymology advance in ORIGINAL dossier 03 and reader CH03: checked BDB H7706 actual digital entry; Wilson-Wright 2019 UT Austin published PDF pp149-155,160; Krogevoll 2025 publisher 26-page PDF sample and printed pp19-25 with main chapter3/4 inaccessible; Dewrell 2024 and Angelini 2022 publisher abstracts; Kruger 2023 full HTML selected paragraphs. Conflicting Helper vs Destroyer vs Mountain explicitly attributed; source rights and original critical HOLD kept, 0 claims promoted; no new source registry IDs.",
+      "2026-11-08: NG12 Sabaoth provenance audit expanded existing dossier06: full digital BDB H6635, 2024 Șopterean selected full-journal PDF sections and printed page images 56/59/63, Byrne 2006 Maynooth thesis selected Isaiah chapter2 sections and printed p51 image; MT 1Sam4:4,17:45 Isa6:3 Genesis2:1; publisher Rahlfs-Hanhart LXX Isa6:3 and SBLGNT Romans9:29, James5:4. Explicit conflicting origin models and no false single angel/Israel/creation interpretation; no new claim/source IDs."
     ],
     "stillOpen": [
       "External Product/Arena consumers and zip prototypes still NOT independently authenticated by exact deployment/build; no dual-read v2 test witness",
@@ -933,7 +940,7 @@
   "editorialExecution": {
     "asOf": "2026-11-08",
     "owner": "ИМЕНА БОГА/11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md §0a/§3b",
-    "state": "THREE_READER_MANUSCRIPTS_REVISED_NG12_SHADDAY_CONFLICT_SOURCE_BOUNDED_NO_SCHOLARLY_APPROVAL",
+    "state": "NG12_SHADDAY_AND_SABAOTH_SUBTOPICS_SOURCE_BOUNDED_3_READER_DRAFTS_0_EXTERNAL_APPROVALS",
     "readerChapterCountApproved": null,
     "subjectDirectionsProvisional": 14,
     "readerManuscriptsAccepted": 0,
@@ -1058,6 +1065,67 @@
       ],
       "scientificApproval": false,
       "editorialVerdict": "NO_UNIQUELY_ATTESTED_ETYM; traditional Almighty translation history is not derivation; confident modern alternatives are author-specific and directly conflict; keep Shadday original in key reader passages; all critical and Product holds unchanged."
+    },
+    "ng12SabaothSubtopic": {
+      "state": "LEXICAL_NUMBER_CONTEXTS_AND_OPPOSING_ORIGIN_EXPLANATIONS_SOURCE_BOUNDED_ORIGIN_HOLD",
+      "asOf": "2026-11-08",
+      "sourceMatrix": "ИМЕНА БОГА/06_HOSTS_JEALOUS_ROCK_HOLY_ADONAI_ELOHIM.md §2 NG-12",
+      "lemma": "צְבָאוֹת",
+      "verified": "PLURAL_OF_צָבָא_HEBREW_MT_SOURCE_REFERENTS_NT_GREEK_LXX_PUBLISHER_ISA6_3",
+      "competingInterpretations": [
+        "ARMIES_OF_ISRAEL_AND_DIVINE_WARRIOR",
+        "HEAVENLY_COUNCIL_KING_ON_CHERUBIC_THRONE",
+        "ALL_HOSTS_OF_CREATION",
+        "SYNTACTIC_APPOSITION_OR_ALTERNATE_VERBAL_DERIVATIONS_NOT_ACCEPTED"
+      ],
+      "sources": [
+        {
+          "author": "Brown-Driver-Briggs",
+          "year": 1906,
+          "locator": "H6635",
+          "access": "COMPLETE_DIGITAL_LEXICON_ENTRY_READ_NOT_PRINT_OR_HALOT"
+        },
+        {
+          "author": "Bogdan Șopterean",
+          "year": 2024,
+          "locator": "ROOTS 12/2 pp56-68 DOI 10.24193/ROOTS.2024.2.4",
+          "access": "OFFICIAL_FULL_PDF_AVAILABLE_SELECTED_TEXT_SECTIONS_READ_PAGE_IMAGES_PRINTED_56_59_63_VERIFIED"
+        },
+        {
+          "author": "Máire Byrne",
+          "year": 2006,
+          "locator": "PhD Maynooth chapter2 sections 11-12 printed pp48-55",
+          "access": "ARCHIVED_FULL_THESIS_PDF_AVAILABLE_SELECTED_SECTIONS_READ_PRINTED_P51_IMAGE_VERIFIED"
+        },
+        {
+          "author": "Rahlfs-Hanhart",
+          "year": 2006,
+          "locator": "Deutsche Bibelgesellschaft LXX Isaiah6:3",
+          "access": "OFFICIAL_GREEK_HTML_VERSE_READ_NOT_MSS_COLLATION"
+        },
+        {
+          "author": "SBLGNT",
+          "year": 2010,
+          "locator": "Romans9:29; James5:4",
+          "access": "EDITION_DIGITAL_TEXT_READ"
+        }
+      ],
+      "negativeControls": [
+        "NOT_DERIVED_FROM_SABBATH",
+        "ISA_6_SERAPHIM_CANNOT_UNIVERSALIZE_ANGEL_ONLY_ORIGIN",
+        "1SAM17_45_ISRAEL_ARMY_CANNOT_EXCLUDE_HEAVENLY_CONTEXT",
+        "ROM9_29_QUOTES_ISA1_9_NOT_ISA6_3",
+        "LXX_ISA6_GREEK_TRANSLITERATION_NOT_AUTOMATIC_ALL_LXX_PANTOKRATOR"
+      ],
+      "unresolved": [
+        "HISTORICAL_ORIGIN_AND_DATING_OF_YHWH_SABAOTH",
+        "HALOT_ENTRY_FULL",
+        "BHS_BHQ_GOTTINGEN_ISAIAH_CRITICAL_SOURCE_AND_WITNESSES",
+        "EPIGRAPHIC_HISTORICAL_EVIDENCE",
+        "INDEPENDENT_PEER_REVIEW"
+      ],
+      "scientificApproval": false,
+      "verdict": "MORPHOLOGICAL_PLURAL_ESTABLISHED_SEMANTIC_REFERENTS_VARY_ORIGINAL_TITLE_DERIVATION_NOT_PROVEN_RUSSIAN_TRANSLATION_SABAOTH_RETAINED"
     }
   },
   "systematicTheologyTriage": {
