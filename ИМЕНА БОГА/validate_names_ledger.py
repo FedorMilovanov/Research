@@ -635,6 +635,20 @@ def validate_source_access(sources: dict) -> list[str]:
                 errors.append(f"{prefix}: DANS 1996 paper filename containing 1967 is not a 1967 photograph")
             if source.get("archiveHistoricCustodyNotCurrentProof") != "DANS_HISTORICAL_2019_METADATA_1960_1967_SUBARCHIVE_AT_LEIDEN_UNIVERSITY_PLANNED_TRANSFER_RMO_NOT_VERIFIED_2026_TRANSFER_RMO_2011_OBJECTS_NOT_FIELD_PHOTO_PROOF":
                 errors.append(f"{prefix}: historical planned Leiden-to-RMO transfer is not verified current archive custody")
+        if rid in {"SRC-CAQUOT-LEMAIRE-DEIRALLA-REASSEMBLY-1977-P193198",
+                   "SRC-HOFTIJZER-BALAAM-ARTICLE-1976-BA39-1",
+                   "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3"}:
+            witness_key = ("indirect1976ErratumWitness"
+                           if rid.startswith("SRC-CAQUOT-LEMAIRE") else "indirect1977CorrectionWitness")
+            if source.get(witness_key) != "CAQUOT_LEMAIRE_1977_PRINT_P189_FOOTNOTE1_ATTRIBUTES_SIXTH_CENTURY_TO_EIGHTH_SEVENTH_CORRECTION_TO_BA1976_39_3_P87_ORIGINAL_ERRATUM_TEXT_NOT_OBTAINED":
+                errors.append(f"{prefix}: later 1977 reported date correction missing or falsely promoted")
+            citation_key = ("indirect1976ErratumWitnessUrl"
+                            if rid.startswith("SRC-CAQUOT-LEMAIRE") else "indirect1977CorrectionWitnessUrl")
+            if source.get(citation_key) != "https://www.persee.fr/doc/syria_0039-7946_1977_num_54_3_6603?pageId=T1_189":
+                errors.append(f"{prefix}: later 1977 dating correction must cite print p189")
+        if rid == "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3":
+            if source.get("originalErratumTextVerified") is not False:
+                errors.append(f"{prefix}: original 1976 erratum must remain unviewed despite 1977 report")
         if rid == "SRC-HOFTIJZER-BALAAM-ARTICLE-1976-BA39-1":
             if (source.get("linkedErratumId") != "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3"
                 or source.get("linkedErratumUrl") != "https://doi.org/10.2307/3209398"
