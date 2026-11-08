@@ -756,7 +756,7 @@ def validate_source_access(sources: dict) -> list[str]:
                 "academicEditorialFragmentsLev427": "EDITORIAL_FRAGMENTS_20_21_LEVITICUS_4_26_28",
                 "academicEditorialFragmentsLev46": "EDITORIAL_FRAGMENTS_12_15_LEVITICUS_4_6_8",
                 "reportedCrosswalk": "VASILEIADIS_2017_P24_FIG1_EDITORIAL_FRAGMENT20_LINE4_TO_MUSEUM_PLATE378_FRAGMENT15",
-                "reportedCrosswalkAccess": "AUTHOR_DEPOSIT_RECORD_VERIFIED_CROSSWALK_FROM_INDEXED_SECONDARY_TEXT_AUTHOR_PDF_P24_NOT_DIRECTLY_INSPECTED",
+                "reportedCrosswalkAccess": "AUTHOR_DEPOSIT_PDF_PRINTED_P24_FIG1_CAPTION_DIRECTLY_EXTRACTED_NO_FIGURE_PIXEL_PALEOGRAPHY",
             }
             valid_numbering = (
                 isinstance(numbering, dict)
@@ -764,6 +764,21 @@ def validate_source_access(sources: dict) -> list[str]:
                 and numbering.get("museumImage") == "https://www.deadseascrolls.org.il/explore-the-archive/image/B-503715"
                 and numbering.get("academicIndexUrl") == "https://ancientmodern.org/wp-content/uploads/2016/02/the_dead_sea_scrolls_study_edition_brill_1999.pdf"
                 and numbering.get("reportedCrosswalkSource") == "https://zenodo.org/records/4260519"
+                and isinstance(numbering.get("authorPdfCaptionWitness20261109"), dict)
+                and numbering["authorPdfCaptionWitness20261109"].get("repository") == "ZENODO_AUTHOR_DEPOSIT"
+                and numbering["authorPdfCaptionWitness20261109"].get("printedPage") == 24
+                and numbering["authorPdfCaptionWitness20261109"].get("figure") == "FIGURE_1"
+                and numbering["authorPdfCaptionWitness20261109"].get("machineRead") == "PDF_HTTP_200_TEXT_EXTRACTED_FROM_FIRST_6_OF_31_PAGES_CAPTION_VERIFIED"
+                and numbering["authorPdfCaptionWitness20261109"].get("report") == "CAPTION_ASSOCIATES_LEV4_27_GREEK_ENTOLON_IAO_EDITORIAL_FRAGMENT20_LINE4_WITH_MUSEUM_PLATE378_FRAGMENT15"
+                and numbering["authorPdfCaptionWitness20261109"].get("zenodoFileMd5") == "b78bcc5c94e202a15c2392f39dfcbd2f"
+                and numbering["authorPdfCaptionWitness20261109"].get("url") == "https://zenodo.org/records/4260519/files/PV%20VTeH%20The%20god%20Iao%20and%20his%20connection%20with%20the%20Biblical%20God%2C%20with%20special%20emphasis%20on%20the%20manuscript%204QpapLXXLevb.pdf"
+                and all(numbering["authorPdfCaptionWitness20261109"].get(flag) is False for flag in (
+                    "authorImagePixelsIndependentlyAutopsied",
+                    "directDjdCriticalEditionCollation",
+                    "historicalNegativeComparisonCompleted",
+                    "independentEpigrapherApproved",
+                    "reprintRightsConfirmed",
+                ))
                 and numbering.get("distinctNumberingSchemes") is True
                 and numbering.get("publishedCrosswalkSourceNotDirectDjdReview") is True
                 and all(numbering.get(flag) is False for flag in (
