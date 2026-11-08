@@ -2118,9 +2118,9 @@
       "url": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-503715",
       "originalManuscriptCatalogUrl": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/4Q120-1",
       "officialImageTermsUrl": "https://www.deadseascrolls.org.il/terms",
-      "objectType": "primary_manuscript_photography_catalogue_metadata_2015_not_visual_script_collation",
+      "objectType": "primary_ancient_manuscript_color_photography_browser_visual_preview_no_djd_critical_collation",
       "sourceRole": "PRIMARY_IAA_4Q120_GREEK_LEVITICUS_PHOTO_CATALOGUE_NO_GLYPH_COLLATION",
-      "accessState": "CATALOG_ONLY",
+      "accessState": "PARTIAL_OBJECT",
       "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "PERMISSION_REQUIRED",
       "evidenceClass": "B1",
@@ -2132,13 +2132,24 @@
         "PUBLICATION_HOLD"
       ],
       "locator": "Official IAA Leon Levy digital library image B-503715, 2015 full-spectrum colour, recto; archival Plate 378, Frag 15, manuscript 4Q120 = 4QpapLXXLevb; photographer Shai Halevi. Separate secondary mapping Pavlos D. Vasileiadis 2017 *Vetus Testamentum et Hellas* 4 pp21–51 p24 fig1 describes Lev4:27 'εντολων ιαω' as editorial fragment20:4 / plate378 frag15; that mapping has not been authenticated against DJD IX printed plates or sign-level imaging.",
-      "sourceObjectState": "IAA official HTML metadata directly read: Plate 378 Frag 15, B-503715, April 2015 Shai Halevi, Full Spectrum Color, Recto, 4Q120 Greek Leviticus. The primary image PIXELS and ancient Greek letterforms have NOT been examined directly in this research. The association with ancient word ΙΑΩ at Lev4:27 is documented in secondary scholarly published interpretation, not independent glyph collation. Not the same manuscript as 8HevXIIgr; no claim about entire original Greek Pentateuch or spoken divine-name pronunciation is warranted.",
-      "supportedUse": "Precise official museum image locator for future independent source-critical examination of 4Q120 Greek Leviticus manuscript: 2015 image B-503715 Plate378 Frag15, recto. Separately cite editor-specific 2017 mapping to 4Q120 fragment20/Lev4:27 when describing scholarly views; images, readings, edition variants and chronology still require separate verification and rights assessment. Do not conflate photographic cataloguing with the original LXX archetype.",
-      "forbiddenUse": "Claim actual ΙΑΩ glyphs, surrounding Greek characters, fragment 20 line 4, palaeographic date, original Greek Pentateuch wording, public-domain rights of IAA 2015 photography, universal pronunciation of יהוה, or exact DJD IX apparatus directly checked from metadata alone. Never extrapolate from this 4Q120 museum image to the 1967 Deir Alla inscription or its infrared photographs.",
-      "photoProvenanceBoundary": "IAA_4Q120_B503715_PLATE378_FRAG15_2015_HALEVI_RECTO_METADATA_ONLY_NOT_GLYPH_COLLATION",
-      "reportedIaoEvidenceBoundary": "PUBLISHED_SECONDARY_2017_FRAG20_4_PLATE378_FRAG15_IAO_ATTRIBUTED_DJD_IX_AND_PRIMARY_PIXELS_NOT_READ",
-      "officialLicenseBoundary": "IAA_TERMS_2026_ALL_RIGHTS_RESERVED_PRIVATE_SINGLE_COPY_EXCEPTION_REPRODUCTION_REQUIRES_PERMISSION"
+      "sourceObjectState": "The official IAA HTML metadata confirms 4Q120 / Plate 378 Fragment 15 / B-503715 April 2015 Shai Halevi full-spectrum recto. On 2026-11-08 an independently controlled read-only browser successfully rendered actual high-resolution photographic tiles of the ANCIENT PAPYRUS manuscript and reported a legible Greek ΙΑΩ sequence in the visible photo, with lower Omega curve somewhat faded. This is PRELIMINARY VISUAL PHOTOGRAPHIC OBSERVATION, NOT an independently reviewed sign-by-sign critical collation, a preserved image asset, verification of complete Leviticus surrounding text, or direct inspection of published DJD IX transcription/plates. Secondary fragment20:4 / Lev4:27 mapping remains attributed and unverified against DJD IX. Ancient manuscript is NOT author's autograph or original Greek Pentateuch master, and image must not be transferred to Product without permission.",
+      "supportedUse": "Cite official IAA photodocumentation B-503715 for 4Q120 and distinguish direct browser observation of photo pixels from secondary editors' reading and from full critical-edition collation. Preliminary observation is consistent with published ΙΑΩ reading, subject to check of photo orientation, zoom, DJD IX fragment20 mapping, text and scholarly review. Metadata and image witness do not establish the original LXX archetype or spoken ancient Hebrew pronunciation. RIGHTS: reproduction requires IAA permission.",
+      "forbiddenUse": "Promote a browser-level apparent Greek ΙΑΩ reading to expert palaeographic certainty, DJD IX edition collation, the original LXX text or historical pronunciation of יהוה, equate fragment numbers without DJD concordance, claim photographic CC0, or reproduce protected IAA photo publicly. Never extrapolate 4Q120 Greek Leviticus to the physically unrelated Deir Alla plaster / disputed šdyn.",
+      "photoProvenanceBoundary": "IAA_4Q120_B503715_PLATE378_FRAG15_2015_HALEVI_RECTO_PRIMARY_IMAGE_PIXELS_VIEWED_NOT_DJD_CRITICAL_COLLATION",
+      "reportedIaoEvidenceBoundary": "BROWSER_VISUAL_2026_4Q120_B503715_PHOTO_IAO_SEQUENCE_REPORTED_OMEGA_LOWER_STROKE_FADED_DJD_IX_AND_ALTERNATIVE_PHOTO_UNCOLLATED",
+      "officialLicenseBoundary": "IAA_TERMS_2026_ALL_RIGHTS_RESERVED_PRIVATE_SINGLE_COPY_EXCEPTION_REPRODUCTION_REQUIRES_PERMISSION",
+      "preliminaryBrowserVisualObservation20261108": {
+        "imagePage": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-503715",
+        "method": "INDEPENDENT_READ_ONLY_BROWSER_HIGH_RES_TILED_IMAGE_VISUAL_INSPECTION_NO_DOWNLOADED_IMAGE_FILE",
+        "imagePixelsRendered": true,
+        "imageIdentity": "4Q120_4QPAPLXXLEVB_PLATE378_FRAG15_HALEVI_FULL_SPECTRUM_COLOR_RECTO",
+        "reportedDirectPhotoReading": "GREEK_IAO_SEQUENCE_VISUALLY_RECOGNIZED_NEAR_RIGHT_SIDE_THIRD_VISIBLE_LINE_IN_BROWSER_VIEW",
+        "uncertainty": "OMEGA_LOWER_STROKE_FADED_REPORT_REQUIRES_SECOND_INDEPENDENT_PALAEO_EXPANDED_CONTEXT_AND_DJD_IX_VERIFICATION",
+        "scientificStatus": "PRELIMINARY_PHOTOGRAPHIC_OBSERVATION_NOT_INDEPENDENT_EPI_GRAPHIC_CRITICAL_COLLATION",
+        "rightsStatus": "IAA_ALL_RIGHTS_RESERVED_REUSE_PERMISSION_REQUIRED_NO_BYTES_COPIED",
+        "notEvidenceFor": "ORIGINAL_LXX_ARCHETYPE_OR_EXACT_YHWH_PRONUNCIATION_OR_DEIR_ALLA_SHDYN"
+      }
     }
   ],
-  "auditRevision": "NG05_IAA_4Q120_B503715_ORIGINAL_PHOTO_CATALOGUE_NOT_AUTOPSY_20261108"
+  "auditRevision": "NG05_4Q120_PRIMARY_MUSEUM_IMAGE_VISUAL_PRELIMINARY_IAO_NO_CRITICAL_COLLATION_20261108"
 }
