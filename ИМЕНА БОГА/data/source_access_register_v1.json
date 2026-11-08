@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 62,
+    "sourceRecords": 63,
     "approvedForProduct": 0
   },
   "records": [
@@ -1533,7 +1533,35 @@
       ],
       "hypothesisStatus": "ATTRIBUTED_COPY_AND_9TH_10TH_CENTURY_COMPOSITION_NOT_INDEPENDENTLY_ATTESTED",
       "datingScope": "LEMAIRE_PROPOSES_EARLY_8TH_WALL_TEXT_HEINTZ_1980_REPORTS_DIFFERENT_CIRCA_700_PALEOGRAPHIC_ESTIMATE_DISPUTED"
+    },
+    {
+      "id": "SRC-HACKETT-DEIRALLA-FIRSTHAND-1986",
+      "title": "Jo Ann Hackett, Some Observations on the Balaam Tradition at Deir ‘Allā, The Biblical Archaeologist 49/4 (1986): 216–222",
+      "creator": "Jo Ann Hackett",
+      "year": 1986,
+      "url": "https://www.journals.uchicago.edu/doi/10.2307/3210015",
+      "alternateUrl": "https://www.ldsscriptureteachings.org/wp-content/uploads/2022/03/1967-Balaam-Inscription-Hackett.pdf",
+      "doi": "10.2307/3210015",
+      "objectType": "firsthand_scholarly_original_1986_inscription_examination_and_scholarly_transcription_selected_printed_pages_inspected",
+      "sourceRole": "HACKETT_1986_FIRSTHAND_MUSEUM_INSPECTION_AND_ATTRIBUTED_SHDYN_REPOINTING_PROPOSAL",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "locator": "Publisher official journal Volume49/4 Dec1986 216-222; seven-page third-party original article PDF inspected visually printed pp216,220-221; own combination I reconstructed transliteration on p220 and fragment arrangement notes p221",
+      "sourceObjectState": "On original print p216 author states own Amman Museum inspection and photography in 1979 and 1981; p220 prints Hackett's reconstructed Combination I lines1–16, including ʾlhn and šdyn. She conjectures biblical שֵׁדִים might relate to šaddayyîm via revocalization, later disputed by Weippert (1991). P221 notes Caquot/Lemaire 1977 proposed fragment rearrangements. P221 photos are credited to Gordon Hamilton / Deir Alla Expedition, no reuse permission. Box on p216 credited to Henry O Thompson is separately authored, not Hackett. Neither 1976 editio princeps plates nor full Hackett 1984 monograph have been collated by this project.",
+      "supportedUse": "Attribute first-hand researcher visit and her 1986 printed scholarly reconstruction and conjecture concerning biblical šēdîm and inscription šdyn; explain conflicting 1991 objections and variant fragment placements, but do not promote etymology or archaeological dating to certainty.",
+      "forbiddenUse": "Claim editorial independent collation of original ancient plaster, proof of the conjectural biblical vowels or direct El Shadday attestation, full reading of 1976/1984 works, copyright permission for article photos, or misattribute Henry O Thompson inset to Hackett.",
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "publicationState": "BLOCKED",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "hypothesisStatus": "HACKETT_1986_SHDYN_SHEDIM_REVOCALIZATION_ATTRIBUTED_AND_1991_CONTESTED_NOT_ESTABLISHED",
+      "autopsyBoundary": "HACKETT_1979_1981_DIRECT_MUSEUM_EXAMINATION_NOT_OUR_INDEPENDENT_PLASTER_OR_1976_EDITION_COLLATION"
     }
   ],
-  "auditRevision": "NG12_LEMAIRE_2021_SCRIBAL_COPY_PAGES185_186_20261108"
+  "auditRevision": "NG12_HACKETT1986_ORIGINAL_JOURNAL_SELECTED_PAGES_SOURCE_LOCK_20261108"
 }

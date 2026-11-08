@@ -1123,6 +1123,18 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         row["hypothesisStatus"] = "ORIGINAL_10TH_CENTURY_DOCUMENT_FOUND"
         self.assertTrue(any("historical copy/dating claim falsely promoted" in e for e in validate_source_access(d)))
 
+    def test_deir_alla_hackett_museum_visit_is_not_our_autopsy(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-HACKETT-DEIRALLA-FIRSTHAND-1986")
+        row["autopsyBoundary"] = "ANCIENT_PLASTER_DIRECTLY_COLLATED_BY_RESEARCH_2026"
+        self.assertTrue(any("firsthand material scope overclaimed" in e for e in validate_source_access(d)))
+
+    def test_deir_alla_hackett_biblical_revocalization_stays_disputed(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-HACKETT-DEIRALLA-FIRSTHAND-1986")
+        row["hypothesisStatus"] = "BIBLICAL_SHADDAYYIM_READING_ESTABLISHED"
+        self.assertTrue(any("scholarly hypothesis" in e for e in validate_source_access(d)))
+
     def test_deir_alla_livius_translation_cannot_inherit_photo_cc0_rights(self) -> None:
         d = copy.deepcopy(self.sources)
         row = next(x for x in d["records"] if x["id"] == "SRC-LIVIUS-LEVINE-COMPOSITE-TRANSLATION-2003")

@@ -12,11 +12,11 @@
     "arenaRecords": 29,
     "extensionRecords": 13,
     "contextAttestations": 105,
-    "sourceRegisterEntries": 62,
-    "regressionTests": 176,
+    "sourceRegisterEntries": 63,
+    "regressionTests": 178,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "SUCCESS_6_OF_6_AT_PRE_AUDIT_HEAD_5a97a3b40b6564ff32fab4b08edacec39e805f4a_NEW_COMMIT_REQUIRES_OWN_EXACT_SHA_CI",
+    "allSixCiChecks": "NEW_HACKETT1986_EXACT_SHA_CI_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 17,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "5a97a3b40b6564ff32fab4b08edacec39e805f4a"
+    "lastConfirmedAllSixChecksSha": "4becd40439c617ab1de513c4faa58f00c6605228"
   },
   "allowedStatuses": [
     "DONE",
@@ -719,7 +719,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NG12 Deir Alla critical follow-up: get 1976 Hoftijzer/van der Kooij critical p173 and photographic plates, or Caquot/Lemaire 1977 pp193-195 / Lemaire 1985 original full text legally; compare against Lemaire 2021 copy theory, Heintz 1980 dating and photos, avoid invented readings. Then external reviews of three readers.",
+  "nextAction": "NG12 critical follow-up: access original Hoftijzer/van der Kooij 1976 transcription p173 and 33 photo plates, Hackett 1984 full critical monograph pp25,86–87, and visually verify Weippert 1991 pp169–170. Prepare source-specific 1976/1977/1986/1991 concordance and independent review; do not assert a single reading. Other chapters CH-PILOT-01..03 remain scholarly/rights held.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -801,7 +801,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-08",
-    "planStatus": "NG-12 new source Lemaire 2021 pp185–186 visually read; 62 source entries, 176 baseline tests, Reader03 and Dossier03 updated; no independent critical collation, peer review or Product rights. New SHA CI required.",
+    "planStatus": "Hackett 1986 scholarly eyewitness article pages 216, 220–221 verified from original journal scan: 63 source registrations, 178 corpus regression tests, 0 independent inscription collation / scholarly acceptance / Product approval; new exact SHA CI required.",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -891,14 +891,15 @@
       "2026-11-08: NG12 comparative El/Eloah/Elohim source-bounded review using BDB 1906 full digital entries H410 H430 H433; Benjamin Suchard 2025 full original publisher open HTML, Encyclopaedia Judaica selected secondary sections; Bernard Gosse 2024 online abstract only. MT Gen1:1 Deut32:15/17/18 Job3:4 Dan11:37-39 Hebrew contrasted with Dan2:18-19 Aramaic. Revised existing dossier09 and CH03, no new claim/source IDs, no full HALOT, no external scientific acceptance.",
       "2026-11-08: critical source discovery: official DBG BHQ published Genesis2016 Deuteronomy2007 Job2024 Ruth2004, Exodus Peter Schwagmeier still in preparation; BHS standard revised1997 with apparatus (Reader edition no apparatus); official Göttingen Wevers/Quast Exodus 1991, Ziegler Isaias1983; UPenn NETS Exodus full PDF introduction p43 screenshot says Wevers basis only; HALOT and DSSEL institutional access endpoints, no full text; Deir Alla Hoftijzer van der Kooij1976 exact editio princeps, Caquot/Lemaire1977 and Lemaire1985 archive first pages, Wilson Wright2019 original p153 screenshot Combo I lines5-6 šdyn plural; Angelini2021 OA Brill selected indexed text but PDF screenshot 403. No sourceId or claimId or ancient collation invented.",
       "2026-11-08 audit: verified all six workflows completed success at pre-update SHA 5a97a3b, reconciled current 61 source registrations versus historic 48 in navigation and master plan, added fail-closed source-count navigation guard; preserved 3 reader manuscripts, images and scholarly/publication HOLDs without creating new source IDs or branches.",
-      "2026-11-08 targeted original scholarly publication: Peeters 2021 OBO291 Lemaire pp185-186 checked in PDF page images; red-ink reconstructed heading separate from shdyn, wall inscription vs posited older scribal copy, divergent dates all claim-bounded. Registered one source and two negative tests, updated reader03/dossier03."
+      "2026-11-08 targeted original scholarly publication: Peeters 2021 OBO291 Lemaire pp185-186 checked in PDF page images; red-ink reconstructed heading separate from shdyn, wall inscription vs posited older scribal copy, divergent dates all claim-bounded. Registered one source and two negative tests, updated reader03/dossier03.",
+      "08.11.2026 researched original Hackett 1986 Biblical Archaeologist journal pp216,220–221: first-hand Amman inscription visits 1979/1981, separate author's reconstructed Combo I ʾlhn/šdyn, conjectural biblical shedim revocalization challenged by Weippert 1991, Caquot/Lemaire 1977 arrangement notes, correct Thompson inset authorship, figure rights held. Reader03 and Dossier03 updated with one source and two negative source checks."
     ],
     "stillOpen": [
       "External Product/Arena consumers and zip prototypes still NOT independently authenticated by exact deployment/build; no dual-read v2 test witness",
       "55 old missing inline V1 locus fields remain absent by design; 50 old existing fields preserved, additional 33 sidecar-only witnesses not represented in old 22 generic snapshot",
       "Critical biblical textual manuscripts/collation, independent scholarly assessment, source rights and Product signoff remain HOLD",
       "Run 6/6 GitHub workflows on this audit update's exact new SHA before calling the updated control plane green; pre-update 5a97a3b succeeded but does not certify later commits.",
-      "62 registered sources; 1976 original Deir Alla plates, full Caquot/Lemaire 1977 and Lemaire 1985 remain uncollated; no reading or reuse rights for publisher figures."
+      "63 registered sources not primary manuscript autopsies: original 1976 Deir Alla editio princeps plates, Hackett 1984 monograph, full 1977/1985 scans and critical collation still needed."
     ]
   },
   "originalResearchCheckpoint": {
@@ -1400,6 +1401,21 @@
         "External peer review and Product rights"
       ],
       "published": false
+    },
+    "ng12Hackett1986": {
+      "sourceId": "SRC-HACKETT-DEIRALLA-FIRSTHAND-1986",
+      "state": "SELECTED_ORIGINAL_SCHOLARLY_PAGES_VISUALLY_VERIFIED_NOT_INDEPENDENT_EPIGRAPHIC_COLLATION",
+      "verifiedPages": "1986 The Biblical Archaeologist 49/4 printed pp216,220-221",
+      "sourceBoundaries": [
+        "HACKETT_PERSONAL_AMMAN_MUSEUM_1979_1981",
+        "COMBINATION_I_AUTHOR_RECONSTRUCTION_SHDYN_ʾLHN",
+        "HYPOTHETICAL_REPOINTING_BIBLICAL_SHEDIM_CONTESTED_WEIPPERT_1991",
+        "THOMPSON_BACKGROUND_INSET_DISTINCT_AUTHOR",
+        "PHOTOS_COPYRIGHTED"
+      ],
+      "criticalCollationsCompleted": 0,
+      "independentReviewsCompleted": 0,
+      "productApprovals": 0
     }
   },
   "systematicTheologyTriage": {
