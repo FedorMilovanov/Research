@@ -12,11 +12,11 @@
     "arenaRecords": 29,
     "extensionRecords": 13,
     "contextAttestations": 105,
-    "sourceRegisterEntries": 70,
-    "regressionTests": 196,
+    "sourceRegisterEntries": 72,
+    "regressionTests": 200,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_CF70391_6_OF_6_SUCCESS_NEW_CAQUOT_LEMAIRE1977_EXACT_SHA_CI_PENDING",
+    "allSixCiChecks": "PRIOR_4851356_6_OF_6_SUCCESS_NEW_HACKETT1984_ELLIFF2023_EXACT_SHA_CI_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 17,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "cf703911da54b0fb47ca36220bb9c29ab591a88a"
+    "lastConfirmedAllSixChecksSha": "485135649dd2a7ff303f7ee7c7dbd5b3b77ec3de"
   },
   "allowedStatuses": [
     "DONE",
@@ -525,7 +525,9 @@
         "Lemaire 1985 Deir Alla epigraphy pp270-285 https://www.persee.fr/doc/crai_0065-0536_1985_num_129_2_14268",
         "Wilson Wright 2019 Vetus Testamentum 69 149-166 p153 visually verified Deir Alla Combination I lines5-6 plural shdyn contrasted lhn https://sites.utexas.edu/scripts/files/2020/10/2019-AWW-The-Helpful-God.pdf",
         "Anna Angelini 2021 Brill OA L imaginaire du demoniaque dans la Septante selective searchable original text excerpt but PDF page screenshot 403 ISBN 9789004468474",
-        "Emile Puech Balaam and Deir Alla Brill published PDF preview first 2 pages text only screenshot 403 https://brill.com/previewpdf/book/edcoll/9789047433132/Bej.9789004165649.i-329_003.xml"
+        "Emile Puech Balaam and Deir Alla Brill published PDF preview first 2 pages text only screenshot 403 https://brill.com/previewpdf/book/edcoll/9789047433132/Bej.9789004165649.i-329_003.xml",
+        "Jo Ann Hackett The Balaam Text from Deir 'Alla Scholars Press 1984 selected pp21–25,29,39–41,85–89 user-upload OCR not original plate https://www.scribd.com/document/1047797666/Hackett-The-Balaam-Text-from-Deir-Alla",
+        "Bryan Elliff Robert Coleman Semitica65 (2023) pp33–52 DOI 10.2143/SE.65.0.3293110 publisher abstract https://poj.peeters-leuven.be/content.php?id=3293110&journal_code=SE&url=article plus unverified user OCR of pp33–37"
       ],
       "verification": "NOT_APPLICABLE_UNTIL_DONE",
       "closureAt": null,

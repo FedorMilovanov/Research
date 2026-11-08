@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 70,
+    "sourceRecords": 72,
     "approvedForProduct": 0
   },
   "records": [
@@ -1756,7 +1756,61 @@
       "lineMappingScope": "CAQUOT_LEMAIRE_1977_LINE6_SDYN_CORRESPONDS_1976_LINE8_AFTER_REASSEMBLY",
       "lexicalDistinctionScope": "SDYN_AS_ATTRIBUTED_PLURAL_TITLE_SADDAY_VS_DIFFERENT_BIRD_SDH_1977_LINE8",
       "originalScope": "PUBLISHED_1977_AUTHOR_TEXT_P193_TO198_DIRECTLY_READ_AS_PERSEE_HTML_NOT_ORIGINAL_1976_P173_OR_PLATES_NOT_IMAGE_COLLATION"
+    },
+    {
+      "id": "SRC-HACKETT-DEIRALLA-MONOGRAPH-1984-SELECTED-OCR",
+      "title": "Jo Ann Hackett, The Balaam Text from Deir 'Alla, Harvard Semitic Monographs 31, Scholars Press 1984, selected pp21–25, 29, 39–41, 85–89",
+      "creator": "Jo Ann Hackett",
+      "year": 1984,
+      "url": "https://www.scribd.com/document/1047797666/Hackett-The-Balaam-Text-from-Deir-Alla",
+      "objectType": "third_party_user_uploaded_text_ocr_of_1984_scholarly_monograph_selected_printed_pages_only",
+      "sourceRole": "HACKETT1984_SELECTED_UNVERIFIED_OCR_AUTHORED_HYPOTHESES_NOT_ANCIENT_COLLATION",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "locator": "Harvard Semitic Monographs 31 (Scholars Press edition 1984); selected print pp21–25 reassembly and transliteration, p29 translation, pp39–41 reconstruction and explicit vocalization, pp85–89 Excursus: the Saddayyin; textual OCR on user-upload Scribd, not publisher facsimile.",
+      "sourceObjectState": "Original book identity and chapter/page headings reproduce in unverified uploaded OCR; chosen sections pp21–25,29,39–41,85–89 selectively inspected, without page-image authentication. Hackett proposes repositioning Combination I fragments, voices sdyn as Saddayyin because of Biblical Sadday/El Sadday, interprets divine council and speculatively links biblical shedim. OCR corrupts diacritics and some ancient text; independent inspection of 1976 edition p173 / all photo plates and source 1984 physical facsimile not performed.",
+      "supportedUse": "Attribute to Hackett her own proposed 1984 reading, explicit choice of vocalization guided by Hebrew Shadday, and her interpretive El council / biblical shedim hypotheses on specific selected pages, with uncertainty and later objections.",
+      "forbiddenUse": "Call this original publisher PDF or independent 1984 photo/table autopsy; assert all 160 pp read; treat OCR consonants or diacritics as certified; treat reconstructed Saddayyin vowels as ancient inscription; equate plural council with Biblical El Shaddai; recopy copyrighted plates, translations or scans.",
+      "verificationBoundary": "SELECTED_1984_MONOGRAPH_PP21_25_29_39_41_85_89_THIRD_PARTY_OCR_ONLY_NOT_PUBLISHER_FACSIMILE_OR_PLASTER_AUTOPSY",
+      "hypothesisBoundary": "HACKETT_VOCALIZES_SDYN_FROM_BIBLICAL_SHADDAY_HER_INTERPRETATION_NOT_ANCIENT_VOWELS_OR_PROVEN_SHEDIM_ETYMOLGY"
+    },
+    {
+      "id": "SRC-ELLIFF-COLEMAN-DEIRALLA-I6-2023",
+      "title": "Bryan Elliff and Robert Coleman, 'Fasten the Bolts of Heaven': A New Interpretation of a Difficult Line of the Deir 'Alla Plaster Texts (I.6), Semitica 65 (2023), pp33–52",
+      "creator": "Bryan Elliff; Robert Coleman",
+      "year": 2023,
+      "url": "https://poj.peeters-leuven.be/content.php?id=3293110&journal_code=SE&url=article",
+      "doi": "10.2143/SE.65.0.3293110",
+      "alternateUrl": "https://www.scribd.com/document/1047797530/Elliff-Fasten-the-Bolts-of-Heaven",
+      "objectType": "peer_reviewed_2023_article_publisher_abstract_and_unverified_third_party_selected_text_ocr",
+      "sourceRole": "ELLIFF_COLEMAN2023_ATTRIBUTED_I6_TPRY_GODDESS_BOLTS_RECONSTRUCTION",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "locator": "Publisher Peeters/Semitica 65 (2023), pp33–52 DOI 10.2143/SE.65.0.3293110, original abstract read. Third-party uploaded article OCR selective printed pp33–37 consulted for competing interpretations including a secondary quotation of 1976 p173; publisher full PDF and its plates not inspected.",
+      "sourceObjectState": "Publisher-authored abstract directly verifies disputed addressee (Shagar/Shamash/personified Sheol), uncertain action and authors' proposed tpry 'fasten' vs 'sew' with motif of heavenly bolts. Third-party Scribd text OCR contains selective comparative readings, but damaged special characters are not promoted to verified original Aramaic transcription. Quotation of Hoftijzer/van der Kooij 1976 p173 by Elliff/Coleman is only secondary citation, NOT our original 1976 page or plates reading.",
+      "supportedUse": "Attribute the alternate Shamash/bolts reading and continuing difference between proposed tpry meanings to named 2023 authors; cite exact journal pages and DOI. Explicitly separate disputed adjacent verb from vocalization and biblical etymology of sdyn; flag 1976 transcription quotation as indirect.",
+      "forbiddenUse": "Claim 2023 proposal is consensus; call Scribd user OCR an authorized original publisher facsimile or all pp read; call reprinted 1976 reading own original inspection; merge edition-specific 1976/1977/1984 I.6 coordinates or conflate sdh bird with sdyn; reuse figures or translation without permission.",
+      "comparisonBoundary": "PUBLISHER_ABSTRACT_CONFIRMS_CONTESTED_SHAMASH_TPRY_FASTEN_PROPOSAL_NOT_ACCEPTED_CONSENSUS",
+      "original1976Boundary": "1976_P173_CITED_SECONDHAND_IN_2023_THIRD_PARTY_OCR_NOT_DIRECT_ORIGINAL_1976_TRANSCRIPTION_OR_33_PLATES"
     }
   ],
-  "auditRevision": "NG12_CAQUOT_LEMAIRE_1977_CRITICAL_193_198_EDITION_LINE_MAPPING_AND_SDH_DISTINCTION_20261108"
+  "auditRevision": "NG12_HACKETT1984_SELECTED_SCRIBD_OCR_AND_ELLIFF_COLEMAN2023_PUBLISHER_ABSTRACT_WITH_ACCESS_BOUNDARIES_20261108"
 }

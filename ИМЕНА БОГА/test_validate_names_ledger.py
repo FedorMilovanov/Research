@@ -1250,5 +1250,30 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("Livius composite translation wrongly treated as a primary or free text" in e for e in validate_source_access(d)))
 
 
+    def test_hackett_1984_ocr_cannot_claim_direct_publisher_or_plaster_autopsy(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-HACKETT-DEIRALLA-MONOGRAPH-1984-SELECTED-OCR")
+        row["verificationBoundary"] = "FULL_1984_BOOK_AND_PHOTOS_INDEPENDENTLY_COLLATED"
+        self.assertTrue(any("Hackett 1984 partial third-party OCR" in e for e in validate_source_access(d)))
+
+    def test_hackett_1984_biblical_vocalization_cannot_become_inscription_vowels(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-HACKETT-DEIRALLA-MONOGRAPH-1984-SELECTED-OCR")
+        row["hypothesisBoundary"] = "ANCIENT_PLASTER_ATTESTS_VOWELIZED_SHADDAY"
+        self.assertTrue(any("Hackett 1984 partial third-party OCR" in e for e in validate_source_access(d)))
+
+    def test_elliff_coleman_2023_proposal_cannot_become_consensus(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-ELLIFF-COLEMAN-DEIRALLA-I6-2023")
+        row["comparisonBoundary"] = "SHAMASH_AND_TPRY_FASTEN_SCIENTIFICALLY_PROVEN"
+        self.assertTrue(any("Elliff Coleman 2023 I.6 hypothesis" in e for e in validate_source_access(d)))
+
+    def test_elliff_coleman_2023_quotation_cannot_become_1976_direct_autopsy(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-ELLIFF-COLEMAN-DEIRALLA-I6-2023")
+        row["original1976Boundary"] = "1976_ORIGINAL_P173_AND_33_PLATES_READ_AND_VERIFIED"
+        self.assertTrue(any("Elliff Coleman 2023 I.6 hypothesis" in e for e in validate_source_access(d)))
+
+
 if __name__ == "__main__":
     unittest.main()
