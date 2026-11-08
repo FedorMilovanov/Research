@@ -411,6 +411,34 @@ class ActualSynchronizationTests(unittest.TestCase):
         self.assertIn("## 14. AT-010-R4", board)
         self.assertIn("NO MERGE / NO PUBLICATION", board)
 
+    def test_article02_r5_ottley_1906_print_and_reported_witnesses_are_scoped(self):
+        article = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md").read_text(encoding="utf-8")
+        memo = (ROOT / "ИСКУПЛЕНИЕ/evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md").read_text(encoding="utf-8")
+        source = (ROOT / "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md").read_text(encoding="utf-8")
+        board = (ROOT / "ИСКУПЛЕНИЕ/synthesis/07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        for marker in ("Оттли (1906)", "παιδία εἰρήνης ἡμῶν", "παιδεία",
+                       "ἡ ψυχὴ ὑμῶν", "ἡ ψυχὴ ἡμῶν", "ψυχή",
+                       "ἐμαλακίσθη", "μεμαλάκισται",
+                       "Göttingen"):
+            with self.subTest(article_marker=marker):
+                self.assertIn(marker, article)
+        for marker in ("## AT-010-R5", "PDF стр. 351", "PDF 466", "PDF 467",
+                       "PDF 726", "PDF 727", "PDF 730", "PDF 775",
+                       "https://abramkj.com/wp-content/uploads/2012/12/ottley_isaiah-according-to-the-lxx.pdf",
+                       "4b5ef257c0b9744d813ff98aa54f320fbce00b28705f0ee524d58edd437dd3be",
+                       "OTTLEY_II_1906_PRINT_FACSIMILE_VERIFIED",
+                       "EDITION_VARIANT_LOCATED", "ἐμαλακίσθη", "μεμαλάκισται",
+                       "συνάξουσιν", "συνέξουσιν",
+                       "ῥαντισεῖ", "CODEX_WITNESS_HOLD",
+                       "GOTTINGEN_APPARATUS_HOLD", "RIGHTS_HOLD",
+                       "PUBLICATION_HOLD", "publicationEligible=false", "STOP_DISCOVERY"):
+            with self.subTest(memo_marker=marker):
+                self.assertIn(marker, memo)
+        self.assertIn("## 13. AT-010-R5", source)
+        self.assertIn("OTTLEY_II_1906_PRINT_FACSIMILE_VERIFIED", source)
+        self.assertIn("## 15. AT-010-R5", board)
+        self.assertIn("NO MERGE / NO PUBLICATION", board)
+
     def test_article11_named_judas_primary_witnesses_and_hebrews_hold(self):
         text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article11_bought_apostates_covenant_blood_and_weak_brother.md").read_text(encoding="utf-8")
         cards = (ROOT / "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md").read_text(encoding="utf-8")

@@ -922,23 +922,23 @@
     "чтоСчитаетсяДоводом": "заголовок «## » в любом .md лана, включая вложенные папки (synthesis/drafts, ot/tools); тело секции — до следующего «## » или до конца файла",
     "приоритет": "УДЕРЖИВАЕТСЯ > ОТКРЫТО > ЗАКРЫТО; маркеров нет -> БЕЗ МАРКЕРА; маркер вне классификации -> ошибка съёма, а не «прочее»",
     "метод": "scripts/atonement_claim_register.py обходит прозу лана целиком (без выборки), разбирает маркеры вида `ВЕРДИКТ`, сверяет локатор побайтово (файл + номер строки + текст)",
-    "строк": 392,
+    "строк": 393,
     "файлов": 31,
     "покрытоМашинно": 0,
-    "покрытоПоФайлу": 392,
+    "покрытоПоФайлу": 393,
     "файловПрозы": 31,
     "файловБезКарточки": 0,
-    "разрешеноЛокаторов": 392,
+    "разрешеноЛокаторов": 393,
     "неРазрешено": 0,
     "поКлассам": {
       "БЕЗ МАРКЕРА": 245,
-      "УДЕРЖИВАЕТСЯ": 121,
+      "УДЕРЖИВАЕТСЯ": 122,
       "ОТКРЫТО": 9,
       "СЛУЖЕБНОЕ": 9,
       "ЗАКРЫТО": 8
     },
     "маркеры": {
-      "всего": 615,
+      "всего": 619,
       "различных": 80,
       "словарь": {
         "ACCESS_INTERRUPTED": "ОТКРЫТО",
@@ -1024,8 +1024,8 @@
       },
       "частоты": {
         "EVIDENCE_HOLD": 114,
-        "PUBLICATION_HOLD": 88,
-        "RIGHTS_HOLD": 71,
+        "PUBLICATION_HOLD": 89,
+        "RIGHTS_HOLD": 72,
         "ATTRIBUTION_HOLD": 40,
         "LOCATOR_HOLD": 38,
         "RESOLVED-BY-TEXT": 37,
@@ -1049,6 +1049,8 @@
         "EDITION_UNAVAILABLE": 3,
         "JUDAS_NAMED_REDEMPTION_QUOTE_HOLD": 3,
         "LEGACY_NO_CLASSES": 3,
+        "CODEX_WITNESS_HOLD": 2,
+        "GOTTINGEN_APPARATUS_HOLD": 2,
         "HOLD": 2,
         "MODERN_FULL_TEXT_HOLD": 2,
         "NICNT_FULL_TEXT_HOLD": 2,
@@ -1059,7 +1061,6 @@
         "ATTRIBUTION_NOTE": 1,
         "BIBLICAL_EXEGESIS_HOLD": 1,
         "CALVIN_EDITION_HOLD": 1,
-        "CODEX_WITNESS_HOLD": 1,
         "CONFESSIONAL_EDITION_HOLD": 1,
         "COSMOLOGY_HOLD": 1,
         "DATE_HOLD": 1,
@@ -1072,7 +1073,6 @@
         "EXACT_LOCATOR_VERIFIED": 1,
         "FORBIDDEN": 1,
         "FULL_OBJECT_VERIFIED": 1,
-        "GOTTINGEN_APPARATUS_HOLD": 1,
         "GREEK_LEXICON_HOLD": 1,
         "HEBREWS_EXEGESIS_HOLD": 1,
         "HISTORICAL_EDITION_HOLD": 1,
@@ -3407,6 +3407,23 @@
         "машинноПоФайлу": true
       },
       {
+        "код": "15@07_LIVING_EXECUTION_BOARD_2026-11-07",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/07_LIVING_EXECUTION_BOARD_2026-11-07.md",
+        "строка": 223,
+        "срез": "15. AT-010-R5 — Ottley II, Cambridge 1906, фотографически получен (08.11.2026)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "CODEX_WITNESS_HOLD",
+          "GOTTINGEN_APPARATUS_HOLD",
+          "PUBLICATION_HOLD",
+          "RIGHTS_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
         "код": "1@D1_EVOLUTION_OF_UNDERSTANDING_AXIS",
         "лан": "synthesis",
         "файл": "ИСКУПЛЕНИЕ/synthesis/D1_EVOLUTION_OF_UNDERSTANDING_AXIS.md",
@@ -5395,7 +5412,7 @@
         "код": "7@article02_sacrifice_covenant_passover_day_of_atonement",
         "лан": "synthesis",
         "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md",
-        "строка": 95,
+        "строка": 97,
         "срез": "7. Послание к Евреям: та же тема очищения, но иное священство и однократная жертва",
         "класс": "БЕЗ МАРКЕРА",
         "маркеров": 0,
@@ -5407,7 +5424,7 @@
         "код": "8@article02_sacrifice_covenant_passover_day_of_atonement",
         "лан": "synthesis",
         "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md",
-        "строка": 111,
+        "строка": 113,
         "срез": "8. Переход к следующей статье",
         "класс": "БЕЗ МАРКЕРА",
         "маркеров": 0,
@@ -5419,7 +5436,7 @@
         "код": "СР@article02_sacrifice_covenant_passover_day_of_atonement~2",
         "лан": "synthesis",
         "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md",
-        "строка": 117,
+        "строка": 119,
         "срез": "Приложение для научной редакции: AT-010 · семантическая матрица утверждений",
         "класс": "БЕЗ МАРКЕРА",
         "маркеров": 0,
@@ -6647,8 +6664,8 @@
     ],
     "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
     "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check synthesis",
-    "measuredAt": "2026-11-08T00:24:13Z",
-    "checkedAt": "2026-11-08T00:24:13Z",
-    "предыдущийСъём": "2026-11-07T22:54:29Z"
+    "measuredAt": "2026-11-08T00:58:14Z",
+    "checkedAt": "2026-11-08T00:58:14Z",
+    "предыдущийСъём": "2026-11-08T00:24:13Z"
   }
 }
