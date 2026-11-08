@@ -80,7 +80,8 @@ class ReformationAdversarialFourSixTests(unittest.TestCase):
         ids = [int(line.split(" |", 1)[0][3:]) for line in lines]
         self.assertEqual(ids, list(range(1, 320)))
         plan = (HERE / "SELF_PLAN.md").read_text(encoding="utf-8")
-        self.assertIn("волна 384", plan)
+        # Previous editorial wave must remain in history when active plan advances.
+        self.assertIn("ИСТОРИЧЕСКИЙ СРЕЗ ВОЛНЫ 384", plan)
         self.assertIn("RF-EDIT-07-09", plan)
         self.assertIn("PUBLICATION_HOLD", plan)
 
