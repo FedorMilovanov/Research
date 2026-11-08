@@ -1325,5 +1325,24 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("Blum 2016 sun goddess sky-sluices" in e for e in validate_source_access(d)))
 
 
+    def test_sbl_2015_canaanite_language_argument_cannot_be_scholarly_consensus(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-PATEL-WILSONWRIGHT-DEIRALLA-DIALECT-SBL2015")
+        row["patElLanguageBoundary2015"] = "PROVEN_CANAANITE_AND_BIBLICAL_EL_SHADDAY_IDENTITY"
+        self.assertTrue(any("SBL 2015 Canaanite author case" in e for e in validate_source_access(d)))
+
+    def test_sbl_2015_pdf_ocr_cannot_claim_original_1976_visual_palaeography(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-PATEL-WILSONWRIGHT-DEIRALLA-DIALECT-SBL2015")
+        row["patElOriginalEvidenceScope2015"] = "1976_ORIGINAL_173_TO178_AND_PHOTOPLATES_VIEWED"
+        self.assertTrue(any("SBL 2015 original page text falsely promoted" in e for e in validate_source_access(d)))
+
+    def test_brill_1976_plate3_29_secondary_locator_not_image_autopsy(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-DEIRALLA-HOFTIJZER-VANDERKOOIJ-1976-CONTENTS")
+        row["original1976AccessBoundary"] = "COMPLETE_FACSIMILE_TEXT_AND_ALL_PLATES_COLLATED"
+        self.assertTrue(any("Brill 1976 front matter and secondary plate" in e for e in validate_source_access(d)))
+
+
 if __name__ == "__main__":
     unittest.main()

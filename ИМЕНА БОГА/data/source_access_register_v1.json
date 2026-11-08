@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 73,
+    "sourceRecords": 74,
     "approvedForProduct": 0
   },
   "records": [
@@ -1274,7 +1274,7 @@
       "locator": "Original publisher's printed 1976 title page: 'With 33 Plates and 5 Textfigures'; table of contents: VII Transcription of the texts p.173, VIII Translation p.179, IX Philological commentary p.183, plates 1–33 at book's end.",
       "accessState": "PARTIAL_OBJECT",
       "locatorState": "EXACT_LOCATOR_VERIFIED",
-      "sourceObjectState": "The ORIGINAL BRILL 1976 edition's publisher-hosted front matter and table of contents text have been inspected directly; the title page explicitly says 'With 33 Plates and 5 Textfigures' and the contents 'Plates 1–33 ... at the end of the book'. The publisher PDF screenshot tool returned HTTP 403, so front page was text-extracted rather than independently visually verified. BODY pages 173/179/183 and physical plates are NOT read or collated; no right to reproduce original book images. A public scholarly online chronology reproduces an excerpt attributed to Franken 1976 printed p16 on GrN-5633 sample BB303, 2600±50 BP, with period dendrochronological approximation; that excerpt is SECONDARY, not an examination of the printed ATDA 1976 p16, which remains unread.",
+      "sourceObjectState": "The ORIGINAL BRILL 1976 edition's publisher-hosted front matter and table of contents text have been inspected directly; the title page explicitly says 'With 33 Plates and 5 Textfigures' and the contents 'Plates 1–33 ... at the end of the book'. The publisher PDF screenshot tool returned HTTP 403, so front page was text-extracted rather than independently visually verified. BODY pages 173/179/183 and physical plates are NOT read or collated; no right to reproduce original book images. A public scholarly online chronology reproduces an excerpt attributed to Franken 1976 printed p16 on GrN-5633 sample BB303, 2600±50 BP, with period dendrochronological approximation; that excerpt is SECONDARY, not an examination of the printed ATDA 1976 p16, which remains unread. Added targeted library-acquisition lead from published secondary scholars: original 1976 plate3/29 (specifically C-I fragment d line12; not šdyn) and UCLA 2023 p380 fig8.3 reprinting 1976 plate29. Original images, old edition body and UCLA figure all NOT visually inspected; reprint limited preview at Google Play 2023 ISBN9789004670327, no purchased digital copy. This is a source request locator, NOT additional critical collation.",
       "supportedUse": "Request exact original volume sections, plate numbers and fragment inventory for future direct epigraphic collation. Confirm first-edition inventory 33 plates and 5 text figures from its original title page rather than confusing bookseller descriptions.",
       "forbiddenUse": "Claim this editio princeps has been read, that its variants have been independently collated or that original images may be republished. Claim to have checked the 33 original photographs/plates, or that published front matter licenses reproduction of manuscript images.",
       "evidenceClass": "B1",
@@ -1290,7 +1290,16 @@
       "alternateUrl": "https://brill.com/edcollchap/book/9789004670327/front-1.pdf",
       "p16SecondaryReproductionUrl": "https://deadseaquake.info/EarthquakeCatalogOfTheDeadSea/Sites/Archaeo/DeirAlla.html",
       "p16EvidenceScope": "SECONDARY_EXCERPT_FRANKEN1976_P16_BB303_GRN5633_2600PM50_NOT_ORIGINAL_FACSIMILE",
-      "p16SourceBoundary": "Public secondary Deir Alla earthquake catalogue quotes Franken 1976 p16: one relevant Phase M/IX charred grain sample from BB303, GrN5633, 2600±50 BP; historic tree-ring correction gives about 800 BCE. The secondary quote (and its 2σ/66% notation) is NOT directly inspected publisher original. Note statistical 2sigma=66% wording is not reliable as normal-distribution convention and not propagated as a validated statistical confidence level. ATDA original p16 remains NOT READ; the cited Vogel/Waterbolk 1972 original p53 is now directly read from the complete original Cambridge PDF text and separately registered, without original screenshot."
+      "p16SourceBoundary": "Public secondary Deir Alla earthquake catalogue quotes Franken 1976 p16: one relevant Phase M/IX charred grain sample from BB303, GrN5633, 2600±50 BP; historic tree-ring correction gives about 800 BCE. The secondary quote (and its 2σ/66% notation) is NOT directly inspected publisher original. Note statistical 2sigma=66% wording is not reliable as normal-distribution convention and not propagated as a validated statistical confidence level. ATDA original p16 remains NOT READ; the cited Vogel/Waterbolk 1972 original p53 is now directly read from the complete original Cambridge PDF text and separately registered, without original screenshot.",
+      "acquisitionPriority2026": "REQUEST_PRINTED_1976_P173_178_TRANSLATION_179_182_RELATED_P78_79_P90B_AND_PLATES_3_29_SECONDARY_LOCATION_ONLY",
+      "original1976AcquisitionScope": "1976_P173_178_PLUS_P179_182_AND_RELEVANT_PHOTO_P3_REASSEMBLY_DRAWING_P29_PRIORITY_SECONDARY_LOCATOR_ONLY_NO_PDF_OR_PLATE_IMAGES_READ",
+      "original1976AccessBoundary": "BRILL1976_ORIGINAL_FRONT_MATTER_ONLY_REPRINT2023_LIMITED_PREVIEW_1976_BODY_173_178_AND_PL3_29_NOT_ACCESSED",
+      "ebook2023PreviewUrl": "https://play.google.com/store/books/details/J_Hoftijzer_Aramaic_Texts_from_Deir_Alla?id=4tj7EAAAQBAJ",
+      "ebook2023ISBN": "9789004670327",
+      "priorityPlateClues": [
+        "Way 2011, Donkeys in the Biblical World, print p63 n186, reports ATDA 1976 original Combination I fragment d line12 photo+drawings on plates3,29, secondhand text only; line12 donkey is not identified as disputed sdyn",
+        "Donnelly-Lewis UCLA 2023 dissertation The Two Pens of the Scribe p380 Fig8.3 described as reprinting ATDA 1976 Plate29 Combination I, dissertation 11MB web screenshot unavailable"
+      ]
     },
     {
       "id": "SRC-IMG-DEIRALLA-DISDERO-2020",
@@ -1844,7 +1853,33 @@
       "blumShdynBoundary2016": "SHDYN_HOHE_ERHABENE_GLOSS_CONTEXTUALLY_INFERRED_FOOTNOTE97_NOT_ESTABLISHED_ANCIENT_VOWELS_OR_BIBLICAL_EL_SHADDAY_IDENTITY",
       "blumCouncilBoundary2016": "BLUM2016_FOOTNOTE94_FUNCTIONAL_MESSENGERS_VS_SHDYN_COUNCIL_NOT_LEVINE_HOSTILE_GROUPS_OR_HACKETT_CONSENSUS",
       "blumSkyBoundary2016": "BLUM2016_P45_FEMALE_SUN_DEITY_CLOUD_OBSTRUCTED_HEAVEN_SLUCES_DISTINCT_FROM_HOFTIJZER1991_AND_ELLIFF_COLEMAN2023_PROPOSALS"
+    },
+    {
+      "id": "SRC-PATEL-WILSONWRIGHT-DEIRALLA-DIALECT-SBL2015",
+      "title": "Na‘ama Pat-El and Aren Wilson-Wright, Deir ‘Alla as a Canaanite Dialect: A Vindication of Hackett, in Epigraphy, Philology, and the Hebrew Bible (SBL Press, 2015), pp13–24",
+      "creator": "Na‘ama Pat-El; Aren Wilson-Wright",
+      "year": 2015,
+      "url": "https://www.sbl-site.org/wp-content/uploads/2025/01/9780884140801_OA.pdf",
+      "objectType": "original_authored_2015_sbl_press_open_pdf_selected_print_pp13_to24_full_chapter_machine_text_no_image_check",
+      "sourceRole": "ATTRIBUTED_SBL2015_DEIR_ALLA_CANAAANITE_LANGUAGE_HYPOTHESIS_VS_OTHER_CLASSIFICATIONS",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "locator": "Original SBL Press 2015 volume ISBN9780884140801 print Pat-El/Wilson-Wright pp13–24; p13 first edition Aramaic definite article attribution and four rival classifications, pp14–16 linguistic isogloss critique, pp18–21 relative ʾš and infinitive contrasts, pp21–22 author conclusion Canaanite. SBL publisher original PDF machine text directly read; screenshot endpoint returned 403 and special Hebrew/Aramaic glyphs are OCR-garbled; no physical autograph autopsy.",
+      "sourceObjectState": "2015 original authored scholarly book chapter selected pages pp13-24 in original full SBL Press hosted open-access PDF inspected through extracted text; photographic screenshot fails 403. Exact phonetic signs in generated PDF machine text not verified (encoding corruption), but English method and author conclusions are legible. The chapter includes four classification possibilities and argues, rather than demonstrates consensus, for Canaanite on relative pronoun and infinitive syntax; its claim that 1976 misidentified definite article is authors' retrospective claim, 1976 original pp301–302 not inspected. SBL copyright page expressly reserves rights despite open-download access. No images/figures republished.",
+      "supportedUse": "Explicit attribution of Canaanite classification to Pat-El/Wilson-Wright 2015 with page-specific relative pronoun ʾš interpretation and absolute-vs-construct infinitive morphology, four rival academic language hypotheses; note original editors' language interpretation was disputed by later scholars, never infer a settled religious title or identity from any language hypothesis.",
+      "forbiddenUse": "Claim all scholars agree language is Canaanite or 1976 authors' original argument was directly checked; treat distorted OCR graphemes as verified ancient lettering or vocalization, claim this reprints 1976 original plates or establishes ancient El Shadday/šdyn identification; publish images or substantial text under assumed CC0 or commercial permissions.",
+      "patElLanguageBoundary2015": "SBL2015_PRINT_P13_TO24_CANAANITE_AUTHOR_ARGUMENT_RELATIVE_ASH_AND_ABSOLUTE_VS_CONSTRUCT_INFINITIVES_VS_ALTERNATIVE_FOUR_WAYS_NO_CONSENSUS",
+      "patElOriginalEvidenceScope2015": "ORIGINAL_SBL_PRESS_2015_OA_PDF_CHAPTER_PRINT_P13_24_TEXT_READ_SCREENSHOT_403_NO_ANCIENT_PLASTER_PHOTOCOLLATION"
     }
   ],
-  "auditRevision": "NG12_BLUM2016_ORIGINAL_P24_26_35_36_44_45_CONTEXT_GLOSS_SUN_CLOUDS_SCHOLARLY_VARIANTS_20261108"
+  "auditRevision": "NG12_SBL2015_PATEL_WILSONWRIGHT_4_LANGUAGE_HYPOTHESES_PLUS_1976_PLATE3_29_ACQUISITION_20261108"
 }

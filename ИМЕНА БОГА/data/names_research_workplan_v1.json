@@ -12,11 +12,11 @@
     "arenaRecords": 29,
     "extensionRecords": 13,
     "contextAttestations": 105,
-    "sourceRegisterEntries": 73,
-    "regressionTests": 208,
+    "sourceRegisterEntries": 74,
+    "regressionTests": 211,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_A592A0D_ALL_SIX_SUCCESS_2016_BLUM_NEW_EXACT_SHA_CI_PENDING",
+    "allSixCiChecks": "PRIOR_717EA20_ALL_SIX_SUCCESS_SBL2015_AND_1976_PLATE_ACQUISITION_NEW_SHA_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 17,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "a592a0deebfece716a42ca152b4b9de11b40675a"
+    "lastConfirmedAllSixChecksSha": "717ea203b04f1b45b2192f9a02aed21fcad40f76"
   },
   "allowedStatuses": [
     "DONE",
@@ -529,7 +529,9 @@
         "Jo Ann Hackett The Balaam Text from Deir 'Alla Scholars Press 1984 selected pp21–25,29,39–41,85–89 user-upload OCR not original plate https://www.scribd.com/document/1047797666/Hackett-The-Balaam-Text-from-Deir-Alla",
         "Bryan Elliff Robert Coleman Semitica65 (2023) pp33–52 DOI 10.2143/SE.65.0.3293110 publisher abstract https://poj.peeters-leuven.be/content.php?id=3293110&journal_code=SE&url=article plus unverified user OCR of pp33–37",
         "Original published 1991 Brill symposium from NYU scan PDF: Hoftijzer pp121–122,135–137; Hackett pp76–77,80–81; Weippert pp169–170,176; OCR text read, PDF screenshots fail 48MB limit, not original 1976 photoplates https://mc.dlib.nyu.edu/files/books/brill_awdl000034/brill_awdl000034_lo.pdf",
-        "Direct original Erhard Blum de Gruyter chapter, Metatexte 2016 pp24–26,35–36,44n94,n97,45: author-only Combination A, context-inferred 'Hohe/Erhabene' for šdyn, attributed messengers vs council, solar goddess/cloud-blocked sky-sluice variant; image screenshot 404 no 1976 pp173/photo plates/rights release. https://uplopen.com/books/9325/files/12c5a59d-f2d2-4a93-91f0-2941f88ea05f.pdf"
+        "Direct original Erhard Blum de Gruyter chapter, Metatexte 2016 pp24–26,35–36,44n94,n97,45: author-only Combination A, context-inferred 'Hohe/Erhabene' for šdyn, attributed messengers vs council, solar goddess/cloud-blocked sky-sluice variant; image screenshot 404 no 1976 pp173/photo plates/rights release. https://uplopen.com/books/9325/files/12c5a59d-f2d2-4a93-91f0-2941f88ea05f.pdf",
+        "Original SBL 2015 Pat-El/Wilson-Wright pp13–24 four academic language positions, authors argue Canaanite based on relative 'sh and G absolute/construct infinitives, screenshot PDF 403 OCR text only https://www.sbl-site.org/wp-content/uploads/2025/01/9780884140801_OA.pdf",
+        "1976 acquisition target refined by secondary Way 2011 p63n186 and UCLA Donnelly-Lewis 2023 fig8.3 p380: 1976 Plate3 and Plate29 Combination I fragment d line12, not proven same letters as sdyn; original 1976 173–178, 179–182 and plate scans not read https://escholarship.org/content/qt983511cd/qt983511cd_noSplash_c2f3faddffc6ebaf53da67313b0619b0.pdf"
       ],
       "verification": "NOT_APPLICABLE_UNTIL_DONE",
       "closureAt": null,
