@@ -65,6 +65,22 @@ class NantesDigitalProvenanceTests(unittest.TestCase):
         self.assertIn("RIGHTS_HOLD", bge["holds"])
         self.assertIn("PUBLICATION_HOLD", bge["holds"])
 
+    def test_bge_archival_request_is_precise_and_not_mistaken_for_received_evidence(self):
+        request = (HERE / "nantes_bge_ms_fr_413_archival_request.md").read_text(encoding="utf-8")
+        for token in ("BGE Ms. fr. 413", "num.bge@geneve.ch",
+                      "22 mai 1599", "29 mai 1599", "article XI",
+                      "EARLY_XI_COLLATION_HOLD", "COPY_DATE_CONFLICT_22_29_MAY_1599",
+                      "NOT_SENT", "RIGHTS_HOLD", "PUBLICATION_HOLD"):
+            with self.subTest(token=token):
+                self.assertIn(token, request)
+        self.assertIn("nantes_bge_ms_fr_413_archival_request.md", self.dossier)
+        self.assertIn("nantes_bge_ms_fr_413_archival_request.md", self.plan)
+        self.assertIn("ARCHIVE_ACCESS_REQUEST_DRAFT", self.plan)
+        self.assertIn("REF-P86 CATALOG_ONLY", self.dossier)
+        self.assertEqual(self.source_count, 204)
+        self.assertEqual(self.sources["REF-P86"]["accessState"], "CATALOG_ONLY")
+        self.assertIn("PUBLICATION_HOLD", self.sources["REF-P86"]["holds"])
+
     def test_xi_remains_secondary_variant_and_not_publication_approved(self):
         for doc in (self.chapter, self.dossier, self.plan):
             for token in ("EARLY_XI_COLLATION_HOLD", "ORIGINAL_GENEVAN_COLLATION_HOLD"):
