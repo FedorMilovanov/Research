@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 57,
+    "sourceRecords": 58,
     "approvedForProduct": 0
   },
   "records": [
@@ -1406,7 +1406,33 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ]
+    },
+    {
+      "id": "SRC-TSOLIN-ORIEKHOVA-DEIRALLA-2025",
+      "title": "Dmytro Tsolin and Anastasiia Oriekhova, The Inscriptions of Balaam from Deir Allah (8th century BCE) as an Example of the Genre of Eschatological Prophecy maśśāʔ",
+      "creator": "Dmytro Tsolin; Anastasiia Oriekhova",
+      "year": 2025,
+      "url": "https://oriental-world.org.ua/index.php/journal/article/download/765/755/",
+      "doi": "10.15407/orientw2025.01.097",
+      "objectType": "publisher_issued_open_access_20_page_peer_research_article",
+      "sourceRole": "DEIR_ALLA_COMPOSITION_AND_ARCHEOLOGICAL_WALL_VS_CEILING_HYPOTHESES",
+      "locator": "The World of the Orient (Shidnij svit), 2025/1, pp. 97–116; publisher PDF p. 97 visually checked; pp. 98–100 source text inspected, esp. excavation and fragment reconstruction on p. 99 and abstract p. 97",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "licenseScope": "CC BY-NC 4.0 per publisher PDF, p.97; non-commercial licence does not confer unrestricted commercial site reuse, especially images of third parties",
+      "sourceObjectState": "Official 20-page PDF downloaded in web viewer; first page visually verified and selected Ukrainian original article sections examined, not complete independent review of all philological transcriptions or bibliography. Authors discuss ceiling/plastered surface reconstruction and possibility of Combination I + II as a concentric/chiastic literary composition; note parallels with biblical prophecy without equating religious conceptions.",
+      "supportedUse": "Attribute authors' 2025 alternative about relationship of two plaster combinations and their proposed genre; explicitly contrast reconstruction of original placement with Steiner/Wagemakers 2019 wall hypothesis; preserve unresolved evidence.",
+      "forbiddenUse": "Call ceiling attribution or proposed chiastic composition historically proven; republish figures/text on revenue-generating site under NC licence without separate rights; promote to independent epigraphic collation.",
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "publicationState": "BLOCKED",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
     }
   ],
-  "auditRevision": "NG12_DEIR_ALLA_ILLUSTRATION_RIGHTS_AND_INSCRIPTION_RECHECK_20261108"
+  "auditRevision": "NG12_DEIR_ALLA_2025_NEW_LITERARY_AND_PLACEMENT_MODEL_20261108"
 }
