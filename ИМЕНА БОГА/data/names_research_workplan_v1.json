@@ -13,10 +13,10 @@
     "extensionRecords": 13,
     "contextAttestations": 105,
     "sourceRegisterEntries": 79,
-    "regressionTests": 228,
+    "regressionTests": 230,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_1586573_ALL_SIX_SUCCESS_CURRENT_1967_JSTOR_P480_PREVIEW_SCOPE_CI_PENDING",
+    "allSixCiChecks": "PREVIOUS_64f9093_ALL_SIX_SUCCESS_NEW_NG12_1977_ERRATUM_WITNESS_AND_TEST_DISCOVERY_FIX_HEAD_CI_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 17,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "1586573c1ea0e80e66ca8afd4d02c2deeed4f1e2"
+    "lastConfirmedAllSixChecksSha": "64f9093e648159f064d74691848aa3445d9a1328"
   },
   "allowedStatuses": [
     "DONE",
@@ -734,7 +734,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NG12 TARGETED ACQUISITION WITHOUT ABUSING PROXIES: Seek LEGITIMATELY ACCESSIBLE SCAN OF PRINTED P481 OF H J FRANKEN VETUS TESTAMENTUM 17/4 (1967), DOI 10.1163/156853367X00187 JSTOR 1516696; p480 already seen in browser and contains no ancient inscription photograph. JSTOR p481 requires a registered account/library access; no sign-in bypass or user credentials requested. Lemaire1985 says first fragment image appears in the two-page notice, but precise image location and photographic modality cannot be asserted. When obtained, verify (a) whether p481 has photo and caption (b) fragment/Combination I mapping (c) whether it includes disputed šdyn letters (d) copyright/archival identity. Next independent requests: Phoenix22 p85 fig41 and p88 fig42, Brill1976 original p173–178 + plates, 1976 journal erratum actual wording, original 1967 Jerusalem negatives custody. NG12 remains BLOCKED_SOURCE, 0 palaeography collations, 0 Product approvals.",
+  "nextAction": "FIRST: verify exact final SHA with all six GitHub Actions. Newly corrected seven post-unittest-main methods are now discovered; add two provenance regressions, 230 core tests total. NEW NG12: Caquot/Lemaire 1977 Syria54 p189 footnote 1 explicitly reports BA1976 p87 corrected the original '6th century' title/dating to '8th-7th century'. Original erratum text remains NOT_OBTAINED; use attributed later witness only. NG12 TARGETED ACQUISITION WITHOUT ABUSING PROXIES: Seek LEGITIMATELY ACCESSIBLE SCAN OF PRINTED P481 OF H J FRANKEN VETUS TESTAMENTUM 17/4 (1967), DOI 10.1163/156853367X00187 JSTOR 1516696; p480 already seen in browser and contains no ancient inscription photograph. JSTOR p481 requires a registered account/library access; no sign-in bypass or user credentials requested. Lemaire1985 says first fragment image appears in the two-page notice, but precise image location and photographic modality cannot be asserted. When obtained, verify (a) whether p481 has photo and caption (b) fragment/Combination I mapping (c) whether it includes disputed šdyn letters (d) copyright/archival identity. Next independent requests: Phoenix22 p85 fig41 and p88 fig42, Brill1976 original p173–178 + plates, 1976 journal erratum actual wording, original 1967 Jerusalem negatives custody. NG12 remains BLOCKED_SOURCE, 0 palaeography collations, 0 Product approvals.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -816,7 +816,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-08",
-    "planStatus": "NG12 primary scholarly editorial version study: directly read Caquot/Lemaire 1977 Syria original paginated digital print text pp193–198. Their 1977 line6 sdyn maps to 1976 line8 after fragment reassembly; separate 1977 line8(d) sdh is proposed bird name and not divine group; hypothetical derivation sdyn~shadday attributed. Original ancient plaster/1976 p173 + photos still uncollated. 70 sources, 196 corpus tests, 0 epigraphic critical collation/peer approved claims/Product. Previous cf70391 exact SHA 6/6 success, new SHA CI pending.",
+    "planStatus": "2026-11-08 NG12 source improvement: primary 1977 scholarly page p189 footnote read from Persée HTML; original BA1976 erratum still unviewed. Reused three existing registered source records, no source-count inflation. Added two provenance negative tests; restored discovery for seven previously misplaced tests outside TestCase. Count 79 sources, 230 corpus-test methods (all now within TestCase), 0 ancient glyph collations, 0 independent approvals, 0 Product release. Previous exact SHA 64f9093 had 6/6 SUCCESS; current post-edit SHA needs independent CI. Remaining sources: JSTOR p481, Phoenix1976 fig42 original image, Brill1976 pp173-178/plates, original BA1976 erratum text.",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
