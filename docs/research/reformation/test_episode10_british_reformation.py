@@ -26,7 +26,10 @@ class EnglandScotlandTests(unittest.TestCase):
             self.assertEqual(s[k]["accessState"],"PARTIAL_OBJECT")
         self.assertEqual(s["REF-P78"]["accessState"],"PARTIAL_OBJECT")
         self.assertEqual(s["REF-P26"]["accessState"],"CATALOG_ONLY")
-        self.assertEqual(s["REF-P25-RPS"]["accessState"],"LINK_ONLY")
+        self.assertEqual(s["REF-P25-RPS"]["accessState"],"PARTIAL_OBJECT")
+        self.assertEqual(s["REF-P25-RPS"]["locatorState"],"EXACT_LOCATOR_VERIFIED")
+        self.assertIn("ORIGINAL CONFESSION MANUSCRIPT IS LOST",s["REF-P25-RPS"]["verificationNote"])
+        self.assertIn("ARCHIVE_HOLD",s["REF-P25-RPS"]["holds"])
         for k in ("REF-P78","REF-P26","REF-P25-1567","REF-P25-1581","REF-S83","REF-S84","REF-S85"):
             self.assertIn("PUBLICATION_HOLD",s[k]["holds"])
         self.assertIn("skipped numeral 13",s["REF-P25-1567"]["verificationNote"].lower())
