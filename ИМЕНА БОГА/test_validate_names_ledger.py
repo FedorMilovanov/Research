@@ -1407,9 +1407,6 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("historical planned Leiden-to-RMO transfer" in e for e in validate_source_access(d)))
 
 
-if __name__ == "__main__":
-    unittest.main()
-
     def test_deir_alla_1976_journal_article_must_link_formal_erratum(self) -> None:
         d = copy.deepcopy(self.sources)
         row = next(x for x in d["records"] if x["id"] == "SRC-HOFTIJZER-BALAAM-ARTICLE-1976-BA39-1")
@@ -1455,3 +1452,7 @@ if __name__ == "__main__":
         row["page481VisualEvidence"] = "FULL_PHOTO_AND_SHDYN_GLYPHS_VERIFIED"
         self.assertTrue(any("Franken 1967 p480 preview must not be extrapolated to p481" in e
                             for e in validate_source_access(d)))
+
+
+if __name__ == "__main__":
+    unittest.main()
