@@ -1950,10 +1950,15 @@
         "url": "https://livrepository.liverpool.ac.uk/3058583/1/201230666_MAY2019.pdf",
         "sourceKind": "UNIVERSITY_REPOSITORY_ORIGINAL_THESIS_TEXT_EXTRACT_PAGE37_DIRECTLY_READ_NOT_ARCHIVAL_OBJECT_IMAGE",
         "exactObservation": "Box 9 catalogued photographs of Iron II plaster inscription texts, drawings, plus material prepared for Franken 1969 and Hoftijzer/van der Kooij 1976 edition.",
-        "holdingBoundary": "2019 thesis acknowledges access granted by Dutch National Museum of Antiquities RMO, but does NOT authenticate current 2026 location of Box9, its catalog signature, contents in digital DANS manifest, infrared negative identity, license or available exact photo file.",
-        "archivalRequest": "Ask RMO archive staff specifically for historical Tell Deir Alla archive Box 9 photo inventory, plaster Combination I (i/a/c/d), original 1967 infrared photograph / image negative, copy of figures and drawings used for 1976 critical edition, photo registry IDs and rights; ask whether the box or scans were transferred or accessioned.",
-        "status": "BOX9_HISTORIC_INVENTORY_TEXT_VERIFIED_PHOTOGRAPHIC_OBJECTS_NOT_SEEN_CURRENT_CUSTODY_UNVERIFIED"
-      }
+        "holdingBoundary": "Original 2019 University of Liverpool thesis print p11 says the Tell Deir Alla archive was then PROPERTY of the Dutch National Museum of Antiquities; acknowledgments report direct RMO access, print p37 explicitly inventory Boxes 9 and 41, p38 says photographs often correspond to photo registry. Does NOT authenticate current 2026 custody of specific boxes, exact call number, unindexed 1967 infrared negative, individual image files, current accessibility or rights.",
+        "archivalRequest": "Ask RMO archive staff for historical Tell Deir Alla archive Boxes 9 AND 41, inventory and photo-register concordance, 1967 original IR/field-negative with identifiers, plaster Combination I (i/a/c/d) and 1976 Brill photo/drawing correspondence, current physical/digital custodian, and source-specific reproduction rights.",
+        "status": "BOX9_HISTORIC_INVENTORY_TEXT_VERIFIED_PHOTOGRAPHIC_OBJECTS_NOT_SEEN_CURRENT_CUSTODY_UNVERIFIED",
+        "documentedAsOf2019Ownership": "HALBERTSMA_2019_PRINT_P11_STATES_DEIR_ALLA_ARCHIVE_PROPERTY_OF_DUTCH_NATIONAL_MUSEUM_OF_ANTIQUITIES_NOT_2026_CUSTODY_CONFIRMATION",
+        "additionalPhotographBox41": "HALBERTSMA_2019_PRINT_P37_BOX41_FIELD_AND_OBJECT_PHOTOGRAPHS_FROM_ALL_FRANKEN_EXCAVATION_SEASONS_NOT_CONFIRMED_1967_IR_NEGATIVES",
+        "originalPhotoRegister": "HALBERTSMA_2019_PRINT_P38_MANY_PHOTOS_NUMBERED_AND_MATCHED_TO_HISTORIC_PHOTO_REGISTER_NO_SPECIFIC_NEGATIVE_NUMBER_IDENTIFIED"
+      },
+      "rmoOfficialModernArchiveSearchLimit": "RMO current archive site notes 1949-1995 archives not fully publicly accessible; absence from web search is NOT evidence the historical 1967 photo archive does not exist. Request archivist rather than repeating generic search. https://archieven.rmo.nl/en/",
+      "rmoOfficialPhotoRightsBoundary": "RMO states museum-made images are generally CC0 with third-party rights caveat; DOES NOT extend to separately credited vintage Deir Alla expedition negatives/Brill plates without file-specific rights check. https://www.rmo.nl/en/research/photo-service/"
     },
     {
       "id": "SRC-HOFTIJZER-BALAAM-ARTICLE-1976-BA39-1",
@@ -2094,5 +2099,5 @@
       }
     }
   ],
-  "auditRevision": "NG12_HALBERTSMA_2019_ARCHIVE_BOX9_TARGETED_PHOTO_INVENTORY_ONLY_CURRENT_CUSTODY_HOLD_20261108"
+  "auditRevision": "NG12_HALBERTSMA_2019_RMO_OWNERSHIP_BOX9_BOX41_REGISTRY_AND_CC0_SCOPE_20261108"
 }
