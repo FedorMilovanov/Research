@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 202,
+  "sourceCount": 204,
   "sources": [
     {
       "id": "REF-P01",
@@ -3909,6 +3909,44 @@
       "url": "https://histoire-image.org/etudes/edit-nantes-sa-revocation",
       "verificationNote": "2026-11-08 directly read institutional 2022 museum page, object description (AE/II/763 photographic image with Henri IV and secretary Forget signatures, remains of seal) and historical interpretation: Archives nationales Paris hold REMANIÉ registered copy submitted to parlement rather than lost initial April 1598 original; the 1599 Parlement ceremony depicted in Jan Luyken's engraving is retrospective material commissioned for Élie Benoist's 1693 history, NOT contemporaneous eyewitness reportage, and Henri IV was NOT physically in the parliamentary verification ceremony as image might imply. Page uses 'Archives de Paris' holding name but AE/II/763 siglum matches Archives nationales: do not construct another archive object from ambiguous metadata. Art I-II discussion recognizes judicial amnesty and prohibition of renewed reciprocal violence; exact primary printed art I-II read separately in REF-P27. This modern institutional image/interpretation is NOT the original manuscript folio collation or reproduction license for photos/engravings.",
       "checkedAt": "2026-11-08"
+    },
+    {
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "checkedAt": "2026-11-08",
+      "id": "REF-S101",
+      "documentYear": 1998,
+      "title": "Hubert Bost, L’édit de Nantes, lectures d’hier et d’aujourd’hui, Études théologiques et religieuses 73/3 (1998), pp. 371–390, Persée (distinct from short review REF-S98)",
+      "url": "https://www.persee.fr/doc/ether_0014-2239_1998_num_73_3_3518",
+      "verificationNote": "2026-11-08 web searchable scholarly text directly inspected selectively, especially printed p373 and note 12: 13 April refers to establishment/traditional dating or arrival, whereas signature of general edict 30 April 1598 follows reassessment by Jean-Louis Bourgeon, La date de l'édit de Nantes, pp17-50; Bost explicitly says general edict established 13 and signed 30. This is a secondary scholarly historical reconstruction, not the original month-only dating as physical autograph. Bost notes Anquez 1859 pp456–502 reproduces April–May 1598 texts and Haag 1858 pp226–260 Paris-registered February 1599 text; actual early XI not collated here. Partial indexed/online text, not complete physical folio review. REF-S98 is a different Bost work."
+    },
+    {
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "checkedAt": "2026-11-08",
+      "id": "REF-S102",
+      "documentYear": 2015,
+      "title": "Michaël Desprez, L’Édit de Nantes et sa Révocation ou comment envisager la tolérance religieuse au temps de l’intolérance (1598–1685), Revue d’études françaises de Sophia 50 (2015), pp.71–100",
+      "url": "https://sophia.repo.nii.ac.jp/record/2006385/files/200000020567_000125000_71.pdf",
+      "verificationNote": "2026-11-08 directly checked indexed page snippets p78 n7 and p80 n9 plus independently verified bibliographic record at CiNii (https://cir.nii.ac.jp/crid/1520290885041312768). Desprez p78 n7 identifies Geneva Châtellerault notary copy 22 May 1599, conflicting with BGE institutional 29 May 1599 (COPY_DATE_CONFLICT_22_29_MAY_1599) pending manuscript verification. P80 expressly says signature '30 avril 1598 (et non le 13)' — NOT evidence of author 13/30 confusion; instead distinguish traditional 13 date versus 30 signature as per REF-S101. P80 also says presentation to Paris registration in November **1599**, incompatible if same Paris registration occurred 25 Feb 1599 in REF-P27. Treat as DESPREZ_NOVEMBER_1599_CONTEXT_HOLD, likely chronological textual error but no claimed erratum without full page and editorial consultation. Further material p80–81 on victims' redress cited in prior research but full PDF not downloaded in this turn; treat interpretation as B1 secondary, LOCAL_EXECUTION_HOLD. This partial indexed PDF inspection is NOT entire object nor primary manuscript collation."
     }
   ]
 }
