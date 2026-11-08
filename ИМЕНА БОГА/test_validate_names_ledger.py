@@ -1225,13 +1225,13 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         row["religionScope"] = "RELIGIOUS_TEMPLE_OR_SCRIBAL_SCHOOL_PROVED"
         self.assertTrue(any("cultic-context language falsely" in e for e in validate_source_access(d)))
 
-    def test_caquot_lemaire_1977_line_6_sd yn_mapping_cannot_shift_to_own_line_8(self) -> None:
+    def test_caquot_lemaire_1977_line_6_sdyn_mapping_cannot_shift_to_own_line_8(self) -> None:
         d = copy.deepcopy(self.sources)
         row = next(x for x in d["records"] if x["id"] == "SRC-CAQUOT-LEMAIRE-DEIRALLA-REASSEMBLY-1977-P193198")
         row["lineMappingScope"] = "1977_LINE8_SDYN_IDENTICAL_1976_LINE8_WITHOUT_RENUMBERING"
         self.assertTrue(any("line-6/line-8 concordance" in e for e in validate_source_access(d)))
 
-    def test_caquot_lemaire_1977_sd yn_and_sdh_bird_cannot_be_merged(self) -> None:
+    def test_caquot_lemaire_1977_sdyn_and_sdh_bird_cannot_be_merged(self) -> None:
         d = copy.deepcopy(self.sources)
         row = next(x for x in d["records"] if x["id"] == "SRC-CAQUOT-LEMAIRE-DEIRALLA-REASSEMBLY-1977-P193198")
         row["lexicalDistinctionScope"] = "1977_LINE8_SDH_IS_THE_SAME_DIVINE_GROUP_AS_1977_LINE6_SDYN"
