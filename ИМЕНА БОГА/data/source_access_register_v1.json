@@ -2180,6 +2180,30 @@
         ],
         "nextAction": "Locate the actual 4Q120 portion on each historical composite, establish its plate/physical-fragment identity, then compare photographic pixels against B-503715 and DJD IX; independently verify permission for reuse.",
         "notEvidenceFor": "EXACT_FRAGMENT15_IDENTITY_OR_FRAGMENT20_EQUIVALENCE_OR_IAO_CRITICAL_COLLATION_OR_ORIGINAL_LXX_PRONUNCIATION_OR_REPRODUCTION_RIGHTS"
+      },
+      "numberingCrosswalk20261108": {
+        "status": "SECONDARY_NUMBERING_CONCORDANCE_NO_DIRECT_DJD_IX_COLLATION",
+        "museumImage": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-503715",
+        "museumPlateAndFragment": "PLATE_378_FRAGMENT_15",
+        "museumSourceState": "IAA_PRIMARY_IMAGE_CATALOGUE_LABEL_DIRECTLY_CHECKED",
+        "academicIndex": "GARCIA_MARTINEZ_TIGCHELAAR_1999_STUDY_EDITION_VOL1_PRINT_P293",
+        "academicIndexUrl": "https://ancientmodern.org/wp-content/uploads/2016/02/the_dead_sea_scrolls_study_edition_brill_1999.pdf",
+        "academicIndexAccess": "PRINTED_PAGE_293_DIRECTLY_INSPECTED_WITH_PAGE_IMAGE_INDEX_NOT_DJD_IX_EDITION",
+        "originalDjdCitation": "SKEHAN_ULRICH_SANDERSON_DJD_IX_1992_PP167_186_PLATES_XXXIX_XLI_ORIGINAL_NOT_OBTAINED",
+        "originalDjdPhotoNumbers": "PAM_43_558_43_559_43_561_ROC_376_378_379_ACADEMIC_INDEX",
+        "academicEditorialFragmentsLev427": "EDITORIAL_FRAGMENTS_20_21_LEVITICUS_4_26_28",
+        "academicEditorialFragmentsLev46": "EDITORIAL_FRAGMENTS_12_15_LEVITICUS_4_6_8",
+        "reportedCrosswalk": "VASILEIADIS_2017_P24_FIG1_EDITORIAL_FRAGMENT20_LINE4_TO_MUSEUM_PLATE378_FRAGMENT15",
+        "reportedCrosswalkSource": "https://zenodo.org/records/4260519",
+        "reportedCrosswalkAccess": "AUTHOR_DEPOSIT_RECORD_VERIFIED_CROSSWALK_FROM_INDEXED_SECONDARY_TEXT_AUTHOR_PDF_P24_NOT_DIRECTLY_INSPECTED",
+        "distinctNumberingSchemes": true,
+        "publishedCrosswalkSourceNotDirectDjdReview": true,
+        "directDjdPageAndPlateChecked": false,
+        "physicalFragmentPhotoComparisonComplete": false,
+        "historicalNegativeSamePhysicalFragmentVerified": false,
+        "glyphByGlyphCriticalCollationComplete": false,
+        "imageReproductionPermissionGranted": false,
+        "nextAction": "Inspect source author PDF p24 and DJD IX original pp167-186/pl XXXIX-XLI, map editor fragment20 line4 to museum Plate378 Frag15 via the photographed signs and check 1953/1960 composite plates separately; respect IAA rights."
       }
     }
   ],
