@@ -2044,9 +2044,9 @@
       "creator": "Hendricus Jacobus Franken",
       "year": 1967,
       "url": "https://doi.org/10.1163/156853367X00187",
-      "objectType": "original_1967_two_page_excavation_notice_bibliographic_identity_ONLY_original_scanned_article_NOT_READ",
-      "sourceRole": "FRANKEN1967_EARLIEST_PUBLISHED_DEIRALLA_FRAGMENT_PHOTO_REPORTED_IN_LEMAIRE1985_CATALOG_ONLY",
-      "accessState": "CATALOG_ONLY",
+      "objectType": "original_1967_two_page_excavation_notice_bibliographic_identity_plus_first_printed_page480_jstor_browser_preview_text_only_page481_NOT_READ",
+      "sourceRole": "FRANKEN1967_EARLIEST_PUBLISHED_DEIRALLA_FRAGMENT_PHOTO_REPORTED_IN_LEMAIRE1985_PAGE480_TEXT_PREVIEW_ONLY",
+      "accessState": "PARTIAL_OBJECT",
       "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "PERMISSION_REQUIRED",
       "publicationState": "BLOCKED",
@@ -2058,12 +2058,16 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "locator": "Vetus Testamentum 17/4 (Oct 1967) pp480–481, DOI 10.1163/156853367X00187; indexed in CAL Bibliography and National Library of Israel. Andre Lemaire 1985 CRAI 129/2 original printed p271 explicitly states earliest photo of large fragment appeared in this 1967 article. NO direct article page or photograph visually checked.",
-      "sourceObjectState": "Brill DOI/volume/printed pages checked via bibliographic catalogues CAL / National Library / Eureka. The existence of photograph is Lemaire's retrospective scholarly statement on original 1985 printed p271; 1967 article PDF/figure was not independently obtained, so photographic bytes, original image size, photo date and readable lettering are unknown. Despite word 'Persian Period' in the historical TITLE, that is not a modern accepted inscription chronology, which subsequent archaeological and palaeographic work revises.",
-      "supportedUse": "Prioritize obtaining earliest reported published excavation photo at precise 1967 pages 480–481, separately from Hoftijzer Phoenix 1976 fig42, Hackett1986 photos, 2019 modern reprint and Brill 1976 critical plates. Cite as bibliographic route only, with Lemaire1985 secondary photographic statement.",
-      "forbiddenUse": "Assert this first 1967 photo was independently inspected, assume it displays šdyn, date the original inscription to Persian period based solely on 1967 paper title, assume first photo is same as Phoenix 1976 IR fig42, claim reuse/rights clearance or any autograph-level collation.",
+      "locator": "Vetus Testamentum 17/4 (Oct 1967) pp480–481, DOI 10.1163/156853367X00187; indexed in CAL Bibliography and National Library of Israel. Andre Lemaire 1985 CRAI 129/2 original printed p271 explicitly states earliest photo of large fragment appeared in this 1967 article. 2026-11-08 browser JSTOR free preview: first printed page 480 viewed, contains preliminary English printed text but NO ancient-inscription photograph; printed p481 remains gated behind free account/library login and NOT viewed. First-photo existence still only supported by Lemaire 1985 p271.",
+      "sourceObjectState": "Brill DOI/volume/printed pages checked via bibliographic catalogues CAL / National Library / Eureka. The existence of photograph is Lemaire's retrospective scholarly statement on original 1985 printed p271; 1967 article PDF/figure was not independently obtained, so photographic bytes, original image size, photo date and readable lettering are unknown. Despite word 'Persian Period' in the historical TITLE, that is not a modern accepted inscription chronology, which subsequent archaeological and palaeographic work revises. 2026-11-08 independent read-only TinyFish browser JSTOR stable/1516696 successfully showed scan of FIRST printed p480: typeset English preliminary excavation text only, no inscription photograph or image caption; no ancient šdyn transcription visible. Page481 was inaccessible: JSTOR prompts for registration/library login. Therefore photo content, presence/absence on p481 and any IR method/legibility remain UNKNOWN. We did not sign in, circumvent access, or download images. This is LIMITED SINGLE-PAGE editorial visual inspection, NOT ancient-object palaeography.",
+      "supportedUse": "Prioritize obtaining earliest reported published excavation photo at precise 1967 pages 480–481, separately from Hoftijzer Phoenix 1976 fig42, Hackett1986 photos, 2019 modern reprint and Brill 1976 critical plates. Cite as bibliographic route only, with Lemaire1985 secondary photographic statement. Cite JSTOR's direct first-page preview to rule out a photograph specifically on PRINTED p480, while treating alleged early photograph on p481 as an UNTESTED HYPOTHESIS reported by Lemaire 1985. JSTOR issue contents also identify following Pierre Grelot article starting on printed p481; the requested scan must specify Franken portion.",
+      "forbiddenUse": "Assert this first 1967 photo was independently inspected, assume it displays šdyn, date the original inscription to Persian period based solely on 1967 paper title, assume first photo is same as Phoenix 1976 IR fig42, claim reuse/rights clearance or any autograph-level collation. Do NOT claim that both 1967 printed pages were viewed; do NOT claim a photograph is absent from p481 or the whole original article, that p481 contains an IR image or any readable šdyn, or that the cited 1985 retrospective report is verified by the 1967 first-page preview.",
       "firstPhotoBoundary": "LEMAIRE1985_FIRST_PHOTO_REPORT_1967_FRANKEN_VT17_PP480481_ONLY_ORIGINAL_1967_IMAGE_UNSEEN",
-      "datingBoundary": "HISTORICAL_TITLE_PERSIAN_PERIOD_NO_ACCEPTED_INSCRIPTION_DATE"
+      "datingBoundary": "HISTORICAL_TITLE_PERSIAN_PERIOD_NO_ACCEPTED_INSCRIPTION_DATE",
+      "alternateUrl": "https://www.jstor.org/stable/1516696",
+      "page480PreviewBoundary": "JSTOR_1516696_BROWSER_PREVIEW_PRINT_P480_ENGLISH_TEXT_NO_INSCRIPTION_PHOTO_P481_NOT_VIEWED_REGISTRATION_GATE",
+      "page481VisualEvidence": "NOT_OBTAINED_AND_NOT_INSPECTED",
+      "page480ObservationMethod": "TinyFish read-only full browser on JSTOR official stable/1516696, visible first-page scan inspected on 2026-11-08. No login, no direct screenshot bytes saved to repository."
     }
   ],
   "auditRevision": "NG12_1967_FIELD_DIARY_JERUSALEM_PAM_AND_FRANKEN_VT_FIRST_PHOTO_BIBLIOGRAPHIC_ROUTE_20261108"
