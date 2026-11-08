@@ -1268,12 +1268,12 @@
       "url": "https://books.google.com/books/about/Aramaic_Texts_from_Deir_%CA%BBAlla.html?id=fpo3AAAAIAAJ",
       "objectType": "original_epigraphic_editio_princeps_bibliographic_contents_only",
       "sourceRole": "DEIR_ALLA_ORIGINAL_EDITION_ACQUISITION_QUEUE",
-      "locator": "Fragment catalogue printed pp. 97ff; original transcription near p. 173; translation p. 179; grammatical survey p. 283; 33 plates (as reported by Caquot and Lemaire 1977)",
-      "accessState": "CATALOG_ONLY",
-      "locatorState": "COARSE_LOCATOR_ONLY",
-      "sourceObjectState": "Google Books publisher bibliographic record/table of contents and 1977 scholarly review verify the edition and section/page targets; the original transcription, photographs and textual notes have NOT been obtained/read.",
-      "supportedUse": "Request exact original volume sections, plate numbers and fragment inventory for future direct epigraphic collation.",
-      "forbiddenUse": "Claim this editio princeps has been read, that its variants have been independently collated or that original images may be republished.",
+      "locator": "Original publisher's printed 1976 title page: 'With 33 Plates and 5 Textfigures'; table of contents: VII Transcription of the texts p.173, VIII Translation p.179, IX Philological commentary p.183, plates 1–33 at book's end.",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "sourceObjectState": "The ORIGINAL BRILL 1976 edition's publisher-hosted front matter and table of contents text have been inspected directly; the title page explicitly says 'With 33 Plates and 5 Textfigures' and the contents 'Plates 1–33 ... at the end of the book'. The publisher PDF screenshot tool returned HTTP 403, so front page was text-extracted rather than independently visually verified. BODY pages 173/179/183 and physical plates are NOT read or collated; no right to reproduce original book images.",
+      "supportedUse": "Request exact original volume sections, plate numbers and fragment inventory for future direct epigraphic collation. Confirm first-edition inventory 33 plates and 5 text figures from its original title page rather than confusing bookseller descriptions.",
+      "forbiddenUse": "Claim this editio princeps has been read, that its variants have been independently collated or that original images may be republished. Claim to have checked the 33 original photographs/plates, or that published front matter licenses reproduction of manuscript images.",
       "evidenceClass": "B1",
       "criticalEditionCollated": false,
       "rightsState": "PERMISSION_REQUIRED",
@@ -1283,7 +1283,8 @@
         "EVIDENCE_HOLD",
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
-      ]
+      ],
+      "alternateUrl": "https://brill.com/edcollchap/book/9789004670327/front-1.pdf"
     },
     {
       "id": "SRC-IMG-DEIRALLA-DISDERO-2020",
@@ -1460,5 +1461,5 @@
       "proposedReaderUse": "EMBEDDED_RESEARCH_READER_ONLY"
     }
   ],
-  "auditRevision": "NG12_DEIR_ALLA_CC0_ORIGINAL_MUSEUM_PHOTO_AND_READER_PUBLISHING_20261108"
+  "auditRevision": "NG12_BRILL_1976_ORIGINAL_FRONTMATTER_PLATE_COUNT_PINNED_20261108"
 }
