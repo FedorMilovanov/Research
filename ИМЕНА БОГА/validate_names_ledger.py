@@ -716,6 +716,34 @@ def validate_source_access(sources: dict) -> list[str]:
                 or photo.get("scientificStatus") != "PRELIMINARY_PHOTOGRAPHIC_OBSERVATION_NOT_INDEPENDENT_EPI_GRAPHIC_CRITICAL_COLLATION"
                 or photo.get("rightsStatus") != "IAA_ALL_RIGHTS_RESERVED_REUSE_PERMISSION_REQUIRED_NO_BYTES_COPIED"):
                 errors.append(f"{prefix}: IAA 4Q120 browser photo observation must not become critical collation or publication permission")
+        if rid == "SRC-IAA-DSS-4Q120-B503715-2015":
+            historical = source.get("historicalCompositeNegatives20261108")
+            candidates = historical.get("candidates") if isinstance(historical, dict) else None
+            expected_historical = {
+                "B-278297": ("M40.633", "1953-05"),
+                "B-284588": ("M43.560", "1960-06"),
+            }
+            historical_valid = (
+                isinstance(historical, dict)
+                and historical.get("status") == "CATALOG_METADATA_ONLY_NO_PIXEL_INSPECTION"
+                and isinstance(candidates, list)
+                and len(candidates) == len(expected_historical)
+                and all(isinstance(c, dict) for c in candidates)
+                and {c.get("imageId") for c in candidates} == set(expected_historical)
+                and all(
+                    c.get("url") == f"https://www.deadseascrolls.org.il/explore-the-archive/image/{c.get('imageId')}"
+                    and (c.get("pamNumber"), c.get("date")) == expected_historical[c.get("imageId")]
+                    and c.get("imageType") == "Scanned Infrared Negative"
+                    and c.get("photographer") == "Najib Anton Albina"
+                    and c.get("plate378Included") is True
+                    and c.get("containsOtherManuscripts") is True
+                    and c.get("sameFragmentAsB503715") is None
+                    and c.get("signLevelIaoReadingVerified") is False
+                    for c in candidates
+                )
+            )
+            if not historical_valid:
+                errors.append(f"{prefix}: 4Q120 historical composite negatives are not fragment-specific IAO collations or 2015-photo identity proofs")
         if rid in DEIR_ALLA_SOURCE_GUARDS:
             required_state = DEIR_ALLA_SOURCE_GUARDS[rid]
             actual_state = (source.get("accessState"), source.get("rightsState"), source.get("locatorState"))
