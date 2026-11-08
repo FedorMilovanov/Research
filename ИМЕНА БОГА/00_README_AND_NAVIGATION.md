@@ -6,6 +6,9 @@
 
 ## Актуальная контрольная точка (08.11.2026)
 
+**NG-12, уточнён источник расхождения C14:** [вторичная публикация цитирует Франкена 1976, с.16](https://deadseaquake.info/EarthquakeCatalogOfTheDeadSea/Sites/Archaeo/DeirAlla.html), `GrN-5633 = 2600 ± 50 BP` (обугленное зерно BB303, фаза M), **как у Вайнштейна 1984**, но не как в ADAJ 1986. Сама исходная с.16 (1976) и лабораторная с.53 (1972) остаются непросмотренными, следовательно, конфликт **НЕ объявлен доказанной опечаткой**. Точный разбор в [досье 03](03_PATRIARCHAL_EL_TITLES_AND_REFERENTS.md) и [читательской главе 03](reader/CH-PILOT-03_EL_ELOHIM_SHADDAI.md). **68 источников (без искусственного разрастания) / 190 baseline тестов; NG-12 BLOCKED_SOURCE.**
+
+
 **Обнаружен исторический C14-конфликт:** в [Weinstein 1984, оригинальная с.351](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0086FF0E2C859B1064BC8FC782E928B0/S0033822200006731a.pdf/radiocarbon-dating-in-the-southern-levant.pdf) указано **GrN-5283 = 2690 ± 60 BP (яма)** и **GrN-5633 = 2600 ± 50 BP (обугленный слой)**; в проверенном ADAJ 1986, с.142 **GrN-5633 = 2690 ± 60 BP**. Исходный лабораторный лист 1972 с.53 не проверен, поэтому **никакой исправленной цифры или тождественности образцов не объявлено**. Подробнее [досье 03](03_PATRIARCHAL_EL_TITLES_AND_REFERENTS.md) и [CH-PILOT-03](reader/CH-PILOT-03_EL_ELOHIM_SHADDAI.md). **68 зарегистрированных источников / 188 baseline тестов**; NG-12 BLOCKED_SOURCE.
 
 

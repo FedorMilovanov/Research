@@ -533,6 +533,12 @@ def validate_source_access(sources: dict) -> list[str]:
             if (source.get("discrepancyScope") != "VERIFIED_1984_P351_GRN5283_2690PM60_PIT_GRN5633_2600PM50_DESTRUCTION_VS_1986_P142_GRN5633_2690PM60_UNRESOLVED"
                 or source.get("laboratorySourceAccess") != "VOGEL_WATERBOLK_1972_R14_P53_PUBLISHER_METADATA_ONLY_SOURCE_PAGE_NOT_READ"):
                 errors.append(f"{prefix}: GrN-5283/5633 source conflict or 1972 laboratory-access boundary falsely resolved")
+        if rid == "SRC-DEIRALLA-HOFTIJZER-VANDERKOOIJ-1976-CONTENTS":
+            if source.get("p16EvidenceScope") != "SECONDARY_EXCERPT_FRANKEN1976_P16_BB303_GRN5633_2600PM50_NOT_ORIGINAL_FACSIMILE":
+                errors.append(f"{prefix}: Franken 1976 p16 secondary quotation promoted to original facsimile")
+        if rid == "SRC-WEINSTEIN-1984-DEIRALLA-C14-CONFLICT-P351":
+            if source.get("crossPublicationTriangulation") != "1984_WEINSTEIN_P351_DIRECT_PLUS_SECONDARY_FRANKEN1976_P16_QUOTE_AGREE_ON_2600PM50_1986_2690PM60_DISPUTED_ORIGINAL_1972_UNREAD":
+                errors.append(f"{prefix}: Weinstein/Franken/1986 C14 corroboration and disagreement falsely resolved")
         if rid in DEIR_ALLA_SOURCE_GUARDS:
             required_state = DEIR_ALLA_SOURCE_GUARDS[rid]
             actual_state = (source.get("accessState"), source.get("rightsState"), source.get("locatorState"))

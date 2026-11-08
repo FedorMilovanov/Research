@@ -1195,6 +1195,18 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         row["laboratorySourceAccess"] = "VOGEL_WATERBOLK_1972_R14_P53_FULL_ORIGINAL_READ"
         self.assertTrue(any("1972 laboratory-access boundary" in e for e in validate_source_access(d)))
 
+    def test_deir_alla_franken_1976_excerpt_is_secondhand_not_original(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-DEIRALLA-HOFTIJZER-VANDERKOOIJ-1976-CONTENTS")
+        row["p16EvidenceScope"] = "ORIGINAL_1976_P16_FACSIMILE_INDEPENDENTLY_READ"
+        self.assertTrue(any("secondary quotation promoted" in e for e in validate_source_access(d)))
+
+    def test_deir_alla_weinstein_franken_1986_conflict_cannot_be_silently_closed(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-WEINSTEIN-1984-DEIRALLA-C14-CONFLICT-P351")
+        row["crossPublicationTriangulation"] = "1986_C14_SAMPLE_ID_CORRECTED_AND_GUARANTEED"
+        self.assertTrue(any("C14 corroboration and disagreement falsely resolved" in e for e in validate_source_access(d)))
+
     def test_deir_alla_livius_translation_cannot_inherit_photo_cc0_rights(self) -> None:
         d = copy.deepcopy(self.sources)
         row = next(x for x in d["records"] if x["id"] == "SRC-LIVIUS-LEVINE-COMPOSITE-TRANSLATION-2003")

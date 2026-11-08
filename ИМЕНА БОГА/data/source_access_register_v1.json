@@ -1271,7 +1271,7 @@
       "locator": "Original publisher's printed 1976 title page: 'With 33 Plates and 5 Textfigures'; table of contents: VII Transcription of the texts p.173, VIII Translation p.179, IX Philological commentary p.183, plates 1–33 at book's end.",
       "accessState": "PARTIAL_OBJECT",
       "locatorState": "EXACT_LOCATOR_VERIFIED",
-      "sourceObjectState": "The ORIGINAL BRILL 1976 edition's publisher-hosted front matter and table of contents text have been inspected directly; the title page explicitly says 'With 33 Plates and 5 Textfigures' and the contents 'Plates 1–33 ... at the end of the book'. The publisher PDF screenshot tool returned HTTP 403, so front page was text-extracted rather than independently visually verified. BODY pages 173/179/183 and physical plates are NOT read or collated; no right to reproduce original book images.",
+      "sourceObjectState": "The ORIGINAL BRILL 1976 edition's publisher-hosted front matter and table of contents text have been inspected directly; the title page explicitly says 'With 33 Plates and 5 Textfigures' and the contents 'Plates 1–33 ... at the end of the book'. The publisher PDF screenshot tool returned HTTP 403, so front page was text-extracted rather than independently visually verified. BODY pages 173/179/183 and physical plates are NOT read or collated; no right to reproduce original book images. A public scholarly online chronology reproduces an excerpt attributed to Franken 1976 printed p16 on GrN-5633 sample BB303, 2600±50 BP, with period dendrochronological approximation; that excerpt is SECONDARY, not an examination of the printed ATDA 1976 p16, which remains unread.",
       "supportedUse": "Request exact original volume sections, plate numbers and fragment inventory for future direct epigraphic collation. Confirm first-edition inventory 33 plates and 5 text figures from its original title page rather than confusing bookseller descriptions.",
       "forbiddenUse": "Claim this editio princeps has been read, that its variants have been independently collated or that original images may be republished. Claim to have checked the 33 original photographs/plates, or that published front matter licenses reproduction of manuscript images.",
       "evidenceClass": "B1",
@@ -1284,7 +1284,10 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "alternateUrl": "https://brill.com/edcollchap/book/9789004670327/front-1.pdf"
+      "alternateUrl": "https://brill.com/edcollchap/book/9789004670327/front-1.pdf",
+      "p16SecondaryReproductionUrl": "https://deadseaquake.info/EarthquakeCatalogOfTheDeadSea/Sites/Archaeo/DeirAlla.html",
+      "p16EvidenceScope": "SECONDARY_EXCERPT_FRANKEN1976_P16_BB303_GRN5633_2600PM50_NOT_ORIGINAL_FACSIMILE",
+      "p16SourceBoundary": "Public secondary Deir Alla earthquake catalogue quotes Franken 1976 p16: one relevant Phase M/IX charred grain sample from BB303, GrN5633, 2600±50 BP; historic tree-ring correction gives about 800 BCE. The secondary quote (and its 2σ/66% notation) is NOT directly inspected publisher original. Note statistical 2sigma=66% wording is not reliable as normal-distribution convention and not propagated as a validated statistical confidence level. ATDA original p16 and Vogel/Waterbolk 1972 original p53 not read."
     },
     {
       "id": "SRC-IMG-DEIRALLA-DISDERO-2020",
@@ -1690,12 +1693,13 @@
         "PUBLICATION_HOLD"
       ],
       "locator": "Original Cambridge journal PDF printed p351 zero-based page54 screenshot checked; Deir Alla Phase M pit and destruction rows, cited 1972 Groningen lab list original printed p53 not directly read.",
-      "sourceObjectState": "Original Weinstein 1984 printed p351 visually checked. Phase M PIT GrN-5283=2690±60 BP historical calibrated 890–765 BCE; Phase M DESTRUCTION DEBRIS charred grain GrN-5633=2600±50 BP historical calibrated 820–765 BCE, both referencing Radiocarbon 1972 vol14 p53. Directly checked excavation ADAJ 1986 p142 instead lists GrN-5633=2690±60 BP with GrN-8119=2590±70 BP, and historical 880–770 BCE range. There is a real published mismatch of sample ID,value,provenience, not yet a demonstrated typo. Original lab authors Vogel and Waterbolk 1972 paper metadata known but p53 unpublished to this research, and 1976 ATDA p16 not read.",
+      "sourceObjectState": "Original Weinstein 1984 printed p351 visually checked. Phase M PIT GrN-5283=2690±60 BP historical calibrated 890–765 BCE; Phase M DESTRUCTION DEBRIS charred grain GrN-5633=2600±50 BP historical calibrated 820–765 BCE, both referencing Radiocarbon 1972 vol14 p53. Directly checked excavation ADAJ 1986 p142 instead lists GrN-5633=2690±60 BP with GrN-8119=2590±70 BP, and historical 880–770 BCE range. There is a real published mismatch of sample ID,value,provenience, not yet a demonstrated typo. Original lab authors Vogel and Waterbolk 1972 paper metadata known but p53 unpublished to this research, and 1976 ATDA p16 not read. Additional public third-party transcription of Franken 1976 p16 (NOT original original page) also gives charred grain BB303 / GrN-5633 / 2600±50 BP, independently making the 1986 GrN-5633=2690±60 assignment an identified published conflict, without proving its cause.",
       "supportedUse": "Present a specific 1984-versus-1986 source conflict for GrN-5283, GrN-5633, GrN-8119, with exact author's numerical data and layer contexts as printed, separately attributed; require access to the original Vogel/Waterbolk 1972 Radiocarbon 14 p53 and 1976 ATDA p16 to adjudicate.",
       "forbiddenUse": "Do not silently relabel GrN-5633 to GrN-5283 or label either scholarly publisher certainly mistaken; do not merge pit and destruction sample context, claim raw laboratory 1972 viewed or recalibrate modern IntCal results, or publish protected figure without permission.",
       "discrepancyScope": "VERIFIED_1984_P351_GRN5283_2690PM60_PIT_GRN5633_2600PM50_DESTRUCTION_VS_1986_P142_GRN5633_2690PM60_UNRESOLVED",
-      "laboratorySourceAccess": "VOGEL_WATERBOLK_1972_R14_P53_PUBLISHER_METADATA_ONLY_SOURCE_PAGE_NOT_READ"
+      "laboratorySourceAccess": "VOGEL_WATERBOLK_1972_R14_P53_PUBLISHER_METADATA_ONLY_SOURCE_PAGE_NOT_READ",
+      "crossPublicationTriangulation": "1984_WEINSTEIN_P351_DIRECT_PLUS_SECONDARY_FRANKEN1976_P16_QUOTE_AGREE_ON_2600PM50_1986_2690PM60_DISPUTED_ORIGINAL_1972_UNREAD"
     }
   ],
-  "auditRevision": "NG12_WEINSTEIN1984_ADAJ1986_C14_NUMERIC_AND_SAMPLE_CONTEXT_CONFLICT_20261108"
+  "auditRevision": "NG12_FRANKEN1976_P16_SECONDARY_EXCERPT_BOUNDARY_AND_1984_1986_COMPARISON_20261108"
 }
