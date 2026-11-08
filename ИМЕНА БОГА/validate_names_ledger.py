@@ -408,6 +408,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-LEMAIRE-DEIRALLA-1985-RADIOCARBON-PP271272": "LEMAIRE_1985_ATTRIBUTED_C14_FRANKEN1976_P16_POSSIBLE_AMOS_EARTHQUAKE",
     "SRC-ADAJ1986-IBRAHIM-VANDERKOOIJ-2C14-P142": "PRIMARY_1986_EXCAVATION_TWO_IDENTIFIED_RADIOCARBON_SAMPLES_AND_PHASE_IX_MATERIAL_CONTEXT",
     "SRC-WEINSTEIN-1984-DEIRALLA-C14-CONFLICT-P351": "WEINSTEIN1984_GRN5283_GRN5633_SAMPLE_ID_CONFLICT_WITH_ADAJ1986",
+    "SRC-VOGEL-WATERBOLK-1972-GRONINGEN-DEIRALLA-P53": "PRIMARY_1972_GRONINGEN_LAB_SAMPLE_IDS_VALUES_CONTEXT",
 }
 
 
@@ -434,6 +435,7 @@ DEIR_ALLA_SOURCE_GUARDS = {
     "SRC-LEMAIRE-DEIRALLA-1985-RADIOCARBON-PP271272": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED", "EXACT_LOCATOR_VERIFIED"),
     "SRC-ADAJ1986-IBRAHIM-VANDERKOOIJ-2C14-P142": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED", "EXACT_LOCATOR_VERIFIED"),
     "SRC-WEINSTEIN-1984-DEIRALLA-C14-CONFLICT-P351": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED", "EXACT_LOCATOR_VERIFIED"),
+    "SRC-VOGEL-WATERBOLK-1972-GRONINGEN-DEIRALLA-P53": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED", "EXACT_LOCATOR_VERIFIED"),
 }
 DEIR_ALLA_VISUAL_LICENSE_GUARDS = {
     "SRC-IMG-DEIRALLA-LENDERING-LIVIUS-CC0": (
@@ -531,14 +533,24 @@ def validate_source_access(sources: dict) -> list[str]:
                 errors.append(f"{prefix}: ADAJ1986 original radiocarbon calibration, room function or screenshot scope falsely promoted")
         if rid == "SRC-WEINSTEIN-1984-DEIRALLA-C14-CONFLICT-P351":
             if (source.get("discrepancyScope") != "VERIFIED_1984_P351_GRN5283_2690PM60_PIT_GRN5633_2600PM50_DESTRUCTION_VS_1986_P142_GRN5633_2690PM60_UNRESOLVED"
-                or source.get("laboratorySourceAccess") != "VOGEL_WATERBOLK_1972_R14_P53_PUBLISHER_METADATA_ONLY_SOURCE_PAGE_NOT_READ"):
+                or source.get("laboratorySourceAccess") != "VOGEL_WATERBOLK_1972_R14_P53_CAMBRIDGE_ORIGINAL_PDF_TEXT_READ_SCREENSHOT_NOT_VERIFIED"):
                 errors.append(f"{prefix}: GrN-5283/5633 source conflict or 1972 laboratory-access boundary falsely resolved")
         if rid == "SRC-DEIRALLA-HOFTIJZER-VANDERKOOIJ-1976-CONTENTS":
             if source.get("p16EvidenceScope") != "SECONDARY_EXCERPT_FRANKEN1976_P16_BB303_GRN5633_2600PM50_NOT_ORIGINAL_FACSIMILE":
                 errors.append(f"{prefix}: Franken 1976 p16 secondary quotation promoted to original facsimile")
         if rid == "SRC-WEINSTEIN-1984-DEIRALLA-C14-CONFLICT-P351":
-            if source.get("crossPublicationTriangulation") != "1984_WEINSTEIN_P351_DIRECT_PLUS_SECONDARY_FRANKEN1976_P16_QUOTE_AGREE_ON_2600PM50_1986_2690PM60_DISPUTED_ORIGINAL_1972_UNREAD":
+            if source.get("crossPublicationTriangulation") != "1972_LAB_P53_DIRECT_GRN5633_2600PM50_MATCHES_WEINSTEIN1984_P351_AND_SECONDARY_FRANKEN1976_P16_VS_1986_P142_GRN5633_2690PM60_CAUSE_UNRESOLVED":
                 errors.append(f"{prefix}: Weinstein/Franken/1986 C14 corroboration and disagreement falsely resolved")
+        if rid == "SRC-VOGEL-WATERBOLK-1972-GRONINGEN-DEIRALLA-P53":
+            if source.get("labPair") != "ORIGINAL_1972_P53_GRN5283_B433A_2690PM60_PIT_GRN5633_BB303_2600PM50_CHARRED_GRAIN":
+                errors.append(f"{prefix}: 1972 original lab GrN-5283/5633 sample-ID and radiocarbon measurements wrongly reassigned")
+            if source.get("imageScope") != "CAMBRIDGE_ORIGINAL_1972_FULL_PDF_TEXT_P53_READ_WEB_SCREENSHOT_UNAVAILABLE_NOT_PHOTO_CROSSCHECKED":
+                errors.append(f"{prefix}: 1972 Cambridge PDF original reading falsely promoted to screenshot visual proof")
+            if source.get("religionScope") != "1972_LAB_LIST_TEMPLE_ANNEXES_AS_CONTEMPORARY_SITE_INTERPRETATION_NOT_PROVEN_1986":
+                errors.append(f"{prefix}: 1972 lab cultic-context language falsely declared a proven temple")
+        if rid == "SRC-ADAJ1986-IBRAHIM-VANDERKOOIJ-2C14-P142":
+            if source.get("original1972LabDiscrepancy") != "1972_PRIMARY_P53_GRN5633_2600PM50_VS_1986_P142_SAME_ID_2690PM60_UNEXPLAINED":
+                errors.append(f"{prefix}: 1986 conflicting GrN5633 sample age falsely corrected without a published erratum")
         if rid in DEIR_ALLA_SOURCE_GUARDS:
             required_state = DEIR_ALLA_SOURCE_GUARDS[rid]
             actual_state = (source.get("accessState"), source.get("rightsState"), source.get("locatorState"))

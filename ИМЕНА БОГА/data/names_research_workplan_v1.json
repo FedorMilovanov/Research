@@ -12,11 +12,11 @@
     "arenaRecords": 29,
     "extensionRecords": 13,
     "contextAttestations": 105,
-    "sourceRegisterEntries": 68,
-    "regressionTests": 190,
+    "sourceRegisterEntries": 69,
+    "regressionTests": 193,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PREVIOUS_7420038_6_OF_6_SUCCESS_NEW_FRANKEN1976_SECONDARY_QUOTE_COMMIT_REQUIRES_EXACT_SHA_CI",
+    "allSixCiChecks": "PREVIOUS_980B257_ALL_6_CI_SUCCESS_NEW_1972_PRIMARY_LAB_HEAD_REQUIRES_EXACT_SHA_CI",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 17,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "7420038bf588bac6068ca8be0cfdde9941d09e61"
+    "lastConfirmedAllSixChecksSha": "980b257f849f9259290fe6df45ca1186caf8c2f8"
   },
   "allowedStatuses": [
     "DONE",
@@ -719,7 +719,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NG-12 next source-critical acquisition (STOP_SEARCH until originals obtained): ask legal institutional access to exact print p53 from Vogel/Waterbolk 1972 Radiocarbon vol14(1) and print p16 from Hoftijzer/van der Kooij 1976. Compare raw lab IDs GrN5283 and GrN5633 with 1984 table and 1986 p142. Do not hunt endlessly for new secondary summaries; preserve ongoing HOLD. Separately epigraphic original 1976 p173 + photographic plates and Hackett1984 full text for shdyn; external peer review needed.",
+  "nextAction": "NG12: original ATDA Hoftijzer/van der Kooij 1976 p16 and critically original 1976 inscription printed p173/179/183 and 33 photo plates; compare with 1984 Hackett full monograph and Caquot/Lemaire 1977 contested fragment positions. 1972 direct Groningen p53 lab pair known, 1986 inconsistent attribution is unresolved reported error without verified erratum; no further general C14 browsing unless one precise correction is found. Independent scientific readers and rights approvals remain mandatory.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -801,7 +801,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-08",
-    "planStatus": "NG-12 radiocarbon provenance triangulation: secondary excerpt from Franken 1976 p16 attributed GrN5633 2600±50 BP charred grain BB303 (matches independently visually verified Weinstein1984 p351); contradicts excavators' original 1986 p142 GrN5633 2690±60 BP. STILL UNRESOLVED until original 1972 lab list p53/ATDA1976 p16. Source count remains 68, corpus tests 190 (+2), 0 epigraphic collation, 0 external accepted peer review, 0 Product. Prior exact SHA 7420038 CI 6/6 success; new commit needs fresh exact-SHA CI.",
+    "planStatus": "NG-12 primary 1972 radiocarbon source breakthrough: Cambridge original Vogel/Waterbolk Radiocarbon14/1 p53 PDF text directly read; GrN5283=2690±60 charcoal PIT (1964) versus GrN5633=2600±50 charred grain DESTRUCTION (1967), so ADAJ1986 p142 GrN5633=2690±60 is inconsistent with original lab attribution. 69 registered sources, 193 corpus tests, 0 ancient epigraphic critical collation, external approval or Product rights. 1972 PDF screenshot unavailable; actual ATDA1976 p16 unread. Previous 980b257 6/6 CI, new HEAD requires exact-SHA.",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -898,14 +898,15 @@
       "08.11.2026 NG12 independently inspected Lemaire 1985 CRAI pages271–272 via Persée HTML original journal: found ATDA 1976 p16 C14 circa800 B.C. +/-70 @66% cited, 1983 ADAJ p583 reference, and tentative Amos1:1 quake correlation. Explicitly reconciled 1979 unfinished samples with older available published C14 data without asserting shared/different batch; Reader03, dossier03, source register and two fail-closed tests updated.",
       "08.11.2026 NG12 first-hand Jordanian archaeological field report 1986 pp137 and142 visually verified: C14 two identified burned-plant samples GrN5633 2690±60 BP / GrN8119 2590±70 BP with contemporary 770–880 BCE calibrations, phase IX physical plaster/bench rooms, no incontrovertible sanctuary; historical dated samples distinguished from epigraphic writing. Source ledger+2 negative tests, Dossier03+Reader03 and navigation updated.",
       "08.11.2026 NG12 forensic radiocarbon provenance: official Cambridge publisher PDF Weinstein 1984 p351 visually checked; exact source conflict with original ADAJ 1986 p142 in GrN5283/5633 IDs, values and pit-vs-destruction provenience; created source record, two negative source guards, dossier and Reader03 attribution, requiring Vogel/Waterbolk 1972 p53 before resolution.",
-      "08.11.2026 NG12 audited existing digital excerpt attributed to Franken1976 printed p16: single Phase M/IX BB303 charred grain GrN5633 2600±50 BP aligns Weinstein1984 original p351 and differs from ADAJ1986 original p142. Kept as secondary quotation in original 1976 registry record rather than inflated source count; 2 new adversarial scope tests, Reader03/dossier03 and master/navigation reconciled. No assumption that 1986 mismatch is proven typo or original 1972/1976 actually read."
+      "08.11.2026 NG12 audited existing digital excerpt attributed to Franken1976 printed p16: single Phase M/IX BB303 charred grain GrN5633 2600±50 BP aligns Weinstein1984 original p351 and differs from ADAJ1986 original p142. Kept as secondary quotation in original 1976 registry record rather than inflated source count; 2 new adversarial scope tests, Reader03/dossier03 and master/navigation reconciled. No assumption that 1986 mismatch is proven typo or original 1972/1976 actually read.",
+      "NG12 primary lab source obtained directly from Cambridge publisher complete 1972 PDF: original printed page 53 verified by extraction, two sample IDs and different excavation material/years + δ13C, pretreatment and contemporary ca800 BCE correction, contradicting 1986 lab sample pairing. The cause of 1986 report error not inferred; 1972 use of 'temple annexes' attributed as assumption, not proven sanctuary; ledger+3 fail-closed tests, Reader03/Dossier03, machine/human plan/nav corrected."
     ],
     "stillOpen": [
       "External Product/Arena consumers and zip prototypes still NOT independently authenticated by exact deployment/build; no dual-read v2 test witness",
       "55 old missing inline V1 locus fields remain absent by design; 50 old existing fields preserved, additional 33 sidecar-only witnesses not represented in old 22 generic snapshot",
       "Critical biblical textual manuscripts/collation, independent scholarly assessment, source rights and Product signoff remain HOLD",
       "Run 6/6 GitHub workflows on this audit update's exact new SHA before calling the updated control plane green; pre-update 5a97a3b succeeded but does not certify later commits.",
-      "68 registered sources, original Vogel/Waterbolk 1972 Radiocarbon vol14 p53 and Hoftijzer/van der Kooij 1976 p16 still inaccessible to primary visual reading. Third-party transcription corroborates 1984 but not independently inspected; 1986 contradiction in lab ID/value remains unresolved. The web catalogue's 2sigma/66 percent notation also unverified."
+      "69 source registrations. Original 1972 Cambridge PDF text p53 read (no web screenshot for image). Original Hoftijzer/van der Kooij 1976 p16 remains SECONDARY_EXCERPT and original inscription transcription p173/33 plates uncollated. No 1986 erratum or current radiocarbon calibration; no definitive date of earthquake or temple function."
     ]
   },
   "originalResearchCheckpoint": {
@@ -1479,7 +1480,7 @@
       "sourceId": "SRC-WEINSTEIN-1984-DEIRALLA-C14-CONFLICT-P351",
       "state": "PRINTED_ORIGINAL_1984_P351_VS_1986_P142_SAMPLE_ID_CONFLICT_DOCUMENTED_NOT_RESOLVED",
       "evidence": "Weinstein1984 p351 GrN5283 2690±60 BP phase M pit; GrN5633 2600±50 BP phase M destruction grain, both cite original 1972 Radiocarbon14 p53. Directly checked excavators' 1986 p142 GrN5633 2690±60 BP, GrN8119 2590±70 BP. Do not hypothesize typo as fact.",
-      "unreadPrimary": "Vogel and Waterbolk 1972 Groningen Radiocarbon Dates X printed p53, and ATDA1976 printed p16",
+      "unreadPrimary": "Original 1972 Groningen lab p53 now DIRECT_PUBLISHER_PDF_TEXT_READ, but original ATDA1976 p16 still unread; compare only published values, source report 1986 printing mismatch reason unknown",
       "negativeControls": [
         "No silent sample ID reassignment",
         "No treating 1986 880–770 BCE calibration as verified modern precise date",
@@ -1495,15 +1496,25 @@
       "sourceRegistryId": "SRC-DEIRALLA-HOFTIJZER-VANDERKOOIJ-1976-CONTENTS",
       "crossReferenceId": "SRC-WEINSTEIN-1984-DEIRALLA-C14-CONFLICT-P351",
       "catalogueUrl": "https://deadseaquake.info/EarthquakeCatalogOfTheDeadSea/Sites/Archaeo/DeirAlla.html",
-      "verificationBoundary": "Scholarly web catalogue reproduces Franken 1976 printed p16 about Phase M BB303 charred grain GrN-5633=2600±50 BP, aligns with Weinstein1984 p351, while 1986 field report p142 assigns GrN-5633=2690±60 BP. Third-party quote not independent facsimile; no proof of 1986 publication typo. Exact Cambridge 1972 original article and 1976 original p16 inaccessible to current web session, despite verified official publication DOI.",
+      "verificationBoundary": "Franken1976 printed p16 only secondhand reproduction of BB303 / GrN5633=2600±50 BP; directly verified 1972 Cambridge lab PDF p53 + Weinstein1984 original p351 agree, while ADAJ1986 original p142 gives GrN5633=2690±60 BP. Cause not resolved, first edition 1976 p16 not directly inspected.",
       "statisticalWarning": "Secondary catalogue mixes 2sigma and 66% language; not accepted as independently verified primary coverage",
       "priorityNextOriginals": [
-        "Vogel/Waterbolk Radiocarbon 14/1 1972 print p53 (publisher PDF)",
-        "Hoftijzer/van der Kooij 1976 print p16 and epigraphic plates p173"
+        "Hoftijzer/van der Kooij 1976 printed p16 (source confirmation), and epigraphic transcription p173 + original plates",
+        "1986 ADAJ author erratum or correction, if published"
       ],
       "criticalEditionCollations": 0,
       "productApprovals": 0,
       "independentScholarlyApprovals": 0
+    },
+    "ng12Lab1972Original": {
+      "sourceId": "SRC-VOGEL-WATERBOLK-1972-GRONINGEN-DEIRALLA-P53",
+      "status": "PRIMARY_1972_PUBLISHER_PDF_TEXT_DIRECTLY_READ_PRINTED_P53_WEB_SCREENSHOT_FAILED",
+      "discovery": "Vogel Waterbolk Groningen Radiocarbon Dates X 1972 Radiocarbon 14/1 pp6-110 original laboratory p53 sample GrN5283 B433a 2690±60BP large pit (Waterbolk collected 1964) and GrN5633 BB303 2600±50BP charred grain burned Phase M (van der Waals collected 1967). δ13C -23.3 per mil; acid alkali pretreatment; period tree-ring correction ca 800BCE (not modern).",
+      "contrast": "Original excavators report ADAJ1986 p142 gives GrN5633=2690±60BP, same value assigned by 1972 original to GrN5283 but not a proven typographical error; investigate erratum if available. Lab 1972 uses temple annexes as interpretation, but authors 1986 say no certain sanctuary.",
+      "restriction": "Original 1976 archaeological monograph printed p16 and original inscription 1976 printed p173 plus 33 plates unread; PDF screenshot of original 1972 p53 cannot be rendered in web; no manuscript/inscription physical autopsy; no current calibrated date or precise quake.",
+      "criticalEpigraphicCollations": 0,
+      "independentAcademicApprovals": 0,
+      "productRightsApprovals": 0
     }
   },
   "systematicTheologyTriage": {

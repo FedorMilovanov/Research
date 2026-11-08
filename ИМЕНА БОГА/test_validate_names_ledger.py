@@ -1207,6 +1207,24 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         row["crossPublicationTriangulation"] = "1986_C14_SAMPLE_ID_CORRECTED_AND_GUARANTEED"
         self.assertTrue(any("C14 corroboration and disagreement falsely resolved" in e for e in validate_source_access(d)))
 
+    def test_1972_primary_groningen_lab_grn_sample_ids_cannot_be_swapped(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-VOGEL-WATERBOLK-1972-GRONINGEN-DEIRALLA-P53")
+        row["labPair"] = "GRN5633_2690PM60_PIT_GRN5283_2600PM50_DESTRUCTION"
+        self.assertTrue(any("1972 original lab GrN-5283/5633" in e for e in validate_source_access(d)))
+
+    def test_1972_lab_pdf_text_cannot_claim_web_page_image_screenshot(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-VOGEL-WATERBOLK-1972-GRONINGEN-DEIRALLA-P53")
+        row["imageScope"] = "FULL_PRIMARY_1972_P53_PAGE_FACSIMILE_INDEPENDENTLY_INSPECTED"
+        self.assertTrue(any("Cambridge PDF original reading falsely promoted" in e for e in validate_source_access(d)))
+
+    def test_1972_lab_description_cannot_prove_temple_against_1986_site_report(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-VOGEL-WATERBOLK-1972-GRONINGEN-DEIRALLA-P53")
+        row["religionScope"] = "RELIGIOUS_TEMPLE_OR_SCRIBAL_SCHOOL_PROVED"
+        self.assertTrue(any("cultic-context language falsely" in e for e in validate_source_access(d)))
+
     def test_deir_alla_livius_translation_cannot_inherit_photo_cc0_rights(self) -> None:
         d = copy.deepcopy(self.sources)
         row = next(x for x in d["records"] if x["id"] == "SRC-LIVIUS-LEVINE-COMPOSITE-TRANSLATION-2003")
