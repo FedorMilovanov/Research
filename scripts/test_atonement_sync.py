@@ -507,6 +507,39 @@ class ActualSynchronizationTests(unittest.TestCase):
         self.assertIn("Bąk", memo)
         self.assertIn("не установлена", memo)
 
+    def test_article02_r8_decot_original_glyphs_and_editor_conflict_are_scoped(self):
+        article = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md").read_text(encoding="utf-8")
+        memo = (ROOT / "ИСКУПЛЕНИЕ/evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md").read_text(encoding="utf-8")
+        owner = (ROOT / "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md").read_text(encoding="utf-8")
+        board = (ROOT / "ИСКУПЛЕНИЕ/synthesis/07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        for marker in ("Прямая сверка коптских рукописей (R8)", "M.568", "ⲛ︦ϣⲏⲣⲉ",
+                       "ⲧⲉⲧⲛ︦ⲯⲩⲭⲏ", "ⲛ̄ϣⲏⲣⲉ", "ⲧⲉⲧ̣ⲛ̄",
+                       "спор об одной повреждённой букве", "παιδία/παιδεία"):
+            with self.subTest(article_marker=marker):
+                self.assertIn(marker, article)
+        for marker in ("## AT-010-R8", "pageID 1140", "pageID 260", "pageID 270",
+                       "NML_M568.f.054v_lib.jpg",
+                       "CFB_PBodmerXXIII.f.013v_bscan.jpg",
+                       "CFB_PBodmerXXIII.f.014r_bscan.jpg",
+                       "6f551d9971f0840284ade1a0fdf4b9b96f45692859aa1cd5dfb7dd9e3b2afacc",
+                       "88f40df3d06c6bf7ef47a057d7d10e130ec7f776ff1aac08f141dc566feb0207",
+                       "50c7d0437d7902b146fdc1bbbb7f62f3901de893c7f0ce46060fbd485f241537",
+                       "ⲛ︦", "ϣⲏⲣⲉ", "ⲛⲧⲛ︦ⲉⲓⲣⲏⲛⲏ", "ⲛ̄ϣⲏⲣⲉ",
+                       "ⲧⲉⲧⲛ︦ⲯⲩ", "ⲧⲉⲧ̣ⲛ̄", "ⲯⲩⲭⲏ",
+                       "MORGAN_M568_FOLIO_AND_TARGET_GLYPHS_VERIFIED",
+                       "DECOT_BAK_ONE_GLYPH_DISAGREEMENT_LOCATED",
+                       "SA48_53_10_GLYPH_ADJUDICATION_HOLD",
+                       "GREEK_VORLAGE_AMBIGUOUS", "GREEK_BACKTRANSLATION_HOLD",
+                       "GOTTINGEN_APPARATUS_HOLD", "CODEX_WITNESS_HOLD",
+                       "RIGHTS_HOLD", "PUBLICATION_HOLD",
+                       "publicationEligible=false", "STOP_DISCOVERY"):
+            with self.subTest(memo_marker=marker):
+                self.assertIn(marker, memo)
+        self.assertIn("## 16. AT-010-R8", owner)
+        self.assertIn("## 18. AT-010-R8", board)
+        self.assertIn("SUPERSEDED", owner)
+        self.assertIn("NO MERGE / NO PUBLICATION", board)
+
     def test_article11_named_judas_primary_witnesses_and_hebrews_hold(self):
         text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article11_bought_apostates_covenant_blood_and_weak_brother.md").read_text(encoding="utf-8")
         cards = (ROOT / "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md").read_text(encoding="utf-8")
