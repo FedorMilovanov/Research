@@ -76,7 +76,7 @@ class ReformationAdversarialFourSixTests(unittest.TestCase):
                             and "PUBLICATION_HOLD" in row["holds"]
                             for row in registry["sources"]))
         ledger = (HERE / "03_claim_verification_register.md").read_text(encoding="utf-8")
-        lines = [line for line in ledger.splitlines() if line.startswith("| C")]
+        lines = [line for line in ledger.splitlines() if line.startswith("| C") and len(line) > 3 and line[3].isdigit()]
         ids = [int(line.split(" |", 1)[0][3:]) for line in lines]
         self.assertEqual(ids, list(range(1, 320)))
         plan = (HERE / "SELF_PLAN.md").read_text(encoding="utf-8")
