@@ -1449,3 +1449,9 @@ if __name__ == "__main__":
         row["excavationPhotoChain1967"]["status"] = "IAA_ARCHIVE_ORIGINAL_1967_NEGATIVES_LOCATED"
         self.assertTrue(any("1967 museum appointment cannot prove archived infrared negatives" in e
                             for e in validate_source_access(d)))
+    def test_1967_jstor_p480_preview_cannot_be_extrapolated_to_p481(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-FRANKEN-1967-VT-FIRST-INSCRIPTION-PHOTO-480481")
+        row["page481VisualEvidence"] = "FULL_PHOTO_AND_SHDYN_GLYPHS_VERIFIED"
+        self.assertTrue(any("Franken 1967 p480 preview must not be extrapolated to p481" in e
+                            for e in validate_source_access(d)))
