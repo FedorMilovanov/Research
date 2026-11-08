@@ -388,6 +388,44 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-VT-LIEBERMANN-JEREMIAH-2023": "ATTRIBUTED_JEREMIAH_DAVIDIC_NAME_TEXTUAL_VARIANTS_2023",
     "SRC-NET-REV1-8": "ATTRIBUTED_TRANSLATION_CRITICAL_NOTES",
     "SRC-TABB-REVELATION22": "ATTRIBUTED_COMMENTARY_REVELATION_SPEAKER_INFERENCE",
+    "SRC-DEIRALLA-SYMPOSIUM-1991-NYU": "DEIR_ALLA_CONTESTED_EARLY_INSCRIPTION_READING_AND_BIBLICAL_SHADDAY_RELATION",
+    "SRC-DEIRALLA-STEINER-WAGEMAKERS-2019": "DEIR_ALLA_FIND_CONTEXT_FRAGMENTS_AND_PHOTO_LOCATORS",
+    "SRC-DEIRALLA-BLUM-EBR-2013": "DEIR_ALLA_CONTROVERSIAL_RELIGIOUS_AND_ARCHAEOLOGICAL_INTERPRETATION",
+    "SRC-DEIRALLA-HOFTIJZER-VANDERKOOIJ-1976-CONTENTS": "DEIR_ALLA_ORIGINAL_EDITION_ACQUISITION_QUEUE",
+    "SRC-IMG-DEIRALLA-DISDERO-2020": "ILLUSTRATION_OF_RECONSTRUCTED_TEXT_CC_BY_SA_4",
+    "SRC-IMG-DEIRALLA-LEIDEN-POSTER-1989": "HISTORICAL_EXHIBITION_POSTER_CC0",
+    "SRC-IMG-DEIRALLA-AMIN-WHE-2019": "ORIGINAL_MUSEUM_OBJECT_PHOTO_LINK_ONLY",
+    "SRC-IMG-DEIRALLA-ACOR-LAPP-1987-NOT-BALAAM": "IMAGE_MISIDENTIFICATION_GUARD_ACOR_ARCHIVE",
+    "SRC-SCHOLAR-SAUNDERS-DEIRALLA-2024": "SCHOLARLY_SURVEY_DEIRALLA_REFERENTS_AND_DIALECT_CONTROVERSY",
+    "SRC-TSOLIN-ORIEKHOVA-DEIRALLA-2025": "DEIR_ALLA_COMPOSITION_AND_ARCHEOLOGICAL_WALL_VS_CEILING_HYPOTHESES",
+}
+
+
+# These are source-specific, closed-review provenance locks. They do NOT authorize
+# Product publication: the per-record publicationState remains BLOCKED.
+DEIR_ALLA_SOURCE_GUARDS = {
+    "SRC-DEIRALLA-SYMPOSIUM-1991-NYU": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED", "COARSE_LOCATOR_ONLY"),
+    "SRC-DEIRALLA-STEINER-WAGEMAKERS-2019": ("PARTIAL_OBJECT", "RIGHTS_UNKNOWN", "COARSE_LOCATOR_ONLY"),
+    "SRC-DEIRALLA-BLUM-EBR-2013": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED", "EXACT_LOCATOR_VERIFIED"),
+    "SRC-DEIRALLA-HOFTIJZER-VANDERKOOIJ-1976-CONTENTS": ("CATALOG_ONLY", "PERMISSION_REQUIRED", "COARSE_LOCATOR_ONLY"),
+    "SRC-IMG-DEIRALLA-DISDERO-2020": ("FULL_OBJECT_VERIFIED", "PUBLICATION_ELIGIBLE", "EXACT_LOCATOR_VERIFIED"),
+    "SRC-IMG-DEIRALLA-LEIDEN-POSTER-1989": ("FULL_OBJECT_VERIFIED", "PUBLICATION_ELIGIBLE", "EXACT_LOCATOR_VERIFIED"),
+    "SRC-IMG-DEIRALLA-AMIN-WHE-2019": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED", "EXACT_LOCATOR_VERIFIED"),
+    "SRC-IMG-DEIRALLA-ACOR-LAPP-1987-NOT-BALAAM": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED", "EXACT_LOCATOR_VERIFIED"),
+    "SRC-SCHOLAR-SAUNDERS-DEIRALLA-2024": ("PARTIAL_OBJECT", "RIGHTS_UNKNOWN", "EXACT_LOCATOR_VERIFIED"),
+    "SRC-TSOLIN-ORIEKHOVA-DEIRALLA-2025": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED", "EXACT_LOCATOR_VERIFIED"),
+}
+DEIR_ALLA_VISUAL_LICENSE_GUARDS = {
+    "SRC-IMG-DEIRALLA-DISDERO-2020": (
+        "CC BY-SA 4.0",
+        "https://creativecommons.org/licenses/by-sa/4.0/",
+        "https://commons.wikimedia.org/wiki/File:Deir_%27Alla_Inscription.png",
+    ),
+    "SRC-IMG-DEIRALLA-LEIDEN-POSTER-1989": (
+        "CC0 1.0",
+        "https://creativecommons.org/publicdomain/zero/1.0/",
+        "https://commons.wikimedia.org/wiki/File:Een_verhaal_voor_het_oprapen._Opgravingen_te_Deir_Alla_in_de_Jordaanvallei,_Objectnr_AF_B429.jpg",
+    ),
 }
 
 
@@ -439,8 +477,29 @@ def validate_source_access(sources: dict) -> list[str]:
             errors.append(f"{prefix}: unknown HOLD token")
         if source.get("criticalEditionCollated") is not False:
             errors.append(f"{prefix}: falsely claims edition collation")
-        if source.get("rightsState") == "PUBLICATION_ELIGIBLE" and rid not in {"SRC-VANWOLDE-2021", "SRC-TR1550-REV18", "SRC-SBLGNT-CCBY-LICENSE", "SRC-CAMBRIDGE-GOD-PRONOUNS", "SRC-SUCHARD-ELOHIM-2025"}:
+        if source.get("rightsState") == "PUBLICATION_ELIGIBLE" and rid not in {"SRC-VANWOLDE-2021", "SRC-TR1550-REV18", "SRC-SBLGNT-CCBY-LICENSE", "SRC-CAMBRIDGE-GOD-PRONOUNS", "SRC-SUCHARD-ELOHIM-2025", *DEIR_ALLA_VISUAL_LICENSE_GUARDS}:
             errors.append(f"{prefix}: evidence of a source-level license missing")
+        if rid in DEIR_ALLA_SOURCE_GUARDS:
+            required_state = DEIR_ALLA_SOURCE_GUARDS[rid]
+            actual_state = (source.get("accessState"), source.get("rightsState"), source.get("locatorState"))
+            if actual_state != required_state:
+                errors.append(f"{prefix}: Deir Alla access/rights/locator status changed without review")
+            if source.get("publicationState") != "BLOCKED" or source.get("criticalEditionCollated") is not False:
+                errors.append(f"{prefix}: Deir Alla publication or original collation falsely approved")
+        if rid in DEIR_ALLA_VISUAL_LICENSE_GUARDS:
+            license_name, license_url, source_url = DEIR_ALLA_VISUAL_LICENSE_GUARDS[rid]
+            if (source.get("license") != license_name
+                or source.get("licenseUrl") != license_url
+                or source.get("url") != source_url
+                or source.get("rightsState") != "PUBLICATION_ELIGIBLE"):
+                errors.append(f"{prefix}: Deir Alla image license or attribution evidence missing")
+            if source.get("publicationState") != "BLOCKED":
+                errors.append(f"{prefix}: permitted image license does not approve Product publication")
+        if rid == "SRC-IMG-DEIRALLA-ACOR-LAPP-1987-NOT-BALAAM":
+            if "NOT" not in str(source.get("title", "")).upper() and "likely not" not in str(source.get("sourceObjectState", "")).lower():
+                errors.append(f"{prefix}: ACOR photo misidentified as Balaam inscription")
+        if rid == "SRC-TSOLIN-ORIEKHOVA-DEIRALLA-2025" and "CC BY-NC 4.0" not in str(source.get("licenseScope", "")):
+            errors.append(f"{prefix}: noncommercial source license omitted")
         if rid in {"SRC-NET-REV1-8","SRC-TABB-REVELATION22"}:
             if (source.get("rightsState") != "PERMISSION_REQUIRED"
                 or source.get("accessState") != "PARTIAL_OBJECT"

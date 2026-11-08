@@ -1058,6 +1058,50 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         row["sourceRole"]="GREEK_TEXT_SURFACE_ONLY"
         self.assertTrue(any("source relevance/role changed" in e for e in validate_source_access(d)))
 
+    def test_deir_alla_source_roles_are_closed_and_counted(self) -> None:
+        self.assertEqual([], validate_source_access(self.sources))
+        d = copy.deepcopy(self.sources)
+        d["records"].append(copy.deepcopy(d["records"][-1]))
+        self.assertTrue(any("duplicate id" in e for e in validate_source_access(d)))
+
+    def test_deir_alla_cc_by_sa_visual_license_is_immutable(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-IMG-DEIRALLA-DISDERO-2020")
+        row["licenseUrl"] = "https://creativecommons.org/licenses/by/4.0/"
+        self.assertTrue(any("image license or attribution evidence" in e for e in validate_source_access(d)))
+
+    def test_deir_alla_cc0_visual_cannot_inherit_rights_of_other_photo(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-IMG-DEIRALLA-LEIDEN-POSTER-1989")
+        row["url"] = "https://www.worldhistory.org/image/10089/the-balam-text-from-deir-alla/"
+        self.assertTrue(any("image license or attribution evidence" in e for e in validate_source_access(d)))
+
+    def test_deir_alla_museum_photo_cannot_become_publication_eligible(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-IMG-DEIRALLA-AMIN-WHE-2019")
+        row["rightsState"] = "PUBLICATION_ELIGIBLE"
+        self.assertTrue(any("Deir Alla access/rights/locator" in e for e in validate_source_access(d)))
+
+    def test_deir_alla_1976_editio_princeps_not_claimed_read(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-DEIRALLA-HOFTIJZER-VANDERKOOIJ-1976-CONTENTS")
+        row["accessState"] = "FULL_OBJECT_VERIFIED"
+        self.assertTrue(any("Deir Alla access/rights/locator" in e for e in validate_source_access(d)))
+
+    def test_deir_alla_2025_noncommercial_license_guard(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-TSOLIN-ORIEKHOVA-DEIRALLA-2025")
+        row["licenseScope"] = "unrestricted"
+        self.assertTrue(any("noncommercial source license omitted" in e for e in validate_source_access(d)))
+
+    def test_deir_alla_acor_non_balaam_identity_preserved(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-IMG-DEIRALLA-ACOR-LAPP-1987-NOT-BALAAM")
+        row["title"] = "ACOR ancient Balaam inscription"
+        row["sourceObjectState"] = "A photograph of Balaam inscription"
+        self.assertTrue(any("misidentified as Balaam" in e for e in validate_source_access(d)))
+
+
 
 if __name__ == "__main__":
     unittest.main()
