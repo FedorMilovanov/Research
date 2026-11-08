@@ -47,6 +47,24 @@ class NantesDigitalProvenanceTests(unittest.TestCase):
         for hold in ("ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"):
             self.assertIn(hold, bge["holds"])
 
+    def test_conflicting_certification_date_never_collapses_to_one(self):
+        marker = "COPY_DATE_CONFLICT_22_29_MAY_1599"
+        for name, doc in (("chapter", self.chapter), ("dossier", self.dossier), ("plan", self.plan)):
+            with self.subTest(name=name):
+                self.assertIn(marker, doc)
+                self.assertIn("22", doc)
+                self.assertIn("29", doc)
+        claim = next(x for x in self.claims.splitlines() if x.startswith("| C301 |"))
+        self.assertIn(marker, claim)
+        bge = self.sources["REF-P86"]
+        self.assertIn(marker, bge["verificationNote"])
+        self.assertIn("22 May 1599", bge["verificationNote"])
+        self.assertIn("29 May 1599", bge["verificationNote"])
+        self.assertEqual(bge["accessState"], "CATALOG_ONLY")
+        self.assertIn("ARCHIVE_HOLD", bge["holds"])
+        self.assertIn("RIGHTS_HOLD", bge["holds"])
+        self.assertIn("PUBLICATION_HOLD", bge["holds"])
+
     def test_xi_remains_secondary_variant_and_not_publication_approved(self):
         for doc in (self.chapter, self.dossier, self.plan):
             for token in ("EARLY_XI_COLLATION_HOLD", "ORIGINAL_GENEVAN_COLLATION_HOLD"):
