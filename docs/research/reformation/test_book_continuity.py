@@ -130,10 +130,36 @@ class BookContinuityTests(unittest.TestCase):
             self.assertNotIn(f"{prefix}-{total + 1:02}", packet)
 
         plan = (HERE / "SELF_PLAN.md").read_text(encoding="utf-8")
-        self.assertIn("ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 402", plan)
+        # Wave 402's evidence contract persists after its passport becomes history.
+        self.assertRegex(
+            plan,
+            r"(?m)^## (?:ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 402\\b|ИСТОРИЧЕСКИЙ СРЕЗ ВОЛНЫ 402\\b)".replace("\\\\", "\\"),
+        )
+        active = re.findall(r"(?m)^## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна \d+\b", plan)
+        self.assertEqual(len(active), 1, "the self-plan must have exactly one active wave")
         self.assertIn("ИСТОРИЧЕСКИЙ СРЕЗ ВОЛНЫ 401", plan)
         self.assertIn("](independent_review_packets.md)", plan)
         self.assertIn("NOT_SENT", plan)
+
+        # Editorial handoff must cover omitted physical witnesses and chronology.
+        rows = {label: next(
+            (line for line in packet.splitlines() if line.startswith("| " + label + " /")),
+            None,
+        ) for label in ("H-03", "H-04", "H-08", "T-02")}
+        for label, row in rows.items():
+            with self.subTest(review=label):
+                self.assertIsNotNone(row)
+        for marker in ("C257–C261", "C181, C207", "REF-P24-BSB1/BSB2",
+                       "REF-P11/P12"):
+            self.assertIn(marker, rows["H-03"])
+        for marker in ("C248–C256", "Z/K", "7, 13, 15"):
+            self.assertIn(marker, rows["H-04"])
+        for marker in ("C292–C303", "35-статейный", "02.04", "12.04.1571"):
+            self.assertIn(marker, rows["H-08"])
+        self.assertIn("статьи 38, 42 Цвингли", rows["T-02"])
+        self.assertNotIn("``38,42", packet)
+        self.assertIn("вне совершенства Христова", packet)
+        self.assertIn("не** выполнена", packet)
 
     def test_nantes_two_editions_and_non_evidence_of_third(self):
         text = self.texts["episode11_france_catholic_reform_nantes_1545_1599_manuscript.md"]
