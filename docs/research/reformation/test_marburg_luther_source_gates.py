@@ -59,7 +59,7 @@ class MarburgLutherSourceGates(unittest.TestCase):
                        "VD16 L4693", "CATALOG_ONLY", "RIGHTS_HOLD"):
             with self.subTest(marker=marker):
                 self.assertIn(marker.lower(), self.luther.lower())
-        self.assertIn("гипотезу", self.luther.lower())
+        self.assertIn("исследовательской датировке", self.luther.lower())
         self.assertIn("Два авторских текста", self.luther)
 
     def test_existing_claims_and_plan_unapproved(self):
