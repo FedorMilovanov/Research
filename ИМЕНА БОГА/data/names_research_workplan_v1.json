@@ -16,7 +16,7 @@
     "regressionTests": 165,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "SUCCESS_ON_PREVIOUS_NG12_SHADDAY_RECONCILIATION_COMMIT_1950BE9_NEW_NG12_SABAOTH_SHA_REQUIRES_CI",
+    "allSixCiChecks": "SUCCESS_ON_PREVIOUS_NG12_SABAOTH_COMMIT_C8476FD_NEW_EL_LEXICOGRAPHY_SHA_PENDING_EXACT_CI",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 16,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "1950be9533c1dce299af240ea841595e86480ffe"
+    "lastConfirmedAllSixChecksSha": "c8476fdf4a720c2e41bbb00936c2b61da3b6c2f9"
   },
   "allowedStatuses": [
     "DONE",
@@ -505,7 +505,13 @@
         "Șopterean 2024 ROOTS 12/2 56-68 accessible full journal PDF selected sections read printed pp56/59/63 images https://napocaroots.reviste.ubbcluj.ro/index.php/roots/article/download/103/129/462",
         "Máire Byrne 2006 Maynooth PhD selected thesis sections ch2 pp48-55 and visually printed p51 https://mural.maynoothuniversity.ie/id/eprint/5139/1/Marie_Byrne_20140624150650.pdf",
         "Deutsche Bibelgesellschaft LXX Rahlfs Hanhart 2006 Isaiah6:3 kyrios sabaoth official HTML https://www.die-bibel.de/bibel/LXX/ISA.6",
-        "SBLGNT 2010 Romans9:29 and James5:4 transliteration Sabaoth context; Isaiah1:9 MT cited by Paul"
+        "SBLGNT 2010 Romans9:29 and James5:4 transliteration Sabaoth context; Isaiah1:9 MT cited by Paul",
+        "09_EXTENSION_FORMS_LANGUAGE_AND_REFERENTS.md §3 NG-12 2026-11-08 El/Eloah/Elohim comparative lexicography and contexts",
+        "Brown Driver Briggs 1906 full digital H410 https://biblehub.com/bdb/410.htm H430 https://biblehub.com/bdb/430.htm H433 https://biblehub.com/bdb/433.htm",
+        "Benjamin D Suchard 2025 Journal for the Study of the Old Testament 49/4 pp460-474 DOI 10.1177/03090892251332286 full publisher HTML read",
+        "Encyclopaedia Judaica God Names of sections El/Eloah/Elohim source reproduction https://jewishvirtuallibrary.org/jsource/judaica/ejud_0002_0007_0_07449.html",
+        "Bernard Gosse Old Testament Essays 36/3 2023 pp635-648 online Jan2024 DOI 10.17159/2312-3621/2023/v36n3a6 PUBLISHER_ABSTRACT_ONLY",
+        "MT Deut32:15-18 Gen1:1 Job3:4 Dan11:37-39 Hebrew and Dan2:18-19 Aramaic Mechon-Mamre"
       ],
       "verification": "NOT_APPLICABLE_UNTIL_DONE",
       "closureAt": null,
@@ -699,7 +705,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NG12 Shadday and Sabaoth subtopics now have bounded opposing scholarly sources with explicit access tiers; still BLOCKED_SOURCE including unfinished El/Elohim/Eloah historical lexicography, HALOT, original witness critical editions and independent peer review. Three reader manuscripts remain drafts, 0 scholarly approvals, 0 product rights, and no expansion of manuscript count. Next targeted El/Eloah lexeme differentiation or full unavailable sources only on evidence availability; do not turn semantic alternatives into proven original etymologies.",
+  "nextAction": "All three NG12 lexical subtopics now investigated with context-sensitive original language citations and bounded scholarly alternatives: Shaddai, Sabaoth, El/Eloah/Elohim. NG12 BLOCKED_SOURCE remains: need HALOT, full specific academic articles/chapters, original Semitic comparative corpora and critical witnesses, independent external scholarly reviewers; 0 accepted etymology, rights/Product/HALOT blocked. CH01/02/03 drafts preserved, do not create new chapters or source IDs. Subsequent work should address concrete source gaps or evidence-based acceptance, not reopen general discovery.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -781,7 +787,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-08",
-    "planStatus": "NG02 graph and NG03 10/10 supersession DONE, NG12 Shadday and Sabaoth etymological alternatives bounded with original Hebrew/Greek and scholarly sources, FULL NG12 BLOCKED_SOURCE; 3 reader manuscripts drafted, 0 externally accepted or scientific claims approved, critical/rights/Product HOLD.",
+    "planStatus": "NG02 structural graph DONE; NG03 editorial supersession DONE; NG12 named morphological/etymological alternatives source-scoped for Shaddai, Sabaoth, El/Eloah/Elohim, BUT NG12 BLOCKED_SOURCE full completion pending HALOT/original critical sources/peer review; 3 reader drafts, zero external approvals.",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -867,7 +873,8 @@
       "2026-11-08: CH-PILOT-03 third connected reader manuscript on El, Elohim and Shaddai written (~2800 words with separate scholarly appendix). Original MT Gen1/14/17/28/35, Ex6/20, Ps91, Deut32, Isa43, Aramaic Dan2 and scholarly Suchard 2025 compared. First internal adversarial pass named Cargill 2019 abstract-only explicitly, fixed Ps91/90 numbering; all manuscripts still external-scholarly HOLD, no content registry or Product writes.",
       "2026-11-08: second internal source/text review CH-PILOT-03: added Ruth1:20-21 Naomi's Shaddai without El + Job5:17 Eliphaz's Shaddai bounded by Job42:7; editorial source bullets for exact MT, verified Exodus20:2 MT vs Synodal20:2–3 numbering with independently opened text. Scientific/rights/peer gates stay HOLD.",
       "2026-11-08: NG12 source-limited substantive etymology advance in ORIGINAL dossier 03 and reader CH03: checked BDB H7706 actual digital entry; Wilson-Wright 2019 UT Austin published PDF pp149-155,160; Krogevoll 2025 publisher 26-page PDF sample and printed pp19-25 with main chapter3/4 inaccessible; Dewrell 2024 and Angelini 2022 publisher abstracts; Kruger 2023 full HTML selected paragraphs. Conflicting Helper vs Destroyer vs Mountain explicitly attributed; source rights and original critical HOLD kept, 0 claims promoted; no new source registry IDs.",
-      "2026-11-08: NG12 Sabaoth provenance audit expanded existing dossier06: full digital BDB H6635, 2024 Șopterean selected full-journal PDF sections and printed page images 56/59/63, Byrne 2006 Maynooth thesis selected Isaiah chapter2 sections and printed p51 image; MT 1Sam4:4,17:45 Isa6:3 Genesis2:1; publisher Rahlfs-Hanhart LXX Isa6:3 and SBLGNT Romans9:29, James5:4. Explicit conflicting origin models and no false single angel/Israel/creation interpretation; no new claim/source IDs."
+      "2026-11-08: NG12 Sabaoth provenance audit expanded existing dossier06: full digital BDB H6635, 2024 Șopterean selected full-journal PDF sections and printed page images 56/59/63, Byrne 2006 Maynooth thesis selected Isaiah chapter2 sections and printed p51 image; MT 1Sam4:4,17:45 Isa6:3 Genesis2:1; publisher Rahlfs-Hanhart LXX Isa6:3 and SBLGNT Romans9:29, James5:4. Explicit conflicting origin models and no false single angel/Israel/creation interpretation; no new claim/source IDs.",
+      "2026-11-08: NG12 comparative El/Eloah/Elohim source-bounded review using BDB 1906 full digital entries H410 H430 H433; Benjamin Suchard 2025 full original publisher open HTML, Encyclopaedia Judaica selected secondary sections; Bernard Gosse 2024 online abstract only. MT Gen1:1 Deut32:15/17/18 Job3:4 Dan11:37-39 Hebrew contrasted with Dan2:18-19 Aramaic. Revised existing dossier09 and CH03, no new claim/source IDs, no full HALOT, no external scientific acceptance."
     ],
     "stillOpen": [
       "External Product/Arena consumers and zip prototypes still NOT independently authenticated by exact deployment/build; no dual-read v2 test witness",
@@ -940,7 +947,7 @@
   "editorialExecution": {
     "asOf": "2026-11-08",
     "owner": "ИМЕНА БОГА/11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md §0a/§3b",
-    "state": "NG12_SHADDAY_AND_SABAOTH_SUBTOPICS_SOURCE_BOUNDED_3_READER_DRAFTS_0_EXTERNAL_APPROVALS",
+    "state": "NG12_SHADDAY_SABAOTH_EL_ELOAH_ELOHIM_SOURCE_BOUNDED_DIVERGENT_ETYMOLOGIES_ALL_MAJOR_LEXEMES_STILL_HOLD",
     "readerChapterCountApproved": null,
     "subjectDirectionsProvisional": 14,
     "readerManuscriptsAccepted": 0,
@@ -1126,6 +1133,80 @@
       ],
       "scientificApproval": false,
       "verdict": "MORPHOLOGICAL_PLURAL_ESTABLISHED_SEMANTIC_REFERENTS_VARY_ORIGINAL_TITLE_DERIVATION_NOT_PROVEN_RUSSIAN_TRANSLATION_SABAOTH_RETAINED"
+    },
+    "ng12ElEloahElohimSubtopic": {
+      "state": "CONTEXTUAL_REFERENTS_AND_COMPETING_HISTORICAL_MORPHOLOGY_SOURCE_BOUNDED_DIACHRONIC_HOLD",
+      "asOf": "2026-11-08",
+      "dossier": "ИМЕНА БОГА/09_EXTENSION_FORMS_LANGUAGE_AND_REFERENTS.md §3 NG-12",
+      "reader": "ИМЕНА БОГА/reader/CH-PILOT-03_EL_ELOHIM_SHADDAI.md",
+      "forms": [
+        "אֵל",
+        "אֱלוֹהַּ",
+        "אֱלֹהִים",
+        "אֱלָהּ"
+      ],
+      "negativeLoci": [
+        {
+          "verse": "Deut32:17",
+          "control": "ELOAH_NEGATED_AND_ELOHIM_FOREIGN_GODS_NOT_YHWH_PROPER_NAMES"
+        },
+        {
+          "verse": "Dan11:39",
+          "control": "ELOAH_NEKHAR_FOREIGN_DEITY_IN_HEBREW_SECTION_NOT_ISRAEL_GOD"
+        },
+        {
+          "verse": "Gen1:1",
+          "control": "ELOHIM_MORPHOLOGICALLY_PLURAL_BARA_SINGULAR_VERB_NOT_TRINITY_PROOF"
+        },
+        {
+          "verse": "Dan2:18-19",
+          "control": "ARAMAIC_ELAH_DISTINCT_LANGUAGE_FROM_HEBREW_ELOAH"
+        }
+      ],
+      "sources": [
+        {
+          "author": "Brown Driver Briggs",
+          "year": 1906,
+          "locators": [
+            "H410",
+            "H430",
+            "H433"
+          ],
+          "access": "THREE_FULL_DIGITAL_LEXICON_ENTRIES_READ_NOT_PRINTED_OR_HALOT",
+          "position": "BDB_ELOAH_PROBABLY_INFERRED_AS_SINGULAR_FROM_ELOHIM"
+        },
+        {
+          "author": "Benjamin D Suchard",
+          "year": 2025,
+          "locator": "JSOT 49/4 460-474 DOI 10.1177/03090892251332286",
+          "access": "FULL_PUBLISHER_HTML_READ_CC_BY_4",
+          "position": "INHERITED_PROTO_SEMITIC_ILA_H_STEM_BROKEN_PLURAL_HISTORICAL_RECONSTRUCTION_AUTHOR_ARGUMENT"
+        },
+        {
+          "author": "Encyclopaedia Judaica",
+          "year": null,
+          "locator": "God Names of sections El and Eloah Elohim",
+          "access": "SECONDARY_ENCYCLOPAEDIA_SELECTED_SECTIONS_READ_REPRODUCTION",
+          "position": "EL_ETYM_UNCERTAIN_MIGHT_MAY_BE_DERIVED_FROM_DEITY_NAME_ELOAH_LENGTHENED_EL"
+        },
+        {
+          "author": "Bernard Gosse",
+          "year": 2024,
+          "locator": "Old Testament Essays 36/3 635-648 DOI 10.17159/2312-3621/2023/v36n3a6",
+          "access": "JOURNAL_ABSTRACT_ONLY",
+          "position": "LITERARY_DEPENDENCY_DEUT32_PS18_PROVERBS30_NOT_WORD_ETYM"
+        }
+      ],
+      "unresolved": [
+        "HALOT_LEXICON_FULL_ORIGINAL_EDITION",
+        "ORIGINAL_UGARITIC_AKKADIAN_ARABIC_SOUTH_ARABIAN_EPIGRAPHIC_WITNESSES",
+        "CRITICAL_BHS_BHQ_MANUSCRIPT_APPARATUS_AND_LXX_WHEN_NEEDED",
+        "TWO_FULL_INDEPENDENT_PRIMARY_COMPARATIVE_ARGUMENTS_FOR_EACH_SPECIFIC_ETYMOLOGY",
+        "INDEPENDENT_PHILOLOGICAL_PEER_REVIEW",
+        "SOURCE_AND_REUSE_RIGHTS"
+      ],
+      "verdict": "EL_ELOAH_ELOHIM_DISTINCT_SYNTACTIC_REFERENCE_AND_LANGUAGE_WHILE_HISTORICAL_ROOT_PROPOSALS_CONFLICT_NOT_DEMONSTRATED_AS_CERTAIN; DENY_PROPER_NAME_EXPORT_WITHOUT_CONTEXT",
+      "scientificApproval": false
     }
   },
   "systematicTheologyTriage": {
