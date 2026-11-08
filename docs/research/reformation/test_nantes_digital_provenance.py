@@ -39,8 +39,8 @@ class NantesDigitalProvenanceTests(unittest.TestCase):
         self.assertIn("29.05.1599", self.dossier)
         self.assertIn("29 мая 1599 года", self.chapter)
         self.assertIn("2010–2011", self.plan)
-        self.assertEqual(self.source_count, 202)
-        self.assertEqual(len(self.sources), 202)
+        self.assertEqual(self.source_count, 204)
+        self.assertEqual(len(self.sources), 204)
         bge = self.sources["REF-P86"]
         self.assertEqual(bge["accessState"], "CATALOG_ONLY")
         self.assertIn("29 May 1599", bge["verificationNote"])
