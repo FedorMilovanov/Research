@@ -97,6 +97,14 @@ class BookContinuityTests(unittest.TestCase):
         numbered = [int(x) for x in CLAIM_RE.findall(claims)]
         self.assertEqual(numbered, list(range(1, 320)))
         self.assertIn("| C302 |", claims)
+        # C315 must follow the actual 14-part book without promoting publication.
+        c315 = next((line for line in claims.splitlines() if line.startswith("| C315 |")), None)
+        self.assertIsNotNone(c315)
+        self.assertIn("уже написанный богословский эпилог", c315)
+        self.assertIn("14 частей", c315)
+        self.assertIn("REJECTED_FORMULATION", c315)
+        self.assertIn("PUBLICATION_HOLD", c315)
+        self.assertNotIn("ещё не написанный богословский эпилог", c315)
         self.assertIn("95 общих статей", claims)
         self.assertIn("92", claims)
 
