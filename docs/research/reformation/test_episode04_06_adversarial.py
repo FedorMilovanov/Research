@@ -68,6 +68,40 @@ class ReformationAdversarialFourSixTests(unittest.TestCase):
         self.assertIn("DATE_AND_IMPRINT_ATTRIBUTION_CONFLICT", text)
         self.assertIn("LOCAL_ARCHIVE_HOLD", text)
 
+    def test_wave400_witness_provenance_kept_outside_reader(self):
+        """Full original excerpts survive in the apparatus, not editorial memory."""
+        for chapter, expected in (("zurich", 2), ("marburg", 1), ("schleitheim", 2)):
+            reader, notes = self.texts[chapter].split("## Источниковедческий аппарат", 1)
+            with self.subTest(chapter=chapter):
+                self.assertGreater(len(reader.split()), 1700)
+                self.assertEqual(notes.count("**Перенесённое пояснение "), expected)
+                self.assertIn("Сохранённые исходные источниковедческие разборы", notes)
+                for forbidden in ("VD16", "CATALOG_ONLY", "REF-P", "REF-S"):
+                    self.assertNotIn(forbidden, reader)
+                for hold in ("ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"):
+                    self.assertIn(hold, notes)
+                self.assertIn("RESEARCH_MANUSCRIPT_DRAFT", reader)
+                self.assertIn("NOT_EDITORIAL_READY", reader)
+
+        zurich_reader, zurich_notes = self.texts["zurich"].split("## Источниковедческий аппарат", 1)
+        for fact in ("29 января 1523", "статью 38", "статьи 42", "Цвингли"):
+            self.assertIn(fact, zurich_reader)
+        for locator in ("VD16 Z821", "XIX", "XXIX"):
+            self.assertIn(locator, zurich_notes)
+
+        marburg_reader, marburg_notes = self.texts["marburg"].split("## Источниковедческий аппарат", 1)
+        for fact in ("десять богословов", "7, 13 и 15", "телесном присутствии"):
+            self.assertIn(fact, marburg_reader)
+        for proof in ("гессенский", "Цюрихский государственный архив", "живым или умершим"):
+            self.assertIn(proof.lower(), marburg_notes.lower())
+
+        sch_reader, sch_notes = self.texts["schleitheim"].split("## Источниковедческий аппарат", 1)
+        for fact in ("Матфея 28", "Матфея 27", "около 1550 года", "около 1570 года"):
+            self.assertIn(fact, sch_reader)
+        for witness in ("VD16 ZV30530", "e-rara", "музейная транскрипция"):
+            self.assertIn(witness.lower(), sch_notes.lower())
+        self.assertIn("DATE_AND_IMPRINT_ATTRIBUTION_CONFLICT", sch_notes)
+
     def test_source_and_claim_registry_still_fail_closed(self):
         registry = json.loads((HERE / "source-registry-v1.json").read_text(encoding="utf-8"))
         self.assertEqual(registry["sourceCount"], len(registry["sources"]))
