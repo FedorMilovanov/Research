@@ -58,9 +58,9 @@ class ReformationEpilogueAdversarialTests(unittest.TestCase):
     def test_existing_claim_ids_and_single_plan_preserved(self):
         ledger = LEDGER.read_text(encoding="utf-8")
         claim_lines = [line for line in ledger.splitlines()
-                       if re.match(r"^\\| C\\d+ \\|", line)]
-        ids = [int(re.match(r"^\\| C(\\d+) \\|", line).group(1))
-               for line in claim_lines]
+                       if line.startswith("| C")
+                       and line.split(" |", 1)[0][3:].isdigit()]
+        ids = [int(line.split(" |", 1)[0][3:]) for line in claim_lines]
         self.assertEqual(ids, list(range(1, 320)))
         c316 = next(s for s in claim_lines if s.startswith("| C316 |"))
         for mark in ("REF-P82", "REF-S94", "REF-S95",
