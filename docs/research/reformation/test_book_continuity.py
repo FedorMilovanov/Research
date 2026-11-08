@@ -85,7 +85,7 @@ class BookContinuityTests(unittest.TestCase):
         )
         sources = registry["sources"]
         ids = [entry["id"] for entry in sources]
-        self.assertEqual(registry["sourceCount"], 197)
+        self.assertEqual(registry["sourceCount"], 200)
         self.assertEqual(len(ids), len(set(ids)))
         self.assertEqual(len(ids), registry["sourceCount"])
         known = set(ids)

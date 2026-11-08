@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 197,
+  "sourceCount": 200,
   "sources": [
     {
       "id": "REF-P01",
@@ -3814,6 +3814,62 @@
       ],
       "url": "https://www.schulthess.com/annot/564C427C7C32343537323833333161363634396564393832346139623136396135316466387C7C504446.pdf?sq=5",
       "verificationNote": "2026-11-08 directly read publisher's copyrighted excerpt PDF: printed p24 (PDF 0-based p21), chapter 1. Kaufmann argues, contra a frequent older chronology connecting composition with Luther's 16 Apr–6 May 1525 trip to Thuringia/Mansfeld, that the Ermahnung manuscript was likely finished before departure, the first Klug issue in final week of April, and a corrected re-typeset subsequent issue followed. This is a RESEARCH HYPOTHESIS / scholarly reconstruction about timing, NOT an original dated manuscript or verified press ledgers. The full 2024 monograph (beyond publisher excerpt), notes 1-8 and original 1525 Klug witnesses were NOT exhaustively read; no reproduction rights established.",
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "REF-P86",
+      "documentYear": 1599,
+      "title": "Bibliothèque de Genève / Mirabilia, certified historical copy of initial Edict of Nantes version, Ms. fr. 413 (institutional object catalogue)",
+      "evidenceClass": "A2",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://mirabilia.ch/fr/oeuvre/copie-de-ledit-de-nantes",
+      "verificationNote": "2026-11-08 DIRECT READ institutional object record, NOT 1598 signed original or page-image collation. BGE Ms. fr. 413, paper copy associated with La Rochelle, catalogue object date 1599, entered Geneva library in 1709. Institution says both historical signed-original exemplars lost; Geneva retains contemporary certified copy of early text 95 general articles. Paris Parliament registration 25 Feb 1599 yields 92; catalogue names original article 37 concerning an additional Protestant substitute procureur-general role at Chambre de l'Edit as removed. Note catalogue's uncertain folio 'f. 10 ?' is not a verified full textual foliation. No digital manuscript leaves physically viewed and no image/reuse rights cleared.",
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "REF-S97",
+      "documentYear": 1998,
+      "title": "Philippe-Jean Catinchi, L'édit de Nantes à la lettre, Le Monde, 13 February 1998, critical comparison of Garrisson and Cottret editions",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.lemonde.fr/archives/article/1998/02/13/l-edit-de-nantes-a-la-lettre_3655050_1819218.html",
+      "verificationNote": "2026-11-08 FULL ONLINE BOOK-REVIEW ARTICLE read: review compares Janine Garrisson scholarly edition of registered 1599 wording and Bernard Cottret appendix preserving initial 1598 text. Specifically identifies 1598 original article 37 proposed an additional office of substitute procureur-general for Reformed litigants; deleted in Paris 1599 registration, and last 1598 articles 93,94,95 combined into final Paris article 92. Thus 95 - 1 removed - 2 net mergers = 92. This is SECONDARY REVIEW OF SCHOLARLY EDITIONS, not direct autopsy of Geneva Ms fr 413 or AN J943/2. Beware registered Paris article XXXVII in DDE still exists and separately concerns Bordeaux substitutes: same numeral is not same historical clause. Article is copyrighted; no republication rights established.",
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "REF-S98",
+      "documentYear": 1998,
+      "title": "Hubert Bost, critical review of Janine Garrisson, L'édit de Nantes, Études théologiques et religieuses 73/3 (1998), p.454, Persée",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.persee.fr/doc/ether_0014-2239_1998_num_73_3_4753_t1_0454_0000_2",
+      "verificationNote": "2026-11-08 DIRECT READ short scholarly review on Persée p454. Bost says Garrisson 1997 publishes Paris-registered 92 general articles (edition source Archives nationales J 943 no.2), 56 particular articles, two dated brevets (3 April for 45,000 écus, 30 April for fortified places) and adds textual variants versus Geneva BPU Ms fr 413 fols1-40. Bernard Cottret 1997 prints original April 1598 version in appendix pp361-384. Critical bibliographic comparison, not direct manuscript leaf reading. This source establishes that there are existing scholarly line-level comparisons to use before attempting independent original collation; it DOES NOT authorize claim all original folios were read or images can be reused.",
       "checkedAt": "2026-11-08"
     }
   ]
