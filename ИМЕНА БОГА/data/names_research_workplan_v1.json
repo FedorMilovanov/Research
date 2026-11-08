@@ -12,8 +12,8 @@
     "arenaRecords": 29,
     "extensionRecords": 13,
     "contextAttestations": 105,
-    "sourceRegisterEntries": 61,
-    "regressionTests": 174,
+    "sourceRegisterEntries": 62,
+    "regressionTests": 176,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
     "allSixCiChecks": "SUCCESS_6_OF_6_AT_PRE_AUDIT_HEAD_5a97a3b40b6564ff32fab4b08edacec39e805f4a_NEW_COMMIT_REQUIRES_OWN_EXACT_SHA_CI",
@@ -719,7 +719,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "Targeted critical access: BHS standard Exodus3:14-15 and 6:3 apparatus (BHQ Exodus in preparation, not published), BHQ Genesis 2016, Deuteronomy 2007, Job 2024, Ruth 2004 exact apparatus; Göttingen Wevers Quast 1991 Exodus and Ziegler 1983 Isaias; HALOT authorized institutional pages; Deir Alla Hoftijzer van der Kooij 1976 plates and Hackett 1984; no invented readings. Then independent external reviews of three draft chapters; NG12 remains BLOCKED_SOURCE, peer, rights and Product hold.",
+  "nextAction": "NG12 Deir Alla critical follow-up: get 1976 Hoftijzer/van der Kooij critical p173 and photographic plates, or Caquot/Lemaire 1977 pp193-195 / Lemaire 1985 original full text legally; compare against Lemaire 2021 copy theory, Heintz 1980 dating and photos, avoid invented readings. Then external reviews of three readers.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -801,7 +801,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-08",
-    "planStatus": "2026-11-08 operational audit at pre-update head 5a97a3b40b6564ff32fab4b08edacec39e805f4a: PR #379 OPEN DRAFT, 6/6 workflow SUCCESS including Names of God integrity; 61 source entries (historic 48 is not current), 42 candidates, 105 attestations, 87 preliminary claims, 75 typed relations, 3 revised reader pilot manuscripts and 3 scoped licensed illustrations in CH-PILOT-03. NG00-03 DONE research/control only; NG04/10/11/12 critical apparatus, independent scholarly review, Arena artifacts and Product remain blocked. A new exact-SHA CI is required after this audit commit.",
+    "planStatus": "NG-12 new source Lemaire 2021 pp185–186 visually read; 62 source entries, 176 baseline tests, Reader03 and Dossier03 updated; no independent critical collation, peer review or Product rights. New SHA CI required.",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -890,14 +890,15 @@
       "2026-11-08: NG12 Sabaoth provenance audit expanded existing dossier06: full digital BDB H6635, 2024 Șopterean selected full-journal PDF sections and printed page images 56/59/63, Byrne 2006 Maynooth thesis selected Isaiah chapter2 sections and printed p51 image; MT 1Sam4:4,17:45 Isa6:3 Genesis2:1; publisher Rahlfs-Hanhart LXX Isa6:3 and SBLGNT Romans9:29, James5:4. Explicit conflicting origin models and no false single angel/Israel/creation interpretation; no new claim/source IDs.",
       "2026-11-08: NG12 comparative El/Eloah/Elohim source-bounded review using BDB 1906 full digital entries H410 H430 H433; Benjamin Suchard 2025 full original publisher open HTML, Encyclopaedia Judaica selected secondary sections; Bernard Gosse 2024 online abstract only. MT Gen1:1 Deut32:15/17/18 Job3:4 Dan11:37-39 Hebrew contrasted with Dan2:18-19 Aramaic. Revised existing dossier09 and CH03, no new claim/source IDs, no full HALOT, no external scientific acceptance.",
       "2026-11-08: critical source discovery: official DBG BHQ published Genesis2016 Deuteronomy2007 Job2024 Ruth2004, Exodus Peter Schwagmeier still in preparation; BHS standard revised1997 with apparatus (Reader edition no apparatus); official Göttingen Wevers/Quast Exodus 1991, Ziegler Isaias1983; UPenn NETS Exodus full PDF introduction p43 screenshot says Wevers basis only; HALOT and DSSEL institutional access endpoints, no full text; Deir Alla Hoftijzer van der Kooij1976 exact editio princeps, Caquot/Lemaire1977 and Lemaire1985 archive first pages, Wilson Wright2019 original p153 screenshot Combo I lines5-6 šdyn plural; Angelini2021 OA Brill selected indexed text but PDF screenshot 403. No sourceId or claimId or ancient collation invented.",
-      "2026-11-08 audit: verified all six workflows completed success at pre-update SHA 5a97a3b, reconciled current 61 source registrations versus historic 48 in navigation and master plan, added fail-closed source-count navigation guard; preserved 3 reader manuscripts, images and scholarly/publication HOLDs without creating new source IDs or branches."
+      "2026-11-08 audit: verified all six workflows completed success at pre-update SHA 5a97a3b, reconciled current 61 source registrations versus historic 48 in navigation and master plan, added fail-closed source-count navigation guard; preserved 3 reader manuscripts, images and scholarly/publication HOLDs without creating new source IDs or branches.",
+      "2026-11-08 targeted original scholarly publication: Peeters 2021 OBO291 Lemaire pp185-186 checked in PDF page images; red-ink reconstructed heading separate from shdyn, wall inscription vs posited older scribal copy, divergent dates all claim-bounded. Registered one source and two negative tests, updated reader03/dossier03."
     ],
     "stillOpen": [
       "External Product/Arena consumers and zip prototypes still NOT independently authenticated by exact deployment/build; no dual-read v2 test witness",
       "55 old missing inline V1 locus fields remain absent by design; 50 old existing fields preserved, additional 33 sidecar-only witnesses not represented in old 22 generic snapshot",
       "Critical biblical textual manuscripts/collation, independent scholarly assessment, source rights and Product signoff remain HOLD",
-      "All 61 registered sources are provenance entries, not 61 completely read primary editions; Deir Alla 1976 original physical plates are NOT collated, Caquot/Lemaire 1977 and Lemaire 1985 accessible first archive pages only.",
-      "Run 6/6 GitHub workflows on this audit update's exact new SHA before calling the updated control plane green; pre-update 5a97a3b succeeded but does not certify later commits."
+      "Run 6/6 GitHub workflows on this audit update's exact new SHA before calling the updated control plane green; pre-update 5a97a3b succeeded but does not certify later commits.",
+      "62 registered sources; 1976 original Deir Alla plates, full Caquot/Lemaire 1977 and Lemaire 1985 remain uncollated; no reading or reuse rights for publisher figures."
     ]
   },
   "originalResearchCheckpoint": {
@@ -1386,6 +1387,19 @@
       "criticalCollationsCompleted": 0,
       "externalReviewsCompleted": 0,
       "productApproval": false
+    },
+    "ng12DeirAllaScribal2021": {
+      "state": "ATTRIBUTED_SCHOLARLY_COPY_HYPOTHESIS_SELECTED_PAGES_VISUALLY_READ_NO_COLLATION",
+      "sourceId": "SRC-LEMAIRE-DEIRALLA-SCRIBAL-2021",
+      "locators": "Lemaire 2021 OBO291 pp185–186 visually verified, PDF zero-index 199–200",
+      "open": [
+        "Original 1976 transcription/plates",
+        "1977 Caquot/Lemaire full article",
+        "1985 Lemaire full article",
+        "Independent dating/epigraphic collation",
+        "External peer review and Product rights"
+      ],
+      "published": false
     }
   },
   "systematicTheologyTriage": {

@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 61,
+    "sourceRecords": 62,
     "approvedForProduct": 0
   },
   "records": [
@@ -1507,7 +1507,33 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ]
+    },
+    {
+      "id": "SRC-LEMAIRE-DEIRALLA-SCRIBAL-2021",
+      "title": "André Lemaire, Scribe royal et passage de l’oral à l’écrit: Ougarit, Deir ‘Alla et le cycle d’Élisée, OBO 291 (2021), 175–192",
+      "creator": "André Lemaire",
+      "year": 2021,
+      "url": "https://www.peeters-leuven.be/download_OA.php?id=9789042942653&name=Oral+et+%C3%A9crit+dans+l%27Antiquit%C3%A9+orientale%3A+les+processus+de+r%C3%A9daction+et+d%27%C3%A9dition",
+      "objectType": "publisher_original_scholarly_chapter_selected_printed_pages_185_186_verified",
+      "sourceRole": "DEIR_ALLA_LEMAIRE_2021_ATTRIBUTED_SCRIBAL_COPY_DATE_HYPOTHESIS",
+      "locator": "OBO 291 (Römer, Gonzalez, Marti, Rückl, eds.), Peeters 2021, pp.175–192; printed pp185–186, PDF zero-index pp199–200 directly visually inspected; publisher front matter and copyright checked.",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "sourceObjectState": "Original complete-volume publisher PDF accessible; printed pp185–186 read as page images. Lemaire restates Caquot/Lemaire 1977 pp193–195 reconstruction of red-ink Balaam seer heading, distinguishes wall inscription from posited earlier written literary copy, hypothesizes ninth/tenth-century BCE original composition, scribal training and possible literary relation with the Elisha cycle. 1977/1985 full texts and 1976 plates NOT read or collated.",
+      "supportedUse": "ATTRIBUTED HYPOTHESIS ONLY: compare physically found inscription with Lemaire's theorized earlier composition/copy, red heading, scribal context, and one proposed dating with competing scholars; contrast Heintz 1980 circa 700 BCE +/-25 contested palaeography.",
+      "forbiddenUse": "NOT_ATTESTED: claim ninth/tenth-century actual autograph, original papyrus, archaeological scribal school, proven direct literary dependence, definite chronology, direct Shaddai etymology or ancient script collation; no reproduction rights to publisher pages, figures, or full chapter.",
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "publicationState": "BLOCKED",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "hypothesisStatus": "ATTRIBUTED_COPY_AND_9TH_10TH_CENTURY_COMPOSITION_NOT_INDEPENDENTLY_ATTESTED",
+      "datingScope": "LEMAIRE_PROPOSES_EARLY_8TH_WALL_TEXT_HEINTZ_1980_REPORTS_DIFFERENT_CIRCA_700_PALEOGRAPHIC_ESTIMATE_DISPUTED"
     }
   ],
-  "auditRevision": "NG12_DEIR_ALLA_SOURCE_SPECIFIC_LINE_NUMBERING_AND_DATING_20261108"
+  "auditRevision": "NG12_LEMAIRE_2021_SCRIBAL_COPY_PAGES185_186_20261108"
 }

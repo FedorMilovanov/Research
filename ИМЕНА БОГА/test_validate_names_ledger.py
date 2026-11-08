@@ -1111,6 +1111,18 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         row["rightsState"] = "PERMISSION_REQUIRED"
         self.assertTrue(any("Deir Alla access/rights/locator status changed" in e for e in validate_source_access(d)))
 
+    def test_deir_alla_lemaire_2021_source_is_not_claimed_fully_read(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-LEMAIRE-DEIRALLA-SCRIBAL-2021")
+        row["accessState"] = "FULL_OBJECT_VERIFIED"
+        self.assertTrue(any("Deir Alla access/rights/locator" in e for e in validate_source_access(d)))
+
+    def test_deir_alla_lemaire_2021_old_copy_is_not_proven(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-LEMAIRE-DEIRALLA-SCRIBAL-2021")
+        row["hypothesisStatus"] = "ORIGINAL_10TH_CENTURY_DOCUMENT_FOUND"
+        self.assertTrue(any("historical copy/dating claim falsely promoted" in e for e in validate_source_access(d)))
+
     def test_deir_alla_livius_translation_cannot_inherit_photo_cc0_rights(self) -> None:
         d = copy.deepcopy(self.sources)
         row = next(x for x in d["records"] if x["id"] == "SRC-LIVIUS-LEVINE-COMPOSITE-TRANSLATION-2003")
