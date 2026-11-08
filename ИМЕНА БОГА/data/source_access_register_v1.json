@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 59,
+    "sourceRecords": 60,
     "approvedForProduct": 0
   },
   "records": [
@@ -1459,7 +1459,31 @@
         "PUBLICATION_HOLD"
       ],
       "proposedReaderUse": "EMBEDDED_RESEARCH_READER_ONLY"
+    },
+    {
+      "id": "SRC-LIVIUS-LEVINE-COMPOSITE-TRANSLATION-2003",
+      "title": "Livius, Deir 'Alla Inscription: composite English rendering with B. A. Levine 2003 and Hoftijzer/van der Kooij 1976 excerpts",
+      "year": 2003,
+      "creator": "B. A. Levine; J. Hoftijzer; G. van der Kooij; Livius editorial presentation",
+      "url": "https://www.livius.org/sources/content/deir-alla-inscription/",
+      "objectType": "online_composite_english_translation_with_scholarly_attributions",
+      "sourceRole": "ATTRIBUTED_DEIR_ALLA_ENGLISH_RECONSTRUCTION_1976_2003_NOT_PRIMARY_INSCRIPTION",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "criticalEditionCollated": false,
+      "publicationState": "BLOCKED",
+      "evidenceClass": "B1",
+      "locator": "Livius introduction (credits Levine, Context of Scripture 2 [2003]: 140–145; italic parts Hoftijzer/van der Kooij 1976); Combination I [i.7–8] Shaddai gods; Combination II beginning [ii.1–2] and 10 minor combinations follow 1976; editorial section headings are Levine's",
+      "sourceObjectState": "Complete hosted English display inspected directly 2026-11-08. Host describes a composite of the Levine 2003 published English translation and Hoftijzer/van der Kooij 1976 for selected omitted sections, with added editorial headings. The source books' original physical pages and ancient plaster have not been independently checked. English translation is copyrighted; no reproduction license demonstrated.",
+      "supportedUse": "Explain that English rendering 'Shaddai gods' in Combination I 7–8 is an attributed scholarly translation and not a directly collated word-for-word text of unbroken inscription, and that headings are editorial. Provide precise source link and comparison with divergent 1991 interpretations.",
+      "forbiddenUse": "Treat translation as ancient original or manuscript collation, reproduce entire translated text, assert 'Shaddai gods' as a certain Hebrew plural or identity with Genesis' singular El Shaddai, or imply photo-specific CC0 extends to Livius textual translations.",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
     }
   ],
-  "auditRevision": "NG12_BRILL_1976_ORIGINAL_FRONTMATTER_PLATE_COUNT_PINNED_20261108"
+  "auditRevision": "NG12_DEIR_ALLA_TRANSLATION_EDITION_SOURCE_BOUNDARY_20261108"
 }

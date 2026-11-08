@@ -1111,6 +1111,12 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         row["rightsState"] = "PERMISSION_REQUIRED"
         self.assertTrue(any("Deir Alla access/rights/locator status changed" in e for e in validate_source_access(d)))
 
+    def test_deir_alla_livius_translation_cannot_inherit_photo_cc0_rights(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-LIVIUS-LEVINE-COMPOSITE-TRANSLATION-2003")
+        row["rightsState"] = "PUBLICATION_ELIGIBLE"
+        self.assertTrue(any("Livius composite translation wrongly treated as a primary or free text" in e for e in validate_source_access(d)))
+
 
 if __name__ == "__main__":
     unittest.main()

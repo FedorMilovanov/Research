@@ -399,6 +399,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-SCHOLAR-SAUNDERS-DEIRALLA-2024": "SCHOLARLY_SURVEY_DEIRALLA_REFERENTS_AND_DIALECT_CONTROVERSY",
     "SRC-TSOLIN-ORIEKHOVA-DEIRALLA-2025": "DEIR_ALLA_COMPOSITION_AND_ARCHEOLOGICAL_WALL_VS_CEILING_HYPOTHESES",
     "SRC-IMG-DEIRALLA-LENDERING-LIVIUS-CC0": "ACTUAL_DEIR_ALLA_MUSEUM_PLASTER_PHOTOGRAPH_CC0",
+    "SRC-LIVIUS-LEVINE-COMPOSITE-TRANSLATION-2003": "ATTRIBUTED_DEIR_ALLA_ENGLISH_RECONSTRUCTION_1976_2003_NOT_PRIMARY_INSCRIPTION",
 }
 
 
@@ -416,6 +417,7 @@ DEIR_ALLA_SOURCE_GUARDS = {
     "SRC-SCHOLAR-SAUNDERS-DEIRALLA-2024": ("PARTIAL_OBJECT", "RIGHTS_UNKNOWN", "EXACT_LOCATOR_VERIFIED"),
     "SRC-TSOLIN-ORIEKHOVA-DEIRALLA-2025": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED", "EXACT_LOCATOR_VERIFIED"),
     "SRC-IMG-DEIRALLA-LENDERING-LIVIUS-CC0": ("FULL_OBJECT_VERIFIED", "PUBLICATION_ELIGIBLE", "EXACT_LOCATOR_VERIFIED"),
+    "SRC-LIVIUS-LEVINE-COMPOSITE-TRANSLATION-2003": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED", "EXACT_LOCATOR_VERIFIED"),
 }
 DEIR_ALLA_VISUAL_LICENSE_GUARDS = {
     "SRC-IMG-DEIRALLA-LENDERING-LIVIUS-CC0": (
@@ -505,6 +507,13 @@ def validate_source_access(sources: dict) -> list[str]:
         if rid == "SRC-IMG-DEIRALLA-ACOR-LAPP-1987-NOT-BALAAM":
             if "NOT" not in str(source.get("title", "")).upper() and "likely not" not in str(source.get("sourceObjectState", "")).lower():
                 errors.append(f"{prefix}: ACOR photo misidentified as Balaam inscription")
+        if rid == "SRC-LIVIUS-LEVINE-COMPOSITE-TRANSLATION-2003":
+            if ("Levine" not in str(source.get("creator", ""))
+                or "1976" not in str(source.get("sourceObjectState", ""))
+                or "2003" not in str(source.get("sourceObjectState", ""))
+                or "i.7" not in str(source.get("locator", ""))
+                or source.get("rightsState") != "PERMISSION_REQUIRED"):
+                errors.append(f"{prefix}: Livius composite translation wrongly treated as a primary or free text")
         if rid == "SRC-TSOLIN-ORIEKHOVA-DEIRALLA-2025" and "CC BY-NC 4.0" not in str(source.get("licenseScope", "")):
             errors.append(f"{prefix}: noncommercial source license omitted")
         if rid in {"SRC-NET-REV1-8","SRC-TABB-REVELATION22"}:
