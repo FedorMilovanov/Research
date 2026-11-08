@@ -602,6 +602,13 @@ def validate_source_access(sources: dict) -> list[str]:
         if rid == "SRC-DEIRALLA-HOFTIJZER-VANDERKOOIJ-1976-CONTENTS":
             if source.get("original1976AcquisitionScope") != "1976_P173_178_PLUS_P179_182_AND_RELEVANT_PHOTO_P3_REASSEMBLY_DRAWING_P29_PRIORITY_SECONDARY_LOCATOR_ONLY_NO_PDF_OR_PLATE_IMAGES_READ" or source.get("original1976AccessBoundary") != "BRILL1976_ORIGINAL_FRONT_MATTER_ONLY_REPRINT2023_LIMITED_PREVIEW_1976_BODY_173_178_AND_PL3_29_NOT_ACCESSED":
                 errors.append(f"{prefix}: Brill 1976 front matter and secondary plate locators cannot be treated as original 1976 body/plates autopsy")
+        if rid == "SRC-DEIRALLA-HOFTIJZER-VANDERKOOIJ-1976-CONTENTS":
+            if source.get("original1976PlateCatalogScope") != "ORIGINAL_BRILL1976_PUBLISHER_PLATE_LIST_DIRECT_TEXT_PL1_I_A_COLOR_PL2_I_C_COLOR_PL3_I_D_COLOR_PL9_I_A_I_C_PARTS_PL10_I_D_PARTS_PL27_28_SIGN_DRAWINGS_PL29_COMBINATION_I_DRAWING":
+                errors.append(f"{prefix}: 1976 published plate catalogue cannot be replaced with invented photograph assignments")
+            if source.get("original1976PlateCatalogImageAccess") != "FRONT2_PDF_ORIGINAL_TEXT_ONLY_SCREENSHOT_403_PLATE_IMAGES_AND_1976_P173_NOT_SEEN_NO_PALAEOGRAPHIC_COLLATION":
+                errors.append(f"{prefix}: 1976 original textual plate index cannot imply visual plate/p173 collation")
+            if source.get("original1976Plate29IndependenceBoundary") != "PLATE29_IS_EDITORIAL_DRAWING_NOT_ORIGINAL_PHOTOGRAPH_PLATE3_IS_COLOR_FRAGMENT_I_D_IMAGE_SECONDARY_UCLA_FIG8_3_NOT_SECOND_INDEPENDENT_WITNESS":
+                errors.append(f"{prefix}: Plate29 original editorial drawing and UCLA copy cannot become independent photographs")
         if rid in DEIR_ALLA_SOURCE_GUARDS:
             required_state = DEIR_ALLA_SOURCE_GUARDS[rid]
             actual_state = (source.get("accessState"), source.get("rightsState"), source.get("locatorState"))

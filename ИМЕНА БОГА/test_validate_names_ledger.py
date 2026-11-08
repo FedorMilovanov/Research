@@ -1344,5 +1344,24 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("Brill 1976 front matter and secondary plate" in e for e in validate_source_access(d)))
 
 
+    def test_1976_plate29_is_edition_drawing_not_independent_photograph(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-DEIRALLA-HOFTIJZER-VANDERKOOIJ-1976-CONTENTS")
+        row["original1976Plate29IndependenceBoundary"] = "PLATE29_ORIGINAL_PHOTOGRAPH_UCLA_2023_SECOND_INDEPENDENT_PHOTOGRAPH"
+        self.assertTrue(any("Plate29 original editorial drawing" in e for e in validate_source_access(d)))
+
+    def test_1976_original_catalog_differentiates_colour_fragments_and_sign_drawings(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-DEIRALLA-HOFTIJZER-VANDERKOOIJ-1976-CONTENTS")
+        row["original1976PlateCatalogScope"] = "PLATES_1_TO_33_ARE_INDEPENDENT_PHOTOGRAPHS"
+        self.assertTrue(any("1976 published plate catalogue" in e for e in validate_source_access(d)))
+
+    def test_1976_publisher_plate_index_text_not_autopsy_of_p173_or_images(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-DEIRALLA-HOFTIJZER-VANDERKOOIJ-1976-CONTENTS")
+        row["original1976PlateCatalogImageAccess"] = "FULL_1976_33_PLATES_AND_P173_DIRECT_VISUAL_COLLATION"
+        self.assertTrue(any("1976 original textual plate index" in e for e in validate_source_access(d)))
+
+
 if __name__ == "__main__":
     unittest.main()
