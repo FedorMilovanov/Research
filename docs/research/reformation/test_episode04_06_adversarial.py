@@ -49,7 +49,7 @@ class ReformationAdversarialFourSixTests(unittest.TestCase):
 
     def test_marburg_difference_and_witnesses_not_erased(self):
         text = self.texts["marburg"]
-        for fragment in ("двад", "стать", "пятнадцат", "телесном присутствии",
+        for fragment in ("четырнадцат", "стать", "пятнадцат", "телесном присутствии",
                          "десяти богословов", "7, 13 и 15",
                          "REF-P13-ARCHIVE", "REF-P75", "REF-P73", "REF-P74"):
             with self.subTest(fragment=fragment):
@@ -76,7 +76,8 @@ class ReformationAdversarialFourSixTests(unittest.TestCase):
                             and "PUBLICATION_HOLD" in row["holds"]
                             for row in registry["sources"]))
         ledger = (HERE / "03_claim_verification_register.md").read_text(encoding="utf-8")
-        ids = [int(x) for x in re.findall(r"^\\|\\s*C(\\d+)\\s*\\|", ledger, re.M)]
+        lines = [line for line in ledger.splitlines() if line.startswith("| C")]
+        ids = [int(line.split(" |", 1)[0][3:]) for line in lines]
         self.assertEqual(ids, list(range(1, 320)))
         plan = (HERE / "SELF_PLAN.md").read_text(encoding="utf-8")
         self.assertIn("волна 384", plan)
