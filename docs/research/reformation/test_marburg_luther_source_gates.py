@@ -69,7 +69,7 @@ class MarburgLutherSourceGates(unittest.TestCase):
         self.assertIn("ORIGINAL_ZK_COLLATION_HOLD", ledger)
         self.assertIn("COMPOSITION_DATING_CONTESTED", ledger)
         plan = (HERE / "SELF_PLAN.md").read_text(encoding="utf-8")
-        for key in ("волна 388", "RF-EXTERNAL-REVIEW-GATES",
+        for key in ("ИСТОРИЧЕСКИЙ СРЕЗ ВОЛНЫ 388", "RF-EXTERNAL-REVIEW-GATES",
                     "INDEPENDENT_EXTERNAL_REVIEW_OPEN", "THEOLOGICAL_PEER_REVIEW_OPEN",
                     "PUBLICATION_HOLD", "STOP_DISCOVERY"):
             self.assertIn(key, plan)
