@@ -418,6 +418,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-HOFTIJZER-BALAAM-ARTICLE-1976-BA39-1": "EARLY_DEIR_ALLA_PUBLICATION_WITH_FORMALLY_PUBLISHED_CORRIGENDUM_ACCESS_HOLD",
     "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3": "ORIGINAL_1976_JOURNAL_ARTICLE_CORRECTION_TO_FETCH_BEFORE_EXEGETICAL_RELIANCE",
     "SRC-HOFTIJZER-PHOENIX22-DEIRALLA-1976-FIG41-42": "EARLY_DEIR_ALLA_HOFTIJZER1976_AUTHOR_ARTICLE_WITH_IR_PHOTO_CAPTION_AND_RECONSTRUCTED_SHADDAY_TRANSLATION",
+    "SRC-FRANKEN-1967-VT-FIRST-INSCRIPTION-PHOTO-480481": "FRANKEN1967_EARLIEST_PUBLISHED_DEIRALLA_FRAGMENT_PHOTO_REPORTED_IN_LEMAIRE1985_CATALOG_ONLY",
 }
 
 
@@ -427,6 +428,7 @@ DEIR_ALLA_SOURCE_GUARDS = {
     "SRC-HOFTIJZER-BALAAM-ARTICLE-1976-BA39-1": ("CATALOG_ONLY", "PERMISSION_REQUIRED", "EXACT_LOCATOR_VERIFIED"),
     "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3": ("CATALOG_ONLY", "PERMISSION_REQUIRED", "EXACT_LOCATOR_VERIFIED"),
     "SRC-HOFTIJZER-PHOENIX22-DEIRALLA-1976-FIG41-42": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED", "EXACT_LOCATOR_VERIFIED"),
+    "SRC-FRANKEN-1967-VT-FIRST-INSCRIPTION-PHOTO-480481": ("CATALOG_ONLY", "PERMISSION_REQUIRED", "EXACT_LOCATOR_VERIFIED"),
     "SRC-DEIRALLA-SYMPOSIUM-1991-NYU": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED", "EXACT_LOCATOR_VERIFIED"),
     "SRC-DEIRALLA-STEINER-WAGEMAKERS-2019": ("PARTIAL_OBJECT", "RIGHTS_UNKNOWN", "COARSE_LOCATOR_ONLY"),
     "SRC-DEIRALLA-BLUM-EBR-2013": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED", "EXACT_LOCATOR_VERIFIED"),
@@ -647,6 +649,17 @@ def validate_source_access(sources: dict) -> list[str]:
             if (source.get("historicalFigure42Evidence") != "PHOENIX_1976_P88_FIG42_COMBINATION_I_EARLY_JERUSALEM_INFRARED_PHOTO_REPRODUCTION_CAPTION_ONLY_NOT_VISUAL_AUTOPSY"
                 or source.get("shaddayTranslationBoundary") != "PHOENIX_1976_P90_HOFTIJZER_RECONSTRUCTED_DUTCH_GENDERED_SHADDAY_GODS_TRANSLATION_NOT_INDEPENDENT_SHDYN_COLLATION"):
                 errors.append(f"{prefix}: Phoenix 1976 infrared photo caption and Shadday translation cannot be promoted to independently verified letters")
+        if rid == "SRC-FRANKEN-1967-VT-FIRST-INSCRIPTION-PHOTO-480481":
+            if (source.get("firstPhotoBoundary") != "LEMAIRE1985_FIRST_PHOTO_REPORT_1967_FRANKEN_VT17_PP480481_ONLY_ORIGINAL_1967_IMAGE_UNSEEN"
+                or source.get("datingBoundary") != "HISTORICAL_TITLE_PERSIAN_PERIOD_NO_ACCEPTED_INSCRIPTION_DATE"):
+                errors.append(f"{prefix}: 1967 Franken first photograph report cannot become photo autopsy or accepted Persian date")
+        if rid == "SRC-DEIRALLA-STEINER-WAGEMAKERS-2019":
+            chain = source.get("excavationPhotoChain1967")
+            if (not isinstance(chain, dict)
+                or chain.get("status") != "HISTORICAL_CHAIN_TEXT_VERIFIED_PRECISE_PAGES_PHOTOGRAPHIC_BYTES_UNVERIFIED_CUSTODY_UNKNOWN"
+                or "NOT proof" not in str(chain.get("museumIdentity", ""))
+                or "NOT automatic" not in str(chain.get("modernArchive", ""))):
+                errors.append(f"{prefix}: 1967 museum appointment cannot prove archived infrared negatives or IAA custody")
         if rid in DEIR_ALLA_SOURCE_GUARDS:
             required_state = DEIR_ALLA_SOURCE_GUARDS[rid]
             actual_state = (source.get("accessState"), source.get("rightsState"), source.get("locatorState"))
