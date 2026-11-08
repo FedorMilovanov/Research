@@ -540,6 +540,21 @@ class ActualSynchronizationTests(unittest.TestCase):
         self.assertIn("SUPERSEDED", owner)
         self.assertIn("NO MERGE / NO PUBLICATION", board)
 
+    def test_article02_r9_coptic_witnesses_have_no_false_collation(self):
+        memo = (ROOT / "ИСКУПЛЕНИЕ/evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md").read_text(encoding="utf-8")
+        board = (ROOT / "ИСКУПЛЕНИЕ/synthesis/07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        registry = (ROOT / "ИСКУПЛЕНИЕ/05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md").read_text(encoding="utf-8")
+        self.assertIn("## AT-010-R9", memo)
+        r9 = memo.split("## AT-010-R9",1)[-1]
+        for doc,page in (("622148","2250"),("620292","3090"),("622028","350"),("620016","2575")):
+            locator="docid="+doc+"&pageID="+page+"&format=xhtml"
+            self.assertIn(locator, r9)
+            self.assertIn(locator, registry)
+        for marker in ("ⲉⲧⲉⲧⲛ", "ⲧⲉⲧ︤ⲛ︥ⲯⲩⲭⲏ", "TARGET_CLAUSE_NOT_PRESENT", "PHOTO_NOT_COLLATED", "PROTECTED_IMAGE_ACCESS_HOLD", "CLM3469_EDITORIAL_READ_CONFLICT_HOLD", "SA48_53_10_GLYPH_ADJUDICATION_HOLD", "GREEK_BACKTRANSLATION_HOLD", "GOTTINGEN_APPARATUS_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD", "publicationEligible=false"):
+            self.assertIn(marker, r9)
+        self.assertIn("## 19. AT-010-R9", board)
+        self.assertIn("NO MERGE / NO PUBLICATION", board)
+
     def test_article11_named_judas_primary_witnesses_and_hebrews_hold(self):
         text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article11_bought_apostates_covenant_blood_and_weak_brother.md").read_text(encoding="utf-8")
         cards = (ROOT / "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md").read_text(encoding="utf-8")
