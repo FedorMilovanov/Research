@@ -1477,5 +1477,20 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                             for e in validate_source_access(d)))
 
 
+    def test_2019_rmo_ownership_does_not_verify_2026_negative_custody(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-DANS-TELL-DEIRALLA-SLIDES-ARCHIVE-XS5-KPQN")
+        row["independentPhysicalArchiveInventory2019"]["documentedAsOf2019Ownership"] = "RMO_2026_ORIGINAL_INFRARED_NEGATIVES_CONFIRMED"
+        self.assertTrue(any("2019 RMO archive ownership, Box 41" in e
+                            for e in validate_source_access(d)))
+
+    def test_rmo_museum_cc0_policy_cannot_license_old_expedition_photo(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-DANS-TELL-DEIRALLA-SLIDES-ARCHIVE-XS5-KPQN")
+        row["rmoOfficialPhotoRightsBoundary"] = "ALL_1967_IR_NEGATIVES_CC0_REUSE_APPROVED"
+        self.assertTrue(any("photo-register rights require source-specific holds" in e
+                            for e in validate_source_access(d)))
+
+
 if __name__ == "__main__":
     unittest.main()
