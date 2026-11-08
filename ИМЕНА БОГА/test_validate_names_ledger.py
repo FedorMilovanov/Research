@@ -1409,3 +1409,17 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+    def test_deir_alla_1976_journal_article_must_link_formal_erratum(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-HOFTIJZER-BALAAM-ARTICLE-1976-BA39-1")
+        row["linkedErratumId"] = "NO_CORRECTION_EXISTS"
+        self.assertTrue(any("1976 journal article must retain exact erratum link" in e
+                            for e in validate_source_access(d)))
+
+    def test_deir_alla_1976_erratum_unread_text_cannot_be_promoted(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3")
+        row["sourceObjectState"] = "FULL_TEXT_READ_AND_VERIFIED"
+        self.assertTrue(any("publisher erratum text cannot be claimed seen" in e
+                            for e in validate_source_access(d)))
