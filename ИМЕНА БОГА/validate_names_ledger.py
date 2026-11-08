@@ -702,15 +702,20 @@ def validate_source_access(sources: dict) -> list[str]:
                 or "DOES_NOT_ISSUE_FILE_SPECIFIC_PHOTO_LICENSE" not in str(figure.get("rightsBoundary", ""))):
                 errors.append(f"{prefix}: publisher 2019 figure captions are not 1976 infrared glyph collation or image reuse license")
         if rid == "SRC-IAA-DSS-4Q120-B503715-2015":
+            photo = source.get("preliminaryBrowserVisualObservation20261108")
             if (source.get("url") != "https://www.deadseascrolls.org.il/explore-the-archive/image/B-503715"
-                or source.get("photoProvenanceBoundary") != "IAA_4Q120_B503715_PLATE378_FRAG15_2015_HALEVI_RECTO_METADATA_ONLY_NOT_GLYPH_COLLATION"
-                or source.get("reportedIaoEvidenceBoundary") != "PUBLISHED_SECONDARY_2017_FRAG20_4_PLATE378_FRAG15_IAO_ATTRIBUTED_DJD_IX_AND_PRIMARY_PIXELS_NOT_READ"
+                or source.get("photoProvenanceBoundary") != "IAA_4Q120_B503715_PLATE378_FRAG15_2015_HALEVI_RECTO_PRIMARY_IMAGE_PIXELS_VIEWED_NOT_DJD_CRITICAL_COLLATION"
+                or source.get("reportedIaoEvidenceBoundary") != "BROWSER_VISUAL_2026_4Q120_B503715_PHOTO_IAO_SEQUENCE_REPORTED_OMEGA_LOWER_STROKE_FADED_DJD_IX_AND_ALTERNATIVE_PHOTO_UNCOLLATED"
                 or source.get("officialLicenseBoundary") != "IAA_TERMS_2026_ALL_RIGHTS_RESERVED_PRIVATE_SINGLE_COPY_EXCEPTION_REPRODUCTION_REQUIRES_PERMISSION"
-                or source.get("accessState") != "CATALOG_ONLY"
+                or source.get("accessState") != "PARTIAL_OBJECT"
                 or source.get("rightsState") != "PERMISSION_REQUIRED"
                 or source.get("criticalEditionCollated") is not False
-                or source.get("publicationState") != "BLOCKED"):
-                errors.append(f"{prefix}: IAA 4Q120 archival photo metadata cannot become glyph proof or publication permission")
+                or source.get("publicationState") != "BLOCKED"
+                or not isinstance(photo, dict)
+                or photo.get("imagePixelsRendered") is not True
+                or photo.get("scientificStatus") != "PRELIMINARY_PHOTOGRAPHIC_OBSERVATION_NOT_INDEPENDENT_EPI_GRAPHIC_CRITICAL_COLLATION"
+                or photo.get("rightsStatus") != "IAA_ALL_RIGHTS_RESERVED_REUSE_PERMISSION_REQUIRED_NO_BYTES_COPIED"):
+                errors.append(f"{prefix}: IAA 4Q120 browser photo observation must not become critical collation or publication permission")
         if rid in DEIR_ALLA_SOURCE_GUARDS:
             required_state = DEIR_ALLA_SOURCE_GUARDS[rid]
             actual_state = (source.get("accessState"), source.get("rightsState"), source.get("locatorState"))
