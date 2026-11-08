@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 60,
+    "sourceRecords": 61,
     "approvedForProduct": 0
   },
   "records": [
@@ -1483,7 +1483,31 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ]
+    },
+    {
+      "id": "SRC-HEINTZ-DEIRALLA-1976-REVIEW-1980",
+      "title": "Jean-Georges Heintz, detailed review of Hoftijzer/van der Kooij Aramaic Texts from Deir 'Alla (1976), Revue d'Histoire et de Philosophie religieuses 60/2 (1980): 210–212",
+      "creator": "Jean-Georges Heintz",
+      "year": 1980,
+      "url": "https://www.persee.fr/doc/rhpr_0035-2403_1980_num_60_2_4543_t1_0210_0000_2",
+      "objectType": "peer_scholarly_detailed_critical_review_of_original_inscription_edition",
+      "sourceRole": "ATTRIBUTED_1980_DEIR_ALLA_EDITORIAL_LINE_DIVISION_DATING_AND_PLATE_VARIANTS",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "criticalEditionCollated": false,
+      "publicationState": "BLOCKED",
+      "evidenceClass": "B1",
+      "locator": "Printed p. 210: original 33 plates/5 figures; combination I/a–d and II/a–c; Kaquot/Lemaire proposal to assign original edition Combination I lines 3–4 respectively to lines 2 and 5, thereby deleting two of original lines; reported historical palaeographic estimate c.700 BCE ±25 and disagreement. Review total 210–212; only p.210 inspected.",
+      "sourceObjectState": "The first full-text page 210 of Heintz review is visible on Persée with original French text and precise image locator. Remaining pp. 211–212 not read; not an autopsy or critical original 1976 text; source is secondary scholarly assessment of original printed edition.",
+      "supportedUse": "Explain why older (1976), revised (1977/1980), and Levine (2003) line numeration cannot be equated mechanically; assign source-specific edition and cite line id. Show historical disagreement over epigraphic dating, without endorsing an unqualified 700 BCE date. Corroborates 33 plates and 5 figures.",
+      "forbiddenUse": "Claim independent reading of original 1976 folio/plate from 1980 reviewer, silently map original 1976 lines to later i.7–i.8, claim dating is settled or republish whole copyrighted article.",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
     }
   ],
-  "auditRevision": "NG12_DEIR_ALLA_TRANSLATION_EDITION_SOURCE_BOUNDARY_20261108"
+  "auditRevision": "NG12_DEIR_ALLA_SOURCE_SPECIFIC_LINE_NUMBERING_AND_DATING_20261108"
 }
