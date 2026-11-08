@@ -22,7 +22,7 @@ class MarburgLutherSourceGates(unittest.TestCase):
         cls.all_sources = registry["sources"]
 
     def test_exact_new_evidence_count_and_ids(self):
-        self.assertEqual(self.n, 200)
+        self.assertEqual(self.n, 202)
         self.assertEqual(len(self.all_sources), self.n)
         self.assertEqual(len(self.sources), self.n)
         for key in ("REF-P13", "REF-P13-ARCHIVE", "REF-P75",
