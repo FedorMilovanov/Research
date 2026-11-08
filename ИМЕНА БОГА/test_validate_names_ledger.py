@@ -1454,5 +1454,20 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                             for e in validate_source_access(d)))
 
 
+    def test_caquot_1977_dating_erratum_report_cannot_be_silently_removed(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-CAQUOT-LEMAIRE-DEIRALLA-REASSEMBLY-1977-P193198")
+        row["indirect1976ErratumWitness"] = "NO_DATING_CORRECTION_KNOWN"
+        self.assertTrue(any("later 1977 reported date correction missing or falsely promoted" in e
+                            for e in validate_source_access(d)))
+
+    def test_1977_report_does_not_prove_original_1976_erratum_access(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3")
+        row["originalErratumTextVerified"] = True
+        self.assertTrue(any("original 1976 erratum must remain unviewed" in e
+                            for e in validate_source_access(d)))
+
+
 if __name__ == "__main__":
     unittest.main()
