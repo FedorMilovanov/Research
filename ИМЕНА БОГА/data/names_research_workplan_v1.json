@@ -16,7 +16,7 @@
     "regressionTests": 165,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "SUCCESS_ON_REVIEWED_COMMIT",
+    "allSixCiChecks": "SUCCESS_ON_PREVIOUS_REVIEWED_COMMIT_NEW_CH03_COMMIT_REQUIRES_EXACT_SHA_CI",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 16,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "ff6199a7c02a3057cadb569afdc2d4e1bb9e4fcc"
+    "lastConfirmedAllSixChecksSha": "6051f077c5662c98ffbf02d73bac9b1461f8d671"
   },
   "allowedStatuses": [
     "DONE",
@@ -685,7 +685,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "Two reader chapters now written with internal reviews (CH01 two passes, CH02 one pass) and ZERO independent external scholarly approvals. NG-03 DONE. Next priority obtain independent editorial/philological review (CH01/CH02), or write CH-PILOT-03 when user asks. Do not expand broad bibliography, claim critical manuscript/rights/Product approval.",
+  "nextAction": "Three connected reader manuscripts CH-PILOT-01/02/03 are written with internal checks (2, 1, 1 passes). NG-02 technical Research graph and NG-03 editorial supersession remain DONE; receive INDEPENDENT scholarly Hebrew/Aramaic and literary reviews of existing three chapters, preserve Shaddai disputed origin NG-12 BLOCKED_SOURCE, all 0 scientific approvals, 0 rights/Product, 55 old missing inline locus IDs, and stop general literature searches. New chapter only if distinct textual reader question justified.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -767,7 +767,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-08",
-    "planStatus": "NG-02 structural DONE; NG-03 editorial supersession DONE; CH01 REVISED internal 2 passes and CH02 REVISED internal 1 pass, both external independent review pending, 0 scientific/rights/Product approvals.",
+    "planStatus": "NG-02 graph-only DONE; NG-03 10/10 editorial supersession DONE; CH01-03 THREE REVISED RESEARCH MANUSCRIPTS, 2/1/1 internal passes, 0 independent scholarly approvals, 0 editorial acceptances, critical sources and Product HOLD.",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -849,7 +849,8 @@
       "2026-11-08: SECOND internal editor-source review of existing reader pilot: added Gen16:13 Hagar DIRECTLY names/invokes God contrasting separately named well Gen16:14, disputed 'sees me/I see' NET nuance, deleted redundant Ex3:14 sentence; separately checked Gill, Berkhof and Bavinck original accessible HTML sections. Independent scientific peer review NOT obtained.",
       "2026-11-08: NG-03 editorial supersession completed 10/10 original dossiers 01-10 with in-file CURRENT/HISTORICAL/SUPERSEDED/HOLD annotations. Corrected stale LXX PDF impression (01), historical attestations/CI TODO (03), former missing YHWH/El attestations (10); indexed 10-row authority matrix §0a, synced navigation. No source/claim/edition/attestation IDs or Product altered.",
       "2026-11-08: Wrote a second ~2700-word connected CH-PILOT-02 reader draft, Exodus 3/6 and LXX publisher HTML, covenant fulfillment vs historical literary alternative with attributed Rashi/Calvin and author-specific science limits. Separate evidence/rights appendix, no new registry IDs, no external publishing.",
-      "2026-11-08: CH-PILOT-02 first internal adversarial check corrected exact Exod6:3 vocalized נוֹדַעְתִּי in apparatus, kept source attribution for NET/Rashi/Calvin and clear digital Greek-vs-manuscript boundary; no external peer review."
+      "2026-11-08: CH-PILOT-02 first internal adversarial check corrected exact Exod6:3 vocalized נוֹדַעְתִּי in apparatus, kept source attribution for NET/Rashi/Calvin and clear digital Greek-vs-manuscript boundary; no external peer review.",
+      "2026-11-08: CH-PILOT-03 third connected reader manuscript on El, Elohim and Shaddai written (~2800 words with separate scholarly appendix). Original MT Gen1/14/17/28/35, Ex6/20, Ps91, Deut32, Isa43, Aramaic Dan2 and scholarly Suchard 2025 compared. First internal adversarial pass named Cargill 2019 abstract-only explicitly, fixed Ps91/90 numbering; all manuscripts still external-scholarly HOLD, no content registry or Product writes."
     ],
     "stillOpen": [
       "External Product/Arena consumers and zip prototypes still NOT independently authenticated by exact deployment/build; no dual-read v2 test witness",
@@ -922,11 +923,43 @@
   "editorialExecution": {
     "asOf": "2026-11-08",
     "owner": "ИМЕНА БОГА/11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md §0a/§3b",
-    "state": "NG03_DONE_TWO_READER_DRAFTS_INTERNAL_CHECKED_EXTERNAL_PEER_REVIEW_PENDING",
+    "state": "THREE_LINKED_READER_MANUSCRIPTS_DRAFTED_INTERNAL_CHECKED_NO_EXTERNAL_PEER_APPROVAL",
     "readerChapterCountApproved": null,
     "subjectDirectionsProvisional": 14,
     "readerManuscriptsAccepted": 0,
     "twoActiveDeliverables": [
+      {
+        "id": "CH-PILOT-03",
+        "kind": "READER_MANUSCRIPT_PILOT",
+        "target": "El, Elohim and Shaddai with primary syntax, speakers, referents and unsettled etymology",
+        "acceptance": "One continuous Russian reader chapter distinguishing Elohim morphological number and referents, El Elyon within Gen14 narrative, direct self-declaration El Shaddai and Isaac blessing, disputed etymology with bounded competing academic explanation and separate scholarly-rights HOLD appendix.",
+        "status": "RESEARCH_MANUSCRIPT_REVISED_INTERNAL_ADVERSARIAL_PASS_1_DONE_EXTERNAL_SCHOLARLY_REVIEW_PENDING_NOT_EDITORIAL_READY",
+        "file": "ИМЕНА БОГА/reader/CH-PILOT-03_EL_ELOHIM_SHADDAI.md",
+        "verification": "CONNECTED_READER_MANUSCRIPT_~2800_WORDS_INCLUDING_APPARATUS; DIGITALLY_CHECKED_MT_GEN1_14_17_28_35_EX6_20_PS91_DEUT32_IS43_AND_DAN2; ONE_INTERNAL_PASS_CORRECTED_CARGILL_ABSTRACT_SCOPE_AND_PSALM_91_90_NUMBERING; FULL_HTML_SUCHARD_2025_RESEARCH_HYPOTHESIS; NO_CRITICAL_MSS_OR_RIGHTS_OR_EXTERNAL_REVIEW",
+        "nextReview": "Independent external academic and native-language philological reader review of THREE existing reader chapters. Shaddai etymology NG-12 remains BLOCKED_SOURCE, full Cargill 2019 unexamined, Suchard 2025 still author's argued reconstruction. Do not invent critical editions, delete rights holds or publish."
+      }
+    ],
+    "nextChapterCandidates": [],
+    "discoveryStop": "STOP_SYSTEMATICS_DISCOVERY_AFTER_GILL_BERKHOF_BAVINCK_UNTIL_SPECIFIC_MANUSCRIPT_GAP",
+    "sourcePolicy": "SECONDARY_B1_AUTHOR_ATTRIBUTED_NOT_CRITICAL_WITNESS",
+    "publicationGate": "ALL_PRODUCT_RIGHTS_SCHOLARLY_HOLDS_REMAIN",
+    "readerManuscriptsDrafted": 3,
+    "internalAdversarialPasses": 2,
+    "independentScholarlyReviewsAccepted": 0,
+    "ng03OriginalDossiersReviewed": 10,
+    "ng03FinalMatrix": "ИМЕНА БОГА/11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md §0a: ten-row typed supersession authority matrix",
+    "ch02InternalAdversarialPasses": 1,
+    "chapterRegister": [
+      {
+        "id": "CH-PILOT-01",
+        "kind": "READER_MANUSCRIPT_PILOT",
+        "target": "What does Scripture mean by the name of God?",
+        "acceptance": "One continuous readable manuscript distinguishing God's revealed name, proper name, title, attribute, predicate and named object, primary verses, one strong alternative, and evidence/rights limitations.",
+        "status": "EXTERNAL_INDEPENDENT_PEER_REVIEW_PENDING_NOT_EDITORIAL_READY",
+        "file": "ИМЕНА БОГА/reader/CH-PILOT-01_WHAT_SCRIPTURE_CALLS_GODS_NAME.md",
+        "verification": "10_FACTUAL_REVIEW_POINTS_FIXED_WITH_DIGITAL_MT_GILL_BERKHOF_BAVINCK_AND_NET_NOT_INDEPENDENT_PEER_REVIEW; SECOND_EDITORIAL_SOURCE_CHECK_GEN16_13_14_HAGAR_DIRECT_NAME_VS_WELL_AND_EX3_14_REDUNDANCY_FIX",
+        "nextReview": "External independent domain reviewer needed for biblical languages, systematic-theology attribution, book editions and rights; current assistant's second source check is NOT external independent peer review. Preserve 0 scientific approvals."
+      },
       {
         "id": "CH-PILOT-02",
         "kind": "READER_MANUSCRIPT_PILOT",
@@ -943,28 +976,23 @@
         "nextReview": "Independent external philology/theology reviewer or editorial board; critical MSS/edition rights remain HOLD. Next writer chapter CH-PILOT-03 only after separate editorial priority decision, no broad discovery."
       },
       {
-        "id": "CH-PILOT-01",
+        "id": "CH-PILOT-03",
         "kind": "READER_MANUSCRIPT_PILOT",
-        "target": "What does Scripture mean by the name of God?",
-        "acceptance": "One continuous readable manuscript distinguishing God's revealed name, proper name, title, attribute, predicate and named object, primary verses, one strong alternative, and evidence/rights limitations.",
-        "status": "EXTERNAL_INDEPENDENT_PEER_REVIEW_PENDING_NOT_EDITORIAL_READY",
-        "file": "ИМЕНА БОГА/reader/CH-PILOT-01_WHAT_SCRIPTURE_CALLS_GODS_NAME.md",
-        "verification": "10_FACTUAL_REVIEW_POINTS_FIXED_WITH_DIGITAL_MT_GILL_BERKHOF_BAVINCK_AND_NET_NOT_INDEPENDENT_PEER_REVIEW; SECOND_EDITORIAL_SOURCE_CHECK_GEN16_13_14_HAGAR_DIRECT_NAME_VS_WELL_AND_EX3_14_REDUNDANCY_FIX",
-        "nextReview": "External independent domain reviewer needed for biblical languages, systematic-theology attribution, book editions and rights; current assistant's second source check is NOT external independent peer review. Preserve 0 scientific approvals."
+        "target": "El, Elohim and Shaddai with primary syntax, speakers, referents and unsettled etymology",
+        "acceptance": "One continuous Russian reader chapter distinguishing Elohim morphological number and referents, El Elyon within Gen14 narrative, direct self-declaration El Shaddai and Isaac blessing, disputed etymology with bounded competing academic explanation and separate scholarly-rights HOLD appendix.",
+        "status": "RESEARCH_MANUSCRIPT_REVISED_INTERNAL_ADVERSARIAL_PASS_1_DONE_EXTERNAL_SCHOLARLY_REVIEW_PENDING_NOT_EDITORIAL_READY",
+        "file": "ИМЕНА БОГА/reader/CH-PILOT-03_EL_ELOHIM_SHADDAI.md",
+        "verification": "CONNECTED_READER_MANUSCRIPT_~2800_WORDS_INCLUDING_APPARATUS; DIGITALLY_CHECKED_MT_GEN1_14_17_28_35_EX6_20_PS91_DEUT32_IS43_AND_DAN2; ONE_INTERNAL_PASS_CORRECTED_CARGILL_ABSTRACT_SCOPE_AND_PSALM_91_90_NUMBERING; FULL_HTML_SUCHARD_2025_RESEARCH_HYPOTHESIS; NO_CRITICAL_MSS_OR_RIGHTS_OR_EXTERNAL_REVIEW",
+        "nextReview": "Independent external academic and native-language philological reader review of THREE existing reader chapters. Shaddai etymology NG-12 remains BLOCKED_SOURCE, full Cargill 2019 unexamined, Suchard 2025 still author's argued reconstruction. Do not invent critical editions, delete rights holds or publish."
       }
     ],
-    "nextChapterCandidates": [
-      "CH-PILOT-03:EL-ELOHIM-SHADDAI"
+    "ch03InternalAdversarialPasses": 1,
+    "externalPeerReviewQueue": [
+      "CH-PILOT-01",
+      "CH-PILOT-02",
+      "CH-PILOT-03"
     ],
-    "discoveryStop": "STOP_SYSTEMATICS_DISCOVERY_AFTER_GILL_BERKHOF_BAVINCK_UNTIL_SPECIFIC_MANUSCRIPT_GAP",
-    "sourcePolicy": "SECONDARY_B1_AUTHOR_ATTRIBUTED_NOT_CRITICAL_WITNESS",
-    "publicationGate": "ALL_PRODUCT_RIGHTS_SCHOLARLY_HOLDS_REMAIN",
-    "readerManuscriptsDrafted": 2,
-    "internalAdversarialPasses": 2,
-    "independentScholarlyReviewsAccepted": 0,
-    "ng03OriginalDossiersReviewed": 10,
-    "ng03FinalMatrix": "ИМЕНА БОГА/11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md §0a: ten-row typed supersession authority matrix",
-    "ch02InternalAdversarialPasses": 1
+    "nextDistinctReaderQuestion": "UNSELECTED: assess distinct topic against 14 provisional directions and available sources after checking editorial reviews; no automatic CH-PILOT-04."
   },
   "systematicTheologyTriage": {
     "asOf": "2026-11-08",
