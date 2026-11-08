@@ -125,7 +125,12 @@ class ReformationAdversarialSevenNineTests(unittest.TestCase):
                        "27 октября 1553 года"):
             self.assertIn(marker.lower(), r9.lower())
         plan = (HERE / "SELF_PLAN.md").read_text(encoding="utf-8")
-        self.assertIn("ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 401", plan)
+        # A completed wave moves to history; its reader/provenance contract survives.
+        # Only one numbered passport may be active at any point in time.
+        import re
+        self.assertRegex(plan, r"(?m)^## (?:ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 401\b|ИСТОРИЧЕСКИЙ СРЕЗ ВОЛНЫ 401\b)")
+        active = re.findall(r"(?m)^## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна \d+\b", plan)
+        self.assertEqual(len(active), 1, "exactly one active SELF_PLAN passport")
         self.assertIn("Research/main", plan)
         self.assertIn("ORIGINAL_PRINT_COLLATION_HOLD", plan)
         self.assertIn("INDEPENDENT_EXTERNAL_REVIEW_OPEN", plan)

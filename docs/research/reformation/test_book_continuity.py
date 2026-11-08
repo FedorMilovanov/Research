@@ -97,8 +97,43 @@ class BookContinuityTests(unittest.TestCase):
         numbered = [int(x) for x in CLAIM_RE.findall(claims)]
         self.assertEqual(numbered, list(range(1, 320)))
         self.assertIn("| C302 |", claims)
+        # C315 must follow the actual 14-part book without promoting publication.
+        c315 = next((line for line in claims.splitlines() if line.startswith("| C315 |")), None)
+        self.assertIsNotNone(c315)
+        self.assertIn("уже написанный богословский эпилог", c315)
+        self.assertIn("14 частей", c315)
+        self.assertIn("REJECTED_FORMULATION", c315)
+        self.assertIn("PUBLICATION_HOLD", c315)
+        self.assertNotIn("ещё не написанный богословский эпилог", c315)
         self.assertIn("95 общих статей", claims)
         self.assertIn("92", claims)
+
+    def test_wave402_independent_review_packets_are_complete_not_approved(self):
+        """Cross-book review coverage is testable; expert endorsement is not."""
+        packet = (HERE / "independent_review_packets.md").read_text(encoding="utf-8")
+        self.assertIn("Пакет A — независимый историк", packet)
+        self.assertIn("Пакет B — независимый богослов", packet)
+        self.assertIn("REVIEW_PACKETS_PREPARED / NOT_SENT", packet)
+        self.assertIn("INDEPENDENT_EXTERNAL_REVIEW_OPEN", packet)
+        self.assertIn("THEOLOGICAL_PEER_REVIEW_OPEN", packet)
+        self.assertIn("PUBLICATION_HOLD", packet)
+        self.assertIn("ORIGINAL_PRINT_COLLATION_HOLD", packet)
+        self.assertIn("ARCHIVE_HOLD", packet)
+        self.assertIn("RIGHTS_HOLD", packet)
+        for name in PARTS:
+            with self.subTest(part=name):
+                self.assertIn("](" + name + ")", packet)
+        for prefix, total in (("H", 9), ("T", 8)):
+            for i in range(1, total + 1):
+                with self.subTest(review=f"{prefix}-{i:02}"):
+                    self.assertIn(f"{prefix}-{i:02}", packet)
+            self.assertNotIn(f"{prefix}-{total + 1:02}", packet)
+
+        plan = (HERE / "SELF_PLAN.md").read_text(encoding="utf-8")
+        self.assertIn("ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 402", plan)
+        self.assertIn("ИСТОРИЧЕСКИЙ СРЕЗ ВОЛНЫ 401", plan)
+        self.assertIn("](independent_review_packets.md)", plan)
+        self.assertIn("NOT_SENT", plan)
 
     def test_nantes_two_editions_and_non_evidence_of_third(self):
         text = self.texts["episode11_france_catholic_reform_nantes_1545_1599_manuscript.md"]
