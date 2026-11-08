@@ -67,7 +67,7 @@ class ReformationEpilogueAdversarialTests(unittest.TestCase):
                      "REJECTED_FORMULATION", "PUBLICATION_HOLD"):
             self.assertIn(mark, c316)
         plan = PLAN.read_text(encoding="utf-8")
-        self.assertIn("волна 383", plan)
+        # Plans advance; the editorial evidence and successor remain traceable.\n        self.assertIn("RF-THEO-EPI", plan)
         self.assertIn("RF-EDIT-04-06", plan)
         self.assertIn("PUBLICATION_HOLD", plan)
 
