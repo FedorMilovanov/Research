@@ -922,24 +922,24 @@
     "чтоСчитаетсяДоводом": "заголовок «## » в любом .md лана, включая вложенные папки (synthesis/drafts, ot/tools); тело секции — до следующего «## » или до конца файла",
     "приоритет": "УДЕРЖИВАЕТСЯ > ОТКРЫТО > ЗАКРЫТО; маркеров нет -> БЕЗ МАРКЕРА; маркер вне классификации -> ошибка съёма, а не «прочее»",
     "метод": "scripts/atonement_claim_register.py обходит прозу лана целиком (без выборки), разбирает маркеры вида `ВЕРДИКТ`, сверяет локатор побайтово (файл + номер строки + текст)",
-    "строк": 391,
+    "строк": 392,
     "файлов": 31,
     "покрытоМашинно": 0,
-    "покрытоПоФайлу": 391,
+    "покрытоПоФайлу": 392,
     "файловПрозы": 31,
     "файловБезКарточки": 0,
-    "разрешеноЛокаторов": 391,
+    "разрешеноЛокаторов": 392,
     "неРазрешено": 0,
     "поКлассам": {
       "БЕЗ МАРКЕРА": 245,
-      "УДЕРЖИВАЕТСЯ": 120,
+      "УДЕРЖИВАЕТСЯ": 121,
       "ОТКРЫТО": 9,
       "СЛУЖЕБНОЕ": 9,
       "ЗАКРЫТО": 8
     },
     "маркеры": {
-      "всего": 609,
-      "различных": 76,
+      "всего": 615,
+      "различных": 80,
       "словарь": {
         "ACCESS_INTERRUPTED": "ОТКРЫТО",
         "AI_TRANSLATION_HOLD": "УДЕРЖИВАЕТСЯ",
@@ -951,6 +951,7 @@
         "BIBLE_CORPUS": "СЛУЖЕБНОЕ",
         "BIBLICAL_EXEGESIS_HOLD": "УДЕРЖИВАЕТСЯ",
         "CALVIN_EDITION_HOLD": "УДЕРЖИВАЕТСЯ",
+        "CODEX_WITNESS_HOLD": "УДЕРЖИВАЕТСЯ",
         "CONFESSIONAL_EDITION_HOLD": "УДЕРЖИВАЕТСЯ",
         "CONTEXT_HOLD": "УДЕРЖИВАЕТСЯ",
         "COSMOLOGY_HOLD": "УДЕРЖИВАЕТСЯ",
@@ -963,6 +964,7 @@
         "DRAFT / PUBLICATION_HOLD": "УДЕРЖИВАЕТСЯ",
         "EDITION_HOLD": "УДЕРЖИВАЕТСЯ",
         "EDITION_UNAVAILABLE": "УДЕРЖИВАЕТСЯ",
+        "EDITION_VARIANT_LOCATED": "ЗАКРЫТО",
         "EDITION_WITNESS_HOLD": "УДЕРЖИВАЕТСЯ",
         "EDITORIAL_TRANSCRIPTION_HOLD": "УДЕРЖИВАЕТСЯ",
         "ETYMOLOGY_HOLD": "УДЕРЖИВАЕТСЯ",
@@ -971,6 +973,7 @@
         "FORBIDDEN": "УДЕРЖИВАЕТСЯ",
         "FULL_OBJECT_VERIFIED": "ЗАКРЫТО",
         "FULL_TEXT_HOLD": "УДЕРЖИВАЕТСЯ",
+        "GOTTINGEN_APPARATUS_HOLD": "УДЕРЖИВАЕТСЯ",
         "GREEK_LEXICON_HOLD": "УДЕРЖИВАЕТСЯ",
         "HEBREWS_EXEGESIS_HOLD": "УДЕРЖИВАЕТСЯ",
         "HISTORICAL_EDITION_HOLD": "УДЕРЖИВАЕТСЯ",
@@ -1014,14 +1017,15 @@
         "SCOPE_HOLD": "УДЕРЖИВАЕТСЯ",
         "STORAGE_ONLY": "СЛУЖЕБНОЕ",
         "SUBJECT_OPEN": "ОТКРЫТО",
+        "SWETE_III_PRINT_FACSIMILE_VERIFIED": "ЗАКРЫТО",
         "SYNTAX_LEXEME_OPEN": "ОТКРЫТО",
         "TEXTUAL_APPARATUS_HOLD": "УДЕРЖИВАЕТСЯ",
         "TEXT_CRIT_NOTE": "СЛУЖЕБНОЕ"
       },
       "частоты": {
         "EVIDENCE_HOLD": 114,
-        "PUBLICATION_HOLD": 87,
-        "RIGHTS_HOLD": 70,
+        "PUBLICATION_HOLD": 88,
+        "RIGHTS_HOLD": 71,
         "ATTRIBUTION_HOLD": 40,
         "LOCATOR_HOLD": 38,
         "RESOLVED-BY-TEXT": 37,
@@ -1055,17 +1059,20 @@
         "ATTRIBUTION_NOTE": 1,
         "BIBLICAL_EXEGESIS_HOLD": 1,
         "CALVIN_EDITION_HOLD": 1,
+        "CODEX_WITNESS_HOLD": 1,
         "CONFESSIONAL_EDITION_HOLD": 1,
         "COSMOLOGY_HOLD": 1,
         "DATE_HOLD": 1,
         "DAVENANT_LATIN_DIPLOMATIC_COLLATION_HOLD": 1,
         "DRAFT / PUBLICATION_HOLD": 1,
+        "EDITION_VARIANT_LOCATED": 1,
         "EDITION_WITNESS_HOLD": 1,
         "EDITORIAL_TRANSCRIPTION_HOLD": 1,
         "ETYMOLOGY_HOLD": 1,
         "EXACT_LOCATOR_VERIFIED": 1,
         "FORBIDDEN": 1,
         "FULL_OBJECT_VERIFIED": 1,
+        "GOTTINGEN_APPARATUS_HOLD": 1,
         "GREEK_LEXICON_HOLD": 1,
         "HEBREWS_EXEGESIS_HOLD": 1,
         "HISTORICAL_EDITION_HOLD": 1,
@@ -1093,6 +1100,7 @@
         "SCOPE_HOLD": 1,
         "STORAGE_ONLY": 1,
         "SUBJECT_OPEN": 1,
+        "SWETE_III_PRINT_FACSIMILE_VERIFIED": 1,
         "SYNTAX_LEXEME_OPEN": 1,
         "TEXT_CRIT_NOTE": 1
       },
@@ -1125,7 +1133,7 @@
       "ссылокВнеОбходаЛана": 0,
       "записейВнеСтрокЛана": 0,
       "файловБезКарточкиСостояния": 4,
-      "маркеровВПрозеНеОтражённыхВКарточке": 82,
+      "маркеровВПрозеНеОтражённыхВКарточке": 84,
       "маркеровВКарточкеНеИзПрозыЛана": 18,
       "детально": {
         "01_SERIES_PLAN_AND_ARTICLE_COUNT.md": {
@@ -1170,11 +1178,12 @@
           "естьКарточка": true
         },
         "07_LIVING_EXECUTION_BOARD_2026-11-07.md": {
-          "проза": 19,
+          "проза": 23,
           "карточка": 0,
           "вПрозеНеВКарточке": [
             "AI_TRANSLATION_HOLD",
             "ARCHIVE_HOLD",
+            "CODEX_WITNESS_HOLD",
             "DABNEY_FULL_BOOK_COLLATION_HOLD",
             "DABNEY_PAGE_SCAN_HOLD",
             "DAVENANT_LATIN_EDITION_HOLD",
@@ -1183,6 +1192,7 @@
             "ETYMOLOGY_HOLD",
             "EVIDENCE_HOLD",
             "FULL_TEXT_HOLD",
+            "GOTTINGEN_APPARATUS_HOLD",
             "JUDAS_NAMED_REDEMPTION_QUOTE_HOLD",
             "LOCATOR_HOLD",
             "PUBLICATION_HOLD",
@@ -3373,6 +3383,25 @@
           "RIGHTS_HOLD",
           "SUBJECT_OPEN",
           "SYNTAX_LEXEME_OPEN"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "14@07_LIVING_EXECUTION_BOARD_2026-11-07",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/07_LIVING_EXECUTION_BOARD_2026-11-07.md",
+        "строка": 217,
+        "срез": "14. AT-010-R4 — фотографическое подтверждение Swete III, 1905, с. 199–201 (08.11.2026)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "CODEX_WITNESS_HOLD",
+          "EDITION_VARIANT_LOCATED",
+          "GOTTINGEN_APPARATUS_HOLD",
+          "PUBLICATION_HOLD",
+          "RIGHTS_HOLD",
+          "SWETE_III_PRINT_FACSIMILE_VERIFIED"
         ],
         "машинно": false,
         "машинноПоФайлу": true
@@ -6618,8 +6647,8 @@
     ],
     "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
     "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check synthesis",
-    "measuredAt": "2026-11-07T22:54:29Z",
-    "checkedAt": "2026-11-07T22:54:29Z",
-    "предыдущийСъём": "2026-11-07T22:52:28Z"
+    "measuredAt": "2026-11-08T00:24:13Z",
+    "checkedAt": "2026-11-08T00:24:13Z",
+    "предыдущийСъём": "2026-11-07T22:54:29Z"
   }
 }

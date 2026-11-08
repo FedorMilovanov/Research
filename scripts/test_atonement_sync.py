@@ -382,6 +382,35 @@ class ActualSynchronizationTests(unittest.TestCase):
         self.assertIn("201/201", board)
         self.assertIn("NO MERGE / NO PUBLICATION", board)
 
+    def test_article02_r4_swete_print_pages_and_editorial_variants_are_separate_from_manuscripts(self):
+        article = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md").read_text(encoding="utf-8")
+        memo = (ROOT / "ИСКУПЛЕНИЕ/evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md").read_text(encoding="utf-8")
+        owner = (ROOT / "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md").read_text(encoding="utf-8")
+        board = (ROOT / "ИСКУПЛЕНИЕ/synthesis/07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        for marker in ("Фотография печатной страницы Суита", "1905",
+                       "παιδία εἰρήνης ἡμῶν", "παιδεία εἰρήνης ἡμῶν",
+                       "ἡ ψυχὴ ἡμῶν", "ἡ ψυχὴ ὑμῶν",
+                       "подтверждённое различие опубликованных редакций",
+                       "F02-16 |", "F02-17 |"):
+            with self.subTest(article_marker=marker):
+                self.assertIn(marker, article)
+        for marker in ("## AT-010-R4", "с. 199", "с. 200", "с. 201",
+                       "https://ccel.org/ccel/swete/lxx3/lxx3/Page_199.html",
+                       "https://ccel.org/ccel/swete/lxx3/lxx3/Page_200.html",
+                       "https://ccel.org/ccel/swete/lxx3/lxx3/Page_201.html",
+                       "https://www.die-bibel.de/en/bible/LXX/ISA.53",
+                       "SWETE_III_PRINT_FACSIMILE_VERIFIED",
+                       "EDITION_VARIANT_LOCATED",
+                       "GOTTINGEN_APPARATUS_HOLD", "OTTLEY_1906_PRINT_HOLD",
+                       "CODEX_WITNESS_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD",
+                       "publicationEligible=false", "STOP_DISCOVERY"):
+            with self.subTest(memo_marker=marker):
+                self.assertIn(marker, memo)
+        self.assertIn("## 12. R4", owner)
+        self.assertIn("SWETE_III_PRINT_FACSIMILE_VERIFIED", owner)
+        self.assertIn("## 14. AT-010-R4", board)
+        self.assertIn("NO MERGE / NO PUBLICATION", board)
+
     def test_article11_named_judas_primary_witnesses_and_hebrews_hold(self):
         text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article11_bought_apostates_covenant_blood_and_weak_brother.md").read_text(encoding="utf-8")
         cards = (ROOT / "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md").read_text(encoding="utf-8")

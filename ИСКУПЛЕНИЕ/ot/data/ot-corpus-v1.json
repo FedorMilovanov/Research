@@ -2092,45 +2092,51 @@
       "чтоСчитаетсяДоводом": "заголовок «## » в любом .md лана, включая вложенные папки (synthesis/drafts, ot/tools); тело секции — до следующего «## » или до конца файла",
       "приоритет": "УДЕРЖИВАЕТСЯ > ОТКРЫТО > ЗАКРЫТО; маркеров нет -> БЕЗ МАРКЕРА; маркер вне классификации -> ошибка съёма, а не «прочее»",
       "метод": "scripts/atonement_claim_register.py обходит прозу лана целиком (без выборки), разбирает маркеры вида `ВЕРДИКТ`, сверяет локатор побайтово (файл + номер строки + текст)",
-      "строк": 201,
+      "строк": 202,
       "файлов": 19,
       "покрытоМашинно": 0,
-      "покрытоПоФайлу": 201,
+      "покрытоПоФайлу": 202,
       "файловПрозы": 19,
       "файловБезКарточки": 0,
-      "разрешеноЛокаторов": 201,
+      "разрешеноЛокаторов": 202,
       "неРазрешено": 0,
       "поКлассам": {
           "БЕЗ МАРКЕРА": 189,
-          "УДЕРЖИВАЕТСЯ": 11,
+          "УДЕРЖИВАЕТСЯ": 12,
           "СЛУЖЕБНОЕ": 1
       },
       "маркеры": {
-          "всего": 74,
-          "различных": 10,
+          "всего": 80,
+          "различных": 13,
           "словарь": {
               "ARCHIVE_HOLD": "УДЕРЖИВАЕТСЯ",
+              "CODEX_WITNESS_HOLD": "УДЕРЖИВАЕТСЯ",
               "EDITORIAL_TRANSCRIPTION_HOLD": "УДЕРЖИВАЕТСЯ",
               "EVIDENCE_HOLD": "УДЕРЖИВАЕТСЯ",
+              "GOTTINGEN_APPARATUS_HOLD": "УДЕРЖИВАЕТСЯ",
               "LOCATOR_HOLD": "УДЕРЖИВАЕТСЯ",
               "OT-AUTH": "СЛУЖЕБНОЕ",
               "PUBLICATION_HOLD": "УДЕРЖИВАЕТСЯ",
               "RECEPTION_SCOPE_OPEN": "ОТКРЫТО",
               "RIGHTS_HOLD": "УДЕРЖИВАЕТСЯ",
               "SUBJECT_OPEN / EDITION_WITNESS_HOLD": "УДЕРЖИВАЕТСЯ",
+              "SWETE_III_PRINT_FACSIMILE_VERIFIED": "ЗАКРЫТО",
               "SYNTAX_LEXEME_OPEN": "ОТКРЫТО"
           },
           "частоты": {
               "ARCHIVE_HOLD": 23,
               "LOCATOR_HOLD": 21,
               "EVIDENCE_HOLD": 16,
-              "PUBLICATION_HOLD": 6,
-              "RIGHTS_HOLD": 3,
+              "PUBLICATION_HOLD": 7,
+              "RIGHTS_HOLD": 4,
+              "SYNTAX_LEXEME_OPEN": 2,
+              "CODEX_WITNESS_HOLD": 1,
               "EDITORIAL_TRANSCRIPTION_HOLD": 1,
+              "GOTTINGEN_APPARATUS_HOLD": 1,
               "OT-AUTH": 1,
               "RECEPTION_SCOPE_OPEN": 1,
               "SUBJECT_OPEN / EDITION_WITNESS_HOLD": 1,
-              "SYNTAX_LEXEME_OPEN": 1
+              "SWETE_III_PRINT_FACSIMILE_VERIFIED": 1
           },
           "служебные": [
               "OT-AUTH"
@@ -2157,7 +2163,7 @@
           "ссылокВнеОбходаЛана": 0,
           "записейВнеСтрокЛана": 0,
           "файловБезКарточкиСостояния": 2,
-          "маркеровВПрозеНеОтражённыхВКарточке": 3,
+          "маркеровВПрозеНеОтражённыхВКарточке": 5,
           "маркеровВКарточкеНеИзПрозыЛана": 26,
           "детально": {
               "06_PESAH_EXOD12.md": {
@@ -2210,10 +2216,12 @@
                   "естьКарточка": true
               },
               "11_ISA52_53_SERVANT.md": {
-                  "проза": 8,
+                  "проза": 11,
                   "карточка": 8,
                   "вПрозеНеВКарточке": [
+                      "CODEX_WITNESS_HOLD",
                       "EDITORIAL_TRANSCRIPTION_HOLD",
+                      "GOTTINGEN_APPARATUS_HOLD",
                       "RIGHTS_HOLD",
                       "SUBJECT_OPEN / EDITION_WITNESS_HOLD"
                   ],
@@ -4041,6 +4049,25 @@
               "машинноПоФайлу": true
           },
           {
+              "код": "12@11_ISA52_53_SERVANT",
+              "лан": "ot",
+              "файл": "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md",
+              "строка": 265,
+              "срез": "12. R4 — реальный печатный Swete III подтверждён по факсимиле (08.11.2026)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 3,
+              "токены": [
+                  "CODEX_WITNESS_HOLD",
+                  "GOTTINGEN_APPARATUS_HOLD",
+                  "PUBLICATION_HOLD",
+                  "RIGHTS_HOLD",
+                  "SWETE_III_PRINT_FACSIMILE_VERIFIED",
+                  "SYNTAX_LEXEME_OPEN"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
               "код": "1@12_DAN9_SEVENTY_WEEKS",
               "лан": "ot",
               "файл": "ИСКУПЛЕНИЕ/ot/12_DAN9_SEVENTY_WEEKS.md",
@@ -4739,8 +4766,8 @@
       ],
       "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
       "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
-      "measuredAt": "2026-11-07T22:54:28Z",
-      "checkedAt": "2026-11-07T22:54:28Z",
-      "предыдущийСъём": "2026-11-03T22:36:41Z"
+      "measuredAt": "2026-11-08T00:24:12Z",
+      "checkedAt": "2026-11-08T00:24:12Z",
+      "предыдущийСъём": "2026-11-07T22:54:28Z"
   }
 }
