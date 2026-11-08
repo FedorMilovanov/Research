@@ -415,12 +415,16 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-CAQUOT-LEMAIRE-DEIRALLA-REASSEMBLY-1977-P193198": "ORIGINAL_1977_CRITICAL_REASSEMBLY_EXACT_LINE_CONCORDANCE_SHDYN_VS_SDH",
     "SRC-HACKETT-DEIRALLA-MONOGRAPH-1984-SELECTED-OCR": "HACKETT1984_SELECTED_UNVERIFIED_OCR_AUTHORED_HYPOTHESES_NOT_ANCIENT_COLLATION",
     "SRC-ELLIFF-COLEMAN-DEIRALLA-I6-2023": "ELLIFF_COLEMAN2023_ATTRIBUTED_I6_TPRY_GODDESS_BOLTS_RECONSTRUCTION",
+    "SRC-HOFTIJZER-BALAAM-ARTICLE-1976-BA39-1": "EARLY_DEIR_ALLA_PUBLICATION_WITH_FORMALLY_PUBLISHED_CORRIGENDUM_ACCESS_HOLD",
+    "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3": "ORIGINAL_1976_JOURNAL_ARTICLE_CORRECTION_TO_FETCH_BEFORE_EXEGETICAL_RELIANCE",
 }
 
 
 # These are source-specific, closed-review provenance locks. They do NOT authorize
 # Product publication: the per-record publicationState remains BLOCKED.
 DEIR_ALLA_SOURCE_GUARDS = {
+    "SRC-HOFTIJZER-BALAAM-ARTICLE-1976-BA39-1": ("CATALOG_ONLY", "PERMISSION_REQUIRED", "EXACT_LOCATOR_VERIFIED"),
+    "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3": ("CATALOG_ONLY", "PERMISSION_REQUIRED", "EXACT_LOCATOR_VERIFIED"),
     "SRC-DEIRALLA-SYMPOSIUM-1991-NYU": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED", "EXACT_LOCATOR_VERIFIED"),
     "SRC-DEIRALLA-STEINER-WAGEMAKERS-2019": ("PARTIAL_OBJECT", "RIGHTS_UNKNOWN", "COARSE_LOCATOR_ONLY"),
     "SRC-DEIRALLA-BLUM-EBR-2013": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED", "EXACT_LOCATOR_VERIFIED"),
@@ -627,6 +631,16 @@ def validate_source_access(sources: dict) -> list[str]:
                 errors.append(f"{prefix}: DANS 1996 paper filename containing 1967 is not a 1967 photograph")
             if source.get("archiveHistoricCustodyNotCurrentProof") != "DANS_HISTORICAL_2019_METADATA_1960_1967_SUBARCHIVE_AT_LEIDEN_UNIVERSITY_PLANNED_TRANSFER_RMO_NOT_VERIFIED_2026_TRANSFER_RMO_2011_OBJECTS_NOT_FIELD_PHOTO_PROOF":
                 errors.append(f"{prefix}: historical planned Leiden-to-RMO transfer is not verified current archive custody")
+        if rid == "SRC-HOFTIJZER-BALAAM-ARTICLE-1976-BA39-1":
+            if (source.get("linkedErratumId") != "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3"
+                or source.get("linkedErratumUrl") != "https://doi.org/10.2307/3209398"
+                or source.get("url") != "https://doi.org/10.2307/3209412"):
+                errors.append(f"{prefix}: 1976 journal article must retain exact erratum link")
+        if rid == "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3":
+            if (source.get("correctingSourceId") != "SRC-HOFTIJZER-BALAAM-ARTICLE-1976-BA39-1"
+                or source.get("url") != "https://doi.org/10.2307/3209398"
+                or "NOT retrieved" not in str(source.get("sourceObjectState", ""))):
+                errors.append(f"{prefix}: publisher erratum text cannot be claimed seen or unlink original")
         if rid in DEIR_ALLA_SOURCE_GUARDS:
             required_state = DEIR_ALLA_SOURCE_GUARDS[rid]
             actual_state = (source.get("accessState"), source.get("rightsState"), source.get("locatorState"))
