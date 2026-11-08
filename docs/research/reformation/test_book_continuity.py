@@ -133,7 +133,7 @@ class BookContinuityTests(unittest.TestCase):
         # Wave 402's evidence contract persists after its passport becomes history.
         self.assertRegex(
             plan,
-            r"(?m)^## (?:ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 402\\b|ИСТОРИЧЕСКИЙ СРЕЗ ВОЛНЫ 402\\b)".replace("\\\\", "\\"),
+            r"(?m)^## (?:ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 402\b|ИСТОРИЧЕСКИЙ СРЕЗ ВОЛНЫ 402\b)",
         )
         active = re.findall(r"(?m)^## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна \d+\b", plan)
         self.assertEqual(len(active), 1, "the self-plan must have exactly one active wave")
