@@ -1492,5 +1492,13 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                             for e in validate_source_access(d)))
 
 
+    def test_sidestone_2019_figures_cannot_promote_unseen_glyphs_to_collation(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-DEIRALLA-STEINER-WAGEMAKERS-2019")
+        row["laterPublishedCombinationFigureAccess2019"]["browserVisualResult"] = "SHDYN_PHOTO_GLYPHS_VERIFIED_AS_PHOENIX1976_INFRARED"
+        self.assertTrue(any("publisher 2019 figure captions are not 1976 infrared glyph collation" in e
+                            for e in validate_source_access(d)))
+
+
 if __name__ == "__main__":
     unittest.main()
