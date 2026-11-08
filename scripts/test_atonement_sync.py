@@ -439,6 +439,40 @@ class ActualSynchronizationTests(unittest.TestCase):
         self.assertIn("## 15. AT-010-R5", board)
         self.assertIn("NO MERGE / NO PUBLICATION", board)
 
+    def test_article02_r6_coptic_sahidic_critical_edition_not_greek_manuscript(self):
+        article = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md").read_text(encoding="utf-8")
+        memo = (ROOT / "ИСКУПЛЕНИЕ/evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md").read_text(encoding="utf-8")
+        source = (ROOT / "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md").read_text(encoding="utf-8")
+        board = (ROOT / "ИСКУПЛЕНИЕ/synthesis/07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        for marker in ("Бонка (2023", "sa 52", "sa 48", "ⲛϣⲏⲣⲉ",
+                       "παιδεία", "παιδία", "53:10",
+                       "коптскую", "не доказана"):
+            with self.subTest(article_marker=marker):
+                self.assertIn(marker, article)
+        for marker in ("## AT-010-R6", "41/4 (2023)", "печат. с. 861",
+                       "с. 868", "с. 875", "DOI",
+                       "10.31743/vv.16174",
+                       "https://czasopisma.kul.pl/index.php/vv/article/download/16174/14711/75589",
+                       "https://www.themorgan.org/collection/isaiah/77430/115",
+                       "https://www.themorgan.org/collection/isaiah/77430/116",
+                       "https://bodmerlab.unige.ch/fr/constellations/papyri/barcode/1072205362",
+                       "page 034", "sa 48", "n+yHre", "n+te(n)irHnH",
+                       "tetn+TuCH", "tepn+TuCH",
+                       "PUBLISHED_SAHIDIC_CRITICAL_EDITION_VERIFIED",
+                       "COPTIC_CHILDREN_READING_LOCATED",
+                       "GREEK_VORLAGE_AMBIGUOUS",
+                       "GREEK_BACKTRANSLATION_HOLD",
+                       "GOTTINGEN_APPARATUS_HOLD",
+                       "CODEX_WITNESS_HOLD", "RIGHTS_HOLD",
+                       "PUBLICATION_HOLD", "publicationEligible=false",
+                       "STOP_DISCOVERY"):
+            with self.subTest(memo_marker=marker):
+                self.assertIn(marker, memo)
+        self.assertIn("## 14. AT-010-R6", source)
+        self.assertIn("GREEK_VORLAGE_AMBIGUOUS", source)
+        self.assertIn("## 16. AT-010-R6", board)
+        self.assertIn("NO MERGE / NO PUBLICATION", board)
+
     def test_article11_named_judas_primary_witnesses_and_hebrews_hold(self):
         text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article11_bought_apostates_covenant_blood_and_weak_brother.md").read_text(encoding="utf-8")
         cards = (ROOT / "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md").read_text(encoding="utf-8")

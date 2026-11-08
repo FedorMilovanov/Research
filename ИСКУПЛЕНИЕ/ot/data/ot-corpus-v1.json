@@ -2092,30 +2092,34 @@
       "чтоСчитаетсяДоводом": "заголовок «## » в любом .md лана, включая вложенные папки (synthesis/drafts, ot/tools); тело секции — до следующего «## » или до конца файла",
       "приоритет": "УДЕРЖИВАЕТСЯ > ОТКРЫТО > ЗАКРЫТО; маркеров нет -> БЕЗ МАРКЕРА; маркер вне классификации -> ошибка съёма, а не «прочее»",
       "метод": "scripts/atonement_claim_register.py обходит прозу лана целиком (без выборки), разбирает маркеры вида `ВЕРДИКТ`, сверяет локатор побайтово (файл + номер строки + текст)",
-      "строк": 203,
+      "строк": 204,
       "файлов": 19,
       "покрытоМашинно": 0,
-      "покрытоПоФайлу": 203,
+      "покрытоПоФайлу": 204,
       "файловПрозы": 19,
       "файловБезКарточки": 0,
-      "разрешеноЛокаторов": 203,
+      "разрешеноЛокаторов": 204,
       "неРазрешено": 0,
       "поКлассам": {
           "БЕЗ МАРКЕРА": 189,
-          "УДЕРЖИВАЕТСЯ": 13,
+          "УДЕРЖИВАЕТСЯ": 14,
           "СЛУЖЕБНОЕ": 1
       },
       "маркеры": {
-          "всего": 88,
-          "различных": 16,
+          "всего": 97,
+          "различных": 20,
           "словарь": {
               "ARCHIVE_HOLD": "УДЕРЖИВАЕТСЯ",
               "CODEX_WITNESS_HOLD": "УДЕРЖИВАЕТСЯ",
+              "COPTIC_CHILDREN_READING_LOCATED": "ЗАКРЫТО",
+              "COPTIC_POSSESSIVE_FORM_LOCATED": "ЗАКРЫТО",
               "EDITION_VARIANT_LOCATED": "ЗАКРЫТО",
               "EDITORIAL_TRANSCRIPTION_HOLD": "УДЕРЖИВАЕТСЯ",
               "EVIDENCE_HOLD": "УДЕРЖИВАЕТСЯ",
               "GOTTINGEN_APPARATUS_HOLD": "УДЕРЖИВАЕТСЯ",
               "GOTTINGEN_WITNESS_COLLATED": "ЗАКРЫТО",
+              "GREEK_BACKTRANSLATION_HOLD": "УДЕРЖИВАЕТСЯ",
+              "GREEK_VORLAGE_AMBIGUOUS": "УДЕРЖИВАЕТСЯ",
               "LOCATOR_HOLD": "УДЕРЖИВАЕТСЯ",
               "OT-AUTH": "СЛУЖЕБНОЕ",
               "PUBLICATION_HOLD": "УДЕРЖИВАЕТСЯ",
@@ -2130,17 +2134,21 @@
               "ARCHIVE_HOLD": 23,
               "LOCATOR_HOLD": 21,
               "EVIDENCE_HOLD": 16,
-              "PUBLICATION_HOLD": 8,
-              "RIGHTS_HOLD": 5,
+              "PUBLICATION_HOLD": 9,
+              "RIGHTS_HOLD": 6,
+              "CODEX_WITNESS_HOLD": 3,
+              "GOTTINGEN_APPARATUS_HOLD": 3,
               "SYNTAX_LEXEME_OPEN": 3,
-              "CODEX_WITNESS_HOLD": 2,
-              "GOTTINGEN_APPARATUS_HOLD": 2,
+              "SUBJECT_OPEN": 2,
+              "COPTIC_CHILDREN_READING_LOCATED": 1,
+              "COPTIC_POSSESSIVE_FORM_LOCATED": 1,
               "EDITION_VARIANT_LOCATED": 1,
               "EDITORIAL_TRANSCRIPTION_HOLD": 1,
               "GOTTINGEN_WITNESS_COLLATED": 1,
+              "GREEK_BACKTRANSLATION_HOLD": 1,
+              "GREEK_VORLAGE_AMBIGUOUS": 1,
               "OT-AUTH": 1,
               "RECEPTION_SCOPE_OPEN": 1,
-              "SUBJECT_OPEN": 1,
               "SUBJECT_OPEN / EDITION_WITNESS_HOLD": 1,
               "SWETE_III_PRINT_FACSIMILE_VERIFIED": 1
           },
@@ -2169,7 +2177,7 @@
           "ссылокВнеОбходаЛана": 0,
           "записейВнеСтрокЛана": 0,
           "файловБезКарточкиСостояния": 2,
-          "маркеровВПрозеНеОтражённыхВКарточке": 5,
+          "маркеровВПрозеНеОтражённыхВКарточке": 7,
           "маркеровВКарточкеНеИзПрозыЛана": 26,
           "детально": {
               "06_PESAH_EXOD12.md": {
@@ -2222,12 +2230,14 @@
                   "естьКарточка": true
               },
               "11_ISA52_53_SERVANT.md": {
-                  "проза": 14,
+                  "проза": 18,
                   "карточка": 8,
                   "вПрозеНеВКарточке": [
                       "CODEX_WITNESS_HOLD",
                       "EDITORIAL_TRANSCRIPTION_HOLD",
                       "GOTTINGEN_APPARATUS_HOLD",
+                      "GREEK_BACKTRANSLATION_HOLD",
+                      "GREEK_VORLAGE_AMBIGUOUS",
                       "RIGHTS_HOLD",
                       "SUBJECT_OPEN / EDITION_WITNESS_HOLD"
                   ],
@@ -4095,6 +4105,28 @@
               "машинноПоФайлу": true
           },
           {
+              "код": "14@11_ISA52_53_SERVANT",
+              "лан": "ot",
+              "файл": "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md",
+              "строка": 287,
+              "срез": "14. AT-010-R6 — коптские копии Ис. 53:5/10 как переводное свидетельство (08.11.2026)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 3,
+              "токены": [
+                  "CODEX_WITNESS_HOLD",
+                  "COPTIC_CHILDREN_READING_LOCATED",
+                  "COPTIC_POSSESSIVE_FORM_LOCATED",
+                  "GOTTINGEN_APPARATUS_HOLD",
+                  "GREEK_BACKTRANSLATION_HOLD",
+                  "GREEK_VORLAGE_AMBIGUOUS",
+                  "PUBLICATION_HOLD",
+                  "RIGHTS_HOLD",
+                  "SUBJECT_OPEN"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
               "код": "1@12_DAN9_SEVENTY_WEEKS",
               "лан": "ot",
               "файл": "ИСКУПЛЕНИЕ/ot/12_DAN9_SEVENTY_WEEKS.md",
@@ -4793,8 +4825,8 @@
       ],
       "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
       "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
-      "measuredAt": "2026-11-08T00:58:11Z",
-      "checkedAt": "2026-11-08T00:58:11Z",
-      "предыдущийСъём": "2026-11-08T00:24:12Z"
+      "measuredAt": "2026-11-08T01:46:27Z",
+      "checkedAt": "2026-11-08T01:46:27Z",
+      "предыдущийСъём": "2026-11-08T01:45:02Z"
   }
 }
