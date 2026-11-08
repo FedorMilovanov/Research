@@ -16,10 +16,10 @@
     "regressionTests": 174,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "NEW_HEINTZ_SOURCE_AND_EDITORIAL_RECONCILIATION_SHA_EXACT_CI_PENDING",
+    "allSixCiChecks": "SUCCESS_6_OF_6_AT_PRE_AUDIT_HEAD_5a97a3b40b6564ff32fab4b08edacec39e805f4a_NEW_COMMIT_REQUIRES_OWN_EXACT_SHA_CI",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
-    "planRegressionTests": 16,
+    "planRegressionTests": 17,
     "provenanceRegressionTests": 319,
     "canonicalEditions": 4,
     "curatedClaims": 87,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "d2bd70d53ccc3d22c3dec8bf8ed2f27c16f0e080"
+    "lastConfirmedAllSixChecksSha": "5a97a3b40b6564ff32fab4b08edacec39e805f4a"
   },
   "allowedStatuses": [
     "DONE",
@@ -801,7 +801,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-08",
-    "planStatus": "NG12 critical editions official locators verified and Deir Alla Combination I lines5-6 plural shdyn source quoted with visual p153; BHQ Exodus explicitly unpublished, BHS standard and Göttingen Exodus exist but exact critical apparatus unread; 0 critical collations, 3 reader drafts, 0 scholarly peer, 0 Product.",
+    "planStatus": "2026-11-08 operational audit at pre-update head 5a97a3b40b6564ff32fab4b08edacec39e805f4a: PR #379 OPEN DRAFT, 6/6 workflow SUCCESS including Names of God integrity; 61 source entries (historic 48 is not current), 42 candidates, 105 attestations, 87 preliminary claims, 75 typed relations, 3 revised reader pilot manuscripts and 3 scoped licensed illustrations in CH-PILOT-03. NG00-03 DONE research/control only; NG04/10/11/12 critical apparatus, independent scholarly review, Arena artifacts and Product remain blocked. A new exact-SHA CI is required after this audit commit.",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -889,14 +889,15 @@
       "2026-11-08: NG12 source-limited substantive etymology advance in ORIGINAL dossier 03 and reader CH03: checked BDB H7706 actual digital entry; Wilson-Wright 2019 UT Austin published PDF pp149-155,160; Krogevoll 2025 publisher 26-page PDF sample and printed pp19-25 with main chapter3/4 inaccessible; Dewrell 2024 and Angelini 2022 publisher abstracts; Kruger 2023 full HTML selected paragraphs. Conflicting Helper vs Destroyer vs Mountain explicitly attributed; source rights and original critical HOLD kept, 0 claims promoted; no new source registry IDs.",
       "2026-11-08: NG12 Sabaoth provenance audit expanded existing dossier06: full digital BDB H6635, 2024 Șopterean selected full-journal PDF sections and printed page images 56/59/63, Byrne 2006 Maynooth thesis selected Isaiah chapter2 sections and printed p51 image; MT 1Sam4:4,17:45 Isa6:3 Genesis2:1; publisher Rahlfs-Hanhart LXX Isa6:3 and SBLGNT Romans9:29, James5:4. Explicit conflicting origin models and no false single angel/Israel/creation interpretation; no new claim/source IDs.",
       "2026-11-08: NG12 comparative El/Eloah/Elohim source-bounded review using BDB 1906 full digital entries H410 H430 H433; Benjamin Suchard 2025 full original publisher open HTML, Encyclopaedia Judaica selected secondary sections; Bernard Gosse 2024 online abstract only. MT Gen1:1 Deut32:15/17/18 Job3:4 Dan11:37-39 Hebrew contrasted with Dan2:18-19 Aramaic. Revised existing dossier09 and CH03, no new claim/source IDs, no full HALOT, no external scientific acceptance.",
-      "2026-11-08: critical source discovery: official DBG BHQ published Genesis2016 Deuteronomy2007 Job2024 Ruth2004, Exodus Peter Schwagmeier still in preparation; BHS standard revised1997 with apparatus (Reader edition no apparatus); official Göttingen Wevers/Quast Exodus 1991, Ziegler Isaias1983; UPenn NETS Exodus full PDF introduction p43 screenshot says Wevers basis only; HALOT and DSSEL institutional access endpoints, no full text; Deir Alla Hoftijzer van der Kooij1976 exact editio princeps, Caquot/Lemaire1977 and Lemaire1985 archive first pages, Wilson Wright2019 original p153 screenshot Combo I lines5-6 šdyn plural; Angelini2021 OA Brill selected indexed text but PDF screenshot 403. No sourceId or claimId or ancient collation invented."
+      "2026-11-08: critical source discovery: official DBG BHQ published Genesis2016 Deuteronomy2007 Job2024 Ruth2004, Exodus Peter Schwagmeier still in preparation; BHS standard revised1997 with apparatus (Reader edition no apparatus); official Göttingen Wevers/Quast Exodus 1991, Ziegler Isaias1983; UPenn NETS Exodus full PDF introduction p43 screenshot says Wevers basis only; HALOT and DSSEL institutional access endpoints, no full text; Deir Alla Hoftijzer van der Kooij1976 exact editio princeps, Caquot/Lemaire1977 and Lemaire1985 archive first pages, Wilson Wright2019 original p153 screenshot Combo I lines5-6 šdyn plural; Angelini2021 OA Brill selected indexed text but PDF screenshot 403. No sourceId or claimId or ancient collation invented.",
+      "2026-11-08 audit: verified all six workflows completed success at pre-update SHA 5a97a3b, reconciled current 61 source registrations versus historic 48 in navigation and master plan, added fail-closed source-count navigation guard; preserved 3 reader manuscripts, images and scholarly/publication HOLDs without creating new source IDs or branches."
     ],
     "stillOpen": [
       "External Product/Arena consumers and zip prototypes still NOT independently authenticated by exact deployment/build; no dual-read v2 test witness",
       "55 old missing inline V1 locus fields remain absent by design; 50 old existing fields preserved, additional 33 sidecar-only witnesses not represented in old 22 generic snapshot",
       "Critical biblical textual manuscripts/collation, independent scholarly assessment, source rights and Product signoff remain HOLD",
-      "87 claims remain RESEARCH_HOLD/BLOCKED, 48 sources are registrations not rights grants, Product migration approvers 0",
-      "CI on new exact SHA required before recognizing internal consumer contract gate as green"
+      "All 61 registered sources are provenance entries, not 61 completely read primary editions; Deir Alla 1976 original physical plates are NOT collated, Caquot/Lemaire 1977 and Lemaire 1985 accessible first archive pages only.",
+      "Run 6/6 GitHub workflows on this audit update's exact new SHA before calling the updated control plane green; pre-update 5a97a3b succeeded but does not certify later commits."
     ]
   },
   "originalResearchCheckpoint": {

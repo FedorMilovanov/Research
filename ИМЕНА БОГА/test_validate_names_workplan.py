@@ -104,6 +104,12 @@ class NamesResearchWorkplanTests(unittest.TestCase):
         plan["baseline"]["criticalCollationsCompleted"] = 1
         self.assertTrue(any("unearned critical collation" in e for e in self.check(plan)))
 
+    def test_live_navigation_source_count_cannot_remain_historical(self) -> None:
+        stale = self.nav.replace("— **61 источник", "— **48 источник")
+        self.assertNotEqual(stale, self.nav)
+        self.assertTrue(any("current source register count" in e for e in
+                            self.check(navigation=stale)))
+
     def test_navigation_must_keep_canonical_plan_links(self) -> None:
         self.assertTrue(any("omitted from research navigation" in e for e in
                             self.check(navigation="# outdated navigation")))

@@ -200,6 +200,10 @@ def validate_names_workplan(
        "names_research_workplan_v1.json" not in navigation or \
        "12_TMS_BARRICK_CHOU_SOURCE_REVIEW.md" not in navigation:
         errors.append("workplan: master plan or media source omitted from research navigation")
+    # The live navigation source count must match the machine source registry; old wave counts are historical.
+    live_sources_anchor = f"[data/source_access_register_v1.json](data/source_access_register_v1.json) — **{len(sources.get('records', []))} источник"
+    if live_sources_anchor not in navigation:
+        errors.append("workplan: current source register count in navigation is stale")
     for key in REQUIRED_EXPLANATIONS:
         if key not in guide:
             errors.append(f"workplan: human-readable guide missing task {key}")
