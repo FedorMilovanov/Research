@@ -12,11 +12,11 @@
     "arenaRecords": 29,
     "extensionRecords": 13,
     "contextAttestations": 105,
-    "sourceRegisterEntries": 77,
-    "regressionTests": 223,
+    "sourceRegisterEntries": 78,
+    "regressionTests": 225,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_9F477BB_ALL_SIX_SUCCESS_NEW_ERRATUM_ROLE_GUARDS_AND_TWO_MUTATION_TESTS_CI_PENDING",
+    "allSixCiChecks": "PRIOR_F64DB92_NAMES_LEDGER_SUCCESS_OTHER_WORKFLOWS_NOT_TERMINAL_NEW_PHOENIX22_ORIGINAL_IR_CAPTION_GATE_CI_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 17,
@@ -535,7 +535,8 @@
         "Publisher-authored 1976 original 'List of Plates' Brill front-2.pdf text inspected: PL1=I(a) colour, PL2=I(c) colour, PL3=I(d) colour, PL9+10 fragment details, PL27+28 sign detail drawings, PL29 explicitly EDITORIAL DRAWING of combination i not photograph; screenshot 403, body p173/actual plates NOT seen https://brill.com/edcollchap/book/9789004670327/front-2.pdf",
         "DANS original Tell Deir Alla 1960-2009 excavation Slides catalog (B2FIND verified) DOI:10.17026/dans-xs5-kpqn, metadata says CC BY4; Leiden University 2018 confirms negatives/colour slides, distinct Paper Archive DOI:10.17026/dans-x4n-wkhu. DANS file listing blocked Anubis, 1967 Balaam file IDs/image rights/material NOT inspected; only archival acquisition route, no 1976 plate or p173 autopsy https://doi.org/10.17026/dans-xs5-kpqn",
         "Direct official DANS Dataverse read-only JSON metadata files for 3 2026 published datasets: Slides DOI 10.17026/dans-xs5-kpqn 2560 names/folders 1978-2004, Negatives DOI 10.17026/dans-zfm-9dx2 4012 names earliest 1976, Paper DOI 10.17026/dans-x4n-wkhu 1389 earliest 1976; only filename 1967 in 1996 PDF ID 3959575. No file content viewed. Historical metadata says original 1960-67 archive at Leiden University planned transfer to RMO (not verified complete). RMO site separately verifies artifact-collection transfer 2011, not photo negatives. Relevant archival contact m.bulsink@rmo.nl. NO original p173/plates or independent palaeographic autopsy.",
-        "Publisher official 1976 The Biblical Archaeologist original article 39/1 pp11–17 DOI:10.2307/3209412 and formal published erratum 39/3 p87 DOI:10.2307/3209398; BOTH full texts paywalled; correction content unknown and must not be invented; distinct from Brill 1976 editio princeps"
+        "Publisher official 1976 The Biblical Archaeologist original article 39/1 pp11–17 DOI:10.2307/3209412 and formal published erratum 39/3 p87 DOI:10.2307/3209398; BOTH full texts paywalled; correction content unknown and must not be invented; distinct from Brill 1976 editio princeps",
+        "Primary source found: Jacob Hoftijzer, De Aramese teksten uit Deir 'Alla, Phoenix 22 (1976), 84–91; full 1976 journal PDF https://www.exorientelux.nl/download/phoenix22.pdf; printed p85 fig41 in-situ image caption, printed p88 fig42 IR photograph of Combination I taken in Jerusalem just after 1967 discovery, printed p90 author-conjectured Dutch Shadday goddesses/gods rendering; TEXT/OCR verified only, actual images screenshot 503, actual ancient graphemes/rights still HOLD."
       ],
       "verification": "NOT_APPLICABLE_UNTIL_DONE",
       "closureAt": null,
@@ -729,7 +730,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NG12 acquisition sequence: (1) original 1976 Hoftijzer/van der Kooij transcription p173 + apparatus p183, original Comb I fragment plates, together with comparison of fragment Ic red rule; (2) Hackett1984 full critical edition/plates vs 1977 redaction; (3) expert review of plural sdyn morphology and El Shaddai relationship. Exact line concordance 1977 line6->1976 line8 is documented; 1977 line8 sdh bird must never be mixed with sdyn. Avoid further C14 research unless source correction emerges, and no unlicensed Product images. Separate BIBLIOGRAPHIC ERRATUM GATE: obtain BA 39/3 (Sep 1976) p87 and BA 39/1 pp11–17 to determine exact correction BEFORE citing early photographs or dating from that article; official metadata only, never conflate with Brill 1976 pp173–178.",
+  "nextAction": "NG12 FIRST PRIORITY: retrieve/visually verify Phoenix 22 (1976) printed p88 fig42 from post-excavation Jerusalem infrared photo of Combination I and printed p85 fig41; identify whether figure covers actual šdyn graphemes and which subfragment, licensed rights remain unknown. Independently obtain Brill 1976 editio princeps pp173–178 and original plates, and 1967 archive photo. Then verify formal BA39/3 p87 erratum wording; preserve original BALAAM full text access boundary. Do not elevate to critical collation on caption/OCR alone.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
