@@ -419,6 +419,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3": "ORIGINAL_1976_JOURNAL_ARTICLE_CORRECTION_TO_FETCH_BEFORE_EXEGETICAL_RELIANCE",
     "SRC-HOFTIJZER-PHOENIX22-DEIRALLA-1976-FIG41-42": "EARLY_DEIR_ALLA_HOFTIJZER1976_AUTHOR_ARTICLE_WITH_IR_PHOTO_CAPTION_AND_RECONSTRUCTED_SHADDAY_TRANSLATION",
     "SRC-FRANKEN-1967-VT-FIRST-INSCRIPTION-PHOTO-480481": "FRANKEN1967_EARLIEST_PUBLISHED_DEIRALLA_FRAGMENT_PHOTO_REPORTED_IN_LEMAIRE1985_PAGE480_TEXT_PREVIEW_ONLY",
+    "SRC-IAA-DSS-4Q120-B503715-2015": "PRIMARY_IAA_4Q120_GREEK_LEVITICUS_PHOTO_CATALOGUE_NO_GLYPH_COLLATION",
 }
 
 
@@ -700,6 +701,16 @@ def validate_source_access(sources: dict) -> list[str]:
                 or figure.get("historicalImageIdentity") != "MODERN_2019_REPRODUCTION_NOT_IDENTIFIED_AS_PHOENIX1976_FIG42_OR_BRILL1976_PLATE_INDEPENDENTLY"
                 or "DOES_NOT_ISSUE_FILE_SPECIFIC_PHOTO_LICENSE" not in str(figure.get("rightsBoundary", ""))):
                 errors.append(f"{prefix}: publisher 2019 figure captions are not 1976 infrared glyph collation or image reuse license")
+        if rid == "SRC-IAA-DSS-4Q120-B503715-2015":
+            if (source.get("url") != "https://www.deadseascrolls.org.il/explore-the-archive/image/B-503715"
+                or source.get("photoProvenanceBoundary") != "IAA_4Q120_B503715_PLATE378_FRAG15_2015_HALEVI_RECTO_METADATA_ONLY_NOT_GLYPH_COLLATION"
+                or source.get("reportedIaoEvidenceBoundary") != "PUBLISHED_SECONDARY_2017_FRAG20_4_PLATE378_FRAG15_IAO_ATTRIBUTED_DJD_IX_AND_PRIMARY_PIXELS_NOT_READ"
+                or source.get("officialLicenseBoundary") != "IAA_TERMS_2026_ALL_RIGHTS_RESERVED_PRIVATE_SINGLE_COPY_EXCEPTION_REPRODUCTION_REQUIRES_PERMISSION"
+                or source.get("accessState") != "CATALOG_ONLY"
+                or source.get("rightsState") != "PERMISSION_REQUIRED"
+                or source.get("criticalEditionCollated") is not False
+                or source.get("publicationState") != "BLOCKED"):
+                errors.append(f"{prefix}: IAA 4Q120 archival photo metadata cannot become glyph proof or publication permission")
         if rid in DEIR_ALLA_SOURCE_GUARDS:
             required_state = DEIR_ALLA_SOURCE_GUARDS[rid]
             actual_state = (source.get("accessState"), source.get("rightsState"), source.get("locatorState"))
