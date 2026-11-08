@@ -2203,7 +2203,7 @@
         "historicalNegativeSamePhysicalFragmentVerified": false,
         "glyphByGlyphCriticalCollationComplete": false,
         "imageReproductionPermissionGranted": false,
-        "nextAction": "Extracted p24 author-published Fig1 caption is verified; next inspect original figure pixels, DJD IX pp167-186/plates XXXIX-XLI, and physical-fraction identity with museum 2015 B-503715 and historical negatives. Respect IAA and journal image rights.",
+        "nextAction": "Original 2017 article figure caption text is confirmed. PDF.js pages 3-4 did not show Figure1 pixels (no whole-document absence inference). Original 1992 DJD IX public preview confirms p167 chapter locator but not critical pages or plates. Stop unproductive generic discovery; obtain original pp167-186 and plates XXXIX-XLI through library/publisher or rights-cleared archive, separately review figure pixels and historical IAA negatives.",
         "authorPdfCaptionWitness20261109": {
           "url": "https://zenodo.org/records/4260519/files/PV%20VTeH%20The%20god%20Iao%20and%20his%20connection%20with%20the%20Biblical%20God%2C%20with%20special%20emphasis%20on%20the%20manuscript%204QpapLXXLevb.pdf",
           "repository": "ZENODO_AUTHOR_DEPOSIT",
@@ -2218,6 +2218,27 @@
           "historicalNegativeComparisonCompleted": false,
           "independentEpigrapherApproved": false,
           "reprintRightsConfirmed": false
+        },
+        "originalDjdPublicPreview20261109": {
+          "publisherBibliography": "Patrick W. Skehan, Eugene Ulrich, Judith E. Sanderson, Qumran Cave 4.IV: Palaeo-Hebrew and Greek Biblical Manuscripts (DJD IX, Clarendon Press, 1992)",
+          "previewUrl": "https://books.google.com/books/about/Palaeo_Hebrew_and_Greek_Biblical_Manuscr.html?id=ml4FBeZ_ePMC",
+          "verifiedPreview": "PUBLISHER_BOOK_PREVIEW_TITLE_CONTENTS_AND_4QPAPLXXLEVB_CHAPTER_START_P167_ONLY",
+          "targetPages": "PRINT167_186",
+          "targetPlates": "XXXIX_XLI",
+          "fullOriginalTextInspected": false,
+          "photographicPlatesInspected": false,
+          "editorialReadingFromOriginalVerified": false,
+          "alternativeAccessRoute": "LICENSED_LIBRARY_OR_PUBLISHER_ACCESS_REQUIRED",
+          "notEquivalentTo": "1999_STUDY_EDITION_OR_2017_VASILEIADIS_CAPTION_OR_IAA_MUSEUM_PHOTOGRAPHY"
+        },
+        "authorFigureViewerAttempt20261109": {
+          "viewer": "ZENODO_PDFJS_PREVIEW",
+          "pagesChecked": "PDF_VIEWER_PAGES_3_AND_4_ONLY",
+          "observation": "FIGURE1_PIXELS_NOT_VISIBLE_ON_CHECKED_PAGES",
+          "entireDocumentExamined": false,
+          "imageAbsentFromOriginalDocumentProven": false,
+          "independentPhotoGraphemeCollationCompleted": false,
+          "nextAction": "Determine exact rendered figure page and directly inspect pixels if available through lawful source; if not, keep EVIDENCE_HOLD and use publisher, author or library access."
         }
       }
     }
