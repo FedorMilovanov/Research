@@ -12,11 +12,11 @@
     "arenaRecords": 29,
     "extensionRecords": 13,
     "contextAttestations": 105,
-    "sourceRegisterEntries": 63,
-    "regressionTests": 178,
+    "sourceRegisterEntries": 64,
+    "regressionTests": 180,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "NEW_HACKETT1986_EXACT_SHA_CI_PENDING",
+    "allSixCiChecks": "6_OF_6_SUCCESS_AT_PREVIOUS_8625A53_NEW_LEMAIRE1984_COMMIT_CI_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 17,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "4becd40439c617ab1de513c4faa58f00c6605228"
+    "lastConfirmedAllSixChecksSha": "8625a53b740a8807c4f02c81a9ed6d4791005f1e"
   },
   "allowedStatuses": [
     "DONE",
@@ -719,7 +719,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NG12 critical follow-up: access original Hoftijzer/van der Kooij 1976 transcription p173 and 33 photo plates, Hackett 1984 full critical monograph pp25,86–87, and visually verify Weippert 1991 pp169–170. Prepare source-specific 1976/1977/1986/1991 concordance and independent review; do not assert a single reading. Other chapters CH-PILOT-01..03 remain scholarly/rights held.",
+  "nextAction": "NG12 source-limited collation target: obtain 1976 photographic plates/transcription p173 and Hackett 1984 complete relevant pages, inspect specifically Combination I red rule, Ve/XVc joins and line8 competing reading; independently compare archaeological phase M IX dating against published Ibrahim/van der Kooij 1979. Do not confuse scholarly review with autopsy, and no publication.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -801,7 +801,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-08",
-    "planStatus": "Hackett 1986 scholarly eyewitness article pages 216, 220–221 verified from original journal scan: 63 source registrations, 178 corpus regression tests, 0 independent inscription collation / scholarly acceptance / Product approval; new exact SHA CI required.",
+    "planStatus": "NG12: Lemaire 1984 Syria review on Hackett monograph exact printed p142 text read; source 64, regression tests 180; NG12 BLOCKED_SOURCE, 0 critical ancient collations/peer reviews/Product. Prior 8625a53 6/6 success; new HEAD requires exact-SHA CI.",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -892,14 +892,15 @@
       "2026-11-08: critical source discovery: official DBG BHQ published Genesis2016 Deuteronomy2007 Job2024 Ruth2004, Exodus Peter Schwagmeier still in preparation; BHS standard revised1997 with apparatus (Reader edition no apparatus); official Göttingen Wevers/Quast Exodus 1991, Ziegler Isaias1983; UPenn NETS Exodus full PDF introduction p43 screenshot says Wevers basis only; HALOT and DSSEL institutional access endpoints, no full text; Deir Alla Hoftijzer van der Kooij1976 exact editio princeps, Caquot/Lemaire1977 and Lemaire1985 archive first pages, Wilson Wright2019 original p153 screenshot Combo I lines5-6 šdyn plural; Angelini2021 OA Brill selected indexed text but PDF screenshot 403. No sourceId or claimId or ancient collation invented.",
       "2026-11-08 audit: verified all six workflows completed success at pre-update SHA 5a97a3b, reconciled current 61 source registrations versus historic 48 in navigation and master plan, added fail-closed source-count navigation guard; preserved 3 reader manuscripts, images and scholarly/publication HOLDs without creating new source IDs or branches.",
       "2026-11-08 targeted original scholarly publication: Peeters 2021 OBO291 Lemaire pp185-186 checked in PDF page images; red-ink reconstructed heading separate from shdyn, wall inscription vs posited older scribal copy, divergent dates all claim-bounded. Registered one source and two negative tests, updated reader03/dossier03.",
-      "08.11.2026 researched original Hackett 1986 Biblical Archaeologist journal pp216,220–221: first-hand Amman inscription visits 1979/1981, separate author's reconstructed Combo I ʾlhn/šdyn, conjectural biblical shedim revocalization challenged by Weippert 1991, Caquot/Lemaire 1977 arrangement notes, correct Thompson inset authorship, figure rights held. Reader03 and Dossier03 updated with one source and two negative source checks."
+      "08.11.2026 researched original Hackett 1986 Biblical Archaeologist journal pp216,220–221: first-hand Amman inscription visits 1979/1981, separate author's reconstructed Combo I ʾlhn/šdyn, conjectural biblical shedim revocalization challenged by Weippert 1991, Caquot/Lemaire 1977 arrangement notes, correct Thompson inset authorship, figure rights held. Reader03 and Dossier03 updated with one source and two negative source checks.",
+      "NG12 targeted French original Lemaire 1984 review of Hackett printed p142, red-line/fragment Ve/XVc and line8 dispute plus 8th/7th dating conflict. Reader03 and dossier03 amended, 1 source with partial reading, 2 negative tests, not manuscript collation."
     ],
     "stillOpen": [
       "External Product/Arena consumers and zip prototypes still NOT independently authenticated by exact deployment/build; no dual-read v2 test witness",
       "55 old missing inline V1 locus fields remain absent by design; 50 old existing fields preserved, additional 33 sidecar-only witnesses not represented in old 22 generic snapshot",
       "Critical biblical textual manuscripts/collation, independent scholarly assessment, source rights and Product signoff remain HOLD",
       "Run 6/6 GitHub workflows on this audit update's exact new SHA before calling the updated control plane green; pre-update 5a97a3b succeeded but does not certify later commits.",
-      "63 registered sources not primary manuscript autopsies: original 1976 Deir Alla editio princeps plates, Hackett 1984 monograph, full 1977/1985 scans and critical collation still needed."
+      "64 registered sources: need actual first edition Hoftijzer/van der Kooij 1976 photographic plates and transcription p173, Hackett 1984 full monograph, Lemaire 1984 review pp141,143,144 for complete original comparison."
     ]
   },
   "originalResearchCheckpoint": {
@@ -1416,6 +1417,19 @@
       "criticalCollationsCompleted": 0,
       "independentReviewsCompleted": 0,
       "productApprovals": 0
+    },
+    "ng12Lemaire1984Review": {
+      "sourceId": "SRC-LEMAIRE-REVIEW-HACKETT-1984-P142",
+      "state": "ONE_ORIGINAL_CRITICAL_REVIEW_PAGE_DIRECTLY_READ_NOT_WHOLE_REVIEW_OR_BOOK",
+      "read": "Lemaire review Syria 61 1984 printed page142 digital archival text",
+      "issues": [
+        "Ve/XVc proposed positioning and red rule Combination I.1",
+        "line8 sdh scholarly dispute OCR not autopsy",
+        "phase M IX dating probably eighth century vs early seventh-century palaeography"
+      ],
+      "criticalCollationsCompleted": 0,
+      "externalPeerAccepted": 0,
+      "productApproved": 0
     }
   },
   "systematicTheologyTriage": {

@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 63,
+    "sourceRecords": 64,
     "approvedForProduct": 0
   },
   "records": [
@@ -1561,7 +1561,33 @@
       ],
       "hypothesisStatus": "HACKETT_1986_SHDYN_SHEDIM_REVOCALIZATION_ATTRIBUTED_AND_1991_CONTESTED_NOT_ESTABLISHED",
       "autopsyBoundary": "HACKETT_1979_1981_DIRECT_MUSEUM_EXAMINATION_NOT_OUR_INDEPENDENT_PLASTER_OR_1976_EDITION_COLLATION"
+    },
+    {
+      "id": "SRC-LEMAIRE-REVIEW-HACKETT-1984-P142",
+      "title": "André Lemaire, review of Jo Ann Hackett, The Balaam Text from Deir ‘Allā, Syria 61/1–2 (1984), 141–144",
+      "creator": "André Lemaire",
+      "year": 1984,
+      "url": "https://www.persee.fr/doc/syria_0039-7946_1984_num_61_1_6837_t1_0141_0000_3?pageId=T1_142",
+      "objectType": "peer_scholarly_original_critical_book_review_single_archived_print_page_read",
+      "sourceRole": "LEMAIRE_1984_DIRECT_CRITIQUE_OF_HACKETT_1984_FRAGMENT_PLACEMENT_INK_AND_DATING",
+      "locator": "Syria 61/1–2 (1984) 141–144; actual journal print p.142 via Persée full digital page text; 1984 review other pages 141,143,144 not directly read. Caquot/Lemaire 1977 pp193-194 cited by reviewer but not claimed read.",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "sourceObjectState": "Original review printed p142 archived as Persée HTML directly read. Lemaire disputes Hackett/Hamilton placement of Ve and XVc at end of Combination I.1 because of red horizontal rule and differing higher-line letter traces, and a proposed sphinx position. He cites differences in red vs black ink in first line, criticizes a line-2 reconstruction and disagrees at line-8 with rejection of sdh, citing original inspection and photographs. He attributes much of the 1984 book palaeographic/dialect conclusion to an assumed early-7th-century framework; he cites Ibrahim/van der Kooij 1979 ADAJ p50 on phase M/IX likely 8th-century BCE. OCR can damage ancient transliterations: no line-by-line copying from OCR. Review is secondary critique by an original investigator, not our physical autopsy or full 1984 monograph read.",
+      "supportedUse": "Attribute concrete scholarly objections concerning physical fragment joins and red rule, ink colour, line 8 sdh (OCR caveat) and archaeologically anchored alternative date; establish an edition-specific dispute matrix and requirement for material photographs. Quote a short source link and author/page, not the original photographs.",
+      "forbiddenUse": "Declare one assembly of fragments universally proven, silently substitute 1984 page 142 for complete Hackett monograph or 1976 photoplates, assert all pages of 1984 review read, assume eighth or seventh century dating definitively proved, claim independent inspection of red ink, treat sdh OCR as verified ancient character sequence, or reproduce protected page images.",
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "publicationState": "BLOCKED",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "comparisonScope": "SPECIFIC_FRAGMENT_INK_DATING_OBJECTIONS_IN_LEMAIRE1984_PRINT_P142_NOT_FINAL_VERDICT",
+      "autopsyBoundary": "LEMAIRE_CITES_OWN_EPIGRAPHIC_INSPECTION_OUR_ACCESS_ONE_ARCHIVED_REVIEW_PAGE_NOT_PLASTER"
     }
   ],
-  "auditRevision": "NG12_HACKETT1986_ORIGINAL_JOURNAL_SELECTED_PAGES_SOURCE_LOCK_20261108"
+  "auditRevision": "NG12_LEMAIRE1984_HACKETT_CRITICAL_COMPARISON_PAGE142_20261108"
 }

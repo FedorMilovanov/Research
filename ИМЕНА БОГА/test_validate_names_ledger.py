@@ -1135,6 +1135,18 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         row["hypothesisStatus"] = "BIBLICAL_SHADDAYYIM_READING_ESTABLISHED"
         self.assertTrue(any("scholarly hypothesis" in e for e in validate_source_access(d)))
 
+    def test_deir_alla_lemaire1984_one_page_cannot_be_promoted_to_complete_book(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-LEMAIRE-REVIEW-HACKETT-1984-P142")
+        row["accessState"] = "FULL_OBJECT_VERIFIED"
+        self.assertTrue(any("Deir Alla access/rights/locator" in e for e in validate_source_access(d)))
+
+    def test_deir_alla_lemaire1984_fragment_and_dating_claim_must_stay_disputed(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-LEMAIRE-REVIEW-HACKETT-1984-P142")
+        row["comparisonScope"] = "CERTAIN_CHRONOLOGY_AND_FINAL_PLACEMENT_OF_ALL_FRAGMENTS"
+        self.assertTrue(any("one-page source scope" in e for e in validate_source_access(d)))
+
     def test_deir_alla_livius_translation_cannot_inherit_photo_cc0_rights(self) -> None:
         d = copy.deepcopy(self.sources)
         row = next(x for x in d["records"] if x["id"] == "SRC-LIVIUS-LEVINE-COMPOSITE-TRANSLATION-2003")
