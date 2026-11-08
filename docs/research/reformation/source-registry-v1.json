@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 200,
+  "sourceCount": 202,
   "sources": [
     {
       "id": "REF-P01",
@@ -813,8 +813,8 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://tueditions.ulb.tu-darmstadt.de/v/pa000001-0063",
-      "verificationNote": "DDE bilingual diplomatic/normalized French TEI source 1599 2332 lines with BnF Gallica leaf links; articles III ~L230-265, VI L309-324, VII starts L325, XIII L477-487, XIV L488-504, XVI L512-532, LXXIII-LXXIV L1681-1713 read. XML edition CC BY 4.0; early print photos not collated; distinct date of Edict (1598) and print registration (25 Feb 1599).",
-      "checkedAt": "2026-11-04"
+      "verificationNote": "DDE bilingual diplomatic/normalized French TEI source 1599 2332 lines with BnF Gallica leaf links; articles III ~L230-265, VI L309-324, VII starts L325, XIII L477-487, XIV L488-504, XVI L512-532, LXXIII-LXXIV L1681-1713 read. XML edition CC BY 4.0; early print photos not collated; distinct date of Edict (1598) and print registration (25 Feb 1599). 2026-11-08 WAVE391: directly verified Paris 1599 printed edited text Art. I-II (L198–231, leaves 006r–007r) provides legal amnesty/forbids pursuing past war grievances or provoking new conflicts, NOT literal erasure of private memory. Art. XI (L423–463, leaves 011v–012r) permits one additional bailiwick worship site BUT excludes archiepiscopal/episcopal towns and ecclesiastical lordships while allowing request for nearby villages. Those registered exceptions are directly read; their absence from initial April 1598 text remains sourced to secondary legal-historical commentary REF-S99, not to visually collated BGE manuscript. Registered printed text rather than autograph; PARTIAL_OBJECT and rights/archival holds remain.",
+      "checkedAt": "2026-11-08"
     },
     {
       "id": "REF-P28",
@@ -3870,6 +3870,44 @@
       ],
       "url": "https://www.persee.fr/doc/ether_0014-2239_1998_num_73_3_4753_t1_0454_0000_2",
       "verificationNote": "2026-11-08 DIRECT READ short scholarly review on Persée p454. Bost says Garrisson 1997 publishes Paris-registered 92 general articles (edition source Archives nationales J 943 no.2), 56 particular articles, two dated brevets (3 April for 45,000 écus, 30 April for fortified places) and adds textual variants versus Geneva BPU Ms fr 413 fols1-40. Bernard Cottret 1997 prints original April 1598 version in appendix pp361-384. Critical bibliographic comparison, not direct manuscript leaf reading. This source establishes that there are existing scholarly line-level comparisons to use before attempting independent original collation; it DOES NOT authorize claim all original folios were read or images can be reused.",
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "REF-S99",
+      "documentYear": 2007,
+      "title": "Denis Ramelet, Vauban et la Révocation de l'Édit de Nantes, in Vauban, précurseur des Lumières? Cercle Condorcet de l'Avallonnais (2007), pp101–123, note 6 p122",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.researchgate.net/publication/215711627_Vauban_et_la_Revocation_de_l%27Edit_de_Nantes",
+      "verificationNote": "2026-11-08: read online hosted text of scholar Denis Ramelet's 2007 legal-historical chapter (publisher Cercle Condorcet de l'Avallonnais); main discussion and exact annotated note 6 at printed p122. Note 6 attributes to Bernard Cottret 1997 p365 a substantive Paris 1599 registration concession changing article XI: original 1598 edict allowed Reformed exercise in episcopal cities and ecclesiastical lordships where Paris 1599 barred the new bailiwick worship place. REF-P27 directly confirms wording of the Paris 1599 exception (L441–455), NOT by itself the earlier 1598 variant. Historical reconstruction from a secondarily cited critical edition, NOT physical Geneva Ms fr 413 or Cottret pp361–384 firsthand. Online transcription read, not complete visual PDF inspection; rights not cleared.",
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "REF-S100",
+      "documentYear": 2022,
+      "title": "Paul Bernard-Nouraud, L'Édit de Nantes et sa révocation, GrandPalaisRmn / Histoire par l'image, museum interpretation and archive-object photo description",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://histoire-image.org/etudes/edit-nantes-sa-revocation",
+      "verificationNote": "2026-11-08 directly read institutional 2022 museum page, object description (AE/II/763 photographic image with Henri IV and secretary Forget signatures, remains of seal) and historical interpretation: Archives nationales Paris hold REMANIÉ registered copy submitted to parlement rather than lost initial April 1598 original; the 1599 Parlement ceremony depicted in Jan Luyken's engraving is retrospective material commissioned for Élie Benoist's 1693 history, NOT contemporaneous eyewitness reportage, and Henri IV was NOT physically in the parliamentary verification ceremony as image might imply. Page uses 'Archives de Paris' holding name but AE/II/763 siglum matches Archives nationales: do not construct another archive object from ambiguous metadata. Art I-II discussion recognizes judicial amnesty and prohibition of renewed reciprocal violence; exact primary printed art I-II read separately in REF-P27. This modern institutional image/interpretation is NOT the original manuscript folio collation or reproduction license for photos/engravings.",
       "checkedAt": "2026-11-08"
     }
   ]
