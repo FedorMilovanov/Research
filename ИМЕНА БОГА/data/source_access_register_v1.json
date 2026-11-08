@@ -1776,13 +1776,15 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "locator": "Original 1977 Syria 54/3–4 pp189–208 DOI10.3406/syria.1977.6603 via Persée separate digitized original article page transcriptions, printed 193–198 directly read (p193 fragment reassembly proposal, p194 first five lines, p196 explicit line4=1976 line6 and sdyn in 1977 line6, p198 sdh bird reading in 1977 line8). Original 1976 editio princeps p173 and 33 plate images have NOT been read or independently checked.",
+      "locator": "Original 1977 Syria 54/3–4 pp189–208 DOI10.3406/syria.1977.6603 via Persée separate digitized original article page transcriptions, printed 193–198 directly read (p193 fragment reassembly proposal, p194 first five lines, p196 explicit line4=1976 line6 and sdyn in 1977 line6, p198 sdh bird reading in 1977 line8). Original 1976 editio princeps p173 and 33 plate images have NOT been read or independently checked. Additional printed p189 footnote (1) directly read on Persée HTML: original Hoftijzer 1976 BA article sixth-century title is noted as needing '8th-7th-century' in reference to BA39/3 (1976) p87; this is Caquot/Lemaire's 1977 report, NOT a reading of that erratum's original content.",
       "sourceObjectState": "The authors critique gaps in infrared imagery omitted from 1976 original edition and acknowledge their own first reassembly conditional on checking the physical original (p193). They rearrange fragments of Combination I around parts c,a,b, reducing nearly empty first-edition line3 and reconstructing different opening. In 1977 own published printed p196 their combination I line6 reads sdyn and they suggest plural of biblical shadday as a title used for assembled mighty beings. Their explicit p196 line4=(1976 ed. line6), therefore their line6 maps to original first-edition line8 in that segment, not an independent inscription witness. Their own printed p198 line8(d) separately says sdh (alternatively editor srh) in bird catalogue / proposed owl name; it is NOT sdyn of their line6, nor certain divine name. They discuss red/black ink distinctions in opening lines and disputed placement of fragment Ic, and distinguish tentative goddess name restorations from legible morphological features. Persée textual original pages were read but original ancient sign forms not visually collated, digitized HTML transcription may degrade special characters. Historical 1976 first-edition photos and original autograph unavailable. No identification of 'El Shaddai' as an identical divine referent was proven.",
-      "supportedUse": "Attribute Caquot/Lemaire 1977 author's line numbering and provisional Combination I assembly to cited pp193-194, their line6 sdyn plural-theonym proposal on p196, distinguish 1977 line8 bird sdh on p198, and explain why unqualified references to 'line8' from 1976/1977/Hackett do not identify a stable physical location. Permit bounded reader discussion on plural divine beings versus singular Biblical El Shaddai with scholarly attribution, no closure of disputed etymology or visual proof of ancient letters.",
+      "supportedUse": "Attribute Caquot/Lemaire 1977 author's line numbering and provisional Combination I assembly to cited pp193-194, their line6 sdyn plural-theonym proposal on p196, distinguish 1977 line8 bird sdh on p198, and explain why unqualified references to 'line8' from 1976/1977/Hackett do not identify a stable physical location. Permit bounded reader discussion on plural divine beings versus singular Biblical El Shaddai with scholarly attribution, no closure of disputed etymology or visual proof of ancient letters. Printed p189 note 1 also supports strictly attributing a dating-title correction (sixth to eighth/seventh century) to Caquot/Lemaire 1977, who cite BA39/3 p87; status of original erratum remains unviewed.",
       "forbiddenUse": "State that assistant directly viewed the 1976 original transcription p173 or any of 33 plates, claim the Caquot/Lemaire reading is certainly the ancient original or accepted academic consensus, equate line8 bird sdh with line6 sdyn, equate Deir Alla plural divine group with biblical singular God or assert one biblical etymology proved, reproduce source page/figure images in public Product without permission, claim the complete 1977 article pp189-208 was read.",
       "lineMappingScope": "CAQUOT_LEMAIRE_1977_LINE6_SDYN_CORRESPONDS_1976_LINE8_AFTER_REASSEMBLY",
       "lexicalDistinctionScope": "SDYN_AS_ATTRIBUTED_PLURAL_TITLE_SADDAY_VS_DIFFERENT_BIRD_SDH_1977_LINE8",
-      "originalScope": "PUBLISHED_1977_AUTHOR_TEXT_P193_TO198_DIRECTLY_READ_AS_PERSEE_HTML_NOT_ORIGINAL_1976_P173_OR_PLATES_NOT_IMAGE_COLLATION"
+      "originalScope": "PUBLISHED_1977_AUTHOR_TEXT_P193_TO198_DIRECTLY_READ_AS_PERSEE_HTML_NOT_ORIGINAL_1976_P173_OR_PLATES_NOT_IMAGE_COLLATION",
+      "indirect1976ErratumWitness": "CAQUOT_LEMAIRE_1977_PRINT_P189_FOOTNOTE1_ATTRIBUTES_SIXTH_CENTURY_TO_EIGHTH_SEVENTH_CORRECTION_TO_BA1976_39_3_P87_ORIGINAL_ERRATUM_TEXT_NOT_OBTAINED",
+      "indirect1976ErratumWitnessUrl": "https://www.persee.fr/doc/syria_0039-7946_1977_num_54_3_6603?pageId=T1_189"
     },
     {
       "id": "SRC-HACKETT-DEIRALLA-MONOGRAPH-1984-SELECTED-OCR",
@@ -1957,10 +1959,10 @@
       "accessState": "CATALOG_ONLY",
       "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "PERMISSION_REQUIRED",
-      "sourceObjectState": "University of Chicago Press official 1976 journal page directly confirms author, original title, March 1 1976, BA volume 39 issue 1 pages 11–17, DOI and publisher abstract. Paywalled article PDF and any original 1967 photo NOT examined. An official separate erratum to THIS JOURNAL ARTICLE appears in September 1976 issue 39/3 p87; full correction content is paywalled and UNKNOWN. This record is different from Hoftijzer/van der Kooij 1976 Brill critical edition.",
+      "sourceObjectState": "University of Chicago Press official 1976 journal page directly confirms author, original title, March 1 1976, BA volume 39 issue 1 pages 11–17, DOI and publisher abstract. Paywalled article PDF and any original 1967 photo NOT examined. An official separate erratum to THIS JOURNAL ARTICLE appears in September 1976 issue 39/3 p87; full correction content is paywalled and UNKNOWN. This record is different from Hoftijzer/van der Kooij 1976 Brill critical edition. Caquot/Lemaire, Syria54 (1977) p189 n1 specifically report replacing '6th-century' with '8th-7th-century' by citing BA39/3 p87. This later author's citation is READ, whereas the original article and erratum text remain unviewed; no other correction is presumed.",
       "locator": "The Biblical Archaeologist 39/1 (1976), 11–17, DOI 10.2307/3209412; article's officially registered erratum BA 39/3 (1976), p87, DOI 10.2307/3209398.",
       "supportedUse": "Identify both original and erratum as a pair for future institutional retrieval and check whether article's text/photo/caption requires correction before reliance. The historical sixth-century wording belongs to the ORIGINAL TITLE; it is not accepted as the current date of the Deir Alla inscription.",
-      "forbiddenUse": "Claim text of article, images, exact erratum wording, corrected epigraphy or photographs were read; assume the erratum changed the dating or transcription; cite headline '6th century' as proven dating; equate this article with separate 1976 Brill monograph.",
+      "forbiddenUse": "Claim text of article, images, exact erratum wording, corrected epigraphy or photographs were read; misstate the later 1977 correction report as directly inspected 1976 erratum or as settled modern dating; cite headline '6th century' as proven dating; equate this article with separate 1976 Brill monograph.",
       "evidenceClass": "B1",
       "publicationState": "BLOCKED",
       "holds": [
@@ -1969,7 +1971,8 @@
         "LOCATOR_HOLD",
         "EVIDENCE_HOLD"
       ],
-      "criticalEditionCollated": false
+      "criticalEditionCollated": false,
+      "indirect1977CorrectionWitness": "CAQUOT_LEMAIRE_1977_PRINT_P189_FOOTNOTE1_ATTRIBUTES_SIXTH_CENTURY_TO_EIGHTH_SEVENTH_CORRECTION_TO_BA1976_39_3_P87_ORIGINAL_ERRATUM_TEXT_NOT_OBTAINED"
     },
     {
       "id": "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3",
@@ -1984,9 +1987,9 @@
       "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "PERMISSION_REQUIRED",
       "locator": "The Biblical Archaeologist 39/3 (1 September 1976), p.87; DOI 10.2307/3209398, publisher's official bibliographic listing.",
-      "sourceObjectState": "Publisher page independently verifies erratum title, date, issue, page and DOI. Publisher's full-text view leads to restricted access; correction text and any images were NOT retrieved. No causal assertion about what was fixed.",
-      "supportedUse": "Warn researchers that the initial March 1976 article has a formal published erratum requiring full-text verification before precise quotation or illustration comparison.",
-      "forbiddenUse": "Invent the erratum's correction, claim it changes century, name, reading, photograph or date, use it as original 1976 Brill page 173 or as evidence of independent palaeographic collation.",
+      "sourceObjectState": "Original erratum text NOT retrieved: publisher metadata independently verifies BA39/3 Sep 1976 p87 and DOI. Caquot/Lemaire 1977 Syria54 p189 footnote 1 DIRECTLY READ in Persée HTML attributes a correction of original article title/date from 6th century to 8th-7th century to this erratum. That is later published scholarly testimony, NOT original erratum inspection; its complete wording and any further corrections remain unknown.",
+      "supportedUse": "Warn researchers that the initial March 1976 article has a formal published erratum requiring full-text verification before precise quotation or illustration comparison. Attribute the 8th-7th-century dating-title correction specifically to Caquot/Lemaire 1977 p189 n1 (published later source), with a HOLD on exact original 1976 wording.",
+      "forbiddenUse": "Invent the erratum's correction, claim it changes century, name, reading, photograph or date, use it as original 1976 Brill page 173 or as evidence of independent palaeographic collation. Do not imply that 1976 p87 was directly seen, that this is a modern precise archaeological date, or that it establishes any ancient šdyn spelling.",
       "evidenceClass": "B1",
       "publicationState": "BLOCKED",
       "holds": [
@@ -1995,7 +1998,10 @@
         "LOCATOR_HOLD",
         "EVIDENCE_HOLD"
       ],
-      "criticalEditionCollated": false
+      "criticalEditionCollated": false,
+      "indirect1977CorrectionWitness": "CAQUOT_LEMAIRE_1977_PRINT_P189_FOOTNOTE1_ATTRIBUTES_SIXTH_CENTURY_TO_EIGHTH_SEVENTH_CORRECTION_TO_BA1976_39_3_P87_ORIGINAL_ERRATUM_TEXT_NOT_OBTAINED",
+      "indirect1977CorrectionWitnessUrl": "https://www.persee.fr/doc/syria_0039-7946_1977_num_54_3_6603?pageId=T1_189",
+      "originalErratumTextVerified": false
     },
     {
       "id": "SRC-HOFTIJZER-PHOENIX22-DEIRALLA-1976-FIG41-42",
@@ -2078,5 +2084,5 @@
       }
     }
   ],
-  "auditRevision": "NG12_1967_FIELD_DIARY_JERUSALEM_PAM_AND_FRANKEN_VT_FIRST_PHOTO_BIBLIOGRAPHIC_ROUTE_20261108"
+  "auditRevision": "NG12_CAQUOT_LEMAIRE_1977_P189_INDIRECT_ERRATUM_DATING_CORRECTION_ORIGINAL_STILL_UNVIEWED_20261108"
 }
