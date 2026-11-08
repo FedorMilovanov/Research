@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 193,
+  "sourceCount": 195,
   "sources": [
     {
       "id": "REF-P01",
@@ -3739,6 +3739,44 @@
       ],
       "url": "https://www.cambridge.org/core/books/abs/revelation/appendix-a-millennial-problem/1229E28DF76CDF4BE40A97E87E6C9E27",
       "verificationNote": "2026-11-08: Cambridge University Press official book-chapter public abstract directly read; premillennial, amillennial, postmillennial interpretations of Revelation 20:4-6 are expressly named as contested scholarly interpretations. Cambridge digital publication 2015, chapter/book full text not read; B1 cannot be sole support for dispute quote-safe proof. No blanket endorsement by Witherington of author's premillennial interpretation inferred.",
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "REF-S94",
+      "documentYear": 1993,
+      "title": "Vern S. Poythress, Genre and Hermeneutics in Revelation 20:1–6, Journal of the Evangelical Theological Society 36(1), 1993, 41–54, author-hosted HTML",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://frame-poythress.org/genre-and-hermeneutics-in-revelation-201-6/",
+      "verificationNote": "2026-11-08: author-hosted complete HTML available, targeted sections directly read: Levels of Communication, Rev 20:1-6 interpretation, Looking afresh at Rev 20:1-6; discusses vision vs historical referent, souls of martyrs, recapitulation, Rev 19/20 nations and battle parallels. This is an independently attributed secondary interpretive argument, not manuscript collation or proof that all amillennialists agree. Full article/PDF not subjected to page-by-page scholarly audit; rights remain unknown.",
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "REF-S95",
+      "documentYear": 1999,
+      "title": "Charles Powell, Progression Versus Recapitulation in Revelation 20:1–6: Some Overlooked Arguments, paper presented Evangelical Theological Society 1999, Bible.org",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://new.bible.org/node/2481",
+      "verificationNote": "2026-11-08: publication identifies Charles Powell as author, ETS 1999 conference in editorial preface. Read targeted Introduction and The Imprisonment of Satan Rev 20:1–3, Rev 9/12/20 contrasts, alternatives to recapitulation, reference to two uses of Greek ezesan. Represents argued progression view not direct text-critical Greek collation, nor independent reading of Beale/White cited by Powell. Full archival/proceedings witness and publication rights not verified.",
       "checkedAt": "2026-11-08"
     }
   ]
