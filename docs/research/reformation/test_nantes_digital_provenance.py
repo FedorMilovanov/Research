@@ -70,13 +70,16 @@ class NantesDigitalProvenanceTests(unittest.TestCase):
         for token in ("BGE Ms. fr. 413", "num.bge@geneve.ch",
                       "22 mai 1599", "29 mai 1599", "article XI",
                       "EARLY_XI_COLLATION_HOLD", "COPY_DATE_CONFLICT_22_29_MAY_1599",
-                      "NOT_SENT", "RIGHTS_HOLD", "PUBLICATION_HOLD"):
+                      "ARCHIVE_INQUIRY_SENT / RESPONSE_PENDING", "RIGHTS_HOLD", "PUBLICATION_HOLD"):
             with self.subTest(token=token):
                 self.assertIn(token, request)
         self.assertIn("nantes_bge_ms_fr_413_archival_request.md", self.dossier)
         self.assertIn("nantes_bge_ms_fr_413_archival_request.md", self.plan)
-        self.assertIn("ARCHIVE_ACCESS_REQUEST_DRAFT", self.plan)
+        self.assertIn("ARCHIVE_INQUIRY_SENT / RESPONSE_PENDING", self.plan)
         self.assertIn("REF-P86 CATALOG_ONLY", self.dossier)
+        self.assertIn("14:19:53 UTC", request)
+        self.assertIn("14:19:53 UTC", self.plan)
+        self.assertNotIn("ARCHIVE_ACCESS_REQUEST_DRAFT / NOT_SENT", request)
         self.assertEqual(self.source_count, 204)
         self.assertEqual(self.sources["REF-P86"]["accessState"], "CATALOG_ONLY")
         self.assertIn("PUBLICATION_HOLD", self.sources["REF-P86"]["holds"])
