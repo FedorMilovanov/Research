@@ -692,6 +692,14 @@ def validate_source_access(sources: dict) -> list[str]:
                 or "NOT proof" not in str(chain.get("museumIdentity", ""))
                 or "NOT automatic" not in str(chain.get("modernArchive", ""))):
                 errors.append(f"{prefix}: 1967 museum appointment cannot prove archived infrared negatives or IAA custody")
+        if rid == "SRC-DEIRALLA-STEINER-WAGEMAKERS-2019":
+            figure = source.get("laterPublishedCombinationFigureAccess2019")
+            if (not isinstance(figure, dict)
+                or figure.get("status") != "2019_SOURCE_CAPTIONS_AND_ARCHAEOLOGICAL_CONTEXT_VERIFIED_2019_IMAGE_PIXELS_NOT_AUTOPSIED_1967_1976_ORIGINAL_HOLD"
+                or figure.get("browserVisualResult") != "PUBLISHER_BOOKVIEWER_PRINT143_VIEWER144_TEXT_AND_FIGURE_CAPTIONS_RENDERED_BUT_IMAGES_NOT_VISIBLE_IN_2026_BROWSER_SESSION_NO_GLYPH_AUTOPSY"
+                or figure.get("historicalImageIdentity") != "MODERN_2019_REPRODUCTION_NOT_IDENTIFIED_AS_PHOENIX1976_FIG42_OR_BRILL1976_PLATE_INDEPENDENTLY"
+                or "DOES_NOT_ISSUE_FILE_SPECIFIC_PHOTO_LICENSE" not in str(figure.get("rightsBoundary", ""))):
+                errors.append(f"{prefix}: publisher 2019 figure captions are not 1976 infrared glyph collation or image reuse license")
         if rid in DEIR_ALLA_SOURCE_GUARDS:
             required_state = DEIR_ALLA_SOURCE_GUARDS[rid]
             actual_state = (source.get("accessState"), source.get("rightsState"), source.get("locatorState"))
