@@ -1565,5 +1565,20 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                             for e in validate_source_access(data)))
 
 
+
+    def test_4q120_p24_pdf_caption_does_not_prove_fig_pixels(self) -> None:
+        data = copy.deepcopy(self.sources)
+        row = next(x for x in data["records"] if x["id"] == "SRC-IAA-DSS-4Q120-B503715-2015")
+        row["numberingCrosswalk20261108"]["authorPdfCaptionWitness20261109"]["authorImagePixelsIndependentlyAutopsied"] = True
+        self.assertTrue(any("4Q120 DJD editorial vs IAA museum-plate numbering" in e
+                            for e in validate_source_access(data)))
+
+    def test_4q120_p24_pdf_caption_does_not_grant_reproduction_rights(self) -> None:
+        data = copy.deepcopy(self.sources)
+        row = next(x for x in data["records"] if x["id"] == "SRC-IAA-DSS-4Q120-B503715-2015")
+        row["numberingCrosswalk20261108"]["authorPdfCaptionWitness20261109"]["reprintRightsConfirmed"] = True
+        self.assertTrue(any("4Q120 DJD editorial vs IAA museum-plate numbering" in e
+                            for e in validate_source_access(data)))
+
 if __name__ == "__main__":
     unittest.main()
