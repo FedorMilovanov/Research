@@ -61,6 +61,25 @@ class NantesWorshipAndAmnestyTests(unittest.TestCase):
         self.assertIn("REF-P27", self.dossier)
         self.assertIn("амнистия", self.dossier.lower())
 
+    def test_legal_peace_does_not_erase_redress_problem(self):
+        for name, doc in (("chapter", self.chapter), ("dossier", self.dossier)):
+            with self.subTest(name=name):
+                self.assertIn("Депре" if name == "chapter" else "Desprez", doc)
+                self.assertIn("потерпевш", doc.lower())
+                self.assertIn("L198–231", doc)
+                self.assertIn("судебн", doc.lower())
+                self.assertIn("не" if name == "chapter" else "Недоказанное", doc)
+        self.assertIn("DESPREZ_CHRONOLOGY_CONFLICT", self.dossier)
+        self.assertIn("DESPREZ_CHRONOLOGY_CONFLICT", self.plan)
+        self.assertIn("LOCAL_EXECUTION_HOLD", self.plan)
+        row = next(l for l in self.claims.splitlines() if l.startswith("| C301 |"))
+        self.assertIn("DESPREZ_CHRONOLOGY_CONFLICT", row)
+        self.assertIn("REF-P27", row)
+        self.assertIn("B1 интерпретацию", row)
+        self.assertEqual(self.registry["sourceCount"], 202)
+        self.assertEqual(len(self.refs), 202)
+        self.assertIn("PUBLICATION_HOLD", self.refs["REF-P27"]["holds"])
+
     def test_engraving_is_not_primary_1599_witness(self):
         for marker in ("REF-S100", "Jan Luyken", "Élie Benoist",
                        "1693", "нельзя принимать за репортаж", "RIGHTS_HOLD"):
