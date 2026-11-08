@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 79,
+    "sourceRecords": 80,
     "approvedForProduct": 0
   },
   "records": [
@@ -2109,7 +2109,36 @@
         "nextInstitutionalPath": "If authorized, ask the user's library for legitimate access to printed p481 through Brill/JSTOR, Portico participating library, or print copy; quote print ISSN 0042-4935 and electronic ISSN 1568-5330, Vetus Testamentum 17/4 (1967), 480–481, DOI 10.1163/156853367X00187 and JSTOR 1516696.",
         "status": "PRESERVATION_INDEX_ONLY_NO_1967_PAGE481_OBJECT"
       }
+    },
+    {
+      "id": "SRC-IAA-DSS-4Q120-B503715-2015",
+      "title": "Israel Antiquities Authority / Leon Levy Dead Sea Scrolls Digital Library, 4Q120 (4Q papLXXLeviticus b), photo B-503715, Plate 378 Frag 15, Apr 2015",
+      "creator": "Israel Antiquities Authority; photograph Shai Halevi",
+      "year": 2015,
+      "url": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-503715",
+      "originalManuscriptCatalogUrl": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/4Q120-1",
+      "officialImageTermsUrl": "https://www.deadseascrolls.org.il/terms",
+      "objectType": "primary_manuscript_photography_catalogue_metadata_2015_not_visual_script_collation",
+      "sourceRole": "PRIMARY_IAA_4Q120_GREEK_LEVITICUS_PHOTO_CATALOGUE_NO_GLYPH_COLLATION",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "locator": "Official IAA Leon Levy digital library image B-503715, 2015 full-spectrum colour, recto; archival Plate 378, Frag 15, manuscript 4Q120 = 4QpapLXXLevb; photographer Shai Halevi. Separate secondary mapping Pavlos D. Vasileiadis 2017 *Vetus Testamentum et Hellas* 4 pp21–51 p24 fig1 describes Lev4:27 'εντολων ιαω' as editorial fragment20:4 / plate378 frag15; that mapping has not been authenticated against DJD IX printed plates or sign-level imaging.",
+      "sourceObjectState": "IAA official HTML metadata directly read: Plate 378 Frag 15, B-503715, April 2015 Shai Halevi, Full Spectrum Color, Recto, 4Q120 Greek Leviticus. The primary image PIXELS and ancient Greek letterforms have NOT been examined directly in this research. The association with ancient word ΙΑΩ at Lev4:27 is documented in secondary scholarly published interpretation, not independent glyph collation. Not the same manuscript as 8HevXIIgr; no claim about entire original Greek Pentateuch or spoken divine-name pronunciation is warranted.",
+      "supportedUse": "Precise official museum image locator for future independent source-critical examination of 4Q120 Greek Leviticus manuscript: 2015 image B-503715 Plate378 Frag15, recto. Separately cite editor-specific 2017 mapping to 4Q120 fragment20/Lev4:27 when describing scholarly views; images, readings, edition variants and chronology still require separate verification and rights assessment. Do not conflate photographic cataloguing with the original LXX archetype.",
+      "forbiddenUse": "Claim actual ΙΑΩ glyphs, surrounding Greek characters, fragment 20 line 4, palaeographic date, original Greek Pentateuch wording, public-domain rights of IAA 2015 photography, universal pronunciation of יהוה, or exact DJD IX apparatus directly checked from metadata alone. Never extrapolate from this 4Q120 museum image to the 1967 Deir Alla inscription or its infrared photographs.",
+      "photoProvenanceBoundary": "IAA_4Q120_B503715_PLATE378_FRAG15_2015_HALEVI_RECTO_METADATA_ONLY_NOT_GLYPH_COLLATION",
+      "reportedIaoEvidenceBoundary": "PUBLISHED_SECONDARY_2017_FRAG20_4_PLATE378_FRAG15_IAO_ATTRIBUTED_DJD_IX_AND_PRIMARY_PIXELS_NOT_READ",
+      "officialLicenseBoundary": "IAA_TERMS_2026_ALL_RIGHTS_RESERVED_PRIVATE_SINGLE_COPY_EXCEPTION_REPRODUCTION_REQUIRES_PERMISSION"
     }
   ],
-  "auditRevision": "NG12_STEINER_WAGEMAKERS_2019_ROOM_CONTEXT_FIG516_517_VIEWER_NO_PHOTO_PIXELS_20261108"
+  "auditRevision": "NG05_IAA_4Q120_B503715_ORIGINAL_PHOTO_CATALOGUE_NOT_AUTOPSY_20261108"
 }
