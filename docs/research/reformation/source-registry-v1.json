@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 195,
+  "sourceCount": 197,
   "sources": [
     {
       "id": "REF-P01",
@@ -250,7 +250,7 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://germanhistorydocs.org/en/from-the-reformations-to-the-thirty-years-war-1500-1648/ghdi:document-4311",
-      "verificationNote": "GHDI translated Articles 5-7,10,14,15 inspected; WA 30/3:160-171 and translator Ellen Yutzy Glebe identified; signed manuscript not collated CHECKPOINT 2026-11-07: entire GHDI English presentation of all 15 Marburg Articles and all 10 signatories read; Articles 5-8,10-15 checked. Article 9's bracketed Matthew 28:15 verse pointer is editorially erroneous for Great Commission 'go baptize' (Matthew 28:19); do not repeat. Translation according to WA 30/3 pp160-171; does not elevate full historical 1529 German manuscript access; status PARTIAL_OBJECT remains.",
+      "verificationNote": "GHDI translated Articles 5-7,10,14,15 inspected; WA 30/3:160-171 and translator Ellen Yutzy Glebe identified; signed manuscript not collated CHECKPOINT 2026-11-07: entire GHDI English presentation of all 15 Marburg Articles and all 10 signatories read; Articles 5-8,10-15 checked. Article 9's bracketed Matthew 28:15 verse pointer is editorially erroneous for Great Commission 'go baptize' (Matthew 28:19); do not repeat. Translation according to WA 30/3 pp160-171; does not elevate full historical 1529 German manuscript access; status PARTIAL_OBJECT remains. 2026-11-08 TARGETED: independently read the 15-article modern German online transcription at HAPuls https://www.hapuls.de/node/1473, declaring edition lineage: Heiko A. Oberman (ed.), Kirchen- und Theologiegeschichte in Quellen III (1994), pp.159-161; G. May (ed.) 1970 pp.67-70 and Stupperich translation. Article 9 explicitly cites Matt 28:19 (contra erroneous GHDI 28:15); article 14 approves infant baptism; article 15 documents unresolved corporeal-presence question. This is a separate modern editorial text REF-P85, NOT 1529 handwriting.",
       "checkedAt": "2026-11-04"
     },
     {
@@ -268,7 +268,7 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=618165",
-      "verificationNote": "archive shelfmark and variants documented, manuscript image not collated CHECKPOINT 2026-11-07: Zurich archive description explicitly distinguishes Z with additions in 7/13/15 from K without; Hessian catalog REF-P75 confirms archival group HStAM 3,245 with digitally available JPG but no scanned pages personally inspected. Modern editorial site REF-S77 identifies themes, NOT a direct German manuscript collation. Academic Engeler 2023 REF-S76 discusses drafting-stage emendations 8/15/possibly 11: DIFFERENT comparison dimension.",
+      "verificationNote": "archive shelfmark and variants documented, manuscript image not collated CHECKPOINT 2026-11-07: Zurich archive description explicitly distinguishes Z with additions in 7/13/15 from K without; Hessian catalog REF-P75 confirms archival group HStAM 3,245 with digitally available JPG but no scanned pages personally inspected. Modern editorial site REF-S77 identifies themes, NOT a direct German manuscript collation. Academic Engeler 2023 REF-S76 discusses drafting-stage emendations 8/15/possibly 11: DIFFERENT comparison dimension. 2026-11-08 official Zurich archival entry also enumerates contemporary printed witnesses Froschauer 1529 VD16 W2118 and W2119 with e-rara digitization links; those digital scans were NOT read in this pass; Z additions 7/13/15 remain distinct from drafting-stage suggestions discussed by secondary Engeler. CATALOG_ONLY remains.",
       "checkedAt": "2026-11-04"
     },
     {
@@ -1109,7 +1109,7 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://users.ox.ac.uk/~fmml2152/Reformation/Luther1525-Rotten.pdf",
-      "verificationNote": "Oxford printed-pamphlet historical/bibliographic introduction records Taylorian ARCH.8°.G.1525(11) [Wittenberg Josef Klug] VD16 L4690; earliest print-run with unfilled title border distinct from later version with Psalm text. Source document actual folios not collated; secondary scholarly identification of primary object.",
+      "verificationNote": "Oxford printed-pamphlet historical/bibliographic introduction records Taylorian ARCH.8°.G.1525(11) [Wittenberg Josef Klug] VD16 L4690; earliest print-run with unfilled title border distinct from later version with Psalm text. Source document actual folios not collated; secondary scholarly identification of primary object. 2026-11-08 targeted cross-check: Oxford Taylorian 2025 introduction differentiates early Klug first run and later border-with-psalm issue; scholarly Thomas Kaufmann 2024, chapter 1 p.24, proposes manuscript of Ermahnung was complete before Luther departed Wittenberg 16 Apr 1525, first issue last week April and later re-typeset corrected issue. This competes with travel/Eisleben composition in other works; REF-S96 PARTIAL_OBJECT is the separately registered secondary basis, NOT evidence original Klug folios collated. CATALOG_ONLY retained.",
       "checkedAt": "2026-11-04"
     },
     {
@@ -3247,7 +3247,7 @@
       ],
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails?archivalDescriptionId=5447099",
       "checkedAt": "2026-11-07",
-      "verificationNote": "Direct official Hessen Arcinsys archival catalogue for HStAM 3, Nr.245 read: file of Philip's letters includes signed protocol/articles of the Marburg disputation; the site marks a Nutzungsdigitalisat JPG and a digital-media viewer, but NO autograph images were directly retrieved or visually collated. Exact leaves 60r–64v and K designation identified independently in Zurich archive REF-P13-ARCHIVE; no false claim that whole HStAM 3 Nr245 exclusively contains the 15 articles. The Zurich copy Z is a DISTINCT archive object and has 3 additions to articles 7,13,15, absent from K. CATALOG_ONLY and ARCHIVE_HOLD persist."
+      "verificationNote": "Direct official Hessen Arcinsys archival catalogue for HStAM 3, Nr.245 read: file of Philip's letters includes signed protocol/articles of the Marburg disputation; the site marks a Nutzungsdigitalisat JPG and a digital-media viewer, but NO autograph images were directly retrieved or visually collated. Exact leaves 60r–64v and K designation identified independently in Zurich archive REF-P13-ARCHIVE; no false claim that whole HStAM 3 Nr245 exclusively contains the 15 articles. The Zurich copy Z is a DISTINCT archive object and has 3 additions to articles 7,13,15, absent from K. CATALOG_ONLY and ARCHIVE_HOLD persist. 2026-11-08: Hessen Arcinsys digitalMediaViewer.action?archivalDescriptionId=5447099 opened as an image-viewer landing page; a separate public HAPuls node/1472 labels its item full original digital facsimiles for HStAM PA Nr.245 Bl.60-63, but images themselves were NOT retrieved/visually verified here. The archive catalog points to fol.60r-64v; maintain shelfmark/folio discrepancy between HAPuls abbreviated 60-63 and the archival 60r-64v. NO COLLATION, CATALOG_ONLY remains."
     },
     {
       "id": "REF-S76",
@@ -3777,6 +3777,43 @@
       ],
       "url": "https://new.bible.org/node/2481",
       "verificationNote": "2026-11-08: publication identifies Charles Powell as author, ETS 1999 conference in editorial preface. Read targeted Introduction and The Imprisonment of Satan Rev 20:1–3, Rev 9/12/20 contrasts, alternatives to recapitulation, reference to two uses of Greek ezesan. Represents argued progression view not direct text-critical Greek collation, nor independent reading of Beale/White cited by Powell. Full archival/proceedings witness and publication rights not verified.",
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "REF-P85",
+      "documentYear": 1529,
+      "title": "Marburg Articles, full modern German transcription published on HAPuls after Heiko A. Oberman (1994), Gerhard May (1970), Stupperich (1966)",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.hapuls.de/node/1473",
+      "verificationNote": "2026-11-08 FULL fifteen-article on-page modern German edited text read (articles 1-15 + 10 signatories); art.9 cites Mt28:19, art.14 infant baptism, art.15 corporeal Eucharistic-presence difference and call for mutual Christian love. Editor-lineage HAPuls states Heiko A. Oberman 1994 pp159-161 after Gerhard May 1970 pp67-70 and Stupperich 1966; HAPuls node/1472 links asserted complete original digitals of Hessen HStAM PA Nr245, Bl60-63 but those archive image bytes were NOT inspected. A modern scholarly transcription, not autopsy of autograph K and certainly not collation against Zurich Z variants 7/13/15.",
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "REF-S96",
+      "documentYear": 2024,
+      "title": "Thomas Kaufmann, Der Bauernkrieg: Ein Medienereignis (Herder, 2024), introductory chapter 1 Lange Schatten p.24",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.schulthess.com/annot/564C427C7C32343537323833333161363634396564393832346139623136396135316466387C7C504446.pdf?sq=5",
+      "verificationNote": "2026-11-08 directly read publisher's copyrighted excerpt PDF: printed p24 (PDF 0-based p21), chapter 1. Kaufmann argues, contra a frequent older chronology connecting composition with Luther's 16 Apr–6 May 1525 trip to Thuringia/Mansfeld, that the Ermahnung manuscript was likely finished before departure, the first Klug issue in final week of April, and a corrected re-typeset subsequent issue followed. This is a RESEARCH HYPOTHESIS / scholarly reconstruction about timing, NOT an original dated manuscript or verified press ledgers. The full 2024 monograph (beyond publisher excerpt), notes 1-8 and original 1525 Klug witnesses were NOT exhaustively read; no reproduction rights established.",
       "checkedAt": "2026-11-08"
     }
   ]
