@@ -744,6 +744,38 @@ def validate_source_access(sources: dict) -> list[str]:
             )
             if not historical_valid:
                 errors.append(f"{prefix}: 4Q120 historical composite negatives are not fragment-specific IAO collations or 2015-photo identity proofs")
+        if rid == "SRC-IAA-DSS-4Q120-B503715-2015":
+            numbering = source.get("numberingCrosswalk20261108")
+            expected_numbering = {
+                "status": "SECONDARY_NUMBERING_CONCORDANCE_NO_DIRECT_DJD_IX_COLLATION",
+                "museumPlateAndFragment": "PLATE_378_FRAGMENT_15",
+                "museumSourceState": "IAA_PRIMARY_IMAGE_CATALOGUE_LABEL_DIRECTLY_CHECKED",
+                "academicIndex": "GARCIA_MARTINEZ_TIGCHELAAR_1999_STUDY_EDITION_VOL1_PRINT_P293",
+                "academicIndexAccess": "PRINTED_PAGE_293_DIRECTLY_INSPECTED_WITH_PAGE_IMAGE_INDEX_NOT_DJD_IX_EDITION",
+                "originalDjdCitation": "SKEHAN_ULRICH_SANDERSON_DJD_IX_1992_PP167_186_PLATES_XXXIX_XLI_ORIGINAL_NOT_OBTAINED",
+                "academicEditorialFragmentsLev427": "EDITORIAL_FRAGMENTS_20_21_LEVITICUS_4_26_28",
+                "academicEditorialFragmentsLev46": "EDITORIAL_FRAGMENTS_12_15_LEVITICUS_4_6_8",
+                "reportedCrosswalk": "VASILEIADIS_2017_P24_FIG1_EDITORIAL_FRAGMENT20_LINE4_TO_MUSEUM_PLATE378_FRAGMENT15",
+                "reportedCrosswalkAccess": "AUTHOR_DEPOSIT_RECORD_VERIFIED_CROSSWALK_FROM_INDEXED_SECONDARY_TEXT_AUTHOR_PDF_P24_NOT_DIRECTLY_INSPECTED",
+            }
+            valid_numbering = (
+                isinstance(numbering, dict)
+                and all(numbering.get(k) == v for k, v in expected_numbering.items())
+                and numbering.get("museumImage") == "https://www.deadseascrolls.org.il/explore-the-archive/image/B-503715"
+                and numbering.get("academicIndexUrl") == "https://ancientmodern.org/wp-content/uploads/2016/02/the_dead_sea_scrolls_study_edition_brill_1999.pdf"
+                and numbering.get("reportedCrosswalkSource") == "https://zenodo.org/records/4260519"
+                and numbering.get("distinctNumberingSchemes") is True
+                and numbering.get("publishedCrosswalkSourceNotDirectDjdReview") is True
+                and all(numbering.get(flag) is False for flag in (
+                    "directDjdPageAndPlateChecked",
+                    "physicalFragmentPhotoComparisonComplete",
+                    "historicalNegativeSamePhysicalFragmentVerified",
+                    "glyphByGlyphCriticalCollationComplete",
+                    "imageReproductionPermissionGranted",
+                ))
+            )
+            if not valid_numbering:
+                errors.append(f"{prefix}: 4Q120 DJD editorial vs IAA museum-plate numbering crosswalk cannot be upgraded without original critical collation")
         if rid in DEIR_ALLA_SOURCE_GUARDS:
             required_state = DEIR_ALLA_SOURCE_GUARDS[rid]
             actual_state = (source.get("accessState"), source.get("rightsState"), source.get("locatorState"))
