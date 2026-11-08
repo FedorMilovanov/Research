@@ -36,7 +36,7 @@ class Luther1517WormsEditorialTests(unittest.TestCase):
             with self.subTest(original_explanations=expected):
                 self.assertGreater(len(reader.split()), 2000)
                 self.assertEqual(apparatus.count("**Первоначальное пояснение "), expected)
-                self.assertNotRegex(reader, r"\\bREF-[PS]\\d+|\\bVD16\\b|CATALOG_ONLY|ORIGINAL_PRINT_COLLATION_HOLD")
+                self.assertNotRegex(reader, r"\bREF-[PS]\d+|\bVD16\b|CATALOG_ONLY|ORIGINAL_PRINT_COLLATION_HOLD")
                 self.assertIn("PUBLICATION_HOLD", chapter)
                 self.assertIn("ORIGINAL_PRINT_COLLATION_HOLD", apparatus)
                 self.assertIn("RIGHTS_HOLD", apparatus)
