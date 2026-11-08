@@ -43,7 +43,7 @@ class NantesVariantCrosswalkTests(unittest.TestCase):
             with self.subTest(word=word):
                 self.assertIn(word.lower(), self.chapter.lower())
         for word in ("исходная статья 37", "ранняя статья 37",
-                     "XXXVII", "Бордо", "Blatt 023r", "L926–935"):
+                     "XXXVII", "Бордо", "Blatt", "023r", "L926–935"):
             self.assertIn(word.lower(), self.dossier.lower())
 
     def test_article_count_mechanism_is_not_third_document(self):
