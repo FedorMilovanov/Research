@@ -1300,5 +1300,30 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("1991 text-only OCR promoted" in e for e in validate_source_access(d)))
 
 
+    def test_blum_2016_original_selected_pages_cannot_become_1976_plate_autopsy(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-BLUM-DEIRALLA-RECONSTRUCTION-2016-METATEXTE")
+        row["blumAccessScope2016"] = "1976_P173_33_PLATES_PALAEOGRAPHIC_CLOLLATION_COMPLETE"
+        self.assertTrue(any("Blum 2016 original printed-page OCR cannot become" in e for e in validate_source_access(d)))
+
+    def test_blum_2016_context_gloss_cannot_prove_el_shadday_identity(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-BLUM-DEIRALLA-RECONSTRUCTION-2016-METATEXTE")
+        row["blumShdynBoundary2016"] = "SHDYN_VOWELS_PROVEN_ELYON_EL_SHADDAY_IDENTITY_PROVEN"
+        self.assertTrue(any("Blum 2016 contextual šdyn gloss" in e for e in validate_source_access(d)))
+
+    def test_blum_2016_attendant_messengers_cannot_be_hostile_councils_consensus(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-BLUM-DEIRALLA-RECONSTRUCTION-2016-METATEXTE")
+        row["blumCouncilBoundary2016"] = "SCHOLARLY_CONSENSUS_TWO_OPPOSED_GROUPS_PROVEN"
+        self.assertTrue(any("Blum 2016 functional messenger and council" in e for e in validate_source_access(d)))
+
+    def test_blum_2016_solar_heaven_sluices_not_elliff_2023_same_translation(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-BLUM-DEIRALLA-RECONSTRUCTION-2016-METATEXTE")
+        row["blumSkyBoundary2016"] = "ALL_TRANSLATIONS_AGREE_FASTEN_HEAVENLY_BOLTS"
+        self.assertTrue(any("Blum 2016 sun goddess sky-sluices" in e for e in validate_source_access(d)))
+
+
 if __name__ == "__main__":
     unittest.main()

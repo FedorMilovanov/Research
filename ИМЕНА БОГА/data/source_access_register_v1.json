@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 72,
+    "sourceRecords": 73,
     "approvedForProduct": 0
   },
   "records": [
@@ -1813,7 +1813,38 @@
       "forbiddenUse": "Claim 2023 proposal is consensus; call Scribd user OCR an authorized original publisher facsimile or all pp read; call reprinted 1976 reading own original inspection; merge edition-specific 1976/1977/1984 I.6 coordinates or conflate sdh bird with sdyn; reuse figures or translation without permission.",
       "comparisonBoundary": "PUBLISHER_ABSTRACT_CONFIRMS_CONTESTED_SHAMASH_TPRY_FASTEN_PROPOSAL_NOT_ACCEPTED_CONSENSUS",
       "original1976Boundary": "1976_P173_CITED_SECONDHAND_IN_2023_THIRD_PARTY_OCR_NOT_DIRECT_ORIGINAL_1976_TRANSCRIPTION_OR_33_PLATES"
+    },
+    {
+      "id": "SRC-BLUM-DEIRALLA-RECONSTRUCTION-2016-METATEXTE",
+      "title": "Erhard Blum, Die altaramäischen Wandinschriften vom Tell Deir ʻAlla und ihr institutioneller Kontext, in Metatexte (2016), 21–52, original de Gruyter volume",
+      "creator": "Erhard Blum",
+      "year": 2016,
+      "url": "https://uplopen.com/books/9325/files/12c5a59d-f2d2-4a93-91f0-2941f88ea05f.pdf",
+      "alternateUrl": "https://israelforum.de/wp-content/uploads/2025/03/Die_altaramaischen_Wandinschriften_vom_Tell_Deir_A-1.pdf",
+      "doi": "10.1515/9783110417944-004",
+      "objectType": "original_authored_scholarly_degruyter_2016_selected_printed_pages_text_not_image_collaudation",
+      "sourceRole": "DEIR_ALLA_2016_BLUM_AUTHOR_RECONSTRUCTION_CONTEXTUAL_SHDYN_AND_ALT_HEAVEN_GATE_READING",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "locator": "Original de Gruyter Metatexte vol15 2016 printed pp24–26 (language/Combination A/figure tentative), 35–36 (school context), 44 n94 messenger/šdyn council functional distinction, 44 n97 'Hohe/Erhabene' inference from context, 45 reconstructed sun goddess/sky sluices and šdyn 'Hohen'. Full original publisher PDF text parsed; screenshot service failed 404 and original 1976 pp173/pls1–33 were not independently read.",
+      "sourceObjectState": "2016 original scholarly author passage verified within full publisher-formatted open PDF and separate chapter text; selected target original pages pp24–26,35–36,44–45 consulted, not the entire book and NOT ancient plaster photograph autopsy. OCR may corrupt special Aramaic signs; 2016 figure1 not image inspected. Original whole volume identifies text license CC BY-NC-ND 3.0: noncommercial distribution with attribution and no derivatives, possible third-party images rights, not permission for commercial Product image adaptation. No original 1976 p173 + photo plates read.",
+      "supportedUse": "Precisely attribute Blum's tentative Combination A and functional messenger/council division p44n94, his p44n97 explicit contextual 'Hohe/Erhabene' not proven lexeme or consonantal vocalization, his p45 female solar deity/cloud-occluded heavenly sluices as distinct from Elliff Coleman 'fasten the bolts' and Hoftijzer alternate, and p35-36 pedagogical room hypothesis. Discuss biblical El Shadday only as a cautious comparison.",
+      "forbiddenUse": "Claim 2016 is a first-hand assistant palaeographic collation; claim Blum proved ancient vowels or lexical etymology of šdyn; conflate Blum Combination A verse 6 with 1976 or 1977 I.6; claim two hostile groups or one entire scholarly consensus, claim proven biblical El Shadday identity; reproduce/modify original article figure1 in commercial products or use third-party pictures without rights; claim 1976 original transcription p173 or all 33 original photo plates were seen.",
+      "licenseClaim": "ORIGINAL_2016_OPEN_ACCESS_VOLUME_CC_BY_NC_ND_3_0_NOT_COMMERCIAL_PRODUCT_REUSE_OR_MODIFICATION",
+      "blumAccessScope2016": "ORIGINAL_2016_DEGRUYTER_BOOK_SELECTED_PRINT_P24_26_35_36_44_45_TEXT_OCR_IMAGE_SCREENSHOT_FAILED_NOT_1976_P173_33_PLATES",
+      "blumShdynBoundary2016": "SHDYN_HOHE_ERHABENE_GLOSS_CONTEXTUALLY_INFERRED_FOOTNOTE97_NOT_ESTABLISHED_ANCIENT_VOWELS_OR_BIBLICAL_EL_SHADDAY_IDENTITY",
+      "blumCouncilBoundary2016": "BLUM2016_FOOTNOTE94_FUNCTIONAL_MESSENGERS_VS_SHDYN_COUNCIL_NOT_LEVINE_HOSTILE_GROUPS_OR_HACKETT_CONSENSUS",
+      "blumSkyBoundary2016": "BLUM2016_P45_FEMALE_SUN_DEITY_CLOUD_OBSTRUCTED_HEAVEN_SLUCES_DISTINCT_FROM_HOFTIJZER1991_AND_ELLIFF_COLEMAN2023_PROPOSALS"
     }
   ],
-  "auditRevision": "NG12_1991_BRILL_NYU_DIRECT_SELECTED_PAGES_HOFTIJZER_HACKETT_WEIPPERT_20261108"
+  "auditRevision": "NG12_BLUM2016_ORIGINAL_P24_26_35_36_44_45_CONTEXT_GLOSS_SUN_CLOUDS_SCHOLARLY_VARIANTS_20261108"
 }
