@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 78,
+    "sourceRecords": 79,
     "approvedForProduct": 0
   },
   "records": [
@@ -1222,12 +1222,12 @@
       "alternateUrl": "https://www.sidestone.com/books/digging-up-the-bible",
       "objectType": "open_access_archaeological_excavation_report_with_original_photographic_reproductions",
       "sourceRole": "DEIR_ALLA_FIND_CONTEXT_FRAGMENTS_AND_PHOTO_LOCATORS",
-      "locator": "Printed pp. 141–144; figs. 5.15–5.17; excavation rooms EE334/EE335",
+      "locator": "Printed pp. 141–144; figs. 5.15–5.17; excavation rooms EE334/EE335; NEW exact 1967 photo history: printed pp63–65 film procurement, p121–122 Franken diary Apr1/Apr3 Jerusalem, printed p122 fig4.40 just-lifted plaster photograph; these are text/figure CAPTION locators, not full photo autopsy.",
       "accessState": "PARTIAL_OBJECT",
       "locatorState": "COARSE_LOCATOR_ONLY",
-      "sourceObjectState": "Publisher confirms complete open-access illustrated volume; relevant excavation context and figure captions located via document text. Detailed letters on original plaster and all photographic facsimiles NOT independently collated. Open access does not automatically grant reuse of third-party images.",
-      "supportedUse": "Ground archaeological provenance, room association, plaster-fragment restoration and exact visual-verification targets separate from philological etymology.",
-      "forbiddenUse": "Treat excavation photographs as full palaeographic autopsy or transfer copyrighted archival images to Product without rights review.",
+      "sourceObjectState": "Publisher confirms complete open-access illustrated volume; relevant excavation context and figure captions located via document text. Detailed letters on original plaster and all photographic facsimiles NOT independently collated. Open access does not automatically grant reuse of third-party images. Later checked publisher indexed original 2019 pp63–65 and p121–122 field-diary transcription: April 3 1967 appointment with director of Palestine Archaeological Museum for infrared photography; original 1967 diary manuscript/negative archive and actual photographs NOT reviewed. IAA Mandate archive 1919–1948 does not establish holdings of Deir Alla 1967.",
+      "supportedUse": "Ground archaeological provenance, room association, plaster-fragment restoration and exact visual-verification targets separate from philological etymology. Cite exact 1967 diary transcription and film procurement chronology as archaeological archival leads, distinguishing the April 3 appointment from proof of current repository custody.",
+      "forbiddenUse": "Treat excavation photographs as full palaeographic autopsy or transfer copyrighted archival images to Product without rights review. Treat 300 infrared-film sheets requested as 300 surviving negative photos, assert 1967 field photographs or Brill plate images were obtained, treat the Jerusalem appointment as proof of photographic custody in 1967 or 2026, or assume Mandate-era IAA catalog indexes Jordan 1967.",
       "evidenceClass": "B1",
       "criticalEditionCollated": false,
       "rightsState": "RIGHTS_UNKNOWN",
@@ -1237,7 +1237,15 @@
         "EVIDENCE_HOLD",
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
-      ]
+      ],
+      "excavationPhotoChain1967": {
+        "photographicEquipment": "Steiner/Wagemakers 2019 printed pp63–65: March 28 1967 ZWO urgent telegram for 300 sheets 13×18 infrared film; after substitutions/equipment issues photographic material delivered early April. Documentary account of film procurement, NOT 300 actual preserved developed negatives.",
+        "april3FieldDiary": "Steiner/Wagemakers 2019 printed p121–122 quote of Franken field diary: Apr 1 infrared equipment arrived; Apr 3 Franken and Schouten went to Jerusalem and made an appointment with the director of the Palestine Archaeological Museum for infrared photography and subsequent museum storage. This is a SECONDARY PUBLISHED TRANSCRIPTION of a FIELD DIARY; diary manuscript itself not autopsied.",
+        "fig440": "Steiner/Wagemakers 2019 printed p122 fig4.40 caption identifies a Balaam inscription fragment just lifted from soil; the figure itself NOT visually inspected or sign-collated by this research.",
+        "museumIdentity": "The book identifies historic Palestine Archaeological Museum with Rockefeller Museum. This provides one additional 1967 institutional inquiry route; NOT proof original negatives/films were created there, ever deposited there, or held by a current authority.",
+        "modernArchive": "Israel Antiquities Authority public archive confirms that Palestine Archaeological Museum records are part of its holdings description, but the publicly digitized project specifically covers 1919–1948 British Mandate records, NOT automatic inclusion of 1967 Deir Alla negatives. Contact route archive director iaa.archive.r@israntique.org.il for historical inquiry ONLY; no current custody/archival ID established and no request sent.",
+        "status": "HISTORICAL_CHAIN_TEXT_VERIFIED_PRECISE_PAGES_PHOTOGRAPHIC_BYTES_UNVERIFIED_CUSTODY_UNKNOWN"
+      }
     },
     {
       "id": "SRC-DEIRALLA-BLUM-EBR-2013",
@@ -1648,7 +1656,7 @@
       "accessState": "PARTIAL_OBJECT",
       "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "PERMISSION_REQUIRED",
-      "locator": "Persée original CRAI 129/2 pp270–285; targeted printed pages 271–272 direct archived text. P271 discusses Naveh vs Hackett/Cross palaeographic dating, primary Ibrahim/van der Kooij 1979 p50; p272 first paragraph quotes a C14 estimate circa 800 BCE with indicated 70-year margin and ~66% probability, note10 ATDA original 1976 p16. P272 note11 references Ibrahim/van der Kooij 1983 p583 on stratigraphy, and p272 links Amos 1:1 earthquake as possibility.",
+      "locator": "Persée original CRAI 129/2 pp270–285; targeted printed pages 271–272 direct archived text. P271 discusses Naveh vs Hackett/Cross palaeographic dating, primary Ibrahim/van der Kooij 1979 p50; p272 first paragraph quotes a C14 estimate circa 800 BCE with indicated 70-year margin and ~66% probability, note10 ATDA original 1976 p16. P272 note11 references Ibrahim/van der Kooij 1983 p583 on stratigraphy, and p272 links Amos 1:1 earthquake as possibility. Additional ORIGINAL 1985 p271: Lemaire explicitly reports a first photograph of the most significant fragment in Franken, Vetus Testamentum 17 (1967) 480–481, a historical report, not direct inspection of the 1967 photo.",
       "sourceObjectState": "Author Lemaire 1985 text p271–272 directly consulted in Persée page text. He asserts a circa 800 BCE radiocarbon estimate with +/- circa 70-year range and 66% stated probability sourced in a note to earlier ATDA (=Hoftijzer/van der Kooij 1976) p16. Actual original 1976 radiocarbon sample/granularity/calibration was NOT directly read; Persée text may have OCR flaws ('+ 70' instead of a plus-minus sign), no independently recalibrated date. Lemaire argues ~750 BCE plausible and tentatively connects destruction to Amos 1:1 famous earthquake; no proof same seismic event. 1979 field report says SOME samples were still under study then: may be different sample series; do not assert no C14 measurements existed before 1979, nor that the series are definitely identical/different without original sample IDs.",
       "supportedUse": "Document historically reported radiocarbon evidence predating and cited by Lemaire 1985 without claiming first-edition ATDA 1976 p16 was inspected. Distinguish approximate C14 dates of burn layer from inscription production, hypothetical literary precursor, archaeologists' preliminary date, and conjectural linkage to biblical Amos 1:1 quake; source-bound citation + caveat.",
       "forbiddenUse": "Claim direct independent reading of ATDA 1976 p16, raw sample identifiers/modern IntCal calibration, statistically established 750 BCE earthquake, proof of Amos 1:1 identification or publication date, assert 1979 report contradicted the earlier C14 result or that no earlier C14 analyses existed, reproduce journal pages without permission, mark epigraphic collation DONE.",
@@ -1661,7 +1669,8 @@
         "PUBLICATION_HOLD"
       ],
       "carbonScope": "LEMAIRE1985_ATTRIBUTED_PRIOR_1976_P16_C14_CIRCA800_MARGIN70_PROBABILITY66_NOT_PRIMARY_SAMPLE_REVIEW",
-      "earthquakeScope": "LEMAIRE1985_AMOS1_1_EARTHQUAKE_SPECULATIVE_NOT_EVIDENCED_IDENTITY"
+      "earthquakeScope": "LEMAIRE1985_AMOS1_1_EARTHQUAKE_SPECULATIVE_NOT_EVIDENCED_IDENTITY",
+      "earliestPhotoReportedByLemaire1985": "ORIGINAL_LEMAIRE1985_P271_REPORTS_FRANKEN_VT17_1967_P480_481_PUBLISHED_EARLY_LARGE_FRAGMENT_PHOTO_BUT_1967_ORIGINAL_PDF_AND_PHOTO_NOT_SEEN"
     },
     {
       "id": "SRC-ADAJ1986-IBRAHIM-VANDERKOOIJ-2C14-P142",
@@ -2028,7 +2037,34 @@
         "nextRequired": "Seek authorized page-85/88 scan or direct print copy from publisher Ex Oriente Lux / institutional library and Brill editio princeps p173-178 with original plates; identify fragment and sign positions before any šdyn collation.",
         "interpretation": "Do not conclude figure 42 shows or does not show šdyn. Image identity beyond caption remains unresolved. No license permission inferred."
       }
+    },
+    {
+      "id": "SRC-FRANKEN-1967-VT-FIRST-INSCRIPTION-PHOTO-480481",
+      "title": "H. J. Franken, Texts from the Persian Period from Tell Deir 'Alla, Vetus Testamentum 17/4 (1967), pp480–481 — reported first photograph",
+      "creator": "Hendricus Jacobus Franken",
+      "year": 1967,
+      "url": "https://doi.org/10.1163/156853367X00187",
+      "objectType": "original_1967_two_page_excavation_notice_bibliographic_identity_ONLY_original_scanned_article_NOT_READ",
+      "sourceRole": "FRANKEN1967_EARLIEST_PUBLISHED_DEIRALLA_FRAGMENT_PHOTO_REPORTED_IN_LEMAIRE1985_CATALOG_ONLY",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "holds": [
+        "LOCATOR_HOLD",
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "locator": "Vetus Testamentum 17/4 (Oct 1967) pp480–481, DOI 10.1163/156853367X00187; indexed in CAL Bibliography and National Library of Israel. Andre Lemaire 1985 CRAI 129/2 original printed p271 explicitly states earliest photo of large fragment appeared in this 1967 article. NO direct article page or photograph visually checked.",
+      "sourceObjectState": "Brill DOI/volume/printed pages checked via bibliographic catalogues CAL / National Library / Eureka. The existence of photograph is Lemaire's retrospective scholarly statement on original 1985 printed p271; 1967 article PDF/figure was not independently obtained, so photographic bytes, original image size, photo date and readable lettering are unknown. Despite word 'Persian Period' in the historical TITLE, that is not a modern accepted inscription chronology, which subsequent archaeological and palaeographic work revises.",
+      "supportedUse": "Prioritize obtaining earliest reported published excavation photo at precise 1967 pages 480–481, separately from Hoftijzer Phoenix 1976 fig42, Hackett1986 photos, 2019 modern reprint and Brill 1976 critical plates. Cite as bibliographic route only, with Lemaire1985 secondary photographic statement.",
+      "forbiddenUse": "Assert this first 1967 photo was independently inspected, assume it displays šdyn, date the original inscription to Persian period based solely on 1967 paper title, assume first photo is same as Phoenix 1976 IR fig42, claim reuse/rights clearance or any autograph-level collation.",
+      "firstPhotoBoundary": "LEMAIRE1985_FIRST_PHOTO_REPORT_1967_FRANKEN_VT17_PP480481_ONLY_ORIGINAL_1967_IMAGE_UNSEEN",
+      "datingBoundary": "HISTORICAL_TITLE_PERSIAN_PERIOD_NO_ACCEPTED_INSCRIPTION_DATE"
     }
   ],
-  "auditRevision": "NG12_PHOENIX1976_AUTHOR_IR_FIG42_EXACT_LOCATOR_CAPTION_ONLY_TEXT_SHADDAY_RECONSTRUCTION_20261108"
+  "auditRevision": "NG12_1967_FIELD_DIARY_JERUSALEM_PAM_AND_FRANKEN_VT_FIRST_PHOTO_BIBLIOGRAPHIC_ROUTE_20261108"
 }
