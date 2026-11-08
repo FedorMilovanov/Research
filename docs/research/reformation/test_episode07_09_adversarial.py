@@ -49,7 +49,7 @@ class ReformationAdversarialSevenNineTests(unittest.TestCase):
     def test_justification_different_definitions_and_confessions(self):
         s = self.books[8]
         for marker in ("статья IV", "статья VI", "статья XX",
-                       "главе VII", "главе VIII", "канон IX",
+                       "главе VII", "Глава VIII", "канон IX",
                        "канон XI", "канон XXIV", "формальную",
                        "инструментальную", "REF-P14", "REF-P20",
                        "REF-P77", "1563"):
