@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 69,
+    "sourceRecords": 70,
     "approvedForProduct": 0
   },
   "records": [
@@ -1728,7 +1728,35 @@
       "labPair": "ORIGINAL_1972_P53_GRN5283_B433A_2690PM60_PIT_GRN5633_BB303_2600PM50_CHARRED_GRAIN",
       "imageScope": "CAMBRIDGE_ORIGINAL_1972_FULL_PDF_TEXT_P53_READ_WEB_SCREENSHOT_UNAVAILABLE_NOT_PHOTO_CROSSCHECKED",
       "religionScope": "1972_LAB_LIST_TEMPLE_ANNEXES_AS_CONTEMPORARY_SITE_INTERPRETATION_NOT_PROVEN_1986"
+    },
+    {
+      "id": "SRC-CAQUOT-LEMAIRE-DEIRALLA-REASSEMBLY-1977-P193198",
+      "title": "André Caquot and André Lemaire, Les textes araméens de Deir 'Alla, Syria 54/3–4 (1977), 189–208, original pp.193–198 critically read",
+      "creator": "André Caquot; André Lemaire",
+      "year": 1977,
+      "url": "https://www.persee.fr/doc/syria_0039-7946_1977_num_54_3_6603?pageId=T1_196",
+      "doi": "10.3406/syria.1977.6603",
+      "objectType": "original_authored_1977_scholarly_critical_reevaluation_p193_198_page_text_directly_read",
+      "sourceRole": "ORIGINAL_1977_CRITICAL_REASSEMBLY_EXACT_LINE_CONCORDANCE_SHDYN_VS_SDH",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "locator": "Original 1977 Syria 54/3–4 pp189–208 DOI10.3406/syria.1977.6603 via Persée separate digitized original article page transcriptions, printed 193–198 directly read (p193 fragment reassembly proposal, p194 first five lines, p196 explicit line4=1976 line6 and sdyn in 1977 line6, p198 sdh bird reading in 1977 line8). Original 1976 editio princeps p173 and 33 plate images have NOT been read or independently checked.",
+      "sourceObjectState": "The authors critique gaps in infrared imagery omitted from 1976 original edition and acknowledge their own first reassembly conditional on checking the physical original (p193). They rearrange fragments of Combination I around parts c,a,b, reducing nearly empty first-edition line3 and reconstructing different opening. In 1977 own published printed p196 their combination I line6 reads sdyn and they suggest plural of biblical shadday as a title used for assembled mighty beings. Their explicit p196 line4=(1976 ed. line6), therefore their line6 maps to original first-edition line8 in that segment, not an independent inscription witness. Their own printed p198 line8(d) separately says sdh (alternatively editor srh) in bird catalogue / proposed owl name; it is NOT sdyn of their line6, nor certain divine name. They discuss red/black ink distinctions in opening lines and disputed placement of fragment Ic, and distinguish tentative goddess name restorations from legible morphological features. Persée textual original pages were read but original ancient sign forms not visually collated, digitized HTML transcription may degrade special characters. Historical 1976 first-edition photos and original autograph unavailable. No identification of 'El Shaddai' as an identical divine referent was proven.",
+      "supportedUse": "Attribute Caquot/Lemaire 1977 author's line numbering and provisional Combination I assembly to cited pp193-194, their line6 sdyn plural-theonym proposal on p196, distinguish 1977 line8 bird sdh on p198, and explain why unqualified references to 'line8' from 1976/1977/Hackett do not identify a stable physical location. Permit bounded reader discussion on plural divine beings versus singular Biblical El Shaddai with scholarly attribution, no closure of disputed etymology or visual proof of ancient letters.",
+      "forbiddenUse": "State that assistant directly viewed the 1976 original transcription p173 or any of 33 plates, claim the Caquot/Lemaire reading is certainly the ancient original or accepted academic consensus, equate line8 bird sdh with line6 sdyn, equate Deir Alla plural divine group with biblical singular God or assert one biblical etymology proved, reproduce source page/figure images in public Product without permission, claim the complete 1977 article pp189-208 was read.",
+      "lineMappingScope": "CAQUOT_LEMAIRE_1977_LINE6_SDYN_CORRESPONDS_1976_LINE8_AFTER_REASSEMBLY",
+      "lexicalDistinctionScope": "SDYN_AS_ATTRIBUTED_PLURAL_TITLE_SADDAY_VS_DIFFERENT_BIRD_SDH_1977_LINE8",
+      "originalScope": "PUBLISHED_1977_AUTHOR_TEXT_P193_TO198_DIRECTLY_READ_AS_PERSEE_HTML_NOT_ORIGINAL_1976_P173_OR_PLATES_NOT_IMAGE_COLLATION"
     }
   ],
-  "auditRevision": "NG12_1972_ORIGINAL_LAB_P53_DIRECT_ID_VALUE_EVIDENCE_20261108"
+  "auditRevision": "NG12_CAQUOT_LEMAIRE_1977_CRITICAL_193_198_EDITION_LINE_MAPPING_AND_SDH_DISTINCTION_20261108"
 }

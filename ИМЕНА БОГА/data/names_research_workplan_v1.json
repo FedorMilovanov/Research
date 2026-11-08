@@ -12,11 +12,11 @@
     "arenaRecords": 29,
     "extensionRecords": 13,
     "contextAttestations": 105,
-    "sourceRegisterEntries": 69,
-    "regressionTests": 193,
+    "sourceRegisterEntries": 70,
+    "regressionTests": 196,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PREVIOUS_980B257_ALL_6_CI_SUCCESS_NEW_1972_PRIMARY_LAB_HEAD_REQUIRES_EXACT_SHA_CI",
+    "allSixCiChecks": "PRIOR_CF70391_6_OF_6_SUCCESS_NEW_CAQUOT_LEMAIRE1977_EXACT_SHA_CI_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 17,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "980b257f849f9259290fe6df45ca1186caf8c2f8"
+    "lastConfirmedAllSixChecksSha": "cf703911da54b0fb47ca36220bb9c29ab591a88a"
   },
   "allowedStatuses": [
     "DONE",
@@ -719,7 +719,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NG12: original ATDA Hoftijzer/van der Kooij 1976 p16 and critically original 1976 inscription printed p173/179/183 and 33 photo plates; compare with 1984 Hackett full monograph and Caquot/Lemaire 1977 contested fragment positions. 1972 direct Groningen p53 lab pair known, 1986 inconsistent attribution is unresolved reported error without verified erratum; no further general C14 browsing unless one precise correction is found. Independent scientific readers and rights approvals remain mandatory.",
+  "nextAction": "NG12 acquisition sequence: (1) original 1976 Hoftijzer/van der Kooij transcription p173 + apparatus p183, original Comb I fragment plates, together with comparison of fragment Ic red rule; (2) Hackett1984 full critical edition/plates vs 1977 redaction; (3) expert review of plural sdyn morphology and El Shaddai relationship. Exact line concordance 1977 line6->1976 line8 is documented; 1977 line8 sdh bird must never be mixed with sdyn. Avoid further C14 research unless source correction emerges, and no unlicensed Product images.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -801,7 +801,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-08",
-    "planStatus": "NG-12 primary 1972 radiocarbon source breakthrough: Cambridge original Vogel/Waterbolk Radiocarbon14/1 p53 PDF text directly read; GrN5283=2690±60 charcoal PIT (1964) versus GrN5633=2600±50 charred grain DESTRUCTION (1967), so ADAJ1986 p142 GrN5633=2690±60 is inconsistent with original lab attribution. 69 registered sources, 193 corpus tests, 0 ancient epigraphic critical collation, external approval or Product rights. 1972 PDF screenshot unavailable; actual ATDA1976 p16 unread. Previous 980b257 6/6 CI, new HEAD requires exact-SHA.",
+    "planStatus": "NG12 primary scholarly editorial version study: directly read Caquot/Lemaire 1977 Syria original paginated digital print text pp193–198. Their 1977 line6 sdyn maps to 1976 line8 after fragment reassembly; separate 1977 line8(d) sdh is proposed bird name and not divine group; hypothetical derivation sdyn~shadday attributed. Original ancient plaster/1976 p173 + photos still uncollated. 70 sources, 196 corpus tests, 0 epigraphic critical collation/peer approved claims/Product. Previous cf70391 exact SHA 6/6 success, new SHA CI pending.",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -899,14 +899,15 @@
       "08.11.2026 NG12 first-hand Jordanian archaeological field report 1986 pp137 and142 visually verified: C14 two identified burned-plant samples GrN5633 2690±60 BP / GrN8119 2590±70 BP with contemporary 770–880 BCE calibrations, phase IX physical plaster/bench rooms, no incontrovertible sanctuary; historical dated samples distinguished from epigraphic writing. Source ledger+2 negative tests, Dossier03+Reader03 and navigation updated.",
       "08.11.2026 NG12 forensic radiocarbon provenance: official Cambridge publisher PDF Weinstein 1984 p351 visually checked; exact source conflict with original ADAJ 1986 p142 in GrN5283/5633 IDs, values and pit-vs-destruction provenience; created source record, two negative source guards, dossier and Reader03 attribution, requiring Vogel/Waterbolk 1972 p53 before resolution.",
       "08.11.2026 NG12 audited existing digital excerpt attributed to Franken1976 printed p16: single Phase M/IX BB303 charred grain GrN5633 2600±50 BP aligns Weinstein1984 original p351 and differs from ADAJ1986 original p142. Kept as secondary quotation in original 1976 registry record rather than inflated source count; 2 new adversarial scope tests, Reader03/dossier03 and master/navigation reconciled. No assumption that 1986 mismatch is proven typo or original 1972/1976 actually read.",
-      "NG12 primary lab source obtained directly from Cambridge publisher complete 1972 PDF: original printed page 53 verified by extraction, two sample IDs and different excavation material/years + δ13C, pretreatment and contemporary ca800 BCE correction, contradicting 1986 lab sample pairing. The cause of 1986 report error not inferred; 1972 use of 'temple annexes' attributed as assumption, not proven sanctuary; ledger+3 fail-closed tests, Reader03/Dossier03, machine/human plan/nav corrected."
+      "NG12 primary lab source obtained directly from Cambridge publisher complete 1972 PDF: original printed page 53 verified by extraction, two sample IDs and different excavation material/years + δ13C, pretreatment and contemporary ca800 BCE correction, contradicting 1986 lab sample pairing. The cause of 1986 report error not inferred; 1972 use of 'temple annexes' attributed as assumption, not proven sanctuary; ledger+3 fail-closed tests, Reader03/Dossier03, machine/human plan/nav corrected.",
+      "NG12 first firsthand original scholarly redaction Caquot/Lemaire Syria1977 pp193–198 inspected directly by paginated digital text: attributed hypothesis of moving fragment Ic/combination lines, red ink evidence, explicit 1977 line4 =1976 line6 concordance, 1977 line6 sdyn corresponds 1976 line8, 1977 line8 sdh is a proposed owl (distinct), title shadday plural only author proposal. Register 1 source, 3 falsification tests, Reader03/Dossier03 and SSOT plan/nav updated."
     ],
     "stillOpen": [
       "External Product/Arena consumers and zip prototypes still NOT independently authenticated by exact deployment/build; no dual-read v2 test witness",
       "55 old missing inline V1 locus fields remain absent by design; 50 old existing fields preserved, additional 33 sidecar-only witnesses not represented in old 22 generic snapshot",
       "Critical biblical textual manuscripts/collation, independent scholarly assessment, source rights and Product signoff remain HOLD",
       "Run 6/6 GitHub workflows on this audit update's exact new SHA before calling the updated control plane green; pre-update 5a97a3b succeeded but does not certify later commits.",
-      "69 source registrations. Original 1972 Cambridge PDF text p53 read (no web screenshot for image). Original Hoftijzer/van der Kooij 1976 p16 remains SECONDARY_EXCERPT and original inscription transcription p173/33 plates uncollated. No 1986 erratum or current radiocarbon calibration; no definitive date of earthquake or temple function."
+      "70 source registrations; original 1977 author critical redaction pages193-198 direct paginated text, not 1976 editio princeps p173/179 or photo plates. Need ancient script facsimile & original Hackett1984 to judge joins, title form, and scholarly reception. No independent claims or Product publication allowed."
     ]
   },
   "originalResearchCheckpoint": {
@@ -1515,6 +1516,21 @@
       "criticalEpigraphicCollations": 0,
       "independentAcademicApprovals": 0,
       "productRightsApprovals": 0
+    },
+    "ng12CaquotLemaire1977LineConcordance": {
+      "sourceId": "SRC-CAQUOT-LEMAIRE-DEIRALLA-REASSEMBLY-1977-P193198",
+      "state": "ORIGINAL_AUTHORED_1977_CRITICAL_PUBLICATION_P193_TO198_DIGITAL_PRINT_TEXT_READ_ANCIENT_PHOTOS_UNREAD",
+      "mapping": "Caquot/Lemaire 1977 p193 propose moving Combination I fragments c/a because red writing and suppressing nearly empty first-edition line3; 1977 p196 explicitly maps their line4 to first-edition 1976 line6; hence 1977 p196 sdyn plural-divine-word at OWN LINE6 corresponds to original edited 1976 line8. 1977 p198 own line8(d) sdh alternative to srh in bird list: separate token from sdyn",
+      "sourceGates": [
+        "Do not claim full photo or physical stone/plaster autopsy",
+        "Do not call 1977 shift certain before checking 1976 edition plates and competing Hackett1984",
+        "Do not conflate sdyn title proposal with sdh bird name",
+        "Do not identify biblical singular El Shaddai as directly proven identical to multiple Deir Alla entities",
+        "1977 OCR ancient special characters need image validation"
+      ],
+      "corpusCriticalCollations": 0,
+      "externalIndependentScholarlyApproval": 0,
+      "productApprovals": 0
     }
   },
   "systematicTheologyTriage": {
