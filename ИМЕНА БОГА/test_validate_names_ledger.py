@@ -1535,5 +1535,35 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("historical composite negatives" in e for e in validate_source_access(d)))
 
 
+
+    def test_4q120_editorial_fragment15_must_not_equal_museum_plate_fragment15(self) -> None:
+        data = copy.deepcopy(self.sources)
+        row = next(x for x in data["records"] if x["id"] == "SRC-IAA-DSS-4Q120-B503715-2015")
+        row["numberingCrosswalk20261108"]["academicEditorialFragmentsLev46"] = "EDITORIAL_FRAGMENTS_20_21_LEVITICUS_4_26_28"
+        self.assertTrue(any("4Q120 DJD editorial vs IAA museum-plate numbering" in e
+                            for e in validate_source_access(data)))
+
+    def test_4q120_reported_numbering_concordance_cannot_promote_djd_edition(self) -> None:
+        data = copy.deepcopy(self.sources)
+        row = next(x for x in data["records"] if x["id"] == "SRC-IAA-DSS-4Q120-B503715-2015")
+        row["numberingCrosswalk20261108"]["directDjdPageAndPlateChecked"] = True
+        self.assertTrue(any("4Q120 DJD editorial vs IAA museum-plate numbering" in e
+                            for e in validate_source_access(data)))
+
+    def test_4q120_reported_numbering_not_historical_negative_photocolllation(self) -> None:
+        data = copy.deepcopy(self.sources)
+        row = next(x for x in data["records"] if x["id"] == "SRC-IAA-DSS-4Q120-B503715-2015")
+        row["numberingCrosswalk20261108"]["historicalNegativeSamePhysicalFragmentVerified"] = True
+        self.assertTrue(any("4Q120 DJD editorial vs IAA museum-plate numbering" in e
+                            for e in validate_source_access(data)))
+
+    def test_4q120_reported_numbering_not_sign_level_critical_collation(self) -> None:
+        data = copy.deepcopy(self.sources)
+        row = next(x for x in data["records"] if x["id"] == "SRC-IAA-DSS-4Q120-B503715-2015")
+        row["numberingCrosswalk20261108"]["glyphByGlyphCriticalCollationComplete"] = True
+        self.assertTrue(any("4Q120 DJD editorial vs IAA museum-plate numbering" in e
+                            for e in validate_source_access(data)))
+
+
 if __name__ == "__main__":
     unittest.main()
