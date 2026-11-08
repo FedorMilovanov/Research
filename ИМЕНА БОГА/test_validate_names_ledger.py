@@ -1171,6 +1171,18 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         row["earthquakeScope"] = "CERTAIN_MATCH_OF_AMOS_1_1_QUAKE_AND_DEIRALLA_DESTRUCTION"
         self.assertTrue(any("Amos-earthquake conjecture" in e for e in validate_source_access(d)))
 
+    def test_deir_alla_adaj1986_two_samples_not_exact_inscription_date(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-ADAJ1986-IBRAHIM-VANDERKOOIJ-2C14-P142")
+        row["carbonScope"] = "AM0S_1_1_750_BCE_EARTHQUAKE_EXACTLY_PROVEN"
+        self.assertTrue(any("radiocarbon calibration" in e for e in validate_source_access(d)))
+
+    def test_deir_alla_adaj1986_bench_room_not_proven_temple(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-ADAJ1986-IBRAHIM-VANDERKOOIJ-2C14-P142")
+        row["functionScope"] = "EXCAVATION_PROVES_FULL_SANCTUARY_FUNCTION"
+        self.assertTrue(any("room function" in e for e in validate_source_access(d)))
+
     def test_deir_alla_livius_translation_cannot_inherit_photo_cc0_rights(self) -> None:
         d = copy.deepcopy(self.sources)
         row = next(x for x in d["records"] if x["id"] == "SRC-LIVIUS-LEVINE-COMPOSITE-TRANSLATION-2003")

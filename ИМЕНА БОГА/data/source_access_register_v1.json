@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 66,
+    "sourceRecords": 67,
     "approvedForProduct": 0
   },
   "records": [
@@ -1641,7 +1641,34 @@
       ],
       "carbonScope": "LEMAIRE1985_ATTRIBUTED_PRIOR_1976_P16_C14_CIRCA800_MARGIN70_PROBABILITY66_NOT_PRIMARY_SAMPLE_REVIEW",
       "earthquakeScope": "LEMAIRE1985_AMOS1_1_EARTHQUAKE_SPECULATIVE_NOT_EVIDENCED_IDENTITY"
+    },
+    {
+      "id": "SRC-ADAJ1986-IBRAHIM-VANDERKOOIJ-2C14-P142",
+      "title": "Moawiyah M. Ibrahim and Gerrit van der Kooij, Excavations at Deir ‘Alla, Season 1984, ADAJ 30 (1986), 131–143, esp. 137, 141–142",
+      "creator": "Moawiyah M. Ibrahim; Gerrit van der Kooij",
+      "year": 1986,
+      "url": "https://publication.doa.gov.jo/uploads/publications/39/ADAJ_1986_30-131-143.pdf",
+      "objectType": "original_jordan_department_of_antiquities_1986_excavation_field_report_selected_original_page_images_directly_inspected",
+      "sourceRole": "PRIMARY_1986_EXCAVATION_TWO_IDENTIFIED_RADIOCARBON_SAMPLES_AND_PHASE_IX_MATERIAL_CONTEXT",
+      "locator": "Official ADAJ XXX (1986), printed p137 PDF zero-index6, printed p142 PDF zero-index11 visually verified by screenshots; original printed p141 extracted original PDF text checked, not full photographic figure collation. Figure1 and 2/Plates XII–XXI not independently image-compared.",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "evidenceClass": "A2",
+      "sourceObjectState": "Printed p142 original photographed page states 'sample GrN 5633 gave 2690 +/- 60 BP and GrN 8119 gave 2590 +/- 70 BP' for carbonised seed and leaf material from burnt phase IX rubble; authors say both after calibration indicate 770–880 BCE and that this is a ROUGH date corroborated statistically by older phase L and later phase VI deposits, with further C14 testing planned. This is their 1986-era calibration, not a modern recalculation or an exact inscription date. Printed p137 original page image describes inscription access room with reed matting, bench and plastered wall, other uninscribed lime plaster at five positions and suggests plaster not specifically made for writing; earthquake destruction inferred from 1967 east-west cracks and fire widespread. Printed p141 original text explicitly says NO CLEAR indication of sanctuary/religious function despite religious inscriptions, trade/living versus sanctuary hypotheses both open. Field provenance primary to excavation, not ancient philological collation of shdyn. Original figures/plates have publication rights not cleared.",
+      "supportedUse": "Present 2 specific radiocarbon sample IDs and BP measurements as reported by excavators in the 1986 source, the original author's historical calibrated 770–880 BCE range and stated uncertainty; reconcile prior 1976 p16 single sample Lemaire 1985 abstract approximate range and 1979 'ongoing testing' as a dynamic evidence series rather than a contradiction; contrast archaeological room's possibly secular/trading functions and tentative sanctuary hypothesis; no automatic correlation with Amos 1:1 historical earthquake.",
+      "forbiddenUse": "Treat 1986-calibrated 880–770 BCE as precise, up-to-date IntCal calibrated or actual writing date; identify exact Amos 1:1 earthquake or biblical Balaam visit as archaeologically proven; claim exact comparison with 1976 p16 already read or all sample IDs reconciled; portray disputed function as identified temple, extrapolate source-specific copyright permissions to archaeological photographs, or equate field report to letter-by-letter epigraphic collation.",
+      "criticalEditionCollated": false,
+      "publicationState": "BLOCKED",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "carbonScope": "ADAJ1986_SAMPLES_GRN5633_2690PM60_BP_GRN8119_2590PM70_BP_770_880_BCE_HISTORIC_CALIBRATION_NOT_MODERN_EXACT_INSCRIPTION_DATE",
+      "functionScope": "ADAJ1986_NO_CLEAR_SANCTUARY_FUNCTION_TRADE_LIVING_AND_RELIGIOUS_HYPOTHESES_OPEN",
+      "imageScope": "ADAJ1986_ORIGINAL_PAGES137_AND142_SCREENSHOTS_VERIFIED_NOT_ALL_ARTIFACT_PLATES"
     }
   ],
-  "auditRevision": "NG12_LEMAIRE1985_C14_1976_P16_ATTRIBUTED_AND_AMOS_QUAKE_HOLD_20261108"
+  "auditRevision": "NG12_ADAJ1986_ORIGINAL_TWO_C14_SAMPLES_AND_CAUTIOUS_SITE_FUNCTION_20261108"
 }
