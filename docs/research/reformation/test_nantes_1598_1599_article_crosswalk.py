@@ -23,7 +23,7 @@ class NantesVariantCrosswalkTests(unittest.TestCase):
         cls.sources = {s["id"]: s for s in registry["sources"]}
 
     def test_valid_documentary_basis_and_not_fake_autographs(self):
-        self.assertEqual(self.n, 202)
+        self.assertEqual(self.n, 204)
         self.assertEqual(len(self.sources), self.n)
         for id in ("REF-P86", "REF-S97", "REF-S98", "REF-P27", "REF-P29"):
             self.assertIn(id, self.sources)
