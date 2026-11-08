@@ -13,10 +13,10 @@
     "extensionRecords": 13,
     "contextAttestations": 105,
     "sourceRegisterEntries": 79,
-    "regressionTests": 227,
+    "regressionTests": 228,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_861C302_ALL_SIX_SUCCESS_NEW_1967_FIRST_PHOTO_JERUSALEM_DIARY_SOURCE_REVIEW_CI_PENDING",
+    "allSixCiChecks": "PRIOR_1586573_ALL_SIX_SUCCESS_CURRENT_1967_JSTOR_P480_PREVIEW_SCOPE_CI_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 17,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "861c3026b6ccaa2786869253a4a3693ccd4d68a4"
+    "lastConfirmedAllSixChecksSha": "1586573c1ea0e80e66ca8afd4d02c2deeed4f1e2"
   },
   "allowedStatuses": [
     "DONE",
@@ -539,7 +539,8 @@
         "Primary source found: Jacob Hoftijzer, De Aramese teksten uit Deir 'Alla, Phoenix 22 (1976), 84–91; full 1976 journal PDF https://www.exorientelux.nl/download/phoenix22.pdf; printed p85 fig41 in-situ image caption, printed p88 fig42 IR photograph of Combination I taken in Jerusalem just after 1967 discovery, printed p90 author-conjectured Dutch Shadday goddesses/gods rendering; TEXT/OCR verified only, actual images screenshot 503, actual ancient graphemes/rights still HOLD.",
         "Original Sidestone Steiner/Wagemakers 2019 Digging up the Bible pp63–65 film procurement, pp121–122 publisher transcription of Franken 1967 Apr1/Apr3 diary, p122 fig4.40 original just-lifted plaster image caption. April3 appointment with the director of Palestine Archaeological Museum (Rockefeller) for infrared photos/storage NOT proven 1967 developed-image or 2026 archival custody. https://www.sidestone.com/openaccess/9789088908736.pdf",
         "Earliest 1967 photographic notice locator: H J Franken, Texts from the Persian Period from Tell Deir Alla, Vetus Testamentum 17/4 (1967) 480–481 DOI 10.1163/156853367X00187; FIRST PHOTO is reported in the already-registered original André Lemaire CRAI1985 p271, not directly autopsied. https://doi.org/10.1163/156853367X00187",
-        "Israel Antiquities Authority archive current information https://archives.iaa.org.il/ShowFolder.aspx?id=33 (Mandate 1919–1948 collections; NOT demonstration it contains 1967 negatives; possible research inquiry through iaa.archive.r@israntique.org.il). No email sent."
+        "Israel Antiquities Authority archive current information https://archives.iaa.org.il/ShowFolder.aspx?id=33 (Mandate 1919–1948 collections; NOT demonstration it contains 1967 negatives; possible research inquiry through iaa.archive.r@israntique.org.il). No email sent.",
+        "JSTOR official 1967 first paper https://www.jstor.org/stable/1516696; read-only TinyFish browser showed printed p480 only (English preliminary note, no inscription photo). Printed p481 NOT viewed: account/library login required. The alleged earliest photograph still only Lemaire 1985 retrospective testimony; do not infer absence/presence or IR character of p481. JSTOR issue TOC identifies following Pierre Grelot note begins p481."
       ],
       "verification": "NOT_APPLICABLE_UNTIL_DONE",
       "closureAt": null,
@@ -733,7 +734,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "NG12 PRIMARY PHOTO ROUTES BEFORE BIBLIOGRAPHIC EXPANSION: (1) obtain H J Franken first reported photo, Vetus Testamentum 17/4 (1967) pp480–481, DOI 10.1163/156853367X00187; (2) obtain/inspect original Phoenix 22 (1976) p85 fig41 / p88 fig42 IR and compare archival fragment identities and photographic evidence; (3) ask Leiden/RMO and potentially Palestine Archaeological Museum/Rockefeller historical photo archivists about April3 1967 Jerusalem infrared appointment; IAA current Mandate 1919–1948 digital collection is NOT verified 1967 custody; (4) secure Brill 1976 critical transcription pp173–178 with original plates, compare photos and editor restorations; (5) verify BA39/3 1976 p87 published erratum wording. None of these images or unpublished diary/negative have been autopsied; no external requests sent. Retain NG12 BLOCKED_SOURCE and approvals 0.",
+  "nextAction": "NG12 TARGETED ACQUISITION WITHOUT ABUSING PROXIES: Seek LEGITIMATELY ACCESSIBLE SCAN OF PRINTED P481 OF H J FRANKEN VETUS TESTAMENTUM 17/4 (1967), DOI 10.1163/156853367X00187 JSTOR 1516696; p480 already seen in browser and contains no ancient inscription photograph. JSTOR p481 requires a registered account/library access; no sign-in bypass or user credentials requested. Lemaire1985 says first fragment image appears in the two-page notice, but precise image location and photographic modality cannot be asserted. When obtained, verify (a) whether p481 has photo and caption (b) fragment/Combination I mapping (c) whether it includes disputed šdyn letters (d) copyright/archival identity. Next independent requests: Phoenix22 p85 fig41 and p88 fig42, Brill1976 original p173–178 + plates, 1976 journal erratum actual wording, original 1967 Jerusalem negatives custody. NG12 remains BLOCKED_SOURCE, 0 palaeography collations, 0 Product approvals.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
