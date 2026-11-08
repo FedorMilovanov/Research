@@ -82,7 +82,7 @@ class ReformationAdversarialSevenNineTests(unittest.TestCase):
                and len(line) > 3 and line[3].isdigit()]
         self.assertEqual(ids, list(range(1, 320)))
         plan = (HERE / "SELF_PLAN.md").read_text(encoding="utf-8")
-        self.assertIn("волна 385", plan)
+        self.assertIn("ИСТОРИЧЕСКИЙ СРЕЗ ВОЛНЫ 385", plan)
         self.assertIn("RF-EDIT-10-12", plan)
         self.assertIn("STOP_DISCOVERY", plan)
         self.assertIn("PUBLICATION_HOLD", plan)
