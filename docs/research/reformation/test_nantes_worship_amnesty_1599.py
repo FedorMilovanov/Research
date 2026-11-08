@@ -63,7 +63,7 @@ class NantesWorshipAndAmnestyTests(unittest.TestCase):
 
     def test_engraving_is_not_primary_1599_witness(self):
         for marker in ("REF-S100", "Jan Luyken", "Élie Benoist",
-                       "1693", "не есть репортаж", "RIGHTS_HOLD"):
+                       "1693", "нельзя принимать за репортаж", "RIGHTS_HOLD"):
             with self.subTest(marker=marker):
                 self.assertIn(marker.lower(), self.dossier.lower())
 
