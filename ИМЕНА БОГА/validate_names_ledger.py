@@ -392,7 +392,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-LANGLOIS-JEREMIAH-4Q72-2019": "ATTRIBUTED_SCHOLARLY_ANALYSIS_4Q72_MT_JER33_16_20_VS_OLD_GREEK",
     "SRC-DJD-XV-TOV-4QJERC-1997": "TOV_DJD_XV_4QJERC_PRIMARY_EDITED_INTRO_TABLES_NOT_PLATE_AUTOPSY",
     "SRC-DSS-REED-FASC7-4Q72-PAM43101": "ARCHIVAL_PAM_43_101_MUSEUM_PLATE_245_4Q72_COLUMNS_XXIV_XXV",
-    "SRC-IAA-B360205-4Q72-PL245F6": "IAA_B360205_PLATE245_FRAG6_PHOTO_CATALOG_ONLY",
+    "SRC-IAA-B360205-4Q72-PL245F6": "IAA_B360205_OFFICIAL_INFRARED_VISUALLY_INSPECTED_NO_INDEPENDENT_GLYPH_COLLATION",
     "SRC-MAIER-IECOT-JEREMIAH-1-25-2025": "SCHOLARLY_2025_MANUSCRIPT_SIGLA_CROSSWALK_4Q72_VS_4Q72A",
     "SRC-NET-REV1-8": "ATTRIBUTED_TRANSLATION_CRITICAL_NOTES",
     "SRC-TABB-REVELATION22": "ATTRIBUTED_COMMENTARY_REVELATION_SPEAKER_INFERENCE",
@@ -559,12 +559,18 @@ def validate_source_access(sources: dict) -> list[str]:
                     or source.get("fragmentOnPlate") != "6"
                     or source.get("catalogLabel") != "4Q Jer d"
                     or source.get("criticalEditionLabel") != "4QJer c"
-                    or source.get("imagePixelsInspected") is not False
+                    or source.get("imagePixelsInspected") is not True
+                    or source.get("accessState") != "PARTIAL_OBJECT"
+                    or source.get("imageVisualReviewMethod") != "OFFICIAL_IAA_BROWSER_VIEWER_RENDERED_INFRARED_SCREENSHOT_AND_DOUBLECLICK_ZOOM"
+                    or source.get("directImageVisualReviewOn") != "2026-11-10"
+                    or source.get("originalNegativePixelsChecked") is not False
+                    or source.get("scholarlyTranscriptLinesIndependentlyCollated") is not False
+                    or source.get("screenshotRedistributedOrCommitted") is not False
                     or source.get("printedHebrewLettersIndependentlyCollated") is not False
                     or source.get("photoReusePermissionGranted") is not False
                     or source.get("academicDistinctManuscriptId") != "4Q72a"
                     or source.get("academicDistinctManuscriptSiglum") != "4QJer d"
-                    or source.get("catalogSiglaConflictStatus") != "UNRESOLVED_METADATA_ID_SIGLUM_MISMATCH_NO_IMAGE_AUTOPSY"):
+                    or source.get("catalogSiglaConflictStatus") != "UNRESOLVED_METADATA_ID_SIGLUM_MISMATCH_PHOTO_VISUAL_NO_INDEPENDENT_OBJECT_MATCH"):
                 errors.append(f"{prefix}: IAA archive metadata or unearned pixel/rights attestation")
         if rid == "SRC-MAIER-IECOT-JEREMIAH-1-25-2025":
             if (source.get("url") != "https://api.pageplace.de/preview/DT0400.9783170435391_A62581867/preview-9783170435391_A62581867.pdf"

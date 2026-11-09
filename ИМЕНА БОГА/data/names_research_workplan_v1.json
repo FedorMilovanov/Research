@@ -13,10 +13,10 @@
     "extensionRecords": 13,
     "contextAttestations": 105,
     "sourceRegisterEntries": 94,
-    "regressionTests": 273,
+    "regressionTests": 274,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_A3B364F_EXACT_6_SUCCESS_WAVE11_NEW_SHA_PENDING",
+    "allSixCiChecks": "PRIOR_3416D24_EXACT_6_SUCCESS_WAVE12_NEW_SHA_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "a3b364f7dbfd089eff5374a5c1a059a472afe2f9"
+    "lastConfirmedAllSixChecksSha": "3416d248f96a2cb7771224d0190bd0dc03932bd6"
   },
   "allowedStatuses": [
     "DONE",

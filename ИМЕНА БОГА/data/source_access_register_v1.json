@@ -2996,9 +2996,9 @@
       "year": 2012,
       "url": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-360205",
       "termsUrl": "https://www.deadseascrolls.org.il/terms",
-      "objectType": "official_archive_photo_metadata_page_pixels_not_inspected",
-      "sourceRole": "IAA_B360205_PLATE245_FRAG6_PHOTO_CATALOG_ONLY",
-      "accessState": "CATALOG_ONLY",
+      "objectType": "official_IAA_archival_infrared_photo_viewer_visually_inspected_NO_diplomatic_autopsy",
+      "sourceRole": "IAA_B360205_OFFICIAL_INFRARED_VISUALLY_INSPECTED_NO_INDEPENDENT_GLYPH_COLLATION",
+      "accessState": "PARTIAL_OBJECT",
       "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "PERMISSION_REQUIRED",
       "evidenceClass": "A2",
@@ -3010,20 +3010,26 @@
         "PUBLICATION_HOLD",
         "EVIDENCE_HOLD"
       ],
-      "sourceObjectState": "IAA archive metadata page read directly: B-360205, Plate 245, Frag 6, infrared recto, June 2012, Shai Halevi, item 4Q72. Page's manuscript superscript identifies it as 4Q Jer d, while Tov DJD XV identifies 4Q72 as 4QJer c: metadata-level siglum discrepancy not resolved by physical photo. Browser text extraction returns no actual image pixels or pixel-level epigraphy. IAA Terms page specifically requires express prior written permission for public reuse beyond personal single copies. Original printed DJD XV p177/203 and Maier 2025 p14 confirm 4Q72=Jer-c but 4Q72a=Jer-d, so the IAA display combination 4Q72/Jer-d conflicts with academic manuscript mapping. This shows a catalog metadata inconsistency, NOT independently the wrong photographed parchment.",
-      "supportedUse": "Give exact official IAA image locator and photography metadata; flag catalog superscript conflict vs Tov edition; provide path to request image use permission, without pretending photograph was visually collated.",
-      "forbiddenUse": "Claim photo was downloaded or read, claim image 2012 photograph is public domain, claim 4QJer d is independently identified from manuscript letters, claim certain exact matching of frag6 to colXXV frg55ii, use photo in public website or redistribute without permission. The archival caption must not silently remap 4Q72 to 4Q72a or prove physical image mixup before image autopsy.",
+      "sourceObjectState": "IAA official archive page and LIVE infrared photo viewer on 2026-11-10 directly visited, 1600×1000 screenshot and two successive visual double-click zooms examined. The image itself visibly shows a partial Hebrew-inscribed parchment with multiple damaged lines; no fully verified independent transcription of יהוה צד[קנו] or plate245/frag6 ↔ edition's frg55ii from this photograph. IAA metadata photo B-360205, June2012 Shai Halevi, recto, museum plate245 frag6. Catalog 4Q72=4QJer d contradicts Tov DJD XV and Maier2025 correct 4Q72=4QJer c; 4Q72a=4QJer d. The metadata mismatch remains unresolved; pixels alone do NOT establish image wrongly catalogued. No screenshot saved, copied to repository or republished. IAA written reuse permission not obtained.",
+      "supportedUse": "Report exact official image locator and dates; declare official image pixels loaded and visually inspected in viewer with magnification, but not independently paleographically transcribed or matched to Tov's frg55ii. Cite archived catalog label conflict; keep partial-source/archive hold and rights/publication gates.",
+      "forbiddenUse": "Claim all handwritten letterforms were independently collated or complete יהוה צדקנו is physically extant; assert viewer image proves manuscript is really 4Q72a or that 4Q72 fragment55ii exactly matches museum frag6; claim photo reuse permission/public domain, copy or republish the photo; claim original PAM43.101 negative or Tov DJD plate was personally inspected.",
       "officialPhotoId": "B-360205",
       "archivePlate": "245",
       "fragmentOnPlate": "6",
       "catalogLabel": "4Q Jer d",
       "criticalEditionLabel": "4QJer c",
-      "imagePixelsInspected": false,
+      "imagePixelsInspected": true,
       "printedHebrewLettersIndependentlyCollated": false,
       "photoReusePermissionGranted": false,
       "academicDistinctManuscriptId": "4Q72a",
       "academicDistinctManuscriptSiglum": "4QJer d",
-      "catalogSiglaConflictStatus": "UNRESOLVED_METADATA_ID_SIGLUM_MISMATCH_NO_IMAGE_AUTOPSY"
+      "catalogSiglaConflictStatus": "UNRESOLVED_METADATA_ID_SIGLUM_MISMATCH_PHOTO_VISUAL_NO_INDEPENDENT_OBJECT_MATCH",
+      "directImageVisualReviewOn": "2026-11-10",
+      "imageVisualReviewMethod": "OFFICIAL_IAA_BROWSER_VIEWER_RENDERED_INFRARED_SCREENSHOT_AND_DOUBLECLICK_ZOOM",
+      "imageVisualObservation": "Actual official IAA B-360205 viewer loaded photographic pixels; screenshot viewport and successive double-click zoom examined visually on 2026-11-10. Shows a severely damaged handwritten Hebrew parchment fragment with several partly preserved horizontal lines; letters are visible but complete diplomatic reading and correspondence of particular 4Q72 fragment 55 ii were NOT independently established.",
+      "originalNegativePixelsChecked": false,
+      "scholarlyTranscriptLinesIndependentlyCollated": false,
+      "screenshotRedistributedOrCommitted": false
     },
     {
       "id": "SRC-MAIER-IECOT-JEREMIAH-1-25-2025",
@@ -3058,5 +3064,5 @@
       "photoAutopsy": false
     }
   ],
-  "auditRevision": "NG10_WAVE11_IDENTITY_COLLISION_RESEARCH_TOV_DJD_TABLE8_9_MAIER2025_20261110"
+  "auditRevision": "NG10_WAVE12_IAA_LIVE_INFRARED_PHOTO_BROWSER_VISUAL_ACCESS_NO_EPI_COLLATION_20261110"
 }

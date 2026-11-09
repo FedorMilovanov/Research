@@ -71,7 +71,7 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
     def test_iaa_catalog_cannot_grant_photo_rights_or_pretend_eyewitness(self) -> None:
         sources = copy.deepcopy(self.sources)
         record = next(r for r in sources["records"] if r["id"] == "SRC-IAA-B360205-4Q72-PL245F6")
-        record["imagePixelsInspected"] = True
+        record["printedHebrewLettersIndependentlyCollated"] = True
         record["photoReusePermissionGranted"] = True
         self.assertTrue(any("IAA archive metadata or unearned pixel" in e
                             for e in validate_source_access(sources)))
@@ -88,6 +88,14 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         record = next(x for x in sources["records"] if x["id"] == "SRC-DJD-XV-TOV-4QJERC-1997")
         record["originalTable8Jer33_16Status"] = "verified original physical margin"
         self.assertTrue(any("DJD XV selected original edition" in e
+                            for e in validate_source_access(sources)))
+
+    def test_iaa_actual_photo_access_cannot_be_unrecorded_or_forged(self) -> None:
+        sources = copy.deepcopy(self.sources)
+        record = next(r for r in sources["records"] if r["id"] == "SRC-IAA-B360205-4Q72-PL245F6")
+        record["imagePixelsInspected"] = False
+        record["imageVisualReviewMethod"] = "CATALOG_ONLY"
+        self.assertTrue(any("IAA archive metadata or unearned pixel" in e
                             for e in validate_source_access(sources)))
 
     def test_current_research_corpora_pass_structure(self) -> None:
