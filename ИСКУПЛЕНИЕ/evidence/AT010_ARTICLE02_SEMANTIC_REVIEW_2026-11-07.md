@@ -275,3 +275,17 @@ Rahlfs–Hanhart Is. 53:10: `ἐὰν δῶτε περὶ ἁμαρτίας, ἡ
 **Контроль ошибочного отождествления:** 4Q56 = 4QIsaᵇ (пещера 4), не 1Q8 = 1QIsaᵇ (пещера 1). Сохранившаяся часть 4Q56 frg.39 не содержит слова «свет» из 53:11; обозначение ᵇ относится к разным сериям. 1QIsaᵃ 44.19–22 представлена как параллель в цифровом издании, здесь не выполнена новая фотографическая колляция.
 
 **Статус:** DIGITAL_EDITORIAL_TRANSCRIPTION_LOCATED, GLYPH_PHOTO_HOLD, GOTTINGEN_APPARATUS_HOLD, GREEK_BACKTRANSLATION_HOLD, RIGHTS_HOLD, PUBLICATION_HOLD; publicationEligible=false. Не сделаны: палеографическая проверка оригинального изображения, независимое разрешение варианта еврейского текста, доступ к Göttingen Ziegler 1983³ Ис. 53:5/10. Дубликаты поисковых зеркал не приобретать; узкий REQUEST_USER на аппарат при необходимости. **NO MERGE / NO PUBLICATION**.
+
+## AT-010-R18 — Codex Marchalianus Q: официальные снимки Ис. 53:5/10 (09.11.2026)
+
+**Объект и идентификация:** [Vatican Library, Vat.gr.2125](https://digi.vatlib.it/view/MSS_Vat.gr.2125), [IIIF manifest](https://digi.vatlib.it/iiif/MSS_Vat.gr.2125/manifest.json), p.171–338 Isaias, датировка около 700; [Pinakes 68755](https://pinakes.irht.cnrs.fr/notices/cote/68755/) подтверждает Codex Marchalianus, сигл Rahlfs Q. Отдельная рукописная страница имеет несколько цифровых canvas, так что page и canvas нельзя отождествлять.
+
+| Локус | Фотография оригинального кодекса | Основная строка | Точный предел |
+|---|---|---|---|
+| Ис. 53:5 | **рукописная p.306 / canvas 0620**, [прямой просмотр](https://digi.vatlib.it/view/MSS_Vat.gr.2125/0620), параллельный canvas 0619 | **ΠΑΙΔΕΙΑ ΕΙΡΗΝΗΣ ΗΜΩΝ**, то есть **παιδεία**, не **παιδία** | **Q_53_5_PHOTO_TARGET_READ** одного свидетеля, без утверждения об исходном тексте всей LXX |
+| Ис. 53:10 | **рукописная p.307 / canvas 0621–0622**, [прямой просмотр 0622](https://digi.vatlib.it/view/MSS_Vat.gr.2125/0622) | после фразы о приношении за грех: **ἡ ψυχὴ ὑμῶν**, видимый целевой текст **Η ΨΥΧΗ ΥΜΩΝ** | **Q_53_10_PHOTO_TARGET_READ** данной греческой строки, без коптской ретроверсии |
+| Отрицательный контроль локатора | p.308 / canvas 0623–0624 | прежняя рабочая ориентировка целевой формы Ис. 53:10 на p.308 неверна: она находится на p.307 | **LOCATOR_CORRECTED** |
+
+**Раздельные источниковые уровни:** предыдущие R4–R8 зафиксировали печатное **παιδία** Swete III (1905) и Ottley II (1906), печатное **παιδεία** Rahlfs–Hanhart (2006) и коптское чтение «дети» в sa52/sa48. Фото Q даёт позитивное подтверждение **παιδεία** в одном греческом кодексе. Это не делает иные печатные формы ошибками и не устанавливает происхождение коптского «дети». Греческое **ὑμῶν** Q в 53:10 не разрешает разногласие коптских редакторов о повреждённой букве ⲧ̣/ⲡ. Подлинный аппарат Ziegler XIV (1983 третье издание) по Ис. 53:5/10 не получен.
+
+**Доказательное состояние:** **VATICAN_Q_OFFICIAL_IIIF_IMAGE_VERIFIED, Q_53_5_PHOTO_TARGET_READ, Q_53_10_PHOTO_TARGET_READ, LOCATOR_CORRECTED**; это узкая визуальная колляция текста на конкретных страницах, а не полный снимок всех греческих вариантов. **GOTTINGEN_APPARATUS_HOLD, GREEK_VORLAGE_AMBIGUOUS, SA48_53_10_GLYPH_ADJUDICATION_HOLD, CLM3469_EDITORIAL_READ_CONFLICT_HOLD, GREEK_BACKTRANSLATION_HOLD, RIGHTS_HOLD, PUBLICATION_HOLD**, publicationEligible=false. Фотографии маркированы copyright Biblioteca Apostolica Vaticana, **не помещены в Git**. NO MERGE / NO PUBLICATION.

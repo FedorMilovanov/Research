@@ -376,3 +376,9 @@ Verified via direct DECOT API/XHTML: [sa212L.9 622148/2250](https://coptot.manus
 - **QD-1Q8-20250825:** [Qumran-Digital, 1Q8](https://lexicon.qumran-digital.org/transcriptions/1Q8/2025-08-25/index.html?v=2025-08-25), XXIII.21–25, Ис. 53:10–12, параллель по опубликованной цифровой редакции; цифровое чтение, не независимая фотография. [IAA / Leon Levy archive](https://www.deadseascrolls.org.il/explore-the-archive/manuscript/1Q8-1?locale=en_US) указывает физический архив, не статус прочтения снимка.
 
 Контрольная дискуссия: [memo R17](evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md). 1Q8 (1QIsaᵇ, пещера 1) не путать с 4Q56 (4QIsaᵇ, пещера 4). GLYPH_PHOTO_HOLD, GOTTINGEN_APPARATUS_HOLD, RIGHTS_HOLD, PUBLICATION_HOLD, publicationEligible=false сохраняются.
+
+### AT-010-R18 — официальный греческий кодекс Q, ватиканские снимки (09.11.2026)
+
+- **VAT-Q-IS53-05**: [Vat.gr.2125 p.306 / image 0620](https://digi.vatlib.it/view/MSS_Vat.gr.2125/0620), [IIIF manifest](https://digi.vatlib.it/iiif/MSS_Vat.gr.2125/manifest.json). Codex Marchalianus, Rahlfs Q по [Pinakes](https://pinakes.irht.cnrs.fr/notices/cote/68755/). В целевой строке основной руки **ΠΑΙΔΕΙΑ ΕΙΡΗΝΗΣ ΗΜΩΝ**. OFFICIAL_IMAGE_ACCESSED / TARGET_GLYPHS_READ; не полный аппарат Ziegler.
+- **VAT-Q-IS53-10**: [Vat.gr.2125 p.307 / image 0622](https://digi.vatlib.it/view/MSS_Vat.gr.2125/0622), дубль canvas 0621; в основной строке **Η ΨΥΧΗ ΥΜΩΝ**. Предыдущая p.308 — **LOCATOR_CORRECTED**. OFFICIAL_IMAGE_ACCESSED / TARGET_GLYPHS_READ.
+- **Rights and method:** Библиотека маркирует фотографии copyright; ни оригиналы, ни фрагменты фотографий не загружены в Git. Q не тождественен реконструированному Vorlage и печатному критическому аппарату. **GOTTINGEN_APPARATUS_HOLD, RIGHTS_HOLD, PUBLICATION_HOLD**, publicationEligible=false. [Memo R18](evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md).

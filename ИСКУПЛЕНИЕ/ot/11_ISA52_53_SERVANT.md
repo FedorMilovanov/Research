@@ -314,3 +314,9 @@ Direct DECOT XHTML: sa212L.9 docID622148/pageID2250 reads ⲉⲧⲉⲧⲛ / ⲯ�
 В [критическом memo R17](../evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md) сопоставлены датированные цифровые транскрипции 1Q8 XXIII.21–25 и 4Q58 VIII.19–22. 1Q8 передаёт אור («свет», 53:11) без скобок; 4Q58 даёт **או֯[ר]**, т. е. часть сохранилась, часть сомнительна, последняя буква восстановлена. Старый вывод R16 о полной утрате в 4Q58 **SUPERSEDED** только в этой части. В 4Q58 53:12 читается множественное חטאי без скобок в отличие от единственного MT. 4Q56 (4QIsaᵇ, пещера 4) не равна 1Q8 (1QIsaᵇ, пещера 1).
 
 Эти данные — чтения **редакторской транскрипции**, не наша оригинальная фотоколляция. Ис. 53:10 евр. נפשו не решает греческую альтернативу ἡμῶν/ὑμῶν. GLYPH_PHOTO_HOLD, GOTTINGEN_APPARATUS_HOLD, GREEK_BACKTRANSLATION_HOLD, RIGHTS_HOLD, PUBLICATION_HOLD и publicationEligible=false сохраняются. **NO MERGE / NO PUBLICATION**.
+
+## 19. AT-010-R18 — греческая рукопись Q по официальным снимкам, Ис. 53:5 и 53:10 (09.11.2026)
+
+[Vat.gr.2125](https://digi.vatlib.it/view/MSS_Vat.gr.2125) = Codex Marchalianus, Rahlfs Q по [Pinakes](https://pinakes.irht.cnrs.fr/notices/cote/68755/). **Ис.53:5 p.306 / canvas 0620**: основная строка **ΠΑΙΔΕΙΑ ΕΙΡΗΝΗΣ ΗΜΩΝ** (παιδεία). **Ис.53:10 p.307 / canvas 0621–0622**: целевая строка **Η ΨΥΧΗ ΥΜΩΝ** (ὑμῶν), а не p.308. Прежняя ориентировка p.308 **LOCATOR_CORRECTED**. [R18 с первичными ссылками](../evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md).
+
+Фотоконтроль Q не равен истории всех греческих чтений: Swete III и Ottley II печатали παιδία, Rahlfs–Hanhart παιδεία; коптское «дети» и повреждённая буква ⲧ̣/ⲡ требуют отдельных решений. **Q_53_5_PHOTO_TARGET_READ / Q_53_10_PHOTO_TARGET_READ** относятся к одному кодексу. **GOTTINGEN_APPARATUS_HOLD, GREEK_VORLAGE_AMBIGUOUS, GREEK_BACKTRANSLATION_HOLD, RIGHTS_HOLD, PUBLICATION_HOLD**, publicationEligible=false. NO MERGE / NO PUBLICATION.

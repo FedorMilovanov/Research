@@ -255,3 +255,9 @@ Digitally verified DECOT XML/XHTML loci: sa212L.9 622148/2250, sa211L 620292/309
 **Дельта:** локусы 1Q8 XXIII.21–25 и 4Q58 VIII.19–22, версии Qumran-Digital 2025-08-25 / 2026-05-21, перенесены из [комментария PR](https://github.com/FedorMilovanov/Research/pull/309#issuecomment-6718467147) в [evidence memo](../evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md) и [OT11 §18](../ot/11_ISA52_53_SERVANT.md). Ошибка R16 («4Q58 53:11 полностью отсутствует») ограниченно SUPERSEDED: או֯[ר] — частично сохранившееся и частично восстановленное чтение. 4Q56 ≠ 1Q8.
 
 **Решение:** STOP_DISCOVERY по дубликатам текстовых зеркал; для снятия ограничений необходимы независимая фотоколляция и легальные страницы аппарата Ziegler 1983³ Ис. 53:5/10. DIGITAL_TRANSCRIPTION ≠ PHOTO_COLLATED. GLYPH_PHOTO_HOLD, GOTTINGEN_APPARATUS_HOLD, GREEK_BACKTRANSLATION_HOLD, RIGHTS_HOLD, PUBLICATION_HOLD, publicationEligible=false. **NO MERGE / NO PUBLICATION**.
+
+## 21. AT-010-R18 — адресный фотоконтроль Codex Marchalianus Q (09.11.2026)
+
+В официальном [Vat.gr.2125](https://digi.vatlib.it/view/MSS_Vat.gr.2125) найдены и визуально проверены **Ис.53:5 p.306/canvas 0620 — ΠΑΙΔΕΙΑ ΕΙΡΗΝΗΣ ΗΜΩΝ** и **Ис.53:10 p.307/canvas 0621–0622 — Η ΨΥΧΗ ΥΜΩΝ**. Исправлена ориентировка p.308 для целевой строки: LOCATOR_CORRECTED. Q — конкретный греческий кодекс, не восстановленный первоначальный текст и не весь аппарат; [критический R18](../evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md), [OT11 §19](../ot/11_ISA52_53_SERVANT.md).
+
+Два адресных свидетельства **Q_53_5_PHOTO_TARGET_READ / Q_53_10_PHOTO_TARGET_READ**, но **GOTTINGEN_APPARATUS_HOLD, GREEK_VORLAGE_AMBIGUOUS, SA48_53_10_GLYPH_ADJUDICATION_HOLD, GREEK_BACKTRANSLATION_HOLD, RIGHTS_HOLD, PUBLICATION_HOLD**, publicationEligible=false сохраняются. Хранить только ссылки/аналитику, не рукописные изображения. NO MERGE / NO PUBLICATION.

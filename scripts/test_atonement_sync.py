@@ -555,6 +555,26 @@ class ActualSynchronizationTests(unittest.TestCase):
         self.assertIn("## 19. AT-010-R9", board)
         self.assertIn("NO MERGE / NO PUBLICATION", board)
 
+    def test_article02_r18_vatican_codex_q_photo_not_full_apparatus(self):
+        memo = (ROOT / "ИСКУПЛЕНИЕ/evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md").read_text(encoding="utf-8")
+        ot = (ROOT / "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md").read_text(encoding="utf-8")
+        board = (ROOT / "ИСКУПЛЕНИЕ/synthesis/07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        registry = (ROOT / "ИСКУПЛЕНИЕ/05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md").read_text(encoding="utf-8")
+        article = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md").read_text(encoding="utf-8")
+        self.assertIn("## AT-010-R18",memo)
+        r18 = memo.split("## AT-010-R18",1)[1]
+        for marker in ("Codex Marchalianus", "canvas 0620", "canvas 0621–0622",
+                       "ΠΑΙΔΕΙΑ ΕΙΡΗΝΗΣ ΗΜΩΝ", "ἡ ψυχὴ ὑμῶν", "LOCATOR_CORRECTED",
+                       "GOTTINGEN_APPARATUS_HOLD", "GREEK_BACKTRANSLATION_HOLD",
+                       "RIGHTS_HOLD", "PUBLICATION_HOLD", "publicationEligible=false"):
+            with self.subTest(marker=marker): self.assertIn(marker,r18)
+        self.assertIn("## 19. AT-010-R18",ot)
+        self.assertIn("## 21. AT-010-R18",board)
+        self.assertIn("VAT-Q-IS53-05",registry)
+        self.assertIn("VAT-Q-IS53-10",registry)
+        self.assertIn("Дополнительная первичная греческая сверка (R18)",article)
+        self.assertNotIn("GOTTINGEN_APPARATUS_VERIFIED",r18)
+
     def test_article02_r17_qumran_digital_versioned_transcripts_not_photos(self):
         memo = (ROOT / "ИСКУПЛЕНИЕ/evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md").read_text(encoding="utf-8")
         ot = (ROOT / "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md").read_text(encoding="utf-8")
