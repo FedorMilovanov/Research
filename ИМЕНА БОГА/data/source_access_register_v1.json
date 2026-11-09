@@ -1246,9 +1246,9 @@
       "printedPages": "62–81",
       "acceptedManuscriptPage": "8",
       "doi": "10.1163/15685330-bja10091",
-      "sourceObjectState": "Accepted author manuscript cover, author/institution and p.8 argument on Jer23:6 and 33:16 inspected visually; AU bibliographic record and Brill issue contents checked. Entire twenty-page final journal text, full bibliography and original critical apparatus NOT independently reviewed.",
-      "supportedUse": "Attribute Liebermann's documented distinction between MT Jeremiah 23:6 Davidic future king and MT Jeremiah 33:16 Jerusalem; describe her reported scholarly view that 33:16 is absent from most Greek witnesses and may reflect a later edition. This is attributed secondary evaluation, not direct collated manuscript testimony. Greek manuscript witnesses NOT independently collated in the present research.",
-      "forbiddenUse": "Claim directly collated Old Greek codices, assume full scholarly consensus on date of interpolation, prove original authorial wording, cite 2023 issue date as identical to 2022 online first publication, or reproduce article/PDF for Product.",
+      "sourceObjectState": "Original accepted manuscript PDF 27 physical pages; publisher-citation cover screenshot p0 directly verifies journal 73/1 2023 pp62-81 and private-study-only rights. Author manuscript p8 printed text/screenshot distinguishes Jer23:6 royal referent from Jer33:16 Jerusalem and notes absence of latter in most Greek witnesses, author p23 screenshot conclusion explains her political-historical hypothesis of Jeremiah Zedekiah/Jerusalem focus against Ezekiel Jehoiachin/exilic focus. Intro read selectively. No independently collated Greek scroll, final typeset article, or full cited bibliography; still PARTIAL_OBJECT, B1, rights HOLD.",
+      "supportedUse": "Attribute Liebermann's documented distinction between MT Jeremiah 23:6 Davidic future king and MT Jeremiah 33:16 Jerusalem; describe her reported scholarly view that 33:16 is absent from most Greek witnesses and may reflect a later edition. This is attributed secondary evaluation, not direct collated manuscript testimony. Greek manuscript witnesses NOT independently collated in the present research. Original author manuscript print p8 and23 visual screenshots now witnessed, plus introduction selected directly; conclusion is AUTHOR'S reconstruction of Judean group factions and royal ideology and contrasts with Erzberger 2013 redactional focus. 2023 citation on cover is not invalidated by Aarhus portal 2022 record metadata.",
+      "forbiddenUse": "Claim directly collated Old Greek codices, assume full scholarly consensus on date of interpolation, prove original authorial wording, cite 2023 issue date as identical to 2022 online first publication, or reproduce article/PDF for Product. Present Ezekiel and Jeremiah historical political factions as directly observable 6th century BCE entities or the final academic consensus; claim complete final published article reviewed or copyright reprint approved.",
       "evidenceClass": "B1",
       "criticalEditionCollated": false,
       "rightsState": "PERMISSION_REQUIRED",
@@ -1260,7 +1260,37 @@
       ],
       "accessState": "PARTIAL_OBJECT",
       "locatorState": "EXACT_LOCATOR_VERIFIED",
-      "licenseScope": "Aarhus accepted manuscript permits private study/research and linking to URL; copyright and further republication restrictions apply. No full article redistribution or Product reproduction permission."
+      "licenseScope": "Aarhus accepted manuscript permits private study/research and linking to URL; copyright and further republication restrictions apply. No full article redistribution or Product reproduction permission.",
+      "originalManuscriptReview20261109": {
+        "verifiedAcceptedManuscriptPdf": "https://pure.au.dk/ws/portalfiles/portal/415104344/Justice_Righteousness_and_the_Davidic_Dispute_in_Jeremiah_and_Ezekiel_Accepted_manuscript.pdf",
+        "pdfPages": 27,
+        "pdfZeroIndexedPageScreenshotsVerified": [
+          0,
+          8,
+          23
+        ],
+        "authorsOwnPagesVisuallyInspected": [
+          8,
+          23
+        ],
+        "acceptedCopyShowsFinalCitationYear": 2023,
+        "publicUniversityPortalUsesYear": 2022,
+        "yearConflictResolvedAs": "FINAL_PUBLISHED_YEAR_2023_IN_ACCEPTED_MANUSCRIPT_COVER_AND_ISSUE_73_1_PORTAL_2022_IS_RECORD_PUBLICATION_METADATA",
+        "sectionsRead": [
+          "INTRO_SOCIAL_JUSTICE_JER_EZEK",
+          "JER23_5_6_VS_JER33_16_P8",
+          "DAVIDIC_ROLE_ZEDEKIAH_JEHOIACHIN",
+          "CONCLUSION_P23"
+        ],
+        "authorHypothesis": "JEREMIAH_JERUSALEM_CENTRED_ZEDEKIAH_LINE_VS_EZEKIEL_EXILE_CENTRED_JEHOIACHIN_LINE_BOTH_USE_MISHPAT_TSEDAQAH_DIFFERENTLY",
+        "didAuthorAssertIndependentOriginalGreekManuscriptCollation": false,
+        "physicalGreekManuscriptsInspectedByThisResearch": false,
+        "fullPublishedJournalTypesetVersionRead": false,
+        "allReferencedAcademicFootnotesIndependentlyReviewed": false,
+        "productReuseRightsGranted": false,
+        "historicFactionReconstructionCertainty": false
+      },
+      "acceptedManuscriptConclusionPage": "23"
     },
     {
       "id": "SRC-OTE-ERZBERGER-JER33-2013",

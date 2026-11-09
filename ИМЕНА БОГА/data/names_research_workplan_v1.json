@@ -742,7 +742,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "2026-11-09 WAVE4 NG10: read peer-reviewed Johanna Erzberger 2013 Old Testament Essays 26/3 entire substantive publisher-hosted HTML argument sections B,D,E,F,G,H,I: MT Jer33:14-26 absent in shorter Old Greek; author argues later MT textual expansion interlocking MT Jer31:35-37, contrasts Jerusalem named in Jer33:16 with royal future in Jer23:6 and Greek Jer23:6 Iosedek; alternative Greek omission and uncertain redaction chronology not resolved. New source SRC-OTE-ERZBERGER-JER33-2013 PARTIAL_OBJECT/B1 because embedded Hebrew image equations not visually collated; source register 87, 264 tests, Reader01 and dossiers05/16 substantively qualified. Original Greek codex variants and author critical apparatus NOT independently inspected. NG10 remains BLOCKED_SOURCE. Prior f2f4844 exact 6/6 success; new SHA awaits CI. Next wave: address independent original full English accepted Liebermann 2022/2023 chronology + adversarial editor audit of Reader01 versus Gospel Name, or documented acquired original text request for critical apparatus. Do not merge, publish, create branches, strip holds.",
+  "nextAction": "2026-11-09 WAVE5: original Rosanne Liebermann accepted PDF 27 pages screenshot pages0,8,23 visibly inspected, author p8 MT Jer23:6 king versus Jer33:16 Jerusalem and latter absent most Greek witnesses; p23 conclusion interprets Jeremiah's future as Zedekiah/Jerusalem focused versus Ezekiel Jehoiachin/exile focused, author-hypothesis not documented historical proof. Accepted manuscript cover cites 2023 journal 73/1 pp62-81, Aarhus catalogue uses published 2022; keep dated provenance distinct. Contrast 2013 Johanna Erzberger Old Testament Essays philological MT/OG intertext evolution versus political-ideological Rosanne interpretation, not claim either proves Urtext. Source register 87, 264 corpus tests; 0 ancient Greek MSS collations, external peer approvals and Product/rights approvals. Scientific NG10 BLOCKED_SOURCE. Prior f2f4844 exact 6/6 confirmed; d14668d failed navigation snapshot and was narrowly repaired at 61640d2, whose Names ledger CI already SUCCESS but all six checks pending. New HEAD requires own CI. Next source gate original Greek Jeremiah critical apparatus and evidence about 4QJer short/long readings, not public preview loops.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -818,8 +818,8 @@
       "printedPages": "62–81",
       "issueYear": 2023,
       "firstOnlineYear": 2022,
-      "status": "AUTHOR_ACCEPTED_MANUSCRIPT_COVER_AND_P8_CHECKED_FULL_REVIEW_PENDING",
-      "reviewQuestion": "Why MT Jeremiah 33:16 Jerusalem-naming absent from much of Old Greek and which text-critical alternatives exist; independent critical apparatus needed."
+      "status": "AUTHOR_ACCEPTED_MANUSCRIPT_VISUAL_P0_P8_P23_CONCLUSION_READ_PUBLISHED_EDITION_AND_CRITICAL_COLLATION_PENDING",
+      "reviewQuestion": "Compare Liebermann 2023 pp62-81 accepted author manuscript p8 and p23 author hypothesis of Davidic opposition to Erzberger 2013 textual development of Jer33 MT/OG. Both attribute interpretations; neither substitutes for ancient Greek manuscript collation."
     }
   ],
   "lastWorkReport": {
