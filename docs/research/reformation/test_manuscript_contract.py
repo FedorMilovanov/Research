@@ -129,6 +129,28 @@ class ReformationManuscriptTests(unittest.TestCase):
         self.assertIn("NOT_EDITORIAL_READY", intro)
         self.assertIn("PUBLICATION_HOLD", intro)
 
+    def test_introduction_reader_starts_with_story_and_ends_with_navigation(self):
+        """Keep editorial metadata outside the reader and avoid a false ending."""
+        intro = INTRO.read_text(encoding="utf-8")
+        reader, apparatus = intro.split(
+            "## Источниковедческие и редакционные примечания", 1
+        )
+        self.assertTrue(reader.startswith(
+            "# Что такое Реформация? От Эдема до Европы накануне 1517 года\n\n## Не всякое изменение — реформа"
+        ))
+        meta_label = "Единственное книжное введение; редакторское разграничение"
+        self.assertNotIn(meta_label, reader)
+        self.assertEqual(apparatus.count(meta_label), 1)
+        for gate in ("RESEARCH_MANUSCRIPT_DRAFT", "NOT_EDITORIAL_READY",
+                     "PUBLICATION_HOLD", "eBible RUSSYN"):
+            self.assertIn(gate, apparatus)
+        conclusion = reader.index("## Вместо заключения к введению")
+        nav = "Далее — [«Европа перед 1517 годом»](episode01_historical_gateway_draft.md)."
+        self.assertEqual(reader.count(nav), 1)
+        self.assertGreater(reader.index(nav), conclusion)
+        self.assertEqual(reader.split(nav, 1)[1].strip(), "---")
+        self.assertNotIn("На этом мы завершаем большое введение.", reader)
+
     def test_kings_18_22_digital_witnesses_not_conflated(self):
         """Different Synodal web editions are evidence of variance, not a collation."""
         intro = INTRO.read_text(encoding="utf-8")
