@@ -1065,9 +1065,9 @@
       "sourceRole": "ATTRIBUTED_TRANSLATION_FORMAL_EQUIVALENCE_THEOLOGY_2024",
       "printedPages": "5–26",
       "pdfStartPageZeroBased": 6,
-      "sourceObjectState": "Publisher PDF physical page 6 / printed 5 and abstract checked by image; article not read in its entirety.",
-      "supportedUse": "Attribute Chou case for formal equivalence and translator versus expositor roles as a confessional hermeneutical position; compare with independent translation theory",
-      "forbiddenUse": "Call author's preferred translation philosophy universal academic consensus or proof of original YHWH pronunciation; publish extended passages without publisher permission",
+      "sourceObjectState": "Original publisher TMSJ35/1 printed pp5–26, PDF indices6–27. Main sections and conclusion read in searchable publisher text, title and conclusion visually checked; author argues formal equivalence as normative, acknowledges dynamic-equivalence clarity challenge and Luther history, places explication in teacher/expositor not translator, interprets Acts8 and NT quotations. Opposing sources not independently checked; not a watched course or proven universal translation philosophy.",
+      "supportedUse": "Attribute Chou case for formal equivalence and translator versus expositor roles as a confessional hermeneutical position; compare with independent translation theory Attributed selected original Chou 2024 sections print pp10–16,19,23–26 support his formal equivalence, audience clarity, translator/expositor responsibilities and his treatment of NT quotation variants.",
+      "forbiddenUse": "Call author's preferred translation philosophy universal academic consensus or proof of original YHWH pronunciation; publish extended passages without publisher permission Do not infer literal translation mandates from one article, that he watched or delivered a particular video, or that NT quotations always reproduce a single source edition.",
       "year": 2024,
       "evidenceClass": "B1",
       "criticalEditionCollated": false,
@@ -1080,7 +1080,28 @@
       ],
       "accessState": "PARTIAL_OBJECT",
       "locatorState": "EXACT_LOCATOR_VERIFIED",
-      "licenseScope": "TMSJ printing rights: classroom/church free copies up to 100 with source marking as specified; any other reproduction requires publisher permission. No automatic Product reprint."
+      "licenseScope": "TMSJ printing rights: classroom/church free copies up to 100 with source marking as specified; any other reproduction requires publisher permission. No automatic Product reprint.",
+      "originalReview20261109": {
+        "printedRange": [
+          5,
+          26
+        ],
+        "pdfZeroBasedPages": [
+          6,
+          27
+        ],
+        "originalPageImagesInspected": [
+          5,
+          26
+        ],
+        "selectedAuthorMainArgumentAndConclusionRead": true,
+        "authorPosition": "FORMAL_EQUIVALENCE_WITH_DISTINCT_TRANSLATOR_AND_EXPOSITOR_ROLES",
+        "competingViews": "DYNAMIC_EQUIVALENCE_READABILITY_CHURCH_HISTORY_AND_LUTHER_AS_REPORTED_BY_AUTHOR",
+        "ancientTextualCriticalCollation": false,
+        "allFootnotedAlternativeArgumentsIndependentlyChecked": false,
+        "videoWatched": false,
+        "translationPolicyUniversalConsensus": false
+      }
     },
     {
       "id": "SRC-TMSJ-BARRICK-TRANSLATION-2024",
@@ -1091,9 +1112,9 @@
       "sourceRole": "ATTRIBUTED_BIBLICAL_TRANSLATION_NEHEMIAH8_2024",
       "printedPages": "45–52",
       "pdfStartPageZeroBased": 46,
-      "sourceObjectState": "Published title and author located in publisher contents pp45–52, no full page-by-page article review or independent ancient-language verdict.",
-      "supportedUse": "Document Barrick's research agenda on translation/explanation in Nehemiah 8, not automatically proven direct Aramaic translation of every speech act",
-      "forbiddenUse": "Pretend the entire argument or ancient language history was reviewed; copy copyrighted pages to Product; claim all Bible translation models invalid from one article",
+      "sourceObjectState": "Publisher TMSJ35/1 printed45-52 zero-based46-53. Images title/conclusion and selected author's philological points pp47-52 checked. Barrick argues Ezra/Levites conveyed Hebrew Torah to Aramaic-speaking returnees through translation and explanation. Neh8:8 original Hebrew word מְפֹרָשׁ accepts several lexical/syntactic readings; NET translators explicitly leave interpretation versus translation versus distinct reading open, so Aramaic must remain attributed historical inference, not mechanically established by this clause. No independent MS apparatus or rights release.",
+      "supportedUse": "Document Barrick's research agenda on translation/explanation in Nehemiah 8, not automatically proven direct Aramaic translation of every speech act Original author argument selected pp47–52; compare Neh8:8 Hebrew clause and NET note on disputed מְפֹרָשׁ semantic role before historical conclusions.",
+      "forbiddenUse": "Pretend the entire argument or ancient language history was reviewed; copy copyrighted pages to Product; claim all Bible translation models invalid from one article Claim Neh8:8 unambiguously says 'translated from Hebrew to Aramaic' or the direct historical fact from an original documentary witness, or infer Yahweh ancient vocalization from this article.",
       "year": 2024,
       "evidenceClass": "B1",
       "criticalEditionCollated": false,
@@ -1106,7 +1127,28 @@
       ],
       "accessState": "PARTIAL_OBJECT",
       "locatorState": "EXACT_LOCATOR_VERIFIED",
-      "licenseScope": "TMSJ printing rights: classroom/church free copies up to 100 with source marking as specified; any other reproduction requires publisher permission. No automatic Product reprint."
+      "licenseScope": "TMSJ printing rights: classroom/church free copies up to 100 with source marking as specified; any other reproduction requires publisher permission. No automatic Product reprint.",
+      "originalReview20261109": {
+        "printedRange": [
+          45,
+          52
+        ],
+        "pdfZeroBasedPages": [
+          46,
+          53
+        ],
+        "originalPageImagesInspected": [
+          45,
+          52
+        ],
+        "selectedAuthorNehemiah8SectionsAndConclusionRead": true,
+        "authorPosition": "ARAMEIC_TRANSLATION_AND_EXPLANATION_IN_NEH8_POSTEXILIC_SETTING_AS_AUTHOR_RECONSTRUCTION",
+        "opposingTextualData": "NEH8_8_MEPHORASH_ALTERNATIVES_CLEAR_DISTINCT_EXPLAIN_INTERPRET_TRANSLATE",
+        "originalHebrewDigitalVerseRead": "NEHEMIAH_8_8_WLC_MT_WEB_TEXT_ONLY",
+        "ancientTextCriticalCollation": false,
+        "originalHistoricalLanguagesUnambiguouslyEstablished": false,
+        "independentFootnotesVerified": false
+      }
     },
     {
       "id": "SRC-TMSJ-CHOU-DANIEL-2024",

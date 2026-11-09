@@ -742,7 +742,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "2026-11-09 WAVE1: Valdizan TMSJ35/1 printed53-74 (PDF zero54-75), selected publisher-original syntax/semantics and conclusion checked; author favours actively present Qal and keeping personal name in translation but this is no settled original pronunciation. Chou Daniel7 TMSJ35/2 printed153-178 (PDF zero5-30) selected argument and images read; author Messiah Son of Man distinct participant from Ancient of Days, opposes collective/angel readings; independent Aramaic textual apparatus not read. Existing TMSJ13 and Reader02 editorial notes revised; source entries still only PARTIAL_OBJECT; 86 sources, 264 core tests, 0 critical MSS collations, 0 outside scientific/rights/Product approvals. New SHA requires CI, prior 29afe487 6/6 SUCCESS. Next read another bounded primary scholarly paper Chou translations or Barrick; retain NG04/05/10/12 HOLD and no site/branch/merge changes.",
+  "nextAction": "2026-11-09 WAVE2: Chou TMSJ35/1 pp5-26 (PDF0-based6-27): selected original author's argument and conclusion read; advocates formal equivalence with translator/expositor distinct responsibilities, addresses dynamic equivalence and history, not general academic consensus or all NT quote variation. Barrick TMSJ35/1 pp45-52 (PDF0-based46-53): selected original claims Neh8 public Aramaic translation and exposition, but MT Neh8:8 mephorash allows 'clearly / explaining / translating' and NET translator notes contest necessity of Aramaic inference. No new source IDs, 86 sources, 264 corpus tests. NG08 and NG09 remain IN_PROGRESS because other original grammar and lecture audio/video not reviewed. Next target Valdizan Acts2 TMSJ35/2 pp257-272, MT/LXX cited texts and critical NT distinctions; external scholarly review, manuscript collations, rights/Product all zero. Prior 29afe487 six CI success; wave1 f6f4244 exact CI not yet terminal on this read, do not presume 6/6.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -788,7 +788,7 @@
         "NG-09"
       ],
       "printedPages": "5–26",
-      "status": "TITLE_ABSTRACT_CHECKED_FULL_READING_PENDING"
+      "status": "ORIGINAL_PUBLISHER_SELECTED_TRANSLATION_ARGUMENT_AND_CONCLUSION_REVIEWED_OPPONENTS_PENDING"
     },
     {
       "sourceId": "SRC-TMSJ-BARRICK-TRANSLATION-2024",
@@ -797,7 +797,7 @@
         "NG-08"
       ],
       "printedPages": "45–52",
-      "status": "CONTENTS_CHECKED_FULL_READING_PENDING"
+      "status": "ORIGINAL_PUBLISHER_SELECTED_NEH8_LANGUAGE_ARGUMENT_READ_CONTESTED_MEPHORASH_NOT_CLOSED"
     },
     {
       "sourceId": "SRC-TMSJ-CHOU-DANIEL-2024",
