@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 86,
+    "sourceRecords": 87,
     "approvedForProduct": 0
   },
   "records": [
@@ -1261,6 +1261,48 @@
       "accessState": "PARTIAL_OBJECT",
       "locatorState": "EXACT_LOCATOR_VERIFIED",
       "licenseScope": "Aarhus accepted manuscript permits private study/research and linking to URL; copyright and further republication restrictions apply. No full article redistribution or Product reproduction permission."
+    },
+    {
+      "id": "SRC-OTE-ERZBERGER-JER33-2013",
+      "title": "Johanna Erzberger, Jeremiah 33:14–26: The Question of Text Stability and the Devaluation of Kingship, Old Testament Essays 26/3 (2013)",
+      "creator": "Johanna Erzberger",
+      "url": "https://www.scielo.org.za/scielo.php?pid=S1010-99192013000300008&script=sci_arttext",
+      "objectType": "publisher_hosted_peer_reviewed_article_html_complete_substantive_text_embedded_formulas_not_all_visually_verified",
+      "sourceRole": "ATTRIBUTED_JEREMIAH_33_14_26_MT_OLD_GREEK_EXPANSION_AND_ROYAL_CITY_NAME_DEBATE_2013",
+      "year": 2013,
+      "journal": "Old Testament Essays",
+      "volume": "26",
+      "issue": "3",
+      "reviewedSections": [
+        "B_JER_33_14_26_IN_MT",
+        "D_JER_31_35_37_AND_33_14_26",
+        "E_JER_23_5_6",
+        "F_JER_33_15_16_AND_23_5_6",
+        "G_DIFFERENT_MODES",
+        "H_DEVALUATION_OF_KINGSHIP",
+        "I_FRAMES_OF_ORIENTATION"
+      ],
+      "publisherArticleHtmlRead": true,
+      "embeddedHebrewEquationImagesIndividuallyVerified": false,
+      "oldGreekManuscriptCriticalApparatusRead": false,
+      "independent4QJerScrollCollation": false,
+      "authorProposal": "MT_JER_33_14_26_PROBABLY_LATER_EXPANSION_WITH_JER31_INTERTEXTUAL_REWORKING_PLUS_PRIESTLY_COUNTERWEIGHT_TO_KINGSHIP",
+      "alternativeHypotheses": "GREEK_SHORTER_VORLAGE_VS_GREEK_INTENTIONAL_OR_ACCIDENTAL_OMISSION_AND_UNCERTAIN_RELATIVE_CHRONOLOGY_JER23_6",
+      "sourceObjectState": "Full official SciELO Old Testament Essays 2013 HTML substantive article read directly, including section B account absence Jer33:14-26 from Old Greek, D intertexts MT Jer31:35-37 vs Greek38:35-37, E Old Greek Jer23:6 as Ιωσεδεκ versus MT divine-name clause, F feminine Jerusalem named object, H proposed priestly balancing of dynastic monarchy. Some displayed Hebrew formulae are embedded images not visually audited, no direct critical edition or Qumran witness examined. Author's redactional view remains an argument with explicit omitted-versus-added alternatives.",
+      "supportedUse": "Use author-attributed competing textual-growth explanation Jer33:14-26, contextual MT Jerusalem referent 33:16 versus MT king referent 23:6, Greek Jer23:6 Josedeq name in author's analysis, and her caution about chronology and Egyptian Greek textual layers. Compare her own text-critical argument independently with Liebermann and Leuchter; never transfer a reported ancient Greek reading to a non-existent Greek Jer33:16.",
+      "forbiddenUse": "Declare current authorship/true original Hebrew edition finally decided, claim directly inspected ancient Greek manuscripts/4QJer scrolls, use this article to deny MT Jeremiah 33:16's canonical existence, or invent Greek Jer33:16 / rights approval.",
+      "evidenceClass": "B1",
+      "criticalEditionCollated": false,
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "licenseScope": "Open publisher-hosted SciELO reading, link and bounded own paraphrase only; article and embedded-image reproduction rights not independently established; Product uses only upon rights decision."
     },
     {
       "id": "SRC-NET-REV1-8",
@@ -2750,5 +2792,5 @@
       }
     }
   ],
-  "auditRevision": "NG05_4Q120_PRIMARY_MUSEUM_IMAGE_VISUAL_PRELIMINARY_IAO_NO_CRITICAL_COLLATION_20261108"
+  "auditRevision": "NG10_ERZBERGER_2013_MT_OLD_GREEK_JEREMIAH_CITY_ROYAL_TEXT_GROWTH_ALTERNATIVE_20261109"
 }

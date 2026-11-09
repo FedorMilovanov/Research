@@ -12,11 +12,11 @@
     "arenaRecords": 29,
     "extensionRecords": 13,
     "contextAttestations": 105,
-    "sourceRegisterEntries": 86,
+    "sourceRegisterEntries": 87,
     "regressionTests": 264,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PREVIOUS_29AFE487_SIX_OF_SIX_SUCCESS_NEW_TMSJ_REVIEW_SHA_REQUIRES_EXACT_CI",
+    "allSixCiChecks": "PRIOR_F2F4844_EXACT_6_SUCCESS_NEW_ERZBERGER_NG10_RESEARCH_SHA_CI_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "29afe487803c71df76d2c2275195b7815d4c3412"
+    "lastConfirmedAllSixChecksSha": "f2f48443152c4f31fbd764b2ba2f3753c299abe2"
   },
   "allowedStatuses": [
     "DONE",
@@ -742,7 +742,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "2026-11-09 WAVE3 Valdizan Acts2 original TMSJ35/2 pp257-272 (PDF zero109-124) read selected primary publisher sections and screenshots of printed257,265,271,272. Author differentiates Joel2:32 YHWH name as kyrios in Acts2:21, Psalm16 distinction of God from Messiah in David speech, Psalm110:1 Hebrew YHWH vs l'adoni as distinct referents rendered kyrios, concluding christological two-sense strategy. Original printed p271 says 'Joel 2:23' in a summarizing expression although recurrent source passage is Joel2:32; MT Joel2:23 is rain/rejoicing, so mark SOURCE_LOCATOR_ANOMALY, not silent emendation or correction certified. No full ancient Greek MSS/BHS apparatus or independent scholarly audit, source PARTIAL_OBJECT. Original Chou and Barrick wave2 and Valdizan Ex3 wave1 already integrated; no new source ID, sources86, ledger tests264. Next independent priority NG04/05 critical apparatus access, NG12 photos and Shadday competing scholarship; no more bibliographic busywork. Prior exact 29afe487 six checks success; later heads require exact CI, no merge/rights/Product publication.",
+  "nextAction": "2026-11-09 WAVE4 NG10: read peer-reviewed Johanna Erzberger 2013 Old Testament Essays 26/3 entire substantive publisher-hosted HTML argument sections B,D,E,F,G,H,I: MT Jer33:14-26 absent in shorter Old Greek; author argues later MT textual expansion interlocking MT Jer31:35-37, contrasts Jerusalem named in Jer33:16 with royal future in Jer23:6 and Greek Jer23:6 Iosedek; alternative Greek omission and uncertain redaction chronology not resolved. New source SRC-OTE-ERZBERGER-JER33-2013 PARTIAL_OBJECT/B1 because embedded Hebrew image equations not visually collated; source register 87, 264 tests, Reader01 and dossiers05/16 substantively qualified. Original Greek codex variants and author critical apparatus NOT independently inspected. NG10 remains BLOCKED_SOURCE. Prior f2f4844 exact 6/6 success; new SHA awaits CI. Next wave: address independent original full English accepted Liebermann 2022/2023 chronology + adversarial editor audit of Reader01 versus Gospel Name, or documented acquired original text request for critical apparatus. Do not merge, publish, create branches, strip holds.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
