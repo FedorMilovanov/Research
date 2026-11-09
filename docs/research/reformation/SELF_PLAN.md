@@ -1,7 +1,28 @@
 # САМОПЛАН «Реформации» — живая доска исполнения, границы поиска и сборка книги
 
 
-## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 405, 09.11.2026 (RF-1KINGS18-SYNODAL-DIGITAL-WITNESSES)
+## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 406, 09.11.2026 (RF-BGE-MS-FR-413-ARCHIVAL-REPLY-FOLIO-GATE)
+
+**Проверенная база:** [PR #434](https://github.com/FedorMilovanov/Research/pull/434) MERGED 09.11.2026 11:42:01 UTC; `Research/main = f36de483a37dedc186503cd29d172ed4e73aa715`, 5/5 PR и 5/5 post-merge CI SUCCESS, 110/110 тестов. На входе нет открытых PR по «Реформации». Работа только в `docs/research/reformation/`, без новой серии/ветки для постороннего корпуса и без Product/release.
+
+**Новое доказательное событие, а не очередной поиск:** 09.11.2026 получен ответ **Bibliothèque de Genève, Département des manuscrits** (`CorrMss 2026/448`, archiviste Camille Larraz), в котором хранитель **подтверждает полную оцифровку BGE Ms. fr. 413**, [официальный архивный объект](https://archives.bge-geneve.ch/ark:/17786/vtac61f062330e0a126), **folio 28** — заверительная формула ([canvas 0/65](https://archives.bge-geneve.ch/ark:/17786/vtac61f062330e0a126/dao/0/1?id=https%3A%2F%2Farchives.bge-geneve.ch%2Fark%3A%2F17786%2Fvtac61f062330e0a126%2Fcanvas%2F0%2F65)), **folio 4v** — первоначальная статья XI ([canvas 0/18](https://archives.bge-geneve.ch/ark:/17786/vtac61f062330e0a126/dao/0/1?id=https%3A%2F%2Farchives.bge-geneve.ch%2Fark%3A%2F17786%2Fvtac61f062330e0a126%2Fcanvas%2F0%2F18)). **Архив не ответил, какую дату показывает f. 28, и не прислал транскрипцию XI.** Наше автоматическое открытие viewer через открытые средства было остановлено проверкой Anubis. Ни сами снимки, ни строки первичной статьи XI **не прочитаны**. Статус: `ARCHIVE_REPLY_RECEIVED / DIGITAL_OBJECT_LOCATED / FOLIO_LOCATORS_CONFIRMED / FOLIO_IMAGES_UNREAD`. Предыдущий `ARCHIVE_INQUIRY_SENT / RESPONSE_PENDING` относится к историческому состоянию до ответа.
+
+**Два результата этой ограниченной волны:**
+1. Синхронизировать **существующие** [архивный запрос](nantes_bge_ms_fr_413_archival_request.md), [французское досье](09_france_confession_nantes_source_study.md), научное приложение [главы 11](episode11_france_catholic_reform_nantes_1545_1599_manuscript.md), `C301` в реестре 319 утверждений, `REF-P86` в существующей библиотеке 204 источников, а также **H-08** в [рецензионном пакете](independent_review_packets.md). Записать именно координаты фолио и статус чтения, **не** изменять саму читательскую прозу и не повышать доказательную категорию записи.
+2. В существующем `test_nantes_digital_provenance.py` защитить переход SENT→REPLY_RECEIVED и точные канвасы **0/65** и **0/18**, обязательное `REF-P86 CATALOG_ONLY` и сохранение `COPY_DATE_CONFLICT_22_29_MAY_1599`, `EARLY_XI_COLLATION_HOLD`, `ARCHIVE_HOLD`, `RIGHTS_HOLD`, `PUBLICATION_HOLD`. Ссылка на визуальный объект не подменяет фактическое чтение.
+
+**Что остаётся открыть и прочитать по существу:** (a) `f. 28` со знаком/подписью нотариуса — точный день **22/29 мая 1599**, отдельная дата удостоверения, не дата апрельского акта; (b) `f. 4v` — **буквальное чтение ранней статьи XI** и её пословное сопоставление с `REF-P27` Paris 1599, строки 423–463. При препятствии доступа не обходить защиту сайта самодельными средствами; возможны **обычное открытие ссылки человеком** или новое адресное письмо хранителю с просьбой о текстовой цитате или стандартном IIIF/доступном формате, **без оплаты или заказа изображений без согласия**. Только после получения этих свидетельств обсуждать снятие соответствующих предметных HOLD.
+
+**Не изменено:** 14 книжных частей, 204 записанных источника, `C1–C319`, отсутствие независимых отзывов, `RESEARCH_MANUSCRIPT_DRAFT / NOT_EDITORIAL_READY / REVIEW_PACKETS_PREPARED / NOT_SENT / INDEPENDENT_EXTERNAL_REVIEW_OPEN / THEOLOGICAL_PEER_REVIEW_OPEN / ORIGINAL_PRINT_COLLATION_HOLD / ARCHIVE_HOLD / RIGHTS_HOLD / EDITORIAL_HANDOFF_HOLD / PUBLICATION_HOLD`. `REF-P86` по прямому чтению **остаётся CATALOG_ONLY**; права архива на факсимиле не предоставлены. Нельзя публиковать снимки или объявлять книгу готовой.
+
+**Приёмка:** единственный scoped PR в Research без обхода protected `main`; `python -B docs/research/reformation/validate_corpus.py` и `python -B -m unittest discover -s docs/research/reformation -p 'test_*.py'` в CI; 5/5 обязательных терминальных SUCCESS на точном HEAD, только затем merge и отдельный контроль post-merge. Следующий реальный шаг — **просмотр двух известных листов**, не увеличение количества вторичных источников.
+
+---
+
+## ИСТОРИЧЕСКИЙ СРЕЗ ВОЛНЫ 405 — не действующий паспорт (RF-1KINGS18-SYNODAL-DIGITAL-WITNESSES)
+
+**Технически закрыто:** [PR #434](https://github.com/FedorMilovanov/Research/pull/434) MERGED 09.11.2026 11:42:01 UTC, `Research/main = f36de483a37dedc186503cd29d172ed4e73aa715`, 5/5 PR and 5/5 post-merge CI SUCCESS, профильные тесты 110/110. Это история предыдущей проверки 3 Цар. 18:22, **не** новое решение по Женеве.
+
 
 **Точно принятая техническая база:** [PR #433](https://github.com/FedorMilovanov/Research/pull/433) MERGED 09.11.2026 09:34:05 UTC; `Research/main = 7ba569461b2675396e7242c33d36f918622360cc`; **5/5 PR + 5/5 post-merge CI SUCCESS**. На входе нет открытых Reformation PR. Scope: только `docs/research/reformation/`; чужие исследования, Product и публикационные очереди не трогать.
 
