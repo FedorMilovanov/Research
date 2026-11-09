@@ -161,6 +161,24 @@ class BookContinuityTests(unittest.TestCase):
         self.assertIn("вне совершенства Христова", packet)
         self.assertIn("не** выполнена", packet)
 
+    def test_review_outreach_not_confused_with_expert_review(self):
+        """An introductory email is not delivery or approval of either packet."""
+        plan = (HERE / "SELF_PLAN.md").read_text(encoding="utf-8")
+        active = plan.split("---", 1)[0]
+        packet = (HERE / "independent_review_packets.md").read_text(encoding="utf-8")
+        archive = (HERE / "nantes_bge_ms_fr_413_archival_request.md").read_text(encoding="utf-8")
+        self.assertIn("REVIEWER_OUTREACH_SENT", active)
+        self.assertIn("REVIEW_PACKETS_PREPARED / NOT_SENT", active)
+        self.assertIn("INDEPENDENT_EXTERNAL_REVIEW_OPEN", active)
+        self.assertIn("THEOLOGICAL_PEER_REVIEW_OPEN", active)
+        self.assertIn("PUBLICATION_HOLD", active)
+        self.assertIn("REVIEWER_OUTREACH_SENT", packet)
+        self.assertIn("REVIEW_PACKETS_PREPARED / NOT_SENT", packet)
+        self.assertIn("ARCHIVE_FOLLOWUP_SENT", archive)
+        self.assertIn("REPLY_TO_FOLLOWUP_PENDING", archive)
+        self.assertIn("FOLIO_IMAGES_UNREAD", archive)
+        self.assertIn("EARLY_XI_COLLATION_HOLD", archive)
+
     def test_nantes_two_editions_and_non_evidence_of_third(self):
         text = self.texts["episode11_france_catholic_reform_nantes_1545_1599_manuscript.md"]
         for key in ("95 общих статей", "92 статей", "93",
