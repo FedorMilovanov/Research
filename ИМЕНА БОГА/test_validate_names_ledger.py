@@ -1595,5 +1595,22 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("original 1976 erratum corrects editorial headline only" in e
                             for e in validate_source_access(d)))
 
+
+    def test_sidestone_2019_direct_visual_witness_viewer_page_not_off_by_one(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-DEIRALLA-STEINER-WAGEMAKERS-2019")
+        row["laterPublishedCombinationFigureAccess2019"]["bookViewerDirectPhotoWitness20261109"]["viewerPageIndex"] = 144
+        self.assertTrue(any("Sidestone 2019 publisher photo pixels and print/viewer locator" in e
+                            for e in validate_source_access(d)))
+
+    def test_sidestone_2019_visible_fragment_photos_do_not_verify_shdyn_glyphs_or_rights(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-DEIRALLA-STEINER-WAGEMAKERS-2019")
+        witness = row["laterPublishedCombinationFigureAccess2019"]["bookViewerDirectPhotoWitness20261109"]
+        witness["exactAncientLettersShdynIndependentlyVerified"] = True
+        witness["rightsForRepublishing2019FiguresConfirmed"] = True
+        self.assertTrue(any("Sidestone 2019 publisher photo pixels and print/viewer locator" in e
+                            for e in validate_source_access(d)))
+
 if __name__ == "__main__":
     unittest.main()
