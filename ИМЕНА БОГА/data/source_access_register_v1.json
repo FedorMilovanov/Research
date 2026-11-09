@@ -1225,7 +1225,7 @@
       "locator": "Printed pp. 141–144; figs. 5.15–5.17; excavation rooms EE334/EE335; NEW exact 1967 photo history: printed pp63–65 film procurement, p121–122 Franken diary Apr1/Apr3 Jerusalem, printed p122 fig4.40 just-lifted plaster photograph; these are text/figure CAPTION locators, not full photo autopsy.",
       "accessState": "PARTIAL_OBJECT",
       "locatorState": "COARSE_LOCATOR_ONLY",
-      "sourceObjectState": "Publisher confirms complete open-access illustrated volume; relevant excavation context and figure captions located via document text. Detailed letters on original plaster and all photographic facsimiles NOT independently collated. Open access does not automatically grant reuse of third-party images. Later checked publisher indexed original 2019 pp63–65 and p121–122 field-diary transcription: April 3 1967 appointment with director of Palestine Archaeological Museum for infrared photography; original 1967 diary manuscript/negative archive and actual photographs NOT reviewed. IAA Mandate archive 1919–1948 does not establish holdings of Deir Alla 1967. 2026-11-08 additional browser attempt: official Sidestone bookviewer at printed p143/viewer144 rendered figure captions 5.16/5.17 but not photographic pixels in that session; author 2019 text p142 discusses EE334/EE335 as proposed find-context/architectural interpretation. Do NOT claim images excluded from the actual PDF file or that original 1976 IR/1967 photos were examined.",
+      "sourceObjectState": "Publisher confirms complete open-access illustrated volume; relevant excavation context and figure captions located via document text. Detailed letters on original plaster and all photographic facsimiles NOT independently collated. Open access does not automatically grant reuse of third-party images. Later checked publisher indexed original 2019 pp63–65 and p121–122 field-diary transcription: April 3 1967 appointment with director of Palestine Archaeological Museum for infrared photography; original 1967 diary manuscript/negative archive and actual photographs NOT reviewed. IAA Mandate archive 1919–1948 does not establish holdings of Deir Alla 1967. 2026-11-08 additional browser attempt: official Sidestone bookviewer at printed p143/viewer144 rendered figure captions 5.16/5.17 but not photographic pixels in that session; author 2019 text p142 discusses EE334/EE335 as proposed find-context/architectural interpretation. Do NOT claim images excluded from the actual PDF file or that original 1976 IR/1967 photos were examined. 2026-11-09 DIRECT VISUAL RECHECK: after identifying two-page viewer-index offset, official Sidestone bookviewer index145 (=printed p143) rendered actual original 2019 published Fig5.16 black/white fragment montage with labels i a, i b, i c, i d and line markers, and Fig5.17 detail showing correction placed above first line. This supersedes earlier failed index144 access (printed p142 text only). Publication credits images to Photo Deir Alla Project. No glyph-by-glyph shdyn reading, comparison with 1967/1976 IR negatives or Brill 1976 plates, and no figure-specific reuse rights established.",
       "supportedUse": "Ground archaeological provenance, room association, plaster-fragment restoration and exact visual-verification targets separate from philological etymology. Cite exact 1967 diary transcription and film procurement chronology as archaeological archival leads, distinguishing the April 3 appointment from proof of current repository custody. Attribute Combination I vs II room grouping to Steiner/Wagemakers 2019 print p142 as an archaeological reconstruction; use the exact published figure captions Fig5.16 and Fig5.17 as targets for archival identification, not direct script reading.",
       "forbiddenUse": "Treat excavation photographs as full palaeographic autopsy or transfer copyrighted archival images to Product without rights review. Treat 300 infrared-film sheets requested as 300 surviving negative photos, assert 1967 field photographs or Brill plate images were obtained, treat the Jerusalem appointment as proof of photographic custody in 1967 or 2026, or assume Mandate-era IAA catalog indexes Jordan 1967. Claim the 2019 caption/viewer text gave visual autopsy of fig5.16/5.17 ancient letters, that the photos are the Phoenix 1976 fig42 infrared shot, or that its open-access PDF licenses Deir Alla Project-owned third-party image reproduction.",
       "evidenceClass": "B1",
@@ -1249,14 +1249,33 @@
       "laterPublishedCombinationFigureAccess2019": {
         "academicPublisherBookViewer": "https://www.sidestone.com/bookviewer/9789088908736",
         "publisherPdf": "https://www.sidestone.com/openaccess/9789088908736.pdf",
-        "figureLocators": "STEINER_WAGEMAKERS_2019_PRINT_P143_FIG5_16_COMBINATION_I_AND_FIG5_17_ABOVE_LINE_CORRECTION_CAPTIONS_P141_FIG5_15_ROOM_MAP",
+        "figureLocators": "STEINER_WAGEMAKERS_2019_PRINT_P143_VIEWER_INDEX_145_FIG5_16_COMBINATION_I_AND_FIG5_17_ABOVE_LINE_CORRECTION_PHOTOGRAPHS_PRINT_P141_FIG5_15_ROOM_MAP",
         "archaeologicalNarrativeScope": "PRINT_P142_AUTHOR_MODEL_ROOM_EE334_COMBINATION_I_AND_ROOM_EE335_COMBINATION_II_POSSIBLE_WEST_WALL_ORIGINAL_POSITION_NOT_DIRECT_WALL_PHOTO_PROOF",
         "digitalFigureCaptionScope": "FIG5_16_PHOTO_DEIR_ALLA_PROJECT_COMBINATION_I_FIG5_17_PHOTO_DEIR_ALLA_PROJECT_WORD_ADDED_ABOVE_FIRST_LINE_SOURCE_CAPTIONS_ONLY",
-        "browserVisualResult": "PUBLISHER_BOOKVIEWER_PRINT143_VIEWER144_TEXT_AND_FIGURE_CAPTIONS_RENDERED_BUT_IMAGES_NOT_VISIBLE_IN_2026_BROWSER_SESSION_NO_GLYPH_AUTOPSY",
+        "browserVisualResult": "PUBLISHER_2019_PRINT143_VIEWER145_GENUINE_FIG5_16_5_17_PHOTO_PIXELS_RENDERED_LABELS_I_A_TO_I_D_AND_CORRECTION_ABOVE_FIRST_LINE_NO_SHDYN_COLLATION",
         "historicalImageIdentity": "MODERN_2019_REPRODUCTION_NOT_IDENTIFIED_AS_PHOENIX1976_FIG42_OR_BRILL1976_PLATE_INDEPENDENTLY",
         "rightsBoundary": "FIGURES_CREDIT_DEIR_ALLA_PROJECT_PUBLISHER_OPEN_ACCESS_TEXT_DOES_NOT_ISSUE_FILE_SPECIFIC_PHOTO_LICENSE_OR_PRODUCT_RIGHTS",
-        "nextRequiredEvidence": "VIEW_ACTUAL_PUBLISHER_PDF_FIG5_16_5_17_PIXELS_OR_ARCHIVAL_NEGATIVE_WITH_FRAGMENT_AND_REVISION_ID_COMPARE_1967_FRANKEN_P481_PHOENIX1976_FIG42_BRILL1976_PLATES_AND_EXACT_READING",
-        "status": "2019_SOURCE_CAPTIONS_AND_ARCHAEOLOGICAL_CONTEXT_VERIFIED_2019_IMAGE_PIXELS_NOT_AUTOPSIED_1967_1976_ORIGINAL_HOLD"
+        "nextRequiredEvidence": "ORIGINAL_1976_BRILL_PLATES_AND_P173_TO178_OR_1967_NEGATIVE_WITH_IDENTIFIED_FRAGMENT_IMAGE_COMPARISON_AND_SIGN_BY_SIGN_SHDYN_COLLATION_SEPARATE_RIGHTS_APPROVAL",
+        "status": "PUBLISHER_2019_FIG5_16_5_17_PHOTO_PIXELS_RENDERED_IN_BOOKVIEWER_NO_INDEPENDENT_SHDYN_GLYPH_COLLATION_1967_1976_ORIGINAL_HOLD",
+        "bookViewerDirectPhotoWitness20261109": {
+          "publisherBookViewer": "https://www.sidestone.com/bookviewer/9789088908736",
+          "viewerPageIndex": 145,
+          "printedPage": 143,
+          "indexOffset": 2,
+          "priorWrongViewerLocator": 144,
+          "fig516": "PHOTOGRAPHIC_BLACK_WHITE_PLASTER_FRAGMENT_MONTAGE_LABELS_I_A_I_B_I_C_I_D_WITH_PRINTED_LINE_NUMBERS",
+          "fig517": "PHOTOGRAPHIC_PLASTER_INSCRIPTION_CLOSE_UP_VISIBLE_AUTHOR_DESCRIBED_ABOVE_LINE_WORD_INSERTION",
+          "pixelsRendered": true,
+          "bothFigureCaptionsVerified": true,
+          "physicalFragmentsIndependentlyReidentified": false,
+          "exactAncientLettersShdynIndependentlyVerified": false,
+          "exactLine5And6GlyphReadingVerified": false,
+          "original1976BrillPlatesInspected": false,
+          "original1967Or1976InfraredIdentifiedAndMatched": false,
+          "rightsForRepublishing2019FiguresConfirmed": false,
+          "captionCredit": "PHOTO_DEIR_ALLA_PROJECT",
+          "evidenceScope": "PUBLISHED_2019_PHOTO_REPRODUCTIONS_VIEWED_IN_PUBLISHER_BROWSER_NOT_INDEPENDENT_AUTHENTICATION_OF_OLDER_NEGATIVES"
+        }
       }
     },
     {
