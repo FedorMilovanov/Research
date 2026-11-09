@@ -50,7 +50,7 @@ class ReformationAdversarialTenTwelve(unittest.TestCase):
                 text = self.books[n]
                 reader, apparatus = text.split("## Источниковедческий аппарат", 1)
                 self.assertTrue(reader.startswith(f"# Эпизод {n:02}."))
-                self.assertIn("\\n\\n## " + first_section, reader)
+                self.assertIn("\n\n## " + first_section, reader)
                 self.assertNotIn("**Статус:**", reader)
                 self.assertIn("**Статус:** RESEARCH_MANUSCRIPT_DRAFT", apparatus)
                 self.assertEqual(apparatus.count(original_limit), 1)
