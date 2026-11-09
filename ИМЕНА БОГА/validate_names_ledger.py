@@ -420,6 +420,9 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-HOFTIJZER-PHOENIX22-DEIRALLA-1976-FIG41-42": "EARLY_DEIR_ALLA_HOFTIJZER1976_AUTHOR_ARTICLE_WITH_IR_PHOTO_CAPTION_AND_RECONSTRUCTED_SHADDAY_TRANSLATION",
     "SRC-FRANKEN-1967-VT-FIRST-INSCRIPTION-PHOTO-480481": "FRANKEN1967_EARLIEST_PUBLISHED_DEIRALLA_FRAGMENT_PHOTO_REPORTED_IN_LEMAIRE1985_PAGE480_TEXT_PREVIEW_ONLY",
     "SRC-IAA-DSS-4Q120-B503715-2015": "PRIMARY_IAA_4Q120_GREEK_LEVITICUS_PHOTO_CATALOGUE_NO_GLYPH_COLLATION",
+    "SRC-CLEMENT-STROMATA-5-6-34-STAHLIN-GREEK": "CLEMENT_STROMATA_5_6_34_EDITED_GREEK_IAOUE_PASSAGE_NOT_AUTOGRAPH_OR_CERTAIN_PHONETICS",
+    "SRC-DEISSMANN-BIBLE-STUDIES-1901-TETRAGRAM-GREEK": "DEISSMANN_1901_SECONDARY_TEXTUAL_VARIANT_WARNING_CLEMENT_IAOUE_THEODORET_FORMS",
+    "SRC-ROMER-COLLEGE-DE-FRANCE-YHWH-2011": "ROMER_2011_ACADEMIC_SECONDARY_PATRISTIC_NAME_FORMS_AND_4Q120_FRAGMENT20_LEV4",
 }
 
 
@@ -527,6 +530,45 @@ def validate_source_access(sources: dict) -> list[str]:
             errors.append(f"{prefix}: falsely claims edition collation")
         if source.get("rightsState") == "PUBLICATION_ELIGIBLE" and rid not in {"SRC-VANWOLDE-2021", "SRC-TR1550-REV18", "SRC-SBLGNT-CCBY-LICENSE", "SRC-CAMBRIDGE-GOD-PRONOUNS", "SRC-SUCHARD-ELOHIM-2025", *DEIR_ALLA_VISUAL_LICENSE_GUARDS}:
             errors.append(f"{prefix}: evidence of a source-level license missing")
+        if rid in {
+            "SRC-CLEMENT-STROMATA-5-6-34-STAHLIN-GREEK",
+            "SRC-DEISSMANN-BIBLE-STUDIES-1901-TETRAGRAM-GREEK",
+            "SRC-ROMER-COLLEGE-DE-FRANCE-YHWH-2011",
+        }:
+            if (source.get("accessState") != "PARTIAL_OBJECT"
+                or source.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+                or source.get("publicationState") != "BLOCKED"
+                or source.get("criticalEditionCollated") is not False):
+                errors.append(f"{prefix}: ancient-name Greek transmission witness cannot become a certified manuscript collation or publication")
+        if rid == "SRC-CLEMENT-STROMATA-5-6-34-STAHLIN-GREEK":
+            clement = source.get("greekPassageWitness20261109")
+            if (not isinstance(clement, dict)
+                or clement.get("printedEditedForm") != "Ἰαουε"
+                or clement.get("exactLoc") != "STROMATA_V_6_34_STAHLIN_VOL2_PP348_349"
+                or clement.get("digitalTextDirectlyRead") is not True
+                or any(clement.get(flag) is not False for flag in (
+                    "originalPrintedApparatusRead",
+                    "ancientManuscriptsCollated",
+                    "historicalPronunciationUncontested"))):
+                errors.append(f"{prefix}: Clement digital Stählin Greek text must not become an ancient autograph or undisputed phonetic witness")
+        if rid == "SRC-DEISSMANN-BIBLE-STUDIES-1901-TETRAGRAM-GREEK":
+            if (source.get("variantScope20261109") != "DEISSMANN1901_REPORTS_CLEMENT_DINDORF_IAOU_VARIANT_IA_OUAI_IA_OUE_LAGARDE_PREFERRED_IAOUE_OUR_MANUSCRIPT_APPARATUS_NOT_READ"
+                or source.get("greekManuscriptsDirectlyCollated") is not False
+                or source.get("modernCriticalApparatusInspected") is not False):
+                errors.append(f"{prefix}: Deissmann's dated variant report is not direct Greek manuscript or modern apparatus inspection")
+        if rid == "SRC-ROMER-COLLEGE-DE-FRANCE-YHWH-2011":
+            romer = source.get("reportedAcademicWitness20261109")
+            if (not isinstance(romer, dict)
+                or romer.get("clement") != "STROMATA_5_6_34_IAOUE"
+                or romer.get("theodoretQuestions") != "QUESTIONS_ON_EXODUS_XV_SAMARITAN_IABE_JEWISH_AIA"
+                or romer.get("theodoretCompendium") != "HERETICAL_FABLES_V_3_SAMARITAN_IABAI_DISTINCT_TEXT"
+                or romer.get("papyrus") != "4Q120_EDITORIAL_FRAG20_LEV4_26_28_IAO"
+                or romer.get("slidesTextDirectlyRead") is not True
+                or any(romer.get(flag) is not False for flag in (
+                    "originalPatristicGreekEditionsCollated",
+                    "originalDjdCriticalEditionCollated",
+                    "pdfPageScreenshotVisuallyVerified"))):
+                errors.append(f"{prefix}: Römer 2011 lecture cannot merge Theodoret works or certify Greek original editions, DJD or screenshots")
         if rid == "SRC-LEMAIRE-DEIRALLA-SCRIBAL-2021":
             if (source.get("hypothesisStatus") != "ATTRIBUTED_COPY_AND_9TH_10TH_CENTURY_COMPOSITION_NOT_INDEPENDENTLY_ATTESTED"
                 or source.get("datingScope") != "LEMAIRE_PROPOSES_EARLY_8TH_WALL_TEXT_HEINTZ_1980_REPORTS_DIFFERENT_CIRCA_700_PALEOGRAPHIC_ESTIMATE_DISPUTED"):
