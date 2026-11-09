@@ -423,6 +423,9 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-CLEMENT-STROMATA-5-6-34-STAHLIN-GREEK": "CLEMENT_STROMATA_5_6_34_EDITED_GREEK_IAOUE_PASSAGE_NOT_AUTOGRAPH_OR_CERTAIN_PHONETICS",
     "SRC-DEISSMANN-BIBLE-STUDIES-1901-TETRAGRAM-GREEK": "DEISSMANN_1901_SECONDARY_TEXTUAL_VARIANT_WARNING_CLEMENT_IAOUE_THEODORET_FORMS",
     "SRC-ROMER-COLLEGE-DE-FRANCE-YHWH-2011": "ROMER_2011_ACADEMIC_SECONDARY_PATRISTIC_NAME_FORMS_AND_4Q120_FRAGMENT20_LEV4",
+    "SRC-THEODORET-EXODUM-15-PG80-243-GREEK": "THEODORET_EXODUM_XV_PG80_243_DIRECT_DIGITAL_GREEK_PARTIAL_CUTOFF_BEFORE_JEWISH_NAME",
+    "SRC-THEODORET-COMPENDIUM-V3-PG83-460-GREEK": "THEODORET_COMPENDIUM_V3_PG83_460_DIRECT_EDITED_GREEK_SHADDAI_GLOSS_AND_SAMARITAN_IABAI",
+    "SRC-KINZIG-PATRISTIC-TETRAGRAM-2008-P226227": "KINZIG_2008_EARLY_CHRISTIAN_YHWH_TRANSMISSION_VARIANTS_QUAESTIONES_COMPENDIUM_CRITIQUE",
 }
 
 
@@ -564,11 +567,70 @@ def validate_source_access(sources: dict) -> list[str]:
                 or romer.get("theodoretCompendium") != "HERETICAL_FABLES_V_3_SAMARITAN_IABAI_DISTINCT_TEXT"
                 or romer.get("papyrus") != "4Q120_EDITORIAL_FRAG20_LEV4_26_28_IAO"
                 or romer.get("slidesTextDirectlyRead") is not True
+                or romer.get("pdfPageScreenshotVisuallyVerified") is not True
                 or any(romer.get(flag) is not False for flag in (
                     "originalPatristicGreekEditionsCollated",
-                    "originalDjdCriticalEditionCollated",
-                    "pdfPageScreenshotVisuallyVerified"))):
+                    "originalDjdCriticalEditionCollated"))
+                or not isinstance(romer.get("pdfPageImageCrosscheck20261109"), dict)
+                or romer["pdfPageImageCrosscheck20261109"].get("zeroBasedPdfPageIndices") != [5, 6]
+                or romer["pdfPageImageCrosscheck20261109"].get("printedSlideNumbers") != [11, 12, 13, 14]
+                or romer["pdfPageImageCrosscheck20261109"].get("visuallyReadGreek") is not True
+                or romer["pdfPageImageCrosscheck20261109"].get("figureOrManuscriptAutopsy") is not False):
                 errors.append(f"{prefix}: Römer 2011 lecture cannot merge Theodoret works or certify Greek original editions, DJD or screenshots")
+        if rid in {
+            "SRC-THEODORET-EXODUM-15-PG80-243-GREEK",
+            "SRC-THEODORET-COMPENDIUM-V3-PG83-460-GREEK",
+            "SRC-KINZIG-PATRISTIC-TETRAGRAM-2008-P226227",
+        }:
+            if (source.get("accessState") != "PARTIAL_OBJECT"
+                or source.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+                or source.get("publicationState") != "BLOCKED"
+                or source.get("criticalEditionCollated") is not False):
+                errors.append(f"{prefix}: Theodoret and Kinzig witnesses remain partial printed-source evidence with publication HOLD")
+        if rid == "SRC-THEODORET-EXODUM-15-PG80-243-GREEK":
+            w = source.get("greekSourceWitness20261109")
+            if (not isinstance(w, dict)
+                or w.get("greekSamForm") != "Ἰαβὲ"
+                or w.get("passage") != "QUAESTIONES_EXODUM_15_PG80_COL243"
+                or w.get("digitalTextEndsExactly") != "Ἰουδαῖοι δὲ"
+                or w.get("digitalGreekDirectRead") is not True
+                or any(w.get(flag) is not False for flag in (
+                    "jewishReadingVisibleInThisDigitalExcerpt",
+                    "printedMigneCriticalApparatusCollated",
+                    "manuscriptPhotoAutopsied",
+                    "historicalPronunciationCertain"))):
+                errors.append(f"{prefix}: truncated Theodoret Exodum Greek cannot prove unseen Jewish vowel form or manuscript collation")
+        if rid == "SRC-THEODORET-COMPENDIUM-V3-PG83-460-GREEK":
+            w = source.get("greekCompendiumWitness20261109")
+            if (not isinstance(w, dict)
+                or w.get("loc") != "COMPENDIUM_V3_PG83_COL460A"
+                or w.get("sam") != "Ἰαβαὶ"
+                or w.get("patristicShaddaiForm") != "Σαδδαῒ"
+                or w.get("theodoretGloss") != "τὸν ἱκανὸν καὶ δυνατὸν"
+                or w.get("jewishForm") != "Ἀϊὰ"
+                or w.get("sourceGreekTextDirectRead") is not True
+                or any(w.get(flag) is not False for flag in (
+                    "hebrewEtymologyIndependentlyEstablished",
+                    "patristicManuscriptVariantsCollated",
+                    "originalAncientPlasterAutopsied",
+                    "publicationRightsGranted"))):
+                errors.append(f"{prefix}: Theodoret Compendium gives historical Shaddai gloss, not independently proven Hebrew etymology")
+        if rid == "SRC-KINZIG-PATRISTIC-TETRAGRAM-2008-P226227":
+            w = source.get("kinzigWitness20261109")
+            if (not isinstance(w, dict)
+                or w.get("bib") != "KINZIG_2008_SPRACHGEWINN_PP202_233"
+                or w.get("exodusPrintPage") != 226
+                or w.get("exodusScreenPdfPageZeroBased") != 24
+                or w.get("exodusPageScreenshotDirectlyInspected") is not True
+                or w.get("otherPage227TextDirectlyRead") is not True
+                or w.get("otherPage227ScreenshotSuccessful") is not False
+                or w.get("jewishVariantPrinted") != "Ἰά"
+                or w.get("jewishVariantWide") != "Αἰά"
+                or w.get("jewishVariantOther") != "αεια"
+                or any(w.get(flag) is not False for flag in (
+                    "printedGreekEditionManuscriptsIndependentlyCollated",
+                    "modernAuthorClaimsUniversalCertainty"))):
+                errors.append(f"{prefix}: Kinzig reports variant critical edition witnesses, not our autopsy or certain original pronunciation")
         if rid == "SRC-LEMAIRE-DEIRALLA-SCRIBAL-2021":
             if (source.get("hypothesisStatus") != "ATTRIBUTED_COPY_AND_9TH_10TH_CENTURY_COMPOSITION_NOT_INDEPENDENTLY_ATTESTED"
                 or source.get("datingScope") != "LEMAIRE_PROPOSES_EARLY_8TH_WALL_TEXT_HEINTZ_1980_REPORTS_DIFFERENT_CIRCA_700_PALEOGRAPHIC_ESTIMATE_DISPUTED"):
