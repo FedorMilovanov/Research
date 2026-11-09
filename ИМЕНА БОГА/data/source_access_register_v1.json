@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 87,
+    "sourceRecords": 88,
     "approvedForProduct": 0
   },
   "records": [
@@ -2820,7 +2820,40 @@
         "modernScholarlyConsensusCertified": false,
         "noIndependentOriginalManuscriptCollation": true
       }
+    },
+    {
+      "id": "SRC-RAHLFS-JEREMIAH23-40",
+      "title": "Rahlfs–Hanhart Septuaginta 2006, publisher digital Greek Jeremiah 23:6 and 40:1–13",
+      "creator": "Alfred Rahlfs; Robert Hanhart (editor); Deutsche Bibelgesellschaft",
+      "year": 2006,
+      "url": "https://www.die-bibel.de/bibel/LXX/JER.23",
+      "additionalUrl": "https://www.die-bibel.de/bibel/LXX/JER.40",
+      "crosswalkReferenceUrl": "https://ccel.org/bible/brenton/Jeremiah/appendix.html",
+      "objectType": "publisher_digital_greek_Old_Testament_edited_surface",
+      "sourceRole": "PUBLISHER_EDITED_LXX_JEREMIAH_23_6_AND_CHAPTER_CROSSWALK",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "evidenceClass": "B1",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "sourceObjectState": "Direct publisher edited Greek text Rahlfs-Hanhart 2006 at IEREMIAS 23:6 and 40:1-13 read 2026-11-10. Greek chapter 40 ends at v13. Brenton/Rahlfs-CATSS crosswalk checked. This is not an ancient manuscript, Qumran fragment, original Göttingen/Ziegler apparatus or full Greek tradition collation.",
+      "supportedUse": "Exact Rahlfs-Hanhart Jer 23:6 Greek Ιωσεδεκ, with κύριος grammatical subject of καλέσει; MT Jer 33:1-13 corresponds to LXX Jer 40:1-13; MT 33:14-26 is absent from this selected Greek edition. Correct the false same-number comparison (LXX Jer 33 is MT Jer 26).",
+      "forbiddenUse": "Treat LXX Jer 33 as a parallel to MT Jer 33; infer all Greek manuscript variants from publisher digital reading; claim original Hebrew textual priority, historical authorship, manuscript collation or publication license.",
+      "chapterCrosswalk": {
+        "MT_33_1_13": "LXX_JER_40_1_13",
+        "MT_33_14_26": "ABSENT_FROM_RAHLFS_HANHART_2006",
+        "MT_26_1_24": "LXX_JER_33_1_24"
+      },
+      "exactGreekNameJer23_6": "Ιωσεδεκ",
+      "directPublishedReadingVerifiedOn": "2026-11-10"
     }
   ],
-  "auditRevision": "NG10_ERZBERGER_2013_MT_OLD_GREEK_JEREMIAH_CITY_ROYAL_TEXT_GROWTH_ALTERNATIVE_20261109"
+  "auditRevision": "NG10_PUBLISHER_JER23_AND_LXX40_CROSSWALK_20261110"
 }

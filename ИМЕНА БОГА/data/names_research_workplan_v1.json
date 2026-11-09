@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "planId": "NAMES_OF_GOD_MASTER_WORKPLAN",
   "createdAt": "2026-11-07",
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-10",
   "statusOwner": "ИМЕНА БОГА/data/names_research_workplan_v1.json",
   "humanGuide": "ИМЕНА БОГА/11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md",
   "mediaResearch": "ИМЕНА БОГА/12_TMS_BARRICK_CHOU_SOURCE_REVIEW.md",
@@ -12,11 +12,11 @@
     "arenaRecords": 29,
     "extensionRecords": 13,
     "contextAttestations": 105,
-    "sourceRegisterEntries": 87,
-    "regressionTests": 264,
+    "sourceRegisterEntries": 88,
+    "regressionTests": 266,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_F2F4844_EXACT_6_SUCCESS_NEW_ERZBERGER_NG10_RESEARCH_SHA_CI_PENDING",
+    "allSixCiChecks": "PRIOR_CB1FA86_EXACT_6_SUCCESS_WAVE6_NEW_SHA_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "f2f48443152c4f31fbd764b2ba2f3753c299abe2"
+    "lastConfirmedAllSixChecksSha": "cb1fa86d970f0e6a599c9b277013c34eadf4485d"
   },
   "allowedStatuses": [
     "DONE",

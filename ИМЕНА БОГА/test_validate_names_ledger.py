@@ -23,6 +23,21 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         cls.extension_contract = json.loads((ROOT / "data" / "extension_attestation_contract_v1.json").read_text(encoding="utf-8"))
         cls.core_contract = json.loads((ROOT / "data" / "core_name_lexeme_contract_v1.json").read_text(encoding="utf-8"))
 
+    def test_jeremiah_crosswalk_rejects_same_number_misreading(self) -> None:
+        sources = copy.deepcopy(self.sources)
+        record = next(r for r in sources["records"] if r["id"] == "SRC-RAHLFS-JEREMIAH23-40")
+        record["chapterCrosswalk"]["MT_33_1_13"] = "LXX_JER_33_1_13"
+        self.assertTrue(any("Jeremiah MT/LXX publisher crosswalk" in e
+                            for e in validate_source_access(sources)))
+
+    def test_jeremiah_publisher_url_and_greek_name_are_locked(self) -> None:
+        sources = copy.deepcopy(self.sources)
+        record = next(r for r in sources["records"] if r["id"] == "SRC-RAHLFS-JEREMIAH23-40")
+        record["additionalUrl"] = "https://www.die-bibel.de/bibel/LXX/JER.33"
+        record["exactGreekNameJer23_6"] = "יהוה צדקנו"
+        self.assertTrue(any("Jeremiah MT/LXX publisher crosswalk" in e
+                            for e in validate_source_access(sources)))
+
     def test_current_research_corpora_pass_structure(self) -> None:
         self.assertEqual([], validate(self.baseline))
         self.assertEqual([], validate_extension(self.extension, self.baseline))

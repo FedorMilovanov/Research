@@ -387,6 +387,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-TMSJ-CHOU-DANIEL-2024": "ATTRIBUTED_DANIEL7_CHRISTOLOGY_JOURNAL_CATALOG_2024",
     "SRC-VT-LIEBERMANN-JEREMIAH-2023": "ATTRIBUTED_JEREMIAH_DAVIDIC_NAME_TEXTUAL_VARIANTS_2023",
     "SRC-OTE-ERZBERGER-JER33-2013": "ATTRIBUTED_JEREMIAH_33_14_26_MT_OLD_GREEK_EXPANSION_AND_ROYAL_CITY_NAME_DEBATE_2013",
+    "SRC-RAHLFS-JEREMIAH23-40": "PUBLISHER_EDITED_LXX_JEREMIAH_23_6_AND_CHAPTER_CROSSWALK",
     "SRC-NET-REV1-8": "ATTRIBUTED_TRANSLATION_CRITICAL_NOTES",
     "SRC-TABB-REVELATION22": "ATTRIBUTED_COMMENTARY_REVELATION_SPEAKER_INFERENCE",
     "SRC-DEIRALLA-SYMPOSIUM-1991-NYU": "DEIR_ALLA_CONTESTED_EARLY_INSCRIPTION_READING_AND_BIBLICAL_SHADDAY_RELATION",
@@ -508,6 +509,17 @@ def validate_source_access(sources: dict) -> list[str]:
             errors.append(f"{prefix}: unreviewed source id {rid}")
         if source.get("sourceRole") != EXPECTED_SOURCE_ROLES.get(rid):
             errors.append(f"{prefix}: source relevance/role changed without research review")
+        if rid == "SRC-RAHLFS-JEREMIAH23-40":
+            if (source.get("url") != "https://www.die-bibel.de/bibel/LXX/JER.23"
+                    or source.get("additionalUrl") != "https://www.die-bibel.de/bibel/LXX/JER.40"
+                    or source.get("chapterCrosswalk") != {
+                        "MT_33_1_13": "LXX_JER_40_1_13",
+                        "MT_33_14_26": "ABSENT_FROM_RAHLFS_HANHART_2006",
+                        "MT_26_1_24": "LXX_JER_33_1_24",
+                    }
+                    or source.get("exactGreekNameJer23_6") != "Ιωσεδεκ"):
+                errors.append(f"{prefix}: Jeremiah MT/LXX publisher crosswalk or printed Greek name drifted")
+
         for name in ("title", "creator", "url", "objectType",
                      "supportedUse", "forbiddenUse", "sourceObjectState"):
             if not isinstance(source.get(name), str) or not source[name].strip():
