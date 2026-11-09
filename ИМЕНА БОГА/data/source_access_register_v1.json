@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 83,
+    "sourceRecords": 86,
     "approvedForProduct": 0
   },
   "records": [
@@ -2396,7 +2396,7 @@
         "PUBLICATION_HOLD"
       ],
       "locator": "Collège de France lecture dated 2011-02-03, slides 11–16 (editorial slide numbers), specifically Clement Stromata V.6.34, Theodoret Quaestiones in Exodum XV vs Haereticarum fabularum compendium V.3, 4QpapLXXLevb editorial fragment 20 Lev4:26–28 Greek ΙΑΩ. PDF text extracted from official website, page screenshots returned cache miss.",
-      "sourceObjectState": "2026-11-09 official original 2011 scholar-authored lecture PDF machine TEXT extracted; source itself prints Clement Ιαουε, Theodoret Questions on Exodus XV Samaritan Ἰαβέ/Jewish Ἀϊά, separate Compendium V.3 Samaritan Ἰαβαί, and 4Q120 fragment20 (Lev4:26–28) ΙΑω. Copyright/slide pixel verification unknown due screenshot cache miss. These are attributed secondary references to different ancient texts, not fresh epigraphic, original manuscript, Stählin, PG80/83 or DJD IX critical edition collation. Date is 3 February 2011, not current publication date.",
+      "sourceObjectState": "2026-11-09 official original 2011 scholar-authored lecture PDF machine TEXT extracted; source itself prints Clement Ιαουε, Theodoret Questions on Exodus XV Samaritan Ἰαβέ/Jewish Ἀϊά, separate Compendium V.3 Samaritan Ἰαβαί, and 4Q120 fragment20 (Lev4:26–28) ΙΑω. Copyright/slide pixel verification unknown due screenshot cache miss. These are attributed secondary references to different ancient texts, not fresh epigraphic, original manuscript, Stählin, PG80/83 or DJD IX critical edition collation. Date is 3 February 2011, not current publication date. 2026-11-09 direct screenshot of original official PDF p5 (printed slides 11-12) and p6 (slides 13-14) HAS NOW SUCCEEDED; earlier screenshot-cache-miss status superseded. Confirms original authored lecturer visual wording, NOT critical original Clement/Theodoret editions, ancient manuscripts or DJD IX.",
       "supportedUse": "Cross-check multiple distinct patristic loci and academic editorial 4Q120 fragment20 locator as corroboration; emphasize late transmitters, different genres, manuscript/edition variation and no certain reconstructed Mosaic phonetic form.",
       "forbiddenUse": "Collapse Theodoret Ἰαβέ and Ἰαβαί into one passage, claim physical 4Q120 photograph/collation from lectures, use one lecture as proof of original LXX universal divine-name translation or publish copyrighted lecture slides without rights.",
       "reportedAcademicWitness20261109": {
@@ -2407,7 +2407,128 @@
         "slidesTextDirectlyRead": true,
         "originalPatristicGreekEditionsCollated": false,
         "originalDjdCriticalEditionCollated": false,
-        "pdfPageScreenshotVisuallyVerified": false
+        "pdfPageScreenshotVisuallyVerified": true,
+        "pdfPageImageCrosscheck20261109": {
+          "sourceUrl": "https://www.college-de-france.fr/media/thomas-romer/UPL7160123108737691961_r__mer_20110203_2.pdf",
+          "zeroBasedPdfPageIndices": [
+            5,
+            6
+          ],
+          "printedSlideNumbers": [
+            11,
+            12,
+            13,
+            14
+          ],
+          "visuallyReadGreek": true,
+          "figureOrManuscriptAutopsy": false,
+          "observation": "AUTHORED_SLIDES_VISUALLY_RENDERED_CLEMENT_IAOUE_AND_TWO_DISTINCT_THEODORET_WORKS_VS_ORIGEN_IAO_ANCIENT_MANUSCRIPT_NOT_CHECKED"
+        }
+      }
+    },
+    {
+      "id": "SRC-THEODORET-EXODUM-15-PG80-243-GREEK",
+      "title": "Theodoret of Cyrus, Quaestiones in Exodum 15 (Quaestiones in Octateuchum II.15), printed Greek PG 80 column 243; accessible OCR stops at 'Ἰουδαῖοι δὲ'",
+      "creator": "Theodoret of Cyrus; J.-P. Migne (PG 80, edited Greek) / Sophia Scriptura digital reproduction",
+      "year": 1860,
+      "url": "https://www.sophiascriptura.com/fathers/theodoret-quaestiones-octateuchum/2-12/",
+      "objectType": "patristic_original_greek_language_edited_print_reproduction_PG80_243_partial_digital_OCR_strict_cutoff_at_jewish_phrase",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "evidenceClass": "B1",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "sourceRole": "THEODORET_EXODUM_XV_PG80_243_DIRECT_DIGITAL_GREEK_PARTIAL_CUTOFF_BEFORE_JEWISH_NAME",
+      "sourceObjectState": "2026-11-09 actual Greek original-language edited text of Theodoret Quaestiones in Exodum XV / Octateuchum 2.15 directly read in Sophia Scriptura source-text mode citing Migne PG 80 column 243. Text asserts Hebrew name has four letters, high-priest's gold plate, and Samaritan Ἰαβὲ; OCR transcript breaks exactly after Ἰουδαῖοι δὲ, before any Jewish name, with explicit truncation warning from site. Source text is a modern OCR transcription based on PG80, NOT actual 5th-century codex or independently collated printed critical apparatus. Published Greek quote in Kinzig 2008 p226 reproduces 'Ἰά', but his note120 reports wider variant Αἰά, plus ιαω/αεια; separate evidence is required before selecting Jewish reading as author-original. English translation on website is AI-produced and is NOT used as ancient text proof.",
+      "supportedUse": "Cite direct edited Greek Ἰαβὲ and section PG80 243 while explicitly noting the digital passage is truncated after Ἰουδαῖοι δὲ; present Jewish name only as readings reported by Kinzig's independently examined textual variants.",
+      "forbiddenUse": "Assert that the Sophia digital excerpt itself displays a Jewish divine-name variant, treat printed PG as original Theodoret autograph or definitive modern critical apparatus, derive Mosaic Hebrew vowels or LXX original practice from this later Christian text, claim Sophia AI translation authorizes rights.",
+      "greekSourceWitness20261109": {
+        "greekSamForm": "Ἰαβὲ",
+        "passage": "QUAESTIONES_EXODUM_15_PG80_COL243",
+        "digitalGreekDirectRead": true,
+        "digitalTextEndsExactly": "Ἰουδαῖοι δὲ",
+        "jewishReadingVisibleInThisDigitalExcerpt": false,
+        "printedMigneCriticalApparatusCollated": false,
+        "manuscriptPhotoAutopsied": false,
+        "historicalPronunciationCertain": false
+      }
+    },
+    {
+      "id": "SRC-THEODORET-COMPENDIUM-V3-PG83-460-GREEK",
+      "title": "Theodoret of Cyrus, Haereticarum fabularum compendium V.3, original-language Greek (PG 83, 460A); early interpretation of Saddai and Samaritan Iabai",
+      "creator": "Theodoret of Cyrus; J.-P. Migne (Patrologia Graeca 83, printed edition) / digitized Greek text",
+      "year": 1864,
+      "url": "https://bibleox.com/grc/grc/w/0Rxh_%CE%A3%CF%8D%CE%BD%CE%BF%CF%88%CE%B9%CF%82_%CE%B1%E1%BC%B1%CF%81%CE%B5%CF%84%CE%B9%CE%BA%E1%BF%B6%CE%BD_%CF%80%CE%BB%CE%B1%CF%83%CE%BC%CE%AC%CF%84%CF%89%CE%BD/",
+      "objectType": "theodoret_original_language_greek_compendium_V3_secondary_print_transcription_PG83_460A_not_ancient_codex",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "evidenceClass": "B1",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "sourceRole": "THEODORET_COMPENDIUM_V3_PG83_460_DIRECT_EDITED_GREEK_SHADDAI_GLOSS_AND_SAMARITAN_IABAI",
+      "sourceObjectState": "2026-11-09 original-language printed Greek passage directly read in Bibleox digital PG83 Greek: lists divine names including Σαδδαῒ, glossing as 'sufficient/capable and powerful' (τὸν ἱκανὸν καὶ δυνατὸν), Αἰὰ for 'the one who is', followed by Samaritan Ἰαβαὶ and historical claim they misunderstood its semantic force. This is THEODORET'S fifth-century exegetical/lexical opinion transmitted in a 19th-century Greek print, not demonstrated Semitic etymology. Independent Greek transcription of Compendium V.3 via documentacatholicaomnia.eu (TLG excerpt grant) confirms section, no original manuscript or full critical apparatus collated.",
+      "supportedUse": "Attribute ancient-patristic exegesis of Σαδδαῒ to Theodoret exactly, separate it from Biblical Hebrew שַׁדַּי meaning and from modern etymology; distinguish Ἰαβαὶ in Compendium V.3 from Ἰαβὲ in Quaestiones Exodum XV.",
+      "forbiddenUse": "Convert patristic 'capable/powerful' explanation into proven original root of Biblical Shaddai, infer that Samaritan pronunciation was preserved without transmission variants, treat digital PG83 as autograph or permission to copy plates, conflate with physical Deir Alla šdyn or 4Q120 ΙΑΩ.",
+      "greekCompendiumWitness20261109": {
+        "loc": "COMPENDIUM_V3_PG83_COL460A",
+        "sam": "Ἰαβαὶ",
+        "patristicShaddaiForm": "Σαδδαῒ",
+        "theodoretGloss": "τὸν ἱκανὸν καὶ δυνατὸν",
+        "jewishForm": "Ἀϊὰ",
+        "sourceGreekTextDirectRead": true,
+        "hebrewEtymologyIndependentlyEstablished": false,
+        "patristicManuscriptVariantsCollated": false,
+        "originalAncientPlasterAutopsied": false,
+        "publicationRightsGranted": false
+      }
+    },
+    {
+      "id": "SRC-KINZIG-PATRISTIC-TETRAGRAM-2008-P226227",
+      "title": "Wolfram Kinzig, Eigenart und Aussprache des Tetragramms bei den Kirchenvätern, in Sprachgewinn: Festschrift für Günter Bader (2008), 202–233, especially 225–227",
+      "creator": "Wolfram Kinzig",
+      "year": 2008,
+      "url": "https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/123881/Kinzig_080.pdf?isAllowed=y&sequence=1",
+      "objectType": "published_modern_peer_scholarly_textual_analysis_university_repository_pdf_original_pages_directly_inspected_some_screenshots",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "evidenceClass": "B1",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "sourceRole": "KINZIG_2008_EARLY_CHRISTIAN_YHWH_TRANSMISSION_VARIANTS_QUAESTIONES_COMPENDIUM_CRITIQUE",
+      "sourceObjectState": "2026-11-09 original scholarly publisher-style article PDF from University of Tübingen repository personally read as machine PDF text. Printed p226 (zero-based PDF page24) rendered and visually inspected: Theodoret quaestiones in Exodum XV quote, PG80 243 / critical Fernandez Marcos-Saenz Badillos 112,9–18, reports Samaritan Ἰαβὲ and edition Greek Ἰά, but footnote 120 states Αἰά widely supported, also ιαω and αεια; p227 machine text extends argument and reports αεια in three manuscripts, plus Compendium V.3 PG83 460A direct comparison. One print p227 screenshot timed out; do NOT claim pixel inspection of all pages or actual manuscript collation. Cites original 2008 bibliography verified from press statement. Kinzig's thesis that patristic evidence is insufficient to establish an undisputed Yahweh vocalization is an attributed scholarly interpretation, NOT a universally settled consensus.",
+      "supportedUse": "Present critical apparatus-level VARIANTS as Kinzig's report from modern edition and manuscript witnesses; link exact pages 225–227, distinguish scholarly collated secondary analysis from our own direct originals, expose the special danger of assuming a singular Jewish counterpart Ἀϊά.",
+      "forbiddenUse": "Say we physically collated the original Greek codices or full 1997 Fernández Marcos edition; flatten alternative Ἰά, Αἰά, αεια into one ancient reading; treat Kinzig's interpretation as binding consensus; publish copyrighted scans.",
+      "kinzigWitness20261109": {
+        "bib": "KINZIG_2008_SPRACHGEWINN_PP202_233",
+        "exodusPrintPage": 226,
+        "exodusScreenPdfPageZeroBased": 24,
+        "exodusPageScreenshotDirectlyInspected": true,
+        "otherPage227TextDirectlyRead": true,
+        "otherPage227ScreenshotSuccessful": false,
+        "jewishVariantWide": "Αἰά",
+        "jewishVariantPrinted": "Ἰά",
+        "jewishVariantOther": "αεια",
+        "compendiumPage": 227,
+        "printedGreekEditionManuscriptsIndependentlyCollated": false,
+        "modernAuthorClaimsUniversalCertainty": false
       }
     }
   ],
