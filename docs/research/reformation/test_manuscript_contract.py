@@ -116,6 +116,15 @@ class ReformationManuscriptTests(unittest.TestCase):
             with self.subTest(locator=locator):
                 self.assertIn(locator, moved)
                 self.assertNotIn(locator, reader)
+        for preserved_limit in (
+            "полная глава пока не коллирована в Research",
+            "конкретные археологические утверждения требуют отдельных локаторов",
+            "не** критическая проверка всех рукописей",
+            "Доступные аннотации и выдержки не подменяют полный критический разбор",
+            "чтобы не повторять их дважды",
+        ):
+            with self.subTest(limit=preserved_limit):
+                self.assertIn(preserved_limit, moved)
         self.assertIn("](episode01_historical_gateway_draft.md)", reader)
         self.assertIn("NOT_EDITORIAL_READY", intro)
         self.assertIn("PUBLICATION_HOLD", intro)
