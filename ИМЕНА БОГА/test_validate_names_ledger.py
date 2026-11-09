@@ -106,6 +106,14 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("4Q72 visible letters versus restoration" in e
                             for e in validate_source_access(sources)))
 
+    def test_4q72_abegg_editorial_rendering_cannot_be_new_manuscript_or_iaa_license(self) -> None:
+        sources = copy.deepcopy(self.sources)
+        record = next(r for r in sources["records"] if r["id"] == "SRC-ETCBC-ABEGG-BOWLEY-COOK-4Q72-JER33")
+        record["independentManuscript"] = True
+        record["iaaPhotoLicensedByEitherTextLicense"] = True
+        self.assertTrue(any("Abegg/ETCBC Qumran rendering independent witness" in e
+                            for e in validate_source_access(sources)))
+
     def test_current_research_corpora_pass_structure(self) -> None:
         self.assertEqual([], validate(self.baseline))
         self.assertEqual([], validate_extension(self.extension, self.baseline))

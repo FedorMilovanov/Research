@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 94,
+    "sourceRecords": 95,
     "approvedForProduct": 0
   },
   "records": [
@@ -3076,7 +3076,43 @@
       "distinctSiglumB": "4QJer d",
       "distinctManuscripts": true,
       "photoAutopsy": false
+    },
+    {
+      "id": "SRC-ETCBC-ABEGG-BOWLEY-COOK-4Q72-JER33",
+      "title": "Abegg, Bowley and Cook, The Dead Sea Scrolls: Biblical and Non-Biblical Texts, ETCBC Text-Fabric 4Q72 (part 1), parsed transcript of frg f55ii",
+      "creator": "Martin G. Abegg Jr.; James E. Bowley; Edward M. Cook; ETCBC Text-Fabric version by Jarod Jacobs, Martijn Naaijer, Dirk Roorda",
+      "year": null,
+      "url": "https://theancientbible.org/4q72-p1/",
+      "objectType": "online_scholarly_parsed_text_of_Qumran_fragment_from_ETCBC_Abegg_based_lineage",
+      "sourceRole": "ABEGG_BOWLEY_COOK_ETCBC_4Q72_JER33_EDITORIAL_MARKUP_AND_NONCOMMERCIAL_LICENSE",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "evidenceClass": "B1",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "sourceObjectState": "Directly read The Ancient Bible 4Q72 part 1 at Fragment f55ii, lines 1-5 and its explicit credits/license footer on 2026-11-10. Hosted derived Text-Fabric edition credits original scholarly transcription/morphology to Martin G. Abegg Jr., Bowley and Cook; ETCBC processing by Jacobs/Naaijer/Roorda, permission CC BY-NC 4.0 for this material. Separate scholarly presentation from Qumran-Digital 2023/2025, but likely overlaps the Abegg source lineage (Qumran-Digital credits prior Abegg base), NOT a second physical Qumran scroll or wholly independent ancient autopsy. Web visualization includes morphology and restoration markers but no personal original plate photo collation.",
+      "supportedUse": "Compare the same 4Q72 f55ii edited first-line extant prefix יהוה צד versus bracketed completion; inspect how the fifth line tokenizes restoration ([ה][יום] [ו]את vs Qumran-Digital [היום ו]את) without falsely claiming different ancient wording. Establish per-surface CC BY-NC 4.0 limitation distinct from Qumran-Digital CC BY-SA 4.0 and IAA photo permissions.",
+      "forbiddenUse": "Claim this is a second independent ancient manuscript, count parallel editorial renderings as separate ancient collations, infer a Hebrew textual variant from punctuation/token segmentation alone, assume ETCBC CC BY-NC confers rights to Qumran-Digital and IAA photographs or to commercially used Product material without permission.",
+      "fragmentLabel": "f55ii",
+      "verseRange": "Jer 33:16–20",
+      "firstLineExtantPrefix": "יהוה צד",
+      "firstLineCompletionRestored": true,
+      "abeggLine5Opening": "[ה][יום] [ו]את",
+      "qumranDigitalLine5Opening": "[היום ו]את",
+      "sameAncientWitness": "4Q72",
+      "independentAncientPhotoCollation": false,
+      "independentManuscript": false,
+      "licenseNotice": "CC BY-NC 4.0 / Abegg-Bowley-Cook ETCBC derivative",
+      "qumranDigitalSeparateNotice": "CC BY-SA 4.0",
+      "iaaPhotoLicensedByEitherTextLicense": false,
+      "publicationLicenseComplianceApproved": false
     }
   ],
-  "auditRevision": "NG10_WAVE12_IAA_LIVE_INFRARED_PHOTO_BROWSER_VISUAL_ACCESS_NO_EPI_COLLATION_20261110"
+  "auditRevision": "NG10_WAVE14_ABEGG_ETCBC_EDITORIAL_MARKUP_RIGHTS_COMPARISON_20261110"
 }

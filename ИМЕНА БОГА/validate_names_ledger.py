@@ -389,6 +389,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-OTE-ERZBERGER-JER33-2013": "ATTRIBUTED_JEREMIAH_33_14_26_MT_OLD_GREEK_EXPANSION_AND_ROYAL_CITY_NAME_DEBATE_2013",
     "SRC-RAHLFS-JEREMIAH23-40": "PUBLISHER_EDITED_LXX_JEREMIAH_23_6_AND_CHAPTER_CROSSWALK",
     "SRC-QUMRAN-DIGITAL-4Q72-JER33-2023": "EDITED_4Q72_JER33_16_20_FRAGMENT55II_READ_NOT_PHOTO",
+    "SRC-ETCBC-ABEGG-BOWLEY-COOK-4Q72-JER33": "ABEGG_BOWLEY_COOK_ETCBC_4Q72_JER33_EDITORIAL_MARKUP_AND_NONCOMMERCIAL_LICENSE",
     "SRC-LANGLOIS-JEREMIAH-4Q72-2019": "ATTRIBUTED_SCHOLARLY_ANALYSIS_4Q72_MT_JER33_16_20_VS_OLD_GREEK",
     "SRC-DJD-XV-TOV-4QJERC-1997": "TOV_DJD_XV_4QJERC_PRIMARY_EDITED_INTRO_TABLES_NOT_PLATE_AUTOPSY",
     "SRC-DSS-REED-FASC7-4Q72-PAM43101": "ARCHIVAL_PAM_43_101_MUSEUM_PLATE_245_4Q72_COLUMNS_XXIV_XXV",
@@ -515,6 +516,22 @@ def validate_source_access(sources: dict) -> list[str]:
             errors.append(f"{prefix}: unreviewed source id {rid}")
         if source.get("sourceRole") != EXPECTED_SOURCE_ROLES.get(rid):
             errors.append(f"{prefix}: source relevance/role changed without research review")
+        if rid == "SRC-ETCBC-ABEGG-BOWLEY-COOK-4Q72-JER33":
+            if (source.get("url") != "https://theancientbible.org/4q72-p1/"
+                    or source.get("fragmentLabel") != "f55ii"
+                    or source.get("verseRange") != "Jer 33:16–20"
+                    or source.get("firstLineExtantPrefix") != "יהוה צד"
+                    or source.get("firstLineCompletionRestored") is not True
+                    or source.get("abeggLine5Opening") != "[ה][יום] [ו]את"
+                    or source.get("qumranDigitalLine5Opening") != "[היום ו]את"
+                    or source.get("sameAncientWitness") != "4Q72"
+                    or source.get("independentManuscript") is not False
+                    or source.get("independentAncientPhotoCollation") is not False
+                    or source.get("licenseNotice") != "CC BY-NC 4.0 / Abegg-Bowley-Cook ETCBC derivative"
+                    or source.get("qumranDigitalSeparateNotice") != "CC BY-SA 4.0"
+                    or source.get("iaaPhotoLicensedByEitherTextLicense") is not False
+                    or source.get("publicationLicenseComplianceApproved") is not False):
+                errors.append(f"{prefix}: Abegg/ETCBC Qumran rendering independent witness or license falsely upgraded")
         if rid == "SRC-QUMRAN-DIGITAL-4Q72-JER33-2023":
             if (source.get("url") != "https://lexicon.qumran-digital.org/transcriptions/4Q72/2023-12-08/index.html"
                     or source.get("fragmentLocator") != "55 ii"
