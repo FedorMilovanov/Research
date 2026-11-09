@@ -555,6 +555,28 @@ class ActualSynchronizationTests(unittest.TestCase):
         self.assertIn("## 19. AT-010-R9", board)
         self.assertIn("NO MERGE / NO PUBLICATION", board)
 
+    def test_reader_14_and_18_new_standalone_drafts_not_publication(self):
+        base = ROOT / "ИСКУПЛЕНИЕ/synthesis"
+        plan = (base / "01_SERIES_PLAN_AND_ARTICLE_COUNT.md").read_text(encoding="utf-8")
+        board = (base / "07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        registry = (ROOT / "ИСКУПЛЕНИЕ/05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md").read_text(encoding="utf-8")
+        for name, label, last in (
+            ("article14_early_church_to_reformation_history.md", "ARTICLE 14 / 18", "F14-07"),
+            ("article18_living_atonement_holiness_church_mission_suffering.md", "ARTICLE 18 / 18", "F18-07"),
+        ):
+            content = (base / "drafts" / name).read_text(encoding="utf-8")
+            with self.subTest(chapter=name):
+                self.assertGreater(len(content),12000)
+                self.assertIn(label,content)
+                self.assertIn(last,content)
+                self.assertIn("PUBLICATION_HOLD",content)
+                self.assertIn("publicationEligible=false",content)
+                self.assertNotIn("publicationEligible=true",content)
+                self.assertIn("drafts/"+name,plan)
+        self.assertIn("## 22. READER-14",board)
+        self.assertIn("## 23. READER-18",board)
+        for label in ("H14-ANSELM-CDH","H14-AQUINAS-ST48-49","H14-LUTHER-GAL313"):
+            self.assertIn(label,registry)
     def test_article02_r18_vatican_codex_q_photo_not_full_apparatus(self):
         memo = (ROOT / "ИСКУПЛЕНИЕ/evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md").read_text(encoding="utf-8")
         ot = (ROOT / "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md").read_text(encoding="utf-8")

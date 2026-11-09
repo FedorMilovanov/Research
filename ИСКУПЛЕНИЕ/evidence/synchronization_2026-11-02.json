@@ -8716,6 +8716,20 @@
       "reviewedAt": "2026-11-07",
       "note": "Статья №13/18: усилен самостоятельный читательский разбор вечного декрета, исторического приобретения, оправдания и уверенности (P05 §§19–31; Фома, Турретин XVI.9, Гилл II.5, WCF XI.4, Крейг/Хелм отдельно). Исторический возражающий голос Гилла сохранён. W1-S0-03 печатные Дабни 1878 с. 520–523/648 и Девенант 1650 с. 1/32/69: только адресная сверка; дипломатическая колляция, современные полные книги и RIGHTS/EVIDENCE/PUBLICATION HOLD сохраняются. Никакой публикации",
       "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article14_early_church_to_reformation_history.md",
+      "sha256": "d3ee09b38b355e43dfc1498dca55ae8cf309f78186fcaec09c27d2508117e82c",
+      "reviewedAt": "2026-11-09",
+      "note": "№14/18: самостоятельная историческая читательская редакция. Прямые целевые переводы Анзельма, Аквината, Лютера и существующий patristic-корпус; латинская/немецкая колляция, обобщающий исторический вердикт, RIGHTS/PUBLICATION_HOLD остаются. NOT PEER REVIEWED; publicationEligible=false.",
+      "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article18_living_atonement_holiness_church_mission_suffering.md",
+      "sha256": "d80b058aa7e1ce8903add8c0389a6aff0c66fa9cdda088f2ab7ccab9b278d578",
+      "reviewedAt": "2026-11-09",
+      "note": "№18/18: самостоятельная читательская глава о святости, общине, проповеди, страдании и уверенности; семь F18-claims с NT07/NT08 и pastoral/03. Требуется независимая экзегетическая и пастырская редактура; RIGHTS/PUBLICATION_HOLD. NOT PEER REVIEWED; publicationEligible=false.",
+      "publicationEligible": false
     }
   ]
 }
