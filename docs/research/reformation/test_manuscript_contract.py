@@ -174,6 +174,35 @@ class ReformationManuscriptTests(unittest.TestCase):
         self.assertIn("NOT_EDITORIAL_READY", intro)
         self.assertIn("PUBLICATION_HOLD", intro)
 
+    def test_wave409_first_three_chapters_have_reader_first_prose(self):
+        """Reader prose is separate from operational status; chapter sections retain hierarchy."""
+        chapters = (
+            ("episode01_historical_gateway_draft.md",
+             "Рабочий исторический вход для уже запланированного эпизода",
+             "### Реформа до Реформации", "## Реформа до Реформации"),
+            ("episode02_indulgences_1517_manuscript.md",
+             "Самостоятельный книжный черновик второго из двенадцати",
+             "### Вопрос, который нельзя было решить покупкой грамоты",
+             "## Вопрос, который нельзя было решить покупкой грамоты"),
+            ("episode03_luther_worms_1520_1521_manuscript.md",
+             "Книжная рукопись третьего из двенадцати",
+             "### Когда один спор перестал быть местным",
+             "## Когда один спор перестал быть местным"),
+        )
+        for name, meta_label, former_heading, proper_heading in chapters:
+            with self.subTest(name=name):
+                text = (HERE / name).read_text(encoding="utf-8")
+                reader, apparatus = text.split("## Источниковедческий аппарат", 1)
+                self.assertNotIn(meta_label, reader)
+                self.assertEqual(apparatus.count(meta_label), 1)
+                self.assertNotIn(former_heading, reader)
+                self.assertIn(proper_heading, reader)
+                self.assertIn("RESEARCH_MANUSCRIPT_DRAFT", apparatus)
+                self.assertIn("NOT_EDITORIAL_READY", apparatus)
+                self.assertIn("PUBLICATION_HOLD", apparatus)
+                self.assertNotIn("## Рабочий текст", reader)
+                self.assertNotIn("## Исторический рассказ", reader)
+
     def test_episode02_is_still_inside_existing_series(self):
         p = HERE / "episode02_indulgences_1517_manuscript.md"
         self.assertTrue(p.is_file())
