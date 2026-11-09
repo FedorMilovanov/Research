@@ -1612,5 +1612,27 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("Sidestone 2019 publisher photo pixels and print/viewer locator" in e
                             for e in validate_source_access(d)))
 
+
+    def test_clement_digital_greek_is_not_a_direct_autograph(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-CLEMENT-STROMATA-5-6-34-STAHLIN-GREEK")
+        row["greekPassageWitness20261109"]["historicalPronunciationUncontested"] = True
+        self.assertTrue(any("Clement digital Stählin Greek text must not become an ancient autograph" in e
+                            for e in validate_source_access(d)))
+
+    def test_deissmann_variant_report_is_not_independent_manuscript_collation(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-DEISSMANN-BIBLE-STUDIES-1901-TETRAGRAM-GREEK")
+        row["modernCriticalApparatusInspected"] = True
+        self.assertTrue(any("Deissmann's dated variant report is not direct Greek manuscript" in e
+                            for e in validate_source_access(d)))
+
+    def test_romer_2011_theodoret_questions_not_the_same_as_compendium(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-ROMER-COLLEGE-DE-FRANCE-YHWH-2011")
+        row["reportedAcademicWitness20261109"]["theodoretCompendium"] = row["reportedAcademicWitness20261109"]["theodoretQuestions"]
+        self.assertTrue(any("Römer 2011 lecture cannot merge Theodoret works" in e
+                            for e in validate_source_access(d)))
+
 if __name__ == "__main__":
     unittest.main()
