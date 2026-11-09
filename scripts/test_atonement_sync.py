@@ -555,6 +555,35 @@ class ActualSynchronizationTests(unittest.TestCase):
         self.assertIn("## 19. AT-010-R9", board)
         self.assertIn("NO MERGE / NO PUBLICATION", board)
 
+    def test_reader_15_and_16_confessional_sources_not_publication(self):
+        base = ROOT / "ИСКУПЛЕНИЕ/synthesis"
+        plan = (base / "01_SERIES_PLAN_AND_ARTICLE_COUNT.md").read_text(encoding="utf-8")
+        board = (base / "07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        registry = (ROOT / "ИСКУПЛЕНИЕ/05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md").read_text(encoding="utf-8")
+        manifest = self.report["postReviewDrafts"]
+        paths = {entry["path"] for entry in manifest}
+        for name, chapter, last, hold in (
+            ("article15_dort_westminster_saumur_english_hu.md", "ARTICLE 15 / 18", "F15-07", "ATTRIBUTION_HOLD"),
+            ("article16_boundaries_calvinism_reformed_family.md", "ARTICLE 16 / 18", "F16-07", "CONFESSIONAL_REVIEW_HOLD"),
+        ):
+            rel = "ИСКУПЛЕНИЕ/synthesis/drafts/" + name
+            data = (ROOT / rel).read_text(encoding="utf-8")
+            with self.subTest(chapter=name):
+                self.assertGreater(len(data), 16000)
+                self.assertIn(chapter, data)
+                self.assertIn(last, data)
+                self.assertIn(hold, data)
+                self.assertIn("RIGHTS_HOLD", data)
+                self.assertIn("PUBLICATION_HOLD", data)
+                self.assertIn("publicationEligible=false", data)
+                self.assertNotIn("publicationEligible=true", data)
+                self.assertIn(rel, paths, "every new reader chapter requires a pinned manifest entry")
+                self.assertIn("drafts/" + name, plan)
+        self.assertIn("## 24. READER-15", board)
+        self.assertIn("## 25. READER-16", board)
+        for marker in ("H15-DORT-II", "H15-WCF-1689", "H15-DEVENANT-AMYRAUT", "H16-MODEL-AXES"):
+            self.assertIn(marker, registry)
+
     def test_reader_14_and_18_new_standalone_drafts_not_publication(self):
         base = ROOT / "ИСКУПЛЕНИЕ/synthesis"
         plan = (base / "01_SERIES_PLAN_AND_ARTICLE_COUNT.md").read_text(encoding="utf-8")
@@ -753,8 +782,14 @@ class ActualSynchronizationTests(unittest.TestCase):
         self.assertEqual(self.report["draftCount"], 13)
         additions = self.report.get("postReviewDrafts", [])
         self.assertEqual(summary["drafts"], self.report["draftCount"] + len(additions))
-        self.assertEqual(
-            {r["path"] for r in additions},
+        declared_paths = {r["path"] for r in additions}
+        self.assertEqual(len(declared_paths), len(additions), "duplicate post-review draft declaration")
+        actual_added = {
+            p.relative_to(ROOT).as_posix()
+            for p in (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts").glob("article*.md")
+        }
+        self.assertEqual(declared_paths, actual_added, "drafts must be fully declared in the byte-pinned manifest")
+        self.assertTrue(
             {
                 "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md",
                 "ИСКУПЛЕНИЕ/synthesis/drafts/article08_particular_redemption_positive_case.md",
@@ -763,12 +798,18 @@ class ActualSynchronizationTests(unittest.TestCase):
                 "ИСКУПЛЕНИЕ/synthesis/drafts/article11_bought_apostates_covenant_blood_and_weak_brother.md",
                 "ИСКУПЛЕНИЕ/synthesis/drafts/article12_cosmic_reconciliation_heaven_earth_new_creation.md",
                 "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md",
-            },
+            }.issubset(declared_paths),
+            "historic seven post-review drafts must not disappear",
         )
 
     def test_post_review_draft_manifest_fails_closed(self):
         additions = self.report.get("postReviewDrafts", [])
-        self.assertEqual(len(additions), 7)
+        self.assertGreaterEqual(len(additions), 7)
+        self.assertEqual(
+            len(additions),
+            len(list((ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts").glob("article*.md"))),
+            "all post-review drafts must be explicitly registered",
+        )
         cases = [
             (f"missing-declaration-{i}", additions[:i] + additions[i + 1 :])
             for i in range(len(additions))

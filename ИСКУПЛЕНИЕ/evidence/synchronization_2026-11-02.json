@@ -8730,6 +8730,20 @@
       "reviewedAt": "2026-11-09",
       "note": "№18/18: самостоятельная читательская глава о святости, общине, проповеди, страдании и уверенности; семь F18-claims с NT07/NT08 и pastoral/03. Требуется независимая экзегетическая и пастырская редактура; RIGHTS/PUBLICATION_HOLD. NOT PEER REVIEWED; publicationEligible=false.",
       "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article15_dort_westminster_saumur_english_hu.md",
+      "sha256": "052fb054e8d68e8103b89d49da32f67495605ac59acda0b9c951e7b1beae4e84",
+      "reviewedAt": "2026-11-10",
+      "note": "Статья №15/18: читательский исторический анализ Дорт II.3/5/8/Rejection, WCF/1689 VIII.5/8, английских делегатов и условного реформатского универсализма. Первичная сверка строго по архивным локаторам, не новый полный просмотр трактатов. HISTORICAL_SOURCE_HOLD/ATTRIBUTION_HOLD/RIGHTS_HOLD/PUBLICATION_HOLD. NOT PEER REVIEWED.",
+      "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article16_boundaries_calvinism_reformed_family.md",
+      "sha256": "8acf9e7514d8a5d80e0ff35f30eeb6e422eb88182df6d4c87c966cc3de4e8f4d",
+      "reviewedAt": "2026-11-10",
+      "note": "Статья №16/18: семь независимых осей границ кальвинизма, аргументы строгих, английских HU, Сомюра, multiple intentions, лютеран и арминиан; именованный диспенсациональный автор и полные современные монографии не прочитаны. CONFESSIONAL_REVIEW_HOLD/COMPARATIVE_EVIDENCE_HOLD/RIGHTS_HOLD/PUBLICATION_HOLD. NOT PEER REVIEWED.",
+      "publicationEligible": false
     }
   ]
 }
