@@ -555,6 +555,45 @@ class ActualSynchronizationTests(unittest.TestCase):
         self.assertIn("## 19. AT-010-R9", board)
         self.assertIn("NO MERGE / NO PUBLICATION", board)
 
+    def test_active_reader_sources_match_root_evidence_policy(self):
+        import re
+        import json
+        import hashlib
+        policy = json.loads((ROOT / "data/repository-evidence-policy-v2.json").read_text(encoding="utf-8"))
+        self.assertEqual(set(policy["sourceClasses"]), {"A1", "A2", "A3", "B1", "C", "D"})
+        files = (
+            "article08_particular_redemption_positive_case.md",
+            "article09_world_and_propitiation_johannine_case.md",
+            "article10_ransom_for_all_two_adams_paul_hebrews.md",
+            "article11_bought_apostates_covenant_blood_and_weak_brother.md",
+            "article12_cosmic_reconciliation_heaven_earth_new_creation.md",
+            "article13_double_payment_unbelief_and_acquired_faith.md",
+        )
+        expected_a1 = (0, 2, 3, 6, 4, 5)
+        expected_a3 = (2, 1, 0, 0, 0, 2)
+        manifest = {x["path"]: x for x in self.report["postReviewDrafts"]}
+        for name, e1, e3 in zip(files, expected_a1, expected_a3):
+            path = ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts" / name
+            text = path.read_text(encoding="utf-8")
+            rows = [line for line in text.splitlines() if line.startswith("| ") and line.count("|") >= 4]
+            evidence_cells = [line.split("|")[2] for line in rows if len(line.split("|")) >= 5]
+            with self.subTest(draft=name):
+                self.assertGreaterEqual(sum(bool(re.search(r"\bA1\b", x)) for x in evidence_cells), e1, "primary author slots remain A1")
+                self.assertGreaterEqual(sum(bool(re.search(r"\bA3\b", x)) for x in evidence_cells), e3)
+                self.assertFalse(any(re.search(r"\bA2\b", x) for x in evidence_cells), "A2 is not the author/official-confession class")
+                self.assertFalse(any(re.match(r"\s*C(?:[,:]|\s)", x) for x in evidence_cells), "C-class sources belong outside the primary evidence table")
+                self.assertIn("PUBLICATION_HOLD", text)
+                rel = "ИСКУПЛЕНИЕ/synthesis/drafts/" + name
+                self.assertIn(rel, manifest)
+                self.assertFalse(manifest[rel]["publicationEligible"])
+                self.assertEqual(manifest[rel]["sha256"], hashlib.sha256(path.read_bytes()).hexdigest())
+        # OPC 1948 remains an A2 institutional report; official confessions are A3.
+        historic = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/09_free-offer-of-the-gospel.md").read_text(encoding="utf-8")
+        self.assertIn("A2 (публичный церковный отчёт", historic)
+        section13 = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md").read_text(encoding="utf-8")
+        self.assertIn("UNVERIFIED_TRANSCRIPTION", section13)
+        self.assertNotIn("**B1** — остальная цифровая транскрипция", section13)
+
     def test_reader_15_and_16_confessional_sources_not_publication(self):
         base = ROOT / "ИСКУПЛЕНИЕ/synthesis"
         plan = (base / "01_SERIES_PLAN_AND_ARTICLE_COUNT.md").read_text(encoding="utf-8")
