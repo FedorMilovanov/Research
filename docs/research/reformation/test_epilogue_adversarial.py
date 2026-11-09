@@ -31,6 +31,21 @@ class ReformationEpilogueAdversarialTests(unittest.TestCase):
         self.assertIn("## Источниковедческий и богословский аппарат", text)
         self.assertIn("adversarial-матрица", text)
 
+    def test_epilogue_starts_with_theology_and_keeps_reader_limits_in_apparatus(self):
+        """Theological alternatives and evidence restrictions are kept, not hidden."""
+        content = EPI.read_text(encoding="utf-8")
+        reader, apparatus = content.split(
+            "## Источниковедческий и богословский аппарат", 1
+        )
+        self.assertIn("## Чего не смогла завершить Реформация", reader)
+        self.assertNotIn("**Статус:**", reader)
+        self.assertIn("**Статус:** RESEARCH_MANUSCRIPT_DRAFT", apparatus)
+        self.assertIn("Это отдельный **богословский эпилог**", apparatus)
+        self.assertIn("премилленаристском прочтении", apparatus)
+        for status in ("NOT_EDITORIAL_READY", "PUBLICATION_HOLD",
+                       "EXEGESIS_HOLD", "ORIGINAL_GREEK_HOLD", "RIGHTS_HOLD"):
+            self.assertIn(status, apparatus)
+
     def test_epilogue_remains_research_only(self):
         text = EPI.read_text(encoding="utf-8")
         for marker in ("RESEARCH_MANUSCRIPT_DRAFT", "NOT_EDITORIAL_READY",
@@ -67,7 +82,8 @@ class ReformationEpilogueAdversarialTests(unittest.TestCase):
                      "REJECTED_FORMULATION", "PUBLICATION_HOLD"):
             self.assertIn(mark, c316)
         plan = PLAN.read_text(encoding="utf-8")
-        # Plans advance; the editorial evidence and successor remain traceable.\n        self.assertIn("RF-THEO-EPI", plan)
+        # Plans advance; the editorial evidence and successor remain traceable.
+        self.assertIn("RF-THEO-EPI", plan)
         self.assertIn("RF-EDIT-04-06", plan)
         self.assertIn("PUBLICATION_HOLD", plan)
 
