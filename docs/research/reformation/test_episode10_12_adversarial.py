@@ -29,11 +29,33 @@ class ReformationAdversarialTenTwelve(unittest.TestCase):
                 reader, apparatus = s.split("## Источниковедческий аппарат", 1)
                 self.assertGreaterEqual(len(reader.split()), 1700)
                 for key in ("RESEARCH_MANUSCRIPT_DRAFT", "NOT_EDITORIAL_READY", "PUBLICATION_HOLD"):
-                    self.assertIn(key, reader)
+                    self.assertIn(key, apparatus)
                 self.assertIn("adversarial-матрица", apparatus)
                 self.assertIn("Допустим", apparatus)
                 self.assertIn("REF-P", apparatus)
                 self.assertIn("HOLD", apparatus)
+
+    def test_wave412_first_section_and_source_scope_retained(self):
+        """No research-status prologue; full limits remain in each source apparatus."""
+        cases = (
+            (10, "Не одна Реформация на двух островных берегах",
+             "Не объединять два самостоятельных королевства"),
+            (11, "Когда веру стали защищать государственным мечом",
+             "Полной колляции оригинальных латинских"),
+            (12, "Открытая книга ещё не значит открытая школа",
+             "фактическая степень его прочтения"),
+        )
+        for n, first_section, original_limit in cases:
+            with self.subTest(chapter=n):
+                text = self.books[n]
+                reader, apparatus = text.split("## Источниковедческий аппарат", 1)
+                self.assertTrue(reader.startswith(f"# Эпизод {n:02}."))
+                self.assertIn("\\n\\n## " + first_section, reader)
+                self.assertNotIn("**Статус:**", reader)
+                self.assertIn("**Статус:** RESEARCH_MANUSCRIPT_DRAFT", apparatus)
+                self.assertEqual(apparatus.count(original_limit), 1)
+                for gate in ("NOT_EDITORIAL_READY", "PUBLICATION_HOLD", "RIGHTS_HOLD"):
+                    self.assertIn(gate, apparatus)
 
     def test_reader_research_apparatus_separation_and_no_evidence_loss(self):
         """After editing, witness locators stay in apparatus, not the reader."""
