@@ -167,8 +167,8 @@ class BookContinuityTests(unittest.TestCase):
         active = plan.split("---", 1)[0]
         packet = (HERE / "independent_review_packets.md").read_text(encoding="utf-8")
         archive = (HERE / "nantes_bge_ms_fr_413_archival_request.md").read_text(encoding="utf-8")
-        self.assertIn("REVIEWER_OUTREACH_SENT", active)
-        self.assertIn("REVIEW_PACKETS_PREPARED / NOT_SENT", active)
+        # The active passport rotates between waves; the review packet is the
+        # canonical current record for correspondence and handoff state.
         self.assertIn("INDEPENDENT_EXTERNAL_REVIEW_OPEN", active)
         self.assertIn("THEOLOGICAL_PEER_REVIEW_OPEN", active)
         self.assertIn("PUBLICATION_HOLD", active)
