@@ -1795,8 +1795,9 @@
       "lineMappingScope": "CAQUOT_LEMAIRE_1977_LINE6_SDYN_CORRESPONDS_1976_LINE8_AFTER_REASSEMBLY",
       "lexicalDistinctionScope": "SDYN_AS_ATTRIBUTED_PLURAL_TITLE_SADDAY_VS_DIFFERENT_BIRD_SDH_1977_LINE8",
       "originalScope": "PUBLISHED_1977_AUTHOR_TEXT_P193_TO198_DIRECTLY_READ_AS_PERSEE_HTML_NOT_ORIGINAL_1976_P173_OR_PLATES_NOT_IMAGE_COLLATION",
-      "indirect1976ErratumWitness": "CAQUOT_LEMAIRE_1977_PRINT_P189_FOOTNOTE1_ATTRIBUTES_SIXTH_CENTURY_TO_EIGHTH_SEVENTH_CORRECTION_TO_BA1976_39_3_P87_ORIGINAL_ERRATUM_TEXT_NOT_OBTAINED",
-      "indirect1976ErratumWitnessUrl": "https://www.persee.fr/doc/syria_0039-7946_1977_num_54_3_6603?pageId=T1_189"
+      "indirect1976ErratumWitness": "CAQUOT_LEMAIRE_1977_PRINT_P189_FOOTNOTE1_ATTRIBUTES_SIXTH_CENTURY_TO_EIGHTH_SEVENTH_CORRECTION_TO_BA1976_39_3_P87_NOW_INDEPENDENTLY_CONFIRMED_BY_1976_P87_FIRST_PAGE_SCAN",
+      "indirect1976ErratumWitnessUrl": "https://www.persee.fr/doc/syria_0039-7946_1977_num_54_3_6603?pageId=T1_189",
+      "original1976ErratumCrosscheck20261109": "SEPARATE_1976_PUBLISHER_P87_DIRECT_IMAGE_CORROBORATES_1977_P189_FOOTNOTE1_NOT_THE_SAME_WITNESS"
     },
     {
       "id": "SRC-HACKETT-DEIRALLA-MONOGRAPH-1984-SELECTED-OCR",
@@ -1985,10 +1986,10 @@
       "accessState": "CATALOG_ONLY",
       "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "PERMISSION_REQUIRED",
-      "sourceObjectState": "University of Chicago Press official 1976 journal page directly confirms author, original title, March 1 1976, BA volume 39 issue 1 pages 11–17, DOI and publisher abstract. Paywalled article PDF and any original 1967 photo NOT examined. An official separate erratum to THIS JOURNAL ARTICLE appears in September 1976 issue 39/3 p87; full correction content is paywalled and UNKNOWN. This record is different from Hoftijzer/van der Kooij 1976 Brill critical edition. Caquot/Lemaire, Syria54 (1977) p189 n1 specifically report replacing '6th-century' with '8th-7th-century' by citing BA39/3 p87. This later author's citation is READ, whereas the original article and erratum text remain unviewed; no other correction is presumed.",
+      "sourceObjectState": "Official March 1976 publisher listing confirms 39/1 pp11–17 and original published (editorially altered) headline. Its FULL 7-page article text, photos and figures are still not inspected. Crucial CORRECTION independently read from publisher's original full short erratum printed BA39/3 (September 1976), p87, first-page PNG: change sixth-century to eighth–seventh-century, March title was editorial embellishment, original intended author title translated by William Holladay was 'The Decipherment of the Deir-'Alla Texts'. This DOES NOT promote access to the seven-page March article nor the Brill original critical edition.",
       "locator": "The Biblical Archaeologist 39/1 (1976), 11–17, DOI 10.2307/3209412; article's officially registered erratum BA 39/3 (1976), p87, DOI 10.2307/3209398.",
-      "supportedUse": "Identify both original and erratum as a pair for future institutional retrieval and check whether article's text/photo/caption requires correction before reliance. The historical sixth-century wording belongs to the ORIGINAL TITLE; it is not accepted as the current date of the Deir Alla inscription.",
-      "forbiddenUse": "Claim text of article, images, exact erratum wording, corrected epigraphy or photographs were read; misstate the later 1977 correction report as directly inspected 1976 erratum or as settled modern dating; cite headline '6th century' as proven dating; equate this article with separate 1976 Brill monograph.",
+      "supportedUse": "March paper metadata/abstract plus separate directly inspected publisher's September erratum: original March journal headline was an editorial embellishment, its sixth-century date was formally corrected to eighth–seventh; cite official BA39/3 p87. The article's main text and photographs remain unviewed.",
+      "forbiddenUse": "Do not mistake March editor-imposed headline as the author's preferred title or current chronology, infer uninspected article figures or ancient signs, or imply editorial erratum licenses reproducing images. Full article and Brill 1976 original remain uninspected.",
       "evidenceClass": "B1",
       "publicationState": "BLOCKED",
       "holds": [
@@ -1998,37 +1999,56 @@
         "EVIDENCE_HOLD"
       ],
       "criticalEditionCollated": false,
-      "indirect1977CorrectionWitness": "CAQUOT_LEMAIRE_1977_PRINT_P189_FOOTNOTE1_ATTRIBUTES_SIXTH_CENTURY_TO_EIGHTH_SEVENTH_CORRECTION_TO_BA1976_39_3_P87_ORIGINAL_ERRATUM_TEXT_NOT_OBTAINED",
-      "indirect1977CorrectionWitnessUrl": "https://www.persee.fr/doc/syria_0039-7946_1977_num_54_3_6603?pageId=T1_189"
+      "indirect1977CorrectionWitness": "CAQUOT_LEMAIRE_1977_PRINT_P189_FOOTNOTE1_ATTRIBUTES_SIXTH_CENTURY_TO_EIGHTH_SEVENTH_CORRECTION_TO_BA1976_39_3_P87_NOW_INDEPENDENTLY_CONFIRMED_BY_1976_P87_FIRST_PAGE_SCAN",
+      "indirect1977CorrectionWitnessUrl": "https://www.persee.fr/doc/syria_0039-7946_1977_num_54_3_6603?pageId=T1_189",
+      "originalErratumSourceAccess20261109": "PUBLISHER_1976_SEPTEMBER_P87_FIRST_PAGE_IMAGE_DIRECTLY_READ_MARCH_ARTICLE_STILL_CATALOG_ONLY"
     },
     {
       "id": "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3",
-      "title": "Erratum: The Prophet Balaam in a 6th-Century Aramaic Inscription, The Biblical Archaeologist 39/3 (1 September 1976), 87",
+      "title": "Erratum (original editorial title/date correction), The Biblical Archaeologist 39/3 (1 September 1976), printed p.87",
       "creator": "The Biblical Archaeologist / ASOR (publisher erratum; authorship not separately confirmed)",
       "year": 1976,
       "url": "https://doi.org/10.2307/3209398",
       "correctingSourceId": "SRC-HOFTIJZER-BALAAM-ARTICLE-1976-BA39-1",
-      "objectType": "publisher_registered_erratum_catalog_only_text_paywalled",
-      "sourceRole": "ORIGINAL_1976_JOURNAL_ARTICLE_CORRECTION_TO_FETCH_BEFORE_EXEGETICAL_RELIANCE",
-      "accessState": "CATALOG_ONLY",
+      "objectType": "original_1976_publisher_erratum_entire_short_notice_directly_read_on_first_page_scan",
+      "sourceRole": "ORIGINAL_1976_JOURNAL_EDITORIAL_TITLE_DATE_CORRECTION_DIRECT_SCAN",
+      "accessState": "FULL_OBJECT_VERIFIED",
       "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "PERMISSION_REQUIRED",
-      "locator": "The Biblical Archaeologist 39/3 (1 September 1976), p.87; DOI 10.2307/3209398, publisher's official bibliographic listing.",
-      "sourceObjectState": "Original erratum text NOT retrieved: publisher metadata independently verifies BA39/3 Sep 1976 p87 and DOI. Caquot/Lemaire 1977 Syria54 p189 footnote 1 DIRECTLY READ in Persée HTML attributes a correction of original article title/date from 6th century to 8th-7th century to this erratum. That is later published scholarly testimony, NOT original erratum inspection; its complete wording and any further corrections remain unknown.",
-      "supportedUse": "Warn researchers that the initial March 1976 article has a formal published erratum requiring full-text verification before precise quotation or illustration comparison. Attribute the 8th-7th-century dating-title correction specifically to Caquot/Lemaire 1977 p189 n1 (published later source), with a HOLD on exact original 1976 wording.",
-      "forbiddenUse": "Invent the erratum's correction, claim it changes century, name, reading, photograph or date, use it as original 1976 Brill page 173 or as evidence of independent palaeographic collation. Do not imply that 1976 p87 was directly seen, that this is a modern precise archaeological date, or that it establishes any ancient šdyn spelling.",
+      "locator": "The Biblical Archaeologist 39/3 (1 Sep 1976), printed p87 lower right corner, publisher first-page image, DOI 10.2307/3209398. Direct publisher page-image witness: https://www.journals.uchicago.edu/cms/10.2307/3209398/asset/524cb216-88da-45e3-8868-530e9fa3dc8b/assets/3209398.fp.png",
+      "sourceObjectState": "2026-11-09 ORIGINAL 1976 ERRATUM directly visually read in official University of Chicago Press first-page PNG, lower right of BA39/3 printed p87, full short notice legible. It commands replace March title '6th-century' by '8th-7th-century', says the later old chronological estimate was proposed by H. J. Franken (VT 17 1967 pp480-481) but had been abandoned, and explains the author's intended title, translated by William Holladay, 'The Decipherment of the Deir-'Alla Texts'; published March headline was an editorial embellishment. This resolves the correction CONTENT from original, not only 1977 secondary summary. Copyrighted page viewed read-only; no image copied into project, not a fresh archaeological dating determination, not direct plaster or infrared photo collation, not a source for ancient šdyn character readings. The March 1976 full paper itself and 1976 Brill critical edition remain inaccessible in full.",
+      "supportedUse": "Cite the original publisher's short notice at BA39/3 (Sep 1976) print p87, first-page image: explicitly correct the imposed March paper title from sixth to eighth–seventh century, note abandoned Franken dating and original author-intended title. This is primary evidence of an EDITORIAL CORRECTION, not of ancient epigraphic glyphs or a scientifically fixed modern date. Keep photocopyright distinct from reading rights.",
+      "forbiddenUse": "Do not cite erroneous March headline as Hoftijzer's original intended title; do not claim the ancient plaster or 1976 Brill plates have been seen, or that exact dating is resolved for modern scholarship. Do not republish copyrighted first-page scan without license, and do not treat this editorial correction as approval of any Shadday/šdyn semantic hypothesis.",
       "evidenceClass": "B1",
       "publicationState": "BLOCKED",
       "holds": [
-        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
         "RIGHTS_HOLD",
-        "LOCATOR_HOLD",
-        "EVIDENCE_HOLD"
+        "PUBLICATION_HOLD"
       ],
       "criticalEditionCollated": false,
-      "indirect1977CorrectionWitness": "CAQUOT_LEMAIRE_1977_PRINT_P189_FOOTNOTE1_ATTRIBUTES_SIXTH_CENTURY_TO_EIGHTH_SEVENTH_CORRECTION_TO_BA1976_39_3_P87_ORIGINAL_ERRATUM_TEXT_NOT_OBTAINED",
+      "indirect1977CorrectionWitness": "CAQUOT_LEMAIRE_1977_PRINT_P189_FOOTNOTE1_ATTRIBUTES_SIXTH_CENTURY_TO_EIGHTH_SEVENTH_CORRECTION_TO_BA1976_39_3_P87_NOW_INDEPENDENTLY_CONFIRMED_BY_1976_P87_FIRST_PAGE_SCAN",
       "indirect1977CorrectionWitnessUrl": "https://www.persee.fr/doc/syria_0039-7946_1977_num_54_3_6603?pageId=T1_189",
-      "originalErratumTextVerified": false
+      "originalErratumTextVerified": true,
+      "originalErratumPageWitness20261109": {
+        "status": "PUBLISHER_ORIGINAL_1976_PRINT_P87_FIRST_PAGE_IMAGE_DIRECT_VISUAL_READ",
+        "imageUrl": "https://www.journals.uchicago.edu/cms/10.2307/3209398/asset/524cb216-88da-45e3-8868-530e9fa3dc8b/assets/3209398.fp.png",
+        "publisherPage": "https://www.journals.uchicago.edu/doi/abs/10.2307/3209398",
+        "publication": "THE_BIBLICAL_ARCHAEOLOGIST_39_3_SEP1976_PRINT_P87",
+        "locationOnPage": "LOWER_RIGHT_ERRATUM_NOTICE",
+        "earlierTitleCentury": "SIXTH_CENTURY",
+        "correctedTitleCentury": "EIGHTH_SEVENTH_CENTURY_BCE",
+        "earlierDatingAttribution": "H_J_FRANKEN_VETUS_TESTAMENTUM_17_1967_PP480_481_LATER_DATE_ABANDONED_AS_OF_ERRATUM",
+        "authorTitleOriginalTranslation": "The Decipherment of the Deir-'Alla Texts",
+        "translatorOfAuthorTitle": "William Holladay",
+        "editorialHeadlineEmbellishmentExplicit": true,
+        "fullErratumNoticeContentRead": true,
+        "underlyingMarch1976ArticleFullTextRead": false,
+        "inscriptionPhotographCompared": false,
+        "originalBrill1976PlatesInspected": false,
+        "modernChronologyConsensusProven": false,
+        "photographicReusePermissionGranted": false
+      }
     },
     {
       "id": "SRC-HOFTIJZER-PHOENIX22-DEIRALLA-1976-FIG41-42",
