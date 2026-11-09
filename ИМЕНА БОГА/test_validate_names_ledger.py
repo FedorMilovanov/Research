@@ -1507,6 +1507,21 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("IAA 4Q120 browser photo observation must not become critical collation" in e
                             for e in validate_source_access(d)))
 
+
+    def test_4q120_commons_pd_label_does_not_license_iaa_photo(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-IAA-DSS-4Q120-B503715-2015")
+        row["secondaryImageCrossReference20261109"]["commonsDerivative"]["allowedForProductWithoutRightsReview"] = True
+        self.assertTrue(any("B-298692/Commons cannot prove B-503715 identity" in err
+                            for err in validate_source_access(d)))
+
+    def test_4q120_photo_ids_do_not_substitute_djd_fragment_crosswalk(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-IAA-DSS-4Q120-B503715-2015")
+        row["secondaryImageCrossReference20261109"]["academicPaper"]["manuscriptDjDIXEditorialCrosswalkVerified"] = True
+        self.assertTrue(any("B-298692/Commons cannot prove B-503715 identity" in err
+                            for err in validate_source_access(d)))
+
     def test_4q120_iaa_photo_requires_separate_reproduction_permission(self) -> None:
         d = copy.deepcopy(self.sources)
         row = next(x for x in d["records"] if x["id"] == "SRC-IAA-DSS-4Q120-B503715-2015")

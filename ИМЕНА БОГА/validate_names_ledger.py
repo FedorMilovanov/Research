@@ -906,6 +906,23 @@ def validate_source_access(sources: dict) -> list[str]:
                 or photo.get("rightsStatus") != "IAA_ALL_RIGHTS_RESERVED_REUSE_PERMISSION_REQUIRED_NO_BYTES_COPIED"):
                 errors.append(f"{prefix}: IAA 4Q120 browser photo observation must not become critical collation or publication permission")
         if rid == "SRC-IAA-DSS-4Q120-B503715-2015":
+            img = source.get("secondaryImageCrossReference20261109")
+            pub = img.get("academicPaper") if isinstance(img, dict) else None
+            copy = img.get("commonsDerivative") if isinstance(img, dict) else None
+            if (not isinstance(pub, dict) or not isinstance(copy, dict)
+                or pub.get("officialPublicationDate") != "2015-01-29"
+                or pub.get("appendixPrintPage") != 84
+                or pub.get("appendixImageRef") != "https://www.deadseascrolls.org.il/explore-the-archive/image/B-298692"
+                or pub.get("preferredBibYear") != "2015_NOT_2014"
+                or pub.get("actualFig04ImageIndependentHighResRead") is not False
+                or pub.get("manuscriptDjDIXEditorialCrosswalkVerified") is not False
+                or copy.get("sizePixels") != [522, 338]
+                or copy.get("legalResolutionOfRightsConflict") is not False
+                or copy.get("sameExactPhotoAsB503715Verified") is not False
+                or copy.get("independentCriticalSignLevelReading") is not False
+                or copy.get("allowedForProductWithoutRightsReview") is not False):
+                errors.append(f"{prefix}: B-298692/Commons cannot prove B-503715 identity, DJD collation or IAA reproduction rights")
+        if rid == "SRC-IAA-DSS-4Q120-B503715-2015":
             historical = source.get("historicalCompositeNegatives20261108")
             candidates = historical.get("candidates") if isinstance(historical, dict) else None
             expected_historical = {

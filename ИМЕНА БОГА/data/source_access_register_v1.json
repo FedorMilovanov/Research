@@ -2208,8 +2208,8 @@
       ],
       "locator": "Official IAA Leon Levy digital library image B-503715, 2015 full-spectrum colour, recto; archival Plate 378, Frag 15, manuscript 4Q120 = 4QpapLXXLevb; photographer Shai Halevi. Separate secondary mapping Pavlos D. Vasileiadis 2017 *Vetus Testamentum et Hellas* 4 pp21–51 p24 fig1 describes Lev4:27 'εντολων ιαω' as editorial fragment20:4 / plate378 frag15; that mapping has not been authenticated against DJD IX printed plates or sign-level imaging.",
       "sourceObjectState": "The official IAA HTML metadata confirms 4Q120 / Plate 378 Fragment 15 / B-503715 April 2015 Shai Halevi full-spectrum recto. On 2026-11-08 an independently controlled read-only browser successfully rendered actual high-resolution photographic tiles of the ANCIENT PAPYRUS manuscript and reported a legible Greek ΙΑΩ sequence in the visible photo, with lower Omega curve somewhat faded. This is PRELIMINARY VISUAL PHOTOGRAPHIC OBSERVATION, NOT an independently reviewed sign-by-sign critical collation, a preserved image asset, verification of complete Leviticus surrounding text, or direct inspection of published DJD IX transcription/plates. Secondary fragment20:4 / Lev4:27 mapping remains attributed and unverified against DJD IX. Ancient manuscript is NOT author's autograph or original Greek Pentateuch master, and image must not be transferred to Product without permission.",
-      "supportedUse": "Cite official IAA photodocumentation B-503715 for 4Q120 and distinguish direct browser observation of photo pixels from secondary editors' reading and from full critical-edition collation. Preliminary observation is consistent with published ΙΑΩ reading, subject to check of photo orientation, zoom, DJD IX fragment20 mapping, text and scholarly review. Metadata and image witness do not establish the original LXX archetype or spoken ancient Hebrew pronunciation. RIGHTS: reproduction requires IAA permission.",
-      "forbiddenUse": "Promote a browser-level apparent Greek ΙΑΩ reading to expert palaeographic certainty, DJD IX edition collation, the original LXX text or historical pronunciation of יהוה, equate fragment numbers without DJD concordance, claim photographic CC0, or reproduce protected IAA photo publicly. Never extrapolate 4Q120 Greek Leviticus to the physically unrelated Deir Alla plaster / disputed šdyn.",
+      "supportedUse": "Cite official IAA photodocumentation B-503715 for 4Q120 and distinguish direct browser observation of photo pixels from secondary editors' reading and from full critical-edition collation. Preliminary observation is consistent with published ΙΑΩ reading, subject to check of photo orientation, zoom, DJD IX fragment20 mapping, text and scholarly review. Metadata and image witness do not establish the original LXX archetype or spoken ancient Hebrew pronunciation. RIGHTS: reproduction requires IAA permission. 2015 De Gruyter publisher-year and Appendix B p84 item04 provides secondary provenance of 4Q120 B-298692; distinguish museum IAA B-503715 / Plate378 Frag15 and copyright stance.",
+      "forbiddenUse": "Promote a browser-level apparent Greek ΙΑΩ reading to expert palaeographic certainty, DJD IX edition collation, the original LXX text or historical pronunciation of יהוה, equate fragment numbers without DJD concordance, claim photographic CC0, or reproduce protected IAA photo publicly. Never extrapolate 4Q120 Greek Leviticus to the physically unrelated Deir Alla plaster / disputed šdyn. Equate B-298692 to B-503715 or editorial Fragment20 to museum Frag15 without DJD IX/pixel concordance; equate Wikimedia 522x338 public-domain label to IAA rights clearance or high-res sign collation.",
       "photoProvenanceBoundary": "IAA_4Q120_B503715_PLATE378_FRAG15_2015_HALEVI_RECTO_PRIMARY_IMAGE_PIXELS_VIEWED_NOT_DJD_CRITICAL_COLLATION",
       "reportedIaoEvidenceBoundary": "BROWSER_VISUAL_2026_4Q120_B503715_PHOTO_IAO_SEQUENCE_REPORTED_OMEGA_LOWER_STROKE_FADED_DJD_IX_AND_ALTERNATIVE_PHOTO_UNCOLLATED",
       "officialLicenseBoundary": "IAA_TERMS_2026_ALL_RIGHTS_RESERVED_PRIVATE_SINGLE_COPY_EXCEPTION_REPRODUCTION_REQUIRES_PERMISSION",
@@ -2315,6 +2315,39 @@
           "independentPhotoGraphemeCollationCompleted": false,
           "nextAction": "Determine exact rendered figure page and directly inspect pixels if available through lawful source; if not, keep EVIDENCE_HOLD and use publisher, author or library access."
         }
+      },
+      "secondaryImageCrossReference20261109": {
+        "academicPaper": {
+          "publisher": "De Gruyter, Open Theology 1(1)",
+          "author": "Pavlos D. Vasileiadis",
+          "paperTitle": "Aspects of rendering the sacred Tetragrammaton in Greek",
+          "officialPublicationDate": "2015-01-29",
+          "preferredBibYear": "2015_NOT_2014",
+          "publisherUrl": "https://www.degruyterbrill.com/document/doi/10.2478/opth-2014-0006/html",
+          "doi": "10.2478/opth-2014-0006",
+          "paperFullTextCopy": "https://paperzz.com/doc/7732056/full-text-pdf",
+          "paperCopyMastheadYear": "2014_UNDER_2015_PUBLISHER_DATE",
+          "appendixPrintPage": 84,
+          "appendixEntry": "APPENDIX_B_ENTRY04_4Q120_EDITORIAL_FRAGMENT20_IAO",
+          "appendixImageRef": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-298692",
+          "actualFig04ImageIndependentHighResRead": false,
+          "manuscriptDjDIXEditorialCrosswalkVerified": false,
+          "sourceRole": "SECONDARY_PUBLICATION_FIGURE_POINTER_NOT_DJD_OR_PHYSICAL_IMAGE_IDENTITY"
+        },
+        "commonsDerivative": {
+          "url": "https://commons.wikimedia.org/wiki/File:4Q120_frg20.jpg",
+          "sizePixels": [
+            522,
+            338
+          ],
+          "citedSource": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-298692",
+          "commonsStatesPublicDomain": true,
+          "legalResolutionOfRightsConflict": false,
+          "sameExactPhotoAsB503715Verified": false,
+          "independentCriticalSignLevelReading": false,
+          "allowedForProductWithoutRightsReview": false
+        },
+        "publicationHoldRationale": "2015 scholarly appendix source points to B-298692 for editorial fragment20; IAA B-503715 is separately catalogued 2015 Plate378 Frag15; pixel identity and DJD IX mapping not independently verified; 522x338 Wikimedia third-party PD claim does not establish permission for separate IAA color photograph or Product."
       }
     },
     {

@@ -13,10 +13,10 @@
     "extensionRecords": 13,
     "contextAttestations": 105,
     "sourceRegisterEntries": 86,
-    "regressionTests": 261,
+    "regressionTests": 263,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_3551175_ALL_6_SUCCESS_NEW_KINZIG_AUTHOR_CONCLUSION_EDITORIAL_SHA_REQUIRES_EXACT_CI",
+    "allSixCiChecks": "PREVIOUS_0F1AF5C_EXACT_6_OF_6_SUCCESS_NEW_4Q120_PHOTO_ID_AND_RIGHTS_SHA_NEEDS_EXACT_CI",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "3551175a480cbd015867124c6ce5ffa65628125e"
+    "lastConfirmedAllSixChecksSha": "0f1af5c3d239a6a5887c26005829869d1de542c9"
   },
   "allowedStatuses": [
     "DONE",
@@ -742,7 +742,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "2026-11-09 CURRENT NG05: Original Kinzig 2008 university full article, printed pp232-233, §8 directly read as PDF text: author cautiously prefers 'Jaho' over 'Jahwe' based on analyzed patristic witnesses but says ancient original pronunciation cannot be definitively recovered from them, rejects Great Church Yahweh versus Gnostic Jaho split; all author-specific, not linguistics-wide scholarly consensus. Reader02 and dossier02 now retain this distinction, conditional Russian YHWH transliteration unchanged. PDF screenshot pp232-233 unavailable (not asserted); 1979 Fernández Marcos/Sáenz-Badillos and 2007 Petruccione/Hill QXV apparatus still unread, lawful acquisition required; no other general preview searches. NG12 original Brill 1976 p16/173-178/photoplates and archived 1967 IR negatives remain inaccessible, cannot claim šdyn glyph collation. 86 sources, 261 core tests, zero independent critical collation, 0 scholarly or rights/Product approvals. Prior 3551175 exact 6/6 CI SUCCESS; this new commit requires own checks. No main/site merge or publication.",
+  "nextAction": "2026-11-09. De Gruyter Vasileiadis article DOI 10.2478/opth-2014-0006 canonical publisher date 2015-01-29, despite 2014 masthead in mirrored full text. Appendix B printed p84 entry04 names 4Q120 editorial fragment20 photo B-298692; official IAA B-503715 is different archive photo ID labelled Plate378 Frag15. B-298692 web link did not open this run, physical image relation unverified; Commons 522x338 derivative uses source B-298692 and claims PD, not legal clearance of different IAA photo B-503715. Need licensed original DJD IX1992 pp167-186 and plates XXXIX-XLI and photographic ID concordance, not speculation from low-res thumbnail. NG12 original Phoenix22 1976 PDF remains HTTP503 and local source download DNS blocked; original Brill1976 p16,173-178 and photo plates remain blocked. 86 sources 263 core tests, 0 ancient critical collations, no independent scholarly or rights approvals, drafts unpublished. Prior exact 0f1af5c 6/6 SUCCESS; new SHA requires own. Do not merge, publish, create branch or modify Product.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
