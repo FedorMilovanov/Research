@@ -94,8 +94,8 @@ class ReformationManuscriptTests(unittest.TestCase):
         self.assertTrue(remainder.strip())
         import re
         standalone = re.compile(
-            r"(?m)^\\*(?:Библейский текст и формулировка стиха|Тексты|Текст|"
-            r"Академическая опора|Редакционная ссылка на отдельное начало эпизода 01):\\*"
+            r"(?m)^\*(?:Библейский текст и формулировка стиха|Тексты|Текст|"
+            r"Академическая опора|Редакционная ссылка на отдельное начало эпизода 01):\*"
         )
         self.assertEqual(standalone.findall(reader), [])
         self.assertEqual(len(standalone.findall(moved)), 12)
