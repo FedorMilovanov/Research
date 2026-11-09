@@ -2053,8 +2053,8 @@
       ],
       "locator": "Phoenix 22 (1976), 84–91; original full-issue PDF p84 article begins; p85 fig41 in-situ excavation fragment caption; p88 fig42 caption identifies large Combination I fragment from infrared photograph made in Jerusalem shortly after excavation; p90 original author's tentative Dutch prose translation Shadday goddesses and gods; p91 signature Leiden August 1976. PDF pagination means printed-page locators; page images NOT independently visualized.",
       "sourceObjectState": "Original full Phoenix 22 scanned journal served openly by Ex Oriente Lux and machine-extracted Dutch text directly read 2026-11-08. Figure41 p85 caption states inscribed plaster fragments of Combination I in situ, with treated back of another fragment. Figure42 p88 caption identifies early infrared photograph of a large fragment of Combination I taken in Jerusalem shortly after excavation; print reproduces at approximately 30% of actual size. However web PDF page-screenshot tool failed HTTP 503 and source PDF bytes could not be downloaded locally: only TEXT OF THE PRINTED CAPTIONS and issue contents have been verified, NOT visible ancient letters, NOT image surface, NOT identification that fig42 contains šdyn, NOT photo reuse rights. At printed p90 author offers a highly reconstructed Dutch translation distinguishing Shadday goddesses and Shadday gods; this is Hoftijzer's 1976 interpretation, NOT an independent transliteration of ancient physical letters. Distinct from 1976 Brill critical edition and 1976 The Biblical Archaeologist article/erratum. 2026-11-08 ACCESS RECHECK: independent browser viewer displayed no PDF pages; Windows direct download returned anti-bot verification; the published figure's visual surface and all šdyn letter claims remain UNSEEN; see visualAccessRecheck20261108. 2026-11-09 BROWSER RECHECK: direct remote PDF viewer rendered only cover of 104-page issue; #page=85/88 navigation failed. Therefore original Fig41/42 graphic remains UNSEEN; neither positive nor negative glyph reading is authorized.",
-      "supportedUse": "Primary 1976 author-signed textual evidence that an immediate post-excavation infrared photograph of a Combination I fragment was reproduced as Phoenix 22 fig42 p88; new targeted acquisition path to printed image and possible original infrared negative in Jerusalem/Leiden archives. Contrast author-attributed 1976 Dutch reconstructed 'Shadday-godinnen' / 'Shadday-goden' translation on p90 with later disputed šdyn/El Shadday readings, noting author's warning about uncertainty and reconstructions.",
-      "forbiddenUse": "Claim actual inspection of fig41/42 photographic pixels or independent palaeographic šdyn collation, assume fig42 images exact disputed graphemes, assume 1976 infrared photo was located in the DANS manifests, claim this is Brill editio princeps plates, turn a 1976 author's interpretive gendered divine council translation into literal biblical monotheistic naming, or reuse figures as licensed images; machine-extracted text does not grant photo reproduction rights.",
+      "supportedUse": "Primary 1976 author-signed textual evidence that an immediate post-excavation infrared photograph of a Combination I fragment was reproduced as Phoenix 22 fig42 p88; new targeted acquisition path to printed image and possible original infrared negative in Jerusalem/Leiden archives. Contrast author-attributed 1976 Dutch reconstructed 'Shadday-godinnen' / 'Shadday-goden' translation on p90 with later disputed šdyn/El Shadday readings, noting author's warning about uncertainty and reconstructions. Cite Hoftijzer's OWN signed August 1976 Phoenix printed p84 provisional c700 BCE assessment and printed p86 interpretation of a non-YHWH pantheon as attributed 1976 author statements; note March 1976 'sixth-century' title without implying original September erratum content.",
+      "forbiddenUse": "Claim actual inspection of fig41/42 photographic pixels or independent palaeographic šdyn collation, assume fig42 images exact disputed graphemes, assume 1976 infrared photo was located in the DANS manifests, claim this is Brill editio princeps plates, turn a 1976 author's interpretive gendered divine council translation into literal biblical monotheistic naming, or reuse figures as licensed images; machine-extracted text does not grant photo reproduction rights. Do NOT assert the September 1976 erratum changed the date from sixth to seventh/eighth century unless the original correction text is examined; do NOT treat 1976 'ca 700' as modern consensus or direct chronological scientific measurement.",
       "historicalFigure42Evidence": "PHOENIX_1976_P88_FIG42_COMBINATION_I_EARLY_JERUSALEM_INFRARED_PHOTO_REPRODUCTION_CAPTION_ONLY_NOT_VISUAL_AUTOPSY",
       "shaddayTranslationBoundary": "PHOENIX_1976_P90_HOFTIJZER_RECONSTRUCTED_DUTCH_GENDERED_SHADDAY_GODS_TRANSLATION_NOT_INDEPENDENT_SHDYN_COLLATION",
       "visualAccessRecheck20261108": {
@@ -2086,6 +2086,25 @@
         "ancientGraphemeShdynRead": false,
         "conclusion": "The PDF's existence and page1 rendering are verified, but the browser ignored page fragments and did not show requested image pages; this is NOT evidence the photographs or disputed graphemes are absent.",
         "rights": "PERMISSION_REQUIRED"
+      },
+      "directAuthorChronologyAndPantheon20261109": {
+        "source": "HOFTIJZER_DE_ARAMESE_TEKSTEN_UIT_DEIR_ALLA_PHOENIX_22_1976_PRINT_PP84_86_90",
+        "originalDutchIssueUrl": "https://www.exorientelux.nl/download/phoenix22.pdf",
+        "writtenSigned": "LEIDEN_AUGUST_1976_PRINT_P91",
+        "printedPage84Dating": "ARCHAEOLOGICAL_AND_TECHNICAL_EVIDENCE_MAKES_CA_700_BCE_MOST_PROBABLE_AUTHOR_ESTIMATE",
+        "printedPage84DatingPrecision": "AUTHOR_EXPLICITLY_SAYS_EXACT_DATING_DIFFICULT_AND_SCRIPT_LANGUAGE_CANNOT_REFINE_IT",
+        "printedPage86Religion": "AUTHOR_INTERPRETATION_NO_NAME_OF_ISRAELS_GOD_FOUND_TRACES_OF_A_PANTHEON_AND_PROBABLE_CENTRAL_GODDESS_SHGR",
+        "printedPage90Translation": "AUTHOR_RECONSTRUCTED_SHADDAY_GODDESSES_AND_GODS_NOT_GLYPH_COLLATION",
+        "contrast": "SEPARATE_HOFTIJZER_BIBLICAL_ARCHAEOLOGIST_39_1_MARCH_1976_TITLE_SAYS_SIXTH_CENTURY",
+        "printedErratum": "BIBLICAL_ARCHAEOLOGIST_39_3_SEP_1976_P87",
+        "originalErratumContentsRead": false,
+        "authorRevisionMechanismProven": false,
+        "photoPixelsChecked": false,
+        "signsShdynOnPhotoVerified": false,
+        "articleTextAccess": "FULL_PHOENIX_ORIGINAL_INDEXED_DUTCH_TEXT_SELECTED_PRINT_PP84_86_90_91_DIRECTLY_READ",
+        "modernConsensusEstablished": false,
+        "rightsState": "PERMISSION_REQUIRED",
+        "nextAction": "Obtain the standalone Sept 1976 erratum p87 and Brill primary chronometric/stratigraphic context before inferring exact correction history; original image remains uncollated."
       }
     },
     {
