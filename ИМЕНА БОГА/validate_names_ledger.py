@@ -416,7 +416,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-HACKETT-DEIRALLA-MONOGRAPH-1984-SELECTED-OCR": "HACKETT1984_SELECTED_UNVERIFIED_OCR_AUTHORED_HYPOTHESES_NOT_ANCIENT_COLLATION",
     "SRC-ELLIFF-COLEMAN-DEIRALLA-I6-2023": "ELLIFF_COLEMAN2023_ATTRIBUTED_I6_TPRY_GODDESS_BOLTS_RECONSTRUCTION",
     "SRC-HOFTIJZER-BALAAM-ARTICLE-1976-BA39-1": "EARLY_DEIR_ALLA_PUBLICATION_WITH_FORMALLY_PUBLISHED_CORRIGENDUM_ACCESS_HOLD",
-    "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3": "ORIGINAL_1976_JOURNAL_ARTICLE_CORRECTION_TO_FETCH_BEFORE_EXEGETICAL_RELIANCE",
+    "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3": "ORIGINAL_1976_JOURNAL_EDITORIAL_TITLE_DATE_CORRECTION_DIRECT_SCAN",
     "SRC-HOFTIJZER-PHOENIX22-DEIRALLA-1976-FIG41-42": "EARLY_DEIR_ALLA_HOFTIJZER1976_AUTHOR_ARTICLE_WITH_IR_PHOTO_CAPTION_AND_RECONSTRUCTED_SHADDAY_TRANSLATION",
     "SRC-FRANKEN-1967-VT-FIRST-INSCRIPTION-PHOTO-480481": "FRANKEN1967_EARLIEST_PUBLISHED_DEIRALLA_FRAGMENT_PHOTO_REPORTED_IN_LEMAIRE1985_PAGE480_TEXT_PREVIEW_ONLY",
     "SRC-IAA-DSS-4Q120-B503715-2015": "PRIMARY_IAA_4Q120_GREEK_LEVITICUS_PHOTO_CATALOGUE_NO_GLYPH_COLLATION",
@@ -427,7 +427,7 @@ EXPECTED_SOURCE_ROLES = {
 # Product publication: the per-record publicationState remains BLOCKED.
 DEIR_ALLA_SOURCE_GUARDS = {
     "SRC-HOFTIJZER-BALAAM-ARTICLE-1976-BA39-1": ("CATALOG_ONLY", "PERMISSION_REQUIRED", "EXACT_LOCATOR_VERIFIED"),
-    "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3": ("CATALOG_ONLY", "PERMISSION_REQUIRED", "EXACT_LOCATOR_VERIFIED"),
+    "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3": ("FULL_OBJECT_VERIFIED", "PERMISSION_REQUIRED", "EXACT_LOCATOR_VERIFIED"),
     "SRC-HOFTIJZER-PHOENIX22-DEIRALLA-1976-FIG41-42": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED", "EXACT_LOCATOR_VERIFIED"),
     "SRC-FRANKEN-1967-VT-FIRST-INSCRIPTION-PHOTO-480481": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED", "EXACT_LOCATOR_VERIFIED"),
     "SRC-DEIRALLA-SYMPOSIUM-1991-NYU": ("PARTIAL_OBJECT", "PERMISSION_REQUIRED", "EXACT_LOCATOR_VERIFIED"),
@@ -655,15 +655,15 @@ def validate_source_access(sources: dict) -> list[str]:
                    "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3"}:
             witness_key = ("indirect1976ErratumWitness"
                            if rid.startswith("SRC-CAQUOT-LEMAIRE") else "indirect1977CorrectionWitness")
-            if source.get(witness_key) != "CAQUOT_LEMAIRE_1977_PRINT_P189_FOOTNOTE1_ATTRIBUTES_SIXTH_CENTURY_TO_EIGHTH_SEVENTH_CORRECTION_TO_BA1976_39_3_P87_ORIGINAL_ERRATUM_TEXT_NOT_OBTAINED":
+            if source.get(witness_key) != "CAQUOT_LEMAIRE_1977_PRINT_P189_FOOTNOTE1_ATTRIBUTES_SIXTH_CENTURY_TO_EIGHTH_SEVENTH_CORRECTION_TO_BA1976_39_3_P87_NOW_INDEPENDENTLY_CONFIRMED_BY_1976_P87_FIRST_PAGE_SCAN":
                 errors.append(f"{prefix}: later 1977 reported date correction missing or falsely promoted")
             citation_key = ("indirect1976ErratumWitnessUrl"
                             if rid.startswith("SRC-CAQUOT-LEMAIRE") else "indirect1977CorrectionWitnessUrl")
             if source.get(citation_key) != "https://www.persee.fr/doc/syria_0039-7946_1977_num_54_3_6603?pageId=T1_189":
                 errors.append(f"{prefix}: later 1977 dating correction must cite print p189")
         if rid == "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3":
-            if source.get("originalErratumTextVerified") is not False:
-                errors.append(f"{prefix}: original 1976 erratum must remain unviewed despite 1977 report")
+            if source.get("originalErratumTextVerified") is not True:
+                errors.append(f"{prefix}: original 1976 publisher erratum p87 must remain directly verified")
         if rid == "SRC-HOFTIJZER-BALAAM-ARTICLE-1976-BA39-1":
             if (source.get("linkedErratumId") != "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3"
                 or source.get("linkedErratumUrl") != "https://doi.org/10.2307/3209398"
@@ -672,8 +672,33 @@ def validate_source_access(sources: dict) -> list[str]:
         if rid == "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3":
             if (source.get("correctingSourceId") != "SRC-HOFTIJZER-BALAAM-ARTICLE-1976-BA39-1"
                 or source.get("url") != "https://doi.org/10.2307/3209398"
-                or "NOT retrieved" not in str(source.get("sourceObjectState", ""))):
-                errors.append(f"{prefix}: publisher erratum text cannot be claimed seen or unlink original")
+                or "directly visually read" not in str(source.get("sourceObjectState", ""))):
+                errors.append(f"{prefix}: publisher erratum must preserve original image and its exact article link")
+        if rid == "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3":
+            witness = source.get("originalErratumPageWitness20261109")
+            required = {
+                "status": "PUBLISHER_ORIGINAL_1976_PRINT_P87_FIRST_PAGE_IMAGE_DIRECT_VISUAL_READ",
+                "imageUrl": "https://www.journals.uchicago.edu/cms/10.2307/3209398/asset/524cb216-88da-45e3-8868-530e9fa3dc8b/assets/3209398.fp.png",
+                "publication": "THE_BIBLICAL_ARCHAEOLOGIST_39_3_SEP1976_PRINT_P87",
+                "locationOnPage": "LOWER_RIGHT_ERRATUM_NOTICE",
+                "earlierTitleCentury": "SIXTH_CENTURY",
+                "correctedTitleCentury": "EIGHTH_SEVENTH_CENTURY_BCE",
+                "earlierDatingAttribution": "H_J_FRANKEN_VETUS_TESTAMENTUM_17_1967_PP480_481_LATER_DATE_ABANDONED_AS_OF_ERRATUM",
+                "authorTitleOriginalTranslation": "The Decipherment of the Deir-'Alla Texts",
+                "translatorOfAuthorTitle": "William Holladay",
+            }
+            if (not isinstance(witness, dict)
+                or any(witness.get(k) != v for k, v in required.items())
+                or witness.get("publisherPage") != "https://www.journals.uchicago.edu/doi/abs/10.2307/3209398"
+                or any(witness.get(flag) is not True for flag in (
+                    "editorialHeadlineEmbellishmentExplicit", "fullErratumNoticeContentRead"))
+                or any(witness.get(flag) is not False for flag in (
+                    "underlyingMarch1976ArticleFullTextRead",
+                    "inscriptionPhotographCompared",
+                    "originalBrill1976PlatesInspected",
+                    "modernChronologyConsensusProven",
+                    "photographicReusePermissionGranted"))):
+                errors.append(f"{prefix}: original 1976 erratum corrects editorial headline only, not ancient glyphs, photo rights or complete March article")
         if rid == "SRC-HOFTIJZER-PHOENIX22-DEIRALLA-1976-FIG41-42":
             if (source.get("historicalFigure42Evidence") != "PHOENIX_1976_P88_FIG42_COMBINATION_I_EARLY_JERUSALEM_INFRARED_PHOTO_REPRODUCTION_CAPTION_ONLY_NOT_VISUAL_AUTOPSY"
                 or source.get("shaddayTranslationBoundary") != "PHOENIX_1976_P90_HOFTIJZER_RECONSTRUCTED_DUTCH_GENDERED_SHADDAY_GODS_TRANSLATION_NOT_INDEPENDENT_SHDYN_COLLATION"):
