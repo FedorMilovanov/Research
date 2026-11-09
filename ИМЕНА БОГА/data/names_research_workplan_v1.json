@@ -13,10 +13,10 @@
     "extensionRecords": 13,
     "contextAttestations": 105,
     "sourceRegisterEntries": 86,
-    "regressionTests": 259,
+    "regressionTests": 261,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_34D6189_EXACT_SHA_6_OF_6_SUCCESS_NEW_EDITION_ACQUISITION_SHA_REQUIRES_OWN_CI",
+    "allSixCiChecks": "PRIOR_3551175_ALL_6_SUCCESS_NEW_KINZIG_AUTHOR_CONCLUSION_EDITORIAL_SHA_REQUIRES_EXACT_CI",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "34d6189d327eec1d3feca019e45ccc5c4069ad76"
+    "lastConfirmedAllSixChecksSha": "3551175a480cbd015867124c6ce5ffa65628125e"
   },
   "allowedStatuses": [
     "DONE",
@@ -742,7 +742,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "09 Nov 2026 CURRENT NEXT: NG-05 original Theodoret Greek critical apparatus, Quaestiones in Exodum XV. Acquire lawfully two specific print passages with their critical variants: Fernandez Marcos/Saenz-Badillos CSIC 1979 and revised Petruccione/Hill CUA Press 2007 vol1 Questions on Exodus pp222-345 (JSTOR chapter j.ctt32b24p.10, gated). CNRS catalogue confirms 1979 edition; Gautier REB 1980 p293 reports 53 consulted/collated MSS, 31 retained, critiques sigla and missing stemma, which is his review not our original autopsy. No original Q XV variants from either critical edition consulted. Compare with PG80 Sophia truncated text, alternate 2006 edited Greek transcript 'ἰουδαῖοι δὲ Ἰά', and Kinzig 2008 variants; do NOT promote one pronunciation. NG-12 separately awaits original ATDA Brill1976 pp16,173-178 and photographic plates / lawful archive Box9,Box41 for independent šdyn examination. Original 1976 BA erratum has already been read and 2019 Sidestone p143 images have already been visualized; do not repeat. No generic public-preview search. 86 sources, 259 core tests, 0 independent critical collation, 0 scholarly reviews, 0 Product/rights approvals; CH-PILOT 1-3 remain draft. Research PR379 Draft only; previous 34d6189 6/6 SUCCESS; every new SHA needs new exact CI.",
+  "nextAction": "2026-11-09 CURRENT NG05: Original Kinzig 2008 university full article, printed pp232-233, §8 directly read as PDF text: author cautiously prefers 'Jaho' over 'Jahwe' based on analyzed patristic witnesses but says ancient original pronunciation cannot be definitively recovered from them, rejects Great Church Yahweh versus Gnostic Jaho split; all author-specific, not linguistics-wide scholarly consensus. Reader02 and dossier02 now retain this distinction, conditional Russian YHWH transliteration unchanged. PDF screenshot pp232-233 unavailable (not asserted); 1979 Fernández Marcos/Sáenz-Badillos and 2007 Petruccione/Hill QXV apparatus still unread, lawful acquisition required; no other general preview searches. NG12 original Brill 1976 p16/173-178/photoplates and archived 1967 IR negatives remain inaccessible, cannot claim šdyn glyph collation. 86 sources, 261 core tests, zero independent critical collation, 0 scholarly or rights/Product approvals. Prior 3551175 exact 6/6 CI SUCCESS; this new commit requires own checks. No main/site merge or publication.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {

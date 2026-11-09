@@ -657,7 +657,18 @@ def validate_source_access(sources: dict) -> list[str]:
                 or w.get("jewishVariantOther") != "αεια"
                 or any(w.get(flag) is not False for flag in (
                     "printedGreekEditionManuscriptsIndependentlyCollated",
-                    "modernAuthorClaimsUniversalCertainty"))):
+                    "modernAuthorClaimsUniversalCertainty"))
+                or not isinstance(source.get("authorConclusion20261109"), dict)
+                or source["authorConclusion20261109"].get("originalPublishedPageLoci") != [232, 233]
+                or source["authorConclusion20261109"].get("exactSection") != "8. Ergebnisse und Fragen"
+                or source["authorConclusion20261109"].get("originalGermanTextRead") is not True
+                or source["authorConclusion20261109"].get("thesePagesScreenshotVisuallyVerified") is not False
+                or source["authorConclusion20261109"].get("tentativePreference") != "Jaho"
+                or source["authorConclusion20261109"].get("qualifiedPreferenceWithinPatristicEvidence") is not True
+                or source["authorConclusion20261109"].get("reportsGreatChurchYahwehVersusGnosticJahoAssignment") is not False
+                or any(source["authorConclusion20261109"].get(flag) is not False for flag in (
+                    "saysAncientOriginalPronunciationCertain",
+                    "modernScholarlyConsensusCertified"))):
                 errors.append(f"{prefix}: Kinzig reports variant critical edition witnesses, not our autopsy or certain original pronunciation")
         if rid == "SRC-LEMAIRE-DEIRALLA-SCRIBAL-2021":
             if (source.get("hypothesisStatus") != "ATTRIBUTED_COPY_AND_9TH_10TH_CENTURY_COMPOSITION_NOT_INDEPENDENTLY_ATTESTED"

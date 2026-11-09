@@ -2558,9 +2558,9 @@
         "PUBLICATION_HOLD"
       ],
       "sourceRole": "KINZIG_2008_EARLY_CHRISTIAN_YHWH_TRANSMISSION_VARIANTS_QUAESTIONES_COMPENDIUM_CRITIQUE",
-      "sourceObjectState": "2026-11-09 original scholarly publisher-style article PDF from University of Tübingen repository personally read as machine PDF text. Printed p226 (zero-based PDF page24) rendered and visually inspected: Theodoret quaestiones in Exodum XV quote, PG80 243 / critical Fernandez Marcos-Saenz Badillos 112,9–18, reports Samaritan Ἰαβὲ and edition Greek Ἰά, but footnote 120 states Αἰά widely supported, also ιαω and αεια; p227 machine text extends argument and reports αεια in three manuscripts, plus Compendium V.3 PG83 460A direct comparison. One print p227 screenshot timed out; do NOT claim pixel inspection of all pages or actual manuscript collation. Cites original 2008 bibliography verified from press statement. Kinzig's thesis that patristic evidence is insufficient to establish an undisputed Yahweh vocalization is an attributed scholarly interpretation, NOT a universally settled consensus.",
-      "supportedUse": "Present critical apparatus-level VARIANTS as Kinzig's report from modern edition and manuscript witnesses; link exact pages 225–227, distinguish scholarly collated secondary analysis from our own direct originals, expose the special danger of assuming a singular Jewish counterpart Ἀϊά.",
-      "forbiddenUse": "Say we physically collated the original Greek codices or full 1997 Fernández Marcos edition; flatten alternative Ἰά, Αἰά, αεια into one ancient reading; treat Kinzig's interpretation as binding consensus; publish copyrighted scans.",
+      "sourceObjectState": "2026-11-09 original scholarly publisher-style article PDF from University of Tübingen repository personally read as machine PDF text. Printed p226 (zero-based PDF page24) rendered and visually inspected: Theodoret quaestiones in Exodum XV quote, PG80 243 / critical Fernandez Marcos-Saenz Badillos 112,9–18, reports Samaritan Ἰαβὲ and edition Greek Ἰά, but footnote 120 states Αἰά widely supported, also ιαω and αεια; p227 machine text extends argument and reports αεια in three manuscripts, plus Compendium V.3 PG83 460A direct comparison. One print p227 screenshot timed out; do NOT claim pixel inspection of all pages or actual manuscript collation. Cites original 2008 bibliography verified from press statement. Kinzig's thesis that patristic evidence is insufficient to establish an undisputed Yahweh vocalization is an attributed scholarly interpretation, NOT a universally settled consensus. 2026-11-09 original university-hosted full 2008 PDF text selected printed pp232-233, §8 Ergebnisse und Fragen directly read. Kinzig explicitly rejects a simple Great-Church='Jahwe' vs Gnosis='Jaho/Jao' divide, notes 'Jahwe' remains possible while 'Jaho/Jao' also considered, and at print p233 tentatively prefers Jaho to Jahwe from the patristic witnesses he reviewed. He says a definite identification/pronunciation cannot be made from those sources. This is Kinzig's historical-textological assessment, NOT consensus across Semitic historical linguistics; actual full-page screenshot of pp232-233 not obtained in this pass. No Greek manuscripts or editor's critical apparatus independently collated.",
+      "supportedUse": "Present critical apparatus-level VARIANTS as Kinzig's report from modern edition and manuscript witnesses; link exact pages 225–227, distinguish scholarly collated secondary analysis from our own direct originals, expose the special danger of assuming a singular Jewish counterpart Ἀϊά. Cite Kinzig original scholarly conclusion separately from his p226 Theodoret footnote: printed pp232-233 author cautiously prefers Jaho against Jahwe within patristic witness study while expressly denying definitive recovery.",
+      "forbiddenUse": "Say we physically collated the original Greek codices or full 1997 Fernández Marcos edition; flatten alternative Ἰά, Αἰά, αεια into one ancient reading; treat Kinzig's interpretation as binding consensus; publish copyrighted scans. Claim Kinzig definitively proved original 'Jaho' or disproved every 'Yahweh' linguistic reconstruction, map church-versus-Gnosis vowel forms as an established division, or claim original pp232-233 screenshot examined.",
       "kinzigWitness20261109": {
         "bib": "KINZIG_2008_SPRACHGEWINN_PP202_233",
         "exodusPrintPage": 226,
@@ -2574,6 +2574,24 @@
         "compendiumPage": 227,
         "printedGreekEditionManuscriptsIndependentlyCollated": false,
         "modernAuthorClaimsUniversalCertainty": false
+      },
+      "authorConclusion20261109": {
+        "originalPublishedPageLoci": [
+          232,
+          233
+        ],
+        "digitalOriginalPdf": "https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/123881/Kinzig_080.pdf",
+        "exactSection": "8. Ergebnisse und Fragen",
+        "originalGermanTextRead": true,
+        "thesePagesScreenshotVisuallyVerified": false,
+        "originalAuthorScope": "PATRISTIC_GREEK_LATIN_TRANSMISSION_NOT_ALL_HEBREW_TEXTUAL_LINGUISTIC_EVIDENCE",
+        "saysEitherYahwehOrJahoPossible": true,
+        "tentativePreference": "Jaho",
+        "qualifiedPreferenceWithinPatristicEvidence": true,
+        "saysAncientOriginalPronunciationCertain": false,
+        "reportsGreatChurchYahwehVersusGnosticJahoAssignment": false,
+        "modernScholarlyConsensusCertified": false,
+        "noIndependentOriginalManuscriptCollation": true
       }
     }
   ],

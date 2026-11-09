@@ -1678,6 +1678,21 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("Kinzig reports variant critical edition witnesses" in e
                             for e in validate_source_access(d)))
 
+
+    def test_kinzig_tentative_jaho_not_proved_original_vocalization(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-KINZIG-PATRISTIC-TETRAGRAM-2008-P226227")
+        row["authorConclusion20261109"]["saysAncientOriginalPronunciationCertain"] = True
+        self.assertTrue(any("Kinzig reports variant critical edition witnesses" in e
+                            for e in validate_source_access(d)))
+
+    def test_kinzig_cannot_invent_visual_page_autopsy_of_conclusion(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-KINZIG-PATRISTIC-TETRAGRAM-2008-P226227")
+        row["authorConclusion20261109"]["thesePagesScreenshotVisuallyVerified"] = True
+        self.assertTrue(any("Kinzig reports variant critical edition witnesses" in e
+                            for e in validate_source_access(d)))
+
     def test_romer_published_slide_screenshot_is_not_manuscript_autopsy(self) -> None:
         d = copy.deepcopy(self.sources)
         row = next(x for x in d["records"] if x["id"] == "SRC-ROMER-COLLEGE-DE-FRANCE-YHWH-2011")
