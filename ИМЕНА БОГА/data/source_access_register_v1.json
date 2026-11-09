@@ -2316,6 +2316,99 @@
           "nextAction": "Determine exact rendered figure page and directly inspect pixels if available through lawful source; if not, keep EVIDENCE_HOLD and use publisher, author or library access."
         }
       }
+    },
+    {
+      "id": "SRC-CLEMENT-STROMATA-5-6-34-STAHLIN-GREEK",
+      "title": "Clement of Alexandria, Stromata 5.6.34, original Greek edited in Otto Stählin (1906–1909), digital text of the selected passage (Stählin 2:348–349)",
+      "creator": "Clement of Alexandria; Otto Stählin (critical print edition)",
+      "year": 1909,
+      "url": "https://sophiascriptura.com/fathers/clement-stromata/5-4-19/",
+      "objectType": "ancient_christian_original_language_passage_in_modern_digital_transcription_of_stahlin_1906_1909_edition_not_direct_autograph_or_greek_appraisal",
+      "sourceRole": "CLEMENT_STROMATA_5_6_34_EDITED_GREEK_IAOUE_PASSAGE_NOT_AUTOGRAPH_OR_CERTAIN_PHONETICS",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "locator": "Clement, Stromata book V ch6 §34; Stählin 2:348–349; Greek digital selected passage at anchored §5.6.34; printed manuscript apparatus NOT consulted.",
+      "sourceObjectState": "2026-11-09 digital transcription of original-language printed Stählin Greek TEXT is directly visible in Sophia Scriptura (and independently indexed Gadsden Classics); text contains the exact form Ἰαουε after 'λέγεται δὲ' and the author's meaning 'ὁ ὢν καὶ ὁ ἐσόμενος'. Perseus catalog independently identifies Stählin Greek edition 1906–1909. Manuscript variants, original print critical apparatus and any ancient autograph have NOT been collated. Digital site has its own editorial/transcription layer, and later Deissmann 1901 treats orthographic variants as debated.",
+      "supportedUse": "Cite Clement V.6.34 as a historically transmitted edited Greek representation Ἰαουε with exact section and printed Stählin locator; contrast with variant Greek readings reported by Deissmann without turning one digital print reading into certain historic Hebrew vocalization.",
+      "forbiddenUse": "Conclude Clement personally heard ancient Mosaic-period pronunciation, treat Ἰαουε as unvariant autograph, treat Ἰαουε as identical to IAA papyrus 4Q120 ΙΑΩ, infer rights to copy digital editor/translator content or declare ancient manuscript critical collation.",
+      "greekPassageWitness20261109": {
+        "printedEditedForm": "Ἰαουε",
+        "exactLoc": "STROMATA_V_6_34_STAHLIN_VOL2_PP348_349",
+        "digitalTextDirectlyRead": true,
+        "originalPrintedApparatusRead": false,
+        "ancientManuscriptsCollated": false,
+        "historicalPronunciationUncontested": false
+      }
+    },
+    {
+      "id": "SRC-DEISSMANN-BIBLE-STUDIES-1901-TETRAGRAM-GREEK",
+      "title": "G. Adolf Deissmann, Bible Studies (English 1901), chapter 'Greek Transcriptions of the Tetragrammaton', textual disagreement over Clement Strom. 5.6.34",
+      "creator": "G. Adolf Deissmann; English translator Alexander Grieve",
+      "year": 1901,
+      "url": "https://www.sermonindex.net/books/deissmann-a-bible-studies/22",
+      "objectType": "original_historical_scholarly_1901_argument_digital_text_reproduction_not_full_facsimile_or_modern_manuscript_appraisal",
+      "sourceRole": "DEISSMANN_1901_SECONDARY_TEXTUAL_VARIANT_WARNING_CLEMENT_IAOUE_THEODORET_FORMS",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "locator": "Bible Studies (English 1901) section VI 'Greek Transcriptions of the Tetragrammaton', opening discussion of Dindorf/Lagarde and Clement Strom. V.6.34, and historical comparative transcription table.",
+      "sourceObjectState": "2026-11-09 original early twentieth-century English scholarly chapter text openly indexed and read, not photographic facsimile. Deissmann reports Dindorf's Ἰαού and alternate manuscripts/catena forms Ἰὰ οὐαί / Ἰὰ οὐέ and discusses Lagarde's preference for Ἰαουε. This is scholarly report of variant tradition and dated judgment, NOT our direct collated manuscripts, NOT current apparatus, NOT an uncontested universal historical pronunciation. Book existence and 1901 English edition independently confirmed by Open Library and university catalogs.",
+      "supportedUse": "Quote or paraphrase historically attributed textual disagreement, pin edition year/section, require original Greek apparatus consultation before preferred ancient letter sequence is designated certain; keep multiple ancient author's loci distinct.",
+      "forbiddenUse": "Cite Deissmann's historic reconstruction as modern critical manuscript collation, make printed Clement Ἰαουε manuscript-invariant, mistake late patristic Greek transcripts for 4Q120 pre-Christian papyrus or direct Hebrew vowel points.",
+      "variantScope20261109": "DEISSMANN1901_REPORTS_CLEMENT_DINDORF_IAOU_VARIANT_IA_OUAI_IA_OUE_LAGARDE_PREFERRED_IAOUE_OUR_MANUSCRIPT_APPARATUS_NOT_READ",
+      "greekManuscriptsDirectlyCollated": false,
+      "modernCriticalApparatusInspected": false
+    },
+    {
+      "id": "SRC-ROMER-COLLEGE-DE-FRANCE-YHWH-2011",
+      "title": "Thomas Römer, Collège de France, 3 February 2011 lecture materials on YHWH: patristic Greek name forms and 4QpapLXXLevb",
+      "creator": "Thomas Römer (Collège de France)",
+      "year": 2011,
+      "url": "https://www.college-de-france.fr/media/thomas-romer/UPL7160123108737691961_r__mer_20110203_2.pdf",
+      "objectType": "author_lecture_slide_deck_pdf_machine_text_partial_visual_screenshot_failed_not_patristic_originals_or_djd_edition",
+      "sourceRole": "ROMER_2011_ACADEMIC_SECONDARY_PATRISTIC_NAME_FORMS_AND_4Q120_FRAGMENT20_LEV4",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "locator": "Collège de France lecture dated 2011-02-03, slides 11–16 (editorial slide numbers), specifically Clement Stromata V.6.34, Theodoret Quaestiones in Exodum XV vs Haereticarum fabularum compendium V.3, 4QpapLXXLevb editorial fragment 20 Lev4:26–28 Greek ΙΑΩ. PDF text extracted from official website, page screenshots returned cache miss.",
+      "sourceObjectState": "2026-11-09 official original 2011 scholar-authored lecture PDF machine TEXT extracted; source itself prints Clement Ιαουε, Theodoret Questions on Exodus XV Samaritan Ἰαβέ/Jewish Ἀϊά, separate Compendium V.3 Samaritan Ἰαβαί, and 4Q120 fragment20 (Lev4:26–28) ΙΑω. Copyright/slide pixel verification unknown due screenshot cache miss. These are attributed secondary references to different ancient texts, not fresh epigraphic, original manuscript, Stählin, PG80/83 or DJD IX critical edition collation. Date is 3 February 2011, not current publication date.",
+      "supportedUse": "Cross-check multiple distinct patristic loci and academic editorial 4Q120 fragment20 locator as corroboration; emphasize late transmitters, different genres, manuscript/edition variation and no certain reconstructed Mosaic phonetic form.",
+      "forbiddenUse": "Collapse Theodoret Ἰαβέ and Ἰαβαί into one passage, claim physical 4Q120 photograph/collation from lectures, use one lecture as proof of original LXX universal divine-name translation or publish copyrighted lecture slides without rights.",
+      "reportedAcademicWitness20261109": {
+        "clement": "STROMATA_5_6_34_IAOUE",
+        "theodoretQuestions": "QUESTIONS_ON_EXODUS_XV_SAMARITAN_IABE_JEWISH_AIA",
+        "theodoretCompendium": "HERETICAL_FABLES_V_3_SAMARITAN_IABAI_DISTINCT_TEXT",
+        "papyrus": "4Q120_EDITORIAL_FRAG20_LEV4_26_28_IAO",
+        "slidesTextDirectlyRead": true,
+        "originalPatristicGreekEditionsCollated": false,
+        "originalDjdCriticalEditionCollated": false,
+        "pdfPageScreenshotVisuallyVerified": false
+      }
     }
   ],
   "auditRevision": "NG05_4Q120_PRIMARY_MUSEUM_IMAGE_VISUAL_PRELIMINARY_IAO_NO_CRITICAL_COLLATION_20261108"
