@@ -30,9 +30,29 @@ class ReformationAdversarialFourSixTests(unittest.TestCase):
                 reader, apparatus = content.split("## Источниковедческий аппарат", 1)
                 self.assertGreater(len(reader.split()), 1200)
                 self.assertIn("adversarial-проверка", apparatus)
-                self.assertIn("RESEARCH_MANUSCRIPT_DRAFT", reader)
-                self.assertIn("NOT_EDITORIAL_READY", reader)
-                self.assertIn("PUBLICATION_HOLD", reader)
+                self.assertIn("RESEARCH_MANUSCRIPT_DRAFT", apparatus)
+                self.assertIn("NOT_EDITORIAL_READY", apparatus)
+                self.assertIn("PUBLICATION_HOLD", apparatus)
+
+    def test_wave410_reader_starts_with_history_not_operational_status(self):
+        """Exact metadata moves into the existing apparatus, not out of the book."""
+        cases = (
+            ("zurich", "Два города — не один путь", "Полная колляция всех оригинальных протоколов"),
+            ("marburg", "Когда союзники спорят друг с другом", "Подписанный немецкий автограф"),
+            ("schleitheim", "Почему после Марбурга мы возвращаемся назад", "Ранние печатные экземпляры Шляйтхайма"),
+        )
+        for key, title, unique_provenance in cases:
+            with self.subTest(chapter=key):
+                chapter = self.texts[key]
+                reader, apparatus = chapter.split("## Источниковедческий аппарат", 1)
+                self.assertRegex(reader, r"\A# Эпизод 0[456]\.[^\n]*\n\n## ")
+                self.assertIn("## " + title, reader)
+                self.assertNotIn("**Статус:**", reader)
+                self.assertIn("**Статус:** RESEARCH_MANUSCRIPT_DRAFT", apparatus)
+                self.assertEqual(apparatus.count(unique_provenance), 1)
+                self.assertIn("NOT_EDITORIAL_READY", apparatus)
+                self.assertIn("RIGHTS_HOLD", apparatus)
+                self.assertIn("PUBLICATION_HOLD", apparatus)
 
     def test_zurich_order_vs_execution_not_conflated(self):
         text = self.texts["zurich"]
@@ -80,8 +100,8 @@ class ReformationAdversarialFourSixTests(unittest.TestCase):
                     self.assertNotIn(forbidden, reader)
                 for hold in ("ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"):
                     self.assertIn(hold, notes)
-                self.assertIn("RESEARCH_MANUSCRIPT_DRAFT", reader)
-                self.assertIn("NOT_EDITORIAL_READY", reader)
+                self.assertIn("RESEARCH_MANUSCRIPT_DRAFT", notes)
+                self.assertIn("NOT_EDITORIAL_READY", notes)
 
         zurich_reader, zurich_notes = self.texts["zurich"].split("## Источниковедческий аппарат", 1)
         for fact in ("29 января 1523", "статью 38", "статьи 42", "Цвингли"):
