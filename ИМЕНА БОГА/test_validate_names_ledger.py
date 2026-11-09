@@ -1634,5 +1634,34 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("Römer 2011 lecture cannot merge Theodoret works" in e
                             for e in validate_source_access(d)))
 
+
+    def test_theodoret_exodus_source_cannot_invent_jewish_form(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-THEODORET-EXODUM-15-PG80-243-GREEK")
+        row["greekSourceWitness20261109"]["jewishReadingVisibleInThisDigitalExcerpt"] = True
+        self.assertTrue(any("truncated Theodoret Exodum Greek cannot prove unseen Jewish vowel form" in e
+                            for e in validate_source_access(d)))
+
+    def test_theodoret_compendium_praise_shaddai_not_lexical_etymology(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-THEODORET-COMPENDIUM-V3-PG83-460-GREEK")
+        row["greekCompendiumWitness20261109"]["hebrewEtymologyIndependentlyEstablished"] = True
+        self.assertTrue(any("Theodoret Compendium gives historical Shaddai gloss" in e
+                            for e in validate_source_access(d)))
+
+    def test_kinzig_original_print_witness_does_not_certify_manuscript_variants(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-KINZIG-PATRISTIC-TETRAGRAM-2008-P226227")
+        row["kinzigWitness20261109"]["printedGreekEditionManuscriptsIndependentlyCollated"] = True
+        self.assertTrue(any("Kinzig reports variant critical edition witnesses" in e
+                            for e in validate_source_access(d)))
+
+    def test_romer_published_slide_screenshot_is_not_manuscript_autopsy(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-ROMER-COLLEGE-DE-FRANCE-YHWH-2011")
+        row["reportedAcademicWitness20261109"]["pdfPageImageCrosscheck20261109"]["figureOrManuscriptAutopsy"] = True
+        self.assertTrue(any("Römer 2011 lecture cannot merge Theodoret works" in e
+                            for e in validate_source_access(d)))
+
 if __name__ == "__main__":
     unittest.main()
