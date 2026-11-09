@@ -721,11 +721,32 @@ def validate_source_access(sources: dict) -> list[str]:
         if rid == "SRC-DEIRALLA-STEINER-WAGEMAKERS-2019":
             figure = source.get("laterPublishedCombinationFigureAccess2019")
             if (not isinstance(figure, dict)
-                or figure.get("status") != "2019_SOURCE_CAPTIONS_AND_ARCHAEOLOGICAL_CONTEXT_VERIFIED_2019_IMAGE_PIXELS_NOT_AUTOPSIED_1967_1976_ORIGINAL_HOLD"
-                or figure.get("browserVisualResult") != "PUBLISHER_BOOKVIEWER_PRINT143_VIEWER144_TEXT_AND_FIGURE_CAPTIONS_RENDERED_BUT_IMAGES_NOT_VISIBLE_IN_2026_BROWSER_SESSION_NO_GLYPH_AUTOPSY"
+                or figure.get("status") != "PUBLISHER_2019_FIG5_16_5_17_PHOTO_PIXELS_RENDERED_IN_BOOKVIEWER_NO_INDEPENDENT_SHDYN_GLYPH_COLLATION_1967_1976_ORIGINAL_HOLD"
+                or figure.get("browserVisualResult") != "PUBLISHER_2019_PRINT143_VIEWER145_GENUINE_FIG5_16_5_17_PHOTO_PIXELS_RENDERED_LABELS_I_A_TO_I_D_AND_CORRECTION_ABOVE_FIRST_LINE_NO_SHDYN_COLLATION"
                 or figure.get("historicalImageIdentity") != "MODERN_2019_REPRODUCTION_NOT_IDENTIFIED_AS_PHOENIX1976_FIG42_OR_BRILL1976_PLATE_INDEPENDENTLY"
                 or "DOES_NOT_ISSUE_FILE_SPECIFIC_PHOTO_LICENSE" not in str(figure.get("rightsBoundary", ""))):
+
                 errors.append(f"{prefix}: publisher 2019 figure captions are not 1976 infrared glyph collation or image reuse license")
+
+            witness = figure.get("bookViewerDirectPhotoWitness20261109") if isinstance(figure, dict) else None
+            if (not isinstance(witness, dict)
+                or witness.get("publisherBookViewer") != "https://www.sidestone.com/bookviewer/9789088908736"
+                or witness.get("viewerPageIndex") != 145
+                or witness.get("printedPage") != 143
+                or witness.get("indexOffset") != 2
+                or witness.get("fig516") != "PHOTOGRAPHIC_BLACK_WHITE_PLASTER_FRAGMENT_MONTAGE_LABELS_I_A_I_B_I_C_I_D_WITH_PRINTED_LINE_NUMBERS"
+                or witness.get("fig517") != "PHOTOGRAPHIC_PLASTER_INSCRIPTION_CLOSE_UP_VISIBLE_AUTHOR_DESCRIBED_ABOVE_LINE_WORD_INSERTION"
+                or witness.get("captionCredit") != "PHOTO_DEIR_ALLA_PROJECT"
+                or witness.get("pixelsRendered") is not True
+                or witness.get("bothFigureCaptionsVerified") is not True
+                or any(witness.get(flag) is not False for flag in (
+                    "physicalFragmentsIndependentlyReidentified",
+                    "exactAncientLettersShdynIndependentlyVerified",
+                    "exactLine5And6GlyphReadingVerified",
+                    "original1976BrillPlatesInspected",
+                    "original1967Or1976InfraredIdentifiedAndMatched",
+                    "rightsForRepublishing2019FiguresConfirmed"))):
+                errors.append(f"{prefix}: Sidestone 2019 publisher photo pixels and print/viewer locator must not imply ancient shdyn collation or image rights")
         if rid == "SRC-IAA-DSS-4Q120-B503715-2015":
             photo = source.get("preliminaryBrowserVisualObservation20261108")
             if (source.get("url") != "https://www.deadseascrolls.org.il/explore-the-archive/image/B-503715"
