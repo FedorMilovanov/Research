@@ -100,8 +100,8 @@ class NantesDigitalProvenanceTests(unittest.TestCase):
         self.assertIn("RESPONSE_PENDING", request)  # historical, explicitly superseded
         for locator in (
             "https://archives.bge-geneve.ch/ark:/17786/vtac61f062330e0a126",
-            "/canvas%2F0%2F65",
-            "/canvas%2F0%2F18",
+            "%2Fcanvas%2F0%2F65",
+            "%2Fcanvas%2F0%2F18",
         ):
             with self.subTest(locator=locator):
                 self.assertIn(locator, request)
