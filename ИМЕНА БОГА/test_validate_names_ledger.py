@@ -1414,11 +1414,11 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("1976 journal article must retain exact erratum link" in e
                             for e in validate_source_access(d)))
 
-    def test_deir_alla_1976_erratum_unread_text_cannot_be_promoted(self) -> None:
+    def test_deir_alla_1976_erratum_primary_page_requires_direct_witness(self) -> None:
         d = copy.deepcopy(self.sources)
         row = next(x for x in d["records"] if x["id"] == "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3")
-        row["sourceObjectState"] = "FULL_TEXT_READ_AND_VERIFIED"
-        self.assertTrue(any("publisher erratum text cannot be claimed seen" in e
+        row["originalErratumTextVerified"] = False
+        self.assertTrue(any("original 1976 publisher erratum p87 must remain directly verified" in e
                             for e in validate_source_access(d)))
     def test_phoenix1976_ir_photo_caption_not_claimed_as_collation(self) -> None:
         d = copy.deepcopy(self.sources)
@@ -1461,11 +1461,11 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("later 1977 reported date correction missing or falsely promoted" in e
                             for e in validate_source_access(d)))
 
-    def test_1977_report_does_not_prove_original_1976_erratum_access(self) -> None:
+    def test_1977_report_cannot_replace_direct_1976_publisher_image(self) -> None:
         d = copy.deepcopy(self.sources)
         row = next(x for x in d["records"] if x["id"] == "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3")
-        row["originalErratumTextVerified"] = True
-        self.assertTrue(any("original 1976 erratum must remain unviewed" in e
+        row["originalErratumPageWitness20261109"]["imageUrl"] = "https://example.invalid/not-the-original"
+        self.assertTrue(any("original 1976 erratum corrects editorial headline only" in e
                             for e in validate_source_access(d)))
 
 
@@ -1579,6 +1579,21 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         row["numberingCrosswalk20261108"]["authorPdfCaptionWitness20261109"]["reprintRightsConfirmed"] = True
         self.assertTrue(any("4Q120 DJD editorial vs IAA museum-plate numbering" in e
                             for e in validate_source_access(data)))
+
+
+    def test_deir_alla_1976_corrected_centuries_not_sixth(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3")
+        row["originalErratumPageWitness20261109"]["correctedTitleCentury"] = "SIXTH_CENTURY_BCE"
+        self.assertTrue(any("original 1976 erratum corrects editorial headline only" in e
+                            for e in validate_source_access(d)))
+
+    def test_deir_alla_1976_editorial_correction_not_photo_license(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-HOFTIJZER-BALAAM-ERRATUM-1976-BA39-3")
+        row["originalErratumPageWitness20261109"]["photographicReusePermissionGranted"] = True
+        self.assertTrue(any("original 1976 erratum corrects editorial headline only" in e
+                            for e in validate_source_access(d)))
 
 if __name__ == "__main__":
     unittest.main()
