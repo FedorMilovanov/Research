@@ -38,6 +38,21 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("Jeremiah MT/LXX publisher crosswalk" in e
                             for e in validate_source_access(sources)))
 
+    def test_4q72_editors_restoration_not_misreported_as_extant_full_name(self) -> None:
+        sources = copy.deepcopy(self.sources)
+        rec = next(x for x in sources["records"] if x["id"] == "SRC-QUMRAN-DIGITAL-4Q72-JER33-2023")
+        rec["extantPrefix"] = "יהוה צדקנו"
+        rec["wholeHebrewNameAutopticallyRead"] = True
+        self.assertTrue(any("4Q72 visible letters versus restoration" in e
+                            for e in validate_source_access(sources)))
+
+    def test_4q72_langlois_original_photo_cannot_be_implicitly_approved(self) -> None:
+        sources = copy.deepcopy(self.sources)
+        rec = next(x for x in sources["records"] if x["id"] == "SRC-LANGLOIS-JEREMIAH-4Q72-2019")
+        rec["manuscriptPhotoIndependentlyCollated"] = True
+        self.assertTrue(any("Langlois original selected-page source" in e
+                            for e in validate_source_access(sources)))
+
     def test_current_research_corpora_pass_structure(self) -> None:
         self.assertEqual([], validate(self.baseline))
         self.assertEqual([], validate_extension(self.extension, self.baseline))

@@ -388,6 +388,8 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-VT-LIEBERMANN-JEREMIAH-2023": "ATTRIBUTED_JEREMIAH_DAVIDIC_NAME_TEXTUAL_VARIANTS_2023",
     "SRC-OTE-ERZBERGER-JER33-2013": "ATTRIBUTED_JEREMIAH_33_14_26_MT_OLD_GREEK_EXPANSION_AND_ROYAL_CITY_NAME_DEBATE_2013",
     "SRC-RAHLFS-JEREMIAH23-40": "PUBLISHER_EDITED_LXX_JEREMIAH_23_6_AND_CHAPTER_CROSSWALK",
+    "SRC-QUMRAN-DIGITAL-4Q72-JER33-2023": "EDITED_4Q72_JER33_16_20_FRAGMENT55II_READ_NOT_PHOTO",
+    "SRC-LANGLOIS-JEREMIAH-4Q72-2019": "ATTRIBUTED_SCHOLARLY_ANALYSIS_4Q72_MT_JER33_16_20_VS_OLD_GREEK",
     "SRC-NET-REV1-8": "ATTRIBUTED_TRANSLATION_CRITICAL_NOTES",
     "SRC-TABB-REVELATION22": "ATTRIBUTED_COMMENTARY_REVELATION_SPEAKER_INFERENCE",
     "SRC-DEIRALLA-SYMPOSIUM-1991-NYU": "DEIR_ALLA_CONTESTED_EARLY_INSCRIPTION_READING_AND_BIBLICAL_SHADDAY_RELATION",
@@ -509,6 +511,22 @@ def validate_source_access(sources: dict) -> list[str]:
             errors.append(f"{prefix}: unreviewed source id {rid}")
         if source.get("sourceRole") != EXPECTED_SOURCE_ROLES.get(rid):
             errors.append(f"{prefix}: source relevance/role changed without research review")
+        if rid == "SRC-QUMRAN-DIGITAL-4Q72-JER33-2023":
+            if (source.get("url") != "https://lexicon.qumran-digital.org/transcriptions/4Q72/2023-12-08/index.html"
+                    or source.get("fragmentLocator") != "55 ii"
+                    or source.get("passageRange") != "Jer 33:16–20"
+                    or source.get("extantPrefix") != "יהוה צד"
+                    or source.get("editorialCompletion") != "קנו"
+                    or source.get("transcriptionVersion") != "2023-12-08"
+                    or source.get("manuscriptPhotoInspected") is not False
+                    or source.get("wholeHebrewNameAutopticallyRead") is not False):
+                errors.append(f"{prefix}: 4Q72 visible letters versus restoration or manuscript autopsy falsified")
+        if rid == "SRC-LANGLOIS-JEREMIAH-4Q72-2019":
+            if (source.get("url") != "https://michaellanglois.org/medias/langlois-2019-the-book-of-jeremiahs-redaction-history-in-light-of-its-oldest-manuscripts.pdf"
+                    or source.get("selectedPagesVisuallyChecked") != [18, 19]
+                    or source.get("manuscriptPhotoIndependentlyCollated") is not False
+                    or source.get("originalCriticalApparatusRead") is not False):
+                errors.append(f"{prefix}: Langlois original selected-page source upgraded without evidence")
         if rid == "SRC-RAHLFS-JEREMIAH23-40":
             if (source.get("url") != "https://www.die-bibel.de/bibel/LXX/JER.23"
                     or source.get("additionalUrl") != "https://www.die-bibel.de/bibel/LXX/JER.40"

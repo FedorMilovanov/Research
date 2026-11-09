@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 88,
+    "sourceRecords": 90,
     "approvedForProduct": 0
   },
   "records": [
@@ -2853,7 +2853,72 @@
       },
       "exactGreekNameJer23_6": "Ιωσεδεκ",
       "directPublishedReadingVerifiedOn": "2026-11-10"
+    },
+    {
+      "id": "SRC-QUMRAN-DIGITAL-4Q72-JER33-2023",
+      "title": "Qumran-Digital scholarly edited transcription of 4Q72 (4QJer c), fragment 55 ii, Jeremiah 33:16–20, version 2023-12-08",
+      "creator": "Qumran-Digital project; revised Abegg-based scholarly transcription",
+      "year": 2023,
+      "url": "https://lexicon.qumran-digital.org/transcriptions/4Q72/2023-12-08/index.html",
+      "projectSiglaUrl": "https://lexicon.qumran-digital.org/faq/v1/en/index.html",
+      "objectType": "versioned_scholarly_edited_transcription_of_ancient_fragment_NOT_original_photograph",
+      "sourceRole": "EDITED_4Q72_JER33_16_20_FRAGMENT55II_READ_NOT_PHOTO",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "evidenceClass": "B1",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "sourceObjectState": "Original project edited transcript for 4Q72 fragment 55 ii lines 1-5 consulted directly on 2026-11-10; version 2023-12-08. Its first line begins יהוה צד[קנו ...], where unbracketed יהוה צד is in scholarly transcription and [קנו...] is editorial restoration. Project FAQ [א] denotes restored text, not physically surviving letters. Manuscript photograph, DJD XV original plates, independent paleographic reading, and original full formula not examined.",
+      "supportedUse": "State that edited Qumran transcript reports 4Q72 Jer33:16-20 and reports extant prefix יהוה צד; only the rest of צדקנו is restored in this location. It is direct access to an EDITED scholarly transcription of an ancient witness, not direct collation of the ancient artifact.",
+      "forbiddenUse": "Claim complete יהוה צדקנו is fully extant without editorial restoration, claim original 4Q72 physical fragments or photograph personally inspected, claim entire MT 33:14-26 verbatim proved by fragment, infer 4Q71 contains this passage, identify priority of MT vs Old Greek or grant rights to photos.",
+      "manuscriptId": "4Q72",
+      "legacyLabel": "4QJer-c",
+      "fragmentLocator": "55 ii",
+      "passageRange": "Jer 33:16–20",
+      "extantPrefix": "יהוה צד",
+      "editorialCompletion": "קנו",
+      "manuscriptPhotoInspected": false,
+      "wholeHebrewNameAutopticallyRead": false,
+      "transcriptionVersion": "2023-12-08"
+    },
+    {
+      "id": "SRC-LANGLOIS-JEREMIAH-4Q72-2019",
+      "title": "Michael Langlois, The Book of Jeremiah's Redaction History in Light of Its Oldest Manuscripts, Jeremiah in History and Tradition (2019), 9–31",
+      "creator": "Michael Langlois",
+      "year": 2019,
+      "url": "https://michaellanglois.org/medias/langlois-2019-the-book-of-jeremiahs-redaction-history-in-light-of-its-oldest-manuscripts.pdf",
+      "bibliographicUrl": "https://michaellanglois.org/publications/lhistoire-redactionnelle-du-livre-de-jeremie-a-la-lumiere-de-ses-plus-anciens-manuscrits-et-le-probleme-des-faux/",
+      "objectType": "original_scholarly_book_chapter_author_hosted_pdf_selected_print_pages",
+      "sourceRole": "ATTRIBUTED_SCHOLARLY_ANALYSIS_4Q72_MT_JER33_16_20_VS_OLD_GREEK",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "evidenceClass": "B1",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "sourceObjectState": "Original author-hosted PDF visually inspected at print p18-19 (PDF screenshot page index5) and directly read corresponding section 4Q72. Langlois observes Jer33:16-20 seem attested in 4Q72 in agreement with MT, unlike Old Greek, and describes 4Q72 as close to MT; he attributes manuscript evidence to Tov 1997. Full 2019 chapter and original 4Q72 photo and DJD XV not independently collated.",
+      "supportedUse": "Attributed support for 4Q72 preserving portions of Jer33:16-20 close to MT, conditional phrasing 'seem attested', comparison with absent Old Greek Jer40:16-20, and scholar's paleographic assessment. Distinguish this analysis from the Qumran-Digital edited transcription and original manuscript.",
+      "forbiddenUse": "Treat Langlois chapter as an original ancient manuscript photograph, use his estimated scroll dating as certain calendar date, infer that every verse 33:14-26 survives, claim a settled textual priority, or cite his discussion as personal critical codex collation.",
+      "printedPages": "9–31",
+      "selectedPagesVisuallyChecked": [
+        18,
+        19
+      ],
+      "manuscriptPhotoIndependentlyCollated": false,
+      "originalCriticalApparatusRead": false
     }
   ],
-  "auditRevision": "NG10_PUBLISHER_JER23_AND_LXX40_CROSSWALK_20261110"
+  "auditRevision": "NG10_4Q72_JER33_TRANSCRIPT_FRAGMENT55II_LANGLOIS_2019_20261110"
 }
