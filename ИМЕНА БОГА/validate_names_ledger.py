@@ -600,6 +600,20 @@ def validate_source_access(sources: dict) -> list[str]:
                     "manuscriptPhotoAutopsied",
                     "historicalPronunciationCertain"))):
                 errors.append(f"{prefix}: truncated Theodoret Exodum Greek cannot prove unseen Jewish vowel form or manuscript collation")
+        if rid == "SRC-THEODORET-EXODUM-15-PG80-243-GREEK":
+            alt = source.get("alternateGreekTranscription2006")
+            if (not isinstance(alt, dict)
+                or alt.get("url") != "https://www.matia.gr/pisth/pdf/pg_migne/Theodoretus_of_Cyrrhus_PG_80-84/Quaestiones_in_Octateuchum.pdf"
+                or alt.get("loc") != "QUAESTIONES_EXODUM_XV_PDF_TRANSCRIPTION_FOOTER41_LINES2504_2512"
+                or alt.get("samaritan") != "Ἰαβέ"
+                or alt.get("jewish") != "Ἰά"
+                or alt.get("textOnlyDirectlyRead") is not True
+                or any(alt.get(flag) is not False for flag in (
+                    "pageScreenshotVisuallyInspected",
+                    "modernCriticalApparatusCollated",
+                    "ancientManuscriptsCollated",
+                    "jewishFormUncontested"))):
+                errors.append(f"{prefix}: alternate Theodoret 2006 transcript not apparatus or ancient autopsy")
         if rid == "SRC-THEODORET-COMPENDIUM-V3-PG83-460-GREEK":
             w = source.get("greekCompendiumWitness20261109")
             if (not isinstance(w, dict)

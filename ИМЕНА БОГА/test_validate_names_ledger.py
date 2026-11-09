@@ -1642,6 +1642,21 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("truncated Theodoret Exodum Greek cannot prove unseen Jewish vowel form" in e
                             for e in validate_source_access(d)))
 
+
+    def test_alt_theodoret_2006_transcript_not_manuscript_apparatus(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-THEODORET-EXODUM-15-PG80-243-GREEK")
+        row["alternateGreekTranscription2006"]["modernCriticalApparatusCollated"] = True
+        self.assertTrue(any("alternate Theodoret 2006 transcript not apparatus" in e
+                            for e in validate_source_access(d)))
+
+    def test_alt_theodoret_2006_jewish_form_is_not_another_variant(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-THEODORET-EXODUM-15-PG80-243-GREEK")
+        row["alternateGreekTranscription2006"]["jewish"] = "Ἀϊά"
+        self.assertTrue(any("alternate Theodoret 2006 transcript not apparatus" in e
+                            for e in validate_source_access(d)))
+
     def test_theodoret_compendium_praise_shaddai_not_lexical_etymology(self) -> None:
         d = copy.deepcopy(self.sources)
         row = next(x for x in d["records"] if x["id"] == "SRC-THEODORET-COMPENDIUM-V3-PG83-460-GREEK")

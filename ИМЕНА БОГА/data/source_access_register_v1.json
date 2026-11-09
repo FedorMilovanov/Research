@@ -2445,9 +2445,9 @@
         "PUBLICATION_HOLD"
       ],
       "sourceRole": "THEODORET_EXODUM_XV_PG80_243_DIRECT_DIGITAL_GREEK_PARTIAL_CUTOFF_BEFORE_JEWISH_NAME",
-      "sourceObjectState": "2026-11-09 actual Greek original-language edited text of Theodoret Quaestiones in Exodum XV / Octateuchum 2.15 directly read in Sophia Scriptura source-text mode citing Migne PG 80 column 243. Text asserts Hebrew name has four letters, high-priest's gold plate, and Samaritan Ἰαβὲ; OCR transcript breaks exactly after Ἰουδαῖοι δὲ, before any Jewish name, with explicit truncation warning from site. Source text is a modern OCR transcription based on PG80, NOT actual 5th-century codex or independently collated printed critical apparatus. Published Greek quote in Kinzig 2008 p226 reproduces 'Ἰά', but his note120 reports wider variant Αἰά, plus ιαω/αεια; separate evidence is required before selecting Jewish reading as author-original. English translation on website is AI-produced and is NOT used as ancient text proof.",
-      "supportedUse": "Cite direct edited Greek Ἰαβὲ and section PG80 243 while explicitly noting the digital passage is truncated after Ἰουδαῖοι δὲ; present Jewish name only as readings reported by Kinzig's independently examined textual variants.",
-      "forbiddenUse": "Assert that the Sophia digital excerpt itself displays a Jewish divine-name variant, treat printed PG as original Theodoret autograph or definitive modern critical apparatus, derive Mosaic Hebrew vowels or LXX original practice from this later Christian text, claim Sophia AI translation authorizes rights.",
+      "sourceObjectState": "2026-11-09 actual Greek original-language edited text of Theodoret Quaestiones in Exodum XV / Octateuchum 2.15 directly read in Sophia Scriptura source-text mode citing Migne PG 80 column 243. Text asserts Hebrew name has four letters, high-priest's gold plate, and Samaritan Ἰαβὲ; OCR transcript breaks exactly after Ἰουδαῖοι δὲ, before any Jewish name, with explicit truncation warning from site. Source text is a modern OCR transcription based on PG80, NOT actual 5th-century codex or independently collated printed critical apparatus. Published Greek quote in Kinzig 2008 p226 reproduces 'Ἰά', but his note120 reports wider variant Αἰά, plus ιαω/αεια; separate evidence is required before selecting Jewish reading as author-original. English translation on website is AI-produced and is NOT used as ancient text proof. Separate alternate edited Greek PDF transcription, affiliated in its credit with University of the Aegean Digital Patrology (2006) and mirrored at matia.gr, was directly read as extracted Greek PDF text; immediately after 'ἰουδαῖοι δὲ' its line reads Ἰά (Samaritan Ἰαβέ). The PDF screenshot returned HTTP403, and no original manuscript/editorial apparatus was collated. This does NOT repair or extend the explicitly truncated Sophia OCR witness and variants remain disputed.",
+      "supportedUse": "Cite direct edited Greek Ἰαβὲ and section PG80 243 while explicitly noting the digital passage is truncated after Ἰουδαῖοι δὲ; present Jewish name only as readings reported by Kinzig's independently examined textual variants. With separately labelled 2006 mirrored digital edited Greek transcript, report Ἰά as an attested edited-text reading for the Jewish form, alongside Kinzig's variants, with source-specific access distinction.",
+      "forbiddenUse": "Assert that the Sophia digital excerpt itself displays a Jewish divine-name variant, treat printed PG as original Theodoret autograph or definitive modern critical apparatus, derive Mosaic Hebrew vowels or LXX original practice from this later Christian text, claim Sophia AI translation authorizes rights. Treat alternate 2006 PDF text extraction as screenshot verified, modern Fernández Marcos/Sáenz-Badillos critical apparatus or original manuscript; merge two independently distinct digital transcriptions or call Ἰά uncontested.",
       "greekSourceWitness20261109": {
         "greekSamForm": "Ἰαβὲ",
         "passage": "QUAESTIONES_EXODUM_15_PG80_COL243",
@@ -2457,6 +2457,18 @@
         "printedMigneCriticalApparatusCollated": false,
         "manuscriptPhotoAutopsied": false,
         "historicalPronunciationCertain": false
+      },
+      "alternateGreekTranscription2006": {
+        "url": "https://www.matia.gr/pisth/pdf/pg_migne/Theodoretus_of_Cyrrhus_PG_80-84/Quaestiones_in_Octateuchum.pdf",
+        "provenance": "University of the Aegean Digital Patrology edited Greek text (2006), mirrored as searchable PDF, not a modern critical manuscript apparatus",
+        "loc": "QUAESTIONES_EXODUM_XV_PDF_TRANSCRIPTION_FOOTER41_LINES2504_2512",
+        "samaritan": "Ἰαβέ",
+        "jewish": "Ἰά",
+        "textOnlyDirectlyRead": true,
+        "pageScreenshotVisuallyInspected": false,
+        "modernCriticalApparatusCollated": false,
+        "ancientManuscriptsCollated": false,
+        "jewishFormUncontested": false
       }
     },
     {
