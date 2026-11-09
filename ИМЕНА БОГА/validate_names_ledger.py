@@ -614,6 +614,20 @@ def validate_source_access(sources: dict) -> list[str]:
                     "ancientManuscriptsCollated",
                     "jewishFormUncontested"))):
                 errors.append(f"{prefix}: alternate Theodoret 2006 transcript not apparatus or ancient autopsy")
+        if rid == "SRC-THEODORET-EXODUM-15-PG80-243-GREEK":
+            ed = source.get("criticalEditionAcquisition20261109")
+            first = ed.get("firstCriticalEdition1979") if isinstance(ed, dict) else None
+            later = ed.get("revisedGreekEdition2007") if isinstance(ed, dict) else None
+            if (not isinstance(first, dict) or not isinstance(later, dict)
+                or first.get("reviewScope") != "GAUTIER_1980_P293_SECONDARY_REPORT_53_CONSULTED_31_SELECTED_NO_STEMMA"
+                or first.get("directCriticalApparatusRead") is not False
+                or first.get("q15VariantIndependentlyEstablished") is not False
+                or later.get("volume") != 1
+                or later.get("exodusPrintedPageRange") != [222, 345]
+                or later.get("institutionalFullTextAccessObtained") is not False
+                or later.get("actualQ15GreekTextOrVariantNotesRead") is not False
+                or later.get("ancientManuscriptsIndependentlyCollated") is not False):
+                errors.append(f"{prefix}: 1979 review and 2007 catalogue are not direct Theodoret QXV critical collation")
         if rid == "SRC-THEODORET-COMPENDIUM-V3-PG83-460-GREEK":
             w = source.get("greekCompendiumWitness20261109")
             if (not isinstance(w, dict)

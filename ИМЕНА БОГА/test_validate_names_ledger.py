@@ -1657,6 +1657,13 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("alternate Theodoret 2006 transcript not apparatus" in e
                             for e in validate_source_access(d)))
 
+    def test_theodoret_1979_review_cannot_become_direct_q15_collation(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-THEODORET-EXODUM-15-PG80-243-GREEK")
+        row["criticalEditionAcquisition20261109"]["firstCriticalEdition1979"]["q15VariantIndependentlyEstablished"] = True
+        self.assertTrue(any("1979 review and 2007 catalogue are not direct Theodoret QXV critical collation" in e
+                            for e in validate_source_access(d)))
+
     def test_theodoret_compendium_praise_shaddai_not_lexical_etymology(self) -> None:
         d = copy.deepcopy(self.sources)
         row = next(x for x in d["records"] if x["id"] == "SRC-THEODORET-COMPENDIUM-V3-PG83-460-GREEK")

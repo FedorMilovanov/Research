@@ -2469,6 +2469,39 @@
         "modernCriticalApparatusCollated": false,
         "ancientManuscriptsCollated": false,
         "jewishFormUncontested": false
+      },
+      "criticalEditionAcquisition20261109": {
+        "firstCriticalEdition1979": {
+          "editor": "Natalio Fernández Marcos and Ángel Sáenz-Badillos",
+          "publisher": "Madrid CSIC",
+          "series": "Textos y estudios Cardenal Cisneros 17",
+          "officialBibliography": "https://www.biblindex.org/index.php/en/work-editions/quaestiones-in-octateuchum/textos-y-estudios-cardenal-cisneros-17",
+          "contemporaryReview": "https://www.persee.fr/doc/rebyz_0766-5598_1980_num_38_1_2115_t1_0292_0000_2?pageId=T1_293",
+          "reviewScope": "GAUTIER_1980_P293_SECONDARY_REPORT_53_CONSULTED_31_SELECTED_NO_STEMMA",
+          "reviewInterpretation": "Paul Gautier's published opinion, not our manuscript count: 53 manuscripts considered, 31 selected, numerical sigla and absence of stemma criticized",
+          "directCriticalApparatusRead": false,
+          "q15VariantIndependentlyEstablished": false,
+          "accessState": "CATALOG_AND_REVIEW_ONLY"
+        },
+        "revisedGreekEdition2007": {
+          "editor": "John F. Petruccione",
+          "translator": "Robert C. Hill",
+          "publisher": "Catholic University of America Press",
+          "year": 2007,
+          "volume": 1,
+          "exodusPrintedPageRange": [
+            222,
+            345
+          ],
+          "jstor": "https://www.jstor.org/stable/j.ctt32b24p",
+          "exodusDoi": "https://doi.org/10.2307/j.ctt32b24p.10",
+          "introScope": "AUTHOR_INTRO_PAGES_LVII_LXXXVI_EDITIO_MINOR_IMPROVES_1979_PREVIEW_ONLY",
+          "institutionalFullTextAccessObtained": false,
+          "actualQ15GreekTextOrVariantNotesRead": false,
+          "ancientManuscriptsIndependentlyCollated": false,
+          "accessState": "PUBLISHER_CATALOG_AND_INTRO_PREVIEW_ONLY"
+        },
+        "sourceBoundary": "Neither 1979 nor 2007 actual Q XV Greek apparatus read, 53/31 numbers belong to Gautier review; older PG80 and alternative 2006 digital Greek transcript do not certify preferred author-original reading."
       }
     },
     {
