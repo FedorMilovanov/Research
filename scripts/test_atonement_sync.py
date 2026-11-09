@@ -240,9 +240,11 @@ class ActualSynchronizationTests(unittest.TestCase):
         ):
             with self.subTest(marker=marker):
                 self.assertIn(marker, text)
-        self.assertIn("A2 в узком месте", text)
-        self.assertIn("B1", text)
-        self.assertIn("**A2 scoped**", text)
+        self.assertIn("A1 в узком месте", text)
+        self.assertIn("COARSE_LOCATOR_ONLY", text)
+        self.assertIn("UNVERIFIED_TRANSCRIPTION", text)
+        self.assertNotIn("**B1**", text)
+        self.assertIn("**A1 scoped**", text)
         self.assertIn("DAVENANT_1650_THREE_PRINT_LOCI_VERIFIED", text)
         self.assertIn("DABNEY_FULL_BOOK_COLLATION_HOLD", text)
 
