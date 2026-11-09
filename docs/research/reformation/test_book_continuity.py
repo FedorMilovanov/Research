@@ -54,6 +54,20 @@ class BookContinuityTests(unittest.TestCase):
         self.assertEqual(actual, set(PARTS[1:-1]),
                          "Do not silently create or omit a thirteenth historical chapter")
 
+    def test_all_fourteen_readers_have_no_operational_status_prologue(self):
+        """The book allows prose-first or section-first openings, but no status scaffolding."""
+        for name, content in self.texts.items():
+            with self.subTest(part=name):
+                self.assertRegex(content, r"\A# [^\n]+\n\n")
+                reader, apparatus = content.split("## Источниковедчес", 1)
+                self.assertNotIn("**Статус:**", reader)
+                self.assertNotIn("RESEARCH_MANUSCRIPT_DRAFT", reader)
+                self.assertNotIn("## Рабочий текст", reader)
+                self.assertNotIn("## Исторический рассказ", reader)
+                for status in ("RESEARCH_MANUSCRIPT_DRAFT", "NOT_EDITORIAL_READY",
+                               "PUBLICATION_HOLD"):
+                    self.assertIn(status, apparatus)
+
     def test_all_thirteen_forward_transitions_in_reader_text(self):
         for src, dest in zip(PARTS, PARTS[1:]):
             reader = self.texts[src].split("## Источниковедчес", 1)[0]
