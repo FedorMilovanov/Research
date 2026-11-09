@@ -1035,13 +1035,13 @@
       "title": "Aaron Valdizan, The Significance of the Divine Name in Peter’s Pentecost Sermon, TMSJ 35/2, 257–272",
       "creator": "Aaron Valdizan",
       "url": "https://tms.edu/wp-content/uploads/2024/12/TMSJ-35.2-rev.11.24.pdf",
-      "objectType": "published_scholarly_article_title_abstract_and_selected_pages",
+      "objectType": "published_scholarly_article_publisher_selected_original_argument_and_conclusion",
       "sourceRole": "ATTRIBUTED_ACTS2_YHWH_KYRIOS_CHRISTOLOGY_2024",
       "printedPages": "257–272",
       "pdfStartPageZeroBased": 109,
-      "sourceObjectState": "Original publisher PDF physical page 109 (printed 257) and abstract inspected; subsequent full argument and NT textual apparatus not critically reviewed.",
-      "supportedUse": "Attribute Valdizan argument that Peter's Acts2:14–36 applies Hebrew YHWH passages to Jesus through Greek kyrios; check quotations and original editions independently",
-      "forbiddenUse": "Conflate Greek κύριος with identical Hebrew יהוה orthography; treat single abstract as critical NT manuscript evidence or license for long quotes",
+      "sourceObjectState": "Official TMSJ35/2 PDF pp257-272 zero-based109-124. Original page images 257/265/271/272 and substantive texts of Joel2:32->Acts2:21, Psalm16, Psalm110:1, conclusion directly reviewed. Author's two referents vs one Greek kyrios thesis attributed, not a Greek manuscript collation or consensus. Printed p271 reference 'Joel 2:23' in Creator YHWH phrase seems inconsistent with repeated Joel2:32 invocation citation (2:23 is rain), not silently corrected; request editorial corroboration.",
+      "supportedUse": "Attribute Valdizan argument that Peter's Acts2:14–36 applies Hebrew YHWH passages to Jesus through Greek kyrios; check quotations and original editions independently Publisher original pp257-272 selected readings and Hebrew MT Joel2:23,2:32,Ps110:1 verified, attributed distinction 'YHWH' versus 'my lord' and more than one referent of kyrios across Acts2.",
+      "forbiddenUse": "Conflate Greek κύριος with identical Hebrew יהוה orthography; treat single abstract as critical NT manuscript evidence or license for long quotes Treat the title kyrios as literally identical spelling to יהוה, collapse Father/Son as same referent in each quoted line, silently change author's questionable printed Joel2:23 to Joel2:32, or claim all Greek manuscript variants collated.",
       "year": 2024,
       "evidenceClass": "B1",
       "criticalEditionCollated": false,
@@ -1054,7 +1054,43 @@
       ],
       "accessState": "PARTIAL_OBJECT",
       "locatorState": "EXACT_LOCATOR_VERIFIED",
-      "licenseScope": "TMSJ printing rights: classroom/church free copies up to 100 with source marking as specified; any other reproduction requires publisher permission. No automatic Product reprint."
+      "licenseScope": "TMSJ printing rights: classroom/church free copies up to 100 with source marking as specified; any other reproduction requires publisher permission. No automatic Product reprint.",
+      "articleReview20261109": {
+        "printedPageRange": [
+          257,
+          272
+        ],
+        "pdfZeroBasedPageRange": [
+          109,
+          124
+        ],
+        "publisherPdf": "https://tms.edu/wp-content/uploads/2024/12/TMSJ-35.2-rev.11.24.pdf",
+        "publisherArticleTextSelectedSectionsRead": true,
+        "originalImagesInspectedPrintedPages": [
+          257,
+          265,
+          271,
+          272
+        ],
+        "examinedSections": [
+          "JOEL2_32_HEBREW_YHWH_QUOTED_AS_GREEK_KYRIOS_IN_ACTS2_21",
+          "PS16_8_11_GOD_SPEAKER_DISTINCT_FROM_MESSIAH_IN_AUTHORS_INTERPRETATION",
+          "PS110_1_YHWH_VS_LADONI_SEPARATE_HEBREW_REFERENTS_IN_ACTS2_34_35",
+          "PUBLISHED_271_JOEL2_23_SUSPECTED_LOCATOR_INCONSISTENCY_WITH_RECURRING_2_32"
+        ],
+        "authorChristologicalInterpretation": "PAUL_AND_PETER_APPLICATION_OF_KYRIOS_BOTH_DIVINE_NAME_AND_MASTER_TO_JESUS_SUBJECT_TO_LOCAL_ROLE",
+        "originalHebrewJoelAndPs110DigitallyChecked": true,
+        "variantApparatusAndAncientManuscriptsCollated": false,
+        "everyQuotedScholarIndependentlyReviewed": false,
+        "externalScholarlyReviewAccepted": false,
+        "suspectedCitationError": {
+          "printedPage": 271,
+          "exactPublishedLocator": "Joel 2:23",
+          "contextualProposedLocator": "Joel 2:32",
+          "status": "SOURCE_LOCATOR_ANOMALY_NEEDS_EDITORIAL_CONFIRMATION_NOT_SILENTLY_REWRITTEN",
+          "originalHebrewContext": "JOEL2_23_RAIN_AND_REJOICING_JOEL2_32_INVOCATION_OF_YHWH"
+        }
+      }
     },
     {
       "id": "SRC-TMSJ-CHOU-TRANSLATION-2024",

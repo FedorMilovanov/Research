@@ -742,7 +742,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "2026-11-09 WAVE2: Chou TMSJ35/1 pp5-26 (PDF0-based6-27): selected original author's argument and conclusion read; advocates formal equivalence with translator/expositor distinct responsibilities, addresses dynamic equivalence and history, not general academic consensus or all NT quote variation. Barrick TMSJ35/1 pp45-52 (PDF0-based46-53): selected original claims Neh8 public Aramaic translation and exposition, but MT Neh8:8 mephorash allows 'clearly / explaining / translating' and NET translator notes contest necessity of Aramaic inference. No new source IDs, 86 sources, 264 corpus tests. NG08 and NG09 remain IN_PROGRESS because other original grammar and lecture audio/video not reviewed. Next target Valdizan Acts2 TMSJ35/2 pp257-272, MT/LXX cited texts and critical NT distinctions; external scholarly review, manuscript collations, rights/Product all zero. Prior 29afe487 six CI success; wave1 f6f4244 exact CI not yet terminal on this read, do not presume 6/6.",
+  "nextAction": "2026-11-09 WAVE3 Valdizan Acts2 original TMSJ35/2 pp257-272 (PDF zero109-124) read selected primary publisher sections and screenshots of printed257,265,271,272. Author differentiates Joel2:32 YHWH name as kyrios in Acts2:21, Psalm16 distinction of God from Messiah in David speech, Psalm110:1 Hebrew YHWH vs l'adoni as distinct referents rendered kyrios, concluding christological two-sense strategy. Original printed p271 says 'Joel 2:23' in a summarizing expression although recurrent source passage is Joel2:32; MT Joel2:23 is rain/rejoicing, so mark SOURCE_LOCATOR_ANOMALY, not silent emendation or correction certified. No full ancient Greek MSS/BHS apparatus or independent scholarly audit, source PARTIAL_OBJECT. Original Chou and Barrick wave2 and Valdizan Ex3 wave1 already integrated; no new source ID, sources86, ledger tests264. Next independent priority NG04/05 critical apparatus access, NG12 photos and Shadday competing scholarship; no more bibliographic busywork. Prior exact 29afe487 six checks success; later heads require exact CI, no merge/rights/Product publication.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -779,7 +779,7 @@
         "NG-05"
       ],
       "printedPages": "257–272",
-      "status": "TITLE_ABSTRACT_CHECKED_FULL_READING_PENDING"
+      "status": "PUBLISHER_PDF_SELECTED_ORIGINAL_INTERTEXT_AND_CONCLUSION_READ_AUTHOR_LOCATOR_ANOMALY_OPEN"
     },
     {
       "sourceId": "SRC-TMSJ-CHOU-TRANSLATION-2024",
