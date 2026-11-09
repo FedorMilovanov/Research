@@ -98,6 +98,14 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("IAA archive metadata or unearned pixel" in e
                             for e in validate_source_access(sources)))
 
+    def test_4q72_2025_same_project_version_cannot_grant_iaa_photo_rights(self) -> None:
+        sources = copy.deepcopy(self.sources)
+        record = next(x for x in sources["records"] if x["id"] == "SRC-QUMRAN-DIGITAL-4Q72-JER33-2023")
+        record["independentAncientManuscriptFromVersion"] = True
+        record["photoReusePermissionFromEdition"] = True
+        self.assertTrue(any("4Q72 visible letters versus restoration" in e
+                            for e in validate_source_access(sources)))
+
     def test_current_research_corpora_pass_structure(self) -> None:
         self.assertEqual([], validate(self.baseline))
         self.assertEqual([], validate_extension(self.extension, self.baseline))

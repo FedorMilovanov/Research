@@ -523,7 +523,18 @@ def validate_source_access(sources: dict) -> list[str]:
                     or source.get("editorialCompletion") != "קנו"
                     or source.get("transcriptionVersion") != "2023-12-08"
                     or source.get("manuscriptPhotoInspected") is not False
-                    or source.get("wholeHebrewNameAutopticallyRead") is not False):
+                    or source.get("wholeHebrewNameAutopticallyRead") is not False
+                    or source.get("comparisonVersion") != "2025-03-11"
+                    or source.get("comparisonUrl") != "https://forum.qumran-digital.org/transcriptions/4Q72/2025-03-11/index.html"
+                    or source.get("comparisonKind") != "SAME_SCHOLARLY_PROJECT_VERSION_NOT_INDEPENDENT_WITNESS"
+                    or source.get("fiveLineComparisonStatus") != "DIRECT_RENDERED_TEXT_5_OF_5_IDENTICAL_WITH_2023_BASE"
+                    or source.get("independentAncientManuscriptFromVersion") is not False
+                    or source.get("independentPhotoLetterCollation") is not False
+                    or source.get("line1EditorRestorationPreserved") is not True
+                    or source.get("editionTextLicenseNotice") != "CC BY-SA 4.0 (Qumran-Digital page copyright footer)"
+                    or source.get("editionTextLicenseScope") != "PROJECT_PUBLISHED_EDITION_ONLY_NOT_IAA_PHOTOGRAPH_NOT_LICENSE_TO_THIRD_PARTY_PARALLEL_TEXT"
+                    or source.get("photoReusePermissionFromEdition") is not False
+                    or source.get("licenseNotAutomaticallyProductApproved") is not True):
                 errors.append(f"{prefix}: 4Q72 visible letters versus restoration or manuscript autopsy falsified")
         if rid == "SRC-LANGLOIS-JEREMIAH-4Q72-2019":
             if (source.get("url") != "https://michaellanglois.org/medias/langlois-2019-the-book-of-jeremiahs-redaction-history-in-light-of-its-oldest-manuscripts.pdf"
