@@ -1508,6 +1508,13 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                             for e in validate_source_access(d)))
 
 
+    def test_tmsj_chou_partial_reading_cannot_claim_ancient_mss_collation(self) -> None:
+        d = copy.deepcopy(self.sources)
+        row = next(x for x in d["records"] if x["id"] == "SRC-TMSJ-CHOU-DANIEL-2024")
+        row["originalReview20261109"]["ancientAramaicCriticalApparatusRead"] = True
+        self.assertTrue(any("Chou published selected pages are not critical ancient manuscript collation" in err
+                            for err in validate_source_access(d)))
+
     def test_4q120_commons_pd_label_does_not_license_iaa_photo(self) -> None:
         d = copy.deepcopy(self.sources)
         row = next(x for x in d["records"] if x["id"] == "SRC-IAA-DSS-4Q120-B503715-2015")

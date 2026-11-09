@@ -13,10 +13,10 @@
     "extensionRecords": 13,
     "contextAttestations": 105,
     "sourceRegisterEntries": 86,
-    "regressionTests": 263,
+    "regressionTests": 264,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PREVIOUS_0F1AF5C_EXACT_6_OF_6_SUCCESS_NEW_4Q120_PHOTO_ID_AND_RIGHTS_SHA_NEEDS_EXACT_CI",
+    "allSixCiChecks": "PREVIOUS_29AFE487_SIX_OF_SIX_SUCCESS_NEW_TMSJ_REVIEW_SHA_REQUIRES_EXACT_CI",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "0f1af5c3d239a6a5887c26005829869d1de542c9"
+    "lastConfirmedAllSixChecksSha": "29afe487803c71df76d2c2275195b7815d4c3412"
   },
   "allowedStatuses": [
     "DONE",
@@ -742,7 +742,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "2026-11-09. De Gruyter Vasileiadis article DOI 10.2478/opth-2014-0006 canonical publisher date 2015-01-29, despite 2014 masthead in mirrored full text. Appendix B printed p84 entry04 names 4Q120 editorial fragment20 photo B-298692; official IAA B-503715 is different archive photo ID labelled Plate378 Frag15. B-298692 web link did not open this run, physical image relation unverified; Commons 522x338 derivative uses source B-298692 and claims PD, not legal clearance of different IAA photo B-503715. Need licensed original DJD IX1992 pp167-186 and plates XXXIX-XLI and photographic ID concordance, not speculation from low-res thumbnail. NG12 original Phoenix22 1976 PDF remains HTTP503 and local source download DNS blocked; original Brill1976 p16,173-178 and photo plates remain blocked. 86 sources 263 core tests, 0 ancient critical collations, no independent scholarly or rights approvals, drafts unpublished. Prior exact 0f1af5c 6/6 SUCCESS; new SHA requires own. Do not merge, publish, create branch or modify Product.",
+  "nextAction": "2026-11-09 WAVE1: Valdizan TMSJ35/1 printed53-74 (PDF zero54-75), selected publisher-original syntax/semantics and conclusion checked; author favours actively present Qal and keeping personal name in translation but this is no settled original pronunciation. Chou Daniel7 TMSJ35/2 printed153-178 (PDF zero5-30) selected argument and images read; author Messiah Son of Man distinct participant from Ancient of Days, opposes collective/angel readings; independent Aramaic textual apparatus not read. Existing TMSJ13 and Reader02 editorial notes revised; source entries still only PARTIAL_OBJECT; 86 sources, 264 core tests, 0 critical MSS collations, 0 outside scientific/rights/Product approvals. New SHA requires CI, prior 29afe487 6/6 SUCCESS. Next read another bounded primary scholarly paper Chou translations or Barrick; retain NG04/05/10/12 HOLD and no site/branch/merge changes.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -769,7 +769,7 @@
         "NG-05"
       ],
       "printedPages": "53–74",
-      "status": "TITLE_ABSTRACT_CHECKED_FULL_READING_PENDING"
+      "status": "PUBLISHER_ORIGINAL_SELECTED_ARGUMENT_AND_CONCLUSION_READ_FOOTNOTES_PENDING"
     },
     {
       "sourceId": "SRC-TMSJ-VALDIZAN-ACTS2-2024",
@@ -805,8 +805,8 @@
       "taskIds": [
         "NG-10"
       ],
-      "printedPages": null,
-      "status": "CATALOG_ONLY_EXACT_PAGINATION_PENDING"
+      "printedPages": "153–178",
+      "status": "PUBLISHER_ORIGINAL_SELECTED_PAGES_READ_CRITICAL_REVIEW_PENDING"
     },
     {
       "sourceId": "SRC-VT-LIEBERMANN-JEREMIAH-2023",

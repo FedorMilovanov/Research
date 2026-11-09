@@ -988,13 +988,13 @@
       "title": "Aaron Valdizan, The Significance of the Divine Name: An Analysis of Exodus 3:14–15, TMSJ 35/1, 53–74",
       "creator": "Aaron Valdizan",
       "url": "https://tms.edu/wp-content/uploads/2024/11/TMSJ-35.1-rev.11.24.pdf",
-      "objectType": "published_scholarly_article_title_abstract_and_selected_pages",
+      "objectType": "published_scholarly_article_publisher_selected_original_sections",
       "sourceRole": "ATTRIBUTED_EXODUS3_DIVINE_NAME_TRANSLATION_2024",
       "printedPages": "53–74",
       "pdfStartPageZeroBased": 54,
-      "sourceObjectState": "Original publisher PDF physical page 54, printed 53, and abstract directly inspected. Remaining full article and referenced earlier scholarly work not yet read/collated.",
-      "supportedUse": "Attribute Valdizan 2024 thesis on YHWH personal name and Ex3:14–15 and original bibliography Allen P. Ross 2003 pp323–339 for Ex6:3 question",
-      "forbiddenUse": "Treat his proposed pronunciation/translation as the only scholarly result or an ancient manuscript; claim fully read all 22 pages; republish the copyrighted article outside publisher's terms",
+      "sourceObjectState": "Publisher PDF 35/1 printed53-74, zero-based54-75, original text accessible. Selected argument and conclusion on printed57-64,68-74 reviewed, screenshots of original print pp53,73-74; Valdizan favours dynamic active-presence Qal view against causative/static alternatives and prefers rendering personal YHWH. Full references and critical ancient manuscripts not independently verified; stay PARTIAL_OBJECT.",
+      "supportedUse": "Attribute Valdizan 2024 thesis on YHWH personal name and Ex3:14–15 and original bibliography Allen P. Ross 2003 pp323–339 for Ex6:3 question Selected original paper semantics and translator proposal reviewed, attributed to Valdizan not anonymous consensus.",
+      "forbiddenUse": "Treat his proposed pronunciation/translation as the only scholarly result or an ancient manuscript; claim fully read all 22 pages; republish the copyrighted article outside publisher's terms Do not present dynamic derivation or preserving name in all translations as universally proven from manuscript autopsy.",
       "year": 2024,
       "evidenceClass": "B1",
       "criticalEditionCollated": false,
@@ -1007,7 +1007,28 @@
       ],
       "accessState": "PARTIAL_OBJECT",
       "locatorState": "EXACT_LOCATOR_VERIFIED",
-      "licenseScope": "TMSJ printing rights: classroom/church free copies up to 100 with source marking as specified; any other reproduction requires publisher permission. No automatic Product reprint."
+      "licenseScope": "TMSJ printing rights: classroom/church free copies up to 100 with source marking as specified; any other reproduction requires publisher permission. No automatic Product reprint.",
+      "originalReview20261109": {
+        "articlePrintedPages": [
+          53,
+          74
+        ],
+        "pdfZeroBasedPages": [
+          54,
+          75
+        ],
+        "selectedPublisherArgumentRead": true,
+        "selectedPageImages": [
+          54,
+          74
+        ],
+        "sourceTextAvailableInPublisherPdf": true,
+        "theme": "EXODUS3_IDEM_PER_IDEM_DYNAMIC_ACTIVE_PRESENCE_OVER_CAUSATIVE_OR_ONTOLOGICAL_VIEWS",
+        "authorTranslationRecommendation": "RETAIN_YHWH_PERSONAL_NAME",
+        "independentAncientApparatusCollated": false,
+        "externalReferencesCheckedExhaustively": false,
+        "universalScholarlyConsensus": false
+      }
     },
     {
       "id": "SRC-TMSJ-VALDIZAN-ACTS2-2024",
@@ -1092,25 +1113,48 @@
       "title": "Abner Chou, All That Is In a Name: Daniel’s Deliberate Christology and the Concept of the Son of Man, TMSJ 35/2",
       "creator": "Abner Chou",
       "url": "https://tms.edu/wp-content/uploads/2024/12/TMSJ-35.2-rev.11.24.pdf",
-      "objectType": "published_scholarly_article_publisher_contents_only",
+      "objectType": "published_scholarly_article_publisher_selected_original_sections",
       "sourceRole": "ATTRIBUTED_DANIEL7_CHRISTOLOGY_JOURNAL_CATALOG_2024",
-      "accessState": "CATALOG_ONLY",
-      "locatorState": "COARSE_LOCATOR_ONLY",
-      "sourceObjectState": "Publisher official issue contents confirms Abner Chou paper title. Full article, article pagination and textual arguments NOT read or verified; no independent manuscript collation.",
-      "supportedUse": "Queue author and title for future independent evaluation of Daniel7 Aramaic Old of Days and son-of-man narrative roles",
-      "forbiddenUse": "Claim exact page numbers, approved translation, or that identity of the two Daniel7 figures is already established",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "sourceObjectState": "Publisher PDF 35/2 printed153-178, physical zero-based5-30. Pages153,172,178 visually reviewed and text selected pp157-168,171-178 read. Author argues Daniel7 individual messianic Son of Man, distinct as scene participant from Ancient of Days but sharing divine glory; corporate/angel options considered by author, not independently collated. RIGHTS/RESEARCH HOLD.",
+      "supportedUse": "Queue author and title for future independent evaluation of Daniel7 Aramaic Old of Days and son-of-man narrative roles Primary publisher article selected argument reviewed with precise printed pages; author confessional interpretation rather than established Aramaic linguistic consensus.",
+      "forbiddenUse": "Claim exact page numbers, approved translation, or that identity of the two Daniel7 figures is already established Do not identify 'Ancient of Days' and 'Son of Man' as the same scene participant or assert external scholarly approval.",
       "year": 2024,
       "evidenceClass": "B1",
       "criticalEditionCollated": false,
       "rightsState": "PERMISSION_REQUIRED",
       "publicationState": "BLOCKED",
       "holds": [
-        "LOCATOR_HOLD",
         "EVIDENCE_HOLD",
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "licenseScope": "TMSJ printing rights: classroom/church free copies up to 100 with source marking as specified; any other reproduction requires publisher permission. No automatic Product reprint."
+      "licenseScope": "TMSJ printing rights: classroom/church free copies up to 100 with source marking as specified; any other reproduction requires publisher permission. No automatic Product reprint.",
+      "printedPages": "153–178",
+      "pdfStartPageZeroBased": 5,
+      "pdfEndPageZeroBased": 30,
+      "originalReview20261109": {
+        "articlePrintedPages": [
+          153,
+          178
+        ],
+        "pdfZeroBasedPages": [
+          5,
+          30
+        ],
+        "pageImagesInspected": [
+          153,
+          172,
+          178
+        ],
+        "selectedOriginalArticleSectionsRead": true,
+        "authorThesis": "SON_OF_MAN_INDIVIDUAL_MESSIAH_DISTINCT_FROM_ANCIENT_OF_DAYS",
+        "competingExplanations": "CORPORATE_SAINTS_AND_ANGEL_IDENTITY",
+        "ancientAramaicCriticalApparatusRead": false,
+        "allCitedSourceArgumentsIndependentlyReviewed": false,
+        "assertsSameNarrativePersonAsAncientOfDays": false
+      }
     },
     {
       "id": "SRC-VT-LIEBERMANN-JEREMIAH-2023",

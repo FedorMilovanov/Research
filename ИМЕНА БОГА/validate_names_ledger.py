@@ -1128,11 +1128,20 @@ def validate_source_access(sources: dict) -> list[str]:
                 source.get("pdfStartPageZeroBased") != 109 or
                 source.get("accessState") != "PARTIAL_OBJECT"):
                 errors.append(f"{prefix}: Valdizan Acts2 reviewed title page claim overreached")
-        if rid == "SRC-TMSJ-CHOU-DANIEL-2024" and (
-            source.get("accessState") != "CATALOG_ONLY" or
-            source.get("locatorState") != "COARSE_LOCATOR_ONLY"
-        ):
-            errors.append(f"{prefix}: Chou Daniel paper cannot claim full read on publisher table of contents")
+        if rid == "SRC-TMSJ-CHOU-DANIEL-2024":
+            review = source.get("originalReview20261109")
+            if (source.get("accessState") != "PARTIAL_OBJECT"
+                or source.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+                or source.get("printedPages") != "153–178"
+                or source.get("pdfStartPageZeroBased") != 5
+                or source.get("pdfEndPageZeroBased") != 30
+                or not isinstance(review, dict)
+                or review.get("articlePrintedPages") != [153, 178]
+                or review.get("pageImagesInspected") != [153, 172, 178]
+                or review.get("ancientAramaicCriticalApparatusRead") is not False
+                or review.get("allCitedSourceArgumentsIndependentlyReviewed") is not False
+                or review.get("assertsSameNarrativePersonAsAncientOfDays") is not False):
+                errors.append(f"{prefix}: Chou published selected pages are not critical ancient manuscript collation")
         if rid == "SRC-SUCHARD-ELOHIM-2025":
             if (source.get("evidenceClass") != "B1" or
                 source.get("rightsState") != "PUBLICATION_ELIGIBLE" or
