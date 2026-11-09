@@ -393,6 +393,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-DJD-XV-TOV-4QJERC-1997": "TOV_DJD_XV_4QJERC_PRIMARY_EDITED_INTRO_TABLES_NOT_PLATE_AUTOPSY",
     "SRC-DSS-REED-FASC7-4Q72-PAM43101": "ARCHIVAL_PAM_43_101_MUSEUM_PLATE_245_4Q72_COLUMNS_XXIV_XXV",
     "SRC-IAA-B360205-4Q72-PL245F6": "IAA_B360205_PLATE245_FRAG6_PHOTO_CATALOG_ONLY",
+    "SRC-MAIER-IECOT-JEREMIAH-1-25-2025": "SCHOLARLY_2025_MANUSCRIPT_SIGLA_CROSSWALK_4Q72_VS_4Q72A",
     "SRC-NET-REV1-8": "ATTRIBUTED_TRANSLATION_CRITICAL_NOTES",
     "SRC-TABB-REVELATION22": "ATTRIBUTED_COMMENTARY_REVELATION_SPEAKER_INFERENCE",
     "SRC-DEIRALLA-SYMPOSIUM-1991-NYU": "DEIR_ALLA_CONTESTED_EARLY_INSCRIPTION_READING_AND_BIBLICAL_SHADDAY_RELATION",
@@ -536,7 +537,15 @@ def validate_source_access(sources: dict) -> list[str]:
                     or source.get("columnJer33Verses") != "33:16–20"
                     or source.get("originalColumnXXVImageInspected") is not False
                     or source.get("originalAncientPhotographCollated") is not False
-                    or source.get("mirrorDistributionRightsVerified") is not False):
+                    or source.get("mirrorDistributionRightsVerified") is not False
+                    or source.get("manuscriptId") != "4Q72"
+                    or source.get("scholarlySiglum") != "4QJer c"
+                    or source.get("distinctManuscriptId") != "4Q72a"
+                    or source.get("distinctScholarlySiglum") != "4QJer d"
+                    or source.get("djdDistinctManuscriptPrintedPage") != 203
+                    or source.get("originalTable8Jer33_16Status") != "bracketed_paragraph_division_reconstruction_NOT_autoptic_photo"
+                    or source.get("originalTable9ColXXVLine2") != "Jer 33:17 ישב"
+                    or source.get("originalTable9ColXXVLine3") != "Jer 33:18 עלה"):
                 errors.append(f"{prefix}: DJD XV selected original edition versus original photo falsely upgraded")
         if rid == "SRC-DSS-REED-FASC7-4Q72-PAM43101":
             if (source.get("archivalPAM") != "43.101"
@@ -552,8 +561,22 @@ def validate_source_access(sources: dict) -> list[str]:
                     or source.get("criticalEditionLabel") != "4QJer c"
                     or source.get("imagePixelsInspected") is not False
                     or source.get("printedHebrewLettersIndependentlyCollated") is not False
-                    or source.get("photoReusePermissionGranted") is not False):
+                    or source.get("photoReusePermissionGranted") is not False
+                    or source.get("academicDistinctManuscriptId") != "4Q72a"
+                    or source.get("academicDistinctManuscriptSiglum") != "4QJer d"
+                    or source.get("catalogSiglaConflictStatus") != "UNRESOLVED_METADATA_ID_SIGLUM_MISMATCH_NO_IMAGE_AUTOPSY"):
                 errors.append(f"{prefix}: IAA archive metadata or unearned pixel/rights attestation")
+        if rid == "SRC-MAIER-IECOT-JEREMIAH-1-25-2025":
+            if (source.get("url") != "https://api.pageplace.de/preview/DT0400.9783170435391_A62581867/preview-9783170435391_A62581867.pdf"
+                    or source.get("printedPageVisuallyVerified") != 14
+                    or source.get("pdfPageIndexInspected") != 1
+                    or source.get("distinctIdA") != "4Q72"
+                    or source.get("distinctSiglumA") != "4QJer c"
+                    or source.get("distinctIdB") != "4Q72a"
+                    or source.get("distinctSiglumB") != "4QJer d"
+                    or source.get("distinctManuscripts") is not True
+                    or source.get("photoAutopsy") is not False):
+                errors.append(f"{prefix}: 4Q72 versus 4Q72a independent scholarly manuscript identity conflated")
         if rid == "SRC-RAHLFS-JEREMIAH23-40":
             if (source.get("url") != "https://www.die-bibel.de/bibel/LXX/JER.23"
                     or source.get("additionalUrl") != "https://www.die-bibel.de/bibel/LXX/JER.40"

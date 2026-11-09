@@ -76,6 +76,20 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("IAA archive metadata or unearned pixel" in e
                             for e in validate_source_access(sources)))
 
+    def test_4q72_cannot_be_conflated_with_distinct_4q72a_in_scholarly_crosswalk(self) -> None:
+        sources = copy.deepcopy(self.sources)
+        record = next(x for x in sources["records"] if x["id"] == "SRC-MAIER-IECOT-JEREMIAH-1-25-2025")
+        record["distinctIdB"] = "4Q72"
+        self.assertTrue(any("4Q72 versus 4Q72a independent scholarly manuscript identity" in e
+                            for e in validate_source_access(sources)))
+
+    def test_4q72_djd_table8_reconstruction_must_not_be_promoted_to_ink(self) -> None:
+        sources = copy.deepcopy(self.sources)
+        record = next(x for x in sources["records"] if x["id"] == "SRC-DJD-XV-TOV-4QJERC-1997")
+        record["originalTable8Jer33_16Status"] = "verified original physical margin"
+        self.assertTrue(any("DJD XV selected original edition" in e
+                            for e in validate_source_access(sources)))
+
     def test_current_research_corpora_pass_structure(self) -> None:
         self.assertEqual([], validate(self.baseline))
         self.assertEqual([], validate_extension(self.extension, self.baseline))

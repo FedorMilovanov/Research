@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 93,
+    "sourceRecords": 94,
     "approvedForProduct": 0
   },
   "records": [
@@ -2940,8 +2940,8 @@
         "PUBLICATION_HOLD",
         "EVIDENCE_HOLD"
       ],
-      "sourceObjectState": "Published OUP 1997 volume confirmed via Bibliothèque nationale de France, ISBN 0-19-826937-4. A third-party 21MB scan is reachable for parsed text; direct original publication contents (4QJer c pp177–201), Table 1, Table 9, paleography section, selected explanatory text read. web screenshot of this PDF failed (oversized document), so actual photographs PL XXX–XXXVI and exact printed col XXV Hebrew diplomatic layout NOT visually inspected. The digital PDF mirror is not evidence of distribution permission.",
-      "supportedUse": "From the editor's own edition: 4Q72=4QJer c; column XXV Jer 33:16–20, column XXIV Jer33 uncertain; source is related to proto-MT but not identical in details; Table 9 notes XXV line 2 Jer33:17 and line3 Jer33:18 orthography; manuscript copy paleographically dated tentatively late first century BCE by Tov. Citation edition location pp177–201 and relevant plates XXX–XXXVI, NOT reconstruction of all text from photo.",
+      "sourceObjectState": "Published OUP 1997 volume confirmed via Bibliothèque nationale de France, ISBN 0-19-826937-4. A third-party 21MB scan is reachable for parsed text; direct original publication contents (4QJer c pp177–201), Table 1, Table 9, paleography section, selected explanatory text read. web screenshot of this PDF failed (oversized document), so actual photographs PL XXX–XXXVI and exact printed col XXV Hebrew diplomatic layout NOT visually inspected. The digital PDF mirror is not evidence of distribution permission. On 2026-11-10 read primary original Table 8: Jer33:16 editorial paragraph marker [ɓ] is bracketed/reconstructed, not a direct visible margin mark, and Table 9: col XXV line2 (Jer33:17) ישב, line3 (Jer33:18) עלה are editor's printed orthographic details. Printed contents separately show 4Q72a = 4QJer d from p203, distinct from 4Q72 = 4QJer c p177. Visual facsimile remains unchecked.",
+      "supportedUse": "From the editor's own edition: 4Q72=4QJer c; column XXV Jer 33:16–20, column XXIV Jer33 uncertain; source is related to proto-MT but not identical in details; Table 9 notes XXV line 2 Jer33:17 and line3 Jer33:18 orthography; manuscript copy paleographically dated tentatively late first century BCE by Tov. Citation edition location pp177–201 and relevant plates XXX–XXXVI, NOT reconstruction of all text from photo. Explicit textual rather than photo-level col XXV Table8/9 and strict 4Q72 vs 4Q72a editorial sigla disambiguation.",
       "forbiddenUse": "Claim printed plate XXX–XXXVI or the original fragment was pixel-reviewed; equate original editor's transcriptions with autopsy; assign individual fragment image B-360205's precise letters without visual matching; claim the Tov selected introductory text certifies every apparatus entry, original Jeremiah authorship, edition priority, or licenses copyrighted OUP photos.",
       "editionPrintedPages": "177–201",
       "plateRange": "XXX–XXXVI",
@@ -2950,7 +2950,16 @@
       "partialOriginalEditionTextRead": true,
       "originalColumnXXVImageInspected": false,
       "originalAncientPhotographCollated": false,
-      "mirrorDistributionRightsVerified": false
+      "mirrorDistributionRightsVerified": false,
+      "manuscriptId": "4Q72",
+      "scholarlySiglum": "4QJer c",
+      "distinctManuscriptId": "4Q72a",
+      "distinctScholarlySiglum": "4QJer d",
+      "distinctManuscriptVerses": "Jer 43:2–10",
+      "djdDistinctManuscriptPrintedPage": 203,
+      "originalTable8Jer33_16Status": "bracketed_paragraph_division_reconstruction_NOT_autoptic_photo",
+      "originalTable9ColXXVLine2": "Jer 33:17 ישב",
+      "originalTable9ColXXVLine3": "Jer 33:18 עלה"
     },
     {
       "id": "SRC-DSS-REED-FASC7-4Q72-PAM43101",
@@ -3001,9 +3010,9 @@
         "PUBLICATION_HOLD",
         "EVIDENCE_HOLD"
       ],
-      "sourceObjectState": "IAA archive metadata page read directly: B-360205, Plate 245, Frag 6, infrared recto, June 2012, Shai Halevi, item 4Q72. Page's manuscript superscript identifies it as 4Q Jer d, while Tov DJD XV identifies 4Q72 as 4QJer c: metadata-level siglum discrepancy not resolved by physical photo. Browser text extraction returns no actual image pixels or pixel-level epigraphy. IAA Terms page specifically requires express prior written permission for public reuse beyond personal single copies.",
+      "sourceObjectState": "IAA archive metadata page read directly: B-360205, Plate 245, Frag 6, infrared recto, June 2012, Shai Halevi, item 4Q72. Page's manuscript superscript identifies it as 4Q Jer d, while Tov DJD XV identifies 4Q72 as 4QJer c: metadata-level siglum discrepancy not resolved by physical photo. Browser text extraction returns no actual image pixels or pixel-level epigraphy. IAA Terms page specifically requires express prior written permission for public reuse beyond personal single copies. Original printed DJD XV p177/203 and Maier 2025 p14 confirm 4Q72=Jer-c but 4Q72a=Jer-d, so the IAA display combination 4Q72/Jer-d conflicts with academic manuscript mapping. This shows a catalog metadata inconsistency, NOT independently the wrong photographed parchment.",
       "supportedUse": "Give exact official IAA image locator and photography metadata; flag catalog superscript conflict vs Tov edition; provide path to request image use permission, without pretending photograph was visually collated.",
-      "forbiddenUse": "Claim photo was downloaded or read, claim image 2012 photograph is public domain, claim 4QJer d is independently identified from manuscript letters, claim certain exact matching of frag6 to colXXV frg55ii, use photo in public website or redistribute without permission.",
+      "forbiddenUse": "Claim photo was downloaded or read, claim image 2012 photograph is public domain, claim 4QJer d is independently identified from manuscript letters, claim certain exact matching of frag6 to colXXV frg55ii, use photo in public website or redistribute without permission. The archival caption must not silently remap 4Q72 to 4Q72a or prove physical image mixup before image autopsy.",
       "officialPhotoId": "B-360205",
       "archivePlate": "245",
       "fragmentOnPlate": "6",
@@ -3011,8 +3020,43 @@
       "criticalEditionLabel": "4QJer c",
       "imagePixelsInspected": false,
       "printedHebrewLettersIndependentlyCollated": false,
-      "photoReusePermissionGranted": false
+      "photoReusePermissionGranted": false,
+      "academicDistinctManuscriptId": "4Q72a",
+      "academicDistinctManuscriptSiglum": "4QJer d",
+      "catalogSiglaConflictStatus": "UNRESOLVED_METADATA_ID_SIGLUM_MISMATCH_NO_IMAGE_AUTOPSY"
+    },
+    {
+      "id": "SRC-MAIER-IECOT-JEREMIAH-1-25-2025",
+      "title": "Christl M. Maier, Jeremiah 1–25 (International Exegetical Commentary on the Old Testament, Kohlhammer 2025), Introduction, p.14, table of Qumran Jeremiah manuscript identifiers",
+      "creator": "Christl M. Maier; translation Linda M. Maloney",
+      "year": 2025,
+      "url": "https://api.pageplace.de/preview/DT0400.9783170435391_A62581867/preview-9783170435391_A62581867.pdf",
+      "publisherMetadataUrl": "https://isdistribution.com/work/jeremiah-1-25/",
+      "objectType": "independent_modern_scholarly_commentary_publisher_distributed_sample_P14",
+      "sourceRole": "SCHOLARLY_2025_MANUSCRIPT_SIGLA_CROSSWALK_4Q72_VS_4Q72A",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "evidenceClass": "B1",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "sourceObjectState": "A 2025 commentary sample PDF page 1 (printed p14) was directly examined using web PDF screenshot on 2026-11-10. The exact table explicitly separates 4Q72 = 4QJer c (portions Jer4–33, semi-Masoretic) from 4Q72a = 4QJer d (Jer43:2–10, partly close to Old Greek Vorlage); p14 n7 traces table to scholarly inventory by Eibert Tigchelaar. Direct visual inspection of a modern publication sample is NOT an autopsy of ancient scrolls or independent transcription of photographic witnesses. Publisher/reproduction rights not acquired.",
+      "supportedUse": "Independently editorially confirms the exact unambiguous scholarly identifiers of distinct manuscripts 4Q72/4QJer-c and 4Q72a/4QJer-d, with clearly different surviving passages; supports flagging a catalog metadata conflict where an IAA image page combines 4Q72 and Jer-d. It does not itself prove IAA's pixels show the wrong object.",
+      "forbiddenUse": "Conflate 4Q72 with 4Q72a, claim Maier's printed p14 table is a new physical photograph, assert catalog metadata alone proves image is misidentified, declare Greek/Masoretic textual priority proved by this table, distribute protected preview pages as publication assets.",
+      "printedPageVisuallyVerified": 14,
+      "pdfPageIndexInspected": 1,
+      "distinctIdA": "4Q72",
+      "distinctSiglumA": "4QJer c",
+      "distinctIdB": "4Q72a",
+      "distinctSiglumB": "4QJer d",
+      "distinctManuscripts": true,
+      "photoAutopsy": false
     }
   ],
-  "auditRevision": "NG10_DJD_XV_EDITOR_PUBLISHED_4Q72_MUSEUM_ARCHIVE_PROVENANCE_CROSSWALK_20261110"
+  "auditRevision": "NG10_WAVE11_IDENTITY_COLLISION_RESEARCH_TOV_DJD_TABLE8_9_MAIER2025_20261110"
 }
