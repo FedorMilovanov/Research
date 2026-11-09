@@ -390,6 +390,9 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-RAHLFS-JEREMIAH23-40": "PUBLISHER_EDITED_LXX_JEREMIAH_23_6_AND_CHAPTER_CROSSWALK",
     "SRC-QUMRAN-DIGITAL-4Q72-JER33-2023": "EDITED_4Q72_JER33_16_20_FRAGMENT55II_READ_NOT_PHOTO",
     "SRC-LANGLOIS-JEREMIAH-4Q72-2019": "ATTRIBUTED_SCHOLARLY_ANALYSIS_4Q72_MT_JER33_16_20_VS_OLD_GREEK",
+    "SRC-DJD-XV-TOV-4QJERC-1997": "TOV_DJD_XV_4QJERC_PRIMARY_EDITED_INTRO_TABLES_NOT_PLATE_AUTOPSY",
+    "SRC-DSS-REED-FASC7-4Q72-PAM43101": "ARCHIVAL_PAM_43_101_MUSEUM_PLATE_245_4Q72_COLUMNS_XXIV_XXV",
+    "SRC-IAA-B360205-4Q72-PL245F6": "IAA_B360205_PLATE245_FRAG6_PHOTO_CATALOG_ONLY",
     "SRC-NET-REV1-8": "ATTRIBUTED_TRANSLATION_CRITICAL_NOTES",
     "SRC-TABB-REVELATION22": "ATTRIBUTED_COMMENTARY_REVELATION_SPEAKER_INFERENCE",
     "SRC-DEIRALLA-SYMPOSIUM-1991-NYU": "DEIR_ALLA_CONTESTED_EARLY_INSCRIPTION_READING_AND_BIBLICAL_SHADDAY_RELATION",
@@ -527,6 +530,30 @@ def validate_source_access(sources: dict) -> list[str]:
                     or source.get("manuscriptPhotoIndependentlyCollated") is not False
                     or source.get("originalCriticalApparatusRead") is not False):
                 errors.append(f"{prefix}: Langlois original selected-page source upgraded without evidence")
+        if rid == "SRC-DJD-XV-TOV-4QJERC-1997":
+            if (source.get("url") != "https://catalogue.bnf.fr/ark:/12148/cb37173199v"
+                    or source.get("columnJer33") != "XXV"
+                    or source.get("columnJer33Verses") != "33:16–20"
+                    or source.get("originalColumnXXVImageInspected") is not False
+                    or source.get("originalAncientPhotographCollated") is not False
+                    or source.get("mirrorDistributionRightsVerified") is not False):
+                errors.append(f"{prefix}: DJD XV selected original edition versus original photo falsely upgraded")
+        if rid == "SRC-DSS-REED-FASC7-4Q72-PAM43101":
+            if (source.get("archivalPAM") != "43.101"
+                    or source.get("museumPlate") != "245"
+                    or source.get("criticalColumn") != "XXV"
+                    or source.get("specificIAA2012Fragment6MatchedByImage") is not False):
+                errors.append(f"{prefix}: inventory PAM/plate/column or photo match invented")
+        if rid == "SRC-IAA-B360205-4Q72-PL245F6":
+            if (source.get("url") != "https://www.deadseascrolls.org.il/explore-the-archive/image/B-360205"
+                    or source.get("archivePlate") != "245"
+                    or source.get("fragmentOnPlate") != "6"
+                    or source.get("catalogLabel") != "4Q Jer d"
+                    or source.get("criticalEditionLabel") != "4QJer c"
+                    or source.get("imagePixelsInspected") is not False
+                    or source.get("printedHebrewLettersIndependentlyCollated") is not False
+                    or source.get("photoReusePermissionGranted") is not False):
+                errors.append(f"{prefix}: IAA archive metadata or unearned pixel/rights attestation")
         if rid == "SRC-RAHLFS-JEREMIAH23-40":
             if (source.get("url") != "https://www.die-bibel.de/bibel/LXX/JER.23"
                     or source.get("additionalUrl") != "https://www.die-bibel.de/bibel/LXX/JER.40"

@@ -53,6 +53,29 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("Langlois original selected-page source" in e
                             for e in validate_source_access(sources)))
 
+    def test_tov_djd_xv_published_column_not_original_photo_autopsy(self) -> None:
+        sources = copy.deepcopy(self.sources)
+        record = next(r for r in sources["records"] if r["id"] == "SRC-DJD-XV-TOV-4QJERC-1997")
+        record["originalColumnXXVImageInspected"] = True
+        self.assertTrue(any("DJD XV selected original edition" in e
+                            for e in validate_source_access(sources)))
+
+    def test_4q72_inventory_cannot_promote_fragment6_without_image_match(self) -> None:
+        sources = copy.deepcopy(self.sources)
+        record = next(r for r in sources["records"] if r["id"] == "SRC-DSS-REED-FASC7-4Q72-PAM43101")
+        record["specificIAA2012Fragment6MatchedByImage"] = True
+        record["museumPlate"] = "XXXVI"
+        self.assertTrue(any("inventory PAM/plate/column" in e
+                            for e in validate_source_access(sources)))
+
+    def test_iaa_catalog_cannot_grant_photo_rights_or_pretend_eyewitness(self) -> None:
+        sources = copy.deepcopy(self.sources)
+        record = next(r for r in sources["records"] if r["id"] == "SRC-IAA-B360205-4Q72-PL245F6")
+        record["imagePixelsInspected"] = True
+        record["photoReusePermissionGranted"] = True
+        self.assertTrue(any("IAA archive metadata or unearned pixel" in e
+                            for e in validate_source_access(sources)))
+
     def test_current_research_corpora_pass_structure(self) -> None:
         self.assertEqual([], validate(self.baseline))
         self.assertEqual([], validate_extension(self.extension, self.baseline))

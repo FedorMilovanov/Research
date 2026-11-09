@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 90,
+    "sourceRecords": 93,
     "approvedForProduct": 0
   },
   "records": [
@@ -2918,7 +2918,101 @@
       ],
       "manuscriptPhotoIndependentlyCollated": false,
       "originalCriticalApparatusRead": false
+    },
+    {
+      "id": "SRC-DJD-XV-TOV-4QJERC-1997",
+      "title": "Emanuel Tov, 4QJer c (4Q72), in Qumran Cave 4.X: The Prophets, Discoveries in the Judaean Desert XV (1997), printed pp.177–201; photographic plates XXX–XXXVI",
+      "creator": "Emanuel Tov; Eugene Ulrich et al.; Oxford University Press / Clarendon",
+      "year": 1997,
+      "url": "https://catalogue.bnf.fr/ark:/12148/cb37173199v",
+      "accessibleTextUrl": "https://messianicessenes.wordpress.com/wp-content/uploads/2014/07/djd-15.pdf",
+      "objectType": "scholarly_original_critical_edition_book_selective_text_access_third_party_scan",
+      "sourceRole": "TOV_DJD_XV_4QJERC_PRIMARY_EDITED_INTRO_TABLES_NOT_PLATE_AUTOPSY",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "sourceObjectState": "Published OUP 1997 volume confirmed via Bibliothèque nationale de France, ISBN 0-19-826937-4. A third-party 21MB scan is reachable for parsed text; direct original publication contents (4QJer c pp177–201), Table 1, Table 9, paleography section, selected explanatory text read. web screenshot of this PDF failed (oversized document), so actual photographs PL XXX–XXXVI and exact printed col XXV Hebrew diplomatic layout NOT visually inspected. The digital PDF mirror is not evidence of distribution permission.",
+      "supportedUse": "From the editor's own edition: 4Q72=4QJer c; column XXV Jer 33:16–20, column XXIV Jer33 uncertain; source is related to proto-MT but not identical in details; Table 9 notes XXV line 2 Jer33:17 and line3 Jer33:18 orthography; manuscript copy paleographically dated tentatively late first century BCE by Tov. Citation edition location pp177–201 and relevant plates XXX–XXXVI, NOT reconstruction of all text from photo.",
+      "forbiddenUse": "Claim printed plate XXX–XXXVI or the original fragment was pixel-reviewed; equate original editor's transcriptions with autopsy; assign individual fragment image B-360205's precise letters without visual matching; claim the Tov selected introductory text certifies every apparatus entry, original Jeremiah authorship, edition priority, or licenses copyrighted OUP photos.",
+      "editionPrintedPages": "177–201",
+      "plateRange": "XXX–XXXVI",
+      "columnJer33": "XXV",
+      "columnJer33Verses": "33:16–20",
+      "partialOriginalEditionTextRead": true,
+      "originalColumnXXVImageInspected": false,
+      "originalAncientPhotographCollated": false,
+      "mirrorDistributionRightsVerified": false
+    },
+    {
+      "id": "SRC-DSS-REED-FASC7-4Q72-PAM43101",
+      "title": "Dead Sea Scrolls Inventory Project, Fascicle 7, manuscript/negative/museum-plate cross-index for 4Q72",
+      "creator": "Stephen A. Reed and research team, Ancient Biblical Manuscript Center; historical inventory presented by University of Agder",
+      "year": 1991,
+      "url": "https://lyingpen.uia.no/dssinventoryproject/fascicle7/",
+      "objectType": "archival_photographic_inventory_of_cave4",
+      "sourceRole": "ARCHIVAL_PAM_43_101_MUSEUM_PLATE_245_4Q72_COLUMNS_XXIV_XXV",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "sourceObjectState": "Original historical inventory page directly read: 4Q72 Jerc C51b museum plate 245 PAM 43.101; photograph-list entry 43.101 lists Jer31:4–... and 33:16–20; museum-plate entry 245 reports columns 22–23 and 24–25. The inventory itself is explicitly preliminary and warns that museum plate, photographic plate and scroll fragment have different numbering and no one-to-one guarantees; contents of photographed tiny fragment require image comparison.",
+      "supportedUse": "Connect 4Q72 c (4QJer c), museum plate 245 and PAM 43.101 (columns 24–25 with Jer33:16–20) and avoid mixing museum 245 with DJD publication Roman plate XXX–XXXVI. Provides no specific proof that IAA 'Frag 6' matches editors' frg 55 ii without photo cross-check.",
+      "forbiddenUse": "Claim all the scientific text/letters are independently imaged and collated; equate PAM 43.101 with the 2012 IAA photo ID B-360205 as the same physical exposure; treat preliminary inventory as legally valid image reproduction license.",
+      "archivalPAM": "43.101",
+      "museumPlate": "245",
+      "criticalColumn": "XXV",
+      "passageRange": "Jer 33:16–20",
+      "specificIAA2012Fragment6MatchedByImage": false
+    },
+    {
+      "id": "SRC-IAA-B360205-4Q72-PL245F6",
+      "title": "Israel Antiquities Authority, Leon Levy Dead Sea Scrolls Digital Library photo B-360205, plate 245 fragment 6 (infrared, June 2012)",
+      "creator": "Israel Antiquities Authority; photographer Shai Halevi",
+      "year": 2012,
+      "url": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-360205",
+      "termsUrl": "https://www.deadseascrolls.org.il/terms",
+      "objectType": "official_archive_photo_metadata_page_pixels_not_inspected",
+      "sourceRole": "IAA_B360205_PLATE245_FRAG6_PHOTO_CATALOG_ONLY",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "evidenceClass": "A2",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "sourceObjectState": "IAA archive metadata page read directly: B-360205, Plate 245, Frag 6, infrared recto, June 2012, Shai Halevi, item 4Q72. Page's manuscript superscript identifies it as 4Q Jer d, while Tov DJD XV identifies 4Q72 as 4QJer c: metadata-level siglum discrepancy not resolved by physical photo. Browser text extraction returns no actual image pixels or pixel-level epigraphy. IAA Terms page specifically requires express prior written permission for public reuse beyond personal single copies.",
+      "supportedUse": "Give exact official IAA image locator and photography metadata; flag catalog superscript conflict vs Tov edition; provide path to request image use permission, without pretending photograph was visually collated.",
+      "forbiddenUse": "Claim photo was downloaded or read, claim image 2012 photograph is public domain, claim 4QJer d is independently identified from manuscript letters, claim certain exact matching of frag6 to colXXV frg55ii, use photo in public website or redistribute without permission.",
+      "officialPhotoId": "B-360205",
+      "archivePlate": "245",
+      "fragmentOnPlate": "6",
+      "catalogLabel": "4Q Jer d",
+      "criticalEditionLabel": "4QJer c",
+      "imagePixelsInspected": false,
+      "printedHebrewLettersIndependentlyCollated": false,
+      "photoReusePermissionGranted": false
     }
   ],
-  "auditRevision": "NG10_4Q72_JER33_TRANSCRIPT_FRAGMENT55II_LANGLOIS_2019_20261110"
+  "auditRevision": "NG10_DJD_XV_EDITOR_PUBLISHED_4Q72_MUSEUM_ARCHIVE_PROVENANCE_CROSSWALK_20261110"
 }
