@@ -129,6 +129,29 @@ class ReformationManuscriptTests(unittest.TestCase):
         self.assertIn("NOT_EDITORIAL_READY", intro)
         self.assertIn("PUBLICATION_HOLD", intro)
 
+    def test_kings_18_22_digital_witnesses_not_conflated(self):
+        """Different Synodal web editions are evidence of variance, not a collation."""
+        intro = INTRO.read_text(encoding="utf-8")
+        reader, apparatus = intro.split(
+            "## Источниковедческие и редакционные примечания", 1
+        )
+        self.assertIn("две доступные цифровые публикации", reader)
+        self.assertIn("eBible RUSSYN", reader)
+        self.assertIn("RST на Biblia.com", reader)
+        self.assertIn("Историю разночтений нельзя установить", reader)
+        self.assertIn("масоретский текст", reader)
+        self.assertIn("Септуагинты", reader)
+        self.assertIn("https://ebible.org/russyn/1KI18.htm", apparatus)
+        self.assertIn("https://biblia.com/bible/rst/1-kings/18/19-22", apparatus)
+        self.assertIn("https://lemma.gebible.app/v/1-kings/18/22", apparatus)
+        self.assertIn("18:19", apparatus)
+        self.assertIn("18:22", apparatus)
+        self.assertIn("не выполненная колляция русских исторических печатей", apparatus)
+        self.assertIn("что именно русская публикация отражает первоначальный текст", apparatus)
+        self.assertIn("RESEARCH_MANUSCRIPT_DRAFT", intro)
+        self.assertIn("NOT_EDITORIAL_READY", intro)
+        self.assertIn("PUBLICATION_HOLD", intro)
+
     def test_episode02_is_still_inside_existing_series(self):
         p = HERE / "episode02_indulgences_1517_manuscript.md"
         self.assertTrue(p.is_file())
