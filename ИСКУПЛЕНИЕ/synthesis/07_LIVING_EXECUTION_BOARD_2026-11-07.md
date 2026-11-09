@@ -249,3 +249,9 @@
 ## 19. AT-010-R9 — controlled Coptic witness expansion (2026-11-08)
 
 Digitally verified DECOT XML/XHTML loci: sa212L.9 622148/2250, sa211L 620292/3090, CLM3469 622028/350. All three digital transcripts carry a T-form in the YOUR-SOUL clause, but original photo has not been independently collated for each, so no manuscript vote or Greek backtranslation is licensed. sa108L 620016/2575 is TARGET_CLAUSE_NOT_PRESENT (negative control). Bąk 2023 p.869 reports a P-form for CLM3469: CLM3469_EDITORIAL_READ_CONFLICT_HOLD. DECOT photographs for sa211L/CLM3469 are protected; PHOTO_NOT_COLLATED for public sa212L.9 photo. Scope and exact links in R9 critical memo and registry 05. SA48_53_10_GLYPH_ADJUDICATION_HOLD, GOTTINGEN_APPARATUS_HOLD, RIGHTS_HOLD, PUBLICATION_HOLD and publicationEligible=false remain. Next: photo-level collation and lawfully accessed Ziegler apparatus. NO MERGE / NO PUBLICATION.
+
+## 20. AT-010-R17 — controlled handoff из PR-комментария в источник-владелец (09.11.2026)
+
+**Дельта:** локусы 1Q8 XXIII.21–25 и 4Q58 VIII.19–22, версии Qumran-Digital 2025-08-25 / 2026-05-21, перенесены из [комментария PR](https://github.com/FedorMilovanov/Research/pull/309#issuecomment-6718467147) в [evidence memo](../evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md) и [OT11 §18](../ot/11_ISA52_53_SERVANT.md). Ошибка R16 («4Q58 53:11 полностью отсутствует») ограниченно SUPERSEDED: או֯[ר] — частично сохранившееся и частично восстановленное чтение. 4Q56 ≠ 1Q8.
+
+**Решение:** STOP_DISCOVERY по дубликатам текстовых зеркал; для снятия ограничений необходимы независимая фотоколляция и легальные страницы аппарата Ziegler 1983³ Ис. 53:5/10. DIGITAL_TRANSCRIPTION ≠ PHOTO_COLLATED. GLYPH_PHOTO_HOLD, GOTTINGEN_APPARATUS_HOLD, GREEK_BACKTRANSLATION_HOLD, RIGHTS_HOLD, PUBLICATION_HOLD, publicationEligible=false. **NO MERGE / NO PUBLICATION**.

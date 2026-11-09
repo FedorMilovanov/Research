@@ -555,6 +555,42 @@ class ActualSynchronizationTests(unittest.TestCase):
         self.assertIn("## 19. AT-010-R9", board)
         self.assertIn("NO MERGE / NO PUBLICATION", board)
 
+    def test_article02_r17_qumran_digital_versioned_transcripts_not_photos(self):
+        memo = (ROOT / "ИСКУПЛЕНИЕ/evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md").read_text(encoding="utf-8")
+        ot = (ROOT / "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md").read_text(encoding="utf-8")
+        board = (ROOT / "ИСКУПЛЕНИЕ/synthesis/07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        registry = (ROOT / "ИСКУПЛЕНИЕ/05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md").read_text(encoding="utf-8")
+        article = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md").read_text(encoding="utf-8")
+        self.assertIn("## AT-010-R17", memo)
+        r17 = memo.split("## AT-010-R17", 1)[1]
+        for marker in ("2026-05-21", "2025-08-25", "או֯[ר]", "חטאי",
+                       "1Q8", "4Q58", "4Q56", "R16 SUPERSEDED",
+                       "GLYPH_PHOTO_HOLD", "GOTTINGEN_APPARATUS_HOLD",
+                       "RIGHTS_HOLD", "PUBLICATION_HOLD", "publicationEligible=false"):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, r17)
+        self.assertIn("## 18. AT-010-R17", ot)
+        self.assertIn("## 20. AT-010-R17", board)
+        self.assertIn("QD-4Q58-20260521", registry)
+        self.assertIn("QD-1Q8-20250825", registry)
+        self.assertIn("Текстологическое уточнение (R17", article)
+
+    def test_noncanonical_source_classes_are_outside_support_tables(self):
+        targets = (
+            "article09_world_and_propitiation_johannine_case.md",
+            "article10_ransom_for_all_two_adams_paul_hebrews.md",
+            "article11_bought_apostates_covenant_blood_and_weak_brother.md",
+            "article13_double_payment_unbelief_and_acquired_faith.md",
+        )
+        for name in targets:
+            content = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts" / name).read_text(encoding="utf-8")
+            with self.subTest(article=name):
+                self.assertNotIn("B1/B2", content)
+                self.assertIn("Справочные материалы (evidenceClass C, вне доказательных опор)", content)
+                table = content.split("| Опора | Класс", 1)[1].split("\n\n", 1)[0]
+                self.assertNotIn("| C:", table)
+                self.assertNotIn("| C —", table)
+
     def test_article11_named_judas_primary_witnesses_and_hebrews_hold(self):
         text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article11_bought_apostates_covenant_blood_and_weak_brother.md").read_text(encoding="utf-8")
         cards = (ROOT / "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md").read_text(encoding="utf-8")

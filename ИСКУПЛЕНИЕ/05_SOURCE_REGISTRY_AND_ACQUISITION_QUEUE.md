@@ -369,3 +369,10 @@ MON-02 закрыта в части получения собственного 
 ### AT-010-R9 — Coptic Isaiah 53:10 DECOT source access (2026-11-08)
 
 Verified via direct DECOT API/XHTML: [sa212L.9 622148/2250](https://coptot.manuscriptroom.com/community/vmr/api/transcript/get/?docid=622148&pageID=2250&format=xhtml) — PHOTO_NOT_COLLATED; [sa211L 620292/3090](https://coptot.manuscriptroom.com/community/vmr/api/transcript/get/?docid=620292&pageID=3090&format=xhtml) — PROTECTED_IMAGE_ACCESS_HOLD; [CLM3469 622028/350](https://coptot.manuscriptroom.com/community/vmr/api/transcript/get/?docid=622028&pageID=350&format=xhtml) — PROTECTED_IMAGE_ACCESS_HOLD and CLM3469_EDITORIAL_READ_CONFLICT_HOLD versus Bąk 2023 p.869; [sa108L 620016/2575](https://coptot.manuscriptroom.com/community/vmr/api/transcript/get/?docid=620016&pageID=2575&format=xhtml) — TARGET_CLAUSE_NOT_PRESENT. Digital editorial transcriptions do not certify original glyphs. RIGHTS_HOLD and PUBLICATION_HOLD. Details and alternative interpretations in evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md.
+
+### AT-010-R17 — датированные транскрипции Кумрана (09.11.2026)
+
+- **QD-4Q58-20260521:** [Qumran-Digital, 4Q58](https://lexicon.qumran-digital.org/transcriptions/4Q58/2026-05-21/index.html), VIII.19–22, Ис. 53:10–12; DIGITAL_EDITORIAL_TRANSCRIPTION_READ_TARGET_LINES; צילום/фотографии оригинальных чернил не коллированы, хранение музейных снимков не утверждено. На 53:11 стоит או֯[ר].
+- **QD-1Q8-20250825:** [Qumran-Digital, 1Q8](https://lexicon.qumran-digital.org/transcriptions/1Q8/2025-08-25/index.html?v=2025-08-25), XXIII.21–25, Ис. 53:10–12, параллель по опубликованной цифровой редакции; цифровое чтение, не независимая фотография. [IAA / Leon Levy archive](https://www.deadseascrolls.org.il/explore-the-archive/manuscript/1Q8-1?locale=en_US) указывает физический архив, не статус прочтения снимка.
+
+Контрольная дискуссия: [memo R17](evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md). 1Q8 (1QIsaᵇ, пещера 1) не путать с 4Q56 (4QIsaᵇ, пещера 4). GLYPH_PHOTO_HOLD, GOTTINGEN_APPARATUS_HOLD, RIGHTS_HOLD, PUBLICATION_HOLD, publicationEligible=false сохраняются.

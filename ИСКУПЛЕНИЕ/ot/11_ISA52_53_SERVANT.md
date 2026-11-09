@@ -308,3 +308,9 @@ MT — morphhb (WLC). Основная греческая колонка ниж�
 ## 17. AT-010-R9 — extra Coptic witnesses of Isaiah 53:10 (2026-11-08)
 
 Direct DECOT XHTML: sa212L.9 docID622148/pageID2250 reads ⲉⲧⲉⲧⲛ / ⲯⲩⲭⲏ; sa211L docID620292/pageID3090 reads ⲧⲉⲧ︤ⲛ︥ⲯⲩⲭⲏ; CLM3469 docID622028/pageID350 line break ⲧ ⲉ / ⲧ︤ⲛ︥ⲯⲩⲭⲏ. Yet Bąk 2023 p.869 gives a P form for CLM3469, an editorial conflict, not a demonstrated codex variant. For sa108L docID620016/pageID2575 the exact YOUR-SOUL clause is absent: TARGET_CLAUSE_NOT_PRESENT. DECOT images for CLM3469 and sa211L are protected; sa212L.9 image linked but PHOTO_NOT_COLLATED. See full source-level R9 in ../evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md. CLM3469_EDITORIAL_READ_CONFLICT_HOLD, SA48_53_10_GLYPH_ADJUDICATION_HOLD, GOTTINGEN_APPARATUS_HOLD, RIGHTS_HOLD, PUBLICATION_HOLD remain.
+
+## 18. AT-010-R17 — еврейские варианты Ис. 53:10–12 (09.11.2026)
+
+В [критическом memo R17](../evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md) сопоставлены датированные цифровые транскрипции 1Q8 XXIII.21–25 и 4Q58 VIII.19–22. 1Q8 передаёт אור («свет», 53:11) без скобок; 4Q58 даёт **או֯[ר]**, т. е. часть сохранилась, часть сомнительна, последняя буква восстановлена. Старый вывод R16 о полной утрате в 4Q58 **SUPERSEDED** только в этой части. В 4Q58 53:12 читается множественное חטאי без скобок в отличие от единственного MT. 4Q56 (4QIsaᵇ, пещера 4) не равна 1Q8 (1QIsaᵇ, пещера 1).
+
+Эти данные — чтения **редакторской транскрипции**, не наша оригинальная фотоколляция. Ис. 53:10 евр. נפשו не решает греческую альтернативу ἡμῶν/ὑμῶν. GLYPH_PHOTO_HOLD, GOTTINGEN_APPARATUS_HOLD, GREEK_BACKTRANSLATION_HOLD, RIGHTS_HOLD, PUBLICATION_HOLD и publicationEligible=false сохраняются. **NO MERGE / NO PUBLICATION**.

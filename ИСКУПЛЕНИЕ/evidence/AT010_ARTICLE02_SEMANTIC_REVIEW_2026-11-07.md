@@ -260,3 +260,18 @@ Rahlfs–Hanhart Is. 53:10: `ἐὰν δῶτε περὶ ἁμαρτίας, ἡ
 **Analysis:** the three new DECOT readings invite a more targeted palaeographic check; their textual genealogy, editorial independence, and underlying photographs have not all been checked. The disagreement in CLM3469 is between published/editorial readings of the SAME witness, not automatically two ancient variants. No majority-of-transcripts inference. The damaged sa48 Bodmer letter remains SA48_53_10_GLYPH_ADJUDICATION_HOLD; Greek retroversion remains GREEK_BACKTRANSLATION_HOLD. The separate Greek παιδία/παιδεία question remains GREEK_VORLAGE_AMBIGUOUS and requires the actual Ziegler apparatus: GOTTINGEN_APPARATUS_HOLD, CODEX_WITNESS_HOLD, RIGHTS_HOLD, PUBLICATION_HOLD, publicationEligible=false. Protected images will not be bypassed.
 
 **Next real evidence:** independently collate the accessible BnF f.14r photo; obtain authorized original CLM3469 image or review by Coptic palaeographer; obtain Göttingen Isaias XIV (Ziegler 1983 third edition) critical apparatus specifically Isa 53:5/10. STOP_DISCOVERY on general mirrors. NO MERGE / NO PUBLICATION.
+
+## AT-010-R17 — редакторские транскрипции 1Q8 и 4Q58, Ис. 53:10–12 (09.11.2026)
+
+**Provenance:** материал R10–R17 прежде зафиксирован в [комментарии PR #309](https://github.com/FedorMilovanov/Research/pull/309#issuecomment-6718467147). Здесь принимается только адресная доказательная дельта R17, не заявляется независимая колляция оригинальных фотографий. [Qumran-Digital 4Q58, версия 2026-05-21](https://lexicon.qumran-digital.org/transcriptions/4Q58/2026-05-21/index.html), col. VIII ll.19–22, сопоставлена с параллельными строками [1Q8, версия 2025-08-25](https://lexicon.qumran-digital.org/transcriptions/1Q8/2025-08-25/index.html?v=2025-08-25), col. XXIII ll.21–25. Квадратные скобки — редакторская реконструкция, точка под буквой — сомнение.
+
+| Локус | 1Q8 (1QIsaᵇ; пещера 1) | 4Q58 (4QIsaᵈ; пещера 4) | Доказательный предел |
+|---|---|---|---|
+| 53:10, נפשו («его душа») | XXIII.21: אשם נפשו — слово без скобок | VIII.19: אם תשם[ אשם נ]פשו — начальная נ восстановлена, פשו передано как сохранившееся | Еврейские редакторские чтения не определяют греческое ἡμῶν / ὑμῶν |
+| 53:11, אור («свет») | XXIII.22: יראה אור יש[בע] — אור без скобок | VIII.20: יראה או֯[ר] — א сохранилась, ו сомнительна, ר восстановлена | **R16 SUPERSEDED** только для утверждения, что в 4Q58 слово полностью утрачено. Это частично сохранившееся свидетельство |
+| 53:12, חטאי («грехи») | XXIII.25: … חטא]י רבים נשא — окончание сохранено, основа частично реконструирована | VIII.22: והוא חטאי רבים נשא — без скобок | Вариант множественного числа относительно MT חֵטְא; не автоматический вывод о греческой Vorlage |
+| 53:12, ולפשעיהם | XXIII.25: ולפשעיהם יפגיע֯ — глагол сомнителен в последней букве | VIII.22: ולפשעיה[ם יפגיע] — окончание восстановлено | Нельзя заявлять полную сохранность обеих форм |
+
+**Контроль ошибочного отождествления:** 4Q56 = 4QIsaᵇ (пещера 4), не 1Q8 = 1QIsaᵇ (пещера 1). Сохранившаяся часть 4Q56 frg.39 не содержит слова «свет» из 53:11; обозначение ᵇ относится к разным сериям. 1QIsaᵃ 44.19–22 представлена как параллель в цифровом издании, здесь не выполнена новая фотографическая колляция.
+
+**Статус:** DIGITAL_EDITORIAL_TRANSCRIPTION_LOCATED, GLYPH_PHOTO_HOLD, GOTTINGEN_APPARATUS_HOLD, GREEK_BACKTRANSLATION_HOLD, RIGHTS_HOLD, PUBLICATION_HOLD; publicationEligible=false. Не сделаны: палеографическая проверка оригинального изображения, независимое разрешение варианта еврейского текста, доступ к Göttingen Ziegler 1983³ Ис. 53:5/10. Дубликаты поисковых зеркал не приобретать; узкий REQUEST_USER на аппарат при необходимости. **NO MERGE / NO PUBLICATION**.
