@@ -360,6 +360,8 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-SBLGNT-CCBY-LICENSE": "PUBLISHER_LICENSE_TEXT_ONLY",
     "SRC-JUDISCH-DAN7-ARAMAIC": "ATTRIBUTED_B1_ARAMAIC_GRAMMAR",
     "SRC-RAHLFS-ISAIAH": "PUBLISHER_EDITED_GREEK_LXX_SURFACE",
+    "SRC-EUSEBIUS-DEMONSTRATIO-7-1-135-GREEK-ISA9": "EUSEBIUS_DEMONSTRATIO_7_1_135_GREEK_SOME_COPIES_LONG_ISAIAH9_TESTIMONY",
+    "SRC-PASS-PENNER-MARCHALIANUS-ISA9-ZIEGLER-REPORT": "SECONDARY_MARCHALIANUS_ISAIAH9_GREEK_LONG_READING_APPARATUS_SIGLA_REPORTED",
     "SRC-ORTHODOX-ISAIAH9": "UNPINNED_ORTHODOX_GREEK_WEB_SURFACE",
     "SRC-RASHI-ISAIAH9": "ATTRIBUTED_JEWISH_EXEGETICAL_RECEPTION",
     "SRC-RADAK-ISAIAH9": "ATTRIBUTED_JEWISH_EXEGETICAL_RECEPTION",
@@ -532,6 +534,23 @@ def validate_source_access(sources: dict) -> list[str]:
                     or source.get("iaaPhotoLicensedByEitherTextLicense") is not False
                     or source.get("publicationLicenseComplianceApproved") is not False):
                 errors.append(f"{prefix}: Abegg/ETCBC Qumran rendering independent witness or license falsely upgraded")
+        if rid == "SRC-EUSEBIUS-DEMONSTRATIO-7-1-135-GREEK-ISA9":
+            if (source.get("url") != "https://www.sophiascriptura.com/fathers/eusebius-demonstratio/7-1-127/"
+                    or source.get("ancientReference") != "Demonstratio Evangelica 7.1.135"
+                    or source.get("editionPrintedLocator") != "Dindorf vol 3 p 453"
+                    or source.get("greekVariantQualifier") != "καὶ τινα τῶν ἀντιγράφων ἔχει"
+                    or source.get("someCopiesOnly") is not True
+                    or source.get("independentAncientGreekCodexCollated") is not False
+                    or source.get("zieglerCriticalApparatusDirectlyRead") is not False):
+                errors.append(f"{prefix}: Eusebius some-copy testimony falsely turned into manuscript autopsy")
+        if rid == "SRC-PASS-PENNER-MARCHALIANUS-ISA9-ZIEGLER-REPORT":
+            if (source.get("url") != "https://pressbooks.atlanticoer-relatlantique.ca/isaiahincodexmarchalianus/chapter/commentary/"
+                    or source.get("secondaryZieglerApparatusReport") is not True
+                    or source.get("zieglerCriticalApparatusDirectlyRead") is not False
+                    or source.get("ancientCodexIndependentlyCollated") is not False
+                    or source.get("alexandrinusOmissionQualification") != "A and 26 omit θεός within longer additions"
+                    or source.get("originalShortReadingReported") != ["Sinaiticus_original_hand_S_star","Vaticanus_B","Marchalianus_Q"]):
+                errors.append(f"{prefix}: scholarly secondary apparatus witness report improperly promoted")
         if rid == "SRC-QUMRAN-DIGITAL-4Q72-JER33-2023":
             if (source.get("url") != "https://lexicon.qumran-digital.org/transcriptions/4Q72/2023-12-08/index.html"
                     or source.get("fragmentLocator") != "55 ii"

@@ -114,6 +114,20 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("Abegg/ETCBC Qumran rendering independent witness" in e
                             for e in validate_source_access(sources)))
 
+    def test_eusebius_isaiah9_some_copies_not_promoted_to_all_witnesses(self) -> None:
+        sources = copy.deepcopy(self.sources)
+        rec = next(x for x in sources["records"] if x["id"] == "SRC-EUSEBIUS-DEMONSTRATIO-7-1-135-GREEK-ISA9")
+        rec["someCopiesOnly"] = False
+        rec["independentAncientGreekCodexCollated"] = True
+        self.assertTrue(any("Eusebius some-copy testimony" in e for e in validate_source_access(sources)))
+
+    def test_isaiah9_secondhand_ziegler_report_not_claimed_primary_autopsy(self) -> None:
+        sources = copy.deepcopy(self.sources)
+        rec = next(x for x in sources["records"] if x["id"] == "SRC-PASS-PENNER-MARCHALIANUS-ISA9-ZIEGLER-REPORT")
+        rec["zieglerCriticalApparatusDirectlyRead"] = True
+        self.assertTrue(any("scholarly secondary apparatus witness report" in e
+                            for e in validate_source_access(sources)))
+
     def test_current_research_corpora_pass_structure(self) -> None:
         self.assertEqual([], validate(self.baseline))
         self.assertEqual([], validate_extension(self.extension, self.baseline))

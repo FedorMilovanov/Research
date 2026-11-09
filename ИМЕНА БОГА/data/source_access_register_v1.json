@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 95,
+    "sourceRecords": 97,
     "approvedForProduct": 0
   },
   "records": [
@@ -3112,7 +3112,80 @@
       "qumranDigitalSeparateNotice": "CC BY-SA 4.0",
       "iaaPhotoLicensedByEitherTextLicense": false,
       "publicationLicenseComplianceApproved": false
+    },
+    {
+      "id": "SRC-EUSEBIUS-DEMONSTRATIO-7-1-135-GREEK-ISA9",
+      "title": "Eusebius of Caesarea, Demonstratio Evangelica 7.1.135, Greek from W. Dindorf Eusebii Opera 3:453 (Teubner 1867)",
+      "creator": "Eusebius of Caesarea; Wilhelm Dindorf (19th-century editor); First Thousand Years of Greek digitization",
+      "year": 1867,
+      "ancientAuthorApproximateDate": "c. 314–324 CE composition (conventional site dating, not date of any manuscript)",
+      "url": "https://www.sophiascriptura.com/fathers/eusebius-demonstratio/7-1-127/",
+      "pericopeUrl": "https://sophiascriptura.com/p/eusebius-demonstratio/7-1-135",
+      "objectType": "ancient_patristic_testimony_in_19th_century_edited_Greek_digital_transcription",
+      "sourceRole": "EUSEBIUS_DEMONSTRATIO_7_1_135_GREEK_SOME_COPIES_LONG_ISAIAH9_TESTIMONY",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "evidenceClass": "B1",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "sourceObjectState": "Direct Greek of Eusebius Dem. ev. 7.1.135, Dindorf 3:453, opened in Sophia Scriptura digitization 2026-11-10. Contrast explicitly 'κατὰ μὲν τοὺς ἑβδομήκοντα ... μεγάλης βουλῆς ἄγγελος' with 'καὶ τινα τῶν ἀντιγράφων ἔχει ... θαυμαστὸς σύμβουλος, θεὸς ἰσχυρὸς ...'. Adjacent sections 7.1.134 cite longer set, 7.1.136/137 introduce Aquila and Symmachus; the Greek of these ancient attributed versions is preserved within an authorial quotation, not directly recovered autographs. Modern English on that site is AI-translated and not treated as an independent scholarly source. No original 4th-century manuscript was inspected.",
+      "supportedUse": "Primary ancient author's testimony that Eusebius distinguished the shorter Septuagint phrasing from the additional titles he says appeared in some copies of Isaiah 9:5/6; textual variation predates present-day digital sites. Cite his exact Greek phrase and Dindorf vol3 p453, with no assertion he examined all manuscripts or established original translation.",
+      "forbiddenUse": "Claim the longer titles are uniformly present or absent in all Septuagint manuscripts, that the historical author's phrase proves the textual priority or dates an extant codex, that Aquila/Symmachus autographs survive, or that this modern edited Greek surface is our collation of Ziegler apparatus.",
+      "editionPrintedLocator": "Dindorf vol 3 p 453",
+      "ancientReference": "Demonstratio Evangelica 7.1.135",
+      "greekVariantQualifier": "καὶ τινα τῶν ἀντιγράφων ἔχει",
+      "shortReading": "μεγάλης βουλῆς ἄγγελος",
+      "longReadingStarts": "θαυμαστὸς σύμβουλος, θεὸς ἰσχυρὸς",
+      "someCopiesOnly": true,
+      "independentAncientGreekCodexCollated": false,
+      "zieglerCriticalApparatusDirectlyRead": false
+    },
+    {
+      "id": "SRC-PASS-PENNER-MARCHALIANUS-ISA9-ZIEGLER-REPORT",
+      "title": "Benjamin Pass and Ken M. Penner, Isaiah in Codex Marchalianus, Commentary §A son is given (Isaiah 9:6–7), citing Ziegler's critical apparatus",
+      "creator": "Benjamin Pass; Ken M. Penner",
+      "year": null,
+      "url": "https://pressbooks.atlanticoer-relatlantique.ca/isaiahincodexmarchalianus/chapter/commentary/",
+      "metadataUrl": "https://stfx.libguides.com/OER/StFX",
+      "objectType": "modern_scholarly_OpenEducationalResource_commentary_secondary_report_of_Ziegler_apparatus_and_codices",
+      "sourceRole": "SECONDARY_MARCHALIANUS_ISAIAH9_GREEK_LONG_READING_APPARATUS_SIGLA_REPORTED",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "evidenceClass": "B1",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "sourceObjectState": "Original online commentary paragraph 'A son is given (9:6-7)', §6, directly read in 2026-11-10; attributed to Pass and Penner via St Francis Xavier University Library OER catalogue. It reports Ziegler apparatus: shorter 'μεγάλης βουλῆς ἄγγελος' at S* B Q; expanded list with Sinaiticus corrector ca, Alexandrinus and other witnesses, also textual complexities: Alexandrinus and manuscript 26 omit θεός; some Lucianic copies mark additions with asterisk; textual transmission includes Aquila/Symmachus/Theodotion. This is authors' SECONDARY summary of Ziegler, not our reading of its original apparatus or manuscripts.",
+      "supportedUse": "Specific secondary scholarly account of why public Rahlfs-Hanhart short Isaiah9 and Greek Orthodox long names exist: reported manuscript variation, corrections and sigla. Cite witness groups as 'Pass/Penner report from Ziegler' rather than claim our codex collation. Cross-check with independently read Eusebius original Greek on some copies.",
+      "forbiddenUse": "Claim all cited codex variants have been independently checked, treat corrected Sinaiticus as original hand, say Alexandrinus necessarily includes Θεός, claim Ziegler critical apparatus directly read or rights on open educational page can transfer to Product unrestricted.",
+      "passageSection": "A son is given (9:6–7), numbered §6",
+      "originalShortReadingReported": [
+        "Sinaiticus_original_hand_S_star",
+        "Vaticanus_B",
+        "Marchalianus_Q"
+      ],
+      "longAdditionReported": [
+        "Sinaiticus_corrector_ca",
+        "Alexandrinus_A",
+        "Lucianic_witnesses"
+      ],
+      "alexandrinusOmissionQualification": "A and 26 omit θεός within longer additions",
+      "theodotionAquilaSymmachusSeparateVersions": true,
+      "secondaryZieglerApparatusReport": true,
+      "zieglerCriticalApparatusDirectlyRead": false,
+      "ancientCodexIndependentlyCollated": false
     }
   ],
-  "auditRevision": "NG10_WAVE14_ABEGG_ETCBC_EDITORIAL_MARKUP_RIGHTS_COMPARISON_20261110"
+  "auditRevision": "NG10_WAVE15_EUSEBIUS_ANCIENT_SOME_COPIES_AND_PASS_PENNER_ZIEGLER_REPORTED_ISAIAH9_20261110"
 }
