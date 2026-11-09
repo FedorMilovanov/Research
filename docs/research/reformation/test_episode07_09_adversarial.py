@@ -31,9 +31,32 @@ class ReformationAdversarialSevenNineTests(unittest.TestCase):
                 self.assertIn("adversarial-матрица", apparatus)
                 for status in ("RESEARCH_MANUSCRIPT_DRAFT", "NOT_EDITORIAL_READY",
                                "PUBLICATION_HOLD"):
-                    self.assertIn(status, reader)
+                    self.assertIn(status, apparatus)
                 for label in ("Допустим", "REF-P", "HOLD"):
                     self.assertIn(label.lower(), apparatus.lower())
+
+    def test_wave411_reader_first_and_source_metadata_preserved(self):
+        """The publication gate survives in the apparatus, not as reader scaffolding."""
+        cases = (
+            (7, "Требования, которые нельзя свести к мятежу",
+             "не выводится число жертв из богословских памфлетов"),
+            (8, "После войны — к вопросу о мире с Богом",
+             "не является нейтральной отменой их разногласий"),
+            (9, "Реформация, которую Кальвин не начинал",
+             "не превращается в вымышленную стенограмму"),
+        )
+        for num, first_title, unique_provenance in cases:
+            with self.subTest(chapter=num):
+                content = self.books[num]
+                reader, apparatus = content.split("## Источниковедческий аппарат", 1)
+                self.assertTrue(reader.startswith(f"# Эпизод {num:02}."))
+                self.assertIn("\n\n## " + first_title, reader)
+                self.assertNotIn("**Статус:**", reader)
+                self.assertEqual(apparatus.count(unique_provenance), 1)
+                self.assertIn("**Статус:** RESEARCH_MANUSCRIPT_DRAFT", apparatus)
+                self.assertIn("NOT_EDITORIAL_READY", apparatus)
+                self.assertIn("RIGHTS_HOLD", apparatus)
+                self.assertIn("PUBLICATION_HOLD", apparatus)
 
     def test_peasants_prints_and_voice_limit(self):
         s = self.books[7]
@@ -75,7 +98,8 @@ class ReformationAdversarialSevenNineTests(unittest.TestCase):
             with self.subTest(chapter=n):
                 reader, apparatus = text.split("## Источниковедческий аппарат", 1)
                 self.assertGreaterEqual(len(reader.split()), 1500)
-                self.assertEqual(reader.count("PUBLICATION_HOLD"), 1)
+                self.assertEqual(reader.count("PUBLICATION_HOLD"), 0)
+                self.assertIn("PUBLICATION_HOLD", apparatus)
                 self.assertNotRegex(reader, r"\b(?:VD16|CATALOG_ONLY|REF-[A-Z0-9-]+)\b")
                 self.assertIn(f"### Волна 401 —", apparatus)
                 self.assertIn("PUBLICATION_HOLD", text)
