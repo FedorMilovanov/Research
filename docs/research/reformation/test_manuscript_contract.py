@@ -80,6 +80,46 @@ class ReformationManuscriptTests(unittest.TestCase):
             self.assertIn(marker,b[1])
         self.assertIn("### Исторические свидетельства ранней",a[1])
 
+    def test_introduction_reader_source_notes_are_preserved_in_apparatus(self):
+        """Keep the same twelve textual witnesses and the forward navigation."""
+        intro = INTRO.read_text(encoding="utf-8")
+        reader, apparatus = intro.split(
+            "## Источниковедческие и редакционные примечания", 1
+        )
+        label = "### Перенесённые источниковые примечания к читательским разделам — волна 404"
+        self.assertEqual(apparatus.count(label), 1)
+        moved, remainder = apparatus.split(label, 1)[1].split(
+            "### Исторические свидетельства ранней", 1
+        )
+        self.assertTrue(remainder.strip())
+        import re
+        standalone = re.compile(
+            r"(?m)^\\*(?:Библейский текст и формулировка стиха|Тексты|Текст|"
+            r"Академическая опора|Редакционная ссылка на отдельное начало эпизода 01):\\*"
+        )
+        self.assertEqual(standalone.findall(reader), [])
+        self.assertEqual(len(standalone.findall(moved)), 12)
+        for locator in (
+            "https://ebible.org/russyn/EXO32.htm",
+            "https://ebible.org/russyn/JDG02.htm",
+            "https://ebible.org/russyn/1KI11.htm",
+            "https://ebible.org/russyn/1KI18.htm",
+            "https://ebible.org/russyn/2KI18.htm",
+            "https://ebible.org/russyn/2KI22.htm",
+            "https://ebible.org/russyn/1KI22.htm",
+            "https://ebible.org/russyn/JER07.htm",
+            "https://ebible.org/russyn/LAM05.htm",
+            "Oxford Classical Dictionary — Maccabees",
+            "https://ebible.org/russyn/REV02.htm",
+            "Подробные сведения о Гутенберге",
+        ):
+            with self.subTest(locator=locator):
+                self.assertIn(locator, moved)
+                self.assertNotIn(locator, reader)
+        self.assertIn("](episode01_historical_gateway_draft.md)", reader)
+        self.assertIn("NOT_EDITORIAL_READY", intro)
+        self.assertIn("PUBLICATION_HOLD", intro)
+
     def test_episode02_is_still_inside_existing_series(self):
         p = HERE / "episode02_indulgences_1517_manuscript.md"
         self.assertTrue(p.is_file())
