@@ -65,7 +65,7 @@ class NantesDigitalProvenanceTests(unittest.TestCase):
         self.assertIn("RIGHTS_HOLD", bge["holds"])
         self.assertIn("PUBLICATION_HOLD", bge["holds"])
 
-    def test_bge_archival_request_is_precise_and_not_mistaken_for_received_evidence(self):
+    def test_bge_archival_request_and_reply_are_distinct_evidence_stages(self):
         request = (HERE / "nantes_bge_ms_fr_413_archival_request.md").read_text(encoding="utf-8")
         for token in ("BGE Ms. fr. 413", "num.bge@geneve.ch",
                       "22 mai 1599", "29 mai 1599", "article XI",
@@ -75,7 +75,8 @@ class NantesDigitalProvenanceTests(unittest.TestCase):
                 self.assertIn(token, request)
         self.assertIn("nantes_bge_ms_fr_413_archival_request.md", self.dossier)
         self.assertIn("nantes_bge_ms_fr_413_archival_request.md", self.plan)
-        self.assertIn("ARCHIVE_INQUIRY_SENT / RESPONSE_PENDING", self.plan)
+        self.assertIn("ARCHIVE_REPLY_RECEIVED", self.plan)
+        self.assertIn("ARCHIVE_INQUIRY_SENT / RESPONSE_PENDING", self.plan)  # archived, not current
         self.assertIn("REF-P86 CATALOG_ONLY", self.dossier)
         self.assertIn("14:19:53 UTC", request)
         self.assertIn("14:19:53 UTC", self.plan)
@@ -83,6 +84,43 @@ class NantesDigitalProvenanceTests(unittest.TestCase):
         self.assertEqual(self.source_count, 204)
         self.assertEqual(self.sources["REF-P86"]["accessState"], "CATALOG_ONLY")
         self.assertIn("PUBLICATION_HOLD", self.sources["REF-P86"]["holds"])
+
+    def test_custodian_named_folios_not_mistaken_for_transcribed_ms(self):
+        request = (HERE / "nantes_bge_ms_fr_413_archival_request.md").read_text(encoding="utf-8")
+        packet = (HERE / "independent_review_packets.md").read_text(encoding="utf-8")
+        self.assertIn("CorrMss 2026/448", request)
+        self.assertIn("09.11.2026", request)
+        self.assertIn("ARCHIVE_REPLY_RECEIVED", request)
+        self.assertIn("DIGITAL_OBJECT_LOCATED", request)
+        self.assertIn("FOLIO_LOCATORS_CONFIRMED", request)
+        self.assertIn("FOLIO_IMAGES_UNREAD", request)
+        self.assertIn("COPY_DATE_CONFLICT_22_29_MAY_1599", request)
+        self.assertIn("EARLY_XI_COLLATION_HOLD", request)
+        self.assertIn("Anubis", request)
+        self.assertIn("RESPONSE_PENDING", request)  # historical, explicitly superseded
+        for locator in (
+            "https://archives.bge-geneve.ch/ark:/17786/vtac61f062330e0a126",
+            "/canvas%2F0%2F65",
+            "/canvas%2F0%2F18",
+            "folio 28",
+            "folio 4v",
+        ):
+            with self.subTest(locator=locator):
+                self.assertIn(locator, request)
+                self.assertIn(locator, self.dossier)
+                self.assertIn(locator, self.chapter)
+                self.assertIn(locator, packet)
+        c301 = next(x for x in self.claims.splitlines() if x.startswith("| C301 |"))
+        for token in ("ARCHIVE_REPLY_RECEIVED", "FOLIO_IMAGES_UNREAD",
+                      "COPY_DATE_CONFLICT_22_29_MAY_1599", "EARLY_XI_COLLATION_HOLD"):
+            self.assertIn(token, c301)
+        bge = self.sources["REF-P86"]
+        self.assertEqual(bge["accessState"], "CATALOG_ONLY")
+        self.assertEqual(bge["checkedAt"], "2026-11-09")
+        self.assertIn("CorrMss 2026/448", bge["verificationNote"])
+        self.assertIn("FOLIO_IMAGES_UNREAD", bge["verificationNote"])
+        for hold in ("ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"):
+            self.assertIn(hold, bge["holds"])
 
     def test_xi_remains_secondary_variant_and_not_publication_approved(self):
         for doc in (self.chapter, self.dossier, self.plan):
