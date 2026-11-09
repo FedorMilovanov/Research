@@ -102,14 +102,17 @@ class NantesDigitalProvenanceTests(unittest.TestCase):
             "https://archives.bge-geneve.ch/ark:/17786/vtac61f062330e0a126",
             "/canvas%2F0%2F65",
             "/canvas%2F0%2F18",
-            "folio 28",
-            "folio 4v",
         ):
             with self.subTest(locator=locator):
                 self.assertIn(locator, request)
                 self.assertIn(locator, self.dossier)
                 self.assertIn(locator, self.chapter)
                 self.assertIn(locator, packet)
+        for folio in ("folio 28", "folio 4v"):
+            for document in (request, self.dossier, self.chapter):
+                self.assertIn(folio, document)
+        self.assertIn("f. 28", packet)
+        self.assertIn("f. 4v", packet)
         c301 = next(x for x in self.claims.splitlines() if x.startswith("| C301 |"))
         for token in ("ARCHIVE_REPLY_RECEIVED", "FOLIO_IMAGES_UNREAD",
                       "COPY_DATE_CONFLICT_22_29_MAY_1599", "EARLY_XI_COLLATION_HOLD"):
