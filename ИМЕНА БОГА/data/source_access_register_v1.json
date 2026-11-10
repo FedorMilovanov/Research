@@ -2962,9 +2962,9 @@
         "PUBLICATION_HOLD",
         "EVIDENCE_HOLD"
       ],
-      "sourceObjectState": "Published OUP 1997 volume confirmed via Bibliothèque nationale de France, ISBN 0-19-826937-4. A third-party 21MB scan is reachable for parsed text; direct original publication contents (4QJer c pp177–201), Table 1, Table 9, paleography section, selected explanatory text read. web screenshot of this PDF failed (oversized document), so actual photographs PL XXX–XXXVI and exact printed col XXV Hebrew diplomatic layout NOT visually inspected. The digital PDF mirror is not evidence of distribution permission. On 2026-11-10 read primary original Table 8: Jer33:16 editorial paragraph marker [ɓ] is bracketed/reconstructed, not a direct visible margin mark, and Table 9: col XXV line2 (Jer33:17) ישב, line3 (Jer33:18) עלה are editor's printed orthographic details. Printed contents separately show 4Q72a = 4QJer d from p203, distinct from 4Q72 = 4QJer c p177. Visual facsimile remains unchecked. WAVE20 EDITOR-PRIMARY CROSSWALK: original 1997 DJD XV 4QJer c section's photographic list directly read as extracted text from accessible third-party 21MB scan (web PDF screenshot failed due file size); later PAM43.101 listed and older PAM40.963 in parentheses. Editor says newer 43 series incorporates additional identifications. This confirms both negatives belong to the *photographic inventory* of same manuscript, NOT that they depict same frame, plate245 frag6 or editorial frg55ii, and original publication plates XXX-XXXVI/pixels have NOT been inspected. Edition image reuse rights unknown/not granted.",
-      "supportedUse": "From the editor's own edition: 4Q72=4QJer c; column XXV Jer 33:16–20, column XXIV Jer33 uncertain; source is related to proto-MT but not identical in details; Table 9 notes XXV line 2 Jer33:17 and line3 Jer33:18 orthography; manuscript copy paleographically dated tentatively late first century BCE by Tov. Citation edition location pp177–201 and relevant plates XXX–XXXVI, NOT reconstruction of all text from photo. Explicit textual rather than photo-level col XXV Table8/9 and strict 4Q72 vs 4Q72a editorial sigla disambiguation. Primary editor Tov's own section photographic inventory separately lists later PAM43.101 and earlier PAM40.963 (in parentheses), clarifying historical continuity without providing a per-fragment image identity.",
-      "forbiddenUse": "Claim printed plate XXX–XXXVI or the original fragment was pixel-reviewed; equate original editor's transcriptions with autopsy; assign individual fragment image B-360205's precise letters without visual matching; claim the Tov selected introductory text certifies every apparatus entry, original Jeremiah authorship, edition priority, or licenses copyrighted OUP photos. Equate two different historical photographic negatives or any museum-plate fragment with editorial frg55ii solely from Tov's comprehensive negative list.",
+      "sourceObjectState": "Published OUP 1997 volume confirmed via Bibliothèque nationale de France, ISBN 0-19-826937-4. A third-party 21MB scan is reachable for parsed text; direct original publication contents (4QJer c pp177–201), Table 1, Table 9, paleography section, selected explanatory text read. web screenshot of this PDF failed (oversized document), so actual photographs PL XXX–XXXVI and exact printed col XXV Hebrew diplomatic layout NOT visually inspected. The digital PDF mirror is not evidence of distribution permission. On 2026-11-10 read primary original Table 8: Jer33:16 editorial paragraph marker [ɓ] is bracketed/reconstructed, not a direct visible margin mark, and Table 9: col XXV line2 (Jer33:17) ישב, line3 (Jer33:18) עלה are editor's printed orthographic details. Printed contents separately show 4Q72a = 4QJer d from p203, distinct from 4Q72 = 4QJer c p177. Visual facsimile remains unchecked. WAVE20 EDITOR-PRIMARY CROSSWALK: original 1997 DJD XV 4QJer c section's photographic list directly read as extracted text from accessible third-party 21MB scan (web PDF screenshot failed due file size); later PAM43.101 listed and older PAM40.963 in parentheses. Editor says newer 43 series incorporates additional identifications. This confirms both negatives belong to the *photographic inventory* of same manuscript, NOT that they depict same frame, plate245 frag6 or editorial frg55ii, and original publication plates XXX-XXXVI/pixels have NOT been inspected. Edition image reuse rights unknown/not granted. WAVE21 bibliographic/source route verified: Hebrew University institutional author entry establishes Tov's 1991 first edition '4QJer c (4Q72)' in Orbis Biblicus et Orientalis109 'Tradition of the Text' pp249-276. DJD XV 1997 original citation specifies 1991 plates I-VII; University of Bern confirms OBO series OA through ZORA, but ZORA returned Anubis access denied, so no 1991 original printed text or plate directly viewed. Academic bibliography's official manuscript link goes to IAA /manuscript/4Q72-1, not /4Q70-1 or /4Q71-1; this is a catalog/navigation route not exact photographed frg55ii mapping. Wikimedia commons file 4q72.jpg is a protein structure (PDB 4Q72), expressly REJECTED as archaeological photo. Do not upgrade collation or rights.",
+      "supportedUse": "From the editor's own edition: 4Q72=4QJer c; column XXV Jer 33:16–20, column XXIV Jer33 uncertain; source is related to proto-MT but not identical in details; Table 9 notes XXV line 2 Jer33:17 and line3 Jer33:18 orthography; manuscript copy paleographically dated tentatively late first century BCE by Tov. Citation edition location pp177–201 and relevant plates XXX–XXXVI, NOT reconstruction of all text from photo. Explicit textual rather than photo-level col XXV Table8/9 and strict 4Q72 vs 4Q72a editorial sigla disambiguation. Primary editor Tov's own section photographic inventory separately lists later PAM43.101 and earlier PAM40.963 (in parentheses), clarifying historical continuity without providing a per-fragment image identity. Wave21 locates pre-1997 original Tov 1991 book chapter pp249-276/plates I-VII with scholarly university confirmation and an institutional OA acquisition route currently blocked; official IAA manuscript browse endpoint and verified misleading protein filename are only navigation/negative controls.",
+      "forbiddenUse": "Claim printed plate XXX–XXXVI or the original fragment was pixel-reviewed; equate original editor's transcriptions with autopsy; assign individual fragment image B-360205's precise letters without visual matching; claim the Tov selected introductory text certifies every apparatus entry, original Jeremiah authorship, edition priority, or licenses copyrighted OUP photos. Equate two different historical photographic negatives or any museum-plate fragment with editorial frg55ii solely from Tov's comprehensive negative list. Claim 1991 plates are seen merely because OBO has an open-access collection; present Wikimedia Commons protein File:4q72.jpg as scroll photograph or copyright clearance; treat IAA /manuscript/4Q72-1 as verified frg55ii pixel identification.",
       "editionPrintedPages": "177–201",
       "plateRange": "XXX–XXXVI",
       "columnJer33": "XXV",
@@ -2996,6 +2996,29 @@
         "originalPAMNegativePixelsInspected": false,
         "originalDJDXVPlatesXXXtoXXXVIInspected": false,
         "imageRedistributed": false
+      },
+      "firstEdition1991SourceAccessWave21": {
+        "primaryEditor": "Emanuel Tov",
+        "title": "4QJer c (4Q72)",
+        "year": 1991,
+        "book": "Tradition of the Text: Studies offered to Dominique Barthélemy in Celebration of his 70th Birthday",
+        "series": "Orbis Biblicus et Orientalis 109",
+        "pages": "249–276",
+        "photographicPlates": "I–VII",
+        "universityOriginalPublicationRecord": "https://cris.huji.ac.il/en/publications/4qjer-4q72/",
+        "academicOAStatementUrl": "https://www.iaw.unibe.ch/research/publications/orbis_biblicus_et_orientalis/index_eng.html",
+        "requestedRepository": "https://www.zora.uzh.ch/",
+        "repositoryAccessState": "ANUBIS_ACCESS_DENIED_AUTOMATED_2026_11_10",
+        "fullOriginalTextPersonallyRead": false,
+        "originalPhotographicPlatesPersonallyViewed": false,
+        "targetFrg55iiImageIdentified": false,
+        "manuscriptGlyphsIndependentlyCollated": false,
+        "publicationReusePermissionGranted": false,
+        "officialManuscriptBrowseUrl": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/4Q72-1",
+        "official2012ImageCandidateUrl": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-360205",
+        "falsePositiveSearchPhotoUrl": "https://commons.wikimedia.org/wiki/File:4q72.jpg",
+        "falsePositiveIsProteinNotScroll": true,
+        "falsePositiveAcceptedAsManuscriptPhoto": false
       }
     },
     {
@@ -3352,5 +3375,5 @@
       }
     }
   ],
-  "auditRevision": "NG10_WAVE20_PRIMARY_TOV_1997_NEGATIVE_LIST_40_963_VS_43_101_CROSSWALK_NO_IMAGE_20261110"
+  "auditRevision": "NG10_WAVE21_TOV_1991_SOURCE_ROUTE_AND_4Q72_PHOTO_FALSE_POSITIVE_NEGATIVE_CONTROL_20261110"
 }
