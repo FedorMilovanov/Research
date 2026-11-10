@@ -1912,5 +1912,24 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                 self.assertTrue(any("Tov original editor photo list cannot certify" in err
                                     for err in validate_source_access(data)))
 
+
+    def test_tov_1991_unviewed_plates_and_protein_photo_not_paleography(self) -> None:
+        for key in (
+            "fullOriginalTextPersonallyRead",
+            "originalPhotographicPlatesPersonallyViewed",
+            "targetFrg55iiImageIdentified",
+            "manuscriptGlyphsIndependentlyCollated",
+            "publicationReusePermissionGranted",
+            "falsePositiveAcceptedAsManuscriptPhoto",
+        ):
+            with self.subTest(key=key):
+                data = copy.deepcopy(self.sources)
+                row = next(r for r in data["records"]
+                           if r["id"] == "SRC-DJD-XV-TOV-4QJERC-1997")
+                row["firstEdition1991SourceAccessWave21"][key] = True
+                self.assertTrue(any(
+                    "first 1991 Tov plate route must not certify viewed plates" in e
+                    for e in validate_source_access(data)))
+
 if __name__ == "__main__":
     unittest.main()
