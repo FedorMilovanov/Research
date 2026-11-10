@@ -12,11 +12,11 @@
     "arenaRecords": 29,
     "extensionRecords": 13,
     "contextAttestations": 105,
-    "sourceRegisterEntries": 99,
-    "regressionTests": 281,
+    "sourceRegisterEntries": 100,
+    "regressionTests": 283,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_DCC8FD2_EXACT_6_SUCCESS_WAVE19_NEW_SHA_PENDING",
+    "allSixCiChecks": "PRIOR_FD98B00_EXACT_6_SUCCESS_WAVE20_NEW_SHA_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "dcc8fd2053533510afea9698fe6debb98f7dbdf7"
+    "lastConfirmedAllSixChecksSha": "fd98b00ce5896f383c2acda2b5950822c9f06390"
   },
   "allowedStatuses": [
     "DONE",
@@ -742,7 +742,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "2026-11-10 WAVE19 manuscript page locator QC: a real original scholarly publication, Valerio COMSt Bulletin 8/1 (2022), printed p56 §2.2.1, reports Vat.gr.2125/Q page171 as initially blank opening page of Isaiah with second-hand colophon, not proven Isaiah1:1 text. Browser-generated Mark1 74-line transcript was rejected as incompatible with Prophets-only Q (one col, 29 lines/page). Research did NOT visually collate the exact target Isaiah9 page, did NOT read original Ziegler Isaias XIV 1983 Isaiah9 Apparatus I/II, and did NOT acquire photo rights. Existing Vatican source row now records this codicological crosscheck; 1 negative guard test protects against false photo promotion. Continue Wave19 exact authorized Isaiah9 folio access only with verifiable adjacent verse evidence; if unavailable STOP rather than use assumed folio or false browser text. Wave18 Ziegler original apparatus still BLOCKED_SOURCE and Wave20 DJD XV/IAA 4Q72 original identity remains. Maintain NG10 BLOCKED_SOURCE, 0 criticalCollationsCompleted and 0 external scholarly/Product approvals. Exact new SHA CI required.",
+  "nextAction": "2026-11-10 WAVE20: One distinct original 1954 photograph object pinned at official IAA B-279109 = PAM M40.963, scanned infrared negative by Najib Anton Albina (February 1954), many plates including 245 and many manuscripts including 4Q72. Historical DSS Inventory Fascicle9 40.963 identifies 4Q72 Jerc Jer4:13-16,33:16-20; author-hosted Langlois2019 PDF footnote19 text pins PAM40.963=>IAA B-279109. These are catalog/text-level cross-links, NOT 1954 negative photo pixel autopsy, NOT 2012 image B-360205 identical exposure, NOT direct DJD XV frg55ii paleography. 100 unique source objects, 283 corpus tests (2 added adverse-mutation methods). Previous FD98B00 exact six CI SUCCESS; new exact SHA pending. Next evidence gate: lawful inspection of original PAM M40.963 historical image pixels and independently verified 4Q72 frg55ii object ↔ DJD XV plates XXX-XXXVI and photo B-360205; if inaccessible STOP_DISCOVERY with BLOCKED_SOURCE. Wave18 Ziegler Isaiah9 and Wave19 Vatican Q Isaiah9 exact manuscript still BLOCKED_SOURCE. NG10 BLOCKED_SOURCE; 0 critical collation, 0 outside scholarly/Product approvals, rights/publication HOLD.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -824,7 +824,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-10",
-    "planStatus": "WAVE19 page171-Q control: initial wave17 final dcc8fd2053533510afea9698fe6debb98f7dbdf7 independently confirmed six GitHub workflows SUCCESS. New wave19 HEAD requires own exact-SHA CI. 99 source records and 281 core tests after 1 targeted negative test; 105 attestations, 87 provisional claims, 0 original critical manuscript collations and 0 independent scholarly/Product approvals. Publisher journal original PDF text of Valerio 2022 printed p56 says p171 originally blank with later colophon; screenshot failed HTTP403, not a photograph of ancient Q. Reject automated hallucinated Mark1 on Q and ungrounded p171=Isaiah1:1 premise. All rights, scientific and publication HOLD retained.",
+    "planStatus": "WAVE20 archive 1954 crosswalk: pre-change exact FD98B00 6/6 SUCCESS confirmed on 2026-11-10. New current SHA separately requires all six terminal CI. One genuinely distinct primary photographic object B-279109 historical negative PAM M40.963 catalogued, not photo-viewed; source records 100 and corpus regressions 283 (+2 fail-closed). No simulated paleography, no image reproduction, no source-class laundering. All 0 original critical collations, 0 independent scholarly and Product approvals unchanged. NG10 BLOCKED_SOURCE.",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -925,14 +925,15 @@
       "NG12 primary lab source obtained directly from Cambridge publisher complete 1972 PDF: original printed page 53 verified by extraction, two sample IDs and different excavation material/years + δ13C, pretreatment and contemporary ca800 BCE correction, contradicting 1986 lab sample pairing. The cause of 1986 report error not inferred; 1972 use of 'temple annexes' attributed as assumption, not proven sanctuary; ledger+3 fail-closed tests, Reader03/Dossier03, machine/human plan/nav corrected.",
       "NG12 first firsthand original scholarly redaction Caquot/Lemaire Syria1977 pp193–198 inspected directly by paginated digital text: attributed hypothesis of moving fragment Ic/combination lines, red ink evidence, explicit 1977 line4 =1976 line6 concordance, 1977 line6 sdyn corresponds 1976 line8, 1977 line8 sdh is a proposed owl (distinct), title shadday plural only author proposal. Register 1 source, 3 falsification tests, Reader03/Dossier03 and SSOT plan/nav updated.",
       "2026-11-10 WAVE17: exact pre-edit GitHub PR379 HEAD 899e7c29f0914fb2742fad1fe283de70d50be301 CI 6/6 terminal success; main at 482abe3847d0bb68c46c846311c411b17b565dba and merge-base 4f600dafe8ac52f8244148abdf0845f830cd2263; PR 384 ahead/83 behind, changed path sets 63 vs 41 with zero filename overlap. This is a filename-level integration audit, NOT a merge-safety verdict. Historical Wave5 nextAction and CI predecessor corrected. Newly written SHA must pass CI separately.",
-      "2026-11-10 WAVE19 Codex Q evidence correction: Original contemporary scholarly Valerio 2022 §2.2.1 printed p56 read as extracted publisher PDF text (screenshot 403); Q page171 opening Isaiah colophon second hand. Official Göttingen Q catalog 1 column 29 lines Prophets-only. Earlier agent-generated Mark1 74-line 'transcription' explicitly refused. Specific source record, original Russian dossier and 1 fail-closed core regression updated. No original Isaiah9 folio, no edited critical apparatus or permissions. Wave18/19 scientific status NOT DONE."
+      "2026-11-10 WAVE19 Codex Q evidence correction: Original contemporary scholarly Valerio 2022 §2.2.1 printed p56 read as extracted publisher PDF text (screenshot 403); Q page171 opening Isaiah colophon second hand. Official Göttingen Q catalog 1 column 29 lines Prophets-only. Earlier agent-generated Mark1 74-line 'transcription' explicitly refused. Specific source record, original Russian dossier and 1 fail-closed core regression updated. No original Isaiah9 folio, no edited critical apparatus or permissions. Wave18/19 scientific status NOT DONE.",
+      "2026-11-10 WAVE20 4Q72: original official IAA catalog B-279109 dated Feb1954 confirms PAM M40.963, Najib Anton Albina, old IR multi-manuscript exposure with 4Q72 and museum plate245 among others. Historical inventory Fascicle9 directly lists 40.963 4Q72 Jerc Jer 4:13-16 and 33:16-20. Langlois original author-hosted 2019 PDF note19 links PAM 40.963 to B-279109 (PDF screenshot timeout, extracted text only). New source object with 0 image pixels reviewed; inventory and Langlois rows scoped cross-reference; 2 negative guards. NO conflation with PAM43.101, editor frg55ii or IAA B-360205; rights and science HOLD."
     ],
     "stillOpen": [
-      "New wave19 exact-SHA 6/6 CI required; pre-edit dcc8fd2 was independently verified terminal green.",
-      "NG10 original Ziegler critical apparatus to Isaiah9 still unavailable, and exact Vatican Q page/canvas containing Isaiah9 unverified; page171 colophon crosscheck is secondary codicological evidence, not ancient photographed letters.",
-      "NG04/NG11/NG12 remain blocked on critical sources; NG05 OPEN; NG06 media access blocked and NG07-NG09 partially reviewed.",
-      "NG13 independent outside scholarly review NG14 external consumer runtime not accepted; 0 approved critical collations 0 Product approvals.",
-      "NG15 photo rights and publication hold; Draft PR remains unmerged."
+      "New exact wave20 GitHub HEAD requires its own 6/6 terminal CI; last independently verified FD98B00 6/6 success.",
+      "Original 1954 PAM M40.963 pixels and precise 4Q72 Jer33 frg55ii placement uninspected; DJD XV original plates XXX-XXXVI and 2012 IAA B-360205 exact fragment identity not independently matched. NG10 BLOCKED_SOURCE.",
+      "Wave18 Ziegler Isaiah9 apparatus and Wave19 Vatican Q exact Isaiah9 image not collated; no artificial source gate promotion.",
+      "NG04/NG11/NG12 manuscripts and NG05 pronunciation open; NG06 media access blocked, NG07-NG09 incomplete.",
+      "NG13 outside scholarly approval, NG14 consumer runtime integration and NG15 image/reprint rights and Product handoff blocked; 0 approvals and no publication."
     ]
   },
   "originalResearchCheckpoint": {
