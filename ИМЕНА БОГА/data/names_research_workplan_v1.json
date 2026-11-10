@@ -12,11 +12,11 @@
     "arenaRecords": 29,
     "extensionRecords": 13,
     "contextAttestations": 105,
-    "sourceRegisterEntries": 106,
-    "regressionTests": 294,
+    "sourceRegisterEntries": 107,
+    "regressionTests": 295,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_FC88E0DC_EXACT_6_SUCCESS_WAVE35_NEW_SHA_PENDING",
+    "allSixCiChecks": "PRIOR_73DBBB87_EXACT_6_SUCCESS_WAVE36_SHA_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "fc88e0dcddc5c0a7373c1003a58ed8c6d9236338"
+    "lastConfirmedAllSixChecksSha": "73dbbb87a005248bf51add55bf0e313d8ab7eef6"
   },
   "allowedStatuses": [
     "DONE",
@@ -336,7 +336,9 @@
         "SRC-BREUER-MEGADIM10-1990-SITHON-SAPIR-REPORT",
         "23_YIREH_NISSI_ANSWER_PLACE_MOUNTAIN_EDITION_CRUX_20261107.md § Wave34 printed 1986/1990 respondent correction",
         "SRC-GOSHEN-GOTTSTEIN-TEXTUS2-1962-JTS729",
-        "23_YIREH_NISSI_ANSWER_PLACE_MOUNTAIN_EDITION_CRUX_20261107.md § Wave35 Goshen-Gottstein 1962 and Zer 1986 unresolved authorship"
+        "23_YIREH_NISSI_ANSWER_PLACE_MOUNTAIN_EDITION_CRUX_20261107.md § Wave35 Goshen-Gottstein 1962 and Zer 1986 unresolved authorship",
+        "SRC-SAPIR-EVEN-SAPIR-1866-CH6-PRIMARY-AUTHOR",
+        "23_YIREH_NISSI_ANSWER_PLACE_MOUNTAIN_EDITION_CRUX_20261107.md § Wave36 Saphir direct author statement in 1989 digital transcription"
       ],
       "verification": "NOT_APPLICABLE_UNTIL_DONE",
       "closureAt": null,
@@ -752,7 +754,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "WAVE35 2026-11-11: M.H. Goshen-Gottstein Biblical Manuscripts in the United States Textus2 1962 pp28–59 §IV, university Textus catalogue official, original scholarly PDF link repeatedly timed out, ONLY Scribd third-party user-uploaded full-author OCR text readable (corrupted) and thus no original visual page screenshot. Author personally examined eight large folio two-column JTS729 pages, first-page introduction says 1855; reports same one 19th-century collation underlies JTS729 copy, 1863 Libanon printed series, and 1866 Even Sapir, so NO multiple independent ancient witnesses. He conjectured Sapir himself copied it based on one hand for question/answer; Rafi Zer1986 published introduction p151 explicitly calls anonymous copy, disagrees. Preserve disagreement without choosing writer, direct original JTS image NO. 1855 intro year is different described event from 1857 question dispatch; date of entire manuscript answers unknown. Goshen English Jacob Berlin and later Hebrew Yaakov Ze'ev not externally proven full identical persons. Exact Exod17:16 original 1863 newspaper photo and JTS handwriting remain UNSEEN, Breuer1977 p260–261 and Yeivin p82 UNREAD; NG04 BLOCKED_SOURCE, NG05 OPEN, NG10 BLOCKED_SOURCE. 106 original distinct scholarly/source records, 294 core mutation tests, 105 attestation, 87 claims, 0 ancient photo collations/scholarly/Product/rights approvals. Prior fc88e0dc exact six workflow SUCCESS, Wave35 SHA pending. Same Draft PR only, no branch/main/Product/site changes.",
+  "nextAction": "WAVE36 2026-11-11: Ya'akov Saphir own book Even Sapir vol I Lyck 1866 chapter ו direct author text read on Project Ben-Yehuda modern transcription metadata base EDITION 1989, original 1866 498-page file identified Commons + NLI but individual pages not visually accessed (23MB exceeds web parser). Author says he entrusted Hebrew variants list to courier R. Yaakov Zeev (יעקב זאב) to ask respondent Rabbi Menashe Sathon (מנשה סתהון) who viewed Aleppo codex and marked YES/NO; author himself did not personally see codex and says cannot testify of what he did not see. Original Hebrew uses surname סתהון while Zer1986/Breuer1990 use סיתהון; preserve spelling. Project Ben-Yehuda author's own footnote17 says parts printed in Ha-Levanon. Relative 'לפני שבע שנים' and 'לפני תשע שנים' are in two author passages; DO NOT convert relative numbers using publication year because composition date may differ, or equate events. Original item now 107 independent BIBLIOGRAPHIC objects, still 0 independently checked ancient photo/exodus17:16 original letters. 295 core tests, 105 attestation and 87 claims, rights/Product HOLD and NG04 BLOCKED_SOURCE, NG05 OPEN, NG10 BLOCKED_SOURCE. Prior 73dbbb87 exact six workflow SUCCESS, Wave36 new SHA requires own 6/6. Same PR379 only; no new branch, main merge, Product or site edits.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -834,8 +836,9 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-10",
-    "planStatus": "WAVE35 Goshen-Gottstein 1962 Textus2 pp28-59 original publisher bibliography confirmed, authored full text read ONLY via community Scribd OCR with textual corruption; original publisher PDF inaccessible for visual page inspection. Published author says he personally examined JTS729, eight folio pages two columns, introduction dated 1855, printed 1863 Ha-Levanon and JTS729 descend from SAME original not independent witnesses, conjectures Sapir made his own copy; Zer1986 original printed p151 explicitly says ANONYMOUS copy: conflict unresolved. 1855 date introductory text vs 1857 question dispatch are different kinds of historical events, entire copied-list date remains unproven. One genuinely distinct 1962 scientific publication registered with PARTIAL_OBJECT, source106 and one anti-overclaim regression core294; no ancient/photo/rights/Product approval, NG04 BLOCKED_SOURCE. Prior fc88e0dc six CI successful, this new SHA pending.",
+    "planStatus": "WAVE36: 1866 public domain Saphir Even Sapir authentic book identified via 498-page first-edition 2026 Commons scan and NLI catalog, BUT original 1866 pages not visually opened due 23MB PDF access; first-person chapter ו DIRECTLY read via Project Ben-Yehuda's 1989-based digitized text. Author identifies trusted courier Yaakov Zeev, respondent Menashe Sathon (his spelling סתהון), list of questions and returned yes/no replies, and expressly says he cannot personally testify to Aleppo codex details he did not see. This SOURCE is one original 1866 author account through modern edition, not original scanned page or independently collated ancient codex. Relative 'seven years' and 'nine years' cannot be transformed into absolute dated witness; preserve 1855 intro vs 1857 commission separately. 107 authentic source objects (no ancient witnesses), 295 core mutation regressions, 105 attestation, 87 provisional claims; 0 critical original manuscripts and approvals, NG04 BLOCKED_SOURCE. Parent 73dbbb87 six CI success; new SHA pending.",
     "workCompleted": [
+      "Wave36: source genealogy advanced from Goshen 1962 and Zer1986 to Saphir's own Even Sapir 1866 first-person words in verified 1989-derived digital transcription; preserved separate courier/eyewitness, Hebrew original respondent orthography, critical first-person not-eyewitness caveat and unreconciled relative seven/nine year markers. Commons 498p public-domain facsimile catalog verified but not visually reviewed; one new provenance guard and source record.",
       "Wave35: inspected official Hebrew University Textus2 1962 metadata and author's full accessible third-party OCR, recorded Goshen's historic personal examination of JTS729, single-source dependency with Ha-Levanon1863 and his disputed Sapir handwriting conjecture versus Zer1986 anonymous copy; no original PDF or JTS image pixels inspected by us. One registered published scholarly source and one mutation gate.",
       "Wave34 original historical-source correction: visually inspected Zer 1986 printed p151 and Breuer 1990 p104, identified Menashe Sithon and 1857 Yaakov Ze'ev delivery; quarantined Moshe webpage error/inconsistency and unresolved JTS 1855 versus courier 1857. One original scholarly source plus one negative test.",
       "Wave33: scoped Penkower 1981 printed p78 footnote63 direct PDF machine text, university publication metadata and NLI exact 1863 July9 newspaper date; discriminated Jacob Saphir's NLI Maorot Nathan catalogue from Nathan Shapira's same-name other book; quarantined unsupported browser vision report; one new secondary scholarly source + one anti-conflation regression.",

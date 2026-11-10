@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 106,
+    "sourceRecords": 107,
     "approvedForProduct": 0
   },
   "records": [
@@ -3725,7 +3725,65 @@
         "jacobBerlinAndYaakovZeevFullIdentityDemonstrated": false,
         "photoRightsGranted": false
       }
+    },
+    {
+      "id": "SRC-SAPIR-EVEN-SAPIR-1866-CH6-PRIMARY-AUTHOR",
+      "title": "Ya‘aqov Saphir (יעקב ספיר), אבן ספיר (Even Sapir), volume I, Lyck 1866, chapter ו (Aleppo Codex); first-person historical testimony, digital transcription of 1989 edition",
+      "creator": "Ya‘aqov (Jacob) Saphir",
+      "year": 1866,
+      "url": "https://benyehuda.org/read/42865",
+      "originalBookScanCatalogueUrl": "https://commons.wikimedia.org/wiki/File:Even_Sapir,_by_Ya%E2%80%98aqov_Saphir_(Lyck,_1866)_(IA_even-sapir-lyck-1866-images).pdf",
+      "originalBookLibraryUrl": "https://www.nli.org.il/he/books/NNL_ALEPH990013238610205171/NLI",
+      "digitalTranscriptionBaseEdition": "Kiryat Gat: Arutz Lehasbarat Arakhim Bateksoret, 1989",
+      "objectType": "historical_1866_firstperson_author_book_text_in_1989_based_modern_public_transcription_original_1866_print_page_not_visually_read",
+      "sourceRole": "SAPHIR_1866_FIRSTPERSON_COURIER_MENASHE_SATHON_YES_NO_REPLY_NOT_CODEx_SELF_AUTOPSY",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "evidenceClass": "B1",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "sourceObjectState": "Public-domain first edition of Saphir's 1866 book positively identified via Commons 498-page 2026-uploaded IA scan and NLI book catalogue, but original printed folios 12a–12b and 19b were NOT directly visually inspected because the 23 MB PDF could not be opened through research tools. Actual first-person author chapter ו text was directly read through Project Ben-Yehuda HTML transcription, whose metadata explicitly says based on later 1989 printed edition, not the 1866 first printing. In chapter ו Saphir writes he knew trusted scholar R. Yaakov Zeev (יעקב זאב) in Aleppo who copied the codex introduction and sent him information, and separately Saphir sent a list of unusual spelling/vowel/accent readings to him for Rabbi Menashe Sathon (מנשה סתהון) to inspect the codex and reply yes/no; author says answers returned and were still with him. In same chapter author expressly says cannot personally attest to what his eyes did not see, relying upon the courier's eyewitness account. Project Ben-Yehuda footnote 17 says some material published in Ha-Levanon. Source uses relative 'לפני שבע שנים' at first passage, 'לפני תשע שנים' at later separate discussion; do not compute absolute year from 1866 publication date because historical writing composition time differs, nor treat two numbers as dates of the same event. Modern 1986 Zer and 1990 Breuer spell respondent Menashe סיתהון with yod while author transcript has סתהון without it. No evidence that JTS L729 is physically the same exact original returned to author in his possession.",
+      "supportedUse": "Quote/paraphrase first-person Saphir historical account from modern digitized transcription with exact chapter and line/footnote locators; distinguish historical author testimony from this researcher's direct access to ancient Aleppo Codex; preserve orthography סתהון versus 1986/1990 סיתהון and separate courier from respondent; contrast accounts of 1855, 1857 and relative temporal reports without claiming literal dating proof.",
+      "forbiddenUse": "Claim original 1866 printed folio photographed and its glyphs collated by researcher; silently treat modern 1989-derived transcription as 1866 printed original image; claim Saphir personally inspected the original Aleppo codex; claim first-person letter in Saphir's hands physically proven identical to extant JTS L729; convert relative seven/nine years to exact 1859/1857 dates; call Menashe Sathon the same as a separate 'Moshe' person without original adjudication; publish reprint or web transcription as rights-cleared merely because underlying 1866 work is public domain; treat this history as a second ancient Hebrew text reading of Exodus17:16.",
+      "authorAccessAndClaimsWave36": {
+        "originalPrintYear": 1866,
+        "originalPrintCity": "Lyck",
+        "originalFirstPrintingFullPdfIdentified": true,
+        "originalPrintingPageImagesVisuallyInspected": false,
+        "originalPrintingPDFPagesTotal": 498,
+        "authorTextModernDigitalTranscriptionRead": true,
+        "modernTranscriptionBasePrintYear": 1989,
+        "sourceChapter": "ו",
+        "modernDigitalEditionMetadataRead": true,
+        "authorHistoricalCourierHebrew": "יעקב זאב",
+        "authorHistoricalRespondentHebrew": "מנשה סתהון",
+        "scholarZer1986RespondentHebrew": "מנשה סיתהון",
+        "respondentOrthographicVariantPreserved": true,
+        "authorPreparedQuestionList": true,
+        "authorSaysRespondentExaminedCodex": true,
+        "authorSaysReturnedRepliesHeldByHim": true,
+        "authorPersonallySawAleppoCodex": false,
+        "authorExplicitlyDisavowsWitnessOfUnseen": true,
+        "relativeFirstReportedYears": "לפני שבע שנים",
+        "relativeLaterReportedYears": "לפני תשע שנים",
+        "relativeYearsConvertedToFixedGregorianYears": false,
+        "firstPublishedHaLevanonMentionedInAuthorFootnote17": true,
+        "original1863PressVerseLineViewed": false,
+        "samePhysicalReturnedSaphirPaperIdentifiedWithJTS729": false,
+        "originalJTS729ManuscriptImagesViewed": false,
+        "originalExodus1716CodexFolioSeen": false,
+        "independentAncientManuscriptWitnessesAdded": 0,
+        "originalWorkPublicDomainMarkOnWikimediaCommons": true,
+        "modernTranscriptionRightsIndependentlyCleared": false,
+        "photographicReusePermissionFromThisRecord": false
+      }
     }
   ],
-  "auditRevision": "NG04_WAVE35_GOSHEN_GOTTSTEIN_1962_JTS729_OCR_VS_ZER1986_DISPUTED_SCRIBE_20261111"
+  "auditRevision": "NG04_WAVE36_SAPIR_1866_AUTHOR_FIRSTPERSON_MODERN_1989_TRANSCRIPTION_NOT_ORIGINAL_FOLIO_20261111"
 }

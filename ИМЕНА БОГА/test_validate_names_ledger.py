@@ -2087,5 +2087,26 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         zer["goshen1962DisagreementWave35"]["scholarlyHandwritingDisagreementResolved"] = True
         self.assertTrue(any("disputed JTS729 copyist" in e for e in validate_source_access(changed)))
 
+    def test_even_sapir_1866_primary_author_does_not_certify_unseen_codex(self) -> None:
+        for field, wrong in (
+            ("originalPrintingPageImagesVisuallyInspected", True),
+            ("modernTranscriptionBasePrintYear", 1866),
+            ("authorHistoricalRespondentHebrew", "משה סתהון"),
+            ("authorPersonallySawAleppoCodex", True),
+            ("authorExplicitlyDisavowsWitnessOfUnseen", False),
+            ("relativeYearsConvertedToFixedGregorianYears", True),
+            ("samePhysicalReturnedSaphirPaperIdentifiedWithJTS729", True),
+            ("originalJTS729ManuscriptImagesViewed", True),
+            ("originalExodus1716CodexFolioSeen", True),
+            ("independentAncientManuscriptWitnessesAdded", 1),
+            ("modernTranscriptionRightsIndependentlyCleared", True),
+        ):
+            with self.subTest(field=field):
+                revised = copy.deepcopy(self.sources)
+                obj = next(x for x in revised["records"] if x["id"] == "SRC-SAPIR-EVEN-SAPIR-1866-CH6-PRIMARY-AUTHOR")
+                obj["authorAccessAndClaimsWave36"][field] = wrong
+                self.assertTrue(any("Sapir 1866 first-person modern transcription" in e
+                                    for e in validate_source_access(revised)))
+
 if __name__ == "__main__":
     unittest.main()

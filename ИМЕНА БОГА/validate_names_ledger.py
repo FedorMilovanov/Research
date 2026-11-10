@@ -378,6 +378,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-PENKOWER-TEXTUS9-1981-SAPHIR-HALEVANON-1863": "PENKOWER_1981_PRINTED_P78_N63_SAPHIR_1863_ISSUE5_JTS729_BIBLIOGRAPHIC_CROSSWALK",
     "SRC-BREUER-MEGADIM10-1990-SITHON-SAPIR-REPORT": "BREUER_1990_ORIGINAL_P104_SAPIR_MENASHE_SITHON_YAAKOV_ZEEV_1857",
     "SRC-GOSHEN-GOTTSTEIN-TEXTUS2-1962-JTS729": "GOSHEN_GOTTSTEIN_1962_FIRSTHAND_JTS729_MANUSCRIPT_REPORT_NOT_PRESENT_DAY_AUTOPSY_AND_SCRIBE_HYPOTHESIS",
+    "SRC-SAPIR-EVEN-SAPIR-1866-CH6-PRIMARY-AUTHOR": "SAPHIR_1866_FIRSTPERSON_COURIER_MENASHE_SATHON_YES_NO_REPLY_NOT_CODEx_SELF_AUTOPSY",
     "SRC-RAHLFS-EXODUS17": "PUBLISHER_LXX_EXODUS_TRANSLATIONAL_SURFACE",
     "SRC-NET-EXODUS17": "ATTRIBUTED_TRANSLATION_TEXTUAL_HYPOTHESES",
     "SRC-NET-GENESIS22": "ATTRIBUTED_TRANSLATION_GRAMMAR_ALTERNATIVES",
@@ -653,6 +654,34 @@ def validate_source_access(sources: dict) -> list[str]:
                     or s.get("jacobBerlinAndYaakovZeevFullIdentityDemonstrated") is not False
                     or s.get("photoRightsGranted") is not False):
                 errors.append(f"{prefix}: Goshen1962 3rd-party OCR cannot become original PDF, direct JTS photo or certified Sapir hand")
+        if rid == "SRC-SAPIR-EVEN-SAPIR-1866-CH6-PRIMARY-AUTHOR":
+            a = source.get("authorAccessAndClaimsWave36", {})
+            if (source.get("url") != "https://benyehuda.org/read/42865"
+                    or source.get("year") != 1866 or source.get("rightsState") != "PERMISSION_REQUIRED"
+                    or source.get("publicationState") != "BLOCKED" or source.get("criticalEditionCollated") is not False
+                    or not isinstance(a, dict) or a.get("originalPrintYear") != 1866
+                    or a.get("originalPrintingPDFPagesTotal") != 498
+                    or a.get("originalPrintingPageImagesVisuallyInspected") is not False
+                    or a.get("authorTextModernDigitalTranscriptionRead") is not True
+                    or a.get("modernTranscriptionBasePrintYear") != 1989
+                    or a.get("authorHistoricalCourierHebrew") != "יעקב זאב"
+                    or a.get("authorHistoricalRespondentHebrew") != "מנשה סתהון"
+                    or a.get("scholarZer1986RespondentHebrew") != "מנשה סיתהון"
+                    or a.get("respondentOrthographicVariantPreserved") is not True
+                    or a.get("authorSaysReturnedRepliesHeldByHim") is not True
+                    or a.get("authorPersonallySawAleppoCodex") is not False
+                    or a.get("authorExplicitlyDisavowsWitnessOfUnseen") is not True
+                    or a.get("relativeFirstReportedYears") != "לפני שבע שנים"
+                    or a.get("relativeLaterReportedYears") != "לפני תשע שנים"
+                    or a.get("relativeYearsConvertedToFixedGregorianYears") is not False
+                    or a.get("samePhysicalReturnedSaphirPaperIdentifiedWithJTS729") is not False
+                    or a.get("originalJTS729ManuscriptImagesViewed") is not False
+                    or a.get("originalExodus1716CodexFolioSeen") is not False
+                    or a.get("original1863PressVerseLineViewed") is not False
+                    or a.get("independentAncientManuscriptWitnessesAdded") != 0
+                    or a.get("modernTranscriptionRightsIndependentlyCleared") is not False
+                    or a.get("photographicReusePermissionFromThisRecord") is not False):
+                errors.append(f"{prefix}: Sapir 1866 first-person modern transcription must not become ancient codex/1866 scan autopsy or fixed chronology")
         if rid == "SRC-ETCBC-ABEGG-BOWLEY-COOK-4Q72-JER33":
             if (source.get("url") != "https://theancientbible.org/4q72-p1/"
                     or source.get("fragmentLabel") != "f55ii"
