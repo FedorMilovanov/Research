@@ -396,6 +396,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-ETCBC-ABEGG-BOWLEY-COOK-4Q72-JER33": "ABEGG_BOWLEY_COOK_ETCBC_4Q72_JER33_EDITORIAL_MARKUP_AND_NONCOMMERCIAL_LICENSE",
     "SRC-LANGLOIS-JEREMIAH-4Q72-2019": "ATTRIBUTED_SCHOLARLY_ANALYSIS_4Q72_MT_JER33_16_20_VS_OLD_GREEK",
     "SRC-DJD-XV-TOV-4QJERC-1997": "TOV_DJD_XV_4QJERC_PRIMARY_EDITED_INTRO_TABLES_NOT_PLATE_AUTOPSY",
+    "SRC-GARCIA-MARTINEZ-TIGCHELAAR-1999-STUDY-EDITION-4Q72-271272": "BRILL_1999_4Q72_SECONDARY_DIFFERENT_COLUMN_AND_POTENTIAL_MUSEUM_PLATE_TYPO",
     "SRC-DSS-REED-FASC7-4Q72-PAM43101": "ARCHIVAL_PAM_43_101_MUSEUM_PLATE_245_4Q72_COLUMNS_XXIV_XXV",
     "SRC-IAA-B279109-PAM40963-4Q72-1954": "IAA_1954_PAM_M40_963_4Q72_MULTI_MANUSCRIPT_NEGATIVE_CATALOG_ONLY",
     "SRC-IAA-B360205-4Q72-PL245F6": "IAA_B360205_OFFICIAL_INFRARED_VISUALLY_INSPECTED_NO_INDEPENDENT_GLYPH_COLLATION",
@@ -690,6 +691,33 @@ def validate_source_access(sources: dict) -> list[str]:
                     or source.get("criticalColumn") != "XXV"
                     or source.get("specificIAA2012Fragment6MatchedByImage") is not False):
                 errors.append(f"{prefix}: inventory PAM/plate/column or photo match invented")
+        if rid == "SRC-GARCIA-MARTINEZ-TIGCHELAAR-1999-STUDY-EDITION-4Q72-271272":
+            if (source.get("url") != "https://ancientmodern.org/wp-content/uploads/2016/02/the_dead_sea_scrolls_study_edition_brill_1999.pdf"
+                    or source.get("original1999PrintedPages") != [271, 272]
+                    or source.get("webScreenshotPageIndices") != [295, 296]
+                    or source.get("original1999PageScreenshotsInspected") is not True
+                    or source.get("printedSecondaryManuscriptId") != "4Q72"
+                    or source.get("printedSecondarySiglum") != "4QJer c"
+                    or source.get("printedSecondaryJer33Column") != "XXIV"
+                    or source.get("printedSecondaryJer33Verses") != "33:16–20"
+                    or source.get("primaryTov1997UncertainPrecedingColumn") != "XXIV = Jer 33:?"
+                    or source.get("primaryTov1997Jer33Column") != "XXV"
+                    or source.get("primaryTov1997Jer33Verses") != "33:16–20"
+                    or source.get("secondaryMuseumPlateAsPrinted") != "ROC 232, 244–346, 671"
+                    or source.get("originalTovMuseumPlateAsPrinted") != "Mus. Inv. 232, 244, 245, 246, 671"
+                    or source.get("secondaryTov1991PagesAsPrinted") != "248–276"
+                    or source.get("authorUniversityAndPrimaryTov1991Pages") != "249–276"
+                    or source.get("typographicErrorDefinitivelyEstablished") is not False
+                    or source.get("reasonForNumberingChangeIndependentlyEstablished") is not False
+                    or source.get("distinctAncientManuscriptFrom1997") is not False
+                    or source.get("originalAncientPhotoPixelsInspected") is not False
+                    or source.get("editorOriginalDJDPhotographicPlatesInspected") is not False
+                    or source.get("photographReusePermissionGranted") is not False
+                    or source.get("publicationLicensed") is not False
+                    or source.get("secondarySummaryDoesNotReplaceFirstEdition") is not True
+                    or source.get("accessState") != "PARTIAL_OBJECT"
+                    or source.get("rightsState") != "PERMISSION_REQUIRED"):
+                errors.append(f"{prefix}: 1999 Brill synopsis cannot overwrite Tov original column, plate IDs, or publication/photo HOLD")
         if rid == "SRC-IAA-B279109-PAM40963-4Q72-1954":
             if (source.get("url") != "https://www.deadseascrolls.org.il/explore-the-archive/image/B-279109"
                     or source.get("officialImageId") != "B-279109"
