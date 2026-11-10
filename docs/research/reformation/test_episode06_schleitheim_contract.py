@@ -32,6 +32,27 @@ class SchleitheimEpisodeTests(unittest.TestCase):
         for s in ("REF-P24-BSB1","REF-P24-BSB2","REF-P12","930–934","940–946"):
             self.assertIn(s,manuscript)
 
+    def test_speyer_collective_consent_and_execution_boundary(self):
+        chapter = CH.read_text(encoding="utf-8")
+        reader, apparatus = chapter.split("## Источниковедческий аппарат", 1)
+        ledger = (D / "03_claim_verification_register.md").read_text(encoding="utf-8")
+        row = next(line for line in ledger.splitlines() if line.startswith("| C12 |"))
+        packet = (D / "independent_review_packets.md").read_text(encoding="utf-8")
+        for marker in ("Протестации 20 апреля", "против повторного крещения",
+                       "не доказывает личного голосования", "конкретных казнях"):
+            with self.subTest(reader=marker):
+                self.assertIn(marker.lower(), reader.lower())
+        for marker in ("REF-P11", "583–587", "widertauff", "ainig sein",
+                       "PARTIAL_OBJECT"):
+            with self.subTest(apparatus=marker):
+                self.assertIn(marker, apparatus)
+        for marker in ("COLLECTIVE_PROTESTATION_ANTI_REBAPTISM_CONSENT_TEXT_CHECKED",
+                       "INDIVIDUAL_VOTE_NOT_PROVEN", "LOCAL_EXECUTION_HOLD",
+                       "EVIDENCE_HOLD", "PUBLICATION_HOLD"):
+            self.assertIn(marker, row)
+        self.assertIn("Bv 583–587", packet)
+        self.assertIn("f.28r/f.28v", packet)
+
     def test_navigation_and_five_overclaims(self):
         for name in ("README.md","04_series_blueprint.md","SELF_PLAN.md",
                      "episode05_marburg_colloquy_1529_manuscript.md"):
