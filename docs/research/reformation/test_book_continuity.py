@@ -68,6 +68,42 @@ class BookContinuityTests(unittest.TestCase):
                                "PUBLICATION_HOLD"):
                     self.assertIn(status, apparatus)
 
+    def test_wave414_editorial_voice_outside_first_and_last_historical_readers(self):
+        """Reader retains historical claims; unresolved collation/review notes stay in apparatus."""
+        first_reader, first_notes = self.texts[PARTS[1]].split(
+            "## Источниковедческий аппарат", 1
+        )
+        for editorial_marker in (
+            "**Закрыто на уровне критического аппарата:**",
+            "**Дополнительный библиографический конфликт:**",
+        ):
+            with self.subTest(marker=editorial_marker):
+                self.assertNotIn(editorial_marker, first_reader)
+                self.assertEqual(first_notes.count(editorial_marker), 1)
+        for historical_marker in (
+            "однолистовая печать 97 тезисов 1517 года действительно сохранилась",
+            "в первом блоке отсутствует номер XVIII",
+            "Веймарское издание",
+            "Luther-Studienausgabe",
+            "USTC 710962",
+        ):
+            with self.subTest(fact=historical_marker):
+                self.assertIn(historical_marker, first_reader)
+
+        last_reader, last_notes = self.texts[PARTS[12]].split(
+            "## Источниковедческий аппарат", 1
+        )
+        sentence = ("Ей нужны независимая литературная и историческая рецензия, "
+                    "точные варианты первопечатей, правовая проверка иллюстраций "
+                    "и цитат, и окончательная редакторская приёмка.")
+        self.assertNotIn(sentence, last_reader)
+        self.assertEqual(last_notes.count(sentence), 1)
+        self.assertIn("Здесь заканчивается **двенадцатая историческая глава**.", last_reader)
+        self.assertIn("](epilogue_reformation_last_restoration_manuscript.md)", last_reader)
+        for notes in (first_notes, last_notes):
+            self.assertIn("NOT_EDITORIAL_READY", notes)
+            self.assertIn("PUBLICATION_HOLD", notes)
+
     def test_all_thirteen_forward_transitions_in_reader_text(self):
         for src, dest in zip(PARTS, PARTS[1:]):
             reader = self.texts[src].split("## Источниковедчес", 1)[0]
