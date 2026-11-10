@@ -2065,5 +2065,27 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                 self.assertTrue(any(("Menashe original witness" in s or "Penkower JTS list 1855" in s
                                      or "Breuer 1990 attribution" in s) for s in result))
 
+    def test_goshen_1962_cannot_convert_ocr_or_scribe_conjecture_to_autopsy(self) -> None:
+        for field, wrong in (
+            ("originalPublisherPdfScreenshotVisuallyInspected", True),
+            ("originalPublisherPdfOpened", True),
+            ("ourResearchJTS729OriginalImageViewed", True),
+            ("goshenYear1855CertainDateOfFinishedAnswerCopy", True),
+            ("disputedScribeIdentityIndependentlyResolved", True),
+            ("independentAncientWitnessCountGained", 2),
+            ("printed1863NewspaperIndependentlyCollated", True),
+            ("specificExodus1716OriginalWordformVerifiedDirectly", True),
+            ("jacobBerlinAndYaakovZeevFullIdentityDemonstrated", True),
+        ):
+            with self.subTest(field=field):
+                changed = copy.deepcopy(self.sources)
+                item = next(x for x in changed["records"] if x["id"] == "SRC-GOSHEN-GOTTSTEIN-TEXTUS2-1962-JTS729")
+                item["accessAndIndependenceWave35"][field] = wrong
+                self.assertTrue(any("Goshen1962 3rd-party OCR" in e for e in validate_source_access(changed)))
+        changed = copy.deepcopy(self.sources)
+        zer = next(x for x in changed["records"] if x["id"] == "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137")
+        zer["goshen1962DisagreementWave35"]["scholarlyHandwritingDisagreementResolved"] = True
+        self.assertTrue(any("disputed JTS729 copyist" in e for e in validate_source_access(changed)))
+
 if __name__ == "__main__":
     unittest.main()

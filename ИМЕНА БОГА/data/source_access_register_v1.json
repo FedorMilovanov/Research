@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 105,
+    "sourceRecords": 106,
     "approvedForProduct": 0
   },
   "records": [
@@ -3543,6 +3543,14 @@
         "manuscriptCopyDate1855VersusDispatch1857Resolved": false,
         "exodusCodexOriginalSeen": false,
         "jtsAutographSeen": false
+      },
+      "goshen1962DisagreementWave35": {
+        "zer1986ScribeClassification": "ANONYMOUS_COPYIST_NOT_SAPHIR_AUTOGRAPH",
+        "earlierGoshen1962AuthorshipConjecture": "SAPHIR_MAY_HAVE_COPIED_HIS_OWN_LIST",
+        "earlierGoshen1962ScholarOriginalJTSExaminedReported": true,
+        "scholarlyHandwritingDisagreementResolved": false,
+        "originalJTS729HandwrittenPagesIndependentlyCompared": false,
+        "zer1986AuthorshipViewDoesNotCancelEarlierScholar": true
       }
     },
     {
@@ -3620,7 +3628,11 @@
         "unrelatedNathanShapiraNLICatalogueId": "NNL_ALEPH990000621650205171",
         "jts729AutographInspected": false,
         "aleppoOriginalExodus17_16ManuscriptInspected": false,
-        "date1855HandCopyVersus1857DispatchReconciled": false
+        "date1855HandCopyVersus1857DispatchReconciled": false,
+        "year1855RefersToIntroAsReportedByGoshen1962": true,
+        "year1857RefersToDispatchAsReportedByZerAndBreuer": true,
+        "year1855IsProvenDateForCompleteAnswerCopy": false,
+        "goshen1962IntroDateFromOriginalJTSIndependentlyReadByUs": false
       }
     },
     {
@@ -3659,7 +3671,61 @@
         "originalJtsOrAleppoCodexSeen": false,
         "rightsGranted": false
       }
+    },
+    {
+      "id": "SRC-GOSHEN-GOTTSTEIN-TEXTUS2-1962-JTS729",
+      "title": "M. H. Goshen-Gottstein, Biblical Manuscripts in the United States, Textus 2 (1962), 28–59, §IV The Missing Part of the Aleppo Codex and the Manuscript of Sapir's Collations",
+      "creator": "Moshe H. Goshen-Gottstein",
+      "year": 1962,
+      "url": "https://bibleproject.huji.ac.il/sites/default/files/he_bible_project/files/goshen-gottstein_m.h.2.pdf",
+      "publisherIndexUrl": "https://bibleproject.huji.ac.il/textus",
+      "accessibleAuthorTextReproductionUrl": "https://www.scribd.com/document/617160048/M-H-Goshen-Gottstein-1962-Biblical-Manuscripts-in-the-United-States-Textus-2-Pp-28-59",
+      "objectType": "university_bibliography_verified_1962_published_author_article_through_community_ocr_not_original_pdf_pages",
+      "sourceRole": "GOSHEN_GOTTSTEIN_1962_FIRSTHAND_JTS729_MANUSCRIPT_REPORT_NOT_PRESENT_DAY_AUTOPSY_AND_SCRIBE_HYPOTHESIS",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "evidenceClass": "B1",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "sourceObjectState": "Hebrew University Bible Project official Textus index bibliographically verifies Goshen-Gottstein original publication 1962 Textus2 pp28-59 and links PDF, but publisher original PDF download/Open repeatedly failed or timed out; absolutely NO claim of screenshot/page-image autopsy of the publisher PDF. Complete original-author article was read as third-party user-uploaded Scribd OCR with obvious OCR defects, especially §IV around original printed pp~34–37. The author reports PERSONAL physical study of JTS 729, eight large-folio two-column pages with first-page introduction dated 1855, declares JTS copy and 1863 Ha-Levanon and 1866 Even Sapir derivative transcripts from same collations, not independent ancient witnesses. He says question/answer columns in one hand, infers the hand copied by Sapir himself; this conflicts with Rafi Zer 1986 editor who says manuscript anonymous copy not Saphir autograph. These are differing scholarly attribution/conjecture levels; present Research agent has not visually opened JTS 729 original ink or compared hand. Author reported 42 control cases coinciding with extant Aleppo readings is HIS ancient comparison, not ours; do not promote to completed present-day critical collation or peer acceptance. Historical intro 1855 can differ from 1857 dispatch reported by Zer1986 and Breuer1990; full copying chronology not established. His source English says Jacob Berlin as a facilitator but later sources Hebrew Yaakov Ze'ev; precise full person identity or equivalence NOT proven.",
+      "supportedUse": "Attribute to 1962 author's personal historical manuscript analysis, his evidence that printed derivatives and JTS list are genealogically dependent and his tentative hypothesis about who copied it; distinguish date physically written in original introduction (author's report) from sending questions (other authors). Identify uncertainty due to community OCR and no original publisher article image; source is secondary evidence for our manuscript work.",
+      "forbiddenUse": "State we saw original 1962 journal PDF page screenshot; treat third-party Scribd OCR as independently collated publisher original or physical JTS729 manuscript; count 1863 newspaper and JTS copy as independent ancient textual witnesses; present Goshen's inferred copyist-Sapir as proven historical fact and silently erase Zer1986 counter-assessment; turn 1855 intro into certified date of entire copied answers; equate English Jacob Berlin and Hebrew Yaakov Ze'ev without independent prosopography; transfer Scribd's rights or any original manuscript image rights to Product.",
+      "accessAndIndependenceWave35": {
+        "publisherTitleIndexVerified": true,
+        "originalPublisherPdfUriFound": true,
+        "originalPublisherPdfOpened": false,
+        "originalPublisherPdfScreenshotVisuallyInspected": false,
+        "communityUploadedFullAuthorTextOcrRead": true,
+        "communityUploadedTextContainsKnownOcrErrors": true,
+        "publishedPrintPages": "28–59",
+        "sourceRelevantSection": "IV",
+        "goshen1962ScholarPersonallyInspectedJts729AccordingToHisPublication": true,
+        "ourResearchJTS729OriginalImageViewed": false,
+        "goshenFirstPageIntroductionYearReported": 1855,
+        "goshenYear1855CertainDateOfFinishedAnswerCopy": false,
+        "zerBreuerDispatchYearReported": 1857,
+        "yearsReferToDistinctDescribedEvents": true,
+        "fullTranscriptionChronologyProven": false,
+        "manuscriptFolioPageCountReported": 8,
+        "goshenTwoColumnsSameHandReported": true,
+        "goshenConjecturedSapirCopiedHisOriginalList": true,
+        "zer1986EditorAttributedAnonymousScribe": true,
+        "disputedScribeIdentityIndependentlyResolved": false,
+        "printed1863NewspaperIndependentlyCollated": false,
+        "ancientAleppoExodus1716FoliosViewed": false,
+        "commonHistoricalBaseFor1863NewspaperAndJTSReported": true,
+        "independentAncientWitnessCountGained": 0,
+        "specificExodus1716OriginalWordformVerifiedDirectly": false,
+        "jacobBerlinAndYaakovZeevFullIdentityDemonstrated": false,
+        "photoRightsGranted": false
+      }
     }
   ],
-  "auditRevision": "NG04_WAVE34_ZER_P151_BREUER1990_P104_MENASHE_SITHON_MOSHE_INCONSISTENCY_20261111"
+  "auditRevision": "NG04_WAVE35_GOSHEN_GOTTSTEIN_1962_JTS729_OCR_VS_ZER1986_DISPUTED_SCRIBE_20261111"
 }

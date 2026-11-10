@@ -377,6 +377,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-OFER-BREUER-MASORAH-2008-EX17-16": "OFER_2008_EDITORIAL_BREUER_TWO_WORD_VERSUS_ALEPPO_ONE_WORD_ATTRIBUTED_ANALYSIS",
     "SRC-PENKOWER-TEXTUS9-1981-SAPHIR-HALEVANON-1863": "PENKOWER_1981_PRINTED_P78_N63_SAPHIR_1863_ISSUE5_JTS729_BIBLIOGRAPHIC_CROSSWALK",
     "SRC-BREUER-MEGADIM10-1990-SITHON-SAPIR-REPORT": "BREUER_1990_ORIGINAL_P104_SAPIR_MENASHE_SITHON_YAAKOV_ZEEV_1857",
+    "SRC-GOSHEN-GOTTSTEIN-TEXTUS2-1962-JTS729": "GOSHEN_GOTTSTEIN_1962_FIRSTHAND_JTS729_MANUSCRIPT_REPORT_NOT_PRESENT_DAY_AUTOPSY_AND_SCRIBE_HYPOTHESIS",
     "SRC-RAHLFS-EXODUS17": "PUBLISHER_LXX_EXODUS_TRANSLATIONAL_SURFACE",
     "SRC-NET-EXODUS17": "ATTRIBUTED_TRANSLATION_TEXTUAL_HYPOTHESES",
     "SRC-NET-GENESIS22": "ATTRIBUTED_TRANSLATION_GRAMMAR_ALTERNATIVES",
@@ -612,6 +613,46 @@ def validate_source_access(sources: dict) -> list[str]:
                     or w.get("originalJtsOrAleppoCodexSeen") is not False
                     or w.get("rightsGranted") is not False):
                 errors.append(f"{prefix}: Breuer 1990 attribution cannot become his 1977 Exodus critical apparatus or ancient autopsy")
+        if rid == "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137":
+            scribe = source.get("goshen1962DisagreementWave35", {})
+            if (not isinstance(scribe, dict)
+                    or scribe.get("zer1986ScribeClassification") != "ANONYMOUS_COPYIST_NOT_SAPHIR_AUTOGRAPH"
+                    or scribe.get("earlierGoshen1962AuthorshipConjecture") != "SAPHIR_MAY_HAVE_COPIED_HIS_OWN_LIST"
+                    or scribe.get("scholarlyHandwritingDisagreementResolved") is not False
+                    or scribe.get("originalJTS729HandwrittenPagesIndependentlyCompared") is not False):
+                errors.append(f"{prefix}: disputed JTS729 copyist Goshen 1962 versus Zer 1986 cannot be resolved by fiat")
+        if rid == "SRC-GOSHEN-GOTTSTEIN-TEXTUS2-1962-JTS729":
+            s = source.get("accessAndIndependenceWave35", {})
+            if (source.get("url") != "https://bibleproject.huji.ac.il/sites/default/files/he_bible_project/files/goshen-gottstein_m.h.2.pdf"
+                    or source.get("year") != 1962
+                    or source.get("rightsState") != "PERMISSION_REQUIRED"
+                    or source.get("publicationState") != "BLOCKED"
+                    or source.get("criticalEditionCollated") is not False
+                    or not isinstance(s, dict)
+                    or s.get("publisherTitleIndexVerified") is not True
+                    or s.get("originalPublisherPdfOpened") is not False
+                    or s.get("originalPublisherPdfScreenshotVisuallyInspected") is not False
+                    or s.get("communityUploadedFullAuthorTextOcrRead") is not True
+                    or s.get("communityUploadedTextContainsKnownOcrErrors") is not True
+                    or s.get("goshen1962ScholarPersonallyInspectedJts729AccordingToHisPublication") is not True
+                    or s.get("ourResearchJTS729OriginalImageViewed") is not False
+                    or s.get("goshenFirstPageIntroductionYearReported") != 1855
+                    or s.get("goshenYear1855CertainDateOfFinishedAnswerCopy") is not False
+                    or s.get("zerBreuerDispatchYearReported") != 1857
+                    or s.get("yearsReferToDistinctDescribedEvents") is not True
+                    or s.get("fullTranscriptionChronologyProven") is not False
+                    or s.get("manuscriptFolioPageCountReported") != 8
+                    or s.get("goshenConjecturedSapirCopiedHisOriginalList") is not True
+                    or s.get("zer1986EditorAttributedAnonymousScribe") is not True
+                    or s.get("disputedScribeIdentityIndependentlyResolved") is not False
+                    or s.get("commonHistoricalBaseFor1863NewspaperAndJTSReported") is not True
+                    or s.get("independentAncientWitnessCountGained") != 0
+                    or s.get("printed1863NewspaperIndependentlyCollated") is not False
+                    or s.get("ancientAleppoExodus1716FoliosViewed") is not False
+                    or s.get("specificExodus1716OriginalWordformVerifiedDirectly") is not False
+                    or s.get("jacobBerlinAndYaakovZeevFullIdentityDemonstrated") is not False
+                    or s.get("photoRightsGranted") is not False):
+                errors.append(f"{prefix}: Goshen1962 3rd-party OCR cannot become original PDF, direct JTS photo or certified Sapir hand")
         if rid == "SRC-ETCBC-ABEGG-BOWLEY-COOK-4Q72-JER33":
             if (source.get("url") != "https://theancientbible.org/4q72-p1/"
                     or source.get("fragmentLabel") != "f55ii"
