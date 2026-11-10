@@ -362,6 +362,8 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-RAHLFS-ISAIAH": "PUBLISHER_EDITED_GREEK_LXX_SURFACE",
     "SRC-EUSEBIUS-DEMONSTRATIO-7-1-135-GREEK-ISA9": "EUSEBIUS_DEMONSTRATIO_7_1_135_GREEK_SOME_COPIES_LONG_ISAIAH9_TESTIMONY",
     "SRC-PASS-PENNER-MARCHALIANUS-ISA9-ZIEGLER-REPORT": "SECONDARY_MARCHALIANUS_ISAIAH9_GREEK_LONG_READING_APPARATUS_SIGLA_REPORTED",
+    "SRC-ZIEGLER-GOTTINGEN-ISAIAS-1983-ORIGINAL-APPARATUS-ACCESS": "ZIEGLER_GOTTINGEN_ISAIAS_1983_ORIGINAL_APP_I_II_PREVIEW_CH1_ISA9_UNREAD",
+    "SRC-BAV-VATGR2125-MARCHALIANUS-Q-ISAIAH-IIIF": "VATICAN_ORIGINAL_Q_VAT_GR_2125_ISAIAH_171_338_IIIF_MANIFEST_NO_ISA9_FOLIO_AUTOPSY",
     "SRC-ORTHODOX-ISAIAH9": "UNPINNED_ORTHODOX_GREEK_WEB_SURFACE",
     "SRC-RASHI-ISAIAH9": "ATTRIBUTED_JEWISH_EXEGETICAL_RECEPTION",
     "SRC-RADAK-ISAIAH9": "ATTRIBUTED_JEWISH_EXEGETICAL_RECEPTION",
@@ -534,6 +536,30 @@ def validate_source_access(sources: dict) -> list[str]:
                     or source.get("iaaPhotoLicensedByEitherTextLicense") is not False
                     or source.get("publicationLicenseComplianceApproved") is not False):
                 errors.append(f"{prefix}: Abegg/ETCBC Qumran rendering independent witness or license falsely upgraded")
+        if rid == "SRC-ZIEGLER-GOTTINGEN-ISAIAS-1983-ORIGINAL-APPARATUS-ACCESS":
+            if (source.get("url") != "https://septuaginta.uni-goettingen.de/publications/septuaginta/"
+                    or source.get("editionVolume") != "XIV"
+                    or source.get("editionYear") != 1983
+                    or source.get("editionNumber") != 3
+                    or source.get("editionISBN") != "3-525-53424-8"
+                    or source.get("originalApparatusIIsaiah9Read") is not False
+                    or source.get("originalApparatusIIIsaiah9Read") is not False
+                    or source.get("licensedCompleteAccessAvailableToResearch") is not False
+                    or source.get("manuscriptsIndependentlyCollated") is not False):
+                errors.append(f"{prefix}: Ziegler 1983 edition preview falsely promoted to Isaiah9 apparatus autopsy")
+        if rid == "SRC-BAV-VATGR2125-MARCHALIANUS-Q-ISAIAH-IIIF":
+            if (source.get("url") != "https://digi.vatlib.it/view/MSS_Vat.gr.2125"
+                    or source.get("iiifManifestUrl") != "https://digi.vatlib.it/iiif/MSS_Vat.gr.2125/manifest.json"
+                    or source.get("shelfmark") != "Vat.gr.2125"
+                    or source.get("septuagintSiglum") != "Q"
+                    or source.get("isaiahPageRange") != "171–338"
+                    or source.get("manifestCanvasCount") != 1718
+                    or source.get("page171Canvas") != "https://digi.vatlib.it/iiif/MSS_Vat.gr.2125/canvas/p0349"
+                    or source.get("exactIsaiah9CanvasVerified") is not False
+                    or source.get("originalIsaiah9ImagePixelsInspected") is not False
+                    or source.get("originalIsaiah9LetterformsCollated") is not False
+                    or source.get("photoReusePermissionGranted") is not False):
+                errors.append(f"{prefix}: official Q IIIF manifest falsely promoted to image or manuscript-letter autopsy")
         if rid == "SRC-EUSEBIUS-DEMONSTRATIO-7-1-135-GREEK-ISA9":
             if (source.get("url") != "https://www.sophiascriptura.com/fathers/eusebius-demonstratio/7-1-127/"
                     or source.get("ancientReference") != "Demonstratio Evangelica 7.1.135"

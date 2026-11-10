@@ -128,6 +128,20 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("scholarly secondary apparatus witness report" in e
                             for e in validate_source_access(sources)))
 
+    def test_isaiah9_ziegler_publisher_preview_is_not_access_to_apparatus_locus(self) -> None:
+        sources = copy.deepcopy(self.sources)
+        rec = next(x for x in sources["records"] if x["id"] == "SRC-ZIEGLER-GOTTINGEN-ISAIAS-1983-ORIGINAL-APPARATUS-ACCESS")
+        rec["originalApparatusIIsaiah9Read"] = True
+        self.assertTrue(any("Ziegler 1983 edition preview falsely promoted" in e
+                            for e in validate_source_access(sources)))
+
+    def test_vatican_marchalianus_iiif_manifest_is_not_a_photo_letter_collation(self) -> None:
+        sources = copy.deepcopy(self.sources)
+        rec = next(x for x in sources["records"] if x["id"] == "SRC-BAV-VATGR2125-MARCHALIANUS-Q-ISAIAH-IIIF")
+        rec["originalIsaiah9ImagePixelsInspected"] = True
+        self.assertTrue(any("official Q IIIF manifest falsely promoted" in e
+                            for e in validate_source_access(sources)))
+
     def test_current_research_corpora_pass_structure(self) -> None:
         self.assertEqual([], validate(self.baseline))
         self.assertEqual([], validate_extension(self.extension, self.baseline))

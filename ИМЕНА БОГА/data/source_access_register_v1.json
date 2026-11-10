@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 97,
+    "sourceRecords": 99,
     "approvedForProduct": 0
   },
   "records": [
@@ -3185,7 +3185,82 @@
       "secondaryZieglerApparatusReport": true,
       "zieglerCriticalApparatusDirectlyRead": false,
       "ancientCodexIndependentlyCollated": false
+    },
+    {
+      "id": "SRC-ZIEGLER-GOTTINGEN-ISAIAS-1983-ORIGINAL-APPARATUS-ACCESS",
+      "title": "Joseph Ziegler (ed.), Isaias, Septuaginta Vetus Testamentum Graecum XIV, 3rd ed. Göttingen 1983 — original critical Apparatus I and II, digital preview limited before Isaiah 9",
+      "creator": "Joseph Ziegler; Göttingen Septuagint Project; Vandenhoeck & Ruprecht",
+      "year": 1983,
+      "url": "https://septuaginta.uni-goettingen.de/publications/septuaginta/",
+      "bibliographicUrl": "https://catalogue.bnf.fr/ark:/12148/cb392258401",
+      "apparatusIUrl": "https://biblia.com/api/plugins/embeddedpreview?historybuttons=false&layout=minimal&navigationbox=false&resourceName=LLS%3AGSXIVISCAPP1&sharebutton=false",
+      "apparatusIIUrl": "https://biblia.com/api/plugins/embeddedpreview?historybuttons=false&layout=minimal&navigationbox=false&resourceName=LLS%3AGSXIVISCAPP2&sharebutton=false",
+      "productAccessUrl": "https://www.accordancebible.com/product/lxx-gottingen-with-apparatus-isaiah/",
+      "objectType": "publisher_original_1983_critical_apparatus_bibliography_and_chapter1_preview_not_Isaiah9",
+      "sourceRole": "ZIEGLER_GOTTINGEN_ISAIAS_1983_ORIGINAL_APP_I_II_PREVIEW_CH1_ISA9_UNREAD",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "evidenceClass": "B1",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "sourceObjectState": "Official Göttingen Septuagint publisher bibliography and French national library record directly read 2026-11-10: Ziegler Isaias Vol XIV 3rd ed. Göttingen 1983, 370 pages, ISBN 3-525-53424-8. Logos/Biblia two separate direct digital embeds for original Apparatus I and II checked. They show copyright/front matter and some Isaiah 1 apparatus entries; BOTH previews explicitly stop before chapter 9. Thus original book's preview exists and its contents for Isa 9:5/6 have NOT been accessed, transcribed, photographed, compared or collated. Accordance product offers licensed full Göttingen Isaiah module with two apparatus modules; it is not currently connected/owned/accessible in this review.",
+      "supportedUse": "Exact original edition, edition number, ISBN, two distinct apparatus resources and precise practical acquisition route. Document confirmed access gap preventing independent validation of Pass/Penner's Isaiah9 manuscript-sigla report. Preserve secondary attribution and no publication signoff until original printed Isaiah9 apparatus is read.",
+      "forbiddenUse": "Claim direct access to either critical apparatus at Isaiah 9:5/6; treat introductory Isaiah1 preview as Isaiah9 collation; assert paid module already licensed; reproduce copyrighted edition; claim a printed critical apparatus itself equals autopsy of each physical ancient codex.",
+      "editionVolume": "XIV",
+      "editionYear": 1983,
+      "editionNumber": 3,
+      "editionISBN": "3-525-53424-8",
+      "originalApparatusIIsaiah9Read": false,
+      "originalApparatusIIIsaiah9Read": false,
+      "previewOnlyThrough": "Isaiah chapter 1",
+      "licensedCompleteAccessAvailableToResearch": false,
+      "manuscriptsIndependentlyCollated": false
+    },
+    {
+      "id": "SRC-BAV-VATGR2125-MARCHALIANUS-Q-ISAIAH-IIIF",
+      "title": "Biblioteca Apostolica Vaticana, Codex Marchalianus (Vat. gr. 2125, Q), original official digital manuscript IIIF manifest and Isaiah page range",
+      "creator": "Biblioteca Apostolica Vaticana; Vatican Digital Library",
+      "year": null,
+      "url": "https://digi.vatlib.it/view/MSS_Vat.gr.2125",
+      "iiifManifestUrl": "https://digi.vatlib.it/iiif/MSS_Vat.gr.2125/manifest.json",
+      "gottCatalogueUrl": "https://septuaginta.uni-goettingen.de/catalogue/Ra_Q/",
+      "pinakesUrl": "https://pinakes.irht.cnrs.fr/notices/cote/68755/",
+      "objectType": "official_original_manuscript_digital_catalogue_and_IIIF_manifest_without_verse_photo_review",
+      "sourceRole": "VATICAN_ORIGINAL_Q_VAT_GR_2125_ISAIAH_171_338_IIIF_MANIFEST_NO_ISA9_FOLIO_AUTOPSY",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "evidenceClass": "A2",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "sourceObjectState": "Official DigiVatLib manuscript catalogue directly read 2026-11-10: Vat.gr.2125, Codex Marchalianus (Q), Greek Prophets, Isaiah on physically numbered pages 171–338, catalog dating c.700. The official Vatican IIIF Presentation 2 manifest was fetched and parsed as JSON; 1718 canvases are enumerated; page171 maps to canvas p0349 and the catalog supplies each canvas' image service URL. Crucially no image bitmap of the Isaiah9 verse itself and no exact verse-to-page locus was independently inspected, so do not infer image content or exact Isaiah9 page number from this manifest. Göttingen catalogue identifies Q as Vat.gr.2125 and dates manuscript VI–VII century with scholarly caveats; Vatican dating is around 700, not a proven exact year. Manifest credits 'Images Copyright Biblioteca Apostolica Vaticana'; no public reuse permission obtained.",
+      "supportedUse": "Establish primary photo repository identity, definitive shelfmark, Göttingen siglum Q, Isaiah p171–338, real IIIF manifest/individual canvas access architecture, scholarly different dating of Q. Narrow next work to authorized image of specific Isa9:5/6 page instead of speculatively claiming a codex read.",
+      "forbiddenUse": "Claim direct photograph or Greek letterform of Isaiah9 was inspected or independently transcribed; assign an exact folio or canvas to the verse without viewing text; infer late textual additions solely from Q; claim Vatican image copyright license or Product approval.",
+      "shelfmark": "Vat.gr.2125",
+      "septuagintSiglum": "Q",
+      "codexName": "Codex Marchalianus",
+      "isaiahPageRange": "171–338",
+      "manifestCanvasCount": 1718,
+      "page171Canvas": "https://digi.vatlib.it/iiif/MSS_Vat.gr.2125/canvas/p0349",
+      "imageCopyrightAttribution": "Images Copyright Biblioteca Apostolica Vaticana",
+      "exactIsaiah9CanvasVerified": false,
+      "originalIsaiah9ImagePixelsInspected": false,
+      "originalIsaiah9LetterformsCollated": false,
+      "photoReusePermissionGranted": false
     }
   ],
-  "auditRevision": "NG10_WAVE15_EUSEBIUS_ANCIENT_SOME_COPIES_AND_PASS_PENNER_ZIEGLER_REPORTED_ISAIAH9_20261110"
+  "auditRevision": "NG10_WAVE16_ZIEGLER_ORIGINAL_APPARATUS_ACCESS_AND_VATICAN_Q_IIIF_METADATA_20261110"
 }
