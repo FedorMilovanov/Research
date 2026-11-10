@@ -81,7 +81,9 @@ class JustificationBookTests(unittest.TestCase):
             with self.subTest(source=source_id):
                 row = rows[source_id]
                 self.assertIn(marker, row["verificationNote"])
-                self.assertIn("NOT", row["verificationNote"])
+                self.assertTrue(any(word in row["verificationNote"].lower()
+                                    for word in ("not independently collated",
+                                                 "yet to collate", "uncollated")))
                 self.assertIn("RIGHTS_HOLD", row["holds"])
                 self.assertIn("PUBLICATION_HOLD", row["holds"])
         ledger = (D / "03_claim_verification_register.md").read_text(
