@@ -78,7 +78,7 @@ class BookContinuityTests(unittest.TestCase):
                 self.assertNotIn("Теперь доступны **две разные академические презентации", reader)
                 for marker in ("RESEARCH_MANUSCRIPT_DRAFT", "PUBLICATION_HOLD"):
                     self.assertIn(marker, apparatus)
-        chapter11reader, chapter11notes = self.texts[PARTS[12]].split(
+        chapter11reader, chapter11notes = self.texts[PARTS[11]].split(
             "## Источниковедчес", 1
         )
         self.assertIn("22 мая 1599 года", chapter11reader)
