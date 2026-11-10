@@ -162,7 +162,8 @@ class NantesDigitalProvenanceTests(unittest.TestCase):
         packet = (HERE / "independent_review_packets.md").read_text(encoding="utf-8")
         source = self.sources["REF-P86"]
         self.assertEqual(source["accessState"], "PARTIAL_OBJECT")
-        self.assertTrue(source["verificationNote"].startswith("2026-11-10 WAVE423"))
+        self.assertTrue(source["verificationNote"].startswith("2026-11-10 WAVE425"))
+        self.assertIn("2026-11-10 WAVE423", source["verificationNote"])
         self.assertIn("2026-11-10 WAVE422", source["verificationNote"])
         for token in ("FILES_ACQUIRED_DIRECTLY", "THREE_FOLIOS_VISUALLY_INSPECTED",
                       "F028V_CERTIFICATION_DIRECT_READ_HOLD", "EARLY_XI_COLLATION_HOLD",
@@ -250,6 +251,38 @@ class NantesDigitalProvenanceTests(unittest.TestCase):
             self.assertIn("FULL_DIPLOMATIC_XI_COLLATION_HOLD", document)
             self.assertIn("PUBLICATION_HOLD", document)
             self.assertNotIn("F28R_DATE_DIRECTLY_READ", document)
+
+    def test_wave425_exception_starts_inside_printed_L440(self):
+        """Registered Paris print splits 'fors &' and 'excepté' across L440/L441."""
+        request = (HERE / "nantes_bge_ms_fr_413_archival_request.md").read_text(encoding="utf-8")
+        packet = (HERE / "independent_review_packets.md").read_text(encoding="utf-8")
+        source = self.sources["REF-P86"]
+        marker = "PARIS_XI_EXCEPTION_STARTS_L440_FORS_ET"
+        for label, document in (("source", source["verificationNote"]),
+                                ("archive", request), ("dossier", self.dossier),
+                                ("chapter", self.chapter), ("claim", self.claims),
+                                ("packet", packet), ("plan", self.plan)):
+            with self.subTest(document=label):
+                self.assertIn(marker, document)
+                self.assertIn("RIGHTS_HOLD", document)
+                self.assertIn("PUBLICATION_HOLD", document)
+        for label, document in (("source", source["verificationNote"]),
+                                ("archive", request), ("packet", packet),
+                                ("plan", self.plan)):
+            with self.subTest(complete_boundary=label):
+                self.assertIn("PARIS_XI_L440_L455_COMPLETE_BLOCK", document)
+        for token in ("L440", "fors &", "L441", "excepté", "L455",
+                      "L456", "Voulons & entendons"):
+            with self.subTest(print_anchor=token):
+                self.assertIn(token, request)
+        self.assertEqual(source["accessState"], "PARTIAL_OBJECT")
+        self.assertIn("FULL_DIPLOMATIC_XI_COLLATION_HOLD", source["verificationNote"])
+        self.assertIn("F28R_SIDE_UNCONFIRMED", self.plan)
+        self.assertIn("REVIEW_PACKETS_PREPARED / NOT_SENT", packet)
+        self.assertNotIn(marker, self.chapter.split("## Источниковедческий аппарат", 1)[0])
+        self.assertEqual(self.source_count, 204)
+        for hold in ("ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"):
+            self.assertIn(hold, source["holds"])
 
     def test_xi_remains_secondary_variant_and_not_publication_approved(self):
         for doc in (self.chapter, self.dossier, self.plan):
