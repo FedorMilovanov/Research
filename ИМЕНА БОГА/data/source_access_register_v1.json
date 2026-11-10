@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 99,
+    "sourceRecords": 100,
     "approvedForProduct": 0
   },
   "records": [
@@ -2922,7 +2922,7 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "sourceObjectState": "Original author-hosted PDF visually inspected at print p18-19 (PDF screenshot page index5) and directly read corresponding section 4Q72. Langlois observes Jer33:16-20 seem attested in 4Q72 in agreement with MT, unlike Old Greek, and describes 4Q72 as close to MT; he attributes manuscript evidence to Tov 1997. Full 2019 chapter and original 4Q72 photo and DJD XV not independently collated.",
+      "sourceObjectState": "Original author-hosted PDF visually inspected at print p18-19 (PDF screenshot page index5) and directly read corresponding section 4Q72. Langlois observes Jer33:16-20 seem attested in 4Q72 in agreement with MT, unlike Old Greek, and describes 4Q72 as close to MT; he attributes manuscript evidence to Tov 1997. Full 2019 chapter and original 4Q72 photo and DJD XV not independently collated. WAVE20 added narrow original author-PDF printed footnote19 link PAM40.963 => IAA B-279109. Web screenshot timed out, so footnote was inspected as parsed PDF text only, not a visual screenshot or historical photo pixels.",
       "supportedUse": "Attributed support for 4Q72 preserving portions of Jer33:16-20 close to MT, conditional phrasing 'seem attested', comparison with absent Old Greek Jer40:16-20, and scholar's paleographic assessment. Distinguish this analysis from the Qumran-Digital edited transcription and original manuscript.",
       "forbiddenUse": "Treat Langlois chapter as an original ancient manuscript photograph, use his estimated scroll dating as certain calendar date, infer that every verse 33:14-26 survives, claim a settled textual priority, or cite his discussion as personal critical codex collation.",
       "printedPages": "9–31",
@@ -2931,7 +2931,15 @@
         19
       ],
       "manuscriptPhotoIndependentlyCollated": false,
-      "originalCriticalApparatusRead": false
+      "originalCriticalApparatusRead": false,
+      "historicalNegativeFootnote19": {
+        "pageLocator": "author PDF footnote 19",
+        "pamNumber": "40.963",
+        "officialIAAId": "B-279109",
+        "photoPixelsReviewedInOurResearch": false,
+        "screenshotOfThisFootnoteObtained": false,
+        "originalPdfTextExtractionRead": true
+      }
     },
     {
       "id": "SRC-DJD-XV-TOV-4QJERC-1997",
@@ -2994,14 +3002,68 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "sourceObjectState": "Original historical inventory page directly read: 4Q72 Jerc C51b museum plate 245 PAM 43.101; photograph-list entry 43.101 lists Jer31:4–... and 33:16–20; museum-plate entry 245 reports columns 22–23 and 24–25. The inventory itself is explicitly preliminary and warns that museum plate, photographic plate and scroll fragment have different numbering and no one-to-one guarantees; contents of photographed tiny fragment require image comparison.",
+      "sourceObjectState": "Original historical inventory page directly read: 4Q72 Jerc C51b museum plate 245 PAM 43.101; photograph-list entry 43.101 lists Jer31:4–... and 33:16–20; museum-plate entry 245 reports columns 22–23 and 24–25. The inventory itself is explicitly preliminary and warns that museum plate, photographic plate and scroll fragment have different numbering and no one-to-one guarantees; contents of photographed tiny fragment require image comparison. WAVE20: separate historical Fascicle9 entry PAM40.963 lists 4Q72 Jerc Jer4:13-16 and 33:16-20; official IAA B-279109 metadata confirms scanned multi-manuscript historical negative, February1954. This is another PHOTO OBJECT, not a second scroll or confirmed editor-fragment matching.",
       "supportedUse": "Connect 4Q72 c (4QJer c), museum plate 245 and PAM 43.101 (columns 24–25 with Jer33:16–20) and avoid mixing museum 245 with DJD publication Roman plate XXX–XXXVI. Provides no specific proof that IAA 'Frag 6' matches editors' frg 55 ii without photo cross-check.",
       "forbiddenUse": "Claim all the scientific text/letters are independently imaged and collated; equate PAM 43.101 with the 2012 IAA photo ID B-360205 as the same physical exposure; treat preliminary inventory as legally valid image reproduction license.",
       "archivalPAM": "43.101",
       "museumPlate": "245",
       "criticalColumn": "XXV",
       "passageRange": "Jer 33:16–20",
-      "specificIAA2012Fragment6MatchedByImage": false
+      "specificIAA2012Fragment6MatchedByImage": false,
+      "historicalNegative1954Crosscheck": {
+        "fascicle9Url": "https://lyingpen.uia.no/dssinventoryproject/fascicle9/",
+        "archivalNumber": "40.963",
+        "officialIAAId": "B-279109",
+        "officialArchiveUrl": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-279109",
+        "inventoryEntry": "4Q72 Jerc 4:13-16, 33:16-20",
+        "isSameExposureAsPAM43101": false,
+        "preciseF55iiObjectIdentityEstablished": false
+      }
+    },
+    {
+      "id": "SRC-IAA-B279109-PAM40963-4Q72-1954",
+      "title": "Israel Antiquities Authority Leon Levy archive B-279109, historical PAM M40.963 scanned infrared negative (February 1954), containing catalogued 4Q72 among many manuscripts",
+      "creator": "Israel Antiquities Authority; photographer Najib Anton Albina (February 1954)",
+      "year": 1954,
+      "url": "https://www.deadseascrolls.org.il/explore-the-archive/image/B-279109",
+      "termsUrl": "https://www.deadseascrolls.org.il/terms",
+      "archivalInventoryUrl": "https://lyingpen.uia.no/dssinventoryproject/fascicle9/",
+      "authorScholarlyCrosscheckUrl": "https://michaellanglois.org/medias/langlois-2019-the-book-of-jeremiahs-redaction-history-in-light-of-its-oldest-manuscripts.pdf",
+      "objectType": "primary_historical_multi_manuscript_archive_negative_catalogue_only_no_photo_pixels_or_ink_collation",
+      "sourceRole": "IAA_1954_PAM_M40_963_4Q72_MULTI_MANUSCRIPT_NEGATIVE_CATALOG_ONLY",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "evidenceClass": "A2",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "ARCHIVE_HOLD",
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "sourceObjectState": "Official IAA B-279109 catalog directly inspected 2026-11-10: scanned infrared negative PAM M40.963 photographed February 1954 by Najib Anton Albina, recto, containing many museum plates including 245 and many identified manuscripts including 4Q72 (archive caption '4Q Jer d'). Independently, published historical inventory Fascicle9 entry 40.963 identifies 4Q72 Jerc with Jer 4:13-16 and Jer 33:16-20 among several other photographed manuscripts. Michael Langlois' original scholarly 2019 author-hosted PDF footnote19 explicitly maps PAM 40.963 to IAA B-279109 (extracted original text; web PDF screenshot timed out). This is an original archival NEGATIVE OBJECT and a secondary/inventory locator triangulation, NOT direct photograph pixel autopsy nor proof any specific object on the multi-manuscript exposure is the scholarly frg55ii or the 2012 B-360205 plate245 frag6. The mismatched IAA 4Q72 / 4QJer d catalog siglum is unresolved.",
+      "supportedUse": "Pin exact historical photograph B-279109, 1954 M40.963 and its multiple-manuscript/plate context, cross-check with published inventory and Langlois footnote19, without manufacturing an independently collated reading or identifying frg55ii on the image. Separates 1954 archival negative from 2012 photo B-360205 and DJD XV editorial plate XXX-XXXVI.",
+      "forbiddenUse": "Claim that modern catalog text proves surviving יהוה צדקנו ink; treat all material on mixed 1954 exposure as 4Q72; equate PAM40.963 and PAM43.101 or IAA 2012 B-360205 as identical photos; declare exact fragment55ii photo match, primary palaeographic reading, license or publication clearance; silently normalize the archive 4QJer d label to scholarly 4QJer c.",
+      "officialImageId": "B-279109",
+      "archivePAMNumber": "M40.963",
+      "archiveExposureDate": "February 1954",
+      "originalPhotographer": "Najib Anton Albina",
+      "archiveFilmKind": "Scanned Infrared Negative",
+      "museumPlate245Listed": true,
+      "manyManuscriptsInFrame": true,
+      "official4Q72Listed": true,
+      "archiveCatalogueSiglum": "4Q Jer d",
+      "scholarly4Q72Siglum": "4QJer c",
+      "fascicle9PassageRange": "Jer 4:13–16; 33:16–20",
+      "langlois2019Footnote19MapsPAMToIAA": true,
+      "directHistoricalNegativePixelsInspected": false,
+      "preciseF55iiPieceIdentifiedOnNegative": false,
+      "academic1954To2012SamePhotoOrFragmentMatchProven": false,
+      "manuscriptLettersIndependentlyCollated": false,
+      "criticalOriginalDJDPlateCollated": false,
+      "imageReusePermissionGranted": false
     },
     {
       "id": "SRC-IAA-B360205-4Q72-PL245F6",
@@ -3275,5 +3337,5 @@
       }
     }
   ],
-  "auditRevision": "NG10_WAVE19_PAGE171_SECOND_HAND_COLOPHON_CATALOG_CROSSCHECK_NO_FACSIMILE_AUTOPSY_20261110"
+  "auditRevision": "NG10_WAVE20_1954_PAM40963_IAA_B279109_CROSSWALK_NO_PHOTO_GLYPH_COLLATION_20261110"
 }
