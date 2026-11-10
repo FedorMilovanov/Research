@@ -68,6 +68,24 @@ class BookContinuityTests(unittest.TestCase):
                                "PUBLICATION_HOLD"):
                     self.assertIn(status, apparatus)
 
+    def test_timeless_historical_reader_across_all_fourteen_parts(self):
+        """Current-year archival correspondence and acquisition updates stay in apparatus."""
+        for name, content in self.texts.items():
+            reader, apparatus = content.split("## Источниковедчес", 1)
+            with self.subTest(file=name):
+                self.assertNotRegex(reader, r"\b2026\b")
+                self.assertNotIn("CorrMss", reader)
+                self.assertNotIn("Теперь доступны **две разные академические презентации", reader)
+                for marker in ("RESEARCH_MANUSCRIPT_DRAFT", "PUBLICATION_HOLD"):
+                    self.assertIn(marker, apparatus)
+        chapter11reader, chapter11notes = self.texts[PARTS[11]].split(
+            "## Источниковедчес", 1
+        )
+        self.assertIn("22 мая 1599 года", chapter11reader)
+        self.assertNotIn("29 мая 1599 года", chapter11reader)
+        self.assertIn("10.11.2026", chapter11notes)
+        self.assertIn("FOLIO_IMAGES_UNREAD", chapter11notes)
+
     def test_wave414_editorial_voice_outside_first_and_last_historical_readers(self):
         """Reader retains historical claims; unresolved collation/review notes stay in apparatus."""
         first_reader, first_notes = self.texts[PARTS[1]].split(
