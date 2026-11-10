@@ -376,6 +376,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137": "ZER_1986_ANONYMOUS_JTS_L729_COPY_ALEPPO_WORD_JOIN_REPORT_EX17_137",
     "SRC-OFER-BREUER-MASORAH-2008-EX17-16": "OFER_2008_EDITORIAL_BREUER_TWO_WORD_VERSUS_ALEPPO_ONE_WORD_ATTRIBUTED_ANALYSIS",
     "SRC-PENKOWER-TEXTUS9-1981-SAPHIR-HALEVANON-1863": "PENKOWER_1981_PRINTED_P78_N63_SAPHIR_1863_ISSUE5_JTS729_BIBLIOGRAPHIC_CROSSWALK",
+    "SRC-BREUER-MEGADIM10-1990-SITHON-SAPIR-REPORT": "BREUER_1990_ORIGINAL_P104_SAPIR_MENASHE_SITHON_YAAKOV_ZEEV_1857",
     "SRC-RAHLFS-EXODUS17": "PUBLISHER_LXX_EXODUS_TRANSLATIONAL_SURFACE",
     "SRC-NET-EXODUS17": "ATTRIBUTED_TRANSLATION_TEXTUAL_HYPOTHESES",
     "SRC-NET-GENESIS22": "ATTRIBUTED_TRANSLATION_GRAMMAR_ALTERNATIVES",
@@ -579,6 +580,38 @@ def validate_source_access(sources: dict) -> list[str]:
                     or w.get("jts729AutographInspected") is not False
                     or w.get("aleppoOriginalExodus17_16ManuscriptInspected") is not False):
                 errors.append(f"{prefix}: Penkower 1981 historic newspaper source report is not inspected 1863 original or JTS codex")
+        if rid == "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137":
+            w = source.get("respondentIdentityWave34", {})
+            if (not isinstance(w, dict) or w.get("respondentHebrew") != "מנשה סיתהון"
+                    or w.get("courierHebrew") != "יעקב זאב"
+                    or w.get("dispatchYearAccordingToZer") != 1857
+                    or w.get("printedZerP151ImageVerified") is not True
+                    or w.get("aleppoProjectEarlierSectionName") != "Menashe Stahon / Sithon"
+                    or w.get("aleppoProjectLaterSectionName") != "Moshe Sathon"
+                    or w.get("differentEnglishNamesResolved") is not False
+                    or w.get("manuscriptCopyDate1855VersusDispatch1857Resolved") is not False
+                    or w.get("exodusCodexOriginalSeen") is not False
+                    or w.get("jtsAutographSeen") is not False):
+                errors.append(f"{prefix}: Menashe original witness replaced with Moshe or 1855/1857 chronology falsely solved")
+        if rid == "SRC-PENKOWER-TEXTUS9-1981-SAPHIR-HALEVANON-1863":
+            w = source.get("checkedAccess", {})
+            if not isinstance(w, dict) or w.get("date1855HandCopyVersus1857DispatchReconciled") is not False:
+                errors.append(f"{prefix}: Penkower JTS list 1855 date cannot be asserted identical to 1857 courier dispatch")
+        if rid == "SRC-BREUER-MEGADIM10-1990-SITHON-SAPIR-REPORT":
+            w = source.get("checkedAccess", {})
+            if (source.get("url") != "https://kitveyet.herzog.ac.il/vtc/tvunot/mega10_broyer.pdf"
+                    or source.get("year") != 1990 or source.get("rightsState") != "PERMISSION_REQUIRED"
+                    or source.get("publicationState") != "BLOCKED" or source.get("criticalEditionCollated") is not False
+                    or not isinstance(w, dict) or w.get("originalPrintedPage") != 104
+                    or w.get("originalPdfPageIndex") != 7 or w.get("pageScreenshotDirectlyInspected") is not True
+                    or w.get("personRespondentHebrew") != "מנשה סיתהון"
+                    or w.get("courierHebrew") != "יעקב זאב"
+                    or w.get("yearQuestionsDispatched") != 1857
+                    or w.get("breuerSeparate1977BookRead") is not False
+                    or w.get("exodus17_16CollationInThisPaper") is not False
+                    or w.get("originalJtsOrAleppoCodexSeen") is not False
+                    or w.get("rightsGranted") is not False):
+                errors.append(f"{prefix}: Breuer 1990 attribution cannot become his 1977 Exodus critical apparatus or ancient autopsy")
         if rid == "SRC-ETCBC-ABEGG-BOWLEY-COOK-4Q72-JER33":
             if (source.get("url") != "https://theancientbible.org/4q72-p1/"
                     or source.get("fragmentLabel") != "f55ii"

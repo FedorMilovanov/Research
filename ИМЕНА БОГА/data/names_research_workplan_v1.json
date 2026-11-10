@@ -12,11 +12,11 @@
     "arenaRecords": 29,
     "extensionRecords": 13,
     "contextAttestations": 105,
-    "sourceRegisterEntries": 104,
-    "regressionTests": 292,
+    "sourceRegisterEntries": 105,
+    "regressionTests": 293,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_303791AA_EXACT_6_SUCCESS_WAVE33_NEW_SHA_PENDING",
+    "allSixCiChecks": "PRIOR_36525B1C_EXACT_6_SUCCESS_WAVE34_NEW_SHA_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "303791aab8755cb3517d2459ba556ac50d126610"
+    "lastConfirmedAllSixChecksSha": "36525b1cc204d240493c851620bc0330824db038"
   },
   "allowedStatuses": [
     "DONE",
@@ -332,7 +332,9 @@
         "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137",
         "SRC-OFER-BREUER-MASORAH-2008-EX17-16",
         "SRC-PENKOWER-TEXTUS9-1981-SAPHIR-HALEVANON-1863",
-        "23_YIREH_NISSI_ANSWER_PLACE_MOUNTAIN_EDITION_CRUX_20261107.md § Wave33 Penkower p78 n63, original 1863 newspaper page NOT independently read"
+        "23_YIREH_NISSI_ANSWER_PLACE_MOUNTAIN_EDITION_CRUX_20261107.md § Wave33 Penkower p78 n63, original 1863 newspaper page NOT independently read",
+        "SRC-BREUER-MEGADIM10-1990-SITHON-SAPIR-REPORT",
+        "23_YIREH_NISSI_ANSWER_PLACE_MOUNTAIN_EDITION_CRUX_20261107.md § Wave34 printed 1986/1990 respondent correction"
       ],
       "verification": "NOT_APPLICABLE_UNTIL_DONE",
       "closureAt": null,
@@ -748,7 +750,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "WAVE33 2026-11-10: University-hosted Penkower 1981 Textus9 original PDF text p78 n63 directly read, PDF screenshot attempt timed out, reported Ha-Levanon 1863 first volume no5 pp31b-32a list Gen through Exodus17:16; NLI archive official issue date 9 July 1863. Original printed 1863 issue Hebrew source line NOT independently visually collated; a browser agent fabricated unverifiable verse prose and misidentified Saphir catalogue as Shapira, so its alleged photograph reading REJECTED. Accurate NLI manuscript record for Jacob Saphir's Maorot Nathan: NNL_ALEPH990001022670205171; unrelated same-name Nathan Shapira record NNL_ALEPH990000621650205171. Direct JTS L729 image/access and exact NLI shelfmark field NOT inspected. Yeivin82/Breuer260-261 still unread. NG04 BLOCKED_SOURCE, NG05 OPEN, NG10 BLOCKED_SOURCE; 104 source objects, 292 core tests, 105 attestation, 87 claims, 0 ancient photos collated, no scholarly/Product/rights approval. Previous exact 303791aa confirmed GitHub six CI SUCCESS; new wave33 SHA must be checked separately. No main merge, Product or new branch.",
+  "nextAction": "WAVE34 2026-11-11: Two original printed academic facsimiles Zer Leshonenu50 1986 p151 (PDF index0) and Breuer Megadim10 1990 p104 (PDF index7) directly visibly read: question respondent Menashe Sithon (מנשה סיתהון), intermediary Yaakov Ze'ev (יעקב זאב), questions dispatched 1857. Independent Aleppo Codex website English sections 3.4.2 vs 3.4.6 disagree Menashe vs Moshe: unresolved name provenance; use original Hebrew. Penkower 1981 p78 n63 calls copied JTS729 list dated 1855; not demonstrably identical to 1857 dispatch event; chronology HOLD. Breuer 1990 scholarly article concerns Esther/Amalek and DOES NOT replace Breuer 1977 book pp260–261 (UNREAD). Original Ha-Levanon newspaper letter Exod17:16 and original JTS729 still UNREAD. 105 authentic sources, 293 core tests, 105 attestation, 87 provisional claims, zero ancient original photo/critical collations, zero scholarly/Product/rights approvals. NG04 BLOCKED_SOURCE NG05 OPEN NG10 BLOCKED_SOURCE; parent 36525b1c six checks SUCCESS, Wave34 exact CI pending. No new branch, main merge, site or Product edit.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -830,8 +832,9 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-10",
-    "planStatus": "WAVE33 exact prior SHA303791aa six workflow SUCCESS. Authentic 1981 Jordan Penkower Textus9 scholarly publication original PDF selected text p78 n63 cites 1863 Ha-Levanon issue5 pp31b-32a (Gen→Ex17:16), exact official NLI date July9. Official NLI separately catalogues Saphir's Maorot Nathan NNL_ALEPH990001022670205171 vs unrelated Nathan Shapira item NNL_ALEPH990000621650205171. Original 1863 newspaper text not independently read: ungrounded automated browser claims REJECTED. 104 real source records and 292 core adversarial tests, 0 ancient photo collations, no rights/peer/Product approval. NG04 BLOCKED_SOURCE, NG05 OPEN. This new SHA pending own CI.",
+    "planStatus": "WAVE34: original 1986 Zer p151 and Breuer 1990 p104 independent screenshots, respondent Menashe Sithon, courier Yaakov Ze'ev, sending 1857. Aleppo project English inconsistent Moshe/Menashe; Penkower JTS copy date 1855 vs dispatch 1857 not reconciled. 105 source records/293 core regressions, 0 original codex/critical collations and no rights/peer/Product release, NG04 BLOCKED_SOURCE. Prior exact 36525b1c CI six-success, new HEAD pending own CI.",
     "workCompleted": [
+      "Wave34 original historical-source correction: visually inspected Zer 1986 printed p151 and Breuer 1990 p104, identified Menashe Sithon and 1857 Yaakov Ze'ev delivery; quarantined Moshe webpage error/inconsistency and unresolved JTS 1855 versus courier 1857. One original scholarly source plus one negative test.",
       "Wave33: scoped Penkower 1981 printed p78 footnote63 direct PDF machine text, university publication metadata and NLI exact 1863 July9 newspaper date; discriminated Jacob Saphir's NLI Maorot Nathan catalogue from Nathan Shapira's same-name other book; quarantined unsupported browser vision report; one new secondary scholarly source + one anti-conflation regression.",
       "Wave32: registered original Zer 1986 and Ofer 2008 with 2 adversarial scope tests, fixed JTS L729 as anonymous copied manuscript and separated multiple editorial conclusions from actually read Yeivin/Breuer pages.",
       "Wave31: directly inspected two Rafi Zer 1986 original printed edition page images, item137 Exod17:16 p165 and note137 p191, preserved distinction printed historical testimony vs missing Aleppo manuscript/untouched handwritten source. Cross-check targets Yeivin82 and Breuer260-261.",

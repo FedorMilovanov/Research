@@ -2046,5 +2046,24 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                 self.assertTrue(any("Sapir versus Shapira Maorot Nathan catalog" in e
                                     for e in validate_source_access(changed)))
 
+    def test_1857_menashe_respondent_not_moshe_or_unread_1977_original(self) -> None:
+        for rid,fieldGroup,key,wrong in (
+            ("SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137","respondentIdentityWave34","respondentHebrew","משה סיתהון"),
+            ("SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137","respondentIdentityWave34","differentEnglishNamesResolved",True),
+            ("SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137","respondentIdentityWave34","manuscriptCopyDate1855VersusDispatch1857Resolved",True),
+            ("SRC-PENKOWER-TEXTUS9-1981-SAPHIR-HALEVANON-1863","checkedAccess","date1855HandCopyVersus1857DispatchReconciled",True),
+            ("SRC-BREUER-MEGADIM10-1990-SITHON-SAPIR-REPORT","checkedAccess","personRespondentHebrew","משה סיתהון"),
+            ("SRC-BREUER-MEGADIM10-1990-SITHON-SAPIR-REPORT","checkedAccess","breuerSeparate1977BookRead",True),
+            ("SRC-BREUER-MEGADIM10-1990-SITHON-SAPIR-REPORT","checkedAccess","exodus17_16CollationInThisPaper",True),
+            ("SRC-BREUER-MEGADIM10-1990-SITHON-SAPIR-REPORT","checkedAccess","originalJtsOrAleppoCodexSeen",True),
+        ):
+            with self.subTest(source=rid,key=key):
+                changed = copy.deepcopy(self.sources)
+                rec = next(x for x in changed["records"] if x["id"] == rid)
+                rec[fieldGroup][key] = wrong
+                result = validate_source_access(changed)
+                self.assertTrue(any(("Menashe original witness" in s or "Penkower JTS list 1855" in s
+                                     or "Breuer 1990 attribution" in s) for s in result))
+
 if __name__ == "__main__":
     unittest.main()

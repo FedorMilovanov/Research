@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 104,
+    "sourceRecords": 105,
     "approvedForProduct": 0
   },
   "records": [
@@ -3498,7 +3498,7 @@
       "additionalUrl": "https://www.daat.ac.il/daat/vl/meorotnatan/meorotnatan02.pdf",
       "objectType": "original_1986_printed_edition_of_anonymous_manuscript_copy_selected_pages_visually_inspected",
       "sourceRole": "ZER_1986_ANONYMOUS_JTS_L729_COPY_ALEPPO_WORD_JOIN_REPORT_EX17_137",
-      "sourceObjectState": "Original printed images p151 introduction (JTS L729 anonymous copy, NOT Saphir autograph), p154 abbreviation list, p165 item137 (Exod17:16 two-word question, answer one-word), and p191 note137 (Yeivin p82 / Breuer pp260–261 references) directly visually inspected on Daat. Ancient Aleppo original leaf LOST; JTS manuscript, Yeivin book, and Breuer book pages NOT individually viewed. No rights granted. Wave33 separate official NLI Saphir catalog indexed (record NNL_ALEPH990001022670205171); do NOT confuse same-named Nathan ben Reuben Shapira Maorot Natan, record NNL_ALEPH990000621650205171. Catalog web page returned index but not original manuscript pixels or record shelfmark personally opened; reported NLI free-use status not transferable to other objects.",
+      "sourceObjectState": "Original printed images p151 introduction (JTS L729 anonymous copy, NOT Saphir autograph), p154 abbreviation list, p165 item137 (Exod17:16 two-word question, answer one-word), and p191 note137 (Yeivin p82 / Breuer pp260–261 references) directly visually inspected on Daat. Ancient Aleppo original leaf LOST; JTS manuscript, Yeivin book, and Breuer book pages NOT individually viewed. No rights granted. Wave33 separate official NLI Saphir catalog indexed (record NNL_ALEPH990001022670205171); do NOT confuse same-named Nathan ben Reuben Shapira Maorot Natan, record NNL_ALEPH990000621650205171. Catalog web page returned index but not original manuscript pixels or record shelfmark personally opened; reported NLI free-use status not transferable to other objects. Wave34 original visual print p151 directly confirms Menashe Sithon (מנשה סיתהון) as respondent, courier Yaakov Ze'ev, 1857 dispatched questions ca550; Aleppo Codex English project has contradictory name Moshe Sathon (§3.4.6) vs Menashe Stahon (§3.4.2), unresolved; Penkower JTS copy year 1855 distinct, not resolved.",
       "supportedUse": "Attribute printed historical one-word testimony to Zer 1986 edited COPY of Saphir-associated material, not ancient Aleppo manuscript autopsy; give exact page and item number, preserve competing editorial opinions.",
       "forbiddenUse": "Claim JTS L729 is Saphir autograph, original Aleppo Exodus folio directly read, published Yeivin/Breuer pages viewed, ancient pronunciation derived from word division, or scanned pages rights-cleared.",
       "checkedProvenance": {
@@ -3530,6 +3530,19 @@
         "notNathanShapiraId": "NNL_ALEPH990000621650205171",
         "notNathanShapiraAuthor": "Nathan ben Reuben David Shapira",
         "historicalNewspaperContentReadInDigitalScan": false
+      },
+      "respondentIdentityWave34": {
+        "respondentHebrew": "מנשה סיתהון",
+        "courierHebrew": "יעקב זאב",
+        "dispatchYearAccordingToZer": 1857,
+        "approximateQuestions": 550,
+        "printedZerP151ImageVerified": true,
+        "aleppoProjectEarlierSectionName": "Menashe Stahon / Sithon",
+        "aleppoProjectLaterSectionName": "Moshe Sathon",
+        "differentEnglishNamesResolved": false,
+        "manuscriptCopyDate1855VersusDispatch1857Resolved": false,
+        "exodusCodexOriginalSeen": false,
+        "jtsAutographSeen": false
       }
     },
     {
@@ -3587,7 +3600,7 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "sourceObjectState": "Original Hebrew University hosted scholarly PDF was directly read as PDF text on printed p78 n63, with prior web screenshot request timed out: do not claim physical page image visually inspected. Footnote 63 explicitly cites Hebrew ha-Levanon I (1863) no5 pp31b-32a, excerpt reaching Exodus17:16, no11 pp76a,b, and JTS 729 copied list dated 1855. University of Bar-Ilan publication registry confirms Textus vol9 issue1 (1981) pp39-128 DOI. NLI official historical newspaper archive indexes issue 5 exactly 9 July 1863. The original 1863 newspaper's Exodus17:16 print line has NOT independently been read as image or verified against the Penkower report. Other automated browser report claiming specific page words was self-contradictory about author and cannot count as evidence.",
+      "sourceObjectState": "Original Hebrew University hosted scholarly PDF was directly read as PDF text on printed p78 n63, with prior web screenshot request timed out: do not claim physical page image visually inspected. Footnote 63 explicitly cites Hebrew ha-Levanon I (1863) no5 pp31b-32a, excerpt reaching Exodus17:16, no11 pp76a,b, and JTS 729 copied list dated 1855. University of Bar-Ilan publication registry confirms Textus vol9 issue1 (1981) pp39-128 DOI. NLI official historical newspaper archive indexes issue 5 exactly 9 July 1863. The original 1863 newspaper's Exodus17:16 print line has NOT independently been read as image or verified against the Penkower report. Other automated browser report claiming specific page words was self-contradictory about author and cannot count as evidence. Wave34 Penkower's JTS copy dated 1855 must not be silently substituted for Zer/Breuer 1857 question dispatch; chronology unresolved pending original manuscript/archive.",
       "supportedUse": "Cite Penkower as an original 1981 secondary scholarly bibliography describing the mid-nineteenth-century printing route, 1863 issue5 pages and copied JTS list; cite NLI calendar only for 9 July issue date. Distinguish copied JTS 729, 1863 printed newspaper, and lost Aleppo codex as three NON-INTERCHANGEABLE evidence objects.",
       "forbiddenUse": "Claim 1863 issue No5 image/photo scanned and Hebrew words independently verified; assert modern 1981 scholarly PDF screenshot succeeded; confuse Saphir with Nathan Shapira's unrelated Kabbalah work; claim JTS L729 is Saphir autograph or preserved Aleppo Exodus folio; assert original Yeivin or Breuer pages read; relicense 1981 scanned journal, 1863 page or manuscript photographs to Product.",
       "checkedAccess": {
@@ -3606,9 +3619,47 @@
         "nliSaphirManuscriptCatalogueId": "NNL_ALEPH990001022670205171",
         "unrelatedNathanShapiraNLICatalogueId": "NNL_ALEPH990000621650205171",
         "jts729AutographInspected": false,
-        "aleppoOriginalExodus17_16ManuscriptInspected": false
+        "aleppoOriginalExodus17_16ManuscriptInspected": false,
+        "date1855HandCopyVersus1857DispatchReconciled": false
+      }
+    },
+    {
+      "id": "SRC-BREUER-MEGADIM10-1990-SITHON-SAPIR-REPORT",
+      "title": "Mordechai Breuer, מקראות שיש להם הכרע, Megadim X (Shevat 5750 / 1990), 97–112, esp. print p104",
+      "creator": "Mordechai Breuer",
+      "year": 1990,
+      "url": "https://kitveyet.herzog.ac.il/vtc/tvunot/mega10_broyer.pdf",
+      "publisherBibliographyUrl": "https://kitveyet.herzog.ac.il/articles/%D7%9E%D7%A7%D7%A8%D7%90%D7%95%D7%AA-%D7%A9%D7%99%D7%A9-%D7%9C%D7%94%D7%9D-%D7%94%D7%9B%D7%A8%D7%A2/",
+      "objectType": "original_published_1990_scholarly_article_selected_p104_text_and_screenshot_not_1977_book",
+      "sourceRole": "BREUER_1990_ORIGINAL_P104_SAPIR_MENASHE_SITHON_YAAKOV_ZEEV_1857",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "evidenceClass": "B1",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "sourceObjectState": "Original PDF text read and screenshot printed p104 (PDF index7) visual inspected; publisher catalogue confirms Megadim X 1990 pp97–112. Breuer explicitly describes around 550 questions Sapir sent by courier Yaakov Ze'ev in 1857, answered by Menashe Sithon who examined original Aleppo codex, and source anonymous copy Maorot Nathan. Paper mainly treats Esther/zecher Amalek reading, NOT an original Exodus17:16 critical apparatus. It is distinct from Breuer's 1976/77 book Keter Aram Zova veha-Nusach Hamkubl pp260-261, NOT directly read.",
+      "supportedUse": "Attribute Menashe Sithon, Yaakov Ze'ev, 1857 historical transmission to original authored Breuer scholarly account with exact printed p104 and image verification. Compare separately to Zer1986 and Penkower1981 timeline without treating any report as ancient codex autopsy.",
+      "forbiddenUse": "Claim Breuer 1977 book pp260–261 read, claim this article itself contains an Exodus17:16 original variant collation, equate Moshe Sathon with Menashe as resolved without evidence, assert original manuscript JTS or lost Aleppo folio viewed, or publish copyrighted article scans.",
+      "checkedAccess": {
+        "originalPrintedPage": 104,
+        "originalPdfPageIndex": 7,
+        "pageScreenshotDirectlyInspected": true,
+        "publisherBibliographyVerified": true,
+        "personRespondentHebrew": "מנשה סיתהון",
+        "courierHebrew": "יעקב זאב",
+        "yearQuestionsDispatched": 1857,
+        "breuerSeparate1977BookRead": false,
+        "exodus17_16CollationInThisPaper": false,
+        "originalJtsOrAleppoCodexSeen": false,
+        "rightsGranted": false
       }
     }
   ],
-  "auditRevision": "NG04_WAVE33_PENKOWER_TEXTUS9_1981_P78_N63_HALEVANON1863_CATALOG_CORRECT_NO_PRIMARY_INK_20261110"
+  "auditRevision": "NG04_WAVE34_ZER_P151_BREUER1990_P104_MENASHE_SITHON_MOSHE_INCONSISTENCY_20261111"
 }
