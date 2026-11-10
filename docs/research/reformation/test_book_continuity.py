@@ -110,7 +110,7 @@ class BookContinuityTests(unittest.TestCase):
         content = self.texts["episode01_historical_gateway_draft.md"]
         reader, apparatus = content.split("## Источниковедческий", 1)
         self.assertNotRegex(reader, r"https?://")
-        self.assertNotRegex(reader, r"\\]\\(https?://")
+        self.assertNotIn("](https://", reader)
         for historical_anchor in (
             "Констанцском соборе 1414–1418",
             "Библии Гутенберга",
