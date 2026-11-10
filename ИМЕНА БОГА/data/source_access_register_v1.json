@@ -3533,6 +3533,26 @@
         "ancientManuscriptPhotographicCollation": false,
         "printNumbersMayBeSilentlyCorrected": false
       },
+      "zer1986PhotoCoveredQuestionOverlapWave40": {
+        "zerPrintPage": 152,
+        "zerFootnote": 9,
+        "zerPrintedFootnoteVisuallyInspected": true,
+        "wickes1887QuestionIds": [49, 50, 51],
+        "wickesPhotoBook": "GENESIS_26_TO_27",
+        "wickesPhotoAncientLettersCollatedByResearch": false,
+        "segall1910Goshen1966QuestionIds": [336, 337, 338, 339, 340],
+        "segallPhotoBook": "DEUTERONOMY_4_TO_6",
+        "goshen1966OriginalArticleTextRead": true,
+        "goshen1966PlateAncientLettersCollatedByResearch": false,
+        "zerListPrintPagesInspected": [161, 172, 173],
+        "question339IsTwicePrintedAsSeparateRows": true,
+        "totalDistinctPhotoCoveredQuestionNumbers": 8,
+        "candidateExplainsNumericDifferenceEight": true,
+        "editorExplicitlyStatesPhotoExclusionRule": false,
+        "photoExclusionHypothesis": "PLAUSIBLE_NOT_PROVEN",
+        "reconciliationConfirmed": false,
+        "aleppoOriginalMissingExodusLeafInspected": false
+      },
       "canonicalManuscriptCatalogueRoute20261110": {
         "nliRecordId": "NNL_ALEPH990001022670205171",
         "nliRecordUrl": "https://www.nli.org.il/he/manuscripts/NNL_ALEPH990001022670205171/NLI",

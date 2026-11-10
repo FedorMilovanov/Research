@@ -565,6 +565,30 @@ def validate_source_access(sources: dict) -> list[str]:
                     or audit.get("ancientManuscriptPhotographicCollation") is not False
                     or audit.get("printNumbersMayBeSilentlyCorrected") is not False):
                 errors.append(f"{prefix}: Zer1986 p152 printed 422 versus enumerated 430 remains unresolved")
+        if rid == "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137":
+            photo = source.get("zer1986PhotoCoveredQuestionOverlapWave40", {})
+            a = photo.get("wickes1887QuestionIds") if isinstance(photo, dict) else None
+            b = photo.get("segall1910Goshen1966QuestionIds") if isinstance(photo, dict) else None
+            distinct = (len(set(a+b)) if isinstance(a, list) and isinstance(b, list)
+                        and all(type(v) is int for v in a+b) else -1)
+            if (not isinstance(photo, dict)
+                    or photo.get("zerPrintPage") != 152 or photo.get("zerFootnote") != 9
+                    or photo.get("zerPrintedFootnoteVisuallyInspected") is not True
+                    or a != [49, 50, 51] or b != [336, 337, 338, 339, 340]
+                    or photo.get("wickesPhotoBook") != "GENESIS_26_TO_27"
+                    or photo.get("segallPhotoBook") != "DEUTERONOMY_4_TO_6"
+                    or photo.get("wickesPhotoAncientLettersCollatedByResearch") is not False
+                    or photo.get("goshen1966OriginalArticleTextRead") is not True
+                    or photo.get("goshen1966PlateAncientLettersCollatedByResearch") is not False
+                    or photo.get("zerListPrintPagesInspected") != [161, 172, 173]
+                    or photo.get("question339IsTwicePrintedAsSeparateRows") is not True
+                    or distinct != 8 or photo.get("totalDistinctPhotoCoveredQuestionNumbers") != distinct
+                    or photo.get("candidateExplainsNumericDifferenceEight") is not True
+                    or photo.get("editorExplicitlyStatesPhotoExclusionRule") is not False
+                    or photo.get("photoExclusionHypothesis") != "PLAUSIBLE_NOT_PROVEN"
+                    or photo.get("reconciliationConfirmed") is not False
+                    or photo.get("aleppoOriginalMissingExodusLeafInspected") is not False):
+                errors.append(f"{prefix}: Zer1986 photo-covered eight-number coincidence is an unresolved hypothesis, not a corrected author count or ancient manuscript collation")
         if rid == "SRC-OFER-BREUER-MASORAH-2008-EX17-16":
             w = source.get("checkedProvenance", {})
             if (source.get("rightsState") != "PERMISSION_REQUIRED" or source.get("publicationState") != "BLOCKED"

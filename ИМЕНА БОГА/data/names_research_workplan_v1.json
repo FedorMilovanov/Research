@@ -13,10 +13,10 @@
     "extensionRecords": 13,
     "contextAttestations": 105,
     "sourceRegisterEntries": 107,
-    "regressionTests": 297,
+    "regressionTests": 298,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_CACEB321_EXACT_6_SUCCESS_WAVE39_NEW_SHA_PENDING",
+    "allSixCiChecks": "PRIOR_A267BD6F_EXACT_6_SUCCESS_WAVE40_NEW_SHA_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "caceb32147142d62099767551cee9f8ab9d87bb2"
+    "lastConfirmedAllSixChecksSha": "a267bd6f0462fd76e17e0837412264bada35258a"
   },
   "allowedStatuses": [
     "DONE",
@@ -836,8 +836,9 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-11",
-    "planStatus": "WAVE39 original Rafi Zer 1986 printed p152 screenshot: 543 questions total, 422 reported from missing Aleppo leaves but listed inclusive 1-383 Torah + 10 Haftarot + 507-543 Esther sums to 430 (difference 8), unresolved; previous caceb321 6/6 CI success, new SHA pending. 107 bibliographic source rows, 297 core mutation tests, 105 attestations, 87 claims; no ancient photo collation, independent peer/Product/rights approval; NG04 BLOCKED_SOURCE, NG05 OPEN.",
+    "planStatus": "WAVE40: original Zer1986 p152 n9 identifies preloss-photo question numbers 49-51 and 336-340, total 8, matching printed 430 minus 422. Original list pp161/172/173 confirms passages Genesis27 and Deut4-6, and p173 repeats number339 twice. Exclusion of photo-covered questions is plausible but not stated by Zer and NOT PROVEN. Zero critical manuscript collation, 107 source records, 298 core tests, 105 attestations/87 provisional claims, NG04 BLOCKED_SOURCE, NG05 OPEN, scientific/Product/rights HOLD. Prior a267bd6f CI 6/6 SUCCESS, new SHA requires separate CI.",
     "workCompleted": [
+      "Wave40: documented 8 photo-covered question IDs noted in Zer1986 n9, page-checked the list for Genesis27 and Deut4-6; preserved 430-vs-422 conflict and duplicate 339 row as distinct concerns. One negative test guards candidate explanation not being promoted into verified history; synchronized 298 test baseline.",
       "Wave39: visually verified Zer1986 print p152, registered author-printed 422 versus arithmetically enumerated 430/543 (8-case mismatch) without speculative correction; added one anti-fiat test and synced machine SSOT regressionTests=297 after CI correctly rejected stale 296. No new source IDs, ancient collation or Product handoff.",
       "Wave37 fixed over-conservative courier-name blocker with 1986 Zer original p151 screenshot full Hebrew 'ר' יעקב זאב ברלין' and modern 2023 article p67 screenshot. Updated existing source IDs crosswalk, one new anti-inflation mutation test; no new separate bibliographic source ID, no claimed independent civil identity.",
       "Wave36: source genealogy advanced from Goshen 1962 and Zer1986 to Saphir's own Even Sapir 1866 first-person words in verified 1989-derived digital transcription; preserved separate courier/eyewitness, Hebrew original respondent orthography, critical first-person not-eyewitness caveat and unreconciled relative seven/nine year markers. Commons 498p public-domain facsimile catalog verified but not visually reviewed; one new provenance guard and source record.",

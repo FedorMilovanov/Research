@@ -2031,6 +2031,27 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                 self.assertTrue(any("Zer1986 p152 printed 422 versus enumerated 430" in e
                                     for e in validate_source_access(data)))
 
+    def test_zer_1986_photo_covered_eight_number_candidate_is_not_proof(self) -> None:
+        for field, wrong in (
+            ("wickes1887QuestionIds", [49, 50]),
+            ("segall1910Goshen1966QuestionIds", [336, 337, 338, 339]),
+            ("totalDistinctPhotoCoveredQuestionNumbers", 7),
+            ("candidateExplainsNumericDifferenceEight", False),
+            ("photoExclusionHypothesis", "PROVEN"),
+            ("editorExplicitlyStatesPhotoExclusionRule", True),
+            ("reconciliationConfirmed", True),
+            ("question339IsTwicePrintedAsSeparateRows", False),
+            ("goshen1966PlateAncientLettersCollatedByResearch", True),
+            ("aleppoOriginalMissingExodusLeafInspected", True),
+        ):
+            with self.subTest(field=field):
+                modified = copy.deepcopy(self.sources)
+                row = next(x for x in modified["records"]
+                           if x["id"] == "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137")
+                row["zer1986PhotoCoveredQuestionOverlapWave40"][field] = wrong
+                self.assertTrue(any("Zer1986 photo-covered eight-number coincidence" in e
+                                    for e in validate_source_access(modified)))
+
     def test_ofer_2008_cannot_become_direct_breuer_yeivin_or_photo(self) -> None:
         for key, wrong in (("originalJSIJTypesetPdfViewed", True), ("originalBreuerPagesViewed", True),
                            ("originalYeivinPageViewed", True), ("ancientAleppoExodusViewed", True),
