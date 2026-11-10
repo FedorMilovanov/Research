@@ -104,6 +104,22 @@ class BookContinuityTests(unittest.TestCase):
             self.assertIn("NOT_EDITORIAL_READY", notes)
             self.assertIn("PUBLICATION_HOLD", notes)
 
+    def test_no_cyrillic_latin_confusables_or_invisible_controls_in_book(self):
+        """Detect Latin lookalikes inside Cyrillic words in all 14 book parts."""
+        mixed_letters = re.compile(r"[A-Za-zА-Яа-яЁё]+")
+        latin = re.compile(r"[A-Za-z]")
+        cyrillic = re.compile(r"[А-Яа-яЁё]")
+        zero_width = re.compile(r"[\u200B-\u200F\u2060\uFEFF]")
+        for name, source in self.texts.items():
+            with self.subTest(book=name):
+                self.assertIsNone(zero_width.search(source),
+                                  "invisible formatting character in manuscript")
+                without_urls = re.sub(r"https?://[^\s)]+", "", source)
+                mixed = [word for word in mixed_letters.findall(without_urls)
+                         if latin.search(word) and cyrillic.search(word)]
+                self.assertEqual(mixed, [],
+                                 "mixed-script words may hide transcription defects")
+
     def test_all_thirteen_forward_transitions_in_reader_text(self):
         for src, dest in zip(PARTS, PARTS[1:]):
             reader = self.texts[src].split("## Источниковедчес", 1)[0]
