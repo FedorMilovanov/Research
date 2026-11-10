@@ -59,6 +59,33 @@ class FranceTrentNantesTests(unittest.TestCase):
         self.assertIn("PUBLICATION_HOLD", source["holds"])
         self.assertIn("not physically inspected original", source["verificationNote"].lower())
 
+    def test_wave431_primary_edition_found_but_not_claimed_as_read(self):
+        chapter = CH.read_text(encoding="utf-8")
+        dossier = (D / "09_france_confession_nantes_source_study.md").read_text(encoding="utf-8")
+        claims = (D / "03_claim_verification_register.md").read_text(encoding="utf-8")
+        row = next(line for line in claims.splitlines() if line.startswith("| C301 |"))
+        packet = (D / "independent_review_packets.md").read_text(encoding="utf-8")
+        for marker in ("FRBNF33814462", "NUMM-319439", "bpt6k3194390",
+                       "8-LB35-727 (F)", "ORIGINAL_ART33_PRINT_COLLATION_HOLD",
+                       "TITLE_VARIANT_INTERPRETATION_HOLD"):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, dossier)
+                self.assertIn(marker, chapter)
+                self.assertIn(marker, packet)
+        for marker in ("FRBNF33814462", "FRBNF33814457",
+                       "ORIGINAL_ART33_PRINT_COLLATION_HOLD",
+                       "TITLE_VARIANT_INTERPRETATION_HOLD"):
+            self.assertIn(marker, row)
+        self.assertIn("403/bot_blocked", dossier)
+        self.assertIn("отдельная печать 1621", packet)
+        # Bibliographic discovery does not promote a source ID or alter other evidence contracts.
+        data = json.loads((D / "source-registry-v1.json").read_text(encoding="utf-8"))
+        self.assertEqual(data["sourceCount"], 204)
+        bost = next(s for s in data["sources"] if s["id"] == "REF-S101")
+        self.assertEqual(bost["evidenceClass"], "B1")
+        self.assertEqual(bost["accessState"], "PARTIAL_OBJECT")
+        self.assertIn("PUBLICATION_HOLD", bost["holds"])
+
     def test_reader_navigation_and_historical_overclaims_rejected(self):
         for path in ("README.md","SELF_PLAN.md","04_series_blueprint.md",
                      "09_france_confession_nantes_source_study.md"):
