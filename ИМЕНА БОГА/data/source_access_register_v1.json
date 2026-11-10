@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 100,
+    "sourceRecords": 101,
     "approvedForProduct": 0
   },
   "records": [
@@ -3046,6 +3046,59 @@
       }
     },
     {
+      "id": "SRC-GARCIA-MARTINEZ-TIGCHELAAR-1999-STUDY-EDITION-4Q72-271272",
+      "title": "Florentino García Martínez and Eibert J. C. Tigchelaar, The Dead Sea Scrolls Study Edition (Brill 1999), volume I, printed pp271–272, 4Q72 editorial synopsis with alternative column and unusual museum plate numbering",
+      "creator": "Florentino García Martínez; Eibert J. C. Tigchelaar; Brill",
+      "year": 1999,
+      "url": "https://ancientmodern.org/wp-content/uploads/2016/02/the_dead_sea_scrolls_study_edition_brill_1999.pdf",
+      "officialOriginalComparisonUrl": "https://catalogue.bnf.fr/ark:/12148/cb37173199v",
+      "objectType": "independent_edited_1999_secondhand_bibliographic_synopsis_original_printed_pages_not_manuscript_photo",
+      "sourceRole": "BRILL_1999_4Q72_SECONDARY_DIFFERENT_COLUMN_AND_POTENTIAL_MUSEUM_PLATE_TYPO",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "sourceObjectState": "Original printed pages 271 and 272 of García Martínez/Tigchelaar Brill Study Edition (1999) visually inspected on 2026-11-10 through web PDF screenshots page indices 295 and 296, with extracted-text crosscheck. The secondary 1999 synopsis labels Jer33:16–20 in 4Q72 (4QJer c) 'Col XXIV', whereas Tov's original DJD XV 1997 source (read as extracted original book text; screenshot original 21MB denied) separately lists Col XXIV Jer33:? and Col XXV Jer33:16–20. The two citations describe SAME ancient 4Q72, NOT two manuscripts. 1999 p271 prints 'ROC 232, 244–346, 671' contrasting Tov 1997 'Mus. Inv. 232, 244, 245, 246, 671'. 1999 p271 prints Tov 1991 article pages 248–276 whereas Hebrew University institutional record and 1997 original bibliography specify 249–276. Likely editorial abbreviation or typographical discrepancies; specific explanation NOT verified. Study Edition has not furnished original ancient photo or license.",
+      "supportedUse": "Preserve literal editorial differences across sources for col/plate and page locators; default to Tov original 1997 Col XXV for exact DJD source, preserve 1999 Col XXIV only with its source label; preserve literal secondary 244–346 vs original 244,245,246 instead of silently correcting; distinguish 1991 bibliographic page 248 from 249 by source.",
+      "forbiddenUse": "Claim 1999 Col XXIV proves a new ancient manuscript or corrects original Tov 1997; claim scholarly reason for different numbering established; claim 1999 published summaries were original manuscript photographs; seek physical museum plate346 without verification; treat 1999 book as a license for images or approval to publish.",
+      "original1999PrintedPages": [
+        271,
+        272
+      ],
+      "webScreenshotPageIndices": [
+        295,
+        296
+      ],
+      "original1999PageScreenshotsInspected": true,
+      "printedSecondaryManuscriptId": "4Q72",
+      "printedSecondarySiglum": "4QJer c",
+      "printedSecondaryJer33Column": "XXIV",
+      "printedSecondaryJer33Verses": "33:16–20",
+      "primaryTov1997UncertainPrecedingColumn": "XXIV = Jer 33:?",
+      "primaryTov1997Jer33Column": "XXV",
+      "primaryTov1997Jer33Verses": "33:16–20",
+      "secondaryMuseumPlateAsPrinted": "ROC 232, 244–346, 671",
+      "originalTovMuseumPlateAsPrinted": "Mus. Inv. 232, 244, 245, 246, 671",
+      "secondaryTov1991PagesAsPrinted": "248–276",
+      "authorUniversityAndPrimaryTov1991Pages": "249–276",
+      "typographicErrorDefinitivelyEstablished": false,
+      "reasonForNumberingChangeIndependentlyEstablished": false,
+      "distinctAncientManuscriptFrom1997": false,
+      "originalAncientPhotoPixelsInspected": false,
+      "editorOriginalDJDPhotographicPlatesInspected": false,
+      "photographReusePermissionGranted": false,
+      "publicationLicensed": false,
+      "secondarySummaryDoesNotReplaceFirstEdition": true
+    },
+    {
       "id": "SRC-DSS-REED-FASC7-4Q72-PAM43101",
       "title": "Dead Sea Scrolls Inventory Project, Fascicle 7, manuscript/negative/museum-plate cross-index for 4Q72",
       "creator": "Stephen A. Reed and research team, Ancient Biblical Manuscript Center; historical inventory presented by University of Agder",
@@ -3399,5 +3452,5 @@
       }
     }
   ],
-  "auditRevision": "NG10_WAVE22_DISTINCT_4Q70_TEXTUS1994_AND_4Q57_ISA_FRG55_VS_4Q72_JER_FRG55II_20261110"
+  "auditRevision": "NG10_WAVE23_DJD_XV_VS_BRILL1999_ALTERNATIVE_COLUMN_MUSEUM_PLATE_BIBLIOGRAPHY_20261110"
 }
