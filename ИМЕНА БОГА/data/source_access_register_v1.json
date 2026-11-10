@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 103,
+    "sourceRecords": 104,
     "approvedForProduct": 0
   },
   "records": [
@@ -3498,7 +3498,7 @@
       "additionalUrl": "https://www.daat.ac.il/daat/vl/meorotnatan/meorotnatan02.pdf",
       "objectType": "original_1986_printed_edition_of_anonymous_manuscript_copy_selected_pages_visually_inspected",
       "sourceRole": "ZER_1986_ANONYMOUS_JTS_L729_COPY_ALEPPO_WORD_JOIN_REPORT_EX17_137",
-      "sourceObjectState": "Original printed images p151 introduction (JTS L729 anonymous copy, NOT Saphir autograph), p154 abbreviation list, p165 item137 (Exod17:16 two-word question, answer one-word), and p191 note137 (Yeivin p82 / Breuer pp260–261 references) directly visually inspected on Daat. Ancient Aleppo original leaf LOST; JTS manuscript, Yeivin book, and Breuer book pages NOT individually viewed. No rights granted.",
+      "sourceObjectState": "Original printed images p151 introduction (JTS L729 anonymous copy, NOT Saphir autograph), p154 abbreviation list, p165 item137 (Exod17:16 two-word question, answer one-word), and p191 note137 (Yeivin p82 / Breuer pp260–261 references) directly visually inspected on Daat. Ancient Aleppo original leaf LOST; JTS manuscript, Yeivin book, and Breuer book pages NOT individually viewed. No rights granted. Wave33 separate official NLI Saphir catalog indexed (record NNL_ALEPH990001022670205171); do NOT confuse same-named Nathan ben Reuben Shapira Maorot Natan, record NNL_ALEPH990000621650205171. Catalog web page returned index but not original manuscript pixels or record shelfmark personally opened; reported NLI free-use status not transferable to other objects.",
       "supportedUse": "Attribute printed historical one-word testimony to Zer 1986 edited COPY of Saphir-associated material, not ancient Aleppo manuscript autopsy; give exact page and item number, preserve competing editorial opinions.",
       "forbiddenUse": "Claim JTS L729 is Saphir autograph, original Aleppo Exodus folio directly read, published Yeivin/Breuer pages viewed, ancient pronunciation derived from word division, or scanned pages rights-cleared.",
       "checkedProvenance": {
@@ -3516,6 +3516,20 @@
         "aleppoExodusFolioViewed": false,
         "yeivinPage82Viewed": false,
         "breuerPages260261Viewed": false
+      },
+      "canonicalManuscriptCatalogueRoute20261110": {
+        "nliRecordId": "NNL_ALEPH990001022670205171",
+        "nliRecordUrl": "https://www.nli.org.il/he/manuscripts/NNL_ALEPH990001022670205171/NLI",
+        "nliCatalogAttributedCreator": "Jacob Saphir (יעקב ספיר), 1822–1885",
+        "nliCatalogueItemTitle": "מאורות נתן",
+        "jtsShelfmarkAsPublishedInZer1986": "JTS L 729",
+        "nliRecordShelfmarkIndependentlyOpened": false,
+        "nliCataloguePublicDomainStatementSeen": true,
+        "nliManuscriptImagesOpened": false,
+        "exodus17_16HandwritingIndependentlyRead": false,
+        "notNathanShapiraId": "NNL_ALEPH990000621650205171",
+        "notNathanShapiraAuthor": "Nathan ben Reuben David Shapira",
+        "historicalNewspaperContentReadInDigitalScan": false
       }
     },
     {
@@ -3551,7 +3565,50 @@
         "aleppoOneWordReported": true,
         "mikraotGedolotHaKeterOneWordReported": true
       }
+    },
+    {
+      "id": "SRC-PENKOWER-TEXTUS9-1981-SAPHIR-HALEVANON-1863",
+      "title": "Jordan S. Penkower, Maimonides and the Aleppo Codex, Textus 9(1) (1981), 39–128, especially printed p.78 n.63",
+      "creator": "Jordan S. Penkower",
+      "year": 1981,
+      "doi": "10.1163/2589255x-00901005",
+      "url": "https://openscholar.huji.ac.il/sites/default/files/he_bible_project/files/penkower_j.s.1.pdf",
+      "publisherMetadataUrl": "https://cris.biu.ac.il/en/publications/maimonides-and-the-aleppo-codex/",
+      "objectType": "original_scholarly_1981_publication_digitized_pdf_selected_text_extract_primary_newspaper_not_collated",
+      "sourceRole": "PENKOWER_1981_PRINTED_P78_N63_SAPHIR_1863_ISSUE5_JTS729_BIBLIOGRAPHIC_CROSSWALK",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "evidenceClass": "B1",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "sourceObjectState": "Original Hebrew University hosted scholarly PDF was directly read as PDF text on printed p78 n63, with prior web screenshot request timed out: do not claim physical page image visually inspected. Footnote 63 explicitly cites Hebrew ha-Levanon I (1863) no5 pp31b-32a, excerpt reaching Exodus17:16, no11 pp76a,b, and JTS 729 copied list dated 1855. University of Bar-Ilan publication registry confirms Textus vol9 issue1 (1981) pp39-128 DOI. NLI official historical newspaper archive indexes issue 5 exactly 9 July 1863. The original 1863 newspaper's Exodus17:16 print line has NOT independently been read as image or verified against the Penkower report. Other automated browser report claiming specific page words was self-contradictory about author and cannot count as evidence.",
+      "supportedUse": "Cite Penkower as an original 1981 secondary scholarly bibliography describing the mid-nineteenth-century printing route, 1863 issue5 pages and copied JTS list; cite NLI calendar only for 9 July issue date. Distinguish copied JTS 729, 1863 printed newspaper, and lost Aleppo codex as three NON-INTERCHANGEABLE evidence objects.",
+      "forbiddenUse": "Claim 1863 issue No5 image/photo scanned and Hebrew words independently verified; assert modern 1981 scholarly PDF screenshot succeeded; confuse Saphir with Nathan Shapira's unrelated Kabbalah work; claim JTS L729 is Saphir autograph or preserved Aleppo Exodus folio; assert original Yeivin or Breuer pages read; relicense 1981 scanned journal, 1863 page or manuscript photographs to Product.",
+      "checkedAccess": {
+        "originalPenkowerPublishedPdfTextPrintedPage78Read": true,
+        "originalPenkowerPublishedPdfPage78ScreenshotSuccess": false,
+        "penkowerPrintPage": 78,
+        "footnoteNumber": 63,
+        "publisherPeerReviewedPublicationVerified": true,
+        "halevanonYear": 1863,
+        "halevanonIssueNumber": 5,
+        "halevanonPagesReported": "31b–32a",
+        "halevanonExactIssueDateVerifiedFromOfficialNLI": "1863-07-09",
+        "officialNLICalendarUrl": "https://www.nli.org.il/he/newspapers/?a=cl&ai=1&cl=CL1&sp=hlb",
+        "halevanonOriginalIssuePage31and32ImageIndependentlyInspected": false,
+        "halevanonVerseHebrewWordsIndependentlyCollated": false,
+        "nliSaphirManuscriptCatalogueId": "NNL_ALEPH990001022670205171",
+        "unrelatedNathanShapiraNLICatalogueId": "NNL_ALEPH990000621650205171",
+        "jts729AutographInspected": false,
+        "aleppoOriginalExodus17_16ManuscriptInspected": false
+      }
     }
   ],
-  "auditRevision": "NG04_WAVE32_ZER_1986_AND_OFER_2008_PUBLISHED_SOURCE_GATES_20261110"
+  "auditRevision": "NG04_WAVE33_PENKOWER_TEXTUS9_1981_P78_N63_HALEVANON1863_CATALOG_CORRECT_NO_PRIMARY_INK_20261110"
 }

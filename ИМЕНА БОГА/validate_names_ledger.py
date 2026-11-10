@@ -375,6 +375,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-CAMBRIDGE-GOD-PRONOUNS": "ATTRIBUTED_SECONDARY_GRAMMAR_AND_THEOLOGY",
     "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137": "ZER_1986_ANONYMOUS_JTS_L729_COPY_ALEPPO_WORD_JOIN_REPORT_EX17_137",
     "SRC-OFER-BREUER-MASORAH-2008-EX17-16": "OFER_2008_EDITORIAL_BREUER_TWO_WORD_VERSUS_ALEPPO_ONE_WORD_ATTRIBUTED_ANALYSIS",
+    "SRC-PENKOWER-TEXTUS9-1981-SAPHIR-HALEVANON-1863": "PENKOWER_1981_PRINTED_P78_N63_SAPHIR_1863_ISSUE5_JTS729_BIBLIOGRAPHIC_CROSSWALK",
     "SRC-RAHLFS-EXODUS17": "PUBLISHER_LXX_EXODUS_TRANSLATIONAL_SURFACE",
     "SRC-NET-EXODUS17": "ATTRIBUTED_TRANSLATION_TEXTUAL_HYPOTHESES",
     "SRC-NET-GENESIS22": "ATTRIBUTED_TRANSLATION_GRAMMAR_ALTERNATIVES",
@@ -548,6 +549,36 @@ def validate_source_access(sources: dict) -> list[str]:
                     or w.get("aleppoOneWordReported") is not True
                     or w.get("mikraotGedolotHaKeterOneWordReported") is not True):
                 errors.append(f"{prefix}: Ofer 2008 secondary review wrongly promoted to ancient/critical primary source")
+        if rid == "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137":
+            d = source.get("canonicalManuscriptCatalogueRoute20261110", {})
+            if (not isinstance(d, dict)
+                    or d.get("nliRecordId") != "NNL_ALEPH990001022670205171"
+                    or d.get("nliCatalogAttributedCreator") != "Jacob Saphir (יעקב ספיר), 1822–1885"
+                    or d.get("notNathanShapiraId") != "NNL_ALEPH990000621650205171"
+                    or d.get("nliRecordShelfmarkIndependentlyOpened") is not False
+                    or d.get("nliManuscriptImagesOpened") is not False
+                    or d.get("exodus17_16HandwritingIndependentlyRead") is not False
+                    or d.get("historicalNewspaperContentReadInDigitalScan") is not False):
+                errors.append(f"{prefix}: Sapir versus Shapira Maorot Nathan catalog and unearned original scan access")
+        if rid == "SRC-PENKOWER-TEXTUS9-1981-SAPHIR-HALEVANON-1863":
+            w = source.get("checkedAccess", {})
+            if (source.get("url") != "https://openscholar.huji.ac.il/sites/default/files/he_bible_project/files/penkower_j.s.1.pdf"
+                    or source.get("year") != 1981 or source.get("doi") != "10.1163/2589255x-00901005"
+                    or source.get("rightsState") != "PERMISSION_REQUIRED" or source.get("publicationState") != "BLOCKED"
+                    or source.get("criticalEditionCollated") is not False or not isinstance(w, dict)
+                    or w.get("originalPenkowerPublishedPdfTextPrintedPage78Read") is not True
+                    or w.get("originalPenkowerPublishedPdfPage78ScreenshotSuccess") is not False
+                    or w.get("penkowerPrintPage") != 78 or w.get("footnoteNumber") != 63
+                    or w.get("halevanonYear") != 1863 or w.get("halevanonIssueNumber") != 5
+                    or w.get("halevanonPagesReported") != "31b–32a"
+                    or w.get("halevanonExactIssueDateVerifiedFromOfficialNLI") != "1863-07-09"
+                    or w.get("halevanonOriginalIssuePage31and32ImageIndependentlyInspected") is not False
+                    or w.get("halevanonVerseHebrewWordsIndependentlyCollated") is not False
+                    or w.get("nliSaphirManuscriptCatalogueId") != "NNL_ALEPH990001022670205171"
+                    or w.get("unrelatedNathanShapiraNLICatalogueId") != "NNL_ALEPH990000621650205171"
+                    or w.get("jts729AutographInspected") is not False
+                    or w.get("aleppoOriginalExodus17_16ManuscriptInspected") is not False):
+                errors.append(f"{prefix}: Penkower 1981 historic newspaper source report is not inspected 1863 original or JTS codex")
         if rid == "SRC-ETCBC-ABEGG-BOWLEY-COOK-4Q72-JER33":
             if (source.get("url") != "https://theancientbible.org/4q72-p1/"
                     or source.get("fragmentLabel") != "f55ii"

@@ -2021,5 +2021,30 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                 row["checkedProvenance"][key] = wrong
                 self.assertTrue(any("Ofer 2008 secondary review" in e for e in validate_source_access(data)))
 
+    def test_penkower_1981_and_saphir_catalog_must_not_claim_1863_scan_autopsy(self) -> None:
+        for rid,field,wrong in (
+            ("SRC-PENKOWER-TEXTUS9-1981-SAPHIR-HALEVANON-1863", "halevanonOriginalIssuePage31and32ImageIndependentlyInspected", True),
+            ("SRC-PENKOWER-TEXTUS9-1981-SAPHIR-HALEVANON-1863", "halevanonVerseHebrewWordsIndependentlyCollated", True),
+            ("SRC-PENKOWER-TEXTUS9-1981-SAPHIR-HALEVANON-1863", "originalPenkowerPublishedPdfPage78ScreenshotSuccess", True),
+            ("SRC-PENKOWER-TEXTUS9-1981-SAPHIR-HALEVANON-1863", "nliSaphirManuscriptCatalogueId", "NNL_ALEPH990000621650205171"),
+            ("SRC-PENKOWER-TEXTUS9-1981-SAPHIR-HALEVANON-1863", "jts729AutographInspected", True),
+        ):
+            with self.subTest(source=rid, field=field):
+                changed = copy.deepcopy(self.sources)
+                row = next(x for x in changed["records"] if x["id"] == rid)
+                row["checkedAccess"][field] = wrong
+                self.assertTrue(any("Penkower 1981 historic newspaper source report" in e
+                                    for e in validate_source_access(changed)))
+        for field,wrong in (("nliRecordId", "NNL_ALEPH990000621650205171"),
+                            ("nliManuscriptImagesOpened", True),
+                            ("historicalNewspaperContentReadInDigitalScan", True)):
+            with self.subTest(zer_catalog_field=field):
+                changed = copy.deepcopy(self.sources)
+                row = next(x for x in changed["records"]
+                           if x["id"] == "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137")
+                row["canonicalManuscriptCatalogueRoute20261110"][field] = wrong
+                self.assertTrue(any("Sapir versus Shapira Maorot Nathan catalog" in e
+                                    for e in validate_source_access(changed)))
+
 if __name__ == "__main__":
     unittest.main()
