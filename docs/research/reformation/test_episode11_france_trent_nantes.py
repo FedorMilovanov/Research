@@ -35,6 +35,30 @@ class FranceTrentNantesTests(unittest.TestCase):
         for key in ("REF-P18","REF-P20","REF-P27","REF-P28","REF-P29"):
             self.assertIn("PUBLICATION_HOLD",records[key]["holds"])
 
+    def test_nantes_paris_special_article_is_not_erased_by_general_prohibition(self):
+        s = CH.read_text(encoding="utf-8")
+        reader, apparatus = s.split("## Источниковедческий аппарат", 1)
+        claim = next(line for line in (D / "03_claim_verification_register.md").read_text(encoding="utf-8").splitlines()
+                     if line.startswith("| C301 |"))
+        packet = (D / "independent_review_packets.md").read_text(encoding="utf-8")
+        reg = json.loads((D / "source-registry-v1.json").read_text(encoding="utf-8"))
+        source = next(x for x in reg["sources"] if x["id"] == "REF-S101")
+        for marker in ("Особая статья XXXIII", "не далее пяти лье",
+                       "одного определённого места", "общую статью XIV",
+                       "не разрешение открыть службы"):
+            self.assertIn(marker.lower(), reader.lower())
+        for marker in ("REF-S101", "376–377", "L488–504",
+                       "ORIGINAL_ART33_PRINT_COLLATION_HOLD", "LOCAL_EXECUTION_HOLD"):
+            self.assertIn(marker, apparatus)
+        for marker in ("особая статья XXXIII", "SECONDARY_CHECKED",
+                       "ORIGINAL_ART33_PRINT_COLLATION_HOLD"):
+            self.assertIn(marker.lower(), claim.lower())
+        self.assertIn("особую статью **XXXIII**", packet)
+        self.assertEqual(source["evidenceClass"], "B1")
+        self.assertEqual(source["accessState"], "PARTIAL_OBJECT")
+        self.assertIn("PUBLICATION_HOLD", source["holds"])
+        self.assertIn("not physically inspected original", source["verificationNote"].lower())
+
     def test_reader_navigation_and_historical_overclaims_rejected(self):
         for path in ("README.md","SELF_PLAN.md","04_series_blueprint.md",
                      "09_france_confession_nantes_source_study.md"):
