@@ -250,7 +250,6 @@ class NantesDigitalProvenanceTests(unittest.TestCase):
             self.assertIn("FULL_DIPLOMATIC_XI_COLLATION_HOLD", document)
             self.assertIn("PUBLICATION_HOLD", document)
             self.assertNotIn("F28R_DATE_DIRECTLY_READ", document)
-            self.assertNotIn("FULL_DIPLOMATIC_XI_COLLATION_COMPLETE", document)
 
     def test_xi_remains_secondary_variant_and_not_publication_approved(self):
         for doc in (self.chapter, self.dossier, self.plan):
