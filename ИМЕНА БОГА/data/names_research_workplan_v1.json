@@ -16,7 +16,7 @@
     "regressionTests": 289,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_70DB0581_EXACT_6_SUCCESS_WAVE23_NEW_SHA_PENDING",
+    "allSixCiChecks": "PRIOR_F7CA85C7_EXACT_6_SUCCESS_WAVE24_NEW_SHA_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "70db0581ba66d2141bbc7fc96b2e1f0b6704daf4"
+    "lastConfirmedAllSixChecksSha": "f7ca85c77e3dee3e6ea00e0a1e4b2f5d9f3743a1"
   },
   "allowedStatuses": [
     "DONE",
@@ -742,7 +742,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "2026-11-10 WAVE23 original 1999 Brill Study Edition pp271–272 PDF image screenshots pages 295–296 directly read. SECONDARY modern scholarly summary prints 4Q72 (4QJer c) Jer33:16–20 as column XXIV, while primary Tov DJD XV 1997 original text lists XXIV=Jer33:? and XXV=Jer33:16–20. 1999 printed 'ROC 232, 244–346, 671' vs Tov 1997 'Mus. Inv. 232, 244, 245, 246, 671'. Brill prints Tov 1991 paper pages248–276, Hebrew University and Tov original use 249–276. Preserve each edition's exact locators, do NOT automatically claim reason for difference or corrected typo, do NOT infer 2 ancient scrolls or image reuse rights. New distinct modern book source record B1/PARTIAL_OBJECT/BLOCKED (101 registered), +2 adverse mutation methods (289 corpus tests). Primary original ancient PHOTO PLATES from Tov 1991 or 1997 still uninspected and actual frg55ii vs IAA B360205 has no visual match. Prior 70db0581 SHA all six GH CI success, wave23 exact SHA pending. NG10 BLOCKED_SOURCE, 0 critical ancient collations, 0 scholarly/Product approvals, rights/publication HOLD; source edition label mandatory. Next gate authenticated photo/codicological object match and glyph comparison only, not unsourced museum plate 346.",
+  "nextAction": "WAVE24 (2026-11-10) photo access discovery exhausted with exact gates: Brill Scholarly Editions DSS Biblical publisher pairs editions with real ancient PAM/IAA images, but live browser 4Q72 reader urn:cts:ancJewLit:dss.4q72.dsbo-eng2:f1i-f6 blocked credentials and independent reader request HTTP403; reader type eng2 NOT independently proven image URL, no photos/rendered pixels. Tov 1997 DJD XV third-party 21.43MB PDF source text available, web screenshot TOO LARGE 400 and second browser only PDF filename; presence of plates in that actual file UNKNOWN. Tov 1991 OBO109 I-VII ZORA Anubis denied. Official IAA B360205 photo exists, but independent line/glyph reading and physical match archive plate245 Frag6 ↔ editor frg55ii not established; old IAA B279109 PAM40.963 multi-manuscript negative has no target-ink collation. Open Dead Sea CC BY-NC covers its draft/text data, photos link to IAA/Israel Museum and NOT relicense photos. 101 unique source records, 289 core tests unchanged. Previous exact f7ca85c7 SHA 6/6 CI SUCCESS; wave24 new HEAD needs own CI. NG10 BLOCKED_SOURCE, no new critical collation or peer/Product approval, photo rights HOLD. Only justified further action: authorized original photographic object and exact fragment match, or STOP_DISCOVERY, no more bibliography/test-count padding.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -824,7 +824,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-10",
-    "planStatus": "WAVE23 secondary original-book visually verified: García Martínez & Tigchelaar Brill Study Edition 1999 printed pp271/272 web PDF screenshots indexes295/296. 4Q72 short 1999 summary uses col XXIV Jer33:16–20, vs Tov 1997 primary XXIV Jer33:? and XXV Jer33:16–20; printed ROC 244–346 vs Tov 244,245,246; 1991 chapter page248 vs primary/author university page249. Separate edition provenance recorded without pretending another ancient witness. Now 101 source objects, 289 corpus tests; new HEAD own CI required; source/rights holds unchanged.",
+    "planStatus": "WAVE24 primary photographic acquisition boundary established. Brill 4Q72 reader identified but credentials denied + independent HTTP403; original photo object/URN type unconfirmed. Original 1997 21MB scan PDF unable to render/verify physical photographic plates, Brill photos subscription-only, 1991 ZORA locked; official IAA 2012 view cannot be independently matched to DJD frg55ii or read glyphs. No source/test inflations: 101 source records and 289 core regressions. Previous f7ca85c7 exact 6/6 CI green; current wave24 SHA pending. NG10 BLOCKED_SOURCE, criticalCollations 0, scholarly/Product 0, photo rights HOLD.",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -930,14 +930,15 @@
       "2026-11-10 WAVE20 supplement primary editorial literature: Tov DJD XV 1997 4QJer c section original written list includes PAM43.101 main photo series and 40.963 in parenthetical earlier photos; editorial explanatory sentence says later 43-series contains more identifications. Original book text was parsed in a 21MB third-party PDF; web screenshot refused due size, no direct physical original photo/plates viewed. Existing Tov source row updated and one negative test against conflating negatives or photo/plate review; 100 sources/284 corpus tests; no image redistribution.",
       "2026-11-10 WAVE21 targeted source acquisition: Hebrew University institutional listing independently confirms Tov 1991 4QJer (4Q72) in OBO109 Tradition of the Text pp249–276; original Tov DJD XV 1997 references first edition plates I–VII versus 1997 plates XXX–XXXVI. University Bern scholarly series publisher states OA OBO ZORA, but ZORA returned Anubis ACCESS DENIED; no actual 1991 original text or photographic plate read. Official IAA manuscript navigation /manuscript/4Q72-1 verified against separate 4Q70/4Q71. Commons File:4q72.jpg false-positive PDB 4Q72 protein rejected. Existing Tov row and adversarial regression updated, no fake source and no rise in claims; 100 sources, 285 core tests, 0 original ancient collation or Product grant.",
       "2026-11-10 WAVE22 source-object trap audit: DJD XV primary table of contents and official Hebrew University Textus XVII 1994 TOC jointly identify Tov 1994 Preliminary Edition as 4QJer a (4Q70), not 1991 Tov OBO109 4QJer c=4Q72. DJD XV primary 4QIsa c=4Q57 fragment55 Isa51:8-9 distinct from Qumran-Digital 4Q72 fragment55ii Jer33:16-20, independently verified two different scholarly edited transcriptions (not independently verified ancient photos). One existing source row + validation guard + two negative mutations added. No new source-count inflation. Original 21.43MB DJD XV PDF visual screenshot failed, 0 photo collations. 100 source entries, 287 core tests. Exact new SHA CI required.",
-      "2026-11-10 WAVE23 printed-original scholarly synopsis cross-edition check: directly VISUALLY inspected 1999 Brill Study Edition vol1 actual printed pp271/272 as web PDF screenshots indices295/296. Confirmed editorial col-XXIV vs primary Tov-XXV Jer33:16–20, odd secondary ROC244–346 vs original Mus.Inv 244,245,246, and 1991 reference 248–276 vs 249–276. Each edition source labelled separately; no invented reason for conflict, no new ancient manuscript, no photo-ink autopsy. One genuine new modern book source record and two mutation tests for distinct edition locators and photo/rights hold. 101 source records, 289 core tests, 0 original photo collation, 0 external scholarly or Product approvals."
+      "2026-11-10 WAVE23 printed-original scholarly synopsis cross-edition check: directly VISUALLY inspected 1999 Brill Study Edition vol1 actual printed pp271/272 as web PDF screenshots indices295/296. Confirmed editorial col-XXIV vs primary Tov-XXV Jer33:16–20, odd secondary ROC244–346 vs original Mus.Inv 244,245,246, and 1991 reference 248–276 vs 249–276. Each edition source labelled separately; no invented reason for conflict, no new ancient manuscript, no photo-ink autopsy. One genuine new modern book source record and two mutation tests for distinct edition locators and photo/rights hold. 101 source records, 289 core tests, 0 original photo collation, 0 external scholarly or Product approvals.",
+      "2026-11-10 WAVE24 image-acquisition source audit: via live browser found Brill scholarly reader for 4Q72 urn:cts:ancJewLit:dss.4q72.dsbo-eng2:f1i-f6, directly observed no-right-credentials page; secondary request HTTP403; version/type unverified as image so not called photo URL. Publisher image access guide says photos supplied from PAM/IAA, but no actual picture pixels loaded. DJD XV 1997 21.4MB third-party PDF web screenshot error 400 TOO_LARGE, live second browser only filename; full plate content/presence in PDF UNKNOWN. Open Dead Sea explicit licensing states its modern research text data CC BY-NC 4.0, original photos only outbound to IAA or Israel Museum, no derived reprint rights. Existing Tov source row and dossier16 updated, 101 records/289 tests unchanged, NG10/rights/Product HOLD."
     ],
     "stillOpen": [
-      "Exact current Wave23 HEAD 6/6 terminal GitHub workflow CI required; previous 70db0581 SHA had 6/6 SUCCESS.",
-      "Scientific source discrepancy: Brill 1999 Col XXIV Jer33:16–20 vs original Tov DJD XV 1997 Col XXV; reason not verified. Brill ROC '244–346' versus primary museum 244,245,246 likely typo but not definitive. Source labels are mandatory.",
-      "Authentic ancient photographed 4Q72 (4QJer c) Jer33:16–20 frg55ii and direct image comparison to 1954 PAM40.963 / 2012 B360205 remain blocked. Original Tov 1991 I–VII and 1997 XXX–XXXVI photo plates UNVIEWED.",
-      "Original Isaiah9 Ziegler critical apparatus and Vatican Q exact image and photoglyph collation also blocked.",
-      "All NG10 science HOLD, 0 original critical letterform collations, 0 independent scholarly and Product approvals; no rights/photo republication or main merge."
+      "Exact current Wave24 HEAD GitHub Actions 6/6 terminal CI required; previous f7ca85c7 SHA 6/6 success.",
+      "Authorized 4Q72 original manuscript photo from Brill or IAA with exact editor frg55ii Jer33:16–20 physical image match; Brill reader denies credentials HTTP403, no photo image/URN verified.",
+      "DJD XV actual PDF photographic-plate presence not verified; Tov 1991 OBO109 I–VII ZORA Anubis blocked; 1997 XXX–XXXVI original raster plates not viewed.",
+      "IAA B360205 plate245 Frag6 vs DJD frg55ii historical frame and glyph correspondence unproven; initial יהוה צד only edited transcript, [קנו] restored, no independent paleo-autopsy.",
+      "NG10 BLOCKED_SOURCE, Ziegler Isaiah9 original apparatus and Vatican Q Isaiah9 image still inaccessible; no scholarly/Product approvals or photo rights, no merge."
     ]
   },
   "originalResearchCheckpoint": {
