@@ -42,7 +42,7 @@ class NantesDigitalProvenanceTests(unittest.TestCase):
         self.assertEqual(self.source_count, 204)
         self.assertEqual(len(self.sources), 204)
         bge = self.sources["REF-P86"]
-        self.assertEqual(bge["accessState"], "CATALOG_ONLY")
+        self.assertEqual(bge["accessState"], "PARTIAL_OBJECT")
         self.assertIn("29 May 1599", bge["verificationNote"])
         for hold in ("ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"):
             self.assertIn(hold, bge["holds"])
@@ -60,7 +60,7 @@ class NantesDigitalProvenanceTests(unittest.TestCase):
         self.assertIn(marker, bge["verificationNote"])
         self.assertIn("22 May 1599", bge["verificationNote"])
         self.assertIn("29 May 1599", bge["verificationNote"])
-        self.assertEqual(bge["accessState"], "CATALOG_ONLY")
+        self.assertEqual(bge["accessState"], "PARTIAL_OBJECT")
         self.assertIn("ARCHIVE_HOLD", bge["holds"])
         self.assertIn("RIGHTS_HOLD", bge["holds"])
         self.assertIn("PUBLICATION_HOLD", bge["holds"])
@@ -82,7 +82,7 @@ class NantesDigitalProvenanceTests(unittest.TestCase):
         self.assertIn("14:19:53 UTC", self.plan)
         self.assertNotIn("ARCHIVE_ACCESS_REQUEST_DRAFT / NOT_SENT", request)
         self.assertEqual(self.source_count, 204)
-        self.assertEqual(self.sources["REF-P86"]["accessState"], "CATALOG_ONLY")
+        self.assertEqual(self.sources["REF-P86"]["accessState"], "PARTIAL_OBJECT")
         self.assertIn("PUBLICATION_HOLD", self.sources["REF-P86"]["holds"])
 
     def test_custodian_named_folios_not_mistaken_for_transcribed_ms(self):
@@ -118,7 +118,7 @@ class NantesDigitalProvenanceTests(unittest.TestCase):
                       "COPY_DATE_CONFLICT_22_29_MAY_1599", "EARLY_XI_COLLATION_HOLD"):
             self.assertIn(token, c301)
         bge = self.sources["REF-P86"]
-        self.assertEqual(bge["accessState"], "CATALOG_ONLY")
+        self.assertEqual(bge["accessState"], "PARTIAL_OBJECT")
         self.assertEqual(bge["checkedAt"], "2026-11-10")
         self.assertIn("CorrMss 2026/448", bge["verificationNote"])
         self.assertIn("FOLIO_IMAGES_UNREAD", bge["verificationNote"])
@@ -147,7 +147,7 @@ class NantesDigitalProvenanceTests(unittest.TestCase):
         self.assertIn("REVIEW_PACKETS_PREPARED / NOT_SENT", packet)
         source = self.sources["REF-P86"]
         self.assertEqual(source["checkedAt"], "2026-11-10")
-        self.assertEqual(source["accessState"], "CATALOG_ONLY")
+        self.assertEqual(source["accessState"], "PARTIAL_OBJECT")
         self.assertIn("CUSTODIAN_DATE_22_MAY_1599_CONFIRMED", source["verificationNote"])
         c301 = next(line for line in self.claims.splitlines() if line.startswith("| C301 |"))
         for term in ("ARTICLE_XI_CONTINUES_F5", "FOLIO_IMAGES_UNREAD",
@@ -155,6 +155,45 @@ class NantesDigitalProvenanceTests(unittest.TestCase):
             self.assertIn(term, c301)
         for value in ("ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"):
             self.assertIn(value, source["holds"])
+
+    def test_wave422_private_tiff_evidence_is_partial_not_publication(self):
+        """Image custody and initial visual inspection are not manuscript collation."""
+        request = (HERE / "nantes_bge_ms_fr_413_archival_request.md").read_text(encoding="utf-8")
+        packet = (HERE / "independent_review_packets.md").read_text(encoding="utf-8")
+        source = self.sources["REF-P86"]
+        self.assertEqual(source["accessState"], "PARTIAL_OBJECT")
+        self.assertTrue(source["verificationNote"].startswith("2026-11-10 WAVE422"))
+        for token in ("FILES_ACQUIRED_DIRECTLY", "THREE_FOLIOS_VISUALLY_INSPECTED",
+                      "F028V_CERTIFICATION_DIRECT_READ_HOLD", "EARLY_XI_COLLATION_HOLD",
+                      "ORIGINAL_GENEVAN_COLLATION_HOLD"):
+            with self.subTest(token=token):
+                self.assertIn(token, source["verificationNote"])
+                self.assertIn(token, self.plan)
+        originals = {
+            "ms_fr_00413_f004v.tif": ("42 102 794", "f7f413206e723ab0931a3e57623636a9f94161f5113adc33201fb7fa02ca1379"),
+            "ms_fr_00413_f005r.tif": ("42 102 722", "32945087dc4e3966c7e8b02778a390b37c0f8b25d036d40b69b431aea06c3003"),
+            "ms_fr_00413_f028v.tif": ("42 102 002", "383fb8c108bd9161ce4d17c606f61e2ec7582d19c74521ed18ff95eefd04ebc7"),
+        }
+        for name, (size, sha256) in originals.items():
+            with self.subTest(name=name):
+                self.assertIn(name, request)
+                self.assertIn(size, request)
+                self.assertIn(sha256, request)
+        for document in (request, packet, self.dossier, self.chapter, self.plan, self.claims):
+            with self.subTest(document=document[:24]):
+                self.assertIn("F028V_CERTIFICATION_DIRECT_READ_HOLD", document)
+                self.assertIn("EARLY_XI_COLLATION_HOLD", document)
+                self.assertIn("RIGHTS_HOLD", document)
+                self.assertIn("PUBLICATION_HOLD", document)
+        self.assertIn("REVIEW_PACKETS_PREPARED / NOT_SENT", packet)
+        for hold in ("ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"):
+            self.assertIn(hold, source["holds"])
+        # The private transfer token and protected photo bytes must not enter public research docs.
+        import re
+        for document in (request, packet, self.dossier, self.chapter, self.plan, self.claims):
+            self.assertIsNone(re.search(
+                r"https?://(?:www\.)?swisstransfer\.com/[a-z]{2}/[0-9a-f-]{36}",
+                document, flags=re.IGNORECASE))
 
     def test_xi_remains_secondary_variant_and_not_publication_approved(self):
         for doc in (self.chapter, self.dossier, self.plan):
