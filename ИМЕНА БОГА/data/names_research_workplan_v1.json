@@ -13,10 +13,10 @@
     "extensionRecords": 13,
     "contextAttestations": 105,
     "sourceRegisterEntries": 99,
-    "regressionTests": 280,
+    "regressionTests": 281,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_899E7C2_EXACT_6_SUCCESS_WAVE17_NEW_SHA_PENDING",
+    "allSixCiChecks": "PRIOR_DCC8FD2_EXACT_6_SUCCESS_WAVE19_NEW_SHA_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "899e7c29f0914fb2742fad1fe283de70d50be301"
+    "lastConfirmedAllSixChecksSha": "dcc8fd2053533510afea9698fe6debb98f7dbdf7"
   },
   "allowedStatuses": [
     "DONE",
@@ -742,7 +742,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "2026-11-10 WAVE 17 closure gate: confirm CI on the exact post-update SHA for six workflows before declaring this new revision technically accepted; previous exact 899e7c29f0914fb2742fad1fe283de70d50be301 has 6/6 SUCCESS. Wave 18 next: obtain lawful, full Ziegler Göttingen Isaias XIV (1983) Apparatus I/II at Isaiah 9:5 (Rahlfs/LXX) and exact corresponding MT/English numbering, independently inspect variant sigla and correctors. If licensed source is inaccessible, record BLOCKED_SOURCE and STOP_DISCOVERY rather than replacing it with secondary re-tellings. Wave 19 next: inspect the exact Vatican Q Vat.gr.2125 folio/image of Isaiah 9; photo pixels not yet viewed. Wave 20 next: primary DJD XV / IAA B-360205 4Q72 vs 4Q72a crosswalk. NG10 remains BLOCKED_SOURCE, criticalCollationsCompleted=0, independentScholarlyClaimApprovals=0, productApprovals=0; no site publication or Research main merge.",
+  "nextAction": "2026-11-10 WAVE19 manuscript page locator QC: a real original scholarly publication, Valerio COMSt Bulletin 8/1 (2022), printed p56 §2.2.1, reports Vat.gr.2125/Q page171 as initially blank opening page of Isaiah with second-hand colophon, not proven Isaiah1:1 text. Browser-generated Mark1 74-line transcript was rejected as incompatible with Prophets-only Q (one col, 29 lines/page). Research did NOT visually collate the exact target Isaiah9 page, did NOT read original Ziegler Isaias XIV 1983 Isaiah9 Apparatus I/II, and did NOT acquire photo rights. Existing Vatican source row now records this codicological crosscheck; 1 negative guard test protects against false photo promotion. Continue Wave19 exact authorized Isaiah9 folio access only with verifiable adjacent verse evidence; if unavailable STOP rather than use assumed folio or false browser text. Wave18 Ziegler original apparatus still BLOCKED_SOURCE and Wave20 DJD XV/IAA 4Q72 original identity remains. Maintain NG10 BLOCKED_SOURCE, 0 criticalCollationsCompleted and 0 external scholarly/Product approvals. Exact new SHA CI required.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -824,7 +824,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-10",
-    "planStatus": "WAVE17 CONTROL-PLANE AUDIT (2026-11-10): predecessor 899e7c2 exact 6/6 SUCCESS independently checked; new wave17 edit needs its own exact-SHA GitHub CI. 99 source entries, 105 attestation links, 87 provisional claims, 280 corpus tests, 0 critical collations, 0 external scholarly or Product approvals. main compared from merge-base 4f600da to live 482abe3: main changes 41 filenames across 83 commits (Reformation); Research PR changes 63 filenames across 384 commits; path intersection 0. No merge/rebase; no assertion of build-semantic compatibility from filename disjointness. The prior long NG05/NG12 chronology stays in workCompleted and dated source dossiers rather than being used as the active status.",
+    "planStatus": "WAVE19 page171-Q control: initial wave17 final dcc8fd2053533510afea9698fe6debb98f7dbdf7 independently confirmed six GitHub workflows SUCCESS. New wave19 HEAD requires own exact-SHA CI. 99 source records and 281 core tests after 1 targeted negative test; 105 attestations, 87 provisional claims, 0 original critical manuscript collations and 0 independent scholarly/Product approvals. Publisher journal original PDF text of Valerio 2022 printed p56 says p171 originally blank with later colophon; screenshot failed HTTP403, not a photograph of ancient Q. Reject automated hallucinated Mark1 on Q and ungrounded p171=Isaiah1:1 premise. All rights, scientific and publication HOLD retained.",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -924,14 +924,15 @@
       "08.11.2026 NG12 audited existing digital excerpt attributed to Franken1976 printed p16: single Phase M/IX BB303 charred grain GrN5633 2600±50 BP aligns Weinstein1984 original p351 and differs from ADAJ1986 original p142. Kept as secondary quotation in original 1976 registry record rather than inflated source count; 2 new adversarial scope tests, Reader03/dossier03 and master/navigation reconciled. No assumption that 1986 mismatch is proven typo or original 1972/1976 actually read.",
       "NG12 primary lab source obtained directly from Cambridge publisher complete 1972 PDF: original printed page 53 verified by extraction, two sample IDs and different excavation material/years + δ13C, pretreatment and contemporary ca800 BCE correction, contradicting 1986 lab sample pairing. The cause of 1986 report error not inferred; 1972 use of 'temple annexes' attributed as assumption, not proven sanctuary; ledger+3 fail-closed tests, Reader03/Dossier03, machine/human plan/nav corrected.",
       "NG12 first firsthand original scholarly redaction Caquot/Lemaire Syria1977 pp193–198 inspected directly by paginated digital text: attributed hypothesis of moving fragment Ic/combination lines, red ink evidence, explicit 1977 line4 =1976 line6 concordance, 1977 line6 sdyn corresponds 1976 line8, 1977 line8 sdh is a proposed owl (distinct), title shadday plural only author proposal. Register 1 source, 3 falsification tests, Reader03/Dossier03 and SSOT plan/nav updated.",
-      "2026-11-10 WAVE17: exact pre-edit GitHub PR379 HEAD 899e7c29f0914fb2742fad1fe283de70d50be301 CI 6/6 terminal success; main at 482abe3847d0bb68c46c846311c411b17b565dba and merge-base 4f600dafe8ac52f8244148abdf0845f830cd2263; PR 384 ahead/83 behind, changed path sets 63 vs 41 with zero filename overlap. This is a filename-level integration audit, NOT a merge-safety verdict. Historical Wave5 nextAction and CI predecessor corrected. Newly written SHA must pass CI separately."
+      "2026-11-10 WAVE17: exact pre-edit GitHub PR379 HEAD 899e7c29f0914fb2742fad1fe283de70d50be301 CI 6/6 terminal success; main at 482abe3847d0bb68c46c846311c411b17b565dba and merge-base 4f600dafe8ac52f8244148abdf0845f830cd2263; PR 384 ahead/83 behind, changed path sets 63 vs 41 with zero filename overlap. This is a filename-level integration audit, NOT a merge-safety verdict. Historical Wave5 nextAction and CI predecessor corrected. Newly written SHA must pass CI separately.",
+      "2026-11-10 WAVE19 Codex Q evidence correction: Original contemporary scholarly Valerio 2022 §2.2.1 printed p56 read as extracted publisher PDF text (screenshot 403); Q page171 opening Isaiah colophon second hand. Official Göttingen Q catalog 1 column 29 lines Prophets-only. Earlier agent-generated Mark1 74-line 'transcription' explicitly refused. Specific source record, original Russian dossier and 1 fail-closed core regression updated. No original Isaiah9 folio, no edited critical apparatus or permissions. Wave18/19 scientific status NOT DONE."
     ],
     "stillOpen": [
-      "Wave17 new SHA exact 6/6 CI required; previous 899e7c2 is proven green, not inherited by successor.",
-      "NG04/NG10/NG11/NG12 primary critical-source collations remain BLOCKED_SOURCE, including Ziegler Isaias Isa9 original apparatus and Vatican Codex Q exact folio.",
-      "NG05 pronunciation source comparison remains OPEN; NG06 access BLOCKED_ACCESS; NG07–09 media author-level verification IN_PROGRESS.",
-      "NG13 independent scholarly review and NG14 external Arena/runtime consumer evidence remain blocked; 0 scholarly approvals, 0 Product approvals, 0 ancient critical collations.",
-      "NG15 permissions and Product handoff remain publication HOLD; PR diverged 384 ahead/83 behind at pre-update snapshot, 0 changed filename overlap, recheck main before any proposed integration."
+      "New wave19 exact-SHA 6/6 CI required; pre-edit dcc8fd2 was independently verified terminal green.",
+      "NG10 original Ziegler critical apparatus to Isaiah9 still unavailable, and exact Vatican Q page/canvas containing Isaiah9 unverified; page171 colophon crosscheck is secondary codicological evidence, not ancient photographed letters.",
+      "NG04/NG11/NG12 remain blocked on critical sources; NG05 OPEN; NG06 media access blocked and NG07-NG09 partially reviewed.",
+      "NG13 independent outside scholarly review NG14 external consumer runtime not accepted; 0 approved critical collations 0 Product approvals.",
+      "NG15 photo rights and publication hold; Draft PR remains unmerged."
     ]
   },
   "originalResearchCheckpoint": {
