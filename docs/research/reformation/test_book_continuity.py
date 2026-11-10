@@ -143,6 +143,36 @@ class BookContinuityTests(unittest.TestCase):
         for hold in ("NOT_EDITORIAL_READY", "RIGHTS_HOLD", "PUBLICATION_HOLD"):
             self.assertIn(hold, apparatus)
 
+    def test_wave428_all_fourteen_readers_have_separate_source_apparatus(self):
+        """Book text stays readable; original institutional links remain in notes."""
+        for name, content in self.texts.items():
+            reader, apparatus = content.split("## Источниковедчес", 1)
+            with self.subTest(book=name):
+                self.assertNotRegex(reader, r"https?://")
+                self.assertNotIn("RESEARCH_MANUSCRIPT_DRAFT", reader)
+                self.assertIn("PUBLICATION_HOLD", apparatus)
+
+        special = (
+            ("episode03_luther_worms_1520_1521_manuscript.md",
+             "оксфордское академическое издание",
+             "https://editions.mml.ox.ac.uk/editions/freiheit-1520/"),
+            ("episode10_england_scotland_1534_1581_manuscript.md",
+             "парламентский текст 1560 года",
+             "https://www.rps.ac.uk/search.php?action=print&filename=maryi_trans&id=8733&type=trans"),
+            ("episode10_england_scotland_1534_1581_manuscript.md",
+             "публикация парламентского комплекса 1567 года",
+             "https://www.rps.ac.uk/search.php?action=print&filename=jamesvi_trans&id=9539&type=trans"),
+        )
+        for name, key_phrase, url in special:
+            with self.subTest(book=name, url=url):
+                reader, apparatus = self.texts[name].split(
+                    "## Источниковедчес", 1
+                )
+                self.assertIn(key_phrase, reader)
+                self.assertNotIn(url, reader)
+                self.assertIn(url, apparatus)
+        self.assertEqual(len(PARTS), 14)
+
     def test_timeless_historical_reader_across_all_fourteen_parts(self):
         """Current-year archival correspondence and acquisition updates stay in apparatus."""
         for name, content in self.texts.items():
