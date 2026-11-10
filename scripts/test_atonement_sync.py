@@ -597,6 +597,53 @@ class ActualSynchronizationTests(unittest.TestCase):
         self.assertIn("UNVERIFIED_TRANSCRIPTION", section13)
         self.assertNotIn("**B1** — остальная цифровая транскрипция", section13)
 
+    def test_reader_07_17_canonicity_and_free_offer_scope(self):
+        import hashlib
+        import re
+        base = ROOT / "ИСКУПЛЕНИЕ/synthesis"
+        plan = (base / "01_SERIES_PLAN_AND_ARTICLE_COUNT.md").read_text(encoding="utf-8")
+        board = (base / "07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        names = (
+            (7, "article07_extent_questions_models_and_primary_texts.md", "05_for-whom-did-christ-die-question.md"),
+            (17, "article17_free_offer_gospel_assurance_all_hearers.md", "09_free-offer-of-the-gospel.md"),
+        )
+        self.assertIn("## 29. READER-W4", board)
+        manifest = {item["path"]: item for item in self.report["postReviewDrafts"]}
+        self.assertEqual(len(manifest), 18)
+        for number, name, historic in names:
+            p = base / "drafts" / name
+            t = p.read_text(encoding="utf-8")
+            rel = "ИСКУПЛЕНИЕ/synthesis/drafts/" + name
+            with self.subTest(chapter=number):
+                self.assertGreater(len(t), 17000)
+                self.assertIn("ARTICLE %02d / 18" % number, t)
+                self.assertIn("drafts/" + name, plan)
+                self.assertEqual(len(set(re.findall(r"F%02d-\d{2}" % number, t))), 12)
+                self.assertIn(historic, t)
+                self.assertTrue((base / "drafts" / historic).is_file())
+                for marker in ("EVIDENCE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD", "publicationEligible=false"):
+                    self.assertIn(marker, t)
+                self.assertNotIn("publicationEligible=true", t)
+                self.assertIn(rel, manifest)
+                self.assertFalse(manifest[rel]["publicationEligible"])
+                self.assertEqual(manifest[rel]["sha256"], hashlib.sha256(p.read_bytes()).hexdigest())
+        ch6 = (base / "drafts/article06_accomplishment_union_faith_justification.md").read_text(encoding="utf-8")
+        ch16 = (base / "drafts/article16_boundaries_calvinism_reformed_family.md").read_text(encoding="utf-8")
+        ch7 = (base / "drafts" / names[0][1]).read_text(encoding="utf-8")
+        ch17 = (base / "drafts" / names[1][1]).read_text(encoding="utf-8")
+        self.assertIn("](" + names[0][1] + ")", ch6)
+        self.assertIn("](" + names[1][1] + ")", ch16)
+        self.assertIn("article08_particular_redemption_positive_case.md", ch7)
+        self.assertIn("article18_living_atonement_holiness_church_mission_suffering.md", ch17)
+        for marker in ("P1", "P2", "P7", "2 Пет. 2:1", "Дорт II.3", "II.5", "Иуда"):
+            with self.subTest(reader07_marker=marker):
+                self.assertIn(marker, ch7)
+        for marker in ("Деян. 13", "Ин. 6:37", "Дорт", "Уэсли", "OPC 1948", "Гилл", "Фуллер", "Сперджен"):
+            with self.subTest(reader17_marker=marker):
+                self.assertIn(marker, ch17)
+        self.assertIn("ATTRIBUTION_HOLD", ch17)
+        self.assertIn("CONFESSIONAL_HOLD", ch17)
+
     def test_reader_05_06_canonical_accomplishment_application_boundary(self):
         import hashlib
         import re

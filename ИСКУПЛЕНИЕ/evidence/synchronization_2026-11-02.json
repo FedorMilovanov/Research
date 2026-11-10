@@ -8740,7 +8740,7 @@
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article16_boundaries_calvinism_reformed_family.md",
-      "sha256": "8acf9e7514d8a5d80e0ff35f30eeb6e422eb88182df6d4c87c966cc3de4e8f4d",
+      "sha256": "d834c764305f5db4ab86de4da787a1bf167bc04ca33f6849eb6c3fdb1ee95f77",
       "reviewedAt": "2026-11-10",
       "note": "Статья №16/18: семь независимых осей границ кальвинизма, аргументы строгих, английских HU, Сомюра, multiple intentions, лютеран и арминиан; именованный диспенсациональный автор и полные современные монографии не прочитаны. CONFESSIONAL_REVIEW_HOLD/COMPARATIVE_EVIDENCE_HOLD/RIGHTS_HOLD/PUBLICATION_HOLD. NOT PEER REVIEWED.",
       "publicationEligible": false
@@ -8775,9 +8775,23 @@
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article06_accomplishment_union_faith_justification.md",
-      "sha256": "2375f3eeff3b0835708e8aae3c434438de44b4c07875c03a6052d54b3e970d9b",
+      "sha256": "561ae33899982eed227a0e1a9b9afc98954feefc574f2f6aea209ae9a1d78102",
       "reviewedAt": "2026-11-10",
       "note": "Reader-W3: standalone chapter 06; twelve scoped F06 claims. Previously available biblical cards and original confessional locators, no new full critical apparatus / modern books. Historic file preserved. EVIDENCE_HOLD / LOCATOR_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD; NOT PEER REVIEWED.",
+      "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article07_extent_questions_models_and_primary_texts.md",
+      "sha256": "f0bb12973f226118e5807ff9eb09f1e11ff95d590dfe0d7589ec5b622c89f6e0",
+      "reviewedAt": "2026-11-10",
+      "note": "Reader-W4: independent narrative chapter 07 with twelve scoped F07 claims and strongest contrary readings; earlier historic drafts preserved. Not an independent full recollation, not publication rights or final extent verdict. EVIDENCE_HOLD / ATTRIBUTION_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD; NOT PEER REVIEWED.",
+      "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article17_free_offer_gospel_assurance_all_hearers.md",
+      "sha256": "88986bb76e76f056688d9a026e132efac4a0e57f31dea767fbbb86d9e77ad7ed",
+      "reviewedAt": "2026-11-10",
+      "note": "Reader-W4: independent narrative chapter 17 with twelve scoped F17 claims and strongest contrary readings; earlier historic drafts preserved. Not an independent full recollation, not publication rights or final extent verdict. EVIDENCE_HOLD / ATTRIBUTION_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD; NOT PEER REVIEWED.",
       "publicationEligible": false
     }
   ]
