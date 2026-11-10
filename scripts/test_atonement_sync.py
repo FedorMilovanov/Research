@@ -302,7 +302,7 @@ class ActualSynchronizationTests(unittest.TestCase):
             "τῷ ἀποπομπαίῳ", "εἰς τὴν ἀποπομπήν",
             "τὸν διεσταλμένον εἰς ἄφεσιν", "θαυμάσονται",
             "τοῖς αὐτὸν ἀπεκδεχομένοις", "не** две «предложные группы»",
-            "01_what-is-atonement.md", "02_why-the-cross-necessity.md",
+            "article01_what_is_atonement_biblical_language_and_work.md", "02_why-the-cross-necessity.md",
         ):
             with self.subTest(marker=marker):
                 self.assertIn(marker, article if marker != "не** две «предложные группы»" else memo)
@@ -315,6 +315,7 @@ class ActualSynchronizationTests(unittest.TestCase):
             with self.subTest(source=source):
                 self.assertTrue((memo_path.parent / source).resolve().is_file())
         self.assertIn("не внешнее рецензирование", memo)
+        self.assertTrue((article_path.parent / "01_what-is-atonement.md").is_file(), "historic article01 remains intact")
         self.assertIn("PUBLICATION_HOLD", memo)
         self.assertIn("publicationEligible=false", memo)
 
