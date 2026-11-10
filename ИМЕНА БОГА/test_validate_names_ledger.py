@@ -1841,5 +1841,22 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("Römer 2011 lecture cannot merge Theodoret works" in e
                             for e in validate_source_access(d)))
 
+
+    def test_q_page171_colophon_does_not_promote_browser_mark_or_isaiah9(self) -> None:
+        for key in (
+            "page171Isaiah1TextProven",
+            "page171Mark1TextProven",
+            "bookIncludesGospelMark",
+            "independentAncientPhotoAutopsy",
+            "manuscriptTargetIsaiah9VerseCanvasVerified",
+        ):
+            with self.subTest(key=key):
+                modified = copy.deepcopy(self.sources)
+                source = next(x for x in modified["records"]
+                              if x["id"] == "SRC-BAV-VATGR2125-MARCHALIANUS-Q-ISAIAH-IIIF")
+                source["page171CodicologicalCrosscheck"][key] = True
+                self.assertTrue(any("Q page171 colophon report cannot certify Mark" in e
+                                    for e in validate_source_access(modified)))
+
 if __name__ == "__main__":
     unittest.main()
