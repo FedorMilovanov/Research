@@ -8670,7 +8670,7 @@
   "postReviewDrafts": [
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md",
-      "sha256": "7ca3f5ef533a96463a93ef9432b1aba0133032a5274e17db2bd3f0229779d1f0",
+      "sha256": "473eb2ec3f119b529ab40c22d3a6e5f8dbe0372cf91c257dfe591ef416fc9543",
       "reviewedAt": "2026-11-07",
       "note": "Статья №2/18, отдельная от исторического черновика 02_why-the-cross-necessity: Пасха Исх. 12, кровь завета Исх. 24, Лев. 1–7 и мучное исключение 5:11–13, Лев. 16/17, Ис. 53 и Евр. 9–10; 21 scoped semantic claims F02-01…F02-21 из предыдущих OT/NT карточек, не самостоятельная новая рукописная колляция. EVIDENCE/LOCATOR/ARCHIVE/RIGHTS/PUBLICATION HOLD действуют; независимый reviewer не подписывал",
       "publicationEligible": false
@@ -8743,6 +8743,13 @@
       "sha256": "8acf9e7514d8a5d80e0ff35f30eeb6e422eb88182df6d4c87c966cc3de4e8f4d",
       "reviewedAt": "2026-11-10",
       "note": "Статья №16/18: семь независимых осей границ кальвинизма, аргументы строгих, английских HU, Сомюра, multiple intentions, лютеран и арминиан; именованный диспенсациональный автор и полные современные монографии не прочитаны. CONFESSIONAL_REVIEW_HOLD/COMPARATIVE_EVIDENCE_HOLD/RIGHTS_HOLD/PUBLICATION_HOLD. NOT PEER REVIEWED.",
+      "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article01_what_is_atonement_biblical_language_and_work.md",
+      "sha256": "fde71193845ff5a3ba8d3f426316a69eeae9c2071d660674b62ee96f4f6b743a",
+      "reviewedAt": "2026-11-10",
+      "note": "Reader-W1: самостоятельная читательская редакция №1 на основе исторического 01. Двенадцать F01-тезисов с первичными библейскими локаторами без новой полной критической колляции. EVIDENCE_HOLD, GOTTINGEN_APPARATUS_HOLD, RIGHTS_HOLD, PUBLICATION_HOLD. NOT PEER REVIEWED.",
       "publicationEligible": false
     }
   ]

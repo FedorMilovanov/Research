@@ -596,6 +596,46 @@ class ActualSynchronizationTests(unittest.TestCase):
         self.assertIn("UNVERIFIED_TRANSCRIPTION", section13)
         self.assertNotIn("**B1** — остальная цифровая транскрипция", section13)
 
+    def test_reader_01_02_canonical_recast_keeps_textual_claims(self):
+        import hashlib
+        import re
+        base = ROOT / "ИСКУПЛЕНИЕ/synthesis"
+        plan = (base / "01_SERIES_PLAN_AND_ARTICLE_COUNT.md").read_text(encoding="utf-8")
+        board = (base / "07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        one = "article01_what_is_atonement_biblical_language_and_work.md"
+        two = "article02_sacrifice_covenant_passover_day_of_atonement.md"
+        f1 = base / "drafts" / one
+        f2 = base / "drafts" / two
+        a = f1.read_text(encoding="utf-8")
+        b = f2.read_text(encoding="utf-8")
+        self.assertGreater(len(a), 16000)
+        self.assertGreater(len(b), 35000)
+        self.assertIn("ARTICLE 01 / 18", a)
+        self.assertIn("ARTICLE 02 / 18", b)
+        self.assertIn("drafts/" + one, plan)
+        self.assertIn("drafts/" + two, plan)
+        self.assertIn("## 26. READER-W1", board)
+        self.assertIn("article01_what_is_atonement_biblical_language_and_work.md", b)
+        self.assertTrue((base / "drafts/01_what-is-atonement.md").is_file(), "historic first chapter is retained")
+        self.assertEqual(len(set(re.findall(r"F01-\d{2}", a))), 12)
+        self.assertEqual(len(set(re.findall(r"F02-\d{2}", b))), 21)
+        self.assertIn("## Текстологическое приложение: Ис. 52–53 (R3–R18)", b)
+        self.assertLess(b.index("## 7. Послание к Евреям"), b.index("## Текстологическое приложение"))
+        self.assertLess(b.index("## Приложение для научной редакции"), b.index("## Текстологическое приложение"))
+        for marker in ("Swete", "Оттли", "Bodmer XXIII", "Codex Marchalianus Q", "4Q58", "1Q8", "Göttingen"):
+            with self.subTest(textual_witness=marker):
+                self.assertIn(marker, b)
+        manifest = {entry["path"]: entry for entry in self.report["postReviewDrafts"]}
+        for name, file, content in ((one, f1, a), (two, f2, b)):
+            rel = "ИСКУПЛЕНИЕ/synthesis/drafts/" + name
+            with self.subTest(draft=name):
+                self.assertIn(rel, manifest)
+                self.assertFalse(manifest[rel]["publicationEligible"])
+                self.assertEqual(manifest[rel]["sha256"], hashlib.sha256(file.read_bytes()).hexdigest())
+                self.assertIn("PUBLICATION_HOLD", content)
+                self.assertIn("RIGHTS_HOLD", content)
+                self.assertNotIn("publicationEligible=true", content)
+
     def test_reader_15_and_16_confessional_sources_not_publication(self):
         base = ROOT / "ИСКУПЛЕНИЕ/synthesis"
         plan = (base / "01_SERIES_PLAN_AND_ARTICLE_COUNT.md").read_text(encoding="utf-8")
