@@ -1895,5 +1895,22 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                     expected = "historical mixed negative cannot be equated"
                 self.assertTrue(any(expected in err for err in validate_source_access(data)))
 
+
+    def test_djd_xv_original_negative_list_not_promoted_to_photo_autopsy(self) -> None:
+        for field in (
+            "sameFrameOrExactF55iiReidentified",
+            "originalPAMNegativePixelsInspected",
+            "originalDJDXVPlatesXXXtoXXXVIInspected",
+            "originalPrintedPagePreciselyPinned",
+            "imageRedistributed",
+        ):
+            with self.subTest(field=field):
+                data = copy.deepcopy(self.sources)
+                source = next(r for r in data["records"]
+                              if r["id"] == "SRC-DJD-XV-TOV-4QJERC-1997")
+                source["originalEditorNegativeList20261110"][field] = True
+                self.assertTrue(any("Tov original editor photo list cannot certify" in err
+                                    for err in validate_source_access(data)))
+
 if __name__ == "__main__":
     unittest.main()
