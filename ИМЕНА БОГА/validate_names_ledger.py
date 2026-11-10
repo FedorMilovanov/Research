@@ -693,6 +693,8 @@ def validate_source_access(sources: dict) -> list[str]:
                     or n.get("peretzGolan2023PdfPageZeroBased") != 16
                     or n.get("peretzGolan2023OriginalPageScreenshotInspected") is not True
                     or n.get("peretzGolan2023PrintedFullName") != "ר' יעקב זאב ברלין"
+                    or n.get("peretzGolan2023CitationDependsOnZer1986") is not True
+                    or n.get("peretzGolan2023IndependentHistoricalWitness") is not False
                     or n.get("supportedEditorialHistoricallyNamedCourierSame") is not True
                     or n.get("independentCivilBirthDeathOrGenealogyProven") is not False
                     or n.get("thirdParty2023IndependentAncientManuscript") is not False

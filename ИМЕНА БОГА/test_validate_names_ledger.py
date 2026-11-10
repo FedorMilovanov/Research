@@ -2114,6 +2114,8 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
             ("supportedEditorialHistoricallyNamedCourierSame", False),
             ("independentCivilBirthDeathOrGenealogyProven", True),
             ("peretzGolan2023OriginalPageScreenshotInspected", False),
+            ("peretzGolan2023CitationDependsOnZer1986", False),
+            ("peretzGolan2023IndependentHistoricalWitness", True),
             ("thirdParty2023IndependentAncientManuscript", True),
             ("originalManuscriptCourierSignatureInspected", True),
         ):
