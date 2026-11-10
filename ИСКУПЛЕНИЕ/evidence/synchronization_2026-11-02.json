@@ -8761,9 +8761,23 @@
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article04_substitution_victory_reconciliation_how_cross_saves.md",
-      "sha256": "4a7a41e370a9f34f245d63da32d46655960f3a8e4d2e0ef24f54d62ecb94a41b",
+      "sha256": "d4585674ab0f3110500b856309ba5687faa869ece41dccabb2ea5db70d33d638",
       "reviewedAt": "2026-11-10",
       "note": "READER-W2: standalone narrative chapter 04; twelve F04 semantic claims supported by prior Research primary text cards and scoped adverse readings. Existing historic drafts preserved; no full new manuscript/critical apparatus or independently verified modern books. EVIDENCE_HOLD / HISTORICAL_SOURCE_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD; NOT PEER REVIEWED.",
+      "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article05_once_for_all_sacrifice_living_high_priest.md",
+      "sha256": "5950ba9b9884ab42d00763ece8e03e7e4795dc0666adaa25763d553da071811a",
+      "reviewedAt": "2026-11-10",
+      "note": "Reader-W3: standalone chapter 05; twelve scoped F05 claims. Previously available biblical cards and original confessional locators, no new full critical apparatus / modern books. Historic file preserved. EVIDENCE_HOLD / LOCATOR_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD; NOT PEER REVIEWED.",
+      "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article06_accomplishment_union_faith_justification.md",
+      "sha256": "2375f3eeff3b0835708e8aae3c434438de44b4c07875c03a6052d54b3e970d9b",
+      "reviewedAt": "2026-11-10",
+      "note": "Reader-W3: standalone chapter 06; twelve scoped F06 claims. Previously available biblical cards and original confessional locators, no new full critical apparatus / modern books. Historic file preserved. EVIDENCE_HOLD / LOCATOR_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD; NOT PEER REVIEWED.",
       "publicationEligible": false
     }
   ]
