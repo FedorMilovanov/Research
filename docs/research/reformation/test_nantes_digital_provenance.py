@@ -227,6 +227,31 @@ class NantesDigitalProvenanceTests(unittest.TestCase):
             self.assertIn(hold, source["holds"])
         self.assertEqual(self.source_count, 204)
 
+    def test_wave424_folio28_side_and_xi_line_map_remain_evidence_limited(self):
+        """A draft question about f28r is not proof that f28r bears the certification."""
+        archive = (HERE / "nantes_bge_ms_fr_413_archival_request.md").read_text(encoding="utf-8")
+        packet = (HERE / "independent_review_packets.md").read_text(encoding="utf-8")
+        source = self.sources["REF-P86"]
+        for token in ("F28R_SIDE_UNCONFIRMED", "F28R_REQUEST_DRAFT_UNSENT",
+                      "F028V_CERTIFICATION_DIRECT_READ_HOLD"):
+            for label, document in (("archive", archive), ("packet", packet),
+                                    ("self-plan", self.plan)):
+                with self.subTest(token=token, doc=label):
+                    self.assertIn(token, document)
+        for token in ("L423–440", "L441–455", "L456–463", "L464",
+                      "f.4v", "f.5r", "Voulons et entendons"):
+            with self.subTest(segment=token):
+                self.assertIn(token, archive)
+        self.assertIn("REVIEW_PACKETS_PREPARED / NOT_SENT", packet)
+        self.assertEqual(source["accessState"], "PARTIAL_OBJECT")
+        for hold in ("ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"):
+            self.assertIn(hold, source["holds"])
+        for document in (archive, packet, self.plan):
+            self.assertIn("FULL_DIPLOMATIC_XI_COLLATION_HOLD", document)
+            self.assertIn("PUBLICATION_HOLD", document)
+            self.assertNotIn("F28R_DATE_DIRECTLY_READ", document)
+            self.assertNotIn("FULL_DIPLOMATIC_XI_COLLATION_COMPLETE", document)
+
     def test_xi_remains_secondary_variant_and_not_publication_approved(self):
         for doc in (self.chapter, self.dossier, self.plan):
             for token in ("EARLY_XI_COLLATION_HOLD", "ORIGINAL_GENEVAN_COLLATION_HOLD"):
