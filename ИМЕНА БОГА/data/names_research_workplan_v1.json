@@ -16,7 +16,7 @@
     "regressionTests": 289,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_F7CA85C7_EXACT_6_SUCCESS_WAVE24_NEW_SHA_PENDING",
+    "allSixCiChecks": "PRIOR_D2A4E2AB_EXACT_6_SUCCESS_WAVE25_NEW_SHA_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "f7ca85c77e3dee3e6ea00e0a1e4b2f5d9f3743a1"
+    "lastConfirmedAllSixChecksSha": "d2a4e2ab8788c5c17b69059d4f40101c26d2bc1e"
   },
   "allowedStatuses": [
     "DONE",
@@ -742,7 +742,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "WAVE24 (2026-11-10) photo access discovery exhausted with exact gates: Brill Scholarly Editions DSS Biblical publisher pairs editions with real ancient PAM/IAA images, but live browser 4Q72 reader urn:cts:ancJewLit:dss.4q72.dsbo-eng2:f1i-f6 blocked credentials and independent reader request HTTP403; reader type eng2 NOT independently proven image URL, no photos/rendered pixels. Tov 1997 DJD XV third-party 21.43MB PDF source text available, web screenshot TOO LARGE 400 and second browser only PDF filename; presence of plates in that actual file UNKNOWN. Tov 1991 OBO109 I-VII ZORA Anubis denied. Official IAA B360205 photo exists, but independent line/glyph reading and physical match archive plate245 Frag6 ↔ editor frg55ii not established; old IAA B279109 PAM40.963 multi-manuscript negative has no target-ink collation. Open Dead Sea CC BY-NC covers its draft/text data, photos link to IAA/Israel Museum and NOT relicense photos. 101 unique source records, 289 core tests unchanged. Previous exact f7ca85c7 SHA 6/6 CI SUCCESS; wave24 new HEAD needs own CI. NG10 BLOCKED_SOURCE, no new critical collation or peer/Product approval, photo rights HOLD. Only justified further action: authorized original photographic object and exact fragment match, or STOP_DISCOVERY, no more bibliography/test-count padding.",
+  "nextAction": "WAVE25 (2026-11-10) independent visual recheck of the original 1999 printed Study Edition page 272 CONFIRMED Col XXIV for 4Q72 Jer33:16-20, while 1997 Tov DJD XV editorial original lists Col XXV. An external audit claiming the 1999 book showed XXV was incorrect; retain source-specific verified XXIV/XXV and existing anti-conflation negative tests. Reason for the different numbering unproved. Wave24 photo access discovery exhausted with exact gates: Brill Scholarly Editions DSS Biblical publisher pairs editions with real ancient PAM/IAA images, but live browser 4Q72 reader urn:cts:ancJewLit:dss.4q72.dsbo-eng2:f1i-f6 blocked credentials and independent reader request HTTP403; reader type eng2 NOT independently proven image URL, no photos/rendered pixels. Tov 1997 DJD XV third-party 21.43MB PDF source text available, web screenshot TOO LARGE 400 and second browser only PDF filename; presence of plates in that actual file UNKNOWN. Tov 1991 OBO109 I-VII ZORA Anubis denied. Official IAA B360205 photo exists, but independent line/glyph reading and physical match archive plate245 Frag6 ↔ editor frg55ii not established; old IAA B279109 PAM40.963 multi-manuscript negative has no target-ink collation. Open Dead Sea CC BY-NC covers its draft/text data, photos link to IAA/Israel Museum and NOT relicense photos. 101 unique source records, 289 core tests unchanged. Wave24 d2a4e2ab exact SHA 6/6 CI SUCCESS; Wave25 next HEAD requires its own CI. NG10 BLOCKED_SOURCE, no new critical collation or peer/Product approval, photo rights HOLD. Only justified further action: authorized original photographic object and exact fragment match, or STOP_DISCOVERY, no more bibliography/test-count padding.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -824,8 +824,10 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-10",
-    "planStatus": "WAVE24 primary photographic acquisition boundary established. Brill 4Q72 reader identified but credentials denied + independent HTTP403; original photo object/URN type unconfirmed. Original 1997 21MB scan PDF unable to render/verify physical photographic plates, Brill photos subscription-only, 1991 ZORA locked; official IAA 2012 view cannot be independently matched to DJD frg55ii or read glyphs. No source/test inflations: 101 source records and 289 core regressions. Previous f7ca85c7 exact 6/6 CI green; current wave24 SHA pending. NG10 BLOCKED_SOURCE, criticalCollations 0, scholarly/Product 0, photo rights HOLD.",
+    "planStatus": "WAVE24 primary photographic acquisition boundary established. Brill 4Q72 reader identified but credentials denied + independent HTTP403; original photo object/URN type unconfirmed. Original 1997 21MB scan PDF unable to render/verify physical photographic plates, Brill photos subscription-only, 1991 ZORA locked; official IAA 2012 view cannot be independently matched to DJD frg55ii or read glyphs. No source/test inflations: 101 source records and 289 core regressions. Wave24 d2a4e2ab exact 6/6 GitHub Actions SUCCESS verified on 2026-11-10; next Wave25 SHA awaits separate CI. NG10 BLOCKED_SOURCE, criticalCollations 0, scholarly/Product 0, photo rights HOLD.",
     "workCompleted": [
+      "Wave25 independent visually rendered source recheck: Brill 1999 Study Edition print p272 (PDF index 296) says Col XXIV Jer33:16-20, while Tov 1997 DJD XV editorial text lists Col XXV. A later external audit erroneously read the secondary edition as XXV; rejected without mutating the source register, critical collation or anti-mutation truth fixture.",
+      "Wave25 CI control-plane rebase: d2a4e2ab was actually terminal 6/6 SUCCESS and 289/21/319/24/29 test suites succeeded; new Wave25 commit requires fresh exact-SHA workflow acceptance.",
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
       "Minted 105 stable attestation IDs with foreign source/edition links",
