@@ -560,6 +560,17 @@ def validate_source_access(sources: dict) -> list[str]:
                     or source.get("originalIsaiah9LetterformsCollated") is not False
                     or source.get("photoReusePermissionGranted") is not False):
                 errors.append(f"{prefix}: official Q IIIF manifest falsely promoted to image or manuscript-letter autopsy")
+            codicology = source.get("page171CodicologicalCrosscheck", {})
+            if (not isinstance(codicology, dict)
+                    or codicology.get("originalArticleUrl") != "https://www.fdr.uni-hamburg.de/record/11575"
+                    or codicology.get("publisherArticleDoi") != "10.25592/uhhfdm.11575"
+                    or codicology.get("evidenceMethod") != "ORIGINAL_SCHOLARLY_2022_JOURNAL_PDF_TEXT_EXTRACTED_AT_PRINTED_P56_SCREENSHOT_403_UNAVAILABLE"
+                    or codicology.get("page171Isaiah1TextProven") is not False
+                    or codicology.get("page171Mark1TextProven") is not False
+                    or codicology.get("bookIncludesGospelMark") is not False
+                    or codicology.get("independentAncientPhotoAutopsy") is not False
+                    or codicology.get("manuscriptTargetIsaiah9VerseCanvasVerified") is not False):
+                errors.append(f"{prefix}: Q page171 colophon report cannot certify Mark, Isaiah1 or Isaiah9 ancient photo reading")
         if rid == "SRC-EUSEBIUS-DEMONSTRATIO-7-1-135-GREEK-ISA9":
             if (source.get("url") != "https://www.sophiascriptura.com/fathers/eusebius-demonstratio/7-1-127/"
                     or source.get("ancientReference") != "Demonstratio Evangelica 7.1.135"
