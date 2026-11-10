@@ -1964,5 +1964,42 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                 self.assertTrue(any("4Q70 1994 Textus or 4Q57 Isaiah fragment55" in e
                                     for e in validate_source_access(edited)))
 
+
+    def test_brill_1999_short_summary_must_not_rename_tov_1997_column(self) -> None:
+        for key, wrong in (
+            ("printedSecondaryJer33Column", "XXV"),
+            ("primaryTov1997Jer33Column", "XXIV"),
+            ("primaryTov1997UncertainPrecedingColumn", "XXIV = Jer 33:16–20"),
+            ("reasonForNumberingChangeIndependentlyEstablished", True),
+            ("distinctAncientManuscriptFrom1997", True),
+            ("secondarySummaryDoesNotReplaceFirstEdition", False),
+        ):
+            with self.subTest(field=key):
+                copy_data = copy.deepcopy(self.sources)
+                item = next(r for r in copy_data["records"]
+                            if r["id"] == "SRC-GARCIA-MARTINEZ-TIGCHELAAR-1999-STUDY-EDITION-4Q72-271272")
+                item[key] = wrong
+                self.assertTrue(any("1999 Brill synopsis cannot overwrite Tov original column" in e
+                                    for e in validate_source_access(copy_data)))
+
+    def test_brill_1999_unusual_museum_plate_and_license_remain_attributed(self) -> None:
+        for key, wrong in (
+            ("secondaryMuseumPlateAsPrinted", "ROC 232, 244–246, 671"),
+            ("originalTovMuseumPlateAsPrinted", "Mus. Inv. 232, 244, 245, 346, 671"),
+            ("secondaryTov1991PagesAsPrinted", "249–276"),
+            ("typographicErrorDefinitivelyEstablished", True),
+            ("originalAncientPhotoPixelsInspected", True),
+            ("editorOriginalDJDPhotographicPlatesInspected", True),
+            ("photographReusePermissionGranted", True),
+            ("publicationLicensed", True),
+        ):
+            with self.subTest(field=key):
+                copy_data = copy.deepcopy(self.sources)
+                item = next(r for r in copy_data["records"]
+                            if r["id"] == "SRC-GARCIA-MARTINEZ-TIGCHELAAR-1999-STUDY-EDITION-4Q72-271272")
+                item[key] = wrong
+                self.assertTrue(any("1999 Brill synopsis cannot overwrite Tov original column" in e
+                                    for e in validate_source_access(copy_data)))
+
 if __name__ == "__main__":
     unittest.main()
