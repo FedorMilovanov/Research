@@ -645,6 +645,24 @@ def validate_source_access(sources: dict) -> list[str]:
                     or photographic.get("originalPrintedPagePreciselyPinned") is not False
                     or photographic.get("imageRedistributed") is not False):
                 errors.append(f"{prefix}: Tov original editor photo list cannot certify identical negatives, fragment55ii or inspected plates")
+        if rid == "SRC-DJD-XV-TOV-4QJERC-1997":
+            edition1991 = source.get("firstEdition1991SourceAccessWave21", {})
+            if (not isinstance(edition1991, dict)
+                    or edition1991.get("universityOriginalPublicationRecord") != "https://cris.huji.ac.il/en/publications/4qjer-4q72/"
+                    or edition1991.get("series") != "Orbis Biblicus et Orientalis 109"
+                    or edition1991.get("pages") != "249–276"
+                    or edition1991.get("photographicPlates") != "I–VII"
+                    or edition1991.get("repositoryAccessState") != "ANUBIS_ACCESS_DENIED_AUTOMATED_2026_11_10"
+                    or edition1991.get("fullOriginalTextPersonallyRead") is not False
+                    or edition1991.get("originalPhotographicPlatesPersonallyViewed") is not False
+                    or edition1991.get("targetFrg55iiImageIdentified") is not False
+                    or edition1991.get("manuscriptGlyphsIndependentlyCollated") is not False
+                    or edition1991.get("publicationReusePermissionGranted") is not False
+                    or edition1991.get("officialManuscriptBrowseUrl") != "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/4Q72-1"
+                    or edition1991.get("falsePositiveSearchPhotoUrl") != "https://commons.wikimedia.org/wiki/File:4q72.jpg"
+                    or edition1991.get("falsePositiveIsProteinNotScroll") is not True
+                    or edition1991.get("falsePositiveAcceptedAsManuscriptPhoto") is not False):
+                errors.append(f"{prefix}: first 1991 Tov plate route must not certify viewed plates or misidentified protein photo")
         if rid == "SRC-DSS-REED-FASC7-4Q72-PAM43101":
             if (source.get("archivalPAM") != "43.101"
                     or source.get("museumPlate") != "245"
