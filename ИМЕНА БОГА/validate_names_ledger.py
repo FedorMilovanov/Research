@@ -663,6 +663,27 @@ def validate_source_access(sources: dict) -> list[str]:
                     or edition1991.get("falsePositiveIsProteinNotScroll") is not True
                     or edition1991.get("falsePositiveAcceptedAsManuscriptPhoto") is not False):
                 errors.append(f"{prefix}: first 1991 Tov plate route must not certify viewed plates or misidentified protein photo")
+        if rid == "SRC-DJD-XV-TOV-4QJERC-1997":
+            quarantine = source.get("similarSiglaQuarantineWave22", {})
+            if (not isinstance(quarantine, dict)
+                    or quarantine.get("officialJournal1994IndexUrl") != "https://bibleproject.huji.ac.il/textus"
+                    or quarantine.get("journal1994TextSiglum") != "4QJer a"
+                    or quarantine.get("journal1994ManuscriptId") != "4Q70"
+                    or quarantine.get("journal1994NotTarget4Q72") is not True
+                    or quarantine.get("edition1991TargetSiglum") != "4QJer c"
+                    or quarantine.get("edition1991TargetManuscriptId") != "4Q72"
+                    or quarantine.get("otherManuscriptId") != "4Q57"
+                    or quarantine.get("otherManuscriptSiglum") != "4QIsa c"
+                    or quarantine.get("otherFragmentLabel") != "55"
+                    or quarantine.get("otherFragmentBookLocus") != "Isaiah 51:8–9"
+                    or quarantine.get("targetFragmentLabel") != "55 ii"
+                    or quarantine.get("targetFragmentBookLocus") != "Jeremiah 33:16–20"
+                    or quarantine.get("originalManuscriptPhotosCompared") is not False
+                    or quarantine.get("samePhysicalFragment") is not False
+                    or quarantine.get("reused1994TextusPlatesAs1991Or1997Photos") is not False
+                    or quarantine.get("sameEditionNumberedPlates") is not False
+                    or quarantine.get("acceptedMisleadingSearchResultAsPrimary") is not False):
+                errors.append(f"{prefix}: 4Q70 1994 Textus or 4Q57 Isaiah fragment55 falsely conflated with 4Q72 Jer33 fragment55ii")
         if rid == "SRC-DSS-REED-FASC7-4Q72-PAM43101":
             if (source.get("archivalPAM") != "43.101"
                     or source.get("museumPlate") != "245"
