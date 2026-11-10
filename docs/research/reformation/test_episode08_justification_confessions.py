@@ -38,6 +38,75 @@ class JustificationBookTests(unittest.TestCase):
         for id in ("REF-P14","REF-P17","REF-P20","REF-P77"):
             self.assertIn("PUBLICATION_HOLD",s[id]["holds"])
 
+    def test_wave426_augsburg_V_and_IX_are_distinct_confessional_charges(self):
+        """Chapter 08 must tell the reader what the 1530 text says without
+        claiming its polemical portrait was proved for all Anabaptists.
+        """
+        content = E8.read_text(encoding="utf-8")
+        reader, apparatus = content.split(
+            "## Источниковедческий аппарат — вне основного повествования", 1
+        )
+        for token in (
+            "**статья V**", "**статье IX**", "внешнего Слова",
+            "собственным приготовлениям и делам",
+            "крестить младенцев",
+            "каждый анабаптист",
+            "по их собственным исповеданиям",
+        ):
+            with self.subTest(reader_token=token):
+                self.assertIn(token, reader)
+        self.assertLess(reader.index("**статья V**"), reader.index("**статье IX**"))
+        self.assertNotIn("REF-P14", reader)
+        self.assertNotIn("RESEARCH_MANUSCRIPT_DRAFT", reader)
+        for token in (
+            "REF-P14", "статьи V и IX",
+            "ORIGINAL_LANGUAGE_HOLD", "INDEPENDENT_EXTERNAL_REVIEW_OPEN",
+            "THEOLOGICAL_PEER_REVIEW_OPEN", "RIGHTS_HOLD",
+            "PUBLICATION_HOLD",
+        ):
+            with self.subTest(apparatus_token=token):
+                self.assertIn(token, apparatus)
+
+        sources = json.loads(
+            (D / "source-registry-v1.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(sources["sourceCount"], 204)
+        rows = {row["id"]: row for row in sources["sources"]}
+        self.assertEqual(rows["REF-P14"]["accessState"], "PARTIAL_OBJECT")
+        self.assertEqual(rows["REF-P20"]["accessState"], "PARTIAL_OBJECT")
+        for source_id, marker in (
+            ("REF-P14", "2026-11-11 WAVE426"),
+            ("REF-P20", "2026-11-11 WAVE426"),
+        ):
+            with self.subTest(source=source_id):
+                row = rows[source_id]
+                self.assertIn(marker, row["verificationNote"])
+                self.assertIn("NOT", row["verificationNote"])
+                self.assertIn("RIGHTS_HOLD", row["holds"])
+                self.assertIn("PUBLICATION_HOLD", row["holds"])
+        ledger = (D / "03_claim_verification_register.md").read_text(
+            encoding="utf-8"
+        )
+        c273 = next(line for line in ledger.splitlines()
+                    if line.startswith("| C273 |"))
+        for token in ("ст. V и IX", "полемические формулировки",
+                      "ORIGINAL_LANGUAGE_HOLD", "REJECTED_FORMULATION"):
+            with self.subTest(claim_token=token):
+                self.assertIn(token, c273)
+        reviewer = (D / "independent_review_packets.md").read_text(
+            encoding="utf-8"
+        )
+        t02 = next(line for line in reviewer.splitlines()
+                   if line.startswith("| T-02 /"))
+        self.assertIn("Аугсбургское исповедание **V/IX**", t02)
+        self.assertIn("REVIEW_PACKETS_PREPARED / NOT_SENT", reviewer)
+        plan = (D / "SELF_PLAN.md").read_text(encoding="utf-8")
+        active_plan = plan.split("---", 1)[0]
+        self.assertIn("волна 426", active_plan)
+        self.assertIn("INDEPENDENT_EXTERNAL_REVIEW_OPEN", active_plan)
+        self.assertIn("THEOLOGICAL_PEER_REVIEW_OPEN", active_plan)
+        self.assertIn("PUBLICATION_HOLD", active_plan)
+
     def test_registry_and_book_navigation(self):
         ledger=(D/"03_claim_verification_register.md").read_text(encoding="utf-8")
         for i in range(268,274):
