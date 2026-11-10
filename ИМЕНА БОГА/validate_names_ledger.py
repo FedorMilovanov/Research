@@ -632,6 +632,19 @@ def validate_source_access(sources: dict) -> list[str]:
                     or source.get("originalTable9ColXXVLine2") != "Jer 33:17 ישב"
                     or source.get("originalTable9ColXXVLine3") != "Jer 33:18 עלה"):
                 errors.append(f"{prefix}: DJD XV selected original edition versus original photo falsely upgraded")
+        if rid == "SRC-DJD-XV-TOV-4QJERC-1997":
+            photographic = source.get("originalEditorNegativeList20261110", {})
+            if (not isinstance(photographic, dict)
+                    or photographic.get("authorOriginalPublisherTextInspected") is not True
+                    or photographic.get("publishedPrimaryNegativeSeriesContains") != "43.101"
+                    or photographic.get("earlierNegativeInParentheses") != "40.963"
+                    or photographic.get("sameManuscript4Q72") is not True
+                    or photographic.get("sameFrameOrExactF55iiReidentified") is not False
+                    or photographic.get("originalPAMNegativePixelsInspected") is not False
+                    or photographic.get("originalDJDXVPlatesXXXtoXXXVIInspected") is not False
+                    or photographic.get("originalPrintedPagePreciselyPinned") is not False
+                    or photographic.get("imageRedistributed") is not False):
+                errors.append(f"{prefix}: Tov original editor photo list cannot certify identical negatives, fragment55ii or inspected plates")
         if rid == "SRC-DSS-REED-FASC7-4Q72-PAM43101":
             if (source.get("archivalPAM") != "43.101"
                     or source.get("museumPlate") != "245"
