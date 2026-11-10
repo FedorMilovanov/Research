@@ -109,12 +109,12 @@ class BookContinuityTests(unittest.TestCase):
         mixed_letters = re.compile(r"[A-Za-zА-Яа-яЁё]+")
         latin = re.compile(r"[A-Za-z]")
         cyrillic = re.compile(r"[А-Яа-яЁё]")
-        zero_width = re.compile(r"[\\u200B-\\u200F\\u2060\\uFEFF]")
+        zero_width = re.compile(r"[\u200B-\u200F\u2060\uFEFF]")
         for name, source in self.texts.items():
             with self.subTest(book=name):
                 self.assertIsNone(zero_width.search(source),
                                   "invisible formatting character in manuscript")
-                without_urls = re.sub(r"https?://[^\\s)]+", "", source)
+                without_urls = re.sub(r"https?://[^\s)]+", "", source)
                 mixed = [word for word in mixed_letters.findall(without_urls)
                          if latin.search(word) and cyrillic.search(word)]
                 self.assertEqual(mixed, [],
