@@ -31,6 +31,15 @@ PARTS = (
 )
 LINK_RE = re.compile(r"\]\(([^)]+)\)")
 REF_RE = re.compile(r"\bREF-[A-Z0-9]+(?:-[A-Z0-9]+)*\b")
+READER_BACKSTAGE_RE = re.compile(
+    r"(?i)(?:\bв\s+источниковедческом\s+(?:аппарате|языке)\b"
+    r"|\bв\s+исследовательском\s+досье\b"
+    r"|\bв\s+нынешней\s+исследовательской\s+работе\b"
+    r"|\bисследователь\s+книги\s+обязан\b"
+    r"|\bточные\s+сигнатуры\s+приведены\b"
+    r"|\bналичие\s+онлайн-скана\s+не\s+означает\b"
+    r"|\bмы\s+не\s+вставляем\b)"
+)
 CLAIM_RE = re.compile(r"^\| C([0-9]+) \|", flags=re.MULTILINE)
 
 
@@ -67,6 +76,34 @@ class BookContinuityTests(unittest.TestCase):
                 for status in ("RESEARCH_MANUSCRIPT_DRAFT", "NOT_EDITORIAL_READY",
                                "PUBLICATION_HOLD"):
                     self.assertIn(status, apparatus)
+
+    def test_backstage_process_language_does_not_leak_into_book(self):
+        """Operational research notes belong in apparatus, not reader paragraphs."""
+        forbidden = (
+            "Сигнатуры приведены в источниковедческом аппарате",
+            "Находящаяся в исследовательском досье републикация",
+            "дошедший до нас в нынешней исследовательской работе",
+            "В источниковедческом языке это вопрос",
+            "исследователь книги обязан отдельно обосновать",
+            "точные сигнатуры приведены здесь",
+            "Наличие онлайн-скана не означает, что мы уже прочитали",
+            "поэтому мы не вставляем показатели",
+        )
+        for value in forbidden:
+            with self.subTest(forbidden=value):
+                self.assertIsNotNone(READER_BACKSTAGE_RE.search(value))
+        legitimate = (
+            "Источниковедческий спор о датировке остаётся открытым.",
+            "Историки исследуют несколько рукописных редакций.",
+            "В Шотландии парламент принял исповедание в 1560 году.",
+        )
+        for value in legitimate:
+            with self.subTest(allowed=value):
+                self.assertIsNone(READER_BACKSTAGE_RE.search(value))
+        for name, content in self.texts.items():
+            reader = content.split("## Источниковедчес", 1)[0]
+            with self.subTest(part=name):
+                self.assertIsNone(READER_BACKSTAGE_RE.search(reader))
 
     def test_timeless_historical_reader_across_all_fourteen_parts(self):
         """Current-year archival correspondence and acquisition updates stay in apparatus."""
