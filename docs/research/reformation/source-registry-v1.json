@@ -838,7 +838,7 @@
     {
       "id": "REF-P29",
       "documentYear": 1598,
-      "title": "Nantes Edict, Archives nationales J//943/2 (AE/II/763), original manuscript/image locator",
+      "title": "Henri IV, Edict of Nantes, sealed Paris-registration expédition, Archives nationales J//943/2 = AE/II/763 (object locator)",
       "evidenceClass": "A1",
       "accessState": "CATALOG_ONLY",
       "locatorState": "COARSE_LOCATOR_ONLY",
@@ -851,8 +851,8 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://fr.wikisource.org/wiki/Page:%C3%89dit_de_Nantes._Page_24_-_Archives_Nationales_-_AE-II-763.jpg",
-      "verificationNote": "Archive shelfmark given in Wikisource page of archives image; primary archive original not opened/compared to DDE Paris 1599 text. Not publication-rights cleared.",
-      "checkedAt": "2026-11-04"
+      "verificationNote": "2026-11-10 WAVE417: explicit SINGLE-OBJECT ALIAS CONFIRMED from metadata uploaded by Archives nationales in 2013 Wikimedia France partnership (https://commons.wikimedia.org/wiki/File:%C3%89dit_de_Nantes._Page_24_-_Archives_Nationales_-_AE-II-763.jpg): AE/II/763 is its museum/archive exhibition inventory shelfmark and J//943 pièce 2 (J//943/2) the former Trésor des Chartes reference; two labels do NOT represent two manuscript witnesses. The image is described as the first page of the revised sealed expédition sent to the Parlement de Paris for registration, NOT the lost first signed original of April 1598. GrandPalaisRmn (https://histoire-image.org/etudes/edit-nantes-sa-revocation) describes signatures and registration annotations on this AE/II/763 object; the first-April-version witness is a separate certified transcript BGE Ms. fr. 413 (REF-P86 CATALOG_ONLY), not this Paris legal artifact. The digital diplomatic/printed Paris-1599 edition REF-P27 is a DIFFERENT type of witness to the same registered legal text, not a newly located autograph. Official Archives nationales diplomatic glossary (https://rdf.archives-nationales.culture.gouv.fr/garance/entities/recordStates/) distinguishes expédition, copie conforme and copie enregistrée; legal authentication is not proof of verbatim equality across 1598/1599 textual stages. Original physical folios and seals were NOT inspected/collated against DDE, so REF-P29 remains CATALOG_ONLY / COARSE_LOCATOR_ONLY / ARCHIVE_HOLD / LOCATOR_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD. This metadata verification does not approve reproduction rights.",
+      "checkedAt": "2026-11-10"
     },
     {
       "id": "REF-P30",
