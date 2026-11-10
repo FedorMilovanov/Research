@@ -13,10 +13,10 @@
     "extensionRecords": 13,
     "contextAttestations": 105,
     "sourceRegisterEntries": 107,
-    "regressionTests": 296,
+    "regressionTests": 297,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_AF41487C_EXACT_6_SUCCESS_WAVE37_NEW_SHA_PENDING",
+    "allSixCiChecks": "PRIOR_CACEB321_EXACT_6_SUCCESS_WAVE39_NEW_SHA_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "af41487c25a5049c40826db3ed7c6fd50cd2903d"
+    "lastConfirmedAllSixChecksSha": "caceb32147142d62099767551cee9f8ab9d87bb2"
   },
   "allowedStatuses": [
     "DONE",
@@ -835,9 +835,10 @@
     }
   ],
   "lastWorkReport": {
-    "date": "2026-11-10",
-    "planStatus": "WAVE37 source name crosswalk (no source ID inflation): visually directly read Zer original print Leshonenu 1986 p151 FULL courier name ר' יעקב זאב ברלין; Saphir first-person modern 1989 transcription says ר' יעקב זאב (no surname); Goshen 1962 third-party OCR reports English Jacob Berlin; corroborated by full 2023 Peretz/Golan scholarly original PDF screenshot print p67. Historical named intermediary supported, yet no independent birth/death civil identity, JTS signature, original ancient photo. 107 sources, 296 core tests, 105 attestation, 87 claims, 0 critical ancient collations and no Product/rights/peer approval. Prior af41487c CI six SUCCESS, new Wave37 SHA pending; NG04 BLOCKED_SOURCE NG05 OPEN.",
+    "date": "2026-11-11",
+    "planStatus": "WAVE39 original Rafi Zer 1986 printed p152 screenshot: 543 questions total, 422 reported from missing Aleppo leaves but listed inclusive 1-383 Torah + 10 Haftarot + 507-543 Esther sums to 430 (difference 8), unresolved; previous caceb321 6/6 CI success, new SHA pending. 107 bibliographic source rows, 297 core mutation tests, 105 attestations, 87 claims; no ancient photo collation, independent peer/Product/rights approval; NG04 BLOCKED_SOURCE, NG05 OPEN.",
     "workCompleted": [
+      "Wave39: visually verified Zer1986 print p152, registered author-printed 422 versus arithmetically enumerated 430/543 (8-case mismatch) without speculative correction; added one anti-fiat test and synced machine SSOT regressionTests=297 after CI correctly rejected stale 296. No new source IDs, ancient collation or Product handoff.",
       "Wave37 fixed over-conservative courier-name blocker with 1986 Zer original p151 screenshot full Hebrew 'ר' יעקב זאב ברלין' and modern 2023 article p67 screenshot. Updated existing source IDs crosswalk, one new anti-inflation mutation test; no new separate bibliographic source ID, no claimed independent civil identity.",
       "Wave36: source genealogy advanced from Goshen 1962 and Zer1986 to Saphir's own Even Sapir 1866 first-person words in verified 1989-derived digital transcription; preserved separate courier/eyewitness, Hebrew original respondent orthography, critical first-person not-eyewitness caveat and unreconciled relative seven/nine year markers. Commons 498p public-domain facsimile catalog verified but not visually reviewed; one new provenance guard and source record.",
       "Wave35: inspected official Hebrew University Textus2 1962 metadata and author's full accessible third-party OCR, recorded Goshen's historic personal examination of JTS729, single-source dependency with Ha-Levanon1863 and his disputed Sapir handwriting conjecture versus Zer1986 anonymous copy; no original PDF or JTS image pixels inspected by us. One registered published scholarly source and one mutation gate.",
