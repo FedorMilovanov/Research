@@ -67,6 +67,47 @@ class NantesVariantCrosswalkTests(unittest.TestCase):
                        "CATALOG_ONLY", "ARCHIVE_HOLD", "RIGHTS_HOLD"):
             self.assertIn(marker, self.dossier)
 
+    def test_wave416_secondary_city_summary_does_not_supersede_documentary_witnesses(self):
+        """Reject inference of a third article state or January registration from a synopsis."""
+        for evidence in (
+            "SECONDARY_DATE_COUNT_CONFLICT_93_JAN1599",
+            "NO_THIRD_EDITION_INFERRED",
+            "SECONDARY_COUNT_DATE_RECONCILIATION_HOLD",
+            "Nantes Métropole",
+            "93 articles",
+            "janvier 1599",
+            "25.02.1599",
+            "REF-P27",
+            "REF-P86",
+            "f.4v",
+            "f.28",
+            "EARLY_XI_COLLATION_HOLD",
+            "FOLIO_IMAGES_UNREAD",
+            "RIGHTS_HOLD",
+            "PUBLICATION_HOLD",
+        ):
+            with self.subTest(marker=evidence):
+                self.assertIn(evidence, self.dossier)
+        self.assertIn("95", self.dossier)
+        self.assertIn("92", self.dossier)
+        reviewer = (HERE / "independent_review_packets.md").read_text(encoding="utf-8")
+        for evidence in ("H-08", "93 articles", "janvier 1599",
+                         "NO_THIRD_EDITION_INFERRED", "REVIEWER_NOT_ASSIGNED",
+                         "NOT_SENT"):
+            self.assertIn(evidence, reviewer)
+        self.assertEqual(self.sources["REF-P86"]["accessState"], "CATALOG_ONLY")
+        self.assertEqual(self.sources["REF-P27"]["accessState"], "PARTIAL_OBJECT")
+        for sid in ("REF-P27", "REF-P86"):
+            self.assertIn("PUBLICATION_HOLD", self.sources[sid]["holds"])
+        self.assertIn("95", self.chapter)
+        self.assertIn("92", self.chapter)
+        self.assertIn("25 февраля 1599", self.chapter)
+        c301 = next(l for l in self.ledger.splitlines() if l.startswith("| C301 |"))
+        self.assertIn("EARLY_XI_COLLATION_HOLD", c301)
+        c302 = next(l for l in self.ledger.splitlines() if l.startswith("| C302 |"))
+        self.assertIn("95", c302)
+        self.assertIn("92", c302)
+
     def test_handoff_gates_remain_open(self):
         plan = (HERE / "SELF_PLAN.md").read_text(encoding="utf-8")
         for key in ("RF-NANTES-1598-1599-ARTICLE-CROSSWALK", "STOP_DISCOVERY",
