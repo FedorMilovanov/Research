@@ -1931,5 +1931,38 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                     "first 1991 Tov plate route must not certify viewed plates" in e
                     for e in validate_source_access(data)))
 
+
+    def test_tov_1994_textus_4q70_not_1991_4q72_source(self) -> None:
+        for key, wrong in (
+            ("journal1994ManuscriptId", "4Q72"),
+            ("journal1994TextSiglum", "4QJer c"),
+            ("journal1994NotTarget4Q72", False),
+            ("reused1994TextusPlatesAs1991Or1997Photos", True),
+        ):
+            with self.subTest(field=key):
+                edited = copy.deepcopy(self.sources)
+                row = next(r for r in edited["records"]
+                           if r["id"] == "SRC-DJD-XV-TOV-4QJERC-1997")
+                row["similarSiglaQuarantineWave22"][key] = wrong
+                self.assertTrue(any("4Q70 1994 Textus or 4Q57 Isaiah fragment55" in e
+                                    for e in validate_source_access(edited)))
+
+    def test_isaiah_4q57_frag55_not_jeremiah_4q72_frag55ii(self) -> None:
+        for key, wrong in (
+            ("otherManuscriptId", "4Q72"),
+            ("otherFragmentBookLocus", "Jeremiah 33:16–20"),
+            ("targetFragmentLabel", "55"),
+            ("samePhysicalFragment", True),
+            ("sameEditionNumberedPlates", True),
+            ("originalManuscriptPhotosCompared", True),
+        ):
+            with self.subTest(field=key):
+                edited = copy.deepcopy(self.sources)
+                row = next(r for r in edited["records"]
+                           if r["id"] == "SRC-DJD-XV-TOV-4QJERC-1997")
+                row["similarSiglaQuarantineWave22"][key] = wrong
+                self.assertTrue(any("4Q70 1994 Textus or 4Q57 Isaiah fragment55" in e
+                                    for e in validate_source_access(edited)))
+
 if __name__ == "__main__":
     unittest.main()
