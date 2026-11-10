@@ -72,8 +72,17 @@ class ReformationAdversarialTenTwelve(unittest.TestCase):
         self.assertIn("Перенесённые источниковедческие пояснения", nant_notes)
         self.assertEqual(nant_notes.count("**Перенесённое пояснение "), 8)
         for fact in ("13 апреля", "30 апреля", "статья XI", "93–95",
-                     "25 февраля 1599", "22 и 29 мая 1599 года"):
+                     "25 февраля 1599", "22 мая 1599 года"):
             self.assertIn(fact.lower(), nant_reader.lower())
+        self.assertNotIn("2026", nant_reader)
+        self.assertNotIn("29 мая 1599 года", nant_reader)
+        self.assertIn("29 мая", nant_notes)
+        self.assertIn("CUSTODIAN_DATE_22_MAY_1599_CONFIRMED", nant_notes)
+        scot_reader, scot_notes = self.books[10].split("## Источниковедческий аппарат", 1)
+        self.assertIn("Первоначальная рукопись Шотландского исповедания", scot_reader)
+        self.assertNotIn("Теперь доступны **две разные академические презентации", scot_reader)
+        for evidence in ("A1560/8/3", "A1567/12/3", "Skene", "Lekpreuik"):
+            self.assertIn(evidence, scot_notes)
         for proof in ("L198–231", "L423–463", "L926–935",
                       "ORIGINAL_GENEVAN_COLLATION_HOLD", "EARLY_XI_COLLATION_HOLD",
                       "COPY_DATE_CONFLICT_22_29_MAY_1599", "J//943/2"):
