@@ -105,6 +105,44 @@ class BookContinuityTests(unittest.TestCase):
             with self.subTest(part=name):
                 self.assertIsNone(READER_BACKSTAGE_RE.search(reader))
 
+    def test_wave427_first_historical_reader_bibliography_is_in_apparatus(self):
+        """Scientific bibliography stays searchable without interrupting the book."""
+        content = self.texts["episode01_historical_gateway_draft.md"]
+        reader, apparatus = content.split("## Источниковедческий", 1)
+        self.assertNotRegex(reader, r"https?://")
+        self.assertNotIn("](https://", reader)
+        for historical_anchor in (
+            "Констанцском соборе 1414–1418",
+            "Библия Гутенберга",
+            "27 июня 1466 года",
+            "4 сентября 1517 года",
+            "однолистовая печать 97 тезисов 1517 года действительно сохранилась",
+            "в первом блоке отсутствует номер XVIII",
+            "критическое издание HAB",
+        ):
+            with self.subTest(historical_anchor=historical_anchor):
+                self.assertIn(historical_anchor, reader)
+        self.assertNotIn("— **архивная структура, не полное чтение всех актов**",
+                         reader)
+        urls = (
+            "https://pages.uoregon.edu/sshoemak/323/texts/Sacrosancta.htm",
+            "https://www.e-manuscripta.ch/bau/content/structure/6067490",
+            "https://guides.loc.gov/gutenberg/introduction?loclr=blogbib",
+            "https://www.loc.gov/resource/gdcwdl.wdl_18191/?st=gallery",
+            "https://www.routledge.com/The-Decrees-of-the-Fifth-Lateran-Council-1512-17-Their-Legitimacy-Origins-Contents-and-Implementation/Minnich/p/book/9780815366737",
+            "https://germanhistorydocs.org/en/from-the-reformations-to-the-thirty-years-war-1500-1648/ghdi:document-4205",
+            "https://dev2.hab.de/apps/edoc/view.html?id=kgk_058_introduction",
+            "https://brill.com/display/book/edcoll/9789004340312/B9789004340312_007.pdf",
+            "https://plato.stanford.edu/archives/spr2023/entries/luther/",
+        )
+        for url in urls:
+            with self.subTest(url=url):
+                self.assertIn(url, apparatus)
+        self.assertIn("29 из 30 исходных URL", apparatus)
+        self.assertIn("**вторичная**", apparatus)
+        for hold in ("NOT_EDITORIAL_READY", "RIGHTS_HOLD", "PUBLICATION_HOLD"):
+            self.assertIn(hold, apparatus)
+
     def test_timeless_historical_reader_across_all_fourteen_parts(self):
         """Current-year archival correspondence and acquisition updates stay in apparatus."""
         for name, content in self.texts.items():

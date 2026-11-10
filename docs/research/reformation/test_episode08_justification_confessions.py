@@ -104,7 +104,8 @@ class JustificationBookTests(unittest.TestCase):
         self.assertIn("REVIEW_PACKETS_PREPARED / NOT_SENT", reviewer)
         plan = (D / "SELF_PLAN.md").read_text(encoding="utf-8")
         active_plan = plan.split("---", 1)[0]
-        self.assertIn("волна 426", active_plan)
+        self.assertIn("ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ", active_plan)
+        self.assertIn("RF-EDITORIAL-EP08-AUGSBURG-V-IX-ANABAPTIST-SCOPE", plan)
         self.assertIn("INDEPENDENT_EXTERNAL_REVIEW_OPEN", active_plan)
         self.assertIn("THEOLOGICAL_PEER_REVIEW_OPEN", active_plan)
         self.assertIn("PUBLICATION_HOLD", active_plan)
