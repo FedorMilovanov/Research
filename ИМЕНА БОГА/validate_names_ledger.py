@@ -540,6 +540,31 @@ def validate_source_access(sources: dict) -> list[str]:
                     or w.get("aleppoExodusFolioViewed") is not False or w.get("yeivinPage82Viewed") is not False
                     or w.get("breuerPages260261Viewed") is not False):
                 errors.append(f"{prefix}: Zer 1986 copied manuscript wrongly promoted to original Aleppo/Saphir/Yeivin/Breuer access")
+        if rid == "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137":
+            audit = source.get("zer1986PrintedP152QuestionCountAuditWave39", {})
+            torah = audit.get("torahListedInclusiveRange") if isinstance(audit, dict) else None
+            esther = audit.get("estherListedInclusiveRange") if isinstance(audit, dict) else None
+            haft = audit.get("haftarotListedQuestionNumbers") if isinstance(audit, dict) else None
+            valid_ranges = (isinstance(torah, list) and len(torah) == 2 and
+                            isinstance(esther, list) and len(esther) == 2 and
+                            all(type(v) is int for v in torah + esther) and
+                            isinstance(haft, list) and all(type(v) is int for v in haft))
+            total = (torah[1] - torah[0] + 1 + esther[1] - esther[0] + 1 + len(haft)) if valid_ranges else None
+            if (not isinstance(audit, dict) or not valid_ranges
+                    or audit.get("printPage") != 152 or audit.get("pdfPageZeroBased") != 1
+                    or audit.get("originalPrintedPageImageVisuallyInspected") is not True
+                    or audit.get("introApproximatelyQuestionsAtP151") != 550
+                    or audit.get("printedTotalNumberedQuestionsAtP152") != 543
+                    or audit.get("printedReportedMissingQuestionsAtP152") != 422
+                    or torah != [1, 383] or esther != [507, 543]
+                    or haft != [440, 401, 402, 406, 462, 463, 465, 466, 476, 477]
+                    or total != 430 or len(set(haft)) != len(haft)
+                    or audit.get("computedCountFromListedInclusiveRanges") != total
+                    or audit.get("computedMinusPrintedReportedMissingCount") != 8
+                    or audit.get("reconciliationStatus") != "UNRESOLVED_PRINTED_COUNT_VS_INCLUSIVE_RANGES"
+                    or audit.get("ancientManuscriptPhotographicCollation") is not False
+                    or audit.get("printNumbersMayBeSilentlyCorrected") is not False):
+                errors.append(f"{prefix}: Zer1986 p152 printed 422 versus enumerated 430 remains unresolved")
         if rid == "SRC-OFER-BREUER-MASORAH-2008-EX17-16":
             w = source.get("checkedProvenance", {})
             if (source.get("rightsState") != "PERMISSION_REQUIRED" or source.get("publicationState") != "BLOCKED"

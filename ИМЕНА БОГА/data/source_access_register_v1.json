@@ -3498,8 +3498,8 @@
       "additionalUrl": "https://www.daat.ac.il/daat/vl/meorotnatan/meorotnatan02.pdf",
       "objectType": "original_1986_printed_edition_of_anonymous_manuscript_copy_selected_pages_visually_inspected",
       "sourceRole": "ZER_1986_ANONYMOUS_JTS_L729_COPY_ALEPPO_WORD_JOIN_REPORT_EX17_137",
-      "sourceObjectState": "Original printed images p151 introduction (JTS L729 anonymous copy, NOT Saphir autograph), p154 abbreviation list, p165 item137 (Exod17:16 two-word question, answer one-word), and p191 note137 (Yeivin p82 / Breuer pp260–261 references) directly visually inspected on Daat. Ancient Aleppo original leaf LOST; JTS manuscript, Yeivin book, and Breuer book pages NOT individually viewed. No rights granted. Wave33 separate official NLI Saphir catalog indexed (record NNL_ALEPH990001022670205171); do NOT confuse same-named Nathan ben Reuben Shapira Maorot Natan, record NNL_ALEPH990000621650205171. Catalog web page returned index but not original manuscript pixels or record shelfmark personally opened; reported NLI free-use status not transferable to other objects. Wave34 original visual print p151 directly confirms Menashe Sithon (מנשה סיתהון) as respondent, courier Yaakov Ze'ev, 1857 dispatched questions ca550; Aleppo Codex English project has contradictory name Moshe Sathon (§3.4.6) vs Menashe Stahon (§3.4.2), unresolved; Penkower JTS copy year 1855 distinct, not resolved. Wave37 original print p151 photographic screenshot directly shows Yaakov Zeev BERLIN (ר' יעקב זאב ברלין), consistent with Saphir's shorter Yaakov Zeev and Goshen's Jacob Berlin. Additional 2023 Peretz/Golan published print p67 screenshot reprints the full name while explicitly citing Zer1986; it is a dependent modern reference to Zer for this historical courier identity, NOT an independent second historical witness, ancient witness, or separate source row.",
-      "supportedUse": "Attribute printed historical one-word testimony to Zer 1986 edited COPY of Saphir-associated material, not ancient Aleppo manuscript autopsy; give exact page and item number, preserve competing editorial opinions.",
+      "sourceObjectState": "Original printed images p151 introduction (JTS L729 anonymous copy, NOT Saphir autograph), p152 numeric question inventory (422 reported missing versus 430 enumerated inclusive, unresolved), p154 abbreviation list, p165 item137 (Exod17:16 two-word question, answer one-word), and p191 note137 (Yeivin p82 / Breuer pp260–261 references) directly visually inspected on Daat. Ancient Aleppo original leaf LOST; JTS manuscript, Yeivin book, and Breuer book pages NOT individually viewed. No rights granted. Wave33 separate official NLI Saphir catalog indexed (record NNL_ALEPH990001022670205171); do NOT confuse same-named Nathan ben Reuben Shapira Maorot Natan, record NNL_ALEPH990000621650205171. Catalog web page returned index but not original manuscript pixels or record shelfmark personally opened; reported NLI free-use status not transferable to other objects. Wave34 original visual print p151 directly confirms Menashe Sithon (מנשה סיתהון) as respondent, courier Yaakov Ze'ev, 1857 dispatched questions ca550; Aleppo Codex English project has contradictory name Moshe Sathon (§3.4.6) vs Menashe Stahon (§3.4.2), unresolved; Penkower JTS copy year 1855 distinct, not resolved. Wave37 original print p151 photographic screenshot directly shows Yaakov Zeev BERLIN (ר' יעקב זאב ברלין), consistent with Saphir's shorter Yaakov Zeev and Goshen's Jacob Berlin. Additional 2023 Peretz/Golan published print p67 screenshot reprints the full name while explicitly citing Zer1986; it is a dependent modern reference to Zer for this historical courier identity, NOT an independent second historical witness, ancient witness, or separate source row.",
+      "supportedUse": "Attribute printed historical one-word testimony to Zer 1986 edited COPY of Saphir-associated material, not ancient Aleppo manuscript autopsy; give exact page and item number, preserve competing editorial opinions. Preserve separately both printed missing 422 and calculated inclusive listed 430; do not silently fix eight-item discrepancy.",
       "forbiddenUse": "Claim JTS L729 is Saphir autograph, original Aleppo Exodus folio directly read, published Yeivin/Breuer pages viewed, ancient pronunciation derived from word division, or scanned pages rights-cleared.",
       "checkedProvenance": {
         "jtsShelfmark": "JTS L 729",
@@ -3516,6 +3516,22 @@
         "aleppoExodusFolioViewed": false,
         "yeivinPage82Viewed": false,
         "breuerPages260261Viewed": false
+      },
+      "zer1986PrintedP152QuestionCountAuditWave39": {
+        "printPage": 152,
+        "pdfPageZeroBased": 1,
+        "originalPrintedPageImageVisuallyInspected": true,
+        "introApproximatelyQuestionsAtP151": 550,
+        "printedTotalNumberedQuestionsAtP152": 543,
+        "printedReportedMissingQuestionsAtP152": 422,
+        "torahListedInclusiveRange": [1, 383],
+        "haftarotListedQuestionNumbers": [440, 401, 402, 406, 462, 463, 465, 466, 476, 477],
+        "estherListedInclusiveRange": [507, 543],
+        "computedCountFromListedInclusiveRanges": 430,
+        "computedMinusPrintedReportedMissingCount": 8,
+        "reconciliationStatus": "UNRESOLVED_PRINTED_COUNT_VS_INCLUSIVE_RANGES",
+        "ancientManuscriptPhotographicCollation": false,
+        "printNumbersMayBeSilentlyCorrected": false
       },
       "canonicalManuscriptCatalogueRoute20261110": {
         "nliRecordId": "NNL_ALEPH990001022670205171",

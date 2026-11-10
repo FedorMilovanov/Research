@@ -2011,6 +2011,26 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                 row["checkedProvenance"][key] = wrong
                 self.assertTrue(any("Zer 1986 copied manuscript" in e for e in validate_source_access(data)))
 
+    def test_zer_1986_p152_422_versus_430_count_conflict(self) -> None:
+        for field, wrong in (
+            ("printedReportedMissingQuestionsAtP152", 430),
+            ("torahListedInclusiveRange", [1, 375]),
+            ("estherListedInclusiveRange", [507, 535]),
+            ("haftarotListedQuestionNumbers", [440, 401]),
+            ("computedCountFromListedInclusiveRanges", 422),
+            ("computedMinusPrintedReportedMissingCount", 0),
+            ("reconciliationStatus", "RESOLVED"),
+            ("ancientManuscriptPhotographicCollation", True),
+            ("printNumbersMayBeSilentlyCorrected", True),
+        ):
+            with self.subTest(field=field):
+                data = copy.deepcopy(self.sources)
+                row = next(r for r in data["records"]
+                           if r["id"] == "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137")
+                row["zer1986PrintedP152QuestionCountAuditWave39"][field] = wrong
+                self.assertTrue(any("Zer1986 p152 printed 422 versus enumerated 430" in e
+                                    for e in validate_source_access(data)))
+
     def test_ofer_2008_cannot_become_direct_breuer_yeivin_or_photo(self) -> None:
         for key, wrong in (("originalJSIJTypesetPdfViewed", True), ("originalBreuerPagesViewed", True),
                            ("originalYeivinPageViewed", True), ("ancientAleppoExodusViewed", True),
