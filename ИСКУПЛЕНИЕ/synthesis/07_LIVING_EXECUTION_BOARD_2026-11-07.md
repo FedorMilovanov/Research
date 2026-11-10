@@ -1,4 +1,22 @@
-# Искупление — живая доска исполнения (актуальный checkpoint W0 — в конце)
+# Искупление — живая доска исполнения
+
+## ТЕКУЩИЙ CHECKPOINT · 10.11.2026 · AUDIT-W0
+
+**Единственный канон 18 глав:** [план и все 18 читательских ссылок](01_SERIES_PLAN_AND_ARTICLE_COUNT.md). **PR:** [#309](https://github.com/FedorMilovanov/Research/pull/309), ветка `research/atonement-series-audit-20261104`. **Исходный HEAD перед AUDIT-W0:** `446e01b2974a14bf9857f2b1ed020078e2cff447`. Это **не** новый HEAD и не статус проверок после AUDIT-W0.
+
+| Контроль | Текущее решение |
+|---|---|
+| Рукописи | **18/18 читательских черновиков**, всего 31 файл в `synthesis/drafts/` = 18 новых + 13 HISTORICAL; **не** 31 глава |
+| Техническая приёмка | На предыдущем `446e01b2` — 3/3 GitHub Actions SUCCESS по последнему проверенному срезу; для нового HEAD после AUDIT-W0 — **CI PENDING / VERIFY EXACT SHA** |
+| Научная приёмка | **НЕ ПРОЙДЕНА**: 14 открытых конфликтных узлов; независимого scholarly review нет; исходные ограничения и точные статусы в source registry/ledger |
+| Публикация | `publicationEligible=false`; `EVIDENCE_HOLD`, `GOTTINGEN_APPARATUS_HOLD`, `ATTRIBUTION_HOLD`, `HISTORICAL_SOURCE_HOLD`, `CONFESSIONAL_HOLD`, `RIGHTS_HOLD`, `PUBLICATION_HOLD` не сняты |
+| AUDIT-W0 · результат 1 | Обновлены действующие checkpoint в [каноническом плане](01_SERIES_PLAN_AND_ARTICLE_COUNT.md) и на этой доске; исторические срезы ниже сохранены |
+| AUDIT-W0 · результат 2 | В плане ссылки №1–18 ведут к reader-черновикам; в главе №8 переходы №6/7 указывают на новые читательские редакции, а не на архив |
+| Следующая волна | **AUDIT-W1 (два результата):** содержательный red-team №8–9 и №10–11; проверка текст/контраргумент/предел вывода/точный источник; *не* переписывать все главы одновременно |
+
+**Три самостоятельных вердикта:** `TECHNICAL GREEN` — только на проверенном SHA; `SCHOLARLY REVIEWED = false`; `PUBLICATION APPROVED = false`. Нижеследующая доска, начиная с «CHECKPOINT / 2026-11-07», — **хронологический HISTORICAL-журнал**: прежние формулировки «главы отсутствуют» не описывают нынешнюю наличность. САМОПЛАН: [SELF_PLAN_PROTOCOL](../../docs/research/SELF_PLAN_PROTOCOL.md). **NO MERGE / NO PRODUCT / NO PUBLICATION.**
+
+---
 
 > **CHECKPOINT / 2026-11-07 · BASE HEAD `085c67b184a7efe4c29965a1d9706f9e855539f8` · STATUS: internal research pause; execution board active**
 >
