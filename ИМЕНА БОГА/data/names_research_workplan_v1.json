@@ -13,10 +13,10 @@
     "extensionRecords": 13,
     "contextAttestations": 105,
     "sourceRegisterEntries": 100,
-    "regressionTests": 284,
+    "regressionTests": 285,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_FD98B00_EXACT_6_SUCCESS_WAVE20_NEW_SHA_PENDING",
+    "allSixCiChecks": "PRIOR_70B94F8_EXACT_6_SUCCESS_WAVE21_NEW_SHA_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "fd98b00ce5896f383c2acda2b5950822c9f06390"
+    "lastConfirmedAllSixChecksSha": "70b94f82bd88b647918da70f5fc782af7247739a"
   },
   "allowedStatuses": [
     "DONE",
@@ -742,7 +742,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "2026-11-10 WAVE20: distinct official IAA 1954 multi-manuscript catalog B-279109=PAM M40.963 anchored with Inventory Fascicle9 Jer4:13-16 and 33:16-20, Langlois 2019 footnote19, and now ORIGINAL EDITOR TOV in DJD XV 1997 4QJer c published source list (text extracted from third-party mirror; no screenshot because 21MB). Tov lists later PAM43.101 and earlier 40.963 in parentheses and notes later 43 series encompasses additional identifications. This DOES NOT prove same photo exposure or photo pixels of fragment55ii, and DJD XV original photographic plates XXX-XXXVI remain unread. 100 distinct source records, 284 core tests (3 net new negative test methods vs wave19). Prior FD98B00 exact 6/6 CI; new exact final HEAD CI pending. Next scientific gate: authorized original image/photo plate matching printed fragment 55ii, preserving 4Q72=4QJer c vs IAA catalog mismatched d. Wave18 Ziegler and Wave19 Q still blocked. NG10 BLOCKED_SOURCE; 0 original critical collation, 0 outside scientific/Product approval, no image rights. STOP_SEARCH if access unavailable.",
+  "nextAction": "2026-11-10 WAVE21 primary original-photo acquisition: exact 1991 first Tov 4QJer c (4Q72) editio princeps in Tradition of the Text, OBO109 pp249-276 with plates I-VII independently confirmed through author's Hebrew University publication record and DJD XV 1997 reference. University Bern says OBO series on ZORA OA, but ZORA's Anubis denied access; full 1991 original chapter & 1991 photo plates NOT read. Official IAA manuscript browse path /manuscript/4Q72-1 verified as exact manuscript navigation, not a proven image of frg55ii. Commons File:4q72.jpg verified as PDB 4Q72 protein enzyme, rejected; not scroll. No new source IDs or ancient manuscript readings. 100 source objects, 285 core tests including 1 adverse regression for unviewed plates and mistaken protein. Prior exact 70b94f8 CI 6/6 SUCCESS, new wave21 head CI pending. Next: lawful access to images in original 1991 plates I-VII or 1997 DJD XV plates XXX-XXXVI and cross-check museum245/PAM40.963/PAM43.101 vs precisely identified frg55ii; if access blocked, KEEP NG10 BLOCKED_SOURCE and image rights HОLD; do not manufacture original photo pixels.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -824,7 +824,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-10",
-    "planStatus": "WAVE20 additional original-editor textual verification: original DJD XV 1997 editorial photographic inventory lists early PAM40.963 and later PAM43.101. This was read via third-party accessible scan as extracted text only; web screenshot failed because 21MB. 100 sources, 284 corpus tests, 0 original ancient photo collations, no external scholarship or Product approvals. Exact new SHA needs CI; last accepted six-of-six FD98B00.",
+    "planStatus": "WAVE21 source-route validation: Pre-update 70b94f8 exact SHA all six GH Actions SUCCESS; new wave21 head requires its own checks. 1991 original Tov OBO109 pp249–276 / plates I–VII independently verified as first-edition acquisition target by Hebrew University and DJD XV. ZORA public access reported by University Bern but session denied (Anubis), no original manuscript photographs newly viewed. Rejected false Wikimedia Commons protein PDB 4Q72 filename. Source count remains 100; corpus tests now 285 (+1 negative method). Critical manuscript collations 0, scholarly/Product approvals 0, rights HOLD.",
     "workCompleted": [
       "Preferred Russian name Уильям Беррик with original William D. Barrick",
       "Added authentic TMSJ 2024 published journal article metadata and permissions",
@@ -927,14 +927,15 @@
       "2026-11-10 WAVE17: exact pre-edit GitHub PR379 HEAD 899e7c29f0914fb2742fad1fe283de70d50be301 CI 6/6 terminal success; main at 482abe3847d0bb68c46c846311c411b17b565dba and merge-base 4f600dafe8ac52f8244148abdf0845f830cd2263; PR 384 ahead/83 behind, changed path sets 63 vs 41 with zero filename overlap. This is a filename-level integration audit, NOT a merge-safety verdict. Historical Wave5 nextAction and CI predecessor corrected. Newly written SHA must pass CI separately.",
       "2026-11-10 WAVE19 Codex Q evidence correction: Original contemporary scholarly Valerio 2022 §2.2.1 printed p56 read as extracted publisher PDF text (screenshot 403); Q page171 opening Isaiah colophon second hand. Official Göttingen Q catalog 1 column 29 lines Prophets-only. Earlier agent-generated Mark1 74-line 'transcription' explicitly refused. Specific source record, original Russian dossier and 1 fail-closed core regression updated. No original Isaiah9 folio, no edited critical apparatus or permissions. Wave18/19 scientific status NOT DONE.",
       "2026-11-10 WAVE20 4Q72: original official IAA catalog B-279109 dated Feb1954 confirms PAM M40.963, Najib Anton Albina, old IR multi-manuscript exposure with 4Q72 and museum plate245 among others. Historical inventory Fascicle9 directly lists 40.963 4Q72 Jerc Jer 4:13-16 and 33:16-20. Langlois original author-hosted 2019 PDF note19 links PAM 40.963 to B-279109 (PDF screenshot timeout, extracted text only). New source object with 0 image pixels reviewed; inventory and Langlois rows scoped cross-reference; 2 negative guards. NO conflation with PAM43.101, editor frg55ii or IAA B-360205; rights and science HOLD.",
-      "2026-11-10 WAVE20 supplement primary editorial literature: Tov DJD XV 1997 4QJer c section original written list includes PAM43.101 main photo series and 40.963 in parenthetical earlier photos; editorial explanatory sentence says later 43-series contains more identifications. Original book text was parsed in a 21MB third-party PDF; web screenshot refused due size, no direct physical original photo/plates viewed. Existing Tov source row updated and one negative test against conflating negatives or photo/plate review; 100 sources/284 corpus tests; no image redistribution."
+      "2026-11-10 WAVE20 supplement primary editorial literature: Tov DJD XV 1997 4QJer c section original written list includes PAM43.101 main photo series and 40.963 in parenthetical earlier photos; editorial explanatory sentence says later 43-series contains more identifications. Original book text was parsed in a 21MB third-party PDF; web screenshot refused due size, no direct physical original photo/plates viewed. Existing Tov source row updated and one negative test against conflating negatives or photo/plate review; 100 sources/284 corpus tests; no image redistribution.",
+      "2026-11-10 WAVE21 targeted source acquisition: Hebrew University institutional listing independently confirms Tov 1991 4QJer (4Q72) in OBO109 Tradition of the Text pp249–276; original Tov DJD XV 1997 references first edition plates I–VII versus 1997 plates XXX–XXXVI. University Bern scholarly series publisher states OA OBO ZORA, but ZORA returned Anubis ACCESS DENIED; no actual 1991 original text or photographic plate read. Official IAA manuscript navigation /manuscript/4Q72-1 verified against separate 4Q70/4Q71. Commons File:4q72.jpg false-positive PDB 4Q72 protein rejected. Existing Tov row and adversarial regression updated, no fake source and no rise in claims; 100 sources, 285 core tests, 0 original ancient collation or Product grant."
     ],
     "stillOpen": [
-      "New exact wave20 GitHub HEAD requires its own 6/6 terminal CI; last independently verified FD98B00 6/6 success.",
-      "Original 1954 PAM M40.963 pixels and precise 4Q72 Jer33 frg55ii placement uninspected; DJD XV original plates XXX-XXXVI and 2012 IAA B-360205 exact fragment identity not independently matched. NG10 BLOCKED_SOURCE.",
-      "Wave18 Ziegler Isaiah9 apparatus and Wave19 Vatican Q exact Isaiah9 image not collated; no artificial source gate promotion.",
-      "NG04/NG11/NG12 manuscripts and NG05 pronunciation open; NG06 media access blocked, NG07-NG09 incomplete.",
-      "NG13 outside scholarly approval, NG14 consumer runtime integration and NG15 image/reprint rights and Product handoff blocked; 0 approvals and no publication."
+      "Exact new Wave21 GitHub HEAD requires 6/6 terminal CI; pre-change 70b94f8 independently 6/6 green.",
+      "1991 Tov first printed plates I–VII and 1997 DJD XV plates XXX–XXXVI remain UNVIEWED; ZORA open-series route blocked by Anubis in this session. IAA official 4Q72 browser route does not resolve the specific frg55ii ancient pixels.",
+      "4Q72 PAM40.963 (1954) and PAM43.101 or B360205 (2012) have no fully verified same physical fragment image/glyph crosswalk; no extant full צדקנו established; NG10 remains BLOCKED_SOURCE.",
+      "Wave18 Ziegler Isaiah9 critical apparatus and Wave19 Vatican Q Isaiah9 exact manuscript photo still blocked.",
+      "NG13 external scholar review NG14 consumer runtime and NG15 photo usage rights/Product remain unapproved; no main merge/publication."
     ]
   },
   "originalResearchCheckpoint": {
