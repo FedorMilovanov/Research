@@ -397,6 +397,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-LANGLOIS-JEREMIAH-4Q72-2019": "ATTRIBUTED_SCHOLARLY_ANALYSIS_4Q72_MT_JER33_16_20_VS_OLD_GREEK",
     "SRC-DJD-XV-TOV-4QJERC-1997": "TOV_DJD_XV_4QJERC_PRIMARY_EDITED_INTRO_TABLES_NOT_PLATE_AUTOPSY",
     "SRC-DSS-REED-FASC7-4Q72-PAM43101": "ARCHIVAL_PAM_43_101_MUSEUM_PLATE_245_4Q72_COLUMNS_XXIV_XXV",
+    "SRC-IAA-B279109-PAM40963-4Q72-1954": "IAA_1954_PAM_M40_963_4Q72_MULTI_MANUSCRIPT_NEGATIVE_CATALOG_ONLY",
     "SRC-IAA-B360205-4Q72-PL245F6": "IAA_B360205_OFFICIAL_INFRARED_VISUALLY_INSPECTED_NO_INDEPENDENT_GLYPH_COLLATION",
     "SRC-MAIER-IECOT-JEREMIAH-1-25-2025": "SCHOLARLY_2025_MANUSCRIPT_SIGLA_CROSSWALK_4Q72_VS_4Q72A",
     "SRC-NET-REV1-8": "ATTRIBUTED_TRANSLATION_CRITICAL_NOTES",
@@ -637,6 +638,47 @@ def validate_source_access(sources: dict) -> list[str]:
                     or source.get("criticalColumn") != "XXV"
                     or source.get("specificIAA2012Fragment6MatchedByImage") is not False):
                 errors.append(f"{prefix}: inventory PAM/plate/column or photo match invented")
+        if rid == "SRC-IAA-B279109-PAM40963-4Q72-1954":
+            if (source.get("url") != "https://www.deadseascrolls.org.il/explore-the-archive/image/B-279109"
+                    or source.get("officialImageId") != "B-279109"
+                    or source.get("archivePAMNumber") != "M40.963"
+                    or source.get("archiveExposureDate") != "February 1954"
+                    or source.get("originalPhotographer") != "Najib Anton Albina"
+                    or source.get("archiveFilmKind") != "Scanned Infrared Negative"
+                    or source.get("museumPlate245Listed") is not True
+                    or source.get("manyManuscriptsInFrame") is not True
+                    or source.get("official4Q72Listed") is not True
+                    or source.get("archiveCatalogueSiglum") != "4Q Jer d"
+                    or source.get("scholarly4Q72Siglum") != "4QJer c"
+                    or source.get("fascicle9PassageRange") != "Jer 4:13–16; 33:16–20"
+                    or source.get("langlois2019Footnote19MapsPAMToIAA") is not True
+                    or source.get("accessState") != "CATALOG_ONLY"
+                    or source.get("rightsState") != "PERMISSION_REQUIRED"
+                    or source.get("directHistoricalNegativePixelsInspected") is not False
+                    or source.get("preciseF55iiPieceIdentifiedOnNegative") is not False
+                    or source.get("academic1954To2012SamePhotoOrFragmentMatchProven") is not False
+                    or source.get("manuscriptLettersIndependentlyCollated") is not False
+                    or source.get("criticalOriginalDJDPlateCollated") is not False
+                    or source.get("imageReusePermissionGranted") is not False):
+                errors.append(f"{prefix}: 1954 4Q72 PAM M40.963 negative falsely upgraded from multi-manuscript catalogue to glyph/fragment/licensed proof")
+        if rid == "SRC-DSS-REED-FASC7-4Q72-PAM43101":
+            historical = source.get("historicalNegative1954Crosscheck", {})
+            if (not isinstance(historical, dict)
+                    or historical.get("fascicle9Url") != "https://lyingpen.uia.no/dssinventoryproject/fascicle9/"
+                    or historical.get("archivalNumber") != "40.963"
+                    or historical.get("officialIAAId") != "B-279109"
+                    or historical.get("isSameExposureAsPAM43101") is not False
+                    or historical.get("preciseF55iiObjectIdentityEstablished") is not False):
+                errors.append(f"{prefix}: historical mixed negative cannot be equated with 43.101 or editor fragment 55 ii")
+        if rid == "SRC-LANGLOIS-JEREMIAH-4Q72-2019":
+            note = source.get("historicalNegativeFootnote19", {})
+            if (not isinstance(note, dict)
+                    or note.get("pamNumber") != "40.963"
+                    or note.get("officialIAAId") != "B-279109"
+                    or note.get("originalPdfTextExtractionRead") is not True
+                    or note.get("screenshotOfThisFootnoteObtained") is not False
+                    or note.get("photoPixelsReviewedInOurResearch") is not False):
+                errors.append(f"{prefix}: Langlois footnote 19 original PDF text cannot be promoted to viewed photo pixels")
         if rid == "SRC-IAA-B360205-4Q72-PL245F6":
             if (source.get("url") != "https://www.deadseascrolls.org.il/explore-the-archive/image/B-360205"
                     or source.get("archivePlate") != "245"
