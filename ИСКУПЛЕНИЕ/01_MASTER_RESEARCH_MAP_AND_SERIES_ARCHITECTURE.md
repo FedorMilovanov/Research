@@ -184,7 +184,7 @@ Reader-facing названия — черновик. Slug — английски
 6. **Дорт 1618–19** — Второй раздел; sufficiency for all / efficacy for elect; отвержение ремонстрантских ошибок.
 7. **Amyraut / Saumur** — hypothetical universalism внутри реформатства.
 8. **Английские гипотетические универсалисты** — Davenant, Ussher, Calamy; не путать с Арминием.
-9. **Owen 1647** — *Death of Death*: против universal redemption и half-way house.
+9. **Owen 1648 (первое издание; Imprimatur 22 Jan 1647 Old Style)** — *Death of Death*: против universal redemption и half-way house.
 10. **Вестминстер / 1689** — гл. 8, 11; Larger Catechism.
 11. **Гилл, Fuller, Particular Baptists** — offer, duty-faith; стык с отделом Гилла.
 12. **XIX–XX** — Hodge, Dabney, Shedd, Warfield, Bavinck, Murray.

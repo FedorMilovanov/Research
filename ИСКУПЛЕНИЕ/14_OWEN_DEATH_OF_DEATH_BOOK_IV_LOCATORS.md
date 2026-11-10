@@ -11,7 +11,7 @@
 
 | Поле | Значение |
 |---|---|
-| Трактат | John Owen, *Salus Electorum, Sanguis Jesu; or, The Death of Death in the Death of Christ* (Imprimatur 22 Jan 1647) |
+| Трактат | John Owen, *Salus Electorum, Sanguis Jesu; or, The Death of Death in the Death of Christ* (первое печатное издание 1648; Imprimatur 22 Jan 1647 по старому стилю) |
 | PD тело | да (ум. 1683) |
 | CCEL TXT | https://www.ccel.org/ccel/o/owen/deathofdeath/cache/deathofdeath.txt (358 чанков; прочитаны 0, 70, 78, 80–84, **86–89**, 90, 200) |
 | CCEL PDF | https://www.ccel.org/ccel/o/owen/deathofdeath/cache/deathofdeath.pdf |
@@ -236,7 +236,7 @@ Competing: P5 скажет, что он сужает «мир» системно
 | **Текст отца по критическому изданию** | **`ORIGINAL_TEXT_HOLD`** — не сверен. Латынь ниже — это латынь в передаче Оуэна, не по PL / CSEL / CCSL |
 | **Связь места с нашими карточками** | **`PRECEDENT_OF_READING`** — по правилу под-корпуса `fathers/` §4: автор XVII в. и отец стоят на том же тексте, но не являются одной позицией |
 
-Сверкой по оригиналу занимается под-корпус [`fathers/`](fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md) (ветка агента 3, PR #211). Пока он не закрыл `ORIGINAL_TEXT_HOLD`, эти три места нельзя подавать как «Августин / Проспер / Амвросий said» без оговорки «в цитировании Оуэна, 1647/1850».
+Сверкой по оригиналу занимается под-корпус [`fathers/`](fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md) (ветка агента 3, PR #211). Пока он не закрыл `ORIGINAL_TEXT_HOLD`, эти три места нельзя подавать как «Августин / Проспер / Амвросий said» без оговорки «в цитировании Оуэна, печ. 1648 / переизд. 1850».
 
 **OCR-предупреждение (не терять):** скан даёт `ecciesia` вместо `ecclesia`, `mu7ido` вместо `mundo`, `sjoeciaZ` вместо `specialis`, `tJic` вместо `the`, `contaiuinato` вместо `contaminato`. Ниже латинский текст приведён с восстановленными очевидными буквами; английский перевод Оуэна — как в скане, с пометой о сбоях. Фраза `totus mundus est ecclesia` поиском **не находится** — искать надо по `mundus`.
 
