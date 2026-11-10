@@ -1,6 +1,26 @@
 # САМОПЛАН «Реформации» — живая доска исполнения, границы поиска и сборка книги
 
-## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 417, 10.11.2026 (RF-NANTES-SEALED-PARIS-EXPEDITION-ALIAS)
+## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 418, 10.11.2026 (RF-BGE-DATE-22-MAY-AND-XI-FOLIO5-CUSTODIAN)
+
+**База:** [PR #446](https://github.com/FedorMilovanov/Research/pull/446) MERGED, `Research/main = 482abe3847d0bb68c46c846311c411b17b565dba`. На PR HEAD 5/5 обязательных SUCCESS, профильный набор 123/123 PASS. При начале волны отдельный post-merge CI main давал 4/5 SUCCESS, Atonement corpus integrity in progress — не заявлять 5/5 main до проверки. Нет других открытых PR/рабочих веток «Реформации». Числа книги 14 частей / 204 источника / C1–C319.
+
+**Новый доказательный факт из переписки хранителя:** в ответе от **10.11.2026 07:56 UTC** по `CorrMss 2026/448` архивист Camille Larraz, Bibliothèque de Genève, сообщила: `La date exacte est le 22 mai 1599 et l'article XI se poursuit sur le folio 5.` Значит, **22 мая 1599 — подтверждённая хранителем дата заверения** `CUSTODIAN_DATE_22_MAY_1599_CONFIRMED`; **ранняя XI продолжается на f.5 после f.4v** `ARTICLE_XI_CONTINUES_F5`. Старое BGE-печатное **29 мая 1599** остаётся исторической ошибкой/коллизией каталожной датировки, но не равнозначным свидетельством при прямом уточнении хранителя. Саму запись `f.28` не сверяли по фотографии.
+
+**Доступ к TIFF:** архивист предложила три файла через временную передачу; страница SwissTransfer показывала **3 files / 120.5 MB / 7-day expiry**, название одного `ms_fr_00413_f004v.tif`. В рабочем сеансе скачивания TIFF не было: компьютер в Remote Desktop Commander offline; инструмент браузерной навигации TinyFish сообщил о недостаточном балансе, а рабочий контейнер не имеет DNS. Временный приватный URL нигде в публичном Git не хранится. `TIFF_TRANSFER_OFFERED_NOT_COLLATED / FOLIO_IMAGES_UNREAD` — не считать наличие временной ссылки колляцией; не принуждать к платной подписке для фиксации уже полученного ответа.
+
+**Результат 1:** в `nantes_bge_ms_fr_413_archival_request.md`, `09_france_confession_nantes_source_study.md`, `source-registry-v1.json` (только `REF-P86`) и `03_claim_verification_register.md` (только C301) внести новое письмо как **архивную справку**, сохранив прежние публикации и фотоколляционные ограничения. В `episode11_france_catholic_reform_nantes_1545_1599_manuscript.md` исправить устаревшее утверждение о равнозначной неопределённости даты 22/29, не изменяя другие юридические положения.
+
+**Результат 2:** уточнить существующий **неотправленный** пакет историка H-08; в существующем `test_nantes_digital_provenance.py` защитить различие `CUSTODIAN_DATE_22_MAY_1599_CONFIRMED` vs `FOLIO_28_DIRECT_PALEOGRAPHIC_COLLATION_HOLD`, листы `f.4v + f.5` и отсутствие новых прав на изображение. Другие существующие тесты не ослаблять, единственный действующий SELF_PLAN продвинуть на 418. Восемь существующих файлов внутри `docs/research/reformation/`, только один scoped PR.
+
+**Оставшиеся блокеры:** `RESEARCH_MANUSCRIPT_DRAFT / NOT_EDITORIAL_READY / FOLIO_IMAGES_UNREAD / FOLIO_28_DIRECT_PALEOGRAPHIC_COLLATION_HOLD / EARLY_XI_COLLATION_HOLD / ORIGINAL_GENEVAN_COLLATION_HOLD / INDEPENDENT_EXTERNAL_REVIEW_OPEN / THEOLOGICAL_PEER_REVIEW_OPEN / ARCHIVE_HOLD / RIGHTS_HOLD / EDITORIAL_HANDOFF_HOLD / PUBLICATION_HOLD`. `COPY_DATE_CONFLICT_22_29_MAY_1599` фиксирует **историческую противоречивую публикацию**, а не неизменное нынешнее отсутствие ответа. `STOP_DISCOVERY` и никаких повторных писем.
+
+**Приёмка:** `validate_corpus.py`, все профильные unittest; 5/5 обязательных SUCCESS на exact PR SHA перед merge и отдельный post-merge main-check. Счётчики без изменений, no Product, no branch proliferation.
+
+**Дальше:** **получить реальные TIFF**, коллировать `f.28` по пикселям и **раннюю XI на двух листах f.4v/f.5** с `REF-P27 L423–463`, только после этого обсуждать точные варианты раннего текста; проверить права изображения отдельно.
+
+---
+
+## ИСТОРИЧЕСКИЙ СРЕЗ ВОЛНЫ 417 — не действующий паспорт (RF-NANTES-SEALED-PARIS-EXPEDITION-ALIAS)
 
 **Подтверждённая база:** [PR #445](https://github.com/FedorMilovanov/Research/pull/445) MERGED, `Research/main = 46fd29d4b434fb0b760adc0d75aa7aa01bd820f1`. На точном PR HEAD все 5/5 checks SUCCESS и 122/122 профильных unittest PASS. Post-merge CI на `main` также terminal 5/5 SUCCESS. Открытых Reformation PR и веток на входе нет. Книжный корпус = 14 частей / 204 источника / C1–C319, не создаём новые записи.
 
