@@ -29,10 +29,10 @@ class NantesVariantCrosswalkTests(unittest.TestCase):
             self.assertIn(id, self.sources)
             self.assertEqual(self.sources[id]["publicationState"], "REFERENCE")
             self.assertIn("PUBLICATION_HOLD", self.sources[id]["holds"])
-        for id in ("REF-P86", "REF-P29"):
-            with self.subTest(id=id):
-                self.assertEqual(self.sources[id]["accessState"], "CATALOG_ONLY")
-                self.assertIn("ARCHIVE_HOLD", self.sources[id]["holds"])
+        for sid, state in (("REF-P86", "PARTIAL_OBJECT"), ("REF-P29", "CATALOG_ONLY")):
+            with self.subTest(id=sid):
+                self.assertEqual(self.sources[sid]["accessState"], state)
+                self.assertIn("ARCHIVE_HOLD", self.sources[sid]["holds"])
         for id in ("REF-S97", "REF-S98", "REF-P27"):
             self.assertEqual(self.sources[id]["accessState"], "PARTIAL_OBJECT")
 
@@ -95,7 +95,7 @@ class NantesVariantCrosswalkTests(unittest.TestCase):
                          "NO_THIRD_EDITION_INFERRED", "REVIEWER_NOT_ASSIGNED",
                          "NOT_SENT"):
             self.assertIn(evidence, reviewer)
-        self.assertEqual(self.sources["REF-P86"]["accessState"], "CATALOG_ONLY")
+        self.assertEqual(self.sources["REF-P86"]["accessState"], "PARTIAL_OBJECT")
         self.assertEqual(self.sources["REF-P27"]["accessState"], "PARTIAL_OBJECT")
         for sid in ("REF-P27", "REF-P86"):
             self.assertIn("PUBLICATION_HOLD", self.sources[sid]["holds"])
@@ -145,7 +145,7 @@ class NantesVariantCrosswalkTests(unittest.TestCase):
             list(range(1, 320))
         )
         self.assertEqual(len(self.sources), 204)
-        self.assertEqual(self.sources["REF-P86"]["accessState"], "CATALOG_ONLY")
+        self.assertEqual(self.sources["REF-P86"]["accessState"], "PARTIAL_OBJECT")
         self.assertEqual(self.sources["REF-P27"]["accessState"], "PARTIAL_OBJECT")
 
     def test_handoff_gates_remain_open(self):
