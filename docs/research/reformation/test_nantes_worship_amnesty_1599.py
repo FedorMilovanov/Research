@@ -29,7 +29,7 @@ class NantesWorshipAndAmnestyTests(unittest.TestCase):
             self.assertIn(k, self.refs)
         self.assertEqual(self.refs["REF-P27"]["accessState"], "PARTIAL_OBJECT")
         self.assertEqual(self.refs["REF-P29"]["accessState"], "CATALOG_ONLY")
-        self.assertEqual(self.refs["REF-P86"]["accessState"], "CATALOG_ONLY")
+        self.assertEqual(self.refs["REF-P86"]["accessState"], "PARTIAL_OBJECT")
         for k in ("REF-S99", "REF-S100"):
             with self.subTest(source=k):
                 v = self.refs[k]
