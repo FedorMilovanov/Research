@@ -162,7 +162,8 @@ class NantesDigitalProvenanceTests(unittest.TestCase):
         packet = (HERE / "independent_review_packets.md").read_text(encoding="utf-8")
         source = self.sources["REF-P86"]
         self.assertEqual(source["accessState"], "PARTIAL_OBJECT")
-        self.assertTrue(source["verificationNote"].startswith("2026-11-10 WAVE422"))
+        self.assertTrue(source["verificationNote"].startswith("2026-11-10 WAVE423"))
+        self.assertIn("2026-11-10 WAVE422", source["verificationNote"])
         for token in ("FILES_ACQUIRED_DIRECTLY", "THREE_FOLIOS_VISUALLY_INSPECTED",
                       "F028V_CERTIFICATION_DIRECT_READ_HOLD", "EARLY_XI_COLLATION_HOLD",
                       "ORIGINAL_GENEVAN_COLLATION_HOLD"):
