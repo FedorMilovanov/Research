@@ -6,7 +6,10 @@ These tests protect specific limits on unsupported historical inferences.
 """
 from pathlib import Path
 import json
+import re
 import unittest
+
+READER_TECHNICAL_LOCATOR_RE = re.compile(r"\bREF-[SP]\d+|CATALOG_ONLY|DDE\s+L\d{3}")
 
 HERE = Path(__file__).resolve().parent
 BOOKS = {
@@ -57,14 +60,26 @@ class ReformationAdversarialTenTwelve(unittest.TestCase):
                 for gate in ("NOT_EDITORIAL_READY", "PUBLICATION_HOLD", "RIGHTS_HOLD"):
                     self.assertIn(gate, apparatus)
 
+    def test_technical_locator_regex_matches_real_reader_leaks(self):
+        """A regex guard must actually recognize identifiers, not escaped backslashes."""
+        forbidden = ("REF-P27", "REF-S89", "REF-P24-BSB1", "CATALOG_ONLY",
+                     "DDE L423", "DDE   L926")
+        for value in forbidden:
+            with self.subTest(forbidden=value):
+                self.assertIsNotNone(READER_TECHNICAL_LOCATOR_RE.search(value))
+        historical_prose = ("22 мая 1599 года", "Шотландское исповедание 1560 года",
+                            "Королевская власть и закон")
+        for value in historical_prose:
+            with self.subTest(allowed=value):
+                self.assertIsNone(READER_TECHNICAL_LOCATOR_RE.search(value))
+
     def test_reader_research_apparatus_separation_and_no_evidence_loss(self):
         """After editing, witness locators stay in apparatus, not the reader."""
-        import re
         for number in (10, 11, 12):
             reader, apparatus = self.books[number].split("## Источниковедческий аппарат", 1)
             with self.subTest(chapter=number):
                 self.assertGreaterEqual(len(reader.split()), 1700)
-                self.assertIsNone(re.search(r"\\bREF-[SP]\\d+|CATALOG_ONLY|DDE\\s+L\\d{3}", reader))
+                self.assertIsNone(READER_TECHNICAL_LOCATOR_RE.search(reader))
                 self.assertNotIn("COPY_DATE_CONFLICT_22_29_MAY_1599", reader)
                 self.assertIn("PUBLICATION_HOLD", self.books[number])
                 self.assertIn("REF-P", apparatus)
