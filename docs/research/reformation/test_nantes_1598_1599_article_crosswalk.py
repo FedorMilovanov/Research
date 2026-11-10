@@ -124,7 +124,7 @@ class NantesVariantCrosswalkTests(unittest.TestCase):
                      "PUBLICATION_HOLD"):
             self.assertIn(hold, record["holds"])
         self.assertEqual(self.n, 204)
-        for text in ("J//943/2 = AE/II/763", "один физический",
+        for text in ("J//943/2 = AE/II/763", "одного физического архивного предмета",
                      "copie conforme", "expédition", "copie enregistrée",
                      "REF-P29 CATALOG_ONLY", "REF-P86", "REF-P27",
                      "FOLIO_IMAGES_UNREAD", "EARLY_XI_COLLATION_HOLD",
