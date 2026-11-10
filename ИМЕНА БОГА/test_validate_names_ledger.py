@@ -1858,5 +1858,42 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                 self.assertTrue(any("Q page171 colophon report cannot certify Mark" in e
                                     for e in validate_source_access(modified)))
 
+
+    def test_1954_4q72_negative_cannot_claim_photo_glyph_or_license(self) -> None:
+        for key in (
+            "directHistoricalNegativePixelsInspected",
+            "preciseF55iiPieceIdentifiedOnNegative",
+            "academic1954To2012SamePhotoOrFragmentMatchProven",
+            "manuscriptLettersIndependentlyCollated",
+            "criticalOriginalDJDPlateCollated",
+            "imageReusePermissionGranted",
+        ):
+            with self.subTest(key=key):
+                data = copy.deepcopy(self.sources)
+                row = next(r for r in data["records"]
+                           if r["id"] == "SRC-IAA-B279109-PAM40963-4Q72-1954")
+                row[key] = True
+                self.assertTrue(any("1954 4Q72 PAM M40.963 negative falsely upgraded" in err
+                                    for err in validate_source_access(data)))
+
+    def test_1954_4q72_inventory_and_author_pdf_not_false_autopsy(self) -> None:
+        for kind in ("same_negative_as_43101", "exact_fragment55ii", "langlois_photo_autopsy"):
+            with self.subTest(kind=kind):
+                data = copy.deepcopy(self.sources)
+                if kind == "langlois_photo_autopsy":
+                    row = next(r for r in data["records"]
+                               if r["id"] == "SRC-LANGLOIS-JEREMIAH-4Q72-2019")
+                    row["historicalNegativeFootnote19"]["photoPixelsReviewedInOurResearch"] = True
+                    expected = "Langlois footnote 19 original PDF text cannot be promoted"
+                else:
+                    row = next(r for r in data["records"]
+                               if r["id"] == "SRC-DSS-REED-FASC7-4Q72-PAM43101")
+                    field = ("isSameExposureAsPAM43101"
+                             if kind == "same_negative_as_43101"
+                             else "preciseF55iiObjectIdentityEstablished")
+                    row["historicalNegative1954Crosscheck"][field] = True
+                    expected = "historical mixed negative cannot be equated"
+                self.assertTrue(any(expected in err for err in validate_source_access(data)))
+
 if __name__ == "__main__":
     unittest.main()
