@@ -682,6 +682,34 @@ def validate_source_access(sources: dict) -> list[str]:
                     or a.get("modernTranscriptionRightsIndependentlyCleared") is not False
                     or a.get("photographicReusePermissionFromThisRecord") is not False):
                 errors.append(f"{prefix}: Sapir 1866 first-person modern transcription must not become ancient codex/1866 scan autopsy or fixed chronology")
+        if rid == "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137":
+            n = source.get("courierNameCrosswalkWave37", {})
+            if (not isinstance(n, dict)
+                    or n.get("zerPrintP151FullName") != "ר' יעקב זאב ברלין"
+                    or n.get("zerOriginalPrintedPageVisuallyInspected") is not True
+                    or n.get("sapirModernAuthorTranscriptionName") != "ר' יעקב זאב"
+                    or n.get("goshen1962OCRReportedName") != "Jacob Berlin"
+                    or n.get("peretzGolan2023PrintPage") != 67
+                    or n.get("peretzGolan2023PdfPageZeroBased") != 16
+                    or n.get("peretzGolan2023OriginalPageScreenshotInspected") is not True
+                    or n.get("peretzGolan2023PrintedFullName") != "ר' יעקב זאב ברלין"
+                    or n.get("supportedEditorialHistoricallyNamedCourierSame") is not True
+                    or n.get("independentCivilBirthDeathOrGenealogyProven") is not False
+                    or n.get("thirdParty2023IndependentAncientManuscript") is not False
+                    or n.get("originalManuscriptCourierSignatureInspected") is not False):
+                errors.append(f"{prefix}: Yaakov Zeev Berlin printed full name does not prove civil identity or ancient photo")
+        if rid == "SRC-GOSHEN-GOTTSTEIN-TEXTUS2-1962-JTS729":
+            x = source.get("accessAndIndependenceWave35", {})
+            if (not isinstance(x, dict)
+                    or x.get("historicalCourierNamedCrosswalkCorroboratedByZerFullHebrew") is not True
+                    or x.get("jacobBerlinAndYaakovZeevFullIdentityDemonstrated") is not False):
+                errors.append(f"{prefix}: Goshen courier editorial name match and independent civil proof remain separate")
+        if rid == "SRC-SAPIR-EVEN-SAPIR-1866-CH6-PRIMARY-AUTHOR":
+            x = source.get("authorAccessAndClaimsWave36", {})
+            if (not isinstance(x, dict)
+                    or x.get("zer1986LaterScholarlyFullCourierName") != "יעקב זאב ברלין"
+                    or x.get("literalSaphirTranscriptionIncludesSurnameBerlin") is not False):
+                errors.append(f"{prefix}: do not interpolate later surname Berlin into literal Saphir source")
         if rid == "SRC-ETCBC-ABEGG-BOWLEY-COOK-4Q72-JER33":
             if (source.get("url") != "https://theancientbible.org/4q72-p1/"
                     or source.get("fragmentLabel") != "f55ii"

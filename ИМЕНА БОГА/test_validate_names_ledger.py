@@ -2108,5 +2108,28 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                 self.assertTrue(any("Sapir 1866 first-person modern transcription" in e
                                     for e in validate_source_access(revised)))
 
+    def test_yaakov_zeev_berlin_full_name_editorial_crosswalk_not_civil_identity(self) -> None:
+        for field, wrong in (
+            ("zerPrintP151FullName", "ר' יעקב זאב"),
+            ("supportedEditorialHistoricallyNamedCourierSame", False),
+            ("independentCivilBirthDeathOrGenealogyProven", True),
+            ("peretzGolan2023OriginalPageScreenshotInspected", False),
+            ("thirdParty2023IndependentAncientManuscript", True),
+            ("originalManuscriptCourierSignatureInspected", True),
+        ):
+            with self.subTest(field=field):
+                changed = copy.deepcopy(self.sources)
+                z = next(r for r in changed["records"] if r["id"] == "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137")
+                z["courierNameCrosswalkWave37"][field] = wrong
+                self.assertTrue(any("Yaakov Zeev Berlin printed full name" in e for e in validate_source_access(changed)))
+        changed = copy.deepcopy(self.sources)
+        g = next(r for r in changed["records"] if r["id"] == "SRC-GOSHEN-GOTTSTEIN-TEXTUS2-1962-JTS729")
+        g["accessAndIndependenceWave35"]["historicalCourierNamedCrosswalkCorroboratedByZerFullHebrew"] = False
+        self.assertTrue(any("Goshen courier editorial name match" in e for e in validate_source_access(changed)))
+        changed = copy.deepcopy(self.sources)
+        s = next(r for r in changed["records"] if r["id"] == "SRC-SAPIR-EVEN-SAPIR-1866-CH6-PRIMARY-AUTHOR")
+        s["authorAccessAndClaimsWave36"]["literalSaphirTranscriptionIncludesSurnameBerlin"] = True
+        self.assertTrue(any("interpolate later surname Berlin" in e for e in validate_source_access(changed)))
+
 if __name__ == "__main__":
     unittest.main()

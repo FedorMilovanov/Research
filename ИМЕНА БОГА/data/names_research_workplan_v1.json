@@ -13,10 +13,10 @@
     "extensionRecords": 13,
     "contextAttestations": 105,
     "sourceRegisterEntries": 107,
-    "regressionTests": 295,
+    "regressionTests": 296,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_73DBBB87_EXACT_6_SUCCESS_WAVE36_SHA_PENDING",
+    "allSixCiChecks": "PRIOR_AF41487C_EXACT_6_SUCCESS_WAVE37_NEW_SHA_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "73dbbb87a005248bf51add55bf0e313d8ab7eef6"
+    "lastConfirmedAllSixChecksSha": "af41487c25a5049c40826db3ed7c6fd50cd2903d"
   },
   "allowedStatuses": [
     "DONE",
@@ -754,7 +754,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "WAVE36 2026-11-11: Ya'akov Saphir own book Even Sapir vol I Lyck 1866 chapter ו direct author text read on Project Ben-Yehuda modern transcription metadata base EDITION 1989, original 1866 498-page file identified Commons + NLI but individual pages not visually accessed (23MB exceeds web parser). Author says he entrusted Hebrew variants list to courier R. Yaakov Zeev (יעקב זאב) to ask respondent Rabbi Menashe Sathon (מנשה סתהון) who viewed Aleppo codex and marked YES/NO; author himself did not personally see codex and says cannot testify of what he did not see. Original Hebrew uses surname סתהון while Zer1986/Breuer1990 use סיתהון; preserve spelling. Project Ben-Yehuda author's own footnote17 says parts printed in Ha-Levanon. Relative 'לפני שבע שנים' and 'לפני תשע שנים' are in two author passages; DO NOT convert relative numbers using publication year because composition date may differ, or equate events. Original item now 107 independent BIBLIOGRAPHIC objects, still 0 independently checked ancient photo/exodus17:16 original letters. 295 core tests, 105 attestation and 87 claims, rights/Product HOLD and NG04 BLOCKED_SOURCE, NG05 OPEN, NG10 BLOCKED_SOURCE. Prior 73dbbb87 exact six workflow SUCCESS, Wave36 new SHA requires own 6/6. Same PR379 only; no new branch, main merge, Product or site edits.",
+  "nextAction": "WAVE37 2026-11-11: direct original Zer Leshonenu50 1986 p151 image shows full name ר' יעקב זאב ברלין; source Saphir modern transcription says ר' יעקב זאב without Berlin, Goshen1962 OCR calls historical courier Jacob Berlin. Additional 2023 Yossi Peretz/Shlomo Golan VaV Ketia article original PDF p67 (pdf index16) visually read, cites same full name. Support editorial crosswalk of historically named courier, NOT independent civil/birth/death/genealogical person identification; no original JTS signature. Preserve literal source-specific spellings, no inserted surname into Saphir text. This scholarly 2023 item corroboration recorded inside existing Zer source (no additional source record for indirect corroboration): 107 distinct published/source objects; 296 core negative tests, 105 attestation/87 claims, 0 ancient photo/critical collations and 0 peer/Product/reuse approvals. Previous af41487c 6/6 exact CI SUCCESS, new SHA pending. Continue real manuscript/1863 newspaper Ex17:16 photo, Yeivin p82/Breuer1977 pp260–261 access; NG04 BLOCKED_SOURCE and NG05 OPEN. Same Draft PR379 only, no main merge, Product/site/branch changes.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -836,8 +836,9 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-10",
-    "planStatus": "WAVE36: 1866 public domain Saphir Even Sapir authentic book identified via 498-page first-edition 2026 Commons scan and NLI catalog, BUT original 1866 pages not visually opened due 23MB PDF access; first-person chapter ו DIRECTLY read via Project Ben-Yehuda's 1989-based digitized text. Author identifies trusted courier Yaakov Zeev, respondent Menashe Sathon (his spelling סתהון), list of questions and returned yes/no replies, and expressly says he cannot personally testify to Aleppo codex details he did not see. This SOURCE is one original 1866 author account through modern edition, not original scanned page or independently collated ancient codex. Relative 'seven years' and 'nine years' cannot be transformed into absolute dated witness; preserve 1855 intro vs 1857 commission separately. 107 authentic source objects (no ancient witnesses), 295 core mutation regressions, 105 attestation, 87 provisional claims; 0 critical original manuscripts and approvals, NG04 BLOCKED_SOURCE. Parent 73dbbb87 six CI success; new SHA pending.",
+    "planStatus": "WAVE37 source name crosswalk (no source ID inflation): visually directly read Zer original print Leshonenu 1986 p151 FULL courier name ר' יעקב זאב ברלין; Saphir first-person modern 1989 transcription says ר' יעקב זאב (no surname); Goshen 1962 third-party OCR reports English Jacob Berlin; corroborated by full 2023 Peretz/Golan scholarly original PDF screenshot print p67. Historical named intermediary supported, yet no independent birth/death civil identity, JTS signature, original ancient photo. 107 sources, 296 core tests, 105 attestation, 87 claims, 0 critical ancient collations and no Product/rights/peer approval. Prior af41487c CI six SUCCESS, new Wave37 SHA pending; NG04 BLOCKED_SOURCE NG05 OPEN.",
     "workCompleted": [
+      "Wave37 fixed over-conservative courier-name blocker with 1986 Zer original p151 screenshot full Hebrew 'ר' יעקב זאב ברלין' and modern 2023 article p67 screenshot. Updated existing source IDs crosswalk, one new anti-inflation mutation test; no new separate bibliographic source ID, no claimed independent civil identity.",
       "Wave36: source genealogy advanced from Goshen 1962 and Zer1986 to Saphir's own Even Sapir 1866 first-person words in verified 1989-derived digital transcription; preserved separate courier/eyewitness, Hebrew original respondent orthography, critical first-person not-eyewitness caveat and unreconciled relative seven/nine year markers. Commons 498p public-domain facsimile catalog verified but not visually reviewed; one new provenance guard and source record.",
       "Wave35: inspected official Hebrew University Textus2 1962 metadata and author's full accessible third-party OCR, recorded Goshen's historic personal examination of JTS729, single-source dependency with Ha-Levanon1863 and his disputed Sapir handwriting conjecture versus Zer1986 anonymous copy; no original PDF or JTS image pixels inspected by us. One registered published scholarly source and one mutation gate.",
       "Wave34 original historical-source correction: visually inspected Zer 1986 printed p151 and Breuer 1990 p104, identified Menashe Sithon and 1857 Yaakov Ze'ev delivery; quarantined Moshe webpage error/inconsistency and unresolved JTS 1855 versus courier 1857. One original scholarly source plus one negative test.",
