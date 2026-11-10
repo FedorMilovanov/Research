@@ -119,11 +119,42 @@ class NantesDigitalProvenanceTests(unittest.TestCase):
             self.assertIn(token, c301)
         bge = self.sources["REF-P86"]
         self.assertEqual(bge["accessState"], "CATALOG_ONLY")
-        self.assertEqual(bge["checkedAt"], "2026-11-09")
+        self.assertEqual(bge["checkedAt"], "2026-11-10")
         self.assertIn("CorrMss 2026/448", bge["verificationNote"])
         self.assertIn("FOLIO_IMAGES_UNREAD", bge["verificationNote"])
         for hold in ("ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"):
             self.assertIn(hold, bge["holds"])
+
+    def test_wave418_custodian_date_and_folio_5_are_not_false_image_colla(self):
+        """Custodian correspondence confirms 22 May and f.5, not pixel-level reading."""
+        request = (HERE / "nantes_bge_ms_fr_413_archival_request.md").read_text(encoding="utf-8")
+        packet = (HERE / "independent_review_packets.md").read_text(encoding="utf-8")
+        for doc in (self.chapter, self.dossier, request, packet, self.plan):
+            for value in ("CUSTODIAN_DATE_22_MAY_1599_CONFIRMED",
+                          "ARTICLE_XI_CONTINUES_F5",
+                          "EARLY_XI_COLLATION_HOLD",
+                          "RIGHTS_HOLD", "PUBLICATION_HOLD"):
+                with self.subTest(value=value,doc=doc[:23]):
+                    self.assertIn(value, doc)
+        for doc in (request, self.dossier, packet, self.plan):
+            for leaf in ("f.4v", "f.5", "f.28", "FOLIO_IMAGES_UNREAD",
+                         "FOLIO_28_DIRECT_PALEOGRAPHIC_COLLATION_HOLD"):
+                with self.subTest(leaf=leaf,doc=doc[:23]):
+                    self.assertIn(leaf, doc)
+        self.assertIn("COPY_DATE_CONFLICT_22_29_MAY_1599", request)
+        self.assertIn("29", self.dossier)
+        self.assertIn("TIFF_TRANSFER_OFFERED_NOT_COLLATED", request)
+        self.assertIn("REVIEW_PACKETS_PREPARED / NOT_SENT", packet)
+        source = self.sources["REF-P86"]
+        self.assertEqual(source["checkedAt"], "2026-11-10")
+        self.assertEqual(source["accessState"], "CATALOG_ONLY")
+        self.assertIn("CUSTODIAN_DATE_22_MAY_1599_CONFIRMED", source["verificationNote"])
+        c301 = next(line for line in self.claims.splitlines() if line.startswith("| C301 |"))
+        for term in ("ARTICLE_XI_CONTINUES_F5", "FOLIO_IMAGES_UNREAD",
+                     "22 мая 1599", "COPY_DATE_CONFLICT_22_29_MAY_1599"):
+            self.assertIn(term, c301)
+        for value in ("ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"):
+            self.assertIn(value, source["holds"])
 
     def test_xi_remains_secondary_variant_and_not_publication_approved(self):
         for doc in (self.chapter, self.dossier, self.plan):
