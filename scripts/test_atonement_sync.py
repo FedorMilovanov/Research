@@ -597,6 +597,47 @@ class ActualSynchronizationTests(unittest.TestCase):
         self.assertIn("UNVERIFIED_TRANSCRIPTION", section13)
         self.assertNotIn("**B1** — остальная цифровая транскрипция", section13)
 
+    def test_reader_03_04_new_canonical_route_keeps_primary_boundaries(self):
+        import re
+        import hashlib
+        base = ROOT / "ИСКУПЛЕНИЕ/synthesis"
+        plan = (base / "01_SERIES_PLAN_AND_ARTICLE_COUNT.md").read_text(encoding="utf-8")
+        board = (base / "07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        ch2 = (base / "drafts/article02_sacrifice_covenant_passover_day_of_atonement.md").read_text(encoding="utf-8")
+        names = (
+            ("article03_why_cross_love_holiness_justice.md", "02_why-the-cross-necessity.md", "F03"),
+            ("article04_substitution_victory_reconciliation_how_cross_saves.md", "03_nature-of-atonement.md", "F04"),
+        )
+        self.assertIn("## 27. READER-W2", board)
+        manifest = {x["path"]: x for x in self.report["postReviewDrafts"]}
+        for name, historic, marker in names:
+            path = base / "drafts" / name
+            txt = path.read_text(encoding="utf-8")
+            rel = "ИСКУПЛЕНИЕ/synthesis/drafts/" + name
+            with self.subTest(chapter=name):
+                self.assertGreater(len(txt), 17500)
+                self.assertIn("ARTICLE " + marker[1:] + " / 18", txt)
+                self.assertIn("drafts/" + name, plan)
+                self.assertEqual(len(set(re.findall(marker + r"-\d{2}", txt))), 12)
+                self.assertIn(historic, txt)
+                self.assertTrue((base / "drafts" / historic).is_file())
+                for hold in ("EVIDENCE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD", "publicationEligible=false"):
+                    self.assertIn(hold, txt)
+                self.assertNotIn("publicationEligible=true", txt)
+                self.assertIn(rel, manifest)
+                self.assertFalse(manifest[rel]["publicationEligible"])
+                self.assertEqual(manifest[rel]["sha256"], hashlib.sha256(path.read_bytes()).hexdigest())
+        self.assertIn("article03_why_cross_love_holiness_justice.md", ch2)
+        reader3 = (base / "drafts" / names[0][0]).read_text(encoding="utf-8")
+        reader4 = (base / "drafts" / names[1][0]).read_text(encoding="utf-8")
+        self.assertIn(names[1][0], reader3)
+        for marker in ("Лев. 5:11–13", "Евр. 9:22", "Ансельм", "Дорт", "Гроци", "гипотетичес", "последовательн"):
+            with self.subTest(reader3_marker=marker):
+                self.assertIn(marker, reader3)
+        for marker in ("Ис. 53", "Гал. 3:13", "2 Кор. 5", "Christus Victor", "невиновн", "примирен", "ETHICAL_OBJECTION_OPEN"):
+            with self.subTest(reader4_marker=marker):
+                self.assertIn(marker, reader4)
+
     def test_reader_01_02_canonical_recast_keeps_textual_claims(self):
         import hashlib
         import re

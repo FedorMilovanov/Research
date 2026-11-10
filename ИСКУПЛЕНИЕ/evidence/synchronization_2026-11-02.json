@@ -8670,7 +8670,7 @@
   "postReviewDrafts": [
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md",
-      "sha256": "473eb2ec3f119b529ab40c22d3a6e5f8dbe0372cf91c257dfe591ef416fc9543",
+      "sha256": "aa828849b85c7d3a90f4c7d0a5e93fa05a70e250f8408c38586d1fc61b541e7f",
       "reviewedAt": "2026-11-07",
       "note": "Статья №2/18, отдельная от исторического черновика 02_why-the-cross-necessity: Пасха Исх. 12, кровь завета Исх. 24, Лев. 1–7 и мучное исключение 5:11–13, Лев. 16/17, Ис. 53 и Евр. 9–10; 21 scoped semantic claims F02-01…F02-21 из предыдущих OT/NT карточек, не самостоятельная новая рукописная колляция. EVIDENCE/LOCATOR/ARCHIVE/RIGHTS/PUBLICATION HOLD действуют; независимый reviewer не подписывал",
       "publicationEligible": false
@@ -8750,6 +8750,20 @@
       "sha256": "fde71193845ff5a3ba8d3f426316a69eeae9c2071d660674b62ee96f4f6b743a",
       "reviewedAt": "2026-11-10",
       "note": "Reader-W1: самостоятельная читательская редакция №1 на основе исторического 01. Двенадцать F01-тезисов с первичными библейскими локаторами без новой полной критической колляции. EVIDENCE_HOLD, GOTTINGEN_APPARATUS_HOLD, RIGHTS_HOLD, PUBLICATION_HOLD. NOT PEER REVIEWED.",
+      "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article03_why_cross_love_holiness_justice.md",
+      "sha256": "70e3fbaf6eefe390c95463b9e8c2e8232c9d43eae68a54c0f7e5309041bcb5b3",
+      "reviewedAt": "2026-11-10",
+      "note": "READER-W2: standalone narrative chapter 03; twelve F03 semantic claims supported by prior Research primary text cards and scoped adverse readings. Existing historic drafts preserved; no full new manuscript/critical apparatus or independently verified modern books. EVIDENCE_HOLD / HISTORICAL_SOURCE_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD; NOT PEER REVIEWED.",
+      "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article04_substitution_victory_reconciliation_how_cross_saves.md",
+      "sha256": "4a7a41e370a9f34f245d63da32d46655960f3a8e4d2e0ef24f54d62ecb94a41b",
+      "reviewedAt": "2026-11-10",
+      "note": "READER-W2: standalone narrative chapter 04; twelve F04 semantic claims supported by prior Research primary text cards and scoped adverse readings. Existing historic drafts preserved; no full new manuscript/critical apparatus or independently verified modern books. EVIDENCE_HOLD / HISTORICAL_SOURCE_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD; NOT PEER REVIEWED.",
       "publicationEligible": false
     }
   ]
