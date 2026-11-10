@@ -57,7 +57,7 @@ class FranceTrentNantesTests(unittest.TestCase):
         self.assertEqual(source["evidenceClass"], "B1")
         self.assertEqual(source["accessState"], "PARTIAL_OBJECT")
         self.assertIn("PUBLICATION_HOLD", source["holds"])
-        self.assertIn("not physically inspected original", source["verificationNote"])
+        self.assertIn("not physically inspected original", source["verificationNote"].lower())
 
     def test_reader_navigation_and_historical_overclaims_rejected(self):
         for path in ("README.md","SELF_PLAN.md","04_series_blueprint.md",
