@@ -2962,9 +2962,9 @@
         "PUBLICATION_HOLD",
         "EVIDENCE_HOLD"
       ],
-      "sourceObjectState": "Published OUP 1997 volume confirmed via Bibliothèque nationale de France, ISBN 0-19-826937-4. A third-party 21MB scan is reachable for parsed text; direct original publication contents (4QJer c pp177–201), Table 1, Table 9, paleography section, selected explanatory text read. web screenshot of this PDF failed (oversized document), so actual photographs PL XXX–XXXVI and exact printed col XXV Hebrew diplomatic layout NOT visually inspected. The digital PDF mirror is not evidence of distribution permission. On 2026-11-10 read primary original Table 8: Jer33:16 editorial paragraph marker [ɓ] is bracketed/reconstructed, not a direct visible margin mark, and Table 9: col XXV line2 (Jer33:17) ישב, line3 (Jer33:18) עלה are editor's printed orthographic details. Printed contents separately show 4Q72a = 4QJer d from p203, distinct from 4Q72 = 4QJer c p177. Visual facsimile remains unchecked.",
-      "supportedUse": "From the editor's own edition: 4Q72=4QJer c; column XXV Jer 33:16–20, column XXIV Jer33 uncertain; source is related to proto-MT but not identical in details; Table 9 notes XXV line 2 Jer33:17 and line3 Jer33:18 orthography; manuscript copy paleographically dated tentatively late first century BCE by Tov. Citation edition location pp177–201 and relevant plates XXX–XXXVI, NOT reconstruction of all text from photo. Explicit textual rather than photo-level col XXV Table8/9 and strict 4Q72 vs 4Q72a editorial sigla disambiguation.",
-      "forbiddenUse": "Claim printed plate XXX–XXXVI or the original fragment was pixel-reviewed; equate original editor's transcriptions with autopsy; assign individual fragment image B-360205's precise letters without visual matching; claim the Tov selected introductory text certifies every apparatus entry, original Jeremiah authorship, edition priority, or licenses copyrighted OUP photos.",
+      "sourceObjectState": "Published OUP 1997 volume confirmed via Bibliothèque nationale de France, ISBN 0-19-826937-4. A third-party 21MB scan is reachable for parsed text; direct original publication contents (4QJer c pp177–201), Table 1, Table 9, paleography section, selected explanatory text read. web screenshot of this PDF failed (oversized document), so actual photographs PL XXX–XXXVI and exact printed col XXV Hebrew diplomatic layout NOT visually inspected. The digital PDF mirror is not evidence of distribution permission. On 2026-11-10 read primary original Table 8: Jer33:16 editorial paragraph marker [ɓ] is bracketed/reconstructed, not a direct visible margin mark, and Table 9: col XXV line2 (Jer33:17) ישב, line3 (Jer33:18) עלה are editor's printed orthographic details. Printed contents separately show 4Q72a = 4QJer d from p203, distinct from 4Q72 = 4QJer c p177. Visual facsimile remains unchecked. WAVE20 EDITOR-PRIMARY CROSSWALK: original 1997 DJD XV 4QJer c section's photographic list directly read as extracted text from accessible third-party 21MB scan (web PDF screenshot failed due file size); later PAM43.101 listed and older PAM40.963 in parentheses. Editor says newer 43 series incorporates additional identifications. This confirms both negatives belong to the *photographic inventory* of same manuscript, NOT that they depict same frame, plate245 frag6 or editorial frg55ii, and original publication plates XXX-XXXVI/pixels have NOT been inspected. Edition image reuse rights unknown/not granted.",
+      "supportedUse": "From the editor's own edition: 4Q72=4QJer c; column XXV Jer 33:16–20, column XXIV Jer33 uncertain; source is related to proto-MT but not identical in details; Table 9 notes XXV line 2 Jer33:17 and line3 Jer33:18 orthography; manuscript copy paleographically dated tentatively late first century BCE by Tov. Citation edition location pp177–201 and relevant plates XXX–XXXVI, NOT reconstruction of all text from photo. Explicit textual rather than photo-level col XXV Table8/9 and strict 4Q72 vs 4Q72a editorial sigla disambiguation. Primary editor Tov's own section photographic inventory separately lists later PAM43.101 and earlier PAM40.963 (in parentheses), clarifying historical continuity without providing a per-fragment image identity.",
+      "forbiddenUse": "Claim printed plate XXX–XXXVI or the original fragment was pixel-reviewed; equate original editor's transcriptions with autopsy; assign individual fragment image B-360205's precise letters without visual matching; claim the Tov selected introductory text certifies every apparatus entry, original Jeremiah authorship, edition priority, or licenses copyrighted OUP photos. Equate two different historical photographic negatives or any museum-plate fragment with editorial frg55ii solely from Tov's comprehensive negative list.",
       "editionPrintedPages": "177–201",
       "plateRange": "XXX–XXXVI",
       "columnJer33": "XXV",
@@ -2981,7 +2981,22 @@
       "djdDistinctManuscriptPrintedPage": 203,
       "originalTable8Jer33_16Status": "bracketed_paragraph_division_reconstruction_NOT_autoptic_photo",
       "originalTable9ColXXVLine2": "Jer 33:17 ישב",
-      "originalTable9ColXXVLine3": "Jer 33:18 עלה"
+      "originalTable9ColXXVLine3": "Jer 33:18 עלה",
+      "originalEditorNegativeList20261110": {
+        "book": "Emanuel Tov in Qumran Cave 4.X The Prophets, DJD XV (Oxford 1997), 4QJer c section after Table 10, before Col. I reconstruction",
+        "authorOriginalPublisherTextInspected": true,
+        "sourceOfReading": "TEXT_EXTRACT_FROM_ACCESSIBLE_THIRD_PARTY_SCAN_OFFICIAL_OUP_REPRINT_PERMISSION_NOT_VERIFIED",
+        "originalPrintedPagePreciselyPinned": false,
+        "publishedPrimaryNegativeSeriesContains": "43.101",
+        "earlierNegativeInParentheses": "40.963",
+        "laterSeriesEditorialExplanation": "43 series contains more recent photographs and thus incorporates more identifications than earlier ones",
+        "museumPlate245Included": true,
+        "sameManuscript4Q72": true,
+        "sameFrameOrExactF55iiReidentified": false,
+        "originalPAMNegativePixelsInspected": false,
+        "originalDJDXVPlatesXXXtoXXXVIInspected": false,
+        "imageRedistributed": false
+      }
     },
     {
       "id": "SRC-DSS-REED-FASC7-4Q72-PAM43101",
@@ -3337,5 +3352,5 @@
       }
     }
   ],
-  "auditRevision": "NG10_WAVE20_1954_PAM40963_IAA_B279109_CROSSWALK_NO_PHOTO_GLYPH_COLLATION_20261110"
+  "auditRevision": "NG10_WAVE20_PRIMARY_TOV_1997_NEGATIVE_LIST_40_963_VS_43_101_CROSSWALK_NO_IMAGE_20261110"
 }
