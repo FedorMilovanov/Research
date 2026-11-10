@@ -1,6 +1,24 @@
 # САМОПЛАН «Реформации» — живая доска исполнения, границы поиска и сборка книги
 
-## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 416, 10.11.2026 (RF-NANTES-SECONDARY-DATE-COUNT-CONFLICT-RECONCILIATION)
+## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 417, 10.11.2026 (RF-NANTES-SEALED-PARIS-EXPEDITION-ALIAS)
+
+**Подтверждённая база:** [PR #445](https://github.com/FedorMilovanov/Research/pull/445) MERGED, `Research/main = 46fd29d4b434fb0b760adc0d75aa7aa01bd820f1`. На точном PR HEAD все 5/5 checks SUCCESS и 122/122 профильных unittest PASS. Post-merge CI на `main` также terminal 5/5 SUCCESS. Открытых Reformation PR и веток на входе нет. Книжный корпус = 14 частей / 204 источника / C1–C319, не создаём новые записи.
+
+**Научная находка:** в `REF-P29` исходное название `original manuscript/image locator` потенциально ошибочно отождествляло **подлинный скреплённый печатью экземпляр для регистрации** с **утраченным первоначальным вариантом апреля 1598**. [Архивная метаинформация от Archives nationales через Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%C3%89dit_de_Nantes._Page_24_-_Archives_Nationales_-_AE-II-763.jpg) однозначно связывает `AE/II/763` и `J//943 pièce 2`: **два шифра ОДНОГО архивного предмета**, а не независимые свидетели. [GrandPalaisRmn](https://histoire-image.org/etudes/edit-nantes-sa-revocation) описывает подписи, печать и регистрационные аннотации на объекте `AE/II/763`, но его заголовок «13 avril 1598» не удостоверяет начальный 95-статейный текст. Формальные [определения `expédition`, `copie conforme`, `copie enregistrée` у Archives nationales](https://rdf.archives-nationales.culture.gouv.fr/garance/entities/recordStates/) показывают различие юридической аутентичности предмета и текстологической идентичности редакции.
+
+**Два результата:**
+1. В существующих `source-registry-v1.json`, `03_claim_verification_register.md` (только C300) и `09_france_confession_nantes_source_study.md` аккуратно зафиксировать алиас и различие пяти понятий: исходный утраченный текст, заверенная BGE копия ранней редакции, один парижский заверенный печатью экземпляр AN (2 шифра), зарегистрированная печать и академическая цифровая транскрипция. `REF-P29` оставить `CATALOG_ONLY / COARSE_LOCATOR_ONLY / ARCHIVE_HOLD / LOCATOR_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD`. `REF-P86` фолио не прочитаны, `REF-P27` лишь `PARTIAL_OBJECT`. Никакого нового `REF`/C или изменения рукописного читательского текста.
+2. Добавить предметный `test_wave417_paris_sealed_object_alias_and_documentary_types` в существующий `test_nantes_1598_1599_article_crosswalk.py`; защитить от превращения алиаса в два доказательства, исключения удерживающих статус меток и подмены рукописного чтения фотографической метаинформацией.
+
+**Границы доказательства:** `RESEARCH_MANUSCRIPT_DRAFT / NOT_EDITORIAL_READY / ORIGINAL_GENEVAN_COLLATION_HOLD / EARLY_XI_COLLATION_HOLD / COPY_DATE_CONFLICT_22_29_MAY_1599 / FOLIO_IMAGES_UNREAD / SECONDARY_COUNT_DATE_RECONCILIATION_HOLD / INDEPENDENT_EXTERNAL_REVIEW_OPEN / THEOLOGICAL_PEER_REVIEW_OPEN / ARCHIVE_HOLD / RIGHTS_HOLD / EDITORIAL_HANDOFF_HOLD / PUBLICATION_HOLD`. `STOP_DISCOVERY` для повторных пустых запросов архивам. BGE `f.4v/f.28` и AN `J//943/2` не прочитаны вручную, рецензенты не назначены, публикации нет.
+
+**Приёмка:** один PR, пять существующих файлов только в `docs/research/reformation/`; `validate_corpus.py`, полный профильный `unittest discover`, все 5/5 terminal SUCCESS на точном HEAD до merge, отдельный post-merge CI. Не трогать чужие ветки/проекты.
+
+**Следующий приоритет:** научно-критическое сопоставление по изображению фактических юридических редакций с независимыми рукописными свидетелями, если легально будут получены конкретные страницы; независимая H-08 рецензия и разрешение репродукций остаются обязательными. Никакого утверждения, что слитая ветка `main` значит `PUBLICATION_APPROVED`.
+
+---
+
+## ИСТОРИЧЕСКИЙ СРЕЗ ВОЛНЫ 416 — не действующий паспорт (RF-NANTES-SECONDARY-DATE-COUNT-CONFLICT-RECONCILIATION)
 
 **Верифицированная база:** [PR #444](https://github.com/FedorMilovanov/Research/pull/444) MERGED, `Research/main = 1b71b69f8ba09aae3ad9d4b6c0843056a0aaf99a`; на PR HEAD обязательный CI 5/5 SUCCESS и 121/121 тестов. После слияния повторный CI также 5/5 SUCCESS. Открытых PR и веток «Реформации» на входе нет. 14 частей, 204 источника и C1–C319 неизменны. В отправленной 09.11.2026 уточняющей заявке BGE `CorrMss 2026/448` содержательного ответа на 10.11 не обнаружено; подтверждений независимых рецензий SHPF/FLTE нет.
 
