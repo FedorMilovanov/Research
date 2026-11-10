@@ -3246,9 +3246,9 @@
         "PUBLICATION_HOLD",
         "EVIDENCE_HOLD"
       ],
-      "sourceObjectState": "Official DigiVatLib manuscript catalogue directly read 2026-11-10: Vat.gr.2125, Codex Marchalianus (Q), Greek Prophets, Isaiah on physically numbered pages 171–338, catalog dating c.700. The official Vatican IIIF Presentation 2 manifest was fetched and parsed as JSON; 1718 canvases are enumerated; page171 maps to canvas p0349 and the catalog supplies each canvas' image service URL. Crucially no image bitmap of the Isaiah9 verse itself and no exact verse-to-page locus was independently inspected, so do not infer image content or exact Isaiah9 page number from this manifest. Göttingen catalogue identifies Q as Vat.gr.2125 and dates manuscript VI–VII century with scholarly caveats; Vatican dating is around 700, not a proven exact year. Manifest credits 'Images Copyright Biblioteca Apostolica Vaticana'; no public reuse permission obtained.",
-      "supportedUse": "Establish primary photo repository identity, definitive shelfmark, Göttingen siglum Q, Isaiah p171–338, real IIIF manifest/individual canvas access architecture, scholarly different dating of Q. Narrow next work to authorized image of specific Isa9:5/6 page instead of speculatively claiming a codex read.",
-      "forbiddenUse": "Claim direct photograph or Greek letterform of Isaiah9 was inspected or independently transcribed; assign an exact folio or canvas to the verse without viewing text; infer late textual additions solely from Q; claim Vatican image copyright license or Product approval.",
+      "sourceObjectState": "Official DigiVatLib manuscript catalogue directly read 2026-11-10: Vat.gr.2125, Codex Marchalianus (Q), Greek Prophets, Isaiah on physically numbered pages 171–338, catalog dating c.700. The official Vatican IIIF Presentation 2 manifest was fetched and parsed as JSON; 1718 canvases are enumerated; page171 maps to canvas p0349 and the catalog supplies each canvas' image service URL. Crucially no image bitmap of the Isaiah9 verse itself and no exact verse-to-page locus was independently inspected, so do not infer image content or exact Isaiah9 page number from this manifest. Göttingen catalogue identifies Q as Vat.gr.2125 and dates manuscript VI–VII century with scholarly caveats; Vatican dating is around 700, not a proven exact year. Manifest credits 'Images Copyright Biblioteca Apostolica Vaticana'; no public reuse permission obtained. WAVE19 QC 2026-11-10: academic original Francesco Valerio COMSt Bulletin 8/1 (2022) printed p56, §2.2.1, directly read through publisher PDF extracted text (screenshot attempt returned HTTP403): Codex Q p171 was a blank opening page of Isaiah later given a colophon by another hand. This overturns an unwarranted assumption p171 already contains Isaiah1:1, but does NOT give a new folio of Isaiah9. Browser-generated transcription asserting 74 lines of Mark1 on p171 rejected: official Greek Prophets catalog gives a one-column 29-line/page codex. No official Isaiah9 image pixels were independently inspected. Original independent apparatus and Vatican reuse licenses remain blocked.",
+      "supportedUse": "Establish primary photo repository identity, definitive shelfmark, Göttingen siglum Q, Isaiah p171–338, real IIIF manifest/individual canvas access architecture, scholarly different dating of Q. Narrow next work to authorized image of specific Isa9:5/6 page instead of speculatively claiming a codex read. Note the attributed scholarly report (Valerio 2022 printed p56) that p171 opens Isaiah with a second-hand colophon, avoiding a false p171=Isaiah1:1 mapping.",
+      "forbiddenUse": "Claim direct photograph or Greek letterform of Isaiah9 was inspected or independently transcribed; assign an exact folio or canvas to the verse without viewing text; infer late textual additions solely from Q; claim Vatican image copyright license or Product approval. Accept browser-generated Mark1:1-15 page transcription for this Prophets-only codex; assume p171 carries Isaiah1:1 or Isaiah9 text without photograph; treat Valerio's text-only codicological statement as our own image autopsy.",
       "shelfmark": "Vat.gr.2125",
       "septuagintSiglum": "Q",
       "codexName": "Codex Marchalianus",
@@ -3259,8 +3259,21 @@
       "exactIsaiah9CanvasVerified": false,
       "originalIsaiah9ImagePixelsInspected": false,
       "originalIsaiah9LetterformsCollated": false,
-      "photoReusePermissionGranted": false
+      "photoReusePermissionGranted": false,
+      "page171CodicologicalCrosscheck": {
+        "sourceTitle": "Francesco Valerio, A Short History of the Greek Colophon from the Beginnings to Modern Times, COMSt Bulletin 8/1 (2022), printed p.56, section 2.2.1",
+        "originalArticleUrl": "https://www.fdr.uni-hamburg.de/record/11575",
+        "publisherIssuePdfUrl": "https://epub.sub.uni-hamburg.de/epub/volltexte/2023/155170/pdf/comst_bulletin_8_1_2023.pdf",
+        "publisherArticleDoi": "10.25592/uhhfdm.11575",
+        "preciseReportedClaim": "p.171 is an originally blank page at start of Isaiah, bearing a colophon added by a second hand; it is not an independently authenticated Isaiah 1:1 or Isaiah 9:5 text photograph",
+        "evidenceMethod": "ORIGINAL_SCHOLARLY_2022_JOURNAL_PDF_TEXT_EXTRACTED_AT_PRINTED_P56_SCREENSHOT_403_UNAVAILABLE",
+        "page171Isaiah1TextProven": false,
+        "page171Mark1TextProven": false,
+        "bookIncludesGospelMark": false,
+        "independentAncientPhotoAutopsy": false,
+        "manuscriptTargetIsaiah9VerseCanvasVerified": false
+      }
     }
   ],
-  "auditRevision": "NG10_WAVE16_ZIEGLER_ORIGINAL_APPARATUS_ACCESS_AND_VATICAN_Q_IIIF_METADATA_20261110"
+  "auditRevision": "NG10_WAVE19_PAGE171_SECOND_HAND_COLOPHON_CATALOG_CROSSCHECK_NO_FACSIMILE_AUTOPSY_20261110"
 }
