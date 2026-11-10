@@ -108,6 +108,46 @@ class NantesVariantCrosswalkTests(unittest.TestCase):
         self.assertIn("95", c302)
         self.assertIn("92", c302)
 
+    def test_wave417_paris_sealed_object_alias_and_documentary_types(self):
+        """A second shelfmark is not a second witness or the lost first autograph."""
+        key = "REF-P29"
+        record = self.sources[key]
+        self.assertIn("J//943/2 = AE/II/763", record["title"])
+        for token in ("SINGLE-OBJECT ALIAS CONFIRMED", "J//943 pièce 2",
+                      "expédition", "REF-P86", "REF-P27",
+                      "Archives nationales", "NOT", "rights"):
+            with self.subTest(token=token):
+                self.assertIn(token.lower(), record["verificationNote"].lower())
+        self.assertEqual(record["accessState"], "CATALOG_ONLY")
+        self.assertEqual(record["locatorState"], "COARSE_LOCATOR_ONLY")
+        for hold in ("ARCHIVE_HOLD", "LOCATOR_HOLD", "RIGHTS_HOLD",
+                     "PUBLICATION_HOLD"):
+            self.assertIn(hold, record["holds"])
+        self.assertEqual(self.n, 204)
+        for text in ("J//943/2 = AE/II/763", "одного физического архивного предмета",
+                     "copie conforme", "expédition", "copie enregistrée",
+                     "REF-P29 CATALOG_ONLY", "REF-P86", "REF-P27",
+                     "FOLIO_IMAGES_UNREAD", "EARLY_XI_COLLATION_HOLD",
+                     "RIGHTS_HOLD", "PUBLICATION_HOLD"):
+            with self.subTest(lemma=text):
+                self.assertIn(text, self.dossier)
+        c300 = next(l for l in self.ledger.splitlines()
+                    if l.startswith("| C300 |"))
+        self.assertIn("J//943/2 = AE/II/763", c300)
+        self.assertIn("НЕ утраченный", c300)
+        self.assertIn("CATALOG_ONLY", c300)
+        self.assertIn("REF-P27", c300)
+        self.assertIn("REJECTED_FORMULATION", c300)
+        self.assertIn("PUBLICATION_HOLD", c300)
+        # The original claim IDs and registry IDs are unchanged.
+        self.assertEqual(
+            [int(c) for c in re.findall(r"^\| C(\d+) \|", self.ledger, re.MULTILINE)],
+            list(range(1, 320))
+        )
+        self.assertEqual(len(self.sources), 204)
+        self.assertEqual(self.sources["REF-P86"]["accessState"], "CATALOG_ONLY")
+        self.assertEqual(self.sources["REF-P27"]["accessState"], "PARTIAL_OBJECT")
+
     def test_handoff_gates_remain_open(self):
         plan = (HERE / "SELF_PLAN.md").read_text(encoding="utf-8")
         for key in ("RF-NANTES-1598-1599-ARTICLE-CROSSWALK", "STOP_DISCOVERY",
