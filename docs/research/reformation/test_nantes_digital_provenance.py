@@ -162,7 +162,8 @@ class NantesDigitalProvenanceTests(unittest.TestCase):
         packet = (HERE / "independent_review_packets.md").read_text(encoding="utf-8")
         source = self.sources["REF-P86"]
         self.assertEqual(source["accessState"], "PARTIAL_OBJECT")
-        self.assertTrue(source["verificationNote"].startswith("2026-11-10 WAVE422"))
+        self.assertTrue(source["verificationNote"].startswith("2026-11-10 WAVE423"))
+        self.assertIn("2026-11-10 WAVE422", source["verificationNote"])
         for token in ("FILES_ACQUIRED_DIRECTLY", "THREE_FOLIOS_VISUALLY_INSPECTED",
                       "F028V_CERTIFICATION_DIRECT_READ_HOLD", "EARLY_XI_COLLATION_HOLD",
                       "ORIGINAL_GENEVAN_COLLATION_HOLD"):
@@ -194,6 +195,37 @@ class NantesDigitalProvenanceTests(unittest.TestCase):
             self.assertIsNone(re.search(
                 r"https?://(?:www\.)?swisstransfer\.com/[a-z]{2}/[0-9a-f-]{36}",
                 document, flags=re.IGNORECASE))
+
+    def test_wave423_original_xi_junction_is_scoped_direct_comparison(self):
+        """Direct photo comparison establishes a bounded variant, not full collation."""
+        request = (HERE / "nantes_bge_ms_fr_413_archival_request.md").read_text(encoding="utf-8")
+        packet = (HERE / "independent_review_packets.md").read_text(encoding="utf-8")
+        source = self.sources["REF-P86"]
+        marker = "EARLY_XI_F4V_F5R_JUNCTION_DIRECTLY_OBSERVED"
+        paris = "PARIS_XI_L441_L455_ADDITIONAL_EXCEPTION_BLOCK"
+        self.assertEqual(source["accessState"], "PARTIAL_OBJECT")
+        for label, document in (("source", source["verificationNote"]),
+                                ("archive", request), ("dossier", self.dossier),
+                                ("chapter", self.chapter), ("claim", self.claims),
+                                ("packet", packet), ("self-plan", self.plan)):
+            with self.subTest(document=label):
+                self.assertIn(marker, document)
+                self.assertIn(paris, document)
+                self.assertIn("EARLY_XI_COLLATION_HOLD", document)
+                self.assertIn("RIGHTS_HOLD", document)
+                self.assertIn("PUBLICATION_HOLD", document)
+        for token in ("f.4v", "f.5r", "L441", "L455", "L456", "Voulons et entendons"):
+            with self.subTest(token=token):
+                self.assertIn(token, request)
+        for token in ("FULL_DIPLOMATIC_XI_COLLATION_HOLD",
+                      "ORIGINAL_GENEVAN_COLLATION_HOLD",
+                      "F028V_CERTIFICATION_DIRECT_READ_HOLD"):
+            self.assertIn(token, source["verificationNote"])
+            self.assertIn(token, self.plan)
+        self.assertIn("REVIEW_PACKETS_PREPARED / NOT_SENT", packet)
+        for hold in ("ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"):
+            self.assertIn(hold, source["holds"])
+        self.assertEqual(self.source_count, 204)
 
     def test_xi_remains_secondary_variant_and_not_publication_approved(self):
         for doc in (self.chapter, self.dossier, self.plan):
