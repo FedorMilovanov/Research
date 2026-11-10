@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 101,
+    "sourceRecords": 103,
     "approvedForProduct": 0
   },
   "records": [
@@ -3477,7 +3477,81 @@
         "independentAncientPhotoAutopsy": false,
         "manuscriptTargetIsaiah9VerseCanvasVerified": false
       }
+    },
+    {
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "evidenceClass": "B1",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "id": "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137",
+      "title": "Rafi Zer (ed.), מאורות נתן לר' יעקב ספיר, Leshonenu 50 (1986), 151–213, pp151/154/165 №137/191",
+      "creator": "Rafi Zer (ed.); historical material of Jacob Saphir",
+      "year": 1986,
+      "url": "https://www.daat.ac.il/daat/vl/meorotnatan/meorotnatan01.pdf",
+      "additionalUrl": "https://www.daat.ac.il/daat/vl/meorotnatan/meorotnatan02.pdf",
+      "objectType": "original_1986_printed_edition_of_anonymous_manuscript_copy_selected_pages_visually_inspected",
+      "sourceRole": "ZER_1986_ANONYMOUS_JTS_L729_COPY_ALEPPO_WORD_JOIN_REPORT_EX17_137",
+      "sourceObjectState": "Original printed images p151 introduction (JTS L729 anonymous copy, NOT Saphir autograph), p154 abbreviation list, p165 item137 (Exod17:16 two-word question, answer one-word), and p191 note137 (Yeivin p82 / Breuer pp260–261 references) directly visually inspected on Daat. Ancient Aleppo original leaf LOST; JTS manuscript, Yeivin book, and Breuer book pages NOT individually viewed. No rights granted.",
+      "supportedUse": "Attribute printed historical one-word testimony to Zer 1986 edited COPY of Saphir-associated material, not ancient Aleppo manuscript autopsy; give exact page and item number, preserve competing editorial opinions.",
+      "forbiddenUse": "Claim JTS L729 is Saphir autograph, original Aleppo Exodus folio directly read, published Yeivin/Breuer pages viewed, ancient pronunciation derived from word division, or scanned pages rights-cleared.",
+      "checkedProvenance": {
+        "jtsShelfmark": "JTS L 729",
+        "copyScribe": "ANONYMOUS_NOT_SAPHIR",
+        "introductionPrintPage": 151,
+        "itemPrintPage": 165,
+        "itemNumber": 137,
+        "notePrintPage": 191,
+        "part1ImagePageZeroBased": 14,
+        "part2ImagePageZeroBased": 8,
+        "originalPrintedPagesVisuallyViewed": true,
+        "jtsOriginalManuscriptViewed": false,
+        "saphirAutographViewed": false,
+        "aleppoExodusFolioViewed": false,
+        "yeivinPage82Viewed": false,
+        "breuerPages260261Viewed": false
+      }
+    },
+    {
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "evidenceClass": "B1",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "id": "SRC-OFER-BREUER-MASORAH-2008-EX17-16",
+      "title": "Yosef Ofer, הכרעת נוסח המקרא על פי המסורה: שיטתו של הרב ברויאר ומקורותיה, JSIJ 7 (2008), 147–161",
+      "creator": "Yosef Ofer",
+      "year": 2008,
+      "url": "https://daat.ac.il/lesson3/maamar2.asp?id=1757",
+      "objectType": "peer_reviewed_2008_scholarly_review_full_hebrew_reproduction_directly_read_original_pdf_inaccessible",
+      "sourceRole": "OFER_2008_EDITORIAL_BREUER_TWO_WORD_VERSUS_ALEPPO_ONE_WORD_ATTRIBUTED_ANALYSIS",
+      "sourceObjectState": "Directly read the complete HTML article in academic reproduction, particularly section ג. מילה אחת או שתיים Exodus17:16 and author's footnotes 22–25; Bar-Ilan University research registry independently verifies peer-reviewed JSIJ 7 2008 pp147-161. Ofer attributes Breuer printed two words against Aleppo reported one word, Eastern/Western masorah and Mikraot Gedolot HaKeter one-word editorial decision. Original 2008 JSIJ PDF not readable in tool; Yeivin p82 and Breuer pp260-261 not directly read; underlying lost Aleppo Exodus page not autoptically read.",
+      "supportedUse": "Attribute conclusions about different editorial decisions and motivations to Ofer; distinguish authentic peer-reviewed second-hand interpretation from ancient manuscript autopsy or the primary Yeivin/Breuer books.",
+      "forbiddenUse": "Treat Ofer reading as direct observation of Breuer p260-261, Yeivin p82, ancient Aleppo folio, and spoken Yahweh; say exact original 2008 publisher PDF was viewed or rights granted.",
+      "checkedProvenance": {
+        "academicArticleFullTextReproductionRead": true,
+        "universityPeerReviewedMetadataVerified": true,
+        "originalJSIJTypesetPdfViewed": false,
+        "originalBreuerPagesViewed": false,
+        "originalYeivinPageViewed": false,
+        "ancientAleppoExodusViewed": false,
+        "breuerTwoWordDecisionReported": true,
+        "aleppoOneWordReported": true,
+        "mikraotGedolotHaKeterOneWordReported": true
+      }
     }
   ],
-  "auditRevision": "NG10_WAVE24_BRILL_4Q72_READER_403_AND_DJD_MIRROR_PHOTO_PRESENCE_UNVERIFIED_20261110"
+  "auditRevision": "NG04_WAVE32_ZER_1986_AND_OFER_2008_PUBLISHED_SOURCE_GATES_20261110"
 }

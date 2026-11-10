@@ -2001,5 +2001,25 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                 self.assertTrue(any("1999 Brill synopsis cannot overwrite Tov original column" in e
                                     for e in validate_source_access(copy_data)))
 
+    def test_zer_1986_copy_cannot_become_autograph_or_ancient_photo(self) -> None:
+        for key, wrong in (("copyScribe", "Jacob Saphir"), ("saphirAutographViewed", True),
+                           ("aleppoExodusFolioViewed", True), ("yeivinPage82Viewed", True),
+                           ("breuerPages260261Viewed", True), ("itemNumber", 136)):
+            with self.subTest(key=key):
+                data = copy.deepcopy(self.sources)
+                row = next(x for x in data["records"] if x["id"] == "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137")
+                row["checkedProvenance"][key] = wrong
+                self.assertTrue(any("Zer 1986 copied manuscript" in e for e in validate_source_access(data)))
+
+    def test_ofer_2008_cannot_become_direct_breuer_yeivin_or_photo(self) -> None:
+        for key, wrong in (("originalJSIJTypesetPdfViewed", True), ("originalBreuerPagesViewed", True),
+                           ("originalYeivinPageViewed", True), ("ancientAleppoExodusViewed", True),
+                           ("breuerTwoWordDecisionReported", False)):
+            with self.subTest(key=key):
+                data = copy.deepcopy(self.sources)
+                row = next(x for x in data["records"] if x["id"] == "SRC-OFER-BREUER-MASORAH-2008-EX17-16")
+                row["checkedProvenance"][key] = wrong
+                self.assertTrue(any("Ofer 2008 secondary review" in e for e in validate_source_access(data)))
+
 if __name__ == "__main__":
     unittest.main()

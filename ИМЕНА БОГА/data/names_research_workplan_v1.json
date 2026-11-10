@@ -12,11 +12,11 @@
     "arenaRecords": 29,
     "extensionRecords": 13,
     "contextAttestations": 105,
-    "sourceRegisterEntries": 101,
-    "regressionTests": 289,
+    "sourceRegisterEntries": 103,
+    "regressionTests": 291,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_41788E9C_EXACT_6_SUCCESS_WAVE31_NEW_SHA_PENDING",
+    "allSixCiChecks": "PRIOR_AE102216_EXACT_6_SUCCESS_WAVE32_SHA_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "41788e9cb06cfea712ac53ead252b942ef7a9d22"
+    "lastConfirmedAllSixChecksSha": "ae10221601bb062ef536b7dd245e2e51db0f21b0"
   },
   "allowedStatuses": [
     "DONE",
@@ -328,7 +328,9 @@
         "Publishers verified BHQ Exodus Peter Schwagmeier IN_PREPARATION not available Nov 2026; BHS standard 1997 with critical apparatus EXISTS but exact Exodus3/6 pages not read https://www.die-bibel.de/en/home/current-projects/biblia-hebraica-quinta-bhq",
         "Göttingen Exodus Wevers Quast 1991 critical edition exists, NETS UPenn PDF English translation based on it NOT its critical apparatus https://septuaginta.uni-goettingen.de/publications/septuaginta/",
         "23_YIREH_NISSI_ANSWER_PLACE_MOUNTAIN_EDITION_CRUX_20261107.md § Волна 30: secondary Aleppo word-division note; original Exodus17:16 codex folio missing per official Yad Ben-Zvi",
-        "23_YIREH_NISSI_ANSWER_PLACE_MOUNTAIN_EDITION_CRUX_20261107.md § Wave31: original printed Leshonenu 50 (1986) p165 #137 and p191 note #137 image checked; prior Aleppo codex target manuscript missing"
+        "23_YIREH_NISSI_ANSWER_PLACE_MOUNTAIN_EDITION_CRUX_20261107.md § Wave31: original printed Leshonenu 50 (1986) p165 #137 and p191 note #137 image checked; prior Aleppo codex target manuscript missing",
+        "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137",
+        "SRC-OFER-BREUER-MASORAH-2008-EX17-16"
       ],
       "verification": "NOT_APPLICABLE_UNTIL_DONE",
       "closureAt": null,
@@ -744,7 +746,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "WAVE31 2026-11-10: direct screenshots of Rafi Zer edition of Jacob Saphir Maorot Natan in Leshonenu vol50 1986, print p165 item137 (Exod17:16 כס יה, שתי מלות vs חדא מלה) and print p191 note 137 (other witnesses two words, references Yeivin p82 and Breuer pp260-261), PDFs Daat meorotnatan01.pdf page index14 and meorotnatan02.pdf index8. This resolves the previous secondary editorial note's published source route but NOT ancient codex photo, Saphir handwritten autograph, or critical MT/BHS/Göttingen apparatus. Official Aleppo codex target folio missing; BHQ Exodus remains in preparation. Next: check original Yeivin 82, Breuer 260-261 and Saphir JTS manuscript if lawfully accessible. NG04 BLOCKED_SOURCE, NG05 OPEN, NG10 BLOCKED_SOURCE, criticalCollations0, scholarly/Product/rights approvals0, sources101, attestation105, claims87, core tests289; no source/test inflation. Prior exact 41788e9c all six CI SUCCESS, new Wave31 SHA pending own CI. Research-only draft PR379, no branch/main/product/site changes.",
+  "nextAction": "WAVE32 original published scholarly source upgrade: source registry has 103 real sources, two new objects published Zer 1986 Maorot Natan pp151,165 item137,191 and Ofer peer-reviewed JSIJ7 2008 pp147-161 direct article text. Provenance is explicit: JTS L729 is anonymous copy not Saphir autograph; Ofer interprets Breuer editorial two-word choice in opposition to Aleppo one-word and notes Mikraot Gedolot HaKeter one-word. Original Yeivin book p82 and Breuer book pp260-261 not read (NLI listings restricted), original JTS L729 manuscript not viewed, Aleppo Exodus17:16 original folio lost. Ofer 2002 composite-note general article may inform but does not substitute for a locused witness. 291 core tests (2 new), 103 genuine source objects, 105 attestation /87 claims unchanged, 0 critical manuscript-photo collations, 0 scholarly/Product/rights approvals. NG04 BLOCKED_SOURCE, NG05 OPEN, NG10 BLOCKED_SOURCE. Parent ae102216 exact six CI success, new SHA pending own 6/6 terminal checks. No merger/branch/product/site changes.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -826,8 +828,9 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-10",
-    "planStatus": "WAVE31 authentic 1986 Rafi Zer scholarly printed edition: directly visually inspected Maorot Natan Leshonenu50 print p165 item137 and print p191 note137. Secondary Aleppo single-word report now traced to Saphir text with editor witness comparison; Saphir autograph and actual missing Aleppo Exodus folio still NOT inspected. 101 sources / 289 tests / 0 critical ancient photo collations, NG04 BLOCKED_SOURCE; prior 41788e9c exact 6/6 successful, Wave31 HEAD CI pending.",
+    "planStatus": "WAVE32 two real published academic research objects (Zer 1986 original selected printed scans and Ofer 2008 peer-reviewed full HTML) admitted to 103-source register with 2 anti-overclaim regressions: 291 core tests. JTS L729 explicitly anonymous copy NOT Saphir autograph; Yeivin p82 and Breuer pp260-261 original inaccessible, no ancient manuscript autopsy or scientific/publication approval; NG04 BLOCKED_SOURCE. Prior ae102216 CI exact 6 success; new SHA pending.",
     "workCompleted": [
+      "Wave32: registered original Zer 1986 and Ofer 2008 with 2 adversarial scope tests, fixed JTS L729 as anonymous copied manuscript and separated multiple editorial conclusions from actually read Yeivin/Breuer pages.",
       "Wave31: directly inspected two Rafi Zer 1986 original printed edition page images, item137 Exod17:16 p165 and note137 p191, preserved distinction printed historical testimony vs missing Aleppo manuscript/untouched handwritten source. Cross-check targets Yeivin82 and Breuer260-261.",
       "Wave30: scoped note of secondary Aleppo single-word Exodus17:16 report contrasted with extant MT two-word printed text and official Yad Ben-Zvi loss evidence; BHS/Göttingen apparatus uninspected, BHQ Exodus not published. No scholarly status upgrade.",
       "Wave25 independent visually rendered source recheck: Brill 1999 Study Edition print p272 (PDF index 296) says Col XXIV Jer33:16-20, while Tov 1997 DJD XV editorial text lists Col XXV. A later external audit erroneously read the secondary edition as XXV; rejected without mutating the source register, critical collation or anti-mutation truth fixture.",

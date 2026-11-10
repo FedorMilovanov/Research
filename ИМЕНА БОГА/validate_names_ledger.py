@@ -373,6 +373,8 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-SBLGNT-NT-SABAOTH": "GREEK_NT_SEMITIC_TRANSLITERATION_WITNESS",
     "SRC-SUCHARD-ELOHIM-2025": "ATTRIBUTED_SECONDARY_SEMITIC_MORPHOLOGY_HYPOTHESIS",
     "SRC-CAMBRIDGE-GOD-PRONOUNS": "ATTRIBUTED_SECONDARY_GRAMMAR_AND_THEOLOGY",
+    "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137": "ZER_1986_ANONYMOUS_JTS_L729_COPY_ALEPPO_WORD_JOIN_REPORT_EX17_137",
+    "SRC-OFER-BREUER-MASORAH-2008-EX17-16": "OFER_2008_EDITORIAL_BREUER_TWO_WORD_VERSUS_ALEPPO_ONE_WORD_ATTRIBUTED_ANALYSIS",
     "SRC-RAHLFS-EXODUS17": "PUBLISHER_LXX_EXODUS_TRANSLATIONAL_SURFACE",
     "SRC-NET-EXODUS17": "ATTRIBUTED_TRANSLATION_TEXTUAL_HYPOTHESES",
     "SRC-NET-GENESIS22": "ATTRIBUTED_TRANSLATION_GRAMMAR_ALTERNATIVES",
@@ -522,6 +524,30 @@ def validate_source_access(sources: dict) -> list[str]:
             errors.append(f"{prefix}: unreviewed source id {rid}")
         if source.get("sourceRole") != EXPECTED_SOURCE_ROLES.get(rid):
             errors.append(f"{prefix}: source relevance/role changed without research review")
+        if rid == "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137":
+            w = source.get("checkedProvenance", {})
+            if (source.get("rightsState") != "PERMISSION_REQUIRED" or source.get("publicationState") != "BLOCKED"
+                    or source.get("criticalEditionCollated") is not False or not isinstance(w, dict)
+                    or w.get("jtsShelfmark") != "JTS L 729" or w.get("copyScribe") != "ANONYMOUS_NOT_SAPHIR"
+                    or w.get("itemPrintPage") != 165 or w.get("itemNumber") != 137 or w.get("notePrintPage") != 191
+                    or w.get("part1ImagePageZeroBased") != 14 or w.get("part2ImagePageZeroBased") != 8
+                    or w.get("originalPrintedPagesVisuallyViewed") is not True
+                    or w.get("jtsOriginalManuscriptViewed") is not False or w.get("saphirAutographViewed") is not False
+                    or w.get("aleppoExodusFolioViewed") is not False or w.get("yeivinPage82Viewed") is not False
+                    or w.get("breuerPages260261Viewed") is not False):
+                errors.append(f"{prefix}: Zer 1986 copied manuscript wrongly promoted to original Aleppo/Saphir/Yeivin/Breuer access")
+        if rid == "SRC-OFER-BREUER-MASORAH-2008-EX17-16":
+            w = source.get("checkedProvenance", {})
+            if (source.get("rightsState") != "PERMISSION_REQUIRED" or source.get("publicationState") != "BLOCKED"
+                    or source.get("criticalEditionCollated") is not False or not isinstance(w, dict)
+                    or w.get("academicArticleFullTextReproductionRead") is not True
+                    or w.get("originalJSIJTypesetPdfViewed") is not False
+                    or w.get("originalBreuerPagesViewed") is not False or w.get("originalYeivinPageViewed") is not False
+                    or w.get("ancientAleppoExodusViewed") is not False
+                    or w.get("breuerTwoWordDecisionReported") is not True
+                    or w.get("aleppoOneWordReported") is not True
+                    or w.get("mikraotGedolotHaKeterOneWordReported") is not True):
+                errors.append(f"{prefix}: Ofer 2008 secondary review wrongly promoted to ancient/critical primary source")
         if rid == "SRC-ETCBC-ABEGG-BOWLEY-COOK-4Q72-JER33":
             if (source.get("url") != "https://theancientbible.org/4q72-p1/"
                     or source.get("fragmentLabel") != "f55ii"
