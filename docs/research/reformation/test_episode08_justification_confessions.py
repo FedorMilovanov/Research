@@ -284,14 +284,14 @@ class JustificationBookTests(unittest.TestCase):
             (D / "source-registry-v1.json").read_text(encoding="utf-8")
         )
         rows = {row["id"]: row for row in registry["sources"]}
-        self.assertEqual(registry["sourceCount"], 215)
-        self.assertEqual(len(rows), 215)
+        self.assertEqual(registry["sourceCount"], 216)
+        self.assertEqual(len(rows), 216)
         a = rows["REF-P14"]
         self.assertEqual(a["documentYear"], 1530)
         self.assertEqual(a["accessState"], "PARTIAL_OBJECT")
         self.assertEqual(a["rightsState"], "RIGHTS_UNKNOWN")
         self.assertIn("Bridwell", a["verificationNote"])
-        self.assertIn("NOT inspected 1531 leaf images", a["verificationNote"])
+        self.assertIn("REF-P92", a["verificationNote"])
         self.assertIn("PUBLICATION_HOLD", a["holds"])
         self.assertIn("RIGHTS_HOLD", a["holds"])
         t = rows["REF-P20"]
@@ -311,7 +311,7 @@ class JustificationBookTests(unittest.TestCase):
         plan = (D / "SELF_PLAN.md").read_text(encoding="utf-8")
         current = plan.split("\n---\n", 1)[0]
         self.assertIn("волна 445", plan)  # historical snapshot retained
-        self.assertIn("214 PUBLICATION_HOLD", current)
+        self.assertIn("214 PUBLICATION_HOLD", plan)
         self.assertIn("INDEPENDENT_EXTERNAL_REVIEW_OPEN", current)
         self.assertIn("THEOLOGICAL_PEER_REVIEW_OPEN", current)
 
@@ -349,7 +349,7 @@ class JustificationBookTests(unittest.TestCase):
             (D / "source-registry-v1.json").read_text(encoding="utf-8")
         )
         rows = {row["id"]: row for row in registry["sources"]}
-        self.assertEqual(len(rows), 215)
+        self.assertEqual(len(rows), 216)
         self.assertEqual(registry["sourceCount"], len(rows))
         p91 = rows["REF-P91"]
         self.assertEqual(p91["documentYear"], 1531)
@@ -400,9 +400,122 @@ class JustificationBookTests(unittest.TestCase):
                       p91["verificationNote"])
         plan = (D / "SELF_PLAN.md").read_text(encoding="utf-8")
         current = plan.split("\n---\n", 1)[0]
-        for token in ("волна 446", "215 REF", "215 PUBLICATION_HOLD",
-                      "INDEPENDENT_EXTERNAL_REVIEW_OPEN",
+        # Preserve completed wave 446 as history, while current counts advance.
+        for token in ("волна 446", "215 REF", "215 PUBLICATION_HOLD"):
+            self.assertIn(token, plan)
+        for token in ("INDEPENDENT_EXTERNAL_REVIEW_OPEN",
                       "THEOLOGICAL_PEER_REVIEW_OPEN"):
+            self.assertIn(token, current)
+
+    def test_wave447_1531_original_augsburg_latin_folios_and_status_guards(self):
+        """The original Latin 1531 Confession has bounded image evidence.
+        It is neither the 1530 imperial manuscript nor the separate Apologia.
+        Publication/rights/archive gates must remain closed.
+        """
+        chapter = E8.read_text(encoding="utf-8")
+        reader, apparatus = chapter.split(
+            "## Источниковедческий аппарат — вне основного повествования", 1
+        )
+        for token in (
+            "латинской печати 1531 года",
+            "Бог вменяет веру в праведность",
+            "о спасении детей без крещения",
+            "полемики исповедания",
+        ):
+            with self.subTest(reader=token):
+                self.assertIn(token.lower(), reader.lower())
+        self.assertNotIn("REF-P92", reader)
+        for token in (
+            "REF-P92", "bsb00103368", "VD16 C4737",
+            "4 H.ref. 205 b", "сканы именно исповедания",
+            "scan 14", "scan 15", "scan 16", "scan 17",
+            "scan 22", "scan 24", "scan 25",
+            "Hanc fidem imputat Deus pro iusticia",
+            "sine verbo externo",
+            "affirmant pueros sine baptismo salvos fieri",
+            "Public Domain Mark 1.0", "RIGHTS_HOLD",
+            "ARCHIVE_HOLD", "PUBLICATION_HOLD",
+            "независимая", "не коллированы",
+        ):
+            with self.subTest(apparatus=token):
+                self.assertIn(token, apparatus)
+
+        sources = json.loads(
+            (D / "source-registry-v1.json").read_text(encoding="utf-8")
+        )
+        rows = {x["id"]: x for x in sources["sources"]}
+        self.assertEqual(sources["sourceCount"], 216)
+        self.assertEqual(len(rows), 216)
+        self.assertEqual(sum("PUBLICATION_HOLD" in x["holds"]
+                             for x in rows.values()), 216)
+        self.assertEqual(sum("RIGHTS_HOLD" in x["holds"]
+                             for x in rows.values()), 195)
+        self.assertEqual(sum("ARCHIVE_HOLD" in x["holds"]
+                             for x in rows.values()), 161)
+        p92 = rows["REF-P92"]
+        self.assertEqual(p92["documentYear"], 1531)
+        self.assertEqual(p92["evidenceClass"], "A1")
+        self.assertEqual(p92["accessState"], "PARTIAL_OBJECT")
+        self.assertEqual(p92["locatorState"], "EXACT_LOCATOR_VERIFIED")
+        self.assertEqual(p92["rightsState"], "RIGHTS_UNKNOWN")
+        self.assertEqual(p92["publicationState"], "REFERENCE")
+        self.assertEqual(set(p92["holds"]),
+                         {"ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"})
+        for token in (
+            "VD16 C4737", "bsb00103368", "347 canvases",
+            "ORIGINAL", "SCAN14", "SCAN15", "SCAN16",
+            "SCAN17", "SCAN22", "SCAN24", "SCAN25",
+            "e4e8489b90aefb387918553b6fefaccb08c3b743f04309b827eab287dbc9b7a3",
+            "publicdomain/mark/1.0/",
+            "REF-P91", "not the submitted imperial manuscript",
+        ):
+            with self.subTest(witness=token):
+                self.assertIn(token, p92["verificationNote"])
+        self.assertEqual(rows["REF-P14"]["documentYear"], 1530)
+        self.assertIn("REF-P92", rows["REF-P14"]["verificationNote"])
+        self.assertIn("APOLOGIA", rows["REF-P91"]["verificationNote"])
+        self.assertIn("VD16 C4734", rows["REF-P91"]["verificationNote"])
+        self.assertNotEqual(p92["url"], rows["REF-P91"]["url"])
+
+        ledger = (D / "03_claim_verification_register.md").read_text(
+            encoding="utf-8").splitlines()
+        for cid in (269, 271, 273):
+            claim = next(x for x in ledger if x.startswith(f"| C{cid} |"))
+            self.assertIn("REF-P92", claim)
+            self.assertIn("REJECTED_FORMULATION", claim)
+        manifest = json.loads(
+            (D / "acquisition-manifest-v1.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(manifest["sourceCount"], 18)
+        self.assertEqual(len(manifest["sourceRecords"]), 18)
+        self.assertNotIn("REF-P92", [x["id"] for x in manifest["sourceRecords"]])
+        self.assertEqual(manifest["fileBytesInGit"], 0)
+
+        sweep = (D / "HOLD_SOURCE_SWEEP_2026-11-11.md").read_text(
+            encoding="utf-8")
+        self.assertIn("### 447.1.", sweep)
+        self.assertIn("216 REF / 319 C / 18 acquisition receipts", sweep)
+        self.assertIn("PUBLICATION_HOLD 216", sweep)
+        self.assertIn("STOP_DISCOVERY", sweep)
+        for label, frames in {
+            "IV": ("14", "15"),
+            "V": ("15",),
+            "VI": ("15", "16"),
+            "IX": ("16", "17"),
+            "XX": ("22", "24", "25"),
+        }.items():
+            line = next(x for x in sweep.splitlines()
+                        if x.startswith(f"| **{label}** |"))
+            for frame in frames:
+                self.assertIn(f"bsb00103368_{int(frame):05d}", line)
+        plan = (D / "SELF_PLAN.md").read_text(encoding="utf-8")
+        current = plan.split("\n---\n", 1)[0]
+        for token in (
+            "волна 447", "216 REF", "216 PUBLICATION_HOLD",
+            "STOP_DISCOVERY", "INDEPENDENT_EXTERNAL_REVIEW_OPEN",
+            "THEOLOGICAL_PEER_REVIEW_OPEN", "NOT_EDITORIAL_READY",
+            "ORIGINAL_1530_MANUSCRIPT_HOLD",
+        ):
             self.assertIn(token, current)
 
     def test_registry_and_book_navigation(self):
