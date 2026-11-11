@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "planId": "NAMES_OF_GOD_MASTER_WORKPLAN",
   "createdAt": "2026-11-07",
-  "updatedAt": "2026-11-10",
+  "updatedAt": "2026-11-11",
   "statusOwner": "ИМЕНА БОГА/data/names_research_workplan_v1.json",
   "humanGuide": "ИМЕНА БОГА/11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md",
   "mediaResearch": "ИМЕНА БОГА/12_TMS_BARRICK_CHOU_SOURCE_REVIEW.md",
@@ -16,7 +16,7 @@
     "regressionTests": 308,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_88700AE19619B1E248FE80DE85E580AC02D027FC_EXACT_6_SUCCESS_NEW_WAVE50_SHA_PENDING",
+    "allSixCiChecks": "PRIOR_91D074C0C51031072FF25743EB1235A465B2910A_EXACT_6_SUCCESS_NEW_WAVE51_53_SHA_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,11 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "88700ae19619b1e248fe80de85e580ac02d027fc"
+    "lastConfirmedAllSixChecksSha": "91d074c0c51031072ff25743eb1235a465b2910a",
+    "readerChapterCount": 3,
+    "readerSectionCrosswalkCount": 32,
+    "readerCrosswalkLinkedDistinctClaims": 25,
+    "readerCrosswalkIndependentAdversarialTests": 18
   },
   "allowedStatuses": [
     "DONE",
@@ -761,7 +765,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "WAVE50 2026-11-11: 115 research sources/308 core regression tests/105 attestations/87 provisional claims. Historiography of Exodus17:16 now includes original historical text (modern digital transcription) Pesachim117a one-word vs two-word, Rashbatz Tashbetz I177 own OTHER scroll and conflicting 5/6 Masoretic lists, Arukh HaShulchan YD275:24 normative two-word. 19C JTS FL28558023 copy and 1863 newspaper one-word historical reports remain distinct from medieval opinion. Original print facsimiles for Rashbatz/Arukh not read; Yeivin 1968/69 p82, Breuer1976/77 pp260-261 n1, full Ofer2002 critical context, BHS/Göttingen actual apparatus still need original acquisition; no ancient Aleppo Exodus photo and rights/peer/Product clearance. NG-04 BLOCKED_SOURCE, NG-14 IN_PROGRESS.",
+  "nextAction": "After Wave51–53 local editorial alignment: verify exact-head GitHub CI for new reader checks; 3 chapters /32 headings/25 existing research-held claims and 18 new regressions, CH03 reader body 3109 words plus full Deir Alla scholarly appendix; no inferred evidence beyond current 115 sources/87 claims. Next close specific scholarly/critical source acquisition gaps (NG04/10/11/12) and independently verify current reader chapter scripture references, Gill/Berkhof/Bavinck print editions, Naomi/Eliphaz sources, Shaddai etymology before any external signoff. Need external genuine peer review and Product/rights clearance; do not auto-close NG13 or NG15.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -843,8 +847,11 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-11",
-    "planStatus": "WAVE50 2026-11-11: exact prior 88700ae1 CI 6/6 SUCCESS, 698/698 tests. Direct modern critical-text DIGITAL READ (not historical facsimile) of three independent reception works on Exodus17:16 כס יה: Bavli Pesachim117a transmits R Yohanan/Rav one-word vs Rabbah only merchavyah one-word; Tashbetz Part I responsum177 Rashbatz directly reports a different Torah scroll with כס and יה on two LINES, two incompatible Masoretic enumerations (six vs five two-letter words), and samekh sheva NOT conclusive; Arukh HaShulchan Yoreh Deah275:24 explicitly rules two words but advises writing on SAME LINE, citing five-word Masorah and acknowledging Talmud disagreement. Only modern edited web transcriptions were read for all 3; older original Tashbetz1738/1741 and Arukh 1891 actual relevant print pages NOT visually inspected. No one of these is a firsthand observation of Aleppo Codex's lost Exodus17:16 leaf. 115 sources / 308 core tests / 105 attestations / 87 provisional claims; external Yeivin82/Breuer260-261/Ofer2002 remaining; NG04 BLOCKED_SOURCE, NG14 IN_PROGRESS; rights/scholarly/Product HOLD.",
+    "planStatus": "Wave51/52/53 — previous exact 91d074c0 GitHub workflows 6/6 SUCCESS. CH-PILOT-03 reader narrative reduced 5451 -> 3109 whitespace tokens by extracting lengthy Deir Alla science into preserved internal appendix, one actual CC0 original museum photograph remains in narrative; no research text or citations deleted. New source/claim section crosswalk for all 3 reader pilots: 32 headings, 25 distinct existing research-held CLM IDs, 15 unique directly traceable SRC IDs including supplemental artifact refs, 18 adversarial tests in CI. Known incomplete mapping for Gill/Berkhof/Bavinck, Ruth1/Job5/42, and Shaddai etymology/Deir Alla explicitly flagged; no fabricated link or scientific approval. 115 source records, 105 attestations, 87 Research HOLD claims, 75 typed relations, 308 original core mutation tests unchanged; new reader suite +18. External critical manuscripts, independent peer reviews, rights, Product remain 0. NG04 blocked and NG14 in progress, no task state falsely closed. New exact head CI pending.",
     "workCompleted": [
+      "Wave53: synchronize updatedAt, current chapter size/status, chapter evidence map, 18 reader mutation tests and release boundaries across machine editorial execution. Preserve statuses NG04 BLOCKED_SOURCE and NG13/15 BLOCKED_DEPENDENCY, 0 external scholarly reviewer approvals and 0 Product/rights release.",
+      "Wave52: Three CH-PILOT readers: 32 narrative headings explicitly tied to 25 existing CLM IDs and their exact stored SRC IDs where appropriate, missing proof scopes labelled without inventing source/claim. New validation and 18 negative tests in same original research workflow; old 308 mutation tests unchanged.",
+      "Wave51: CH03 main reader section Deir Alla condensed from ≈2651 to 309 words, all long-form evidence plus ~30 citations and two illustration blocks retained in existing editorial appendix. Reader body measured ≈3109 words, photo of actual ancient fragments still attributed CC0. No scientific claims silently removed or promoted.",
       "Wave50: independently read full original authored/ancient text in DIGITAL EDITED Hebrew for three independent historical reception strands: Bavli Pesachim117a, Rashbatz Tashbetz I177, and Arukh HaShulchan YD275:24; built explicit contradictory one-versus-two-word reception matrix, distinguished a medieval observed OTHER Torah scroll from lost Aleppo leaf, tracked manuscript Masorah 5-vs-6 and Talmud Rabbah/Rava cited spellings; 3 real historical source IDs and 3 negative mutation tests.",
       "Wave49: original authored 2003 Ofer Hebrew publisher HTML and exact notes 23/24/26 checked as Yeivin p82 secondary index for Psalm90 and Isaiah54 only; distinguish two Penkower-annotated NLI archival physical books from original published editions and their digital availability. Source ID + fail-closed test; zero premature original-page read claims.",
       "Wave48: narrowed firsthand JTS L729 selected Ex17:16 marginal reading to independently legible words, marked remaining palaeographic glyphs and editorial comparisons unresolved; verified peer-reviewed Ofer2002 bibliographic/abstract general composite-word distinction (not Ex17-specific); introduced source and negative regression.",
@@ -1054,10 +1061,10 @@
         "kind": "READER_MANUSCRIPT_PILOT",
         "target": "El, Elohim and Shaddai with primary syntax, speakers, referents and unsettled etymology",
         "acceptance": "One continuous Russian reader chapter distinguishing Elohim morphological number and referents, El Elyon within Gen14 narrative, direct self-declaration El Shaddai and Isaac blessing, disputed etymology with bounded competing academic explanation and separate scholarly-rights HOLD appendix.",
-        "status": "RESEARCH_MANUSCRIPT_REVISED_INTERNAL_ADVERSARIAL_PASS_2_DONE_EXTERNAL_SCHOLARLY_REVIEW_PENDING_NOT_EDITORIAL_READY",
+        "status": "RESEARCH_MANUSCRIPT_REVISED_INTERNAL_ADVERSARIAL_PASS_2_EDITORIAL_CONDENSATION_W51_AND_SECTION_CROSSWALK_W52_DONE_EXTERNAL_SCHOLARLY_REVIEW_PENDING_NOT_EDITORIAL_READY",
         "file": "ИМЕНА БОГА/reader/CH-PILOT-03_EL_ELOHIM_SHADDAI.md",
-        "verification": "CONNECTED_READER_MANUSCRIPT_~2800_WORDS_INCLUDING_APPARATUS; DIGITALLY_CHECKED_MT_GEN1_14_17_28_35_EX6_20_PS91_DEUT32_IS43_AND_DAN2; ONE_INTERNAL_PASS_CORRECTED_CARGILL_ABSTRACT_SCOPE_AND_PSALM_91_90_NUMBERING; FULL_HTML_SUCHARD_2025_RESEARCH_HYPOTHESIS; NO_CRITICAL_MSS_OR_RIGHTS_OR_EXTERNAL_REVIEW; SECOND_INTERNAL_REVIEW_MT_RUTH1_20_21_NAOMI_SHADDAI_VS_YHWH_JOB5_17_ELIPHAZ_AND_JOB42_7_NEGATIVE_SPEAKER_CONTROL; EX20_2_MT_EQUALS_SINODAL20_2_3_VERIFIED",
-        "nextReview": "External independent Hebrew/Aramaic philological/theological reviewer, using manuscript sources and specific claim-locus notes; 2 internal assistant passes are not independent peer review. NG12 etymology and rights remain HOLD."
+        "verification": "Research reader chapter ≈3109 whitespace-separated words + research/editorial apparatus; Wave51 condensed Deir Alla from 2651-word embedded main excursion to 309-word bounded narrative, preserving former complete research text and two alternative images in internal scholarly appendix, keeping original CC0 museum photo in reading. Wave52 adds section-claim-source crosswalk for 32 headings and 25 distinct claim IDs with 18 negative regressions. Existing two internal adversarial Hebrew-source passes remain exactly two, not an external review; no independent scientific, rights or Product acceptance.",
+        "nextReview": "Independent external Hebrew/Aramaic philology + theology and editions/rights; section-level claims trace explicitly has open Naomi/Job and Shaddai etymology questions, and does not grant publication."
       }
     ],
     "nextChapterCandidates": [],
@@ -1101,10 +1108,10 @@
         "kind": "READER_MANUSCRIPT_PILOT",
         "target": "El, Elohim and Shaddai with primary syntax, speakers, referents and unsettled etymology",
         "acceptance": "One continuous Russian reader chapter distinguishing Elohim morphological number and referents, El Elyon within Gen14 narrative, direct self-declaration El Shaddai and Isaac blessing, disputed etymology with bounded competing academic explanation and separate scholarly-rights HOLD appendix.",
-        "status": "RESEARCH_MANUSCRIPT_REVISED_INTERNAL_ADVERSARIAL_PASS_2_DONE_EXTERNAL_SCHOLARLY_REVIEW_PENDING_NOT_EDITORIAL_READY",
+        "status": "RESEARCH_MANUSCRIPT_REVISED_INTERNAL_ADVERSARIAL_PASS_2_EDITORIAL_CONDENSATION_W51_AND_SECTION_CROSSWALK_W52_DONE_EXTERNAL_SCHOLARLY_REVIEW_PENDING_NOT_EDITORIAL_READY",
         "file": "ИМЕНА БОГА/reader/CH-PILOT-03_EL_ELOHIM_SHADDAI.md",
-        "verification": "CONNECTED_READER_MANUSCRIPT_~2800_WORDS_INCLUDING_APPARATUS; DIGITALLY_CHECKED_MT_GEN1_14_17_28_35_EX6_20_PS91_DEUT32_IS43_AND_DAN2; ONE_INTERNAL_PASS_CORRECTED_CARGILL_ABSTRACT_SCOPE_AND_PSALM_91_90_NUMBERING; FULL_HTML_SUCHARD_2025_RESEARCH_HYPOTHESIS; NO_CRITICAL_MSS_OR_RIGHTS_OR_EXTERNAL_REVIEW; SECOND_INTERNAL_REVIEW_MT_RUTH1_20_21_NAOMI_SHADDAI_VS_YHWH_JOB5_17_ELIPHAZ_AND_JOB42_7_NEGATIVE_SPEAKER_CONTROL; EX20_2_MT_EQUALS_SINODAL20_2_3_VERIFIED",
-        "nextReview": "External independent Hebrew/Aramaic philological/theological reviewer, using manuscript sources and specific claim-locus notes; 2 internal assistant passes are not independent peer review. NG12 etymology and rights remain HOLD."
+        "verification": "Research reader chapter ≈3109 whitespace-separated words + research/editorial apparatus; Wave51 condensed Deir Alla from 2651-word embedded main excursion to 309-word bounded narrative, preserving former complete research text and two alternative images in internal scholarly appendix, keeping original CC0 museum photo in reading. Wave52 adds section-claim-source crosswalk for 32 headings and 25 distinct claim IDs with 18 negative regressions. Existing two internal adversarial Hebrew-source passes remain exactly two, not an external review; no independent scientific, rights or Product acceptance.",
+        "nextReview": "Independent external Hebrew/Aramaic philology + theology and editions/rights; section-level claims trace explicitly has open Naomi/Job and Shaddai etymology questions, and does not grant publication."
       }
     ],
     "ch03InternalAdversarialPasses": 2,
@@ -1602,7 +1609,26 @@
       "corpusCriticalCollations": 0,
       "externalIndependentScholarlyApproval": 0,
       "productApprovals": 0
-    }
+    },
+    "readerClaimCrosswalk": {
+      "path": "ИМЕНА БОГА/data/names_reader_claim_crosswalk_v1.json",
+      "validator": "ИМЕНА БОГА/validate_names_reader.py",
+      "negativeTests": "ИМЕНА БОГА/test_validate_names_reader.py",
+      "verifiedReaderChapters": 3,
+      "tracedReaderSections": 32,
+      "selectedUniqueResearchClaims": 25,
+      "tests": 18,
+      "crosswalkState": "SECTION_LEVEL_TRACE_ONLY_NO_PARAGRAPH_BY_PARAGRAPH_FACTUAL_OR_EXTERNAL_REVIEW_APPROVAL",
+      "knownGaps": [
+        "CH01 Gill/Berkhof/Bavinck interpreted theology not source-ID-mapped in main claim registry",
+        "CH03 Naomi Ruth1 and Eliphaz Job5/42 loci not represented as distinct 105-attestation/87-claim entries",
+        "CH03 competing Shaddai etymologies and Deir Alla ancient original critical photo unresolved"
+      ],
+      "externalScientificReviewComplete": false,
+      "publicationState": "BLOCKED"
+    },
+    "readerMainTextStatus20261111": "CH01_2415_WORDS;CH02_2222_WORDS;CH03_3109_WORDS_AFTER_W51_CONDENSATION; all not editorial ready; exact counts by whitespace tokenization from before appendix.",
+    "readerResearchAppendixPreservation20261111": "CH03 native 2651-word Deir Alla section moved intact except original CC0 image block retained in reader, 30 source hyperlinks and 2 other images preserved in editorial appendix. Scientific facts, conflicting reconstruction and rights remain held."
   },
   "systematicTheologyTriage": {
     "asOf": "2026-11-08",
