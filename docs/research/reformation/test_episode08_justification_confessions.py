@@ -110,6 +110,37 @@ class JustificationBookTests(unittest.TestCase):
         self.assertIn("THEOLOGICAL_PEER_REVIEW_OPEN", active_plan)
         self.assertIn("PUBLICATION_HOLD", active_plan)
 
+    def test_wave443_trent_latin_and_first_print_not_conflated(self):
+        """Original-language web transcription is checked, but no Paris 1547
+        print image was declared collation-complete and no peer-review invented.
+        """
+        chapter = E8.read_text(encoding="utf-8")
+        _, apparatus = chapter.split(
+            "## Источниковедческий аппарат — вне основного повествования", 1
+        )
+        for token in (
+            "Canon XIII", "Canon XXIV", "omni homini",
+            "nihil aliud requiri", "exclusa gratia et charitate",
+            "iustitiam acceptam", "B-6903 (2)",
+            "A–E⁴", "editio princeps 1531",
+            "Q 7188-4 B RES", "не сверены визуально",
+            "INDEPENDENT_CONFESSIONAL_REVIEW_OPEN",
+        ):
+            with self.subTest(token=token):
+                self.assertIn(token, apparatus)
+        registry = json.loads(
+            (D / "source-registry-v1.json").read_text(encoding="utf-8")
+        )
+        by = {row["id"]: row for row in registry["sources"]}
+        for source_id in ("REF-P14", "REF-P17", "REF-P20"):
+            self.assertIn("WAVE443-T03-LATIN", by[source_id]["verificationNote"])
+            self.assertIn("PUBLICATION_HOLD", by[source_id]["holds"])
+        self.assertEqual(by["REF-P20"]["accessState"], "PARTIAL_OBJECT")
+        self.assertIn("LOCATOR_HOLD", by["REF-P20"]["holds"])
+        self.assertEqual(by["REF-P17"]["accessState"], "CATALOG_ONLY")
+        self.assertIn("ARCHIVE_HOLD", by["REF-P17"]["holds"])
+        self.assertIn("LOCATOR_HOLD", by["REF-P17"]["holds"])
+
     def test_registry_and_book_navigation(self):
         ledger=(D/"03_claim_verification_register.md").read_text(encoding="utf-8")
         for i in range(268,274):
