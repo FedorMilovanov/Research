@@ -211,6 +211,9 @@ class FranceTrentNantesTests(unittest.TestCase):
         for mark in ("REF-S103","3B 14","1610"):
             self.assertIn(mark,chapter)
             self.assertIn(mark,claim)
+        for record in ("FRBNF33850380", "FRBNF36434434"):
+            self.assertIn(record,dossier)
+            self.assertIn(record,packet)
         self.assertIn("COUR_DES_AIDES_TRANSCRIPTION_NOT_PARLEMENT_REGISTRATION",dossier)
         self.assertIn("ROUEN_1609_1610_REGISTER_DIRECT_CHECK_HOLD",plan)
         self.assertIn("PUBLICATION_HOLD",plan)
