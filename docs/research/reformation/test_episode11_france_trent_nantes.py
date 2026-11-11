@@ -157,6 +157,42 @@ class FranceTrentNantesTests(unittest.TestCase):
         self.assertEqual(old["evidenceClass"], "B1")
         self.assertEqual(old["accessState"], "PARTIAL_OBJECT")
 
+    def test_wave434_registration_evidence_1885_is_not_a_court_register(self):
+        text = CH.read_text(encoding="utf-8")
+        reader, apparatus = text.split("## Источниковедческий аппарат", 1)
+        dossier = (D/"09_france_confession_nantes_source_study.md").read_text(encoding="utf-8")
+        packet = (D/"independent_review_packets.md").read_text(encoding="utf-8")
+        c301 = next(x for x in (D/"03_claim_verification_register.md").read_text(encoding="utf-8").splitlines()
+                    if x.startswith("| C301 |"))
+        registry = json.loads((D/"source-registry-v1.json").read_text(encoding="utf-8"))
+        ref = next(x for x in registry["sources"] if x["id"] == "REF-P87")
+        acquired = json.loads((D/"acquisition-manifest-v1.json").read_text(encoding="utf-8"))
+        for marker in ("позднейших переизданиях", "Бост", "протокола",
+                       "общий эдикт и особые статьи"):
+            self.assertIn(marker.lower(), reader.lower())
+        for marker in ("FRBNF33814458", "BNF_1622_CATALOG_MATCH",
+                       "WIKISOURCE_1885_REPRINT_PROVENANCE",
+                       "REGISTRATION_TITLE_ASSERTION_CONFLICT_OPEN",
+                       "REGISTER_BOOK_DIRECT_CHECK_HOLD",
+                       "REGISTRATION_ORDER_NOT_EXECUTION"):
+            for label, item in (("apparatus",apparatus), ("dossier",dossier)):
+                with self.subTest(marker=marker, document=label):
+                    self.assertIn(marker, item)
+        for marker in ("FRBNF33814458", "1885", "aussi vérifiez en Parlement",
+                       "REGISTRATION_TITLE_ASSERTION_CONFLICT_OPEN",
+                       "REGISTER_BOOK_DIRECT_CHECK_HOLD"):
+            self.assertIn(marker, packet)
+            self.assertIn(marker, c301)
+        self.assertIn("WIKISOURCE_1885_REPRINT_PROVENANCE", ref["verificationNote"])
+        self.assertIn("BNF_1622_CATALOG_MATCH", ref["verificationNote"])
+        self.assertEqual(ref["documentYear"], 1622)
+        self.assertEqual(ref["evidenceClass"], "A1")
+        self.assertEqual(ref["accessState"], "PARTIAL_OBJECT")
+        self.assertIn("PUBLICATION_HOLD", ref["holds"])
+        self.assertEqual(registry["sourceCount"], 205)
+        self.assertEqual(acquired["sourceCount"], 16)
+        self.assertEqual(acquired["fileBytesInGit"], 0)
+
     def test_reader_navigation_and_historical_overclaims_rejected(self):
         for path in ("README.md","SELF_PLAN.md","04_series_blueprint.md",
                      "09_france_confession_nantes_source_study.md"):
