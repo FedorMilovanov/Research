@@ -8677,35 +8677,35 @@
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article08_particular_redemption_positive_case.md",
-      "sha256": "a457758724d70602631bb388aa01b0c20651c118dcc43a8491a390c83b8c0afa",
+      "sha256": "7ba7eff516672d5a141fbc0c5d3b5bc87d7b4ba9a1411d17c89c49259abfaec2",
       "reviewedAt": "2026-11-07",
       "note": "Пост-базовый черновик статьи 08: новый файл после исторического контролируемого объёма 13 черновиков; цитаты и экзегеза не объявлены подтверждёнными этим включением",
       "publicationEligible": false
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article09_world_and_propitiation_johannine_case.md",
-      "sha256": "f20c76582d6935dc076cb1952c9206334b05db621bb42aa4d13b452c0a2ef2f5",
+      "sha256": "6d65ae8c4d0ada5952aa8399e3b7ef1fba5cd015f6cd39460a918f5e2a6e3e7d",
       "reviewedAt": "2026-11-07",
       "note": "Статья №9/18, положительный анализ Иоанновых текстов о мире и умилостивлении; первичные греческие формы и исторические авторы отделены от вторичных пересказов, FULL_TEXT_HOLD/RIGHTS_HOLD/EVIDENCE_HOLD/PUBLICATION_HOLD сохранены",
       "publicationEligible": false
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article10_ransom_for_all_two_adams_paul_hebrews.md",
-      "sha256": "81cd45800660e249b228fefcb2bd6d7a875043998c8012e72bc6f61e5c9310ac",
+      "sha256": "2d71472763e248d56f48f9e2e3a317588fb62e956da1d1cc6cc79017ee4254b6",
       "reviewedAt": "2026-11-07",
       "note": "Статья №10/18, 1 Тим. 2/4, Тит. 2, Евр. 2:9, Рим. 5, 1 Кор. 15 и 2 Кор. 5; греческие формы, варианты, кальвинистские и широкие чтения, эллипсис Рим. 5:18; аппарат/полные книги остаются под HOLD",
       "publicationEligible": false
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article11_bought_apostates_covenant_blood_and_weak_brother.md",
-      "sha256": "449b9e0733d3d9ffd457af2b69cfed19376b5703e210043b631d7d7fd88fe4a1",
+      "sha256": "f6605dbf0cf300fbc8cbcd4baf06e364ec067433444ce1945b62a7399d2f9d9e",
       "reviewedAt": "2026-11-07",
       "note": "Статья №11/18: добавлен самостоятельный именованный контроль Иуды и Петра (Ин. 17:12; Лк. 22:31–32), прямой Оуэн Display IX, отдельно подписанный Стэнли Гауэр, Сперджен, Девенант On the Death of Christ 392–398, Августин redemptus erat и противопоставление вечной жизни, Прокопенко статья с. 31/36 без выдуманной именованной цитаты; поздний Оуэн Goold XXIII (1855) 543–548 узко подтверждён; C-01/C-04/C-09/C-11, аудио и RIGHTS/EVIDENCE/LOCATOR/PUBLICATION HOLD открыты",
       "publicationEligible": false
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article12_cosmic_reconciliation_heaven_earth_new_creation.md",
-      "sha256": "160a3586dc7bddc4de79daab0a1a1485291cafd97f106c6809896bb5fb590523",
+      "sha256": "30a665482684a4a9a1a7e13ff86dcffd0ad7683d6b444c63c500e9afd30e3d7c",
       "reviewedAt": "2026-11-07",
       "note": "Статья №12/18, космическое примирение Кол. 1:20, Кол. 1:22 active/passive, Еф. 1:10, Рим. 8:19–23, ангелы/новое творение, исторические Кальвин/Ходж/Гилл/Робертсон; текстология и богословие остаются под HOLD",
       "publicationEligible": false
@@ -8719,7 +8719,7 @@
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article14_early_church_to_reformation_history.md",
-      "sha256": "968c9732d6569c795276c06671d38b8edf54cc10f313e2e65dbb65c53a5485d8",
+      "sha256": "1531e8e4d9e404e2ab0289df3603cc701f61273d73162509aa8ad3cd0159b244",
       "reviewedAt": "2026-11-09",
       "note": "№14/18: самостоятельная историческая читательская редакция. Прямые целевые переводы Анзельма, Аквината, Лютера и существующий patristic-корпус; латинская/немецкая колляция, обобщающий исторический вердикт, RIGHTS/PUBLICATION_HOLD остаются. NOT PEER REVIEWED; publicationEligible=false.",
       "publicationEligible": false
@@ -8733,7 +8733,7 @@
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article15_dort_westminster_saumur_english_hu.md",
-      "sha256": "00746c41fc4560368ebb3995a5b52e9bdbe7546dac73a717b33c5c3529d542d8",
+      "sha256": "3471a9cb53c50fd9abf6dd62e248231fba9e9cc8fb0a4bacf83088dbc7bebce7",
       "reviewedAt": "2026-11-10",
       "note": "Статья №15/18: читательский исторический анализ Дорт II.3/5/8/Rejection, WCF/1689 VIII.5/8, английских делегатов и условного реформатского универсализма. Первичная сверка строго по архивным локаторам, не новый полный просмотр трактатов. HISTORICAL_SOURCE_HOLD/ATTRIBUTION_HOLD/RIGHTS_HOLD/PUBLICATION_HOLD. NOT PEER REVIEWED.",
       "publicationEligible": false
