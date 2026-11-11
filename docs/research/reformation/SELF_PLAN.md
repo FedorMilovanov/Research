@@ -1,6 +1,20 @@
 # САМОПЛАН «Реформации» — живая доска исполнения, границы поиска и сборка книги
 
-## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 433, 11.11.2026 (RF-H08-NEWBERRY-1622-PRIMARY-PRINT-EVIDENCE)
+## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 434, 11.11.2026 (RF-H08-REGISTRATION-ASSERTION-PROVENANCE)
+
+**Вход, независимо проверен:** [PR #462](https://github.com/FedorMilovanov/Research/pull/462) MERGED, точный `Research/main = a4f16bcd9f1a7717b9855bd277cf64bc12c52db2`, postmerge GitHub **5/5 SUCCESS**, Reformation **139/139 PASS**. Новая ветка лишь для одного содержательного PR отдела «Реформация», без Product/чужих PR.
+
+**Обнаруженная критическая источниковедческая проблема H-08/C301:** физически прочитанная парижская печать особых статей **1622** `REF-P87` содержит `seront registrez` / `vous faites registrer` — распоряжение в будущем/повелительном наклонении. Отдельный поздний [сборник Fischbacher, *Édits, déclarations et arrests ...*, **1885**, с.55–138](https://archive.org/details/editsdclaratio00fran), источник [Wikisource](https://fr.wikisource.org/wiki/Edits_d%C3%A9clarations_et_arrests_concernans_la_religion_protestante_r%C3%A9form%C3%A9e/%C3%89dit_de_Nantes), с заголовком `aussi vérifiez en Parlement` **заявляет факт**, тогда как [Bost 1998, pp375–376](https://www.persee.fr/doc/ether_0014-2239_1998_num_73_3_3518) утверждает, что регистрация **особых** статей не произошла. В digital 1885 архивный OCR и Wikisource фраза непосредственно найдена; оригинальный 1885 фотолист в этой волне не коллирован. **Нельзя подменить исторический судебный реестр заголовком поздней перепечатки или королевским приказом**; не делать уверенного вывода об отсутствии записи без архивного регистра. Общий эдикт 25.02.1599 в Париже был зарегистрирован — **не тот же вопрос**. Точное внешнее доказательство открыто.
+
+**Вторая независимая находка:** официальный [BnF FRBNF33814458](https://catalogue.bnf.fr/ark:/12148/cb33814458r) независимо удостоверяет Paris Morel/Mettayer **1622**, 23 с. (4 физических BnF экземпляра), акт `1598-05-02`, как издание **той же библиографической категории, что Newberry REF-P87**, но без незаконного утверждения о совпадении физических экземпляров или пословной сверке BnF листов. Исходные BnF **1598** и **1621** остаются неколлированными.
+
+**Два результата:** (1) в читательской главе 11 адресно раскрыть риск принять позднее название за судебную регистрацию и не подменять Боста/парламент проверкой без актовых книг; в аппарате и C301 точно атрибутировать происхождение Wikisource к **1885**, добавить BnF **1622**, документировать разнородность и конфликты; (2) в H-08 reviewer packet поставить ответственный вопрос **к какому парламенту/реестру/дате/листу** относится утверждение и регрессионно запретить противоположные догадки. REF-P87 verificationNote дополнить только библиографическими/сравнительными локаторами, **не повышать** `A1/PARTIAL_OBJECT` и не менять права.
+
+**Gate:** 7 существующих файлов (глава11, Франция-досье, C301, review packet, REF-P87 registry note, тест главы 11, SELF_PLAN); **205 источников, 16 acquisition entries, 319 claims, 14 частей без новых строк**; validator + 140? (фактическое число считать из CI) full unittest, 5/5 exact PR SHA before squash merge, then 5/5 on exact new main. `ORIGINAL_ART33_PRINT_COLLATION_HOLD / FULL_DIPLOMATIC_XI_COLLATION_HOLD / 1598_SIGNED_ARTICLES_DIRECT_READ_HOLD / REGISTER_BOOK_DIRECT_CHECK_HOLD / REGISTRATION_TITLE_ASSERTION_CONFLICT_OPEN / INDEPENDENT_EXTERNAL_REVIEW_OPEN / THEOLOGICAL_PEER_REVIEW_OPEN / RIGHTS_HOLD / EDITORIAL_HANDOFF_HOLD / PUBLICATION_HOLD` сохраняются.
+
+---
+
+## ИСТОРИЧЕСКИЙ СРЕЗ ВОЛНЫ 433 — не действующий паспорт (RF-H08-NEWBERRY-1622-PRIMARY-PRINT-EVIDENCE)
 
 **Вход:** [PR #461](https://github.com/FedorMilovanov/Research/pull/461) MERGED, точный `Research/main = ed28e885fd423154a0a6bda8e6b637e78cd29716`, независимый post-merge **5/5 CI SUCCESS**, Reformation **138/138 PASS**. Единственный новый целевой PR отдела «Реформация» в этой волне, без Product и вмешательства в соседние PR.
 
