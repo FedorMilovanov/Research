@@ -238,6 +238,83 @@ class JustificationBookTests(unittest.TestCase):
             self.assertIn("REF-P90", row)
             self.assertIn("PARIS_1547_VARIANT_HOLD", row)
 
+    def test_wave445_augsburg_print_history_and_trent_xiii_reader_gates(self):
+        """Presentation-year manuscripts, unauthorized prints and authorized
+        1531 edition must not be conflated with direct page collation.
+        Trent XIII concerns required certainty for each, not every hope.
+        """
+        chapter = E8.read_text(encoding="utf-8")
+        reader, apparatus = chapter.split(
+            "## Источниковедческий аппарат — вне основного повествования", 1
+        )
+        for token in (
+            "25 июня 1530 года",
+            "несанкционированные издания",
+            "авторизованная печатная редакция",
+            "1531 году",
+            "**Канон XIII**",
+            "*каждому человеку необходимо*",
+            "Это не запрет всякого доверия",
+        ):
+            with self.subTest(reader_token=token):
+                self.assertIn(token, reader)
+        self.assertNotIn("REF-P14", reader)
+        self.assertNotIn("NOT_EDITORIAL_READY", reader)
+        for token in (
+            "Bridwell", "BRA2651/A–B",
+            "Georg Rhau, 1531", "несанкционированные печати",
+            "листы физического экземпляра Bridwell",
+            "REF-P90", "REF-P89",
+            "REF-P20", "ORIGINAL_EDITION_COLLATION_HOLD",
+            "Кёльн", "парижские", "не коллированы",
+            "INDEPENDENT_CONFESSIONAL_REVIEW_OPEN",
+            "THEOLOGICAL_PEER_REVIEW_OPEN", "PUBLICATION_HOLD",
+        ):
+            with self.subTest(apparatus_token=token):
+                self.assertIn(token, apparatus)
+        # These absolute claims became false after scoped visual inspection
+        # of two historical print witnesses in wave 443.
+        self.assertNotIn(
+            "оригинальные немецкая/латинская редакции Аугсбургского исповедания;"
+            " официальный латинский текст Тридента VI и его канонов;",
+            apparatus,
+        )
+
+        registry = json.loads(
+            (D / "source-registry-v1.json").read_text(encoding="utf-8")
+        )
+        rows = {row["id"]: row for row in registry["sources"]}
+        self.assertEqual(registry["sourceCount"], 214)
+        self.assertEqual(len(rows), 214)
+        a = rows["REF-P14"]
+        self.assertEqual(a["documentYear"], 1530)
+        self.assertEqual(a["accessState"], "PARTIAL_OBJECT")
+        self.assertEqual(a["rightsState"], "RIGHTS_UNKNOWN")
+        self.assertIn("Bridwell", a["verificationNote"])
+        self.assertIn("NOT inspected 1531 leaf images", a["verificationNote"])
+        self.assertIn("PUBLICATION_HOLD", a["holds"])
+        self.assertIn("RIGHTS_HOLD", a["holds"])
+        t = rows["REF-P20"]
+        self.assertIn("LOCATOR_HOLD", t["holds"])
+        self.assertIn("PUBLICATION_HOLD", t["holds"])
+        ledger = (D / "03_claim_verification_register.md").read_text(
+            encoding="utf-8"
+        )
+        for cid in (269, 273):
+            row = next(line for line in ledger.splitlines()
+                       if line.startswith(f"| C{cid} |"))
+            self.assertIn("1531", row)
+            self.assertIn("не коллированы", row
+                          if cid == 273 else row.replace(
+                              "не сопоставлены", "не коллированы"))
+            self.assertIn("REJECTED_FORMULATION", row)
+        plan = (D / "SELF_PLAN.md").read_text(encoding="utf-8")
+        current = plan.split("\n---\n", 1)[0]
+        self.assertIn("волна 445", current)
+        self.assertIn("214 PUBLICATION_HOLD", current)
+        self.assertIn("INDEPENDENT_EXTERNAL_REVIEW_OPEN", current)
+        self.assertIn("THEOLOGICAL_PEER_REVIEW_OPEN", current)
+
     def test_registry_and_book_navigation(self):
         ledger=(D/"03_claim_verification_register.md").read_text(encoding="utf-8")
         for i in range(268,274):
