@@ -213,7 +213,8 @@ class JustificationBookTests(unittest.TestCase):
         self.assertEqual(cologne["documentYear"], 1547)
         self.assertEqual(cologne["accessState"], "PARTIAL_OBJECT")
         self.assertEqual(cologne["locatorState"], "EXACT_LOCATOR_VERIFIED")
-        self.assertEqual(cologne["rightsState"], "RIGHTS_UNKNOWN")
+        self.assertEqual(cologne["rightsState"], "PERMISSION_REQUIRED")
+        self.assertIn("NoC-NC/1.0", cologne["verificationNote"])
         for hold in ("ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"):
             self.assertIn(hold, cologne["holds"])
         self.assertIn("DIRECT_VISUAL_ORIGINAL_LATIN_PRINT_CHECKED", cologne["verificationNote"])
