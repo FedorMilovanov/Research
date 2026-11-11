@@ -2098,6 +2098,47 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("source-inventory IDs changed" in e
                             for e in validate_source_access(changed)))
 
+    def test_ofer_1992_distinct_courier_and_ha_levanon_unsigned_source_boundaries(self) -> None:
+        for field, bad in (
+            ("printYear", 1986),
+            ("courierDiscussionPrintPage", 314),
+            ("footnotesRead", [75,76]),
+            ("originalP315PageImageRead", False),
+            ("oferRejectsIdentityJoin", False),
+            ("courierLabel", "ר' יעקב זאב ברלין"),
+            ("historicalNewspaperUnsigned", False),
+            ("possibleWriterIsEstablishedAuthor", True),
+            ("otherNewspaperIssuesPersonallyInspected", True),
+            ("ancientCodexOriginalInspected", True),
+            ("jtsL729ManuscriptInspected", True),
+            ("rightsApproved", True),
+        ):
+            with self.subTest(ofer_field=field):
+                obj = copy.deepcopy(self.sources)
+                row = next(x for x in obj["records"] if x["id"] == "SRC-OFER-1992-YELLIN-HALEVANON-UNSIGNED-SCHOLARLY-CROSSWALK")
+                row["verifiedWave44"][field] = bad
+                self.assertTrue(any("Ofer1992 distinct courier and unsigned newspaper" in e
+                                    for e in validate_source_access(obj)))
+        for field, bad in (
+            ("zer1986QuestionWordCount", "חדא מלה"),
+            ("zer1986ReplyWordCount", "שתי מלות"),
+            ("verbatimSameLiteraryWording", True),
+            ("independentAncientWitnessCountAdded", 1),
+            ("zer1986NewspaperIssueNumbers", [5]),
+            ("otherIssuesThreeFourElevenDirectlyInspected", True),
+        ):
+            with self.subTest(comparison_field=field):
+                obj = copy.deepcopy(self.sources)
+                row = next(x for x in obj["records"] if x["id"] == "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137")
+                row["courierNewspaperComparisonWave44"][field] = bad
+                self.assertTrue(any("historic 1863 newspaper vs Zer1986 Q&A" in e
+                                    for e in validate_source_access(obj)))
+        obj = copy.deepcopy(self.sources)
+        z = next(x for x in obj["records"] if x["id"] == "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137")
+        z["courierNameCrosswalkWave37"]["identityResolutionStatusWave44"] = "CERTIFIED_FULL_NAME"
+        self.assertTrue(any("Yaakov Zeev Berlin composite identity disputed by Ofer1992" in e
+                            for e in validate_source_access(obj)))
+
     def test_ofer_2008_cannot_become_direct_breuer_yeivin_or_photo(self) -> None:
         for key, wrong in (("originalJSIJTypesetPdfViewed", True), ("originalBreuerPagesViewed", True),
                            ("originalYeivinPageViewed", True), ("ancientAleppoExodusViewed", True),
@@ -2160,7 +2201,7 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
             ("goshenYear1855CertainDateOfFinishedAnswerCopy", True),
             ("disputedScribeIdentityIndependentlyResolved", True),
             ("independentAncientWitnessCountGained", 2),
-            ("printed1863NewspaperIndependentlyCollated", True),
+            ("printed1863NewspaperIndependentlyCollated", False),
             ("specificExodus1716OriginalWordformVerifiedDirectly", True),
             ("jacobBerlinAndYaakovZeevFullIdentityDemonstrated", True),
         ):
@@ -2198,7 +2239,7 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
     def test_yaakov_zeev_berlin_full_name_editorial_crosswalk_not_civil_identity(self) -> None:
         for field, wrong in (
             ("zerPrintP151FullName", "ר' יעקב זאב"),
-            ("supportedEditorialHistoricallyNamedCourierSame", False),
+            ("supportedEditorialHistoricallyNamedCourierSame", True),
             ("independentCivilBirthDeathOrGenealogyProven", True),
             ("peretzGolan2023OriginalPageScreenshotInspected", False),
             ("peretzGolan2023CitationDependsOnZer1986", False),
@@ -2210,11 +2251,11 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                 changed = copy.deepcopy(self.sources)
                 z = next(r for r in changed["records"] if r["id"] == "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137")
                 z["courierNameCrosswalkWave37"][field] = wrong
-                self.assertTrue(any("Yaakov Zeev Berlin printed full name" in e for e in validate_source_access(changed)))
+                self.assertTrue(any("Yaakov Zeev Berlin composite identity disputed by Ofer1992" in e for e in validate_source_access(changed)))
         changed = copy.deepcopy(self.sources)
         g = next(r for r in changed["records"] if r["id"] == "SRC-GOSHEN-GOTTSTEIN-TEXTUS2-1962-JTS729")
-        g["accessAndIndependenceWave35"]["historicalCourierNamedCrosswalkCorroboratedByZerFullHebrew"] = False
-        self.assertTrue(any("Goshen courier editorial name match" in e for e in validate_source_access(changed)))
+        g["accessAndIndependenceWave35"]["historicalCourierNamedCrosswalkCorroboratedByZerFullHebrew"] = True
+        self.assertTrue(any("Goshen OCR courier identity cannot overrule distinct-actors argument Ofer1992" in e for e in validate_source_access(changed)))
         changed = copy.deepcopy(self.sources)
         s = next(r for r in changed["records"] if r["id"] == "SRC-SAPIR-EVEN-SAPIR-1866-CH6-PRIMARY-AUTHOR")
         s["authorAccessAndClaimsWave36"]["literalSaphirTranscriptionIncludesSurnameBerlin"] = True

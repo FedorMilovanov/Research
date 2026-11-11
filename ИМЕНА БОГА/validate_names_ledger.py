@@ -376,6 +376,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137": "ZER_1986_ANONYMOUS_JTS_L729_COPY_ALEPPO_WORD_JOIN_REPORT_EX17_137",
     "SRC-OFER-BREUER-MASORAH-2008-EX17-16": "OFER_2008_EDITORIAL_BREUER_TWO_WORD_VERSUS_ALEPPO_ONE_WORD_ATTRIBUTED_ANALYSIS",
     "SRC-HALEVANON-18630611-ISSUE5-EX17-16-ORIGINAL": "HALEVANON_1863_ISSUE5_P32_ORIGINAL_PRINT_EX17_16_ONE_WORD_REPORT_NOT_ALEPPO_CODEX_AUTOPSY",
+    "SRC-OFER-1992-YELLIN-HALEVANON-UNSIGNED-SCHOLARLY-CROSSWALK": "OFER_1992_INDEPENDENT_HISTORIOGRAPHIC_DISPUTE_ZEEV_BERLIN_AND_UNSIGNED_HALEVANON",
     "SRC-PENKOWER-TEXTUS9-1981-SAPHIR-HALEVANON-1863": "PENKOWER_1981_PRINTED_P78_N63_SAPHIR_1863_ISSUE5_JTS729_BIBLIOGRAPHIC_CROSSWALK",
     "SRC-BREUER-MEGADIM10-1990-SITHON-SAPIR-REPORT": "BREUER_1990_ORIGINAL_P104_SAPIR_MENASHE_SITHON_YAAKOV_ZEEV_1857",
     "SRC-GOSHEN-GOTTSTEIN-TEXTUS2-1962-JTS729": "GOSHEN_GOTTSTEIN_1962_FIRSTHAND_JTS729_MANUSCRIPT_REPORT_NOT_PRESENT_DAY_AUTOPSY_AND_SCRIBE_HYPOTHESIS",
@@ -639,8 +640,51 @@ def validate_source_access(sources: dict) -> list[str]:
                     or w.get("jtsL729OriginalSeen") is not False
                     or w.get("yeivinBreuerCriticalPagesSeen") is not False
                     or w.get("authorSignedNewspaperPageProven") is not False
-                    or w.get("permissionToReuseNliScan") is not False):
+                    or w.get("permissionToReuseNliScan") is not False
+                    or w.get("ofer1992ConfirmsKeterTorahUnsigned") is not True
+                    or w.get("possibleEditorBrillOnlyConjecture") is not True):
                 errors.append(f"{prefix}: 1863 original newspaper one-word report is not an ancient codex or cleared scan")
+        if rid == "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137":
+            c = source.get("courierNewspaperComparisonWave44", {})
+            if (not isinstance(c, dict)
+                    or c.get("zer1986QAPrintPage") != 165
+                    or c.get("zer1986QuestionWordCount") != "שתי מלות"
+                    or c.get("zer1986ReplyWordCount") != "לא כן אלא חדא מלה"
+                    or c.get("newspaper1863PrintPage") != 32
+                    or c.get("newspaperOneWordReport") != "חדא מלה"
+                    or c.get("sameReportedResultOneWord") is not True
+                    or c.get("verbatimSameLiteraryWording") is not False
+                    or c.get("independentAncientWitnessCountAdded") != 0
+                    or c.get("zer1986NewspaperIssueNumbers") != [3,4,5,11]
+                    or c.get("onlyIssueFiveOriginalPhotoInspected") is not True
+                    or c.get("otherIssuesThreeFourElevenDirectlyInspected") is not False):
+                errors.append(f"{prefix}: historic 1863 newspaper vs Zer1986 Q&A not verbatim identical or independent ancient witness")
+        if rid == "SRC-OFER-1992-YELLIN-HALEVANON-UNSIGNED-SCHOLARLY-CROSSWALK":
+            q = source.get("verifiedWave44", {})
+            if (source.get("year") != 1992 or source.get("url") != "https://www.daat.ac.il/daat/vl/yosefofer/yosefofer04.pdf"
+                    or source.get("sourceRole") != "OFER_1992_INDEPENDENT_HISTORIOGRAPHIC_DISPUTE_ZEEV_BERLIN_AND_UNSIGNED_HALEVANON"
+                    or source.get("evidenceClass") != "B1" or source.get("accessState") != "PARTIAL_OBJECT"
+                    or source.get("rightsState") != "PERMISSION_REQUIRED"
+                    or source.get("publicationState") != "BLOCKED" or source.get("criticalEditionCollated") is not False
+                    or not isinstance(q, dict)
+                    or q.get("printYear") != 1992 or q.get("articlePrintPages") != "295–353"
+                    or q.get("courierDiscussionPrintPage") != 315
+                    or q.get("footnotesRead") != [75,76,77] or q.get("bibliographyPrintPage") != 352
+                    or q.get("originalP315PageImageRead") is not True
+                    or q.get("originalP352PageImageRead") is not True
+                    or q.get("oferRejectsIdentityJoin") is not True
+                    or q.get("courierLabel") != "ר' יעקב זאב"
+                    or q.get("otherScholarLabel") != "ר' יעקב ברלין"
+                    or q.get("zer1986ConflatedPrintedName") != "ר' יעקב זאב ברלין"
+                    or q.get("historicalNewspaperUnsigned") is not True
+                    or q.get("possibleEditorialWriter") != "יחיאל ברי״ל"
+                    or q.get("possibleWriterIsEstablishedAuthor") is not False
+                    or q.get("listedFirstPageNumbers") != [16,23,30,31,76]
+                    or q.get("otherNewspaperIssuesPersonallyInspected") is not False
+                    or q.get("ancientCodexOriginalInspected") is not False
+                    or q.get("jtsL729ManuscriptInspected") is not False
+                    or q.get("rightsApproved") is not False):
+                errors.append(f"{prefix}: Ofer1992 distinct courier and unsigned newspaper claim must not be promoted to certified person/author/ancient witness")
         if rid == "SRC-PENKOWER-TEXTUS9-1981-SAPHIR-HALEVANON-1863":
             w = source.get("checkedAccess", {})
             if (source.get("url") != "https://openscholar.huji.ac.il/sites/default/files/he_bible_project/files/penkower_j.s.1.pdf"
@@ -738,7 +782,7 @@ def validate_source_access(sources: dict) -> list[str]:
                     or s.get("disputedScribeIdentityIndependentlyResolved") is not False
                     or s.get("commonHistoricalBaseFor1863NewspaperAndJTSReported") is not True
                     or s.get("independentAncientWitnessCountGained") != 0
-                    or s.get("printed1863NewspaperIndependentlyCollated") is not False
+                    or s.get("printed1863NewspaperIndependentlyCollated") is not True
                     or s.get("ancientAleppoExodus1716FoliosViewed") is not False
                     or s.get("specificExodus1716OriginalWordformVerifiedDirectly") is not False
                     or s.get("jacobBerlinAndYaakovZeevFullIdentityDemonstrated") is not False
@@ -767,7 +811,7 @@ def validate_source_access(sources: dict) -> list[str]:
                     or a.get("samePhysicalReturnedSaphirPaperIdentifiedWithJTS729") is not False
                     or a.get("originalJTS729ManuscriptImagesViewed") is not False
                     or a.get("originalExodus1716CodexFolioSeen") is not False
-                    or a.get("original1863PressVerseLineViewed") is not False
+                    or a.get("original1863PressVerseLineViewed") is not True
                     or a.get("independentAncientManuscriptWitnessesAdded") != 0
                     or a.get("modernTranscriptionRightsIndependentlyCleared") is not False
                     or a.get("photographicReusePermissionFromThisRecord") is not False):
@@ -785,21 +829,29 @@ def validate_source_access(sources: dict) -> list[str]:
                     or n.get("peretzGolan2023PrintedFullName") != "ר' יעקב זאב ברלין"
                     or n.get("peretzGolan2023CitationDependsOnZer1986") is not True
                     or n.get("peretzGolan2023IndependentHistoricalWitness") is not False
-                    or n.get("supportedEditorialHistoricallyNamedCourierSame") is not True
+                    or n.get("supportedEditorialHistoricallyNamedCourierSame") is not False
+                    or n.get("identityResolutionStatusWave44") != "DISPUTED_BY_OFER_1992_TWO_HISTORICAL_ACTORS"
+                    or n.get("ofer1992PrintP315Note76DirectlyViewed") is not True
+                    or n.get("ofer1992ExplicitlyRejectsConflation") is not True
+                    or n.get("derivative2023CannotResolveDispute") is not True
                     or n.get("independentCivilBirthDeathOrGenealogyProven") is not False
                     or n.get("thirdParty2023IndependentAncientManuscript") is not False
                     or n.get("originalManuscriptCourierSignatureInspected") is not False):
-                errors.append(f"{prefix}: Yaakov Zeev Berlin printed full name does not prove civil identity or ancient photo")
+                errors.append(f"{prefix}: Yaakov Zeev Berlin composite identity disputed by Ofer1992, ancient codex unseen")
         if rid == "SRC-GOSHEN-GOTTSTEIN-TEXTUS2-1962-JTS729":
             x = source.get("accessAndIndependenceWave35", {})
             if (not isinstance(x, dict)
-                    or x.get("historicalCourierNamedCrosswalkCorroboratedByZerFullHebrew") is not True
+                    or x.get("historicalCourierNamedCrosswalkCorroboratedByZerFullHebrew") is not False
+                    or x.get("ofer1992RejectsCourierIdentityConflation") is not True
                     or x.get("jacobBerlinAndYaakovZeevFullIdentityDemonstrated") is not False):
-                errors.append(f"{prefix}: Goshen courier editorial name match and independent civil proof remain separate")
+                errors.append(f"{prefix}: Goshen OCR courier identity cannot overrule distinct-actors argument Ofer1992")
         if rid == "SRC-SAPIR-EVEN-SAPIR-1866-CH6-PRIMARY-AUTHOR":
             x = source.get("authorAccessAndClaimsWave36", {})
             if (not isinstance(x, dict)
                     or x.get("zer1986LaterScholarlyFullCourierName") != "יעקב זאב ברלין"
+                    or x.get("separateContextJacobBerlinSignatory") is not True
+                    or x.get("ofer1992SeparatesCourierFromJacobBerlin") is not True
+                    or x.get("separateContextAloneProvesPersonIdentity") is not False
                     or x.get("literalSaphirTranscriptionIncludesSurnameBerlin") is not False):
                 errors.append(f"{prefix}: do not interpolate later surname Berlin into literal Saphir source")
         if rid == "SRC-ETCBC-ABEGG-BOWLEY-COOK-4Q72-JER33":
