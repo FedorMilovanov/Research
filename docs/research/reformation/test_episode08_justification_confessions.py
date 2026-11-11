@@ -387,6 +387,17 @@ class JustificationBookTests(unittest.TestCase):
         for token in ("### 446.1.", "scan 24", "scan 25", "scan 26",
                       "215 REF / 319 C / 18 acquisition receipts"):
             self.assertIn(token, matrix)
+        scan24 = next(line for line in matrix.splitlines()
+                      if line.startswith("| [BSB scan 24]"))
+        scan26 = next(line for line in matrix.splitlines()
+                      if line.startswith("| [BSB scan 26]"))
+        self.assertIn("non habet conditionem meritorum nostrorum", scan24)
+        self.assertNotIn("QVID SIT FIDES IVSTIFICANS", scan24)
+        self.assertIn("QVID SIT FIDES IVSTIFICANS", scan26)
+        self.assertIn("noticiam historiae", scan26)
+        self.assertRegex(p91["verificationNote"], r"READ IMAGE scan 26 .*QVID SIT FIDES IVSTIFICANS")
+        self.assertIn("the heading QVID SIT FIDES IVSTIFICANS is NOT on this canvas",
+                      p91["verificationNote"])
         plan = (D / "SELF_PLAN.md").read_text(encoding="utf-8")
         current = plan.split("\n---\n", 1)[0]
         for token in ("волна 446", "215 REF", "215 PUBLICATION_HOLD",
