@@ -1,0 +1,416 @@
+{
+  "schemaVersion": 1,
+  "authority": "ИМЕНА БОГА/data/names_claim_registry_v1.json",
+  "id": "NAMES_READER_CHAPTER_CLAIM_CROSSWALK_V1",
+  "createdAt": "2026-11-11",
+  "status": "INTERNAL_RESEARCH_EDITORIAL_TRACE_ONLY_NOT_SCHOLARLY_PEER_REVIEW_OR_PUBLICATION_APPROVAL",
+  "description": "Manually selected subject-to-claim associations for three complete reader pilots, not a per-sentence proof, not an independent review of historical claims. Missing claim IDs explicitly expose editorial evidence gaps rather than inventing new ancient attestations.",
+  "publicationState": "BLOCKED",
+  "independentScholarlyReviewsAccepted": 0,
+  "productApprovals": 0,
+  "criticalManuscriptCollationsCompleted": 0,
+  "rightsClearanceGranted": false,
+  "readerChapterCount": 3,
+  "selectedSectionCount": 32,
+  "chapters": [
+    {
+      "chapterId": "CH-PILOT-01",
+      "path": "reader/CH-PILOT-01_WHAT_SCRIPTURE_CALLS_GODS_NAME.md",
+      "maxReaderWords": 3200,
+      "sections": [
+        {
+          "heading": "Имя — не просто слово",
+          "editorialRole": "EXACT_RESEARCH_CLAIM_MATCH",
+          "claimIds": [
+            "CLM-EX3-15-DIVINE-NAME",
+            "CLM-GEN22-14-PLACE-NAME",
+            "CLM-JUD6-23-24-PEACE-ALTAR"
+          ],
+          "claimSourceIds": [
+            "SRC-MT-MECHON"
+          ]
+        },
+        {
+          "heading": "Что услышал Моисей",
+          "editorialRole": "EXACT_RESEARCH_CLAIM_MATCH",
+          "claimIds": [
+            "CLM-EX3-EHYEH-DIVINE-REFERENT",
+            "CLM-EX3-15-DIVINE-NAME"
+          ],
+          "claimSourceIds": [
+            "SRC-MT-MECHON",
+            "SRC-RAHLFS-EXODUS3"
+          ]
+        },
+        {
+          "heading": "Что значит провозгласить имя",
+          "editorialRole": "EXACT_RESEARCH_CLAIM_MATCH",
+          "claimIds": [
+            "CLM-EX34-6-YHWH-RAHUM-HANNUN-NAME-ATTRIBUTES"
+          ],
+          "claimSourceIds": [
+            "SRC-MT-MECHON"
+          ]
+        },
+        {
+          "heading": "Как богословы объясняли это различие",
+          "editorialRole": "SECONDARY_ATTRIBUTED_NOT_IN_CLAIM_GRAPH",
+          "claimIds": [],
+          "claimSourceIds": [],
+          "unresolvedArgumentBoundary": "Gill, Berkhof and Bavinck selected excerpts are cited in chapter editorial apparatus but are not registered as individually audited CLM/SRC records; external dogmatic and edition review mandatory."
+        },
+        {
+          "heading": "Почему место может носить имя, в котором назван Бог",
+          "editorialRole": "EXACT_RESEARCH_CLAIM_MATCH",
+          "claimIds": [
+            "CLM-GEN22-14-PLACE-NAME",
+            "CLM-JUD6-23-24-PEACE-ALTAR",
+            "CLM-EX17-15-ALTAR-MT-LXX",
+            "CLM-GEN16-13-HAGAR-YHWH-NAME-CALLING"
+          ],
+          "claimSourceIds": [
+            "SRC-MT-MECHON",
+            "SRC-NET-EXODUS17",
+            "SRC-RAHLFS-EXODUS17"
+          ]
+        },
+        {
+          "heading": "Когда имя становится исповеданием",
+          "editorialRole": "EXACT_RESEARCH_CLAIM_MATCH",
+          "claimIds": [
+            "CLM-PS23-YHWH-MY-SHEPHERD",
+            "CLM-EX15-3-YHWH-NAME-IN-MOSES-ISRAEL-SONG"
+          ],
+          "claimSourceIds": [
+            "SRC-MT-MECHON"
+          ]
+        },
+        {
+          "heading": "Две ошибки, которых стоит избегать",
+          "editorialRole": "EXACT_RESEARCH_CLAIM_MATCH",
+          "claimIds": [
+            "CLM-GEN1-DEUT6-DIVINE-ELOHIM",
+            "CLM-EX20-OTHER-GODS-NEGATIVE"
+          ],
+          "claimSourceIds": [
+            "SRC-MT-MECHON"
+          ]
+        },
+        {
+          "heading": "Имя, перед которым живут",
+          "editorialRole": "EXACT_RESEARCH_CLAIM_MATCH",
+          "claimIds": [
+            "CLM-EX3-15-DIVINE-NAME",
+            "CLM-EX34-6-YHWH-RAHUM-HANNUN-NAME-ATTRIBUTES"
+          ],
+          "claimSourceIds": [
+            "SRC-MT-MECHON"
+          ]
+        }
+      ]
+    },
+    {
+      "chapterId": "CH-PILOT-02",
+      "path": "reader/CH-PILOT-02_YHWH_EHYEH_EXODUS_3_6.md",
+      "maxReaderWords": 3200,
+      "sections": [
+        {
+          "heading": "Не тот вопрос, с которого мы ожидали начать",
+          "editorialRole": "EXACT_RESEARCH_CLAIM_MATCH",
+          "claimIds": [
+            "CLM-EX3-EHYEH-DIVINE-REFERENT"
+          ],
+          "claimSourceIds": [
+            "SRC-MT-MECHON",
+            "SRC-RAHLFS-EXODUS3"
+          ]
+        },
+        {
+          "heading": "«Я буду с тобой»",
+          "editorialRole": "EXACT_RESEARCH_CLAIM_MATCH",
+          "claimIds": [
+            "CLM-EX3-EHYEH-DIVINE-REFERENT"
+          ],
+          "claimSourceIds": [
+            "SRC-MT-MECHON",
+            "SRC-RAHLFS-EXODUS3"
+          ]
+        },
+        {
+          "heading": "«Что мне сказать им?»",
+          "editorialRole": "EXACT_RESEARCH_CLAIM_MATCH",
+          "claimIds": [
+            "CLM-EX3-15-DIVINE-NAME"
+          ],
+          "claimSourceIds": [
+            "SRC-MT-MECHON"
+          ]
+        },
+        {
+          "heading": "«Я есмь» и «Я буду»: один текст, разные акценты",
+          "editorialRole": "EXACT_RESEARCH_CLAIM_MATCH",
+          "claimIds": [
+            "CLM-EX3-EHYEH-DIVINE-REFERENT"
+          ],
+          "claimSourceIds": [
+            "SRC-MT-MECHON",
+            "SRC-RAHLFS-EXODUS3"
+          ]
+        },
+        {
+          "heading": "Четыре согласных, имя и память",
+          "editorialRole": "EXACT_RESEARCH_CLAIM_MATCH",
+          "claimIds": [
+            "CLM-EX3-15-DIVINE-NAME",
+            "CLM-YHWH-HISTORICAL-PRONUNCIATION"
+          ],
+          "claimSourceIds": [
+            "SRC-MT-MECHON",
+            "SRC-ROESEL-2007",
+            "SRC-TMSJ-VALDIZAN-EX3-2024"
+          ]
+        },
+        {
+          "heading": "Как прозвучал ответ по-гречески",
+          "editorialRole": "EXACT_RESEARCH_CLAIM_MATCH",
+          "claimIds": [
+            "CLM-EX3-EHYEH-DIVINE-REFERENT",
+            "CLM-LXX-EX3-JOHN8-DIFFERENT-CLAUSES"
+          ],
+          "claimSourceIds": [
+            "SRC-MT-MECHON",
+            "SRC-RAHLFS-EXODUS3",
+            "SRC-SBLGNT-DIGITAL-NT"
+          ]
+        },
+        {
+          "heading": "Почему Бог вновь говорит об имени",
+          "editorialRole": "EXACT_RESEARCH_CLAIM_MATCH",
+          "claimIds": [
+            "CLM-ELSHADDAI-EX6-RETROSPECTIVE-REVELATION",
+            "CLM-EX3-15-DIVINE-NAME"
+          ],
+          "claimSourceIds": [
+            "SRC-MT-MECHON",
+            "SRC-NET-EXO6"
+          ]
+        },
+        {
+          "heading": "Не знать звука — или ещё не увидеть исполнения?",
+          "editorialRole": "EXACT_RESEARCH_CLAIM_MATCH",
+          "claimIds": [
+            "CLM-ELSHADDAI-EX6-RETROSPECTIVE-REVELATION",
+            "CLM-YHWH-HISTORICAL-PRONUNCIATION"
+          ],
+          "claimSourceIds": [
+            "SRC-MT-MECHON",
+            "SRC-NET-EXO6",
+            "SRC-ROESEL-2007",
+            "SRC-TMSJ-VALDIZAN-EX3-2024"
+          ]
+        },
+        {
+          "heading": "Бог раскрывает имя делами",
+          "editorialRole": "EXACT_RESEARCH_CLAIM_MATCH",
+          "claimIds": [
+            "CLM-ELSHADDAI-EX6-RETROSPECTIVE-REVELATION"
+          ],
+          "claimSourceIds": [
+            "SRC-MT-MECHON",
+            "SRC-NET-EXO6"
+          ]
+        },
+        {
+          "heading": "От ответа у куста к песне освобождённых",
+          "editorialRole": "EXACT_RESEARCH_CLAIM_MATCH",
+          "claimIds": [
+            "CLM-EX15-3-YHWH-NAME-IN-MOSES-ISRAEL-SONG",
+            "CLM-YAH-EX15-2-SUNG-ABBREVIATED-NAME"
+          ],
+          "claimSourceIds": [
+            "SRC-JBQ-YAH-2014",
+            "SRC-MT-MECHON"
+          ]
+        },
+        {
+          "heading": "Имя и верность",
+          "editorialRole": "EXACT_RESEARCH_CLAIM_MATCH",
+          "claimIds": [
+            "CLM-EX3-15-DIVINE-NAME",
+            "CLM-EX3-EHYEH-DIVINE-REFERENT"
+          ],
+          "claimSourceIds": [
+            "SRC-MT-MECHON",
+            "SRC-RAHLFS-EXODUS3"
+          ]
+        }
+      ]
+    },
+    {
+      "chapterId": "CH-PILOT-03",
+      "path": "reader/CH-PILOT-03_EL_ELOHIM_SHADDAI.md",
+      "maxReaderWords": 3600,
+      "requiredAppendixHeading": "Исследовательское приложение — Дейр-Алла: первичные отчёты, реконструкции, споры и изображения",
+      "maxEmbeddedImagesInReader": 1,
+      "sections": [
+        {
+          "heading": "Когда одного русского слова оказывается недостаточно",
+          "editorialRole": "EXACT_RESEARCH_CLAIM_MATCH",
+          "claimIds": [
+            "CLM-GEN1-DEUT6-DIVINE-ELOHIM"
+          ],
+          "claimSourceIds": [
+            "SRC-MT-MECHON"
+          ]
+        },
+        {
+          "heading": "Бог, Который сотворил",
+          "editorialRole": "EXACT_RESEARCH_CLAIM_MATCH",
+          "claimIds": [
+            "CLM-GEN1-DEUT6-DIVINE-ELOHIM"
+          ],
+          "claimSourceIds": [
+            "SRC-MT-MECHON"
+          ]
+        },
+        {
+          "heading": "То же слово — иной смысл",
+          "editorialRole": "EXACT_RESEARCH_CLAIM_MATCH",
+          "claimIds": [
+            "CLM-EX20-OTHER-GODS-NEGATIVE"
+          ],
+          "claimSourceIds": [
+            "SRC-MT-MECHON"
+          ]
+        },
+        {
+          "heading": "Одно семейство слов — не одно и то же имя",
+          "editorialRole": "EXACT_RESEARCH_CLAIM_MATCH",
+          "claimIds": [
+            "CLM-DEUT32-15-ELOAH-REJECTED-CREATOR",
+            "CLM-DAN2-18-19-ELAH-SHMAYA-PETITION-PRAISE",
+            "CLM-EX34-DEUT32-POSITIVE-EL"
+          ],
+          "claimSourceIds": [
+            "SRC-DANIEL-ARAMAIC",
+            "SRC-MT-MECHON"
+          ]
+        },
+        {
+          "heading": "Благословение после битвы",
+          "editorialRole": "EXACT_RESEARCH_CLAIM_MATCH",
+          "claimIds": [
+            "CLM-ELYON-GEN14-18-PRIEST-NARRATOR",
+            "CLM-ELYON-GEN14-19-20-PRIEST-BLESS-DOXOLOGY"
+          ],
+          "claimSourceIds": [
+            "SRC-MT-MECHON",
+            "SRC-NET-GEN14"
+          ]
+        },
+        {
+          "heading": "Всевышний — не словарная этикетка",
+          "editorialRole": "EXACT_RESEARCH_CLAIM_MATCH",
+          "claimIds": [
+            "CLM-ELYON-GEN14-22-ABRAM-YHWH-OATH"
+          ],
+          "claimSourceIds": [
+            "SRC-CARGILL-2019",
+            "SRC-MT-MECHON",
+            "SRC-NET-GEN14"
+          ]
+        },
+        {
+          "heading": "Бог говорит: «Я — Эль Шаддай»",
+          "editorialRole": "EXACT_RESEARCH_CLAIM_MATCH",
+          "claimIds": [
+            "CLM-ELSHADDAI-GEN17-35-DIVINE-SELF",
+            "CLM-ELSHADDAI-GEN28-ISAAC-BLESSING",
+            "CLM-GEN35-7-EL-BETHEL-PLACE"
+          ],
+          "claimSourceIds": [
+            "SRC-MT-MECHON"
+          ]
+        },
+        {
+          "heading": "Что означает «Шаддай»?",
+          "editorialRole": "EVIDENCE_MAPPED_WITH_SCHOLARLY_GAP",
+          "claimIds": [
+            "CLM-ELSHADDAI-GEN17-35-DIVINE-SELF"
+          ],
+          "claimSourceIds": [
+            "SRC-MT-MECHON"
+          ],
+          "unresolvedArgumentBoundary": "Competing Wilson-Wright / Krogevoll / Dewrell etymologies have unequal full-text access; no independent comparative-grammar critical assessment or final original etymology."
+        },
+        {
+          "heading": "Дейр-Алла: древняя находка и пределы сравнения",
+          "editorialRole": "EVIDENCE_MAPPED_WITH_SCHOLARLY_GAP",
+          "claimIds": [
+            "CLM-ELSHADDAI-GEN17-35-DIVINE-SELF"
+          ],
+          "claimSourceIds": [
+            "SRC-MT-MECHON"
+          ],
+          "supplementalSourceIds": [
+            "SRC-IMG-DEIRALLA-LENDERING-LIVIUS-CC0",
+            "SRC-SCHOLAR-SAUNDERS-DEIRALLA-2024",
+            "SRC-LIVIUS-LEVINE-COMPOSITE-TRANSLATION-2003"
+          ],
+          "unresolvedArgumentBoundary": "Shdyn is not a demonstrated original Bible lexeme; bronze/iron-age inscription cannot certify Genesis 17:1 word origin. Detailed archaeological sources reside in appendix."
+        },
+        {
+          "heading": "Когда «Шаддай» звучит без «Эль»",
+          "editorialRole": "BIBLICAL_LOCI_NOT_IN_LOCKED_105_ATTESTATIONS",
+          "claimIds": [],
+          "claimSourceIds": [],
+          "unresolvedArgumentBoundary": "Ruth 1:20–21 (Naomi) and Job 5:17 / 42:7 (Eliphaz and divine judgment) have textual discussion in chapter, but no dedicated current CLM/ATT trace; later independent scholarly mapping needed."
+        },
+        {
+          "heading": "От Аврама к Моисею",
+          "editorialRole": "EXACT_RESEARCH_CLAIM_MATCH",
+          "claimIds": [
+            "CLM-ELSHADDAI-EX6-RETROSPECTIVE-REVELATION"
+          ],
+          "claimSourceIds": [
+            "SRC-MT-MECHON",
+            "SRC-NET-EXO6"
+          ]
+        },
+        {
+          "heading": "Как одно слово меняет референт",
+          "editorialRole": "EXACT_RESEARCH_CLAIM_MATCH",
+          "claimIds": [
+            "CLM-EX20-OTHER-GODS-NEGATIVE",
+            "CLM-DEUT32-12-FOREIGN-EL-NEGATED",
+            "CLM-DEUT32-15-ELOAH-REJECTED-CREATOR"
+          ],
+          "claimSourceIds": [
+            "SRC-MT-MECHON"
+          ]
+        },
+        {
+          "heading": "Один Господь, разные слова свидетельства",
+          "editorialRole": "EXACT_RESEARCH_CLAIM_MATCH",
+          "claimIds": [
+            "CLM-GEN1-DEUT6-DIVINE-ELOHIM",
+            "CLM-ELSHADDAI-GEN17-35-DIVINE-SELF",
+            "CLM-ELYON-GEN14-22-ABRAM-YHWH-OATH"
+          ],
+          "claimSourceIds": [
+            "SRC-CARGILL-2019",
+            "SRC-MT-MECHON",
+            "SRC-NET-GEN14"
+          ]
+        }
+      ]
+    }
+  ],
+  "knownHolds": [
+    "Secondary dogmatic sources Gill/Berkhof/Bavinck in CH01 have no individual CLM/SRC crosswalk; their chapter apparatus is source-list evidence, not certification.",
+    "Ruth1:20–21 and Job5:17 in CH03 are not in locked 105 attestation IDs; any new registered source/claim requires independent locators/review.",
+    "Reader CH03 Shaddai and Deir Alla subarguments rely on explicitly disputed secondary scientific models and incomplete originals.",
+    "Reader text does not provide sentence-by-sentence tracing; this section-based map is the first auditable layer, not a publication sign-off.",
+    "Yeivin and Breuer original printed apparatus and other critical manuscripts plus rights/scholarly peer-review still missing."
+  ]
+}
