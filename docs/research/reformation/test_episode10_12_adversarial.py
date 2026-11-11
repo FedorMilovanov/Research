@@ -145,7 +145,7 @@ class ReformationAdversarialTenTwelve(unittest.TestCase):
     def test_registry_claims_and_plan_fail_closed(self):
         src = json.loads((HERE / "source-registry-v1.json").read_text(encoding="utf-8"))
         self.assertEqual(src["sourceCount"], len(src["sources"]))
-        self.assertEqual(src["sourceCount"], 204)
+        self.assertEqual(src["sourceCount"], 205)
         self.assertTrue(all(row["publicationState"] == "REFERENCE"
                             and "PUBLICATION_HOLD" in row["holds"]
                             for row in src["sources"]))

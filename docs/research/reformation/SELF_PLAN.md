@@ -1,6 +1,22 @@
 # САМОПЛАН «Реформации» — живая доска исполнения, границы поиска и сборка книги
 
-## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 432, 11.11.2026 (RF-H08-NANTES-PARTICULAR-ARTICLE-DATING)
+## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 433, 11.11.2026 (RF-H08-NEWBERRY-1622-PRIMARY-PRINT-EVIDENCE)
+
+**Вход:** [PR #461](https://github.com/FedorMilovanov/Research/pull/461) MERGED, точный `Research/main = ed28e885fd423154a0a6bda8e6b637e78cd29716`, независимый post-merge **5/5 CI SUCCESS**, Reformation **138/138 PASS**. Единственный новый целевой PR отдела «Реформация» в этой волне, без Product и вмешательства в соседние PR.
+
+**Реальный новый первичный свидетель:** на авторизованном домашнем компьютере впервые получена, SHA256 проверена и по оригинальным изображениям частично коллирована историческая печать `Articles particuliers` **Paris 1622**, хранившаяся в **Newberry Library, Case F 39 .326 1622frm**, оцифрована через [Internet Archive (`articlesparticul00fran`)](https://archive.org/details/articlesparticul00fran). Сам титул PDF p3 содержит `M.DCXXII` (1622), а не 1598. Скачан **2,784,696-byte PDF SHA256 `d8481415ed48ad4f283e0dd9dc6426bdc511c2c3e6e858bd07d53a7e3c705356`**, сопутствующий OCR 34,832 byte SHA256 `2389623ecd67cded96cc887e226a7e81db6de6febfe265a70a95c7d7d317a237`. Подлинная печать 1598 FRBNF33814462 и отдельная печать 1621 FRBNF33814457 **не стали прочитанными**; BGE ранняя XI тоже HOLD.
+
+**Первичные локаторы:** PDF p5/печ.3 — приказ о регистрации `seront registrez`; p14/печ.12 — прямая ст. XXXIII об одной площадке в пределах пяти лье от Парижа, начало XXXIV; p15/печ.13 — детали консисторий и синодов (с разрешением короля); p24/печ.22 — `Fait Par le Roy ... le deuxiesme jour de May mil cinq cens quatre vingts dix huict`, отдельное королевское распоряжение; p25/печ.23 — дата 2 May 1598 в распоряжении. **Приказ регистрировать != доказательство исполненной регистрации.** Бост REF-S101 утверждает, что парламентская регистрация особых статей в действительности не была проведена. 1622 — первичный свидетель самого печатного текста 1622 года, позднейшее свидетельство событий 1598-го, не автограф 1598.
+
+**Два результата волны:**
+1. Историко-читательская глава 11 теперь добавляет ст. XXXIV как **ограниченную практику только уже дозволенных общин**, уточняет 1622 источник датировки и границу между приказом и действием. Аппарат, C301–C302, предметное досье и H-08 получают точные листы и `REF-P87`.
+2. Создать **одну полноценную регистрационную строку для нового первичного физического свидетеля `REF-P87`** (не подменять старые источники), и одну acquisition receipt со SHA256 и частным путём. **Источник теперь 205-й**, 16 точечных acquisition записей, C1–C319 и 14 частей неизменны. Обновить статические источниковые инварианты в существующих тестах; запретить повысить 1622 до оригинала 1598 или снять RIGHTS_HOLD и PUBLICATION_HOLD.
+
+**Gate:** не добавлять бинарники/фото и новые файлы в Git; только существующие документы, JSON и тесты отдела. Валидатор, полный Reformation unittest, 5/5 exact-head CI, squash merge только на терминально зелёном, затем независимые 5/5 postmerge. `RESEARCH_MANUSCRIPT_DRAFT / NOT_EDITORIAL_READY / ORIGINAL_ART33_PRINT_COLLATION_HOLD / 1598_SIGNED_ARTICLES_DIRECT_READ_HOLD / FULL_DIPLOMATIC_XI_COLLATION_HOLD / F28R_SIDE_UNCONFIRMED / REGISTRATION_EXECUTION_HOLD / INDEPENDENT_EXTERNAL_REVIEW_OPEN / THEOLOGICAL_PEER_REVIEW_OPEN / RIGHTS_HOLD / EDITORIAL_HANDOFF_HOLD / PUBLICATION_HOLD` сохраняются.
+
+---
+
+## ИСТОРИЧЕСКИЙ СРЕЗ ВОЛНЫ 432 — не действующий паспорт (RF-H08-NANTES-PARTICULAR-ARTICLE-DATING)
 
 **Вход проверен:** PR [#460](https://github.com/FedorMilovanov/Research/pull/460) MERGED; `Research/main = 94e51bd5261ab6a477b4347d146f19d00ec89e6b`, независимый **postmerge 5/5 SUCCESS**, Reformation **137/137 PASS**. Корпус — 14 глав/частей, 204 источника, C1–C319. Других открытых PR отдела «Реформация» на входе нет, чужие PR не трогать.
 
