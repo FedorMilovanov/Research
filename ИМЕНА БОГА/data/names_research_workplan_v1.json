@@ -13,7 +13,7 @@
     "extensionRecords": 13,
     "contextAttestations": 105,
     "sourceRegisterEntries": 115,
-    "regressionTests": 308,
+    "regressionTests": 309,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
     "allSixCiChecks": "PRIOR_91D074C0C51031072FF25743EB1235A465B2910A_EXACT_6_SUCCESS_NEW_WAVE51_53_SHA_PENDING",
@@ -848,8 +848,9 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-11",
-    "planStatus": "Wave51/52/53 — previous exact 91d074c0 GitHub workflows 6/6 SUCCESS. CH-PILOT-03 reader narrative reduced 5451 -> 3109 whitespace tokens by extracting lengthy Deir Alla science into preserved internal appendix, one actual CC0 original museum photograph remains in narrative; no research text or citations deleted. New source/claim section crosswalk for all 3 reader pilots: 32 headings, 25 distinct existing research-held CLM IDs, 15 unique directly traceable SRC IDs including supplemental artifact refs, 18 adversarial tests in CI. Known incomplete mapping for Gill/Berkhof/Bavinck, Ruth1/Job5/42, and Shaddai etymology/Deir Alla explicitly flagged; no fabricated link or scientific approval. 115 source records, 105 attestations, 87 Research HOLD claims, 75 typed relations, 308 original core mutation tests unchanged; new reader suite +18. External critical manuscripts, independent peer reviews, rights, Product remain 0. NG04 blocked and NG14 in progress, no task state falsely closed. New exact head CI pending.",
+    "planStatus": "Wave54: official complete 25-page 2002 Ofer English author text read, Exod17:16 single word according to historical Sappir/Zer Q137 and concordant case, not among four discrepancies; unchanged independent ancient lost folio, Hebrew facsimile / Yeivin82 / Breuer260-261, scholarly/rights/Product HOLD. 115 sources/105 attestations/87 claims, 309 core negative regression tests after adding exact author-proof guard. Research draft only; new CI pending.",
     "workCompleted": [
+      "Wave54: direct official HUJI Textus21 original PDF 25/25 English text; footnote32 Exodus17:16 one word via Sappir/Zer1986 and comparative list(b) concordant. Hebrew OCR characters unreliable; no original Aleppo folio or original Yeivin/Breuer book pages, rights/scholarly/Product HOLD. Existing source access updated, one new fail-closed test; 309 core tests, 115 source records, NG04 BLOCKED_SOURCE.",
       "Wave53: synchronize updatedAt, current chapter size/status, chapter evidence map, 18 reader mutation tests and release boundaries across machine editorial execution. Preserve statuses NG04 BLOCKED_SOURCE and NG13/15 BLOCKED_DEPENDENCY, 0 external scholarly reviewer approvals and 0 Product/rights release.",
       "Wave52: Three CH-PILOT readers: 32 narrative headings explicitly tied to 25 existing CLM IDs and their exact stored SRC IDs where appropriate, missing proof scopes labelled without inventing source/claim. New validation and 18 negative tests in same original research workflow; old 308 mutation tests unchanged.",
       "Wave51: CH03 main reader section Deir Alla condensed from ≈2651 to 309 words, all long-form evidence plus ~30 citations and two illustration blocks retained in existing editorial appendix. Reader body measured ≈3109 words, photo of actual ancient fragments still attributed CC0. No scientific claims silently removed or promoted.",
