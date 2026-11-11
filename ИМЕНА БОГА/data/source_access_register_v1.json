@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 116,
+    "sourceRecords": 117,
     "approvedForProduct": 0
   },
   "records": [
@@ -4431,6 +4431,36 @@
       "full2022ThesisRetrieved": true,
       "full2025RevisedBookRead": false,
       "independentAncientTextCollation": false
+    },
+    {
+      "id": "SRC-BROOKE-MCLEAN-LXX-EX17-16-CAMBRIDGE-1909-P211",
+      "title": "The Old Testament in Greek according to Codex Vaticanus, Vol. I Part II: Exodus and Leviticus, apparatus to Exodus 17:16",
+      "creator": "Alan England Brooke and Norman McLean",
+      "year": 1909,
+      "url": "https://tmcdaniel.palmerseminary.edu/Brooke%26McLean/LXX_Brooke%26McLean_1-2.pdf",
+      "locator": "Printed p.211, Exodus 17:16, PDF page index 69 (zero-based); original scanned PDF 21,487,619 bytes",
+      "objectType": "historical_greek_critical_edition_printed_apparatus",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "sourceObjectState": "Original 1909 source PDF downloaded and page 211 rendered locally to images; main Greek verse and critical apparatus directly visually read at magnification. Text has kryphaia; apparatus lists orthographic kryphia (printed sigla chkm), alternate krataia (d), insertion + ky in a set of witnesses and Justin citation with rearranged kryphia cheiri. Exact sigla expansion and manuscript weighting unverified. No Göttingen 1991 apparatus or ancient codex leaf directly inspected.",
+      "supportedUse": "Attribute different manuscript and patristic variant classes to the printed Cambridge 1909 critical apparatus, page 211; distinguish orthographic variants from lexical and expansion variants; compare separately with Rahlfs-Hanhart printed Greek and NETS translated Wevers Greek text.",
+      "forbiddenUse": "Claim original Göttingen 1991 apparatus read, ancient manuscript autopsy, definitive Greek Vorlage or Hebrew etymology from this edited printed apparatus, verified publication rights in a scanned edition, unverified individual codex names from abbreviated sigla.",
+      "evidenceClass": "A2",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "criticalEditionCollated": false,
+      "sourceRole": "CAMBRIDGE_1909_PRINTED_LXX_EX17_16_CRITICAL_VARIANTS_DIRECT_FACSIMILE_NOT_GOTTINGEN_OR_MANUSCRIPT",
+      "printedPage": 211,
+      "pdfIndexZeroBased": 69,
+      "originalPageFacsimileChecked": true,
+      "gottingen1991ApparatusChecked": false,
+      "ancientCodexCollationCompleted": false,
+      "allSiglaExpanded": false
     }
   ],
   "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716 | WAVE49_2026-11-11_OFER2003_YEIVIN82_AUTHOR_CROSSWALK_PSALM_ISAIAH_NOT_EXODUS | WAVE50_2026-11-11_PESACHIM117A_TASHBETZ_I177_AHS_YD27524_HISTORICAL_DISPUTE_NOT_CODEX_AUTOPSY | WAVE54_2026-11-11_HUJI_OFER2002_25P_ENGLISH_EX17_16_SINGLE_CONCORDANT_NOT_DISCREPANT_HOLDS"
