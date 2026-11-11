@@ -16,7 +16,7 @@
     "regressionTests": 300,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_C604895F_EXACT_6_SUCCESS_WAVE42_NEW_SHA_PENDING",
+    "allSixCiChecks": "PRIOR_9E93F215_EXACT_6_SUCCESS_NEW_SHA_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "c604895fa217df20ffc2f9b32a4fe14dca34fb76"
+    "lastConfirmedAllSixChecksSha": "9e93f215fc560f54b014f3d9920d30e9b43b0fed"
   },
   "allowedStatuses": [
     "DONE",
@@ -338,7 +338,8 @@
         "SRC-GOSHEN-GOTTSTEIN-TEXTUS2-1962-JTS729",
         "23_YIREH_NISSI_ANSWER_PLACE_MOUNTAIN_EDITION_CRUX_20261107.md § Wave35 Goshen-Gottstein 1962 and Zer 1986 unresolved authorship",
         "SRC-SAPIR-EVEN-SAPIR-1866-CH6-PRIMARY-AUTHOR",
-        "23_YIREH_NISSI_ANSWER_PLACE_MOUNTAIN_EDITION_CRUX_20261107.md § Wave36 Saphir direct author statement in 1989 digital transcription"
+        "23_YIREH_NISSI_ANSWER_PLACE_MOUNTAIN_EDITION_CRUX_20261107.md § Wave36 Saphir direct author statement in 1989 digital transcription",
+        "Wave42 historical PRINT: source SRC-HALEVANON-18630611-ISSUE5-EX17-16-ORIGINAL and dossier23; 11 June 1863 issue 5 print p32 reads כס יה חדא מלה, direct source printed evidence, NOT extant Aleppo codex photograph, not JTS729 autograph, not manuscript critical apparatus. NG04 stays BLOCKED_SOURCE."
       ],
       "verification": "NOT_APPLICABLE_UNTIL_DONE",
       "closureAt": null,
@@ -592,7 +593,7 @@
       "id": "NG-14",
       "priority": "P2",
       "title": "Аудит исходников двух сайтов Arena, RTL, рёбер графа и переводов",
-      "status": "BLOCKED_ARTIFACT",
+      "status": "IN_PROGRESS",
       "dependsOn": [
         "NG-02"
       ],
@@ -601,9 +602,10 @@
       ],
       "evidence": [
         "01_NAMES_LEXICAL_SOURCE_AND_ARENA_AUDIT.md",
-        "BA-01..BA-12"
+        "BA-01..BA-12",
+        "AuditRepo PR #538, current tested prototype lab branch https://github.com/FedorMilovanov/AuditRepo/pull/538: projects/gb-is-my-strength/prototype/imena-boga/README.md confirms originals/ four unique Arena ZIP, provenance/original-manifest.json, reference/atlas and reference/sozvezdie immutable originals. Cross-repo artifact-presence blocker removed on 2026-11-11; BA-01..BA-12 independent runtime completion remains unverified; this task is IN_PROGRESS not DONE. AuditRepo checkpoint 244f983535ffae64ac1b4c4862145e2aff20a5af"
       ],
-      "verification": "NOT_APPLICABLE_UNTIL_DONE",
+      "verification": "PARTIAL_CROSS_REPO_ORIGINALS_CONFIRMED_BA01_12_RUNTIME_ACCEPTANCE_PENDING",
       "closureAt": null,
       "owner": "Research editorial"
     },
@@ -754,7 +756,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "WAVE37 2026-11-11: direct original Zer Leshonenu50 1986 p151 image shows full name ר' יעקב זאב ברלין; source Saphir modern transcription says ר' יעקב זאב without Berlin, Goshen1962 OCR calls historical courier Jacob Berlin. Additional 2023 Yossi Peretz/Shlomo Golan VaV Ketia article original PDF p67 (pdf index16) visually read, cites same full name. Support editorial crosswalk of historically named courier, NOT independent civil/birth/death/genealogical person identification; no original JTS signature. Preserve literal source-specific spellings, no inserted surname into Saphir text. This scholarly 2023 item corroboration recorded inside existing Zer source (no additional source record for indirect corroboration): 107 distinct published/source objects; 296 core negative tests, 105 attestation/87 claims, 0 ancient photo/critical collations and 0 peer/Product/reuse approvals. Previous af41487c 6/6 exact CI SUCCESS, new SHA pending. Continue real manuscript/1863 newspaper Ex17:16 photo, Yeivin p82/Breuer1977 pp260–261 access; NG04 BLOCKED_SOURCE and NG05 OPEN. Same Draft PR379 only, no main merge, Product/site/branch changes.",
+  "nextAction": "WAVE43 2026-11-11: Original Ha-Levanon 11 June 1863 issue5 print pp25-32 now read; Ex17:16 historical note says חדא מלה (one word), while printed glyph spacing alone cannot establish ancient codex word division. 108 distinct source objects, 300 core regressions, 105 attestations, 87 provisional claims; 0 ancient manuscript critical photo collations, 0 independent scholarly/Product/rights approvals. NG-04 BLOCKED_SOURCE: next seek JTS L729 original images, Yeivin p82, Breuer 1976/77 pp260-261, BHS/Göttingen apparatus without inventing unpublished BHQ Exodus; NG-05 OPEN. NG-14 IN_PROGRESS after confirmed AuditRepo PR538 original four Arena ZIP + provenance; BA-01..BA-12 runtime acceptance still open. Prior exact Research 9e93f215fc560f54b014f3d9920d30e9b43b0fed CI 6/6 SUCCESS; this documentation SHA requires new terminal checks. No site/Product writes or new PR/branches.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -836,8 +838,9 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-11",
-    "planStatus": "WAVE42: full original NLI 18630611_01.pdf issue5 686922 bytes sha256 16270eaf4d3165fae17d1ca8e944e5e47085d0dfa7535944c36754a0ad29cc1d visually read, 8 pages pp25-32; print p32 right column confirms Exodus17:16 י״ז ט״ז כס יה חדא מלה והס׳ בשוא וההא במפיק. Newspaper first-hand historical print claim one word, NOT ancient Aleppo Codex/JTS729. Original source row 108 separate from Penkower1981 secondary; 300 core tests, 105 attestations/87 claims, zero ancient critical photo collations or publication approvals. NG04 BLOCKED_SOURCE, rights/Product HOLD, prior c604895f CI6/6 success new SHA pending.",
+    "planStatus": "WAVE42: full original NLI 18630611_01.pdf issue5 686922 bytes sha256 16270eaf4d3165fae17d1ca8e944e5e47085d0dfa7535944c36754a0ad29cc1d visually read, 8 pages pp25-32; print p32 right column confirms Exodus17:16 י״ז ט״ז כס יה חדא מלה והס׳ בשוא וההא במפיק. Newspaper first-hand historical print claim one word, NOT ancient Aleppo Codex/JTS729. Original source row 108 separate from Penkower1981 secondary; 300 core tests, 105 attestations/87 claims, zero ancient critical photo collations or publication approvals. NG04 BLOCKED_SOURCE, rights/Product HOLD; prior 9e93f215 exact six CI SUCCESS, this documentation SHA pending.",
     "workCompleted": [
+      "Wave43 coordination: verified AuditRepo PR538 source/immutable original Arena ZIP archival provenance; NG-14 moved BLOCKED_ARTIFACT -> IN_PROGRESS, not DONE (12 BA runtime witnesses still require acceptance). Wave42 primary print evidence appended to NG-04 but critical apparatus/codex HOLD kept.",
       "Wave42: original newspaper printed p32 Ex17:16 one-word report independently verified; new original-1863 newspaper bibliographic source separate from Penkower; source/test baseline 108/300 and negative no-ancient-codex/rights regression.",
       "Wave41: corrected false identification 9 July 1863 as Ha-Levanon issue5 by direct examination of user-provided full issue6 July9 8p PDF pages33-40. Crosswalk to official June11 prior issue and download page without claiming June photographed original read. Machine guard prevents changing issue6 to issue5 or June masthead flag without evidence.",
       "Wave40: documented 8 photo-covered question IDs noted in Zer1986 n9, page-checked the list for Genesis27 and Deut4-6; preserved 430-vs-422 conflict and duplicate 339 row as distinct concerns. One negative test guards candidate explanation not being promoted into verified history; synchronized 298 test baseline.",
