@@ -16,7 +16,7 @@
     "regressionTests": 309,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_CF6FE4F_6_OF_6_SUCCESS_720_TESTS_NEW_WAVE57_HEAD_PENDING",
+    "allSixCiChecks": "PRIOR_W57_636BF930_EXACT_6_OF_6_SUCCESS_720_TESTS_NEW_W58_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "cf6fe4f05724266e9eb95f8d410d33902b06a95f",
+    "lastConfirmedAllSixChecksSha": "636bf9306bfbef14d58ef26f2d0c9648e6e5b6c1",
     "readerChapterCount": 3,
     "readerSectionCrosswalkCount": 32,
     "readerCrosswalkLinkedDistinctClaims": 25,
@@ -571,7 +571,8 @@
         "Earliest 1967 photographic notice locator: H J Franken, Texts from the Persian Period from Tell Deir Alla, Vetus Testamentum 17/4 (1967) 480–481 DOI 10.1163/156853367X00187; FIRST PHOTO is reported in the already-registered original André Lemaire CRAI1985 p271, not directly autopsied. https://doi.org/10.1163/156853367X00187",
         "Israel Antiquities Authority archive current information https://archives.iaa.org.il/ShowFolder.aspx?id=33 (Mandate 1919–1948 collections; NOT demonstration it contains 1967 negatives; possible research inquiry through iaa.archive.r@israntique.org.il). No email sent.",
         "JSTOR official 1967 first paper https://www.jstor.org/stable/1516696; read-only TinyFish browser showed printed p480 only (English preliminary note, no inscription photo). Printed p481 NOT viewed: account/library login required. The alleged earliest photograph still only Lemaire 1985 retrospective testimony; do not infer absence/presence or IR character of p481. JSTOR issue TOC identifies following Pierre Grelot note begins p481.",
-        "09 Nov 2026 direct publisher visual access: Sidestone Steiner/Wagemakers 2019 printed p143 = bookviewer index145; ACTUAL Fig5.16 photographic pixels show Combination I montage, labels i a/i b/i c/i d and line numbers, Fig5.17 pixels show above-line correction. https://www.sidestone.com/bookviewer/9789088908736. 2019 reproduction only: NOT original 1976 Brill plates, NOT independent shdyn glyph collation, NOT 1967 infrared photo match, NOT rights permission."
+        "09 Nov 2026 direct publisher visual access: Sidestone Steiner/Wagemakers 2019 printed p143 = bookviewer index145; ACTUAL Fig5.16 photographic pixels show Combination I montage, labels i a/i b/i c/i d and line numbers, Fig5.17 pixels show above-line correction. https://www.sidestone.com/bookviewer/9789088908736. 2019 reproduction only: NOT original 1976 Brill plates, NOT independent shdyn glyph collation, NOT 1967 infrared photo match, NOT rights permission.",
+        "W58 2026-11-12: directly read MT Isa13:6 (https://mechon-mamre.org/p/pt/pt1013.htm), Joel1:15 and 1:10 (https://mechon-mamre.org/p/pt/pt1401.htm): שֹׁד/שַׁדַּי wordplay, שֻׁדַּד in Joel1:10, NOT established historical etymology. Dewrell2024 EBSCO Humanities Source full text indexed https://iris.sena.edu.co/EdsRecord/hus,176933521 but login wall; original article pp297–302 NOT read, FULL_ARGUMENT_HOLD; no SRC/ATT/CLM, critical collation or release."
       ],
       "verification": "NOT_APPLICABLE_UNTIL_DONE",
       "closureAt": null,
@@ -766,7 +767,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "2026-11-12 W57 narrow editorial/source sync in existing Draft PR #379: 118 source records (not 115), 105 attestations, 87 provisional claims, 75 relations; last exact-head confirmed cf6fe4f 6/6 GitHub Actions and 720/720 structural tests. Linked official Kruger 2023 publisher erratum a3039 (heading-only correction, DOI 10.4102/ids.v57i1.3039) to existing SRC-KRUGER record without minting an independent witness; consolidated duplicate CH03 bibliographic bullet without changing its main reader. New Wave57 SHA requires independent exact-head 6/6 CI before acceptance. Continue unresolved NG04/10/11/12 critical-source work including Dewrell2024 full paper, Yeivin p82, Breuer pp260-261 n1, Göttingen Exodus1991/BHS, and original 1976 Deir Alla plates; keep 0 critical collations, independent peer approvals, Product approvals and rights authorizations; NG13/15 and all public release gates remain blocked.",
+  "nextAction": "2026-11-12 W58 Research Draft PR #379 (same original branch) Shadday/√šdd evidence boundary: directly read digitally edited MT Isa13:6 and Joel1:15 כְּשֹׁד מִשַּׁדַּי, plus Joel1:10 שֻׁדַּד; rhetorical sound-play is attested, historical root/phonology and -ay morphology remain unproved. Dewrell 2024 Vetus Testamentum 74/2 pp297-302 EBSCO Humanities Source record lists HTML/PDF full text but returns LOGIN_REQUIRED to guest (https://iris.sena.edu.co/EdsRecord/hus,176933521); abstract-only author argument FULL_ARGUMENT_HOLD. Added evidence in existing dossier03 and CH03 scholarly appendix; no new source ID or ancient attestation, source count remains 118 /105 contextual attestations /87 provisional claims /75 links. Prior W57 SHA 636bf930 6/6 terminal GitHub Actions SUCCESS and 720/720 structural tests; new W58 SHA CI pending. Next obtain legitimate article access and critically analyze morphological derivation and opposing Wilson-Wright/Krogevoll arguments; separately pursue Yeivin p82, Breuer pp260–261 n1, Göttingen Exodus1991/BHS and 1976 Deir Alla plates. NG04/10/11/12 BLOCKED_SOURCE, scholarly/rights/Product 0, NG13/15 dependency HOLD, no main/Product/site release.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -848,8 +849,9 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-12",
-    "planStatus": "W57 narrow Kruger erratum / deduplicated CH03 bibliography / current PR-workplan synchronization; 118 sources, 105 attestation IDs, 87 provisional claims and 75 relations. Prior cf6fe4f 6/6 terminal CI, 720/720 structural tests; new Wave57 exact-SHA GitHub CI pending. No claim, rights, scientific, Product, main or site release.",
+    "planStatus": "W58 direct Isaiah13:6 / Joel1:15/1:10 literary wordplay vs unproved Dewrell 2024 etymology, EBSCO Humanities Source login route; 118 sources/105 attestations/87 claims/75 relations. Prior exact W57 6/6 CI success, 720/720 tests; W58 exact-head CI pending. No claims/rights/science/Product approvals.",
     "workCompleted": [
+      "2026-11-12 W58: MT digital transcription independently read Isaiah13:6 and Joel1:15, plus Joel1:10 verbal root. Literary šōd/Šadday wordplay verified without treating it as root or derivational proof; legitimate EBSCO Humanities Source record found but actual Dewrell article requires institutional login, original 6-page argument remains unread. Updated existing dossier03 and CH03 appendix, no new source ID or branch; retain NG12 BLOCKED_SOURCE.",
       "2026-11-12 W57: publisher original one-page erratum Kruger a3039 (2023-12-19) directly visually checked; corrected original article heading only on p3, not Job8:3 or Job27:2/13 conclusions. Added linked correction metadata to existing Kruger SRC rather than independent source, removed duplicate bibliographic paragraph in CH03 appendix, preserved evidence counterchecks and holds. Existing PR #379 only; post-change CI must be verified on exact HEAD.",
       "Wave54: direct official HUJI Textus21 original PDF 25/25 English text; footnote32 Exodus17:16 one word via Sappir/Zer1986 and comparative list(b) concordant. Hebrew OCR characters unreliable; no original Aleppo folio or original Yeivin/Breuer book pages, rights/scholarly/Product HOLD. Existing source access updated, one new fail-closed test; 309 core tests, 115 source records, NG04 BLOCKED_SOURCE.",
       "Wave53: synchronize updatedAt, current chapter size/status, chapter evidence map, 18 reader mutation tests and release boundaries across machine editorial execution. Preserve statuses NG04 BLOCKED_SOURCE and NG13/15 BLOCKED_DEPENDENCY, 0 external scholarly reviewer approvals and 0 Product/rights release.",
@@ -984,7 +986,7 @@
       "2026-11-10 WAVE24 image-acquisition source audit: via live browser found Brill scholarly reader for 4Q72 urn:cts:ancJewLit:dss.4q72.dsbo-eng2:f1i-f6, directly observed no-right-credentials page; secondary request HTTP403; version/type unverified as image so not called photo URL. Publisher image access guide says photos supplied from PAM/IAA, but no actual picture pixels loaded. DJD XV 1997 21.4MB third-party PDF web screenshot error 400 TOO_LARGE, live second browser only filename; full plate content/presence in PDF UNKNOWN. Open Dead Sea explicit licensing states its modern research text data CC BY-NC 4.0, original photos only outbound to IAA or Israel Museum, no derived reprint rights. Existing Tov source row and dossier16 updated, 101 records/289 tests unchanged, NG10/rights/Product HOLD."
     ],
     "stillOpen": [
-      "New W57 exact-head CI pending; previously verified cf6fe4f has all six GitHub Actions SUCCESS and Names ledger 720/720 structural tests; no scientific acceptance implied.",
+      "New W58 exact-head CI required after source-bounded edits. Last verified complete CI: W57 636bf930 6/6 SUCCESS and Names ledger 720/720; no peer manuscript or rights clearance.",
       "Authorized 4Q72 original manuscript photo from Brill or IAA with exact editor frg55ii Jer33:16–20 physical image match; Brill reader denies credentials HTTP403, no photo image/URN verified.",
       "DJD XV actual PDF photographic-plate presence not verified; Tov 1991 OBO109 I–VII ZORA Anubis blocked; 1997 XXX–XXXVI original raster plates not viewed.",
       "IAA B360205 plate245 Frag6 vs DJD frg55ii historical frame and glyph correspondence unproven; initial יהוה צד only edited transcript, [קנו] restored, no independent paleo-autopsy.",
