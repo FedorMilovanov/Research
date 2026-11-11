@@ -80,7 +80,7 @@ class FranceTrentNantesTests(unittest.TestCase):
         self.assertIn("отдельная печать 1621", packet)
         # Bibliographic discovery does not promote a source ID or alter other evidence contracts.
         data = json.loads((D / "source-registry-v1.json").read_text(encoding="utf-8"))
-        self.assertEqual(data["sourceCount"], 205)
+        self.assertEqual(data["sourceCount"], 206)
         bost = next(s for s in data["sources"] if s["id"] == "REF-S101")
         self.assertEqual(bost["evidenceClass"], "B1")
         self.assertEqual(bost["accessState"], "PARTIAL_OBJECT")
@@ -108,7 +108,7 @@ class FranceTrentNantesTests(unittest.TestCase):
             self.assertIn(marker, c302)
         self.assertIn("timeout", dossier)
         registry = json.loads((D / "source-registry-v1.json").read_text(encoding="utf-8"))
-        self.assertEqual(registry["sourceCount"], 205)
+        self.assertEqual(registry["sourceCount"], 206)
         self.assertTrue(all("PUBLICATION_HOLD" in s["holds"] for s in registry["sources"]))
 
     def test_wave433_newberry_1622_is_distinct_primary_witness_not_original_1598(self):
@@ -119,8 +119,8 @@ class FranceTrentNantesTests(unittest.TestCase):
         packet = (D/"independent_review_packets.md").read_text(encoding="utf-8")
         registry = json.loads((D/"source-registry-v1.json").read_text(encoding="utf-8"))
         acquisitions = json.loads((D/"acquisition-manifest-v1.json").read_text(encoding="utf-8"))
-        self.assertEqual(registry["sourceCount"], 205)
-        self.assertEqual(len(registry["sources"]), 205)
+        self.assertEqual(registry["sourceCount"], 206)
+        self.assertEqual(len(registry["sources"]), 206)
         self.assertEqual(acquisitions["sourceCount"], 16)
         self.assertEqual(len(acquisitions["sourceRecords"]), 16)
         src = next(s for s in registry["sources"] if s["id"] == "REF-P87")
@@ -189,9 +189,31 @@ class FranceTrentNantesTests(unittest.TestCase):
         self.assertEqual(ref["evidenceClass"], "A1")
         self.assertEqual(ref["accessState"], "PARTIAL_OBJECT")
         self.assertIn("PUBLICATION_HOLD", ref["holds"])
-        self.assertEqual(registry["sourceCount"], 205)
+        self.assertEqual(registry["sourceCount"], 206)
         self.assertEqual(acquired["sourceCount"], 16)
         self.assertEqual(acquired["fileBytesInGit"], 0)
+
+    def test_wave436_rouen_courts_archive_and_hold(self):
+        reg=json.loads((D/"source-registry-v1.json").read_text(encoding="utf-8"))
+        self.assertEqual(reg["sourceCount"],206)
+        rec=next(x for x in reg["sources"] if x["id"]=="REF-S103")
+        self.assertEqual(rec["evidenceClass"],"B1")
+        self.assertEqual(rec["accessState"],"PARTIAL_OBJECT")
+        self.assertIn("PUBLICATION_HOLD",rec["holds"])
+        chapter=CH.read_text(encoding="utf-8")
+        dossier=(D/"09_france_confession_nantes_source_study.md").read_text(encoding="utf-8")
+        packet=(D/"independent_review_packets.md").read_text(encoding="utf-8")
+        plan=(D/"SELF_PLAN.md").read_text(encoding="utf-8")
+        claim=next(x for x in (D/"03_claim_verification_register.md").read_text(encoding="utf-8").splitlines() if x.startswith("| C301 |"))
+        for mark in ("REF-S103","1B 110","1B 5414","3B 14","1B 801","1609","1610"):
+            self.assertIn(mark,dossier)
+            self.assertIn(mark,packet)
+        for mark in ("REF-S103","3B 14","1610"):
+            self.assertIn(mark,chapter)
+            self.assertIn(mark,claim)
+        self.assertIn("COUR_DES_AIDES_TRANSCRIPTION_NOT_PARLEMENT_REGISTRATION",dossier)
+        self.assertIn("ROUEN_1609_1610_REGISTER_DIRECT_CHECK_HOLD",plan)
+        self.assertIn("PUBLICATION_HOLD",plan)
 
     def test_reader_navigation_and_historical_overclaims_rejected(self):
         for path in ("README.md","SELF_PLAN.md","04_series_blueprint.md",
