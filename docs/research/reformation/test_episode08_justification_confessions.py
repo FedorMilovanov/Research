@@ -141,6 +141,58 @@ class JustificationBookTests(unittest.TestCase):
         self.assertIn("ARCHIVE_HOLD", by["REF-P17"]["holds"])
         self.assertIn("LOCATOR_HOLD", by["REF-P17"]["holds"])
 
+    def test_wave443_direct_heidelberg_third_print_without_spurious_release(self):
+        """Visually reviewed original 1563 printed pp 42–44 are evidence of
+        Q60–64 only, not first/second editions or blanket reuse permissions.
+        """
+        chapter = E8.read_text(encoding="utf-8")
+        self.assertIn("**REF-P89 — ВОЛНА 443", chapter)
+        self.assertIn("печатным страницам 42–44", chapter)
+        self.assertIn("PDF стр. 48–50", chapter)
+        for q in range(60, 65):
+            with self.subTest(question=q):
+                self.assertIn(f"| **{q}** |", chapter)
+        for marker in (
+            "ORIGINAL_1563_THIRD_EDITION_Q60_Q64_PAGE_IMAGES_DIRECTLY_VIEWED",
+            "RIGHTS_HOLD", "ARCHIVE_HOLD", "PUBLICATION_HOLD",
+            "первое и второе немецкие издания",
+        ):
+            self.assertIn(marker, chapter)
+
+        reg = json.loads((D / "source-registry-v1.json").read_text(encoding="utf-8"))
+        rows = {x["id"]: x for x in reg["sources"]}
+        self.assertEqual(reg["sourceCount"], len(rows))
+        self.assertEqual(rows["REF-P17"]["accessState"], "CATALOG_ONLY")
+        p89 = rows["REF-P89"]
+        self.assertEqual(p89["documentYear"], 1563)
+        self.assertEqual(p89["accessState"], "PARTIAL_OBJECT")
+        self.assertEqual(p89["locatorState"], "EXACT_LOCATOR_VERIFIED")
+        self.assertEqual(p89["rightsState"], "RIGHTS_UNKNOWN")
+        for h in ("ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"):
+            self.assertIn(h, p89["holds"])
+        self.assertIn("FIRSTHAND_VISUAL_IMAGE_READ", p89["verificationNote"])
+        self.assertIn("PDF digital pages 48, 49, 50", p89["verificationNote"])
+        manifest = json.loads(
+            (D / "acquisition-manifest-v1.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(manifest["sourceCount"], len(manifest["sourceRecords"]))
+        rec = next(x for x in manifest["sourceRecords"] if x["id"] == "REF-P89")
+        self.assertEqual(rec["actualBytes"], 12055145)
+        self.assertEqual(
+            rec["sha256"],
+            "9a418fefc3541f772cca13d3bf4a41c0d4195e03aaa66f51571fc20a35e93f44",
+        )
+        self.assertEqual(rec["retainedLocalCopy"]["visuallyInspectedPdfPages"], [48, 49, 50])
+        self.assertFalse(rec["retainedLocalCopy"]["allPagesWordByWordTranscribed"])
+        self.assertFalse(rec["retainedLocalCopy"]["firstOrSecond1563EditionCollated"])
+        self.assertEqual(manifest["fileBytesInGit"], 0)
+        claim_lines = (D / "03_claim_verification_register.md").read_text(
+            encoding="utf-8").splitlines()
+        for id in (272, 273):
+            line = next(x for x in claim_lines if x.startswith(f"| C{id} |"))
+            self.assertIn("REF-P89", line)
+            self.assertIn("PUBLICATION_HOLD" if id == 272 else "THEOLOGICAL_PEER_REVIEW_OPEN", line)
+
     def test_registry_and_book_navigation(self):
         ledger=(D/"03_claim_verification_register.md").read_text(encoding="utf-8")
         for i in range(268,274):
