@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 109,
+    "sourceRecords": 110,
     "approvedForProduct": 0
   },
   "records": [
@@ -3498,7 +3498,7 @@
       "additionalUrl": "https://www.daat.ac.il/daat/vl/meorotnatan/meorotnatan02.pdf",
       "objectType": "original_1986_printed_edition_of_anonymous_manuscript_copy_selected_pages_visually_inspected",
       "sourceRole": "ZER_1986_ANONYMOUS_JTS_L729_COPY_ALEPPO_WORD_JOIN_REPORT_EX17_137",
-      "sourceObjectState": "Original printed images p151 introduction (JTS L729 anonymous copy, NOT Saphir autograph), p152 numeric question inventory (422 reported missing versus 430 enumerated inclusive, unresolved), p154 abbreviation list, p165 item137 (Exod17:16 two-word question, answer one-word), and p191 note137 (Yeivin p82 / Breuer pp260–261 references) directly visually inspected on Daat. Ancient Aleppo original leaf LOST; JTS manuscript, Yeivin book, and Breuer book pages NOT individually viewed. No rights granted. Wave33 separate official NLI Saphir catalog indexed (record NNL_ALEPH990001022670205171); do NOT confuse same-named Nathan ben Reuben Shapira Maorot Natan, record NNL_ALEPH990000621650205171. Catalog web page returned index but not original manuscript pixels or record shelfmark personally opened; reported NLI free-use status not transferable to other objects. Wave34 original visual print p151 directly confirms Menashe Sithon (מנשה סיתהון) as respondent, courier Yaakov Ze'ev, 1857 dispatched questions ca550; Aleppo Codex English project has contradictory name Moshe Sathon (§3.4.6) vs Menashe Stahon (§3.4.2), unresolved; Penkower JTS copy year 1855 distinct, not resolved. Wave37 original print p151 photographic screenshot directly shows Yaakov Zeev BERLIN (ר' יעקב זאב ברלין), consistent with Saphir's shorter Yaakov Zeev and Goshen's Jacob Berlin. Additional 2023 Peretz/Golan published print p67 screenshot reprints the full name while explicitly citing Zer1986; it is a dependent modern reference to Zer for this historical courier identity, NOT an independent second historical witness, ancient witness, or separate source row. Wave44 independent Ofer1992 original p315 n76 explicitly rejects conflation of courier Yaakov Zeev with Jerusalem Yaakov Berlin; previous full-name identity Wave37 interpreted too strongly and superseded. Peretz/Golan2023 dependent on Zer1986. Saphir literal courier Yaakov Zeev has no Berlin. WAVE46 (11 Nov 2026): NLI record now directly checked in rendered HTML and unequivocally maps current JTS Ms.1154 to Lutzki L729 (former Adler Ms.1632); catalog reports 1855 and eight folios. Browser HTML displays 13 image IDs; IIIF info.json and one image route return HTTP 200, but no photographic pixel reading or Exodus 17:16 collation occurred; global manifest returned 403. Rights metadata from NLI catalog Public Domain Israel and IIIF info rights link are not enough to certify website reuse; full RIGHTS/PUBLICATION HOLD retained.",
+      "sourceObjectState": "Original printed images p151 introduction (JTS L729 anonymous copy, NOT Saphir autograph), p152 numeric question inventory (422 reported missing versus 430 enumerated inclusive, unresolved), p154 abbreviation list, p165 item137 (Exod17:16 two-word question, answer one-word), and p191 note137 (Yeivin p82 / Breuer pp260–261 references) directly visually inspected on Daat. Ancient Aleppo original leaf LOST; JTS manuscript, Yeivin book, and Breuer book pages NOT individually viewed. No rights granted. Wave33 separate official NLI Saphir catalog indexed (record NNL_ALEPH990001022670205171); do NOT confuse same-named Nathan ben Reuben Shapira Maorot Natan, record NNL_ALEPH990000621650205171. Catalog web page returned index but not original manuscript pixels or record shelfmark personally opened; reported NLI free-use status not transferable to other objects. Wave34 original visual print p151 directly confirms Menashe Sithon (מנשה סיתהון) as respondent, courier Yaakov Ze'ev, 1857 dispatched questions ca550; Aleppo Codex English project has contradictory name Moshe Sathon (§3.4.6) vs Menashe Stahon (§3.4.2), unresolved; Penkower JTS copy year 1855 distinct, not resolved. Wave37 original print p151 photographic screenshot directly shows Yaakov Zeev BERLIN (ר' יעקב זאב ברלין), consistent with Saphir's shorter Yaakov Zeev and Goshen's Jacob Berlin. Additional 2023 Peretz/Golan published print p67 screenshot reprints the full name while explicitly citing Zer1986; it is a dependent modern reference to Zer for this historical courier identity, NOT an independent second historical witness, ancient witness, or separate source row. Wave44 independent Ofer1992 original p315 n76 explicitly rejects conflation of courier Yaakov Zeev with Jerusalem Yaakov Berlin; previous full-name identity Wave37 interpreted too strongly and superseded. Peretz/Golan2023 dependent on Zer1986. Saphir literal courier Yaakov Zeev has no Berlin. WAVE46 (11 Nov 2026): NLI record now directly checked in rendered HTML and unequivocally maps current JTS Ms.1154 to Lutzki L729 (former Adler Ms.1632); catalog reports 1855 and eight folios. Browser HTML displays 13 image IDs; IIIF info.json and one image route return HTTP 200, but no photographic pixel reading or Exodus 17:16 collation occurred; global manifest returned 403. Rights metadata from NLI catalog Public Domain Israel and IIIF info rights link are not enough to certify website reuse; full RIGHTS/PUBLICATION HOLD retained. WAVE47: official NLI/JTS frame FL28558023 in original native 4544x6455 microfilm was downloaded and visually read on an authorized remote desktop. The JTS 1855 historical copy's Ex17:16 entry visibly reads subject 'כס יה', question 'שתי מלות', response 'לא כן' with marginal 'אלא חדא מלה' (full note not exhaustively paleographically collated). This is a FIRSTHAND selected photographic collation of the 19th-century copy, not of the lost Aleppo Codex. Source registered separately as SRC-JTS-MS1154-L729-MEOROT-NATAN-1855-EX17-16-MICROFILM; all Product/rights gates retained.",
       "supportedUse": "Attribute printed historical one-word testimony to Zer 1986 edited COPY of Saphir-associated material, not ancient Aleppo manuscript autopsy; give exact page and item number, preserve competing editorial opinions. Preserve separately both printed missing 422 and calculated inclusive listed 430; do not silently fix eight-item discrepancy. The historical biographical identification Yaakov Zeev Berlin is DISPUTED by Ofer1992 p315 and must not be asserted as resolved. Wave46: use confirmed library shelfmark crosswalk JTS Ms.1154 = Lutzki L729 and IIIF locator metadata to plan access, NOT as a collated folio.",
       "forbiddenUse": "Claim JTS L729 is Saphir autograph, original Aleppo Exodus folio directly read, published Yeivin/Breuer pages viewed, ancient pronunciation derived from word division, or scanned pages rights-cleared. Claim an IIIF HTTP 200 or visible thumbnails establishes glyph-level visual evidence, all 8 leaves reviewed, any ancient Aleppo folio survived, or photo reuse rights approved.",
       "checkedProvenance": {
@@ -3511,11 +3511,12 @@
         "part1ImagePageZeroBased": 14,
         "part2ImagePageZeroBased": 8,
         "originalPrintedPagesVisuallyViewed": true,
-        "jtsOriginalManuscriptViewed": false,
+        "jtsOriginalManuscriptViewed": true,
         "saphirAutographViewed": false,
         "aleppoExodusFolioViewed": false,
         "yeivinPage82Viewed": false,
-        "breuerPages260261Viewed": false
+        "breuerPages260261Viewed": false,
+        "jtsOriginalManuscriptImageScope": "ONE_JTS_MS1154_1855_COPY_MICROFILM_FRAME_NOT_PHYSICAL_ITEM_OR_ANCIENT_CODEX"
       },
       "zer1986PrintedP152QuestionCountAuditWave39": {
         "printPage": 152,
@@ -3592,8 +3593,8 @@
         "jtsShelfmarkAsPublishedInZer1986": "JTS L 729",
         "nliRecordShelfmarkIndependentlyOpened": true,
         "nliCataloguePublicDomainStatementSeen": true,
-        "nliManuscriptImagesOpened": false,
-        "exodus17_16HandwritingIndependentlyRead": false,
+        "nliManuscriptImagesOpened": true,
+        "exodus17_16HandwritingIndependentlyRead": true,
         "notNathanShapiraId": "NNL_ALEPH990000621650205171",
         "notNathanShapiraAuthor": "Nathan ben Reuben David Shapira",
         "historicalNewspaperContentReadInDigitalScan": false,
@@ -3639,7 +3640,9 @@
           "iiifImageInfoRightsLink": "http://web.nli.org.il/sites/NLI/Hebrew/library/items-terms-of-use/Pages/nli-copying-prohibited.aspx",
           "iiifRightsLinkConsistencyResolved": false,
           "siteFacsimileRepublicationApproved": false
-        }
+        },
+        "jtsPhysicalOriginalPersonallyHandled": false,
+        "nliVerseImageSourceIdWave47": "SRC-JTS-MS1154-L729-MEOROT-NATAN-1855-EX17-16-MICROFILM"
       },
       "respondentIdentityWave34": {
         "respondentHebrew": "מנשה סיתהון",
@@ -4063,7 +4066,64 @@
         "jtsL729ManuscriptInspected": false,
         "rightsApproved": false
       }
+    },
+    {
+      "id": "SRC-JTS-MS1154-L729-MEOROT-NATAN-1855-EX17-16-MICROFILM",
+      "title": "מאורות נתן — mid-19th-century handwritten copy, JTS Ms.1154 (Lutzki L 729 / Adler ENA 1632), selected microfilm image for Exodus 17:16",
+      "creator": "Unidentified 19th-century copyist; document attributed to Jacob Saphir in catalog and Rafi Zer 1986 (not proven autograph)",
+      "year": 1855,
+      "url": "https://iiif.nli.org.il/IIIFv21/FL28558023/full/4544,/0/default.jpg",
+      "catalogueUrl": "https://www.nli.org.il/he/manuscripts/NNL_ALEPH990001022670205171/NLI",
+      "objectType": "primary_historical_1855_copy_digital_microfilm_selected_frame_not_original_aleppo_codex",
+      "sourceRole": "DIRECT_JTS_NINETEENTH_CENTURY_COPIED_QUESTION_REPLY_EX17_16_NO_ANCIENT_CODEX_SURVIVING_LEAF",
+      "evidenceClass": "A2",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "sourceObjectState": "Visual manual inspection 11 Nov 2026 of official NLI IIIF native image FL28558023 by direct HTTP retrieval on user's authorized Windows device. Frame 7 of 13 viewer frames (the set includes microfilm title card and resolution chart, not 13 manuscript folios). LEFT manuscript page lower portion labelled 4a near upper-left in frame. Ex17:16 line independently localized after Ex17:14 (זכר), before later יִתְרוֹ. Subject has two printed/spaced groups כס יה; question reads שתי מלות; response reads לא כן; left-margin qualification includes אלא חדא מלה (full marginal shva/mappiq wording requires separate qualified paleographic check). Closely matches Zer1986 printed item137 but does not establish an independent ancient codex reading. The JTS image is a later copy, physically not examined, scribe identity disputed, original Aleppo Exodus folio lost. Archive provides an Israel public-domain statement with mandatory attribution; separate image API generic copying-prohibited rights metadata and non-Israel legal status not adjudicated, so no image redistribution/site clearance.",
+      "supportedUse": "Cite the exact 1855-dated JTS copy as a directly visually inspected 19th-century copied report of one-word response to two-word question for Ex17:16. Contrast word groups and author/editor interventions with original 1863 Ha-Levanon and Zer1986, without assigning independence as an ancient codex witness.",
+      "forbiddenUse": "Call this a surviving page of the tenth-century Aleppo Codex, personal autograph by Jacob Saphir, proof of final ancient scribal word division from visible spacing, direct photograph of ancient Exodus17:16, independent scholarly peer acceptance, unrestricted online publishing or reuse permission, or claim all 8 physical folios/13 digital frames fully inspected.",
+      "verifiedOriginalCopyPhotoWave47": {
+        "owningLibrary": "The Jewish Theological Seminary of America",
+        "physicalShelfmark": "Ms. 1154",
+        "lutzkiShelfmark": "L 729",
+        "formerAdlerShelfmark": "Ms. 1632",
+        "digitalCatalogueId": "NNL_ALEPH990001022670205171",
+        "iiifImageId": "FL28558023",
+        "iiifViewerFrameOneBased": 7,
+        "iiifFullImageUrl": "https://iiif.nli.org.il/IIIFv21/FL28558023/full/4544,/0/default.jpg",
+        "imageWidthPx": 4544,
+        "imageHeightPx": 6455,
+        "jpegBytes": 1559912,
+        "sha256": "243a38b1b9201e3648bdd356558bcef7fa412fc98d5112fca177904153d17019",
+        "frameTargetRegion": "LEFT_PAGE_LOWER_QUARTER_EXODUS_17_16_AFTER_17_14_ZAKHOR_BEFORE_YITRO",
+        "pageLabelVisibleAtUpperLeft": "4a",
+        "exodus17_16VerseLabelVisible": true,
+        "keyWordGroups": "כס יה",
+        "questionHebrew": "שתי מלות",
+        "answerOpeningHebrew": "לא כן",
+        "answerMarginCoreHebrew": "אלא חדא מלה",
+        "completeMarginalPaleographyIndependentlyCollated": false,
+        "directlyInspectedOneMicrofilmImage": true,
+        "physicalManuscriptHandled": false,
+        "jtsManuscriptCopyOriginalPhotographed": true,
+        "saphirAutographProven": false,
+        "originalAleppoExodusFolioPhotographed": false,
+        "independentAncientWitnessCountAdded": 0,
+        "rightsAttribution": "Courtesy of the Library of the Jewish Theological Seminary, The National Library of Israel. \"Ktiv\" Project, The National Library of Israel.",
+        "publicDomainIsraelCatalogueClaimSeen": true,
+        "imageRightsInternationalVerified": false,
+        "productImageReuseApproved": false,
+        "criticalApparatusYeivin82Breuer260261Read": false
+      }
     }
   ],
-  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111"
+  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO"
 }
