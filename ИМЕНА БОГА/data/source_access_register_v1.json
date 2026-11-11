@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 117,
+    "sourceRecords": 118,
     "approvedForProduct": 0
   },
   "records": [
@@ -4461,6 +4461,39 @@
       "gottingen1991ApparatusChecked": false,
       "ancientCodexCollationCompleted": false,
       "allSiglaExpanded": false
+    },
+    {
+      "id": "SRC-KRUGER-SHADDAY-JOB-2023-CONTEXT-CRITIQUE",
+      "title": "Preliminary ideas on a substratum text of Job and the depiction of Šaddāy",
+      "creator": "Margaretha J. Kruger",
+      "year": 2023,
+      "url": "https://indieskriflig.org.za/index.php/skriflig/article/view/2967/7995",
+      "alternateUrl": "https://www.scielo.org.za/scielo.php?pid=S2305-08532023000100037&script=sci_arttext",
+      "doi": "10.4102/ids.v57i1.2967",
+      "locator": "In die Skriflig / In Luce Verbi 57(1), a2967 (2023), publisher full HTML, sections The many dimensions of Shadday in Job and conclusion; MT Job 8:3 / 27:2 / 27:13",
+      "objectType": "peer_reviewed_article_full_publisher_html",
+      "sourceRole": "ATTRIBUTED_MODERN_JOB_SHADDAY_PRAGMATICS_WITH_VERIFIED_TEXTUAL_COUNTERCHECK",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0), article only; publisher original Article view explicit license and attribution conditions",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceObjectState": "Full original publisher article HTML directly reviewed and independently cross-checked against edited MT of Job 8:3, 27:2, 27:13 in Mechon Mamre. Article categorizes Shadday reprover/blesser/pursuer; puts El as righteousness (tsedeq) and Shadday as judgment (mishpat) in its conclusion on Job8:3, although Hebrew verse explicitly parallels El-mishpat / Shadday-tsedeq (REVERSED author mapping). Article paragraph assigns apportionment passage to Job27:2 although text appears in Job27:13. Parallelism 27:13 does not independently prove two deities. Author explicitly labels model preliminary and speculatively proposes an earlier Job substratum; no ancient epigraphy/manuscripts collated. Publisher expressly CC BY 4.0 for author article, not biblical text or website graphics.",
+      "supportedUse": "Evaluate pragmatic/literary Šadday in Job, attributing reprover/blesser/pursuer as Kruger's proposal, and independently identify MT-counterexample Job8:3 and inaccurate Job27:2 citation; keep poetic parallelism and speaker-role reasoning explicit; attribution-compliant quotation or paraphrase of this licensed article only.",
+      "forbiddenUse": "Assert distinct gods El/Šadday as fact from Job poetry; silently copy author's reversed mishpat/tsedeq mapping; pretend direct critical edition collation; treat article CC BY as rights for Bible translations, manuscript images, archaeology, or Product admission.",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "criticalEditionCollated": false,
+      "authorInterpretationDistinctionHeld": true,
+      "mtJob83IndependentSurfaceChecked": true,
+      "job2713ParallelismNotTwoGodProof": true,
+      "job272ReferenceMismatchNoted": true,
+      "independentAncientManuscriptCollation": false,
+      "rightsScope": "AUTHOR_ARTICLE_ONLY_CC_BY_4_NOT_BIBLE_OR_IMAGES"
     }
   ],
   "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716 | WAVE49_2026-11-11_OFER2003_YEIVIN82_AUTHOR_CROSSWALK_PSALM_ISAIAH_NOT_EXODUS | WAVE50_2026-11-11_PESACHIM117A_TASHBETZ_I177_AHS_YD27524_HISTORICAL_DISPUTE_NOT_CODEX_AUTOPSY | WAVE54_2026-11-11_HUJI_OFER2002_25P_ENGLISH_EX17_16_SINGLE_CONCORDANT_NOT_DISCREPANT_HOLDS"
