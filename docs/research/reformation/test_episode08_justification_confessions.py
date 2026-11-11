@@ -193,6 +193,50 @@ class JustificationBookTests(unittest.TestCase):
             self.assertIn("REF-P89", line)
             self.assertIn("PUBLICATION_HOLD" if id == 272 else "THEOLOGICAL_PEER_REVIEW_OPEN", line)
 
+    def test_wave443_cologne_original_print_exact_canons_with_paris_hold(self):
+        """The Cologne 1547 primary print was visually read at precisely three
+        canvases; the Paris 1547 edition and full council text were not."""
+        apparatus = E8.read_text(encoding="utf-8").split(
+            "## Источниковедческий аппарат — вне основного повествования", 1
+        )[1]
+        for token in (
+            "REF-P90", "VD16 K2078", "bsb10176467", "scan 27",
+            "scan 28", "scan 31", "BP16_112717",
+            "ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD",
+            "INDEPENDENT_CONFESSIONAL_REVIEW_OPEN",
+        ):
+            with self.subTest(token=token):
+                self.assertIn(token, apparatus)
+        registry = json.loads((D / "source-registry-v1.json").read_text(encoding="utf-8"))
+        p = {x["id"]: x for x in registry["sources"]}
+        cologne = p["REF-P90"]
+        self.assertEqual(cologne["documentYear"], 1547)
+        self.assertEqual(cologne["accessState"], "PARTIAL_OBJECT")
+        self.assertEqual(cologne["locatorState"], "EXACT_LOCATOR_VERIFIED")
+        self.assertEqual(cologne["rightsState"], "RIGHTS_UNKNOWN")
+        for hold in ("ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"):
+            self.assertIn(hold, cologne["holds"])
+        self.assertIn("DIRECT_VISUAL_ORIGINAL_LATIN_PRINT_CHECKED", cologne["verificationNote"])
+        self.assertIn("Gallica", p["REF-P20"]["verificationNote"]
+                      + cologne["verificationNote"])
+        self.assertIn("LOCATOR_HOLD", p["REF-P20"]["holds"])
+        manifest = json.loads((D / "acquisition-manifest-v1.json").read_text(encoding="utf-8"))
+        rec = next(row for row in manifest["sourceRecords"] if row["id"] == "REF-P90")
+        self.assertEqual(manifest["sourceCount"], len(manifest["sourceRecords"]))
+        self.assertEqual(rec["acquisitionState"], "VERIFIED_TEMP_DISCARDED")
+        self.assertEqual(rec["actualBytes"], 68660)
+        self.assertEqual(rec["sha256"],
+                         "5333a30ba575d635e0802029c9a0ee074adffc821c814a6e54ceae0b529853d4")
+        self.assertEqual([x["scan"] for x in rec["derivativeReceipts"]], [27, 28, 31])
+        self.assertIn("TEMP_CLEANED=True", rec["tempDisposition"])
+        self.assertEqual(manifest["fileBytesInGit"], 0)
+        ledger = (D / "03_claim_verification_register.md").read_text(encoding="utf-8")
+        for claim_id in (27, 271):
+            row = next(line for line in ledger.splitlines()
+                       if line.startswith(f"| C{claim_id} |"))
+            self.assertIn("REF-P90", row)
+            self.assertIn("PARIS_1547_VARIANT_HOLD", row)
+
     def test_registry_and_book_navigation(self):
         ledger=(D/"03_claim_verification_register.md").read_text(encoding="utf-8")
         for i in range(268,274):
