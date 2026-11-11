@@ -1,6 +1,18 @@
 # САМОПЛАН «Реформации» — живая доска исполнения, границы поиска и сборка книги
 
-## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 444, 12.11.2026 (RF-T03-PARIS-EDITION-DISAMBIGUATION)
+## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 445, 12.11.2026 (RF-EP08-AUGSBURG-1530-1531-AND-TRENT-XIII-READER-ACCURACY)
+
+**Подтверждённый вход:** [PR #473](https://github.com/FedorMilovanov/Research/pull/473) MERGED, `Research/main = a5f29294e9d4f33d94376de0b706347daecfb7e8`, **4/4 post-merge GitHub Actions SUCCESS**, в том числе `Atonement corpus integrity`. Состояние после волны 444: **214 REF / 319 C / 18 acquisition receipts**, **214 PUBLICATION_HOLD**.
+
+**Читательский и источниковедческий результат T-03:** в главе 08 различены рукописное представление Аугсбургского исповедания 25.06.1530, несанкционированные печати 1530 и первая **авторизованная** печать Меланхтона **Wittenberg, Georg Rhau, 1531**. [Bridwell BRA2651/A–B](https://bridwell.omeka.net/exhibits/show/luther/controversies/augsburgconfession) подтверждён по официальной институциональной библиографической карточке, **сами листы не прочитаны**; [историческое исследование Бенте](https://thebookofconcord.org/introductory-materials/historical-introductions/melanchthons-alterations-to-the-augsburg-confession/) фиксирует проблему текстовых различий 1530/1531. `REF-P14` и `C269/C273` синхронизированы, статусы не повышены. В reader Тридента отдельно разъяснён **канон XIII**: осуждение требования безусловной личной уверенности **каждому как необходимого условия** прощения, не всех форм доверия Христу; основа — ранее прямо проверенный `REF-P90` scan 28 и латинская электронная транскрипция. Прежние обобщённые формулировки аппарата, ошибочно представлявшие все латинские оригиналы как вовсе непрочитанные, заменены точным разграничением уже прочитанных `REF-P89/P90` и остающихся архивных пробелов.
+
+**Границы:** нет нового `REF`, нового `C`, приобретённого документа или сторонней конфессиональной рецензии. В T-03 по-прежнему не коллированы по изображениям свидетели Augsburg 1530/1531, две самостоятельные парижские печати Trent 1547 и первое/второе Heidelberg 1563. Направление следующей предметной работы — оригиналы Augsburg 1531 или Paris 1547 при доступе, затем независимые рецензии; **H-08 и T-08 остаются отдельными незакрытыми блокерами**, а не становятся фиктивно решёнными.
+
+**Проверка и запреты:** профильный валидатор + `python -B -m unittest discover -s docs/research/reformation -p 'test_*.py'`; полные GitHub CI на точном кандидате и после объединения, без упрощения защитных тестов. `RESEARCH_MANUSCRIPT_DRAFT / ORIGINAL_DOCUMENT_HOLDS_OPEN / INDEPENDENT_EXTERNAL_REVIEW_OPEN / THEOLOGICAL_PEER_REVIEW_OPEN / NOT_EDITORIAL_READY / RIGHTS_HOLD / PUBLICATION_HOLD`. Публичное размещение и права на репродукции не разрешены.
+
+---
+
+## ИСТОРИЧЕСКИЙ ПАСПОРТ — волна 444, 12.11.2026 (RF-T03-PARIS-EDITION-DISAMBIGUATION)
 
 **Вход:** [PR #472](https://github.com/FedorMilovanov/Research/pull/472) MERGED, `Research/main = 72125b80e6a44a25cb38584846b5ab60b87c5ecd` (проверено по ветке), **4/4 post-merge Actions SUCCESS** на этом SHA. Срез 443: 214 уникальных REF / 319 C / 18 acquisition receipts, 214 `PUBLICATION_HOLD`.
 
