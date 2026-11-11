@@ -164,3 +164,7 @@
 ### Research audit / navigation addition 2026-11-04
 
 - [20_SCHOLARLY_SERIES_AUDIT_AND_RESEARCH_GAPS_2026-11-04.md](20_SCHOLARLY_SERIES_AUDIT_AND_RESEARCH_GAPS_2026-11-04.md) - Искупление — аудит серии, научные дуги и границы доказательств; RESEARCH_ONLY / EVIDENCE_HOLD / LOCATOR_HOLD / PUBLICATION_HOLD.
+
+### Научная приёмка внешнего исследовательского чата — 2026-11-11
+
+- [`21_CHAT_EXTERNAL_ATONEMENT_INTAKE_2026-11-11.md`](21_CHAT_EXTERNAL_ATONEMENT_INTAKE_2026-11-11.md) — навигация по полному архиву аргументов из чата: 133 внутренних позиции, E01–E95 и X01–X130. Полный снимок и дополнения G01–G08 хранятся в `evidence/chat-extent-2026-11-11/`; не заменяют authority, 18 глав, регистрацию первоисточников или публикационные HOLD.
