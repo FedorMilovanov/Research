@@ -2265,6 +2265,63 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                 self.assertTrue(any("Sapir versus Shapira Maorot Nathan catalog" in e
                                     for e in validate_source_access(data)))
 
+    def test_wave48_marginal_paleography_and_ofer2002_must_not_overclaim(self) -> None:
+        manuscript_id = "SRC-JTS-MS1154-L729-MEOROT-NATAN-1855-EX17-16-MICROFILM"
+        for field, wrong in (
+            ("sourceSha256", "wrong"),
+            ("cropNativePixelsXYXY", [120, 4490, 1400, 5060]),
+            ("manuscriptQuestionRead", "חדא מלה"),
+            ("manuscriptAnswerOpeningRead", "כן"),
+            ("manuscriptMarginSafeExcerpt", "שתי מלות"),
+            ("fullMarginDifficultHandReadingProven", True),
+            ("samekhShevaTechnicalNoteAllGlyphsConfirmed", True),
+            ("mappiqHeTechnicalNoteAllGlyphsConfirmed", True),
+            ("printedZer1986ReadingSubstitutedForUnclearInk", True),
+            ("historical1863NewspaperReadingSubstitutedForUnclearInk", True),
+            ("ancientAleppoOriginalVerseViewed", True),
+            ("secondaryAuthorEditionConflictsResolved", True),
+        ):
+            with self.subTest(marginal_field=field):
+                changed = copy.deepcopy(self.sources)
+                row = next(x for x in changed["records"] if x["id"] == manuscript_id)
+                row["verifiedCroppedMarginalDetailWave48"][field] = wrong
+                self.assertTrue(any("Wave48 narrow direct marginal reading" in e
+                                    for e in validate_source_access(changed)))
+        paper_id = "SRC-OFER-TEXTUS21-2002-COMPOSITE-WORDS-MASORAH"
+        for field, wrong in (
+            ("publisherOrUniversityAbstractRead", False),
+            ("publisherFirstTwoPagePreviewExtracted", False),
+            ("originalFullArticleAllPagesRead", True),
+            ("publisherPreviewScreenshotSucceeded", True),
+            ("publisherAbstractSaysAtLeastFourDiscrepantCompositeWords", False),
+            ("originalCompositeListMayHaveLaterScribeAsAuthorConjecture", False),
+            ("exodus17_16AmongFourProven", True),
+            ("independentAncientCodexPhotoInspected", True),
+            ("rightsPermissionGranted", True),
+        ):
+            with self.subTest(ofer_2002_field=field):
+                changed = copy.deepcopy(self.sources)
+                row = next(x for x in changed["records"] if x["id"] == paper_id)
+                row["verifiedWave48"][field] = wrong
+                self.assertTrue(any("Ofer 2002 composite list abstract" in e
+                                    for e in validate_source_access(changed)))
+        for field, wrong in (
+            ("accessState", "FULL_OBJECT_VERIFIED"),
+            ("locatorState", "EXACT_LOCATOR_VERIFIED"),
+            ("publicationState", "PROMOTE"),
+            ("criticalEditionCollated", True),
+        ):
+            with self.subTest(ofer_2002_source_field=field):
+                changed = copy.deepcopy(self.sources)
+                row = next(x for x in changed["records"] if x["id"] == paper_id)
+                row[field] = wrong
+                self.assertTrue(any("Ofer 2002 composite list abstract" in e
+                                    for e in validate_source_access(changed)))
+        changed = copy.deepcopy(self.sources)
+        changed["records"] = [x for x in changed["records"] if x["id"] != paper_id]
+        self.assertTrue(any("source-inventory IDs changed" in e
+                            for e in validate_source_access(changed)))
+
     def test_1857_menashe_respondent_not_moshe_or_unread_1977_original(self) -> None:
         for rid,fieldGroup,key,wrong in (
             ("SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137","respondentIdentityWave34","respondentHebrew","משה סיתהון"),
