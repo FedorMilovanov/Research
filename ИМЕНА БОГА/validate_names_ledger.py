@@ -451,6 +451,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-KINZIG-PATRISTIC-TETRAGRAM-2008-P226227": "KINZIG_2008_EARLY_CHRISTIAN_YHWH_TRANSMISSION_VARIANTS_QUAESTIONES_COMPENDIUM_CRITIQUE",
     "SRC-JTS-MS1154-L729-MEOROT-NATAN-1855-EX17-16-MICROFILM": "DIRECT_JTS_NINETEENTH_CENTURY_COPIED_QUESTION_REPLY_EX17_16_NO_ANCIENT_CODEX_SURVIVING_LEAF",
     "SRC-OFER-TEXTUS21-2002-COMPOSITE-WORDS-MASORAH": "OFER_2002_COMPOSITE_WORDS_MASORAH_LIST_VERSUS_CODEX_TEXT_METHODOLOGY_NOT_EX17_16_PROOF",
+    "SRC-OFER-MEGADIM37-2003-YEIVIN82-COMPOSITE-WORDS": "OFER2003_AUTHOR_DIRECT_CITES_YEIVIN_PRINT82_FOR_PS90_ISA54_WORD_DIVISION_NOT_EX17_PROOF",
 }
 
 
@@ -741,6 +742,38 @@ def validate_source_access(sources: dict) -> list[str]:
                     or a.get("independentAncientCodexPhotoInspected") is not False
                     or a.get("rightsPermissionGranted") is not False):
                 errors.append(f"{prefix}: Ofer 2002 composite list abstract is not proof of Exodus17:16 example or full critical edition")
+        if rid == "SRC-OFER-MEGADIM37-2003-YEIVIN82-COMPOSITE-WORDS":
+            e = source.get("verifiedWave49", {})
+            if (source.get("year") != 2003
+                    or source.get("sourceRole") != "OFER2003_AUTHOR_DIRECT_CITES_YEIVIN_PRINT82_FOR_PS90_ISA54_WORD_DIVISION_NOT_EX17_PROOF"
+                    or source.get("evidenceClass") != "B1"
+                    or source.get("accessState") != "PARTIAL_OBJECT"
+                    or source.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+                    or source.get("rightsState") != "PERMISSION_REQUIRED"
+                    or source.get("publicationState") != "BLOCKED"
+                    or source.get("criticalEditionCollated") is not False
+                    or set(source.get("holds", [])) != {"EVIDENCE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"}
+                    or not isinstance(e, dict)
+                    or e.get("publisher") != "Torat Har Etzion / Tevunot (Megadim)"
+                    or e.get("publisherDate") != "2003-02-03"
+                    or e.get("megadimIssue") != 37
+                    or e.get("publisherHtmlAuthorTextRead") is not True
+                    or e.get("originalPrintedMegadimFacsimileReviewed") is not False
+                    or e.get("articleExactOriginalPrintPagesKnown") is not False
+                    or e.get("relevantSection") != "קד"
+                    or e.get("authorYeivinCitationsFootnotes") != [23, 24, 26]
+                    or e.get("yeivin1968_69BookPageCited") != 82
+                    or e.get("psalm90_15CitedAsCompositeCase") is not True
+                    or e.get("isaiah54_9CitedAsCompositeCase") is not True
+                    or e.get("isaiah54_9AleppoFormAttributedByOfer") != "כי-מי"
+                    or e.get("independentYeivinPage82Read") is not False
+                    or e.get("exodus17_16InThisAuthorArticle") is not False
+                    or e.get("breuer1977Print260261Read") is not False
+                    or e.get("manuscriptMasoraAndActualCodexNotInterchangeable") is not True
+                    or e.get("print2002OferFirstFullTextRead") is not False
+                    or e.get("independentAncientAleppoWitnessAdded") != 0
+                    or e.get("republicationRightsApproved") is not False):
+                errors.append(f"{prefix}: Ofer 2003 Yeivin82 cross-reference for Psalms/Isaiah cannot become direct Yeivin Exodus or Breuer autopsy")
         if rid == "SRC-HALEVANON-18630611-ISSUE5-EX17-16-ORIGINAL":
             w = source.get("printedObjectVerificationWave42", {})
             if (source.get("year") != 1863 or source.get("url") != "https://www.nli.org.il/he/newspapers/hlb/1863/06/11/01/"
