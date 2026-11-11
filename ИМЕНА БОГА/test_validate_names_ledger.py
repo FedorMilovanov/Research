@@ -2392,6 +2392,9 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
     def test_wave50_tashbetz_medieval_author_scroll_not_aleppo_witness(self) -> None:
         rid = "SRC-RASHBATZ-TASHBETZ-I177-KESYAH-RESPONSUM"
         for field, wrong in (
+            ("authorDeathYear", 1455),
+            ("compositionYearEstablished", True),
+            ("printed1738EditionPublishedExactResponsumPageVerified", True),
             ("responsumPart", 2),
             ("responsumNumber", 176),
             ("first1738PrintFolioViewed", True),
@@ -2417,6 +2420,12 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                 item["verifiedWave50"][field] = wrong
                 self.assertTrue(any("Wave50 historical Kesyah source" in e
                                     for e in validate_source_access(data)))
+
+        changed = copy.deepcopy(self.sources)
+        item = next(x for x in changed["records"] if x["id"] == rid)
+        item["year"] = 1444
+        self.assertTrue(any("Wave50 historical Kesyah source" in e
+                            for e in validate_source_access(changed)))
 
     def test_wave50_aruch_hashulchan_two_word_ruling_not_primary_codex_photo(self) -> None:
         rid = "SRC-ARUCH-HASHULCHAN-YD27524-KESYAH-TWO-WORD-DECISION"
