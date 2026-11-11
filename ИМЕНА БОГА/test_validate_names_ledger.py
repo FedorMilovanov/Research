@@ -2322,6 +2322,48 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("source-inventory IDs changed" in e
                             for e in validate_source_access(changed)))
 
+    def test_ofer2003_yeivin82_secondary_locus_is_not_unread_primary_exodus(self) -> None:
+        paper_id = "SRC-OFER-MEGADIM37-2003-YEIVIN82-COMPOSITE-WORDS"
+        mutations = (
+            ("megadimIssue", 38),
+            ("publisherHtmlAuthorTextRead", False),
+            ("originalPrintedMegadimFacsimileReviewed", True),
+            ("articleExactOriginalPrintPagesKnown", True),
+            ("authorYeivinCitationsFootnotes", [23]),
+            ("yeivin1968_69BookPageCited", 83),
+            ("psalm90_15CitedAsCompositeCase", False),
+            ("isaiah54_9CitedAsCompositeCase", False),
+            ("isaiah54_9AleppoFormAttributedByOfer", "כימי"),
+            ("independentYeivinPage82Read", True),
+            ("exodus17_16InThisAuthorArticle", True),
+            ("breuer1977Print260261Read", True),
+            ("manuscriptMasoraAndActualCodexNotInterchangeable", False),
+            ("print2002OferFirstFullTextRead", True),
+            ("independentAncientAleppoWitnessAdded", 1),
+            ("republicationRightsApproved", True),
+        )
+        for field, wrong in mutations:
+            with self.subTest(crosswalk_field=field):
+                data = copy.deepcopy(self.sources)
+                row = next(x for x in data["records"] if x["id"] == paper_id)
+                row["verifiedWave49"][field] = wrong
+                self.assertTrue(any("Ofer 2003 Yeivin82 cross-reference" in e
+                                    for e in validate_source_access(data)))
+        for field, wrong in (("accessState", "FULL_OBJECT_VERIFIED"),
+                             ("locatorState", "LOCATOR_MISSING"),
+                             ("publicationState", "PROMOTE"),
+                             ("criticalEditionCollated", True)):
+            with self.subTest(source_field=field):
+                data = copy.deepcopy(self.sources)
+                row = next(x for x in data["records"] if x["id"] == paper_id)
+                row[field] = wrong
+                self.assertTrue(any("Ofer 2003 Yeivin82 cross-reference" in e
+                                    for e in validate_source_access(data)))
+        data = copy.deepcopy(self.sources)
+        data["records"] = [x for x in data["records"] if x["id"] != paper_id]
+        self.assertTrue(any("source-inventory IDs changed" in e
+                            for e in validate_source_access(data)))
+
     def test_1857_menashe_respondent_not_moshe_or_unread_1977_original(self) -> None:
         for rid,fieldGroup,key,wrong in (
             ("SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137","respondentIdentityWave34","respondentHebrew","משה סיתהון"),
