@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 213,
+  "sourceCount": 214,
   "sources": [
     {
       "id": "REF-P01",
@@ -3885,6 +3885,24 @@
       ],
       "url": "https://digi.ub.uni-heidelberg.de/diglit/catechismus1563",
       "verificationNote": "WAVE443-T03-FOLIOS 2026-11-11 FIRSTHAND_VISUAL_IMAGE_READ of exact original third German edition printed 1563 Heidelberg Johann Mayer, UB Heidelberg shelfmark Q 7188-4 B RES, https://www.ub.uni-heidelberg.de/ausstellungen/625jahre2011/exponate/sektion1/03_07.html with original digitized book https://digi.ub.uni-heidelberg.de/diglit/catechismus1563 . Primary digitization protected by Anubis at automated viewer. Independently accessible licensed-by-library mirror https://www.heidelberger-katechismus.net/3._Auflage_des_Heidelberger_Katechismus_von_1563-8476-0-227-50.html -> 106-page authorized PDF https://www.heidelberger-katechismus.net/daten/File/Upload/doc-6402-2.pdf (12,055,145 bytes SHA256 9a418fefc3541f772cca13d3bf4a41c0d4195e03aaa66f51571fc20a35e93f44) downloaded on authorized PRIVATE DESKTOP-O3FDOA4. Personally VISUALLY INSPECTED PDF digital pages 48, 49, 50 (1-based), with facsimile historic printed pages 42, 43, 44. Page42 (PDF48) shows Q59 followed by Q60 'Wie bistu gerecht für Gott?' and start of 'Allein durch waren glauben in Jesum Christum', continuing p43 (PDF49) '... mir die vollkommen gnugthuung / gerechtigkeit / und heiligkeit Christi schencket / und zurechnet' and acceptance with 'glaubigem herzen'. Printed p43 (PDF49) Q61 'Warumb sagstu daß du allein durch den glauben gerecht seyest?' denies worthiness of faith and asserts satisfaction, righteousness, holiness of Christ; Q62 denies own works as righteousness before God due imperfection and sin. Printed p44 (PDF50) Q63 'Verdienen aber unsere gute werck nichts' answers 'Die belohnung geschieht nit auß verdienst / sonder auß gnaden'; Q64 'Macht aber diese lehre nicht sorglose und verruchte leut?' answers 'Nein / Denn es unmöglich ist / daß die / so Christo durch waren glauben sind eingepflantzt / nit auch der danckbarkeit sollen bringen' (original spelling approximated by scoped visual reading; NO FULL DIPLOMATIC TRANSCRIPTION). PRIMARY ORIGINAL PRINT LEAF IMAGE DIRECT_VISUAL_Q60_Q64, not first/second 1563 edition, not an original manuscript, not complete word-for-word 106-page collation. Distinct physical witness from Utrecht REF-P17 (still CATALOG_ONLY/COARSE); modern English REF-P77 remains separate. Archival licensing of reproduced PDF says 'mit freundlicher Genehmigung' from UB Heidelberg, which is NOT a general open commercial reuse license: RIGHTS_UNKNOWN/RIGHTS_HOLD. Archived private original under Documents/Research-Primary-Sources/Heidelberg_Catechism_1563_Third_UBH, PDF in private only, no images to Git; temporary image derivatives and temporary rendering tool directory removed and checked. SHA byte receipt recorded in acquisition-manifest-v1.json. ARCHIVE_HOLD for other editions and uncopied pages, PUBLICATION_HOLD until review.",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "id": "REF-P90",
+      "documentYear": 1547,
+      "title": "Council of Trent Session VI Decretum de Iustificatione, Cologne Novesianus 1547, BSB Exeg. 139#Beibd.2, VD16 K2078; original Latin canons IX XI XIII XXIV",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.digitale-sammlungen.de/de/view/bsb10176467",
+      "verificationNote": "WAVE443-T03-1547-PRINT 2026-11-11 DIRECT_VISUAL_ORIGINAL_LATIN_PRINT_CHECKED on THREE BSB digitized image canvases, distinct from the uncollated PARIS BnF B-6903 (2) / BP16_112717 witness of same 1547 year (REF-P20). Official Bavarian State Library catalogue https://www.digitale-sammlungen.de/de/view/bsb10176467 : 'Synodi Sacrosanctae Oecvmenicae Tridentinae Decretum de Iustificatione ... Sessione VI ... XIII Ianuarii MDXLVII', Coloniae: Novesianus, 1547, VD16 K2078, [30] leaves, 64 digital scans, physical shelfmark Exeg. 139#Beibd.2, digital id bsb10176467, IIIF manifest v3 https://api.digitale-sammlungen.de/iiif/presentation/v3/bsb10176467/manifest . Personally directly visually read page-image SCAN 27 (Canon IX in full, also canons VII VIII X); SCAN 28 (Canon XI in full; Canon XIII in full; Canon XII intervenes); SCAN 31 (Canon XXIV in full, adjacent canons XXIII XXV). CANON IX original printed line 'Si quis dixerit sola fide impium iustificari ... nihil aliud requiri ... suae voluntatis motu praeparari atque disponi ... Anathema sit'; CANON XI reads 'vel sola imputatione iustitiae Christi ... exclusa gratia et charitate, quae in cordibus eorum per spiritum sanctum diffundatur, atque illis inhaereat'; CANON XIII original 1547 print reads 'omni homini ad remissionem peccatorum assequendam necessarium esse ut credat certo et absque ulla haesitatione ... peccata sibi esse remissa'; CANON XXIV reads 'iustitiam acceptam non conservari, atque etiam non augeri coram Deo per bona opera ... non etiam ipsius augendae causam'. Scope is original printed text of those FOUR CANONS, not Roman autograph, not Cologne=Paris printed equivalence, not any other unviewed 1547 object or full diplomatic collation. Precise IIIF images https://api.digitale-sammlungen.de/iiif/image/v3/bsb10176467_00027/full/1100,/0/default.jpg ; https://api.digitale-sammlungen.de/iiif/image/v3/bsb10176467_00028/full/900,/0/default.jpg ; https://api.digitale-sammlungen.de/iiif/image/v3/bsb10176467_00031/full/700,/0/default.jpg . Full official BSB IIIF manifest 68,660 bytes SHA256 5333a30ba575d635e0802029c9a0ee074adffc821c814a6e54ceae0b529853d4 was read; three actual image derivative hashes recorded in acquisition-manifest-v1.json. Only those original-image fragments inspected, 64-image full transcription and Paris collation remain ARCHIVE_HOLD. 29 temporary JPEG/WEBP/JSON files, 4,787,865 bytes, removed and TEMP_CLEANED=True; no BSB image copied into public Git or permanently archived. Image rights/licensing not assumed, RIGHTS_UNKNOWN / RIGHTS_HOLD / PUBLICATION_HOLD. Ref-P20 remains PARTIAL_OBJECT / LOCATOR_HOLD for specified Paris/Latin first-print claims, independent external confessional peer review not received.",
       "checkedAt": "2026-11-11"
     },
     {
