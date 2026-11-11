@@ -138,6 +138,8 @@ class NantesVariantCrosswalkTests(unittest.TestCase):
         self.assertIn("J//943/2 = AE/II/763", c300)
         self.assertIn("НЕ утраченный", c300)
         self.assertIn("CATALOG_ONLY", c300)
+        self.assertIn("PARTIAL_OBJECT", c300)
+        self.assertIn("FULL_OBJECT_VERIFIED", c300)
         self.assertIn("REF-P27", c300)
         self.assertIn("REJECTED_FORMULATION", c300)
         self.assertIn("PUBLICATION_HOLD", c300)
