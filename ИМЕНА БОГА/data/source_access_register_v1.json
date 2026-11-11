@@ -4493,7 +4493,20 @@
       "job2713ParallelismNotTwoGodProof": true,
       "job272ReferenceMismatchNoted": true,
       "independentAncientManuscriptCollation": false,
-      "rightsScope": "AUTHOR_ARTICLE_ONLY_CC_BY_4_NOT_BIBLE_OR_IMAGES"
+      "rightsScope": "AUTHOR_ARTICLE_ONLY_CC_BY_4_NOT_BIBLE_OR_IMAGES",
+      "publisherErratum": {
+        "doi": "10.4102/ids.v57i1.3039",
+        "url": "https://indieskriflig.org.za/index.php/skriflig/article/view/3039/0",
+        "officialPdfUrl": "https://indieskriflig.org.za/index.php/skriflig/article/download/2967/7998",
+        "published": "2023-12-19",
+        "originalHeading": "A possible Akkadian substratum",
+        "correctedHeading": "Šaddāy in a possible substratum",
+        "locator": "Erratum a3039 (2023), one-page publisher PDF; change to heading on p.3 of the original seven-page article",
+        "scope": "Publisher correction concerns only a paragraph heading; publisher explicitly says findings, interpretation and scientific conclusions are unchanged. Does NOT correct Job 8:3 / 27:2 / 27:13 observations; editorial MT countercheck remains a distinct research judgment.",
+        "visualOriginalErratumPageChecked": true,
+        "independentAncientCollation": false,
+        "rights": "CC BY for author's erratum text alone; manuscript images/Bible translations/Product permissions remain separate."
+      }
     }
   ],
   "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716 | WAVE49_2026-11-11_OFER2003_YEIVIN82_AUTHOR_CROSSWALK_PSALM_ISAIAH_NOT_EXODUS | WAVE50_2026-11-11_PESACHIM117A_TASHBETZ_I177_AHS_YD27524_HISTORICAL_DISPUTE_NOT_CODEX_AUTOPSY | WAVE54_2026-11-11_HUJI_OFER2002_25P_ENGLISH_EX17_16_SINGLE_CONCORDANT_NOT_DISCREPANT_HOLDS"
