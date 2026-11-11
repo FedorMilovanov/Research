@@ -342,6 +342,7 @@ def validate_extension(extension: dict, baseline: dict) -> list[str]:
 EXPECTED_SOURCE_ROLES = {
     "SRC-MT-MECHON": "DIGITAL_TEXT_SURFACE_ONLY",
     "SRC-KROGEVOLL-TORONTO-PHD-2022-EL-SHADDAI": "ATTRIBUTED_KROGEVOLL_2022_COMPLETE_PHD_SHADDAI_MOUNTAIN_CONTACT_HYPOTHESIS",
+    "SRC-BROOKE-MCLEAN-LXX-EX17-16-CAMBRIDGE-1909-P211": "CAMBRIDGE_1909_PRINTED_LXX_EX17_16_CRITICAL_VARIANTS_DIRECT_FACSIMILE_NOT_GOTTINGEN_OR_MANUSCRIPT",
     "SRC-VANWOLDE-2021": "ATTRIBUTED_SECONDARY_EXEGESIS",
     "SRC-ROESEL-2007": "ATTRIBUTED_ABSTRACT_HYPOTHESIS",
     "SRC-SHAW-2002": "CATALOGUE_ABSTRACT_ONLY",
@@ -1902,6 +1903,17 @@ def validate_source_access(sources: dict) -> list[str]:
                 or source.get("full2025RevisedBookRead") is not False
                 or source.get("independentAncientTextCollation") is not False):
                 errors.append(f"{prefix}: Krogevoll 2022 complete thesis cannot imply complete 2025 book, ancient epigraphy, or rights clearance")
+        if rid == "SRC-BROOKE-MCLEAN-LXX-EX17-16-CAMBRIDGE-1909-P211":
+            if (source.get("accessState") != "FULL_OBJECT_VERIFIED"
+                or source.get("rightsState") != "RIGHTS_UNKNOWN"
+                or source.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+                or source.get("printedPage") != 211
+                or source.get("pdfIndexZeroBased") != 69
+                or source.get("originalPageFacsimileChecked") is not True
+                or source.get("gottingen1991ApparatusChecked") is not False
+                or source.get("ancientCodexCollationCompleted") is not False
+                or source.get("allSiglaExpanded") is not False):
+                errors.append(f"{prefix}: historic Cambridge 1909 text is not Gottingen 1991 or ancient codex autopsy")
         if rid in DEIR_ALLA_SOURCE_GUARDS:
             required_state = DEIR_ALLA_SOURCE_GUARDS[rid]
             actual_state = (source.get("accessState"), source.get("rightsState"), source.get("locatorState"))
