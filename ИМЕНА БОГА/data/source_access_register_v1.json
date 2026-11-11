@@ -4294,7 +4294,7 @@
       "id": "SRC-RASHBATZ-TASHBETZ-I177-KESYAH-RESPONSUM",
       "title": "Shuʾt HaTashbetz, Part I, responsum 177 — disputed כס יה and witnessed Torah scroll",
       "creator": "Shimon ben Tzemach Duran (Rashbatz, 1361–1444; exact response composition year unknown)",
-      "year": 1444,
+      "year": null,
       "url": "https://he.wikisource.org/wiki/שו%22ת_רשב%22ץ_(תשב%22ץ)/חלק_א/קעז",
       "objectType": "historical_jewish_interpretation_original_authored_text_accessed_in_modern_edited_digital_transcription",
       "sourceRole": "RASHBATZ_TASHBETZ_I177_DIRECT_HISTORICAL_AUTHOR_TESTIMONY_NON_ALEPPO_SCROLL_AND_CONFLICTING_MASORETIC_LISTS",
@@ -4335,8 +4335,14 @@
         "criticalTalmudNameVariantResolved": false,
         "rightsClearedForDigitalTranscript": false,
         "originalAleppoCodexPhotoViewed": false,
-        "originalYeivinBreuerCriticalPagesRead": false
-      }
+        "originalYeivinBreuerCriticalPagesRead": false,
+        "authorDeathYear": 1444,
+        "compositionYearEstablished": false,
+        "printed1738EditionPublishedExactResponsumPageVerified": false
+      },
+      "authorLifeSpan": "1361–1444",
+      "compositionDateStatus": "NOT_DATED_TASHBETZ_PART_I_177_AUTHOR_LIFETIME_ONLY",
+      "printAccessNote": "First historic prints published 1738/1741 (bibliography), no visual target folio autopsy; author's death 1444 is NOT date of this responsum or publication date."
     },
     {
       "id": "SRC-ARUCH-HASHULCHAN-YD27524-KESYAH-TWO-WORD-DECISION",
