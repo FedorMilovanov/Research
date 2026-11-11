@@ -1,6 +1,6 @@
 # САМОПЛАН «Реформации» — живая доска исполнения, границы поиска и сборка книги
 
-## ТЕКУЩИЙ ПАСПОРТ — волна 435, 11.11.2026 (RF-REVIEW-BASELINE-AND-H08-ACQUISITION-QUEUE)
+## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 435, 11.11.2026 (RF-REVIEW-BASELINE-AND-H08-ACQUISITION-QUEUE)
 
 **Подтверждённый вход:** [PR #463](https://github.com/FedorMilovanov/Research/pull/463) **MERGED**, точный `Research/main = 85f455ff77dca5848184a5bcd15d52d361778a81`; обязательные **5/5 post-merge GitHub Actions SUCCESS** (в том числе [Reformation corpus integrity](https://github.com/FedorMilovanov/Research/actions/runs/43021635994)); профильные тесты **140/140 PASS**. Это снимок входа волны 435, а не утверждение о будущем HEAD. В корпусе **14 книжных частей / 205 source IDs / 16 acquisition receipts / C1–C319**. Открытые PR других корпусов не трогать.
 
