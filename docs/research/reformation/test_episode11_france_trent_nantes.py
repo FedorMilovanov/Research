@@ -80,7 +80,7 @@ class FranceTrentNantesTests(unittest.TestCase):
         self.assertIn("отдельная печать 1621", packet)
         # Bibliographic discovery does not promote a source ID or alter other evidence contracts.
         data = json.loads((D / "source-registry-v1.json").read_text(encoding="utf-8"))
-        self.assertEqual(data["sourceCount"], 204)
+        self.assertEqual(data["sourceCount"], 205)
         bost = next(s for s in data["sources"] if s["id"] == "REF-S101")
         self.assertEqual(bost["evidenceClass"], "B1")
         self.assertEqual(bost["accessState"], "PARTIAL_OBJECT")
@@ -108,8 +108,54 @@ class FranceTrentNantesTests(unittest.TestCase):
             self.assertIn(marker, c302)
         self.assertIn("timeout", dossier)
         registry = json.loads((D / "source-registry-v1.json").read_text(encoding="utf-8"))
-        self.assertEqual(registry["sourceCount"], 204)
+        self.assertEqual(registry["sourceCount"], 205)
         self.assertTrue(all("PUBLICATION_HOLD" in s["holds"] for s in registry["sources"]))
+
+    def test_wave433_newberry_1622_is_distinct_primary_witness_not_original_1598(self):
+        reader = CH.read_text(encoding="utf-8")
+        narrative, apparatus = reader.split("## Источниковедческий аппарат", 1)
+        dossier = (D/"09_france_confession_nantes_source_study.md").read_text(encoding="utf-8")
+        claims = (D/"03_claim_verification_register.md").read_text(encoding="utf-8")
+        packet = (D/"independent_review_packets.md").read_text(encoding="utf-8")
+        registry = json.loads((D/"source-registry-v1.json").read_text(encoding="utf-8"))
+        acquisitions = json.loads((D/"acquisition-manifest-v1.json").read_text(encoding="utf-8"))
+        self.assertEqual(registry["sourceCount"], 205)
+        self.assertEqual(len(registry["sources"]), 205)
+        self.assertEqual(acquisitions["sourceCount"], 16)
+        self.assertEqual(len(acquisitions["sourceRecords"]), 16)
+        src = next(s for s in registry["sources"] if s["id"] == "REF-P87")
+        acquired = next(s for s in acquisitions["sourceRecords"] if s["id"] == "REF-P87")
+        self.assertEqual(src["documentYear"], 1622)
+        self.assertEqual(src["evidenceClass"], "A1")
+        self.assertEqual(src["accessState"], "PARTIAL_OBJECT")
+        self.assertEqual(src["rightsState"], "RIGHTS_UNKNOWN")
+        self.assertIn("RIGHTS_HOLD", src["holds"])
+        self.assertIn("PUBLICATION_HOLD", src["holds"])
+        self.assertEqual(acquired["acquisitionState"], "DOWNLOADED_VERIFIED")
+        self.assertEqual(acquired["actualBytes"], 2784696)
+        self.assertEqual(acquired["sha256"],
+                         "d8481415ed48ad4f283e0dd9dc6426bdc511c2c3e6e858bd07d53a7e3c705356")
+        self.assertEqual(acquired["retainedLocalCopy"]["digitalPages"], 28)
+        self.assertEqual(acquired["retainedLocalCopy"]["historicalPrintedPages"], 23)
+        self.assertEqual(acquired["retainedLocalCopy"]["visuallyInspectedPdfPages"], [3, 5, 14, 15, 24, 25])
+        self.assertEqual(acquisitions["fileBytesInGit"], 0)
+        for marker in ("Особая статья XXXIV", "колоколами", "синодов",
+                       "1622 года", "приказ", "регистрацию"):
+            self.assertIn(marker.lower(), narrative.lower())
+        for part in (apparatus, dossier, packet):
+            for marker in ("REF-P87", "d8481415ed48ad4f283e0dd9dc6426bdc511c2c3e6e858bd07d53a7e3c705356",
+                           "1622", "ORIGINAL_ART33_PRINT_COLLATION_HOLD",
+                           "REGISTRATION_EXECUTION_HOLD"):
+                self.assertIn(marker, part)
+        c301 = next(x for x in claims.splitlines() if x.startswith("| C301 |"))
+        c302 = next(x for x in claims.splitlines() if x.startswith("| C302 |"))
+        for row in (c301, c302):
+            self.assertIn("REF-P87", row)
+            self.assertIn("PUBLICATION_HOLD", row)
+        self.assertIn("REGISTRATION_ORDER_NOT_EXECUTION", apparatus)
+        old = next(s for s in registry["sources"] if s["id"] == "REF-S101")
+        self.assertEqual(old["evidenceClass"], "B1")
+        self.assertEqual(old["accessState"], "PARTIAL_OBJECT")
 
     def test_reader_navigation_and_historical_overclaims_rejected(self):
         for path in ("README.md","SELF_PLAN.md","04_series_blueprint.md",
