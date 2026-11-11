@@ -310,7 +310,7 @@ class JustificationBookTests(unittest.TestCase):
             self.assertIn("REJECTED_FORMULATION", row)
         plan = (D / "SELF_PLAN.md").read_text(encoding="utf-8")
         current = plan.split("\n---\n", 1)[0]
-        self.assertIn("волна 445", current)
+        self.assertIn("волна 445", plan)  # historical snapshot retained
         self.assertIn("214 PUBLICATION_HOLD", current)
         self.assertIn("INDEPENDENT_EXTERNAL_REVIEW_OPEN", current)
         self.assertIn("THEOLOGICAL_PEER_REVIEW_OPEN", current)
