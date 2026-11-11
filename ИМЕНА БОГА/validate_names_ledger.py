@@ -557,11 +557,14 @@ def validate_source_access(sources: dict) -> list[str]:
                 },
             },
             "SRC-RASHBATZ-TASHBETZ-I177-KESYAH-RESPONSUM": {
-                "year": 1444,
+                "year": None,
                 "sourceRole": "RASHBATZ_TASHBETZ_I177_DIRECT_HISTORICAL_AUTHOR_TESTIMONY_NON_ALEPPO_SCROLL_AND_CONFLICTING_MASORETIC_LISTS",
                 "fields": {
                     "responsumPart": 1,
                     "responsumNumber": 177,
+                    "authorDeathYear": 1444,
+                    "compositionYearEstablished": False,
+                    "printed1738EditionPublishedExactResponsumPageVerified": False,
                     "editedHebrewFullTextViewed": True,
                     "first1738PrintFolioViewed": False,
                     "second1741PrintFolioViewed": False,
