@@ -623,7 +623,17 @@ def validate_source_access(sources: dict) -> list[str]:
                     or w.get("penkowerPrintPage") != 78 or w.get("footnoteNumber") != 63
                     or w.get("halevanonYear") != 1863 or w.get("halevanonIssueNumber") != 5
                     or w.get("halevanonPagesReported") != "31b–32a"
-                    or w.get("halevanonExactIssueDateVerifiedFromOfficialNLI") != "1863-07-09"
+                    or w.get("halevanonIssue5CandidateDateFromOfficialNLIIndex") != "1863-06-11"
+                    or w.get("halevanonIssue5CalendarAndDownloadPageVerified") is not True
+                    or w.get("halevanonIssue5OriginalMastheadPhotoInspected") is not False
+                    or w.get("halevanonIssue5DateEvidenceState") != "CANDIDATE_NLI_ADJACENT_ISSUE_NOT_MASTHEAD_AUTOPSY"
+                    or w.get("halevanonPreviousMistakenDate") != "1863-07-09"
+                    or w.get("july9OriginalIssueNumberDirectlyInspected") != 6
+                    or w.get("july9OriginalIssuePagesDirectlyInspected") != "33-40"
+                    or w.get("july9OriginalIssueFullEightPagePdfVisuallyInspected") is not True
+                    or w.get("july9OriginalIssuePdfSha256") != "72c1d29b9b22c0d42cb2686be4b22fdf75b0942f2e3a08705e675eeba7f0f1a8"
+                    or w.get("june11IssueArchiveUrl") != "https://www.nli.org.il/he/newspapers/hlb/1863/06/11/01/"
+                    or w.get("june11FullIssuePdfDownloadPageUrl") != "https://www.nli.org.il/he/newspapers/?a=is&oid=hlb18630611-01&type=staticpdf&e=-------he-20--1--img-txIN%7CtxTI--------------1"
                     or w.get("halevanonOriginalIssuePage31and32ImageIndependentlyInspected") is not False
                     or w.get("halevanonVerseHebrewWordsIndependentlyCollated") is not False
                     or w.get("nliSaphirManuscriptCatalogueId") != "NNL_ALEPH990001022670205171"

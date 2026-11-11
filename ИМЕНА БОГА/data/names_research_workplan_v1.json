@@ -13,10 +13,10 @@
     "extensionRecords": 13,
     "contextAttestations": 105,
     "sourceRegisterEntries": 107,
-    "regressionTests": 298,
+    "regressionTests": 299,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_A267BD6F_EXACT_6_SUCCESS_WAVE40_NEW_SHA_PENDING",
+    "allSixCiChecks": "PRIOR_AD62D11B_EXACT_6_SUCCESS_WAVE41_NEW_SHA_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "a267bd6f0462fd76e17e0837412264bada35258a"
+    "lastConfirmedAllSixChecksSha": "ad62d11b555bc822d46685b4eecc8647c10dfc25"
   },
   "allowedStatuses": [
     "DONE",
@@ -836,8 +836,9 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-11",
-    "planStatus": "WAVE40: original Zer1986 p152 n9 identifies preloss-photo question numbers 49-51 and 336-340, total 8, matching printed 430 minus 422. Original list pp161/172/173 confirms passages Genesis27 and Deut4-6, and p173 repeats number339 twice. Exclusion of photo-covered questions is plausible but not stated by Zer and NOT PROVEN. Zero critical manuscript collation, 107 source records, 298 core tests, 105 attestations/87 provisional claims, NG04 BLOCKED_SOURCE, NG05 OPEN, scientific/Product/rights HOLD. Prior a267bd6f CI 6/6 SUCCESS, new SHA requires separate CI.",
+    "planStatus": "WAVE41: user-supplied complete NLI ha-Levanon 9 July 1863 scan independently inspected: ISSUE6 not issue5, printed pages33-40, 8/8 scanned physical pages. Penkower says ISSUE5 pp31b-32a, NLI's preceding 11 June 1863 issue exists and full-issue PDF download URL discovered but June issue5 masthead and Exodus17:16 words not yet visually read. Corrected 9Jul=issue5 false source register/plan/dossier, added one regression guard, source count107, core tests299, attestations105, claims87, 0 ancient photo collations and scholarly/Product/rights approvals. NG04 BLOCKED_SOURCE NG05 OPEN. Previous ad62d11b CI6/6 SUCCESS; new SHA to be checked independently.",
     "workCompleted": [
+      "Wave41: corrected false identification 9 July 1863 as Ha-Levanon issue5 by direct examination of user-provided full issue6 July9 8p PDF pages33-40. Crosswalk to official June11 prior issue and download page without claiming June photographed original read. Machine guard prevents changing issue6 to issue5 or June masthead flag without evidence.",
       "Wave40: documented 8 photo-covered question IDs noted in Zer1986 n9, page-checked the list for Genesis27 and Deut4-6; preserved 430-vs-422 conflict and duplicate 339 row as distinct concerns. One negative test guards candidate explanation not being promoted into verified history; synchronized 298 test baseline.",
       "Wave39: visually verified Zer1986 print p152, registered author-printed 422 versus arithmetically enumerated 430/543 (8-case mismatch) without speculative correction; added one anti-fiat test and synced machine SSOT regressionTests=297 after CI correctly rejected stale 296. No new source IDs, ancient collation or Product handoff.",
       "Wave37 fixed over-conservative courier-name blocker with 1986 Zer original p151 screenshot full Hebrew 'ר' יעקב זאב ברלין' and modern 2023 article p67 screenshot. Updated existing source IDs crosswalk, one new anti-inflation mutation test; no new separate bibliographic source ID, no claimed independent civil identity.",

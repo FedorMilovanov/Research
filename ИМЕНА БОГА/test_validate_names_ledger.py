@@ -2052,6 +2052,26 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                 self.assertTrue(any("Zer1986 photo-covered eight-number coincidence" in e
                                     for e in validate_source_access(modified)))
 
+    def test_1863_nli_9july_is_issue6_not_penkower_issue5(self) -> None:
+        mutations = (
+            ("halevanonIssue5CandidateDateFromOfficialNLIIndex", "1863-07-09"),
+            ("halevanonIssue5OriginalMastheadPhotoInspected", True),
+            ("halevanonIssue5DateEvidenceState", "DATE_PROVEN_FROM_JUNE_MASTHEAD"),
+            ("july9OriginalIssueNumberDirectlyInspected", 5),
+            ("july9OriginalIssuePagesDirectlyInspected", "31-32"),
+            ("july9OriginalIssueFullEightPagePdfVisuallyInspected", False),
+            ("june11IssueArchiveUrl", "https://www.nli.org.il/he/newspapers/hlb/1863/07/09/01/"),
+            ("halevanonIssue5CalendarAndDownloadPageVerified", False),
+        )
+        for field, invalid in mutations:
+            with self.subTest(field=field):
+                copy_data = copy.deepcopy(self.sources)
+                source = next(row for row in copy_data["records"]
+                              if row["id"] == "SRC-PENKOWER-TEXTUS9-1981-SAPHIR-HALEVANON-1863")
+                source["checkedAccess"][field] = invalid
+                self.assertTrue(any("Penkower 1981 historic newspaper source report" in e
+                                    for e in validate_source_access(copy_data)))
+
     def test_ofer_2008_cannot_become_direct_breuer_yeivin_or_photo(self) -> None:
         for key, wrong in (("originalJSIJTypesetPdfViewed", True), ("originalBreuerPagesViewed", True),
                            ("originalYeivinPageViewed", True), ("ancientAleppoExodusViewed", True),
