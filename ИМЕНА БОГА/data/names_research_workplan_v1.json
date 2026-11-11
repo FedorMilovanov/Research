@@ -12,11 +12,11 @@
     "arenaRecords": 29,
     "extensionRecords": 13,
     "contextAttestations": 105,
-    "sourceRegisterEntries": 112,
-    "regressionTests": 305,
+    "sourceRegisterEntries": 115,
+    "regressionTests": 308,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_C8FA42BFE172689906E58A600DFD7D392EC23213_EXACT_6_SUCCESS_NEW_WAVE49_SHA_PENDING",
+    "allSixCiChecks": "PRIOR_88700AE19619B1E248FE80DE85E580AC02D027FC_EXACT_6_SUCCESS_NEW_WAVE50_SHA_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "c8fa42bfe172689906e58a600dfd7d392ec23213"
+    "lastConfirmedAllSixChecksSha": "88700ae19619b1e248fe80de85e580ac02d027fc"
   },
   "allowedStatuses": [
     "DONE",
@@ -343,7 +343,8 @@
         "Wave46: official NLI manuscript NNL_ALEPH990001022670205171 verified: JTS Ms.1154 = catalogue Lutzki L729, 8 folios, 13 on-page IIIF image IDs; last-image info.json/JPEG HTTP 200, document manifest 403; manuscript text not inspected, rights gate unchanged.",
         "Wave47 original 19C copied manuscript photo directly viewed: SRC-JTS-MS1154-L729-MEOROT-NATAN-1855-EX17-16-MICROFILM; NLI IIIF FL28558023 frame7 left page 4a, Ex17:16 question שתי מלות / reply לא כן ... אלא חדא מלה, 4544x6455 SHA256=243a38b1b9201e3648bdd356558bcef7fa412fc98d5112fca177904153d17019. NOT ancient Aleppo codex, not scholarly/rights release.",
         "Wave48 selected visual marginal evidence, JTS FL28558023: stable main Q&A but technical shva/mappiq note not fully transcribed from ink. General Ofer2002 Textus21:209–233 publisher ABSTRACT says Aleppo appended composite-word Masorah list vs codex text discrepant in >=4 cases; Exodus17:16 membership in those cases NOT demonstrated. Both source access guards block overclaim; 111 sources /304 core tests.",
-        "Wave49 Ofer2003 Megadim37 full author HTML footnotes23/24/26 attribute Yeivin print p82 in contexts Psalm90:15 / Isaiah54:9 (NOT Ex17:16 proof). Source SRC-OFER-MEGADIM37-2003-YEIVIN82-COMPOSITE-WORDS. Original Yeivin82 and Breuer260–261 not visually accessed; NLI Penkower-annotated archive items ARC.4*2203 01 07 (Yeivin) and ARC.4*2203 01 06 (Breuer) not substitute for original pages."
+        "Wave49 Ofer2003 Megadim37 full author HTML footnotes23/24/26 attribute Yeivin print p82 in contexts Psalm90:15 / Isaiah54:9 (NOT Ex17:16 proof). Source SRC-OFER-MEGADIM37-2003-YEIVIN82-COMPOSITE-WORDS. Original Yeivin82 and Breuer260–261 not visually accessed; NLI Penkower-annotated archive items ARC.4*2203 01 07 (Yeivin) and ARC.4*2203 01 06 (Breuer) not substitute for original pages.",
+        "Wave50 separate historic halakhic reception: SRC-PESACHIM117A-COMPOSITE-KESYAH-AMORAIC-EDITED-DIGITAL (R Yohanan/Rav vs Rabbah), SRC-RASHBATZ-TASHBETZ-I177-KESYAH-RESPONSUM (own OTHER scroll two lines, contradictory Masora six/five, samekh-sheva not probative), SRC-ARUCH-HASHULCHAN-YD27524-KESYAH-TWO-WORD-DECISION (two-word norm, one-line recommended). Digital edited text directly read, historic original 1738/1741/1891 print folios NOT visually inspected, none Aleppo Exodus folio; new three mutation tests. No change to NG04 BLOCKED_SOURCE."
       ],
       "verification": "NOT_APPLICABLE_UNTIL_DONE",
       "closureAt": null,
@@ -760,7 +761,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "WAVE49 2026-11-11: Yeivin p82 referenced in Ofer2003 for Psalm90:15 and Isaiah54:9, NOT direct Ex17:16 verification. Original book page82 still unread; Breuer original pp260–261 n1 still unread; full Ofer2002 pp211–233 still unread. Two Penkower-annotated archive book records now pin known location; Breuer archive unavailable remotely even though general NLI book record advertises reading UI. Prior direct 19th-century JTS copy Ex17:16 Q&A remains valid. 112 sources/305 core tests/105 attestations/87 claims, all scholarly, peer, rights and Product HOLDs intact. NG-04 BLOCKED_SOURCE; NG-14 IN_PROGRESS.",
+  "nextAction": "WAVE50 2026-11-11: 115 research sources/308 core regression tests/105 attestations/87 provisional claims. Historiography of Exodus17:16 now includes original historical text (modern digital transcription) Pesachim117a one-word vs two-word, Rashbatz Tashbetz I177 own OTHER scroll and conflicting 5/6 Masoretic lists, Arukh HaShulchan YD275:24 normative two-word. 19C JTS FL28558023 copy and 1863 newspaper one-word historical reports remain distinct from medieval opinion. Original print facsimiles for Rashbatz/Arukh not read; Yeivin 1968/69 p82, Breuer1976/77 pp260-261 n1, full Ofer2002 critical context, BHS/Göttingen actual apparatus still need original acquisition; no ancient Aleppo Exodus photo and rights/peer/Product clearance. NG-04 BLOCKED_SOURCE, NG-14 IN_PROGRESS.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -842,8 +843,9 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-11",
-    "planStatus": "WAVE49 2026-11-11: prior exact SHA c8fa42bf 6/6 GitHub Actions terminal green, 697/697 tests. Publisher original author full online Hebrew Ofer2003 Megadim37 text directly read: notes23/24/26 cite Yeivin Keter Aram Zova print p82 for Psalms90:15 כימות/כי מות and Isaiah54:9 כי מי/כימי (Aleppo passage quoted as כי-מי); this cross-reference does NOT say Exodus17:16 was examined on Yeivin page82. Original Yeivin print p82, Breuer1976/77 pp260-261, Ofer2002 full article remain unread. Distinct Penkower-annotated library volumes identified in NLI archive Yeivin NNL_ARCHIVE_AL997014360086105171 and Breuer NNL_ARCHIVE_AL997014360086205171; latter archive record unavailable remotely, NOT identical to general original book catalog NNL_ALEPH990018523130205171 with a full-text UI. 112 source IDs, 305 core tests, 105 attestations, 87 claims; 0 ancient Aleppo Ex17:16 photos/critical apparatus/rights or Product promotion. NG-04 BLOCKED_SOURCE; NG-14 IN_PROGRESS. New head awaits 6/6 CI.",
+    "planStatus": "WAVE50 2026-11-11: exact prior 88700ae1 CI 6/6 SUCCESS, 698/698 tests. Direct modern critical-text DIGITAL READ (not historical facsimile) of three independent reception works on Exodus17:16 כס יה: Bavli Pesachim117a transmits R Yohanan/Rav one-word vs Rabbah only merchavyah one-word; Tashbetz Part I responsum177 Rashbatz directly reports a different Torah scroll with כס and יה on two LINES, two incompatible Masoretic enumerations (six vs five two-letter words), and samekh sheva NOT conclusive; Arukh HaShulchan Yoreh Deah275:24 explicitly rules two words but advises writing on SAME LINE, citing five-word Masorah and acknowledging Talmud disagreement. Only modern edited web transcriptions were read for all 3; older original Tashbetz1738/1741 and Arukh 1891 actual relevant print pages NOT visually inspected. No one of these is a firsthand observation of Aleppo Codex's lost Exodus17:16 leaf. 115 sources / 308 core tests / 105 attestations / 87 provisional claims; external Yeivin82/Breuer260-261/Ofer2002 remaining; NG04 BLOCKED_SOURCE, NG14 IN_PROGRESS; rights/scholarly/Product HOLD.",
     "workCompleted": [
+      "Wave50: independently read full original authored/ancient text in DIGITAL EDITED Hebrew for three independent historical reception strands: Bavli Pesachim117a, Rashbatz Tashbetz I177, and Arukh HaShulchan YD275:24; built explicit contradictory one-versus-two-word reception matrix, distinguished a medieval observed OTHER Torah scroll from lost Aleppo leaf, tracked manuscript Masorah 5-vs-6 and Talmud Rabbah/Rava cited spellings; 3 real historical source IDs and 3 negative mutation tests.",
       "Wave49: original authored 2003 Ofer Hebrew publisher HTML and exact notes 23/24/26 checked as Yeivin p82 secondary index for Psalm90 and Isaiah54 only; distinguish two Penkower-annotated NLI archival physical books from original published editions and their digital availability. Source ID + fail-closed test; zero premature original-page read claims.",
       "Wave48: narrowed firsthand JTS L729 selected Ex17:16 marginal reading to independently legible words, marked remaining palaeographic glyphs and editorial comparisons unresolved; verified peer-reviewed Ofer2002 bibliographic/abstract general composite-word distinction (not Ex17-specific); introduced source and negative regression.",
       "Wave47: downloaded and visually inspected official JTS manuscript microfilm FL28558023, located actual Exodus17:16 Q&A in left-page lower portion, registered distinct historic copied witness including SHA256/coordinates/rights, one new adversarial test. No loss of hold status.",
