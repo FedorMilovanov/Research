@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 206,
+  "sourceCount": 208,
   "sources": [
     {
       "id": "REF-P01",
@@ -3984,6 +3984,44 @@
       "url": "https://journals.openedition.org/abpo/pdf/3115",
       "verificationNote": "Wave436 2026-11-11: Daireaux 2015, printed pp79-82 and nn16,20,32,33, scholarly text checked; Rouen 23 Sep 1599 Parliament registration of general edict (Seine-Maritime 1B 5414 f520) but refused to register 56 particular articles (1B 110 f96v); separate Cour des aides Mémoriaux 3B 14 ff150-160 contains transcript of 56 particular articles. Later Rouen 5 Aug 1609 ruling 1B 801; Rouen 1610 Martin Le Megissier print with 27 Aug 1610 Parlement ruling, BPF in-8 12494. These PRIMARY judicial leaves and 1610 print images NOT personally collated. 1599 Paris particulars unresolved; Cour des aides transcription does not equal Parlement registration. SECONDARY_SCHOLARLY_TEXT_CHECKED / ROUEN_PARLEMENT_1599_GENERAL_ONLY / COUR_DES_AIDES_TRANSCRIPTION_NOT_PARLEMENT_REGISTRATION / ROUEN_1609_1610_REGISTER_DIRECT_CHECK_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD. Wave437 critical chronology read directly in author-published searchable scholarly article pp79-82: 23 Sep 1599 Rouen general-edict registration was REAL but PROCEDURALLY PARTIAL; 20 Sep 1599 secret-registry objections (~20 restrictions) remained and later created effects in local court practice. Henri IV ordered lifting: BPF ms 11/1 f12 (18 Jun 1602 letter of jussion, parchment copy, NOT visually inspected), Mazarine ms2595 ff358-361 (4 Mar 1602 Conseil ruling), f479-486 (17 Feb 1604), BPF ms11/1 f15 (22 Mar 1605), 1B 786 (1607), 1B 794 (1608), 1B 799 (19 May 1609), 1B 801 (5 Aug 1609 with 24 July jussion). Printed Rouen general-edict witness Raphaël Du Petit-Val 1599, Archives Seine-Maritime BHH 107; archival excerpts from 1B110 ff96-100 published Armelle Sentilhes ed. À propos de l’Édit de Nantes (1998), pp81-84; NONE of those original/1998 book pages read in this audit. Particular-articles registration + print only after Henry IV death 1610, separate from 1599 general-edict record. Museum Protestant/Larousse simplified 'Rouen registered in 1609' means lifting reservations/final implementation, not proof that no registration of general edict occurred Sep 1599. This remains academic B1, not judicial photo proof. 1599_GENERAL_EDICT_REGISTERED_WITH_RESERVATIONS / 1609_RESTRICTIONS_LIFTED_NOT_FIRST_1599_REGISTRATION / 1610_PARTICULAR_ARTICLES_SEPARATE_ACT / ROYAL_JUSSION_ORDER_NOT_EXECUTION / ARCHIVE_HOLD / PUBLICATION_HOLD.",
       "checkedAt": "2026-11-11"
+    },
+    {
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "checkedAt": "2026-11-11",
+      "id": "REF-S104",
+      "documentYear": 2005,
+      "title": "Luc Daireaux, Postface to Émile-G. Léonard, La résistance protestante en Normandie au XVIIIe siècle, Cahier des Annales de Normandie 34 (2005), p.112, Persée (edited volume: Preface Hubert Bost, Postface Luc Daireaux)",
+      "url": "https://www.persee.fr/doc/annor_0570-1600_2005_hos_34_1?pageId=T1_112",
+      "verificationNote": "Wave438 2026-11-11: Persée scholarly text p112 in postface attributed to Luc Daireaux, selectively read (not full 128pp): states that general AND particular articles were registered by Rouen Parlement on 23 September 1599, while the same researcher's later detailed archival argument Daireaux 2015 REF-S103 p80 and nn19-20 says the 56 particular articles were NOT transcribed in Rouen parliamentary registers in September 1599; separate 1610 registration/print. These two published formulations are inconsistent on their face, but 2005 shorthand, changing understanding, editorial error, and differing legal uses of registration are not adjudicated here. Not claim direct court-register collation; specific expert question and exact 1B 110/1B 5414/3B14/1610 print still open. DAIREAUX_2005_2015_PARTICULAR_REGISTRATION_TEXT_CONFLICT / 2005_POSTFACE_NOT_PRIMARY_COURT_RECORD / REGISTER_BOOK_DIRECT_CHECK_HOLD / EVIDENCE_HOLD / PUBLICATION_HOLD."
+    },
+    {
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "checkedAt": "2026-11-11",
+      "id": "REF-S105",
+      "documentYear": 2022,
+      "title": "Société de l'histoire du protestantisme français, official Bibliothèque du protestantisme français manuscript inventory Ms 1–1792 (PDF online), Ms 11/1, 81 folios, catalog entries f.17 (1607), f.22 (20 June 1608), catalog metadata NOT handwritten leaves",
+      "url": "https://www.shpf.fr/wp-content/uploads/2022/06/Ms-1-1792.pdf",
+      "verificationNote": "Wave438 2026-11-11: official BPF/SHPF PDF manuscript inventory for Ms 11/1, screenshot-verified on PDF page index 7 plus extracted catalog text: Ms11/1 81 leaves, 1595-1667, Normandy documents; catalogue explicitly records Henri IV lettre de jussion to Rouen Parlement on fol.17 dated 1607, parchment, demanding removal of additions and interpretations, and fol.22 20 June 1608, parchment, ordering pure and simple registration. This validates archival existence and scope only, not direct reading of either manuscript or signatures. Earlier scholarly Daireaux 2015 citation to BPF ms11/1 f12 (18 June 1602) is separate, and the catalogue's selective entry list does NOT exclude folio12. DO NOT equate royal orders with proof of parliament execution. BPF_F17_1607_F22_1608_CATALOG_DIRECT / ORIGINAL_F17_F22_NOT_READ / ROYAL_JUSSION_ORDER_NOT_EXECUTION / RIGHTS_HOLD / PUBLICATION_HOLD."
     }
   ]
 }
