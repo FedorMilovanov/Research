@@ -86,6 +86,31 @@ class FranceTrentNantesTests(unittest.TestCase):
         self.assertEqual(bost["accessState"], "PARTIAL_OBJECT")
         self.assertIn("PUBLICATION_HOLD", bost["holds"])
 
+    def test_wave432_particular_articles_date_not_transferred_to_general_edict(self):
+        content = CH.read_text(encoding="utf-8")
+        reader, apparatus = content.split("## Источниковедческий аппарат", 1)
+        dossier = (D / "09_france_confession_nantes_source_study.md").read_text(encoding="utf-8")
+        packet = (D / "independent_review_packets.md").read_text(encoding="utf-8")
+        claims = (D / "03_claim_verification_register.md").read_text(encoding="utf-8")
+        c302 = next(x for x in claims.splitlines() if x.startswith("| C302 |"))
+        for marker in ("30 апреля или 2 мая", "позднейший королевский акт",
+                       "общего эдикта", "не следует сводить"):
+            self.assertIn(marker.lower(), reader.lower())
+        for marker in ("Hildesheimer", "Bimbenet-Privat",
+                       "GENERAL_VS_PARTICULAR_DATE_SEPARATED",
+                       "RETROSPECTIVE_1685_2MAY_REFERENCE",
+                       "ORIGINAL_ART33_PRINT_COLLATION_HOLD"):
+            for s in (apparatus, dossier, packet):
+                with self.subTest(marker=marker):
+                    self.assertIn(marker, s)
+        for marker in ("C302", "30 avril ou 2 mai", "A65",
+                       "1598_SIGNED_ARTICLES_DIRECT_READ_HOLD"):
+            self.assertIn(marker, c302)
+        self.assertIn("timeout", dossier)
+        registry = json.loads((D / "source-registry-v1.json").read_text(encoding="utf-8"))
+        self.assertEqual(registry["sourceCount"], 204)
+        self.assertTrue(all("PUBLICATION_HOLD" in s["holds"] for s in registry["sources"]))
+
     def test_reader_navigation_and_historical_overclaims_rejected(self):
         for path in ("README.md","SELF_PLAN.md","04_series_blueprint.md",
                      "09_france_confession_nantes_source_study.md"):
