@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 118,
+    "sourceRecords": 119,
     "approvedForProduct": 0
   },
   "records": [
@@ -4213,6 +4213,63 @@
       }
     },
     {
+      "id": "SRC-OFER-TEXTUS26-2016-ALEPPO-EX8-FRAGMENT",
+      "title": "Yosef Ofer, A Fragment of the Aleppo Codex (Exodus 8) that Reached Israel, Textus 26(1) (2016), 173–198",
+      "creator": "Yosef Ofer",
+      "year": 2016,
+      "doi": "10.1163/2589255X-02601009",
+      "url": "https://bibleproject.huji.ac.il/sites/default/files/he_bible_project/files/a_fragment_of_the_aleppo_codex_exodus_8.pdf",
+      "officialIndexUrl": "https://bibleproject.huji.ac.il/textus",
+      "publisherUniversityMetadataUrl": "https://cris.iucc.ac.il/en/publications/a-fragment-of-the-aleppo-codex-exodus-8-that-reached-israel-3/",
+      "objectType": "original_peer_reviewed_2016_scholarly_article_with_published_reproductions_of_genuine_surviving_exodus8_fragment",
+      "sourceRole": "OFER2016_EXODUS8_SURVIVING_ORIGINAL_FRAGMENT_PARTIAL_CHECK_OF_SAPHIR_ZER_QUESTIONS_NOT_EXODUS17_16_FOLIO",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "locator": "Textus 26/1 (2016), pp173–198: original p173 provenance; pp174–177 original photographic reproductions of Exod8 recto/verso; pp179–181 section 'Questions posed by the Meorot Natan' and enlarged figures 3–5; p182 figures 6–7 line-fillers. Public university-hosted PDF was directly opened as full original PDF through web reading and original printed pp173,179–182 were independently examined as rendered page images. Other article pages text-searchable, not separately fully image-collated.",
+      "sourceObjectState": "Verified full university-hosted PDF surfaced via web textual reader and publisher-printed pages 173/179/180/181/182 visually reviewed with original published photographic figures. University PDF direct download from remote desktop gave a 581-byte HTML error and was rejected, not counted as a downloaded local original. Published photographic reproductions of the authentic surviving Exodus 8 Aleppo fragment were visually inspected, but the original parchment itself was NOT examined and no fully independent palaeographic reading of each sign was completed. Ofer's work discusses two historical Meorot Natan reports: Exod 8:7 (frog-name vocalization; surviving letters are torn and reading still uncertain), Exod 8:11 (harawahah: restored fragment shows remnants consistent with hataf patah; Ofer proposes nonstandard vertical arrangement of shewa/patah due to limited space), and printed photos 3–5. Printed page 179 cites Saphir's 1857 inquiry and Menashe Sithon; this is a 2016 scholarly account, not an independent dated examination of the JTS 1855 copy. Source not relevant as a direct photograph of lost Exod17:16.",
+      "supportedUse": "Document Ofer 2016 as a distinct modern scholarly autopsy and published photographic case where a surviving Aleppo Codex Exod8 parchment remnant can partially check two specific historic Saphir/Meorot Natan vocalization answers: Exod8:7 frog-name ambiguous due damaged edges; Exod8:11 surviving traces support special hataf-patah placement. Cite exact printed pages and photographs, explain Ofer's 1857/Sithon attribution as his account. Compare methodology of historical testimony vs extant ink without automatically validating every other Meorot Natan claim.",
+      "forbiddenUse": "Conclude that the unrelated lost Aleppo Codex Exodus17:16 leaf has been photographed, that its כסיה/כס יה word division was verified by these images, that JTS1855 versus Saphir1857 date conflict is solved, or that Yeivin1968 p82 or Breuer1976 pp260-261 were obtained. Do not declare independent physical ancient codex autopsy, uncontested glyph readings for damaged frog-name, publication license over Brill/Israel Museum photographs, independent source for Sapir's original autograph, independent scholarly peer-review signoff, or Product clearance.",
+      "verifiedSelectedPages20261112": {
+        "publisherOriginalPdfExposedAndOpenedInWeb": true,
+        "wholePdfPageCount": 26,
+        "printedTitlePage173VisuallyRead": true,
+        "printedPagesVisuallyRead": [
+          173,
+          179,
+          180,
+          181,
+          182
+        ],
+        "originalPublisherPhotoReproductionsViewed": true,
+        "figureNumbersViewed": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "originalPhysicalFragmentHandledByUs": false,
+        "originalHebrewInkFullyIndependentGlyphCollation": false,
+        "meorotNatanFirstQuestionEx8_7FrogNameFullyResolved": false,
+        "meorotNatanSecondQuestionEx8_11RestorationSupportsReportedHatafPatah": true,
+        "doesNotTestExodus17_16": true,
+        "yeivin1968Page17QuotedByOferNotYeivinPage82": true,
+        "breuer1976Pages260_261OriginallyRead": false,
+        "brillImagesMayBeRepublished": false,
+        "remoteDesktopAttemptWasPdf": false,
+        "localPdfBytesClaimed": 0
+      }
+    },
+    {
       "id": "SRC-OFER-MEGADIM37-2003-YEIVIN82-COMPOSITE-WORDS",
       "title": "יוסף עופר, עוד מילים זעירות במשמעות לא רגילה, Megadim 37 (Adar I 5763 / February 2003), original author's full publicly available Hebrew HTML",
       "creator": "Yosef Ofer",
@@ -4509,5 +4566,5 @@
       }
     }
   ],
-  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716 | WAVE49_2026-11-11_OFER2003_YEIVIN82_AUTHOR_CROSSWALK_PSALM_ISAIAH_NOT_EXODUS | WAVE50_2026-11-11_PESACHIM117A_TASHBETZ_I177_AHS_YD27524_HISTORICAL_DISPUTE_NOT_CODEX_AUTOPSY | WAVE54_2026-11-11_HUJI_OFER2002_25P_ENGLISH_EX17_16_SINGLE_CONCORDANT_NOT_DISCREPANT_HOLDS"
+  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716 | WAVE49_2026-11-11_OFER2003_YEIVIN82_AUTHOR_CROSSWALK_PSALM_ISAIAH_NOT_EXODUS | WAVE50_2026-11-11_PESACHIM117A_TASHBETZ_I177_AHS_YD27524_HISTORICAL_DISPUTE_NOT_CODEX_AUTOPSY | WAVE54_2026-11-11_HUJI_OFER2002_25P_ENGLISH_EX17_16_SINGLE_CONCORDANT_NOT_DISCREPANT_HOLDS | W59_2026-11-12_OFER2016_ORIGINAL_TEXTUS26_EXODUS8_SELECT_PAGE_FACSIMILES_HISTORY_QUESTION_PARTIAL_SUPPORT_NOT_EX17"
 }
