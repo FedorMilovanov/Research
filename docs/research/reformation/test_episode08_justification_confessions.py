@@ -463,11 +463,11 @@ class JustificationBookTests(unittest.TestCase):
                          {"ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"})
         for token in (
             "VD16 C4737", "bsb00103368", "347 canvases",
-            "ORIGINAL", "SCAN14", "SCAN15", "SCAN16",
+            "PRIMARY PRINT DIRECT IMAGE COLLATION", "SCAN14", "SCAN15", "SCAN16",
             "SCAN17", "SCAN22", "SCAN24", "SCAN25",
             "e4e8489b90aefb387918553b6fefaccb08c3b743f04309b827eab287dbc9b7a3",
             "publicdomain/mark/1.0/",
-            "REF-P91", "not the submitted imperial manuscript",
+            "REF-P91", "neither the submitted imperial manuscript",
         ):
             with self.subTest(witness=token):
                 self.assertIn(token, p92["verificationNote"])
