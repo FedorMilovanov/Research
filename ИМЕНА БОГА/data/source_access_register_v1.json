@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 111,
+    "sourceRecords": 112,
     "approvedForProduct": 0
   },
   "records": [
@@ -4193,7 +4193,55 @@
         "independentAncientCodexPhotoInspected": false,
         "rightsPermissionGranted": false
       }
+    },
+    {
+      "id": "SRC-OFER-MEGADIM37-2003-YEIVIN82-COMPOSITE-WORDS",
+      "title": "יוסף עופר, עוד מילים זעירות במשמעות לא רגילה, Megadim 37 (Adar I 5763 / February 2003), original author's full publicly available Hebrew HTML",
+      "creator": "Yosef Ofer",
+      "year": 2003,
+      "url": "https://www.etzion.org.il/he/tanakh/studies-tanakh/%D7%A2%D7%95%D7%93-%D7%9E%D7%99%D7%9C%D7%99%D7%9D-%D7%96%D7%A2%D7%99%D7%A8%D7%95%D7%AA-%D7%91%D7%9E%D7%A9%D7%9E%D7%A2%D7%95%D7%AA-%D7%9C%D7%90-%D7%A8%D7%92%D7%99%D7%9C%D7%94",
+      "objectType": "author_original_2003_magazine_article_full_hebrew_html_public_print_folio_not_visually_read",
+      "sourceRole": "OFER2003_AUTHOR_DIRECT_CITES_YEIVIN_PRINT82_FOR_PS90_ISA54_WORD_DIVISION_NOT_EX17_PROOF",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "sourceObjectState": "Original author-published article in Yeshivat Har Etzion/Tvunot publisher site, dated 03 February 2003, Megadim issue 37 (Adar I 5763), full HTML text directly inspected. Section קד (קד as small word) compares Psalm102:4 כמוקד/כמו קד, Psalm90:15 כימות/כי מות, and Isaiah54:9 כי מי/כימי. Printed notes 23 and 24 cite Israel Yeivin Keter Aram Zova Nikudo ve-Teamav print p82 for Psalm90 word division; note26 cites same Yeivin p82 in connection with Isaiah54:9 and Ofer's observation that Aleppo Codex text there reads כי-מי as two words. Note25 separately cites Ofer2002 Textus21 on composite words at front of Aleppo Codex. NONE of those citations is a direct author's Exodus17:16 reading or a copy of Yeivin printed page82. HTML original publication author text viewed, original Megadim37 printed facsimile/page numbers not obtained. No copyright permissions inferred.",
+      "supportedUse": "Original later authored secondary crosswalk confirming Yeivin print p82 is a source on composite word segmentation, specifically Psalm90:15 and Isaiah54:9, as attributed by Ofer2003. Highlight non-equivalence with the uninspected Yeivin original page and Exodus17:16.",
+      "forbiddenUse": "Treat Ofer2003 paraphrases as first-hand Yeivin page82, say original Yeivin printing personally read, say Yeivin p82 in this article comments on Exodus17:16, mark one vs two words in Exodus settled by unrelated Psalms/Isaiah discussion, assume Ofer2002 entire article is read or grant Product/photo rights.",
+      "verifiedWave49": {
+        "publisher": "Torat Har Etzion / Tevunot (Megadim)",
+        "publisherDate": "2003-02-03",
+        "megadimIssue": 37,
+        "publisherHtmlAuthorTextRead": true,
+        "originalPrintedMegadimFacsimileReviewed": false,
+        "articleExactOriginalPrintPagesKnown": false,
+        "relevantSection": "קד",
+        "authorYeivinCitationsFootnotes": [
+          23,
+          24,
+          26
+        ],
+        "yeivin1968_69BookPageCited": 82,
+        "psalm90_15CitedAsCompositeCase": true,
+        "isaiah54_9CitedAsCompositeCase": true,
+        "isaiah54_9AleppoFormAttributedByOfer": "כי-מי",
+        "independentYeivinPage82Read": false,
+        "exodus17_16InThisAuthorArticle": false,
+        "breuer1977Print260261Read": false,
+        "manuscriptMasoraAndActualCodexNotInterchangeable": true,
+        "print2002OferFirstFullTextRead": false,
+        "independentAncientAleppoWitnessAdded": 0,
+        "republicationRightsApproved": false
+      }
     }
   ],
-  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716"
+  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716 | WAVE49_2026-11-11_OFER2003_YEIVIN82_AUTHOR_CROSSWALK_PSALM_ISAIAH_NOT_EXODUS"
 }
