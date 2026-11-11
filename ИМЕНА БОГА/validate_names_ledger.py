@@ -341,6 +341,7 @@ def validate_extension(extension: dict, baseline: dict) -> list[str]:
 
 EXPECTED_SOURCE_ROLES = {
     "SRC-MT-MECHON": "DIGITAL_TEXT_SURFACE_ONLY",
+    "SRC-KROGEVOLL-TORONTO-PHD-2022-EL-SHADDAI": "ATTRIBUTED_KROGEVOLL_2022_COMPLETE_PHD_SHADDAI_MOUNTAIN_CONTACT_HYPOTHESIS",
     "SRC-VANWOLDE-2021": "ATTRIBUTED_SECONDARY_EXEGESIS",
     "SRC-ROESEL-2007": "ATTRIBUTED_ABSTRACT_HYPOTHESIS",
     "SRC-SHAW-2002": "CATALOGUE_ABSTRACT_ONLY",
@@ -1892,6 +1893,15 @@ def validate_source_access(sources: dict) -> list[str]:
             )
             if not valid_numbering:
                 errors.append(f"{prefix}: 4Q120 DJD editorial vs IAA museum-plate numbering crosswalk cannot be upgraded without original critical collation")
+        if rid == "SRC-KROGEVOLL-TORONTO-PHD-2022-EL-SHADDAI":
+            if (source.get("accessState") != "FULL_OBJECT_VERIFIED"
+                or source.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+                or source.get("rightsState") != "PERMISSION_REQUIRED"
+                or source.get("pdfPages") != 194
+                or source.get("full2022ThesisRetrieved") is not True
+                or source.get("full2025RevisedBookRead") is not False
+                or source.get("independentAncientTextCollation") is not False):
+                errors.append(f"{prefix}: Krogevoll 2022 complete thesis cannot imply complete 2025 book, ancient epigraphy, or rights clearance")
         if rid in DEIR_ALLA_SOURCE_GUARDS:
             required_state = DEIR_ALLA_SOURCE_GUARDS[rid]
             actual_state = (source.get("accessState"), source.get("rightsState"), source.get("locatorState"))
