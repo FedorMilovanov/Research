@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 212,
+  "sourceCount": 213,
   "sources": [
     {
       "id": "REF-P01",
@@ -3867,6 +3867,24 @@
       ],
       "url": "https://www.sbl-site.org/resources/digital-texts/sbl-greek-new-testament/",
       "verificationNote": "WAVE443 T-08 2026-11-11: DIRECTLY READ MODERN EDITED GREEK TEXT, NOT ANCIENT MANUSCRIPT: official Society of Biblical Literature catalog https://www.sbl-site.org/resources/digital-texts/sbl-greek-new-testament/ identifies Michael W Holmes ed SBL Greek New Testament (2010) and Faithlife/Logos cooperation; Greek text specifically Revelation 20:4–6 at https://www.biblegateway.com/passage/?search=Revelation+20%3A4-6&version=SBLGNT and 1 Corinthians 15:20–28 SBLGNT source at https://github.com/Faithlife/SBLGNT/blob/master/data/sblgnt/text/1Cor.txt . VERIFIED LEMMATA: Rev20:4 positive 'καὶ ἔζησαν καὶ ἐβασίλευσαν', Rev20:5 'οἱ λοιποὶ τῶν νεκρῶν οὐκ ἔζησαν'; verse4 also says 'τὰς ψυχὰς τῶν πεπελεκισμένων' [souls of beheaded]. 1Cor15:23 'ἔπειτα οἱ τοῦ Χριστοῦ ἐν τῇ παρουσίᾳ αὐτοῦ', v24 'εἶτα τὸ τέλος'. Grammatical sequencing does not itself quantify an interval or adjudicate Rev19-to-20 recapitulation or resurrection ontology. BibleGateway SBLGNT note apparatus gives microvariants about articles before χίλια at v4 and beginning of v5; these are PRESENTATION-LEVEL NOTES, not standalone inspection of NA28/UBS apparatus or Greek papyri, codices. No manuscript photographs, full textual-variant apparatus or editorial copying license independently verified; NO FULL_OBJECT status, no rights/publication clearance, no verdict on timeline from isolated words.",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "id": "REF-P89",
+      "documentYear": 1563,
+      "title": "Heidelberg Catechism, third German edition 1563, University Library Heidelberg Q 7188-4 B RES; original printed pages 42–44 Questions 59–64",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://digi.ub.uni-heidelberg.de/diglit/catechismus1563",
+      "verificationNote": "WAVE443-T03-FOLIOS 2026-11-11 FIRSTHAND_VISUAL_IMAGE_READ of exact original third German edition printed 1563 Heidelberg Johann Mayer, UB Heidelberg shelfmark Q 7188-4 B RES, https://www.ub.uni-heidelberg.de/ausstellungen/625jahre2011/exponate/sektion1/03_07.html with original digitized book https://digi.ub.uni-heidelberg.de/diglit/catechismus1563 . Primary digitization protected by Anubis at automated viewer. Independently accessible licensed-by-library mirror https://www.heidelberger-katechismus.net/3._Auflage_des_Heidelberger_Katechismus_von_1563-8476-0-227-50.html -> 106-page authorized PDF https://www.heidelberger-katechismus.net/daten/File/Upload/doc-6402-2.pdf (12,055,145 bytes SHA256 9a418fefc3541f772cca13d3bf4a41c0d4195e03aaa66f51571fc20a35e93f44) downloaded on authorized PRIVATE DESKTOP-O3FDOA4. Personally VISUALLY INSPECTED PDF digital pages 48, 49, 50 (1-based), with facsimile historic printed pages 42, 43, 44. Page42 (PDF48) shows Q59 followed by Q60 'Wie bistu gerecht für Gott?' and start of 'Allein durch waren glauben in Jesum Christum', continuing p43 (PDF49) '... mir die vollkommen gnugthuung / gerechtigkeit / und heiligkeit Christi schencket / und zurechnet' and acceptance with 'glaubigem herzen'. Printed p43 (PDF49) Q61 'Warumb sagstu daß du allein durch den glauben gerecht seyest?' denies worthiness of faith and asserts satisfaction, righteousness, holiness of Christ; Q62 denies own works as righteousness before God due imperfection and sin. Printed p44 (PDF50) Q63 'Verdienen aber unsere gute werck nichts' answers 'Die belohnung geschieht nit auß verdienst / sonder auß gnaden'; Q64 'Macht aber diese lehre nicht sorglose und verruchte leut?' answers 'Nein / Denn es unmöglich ist / daß die / so Christo durch waren glauben sind eingepflantzt / nit auch der danckbarkeit sollen bringen' (original spelling approximated by scoped visual reading; NO FULL DIPLOMATIC TRANSCRIPTION). PRIMARY ORIGINAL PRINT LEAF IMAGE DIRECT_VISUAL_Q60_Q64, not first/second 1563 edition, not an original manuscript, not complete word-for-word 106-page collation. Distinct physical witness from Utrecht REF-P17 (still CATALOG_ONLY/COARSE); modern English REF-P77 remains separate. Archival licensing of reproduced PDF says 'mit freundlicher Genehmigung' from UB Heidelberg, which is NOT a general open commercial reuse license: RIGHTS_UNKNOWN/RIGHTS_HOLD. Archived private original under Documents/Research-Primary-Sources/Heidelberg_Catechism_1563_Third_UBH, PDF in private only, no images to Git; temporary image derivatives and temporary rendering tool directory removed and checked. SHA byte receipt recorded in acquisition-manifest-v1.json. ARCHIVE_HOLD for other editions and uncopied pages, PUBLICATION_HOLD until review.",
       "checkedAt": "2026-11-11"
     },
     {
