@@ -107,7 +107,8 @@ class ReformationAdversarialTenTwelve(unittest.TestCase):
         self.assertEqual(lives_notes.count("**Перенесённое пояснение "), 3)
         self.assertIn("1524 году", lives_reader)
         self.assertIn("1537 года", lives_reader)
-        for proof in ("REF-P06: CATALOG_ONLY / LOCATOR_MISSING",
+        for proof in ("REF-P06: PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED",
+                      "d2r–d3v", "e1r", "ARCHIVE_HOLD",
                       "StAZH B VI 249 fol.1r", "1883 года", "1542 года"):
             self.assertIn(proof, lives_notes)
 
