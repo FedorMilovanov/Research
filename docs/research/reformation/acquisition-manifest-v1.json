@@ -540,7 +540,7 @@
       "downloadAccess": "https://api.digitale-sammlungen.de/iiif/presentation/v3/bsb10176467/manifest",
       "iiifManifest": "https://api.digitale-sammlungen.de/iiif/presentation/v3/bsb10176467/manifest",
       "language": "Original sixteenth-century printed Latin (Roman type)",
-      "rights": "Official BSB digital scans; reuse rights of individual images not independently cleared for editorial/commercial redistribution, RIGHTS_UNKNOWN and PUBLICATION_HOLD.",
+      "rights": "BSB specific official IIIF Presentation v3 manifests rights='https://rightsstatements.org/vocab/NoC-NC/1.0/' (No Copyright - Non-Commercial Use Only) at https://api.digitale-sammlungen.de/iiif/presentation/v3/bsb10176467/manifest . MDZ FAQ allows noncommercial uses and explains case-specific boundaries for commercial publication; explicit attribution to holding library, shelfmark, page, URN required. No permission/licence approval for planned book reproduction has been obtained. RIGHTS_HOLD / PUBLICATION_HOLD; source-registry-v1.json REF-P90 rightsState=PERMISSION_REQUIRED.",
       "accessState": "PARTIAL_OBJECT",
       "locatorState": "EXACT_LOCATOR_VERIFIED",
       "publicationState": "REFERENCE",
