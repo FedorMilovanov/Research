@@ -263,7 +263,7 @@ class JustificationBookTests(unittest.TestCase):
         for token in (
             "Bridwell", "BRA2651/A–B",
             "Georg Rhau, 1531", "несанкционированные печати",
-            "листы физического экземпляра Bridwell",
+            "страницы физического экземпляра Bridwell",
             "REF-P90", "REF-P89",
             "REF-P20", "ORIGINAL_EDITION_COLLATION_HOLD",
             "Кёльн", "парижские", "не коллированы",
