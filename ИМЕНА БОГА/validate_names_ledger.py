@@ -343,6 +343,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-MT-MECHON": "DIGITAL_TEXT_SURFACE_ONLY",
     "SRC-KROGEVOLL-TORONTO-PHD-2022-EL-SHADDAI": "ATTRIBUTED_KROGEVOLL_2022_COMPLETE_PHD_SHADDAI_MOUNTAIN_CONTACT_HYPOTHESIS",
     "SRC-BROOKE-MCLEAN-LXX-EX17-16-CAMBRIDGE-1909-P211": "CAMBRIDGE_1909_PRINTED_LXX_EX17_16_CRITICAL_VARIANTS_DIRECT_FACSIMILE_NOT_GOTTINGEN_OR_MANUSCRIPT",
+    "SRC-KRUGER-SHADDAY-JOB-2023-CONTEXT-CRITIQUE": "ATTRIBUTED_MODERN_JOB_SHADDAY_PRAGMATICS_WITH_VERIFIED_TEXTUAL_COUNTERCHECK",
     "SRC-VANWOLDE-2021": "ATTRIBUTED_SECONDARY_EXEGESIS",
     "SRC-ROESEL-2007": "ATTRIBUTED_ABSTRACT_HYPOTHESIS",
     "SRC-SHAW-2002": "CATALOGUE_ABSTRACT_ONLY",
@@ -1428,7 +1429,7 @@ def validate_source_access(sources: dict) -> list[str]:
             errors.append(f"{prefix}: unknown HOLD token")
         if source.get("criticalEditionCollated") is not False:
             errors.append(f"{prefix}: falsely claims edition collation")
-        if source.get("rightsState") == "PUBLICATION_ELIGIBLE" and rid not in {"SRC-VANWOLDE-2021", "SRC-TR1550-REV18", "SRC-SBLGNT-CCBY-LICENSE", "SRC-CAMBRIDGE-GOD-PRONOUNS", "SRC-SUCHARD-ELOHIM-2025", *DEIR_ALLA_VISUAL_LICENSE_GUARDS}:
+        if source.get("rightsState") == "PUBLICATION_ELIGIBLE" and rid not in {"SRC-KRUGER-SHADDAY-JOB-2023-CONTEXT-CRITIQUE", "SRC-VANWOLDE-2021", "SRC-TR1550-REV18", "SRC-SBLGNT-CCBY-LICENSE", "SRC-CAMBRIDGE-GOD-PRONOUNS", "SRC-SUCHARD-ELOHIM-2025", *DEIR_ALLA_VISUAL_LICENSE_GUARDS}:
             errors.append(f"{prefix}: evidence of a source-level license missing")
         if rid in {
             "SRC-CLEMENT-STROMATA-5-6-34-STAHLIN-GREEK",
@@ -1914,6 +1915,17 @@ def validate_source_access(sources: dict) -> list[str]:
                 or source.get("ancientCodexCollationCompleted") is not False
                 or source.get("allSiglaExpanded") is not False):
                 errors.append(f"{prefix}: historic Cambridge 1909 text is not Gottingen 1991 or ancient codex autopsy")
+        if rid == "SRC-KRUGER-SHADDAY-JOB-2023-CONTEXT-CRITIQUE":
+            if (source.get("accessState") != "FULL_OBJECT_VERIFIED"
+                or source.get("rightsState") != "PUBLICATION_ELIGIBLE"
+                or source.get("licenseUrl") != "https://creativecommons.org/licenses/by/4.0/"
+                or source.get("rightsScope") != "AUTHOR_ARTICLE_ONLY_CC_BY_4_NOT_BIBLE_OR_IMAGES"
+                or source.get("mtJob83IndependentSurfaceChecked") is not True
+                or source.get("job2713ParallelismNotTwoGodProof") is not True
+                or source.get("job272ReferenceMismatchNoted") is not True
+                or source.get("authorInterpretationDistinctionHeld") is not True
+                or source.get("independentAncientManuscriptCollation") is not False):
+                errors.append(f"{prefix}: Kruger Job interpretation or article-scoped license overclaimed")
         if rid in DEIR_ALLA_SOURCE_GUARDS:
             required_state = DEIR_ALLA_SOURCE_GUARDS[rid]
             actual_state = (source.get("accessState"), source.get("rightsState"), source.get("locatorState"))
