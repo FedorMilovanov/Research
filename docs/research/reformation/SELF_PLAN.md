@@ -1,6 +1,20 @@
 # САМОПЛАН «Реформации» — живая доска исполнения, границы поиска и сборка книги
 
-## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 431, 11.11.2026 (RF-H08-BNF-1598-PARTICULAR-PRINT-LOCATOR)
+## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 432, 11.11.2026 (RF-H08-NANTES-PARTICULAR-ARTICLE-DATING)
+
+**Вход проверен:** PR [#460](https://github.com/FedorMilovanov/Research/pull/460) MERGED; `Research/main = 94e51bd5261ab6a477b4347d146f19d00ec89e6b`, независимый **postmerge 5/5 SUCCESS**, Reformation **137/137 PASS**. Корпус — 14 глав/частей, 204 источника, C1–C319. Других открытых PR отдела «Реформация» на входе нет, чужие PR не трогать.
+
+**Новая содержательная правка:** читательская глава 11 корректно различала общий Эдикт апреля 1598 и особые 56 статей, но **не объясняла их самостоятельную хронологию**. Проверен официальный справочник Архивов Франции: **Hildesheimer / Bimbenet-Privat 2006, с.82**, список École des chartes отдельно относит **общий эдикт к апрелю 1598**, а **особые статьи к «30 avril ou 2 mai 1598»**. Через институциональную опись Seine-et-Marne série A, A65, визуально просмотренную PDF страницу zero-based **17** и издательскую транскрипцию акта Людовика XIV **17.10.1685**, установлена явная ретроспективная дата особых статей **2 мая**. Это независимые жанры с разной исторической доказательностью; 1685 не превращать в первичный лист 1598. BnF FRBNF33814462 нормализует день 2 мая для особых статей. Gallica `bpt6k3194390` bot_blocked и École des chartes `edit_13` timeout, поэтому **ORIGINAL_ART33_PRINT_COLLATION_HOLD** и **1598_SIGNED_ARTICLES_DIRECT_READ_HOLD** открыты.
+
+**Две реальные дельты:**
+1. Уточнить **читательскую историю главы 11**, не превращая её в журнал исследовательских URL: различие дат двух частей, а также право на ограниченное публичное богослужение по общей XIV и особой XXXIII сохраняется. В действующем научном аппарате дать точные институциональные документы/локаторы без повышения source level.
+2. Обновить существующие H-08 досье, claim **C302** и пакет независимого рецензента: показать два разных вида свидетельств о 30.04/02.05, различать ретроспективную цитату 1685 и физическое свидетельство 1598; добавить регрессию на запрет смешивать даты. Не создавать новых source IDs, новых директорий, Product-правок и внешних писем.
+
+**Gate:** 6 существующих файлов внутри `docs/research/reformation/`; `validate_corpus.py`, все Reformation `unittest`, 5/5 exact PR SHA SUCCESS прежде merge, затем 5/5 независимый post-merge main. Сохранять `RESEARCH_MANUSCRIPT_DRAFT / NOT_EDITORIAL_READY / FULL_DIPLOMATIC_XI_COLLATION_HOLD / ORIGINAL_ART33_PRINT_COLLATION_HOLD / 1598_SIGNED_ARTICLES_DIRECT_READ_HOLD / F28R_SIDE_UNCONFIRMED / INDEPENDENT_EXTERNAL_REVIEW_OPEN / THEOLOGICAL_PEER_REVIEW_OPEN / RIGHTS_HOLD / EDITORIAL_HANDOFF_HOLD / PUBLICATION_HOLD`.
+
+---
+
+## ИСТОРИЧЕСКИЙ СРЕЗ ВОЛНЫ 431 — не действующий паспорт (RF-H08-BNF-1598-PARTICULAR-PRINT-LOCATOR)
 
 **Вход по фактам:** [PR #459](https://github.com/FedorMilovanov/Research/pull/459) MERGED; точный `Research/main = 3c8a17d1b046d9d68f5ac43c80762f08f58ec8eb`, все **5/5 post-merge GitHub CI SUCCESS**, Reformation **136/136 PASS**. Волна 430 внесла в главу 11 забытое исключение особой статьи XXXIII и закрепила его регрессионным тестом.
 
