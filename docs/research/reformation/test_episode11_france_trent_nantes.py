@@ -218,6 +218,38 @@ class FranceTrentNantesTests(unittest.TestCase):
         self.assertIn("ROUEN_1609_1610_REGISTER_DIRECT_CHECK_HOLD",plan)
         self.assertIn("PUBLICATION_HOLD",plan)
 
+    def test_wave437_rouen_1599_registration_1609_restrictions_1610_particulars(self):
+        chapter=CH.read_text(encoding="utf-8")
+        narrative, apparatus=chapter.split("## Источниковедческий аппарат",1)
+        dossier=(D/"09_france_confession_nantes_source_study.md").read_text(encoding="utf-8")
+        packet=(D/"independent_review_packets.md").read_text(encoding="utf-8")
+        plan=(D/"SELF_PLAN.md").read_text(encoding="utf-8")
+        claims=(D/"03_claim_verification_register.md").read_text(encoding="utf-8")
+        c301=next(l for l in claims.splitlines() if l.startswith("| C301 |"))
+        data=json.loads((D/"source-registry-v1.json").read_text(encoding="utf-8"))
+        self.assertEqual(data["sourceCount"],206)
+        self.assertEqual(len(data["sources"]),206)
+        self.assertIn("23 сентября 1599", narrative)
+        self.assertIn("5 августа 1609", narrative)
+        self.assertIn("1610", narrative)
+        self.assertIn("не включил 56 особых статей", narrative)
+        self.assertIn("регистрац", narrative.lower())
+        for marker in ("1599_GENERAL_EDICT_REGISTERED_WITH_RESERVATIONS",
+                       "1609_RESTRICTIONS_LIFTED_NOT_FIRST_1599_REGISTRATION",
+                       "1610_PARTICULAR_ARTICLES_SEPARATE_ACT",
+                       "ROYAL_JUSSION_ORDER_NOT_EXECUTION"):
+            self.assertIn(marker,dossier)
+            self.assertIn(marker,packet)
+            self.assertIn(marker,c301)
+        for marker in ("BHH 107", "ms.11/1", "Sentilhes", "1B 799", "1B 801"):
+            self.assertIn(marker,dossier)
+            self.assertIn(marker,packet)
+            self.assertIn(marker,plan)
+        self.assertIn("wave437",next(s for s in data["sources"] if s["id"]=="REF-S103")["verificationNote"].lower())
+        self.assertIn("PUBLICATION_HOLD",next(s for s in data["sources"] if s["id"]=="REF-S103")["holds"])
+        self.assertIn("ORIGINAL_ART33_PRINT_COLLATION_HOLD",plan)
+        self.assertIn("NOT_EDITORIAL_READY",plan)
+
     def test_reader_navigation_and_historical_overclaims_rejected(self):
         for path in ("README.md","SELF_PLAN.md","04_series_blueprint.md",
                      "09_france_confession_nantes_source_study.md"):
