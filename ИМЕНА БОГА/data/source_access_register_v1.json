@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 107,
+    "sourceRecords": 108,
     "approvedForProduct": 0
   },
   "records": [
@@ -3693,8 +3693,8 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "sourceObjectState": "Original Hebrew University hosted scholarly PDF was directly read as PDF text on printed p78 n63, with prior web screenshot request timed out: do not claim physical page image visually inspected. Footnote 63 explicitly cites Hebrew ha-Levanon I (1863) no5 pp31b-32a, excerpt reaching Exodus17:16, no11 pp76a,b, and JTS 729 copied list dated 1855. University of Bar-Ilan publication registry confirms Textus vol9 issue1 (1981) pp39-128 DOI. User-supplied original full 9 July 1863 PDF, 8 pages, was visually inspected and its first page clearly identifies ISSUE 6, printed pp33-40 (not issue5). Official NLI indexed previous 11 June 1863 issue and provides PDF whole-issue link; likely issue5, but June masthead and original printed pp31b-32a have NOT been inspected. Previous issue5=July9 report was incorrect and is explicitly withdrawn. The original 1863 newspaper's Exodus17:16 print line has NOT independently been read as image or verified against the Penkower report. Other automated browser report claiming specific page words was self-contradictory about author and cannot count as evidence. Wave34 Penkower's JTS copy dated 1855 must not be silently substituted for Zer/Breuer 1857 question dispatch; chronology unresolved pending original manuscript/archive.",
-      "supportedUse": "Cite Penkower as an original 1981 secondary scholarly bibliography describing the mid-nineteenth-century printing route, 1863 issue5 pages and copied JTS list; cite official NLI catalog and original inspected July9 issue6 p33-40 to correctly distinguish likely June11 issue5, but do not claim June11 masthead or Exodus text personally viewed. Distinguish copied JTS 729, 1863 printed newspaper, and lost Aleppo codex as three NON-INTERCHANGEABLE evidence objects.",
+      "sourceObjectState": "Original Hebrew University hosted scholarly PDF was directly read as PDF text on printed p78 n63, with prior web screenshot request timed out: do not claim physical page image visually inspected. Footnote 63 explicitly cites Hebrew ha-Levanon I (1863) no5 pp31b-32a, excerpt reaching Exodus17:16, no11 pp76a,b, and JTS 729 copied list dated 1855. University of Bar-Ilan publication registry confirms Textus vol9 issue1 (1981) pp39-128 DOI. User-supplied original full 9 July 1863 PDF, 8 pages, was visually inspected and its first page clearly identifies ISSUE 6, printed pp33-40 (not issue5). Official NLI indexed previous 11 June 1863 issue and provides PDF whole-issue link; likely issue5, but June masthead and original printed pp31b-32a have NOT been inspected. Previous issue5=July9 report was incorrect and is explicitly withdrawn. The original 1863 newspaper's Exodus17:16 print line has NOT independently been read as image or verified against the Penkower report. Other automated browser report claiming specific page words was self-contradictory about author and cannot count as evidence. Wave34 Penkower's JTS copy dated 1855 must not be silently substituted for Zer/Breuer 1857 question dispatch; chronology unresolved pending original manuscript/archive. WAVE42 UPDATE: full June11 1863 issue5 original PDF acquired from user and newspaper p32 Ex17:16 visually read. Firsthand historical newspaper report is in distinct primary source SRC-HALEVANON-18630611-ISSUE5-EX17-16-ORIGINAL; Penkower 1981 itself remains a secondary paper, and the actual ancient codex/JTS729 were not seen.",
+      "supportedUse": "Cite Penkower as an original 1981 secondary scholarly bibliography describing the mid-nineteenth-century printing route, 1863 issue5 pages and copied JTS list; cite official NLI catalog and original inspected July9 issue6 p33-40 to correctly distinguish likely June11 issue5, but do not claim June11 masthead or Exodus text personally viewed. Distinguish copied JTS 729, 1863 printed newspaper, and lost Aleppo codex as three NON-INTERCHANGEABLE evidence objects. Wave42: original 1863 first edition now directly checked in separate historic source record SRC-HALEVANON-18630611-ISSUE5-EX17-16-ORIGINAL.",
       "forbiddenUse": "Claim 1863 issue No5 image/photo scanned and Hebrew words independently verified; assert modern 1981 scholarly PDF screenshot succeeded; confuse Saphir with Nathan Shapira's unrelated Kabbalah work; claim JTS L729 is Saphir autograph or preserved Aleppo Exodus folio; assert original Yeivin or Breuer pages read; relicense 1981 scanned journal, 1863 page or manuscript photographs to Product.",
       "checkedAccess": {
         "originalPenkowerPublishedPdfTextPrintedPage78Read": true,
@@ -3706,8 +3706,8 @@
         "halevanonIssueNumber": 5,
         "halevanonPagesReported": "31b–32a",
         "officialNLICalendarUrl": "https://www.nli.org.il/he/newspapers/?a=cl&ai=1&cl=CL1&sp=hlb",
-        "halevanonOriginalIssuePage31and32ImageIndependentlyInspected": false,
-        "halevanonVerseHebrewWordsIndependentlyCollated": false,
+        "halevanonOriginalIssuePage31and32ImageIndependentlyInspected": true,
+        "halevanonVerseHebrewWordsIndependentlyCollated": true,
         "nliSaphirManuscriptCatalogueId": "NNL_ALEPH990001022670205171",
         "unrelatedNathanShapiraNLICatalogueId": "NNL_ALEPH990000621650205171",
         "jts729AutographInspected": false,
@@ -3719,15 +3719,17 @@
         "goshen1962IntroDateFromOriginalJTSIndependentlyReadByUs": false,
         "halevanonIssue5CandidateDateFromOfficialNLIIndex": "1863-06-11",
         "halevanonIssue5CalendarAndDownloadPageVerified": true,
-        "halevanonIssue5OriginalMastheadPhotoInspected": false,
-        "halevanonIssue5DateEvidenceState": "CANDIDATE_NLI_ADJACENT_ISSUE_NOT_MASTHEAD_AUTOPSY",
+        "halevanonIssue5OriginalMastheadPhotoInspected": true,
+        "halevanonIssue5DateEvidenceState": "DIRECT_ORIGINAL_NEWSPAPER_PRINT_CONFIRMED",
         "halevanonPreviousMistakenDate": "1863-07-09",
         "july9OriginalIssueNumberDirectlyInspected": 6,
         "july9OriginalIssuePagesDirectlyInspected": "33-40",
         "july9OriginalIssueFullEightPagePdfVisuallyInspected": true,
         "july9OriginalIssuePdfSha256": "72c1d29b9b22c0d42cb2686be4b22fdf75b0942f2e3a08705e675eeba7f0f1a8",
         "june11IssueArchiveUrl": "https://www.nli.org.il/he/newspapers/hlb/1863/06/11/01/",
-        "june11FullIssuePdfDownloadPageUrl": "https://www.nli.org.il/he/newspapers/?a=is&oid=hlb18630611-01&type=staticpdf&e=-------he-20--1--img-txIN%7CtxTI--------------1"
+        "june11FullIssuePdfDownloadPageUrl": "https://www.nli.org.il/he/newspapers/?a=is&oid=hlb18630611-01&type=staticpdf&e=-------he-20--1--img-txIN%7CtxTI--------------1",
+        "halevanonDirectOriginalPrintSourceId": "SRC-HALEVANON-18630611-ISSUE5-EX17-16-ORIGINAL",
+        "june11OriginalIssuePdfSha256": "16270eaf4d3165fae17d1ca8e944e5e47085d0dfa7535944c36754a0ad29cc1d"
       }
     },
     {
@@ -3881,7 +3883,61 @@
         "zer1986LaterScholarlyFullCourierName": "יעקב זאב ברלין",
         "literalSaphirTranscriptionIncludesSurnameBerlin": false
       }
+    },
+    {
+      "id": "SRC-HALEVANON-18630611-ISSUE5-EX17-16-ORIGINAL",
+      "title": "הלבנון (Ha-Levanon), issue 5, 11 June 1863, printed pp25–32; p32 Exodus17:16 in כתר תורה",
+      "creator": "Ha-Levanon editorial publication; original list attributed to Jacob Saphir in Penkower 1981 p78 n63; unsigned on visible source fragment",
+      "year": 1863,
+      "url": "https://www.nli.org.il/he/newspapers/hlb/1863/06/11/01/",
+      "fullIssuePdfRoute": "https://www.nli.org.il/he/newspapers/?a=is&oid=hlb18630611-01&type=staticpdf&e=-------he-20--1--img-txIN%7CtxTI--------------1",
+      "objectType": "historical_original_1863_newspaper_print_facsimile_not_ancient_Aleppo_codex",
+      "sourceRole": "HALEVANON_1863_ISSUE5_P32_ORIGINAL_PRINT_EX17_16_ONE_WORD_REPORT_NOT_ALEPPO_CODEX_AUTOPSY",
+      "evidenceClass": "A2",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "locator": "Printed p32, right column last Exodus line; print p31 lower left begins כתר תורה",
+      "sourceObjectState": "Direct photographic reading of the original 1863 printed line confirms one-word historical report. It does NOT constitute original Aleppo Codex or JTS729 autopsy.",
+      "supportedUse": "Cite original newspaper p32 one-word assertion 'כס יה חדא מלה' and sheva/mappiq notes; attribution to Saphir is via Penkower 1981.",
+      "forbiddenUse": "Claim ancient Aleppo manuscript letters read, independently inspected JTS729, original Yeivin or Breuer apparatus read, author autograph proven, scan licensed for website publication, or second independent ancient manuscript witness.",
+      "printedObjectVerificationWave42": {
+        "archiveIssueDate": "1863-06-11",
+        "issueNumberFromOriginalMasthead": 5,
+        "printedPageRange": "25-32",
+        "fileName": "18630611_01.pdf",
+        "physicalPages": 8,
+        "pdfBytes": 686922,
+        "sha256": "16270eaf4d3165fae17d1ca8e944e5e47085d0dfa7535944c36754a0ad29cc1d",
+        "firstPageMastheadVisuallyInspected": true,
+        "originalPrintPages31And32VisuallyInspected": true,
+        "originalEx17_16PrintLineVisuallyRead": true,
+        "verse": "Exodus 17:16",
+        "printPage": 32,
+        "pdfPageOneBased": 8,
+        "column": "RIGHT_LAST_LINE_EXODUS",
+        "rubric": "שמות",
+        "startRubric": "כתר תורה",
+        "reference": "י״ז ט״ז",
+        "typesetWordGroups": "כס יה",
+        "wordCountStatement": "חדא מלה",
+        "normalizedExcerpt": "י״ז ט״ז כס יה חדא מלה והס׳ בשוא וההא במפיק",
+        "sourcePrintedOneWordReport": true,
+        "newAncientManuscriptWitness": false,
+        "originalAleppoExodusLeafSeen": false,
+        "jtsL729OriginalSeen": false,
+        "yeivinBreuerCriticalPagesSeen": false,
+        "authorSignedNewspaperPageProven": false,
+        "permissionToReuseNliScan": false
+      }
     }
   ],
-  "auditRevision": "NG04_WAVE37_ZER_P151_COURIER_FULL_NAME_BERLIN_2023_P67_CORROBORATED_20261111"
+  "auditRevision": "NG04_WAVE42_ORIGINAL_HALEVANON_1863_EX17_16_PRINT_VERIFIED_20261111"
 }

@@ -12,11 +12,11 @@
     "arenaRecords": 29,
     "extensionRecords": 13,
     "contextAttestations": 105,
-    "sourceRegisterEntries": 107,
-    "regressionTests": 299,
+    "sourceRegisterEntries": 108,
+    "regressionTests": 300,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_AD62D11B_EXACT_6_SUCCESS_WAVE41_NEW_SHA_PENDING",
+    "allSixCiChecks": "PRIOR_C604895F_EXACT_6_SUCCESS_WAVE42_NEW_SHA_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "ad62d11b555bc822d46685b4eecc8647c10dfc25"
+    "lastConfirmedAllSixChecksSha": "c604895fa217df20ffc2f9b32a4fe14dca34fb76"
   },
   "allowedStatuses": [
     "DONE",
@@ -836,8 +836,9 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-11",
-    "planStatus": "WAVE41: user-supplied complete NLI ha-Levanon 9 July 1863 scan independently inspected: ISSUE6 not issue5, printed pages33-40, 8/8 scanned physical pages. Penkower says ISSUE5 pp31b-32a, NLI's preceding 11 June 1863 issue exists and full-issue PDF download URL discovered but June issue5 masthead and Exodus17:16 words not yet visually read. Corrected 9Jul=issue5 false source register/plan/dossier, added one regression guard, source count107, core tests299, attestations105, claims87, 0 ancient photo collations and scholarly/Product/rights approvals. NG04 BLOCKED_SOURCE NG05 OPEN. Previous ad62d11b CI6/6 SUCCESS; new SHA to be checked independently.",
+    "planStatus": "WAVE42: full original NLI 18630611_01.pdf issue5 686922 bytes sha256 16270eaf4d3165fae17d1ca8e944e5e47085d0dfa7535944c36754a0ad29cc1d visually read, 8 pages pp25-32; print p32 right column confirms Exodus17:16 י״ז ט״ז כס יה חדא מלה והס׳ בשוא וההא במפיק. Newspaper first-hand historical print claim one word, NOT ancient Aleppo Codex/JTS729. Original source row 108 separate from Penkower1981 secondary; 300 core tests, 105 attestations/87 claims, zero ancient critical photo collations or publication approvals. NG04 BLOCKED_SOURCE, rights/Product HOLD, prior c604895f CI6/6 success new SHA pending.",
     "workCompleted": [
+      "Wave42: original newspaper printed p32 Ex17:16 one-word report independently verified; new original-1863 newspaper bibliographic source separate from Penkower; source/test baseline 108/300 and negative no-ancient-codex/rights regression.",
       "Wave41: corrected false identification 9 July 1863 as Ha-Levanon issue5 by direct examination of user-provided full issue6 July9 8p PDF pages33-40. Crosswalk to official June11 prior issue and download page without claiming June photographed original read. Machine guard prevents changing issue6 to issue5 or June masthead flag without evidence.",
       "Wave40: documented 8 photo-covered question IDs noted in Zer1986 n9, page-checked the list for Genesis27 and Deut4-6; preserved 430-vs-422 conflict and duplicate 339 row as distinct concerns. One negative test guards candidate explanation not being promoted into verified history; synchronized 298 test baseline.",
       "Wave39: visually verified Zer1986 print p152, registered author-printed 422 versus arithmetically enumerated 430/543 (8-case mismatch) without speculative correction; added one anti-fiat test and synced machine SSOT regressionTests=297 after CI correctly rejected stale 296. No new source IDs, ancient collation or Product handoff.",

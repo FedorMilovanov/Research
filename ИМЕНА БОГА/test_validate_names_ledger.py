@@ -2055,8 +2055,8 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
     def test_1863_nli_9july_is_issue6_not_penkower_issue5(self) -> None:
         mutations = (
             ("halevanonIssue5CandidateDateFromOfficialNLIIndex", "1863-07-09"),
-            ("halevanonIssue5OriginalMastheadPhotoInspected", True),
-            ("halevanonIssue5DateEvidenceState", "DATE_PROVEN_FROM_JUNE_MASTHEAD"),
+            ("halevanonIssue5OriginalMastheadPhotoInspected", False),
+            ("halevanonIssue5DateEvidenceState", "CANDIDATE_NLI_ADJACENT_ISSUE_NOT_MASTHEAD_AUTOPSY"),
             ("july9OriginalIssueNumberDirectlyInspected", 5),
             ("july9OriginalIssuePagesDirectlyInspected", "31-32"),
             ("july9OriginalIssueFullEightPagePdfVisuallyInspected", False),
@@ -2069,8 +2069,34 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                 source = next(row for row in copy_data["records"]
                               if row["id"] == "SRC-PENKOWER-TEXTUS9-1981-SAPHIR-HALEVANON-1863")
                 source["checkedAccess"][field] = invalid
-                self.assertTrue(any("Penkower 1981 historic newspaper source report" in e
+                self.assertTrue(any("Penkower 1981 historic newspaper source report crosswalk" in e
                                     for e in validate_source_access(copy_data)))
+
+    def test_original_1863_newspaper_reading_cannot_become_ancient_codex(self) -> None:
+        for field, wrong in (
+            ("archiveIssueDate", "1863-07-09"),
+            ("issueNumberFromOriginalMasthead", 6),
+            ("printedPageRange", "33-40"),
+            ("sha256", "wrong"), ("printPage", 31), ("pdfPageOneBased", 7),
+            ("typesetWordGroups", "כסיה"), ("wordCountStatement", "תרי מלין"),
+            ("originalEx17_16PrintLineVisuallyRead", False),
+            ("newAncientManuscriptWitness", True),
+            ("originalAleppoExodusLeafSeen", True),
+            ("jtsL729OriginalSeen", True),
+            ("yeivinBreuerCriticalPagesSeen", True),
+            ("authorSignedNewspaperPageProven", True),
+            ("permissionToReuseNliScan", True),
+        ):
+            with self.subTest(field=field):
+                changed = copy.deepcopy(self.sources)
+                row = next(x for x in changed["records"] if x["id"] == "SRC-HALEVANON-18630611-ISSUE5-EX17-16-ORIGINAL")
+                row["printedObjectVerificationWave42"][field] = wrong
+                self.assertTrue(any("1863 original newspaper one-word report" in e
+                                    for e in validate_source_access(changed)))
+        changed = copy.deepcopy(self.sources)
+        changed["records"] = [x for x in changed["records"] if x.get("id") != "SRC-HALEVANON-18630611-ISSUE5-EX17-16-ORIGINAL"]
+        self.assertTrue(any("source-inventory IDs changed" in e
+                            for e in validate_source_access(changed)))
 
     def test_ofer_2008_cannot_become_direct_breuer_yeivin_or_photo(self) -> None:
         for key, wrong in (("originalJSIJTypesetPdfViewed", True), ("originalBreuerPagesViewed", True),
@@ -2082,10 +2108,10 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                 row["checkedProvenance"][key] = wrong
                 self.assertTrue(any("Ofer 2008 secondary review" in e for e in validate_source_access(data)))
 
-    def test_penkower_1981_and_saphir_catalog_must_not_claim_1863_scan_autopsy(self) -> None:
+    def test_penkower_1981_secondary_source_original_press_autopsy_crosswalk(self) -> None:
         for rid,field,wrong in (
-            ("SRC-PENKOWER-TEXTUS9-1981-SAPHIR-HALEVANON-1863", "halevanonOriginalIssuePage31and32ImageIndependentlyInspected", True),
-            ("SRC-PENKOWER-TEXTUS9-1981-SAPHIR-HALEVANON-1863", "halevanonVerseHebrewWordsIndependentlyCollated", True),
+            ("SRC-PENKOWER-TEXTUS9-1981-SAPHIR-HALEVANON-1863", "halevanonOriginalIssuePage31and32ImageIndependentlyInspected", False),
+            ("SRC-PENKOWER-TEXTUS9-1981-SAPHIR-HALEVANON-1863", "halevanonVerseHebrewWordsIndependentlyCollated", False),
             ("SRC-PENKOWER-TEXTUS9-1981-SAPHIR-HALEVANON-1863", "originalPenkowerPublishedPdfPage78ScreenshotSuccess", True),
             ("SRC-PENKOWER-TEXTUS9-1981-SAPHIR-HALEVANON-1863", "nliSaphirManuscriptCatalogueId", "NNL_ALEPH990000621650205171"),
             ("SRC-PENKOWER-TEXTUS9-1981-SAPHIR-HALEVANON-1863", "jts729AutographInspected", True),
@@ -2094,7 +2120,7 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                 changed = copy.deepcopy(self.sources)
                 row = next(x for x in changed["records"] if x["id"] == rid)
                 row["checkedAccess"][field] = wrong
-                self.assertTrue(any("Penkower 1981 historic newspaper source report" in e
+                self.assertTrue(any("Penkower 1981 historic newspaper source report crosswalk" in e
                                     for e in validate_source_access(changed)))
         for field,wrong in (("nliRecordId", "NNL_ALEPH990000621650205171"),
                             ("nliManuscriptImagesOpened", True),

@@ -375,6 +375,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-CAMBRIDGE-GOD-PRONOUNS": "ATTRIBUTED_SECONDARY_GRAMMAR_AND_THEOLOGY",
     "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137": "ZER_1986_ANONYMOUS_JTS_L729_COPY_ALEPPO_WORD_JOIN_REPORT_EX17_137",
     "SRC-OFER-BREUER-MASORAH-2008-EX17-16": "OFER_2008_EDITORIAL_BREUER_TWO_WORD_VERSUS_ALEPPO_ONE_WORD_ATTRIBUTED_ANALYSIS",
+    "SRC-HALEVANON-18630611-ISSUE5-EX17-16-ORIGINAL": "HALEVANON_1863_ISSUE5_P32_ORIGINAL_PRINT_EX17_16_ONE_WORD_REPORT_NOT_ALEPPO_CODEX_AUTOPSY",
     "SRC-PENKOWER-TEXTUS9-1981-SAPHIR-HALEVANON-1863": "PENKOWER_1981_PRINTED_P78_N63_SAPHIR_1863_ISSUE5_JTS729_BIBLIOGRAPHIC_CROSSWALK",
     "SRC-BREUER-MEGADIM10-1990-SITHON-SAPIR-REPORT": "BREUER_1990_ORIGINAL_P104_SAPIR_MENASHE_SITHON_YAAKOV_ZEEV_1857",
     "SRC-GOSHEN-GOTTSTEIN-TEXTUS2-1962-JTS729": "GOSHEN_GOTTSTEIN_1962_FIRSTHAND_JTS729_MANUSCRIPT_REPORT_NOT_PRESENT_DAY_AUTOPSY_AND_SCRIBE_HYPOTHESIS",
@@ -612,6 +613,34 @@ def validate_source_access(sources: dict) -> list[str]:
                     or d.get("exodus17_16HandwritingIndependentlyRead") is not False
                     or d.get("historicalNewspaperContentReadInDigitalScan") is not False):
                 errors.append(f"{prefix}: Sapir versus Shapira Maorot Nathan catalog and unearned original scan access")
+        if rid == "SRC-HALEVANON-18630611-ISSUE5-EX17-16-ORIGINAL":
+            w = source.get("printedObjectVerificationWave42", {})
+            if (source.get("year") != 1863 or source.get("url") != "https://www.nli.org.il/he/newspapers/hlb/1863/06/11/01/"
+                    or source.get("sourceRole") != "HALEVANON_1863_ISSUE5_P32_ORIGINAL_PRINT_EX17_16_ONE_WORD_REPORT_NOT_ALEPPO_CODEX_AUTOPSY"
+                    or source.get("evidenceClass") != "A2" or source.get("accessState") != "FULL_OBJECT_VERIFIED"
+                    or source.get("rightsState") != "PERMISSION_REQUIRED" or source.get("publicationState") != "BLOCKED"
+                    or source.get("criticalEditionCollated") is not False or not isinstance(w, dict)
+                    or w.get("archiveIssueDate") != "1863-06-11" or w.get("issueNumberFromOriginalMasthead") != 5
+                    or w.get("printedPageRange") != "25-32" or w.get("fileName") != "18630611_01.pdf"
+                    or w.get("physicalPages") != 8 or w.get("pdfBytes") != 686922
+                    or w.get("sha256") != "16270eaf4d3165fae17d1ca8e944e5e47085d0dfa7535944c36754a0ad29cc1d"
+                    or w.get("firstPageMastheadVisuallyInspected") is not True
+                    or w.get("originalPrintPages31And32VisuallyInspected") is not True
+                    or w.get("originalEx17_16PrintLineVisuallyRead") is not True
+                    or w.get("verse") != "Exodus 17:16" or w.get("printPage") != 32
+                    or w.get("pdfPageOneBased") != 8 or w.get("column") != "RIGHT_LAST_LINE_EXODUS"
+                    or w.get("rubric") != "שמות" or w.get("startRubric") != "כתר תורה"
+                    or w.get("reference") != "י״ז ט״ז" or w.get("typesetWordGroups") != "כס יה"
+                    or w.get("wordCountStatement") != "חדא מלה"
+                    or w.get("normalizedExcerpt") != "י״ז ט״ז כס יה חדא מלה והס׳ בשוא וההא במפיק"
+                    or w.get("sourcePrintedOneWordReport") is not True
+                    or w.get("newAncientManuscriptWitness") is not False
+                    or w.get("originalAleppoExodusLeafSeen") is not False
+                    or w.get("jtsL729OriginalSeen") is not False
+                    or w.get("yeivinBreuerCriticalPagesSeen") is not False
+                    or w.get("authorSignedNewspaperPageProven") is not False
+                    or w.get("permissionToReuseNliScan") is not False):
+                errors.append(f"{prefix}: 1863 original newspaper one-word report is not an ancient codex or cleared scan")
         if rid == "SRC-PENKOWER-TEXTUS9-1981-SAPHIR-HALEVANON-1863":
             w = source.get("checkedAccess", {})
             if (source.get("url") != "https://openscholar.huji.ac.il/sites/default/files/he_bible_project/files/penkower_j.s.1.pdf"
@@ -625,22 +654,24 @@ def validate_source_access(sources: dict) -> list[str]:
                     or w.get("halevanonPagesReported") != "31b–32a"
                     or w.get("halevanonIssue5CandidateDateFromOfficialNLIIndex") != "1863-06-11"
                     or w.get("halevanonIssue5CalendarAndDownloadPageVerified") is not True
-                    or w.get("halevanonIssue5OriginalMastheadPhotoInspected") is not False
-                    or w.get("halevanonIssue5DateEvidenceState") != "CANDIDATE_NLI_ADJACENT_ISSUE_NOT_MASTHEAD_AUTOPSY"
+                    or w.get("halevanonIssue5OriginalMastheadPhotoInspected") is not True
+                    or w.get("halevanonIssue5DateEvidenceState") != "DIRECT_ORIGINAL_NEWSPAPER_PRINT_CONFIRMED"
                     or w.get("halevanonPreviousMistakenDate") != "1863-07-09"
                     or w.get("july9OriginalIssueNumberDirectlyInspected") != 6
                     or w.get("july9OriginalIssuePagesDirectlyInspected") != "33-40"
                     or w.get("july9OriginalIssueFullEightPagePdfVisuallyInspected") is not True
                     or w.get("july9OriginalIssuePdfSha256") != "72c1d29b9b22c0d42cb2686be4b22fdf75b0942f2e3a08705e675eeba7f0f1a8"
+                    or w.get("halevanonDirectOriginalPrintSourceId") != "SRC-HALEVANON-18630611-ISSUE5-EX17-16-ORIGINAL"
+                    or w.get("june11OriginalIssuePdfSha256") != "16270eaf4d3165fae17d1ca8e944e5e47085d0dfa7535944c36754a0ad29cc1d"
                     or w.get("june11IssueArchiveUrl") != "https://www.nli.org.il/he/newspapers/hlb/1863/06/11/01/"
                     or w.get("june11FullIssuePdfDownloadPageUrl") != "https://www.nli.org.il/he/newspapers/?a=is&oid=hlb18630611-01&type=staticpdf&e=-------he-20--1--img-txIN%7CtxTI--------------1"
-                    or w.get("halevanonOriginalIssuePage31and32ImageIndependentlyInspected") is not False
-                    or w.get("halevanonVerseHebrewWordsIndependentlyCollated") is not False
+                    or w.get("halevanonOriginalIssuePage31and32ImageIndependentlyInspected") is not True
+                    or w.get("halevanonVerseHebrewWordsIndependentlyCollated") is not True
                     or w.get("nliSaphirManuscriptCatalogueId") != "NNL_ALEPH990001022670205171"
                     or w.get("unrelatedNathanShapiraNLICatalogueId") != "NNL_ALEPH990000621650205171"
                     or w.get("jts729AutographInspected") is not False
                     or w.get("aleppoOriginalExodus17_16ManuscriptInspected") is not False):
-                errors.append(f"{prefix}: Penkower 1981 historic newspaper source report is not inspected 1863 original or JTS codex")
+                errors.append(f"{prefix}: Penkower 1981 historic newspaper source report crosswalk changed or ancient JTS falsely upgraded")
         if rid == "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137":
             w = source.get("respondentIdentityWave34", {})
             if (not isinstance(w, dict) or w.get("respondentHebrew") != "מנשה סיתהון"
