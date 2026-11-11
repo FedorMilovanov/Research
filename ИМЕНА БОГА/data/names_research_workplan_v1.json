@@ -16,7 +16,7 @@
     "regressionTests": 309,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_91D074C0C51031072FF25743EB1235A465B2910A_EXACT_6_SUCCESS_NEW_WAVE51_53_SHA_PENDING",
+    "allSixCiChecks": "PRIOR_CF6FE4F_6_OF_6_SUCCESS_720_TESTS_NEW_WAVE57_HEAD_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "91d074c0c51031072ff25743eb1235a465b2910a",
+    "lastConfirmedAllSixChecksSha": "cf6fe4f05724266e9eb95f8d410d33902b06a95f",
     "readerChapterCount": 3,
     "readerSectionCrosswalkCount": 32,
     "readerCrosswalkLinkedDistinctClaims": 25,
@@ -766,7 +766,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "After Wave51–53 local editorial alignment: verify exact-head GitHub CI for new reader checks; 3 chapters /32 headings/25 existing research-held claims and 18 new regressions, CH03 reader body 3109 words plus full Deir Alla scholarly appendix; no inferred evidence beyond current 115 sources/87 claims. Next close specific scholarly/critical source acquisition gaps (NG04/10/11/12) and independently verify current reader chapter scripture references, Gill/Berkhof/Bavinck print editions, Naomi/Eliphaz sources, Shaddai etymology before any external signoff. Need external genuine peer review and Product/rights clearance; do not auto-close NG13 or NG15.",
+  "nextAction": "2026-11-12 W57 narrow editorial/source sync in existing Draft PR #379: 118 source records (not 115), 105 attestations, 87 provisional claims, 75 relations; last exact-head confirmed cf6fe4f 6/6 GitHub Actions and 720/720 structural tests. Linked official Kruger 2023 publisher erratum a3039 (heading-only correction, DOI 10.4102/ids.v57i1.3039) to existing SRC-KRUGER record without minting an independent witness; consolidated duplicate CH03 bibliographic bullet without changing its main reader. New Wave57 SHA requires independent exact-head 6/6 CI before acceptance. Continue unresolved NG04/10/11/12 critical-source work including Dewrell2024 full paper, Yeivin p82, Breuer pp260-261 n1, Göttingen Exodus1991/BHS, and original 1976 Deir Alla plates; keep 0 critical collations, independent peer approvals, Product approvals and rights authorizations; NG13/15 and all public release gates remain blocked.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -847,9 +847,10 @@
     }
   ],
   "lastWorkReport": {
-    "date": "2026-11-11",
-    "planStatus": "Wave54: official complete 25-page 2002 Ofer English author text read, Exod17:16 single word according to historical Sappir/Zer Q137 and concordant case, not among four discrepancies; unchanged independent ancient lost folio, Hebrew facsimile / Yeivin82 / Breuer260-261, scholarly/rights/Product HOLD. 115 sources/105 attestations/87 claims, 309 core negative regression tests after adding exact author-proof guard. Research draft only; new CI pending.",
+    "date": "2026-11-12",
+    "planStatus": "W57 narrow Kruger erratum / deduplicated CH03 bibliography / current PR-workplan synchronization; 118 sources, 105 attestation IDs, 87 provisional claims and 75 relations. Prior cf6fe4f 6/6 terminal CI, 720/720 structural tests; new Wave57 exact-SHA GitHub CI pending. No claim, rights, scientific, Product, main or site release.",
     "workCompleted": [
+      "2026-11-12 W57: publisher original one-page erratum Kruger a3039 (2023-12-19) directly visually checked; corrected original article heading only on p3, not Job8:3 or Job27:2/13 conclusions. Added linked correction metadata to existing Kruger SRC rather than independent source, removed duplicate bibliographic paragraph in CH03 appendix, preserved evidence counterchecks and holds. Existing PR #379 only; post-change CI must be verified on exact HEAD.",
       "Wave54: direct official HUJI Textus21 original PDF 25/25 English text; footnote32 Exodus17:16 one word via Sappir/Zer1986 and comparative list(b) concordant. Hebrew OCR characters unreliable; no original Aleppo folio or original Yeivin/Breuer book pages, rights/scholarly/Product HOLD. Existing source access updated, one new fail-closed test; 309 core tests, 115 source records, NG04 BLOCKED_SOURCE.",
       "Wave53: synchronize updatedAt, current chapter size/status, chapter evidence map, 18 reader mutation tests and release boundaries across machine editorial execution. Preserve statuses NG04 BLOCKED_SOURCE and NG13/15 BLOCKED_DEPENDENCY, 0 external scholarly reviewer approvals and 0 Product/rights release.",
       "Wave52: Three CH-PILOT readers: 32 narrative headings explicitly tied to 25 existing CLM IDs and their exact stored SRC IDs where appropriate, missing proof scopes labelled without inventing source/claim. New validation and 18 negative tests in same original research workflow; old 308 mutation tests unchanged.",
@@ -983,7 +984,7 @@
       "2026-11-10 WAVE24 image-acquisition source audit: via live browser found Brill scholarly reader for 4Q72 urn:cts:ancJewLit:dss.4q72.dsbo-eng2:f1i-f6, directly observed no-right-credentials page; secondary request HTTP403; version/type unverified as image so not called photo URL. Publisher image access guide says photos supplied from PAM/IAA, but no actual picture pixels loaded. DJD XV 1997 21.4MB third-party PDF web screenshot error 400 TOO_LARGE, live second browser only filename; full plate content/presence in PDF UNKNOWN. Open Dead Sea explicit licensing states its modern research text data CC BY-NC 4.0, original photos only outbound to IAA or Israel Museum, no derived reprint rights. Existing Tov source row and dossier16 updated, 101 records/289 tests unchanged, NG10/rights/Product HOLD."
     ],
     "stillOpen": [
-      "Exact current Wave24 HEAD GitHub Actions 6/6 terminal CI required; previous f7ca85c7 SHA 6/6 success.",
+      "New W57 exact-head CI pending; previously verified cf6fe4f has all six GitHub Actions SUCCESS and Names ledger 720/720 structural tests; no scientific acceptance implied.",
       "Authorized 4Q72 original manuscript photo from Brill or IAA with exact editor frg55ii Jer33:16–20 physical image match; Brill reader denies credentials HTTP403, no photo image/URN verified.",
       "DJD XV actual PDF photographic-plate presence not verified; Tov 1991 OBO109 I–VII ZORA Anubis blocked; 1997 XXX–XXXVI original raster plates not viewed.",
       "IAA B360205 plate245 Frag6 vs DJD frg55ii historical frame and glyph correspondence unproven; initial יהוה צד only edited transcript, [קנו] restored, no independent paleo-autopsy.",
