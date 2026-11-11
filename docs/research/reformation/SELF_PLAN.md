@@ -1,6 +1,18 @@
 # САМОПЛАН «Реформации» — живая доска исполнения, границы поиска и сборка книги
 
-## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 442, 11.11.2026 (RF-ALL-211-SOURCE-HOLD-EVIDENCE-REVIEW)
+## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 443, 11.11.2026 (RF-USER-HANDOVER-CROSSCHECK)
+
+**Вход:** PR #471 MERGED, `Research/main = 6896fce3ade21481bace3cb97859553a63e38faa`. Переданные 665-строчная сводка из 28 проходов и 100-строчный handover **не** являются архивной колляцией; материал сверён с существующими 211 REF и 319 C и принят адресно в [единую HOLD-матрицу](HOLD_SOURCE_SWEEP_2026-11-11.md#волна-443--проверка-переданного-обновлённого-hold-аудита-28-проходов-и-handover). **Существенная поправка:** «найдена ссылка/публикация/критическая монография» ≠ «все HOLD сняты» ≠ «независимое заключение по книге получено».
+
+**Подтверждены конкретные свидетельства:** `Calvin Institutio` **1536** — Basel UBH FO IX 6:1 / [e-rara](https://www.e-rara.ch/bau_1/content/titleinfo/1920842), VD16 C287, DOI 10.3931/e-rara-7379; **1559** — BGE Cxa 1917 / [e-rara](https://www.e-rara.ch/gep_g/content/titleinfo/859317), DOI 10.3931/e-rara-2664. Для **этих** объектов архивный портал объявляет Public Domain Mark; это VERIFIED_CATALOG / IIIF LEADS, не полное чтение содержания, новые REF не созданы. Для **одной** [Commons-фотографии AE/II/763](https://commons.wikimedia.org/wiki/File:%C3%89dit_de_Nantes._Page_24_-_Archives_Nationales_-_AE-II-763.jpg) установлена отметка Public Domain; `REF-P29` описывает более широкий архивный объект, поэтому `rightsState=RIGHTS_UNKNOWN` и HOLD сохранены, ограниченная лицензионная находка записана в его `verificationNote`.
+
+**P0:** `H-08` полные страницы BGE Ms.fr.413 f28/f39, Paris X1A8644 ff1–18, отдельные Aix/Rouen судебные регистры; `T-03` оригинальный латинский Тридент VI и адресная проверка канонов IX/XI/XIII/XXIV, немецкий Heidelberg 1563, Augsburg IV–VI с независимыми отзывами; `T-08` документированное сравнение Откр.19–22 и 1Кор.15, сохранение авторского премилленаризма при честном описании альтернатив, внешняя герменевтическая рецензия. **Никаких смешений независимой академической литературы с независимой рецензией рукописи.**
+
+**Гейты:** `INDEPENDENT_EXTERNAL_REVIEW_OPEN / THEOLOGICAL_PEER_REVIEW_OPEN / ORIGINAL_DOCUMENT_HOLDS_OPEN / NOT_EDITORIAL_READY / RIGHTS_HOLD / PUBLICATION_HOLD`. Все 211 source IDs, 319 claim IDs и 16 receipts сохраняются. Нет публикаций, правовой авторизации, массового подъёма accessState, копирования загруженных 665 строк в параллельный живой файл, новых веток помимо одного рабочего PR.
+
+---
+
+## ИСТОРИЧЕСКИЙ ПАСПОРТ — волна 442, 11.11.2026 (RF-ALL-211-SOURCE-HOLD-EVIDENCE-REVIEW)
 
 **Вход:** [PR #470](https://github.com/FedorMilovanov/Research/pull/470) MERGED, `main = 98a6259c009e6ac8b9e91e9735715da5cb1faa7c`. **Один реестр без копий:** [HOLD_SOURCE_SWEEP_2026-11-11.md](HOLD_SOURCE_SWEEP_2026-11-11.md) — 211/211 индивидуальных REF с типами HOLD, 319 C-claims и 16 acquisition receipts. **Внешнее чтение адресно**, а не фиктивная «полная проверка 211 исторических оригиналов».
 
