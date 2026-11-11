@@ -12,11 +12,11 @@
     "arenaRecords": 29,
     "extensionRecords": 13,
     "contextAttestations": 105,
-    "sourceRegisterEntries": 118,
-    "regressionTests": 309,
+    "sourceRegisterEntries": 119,
+    "regressionTests": 310,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_W57_636BF930_EXACT_6_OF_6_SUCCESS_720_TESTS_NEW_W58_PENDING",
+    "allSixCiChecks": "PRIOR_W58_BF1C3DF_EXACT_6_OF_6_SUCCESS_720_TESTS_NEW_W59_SHA_PENDING_721_EXPECTED",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "636bf9306bfbef14d58ef26f2d0c9648e6e5b6c1",
+    "lastConfirmedAllSixChecksSha": "bf1c3df160ff5c730f5af2a2e8d1f9bdc12a8ce3",
     "readerChapterCount": 3,
     "readerSectionCrosswalkCount": 32,
     "readerCrosswalkLinkedDistinctClaims": 25,
@@ -349,7 +349,8 @@
         "Wave48 selected visual marginal evidence, JTS FL28558023: stable main Q&A but technical shva/mappiq note not fully transcribed from ink. General Ofer2002 Textus21:209–233 publisher ABSTRACT says Aleppo appended composite-word Masorah list vs codex text discrepant in >=4 cases; Exodus17:16 membership in those cases NOT demonstrated. Both source access guards block overclaim; 111 sources /304 core tests.",
         "Wave49 Ofer2003 Megadim37 full author HTML footnotes23/24/26 attribute Yeivin print p82 in contexts Psalm90:15 / Isaiah54:9 (NOT Ex17:16 proof). Source SRC-OFER-MEGADIM37-2003-YEIVIN82-COMPOSITE-WORDS. Original Yeivin82 and Breuer260–261 not visually accessed; NLI Penkower-annotated archive items ARC.4*2203 01 07 (Yeivin) and ARC.4*2203 01 06 (Breuer) not substitute for original pages.",
         "Wave50 separate historic halakhic reception: SRC-PESACHIM117A-COMPOSITE-KESYAH-AMORAIC-EDITED-DIGITAL (R Yohanan/Rav vs Rabbah), SRC-RASHBATZ-TASHBETZ-I177-KESYAH-RESPONSUM (own OTHER scroll two lines, contradictory Masora six/five, samekh-sheva not probative), SRC-ARUCH-HASHULCHAN-YD27524-KESYAH-TWO-WORD-DECISION (two-word norm, one-line recommended). Digital edited text directly read, historic original 1738/1741/1891 print folios NOT visually inspected, none Aleppo Exodus folio; new three mutation tests. No change to NG04 BLOCKED_SOURCE.",
-        "Wave54: original Ofer 2002 Textus21 25-page PDF served officially at https://bibleproject.huji.ac.il/sites/default/files/he_bible_project/files/y._ofer.pdf, full English text extracted, note32 Ex17:16 author ONE word based on Sappir/Zer1986 #137, Masorete 1 list(b) concordant with compared MS, NOT four discrepancies. Hebrew glyph PDF extraction unsafe, no visually collated folio or lost ancient Aleppo page, Yeivin82/Breuer260–261 unread, rights/Product HOLD. Source SRC-OFER-TEXTUS21-2002-COMPOSITE-WORDS-MASORAH."
+        "Wave54: original Ofer 2002 Textus21 25-page PDF served officially at https://bibleproject.huji.ac.il/sites/default/files/he_bible_project/files/y._ofer.pdf, full English text extracted, note32 Ex17:16 author ONE word based on Sappir/Zer1986 #137, Masorete 1 list(b) concordant with compared MS, NOT four discrepancies. Hebrew glyph PDF extraction unsafe, no visually collated folio or lost ancient Aleppo page, Yeivin82/Breuer260–261 unread, rights/Product HOLD. Source SRC-OFER-TEXTUS21-2002-COMPOSITE-WORDS-MASORAH.",
+        "W59 2026-11-12: SRC-OFER-TEXTUS26-2016-ALEPPO-EX8-FRAGMENT, original *Textus* 26:173-198 official full PDF (https://bibleproject.huji.ac.il/sites/default/files/he_bible_project/files/a_fragment_of_the_aleppo_codex_exodus_8.pdf), selected print pp173/179-182 and photo figs3-7 directly inspected. Authentic Exodus8 fragment partly corroborates two historical Saphir/Zer vowel Q&A (frog-name partly ambiguous; harawahah supports), DOES NOT include lost Exodus17:16, does NOT satisfy Yeivin82/Breuer260-261 page autopsy or image rights. Ex17 evidence HOLD unchanged."
       ],
       "verification": "NOT_APPLICABLE_UNTIL_DONE",
       "closureAt": null,
@@ -767,7 +768,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "2026-11-12 W58 Research Draft PR #379 (same original branch) Shadday/√šdd evidence boundary: directly read digitally edited MT Isa13:6 and Joel1:15 כְּשֹׁד מִשַּׁדַּי, plus Joel1:10 שֻׁדַּד; rhetorical sound-play is attested, historical root/phonology and -ay morphology remain unproved. Dewrell 2024 Vetus Testamentum 74/2 pp297-302 EBSCO Humanities Source record lists HTML/PDF full text but returns LOGIN_REQUIRED to guest (https://iris.sena.edu.co/EdsRecord/hus,176933521); abstract-only author argument FULL_ARGUMENT_HOLD. Added evidence in existing dossier03 and CH03 scholarly appendix; no new source ID or ancient attestation, source count remains 118 /105 contextual attestations /87 provisional claims /75 links. Prior W57 SHA 636bf930 6/6 terminal GitHub Actions SUCCESS and 720/720 structural tests; new W58 SHA CI pending. Next obtain legitimate article access and critically analyze morphological derivation and opposing Wilson-Wright/Krogevoll arguments; separately pursue Yeivin p82, Breuer pp260–261 n1, Göttingen Exodus1991/BHS and 1976 Deir Alla plates. NG04/10/11/12 BLOCKED_SOURCE, scholarly/rights/Product 0, NG13/15 dependency HOLD, no main/Product/site release.",
+  "nextAction": "2026-11-12 W59: Research Draft PR #379 same branch. Newly read ORIGINAL Yosef Ofer Textus 26(1) 2016 pp173-198 official University Hebrew Bible Project PDF (selected print p173/179-182 rendered original photographs 3-7): genuine surviving Aleppo Exodus8 fragment partly tests 2 Saphir/Meorot Natan 1857 reports. Ex8:7 frog-name patah evidence fragment torn/unresolved; Ex8:11 harawahah traces support author's proposed hataf patah vertically arranged because of next-line lamed. Distinguish publisher photographic reproductions from own physical manuscript autopsy; article NOT Exodus17:16 lost leaf, Yeivin p17 quotation NOT target p82, Breuer1976 pp260-261 unseen, copyright of photos NOT granted. Registered exactly one new scholarly source SRC-OFER-TEXTUS26-2016-ALEPPO-EX8-FRAGMENT, sources 119 /105 attestations/87 provisional claims/75 relations, core mutations 310 (previous 309), 721 total Names unit tests expected; all records publication BLOCKED; no ancient Exodus17 manuscript collation, peer/rights/Product approval. Previous exact W58 HEAD bf1c3df achieved 6/6 SUCCESS and 720/720 Names tests. New W59 SHA requires independent CI. Next obtain Yeivin82/Breuer260-261 originals, Göttingen Exodus/BHS, full Dewrell2024, Deir Alla 1976 original photos; never infer one-word Ex17:16 ancient autopsy from Exodus8 photographic reproductions. NG04/10/11/12 BLOCKED_SOURCE, NG13/15 BLOCKED_DEPENDENCY remain.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -849,8 +850,9 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-12",
-    "planStatus": "W58 direct Isaiah13:6 / Joel1:15/1:10 literary wordplay vs unproved Dewrell 2024 etymology, EBSCO Humanities Source login route; 118 sources/105 attestations/87 claims/75 relations. Prior exact W57 6/6 CI success, 720/720 tests; W58 exact-head CI pending. No claims/rights/science/Product approvals.",
+    "planStatus": "W59 scoped primary source intake Ofer2016 Textus26 Exodus8 actual surviving Aleppo fragment, selected printed figures checked, relevance to Saphir/Zer bounded, 119 sources /105 attestations/87 preliminary claims/75 relations, 310 core regression tests (expected Names total 721); prior W58 bf1c3df 6/6 SUCCESS and 720 Names tests; W59 exact-SHA CI pending. No extrapolation to missing Exodus17:16 leaf or image rights; scientific/Product gates unchanged.",
     "workCompleted": [
+      "2026-11-12 W59: directly examined original university-hosted Ofer2016 full PDF web text, original printed pp173/179-182 page images and photograph figures 3-7. Distinguished uncertain frog-name accent Ex8:7 from author-supported harawahah Ex8:11 hataf patah, Yeivin p17 vs unseen p82, preserved JTS1855/Sapir1857 unresolved time crosswalk and strict exclusion of lost Exodus17:16. New real academic source only, anti-inflation mutation test eight cases, in original dossier23 and navigation. 119 sources, 310 core tests, 0 ancient witness upgrades, 0 rights/peer/Product approvals.",
       "2026-11-12 W58: MT digital transcription independently read Isaiah13:6 and Joel1:15, plus Joel1:10 verbal root. Literary šōd/Šadday wordplay verified without treating it as root or derivational proof; legitimate EBSCO Humanities Source record found but actual Dewrell article requires institutional login, original 6-page argument remains unread. Updated existing dossier03 and CH03 appendix, no new source ID or branch; retain NG12 BLOCKED_SOURCE.",
       "2026-11-12 W57: publisher original one-page erratum Kruger a3039 (2023-12-19) directly visually checked; corrected original article heading only on p3, not Job8:3 or Job27:2/13 conclusions. Added linked correction metadata to existing Kruger SRC rather than independent source, removed duplicate bibliographic paragraph in CH03 appendix, preserved evidence counterchecks and holds. Existing PR #379 only; post-change CI must be verified on exact HEAD.",
       "Wave54: direct official HUJI Textus21 original PDF 25/25 English text; footnote32 Exodus17:16 one word via Sappir/Zer1986 and comparative list(b) concordant. Hebrew OCR characters unreliable; no original Aleppo folio or original Yeivin/Breuer book pages, rights/scholarly/Product HOLD. Existing source access updated, one new fail-closed test; 309 core tests, 115 source records, NG04 BLOCKED_SOURCE.",
@@ -986,7 +988,7 @@
       "2026-11-10 WAVE24 image-acquisition source audit: via live browser found Brill scholarly reader for 4Q72 urn:cts:ancJewLit:dss.4q72.dsbo-eng2:f1i-f6, directly observed no-right-credentials page; secondary request HTTP403; version/type unverified as image so not called photo URL. Publisher image access guide says photos supplied from PAM/IAA, but no actual picture pixels loaded. DJD XV 1997 21.4MB third-party PDF web screenshot error 400 TOO_LARGE, live second browser only filename; full plate content/presence in PDF UNKNOWN. Open Dead Sea explicit licensing states its modern research text data CC BY-NC 4.0, original photos only outbound to IAA or Israel Museum, no derived reprint rights. Existing Tov source row and dossier16 updated, 101 records/289 tests unchanged, NG10/rights/Product HOLD."
     ],
     "stillOpen": [
-      "New W58 exact-head CI required after source-bounded edits. Last verified complete CI: W57 636bf930 6/6 SUCCESS and Names ledger 720/720; no peer manuscript or rights clearance.",
+      "W59 exact-head 6/6 CI pending; previous W58 bf1c3df 6/6 SUCCESS and Names integrity 720/720 only. New expected 721 with 1 anti-inflation regression; unrelated Atonement workflow also requires terminal completion.",
       "Authorized 4Q72 original manuscript photo from Brill or IAA with exact editor frg55ii Jer33:16–20 physical image match; Brill reader denies credentials HTTP403, no photo image/URN verified.",
       "DJD XV actual PDF photographic-plate presence not verified; Tov 1991 OBO109 I–VII ZORA Anubis blocked; 1997 XXX–XXXVI original raster plates not viewed.",
       "IAA B360205 plate245 Frag6 vs DJD frg55ii historical frame and glyph correspondence unproven; initial יהוה צד only edited transcript, [קנו] restored, no independent paleo-autopsy.",
