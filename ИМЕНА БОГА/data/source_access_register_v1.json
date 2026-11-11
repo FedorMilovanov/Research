@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 115,
+    "sourceRecords": 116,
     "approvedForProduct": 0
   },
   "records": [
@@ -4402,6 +4402,35 @@
         "fullYeivinBreuerCriticalPagesRead": false,
         "photoRepublicationRightsApproved": false
       }
+    },
+    {
+      "id": "SRC-KROGEVOLL-TORONTO-PHD-2022-EL-SHADDAI",
+      "title": "I Appeared as El Shaddai: Exploring the Mountain Motif as an Element for the Equation Between Yahweh and El Shaddai",
+      "year": 2022,
+      "creator": "Aleksander Krogevoll",
+      "url": "https://utoronto.scholaris.ca/bitstreams/d216a382-41af-4d32-9e11-8b91a60e944b/download",
+      "alternateUrl": "https://utoronto.scholaris.ca/items/935c9698-83b0-4bf4-9486-fdb8d2900c28",
+      "locator": "University of Toronto doctoral thesis 2022, §2.1 print pp23–30, §2.2 pp31–47, §2.3 pp48–71, §4.2 pp133–151, Conclusions pp153–156. Original PDF 194 pages.",
+      "objectType": "scholarly_doctoral_dissertation",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "sourceObjectState": "Official Scholaris University of Toronto complete 194-page PDF downloaded (2,600,862 bytes), 194/194 pages text-extracted. Closely read selected original sections on extrabiblical attestations, etymology, Exod6:3 and historical mountain hypothesis; NOT all images visually collated or independent ancient inscriptions verified; some pdf page-image access blocked in web. Rights are reserved unless otherwise specified; open access is not reuse license. Original 2022 thesis distinct from 2025 revised book, whose full text has NOT been read.",
+      "supportedUse": "Attribute Krogevoll 2022 on š/dd/-ay morphology, proposed Akkadian šadû mountain etymology, hypothetical Middle Assyrian borrowing channel, objection to Wilson-Wright 2019 'helpful' lack of language-contact pathway, and historical-religious equation theory in Exod6:3. Cite original thesis pages, distinguish from textual/contextual reading of Scripture.",
+      "forbiddenUse": "Promote hypothetical etymology to established original meaning of שדי, historical reconstructions of two deities to canonical fact, university PDF to CC license, secondary source interpretation to full epigraphic or critical-manuscript collation, or copy 2022 pages into Product; transfer 2022 reading status to revised book 2025.",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "criticalEditionCollated": false,
+      "sourceRole": "ATTRIBUTED_KROGEVOLL_2022_COMPLETE_PHD_SHADDAI_MOUNTAIN_CONTACT_HYPOTHESIS",
+      "pdfPages": 194,
+      "full2022ThesisRetrieved": true,
+      "full2025RevisedBookRead": false,
+      "independentAncientTextCollation": false
     }
   ],
   "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716 | WAVE49_2026-11-11_OFER2003_YEIVIN82_AUTHOR_CROSSWALK_PSALM_ISAIAH_NOT_EXODUS | WAVE50_2026-11-11_PESACHIM117A_TASHBETZ_I177_AHS_YD27524_HISTORICAL_DISPUTE_NOT_CODEX_AUTOPSY | WAVE54_2026-11-11_HUJI_OFER2002_25P_ENGLISH_EX17_16_SINGLE_CONCORDANT_NOT_DISCREPANT_HOLDS"
