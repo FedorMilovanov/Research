@@ -31,8 +31,21 @@ class EverydayLifeBookTests(unittest.TestCase):
         self.assertEqual(by["REF-P80"]["accessState"],"PARTIAL_OBJECT")
         self.assertEqual(by["REF-P81"]["accessState"],"PARTIAL_OBJECT")
         self.assertTrue(all(by[x]["evidenceClass"]=="B1" for x in ("REF-S91","REF-S92")))
-        for id in ("REF-P05","REF-P06","REF-P32","REF-P33","REF-P52"):
+        for id in ("REF-P05","REF-P32","REF-P33","REF-P52"):
             self.assertEqual(by[id]["accessState"],"CATALOG_ONLY")
+        # Evidence-based 1524 update: verified Oxford diplomatic folios, NOT Pitts first-print autopsy.
+        self.assertEqual(by["REF-P06"]["accessState"],"PARTIAL_OBJECT")
+        self.assertEqual(by["REF-P06"]["locatorState"],"EXACT_LOCATOR_VERIFIED")
+        self.assertIn("ARCHIVE_HOLD",by["REF-P06"]["holds"])
+        self.assertIn("RIGHTS_HOLD",by["REF-P06"]["holds"])
+        self.assertIn("PUBLICATION_HOLD",by["REF-P06"]["holds"])
+        self.assertNotIn("LOCATOR_HOLD",by["REF-P06"]["holds"])
+        for folio in ("d2r","d3v","e1r"):
+            self.assertIn(folio,by["REF-P06"]["verificationNote"])
+        # Edwards official publisher text was read selectively; empirical claims still require checking.
+        self.assertEqual(by["REF-S03"]["accessState"],"PARTIAL_OBJECT")
+        self.assertEqual(by["REF-S03"]["locatorState"],"EXACT_LOCATOR_VERIFIED")
+        self.assertIn("EVIDENCE_HOLD",by["REF-S03"]["holds"])
         self.assertEqual(by["REF-P34"]["accessState"],"PARTIAL_OBJECT")
 
     def test_book_navigation_false_claims_and_scots_legacy_fix(self):
