@@ -1044,11 +1044,11 @@
 
 **Авторский контекст:** спор против сужения географических границ Церкви (донатисты), не спор об объёме юридического наказания всех персональных грехов. «Мир» у Беды здесь означает всемирную Церковь и верующих всех времён; это подлинное предреформационное ограничительное толкование 1 Ин. 2:2. Однако Беда здесь **не** формулирует все догматические элементы позднего строгого limited atonement и не отрицает в явных словах всякий аспект более широкого предназначения Христовой смерти.
 
-**Параллель на 1 Ин. 2:1 того же автора:**
+**Параллель на 1 Ин. 2:1 в комментарии Беды — у формулы есть более ранний источник у Григория Великого (§XXIII):**
 
 > Interpellat ergo pro nobis Dominus, non voce, sed miseratione, quia quod damnare in electis noluit, suscipiendo servavit.
 
-«Господь ходатайствует за нас не голосом, а милосердием, поскольку, приняв [человеческую природу], сохранил то, что не пожелал осудить в избранных». Связь с избранными присутствует в оригинальном контексте ходатайства. В исходном PDF OCR ошибочно передаёт слово electis как eleicis: в цитату переносить исправленное чтение, а сам текст сверить по печатному экземпляру.
+«Господь ходатайствует за нас не голосом, а милосердием, поскольку, приняв [человеческую природу], сохранил то, что не пожелал осудить в избранных». Связь с избранными присутствует в контексте ходатайства, но сама необычная формулировка почти дословно имеется у более раннего Григория Великого (*Moralia* XXII.17) и потому **не считается полностью независимой оригинальной формулой Беды**; см. §XXIII. В исходном PDF OCR ошибочно передаёт *electis* как *eleicis*: исправить только на основании сверяемого чтения, фотоколляция печатного издания остаётся HOLD.
 
 ### 2. Позднейшая рецепция, без ложного подсчёта независимых ранних свидетелей
 
@@ -1063,3 +1063,43 @@
 - Контекстные контрсвидетельства Августина, Кирилла, Феодорита и других авторов §§XIV–XXI остаются в силе; не отменять их универсальные выражения.
 
 **Только историческое досье, без редакционных глав, реестров, CI, других файлов, новых веток/PR. Все научные, rights и publication HOLD сохраняются; NO MERGE / NO PRODUCT / NO PUBLICATION / publicationEligible=false.**
+
+
+## XXIII. Беда и Григорий: зависимость формулы ходатайства, два «мира» в контексте 1 Ин. 2:2 (12.11.2026)
+
+**Источники:** авторский цифровой латинский [Григорий Великий, Moralia in Iob, XXII.17](https://monumenta.ch/latein/text.php?domain=&hide_apparatus=1&inframe=1&lang=0&level=4&links=1&rumpfid=Gregorius+Magnus%2C+Moralia+in+Iob%2C+22%2C+++17&tabelle=Gregorius_Magnus); цифровая латинская передача [Беда, In I epistolam S. Ioannis, 1 Ин. 2:1–2, PL 93:89–90](https://documentacatholicaomnia.eu/20vs/104_migne_pl/1815-1875%2C_Migne%2C_Patrologia_Latina_093_%28AD_1862%29_Divinity_School_Philadelphia%2C_MLT.pdf). Критическая и фотосверка соответствующих печатных страниц остаётся HOLD.
+
+### 1. Текстовая зависимость — НЕ два независимых авторских свидетельства
+
+**Григорий, Moralia XXII.17**, цитирует последовательно 1 Ин. 2:1–2, Рим. 8:34 и говорит:
+
+> Interpellat igitur pro nobis Dominus, non voce, sed miseratione, quia quod damnari in electis noluit, suscipiendo liberavit.
+
+**Беда, PL93:89**, на 1 Ин. 2:1:
+
+> Interpellat ergo pro nobis Dominus, non voce, sed miseratione, quia quod damnare in electis noluit, suscipiendo servavit.
+
+Совпадающая редкая последовательность слов («Interpellat ... pro nobis Dominus, non voce, sed miseratione, quia quod ... in electis noluit, suscipiendo ...») подтверждает тесную литературную связь, а различия *igitur/ergo*, *damnari/damnare*, *liberavit/servavit* запрещают выдавать тексты за строго побуквенные копии. Более ранний Григорий (VI век) — первое из здесь сверенных свидетельств; позднейший Беда (VIII век) — продолжение или вариант традиции. **Непосредственная зависимость Беды от экземпляра Григория, а не от общего промежуточного источника, ещё не доказана:** GREGORY_BEDE_DIRECT_BORROWING_VS_SHARED_INTERMEDIARY_HOLD. Но считать эти формулировки двумя независимыми оригинальными суждениями нельзя.
+
+Беда далее **самостоятельно в рамках своего комментария** толкует «мир» из 1 Ин. 2:2 как всемирную Церковь и возражает донатистам. Это отдельный предмет анализа; наличие зависимости одной формулы не делает весь текст Беды неподлинным.
+
+### 2. Ранее пропущенное продолжение у Беды: два разных значения слова «мир»
+
+Сразу вслед за «Pro totius ergo mundi peccatis interpellat Dominus, quia per totum mundum est Ecclesia, quam suo sanguine comparavit» у Беды:
+
+> Neque huic verbo repugnat, quod in sequentibus dicit, Et mundus totus in maligno positus est, quia et per totum mundum sunt qui maligno, id est, antiquo hosti famulentur.
+
+Перевод: «И этому не противоречит сказанное далее: весь мир лежит во зле, потому что по всему миру есть люди, которые служат злому, то есть древнему врагу».
+
+**Экзегетический смысл:** при 1 Ин. 2:2 Беда рассматривает «весь мир» как географически всеобщую Церковь, а при 1 Ин. 5:19 объясняет наличие в мире также тех, кто служит лукавому. Он **не** утверждает, будто *mundus* всегда означает только избранных. Речь о контекстном различении словоупотреблений одного автора. Это хороший предреформационный пример ограничительного толкования 1 Ин. 2:2, **но не доказательство полного позднего тезиса об исключительном penal substitution без всякой универсальной цели креста**.
+
+### 3. Строгие границы проверки
+
+- GREGORY_MORALIA_XXII_17_DIGITAL_AUTHOR_LATIN_SCOPED; BEDA_PL93_89_90_DIGITAL_LATIN_SCOPED.
+- BEDE_GREGORY_VERBAL_RELATION_STRONG / INDEPENDENT_BEDAN_INTERCESSION_QUOTE_NOT_PROVEN.
+- BEDE_1JOHN2_2_VS_1JOHN5_19_TWO_WORLDS_SAME_CONTEXT.
+- CCSL143A_GREGORY_PRINT_VARIANTS_HOLD; CCSL121_BEDE_HURST_1983_VARIANTS_HOLD; PL93_PRINT_IMAGE_HOLD; GREGORY_BEDE_DIRECT_BORROWING_VS_SHARED_INTERMEDIARY_HOLD.
+- THEODORET_PG82_745_PRINT_IMAGE_HOLD **не закрыт**: [BiblIndex](https://jerihna.sourceschretiennes.org/en/work-editions/interpretatio-in-epistulas-paulinas/patrologia-graeca-82) каталогизирует комментарий Феодорита CPG6209 в PG82:36–877, но это не фотосверка конкретной цитаты. [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Patrologia_Graeca_Vol._082.pdf) хранит 854-страничный скан; нужный исторический лист пока непосредственно не прочитан.
+- Беда не является автором II–V вв.; Glossa ordinaria — возможная зависимая средневековая рецепция, не независимый раннепатристический «голос».
+
+**Область изменения:** только данный существующий исторический evidence-файл PR #309. Читательские главы/registry/SSOT/CI/Product не затронуты. Все scientific, rights, attribution и publication HOLDS сохраняются; NO MERGE / NO PRODUCT / NO PUBLICATION / publicationEligible=false.
