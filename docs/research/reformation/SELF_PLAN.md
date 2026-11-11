@@ -1,6 +1,20 @@
 # САМОПЛАН «Реформации» — живая доска исполнения, границы поиска и сборка книги
 
-## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 446, 12.11.2026 (RF-T03-APOLOGIA-1531-DIRECT-PRINT-WITNESS)
+## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 447, 12.11.2026 (RF-T03-AUGSBURG-CONFESSION-1531-ORIGINAL-LATIN-FRAMES)
+
+**Проверенный вход:** [PR #475](https://github.com/FedorMilovanov/Research/pull/475) MERGED; `Research/main=96e4b2ae23746e0379c1243b9f3907b39fa56634`, **4/4 post-merge CI SUCCESS**. На входе **215 REF / 319 C / 18 acquisition receipts / 215 PUBLICATION_HOLD**; самостоятельной открытой ветки по «Реформации» не было. Соседние PR не редактировались.
+
+**Завершённый предметный скачок T-03:** обнаружен и визуально прочитан **оригинал именно латинского Аугсбургского исповедания** в авторизованной виттенбергской печати 1531, **BSB/MDZ `bsb00103368`, München `4 H.ref. 205 b`, `VD16 C4737`, Wittenberg Georg Rhau**. [IIIF v3 manifest](https://api.digitale-sammlungen.de/iiif/presentation/v3/bsb00103368/manifest), **347** кадров, получен HTTP 200 (358042 B, SHA256 `8f27fcb42daf9f1c075be3dad66184e4b2a1957da5e7627c20e447822b42c0a9`). Непосредственно просмотрены JPEG-изображения **14–17, 22, 24–25**, каждый с байтами и SHA256 в `REF-P92.verificationNote`. Доказательная карта: **IV = 14–15; V = 15; VI = 15–16; IX = 16–17; XX = 22,24–25**. Прямо подтверждены вера и незаслуженное оправдание ради Христа, вменение веры в праведность, сохранение добрых плодов и послушания, а также **две разные полемические оговорки об анабаптистах** в V и IX. Это **не** печатные страницы отдельной «Апологии» `REF-P91`, **не** рукопись, переданная императору в 1530, **не** колляция всей книги и не доказанные разночтения с иными изданиями.
+
+**Изменения единственного корпуса:** новый `REF-P92 A1 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED / RIGHTS_UNKNOWN`; обновлены `REF-P14`, reader/аппарат главы 08, `C269/C271/C273`, единственная `HOLD_SOURCE_SWEEP`, тесты. Ожидаемый snapshot после волны: **216 REF / 319 C / 18 acquisition receipts / 216 PUBLICATION_HOLD / 161 ARCHIVE_HOLD / 195 RIGHTS_HOLD / 55 LOCATOR_HOLD / 89 EVIDENCE_HOLD**. Digital-object metadata отдельно сообщает [Public Domain Mark 1.0](https://creativecommons.org/publicdomain/mark/1.0/); это не тождественно окончательному решению книжной редакции о правомерности использования снимков. Сам PDF/сканы не архивированы, новую receipt не создавали; RIGHTS_HOLD/ARCHIVE_HOLD/PUBLICATION_HOLD не снимали.
+
+**Статус T-03:** поиск этой конкретной печати **STOP_DISCOVERY** после прямой фотосверки IV/V/VI/IX/XX; повторять с нуля библиотечный поиск для доказательства уже проверенных строк не требуется. **Открыты**: оригинальные рукописи/неавторизованные печати 1530, другие состояния Rhau 1531, немецкая параллель, оригинальные парижские печати Тридента 1547, полный межиздательский variant-collation и **внешняя лютеранская/католическая/реформатская экспертиза**. По соседним направлениям H-08 (Нант, архивные листы) и T-08 (эсхатологический эпилог) статусы не изменены.
+
+**Не больше двух активных deliverable:** (1) точные profile + full GitHub CI для кандидата и post-merge; (2) после технического закрытия — адресное независимое T-03 peer-review по существующему reviewer packet, без фиктивной «отправки» или рецензии. **Гейты:** `RESEARCH_MANUSCRIPT_DRAFT / RESEARCH_ONLY / NOT_EDITORIAL_READY / ORIGINAL_1530_MANUSCRIPT_HOLD / INDEPENDENT_EXTERNAL_REVIEW_OPEN / THEOLOGICAL_PEER_REVIEW_OPEN / ARCHIVE_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD`. Никаких публикаций и автоматического переноса изображений в книгу.
+
+---
+
+## ИСТОРИЧЕСКИЙ ПАСПОРТ — волна 446, 12.11.2026 (RF-T03-APOLOGIA-1531-DIRECT-PRINT-WITNESS)
 
 **Подтверждённый вход:** [PR #474](https://github.com/FedorMilovanov/Research/pull/474) MERGED, `Research/main = a45edc9271bb7016c00990084137293f288b814c`, все **4/4 post-merge GitHub Actions SUCCESS**. Перед волной 446: 214 REF / C1–C319 / 18 acquisition receipts; 214 PUBLICATION_HOLD.
 
