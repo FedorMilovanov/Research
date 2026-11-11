@@ -2164,7 +2164,7 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                 self.assertTrue(any("Penkower 1981 historic newspaper source report crosswalk" in e
                                     for e in validate_source_access(changed)))
         for field,wrong in (("nliRecordId", "NNL_ALEPH990000621650205171"),
-                            ("nliManuscriptImagesOpened", True),
+                            ("nliManuscriptImagesOpened", False),
                             ("historicalNewspaperContentReadInDigitalScan", True)):
             with self.subTest(zer_catalog_field=field):
                 changed = copy.deepcopy(self.sources)
@@ -2212,6 +2212,58 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                 rec["canonicalManuscriptCatalogueRoute20261110"]["iiifDigitalRouteWave46"][field] = wrong
                 self.assertTrue(any("JTS Ms1154/Lutzki L729 IIIF metadata" in e
                                     for e in validate_source_access(changed)))
+
+    def test_jts_1855_microfilm_copy_is_not_ancient_codex_or_publication_license(self) -> None:
+        sid = "SRC-JTS-MS1154-L729-MEOROT-NATAN-1855-EX17-16-MICROFILM"
+        distortions = (
+            ("keyWordGroups", "כסיה"),
+            ("questionHebrew", "חדא מלה"),
+            ("answerOpeningHebrew", "כן"),
+            ("answerMarginCoreHebrew", "שתי מלות"),
+            ("iiifImageId", "FL28558025"),
+            ("sha256", "0" * 64),
+            ("jpegBytes", 500000),
+            ("completeMarginalPaleographyIndependentlyCollated", True),
+            ("physicalManuscriptHandled", True),
+            ("saphirAutographProven", True),
+            ("originalAleppoExodusFolioPhotographed", True),
+            ("independentAncientWitnessCountAdded", 1),
+            ("imageRightsInternationalVerified", True),
+            ("productImageReuseApproved", True),
+            ("criticalApparatusYeivin82Breuer260261Read", True),
+        )
+        for key, wrong in distortions:
+            with self.subTest(photo_field=key):
+                data = copy.deepcopy(self.sources)
+                row = next(x for x in data["records"] if x["id"] == sid)
+                row["verifiedOriginalCopyPhotoWave47"][key] = wrong
+                self.assertTrue(any("JTS L729 direct historic copy Ex17:16 collation" in e
+                                    for e in validate_source_access(data)))
+        for key, wrong in (("accessState", "FULL_OBJECT_VERIFIED"),
+                           ("rightsState", "PUBLICATION_ELIGIBLE"),
+                           ("publicationState", "PROMOTE"),
+                           ("criticalEditionCollated", True)):
+            with self.subTest(source_field=key):
+                data = copy.deepcopy(self.sources)
+                row = next(x for x in data["records"] if x["id"] == sid)
+                row[key] = wrong
+                self.assertTrue(any("JTS L729 direct historic copy Ex17:16 collation" in e
+                                    for e in validate_source_access(data)))
+        data = copy.deepcopy(self.sources)
+        data["records"] = [x for x in data["records"] if x["id"] != sid]
+        self.assertTrue(any("source-inventory IDs changed" in e
+                            for e in validate_source_access(data)))
+        for key, wrong in (("exodus17_16HandwritingIndependentlyRead", False),
+                           ("nliManuscriptImagesOpened", False),
+                           ("jtsPhysicalOriginalPersonallyHandled", True),
+                           ("nliVerseImageSourceIdWave47", "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137")):
+            with self.subTest(zer_crosswalk=key):
+                data = copy.deepcopy(self.sources)
+                row = next(x for x in data["records"]
+                           if x["id"] == "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137")
+                row["canonicalManuscriptCatalogueRoute20261110"][key] = wrong
+                self.assertTrue(any("Sapir versus Shapira Maorot Nathan catalog" in e
+                                    for e in validate_source_access(data)))
 
     def test_1857_menashe_respondent_not_moshe_or_unread_1977_original(self) -> None:
         for rid,fieldGroup,key,wrong in (
