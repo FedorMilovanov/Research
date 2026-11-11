@@ -6,7 +6,7 @@
   "policy": "data/repository-evidence-policy-v2.json",
   "noExternalPublication": true,
   "fileBytesInGit": 0,
-  "sourceCount": 15,
+  "sourceCount": 16,
   "sourceRecords": [
     {
       "id": "REF-P09-PRINT",
@@ -436,6 +436,49 @@
         "printerNamedInImprint": false
       },
       "intendedNextStep": "Collate original 1523 Hegenwald print against independent VD16 Z819 and 1905 Zwingli Werke 17 II/III, municipal records B VI 249 and E I 1.1. No full text or oral verbatim claims."
+    },
+    {
+      "id": "REF-P87",
+      "title": "Henri IV, Articles particuliers (2 May 1598 royal text, printed Paris Morel/Mettayer 1622)",
+      "date": "1622 (witness of a 1598 royal act)",
+      "institution": "Newberry Library / Internet Archive",
+      "shelfmark": "Case F 39 .326 1622frm",
+      "catalog": "https://archive.org/details/articlesparticul00fran",
+      "downloadAccess": "https://archive.org/download/articlesparticul00fran/articlesparticul00fran.pdf",
+      "language": "French, early-modern typography",
+      "rights": "Image scan reuse rights not explicitly verified: private research copy only; no Git binaries or public reproduction",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "publicationState": "REFERENCE",
+      "sizeNote": "28 DIGITAL PDF pages; 23 historical printed pages; personally rendered/inspected PDF pp3(title), 5(preface), 14(Art XXXIII & XXXIV), 15(Art XXXIV), 24(2 May date/registration command), 25(2 May registration directive). Full PDF bytes acquired, full 23-page word-by-word collation NOT done.",
+      "sha256": "d8481415ed48ad4f283e0dd9dc6426bdc511c2c3e6e858bd07d53a7e3c705356",
+      "acquisitionState": "DOWNLOADED_VERIFIED",
+      "actualBytes": 2784696,
+      "intendedNextStep": "Compare exact article XXXIII wording against separately identified BnF FRBNF33814462 1598 15-page and FRBNF33814457 1621 23-page witnesses, upon lawful visual access; distinguish ordered registration from documented Paris Parlement registration and assess the distinct 1622 reprint text in scholarly edition. Retain original 1598 and publication holds.",
+      "retainedLocalCopy": {
+        "localRelativePath": "Documents/Research-Primary-Sources/Nantes_1622_Newberry_ArticlesParticuliers/IA_1622_articlesparticul00fran.pdf",
+        "bytes": 2784696,
+        "sha256": "d8481415ed48ad4f283e0dd9dc6426bdc511c2c3e6e858bd07d53a7e3c705356",
+        "storageClass": "PRIVATE_RESEARCH_ONLY",
+        "digitalPages": 28,
+        "historicalPrintedPages": 23,
+        "visuallyInspectedPdfPages": [
+          3,
+          5,
+          14,
+          15,
+          24,
+          25
+        ],
+        "fullDiplomaticCollation": false,
+        "ocrAuxiliary": {
+          "localRelativePath": "Documents/Research-Primary-Sources/Nantes_1622_Newberry_ArticlesParticuliers/IA_1622_articlesparticul00fran_ocr.txt",
+          "bytes": 34832,
+          "sha256": "2389623ecd67cded96cc887e226a7e81db6de6febfe265a70a95c7d7d317a237",
+          "use": "Finding aid only, direct source is historic page image"
+        }
+      },
+      "downloadedAt": "2026-11-11"
     }
   ],
   "requirements": {
