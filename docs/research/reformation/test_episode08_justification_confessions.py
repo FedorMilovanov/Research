@@ -284,8 +284,8 @@ class JustificationBookTests(unittest.TestCase):
             (D / "source-registry-v1.json").read_text(encoding="utf-8")
         )
         rows = {row["id"]: row for row in registry["sources"]}
-        self.assertEqual(registry["sourceCount"], 214)
-        self.assertEqual(len(rows), 214)
+        self.assertEqual(registry["sourceCount"], 215)
+        self.assertEqual(len(rows), 215)
         a = rows["REF-P14"]
         self.assertEqual(a["documentYear"], 1530)
         self.assertEqual(a["accessState"], "PARTIAL_OBJECT")
@@ -310,10 +310,100 @@ class JustificationBookTests(unittest.TestCase):
             self.assertIn("REJECTED_FORMULATION", row)
         plan = (D / "SELF_PLAN.md").read_text(encoding="utf-8")
         current = plan.split("\n---\n", 1)[0]
-        self.assertIn("волна 445", current)
+        self.assertIn("волна 445", plan)  # historical snapshot retained
         self.assertIn("214 PUBLICATION_HOLD", current)
         self.assertIn("INDEPENDENT_EXTERNAL_REVIEW_OPEN", current)
         self.assertIn("THEOLOGICAL_PEER_REVIEW_OPEN", current)
+
+    def test_wave446_apologia_original_print_does_not_masquerade_as_augsburg1530(self):
+        """A directly read Apologia 1531 witness is not direct CA 1530/31
+        text collation and never carries an image reuse permission."""
+        chapter = E8.read_text(encoding="utf-8")
+        reader, apparatus = chapter.split(
+            "## Источниковедческий аппарат — вне основного повествования", 1
+        )
+        for token in (
+            "## Апология 1531 года",
+            "Что такое оправдывающая вера?",
+            "исторических событий",
+            "не на основании собственных заслуг",
+            "шестнадцать лет спустя",
+        ):
+            with self.subTest(reader=token):
+                self.assertIn(token, reader)
+        self.assertNotIn("REF-P91", reader)
+        for token in (
+            "REF-P91", "bsb11411960", "VD16 C4734",
+            "цифровой кадр 24", "кадр 25", "кадр 26",
+            "QVID SIT FIDES IVSTIFICANS",
+            "noticiam historiae",
+            "assentiri promissioni Dei",
+            "non operibus, sed sola fide",
+            "отдельного латинского первоисточника",
+            "PERMISSION_REQUIRED",
+            "ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD",
+        ):
+            with self.subTest(apparatus=token):
+                self.assertIn(token, apparatus)
+        registry = json.loads(
+            (D / "source-registry-v1.json").read_text(encoding="utf-8")
+        )
+        rows = {row["id"]: row for row in registry["sources"]}
+        self.assertEqual(len(rows), 215)
+        self.assertEqual(registry["sourceCount"], len(rows))
+        p91 = rows["REF-P91"]
+        self.assertEqual(p91["documentYear"], 1531)
+        self.assertEqual(p91["evidenceClass"], "A1")
+        self.assertEqual(p91["accessState"], "PARTIAL_OBJECT")
+        self.assertEqual(p91["locatorState"], "EXACT_LOCATOR_VERIFIED")
+        self.assertEqual(p91["rightsState"], "PERMISSION_REQUIRED")
+        self.assertEqual(p91["publicationState"], "REFERENCE")
+        self.assertEqual(set(p91["holds"]), {
+            "ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD",
+        })
+        for token in (
+            "APOLOGIA", "noticiam historiae", "manifest 294469 bytes",
+            "DIRECTLY VISUALLY READ", "NO new acquisition manifest receipt",
+        ):
+            self.assertIn(token, p91["verificationNote"])
+        self.assertEqual(rows["REF-P14"]["documentYear"], 1530)
+        self.assertEqual(rows["REF-P14"]["accessState"], "PARTIAL_OBJECT")
+        claim = next(
+            x for x in (D / "03_claim_verification_register.md")
+            .read_text(encoding="utf-8").splitlines()
+            if x.startswith("| C269 |")
+        )
+        self.assertIn("REF-P91", claim)
+        self.assertIn("другой текст", claim)
+        manifest = json.loads(
+            (D / "acquisition-manifest-v1.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(manifest["sourceCount"], 18)
+        self.assertEqual(len(manifest["sourceRecords"]), 18)
+        self.assertNotIn("REF-P91", [x["id"] for x in manifest["sourceRecords"]])
+        self.assertEqual(manifest["fileBytesInGit"], 0)
+        matrix = (D / "HOLD_SOURCE_SWEEP_2026-11-11.md").read_text(
+            encoding="utf-8")
+        for token in ("### 446.1.", "scan 24", "scan 25", "scan 26",
+                      "215 REF / 319 C / 18 acquisition receipts"):
+            self.assertIn(token, matrix)
+        scan24 = next(line for line in matrix.splitlines()
+                      if line.startswith("| [BSB scan 24]"))
+        scan26 = next(line for line in matrix.splitlines()
+                      if line.startswith("| [BSB scan 26]"))
+        self.assertIn("non habet conditionem meritorum nostrorum", scan24)
+        self.assertNotIn("QVID SIT FIDES IVSTIFICANS", scan24)
+        self.assertIn("QVID SIT FIDES IVSTIFICANS", scan26)
+        self.assertIn("noticiam historiae", scan26)
+        self.assertRegex(p91["verificationNote"], r"READ IMAGE scan 26 .*QVID SIT FIDES IVSTIFICANS")
+        self.assertIn("the heading QVID SIT FIDES IVSTIFICANS is NOT on this canvas",
+                      p91["verificationNote"])
+        plan = (D / "SELF_PLAN.md").read_text(encoding="utf-8")
+        current = plan.split("\n---\n", 1)[0]
+        for token in ("волна 446", "215 REF", "215 PUBLICATION_HOLD",
+                      "INDEPENDENT_EXTERNAL_REVIEW_OPEN",
+                      "THEOLOGICAL_PEER_REVIEW_OPEN"):
+            self.assertIn(token, current)
 
     def test_registry_and_book_navigation(self):
         ledger=(D/"03_claim_verification_register.md").read_text(encoding="utf-8")

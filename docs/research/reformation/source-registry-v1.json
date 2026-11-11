@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 214,
+  "sourceCount": 215,
   "sources": [
     {
       "id": "REF-P01",
@@ -4132,6 +4132,24 @@
       "title": "Gabriel Audisio, La réception de l’édit de Nantes en Provence (1598–1602), Bulletin de la Société de l’Histoire du Protestantisme Français 144 (1998), pp.267–282 (JSTOR/library); 2024 PDF transcript header pp.269–282",
       "url": "https://appy-histoire.fr/wp-content/uploads/2024/01/audisio1998a.pdf",
       "verificationNote": "WAVE440 2026-11-11: read online full retyped French article from Bernard Appy / appy-histoire.fr (retypeset version 2024.01, 11 pages; web PDF screenshots p6,p7,p8,p9 inspected); NOT original 1998 typesetting or direct court folios. JSTOR and legal bibliography give original print pp267-282, 2024 PDF title says pp269-282: unresolved bibliographic pagination variance (do not assert which correct without original). On 11 August 1600 Chambre des vacations ordered publication and postponement; retyped PDF page6 notes Aix Parlement B3340 f757 general edict, f784 PARTICULARS begin, f796/796v/f797 subsequent 1599/1600 royal letters, f798-799 11 August request/judgment; B3659 concurrent deliberations. Aix 5 Oct 1600 decision ordering registration/publication extant through different lower-court copy IV B7 f890v (original court ruling not located in that study); 7 Dec 1600 remonstrances, 6 Jan 1601 king's Conseil answer, 23 Jan 1601 Aix presentation, 4 Apr 1601 court declaration. Scholar explicitly highlights 11 August registration vs 5 October publication ambiguity; do not conflate transcription, royal order, registration, publication, enforcement, or Paris Parlement. Additional primary IV B7 ff862v-890 1600 edict copy; f890 12 August copy vs 11 August in parlement register (date mismatch documented). REPRINT_2024_NOT_ORIGINAL_1998_FACSIMILE / AIX_B3340_PARTICULARS_TRANSCRIBED_NOT_PARIS / AIX_AUG_OCT1600_REGISTRATION_PUBLICATION_AMBIGUITY / AIX_1600_IVB7_LOWER_COURT_COPY / ORIGINAL_AIX_REGISTER_PHOTO_HOLD / EVIDENCE_HOLD / PUBLICATION_HOLD."
+    },
+    {
+      "id": "REF-P91",
+      "documentYear": 1531,
+      "title": "Philipp Melanchthon, Apologia Confessionis Augustanae (Latin early Wittenberg Rhau 1531 print), Bamberg Staatsbibliothek .64 B 9#3a, digitized BSB bsb11411960, directly inspected scans 24–26",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb11411960",
+      "verificationNote": "WAVE446-T03 2026-11-12: ORIGINAL-PRINT-PAGE-IMAGES DIRECTLY VISUALLY READ (not OCR-only) from BSB/MDZ early 1531 Latin print, Georg Rhau Wittenberg, Bamberg Staatsbibliothek .64 B 9#3a, VD16 C4734, IIIF v3 https://api.digitale-sammlungen.de/iiif/presentation/v3/bsb11411960/manifest (288 canvases, manifest 294469 bytes sha256 f42672348c4e442786a951406f3bd5733fa412e491058a2bae5cd3575bfe80fd; rights https://rightsstatements.org/vocab/NoC-NC/1.0/). CAUTION: the available digitized page stream 1–288 was inspected only on selected pages and its opening text explicitly identifies the APOLOGIA; BSB bibliographical WORK title 'Confessio Fidei ...' is not proof that selected scans are physical pages of the 1530 presented confession. This REF is for 1531 APOLOGIA argument, not REF-P14 Augsburg Confession Articles IV/V/VI/IX/XX. READ IMAGE scan 24 (https://api.digitale-sammlungen.de/iiif/image/v3/bsb11411960_00024/full/1100,/0/default.jpg) directly states 'Et haec promissio non habet conditionem meritorum nostrorum' and grace freely offering remission and justification; the heading QVID SIT FIDES IVSTIFICANS is NOT on this canvas; 381158 bytes sha256 6a89d031ba1eaa8ed5ac233a454549b1aa25d3ca2d71aa290d51a67ee1199b7d. READ IMAGE scan 25 (https://api.digitale-sammlungen.de/iiif/image/v3/bsb11411960_00025/full/1100,/0/default.jpg) says 'iustificatio contingat per gratuitam promissionem', reconciliation received 'non operibus, sed sola fide' and distinct from reliance upon one's own merits; 357933 bytes sha256 21086da7e4d6d1253a94a6ab3e42bb1779018610d3d8789c62c4aa6aaef1b2fd. READ IMAGE scan 26 (https://api.digitale-sammlungen.de/iiif/image/v3/bsb11411960_00026/full/1100,/0/default.jpg) contains the heading 'QVID SIT FIDES IVSTIFICANS' and explicitly distinguishes 'noticiam historiae' from 'assentiri promissioni Dei'; on the same canvas faith receives Christ's benefits and renews the heart; 330917 bytes sha256 642fd48c8ca41a921425448cd61ac8f5dc9bb14efa97da44c747aa6bf392bc1f. Hashes computed from direct HTTP 200 JPEG fetches on authorized connected device, visual check via image representation. No permanent PDF/JPEG copies were saved as part of this research wave; NO new acquisition manifest receipt claimed, no full diplomatic collation or exact 1530 manuscript comparison. No right to reuse MDZ digital illustrations for commercial book; PERMISSION_REQUIRED / ARCHIVE_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD. No independent confessional peer review.",
+      "checkedAt": "2026-11-12"
     }
   ]
 }

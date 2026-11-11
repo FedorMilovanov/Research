@@ -1,6 +1,20 @@
 # САМОПЛАН «Реформации» — живая доска исполнения, границы поиска и сборка книги
 
-## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 445, 12.11.2026 (RF-EP08-AUGSBURG-1530-1531-AND-TRENT-XIII-READER-ACCURACY)
+## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 446, 12.11.2026 (RF-T03-APOLOGIA-1531-DIRECT-PRINT-WITNESS)
+
+**Подтверждённый вход:** [PR #474](https://github.com/FedorMilovanov/Research/pull/474) MERGED, `Research/main = a45edc9271bb7016c00990084137293f288b814c`, все **4/4 post-merge GitHub Actions SUCCESS**. Перед волной 446: 214 REF / C1–C319 / 18 acquisition receipts; 214 PUBLICATION_HOLD.
+
+**Предметное чтение:** у BSB/MDZ найден цифровой объект `bsb11411960`, каталог [Bamberg Staatsbibliothek `.64 B 9#3a`, VD16 C4734, Wittenberg Georg Rhau 1531](https://www.digitale-sammlungen.de/en/details/bsb11411960). Его 288-кадровый IIIF manifest и **оригинальные печатные изображения кадров 24–26** получены по HTTPS и просмотрены непосредственно. Кадр 24 — обетование прощения и оправдания не обусловлено человеческими заслугами (`non habet conditionem meritorum nostrorum`); кадр 25 — оправдание `per gratuitam promissionem` и примирение `non operibus, sed sola fide`; **кадр 26** — заголовок *Quid sit fides iustificans*, отличие простого знания (`noticiam historiae`) от принятия Божьего обетования (`assentiri promissioni Dei`), а также связь веры с обновлением сердца. Доказательным объектом служит **Апология Аугсбургского исповедания 1531**, а не оригинальная рукопись исповедания 1530 и не просто заглавие связанного тома. Три размерных и SHA256-рецепта JPEG + manifest сохранены в `REF-P91.verificationNote`; никакие сканы не сохранялись постоянно, **acquisition receipt не создан**.
+
+**Принятая дельта рукописи:** глава 08 получила новый reader-переход между Аугсбургом и Гейдельбергом об аргументе Меланхтона 1531; источник `REF-P91` имеет `A1 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED / PERMISSION_REQUIRED` с `ARCHIVE_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD`; в `C269` отдельно указана ограниченная прямая опора. Единственная HOLD-матрица обновлена, без стороннего исследовательского дублирования. **После волны 446 ожидаемо 215 REF / 319 C / 18 receipts; все 215 PUBLICATION_HOLD сохранены, LOCATOR_HOLD 55 / EVIDENCE_HOLD 89 / ARCHIVE_HOLD 160 / RIGHTS_HOLD 194**.
+
+**Активные задачи (не больше двух):** (1) закрыть техническую приёмку волны 446 на точном SHA и после main; (2) предметно продолжить T-03 уже по **самой авторизованной печати Augsburg Confession 1531** и, при законном доступе, оригинальному Парижу Тридента 1547. Не превращать другие тексты/названия томов в доказательство визуального чтения статей IV/V/VI/IX/XX. `H-08`, `T-08`, независимые конфессиональные рецензии и права на изображения остаются в очереди/HOLD.
+
+**Гейты:** `RESEARCH_MANUSCRIPT_DRAFT / ORIGINAL_DOCUMENT_HOLDS_OPEN / INDEPENDENT_EXTERNAL_REVIEW_OPEN / THEOLOGICAL_PEER_REVIEW_OPEN / NOT_EDITORIAL_READY / RIGHTS_HOLD / PUBLICATION_HOLD`. Никакого самостоятельного выпуска, публикации или встраивания сканов в книгу.
+
+---
+
+## ИСТОРИЧЕСКИЙ ПАСПОРТ — волна 445, 12.11.2026 (RF-EP08-AUGSBURG-1530-1531-AND-TRENT-XIII-READER-ACCURACY)
 
 **Подтверждённый вход:** [PR #473](https://github.com/FedorMilovanov/Research/pull/473) MERGED, `Research/main = a5f29294e9d4f33d94376de0b706347daecfb7e8`, **4/4 post-merge GitHub Actions SUCCESS**, в том числе `Atonement corpus integrity`. Состояние после волны 444: **214 REF / 319 C / 18 acquisition receipts**, **214 PUBLICATION_HOLD**.
 
