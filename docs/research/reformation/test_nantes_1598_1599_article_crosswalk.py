@@ -29,7 +29,7 @@ class NantesVariantCrosswalkTests(unittest.TestCase):
             self.assertIn(id, self.sources)
             self.assertEqual(self.sources[id]["publicationState"], "REFERENCE")
             self.assertIn("PUBLICATION_HOLD", self.sources[id]["holds"])
-        for sid, state in (("REF-P86", "PARTIAL_OBJECT"), ("REF-P29", "CATALOG_ONLY")):
+        for sid, state in (("REF-P86", "PARTIAL_OBJECT"), ("REF-P29", "PARTIAL_OBJECT")):
             with self.subTest(id=sid):
                 self.assertEqual(self.sources[sid]["accessState"], state)
                 self.assertIn("ARCHIVE_HOLD", self.sources[sid]["holds"])
@@ -118,11 +118,13 @@ class NantesVariantCrosswalkTests(unittest.TestCase):
                       "Archives nationales", "NOT", "rights"):
             with self.subTest(token=token):
                 self.assertIn(token.lower(), record["verificationNote"].lower())
-        self.assertEqual(record["accessState"], "CATALOG_ONLY")
-        self.assertEqual(record["locatorState"], "COARSE_LOCATOR_ONLY")
-        for hold in ("ARCHIVE_HOLD", "LOCATOR_HOLD", "RIGHTS_HOLD",
+        self.assertEqual(record["accessState"], "PARTIAL_OBJECT")
+        self.assertEqual(record["locatorState"], "EXACT_LOCATOR_VERIFIED")
+        for hold in ("ARCHIVE_HOLD", "RIGHTS_HOLD",
                      "PUBLICATION_HOLD"):
             self.assertIn(hold, record["holds"])
+        self.assertIn("WHOLE_AEII763_UNREAD",record["verificationNote"])
+        self.assertNotIn("LOCATOR_HOLD",record["holds"])
         self.assertGreaterEqual(self.n, 205)
         for text in ("J//943/2 = AE/II/763", "одного физического архивного предмета",
                      "copie conforme", "expédition", "copie enregistrée",
@@ -136,6 +138,8 @@ class NantesVariantCrosswalkTests(unittest.TestCase):
         self.assertIn("J//943/2 = AE/II/763", c300)
         self.assertIn("НЕ утраченный", c300)
         self.assertIn("CATALOG_ONLY", c300)
+        self.assertIn("PARTIAL_OBJECT", c300)
+        self.assertIn("FULL_OBJECT_VERIFIED", c300)
         self.assertIn("REF-P27", c300)
         self.assertIn("REJECTED_FORMULATION", c300)
         self.assertIn("PUBLICATION_HOLD", c300)

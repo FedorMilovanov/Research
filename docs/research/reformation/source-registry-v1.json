@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 209,
+  "sourceCount": 211,
   "sources": [
     {
       "id": "REF-P01",
@@ -840,19 +840,18 @@
       "documentYear": 1598,
       "title": "Henri IV, Edict of Nantes, sealed Paris-registration expédition, Archives nationales J//943/2 = AE/II/763 (object locator)",
       "evidenceClass": "A1",
-      "accessState": "CATALOG_ONLY",
-      "locatorState": "COARSE_LOCATOR_ONLY",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
       "holds": [
         "ARCHIVE_HOLD",
-        "LOCATOR_HOLD",
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
       "url": "https://fr.wikisource.org/wiki/Page:%C3%89dit_de_Nantes._Page_24_-_Archives_Nationales_-_AE-II-763.jpg",
-      "verificationNote": "2026-11-10 WAVE417: explicit SINGLE-OBJECT ALIAS CONFIRMED from metadata uploaded by Archives nationales in 2013 Wikimedia France partnership (https://commons.wikimedia.org/wiki/File:%C3%89dit_de_Nantes._Page_24_-_Archives_Nationales_-_AE-II-763.jpg): AE/II/763 is its museum/archive exhibition inventory shelfmark and J//943 pièce 2 (J//943/2) the former Trésor des Chartes reference; two labels do NOT represent two manuscript witnesses. The image is described as the first page of the revised sealed expédition sent to the Parlement de Paris for registration, NOT the lost first signed original of April 1598. GrandPalaisRmn (https://histoire-image.org/etudes/edit-nantes-sa-revocation) describes signatures and registration annotations on this AE/II/763 object; the first-April-version witness is a separate certified transcript BGE Ms. fr. 413 (REF-P86 CATALOG_ONLY), not this Paris legal artifact. The digital diplomatic/printed Paris-1599 edition REF-P27 is a DIFFERENT type of witness to the same registered legal text, not a newly located autograph. Official Archives nationales diplomatic glossary (https://rdf.archives-nationales.culture.gouv.fr/garance/entities/recordStates/) distinguishes expédition, copie conforme and copie enregistrée; legal authentication is not proof of verbatim equality across 1598/1599 textual stages. Original physical folios and seals were NOT inspected/collated against DDE, so REF-P29 remains CATALOG_ONLY / COARSE_LOCATOR_ONLY / ARCHIVE_HOLD / LOCATOR_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD. This metadata verification does not approve reproduction rights.",
-      "checkedAt": "2026-11-10"
+      "verificationNote": "WAVE440 2026-11-11: ONE actual 1378x1702 RGB JPEG of first page of AE/II/763 = J//943/2 uploaded by user, 425030 bytes SHA256 8f33def301bedd6614bf3e502781818540a6571f708f08df0b2ebcf90a326144, directly visually inspected: parchment and incipit 'Henry par la grace de Dieu roy de France et de Navarre ...' with archive stamp and opening of address. Wikimedia Commons official 2013 Archives nationales partnership explicitly labels file 'Première page de la version de l'édit transmise pour enregistrement au Parlement de Paris', object inventory AE/II/763 and original J//943 pièce 2: https://commons.wikimedia.org/wiki/File:%C3%89dit_de_Nantes._Page_24_-_Archives_Nationales_-_AE-II-763.jpg . The filename 'Page 24' is a Wikimedia upload identifier NOT a demonstrated original folio/page number. SINGLE_PHOTO_VISUALLY_VERIFIED / WHOLE_AEII763_UNREAD / REGISTER_BOOK_DIRECT_CHECK_HOLD. First-photo direct inspection supports PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED, NOT entire parchment-scroll collation, seals, signatures or legal annotations, NOT the lost initial 95-article 1598 original, NOT a second object under J//943/2. BGE archive-catalogue notice 2009 also says exact alias and Paris Parliament register X1A 8644 ff1-18, but X1A ACTUAL COURT LEAVES remain unseen. Rights remains RIGHTS_UNKNOWN and RIGHTS_HOLD, ARCHIVE_HOLD, PUBLICATION_HOLD; single image hash in note only, NO protected image copied to Git. 2026-11-10 WAVE417: explicit SINGLE-OBJECT ALIAS CONFIRMED from metadata uploaded by Archives nationales in 2013 Wikimedia France partnership (https://commons.wikimedia.org/wiki/File:%C3%89dit_de_Nantes._Page_24_-_Archives_Nationales_-_AE-II-763.jpg): AE/II/763 is its museum/archive exhibition inventory shelfmark and J//943 pièce 2 (J//943/2) the former Trésor des Chartes reference; two labels do NOT represent two manuscript witnesses. The image is described as the first page of the revised sealed expédition sent to the Parlement de Paris for registration, NOT the lost first signed original of April 1598. GrandPalaisRmn (https://histoire-image.org/etudes/edit-nantes-sa-revocation) describes signatures and registration annotations on this AE/II/763 object; the first-April-version witness is a separate certified transcript BGE Ms. fr. 413 (REF-P86 CATALOG_ONLY), not this Paris legal artifact. The digital diplomatic/printed Paris-1599 edition REF-P27 is a DIFFERENT type of witness to the same registered legal text, not a newly located autograph. Official Archives nationales diplomatic glossary (https://rdf.archives-nationales.culture.gouv.fr/garance/entities/recordStates/) distinguishes expédition, copie conforme and copie enregistrée; legal authentication is not proof of verbatim equality across 1598/1599 textual stages. Original physical folios and seals were NOT inspected/collated against DDE, so REF-P29 remains CATALOG_ONLY / COARSE_LOCATOR_ONLY / ARCHIVE_HOLD / LOCATOR_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD. This metadata verification does not approve reproduction rights.",
+      "checkedAt": "2026-11-11"
     },
     {
       "id": "REF-P30",
@@ -4041,6 +4040,44 @@
       "url": "https://www.academia.edu/29478407",
       "verificationNote": "Wave439 2026-11-11: AUTHOR-PROFILE-HOSTED PUBLIC FULL-TEXT TRANSCRIPTION checked directly on Academia.edu for relevant printed pages 211–229 and archive notes, not the downloadable original PDF scans; text has OCR/diacritic artifacts, so not diplomatic. In pp219–220, Daireaux states the Rouen Parlement registered the GENERAL edict 23 September 1599 while it REFUSED transcription of the 56 particular articles (1B5414 f520ff; 1B110 f96v), also absent from Rouen 1599 printing BHH107. Same author's 2005 postface REF-S104 p112 claiming both general and particular articles registered 1599 is therefore ISOLATED AGAINST BOTH 2006 and 2015 REF-S103 detailed studies; no verified erratum or cause of mistake. On p229 he quotes 15 July 1610 royal letters explicitly stating particular articles HAD NOT PREVIOUSLY BEEN registered for want of original/authentic copy, and Rouen 27 August 1610 ruling ordering registration (BnF F46905[9], BnF LB36 97, BPF in-8b12494); this is a 2006 historian's edited transcription, NOT archive direct check. Further pp223–225 detail Protestant levies for Catholic Quillebeuf church (29 Nov 1600 Rouen 1B742, contrary to particular art II) and 4 March 1602 royal Conseil ruling Mazarine ms2595 ff358–361 / Archives nationales E4a f139r; evidence of practical effect of restrictions, NOT assertion of universal local enforcement. Additional precise locators from footnotes pp220,225-229: printed Rouen general edict 1603 BM Rouen Norm.257/2 item20, BPF ms11/1 f12 is COLLATION 22 Aug 1602 of 18 June letter, BPF ms11/1 f23 further jussion after 1 July 1608, BnF F46905[7] Rouen 1609 printing, BnF F46905[9] Rouen 1610 printing. No purchase, archival images, copy rights or independent verification. DAIREAUX_2005_ISOLATED_2006_2015_CONCORDANT / ROUEN_1610_JUL15_ROYAL_LETTER_SECONDARY_QUOTED / QUILLEBEUF_1600_PARLEMENT_1B742_AND_1602_COUNCIL_E4A_HOLD / BPF_F23_1608_LOCATOR_ONLY / ARTICLE_II_ORIGINAL_CHECK_HOLD / EVIDENCE_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD.",
       "checkedAt": "2026-11-11"
+    },
+    {
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "checkedAt": "2026-11-11",
+      "id": "REF-S107",
+      "documentYear": 2009,
+      "title": "Paule Hochuli Dubuis, Bibliothèque de Genève Département des manuscrits, notice descriptive of Ms. fr. 413, Correspondance ecclésiastique vol. XIII (November 2009), f.1–40",
+      "url": "https://archives.bge-geneve.ch/ark:/17786/vta4932d814bec20262",
+      "verificationNote": "WAVE440 2026-11-11: FULL 118-line French official BGE ARCHIVAL NOTICE TEXT supplied by user as .txt; current BGE archive site blocks automated browser access with Anubis, so do not claim live direct fetch or inspection of manuscript. The source as quoted provides exact provenance and legal locators: certified 22 May 1599 Châtellerault copy by Faulcon and Larcher for Guillaume Ranchin, signature reported at Ms fr413 f28 (general) and f39 (particular), original 1598 95 general and 56 particular articles, f1-28 and f29-39 respectively; Paris 25 Feb 1599 registered GENERAL text at Archives nationales X1A 8644 ff1-18; separate certified public parchment item J943/2 = AE II763; particular articles as reported by archivist in Aix Parlement register Bouches-du-Rhône B3340 ff784-796 (this does NOT establish PARIS parliamentary registration). BnF NAF23478 ff989-991 pastors brevet and BnF Dupuy323 ff27-32 garrisons brevet. Additional BGE Ms fr65 f216 1 Jan 1599 'Dodenoud' signature as separate provenance control, and Geneva f28/f39 side verification still open. Notice heading erroneously says 1568 despite text 1598; its explanatory article mapping refers to 'art. 93' of registered text although headline count is 92: treat as internal catalog wording conflict, do not silently harmonize. 22 May institutional manuscript date remains catalog/custodian supported, not directly read at f28; 29 May old annual-report metadata remains documented as conflict. USER_SUPPLIED_ARCHIVE_NOTICE_TEXT_NOT_MANUSCRIPT_DIRECT / PARIS_X1A8644_GENERAL_REGISTER_CATALOG_ONLY / AIX_B3340_PARTICULARS_CATALOG_LOCATOR / ARTICLE_MAPPING_92_93_CATALOG_CONFLICT / RIGHTS_HOLD / ARCHIVE_HOLD / PUBLICATION_HOLD."
+    },
+    {
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "checkedAt": "2026-11-11",
+      "id": "REF-S108",
+      "documentYear": 1998,
+      "title": "Gabriel Audisio, La réception de l’édit de Nantes en Provence (1598–1602), Bulletin de la Société de l’Histoire du Protestantisme Français 144 (1998), pp.267–282 (JSTOR/library); 2024 PDF transcript header pp.269–282",
+      "url": "https://appy-histoire.fr/wp-content/uploads/2024/01/audisio1998a.pdf",
+      "verificationNote": "WAVE440 2026-11-11: read online full retyped French article from Bernard Appy / appy-histoire.fr (retypeset version 2024.01, 11 pages; web PDF screenshots p6,p7,p8,p9 inspected); NOT original 1998 typesetting or direct court folios. JSTOR and legal bibliography give original print pp267-282, 2024 PDF title says pp269-282: unresolved bibliographic pagination variance (do not assert which correct without original). On 11 August 1600 Chambre des vacations ordered publication and postponement; retyped PDF page6 notes Aix Parlement B3340 f757 general edict, f784 PARTICULARS begin, f796/796v/f797 subsequent 1599/1600 royal letters, f798-799 11 August request/judgment; B3659 concurrent deliberations. Aix 5 Oct 1600 decision ordering registration/publication extant through different lower-court copy IV B7 f890v (original court ruling not located in that study); 7 Dec 1600 remonstrances, 6 Jan 1601 king's Conseil answer, 23 Jan 1601 Aix presentation, 4 Apr 1601 court declaration. Scholar explicitly highlights 11 August registration vs 5 October publication ambiguity; do not conflate transcription, royal order, registration, publication, enforcement, or Paris Parlement. Additional primary IV B7 ff862v-890 1600 edict copy; f890 12 August copy vs 11 August in parlement register (date mismatch documented). REPRINT_2024_NOT_ORIGINAL_1998_FACSIMILE / AIX_B3340_PARTICULARS_TRANSCRIBED_NOT_PARIS / AIX_AUG_OCT1600_REGISTRATION_PUBLICATION_AMBIGUITY / AIX_1600_IVB7_LOWER_COURT_COPY / ORIGINAL_AIX_REGISTER_PHOTO_HOLD / EVIDENCE_HOLD / PUBLICATION_HOLD."
     }
   ]
 }

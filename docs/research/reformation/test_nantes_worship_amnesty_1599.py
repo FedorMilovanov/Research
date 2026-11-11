@@ -28,7 +28,11 @@ class NantesWorshipAndAmnestyTests(unittest.TestCase):
         for k in ("REF-P27", "REF-P29", "REF-P86", "REF-S99", "REF-S100"):
             self.assertIn(k, self.refs)
         self.assertEqual(self.refs["REF-P27"]["accessState"], "PARTIAL_OBJECT")
-        self.assertEqual(self.refs["REF-P29"]["accessState"], "CATALOG_ONLY")
+        self.assertEqual(self.refs["REF-P29"]["accessState"], "PARTIAL_OBJECT")
+        self.assertIn("SINGLE_PHOTO_VISUALLY_VERIFIED",self.refs["REF-P29"]["verificationNote"])
+        self.assertIn("WHOLE_AEII763_UNREAD",self.refs["REF-P29"]["verificationNote"])
+        for hold in ("ARCHIVE_HOLD","RIGHTS_HOLD","PUBLICATION_HOLD"):
+            self.assertIn(hold,self.refs["REF-P29"]["holds"])
         self.assertEqual(self.refs["REF-P86"]["accessState"], "PARTIAL_OBJECT")
         for k in ("REF-S99", "REF-S100"):
             with self.subTest(source=k):
