@@ -80,7 +80,7 @@
       "title": "Luther's September Testament",
       "evidenceClass": "A1",
       "accessState": "CATALOG_ONLY",
-      "locatorState": "LOCATOR_MISSING",
+      "locatorState": "COARSE_LOCATOR_ONLY",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
       "holds": [
@@ -90,8 +90,8 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://bawue.museum-digital.de/object/1734",
-      "verificationNote": "museum catalog only",
-      "checkedAt": "2026-11-04"
+      "verificationNote": "museum catalog only\n2026-11-11 HOLD sweep: New verified institutional witness: Württembergische Landesbibliothek Stuttgart digitized 'Das Newe Testament Deutzsch [Septembertestament]', 1522, Wittenberg Lotther for Cranach/Döring, VD16 B4318, signature Bb deutsch 152201, digitization listed at https://www.leo-bw.de/en/detail/-/Detail/details/DOKUMENT/wlb_digitalisate/digibib-bsz3517275746/Das%20Newe%20Testament%20Deutzsch%20Septembertestament . Bibliographic metadata directly accessible; original text/verse illustration not visually collated, WLB website sometimes 403. Thus no evidence upgrade beyond catalog or rights/publication release.",
+      "checkedAt": "2026-11-11"
     },
     {
       "id": "REF-P05",
@@ -116,18 +116,18 @@
       "documentYear": 1524,
       "title": "Luther address on schools to city councils",
       "evidenceClass": "A1",
-      "accessState": "CATALOG_ONLY",
-      "locatorState": "LOCATOR_MISSING",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
       "holds": [
-        "LOCATOR_HOLD",
+        "ARCHIVE_HOLD",
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
       "url": "https://digital.pitts.emory.edu/s/digital-collections/item/4819",
-      "verificationNote": "source map points to sections on girls and libraries; needs primary-page verification",
-      "checkedAt": "2026-11-04"
+      "verificationNote": "source map points to sections on girls and libraries; needs primary-page verification\n2026-11-11 HOLD sweep: Directly read diplomatic 2024 Oxford Taylor Editions transcription of 1524 source held by Taylor Institution Library, shelfmark ARCH.8o.G.1524(4), https://editions.mml.ox.ac.uk/editions/ratherren/ : original German folio d2r calls for schools for boys AND girls; d3v specifies up to one hour of girls' schooling alongside household obligations, e1r urges urban libraries, e2v enumerates language, Scripture, history, law, medicine as book selection. These are exact folio locators checked IN TRANSCRIPTION; not a leaf-by-leaf visual comparison with the Pitts first printing (https://digital.pitts.emory.edu/s/digital-collections/item/4819), hence archive hold. Separate BSB/MDZ original printed witness bsb11407251 (VD16 L3800, 38 scans), and Paderborn original printing digitization (VD16 L3800) with incomplete exemplar missing A4. Distinct rights: Oxford TEI transcription CC BY-SA 4.0, Oxford facsimile CC BY-NC-ND 4.0; Paderborn image CC BY 4.0 but incomplete source; Pitts item rights unresolved. Claim proved: Luther's documented proposal, NOT local school implementation, universality of literacy, or blanket permission to publish archival photos. RIGHTS_HOLD/PUBLICATION_HOLD remain.",
+      "checkedAt": "2026-11-11"
     },
     {
       "id": "REF-P07",
@@ -421,7 +421,25 @@
       "documentYear": 1994,
       "title": "Mark U Edwards Jr, Printing Propaganda and Martin Luther",
       "evidenceClass": "B1",
-      "accessState": "LINK_ONLY",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://publishing.cdlib.org/ucpressebooks/public/book/printing-propaganda-and-martin-luther.html",
+      "verificationNote": "open online book; not systematically read in this pass\n2026-11-11 HOLD sweep: Directly opened official UC Press hosted complete HTML text https://publishing.cdlib.org/ucpressebooks/public/book/printing-propaganda-and-martin-luther.html and inspected front matter pp xi–xiii, Introduction pp 1–13, including interpretation of printed propaganda and its reception, and book structure. Exact published chapter/pagination locators: chapter 1 pp 14ff; chapter 5 'Scripture as Printed Text' pp 109ff; chapter 7 'Catholics on Luther’s Responsibility for the German Peasants’ War' pp 149ff. Book visibly accessible in full but was NOT systematically read page by page or source tables re-counted; do not mark FULL_OBJECT_VERIFIED. Secondary work, not original sixteenth-century pamphlets. EVIDENCE_HOLD (individual print counts and attribution), RIGHTS_HOLD, PUBLICATION_HOLD remain.",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "id": "REF-S04",
+      "documentYear": 2016,
+      "title": "Ulinka Rublack ed Oxford Handbook Protestant Reformations",
+      "evidenceClass": "B1",
+      "accessState": "CATALOG_ONLY",
       "locatorState": "COARSE_LOCATOR_ONLY",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
@@ -431,28 +449,9 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "url": "https://publishing.cdlib.org/ucpressebooks/public/book/printing-propaganda-and-martin-luther.html",
-      "verificationNote": "open online book; not systematically read in this pass",
-      "checkedAt": "2026-11-04"
-    },
-    {
-      "id": "REF-S04",
-      "documentYear": 2016,
-      "title": "Ulinka Rublack ed Oxford Handbook Protestant Reformations",
-      "evidenceClass": "B1",
-      "accessState": "CATALOG_ONLY",
-      "locatorState": "LOCATOR_MISSING",
-      "rightsState": "RIGHTS_UNKNOWN",
-      "publicationState": "REFERENCE",
-      "holds": [
-        "EVIDENCE_HOLD",
-        "LOCATOR_HOLD",
-        "RIGHTS_HOLD",
-        "PUBLICATION_HOLD"
-      ],
       "url": "https://academic.oup.com/edited-volume/34628?searchresult=1",
-      "verificationNote": "publisher abstract and table; full contents behind access",
-      "checkedAt": "2026-11-04"
+      "verificationNote": "publisher abstract and table; full contents behind access\n2026-11-11 HOLD sweep: Oxford Academic official publisher book landing page https://academic.oup.com/edited-volume/34628 directly inspected: online publication 5 Oct 2015, print Dec 2016; DOI 10.1093/oxfordhb/9780199646920.001.0001, 38 contributors. Editor Rublack's Introduction DOI 10.1093/oxfordhb/9780199646920.013.39, pp 1–20, publisher abstract only, not full chapter. Book-wide shelf/DOI locator established, claim-specific chapter/page locator NOT established; CATALOG_ONLY, LOCATOR_HOLD and EVIDENCE_HOLD remain.",
+      "checkedAt": "2026-11-11"
     },
     {
       "id": "REF-S05",
@@ -460,7 +459,7 @@
       "title": "Kenneth G Appold Luther and the Peasants chapter 5",
       "evidenceClass": "B1",
       "accessState": "CATALOG_ONLY",
-      "locatorState": "LOCATOR_MISSING",
+      "locatorState": "COARSE_LOCATOR_ONLY",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
       "holds": [
@@ -470,8 +469,8 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://academic.oup.com/book/59785/chapter-abstract/511062426",
-      "verificationNote": "publisher abstract only",
-      "checkedAt": "2026-11-04"
+      "verificationNote": "publisher abstract only\n2026-11-11 HOLD sweep: Oxford Academic official chapter landing page directly checked at https://academic.oup.com/book/59785/chapter-abstract/511062426: Appold, Luther and the Peasants, chapter 5 'Luther’s Response', pp 142–183, online publication 1 April 2025, DOI 10.1093/9780198946922.003.0006; only the publisher abstract was accessible, not these forty-two chapter pages. Chapter-level locator exists, claim-specific pinpoint missing. Keep CATALOG_ONLY/EVIDENCE_HOLD/LOCATOR_HOLD/RIGHTS_HOLD/PUBLICATION_HOLD.",
+      "checkedAt": "2026-11-11"
     },
     {
       "id": "REF-C01",
