@@ -497,6 +497,9 @@ class JustificationBookTests(unittest.TestCase):
         self.assertIn("216 REF / 319 C / 18 acquisition receipts", sweep)
         self.assertIn("PUBLICATION_HOLD 216", sweep)
         self.assertIn("STOP_DISCOVERY", sweep)
+        # Only the wave 447 crosswalk belongs to Augsburg; earlier sweep
+        # sections also have Canon IX of Trent with a different image ID.
+        wave447 = sweep.split("### 447.1.", 1)[1]
         for label, frames in {
             "IV": ("14", "15"),
             "V": ("15",),
@@ -504,7 +507,7 @@ class JustificationBookTests(unittest.TestCase):
             "IX": ("16", "17"),
             "XX": ("22", "24", "25"),
         }.items():
-            line = next(x for x in sweep.splitlines()
+            line = next(x for x in wave447.splitlines()
                         if x.startswith(f"| **{label}** |"))
             for frame in frames:
                 self.assertIn(f"bsb00103368_{int(frame):05d}", line)
