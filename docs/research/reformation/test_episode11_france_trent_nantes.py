@@ -29,7 +29,11 @@ class FranceTrentNantesTests(unittest.TestCase):
                 self.assertEqual(records[key]["accessState"],"PARTIAL_OBJECT")
                 self.assertIn("PUBLICATION_HOLD",records[key]["holds"])
         self.assertEqual(records["REF-P27"]["accessState"],"PARTIAL_OBJECT")
-        self.assertEqual(records["REF-P29"]["accessState"],"CATALOG_ONLY")
+        # Wave440: one original archive photo warrants PARTIAL_OBJECT, never FULL_OBJECT.
+        self.assertEqual(records["REF-P29"]["accessState"],"PARTIAL_OBJECT")
+        self.assertEqual(records["REF-P29"]["locatorState"],"EXACT_LOCATOR_VERIFIED")
+        for hold in ("ARCHIVE_HOLD","RIGHTS_HOLD","PUBLICATION_HOLD"):
+            self.assertIn(hold,records["REF-P29"]["holds"])
         self.assertEqual(records["REF-P28"]["accessState"],"PARTIAL_OBJECT")
         self.assertEqual(records["REF-P30"]["accessState"],"CATALOG_ONLY")
         for key in ("REF-P18","REF-P20","REF-P27","REF-P28","REF-P29"):
