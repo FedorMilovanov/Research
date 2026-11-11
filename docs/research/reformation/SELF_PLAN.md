@@ -1,6 +1,18 @@
 # САМОПЛАН «Реформации» — живая доска исполнения, границы поиска и сборка книги
 
-## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 443, 11.11.2026 (RF-USER-HANDOVER-CROSSCHECK)
+## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 444, 12.11.2026 (RF-T03-PARIS-EDITION-DISAMBIGUATION)
+
+**Вход:** [PR #472](https://github.com/FedorMilovanov/Research/pull/472) MERGED, `Research/main = 72125b80e6a44a25cb38584846b5ab60b87c5ecd` (проверено по ветке), **4/4 post-merge Actions SUCCESS** на этом SHA. Срез 443: 214 уникальных REF / 319 C / 18 acquisition receipts, 214 `PUBLICATION_HOLD`.
+
+**Результат без ложной колляции:** BnF [BP16_112717](https://bp16.bnf.fr/ark:/12148/cb43985893b/) — отдельно напечатанный в Париже Vascosan *Decretum de Justificatione*, 1547, 20 л., A–E⁴, `B-6903 (2)`, Gallica [`bpt6k87158583`](https://gallica.bnf.fr/ark:/12148/bpt6k87158583); отдельная BnF [BP16_112718](https://bp16.bnf.fr/ark:/12148/cb43985894p/) — **другая** парижская печать 1547 с включённым декретом о таинствах, 22 л., A–E⁴ F², курсив, `B-5444 (3)`. Второе издание не приписывать первому и не называть обнаруженным вариантом догматической формулировки без чтения обоих текстов. Точная сверка и границы записаны в [единую HOLD-матрицу §444.1](HOLD_SOURCE_SWEEP_2026-11-11.md#4441-t-03--две-различающиеся-парижские-печати-1547-года-каталог-подтверждён-листы-не-прочитаны) и `REF-P20.verificationNote`. Gallica IIIF на подключённом компьютере ответил `HTTP 403 / Cloudflare`; оригинальные страницы Парижа ещё не проверены.
+
+**Активно не более двух задач:** (1) `T-03`: при законном доступе прочесть каноны IX/XI/XIII/XXIV на листах **именно BP16_112717** и сопоставить с BSB `REF-P90`; никакого допущения о вариантах до постраничного чтения; (2) редакционная проверка уже написанного текста главы 08 только в пределах установленных оригиналами различий. `H-08`, `T-08` и независимые рецензии остаются в очереди/отдельных HOLD, а не маскируются зелёным CI.
+
+**Гейты:** `ORIGINAL_DOCUMENT_HOLDS_OPEN / INDEPENDENT_EXTERNAL_REVIEW_OPEN / THEOLOGICAL_PEER_REVIEW_OPEN / NOT_EDITORIAL_READY / RIGHTS_HOLD / PUBLICATION_HOLD`. Ни источник, ни acquisition receipt не добавлен; 214 `PUBLICATION_HOLD` сохранены, выпуска книги и правовой авторизации нет. После двух неудачных адресных способов доступа применён `STOP_DISCOVERY` к Gallica на эту волну.
+
+---
+
+## ИСТОРИЧЕСКИЙ ПАСПОРТ — волна 443, 11.11.2026 (RF-USER-HANDOVER-CROSSCHECK)
 
 **Вход:** PR #471 MERGED, `Research/main = 6896fce3ade21481bace3cb97859553a63e38faa`. Переданные 665-строчная сводка из 28 проходов и 100-строчный handover **не** являются архивной колляцией; материал сверён с исходными 211 REF волны 442, затем расширен до 214 REF и 319 C и принят адресно в [единую HOLD-матрицу](HOLD_SOURCE_SWEEP_2026-11-11.md#волна-443--проверка-переданного-обновлённого-hold-аудита-28-проходов-и-handover). **Существенная поправка:** «найдена ссылка/публикация/критическая монография» ≠ «все HOLD сняты» ≠ «независимое заключение по книге получено».
 
@@ -18,7 +30,7 @@
 
 **BSB права на оригинальные кадры `REF-P90`:** IIIF v3 `rights=https://rightsstatements.org/vocab/NoC-NC/1.0/`, не общий Public Domain. Для книжного изображения — **`PERMISSION_REQUIRED / RIGHTS_HOLD / PUBLICATION_HOLD`**; это не равнозначно охране текста 1547 года. [Институциональные условия](https://www.digitale-sammlungen.de/en/p/a6e41db6-22b8-40b5-9edf-966b3da4083a) требуют отдельной оценки предполагаемого коммерческого повторного использования и атрибуции.
 
-**Гейты:** `INDEPENDENT_EXTERNAL_REVIEW_OPEN / THEOLOGICAL_PEER_REVIEW_OPEN / ORIGINAL_DOCUMENT_HOLDS_OPEN / NOT_EDITORIAL_READY / RIGHTS_HOLD / PUBLICATION_HOLD`. Актуально **214 distinct source IDs, 319 последовательных C-claims и 18 verified acquisition receipts**; все 213 `PUBLICATION_HOLD` сохранены. Нет публикаций, правовой авторизации, массового подъёма accessState, копирования загруженных 665 строк в параллельный живой файл, новых веток помимо одного рабочего PR.
+**Гейты:** `INDEPENDENT_EXTERNAL_REVIEW_OPEN / THEOLOGICAL_PEER_REVIEW_OPEN / ORIGINAL_DOCUMENT_HOLDS_OPEN / NOT_EDITORIAL_READY / RIGHTS_HOLD / PUBLICATION_HOLD`. Актуально **214 distinct source IDs, 319 последовательных C-claims и 18 verified acquisition receipts**; все 214 `PUBLICATION_HOLD` сохранены. Нет публикаций, правовой авторизации, массового подъёма accessState, копирования загруженных 665 строк в параллельный живой файл, новых веток помимо одного рабочего PR.
 
 ---
 
