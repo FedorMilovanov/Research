@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 112,
+    "sourceRecords": 115,
     "approvedForProduct": 0
   },
   "records": [
@@ -4241,7 +4241,144 @@
         "independentAncientAleppoWitnessAdded": 0,
         "republicationRightsApproved": false
       }
+    },
+    {
+      "id": "SRC-PESACHIM117A-COMPOSITE-KESYAH-AMORAIC-EDITED-DIGITAL",
+      "title": "Talmud Bavli, Pesachim 117a — halleluyah / kesyah / yedidyah composite-word dispute",
+      "creator": "Babylonian Talmud (attributions to Rav Chisda reporting R. Yohanan, Rav, Rabbah)",
+      "year": null,
+      "url": "https://he.wikisource.org/wiki/פסחים_קיז_א",
+      "objectType": "historical_jewish_interpretation_original_authored_text_accessed_in_modern_edited_digital_transcription",
+      "sourceRole": "TALMUD_PESACHIM117A_ATTRIBUTED_AMORAIC_ONE_WORD_AND_TWO_WORD_OPINIONS_NOT_ANCIENT_ALEPPO_PHOTO",
+      "evidenceClass": "A2",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "sourceObjectState": "Original classical transmitted debate read in full edited Hebrew Wikisource page, Pesachim 117a. Rav Chisda in the name of Rabbi Yohanan: halleluyah, kesyah, yedidyah are each one word; Rav: kesyah and merchavyah one word; Rabbah: only merchavyah one word. The cited edited text spells the last speaker רבה (Rabbah); Rashbatz I:177 transcription spells רבא in its reference; discrepancy preserved as an editorial witness variant without deciding critical Talmud reading. This defines a rabbinic interpretive dispute; not an observed Aleppo manuscript leaf. No specific manuscript/printed critical Talmud apparatus inspected.",
+      "supportedUse": "Precisely attributed historical textual/halakhic discussion of Exodus 17:16 and word-division tradition, with edited digital-text source provenance. Not a photograph of any ancient Aleppo Codex Exodus folio or a substitute for unread Yeivin/Breuer critical pages.",
+      "forbiddenUse": "Claim the historical author physically examined the Aleppo Codex Exodus folio, saw an ancient manuscript photographic image, confirmed a modern critical apparatus, or granted site publication rights. Do not count these authorial traditions as independent ancient Aleppo manuscript collations.",
+      "digitalTranscriptLicense": "Wikisource editor text CC BY-SA 4.0; authorial ancient/early-modern composition has its own public-domain status, but no image republication rights asserted.",
+      "verifiedWave50": {
+        "talmudPage": "Pesachim 117a",
+        "editedHebrewFullTextViewed": true,
+        "physicalOrPhotographicTalmudManuscriptViewed": false,
+        "rabbiYohananThroughRavChisdaOneWordList": [
+          "הללויה",
+          "כסיה",
+          "ידידיה"
+        ],
+        "ravOneWordList": [
+          "כסיה",
+          "מרחביה"
+        ],
+        "rabbahOneWordList": [
+          "מרחביה"
+        ],
+        "rabbahEditedOrthography": "רבה",
+        "rashbatzCitationLastSpeakerOrthography": "רבא",
+        "thisRabbaRavaDifferenceResolved": false,
+        "exodus17_16AuthorialInterpretation": true,
+        "originalAleppoCodexFolioSeen": false,
+        "criticalYeivinBreuerPagesRead": false,
+        "permissionToRepublishTranscriptApproved": false
+      }
+    },
+    {
+      "id": "SRC-RASHBATZ-TASHBETZ-I177-KESYAH-RESPONSUM",
+      "title": "Shuʾt HaTashbetz, Part I, responsum 177 — disputed כס יה and witnessed Torah scroll",
+      "creator": "Shimon ben Tzemach Duran (Rashbatz, 1361–1444; exact response composition year unknown)",
+      "year": 1444,
+      "url": "https://he.wikisource.org/wiki/שו%22ת_רשב%22ץ_(תשב%22ץ)/חלק_א/קעז",
+      "objectType": "historical_jewish_interpretation_original_authored_text_accessed_in_modern_edited_digital_transcription",
+      "sourceRole": "RASHBATZ_TASHBETZ_I177_DIRECT_HISTORICAL_AUTHOR_TESTIMONY_NON_ALEPPO_SCROLL_AND_CONFLICTING_MASORETIC_LISTS",
+      "evidenceClass": "A2",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "sourceObjectState": "Original medieval responsum fully read in modern edited Hebrew Wikisource transcription, Part I responsum177, not visually collated in 1738/1741 print or any original 15th-century manuscript. Rashbatz reports he saw a different Torah scroll in his own location where כס יה was written 'בשתי שטות' across two separate lines, with scribal sanctification concern; this is a reported eyewitness to THAT scroll, not the Aleppo Codex. He compares conflicting Masoretic enumerations listing SIX five-two-letter-word verses including כי יד על כס יה versus a FIVE-verse list excluding it; also reports a variant Masorah 'פלוגתא היא מלה א׳'. He explicitly warns that the sheva under samekh is not decisive proof of one-word segmentation by analogy with אש דת. He describes erasing/removing the written כס and rewriting as an interlinear correction to avoid the issue. 1738/1741 printed versions identified bibliographically via Russian State Library record 01008237104 / Hebrewbooks 42132, but the pertinent original printed leaf NOT inspected.",
+      "supportedUse": "Precisely attributed historical textual/halakhic discussion of Exodus 17:16 and word-division tradition, with edited digital-text source provenance. Not a photograph of any ancient Aleppo Codex Exodus folio or a substitute for unread Yeivin/Breuer critical pages.",
+      "forbiddenUse": "Claim the historical author physically examined the Aleppo Codex Exodus folio, saw an ancient manuscript photographic image, confirmed a modern critical apparatus, or granted site publication rights. Do not count these authorial traditions as independent ancient Aleppo manuscript collations.",
+      "digitalTranscriptLicense": "Wikisource editor text CC BY-SA 4.0; authorial ancient/early-modern composition has its own public-domain status, but no image republication rights asserted.",
+      "verifiedWave50": {
+        "responsumPart": 1,
+        "responsumNumber": 177,
+        "editedHebrewFullTextViewed": true,
+        "first1738PrintFolioViewed": false,
+        "second1741PrintFolioViewed": false,
+        "any15thCenturyAutographViewed": false,
+        "authorSawSomeTorahScroll": true,
+        "authorSawAleppoCodex": false,
+        "torahScrollSeparatelyLineWrittenHebrew": "כס יה בשתי שטות",
+        "countOfTwoLetterWordsInFirstMasorahList": 6,
+        "countOfTwoLetterWordsInRivalList": 5,
+        "masoreticListConflictUnresolved": true,
+        "alternativeMasorahStatus": "פלוגתא היא מלה א׳",
+        "samekhShevaProvesWordUnity": false,
+        "samekhShevaAnalogy": "אש דת",
+        "authorDescribesPhysicalCorrection": true,
+        "originalJTS1855CopyWitnessIndependence": "DIFFERENT_HISTORICAL_TRADITION_NOT_SAME_PHYSICAL_SOURCE",
+        "lastSpeakerQuotedByAuthorOrthography": "רבא",
+        "criticalTalmudNameVariantResolved": false,
+        "rightsClearedForDigitalTranscript": false,
+        "originalAleppoCodexPhotoViewed": false,
+        "originalYeivinBreuerCriticalPagesRead": false
+      }
+    },
+    {
+      "id": "SRC-ARUCH-HASHULCHAN-YD27524-KESYAH-TWO-WORD-DECISION",
+      "title": "Arukh HaShulchan, Yoreh Deah 275:24 — explicit two-word ruling for כס יה",
+      "creator": "Yechiel Michel Epstein (1829–1908)",
+      "year": 1891,
+      "url": "https://he.wikisource.org/wiki/ערוך_השולחן_יורה_דעה_ערה",
+      "objectType": "historical_jewish_interpretation_original_authored_text_accessed_in_modern_edited_digital_transcription",
+      "sourceRole": "ARUCH_HASHULCHAN_YD27524_EXPLICIT_TWO_WORD_HALAKHIC_RULING_USING_FIVE_WORD_MASORAH_LIST",
+      "evidenceClass": "A2",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "sourceObjectState": "Full selected author's halakhic paragraph Yoreh Deah 275:24 read in modern edited Wikisource transcript. Author says there is a dispute in Pesachim117a whether כס יה is one/two words and rules 'וההכרעה היא שהם שני תיבות' on the grounds that the Masorah counted five successive two-letter words 'כי יד על כס יה'. Author acknowledges majority of voices in the Talmud read one word; practical scribal rule to write כס and יה on one line although in two words; discusses correction if split across two lines. The full public-domain original-volume facsimile exists in Wikimedia Commons 'AHS YD B4.djvu' (sections270–304, 1891) and full AHS-YD-B-HB14244.pdf, but original relevant printed page itself NOT visually inspected. Source is later normative reception, not surviving Aleppo script or an independent ancient manuscript.",
+      "supportedUse": "Precisely attributed historical textual/halakhic discussion of Exodus 17:16 and word-division tradition, with edited digital-text source provenance. Not a photograph of any ancient Aleppo Codex Exodus folio or a substitute for unread Yeivin/Breuer critical pages.",
+      "forbiddenUse": "Claim the historical author physically examined the Aleppo Codex Exodus folio, saw an ancient manuscript photographic image, confirmed a modern critical apparatus, or granted site publication rights. Do not count these authorial traditions as independent ancient Aleppo manuscript collations.",
+      "digitalTranscriptLicense": "Wikisource editor text CC BY-SA 4.0; authorial ancient/early-modern composition has its own public-domain status, but no image republication rights asserted.",
+      "verifiedWave50": {
+        "section": "Yoreh Deah 275:24",
+        "editedHebrewFullSectionViewed": true,
+        "originalAuthorPrintFacsimileLocated": true,
+        "originalAuthorPrintScanCatalogueUrl": "https://commons.wikimedia.org/wiki/File:AHS_YD_B4.djvu",
+        "originalRelevantPrintedPageVisuallyInspected": false,
+        "editedPublisherObservedOneWordDispute": true,
+        "rulingHebrew": "וההכרעה היא שהם שני תיבות",
+        "masorahVerseQuoted": "כי יד על כס יה",
+        "masorahCountsTwoLetterWords": 5,
+        "authorSaysWriteBothOnSameLine": true,
+        "oneWordTalmudViewAcknowledged": true,
+        "authorPhysicalAleppoCodexViewed": false,
+        "legalDecisionsAreAncientTextualCollations": false,
+        "fullYeivinBreuerCriticalPagesRead": false,
+        "photoRepublicationRightsApproved": false
+      }
     }
   ],
-  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716 | WAVE49_2026-11-11_OFER2003_YEIVIN82_AUTHOR_CROSSWALK_PSALM_ISAIAH_NOT_EXODUS"
+  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716 | WAVE49_2026-11-11_OFER2003_YEIVIN82_AUTHOR_CROSSWALK_PSALM_ISAIAH_NOT_EXODUS | WAVE50_2026-11-11_PESACHIM117A_TASHBETZ_I177_AHS_YD27524_HISTORICAL_DISPUTE_NOT_CODEX_AUTOPSY"
 }
