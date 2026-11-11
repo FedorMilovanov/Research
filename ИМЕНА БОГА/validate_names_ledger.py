@@ -450,6 +450,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-THEODORET-COMPENDIUM-V3-PG83-460-GREEK": "THEODORET_COMPENDIUM_V3_PG83_460_DIRECT_EDITED_GREEK_SHADDAI_GLOSS_AND_SAMARITAN_IABAI",
     "SRC-KINZIG-PATRISTIC-TETRAGRAM-2008-P226227": "KINZIG_2008_EARLY_CHRISTIAN_YHWH_TRANSMISSION_VARIANTS_QUAESTIONES_COMPENDIUM_CRITIQUE",
     "SRC-JTS-MS1154-L729-MEOROT-NATAN-1855-EX17-16-MICROFILM": "DIRECT_JTS_NINETEENTH_CENTURY_COPIED_QUESTION_REPLY_EX17_16_NO_ANCIENT_CODEX_SURVIVING_LEAF",
+    "SRC-OFER-TEXTUS21-2002-COMPOSITE-WORDS-MASORAH": "OFER_2002_COMPOSITE_WORDS_MASORAH_LIST_VERSUS_CODEX_TEXT_METHODOLOGY_NOT_EX17_16_PROOF",
 }
 
 
@@ -697,6 +698,49 @@ def validate_source_access(sources: dict) -> list[str]:
                     or p.get("productImageReuseApproved") is not False
                     or p.get("criticalApparatusYeivin82Breuer260261Read") is not False):
                 errors.append(f"{prefix}: JTS L729 direct historic copy Ex17:16 collation cannot be ancient codex, autograph, critical apparatus or rights approval")
+        if rid == "SRC-JTS-MS1154-L729-MEOROT-NATAN-1855-EX17-16-MICROFILM":
+            m = source.get("verifiedCroppedMarginalDetailWave48", {})
+            if (not isinstance(m, dict)
+                    or m.get("imageId") != "FL28558023"
+                    or m.get("sourceSha256") != "243a38b1b9201e3648bdd356558bcef7fa412fc98d5112fca177904153d17019"
+                    or m.get("sourceNativeImagePixelSize") != [4544, 6455]
+                    or m.get("cropNativePixelsXYXY") != [120, 4490, 1100, 5060]
+                    or m.get("imageManipulation") != "CONTRAST_ENHANCED_GRAYSCALE_CROP_FOR_READABILITY_ONLY"
+                    or m.get("originalUnmodifiedPhotoWasPreviouslyVisuallyRead") is not True
+                    or m.get("manuscriptQuestionRead") != "שתי מלות"
+                    or m.get("manuscriptAnswerOpeningRead") != "לא כן"
+                    or m.get("manuscriptMarginSafeExcerpt") != "אלא חדא מלה"
+                    or m.get("fullMarginDifficultHandReadingProven") is not False
+                    or m.get("samekhShevaTechnicalNoteAllGlyphsConfirmed") is not False
+                    or m.get("mappiqHeTechnicalNoteAllGlyphsConfirmed") is not False
+                    or m.get("printedZer1986ReadingSubstitutedForUnclearInk") is not False
+                    or m.get("historical1863NewspaperReadingSubstitutedForUnclearInk") is not False
+                    or m.get("ancientAleppoOriginalVerseViewed") is not False
+                    or m.get("secondaryAuthorEditionConflictsResolved") is not False):
+                errors.append(f"{prefix}: JTS L729 Wave48 narrow direct marginal reading must not inherit edited print or unverified shva/mappiq glyphs")
+        if rid == "SRC-OFER-TEXTUS21-2002-COMPOSITE-WORDS-MASORAH":
+            a = source.get("verifiedWave48", {})
+            if (source.get("year") != 2002 or source.get("doi") != "10.1163/2589255x-02101011"
+                    or source.get("accessState") != "PARTIAL_OBJECT"
+                    or source.get("locatorState") != "COARSE_LOCATOR_ONLY"
+                    or source.get("rightsState") != "PERMISSION_REQUIRED"
+                    or source.get("publicationState") != "BLOCKED"
+                    or source.get("criticalEditionCollated") is not False
+                    or set(source.get("holds", [])) != {"EVIDENCE_HOLD", "LOCATOR_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"}
+                    or not isinstance(a, dict)
+                    or a.get("journal") != "Textus" or a.get("volume") != 21 or a.get("issue") != 1
+                    or a.get("printPages") != "209–233"
+                    or a.get("doi") != "10.1163/2589255x-02101011"
+                    or a.get("publisherOrUniversityAbstractRead") is not True
+                    or a.get("publisherFirstTwoPagePreviewExtracted") is not True
+                    or a.get("originalFullArticleAllPagesRead") is not False
+                    or a.get("publisherPreviewScreenshotSucceeded") is not False
+                    or a.get("publisherAbstractSaysAtLeastFourDiscrepantCompositeWords") is not True
+                    or a.get("originalCompositeListMayHaveLaterScribeAsAuthorConjecture") is not True
+                    or a.get("exodus17_16AmongFourProven") is not False
+                    or a.get("independentAncientCodexPhotoInspected") is not False
+                    or a.get("rightsPermissionGranted") is not False):
+                errors.append(f"{prefix}: Ofer 2002 composite list abstract is not proof of Exodus17:16 example or full critical edition")
         if rid == "SRC-HALEVANON-18630611-ISSUE5-EX17-16-ORIGINAL":
             w = source.get("printedObjectVerificationWave42", {})
             if (source.get("year") != 1863 or source.get("url") != "https://www.nli.org.il/he/newspapers/hlb/1863/06/11/01/"
