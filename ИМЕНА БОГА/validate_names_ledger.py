@@ -609,11 +609,46 @@ def validate_source_access(sources: dict) -> list[str]:
                     or d.get("nliRecordId") != "NNL_ALEPH990001022670205171"
                     or d.get("nliCatalogAttributedCreator") != "Jacob Saphir (יעקב ספיר), 1822–1885"
                     or d.get("notNathanShapiraId") != "NNL_ALEPH990000621650205171"
-                    or d.get("nliRecordShelfmarkIndependentlyOpened") is not False
+                    or d.get("nliRecordShelfmarkIndependentlyOpened") is not True
                     or d.get("nliManuscriptImagesOpened") is not False
                     or d.get("exodus17_16HandwritingIndependentlyRead") is not False
                     or d.get("historicalNewspaperContentReadInDigitalScan") is not False):
                 errors.append(f"{prefix}: Sapir versus Shapira Maorot Nathan catalog and unearned original scan access")
+        if rid == "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137":
+            d = source.get("canonicalManuscriptCatalogueRoute20261110", {})
+            e = d.get("iiifDigitalRouteWave46", {}) if isinstance(d, dict) else {}
+            img_ids = ["FL28558008", "FL28558009", "FL28558014", "FL28558015",
+                       "FL28558018", "FL28558020", "FL28558023", "FL28558025",
+                       "FL28558027", "FL28558029", "FL28558031", "FL28558033", "FL28558035"]
+            if (not isinstance(d, dict) or not isinstance(e, dict)
+                    or d.get("nliCurrentOwnerShelfmark") != "The Jewish Theological Seminary of America, Ms. 1154"
+                    or d.get("nliLutzkiCatalogueShelfmark") != "L 729"
+                    or d.get("nliAdlerFormerOwnerShelfmark") != "Adler, Elkan Nathan Ms. 1632"
+                    or d.get("nliManuscriptPhysicalFoliosFromCatalog") != 8
+                    or d.get("nliManuscriptCatalogueYear") != 1855
+                    or d.get("nliShelfmarkCrosswalkStatus") != "DIRECT_CATALOGUE_HTML_VERIFIED_MS1154_EQUALS_LUTZKI_L729"
+                    or e.get("pageMetadataReadFromNliHtml") is not True
+                    or e.get("htmlViewerItemUrl") != "FL28558009"
+                    or e.get("nliIiifServiceUrl") != "https://iiif.nli.org.il/IIIFv21"
+                    or e.get("thumbnailSequencePageCountVisible") != 13
+                    or e.get("thumbnailImageIds") != img_ids
+                    or e.get("lastImageInfoJsonUrl") != "https://iiif.nli.org.il/IIIFv21/FL28558035/info.json"
+                    or e.get("lastImageInfoJsonHttpStatus") != 200
+                    or e.get("lastImageNativePixelWidth") != 4544
+                    or e.get("lastImageNativePixelHeight") != 3640
+                    or e.get("lastImageJpegExample") != "https://iiif.nli.org.il/IIIFv21/FL28558035/full/1136,/0/default.jpg"
+                    or e.get("exampleImageHttpStatus") != 200
+                    or e.get("documentManifestAttemptUrl") != "https://iiif.nli.org.il/IIIFv21/DOCID/NNL_ALEPH990001022670205171/manifest"
+                    or e.get("documentManifestHttpStatus") != 403
+                    or e.get("allThirteenFullImagesVisuallyInspected") is not False
+                    or e.get("manuscriptEntry137LocatedOnExactImage") is not False
+                    or e.get("exodus17_16ManuscriptLettersCollated") is not False
+                    or e.get("independentAncientAleppoCodexWitnessGained") is not False
+                    or e.get("nliCatalogueRightsStatement") != "PUBLIC_DOMAIN_ISRAEL_WITH_ATTRIBUTION_AND_JURISDICTION_CAVEAT"
+                    or e.get("iiifImageInfoRightsLink") != "http://web.nli.org.il/sites/NLI/Hebrew/library/items-terms-of-use/Pages/nli-copying-prohibited.aspx"
+                    or e.get("iiifRightsLinkConsistencyResolved") is not False
+                    or e.get("siteFacsimileRepublicationApproved") is not False):
+                errors.append(f"{prefix}: JTS Ms1154/Lutzki L729 IIIF metadata is not handwriting collation or publication approval")
         if rid == "SRC-HALEVANON-18630611-ISSUE5-EX17-16-ORIGINAL":
             w = source.get("printedObjectVerificationWave42", {})
             if (source.get("year") != 1863 or source.get("url") != "https://www.nli.org.il/he/newspapers/hlb/1863/06/11/01/"
