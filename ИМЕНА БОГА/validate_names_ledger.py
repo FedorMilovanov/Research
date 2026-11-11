@@ -449,6 +449,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-THEODORET-EXODUM-15-PG80-243-GREEK": "THEODORET_EXODUM_XV_PG80_243_DIRECT_DIGITAL_GREEK_PARTIAL_CUTOFF_BEFORE_JEWISH_NAME",
     "SRC-THEODORET-COMPENDIUM-V3-PG83-460-GREEK": "THEODORET_COMPENDIUM_V3_PG83_460_DIRECT_EDITED_GREEK_SHADDAI_GLOSS_AND_SAMARITAN_IABAI",
     "SRC-KINZIG-PATRISTIC-TETRAGRAM-2008-P226227": "KINZIG_2008_EARLY_CHRISTIAN_YHWH_TRANSMISSION_VARIANTS_QUAESTIONES_COMPENDIUM_CRITIQUE",
+    "SRC-JTS-MS1154-L729-MEOROT-NATAN-1855-EX17-16-MICROFILM": "DIRECT_JTS_NINETEENTH_CENTURY_COPIED_QUESTION_REPLY_EX17_16_NO_ANCIENT_CODEX_SURVIVING_LEAF",
 }
 
 
@@ -538,7 +539,9 @@ def validate_source_access(sources: dict) -> list[str]:
                     or w.get("itemPrintPage") != 165 or w.get("itemNumber") != 137 or w.get("notePrintPage") != 191
                     or w.get("part1ImagePageZeroBased") != 14 or w.get("part2ImagePageZeroBased") != 8
                     or w.get("originalPrintedPagesVisuallyViewed") is not True
-                    or w.get("jtsOriginalManuscriptViewed") is not False or w.get("saphirAutographViewed") is not False
+                    or w.get("jtsOriginalManuscriptViewed") is not True
+                    or w.get("jtsOriginalManuscriptImageScope") != "ONE_JTS_MS1154_1855_COPY_MICROFILM_FRAME_NOT_PHYSICAL_ITEM_OR_ANCIENT_CODEX"
+                    or w.get("saphirAutographViewed") is not False
                     or w.get("aleppoExodusFolioViewed") is not False or w.get("yeivinPage82Viewed") is not False
                     or w.get("breuerPages260261Viewed") is not False):
                 errors.append(f"{prefix}: Zer 1986 copied manuscript wrongly promoted to original Aleppo/Saphir/Yeivin/Breuer access")
@@ -610,8 +613,10 @@ def validate_source_access(sources: dict) -> list[str]:
                     or d.get("nliCatalogAttributedCreator") != "Jacob Saphir (יעקב ספיר), 1822–1885"
                     or d.get("notNathanShapiraId") != "NNL_ALEPH990000621650205171"
                     or d.get("nliRecordShelfmarkIndependentlyOpened") is not True
-                    or d.get("nliManuscriptImagesOpened") is not False
-                    or d.get("exodus17_16HandwritingIndependentlyRead") is not False
+                    or d.get("nliManuscriptImagesOpened") is not True
+                    or d.get("exodus17_16HandwritingIndependentlyRead") is not True
+                    or d.get("jtsPhysicalOriginalPersonallyHandled") is not False
+                    or d.get("nliVerseImageSourceIdWave47") != "SRC-JTS-MS1154-L729-MEOROT-NATAN-1855-EX17-16-MICROFILM"
                     or d.get("historicalNewspaperContentReadInDigitalScan") is not False):
                 errors.append(f"{prefix}: Sapir versus Shapira Maorot Nathan catalog and unearned original scan access")
         if rid == "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137":
@@ -649,6 +654,49 @@ def validate_source_access(sources: dict) -> list[str]:
                     or e.get("iiifRightsLinkConsistencyResolved") is not False
                     or e.get("siteFacsimileRepublicationApproved") is not False):
                 errors.append(f"{prefix}: JTS Ms1154/Lutzki L729 IIIF metadata is not handwriting collation or publication approval")
+        if rid == "SRC-JTS-MS1154-L729-MEOROT-NATAN-1855-EX17-16-MICROFILM":
+            p = source.get("verifiedOriginalCopyPhotoWave47", {})
+            if (source.get("year") != 1855
+                    or source.get("url") != "https://iiif.nli.org.il/IIIFv21/FL28558023/full/4544,/0/default.jpg"
+                    or source.get("catalogueUrl") != "https://www.nli.org.il/he/manuscripts/NNL_ALEPH990001022670205171/NLI"
+                    or source.get("evidenceClass") != "A2"
+                    or source.get("accessState") != "PARTIAL_OBJECT"
+                    or source.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+                    or source.get("rightsState") != "PERMISSION_REQUIRED"
+                    or source.get("publicationState") != "BLOCKED"
+                    or source.get("criticalEditionCollated") is not False
+                    or set(source.get("holds", [])) != {"EVIDENCE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"}
+                    or not isinstance(p, dict)
+                    or p.get("owningLibrary") != "The Jewish Theological Seminary of America"
+                    or p.get("physicalShelfmark") != "Ms. 1154"
+                    or p.get("lutzkiShelfmark") != "L 729"
+                    or p.get("formerAdlerShelfmark") != "Ms. 1632"
+                    or p.get("digitalCatalogueId") != "NNL_ALEPH990001022670205171"
+                    or p.get("iiifImageId") != "FL28558023"
+                    or p.get("iiifViewerFrameOneBased") != 7
+                    or p.get("iiifFullImageUrl") != "https://iiif.nli.org.il/IIIFv21/FL28558023/full/4544,/0/default.jpg"
+                    or p.get("imageWidthPx") != 4544 or p.get("imageHeightPx") != 6455
+                    or p.get("jpegBytes") != 1559912
+                    or p.get("sha256") != "243a38b1b9201e3648bdd356558bcef7fa412fc98d5112fca177904153d17019"
+                    or p.get("frameTargetRegion") != "LEFT_PAGE_LOWER_QUARTER_EXODUS_17_16_AFTER_17_14_ZAKHOR_BEFORE_YITRO"
+                    or p.get("pageLabelVisibleAtUpperLeft") != "4a"
+                    or p.get("exodus17_16VerseLabelVisible") is not True
+                    or p.get("keyWordGroups") != "כס יה"
+                    or p.get("questionHebrew") != "שתי מלות"
+                    or p.get("answerOpeningHebrew") != "לא כן"
+                    or p.get("answerMarginCoreHebrew") != "אלא חדא מלה"
+                    or p.get("completeMarginalPaleographyIndependentlyCollated") is not False
+                    or p.get("directlyInspectedOneMicrofilmImage") is not True
+                    or p.get("physicalManuscriptHandled") is not False
+                    or p.get("jtsManuscriptCopyOriginalPhotographed") is not True
+                    or p.get("saphirAutographProven") is not False
+                    or p.get("originalAleppoExodusFolioPhotographed") is not False
+                    or p.get("independentAncientWitnessCountAdded") != 0
+                    or p.get("publicDomainIsraelCatalogueClaimSeen") is not True
+                    or p.get("imageRightsInternationalVerified") is not False
+                    or p.get("productImageReuseApproved") is not False
+                    or p.get("criticalApparatusYeivin82Breuer260261Read") is not False):
+                errors.append(f"{prefix}: JTS L729 direct historic copy Ex17:16 collation cannot be ancient codex, autograph, critical apparatus or rights approval")
         if rid == "SRC-HALEVANON-18630611-ISSUE5-EX17-16-ORIGINAL":
             w = source.get("printedObjectVerificationWave42", {})
             if (source.get("year") != 1863 or source.get("url") != "https://www.nli.org.il/he/newspapers/hlb/1863/06/11/01/"
