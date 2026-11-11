@@ -8,6 +8,31 @@ D=Path(__file__).resolve().parent
 CH=D/"episode11_france_catholic_reform_nantes_1545_1599_manuscript.md"
 
 class FranceTrentNantesTests(unittest.TestCase):
+    def assert_source_inventory(self, registry):
+        """Old Nantes evidence persists when unrelated new historical witnesses
+        are added: never equate a wave-440 count with a frozen registry size."""
+        rows = registry["sources"]
+        self.assertEqual(registry["sourceCount"], len(rows))
+        self.assertGreaterEqual(registry["sourceCount"], 211)
+        ids = {r["id"] for r in rows}
+        self.assertEqual(len(ids), len(rows))
+        for required in (
+            "REF-P19", "REF-P20", "REF-P27", "REF-P29", "REF-P86",
+            "REF-P87", "REF-S101", "REF-S103", "REF-S106", "REF-S107",
+        ):
+            self.assertIn(required, ids)
+        self.assertTrue(all("PUBLICATION_HOLD" in r["holds"] for r in rows))
+
+    def assert_acquisition_inventory(self, manifest):
+        """Receipts grow only with actual acquisitions; none go missing."""
+        rows = manifest["sourceRecords"]
+        self.assertEqual(manifest["sourceCount"], len(rows))
+        self.assertGreaterEqual(manifest["sourceCount"], 16)
+        self.assertEqual(len({r["id"] for r in rows}), len(rows))
+        self.assertEqual(manifest["fileBytesInGit"], 0)
+        for required in ("REF-P87", "REF-P09-ZRH-67"):
+            self.assertIn(required, {r["id"] for r in rows})
+
     def test_chapter_exists_with_historical_sequence_and_holds(self):
         s=CH.read_text(encoding="utf-8")
         self.assertTrue(s.startswith("# Эпизод 11."))
@@ -84,7 +109,7 @@ class FranceTrentNantesTests(unittest.TestCase):
         self.assertIn("отдельная печать 1621", packet)
         # Bibliographic discovery does not promote a source ID or alter other evidence contracts.
         data = json.loads((D / "source-registry-v1.json").read_text(encoding="utf-8"))
-        self.assertEqual(data["sourceCount"], 211)
+        self.assert_source_inventory(data)
         bost = next(s for s in data["sources"] if s["id"] == "REF-S101")
         self.assertEqual(bost["evidenceClass"], "B1")
         self.assertEqual(bost["accessState"], "PARTIAL_OBJECT")
@@ -112,7 +137,7 @@ class FranceTrentNantesTests(unittest.TestCase):
             self.assertIn(marker, c302)
         self.assertIn("timeout", dossier)
         registry = json.loads((D / "source-registry-v1.json").read_text(encoding="utf-8"))
-        self.assertEqual(registry["sourceCount"], 211)
+        self.assert_source_inventory(registry)
         self.assertTrue(all("PUBLICATION_HOLD" in s["holds"] for s in registry["sources"]))
 
     def test_wave433_newberry_1622_is_distinct_primary_witness_not_original_1598(self):
@@ -123,9 +148,9 @@ class FranceTrentNantesTests(unittest.TestCase):
         packet = (D/"independent_review_packets.md").read_text(encoding="utf-8")
         registry = json.loads((D/"source-registry-v1.json").read_text(encoding="utf-8"))
         acquisitions = json.loads((D/"acquisition-manifest-v1.json").read_text(encoding="utf-8"))
-        self.assertEqual(registry["sourceCount"], 211)
-        self.assertEqual(len(registry["sources"]), 211)
-        self.assertEqual(acquisitions["sourceCount"], 16)
+        self.assert_source_inventory(registry)
+        self.assertEqual(len(registry["sources"]), registry["sourceCount"])
+        self.assert_acquisition_inventory(acquisitions)
         self.assertEqual(len(acquisitions["sourceRecords"]), 16)
         src = next(s for s in registry["sources"] if s["id"] == "REF-P87")
         acquired = next(s for s in acquisitions["sourceRecords"] if s["id"] == "REF-P87")
@@ -193,13 +218,13 @@ class FranceTrentNantesTests(unittest.TestCase):
         self.assertEqual(ref["evidenceClass"], "A1")
         self.assertEqual(ref["accessState"], "PARTIAL_OBJECT")
         self.assertIn("PUBLICATION_HOLD", ref["holds"])
-        self.assertEqual(registry["sourceCount"], 211)
-        self.assertEqual(acquired["sourceCount"], 16)
+        self.assert_source_inventory(registry)
+        self.assert_acquisition_inventory(acquired)
         self.assertEqual(acquired["fileBytesInGit"], 0)
 
     def test_wave436_rouen_courts_archive_and_hold(self):
         reg=json.loads((D/"source-registry-v1.json").read_text(encoding="utf-8"))
-        self.assertEqual(reg["sourceCount"],211)
+        self.assert_source_inventory(reg)
         rec=next(x for x in reg["sources"] if x["id"]=="REF-S103")
         self.assertEqual(rec["evidenceClass"],"B1")
         self.assertEqual(rec["accessState"],"PARTIAL_OBJECT")
@@ -231,8 +256,8 @@ class FranceTrentNantesTests(unittest.TestCase):
         claims=(D/"03_claim_verification_register.md").read_text(encoding="utf-8")
         c301=next(l for l in claims.splitlines() if l.startswith("| C301 |"))
         data=json.loads((D/"source-registry-v1.json").read_text(encoding="utf-8"))
-        self.assertEqual(data["sourceCount"],211)
-        self.assertEqual(len(data["sources"]),211)
+        self.assert_source_inventory(data)
+        self.assertEqual(len(data["sources"]), data["sourceCount"])
         self.assertIn("23 сентября 1599", narrative)
         self.assertIn("5 августа 1609", narrative)
         self.assertIn("1610", narrative)
@@ -256,8 +281,8 @@ class FranceTrentNantesTests(unittest.TestCase):
 
     def test_wave438_daireaux_2005_2015_contradiction_and_bpf_catalog_hold(self):
         registry=json.loads((D/"source-registry-v1.json").read_text(encoding="utf-8"))
-        self.assertEqual(registry["sourceCount"],211)
-        self.assertEqual(len(registry["sources"]),211)
+        self.assert_source_inventory(registry)
+        self.assertEqual(len(registry["sources"]), registry["sourceCount"])
         records={s["id"]:s for s in registry["sources"]}
         for ident in ("REF-S104","REF-S105"):
             self.assertEqual(records[ident]["evidenceClass"],"B1")
@@ -285,12 +310,12 @@ class FranceTrentNantesTests(unittest.TestCase):
         self.assertIn("ORIGINAL_F17_F22_NOT_READ",chapter)
         self.assertIn("DAIREAUX_2005_2015_PARTICULAR_REGISTRATION_TEXT_CONFLICT",plan)
         self.assertIn("PUBLICATION_HOLD",plan)
-        self.assertEqual(len([x for x in registry["sources"] if "PUBLICATION_HOLD" in x["holds"]]),211)
+        self.assertEqual(len([x for x in registry["sources"] if "PUBLICATION_HOLD" in x["holds"]]), registry["sourceCount"])
 
     def test_wave439_daireaux_2006_reconciles_2005_and_documents_enforcement(self):
         reg=json.loads((D/"source-registry-v1.json").read_text(encoding="utf-8"))
-        self.assertEqual(reg["sourceCount"],211)
-        self.assertEqual(len(reg["sources"]),211)
+        self.assert_source_inventory(reg)
+        self.assertEqual(len(reg["sources"]), reg["sourceCount"])
         src=next(x for x in reg["sources"] if x["id"]=="REF-S106")
         self.assertEqual(src["evidenceClass"],"B1")
         self.assertEqual(src["accessState"],"PARTIAL_OBJECT")
@@ -315,8 +340,8 @@ class FranceTrentNantesTests(unittest.TestCase):
 
     def test_wave440_aix_vs_paris_archive_provenance_and_one_photo(self):
         registry=json.loads((D/"source-registry-v1.json").read_text(encoding="utf-8"))
-        self.assertEqual(registry["sourceCount"],211)
-        self.assertEqual(len(registry["sources"]),211)
+        self.assert_source_inventory(registry)
+        self.assertEqual(len(registry["sources"]), registry["sourceCount"])
         source={x["id"]:x for x in registry["sources"]}
         original=source["REF-P29"]
         self.assertEqual(original["evidenceClass"],"A1")
