@@ -2322,6 +2322,34 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("source-inventory IDs changed" in e
                             for e in validate_source_access(changed)))
 
+    def test_wave54_ofer2002_author_text_vs_missing_ancient_folio(self) -> None:
+        sid = "SRC-OFER-TEXTUS21-2002-COMPOSITE-WORDS-MASORAH"
+        bad = (
+            ("pdfStatusCode", 403), ("pdfPages", 2),
+            ("wholeEnglishTextExtracted", False),
+            ("exodus17_16AuthorSingleWord", False),
+            ("exodus17_16SappirZerQ137Source", False),
+            ("exodus17_16CodexComparisonConcordant", False),
+            ("exodus17_16AmongDiscrepantFour", True),
+            ("hebrewTextExtractionReliable", True),
+            ("allPrintedPageFacsimilesInspected", True),
+            ("extantAleppoExodusFolioViewed", True),
+            ("yeivin82Breuer260261OriginalsRead", True),
+            ("rightsGranted", True), ("productApproved", True),
+        )
+        for field, wrong in bad:
+            with self.subTest(ofer_wave54_field=field):
+                data = copy.deepcopy(self.sources)
+                row = next(x for x in data["records"] if x["id"] == sid)
+                row["verifiedWave54"][field] = wrong
+                self.assertTrue(any("Ofer 2002 Wave54 direct English article" in e
+                                    for e in validate_source_access(data)))
+        data = copy.deepcopy(self.sources)
+        row = next(x for x in data["records"] if x["id"] == sid)
+        row["officialArchiveFullPdfUrl"] = "https://example.invalid/not-original"
+        self.assertTrue(any("Ofer 2002 Wave54 direct English article" in e
+                            for e in validate_source_access(data)))
+
     def test_ofer2003_yeivin82_secondary_locus_is_not_unread_primary_exodus(self) -> None:
         paper_id = "SRC-OFER-MEGADIM37-2003-YEIVIN82-COMPOSITE-WORDS"
         mutations = (

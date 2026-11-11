@@ -4160,7 +4160,7 @@
       "doi": "10.1163/2589255x-02101011",
       "url": "https://cris.biu.ac.il/en/publications/a-masoretic-note-in-the-aleppo-codex-concerning-the-composite-wor-2/",
       "publisherPreviewPdf": "https://brill.com/previewpdf/view/journals/text/21/1/article-p209_11.xml",
-      "objectType": "peer_reviewed_article_publisher_abstract_plus_first_two_page_preview_only",
+      "objectType": "peer_reviewed_article_official_full_pdf_english_text_extracted_hebrew_glyphs_not_collated",
       "sourceRole": "OFER_2002_COMPOSITE_WORDS_MASORAH_LIST_VERSUS_CODEX_TEXT_METHODOLOGY_NOT_EX17_16_PROOF",
       "evidenceClass": "B1",
       "accessState": "PARTIAL_OBJECT",
@@ -4174,9 +4174,9 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "sourceObjectState": "Official Bar-Ilan CRIS peer-reviewed publication registry verifies author, year, Textus 21(1) pp209-233, DOI, abstract. Brill publicly reachable PDF preview exposes original author's first two printed pages 209-210 via extraction, but screenshot service returned 403 and FULL pp211-233 NOT READ. Official abstract reports at least four composite-word forms where original Aleppo codex text and appended masoretic word list disagree, and speculates the masoretic notes may have been attached later. No evidence from inspected text assigns Exodus17:16 to any of those four cases or proves this reconstructed conflict at that verse. This paper is distinct from Ofer 2008 discussion of Exodus17:16 and from Ofer 1992 historic courier dispute. No rights granted for article images.",
-      "supportedUse": "Cite original peer-reviewed article publisher abstract as a general methodological caution: a masoretic composite-word list should not automatically be treated as identical to the physical word segmentation of the ancient Aleppo Codex. Specific 4-case enumeration or Exodus17:16 occurrence must await full article.",
-      "forbiddenUse": "Claim Exodus17:16 is one of Ofer2002 four discrepant examples, that article's full text or detailed tables were read, author concluded exact כס יה reading from our JTS photo, or that old codex leaf/rights/publisher approval exist.",
+      "sourceObjectState": "Wave54 2026-11-11: official Hebrew University Textus archive PDF (HTTP 200), 25/25 printed pages English author text extracted. In section Contradictions, note32, Ofer explicitly describes Exod 17:16 as single word in Aleppo Codex on basis of historic Ya'aqov Sappir via Zer1986 p165 q137. In section The Masorete of 1 and the Composite Words list(b), Exod17:16 is a single-word agreement between Codex and compared manuscript, not one of the discrepant cases. Hebrew characters in extracted PDF are not reliable, full page images not separately inspected, no ancient Exodus folio viewed, no rights or Product approval.",
+      "supportedUse": "Cite official full English text: Contradictions section n32 for author's one-word Ex17:16 based on Sappir/Zer q137 and Masorete of 1 section list(b) as concordant one-word example. Four-or-more discrepant masoretic-list cases are distinct and should not be transferred to Ex17:16. Keep published author inference distinct from ancient manuscript photo.",
+      "forbiddenUse": "Do not quote corrupted Hebrew OCR as verified; do not claim print page image collation, independent extant Aleppo folio, Yeivin82 or Breuer260–261 originally viewed; do not class Ex17:16 among four discrepant examples or promote rights/Product/publication.",
       "verifiedWave48": {
         "journal": "Textus",
         "volume": 21,
@@ -4192,6 +4192,24 @@
         "exodus17_16AmongFourProven": false,
         "independentAncientCodexPhotoInspected": false,
         "rightsPermissionGranted": false
+      },
+      "officialArchiveFullPdfUrl": "https://bibleproject.huji.ac.il/sites/default/files/he_bible_project/files/y._ofer.pdf",
+      "verifiedWave54": {
+        "officialIndexUrl": "https://bibleproject.huji.ac.il/textus",
+        "officialPdfUrl": "https://bibleproject.huji.ac.il/sites/default/files/he_bible_project/files/y._ofer.pdf",
+        "pdfStatusCode": 200,
+        "pdfPages": 25,
+        "wholeEnglishTextExtracted": true,
+        "exodus17_16AuthorSingleWord": true,
+        "exodus17_16SappirZerQ137Source": true,
+        "exodus17_16CodexComparisonConcordant": true,
+        "exodus17_16AmongDiscrepantFour": false,
+        "hebrewTextExtractionReliable": false,
+        "allPrintedPageFacsimilesInspected": false,
+        "extantAleppoExodusFolioViewed": false,
+        "yeivin82Breuer260261OriginalsRead": false,
+        "rightsGranted": false,
+        "productApproved": false
       }
     },
     {
@@ -4386,5 +4404,5 @@
       }
     }
   ],
-  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716 | WAVE49_2026-11-11_OFER2003_YEIVIN82_AUTHOR_CROSSWALK_PSALM_ISAIAH_NOT_EXODUS | WAVE50_2026-11-11_PESACHIM117A_TASHBETZ_I177_AHS_YD27524_HISTORICAL_DISPUTE_NOT_CODEX_AUTOPSY"
+  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716 | WAVE49_2026-11-11_OFER2003_YEIVIN82_AUTHOR_CROSSWALK_PSALM_ISAIAH_NOT_EXODUS | WAVE50_2026-11-11_PESACHIM117A_TASHBETZ_I177_AHS_YD27524_HISTORICAL_DISPUTE_NOT_CODEX_AUTOPSY | WAVE54_2026-11-11_HUJI_OFER2002_25P_ENGLISH_EX17_16_SINGLE_CONCORDANT_NOT_DISCREPANT_HOLDS"
 }

@@ -834,6 +834,24 @@ def validate_source_access(sources: dict) -> list[str]:
                     or a.get("independentAncientCodexPhotoInspected") is not False
                     or a.get("rightsPermissionGranted") is not False):
                 errors.append(f"{prefix}: Ofer 2002 composite list abstract is not proof of Exodus17:16 example or full critical edition")
+            w54=source.get("verifiedWave54", {})
+            if (not isinstance(w54,dict)
+                    or source.get("officialArchiveFullPdfUrl") != "https://bibleproject.huji.ac.il/sites/default/files/he_bible_project/files/y._ofer.pdf"
+                    or w54.get("officialIndexUrl") != "https://bibleproject.huji.ac.il/textus"
+                    or w54.get("officialPdfUrl") != source.get("officialArchiveFullPdfUrl")
+                    or w54.get("pdfStatusCode") != 200 or w54.get("pdfPages") != 25
+                    or w54.get("wholeEnglishTextExtracted") is not True
+                    or w54.get("exodus17_16AuthorSingleWord") is not True
+                    or w54.get("exodus17_16SappirZerQ137Source") is not True
+                    or w54.get("exodus17_16CodexComparisonConcordant") is not True
+                    or w54.get("exodus17_16AmongDiscrepantFour") is not False
+                    or w54.get("hebrewTextExtractionReliable") is not False
+                    or w54.get("allPrintedPageFacsimilesInspected") is not False
+                    or w54.get("extantAleppoExodusFolioViewed") is not False
+                    or w54.get("yeivin82Breuer260261OriginalsRead") is not False
+                    or w54.get("rightsGranted") is not False
+                    or w54.get("productApproved") is not False):
+                errors.append(f"{prefix}: Ofer 2002 Wave54 direct English article must not certify Hebrew facsimile or ancient leaf")
         if rid == "SRC-OFER-MEGADIM37-2003-YEIVIN82-COMPOSITE-WORDS":
             e = source.get("verifiedWave49", {})
             if (source.get("year") != 2003
