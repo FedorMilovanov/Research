@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 110,
+    "sourceRecords": 111,
     "approvedForProduct": 0
   },
   "records": [
@@ -4122,8 +4122,78 @@
         "imageRightsInternationalVerified": false,
         "productImageReuseApproved": false,
         "criticalApparatusYeivin82Breuer260261Read": false
+      },
+      "verifiedCroppedMarginalDetailWave48": {
+        "imageId": "FL28558023",
+        "sourceSha256": "243a38b1b9201e3648bdd356558bcef7fa412fc98d5112fca177904153d17019",
+        "sourceNativeImagePixelSize": [
+          4544,
+          6455
+        ],
+        "cropNativePixelsXYXY": [
+          120,
+          4490,
+          1100,
+          5060
+        ],
+        "imageManipulation": "CONTRAST_ENHANCED_GRAYSCALE_CROP_FOR_READABILITY_ONLY",
+        "originalUnmodifiedPhotoWasPreviouslyVisuallyRead": true,
+        "targetLocation": "Exodus 17:16 in bottom of left leaf visible in frame 7",
+        "manuscriptQuestionRead": "שתי מלות",
+        "manuscriptAnswerOpeningRead": "לא כן",
+        "manuscriptMarginSafeExcerpt": "אלא חדא מלה",
+        "fullMarginDifficultHandReadingProven": false,
+        "samekhShevaTechnicalNoteAllGlyphsConfirmed": false,
+        "mappiqHeTechnicalNoteAllGlyphsConfirmed": false,
+        "printedZer1986ReadingSubstitutedForUnclearInk": false,
+        "historical1863NewspaperReadingSubstitutedForUnclearInk": false,
+        "ancientAleppoOriginalVerseViewed": false,
+        "secondaryAuthorEditionConflictsResolved": false,
+        "note": "Crop enlarges a portion of an already visually viewed photograph, not new ancient evidence; distinguish legible three minimal phrases from uncertain further technical comments on shva/mappiq and additional references. Do not certify full marginal palaeography."
+      }
+    },
+    {
+      "id": "SRC-OFER-TEXTUS21-2002-COMPOSITE-WORDS-MASORAH",
+      "title": "Yosef Ofer, A Masoretic Note in the Aleppo Codex Concerning the Composite Words (Textus 21:1, 2002, 209–233)",
+      "creator": "Yosef Ofer",
+      "year": 2002,
+      "doi": "10.1163/2589255x-02101011",
+      "url": "https://cris.biu.ac.il/en/publications/a-masoretic-note-in-the-aleppo-codex-concerning-the-composite-wor-2/",
+      "publisherPreviewPdf": "https://brill.com/previewpdf/view/journals/text/21/1/article-p209_11.xml",
+      "objectType": "peer_reviewed_article_publisher_abstract_plus_first_two_page_preview_only",
+      "sourceRole": "OFER_2002_COMPOSITE_WORDS_MASORAH_LIST_VERSUS_CODEX_TEXT_METHODOLOGY_NOT_EX17_16_PROOF",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "sourceObjectState": "Official Bar-Ilan CRIS peer-reviewed publication registry verifies author, year, Textus 21(1) pp209-233, DOI, abstract. Brill publicly reachable PDF preview exposes original author's first two printed pages 209-210 via extraction, but screenshot service returned 403 and FULL pp211-233 NOT READ. Official abstract reports at least four composite-word forms where original Aleppo codex text and appended masoretic word list disagree, and speculates the masoretic notes may have been attached later. No evidence from inspected text assigns Exodus17:16 to any of those four cases or proves this reconstructed conflict at that verse. This paper is distinct from Ofer 2008 discussion of Exodus17:16 and from Ofer 1992 historic courier dispute. No rights granted for article images.",
+      "supportedUse": "Cite original peer-reviewed article publisher abstract as a general methodological caution: a masoretic composite-word list should not automatically be treated as identical to the physical word segmentation of the ancient Aleppo Codex. Specific 4-case enumeration or Exodus17:16 occurrence must await full article.",
+      "forbiddenUse": "Claim Exodus17:16 is one of Ofer2002 four discrepant examples, that article's full text or detailed tables were read, author concluded exact כס יה reading from our JTS photo, or that old codex leaf/rights/publisher approval exist.",
+      "verifiedWave48": {
+        "journal": "Textus",
+        "volume": 21,
+        "issue": 1,
+        "printPages": "209–233",
+        "doi": "10.1163/2589255x-02101011",
+        "publisherOrUniversityAbstractRead": true,
+        "publisherFirstTwoPagePreviewExtracted": true,
+        "originalFullArticleAllPagesRead": false,
+        "publisherPreviewScreenshotSucceeded": false,
+        "publisherAbstractSaysAtLeastFourDiscrepantCompositeWords": true,
+        "originalCompositeListMayHaveLaterScribeAsAuthorConjecture": true,
+        "exodus17_16AmongFourProven": false,
+        "independentAncientCodexPhotoInspected": false,
+        "rightsPermissionGranted": false
       }
     }
   ],
-  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO"
+  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716"
 }
