@@ -361,7 +361,7 @@ class JustificationBookTests(unittest.TestCase):
             "ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD",
         })
         for token in (
-            "APOLOGIA", "notitia historiae", "manifest 294469 bytes",
+            "APOLOGIA", "noticiam historiae", "manifest 294469 bytes",
             "DIRECTLY VISUALLY READ", "NO new acquisition manifest receipt",
         ):
             self.assertIn(token, p91["verificationNote"])
