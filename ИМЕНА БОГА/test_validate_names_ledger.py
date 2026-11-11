@@ -2576,5 +2576,27 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         s["authorAccessAndClaimsWave36"]["literalSaphirTranscriptionIncludesSurnameBerlin"] = True
         self.assertTrue(any("interpolate later surname Berlin" in e for e in validate_source_access(changed)))
 
+    def test_ofer2016_fragment_ex8_cannot_certify_ex17_or_rights(self) -> None:
+        source_id = "SRC-OFER-TEXTUS26-2016-ALEPPO-EX8-FRAGMENT"
+        keyset = (
+            ("doesNotTestExodus17_16", False),
+            ("originalPhysicalFragmentHandledByUs", True),
+            ("originalHebrewInkFullyIndependentGlyphCollation", True),
+            ("meorotNatanFirstQuestionEx8_7FrogNameFullyResolved", True),
+            ("yeivin1968Page17QuotedByOferNotYeivinPage82", False),
+            ("brillImagesMayBeRepublished", True),
+            ("remoteDesktopAttemptWasPdf", True),
+            ("localPdfBytesClaimed", 581),
+        )
+        for field, invalid in keyset:
+            with self.subTest(field=field):
+                changed = copy.deepcopy(self.sources)
+                rec = next(x for x in changed["records"] if x["id"] == source_id)
+                rec["verifiedSelectedPages20261112"][field] = invalid
+                self.assertTrue(any("Ofer2016 Exodus8 surviving fragment" in e
+                                    for e in validate_source_access(changed)))
+        self.assertEqual([], validate_source_access(self.sources))
+
+
 if __name__ == "__main__":
     unittest.main()
