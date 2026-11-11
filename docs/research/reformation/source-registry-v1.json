@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 205,
+  "sourceCount": 206,
   "sources": [
     {
       "id": "REF-P01",
@@ -3965,6 +3965,25 @@
       "title": "Michaël Desprez, L’Édit de Nantes et sa Révocation ou comment envisager la tolérance religieuse au temps de l’intolérance (1598–1685), Revue d’études françaises de Sophia 50 (2015), pp.71–100",
       "url": "https://sophia.repo.nii.ac.jp/record/2006385/files/200000020567_000125000_71.pdf",
       "verificationNote": "2026-11-08 directly checked indexed page snippets p78 n7 and p80 n9 plus independently verified bibliographic record at CiNii (https://cir.nii.ac.jp/crid/1520290885041312768). Desprez p78 n7 identifies Geneva Châtellerault notary copy 22 May 1599, conflicting with BGE institutional 29 May 1599 (COPY_DATE_CONFLICT_22_29_MAY_1599) pending manuscript verification. P80 expressly says signature '30 avril 1598 (et non le 13)' — NOT evidence of author 13/30 confusion; instead distinguish traditional 13 date versus 30 signature as per REF-S101. P80 also says presentation to Paris registration in November **1599**, incompatible if same Paris registration occurred 25 Feb 1599 in REF-P27. Treat as DESPREZ_NOVEMBER_1599_CONTEXT_HOLD, likely chronological textual error but no claimed erratum without full page and editorial consultation. Further material p80–81 on victims' redress cited in prior research but full PDF not downloaded in this turn; treat interpretation as B1 secondary, LOCAL_EXECUTION_HOLD. This partial indexed PDF inspection is NOT entire object nor primary manuscript collation."
+    },
+    {
+      "id": "REF-S103",
+      "documentYear": 2015,
+      "title": "Luc Daireaux, Le parlement de Normandie et l’édit de Nantes : une bataille de dix ans (1599–1610), Annales de Bretagne et des Pays de l’Ouest, 122-3 (2015), pp. 77–87, DOI 10.4000/abpo.3115",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://journals.openedition.org/abpo/pdf/3115",
+      "verificationNote": "Wave436 2026-11-11: Daireaux 2015, printed pp79-82 and nn16,20,32,33, scholarly text checked; Rouen 23 Sep 1599 Parliament registration of general edict (Seine-Maritime 1B 5414 f520) but refused to register 56 particular articles (1B 110 f96v); separate Cour des aides Mémoriaux 3B 14 ff150-160 contains transcript of 56 particular articles. Later Rouen 5 Aug 1609 ruling 1B 801; Rouen 1610 Martin Le Megissier print with 27 Aug 1610 Parlement ruling, BPF in-8 12494. These PRIMARY judicial leaves and 1610 print images NOT personally collated. 1599 Paris particulars unresolved; Cour des aides transcription does not equal Parlement registration. SECONDARY_SCHOLARLY_TEXT_CHECKED / ROUEN_PARLEMENT_1599_GENERAL_ONLY / COUR_DES_AIDES_TRANSCRIPTION_NOT_PARLEMENT_REGISTRATION / ROUEN_1609_1610_REGISTER_DIRECT_CHECK_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD.",
+      "checkedAt": "2026-11-11"
     }
   ]
 }
