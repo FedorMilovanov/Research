@@ -2174,6 +2174,45 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                 self.assertTrue(any("Sapir versus Shapira Maorot Nathan catalog" in e
                                     for e in validate_source_access(changed)))
 
+    def test_jts_l729_verified_catalogue_is_not_verified_handwriting_or_photo_rights(self) -> None:
+        catalog_mutations = (
+            ("nliRecordShelfmarkIndependentlyOpened", False),
+            ("nliCurrentOwnerShelfmark", "The Jewish Theological Seminary of America, Ms. 1155"),
+            ("nliLutzkiCatalogueShelfmark", "L 728"),
+            ("nliManuscriptPhysicalFoliosFromCatalog", 13),
+            ("nliShelfmarkCrosswalkStatus", "DIRECT_FOLIO_COLLATION"),
+        )
+        for field, wrong in catalog_mutations:
+            with self.subTest(catalog_field=field):
+                changed = copy.deepcopy(self.sources)
+                rec = next(x for x in changed["records"]
+                           if x["id"] == "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137")
+                rec["canonicalManuscriptCatalogueRoute20261110"][field] = wrong
+                result = validate_source_access(changed)
+                self.assertTrue(any(("Sapir versus Shapira Maorot Nathan catalog" in e
+                                     or "JTS Ms1154/Lutzki L729 IIIF metadata" in e)
+                                    for e in result))
+        iiif_mutations = (
+            ("thumbnailSequencePageCountVisible", 16),
+            ("thumbnailImageIds", ["FL28558008"]),
+            ("lastImageNativePixelWidth", 1136),
+            ("documentManifestHttpStatus", 200),
+            ("allThirteenFullImagesVisuallyInspected", True),
+            ("manuscriptEntry137LocatedOnExactImage", True),
+            ("exodus17_16ManuscriptLettersCollated", True),
+            ("independentAncientAleppoCodexWitnessGained", True),
+            ("iiifRightsLinkConsistencyResolved", True),
+            ("siteFacsimileRepublicationApproved", True),
+        )
+        for field, wrong in iiif_mutations:
+            with self.subTest(iiif_field=field):
+                changed = copy.deepcopy(self.sources)
+                rec = next(x for x in changed["records"]
+                           if x["id"] == "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137")
+                rec["canonicalManuscriptCatalogueRoute20261110"]["iiifDigitalRouteWave46"][field] = wrong
+                self.assertTrue(any("JTS Ms1154/Lutzki L729 IIIF metadata" in e
+                                    for e in validate_source_access(changed)))
+
     def test_1857_menashe_respondent_not_moshe_or_unread_1977_original(self) -> None:
         for rid,fieldGroup,key,wrong in (
             ("SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137","respondentIdentityWave34","respondentHebrew","משה סיתהון"),
