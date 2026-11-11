@@ -151,7 +151,16 @@ class FranceTrentNantesTests(unittest.TestCase):
         self.assert_source_inventory(registry)
         self.assertEqual(len(registry["sources"]), registry["sourceCount"])
         self.assert_acquisition_inventory(acquisitions)
-        self.assertEqual(len(acquisitions["sourceRecords"]), 16)
+        # Historical wave433 recorded sixteen receipts; later directly verified
+        # sources add further receipts without weakening Newberry's exact hash
+        # and scan-page invariants asserted below.
+        self.assertEqual(
+            len(acquisitions["sourceRecords"]), acquisitions["sourceCount"]
+        )
+        self.assertGreaterEqual(acquisitions["sourceCount"], 16)
+        self.assertIn(
+            "REF-P89", {r["id"] for r in acquisitions["sourceRecords"]}
+        )
         src = next(s for s in registry["sources"] if s["id"] == "REF-P87")
         acquired = next(s for s in acquisitions["sourceRecords"] if s["id"] == "REF-P87")
         self.assertEqual(src["documentYear"], 1622)
