@@ -336,6 +336,7 @@ class JustificationBookTests(unittest.TestCase):
             "REF-P91", "bsb11411960", "VD16 C4734",
             "цифровой кадр 24", "кадр 25", "кадр 26",
             "QVID SIT FIDES IVSTIFICANS",
+            "noticiam historiae",
             "assentiri promissioni Dei",
             "non operibus, sed sola fide",
             "отдельного латинского первоисточника",
