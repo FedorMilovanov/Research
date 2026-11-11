@@ -2364,6 +2364,94 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("source-inventory IDs changed" in e
                             for e in validate_source_access(data)))
 
+    def test_wave50_pesachim117a_rabbah_and_compound_word_division_not_codex(self) -> None:
+        rid = "SRC-PESACHIM117A-COMPOSITE-KESYAH-AMORAIC-EDITED-DIGITAL"
+        for field, wrong in (
+            ("talmudPage", "Pesachim 116a"),
+            ("rabbiYohananThroughRavChisdaOneWordList", ["הללויה", "ידידיה"]),
+            ("ravOneWordList", ["מרחביה"]),
+            ("rabbahOneWordList", ["כסיה", "מרחביה"]),
+            ("rabbahEditedOrthography", "רבא"),
+            ("rashbatzCitationLastSpeakerOrthography", "רבה"),
+            ("thisRabbaRavaDifferenceResolved", True),
+            ("physicalOrPhotographicTalmudManuscriptViewed", True),
+            ("originalAleppoCodexFolioSeen", True),
+            ("criticalYeivinBreuerPagesRead", True),
+            ("permissionToRepublishTranscriptApproved", True),
+        ):
+            with self.subTest(edited_talmud_field=field):
+                data = copy.deepcopy(self.sources)
+                item = next(x for x in data["records"] if x["id"] == rid)
+                item["verifiedWave50"][field] = wrong
+                self.assertTrue(any("Wave50 historical Kesyah source" in e
+                                    for e in validate_source_access(data)))
+        changed = copy.deepcopy(self.sources)
+        changed["records"] = [x for x in changed["records"] if x["id"] != rid]
+        self.assertTrue(any("source-inventory IDs changed" in e for e in validate_source_access(changed)))
+
+    def test_wave50_tashbetz_medieval_author_scroll_not_aleppo_witness(self) -> None:
+        rid = "SRC-RASHBATZ-TASHBETZ-I177-KESYAH-RESPONSUM"
+        for field, wrong in (
+            ("responsumPart", 2),
+            ("responsumNumber", 176),
+            ("first1738PrintFolioViewed", True),
+            ("second1741PrintFolioViewed", True),
+            ("any15thCenturyAutographViewed", True),
+            ("authorSawSomeTorahScroll", False),
+            ("authorSawAleppoCodex", True),
+            ("torahScrollSeparatelyLineWrittenHebrew", "כסיה מלה אחת"),
+            ("countOfTwoLetterWordsInFirstMasorahList", 5),
+            ("countOfTwoLetterWordsInRivalList", 6),
+            ("masoreticListConflictUnresolved", False),
+            ("alternativeMasorahStatus", "שתי תיבות בלבד"),
+            ("samekhShevaProvesWordUnity", True),
+            ("samekhShevaAnalogy", "כסיה"),
+            ("originalJTS1855CopyWitnessIndependence", "SAME_PHYSICAL_CODEX"),
+            ("criticalTalmudNameVariantResolved", True),
+            ("originalAleppoCodexPhotoViewed", True),
+            ("originalYeivinBreuerCriticalPagesRead", True),
+        ):
+            with self.subTest(edited_responsum_field=field):
+                data = copy.deepcopy(self.sources)
+                item = next(x for x in data["records"] if x["id"] == rid)
+                item["verifiedWave50"][field] = wrong
+                self.assertTrue(any("Wave50 historical Kesyah source" in e
+                                    for e in validate_source_access(data)))
+
+    def test_wave50_aruch_hashulchan_two_word_ruling_not_primary_codex_photo(self) -> None:
+        rid = "SRC-ARUCH-HASHULCHAN-YD27524-KESYAH-TWO-WORD-DECISION"
+        for field, wrong in (
+            ("section", "Yoreh Deah 274:24"),
+            ("editedHebrewFullSectionViewed", False),
+            ("originalAuthorPrintFacsimileLocated", False),
+            ("originalRelevantPrintedPageVisuallyInspected", True),
+            ("rulingHebrew", "וההכרעה היא שהם תיבה אחת"),
+            ("masorahVerseQuoted", "כי יד על כסיה"),
+            ("masorahCountsTwoLetterWords", 6),
+            ("authorSaysWriteBothOnSameLine", False),
+            ("oneWordTalmudViewAcknowledged", False),
+            ("authorPhysicalAleppoCodexViewed", True),
+            ("legalDecisionsAreAncientTextualCollations", True),
+            ("fullYeivinBreuerCriticalPagesRead", True),
+            ("photoRepublicationRightsApproved", True),
+        ):
+            with self.subTest(edited_halakha_field=field):
+                data = copy.deepcopy(self.sources)
+                item = next(x for x in data["records"] if x["id"] == rid)
+                item["verifiedWave50"][field] = wrong
+                self.assertTrue(any("Wave50 historical Kesyah source" in e
+                                    for e in validate_source_access(data)))
+        for field, wrong in (("accessState", "FULL_OBJECT_VERIFIED"),
+                             ("rightsState", "PUBLICATION_ELIGIBLE"),
+                             ("publicationState", "PROMOTE"),
+                             ("criticalEditionCollated", True)):
+            with self.subTest(source_field=field):
+                data = copy.deepcopy(self.sources)
+                item = next(x for x in data["records"] if x["id"] == rid)
+                item[field] = wrong
+                self.assertTrue(any("Wave50 historical Kesyah source" in e
+                                    for e in validate_source_access(data)))
+
     def test_1857_menashe_respondent_not_moshe_or_unread_1977_original(self) -> None:
         for rid,fieldGroup,key,wrong in (
             ("SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137","respondentIdentityWave34","respondentHebrew","משה סיתהון"),
