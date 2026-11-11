@@ -13,10 +13,10 @@
     "extensionRecords": 13,
     "contextAttestations": 105,
     "sourceRegisterEntries": 109,
-    "regressionTests": 301,
+    "regressionTests": 302,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_9E93F215_EXACT_6_SUCCESS_NEW_WAVE44_SHA_PENDING",
+    "allSixCiChecks": "PRIOR_4904A13BAAD432991FBF2E7125B9C1D520A0B8DE_EXACT_6_SUCCESS_NEW_WAVE46_SHA_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "9e93f215fc560f54b014f3d9920d30e9b43b0fed"
+    "lastConfirmedAllSixChecksSha": "4904a13baad432991fbf2e7125b9c1d520a0b8de"
   },
   "allowedStatuses": [
     "DONE",
@@ -339,7 +339,8 @@
         "23_YIREH_NISSI_ANSWER_PLACE_MOUNTAIN_EDITION_CRUX_20261107.md § Wave35 Goshen-Gottstein 1962 and Zer 1986 unresolved authorship",
         "SRC-SAPIR-EVEN-SAPIR-1866-CH6-PRIMARY-AUTHOR",
         "23_YIREH_NISSI_ANSWER_PLACE_MOUNTAIN_EDITION_CRUX_20261107.md § Wave36 Saphir direct author statement in 1989 digital transcription",
-        "Wave42 historical PRINT: source SRC-HALEVANON-18630611-ISSUE5-EX17-16-ORIGINAL and dossier23; 11 June 1863 issue 5 print p32 reads כס יה חדא מלה, direct source printed evidence, NOT extant Aleppo codex photograph, not JTS729 autograph, not manuscript critical apparatus. NG04 stays BLOCKED_SOURCE."
+        "Wave42 historical PRINT: source SRC-HALEVANON-18630611-ISSUE5-EX17-16-ORIGINAL and dossier23; 11 June 1863 issue 5 print p32 reads כס יה חדא מלה, direct source printed evidence, NOT extant Aleppo codex photograph, not JTS729 autograph, not manuscript critical apparatus. NG04 stays BLOCKED_SOURCE.",
+        "Wave46: official NLI manuscript NNL_ALEPH990001022670205171 verified: JTS Ms.1154 = catalogue Lutzki L729, 8 folios, 13 on-page IIIF image IDs; last-image info.json/JPEG HTTP 200, document manifest 403; manuscript text not inspected, rights gate unchanged."
       ],
       "verification": "NOT_APPLICABLE_UNTIL_DONE",
       "closureAt": null,
@@ -756,7 +757,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "WAVE43 2026-11-11: Original Ha-Levanon 11 June 1863 issue5 print pp25-32 now read; Ex17:16 historical note says חדא מלה (one word), while printed glyph spacing alone cannot establish ancient codex word division. 108 distinct source objects, 300 core regressions, 105 attestations, 87 provisional claims; 0 ancient manuscript critical photo collations, 0 independent scholarly/Product/rights approvals. NG-04 BLOCKED_SOURCE: next seek JTS L729 original images, Yeivin p82, Breuer 1976/77 pp260-261, BHS/Göttingen apparatus without inventing unpublished BHQ Exodus; NG-05 OPEN. NG-14 IN_PROGRESS after confirmed AuditRepo PR538 original four Arena ZIP + provenance; BA-01..BA-12 runtime acceptance still open. Prior exact Research 9e93f215fc560f54b014f3d9920d30e9b43b0fed CI 6/6 SUCCESS; this documentation SHA requires new terminal checks. No site/Product writes or new PR/branches.",
+  "nextAction": "WAVE46 2026-11-11: JTS Ms.1154 = Lutzki L729 verified by official catalogue; digital IIIF image IDs and accessible image endpoints found but Exodus 17:16 manuscript text remains uncollated. Next: obtain and visibly inspect actual manuscript scan for Zer1986 item #137; verify exact leaf, questions/answers and publication rights, plus Yeivin print p82 and Breuer pp260–261 n1. NG-04 BLOCKED_SOURCE, scholarly/Product/rights HOLD. Arena NG-14 IN_PROGRESS; no main/site publication. 109 source objects / 302 main tests / 105 attestations / 87 provisional claims.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -838,8 +839,9 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-11",
-    "planStatus": "WAVE44: original independent Yosef Ofer1992 p315 note76 distinguishes Yaakov Zeev courier from Yaakov Berlin and rejects conflation despite Zer1986 p151 combined name and dependent 2023 cite. Original newspaper 1863 Keter Torah unsigned, Yehiel Brill conjecture not verified. Direct historical newspaper p32 'כס יה חדא מלה'; Zer1986 p165 item137 question 'שתי מלות' answer 'לא כן אלא חדא מלה': same result, non-identical phrasing. Scholar print source 109, mutation tests 301, 105 attestations 87 claims, zero ancient Aleppo/JTS photo collation, peer/Product/rights approvals. Concurrent Arena source NG14 IN_PROGRESS unchanged; NG04 BLOCKED_SOURCE unchanged. Exact new SHA CI pending.",
+    "planStatus": "WAVE46: NLI direct HTML Ms.1154 = Lutzki L729 confirmed; 1855, eight manuscript folios, former Adler Ms.1632. 13 IIIF viewer image IDs and individual image info/JPEG routes established (HTTP 200), full document manifest 403; manuscript ink/images NOT personally collated and #137 location NOT determined. 109 sources, 302 main regression tests, 105 attestations, 87 claims; no ancient Aleppo photo collation/peer/Product/rights approvals; NG04 BLOCKED_SOURCE; NG14 IN_PROGRESS. Last verified 6/6 SHA 4904a13b; latest Wave46 SHA needs independent exact-head CI.",
     "workCompleted": [
+      "Wave46: verified exact JTS current shelfmark Ms.1154 = Lutzki L729 from NLI catalogue; preserved 13 page-image IDs and HTTP access limitations without claiming Hebrew handwriting review; guarded negatives with one new core test.",
       "Wave44: corrected earlier Wave37 courier fullname conflation using original independent Ofer1992 print p315 n75-77 and p352 bibliography; historical newspaper unsigned, Yehiel Brill only conjectural. Original 1863 print vs Zer1986 report same one-word verdict, not verbatim; new distinct academic source and anti-mutation test (109 source IDs / 301 core tests). Preserved parallel NG14 Arena IN_PROGRESS.",
       "Wave43 coordination: verified AuditRepo PR538 source/immutable original Arena ZIP archival provenance; NG-14 moved BLOCKED_ARTIFACT -> IN_PROGRESS, not DONE (12 BA runtime witnesses still require acceptance). Wave42 primary print evidence appended to NG-04 but critical apparatus/codex HOLD kept.",
       "Wave42: original newspaper printed p32 Ex17:16 one-word report independently verified; new original-1863 newspaper bibliographic source separate from Penkower; source/test baseline 108/300 and negative no-ancient-codex/rights regression.",
