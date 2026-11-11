@@ -452,6 +452,9 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-JTS-MS1154-L729-MEOROT-NATAN-1855-EX17-16-MICROFILM": "DIRECT_JTS_NINETEENTH_CENTURY_COPIED_QUESTION_REPLY_EX17_16_NO_ANCIENT_CODEX_SURVIVING_LEAF",
     "SRC-OFER-TEXTUS21-2002-COMPOSITE-WORDS-MASORAH": "OFER_2002_COMPOSITE_WORDS_MASORAH_LIST_VERSUS_CODEX_TEXT_METHODOLOGY_NOT_EX17_16_PROOF",
     "SRC-OFER-MEGADIM37-2003-YEIVIN82-COMPOSITE-WORDS": "OFER2003_AUTHOR_DIRECT_CITES_YEIVIN_PRINT82_FOR_PS90_ISA54_WORD_DIVISION_NOT_EX17_PROOF",
+    "SRC-PESACHIM117A-COMPOSITE-KESYAH-AMORAIC-EDITED-DIGITAL": "TALMUD_PESACHIM117A_ATTRIBUTED_AMORAIC_ONE_WORD_AND_TWO_WORD_OPINIONS_NOT_ANCIENT_ALEPPO_PHOTO",
+    "SRC-RASHBATZ-TASHBETZ-I177-KESYAH-RESPONSUM": "RASHBATZ_TASHBETZ_I177_DIRECT_HISTORICAL_AUTHOR_TESTIMONY_NON_ALEPPO_SCROLL_AND_CONFLICTING_MASORETIC_LISTS",
+    "SRC-ARUCH-HASHULCHAN-YD27524-KESYAH-TWO-WORD-DECISION": "ARUCH_HASHULCHAN_YD27524_EXPLICIT_TWO_WORD_HALAKHIC_RULING_USING_FIVE_WORD_MASORAH_LIST",
 }
 
 
@@ -533,6 +536,92 @@ def validate_source_access(sources: dict) -> list[str]:
             errors.append(f"{prefix}: unreviewed source id {rid}")
         if source.get("sourceRole") != EXPECTED_SOURCE_ROLES.get(rid):
             errors.append(f"{prefix}: source relevance/role changed without research review")
+        wave50_evidence_locks = {
+            "SRC-PESACHIM117A-COMPOSITE-KESYAH-AMORAIC-EDITED-DIGITAL": {
+                "year": None,
+                "sourceRole": "TALMUD_PESACHIM117A_ATTRIBUTED_AMORAIC_ONE_WORD_AND_TWO_WORD_OPINIONS_NOT_ANCIENT_ALEPPO_PHOTO",
+                "fields": {
+                    "talmudPage": "Pesachim 117a",
+                    "editedHebrewFullTextViewed": True,
+                    "physicalOrPhotographicTalmudManuscriptViewed": False,
+                    "rabbiYohananThroughRavChisdaOneWordList": ["הללויה", "כסיה", "ידידיה"],
+                    "ravOneWordList": ["כסיה", "מרחביה"],
+                    "rabbahOneWordList": ["מרחביה"],
+                    "rabbahEditedOrthography": "רבה",
+                    "rashbatzCitationLastSpeakerOrthography": "רבא",
+                    "thisRabbaRavaDifferenceResolved": False,
+                    "exodus17_16AuthorialInterpretation": True,
+                    "originalAleppoCodexFolioSeen": False,
+                    "criticalYeivinBreuerPagesRead": False,
+                    "permissionToRepublishTranscriptApproved": False,
+                },
+            },
+            "SRC-RASHBATZ-TASHBETZ-I177-KESYAH-RESPONSUM": {
+                "year": 1444,
+                "sourceRole": "RASHBATZ_TASHBETZ_I177_DIRECT_HISTORICAL_AUTHOR_TESTIMONY_NON_ALEPPO_SCROLL_AND_CONFLICTING_MASORETIC_LISTS",
+                "fields": {
+                    "responsumPart": 1,
+                    "responsumNumber": 177,
+                    "editedHebrewFullTextViewed": True,
+                    "first1738PrintFolioViewed": False,
+                    "second1741PrintFolioViewed": False,
+                    "any15thCenturyAutographViewed": False,
+                    "authorSawSomeTorahScroll": True,
+                    "authorSawAleppoCodex": False,
+                    "torahScrollSeparatelyLineWrittenHebrew": "כס יה בשתי שטות",
+                    "countOfTwoLetterWordsInFirstMasorahList": 6,
+                    "countOfTwoLetterWordsInRivalList": 5,
+                    "masoreticListConflictUnresolved": True,
+                    "alternativeMasorahStatus": "פלוגתא היא מלה א׳",
+                    "samekhShevaProvesWordUnity": False,
+                    "samekhShevaAnalogy": "אש דת",
+                    "authorDescribesPhysicalCorrection": True,
+                    "originalJTS1855CopyWitnessIndependence": "DIFFERENT_HISTORICAL_TRADITION_NOT_SAME_PHYSICAL_SOURCE",
+                    "lastSpeakerQuotedByAuthorOrthography": "רבא",
+                    "criticalTalmudNameVariantResolved": False,
+                    "rightsClearedForDigitalTranscript": False,
+                    "originalAleppoCodexPhotoViewed": False,
+                    "originalYeivinBreuerCriticalPagesRead": False,
+                },
+            },
+            "SRC-ARUCH-HASHULCHAN-YD27524-KESYAH-TWO-WORD-DECISION": {
+                "year": 1891,
+                "sourceRole": "ARUCH_HASHULCHAN_YD27524_EXPLICIT_TWO_WORD_HALAKHIC_RULING_USING_FIVE_WORD_MASORAH_LIST",
+                "fields": {
+                    "section": "Yoreh Deah 275:24",
+                    "editedHebrewFullSectionViewed": True,
+                    "originalAuthorPrintFacsimileLocated": True,
+                    "originalAuthorPrintScanCatalogueUrl": "https://commons.wikimedia.org/wiki/File:AHS_YD_B4.djvu",
+                    "originalRelevantPrintedPageVisuallyInspected": False,
+                    "editedPublisherObservedOneWordDispute": True,
+                    "rulingHebrew": "וההכרעה היא שהם שני תיבות",
+                    "masorahVerseQuoted": "כי יד על כס יה",
+                    "masorahCountsTwoLetterWords": 5,
+                    "authorSaysWriteBothOnSameLine": True,
+                    "oneWordTalmudViewAcknowledged": True,
+                    "authorPhysicalAleppoCodexViewed": False,
+                    "legalDecisionsAreAncientTextualCollations": False,
+                    "fullYeivinBreuerCriticalPagesRead": False,
+                    "photoRepublicationRightsApproved": False,
+                },
+            },
+        }
+        if rid in wave50_evidence_locks:
+            expected = wave50_evidence_locks[rid]
+            v = source.get("verifiedWave50", {})
+            if (source.get("year") != expected["year"]
+                    or source.get("sourceRole") != expected["sourceRole"]
+                    or source.get("accessState") != "PARTIAL_OBJECT"
+                    or source.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+                    or source.get("evidenceClass") != "A2"
+                    or source.get("rightsState") != "PERMISSION_REQUIRED"
+                    or source.get("publicationState") != "BLOCKED"
+                    or source.get("criticalEditionCollated") is not False
+                    or set(source.get("holds", [])) != {"EVIDENCE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"}
+                    or not isinstance(v, dict)
+                    or any(v.get(field) != value or type(v.get(field)) is not type(value)
+                           for field, value in expected["fields"].items())):
+                errors.append(f"{prefix}: Wave50 historical Kesyah source cannot be ancient codex collation, other author's identity, or rights clearance")
         if rid == "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137":
             w = source.get("checkedProvenance", {})
             if (source.get("rightsState") != "PERMISSION_REQUIRED" or source.get("publicationState") != "BLOCKED"
