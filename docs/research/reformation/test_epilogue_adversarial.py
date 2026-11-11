@@ -70,6 +70,46 @@ class ReformationEpilogueAdversarialTests(unittest.TestCase):
                 self.assertIn("ARCHIVE_HOLD", row["holds"])
                 self.assertIn(source_id, EPI.read_text(encoding="utf-8"))
 
+    def test_wave443_greek_edition_does_not_become_manuscript_or_review(self):
+        """Modern Greek critical edition establishes precise lemmas, but
+        cannot itself establish a millennium chronology or manuscript history."""
+        content = EPI.read_text(encoding="utf-8")
+        reader, apparatus = content.split(
+            "## Источниковедческий и богословский аппарат", 1
+        )
+        self.assertNotIn("небесное оправдание", reader.lower())
+        self.assertIn("небесная жизнь и царствование душ мучеников", reader.lower())
+        self.assertIn("принято премилленаристское прочтение", reader)
+        for phrase in (
+            "REF-P88", "SBLGNT", "MODERN_EDITED_GREEK_TEXT_CHECKED",
+        ):
+            if phrase == "MODERN_EDITED_GREEK_TEXT_CHECKED":
+                self.assertIn(phrase, LEDGER.read_text(encoding="utf-8"))
+            else:
+                self.assertIn(phrase, apparatus)
+        for word in (
+            "καὶ ἔζησαν καὶ ἐβασίλευσαν",
+            "οἱ λοιποὶ τῶν νεκρῶν οὐκ ἔζησαν",
+            "τὰς ψυχὰς τῶν πεπελεκισμένων",
+            "ἔπειτα", "εἶτα τὸ τέλος",
+            "не сверены", "ARCHIVE_HOLD", "EVIDENCE_HOLD",
+            "RIGHTS_HOLD", "PUBLICATION_HOLD",
+        ):
+            with self.subTest(word=word):
+                self.assertIn(word, apparatus)
+        registry = json.loads(REGISTRY.read_text(encoding="utf-8"))
+        src = {x["id"]: x for x in registry["sources"]}["REF-P88"]
+        self.assertEqual(src["accessState"], "PARTIAL_OBJECT")
+        self.assertEqual(src["locatorState"], "EXACT_LOCATOR_VERIFIED")
+        self.assertEqual(src["rightsState"], "RIGHTS_UNKNOWN")
+        self.assertTrue(set(("EVIDENCE_HOLD", "ARCHIVE_HOLD",
+                             "RIGHTS_HOLD", "PUBLICATION_HOLD")).issubset(src["holds"]))
+        self.assertIn("NOT ANCIENT MANUSCRIPT", src["verificationNote"])
+        c316 = next(x for x in LEDGER.read_text(encoding="utf-8").splitlines()
+                    if x.startswith("| C316 |"))
+        self.assertIn("REF-P88", c316)
+        self.assertIn("ANCIENT_GREEK_WITNESS_HOLD", c316)
+
     def test_existing_claim_ids_and_single_plan_preserved(self):
         ledger = LEDGER.read_text(encoding="utf-8")
         claim_lines = [line for line in ledger.splitlines()

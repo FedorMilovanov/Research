@@ -6,7 +6,7 @@
   "policy": "data/repository-evidence-policy-v2.json",
   "noExternalPublication": true,
   "fileBytesInGit": 0,
-  "sourceCount": 16,
+  "sourceCount": 18,
   "sourceRecords": [
     {
       "id": "REF-P09-PRINT",
@@ -479,6 +479,105 @@
         }
       },
       "downloadedAt": "2026-11-11"
+    },
+    {
+      "id": "REF-P89",
+      "title": "Heidelberg Catechism third original German print (1563), original pages 42–44, Questions 60–64",
+      "date": "1563",
+      "institution": "Universitätsbibliothek Heidelberg",
+      "shelfmark": "Q 7188-4 B RES (third German 1563 edition)",
+      "catalog": "https://www.ub.uni-heidelberg.de/ausstellungen/625jahre2011/exponate/sektion1/03_07.html",
+      "downloadAccess": "https://www.heidelberger-katechismus.net/daten/File/Upload/doc-6402-2.pdf",
+      "iiifManifest": "https://digi.ub.uni-heidelberg.de/diglit/catechismus1563",
+      "language": "Early New High German",
+      "rights": "Authorized digitization reproduced with library permission ('mit freundlicher Genehmigung' UB Heidelberg), NOT an explicit unrestricted content or commercial-use license; RIGHTS_UNKNOWN / RIGHTS_HOLD / PUBLICATION_HOLD, private research only.",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "publicationState": "REFERENCE",
+      "sizeNote": "106 digital PDF pages (12,055,145 bytes); original printed pp42–44 corresponding to PDF one-based pages 48–50. Exactly those three historical pages personally viewed and read for Q60–64. No full 106-page diplomatic transcription or comparison against distinct first/second/Latin 1563 editions.",
+      "sha256": "9a418fefc3541f772cca13d3bf4a41c0d4195e03aaa66f51571fc20a35e93f44",
+      "acquisitionState": "DOWNLOADED_VERIFIED",
+      "actualBytes": 12055145,
+      "tempDisposition": "Downloaded on authorized Windows device to TEMP; verified SHA256 and byte count before and after moving to one PRIVATE permanent research PDF. Temporary four high-res JPEG/WEBP derivatives and temporary private PDF-render module dir cleaned and explicitly confirmed (TEMP_CLEANED=True). No PDF/photo bytes in public Git.",
+      "retainedLocalCopy": {
+        "localRelativePath": "Documents/Research-Primary-Sources/Heidelberg_Catechism_1563_Third_UBH/Heidelberger_Katechismus_1563_3_Ausgabe_UBH_Q7188-4_B_RES.pdf",
+        "bytes": 12055145,
+        "sha256": "9a418fefc3541f772cca13d3bf4a41c0d4195e03aaa66f51571fc20a35e93f44",
+        "storageClass": "PRIVATE_RESEARCH_ONLY",
+        "digitalPages": 106,
+        "visuallyInspectedPdfPages": [
+          48,
+          49,
+          50
+        ],
+        "historicalPrintedPages": [
+          42,
+          43,
+          44
+        ],
+        "primaryWitnessType": "THIRD_1563_GERMAN_PRINT",
+        "inspectedQuestionNumbers": [
+          60,
+          61,
+          62,
+          63,
+          64
+        ],
+        "allPagesWordByWordTranscribed": false,
+        "firstOrSecond1563EditionCollated": false,
+        "temporaryDerivativesRemoved": true
+      },
+      "intendedNextStep": "Complete original 1563 Q60–64 diplomatic transcription with line-by-line variant comparison to first and second historical German editions (and Latin 1563) in separate institutional witnesses; do not infer third edition's Q80 variant applies to earlier editions or any entire Greek/Latin confessional corpus.",
+      "downloadedAt": "2026-11-11"
+    },
+    {
+      "id": "REF-P90",
+      "title": "1547 Council of Trent VI Decretum de Iustificatione, Cologne Novesianus, BSB original print, VD16 K2078",
+      "date": "1547",
+      "institution": "Bayerische Staatsbibliothek München / Münchener DigitalisierungsZentrum (MDZ)",
+      "shelfmark": "Exeg. 139#Beibd.2; VD16 K2078; BSB-ID 991071330829707356",
+      "catalog": "https://www.digitale-sammlungen.de/de/view/bsb10176467",
+      "downloadAccess": "https://api.digitale-sammlungen.de/iiif/presentation/v3/bsb10176467/manifest",
+      "iiifManifest": "https://api.digitale-sammlungen.de/iiif/presentation/v3/bsb10176467/manifest",
+      "language": "Original sixteenth-century printed Latin (Roman type)",
+      "rights": "BSB specific official IIIF Presentation v3 manifests rights='https://rightsstatements.org/vocab/NoC-NC/1.0/' (No Copyright - Non-Commercial Use Only) at https://api.digitale-sammlungen.de/iiif/presentation/v3/bsb10176467/manifest . MDZ FAQ allows noncommercial uses and explains case-specific boundaries for commercial publication; explicit attribution to holding library, shelfmark, page, URN required. No permission/licence approval for planned book reproduction has been obtained. RIGHTS_HOLD / PUBLICATION_HOLD; source-registry-v1.json REF-P90 rightsState=PERMISSION_REQUIRED.",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "publicationState": "REFERENCE",
+      "sizeNote": "One official IIIF manifest (68,660 bytes, 64 canvases) plus a scoped set of TEMP IIIF JPEG derivatives. Scans 27 (Canon IX), 28 (Canons XI/XIII), 31 (Canon XXIV) directly read from historical print. No full 64-image download, no complete edition or Paris variant collation. All temporary derivatives were removed after visual inspection.",
+      "sha256": "5333a30ba575d635e0802029c9a0ee074adffc821c814a6e54ceae0b529853d4",
+      "acquisitionState": "VERIFIED_TEMP_DISCARDED",
+      "actualBytes": 68660,
+      "derivativeReceipts": [
+        {
+          "scan": 27,
+          "format": "image/jpeg",
+          "widthRequested": 1100,
+          "actualBytes": 337009,
+          "sha256": "fb1491250298b992735e99dafca0eb1cf70c4d3b8cdf6769386942b619e3fc88",
+          "directVisualScope": "Canon IX"
+        },
+        {
+          "scan": 28,
+          "format": "image/jpeg",
+          "widthRequested": 900,
+          "actualBytes": 244964,
+          "sha256": "79a9dc8e78c54e5ff5db2cbdffe15db899bb7d82268490be30f72a8580042ebc",
+          "directVisualScope": "Canon XI, Canon XIII"
+        },
+        {
+          "scan": 31,
+          "format": "image/jpeg",
+          "widthRequested": 700,
+          "actualBytes": 179893,
+          "sha256": "f5d7a1974d3ea0937fb0d826be05fc89d9f60cb445106ab178a272863305d9b5",
+          "directVisualScope": "Canon XXIV"
+        }
+      ],
+      "tempDisposition": "Manifest and 16+ temporary scan JPEGs/WEBP contact sheets used for exact folio localization on authorized private computer; SHA256 and byte receipts verified for manifest and three directly read IIIF canvases; all 29 temporary files (4,787,865 bytes) deleted from TEMP and verified RemainingScratchFiles=0, TEMP_CLEANED=True. No original scans stored in Git or permanent archive.",
+      "retainedLocalCopy": null,
+      "downloadedAt": "2026-11-11",
+      "intendedNextStep": "Compare the exact four directly read Cologne canons against BnF Paris Michel de Vascosan 1547 B-6903 (2), which remains visually inaccessible due to Gallica HTTP403; check alternate original print readings and peer-review of theological interpretation. Do not conflate Cologne and Paris print witnesses or claim full corpus closure."
     }
   ],
   "requirements": {

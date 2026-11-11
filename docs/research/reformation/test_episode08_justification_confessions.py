@@ -110,6 +110,134 @@ class JustificationBookTests(unittest.TestCase):
         self.assertIn("THEOLOGICAL_PEER_REVIEW_OPEN", active_plan)
         self.assertIn("PUBLICATION_HOLD", active_plan)
 
+    def test_wave443_trent_latin_and_first_print_not_conflated(self):
+        """Original-language web transcription is checked, but no Paris 1547
+        print image was declared collation-complete and no peer-review invented.
+        """
+        chapter = E8.read_text(encoding="utf-8")
+        _, apparatus = chapter.split(
+            "## Источниковедческий аппарат — вне основного повествования", 1
+        )
+        for token in (
+            "Canon XIII", "Canon XXIV", "omni homini",
+            "nihil aliud requiri", "exclusa gratia et charitate",
+            "iustitiam acceptam", "B-6903 (2)",
+            "A–E⁴", "editio princeps 1531",
+            "Q 7188-4 B RES", "не сверены визуально",
+            "INDEPENDENT_CONFESSIONAL_REVIEW_OPEN",
+        ):
+            with self.subTest(token=token):
+                self.assertIn(token, apparatus)
+        registry = json.loads(
+            (D / "source-registry-v1.json").read_text(encoding="utf-8")
+        )
+        by = {row["id"]: row for row in registry["sources"]}
+        for source_id in ("REF-P14", "REF-P17", "REF-P20"):
+            self.assertIn("WAVE443-T03-LATIN", by[source_id]["verificationNote"])
+            self.assertIn("PUBLICATION_HOLD", by[source_id]["holds"])
+        self.assertEqual(by["REF-P20"]["accessState"], "PARTIAL_OBJECT")
+        self.assertIn("LOCATOR_HOLD", by["REF-P20"]["holds"])
+        self.assertEqual(by["REF-P17"]["accessState"], "CATALOG_ONLY")
+        self.assertIn("ARCHIVE_HOLD", by["REF-P17"]["holds"])
+        self.assertIn("LOCATOR_HOLD", by["REF-P17"]["holds"])
+
+    def test_wave443_direct_heidelberg_third_print_without_spurious_release(self):
+        """Visually reviewed original 1563 printed pp 42–44 are evidence of
+        Q60–64 only, not first/second editions or blanket reuse permissions.
+        """
+        chapter = E8.read_text(encoding="utf-8")
+        self.assertIn("**REF-P89 — ВОЛНА 443", chapter)
+        self.assertIn("печатным страницам 42–44", chapter)
+        self.assertIn("PDF стр. 48–50", chapter)
+        for q in range(60, 65):
+            with self.subTest(question=q):
+                self.assertIn(f"| **{q}** |", chapter)
+        for marker in (
+            "ORIGINAL_1563_THIRD_EDITION_Q60_Q64_PAGE_IMAGES_DIRECTLY_VIEWED",
+            "RIGHTS_HOLD", "ARCHIVE_HOLD", "PUBLICATION_HOLD",
+            "первое и второе немецкие издания",
+        ):
+            self.assertIn(marker, chapter)
+
+        reg = json.loads((D / "source-registry-v1.json").read_text(encoding="utf-8"))
+        rows = {x["id"]: x for x in reg["sources"]}
+        self.assertEqual(reg["sourceCount"], len(rows))
+        self.assertEqual(rows["REF-P17"]["accessState"], "CATALOG_ONLY")
+        p89 = rows["REF-P89"]
+        self.assertEqual(p89["documentYear"], 1563)
+        self.assertEqual(p89["accessState"], "PARTIAL_OBJECT")
+        self.assertEqual(p89["locatorState"], "EXACT_LOCATOR_VERIFIED")
+        self.assertEqual(p89["rightsState"], "RIGHTS_UNKNOWN")
+        for h in ("ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"):
+            self.assertIn(h, p89["holds"])
+        self.assertIn("FIRSTHAND_VISUAL_IMAGE_READ", p89["verificationNote"])
+        self.assertIn("PDF digital pages 48, 49, 50", p89["verificationNote"])
+        manifest = json.loads(
+            (D / "acquisition-manifest-v1.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(manifest["sourceCount"], len(manifest["sourceRecords"]))
+        rec = next(x for x in manifest["sourceRecords"] if x["id"] == "REF-P89")
+        self.assertEqual(rec["actualBytes"], 12055145)
+        self.assertEqual(
+            rec["sha256"],
+            "9a418fefc3541f772cca13d3bf4a41c0d4195e03aaa66f51571fc20a35e93f44",
+        )
+        self.assertEqual(rec["retainedLocalCopy"]["visuallyInspectedPdfPages"], [48, 49, 50])
+        self.assertFalse(rec["retainedLocalCopy"]["allPagesWordByWordTranscribed"])
+        self.assertFalse(rec["retainedLocalCopy"]["firstOrSecond1563EditionCollated"])
+        self.assertEqual(manifest["fileBytesInGit"], 0)
+        claim_lines = (D / "03_claim_verification_register.md").read_text(
+            encoding="utf-8").splitlines()
+        for id in (272, 273):
+            line = next(x for x in claim_lines if x.startswith(f"| C{id} |"))
+            self.assertIn("REF-P89", line)
+            self.assertIn("PUBLICATION_HOLD" if id == 272 else "THEOLOGICAL_PEER_REVIEW_OPEN", line)
+
+    def test_wave443_cologne_original_print_exact_canons_with_paris_hold(self):
+        """The Cologne 1547 primary print was visually read at precisely three
+        canvases; the Paris 1547 edition and full council text were not."""
+        apparatus = E8.read_text(encoding="utf-8").split(
+            "## Источниковедческий аппарат — вне основного повествования", 1
+        )[1]
+        for token in (
+            "REF-P90", "VD16 K2078", "bsb10176467", "scan 27",
+            "scan 28", "scan 31", "BP16_112717",
+            "ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD",
+            "INDEPENDENT_CONFESSIONAL_REVIEW_OPEN",
+        ):
+            with self.subTest(token=token):
+                self.assertIn(token, apparatus)
+        registry = json.loads((D / "source-registry-v1.json").read_text(encoding="utf-8"))
+        p = {x["id"]: x for x in registry["sources"]}
+        cologne = p["REF-P90"]
+        self.assertEqual(cologne["documentYear"], 1547)
+        self.assertEqual(cologne["accessState"], "PARTIAL_OBJECT")
+        self.assertEqual(cologne["locatorState"], "EXACT_LOCATOR_VERIFIED")
+        self.assertEqual(cologne["rightsState"], "PERMISSION_REQUIRED")
+        self.assertIn("NoC-NC/1.0", cologne["verificationNote"])
+        for hold in ("ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"):
+            self.assertIn(hold, cologne["holds"])
+        self.assertIn("DIRECT_VISUAL_ORIGINAL_LATIN_PRINT_CHECKED", cologne["verificationNote"])
+        self.assertIn("Gallica", p["REF-P20"]["verificationNote"]
+                      + cologne["verificationNote"])
+        self.assertIn("LOCATOR_HOLD", p["REF-P20"]["holds"])
+        manifest = json.loads((D / "acquisition-manifest-v1.json").read_text(encoding="utf-8"))
+        rec = next(row for row in manifest["sourceRecords"] if row["id"] == "REF-P90")
+        self.assertEqual(manifest["sourceCount"], len(manifest["sourceRecords"]))
+        self.assertEqual(rec["acquisitionState"], "VERIFIED_TEMP_DISCARDED")
+        self.assertEqual(rec["actualBytes"], 68660)
+        self.assertEqual(rec["sha256"],
+                         "5333a30ba575d635e0802029c9a0ee074adffc821c814a6e54ceae0b529853d4")
+        self.assertEqual([x["scan"] for x in rec["derivativeReceipts"]], [27, 28, 31])
+        self.assertIn("TEMP_CLEANED=True", rec["tempDisposition"])
+        self.assertEqual(manifest["fileBytesInGit"], 0)
+        ledger = (D / "03_claim_verification_register.md").read_text(encoding="utf-8")
+        for claim_id in (27, 271):
+            row = next(line for line in ledger.splitlines()
+                       if line.startswith(f"| C{claim_id} |"))
+            self.assertIn("REF-P90", row)
+            self.assertIn("PARIS_1547_VARIANT_HOLD", row)
+
     def test_registry_and_book_navigation(self):
         ledger=(D/"03_claim_verification_register.md").read_text(encoding="utf-8")
         for i in range(268,274):
