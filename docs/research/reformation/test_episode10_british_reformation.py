@@ -80,8 +80,12 @@ class EnglandScotlandTests(unittest.TestCase):
             encoding="utf-8"
         )
         claim = next(x for x in ledger.splitlines() if x.startswith("| C283 |"))
-        for marker in ("REF-P93", "12 пенсов", "приходскими старостами",
-                       "REJECTED_FORMULATION", "LOCAL_PARISH_ENFORCEMENT_UNVERIFIED"):
+        # The statutory REF-P93 never establishes observed local payment.
+        # A later 1587 parish-account witness may be added legitimately,
+        # without being backdated to the year the Act entered into force.
+        for marker in ("REF-P93", "REF-P94", "12 пенсов",
+                       "приходскими старостами", "REJECTED_FORMULATION",
+                       "1559_FIRST_YEAR_ENFORCEMENT_UNVERIFIED"):
             self.assertIn(marker, claim)
         sweep = (D / "HOLD_SOURCE_SWEEP_2026-11-11.md").read_text(
             encoding="utf-8"
@@ -91,6 +95,71 @@ class EnglandScotlandTests(unittest.TestCase):
         self.assertEqual(
             sum("PUBLICATION_HOLD" in x["holds"] for x in registry["sources"]),
             registry["sourceCount"],
+        )
+
+    def test_wave455_1587_receipt_not_first_year_1559_enforcement(self):
+        """A 1587 parish-account receipt is concrete, but not 1559 backdating."""
+        chapter = CH.read_text(encoding="utf-8")
+        reader, apparatus = chapter.split("## Источниковедческий аппарат", 1)
+        section = reader.split(
+            "## Елизавета I: Supreme Governor и новая форма единства", 1
+        )[1].split("## Сорок две, тридцать восемь, тридцать девять", 1)[0]
+        for fact in (
+            "Бишопс-Стортфорде",
+            "1587 года",
+            "девять человек",
+            "девяти шиллингов",
+            "бедных",
+            "1882 году",
+            "не к 1559 году",
+            "оригинальный рукописный лист",
+        ):
+            with self.subTest(fact=fact):
+                self.assertIn(fact.lower(), section.lower())
+        self.assertNotIn("уже в 1559 году реально взыскали", section.lower())
+        reg = json.loads(
+            (D / "source-registry-v1.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(reg["sourceCount"], len(reg["sources"]))
+        self.assertGreaterEqual(reg["sourceCount"], 219)
+        sources = {s["id"]: s for s in reg["sources"]}
+        self.assertEqual(len(sources), reg["sourceCount"])
+        entry = sources["REF-P94"]
+        self.assertEqual(entry["documentYear"], 1587)
+        self.assertEqual(entry["evidenceClass"], "A2")
+        self.assertEqual(entry["accessState"], "PARTIAL_OBJECT")
+        self.assertEqual(entry["locatorState"], "EXACT_LOCATOR_VERIFIED")
+        for marker in (
+            "5351-5402",
+            "STORTFORD_1587_RECEIPT_RUBRIC",
+            "ORIGINAL_MANUSCRIPT_AND_PRINT_PAGE_VISUAL_HOLD",
+            "1559_FIRST_YEAR_ENFORCEMENT_UNVERIFIED",
+        ):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, entry["verificationNote"])
+        for marker in ("REF-P94", "1882", "с.64",
+                       "не просмотрены", "1587", "1559"):
+            self.assertIn(marker, apparatus)
+        for hold in ("EVIDENCE_HOLD", "ARCHIVE_HOLD",
+                     "RIGHTS_HOLD", "PUBLICATION_HOLD"):
+            self.assertIn(hold, entry["holds"])
+        c283 = next(
+            s for s in (D / "03_claim_verification_register.md").read_text(
+                encoding="utf-8"
+            ).splitlines() if s.startswith("| C283 |")
+        )
+        for token in ("REF-P94", "1587", "1559",
+                      "REJECTED_FORMULATION", "ORIGINAL_MANUSCRIPT"):
+            self.assertIn(token, c283)
+        sweep = (D / "HOLD_SOURCE_SWEEP_2026-11-11.md").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("## Волна 455 — приходские взыскания", sweep)
+        self.assertIn("219 PUBLICATION_HOLD", sweep)
+        self.assertIn("1559_FIRST_YEAR_ENFORCEMENT_UNVERIFIED", sweep)
+        self.assertEqual(
+            sum("PUBLICATION_HOLD" in s["holds"] for s in reg["sources"]),
+            reg["sourceCount"],
         )
 
     def test_claim_guards_and_published_chapter_numbering(self):
