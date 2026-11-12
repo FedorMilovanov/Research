@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 218,
+  "sourceCount": 219,
   "sources": [
     {
       "id": "REF-P01",
@@ -4205,6 +4205,25 @@
       ],
       "url": "https://history.hanover.edu/texts/engref/er80.html",
       "verificationNote": "WAVE454 2026-11-13: FULL ONLINE HISTORICAL EDITORIAL TRANSCRIPTION directly read from Hanover Historical Texts, edited Gee & Hardy (1896), printed pp458–467, underlying Statutes of the Realm IV pt I p355 per editors; digitized transcription Heather Haralson 1998, Raluca Preotu 1999, Jonathan Perry 2001. Relevant original-law text in modern digital transcript at [Page 463] directly checked: from feast of the Nativity of St John Baptist next coming, inhabitants without lawful or reasonable excuse directed to attend their usual parish church or chapel on EVERY SUNDAY and other HOLY DAYS; statutory forfeiture TWELVE PENCE PER OFFENCE, to be levied by PARISH CHURCHWARDENS for benefit of POOR OF SAME PARISH. This is a statutory LIABILITY/collection rule, NOT an individual fine receipt, court conviction, parish-account audit, measured attendance rate, or proof of universal collection. Full transcribed law distinguishes public minister penalties and nonattendance sanction, includes 1552 prayerbook alterations; distinct from parliamentary original archival object HL/PO/PU/1/1558/1Eliz1n2 confirmed by UK Parliament REF-S84. Official National Archives research guide for Catholics discusses later recusancy records and parish churchwarden collections; this separate modern description cannot substitute for physical 1559 folio or local collection books. Digital editor and original statutes must not be conflated; no physical 1559 original images, page-by-page variants or parish ledgers inspected. HISTORICAL_EDITED_ACT_TEXT_DIRECT / ORIGINAL_ACT_PHYSICAL_UNREAD / READER_1559_TWELVE_PENCE_STATUTORY / LOCAL_PARISH_ENFORCEMENT_UNVERIFIED / EVIDENCE_HOLD / ARCHIVE_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD.",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "id": "REF-P94",
+      "documentYear": 1587,
+      "title": "St Michael's, Bishop's Stortford, churchwardens' accounts, 1587, printed archival transcript in J. L. Glasscock (ed.), The Records of St. Michael's Parish Church, Bishop's Stortford (London: Elliot Stock, 1882), p.64; Internet Archive digitized text",
+      "evidenceClass": "A2",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://archive.org/stream/recordsofstmicha00bishuoft/recordsofstmicha00bishuoft_djvu.txt",
+      "verificationNote": "WAVE455 2026-11-13: examined directly the Internet Archive plain text/OCR of Glasscock-edited 1882 printed transcription of parish accounts, PRINTED p64 (archive OCR lines 5351-5402). Within 1587 entry at foot of that account, separate 'Rec. of defaultes for absence.' followed by nine personal names (OCR lines 5383-5394) and explicit 'wherof delyvered to mr parsons to the use of the poore ixs.' (OCR line 5395); subsequent small distributions to named poor at lines 5397-5401. Thus a late-Elizabethan named PARISH COLLECTION/POOR RELIEF ACCOUNT entry can be distinguished from statutory forfeiture alone. Underlying 1587 parish accounting manuscript and printed p64 page IMAGE have NOT been directly visually inspected; PDF via web viewer fetch unavailable. OCR in printed sums especially on lines 5386-5392 is garbled and cannot prove exact per-person totals, or whether every named debt was actually remitted. Secondary scholarly note in Sedley Lynch Ware, The Elizabethan Parish in its Ecclesiastical and Financial Aspects (1908), n295, identifies Glasscock p64 as 9 named defaulters, mostly 12d except one 3s, but this is a SECONDARY paraphrase and cannot resolve distorted OCR or replace manuscript/printed-page visual check. Book metadata independently verified: Open Library OL7125275M, print London Elliot Stock 1882, xii+235 pp, cataloged under churchwardens' accounts; online IA digitized identifier recordsofstmicha00bishuoft. This is evidence of a 1587 PARISH ACCOUNT under Elizabeth I, NOT a 1559-or-1560 collection record, not proof of universal enforcement, not proof of all penalties paid, and not a visual facsimile collation. Original storage/custody requires Hertfordshire archives confirmation; present online access is TRANSCRIPTION/OCR_ONLY. HISTORICAL_1882_TRANSCRIPTION_OCR_READ / STORTFORD_1587_RECEIPT_RUBRIC / NINE_NAMED_ENTRIES / NINE_SHILLINGS_REPORTED_TRANSFER_TO_POOR / ORIGINAL_MANUSCRIPT_AND_PRINT_PAGE_VISUAL_HOLD / PARTICULAR_PAYMENTS_AND_TOTALS_UNRESOLVED / 1559_FIRST_YEAR_ENFORCEMENT_UNVERIFIED / EVIDENCE_HOLD / ARCHIVE_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD.",
       "checkedAt": "2026-11-13"
     }
   ]
