@@ -344,6 +344,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-KROGEVOLL-TORONTO-PHD-2022-EL-SHADDAI": "ATTRIBUTED_KROGEVOLL_2022_COMPLETE_PHD_SHADDAI_MOUNTAIN_CONTACT_HYPOTHESIS",
     "SRC-BROOKE-MCLEAN-LXX-EX17-16-CAMBRIDGE-1909-P211": "CAMBRIDGE_1909_PRINTED_LXX_EX17_16_CRITICAL_VARIANTS_DIRECT_FACSIMILE_NOT_GOTTINGEN_OR_MANUSCRIPT",
     "SRC-WEVERS-GOTTINGEN-EXODUS-1991-AUTHOR-INTRO-EN2006": "WEVERS1991_ENGLISH_AUTHOR_INTRO_METHOD_APP_I_APP_II_GREEK_VARIANT_FIELD_DEPENDENCE_NO_EX17_LOCUS_APPARATUS",
+    "SRC-FIELD-HEXAPLA-1875-EX17-16-PRINT-P111-BSB": "FIELD1875_ORIGINAL_PRINT_EX17_16_HEXAPLARIC_EDITORIAL_COMPILATION_NOT_INDEPENDENT_GREEK_CODEX_OR_ALEPPO_LEAF",
     "SRC-KRUGER-SHADDAY-JOB-2023-CONTEXT-CRITIQUE": "ATTRIBUTED_MODERN_JOB_SHADDAY_PRAGMATICS_WITH_VERIFIED_TEXTUAL_COUNTERCHECK",
     "SRC-OFER-TEXTUS26-2016-ALEPPO-EX8-FRAGMENT": "OFER2016_EXODUS8_SURVIVING_ORIGINAL_FRAGMENT_PARTIAL_CHECK_OF_SAPHIR_ZER_QUESTIONS_NOT_EXODUS17_16_FOLIO",
     "SRC-VANWOLDE-2021": "ATTRIBUTED_SECONDARY_EXEGESIS",
@@ -1466,6 +1467,34 @@ def validate_source_access(sources: dict) -> list[str]:
                 or not isinstance(method, dict)
                 or any(method.get(key) != value for key, value in expected.items())):
                 errors.append(f"{prefix}: Wevers 1991 apparatus introduction does not establish Exodus17:16 variant, Field independence or photo rights")
+
+        if rid == "SRC-FIELD-HEXAPLA-1875-EX17-16-PRINT-P111-BSB":
+            field = source.get("pageAutopsy20261112")
+            expected_field = {
+                "original1875PrintedPage111ImageVisuallyRead": True,
+                "bsbCompleteVolumeIIIFCanvases": 920,
+                "originalPageImageId": "bsb11340409_00221",
+                "englishLatinThroneGloss": "Manus est super thronum Jah",
+                "englishLatinAlternative": "Manus est super vexillum Jah",
+                "originalPageGreekContainsKryphaia": True,
+                "editorialSymmachusAttributionDefinitelyCertain": False,
+                "editorExpressesSymmachusDoubtInNote17": True,
+                "oldPartial207PagePDFCoveredEx17_16": False,
+                "originalAncientAleppoEx17_16FolioVisuallyRead": False,
+                "originalGreekCodicesIndependentlyCollated": False,
+                "wevers1991Ex17_16OriginalApparatusRead": False,
+                "paleographicCollationCompleted": False,
+                "bsbDigitalImageRepublicationPermissionGranted": False,
+            }
+            if (source.get("originalPageIiifImageUrl") != "https://api.digitale-sammlungen.de/iiif/image/v2/bsb11340409_00221/full/1400,/0/default.jpg"
+                or source.get("accessState") != "PARTIAL_OBJECT"
+                or source.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+                or source.get("rightsState") != "RIGHTS_UNKNOWN"
+                or source.get("publicationState") != "BLOCKED"
+                or source.get("criticalEditionCollated") is not False
+                or not isinstance(field, dict)
+                or any(field.get(key) != value for key, value in expected_field.items())):
+                errors.append(f"{prefix}: Field1875 p111 cannot be promoted to Aleppo Ex17 autograph, independent Greek manuscript, Göttingen1991 apparatus or image rights")
 
         for name in ("title", "creator", "url", "objectType",
                      "supportedUse", "forbiddenUse", "sourceObjectState"):
