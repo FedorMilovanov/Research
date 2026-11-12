@@ -1428,3 +1428,55 @@ https://research-repository.st-andrews.ac.uk/bitstream/handle/10023/20521/Moffit
 **НЕ ЗАКРЫТО:** ATHANASIUS_CG_DI_TEXTUAL_RECENSION_COLLATION_THOMSON1971_KANNENGIESSER1973_2000_HOLD; THEODORET_ERANISTES_ETTLINGER1975_GREEK_VARIANTS_HOLD; PG83_296_AND_PG25_112B_ORIGINAL_PRINT_PHOTO_HOLD; ἀντὶ_ψυχῶν_VS_ἀντίψυχον_ELECTRONIC_SOURCE_VALIDITY_HOLD; ANCIENT_FLORILEGIUM_QUOTATION_STEMMA_HOLD; ATHANASIUS_AUTHORSHIP_SCHOLARLY_DISSENT_RESEARCH_HOLD; RIGHTS_AND_PUBLICATION_HOLD. Оригинальный PDF старой цифровой транскрипции *Eranistes* через экранный веб-просмотр (403) и научного PDF Chrostowski (timeout) **не удалось фотосверить**; тексты/пагинация извлечены из читаемых источников, но фотографии не сертифицированы.
 
 **Никакой редакционной главы / публикации / PR/веток/реестров/CI/SSOT/Product. publicationEligible=false, NO MERGE, NO PRODUCT, NO PUBLICATION.**
+
+
+## XXX. Псевдо-Афанасий у Феодорита: Sermo maior de fide, De incarnatione et contra Arianos и подлинное De incarnatione Verbi — разбор атрибуции (12.11.2026)
+
+**Цель:** источниковедчески разделить три произведения, которые легко ошибочно объединить под именем «Афанасий», поскольку Феодорит (V век) сам приписывает некоторые спорные тексты святому Афанасию. Это **не новая богословская позиция сторонника ограниченного искупления**, а обязательный контроль подлинности/независимости свидетельств из *Eranistes* III, связан с §§XXVIII–XXIX. Никаких новых PR/веток, читательских глав, CI, SSOT, registry или Product.
+
+### 1. ТРИ РАЗНЫХ произведения: нельзя смешивать заголовки
+
+| Произведение, источник | Релевантная передача | Что можно установить |
+| --- | --- | --- |
+| Афанасий, *De incarnatione Verbi* (традиционная атрибуция), **CPG 2091, PG 25:95–198** | Греческие выдержки 9.1–2, 20.2–6, 21.1 прямо рассмотрены в §XXVIII; цитируется Феодоритом под заглавием *On the Incarnation* в *Eranistes* III | **Самостоятельный древний текст** с сильной лексикой заместительной жертвы «за всех» / «вместо всех»; см. научные HOLD по двум рецензиям |
+| *Sermo maior de fide* (греч. *Περὶ πίστεως λόγος ὁ μείζων*, также *Epistula ad Antiochenos*), **Pseudo-Athanasius**, греческие фрагменты **PG 26:1263–1294** | Феодорит приводит под именем Афанасия **во всех трёх диалогах**; полный текст сохранился в **армянском переводе**, греческий фрагментарен | **Подлинное авторство Афанасия отклонено в патрологической литературе**; тексты включают компиляцию из настоящего *De incarnatione Verbi* и других писаний, значит не независимый второй Афанасий |
+| *De incarnatione et contra Arianos*, **CPG 2806, PG 26:984–1028** | Другое сочинение, исторически передававшееся под именем Афанасия и цитируемое как его у Феодорита, особенно *Eranistes* II | Авторство **спорно**; академические каталоги могут давать Маркелла Анкирского, но рукописная экспертиза не считает это бесспорно установленным; НЕ тождественно ни *De incarnatione Verbi*, ни *Sermo maior de fide* |
+
+**Фактический прецедент ошибки:** одно только указание «Testimony of Holy Athanasius» над последовательностью выдержек в *Eranistes* III **не удостоверяет подлинность каждого** помеченного далее произведения. Классификацию делать **по названию каждой выдержки**, а не по общему заголовку.
+
+### 2. Прямая сверка структуры Эраниста III: у Феодорита заголовки различаются
+
+[Полная историческая английская передача *Eranistes*, Dialogue III, флорилегий после аргумента о страдании человеческой природы](https://www.newadvent.org/fathers/27033.htm), разделы вокруг «Testimony of the Holy Athanasius»:
+
+1. Сначала *From his letter to Epictetus* — несколько выдержек о распятой плоти и бесстрастном Слове.
+2. **Of the same from his greater discourse on the Faith** — именно традиционный *Sermo maior de fide*; четыре последовательных отрывка (§§ «was what rose man or God» etc.).
+3. **Of the same from his discourse against the Arians** — отдельная рубрика, не следует без критической нумерации автоматически считать подлинными тремя *Orationes contra Arianos*.
+4. **Of the same from his work on the Incarnation** — с этого заголовка идут цитаты, содержащие *De incarnatione Verbi* 9.1–2 и 20.2, 20.6: «instead of all», «ransom for all», «on behalf of all he offered sacrifice».
+
+Таким образом, **цитата с формулой «вместо всех» НЕ входит автоматически в корпус псевдо-Афанасиева Sermo maior** только потому, что обе выдержки поданы в одном большом флорилегии и помечены именем Афанасия. Напротив, нужно отделять вторичное воспроизведение подтверждаемого авторского *De incarnatione Verbi* от неподлинной атрибуции других трудов.
+
+### 3. Независимые научные проверки подлинности
+
+**Johannes Quasten, *Patrology* III, раздел Athanasius / Spurious Dogmatic Writings, pp.30–31.** Цифровая [английская скан-передача тома](https://www.sedmitza.ru/data/2017/05/26/1241005052/Patrology_3.pdf) и пригодная к чтению [испанская публикация раздела](https://azbyka.ru/otechnik/Patrologija/patrologia-parte-2-la-edad-de-oro-de-la-literatura-patristica-griega/). Квастен прямо классифицирует *Sermo maior* как компиляцию из *De incarnatione* и других текстов, отказывает в приписывании самому Афанасию **вопреки авторитетному свидетельству Феодорита**, фиксирует частичный греческий текст и полный армянский перевод. Библиография: E. Schwartz (1925) критическое издание греческих фрагментов; R. P. Casey (1947) армянский перевод; разные варианты возможного автора — **Eustathius of Antioch** у Schwartz, **Marcellus of Ancyra** у Scheidweiler, не признать одну гипотезу установленной. В печатном PDF попытка web-screenshot завершилась **400 из-за размера 47 MB**; это проверка цифровой текстовой передачи/читабельного HTML, **не фотосверка печатной страницы Quasten**.
+
+**P. Nautin, рецензия на Ettlinger 1975 (*Revue de l'histoire des religions* 191/1 [1977], p.103)**, [научная публикация Persée](https://www.persee.fr/doc/rhr_0035-1423_1977_num_191_1_6581): ставит вопрос, точно ли все атрибуционные надписи и сами выдержки в *Eranistes* соответствуют исходным сочинениям. Указывает, что Ettlinger признаёт как минимум одну ошибку в источниковом обозначении (Ettlinger p.34). **Это внешнее подтверждение необходимости авторского аудита**, не основание объявлять все извлечения ложными.
+
+**Академическое издательское свидетельство и проблема Маркелла.** [BiblIndex/CNRS: CPG 2806, *De incarnatione et contra Arianos*, PG26:984–1028](https://www.biblindex.org/en/work-editions/de-incarnatione-et-contra-arianos/patrologia-graeca-26) помещает сочинение под именем **Маркелла Анкирского** в метаданных. Однако [e-codices, Genève, BGE gr.29/1, fol.237bisv–250r](https://www.e-codices.unifr.ch/de/description/bge/gr0029-1) фиксирует традиционное рукописное именование **под Афанасием**, давно признанное псевдоэпиграфическим; в рукописном описании прямо говорится, что атрибуцию Маркеллу, предложенную M. Tetz (1964) и усвоенную *Clavis Patrum*, **оспаривал и отверг Alasdair Heron**. Поэтому на данном этапе сильнее аргумент **«не Афанасий»**, чем «без сомнения Маркелл». Разные базы не являются независимыми доказательствами идентичности автора.
+
+**HAB/WDB научная текстовая редакция, примечание 24**: [доступный HTML-инструмент с идентификацией цитат](https://diglib.hab.de/content.php?dir=edoc%2Fed000211&distype=optional&xml=commonefactio%2Fedition.xml&xsl=http%3A%2F%2Fdiglib.hab.de%2Fedoc%2Fed000211%2Ftei-transcript.xsl), локатор *Eranistes*, florilegium II, **PG83:180**, Ettlinger **160.8–13**, уточняет, что текст взят из **Sermo maior de fide XXIX, PG26:1283**. Это вторичная современная атрибуционная помета, а не сверенный нами факсимиле PG83:180. **Не считать** имя Афанасия в первоначальном заголовке более авторитетным, чем проверенный состав псевдо-Афанасиева сочинения.
+
+### 4. Применение к исследованию об объёме искупления
+
+- **Сохранить сильное реальное свидетельство:** Афанасий, *De incarnatione Verbi* IX.1–2, XX.2 и XX.6, допускает проверяемое утверждение «вместо всех / за всех», независимо от ошибки в атрибуции *Sermo maior*.
+- **Запретить искусственный подсчёт:** Афанасий и Феодорит как авторы имеют разные собственные произведения, но **ссылка Феодорита на Афанасия — линия рецепции**, не второй независимый древний голос за формулу Афанасия; псевдо-Афанасиев *Sermo maior* как компиляция не третий независимый автор того же тезиса.
+- **Не превращать компиляцию в цельный замысел Афанасия:** даже если в поздней компиляции есть мощная заместительная лексика или экзегеза конкретных «всех», её нельзя использовать для реконструкции позиции исторического Афанасия без установления настоящего авторского источника отдельных фраз.
+- **Не спутать два названия с «De incarnatione»:** *De incarnatione et contra Arianos* (CPG2806, PG26) не есть *De incarnatione Verbi* (CPG2091, PG25), а *Sermo maior de fide* — ещё третий текст.
+- **Приоритет дальнейшего исследования:** проверить критический Ettlinger 1975 с атрибуционными рубриками, Schwartz 1925 и Casey 1947 по *Sermo maior*, критические Thomson 1971 / Kannengiesser SC199 1973/2000 по длинной/короткой редакциям и реальную степень литературной зависимости.
+
+### 5. Точный уровень подтверждения и HOLD
+
+**Проверено:** QUASTEN_ATHANASIUS_SERMO_MAIOR_SPURIOUS_SCHOLARLY_CONCLUSION; NEWADVENT_THEODORET_ERANISTES_III_SEPARATE_SOURCE_RUBRICS_READ; HAB_ERANISTES_II_PG83_180_SERMO_MAIOR_PG26_1283_EDITORIAL_LOCATOR; BIBLINDEX_CPG2806_MARCELLUS_CATALOGUE_ATTRIBUTION; E_CODICES_CPG2806_ATHANASIUS_SPURIOUS_MARCELLUS_IDENTIFICATION_CONTESTED.
+
+**НЕ доказано:** какие варианты *Sermo maior* действительно принадлежат перу Маркелла или Евстафия; совпадение всех цитат Феодорита с первоначальными оригиналами без критических изданий; что конкретная выдержка *Eranistes* III «against the Arians» обязательно совпадает с CPG2806; фотоколляция PG25/26/83, Ettlinger 1975, Casey 1947, Schwartz 1925 и критического аппарата Thomson/Kannengiesser. **PSEUDO_ATHANASIUS_SOURCING_HOLD / AUTHORSHIP_UNCERTAINTY / ANCIENT_RECENSION_HOLD / FACSIMILE_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD.**
+
+**Изменён только этот исторический evidence-файл существующего PR #309; научные и публикационные ограничения остаются, publicationEligible=false, NO NEW BRANCH/PR, NO READER/REGISTRY/SSOT/CI/PRODUCT, NO MERGE, NO PUBLICATION.**
