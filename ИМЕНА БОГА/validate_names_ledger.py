@@ -343,6 +343,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-MT-MECHON": "DIGITAL_TEXT_SURFACE_ONLY",
     "SRC-KROGEVOLL-TORONTO-PHD-2022-EL-SHADDAI": "ATTRIBUTED_KROGEVOLL_2022_COMPLETE_PHD_SHADDAI_MOUNTAIN_CONTACT_HYPOTHESIS",
     "SRC-BROOKE-MCLEAN-LXX-EX17-16-CAMBRIDGE-1909-P211": "CAMBRIDGE_1909_PRINTED_LXX_EX17_16_CRITICAL_VARIANTS_DIRECT_FACSIMILE_NOT_GOTTINGEN_OR_MANUSCRIPT",
+    "SRC-WEVERS-GOTTINGEN-EXODUS-1991-AUTHOR-INTRO-EN2006": "WEVERS1991_ENGLISH_AUTHOR_INTRO_METHOD_APP_I_APP_II_GREEK_VARIANT_FIELD_DEPENDENCE_NO_EX17_LOCUS_APPARATUS",
     "SRC-KRUGER-SHADDAY-JOB-2023-CONTEXT-CRITIQUE": "ATTRIBUTED_MODERN_JOB_SHADDAY_PRAGMATICS_WITH_VERIFIED_TEXTUAL_COUNTERCHECK",
     "SRC-OFER-TEXTUS26-2016-ALEPPO-EX8-FRAGMENT": "OFER2016_EXODUS8_SURVIVING_ORIGINAL_FRAGMENT_PARTIAL_CHECK_OF_SAPHIR_ZER_QUESTIONS_NOT_EXODUS17_16_FOLIO",
     "SRC-VANWOLDE-2021": "ATTRIBUTED_SECONDARY_EXEGESIS",
@@ -1435,6 +1436,36 @@ def validate_source_access(sources: dict) -> list[str]:
                     or not isinstance(checked, dict)
                     or any(checked.get(key) != value for key, value in expected.items())):
                 errors.append(f"{prefix}: Ofer2016 Exodus8 surviving fragment does not prove lost Exodus17:16, Yeivin82, palaeographic autopsy or image rights")
+
+        if rid == "SRC-WEVERS-GOTTINGEN-EXODUS-1991-AUTHOR-INTRO-EN2006":
+            method = source.get("editorialMethodFacts20261112")
+            expected = {
+                "printedEditionYear": 1991,
+                "authorEnglishTranslationYear": 2006,
+                "authorEnglishTranslationDirectlyRead": True,
+                "originalPrintedGreekVerseEx17_16Read": False,
+                "original1991CriticalApparatusEx17_16Read": False,
+                "apparatus1RecordsSubstantiveVariantsNotEveryItacism": True,
+                "apparatus2GenerallyMarginalAndLaterTranslators": True,
+                "aquilaSiglum": "α'",
+                "symmachusSiglum": "σ'",
+                "theodotionSiglum": "θ'",
+                "threeGreekTranslatorsSiglum": "οἱ γ'",
+                "field1875ComparedByEditor": True,
+                "field1875IndependentNewPhysicalManuscript": False,
+                "brookeMclean1909SameCriticalEditionAs1991": False,
+                "criticalManuscriptsPersonallyCollated": False,
+                "photographRightsApproved": False,
+            }
+            if (source.get("url") != "https://ccat.sas.upenn.edu/rak/temp/Wevers-Exod-n.html"
+                or source.get("accessState") != "PARTIAL_OBJECT"
+                or source.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+                or source.get("rightsState") != "RIGHTS_UNKNOWN"
+                or source.get("publicationState") != "BLOCKED"
+                or source.get("criticalEditionCollated") is not False
+                or not isinstance(method, dict)
+                or any(method.get(key) != value for key, value in expected.items())):
+                errors.append(f"{prefix}: Wevers 1991 apparatus introduction does not establish Exodus17:16 variant, Field independence or photo rights")
 
         for name in ("title", "creator", "url", "objectType",
                      "supportedUse", "forbiddenUse", "sourceObjectState"):
