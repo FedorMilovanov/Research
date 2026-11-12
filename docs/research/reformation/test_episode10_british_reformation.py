@@ -34,6 +34,65 @@ class EnglandScotlandTests(unittest.TestCase):
             self.assertIn("PUBLICATION_HOLD",s[k]["holds"])
         self.assertIn("skipped numeral 13",s["REF-P25-1567"]["verificationNote"].lower())
 
+    def test_wave454_uniformity_1559_law_not_parish_enforcement(self):
+        """The full edited statute supports a sanction, not observed payment."""
+        chapter = CH.read_text(encoding="utf-8")
+        reader, apparatus = chapter.split("## Источниковедческий аппарат", 1)
+        section = reader.split(
+            "## Елизавета I: Supreme Governor и новая форма единства", 1
+        )[1].split("## Сорок две, тридцать восемь, тридцать девять", 1)[0]
+        for fact in (
+            "Act of Uniformity 1559",
+            "праздника Рождества Иоанна Крестителя",
+            "по воскресеньям и церковным праздникам",
+            "12 пенсов",
+            "приходские старосты",
+            "бедным того же прихода",
+            "а не подтверждает, сколько штрафов фактически собрали",
+            "приходские счета",
+        ):
+            with self.subTest(fact=fact):
+                self.assertIn(fact.lower(), section.lower())
+        self.assertNotIn("все прихожане уплатили", section.lower())
+        registry = json.loads(
+            (D / "source-registry-v1.json").read_text(encoding="utf-8")
+        )
+        sources = {x["id"]: x for x in registry["sources"]}
+        self.assertEqual(registry["sourceCount"], len(registry["sources"]))
+        self.assertEqual(len(sources), registry["sourceCount"])
+        self.assertGreaterEqual(registry["sourceCount"], 218)
+        primary = sources["REF-P93"]
+        self.assertEqual(primary["documentYear"], 1559)
+        self.assertEqual(primary["evidenceClass"], "A2")
+        self.assertEqual(primary["accessState"], "PARTIAL_OBJECT")
+        self.assertEqual(primary["locatorState"], "EXACT_LOCATOR_VERIFIED")
+        self.assertEqual(primary["rightsState"], "RIGHTS_UNKNOWN")
+        for hold in ("EVIDENCE_HOLD", "ARCHIVE_HOLD",
+                     "RIGHTS_HOLD", "PUBLICATION_HOLD"):
+            self.assertIn(hold, primary["holds"])
+        for marker in ("Gee", "458", "463", "ORIGINAL_ACT_PHYSICAL_UNREAD",
+                       "LOCAL_PARISH_ENFORCEMENT_UNVERIFIED"):
+            self.assertIn(marker, primary["verificationNote"])
+            self.assertIn(marker, apparatus)
+        self.assertEqual(sources["REF-S84"]["evidenceClass"], "B1")
+        self.assertEqual(sources["REF-S84"]["accessState"], "PARTIAL_OBJECT")
+        ledger = (D / "03_claim_verification_register.md").read_text(
+            encoding="utf-8"
+        )
+        claim = next(x for x in ledger.splitlines() if x.startswith("| C283 |"))
+        for marker in ("REF-P93", "12 пенсов", "приходскими старостами",
+                       "REJECTED_FORMULATION", "LOCAL_PARISH_ENFORCEMENT_UNVERIFIED"):
+            self.assertIn(marker, claim)
+        sweep = (D / "HOLD_SOURCE_SWEEP_2026-11-11.md").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("## Волна 454 — Елизавета I 1559", sweep)
+        self.assertIn("LOCAL_PARISH_ENFORCEMENT_UNVERIFIED", sweep)
+        self.assertEqual(
+            sum("PUBLICATION_HOLD" in x["holds"] for x in registry["sources"]),
+            registry["sourceCount"],
+        )
+
     def test_claim_guards_and_published_chapter_numbering(self):
         ledger=(D/"03_claim_verification_register.md").read_text(encoding="utf-8")
         for n in range(282,292):self.assertIn("| C%d |"%n,ledger)
