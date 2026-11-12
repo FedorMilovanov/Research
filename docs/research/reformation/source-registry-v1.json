@@ -4171,7 +4171,7 @@
     },
     {
       "id": "REF-S109",
-      "documentYear": 2026,
+      "documentYear": null,
       "title": "Stadt Weinsberg, Historischer Hintergrund: 500 Jahre Bauernkrieg / Weinsberger Blutostern; parallel official municipal Geschichte summary (history sections)",
       "evidenceClass": "B1",
       "accessState": "PARTIAL_OBJECT",
@@ -4185,7 +4185,7 @@
         "PUBLICATION_HOLD"
       ],
       "url": "https://www.weinsberg.de/freizeit-und-kultur/500-jahre-bauernkrieg-weinsberger-blutostern/historischer-hintergrund/?sds=1",
-      "verificationNote": "WAVE453 2026-11-12: directly read official municipal Weinsberg Historischer Hintergrund historical narrative (section 'Welche Folgen hatte das Weinsberger Blutostern?') and separate official municipal Geschichte page https://www.weinsberg.de/weinsberg-die-weibertreustadt/geschichte/?sds=1 (section Stadt Weinsberg). They report that troops of the Swabian League burned Weinsberg on 21 May 1525 after the 16 April killings of Ludwig von Helfenstein and other captured nobles, the town lost its rights/privileges, and city rights were restored only in 1553 under Duke Christoph. This is a DIRECT WEB READ of two modern municipal B1 SYNTHESIS webpages, NOT a direct inspection of 1525 Swabian League orders, court records, citizen dossiers or a 1553 charter. Municipal historical narratives differ on broad exculpatory language for residents; a collective civic penalty cannot establish individual guilt of every resident. Regional LEO-BW search-index excerpts corroborate date and civic sanction but its full page returned HTTP 403 on direct access; do NOT claim direct LEO-BW document reading. Nor does chronology show Luther's pamphlet directly ordered the burning. WEINSBERG_1525_05_21_SWABIAN_LEAGUE_MUNICIPAL_SECONDARY / CIVIC_RIGHTS_RESTORED_1553 / INDIVIDUAL_CULPABILITY_NOT_INFERRED / ORIGINAL_PUNITIVE_ORDER_UNREAD / ARCHIVE_HOLD / EVIDENCE_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD.",
+      "verificationNote": "WAVE453, accessed/checked 2026-11-12; publication year of the undated municipal webpages is NOT VERIFIED: directly read official municipal Weinsberg Historischer Hintergrund historical narrative (section 'Welche Folgen hatte das Weinsberger Blutostern?') and separate official municipal Geschichte page https://www.weinsberg.de/weinsberg-die-weibertreustadt/geschichte/?sds=1 (section Stadt Weinsberg). They report that troops of the Swabian League burned Weinsberg on 21 May 1525 after the 16 April killings of Ludwig von Helfenstein and other captured nobles, the town lost its rights/privileges, and city rights were restored only in 1553 under Duke Christoph. This is a DIRECT WEB READ of two modern municipal B1 SYNTHESIS webpages, NOT a direct inspection of 1525 Swabian League orders, court records, citizen dossiers or a 1553 charter. Municipal historical narratives differ on broad exculpatory language for residents; a collective civic penalty cannot establish individual guilt of every resident. Regional LEO-BW search-index excerpts corroborate date and civic sanction but its full page returned HTTP 403 on direct access; do NOT claim direct LEO-BW document reading. Nor does chronology show Luther's pamphlet directly ordered the burning. WEINSBERG_1525_05_21_SWABIAN_LEAGUE_MUNICIPAL_SECONDARY / CIVIC_RIGHTS_RESTORED_1553 / INDIVIDUAL_CULPABILITY_NOT_INFERRED / ORIGINAL_PUNITIVE_ORDER_UNREAD / ARCHIVE_HOLD / EVIDENCE_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD.",
       "checkedAt": "2026-11-12"
     }
   ]
