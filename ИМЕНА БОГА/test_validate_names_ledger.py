@@ -2815,6 +2815,14 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
             ("publicReplicaOrPhotoRightsCleared", True),
             ("independentScientificPeerApproval", True),
             ("productPublishingApproval", True),
+            ("editorialVerseByVerseMAMApparatusDirectlyRead", False),
+            ("editorialMAMSiglumBetEqualsOr4445", False),
+            ("editorialMAMOr4445ReadingJoinedOneWord", False),
+            ("editorialMAMOr4445MasorahQuoted", "תרתין מלין"),
+            ("twoPublishedComparisonsConcurJoinedOneWord", False),
+            ("formerAutomatedPhotoTwoWordClaimReliable", True),
+            ("independentPhotoAutopsyStillUnfinished", False),
+            ("editorialConsensusIsAnIndependentPhotoCollationByUs", True),
         )
         for field, wrong in mutations:
             with self.subTest(photo_field=field):
@@ -2882,6 +2890,51 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                 row[field] = invalid
                 self.assertTrue(any("Dovi editorial masorah cannot become" in e
                                     for e in validate_source_access(changed)))
+        self.assertEqual([], validate_source_access(self.sources))
+
+
+    def test_mam_ex17_original_editorial_apparatus_sigla_are_not_our_manuscript_autopsy(self) -> None:
+        source_id = "SRC-DOVI-MIQRA-MASORAH-CH3-EX17-16-COMPOSITE-EDITORIAL"
+        mutations = (
+            ("directOriginalEditorialVerseApparatusRead", False),
+            ("criticalApparatusDirectUrl", "https://example.invalid"),
+            ("manuscriptSiglaDirectUrl", "https://example.invalid"),
+            ("exactVerse", "Exodus 17:15"),
+            ("defaultTwoWords", "כֵּ֣סְיָ֔הּ"),
+            ("attributedJoined", "כֵּ֣ס יָ֔הּ"),
+            ("twoWordPhysicalSigla", ["א"]),
+            ("oneWordPhysicalSiglaIncludes", ["ל"]),
+            ("londonCodexSiglum", "ל"),
+            ("londonCodexShelfmark", "Aleppo Codex"),
+            ("londonCodexEditorialJoined", False),
+            ("londonCodexMasorahQuote", "תרתין מלין"),
+            ("cairoCodexSiglum", "ל"),
+            ("cairoMasorahQuote", "למער' תרתין מלין למדנח' חדא מלה"),
+            ("aleppoReportedSigla", ["א"]),
+            ("aleppoSaphirHistoricalTestimonyNotLostLeaf", False),
+            ("aleppoKimhiHistoricalTestimonyNotLostLeaf", False),
+            ("historicalAleppoEx17FolioPhotographed", True),
+            ("reportedGreekAndHebrewPhysicalWitnessesIndependentlyCollatedByUs", True),
+            ("editionPhysicalManuscriptsAreSameAsOurAutopsy", True),
+            ("formerBrowserAgentTwoWordReadingReliable", True),
+            ("editorDiscussesDissentingVowelAccents", False),
+            ("yuvalWeissArticleCitationByEditor", "Leshonenu 88 issue 4 (2026), pp. 242–272"),
+            ("yuvalWeissOriginalArticleReadByUs", True),
+            ("yuvalWeissLaterAleppoCorrectionOnlyReportedHypothesis", False),
+            ("directOriginalBHSAndGöttingenApparatusFullyRead", True),
+            ("independentScholarlyReviewPassed", True),
+            ("independentPhysicalPhotoCollationCompleted", True),
+            ("originalAncientMasorahMarginaliaDecodedByUs", True),
+            ("photographReuseRightsCleared", True),
+            ("productApproved", True),
+        )
+        for field, invalid in mutations:
+            with self.subTest(mam_apparatus_field=field):
+                changed = copy.deepcopy(self.sources)
+                row = next(x for x in changed["records"] if x["id"] == source_id)
+                row["editorialVerseCriticalApparatusAudit20261113"][field] = invalid
+                self.assertTrue(any("MAM original verse apparatus and sigla are editorial witness reports" in err
+                                    for err in validate_source_access(changed)))
         self.assertEqual([], validate_source_access(self.sources))
 
 
