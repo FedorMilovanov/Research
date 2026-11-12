@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 120,
+    "sourceRecords": 121,
     "approvedForProduct": 0
   },
   "records": [
@@ -4564,6 +4564,49 @@
       }
     },
     {
+      "id": "SRC-FIELD-HEXAPLA-1875-EX17-16-PRINT-P111-BSB",
+      "title": "Frederick Field, Origenis Hexaplorum quae supersunt, vol. I, Oxford Clarendon Press, 1875, original printed Exodus 17:16, p. 111",
+      "creator": "Fredericus Field (critical/editorial compilation of Hexaplaric remains)",
+      "year": 1875,
+      "url": "https://www.digitale-sammlungen.de/en/details/bsb11340409",
+      "originalPageIiifImageUrl": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb11340409_00221/full/1400,/0/default.jpg",
+      "originalPageHighResolutionIiifImageUrl": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb11340409_00221/full/3000,/0/default.jpg",
+      "originalFullVolumeManifestUrl": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb11340409/manifest",
+      "objectType": "original_1875_scholarly_critical_compilation_print_page_111_in_920_scan_BSB_full_volume",
+      "sourceRole": "FIELD1875_ORIGINAL_PRINT_EX17_16_HEXAPLARIC_EDITORIAL_COMPILATION_NOT_INDEPENDENT_GREEK_CODEX_OR_ALEPPO_LEAF",
+      "evidenceClass": "A2",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "criticalEditionCollated": false,
+      "locator": "Vol. I, EXODUS printed p111, right column at verse 16 and lower right apparatus footnotes 16–17. Bavarian State Library bsb11340409 canvas (0221), image bsb11340409_00221, direct visual inspection of the 1400px/3000px original page images from BSB IIIF. Original volume has 806 printed body pages, digitized with 920 IIIF scans; earlier 207-page earlychurch PDF was incomplete and not sufficient for Ex17:16.",
+      "sourceObjectState": "The 1875 original printed page 111 directly inspected by reading BSB IIIF JPEGs. It reproduces Hebrew כי יד על כס יה, gives Field's Latin Et dixit: Manus est super thronum Jah, and an alternative 'Manus est super vexillum (נס) Jah', and juxtaposes Greek 'καὶ εἶπεν, ὅτι ἐν χειρὶ κρυφαίᾳ' and other alternatives. In printed note17 Field explicitly says 'Nescio an Symmachi sit' for the separate reading, so its attribution is editorially uncertain; note16 qualifies source attribution of additions. This documents Field's historical 1875 presentation, not an autopsy of any surviving Greek codex, not an original lost Aleppo Exodus17:16 leaf, not the actual apparatus of the separate Göttingen1991 edition, not a proof of an original Hebrew Vorlage. The full 806-page first volume was NOT read, only exact original page and adjacent printed context. BSB IIIF catalogue/image access does not establish rights for republication of its scan.",
+      "supportedUse": "Cite what Field actually printed on Exodus17:16 original p111, including Latin throne/banner alternatives, Greek κρυφαίᾳ tradition and printed note17 explicit Symmachus-attribution uncertainty. Compare selectively with Brooke–McLean1909 p211 and Wevers1991 apparatus methodology, counting editorial printing versus actual independently collated manuscript witnesses separately. Identify this as a historical critical-editorial source, not ancient original parchment.",
+      "forbiddenUse": "Claim Field saw a surviving original Aleppo Exodus17:16 leaf, that the reading כסיה / כס יה of the lost Keter is directly proved by this 1875 page, that each later editor repeats an independently collated ancient codex, that Greek text of Field proves a single original Hebrew Vorlage, that the alternate banner reading is accepted Hebrew MT, that Field's disputed Symmachus attribution is settled, that Göttingen1991 Exod17:16 apparatus or Yeivin82/Breuer260–261 have been read, or that rights for BSB page reproduction or Product/site publication have been granted.",
+      "pageAutopsy20261112": {
+        "original1875PrintedPage111ImageVisuallyRead": true,
+        "bsbCompleteVolumeIIIFCanvases": 920,
+        "originalPageImageId": "bsb11340409_00221",
+        "englishLatinThroneGloss": "Manus est super thronum Jah",
+        "englishLatinAlternative": "Manus est super vexillum Jah",
+        "originalPageGreekContainsKryphaia": true,
+        "editorialSymmachusAttributionDefinitelyCertain": false,
+        "editorExpressesSymmachusDoubtInNote17": true,
+        "oldPartial207PagePDFCoveredEx17_16": false,
+        "originalAncientAleppoEx17_16FolioVisuallyRead": false,
+        "originalGreekCodicesIndependentlyCollated": false,
+        "wevers1991Ex17_16OriginalApparatusRead": false,
+        "paleographicCollationCompleted": false,
+        "bsbDigitalImageRepublicationPermissionGranted": false
+      }
+    },
+    {
       "id": "SRC-KRUGER-SHADDAY-JOB-2023-CONTEXT-CRITIQUE",
       "title": "Preliminary ideas on a substratum text of Job and the depiction of Šaddāy",
       "creator": "Margaretha J. Kruger",
@@ -4610,5 +4653,5 @@
       }
     }
   ],
-  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716 | WAVE49_2026-11-11_OFER2003_YEIVIN82_AUTHOR_CROSSWALK_PSALM_ISAIAH_NOT_EXODUS | WAVE50_2026-11-11_PESACHIM117A_TASHBETZ_I177_AHS_YD27524_HISTORICAL_DISPUTE_NOT_CODEX_AUTOPSY | WAVE54_2026-11-11_HUJI_OFER2002_25P_ENGLISH_EX17_16_SINGLE_CONCORDANT_NOT_DISCREPANT_HOLDS | W59_2026-11-12_OFER2016_ORIGINAL_TEXTUS26_EXODUS8_SELECT_PAGE_FACSIMILES_HISTORY_QUESTION_PARTIAL_SUPPORT_NOT_EX17 | W60_2026-11-12_WEVERS1991_ENGLISH_AUTHOR_INTRO2006_APP1_APP2_FIELD_COMPARE_NOT_EX17_APPARATUS"
+  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716 | WAVE49_2026-11-11_OFER2003_YEIVIN82_AUTHOR_CROSSWALK_PSALM_ISAIAH_NOT_EXODUS | WAVE50_2026-11-11_PESACHIM117A_TASHBETZ_I177_AHS_YD27524_HISTORICAL_DISPUTE_NOT_CODEX_AUTOPSY | WAVE54_2026-11-11_HUJI_OFER2002_25P_ENGLISH_EX17_16_SINGLE_CONCORDANT_NOT_DISCREPANT_HOLDS | W59_2026-11-12_OFER2016_ORIGINAL_TEXTUS26_EXODUS8_SELECT_PAGE_FACSIMILES_HISTORY_QUESTION_PARTIAL_SUPPORT_NOT_EX17 | W60_2026-11-12_WEVERS1991_ENGLISH_AUTHOR_INTRO2006_APP1_APP2_FIELD_COMPARE_NOT_EX17_APPARATUS | W61_2026-11-12_FIELD1875_ORIGINAL_BSB_FULL_VOLUME_PAGE111_EX17_16_ACTUAL_PRINT_SYMMACHUS_UNCERTAIN_NOT_ALEPPO_GOTTINGEN"
 }
