@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 126,
+    "sourceRecords": 127,
     "approvedForProduct": 0
   },
   "records": [
@@ -4889,7 +4889,56 @@
         "independentScientificPeerApproval": false,
         "productPublishingApproval": false
       }
+    },
+    {
+      "id": "SRC-DOVI-MIQRA-MASORAH-CH3-EX17-16-COMPOSITE-EDITORIAL",
+      "title": "Dovi, Miqra according to the Masorah (מקרא על פי המסורה), author's own Introduction Chapter 3, Conjoined Words in the Torah item 5, Exodus 17:16",
+      "creator": "Dovi (Wikisource Hebrew Bible edition editor, not verified independent academic peer-reviewed authority)",
+      "year": null,
+      "url": "https://en.wikisource.org/wiki/User:Dovi/Miqra_according_to_the_Masorah/Introduction/Chapter_3",
+      "originalLanguageMethodology": "https://he.wikisource.org/wiki/משתמש:Dovi/מקרא_על_פי_המסורה/מידע_על_מהדורה_זו/פרק_ג",
+      "verseSpecificEditedReading": "https://he.wikisource.org/wiki/שמות_יז/טעמים",
+      "sourceRole": "DOVI_ONLINE_EDITORIAL_MASORAH_METHOD_11_COMPOSITE_FORMS_EX17_16_TWO_VERSUS_REPORTED_ALEPPO_ONE_WORD_NOT_ANCIENT_CODEX",
+      "evidenceClass": "A2",
+      "objectType": "AUTHOR_EDITORIAL_INTRODUCTION_ON_USER_HOSTED_WIKISOURCE_SECTION_NOT_OLD_MANUSCRIPT_FACSIMILE",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "locator": "English editor-authored Wikisource chapter 3 §Conjoined Words in the Torah, enumerated 11 variant composite forms, item 5 Exodus/Beshellah17:16, its explanatory paragraph immediately after the 11 items. Hebrew original §תיבות מחוברות בתורה item5; independently opened and verified. Publisher/author uses [כֵּ֣ס יָ֔הּ]*=L (=Yemenite, Sephardi, Ashkenazi scroll editions), contrasted [כֵּ֣סְיָ֔הּ] (=A(S), attributed Aleppo witness/testimony rather than preserved now lost folio). Edition's default prints separate, caveats Yemenite scribal tradition is not decisive for Aleppo joining.",
+      "sourceObjectState": "Author's own online editorial methodology fully read for relevant directly accessible Chapter3 §Conjoined Words section. Editorial list comprises eleven composite-word cases, not eleven independent ancient manuscript collations. Both Hebrew original section and English translation align on Ex17:16 word-division and methodology. Witness siglum A(S) retained literally without inferring photo of lost Aleppo Exodus17 folio; editor uses testimony about Aleppo, not firsthand user viewing. This user-hosted public editorial work is not a signed independent academic peer-review or copyright rights clearance, and does not resolve BL Or4445 f59v original photographic reading versus a separate comparing editor's table.",
+      "supportedUse": "Quote and attribute Dovi edition's choice of two separate words in customary scroll traditions and L and its A(S)-labelled reported joined Aleppo reading; cite 11-entry methodological typology and Dovi caveat that Yemenite scroll tradition alone does NOT prove Aleppo word division. Distinguish this new editorial source from ancient physical manuscript source objects and the independent Or4445 unresolved conflict.",
+      "forbiddenUse": "Claim Dovi witnessed lost Aleppo Exodus17:16 folio, that Dovi's online user-edited methodology is an externally peer-reviewed scientific judgement, that modern Dovi/BIU/BHS/WLC websites each count as independent physical Hebrew manuscripts, that 11 composite word examples imply 11 independent ancient witnesses, that Dovi settles original physical Or4445 f59v joined-vs-separate reading, or that digital display grants rights and Product publishing approval.",
+      "authorEditorialMethodAudit20261113": {
+        "originalHebrewAndEnglishChapterThreeDirectlyRead": true,
+        "editorDoviUserHostedWikisourceNotInstitutionalPeerReviewed": true,
+        "sectionTitle": "Conjoined Words in the Torah",
+        "authorEnumeratesCompositeCases": 11,
+        "verse": "Exodus 17:16",
+        "printedMainReadingTwoWords": "כֵּ֣ס יָ֔הּ",
+        "reportedAlternativeJoinedReading": "כֵּ֣סְיָ֔הּ",
+        "separateReadingAscribedToLeningrad": true,
+        "separateReadingAscribedToYemeniteSephardiAshkenazi": true,
+        "joinedReadingSiglum": "A(S)",
+        "joinedReadingIsReportedAleppoNotExistingFolio": true,
+        "editorStatesYemeniteScrollsNotDecisiveForAleppoWordJoining": true,
+        "onlineTextIsPhysicalAncientManuscript": false,
+        "elevenExamplesAreElevenOriginalManuscripts": false,
+        "editorialSourceResolvesOr4445PhotoConflict": false,
+        "lostAleppoExodus1716LeafExamined": false,
+        "originalBHSAndGöttingenPrintedApparatusCollated": false,
+        "independentCriticalManuscriptCollationCompleted": false,
+        "externalScientificPeerReviewApproved": false,
+        "textOrPhotoReuseRightsApproved": false,
+        "productPublishingApproved": false
+      }
     }
   ],
-  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716 | WAVE49_2026-11-11_OFER2003_YEIVIN82_AUTHOR_CROSSWALK_PSALM_ISAIAH_NOT_EXODUS | WAVE50_2026-11-11_PESACHIM117A_TASHBETZ_I177_AHS_YD27524_HISTORICAL_DISPUTE_NOT_CODEX_AUTOPSY | WAVE54_2026-11-11_HUJI_OFER2002_25P_ENGLISH_EX17_16_SINGLE_CONCORDANT_NOT_DISCREPANT_HOLDS | W59_2026-11-12_OFER2016_ORIGINAL_TEXTUS26_EXODUS8_SELECT_PAGE_FACSIMILES_HISTORY_QUESTION_PARTIAL_SUPPORT_NOT_EX17 | W60_2026-11-12_WEVERS1991_ENGLISH_AUTHOR_INTRO2006_APP1_APP2_FIELD_COMPARE_NOT_EX17_APPARATUS | W61_2026-11-12_FIELD1875_ORIGINAL_BSB_FULL_VOLUME_PAGE111_EX17_16_ACTUAL_PRINT_SYMMACHUS_UNCERTAIN_NOT_ALEPPO_GOTTINGEN | W62_2026-11-12_KITTEL_BHK2_1909_P99_PRINT_APP_NOT_1937_AND_OFFICIAL_BHS1977_1997_TEXT_NOT_APP | W64_2026-11-13_BIU_MGKETER_COCHEN_MODERN_EDITORIAL_ONEWORD_EX17_VS_BHS_TWOWORD_NOT_ALEPPO | W65_2026-11-13_LENINGRAD_B19A_042A_WSRP_ORIGINAL_PHOTO_LOCUS_TEI_COL1_LINES15_16_DISTINGUISHED_FROM_NATIVE_PIXEL_COLLATION | W66_2026-11-13_OR4445_BL_59V_OPENN_PHOTO_LOCATOR_ORIGINAL_WORDDIVISION_CONFLICT_UNRESOLVED"
+  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716 | WAVE49_2026-11-11_OFER2003_YEIVIN82_AUTHOR_CROSSWALK_PSALM_ISAIAH_NOT_EXODUS | WAVE50_2026-11-11_PESACHIM117A_TASHBETZ_I177_AHS_YD27524_HISTORICAL_DISPUTE_NOT_CODEX_AUTOPSY | WAVE54_2026-11-11_HUJI_OFER2002_25P_ENGLISH_EX17_16_SINGLE_CONCORDANT_NOT_DISCREPANT_HOLDS | W59_2026-11-12_OFER2016_ORIGINAL_TEXTUS26_EXODUS8_SELECT_PAGE_FACSIMILES_HISTORY_QUESTION_PARTIAL_SUPPORT_NOT_EX17 | W60_2026-11-12_WEVERS1991_ENGLISH_AUTHOR_INTRO2006_APP1_APP2_FIELD_COMPARE_NOT_EX17_APPARATUS | W61_2026-11-12_FIELD1875_ORIGINAL_BSB_FULL_VOLUME_PAGE111_EX17_16_ACTUAL_PRINT_SYMMACHUS_UNCERTAIN_NOT_ALEPPO_GOTTINGEN | W62_2026-11-12_KITTEL_BHK2_1909_P99_PRINT_APP_NOT_1937_AND_OFFICIAL_BHS1977_1997_TEXT_NOT_APP | W64_2026-11-13_BIU_MGKETER_COCHEN_MODERN_EDITORIAL_ONEWORD_EX17_VS_BHS_TWOWORD_NOT_ALEPPO | W65_2026-11-13_LENINGRAD_B19A_042A_WSRP_ORIGINAL_PHOTO_LOCUS_TEI_COL1_LINES15_16_DISTINGUISHED_FROM_NATIVE_PIXEL_COLLATION | W66_2026-11-13_OR4445_BL_59V_OPENN_PHOTO_LOCATOR_ORIGINAL_WORDDIVISION_CONFLICT_UNRESOLVED | W67_2026-11-13_DOVI_AUTHOR_EDITORIAL_11_COMPOSITE_WORDS_TWO_VS_REPORTED_ALEPPO_ONE_NOT_PHOTO"
 }
