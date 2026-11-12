@@ -347,6 +347,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-FIELD-HEXAPLA-1875-EX17-16-PRINT-P111-BSB": "FIELD1875_ORIGINAL_PRINT_EX17_16_HEXAPLARIC_EDITORIAL_COMPILATION_NOT_INDEPENDENT_GREEK_CODEX_OR_ALEPPO_LEAF",
     "SRC-KITTEL-BHK2-1909-EX17-16-P99-ORIGINAL-APP": "KITTEL_BHK2_1909_ORIGINAL_PRINT_P99_EX17_16_VARIANT_APPARATUS_NOT_BHK3_1937_OR_BHS1977_OR_ALEPPO",
     "SRC-DBG-BHS-EX17-16-PUBLISHER-TEXT": "DEUTSCHE_BIBELGESELLSCHAFT_BHS_EX17_16_PUBLISHER_MAIN_TEXT_TWO_WORDS_NO_APPARATUS_SHOWN",
+    "SRC-MGKETER-BIU-COHEN-EX17-16-ONLINE-ONE-WORD": "BIU_MGKETER_COHEN_ONLINE_EX17_16_ONE_WORD_EDITORIAL_RECONSTRUCTION_NOT_LOST_ALEPPO_FOLIO",
     "SRC-KRUGER-SHADDAY-JOB-2023-CONTEXT-CRITIQUE": "ATTRIBUTED_MODERN_JOB_SHADDAY_PRAGMATICS_WITH_VERIFIED_TEXTUAL_COUNTERCHECK",
     "SRC-OFER-TEXTUS26-2016-ALEPPO-EX8-FRAGMENT": "OFER2016_EXODUS8_SURVIVING_ORIGINAL_FRAGMENT_PARTIAL_CHECK_OF_SAPHIR_ZER_QUESTIONS_NOT_EXODUS17_16_FOLIO",
     "SRC-VANWOLDE-2021": "ATTRIBUTED_SECONDARY_EXEGESIS",
@@ -1529,6 +1530,35 @@ def validate_source_access(sources: dict) -> list[str]:
                     or not isinstance(kittel, dict)
                     or any(kittel.get(k) != v for k, v in kittel_required.items())):
                 errors.append(f"{prefix}: Kittel1909 BHK2 and DBG BHS edition conflation or ancient apparatus/rights overclaim")
+        if rid == "SRC-MGKETER-BIU-COHEN-EX17-16-ONLINE-ONE-WORD":
+            edited = source.get("publisherPageAudit20261113")
+            expected = {
+                "projectOfficialSiteDirectlyRead": True,
+                "editorMenahemCohenNamedByProject": True,
+                "mainBibleVerseLocator": "Exodus 17:16",
+                "mainTextUnpointedJoinedHebrew": "כסיה",
+                "mainTextOneWrittenWord": True,
+                "fourMainBibleTextModesJoined": True,
+                "editorProjectAcknowledgesReconstructingMissingAleppoPortions": True,
+                "originalAleppoEx17_16FolioSurvivesInDigitalDisplay": False,
+                "underlyingAncientAleppoFolioAutopticallyExamined": False,
+                "independentPhysicalManuscriptCollationCompleted": False,
+                "criticallyDecipheredOriginalBHSApparatus": False,
+                "criticallyDecipheredGöttingenEx17_16Apparatus": False,
+                "modernBhsPublisherPrintsSameOneWord": False,
+                "medievalCommentaryQuotationUsedAsMainVerse": False,
+                "permissionToRepublishDigitalEditionOrImagesGranted": False,
+                "externalScholarlySignoffGranted": False,
+                "productPublicationApproved": False,
+            }
+            if (source.get("accessState") != "PARTIAL_OBJECT"
+                    or source.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+                    or source.get("rightsState") != "PERMISSION_REQUIRED"
+                    or source.get("publicationState") != "BLOCKED"
+                    or source.get("criticalEditionCollated") is not False
+                    or not isinstance(edited, dict)
+                    or any(edited.get(k) != v for k, v in expected.items())):
+                errors.append(f"{prefix}: BIU HaKeter one-word modern edition falsely promoted to ancient Aleppo, BHS apparatus or publication rights")
         if rid == "SRC-DBG-BHS-EX17-16-PUBLISHER-TEXT":
             bhs = source.get("publisherPageCheck20261112")
             bhs_required = {
