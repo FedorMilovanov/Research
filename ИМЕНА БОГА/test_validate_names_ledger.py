@@ -2648,5 +2648,53 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertEqual([], validate_source_access(self.sources))
 
 
+    def test_kittel_bhk2_1909_not_bhk3_1937_or_manuscript_autopsy(self) -> None:
+        id = "SRC-KITTEL-BHK2-1909-EX17-16-P99-ORIGINAL-APP"
+        mutations = (
+            ("titlePageEditionYear", 1937),
+            ("titlePageSecondEditionVisuallyRead", False),
+            ("originalExodus17_16PagePrinted", 260),
+            ("pdfPageIndexZeroBased", 115),
+            ("originalPageAndApparatusVisuallyReviewed", False),
+            ("allTinyApparatusSiglaDeciphered", True),
+            ("correctlyIdentifiedAsBHK3_1937", True),
+            ("originalLeningradManuscriptPixelsExamined", True),
+            ("originalAleppoManuscriptEx17_16Seen", True),
+            ("independentAncientManuscriptCollation", True),
+            ("fullCriticalApparatusOfBHSRead", True),
+            ("scanRightsIndependentlyCleared", True),
+        )
+        for key, invalid in mutations:
+            with self.subTest(key=key):
+                copy_sources = copy.deepcopy(self.sources)
+                source = next(x for x in copy_sources["records"] if x["id"] == id)
+                source["pageAutopsy20261112"][key] = invalid
+                self.assertTrue(any("Kittel1909 BHK2 and DBG BHS edition conflation" in e
+                                    for e in validate_source_access(copy_sources)))
+        self.assertEqual([], validate_source_access(self.sources))
+
+    def test_dbg_bhs_online_reduced_view_not_critical_apparatus(self) -> None:
+        id = "SRC-DBG-BHS-EX17-16-PUBLISHER-TEXT"
+        mutations = (
+            ("publisherOriginalOnlineChapterDirectlyRead", False),
+            ("onlineReducedView", False),
+            ("mainTextWordDivisionTwoWords", False),
+            ("mainTextThroneWordHebrew", "נֵס"),
+            ("originalPrintedCriticalApparatusOnSiteVisible", True),
+            ("originalLeningradPixelsChecked", True),
+            ("originalAleppoEx17_16FolioInspected", True),
+            ("criticalManuscriptCollationCompleted", True),
+            ("rightsForProductPublicationGranted", True),
+        )
+        for key, invalid in mutations:
+            with self.subTest(key=key):
+                copy_sources = copy.deepcopy(self.sources)
+                source = next(x for x in copy_sources["records"] if x["id"] == id)
+                source["publisherPageCheck20261112"][key] = invalid
+                self.assertTrue(any("DBG BHS Ex17 reduced publisher verse text" in e
+                                    for e in validate_source_access(copy_sources)))
+        self.assertEqual([], validate_source_access(self.sources))
+
+
 if __name__ == "__main__":
     unittest.main()
