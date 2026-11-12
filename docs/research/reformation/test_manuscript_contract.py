@@ -151,6 +151,55 @@ class ReformationManuscriptTests(unittest.TestCase):
         self.assertEqual(reader.split(nav, 1)[1].strip(), "---")
         self.assertNotIn("На этом мы завершаем большое введение.", reader)
 
+    def test_wave452_intro_hands_historical_causes_to_chapter01_and_theology_to_epilogue(self):
+        """A reader-facing boundary, not a source deletion or review-gate upgrade."""
+        intro = INTRO.read_text(encoding="utf-8")
+        reader, apparatus = intro.split(
+            "## Источниковедческие и редакционные примечания", 1
+        )
+        historical = reader.split("## 17. Почему именно XVI век?", 1)[1].split(
+            "## Вместо заключения к введению", 1
+        )[0]
+        conclusion = reader.split("## Вместо заключения к введению", 1)[1]
+        chapter01 = EPISODE01.read_text(encoding="utf-8").split(
+            "## Источниковедческий аппарат", 1
+        )[0]
+        for factual_thread in ("гуманист", "княжеск", "город", "печать",
+                               "университет"):
+            with self.subTest(factual_thread=factual_thread):
+                self.assertIn(factual_thread, chapter01.lower())
+        self.assertNotIn("К концу XV столетия в западном христианстве", historical)
+        for required in (
+            "исторические причины Реформации необходимо исследовать отдельно",
+            "истории Европы около 1450–1517 годов",
+        ):
+            self.assertIn(required, historical)
+        for required in (
+            "Наша задача не доказать заранее",
+            "Исторические выводы потребуют свидетельств эпохи",
+            "оценка учения и поклонения",
+            "Христианская надежда связана с Христом",
+            "премилленаристская перспектива",
+            "альтернативные толкования Откр. 19–22",
+            "будут рассмотрены **в эпилоге**",
+        ):
+            with self.subTest(required=required):
+                self.assertIn(required.lower(), conclusion.lower())
+        self.assertNotIn("Итак, что означает Реформация?", conclusion)
+        self.assertEqual(conclusion.count("премилленарист"), 1)
+        self.assertIn("### Исторические свидетельства ранней", apparatus)
+        self.assertIn("NOT_EDITORIAL_READY", apparatus)
+        self.assertIn("PUBLICATION_HOLD", apparatus)
+        ending = (HERE / "episode12_reformation_everyday_life_1520_1600_manuscript.md"
+                  ).read_text(encoding="utf-8")
+        self.assertIn("Здесь заканчивается **двенадцатая историческая глава**.", ending)
+        self.assertIn("](epilogue_reformation_last_restoration_manuscript.md)", ending)
+        epilogue = (HERE / "epilogue_reformation_last_restoration_manuscript.md"
+                    ).read_text(encoding="utf-8")
+        self.assertIn("принято премилленаристское прочтение", epilogue)
+        self.assertIn("Амилленаристское прочтение", epilogue)
+        self.assertIn("Постмилленаристское прочтение", epilogue)
+
     def test_kings_18_22_digital_witnesses_not_conflated(self):
         """Different Synodal web editions are evidence of variance, not a collation."""
         intro = INTRO.read_text(encoding="utf-8")
