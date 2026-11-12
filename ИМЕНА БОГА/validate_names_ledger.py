@@ -349,6 +349,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-DBG-BHS-EX17-16-PUBLISHER-TEXT": "DEUTSCHE_BIBELGESELLSCHAFT_BHS_EX17_16_PUBLISHER_MAIN_TEXT_TWO_WORDS_NO_APPARATUS_SHOWN",
     "SRC-MGKETER-BIU-COHEN-EX17-16-ONLINE-ONE-WORD": "BIU_MGKETER_COHEN_ONLINE_EX17_16_ONE_WORD_EDITORIAL_RECONSTRUCTION_NOT_LOST_ALEPPO_FOLIO",
     "SRC-LENINGRAD-B19A-F042A-EX17-16-WSRP-FACSIMILE": "LENINGRAD_B19A_F042A_ORIGINAL_PHOTO_EX17_16_EXACT_LINE_MAP_NOT_PALEOGRAPHIC_CERTIFICATION_OR_ALEPPO",
+    "SRC-BL-OR4445-F59V-EX17-16-OPENN-IMAGE-UNRESOLVED": "BL_OR4445_F59V_ORIGINAL_TENTH_CENTURY_DIGITAL_FACSIMILE_EX17_16_WORD_DIVISION_UNRESOLVED_CONFLICT",
     "SRC-KRUGER-SHADDAY-JOB-2023-CONTEXT-CRITIQUE": "ATTRIBUTED_MODERN_JOB_SHADDAY_PRAGMATICS_WITH_VERIFIED_TEXTUAL_COUNTERCHECK",
     "SRC-OFER-TEXTUS26-2016-ALEPPO-EX8-FRAGMENT": "OFER2016_EXODUS8_SURVIVING_ORIGINAL_FRAGMENT_PARTIAL_CHECK_OF_SAPHIR_ZER_QUESTIONS_NOT_EXODUS17_16_FOLIO",
     "SRC-VANWOLDE-2021": "ATTRIBUTED_SECONDARY_EXEGESIS",
@@ -1531,6 +1532,40 @@ def validate_source_access(sources: dict) -> list[str]:
                     or not isinstance(kittel, dict)
                     or any(kittel.get(k) != v for k, v in kittel_required.items())):
                 errors.append(f"{prefix}: Kittel1909 BHK2 and DBG BHS edition conflation or ancient apparatus/rights overclaim")
+        if rid == "SRC-BL-OR4445-F59V-EX17-16-OPENN-IMAGE-UNRESOLVED":
+            folio = source.get("originalFacsimileCrosscheck20261113")
+            expected = {
+                "originalAncientHebrewManuscript": "British Library Or 4445",
+                "coreDateRange": "920–950 CE",
+                "originalCoreNotLater1540Replacement": True,
+                "originalFolio": "59v",
+                "opennOriginalImageId": "13291_0125.jpg",
+                "originalMasterJPEGIdentified": True,
+                "opennIndexPhotographicFolioLabelVerified": True,
+                "bibliographicExodusRange42rTo85rVerified": True,
+                "manuscriptSectionAscribedToExodus17_16BySecondaryTable": True,
+                "secondaryComparisonClaimsJoinedOneWord": True,
+                "machineBrowserImageReadingClaimsTwoSeparateWords": True,
+                "conflictResolvedByIndependentAutopsy": False,
+                "finalOriginalWordDivision": "UNRESOLVED_CONFLICT",
+                "nativePixelOriginalGlyphAndSpacingCollationCompleted": False,
+                "originalMasorahMarginaliaDecoded": False,
+                "comparativeTableIsAdditionalPhysicalManuscript": False,
+                "sameManuscriptAsLeningradB19a": False,
+                "sameManuscriptAsMissingAleppoLeaf": False,
+                "criticalManuscriptCollationCompleted": False,
+                "publicReplicaOrPhotoRightsCleared": False,
+                "independentScientificPeerApproval": False,
+                "productPublishingApproval": False,
+            }
+            if (source.get("accessState") != "PARTIAL_OBJECT"
+                    or source.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+                    or source.get("rightsState") != "RIGHTS_UNKNOWN"
+                    or source.get("publicationState") != "BLOCKED"
+                    or source.get("criticalEditionCollated") is not False
+                    or not isinstance(folio, dict)
+                    or any(folio.get(k) != v for k, v in expected.items())):
+                errors.append(f"{prefix}: Or 4445 f59v image conflict cannot be upgraded to manuscript reading, independent collation or rights approval")
         if rid == "SRC-LENINGRAD-B19A-F042A-EX17-16-WSRP-FACSIMILE":
             image = source.get("originalPhotoAndTranscriptAudit20261113")
             required = {
