@@ -348,6 +348,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-KITTEL-BHK2-1909-EX17-16-P99-ORIGINAL-APP": "KITTEL_BHK2_1909_ORIGINAL_PRINT_P99_EX17_16_VARIANT_APPARATUS_NOT_BHK3_1937_OR_BHS1977_OR_ALEPPO",
     "SRC-DBG-BHS-EX17-16-PUBLISHER-TEXT": "DEUTSCHE_BIBELGESELLSCHAFT_BHS_EX17_16_PUBLISHER_MAIN_TEXT_TWO_WORDS_NO_APPARATUS_SHOWN",
     "SRC-MGKETER-BIU-COHEN-EX17-16-ONLINE-ONE-WORD": "BIU_MGKETER_COHEN_ONLINE_EX17_16_ONE_WORD_EDITORIAL_RECONSTRUCTION_NOT_LOST_ALEPPO_FOLIO",
+    "SRC-LENINGRAD-B19A-F042A-EX17-16-WSRP-FACSIMILE": "LENINGRAD_B19A_F042A_ORIGINAL_PHOTO_EX17_16_EXACT_LINE_MAP_NOT_PALEOGRAPHIC_CERTIFICATION_OR_ALEPPO",
     "SRC-KRUGER-SHADDAY-JOB-2023-CONTEXT-CRITIQUE": "ATTRIBUTED_MODERN_JOB_SHADDAY_PRAGMATICS_WITH_VERIFIED_TEXTUAL_COUNTERCHECK",
     "SRC-OFER-TEXTUS26-2016-ALEPPO-EX8-FRAGMENT": "OFER2016_EXODUS8_SURVIVING_ORIGINAL_FRAGMENT_PARTIAL_CHECK_OF_SAPHIR_ZER_QUESTIONS_NOT_EXODUS17_16_FOLIO",
     "SRC-VANWOLDE-2021": "ATTRIBUTED_SECONDARY_EXEGESIS",
@@ -1530,6 +1531,43 @@ def validate_source_access(sources: dict) -> list[str]:
                     or not isinstance(kittel, dict)
                     or any(kittel.get(k) != v for k, v in kittel_required.items())):
                 errors.append(f"{prefix}: Kittel1909 BHK2 and DBG BHS edition conflation or ancient apparatus/rights overclaim")
+        if rid == "SRC-LENINGRAD-B19A-F042A-EX17-16-WSRP-FACSIMILE":
+            image = source.get("originalPhotoAndTranscriptAudit20261113")
+            required = {
+                "originalManuscriptIsLeningradNotAleppo": True,
+                "exactFolioNumber": "042a",
+                "traditionalPageSide": "42r",
+                "manuscriptHoldingShelfmark": "RNL Firkovich Evr I B 19a",
+                "biblicalRange": "Exodus 17:11–18:19",
+                "commonsOriginalPhotoAccessible": True,
+                "commonsOriginalImageWidthPx": 4090,
+                "commonsOriginalImageHeightPx": 4514,
+                "westSemiticResearchProjectInstitutionalPhotoProvenanceConfirmed": True,
+                "independentSourceTEIColumnNumber": 1,
+                "independentSourceTEILineEndKees": 15,
+                "independentSourceTEILineStartYah": 16,
+                "TEIEditorTextReportsTwoDistinctUnits": True,
+                "digitalTextIsASeparatePhysicalHebrewManuscript": False,
+                "imageViewedInBrowser": True,
+                "nativePixelEnlargementAndIndividualGlyphCollationCompleted": False,
+                "masoreticMarginaliaFullyDeciphered": False,
+                "fullAncientCriticalCollationCompleted": False,
+                "aleppoEx17LostLeafSeen": False,
+                "otherAncientHebrewManuscriptIndependentlyCollated": False,
+                "completeBHSAndGöttingenPrintedApparatusRead": False,
+                "originalYeivinAndBreuerTargetPagesRead": False,
+                "digitalPhotoRepublicationPermissionFullyCleared": False,
+                "independentExternalScholarlyReviewPassed": False,
+                "productPublicationApproved": False,
+            }
+            if (source.get("accessState") != "PARTIAL_OBJECT"
+                    or source.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+                    or source.get("rightsState") != "RIGHTS_UNKNOWN"
+                    or source.get("publicationState") != "BLOCKED"
+                    or source.get("criticalEditionCollated") is not False
+                    or not isinstance(image, dict)
+                    or any(image.get(k) != v for k, v in required.items())):
+                errors.append(f"{prefix}: Leningrad B19a photo and third-party line map must not become Aleppo, autopsy, second witness or rights approval")
         if rid == "SRC-MGKETER-BIU-COHEN-EX17-16-ONLINE-ONE-WORD":
             edited = source.get("publisherPageAudit20261113")
             expected = {
