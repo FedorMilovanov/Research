@@ -513,13 +513,126 @@ class JustificationBookTests(unittest.TestCase):
                 self.assertIn(f"bsb00103368_{int(frame):05d}", line)
         plan = (D / "SELF_PLAN.md").read_text(encoding="utf-8")
         current = plan.split("\n---\n", 1)[0]
+        for token in ("волна 447", "STOP_DISCOVERY"):
+            self.assertIn(token, plan)  # historical completed passport
         for token in (
-            "волна 447", "216 REF", "216 PUBLICATION_HOLD",
-            "STOP_DISCOVERY", "INDEPENDENT_EXTERNAL_REVIEW_OPEN",
+            "216 REF", "216 PUBLICATION_HOLD",
+            "INDEPENDENT_EXTERNAL_REVIEW_OPEN",
             "THEOLOGICAL_PEER_REVIEW_OPEN", "NOT_EDITORIAL_READY",
             "ORIGINAL_1530_MANUSCRIPT_HOLD",
         ):
             self.assertIn(token, current)
+
+    def test_wave448_t03_independent_review_packet_exact_witnesses_and_not_sent(self):
+        """The T-03 external review packet is actionable, but not a review.
+        It must discriminate confession/apology, distinct Trent/Heidelberg
+        editions, and never clear legal or editorial HOLDs.
+        """
+        chapter = E8.read_text(encoding="utf-8")
+        self.assertIn(
+            "Актуальный предметный статус после волны 447", chapter
+        )
+        self.assertIn(
+            "AUGSBURG_1531_LATIN_RHAU_ART_IV_V_VI_IX_XX_PRINT_IMAGES_DIRECT_REF_P92",
+            chapter,
+        )
+        self.assertIn("PARIS_1547_TWO_EDITIONS_UNCOLLATED", chapter)
+        self.assertIn("THEOLOGICAL_PEER_REVIEW_OPEN", chapter)
+        self.assertIn("NOT_EDITORIAL_READY", chapter)
+        self.assertNotIn(
+            "AUGSBURG_1530_MANUSCRIPT_1530_UNAUTHORISED_1531_AUTHORISED_PRINTS_UNCOLLATED",
+            chapter,
+        )
+
+        packet = (D / "independent_review_packets.md").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("Актуальная передача T-03 — волна 448", packet)
+        annex = packet.split(
+            "### T-03 — предметный протокол богословско-текстологической проверки",
+            1,
+        )[1].split("**Контрольные опубликованные тексты", 1)[0]
+        for source_id, bsb_id in {
+            "REF-P92": "bsb00103368",
+            "REF-P91": "bsb11411960",
+            "REF-P90": "bsb10176467",
+            "REF-P89": "catechismus1563",
+        }.items():
+            with self.subTest(witness=source_id):
+                self.assertIn(source_id, annex)
+                self.assertIn(bsb_id, annex)
+        for source, image_numbers in {
+            "bsb00103368": ("00014", "00015", "00016", "00017", "00022", "00024", "00025"),
+            "bsb11411960": ("00024", "00025", "00026"),
+            "bsb10176467": ("00027", "00028", "00031"),
+        }.items():
+            for number in image_numbers:
+                with self.subTest(original=source, scan=number):
+                    self.assertIn(source + "_" + number, annex)
+        for evidence in (
+            "Канон XIII",
+            "Canon XIII",
+            "Канон XXIV",
+            "Canon XXIV",
+            "exclusa gratia et charitate",
+            "omni homini",
+            "iustitiam acceptam",
+            "Вопросы **60–64**",
+            "оригинальными рукописями",
+            "NOT_SENT",
+            "PASS_WITH_SCOPE",
+            "CORRECTION_REQUIRED",
+            "EVIDENCE_REQUIRED",
+            "INTERPRETATION_DISPUTED",
+            "RIGHTS_HOLD",
+            "PUBLICATION_HOLD",
+        ):
+            # Language variants are checked in aggregate rather than forcing
+            # every synonymous title to appear as a duplicate literal.
+            if evidence in ("Канон XIII", "Канон XXIV", "оригинальными рукописями"):
+                continue
+            with self.subTest(evidence=evidence):
+                self.assertIn(evidence, annex)
+        for seq in range(1, 9):
+            with self.subTest(review_question=seq):
+                self.assertIn(str(seq) + ". **", annex)
+        t02 = next(x for x in packet.splitlines()
+                   if x.startswith("| T-02 /"))
+        t03 = next(x for x in packet.splitlines()
+                   if x.startswith("| T-03 /"))
+        self.assertIn("REF-P92", t02)
+        for ref in ("REF-P92", "REF-P91", "REF-P90", "REF-P89"):
+            self.assertIn(ref, t03)
+        self.assertIn("IX/XI/XIII/XXIV", t03)
+        self.assertIn("NOT_SENT", packet.split(
+            "## Актуальная передача T-03", 1
+        )[1].split("\n---\n", 1)[0])
+
+        plan = (D / "SELF_PLAN.md").read_text(encoding="utf-8")
+        current = plan.split("\n---\n", 1)[0]
+        for status in (
+            "волна 448", "216 REF", "216 PUBLICATION_HOLD",
+            "NOT_SENT", "THEOLOGICAL_PEER_REVIEW_OPEN",
+            "INDEPENDENT_EXTERNAL_REVIEW_OPEN", "NOT_EDITORIAL_READY",
+        ):
+            with self.subTest(plan=status):
+                self.assertIn(status, current)
+        for historic in ("волна 447", "волна 446", "волна 445"):
+            self.assertIn(historic, plan)
+        registry = json.loads(
+            (D / "source-registry-v1.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(registry["sourceCount"], 216)
+        self.assertEqual(len(registry["sources"]), 216)
+        self.assertEqual(
+            sum("PUBLICATION_HOLD" in x["holds"]
+                for x in registry["sources"]), 216
+        )
+        manifest = json.loads(
+            (D / "acquisition-manifest-v1.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(manifest["sourceCount"], 18)
+        self.assertEqual(manifest["fileBytesInGit"], 0)
 
     def test_registry_and_book_navigation(self):
         ledger=(D/"03_claim_verification_register.md").read_text(encoding="utf-8")
