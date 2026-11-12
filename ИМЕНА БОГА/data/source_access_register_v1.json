@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 127,
+    "sourceRecords": 128,
     "approvedForProduct": 0
   },
   "records": [
@@ -4993,7 +4993,70 @@
         "photographReuseRightsCleared": false,
         "productApproved": false
       }
+    },
+    {
+      "id": "SRC-WEISS-LESHONENU88-3-2026-EX17-16-PUBLISHER-ABSTRACT",
+      "title": "Yuval Weiss, “כי יד על כס יה” (Exod 17:16): On Writing כסיה as a Single Word in the Aleppo Codex, Leshonenu 88, issue 3 (5786/2026), printed pp. 242–272: publisher's original TOC and author abstract, not full article",
+      "creator": "Yuval Weiss",
+      "year": 2026,
+      "printJournal": "לשוננו / Leshonenu",
+      "issue": "Volume 88, number 3 (5786 / 2026)",
+      "printPages": "242–272",
+      "officialPublisherProduct": "https://hanut.hebrew-academy.org.il/product/לשוננו-פח-ג/",
+      "officialOriginalTableOfContents": "https://hanut.hebrew-academy.org.il/wp-content/uploads/2026/10/leshonenu-88-3_cont-heb.pdf",
+      "officialOriginalAuthorEnglishAbstract": "https://hanut.hebrew-academy.org.il/wp-content/uploads/2026/10/leshonenu-88-3_cont-abstracts.pdf",
+      "journalPublisherMethod": "https://hanut.hebrew-academy.org.il/product-category/לשוננו/",
+      "url": "https://hanut.hebrew-academy.org.il/wp-content/uploads/2026/10/leshonenu-88-3_cont-abstracts.pdf",
+      "sourceRole": "WEISS_2026_ORIGINAL_PUBLISHER_ENGLISH_AUTHOR_ABSTRACT_AND_OFFICIAL_TOC_NO_FULL_ARTICLE_OR_ORIGINAL_MS_AUTOPSY",
+      "evidenceClass": "A2",
+      "objectType": "DIRECT_AUTHOR_ABSTRACT_AND_PUBLISHER_TOC_FOR_PEER_REVIEWED_JOURNAL_ARTICLE_NOT_FULL_SCHOLARLY_ARTICLE",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "locator": "Academy of the Hebrew Language official Leshonenu 88(3) 2026 product page SKU43284, Hebrew table of contents PDF p1 (printed original article starts page242, followed by next article p273) and 4-page publisher English abstract PDF, author's portion pages V–VI (PDF page indices 0–1). BOTH PDFs visually rendered directly in browser screenshots. Article's own body pp242–272 NOT accessed, despite complete abstract. Peer-review journal publisher page says manuscripts submitted for anonymous expert review; this does not constitute independent validation of this Research project's proposed theological/textual conclusions.",
+      "sourceObjectState": "Directly opened official original PDF TOC and publisher-hosted complete AUTHOR ENGLISH ABSTRACT and visually inspected rendered pages. Author's abstract reports examination of text and Masoretic notes in scores of medieval manuscripts; finds internal disagreements within both Tiberian and Babylonian schools concerning word division, and says vowel pointing and cantillation seem to favor two words. Contrary to models that Yemenites changed their generally Aleppo-based Torah tradition, Weiss explicitly argues that the Aleppo Codex itself underwent a LATE alteration joining כסיה. The author claims three comparable cases where late corrections not by Ben Asher occur and proposes an actor/motive, but actual original paper arguments, which specific three cases, original handwriting, photo provenance, author corrections evidence and critical footnotes NOT directly read; do not state late alteration as established historical fact. Unlike W68 where only Dovi's secondhand summary was read, this is first-hand authored abstract, but not first-hand article body and not independent photo collation by team.",
+      "supportedUse": "Cite publisher-confirmed title, author, issue, pages and original author abstract, precisely attribute Weiss's argument and its limits: (a) internal Tiberian/Babylonian disagreements; (b) accent marks / vocalization seemingly favor two words; (c) author's proposed late joined-word correction in Aleppo supported in abstract by assertion of three analogues. This is meaningful scholarly peer-reviewed-venue engagement not independent research-project peer signoff. Seek full pages242–272 via licensed publisher or registered National Library (publisher states free access via NLI) before checking manuscript exemplars.",
+      "forbiddenUse": "Claim the 31-page original article was downloaded/read or its Hebrew original diagrams/photographs/collations evaluated, that Aleppo lost Ex17:16 leaf now recovered, that a 2026 author's new argument is settled fact or externally approved as this project's claims; quote more than brief publisher abstract, treat publisher PDF free access as rights clearance for full article/photo/Product, or lower any HOLD.",
+      "originalPublisherWeissAbstractAudit20261113": {
+        "originalOfficialPublisherTOCPDFRead": true,
+        "originalOfficialPublisherTOCPDFScreenshotReviewed": true,
+        "originalOfficialPublisherAuthorAbstractPDFRead": true,
+        "originalOfficialPublisherAuthorAbstractScreenshotPagesReviewed": [
+          0,
+          1
+        ],
+        "author": "Yuval Weiss",
+        "publicationYear": 2026,
+        "academicJournal": "Leshonenu",
+        "volume": 88,
+        "issueNumber": 3,
+        "startingPage": 242,
+        "followingArticleStartingPage": 273,
+        "articlePageRange": "242–272",
+        "englishTitle": "(Exod 17:16): The Appearance of כסיה as a Single Word in the Aleppo Codex",
+        "authorSaysNumerousMedievalManuscriptsExamined": true,
+        "authorReportsWithinEachTiberianAndBabylonianTraditionDisagreements": true,
+        "authorReportsPunctuationAndCantillationSeemToSupportTwoWords": true,
+        "authorReportsNineteenthCenturyAleppoJoinedTestimonies": true,
+        "authorExplicitlyArguesLaterAleppoWordJoinCorrection": true,
+        "authorClaimsThreeComparableLateCorrectionCases": true,
+        "originalThirtyOnePageHebrewStudyReadByUs": false,
+        "exactThreeAnalogueManuscriptCasesReadByUs": false,
+        "originalAleppoExodus1716LeafDirectlySeen": false,
+        "physicalOr4445F59VDetailAutopsyByUs": false,
+        "originalPrintedBHSAndGöttingenApparatusCollatedByUs": false,
+        "externallyAcceptedOurResearchClaims": false,
+        "photoRightsAndTextRepublicationPermissionGranted": false,
+        "publicationProductApproved": false
+      }
     }
   ],
-  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716 | WAVE49_2026-11-11_OFER2003_YEIVIN82_AUTHOR_CROSSWALK_PSALM_ISAIAH_NOT_EXODUS | WAVE50_2026-11-11_PESACHIM117A_TASHBETZ_I177_AHS_YD27524_HISTORICAL_DISPUTE_NOT_CODEX_AUTOPSY | WAVE54_2026-11-11_HUJI_OFER2002_25P_ENGLISH_EX17_16_SINGLE_CONCORDANT_NOT_DISCREPANT_HOLDS | W59_2026-11-12_OFER2016_ORIGINAL_TEXTUS26_EXODUS8_SELECT_PAGE_FACSIMILES_HISTORY_QUESTION_PARTIAL_SUPPORT_NOT_EX17 | W60_2026-11-12_WEVERS1991_ENGLISH_AUTHOR_INTRO2006_APP1_APP2_FIELD_COMPARE_NOT_EX17_APPARATUS | W61_2026-11-12_FIELD1875_ORIGINAL_BSB_FULL_VOLUME_PAGE111_EX17_16_ACTUAL_PRINT_SYMMACHUS_UNCERTAIN_NOT_ALEPPO_GOTTINGEN | W62_2026-11-12_KITTEL_BHK2_1909_P99_PRINT_APP_NOT_1937_AND_OFFICIAL_BHS1977_1997_TEXT_NOT_APP | W64_2026-11-13_BIU_MGKETER_COCHEN_MODERN_EDITORIAL_ONEWORD_EX17_VS_BHS_TWOWORD_NOT_ALEPPO | W65_2026-11-13_LENINGRAD_B19A_042A_WSRP_ORIGINAL_PHOTO_LOCUS_TEI_COL1_LINES15_16_DISTINGUISHED_FROM_NATIVE_PIXEL_COLLATION | W66_2026-11-13_OR4445_BL_59V_OPENN_PHOTO_LOCATOR_ORIGINAL_WORDDIVISION_CONFLICT_UNRESOLVED | W67_2026-11-13_DOVI_AUTHOR_EDITORIAL_11_COMPOSITE_WORDS_TWO_VS_REPORTED_ALEPPO_ONE_NOT_PHOTO | W68_2026-11-13_DIRECT_DOVI_EDITOR_VERSE_SPECIFIC_CRITICAL_APPARATUS_MARGINAL_MASORAH_OR4445_ONE_WORD_EDITORIAL_NOT_AUTOPSY"
+  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716 | WAVE49_2026-11-11_OFER2003_YEIVIN82_AUTHOR_CROSSWALK_PSALM_ISAIAH_NOT_EXODUS | WAVE50_2026-11-11_PESACHIM117A_TASHBETZ_I177_AHS_YD27524_HISTORICAL_DISPUTE_NOT_CODEX_AUTOPSY | WAVE54_2026-11-11_HUJI_OFER2002_25P_ENGLISH_EX17_16_SINGLE_CONCORDANT_NOT_DISCREPANT_HOLDS | W59_2026-11-12_OFER2016_ORIGINAL_TEXTUS26_EXODUS8_SELECT_PAGE_FACSIMILES_HISTORY_QUESTION_PARTIAL_SUPPORT_NOT_EX17 | W60_2026-11-12_WEVERS1991_ENGLISH_AUTHOR_INTRO2006_APP1_APP2_FIELD_COMPARE_NOT_EX17_APPARATUS | W61_2026-11-12_FIELD1875_ORIGINAL_BSB_FULL_VOLUME_PAGE111_EX17_16_ACTUAL_PRINT_SYMMACHUS_UNCERTAIN_NOT_ALEPPO_GOTTINGEN | W62_2026-11-12_KITTEL_BHK2_1909_P99_PRINT_APP_NOT_1937_AND_OFFICIAL_BHS1977_1997_TEXT_NOT_APP | W64_2026-11-13_BIU_MGKETER_COCHEN_MODERN_EDITORIAL_ONEWORD_EX17_VS_BHS_TWOWORD_NOT_ALEPPO | W65_2026-11-13_LENINGRAD_B19A_042A_WSRP_ORIGINAL_PHOTO_LOCUS_TEI_COL1_LINES15_16_DISTINGUISHED_FROM_NATIVE_PIXEL_COLLATION | W66_2026-11-13_OR4445_BL_59V_OPENN_PHOTO_LOCATOR_ORIGINAL_WORDDIVISION_CONFLICT_UNRESOLVED | W67_2026-11-13_DOVI_AUTHOR_EDITORIAL_11_COMPOSITE_WORDS_TWO_VS_REPORTED_ALEPPO_ONE_NOT_PHOTO | W68_2026-11-13_DIRECT_DOVI_EDITOR_VERSE_SPECIFIC_CRITICAL_APPARATUS_MARGINAL_MASORAH_OR4445_ONE_WORD_EDITORIAL_NOT_AUTOPSY | W69_2026-11-13_WEISS_2026_PUBLISHER_ORIGINAL_TOC_AUTHOR_ABSTRACT_VISUAL_NO_FULL_ARTICLE_OR_AUTOPSY"
 }
