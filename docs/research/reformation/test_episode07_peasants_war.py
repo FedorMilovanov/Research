@@ -77,7 +77,8 @@ class PeasantsWarBookTests(unittest.TestCase):
                 encoding="utf-8"
             ).splitlines() if row.startswith("| C266 |")
         )
-        for marker in ("REF-S109", "INDIVIDUAL", "REJECTED_FORMULATION"):
+        for marker in ("REF-S109", "персональную виновность",
+                       "ORIGINAL_PUNITIVE_ORDER_UNREAD", "REJECTED_FORMULATION"):
             self.assertIn(marker.lower(), claim.lower())
         sweep = (D / "HOLD_SOURCE_SWEEP_2026-11-11.md").read_text(
             encoding="utf-8"
