@@ -48,6 +48,40 @@ class EverydayLifeBookTests(unittest.TestCase):
         self.assertIn("EVIDENCE_HOLD",by["REF-S03"]["holds"])
         self.assertEqual(by["REF-P34"]["accessState"],"PARTIAL_OBJECT")
 
+    def test_wave451_1871_anachronism_caveat_is_concise_and_source_preserved(self):
+        """A single readable chronological caveat, not two repeated conclusions."""
+        manuscript = CH.read_text(encoding="utf-8")
+        reader, apparatus = manuscript.split(
+            "## Источниковедческий аппарат", 1
+        )
+        section = reader.split(
+            "## Школы и богатство: ловушка поздней статистики", 1
+        )[1].split("## Были изменения — не было одного общего результата", 1)[0]
+        for anchor in (
+            "Беккера и Людгера Вёссмана",
+            "Quarterly Journal of Economics",
+            "перепись Пруссии 1871 года",
+            "Саксонии в 1524 году",
+            "Для такого вывода потребовались бы собственные ранние измерения",
+            "гипотезой о долгосрочном наследии",
+            "экономическом чуде протестантизма",
+        ):
+            with self.subTest(anchor=anchor):
+                self.assertIn(anchor, section)
+        self.assertEqual(section.count("1871 года"), 1,
+                         "Do not reintroduce the redundant chronological paragraph")
+        self.assertNotIn("Но статистика **1871 года**", section)
+        for note in ("REF-S92", "531–596",
+                     "CHRONOLOGICAL_EXTRAPOLATION_HOLD"):
+            self.assertIn(note, apparatus)
+        claims = (D / "03_claim_verification_register.md").read_text(
+            encoding="utf-8"
+        )
+        for claim_id in ("C21", "C57", "C313"):
+            self.assertIn("| " + claim_id + " |", claims)
+        self.assertIn("TEMPORAL_EXTRAPOLATION_HOLD", claims)
+        self.assertIn("PUBLICATION_HOLD", manuscript)
+
     def test_book_navigation_false_claims_and_scots_legacy_fix(self):
         for path in ("README.md","SELF_PLAN.md","04_series_blueprint.md"):
             self.assertIn(CH.name,(D/path).read_text(encoding="utf-8"))
