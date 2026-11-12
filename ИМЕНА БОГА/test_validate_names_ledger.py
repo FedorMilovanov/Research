@@ -2623,5 +2623,30 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertEqual([], validate_source_access(self.sources))
 
 
+    def test_field1875_p111_print_not_ancient_autograph(self) -> None:
+        source_id = "SRC-FIELD-HEXAPLA-1875-EX17-16-PRINT-P111-BSB"
+        mutations = (
+            ("original1875PrintedPage111ImageVisuallyRead", False),
+            ("bsbCompleteVolumeIIIFCanvases", 207),
+            ("originalPageImageId", "bsb11340409_00222"),
+            ("editorialSymmachusAttributionDefinitelyCertain", True),
+            ("editorExpressesSymmachusDoubtInNote17", False),
+            ("oldPartial207PagePDFCoveredEx17_16", True),
+            ("originalAncientAleppoEx17_16FolioVisuallyRead", True),
+            ("originalGreekCodicesIndependentlyCollated", True),
+            ("wevers1991Ex17_16OriginalApparatusRead", True),
+            ("paleographicCollationCompleted", True),
+            ("bsbDigitalImageRepublicationPermissionGranted", True),
+        )
+        for key, wrong in mutations:
+            with self.subTest(field=key):
+                changed = copy.deepcopy(self.sources)
+                row = next(x for x in changed["records"] if x["id"] == source_id)
+                row["pageAutopsy20261112"][key] = wrong
+                self.assertTrue(any("Field1875 p111 cannot be promoted" in err
+                                    for err in validate_source_access(changed)))
+        self.assertEqual([], validate_source_access(self.sources))
+
+
 if __name__ == "__main__":
     unittest.main()
