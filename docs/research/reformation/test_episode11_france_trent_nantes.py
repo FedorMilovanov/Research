@@ -384,6 +384,41 @@ class FranceTrentNantesTests(unittest.TestCase):
         self.assertIn("PARIS_PARTICULAR_REGISTRATION_UNVERIFIED",plan)
         self.assertIn("PUBLICATION_HOLD",plan)
 
+    def test_wave450_aix_august_october_are_not_two_proven_registrations(self):
+        """The reader must retain Audisio's documented ambiguity, not turn
+        secondary descriptions into two directly verified court registrations."""
+        reader = CH.read_text(encoding="utf-8").split(
+            "## Источниковедческий аппарат", 1
+        )[0]
+        for fact in ("В августе 1600 года", "11 числа", "5 октября",
+                     "7 декабря", "палата судебных каникул",
+                     "Одизио допускает", "регистрация, обнародование и исполнение"):
+            with self.subTest(fact=fact):
+                self.assertIn(fact, reader)
+        self.assertNotIn(
+            "в октябре последовало постановление о регистрации и публикации",
+            reader,
+        )
+        registry = json.loads((D / "source-registry-v1.json").read_text(
+            encoding="utf-8"
+        ))
+        source = next(row for row in registry["sources"]
+                      if row["id"] == "REF-S108")
+        self.assertEqual(source["evidenceClass"], "B1")
+        self.assertEqual(source["accessState"], "PARTIAL_OBJECT")
+        self.assertIn(
+            "AIX_AUG_OCT1600_REGISTRATION_PUBLICATION_AMBIGUITY",
+            source["verificationNote"],
+        )
+        for hold in ("ARCHIVE_HOLD", "EVIDENCE_HOLD",
+                     "RIGHTS_HOLD", "PUBLICATION_HOLD"):
+            self.assertIn(hold, source["holds"])
+        dossier = (D / "09_france_confession_nantes_source_study.md"
+                   ).read_text(encoding="utf-8")
+        for locator in ("B 3340", "IV B 7", "f.890v",
+                        "ORIGINAL_AIX_REGISTER_PHOTO_HOLD"):
+            self.assertIn(locator, dossier)
+
     def test_reader_navigation_and_historical_overclaims_rejected(self):
         for path in ("README.md","SELF_PLAN.md","04_series_blueprint.md",
                      "09_france_confession_nantes_source_study.md"):
