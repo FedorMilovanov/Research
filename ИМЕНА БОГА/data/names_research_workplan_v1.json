@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "planId": "NAMES_OF_GOD_MASTER_WORKPLAN",
   "createdAt": "2026-11-07",
-  "updatedAt": "2026-11-12",
+  "updatedAt": "2026-11-13",
   "statusOwner": "ИМЕНА БОГА/data/names_research_workplan_v1.json",
   "humanGuide": "ИМЕНА БОГА/11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md",
   "mediaResearch": "ИМЕНА БОГА/12_TMS_BARRICK_CHOU_SOURCE_REVIEW.md",
@@ -12,11 +12,11 @@
     "arenaRecords": 29,
     "extensionRecords": 13,
     "contextAttestations": 105,
-    "sourceRegisterEntries": 123,
-    "regressionTests": 314,
+    "sourceRegisterEntries": 124,
+    "regressionTests": 315,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_W62_80394AB_EXACT_6_OF_6_SUCCESS_725_TESTS_NEW_W63_AUDIT_COMMIT_PENDING",
+    "allSixCiChecks": "PRIOR_W63_BF618439_EXACT_6_OF_6_SUCCESS_725_TESTS_W64_726_EXPECTED_PENDING_EXACT_CI",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "80394ab99f6c8deab5c7b177d5799f99d67c7f73",
+    "lastConfirmedAllSixChecksSha": "bf618439ba04db812cc013984f14a2f664c5c7fa",
     "readerChapterCount": 3,
     "readerSectionCrosswalkCount": 32,
     "readerCrosswalkLinkedDistinctClaims": 25,
@@ -771,7 +771,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "2026-11-12 W62 Research PR #379 ORIGINAL BRANCH: genuine original facsimile of Rudolf Kittel *Biblia Hebraica* second edition (title page 1909 despite 1937 misleading filename), printed Exodus p99 / original PDF index114, full source PDF 52,339,592 bytes / 568 pages. Personally visually inspected verse16 and compact lower apparatus (כס יה vs כסיה, Greek κρυφαίᾳ and suggested נס), NOT all sigla independently deciphered; NOT 1937 BHK3, 1977/1997 BHS, ancient codex or Göttingen1991. Separate original Deutsche Bibelgesellschaft online publisher BHS reduced view https://www.die-bibel.de/bibel/BHS/EXO.17 verse16 shows two units כֵּס יָהּ, but BHS printed critical apparatus ABSENT and no manuscript witness autopsy. Two distinct carefully-scoped original edition sources SRC-KITTEL-BHK2-1909-EX17-16-P99-ORIGINAL-APP and SRC-DBG-BHS-EX17-16-PUBLISHER-TEXT; 2 new negative mutation tests (12+9 mutation cases). Sources 123/105 attestations/87 provisional claims/75 relations, core tests 314, Names total 725 expected. Exact W62 80394ab 6/6 GitHub Actions SUCCESS and 725/725 Names TESTS independently rechecked in run 43134487157; after this W63 audit-only plan update, its new exact HEAD requires CI independently. All 123 publication BLOCKED, critical physical manuscript collations 0, independent peer reviews 0, Product/rights approvals 0. NG04/10/11/12 BLOCKED_SOURCE, NG13/15 BLOCKED_DEPENDENCY retained. Need genuine original Yeivin1968 p82, Breuer1976 pp260-261 n1, Göttingen1991 Exodus17:16, BHS actual print apparatus, full Dewrell2024, original Deir Alla plates; cease repeated catalogue-only searches absent access route. Original Leningrad and original lost Aleppo pixels not seen.",
+  "nextAction": "2026-11-13 W64 Research PR379 original branch: directly opened Bar-Ilan Menahem Cohen scholarly Mikraot Gedolot HaKeter Exodus17:16 modern edition https://www.mgketer.org/tanach/2/17/16, FOUR verse text modes write joined כסיה (one orthographic word); official editor project https://www.mgketer.org/?ideaalm_lang=HEB expressly reconstructs missing Aleppo sections. Opposed modern official BHS online publisher text has separate כֵּס יָהּ. This proves two modern EDITORIAL SURFACES and source independent access, NOT ancient independently collated manuscripts or lost Aleppo Ex17 folio; historic Ofer2008 scholarly report already referenced this decision, no new independent old codex witness. One new source ID SRC-MGKETER-BIU-COHEN-EX17-16-ONLINE-ONE-WORD and 1 fail-closed mutation test (17 edition-status and 4 source-status scenarios), 124 source records / 105 attestations / 87 provisional claims / 75 relations, 315 core / 726 total regression tests expected. W63 exact bf618439 confirmed 6/6 CI and 725/725; W64 HEAD needs fresh exact CI. All 124 publication BLOCKED, 0 critical ancient manuscript collation, 0 independent external peer approvals, 0 Product/rights approvals. Continue acquisition of Yeivin original printed p82, Breuer original pp260–261 n1, Göttingen1991 Exodus17:16 and original BHS printed apparatus; do not infer their content or publish manuscript images.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -852,9 +852,10 @@
     }
   ],
   "lastWorkReport": {
-    "date": "2026-11-12",
-    "planStatus": "W62 two original EDITORIAL surfaces: Kittel 1909 second ed exact p99 printed apparatus and official BHS Ex17:16 reduced verse text, 123 sources/105 attestations/87 preliminary claims/75 relations. Core 314, Names total 725 expected. W62 80394ab 6/6 SUCCESS and Names 725/725 verified from original GitHub workflow log; new W63 audit-only commit pending its own CI. No independent physical ancient codices, no full BHS or Göttingen actual critical apparatus, no scholarly/rights/Product approvals.",
+    "date": "2026-11-13",
+    "planStatus": "W64 direct official BIU HaKeter edited Ex17:16 joins כסיה vs official BHS two-word text; one directly viewed modern editorial source, NOT ancient Aleppo folio. 124 sources/105 attestations/87 provisional claims/75 relations, 315 core tests/726 total expected, W64 exact CI PENDING. W63 prior exact bf618439 6/6 SUCCESS with 725/725. Critical manuscript collations, independent scholarly approvals, rights and Product approvals still ZERO.",
     "workCompleted": [
+      "2026-11-13 W64: first direct read of Bar-Ilan Menahem Cohen official modern Mikraot Gedolot HaKeter Ex17:16 one-word כסיה in four displayed main Bible text modes, and official About-method statement confirming reconstructed missing Aleppo sections. In contrast Deutsche Bibelgesellschaft BHS online edited Ex17:16 two separate words. New modern EDITION source record only, not ancient codex/autograph or scientific acceptance; one new regression test with 21 negative cases and no rights grant.",
       "2026-11-12 W63 audit: verified PR379 branch exact W62 80394ab, six completed successful GitHub workflows and original Names workflow job log 314+21+319+24+18+29=725 tests; verified official BHS online Ex17:16 two printed words; extracted title of Kittel BHK2 explicitly 1909 but web screenshot of 52 MB file was unavailable, so no new independent p99 visual autopsy claimed. Research register remains 123/105/87/75; critical ancient collation, external scholarly review, image rights and Product permissions remain HOLD. This audit synchronizes stale machine-CI bookkeeping only, not publication eligibility.",
       "2026-11-12 W62: downloaded and verified original 52MB complete 1909 Kittel second-edition PDF, title page plus Ex17:16 print p99/index114 and apparatus visually inspected; false URL 1937 is not year, no BHK3 conflation. Independently read publisher Deutsche Bibelgesellschaft BHS online main verse Ex17:16 (two words) WITHOUT printed critical apparatus. Two scientific edition sources registered, 2 core mutation tests/21 invalid upgrades disallowed, no relicensing or manuscript autopsy.",
       "2026-11-12 W61: first verified direct Field 1875 original printed Ex17:16 p111 BSB IIIF canvas00221 original image, includes Hebrew כס יה, throne Latin vs vexillum נס alternative, Greek κρυφαίᾳ and uncertain n17 Symmachus attribution. Complete 920-image BSB copy distinguished from incomplete 207-page prior PDF. New academic source ID, updated dossier23, 11 anti-inflation mutation variants, no publication rights or autonomous ancient manuscript collation.",
@@ -995,7 +996,7 @@
       "2026-11-10 WAVE24 image-acquisition source audit: via live browser found Brill scholarly reader for 4Q72 urn:cts:ancJewLit:dss.4q72.dsbo-eng2:f1i-f6, directly observed no-right-credentials page; secondary request HTTP403; version/type unverified as image so not called photo URL. Publisher image access guide says photos supplied from PAM/IAA, but no actual picture pixels loaded. DJD XV 1997 21.4MB third-party PDF web screenshot error 400 TOO_LARGE, live second browser only filename; full plate content/presence in PDF UNKNOWN. Open Dead Sea explicit licensing states its modern research text data CC BY-NC 4.0, original photos only outbound to IAA or Israel Museum, no derived reprint rights. Existing Tov source row and dossier16 updated, 101 records/289 tests unchanged, NG10/rights/Product HOLD."
     ],
     "stillOpen": [
-      "New W62 exact-head CI pending, Names expected 725 tests. Prior W61 ef056f6 6/6 Actions SUCCESS and Names 723/723. Requested original Yeivin82 and Breuer260–261, BHS print critical apparatus, Göttingen Exodus17:16, original Keter lost folio, full Dewrell2024, Deir Alla 1976 plates still unread, rights/peer/Product approvals zero.",
+      "W64 exact-head GitHub CI pending; 726 expected (315+21+319+24+18+29). Previous exact W63 bf618439 6/6 SUCCESS with 725 tests. Yeivin original printed p82, Breuer original pp260–261 footnote1, original Göttingen Exodus17:16 and printed BHS critical apparatus not yet read; no ancient Aleppo Exodus17 leaf, no external peer review, original rights or Product approval.",
       "Authorized 4Q72 original manuscript photo from Brill or IAA with exact editor frg55ii Jer33:16–20 physical image match; Brill reader denies credentials HTTP403, no photo image/URN verified.",
       "DJD XV actual PDF photographic-plate presence not verified; Tov 1991 OBO109 I–VII ZORA Anubis blocked; 1997 XXX–XXXVI original raster plates not viewed.",
       "IAA B360205 plate245 Frag6 vs DJD frg55ii historical frame and glyph correspondence unproven; initial יהוה צד only edited transcript, [קנו] restored, no independent paleo-autopsy.",
