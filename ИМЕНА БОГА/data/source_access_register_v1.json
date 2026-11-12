@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 121,
+    "sourceRecords": 123,
     "approvedForProduct": 0
   },
   "records": [
@@ -4607,6 +4607,89 @@
       }
     },
     {
+      "id": "SRC-KITTEL-BHK2-1909-EX17-16-P99-ORIGINAL-APP",
+      "title": "Rudolf Kittel, Biblia Hebraica, editio altera emendatior stereotypica, Leipzig J. C. Hinrichs, 1909, Exodus 17:16, original printed p99 (PDF page index114)",
+      "creator": "Rudolf Kittel (ed.); V. Ryssel and R. Kittel editors of Exodus and Numbers in 1909 edition",
+      "year": 1909,
+      "url": "https://www.lafeuilledolivier.com/Bibliotheque-biblique/ORIGINAUX/Hebreu/1937-fs-Biblia-Hebraica-Kittel.pdf",
+      "objectType": "original_1909_critical_printed_Hebrew_Bible_BHK_second_edition_specific_Exodus17_16_and_apparatus",
+      "sourceRole": "KITTEL_BHK2_1909_ORIGINAL_PRINT_P99_EX17_16_VARIANT_APPARATUS_NOT_BHK3_1937_OR_BHS1977_OR_ALEPPO",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "evidenceClass": "A2",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "criticalEditionCollated": false,
+      "locator": "Original title page explicitly EDITIO ALTERA EMENDATIOR STEREOTYPICA, LIPSIAE J.C. HINRICHS 1909. Printed Exodus p99 = PDF zero-based page 114 / 115th page (568-page digitized PDF, verified PDF header %PDF and 52,339,592 bytes). Original printed p99 contains Exod17:1–16, with v16 at bottom and lower-page critical note labeled 16. Original image manually inspected and critical note zoomed; Hebrew words כס יה, כסיה, Greek κρυφαίᾳ and alternative with נס are seen, but certain compact apparatus sigla not independently fully decoded. Filename misleadingly starts '1937-fs'; actual file title page establishes year1909 second edition. Copyright of hosted digital scan not confirmed.",
+      "sourceObjectState": "Full original 1909 second edition PDF downloaded and verified locally; p99 directly visually inspected by rendering PDF index114 and enlarging original lower apparatus. Original printed main text distinguishes כס and יה as two units; note16 discusses received and alternative word divisions and editorial readings including a Greek κρυφαίᾳ comparison. OCR corrupts Hebrew and sigla; do not transcribe tiny abbreviated sigla as exact manuscript evidence. BHK2 1909 editorial apparatus is a different critical edition from BHK3 1937 Leningrad-basis and BHS1977/1997, and is NOT an independent photograph or collation of lost Aleppo Exodus17:16 folio.",
+      "supportedUse": "Cite direct 1909 printed second edition Exodus17:16 p99 main word division and fact that its own printed apparatus discusses competing readings, with cautious exact symbols when legible. Independently distinguish true 1909 title page versus misleading 1937 URL basename, BHK2/BHK3/BHS differences and no manuscript autopsy.",
+      "forbiddenUse": "Call the hosted 1909 second edition BHK3 from 1937 because filename begins 1937; claim BHK2 based on Leningrad Codex, imply 1909 and BHS critical apparatus identical, assert all compact sigla accurately decoded or ancient Hebrew manuscripts independently collated, derive Aleppo Codex original Exodus17:16 from these editor notes, assume 1909 publisher license to distribute its later digitized PDF, grant independent scholarly/rights/Product acceptance.",
+      "pageAutopsy20261112": {
+        "titlePageEditionYear": 1909,
+        "editionDescriptor": "EDITIO ALTERA EMENDATIOR STEREOTYPICA",
+        "titlePageSecondEditionVisuallyRead": true,
+        "originalExodus17_16PagePrinted": 99,
+        "pdfPageIndexZeroBased": 114,
+        "pdfTotalPages": 568,
+        "pdfBytes": 52339592,
+        "originalPageAndApparatusVisuallyReviewed": true,
+        "printedMainTextTwoWrittenWords": true,
+        "apparatusNotesVariantWordDivision": true,
+        "apparatusGreekKryphaiaPrinted": true,
+        "allTinyApparatusSiglaDeciphered": false,
+        "correctlyIdentifiedAsBHK3_1937": false,
+        "originalLeningradManuscriptPixelsExamined": false,
+        "originalAleppoManuscriptEx17_16Seen": false,
+        "independentAncientManuscriptCollation": false,
+        "fullCriticalApparatusOfBHSRead": false,
+        "scanRightsIndependentlyCleared": false
+      }
+    },
+    {
+      "id": "SRC-DBG-BHS-EX17-16-PUBLISHER-TEXT",
+      "title": "Deutsche Bibelgesellschaft, Biblia Hebraica Stuttgartensia, publisher's official online Exodus 17 text (1977/1997 edition)",
+      "creator": "Karl Elliger and Wilhelm Rudolph (eds.); Adrian Schenker fifth corrected edition; Deutsche Bibelgesellschaft publisher",
+      "year": 1997,
+      "url": "https://www.die-bibel.de/bibel/BHS/EXO.17",
+      "objectType": "official_publisher_digitally_displayed_BHS_Hebrew_verse_text_without_critical_apparatus",
+      "sourceRole": "DEUTSCHE_BIBELGESELLSCHAFT_BHS_EX17_16_PUBLISHER_MAIN_TEXT_TWO_WORDS_NO_APPARATUS_SHOWN",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "evidenceClass": "A2",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "criticalEditionCollated": false,
+      "locator": "Deutsche Bibelgesellschaft original online BHS edition, Exodus 17, verse 16, 'Reduzierte Ansicht' (reduced online view). Site credits BHS Elliger/Rudolph, fifth corrected edition Adrian Schenker, 1977 and 1997. Directly visible publisher Greek? Hebrew BHS Exod17:16: כי־יד על־כס יה [pointed כֵּס יָהּ as two words, unlike historically reported joined כֵּסְיָהּ]; web page displays Hebrew running text not print critical apparatus.",
+      "sourceObjectState": "Direct official publisher live chapter read for exact Exodus17:16 Hebrew digital edited text and chapter edition credits; official page demonstrates two separate print words כֵּס יָהּ. The critical apparatus/printed footnotes of BHS are absent from the reduced online view; no BHS critical manuscript listing, original codex photograph or independent scribal collation was obtained. BHS publication and online availability cannot confer quotation/republication permission, ancient Aleppo reading or independent Product approval.",
+      "supportedUse": "Document publisher original BHS digital reading of Exodus17:16 and explicitly contrast it with reported historical joined reading, distinguishing edited verse surface from manuscript apparatus, from old 1909 Kittel edition and from direct Aleppo manuscript sighting.",
+      "forbiddenUse": "Claim publisher BHS online reduced page includes its original printed critical apparatus, identify BHS with BHK2 1909 or BHK3 1937, say BHS directly photographed Aleppo original lost Exodus17:16, declare ancient witness collation or variant provenance, use BHS Hebrew text on public site without licensing, promote rights/Product approvals.",
+      "publisherPageCheck20261112": {
+        "publisherOriginalOnlineChapterDirectlyRead": true,
+        "publisherTitle": "Biblia Hebraica Stuttgartensia",
+        "onlineReducedView": true,
+        "editionCreditIncludes1977And1997": true,
+        "originalVerseLocator": "Exodus 17:16",
+        "mainTextWordDivisionTwoWords": true,
+        "mainTextThroneWordHebrew": "כֵּס",
+        "mainTextYahWordHebrew": "יָהּ",
+        "originalPrintedCriticalApparatusOnSiteVisible": false,
+        "originalLeningradPixelsChecked": false,
+        "originalAleppoEx17_16FolioInspected": false,
+        "criticalManuscriptCollationCompleted": false,
+        "rightsForProductPublicationGranted": false
+      }
+    },
+    {
       "id": "SRC-KRUGER-SHADDAY-JOB-2023-CONTEXT-CRITIQUE",
       "title": "Preliminary ideas on a substratum text of Job and the depiction of Šaddāy",
       "creator": "Margaretha J. Kruger",
@@ -4653,5 +4736,5 @@
       }
     }
   ],
-  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716 | WAVE49_2026-11-11_OFER2003_YEIVIN82_AUTHOR_CROSSWALK_PSALM_ISAIAH_NOT_EXODUS | WAVE50_2026-11-11_PESACHIM117A_TASHBETZ_I177_AHS_YD27524_HISTORICAL_DISPUTE_NOT_CODEX_AUTOPSY | WAVE54_2026-11-11_HUJI_OFER2002_25P_ENGLISH_EX17_16_SINGLE_CONCORDANT_NOT_DISCREPANT_HOLDS | W59_2026-11-12_OFER2016_ORIGINAL_TEXTUS26_EXODUS8_SELECT_PAGE_FACSIMILES_HISTORY_QUESTION_PARTIAL_SUPPORT_NOT_EX17 | W60_2026-11-12_WEVERS1991_ENGLISH_AUTHOR_INTRO2006_APP1_APP2_FIELD_COMPARE_NOT_EX17_APPARATUS | W61_2026-11-12_FIELD1875_ORIGINAL_BSB_FULL_VOLUME_PAGE111_EX17_16_ACTUAL_PRINT_SYMMACHUS_UNCERTAIN_NOT_ALEPPO_GOTTINGEN"
+  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716 | WAVE49_2026-11-11_OFER2003_YEIVIN82_AUTHOR_CROSSWALK_PSALM_ISAIAH_NOT_EXODUS | WAVE50_2026-11-11_PESACHIM117A_TASHBETZ_I177_AHS_YD27524_HISTORICAL_DISPUTE_NOT_CODEX_AUTOPSY | WAVE54_2026-11-11_HUJI_OFER2002_25P_ENGLISH_EX17_16_SINGLE_CONCORDANT_NOT_DISCREPANT_HOLDS | W59_2026-11-12_OFER2016_ORIGINAL_TEXTUS26_EXODUS8_SELECT_PAGE_FACSIMILES_HISTORY_QUESTION_PARTIAL_SUPPORT_NOT_EX17 | W60_2026-11-12_WEVERS1991_ENGLISH_AUTHOR_INTRO2006_APP1_APP2_FIELD_COMPARE_NOT_EX17_APPARATUS | W61_2026-11-12_FIELD1875_ORIGINAL_BSB_FULL_VOLUME_PAGE111_EX17_16_ACTUAL_PRINT_SYMMACHUS_UNCERTAIN_NOT_ALEPPO_GOTTINGEN | W62_2026-11-12_KITTEL_BHK2_1909_P99_PRINT_APP_NOT_1937_AND_OFFICIAL_BHS1977_1997_TEXT_NOT_APP"
 }
