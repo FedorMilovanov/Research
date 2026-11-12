@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 216,
+  "sourceCount": 217,
   "sources": [
     {
       "id": "REF-P01",
@@ -4167,6 +4167,25 @@
       ],
       "url": "https://www.digitale-sammlungen.de/en/view/bsb00103368",
       "verificationNote": "WAVE447-T03 2026-11-12 PRIMARY PRINT DIRECT IMAGE COLLATION, strictly scoped. Original primary Latin 1531 Confessio Augustana, Wittenberg Georg Rhau. Bayerische Staatsbibliothek München shelfmark 4 H.ref. 205 b, VD16 C4737; BSB bsb00103368. Official IIIF v3 https://api.digitale-sammlungen.de/iiif/presentation/v3/bsb00103368/manifest returned HTTP 200, 358042 bytes, SHA256 8f27fcb42daf9f1c075be3dad66184e4b2a1957da5e7627c20e447822b42c0a9, 347 canvases. Metadata explicitly publication 1531, Latin, C4737, 4 H.ref.205 b, rights https://creativecommons.org/publicdomain/mark/1.0/; this is distinct from REF-P91 Bamberg Apologia bsb11411960 VD16 C4734. Directly visually READ images (requests width 1000px, each checked HTTP200 image/jpeg, frame SHA256): SCAN14 252640 bytes 5c083e8d239913ea4462961340b8bf879894684d11995745516408285c8cee4a: end Art II, Art III and heading 'IIII.' plus opening 'homines non possint iustificari'; SCAN15 266417 bytes e4e8489b90aefb387918553b6fefaccb08c3b743f04309b827eab287dbc9b7a3: remainder Art IV 'sed gratis iustificentur propter Christum per fidem', 'Hanc fidem imputat Deus pro iusticia', FULL Art V 'per verbum et sacramenta ... Spiritus sanctus', condemnation 'Anabaptistas et alios ... sine verbo externo ... per ipsorum praeparationes et opera', START Art VI 'fides illa debeat bonos fructus parere ... non ut confidamus per ea opera iustificationem ... mereri'; SCAN16 238672 bytes 858757114422b168f53749e7de7d21e7197649c1df5e54d5173bfd14c7e4bd59: tail Art VI, VII, VIII, heading and start IX; SCAN17 238569 bytes 0bd5bbd86f0a6870bbe1416a1c9af3966919442a0d6be7ec6d9bd76059919b7a: rest Art IX 'pueri sint Baptisandi', 'Damnant Anabaptistas ... affirmant pueros sine baptismo salvos fieri'; SCAN22 268753 bytes e457f39710b5a68b7c5badf862d64fd4695d2d3dbbd7884f7f030a27c482806d: title XX and beginning defense of works; SCAN24 261289 bytes f149236dfb031e7ab4f6ac5645a852907a4c81a06dba4bba4f095e58b3b9bebb: within Art XX 'fidei non significet tantum historiae noticiam'; SCAN25 273595 bytes 76d0f96cf7357ed1aa99f2be0333966454ccdd79b2a4c6df6a8b8ea10f3e7c59: continuation XX 'necesse sit bona opera facere non ut confidamus per ea gratiam mereri sed propter voluntatem Dei', 'corda renovantur'. Exact original image URL template for individually checked scans: https://api.digitale-sammlungen.de/iiif/image/v3/bsb00103368_00015/full/1000,/0/default.jpg (replace 00015 by specifically enumerated 00014/00016/00017/00022/00024/00025 only). Prior digital OCR used as navigation index; original pages THEN visually viewed independently. This is partial original-image reading of selected Latin 1531 print only; neither the submitted imperial manuscript/autograph in 1530, Latin printed states of 1530, other Rhau print variants, nor German companion have been collated, no side-by-side textual variant proof. Rights metadata publicdomain/mark/1.0/ applies to this digital object, unlike NoC-NC/1.0 of REF-P91; separate project-level rights review not completed, no print images moved into product and RIGHTS_HOLD retained pending explicit clearance. No full object downloaded/permanently stored and no new acquisition-manifest receipt claimed; ARCHIVE_HOLD retained. PUBLICATION_HOLD and independent Lutheran/Catholic peer review remain open.",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "id": "REF-S109",
+      "documentYear": 2026,
+      "title": "Stadt Weinsberg, Historischer Hintergrund: 500 Jahre Bauernkrieg / Weinsberger Blutostern; parallel official municipal Geschichte summary (history sections)",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://www.weinsberg.de/freizeit-und-kultur/500-jahre-bauernkrieg-weinsberger-blutostern/historischer-hintergrund/?sds=1",
+      "verificationNote": "WAVE453 2026-11-12: directly read official municipal Weinsberg Historischer Hintergrund historical narrative (section 'Welche Folgen hatte das Weinsberger Blutostern?') and separate official municipal Geschichte page https://www.weinsberg.de/weinsberg-die-weibertreustadt/geschichte/?sds=1 (section Stadt Weinsberg). They report that troops of the Swabian League burned Weinsberg on 21 May 1525 after the 16 April killings of Ludwig von Helfenstein and other captured nobles, the town lost its rights/privileges, and city rights were restored only in 1553 under Duke Christoph. This is a DIRECT WEB READ of two modern municipal B1 SYNTHESIS webpages, NOT a direct inspection of 1525 Swabian League orders, court records, citizen dossiers or a 1553 charter. Municipal historical narratives differ on broad exculpatory language for residents; a collective civic penalty cannot establish individual guilt of every resident. Regional LEO-BW search-index excerpts corroborate date and civic sanction but its full page returned HTTP 403 on direct access; do NOT claim direct LEO-BW document reading. Nor does chronology show Luther's pamphlet directly ordered the burning. WEINSBERG_1525_05_21_SWABIAN_LEAGUE_MUNICIPAL_SECONDARY / CIVIC_RIGHTS_RESTORED_1553 / INDIVIDUAL_CULPABILITY_NOT_INFERRED / ORIGINAL_PUNITIVE_ORDER_UNREAD / ARCHIVE_HOLD / EVIDENCE_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD.",
       "checkedAt": "2026-11-12"
     }
   ]
