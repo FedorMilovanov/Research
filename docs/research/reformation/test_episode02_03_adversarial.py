@@ -70,6 +70,37 @@ class Luther1517WormsEditorialTests(unittest.TestCase):
         self.assertIn("episode03_luther_worms_1520_1521_manuscript.md", reader)
         self.assertNotIn("См. будущий ненаписанный эпизод", reader)
 
+    def test_wave449_ch01_ch02_documentary_repeat_collapsed_in_reader(self):
+        """One short chapter02 bridge is enough; documentary apparatus stays."""
+        first = (D / "episode01_historical_gateway_draft.md").read_text(
+            encoding="utf-8"
+        )
+        reader1, app1 = first.split("## Источниковедческий аппарат", 1)
+        reader2, app2 = self.two.split("## Источниковедческий аппарат", 1)
+        self.assertIn("## Октябрь 1517 года: что документировано", reader1)
+        self.assertIn("31 октября 1517 года", reader1)
+        self.assertIn("последнее напечатанное число стало **87**", reader1)
+        self.assertIn("## Письмо и печать: что доказывает история документов", reader2)
+        self.assertEqual(reader2.count("## Письмо и печать:"), 1)
+        self.assertNotIn("## Письмо раньше картины", reader2)
+        self.assertNotIn("## Почему лейпцигская печать заканчивается", reader2)
+        self.assertIn("31 октября 1517 года", reader2)
+        self.assertIn("лейпцигской печати последний номер оказался 87", reader2)
+        self.assertIn("95 тезисов", reader2)
+        self.assertIn("лично не слышал", reader2)
+        self.assertNotIn("REF-P", reader2)
+        self.assertIn("Письмо 31 октября — полный предшествующий разбор", app2)
+        self.assertIn("Ранние печати 1517 года — полный предшествующий", app2)
+        for anchor in ("Jnstructiones Confessorum", "Instructio summaria",
+                       "тезис 35", "Оригинал", "LOCATOR_HOLD", "RIGHTS_HOLD",
+                       "PUBLICATION_HOLD"):
+            with self.subTest(evidence=anchor):
+                self.assertIn(anchor.lower(), app2.lower())
+        self.assertGreater(len(reader2.split()), 2000)
+        self.assertLess(len(reader2.split()), 2300)
+        self.assertIn("PUBLICATION_HOLD", first)
+        self.assertIn("PUBLICATION_HOLD", self.two)
+
     def test_ch03_sacramental_sources_and_opposing_argument(self):
         s = self.three
         reader, apparatus = s.split("## Источниковедческий аппарат", 1)
