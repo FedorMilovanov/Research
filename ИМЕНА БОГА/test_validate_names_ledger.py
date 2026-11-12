@@ -2790,5 +2790,53 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertEqual([], validate_source_access(self.sources))
 
 
+    def test_bl_or4445_f59v_photo_conflicting_reading_not_manuscript_autopsy(self) -> None:
+        source_id = "SRC-BL-OR4445-F59V-EX17-16-OPENN-IMAGE-UNRESOLVED"
+        mutations = (
+            ("originalAncientHebrewManuscript", "Aleppo Codex"),
+            ("coreDateRange", "1540 CE"),
+            ("originalCoreNotLater1540Replacement", False),
+            ("originalFolio", "62r"),
+            ("opennOriginalImageId", "13291_0126.jpg"),
+            ("originalMasterJPEGIdentified", False),
+            ("opennIndexPhotographicFolioLabelVerified", False),
+            ("bibliographicExodusRange42rTo85rVerified", False),
+            ("manuscriptSectionAscribedToExodus17_16BySecondaryTable", False),
+            ("secondaryComparisonClaimsJoinedOneWord", False),
+            ("machineBrowserImageReadingClaimsTwoSeparateWords", False),
+            ("conflictResolvedByIndependentAutopsy", True),
+            ("finalOriginalWordDivision", "ONE_WORD_CONFIRMED"),
+            ("nativePixelOriginalGlyphAndSpacingCollationCompleted", True),
+            ("originalMasorahMarginaliaDecoded", True),
+            ("comparativeTableIsAdditionalPhysicalManuscript", True),
+            ("sameManuscriptAsLeningradB19a", True),
+            ("sameManuscriptAsMissingAleppoLeaf", True),
+            ("criticalManuscriptCollationCompleted", True),
+            ("publicReplicaOrPhotoRightsCleared", True),
+            ("independentScientificPeerApproval", True),
+            ("productPublishingApproval", True),
+        )
+        for field, wrong in mutations:
+            with self.subTest(photo_field=field):
+                changed = copy.deepcopy(self.sources)
+                row = next(x for x in changed["records"] if x["id"] == source_id)
+                row["originalFacsimileCrosscheck20261113"][field] = wrong
+                self.assertTrue(any("Or 4445 f59v image conflict cannot be upgraded" in err
+                                    for err in validate_source_access(changed)))
+        for field, wrong in (
+            ("accessState", "FULL_OBJECT_VERIFIED"),
+            ("rightsState", "PUBLICATION_ELIGIBLE"),
+            ("publicationState", "PROMOTE"),
+            ("criticalEditionCollated", True),
+        ):
+            with self.subTest(source_field=field):
+                changed = copy.deepcopy(self.sources)
+                row = next(x for x in changed["records"] if x["id"] == source_id)
+                row[field] = wrong
+                self.assertTrue(any("Or 4445 f59v image conflict cannot be upgraded" in err
+                                    for err in validate_source_access(changed)))
+        self.assertEqual([], validate_source_access(self.sources))
+
+
 if __name__ == "__main__":
     unittest.main()
