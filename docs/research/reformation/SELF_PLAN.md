@@ -1,6 +1,22 @@
 # САМОПЛАН «Реформации» — живая доска исполнения, границы поиска и сборка книги
 
-## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 454, 13.11.2026 (RF-EP10-1559-UNIFORMITY-STATUTORY-FINE-VS-PARISH-EXECUTION)
+## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 455, 13.11.2026 (RF-EP10-1587-STORTFORD-PARISH-RECEIPT-VS-1559-STATUTE)
+
+**Проверенный базовый HEAD:** [PR #483](https://github.com/FedorMilovanov/Research/pull/483) MERGED, `Research/main=b73ff3a1080988161017b9796176950ad314fd4f`, **4/4 post-merge workflow SUCCESS**, включая Reformation corpus integrity / Repository authority integrity / Security baseline / Atonement corpus integrity. Волна 454 закрыла редакторский текст `Act of Uniformity 1559` со штрафом **12 пенсов**; не повторять завершённую волну. На входе отдельные открытые PR «Реформация» отсутствуют; чужие #309 («Искупление») и #379 («Имена Бога») не изменять.
+
+**Новая фактическая доказательная дельта глав 10 и C283:** в [полном цифровом OCR старопечатной транскрипции 1882](https://archive.org/stream/recordsofstmicha00bishuoft/recordsofstmicha00bishuoft_djvu.txt) непосредственно найдена **печатная с.64** из J. L. Glasscock (ed.), *The Records of St. Michael's Parish Church, Bishop's Stortford* (London: Elliot Stock, **1882**), среди **счетов 1587 года**: `Rec. of defaultes for absence`, **девять названных лиц**, строка `wherof delyvered to mr parsons to the use of the poore ixs.` (передача **девяти шиллингов** для бедных), отдельные следующие расходы в пользу нуждающихся. Это наконец **локальный бухгалтерский объект, сообщающий о поступлениях и распределении**, а не одна парламентская норма. Вторичный пересказ Sedley Lynch Ware (1908), прим.295, сверяет указатель с.64, но **не** является вторым независимым архивным подлинником.
+
+**Принципиальная граница:** проверен **OCR печатной транскрипции**, а **не** фотография оригинального рукописного счёта 1587 и **не** снимок самой печатной с.64. OCR индивидуальных сумм повреждён — нельзя утверждать точно, что уплатили все девять, или арифметически суммировать их. Это **1587 год**, а не исполнение санкции **в 1559 году**, и пример-ретроспекция не расширяет основной период главы 10 **1534–1581**. Текст REF-P93 остаётся исторической редакцией закона, а не подлинным парламентским актом по фотоснимку. Новая карточка **REF-P94 A2/PARTIAL_OBJECT/EXACT_LOCATOR_VERIFIED/RIGHTS_UNKNOWN**; уточнён прежний C283 без нового claim, читательская глава, HOLD_SOURCE_SWEEP и независимый regression-guard.
+
+**Два исполняемых результата:** (1) локальное документальное дополнение reader / REF-P94 / C283 / аппарат и HOLD; (2) терминальные 4/4 CI на точном PR HEAD, затем merge с HEAD-pin и повторная проверка post-merge main. Снимок **219 REF / 319 C / 18 acquisition receipts / 219 PUBLICATION_HOLD**; отдельные пересекающиеся **55 LOCATOR / 92 EVIDENCE / 164 ARCHIVE / 198 RIGHTS HOLD**; медиафайлы не приобретены, права не переданы.
+
+**Дальнейшая адресная научная работа:** найти и непосредственно визуально проверить **оригинальный счёт 1587** и/или печатную **с.64**; для *первых лет 1559–1560* отдельные реальные parish accounts с листом или актом взыскания. При двух бесплодных адресных поисках — `STOP_DISCOVERY`; переключиться на P0, а не выдавать более поздний пример за раннюю статистику.
+
+**Публикационные и рецензентские запреты:** T-03/T-08 `REVIEW_PACKETS_PREPARED / NOT_SENT / NO_REVIEWER_ASSIGNED`; H-08 архивные листы не закрыты. `RESEARCH_MANUSCRIPT_DRAFT / RESEARCH_ONLY / ORIGINAL_1530_MANUSCRIPT_HOLD / ORIGINAL_VARIANT_COLLATION_HOLD / INDEPENDENT_EXTERNAL_REVIEW_OPEN / THEOLOGICAL_PEER_REVIEW_OPEN / NOT_EDITORIAL_READY / EVIDENCE_HOLD / ARCHIVE_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD`. Смена числа источников не означает выполненной внешней рецензии, clearance прав или разрешения публикации.
+
+---
+
+## ИСТОРИЧЕСКИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 454, 13.11.2026 (RF-EP10-1559-UNIFORMITY-STATUTORY-FINE-VS-PARISH-EXECUTION)
 
 **Фактический вход:** [PR #482](https://github.com/FedorMilovanov/Research/pull/482) MERGED; `Research/main=e6575a64763df5805401a2e824880af9401fb934` (на точном merge-SHA четыре GitHub Actions: Reformation corpus integrity / Repository authority integrity / Security baseline / Atonement corpus integrity — **4/4 SUCCESS**). Волну 453 не перепроходить. На входе нет открытых PR/веток собственного корпуса. Открытые параллельные PR #309 «Искупление» и #379 «Имена Бога» **не менять**.
 
