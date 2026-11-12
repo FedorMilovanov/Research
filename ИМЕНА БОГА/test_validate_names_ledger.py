@@ -2696,5 +2696,48 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertEqual([], validate_source_access(self.sources))
 
 
+    def test_biu_mgketer_ex17_one_word_modern_editor_not_lost_aleppo_manuscript(self) -> None:
+        source_id = "SRC-MGKETER-BIU-COHEN-EX17-16-ONLINE-ONE-WORD"
+        mutations = (
+            ("projectOfficialSiteDirectlyRead", False),
+            ("editorMenahemCohenNamedByProject", False),
+            ("mainBibleVerseLocator", "Exodus 17:15"),
+            ("mainTextUnpointedJoinedHebrew", "כס יה"),
+            ("mainTextOneWrittenWord", False),
+            ("fourMainBibleTextModesJoined", False),
+            ("editorProjectAcknowledgesReconstructingMissingAleppoPortions", False),
+            ("originalAleppoEx17_16FolioSurvivesInDigitalDisplay", True),
+            ("underlyingAncientAleppoFolioAutopticallyExamined", True),
+            ("independentPhysicalManuscriptCollationCompleted", True),
+            ("criticallyDecipheredOriginalBHSApparatus", True),
+            ("criticallyDecipheredGöttingenEx17_16Apparatus", True),
+            ("modernBhsPublisherPrintsSameOneWord", True),
+            ("medievalCommentaryQuotationUsedAsMainVerse", True),
+            ("permissionToRepublishDigitalEditionOrImagesGranted", True),
+            ("externalScholarlySignoffGranted", True),
+            ("productPublicationApproved", True),
+        )
+        for field, wrong in mutations:
+            with self.subTest(field=field):
+                changed = copy.deepcopy(self.sources)
+                row = next(x for x in changed["records"] if x["id"] == source_id)
+                row["publisherPageAudit20261113"][field] = wrong
+                self.assertTrue(any("BIU HaKeter one-word modern edition" in error
+                                    for error in validate_source_access(changed)))
+        for field, wrong in (
+            ("accessState", "FULL_OBJECT_VERIFIED"),
+            ("rightsState", "PUBLICATION_ELIGIBLE"),
+            ("publicationState", "PROMOTE"),
+            ("criticalEditionCollated", True),
+        ):
+            with self.subTest(source_field=field):
+                changed = copy.deepcopy(self.sources)
+                row = next(x for x in changed["records"] if x["id"] == source_id)
+                row[field] = wrong
+                self.assertTrue(any("BIU HaKeter one-word modern edition" in error
+                                    for error in validate_source_access(changed)))
+        self.assertEqual([], validate_source_access(self.sources))
+
+
 if __name__ == "__main__":
     unittest.main()
