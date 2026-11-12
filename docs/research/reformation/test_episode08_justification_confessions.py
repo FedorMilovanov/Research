@@ -577,7 +577,7 @@ class JustificationBookTests(unittest.TestCase):
             "exclusa gratia et charitate",
             "omni homini",
             "iustitiam acceptam",
-            "вопросы 60–64",
+            "Вопросы **60–64**",
             "оригинальными рукописями",
             "NOT_SENT",
             "PASS_WITH_SCOPE",
