@@ -350,6 +350,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-MGKETER-BIU-COHEN-EX17-16-ONLINE-ONE-WORD": "BIU_MGKETER_COHEN_ONLINE_EX17_16_ONE_WORD_EDITORIAL_RECONSTRUCTION_NOT_LOST_ALEPPO_FOLIO",
     "SRC-LENINGRAD-B19A-F042A-EX17-16-WSRP-FACSIMILE": "LENINGRAD_B19A_F042A_ORIGINAL_PHOTO_EX17_16_EXACT_LINE_MAP_NOT_PALEOGRAPHIC_CERTIFICATION_OR_ALEPPO",
     "SRC-BL-OR4445-F59V-EX17-16-OPENN-IMAGE-UNRESOLVED": "BL_OR4445_F59V_ORIGINAL_TENTH_CENTURY_DIGITAL_FACSIMILE_EX17_16_WORD_DIVISION_UNRESOLVED_CONFLICT",
+    "SRC-DOVI-MIQRA-MASORAH-CH3-EX17-16-COMPOSITE-EDITORIAL": "DOVI_ONLINE_EDITORIAL_MASORAH_METHOD_11_COMPOSITE_FORMS_EX17_16_TWO_VERSUS_REPORTED_ALEPPO_ONE_WORD_NOT_ANCIENT_CODEX",
     "SRC-KRUGER-SHADDAY-JOB-2023-CONTEXT-CRITIQUE": "ATTRIBUTED_MODERN_JOB_SHADDAY_PRAGMATICS_WITH_VERIFIED_TEXTUAL_COUNTERCHECK",
     "SRC-OFER-TEXTUS26-2016-ALEPPO-EX8-FRAGMENT": "OFER2016_EXODUS8_SURVIVING_ORIGINAL_FRAGMENT_PARTIAL_CHECK_OF_SAPHIR_ZER_QUESTIONS_NOT_EXODUS17_16_FOLIO",
     "SRC-VANWOLDE-2021": "ATTRIBUTED_SECONDARY_EXEGESIS",
@@ -1532,6 +1533,39 @@ def validate_source_access(sources: dict) -> list[str]:
                     or not isinstance(kittel, dict)
                     or any(kittel.get(k) != v for k, v in kittel_required.items())):
                 errors.append(f"{prefix}: Kittel1909 BHK2 and DBG BHS edition conflation or ancient apparatus/rights overclaim")
+        if rid == "SRC-DOVI-MIQRA-MASORAH-CH3-EX17-16-COMPOSITE-EDITORIAL":
+            editorial = source.get("authorEditorialMethodAudit20261113")
+            expected = {
+                "originalHebrewAndEnglishChapterThreeDirectlyRead": True,
+                "editorDoviUserHostedWikisourceNotInstitutionalPeerReviewed": True,
+                "sectionTitle": "Conjoined Words in the Torah",
+                "authorEnumeratesCompositeCases": 11,
+                "verse": "Exodus 17:16",
+                "printedMainReadingTwoWords": "כֵּ֣ס יָ֔הּ",
+                "reportedAlternativeJoinedReading": "כֵּ֣סְיָ֔הּ",
+                "separateReadingAscribedToLeningrad": True,
+                "separateReadingAscribedToYemeniteSephardiAshkenazi": True,
+                "joinedReadingSiglum": "A(S)",
+                "joinedReadingIsReportedAleppoNotExistingFolio": True,
+                "editorStatesYemeniteScrollsNotDecisiveForAleppoWordJoining": True,
+                "onlineTextIsPhysicalAncientManuscript": False,
+                "elevenExamplesAreElevenOriginalManuscripts": False,
+                "editorialSourceResolvesOr4445PhotoConflict": False,
+                "lostAleppoExodus1716LeafExamined": False,
+                "originalBHSAndGöttingenPrintedApparatusCollated": False,
+                "independentCriticalManuscriptCollationCompleted": False,
+                "externalScientificPeerReviewApproved": False,
+                "textOrPhotoReuseRightsApproved": False,
+                "productPublishingApproved": False,
+            }
+            if (source.get("accessState") != "PARTIAL_OBJECT"
+                    or source.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+                    or source.get("rightsState") != "RIGHTS_UNKNOWN"
+                    or source.get("publicationState") != "BLOCKED"
+                    or source.get("criticalEditionCollated") is not False
+                    or not isinstance(editorial, dict)
+                    or any(editorial.get(k) != v for k, v in expected.items())):
+                errors.append(f"{prefix}: Dovi editorial masorah cannot become Aleppo autopsy, extra codices, Or4445 collation, external signoff or publication right")
         if rid == "SRC-BL-OR4445-F59V-EX17-16-OPENN-IMAGE-UNRESOLVED":
             folio = source.get("originalFacsimileCrosscheck20261113")
             expected = {
