@@ -1,6 +1,20 @@
 # САМОПЛАН «Реформации» — живая доска исполнения, границы поиска и сборка книги
 
-## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 453, 12.11.2026 (RF-H07-WEINSBERG-1525-CIVIC-PENALTY-EVIDENCE)
+## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 454, 13.11.2026 (RF-EP10-1559-UNIFORMITY-STATUTORY-FINE-VS-PARISH-EXECUTION)
+
+**Фактический вход:** [PR #482](https://github.com/FedorMilovanov/Research/pull/482) MERGED; `Research/main=e6575a64763df5805401a2e824880af9401fb934` (на точном merge-SHA четыре GitHub Actions: Reformation corpus integrity / Repository authority integrity / Security baseline / Atonement corpus integrity — **4/4 SUCCESS**). Волну 453 не перепроходить. На входе нет открытых PR/веток собственного корпуса. Открытые параллельные PR #309 «Искупление» и #379 «Имена Бога» **не менять**.
+
+**Предметное повышение доказательности главы 10, не фиктивная литературная активность:** непосредственно прочитана опубликованная **полная историческая редакторская транскрипция** английского `Act of Uniformity, 1 Eliz I c.2` в [Hanover Historical Texts](https://history.hanover.edu/texts/engref/er80.html) по Gee–Hardy (1896), печ. **с.458–467**, особенно **с.463**: с праздника Рождества Иоанна Крестителя 1559 закон требует посещать приходскую службу **по воскресеньям и праздникам** (при отсутствии законной/уважительной причины), предусматривает **12 пенсов за нарушение**, которые **приходские старосты** должны взыскивать **для бедных того же прихода**. Проверено также, что HAPuls повторяет ту же редакционную традицию, **не является вторым независимым архивным оригиналом**. UK Parliament [REF-S84](https://www.parliament.uk/about/living-heritage/transformingsociety/private-lives/religion/collections/common-prayer/act-of-uniformity-1559/) подтверждает отдельный оригинальный архивный объект `HL/PO/PU/1/1558/1Eliz1n2`, **не прочитанный по физическому свитку**. Читательская глава теперь различает **правовой штраф и реальное местное взыскание**, церковные штрафы прихожан и более суровые наказания служителей.
+
+**Одно подтверждённое исследовательское приобретение:** новый **REF-P93 A2/PARTIAL_OBJECT/EXACT_LOCATOR_VERIFIED/RIGHTS_UNKNOWN** с отдельными `ORIGINAL_ACT_PHYSICAL_UNREAD / LOCAL_PARISH_ENFORCEMENT_UNVERIFIED`. Обновлён **существующий C283**, не созданы дополнительные claim/авторские цитаты, глава 10 и единая HOLD_SOURCE_SWEEP синхронизированы; добавлен scope-guard тест. Снимок: **218 REF / 319 C / 18 acquisition receipts / 218 PUBLICATION_HOLD**, пересекающиеся 55 LOCATOR / 91 EVIDENCE / 163 ARCHIVE / 197 RIGHTS; никаких изображений или защищённых транскрипций в публичном Git.
+
+**Не больше двух активных результатов:** (1) исторический reader + точный REF-P93 / C283 / H-матрица / защитный тест; (2) CI на точном PR HEAD, аккуратное объединение только после 4/4 SUCCESS и отдельный post-merge recheck main. Следующая предметная стадия возможна только при реально полученном *одном* оригинальном приходском `churchwardens' account` или акте суда с подтверждённым локатором взыскания 1559; вторичный синтез не будет объявлен архивной фотоколляцией. При двух бесплодных адресных поисках — `STOP_DISCOVERY`.
+
+**Действующие обязательные P0:** T-03/T-08 `REVIEW_PACKETS_PREPARED / NOT_SENT / NO_REVIEWER_ASSIGNED`; H-08 оригинальные архивные листы не закрыты. `RESEARCH_MANUSCRIPT_DRAFT / RESEARCH_ONLY / ORIGINAL_1530_MANUSCRIPT_HOLD / ORIGINAL_VARIANT_COLLATION_HOLD / INDEPENDENT_EXTERNAL_REVIEW_OPEN / THEOLOGICAL_PEER_REVIEW_OPEN / NOT_EDITORIAL_READY / EVIDENCE_HOLD / ARCHIVE_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD`. Научные, правовые и издательские разрешения **не повышать**.
+
+---
+
+## ИСТОРИЧЕСКИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 453, 12.11.2026 (RF-H07-WEINSBERG-1525-CIVIC-PENALTY-EVIDENCE)
 
 **Подтверждённый вход:** [PR #481](https://github.com/FedorMilovanov/Research/pull/481) MERGED, `Research/main=d11e97a1a2271914dbb07f1a91feaa520950bf2a`, на точном post-merge HEAD **4/4 CI SUCCESS** (Reformation corpus integrity / Repository authority integrity / Security baseline / Atonement corpus integrity). Волны 450–452 технически завершены, их не исполнять заново. На входе самостоятельных открытых Reformation-веток и PR нет. Соседние открытые PR #309 «Искупление», #379 «Имена Бога» и другие чужие ветки не затрагивать.
 

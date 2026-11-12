@@ -3,7 +3,7 @@
   "scope": "research-only",
   "provenance": "User-supplied source ledger plus independent selective public verification on 2026-11-04; 2026-11-04 second collation: Oxford/GHDI/DDE/THULB/Trent/e-rara",
   "noAutoPublication": true,
-  "sourceCount": 217,
+  "sourceCount": 218,
   "sources": [
     {
       "id": "REF-P01",
@@ -4187,6 +4187,25 @@
       "url": "https://www.weinsberg.de/freizeit-und-kultur/500-jahre-bauernkrieg-weinsberger-blutostern/historischer-hintergrund/?sds=1",
       "verificationNote": "WAVE453, accessed/checked 2026-11-12; publication year of the undated municipal webpages is NOT VERIFIED: directly read official municipal Weinsberg Historischer Hintergrund historical narrative (section 'Welche Folgen hatte das Weinsberger Blutostern?') and separate official municipal Geschichte page https://www.weinsberg.de/weinsberg-die-weibertreustadt/geschichte/?sds=1 (section Stadt Weinsberg). They report that troops of the Swabian League burned Weinsberg on 21 May 1525 after the 16 April killings of Ludwig von Helfenstein and other captured nobles, the town lost its rights/privileges, and city rights were restored only in 1553 under Duke Christoph. This is a DIRECT WEB READ of two modern municipal B1 SYNTHESIS webpages, NOT a direct inspection of 1525 Swabian League orders, court records, citizen dossiers or a 1553 charter. Municipal historical narratives differ on broad exculpatory language for residents; a collective civic penalty cannot establish individual guilt of every resident. Regional LEO-BW search-index excerpts corroborate date and civic sanction but its full page returned HTTP 403 on direct access; do NOT claim direct LEO-BW document reading. Nor does chronology show Luther's pamphlet directly ordered the burning. WEINSBERG_1525_05_21_SWABIAN_LEAGUE_MUNICIPAL_SECONDARY / CIVIC_RIGHTS_RESTORED_1553 / INDIVIDUAL_CULPABILITY_NOT_INFERRED / ORIGINAL_PUNITIVE_ORDER_UNREAD / ARCHIVE_HOLD / EVIDENCE_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD.",
       "checkedAt": "2026-11-12"
+    },
+    {
+      "id": "REF-P93",
+      "documentYear": 1559,
+      "title": "Elizabeth I, Act of Uniformity 1559, 1 Eliz I c.2, edited full text in Henry Gee and William John Hardy, Documents Illustrative of English Church History (1896), pp.458–467; Hanover Historical Texts digital transcript",
+      "evidenceClass": "A2",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "url": "https://history.hanover.edu/texts/engref/er80.html",
+      "verificationNote": "WAVE454 2026-11-13: FULL ONLINE HISTORICAL EDITORIAL TRANSCRIPTION directly read from Hanover Historical Texts, edited Gee & Hardy (1896), printed pp458–467, underlying Statutes of the Realm IV pt I p355 per editors; digitized transcription Heather Haralson 1998, Raluca Preotu 1999, Jonathan Perry 2001. Relevant original-law text in modern digital transcript at [Page 463] directly checked: from feast of the Nativity of St John Baptist next coming, inhabitants without lawful or reasonable excuse directed to attend their usual parish church or chapel on EVERY SUNDAY and other HOLY DAYS; statutory forfeiture TWELVE PENCE PER OFFENCE, to be levied by PARISH CHURCHWARDENS for benefit of POOR OF SAME PARISH. This is a statutory LIABILITY/collection rule, NOT an individual fine receipt, court conviction, parish-account audit, measured attendance rate, or proof of universal collection. Full transcribed law distinguishes public minister penalties and nonattendance sanction, includes 1552 prayerbook alterations; distinct from parliamentary original archival object HL/PO/PU/1/1558/1Eliz1n2 confirmed by UK Parliament REF-S84. Official National Archives research guide for Catholics discusses later recusancy records and parish churchwarden collections; this separate modern description cannot substitute for physical 1559 folio or local collection books. Digital editor and original statutes must not be conflated; no physical 1559 original images, page-by-page variants or parish ledgers inspected. HISTORICAL_EDITED_ACT_TEXT_DIRECT / ORIGINAL_ACT_PHYSICAL_UNREAD / READER_1559_TWELVE_PENCE_STATUTORY / LOCAL_PARISH_ENFORCEMENT_UNVERIFIED / EVIDENCE_HOLD / ARCHIVE_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD.",
+      "checkedAt": "2026-11-13"
     }
   ]
 }
