@@ -62,7 +62,7 @@ jobs:
           python -m pip freeze > official-core-acquisition-output/PIP_FREEZE.txt
           sha256sum requirements/source-audit.lock > official-core-acquisition-output/DEPENDENCY_LOCK_SHA256.txt
       - name: Upload temporary acquisition evidence and files
-        uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
         with:
           name: ephemeral-official-core-acquisition-59-v2
           path: official-core-acquisition-output/
