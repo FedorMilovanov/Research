@@ -611,13 +611,15 @@ class JustificationBookTests(unittest.TestCase):
         plan = (D / "SELF_PLAN.md").read_text(encoding="utf-8")
         current = plan.split("\n---\n", 1)[0]
         for status in (
-            "волна 448", "216 REF", "216 PUBLICATION_HOLD",
-            "NOT_SENT", "THEOLOGICAL_PEER_REVIEW_OPEN",
+            "216 REF", "216 PUBLICATION_HOLD", "NOT_SENT",
+            "THEOLOGICAL_PEER_REVIEW_OPEN",
             "INDEPENDENT_EXTERNAL_REVIEW_OPEN", "NOT_EDITORIAL_READY",
         ):
-            with self.subTest(plan=status):
+            with self.subTest(current_plan_gate=status):
                 self.assertIn(status, current)
-        for historic in ("волна 447", "волна 446", "волна 445"):
+        # A successful prior wave must survive as dated history; it must
+        # not be permanently pinned as the current plan.
+        for historic in ("волна 448", "волна 447", "волна 446", "волна 445"):
             self.assertIn(historic, plan)
         registry = json.loads(
             (D / "source-registry-v1.json").read_text(encoding="utf-8")
