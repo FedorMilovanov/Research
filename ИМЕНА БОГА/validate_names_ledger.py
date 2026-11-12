@@ -1566,6 +1566,44 @@ def validate_source_access(sources: dict) -> list[str]:
                     or not isinstance(editorial, dict)
                     or any(editorial.get(k) != v for k, v in expected.items())):
                 errors.append(f"{prefix}: Dovi editorial masorah cannot become Aleppo autopsy, extra codices, Or4445 collation, external signoff or publication right")
+        if rid == "SRC-DOVI-MIQRA-MASORAH-CH3-EX17-16-COMPOSITE-EDITORIAL":
+            apparatus = source.get("editorialVerseCriticalApparatusAudit20261113")
+            expected = {
+                "directOriginalEditorialVerseApparatusRead": True,
+                "criticalApparatusDirectUrl": "https://bdenckla.github.io/MAM-basics/MAM-with-doc/A2-Exodus-big-doc.html",
+                "manuscriptSiglaDirectUrl": "https://he.wikisource.org/wiki/ויקיטקסט:מבוא_למקרא_על_פי_המסורה/נספחים",
+                "exactVerse": "Exodus 17:16",
+                "defaultTwoWords": "כֵּ֣ס יָ֔הּ",
+                "attributedJoined": "כֵּ֣סְיָ֔הּ",
+                "twoWordPhysicalSigla": ["ל", "ש", "ו"],
+                "oneWordPhysicalSiglaIncludes": ["ב", "ש1", "ק3", "ל9"],
+                "londonCodexSiglum": "ב",
+                "londonCodexShelfmark": "British Library Or. 4445",
+                "londonCodexEditorialJoined": True,
+                "londonCodexMasorahQuote": "חדה מלתא",
+                "cairoCodexSiglum": "ק3",
+                "cairoMasorahQuote": "למער' חדא מלא למדנח' תרתין מלין",
+                "aleppoReportedSigla": ["א(ס)", "א(ק)"],
+                "aleppoSaphirHistoricalTestimonyNotLostLeaf": True,
+                "aleppoKimhiHistoricalTestimonyNotLostLeaf": True,
+                "historicalAleppoEx17FolioPhotographed": False,
+                "reportedGreekAndHebrewPhysicalWitnessesIndependentlyCollatedByUs": False,
+                "editionPhysicalManuscriptsAreSameAsOurAutopsy": False,
+                "formerBrowserAgentTwoWordReadingReliable": False,
+                "editorDiscussesDissentingVowelAccents": True,
+                "yuvalWeissArticleCitationByEditor": "Leshonenu 88 issue 3 (2026), pp. 242–272",
+                "yuvalWeissOriginalArticleReadByUs": False,
+                "yuvalWeissLaterAleppoCorrectionOnlyReportedHypothesis": True,
+                "directOriginalBHSAndGöttingenApparatusFullyRead": False,
+                "independentScholarlyReviewPassed": False,
+                "independentPhysicalPhotoCollationCompleted": False,
+                "originalAncientMasorahMarginaliaDecodedByUs": False,
+                "photographReuseRightsCleared": False,
+                "productApproved": False,
+            }
+            if (not isinstance(apparatus, dict)
+                    or any(apparatus.get(k) != v for k, v in expected.items())):
+                errors.append(f"{prefix}: MAM original verse apparatus and sigla are editorial witness reports, not independently collated Or4445/Aleppo originals or scholarly rights grants")
         if rid == "SRC-BL-OR4445-F59V-EX17-16-OPENN-IMAGE-UNRESOLVED":
             folio = source.get("originalFacsimileCrosscheck20261113")
             expected = {
@@ -1591,6 +1629,14 @@ def validate_source_access(sources: dict) -> list[str]:
                 "publicReplicaOrPhotoRightsCleared": False,
                 "independentScientificPeerApproval": False,
                 "productPublishingApproval": False,
+                "editorialVerseByVerseMAMApparatusDirectlyRead": True,
+                "editorialMAMSiglumBetEqualsOr4445": True,
+                "editorialMAMOr4445ReadingJoinedOneWord": True,
+                "editorialMAMOr4445MasorahQuoted": "חדה מלתא",
+                "twoPublishedComparisonsConcurJoinedOneWord": True,
+                "formerAutomatedPhotoTwoWordClaimReliable": False,
+                "independentPhotoAutopsyStillUnfinished": True,
+                "editorialConsensusIsAnIndependentPhotoCollationByUs": False,
             }
             if (source.get("accessState") != "PARTIAL_OBJECT"
                     or source.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
