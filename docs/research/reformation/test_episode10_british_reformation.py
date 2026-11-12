@@ -80,8 +80,12 @@ class EnglandScotlandTests(unittest.TestCase):
             encoding="utf-8"
         )
         claim = next(x for x in ledger.splitlines() if x.startswith("| C283 |"))
-        for marker in ("REF-P93", "12 пенсов", "приходскими старостами",
-                       "REJECTED_FORMULATION", "LOCAL_PARISH_ENFORCEMENT_UNVERIFIED"):
+        # The statutory REF-P93 never establishes observed local payment.
+        # A later 1587 parish-account witness may be added legitimately,
+        # without being backdated to the year the Act entered into force.
+        for marker in ("REF-P93", "REF-P94", "12 пенсов",
+                       "приходскими старостами", "REJECTED_FORMULATION",
+                       "1559_FIRST_YEAR_ENFORCEMENT_UNVERIFIED"):
             self.assertIn(marker, claim)
         sweep = (D / "HOLD_SOURCE_SWEEP_2026-11-11.md").read_text(
             encoding="utf-8"
