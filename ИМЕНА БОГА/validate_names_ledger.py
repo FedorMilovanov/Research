@@ -351,6 +351,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-LENINGRAD-B19A-F042A-EX17-16-WSRP-FACSIMILE": "LENINGRAD_B19A_F042A_ORIGINAL_PHOTO_EX17_16_EXACT_LINE_MAP_NOT_PALEOGRAPHIC_CERTIFICATION_OR_ALEPPO",
     "SRC-BL-OR4445-F59V-EX17-16-OPENN-IMAGE-UNRESOLVED": "BL_OR4445_F59V_ORIGINAL_TENTH_CENTURY_DIGITAL_FACSIMILE_EX17_16_WORD_DIVISION_UNRESOLVED_CONFLICT",
     "SRC-DOVI-MIQRA-MASORAH-CH3-EX17-16-COMPOSITE-EDITORIAL": "DOVI_ONLINE_EDITORIAL_MASORAH_METHOD_11_COMPOSITE_FORMS_EX17_16_TWO_VERSUS_REPORTED_ALEPPO_ONE_WORD_NOT_ANCIENT_CODEX",
+    "SRC-WEISS-LESHONENU88-3-2026-EX17-16-PUBLISHER-ABSTRACT": "WEISS_2026_ORIGINAL_PUBLISHER_ENGLISH_AUTHOR_ABSTRACT_AND_OFFICIAL_TOC_NO_FULL_ARTICLE_OR_ORIGINAL_MS_AUTOPSY",
     "SRC-KRUGER-SHADDAY-JOB-2023-CONTEXT-CRITIQUE": "ATTRIBUTED_MODERN_JOB_SHADDAY_PRAGMATICS_WITH_VERIFIED_TEXTUAL_COUNTERCHECK",
     "SRC-OFER-TEXTUS26-2016-ALEPPO-EX8-FRAGMENT": "OFER2016_EXODUS8_SURVIVING_ORIGINAL_FRAGMENT_PARTIAL_CHECK_OF_SAPHIR_ZER_QUESTIONS_NOT_EXODUS17_16_FOLIO",
     "SRC-VANWOLDE-2021": "ATTRIBUTED_SECONDARY_EXEGESIS",
@@ -1533,6 +1534,45 @@ def validate_source_access(sources: dict) -> list[str]:
                     or not isinstance(kittel, dict)
                     or any(kittel.get(k) != v for k, v in kittel_required.items())):
                 errors.append(f"{prefix}: Kittel1909 BHK2 and DBG BHS edition conflation or ancient apparatus/rights overclaim")
+        if rid == "SRC-WEISS-LESHONENU88-3-2026-EX17-16-PUBLISHER-ABSTRACT":
+            author_abstract = source.get("originalPublisherWeissAbstractAudit20261113")
+            expected = {
+                "originalOfficialPublisherTOCPDFRead": True,
+                "originalOfficialPublisherTOCPDFScreenshotReviewed": True,
+                "originalOfficialPublisherAuthorAbstractPDFRead": True,
+                "originalOfficialPublisherAuthorAbstractScreenshotPagesReviewed": [0, 1],
+                "author": "Yuval Weiss",
+                "publicationYear": 2026,
+                "academicJournal": "Leshonenu",
+                "volume": 88,
+                "issueNumber": 3,
+                "startingPage": 242,
+                "followingArticleStartingPage": 273,
+                "articlePageRange": "242–272",
+                "englishTitle": "(Exod 17:16): The Appearance of כסיה as a Single Word in the Aleppo Codex",
+                "authorSaysNumerousMedievalManuscriptsExamined": True,
+                "authorReportsWithinEachTiberianAndBabylonianTraditionDisagreements": True,
+                "authorReportsPunctuationAndCantillationSeemToSupportTwoWords": True,
+                "authorReportsNineteenthCenturyAleppoJoinedTestimonies": True,
+                "authorExplicitlyArguesLaterAleppoWordJoinCorrection": True,
+                "authorClaimsThreeComparableLateCorrectionCases": True,
+                "originalThirtyOnePageHebrewStudyReadByUs": False,
+                "exactThreeAnalogueManuscriptCasesReadByUs": False,
+                "originalAleppoExodus1716LeafDirectlySeen": False,
+                "physicalOr4445F59VDetailAutopsyByUs": False,
+                "originalPrintedBHSAndGöttingenApparatusCollatedByUs": False,
+                "externallyAcceptedOurResearchClaims": False,
+                "photoRightsAndTextRepublicationPermissionGranted": False,
+                "publicationProductApproved": False,
+            }
+            if (source.get("accessState") != "PARTIAL_OBJECT"
+                    or source.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+                    or source.get("rightsState") != "RIGHTS_UNKNOWN"
+                    or source.get("publicationState") != "BLOCKED"
+                    or source.get("criticalEditionCollated") is not False
+                    or not isinstance(author_abstract, dict)
+                    or any(author_abstract.get(k) != v for k, v in expected.items())):
+                errors.append(f"{prefix}: Weiss 2026 original author abstract is not complete printed article, independent primary collation or Product rights")
         if rid == "SRC-DOVI-MIQRA-MASORAH-CH3-EX17-16-COMPOSITE-EDITORIAL":
             editorial = source.get("authorEditorialMethodAudit20261113")
             expected = {
