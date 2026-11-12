@@ -2938,5 +2938,58 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertEqual([], validate_source_access(self.sources))
 
 
+    def test_weiss_2026_official_author_abstract_not_unread_full_article_or_autopsy(self) -> None:
+        source_id = "SRC-WEISS-LESHONENU88-3-2026-EX17-16-PUBLISHER-ABSTRACT"
+        mutations = (
+            ("originalOfficialPublisherTOCPDFRead", False),
+            ("originalOfficialPublisherTOCPDFScreenshotReviewed", False),
+            ("originalOfficialPublisherAuthorAbstractPDFRead", False),
+            ("originalOfficialPublisherAuthorAbstractScreenshotPagesReviewed", [0]),
+            ("author", "Dovi"),
+            ("publicationYear", 2025),
+            ("academicJournal", "Some Journal"),
+            ("volume", 89),
+            ("issueNumber", 4),
+            ("startingPage", 241),
+            ("followingArticleStartingPage", 274),
+            ("articlePageRange", "242–273"),
+            ("englishTitle", "Unrelated article"),
+            ("authorSaysNumerousMedievalManuscriptsExamined", False),
+            ("authorReportsWithinEachTiberianAndBabylonianTraditionDisagreements", False),
+            ("authorReportsPunctuationAndCantillationSeemToSupportTwoWords", False),
+            ("authorReportsNineteenthCenturyAleppoJoinedTestimonies", False),
+            ("authorExplicitlyArguesLaterAleppoWordJoinCorrection", False),
+            ("authorClaimsThreeComparableLateCorrectionCases", False),
+            ("originalThirtyOnePageHebrewStudyReadByUs", True),
+            ("exactThreeAnalogueManuscriptCasesReadByUs", True),
+            ("originalAleppoExodus1716LeafDirectlySeen", True),
+            ("physicalOr4445F59VDetailAutopsyByUs", True),
+            ("originalPrintedBHSAndGöttingenApparatusCollatedByUs", True),
+            ("externallyAcceptedOurResearchClaims", True),
+            ("photoRightsAndTextRepublicationPermissionGranted", True),
+            ("publicationProductApproved", True),
+        )
+        for field, wrong in mutations:
+            with self.subTest(publisher_abstract_field=field):
+                changed = copy.deepcopy(self.sources)
+                row = next(x for x in changed["records"] if x["id"] == source_id)
+                row["originalPublisherWeissAbstractAudit20261113"][field] = wrong
+                self.assertTrue(any("Weiss 2026 original author abstract is not complete" in e
+                                    for e in validate_source_access(changed)))
+        for field, wrong in (
+            ("accessState", "FULL_OBJECT_VERIFIED"),
+            ("rightsState", "PUBLICATION_ELIGIBLE"),
+            ("publicationState", "PROMOTE"),
+            ("criticalEditionCollated", True),
+        ):
+            with self.subTest(source_field=field):
+                changed = copy.deepcopy(self.sources)
+                row = next(x for x in changed["records"] if x["id"] == source_id)
+                row[field] = wrong
+                self.assertTrue(any("Weiss 2026 original author abstract is not complete" in e
+                                    for e in validate_source_access(changed)))
+        self.assertEqual([], validate_source_access(self.sources))
+
+
 if __name__ == "__main__":
     unittest.main()
