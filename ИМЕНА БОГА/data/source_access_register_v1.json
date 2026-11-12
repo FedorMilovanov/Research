@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 124,
+    "sourceRecords": 125,
     "approvedForProduct": 0
   },
   "records": [
@@ -4778,7 +4778,65 @@
         "externalScholarlySignoffGranted": false,
         "productPublicationApproved": false
       }
+    },
+    {
+      "id": "SRC-LENINGRAD-B19A-F042A-EX17-16-WSRP-FACSIMILE",
+      "title": "Codex Leningradensis, RNL Evr I B 19a, folio 42 recto (42a), Exodus 17:11–18:19, WSRP color photograph; Exod 17:16 line localization",
+      "creator": "Samuel ben Jacob (manuscript scribe); National Library of Russia (holding institution); Bruce E. Zuckerman/West Semitic Research Project (modern photographic capture)",
+      "year": 1009,
+      "datePrecision": "APPROXIMATE_1008_TO_1010_MANUSCRIPT_NOT_PHOTOGRAPH_DATE",
+      "url": "https://commons.wikimedia.org/wiki/File:Leningrad_Codex_Folio_042a.jpg",
+      "imageOriginalFilePage": "https://commons.wikimedia.org/wiki/File:Leningrad_Codex_Folio_042a.jpg",
+      "institutionalPhotoProvenance": "https://dornsife.usc.edu/wsrp/biblical-manuscripts-2/",
+      "manuscriptHolding": "Russian National Library, Saint Petersburg, Firkovich Evr I B 19a",
+      "lineByLineLocator": "https://www.leningradcodex.page/folio/042a/",
+      "comparisonLinguisticText": "https://www.tanach.us/Pages/About.html",
+      "editionLicenceUrl": "https://tanach.us/License.html",
+      "objectType": "direct_b19a_folio_photographic_facsimile_with_independent_digital_line_locator_no_complete_paleographic_collation",
+      "sourceRole": "LENINGRAD_B19A_F042A_ORIGINAL_PHOTO_EX17_16_EXACT_LINE_MAP_NOT_PALEOGRAPHIC_CERTIFICATION_OR_ALEPPO",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "evidenceClass": "A2",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "criticalEditionCollated": false,
+      "locator": "Original B19a codex witness, folio 42r / 042a (= side 82), containing Exodus 17:11–18:19. Official West Semitic Research Project confirms physical codex photo expedition to the Russian National Library in 1990. Wikimedia Commons individual 4090x4514 JPG file links to Sefaria WSRP-derived photograph and is marked Public Domain Mark 1.0. Modern diplomatic TEI folio 042a (v1.2.0) explicitly maps Exodus17:16 to COLUMN 1 (the manuscript's rightmost writing column), LINE 15 ending כי־יד על־כֵס, and LINE 16 beginning יָהּ מלחמה. UXLC current website About/License identifies 2.6 (27.7), Oct 2026; do not incorrectly identify older 2.5 or WLC 4.20 as same version.",
+      "sourceObjectState": "Directly opened 42a original manuscript photograph via Theosis/WSRP-derived mirrored JPG and Wikimedia 3840-pixel facsimile preview, and independently directly read the verse-specific Unicode TEI transcription line map from leningradcodex.page, v1.2.0. The modern TEI transcription places כס at end of physical line 15 and יה at beginning of line 16. However the browser-rendered original image has not been independently magnified/inspected at native pixel level for full script, cantillation or marginal Masorah; the TEI's reconstructed line transcription is NOT our own palaeographic reading. Folio 42a and modern BHS are tied to the same Codex L textual tradition, so do not double count them as independent ancient witnesses. Original lost Aleppo Exodus17:16 folio, Yeivin printed p82, Breuer pp260–261 n1, original Göttingen1991 and original BHS printed critical apparatus still unavailable to this research. Wikimedia PDM1.0 is platform-specific metadata, not blanket cross-jurisdictional photographic republication authorization.",
+      "supportedUse": "Directly cite an actual early-11th-century codex leaf's photographed digital access and exact folio/column/line locus (42r, col1 lines15–16) as mapped by a MODERN transcription, with the TEI-reported two words across a line break. Distinguish physical photograph existence, third-party diplomatic mapping, and not-yet-performed independent native-pixel collation. Compare witness L as the underlying text used by BHS without assuming BHS is independent physical evidence.",
+      "forbiddenUse": "Assert this original photograph is of the lost Aleppo Codex leaf; claim independent high-resolution palaeographic glyph/diacritic/marginal note collation by this team; treat TEI or modern BHS or UXLC as an independent second ancient manuscript; claim photograph reuse rights are cleared everywhere because a Commons page marks PDM1.0; claim Yeivin, Breuer or Göttingen Ex17 original apparatus has been read; upgrade scientific review, source rights or Product publishing approvals.",
+      "originalPhotoAndTranscriptAudit20261113": {
+        "originalManuscriptIsLeningradNotAleppo": true,
+        "exactFolioNumber": "042a",
+        "traditionalPageSide": "42r",
+        "manuscriptHoldingShelfmark": "RNL Firkovich Evr I B 19a",
+        "biblicalRange": "Exodus 17:11–18:19",
+        "commonsOriginalPhotoAccessible": true,
+        "commonsOriginalImageWidthPx": 4090,
+        "commonsOriginalImageHeightPx": 4514,
+        "westSemiticResearchProjectInstitutionalPhotoProvenanceConfirmed": true,
+        "independentSourceTEIColumnNumber": 1,
+        "independentSourceTEILineEndKees": 15,
+        "independentSourceTEILineStartYah": 16,
+        "TEIEditorTextReportsTwoDistinctUnits": true,
+        "digitalTextIsASeparatePhysicalHebrewManuscript": false,
+        "imageViewedInBrowser": true,
+        "nativePixelEnlargementAndIndividualGlyphCollationCompleted": false,
+        "masoreticMarginaliaFullyDeciphered": false,
+        "fullAncientCriticalCollationCompleted": false,
+        "aleppoEx17LostLeafSeen": false,
+        "otherAncientHebrewManuscriptIndependentlyCollated": false,
+        "completeBHSAndGöttingenPrintedApparatusRead": false,
+        "originalYeivinAndBreuerTargetPagesRead": false,
+        "digitalPhotoRepublicationPermissionFullyCleared": false,
+        "independentExternalScholarlyReviewPassed": false,
+        "productPublicationApproved": false
+      }
     }
   ],
-  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716 | WAVE49_2026-11-11_OFER2003_YEIVIN82_AUTHOR_CROSSWALK_PSALM_ISAIAH_NOT_EXODUS | WAVE50_2026-11-11_PESACHIM117A_TASHBETZ_I177_AHS_YD27524_HISTORICAL_DISPUTE_NOT_CODEX_AUTOPSY | WAVE54_2026-11-11_HUJI_OFER2002_25P_ENGLISH_EX17_16_SINGLE_CONCORDANT_NOT_DISCREPANT_HOLDS | W59_2026-11-12_OFER2016_ORIGINAL_TEXTUS26_EXODUS8_SELECT_PAGE_FACSIMILES_HISTORY_QUESTION_PARTIAL_SUPPORT_NOT_EX17 | W60_2026-11-12_WEVERS1991_ENGLISH_AUTHOR_INTRO2006_APP1_APP2_FIELD_COMPARE_NOT_EX17_APPARATUS | W61_2026-11-12_FIELD1875_ORIGINAL_BSB_FULL_VOLUME_PAGE111_EX17_16_ACTUAL_PRINT_SYMMACHUS_UNCERTAIN_NOT_ALEPPO_GOTTINGEN | W62_2026-11-12_KITTEL_BHK2_1909_P99_PRINT_APP_NOT_1937_AND_OFFICIAL_BHS1977_1997_TEXT_NOT_APP | W64_2026-11-13_BIU_MGKETER_COCHEN_MODERN_EDITORIAL_ONEWORD_EX17_VS_BHS_TWOWORD_NOT_ALEPPO"
+  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716 | WAVE49_2026-11-11_OFER2003_YEIVIN82_AUTHOR_CROSSWALK_PSALM_ISAIAH_NOT_EXODUS | WAVE50_2026-11-11_PESACHIM117A_TASHBETZ_I177_AHS_YD27524_HISTORICAL_DISPUTE_NOT_CODEX_AUTOPSY | WAVE54_2026-11-11_HUJI_OFER2002_25P_ENGLISH_EX17_16_SINGLE_CONCORDANT_NOT_DISCREPANT_HOLDS | W59_2026-11-12_OFER2016_ORIGINAL_TEXTUS26_EXODUS8_SELECT_PAGE_FACSIMILES_HISTORY_QUESTION_PARTIAL_SUPPORT_NOT_EX17 | W60_2026-11-12_WEVERS1991_ENGLISH_AUTHOR_INTRO2006_APP1_APP2_FIELD_COMPARE_NOT_EX17_APPARATUS | W61_2026-11-12_FIELD1875_ORIGINAL_BSB_FULL_VOLUME_PAGE111_EX17_16_ACTUAL_PRINT_SYMMACHUS_UNCERTAIN_NOT_ALEPPO_GOTTINGEN | W62_2026-11-12_KITTEL_BHK2_1909_P99_PRINT_APP_NOT_1937_AND_OFFICIAL_BHS1977_1997_TEXT_NOT_APP | W64_2026-11-13_BIU_MGKETER_COCHEN_MODERN_EDITORIAL_ONEWORD_EX17_VS_BHS_TWOWORD_NOT_ALEPPO | W65_2026-11-13_LENINGRAD_B19A_042A_WSRP_ORIGINAL_PHOTO_LOCUS_TEI_COL1_LINES15_16_DISTINGUISHED_FROM_NATIVE_PIXEL_COLLATION"
 }
