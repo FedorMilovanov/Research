@@ -10,7 +10,7 @@
 
 **Две активные deliverable-задачи:** (1) объединить узкий P1 chapter01↔02 после успешных тестов на точном PR HEAD и post-merge `main`; (2) реальная независимая T-03 рецензия: дождаться доказанного компетентного контакта/согласия, передать согласованный пакет, получить проверяемый отзыв с источниками и обработать замечания. При отсутствии контакта — **STOP_OUTREACH** и разрешённое продвижение H-08/T-08 по уже подтверждённым документам/вопросам, без бесконечного поиска одних и тех же книг. Остальная P1 очередь (введение, 04/06/07/09/10/12), P2 (03/05) и права на **фактически используемые** цитаты/иллюстрации — в редакционной матрице; не создавать отдельного «плана плана».
 
-**Не считать закрытием:** высокий процент проверок CI, тысячи исследовательских строк, `FULL_OBJECT_VERIFIED` на шести объектах или готовность review-пакета **не** снимают `INDEPENDENT_EXTERNAL_REVIEW_OPEN / THEOLOGICAL_PEER_REVIEW_OPEN / ORIGINAL_VARIANT_COLLATION_HOLD / ARCHIVE_HOLD / RIGHTS_HOLD / NOT_EDITORIAL_READY / PUBLICATION_HOLD`. Research ≠ Product, публикации нет.
+**Не считать закрытием:** высокий процент проверок CI, тысячи исследовательских строк, `FULL_OBJECT_VERIFIED` на шести объектах или готовность review-пакета **не** снимают `INDEPENDENT_EXTERNAL_REVIEW_OPEN / THEOLOGICAL_PEER_REVIEW_OPEN / ORIGINAL_1530_MANUSCRIPT_HOLD / ORIGINAL_VARIANT_COLLATION_HOLD / ARCHIVE_HOLD / RIGHTS_HOLD / NOT_EDITORIAL_READY / PUBLICATION_HOLD`. Research ≠ Product, публикации нет.
 
 ---
 
