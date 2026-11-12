@@ -2838,5 +2838,52 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertEqual([], validate_source_access(self.sources))
 
 
+    def test_dovi_miqra_editorial_two_words_vs_aleppo_report_is_not_corpus_autopsy(self) -> None:
+        source_id = "SRC-DOVI-MIQRA-MASORAH-CH3-EX17-16-COMPOSITE-EDITORIAL"
+        mutations = (
+            ("originalHebrewAndEnglishChapterThreeDirectlyRead", False),
+            ("editorDoviUserHostedWikisourceNotInstitutionalPeerReviewed", False),
+            ("sectionTitle", "Independently Collated Aleppo"),
+            ("authorEnumeratesCompositeCases", 12),
+            ("verse", "Exodus 17:15"),
+            ("printedMainReadingTwoWords", "כֵּ֣סְיָ֔הּ"),
+            ("reportedAlternativeJoinedReading", "כֵּ֣ס יָ֔הּ"),
+            ("separateReadingAscribedToLeningrad", False),
+            ("separateReadingAscribedToYemeniteSephardiAshkenazi", False),
+            ("joinedReadingSiglum", "L"),
+            ("joinedReadingIsReportedAleppoNotExistingFolio", False),
+            ("editorStatesYemeniteScrollsNotDecisiveForAleppoWordJoining", False),
+            ("onlineTextIsPhysicalAncientManuscript", True),
+            ("elevenExamplesAreElevenOriginalManuscripts", True),
+            ("editorialSourceResolvesOr4445PhotoConflict", True),
+            ("lostAleppoExodus1716LeafExamined", True),
+            ("originalBHSAndGöttingenPrintedApparatusCollated", True),
+            ("independentCriticalManuscriptCollationCompleted", True),
+            ("externalScientificPeerReviewApproved", True),
+            ("textOrPhotoReuseRightsApproved", True),
+            ("productPublishingApproved", True),
+        )
+        for field, invalid in mutations:
+            with self.subTest(editorial_field=field):
+                changed = copy.deepcopy(self.sources)
+                row = next(x for x in changed["records"] if x["id"] == source_id)
+                row["authorEditorialMethodAudit20261113"][field] = invalid
+                self.assertTrue(any("Dovi editorial masorah cannot become" in e
+                                    for e in validate_source_access(changed)))
+        for field, invalid in (
+            ("accessState", "FULL_OBJECT_VERIFIED"),
+            ("rightsState", "PUBLICATION_ELIGIBLE"),
+            ("publicationState", "PROMOTE"),
+            ("criticalEditionCollated", True),
+        ):
+            with self.subTest(source_field=field):
+                changed = copy.deepcopy(self.sources)
+                row = next(x for x in changed["records"] if x["id"] == source_id)
+                row[field] = invalid
+                self.assertTrue(any("Dovi editorial masorah cannot become" in e
+                                    for e in validate_source_access(changed)))
+        self.assertEqual([], validate_source_access(self.sources))
+
+
 if __name__ == "__main__":
     unittest.main()
