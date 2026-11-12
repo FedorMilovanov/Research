@@ -2739,5 +2739,56 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertEqual([], validate_source_access(self.sources))
 
 
+    def test_leningrad_b19a_f42a_original_photo_is_not_complete_critical_collation(self) -> None:
+        source_id = "SRC-LENINGRAD-B19A-F042A-EX17-16-WSRP-FACSIMILE"
+        mutations = (
+            ("originalManuscriptIsLeningradNotAleppo", False),
+            ("exactFolioNumber", "041b"),
+            ("traditionalPageSide", "42v"),
+            ("manuscriptHoldingShelfmark", "Aleppo Codex"),
+            ("biblicalRange", "Exodus 18:1–19:2"),
+            ("commonsOriginalPhotoAccessible", False),
+            ("commonsOriginalImageWidthPx", 960),
+            ("commonsOriginalImageHeightPx", 1060),
+            ("westSemiticResearchProjectInstitutionalPhotoProvenanceConfirmed", False),
+            ("independentSourceTEIColumnNumber", 2),
+            ("independentSourceTEILineEndKees", 16),
+            ("independentSourceTEILineStartYah", 15),
+            ("TEIEditorTextReportsTwoDistinctUnits", False),
+            ("digitalTextIsASeparatePhysicalHebrewManuscript", True),
+            ("imageViewedInBrowser", False),
+            ("nativePixelEnlargementAndIndividualGlyphCollationCompleted", True),
+            ("masoreticMarginaliaFullyDeciphered", True),
+            ("fullAncientCriticalCollationCompleted", True),
+            ("aleppoEx17LostLeafSeen", True),
+            ("otherAncientHebrewManuscriptIndependentlyCollated", True),
+            ("completeBHSAndGöttingenPrintedApparatusRead", True),
+            ("originalYeivinAndBreuerTargetPagesRead", True),
+            ("digitalPhotoRepublicationPermissionFullyCleared", True),
+            ("independentExternalScholarlyReviewPassed", True),
+            ("productPublicationApproved", True),
+        )
+        for field, invalid in mutations:
+            with self.subTest(photo_field=field):
+                changed = copy.deepcopy(self.sources)
+                row = next(x for x in changed["records"] if x["id"] == source_id)
+                row["originalPhotoAndTranscriptAudit20261113"][field] = invalid
+                self.assertTrue(any("Leningrad B19a photo and third-party line map" in err
+                                    for err in validate_source_access(changed)))
+        for field, invalid in (
+            ("accessState", "FULL_OBJECT_VERIFIED"),
+            ("rightsState", "PUBLICATION_ELIGIBLE"),
+            ("publicationState", "PROMOTE"),
+            ("criticalEditionCollated", True),
+        ):
+            with self.subTest(source_field=field):
+                changed = copy.deepcopy(self.sources)
+                row = next(x for x in changed["records"] if x["id"] == source_id)
+                row[field] = invalid
+                self.assertTrue(any("Leningrad B19a photo and third-party line map" in err
+                                    for err in validate_source_access(changed)))
+        self.assertEqual([], validate_source_access(self.sources))
+
+
 if __name__ == "__main__":
     unittest.main()
