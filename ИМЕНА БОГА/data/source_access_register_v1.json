@@ -4862,9 +4862,9 @@
         "PUBLICATION_HOLD"
       ],
       "locator": "British Library catalogue Or 4445, original 920–950 Pentateuch core contains Exodus on folios 42r–85r; university OPenn index explicitly labels 13291_0125.jpg as folio 59v (web and original master JPEG available) and records images for every physical leaf. Wikipedia comparative table for Exod 17:16 cites British Library Or 4445 'frame 59v' in footnote 157, identifies London Codex reading as joined כסיה. This is a plausible verse locator supported by published secondary comparison and original image index, not direct independent verification of exact consonantal spacing.",
-      "sourceObjectState": "Original full-page historical photo physically hosted and retrievable; read-only external browser inspection confirmed image is a three-column old Hebrew manuscript. HOWEVER a browser agent attempting automatic palaeographic reading of the web-resolution JPG asserted separate כס יה, while a published multi-codex comparison table explicitly reports Or 4445 joined כסיה. The agent transcription was not independently corroborated and must not be treated as an authored original manuscript collation. Therefore actual Or 4445 original-ink word-division in Exod17:16 is deliberately UNRESOLVED in this research. Precise photography pixel comparison of the correct text line against original full-size master and independent expert review still needed. This is a distinct physical Hebrew codex from original Codex L, but the hypothetical one-word reading is not yet confirmed; no source upgrades or ancient claim ATTESTATION minted. Third-party scholarly and community claims must not be counted as independent manuscript witnesses beyond Or 4445 itself. BL catalog cautions its own digitized content currently unavailable on BL platform; OPenn images independently accessible; avoid falsely claiming BL's own site restored.",
-      "supportedUse": "Identify independent original 10th-century physical witness Or 4445 and exact candidate folio 59v via primary library/catalogue and OPenn's digital image; mark the conflicting secondary one-word vs automated visual two-word readings as UNRESOLVED. Direct readers to open the full-size physical scan to decide under independently reviewed Hebrew palaeography; preserve uncertainty and historical evidence tiers.",
-      "forbiddenUse": "Assert that the two-word or joined one-word original reading has already been conclusively established; treat the automated visual report as reliable textual-criticism autopsy; invent full original glyph/point/Masorah collation, count the third-party comparison table as another ancient manuscript, confuse Or 4445 with Leningrad or Aleppo Codex, grant manuscript photo publication rights by web access alone, or declare scientific/Product/rights approval.",
+      "sourceObjectState": "Original full-page historical photo physically hosted and retrievable; read-only external browser inspection confirmed image is a three-column old Hebrew manuscript. HOWEVER a browser agent attempting automatic palaeographic reading of the web-resolution JPG asserted separate כס יה, while a published multi-codex comparison table explicitly reports Or 4445 joined כסיה. The agent transcription was not independently corroborated and must not be treated as an authored original manuscript collation. Therefore actual Or 4445 original-ink word-division in Exod17:16 is deliberately UNRESOLVED in this research. Precise photography pixel comparison of the correct text line against original full-size master and independent expert review still needed. This is a distinct physical Hebrew codex from original Codex L, but the hypothetical one-word reading is not yet confirmed; no source upgrades or ancient claim ATTESTATION minted. Third-party scholarly and community claims must not be counted as independent manuscript witnesses beyond Or 4445 itself. BL catalog cautions its own digitized content currently unavailable on BL platform; OPenn images independently accessible; avoid falsely claiming BL's own site restored. W68 correction (editorial status): directly read Dovi's authored verse-by-verse critical note for Ex17:16 at https://bdenckla.github.io/MAM-basics/MAM-with-doc/A2-Exodus-big-doc.html (line for Ex17:16), where siglum ב is explicitly British Library Or4445 and editor quotes manuscript Masorah 'חדה מלתא' in support of joined כסיה, independent of secondary Wikipedia comparison. This supplies TWO published comparisons agreeing on one word, so automated agent two-word reading is NOT reliable evidence. Preserve finalOriginalWordDivision=UNRESOLVED_CONFLICT narrowly for independently controlled original-ink image autopsy still not performed; editorial consensus is joined one word, NOT a 50/50 scholarly split. Original photo and exact correct physical marginal note not personally inspected at native pixels.",
+      "supportedUse": "Identify independent original 10th-century physical witness Or 4445 and exact candidate folio 59v via primary library/catalogue and OPenn's digital image; mark the conflicting secondary one-word vs automated visual two-word readings as UNRESOLVED. Direct readers to open the full-size physical scan to decide under independently reviewed Hebrew palaeography; preserve uncertainty and historical evidence tiers. Modern authored MAM verse apparatus, directly read by us, reports Or4445 siglum ב joined כסיה and explicit marginal Masorah חדה מלתא, supporting the prior second editorial chart. Editor's published reading should take precedence over unreliable unverified browser agent transcription, but we still require independent native-image examination before claiming our own original-ink palaeography.",
+      "forbiddenUse": "Assert that the two-word or joined one-word original reading has already been conclusively established; treat the automated visual report as reliable textual-criticism autopsy; invent full original glyph/point/Masorah collation, count the third-party comparison table as another ancient manuscript, confuse Or 4445 with Leningrad or Aleppo Codex, grant manuscript photo publication rights by web access alone, or declare scientific/Product/rights approval. Mischaracterize current editorial literature as evenly split: two modern published comparisons agree Or4445 one word; previous automated reading is not scholarly evidence. Do not report a completed autopsy of Or4445 on that basis.",
       "originalFacsimileCrosscheck20261113": {
         "originalAncientHebrewManuscript": "British Library Or 4445",
         "coreDateRange": "920–950 CE",
@@ -4887,7 +4887,15 @@
         "criticalManuscriptCollationCompleted": false,
         "publicReplicaOrPhotoRightsCleared": false,
         "independentScientificPeerApproval": false,
-        "productPublishingApproval": false
+        "productPublishingApproval": false,
+        "editorialVerseByVerseMAMApparatusDirectlyRead": true,
+        "editorialMAMSiglumBetEqualsOr4445": true,
+        "editorialMAMOr4445ReadingJoinedOneWord": true,
+        "editorialMAMOr4445MasorahQuoted": "חדה מלתא",
+        "twoPublishedComparisonsConcurJoinedOneWord": true,
+        "formerAutomatedPhotoTwoWordClaimReliable": false,
+        "independentPhotoAutopsyStillUnfinished": true,
+        "editorialConsensusIsAnIndependentPhotoCollationByUs": false
       }
     },
     {
@@ -4912,9 +4920,9 @@
         "PUBLICATION_HOLD"
       ],
       "locator": "English editor-authored Wikisource chapter 3 §Conjoined Words in the Torah, enumerated 11 variant composite forms, item 5 Exodus/Beshellah17:16, its explanatory paragraph immediately after the 11 items. Hebrew original §תיבות מחוברות בתורה item5; independently opened and verified. Publisher/author uses [כֵּ֣ס יָ֔הּ]*=L (=Yemenite, Sephardi, Ashkenazi scroll editions), contrasted [כֵּ֣סְיָ֔הּ] (=A(S), attributed Aleppo witness/testimony rather than preserved now lost folio). Edition's default prints separate, caveats Yemenite scribal tradition is not decisive for Aleppo joining.",
-      "sourceObjectState": "Author's own online editorial methodology fully read for relevant directly accessible Chapter3 §Conjoined Words section. Editorial list comprises eleven composite-word cases, not eleven independent ancient manuscript collations. Both Hebrew original section and English translation align on Ex17:16 word-division and methodology. Witness siglum A(S) retained literally without inferring photo of lost Aleppo Exodus17 folio; editor uses testimony about Aleppo, not firsthand user viewing. This user-hosted public editorial work is not a signed independent academic peer-review or copyright rights clearance, and does not resolve BL Or4445 f59v original photographic reading versus a separate comparing editor's table.",
-      "supportedUse": "Quote and attribute Dovi edition's choice of two separate words in customary scroll traditions and L and its A(S)-labelled reported joined Aleppo reading; cite 11-entry methodological typology and Dovi caveat that Yemenite scroll tradition alone does NOT prove Aleppo word division. Distinguish this new editorial source from ancient physical manuscript source objects and the independent Or4445 unresolved conflict.",
-      "forbiddenUse": "Claim Dovi witnessed lost Aleppo Exodus17:16 folio, that Dovi's online user-edited methodology is an externally peer-reviewed scientific judgement, that modern Dovi/BIU/BHS/WLC websites each count as independent physical Hebrew manuscripts, that 11 composite word examples imply 11 independent ancient witnesses, that Dovi settles original physical Or4445 f59v joined-vs-separate reading, or that digital display grants rights and Product publishing approval.",
+      "sourceObjectState": "Author's own online editorial methodology fully read for relevant directly accessible Chapter3 §Conjoined Words section. Editorial list comprises eleven composite-word cases, not eleven independent ancient manuscript collations. Both Hebrew original section and English translation align on Ex17:16 word-division and methodology. Witness siglum A(S) retained literally without inferring photo of lost Aleppo Exodus17 folio; editor uses testimony about Aleppo, not firsthand user viewing. This user-hosted public editorial work is not a signed independent academic peer-review or copyright rights clearance, and does not resolve BL Or4445 f59v original photographic reading versus a separate comparing editor's table. W68: ALSO directly read editor's verse-specific MA(M) critical manuscript apparatus and own original manuscript sigla dictionary: editor attributes two words to L, Shin (=Damascus Pentateuch Sassoon507), and Vav (=Museum of the Bible Ms882) together with ordinary scroll traditions, while attributing joined form to A(S,K) (historical Saphir/Kimhi records of now-lost Aleppo leaf), London Or4445 siglum Bet, Sassoon1053, Cairo18 and other listed witnesses. For Or4445 apparatus explicitly quotes ancient marginal notation חדה מלתא, and Cairo18 'West one word, East two'. Editorial evidence strongly contradicts previous low-confidence browser agent response falsely stating separate; still no independent team high-resolution glyph/Masorah collation. Editor also references a Yuval Weiss Leshonenu volume 88 issue3 2026 pp242–272 study, but WE HAVE NOT READ the original paper; do not attribute its proposed later Aleppo correction to us as verified.",
+      "supportedUse": "Quote and attribute Dovi edition's choice of two separate words in customary scroll traditions and L and its A(S)-labelled reported joined Aleppo reading; cite 11-entry methodological typology and Dovi caveat that Yemenite scroll tradition alone does NOT prove Aleppo word division. Distinguish this new editorial source from ancient physical manuscript source objects and the independent Or4445 unresolved conflict. Verse-specific authored MAM Hebrew apparatus directly read: L/ש/ו separate, Or4445=ב with note חדה מלתא joined, a(s,k) separate named historical testimonies from Saphir/Kimhi not surviving Aleppo leaf. Other list sigla identify manuscript witnesses by EDITOR'S comparison, not our original autopsy; cite Yuval Weiss as editor-reported bibliographic lead ONLY.",
+      "forbiddenUse": "Claim Dovi witnessed lost Aleppo Exodus17:16 folio, that Dovi's online user-edited methodology is an externally peer-reviewed scientific judgement, that modern Dovi/BIU/BHS/WLC websites each count as independent physical Hebrew manuscripts, that 11 composite word examples imply 11 independent ancient witnesses, that Dovi settles original physical Or4445 f59v joined-vs-separate reading, or that digital display grants rights and Product publishing approval. Claim Yuval Weiss 2026 original 242–272 pages have been opened/read; claim Dovi's manuscript list equals our own physical collation or that modern author is an external peer reviewer. Do not claim Or4445 physical reading independently proven merely by published manuscript apparatus.",
       "authorEditorialMethodAudit20261113": {
         "originalHebrewAndEnglishChapterThreeDirectlyRead": true,
         "editorDoviUserHostedWikisourceNotInstitutionalPeerReviewed": true,
@@ -4937,8 +4945,55 @@
         "externalScientificPeerReviewApproved": false,
         "textOrPhotoReuseRightsApproved": false,
         "productPublishingApproved": false
+      },
+      "verseSpecificAuthoredCriticalApparatus": "https://bdenckla.github.io/MAM-basics/MAM-with-doc/A2-Exodus-big-doc.html",
+      "manuscriptSiglaKey": "https://he.wikisource.org/wiki/ויקיטקסט:מבוא_למקרא_על_פי_המסורה/נספחים",
+      "editorialVerseCriticalApparatusAudit20261113": {
+        "directOriginalEditorialVerseApparatusRead": true,
+        "criticalApparatusDirectUrl": "https://bdenckla.github.io/MAM-basics/MAM-with-doc/A2-Exodus-big-doc.html",
+        "manuscriptSiglaDirectUrl": "https://he.wikisource.org/wiki/ויקיטקסט:מבוא_למקרא_על_פי_המסורה/נספחים",
+        "exactVerse": "Exodus 17:16",
+        "defaultTwoWords": "כֵּ֣ס יָ֔הּ",
+        "attributedJoined": "כֵּ֣סְיָ֔הּ",
+        "twoWordPhysicalSigla": [
+          "ל",
+          "ש",
+          "ו"
+        ],
+        "oneWordPhysicalSiglaIncludes": [
+          "ב",
+          "ש1",
+          "ק3",
+          "ל9"
+        ],
+        "londonCodexSiglum": "ב",
+        "londonCodexShelfmark": "British Library Or. 4445",
+        "londonCodexEditorialJoined": true,
+        "londonCodexMasorahQuote": "חדה מלתא",
+        "cairoCodexSiglum": "ק3",
+        "cairoMasorahQuote": "למער' חדא מלא למדנח' תרתין מלין",
+        "aleppoReportedSigla": [
+          "א(ס)",
+          "א(ק)"
+        ],
+        "aleppoSaphirHistoricalTestimonyNotLostLeaf": true,
+        "aleppoKimhiHistoricalTestimonyNotLostLeaf": true,
+        "historicalAleppoEx17FolioPhotographed": false,
+        "reportedGreekAndHebrewPhysicalWitnessesIndependentlyCollatedByUs": false,
+        "editionPhysicalManuscriptsAreSameAsOurAutopsy": false,
+        "formerBrowserAgentTwoWordReadingReliable": false,
+        "editorDiscussesDissentingVowelAccents": true,
+        "yuvalWeissArticleCitationByEditor": "Leshonenu 88 issue 3 (2026), pp. 242–272",
+        "yuvalWeissOriginalArticleReadByUs": false,
+        "yuvalWeissLaterAleppoCorrectionOnlyReportedHypothesis": true,
+        "directOriginalBHSAndGöttingenApparatusFullyRead": false,
+        "independentScholarlyReviewPassed": false,
+        "independentPhysicalPhotoCollationCompleted": false,
+        "originalAncientMasorahMarginaliaDecodedByUs": false,
+        "photographReuseRightsCleared": false,
+        "productApproved": false
       }
     }
   ],
-  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716 | WAVE49_2026-11-11_OFER2003_YEIVIN82_AUTHOR_CROSSWALK_PSALM_ISAIAH_NOT_EXODUS | WAVE50_2026-11-11_PESACHIM117A_TASHBETZ_I177_AHS_YD27524_HISTORICAL_DISPUTE_NOT_CODEX_AUTOPSY | WAVE54_2026-11-11_HUJI_OFER2002_25P_ENGLISH_EX17_16_SINGLE_CONCORDANT_NOT_DISCREPANT_HOLDS | W59_2026-11-12_OFER2016_ORIGINAL_TEXTUS26_EXODUS8_SELECT_PAGE_FACSIMILES_HISTORY_QUESTION_PARTIAL_SUPPORT_NOT_EX17 | W60_2026-11-12_WEVERS1991_ENGLISH_AUTHOR_INTRO2006_APP1_APP2_FIELD_COMPARE_NOT_EX17_APPARATUS | W61_2026-11-12_FIELD1875_ORIGINAL_BSB_FULL_VOLUME_PAGE111_EX17_16_ACTUAL_PRINT_SYMMACHUS_UNCERTAIN_NOT_ALEPPO_GOTTINGEN | W62_2026-11-12_KITTEL_BHK2_1909_P99_PRINT_APP_NOT_1937_AND_OFFICIAL_BHS1977_1997_TEXT_NOT_APP | W64_2026-11-13_BIU_MGKETER_COCHEN_MODERN_EDITORIAL_ONEWORD_EX17_VS_BHS_TWOWORD_NOT_ALEPPO | W65_2026-11-13_LENINGRAD_B19A_042A_WSRP_ORIGINAL_PHOTO_LOCUS_TEI_COL1_LINES15_16_DISTINGUISHED_FROM_NATIVE_PIXEL_COLLATION | W66_2026-11-13_OR4445_BL_59V_OPENN_PHOTO_LOCATOR_ORIGINAL_WORDDIVISION_CONFLICT_UNRESOLVED | W67_2026-11-13_DOVI_AUTHOR_EDITORIAL_11_COMPOSITE_WORDS_TWO_VS_REPORTED_ALEPPO_ONE_NOT_PHOTO"
+  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716 | WAVE49_2026-11-11_OFER2003_YEIVIN82_AUTHOR_CROSSWALK_PSALM_ISAIAH_NOT_EXODUS | WAVE50_2026-11-11_PESACHIM117A_TASHBETZ_I177_AHS_YD27524_HISTORICAL_DISPUTE_NOT_CODEX_AUTOPSY | WAVE54_2026-11-11_HUJI_OFER2002_25P_ENGLISH_EX17_16_SINGLE_CONCORDANT_NOT_DISCREPANT_HOLDS | W59_2026-11-12_OFER2016_ORIGINAL_TEXTUS26_EXODUS8_SELECT_PAGE_FACSIMILES_HISTORY_QUESTION_PARTIAL_SUPPORT_NOT_EX17 | W60_2026-11-12_WEVERS1991_ENGLISH_AUTHOR_INTRO2006_APP1_APP2_FIELD_COMPARE_NOT_EX17_APPARATUS | W61_2026-11-12_FIELD1875_ORIGINAL_BSB_FULL_VOLUME_PAGE111_EX17_16_ACTUAL_PRINT_SYMMACHUS_UNCERTAIN_NOT_ALEPPO_GOTTINGEN | W62_2026-11-12_KITTEL_BHK2_1909_P99_PRINT_APP_NOT_1937_AND_OFFICIAL_BHS1977_1997_TEXT_NOT_APP | W64_2026-11-13_BIU_MGKETER_COCHEN_MODERN_EDITORIAL_ONEWORD_EX17_VS_BHS_TWOWORD_NOT_ALEPPO | W65_2026-11-13_LENINGRAD_B19A_042A_WSRP_ORIGINAL_PHOTO_LOCUS_TEI_COL1_LINES15_16_DISTINGUISHED_FROM_NATIVE_PIXEL_COLLATION | W66_2026-11-13_OR4445_BL_59V_OPENN_PHOTO_LOCATOR_ORIGINAL_WORDDIVISION_CONFLICT_UNRESOLVED | W67_2026-11-13_DOVI_AUTHOR_EDITORIAL_11_COMPOSITE_WORDS_TWO_VS_REPORTED_ALEPPO_ONE_NOT_PHOTO | W68_2026-11-13_DIRECT_DOVI_EDITOR_VERSE_SPECIFIC_CRITICAL_APPARATUS_MARGINAL_MASORAH_OR4445_ONE_WORD_EDITORIAL_NOT_AUTOPSY"
 }
