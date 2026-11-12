@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 123,
+    "sourceRecords": 124,
     "approvedForProduct": 0
   },
   "records": [
@@ -4734,7 +4734,51 @@
         "independentAncientCollation": false,
         "rights": "CC BY for author's erratum text alone; manuscript images/Bible translations/Product permissions remain separate."
       }
+    },
+    {
+      "id": "SRC-MGKETER-BIU-COHEN-EX17-16-ONLINE-ONE-WORD",
+      "title": "Mikraot Gedolot HaKeter, Bar-Ilan University/Menahem Cohen scientific online edition, Exodus 17:16 single-word כסיה",
+      "creator": "Menahem Cohen (scientific editor); Mikraot Gedolot HaKeter project, Bar-Ilan University",
+      "year": null,
+      "url": "https://www.mgketer.org/tanach/2/17/16",
+      "methodUrl": "https://www.mgketer.org/?ideaalm_lang=HEB",
+      "objectType": "direct_official_modern_scientific_edition_online_main_verse_text_reconstructed_lost_Aleppo_exodus_context",
+      "sourceRole": "BIU_MGKETER_COHEN_ONLINE_EX17_16_ONE_WORD_EDITORIAL_RECONSTRUCTION_NOT_LOST_ALEPPO_FOLIO",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "evidenceClass": "A2",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "criticalEditionCollated": false,
+      "locator": "Official Bar-Ilan Mikraot Gedolot HaKeter online scientific edited Exodus 17:16 https://www.mgketer.org/tanach/2/17/16 visible main verse headings 'טקסט ניקוד וטעמים', 'טקסט וניקוד', 'טקסט בלבד', 'תיקון קוראים': each joins throne + Yah as כסיה / pointed כסְיָהּ. Official editorial About identifies Menahem Cohen and says absent Aleppo sections reconstructed; the Torah Exodus17:16 original Aleppo folio is missing. Independent publisher BHS online Ex17:16 prints separate כֵּס יָהּ. Historical commentator quotations on MGKeter website often say כס יה separately: quotations are not the edited verse body.",
+      "sourceObjectState": "Opened and read exact official online edition verse in four view modes and editorial project 'About' page; not all surrounding manuscript apparatus or internal editorial decision notes read. Modern edition directly attests editorial ONE-word display, does NOT expose a photograph of original lost Aleppo Exodus17:16 nor prove how that folio was physically spaced. Existing Ofer2008 B1 scholarly article already reports Cohen's one-word edited decision versus Breuer's two-word decision; modern publisher BHS official page independently checks two-word display. These are competing modern editorial surfaces, not direct independently collated tenth-century Hebrew manuscript witnesses. Original ancient folio and full 1991 Göttingen/BHS apparatus, Yeivin82, Breuer260-261 remain unread. Rights of full site/edition/images require permission.",
+      "supportedUse": "Directly cite current BIU Menahem Cohen edition as a modern scientific editorial display of joined כסיה in Ex17:16, compare only with separately printed BHS publisher modern text, and distinguish edited main biblical verse from parallel Rashi/medieval commentary and underlying lost Aleppo witness.",
+      "forbiddenUse": "Claim a surviving photo or original physical Aleppo manuscript for Exodus17:16; claim unmediated manuscript collation by this Research team, independent Greek/Hebrew manuscript counting or confirmation of Aleppo original page glyphs/spacing; treat Rashi commentary text 'כס יה' as the main edition text; assume reuse/license rights because a public website renders text; award any external scientific or Product publication approval.",
+      "publisherPageAudit20261113": {
+        "projectOfficialSiteDirectlyRead": true,
+        "editorMenahemCohenNamedByProject": true,
+        "mainBibleVerseLocator": "Exodus 17:16",
+        "mainTextUnpointedJoinedHebrew": "כסיה",
+        "mainTextOneWrittenWord": true,
+        "fourMainBibleTextModesJoined": true,
+        "editorProjectAcknowledgesReconstructingMissingAleppoPortions": true,
+        "originalAleppoEx17_16FolioSurvivesInDigitalDisplay": false,
+        "underlyingAncientAleppoFolioAutopticallyExamined": false,
+        "independentPhysicalManuscriptCollationCompleted": false,
+        "criticallyDecipheredOriginalBHSApparatus": false,
+        "criticallyDecipheredGöttingenEx17_16Apparatus": false,
+        "modernBhsPublisherPrintsSameOneWord": false,
+        "medievalCommentaryQuotationUsedAsMainVerse": false,
+        "permissionToRepublishDigitalEditionOrImagesGranted": false,
+        "externalScholarlySignoffGranted": false,
+        "productPublicationApproved": false
+      }
     }
   ],
-  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716 | WAVE49_2026-11-11_OFER2003_YEIVIN82_AUTHOR_CROSSWALK_PSALM_ISAIAH_NOT_EXODUS | WAVE50_2026-11-11_PESACHIM117A_TASHBETZ_I177_AHS_YD27524_HISTORICAL_DISPUTE_NOT_CODEX_AUTOPSY | WAVE54_2026-11-11_HUJI_OFER2002_25P_ENGLISH_EX17_16_SINGLE_CONCORDANT_NOT_DISCREPANT_HOLDS | W59_2026-11-12_OFER2016_ORIGINAL_TEXTUS26_EXODUS8_SELECT_PAGE_FACSIMILES_HISTORY_QUESTION_PARTIAL_SUPPORT_NOT_EX17 | W60_2026-11-12_WEVERS1991_ENGLISH_AUTHOR_INTRO2006_APP1_APP2_FIELD_COMPARE_NOT_EX17_APPARATUS | W61_2026-11-12_FIELD1875_ORIGINAL_BSB_FULL_VOLUME_PAGE111_EX17_16_ACTUAL_PRINT_SYMMACHUS_UNCERTAIN_NOT_ALEPPO_GOTTINGEN | W62_2026-11-12_KITTEL_BHK2_1909_P99_PRINT_APP_NOT_1937_AND_OFFICIAL_BHS1977_1997_TEXT_NOT_APP"
+  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716 | WAVE49_2026-11-11_OFER2003_YEIVIN82_AUTHOR_CROSSWALK_PSALM_ISAIAH_NOT_EXODUS | WAVE50_2026-11-11_PESACHIM117A_TASHBETZ_I177_AHS_YD27524_HISTORICAL_DISPUTE_NOT_CODEX_AUTOPSY | WAVE54_2026-11-11_HUJI_OFER2002_25P_ENGLISH_EX17_16_SINGLE_CONCORDANT_NOT_DISCREPANT_HOLDS | W59_2026-11-12_OFER2016_ORIGINAL_TEXTUS26_EXODUS8_SELECT_PAGE_FACSIMILES_HISTORY_QUESTION_PARTIAL_SUPPORT_NOT_EX17 | W60_2026-11-12_WEVERS1991_ENGLISH_AUTHOR_INTRO2006_APP1_APP2_FIELD_COMPARE_NOT_EX17_APPARATUS | W61_2026-11-12_FIELD1875_ORIGINAL_BSB_FULL_VOLUME_PAGE111_EX17_16_ACTUAL_PRINT_SYMMACHUS_UNCERTAIN_NOT_ALEPPO_GOTTINGEN | W62_2026-11-12_KITTEL_BHK2_1909_P99_PRINT_APP_NOT_1937_AND_OFFICIAL_BHS1977_1997_TEXT_NOT_APP | W64_2026-11-13_BIU_MGKETER_COCHEN_MODERN_EDITORIAL_ONEWORD_EX17_VS_BHS_TWOWORD_NOT_ALEPPO"
 }
