@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "planId": "NAMES_OF_GOD_MASTER_WORKPLAN",
   "createdAt": "2026-11-07",
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-12",
   "statusOwner": "ИМЕНА БОГА/data/names_research_workplan_v1.json",
   "humanGuide": "ИМЕНА БОГА/11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md",
   "mediaResearch": "ИМЕНА БОГА/12_TMS_BARRICK_CHOU_SOURCE_REVIEW.md",
@@ -16,7 +16,7 @@
     "regressionTests": 314,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_W61_EF056F6_EXACT_6_OF_6_SUCCESS_723_TESTS_NEW_W62_PENDING_725_EXPECTED",
+    "allSixCiChecks": "PRIOR_W62_80394AB_EXACT_6_OF_6_SUCCESS_725_TESTS_NEW_W63_AUDIT_COMMIT_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "ef056f6b3618d14398334517d85454c86cd47563",
+    "lastConfirmedAllSixChecksSha": "80394ab99f6c8deab5c7b177d5799f99d67c7f73",
     "readerChapterCount": 3,
     "readerSectionCrosswalkCount": 32,
     "readerCrosswalkLinkedDistinctClaims": 25,
@@ -771,7 +771,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "2026-11-12 W62 Research PR #379 ORIGINAL BRANCH: genuine original facsimile of Rudolf Kittel *Biblia Hebraica* second edition (title page 1909 despite 1937 misleading filename), printed Exodus p99 / original PDF index114, full source PDF 52,339,592 bytes / 568 pages. Personally visually inspected verse16 and compact lower apparatus (כס יה vs כסיה, Greek κρυφαίᾳ and suggested נס), NOT all sigla independently deciphered; NOT 1937 BHK3, 1977/1997 BHS, ancient codex or Göttingen1991. Separate original Deutsche Bibelgesellschaft online publisher BHS reduced view https://www.die-bibel.de/bibel/BHS/EXO.17 verse16 shows two units כֵּס יָהּ, but BHS printed critical apparatus ABSENT and no manuscript witness autopsy. Two distinct carefully-scoped original edition sources SRC-KITTEL-BHK2-1909-EX17-16-P99-ORIGINAL-APP and SRC-DBG-BHS-EX17-16-PUBLISHER-TEXT; 2 new negative mutation tests (12+9 mutation cases). Sources 123/105 attestations/87 provisional claims/75 relations, core tests 314, Names total 725 expected. Prior exact W61 ef056f6 6/6 GitHub Actions SUCCESS and 723/723 Names; W62 exact-head CI must be verified separately. All 123 publication BLOCKED, critical physical manuscript collations 0, independent peer reviews 0, Product/rights approvals 0. NG04/10/11/12 BLOCKED_SOURCE, NG13/15 BLOCKED_DEPENDENCY retained. Need genuine original Yeivin1968 p82, Breuer1976 pp260-261 n1, Göttingen1991 Exodus17:16, BHS actual print apparatus, full Dewrell2024, original Deir Alla plates; cease repeated catalogue-only searches absent access route. Original Leningrad and original lost Aleppo pixels not seen.",
+  "nextAction": "2026-11-12 W62 Research PR #379 ORIGINAL BRANCH: genuine original facsimile of Rudolf Kittel *Biblia Hebraica* second edition (title page 1909 despite 1937 misleading filename), printed Exodus p99 / original PDF index114, full source PDF 52,339,592 bytes / 568 pages. Personally visually inspected verse16 and compact lower apparatus (כס יה vs כסיה, Greek κρυφαίᾳ and suggested נס), NOT all sigla independently deciphered; NOT 1937 BHK3, 1977/1997 BHS, ancient codex or Göttingen1991. Separate original Deutsche Bibelgesellschaft online publisher BHS reduced view https://www.die-bibel.de/bibel/BHS/EXO.17 verse16 shows two units כֵּס יָהּ, but BHS printed critical apparatus ABSENT and no manuscript witness autopsy. Two distinct carefully-scoped original edition sources SRC-KITTEL-BHK2-1909-EX17-16-P99-ORIGINAL-APP and SRC-DBG-BHS-EX17-16-PUBLISHER-TEXT; 2 new negative mutation tests (12+9 mutation cases). Sources 123/105 attestations/87 provisional claims/75 relations, core tests 314, Names total 725 expected. Exact W62 80394ab 6/6 GitHub Actions SUCCESS and 725/725 Names TESTS independently rechecked in run 43134487157; after this W63 audit-only plan update, its new exact HEAD requires CI independently. All 123 publication BLOCKED, critical physical manuscript collations 0, independent peer reviews 0, Product/rights approvals 0. NG04/10/11/12 BLOCKED_SOURCE, NG13/15 BLOCKED_DEPENDENCY retained. Need genuine original Yeivin1968 p82, Breuer1976 pp260-261 n1, Göttingen1991 Exodus17:16, BHS actual print apparatus, full Dewrell2024, original Deir Alla plates; cease repeated catalogue-only searches absent access route. Original Leningrad and original lost Aleppo pixels not seen.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -853,8 +853,9 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-12",
-    "planStatus": "W62 two original EDITORIAL surfaces: Kittel 1909 second ed exact p99 printed apparatus and official BHS Ex17:16 reduced verse text, 123 sources/105 attestations/87 preliminary claims/75 relations. Core 314, Names total 725 expected. W61 ef056f6 6/6 SUCCESS and Names 723, W62 exact-SHA CI pending. No independent physical ancient codices, no full BHS or Göttingen actual critical apparatus, no scholarly/rights/Product approvals.",
+    "planStatus": "W62 two original EDITORIAL surfaces: Kittel 1909 second ed exact p99 printed apparatus and official BHS Ex17:16 reduced verse text, 123 sources/105 attestations/87 preliminary claims/75 relations. Core 314, Names total 725 expected. W62 80394ab 6/6 SUCCESS and Names 725/725 verified from original GitHub workflow log; new W63 audit-only commit pending its own CI. No independent physical ancient codices, no full BHS or Göttingen actual critical apparatus, no scholarly/rights/Product approvals.",
     "workCompleted": [
+      "2026-11-12 W63 audit: verified PR379 branch exact W62 80394ab, six completed successful GitHub workflows and original Names workflow job log 314+21+319+24+18+29=725 tests; verified official BHS online Ex17:16 two printed words; extracted title of Kittel BHK2 explicitly 1909 but web screenshot of 52 MB file was unavailable, so no new independent p99 visual autopsy claimed. Research register remains 123/105/87/75; critical ancient collation, external scholarly review, image rights and Product permissions remain HOLD. This audit synchronizes stale machine-CI bookkeeping only, not publication eligibility.",
       "2026-11-12 W62: downloaded and verified original 52MB complete 1909 Kittel second-edition PDF, title page plus Ex17:16 print p99/index114 and apparatus visually inspected; false URL 1937 is not year, no BHK3 conflation. Independently read publisher Deutsche Bibelgesellschaft BHS online main verse Ex17:16 (two words) WITHOUT printed critical apparatus. Two scientific edition sources registered, 2 core mutation tests/21 invalid upgrades disallowed, no relicensing or manuscript autopsy.",
       "2026-11-12 W61: first verified direct Field 1875 original printed Ex17:16 p111 BSB IIIF canvas00221 original image, includes Hebrew כס יה, throne Latin vs vexillum נס alternative, Greek κρυφαίᾳ and uncertain n17 Symmachus attribution. Complete 920-image BSB copy distinguished from incomplete 207-page prior PDF. New academic source ID, updated dossier23, 11 anti-inflation mutation variants, no publication rights or autonomous ancient manuscript collation.",
       "2026-11-12 W60: original Wevers Exodus1991 author English introduction online 2006 sections on apparatus I/II and sigla directly read. Corrected boundary: editor compared Field1875, plus older Brooke-McLean1909, these publications are NOT 3 independent manuscript autopsies; α' Aquila, σ' Symmachus, θ' Theodotion, οἱ γ' Three do not equal OG text. Distinct source ID plus 11 negative guard mutations; unchanged source/ancient-scholarly/Product/rights holds.",
