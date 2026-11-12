@@ -39,6 +39,59 @@ class PeasantsWarBookTests(unittest.TestCase):
         self.assertEqual(records["REF-S79"]["evidenceClass"],"B1")
         self.assertIn("ARCHIVE_HOLD",records["REF-P76"]["holds"])
 
+    def test_wave453_weinsberg_civic_penalty_not_individual_guilt(self):
+        """Municipal B1 summary warrants a dated civic consequence, not
+        direct-reading or individualized criminal liability."""
+        chapter = CH.read_text(encoding="utf-8")
+        reader, apparatus = chapter.split("## Источниковедческий аппарат", 1)
+        for fact in (
+            "21 мая 1525 года",
+            "войска Швабского союза сожгли Вайнсберг",
+            "1553 году",
+            "коллективного наказания",
+            "не доказательство личной виновности каждого жителя",
+            "непосредственному воздействию памфлета Лютера",
+        ):
+            with self.subTest(fact=fact):
+                self.assertIn(fact.lower(), reader.lower())
+        self.assertNotIn("каждый житель участвовал", reader.lower())
+        registry = json.loads((D / "source-registry-v1.json").read_text(
+            encoding="utf-8"
+        ))
+        self.assertEqual(registry["sourceCount"], len(registry["sources"]))
+        self.assertGreaterEqual(registry["sourceCount"], 217)
+        source = next(s for s in registry["sources"] if s["id"] == "REF-S109")
+        self.assertEqual(source["evidenceClass"], "B1")
+        self.assertEqual(source["accessState"], "PARTIAL_OBJECT")
+        self.assertEqual(source["locatorState"], "EXACT_LOCATOR_VERIFIED")
+        self.assertIsNone(source["documentYear"],
+                          "Undated modern webpage must not acquire a made-up year")
+        for hold in ("EVIDENCE_HOLD", "ARCHIVE_HOLD",
+                     "RIGHTS_HOLD", "PUBLICATION_HOLD"):
+            self.assertIn(hold, source["holds"])
+        for marker in ("REF-S109", "ORIGINAL_PUNITIVE_ORDER_UNREAD",
+                       "21 мая 1525", "1553"):
+            self.assertIn(marker, apparatus)
+        claim = next(
+            row for row in (D / "03_claim_verification_register.md").read_text(
+                encoding="utf-8"
+            ).splitlines() if row.startswith("| C266 |")
+        )
+        for marker in ("REF-S109", "персональную виновность",
+                       "ORIGINAL_PUNITIVE_ORDER_UNREAD", "REJECTED_FORMULATION"):
+            self.assertIn(marker.lower(), claim.lower())
+        sweep = (D / "HOLD_SOURCE_SWEEP_2026-11-11.md").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("## Волна 453 — Вайнсберг 1525", sweep)
+        self.assertIn("217 PUBLICATION_HOLD", sweep)
+        self.assertIn("ORIGINAL_PUNITIVE_ORDER_UNREAD", sweep)
+        self.assertEqual(
+            len([s for s in registry["sources"]
+                 if "PUBLICATION_HOLD" in s["holds"]]),
+            registry["sourceCount"],
+        )
+
     def test_reader_navigation_and_overclaim_guards(self):
         for name in ("README.md", "04_series_blueprint.md", "SELF_PLAN.md",
                      "episode06_schleitheim_1527_1529_manuscript.md"):

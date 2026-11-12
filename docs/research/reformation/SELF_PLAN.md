@@ -1,6 +1,20 @@
 # САМОПЛАН «Реформации» — живая доска исполнения, границы поиска и сборка книги
 
-## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 452, 12.11.2026 (RF-BOOK-INTRO-EP01-THEOLOGY-HANDOFF)
+## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 453, 12.11.2026 (RF-H07-WEINSBERG-1525-CIVIC-PENALTY-EVIDENCE)
+
+**Подтверждённый вход:** [PR #481](https://github.com/FedorMilovanov/Research/pull/481) MERGED, `Research/main=d11e97a1a2271914dbb07f1a91feaa520950bf2a`, на точном post-merge HEAD **4/4 CI SUCCESS** (Reformation corpus integrity / Repository authority integrity / Security baseline / Atonement corpus integrity). Волны 450–452 технически завершены, их не исполнять заново. На входе самостоятельных открытых Reformation-веток и PR нет. Соседние открытые PR #309 «Искупление», #379 «Имена Бога» и другие чужие ветки не затрагивать.
+
+**Адресная P1 историко-редакторская дельта главы 07:** прежний reader о разрушении Вайнсберга описывал факт без точного дня и юридически значимого последствия. Сверены **две официальные муниципальные страницы Stadt Weinsberg**, повествующие о **21.05.1525** (войска Швабского союза сожгли город, последовала утрата городских прав и привилегий) и **1553** (городские права восстановлены при герцоге Кристофе). Эти сайты — **современная B1 институциональная реконструкция**, **не оригинальные судебные или военные регистры**. В reader дата, исполнитель и длительность санкции названы; **коллективное наказание НЕ доказывает персональной вины каждого жителя**; нельзя вывести из него документированное прямое распоряжение Лютера. Исполненное историческое событие и его индивидуальная юридическая оценка разведены. Региональный LEO-BW через поиск виден, но полный прямой доступ 403, не объявлять его постранично прочитанным.
+
+**Реестровые изменения:** новый **REF-S109 B1 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED / documentYear null (undated source) / RIGHTS_UNKNOWN**, проверка 12.11.2026; source-register теперь **217 REF**, **319 C**, **18 acquisition receipts**, **217 PUBLICATION_HOLD**, независимые пересекающиеся 55 LOCATOR_HOLD / 90 EVIDENCE_HOLD / 162 ARCHIVE_HOLD / 196 RIGHTS_HOLD. C266 уточнён в **старом ID**, без создания нового claim; глава 07, единая HOLD_SOURCE_SWEEP и отдельный защитный тест синхронизированы. Ни одного скана/покупки/rights approval не заявлено; статус оригинального приказа **ORIGINAL_PUNITIVE_ORDER_UNREAD / EVIDENCE_HOLD / ARCHIVE_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD**. Более ранние численные срезы внизу — исторические.
+
+**Два исполняемых результата:** (1) обоснованная поправка reader / REF-S109 / C266 / HOLD-матрица и fail-closed regression; (2) точный PR-head CI 4/4 SUCCESS и затем отдельный post-merge main CI. Научное продолжение **только при доступе к подлинному 1525 военному приказу/документам наказания либо конкретной хартийной записи 1553**; иначе после двух безрезультатных адресных попыток STOP_DISCOVERY, не очередная общая библиография.
+
+**Гейты остаются:** T-03 и T-08 **REVIEW_PACKETS_PREPARED / NOT_SENT / NO_REVIEWER_ASSIGNED**, H-08 архивные оригиналы не закрыты. `RESEARCH_MANUSCRIPT_DRAFT / RESEARCH_ONLY / ORIGINAL_1530_MANUSCRIPT_HOLD / ORIGINAL_VARIANT_COLLATION_HOLD / INDEPENDENT_EXTERNAL_REVIEW_OPEN / THEOLOGICAL_PEER_REVIEW_OPEN / NOT_EDITORIAL_READY / EVIDENCE_HOLD / ARCHIVE_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD`. Обработка REF-S109 не является независимой рецензией, правовой приёмкой или разрешением Product-публикации.
+
+---
+
+## ИСТОРИЧЕСКИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 452, 12.11.2026 (RF-BOOK-INTRO-EP01-THEOLOGY-HANDOFF)
 
 **Подтверждённый вход:** [PR #480](https://github.com/FedorMilovanov/Research/pull/480) MERGED, `Research/main=a223064d7429af19bfb5bdc2db7e96d2781d6017`; четыре Actions на **точном post-merge SHA SUCCESS**, включая Reformation corpus integrity, Repository authority integrity, Security baseline и Atonement corpus integrity. Волна 451 закрыла повтор Пруссии 1871 в главе 12; повторно выполнять её не нужно. Открытые параллельные PR #379 («Имена Бога») и #309 («Искупление») не изменять.
 

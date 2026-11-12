@@ -284,8 +284,11 @@ class JustificationBookTests(unittest.TestCase):
             (D / "source-registry-v1.json").read_text(encoding="utf-8")
         )
         rows = {row["id"]: row for row in registry["sources"]}
-        self.assertEqual(registry["sourceCount"], 216)
-        self.assertEqual(len(rows), 216)
+        # Wave 445 established 216 witnesses; later valid additions must
+        # preserve them, not break an unrelated Augsburg evidence check.
+        self.assertEqual(registry["sourceCount"], len(registry["sources"]))
+        self.assertEqual(len(rows), registry["sourceCount"])
+        self.assertGreaterEqual(len(rows), 216)
         a = rows["REF-P14"]
         self.assertEqual(a["documentYear"], 1530)
         self.assertEqual(a["accessState"], "PARTIAL_OBJECT")
@@ -349,8 +352,9 @@ class JustificationBookTests(unittest.TestCase):
             (D / "source-registry-v1.json").read_text(encoding="utf-8")
         )
         rows = {row["id"]: row for row in registry["sources"]}
-        self.assertEqual(len(rows), 216)
-        self.assertEqual(registry["sourceCount"], len(rows))
+        self.assertEqual(registry["sourceCount"], len(registry["sources"]))
+        self.assertEqual(len(rows), registry["sourceCount"])
+        self.assertGreaterEqual(len(rows), 216)
         p91 = rows["REF-P91"]
         self.assertEqual(p91["documentYear"], 1531)
         self.assertEqual(p91["evidenceClass"], "A1")
@@ -444,14 +448,17 @@ class JustificationBookTests(unittest.TestCase):
             (D / "source-registry-v1.json").read_text(encoding="utf-8")
         )
         rows = {x["id"]: x for x in sources["sources"]}
-        self.assertEqual(sources["sourceCount"], 216)
-        self.assertEqual(len(rows), 216)
+        self.assertEqual(sources["sourceCount"], len(sources["sources"]))
+        self.assertEqual(len(rows), sources["sourceCount"])
+        self.assertGreaterEqual(len(rows), 216)
         self.assertEqual(sum("PUBLICATION_HOLD" in x["holds"]
-                             for x in rows.values()), 216)
-        self.assertEqual(sum("RIGHTS_HOLD" in x["holds"]
-                             for x in rows.values()), 195)
-        self.assertEqual(sum("ARCHIVE_HOLD" in x["holds"]
-                             for x in rows.values()), 161)
+                             for x in rows.values()), sources["sourceCount"])
+        # 195/161 are the wave447 historical rights/archive floors.
+        # An added source with unresolved rights must not be rejected.
+        self.assertGreaterEqual(sum("RIGHTS_HOLD" in x["holds"]
+                                    for x in rows.values()), 195)
+        self.assertGreaterEqual(sum("ARCHIVE_HOLD" in x["holds"]
+                                    for x in rows.values()), 161)
         p92 = rows["REF-P92"]
         self.assertEqual(p92["documentYear"], 1531)
         self.assertEqual(p92["evidenceClass"], "A1")
@@ -515,8 +522,9 @@ class JustificationBookTests(unittest.TestCase):
         current = plan.split("\n---\n", 1)[0]
         for token in ("волна 447", "STOP_DISCOVERY"):
             self.assertIn(token, plan)  # historical completed passport
+        self.assertIn(f'{sources["sourceCount"]} REF', current)
+        self.assertIn(f'{sources["sourceCount"]} PUBLICATION_HOLD', current)
         for token in (
-            "216 REF", "216 PUBLICATION_HOLD",
             "INDEPENDENT_EXTERNAL_REVIEW_OPEN",
             "THEOLOGICAL_PEER_REVIEW_OPEN", "NOT_EDITORIAL_READY",
             "ORIGINAL_1530_MANUSCRIPT_HOLD",
@@ -610,8 +618,13 @@ class JustificationBookTests(unittest.TestCase):
 
         plan = (D / "SELF_PLAN.md").read_text(encoding="utf-8")
         current = plan.split("\n---\n", 1)[0]
+        registry = json.loads(
+            (D / "source-registry-v1.json").read_text(encoding="utf-8")
+        )
+        self.assertIn(f'{registry["sourceCount"]} REF', current)
+        self.assertIn(f'{registry["sourceCount"]} PUBLICATION_HOLD', current)
         for status in (
-            "216 REF", "216 PUBLICATION_HOLD", "NOT_SENT",
+            "NOT_SENT",
             "THEOLOGICAL_PEER_REVIEW_OPEN",
             "INDEPENDENT_EXTERNAL_REVIEW_OPEN", "NOT_EDITORIAL_READY",
         ):
@@ -621,15 +634,14 @@ class JustificationBookTests(unittest.TestCase):
         # not be permanently pinned as the current plan.
         for historic in ("волна 448", "волна 447", "волна 446", "волна 445"):
             self.assertIn(historic, plan)
-        registry = json.loads(
-            (D / "source-registry-v1.json").read_text(encoding="utf-8")
-        )
-        self.assertEqual(registry["sourceCount"], 216)
-        self.assertEqual(len(registry["sources"]), 216)
+        self.assertEqual(registry["sourceCount"], len(registry["sources"]))
+        self.assertGreaterEqual(registry["sourceCount"], 216)
         self.assertEqual(
             sum("PUBLICATION_HOLD" in x["holds"]
-                for x in registry["sources"]), 216
+                for x in registry["sources"]), registry["sourceCount"]
         )
+        self.assertEqual(len({x["id"] for x in registry["sources"]}),
+                         registry["sourceCount"])
         manifest = json.loads(
             (D / "acquisition-manifest-v1.json").read_text(encoding="utf-8")
         )
