@@ -2598,5 +2598,30 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertEqual([], validate_source_access(self.sources))
 
 
+    def test_wevers_original_english_intro_not_ex1716_app(self) -> None:
+        source_id = "SRC-WEVERS-GOTTINGEN-EXODUS-1991-AUTHOR-INTRO-EN2006"
+        mutations = (
+            ("originalPrintedGreekVerseEx17_16Read", True),
+            ("original1991CriticalApparatusEx17_16Read", True),
+            ("apparatus1RecordsSubstantiveVariantsNotEveryItacism", False),
+            ("apparatus2GenerallyMarginalAndLaterTranslators", False),
+            ("aquilaSiglum", "οἱ γ'"),
+            ("theodotionSiglum", "α'"),
+            ("field1875ComparedByEditor", False),
+            ("field1875IndependentNewPhysicalManuscript", True),
+            ("brookeMclean1909SameCriticalEditionAs1991", True),
+            ("criticalManuscriptsPersonallyCollated", True),
+            ("photographRightsApproved", True),
+        )
+        for key, wrong in mutations:
+            with self.subTest(key=key):
+                copy_sources = copy.deepcopy(self.sources)
+                row = next(x for x in copy_sources["records"] if x["id"] == source_id)
+                row["editorialMethodFacts20261112"][key] = wrong
+                self.assertTrue(any("Wevers 1991 apparatus introduction" in e
+                                    for e in validate_source_access(copy_sources)))
+        self.assertEqual([], validate_source_access(self.sources))
+
+
 if __name__ == "__main__":
     unittest.main()
