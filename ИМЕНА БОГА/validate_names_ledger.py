@@ -345,6 +345,8 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-BROOKE-MCLEAN-LXX-EX17-16-CAMBRIDGE-1909-P211": "CAMBRIDGE_1909_PRINTED_LXX_EX17_16_CRITICAL_VARIANTS_DIRECT_FACSIMILE_NOT_GOTTINGEN_OR_MANUSCRIPT",
     "SRC-WEVERS-GOTTINGEN-EXODUS-1991-AUTHOR-INTRO-EN2006": "WEVERS1991_ENGLISH_AUTHOR_INTRO_METHOD_APP_I_APP_II_GREEK_VARIANT_FIELD_DEPENDENCE_NO_EX17_LOCUS_APPARATUS",
     "SRC-FIELD-HEXAPLA-1875-EX17-16-PRINT-P111-BSB": "FIELD1875_ORIGINAL_PRINT_EX17_16_HEXAPLARIC_EDITORIAL_COMPILATION_NOT_INDEPENDENT_GREEK_CODEX_OR_ALEPPO_LEAF",
+    "SRC-KITTEL-BHK2-1909-EX17-16-P99-ORIGINAL-APP": "KITTEL_BHK2_1909_ORIGINAL_PRINT_P99_EX17_16_VARIANT_APPARATUS_NOT_BHK3_1937_OR_BHS1977_OR_ALEPPO",
+    "SRC-DBG-BHS-EX17-16-PUBLISHER-TEXT": "DEUTSCHE_BIBELGESELLSCHAFT_BHS_EX17_16_PUBLISHER_MAIN_TEXT_TWO_WORDS_NO_APPARATUS_SHOWN",
     "SRC-KRUGER-SHADDAY-JOB-2023-CONTEXT-CRITIQUE": "ATTRIBUTED_MODERN_JOB_SHADDAY_PRAGMATICS_WITH_VERIFIED_TEXTUAL_COUNTERCHECK",
     "SRC-OFER-TEXTUS26-2016-ALEPPO-EX8-FRAGMENT": "OFER2016_EXODUS8_SURVIVING_ORIGINAL_FRAGMENT_PARTIAL_CHECK_OF_SAPHIR_ZER_QUESTIONS_NOT_EXODUS17_16_FOLIO",
     "SRC-VANWOLDE-2021": "ATTRIBUTED_SECONDARY_EXEGESIS",
@@ -1495,6 +1497,64 @@ def validate_source_access(sources: dict) -> list[str]:
                 or not isinstance(field, dict)
                 or any(field.get(key) != value for key, value in expected_field.items())):
                 errors.append(f"{prefix}: Field1875 p111 cannot be promoted to Aleppo Ex17 autograph, independent Greek manuscript, Göttingen1991 apparatus or image rights")
+
+        if rid == "SRC-KITTEL-BHK2-1909-EX17-16-P99-ORIGINAL-APP":
+            kittel = source.get("pageAutopsy20261112")
+            kittel_required = {
+                "titlePageEditionYear": 1909,
+                "editionDescriptor": "EDITIO ALTERA EMENDATIOR STEREOTYPICA",
+                "titlePageSecondEditionVisuallyRead": True,
+                "originalExodus17_16PagePrinted": 99,
+                "pdfPageIndexZeroBased": 114,
+                "pdfTotalPages": 568,
+                "pdfBytes": 52339592,
+                "originalPageAndApparatusVisuallyReviewed": True,
+                "printedMainTextTwoWrittenWords": True,
+                "apparatusNotesVariantWordDivision": True,
+                "apparatusGreekKryphaiaPrinted": True,
+                "allTinyApparatusSiglaDeciphered": False,
+                "correctlyIdentifiedAsBHK3_1937": False,
+                "originalLeningradManuscriptPixelsExamined": False,
+                "originalAleppoManuscriptEx17_16Seen": False,
+                "independentAncientManuscriptCollation": False,
+                "fullCriticalApparatusOfBHSRead": False,
+                "scanRightsIndependentlyCleared": False,
+            }
+            if (source.get("year") != 1909
+                    or source.get("accessState") != "PARTIAL_OBJECT"
+                    or source.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+                    or source.get("rightsState") != "RIGHTS_UNKNOWN"
+                    or source.get("publicationState") != "BLOCKED"
+                    or source.get("criticalEditionCollated") is not False
+                    or not isinstance(kittel, dict)
+                    or any(kittel.get(k) != v for k, v in kittel_required.items())):
+                errors.append(f"{prefix}: Kittel1909 BHK2 and DBG BHS edition conflation or ancient apparatus/rights overclaim")
+        if rid == "SRC-DBG-BHS-EX17-16-PUBLISHER-TEXT":
+            bhs = source.get("publisherPageCheck20261112")
+            bhs_required = {
+                "publisherOriginalOnlineChapterDirectlyRead": True,
+                "publisherTitle": "Biblia Hebraica Stuttgartensia",
+                "onlineReducedView": True,
+                "editionCreditIncludes1977And1997": True,
+                "originalVerseLocator": "Exodus 17:16",
+                "mainTextWordDivisionTwoWords": True,
+                "mainTextThroneWordHebrew": "כֵּס",
+                "mainTextYahWordHebrew": "יָהּ",
+                "originalPrintedCriticalApparatusOnSiteVisible": False,
+                "originalLeningradPixelsChecked": False,
+                "originalAleppoEx17_16FolioInspected": False,
+                "criticalManuscriptCollationCompleted": False,
+                "rightsForProductPublicationGranted": False,
+            }
+            if (source.get("url") != "https://www.die-bibel.de/bibel/BHS/EXO.17"
+                    or source.get("accessState") != "PARTIAL_OBJECT"
+                    or source.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+                    or source.get("rightsState") != "PERMISSION_REQUIRED"
+                    or source.get("publicationState") != "BLOCKED"
+                    or source.get("criticalEditionCollated") is not False
+                    or not isinstance(bhs, dict)
+                    or any(bhs.get(k) != v for k, v in bhs_required.items())):
+                errors.append(f"{prefix}: DBG BHS Ex17 reduced publisher verse text is not critical apparatus or ancient manuscript permission")
 
         for name in ("title", "creator", "url", "objectType",
                      "supportedUse", "forbiddenUse", "sourceObjectState"):
