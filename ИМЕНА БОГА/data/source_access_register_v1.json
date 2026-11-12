@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 119,
+    "sourceRecords": 120,
     "approvedForProduct": 0
   },
   "records": [
@@ -4520,6 +4520,50 @@
       "allSiglaExpanded": false
     },
     {
+      "id": "SRC-WEVERS-GOTTINGEN-EXODUS-1991-AUTHOR-INTRO-EN2006",
+      "title": "John William Wevers (with Udo Quast), Exodus, Göttingen Septuaginta II/1 (1991), critical-edition Introduction, author-prepared English translation edited for web by Robert A. Kraft (2006)",
+      "creator": "John William Wevers, aided by Udo Quast; online author English translation prepared by Wevers, edited by Robert A. Kraft",
+      "year": 1991,
+      "onlineEnglishEditionYear": 2006,
+      "url": "https://ccat.sas.upenn.edu/rak/temp/Wevers-Exod-n.html",
+      "officialEditionCatalogUrl": "https://septuaginta.uni-goettingen.de/publications/septuaginta/",
+      "objectType": "author_translated_online_introduction_to_original_1991_Gottingen_critical_edition_not_critical_apparatus_pages",
+      "sourceRole": "WEVERS1991_ENGLISH_AUTHOR_INTRO_METHOD_APP_I_APP_II_GREEK_VARIANT_FIELD_DEPENDENCE_NO_EX17_LOCUS_APPARATUS",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "evidenceClass": "B1",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "criticalEditionCollated": false,
+      "locator": "C. Re this Edition §1 Introduction, §3 List of Sources, §4 Apparatus I, §6 Apparatus II; D Signs and Abbreviations, 'Later Greek translations (Apparatus II)', 'Literature and Collections' entries Br.-M., Field, BHS; English author 2006 translation of 1991 original German edition. These online sections directly read, not 1991 printed Greek verse text / Exod17:16 apparatus.",
+      "sourceObjectState": "Original edition's scholarly introduction available in its editor's English translation (author Wevers, edited Robert A. Kraft for online use 2006, University of Pennsylvania CCAT). Selected §§ C1/3/4/6, D abbreviations and bibliography read in original English; full printed 1991 volume's Exodus17:16 critically edited text and apparatus NOT accessed. Wevers states Apparatus I records substantively differing variants, not every orthographic/itacistic detail; Apparatus II mainly later Greek versions and marginal witnesses; Greek α' is Aquila, σ' Symmachus, θ' Theodotion, οἱ γ' is the Three. The text of Field 1875 was compared in assembling Göttingen 1991, so later apparatus and Field cannot be mechanically counted as independent physical manuscript collation. Printed Brooke/McLean 1909 variants are a separate editor edition, not Wevers Greek apparatus auto-proof. Publisher catalog corroborates 1991 date and editors. None of these methodological comments identifies the precise Exodus17:16 lemma, supporting codex sigla or manuscript provenance of specific variant.",
+      "supportedUse": "Explain how Göttingen critical edition 1991 distinguishes Apparatus I substantive Greek variant witnesses and Apparatus II mainly later translators and catena marginalia; cite α'/σ'/θ'/οἱ γ' explicitly as author's abbreviation legend. Recognize Wevers compared Field 1875, Brooke-McLean1909 and prior sources, so reprinting variant claims via multiple editions does NOT generate independent manuscript autopsy. Use as methodological original author commentary with limited access state.",
+      "forbiddenUse": "Describe Göttingen Exodus17:16 printed lemma or apparatus I/II as directly accessed; presume all Brooke-McLean 1909 variant sigla match Wevers 1991, presume Aquila/Symmachus/Theodotion = OG LXX, elevate Field editorial compilation to new surviving Greek physical manuscript, assert Hebrew lost Aleppo Exodus17:16 photo or BHS apparatus read, infer journal copyright license from public English introduction or grant Product/scholarly/rights approval.",
+      "editorialMethodFacts20261112": {
+        "printedEditionYear": 1991,
+        "authorEnglishTranslationYear": 2006,
+        "authorEnglishTranslationDirectlyRead": true,
+        "originalPrintedGreekVerseEx17_16Read": false,
+        "original1991CriticalApparatusEx17_16Read": false,
+        "apparatus1RecordsSubstantiveVariantsNotEveryItacism": true,
+        "apparatus2GenerallyMarginalAndLaterTranslators": true,
+        "aquilaSiglum": "α'",
+        "symmachusSiglum": "σ'",
+        "theodotionSiglum": "θ'",
+        "threeGreekTranslatorsSiglum": "οἱ γ'",
+        "field1875ComparedByEditor": true,
+        "field1875IndependentNewPhysicalManuscript": false,
+        "brookeMclean1909SameCriticalEditionAs1991": false,
+        "criticalManuscriptsPersonallyCollated": false,
+        "photographRightsApproved": false
+      }
+    },
+    {
       "id": "SRC-KRUGER-SHADDAY-JOB-2023-CONTEXT-CRITIQUE",
       "title": "Preliminary ideas on a substratum text of Job and the depiction of Šaddāy",
       "creator": "Margaretha J. Kruger",
@@ -4566,5 +4610,5 @@
       }
     }
   ],
-  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716 | WAVE49_2026-11-11_OFER2003_YEIVIN82_AUTHOR_CROSSWALK_PSALM_ISAIAH_NOT_EXODUS | WAVE50_2026-11-11_PESACHIM117A_TASHBETZ_I177_AHS_YD27524_HISTORICAL_DISPUTE_NOT_CODEX_AUTOPSY | WAVE54_2026-11-11_HUJI_OFER2002_25P_ENGLISH_EX17_16_SINGLE_CONCORDANT_NOT_DISCREPANT_HOLDS | W59_2026-11-12_OFER2016_ORIGINAL_TEXTUS26_EXODUS8_SELECT_PAGE_FACSIMILES_HISTORY_QUESTION_PARTIAL_SUPPORT_NOT_EX17"
+  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716 | WAVE49_2026-11-11_OFER2003_YEIVIN82_AUTHOR_CROSSWALK_PSALM_ISAIAH_NOT_EXODUS | WAVE50_2026-11-11_PESACHIM117A_TASHBETZ_I177_AHS_YD27524_HISTORICAL_DISPUTE_NOT_CODEX_AUTOPSY | WAVE54_2026-11-11_HUJI_OFER2002_25P_ENGLISH_EX17_16_SINGLE_CONCORDANT_NOT_DISCREPANT_HOLDS | W59_2026-11-12_OFER2016_ORIGINAL_TEXTUS26_EXODUS8_SELECT_PAGE_FACSIMILES_HISTORY_QUESTION_PARTIAL_SUPPORT_NOT_EX17 | W60_2026-11-12_WEVERS1991_ENGLISH_AUTHOR_INTRO2006_APP1_APP2_FIELD_COMPARE_NOT_EX17_APPARATUS"
 }
