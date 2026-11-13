@@ -110,7 +110,7 @@ class ReformationAdversarialFourSixTests(unittest.TestCase):
         )
         self.assertGreater(len(reader.split()), 1750)
         self.assertEqual(reader.count("## "), 9)
-        self.assertNotRegex(reader, r"https?://|\\bREF-[PS]\\d+|\\bVD16\\b")
+        self.assertNotRegex(reader, r"https?://|\bREF-[PS]\d+|\bVD16\b")
         for phrase in ("24 февраля 1527 года", "Первая статья",
                        "Вторая статья", "Третья статья", "Четвёртая статья",
                        "Пятая статья", "Шестая статья", "Седьмая статья",
