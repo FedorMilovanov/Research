@@ -1,8 +1,20 @@
 # Steven J. Lawson — CURRENT
 
-**Snapshot:** 2026-11-06 (original V6 snapshot remains 2026-09-30)  
+**Snapshot:** 2026-11-13 (original V6 snapshot remains 2026-09-30; external-holder checkpoint is 2026-11-06)  
 **Corpus:** `LAWSON-2024-2026` + canonical biography closure + active external acquisitions  
-**Status:** `PUBLICATION_READY_WITH_GUARDRAILS / V6 CANONICAL / BIOGRAPHY PUBLIC-WEB CLOSED / ARENA RETIRED / FOUR HOLDER RESPONSES RECORDED / REMAINDER PENDING`
+**Status:** `V6 CANONICAL / NOV-2026 REPORTED-ELDERS-LETTER MATERIAL EVIDENCE DELTA / ORIGINAL AUTHENTICITY HOLD / FOUR HOLDER RESPONSES RECORDED`
+
+## Important new evidence — 11–13 Nov 2026 (read before V6 publication decisions)
+
+**A new, issue-specific primary-object acquisition trigger exists.** On 11 November 2026 Protestia published a transcription of a purported 25 November 2025 Stephens Valley Church elders' recommendation. The text asserts Lawson was a **member in good standing**, describes **15 months of observation**, calls him **genuinely repentant**, and deems him **spiritually fit for potential ministry opportunities**. Other outlets independently reported journalistic inquiries and reactions, **not independent examination of the signed original**.
+
+**Evidence ceilings:** As of 13 November 2026, no church-authenticated signed original, signatory list, decision minutes, member-transfer/release document, actual pastoral appointment, new teaching event, or Anne Lawson direct statement was obtained. Reported recommendation ≠ installed elder/preacher; source repetition ≠ independent authentication. Clint Archer's January 2025 restriction addressed teaching/ministry *requiring elder qualifications*, and his Jan 30 analysis allowed other forms of church service: a categorical contradictory-verdict headline would overstate what the respective words prove.
+
+**Canonical new evidence delta:** [`87_NOV2026_ELDERS_LETTER_SOURCE_DEPENDENCY_AND_RESTORATION_SCOPE_2026-11-13.md`](87_NOV2026_ELDERS_LETTER_SOURCE_DEPENDENCY_AND_RESTORATION_SCOPE_2026-11-13.md) — read with older `54_` (TBC→SVC membership chain), `59_` (Protestia restoration-source sourcing), `67_` (Anne's direct testimony), `55_` (finished-book approval), `76_` (July-2026 declined conference) and this CURRENT.
+
+**Publication transfer:** The existing Product Lawson article can receive a **dated, clearly attributed substantive update**, but V6 original editorial conclusions and biography remain historical snapshots; neither this Research entry nor Product local edits certify a production release. Only the two exact unresolved primary acquisitions (signed letter/institutional decision; membership/jurisdiction transition) are active; do not restart generic web searches or open a third Lawson department.
+
+---
 
 ## Canonical stack
 
