@@ -105,6 +105,31 @@ Secondary watch-only lead: direct complete audio or verified transcript of Peter
 - Keep `publishedAt` intact; set `updatedAt` only after real content release. No new canonical article solely to restate a reported letter.
 - Telegram can state directly that `Protestia published the purported 2025 elders' recommendation in November 2026`, identify reactions accurately, and distinguish the nomination from an actual pastoral appointment. Do not present journalism echoes as independent authentication, nor duplicate 2025 context as a 2026 reaction.
 
+## 8. Supplement, 13 Nov 2026 — primary SVC officer authority and two exact-period bulletin objects
+
+This supplement is a **new, bounded primary-source locator result**, not an authenticated church letter and not a claim that either PDF was read.
+
+**Official institutional governance source.** The public [Stephens Valley Church `Officers` page](https://stephens-valley-church-469943.churchcenter.com/pages/officers) explicitly calls the governing body **`Elder Council`** and lists Jim Bachmann as Moderator, Ron Kimery as Clerk, John Avery as Administrator; it lists elected class-of-2026/2027/2028 elders and reserves. **Access:** current public HTML `READ`; **class:** A3 for current organizational role only; **2025 roster/signature role:** `EVIDENCE_HOLD`. None of these current names may be declared an endorser or signer of the 25 Nov 2025 letter merely from their office today. The letter as transcribed by Protestia closes **`The Elder Counsel`**, a spelling mismatch whose provenance is unknown without the source document image.
+
+**Exact-period original church bulletins newly located in the first-party public directory:**
+
+| Church-dated object | Direct official index | Underlying church-shared Google Drive file | Acquisition ceiling |
+| --- | --- | --- | --- |
+| **Sunday 23 Nov 2025** (2 days before alleged letter) | [SVC `Bulletins` source index](https://stephens-valley-church-469943.churchcenter.com/pages/order-of-service) | [`November 23rd 2025.pdf`](https://drive.google.com/file/d/1_eE9p0-iZfEc2kCuPUzuWsPnHLX0qJkx/view?usp=sharing) | **`URL_AND_TITLE_LOCATED / FULL_PDF_TEXT_NOT_READ / PDF_IMAGE_NOT_INSPECTED`** |
+| **Sunday 30 Nov 2025** (5 days after alleged letter) | same first-party index | [`November 30th 2025.pdf`](https://drive.google.com/file/d/1XvPXqEYo3hnBvHhKvRqx_JzY9ArVc3xq/view?usp=sharing) | **`URL_AND_TITLE_LOCATED / FULL_PDF_TEXT_NOT_READ / PDF_IMAGE_NOT_INSPECTED`** |
+
+The church's first-party HTML page lists both dates and its direct links. Drive web previews exposed only a loading shell in the acquisition environment; therefore **no officer names, council decisions, preaching assignments, new-member announcements, or Lawson references were actually extracted from these two PDFs**. This is a precise acquisition target, not a content finding. A next researcher must retrieve the original PDFs lawfully, inspect the actual rendered pages and provide page locators before promoting their content into the Research claim ledger.
+
+This directly advances the earlier `31_SVC_PRIMARY_BULLETIN_TIMELINE_COUNTS_COLLINS_WARREN_2024_2025_2026-09-29.md` original-object trail, which had gathered 2024 and Jan–Mar 2025 primary bulletins but not the **Nov-2025 exact decision window**. That earlier file already establishes a **July 14, 2024** roster with Terry Warren as then-current Elder Council Clerk. The **current** officers page lists him as reserve elder. **Neither** establishes his position on 25 Nov 2025 or that he signed/approved the letter. Avoid conflating the dates.
+
+**Formal membership is a distinct church procedure.** The official [SVC `New Here` page](https://stephens-valley-church-469943.churchcenter.com/pages/new-here) says the six-week `Starting Point` class is followed by an invitation to begin the membership process. This primary description reinforces the existing `54_` distinction `attendance ≠ membership`. The letter's reported `member in good standing` is significant but cannot substitute for a direct reception date or transfer record; no evidence Lawson actually attended or completed Starting Point is presented.
+
+**Constitutional context from church's own words.** The official [pastoral vacancy description](https://stephens-valley-church-469943.churchcenter.com/pages/assistant-pastor-of-outreach) identifies governance by Senior Pastor and Elder Council and reserves regular preaching responsibilities for its called/qualified minister under leadership oversight. It is **not** evidence of Lawson's eligibility, employment or specific office; it illustrates that the church itself distinguishes formal office/assigned preaching from mere church participation.
+
+**Decision:** preserve `ORIGINAL_LETTER_AUTHENTICITY_HOLD`, `2025_COUNCIL_ROSTER_HOLD`, `MEMBERSHIP_TRANSITION_HOLD`, `PULPIT_APPOINTMENT_HOLD`. The two dated PDFs are exact candidates to acquire; no scope expansion to an unlimited archive crawl. **No production article update** should assert the unseen PDF contents.
+
+---
+
 ## Existing authority links
 
 - [Canonical CURRENT](CURRENT.md)
