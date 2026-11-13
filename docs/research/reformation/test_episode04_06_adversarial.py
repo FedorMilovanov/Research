@@ -88,7 +88,7 @@ class ReformationAdversarialFourSixTests(unittest.TestCase):
         for marker in ("REF-P13-ARCHIVE", "REF-P75",
                        "REF-P73", "REF-P74", "ARCHIVE_HOLD",
                        "RIGHTS_HOLD", "PUBLICATION_HOLD",
-                       "NOT_EDITORIAL_READY", "Матфея"):
+                       "NOT_EDITORIAL_READY", "Мф."):
             with self.subTest(archive_marker=marker):
                 self.assertIn(marker, apparatus)
         self.assertIn("episode06_schleitheim_1527_1529_manuscript.md", reader)
