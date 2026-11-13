@@ -9,6 +9,36 @@ HERE = Path(__file__).resolve().parent
 CH = HERE / "episode04_zurich_zwingli_1523_1525_manuscript.md"
 
 class Episode04HistoricalEvidenceTests(unittest.TestCase):
+    def test_chapter04_full_reader_and_17_january_disputation_sequence(self):
+        """The chapter retains the council-vs-conscience narrative and evidence limits."""
+        content = CH.read_text(encoding="utf-8")
+        reader, apparatus = content.split("## Источниковедческий аппарат", 1)
+        self.assertEqual(reader.count("## "), 9)
+        self.assertNotRegex(reader, r"https?://")
+        for phrase in ("3 января 1523 года", "29 января 1523 года",
+                       "Иоганна Фабера", "евхаристической жертвы",
+                       "июне 1524 года", "апреле 1525-го",
+                       "12 января", "17 января", "18 января",
+                       "21 января", "в течение восьми дней",
+                       "не «запрет детокрещения»",
+                       "приказе о высылке", "исполнены"):
+            with self.subTest(phrase=phrase):
+                self.assertIn(phrase, reader)
+        january = reader.split(
+            "## Январь 1525-го: вопрос о крещении становится вопросом закона", 1
+        )[1].split("## Два притязания на верность Писанию", 1)[0]
+        self.assertLess(january.index("12 января"), january.index("17 января"))
+        self.assertLess(january.index("17 января"), january.index("18 января"))
+        self.assertLess(january.index("18 января"), january.index("21 января"))
+        self.assertIn("Исторические", reader)
+        self.assertIn("www.befg.de/", apparatus)
+        self.assertIn("uecf.net/books/zwingli-potter/chapter7.html", apparatus)
+        self.assertIn("непосредственно новое чтение листов", apparatus)
+        for gate in ("RESEARCH_MANUSCRIPT_DRAFT", "NOT_EDITORIAL_READY",
+                     "ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"):
+            self.assertIn(gate, apparatus)
+        self.assertIn("episode05_marburg_colloquy_1529_manuscript.md", reader)
+
     def test_navigation_and_publication_hold(self):
         self.assertTrue(CH.is_file())
         s = CH.read_text(encoding="utf-8")
