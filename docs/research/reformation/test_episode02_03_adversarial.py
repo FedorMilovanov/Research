@@ -26,7 +26,7 @@ class Luther1517WormsEditorialTests(unittest.TestCase):
         self.assertIn("истинность определённых апостольских индульгенций", reader)
         self.assertIn("тезисе 71", reader)
         self.assertIn("Тезис 72", reader)
-        self.assertIn("проповедь и пониманием верующего", reader)
+        self.assertIn("проповедью и пониманием верующего", reader)
         self.assertNotRegex(reader, r"https?://")
         self.assertIn("ORIGINAL_PRINT_COLLATION_HOLD", apparatus)
         self.assertIn("RIGHTS_HOLD", apparatus)
