@@ -2991,5 +2991,55 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertEqual([], validate_source_access(self.sources))
 
 
+    def test_lyons_1983_original_phd_or4445_one_word_not_our_hebrew_ms_autopsy(self) -> None:
+        source_id = "SRC-LYONS-1983-SOAS-OR4445-EX17-16-ORIGINAL-THESIS-P16"
+        mutations = (
+            ("originalSourceType", "verified original Or4445 photograph"),
+            ("author", "Israel Yeivin"),
+            ("manuscriptStudied", "Aleppo Codex"),
+            ("manuscriptIsPhysicallyIndependentOfLeningradB19a", False),
+            ("manuscriptIsAleppoCodex", True),
+            ("dissertationYear", 1982),
+            ("dissertationSubmittedMonth", "March"),
+            ("printedChapter", "Chapter 12"),
+            ("exactPrintedPage", 17),
+            ("subsectionTitle", "Not an original section"),
+            ("oneWordListExplicitlyIncludes", "Ex. 17,15"),
+            ("oneWordClassificationOfEx1716Explicit", False),
+            ("scholarlyAuthorAnalyzedOr4445VowelsAndMasora", False),
+            ("scannedPdfOriginalHebrewTabularGlyphsOCRReliable", True),
+            ("scannedPDFRenderedScreenshotSuccessfullyInspected", True),
+            ("underlyingOriginalOr4445FolioNativePixelsExaminedByUs", True),
+            ("originalMasorahNoteGlyphDecipheredByUs", True),
+            ("printedYeivinPages78to84DirectlyReadByUs", True),
+            ("originalThesis400PageCompleteStudyReadByUs", True),
+            ("thesisIsAnotherPhysicalAncientManuscript", True),
+            ("thesisAndDoviAreSameScholarlyAuthor", True),
+            ("externalPeerReviewOfOurOwnClaimsCompleted", True),
+            ("copyingOrRepublishingThesisPDFRightsGranted", True),
+            ("ProductPublicationApproved", True),
+        )
+        for field, invalid in mutations:
+            with self.subTest(thesis_field=field):
+                changed = copy.deepcopy(self.sources)
+                row = next(x for x in changed["records"] if x["id"] == source_id)
+                row["originalLyonsInstitutionalThesisAudit20261113"][field] = invalid
+                self.assertTrue(any("Lyons 1983 original PhD one-word report cannot certify" in error
+                                    for error in validate_source_access(changed)))
+        for field, invalid in (
+            ("accessState", "FULL_OBJECT_VERIFIED"),
+            ("rightsState", "PUBLICATION_ELIGIBLE"),
+            ("publicationState", "PROMOTE"),
+            ("criticalEditionCollated", True),
+        ):
+            with self.subTest(thesis_source_field=field):
+                changed = copy.deepcopy(self.sources)
+                row = next(x for x in changed["records"] if x["id"] == source_id)
+                row[field] = invalid
+                self.assertTrue(any("Lyons 1983 original PhD one-word report cannot certify" in error
+                                    for error in validate_source_access(changed)))
+        self.assertEqual([], validate_source_access(self.sources))
+
+
 if __name__ == "__main__":
     unittest.main()
