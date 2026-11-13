@@ -38,6 +38,34 @@ class NamesResearchWorkplanTests(unittest.TestCase):
     def test_current_workplan_is_consistent(self) -> None:
         self.assertEqual([], self.check())
 
+    def test_self_plan_third_active_deliverable_fails(self) -> None:
+        plan = copy.deepcopy(self.plan)
+        extra = copy.deepcopy(plan["editorialExecution"]["twoActiveDeliverables"][0])
+        extra["id"] = "NG-07"
+        plan["editorialExecution"]["twoActiveDeliverables"].append(extra)
+        self.assertTrue(any("one or two active deliverables" in e for e in self.check(plan)))
+
+    def test_self_plan_duplicate_active_deliverable_fails(self) -> None:
+        plan = copy.deepcopy(self.plan)
+        plan["editorialExecution"]["twoActiveDeliverables"][1]["id"] = "CH-PILOT-03"
+        self.assertTrue(any("duplicate active deliverable ID" in e for e in self.check(plan)))
+
+    def test_self_plan_stale_next_action_and_report_date_fail(self) -> None:
+        plan = copy.deepcopy(self.plan)
+        plan["updatedAt"] = "2026-11-13"
+        self.assertTrue(any("updatedAt are out of sync" in e for e in self.check(plan)))
+        self.assertTrue(any("outdated or undated operator handoff" in e for e in self.check(plan)))
+
+    def test_self_plan_prior_ci_sha_cannot_be_reassigned(self) -> None:
+        plan = copy.deepcopy(self.plan)
+        plan["baseline"]["lastConfirmedAllSixChecksSha"] = "0" * 40
+        self.assertTrue(any("CI predecessor falsely attributed" in e for e in self.check(plan)))
+
+    def test_self_plan_fourth_reader_chapter_without_manuscript_manifest_fails(self) -> None:
+        plan = copy.deepcopy(self.plan)
+        plan["editorialExecution"]["readerManuscriptsDrafted"] = 4
+        self.assertTrue(any("reader manifest count" in e for e in self.check(plan)))
+
     def test_closure_requires_actual_verification_not_a_badge(self) -> None:
         plan = copy.deepcopy(self.plan)
         task = next(t for t in plan["tasks"] if t["id"] == "NG-06")
