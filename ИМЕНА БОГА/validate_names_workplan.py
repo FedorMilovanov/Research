@@ -173,7 +173,7 @@ def validate_names_workplan(
     # wave or mistake a held reader draft for a fourth approved manuscript.
     stamp = plan.get("updatedAt")
     report = plan.get("lastWorkReport")
-    if (not isinstance(stamp, str) or not re.fullmatch(r"20\\d\\d-\\d\\d-\\d\\d", stamp)
+    if (not isinstance(stamp, str) or not re.fullmatch(r"20\d\d-\d\d-\d\d", stamp)
             or not isinstance(report, dict) or report.get("date") != stamp):
         errors.append("workplan: live report date and updatedAt are out of sync")
     next_step = plan.get("nextAction")
