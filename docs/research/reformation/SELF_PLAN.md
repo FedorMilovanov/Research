@@ -1,6 +1,20 @@
 # САМОПЛАН «Реформации» — живая доска исполнения, границы поиска и сборка книги
 
-## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 455, 13.11.2026 (RF-EP10-1587-STORTFORD-PARISH-RECEIPT-VS-1559-STATUTE)
+## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 456, 13.11.2026 (RF-EP10-STORTFORD-ORIGINAL-CUSTODY-STOP)
+
+**Проверенный вход:** [PR #484](https://github.com/FedorMilovanov/Research/pull/484) MERGED; `main=ddf99cd8c4a0c50adecabc92389827f770c37ed3`; **4/4 post-merge GitHub Actions SUCCESS** (Reformation / Repository authority / Security / Atonement). Волна 455 завершена; чужие открытые PR #309 и #379 не изменять.
+
+**Конкретный научный результат:** после двух адресных проходов не получен проверяемый **снимок печатной с.64** Glasscock (1882) и не установлен точный архивный шифр **рукописного счёта 1587**. Надёжные библиографические данные 1882 (Open Library/IA/LOC) отличены от ошибки **1881** в местном обзоре. Локальная история St Michael's сообщает о переносе **приходского корпуса в Hertfordshire Record Office в 1963**, но **не удостоверяет наличие и шифр конкретного счёта 1587**; начинающийся в **1561** приходской *register* не равен финансовым *churchwardens' accounts*. Том Doree (1994–95) охватывает **1431–1558**, поэтому не может доказывать взыскание именно **в 1559**. Снимки IA/HathiTrust существуют на уровне библиотечных указателей; конкретная с.64 **не прочитана визуально**. `REF-P94 A2/PARTIAL_OBJECT` и `ORIGINAL_MANUSCRIPT_AND_PRINT_PAGE_VISUAL_HOLD` сохранены, ложных direct-read нет.
+
+**Ограниченные два результата:** (1) уточнить действующий REF-P94, существующий HOLD_SOURCE_SWEEP и научный тест на отделение архивной подсказки от оригинального листа; (2) точный PR-head 4/4 CI, safe merge и post-merge 4/4 CI. **Новый REF/claim/receipt и новая читательская правка не требуются**: текущий проверенный текст главы 10 уже честно сообщает об ограничении OCR.
+
+**STOP_DISCOVERY:** не продолжать общие поиски этой же сканированной книги без нового листа/шифра; следующий шаг только по реальному item-level HALS shelfmark или доступной фотостранице, а сейчас вернуть **P0 H-08** фотоколляцию Нантского эдикта и **T-03/T-08** независимые отзывы в действующую очередь. 219 REF / C1–C319 / 18 receipts / 219 PUBLICATION_HOLD, пересекающиеся 55 LOCATOR / 92 EVIDENCE / 164 ARCHIVE / 198 RIGHTS.
+
+**Обязательные статусы:** `REVIEW_PACKETS_PREPARED / NOT_SENT / NO_REVIEWER_ASSIGNED`; `RESEARCH_ONLY / RESEARCH_MANUSCRIPT_DRAFT / ORIGINAL_1530_MANUSCRIPT_HOLD / ORIGINAL_VARIANT_COLLATION_HOLD / INDEPENDENT_EXTERNAL_REVIEW_OPEN / THEOLOGICAL_PEER_REVIEW_OPEN / NOT_EDITORIAL_READY / EVIDENCE_HOLD / ARCHIVE_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD`. Никаких повторных писем, изменений Product или издательских разрешений.
+
+---
+
+## ИСТОРИЧЕСКИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 455, 13.11.2026 (RF-EP10-1587-STORTFORD-PARISH-RECEIPT-VS-1559-STATUTE)
 
 **Проверенный базовый HEAD:** [PR #483](https://github.com/FedorMilovanov/Research/pull/483) MERGED, `Research/main=b73ff3a1080988161017b9796176950ad314fd4f`, **4/4 post-merge workflow SUCCESS**, включая Reformation corpus integrity / Repository authority integrity / Security baseline / Atonement corpus integrity. Волна 454 закрыла редакторский текст `Act of Uniformity 1559` со штрафом **12 пенсов**; не повторять завершённую волну. На входе отдельные открытые PR «Реформация» отсутствуют; чужие #309 («Искупление») и #379 («Имена Бога») не изменять.
 
