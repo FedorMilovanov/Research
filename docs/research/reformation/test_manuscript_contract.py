@@ -227,6 +227,31 @@ class ReformationManuscriptTests(unittest.TestCase):
         self.assertIn("NOT_EDITORIAL_READY", intro)
         self.assertIn("PUBLICATION_HOLD", intro)
 
+    def test_wave457_one_chapter_reader_pass_does_not_duplicate_church_epochs(self):
+        """The single-chapter literary pass keeps the chronological bridge coherent."""
+        intro = INTRO.read_text(encoding="utf-8")
+        reader, apparatus = intro.split(
+            "## Источниковедческие и редакционные примечания", 1
+        )
+        churches = reader.split(
+            "## 15. Новая Церковь — старые опасности человеческой неверности", 1
+        )[1].split("## 16. После апостолов", 1)[0]
+        self.assertEqual(churches.count("реальные церкви I века"), 1)
+        self.assertEqual(churches.count("семь строго следующих"), 1)
+        self.assertNotIn("существовали одновременно", churches)
+        historical = reader.split("## 16. После апостолов", 1)[1].split(
+            "## 17. Почему именно XVI век?", 1
+        )[0]
+        for anchor in ("Первое послание Климента", "Дидахе", "Маркион",
+                       "325 году", "381 годом", "Донатистские", "иконоборческие",
+                       "910 году", "1054 год", "Виклиф", "Ян Гус",
+                       "1415 году"):
+            with self.subTest(anchor=anchor):
+                self.assertIn(anchor, historical)
+        self.assertIn("истории Европы около 1450–1517 годов", reader)
+        self.assertIn("PUBLICATION_HOLD", apparatus)
+        self.assertIn("NOT_EDITORIAL_READY", apparatus)
+
     def test_wave409_first_three_chapters_have_reader_first_prose(self):
         """Reader prose is separate from operational status; chapter sections retain hierarchy."""
         chapters = (
