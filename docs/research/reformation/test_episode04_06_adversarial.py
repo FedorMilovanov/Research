@@ -67,6 +67,32 @@ class ReformationAdversarialFourSixTests(unittest.TestCase):
         for fragment in ("B VI 248", "A 42.1.12", "№621", "№622", "№624", "REF-P72"):
             self.assertIn(fragment, apparatus)
 
+    def test_chapter05_full_reader_preserves_articles_nine_fourteen_fifteen(self):
+        """Keep the actual 1529 signed agreement distinct from party reports."""
+        chapter = self.texts["marburg"]
+        reader, apparatus = chapter.split("## Источниковедческий аппарат", 1)
+        self.assertGreater(len(reader.split()), 1750)
+        self.assertEqual(reader.count("## "), 8)
+        for marker in ("Статья 9", "не пустым знаком", "Статья 10",
+                       "статья 11", "статья 14", "под обоими видами",
+                       "духовное вкушение", "телесном присутствии",
+                       "десять богословов", "7, 13 и 15",
+                       "3 октября"):
+            with self.subTest(marker=marker):
+                self.assertIn(marker.lower(), reader.lower())
+        self.assertNotRegex(reader, r"https?://|\\bREF-[PS]\\d+|\\bVD16\\b")
+        self.assertIn("Цвингли", reader)
+        self.assertIn("Осиандер", reader)
+        self.assertIn("Шляйтхайм", reader)
+        self.assertIn("эпизод", reader.lower())
+        for marker in ("REF-P13-ARCHIVE", "REF-P75",
+                       "REF-P73", "REF-P74", "ARCHIVE_HOLD",
+                       "RIGHTS_HOLD", "PUBLICATION_HOLD",
+                       "NOT_EDITORIAL_READY", "Матфея"):
+            with self.subTest(archive_marker=marker):
+                self.assertIn(marker, apparatus)
+        self.assertIn("episode06_schleitheim_1527_1529_manuscript.md", reader)
+
     def test_marburg_difference_and_witnesses_not_erased(self):
         text = self.texts["marburg"]
         for fragment in ("четырнадцат", "стать", "пятнадцат", "телесном присутствии",
