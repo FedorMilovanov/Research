@@ -14,6 +14,26 @@ class Luther1517WormsEditorialTests(unittest.TestCase):
         cls.two = CH02.read_text(encoding="utf-8")
         cls.three = CH03.read_text(encoding="utf-8")
 
+    def test_ch02_whole_reader_basilica_financing_and_pastoral_arc(self):
+        """Keep this chapter a coherent narrative, not a bibliography or retrospective creed."""
+        reader, apparatus = self.two.split("## Источниковедческий аппарат", 1)
+        self.assertIn("базилики Святого Петра", reader)
+        self.assertNotIn("собора Святого Петра", reader)
+        self.assertEqual(reader.count("базилики Святого Петра"), 2)
+        self.assertIn("банковским домом Фуггеров", reader)
+        self.assertIn("обязательства перед Фуггерами", apparatus)
+        self.assertIn("не может обещать автоматическое освобождение", reader)
+        self.assertIn("истинность определённых апостольских индульгенций", reader)
+        self.assertIn("тезисе 71", reader)
+        self.assertIn("Тезис 72", reader)
+        self.assertIn("проповедью и пониманием верующего", reader)
+        self.assertNotRegex(reader, r"https?://")
+        self.assertIn("ORIGINAL_PRINT_COLLATION_HOLD", apparatus)
+        self.assertIn("RIGHTS_HOLD", apparatus)
+        self.assertIn("PUBLICATION_HOLD", apparatus)
+        self.assertGreater(len(reader.split()), 2000)
+        self.assertLess(len(reader.split()), 2300)
+
     def test_ch02_instruction_does_not_erase_papal_intercession_or_thesis35(self):
         s = self.two
         reader, apparatus = s.split("## Источниковедческий аппарат", 1)
