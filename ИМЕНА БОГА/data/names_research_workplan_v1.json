@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "planId": "NAMES_OF_GOD_MASTER_WORKPLAN",
   "createdAt": "2026-11-07",
-  "updatedAt": "2026-11-13",
+  "updatedAt": "2026-11-14",
   "statusOwner": "ИМЕНА БОГА/data/names_research_workplan_v1.json",
   "humanGuide": "ИМЕНА БОГА/11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md",
   "mediaResearch": "ИМЕНА БОГА/12_TMS_BARRICK_CHOU_SOURCE_REVIEW.md",
@@ -16,7 +16,7 @@
     "regressionTests": 321,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "PRIOR_W69_58C5C30D_EXACT_6_OF_6_SUCCESS_731_TESTS_W70_732_EXPECTED_PENDING",
+    "allSixCiChecks": "VERIFIED_PREDECESSOR_HEAD_29e52b49a9f445246e072898d009e98f02d74794_6_OF_6_TERMINAL_SUCCESS_732_OF_732_TESTS_NEW_AUDIT_HEAD_RECHECK_REQUIRED",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 21,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "58c5c30d53cdc781b93f773969d47e753374deb5",
+    "lastConfirmedAllSixChecksSha": "29e52b49a9f445246e072898d009e98f02d74794",
     "readerChapterCount": 3,
     "readerSectionCrosswalkCount": 32,
     "readerCrosswalkLinkedDistinctClaims": 25,
@@ -322,7 +322,7 @@
         "NG-02"
       ],
       "acceptance": [
-        "Прочитаны необходимые страницы BHS/BHQ и Göttingen Exodus, отдельно зафиксированы MT, LXX, варианты, conjecture, права и точные страницы/сиглы; как минимум 3 стиховых комплекта с независимой проверкой"
+        "Для Исх. 3:12–15, 6:2–3, 17:15–16 получены и прочитаны необходимые оригинальные страницы BHS и Göttingen Exodus, с сиглами, вариантами MT/LXX, qere и conjecture, отдельными правами и минимум 3 независимыми локусными проверками. BHQ Exodus у издателя IN_PREPARATION на момент проверки; не превращать ещё не опубликованный том в обязательную фиктивную «прочитанную» страницу и не заменять им BHS."
       ],
       "evidence": [
         "02_YHWH_EHYEH_CRITICAL_DOSSIER.md",
@@ -771,7 +771,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "2026-11-13 W70 ORIGINAL RESEARCH PR #379 DRAFT branch: DIRECT read academically deposited scanned original University of London 1983 David Lloyd Lyons PhD 'The Vocalization, Accentuation and Masora of Codex Or.4445', chapter2 addenda original print p16: under 'The following are written as one word' FIRST verse 'Ex.17,16'. This is first-hand authored scholarly manuscript-analysis report supporting editor Dovi's joined original Or4445, NOT our native-pixel physical photo autopsy. PDF Hebrew glyph and mp annotation table extracted OCR is corrupted; screenshot web attempt on page 15/16 DisabledError; Hebrew original masora not independently read, and whole 400p thesis NOT read. Lyons directly cites Yeivin AC-VA pp78–84; Yeivin printed page 82 still NOT read. Another possible MORE ANCIENT early-7th/8th century proto-MT Torah scroll fragment Cambridge T-S NS282.88 in Sanders Journal Hebrew Scriptures article 23(5), publisher 2024 covers Ex17:5–18:14 INCOMPLETE; 17:16 may NOT survive. NO new ancient 17:16 witness record or attestation, require original physical image both sides and actual exact verse match first. Source SRC-LYONS-1983-SOAS-OR4445-EX17-16-ORIGINAL-THESIS-P16 genuinely new 1983 independent author, NOT new physical MS; 129 total source records /105 attestation links/87 provisional claims/75 relations, 321 core tests and 732 aggregate expected. Last W69 exact SHA 58c5c30d 6/6 terminal SUCCESS and 731/731, W70 exact-head CI pending. Rights, external scholarly review of our project, published Product all remain 0; original critical apparatus Göttingen and BHS, Yeivin82, Breuer260–261 n1, Weiss full 2026 pp242–272, Or4445 ink spacing remain open. Do not merge to main, mutate other repos or Product, create branch/PR, or misrepresent original codex autopsy.",
+  "nextAction": "2026-11-14 AUDIT HANDOFF, existing Research Draft PR #379 only: (1) CH-PILOT-03 existing chapter: close or explicitly HOLD exactly two mapped evidence gaps, Ruth1:20-21 and Job5:17/42:7, and check Gill/Berkhof/Bavinck author attributions where used; edit existing reader manuscript or record bounded blockers, not create new ancient attestations automatically. (2) NG-04 Ex17:15-16: adversarial line-by-line edit of the bounded reader fragment inside dossier23 against printed MT/LXX and strongest opposing Weiss author abstract, including word-division and potential later Masorah ink layer; only seek Or4445 original native pixels or printed apparatus if a newly accessible exact object is identified. STOP_DISCOVERY after two no-gain attempts. CH4 is UNSELECTED; draft fragment is not a fourth complete reader chapter. Previous exact HEAD 29e52b49 has 6/6 workflows SUCCESS and 732/732 tests; new HEAD requires own checks. NG04 BLOCKED_SOURCE, NG13/NG15 BLOCKED_DEPENDENCY, rights/Product/publication approvals zero. No new branch, main mutation, site edit or unauthorised publication.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -852,9 +852,10 @@
     }
   ],
   "lastWorkReport": {
-    "date": "2026-11-13",
-    "planStatus": "W70 original Lyons University of London 1983 PhD ch2 print p16 explicitly classifies Ex17:16 among joined one-word examples in ORIGINAL Or4445 manuscript analysis. Stronger independent authored report, not another physical codex; original glyphs/mp table garbled and scanned PDF image screenshot denied, independent palaeographic autopsy still 0. Older fragment Cambridge T-S NS282.88 Ex17:5–18:14 incomplete is candidate only with NO EX17:16 original verified. 129 sources/105 attestations/87 claims/75 relations, 321 core /732 total expected. W69 58c5c30d 6/6 CI SUCCESS 731/731; W70 exact CI pending, all publication HOLD.",
+    "date": "2026-11-14",
+    "planStatus": "AUDIT_2026_11_14: 3 reader pilots and separate EX17 draft only; 6/6 terminal success and 732/732 on predecessor exact 29e52b49, new audit commit CI unverified; machine W70 handoff corrected, critical edition and rights/scientific/Product HOLD remain.",
     "workCompleted": [
+      "2026-11-14 AUDIT SELF_PLAN: verified existing PR379 head 29e52b49, all six exact-head Actions success (Names 43474419588, 732/732 tests), 129 sources/105 attestations/87 provisional claims/75 relations, three reader pilots. Found stale W70 machine nextAction/snapshot, stale W63 CURRENT PR header, 619 commits/66 files with large historical docs, chapter03 two crosswalk gaps and no external review, NG04 unreachable BHQ Exodus print expectation. Restricted active work to CH-PILOT-03 bounded textual/source gap triage and NG04 Exodus17 fragment adversarial edit; separated 4th-chapter decision and withheld all approvals. Current audit HEAD CI must be rechecked.",
       "2026-11-13 W70: original Lyons 1983 University of London PhD 400+ PDF, chapter2 printed p16 addenda two-word vs one-word codex Or4445; author puts Ex17:16 first in explicitly one-word group, references Yeivin original pp78–84 without our access. Original Hebrew glyph/mp table OCR unreadable and PDF screenshot disabled; no fabricated reading. New single independently authored source with 24 source gate fields and one 28 negative case test. Ancient Cambridge T-S NS 282.88 7th/8th c original parchment fragment is within Ex17:5–18:14 range but incomplete; NO confirmation verse 16 physical text survives, therefore not counted as attestation or new 17:16 witnessed source.",
       "2026-11-13 W69: publisher directly verifies journal 88(3) 2026 printed Weiss article pp242–272; original 1-page Hebrew TOC and author-supplied English abstract original 4-page PDF inspected visually at pages V–VI. Author contends internal variation across both Hebrew school traditions, accents support TWO words, argues Aleppo itself later corrected to ONE, 3 analog late edits; original full 31-page argument, precise three cases, scribal actor unverified, hypothesis not science fact. Source and one fail-closed negative test added, no publication rights or independent our-project scholarly signoff.",
       "2026-11-13 W68: personally directly read Dovi MAM authored detailed Ex17:16 manuscript group apparatus and his manuscript sigla dictionary; Or4445=bet joined כסיה and marginal חדא/חדה מלתא cited; Cairo18 third note West joined/East separate; Aleppo via Saphir and Kimhi absent originals. Two actual editorial reports support joined and supersede previous unreliable browser model two-word reading, but primary photograph autopsy still not carried out. Yuval Weiss Leshonenu 88 issue3 pp242–272 bibliographic lead ONLY; original unread and late hand correction an attributed hypothesis. Extended existing editor and London IDs without increasing 127 sources, with one new core negative mutation test and 8 more London guard fields.",
@@ -1070,9 +1071,9 @@
     }
   },
   "editorialExecution": {
-    "asOf": "2026-11-08",
+    "asOf": "2026-11-14",
     "owner": "ИМЕНА БОГА/11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md §0a/§3b",
-    "state": "NG12_EXACT_CRITICAL_EDITION_LOCATORS_FOUND_BHQ_EXODUS_NOT_PUBLISHED_EPIGRAPHY_UNCOLLATED",
+    "state": "SELF_PLAN_AUDIT_RECONCILED_TWO_DELIVERABLES_CH03_EDITORIAL_GAPS_AND_EX17_BOUNDED_READER_FRAGMENT_NO_SCHOLARLY_APPROVAL",
     "readerChapterCountApproved": null,
     "subjectDirectionsProvisional": 14,
     "readerManuscriptsAccepted": 0,
@@ -1082,10 +1083,20 @@
         "kind": "READER_MANUSCRIPT_PILOT",
         "target": "El, Elohim and Shaddai with primary syntax, speakers, referents and unsettled etymology",
         "acceptance": "One continuous Russian reader chapter distinguishing Elohim morphological number and referents, El Elyon within Gen14 narrative, direct self-declaration El Shaddai and Isaac blessing, disputed etymology with bounded competing academic explanation and separate scholarly-rights HOLD appendix.",
-        "status": "RESEARCH_MANUSCRIPT_REVISED_INTERNAL_ADVERSARIAL_PASS_2_EDITORIAL_CONDENSATION_W51_AND_SECTION_CROSSWALK_W52_DONE_EXTERNAL_SCHOLARLY_REVIEW_PENDING_NOT_EDITORIAL_READY",
+        "status": "ACTIVE_BOUNDED_SOURCE_GAP_TRIAGE_INTERNAL_ONLY_EXTERNAL_SCHOLARLY_REVIEW_PENDING_NOT_EDITORIAL_READY",
         "file": "ИМЕНА БОГА/reader/CH-PILOT-03_EL_ELOHIM_SHADDAI.md",
         "verification": "Research reader chapter ≈3109 whitespace-separated words + research/editorial apparatus; Wave51 condensed Deir Alla from 2651-word embedded main excursion to 309-word bounded narrative, preserving former complete research text and two alternative images in internal scholarly appendix, keeping original CC0 museum photo in reading. Wave52 adds section-claim-source crosswalk for 32 headings and 25 distinct claim IDs with 18 negative regressions. Existing two internal adversarial Hebrew-source passes remain exactly two, not an external review; no independent scientific, rights or Product acceptance.",
-        "nextReview": "Independent external Hebrew/Aramaic philology + theology and editions/rights; section-level claims trace explicitly has open Naomi/Job and Shaddai etymology questions, and does not grant publication."
+        "nextReview": "CH03: exactly mapped gaps Ruth1:20–21 / Job5:17 and 42:7; examine author-voice context, existing claim references and Gill/Berkhof/Bavinck passages actually cited; record attributable page/source or leave explicit EVIDENCE_HOLD. No invented new ancient witnesses, no new chapter and no claim of external peer review."
+      },
+      {
+        "id": "NG-04",
+        "kind": "BOUNDED_EX17_READER_FRAGMENT_ADVERSARIAL_EDIT_NOT_FULL_CHAPTER",
+        "target": "Exodus 17:15–16 reader explanation inside existing dossier23: altar name, MT hand/throne, LXX hidden hand, one-/two-word Or4445/Aleppo status and Masorah layer uncertainty",
+        "acceptance": "Sentence-level five-claim review: printed MT and LXX are attributed and separated; conjecture not promoted; Dovi/Lyons about same Or4445 not counted as two manuscripts; lost Aleppo leaf not observed; specific Masorah note not palaeographically dated. Apply local text fix if claim fails; otherwise evidence-limited editorial STOP and NG04 BLOCKED_SOURCE.",
+        "status": "ACTIVE_TEXT_EDIT_ONLY_TASK_NG04_BLOCKED_SOURCE_NO_INDEPENDENT_ORIGINAL_COLLATION",
+        "file": "ИМЕНА БОГА/23_YIREH_NISSI_ANSWER_PLACE_MOUNTAIN_EDITION_CRUX_20261107.md",
+        "verification": "Wave73 added a bounded connected prepublication reader passage inside research dossier, NOT a fourth reader chapter and NOT independent scholarly approval; preceding exact SHA 29e52b49 had 6/6 CI and 732/732.",
+        "nextReview": "Only reopen digital original Or4445 f59v, Yeivin p82, Breuer pp260–261, Weiss full 2026, BHS/Göttingen printed apparatus if an accessible exact image or new substantive counter-reading arrives. Two no-gain searches => STOP_DISCOVERY and retain explicit source HOLD."
       }
     ],
     "nextChapterCandidates": [],
@@ -1649,7 +1660,68 @@
       "publicationState": "BLOCKED"
     },
     "readerMainTextStatus20261111": "CH01_2415_WORDS;CH02_2222_WORDS;CH03_3109_WORDS_AFTER_W51_CONDENSATION; all not editorial ready; exact counts by whitespace tokenization from before appendix.",
-    "readerResearchAppendixPreservation20261111": "CH03 native 2651-word Deir Alla section moved intact except original CC0 image block retained in reader, 30 source hyperlinks and 2 other images preserved in editorial appendix. Scientific facts, conflicting reconstruction and rights remain held."
+    "readerResearchAppendixPreservation20261111": "CH03 native 2651-word Deir Alla section moved intact except original CC0 image block retained in reader, 30 source hyperlinks and 2 other images preserved in editorial appendix. Scientific facts, conflicting reconstruction and rights remain held.",
+    "selfPlanAudit": {
+      "auditDate": "2026-11-14",
+      "checkedPredecessorHeadSha": "29e52b49a9f445246e072898d009e98f02d74794",
+      "verifiedPredecessorWorkflows": 6,
+      "verifiedPredecessorNamesTests": 732,
+      "scope": "Only existing Research PR379 and canonical JSON/master; no Product/site/rights changes",
+      "results": [
+        {
+          "id": "SPA-01",
+          "severity": "P0",
+          "result": "CORRECTED_THIS_AUDIT",
+          "finding": "W70 nextAction and W69 CI as CURRENT despite W73",
+          "evidence": "Exact predecessor Actions 43474419588, 6/6 success / 732 tests"
+        },
+        {
+          "id": "SPA-02",
+          "severity": "P0",
+          "result": "ACTIVE_SCOPED",
+          "finding": "CH03 crosswalk 32 sections has distinct source gaps Naomi/Job and historical theologian attributions; no external scholarly review",
+          "evidence": "names_reader_claim_crosswalk_v1.json and chapter03"
+        },
+        {
+          "id": "SPA-03",
+          "severity": "P0",
+          "result": "ACTIVE_SCOPED",
+          "finding": "Ex17 reader text exists inside dossier23; NOT a full CH04 or verified original folio autopsy",
+          "evidence": "dossier23 Wave73; NG04 BLOCKED_SOURCE"
+        },
+        {
+          "id": "SPA-04",
+          "severity": "P1",
+          "result": "DOCUMENTATION_HYGIENE_HOLD",
+          "finding": "PR has 619 commits/66 files and top CURRENT Wave63, reader orientation obscured",
+          "evidence": "GitHub PR379 metadata and body"
+        },
+        {
+          "id": "SPA-05",
+          "severity": "P1",
+          "result": "MACHINE_HOLD_PRESERVED",
+          "finding": "55 V1 source attestations without inline locusId remain opt-in sidecar; external Product runtime not verified",
+          "evidence": "names_locus_compat_v1.json / names_consumer_compat_v1.json"
+        },
+        {
+          "id": "SPA-06",
+          "severity": "P0",
+          "result": "EVIDENCE_HOLD_PRESERVED",
+          "finding": "BHQ Exodus unpublished; BHS/Göttingen, Weiss, original Or4445 folio not collated; 0 critical original photo inspections",
+          "evidence": "NG04 recorded publisher status, dossier23, source register"
+        },
+        {
+          "id": "SPA-07",
+          "severity": "P0",
+          "result": "PUBLICATION_HOLD_PRESERVED",
+          "finding": "0 peer-reviewed project claims / 0 rights approvals / 0 Product publication permits",
+          "evidence": "source registry, machine baseline and editor state"
+        }
+      ],
+      "stopRule": "No more than two active deliverables; two consecutive no-gain object searches end discovery; Research manuscript edit with explicit gaps can proceed, but no evidence/rights/scientific/Product approval is inferred from CI.",
+      "decision": "CONTINUE_RESEARCH_ONLY_TWO_BOUNDED_TEXT_AND_EVIDENCE_TASKS_NOT_READY_TO_MERGE_OR_PUBLISH",
+      "nextActionOwner": "ИМЕНА БОГА/data/names_research_workplan_v1.json"
+    }
   },
   "systematicTheologyTriage": {
     "asOf": "2026-11-08",
