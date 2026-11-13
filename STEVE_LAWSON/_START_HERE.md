@@ -1,10 +1,14 @@
 # START HERE — Steven J. Lawson research
 
-**Updated:** 2026-09-30  
+**Updated:** 2026-11-13  
 **Canonical operational handoff:** [`CURRENT.md`](CURRENT.md)  
-**State:** `PUBLICATION_READY_WITH_GUARDRAILS / V6 CANONICAL / BIOGRAPHY PUBLIC-WEB CLOSED / MAIN AUTHORITATIVE / ARENA RETIRED / OUTBOUND ACQUISITIONS ACTIVE`
+**State:** `V6 CANONICAL / NOV-2026 ELDERS-LETTER EVIDENCE UPDATE IN 87_ / SIGNED ORIGINAL ON HOLD / BIOGRAPHY CLOSURE UNCHANGED`
 
-> **Start with `74_`, `75_`, `81_`, `83_`, `84_`, `85_`, then `CURRENT.md`. Main is authority. Do not resume from V4/V5, arena control files, consumed staging, or generic search loops.**
+> **Start with `CURRENT.md`, then the new November-2026 evidence delta `87_`, followed by canonical V6 `74_`/`75_` and holder-response `86_`. Main is authority. Do not resume from V4/V5, the older `STEVEN_LAWSON_2024_2026/` folder, arena control files, or generic search loops.**
+
+## Fresh November 2026 evidence (new trigger, not a new series)
+
+[**87 — 25 Nov 2025 Stephens Valley elders' reported recommendation, first made public 11 Nov 2026**](87_NOV2026_ELDERS_LETTER_SOURCE_DEPENDENCY_AND_RESTORATION_SCOPE_2026-11-13.md) is the current **post-V6 evidence delta**. The purported collective letter is transcribed by Protestia but a signed institution-authenticated original and membership-transfer record remain unacquired. Distinguish reported suitability for possible service from a real elder/pastor appointment. Cross-read with `54_`, `55_`, `59_`, `67_` and `76_`. The canonical article **remains `74_`** until a separate approved publication handoff.
 
 ## Canonical reading order
 

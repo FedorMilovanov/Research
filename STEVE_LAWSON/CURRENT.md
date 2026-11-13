@@ -1,8 +1,26 @@
 # Steven J. Lawson — CURRENT
 
-**Snapshot:** 2026-11-06 (original V6 snapshot remains 2026-09-30)  
+**Snapshot:** 2026-11-13 (original V6 snapshot remains 2026-09-30; external-holder checkpoint is 2026-11-06)  
 **Corpus:** `LAWSON-2024-2026` + canonical biography closure + active external acquisitions  
-**Status:** `PUBLICATION_READY_WITH_GUARDRAILS / V6 CANONICAL / BIOGRAPHY PUBLIC-WEB CLOSED / ARENA RETIRED / FOUR HOLDER RESPONSES RECORDED / REMAINDER PENDING`
+**Status:** `V6 CANONICAL / NOV-2026 REPORTED-ELDERS-LETTER MATERIAL EVIDENCE DELTA / ORIGINAL AUTHENTICITY HOLD / FOUR HOLDER RESPONSES RECORDED`
+
+## Important new evidence — 11–13 Nov 2026 (read before V6 publication decisions)
+
+**A new, issue-specific primary-object acquisition trigger exists.** On 11 November 2026 Protestia published a transcription of a purported 25 November 2025 Stephens Valley Church elders' recommendation. The text asserts Lawson was a **member in good standing**, describes **15 months of observation**, calls him **genuinely repentant**, and deems him **spiritually fit for potential ministry opportunities**. Other outlets independently reported journalistic inquiries and reactions, **not independent examination of the signed original**.
+
+**Evidence ceilings:** As of 13 November 2026, no church-authenticated signed original, signatory list, decision minutes, member-transfer/release document, actual pastoral appointment, new teaching event, or Anne Lawson direct statement was obtained. Reported recommendation ≠ installed elder/preacher; source repetition ≠ independent authentication. Clint Archer's January 2025 restriction addressed teaching/ministry *requiring elder qualifications*, and his Jan 30 analysis allowed other forms of church service: a categorical contradictory-verdict headline would overstate what the respective words prove.
+
+**Full November-12 Didaché primary-speaker coverage added 13 Nov:** All 1,175 English auto-caption snippets (43:45.6) of [Peters/Osman `Steve Lawson Restored To Ministry?`](https://www.youtube.com/watch?v=wOkPMX9UnrY) have now been **read in sequence** and recorded with timecodes and an SHA-256 custody receipt in `87_` §9. Captions are auto-generated; the audio was **not** human-checked, so specific literal quotations remain a `QUOTE_HOLD`. Two genuinely new **speaker-reported** allegations require attribution, not automatic promotion to fact: **(i)** Peters says Phil Johnson authorized him to report Lawson had not sought reconciliation with GCC elders (**13:13–14:30**); **(ii)** Peters says multiple unnamed contacts independently told him Lawson was searching for public preaching opportunities within months of 2024 disclosure (**16:10–16:43, 39:18–40:10**). Neither independent Johnson source nor specific accepted invitation is verified. Osman explicitly says he does **not know** Anne's actual marital situation. See `87_` §9 for exact distinctions.
+
+**13-Nov first-party church PDF acquisition COMPLETED:** The two original Stephens Valley Church Sunday bulletins **23 Nov 2025 (16 pp.)** and **30 Nov 2025 (12 pp.)**, which straddle the date on the purported elders' letter, are now **fully acquired, text-read and selectively visually checked**. SHA-256 and exact source/page references are in `87_` §10. On **23 Nov p.4** the church publicly introduced **seven named new members, none Steven Lawson**; this only excludes him from **that one ceremony**, not from all earlier membership. The 23-Nov preacher was **Benny Collins** and the 30-Nov preacher **Jim Bachmann**. Both print **`Officers' Prayer Time` Sundays 8:55 AM**, but do not name attendees; **officers != necessarily elder-only**, and Lawson is not shown attending. The Nov-23 adult class also lists **`Dr. Mark Lawson`**, a **different first-name person**: do not equate him with Steven J. Lawson. Neither PDF reproduces or authenticates the Nov-25 letter or announces a pulpit appointment. **The bulletin acquisition target is closed**; further general SVC PDF crawling is not justified by this event alone.
+
+**13-Nov July-2026 public-correction juxtaposition:** The earlier Apologia Studios [video `yb0gQJDEukk`](https://www.youtube.com/watch?v=yb0gQJDEukk) at about **03:30–04:20** has a presenter reading Peters' described X notice withdrawing his premature July conference appearance post; the original X object remains unacquired. This is a documented counterweight to Peters' Nov-12 skepticism: the organizer-reported decline is not disproved by Peters' private-source claims. See `87_` §11 and `76_`.
+
+**Canonical new evidence delta:** [`87_NOV2026_ELDERS_LETTER_SOURCE_DEPENDENCY_AND_RESTORATION_SCOPE_2026-11-13.md`](87_NOV2026_ELDERS_LETTER_SOURCE_DEPENDENCY_AND_RESTORATION_SCOPE_2026-11-13.md) — read with older `54_` (TBC→SVC membership chain), `59_` (Protestia restoration-source sourcing), `67_` (Anne's direct testimony), `55_` (finished-book approval), `76_` (July-2026 declined conference) and this CURRENT.
+
+**Publication transfer:** The existing Product Lawson article can receive a **dated, clearly attributed substantive update**, but V6 original editorial conclusions and biography remain historical snapshots; neither this Research entry nor Product local edits certify a production release. Only the two exact unresolved primary acquisitions (signed letter/institutional decision; membership/jurisdiction transition) are active; do not restart generic web searches or open a third Lawson department.
+
+---
 
 ## Canonical stack
 
