@@ -107,7 +107,7 @@ Secondary watch-only lead: direct complete audio or verified transcript of Peter
 
 ## 8. Supplement, 13 Nov 2026 — primary SVC officer authority and two exact-period bulletin objects
 
-This supplement is a **new, bounded primary-source locator result**, not an authenticated church letter and not a claim that either PDF was read.
+**Historical acquisition note:** On the first pass this was a bounded *locator-only* result. On **13 November 2026 a later direct Google Drive retrieval acquired both complete PDFs** and rendered the relevant pages. **Section 10 below supersedes all interim `PDF_NOT_READ` statuses in this section.** The documents still do not authenticate the separate elders' letter.
 
 **Official institutional governance source.** The public [Stephens Valley Church `Officers` page](https://stephens-valley-church-469943.churchcenter.com/pages/officers) explicitly calls the governing body **`Elder Council`** and lists Jim Bachmann as Moderator, Ron Kimery as Clerk, John Avery as Administrator; it lists elected class-of-2026/2027/2028 elders and reserves. **Access:** current public HTML `READ`; **class:** A3 for current organizational role only; **2025 roster/signature role:** `EVIDENCE_HOLD`. None of these current names may be declared an endorser or signer of the 25 Nov 2025 letter merely from their office today. The letter as transcribed by Protestia closes **`The Elder Counsel`**, a spelling mismatch whose provenance is unknown without the source document image.
 
@@ -115,10 +115,10 @@ This supplement is a **new, bounded primary-source locator result**, not an auth
 
 | Church-dated object | Direct official index | Underlying church-shared Google Drive file | Acquisition ceiling |
 | --- | --- | --- | --- |
-| **Sunday 23 Nov 2025** (2 days before alleged letter) | [SVC `Bulletins` source index](https://stephens-valley-church-469943.churchcenter.com/pages/order-of-service) | [`November 23rd 2025.pdf`](https://drive.google.com/file/d/1_eE9p0-iZfEc2kCuPUzuWsPnHLX0qJkx/view?usp=sharing) | **`URL_AND_TITLE_LOCATED / FULL_PDF_TEXT_NOT_READ / PDF_IMAGE_NOT_INSPECTED`** |
-| **Sunday 30 Nov 2025** (5 days after alleged letter) | same first-party index | [`November 30th 2025.pdf`](https://drive.google.com/file/d/1XvPXqEYo3hnBvHhKvRqx_JzY9ArVc3xq/view?usp=sharing) | **`URL_AND_TITLE_LOCATED / FULL_PDF_TEXT_NOT_READ / PDF_IMAGE_NOT_INSPECTED`** |
+| **Sunday 23 Nov 2025** (2 days before alleged letter) | [SVC `Bulletins` source index](https://stephens-valley-church-469943.churchcenter.com/pages/order-of-service) | [`November 23rd 2025.pdf`](https://drive.google.com/file/d/1_eE9p0-iZfEc2kCuPUzuWsPnHLX0qJkx/view?usp=sharing) | **`FULL_ORIGINAL_PDF_ACQUIRED / ENTIRE_TEXT_CHECKED / P4_IMAGE_RENDERED / SHA256_IN_§10`** |
+| **Sunday 30 Nov 2025** (5 days after alleged letter) | same first-party index | [`November 30th 2025.pdf`](https://drive.google.com/file/d/1XvPXqEYo3hnBvHhKvRqx_JzY9ArVc3xq/view?usp=sharing) | **`FULL_ORIGINAL_PDF_ACQUIRED / ENTIRE_TEXT_CHECKED / P9_IMAGE_RENDERED / SHA256_IN_§10`** |
 
-The church's first-party HTML page lists both dates and its direct links. Drive web previews exposed only a loading shell in the acquisition environment; therefore **no officer names, council decisions, preaching assignments, new-member announcements, or Lawson references were actually extracted from these two PDFs**. This is a precise acquisition target, not a content finding. A next researcher must retrieve the original PDFs lawfully, inspect the actual rendered pages and provide page locators before promoting their content into the Research claim ledger.
+The official index and direct public Google Drive links establish provenance. **The initial browser preview returned a loading shell, but this limitation was overcome in the later 13-Nov acquisition** using the direct Drive file API. The two original PDF bytes, full text and selected rendered pages are reported with SHA-256/page locators in §10. This correction prevents a stale negative `not read` status from overriding the successful later inspection.
 
 This directly advances the earlier `31_SVC_PRIMARY_BULLETIN_TIMELINE_COUNTS_COLLINS_WARREN_2024_2025_2026-09-29.md` original-object trail, which had gathered 2024 and Jan–Mar 2025 primary bulletins but not the **Nov-2025 exact decision window**. That earlier file already establishes a **July 14, 2024** roster with Terry Warren as then-current Elder Council Clerk. The **current** officers page lists him as reserve elder. **Neither** establishes his position on 25 Nov 2025 or that he signed/approved the letter. Avoid conflating the dates.
 
@@ -126,7 +126,7 @@ This directly advances the earlier `31_SVC_PRIMARY_BULLETIN_TIMELINE_COUNTS_COLL
 
 **Constitutional context from church's own words.** The official [pastoral vacancy description](https://stephens-valley-church-469943.churchcenter.com/pages/assistant-pastor-of-outreach) identifies governance by Senior Pastor and Elder Council and reserves regular preaching responsibilities for its called/qualified minister under leadership oversight. It is **not** evidence of Lawson's eligibility, employment or specific office; it illustrates that the church itself distinguishes formal office/assigned preaching from mere church participation.
 
-**Decision:** preserve `ORIGINAL_LETTER_AUTHENTICITY_HOLD`, `2025_COUNCIL_ROSTER_HOLD`, `MEMBERSHIP_TRANSITION_HOLD`, `PULPIT_APPOINTMENT_HOLD`. The two dated PDFs are exact candidates to acquire; no scope expansion to an unlimited archive crawl. **No production article update** should assert the unseen PDF contents.
+**Decision after §10 readback:** preserve `ORIGINAL_LETTER_AUTHENTICITY_HOLD`, `2025_COUNCIL_ROSTER_HOLD`, `MEMBERSHIP_TRANSITION_HOLD`, `PULPIT_APPOINTMENT_HOLD`. The two dated **original PDFs are acquired and read**; their narrow contents cannot prove any church-letter authenticity, membership timing or restoration decision. **Do not continue searching for or re-acquiring those same two objects.**
 
 ---
 
@@ -169,6 +169,39 @@ This directly advances the earlier `31_SVC_PRIMARY_BULLETIN_TIMELINE_COUNTS_COLL
 - **T2 — Original documentary object:** independently authenticate the SVC signed letter / exact signers, intended recipients and dated TBC→SVC membership process, or obtain/inspect the two exact-period **23 and 30 Nov 2025 SVC PDFs** and any direct 2025 conference listing capture. Without underlying objects, retain `EVIDENCE_HOLD` instead of multiplying press echoes.
 
 **Stop condition:** The nov-2026 video has been fully exhausted **as captions**. No additional full watch/transcript acquisition is needed unless a direct-quote dispute is material, in which case replay only the indicated audio interval for quote verification. Research may move to article editorial completion and stop searching; it does **not** need every private church fact to be publicly known.
+
+---
+
+## 10. 13 Nov 2026 — **actual original SVC bulletin PDF acquisition and page verification**
+
+**Acquisition path:** [SVC first-party index](https://stephens-valley-church-469943.churchcenter.com/pages/order-of-service), which links both dated PDFs in the church's public Google Drive. The public Google Drive links were fetched in full through the connected Drive file access route. The PDFs themselves were acquired as binary files, their complete textual layers searched, and key pages rendered to PNG and visually inspected. **No document merely inferred from a search-result snippet.** Original PDFs remain outside Git; these are durable custody receipts. Any machine-extracted plain text can omit page-layout information; the cited key pages below were visually checked.
+
+| PDF | Original direct public source | File integrity | Direct readback |
+| --- | --- | --- | --- |
+| **November 23rd 2025.pdf** | [Google Drive file `1_eE9p0-iZfEc2kCuPUzuWsPnHLX0qJkx`](https://drive.google.com/file/d/1_eE9p0-iZfEc2kCuPUzuWsPnHLX0qJkx/view) | **1,389,475 bytes, 16 PDF pages**, SHA-256 `e926b4d9fd03ddd7b6eb9052b0563e0c474ae56ee0f8c90a0c9b201213e3060a` | **PDF p. 4, visually verified:** `Introduction of New Members` with **seven individually named persons**, none named Steven/Steve Lawson. **PDF p. 11** lists pastor/preacher **Rev. Benny Collins** and worship leader **Rev. Jim Bachmann**; `Officers' Prayer Time` Sunday 8:55 is in weekly calendar **PDF p. 13** (page numbering for a combined two-column/section flow should be confirmed against PDF reader when specifically citing calendar page). `Dr. Mark Lawson` appears as adult **River Oaks Sunday School Class** teacher; this name must **not be joined** to Steven J. Lawson. |
+| **November 30th 2025.pdf** | [Google Drive file `1XvPXqEYo3hnBvHhKvRqx_JzY9ArVc3xq`](https://drive.google.com/file/d/1XvPXqEYo3hnBvHhKvRqx_JzY9ArVc3xq/view) | **947,046 bytes, 12 PDF pages**, SHA-256 `b7f47072b4c948a5b3cd435d5f02796466b68d2642eb7ee1cb390b8465dc6641` | **PDF p. 9, visually verified:** `Preacher: Rev. Jim Bachmann, Senior Pastor`, `Worship Leader: Rev. Benny Collins`. `Officers' Prayer Time` Sunday 8:55 again on weekly calendar **PDF p. 11**. No public letter announcement or Steven/Steve Lawson speaking slot in the full PDF text. |
+
+**23 November membership ceremony is the highest-value genuinely new original-object fact.** On PDF p. 4, seven named people are presented under a formal `Introduction of New Members` followed by the congregation's `Membership Vows`. Lawson is **not on that dated list**. This is a positive dated proof that SVC regularly documents *some* new-member receptions publicly. It is **not** proof Lawson never joined or had to have been received on that date; he might have been received on an earlier unexamined date, by a less public procedure, or the Nov-25 letter could be mistaken. Only an original reception/release record or attributable leadership statement could distinguish those alternatives.
+
+**Officers' prayer meeting, specificity ceiling.** Both documents list `Officers' Prayer Time` at **8:55 AM Sundays**. The public program thereby establishes a regular officer prayer event immediately surrounding the letter date. **But `Officers'` may include more than elders**, and the letter claims he attended `weekly Elder's prayer meetings` without identifying the schedule. These could be the same, overlap or be separate events; neither bulletin lists Lawson as a participant or presiding officer. **Never turn the indexed prayer event into proof he was in confidential elder business or functioning as an elder.**
+
+**Pastoral platform ceiling.** The bookend Sundays are documented preaching assignments for Collins and Bachmann, not Lawson. The two exact Sundays cannot prove Lawson never taught elsewhere, taught on a midweek date, was privately counseled or was offered an opportunity in another congregation. This **closes a precise source-acquisition task**, not the much larger historical question.
+
+**No contemporaneous public announcement in these particular PDF texts.** Neither bulletin contains the text of the alleged 25 Nov letter, an announcement of a restoration verdict, or his appointment as guest/preaching pastor. This bounded negative is more informative than untested claims, but does not imply private elders' actions did not happen between services.
+
+**Custody/rights:** Keep the original PDF hashes, public links, exact page locations and textual findings in Git only. Do not reproduce the complete church-published PDFs, all private names from membership announcement, photographs of individuals or entire protected copyrighted documents in the repository or public article. User's connected file access confirms retrieval only, not redistribution permissions. `A3` first-party church bulletin for events/names it prints; `ACCESS=FULL_BINARY_ACQUIRED / READ / SELECT_PAGES_VISUALLY_CONFIRMED`. Letter remains `B1_TEXTUAL_REPRODUCTION / ORIGINAL_SIGNED_DOCUMENT_HOLD`.
+
+---
+
+## 11. July 2026 X-post retraction — additional on-record historical counterweight to Nov-12 Peters inference
+
+A **first-party video by Apologia Studios** [`Addressing the Steve Lawson Controversy`](https://www.youtube.com/watch?v=yb0gQJDEukk), whose full 376-part English YouTube automatic-caption track was available on 13 Nov 2026, records a presenter around **03:30–04:20** reading what he attributes to Justin Peters' X explanation after the July 2026 conference-listing dispute. The presenter quotes Peters as announcing he had **taken down his original allegation post** while remaining puzzled by Protestia's explanation that organizers advertised Lawson without his consent.
+
+That presenter **also describes an apology** and criticizes premature public accusation. The actual X post was **not itself obtained** in this pass, so distinguish **Apologia's recorded quotation/report about Peters' X post** from *Peters' direct X source*. The `LAWSON_VIDEO_EVIDENCE_2026-10-03.md` in Product already indexed this Apologia video as a historical object, but this specific juxtaposition is now tracked in this claim-to-source ledger.
+
+**Contrast with Nov 12:** Peters' newer Didaché discussion around **38:08–42:00** reiterates his skepticism about organizer error, saying he has not experienced being prematurely advertised in his own speaking career and citing an alleged earlier 2025 listing. He does not show a signed invitation or Lawson's acceptance. Peters' prior post removal shows that the 2026 listing **required correction in public debate**; it does not determine whether his undisclosed alleged private sources are truthful or dishonest.
+
+**Public-claim guardrail:** Do not present the July-2026 conference as an **accepted** Lawson speaking invitation, and do not falsely claim Peters alone conclusively retracted every suspicion about a comeback. The documented decline report from Protestia `76_` remains a live counterweight, sourced to the outlet's unnamed informants rather than a firsthand Lawson statement. The 2025 earlier-listing claim remains `SECONDARY_HOLD`.
 
 ---
 
