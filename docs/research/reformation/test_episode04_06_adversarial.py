@@ -103,6 +103,38 @@ class ReformationAdversarialFourSixTests(unittest.TestCase):
         self.assertIn("архив", text.lower())
         self.assertIn("Шляйтхайм", text)
 
+    def test_chapter06_whole_reader_seven_articles_discipline_and_speyer(self):
+        """Protect complete narrative and distinguish ecclesial rule from civil punishment."""
+        reader, apparatus = self.texts["schleitheim"].split(
+            "## Источниковедческий аппарат", 1
+        )
+        self.assertGreater(len(reader.split()), 1750)
+        self.assertEqual(reader.count("## "), 9)
+        self.assertNotRegex(reader, r"https?://|\\bREF-[PS]\\d+|\\bVD16\\b")
+        for phrase in ("24 февраля 1527 года", "Первая статья",
+                       "Вторая статья", "Третья статья", "Четвёртая статья",
+                       "Пятая статья", "Шестая статья", "Седьмая статья",
+                       "до преломления хлеба", "Матфея 18",
+                       "двух или трёх человек", "восьмидневный",
+                       "гражданский меч установленным Богом",
+                       "zeugen", "schwören", "не равен",
+                       "Матфея 28", "Матфея 27",
+                       "около 1550 года", "около 1570 года",
+                       "20 апреля 1529", "22 апреля",
+                       "23 апреля", "смертное наказание",
+                       "возможность помилования"):
+            with self.subTest(phrase=phrase):
+                self.assertIn(phrase.lower(), reader.lower())
+        self.assertIn("episode07_luther_peasants_war_1524_1525_manuscript.md", reader)
+        self.assertIn("germanhistorydocs.org", apparatus)
+        self.assertIn("24 февраля 1527 года", apparatus)
+        self.assertIn("ORIGINAL_PRINT_COLLATION_HOLD", apparatus)
+        for gate in ("NOT_EDITORIAL_READY", "ARCHIVE_HOLD",
+                     "LOCAL_ARCHIVE_HOLD", "RIGHTS_HOLD",
+                     "PUBLICATION_HOLD", "DATE_AND_IMPRINT_ATTRIBUTION_CONFLICT"):
+            with self.subTest(gate=gate):
+                self.assertIn(gate, apparatus)
+
     def test_schleitheim_variants_dates_and_civic_magistrate(self):
         text = self.texts["schleitheim"]
         for fragment in ("Матфея 28", "Матфея 27", "около 1550",
