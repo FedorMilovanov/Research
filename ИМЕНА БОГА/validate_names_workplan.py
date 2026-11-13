@@ -169,6 +169,61 @@ def validate_names_workplan(
     for tid in graph:
         dfs(tid)
 
+    # A green count-only suite must not leave the operator following an obsolete
+    # wave or mistake a held reader draft for a fourth approved manuscript.
+    stamp = plan.get("updatedAt")
+    report = plan.get("lastWorkReport")
+    if (not isinstance(stamp, str) or not re.fullmatch(r"20\\d\\d-\\d\\d-\\d\\d", stamp)
+            or not isinstance(report, dict) or report.get("date") != stamp):
+        errors.append("workplan: live report date and updatedAt are out of sync")
+    next_step = plan.get("nextAction")
+    if not isinstance(next_step, str) or not next_step.startswith(f"{stamp} "):
+        errors.append("workplan: nextAction is an outdated or undated operator handoff")
+
+    editorial = plan.get("editorialExecution")
+    active = editorial.get("twoActiveDeliverables") if isinstance(editorial, dict) else None
+    if not isinstance(active, list) or not 1 <= len(active) <= 2:
+        errors.append("workplan: self-plan must have one or two active deliverables")
+    else:
+        current_ids = [item.get("id") if isinstance(item, dict) else None for item in active]
+        if len(set(current_ids)) != len(current_ids):
+            errors.append("workplan: duplicate active deliverable ID")
+        for item in active:
+            if not isinstance(item, dict):
+                errors.append("workplan: active deliverable is not an object")
+                continue
+            aid = item.get("id")
+            if (not isinstance(aid, str)
+                    or not (aid in ids or aid.startswith("CH-PILOT-"))
+                    or not all(isinstance(item.get(k), str) and item[k].strip()
+                               for k in ("file", "target", "acceptance", "verification", "nextReview", "status"))):
+                errors.append(f"workplan: active deliverable missing executable scope or valid ID {aid}")
+            elif any(p in item["status"] for p in ("_APPROVED", "_PUBLIC", "_MERGED", "_DONE")):
+                errors.append(f"workplan: active deliverable {aid} falsely presented as closed")
+
+    if isinstance(editorial, dict):
+        chapters = editorial.get("chapterRegister")
+        drafted = editorial.get("readerManuscriptsDrafted")
+        count = plan.get("baseline", {}).get("readerChapterCount")
+        if (not isinstance(chapters, list) or len(chapters) != drafted
+                or len(chapters) != count or len({x.get("id") for x in chapters}) != len(chapters)):
+            errors.append("workplan: reader manifest count or unique IDs drifted")
+        if editorial.get("readerManuscriptsAccepted") != 0 or editorial.get("independentScholarlyReviewsAccepted") != 0:
+            errors.append("workplan: held reader drafts falsely granted independent scholarly acceptance")
+        audit = editorial.get("selfPlanAudit")
+        verified = plan.get("baseline", {}).get("lastConfirmedAllSixChecksSha")
+        ci_description = plan.get("baseline", {}).get("allSixCiChecks")
+        if (not isinstance(audit, dict)
+                or not isinstance(audit.get("auditDate"), str)
+                or not isinstance(verified, str) or not re.fullmatch(r"[a-f0-9]{40}", verified)
+                or audit.get("checkedPredecessorHeadSha") != verified
+                or audit.get("verifiedPredecessorWorkflows") != 6
+                or not isinstance(audit.get("verifiedPredecessorNamesTests"), int)
+                or audit["verifiedPredecessorNamesTests"] < 1
+                or not isinstance(ci_description, str)
+                or verified not in ci_description or "6_OF_6" not in ci_description):
+            errors.append("workplan: self-plan operator summary missing or CI predecessor falsely attributed")
+
     phases = plan.get("phases", [])
     if not isinstance(phases, list) or len(phases) != 5:
         errors.append("workplan: expected five ordered research phases")
