@@ -201,27 +201,56 @@ class ReformationManuscriptTests(unittest.TestCase):
         self.assertIn("Постмилленаристское прочтение", epilogue)
 
     def test_kings_18_22_digital_witnesses_not_conflated(self):
-        """Different Synodal web editions are evidence of variance, not a collation."""
+        """Preserve the historical limit in reader; keep technical variants in apparatus."""
         intro = INTRO.read_text(encoding="utf-8")
         reader, apparatus = intro.split(
             "## Источниковедческие и редакционные примечания", 1
         )
-        self.assertIn("две доступные цифровые публикации", reader)
-        self.assertIn("eBible RUSSYN", reader)
-        self.assertIn("RST на Biblia.com", reader)
-        self.assertIn("Историю разночтений нельзя установить", reader)
-        self.assertIn("масоретский текст", reader)
-        self.assertIn("Септуагинты", reader)
+        self.assertIn("Пророки Ашеры упомянуты в начале эпизода", reader)
+        self.assertIn("текстовые различия не позволяют", reader)
+        self.assertIn("казни (3 Цар. 18:40)", reader)
+        for technical in ("eBible RUSSYN", "RST на Biblia.com",
+                          "две доступные цифровые публикации",
+                          "масоретский текст", "Септуагинты"):
+            with self.subTest(technical=technical):
+                self.assertNotIn(technical, reader)
+                self.assertIn(technical, apparatus)
+        self.assertIn("Историю разночтений нельзя установить", apparatus)
         self.assertIn("https://ebible.org/russyn/1KI18.htm", apparatus)
         self.assertIn("https://biblia.com/bible/rst/1-kings/18/19-22", apparatus)
         self.assertIn("https://lemma.gebible.app/v/1-kings/18/22", apparatus)
-        self.assertIn("18:19", apparatus)
-        self.assertIn("18:22", apparatus)
-        self.assertIn("не выполненная колляция русских исторических печатей", apparatus)
-        self.assertIn("что именно русская публикация отражает первоначальный текст", apparatus)
+        for boundary in ("18:19", "18:22",
+                         "не выполненная колляция русских исторических печатей",
+                         "что именно русская публикация отражает первоначальный текст"):
+            self.assertIn(boundary, apparatus)
         self.assertIn("RESEARCH_MANUSCRIPT_DRAFT", intro)
         self.assertIn("NOT_EDITORIAL_READY", intro)
         self.assertIn("PUBLICATION_HOLD", intro)
+
+    def test_wave457_one_chapter_reader_pass_does_not_duplicate_church_epochs(self):
+        """The single-chapter literary pass keeps the chronological bridge coherent."""
+        intro = INTRO.read_text(encoding="utf-8")
+        reader, apparatus = intro.split(
+            "## Источниковедческие и редакционные примечания", 1
+        )
+        churches = reader.split(
+            "## 15. Новая Церковь — старые опасности человеческой неверности", 1
+        )[1].split("## 16. После апостолов", 1)[0]
+        self.assertEqual(churches.count("реальные церкви I века"), 1)
+        self.assertEqual(churches.count("семь строго следующих"), 1)
+        self.assertNotIn("существовали одновременно", churches)
+        historical = reader.split("## 16. После апостолов", 1)[1].split(
+            "## 17. Почему именно XVI век?", 1
+        )[0]
+        for anchor in ("Первое послание Климента", "Дидахе", "Маркион",
+                       "325 году", "381 годом", "Донатистские", "иконоборческие",
+                       "910 году", "1054 год", "Виклиф", "Ян Гус",
+                       "1415 году"):
+            with self.subTest(anchor=anchor):
+                self.assertIn(anchor, historical)
+        self.assertIn("истории Европы около 1450–1517 годов", reader)
+        self.assertIn("PUBLICATION_HOLD", apparatus)
+        self.assertIn("NOT_EDITORIAL_READY", apparatus)
 
     def test_wave409_first_three_chapters_have_reader_first_prose(self):
         """Reader prose is separate from operational status; chapter sections retain hierarchy."""
