@@ -121,6 +121,26 @@ class Luther1517WormsEditorialTests(unittest.TestCase):
         self.assertIn("PUBLICATION_HOLD", first)
         self.assertIn("PUBLICATION_HOLD", self.two)
 
+    def test_ch03_single_reader_pass_preserves_conflict_sequence_and_source_limits(self):
+        """One full chapter, without converting print variants into speech transcripts."""
+        reader, apparatus = self.three.split("## Источниковедческий аппарат", 1)
+        for marker in ("Весной **1518 года**", "28 июня 1519 года",
+                       "трёх стен", "**1.18**", "**9.3**",
+                       "**видимого знака**", "**6 сентября 1520 года**",
+                       "датировано задним числом", "16 апреля 1521 года",
+                       "18 апреля", "Reg. E 81", "текстологически зависимы",
+                       "**8 мая**", "**12 мая**", "**25 мая**",
+                       "**26 мая**", "не на пленарном заседании",
+                       "подписал"):
+            with self.subTest(marker=marker):
+                self.assertIn(marker.lower(), reader.lower())
+        self.assertNotIn("неоспоримая стенограмма", reader)
+        self.assertNotRegex(reader, r"https?://")
+        self.assertIn("episode04_zurich_zwingli_1523_1525_manuscript.md", reader)
+        self.assertIn("Taylor Institution Library", apparatus)
+        self.assertIn("NOT_EDITORIAL_READY", apparatus)
+        self.assertIn("PUBLICATION_HOLD", apparatus)
+
     def test_ch03_sacramental_sources_and_opposing_argument(self):
         s = self.three
         reader, apparatus = s.split("## Источниковедческий аппарат", 1)
