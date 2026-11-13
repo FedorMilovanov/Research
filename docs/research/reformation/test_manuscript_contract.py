@@ -201,24 +201,28 @@ class ReformationManuscriptTests(unittest.TestCase):
         self.assertIn("Постмилленаристское прочтение", epilogue)
 
     def test_kings_18_22_digital_witnesses_not_conflated(self):
-        """Different Synodal web editions are evidence of variance, not a collation."""
+        """Preserve the historical limit in reader; keep technical variants in apparatus."""
         intro = INTRO.read_text(encoding="utf-8")
         reader, apparatus = intro.split(
             "## Источниковедческие и редакционные примечания", 1
         )
-        self.assertIn("две доступные цифровые публикации", reader)
-        self.assertIn("eBible RUSSYN", reader)
-        self.assertIn("RST на Biblia.com", reader)
-        self.assertIn("Историю разночтений нельзя установить", reader)
-        self.assertIn("масоретский текст", reader)
-        self.assertIn("Септуагинты", reader)
+        self.assertIn("Пророки Ашеры упомянуты в начале эпизода", reader)
+        self.assertIn("текстовые различия не позволяют", reader)
+        self.assertIn("казни (3 Цар. 18:40)", reader)
+        for technical in ("eBible RUSSYN", "RST на Biblia.com",
+                          "две доступные цифровые публикации",
+                          "масоретский текст", "Септуагинты"):
+            with self.subTest(technical=technical):
+                self.assertNotIn(technical, reader)
+                self.assertIn(technical, apparatus)
+        self.assertIn("Историю разночтений нельзя установить", apparatus)
         self.assertIn("https://ebible.org/russyn/1KI18.htm", apparatus)
         self.assertIn("https://biblia.com/bible/rst/1-kings/18/19-22", apparatus)
         self.assertIn("https://lemma.gebible.app/v/1-kings/18/22", apparatus)
-        self.assertIn("18:19", apparatus)
-        self.assertIn("18:22", apparatus)
-        self.assertIn("не выполненная колляция русских исторических печатей", apparatus)
-        self.assertIn("что именно русская публикация отражает первоначальный текст", apparatus)
+        for boundary in ("18:19", "18:22",
+                         "не выполненная колляция русских исторических печатей",
+                         "что именно русская публикация отражает первоначальный текст"):
+            self.assertIn(boundary, apparatus)
         self.assertIn("RESEARCH_MANUSCRIPT_DRAFT", intro)
         self.assertIn("NOT_EDITORIAL_READY", intro)
         self.assertIn("PUBLICATION_HOLD", intro)
