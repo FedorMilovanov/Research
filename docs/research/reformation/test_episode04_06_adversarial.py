@@ -80,7 +80,7 @@ class ReformationAdversarialFourSixTests(unittest.TestCase):
                        "3 октября"):
             with self.subTest(marker=marker):
                 self.assertIn(marker.lower(), reader.lower())
-        self.assertNotRegex(reader, r"https?://|\\bREF-[PS]\\d+|\\bVD16\\b")
+        self.assertNotRegex(reader, r"https?://|\bREF-[PS]\d+|\bVD16\b")
         self.assertIn("Цвингли", reader)
         self.assertIn("Осиандер", reader)
         self.assertIn("Шляйтхайм", reader)
