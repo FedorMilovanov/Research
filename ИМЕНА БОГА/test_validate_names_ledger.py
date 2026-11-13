@@ -2843,6 +2843,28 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                 row[field] = wrong
                 self.assertTrue(any("Or 4445 f59v image conflict cannot be upgraded" in err
                                     for err in validate_source_access(changed)))
+        for field, invalid in (
+            ("institutionalCatalogue", "https://example.invalid"),
+            ("institutionalCatalogueOriginalCoreIncludesFolio59v", False),
+            ("institutionalCatalogueReportsMasorahParvaAndMagnaPossiblyUpToCenturyLaterThanText", False),
+            ("specificExodus1716MarginalNoteSameScribeHandConfirmed", True),
+            ("specificExodus1716MarginalNoteLayerIndependentlyDated", True),
+            ("specificExodus1716ConsonantalSpacingIndependentlyCollated", True),
+            ("modernEditorialDoviMasorahCitationNotSameAsOriginalInkAutopsy", False),
+            ("beiler2023CambridgeThesisAuthor", "David Lloyd Lyons"),
+            ("beiler2023InstitutionalPDF", "https://example.invalid"),
+            ("beilerOriginalCodexBVsLaterYemeniteB2KeptSeparate", False),
+            ("beilerReportsNissiBenDanielAssociatedWithShaqlawa", False),
+            ("scribePlaceOfOriginProvesManuscriptPlaceOfProduction", True),
+            ("beilerThesisProvesExodus1716WordDivision", True),
+            ("criticalPhotoAutopsyOrPublicationRightGranted", True),
+        ):
+            with self.subTest(layer_field=field):
+                changed = copy.deepcopy(self.sources)
+                row = next(x for x in changed["records"] if x["id"] == source_id)
+                row["layerDatingAndProvenanceCaution20261113"][field] = invalid
+                self.assertTrue(any("Or 4445 f59v layer-dating hold cannot be bypassed" in err
+                                    for err in validate_source_access(changed)))
         self.assertEqual([], validate_source_access(self.sources))
 
 
