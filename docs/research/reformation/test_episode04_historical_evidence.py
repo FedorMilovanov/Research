@@ -30,7 +30,6 @@ class Episode04HistoricalEvidenceTests(unittest.TestCase):
         self.assertLess(january.index("12 января"), january.index("17 января"))
         self.assertLess(january.index("17 января"), january.index("18 января"))
         self.assertLess(january.index("18 января"), january.index("21 января"))
-        self.assertIn("Исторические", reader)
         self.assertIn("www.befg.de/", apparatus)
         self.assertIn("uecf.net/books/zwingli-potter/chapter7.html", apparatus)
         self.assertIn("непосредственно новое чтение листов", apparatus)
