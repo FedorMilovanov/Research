@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 128,
+    "sourceRecords": 129,
     "approvedForProduct": 0
   },
   "records": [
@@ -5056,7 +5056,63 @@
         "photoRightsAndTextRepublicationPermissionGranted": false,
         "publicationProductApproved": false
       }
+    },
+    {
+      "id": "SRC-LYONS-1983-SOAS-OR4445-EX17-16-ORIGINAL-THESIS-P16",
+      "title": "David Lloyd Lyons, The Vocalization, Accentuation and Masora of Codex Or. 4445 (Brit. Mus.) and Their Place in the Development of the Tiberian Masora (University of London PhD thesis, April 1983), printed p16, chapter 2 addenda 'Double-Barrelled Words in Codex B', Exodus 17:16 in ONE-WORD list",
+      "creator": "David Lloyd Lyons",
+      "year": 1983,
+      "institutionalOriginalPDF": "https://eprints.soas.ac.uk/33841/1/11010631.pdf",
+      "university": "University of London (Senate House); archival original PDF via SOAS institutional eprints",
+      "manuscriptPhysicalWitness": "British Library Or 4445 (London Codex), original tenth-century Pentateuch",
+      "manuscriptFolioLinkedFromPreviousSource": "59v, OPenn 13291_0125.jpg (not directly supplied by the thesis excerpt)",
+      "yearAndTitleDirectlyRead": true,
+      "printedLocation": "Chapter 2, Addenda to the Letter-Text of Codex B, printed page 16; scanned PDF original printed page numbers 15–16 visible in extracted page text",
+      "linkedPriorDiscussion": "Israel Yeivin, The Aleppo Codex: A Study of Its Vocalization and Accentuation, printed pp.78–84, cited by Lyons, primary Yeivin pages NOT read by us",
+      "sourceRole": "LYONS_1983_FIRSTHAND_OR4445_MASORA_PHD_ORIGINAL_CH2_PRINT_P16_EX17_16_ONE_WORD_CLASSIFICATION_TEXT_EXTRACT_NOT_IMAGE_AUTOPSY",
+      "evidenceClass": "A2",
+      "objectType": "INSTITUTIONAL_DIGITAL_REPRODUCTION_OF_AUTHOR_ORIGINAL_PHD_DISSERTATION_PRINT_PAGE16_EX17_16",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "locator": "University of London 1983 full 400+ page dissertation scanned PDF with original author's title and abstract directly extracted from SOAS institutional eprints, Chapter2 'The Letter-Text of Codex B', addenda printed page16, heading 'The Double-Barrelled Words in Codex B', list 'The following are written as one word:' with first row 'Ex. 17,16' and accompanying masora-parva annotation column. Author refers to Israel Yeivin AC-VA printed pp78–84 for 67 composite expressions. Original HTML text extraction visibly corrupts Hebrew-script form and Masorah abbreviations, therefore no faithful glyph transcription or ancient marginal note autopsy can be derived from garbled OCR. web.run screenshot attempts on SOAS PDF page 15/16 returned DisabledError; mark page-image review incomplete.",
+      "sourceObjectState": "Original institutional scanned PhD PDF content directly accessed and read through original parsed text at chapter2 printed page16 (WEB SOURCE original). Author clearly places Ex.17,16 under 'following written as one word' in codex B (=Or4445); this is a second independent named modern specialist who analyzed Or4445, in addition to modern Dovi editorial verse apparatus and comparison table, but ALL refer to the SAME SINGLE PHYSICAL OR4445 MS. The reading is scholarly author-attested one written word, versus prior unreliable automated web-image report separate. Important limits: thesis's scanned page-image could not be independently screenshot inspected because PDF web screenshot returned DisabledError, extracted individual Hebrew original letterforms and mp commentary too garbled to decipher reliably, and full thesis was NOT read. The cited Yeivin pp78–84 including p82 remains external unread scholarly source, not direct proof or double count. Thesis copyright notice reserves all rights; do not republish page image. No independent native-pixel manuscript autopsy or Product approval.",
+      "supportedUse": "Precisely attribute direct original scholarly doctoral dissertation classification of Exod17:16 as joined one written unit in London Codex Or4445, citing original printed Chapter2 p16; note author explicitly treats his work as major study of vocalization and Masorah. Three reported scholarly secondary readings of same Or4445 suggest joined, but remain one ancient physical witness, not three originals. Distinguish original PHD extracted printable page wording from failed image inspection and unread Hebrew glyph of masoretic annotation.",
+      "forbiddenUse": "Claim another distinct ancient manuscript has been found here; claim the original physical 59v native-pixel handwriting was personally read in 2026; quote uncipherable Hebrew/mp glyph from OCR as accurate original inscription; say we have visually inspected SOAS PDF scanned p16; claim actual Yeivin printed pp78–84 were obtained, or that book and thesis are same author; assert scholarly review of our Research project, free photo reproduction rights, or permission to publish source/article to Product.",
+      "originalLyonsInstitutionalThesisAudit20261113": {
+        "originalSourceType": "University of London PhD dissertation original scanned SOAS repository PDF",
+        "author": "David Lloyd Lyons",
+        "manuscriptStudied": "British Library Or 4445",
+        "manuscriptIsPhysicallyIndependentOfLeningradB19a": true,
+        "manuscriptIsAleppoCodex": false,
+        "dissertationYear": 1983,
+        "dissertationSubmittedMonth": "April",
+        "printedChapter": "Chapter 2",
+        "exactPrintedPage": 16,
+        "subsectionTitle": "The 'Double-Barrelled' Words in Codex B",
+        "oneWordListExplicitlyIncludes": "Ex. 17,16",
+        "oneWordClassificationOfEx1716Explicit": true,
+        "scholarlyAuthorAnalyzedOr4445VowelsAndMasora": true,
+        "scannedPdfOriginalHebrewTabularGlyphsOCRReliable": false,
+        "scannedPDFRenderedScreenshotSuccessfullyInspected": false,
+        "underlyingOriginalOr4445FolioNativePixelsExaminedByUs": false,
+        "originalMasorahNoteGlyphDecipheredByUs": false,
+        "printedYeivinPages78to84DirectlyReadByUs": false,
+        "originalThesis400PageCompleteStudyReadByUs": false,
+        "thesisIsAnotherPhysicalAncientManuscript": false,
+        "thesisAndDoviAreSameScholarlyAuthor": false,
+        "externalPeerReviewOfOurOwnClaimsCompleted": false,
+        "copyingOrRepublishingThesisPDFRightsGranted": false,
+        "ProductPublicationApproved": false
+      }
     }
   ],
-  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716 | WAVE49_2026-11-11_OFER2003_YEIVIN82_AUTHOR_CROSSWALK_PSALM_ISAIAH_NOT_EXODUS | WAVE50_2026-11-11_PESACHIM117A_TASHBETZ_I177_AHS_YD27524_HISTORICAL_DISPUTE_NOT_CODEX_AUTOPSY | WAVE54_2026-11-11_HUJI_OFER2002_25P_ENGLISH_EX17_16_SINGLE_CONCORDANT_NOT_DISCREPANT_HOLDS | W59_2026-11-12_OFER2016_ORIGINAL_TEXTUS26_EXODUS8_SELECT_PAGE_FACSIMILES_HISTORY_QUESTION_PARTIAL_SUPPORT_NOT_EX17 | W60_2026-11-12_WEVERS1991_ENGLISH_AUTHOR_INTRO2006_APP1_APP2_FIELD_COMPARE_NOT_EX17_APPARATUS | W61_2026-11-12_FIELD1875_ORIGINAL_BSB_FULL_VOLUME_PAGE111_EX17_16_ACTUAL_PRINT_SYMMACHUS_UNCERTAIN_NOT_ALEPPO_GOTTINGEN | W62_2026-11-12_KITTEL_BHK2_1909_P99_PRINT_APP_NOT_1937_AND_OFFICIAL_BHS1977_1997_TEXT_NOT_APP | W64_2026-11-13_BIU_MGKETER_COCHEN_MODERN_EDITORIAL_ONEWORD_EX17_VS_BHS_TWOWORD_NOT_ALEPPO | W65_2026-11-13_LENINGRAD_B19A_042A_WSRP_ORIGINAL_PHOTO_LOCUS_TEI_COL1_LINES15_16_DISTINGUISHED_FROM_NATIVE_PIXEL_COLLATION | W66_2026-11-13_OR4445_BL_59V_OPENN_PHOTO_LOCATOR_ORIGINAL_WORDDIVISION_CONFLICT_UNRESOLVED | W67_2026-11-13_DOVI_AUTHOR_EDITORIAL_11_COMPOSITE_WORDS_TWO_VS_REPORTED_ALEPPO_ONE_NOT_PHOTO | W68_2026-11-13_DIRECT_DOVI_EDITOR_VERSE_SPECIFIC_CRITICAL_APPARATUS_MARGINAL_MASORAH_OR4445_ONE_WORD_EDITORIAL_NOT_AUTOPSY | W69_2026-11-13_WEISS_2026_PUBLISHER_ORIGINAL_TOC_AUTHOR_ABSTRACT_VISUAL_NO_FULL_ARTICLE_OR_AUTOPSY"
+  "auditRevision": "NG04_WAVE44_OFER_1992_EXPLICIT_COURIER_DISPUTE_1863_UNSIGNED_PAPER_20261111 | WAVE47_2026-11-11_JTS_MS1154_LUTZKI729_EX17_16_ORIGINAL_COPY_MICROFILM_SELECTED_IMAGE_COLLATION_NOT_ALEPPO | WAVE48_2026-11-11_CAUTION_MARGINAL_PALEOGRAPHY_PLUS_OFER2002_NOT_EX1716 | WAVE49_2026-11-11_OFER2003_YEIVIN82_AUTHOR_CROSSWALK_PSALM_ISAIAH_NOT_EXODUS | WAVE50_2026-11-11_PESACHIM117A_TASHBETZ_I177_AHS_YD27524_HISTORICAL_DISPUTE_NOT_CODEX_AUTOPSY | WAVE54_2026-11-11_HUJI_OFER2002_25P_ENGLISH_EX17_16_SINGLE_CONCORDANT_NOT_DISCREPANT_HOLDS | W59_2026-11-12_OFER2016_ORIGINAL_TEXTUS26_EXODUS8_SELECT_PAGE_FACSIMILES_HISTORY_QUESTION_PARTIAL_SUPPORT_NOT_EX17 | W60_2026-11-12_WEVERS1991_ENGLISH_AUTHOR_INTRO2006_APP1_APP2_FIELD_COMPARE_NOT_EX17_APPARATUS | W61_2026-11-12_FIELD1875_ORIGINAL_BSB_FULL_VOLUME_PAGE111_EX17_16_ACTUAL_PRINT_SYMMACHUS_UNCERTAIN_NOT_ALEPPO_GOTTINGEN | W62_2026-11-12_KITTEL_BHK2_1909_P99_PRINT_APP_NOT_1937_AND_OFFICIAL_BHS1977_1997_TEXT_NOT_APP | W64_2026-11-13_BIU_MGKETER_COCHEN_MODERN_EDITORIAL_ONEWORD_EX17_VS_BHS_TWOWORD_NOT_ALEPPO | W65_2026-11-13_LENINGRAD_B19A_042A_WSRP_ORIGINAL_PHOTO_LOCUS_TEI_COL1_LINES15_16_DISTINGUISHED_FROM_NATIVE_PIXEL_COLLATION | W66_2026-11-13_OR4445_BL_59V_OPENN_PHOTO_LOCATOR_ORIGINAL_WORDDIVISION_CONFLICT_UNRESOLVED | W67_2026-11-13_DOVI_AUTHOR_EDITORIAL_11_COMPOSITE_WORDS_TWO_VS_REPORTED_ALEPPO_ONE_NOT_PHOTO | W68_2026-11-13_DIRECT_DOVI_EDITOR_VERSE_SPECIFIC_CRITICAL_APPARATUS_MARGINAL_MASORAH_OR4445_ONE_WORD_EDITORIAL_NOT_AUTOPSY | W69_2026-11-13_WEISS_2026_PUBLISHER_ORIGINAL_TOC_AUTHOR_ABSTRACT_VISUAL_NO_FULL_ARTICLE_OR_AUTOPSY | W70_2026-11-13_ORIGINAL_LYONS_1983_PHD_CH2_P16_OR4445_EX17_16_UNAMBIGUOUS_ONE_WORD_ENGLISH_CLASSIFICATION_GARBLED_HEBREW_NOT_SCREENCOLLATED"
 }
