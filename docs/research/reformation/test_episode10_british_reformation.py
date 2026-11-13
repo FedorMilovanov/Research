@@ -162,6 +162,49 @@ class EnglandScotlandTests(unittest.TestCase):
             reg["sourceCount"],
         )
 
+    def test_wave456_1587_original_not_confused_with_1561_parish_register(self):
+        """Custody lead and catalogued edition are not original-image proof."""
+        registry = json.loads(
+            (D / "source-registry-v1.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(registry["sourceCount"], len(registry["sources"]))
+        self.assertEqual(registry["sourceCount"], 219)
+        target = next(x for x in registry["sources"] if x["id"] == "REF-P94")
+        self.assertEqual(target["evidenceClass"], "A2")
+        self.assertEqual(target["accessState"], "PARTIAL_OBJECT")
+        self.assertEqual(target["locatorState"], "EXACT_LOCATOR_VERIFIED")
+        for required in (
+            "CUSTODY_CANDIDATE_HERTFORDSHIRE_RECORD_OFFICE_NOT_ITEM_CONFIRMED",
+            "PARISH_REGISTER_NOT_ACCOUNTS",
+            "DOREE_1431_1558_NOT_1559",
+            "PRINT_1882_BIBLIOGRAPHY_VERIFIED",
+            "PRINT_PAGE64_IMAGE_UNREAD",
+            "STOP_DISCOVERY",
+            "ORIGINAL_MANUSCRIPT_AND_PRINT_PAGE_VISUAL_HOLD",
+        ):
+            with self.subTest(required=required):
+                self.assertIn(required, target["verificationNote"])
+        self.assertNotIn("MANUSCRIPT_IMAGE_VERIFIED", target["verificationNote"])
+        for hold in ("EVIDENCE_HOLD", "ARCHIVE_HOLD",
+                     "RIGHTS_HOLD", "PUBLICATION_HOLD"):
+            self.assertIn(hold, target["holds"])
+        sweep = (D / "HOLD_SOURCE_SWEEP_2026-11-11.md").read_text(
+            encoding="utf-8"
+        )
+        section = sweep.split("## Волна 456 — Бишопс-Стортфорд", 1)[1]
+        for marker in ("1963", "1558", "1561", "1881", "1882", "1587",
+                       "Hertfordshire Record Office", "STOP_DISCOVERY",
+                       "точной сигнатуры", "не просмотр самой печатной с.64"):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, section)
+        ch = CH.read_text(encoding="utf-8")
+        self.assertIn("сведения доступны нам по опубликованной", ch)
+        self.assertIn("оригинальный рукописный лист и изображение", ch)
+        self.assertEqual(
+            sum("PUBLICATION_HOLD" in x["holds"] for x in registry["sources"]),
+            219,
+        )
+
     def test_claim_guards_and_published_chapter_numbering(self):
         ledger=(D/"03_claim_verification_register.md").read_text(encoding="utf-8")
         for n in range(282,292):self.assertIn("| C%d |"%n,ledger)
