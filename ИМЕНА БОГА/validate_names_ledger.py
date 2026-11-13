@@ -1723,6 +1723,25 @@ def validate_source_access(sources: dict) -> list[str]:
                     or not isinstance(folio, dict)
                     or any(folio.get(k) != v for k, v in expected.items())):
                 errors.append(f"{prefix}: Or 4445 f59v image conflict cannot be upgraded to manuscript reading, independent collation or rights approval")
+            layer = source.get("layerDatingAndProvenanceCaution20261113")
+            layer_required = {
+                "institutionalCatalogue": "https://searcharchives.bl.uk/catalog/032-003376314",
+                "institutionalCatalogueOriginalCoreIncludesFolio59v": True,
+                "institutionalCatalogueReportsMasorahParvaAndMagnaPossiblyUpToCenturyLaterThanText": True,
+                "specificExodus1716MarginalNoteSameScribeHandConfirmed": False,
+                "specificExodus1716MarginalNoteLayerIndependentlyDated": False,
+                "specificExodus1716ConsonantalSpacingIndependentlyCollated": False,
+                "modernEditorialDoviMasorahCitationNotSameAsOriginalInkAutopsy": True,
+                "beiler2023CambridgeThesisAuthor": "Vincent David Beiler",
+                "beiler2023InstitutionalPDF": "https://api.repository.cam.ac.uk/server/api/core/bitstreams/12148888-592a-4476-be6e-e34782394311/content",
+                "beilerOriginalCodexBVsLaterYemeniteB2KeptSeparate": True,
+                "beilerReportsNissiBenDanielAssociatedWithShaqlawa": True,
+                "scribePlaceOfOriginProvesManuscriptPlaceOfProduction": False,
+                "beilerThesisProvesExodus1716WordDivision": False,
+                "criticalPhotoAutopsyOrPublicationRightGranted": False,
+            }
+            if (not isinstance(layer, dict) or any(layer.get(k) != v for k, v in layer_required.items())):
+                errors.append(f"{prefix}: Or 4445 f59v layer-dating hold cannot be bypassed by catalogue, modern thesis, or editorial marginal note")
         if rid == "SRC-LENINGRAD-B19A-F042A-EX17-16-WSRP-FACSIMILE":
             image = source.get("originalPhotoAndTranscriptAudit20261113")
             required = {
