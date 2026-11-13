@@ -352,6 +352,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-BL-OR4445-F59V-EX17-16-OPENN-IMAGE-UNRESOLVED": "BL_OR4445_F59V_ORIGINAL_TENTH_CENTURY_DIGITAL_FACSIMILE_EX17_16_WORD_DIVISION_UNRESOLVED_CONFLICT",
     "SRC-DOVI-MIQRA-MASORAH-CH3-EX17-16-COMPOSITE-EDITORIAL": "DOVI_ONLINE_EDITORIAL_MASORAH_METHOD_11_COMPOSITE_FORMS_EX17_16_TWO_VERSUS_REPORTED_ALEPPO_ONE_WORD_NOT_ANCIENT_CODEX",
     "SRC-WEISS-LESHONENU88-3-2026-EX17-16-PUBLISHER-ABSTRACT": "WEISS_2026_ORIGINAL_PUBLISHER_ENGLISH_AUTHOR_ABSTRACT_AND_OFFICIAL_TOC_NO_FULL_ARTICLE_OR_ORIGINAL_MS_AUTOPSY",
+    "SRC-LYONS-1983-SOAS-OR4445-EX17-16-ORIGINAL-THESIS-P16": "LYONS_1983_FIRSTHAND_OR4445_MASORA_PHD_ORIGINAL_CH2_PRINT_P16_EX17_16_ONE_WORD_CLASSIFICATION_TEXT_EXTRACT_NOT_IMAGE_AUTOPSY",
     "SRC-KRUGER-SHADDAY-JOB-2023-CONTEXT-CRITIQUE": "ATTRIBUTED_MODERN_JOB_SHADDAY_PRAGMATICS_WITH_VERIFIED_TEXTUAL_COUNTERCHECK",
     "SRC-OFER-TEXTUS26-2016-ALEPPO-EX8-FRAGMENT": "OFER2016_EXODUS8_SURVIVING_ORIGINAL_FRAGMENT_PARTIAL_CHECK_OF_SAPHIR_ZER_QUESTIONS_NOT_EXODUS17_16_FOLIO",
     "SRC-VANWOLDE-2021": "ATTRIBUTED_SECONDARY_EXEGESIS",
@@ -1534,6 +1535,42 @@ def validate_source_access(sources: dict) -> list[str]:
                     or not isinstance(kittel, dict)
                     or any(kittel.get(k) != v for k, v in kittel_required.items())):
                 errors.append(f"{prefix}: Kittel1909 BHK2 and DBG BHS edition conflation or ancient apparatus/rights overclaim")
+        if rid == "SRC-LYONS-1983-SOAS-OR4445-EX17-16-ORIGINAL-THESIS-P16":
+            thesis = source.get("originalLyonsInstitutionalThesisAudit20261113")
+            expected = {
+                "originalSourceType": "University of London PhD dissertation original scanned SOAS repository PDF",
+                "author": "David Lloyd Lyons",
+                "manuscriptStudied": "British Library Or 4445",
+                "manuscriptIsPhysicallyIndependentOfLeningradB19a": True,
+                "manuscriptIsAleppoCodex": False,
+                "dissertationYear": 1983,
+                "dissertationSubmittedMonth": "April",
+                "printedChapter": "Chapter 2",
+                "exactPrintedPage": 16,
+                "subsectionTitle": "The 'Double-Barrelled' Words in Codex B",
+                "oneWordListExplicitlyIncludes": "Ex. 17,16",
+                "oneWordClassificationOfEx1716Explicit": True,
+                "scholarlyAuthorAnalyzedOr4445VowelsAndMasora": True,
+                "scannedPdfOriginalHebrewTabularGlyphsOCRReliable": False,
+                "scannedPDFRenderedScreenshotSuccessfullyInspected": False,
+                "underlyingOriginalOr4445FolioNativePixelsExaminedByUs": False,
+                "originalMasorahNoteGlyphDecipheredByUs": False,
+                "printedYeivinPages78to84DirectlyReadByUs": False,
+                "originalThesis400PageCompleteStudyReadByUs": False,
+                "thesisIsAnotherPhysicalAncientManuscript": False,
+                "thesisAndDoviAreSameScholarlyAuthor": False,
+                "externalPeerReviewOfOurOwnClaimsCompleted": False,
+                "copyingOrRepublishingThesisPDFRightsGranted": False,
+                "ProductPublicationApproved": False,
+            }
+            if (source.get("accessState") != "PARTIAL_OBJECT"
+                    or source.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+                    or source.get("rightsState") != "RIGHTS_UNKNOWN"
+                    or source.get("publicationState") != "BLOCKED"
+                    or source.get("criticalEditionCollated") is not False
+                    or not isinstance(thesis, dict)
+                    or any(thesis.get(k) != v for k, v in expected.items())):
+                errors.append(f"{prefix}: Lyons 1983 original PhD one-word report cannot certify original PDF image, Hebrew mp glyph, Yeivin pages, original codex autopsy or rights")
         if rid == "SRC-WEISS-LESHONENU88-3-2026-EX17-16-PUBLISHER-ABSTRACT":
             author_abstract = source.get("originalPublisherWeissAbstractAudit20261113")
             expected = {
