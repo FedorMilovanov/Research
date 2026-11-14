@@ -38,6 +38,44 @@ class JustificationBookTests(unittest.TestCase):
         for id in ("REF-P14","REF-P17","REF-P20","REF-P77"):
             self.assertIn("PUBLICATION_HOLD",s[id]["holds"])
 
+    def test_whole_reader_reward_merit_and_original_print_boundaries(self):
+        """Confessional rewards are not identical merits, and evidence stays scoped."""
+        text = E8.read_text(encoding="utf-8")
+        reader, apparatus = text.split(
+            "## Источниковедческий аппарат — вне основного повествования", 1
+        )
+        self.assertEqual(reader.count("## "), 10)
+        self.assertGreater(len(reader.split()), 2450)
+        self.assertNotRegex(reader, r"https?://|\\bREF-[PS]\\d+|\\bVD16\\b")
+        for token in (
+            "25 июня 1530 года", "13 января 1547 года",
+            "Гейдельбергский катехизис 1563 года",
+            "**статья IV**", "**статья VI**", "**статья XX**",
+            "**вопрос 63**", "награда существует, но даётся по благодати",
+            "награда — дар благодати, а не заслуга человека",
+            "Глава XVI Тридентского декрета", "**Канон IX**", "**Канон XI**",
+            "**Канон XXIV**", "**Канон XIII**",
+            "сообщаемая человеку праведность — формальной",
+            "крещение — инструментальной",
+            "о спасении детей без крещения",
+            "внешнего Слова",
+            "episode09_calvin_geneva_1535_1555_manuscript.md",
+        ):
+            with self.subTest(reader=token):
+                self.assertIn(token.lower(), reader.lower())
+        for token in (
+            "REF-P89", "REF-P90", "REF-P92",
+            "это **адресное чтение опубликованного текста главы XVI**",
+            "не вновь проверенная фотография главы XVI",
+            "ORIGINAL_EDITION_COLLATION_HOLD",
+            "INDEPENDENT_CONFESSIONAL_REVIEW_OPEN",
+            "THEOLOGICAL_PEER_REVIEW_OPEN", "RIGHTS_HOLD",
+            "PUBLICATION_HOLD",
+        ):
+            with self.subTest(apparatus=token):
+                self.assertIn(token.lower(), apparatus.lower())
+        self.assertNotIn("PUBLICATION_HOLD", reader)
+
     def test_wave426_augsburg_V_and_IX_are_distinct_confessional_charges(self):
         """Chapter 08 must tell the reader what the 1530 text says without
         claiming its polemical portrait was proved for all Anabaptists.
