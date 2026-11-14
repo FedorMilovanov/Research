@@ -364,7 +364,7 @@
           "editorialRole": "BIBLICAL_LOCI_NOT_IN_LOCKED_105_ATTESTATIONS",
           "claimIds": [],
           "claimSourceIds": [],
-          "unresolvedArgumentBoundary": "Ruth 1:20–21 (Naomi) and Job 5:17 / 42:7 (Eliphaz and divine judgment) have textual discussion in chapter, but no dedicated current CLM/ATT trace; later independent scholarly mapping needed."
+          "unresolvedArgumentBoundary": "2026-11-14 bounded original MT text check completed for Ruth 1:20–21 (Naomi's grief speech, not divine self-declaration) and Job 5:17/42:7–9 (Eliphaz speech vs God's later rebuke; not blanket disproof of every sentence). Chapter's three relevant reader paragraphs revised with direct verse hyperlinks. HOWEVER Ruth/Job remain OUTSIDE locked original 105 attestationId set with zero new dedicated CLM/SRC graph links; this is source-context editorial review, not structural claim approval or critical manuscript collation. Gill/Berkhof/Bavinck gap belongs to CH-PILOT-01, not CH03; keep independent external theology and edition review pending."
         },
         {
           "heading": "От Аврама к Моисею",
