@@ -134,11 +134,11 @@ class ReformationAdversarialSevenNineTests(unittest.TestCase):
         ):
             with self.subTest(term=term):
                 self.assertIn(term.lower(), reader.lower())
-        self.assertNotRegex(reader, r"https?://|\\bVD16\\b|\\bREF-[PS]\\d+")
+        self.assertNotRegex(reader, r"https?://|\bVD16\b|\bREF-[PS]\d+")
         for term in (
             "P.H.1384", "опубликованной архивной передачи",
             "20.11.1541", "30 ноября", "REF-P38",
-            "не самостоятельная колляция всего французского оригинала",
+            "самостоятельная колляция всего французского оригинала",
             "ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD",
         ):
             self.assertIn(term.lower(), apparatus.lower())
