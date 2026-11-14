@@ -116,6 +116,33 @@ class ReformationAdversarialSevenNineTests(unittest.TestCase):
             with self.subTest(marker=marker):
                 self.assertIn(marker.lower(), s.lower())
 
+    def test_ch09_complete_read_catechism_ordinances_and_civil_jurisdiction(self):
+        """Protect documented distinctions; not a substitute for original archive collation."""
+        reader, apparatus = self.books[9].split("## Источниковедческий аппарат", 1)
+        self.assertGreater(len(reader.split()), 2000)
+        self.assertEqual(reader.count("## "), 8)
+        for term in (
+            "10 ноября 1536 года", "подготовленные вместе с Кальвином",
+            "20 ноября 1541 года", "первое воскресенье сентября",
+            "по воскресеньям в полдень", "катехизис",
+            "публичного исповедания веры", "детокрещения",
+            "старейшин-мирян назначали городские советы",
+            "Перренов, Бертелье и Фавров",
+            "двух разных судебных преследований",
+            "Малому совету", "27 октября 1553 года",
+            "episode10_england_scotland_1534_1581_manuscript.md",
+        ):
+            with self.subTest(term=term):
+                self.assertIn(term.lower(), reader.lower())
+        self.assertNotRegex(reader, r"https?://|\bVD16\b|\bREF-[PS]\d+")
+        for term in (
+            "P.H.1384", "опубликованной архивной передачи",
+            "20.11.1541", "30 ноября", "REF-P38",
+            "самостоятельная колляция всего французского оригинала",
+            "ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD",
+        ):
+            self.assertIn(term.lower(), apparatus.lower())
+
     def test_wave401_reader_keeps_historical_argument_without_editorial_process(self):
         import re
         for n, text in self.books.items():
