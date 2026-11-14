@@ -1,0 +1,1764 @@
+{
+  "schemaVersion": 1,
+  "planId": "NAMES_OF_GOD_MASTER_WORKPLAN",
+  "createdAt": "2026-11-07",
+  "updatedAt": "2026-11-14",
+  "statusOwner": "ИМЕНА БОГА/data/names_research_workplan_v1.json",
+  "humanGuide": "ИМЕНА БОГА/11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md",
+  "mediaResearch": "ИМЕНА БОГА/12_TMS_BARRICK_CHOU_SOURCE_REVIEW.md",
+  "scope": "Research branch draft PR379 only, no site or main mutations",
+  "baseline": {
+    "draftPr": "https://github.com/FedorMilovanov/Research/pull/379",
+    "arenaRecords": 29,
+    "extensionRecords": 13,
+    "contextAttestations": 105,
+    "sourceRegisterEntries": 129,
+    "regressionTests": 321,
+    "criticalCollationsCompleted": 0,
+    "productApprovals": 0,
+    "allSixCiChecks": "VERIFIED_PREDECESSOR_HEAD_29e52b49a9f445246e072898d009e98f02d74794_6_OF_6_TERMINAL_SUCCESS_732_OF_732_TESTS_NEW_AUDIT_HEAD_RECHECK_REQUIRED",
+    "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
+    "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
+    "planRegressionTests": 26,
+    "provenanceRegressionTests": 319,
+    "canonicalEditions": 4,
+    "curatedClaims": 87,
+    "allAttestationForeignKeys": 105,
+    "editionSpecificGreekUrlsVerified": 22,
+    "unselectedGreekEditionUrls": 0,
+    "attestationsReferencedByClaims": 105,
+    "attestationsWithoutClaimReference": 0,
+    "typedClaimRelations": 75,
+    "correctedExodusDivineReferentRows": 3,
+    "semanticScopeAudits": 15,
+    "independentScholarlyClaimApprovals": 0,
+    "propheticRoyalCityClaims": 3,
+    "registeredPeerReviewedSelectedPageSources": 1,
+    "rockReferentAttestations": 5,
+    "rockPronounVerse30AwaitingDiscourseReview": true,
+    "immanuelDistinctEvidenceLociGuarded": 5,
+    "immanuelTextualCriticalCollationCompleted": 0,
+    "revelationSpeakerEditionAttestations": 6,
+    "revelationSecondaryCommentariesRegistered": 2,
+    "historicalMissingLocusIdsRecounted": 55,
+    "lexicalReferentAndNamedObjectGuards": 8,
+    "covenantShepherdAttestationsGuarded": 8,
+    "covenantSpeakerSpeechVersusPrayerDistinctions": 2,
+    "johnEgoDiscourseGuards": 4,
+    "yirehNissiPlaceAltarExplanationGuards": 4,
+    "shaddaiSabaothSpeakerGuards": 8,
+    "elyonQannaSpeakerNameGuards": 6,
+    "danielRevelationDiscourseGuards": 6,
+    "adonaiQedoshYahContextGuards": 8,
+    "hagarOlamGibborHymnGuards": 5,
+    "finalNg02OriginalTextContextGuards": 9,
+    "claimCoverageStructuralClosure": "105_OF_105_CLAIM_LINKED_ONLY_NO_SCHOLARLY_OR_PRODUCT_ACCEPTANCE",
+    "locusCompatResolvedTotal": 105,
+    "locusCompatPreservedInline": 50,
+    "locusCompatSidecarAliases": 55,
+    "locusCompatLegacyInlineMissing": 55,
+    "locusCompatRegressionTests": 24,
+    "locusCompatPublicationApprovals": 0,
+    "consumerContractPinnedInline": 50,
+    "consumerContractPinnedGeneralNoLocus": 22,
+    "consumerContractRegressionTests": 29,
+    "consumerContractExternalVerified": 0,
+    "consumerMigrationV2Approvals": 0,
+    "lastConfirmedAllSixChecksSha": "29e52b49a9f445246e072898d009e98f02d74794",
+    "readerChapterCount": 3,
+    "readerSectionCrosswalkCount": 32,
+    "readerCrosswalkLinkedDistinctClaims": 25,
+    "readerCrosswalkIndependentAdversarialTests": 18
+  },
+  "allowedStatuses": [
+    "DONE",
+    "IN_PROGRESS",
+    "OPEN",
+    "BLOCKED_SOURCE",
+    "BLOCKED_ACCESS",
+    "BLOCKED_ARTIFACT",
+    "BLOCKED_DEPENDENCY"
+  ],
+  "closureRule": "DONE only when acceptance evidence actually exists with exact source or test witness; transcript existence not full video watch; a branch CI green is not manuscript verification.",
+  "phases": [
+    {
+      "id": "PH0",
+      "label": "Control plane and reproducible evidence model",
+      "tasks": [
+        "NG-00",
+        "NG-01",
+        "NG-02",
+        "NG-03"
+      ],
+      "exit": "Source IDs, edition IDs and claim IDs have no orphaned references; supersession documented."
+    },
+    {
+      "id": "PH1",
+      "label": "TMS and translation-media primary-source review",
+      "tasks": [
+        "NG-05",
+        "NG-06",
+        "NG-07",
+        "NG-08",
+        "NG-09"
+      ],
+      "exit": "Both Zhakevich name lectures and priority Chou/Barrick materials reviewed against originals and documented with timestamps, not transcript-only claims."
+    },
+    {
+      "id": "PH2",
+      "label": "Critical-text and diachronic philology",
+      "tasks": [
+        "NG-04",
+        "NG-10",
+        "NG-11",
+        "NG-12"
+      ],
+      "exit": "Publisher critical apparatus loci, witnesses, alternatives and exact page anchors reviewed independently."
+    },
+    {
+      "id": "PH3",
+      "label": "Theological and editorial claim-level certification",
+      "tasks": [
+        "NG-13"
+      ],
+      "exit": "Approved claims distinguished from disputed claims; no unauthorized promotion."
+    },
+    {
+      "id": "PH4",
+      "label": "Arena source/runtime QA and Product handoff",
+      "tasks": [
+        "NG-14",
+        "NG-15"
+      ],
+      "exit": "Exact build audited, rights checked, explicit signoff and deployment verification external to Research."
+    }
+  ],
+  "tasks": [
+    {
+      "id": "NG-00",
+      "priority": "P0",
+      "title": "Зафиксировать точку продолжения и статус PR #379",
+      "status": "DONE",
+      "dependsOn": [],
+      "acceptance": [
+        "Исходный SHA 70442271aadf1bcae2afeaad729336218874f180 проверен: PR draft open, 6/6 CI success; 29+13 ID, 105 употреблений, 39 источников, 157 тестов, 0 допусков"
+      ],
+      "evidence": [
+        "PR #379",
+        "workflow checks for exact SHA"
+      ],
+      "verification": "GITHUB_6_OF_6_SUCCESS_AND_REPO_INSPECTION_2026-11-07",
+      "closureAt": "2026-11-07",
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-01",
+      "priority": "P0",
+      "title": "Единый живой план, правила обновления статусов и приёмки",
+      "status": "DONE",
+      "dependsOn": [
+        "NG-00"
+      ],
+      "acceptance": [
+        "Один machine-status SSOT и один человекочитаемый план; все задания имеют постоянный ID, приоритет, зависимости, критерии приёмки, доказательство закрытия, явное состояние HOLD"
+      ],
+      "evidence": [
+        "11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md",
+        "data/names_research_workplan_v1.json",
+        "GitHub workflow Names of God ledger integrity run 42333369066, head b0a7730, complete success (all 6 job steps)",
+        "ИМЕНА БОГА/validate_names_workplan.py",
+        "ИМЕНА БОГА/test_validate_names_workplan.py"
+      ],
+      "verification": "EXACT_SHA_b0a77301289a80f10ee71ce2babe7dbd254325ab_NAMES_LEDGER_WORKFLOW_RUN_42333369066_SUCCESS_ALL_6_STEPS",
+      "closureAt": "2026-11-07",
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-02",
+      "priority": "P0",
+      "title": "Нормализация evidence graph: ID утверждения → употребление → редакция → источник",
+      "status": "DONE",
+      "dependsOn": [
+        "NG-01"
+      ],
+      "acceptance": [
+        "Каждому доказательному утверждению присвоен claimId и тип (факт/морфология/толкование/гипотеза); все 105 употреблений имеют проверенный sourceId и editionId; 0 потерянных ссылок",
+        "Полностью типизированный граф должен иметь отдельное независимое CI и не терять 55 исторических записей без locusId; когда всё сойдётся, проверить сохраняемость ID при новой версии."
+      ],
+      "evidence": [
+        "data/names_ledger_v1.json",
+        "data/names_extension_ledger_v1.json",
+        "data/source_access_register_v1.json",
+        "data/names_edition_registry_v1.json",
+        "data/names_claim_registry_v1.json",
+        "ИМЕНА БОГА/data/names_ledger_v1.json: 87 new attestation/edition/source identifiers",
+        "ИМЕНА БОГА/data/names_extension_ledger_v1.json: 18 new attestation/edition/source identifiers",
+        "data/names_claim_registry_v1.json: four stable semantic claim relationships, all publication-blocked",
+        "validate_names_provenance.py: curated core as immutable minimum with typed extensible additions",
+        "test_validate_names_provenance.py: 32 positive and adversarial graph tests, local run pending CI",
+        "14_GREEK_EDITION_PINNING_AND_CLAIM_QA_20261107.md: publisher-edition verification of 4 Greek original-language links",
+        "three locked attestation JSON contracts upgraded to single-edition URLs",
+        "data/names_claim_registry_v1.json: 14 provisional source-linked claims, 6 typed semantic edges",
+        "test_validate_names_provenance.py: 47 provenance tests, including 15 new mutation checks on this wave",
+        "15_CLAIM_SEMANTIC_ROLE_AUDIT_20261107.md: 15 claim-level scope and interpretation boundary review",
+        "data/names_ledger_v1.json: three Exodus first-person referents corrected from Moses to God and addressee=Moses",
+        "data/speech_intertext_contract_v1.json: independently locked copies corrected without changing original-language text",
+        "data/names_claim_registry_v1.json: CLM-EX3-EHYEH-DIVINE-REFERENT + required typed semantic link",
+        "test_validate_names_provenance.py: six new regressions for referent, addressee, speaker and claim edge",
+        "validate_names_ledger.py: independent referent/addressee semantic invariant checks both ledger and contract, even if both are modified identically",
+        "test_validate_names_ledger.py: 2 independent negative tests reject a corrupted copied source and a missing contract addressee",
+        "16_PROPHETIC_ROYAL_CITY_NAMING_SOURCE_AUDIT_20261107.md: independently checked MT of Jer 23:6, 33:16, Ezek48:35; distinguish king, Jerusalem and visionary city",
+        "source_access_register_v1.json: Liebermann 2023 Vetus Testamentum 73/1 62-81, first online 2022, accepted manuscript p8 partially examined",
+        "names_claim_registry_v1.json: 3 royal/city claimIds and 2 typed semantic relations, all Research HOLD",
+        "test_validate_names_provenance.py: anti-conflation, missing-claim and direct Hebrew source guards",
+        "test_validate_names_ledger.py: independent academic source rights, dates and critical-collation adversarial guards",
+        "17_TSUR_ROCK_REFERENTS_AND_PRONOUN_BOUNDARY_20261107.md: MT context for Deut32:4,18,30,31,37 and Ps18:32; separate divine, mixed and foreign Rock referents",
+        "data/names_claim_registry_v1.json: 3 Rock claim seeds and 2 semantic boundaries, all Research HOLD",
+        "validate_names_provenance.py: 5 per-attestation Rock referent controls, fail closed even with duplicated corrupted contract",
+        "test_validate_names_provenance.py: 9 Rock-context adversarial regressions, retaining 32:30 pronoun caution",
+        "18_IMMANUEL_HEBREW_GREEK_INTERTEXT_BOUNDARIES_20261107.md: Hebrew Isa7:14; Isa8:8/10; printed LXX Isa7:14 and SBLGNT Matt1:23 with 2sg/3pl Greek contrast",
+        "data/names_claim_registry_v1.json: five provisional Immanuel claims with four required relations MT/LXX/Matthew/Isa8",
+        "validate_names_provenance.py: exact written form and name/speech act controls for five attestation IDs, single-edition Matthew URL",
+        "test_validate_names_provenance.py: 14 Immanuel mutation checks including edition orthography, naming-verb ambiguity and Greek source URL",
+        "19_REVELATION_ALPHA_OMEGA_SPEAKER_EDITION_AUDIT_20261107.md: exact SBLGNT Rev1:8,21:5-7,22:12-16 speaker hierarchy and TR1550 printed longer Rev1:8",
+        "source_access_register_v1.json: registered two secondary excerpts NET Rev1:8 and Brian J Tabb Rev22 without promoting to manuscript collation",
+        "data/names_claim_registry_v1.json: four narrow Revelation claims, four required typed relations, explicit vs contextual speaker evidence levels, all HOLD",
+        "validate_names_provenance.py: six independent Revelation first-person speaker anchors and six exact digital SBLGNT URL locks",
+        "test_validate_names_provenance.py: 15 Revelation negative/positive tests incl speaker, edition, graph and source attribution",
+        "test_validate_names_ledger.py: three new secondary-source permissions/critical-collation mutation tests",
+        "20_LEXEME_REFERENT_PLACE_ALTAR_AUDIT_20261107.md: creator vs forbidden other gods; affirmative vs negated El; Gideon's vs Baal altars; Jacob's named place; Ex20 numbering",
+        "data/names_claim_registry_v1.json: six narrow blocked claims over eight previously unlinked observations, four fixed semantic contrasts",
+        "validate_names_provenance.py: independent exact contextual/morphological/numbering/named-object controls on 8 attestation IDs",
+        "test_validate_names_provenance.py: 14 additional adversarial tests, do not collapse MT verse numbering or named-object boundaries",
+        "Recounted 55 older missing locusId entries without inventing IDs or changing stable attestation/source/edition IDs",
+        "21_HEALER_SANCTIFIER_SHEPHERD_SPEAKER_AUDIT_20261107.md: original MT and SBLGNT distinction among divine healing speech, Jeremiah healing prayer, covenant sanctification and Johannine shepherd self-predication",
+        "data/names_claim_registry_v1.json: five source-linked provisional claims and 3 semantic relations for eight existing attestation IDs",
+        "validate_names_provenance.py: eight independent speech act/morphology/predicate/root controls and three extra exact pinned SBLGNT John10 URLs",
+        "test_validate_names_provenance.py: 17 additional positive/adversarial checks on speaker, suffix, biblical verse, root confusion and Greek predicate",
+        "22_JOHN_EGO_EIMI_DISCOURSE_WAVE_20261107.md: SBLGNT John6:20,18:5,18:6,18:8 with John9:9 human negative control, John8:58/LXX Ex3:14 distinction",
+        "data/names_claim_registry_v1.json: 4 provisional John6/18 speech act claims and 5 typed semantic boundary links, all RESEARCH_HOLD",
+        "validate_names_provenance.py: 4 independent speaker/target/scope controls + 4 exact edition-pinned SBLGNT John URLs",
+        "test_validate_names_provenance.py: 15 additional adversarial/positive tests against a falsely new second saying in 18:6, false lexical divinity and scene swaps",
+        "23_YIREH_NISSI_ANSWER_PLACE_MOUNTAIN_EDITION_CRUX_20261107.md: original MT Gen22:8,14 and MT/LXX Ex17:16 with attributed NET alternatives and explicit object naming in 22:14 / Ex17:15",
+        "data/names_claim_registry_v1.json: four provisional research-only claim IDs across four previously unlinked observations, four typed semantic relations",
+        "validate_names_provenance.py: four independently pinned exact verse/role/textual-state observation contracts plus source-specific NET/LXX attributed-source gates",
+        "test_validate_names_provenance.py: 19 added anti-conflation/edition/grammatical-source mutation tests; 161 provenance tests overall",
+        "24_EL_SHADDAI_SABAOTH_SPEECH_ORIGIN_BOUNDARIES_20261107.md: 8 MT loci in Gen17,28,35,Ex6,1Sam1,17,Isa6,Zech10; NET Ex6 commentary properly attributed, lexical/revelation controversy unresolved",
+        "data/names_claim_registry_v1.json: 7 new research-only claims, 6 typed relations, original stable attestation IDs preserved",
+        "validate_names_provenance.py: 8 independent script-level printed form/speaker/role/url locks plus separate guarded unresolved Shaddai etymology and NET source attribution",
+        "test_validate_names_provenance.py: 24 new adversarial and positive regressions",
+        "25_EL_ELYON_EL_QANNA_NARRATIVE_AND_NAME_CLAUSES_20261107.md: MT Gen14:18–22 Melchizedek priesthood/blessing/doxology vs Abram oath; Ex34:14 exact qanna shemo + el qanna vs Moses Deut4:24 el qanna descriptor",
+        "data/names_claim_registry_v1.json: 5 new research-only claims with 6 prior unlinked original Hebrew attestation IDs and 5 constrained relations",
+        "validate_names_provenance.py: 6 independently pinned MT surface/role/source guards, distinct qanna name evidence controls; NET qoneh and catalog-only Cargill editorial hypothesis never promoted to collated variants",
+        "test_validate_names_provenance.py: 22 additional positive/adversarial original-language speaker/name/secondary-source tests; 207 provenance total",
+        "26_DANIEL7_REVELATION1_21_DISCOURSE_AND_FORM_AUDIT_20261107.md: exact Daniel7 Aramaic original forms and narrator/figure distinctions, Rev1 greeting vs explicit God speech, Rev21:22 narrative Lord God/Lamb",
+        "data/names_claim_registry_v1.json: 5 narrow new claims covering 5 previously unlinked IDs, plus extend existing Rev1:8 explicit-speaker claim with its distinct extension attestation and 6 semantic relations",
+        "validate_names_provenance.py: 6 independent original-form/source/role guards, 3 exact pinned SBLGNT URLs, Judisch secondary grammar uncertainty and greeting-vs-direct-speech distinctions",
+        "test_validate_names_provenance.py: 26 new mutation and positive regressions, total 233 provenance tests",
+        "27_ADONAI_QEDOSH_YAH_SPEAKER_MORPHOLOGY_AUDIT_20261107.md: direct printed MT Ex34:9, Isa6:1, Ps8:2, Isa1:4,43:3,47:4, Ex15:2 and Ps68:5; Gen23 human adoni negative control",
+        "data/names_claim_registry_v1.json: 8 new research-held claims linking 8 old source/edition-stable attestationId, 7 typed semantic boundaries",
+        "validate_names_provenance.py: eight independent original-form and speaker guards including Genesis23 human honorific, NET Ps68 conjecture vs MT bet prefix/source",
+        "test_validate_names_provenance.py: 259 provenance tests; 26 new positive/adversarial checks",
+        "28_HAGAR_EL_OLAM_ISH9_10_AND_EX15_NAME_20261107.md: Gen16:13 Hagar explicitly calls YHWH's name vs v14 well; Gen21:33 Abraham invokes YHWH El Olam vs v31 place; Isa9:5 royal child title and printed publisher LXX vs unpinned Orthodox variant, Isa10:21 clear God referent; Ex15:3 sung YHWH His name",
+        "data/names_claim_registry_v1.json: 5 provisional source-bound claims and 6 typed relations covering 5 prior unlinked records",
+        "validate_names_provenance.py: 5 independent printed MT speech/name locks, El Roi seeing versus shepherd negative control, two digital Greek Isaiah9 source status locks, attributed Rashi/Radak source preservation",
+        "test_validate_names_provenance.py: 24 new positive/adversarial tests, total 283 provenance tests",
+        "29_NG02_FINAL_NINE_ATTESTATIONS_STRUCTURAL_ZERO_20261107.md: nine previously unlinked original-language observations now bounded in eight claims: Eloah Deut32:15, Elah Shmaya Dan2:18-19, living God Ps42, Father Isa63, light Ps27, faithfulness Deut32:4, mercy/grace Ex34:6, Christ's Resurrection/Life John11:25",
+        "data/names_claim_registry_v1.json: all 105 original 29+13 ledger attestations linked to at least one evidence-scoped research-only claim; 87 claims, 75 semantic relations, still BLOCKED",
+        "validate_names_provenance.py: fail-closed exact set equality of source attestations and claim links; nine independent source/speaker/text guards, one added SBLGNT URL pin; no extra manuscript claims",
+        "test_validate_names_provenance.py: 36 new positive and adversarial tests; 319 provenance tests; 500 expected total for exact-SHA GitHub CI",
+        "30_NG02_LOCUS_ID_COMPATIBILITY_20261107.md: audited 51 baseline + 4 extension absent inline locusId; 50 existing inline keys unchanged; consumer contract evidence and opt-in strategy",
+        "data/names_locus_compat_v1.json: all 105 original attestationId->resolvedLocusId pinned with verse/source/edition, 50 preserved and 55 sidecar-only stable legacy aliases",
+        "validate_names_locus_compat.py: standalone source/edition/parent/verse and original-inline identity validation with strict opt-in resolver, fail-closed exact 105 coverage, zero conflicts",
+        "test_validate_names_locus_compat.py: 24 isolated mutation regressions for silent alias migration, duplicate/missing/unknown IDs, incorrect permissions and source metadata",
+        ".github/workflows/names-of-god-ledger-integrity.yml: two CI checks for new sidecar validator and its adversarial tests",
+        "31_NG02_INTERNAL_CONSUMER_WITNESS_EXTERNAL_BLOCK_20261107.md: 4 independently locked internal contract groups 16+12+14+8 = 50 exactly pin all legacy inline locusIds; fifth generic group 22 without locator source matches sidecar-only witnesses",
+        "data/names_consumer_compat_v1.json: machine-readable Research consumer evidence, three selected external GitHub default-branch read-only searches nonproof, Product V2 blocked",
+        "validate_names_consumers.py: true original snapshot roundtrip with verse/surface/edition/sourceUrl/rights/critical/status crosswalk and fail-closed external upgrade guard",
+        "test_validate_names_consumers.py: 25 original consumer mutation and approval negative tests, included in existing GitHub workflow",
+        "NG-02 pinned source-control entrypoint audit: 3 exact repository SHAs and 8 original source blob SHAs (GB/Poet/Pages), still no runtime witness; 4 more negative snapshot integrity tests",
+        "GitHub PR #379 SHA ff6199a7c02a3057cadb569afdc2d4e1bb9e4fcc: 6/6 workflow runs SUCCESS (Names ledger, Research root, Repository authority, Reformation, Atonement, Security), independent crosswalk and consumer contract regressions PASS; closure is Research-only graph not Product."
+      ],
+      "verification": "RESEARCH_GRAPH_ONLY_DONE_ON_ff6199a7c02a3057cadb569afdc2d4e1bb9e4fcc_ALL_SIX_CI_SUCCESS; 105/105 source-edition-claim linked, 87 provisional blocked claims, 75 typed relations; 50 legacy inline IDs pinned, 55 V1 absent inline preserved, opt-in sidecar 105/105, independent locked consumer snapshots 50 inline + 22 general, 29 consumer mutation tests. NO scholarly/rights/critical manuscript approval, NO external Arena runtime/V2 compatibility, NO Product publication.",
+      "closureAt": "2026-11-08",
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-03",
+      "priority": "P0",
+      "title": "Матрица устаревших формулировок и supersession для глав 01–10",
+      "status": "DONE",
+      "dependsOn": [
+        "NG-02"
+      ],
+      "acceptance": [
+        "Каждая обнаруженная старая недостоверная/устаревшая формулировка явно ссылается на заменяющее доказательство; в оглавлении только актуальные authority, старые досье не удалены"
+      ],
+      "evidence": [
+        "01_NAMES_LEXICAL_SOURCE_AND_ARENA_AUDIT.md: formerly claimed Rahlfs-Hanhart PDF status explicitly SUPERSEDED by STEP digital LXX, not manuscript collation",
+        "02_YHWH_EHYEH_CRITICAL_DOSSIER.md: original language, contemporary interpretation and historical etymology explicitly separated",
+        "03_PATRIARCHAL_EL_TITLES_AND_REFERENTS.md: former attestation/CI next action marked historical and structurally completed by NG02",
+        "04_REVELATION_GREEK_AND_DANIEL_ARAMAIC.md: exact printed edition and speakers bounded by dossiers 19/26, manuscripts HOLD",
+        "05_PROPHETIC_NAMES_ROYAL_CITY_AND_IMMANUEL.md: king/Jerusalem/city bounded by dossiers 16/18 and Old Greek HOLD",
+        "06_HOSTS_JEALOUS_ROCK_HOLY_ADONAI_ELOHIM.md: current contextual referent cautions and later 17/24/25/27 evidence",
+        "07_MEMORIAL_NAMES_DIVINE_ACTIONS_AND_SHEPHERD.md: place/altar/predication constrained by dossiers 20/21/23 and Hagar reader contrast",
+        "08_ABBA_EGO_EIMI_VOICE_AND_INTERTEXT.md: LXX full Greek formula and John different, dossier 22, Barr source restrictions",
+        "09_EXTENSION_FORMS_LANGUAGE_AND_REFERENTS.md: historical status of 11 newly detailed; all 13 extension 105/105 research claims from dossier 29",
+        "10_YHWH_AND_EL_PERSONAL_NAME_VS_GENERIC_DESIGNATION.md: historical lack of independent attestation objects superseded by 8 additions",
+        "11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md §0a: 10-row CURRENT/HISTORICAL/SUPERSEDED/HOLD matrix and exact original dossier evidence",
+        "00_README_AND_NAVIGATION.md: current status and historical separation",
+        "data/names_research_workplan_v1.json: machine task closure, unchanged scholarly/rights/Product HOLD"
+      ],
+      "verification": "NG03_EDITORIAL_SUPERSESSION_10_OF_10_DOSSIERS_UPDATED_2026_11_08; dated source-specific CURRENT/HISTORICAL/SUPERSEDED/HOLD blocks and 3 in-place stale-claim fixes in dossier 01,03,10; crosslinks master/navigation; original 105 research-only attestation links and 48 source records unchanged; original 55 absent inline locusIds unchanged. New exact-commit CI to be verified separately; NOT independent scholarly manuscript/rights/Product approval.",
+      "closureAt": "2026-11-08",
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-04",
+      "priority": "P0",
+      "title": "Критические аппараты Исх. 3:12–15; 6:2–3; 17:15–16 и роль qere",
+      "status": "BLOCKED_SOURCE",
+      "dependsOn": [
+        "NG-02"
+      ],
+      "acceptance": [
+        "Для Исх. 3:12–15, 6:2–3, 17:15–16 получены и прочитаны необходимые оригинальные страницы BHS и Göttingen Exodus, с сиглами, вариантами MT/LXX, qere и conjecture, отдельными правами и минимум 3 независимыми локусными проверками. BHQ Exodus у издателя IN_PREPARATION на момент проверки; не превращать ещё не опубликованный том в обязательную фиктивную «прочитанную» страницу и не заменять им BHS."
+      ],
+      "evidence": [
+        "02_YHWH_EHYEH_CRITICAL_DOSSIER.md",
+        "07_MEMORIAL_NAMES_DIVINE_ACTIONS_AND_SHEPHERD.md",
+        "SRC-TMSJ-VALDIZAN-EX3-2024",
+        "13_TMSJ_2024_DIVINE_NAME_AND_TRANSLATION_SCHOLARLY_REVIEW.md",
+        "Publishers verified BHQ Exodus Peter Schwagmeier IN_PREPARATION not available Nov 2026; BHS standard 1997 with critical apparatus EXISTS but exact Exodus3/6 pages not read https://www.die-bibel.de/en/home/current-projects/biblia-hebraica-quinta-bhq",
+        "Göttingen Exodus Wevers Quast 1991 critical edition exists, NETS UPenn PDF English translation based on it NOT its critical apparatus https://septuaginta.uni-goettingen.de/publications/septuaginta/",
+        "23_YIREH_NISSI_ANSWER_PLACE_MOUNTAIN_EDITION_CRUX_20261107.md § Волна 30: secondary Aleppo word-division note; original Exodus17:16 codex folio missing per official Yad Ben-Zvi",
+        "23_YIREH_NISSI_ANSWER_PLACE_MOUNTAIN_EDITION_CRUX_20261107.md § Wave31: original printed Leshonenu 50 (1986) p165 #137 and p191 note #137 image checked; prior Aleppo codex target manuscript missing",
+        "SRC-ZER-SAPHIR-MEOROT-NATAN-1986-EX17-137",
+        "SRC-OFER-BREUER-MASORAH-2008-EX17-16",
+        "SRC-PENKOWER-TEXTUS9-1981-SAPHIR-HALEVANON-1863",
+        "23_YIREH_NISSI_ANSWER_PLACE_MOUNTAIN_EDITION_CRUX_20261107.md § Wave33 Penkower p78 n63, original 1863 newspaper page NOT independently read",
+        "SRC-BREUER-MEGADIM10-1990-SITHON-SAPIR-REPORT",
+        "23_YIREH_NISSI_ANSWER_PLACE_MOUNTAIN_EDITION_CRUX_20261107.md § Wave34 printed 1986/1990 respondent correction",
+        "SRC-GOSHEN-GOTTSTEIN-TEXTUS2-1962-JTS729",
+        "23_YIREH_NISSI_ANSWER_PLACE_MOUNTAIN_EDITION_CRUX_20261107.md § Wave35 Goshen-Gottstein 1962 and Zer 1986 unresolved authorship",
+        "SRC-SAPIR-EVEN-SAPIR-1866-CH6-PRIMARY-AUTHOR",
+        "23_YIREH_NISSI_ANSWER_PLACE_MOUNTAIN_EDITION_CRUX_20261107.md § Wave36 Saphir direct author statement in 1989 digital transcription",
+        "Wave42 historical PRINT: source SRC-HALEVANON-18630611-ISSUE5-EX17-16-ORIGINAL and dossier23; 11 June 1863 issue 5 print p32 reads כס יה חדא מלה, direct source printed evidence, NOT extant Aleppo codex photograph, not JTS729 autograph, not manuscript critical apparatus. NG04 stays BLOCKED_SOURCE.",
+        "Wave46: official NLI manuscript NNL_ALEPH990001022670205171 verified: JTS Ms.1154 = catalogue Lutzki L729, 8 folios, 13 on-page IIIF image IDs; last-image info.json/JPEG HTTP 200, document manifest 403; manuscript text not inspected, rights gate unchanged.",
+        "Wave47 original 19C copied manuscript photo directly viewed: SRC-JTS-MS1154-L729-MEOROT-NATAN-1855-EX17-16-MICROFILM; NLI IIIF FL28558023 frame7 left page 4a, Ex17:16 question שתי מלות / reply לא כן ... אלא חדא מלה, 4544x6455 SHA256=243a38b1b9201e3648bdd356558bcef7fa412fc98d5112fca177904153d17019. NOT ancient Aleppo codex, not scholarly/rights release.",
+        "Wave48 selected visual marginal evidence, JTS FL28558023: stable main Q&A but technical shva/mappiq note not fully transcribed from ink. General Ofer2002 Textus21:209–233 publisher ABSTRACT says Aleppo appended composite-word Masorah list vs codex text discrepant in >=4 cases; Exodus17:16 membership in those cases NOT demonstrated. Both source access guards block overclaim; 111 sources /304 core tests.",
+        "Wave49 Ofer2003 Megadim37 full author HTML footnotes23/24/26 attribute Yeivin print p82 in contexts Psalm90:15 / Isaiah54:9 (NOT Ex17:16 proof). Source SRC-OFER-MEGADIM37-2003-YEIVIN82-COMPOSITE-WORDS. Original Yeivin82 and Breuer260–261 not visually accessed; NLI Penkower-annotated archive items ARC.4*2203 01 07 (Yeivin) and ARC.4*2203 01 06 (Breuer) not substitute for original pages.",
+        "Wave50 separate historic halakhic reception: SRC-PESACHIM117A-COMPOSITE-KESYAH-AMORAIC-EDITED-DIGITAL (R Yohanan/Rav vs Rabbah), SRC-RASHBATZ-TASHBETZ-I177-KESYAH-RESPONSUM (own OTHER scroll two lines, contradictory Masora six/five, samekh-sheva not probative), SRC-ARUCH-HASHULCHAN-YD27524-KESYAH-TWO-WORD-DECISION (two-word norm, one-line recommended). Digital edited text directly read, historic original 1738/1741/1891 print folios NOT visually inspected, none Aleppo Exodus folio; new three mutation tests. No change to NG04 BLOCKED_SOURCE.",
+        "Wave54: original Ofer 2002 Textus21 25-page PDF served officially at https://bibleproject.huji.ac.il/sites/default/files/he_bible_project/files/y._ofer.pdf, full English text extracted, note32 Ex17:16 author ONE word based on Sappir/Zer1986 #137, Masorete 1 list(b) concordant with compared MS, NOT four discrepancies. Hebrew glyph PDF extraction unsafe, no visually collated folio or lost ancient Aleppo page, Yeivin82/Breuer260–261 unread, rights/Product HOLD. Source SRC-OFER-TEXTUS21-2002-COMPOSITE-WORDS-MASORAH.",
+        "W59 2026-11-12: SRC-OFER-TEXTUS26-2016-ALEPPO-EX8-FRAGMENT, original *Textus* 26:173-198 official full PDF (https://bibleproject.huji.ac.il/sites/default/files/he_bible_project/files/a_fragment_of_the_aleppo_codex_exodus_8.pdf), selected print pp173/179-182 and photo figs3-7 directly inspected. Authentic Exodus8 fragment partly corroborates two historical Saphir/Zer vowel Q&A (frog-name partly ambiguous; harawahah supports), DOES NOT include lost Exodus17:16, does NOT satisfy Yeivin82/Breuer260-261 page autopsy or image rights. Ex17 evidence HOLD unchanged.",
+        "W60 2026-11-12: source SRC-WEVERS-GOTTINGEN-EXODUS-1991-AUTHOR-INTRO-EN2006: directly read Wevers 1991 Göttingen Exodus editor's online English introduction translated by editor 2006, C§1/3/4/6, D. Apparatus I vs II / α' σ' θ' οἱ γ' sigla / compared Field1875, NOT actual verse Ex17:16 published critical apparatus or original physical manuscript collation. New method source and 11 false-promotion mutations. Still NG04 BLOCKED_SOURCE.",
+        "W61 2026-11-12: actual ORIGINAL Field1875 volI Exodus17:16 printed p111 visually read via BSB IIIF canvas 00221 (https://api.digitale-sammlungen.de/iiif/image/v2/bsb11340409_00221/full/1400,/0/default.jpg) including Hebrew כס יה, Latin throne vs banner (נס) and printed Syrohexaplaric/Greek editorial variants, n17 Nescio an Symmachi sit. 920-frame real complete BSB copy vs obsolete 207-page incomplete PDF. Original printed critical compilation NOT independent original Greek codex or lost Keter folio. SOURCE SRC-FIELD-HEXAPLA-1875-EX17-16-PRINT-P111-BSB. Still NG04 BLOCKED_SOURCE, no critical collation or rights.",
+        "W62 2026-11-12: directly visualized Kittel BHK SECOND (not third) original 1909 printed Ex17:16 p99, PDF index114, original lower print apparatus for כס יה / כסיה and Greek κρυφαίᾳ with editorial proposals נס; correct 1909 date from title page despite bad 1937 filename. Direct separate Deutsche Bibelgesellschaft official BHS reduced text Ex17:16 prints כֵּס יָהּ two words but NO critical apparatus. New SRC-KITTEL-BHK2-1909-EX17-16-P99-ORIGINAL-APP and SRC-DBG-BHS-EX17-16-PUBLISHER-TEXT, no independent ancient manuscript collation/rights. NG04 remains BLOCKED_SOURCE."
+      ],
+      "verification": "NOT_APPLICABLE_UNTIL_DONE",
+      "closureAt": null,
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-05",
+      "priority": "P0",
+      "title": "История реконструкции произношения יהוה / традиция Adonai/Elohim",
+      "status": "OPEN",
+      "dependsOn": [
+        "NG-06",
+        "NG-07",
+        "NG-08"
+      ],
+      "acceptance": [
+        "Отдельная таблица консонантного текста, MT точек, qere, теофорных имен, греческих транскрипций и авторских реконструкций; проведено сравнение минимум 3 независимых источников, контраргументы и неопределённость описаны"
+      ],
+      "evidence": [
+        "02_YHWH_EHYEH_CRITICAL_DOSSIER.md",
+        "12_TMS_BARRICK_CHOU_SOURCE_REVIEW.md",
+        "SRC-TMSJ-VALDIZAN-EX3-2024",
+        "SRC-TMSJ-VALDIZAN-ACTS2-2024",
+        "13_TMSJ_2024_DIVINE_NAME_AND_TRANSLATION_SCHOLARLY_REVIEW.md",
+        "SRC-CLEMENT-STROMATA-5-6-34-STAHLIN-GREEK",
+        "SRC-DEISSMANN-BIBLE-STUDIES-1901-TETRAGRAM-GREEK",
+        "SRC-ROMER-COLLEGE-DE-FRANCE-YHWH-2011",
+        "ИМЕНА БОГА/02_YHWH_EHYEH_CRITICAL_DOSSIER.md §4 NG05 patristic Greek 2026-11-09",
+        "SRC-THEODORET-EXODUM-15-PG80-243-GREEK",
+        "SRC-THEODORET-COMPENDIUM-V3-PG83-460-GREEK",
+        "SRC-KINZIG-PATRISTIC-TETRAGRAM-2008-P226227"
+      ],
+      "verification": "NOT_APPLICABLE_UNTIL_DONE",
+      "closureAt": null,
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-06",
+      "priority": "P0",
+      "title": "Просмотреть Joe Zhakevich, God's Many Names, обе видеолекции и слайды",
+      "status": "BLOCKED_ACCESS",
+      "dependsOn": [
+        "NG-01"
+      ],
+      "acceptance": [
+        "Реально просмотрены части 1 и 2, проверены слайды; цитаты сведены в журнал таймкодов, форма и стихи сверены с MT, найденные неточности и полезные тезисы отделены"
+      ],
+      "evidence": [
+        "https://www.foiequip.org/courses/gods-many-names",
+        "12_TMS_BARRICK_CHOU_SOURCE_REVIEW.md"
+      ],
+      "verification": "NOT_APPLICABLE_UNTIL_DONE",
+      "closureAt": null,
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-07",
+      "priority": "P0",
+      "title": "Изучить Chou + Joe Zhakevich, Why LSB Translates Yahweh",
+      "status": "IN_PROGRESS",
+      "dependsOn": [
+        "NG-01"
+      ],
+      "acceptance": [
+        "Оригинальное видео просмотрено полностью, таймкоды сверены с аудио, тезисы 05:18–11:40 проверены по критическим и грамматическим источникам; редакторский вывод не выдаёт реконструкцию за бесспорную фонетическую запись"
+      ],
+      "evidence": [
+        "https://www.youtube.com/watch?v=2hFKPHZL5qI",
+        "12_TMS_BARRICK_CHOU_SOURCE_REVIEW.md"
+      ],
+      "verification": "NOT_APPLICABLE_UNTIL_DONE",
+      "closureAt": null,
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-08",
+      "priority": "P0",
+      "title": "Проверить Barrick/Busenitz grammar p25 и Barrick Hebrew Exegesis I p64",
+      "status": "IN_PROGRESS",
+      "dependsOn": [
+        "NG-01"
+      ],
+      "acceptance": [
+        "Проверены оригинальные страницы PDF и контекст учебного материала, выписаны все проверяемые утверждения и указанные ими первичные ссылки на древних авторов; проверена корректность пересказа и ограничения лицензии"
+      ],
+      "evidence": [
+        "https://drbarrick.org/wp-content/uploads/2017/01/B_B_Hebrew_Grammar_2005.pdf",
+        "https://drbarrick.org/files/studynotes/Other/Heb%20Exeg%20I_Study%20Notes_YouTube.pdf",
+        "SRC-TMSJ-BARRICK-TRANSLATION-2024",
+        "13_TMSJ_2024_DIVINE_NAME_AND_TRANSLATION_SCHOLARLY_REVIEW.md"
+      ],
+      "verification": "NOT_APPLICABLE_UNTIL_DONE",
+      "closureAt": null,
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-09",
+      "priority": "P1",
+      "title": "Разобрать беседы Abner Chou/LSB о переводах, kyrios/YHWH, именах и сносках",
+      "status": "IN_PROGRESS",
+      "dependsOn": [
+        "NG-01"
+      ],
+      "acceptance": [
+        "Оригинальная видеозапись roundtable и лекционные материалы просмотрены, фрагмент 38:48–44:35 сверён со звуком; решения LSB отделены от универсальных правил и прав на перепечатку LSB"
+      ],
+      "evidence": [
+        "https://www.youtube.com/watch?v=0sjpFs3U6jI",
+        "https://lsbible.org/faqs/",
+        "https://info.tms.edu/lsb",
+        "SRC-TMSJ-CHOU-TRANSLATION-2024",
+        "13_TMSJ_2024_DIVINE_NAME_AND_TRANSLATION_SCHOLARLY_REVIEW.md"
+      ],
+      "verification": "NOT_APPLICABLE_UNTIL_DONE",
+      "closureAt": null,
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-10",
+      "priority": "P1",
+      "title": "Сопоставить критические тексты Ис. 7/9, Иер. 23/33, Иез. 48, Дан. 7",
+      "status": "BLOCKED_SOURCE",
+      "dependsOn": [
+        "NG-02"
+      ],
+      "acceptance": [
+        "Есть проверенные редакции, страницы аппаратов, варианты, референты, нумерация и список неразрешённых текстологических вопросов, а не только цифровые перепечатки"
+      ],
+      "evidence": [
+        "05_PROPHETIC_NAMES_ROYAL_CITY_AND_IMMANUEL.md",
+        "04_REVELATION_GREEK_AND_DANIEL_ARAMAIC.md",
+        "SRC-TMSJ-CHOU-DANIEL-2024",
+        "13_TMSJ_2024_DIVINE_NAME_AND_TRANSLATION_SCHOLARLY_REVIEW.md"
+      ],
+      "verification": "NOT_APPLICABLE_UNTIL_DONE",
+      "closureAt": null,
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-11",
+      "priority": "P1",
+      "title": "Проверить ECM VI Revelation / NA28 / THGNT в титулатуре Откровения и Ин. 8",
+      "status": "BLOCKED_SOURCE",
+      "dependsOn": [
+        "NG-02"
+      ],
+      "acceptance": [
+        "Три минимум спорных локуса Откровения сведены с ECM VI и явными говорящими, разночтения грамотно классифицированы, Ин. 8:58/9:9 различены без механических цитат"
+      ],
+      "evidence": [
+        "04_REVELATION_GREEK_AND_DANIEL_ARAMAIC.md",
+        "08_ABBA_EGO_EIMI_VOICE_AND_INTERTEXT.md",
+        "SRC-TMSJ-VALDIZAN-ACTS2-2024",
+        "13_TMSJ_2024_DIVINE_NAME_AND_TRANSLATION_SCHOLARLY_REVIEW.md"
+      ],
+      "verification": "NOT_APPLICABLE_UNTIL_DONE",
+      "closureAt": null,
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-12",
+      "priority": "P1",
+      "title": "Этимологии Шаддай, Элохим, Эль, Элоах и Sabaoth; альтернативы BDB/HALOT",
+      "status": "BLOCKED_SOURCE",
+      "dependsOn": [
+        "NG-02"
+      ],
+      "acceptance": [
+        "По каждой спорной этимологии есть ≥2 независимых академических источника, грамматика, атрибуция авторской гипотезы, критический статус и русский редакторский вердикт"
+      ],
+      "evidence": [
+        "03_PATRIARCHAL_EL_TITLES_AND_REFERENTS.md",
+        "06_HOSTS_JEALOUS_ROCK_HOLY_ADONAI_ELOHIM.md",
+        "09_EXTENSION_FORMS_LANGUAGE_AND_REFERENTS.md",
+        "reader/CH-PILOT-03_EL_ELOHIM_SHADDAI.md",
+        "03_PATRIARCHAL_EL_TITLES_AND_REFERENTS.md §3.3 NG12_20261108_SHADDAY_SOURCE_COMPARISON",
+        "BDB 1906 H7706 digital: https://biblehub.com/bdb/7706.htm",
+        "Wilson-Wright 2019 published article UT Austin PDF pp149-155,160: https://sites.utexas.edu/scripts/files/2020/10/2019-AWW-The-Helpful-God.pdf",
+        "Krogevoll 2025 publisher sample 26 PDF pages; printed pp19-25 https://www.vandenhoeck-ruprecht-verlage.com/media/pdf/f2/66/7f/9783647502274_sample.pdf",
+        "Dewrell 2024 VT 74/2 297-302 abstract https://doi.org/10.1163/15685330-bja10132",
+        "Angelini 2022 HBAI 11/3 235-249 abstract https://www.mohrsiebeck.com/en/article/divine-names-from-the-hebrew-bible-to-the-septuagint-methodological-remarks-and-a-case-study-101628hebai-2022-0032/",
+        "Kruger 2023 In die Skriflig 57/1 available HTML https://www.scielo.org.za/scielo.php?pid=S2305-08532023000100037&script=sci_arttext",
+        "06_HOSTS_JEALOUS_ROCK_HOLY_ADONAI_ELOHIM.md §2 NG-12 Sabaoth 2026-11-08 source-boundary",
+        "Brown Driver Briggs 1906 H6635 digital expanded entry https://www.studylight.org/lexicons/eng/hebrew/6635.html",
+        "Șopterean 2024 ROOTS 12/2 56-68 accessible full journal PDF selected sections read printed pp56/59/63 images https://napocaroots.reviste.ubbcluj.ro/index.php/roots/article/download/103/129/462",
+        "Máire Byrne 2006 Maynooth PhD selected thesis sections ch2 pp48-55 and visually printed p51 https://mural.maynoothuniversity.ie/id/eprint/5139/1/Marie_Byrne_20140624150650.pdf",
+        "Deutsche Bibelgesellschaft LXX Rahlfs Hanhart 2006 Isaiah6:3 kyrios sabaoth official HTML https://www.die-bibel.de/bibel/LXX/ISA.6",
+        "SBLGNT 2010 Romans9:29 and James5:4 transliteration Sabaoth context; Isaiah1:9 MT cited by Paul",
+        "09_EXTENSION_FORMS_LANGUAGE_AND_REFERENTS.md §3 NG-12 2026-11-08 El/Eloah/Elohim comparative lexicography and contexts",
+        "Brown Driver Briggs 1906 full digital H410 https://biblehub.com/bdb/410.htm H430 https://biblehub.com/bdb/430.htm H433 https://biblehub.com/bdb/433.htm",
+        "Benjamin D Suchard 2025 Journal for the Study of the Old Testament 49/4 pp460-474 DOI 10.1177/03090892251332286 full publisher HTML read",
+        "Encyclopaedia Judaica God Names of sections El/Eloah/Elohim source reproduction https://jewishvirtuallibrary.org/jsource/judaica/ejud_0002_0007_0_07449.html",
+        "Bernard Gosse Old Testament Essays 36/3 2023 pp635-648 online Jan2024 DOI 10.17159/2312-3621/2023/v36n3a6 PUBLISHER_ABSTRACT_ONLY",
+        "MT Deut32:15-18 Gen1:1 Job3:4 Dan11:37-39 Hebrew and Dan2:18-19 Aramaic Mechon-Mamre",
+        "03_PATRIARCHAL_EL_TITLES_AND_REFERENTS.md §3.3 critical sources acquisition 20261108 edition-specific verified locators and Deir Alla source read scopes",
+        "BHQ publisher official catalog Genesis2016 Deuteronomy2007 Job2024 Ruth2004 and Exodus not yet published https://www.die-bibel.de/en/home/current-projects/biblia-hebraica-quinta-bhq",
+        "BHS standard 1997 with actual apparatus vs reader edition without apparatus https://www.die-bibel.de/en/biblia-hebraica-stuttgartensia-bhs-publications",
+        "Göttingen Septuaginta official Wevers Quast Exodus II/1 1991 and Ziegler Isaias XIV 1983 https://septuaginta.uni-goettingen.de/publications/septuaginta/",
+        "NETS Exodus full pdf UPenn introduction printed p43 translated from Wevers critical Greek edition not equivalent to critical apparatus https://ccat.sas.upenn.edu/nets/edition/02-exod-nets.pdf",
+        "HALOT university subscription description https://lib.biu.ac.il/en/node/1710",
+        "Dead Sea Scrolls Electronic Library Biblical Texts publisher transcription/photo access https://scholarlyeditions.brill.com/dsbo/",
+        "Deir Alla editio princeps Hoftijzer van der Kooij 1976 from source Caquot Lemaire 1977 pp189-208 https://www.persee.fr/doc/syria_0039-7946_1977_num_54_3_6603",
+        "Lemaire 1985 Deir Alla epigraphy pp270-285 https://www.persee.fr/doc/crai_0065-0536_1985_num_129_2_14268",
+        "Wilson Wright 2019 Vetus Testamentum 69 149-166 p153 visually verified Deir Alla Combination I lines5-6 plural shdyn contrasted lhn https://sites.utexas.edu/scripts/files/2020/10/2019-AWW-The-Helpful-God.pdf",
+        "Anna Angelini 2021 Brill OA L imaginaire du demoniaque dans la Septante selective searchable original text excerpt but PDF page screenshot 403 ISBN 9789004468474",
+        "Emile Puech Balaam and Deir Alla Brill published PDF preview first 2 pages text only screenshot 403 https://brill.com/previewpdf/book/edcoll/9789047433132/Bej.9789004165649.i-329_003.xml",
+        "Jo Ann Hackett The Balaam Text from Deir 'Alla Scholars Press 1984 selected pp21–25,29,39–41,85–89 user-upload OCR not original plate https://www.scribd.com/document/1047797666/Hackett-The-Balaam-Text-from-Deir-Alla",
+        "Bryan Elliff Robert Coleman Semitica65 (2023) pp33–52 DOI 10.2143/SE.65.0.3293110 publisher abstract https://poj.peeters-leuven.be/content.php?id=3293110&journal_code=SE&url=article plus unverified user OCR of pp33–37",
+        "Original published 1991 Brill symposium from NYU scan PDF: Hoftijzer pp121–122,135–137; Hackett pp76–77,80–81; Weippert pp169–170,176; OCR text read, PDF screenshots fail 48MB limit, not original 1976 photoplates https://mc.dlib.nyu.edu/files/books/brill_awdl000034/brill_awdl000034_lo.pdf",
+        "Direct original Erhard Blum de Gruyter chapter, Metatexte 2016 pp24–26,35–36,44n94,n97,45: author-only Combination A, context-inferred 'Hohe/Erhabene' for šdyn, attributed messengers vs council, solar goddess/cloud-blocked sky-sluice variant; image screenshot 404 no 1976 pp173/photo plates/rights release. https://uplopen.com/books/9325/files/12c5a59d-f2d2-4a93-91f0-2941f88ea05f.pdf",
+        "Original SBL 2015 Pat-El/Wilson-Wright pp13–24 four academic language positions, authors argue Canaanite based on relative 'sh and G absolute/construct infinitives, screenshot PDF 403 OCR text only https://www.sbl-site.org/wp-content/uploads/2025/01/9780884140801_OA.pdf",
+        "1976 acquisition target refined by secondary Way 2011 p63n186 and UCLA Donnelly-Lewis 2023 fig8.3 p380: 1976 Plate3 and Plate29 Combination I fragment d line12, not proven same letters as sdyn; original 1976 173–178, 179–182 and plate scans not read https://escholarship.org/content/qt983511cd/qt983511cd_noSplash_c2f3faddffc6ebaf53da67313b0619b0.pdf",
+        "Publisher-authored 1976 original 'List of Plates' Brill front-2.pdf text inspected: PL1=I(a) colour, PL2=I(c) colour, PL3=I(d) colour, PL9+10 fragment details, PL27+28 sign detail drawings, PL29 explicitly EDITORIAL DRAWING of combination i not photograph; screenshot 403, body p173/actual plates NOT seen https://brill.com/edcollchap/book/9789004670327/front-2.pdf",
+        "DANS original Tell Deir Alla 1960-2009 excavation Slides catalog (B2FIND verified) DOI:10.17026/dans-xs5-kpqn, metadata says CC BY4; Leiden University 2018 confirms negatives/colour slides, distinct Paper Archive DOI:10.17026/dans-x4n-wkhu. DANS file listing blocked Anubis, 1967 Balaam file IDs/image rights/material NOT inspected; only archival acquisition route, no 1976 plate or p173 autopsy https://doi.org/10.17026/dans-xs5-kpqn",
+        "Direct official DANS Dataverse read-only JSON metadata files for 3 2026 published datasets: Slides DOI 10.17026/dans-xs5-kpqn 2560 names/folders 1978-2004, Negatives DOI 10.17026/dans-zfm-9dx2 4012 names earliest 1976, Paper DOI 10.17026/dans-x4n-wkhu 1389 earliest 1976; only filename 1967 in 1996 PDF ID 3959575. No file content viewed. Historical metadata says original 1960-67 archive at Leiden University planned transfer to RMO (not verified complete). RMO site separately verifies artifact-collection transfer 2011, not photo negatives. Relevant archival contact m.bulsink@rmo.nl. NO original p173/plates or independent palaeographic autopsy.",
+        "ORIGINAL PRIMARY PUBLISHER 1976 editorial erratum: The Biblical Archaeologist 39/3 (1 Sept 1976), printed p87 lower right, direct first-page image https://www.journals.uchicago.edu/cms/10.2307/3209398/asset/524cb216-88da-45e3-8868-530e9fa3dc8b/assets/3209398.fp.png DOI:10.2307/3209398. Erratum corrects editorial March 1976 headline 6th-century to 8th-7th-century, earlier later date attributed to Franken 1967, initial title 'The Decipherment of the Deir-'Alla Texts' via Holladay; confirms editorial embellishment. Full March 1976 article 39/1 pp11-17 DOI:10.2307/3209412 is STILL not read, photographs and Brill 1976 epigraphy uncollated, copyrighted scan not republished.",
+        "Primary source found: Jacob Hoftijzer, De Aramese teksten uit Deir 'Alla, Phoenix 22 (1976), 84–91; full 1976 journal PDF https://www.exorientelux.nl/download/phoenix22.pdf; printed p85 fig41 in-situ image caption, printed p88 fig42 IR photograph of Combination I taken in Jerusalem just after 1967 discovery, printed p90 author-conjectured Dutch Shadday goddesses/gods rendering; TEXT/OCR verified only, actual images screenshot 503, actual ancient graphemes/rights still HOLD.",
+        "Original Sidestone Steiner/Wagemakers 2019 Digging up the Bible pp63–65 film procurement, pp121–122 publisher transcription of Franken 1967 Apr1/Apr3 diary, p122 fig4.40 original just-lifted plaster image caption. April3 appointment with the director of Palestine Archaeological Museum (Rockefeller) for infrared photos/storage NOT proven 1967 developed-image or 2026 archival custody. https://www.sidestone.com/openaccess/9789088908736.pdf",
+        "Earliest 1967 photographic notice locator: H J Franken, Texts from the Persian Period from Tell Deir Alla, Vetus Testamentum 17/4 (1967) 480–481 DOI 10.1163/156853367X00187; FIRST PHOTO is reported in the already-registered original André Lemaire CRAI1985 p271, not directly autopsied. https://doi.org/10.1163/156853367X00187",
+        "Israel Antiquities Authority archive current information https://archives.iaa.org.il/ShowFolder.aspx?id=33 (Mandate 1919–1948 collections; NOT demonstration it contains 1967 negatives; possible research inquiry through iaa.archive.r@israntique.org.il). No email sent.",
+        "JSTOR official 1967 first paper https://www.jstor.org/stable/1516696; read-only TinyFish browser showed printed p480 only (English preliminary note, no inscription photo). Printed p481 NOT viewed: account/library login required. The alleged earliest photograph still only Lemaire 1985 retrospective testimony; do not infer absence/presence or IR character of p481. JSTOR issue TOC identifies following Pierre Grelot note begins p481.",
+        "09 Nov 2026 direct publisher visual access: Sidestone Steiner/Wagemakers 2019 printed p143 = bookviewer index145; ACTUAL Fig5.16 photographic pixels show Combination I montage, labels i a/i b/i c/i d and line numbers, Fig5.17 pixels show above-line correction. https://www.sidestone.com/bookviewer/9789088908736. 2019 reproduction only: NOT original 1976 Brill plates, NOT independent shdyn glyph collation, NOT 1967 infrared photo match, NOT rights permission.",
+        "W58 2026-11-12: directly read MT Isa13:6 (https://mechon-mamre.org/p/pt/pt1013.htm), Joel1:15 and 1:10 (https://mechon-mamre.org/p/pt/pt1401.htm): שֹׁד/שַׁדַּי wordplay, שֻׁדַּד in Joel1:10, NOT established historical etymology. Dewrell2024 EBSCO Humanities Source full text indexed https://iris.sena.edu.co/EdsRecord/hus,176933521 but login wall; original article pp297–302 NOT read, FULL_ARGUMENT_HOLD; no SRC/ATT/CLM, critical collation or release."
+      ],
+      "verification": "NOT_APPLICABLE_UNTIL_DONE",
+      "closureAt": null,
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-13",
+      "priority": "P1",
+      "title": "Независимая богословская и филологическая рецензия всех claim-пакетов",
+      "status": "BLOCKED_DEPENDENCY",
+      "dependsOn": [
+        "NG-04",
+        "NG-05",
+        "NG-10",
+        "NG-11",
+        "NG-12"
+      ],
+      "acceptance": [
+        "Каждая публикуемая формулировка имеет отдельный claim/source review, альтернативу, контекст и редакторское решение; 0 скрытых спорных утверждений"
+      ],
+      "evidence": [
+        "11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md"
+      ],
+      "verification": "NOT_APPLICABLE_UNTIL_DONE",
+      "closureAt": null,
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-14",
+      "priority": "P2",
+      "title": "Аудит исходников двух сайтов Arena, RTL, рёбер графа и переводов",
+      "status": "IN_PROGRESS",
+      "dependsOn": [
+        "NG-02"
+      ],
+      "acceptance": [
+        "Получены точные SHA/архивы обоих билдов; проверены UI, RTL, подсветка поиска, связи, accessibility, тексты и 12 исторических BA-дефектов с runtime-witness"
+      ],
+      "evidence": [
+        "01_NAMES_LEXICAL_SOURCE_AND_ARENA_AUDIT.md",
+        "BA-01..BA-12",
+        "AuditRepo PR #538, current tested prototype lab branch https://github.com/FedorMilovanov/AuditRepo/pull/538: projects/gb-is-my-strength/prototype/imena-boga/README.md confirms originals/ four unique Arena ZIP, provenance/original-manifest.json, reference/atlas and reference/sozvezdie immutable originals. Cross-repo artifact-presence blocker removed on 2026-11-11; BA-01..BA-12 independent runtime completion remains unverified; this task is IN_PROGRESS not DONE. AuditRepo checkpoint 244f983535ffae64ac1b4c4862145e2aff20a5af"
+      ],
+      "verification": "PARTIAL_CROSS_REPO_ORIGINALS_CONFIRMED_BA01_12_RUNTIME_ACCEPTANCE_PENDING",
+      "closureAt": null,
+      "owner": "Research editorial"
+    },
+    {
+      "id": "NG-15",
+      "priority": "P2",
+      "title": "Пакет доказательных утверждений и лицензий → Product, без автопубликации",
+      "status": "BLOCKED_DEPENDENCY",
+      "dependsOn": [
+        "NG-13",
+        "NG-14"
+      ],
+      "acceptance": [
+        "По каждой выпускаемой единице отдельный claim/source/rights handoff, редакторское и Product QA, явное одобрение; Research не пишет в прод без отдельной команды"
+      ],
+      "evidence": [
+        "README.md",
+        "11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md"
+      ],
+      "verification": "NOT_APPLICABLE_UNTIL_DONE",
+      "closureAt": null,
+      "owner": "Research editorial"
+    }
+  ],
+  "mediaQueue": [
+    {
+      "id": "MEDIA-TMS-JZ-01",
+      "title": "God's Many Names: Parts 1–2 and slides",
+      "presenters": [
+        "Joe (Iosif J.) Zhakevich"
+      ],
+      "url": "https://www.foiequip.org/courses/gods-many-names",
+      "access": "FREE_ENROLLMENT_POSSIBLY_REQUIRED",
+      "verification": "PUBLISHER_COURSE_CATALOG_CHECKED_NOT_WATCHED",
+      "status": "WATCH_PENDING",
+      "task": "NG-06",
+      "questions": [
+        "Which Hebrew names/verses precisely?",
+        "Does presenter distinguish altar/place vs God?",
+        "What is the evidence for pronunciation?"
+      ]
+    },
+    {
+      "id": "MEDIA-CHOU-JZ-02",
+      "title": "Why the Legacy Standard Bible Translates Yahweh in the Old Testament",
+      "presenters": [
+        "Abner Chou",
+        "Joe Zhakevich"
+      ],
+      "url": "https://www.youtube.com/watch?v=2hFKPHZL5qI",
+      "transcript": "https://lawwu.github.io/transcripts/2hFKPHZL5qI.html",
+      "verification": "TIMESTAMPED_THIRD_PARTY_TRANSCRIPT_SPOT_CHECKED_AUDIO_NOT_WATCHED",
+      "status": "WATCH_PENDING",
+      "task": "NG-07",
+      "segments": [
+        {
+          "from": "05:18",
+          "to": "08:05",
+          "topic": "Exodus 3 / proposed derivation and pronunciation Yahweh"
+        },
+        {
+          "from": "09:35",
+          "to": "11:40",
+          "topic": "Masoretic replacement vowels and Jehovah reading"
+        }
+      ]
+    },
+    {
+      "id": "MEDIA-BARRICK-03",
+      "title": "Barrick & Busenitz, A Grammar for Biblical Hebrew, chapter 2 p. 25",
+      "presenters": [
+        "William D. Barrick",
+        "Irvin A. Busenitz"
+      ],
+      "url": "https://drbarrick.org/wp-content/uploads/2017/01/B_B_Hebrew_Grammar_2005.pdf",
+      "verification": "PUBLISHER_PDF_PAGE_25_SCREENSHOT_CHECKED",
+      "status": "PAGE_VERIFIED_INTERPRETATION_REVIEW_PENDING",
+      "task": "NG-08"
+    },
+    {
+      "id": "MEDIA-BARRICK-04",
+      "title": "Barrick Hebrew Exegesis I study notes p.64",
+      "presenters": [
+        "William D. Barrick"
+      ],
+      "url": "https://drbarrick.org/files/studynotes/Other/Heb%20Exeg%20I_Study%20Notes_YouTube.pdf",
+      "verification": "PUBLISHER_PDF_PAGE_64_SCREENSHOT_CHECKED",
+      "status": "PAGE_VERIFIED_HISTORICAL_CLAIMS_UNCOLLATED",
+      "task": "NG-08"
+    },
+    {
+      "id": "MEDIA-BARRICK-05",
+      "title": "Barrick free TMS Beginning Hebrew / Hebrew Grammar / Exegesis lectures",
+      "presenters": [
+        "William D. Barrick"
+      ],
+      "url": "https://drbarrick.org/courses/",
+      "verification": "INSTRUCTOR_COURSE_CATALOG_CHECKED_NOT_WATCHED",
+      "status": "SELECT_LECTURES_PENDING",
+      "task": "NG-08"
+    },
+    {
+      "id": "MEDIA-CHOU-06",
+      "title": "Legacy Standard Bible roundtable Q1 2023",
+      "presenters": [
+        "Abner Chou",
+        "William Varner",
+        "Jason Beals"
+      ],
+      "url": "https://www.youtube.com/watch?v=0sjpFs3U6jI",
+      "transcript": "https://lawwu.github.io/transcripts/0sjpFs3U6jI.html",
+      "verification": "TIMESTAMPED_THIRD_PARTY_TRANSCRIPT_SPOT_CHECKED_NOT_WATCHED",
+      "status": "WATCH_PENDING",
+      "task": "NG-09",
+      "segments": [
+        {
+          "from": "06:13",
+          "to": "07:40",
+          "topic": "KYRIOS versus YHWH in NT references/footnotes"
+        },
+        {
+          "from": "38:48",
+          "to": "44:35",
+          "topic": "Why Yahweh personal name vs Elohim/Adonai as titles"
+        }
+      ]
+    },
+    {
+      "id": "MEDIA-LSB-07",
+      "title": "Legacy Standard Bible FAQ and editorial rationale",
+      "presenters": [
+        "Legacy Standard Bible translation committee"
+      ],
+      "url": "https://lsbible.org/faqs/",
+      "verification": "OFFICIAL_WEB_FAQ_CHECKED",
+      "status": "TEXT_READ_INTERPRETIVE_COMPARISON_PENDING",
+      "task": "NG-09"
+    },
+    {
+      "id": "MEDIA-CHOU-TMS-08",
+      "title": "Abner Chou: Legacy Standard Bible translation philosophy (TMS)",
+      "presenters": [
+        "Abner Chou"
+      ],
+      "url": "https://info.tms.edu/lsb",
+      "verification": "INSTITUTIONAL_ARTICLE_READ",
+      "status": "ANALYSIS_PENDING",
+      "task": "NG-09"
+    }
+  ],
+  "nextAction": "2026-11-14 W74 Research Draft PR #379, same branch: CH-PILOT-03 Naomi Ruth1:20-21 and Eliphaz Job5:17/42:7-9 paragraphs are now specifically re-edited against original printed MT and crosswalk editorial note updated; remain NO dedicated CLM/ATT within locked 105 (source-context pass NOT scholarly acceptance). CH01, not CH03, owns separate Gill/Berkhof/Bavinck citation/method gap; do not misattribute to CH03 or open a third active deliverable. NG-04 Ex17:15-16 bounded reader passage now explicitly includes Yuval Weiss 2026 author-abstract argument that accents apparently favor TWO and later Aleppo ONE is a hypothesis, while Lyons/Dovi report ONE in Or4445; neither establishes our original ink collation. NEXT: targeted adversarial context check of one remaining CH03 source gap/possible nuance, and on NG04 only original article/folio/apparatus if newly available exact object; else retain source HOLD and STOP_DISCOVERY. Pre-W74 exact e1de42677be176253c10f2050f284ae1f38f881c 6/6 GitHub Actions success / 737/737 tests. W74 new exact-head CI must be checked. 3 reader chapters, 129 blocked sources, 105 attestation IDs, 87 provisional claims, 75 relations, 0 critical manuscript/peer/rights/Product approvals. Never merge Research main, write Product, create branch or count fourth chapter.",
+  "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
+  "researchPeople": [
+    {
+      "personId": "PERSON-TMS-WILLIAM-D-BARRICK",
+      "originalName": "William D. Barrick",
+      "primaryRussianName": "Уильям Беррик",
+      "searchAliases": [
+        "Уильям Баррик",
+        "Уильям Бэррик",
+        "Билл Беррик",
+        "William D. Barrick",
+        "Bill Barrick"
+      ],
+      "role": "former TMS professor of Old Testament and Hebrew",
+      "identityStatus": "OFFICIAL_SELF_IDENTIFICATION_AND_RUSSIAN_PUBLISHER_VARIANTS_CHECKED"
+    }
+  ],
+  "scholarlyQueue": [
+    {
+      "sourceId": "SRC-TMSJ-VALDIZAN-EX3-2024",
+      "priority": "P0",
+      "taskIds": [
+        "NG-04",
+        "NG-05"
+      ],
+      "printedPages": "53–74",
+      "status": "PUBLISHER_ORIGINAL_SELECTED_ARGUMENT_AND_CONCLUSION_READ_FOOTNOTES_PENDING"
+    },
+    {
+      "sourceId": "SRC-TMSJ-VALDIZAN-ACTS2-2024",
+      "priority": "P0",
+      "taskIds": [
+        "NG-11",
+        "NG-05"
+      ],
+      "printedPages": "257–272",
+      "status": "PUBLISHER_PDF_SELECTED_ORIGINAL_INTERTEXT_AND_CONCLUSION_READ_AUTHOR_LOCATOR_ANOMALY_OPEN"
+    },
+    {
+      "sourceId": "SRC-TMSJ-CHOU-TRANSLATION-2024",
+      "priority": "P1",
+      "taskIds": [
+        "NG-09"
+      ],
+      "printedPages": "5–26",
+      "status": "ORIGINAL_PUBLISHER_SELECTED_TRANSLATION_ARGUMENT_AND_CONCLUSION_REVIEWED_OPPONENTS_PENDING"
+    },
+    {
+      "sourceId": "SRC-TMSJ-BARRICK-TRANSLATION-2024",
+      "priority": "P1",
+      "taskIds": [
+        "NG-08"
+      ],
+      "printedPages": "45–52",
+      "status": "ORIGINAL_PUBLISHER_SELECTED_NEH8_LANGUAGE_ARGUMENT_READ_CONTESTED_MEPHORASH_NOT_CLOSED"
+    },
+    {
+      "sourceId": "SRC-TMSJ-CHOU-DANIEL-2024",
+      "priority": "P1",
+      "taskIds": [
+        "NG-10"
+      ],
+      "printedPages": "153–178",
+      "status": "PUBLISHER_ORIGINAL_SELECTED_PAGES_READ_CRITICAL_REVIEW_PENDING"
+    },
+    {
+      "sourceId": "SRC-VT-LIEBERMANN-JEREMIAH-2023",
+      "priority": "P0",
+      "taskIds": [
+        "NG-02",
+        "NG-10"
+      ],
+      "printedPages": "62–81",
+      "issueYear": 2023,
+      "firstOnlineYear": 2022,
+      "status": "AUTHOR_ACCEPTED_MANUSCRIPT_VISUAL_P0_P8_P23_CONCLUSION_READ_PUBLISHED_EDITION_AND_CRITICAL_COLLATION_PENDING",
+      "reviewQuestion": "Compare Liebermann 2023 pp62-81 accepted author manuscript p8 and p23 author hypothesis of Davidic opposition to Erzberger 2013 textual development of Jer33 MT/OG. Both attribute interpretations; neither substitutes for ancient Greek manuscript collation."
+    }
+  ],
+  "lastWorkReport": {
+    "date": "2026-11-14",
+    "planStatus": "W74 bounded reader/critical-text correction: CH03 Ruth1:20–21, Job5:17 and 42:7–9 actual MT author-speech check; not all Eliphaz sentences condemned by divine rebuke; Naomi's lament marked as her assessment. Separate Exodus17 draft now explicitly reports Yuval Weiss opposing two-word accents and proposed Aleppo late-correction hypothesis only from own publisher abstract; no article/full original autopsy. Both current W74 commits require exact-head CI. Prior e1de42677 6/6 success 737/737. All source/manuscript/rights/Product holds unchanged.",
+    "workCompleted": [
+      "2026-11-14 W74: author/narrator distinction in CH-PILOT-03 improved against original Mechon-Mamre MT Ruth1:20-21 and Job5:17/42:7-9, with explicit non-blanket-false Eliphaz caution. CH03 reader body approx 3148 words within existing 3600 max; crosswalk retains missing dedicated CLM/ATT and does not count a new ancient physical witness. Ex17:15-16 reader passage in dossier23 now includes Yuval Weiss 2026 strongest opposing interpretation from original journal publisher author abstract (two-word accents, proposed later Aleppo join), explicitly not full article or original manuscript ink. 129 sources, 105/105 source-attestations, 87 claims, 75 relations; no new fourth chapter, no scientific/rights/Product promotion. Gill/Berkhof/Bavinck crosswalk gap is CH01, NOT CH03.",
+      "2026-11-14 audit guard: workplan regressions increased 21->26 (third/duplicate active deliverable, stale operator date, false prior CI SHA, phantom fourth reader). Expected aggregate on next audit SHA 321+26+319+24+18+29=737; do not treat expected as successful.",
+      "2026-11-14 AUDIT SELF_PLAN: verified existing PR379 head 29e52b49, all six exact-head Actions success (Names 43474419588, 732/732 tests), 129 sources/105 attestations/87 provisional claims/75 relations, three reader pilots. Found stale W70 machine nextAction/snapshot, stale W63 CURRENT PR header, 619 commits/66 files with large historical docs, chapter03 two crosswalk gaps and no external review, NG04 unreachable BHQ Exodus print expectation. Restricted active work to CH-PILOT-03 bounded textual/source gap triage and NG04 Exodus17 fragment adversarial edit; separated 4th-chapter decision and withheld all approvals. Current audit HEAD CI must be rechecked.",
+      "2026-11-13 W70: original Lyons 1983 University of London PhD 400+ PDF, chapter2 printed p16 addenda two-word vs one-word codex Or4445; author puts Ex17:16 first in explicitly one-word group, references Yeivin original pp78–84 without our access. Original Hebrew glyph/mp table OCR unreadable and PDF screenshot disabled; no fabricated reading. New single independently authored source with 24 source gate fields and one 28 negative case test. Ancient Cambridge T-S NS 282.88 7th/8th c original parchment fragment is within Ex17:5–18:14 range but incomplete; NO confirmation verse 16 physical text survives, therefore not counted as attestation or new 17:16 witnessed source.",
+      "2026-11-13 W69: publisher directly verifies journal 88(3) 2026 printed Weiss article pp242–272; original 1-page Hebrew TOC and author-supplied English abstract original 4-page PDF inspected visually at pages V–VI. Author contends internal variation across both Hebrew school traditions, accents support TWO words, argues Aleppo itself later corrected to ONE, 3 analog late edits; original full 31-page argument, precise three cases, scribal actor unverified, hypothesis not science fact. Source and one fail-closed negative test added, no publication rights or independent our-project scholarly signoff.",
+      "2026-11-13 W68: personally directly read Dovi MAM authored detailed Ex17:16 manuscript group apparatus and his manuscript sigla dictionary; Or4445=bet joined כסיה and marginal חדא/חדה מלתא cited; Cairo18 third note West joined/East separate; Aleppo via Saphir and Kimhi absent originals. Two actual editorial reports support joined and supersede previous unreliable browser model two-word reading, but primary photograph autopsy still not carried out. Yuval Weiss Leshonenu 88 issue3 pp242–272 bibliographic lead ONLY; original unread and late hand correction an attributed hypothesis. Extended existing editor and London IDs without increasing 127 sources, with one new core negative mutation test and 8 more London guard fields.",
+      "2026-11-13 W67: directly read editorial own Hebrew and English introduction to Miqra al pi haMasorah, Chapter3 Conjoined Words in Torah item5 and contemporary Ex17:16 printed reading; identifies 11 composite cases, L + scroll two words, Aleppo A(S) reported joined word and explicitly cautions Yemenite tradition cannot reconstruct Aleppo. Adds one editorial provenance source, not another ancient codex or original lost Aleppo folio, and 25 negative mutation guards. Or4445 f59v conflicting reading remains unresolved; all scientific, rights and publication gates hold.",
+      "2026-11-13 W66: verified British Library Or 4445 manuscript catalog and OPenn original-image folio59v 13291_0125.jpg; independent physical witness (original 920–950 CE, not later 1540 replacement). Wikipedia comparative Ex17:16 table cites one-word כסיה and OPenn f59v, but automated visual browser claims two words כס יה; do not trust automated OCR/vision to overrule curated comparison or vice versa. Added 1 fail-closed source + 1 mutation test with 26 negative status and text claims. Research source and rights publication remain BLOCKED.",
+      "2026-11-13 W65: verified exact early 11th century original Leningrad Codex folio42r/42a from WSRP USC photo provenance and Wikimedia Commons image (4090x4514). Verse physically located by independent modern TEI manuscript-column line map: Exod17:16 at col1 lines15 and16, where כס ends line15 and יה starts line16. Original photo viewed, but independent native-pixel paleography, diacritics, masora marginalia and republishing rights remain held. Did not count modern TEI and UXLC as additional physical witnesses. Verified UXLC current 2.6(27.7) Oct2026 license text vs older downstream 2.5 transcriptions. One new protected source and 29-mutation test.",
+      "2026-11-13 W64: first direct read of Bar-Ilan Menahem Cohen official modern Mikraot Gedolot HaKeter Ex17:16 one-word כסיה in four displayed main Bible text modes, and official About-method statement confirming reconstructed missing Aleppo sections. In contrast Deutsche Bibelgesellschaft BHS online edited Ex17:16 two separate words. New modern EDITION source record only, not ancient codex/autograph or scientific acceptance; one new regression test with 21 negative cases and no rights grant.",
+      "2026-11-12 W63 audit: verified PR379 branch exact W62 80394ab, six completed successful GitHub workflows and original Names workflow job log 314+21+319+24+18+29=725 tests; verified official BHS online Ex17:16 two printed words; extracted title of Kittel BHK2 explicitly 1909 but web screenshot of 52 MB file was unavailable, so no new independent p99 visual autopsy claimed. Research register remains 123/105/87/75; critical ancient collation, external scholarly review, image rights and Product permissions remain HOLD. This audit synchronizes stale machine-CI bookkeeping only, not publication eligibility.",
+      "2026-11-12 W62: downloaded and verified original 52MB complete 1909 Kittel second-edition PDF, title page plus Ex17:16 print p99/index114 and apparatus visually inspected; false URL 1937 is not year, no BHK3 conflation. Independently read publisher Deutsche Bibelgesellschaft BHS online main verse Ex17:16 (two words) WITHOUT printed critical apparatus. Two scientific edition sources registered, 2 core mutation tests/21 invalid upgrades disallowed, no relicensing or manuscript autopsy.",
+      "2026-11-12 W61: first verified direct Field 1875 original printed Ex17:16 p111 BSB IIIF canvas00221 original image, includes Hebrew כס יה, throne Latin vs vexillum נס alternative, Greek κρυφαίᾳ and uncertain n17 Symmachus attribution. Complete 920-image BSB copy distinguished from incomplete 207-page prior PDF. New academic source ID, updated dossier23, 11 anti-inflation mutation variants, no publication rights or autonomous ancient manuscript collation.",
+      "2026-11-12 W60: original Wevers Exodus1991 author English introduction online 2006 sections on apparatus I/II and sigla directly read. Corrected boundary: editor compared Field1875, plus older Brooke-McLean1909, these publications are NOT 3 independent manuscript autopsies; α' Aquila, σ' Symmachus, θ' Theodotion, οἱ γ' Three do not equal OG text. Distinct source ID plus 11 negative guard mutations; unchanged source/ancient-scholarly/Product/rights holds.",
+      "2026-11-12 W59: directly examined original university-hosted Ofer2016 full PDF web text, original printed pp173/179-182 page images and photograph figures 3-7. Distinguished uncertain frog-name accent Ex8:7 from author-supported harawahah Ex8:11 hataf patah, Yeivin p17 vs unseen p82, preserved JTS1855/Sapir1857 unresolved time crosswalk and strict exclusion of lost Exodus17:16. New real academic source only, anti-inflation mutation test eight cases, in original dossier23 and navigation. 119 sources, 310 core tests, 0 ancient witness upgrades, 0 rights/peer/Product approvals.",
+      "2026-11-12 W58: MT digital transcription independently read Isaiah13:6 and Joel1:15, plus Joel1:10 verbal root. Literary šōd/Šadday wordplay verified without treating it as root or derivational proof; legitimate EBSCO Humanities Source record found but actual Dewrell article requires institutional login, original 6-page argument remains unread. Updated existing dossier03 and CH03 appendix, no new source ID or branch; retain NG12 BLOCKED_SOURCE.",
+      "2026-11-12 W57: publisher original one-page erratum Kruger a3039 (2023-12-19) directly visually checked; corrected original article heading only on p3, not Job8:3 or Job27:2/13 conclusions. Added linked correction metadata to existing Kruger SRC rather than independent source, removed duplicate bibliographic paragraph in CH03 appendix, preserved evidence counterchecks and holds. Existing PR #379 only; post-change CI must be verified on exact HEAD.",
+      "Wave54: direct official HUJI Textus21 original PDF 25/25 English text; footnote32 Exodus17:16 one word via Sappir/Zer1986 and comparative list(b) concordant. Hebrew OCR characters unreliable; no original Aleppo folio or original Yeivin/Breuer book pages, rights/scholarly/Product HOLD. Existing source access updated, one new fail-closed test; 309 core tests, 115 source records, NG04 BLOCKED_SOURCE.",
+      "Wave53: synchronize updatedAt, current chapter size/status, chapter evidence map, 18 reader mutation tests and release boundaries across machine editorial execution. Preserve statuses NG04 BLOCKED_SOURCE and NG13/15 BLOCKED_DEPENDENCY, 0 external scholarly reviewer approvals and 0 Product/rights release.",
+      "Wave52: Three CH-PILOT readers: 32 narrative headings explicitly tied to 25 existing CLM IDs and their exact stored SRC IDs where appropriate, missing proof scopes labelled without inventing source/claim. New validation and 18 negative tests in same original research workflow; old 308 mutation tests unchanged.",
+      "Wave51: CH03 main reader section Deir Alla condensed from ≈2651 to 309 words, all long-form evidence plus ~30 citations and two illustration blocks retained in existing editorial appendix. Reader body measured ≈3109 words, photo of actual ancient fragments still attributed CC0. No scientific claims silently removed or promoted.",
+      "Wave50: independently read full original authored/ancient text in DIGITAL EDITED Hebrew for three independent historical reception strands: Bavli Pesachim117a, Rashbatz Tashbetz I177, and Arukh HaShulchan YD275:24; built explicit contradictory one-versus-two-word reception matrix, distinguished a medieval observed OTHER Torah scroll from lost Aleppo leaf, tracked manuscript Masorah 5-vs-6 and Talmud Rabbah/Rava cited spellings; 3 real historical source IDs and 3 negative mutation tests.",
+      "Wave49: original authored 2003 Ofer Hebrew publisher HTML and exact notes 23/24/26 checked as Yeivin p82 secondary index for Psalm90 and Isaiah54 only; distinguish two Penkower-annotated NLI archival physical books from original published editions and their digital availability. Source ID + fail-closed test; zero premature original-page read claims.",
+      "Wave48: narrowed firsthand JTS L729 selected Ex17:16 marginal reading to independently legible words, marked remaining palaeographic glyphs and editorial comparisons unresolved; verified peer-reviewed Ofer2002 bibliographic/abstract general composite-word distinction (not Ex17-specific); introduced source and negative regression.",
+      "Wave47: downloaded and visually inspected official JTS manuscript microfilm FL28558023, located actual Exodus17:16 Q&A in left-page lower portion, registered distinct historic copied witness including SHA256/coordinates/rights, one new adversarial test. No loss of hold status.",
+      "Wave46: verified exact JTS current shelfmark Ms.1154 = Lutzki L729 from NLI catalogue; preserved 13 page-image IDs and HTTP access limitations without claiming Hebrew handwriting review; guarded negatives with one new core test.",
+      "Wave44: corrected earlier Wave37 courier fullname conflation using original independent Ofer1992 print p315 n75-77 and p352 bibliography; historical newspaper unsigned, Yehiel Brill only conjectural. Original 1863 print vs Zer1986 report same one-word verdict, not verbatim; new distinct academic source and anti-mutation test (109 source IDs / 301 core tests). Preserved parallel NG14 Arena IN_PROGRESS.",
+      "Wave43 coordination: verified AuditRepo PR538 source/immutable original Arena ZIP archival provenance; NG-14 moved BLOCKED_ARTIFACT -> IN_PROGRESS, not DONE (12 BA runtime witnesses still require acceptance). Wave42 primary print evidence appended to NG-04 but critical apparatus/codex HOLD kept.",
+      "Wave42: original newspaper printed p32 Ex17:16 one-word report independently verified; new original-1863 newspaper bibliographic source separate from Penkower; source/test baseline 108/300 and negative no-ancient-codex/rights regression.",
+      "Wave41: corrected false identification 9 July 1863 as Ha-Levanon issue5 by direct examination of user-provided full issue6 July9 8p PDF pages33-40. Crosswalk to official June11 prior issue and download page without claiming June photographed original read. Machine guard prevents changing issue6 to issue5 or June masthead flag without evidence.",
+      "Wave40: documented 8 photo-covered question IDs noted in Zer1986 n9, page-checked the list for Genesis27 and Deut4-6; preserved 430-vs-422 conflict and duplicate 339 row as distinct concerns. One negative test guards candidate explanation not being promoted into verified history; synchronized 298 test baseline.",
+      "Wave39: visually verified Zer1986 print p152, registered author-printed 422 versus arithmetically enumerated 430/543 (8-case mismatch) without speculative correction; added one anti-fiat test and synced machine SSOT regressionTests=297 after CI correctly rejected stale 296. No new source IDs, ancient collation or Product handoff.",
+      "Wave37 fixed over-conservative courier-name blocker with 1986 Zer original p151 screenshot full Hebrew 'ר' יעקב זאב ברלין' and modern 2023 article p67 screenshot. Updated existing source IDs crosswalk, one new anti-inflation mutation test; no new separate bibliographic source ID, no claimed independent civil identity.",
+      "Wave36: source genealogy advanced from Goshen 1962 and Zer1986 to Saphir's own Even Sapir 1866 first-person words in verified 1989-derived digital transcription; preserved separate courier/eyewitness, Hebrew original respondent orthography, critical first-person not-eyewitness caveat and unreconciled relative seven/nine year markers. Commons 498p public-domain facsimile catalog verified but not visually reviewed; one new provenance guard and source record.",
+      "Wave35: inspected official Hebrew University Textus2 1962 metadata and author's full accessible third-party OCR, recorded Goshen's historic personal examination of JTS729, single-source dependency with Ha-Levanon1863 and his disputed Sapir handwriting conjecture versus Zer1986 anonymous copy; no original PDF or JTS image pixels inspected by us. One registered published scholarly source and one mutation gate.",
+      "Wave34 original historical-source correction: visually inspected Zer 1986 printed p151 and Breuer 1990 p104, identified Menashe Sithon and 1857 Yaakov Ze'ev delivery; quarantined Moshe webpage error/inconsistency and unresolved JTS 1855 versus courier 1857. One original scholarly source plus one negative test.",
+      "Wave33: scoped Penkower 1981 printed p78 footnote63 direct PDF machine text, university publication metadata and NLI exact 1863 July9 newspaper date; discriminated Jacob Saphir's NLI Maorot Nathan catalogue from Nathan Shapira's same-name other book; quarantined unsupported browser vision report; one new secondary scholarly source + one anti-conflation regression.",
+      "Wave32: registered original Zer 1986 and Ofer 2008 with 2 adversarial scope tests, fixed JTS L729 as anonymous copied manuscript and separated multiple editorial conclusions from actually read Yeivin/Breuer pages.",
+      "Wave31: directly inspected two Rafi Zer 1986 original printed edition page images, item137 Exod17:16 p165 and note137 p191, preserved distinction printed historical testimony vs missing Aleppo manuscript/untouched handwritten source. Cross-check targets Yeivin82 and Breuer260-261.",
+      "Wave30: scoped note of secondary Aleppo single-word Exodus17:16 report contrasted with extant MT two-word printed text and official Yad Ben-Zvi loss evidence; BHS/Göttingen apparatus uninspected, BHQ Exodus not published. No scholarly status upgrade.",
+      "Wave25 independent visually rendered source recheck: Brill 1999 Study Edition print p272 (PDF index 296) says Col XXIV Jer33:16-20, while Tov 1997 DJD XV editorial text lists Col XXV. A later external audit erroneously read the secondary edition as XXV; rejected without mutating the source register, critical collation or anti-mutation truth fixture.",
+      "Wave25 CI control-plane rebase: d2a4e2ab was actually terminal 6/6 SUCCESS and 289/21/319/24/29 test suites succeeded; new Wave25 commit requires fresh exact-SHA workflow acceptance.",
+      "Preferred Russian name Уильям Беррик with original William D. Barrick",
+      "Added authentic TMSJ 2024 published journal article metadata and permissions",
+      "Minted 105 stable attestation IDs with foreign source/edition links",
+      "Created four normalized edition records and ten curated claim seed links",
+      "Added original TMSJ 35/1 and 35/2 journal articles with exact first PDF page verification and publisher copyright boundary",
+      "Created an independent provenance validator with 18 negative tests and CI integration",
+      "Marked 4 Greek multiedition URL source locators for explicit edition pin recheck",
+      "NG-01 closed with exact successful names-ledger workflow 42333369066 and three independent test groups",
+      "Resolved four SBLGNT/THGNT multi-edition original-language URLs with pinned single-edition links",
+      "Updated three independent locked contracts and provenance mutation tests",
+      "Added four provisional research claims and two semantic typed links, 18/105 attestations referenced",
+      "220 local tests PASS: 159 corpus + 16 plan + 47 provenance; GitHub exact-sha CI pending",
+      "Found and corrected 3 Exodus 3 Hebrew/Greek observations with Moses incorrectly stored as referent; added separate addressee=Moses",
+      "Updated three independently locked speech/intertext contract copies",
+      "Registered new Exodus divine speech role claim and a semantic relation",
+      "Added six adversarial regressions; 228 total tests pass locally (159 corpus + 16 plan + 53 provenance)",
+      "Added a fifteen-claim semantic scope dossier without awarding any scholarly approval",
+      "Independent anti-tautology guard rejects semantic corruption copied into both ledger and locked contract",
+      "Verified three MT prophetic naming referents: king Jer23:6, Jerusalem Jer33:16, city Ezek48:35",
+      "Registered Liebermann's peer-reviewed Vetus Testamentum article with 2023 volume / 2022 online dates and selected manuscript page 8 access state",
+      "Added 3 provisional named object claims and 2 required semantic boundaries; 23 distinct attestation IDs now referenced",
+      "Expanded negative controls for Hebrew source attribution, peer-reviewed manuscript HOLD, bibliographic years and rights",
+      "NG-02 Rock: 5 attestation referent classes independently guarded: 3 divine, 1 mixed, 1 negative",
+      "Separated Deut32:31 our Rock / their rock from Deut32:37 idol refuge, with Deut32:30 pronoun caveat",
+      "Registered three provisional Rock claims and two semantic relations; 28/105 original observations now linked",
+      "Added nine Rock mutation tests; 245 local tests pass (162 corpus, 16 plan, 67 provenance)",
+      "Immanuel NG-02: five distinct MT Isaiah7/8, LXX Isaiah7 and SBLGNT Matthew1:23 occurrence claims, four typed context/intertext differences",
+      "Verified printed καλέσεις (LXX 2sg) vs καλέσουσιν (SBLGNT 3pl), Ἐμμανουήλ explanatory gloss; Hebrew וְקָרָאת interpretation remains disputed",
+      "Pinned fifth single-edition Greek passage URL and guarded five exact source surfaces, avoiding implied manuscript collations",
+      "14 added provenance regressions; 259 total local tests (162 baseline,16 plan,81 provenance)",
+      "Revelation Greek discourse: distinct explicit in-verse Lord God (1:8), prior narrator throne speaker (21:6), and Christological contextual inference (22:13), never treating 22:16 'I Jesus' as within v13.",
+      "Rev1:8 printed source boundary: SBLGNT shorter Alpha/Omega versus TR1550 longer beginning/end; NET secondary textual note source attributed, not independent manuscript collation.",
+      "Registered Brian J Tabb's Rev22 contextual speaker reading separately from original Greek text and original critical apparatus.",
+      "Added 4 research-held claims, 4 typed relations, 2 secondary sources, 6 speaker-control checks and 18 mutation tests; 277 local tests planned (165+16+96).",
+      "NG-02 eight lexical/object contexts: 6 narrow claims, 4 semantic contrasts, 14 regression tests, exact MT Hebrew/English Exodus 20 numbering kept",
+      "Recounted 55 missing historic locusIds without changing stable attestation source or edition keys",
+      "Provenance guard independently locks 8 context meanings, speech acts, and named objects; no new critical manuscript claim",
+      "NG-02 speaker and syntax boundary: 8 original attestations, 5 narrow claims, 3 relations",
+      "Exodus15:26 YHWH self-predication 2ms versus Jeremiah17:14 human prayer/imperative 1cs; Exodus31:13/Leviticus20:8 YHWH sanctifies 2mp covenant addressee",
+      "Psalm23:1 MT YHWH my shepherd Hebrew רעה (not Hagar's seeing ראה) versus John10:11/14 Jesus explicit Greek nominal predicate; 3 John10 SBLGNT exact source URL locks",
+      "17 adversarial regressions added; total 308 local tests expected from 165 ledger, 16 plan and 127 provenance",
+      "John6:20 Jesus 'it is I; do not fear' versus John18:5 Jesus answer, 18:6 narrator's backward reference to 18:5 rather than independent second new utterance, and 18:8 direct repetition with release request",
+      "4 newly claim-linked John occurrences, four required exact edition URLs, 5 typed relations and 15 negative/positive regression checks; SBLGNT original digital reading verified and human John9:9 negative control retained",
+      "Bounded Yireh/Nissi textual pass: Gen22:8 Abraham assurance distinct from naming PLACE Gen22:14, and Niphal mountain formula; no one mandatory English rendering from two verb forms",
+      "Ex17:16 digital MT כֵּס 'throne' not conjectural נֵס 'banner'; Rahlfs-Hanhart Greek ἐν χειρὶ κρυφαίᾳ differs from MT, no ancient Vorlage proved",
+      "4 newly linked attestations, 4 source-bound research-held claims, 4 typed relations, 19 adversarial checks, 4 independent source-text guards",
+      "7 research-held claims over 8 original MT El Shaddai and YHWH Sabaoth observations, 6 new semantic relations, 24 adversarial/positive tests, exact voice and printed-vocalization locks",
+      "Ex6:3 debated revelation/existing use in Genesis and unresolved Shaddai etymology not marked scientific consensus; original NET source registered and used without new source duplication",
+      "Gen14:18 narrator versus Melchizedek Gen14:19–20 priestly blessing/doxology versus Abram oath Gen14:22 explicitly names YHWH-El Elyon in printed MT; qoneh creator/possessor alternatives attributed to NET and Cargill 2019 gloss hypothesis kept catalog-only",
+      "Ex34:14 explicit qanna shemo/character clause in divine discourse and Deut4:24 Moses warning with merely descriptive qanna; exact speakers/words protected by 6 guards, 22 tests and 5 semantic links",
+      "Daniel 7:9/13/22 Aramaic Ancient-of-Days two forms and three narrative scenes: throne, another figure approaching, judgment to saints, secondary grammatical attribution only",
+      "Revelation 1:4 John greeting ἀπὸ nominative construction distinct from Rev1:8 explicit Lord God speaker; appended separate Rev1:8 ext witness to existing claim rather than duplicating it; Rev21:22 God Almighty and Lamb grammatically distinct yet jointly temple",
+      "5 new research claims plus one expanded existing claim, 6 typed relations, 6 independent source text guards, 3 extra pinned Greek edition URLs and 26 extra regression tests",
+      "Adonai in Moses' double prayer (Ex34:9), prophetic Isaiah6 vision object, Psalm8 adoneinu suffix; Genesis23 human honorific adoni independent adversarial control",
+      "Qadosh of Israel Isa1 prophetic accusation, Isa43 direct YHWH self speech, Isa47 Redeemer/YHWH Sabaoth communal/literary attribution unresolved",
+      "Yah abbreviated divine name in Ex15 song and prefixed bet Yah Ps68:5 MT (English68:4), NET hypothetical ki alternative attributed and rights held",
+      "8 source-bound claims, 7 required links, 8 observation guards, 26 new positive/negative tests",
+      "Gen16 Hagar calls name of YHWH with El Roi, separate v14 well and unrelated shepherd root; Gen21 Abraham invokes YHWH El Olam not place naming",
+      "Isaiah9 child naming includes El Gibbor, exact title attribution disputed, Rahlfs publisher LXX 'Messenger of Great Counsel' contrasted with unpinned Orthodox expanded Greek display; Isaiah10:21 direct God return with two separate el terms",
+      "Exodus15:3 Moses/Israel sing YHWH His name immediately after abbreviated Yah verse2, not a divine direct self-revelation",
+      "5 new provisional claims, 6 typed links, 5 guards, 24 new adversarial tests; 96/105 linked",
+      "Elōah object of Jeshurun's rejection Deut32:15 and faithful God/rock Deut32:4 as human Song of Moses, not rival divinities",
+      "Daniel2:18 Aramaic mercy request through companions vs Daniel2:19 praise after revelation, exact different prepositional phrases and narratorial voices",
+      "Psalm42 Living God poetic longing, Isaiah63 our Father communal prayer Hebrew not NT Abba lexical identity, Psalm27 YHWH my light/salvation possessive metaphors",
+      "Exodus34 divine proclamation of YHWH's name WITH mercy/grace and other attributes, each adjective NOT additional independent proper name; John11 Christ speaks to Martha 'I am resurrection and life' two predicates distinct from bare ego-eimi",
+      "Nine formerly unlinked original attestations mapped to eight tightly scoped claims; one exact SBLGNT verse pin; all 105/105 source attestations structurally linked, new forward fail-closed completeness equality control",
+      "Audited 105 witness rows: 50 existing inline locusId, 55 historically missing (51 baseline/4 extension); internal contract consumers depend on existing exact IDs",
+      "Registered all 105 attestationId->resolvedLocusId mapping in sidecar, pinned original 50 and supplied 55 opt-in stable aliases without mutating legacy v1 evidence or Product consumers",
+      "New standalone locator adapter/validator and 24 fail-closed mutation tests wired into Names of God GitHub Actions workflow",
+      "Audited all four internal V1 locator-consuming contracts: 16 memorial + 12 speech + 14 extension + 8 core = 50 matching old inline IDs exactly with zero collisions",
+      "Audited generic old snapshot: 22 original no-locus contract witnesses match uniquely 22 sidecar-only aliases; no silent backfill or new requirements",
+      "Recorded scoped negative GitHub default-branch read-only code search in three relevant site repos as NOT a product runtime proof",
+      "New distinct consumer contract gate, validator and 25 adversarial checks wired into Names of God specialized CI; no Product modifications",
+      "2026-11-08: NG-02 graph-only closure from exact 6/6 CI ff6199a, 105/105 FKs, 50 immutable legacy inline IDs and 55 intentionally absent inline keys; external Arena/rights/scientific gates unchanged.",
+      "2026-11-08: Started NG-03 historical/current supersession review and bounded systematic Gill/Berkhof/Bavinck intake for one reader pilot, with stop-discovery criterion.",
+      "2026-11-08: Wrote a single ~2400-word connected CH-PILOT-01 reader manuscript with separate source/rights critical appendix; checked Exodus 3, 34, 15, Genesis 22, Judges 6, Psalm 23 primary digital Hebrew and selected Gill/Berkhof/Bavinck secondary passages. Await independent adversarial editorial review, no publish.",
+      "2026-11-08: Internal adversarial edit on existing CH-PILOT-01: verified Ex3 angel/narrator, Ex34 ambiguous v5 verb and named God v6, Gen22 place vs altar, Judg6 altar vs spoken peace, Ex15:26 conditional healer context, Ps23:1/3 metaphor/name, Gill cites Zanchius, Berkhof/Bavinck self-revelation category and Gen1:1 Elohim singular verb negative control. No new files, source registry count unchanged, independent peer review still pending.",
+      "2026-11-08: SECOND internal editor-source review of existing reader pilot: added Gen16:13 Hagar DIRECTLY names/invokes God contrasting separately named well Gen16:14, disputed 'sees me/I see' NET nuance, deleted redundant Ex3:14 sentence; separately checked Gill, Berkhof and Bavinck original accessible HTML sections. Independent scientific peer review NOT obtained.",
+      "2026-11-08: NG-03 editorial supersession completed 10/10 original dossiers 01-10 with in-file CURRENT/HISTORICAL/SUPERSEDED/HOLD annotations. Corrected stale LXX PDF impression (01), historical attestations/CI TODO (03), former missing YHWH/El attestations (10); indexed 10-row authority matrix §0a, synced navigation. No source/claim/edition/attestation IDs or Product altered.",
+      "2026-11-08: Wrote a second ~2700-word connected CH-PILOT-02 reader draft, Exodus 3/6 and LXX publisher HTML, covenant fulfillment vs historical literary alternative with attributed Rashi/Calvin and author-specific science limits. Separate evidence/rights appendix, no new registry IDs, no external publishing.",
+      "2026-11-08: CH-PILOT-02 first internal adversarial check corrected exact Exod6:3 vocalized נוֹדַעְתִּי in apparatus, kept source attribution for NET/Rashi/Calvin and clear digital Greek-vs-manuscript boundary; no external peer review.",
+      "2026-11-08: CH-PILOT-03 third connected reader manuscript on El, Elohim and Shaddai written (~2800 words with separate scholarly appendix). Original MT Gen1/14/17/28/35, Ex6/20, Ps91, Deut32, Isa43, Aramaic Dan2 and scholarly Suchard 2025 compared. First internal adversarial pass named Cargill 2019 abstract-only explicitly, fixed Ps91/90 numbering; all manuscripts still external-scholarly HOLD, no content registry or Product writes.",
+      "2026-11-08: second internal source/text review CH-PILOT-03: added Ruth1:20-21 Naomi's Shaddai without El + Job5:17 Eliphaz's Shaddai bounded by Job42:7; editorial source bullets for exact MT, verified Exodus20:2 MT vs Synodal20:2–3 numbering with independently opened text. Scientific/rights/peer gates stay HOLD.",
+      "2026-11-08: NG12 source-limited substantive etymology advance in ORIGINAL dossier 03 and reader CH03: checked BDB H7706 actual digital entry; Wilson-Wright 2019 UT Austin published PDF pp149-155,160; Krogevoll 2025 publisher 26-page PDF sample and printed pp19-25 with main chapter3/4 inaccessible; Dewrell 2024 and Angelini 2022 publisher abstracts; Kruger 2023 full HTML selected paragraphs. Conflicting Helper vs Destroyer vs Mountain explicitly attributed; source rights and original critical HOLD kept, 0 claims promoted; no new source registry IDs.",
+      "2026-11-08: NG12 Sabaoth provenance audit expanded existing dossier06: full digital BDB H6635, 2024 Șopterean selected full-journal PDF sections and printed page images 56/59/63, Byrne 2006 Maynooth thesis selected Isaiah chapter2 sections and printed p51 image; MT 1Sam4:4,17:45 Isa6:3 Genesis2:1; publisher Rahlfs-Hanhart LXX Isa6:3 and SBLGNT Romans9:29, James5:4. Explicit conflicting origin models and no false single angel/Israel/creation interpretation; no new claim/source IDs.",
+      "2026-11-08: NG12 comparative El/Eloah/Elohim source-bounded review using BDB 1906 full digital entries H410 H430 H433; Benjamin Suchard 2025 full original publisher open HTML, Encyclopaedia Judaica selected secondary sections; Bernard Gosse 2024 online abstract only. MT Gen1:1 Deut32:15/17/18 Job3:4 Dan11:37-39 Hebrew contrasted with Dan2:18-19 Aramaic. Revised existing dossier09 and CH03, no new claim/source IDs, no full HALOT, no external scientific acceptance.",
+      "2026-11-08: critical source discovery: official DBG BHQ published Genesis2016 Deuteronomy2007 Job2024 Ruth2004, Exodus Peter Schwagmeier still in preparation; BHS standard revised1997 with apparatus (Reader edition no apparatus); official Göttingen Wevers/Quast Exodus 1991, Ziegler Isaias1983; UPenn NETS Exodus full PDF introduction p43 screenshot says Wevers basis only; HALOT and DSSEL institutional access endpoints, no full text; Deir Alla Hoftijzer van der Kooij1976 exact editio princeps, Caquot/Lemaire1977 and Lemaire1985 archive first pages, Wilson Wright2019 original p153 screenshot Combo I lines5-6 šdyn plural; Angelini2021 OA Brill selected indexed text but PDF screenshot 403. No sourceId or claimId or ancient collation invented.",
+      "2026-11-08 audit: verified all six workflows completed success at pre-update SHA 5a97a3b, reconciled current 61 source registrations versus historic 48 in navigation and master plan, added fail-closed source-count navigation guard; preserved 3 reader manuscripts, images and scholarly/publication HOLDs without creating new source IDs or branches.",
+      "2026-11-08 targeted original scholarly publication: Peeters 2021 OBO291 Lemaire pp185-186 checked in PDF page images; red-ink reconstructed heading separate from shdyn, wall inscription vs posited older scribal copy, divergent dates all claim-bounded. Registered one source and two negative tests, updated reader03/dossier03.",
+      "08.11.2026 researched original Hackett 1986 Biblical Archaeologist journal pp216,220–221: first-hand Amman inscription visits 1979/1981, separate author's reconstructed Combo I ʾlhn/šdyn, conjectural biblical shedim revocalization challenged by Weippert 1991, Caquot/Lemaire 1977 arrangement notes, correct Thompson inset authorship, figure rights held. Reader03 and Dossier03 updated with one source and two negative source checks.",
+      "NG12 targeted French original Lemaire 1984 review of Hackett printed p142, red-line/fragment Ve/XVc and line8 dispute plus 8th/7th dating conflict. Reader03 and dossier03 amended, 1 source with partial reading, 2 negative tests, not manuscript collation.",
+      "NG12 direct field archaeology: official Jordan Department of Antiquities PDF Ibrahim/van der Kooij ADAJ 23 (1979), print pp49-50; distinguish preliminary eighth-century phase IX/M from unknown absolute date of inscription or any imagined 750 BCE earthquake; C14 still pending in 1979 author report. Two negative guards, Dossier03/Reader03 updated.",
+      "08.11.2026 NG12 independently inspected Lemaire 1985 CRAI pages271–272 via Persée HTML original journal: found ATDA 1976 p16 C14 circa800 B.C. +/-70 @66% cited, 1983 ADAJ p583 reference, and tentative Amos1:1 quake correlation. Explicitly reconciled 1979 unfinished samples with older available published C14 data without asserting shared/different batch; Reader03, dossier03, source register and two fail-closed tests updated.",
+      "08.11.2026 NG12 first-hand Jordanian archaeological field report 1986 pp137 and142 visually verified: C14 two identified burned-plant samples GrN5633 2690±60 BP / GrN8119 2590±70 BP with contemporary 770–880 BCE calibrations, phase IX physical plaster/bench rooms, no incontrovertible sanctuary; historical dated samples distinguished from epigraphic writing. Source ledger+2 negative tests, Dossier03+Reader03 and navigation updated.",
+      "08.11.2026 NG12 forensic radiocarbon provenance: official Cambridge publisher PDF Weinstein 1984 p351 visually checked; exact source conflict with original ADAJ 1986 p142 in GrN5283/5633 IDs, values and pit-vs-destruction provenience; created source record, two negative source guards, dossier and Reader03 attribution, requiring Vogel/Waterbolk 1972 p53 before resolution.",
+      "08.11.2026 NG12 audited existing digital excerpt attributed to Franken1976 printed p16: single Phase M/IX BB303 charred grain GrN5633 2600±50 BP aligns Weinstein1984 original p351 and differs from ADAJ1986 original p142. Kept as secondary quotation in original 1976 registry record rather than inflated source count; 2 new adversarial scope tests, Reader03/dossier03 and master/navigation reconciled. No assumption that 1986 mismatch is proven typo or original 1972/1976 actually read.",
+      "NG12 primary lab source obtained directly from Cambridge publisher complete 1972 PDF: original printed page 53 verified by extraction, two sample IDs and different excavation material/years + δ13C, pretreatment and contemporary ca800 BCE correction, contradicting 1986 lab sample pairing. The cause of 1986 report error not inferred; 1972 use of 'temple annexes' attributed as assumption, not proven sanctuary; ledger+3 fail-closed tests, Reader03/Dossier03, machine/human plan/nav corrected.",
+      "NG12 first firsthand original scholarly redaction Caquot/Lemaire Syria1977 pp193–198 inspected directly by paginated digital text: attributed hypothesis of moving fragment Ic/combination lines, red ink evidence, explicit 1977 line4 =1976 line6 concordance, 1977 line6 sdyn corresponds 1976 line8, 1977 line8 sdh is a proposed owl (distinct), title shadday plural only author proposal. Register 1 source, 3 falsification tests, Reader03/Dossier03 and SSOT plan/nav updated.",
+      "2026-11-10 WAVE17: exact pre-edit GitHub PR379 HEAD 899e7c29f0914fb2742fad1fe283de70d50be301 CI 6/6 terminal success; main at 482abe3847d0bb68c46c846311c411b17b565dba and merge-base 4f600dafe8ac52f8244148abdf0845f830cd2263; PR 384 ahead/83 behind, changed path sets 63 vs 41 with zero filename overlap. This is a filename-level integration audit, NOT a merge-safety verdict. Historical Wave5 nextAction and CI predecessor corrected. Newly written SHA must pass CI separately.",
+      "2026-11-10 WAVE19 Codex Q evidence correction: Original contemporary scholarly Valerio 2022 §2.2.1 printed p56 read as extracted publisher PDF text (screenshot 403); Q page171 opening Isaiah colophon second hand. Official Göttingen Q catalog 1 column 29 lines Prophets-only. Earlier agent-generated Mark1 74-line 'transcription' explicitly refused. Specific source record, original Russian dossier and 1 fail-closed core regression updated. No original Isaiah9 folio, no edited critical apparatus or permissions. Wave18/19 scientific status NOT DONE.",
+      "2026-11-10 WAVE20 4Q72: original official IAA catalog B-279109 dated Feb1954 confirms PAM M40.963, Najib Anton Albina, old IR multi-manuscript exposure with 4Q72 and museum plate245 among others. Historical inventory Fascicle9 directly lists 40.963 4Q72 Jerc Jer 4:13-16 and 33:16-20. Langlois original author-hosted 2019 PDF note19 links PAM 40.963 to B-279109 (PDF screenshot timeout, extracted text only). New source object with 0 image pixels reviewed; inventory and Langlois rows scoped cross-reference; 2 negative guards. NO conflation with PAM43.101, editor frg55ii or IAA B-360205; rights and science HOLD.",
+      "2026-11-10 WAVE20 supplement primary editorial literature: Tov DJD XV 1997 4QJer c section original written list includes PAM43.101 main photo series and 40.963 in parenthetical earlier photos; editorial explanatory sentence says later 43-series contains more identifications. Original book text was parsed in a 21MB third-party PDF; web screenshot refused due size, no direct physical original photo/plates viewed. Existing Tov source row updated and one negative test against conflating negatives or photo/plate review; 100 sources/284 corpus tests; no image redistribution.",
+      "2026-11-10 WAVE21 targeted source acquisition: Hebrew University institutional listing independently confirms Tov 1991 4QJer (4Q72) in OBO109 Tradition of the Text pp249–276; original Tov DJD XV 1997 references first edition plates I–VII versus 1997 plates XXX–XXXVI. University Bern scholarly series publisher states OA OBO ZORA, but ZORA returned Anubis ACCESS DENIED; no actual 1991 original text or photographic plate read. Official IAA manuscript navigation /manuscript/4Q72-1 verified against separate 4Q70/4Q71. Commons File:4q72.jpg false-positive PDB 4Q72 protein rejected. Existing Tov row and adversarial regression updated, no fake source and no rise in claims; 100 sources, 285 core tests, 0 original ancient collation or Product grant.",
+      "2026-11-10 WAVE22 source-object trap audit: DJD XV primary table of contents and official Hebrew University Textus XVII 1994 TOC jointly identify Tov 1994 Preliminary Edition as 4QJer a (4Q70), not 1991 Tov OBO109 4QJer c=4Q72. DJD XV primary 4QIsa c=4Q57 fragment55 Isa51:8-9 distinct from Qumran-Digital 4Q72 fragment55ii Jer33:16-20, independently verified two different scholarly edited transcriptions (not independently verified ancient photos). One existing source row + validation guard + two negative mutations added. No new source-count inflation. Original 21.43MB DJD XV PDF visual screenshot failed, 0 photo collations. 100 source entries, 287 core tests. Exact new SHA CI required.",
+      "2026-11-10 WAVE23 printed-original scholarly synopsis cross-edition check: directly VISUALLY inspected 1999 Brill Study Edition vol1 actual printed pp271/272 as web PDF screenshots indices295/296. Confirmed editorial col-XXIV vs primary Tov-XXV Jer33:16–20, odd secondary ROC244–346 vs original Mus.Inv 244,245,246, and 1991 reference 248–276 vs 249–276. Each edition source labelled separately; no invented reason for conflict, no new ancient manuscript, no photo-ink autopsy. One genuine new modern book source record and two mutation tests for distinct edition locators and photo/rights hold. 101 source records, 289 core tests, 0 original photo collation, 0 external scholarly or Product approvals.",
+      "2026-11-10 WAVE24 image-acquisition source audit: via live browser found Brill scholarly reader for 4Q72 urn:cts:ancJewLit:dss.4q72.dsbo-eng2:f1i-f6, directly observed no-right-credentials page; secondary request HTTP403; version/type unverified as image so not called photo URL. Publisher image access guide says photos supplied from PAM/IAA, but no actual picture pixels loaded. DJD XV 1997 21.4MB third-party PDF web screenshot error 400 TOO_LARGE, live second browser only filename; full plate content/presence in PDF UNKNOWN. Open Dead Sea explicit licensing states its modern research text data CC BY-NC 4.0, original photos only outbound to IAA or Israel Museum, no derived reprint rights. Existing Tov source row and dossier16 updated, 101 records/289 tests unchanged, NG10/rights/Product HOLD."
+    ],
+    "stillOpen": [
+      "W70 exact-head Actions CI PENDING, expected 732 aggregate tests = 321+21+319+24+18+29; previous W69 exact SHA 58c5c30d all 6 workflows SUCCESS with 731/731. LYONS 1983 original Chapter2 p16 list Ex17:16 is one word but own photo autopsy and native resolution PDF screenshot unable: source proves author's report, not physical glyph by us; original Yeivin p82 unread. Cambridge T-S NS282.88 7th/8th c Ex17:5–18:14 INCOMPLETE candidate only, require proof 17:16 extant before variant claims. Weiss 2026 original pp242–272, Breuer original p260–261 n1, BHS/Göttingen original apparatus hold; independent source critical collations 0, external scientific/rights/Product approvals 0.",
+      "Authorized 4Q72 original manuscript photo from Brill or IAA with exact editor frg55ii Jer33:16–20 physical image match; Brill reader denies credentials HTTP403, no photo image/URN verified.",
+      "DJD XV actual PDF photographic-plate presence not verified; Tov 1991 OBO109 I–VII ZORA Anubis blocked; 1997 XXX–XXXVI original raster plates not viewed.",
+      "IAA B360205 plate245 Frag6 vs DJD frg55ii historical frame and glyph correspondence unproven; initial יהוה צד only edited transcript, [קנו] restored, no independent paleo-autopsy.",
+      "NG10 BLOCKED_SOURCE, Ziegler Isaiah9 original apparatus and Vatican Q Isaiah9 image still inaccessible; no scholarly/Product approvals or photo rights, no merge."
+    ]
+  },
+  "originalResearchCheckpoint": {
+    "commit": "70442271aadf1bcae2afeaad729336218874f180",
+    "sourceRecords": 39,
+    "contextAttestations": 105,
+    "baselineRegressionTests": 157,
+    "gitHubCi6Of6Success": true
+  },
+  "architectureProgress": {
+    "NG02": {
+      "level": "FIRST_LINKED_PASS_NOT_EDITORIALLY_APPROVED",
+      "stableAttestationIds": 105,
+      "sourceForeignKeys": 105,
+      "editionForeignKeys": 105,
+      "canonicalEditions": 4,
+      "curatedClaims": 87,
+      "locusIdMissingHistorically": 55,
+      "editionSelectionRecheckHolds": 0,
+      "notes": "Structural 105/105 claim coverage and research-side 105/105 locator map; actual internal independent locked contracts 50/50 inline plus 22/22 general no-inline snapshots pinned against original source/edition/rights. 55 old V1 locusId absent remain by design. No external runtime/deploy/zip/Product versioned dual-read contract; all scientific/rights/Product gates remain HOLD. Structural NG-02 acceptance closed after 6/6 exact-SHA CI; no source, manuscript, rights, Product or deployment promotion.",
+      "typedClaimRelations": 75,
+      "editionSpecificDigitalVerseRechecksCompleted": 22,
+      "attestationsLinkedToClaims": 105,
+      "attestationsWithoutClaimReferences": 0,
+      "divineReferentAddresseeControls": 3,
+      "semanticScopeAudits": 15,
+      "scholarlyClaimApprovals": 0,
+      "propheticRoyalCityClaims": 3,
+      "sourceRegisterEntries": 48,
+      "rockReferentAttestations": 5,
+      "rockPronounVerse30AwaitingDiscourseReview": true,
+      "immanuelDistinctEvidenceLociGuarded": 5,
+      "revelationSpeakerEditionAttestations": 6,
+      "historicalMissingLocusIdsRecounted": 55,
+      "lexicalReferentAndNamedObjectGuards": 8,
+      "covenantShepherdAttestationsGuarded": 8,
+      "johnEgoDiscourseGuards": 4,
+      "yirehNissiPlaceAltarExplanationGuards": 4,
+      "shaddaiSabaothSpeakerGuards": 8,
+      "elyonQannaSpeakerNameGuards": 6,
+      "danielRevelationDiscourseGuards": 6,
+      "adonaiQedoshYahContextGuards": 8,
+      "hagarOlamGibborHymnGuards": 5,
+      "finalNg02OriginalTextContextGuards": 9,
+      "locusCompatResolvedTotal": 105,
+      "locusCompatPreservedInline": 50,
+      "locusCompatSidecarAliases": 55,
+      "locusCompatLegacyInlineMissing": 55,
+      "locusCompatRegressionTests": 24,
+      "consumerMutationPolicy": "V1_PRESERVED_SIDECAR_OPT_IN_V2_ONLY_AFTER_EXTERNAL_CONTRACT_TEST",
+      "consumerContractPinnedInline": 50,
+      "consumerContractPinnedGeneralNoLocus": 22,
+      "consumerContractRegressionTests": 29,
+      "consumerContractExternalVerified": 0,
+      "consumerMigrationV2Approvals": 0,
+      "consumerVerificationStatus": "INTERNAL_50_INLINE_22_GENERIC_VALIDATED_EXTERNAL_RUNTIME_NOT_VERIFIED",
+      "externalSourceControlPinnedRepos": 3,
+      "externalSourceControlFilesRead": 8,
+      "externalRuntimeConsumersVerified": 0,
+      "structuralClosure": "DONE_RESEARCH_GRAPH_ONLY_exactSHA_ff6199a"
+    }
+  },
+  "editorialExecution": {
+    "asOf": "2026-11-14",
+    "owner": "ИМЕНА БОГА/11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md §0a/§3b",
+    "state": "SELF_PLAN_AUDIT_RECONCILED_TWO_DELIVERABLES_CH03_EDITORIAL_GAPS_AND_EX17_BOUNDED_READER_FRAGMENT_NO_SCHOLARLY_APPROVAL",
+    "readerChapterCountApproved": null,
+    "subjectDirectionsProvisional": 14,
+    "readerManuscriptsAccepted": 0,
+    "twoActiveDeliverables": [
+      {
+        "id": "CH-PILOT-03",
+        "kind": "READER_MANUSCRIPT_PILOT",
+        "target": "El, Elohim and Shaddai with primary syntax, speakers, referents and unsettled etymology",
+        "acceptance": "One continuous Russian reader chapter distinguishing Elohim morphological number and referents, El Elyon within Gen14 narrative, direct self-declaration El Shaddai and Isaac blessing, disputed etymology with bounded competing academic explanation and separate scholarly-rights HOLD appendix.",
+        "status": "ACTIVE_BOUNDED_SOURCE_GAP_TRIAGE_INTERNAL_ONLY_EXTERNAL_SCHOLARLY_REVIEW_PENDING_NOT_EDITORIAL_READY",
+        "file": "ИМЕНА БОГА/reader/CH-PILOT-03_EL_ELOHIM_SHADDAI.md",
+        "verification": "Research reader chapter ≈3109 whitespace-separated words + research/editorial apparatus; Wave51 condensed Deir Alla from 2651-word embedded main excursion to 309-word bounded narrative, preserving former complete research text and two alternative images in internal scholarly appendix, keeping original CC0 museum photo in reading. Wave52 adds section-claim-source crosswalk for 32 headings and 25 distinct claim IDs with 18 negative regressions. Existing two internal adversarial Hebrew-source passes remain exactly two, not an external review; no independent scientific, rights or Product acceptance. W74 original MT direct Ruth1:20–21, Job5:17/42:7–9 editorial reassessment committed in CH03; original 105 attestation IDs untouched, source graph gap disclosed in crosswalk; first 3 pilot chapters unchanged, no reviewer approval.",
+        "nextReview": "CH03 Ruth/Job original MT author-context review DONE only as a bounded paragraph-level edit, but no matching current CLM/ATT rows in original locked 105; preserve explicit SOURCE_GRAPH_HOLD instead of new fabricated IDs. No Gill/Berkhof/Bavinck claim in CH03 manuscript: these three are a separate CH01 crosswalk/editorial queue (not a third active deliverable). Check original Naomi/Eliphaz nuance if new Tier1/2 evidence emerges; independent external original language/rights review still pending."
+      },
+      {
+        "id": "NG-04",
+        "kind": "BOUNDED_EX17_READER_FRAGMENT_ADVERSARIAL_EDIT_NOT_FULL_CHAPTER",
+        "target": "Exodus 17:15–16 reader explanation inside existing dossier23: altar name, MT hand/throne, LXX hidden hand, one-/two-word Or4445/Aleppo status and Masorah layer uncertainty",
+        "acceptance": "Sentence-level five-claim review: printed MT and LXX are attributed and separated; conjecture not promoted; Dovi/Lyons about same Or4445 not counted as two manuscripts; lost Aleppo leaf not observed; specific Masorah note not palaeographically dated. Apply local text fix if claim fails; otherwise evidence-limited editorial STOP and NG04 BLOCKED_SOURCE.",
+        "status": "ACTIVE_TEXT_EDIT_ONLY_TASK_NG04_BLOCKED_SOURCE_NO_INDEPENDENT_ORIGINAL_COLLATION",
+        "file": "ИМЕНА БОГА/23_YIREH_NISSI_ANSWER_PLACE_MOUNTAIN_EDITION_CRUX_20261107.md",
+        "verification": "Wave73 added a bounded connected prepublication reader passage inside research dossier, NOT a fourth reader chapter and NOT independent scholarly approval; preceding exact SHA 29e52b49 had 6/6 CI and 732/732. W74 targeted Weiss counterargument added to existing dossier23 reader excerpt: own author abstract says accentuation SEEMS two-word and postulates later Aleppo joining correction; no original manuscript photo or published full Hebrew article claimed.",
+        "nextReview": "If original Weiss article 242–272 or native Or4445 f59v / original printed BHS/Göttingen/Yeivin/Breuer pages become verifiably accessible, inspect exact text; otherwise STOP_DISCOVERY, leave NG04 BLOCKED_SOURCE. No fourth chapter. Treat Lyons/Dovi two authored reports as one physical manuscript's reading; Masorah marginal date unresolved."
+      }
+    ],
+    "nextChapterCandidates": [],
+    "discoveryStop": "STOP_SYSTEMATICS_DISCOVERY_AFTER_GILL_BERKHOF_BAVINCK_UNTIL_SPECIFIC_MANUSCRIPT_GAP",
+    "sourcePolicy": "SECONDARY_B1_AUTHOR_ATTRIBUTED_NOT_CRITICAL_WITNESS",
+    "publicationGate": "ALL_PRODUCT_RIGHTS_SCHOLARLY_HOLDS_REMAIN",
+    "readerManuscriptsDrafted": 3,
+    "internalAdversarialPasses": 2,
+    "independentScholarlyReviewsAccepted": 0,
+    "ng03OriginalDossiersReviewed": 10,
+    "ng03FinalMatrix": "ИМЕНА БОГА/11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md §0a: ten-row typed supersession authority matrix",
+    "ch02InternalAdversarialPasses": 1,
+    "chapterRegister": [
+      {
+        "id": "CH-PILOT-01",
+        "kind": "READER_MANUSCRIPT_PILOT",
+        "target": "What does Scripture mean by the name of God?",
+        "acceptance": "One continuous readable manuscript distinguishing God's revealed name, proper name, title, attribute, predicate and named object, primary verses, one strong alternative, and evidence/rights limitations.",
+        "status": "EXTERNAL_INDEPENDENT_PEER_REVIEW_PENDING_NOT_EDITORIAL_READY",
+        "file": "ИМЕНА БОГА/reader/CH-PILOT-01_WHAT_SCRIPTURE_CALLS_GODS_NAME.md",
+        "verification": "10_FACTUAL_REVIEW_POINTS_FIXED_WITH_DIGITAL_MT_GILL_BERKHOF_BAVINCK_AND_NET_NOT_INDEPENDENT_PEER_REVIEW; SECOND_EDITORIAL_SOURCE_CHECK_GEN16_13_14_HAGAR_DIRECT_NAME_VS_WELL_AND_EX3_14_REDUNDANCY_FIX",
+        "nextReview": "External independent domain reviewer needed for biblical languages, systematic-theology attribution, book editions and rights; current assistant's second source check is NOT external independent peer review. Preserve 0 scientific approvals."
+      },
+      {
+        "id": "CH-PILOT-02",
+        "kind": "READER_MANUSCRIPT_PILOT",
+        "target": "YHWH and Ehyeh in Exodus 3 and 6",
+        "acceptance": "One contiguous narrative chapter using original MT Exod 3:12/14/15 and 6:2-8, edition-aware Greek LXX, contrasting attributed Calvin/Rashi/modern scholarship, separate scholarly/rights/critical apparatus HOLDs.",
+        "status": "RESEARCH_MANUSCRIPT_REVISED_INTERNAL_ADVERSARIAL_PASS_1_DONE_EXTERNAL_INDEPENDENT_REVIEW_PENDING_NOT_EDITORIAL_READY",
+        "sourceFiles": [
+          "02_YHWH_EHYEH_CRITICAL_DOSSIER.md",
+          "10_YHWH_AND_EL_PERSONAL_NAME_VS_GENERIC_DESIGNATION.md",
+          "13_TMSJ_2024_DIVINE_NAME_AND_TRANSLATION_SCHOLARLY_REVIEW.md"
+        ],
+        "file": "ИМЕНА БОГА/reader/CH-PILOT-02_YHWH_EHYEH_EXODUS_3_6.md",
+        "verification": "CONTIGUOUS_~2700_WORD_READER_MANUSCRIPT_WITH_SEPARATE_EDITORIAL_SOURCE_RIGHTS_HOLD_APPARATUS; MT_EX3_EX6_EX15_AND_PUBLISHER_RAHFLS_HANHART_GREEK_HTML; ATTRIBUTED_RASHI_CALVIN_ALTERNATIVE; NOT_CRITICAL_COLLATION; INTERNAL_PASS_1_EX6_3_NIPHAL_ORIGINAL_VOCALIZATION_FIXED_GREEK_EDITION_AND_COMPETING_EXEGESIS_SCOPED",
+        "nextReview": "Independent external philology/theology reviewer or editorial board; critical MSS/edition rights remain HOLD. Next writer chapter CH-PILOT-03 only after separate editorial priority decision, no broad discovery."
+      },
+      {
+        "id": "CH-PILOT-03",
+        "kind": "READER_MANUSCRIPT_PILOT",
+        "target": "El, Elohim and Shaddai with primary syntax, speakers, referents and unsettled etymology",
+        "acceptance": "One continuous Russian reader chapter distinguishing Elohim morphological number and referents, El Elyon within Gen14 narrative, direct self-declaration El Shaddai and Isaac blessing, disputed etymology with bounded competing academic explanation and separate scholarly-rights HOLD appendix.",
+        "status": "RESEARCH_MANUSCRIPT_REVISED_INTERNAL_ADVERSARIAL_PASS_2_EDITORIAL_CONDENSATION_W51_AND_SECTION_CROSSWALK_W52_DONE_EXTERNAL_SCHOLARLY_REVIEW_PENDING_NOT_EDITORIAL_READY",
+        "file": "ИМЕНА БОГА/reader/CH-PILOT-03_EL_ELOHIM_SHADDAI.md",
+        "verification": "Research reader chapter ≈3109 whitespace-separated words + research/editorial apparatus; Wave51 condensed Deir Alla from 2651-word embedded main excursion to 309-word bounded narrative, preserving former complete research text and two alternative images in internal scholarly appendix, keeping original CC0 museum photo in reading. Wave52 adds section-claim-source crosswalk for 32 headings and 25 distinct claim IDs with 18 negative regressions. Existing two internal adversarial Hebrew-source passes remain exactly two, not an external review; no independent scientific, rights or Product acceptance.",
+        "nextReview": "Independent external Hebrew/Aramaic philology + theology and editions/rights; section-level claims trace explicitly has open Naomi/Job and Shaddai etymology questions, and does not grant publication."
+      }
+    ],
+    "ch03InternalAdversarialPasses": 2,
+    "externalPeerReviewQueue": [
+      "CH-PILOT-01",
+      "CH-PILOT-02",
+      "CH-PILOT-03"
+    ],
+    "nextDistinctReaderQuestion": "UNSELECTED: assess distinct topic against 14 provisional directions and available sources after checking editorial reviews; no automatic CH-PILOT-04.",
+    "ng12ShaddaySubtopic": {
+      "state": "COMPETING_HYPOTHESES_RECONCILED_WITH_EXACT_SOURCES_ETYM_HOLD",
+      "asOf": "2026-11-08",
+      "readerFile": "ИМЕНА БОГА/reader/CH-PILOT-03_EL_ELOHIM_SHADDAI.md",
+      "sourceMatrix": "ИМЕНА БОГА/03_PATRIARCHAL_EL_TITLES_AND_REFERENTS.md §3.3",
+      "namedPositions": [
+        {
+          "author": "Aren M. Wilson-Wright",
+          "year": 2019,
+          "meaning": "HELPER",
+          "access": "PUBLISHED_ORIGINAL_SELECTED_PP_149_155_160_READ"
+        },
+        {
+          "author": "Heath D. Dewrell",
+          "year": 2024,
+          "meaning": "DESTROYER",
+          "access": "ABSTRACT_ONLY"
+        },
+        {
+          "author": "Aleksander Krogevoll",
+          "year": 2025,
+          "meaning": "MOUNTAIN",
+          "access": "PUBLISHER_SAMPLE_TOC_PRINTED_PP_19_25_READ_FULL_CH3_4_HOLD"
+        },
+        {
+          "author": "Anna Angelini",
+          "year": 2022,
+          "meaning": "GREEK_TRANSLATION_HISTORY_VARIABLE",
+          "access": "PUBLISHER_ABSTRACT_ONLY"
+        },
+        {
+          "author": "Brown-Driver-Briggs",
+          "year": 1906,
+          "meaning": "ETYMOLOGY_DUBIOUS_ALTERNATIVE_HISTORICAL_HYPOTHESES",
+          "access": "FULL_DIGITAL_LEXICON_ENTRY_H7706_READ"
+        },
+        {
+          "author": "Margaretha J. Kruger",
+          "year": 2023,
+          "meaning": "CONTEXTUAL_PRAGMATIC_JOBS_SPEECH_AND_MULTIPLE_ETYMOLOGIES",
+          "access": "PUBLISHER_FULL_HTML_SELECTED_SECTIONS_READ"
+        }
+      ],
+      "unresolved": [
+        "HALOT_FULL_LEXICON_ENTRY",
+        "KROGEVOLL_2025_CH3_PP51_78_CH4_PP79_108",
+        "DEWRELL_2024_FULL_ARTICLE_PP297_302",
+        "ANGELINI_2022_FULL_ARTICLE_PP235_249",
+        "ORIGINAL_AKKADIAN_UGARITIC_DEIR_ALLA_WITNESSES",
+        "OTHER_LEXEMES_EL_ELOHIM_ELOAH_SABAOTH_IN_NG12",
+        "INDEPENDENT_SCHOLARLY_PEER_REVIEW",
+        "LICENSE_AND_PRODUCT_APPROVAL"
+      ],
+      "scientificApproval": false,
+      "editorialVerdict": "NO_UNIQUELY_ATTESTED_ETYM; traditional Almighty translation history is not derivation; confident modern alternatives are author-specific and directly conflict; keep Shadday original in key reader passages; all critical and Product holds unchanged."
+    },
+    "ng12SabaothSubtopic": {
+      "state": "LEXICAL_NUMBER_CONTEXTS_AND_OPPOSING_ORIGIN_EXPLANATIONS_SOURCE_BOUNDED_ORIGIN_HOLD",
+      "asOf": "2026-11-08",
+      "sourceMatrix": "ИМЕНА БОГА/06_HOSTS_JEALOUS_ROCK_HOLY_ADONAI_ELOHIM.md §2 NG-12",
+      "lemma": "צְבָאוֹת",
+      "verified": "PLURAL_OF_צָבָא_HEBREW_MT_SOURCE_REFERENTS_NT_GREEK_LXX_PUBLISHER_ISA6_3",
+      "competingInterpretations": [
+        "ARMIES_OF_ISRAEL_AND_DIVINE_WARRIOR",
+        "HEAVENLY_COUNCIL_KING_ON_CHERUBIC_THRONE",
+        "ALL_HOSTS_OF_CREATION",
+        "SYNTACTIC_APPOSITION_OR_ALTERNATE_VERBAL_DERIVATIONS_NOT_ACCEPTED"
+      ],
+      "sources": [
+        {
+          "author": "Brown-Driver-Briggs",
+          "year": 1906,
+          "locator": "H6635",
+          "access": "COMPLETE_DIGITAL_LEXICON_ENTRY_READ_NOT_PRINT_OR_HALOT"
+        },
+        {
+          "author": "Bogdan Șopterean",
+          "year": 2024,
+          "locator": "ROOTS 12/2 pp56-68 DOI 10.24193/ROOTS.2024.2.4",
+          "access": "OFFICIAL_FULL_PDF_AVAILABLE_SELECTED_TEXT_SECTIONS_READ_PAGE_IMAGES_PRINTED_56_59_63_VERIFIED"
+        },
+        {
+          "author": "Máire Byrne",
+          "year": 2006,
+          "locator": "PhD Maynooth chapter2 sections 11-12 printed pp48-55",
+          "access": "ARCHIVED_FULL_THESIS_PDF_AVAILABLE_SELECTED_SECTIONS_READ_PRINTED_P51_IMAGE_VERIFIED"
+        },
+        {
+          "author": "Rahlfs-Hanhart",
+          "year": 2006,
+          "locator": "Deutsche Bibelgesellschaft LXX Isaiah6:3",
+          "access": "OFFICIAL_GREEK_HTML_VERSE_READ_NOT_MSS_COLLATION"
+        },
+        {
+          "author": "SBLGNT",
+          "year": 2010,
+          "locator": "Romans9:29; James5:4",
+          "access": "EDITION_DIGITAL_TEXT_READ"
+        }
+      ],
+      "negativeControls": [
+        "NOT_DERIVED_FROM_SABBATH",
+        "ISA_6_SERAPHIM_CANNOT_UNIVERSALIZE_ANGEL_ONLY_ORIGIN",
+        "1SAM17_45_ISRAEL_ARMY_CANNOT_EXCLUDE_HEAVENLY_CONTEXT",
+        "ROM9_29_QUOTES_ISA1_9_NOT_ISA6_3",
+        "LXX_ISA6_GREEK_TRANSLITERATION_NOT_AUTOMATIC_ALL_LXX_PANTOKRATOR"
+      ],
+      "unresolved": [
+        "HISTORICAL_ORIGIN_AND_DATING_OF_YHWH_SABAOTH",
+        "HALOT_ENTRY_FULL",
+        "BHS_BHQ_GOTTINGEN_ISAIAH_CRITICAL_SOURCE_AND_WITNESSES",
+        "EPIGRAPHIC_HISTORICAL_EVIDENCE",
+        "INDEPENDENT_PEER_REVIEW"
+      ],
+      "scientificApproval": false,
+      "verdict": "MORPHOLOGICAL_PLURAL_ESTABLISHED_SEMANTIC_REFERENTS_VARY_ORIGINAL_TITLE_DERIVATION_NOT_PROVEN_RUSSIAN_TRANSLATION_SABAOTH_RETAINED"
+    },
+    "ng12ElEloahElohimSubtopic": {
+      "state": "CONTEXTUAL_REFERENTS_AND_COMPETING_HISTORICAL_MORPHOLOGY_SOURCE_BOUNDED_DIACHRONIC_HOLD",
+      "asOf": "2026-11-08",
+      "dossier": "ИМЕНА БОГА/09_EXTENSION_FORMS_LANGUAGE_AND_REFERENTS.md §3 NG-12",
+      "reader": "ИМЕНА БОГА/reader/CH-PILOT-03_EL_ELOHIM_SHADDAI.md",
+      "forms": [
+        "אֵל",
+        "אֱלוֹהַּ",
+        "אֱלֹהִים",
+        "אֱלָהּ"
+      ],
+      "negativeLoci": [
+        {
+          "verse": "Deut32:17",
+          "control": "ELOAH_NEGATED_AND_ELOHIM_FOREIGN_GODS_NOT_YHWH_PROPER_NAMES"
+        },
+        {
+          "verse": "Dan11:39",
+          "control": "ELOAH_NEKHAR_FOREIGN_DEITY_IN_HEBREW_SECTION_NOT_ISRAEL_GOD"
+        },
+        {
+          "verse": "Gen1:1",
+          "control": "ELOHIM_MORPHOLOGICALLY_PLURAL_BARA_SINGULAR_VERB_NOT_TRINITY_PROOF"
+        },
+        {
+          "verse": "Dan2:18-19",
+          "control": "ARAMAIC_ELAH_DISTINCT_LANGUAGE_FROM_HEBREW_ELOAH"
+        }
+      ],
+      "sources": [
+        {
+          "author": "Brown Driver Briggs",
+          "year": 1906,
+          "locators": [
+            "H410",
+            "H430",
+            "H433"
+          ],
+          "access": "THREE_FULL_DIGITAL_LEXICON_ENTRIES_READ_NOT_PRINTED_OR_HALOT",
+          "position": "BDB_ELOAH_PROBABLY_INFERRED_AS_SINGULAR_FROM_ELOHIM"
+        },
+        {
+          "author": "Benjamin D Suchard",
+          "year": 2025,
+          "locator": "JSOT 49/4 460-474 DOI 10.1177/03090892251332286",
+          "access": "FULL_PUBLISHER_HTML_READ_CC_BY_4",
+          "position": "INHERITED_PROTO_SEMITIC_ILA_H_STEM_BROKEN_PLURAL_HISTORICAL_RECONSTRUCTION_AUTHOR_ARGUMENT"
+        },
+        {
+          "author": "Encyclopaedia Judaica",
+          "year": null,
+          "locator": "God Names of sections El and Eloah Elohim",
+          "access": "SECONDARY_ENCYCLOPAEDIA_SELECTED_SECTIONS_READ_REPRODUCTION",
+          "position": "EL_ETYM_UNCERTAIN_MIGHT_MAY_BE_DERIVED_FROM_DEITY_NAME_ELOAH_LENGTHENED_EL"
+        },
+        {
+          "author": "Bernard Gosse",
+          "year": 2024,
+          "locator": "Old Testament Essays 36/3 635-648 DOI 10.17159/2312-3621/2023/v36n3a6",
+          "access": "JOURNAL_ABSTRACT_ONLY",
+          "position": "LITERARY_DEPENDENCY_DEUT32_PS18_PROVERBS30_NOT_WORD_ETYM"
+        }
+      ],
+      "unresolved": [
+        "HALOT_LEXICON_FULL_ORIGINAL_EDITION",
+        "ORIGINAL_UGARITIC_AKKADIAN_ARABIC_SOUTH_ARABIAN_EPIGRAPHIC_WITNESSES",
+        "CRITICAL_BHS_BHQ_MANUSCRIPT_APPARATUS_AND_LXX_WHEN_NEEDED",
+        "TWO_FULL_INDEPENDENT_PRIMARY_COMPARATIVE_ARGUMENTS_FOR_EACH_SPECIFIC_ETYMOLOGY",
+        "INDEPENDENT_PHILOLOGICAL_PEER_REVIEW",
+        "SOURCE_AND_REUSE_RIGHTS"
+      ],
+      "verdict": "EL_ELOAH_ELOHIM_DISTINCT_SYNTACTIC_REFERENCE_AND_LANGUAGE_WHILE_HISTORICAL_ROOT_PROPOSALS_CONFLICT_NOT_DEMONSTRATED_AS_CERTAIN; DENY_PROPER_NAME_EXPORT_WITHOUT_CONTEXT",
+      "scientificApproval": false
+    },
+    "criticalSourceAcquisition20261108": {
+      "state": "PUBLISHER_IDENTITIES_VERIFIED_BHQ_EXODUS_NOT_PUBLISHED_EPIGRAPHIC_LOCUS_FOUND_CRITICAL_COLLATION_HOLD",
+      "asOf": "2026-11-08",
+      "owner": "ИМЕНА БОГА/03_PATRIARCHAL_EL_TITLES_AND_REFERENTS.md §3.3 critical-source audit",
+      "editions": [
+        {
+          "kind": "BHQ",
+          "book": "Genesis",
+          "editor": "Abraham Tal",
+          "year": 2016,
+          "locators": [
+            "Gen14:22",
+            "Gen17:1",
+            "Gen35:11"
+          ],
+          "status": "PUBLISHED_OFFICIAL_CATALOG_APPARATUS_NOT_READ"
+        },
+        {
+          "kind": "BHQ",
+          "book": "Deuteronomy",
+          "editor": "Carmel McCarthy",
+          "year": 2007,
+          "locators": [
+            "Deut32:15",
+            "Deut32:17",
+            "Deut32:18"
+          ],
+          "status": "PUBLISHED_OFFICIAL_CATALOG_APPARATUS_NOT_READ"
+        },
+        {
+          "kind": "BHQ",
+          "book": "Job",
+          "editor": "Robert Althann",
+          "year": 2024,
+          "locators": [
+            "Job5:17",
+            "Job42:7"
+          ],
+          "status": "PUBLISHED_OFFICIAL_CATALOG_APPARATUS_NOT_READ"
+        },
+        {
+          "kind": "BHQ",
+          "book": "Ruth",
+          "editor": "Jan de Waard",
+          "year": 2004,
+          "locators": [
+            "Ruth1:20",
+            "Ruth1:21"
+          ],
+          "status": "PUBLISHED_OFFICIAL_CATALOG_APPARATUS_NOT_READ"
+        },
+        {
+          "kind": "BHQ",
+          "book": "Exodus",
+          "editor": "Peter Schwagmeier",
+          "year": null,
+          "locators": [
+            "Exod3:14",
+            "Exod6:3"
+          ],
+          "status": "IN_PREPARATION_OFFICIAL_PUBLISHER_NO_SUCH_PUBLISHED_VOLUME"
+        },
+        {
+          "kind": "BHS",
+          "book": "Exodus",
+          "editors": "Karl Elliger; Wilhelm Rudolph; Adrian Schenker revised 1997",
+          "year": 1997,
+          "locators": [
+            "Exod3:14",
+            "Exod3:15",
+            "Exod6:3"
+          ],
+          "status": "PUBLISHED_STANDARD_WITH_APPARATUS_NOT_READ_READERS_EDITION_HAS_NO_CRITICAL_APPARATUS"
+        },
+        {
+          "kind": "GOTTINGEN_LXX",
+          "book": "Exodus",
+          "editors": "J.W. Wevers; Udo Quast",
+          "volume": "II/1",
+          "year": 1991,
+          "locators": [
+            "Exod3:14",
+            "Exod6:3"
+          ],
+          "status": "PUBLISHED_EDITORIAL_CATALOG_APPARATUS_NOT_READ_NETS_BASED_ON_EDITION_NOT_CRITICAL_APPARATUS"
+        },
+        {
+          "kind": "GOTTINGEN_LXX",
+          "book": "Isaiah",
+          "editor": "Joseph Ziegler",
+          "volume": "XIV",
+          "year": 1983,
+          "locators": [
+            "Isa6:3"
+          ],
+          "status": "PUBLISHED_EDITORIAL_CATALOG_APPARATUS_NOT_READ"
+        },
+        {
+          "kind": "HALOT",
+          "book": "Lexicon",
+          "editor": "Koehler Baumgartner Stamm",
+          "year": null,
+          "locators": [
+            "El",
+            "Eloah",
+            "Elohim",
+            "Shadday",
+            "Sabaoth"
+          ],
+          "status": "INSTITUTIONAL_ONLINE_FULL_TEXT_LISTED_NO_LEMMA_ACTUALLY_OPENED"
+        },
+        {
+          "kind": "DSSEL",
+          "book": "Dead Sea Scrolls Biblical Texts",
+          "year": null,
+          "locators": [],
+          "status": "PUBLISHER_CORPUS_IMAGES_AND_TRANSCRIPTIONS_IDENTIFIED_NO_FRAGMENT_AND_VERSE_COLLATION"
+        }
+      ],
+      "epigraphy": {
+        "artifact": "Deir Alla plaster inscription, Combination I lines 5-6",
+        "primaEditio": "J Hoftijzer and G van der Kooij Aramaic Texts from Deir Alla 1976 324 pages 33 plates",
+        "earlyStudies": [
+          {
+            "authors": "Andre Caquot and Andre Lemaire",
+            "year": 1977,
+            "pages": "189-208",
+            "access": "ARCHIVE_FRONT_PAGE_HTML_AND_EDITION_METADATA_READ_REST_NOT_VERIFIED"
+          },
+          {
+            "author": "Andre Lemaire",
+            "year": 1985,
+            "pages": "270-285",
+            "access": "ARCHIVE_FRONT_PAGE_HTML_AND_EDITION_METADATA_READ_REST_NOT_VERIFIED"
+          },
+          {
+            "author": "Aren M Wilson-Wright",
+            "year": 2019,
+            "pages": "153",
+            "access": "FULL_PUBLISHED_ARTICLE_AVAILABLE_SELECTED_P153_ORIGINAL_VISUAL_SCREENSHOT_READ",
+            "locus": "plural šdyn in parallel to ʾlhn; source proposes association, not direct singular El Shadday proof"
+          },
+          {
+            "author": "Anna Angelini",
+            "year": 2021,
+            "access": "BRILL_INDEXED_SELECTED_TEXT_READ_PDF_PAGE_SCREENSHOT_HTTP403",
+            "scope": "Deuteronomy32:17 Shedim and possible analogy to Shadday only author-specific theory; CC BY NC ND 4"
+          }
+        ],
+        "originalFacsimileAutopsy": false
+      },
+      "targetedNext": [
+        "Get existing BHS STANDARD apparatus exact Exod3:14-15 and Exod6:3; do NOT wait for BHQ Exodus",
+        "Get published BHQ Gen14:22 Gen17:1 Deut32:15-18 Job5:17 Ruth1:20-21 textual apparatus pages",
+        "Get Göttingen Wevers Quast Exodus 1991 and Ziegler Isaiah 1983 original Greek variant apparatus",
+        "Get Hoftijzer van der Kooij 1976 plates and Hackett 1984 pp25/86-87 Deir Alla Combination I lines5-6, collate exact inscription alternative readings",
+        "Get actual HALOT lemma text via authorized library account and Brill DSS witness photos only for precise attested fragments",
+        "Keep Anglo NETS Exodus as derivative English text with declared Wevers base, not independent Greek variant witness"
+      ],
+      "criticalCollationsCompleted": 0,
+      "externalReviewsCompleted": 0,
+      "productApproval": false
+    },
+    "ng12DeirAllaScribal2021": {
+      "state": "ATTRIBUTED_SCHOLARLY_COPY_HYPOTHESIS_SELECTED_PAGES_VISUALLY_READ_NO_COLLATION",
+      "sourceId": "SRC-LEMAIRE-DEIRALLA-SCRIBAL-2021",
+      "locators": "Lemaire 2021 OBO291 pp185–186 visually verified, PDF zero-index 199–200",
+      "open": [
+        "Original 1976 transcription/plates",
+        "1977 Caquot/Lemaire full article",
+        "1985 Lemaire full article",
+        "Independent dating/epigraphic collation",
+        "External peer review and Product rights"
+      ],
+      "published": false
+    },
+    "ng12Hackett1986": {
+      "sourceId": "SRC-HACKETT-DEIRALLA-FIRSTHAND-1986",
+      "state": "SELECTED_ORIGINAL_SCHOLARLY_PAGES_VISUALLY_VERIFIED_NOT_INDEPENDENT_EPIGRAPHIC_COLLATION",
+      "verifiedPages": "1986 The Biblical Archaeologist 49/4 printed pp216,220-221",
+      "sourceBoundaries": [
+        "HACKETT_PERSONAL_AMMAN_MUSEUM_1979_1981",
+        "COMBINATION_I_AUTHOR_RECONSTRUCTION_SHDYN_ʾLHN",
+        "HYPOTHETICAL_REPOINTING_BIBLICAL_SHEDIM_CONTESTED_WEIPPERT_1991",
+        "THOMPSON_BACKGROUND_INSET_DISTINCT_AUTHOR",
+        "PHOTOS_COPYRIGHTED"
+      ],
+      "criticalCollationsCompleted": 0,
+      "independentReviewsCompleted": 0,
+      "productApprovals": 0
+    },
+    "ng12Lemaire1984Review": {
+      "sourceId": "SRC-LEMAIRE-REVIEW-HACKETT-1984-P142",
+      "state": "ONE_ORIGINAL_CRITICAL_REVIEW_PAGE_DIRECTLY_READ_NOT_WHOLE_REVIEW_OR_BOOK",
+      "read": "Lemaire review Syria 61 1984 printed page142 digital archival text",
+      "issues": [
+        "Ve/XVc proposed positioning and red rule Combination I.1",
+        "line8 sdh scholarly dispute OCR not autopsy",
+        "phase M IX dating probably eighth century vs early seventh-century palaeography"
+      ],
+      "criticalCollationsCompleted": 0,
+      "externalPeerAccepted": 0,
+      "productApproved": 0
+    },
+    "ng12ADAj1979Excavation": {
+      "sourceId": "SRC-ADAJ1979-IBRAHIM-VANDERKOOIJ-PHASEIX",
+      "state": "ORIGINAL_ARCHAEOLOGICAL_REPORT_TEXT_P49_50_READ_PDF_IMAGES_UNAVAILABLE_HTTP502",
+      "observations": [
+        "Phase IX same as former M at Tell Deir Alla, excavated near 1967 inscription area",
+        "1979 square B/C6 burnt wall/roof debris and 1967 destruction described as earth-shock/fire",
+        "Field authors propose eighth-century BCE for phase IX but call overall archaeological phase dating preliminary",
+        "Samples for C14 still under analysis at time of 1979 report, not proof they were never assessed later"
+      ],
+      "criticalEditionCollations": 0,
+      "directEpigraphyTranscriptions": 0,
+      "photosVisuallyInspected": false,
+      "productApprovals": 0
+    },
+    "ng12Lemaire1985C14": {
+      "sourceId": "SRC-LEMAIRE-DEIRALLA-1985-RADIOCARBON-PP271272",
+      "state": "ARCHIVE_ORIGINAL_AUTHOR_PAGES271_272_READ_RADIOCARBON1976_P16_NOT_DIRECTLY_READ",
+      "firsthandLocators": "CRAI 129/2 1985 pp271–272 digital page text; footnote10 1976 ATDA p16, footnote11 1983 ADAJ p583",
+      "evidenceBoundary": "Lemaire reports circa 800 BCE 70-year error 66 percent C14; raw measurement / radiocarbon curve and first-edition p16 NOT checked; Amos1:1 earthquake linkage conjecture not confirmed; 1979 remaining C14 processing not assertion of no previous tests",
+      "status": "SOURCE_BOUNDARY_RECONCILED_NO_EPIGRAPHIC_COLLATION",
+      "criticalCollations": 0,
+      "externalReviews": 0,
+      "productApprovals": 0
+    },
+    "ng12ADAJ1986TwoSamples": {
+      "sourceId": "SRC-ADAJ1986-IBRAHIM-VANDERKOOIJ-2C14-P142",
+      "state": "ORIGINAL_FIELD_REPORT_P137_AND_P142_PAGE_SCREENSHOTS_VISUALLY_VERIFIED",
+      "primaryEvidence": "ADAJ 30 1986 131–143 original p142 GrN 5633 2690±60 BP and GrN 8119 2590±70 BP; 1986 authors' historical 770–880 BCE calibration on burnt phase IX material, NOT modern recalibration. P137 room/bench/plaster visual, P141 no clear sanctuary and trading/living alternatives text read",
+      "researchLimits": [
+        "No current IntCal calibration",
+        "No exact date of inscription ink or ancient literary precursor",
+        "No proven Amos1:1 earthquake identity",
+        "No demonstrated temple or school",
+        "Not full 1976 editio princeps or epigraphic transcription"
+      ],
+      "criticalEditionCollated": false,
+      "independentPeerReview": false,
+      "productApproval": false
+    },
+    "ng12Weinstein1984VsADAJ1986": {
+      "sourceId": "SRC-WEINSTEIN-1984-DEIRALLA-C14-CONFLICT-P351",
+      "state": "PRINTED_ORIGINAL_1984_P351_VS_1986_P142_SAMPLE_ID_CONFLICT_DOCUMENTED_NOT_RESOLVED",
+      "evidence": "Weinstein1984 p351 GrN5283 2690±60 BP phase M pit; GrN5633 2600±50 BP phase M destruction grain, both cite original 1972 Radiocarbon14 p53. Directly checked excavators' 1986 p142 GrN5633 2690±60 BP, GrN8119 2590±70 BP. Do not hypothesize typo as fact.",
+      "unreadPrimary": "Original 1972 Groningen lab p53 now DIRECT_PUBLISHER_PDF_TEXT_READ, but original ATDA1976 p16 still unread; compare only published values, source report 1986 printing mismatch reason unknown",
+      "negativeControls": [
+        "No silent sample ID reassignment",
+        "No treating 1986 880–770 BCE calibration as verified modern precise date",
+        "No merging pit/destruction provenience",
+        "No Amos1:1 quake identity"
+      ],
+      "criticalCollations": 0,
+      "externalPeerAccepted": 0,
+      "productApproval": 0
+    },
+    "ng12Franken1976SecondaryExcerpt": {
+      "state": "SECONDARY_EXCERPT_CORROBORATES_PUBLISHED_1984_GRN5633_2600PM50_NOT_PRIMARY_PAGE_INSPECTION",
+      "sourceRegistryId": "SRC-DEIRALLA-HOFTIJZER-VANDERKOOIJ-1976-CONTENTS",
+      "crossReferenceId": "SRC-WEINSTEIN-1984-DEIRALLA-C14-CONFLICT-P351",
+      "catalogueUrl": "https://deadseaquake.info/EarthquakeCatalogOfTheDeadSea/Sites/Archaeo/DeirAlla.html",
+      "verificationBoundary": "Franken1976 printed p16 only secondhand reproduction of BB303 / GrN5633=2600±50 BP; directly verified 1972 Cambridge lab PDF p53 + Weinstein1984 original p351 agree, while ADAJ1986 original p142 gives GrN5633=2690±60 BP. Cause not resolved, first edition 1976 p16 not directly inspected.",
+      "statisticalWarning": "Secondary catalogue mixes 2sigma and 66% language; not accepted as independently verified primary coverage",
+      "priorityNextOriginals": [
+        "Hoftijzer/van der Kooij 1976 printed p16 (source confirmation), and epigraphic transcription p173 + original plates",
+        "1986 ADAJ author erratum or correction, if published"
+      ],
+      "criticalEditionCollations": 0,
+      "productApprovals": 0,
+      "independentScholarlyApprovals": 0
+    },
+    "ng12Lab1972Original": {
+      "sourceId": "SRC-VOGEL-WATERBOLK-1972-GRONINGEN-DEIRALLA-P53",
+      "status": "PRIMARY_1972_PUBLISHER_PDF_TEXT_DIRECTLY_READ_PRINTED_P53_WEB_SCREENSHOT_FAILED",
+      "discovery": "Vogel Waterbolk Groningen Radiocarbon Dates X 1972 Radiocarbon 14/1 pp6-110 original laboratory p53 sample GrN5283 B433a 2690±60BP large pit (Waterbolk collected 1964) and GrN5633 BB303 2600±50BP charred grain burned Phase M (van der Waals collected 1967). δ13C -23.3 per mil; acid alkali pretreatment; period tree-ring correction ca 800BCE (not modern).",
+      "contrast": "Original excavators report ADAJ1986 p142 gives GrN5633=2690±60BP, same value assigned by 1972 original to GrN5283 but not a proven typographical error; investigate erratum if available. Lab 1972 uses temple annexes as interpretation, but authors 1986 say no certain sanctuary.",
+      "restriction": "Original 1976 archaeological monograph printed p16 and original inscription 1976 printed p173 plus 33 plates unread; PDF screenshot of original 1972 p53 cannot be rendered in web; no manuscript/inscription physical autopsy; no current calibrated date or precise quake.",
+      "criticalEpigraphicCollations": 0,
+      "independentAcademicApprovals": 0,
+      "productRightsApprovals": 0
+    },
+    "ng12CaquotLemaire1977LineConcordance": {
+      "sourceId": "SRC-CAQUOT-LEMAIRE-DEIRALLA-REASSEMBLY-1977-P193198",
+      "state": "ORIGINAL_AUTHORED_1977_CRITICAL_PUBLICATION_P193_TO198_DIGITAL_PRINT_TEXT_READ_ANCIENT_PHOTOS_UNREAD",
+      "mapping": "Caquot/Lemaire 1977 p193 propose moving Combination I fragments c/a because red writing and suppressing nearly empty first-edition line3; 1977 p196 explicitly maps their line4 to first-edition 1976 line6; hence 1977 p196 sdyn plural-divine-word at OWN LINE6 corresponds to original edited 1976 line8. 1977 p198 own line8(d) sdh alternative to srh in bird list: separate token from sdyn",
+      "sourceGates": [
+        "Do not claim full photo or physical stone/plaster autopsy",
+        "Do not call 1977 shift certain before checking 1976 edition plates and competing Hackett1984",
+        "Do not conflate sdyn title proposal with sdh bird name",
+        "Do not identify biblical singular El Shaddai as directly proven identical to multiple Deir Alla entities",
+        "1977 OCR ancient special characters need image validation"
+      ],
+      "corpusCriticalCollations": 0,
+      "externalIndependentScholarlyApproval": 0,
+      "productApprovals": 0
+    },
+    "readerClaimCrosswalk": {
+      "path": "ИМЕНА БОГА/data/names_reader_claim_crosswalk_v1.json",
+      "validator": "ИМЕНА БОГА/validate_names_reader.py",
+      "negativeTests": "ИМЕНА БОГА/test_validate_names_reader.py",
+      "verifiedReaderChapters": 3,
+      "tracedReaderSections": 32,
+      "selectedUniqueResearchClaims": 25,
+      "tests": 18,
+      "crosswalkState": "SECTION_LEVEL_TRACE_ONLY_NO_PARAGRAPH_BY_PARAGRAPH_FACTUAL_OR_EXTERNAL_REVIEW_APPROVAL",
+      "knownGaps": [
+        "CH01 Gill/Berkhof/Bavinck interpreted theology not source-ID-mapped in main claim registry",
+        "CH03 Naomi Ruth1 and Eliphaz Job5/42 loci not represented as distinct 105-attestation/87-claim entries",
+        "CH03 competing Shaddai etymologies and Deir Alla ancient original critical photo unresolved"
+      ],
+      "externalScientificReviewComplete": false,
+      "publicationState": "BLOCKED"
+    },
+    "readerMainTextStatus20261111": "CH01_2415_WORDS;CH02_2222_WORDS;CH03_3109_WORDS_AFTER_W51_CONDENSATION; all not editorial ready; exact counts by whitespace tokenization from before appendix.",
+    "readerResearchAppendixPreservation20261111": "CH03 native 2651-word Deir Alla section moved intact except original CC0 image block retained in reader, 30 source hyperlinks and 2 other images preserved in editorial appendix. Scientific facts, conflicting reconstruction and rights remain held.",
+    "selfPlanAudit": {
+      "auditDate": "2026-11-14",
+      "checkedPredecessorHeadSha": "29e52b49a9f445246e072898d009e98f02d74794",
+      "verifiedPredecessorWorkflows": 6,
+      "verifiedPredecessorNamesTests": 732,
+      "scope": "Only existing Research PR379 and canonical JSON/master; no Product/site/rights changes",
+      "results": [
+        {
+          "id": "SPA-01",
+          "severity": "P0",
+          "result": "CORRECTED_THIS_AUDIT",
+          "finding": "W70 nextAction and W69 CI as CURRENT despite W73",
+          "evidence": "Exact predecessor Actions 43474419588, 6/6 success / 732 tests"
+        },
+        {
+          "id": "SPA-02",
+          "severity": "P0",
+          "result": "BOUNDED_MT_TEXT_EDIT_DONE_CLAIM_GRAPH_HOLD",
+          "finding": "CH03 crosswalk 32 sections has distinct source gaps Naomi/Job and historical theologian attributions; no external scholarly review",
+          "evidence": "names_reader_claim_crosswalk_v1.json and chapter03"
+        },
+        {
+          "id": "SPA-03",
+          "severity": "P0",
+          "result": "BOUNDED_READER_WEISS_COUNTERARGUMENT_EDIT_DONE_NG04_SOURCE_HOLD",
+          "finding": "Ex17 reader text exists inside dossier23; NOT a full CH04 or verified original folio autopsy",
+          "evidence": "dossier23 Wave73; NG04 BLOCKED_SOURCE"
+        },
+        {
+          "id": "SPA-04",
+          "severity": "P1",
+          "result": "DOCUMENTATION_HYGIENE_HOLD",
+          "finding": "PR has 619 commits/66 files and top CURRENT Wave63, reader orientation obscured",
+          "evidence": "GitHub PR379 metadata and body"
+        },
+        {
+          "id": "SPA-05",
+          "severity": "P1",
+          "result": "MACHINE_HOLD_PRESERVED",
+          "finding": "55 V1 source attestations without inline locusId remain opt-in sidecar; external Product runtime not verified",
+          "evidence": "names_locus_compat_v1.json / names_consumer_compat_v1.json"
+        },
+        {
+          "id": "SPA-06",
+          "severity": "P0",
+          "result": "EVIDENCE_HOLD_PRESERVED",
+          "finding": "BHQ Exodus unpublished; BHS/Göttingen, Weiss, original Or4445 folio not collated; 0 critical original photo inspections",
+          "evidence": "NG04 recorded publisher status, dossier23, source register"
+        },
+        {
+          "id": "SPA-07",
+          "severity": "P0",
+          "result": "PUBLICATION_HOLD_PRESERVED",
+          "finding": "0 peer-reviewed project claims / 0 rights approvals / 0 Product publication permits",
+          "evidence": "source registry, machine baseline and editor state"
+        }
+      ],
+      "stopRule": "No more than two active deliverables; two consecutive no-gain object searches end discovery; Research manuscript edit with explicit gaps can proceed, but no evidence/rights/scientific/Product approval is inferred from CI.",
+      "decision": "CONTINUE_RESEARCH_ONLY_TWO_BOUNDED_TEXT_AND_EVIDENCE_TASKS_NOT_READY_TO_MERGE_OR_PUBLISH",
+      "nextActionOwner": "ИМЕНА БОГА/data/names_research_workplan_v1.json",
+      "expectedTestsOnNextExactHead": 737
+    }
+  },
+  "systematicTheologyTriage": {
+    "asOf": "2026-11-08",
+    "status": "BOUNDED_THREE_SOURCE_INTAKE_DONE_NO_NEW_SOURCE_REGISTER_ROWS_OR_EDITION_LICENSES",
+    "humanEvidence": "ИМЕНА БОГА/11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md §3b",
+    "sources": [
+      {
+        "author": "John Gill",
+        "title": "A Body of Doctrinal Divinity",
+        "locator": "Book I ch 3 Of the Names of God",
+        "url": "https://ccel.org/ccel/gill/doctrinal/doctrinal.ii.iii.html",
+        "access": "SELECTED_HTML_SECTION_READ",
+        "use": "BAPTIST_DOGMATIC_CLASSIFICATION",
+        "caution": "ELOHIM_PLURAL_TO_TRINITY_IS_INTERPRETATION_NOT_MORPHOLOGICAL_PROOF"
+      },
+      {
+        "author": "Louis Berkhof",
+        "title": "Systematic Theology",
+        "locator": "The Being of God IV A-B The Names of God",
+        "url": "https://www.ccel.org/ccel/berkhof/systematictheology.iii.i.iv.html",
+        "access": "SELECTED_HTML_SECTION_READ",
+        "use": "BROAD_REVELATION_NAME_VS_PROPER_NAME",
+        "caution": "HISTORICAL_SHADDAI_ETYMOLGY_NOT_CORROBORATED"
+      },
+      {
+        "author": "Herman Bavinck",
+        "title": "Reformed Dogmatics Vol 2",
+        "locator": "The Names of God and Classification of the Names of God",
+        "url": "https://www.uecf.net/books/reformed-dogmatics-bavinck-vol-2/chapter4.html",
+        "access": "SELECTED_THIRD_PARTY_HTML_READ_AND_PUBLISHER_CATALOG_CONFIRMED",
+        "use": "NOMEN_EDITUM_NOMINA_INDITA_ANALOGICAL_LANGUAGE",
+        "caution": "2004_TRANSLATION_COPYRIGHT_AND_PRINTING_NOT_VERIFIED"
+      }
+    ],
+    "stopRule": "Only re-open targeted dogmatic inquiry if CH-PILOT-01 manuscript identifies an evidence-changing gap; else write."
+  }
+}
