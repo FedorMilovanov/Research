@@ -8666,5 +8666,133 @@
       "publicationEligible": false,
       "mergePerformed": false
     }
-  }
+  },
+  "postReviewDrafts": [
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md",
+      "sha256": "429ce8ec6e64a95935b2d84018a3eb59d5a03016dac20618676cdac164ae5e02",
+      "reviewedAt": "2026-11-07",
+      "note": "Статья №2/18, отдельная от исторического черновика 02_why-the-cross-necessity: Пасха Исх. 12, кровь завета Исх. 24, Лев. 1–7 и мучное исключение 5:11–13, Лев. 16/17, Ис. 53 и Евр. 9–10; 21 scoped semantic claims F02-01…F02-21 из предыдущих OT/NT карточек, не самостоятельная новая рукописная колляция. EVIDENCE/LOCATOR/ARCHIVE/RIGHTS/PUBLICATION HOLD действуют; независимый reviewer не подписывал",
+      "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article08_particular_redemption_positive_case.md",
+      "sha256": "24d17ea0007d51b8da355140c82a2fcab8509613251c5c8c211aa2f143bb93ab",
+      "reviewedAt": "2026-11-07",
+      "note": "Пост-базовый черновик статьи 08: новый файл после исторического контролируемого объёма 13 черновиков; цитаты и экзегеза не объявлены подтверждёнными этим включением",
+      "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article09_world_and_propitiation_johannine_case.md",
+      "sha256": "8afe9ce2bf41815542a0a7fa85cc95565e31798feab8811846994b6e767753b3",
+      "reviewedAt": "2026-11-07",
+      "note": "Статья №9/18, положительный анализ Иоанновых текстов о мире и умилостивлении; первичные греческие формы и исторические авторы отделены от вторичных пересказов, FULL_TEXT_HOLD/RIGHTS_HOLD/EVIDENCE_HOLD/PUBLICATION_HOLD сохранены",
+      "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article10_ransom_for_all_two_adams_paul_hebrews.md",
+      "sha256": "1c37858d5a23feeacf371644446ae3dba7bdb5ef44a2117567869222b4624381",
+      "reviewedAt": "2026-11-07",
+      "note": "Статья №10/18, 1 Тим. 2/4, Тит. 2, Евр. 2:9, Рим. 5, 1 Кор. 15 и 2 Кор. 5; греческие формы, варианты, кальвинистские и широкие чтения, эллипсис Рим. 5:18; аппарат/полные книги остаются под HOLD",
+      "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article11_bought_apostates_covenant_blood_and_weak_brother.md",
+      "sha256": "3b9a6460aed6cdea33bf8649775a67256e2d63d4a2655a7330e98ff94a606678",
+      "reviewedAt": "2026-11-07",
+      "note": "Статья №11/18: добавлен самостоятельный именованный контроль Иуды и Петра (Ин. 17:12; Лк. 22:31–32), прямой Оуэн Display IX, отдельно подписанный Стэнли Гауэр, Сперджен, Девенант On the Death of Christ 392–398, Августин redemptus erat и противопоставление вечной жизни, Прокопенко статья с. 31/36 без выдуманной именованной цитаты; поздний Оуэн Goold XXIII (1855) 543–548 узко подтверждён; C-01/C-04/C-09/C-11, аудио и RIGHTS/EVIDENCE/LOCATOR/PUBLICATION HOLD открыты",
+      "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article12_cosmic_reconciliation_heaven_earth_new_creation.md",
+      "sha256": "86fc798dbab4bd367acb8b120f1876f32dd34014a52297fcd1be23008763b098",
+      "reviewedAt": "2026-11-07",
+      "note": "Статья №12/18, космическое примирение Кол. 1:20, Кол. 1:22 active/passive, Еф. 1:10, Рим. 8:19–23, ангелы/новое творение, исторические Кальвин/Ходж/Гилл/Робертсон; текстология и богословие остаются под HOLD",
+      "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md",
+      "sha256": "71d58c27071eef79633f5dd053c642d601a40a7c2187704472971143863de0a6",
+      "reviewedAt": "2026-11-07",
+      "note": "Статья №13/18: усилен самостоятельный читательский разбор вечного декрета, исторического приобретения, оправдания и уверенности (P05 §§19–31; Фома, Турретин XVI.9, Гилл II.5, WCF XI.4, Крейг/Хелм отдельно). Исторический возражающий голос Гилла сохранён. W1-S0-03 печатные Дабни 1878 с. 520–523/648 и Девенант 1650 с. 1/32/69: только адресная сверка; дипломатическая колляция, современные полные книги и RIGHTS/EVIDENCE/PUBLICATION HOLD сохраняются. Никакой публикации",
+      "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article14_early_church_to_reformation_history.md",
+      "sha256": "e74e98df26b8c0d59dc4066d2aaad6ec94409f4c508609798cddf24460a2d231",
+      "reviewedAt": "2026-11-09",
+      "note": "№14/18: самостоятельная историческая читательская редакция. Прямые целевые переводы Анзельма, Аквината, Лютера и существующий patristic-корпус; латинская/немецкая колляция, обобщающий исторический вердикт, RIGHTS/PUBLICATION_HOLD остаются. NOT PEER REVIEWED; publicationEligible=false.",
+      "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article18_living_atonement_holiness_church_mission_suffering.md",
+      "sha256": "4d07d23cdcb0f7287e990c8f09d55f9b3fa75948cf2504596aea7c319e343d74",
+      "reviewedAt": "2026-11-09",
+      "note": "№18/18: самостоятельная читательская глава о святости, общине, проповеди, страдании и уверенности; семь F18-claims с NT07/NT08 и pastoral/03. Требуется независимая экзегетическая и пастырская редактура; RIGHTS/PUBLICATION_HOLD. NOT PEER REVIEWED; publicationEligible=false.",
+      "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article15_dort_westminster_saumur_english_hu.md",
+      "sha256": "3471a9cb53c50fd9abf6dd62e248231fba9e9cc8fb0a4bacf83088dbc7bebce7",
+      "reviewedAt": "2026-11-10",
+      "note": "Статья №15/18: читательский исторический анализ Дорт II.3/5/8/Rejection, WCF/1689 VIII.5/8, английских делегатов и условного реформатского универсализма. Первичная сверка строго по архивным локаторам, не новый полный просмотр трактатов. HISTORICAL_SOURCE_HOLD/ATTRIBUTION_HOLD/RIGHTS_HOLD/PUBLICATION_HOLD. NOT PEER REVIEWED.",
+      "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article16_boundaries_calvinism_reformed_family.md",
+      "sha256": "c361824d2b517d9849966264ac53057a372f5e3f06985f0d5c310aec872a598d",
+      "reviewedAt": "2026-11-10",
+      "note": "Статья №16/18: семь независимых осей границ кальвинизма, аргументы строгих, английских HU, Сомюра, multiple intentions, лютеран и арминиан; именованный диспенсациональный автор и полные современные монографии не прочитаны. CONFESSIONAL_REVIEW_HOLD/COMPARATIVE_EVIDENCE_HOLD/RIGHTS_HOLD/PUBLICATION_HOLD. NOT PEER REVIEWED.",
+      "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article01_what_is_atonement_biblical_language_and_work.md",
+      "sha256": "fde71193845ff5a3ba8d3f426316a69eeae9c2071d660674b62ee96f4f6b743a",
+      "reviewedAt": "2026-11-10",
+      "note": "Reader-W1: самостоятельная читательская редакция №1 на основе исторического 01. Двенадцать F01-тезисов с первичными библейскими локаторами без новой полной критической колляции. EVIDENCE_HOLD, GOTTINGEN_APPARATUS_HOLD, RIGHTS_HOLD, PUBLICATION_HOLD. NOT PEER REVIEWED.",
+      "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article03_why_cross_love_holiness_justice.md",
+      "sha256": "70e3fbaf6eefe390c95463b9e8c2e8232c9d43eae68a54c0f7e5309041bcb5b3",
+      "reviewedAt": "2026-11-10",
+      "note": "READER-W2: standalone narrative chapter 03; twelve F03 semantic claims supported by prior Research primary text cards and scoped adverse readings. Existing historic drafts preserved; no full new manuscript/critical apparatus or independently verified modern books. EVIDENCE_HOLD / HISTORICAL_SOURCE_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD; NOT PEER REVIEWED.",
+      "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article04_substitution_victory_reconciliation_how_cross_saves.md",
+      "sha256": "1e6cdf380ae60afa38604efa6e4a08054350e13d43ad3db53f1bee49c8e5127f",
+      "reviewedAt": "2026-11-10",
+      "note": "READER-W2: standalone narrative chapter 04; twelve F04 semantic claims supported by prior Research primary text cards and scoped adverse readings. Existing historic drafts preserved; no full new manuscript/critical apparatus or independently verified modern books. EVIDENCE_HOLD / HISTORICAL_SOURCE_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD; NOT PEER REVIEWED.",
+      "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article05_once_for_all_sacrifice_living_high_priest.md",
+      "sha256": "5950ba9b9884ab42d00763ece8e03e7e4795dc0666adaa25763d553da071811a",
+      "reviewedAt": "2026-11-10",
+      "note": "Reader-W3: standalone chapter 05; twelve scoped F05 claims. Previously available biblical cards and original confessional locators, no new full critical apparatus / modern books. Historic file preserved. EVIDENCE_HOLD / LOCATOR_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD; NOT PEER REVIEWED.",
+      "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article06_accomplishment_union_faith_justification.md",
+      "sha256": "561ae33899982eed227a0e1a9b9afc98954feefc574f2f6aea209ae9a1d78102",
+      "reviewedAt": "2026-11-10",
+      "note": "Reader-W3: standalone chapter 06; twelve scoped F06 claims. Previously available biblical cards and original confessional locators, no new full critical apparatus / modern books. Historic file preserved. EVIDENCE_HOLD / LOCATOR_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD; NOT PEER REVIEWED.",
+      "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article07_extent_questions_models_and_primary_texts.md",
+      "sha256": "b60365b04afa139942381f928bbbba3220cb08330859cfe7aa7bc9c750794cb3",
+      "reviewedAt": "2026-11-10",
+      "note": "Reader-W4: independent narrative chapter 07 with twelve scoped F07 claims and strongest contrary readings; earlier historic drafts preserved. Not an independent full recollation, not publication rights or final extent verdict. EVIDENCE_HOLD / ATTRIBUTION_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD; NOT PEER REVIEWED.",
+      "publicationEligible": false
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article17_free_offer_gospel_assurance_all_hearers.md",
+      "sha256": "e505e49f4d5f08a2562bbfccab1b72c28852d9a6efa0efd6348bb6c33283bec1",
+      "reviewedAt": "2026-11-10",
+      "note": "Reader-W4: independent narrative chapter 17 with twelve scoped F17 claims and strongest contrary readings; earlier historic drafts preserved. Not an independent full recollation, not publication rights or final extent verdict. EVIDENCE_HOLD / ATTRIBUTION_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD; NOT PEER REVIEWED.",
+      "publicationEligible": false
+    }
+  ]
 }

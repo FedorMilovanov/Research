@@ -60,6 +60,9 @@ SPINE = (
     "16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md",
     "18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
     "19_OPC_FREE_OFFER_1948_RU_INTAKE_AND_STUDY_2026-10-28.md",
+    "20_SCHOLARLY_SERIES_AUDIT_AND_RESEARCH_GAPS_2026-11-04.md",
+    "20_SPURGEON_PRIMARY_DOSSIER_JUDAS_EXTENT_COMMON_BENEFITS_2026-11-14.md",
+    "21_CHAT_EXTERNAL_ATONEMENT_INTAKE_2026-11-11.md",
 )
 SUBLANES = ("ot", "nt", "fathers", "synthesis")
 AUTHORITY_ID = "ATONEMENT-CORPUS-AUTHORITY-2026-10-07"
@@ -1245,7 +1248,7 @@ else:
             continue
         try:
             import subprocess as _sp
-            blob = _sp.run(["git", "show", "%s:%s" % (rc, REG.relative_to(ROOT))], cwd=ROOT,
+            blob = _sp.run(["git", "show", "%s:%s" % (rc, REG.relative_to(ROOT).as_posix())], cwd=ROOT,
                            capture_output=True, text=True)
             if blob.returncode != 0 or tok not in blob.stdout:
                 _badRec.append(tok)

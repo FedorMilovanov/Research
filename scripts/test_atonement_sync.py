@@ -156,6 +156,45 @@ class CrossReferenceTests(unittest.TestCase):
                 status = crossref_main(["--drafts", str(drafts), "--check"])
             self.assertEqual(status, 0)
 
+    def test_section_inside_second_markdown_link_belongs_to_second_target(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            drafts = root / "drafts"
+            drafts.mkdir()
+            (root / "01_hard.md").write_text("## 3. H3 context\n", encoding="utf-8")
+            (root / "02_nt.md").write_text("## 08.20 Correct NT section\n", encoding="utf-8")
+            (drafts / "01_draft.md").write_text(
+                "[H3](../01_hard.md), [NT 08 §08.20](../02_nt.md)\n",
+                encoding="utf-8",
+            )
+            with redirect_stdout(io.StringIO()):
+                status = crossref_main(["--drafts", str(drafts), "--check"])
+            self.assertEqual(status, 0)
+
+    def test_wrong_section_inside_second_link_cannot_borrow_first_target(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            drafts = root / "drafts"
+            drafts.mkdir()
+            (root / "01_hard.md").write_text("## 08.20 Only in first\n", encoding="utf-8")
+            (root / "02_nt.md").write_text("## 08.19 Not the cited section\n", encoding="utf-8")
+            (drafts / "01_draft.md").write_text(
+                "[H3](../01_hard.md), [NT 08 §08.20](../02_nt.md)\n",
+                encoding="utf-8",
+            )
+            output = io.StringIO()
+            with redirect_stdout(output):
+                status = crossref_main(["--drafts", str(drafts), "--check"])
+            self.assertEqual(status, 1)
+            self.assertIn("SECTION_NOT_FOUND", output.getvalue())
+            self.assertIn("02_nt.md", output.getvalue())
+
+    def test_real_research_draft_sections_resolve(self):
+        output = io.StringIO()
+        with redirect_stdout(output):
+            status = crossref_main(["--check"])
+        self.assertEqual(status, 0, output.getvalue())
+
 
 class ActualSynchronizationTests(unittest.TestCase):
     @classmethod
@@ -163,11 +202,855 @@ class ActualSynchronizationTests(unittest.TestCase):
         cls.report = json.loads((ROOT / REPORT).read_text(encoding="utf-8"))
         cls.control = json.loads((ROOT / CONTROL).read_text(encoding="utf-8"))
 
+    def test_colossians_1_22_both_edition_readings_are_named(self):
+        card = (ROOT / "ИСКУПЛЕНИЕ/nt/07_NT_PERICOPE_CARDS_ACTS_AND_PAUL.md").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("ἀποκατηλλάγητε", card)
+        self.assertIn("ἀποκατήλλαξεν", card)
+        self.assertIn("SBLGNT", card)
+        self.assertIn("NA28", card)
+
+    def test_article13_separates_critical_source_holds(self):
+        p = ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md"
+        text = p.read_text(encoding="utf-8")
+        for marker in (
+            "DABNEY_FULL_BOOK_COLLATION_HOLD",
+            "DABNEY_520_523_FACSIMILE_VERIFIED",
+            "DABNEY_648_FACSIMILE_VERIFIED",
+            "DAVENANT_1650_THREE_PRINT_LOCI_VERIFIED",
+            "DAVENANT_LATIN_DIPLOMATIC_COLLATION_HOLD",
+            "AI_TRANSLATION_HOLD",
+            "OWEN_WCF_TIMING_HOLD",
+            "NO PUBLICATION AUTHORIZATION",
+        ):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, text)
+
+    def test_article13_payment_and_application_distinction_not_erased(self):
+        p = ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md"
+        text = p.read_text(encoding="utf-8")
+        for marker in (
+            "solutio ejusdem",
+            "solutio tantidem",
+            "actual right",
+            "actual possession",
+            "Дорт II.8",
+            "WCF XI.4",
+        ):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, text)
+        self.assertIn("A1 в узком месте", text)
+        self.assertIn("COARSE_LOCATOR_ONLY", text)
+        self.assertIn("UNVERIFIED_TRANSCRIPTION", text)
+        self.assertNotIn("**B1**", text)
+        self.assertIn("**A1 scoped**", text)
+        self.assertIn("DAVENANT_1650_THREE_PRINT_LOCI_VERIFIED", text)
+        self.assertIn("DABNEY_FULL_BOOK_COLLATION_HOLD", text)
+
+    def test_article02_sacrifice_covenant_distinguishes_rituals_and_has_semantic_claim_map(self):
+        rel = "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md"
+        p = ROOT / rel
+        article = p.read_text(encoding="utf-8")
+        plan = (ROOT / "ИСКУПЛЕНИЕ/synthesis/01_SERIES_PLAN_AND_ARTICLE_COUNT.md").read_text(encoding="utf-8")
+        for marker in (
+            "ARTICLE 02 / 18", "Исх. 12:13", "Исх. 24:8",
+            "Лев. 5:11–13", "Лев. 16:21–22", "Лев. 17:11",
+            "Ис. 52:15", "Ис. 53:4", "Евр. 9:12", "Евр. 9:22",
+            "святилище", "живым", "почти", "Евр. 10:1–4",
+            "AT-010", "LOCATOR_HOLD", "RIGHTS_HOLD",
+            "PUBLICATION_HOLD", "не", "Göttingen",
+        ):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, article)
+        for i in range(1, 22):
+            with self.subTest(claim=i):
+                self.assertEqual(article.count("| F02-%02d |" % i), 1)
+        self.assertEqual(article.count("| F02-"), 21)
+        self.assertIn("article02_sacrifice_covenant_passover_day_of_atonement.md", plan)
+        self.assertIn("исторического черновика", plan)
+        for source in (
+            "../../ot/06_PESAH_EXOD12.md",
+            "../../ot/10_EXOD24_GEN22.md",
+            "../../ot/07_LEV1_7_SISTEMA_ZHERTV.md",
+            "../../ot/08_LEV16_KAPPORET_AZAZEL.md",
+            "../../ot/11_ISA52_53_SERVANT.md",
+            "../../nt/08_NT_PERICOPE_CARDS_HEBREWS_CATHOLICS_APOCALYPSE.md",
+        ):
+            with self.subTest(source=source):
+                self.assertTrue((p.parent / source).resolve().is_file())
+        controls = json.loads((ROOT / "ИСКУПЛЕНИЕ/evidence/synchronization_2026-11-02.json").read_text(encoding="utf-8"))
+        matching = [m for m in controls.get("postReviewDrafts", []) if m.get("path") == rel]
+        self.assertEqual(len(matching), 1)
+        self.assertEqual(matching[0]["sha256"], hashlib.sha256(p.read_bytes()).hexdigest())
+        self.assertFalse(matching[0]["publicationEligible"])
+
+    def test_article02_semantic_review_keeps_eight_counterreadings_and_text_boundaries(self):
+        article_path = ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md"
+        memo_path = ROOT / "ИСКУПЛЕНИЕ/evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md"
+        article = article_path.read_text(encoding="utf-8")
+        memo = memo_path.read_text(encoding="utf-8")
+        for i in (1, 3, 6, 9, 13, 16, 17, 20):
+            with self.subTest(claim=i):
+                self.assertEqual(memo.count("### F02-%02d —" % i), 1)
+        self.assertEqual(memo.count("**Сильнейшее возражение:**"), 8)
+        self.assertEqual(memo.count("**Итог:**"), 8)
+        self.assertIn("../../evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md", article)
+        for marker in (
+            "Исх. 13:13–15", "Числ. 3", "Евр. 9:19",
+            "σχεδόν", "χωρὶς αἱματεκχυσίας", "не повторяет слова «почти»",
+            "τῷ ἀποπομπαίῳ", "εἰς τὴν ἀποπομπήν",
+            "τὸν διεσταλμένον εἰς ἄφεσιν", "θαυμάσονται",
+            "τοῖς αὐτὸν ἀπεκδεχομένοις", "не** две «предложные группы»",
+            "article01_what_is_atonement_biblical_language_and_work.md", "02_why-the-cross-necessity.md",
+        ):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, article if marker != "не** две «предложные группы»" else memo)
+        for source in (
+            "../ot/06_PESAH_EXOD12.md",
+            "../ot/02_GAL_PADAH_PIDYON.md",
+            "../ot/08_LEV16_KAPPORET_AZAZEL.md",
+            "../nt/08_NT_PERICOPE_CARDS_HEBREWS_CATHOLICS_APOCALYPSE.md",
+        ):
+            with self.subTest(source=source):
+                self.assertTrue((memo_path.parent / source).resolve().is_file())
+        self.assertIn("не внешнее рецензирование", memo)
+        self.assertTrue((article_path.parent / "01_what-is-atonement.md").is_file(), "historic article01 remains intact")
+        self.assertIn("PUBLICATION_HOLD", memo)
+        self.assertIn("publicationEligible=false", memo)
+
+    def test_article02_external_primary_and_competing_scholarly_readings_are_guarded(self):
+        article = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md").read_text(encoding="utf-8")
+        memo = (ROOT / "ИСКУПЛЕНИЕ/evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md").read_text(encoding="utf-8")
+        board = (ROOT / "ИСКУПЛЕНИЕ/synthesis/07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        for marker in (
+            "без масла и ладана", "приношением **за грех**",
+            "σχεδόν", "синтаксически", "риторическое",
+            "Элликотт", "τοῦ ἀποπομπαίου",
+            "εἰς τὴν ἀποπομπήν",
+            "τὸν διεσταλμένον εἰς ἄφεσιν",
+            "RHETORICAL_SCOPE_OPEN", "ETYMOLOGY_HOLD",
+        ):
+            with self.subTest(article_marker=marker):
+                self.assertIn(marker, article)
+        for marker in (
+            "## AT-010-R2", "R2-09", "R2-13",
+            "https://www.saet.ac.uk/Christianity/SacrificeandtheOldTestament",
+            "https://www.die-bibel.de/en/bible/LXX/LEV.16",
+            "https://www.kingjamesbibleonline.org/Hebrews-9_Commentary-Ellicott/",
+            "https://www.bsw.org/biblica/",
+            "De Roo", "NET Bible", "печaт",
+            "RHETORICAL_SCOPE_OPEN", "ETYMOLOGY_HOLD",
+            "Публикационный статус", "STOP_DISCOVERY",
+        ):
+            with self.subTest(memo_marker=marker):
+                if marker != "печaт":
+                    self.assertIn(marker, memo)
+        self.assertIn("AT-010-R2", board)
+        self.assertIn("PUBLICATION_HOLD", memo)
+
+    def test_article02_isaiah_r3_publisher_text_syntax_and_reception_remain_separate(self):
+        article = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md").read_text(encoding="utf-8")
+        memo = (ROOT / "ИСКУПЛЕНИЕ/evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md").read_text(encoding="utf-8")
+        source = (ROOT / "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md").read_text(encoding="utf-8")
+        board = (ROOT / "ИСКУПЛЕНИЕ/synthesis/07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        for marker in (
+            "גּוֹיִם רַבִּים", "без обычного", "θαυμάσονται",
+            "חֳלָיֵנוּ", "מַכְאֹבֵינוּ",
+            "οὗτος τὰς ἁμαρτίας ἡμῶν φέρει",
+            "ἀσθενείας", "νόσους", "δῶτε", "ὑμῶν",
+            "2-е лицо множ.", "3-е лицо жен. ед.",
+            "SYNTAX_LEXEME_OPEN", "RECEPTION_SCOPE_OPEN",
+        ):
+            with self.subTest(article=marker):
+                self.assertIn(marker, article)
+        for marker in (
+            "## AT-010-R3", "R3-17", "R3-16", "R3-10",
+            "https://www.die-bibel.de/en/bible/LXX/ISA.52",
+            "https://www.die-bibel.de/en/bible/LXX/ISA.53",
+            "https://biblia.com/bible/sblgnt/matthew/8/16-18",
+            "Rahlfs", "Hanhart", "2006",
+            "NET Bible", "παιδία", "παιδεία",
+            "EDITION_WITNESS_HOLD", "EDITORIAL_TRANSCRIPTION_HOLD",
+            "ARCHIVE_HOLD", "RIGHTS_HOLD",
+            "publicationEligible=false", "STOP_DISCOVERY",
+        ):
+            with self.subTest(memo=marker):
+                self.assertIn(marker, memo)
+        for marker in ("## 11. R3", "53:5", "παιδία", "παιδεία", "53:10",
+                       "SYNTAX_LEXEME_OPEN", "EDITION_WITNESS_HOLD", "PUBLICATION_HOLD"):
+            with self.subTest(source=marker):
+                self.assertIn(marker, source)
+        self.assertIn("## 13. AT-010-R3", board)
+        self.assertIn("201/201", board)
+        self.assertIn("NO MERGE / NO PUBLICATION", board)
+
+    def test_article02_r4_swete_print_pages_and_editorial_variants_are_separate_from_manuscripts(self):
+        article = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md").read_text(encoding="utf-8")
+        memo = (ROOT / "ИСКУПЛЕНИЕ/evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md").read_text(encoding="utf-8")
+        owner = (ROOT / "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md").read_text(encoding="utf-8")
+        board = (ROOT / "ИСКУПЛЕНИЕ/synthesis/07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        for marker in ("Фотография печатной страницы Суита", "1905",
+                       "παιδία εἰρήνης ἡμῶν", "παιδεία εἰρήνης ἡμῶν",
+                       "ἡ ψυχὴ ἡμῶν", "ἡ ψυχὴ ὑμῶν",
+                       "подтверждённое различие опубликованных редакций",
+                       "F02-16 |", "F02-17 |"):
+            with self.subTest(article_marker=marker):
+                self.assertIn(marker, article)
+        for marker in ("## AT-010-R4", "с. 199", "с. 200", "с. 201",
+                       "https://ccel.org/ccel/swete/lxx3/lxx3/Page_199.html",
+                       "https://ccel.org/ccel/swete/lxx3/lxx3/Page_200.html",
+                       "https://ccel.org/ccel/swete/lxx3/lxx3/Page_201.html",
+                       "https://www.die-bibel.de/en/bible/LXX/ISA.53",
+                       "SWETE_III_PRINT_FACSIMILE_VERIFIED",
+                       "EDITION_VARIANT_LOCATED",
+                       "GOTTINGEN_APPARATUS_HOLD", "OTTLEY_1906_PRINT_HOLD",
+                       "CODEX_WITNESS_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD",
+                       "publicationEligible=false", "STOP_DISCOVERY"):
+            with self.subTest(memo_marker=marker):
+                self.assertIn(marker, memo)
+        self.assertIn("## 12. R4", owner)
+        self.assertIn("SWETE_III_PRINT_FACSIMILE_VERIFIED", owner)
+        self.assertIn("## 14. AT-010-R4", board)
+        self.assertIn("NO MERGE / NO PUBLICATION", board)
+
+    def test_article02_r5_ottley_1906_print_and_reported_witnesses_are_scoped(self):
+        article = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md").read_text(encoding="utf-8")
+        memo = (ROOT / "ИСКУПЛЕНИЕ/evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md").read_text(encoding="utf-8")
+        source = (ROOT / "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md").read_text(encoding="utf-8")
+        board = (ROOT / "ИСКУПЛЕНИЕ/synthesis/07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        for marker in ("Оттли (1906)", "παιδία εἰρήνης ἡμῶν", "παιδεία",
+                       "ἡ ψυχὴ ὑμῶν", "ἡ ψυχὴ ἡμῶν", "ψυχή",
+                       "ἐμαλακίσθη", "μεμαλάκισται",
+                       "Göttingen"):
+            with self.subTest(article_marker=marker):
+                self.assertIn(marker, article)
+        for marker in ("## AT-010-R5", "PDF стр. 351", "PDF 466", "PDF 467",
+                       "PDF 726", "PDF 727", "PDF 730", "PDF 775",
+                       "https://abramkj.com/wp-content/uploads/2012/12/ottley_isaiah-according-to-the-lxx.pdf",
+                       "4b5ef257c0b9744d813ff98aa54f320fbce00b28705f0ee524d58edd437dd3be",
+                       "OTTLEY_II_1906_PRINT_FACSIMILE_VERIFIED",
+                       "EDITION_VARIANT_LOCATED", "ἐμαλακίσθη", "μεμαλάκισται",
+                       "συνάξουσιν", "συνέξουσιν",
+                       "ῥαντισεῖ", "CODEX_WITNESS_HOLD",
+                       "GOTTINGEN_APPARATUS_HOLD", "RIGHTS_HOLD",
+                       "PUBLICATION_HOLD", "publicationEligible=false", "STOP_DISCOVERY"):
+            with self.subTest(memo_marker=marker):
+                self.assertIn(marker, memo)
+        self.assertIn("## 13. AT-010-R5", source)
+        self.assertIn("OTTLEY_II_1906_PRINT_FACSIMILE_VERIFIED", source)
+        self.assertIn("## 15. AT-010-R5", board)
+        self.assertIn("NO MERGE / NO PUBLICATION", board)
+
+    def test_article02_r6_coptic_sahidic_critical_edition_not_greek_manuscript(self):
+        article = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md").read_text(encoding="utf-8")
+        memo = (ROOT / "ИСКУПЛЕНИЕ/evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md").read_text(encoding="utf-8")
+        source = (ROOT / "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md").read_text(encoding="utf-8")
+        board = (ROOT / "ИСКУПЛЕНИЕ/synthesis/07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        for marker in ("Бонка (2023", "sa 52", "sa 48", "ⲛϣⲏⲣⲉ",
+                       "παιδεία", "παιδία", "53:10",
+                       "коптскую", "не доказана"):
+            with self.subTest(article_marker=marker):
+                self.assertIn(marker, article)
+        for marker in ("## AT-010-R6", "41/4 (2023)", "печат. с. 861",
+                       "с. 868", "с. 875", "DOI",
+                       "10.31743/vv.16174",
+                       "https://czasopisma.kul.pl/index.php/vv/article/download/16174/14711/75589",
+                       "https://www.themorgan.org/collection/isaiah/77430/115",
+                       "https://www.themorgan.org/collection/isaiah/77430/116",
+                       "https://bodmerlab.unige.ch/fr/constellations/papyri/barcode/1072205362",
+                       "page=034", "sa 48", "n+yHre", "n+te(n)irHnH",
+                       "tetn+TuCH", "tepn+TuCH",
+                       "PUBLISHED_SAHIDIC_CRITICAL_EDITION_VERIFIED",
+                       "COPTIC_CHILDREN_READING_LOCATED",
+                       "GREEK_VORLAGE_AMBIGUOUS",
+                       "GREEK_BACKTRANSLATION_HOLD",
+                       "GOTTINGEN_APPARATUS_HOLD",
+                       "CODEX_WITNESS_HOLD", "RIGHTS_HOLD",
+                       "PUBLICATION_HOLD", "publicationEligible=false",
+                       "STOP_DISCOVERY"):
+            with self.subTest(memo_marker=marker):
+                self.assertIn(marker, memo)
+        self.assertIn("## 14. AT-010-R6", source)
+        self.assertIn("GREEK_VORLAGE_AMBIGUOUS", source)
+        self.assertIn("## 16. AT-010-R6", board)
+        self.assertIn("NO MERGE / NO PUBLICATION", board)
+
+    def test_article02_r7_bodmer_photo_frame_locator_corrects_034_without_greek_promotion(self):
+        article = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md").read_text(encoding="utf-8")
+        memo = (ROOT / "ИСКУПЛЕНИЕ/evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md").read_text(encoding="utf-8")
+        owner = (ROOT / "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md").read_text(encoding="utf-8")
+        board = (ROOT / "ИСКУПЛЕНИЕ/synthesis/07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        for marker in ("проверка первичных фотографий", "кадр 034",
+                       "кадр 041", "кадр 042", "53:5", "53:10",
+                       "непосредственно просмотрены", "не удостоверено",
+                       "παιδία / παιδεία"):
+            with self.subTest(article_marker=marker):
+                self.assertIn(marker.lower(), article.lower())
+        for marker in ("## AT-010-R7", "95 canvases", "6132 × 8176",
+                       "034", "50, 11–51, 4", "041", "53, 3–8",
+                       "042", "53, 8–12", "039", "040", "043",
+                       "https://bodmerlab.unige.ch/fr/constellations/papyri/manifest/1072205362?page=041",
+                       "https://bodmerlab.unige.ch/fr/constellations/papyri/mirador/1072205362?page=041",
+                       "https://bodmerlab.unige.ch/fr/constellations/papyri/mirador/1072205362?page=042",
+                       "fc1dc1759f728e49401c521964be370e3165e2039cded04220728f8d5a0bcc3f",
+                       "eb17fcf65a96c9da0d43ca5712a64dd15c3175e371edde5a9da9e9f56cb556d4",
+                       "BODMER23_FRAME_VERIFIED", "SA48_GLYPH_READ_HOLD",
+                       "MORGAN_M568_IMAGE_ACCESS_HOLD",
+                       "GREEK_VORLAGE_AMBIGUOUS",
+                       "GOTTINGEN_APPARATUS_HOLD", "CODEX_WITNESS_HOLD",
+                       "RIGHTS_HOLD", "PUBLICATION_HOLD",
+                       "publicationEligible=false", "STOP_DISCOVERY"):
+            with self.subTest(memo_marker=marker):
+                self.assertIn(marker, memo)
+        self.assertIn("## 15. AT-010-R7", owner)
+        self.assertIn("## 17. AT-010-R7", board)
+        self.assertIn("SUPERSEDED", owner)
+        self.assertIn("NO MERGE / NO PUBLICATION", board)
+        self.assertIn("Bąk", memo)
+        self.assertIn("не установлена", memo)
+
+    def test_article02_r8_decot_original_glyphs_and_editor_conflict_are_scoped(self):
+        article = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md").read_text(encoding="utf-8")
+        memo = (ROOT / "ИСКУПЛЕНИЕ/evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md").read_text(encoding="utf-8")
+        owner = (ROOT / "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md").read_text(encoding="utf-8")
+        board = (ROOT / "ИСКУПЛЕНИЕ/synthesis/07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        for marker in ("Прямая сверка коптских рукописей (R8)", "M.568", "ⲛ︦ϣⲏⲣⲉ",
+                       "ⲧⲉⲧⲛ︦ⲯⲩⲭⲏ", "ⲛ̄ϣⲏⲣⲉ", "ⲧⲉⲧ̣ⲛ̄",
+                       "спор об одной повреждённой букве", "παιδία/παιδεία"):
+            with self.subTest(article_marker=marker):
+                self.assertIn(marker, article)
+        for marker in ("## AT-010-R8", "pageID 1140", "pageID 260", "pageID 270",
+                       "NML_M568.f.054v_lib.jpg",
+                       "CFB_PBodmerXXIII.f.013v_bscan.jpg",
+                       "CFB_PBodmerXXIII.f.014r_bscan.jpg",
+                       "6f551d9971f0840284ade1a0fdf4b9b96f45692859aa1cd5dfb7dd9e3b2afacc",
+                       "88f40df3d06c6bf7ef47a057d7d10e130ec7f776ff1aac08f141dc566feb0207",
+                       "50c7d0437d7902b146fdc1bbbb7f62f3901de893c7f0ce46060fbd485f241537",
+                       "ⲛ︦", "ϣⲏⲣⲉ", "ⲛⲧⲛ︦ⲉⲓⲣⲏⲛⲏ", "ⲛ̄ϣⲏⲣⲉ",
+                       "ⲧⲉⲧⲛ︦ⲯⲩ", "ⲧⲉⲧ̣ⲛ̄", "ⲯⲩⲭⲏ",
+                       "MORGAN_M568_FOLIO_AND_TARGET_GLYPHS_VERIFIED",
+                       "DECOT_BAK_ONE_GLYPH_DISAGREEMENT_LOCATED",
+                       "SA48_53_10_GLYPH_ADJUDICATION_HOLD",
+                       "GREEK_VORLAGE_AMBIGUOUS", "GREEK_BACKTRANSLATION_HOLD",
+                       "GOTTINGEN_APPARATUS_HOLD", "CODEX_WITNESS_HOLD",
+                       "RIGHTS_HOLD", "PUBLICATION_HOLD",
+                       "publicationEligible=false", "STOP_DISCOVERY"):
+            with self.subTest(memo_marker=marker):
+                self.assertIn(marker, memo)
+        self.assertIn("## 16. AT-010-R8", owner)
+        self.assertIn("## 18. AT-010-R8", board)
+        self.assertIn("SUPERSEDED", owner)
+        self.assertIn("NO MERGE / NO PUBLICATION", board)
+
+    def test_article02_r9_coptic_witnesses_have_no_false_collation(self):
+        memo = (ROOT / "ИСКУПЛЕНИЕ/evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md").read_text(encoding="utf-8")
+        board = (ROOT / "ИСКУПЛЕНИЕ/synthesis/07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        registry = (ROOT / "ИСКУПЛЕНИЕ/05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md").read_text(encoding="utf-8")
+        self.assertIn("## AT-010-R9", memo)
+        r9 = memo.split("## AT-010-R9",1)[-1]
+        for doc,page in (("622148","2250"),("620292","3090"),("622028","350"),("620016","2575")):
+            locator="docid="+doc+"&pageID="+page+"&format=xhtml"
+            self.assertIn(locator, r9)
+            self.assertIn(locator, registry)
+        for marker in ("ⲉⲧⲉⲧⲛ", "ⲧⲉⲧ︤ⲛ︥ⲯⲩⲭⲏ", "TARGET_CLAUSE_NOT_PRESENT", "PHOTO_NOT_COLLATED", "PROTECTED_IMAGE_ACCESS_HOLD", "CLM3469_EDITORIAL_READ_CONFLICT_HOLD", "SA48_53_10_GLYPH_ADJUDICATION_HOLD", "GREEK_BACKTRANSLATION_HOLD", "GOTTINGEN_APPARATUS_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD", "publicationEligible=false"):
+            self.assertIn(marker, r9)
+        self.assertIn("## 19. AT-010-R9", board)
+        self.assertIn("NO MERGE / NO PUBLICATION", board)
+
+    def test_active_reader_sources_match_root_evidence_policy(self):
+        import re
+        import json
+        import hashlib
+        policy = json.loads((ROOT / "data/repository-evidence-policy-v2.json").read_text(encoding="utf-8"))
+        self.assertEqual(set(policy["sourceClasses"]), {"A1", "A2", "A3", "B1", "C", "D"})
+        files = (
+            "article08_particular_redemption_positive_case.md",
+            "article09_world_and_propitiation_johannine_case.md",
+            "article10_ransom_for_all_two_adams_paul_hebrews.md",
+            "article11_bought_apostates_covenant_blood_and_weak_brother.md",
+            "article12_cosmic_reconciliation_heaven_earth_new_creation.md",
+            "article13_double_payment_unbelief_and_acquired_faith.md",
+        )
+        expected_a1 = (0, 2, 3, 6, 4, 5)
+        expected_a3 = (2, 1, 0, 0, 0, 2)
+        manifest = {x["path"]: x for x in self.report["postReviewDrafts"]}
+        for name, e1, e3 in zip(files, expected_a1, expected_a3):
+            path = ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts" / name
+            text = path.read_text(encoding="utf-8")
+            rows = [line for line in text.splitlines() if line.startswith("| ") and line.count("|") >= 4]
+            evidence_cells = [line.split("|")[2] for line in rows if len(line.split("|")) >= 5]
+            with self.subTest(draft=name):
+                self.assertGreaterEqual(sum(bool(re.search(r"\bA1\b", x)) for x in evidence_cells), e1, "primary author slots remain A1")
+                self.assertGreaterEqual(sum(bool(re.search(r"\bA3\b", x)) for x in evidence_cells), e3)
+                self.assertFalse(any(re.search(r"\bA2\b", x) for x in evidence_cells), "A2 is not the author/official-confession class")
+                self.assertFalse(any(re.match(r"\s*C(?:[,:]|\s)", x) for x in evidence_cells), "C-class sources belong outside the primary evidence table")
+                self.assertIn("PUBLICATION_HOLD", text)
+                rel = "ИСКУПЛЕНИЕ/synthesis/drafts/" + name
+                self.assertIn(rel, manifest)
+                self.assertFalse(manifest[rel]["publicationEligible"])
+                self.assertEqual(manifest[rel]["sha256"], hashlib.sha256(path.read_bytes()).hexdigest())
+        # OPC 1948 remains an A2 institutional report; official confessions are A3.
+        historic = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/09_free-offer-of-the-gospel.md").read_text(encoding="utf-8")
+        self.assertIn("A2 (публичный церковный отчёт", historic)
+        section13 = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md").read_text(encoding="utf-8")
+        self.assertIn("UNVERIFIED_TRANSCRIPTION", section13)
+        self.assertNotIn("**B1** — остальная цифровая транскрипция", section13)
+
+    def test_reader_07_17_canonicity_and_free_offer_scope(self):
+        import hashlib
+        import re
+        base = ROOT / "ИСКУПЛЕНИЕ/synthesis"
+        plan = (base / "01_SERIES_PLAN_AND_ARTICLE_COUNT.md").read_text(encoding="utf-8")
+        board = (base / "07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        names = (
+            (7, "article07_extent_questions_models_and_primary_texts.md", "05_for-whom-did-christ-die-question.md"),
+            (17, "article17_free_offer_gospel_assurance_all_hearers.md", "09_free-offer-of-the-gospel.md"),
+        )
+        self.assertIn("## 29. READER-W4", board)
+        manifest = {item["path"]: item for item in self.report["postReviewDrafts"]}
+        self.assertEqual(len(manifest), 18)
+        for number, name, historic in names:
+            p = base / "drafts" / name
+            t = p.read_text(encoding="utf-8")
+            rel = "ИСКУПЛЕНИЕ/synthesis/drafts/" + name
+            with self.subTest(chapter=number):
+                self.assertGreater(len(t), 17000)
+                self.assertIn("ARTICLE %02d / 18" % number, t)
+                self.assertIn("drafts/" + name, plan)
+                self.assertEqual(len(set(re.findall(r"F%02d-\d{2}" % number, t))), 12)
+                self.assertIn(historic, t)
+                self.assertTrue((base / "drafts" / historic).is_file())
+                for marker in ("EVIDENCE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD", "publicationEligible=false"):
+                    self.assertIn(marker, t)
+                self.assertNotIn("publicationEligible=true", t)
+                self.assertIn(rel, manifest)
+                self.assertFalse(manifest[rel]["publicationEligible"])
+                self.assertEqual(manifest[rel]["sha256"], hashlib.sha256(p.read_bytes()).hexdigest())
+        ch6 = (base / "drafts/article06_accomplishment_union_faith_justification.md").read_text(encoding="utf-8")
+        ch16 = (base / "drafts/article16_boundaries_calvinism_reformed_family.md").read_text(encoding="utf-8")
+        ch7 = (base / "drafts" / names[0][1]).read_text(encoding="utf-8")
+        ch17 = (base / "drafts" / names[1][1]).read_text(encoding="utf-8")
+        self.assertIn("](" + names[0][1] + ")", ch6)
+        self.assertIn("](" + names[1][1] + ")", ch16)
+        self.assertIn("article08_particular_redemption_positive_case.md", ch7)
+        self.assertIn("article18_living_atonement_holiness_church_mission_suffering.md", ch17)
+        for marker in ("P1", "P2", "P7", "2 Пет. 2:1", "Дорт II.3", "II.5", "Иуда"):
+            with self.subTest(reader07_marker=marker):
+                self.assertIn(marker, ch7)
+        for marker in ("Деян. 13", "Ин. 6:37", "Дорт", "Уэсли", "OPC 1948", "Гилл", "Фуллер", "Сперджен"):
+            with self.subTest(reader17_marker=marker):
+                self.assertIn(marker, ch17)
+        self.assertIn("ATTRIBUTION_HOLD", ch17)
+        self.assertIn("CONFESSIONAL_HOLD", ch17)
+
+    def test_reader_05_06_canonical_accomplishment_application_boundary(self):
+        import hashlib
+        import re
+        base = ROOT / "ИСКУПЛЕНИЕ/synthesis"
+        plan = (base / "01_SERIES_PLAN_AND_ARTICLE_COUNT.md").read_text(encoding="utf-8")
+        board = (base / "07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        one = "article05_once_for_all_sacrifice_living_high_priest.md"
+        two = "article06_accomplishment_union_faith_justification.md"
+        ch4 = (base / "drafts/article04_substitution_victory_reconciliation_how_cross_saves.md").read_text(encoding="utf-8")
+        self.assertIn("## 28. READER-W3", board)
+        self.assertIn("](" + one + ")", ch4)
+        manifest = {item["path"]: item for item in self.report["postReviewDrafts"]}
+        for number, name, historic in (
+            (5, one, "04_perfection-of-atonement.md"),
+            (6, two, "11_order-of-salvation.md"),
+        ):
+            path = base / "drafts" / name
+            reader = path.read_text(encoding="utf-8")
+            rel = "ИСКУПЛЕНИЕ/synthesis/drafts/" + name
+            with self.subTest(chapter=number):
+                self.assertGreater(len(reader), 17000)
+                self.assertIn("ARTICLE %02d / 18" % number, reader)
+                self.assertIn("drafts/" + name, plan)
+                self.assertEqual(len(set(re.findall(r"F%02d-\d{2}" % number, reader))), 12)
+                self.assertTrue((base / "drafts" / historic).is_file())
+                self.assertIn(historic, reader)
+                for boundary in ("EVIDENCE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD", "publicationEligible=false"):
+                    self.assertIn(boundary, reader)
+                self.assertNotIn("publicationEligible=true", reader)
+                self.assertIn(rel, manifest)
+                self.assertFalse(manifest[rel]["publicationEligible"])
+                self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(), manifest[rel]["sha256"])
+        ch5 = (base / "drafts" / one).read_text(encoding="utf-8")
+        ch6 = (base / "drafts" / two).read_text(encoding="utf-8")
+        self.assertIn("](" + two + ")", ch5)
+        self.assertIn("Евр. 10:29", ch5)
+        self.assertIn("Евр. 7:25", ch5)
+        self.assertIn("Евр. 10:14", ch5)
+        self.assertIn("Пс. 39", ch5)
+        self.assertIn("Дорт", ch5)
+        for marker in ("Еф. 2:8", "Флп. 1:29", "Дорт", "Рим. 8:29–30", "оправдание", "во времени", "проповед"):
+            with self.subTest(ch6_marker=marker):
+                self.assertIn(marker, ch6)
+        self.assertIn("CONFESSIONAL_HOLD", ch6)
+        self.assertIn("LEXICAL_SCOPE_HOLD", ch6)
+
+    def test_reader_03_04_new_canonical_route_keeps_primary_boundaries(self):
+        import re
+        import hashlib
+        base = ROOT / "ИСКУПЛЕНИЕ/synthesis"
+        plan = (base / "01_SERIES_PLAN_AND_ARTICLE_COUNT.md").read_text(encoding="utf-8")
+        board = (base / "07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        ch2 = (base / "drafts/article02_sacrifice_covenant_passover_day_of_atonement.md").read_text(encoding="utf-8")
+        names = (
+            ("article03_why_cross_love_holiness_justice.md", "02_why-the-cross-necessity.md", "F03"),
+            ("article04_substitution_victory_reconciliation_how_cross_saves.md", "03_nature-of-atonement.md", "F04"),
+        )
+        self.assertIn("## 27. READER-W2", board)
+        manifest = {x["path"]: x for x in self.report["postReviewDrafts"]}
+        for name, historic, marker in names:
+            path = base / "drafts" / name
+            txt = path.read_text(encoding="utf-8")
+            rel = "ИСКУПЛЕНИЕ/synthesis/drafts/" + name
+            with self.subTest(chapter=name):
+                self.assertGreater(len(txt), 17500)
+                self.assertIn("ARTICLE " + marker[1:] + " / 18", txt)
+                self.assertIn("drafts/" + name, plan)
+                self.assertEqual(len(set(re.findall(marker + r"-\d{2}", txt))), 12)
+                self.assertIn(historic, txt)
+                self.assertTrue((base / "drafts" / historic).is_file())
+                for hold in ("EVIDENCE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD", "publicationEligible=false"):
+                    self.assertIn(hold, txt)
+                self.assertNotIn("publicationEligible=true", txt)
+                self.assertIn(rel, manifest)
+                self.assertFalse(manifest[rel]["publicationEligible"])
+                self.assertEqual(manifest[rel]["sha256"], hashlib.sha256(path.read_bytes()).hexdigest())
+        self.assertIn("article03_why_cross_love_holiness_justice.md", ch2)
+        reader3 = (base / "drafts" / names[0][0]).read_text(encoding="utf-8")
+        reader4 = (base / "drafts" / names[1][0]).read_text(encoding="utf-8")
+        self.assertIn(names[1][0], reader3)
+        for marker in ("Лев. 5:11–13", "Евр. 9:22", "Ансельм", "Дорт", "Гроци", "гипотетичес", "последовательн"):
+            with self.subTest(reader3_marker=marker):
+                self.assertIn(marker, reader3)
+        for marker in ("Ис. 53", "Гал. 3:13", "2 Кор. 5", "Christus Victor", "невиновн", "примирен", "ETHICAL_OBJECTION_OPEN"):
+            with self.subTest(reader4_marker=marker):
+                self.assertIn(marker, reader4)
+
+    def test_reader_01_02_canonical_recast_keeps_textual_claims(self):
+        import hashlib
+        import re
+        base = ROOT / "ИСКУПЛЕНИЕ/synthesis"
+        plan = (base / "01_SERIES_PLAN_AND_ARTICLE_COUNT.md").read_text(encoding="utf-8")
+        board = (base / "07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        one = "article01_what_is_atonement_biblical_language_and_work.md"
+        two = "article02_sacrifice_covenant_passover_day_of_atonement.md"
+        f1 = base / "drafts" / one
+        f2 = base / "drafts" / two
+        a = f1.read_text(encoding="utf-8")
+        b = f2.read_text(encoding="utf-8")
+        self.assertGreater(len(a), 16000)
+        self.assertGreater(len(b), 35000)
+        self.assertIn("ARTICLE 01 / 18", a)
+        self.assertIn("ARTICLE 02 / 18", b)
+        self.assertIn("drafts/" + one, plan)
+        self.assertIn("drafts/" + two, plan)
+        self.assertIn("## 26. READER-W1", board)
+        self.assertIn("article01_what_is_atonement_biblical_language_and_work.md", b)
+        self.assertTrue((base / "drafts/01_what-is-atonement.md").is_file(), "historic first chapter is retained")
+        self.assertEqual(len(set(re.findall(r"F01-\d{2}", a))), 12)
+        self.assertEqual(len(set(re.findall(r"F02-\d{2}", b))), 21)
+        self.assertIn("## Текстологическое приложение: Ис. 52–53 (R3–R18)", b)
+        self.assertLess(b.index("## 7. Послание к Евреям"), b.index("## Текстологическое приложение"))
+        self.assertLess(b.index("## Приложение для научной редакции"), b.index("## Текстологическое приложение"))
+        for marker in ("Swete", "Оттли", "Bodmer XXIII", "Codex Marchalianus Q", "4Q58", "1Q8", "Göttingen"):
+            with self.subTest(textual_witness=marker):
+                self.assertIn(marker, b)
+        manifest = {entry["path"]: entry for entry in self.report["postReviewDrafts"]}
+        for name, file, content in ((one, f1, a), (two, f2, b)):
+            rel = "ИСКУПЛЕНИЕ/synthesis/drafts/" + name
+            with self.subTest(draft=name):
+                self.assertIn(rel, manifest)
+                self.assertFalse(manifest[rel]["publicationEligible"])
+                self.assertEqual(manifest[rel]["sha256"], hashlib.sha256(file.read_bytes()).hexdigest())
+                self.assertIn("PUBLICATION_HOLD", content)
+                self.assertIn("RIGHTS_HOLD", content)
+                self.assertNotIn("publicationEligible=true", content)
+
+    def test_reader_15_and_16_confessional_sources_not_publication(self):
+        base = ROOT / "ИСКУПЛЕНИЕ/synthesis"
+        plan = (base / "01_SERIES_PLAN_AND_ARTICLE_COUNT.md").read_text(encoding="utf-8")
+        board = (base / "07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        registry = (ROOT / "ИСКУПЛЕНИЕ/05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md").read_text(encoding="utf-8")
+        manifest = self.report["postReviewDrafts"]
+        paths = {entry["path"] for entry in manifest}
+        for name, chapter, last, hold in (
+            ("article15_dort_westminster_saumur_english_hu.md", "ARTICLE 15 / 18", "F15-07", "ATTRIBUTION_HOLD"),
+            ("article16_boundaries_calvinism_reformed_family.md", "ARTICLE 16 / 18", "F16-07", "CONFESSIONAL_REVIEW_HOLD"),
+        ):
+            rel = "ИСКУПЛЕНИЕ/synthesis/drafts/" + name
+            data = (ROOT / rel).read_text(encoding="utf-8")
+            with self.subTest(chapter=name):
+                self.assertGreater(len(data), 16000)
+                self.assertIn(chapter, data)
+                self.assertIn(last, data)
+                self.assertIn(hold, data)
+                self.assertIn("RIGHTS_HOLD", data)
+                self.assertIn("PUBLICATION_HOLD", data)
+                self.assertIn("publicationEligible=false", data)
+                self.assertNotIn("publicationEligible=true", data)
+                self.assertIn(rel, paths, "every new reader chapter requires a pinned manifest entry")
+                self.assertIn("drafts/" + name, plan)
+        self.assertIn("## 24. READER-15", board)
+        self.assertIn("## 25. READER-16", board)
+        for marker in ("H15-DORT-II", "H15-WCF-1689", "H15-DEVENANT-AMYRAUT", "H16-MODEL-AXES"):
+            self.assertIn(marker, registry)
+
+    def test_reader_14_and_18_new_standalone_drafts_not_publication(self):
+        base = ROOT / "ИСКУПЛЕНИЕ/synthesis"
+        plan = (base / "01_SERIES_PLAN_AND_ARTICLE_COUNT.md").read_text(encoding="utf-8")
+        board = (base / "07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        registry = (ROOT / "ИСКУПЛЕНИЕ/05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md").read_text(encoding="utf-8")
+        for name, label, last in (
+            ("article14_early_church_to_reformation_history.md", "ARTICLE 14 / 18", "F14-07"),
+            ("article18_living_atonement_holiness_church_mission_suffering.md", "ARTICLE 18 / 18", "F18-07"),
+        ):
+            content = (base / "drafts" / name).read_text(encoding="utf-8")
+            with self.subTest(chapter=name):
+                self.assertGreater(len(content),12000)
+                self.assertIn(label,content)
+                self.assertIn(last,content)
+                self.assertIn("PUBLICATION_HOLD",content)
+                self.assertIn("publicationEligible=false",content)
+                self.assertNotIn("publicationEligible=true",content)
+                self.assertIn("drafts/"+name,plan)
+        self.assertIn("## 22. READER-14",board)
+        self.assertIn("## 23. READER-18",board)
+        for label in ("H14-ANSELM-CDH","H14-AQUINAS-ST48-49","H14-LUTHER-GAL313"):
+            self.assertIn(label,registry)
+    def test_article02_r18_vatican_codex_q_photo_not_full_apparatus(self):
+        memo = (ROOT / "ИСКУПЛЕНИЕ/evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md").read_text(encoding="utf-8")
+        ot = (ROOT / "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md").read_text(encoding="utf-8")
+        board = (ROOT / "ИСКУПЛЕНИЕ/synthesis/07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        registry = (ROOT / "ИСКУПЛЕНИЕ/05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md").read_text(encoding="utf-8")
+        article = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md").read_text(encoding="utf-8")
+        self.assertIn("## AT-010-R18",memo)
+        r18 = memo.split("## AT-010-R18",1)[1]
+        for marker in ("Codex Marchalianus", "canvas 0620", "canvas 0621–0622",
+                       "ΠΑΙΔΕΙΑ ΕΙΡΗΝΗΣ ΗΜΩΝ", "ἡ ψυχὴ ὑμῶν", "LOCATOR_CORRECTED",
+                       "GOTTINGEN_APPARATUS_HOLD", "GREEK_BACKTRANSLATION_HOLD",
+                       "RIGHTS_HOLD", "PUBLICATION_HOLD", "publicationEligible=false"):
+            with self.subTest(marker=marker): self.assertIn(marker,r18)
+        self.assertIn("## 19. AT-010-R18",ot)
+        self.assertIn("## 21. AT-010-R18",board)
+        self.assertIn("VAT-Q-IS53-05",registry)
+        self.assertIn("VAT-Q-IS53-10",registry)
+        self.assertIn("Дополнительная первичная греческая сверка (R18)",article)
+        self.assertNotIn("GOTTINGEN_APPARATUS_VERIFIED",r18)
+
+    def test_article02_r17_qumran_digital_versioned_transcripts_not_photos(self):
+        memo = (ROOT / "ИСКУПЛЕНИЕ/evidence/AT010_ARTICLE02_SEMANTIC_REVIEW_2026-11-07.md").read_text(encoding="utf-8")
+        ot = (ROOT / "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md").read_text(encoding="utf-8")
+        board = (ROOT / "ИСКУПЛЕНИЕ/synthesis/07_LIVING_EXECUTION_BOARD_2026-11-07.md").read_text(encoding="utf-8")
+        registry = (ROOT / "ИСКУПЛЕНИЕ/05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md").read_text(encoding="utf-8")
+        article = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md").read_text(encoding="utf-8")
+        self.assertIn("## AT-010-R17", memo)
+        r17 = memo.split("## AT-010-R17", 1)[1]
+        for marker in ("2026-05-21", "2025-08-25", "או֯[ר]", "חטאי",
+                       "1Q8", "4Q58", "4Q56", "R16 SUPERSEDED",
+                       "GLYPH_PHOTO_HOLD", "GOTTINGEN_APPARATUS_HOLD",
+                       "RIGHTS_HOLD", "PUBLICATION_HOLD", "publicationEligible=false"):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, r17)
+        self.assertIn("## 18. AT-010-R17", ot)
+        self.assertIn("## 20. AT-010-R17", board)
+        self.assertIn("QD-4Q58-20260521", registry)
+        self.assertIn("QD-1Q8-20250825", registry)
+        self.assertIn("Текстологическое уточнение (R17", article)
+
+    def test_noncanonical_source_classes_are_outside_support_tables(self):
+        targets = (
+            "article09_world_and_propitiation_johannine_case.md",
+            "article10_ransom_for_all_two_adams_paul_hebrews.md",
+            "article11_bought_apostates_covenant_blood_and_weak_brother.md",
+            "article13_double_payment_unbelief_and_acquired_faith.md",
+        )
+        for name in targets:
+            content = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts" / name).read_text(encoding="utf-8")
+            with self.subTest(article=name):
+                self.assertNotIn("B1/B2", content)
+                self.assertIn("Справочные материалы (evidenceClass C, вне доказательных опор)", content)
+                table = content.split("| Опора | Класс", 1)[1].split("\n\n", 1)[0]
+                self.assertNotIn("| C:", table)
+                self.assertNotIn("| C —", table)
+
+    def test_article11_named_judas_primary_witnesses_and_hebrews_hold(self):
+        text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article11_bought_apostates_covenant_blood_and_weak_brother.md").read_text(encoding="utf-8")
+        cards = (ROOT / "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md").read_text(encoding="utf-8")
+        p17 = (ROOT / "docs/research/atonement/17_quote_mining_and_theological_equivocation.md").read_text(encoding="utf-8")
+        for marker in (
+            "14.1. Иуда Искариот", "14.2. Сильнейшее широкое возражение",
+            "14.3. Граница свидетельства о Прокопенко",
+            "A Display of Arminianism", "Стэнли Гауэр",
+            "redemptus erat", "Сперджен", "Девенант",
+            "392–398", "1855", "543–548",
+            "JUDAS_NAMED_REDEMPTION_QUOTE_HOLD",
+            "2026_ORAL_RESPONSE_HOLD",
+            "OWEN_OTHER_LOCATORS_HOLD",
+            "HEBREWS_EXEGESIS_HOLD", "PUBLICATION_HOLD",
+        ):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, text)
+        self.assertIn("543–548", cards)
+        self.assertIn("§11", p17)
+        self.assertIn("Иуда", text)
+
+    def test_article13_time_decree_application_and_gill_countercase(self):
+        text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md").read_text(encoding="utf-8")
+        for marker in (
+            "Вечный замысел не означает вечного личного оправдания",
+            "Серьёзное историческое возражение: Джон Гилл",
+            "Турретин", "XVI.9", "600–602",
+            "Гилл", "вечное активное оправдание",
+            "Вестминстерское исповедание XI.4",
+            "Божья вневременность — не скрытая посылка о круге искупления",
+            "DABNEY_FULL_BOOK_COLLATION_HOLD",
+            "DAVENANT_LATIN_DIPLOMATIC_COLLATION_HOLD",
+            "AI_TRANSLATION_HOLD", "OWEN_WCF_TIMING_HOLD",
+        ):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, text)
+        self.assertIn("P05 §§19–31", text)
+        self.assertIn("R. T. Mullins (2023)", text)
+        self.assertIn("не цитируются как прочитанные", text)
+
+    def test_wave1_primary_dabney_context_and_print_hold_stay_distinct(self):
+        text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md").read_text(encoding="utf-8")
+        dossier = (ROOT / "ИСКУПЛЕНИЕ/evidence/WAVE1_DABNEY_DAVENANT_OWEN_PRIMARY_WITNESSES_2026-11-07.md").read_text(encoding="utf-8")
+        for marker in ("DABNEY_520_523_FACSIMILE_VERIFIED", "DABNEY_648_FACSIMILE_VERIFIED", "DABNEY_FULL_BOOK_COLLATION_HOLD", "sermonindex.net/books/writings-of-robert-l-dabney/57"):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, text)
+                self.assertIn(marker, dossier)
+        for token in ("Inconclusive Proofs", "Real Proofs", "strict Calvinistic", "QUOTE_SAFE=NO"):
+            self.assertIn(token.lower(), dossier.lower())
+
+    def test_wave1_dabney_648_is_justification_not_extent(self):
+        article = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md").read_text(encoding="utf-8")
+        dossier = (ROOT / "ИСКУПЛЕНИЕ/evidence/WAVE1_DABNEY_DAVENANT_OWEN_PRIMARY_WITNESSES_2026-11-07.md").read_text(encoding="utf-8")
+        self.assertIn("archive.org/details/syllabusnotesofc00dabn/page/648", dossier)
+        self.assertIn("archive.org/details/syllabusnotesofc00dabn/page/521", dossier)
+        self.assertIn("антиномист", dossier.lower())
+        self.assertIn("DABNEY_FULL_BOOK_COLLATION_HOLD", article)
+        self.assertIn("/page/520/mode/1up", dossier)
+        self.assertIn("/page/522/mode/1up", dossier)
+        self.assertIn("/page/523/mode/1up", dossier)
+        self.assertIn("нравственную обязанность", article.lower())
+
+    def test_wave1_davenant_latin_web_segments_are_not_print_pages(self):
+        text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md").read_text(encoding="utf-8")
+        dossier = (ROOT / "ИСКУПЛЕНИЕ/evidence/WAVE1_DABNEY_DAVENANT_OWEN_PRIMARY_WITNESSES_2026-11-07.md").read_text(encoding="utf-8")
+        for marker in ("DAVENANT_1650_THREE_PRINT_LOCI_VERIFIED", "AI_TRANSLATION_HOLD", "§75", "foedus Evangelicum"):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, text)
+                self.assertIn(marker, dossier)
+        self.assertIn("веб-локатор", dossier)
+        for leaf in ("n10", "n41", "n78"):
+            with self.subTest(leaf=leaf):
+                self.assertIn(f"/page/{leaf}/mode/1up", text)
+                self.assertIn(f"/page/{leaf}/mode/1up", dossier)
+        self.assertIn("Именно **69**, а не 70", text)
+        self.assertIn("буквальная", dossier)
+        self.assertIn("PUBLICATION_HOLD", dossier)
+
+    def test_wave0_hodge_source_target_and_owen_distinction(self):
+        text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md").read_text(encoding="utf-8")
+        self.assertIn("https://ccel.org/ccel/hodge/theology2.iv.viii.ii.html", text)
+        self.assertNotIn("theology2.iv.vii.iii.html", text)
+        self.assertIn("не то же самое", text)
+        self.assertIn("actual right", text)
+        self.assertIn("actual possession", text)
+
+    def test_wave0_conflict_cards_are_current_without_false_closure(self):
+        text = (ROOT / "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md").read_text(encoding="utf-8")
+        def section(name, following):
+            begin = text.index("## " + name + ".")
+            end = text.index("## " + following + ".", begin)
+            return text[begin:end]
+        calvin = section("C-06", "C-07")
+        fathers = section("C-07", "C-08")
+        confessions = section("C-14", "C-15")
+        complex_case = section("C-16", "C-17")
+        self.assertIn("1855", calvin)
+        self.assertIn("172–173", calvin)
+        self.assertNotIn("страница не в руках", calvin)
+        self.assertIn("GAP-B1", calvin)
+        self.assertIn("12 действующих Markdown-досье", fathers)
+        self.assertNotIn("слой `fathers/` ещё не создан", fathers)
+        self.assertIn("`OPEN`", fathers)
+        self.assertIn("obtained eternal redemption", confessions)
+        self.assertIn("purchased redemption", confessions)
+        self.assertNotIn("1689 не прочитан постатейно", confessions)
+        for atom in ("C16-LEX", "C16-HIST", "C16-INTENT", "C16-APPLICATION"):
+            self.assertIn(atom, complex_case)
+        self.assertIn("`OPEN`", complex_case)
+        self.assertIn("EVIDENCE_HOLD", complex_case)
+
     def test_current_corpus_and_coverage(self):
         errors, summary = check(ROOT, self.report, self.control)
         self.assertEqual(errors, [])
         self.assertEqual(summary["markedCitations"], self.report["markedCitationCount"])
-        self.assertEqual(summary["drafts"], 13)
+        # The 2026-11-02 evidence still records its historical 13-draft scope.
+        # New drafts require a separately declared, byte-pinned addition.
+        self.assertEqual(self.report["draftCount"], 13)
+        additions = self.report.get("postReviewDrafts", [])
+        self.assertEqual(summary["drafts"], self.report["draftCount"] + len(additions))
+        declared_paths = {r["path"] for r in additions}
+        self.assertEqual(len(declared_paths), len(additions), "duplicate post-review draft declaration")
+        actual_added = {
+            p.relative_to(ROOT).as_posix()
+            for p in (ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts").glob("article*.md")
+        }
+        self.assertEqual(declared_paths, actual_added, "drafts must be fully declared in the byte-pinned manifest")
+        self.assertTrue(
+            {
+                "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md",
+                "ИСКУПЛЕНИЕ/synthesis/drafts/article08_particular_redemption_positive_case.md",
+                "ИСКУПЛЕНИЕ/synthesis/drafts/article09_world_and_propitiation_johannine_case.md",
+                "ИСКУПЛЕНИЕ/synthesis/drafts/article10_ransom_for_all_two_adams_paul_hebrews.md",
+                "ИСКУПЛЕНИЕ/synthesis/drafts/article11_bought_apostates_covenant_blood_and_weak_brother.md",
+                "ИСКУПЛЕНИЕ/synthesis/drafts/article12_cosmic_reconciliation_heaven_earth_new_creation.md",
+                "ИСКУПЛЕНИЕ/synthesis/drafts/article13_double_payment_unbelief_and_acquired_faith.md",
+            }.issubset(declared_paths),
+            "historic seven post-review drafts must not disappear",
+        )
+
+    def test_post_review_draft_manifest_fails_closed(self):
+        additions = self.report.get("postReviewDrafts", [])
+        self.assertGreaterEqual(len(additions), 7)
+        self.assertEqual(
+            len(additions),
+            len(list((ROOT / "ИСКУПЛЕНИЕ/synthesis/drafts").glob("article*.md"))),
+            "all post-review drafts must be explicitly registered",
+        )
+        cases = [
+            (f"missing-declaration-{i}", additions[:i] + additions[i + 1 :])
+            for i in range(len(additions))
+        ]
+        for i in range(len(additions)):
+            altered_sha = list(additions)
+            altered_sha[i] = {**additions[i], "sha256": "0" * 64}
+            cases.append((f"incorrect-sha256-{i}", altered_sha))
+            altered_publication = list(additions)
+            altered_publication[i] = {**additions[i], "publicationEligible": True}
+            cases.append((f"publication-authorized-{i}", altered_publication))
+        for case, replacement in cases:
+            with self.subTest(case=case):
+                bad_report = {**self.report, "postReviewDrafts": replacement}
+                errors, _ = check(ROOT, bad_report, self.control)
+                self.assertTrue(errors, f"{case} unexpectedly passed")
+                self.assertTrue(
+                    any(
+                        "draft inventory differs" in e
+                        or "post-review draft bytes differ" in e
+                        or "post-review draft must remain unpublished" in e
+                        for e in errors
+                    ),
+                    errors,
+                )
 
     def test_each_refuted_greek_claim_cannot_be_restored(self):
         for row in self.report["repairs"]:

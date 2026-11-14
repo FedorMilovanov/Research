@@ -73,6 +73,32 @@ jobs:
       - name: Atonement corpus integrity (read-only)
         run: python3 -B scripts/validate_atonement_corpus_integrity.py
 
+      # A tracked textual source must retain exactly its Git blob bytes on every runner.
+      # This detects platform-specific checkout mutations before a stale byte count is blamed
+      # on the scientific sources or hidden by rerunning a writer in CI.
+      - name: Assert sub-lane Markdown byte identity with Git
+        run: |
+          python3 -B - <<'PY'
+          import subprocess
+          from pathlib import Path
+
+          paths = sorted(p for lane in ("ot", "nt", "fathers", "synthesis")
+                         for p in (Path("ИСКУПЛЕНИЕ") / lane).glob("*.md"))
+          assert len(paths) == 57, f"unexpected source inventory: {len(paths)}"
+          drift = []
+          for path in paths:
+              original = subprocess.check_output(["git", "show", f"HEAD:{path.as_posix()}"])
+              live = path.read_bytes()
+              if original != live:
+                  drift.append((str(path), len(live) - len(original),
+                                live.count(bytes((13, 10))), original.count(bytes((13, 10)))))
+          print(f"Source byte parity: {len(paths)} files, {len(drift)} deviations")
+          for filename, delta, live_crlf, git_crlf in drift:
+              print(f"DIFF: {filename}: delta={delta}, CRLF live={live_crlf}, Git={git_crlf}")
+          if drift:
+              raise SystemExit("Tracked manuscript bytes differ from Git on this runner")
+          PY
+
       # Числа, которые живут и в реестре, и в прозе аудита, переснимает скрипт; этот шаг не даёт
       # им протухать: без него «счётчик есть в реестре» означает «кто-то когда-то посчитал» (круг 63
       # нашёл в §1 123 записи при 124 в дереве — и ни одна проверка об этом не сообщила).
@@ -80,8 +106,43 @@ jobs:
       # плана, иначе «сходимость» остаётся знанием автора круга, а круг 62 показал, что это за знание.
       - name: Close-round order is inert and refuses the appending writers
         run: |
+          # A previous run passed byte-for-byte source parity, then reported a +561-byte
+          # inventory drift in --selfcheck. Measure the same tracked sources at each
+          # boundary; no writes and no source/counter mutation on the CI runner.
+          source_byte_witness() {
+            CHECK_PHASE="$1" python3 -B - <<'PY'
+          import os
+          import subprocess
+          from pathlib import Path
+          paths = sorted(p for lane in ("ot", "nt", "fathers", "synthesis")
+                         for p in (Path("ИСКУПЛЕНИЕ") / lane).glob("*.md"))
+          if len(paths) != 57:
+              raise SystemExit(f"Unexpected markdown inventory: {len(paths)}")
+          drift = []
+          size_live = size_git = 0
+          for path in paths:
+              original = subprocess.check_output(["git", "show", f"HEAD:{path.as_posix()}"])
+              live = path.read_bytes()
+              size_git += len(original)
+              size_live += len(live)
+              if original != live:
+                  drift.append((str(path), len(live) - len(original),
+                                live.count(b"\r\n"), original.count(b"\r\n")))
+          print(f"CHECK_PHASE={os.environ['CHECK_PHASE']} files={len(paths)} "
+                f"git_bytes={size_git} live_bytes={size_live} mismatches={len(drift)}")
+          for path, delta, live_crlf, git_crlf in drift:
+              print(f"DRIFT {path}: delta_bytes={delta}, CRLF live={live_crlf}, Git={git_crlf}")
+          if drift:
+              raise SystemExit("Read-only close-round stage changed tracked source bytes")
+          PY
+          }
+          source_byte_witness before-plan
           python3 -B scripts/atonement_round_close.py --plan > /dev/null
-          python3 -B scripts/atonement_round_close.py --selfcheck
+          source_byte_witness after-plan
+          rc=0
+          python3 -B scripts/atonement_round_close.py --selfcheck || rc=$?
+          source_byte_witness after-selfcheck
+          test "$rc" -eq 0 || exit "$rc"
           rc=0
           python3 -B scripts/atonement_round_close.py --run --allow-appending-writers >/dev/null 2>&1 || rc=$?
           test "$rc" = 2 || { echo "::error::писатели без подтверждения круга должны давать отказ с кодом 2, получили $rc"; exit 1; }

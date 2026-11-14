@@ -193,7 +193,7 @@ def card_index(lan: str) -> dict[str, list[dict]]:
         return out
     # корневой реестр лежит в ИСКУПЛЕНИЕ/data/, лановый — в ИСКУПЛЕНИЕ/<лан>/data/:
     # короткие ссылки вида «05_x.md» разрешаются относительно второго каталога сверху
-    base_rel = str(path.relative_to(ROOT).parents[1])
+    base_rel = path.relative_to(ROOT).parents[1].as_posix()
 
     def own_file(node: dict) -> str | None:
         for key in ("file", "path", "файл", "markdownFile"):
@@ -350,7 +350,7 @@ def scan_lan(lan: str) -> dict:
     seen: collections.Counter = collections.Counter()
 
     for path in files_for(lan):
-        rel = str(path.relative_to(ROOT))
+        rel = path.relative_to(ROOT).as_posix()
         text = path.read_text(encoding="utf-8").splitlines()
         starts = [(i, m.group(1)) for i, ln in enumerate(text, 1) if (m := HEADING_RE.match(ln))]
         for idx, (line, title) in enumerate(starts):
@@ -694,7 +694,7 @@ def write_rollup(fresh: dict) -> list:
                                                            sort_keys=True) != json.dumps(
                 gate_a[key], ensure_ascii=False, sort_keys=True):
             raise SystemExit(f"запись сводки задела чужой ключ integrityGate.{key!r} — так нельзя")
-    path.write_text(out, encoding="utf-8")
+    path.write_text(out, encoding="utf-8", newline="\n")
     return [l for l in rollup_diff(fresh)]
 
 
@@ -718,7 +718,7 @@ def insert_block(path: Path, block: dict) -> None:
                 data_now[key], ensure_ascii=False, sort_keys=True
             ):
                 raise SystemExit(f"{path.name}: привидение к форме задело ключ {key!r}")
-        path.write_text(canon, encoding="utf-8")
+        path.write_text(canon, encoding="utf-8", newline="\n")
         return
     i = raw.rstrip().rfind("\n}")
     if i < 0:
@@ -740,7 +740,7 @@ def insert_block(path: Path, block: dict) -> None:
             data[key], ensure_ascii=False, sort_keys=True
         ):
             raise SystemExit(f"{path.name}: вставка задела чужой ключ {key!r} — так нельзя")
-    path.write_text(new, encoding="utf-8")
+    path.write_text(new, encoding="utf-8", newline="\n")
 
 
 def build_block(lan: str, fresh: dict, previous: dict | None) -> dict:

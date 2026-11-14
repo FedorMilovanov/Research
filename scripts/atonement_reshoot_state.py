@@ -41,6 +41,7 @@
 from __future__ import annotations
 
 import collections
+from datetime import datetime, timezone
 import glob
 import hashlib
 import json
@@ -299,7 +300,7 @@ def tree_counts(root=None) -> dict:
 
     lane_glob = str(rel(ROOT / "docs" / "research" / "atonement")) + "/*.md"
     docs = stat(sorted(glob.glob(lane_glob)))
-    n_num = len([x for x in glob.glob(lane_glob) if re.search(r"/\d\d_", x)])
+    n_num = len([x for x in glob.glob(lane_glob) if re.match(r"^\d{2}_", Path(x).name)])
     rootmd = stat(sorted(glob.glob(str(rel(ROOT / "ИСКУПЛЕНИЕ")) + "/*.md")))
     b17 = rel(ROOT / "ИСКУПЛЕНИЕ" / "17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md").stat().st_size
     doc = rel(DOC)
@@ -887,6 +888,7 @@ SCAN_EXEMPT = {
     "apply_corpus": "писатель: подставляет измеренные числа в корпус; читает и сравнивает — другие; якорь `main`",
     "doc_numbers": "генератор: (регулярка, строка) для документа; сверка результата — в петле apply/check; якорь `diff_state_scan`",
     "apply_doc": "писатель: применяет сгенерированные строки к документу, отказывается при двух якорях; якорь `main`",
+    "refresh_table_91": "писатель: строит таблицу §9.1 исключительно из актуального claimsPerRegistry; отдельная сверка check_table_91 контролирует результат; якорь `apply_doc`",
     "report_not_generated": "служебная фраза отчёта о блоках, которые генератор не создаёт; сравнивает ничего; якорь `main`",
     "main": "разбор флагов и вызов шагов; сверок в теле не определено; корневой якорь `main` — его никто не зовёт",
 }
@@ -1291,7 +1293,7 @@ def tree_counts_trap():
         for relpath, content in files.items():
             dst = Path(tmp) / relpath
             dst.parent.mkdir(parents=True, exist_ok=True)
-            dst.write_text(content, encoding="utf-8")
+            dst.write_text(content, encoding="utf-8", newline="\n")
         t = tree_counts(Path(tmp))
         problems = []
         if (t["docs"][0], t["docsNumbered"]) != (4, 3) or t["rootmd"][0] != 2:
@@ -1306,9 +1308,9 @@ def tree_counts_trap():
                             "файлов по ланам %d (4)" % (t["massRows"], t["massSections"], t["sub"][0]))
         # посадка: правка в файле обязана двигать числа
         (Path(tmp) / "docs/research/atonement/01_a.md").write_text("одна\nвторая\nтретья\n",
-                                                                    encoding="utf-8")
+                                                                    encoding="utf-8", newline="\n")
         (Path(tmp) / "docs/research/atonement/35_four_point_authors_mass_registry.md").write_text(
-            mass_text + "| FP-3 | 30 |\n", encoding="utf-8")
+            mass_text + "| FP-3 | 30 |\n", encoding="utf-8", newline="\n")
         (Path(tmp) / "ИСКУПЛЕНИЕ/nt/a.md").unlink()
         t2 = tree_counts(Path(tmp))
         moved = []
@@ -1858,6 +1860,44 @@ def doc_numbers(corp: dict, n: dict) -> list:
     ]
 
 
+def refresh_table_91(corp: dict, text: str) -> str:
+    """Rebuild the scoped §9.1 rows from the existing claim-register measurement.
+
+    The original round-61 finalizer is absent. A hand-maintained copy of its
+    numbers drifted whenever new drafts were added. The live producer is the
+    claim register, and this function owns only the seven displayed columns.
+    Refuse absent/duplicate rows instead of inventing a second measurement.
+    """
+    cpr = corp["integrityGate"]["scopeOfMeasurementRules"]["claimsPerRegistry"]
+    by_lan = cpr["сверкаСКарточками"]
+    lines = text.splitlines(keepends=True)
+    start = next((i for i, row in enumerate(lines) if row.startswith("### 9.1 ")), None)
+    if start is None:
+        raise SystemExit("§9.1: cannot find the claim reconciliation chapter")
+    stop = next((i for i in range(start + 1, len(lines))
+                 if lines[i].startswith(("### ", "## "))), len(lines))
+    column_names = ("строк", "покрытоПоФайлу", "файлов", "карточекБезСостояния",
+                    "неОтраженоВКарточке", "терминовКарточкиВнеПрозы",
+                    "ссылокВнеОбходаЛана")
+    totals = [0] * len(column_names)
+    for lan in (*SUBLANES, "корпус"):
+        data = by_lan[lan]
+        vals = [int(data[k]) for k in column_names]
+        totals = [a + b for a, b in zip(totals, vals)]
+        needle = "| `" + lan + "` |"
+        matches = [i for i in range(start, stop) if lines[i].startswith(needle)]
+        if len(matches) != 1:
+            raise SystemExit(f"§9.1: expected one {lan} row, got {len(matches)}")
+        lines[matches[0]] = "| `" + lan + "` | " + " | ".join(str(v) for v in vals) + " |\n"
+    if totals[0] != int(cpr["всего"]) or totals[1] != int(cpr["детально"]["покрытоПоФайлу"]):
+        raise SystemExit("§9.1: claim-register subtotal does not match the corpus")
+    matches = [i for i in range(start, stop) if lines[i].startswith("| **всего** |")]
+    if len(matches) != 1:
+        raise SystemExit(f"§9.1: expected one total row, got {len(matches)}")
+    lines[matches[0]] = "| **всего** | " + " | ".join("**" + str(v) + "**" for v in totals) + " |\n"
+    return "".join(lines)
+
+
 def apply_doc(corp: dict, n: dict) -> str:
     text = DOC.read_text(encoding="utf-8")
     for pat, new in doc_numbers(corp, n):
@@ -1866,12 +1906,12 @@ def apply_doc(corp: dict, n: dict) -> str:
             raise SystemExit(f"якорь {pat!r} нашёл {len(hits)} строк вместо одной — генератор "
                              "остановлен, чтобы не писать в две строки или не пропустить свою")
         text = re.sub(pat, lambda _m, s=new: s, text, count=1, flags=re.M)
-    return text
+    return refresh_table_91(corp, text)
 
 
 def check_table_91(corp: dict, text: str = None) -> list:
-    """Таблицу §9.1 этот скрипт не порождает (её производитель — утраченный финалайзер круга 61),
-    но право её сверить оставляет: каждая ячейка обязана равняться полю реестра.
+    """Таблицу §9.1 переснимает refresh_table_91 по claim-register, а этот
+    независимый разбор проверяет, что каждая ячейка равна полю реестра.
 
     `text` — тот же обход, но по поданному тексту: он нужен ловушке, чтобы посадить расхождение в
     строку, не трогая документ (круг 65, правка 12). Без этой опции сверка была непроверяема:
@@ -2111,7 +2151,7 @@ def main() -> int:
         raise SystemExit("употребление: atonement_reshoot_state.py "
                          "[--check|--write|--report|--rule-trap]")
     global now
-    now = subprocess.run(["date", "-u", "+%Y-%m-%dT%H:%M:%SZ"], capture_output=True, text=True).stdout.strip()
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     corp = json.loads(CORPUS.read_text(encoding="utf-8"))
     idx_file = json.loads(INDEX.read_text(encoding="utf-8"))
     if mode == "--report":
@@ -2146,8 +2186,8 @@ def main() -> int:
         corp = apply_corpus(corp, n)
         # писать надо оба файла на каждом витке: байты корпуса входят в строку документа, а байты
         # документа — в реестр; пока хоть один не записан, следующий виток считает по чужим байтам
-        CORPUS.write_text(json.dumps(corp, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-        DOC.write_text(apply_doc(corp, n), encoding="utf-8")
+        CORPUS.write_text(json.dumps(corp, ensure_ascii=False, indent=1) + "\n", encoding="utf-8", newline="\n")
+        DOC.write_text(apply_doc(corp, n), encoding="utf-8", newline="\n")
         corp = json.loads(CORPUS.read_text(encoding="utf-8"))
         idx_file = json.loads(INDEX.read_text(encoding="utf-8"))
         new = registry_numbers(corp, idx_file)
