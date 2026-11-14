@@ -58,6 +58,30 @@ class ReformationAdversarialSevenNineTests(unittest.TestCase):
                 self.assertIn("RIGHTS_HOLD", apparatus)
                 self.assertIn("PUBLICATION_HOLD", apparatus)
 
+    def test_ch07_whole_reader_distinguishes_grievances_two_works_and_civic_violence(self):
+        """Protect chapter 07's one-pass argument without inventing execution proof."""
+        reader, apparatus = self.books[7].split("## Источниковедческий аппарат", 1)
+        self.assertGreater(len(reader.split()), 1950)
+        self.assertEqual(reader.count("## "), 9)
+        for term in ("«Двенадцати статей»", "Лотцер", "Шаппелер",
+                     "Вайнсберг и Вайнгартен", "Вайнгартенское соглашение",
+                     "два разных авторских текста", "смертоносному подавлению",
+                     "не документирует судьбу каждой деревни",
+                     "21 мая 1525 года войска Швабского союза сожгли Вайнсберг",
+                     "1553 году", "коллективного наказания",
+                     "не доказательство личной виновности каждого жителя",
+                     "непосредственному воздействию памфлета Лютера",
+                     "episode08_justification_confessions_1530_1563_manuscript.md"):
+            with self.subTest(term=term):
+                self.assertIn(term.lower(), reader.lower())
+        self.assertNotRegex(reader, r"https?://|\bVD16\b|\bREF-[PS]\d+")
+        for marker in ("REF-P07-ZRH", "REF-P07-WIT", "REF-P08",
+                       "REF-P08-ERF", "REF-S109", "REF-S96",
+                       "ORIGINAL_PUNITIVE_ORDER_UNREAD", "NOT_EDITORIAL_READY",
+                       "ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, apparatus)
+
     def test_peasants_prints_and_voice_limit(self):
         s = self.books[7]
         for marker in ("Двенадцать статей", "прежнее увещание",
