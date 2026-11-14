@@ -141,7 +141,7 @@
 37. **Николай Васильевич Одинцов.** *Вероисповедание баптистов СССР* (1928).
     - *Издание:* Москва: Федеративный союз баптистов СССР, 1928.
     - *Фокус:* Модификация терминологии 1906 г. в условиях сближения с пашковцами И. С. Проханова.
-38. **Charles Haddon Spurgeon.** *General and Yet Particular* (MTP, Vol. 10, Sermon #564, 1864).
+38. **Charles Haddon Spurgeon.** *General and Yet Particular* (MTP, Vol. 10, Sermon #566, 1864).
     - *Издание:* London: Passmore & Alabaster; repr. Pilgrim, 1970.
     - *Фокус:* 1 Тим. 4:10: провиденциальное сохранение жизни грешников vs сотериологическое искупление избранных; жесткое отрицание искупления ада.
 39. **Charles Hodge.** *Systematic Theology* (1871–1873), Vol. 2, Part III, Ch. 8: *For Whom Did Christ Die?*
