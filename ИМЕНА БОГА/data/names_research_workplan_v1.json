@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "planId": "NAMES_OF_GOD_MASTER_WORKPLAN",
   "createdAt": "2026-11-07",
-  "updatedAt": "2026-11-15",
+  "updatedAt": "2026-11-16",
   "statusOwner": "ИМЕНА БОГА/data/names_research_workplan_v1.json",
   "humanGuide": "ИМЕНА БОГА/11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md",
   "mediaResearch": "ИМЕНА БОГА/12_TMS_BARRICK_CHOU_SOURCE_REVIEW.md",
@@ -12,8 +12,8 @@
     "arenaRecords": 29,
     "extensionRecords": 13,
     "contextAttestations": 105,
-    "sourceRegisterEntries": 130,
-    "regressionTests": 322,
+    "sourceRegisterEntries": 131,
+    "regressionTests": 323,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
     "allSixCiChecks": "VERIFIED_PREDECESSOR_HEAD_29e52b49a9f445246e072898d009e98f02d74794_6_OF_6_TERMINAL_SUCCESS_732_OF_732_TESTS_NEW_AUDIT_HEAD_RECHECK_REQUIRED",
@@ -354,7 +354,8 @@
         "W60 2026-11-12: source SRC-WEVERS-GOTTINGEN-EXODUS-1991-AUTHOR-INTRO-EN2006: directly read Wevers 1991 Göttingen Exodus editor's online English introduction translated by editor 2006, C§1/3/4/6, D. Apparatus I vs II / α' σ' θ' οἱ γ' sigla / compared Field1875, NOT actual verse Ex17:16 published critical apparatus or original physical manuscript collation. New method source and 11 false-promotion mutations. Still NG04 BLOCKED_SOURCE.",
         "W61 2026-11-12: actual ORIGINAL Field1875 volI Exodus17:16 printed p111 visually read via BSB IIIF canvas 00221 (https://api.digitale-sammlungen.de/iiif/image/v2/bsb11340409_00221/full/1400,/0/default.jpg) including Hebrew כס יה, Latin throne vs banner (נס) and printed Syrohexaplaric/Greek editorial variants, n17 Nescio an Symmachi sit. 920-frame real complete BSB copy vs obsolete 207-page incomplete PDF. Original printed critical compilation NOT independent original Greek codex or lost Keter folio. SOURCE SRC-FIELD-HEXAPLA-1875-EX17-16-PRINT-P111-BSB. Still NG04 BLOCKED_SOURCE, no critical collation or rights.",
         "W62 2026-11-12: directly visualized Kittel BHK SECOND (not third) original 1909 printed Ex17:16 p99, PDF index114, original lower print apparatus for כס יה / כסיה and Greek κρυφαίᾳ with editorial proposals נס; correct 1909 date from title page despite bad 1937 filename. Direct separate Deutsche Bibelgesellschaft official BHS reduced text Ex17:16 prints כֵּס יָהּ two words but NO critical apparatus. New SRC-KITTEL-BHK2-1909-EX17-16-P99-ORIGINAL-APP and SRC-DBG-BHS-EX17-16-PUBLISHER-TEXT, no independent ancient manuscript collation/rights. NG04 remains BLOCKED_SOURCE.",
-        "W71 2026-11-15: original Ben Outhwaite 2023 DOI 10.1515/9783111019963-009, original Cambridge-hosted author chapter pp146–147,150 directly inspected including figure3 photo JTS ENA4107.20 (L588 fol20r). Author locates first column as Exod5:11–6:3 and setuma before 6:2. Registered SRC-OUTHWAITE-2023-JTS-ENA4107-20-EX6-2-3, 130 sources/322 ledger tests; photographic author publication NOT an independent sign-by-sign manuscript autopsy or rights grant, BHS and Göttingen Exodus 1991 original apparatus still unread, NG04 BLOCKED_SOURCE and criticalCollationsCompleted=0."
+        "W71 2026-11-15: original Ben Outhwaite 2023 DOI 10.1515/9783111019963-009, original Cambridge-hosted author chapter pp146–147,150 directly inspected including figure3 photo JTS ENA4107.20 (L588 fol20r). Author locates first column as Exod5:11–6:3 and setuma before 6:2. Registered SRC-OUTHWAITE-2023-JTS-ENA4107-20-EX6-2-3, 130 sources/322 ledger tests; photographic author publication NOT an independent sign-by-sign manuscript autopsy or rights grant, BHS and Göttingen Exodus 1991 original apparatus still unread, NG04 BLOCKED_SOURCE and criticalCollationsCompleted=0.",
+        "W72 2026-11-16: user-provided original NETS 40-page English Exodus PDF (Larry J. Perkins), exact target PDF pages11/13/22, print pp53/55/64 plus translator introduction pdf p4 print p46 and Wevers-main-edition reference pdf p1 print p43. Directly read Ex3:12 I will be with you /3:14 I am The One Who Is; Ex6:3 being their God for בְּאֵל שַׁדָּי; Ex17:15 name of altar The Lord is my refuge (footnote Or My Lord is a refuge), Ex17:16 by a secret hand. Registered SRC-NETS-PERKINS-EXODUS-2009-GOTTINGEN-TRANSLATION as B1/PARTIAL_OBJECT/PERMISSION_REQUIRED with one false-promotion mutation test. This is secondary English translation and translator's interpretation following Wevers 1991 edited main Greek text, NOT original Göttingen App I/II, independent ancient MS witness, Hebrew source variant or BHS apparatus. 131 sources/323 main ledger tests, 0 critical collation/rights/Product approvals; NG04 remains BLOCKED_SOURCE."
       ],
       "verification": "NOT_APPLICABLE_UNTIL_DONE",
       "closureAt": null,
@@ -772,7 +773,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "2026-11-15 NG-04 only: targeted verification of original full BHS and Göttingen Exodus Wevers–Quast apparatus for Exod3:12–15,6:2–3,17:15–16; independent high-resolution review of JTS ENA4107.20 col1 letters and surviving Cambridge T-S fragments, conditional on access; stop if source remains unavailable. Keep 130/130 sources publication BLOCKED, rights/independent collation/peer review/Product HOLD, no UI changes/merge/deploy. Historical W74 chapter work is archived in lastWorkReport.workCompleted.",
+  "nextAction": "2026-11-16 NG-04 next: access and read ORIGINAL full BHS apparatus and Göttingen Wevers–Quast 1991 Exodus App I/II at Ex3:12–15, Ex6:2–3, Ex17:15–16; preserve distinction from already-read NETS English secondary translation, original photo witnesses and editor accounts. When accessible, independently verify JTS ENA4107.20 glyphs and physical survival of Cambridge T-S NS282.88 Ex17:16; absent verified access, retain STOP_DISCOVERY. Keep 131/131 sources publication BLOCKED; 323 main ledger tests; 0 accepted critical collations/rights/peer/Product approvals; do not alter UI, create PRs/branches, merge or deploy.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -853,9 +854,10 @@
     }
   ],
   "lastWorkReport": {
-    "date": "2026-11-15",
-    "planStatus": "2026-11-15 W71 NG-04: JTS ENA4107.20 author-original manuscript photo and Exod6:2–3 section verified as an attributed source, 130 sources/322 tests, no glyph autopsy/rights or printed BHS/Göttingen apparatus; NG04 BLOCKED_SOURCE. Previous W74 reader work is retained in workCompleted history.",
+    "date": "2026-11-16",
+    "planStatus": "2026-11-16 W72 NG-04: inspected user's original NETS Exodus (Larry J. Perkins) exact pages 46,53,55,64; registered 131st secondary English translation source, 323 main ledger tests. Strong useful translation evidence for Ex3:12–15, Ex6:2–3, Ex17:15–16 but NO independent Göttingen/ BHS apparatus or original manuscript reading; NG04 BLOCKED_SOURCE, 0 external scholarly, rights or Product approvals.",
     "workCompleted": [
+      "2026-11-16 W72: original NETS English Exodus PDF uploaded by user; author introduction p46 and print source claim p43, physical target printed pp53,55,64 directly read. Separate provenance record B1/secondary and target-locus matrix, one anti-overclaim mutation guard; 131 sources/323 main tests, no copied PDF/rights grant or retroactive license, NG04 unchanged BLOCKED_SOURCE.",
       "2026-11-14 W74: author/narrator distinction in CH-PILOT-03 improved against original Mechon-Mamre MT Ruth1:20-21 and Job5:17/42:7-9, with explicit non-blanket-false Eliphaz caution. CH03 reader body approx 3148 words within existing 3600 max; crosswalk retains missing dedicated CLM/ATT and does not count a new ancient physical witness. Ex17:15-16 reader passage in dossier23 now includes Yuval Weiss 2026 strongest opposing interpretation from original journal publisher author abstract (two-word accents, proposed later Aleppo join), explicitly not full article or original manuscript ink. 129 sources, 105/105 source-attestations, 87 claims, 75 relations; no new fourth chapter, no scientific/rights/Product promotion. Gill/Berkhof/Bavinck crosswalk gap is CH01, NOT CH03.",
       "2026-11-14 audit guard: workplan regressions increased 21->26 (third/duplicate active deliverable, stale operator date, false prior CI SHA, phantom fourth reader). Expected aggregate on next audit SHA 321+26+319+24+18+29=737; do not treat expected as successful.",
       "2026-11-14 AUDIT SELF_PLAN: verified existing PR379 head 29e52b49, all six exact-head Actions success (Names 43474419588, 732/732 tests), 129 sources/105 attestations/87 provisional claims/75 relations, three reader pilots. Found stale W70 machine nextAction/snapshot, stale W63 CURRENT PR header, 619 commits/66 files with large historical docs, chapter03 two crosswalk gaps and no external review, NG04 unreachable BHQ Exodus print expectation. Restricted active work to CH-PILOT-03 bounded textual/source gap triage and NG04 Exodus17 fragment adversarial edit; separated 4th-chapter decision and withheld all approvals. Current audit HEAD CI must be rechecked.",
