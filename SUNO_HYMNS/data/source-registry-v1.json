@@ -1157,7 +1157,7 @@
   },
   {
    "id": "SRC-NL-LIEDERENBANK-9086",
-   "title": "Nederlandse Liederenbank record 9086 — Heerlijckheyds Loff (offline 2026-10-26)",
+   "title": "Nederlandse Liederenbank record 9086 — Heerlijckheyds Loff (offline 2026-10-26; catalogue accessible 2026-11-15)",
    "url": "https://www.liederenbank.nl/liedpresentatie.php?lan=nl&zoek=9086",
    "type": "Catalogue record in the Dutch Song Database (Meertens Instituut / KNAW)",
    "evidenceClass": "B1",
@@ -1173,7 +1173,7 @@
     "Record fields: ten stanzas, date '27. in Ougstmaand 1665', the note that the melody is not that of 'Un jour m'en allais seulette', and the witness sigla Stapel LusthofZ1681, Bundeltje1718, EvangGez1806, PsalmenGezNH1938"
    ],
    "limits": [
-    "The database returns HTTP 403 with a KNAW information-security notice and is offline as of 2026-10-26. The fields were read from the record's own rendering inside search results, not from an opened catalogue page. Re-check when the database returns; do not treat as inspected until then."
+    "Historical access on 2026-10-26: HTTP 403/KNAW outage; fields then known through search rendering only. Dated 2026-11-15 direct access: the catalogue record 9086 was opened and its metadata checked against the existing locator (SOURCE_LIBRARY/SOURCE_URL_RESOLUTION_BATCH_2026-11-15.md §3.6). The printed witness/page image (p. 155, scan 171) was not acquired; ARCHIVE_HOLD persists for that underlying primary object. Rights and publication remain unchanged."
    ]
   },
   {
