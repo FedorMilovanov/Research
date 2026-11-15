@@ -67,6 +67,32 @@ class ReformationAdversarialFourSixTests(unittest.TestCase):
         for fragment in ("B VI 248", "A 42.1.12", "№621", "№622", "№624", "REF-P72"):
             self.assertIn(fragment, apparatus)
 
+    def test_chapter05_full_reader_preserves_articles_nine_fourteen_fifteen(self):
+        """Keep the actual 1529 signed agreement distinct from party reports."""
+        chapter = self.texts["marburg"]
+        reader, apparatus = chapter.split("## Источниковедческий аппарат", 1)
+        self.assertGreater(len(reader.split()), 1750)
+        self.assertEqual(reader.count("## "), 8)
+        for marker in ("Статья 9", "не пустым знаком", "Статья 10",
+                       "статья 11", "статья 14", "под обоими видами",
+                       "духовное вкушение", "телесном присутствии",
+                       "десять богословов", "7, 13 и 15",
+                       "3 октября"):
+            with self.subTest(marker=marker):
+                self.assertIn(marker.lower(), reader.lower())
+        self.assertNotRegex(reader, r"https?://|\bREF-[PS]\d+|\bVD16\b")
+        self.assertIn("Цвингли", reader)
+        self.assertIn("Осиандер", reader)
+        self.assertIn("Шляйтхайм", reader)
+        self.assertIn("эпизод", reader.lower())
+        for marker in ("REF-P13-ARCHIVE", "REF-P75",
+                       "REF-P73", "REF-P74", "ARCHIVE_HOLD",
+                       "RIGHTS_HOLD", "PUBLICATION_HOLD",
+                       "NOT_EDITORIAL_READY", "Мф."):
+            with self.subTest(archive_marker=marker):
+                self.assertIn(marker, apparatus)
+        self.assertIn("episode06_schleitheim_1527_1529_manuscript.md", reader)
+
     def test_marburg_difference_and_witnesses_not_erased(self):
         text = self.texts["marburg"]
         for fragment in ("четырнадцат", "стать", "пятнадцат", "телесном присутствии",
@@ -76,6 +102,38 @@ class ReformationAdversarialFourSixTests(unittest.TestCase):
                 self.assertIn(fragment.lower(), text.lower())
         self.assertIn("архив", text.lower())
         self.assertIn("Шляйтхайм", text)
+
+    def test_chapter06_whole_reader_seven_articles_discipline_and_speyer(self):
+        """Protect complete narrative and distinguish ecclesial rule from civil punishment."""
+        reader, apparatus = self.texts["schleitheim"].split(
+            "## Источниковедческий аппарат", 1
+        )
+        self.assertGreater(len(reader.split()), 1750)
+        self.assertEqual(reader.count("## "), 9)
+        self.assertNotRegex(reader, r"https?://|\bREF-[PS]\d+|\bVD16\b")
+        for phrase in ("24 февраля 1527 года", "Первая статья",
+                       "Вторая статья", "Третья статья", "Четвёртая статья",
+                       "Пятая статья", "Шестая статья", "Седьмая статья",
+                       "до преломления хлеба", "Матфея 18",
+                       "двух или трёх человек", "восьмидневный",
+                       "гражданский меч установленным Богом",
+                       "zeugen", "schwören", "не равен",
+                       "Матфея 28", "Матфея 27",
+                       "около 1550 года", "около 1570 года",
+                       "20 апреля 1529", "22 апреля",
+                       "23 апреля", "смертное наказание",
+                       "возможность помилования"):
+            with self.subTest(phrase=phrase):
+                self.assertIn(phrase.lower(), reader.lower())
+        self.assertIn("episode07_luther_peasants_war_1524_1525_manuscript.md", reader)
+        self.assertIn("germanhistorydocs.org", apparatus)
+        self.assertIn("24 февраля 1527 года", apparatus)
+        self.assertIn("ORIGINAL_PRINT_COLLATION_HOLD", apparatus)
+        for gate in ("NOT_EDITORIAL_READY", "ARCHIVE_HOLD",
+                     "LOCAL_ARCHIVE_HOLD", "RIGHTS_HOLD",
+                     "PUBLICATION_HOLD", "DATE_AND_IMPRINT_ATTRIBUTION_CONFLICT"):
+            with self.subTest(gate=gate):
+                self.assertIn(gate, apparatus)
 
     def test_schleitheim_variants_dates_and_civic_magistrate(self):
         text = self.texts["schleitheim"]

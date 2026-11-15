@@ -14,6 +14,26 @@ class Luther1517WormsEditorialTests(unittest.TestCase):
         cls.two = CH02.read_text(encoding="utf-8")
         cls.three = CH03.read_text(encoding="utf-8")
 
+    def test_ch02_whole_reader_basilica_financing_and_pastoral_arc(self):
+        """Keep this chapter a coherent narrative, not a bibliography or retrospective creed."""
+        reader, apparatus = self.two.split("## Источниковедческий аппарат", 1)
+        self.assertIn("базилики Святого Петра", reader)
+        self.assertNotIn("собора Святого Петра", reader)
+        self.assertEqual(reader.count("базилики Святого Петра"), 2)
+        self.assertIn("банковским домом Фуггеров", reader)
+        self.assertIn("обязательства перед Фуггерами", apparatus)
+        self.assertIn("не может обещать автоматическое освобождение", reader)
+        self.assertIn("истинность определённых апостольских индульгенций", reader)
+        self.assertIn("тезисе 71", reader)
+        self.assertIn("Тезис 72", reader)
+        self.assertIn("проповедью и пониманием верующего", reader)
+        self.assertNotRegex(reader, r"https?://")
+        self.assertIn("ORIGINAL_PRINT_COLLATION_HOLD", apparatus)
+        self.assertIn("RIGHTS_HOLD", apparatus)
+        self.assertIn("PUBLICATION_HOLD", apparatus)
+        self.assertGreater(len(reader.split()), 2000)
+        self.assertLess(len(reader.split()), 2300)
+
     def test_ch02_instruction_does_not_erase_papal_intercession_or_thesis35(self):
         s = self.two
         reader, apparatus = s.split("## Источниковедческий аппарат", 1)
@@ -100,6 +120,26 @@ class Luther1517WormsEditorialTests(unittest.TestCase):
         self.assertLess(len(reader2.split()), 2300)
         self.assertIn("PUBLICATION_HOLD", first)
         self.assertIn("PUBLICATION_HOLD", self.two)
+
+    def test_ch03_single_reader_pass_preserves_conflict_sequence_and_source_limits(self):
+        """One full chapter, without converting print variants into speech transcripts."""
+        reader, apparatus = self.three.split("## Источниковедческий аппарат", 1)
+        for marker in ("Весной **1518 года**", "28 июня 1519 года",
+                       "трёх стен", "**1.18**", "**9.3**",
+                       "**видимого знака**", "**6 сентября 1520 года**",
+                       "датировано задним числом", "16 апреля 1521 года",
+                       "18 апреля", "Reg. E 81", "текстологически зависимы",
+                       "**8 мая**", "**12 мая**", "**25 мая**",
+                       "**26 мая**", "не на пленарном заседании",
+                       "подписал"):
+            with self.subTest(marker=marker):
+                self.assertIn(marker.lower(), reader.lower())
+        self.assertNotIn("неоспоримая стенограмма", reader)
+        self.assertNotRegex(reader, r"https?://")
+        self.assertIn("episode04_zurich_zwingli_1523_1525_manuscript.md", reader)
+        self.assertIn("Taylor Institution Library", apparatus)
+        self.assertIn("NOT_EDITORIAL_READY", apparatus)
+        self.assertIn("PUBLICATION_HOLD", apparatus)
 
     def test_ch03_sacramental_sources_and_opposing_argument(self):
         s = self.three

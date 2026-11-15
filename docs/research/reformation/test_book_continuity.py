@@ -208,10 +208,12 @@ class BookContinuityTests(unittest.TestCase):
             "в первом блоке отсутствует номер XVIII",
             "Веймарское издание",
             "Luther-Studienausgabe",
-            "USTC 710962",
         ):
             with self.subTest(fact=historical_marker):
                 self.assertIn(historical_marker, first_reader)
+        # Hypothetical lost print belongs to the evidence apparatus, not reader.
+        self.assertNotIn("USTC 710962", first_reader)
+        self.assertIn("USTC 710962", first_notes)
 
         last_reader, last_notes = self.texts[PARTS[12]].split(
             "## Источниковедческий аппарат", 1
@@ -226,6 +228,30 @@ class BookContinuityTests(unittest.TestCase):
         for notes in (first_notes, last_notes):
             self.assertIn("NOT_EDITORIAL_READY", notes)
             self.assertIn("PUBLICATION_HOLD", notes)
+
+    def test_chapter01_single_reader_pass_keeps_historical_and_evidence_layers_distinct(self):
+        """Historical book chapter: correct building, financing, primary objects and release gates."""
+        text = self.texts["episode01_historical_gateway_draft.md"]
+        reader, apparatus = text.split("## Источниковедческий аппарат", 1)
+        self.assertIn("базилики Святого Петра в Риме", reader)
+        self.assertNotIn("собора Святого Петра", reader)
+        self.assertIn("базилики Святого Петра", apparatus)
+        self.assertNotIn("собора Святого Петра", apparatus)
+        self.assertIn("Фуггеров", reader)
+        self.assertIn("Фуггеров", apparatus)
+        self.assertIn("1520 году", reader)
+        self.assertIn("критическое издание HAB", reader)
+        self.assertIn("в первом блоке отсутствует номер XVIII", reader)
+        self.assertIn("USTC 710962", apparatus)
+        self.assertNotIn("LCCN 49036018", reader)
+        self.assertIn("LCCN 49036018", apparatus)
+        self.assertIn("20 марта 1508 года", reader)
+        self.assertIn("31 октября 1517 года", reader)
+        self.assertNotRegex(reader, r"https?://")
+        self.assertIn("](episode02_indulgences_1517_manuscript.md)", reader)
+        for gate in ("NOT_EDITORIAL_READY", "EVIDENCE_HOLD",
+                     "RIGHTS_HOLD", "PUBLICATION_HOLD"):
+            self.assertIn(gate, apparatus)
 
     def test_no_cyrillic_latin_confusables_or_invisible_controls_in_book(self):
         """Detect Latin lookalikes inside Cyrillic words in all 14 book parts."""
