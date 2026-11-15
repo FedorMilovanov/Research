@@ -54,7 +54,7 @@
 | 30 | Диссертация о церковном пении в Республике (Leiden) | ResearchGate | ◐ |
 | 31 | Refoweb, ответы о пении псалмов и о «langzame zang» | https://www.refoweb.nl | ◐ |
 | 32 | *Kerkliedwiki* — карточки песнопений | https://www.kerkliedwiki.nl | ◐ |
-| 33 | *Liederenbank* (Meertens) — мелодические карточки | https://www.liederenbank.nl | ◐ |
+| 33 | *Liederenbank* (Meertens) — мелодические карточки | https://www.liederenbank.nl | ✅ карточка 9086 открыта 2026-11-15 |
 | 34 | Huygens, *Gebruyck of ongebruyck van 't orgel* (1641), цитаты | *De Zeventiende Eeuw* 5 (DBNL) | ◐ |
 | 35 | Константейн Хёйгенс о пении в церкви | DBNL, собрание сочинений | ◐ |
 | 36 | Статьи о «voorzanger» и «schoolmeester» в должности | Digibron, RD | ◐ |
@@ -85,8 +85,8 @@
 | 51 | Stapel, *Evangelische Gezangen*? — ван Стапел 1681 | каталог / Google Books | ◐ |
 | 52 | *Evangelische Gezangen* 1806, песнь 43 (Рутгерс) | https://nl.wikipedia.org/wiki/Evangelische_Gezangen | ◐ |
 | 53 | *Hervormde Bundel* 1938, песнь 75 | Liederenbank, Kerkliedwiki | ◐ |
-| 54 | Карточка мелодии 42-го псалма в *Liederenbank* | liederenbank.nl | ◐ |
-| 55 | Карточка «Heerlijckheyds Loff» в *Liederenbank* (9086 / 23155) | liederenbank.nl | ◐ |
+| 54 | Карточка мелодии 42-го псалма в *Liederenbank* | liederenbank.nl | ✅ 2026-11-15: в карточке 9086 напев указан как `Un jour &c.`, а не псалом 42 |
+| 55 | Карточка «Heerlijckheyds Loff» в *Liederenbank* (9086 / 23155) | liederenbank.nl | ✅ открыта 2026-11-15 (10 строф, `27. in Ougstmaand 1665`; скан US1676 стр. 171 не извлечён) |
 | 56 | Hymnary.org — англоязычные переложения | https://hymnary.org | ◐ |
 | 57 | Немецкие переложения Лоденштейна (XVIII–XIX вв.) | каталог | ○ |
 | 58 | Русские переложения — поиск | не найдено | ✅ (отрицательный) |
