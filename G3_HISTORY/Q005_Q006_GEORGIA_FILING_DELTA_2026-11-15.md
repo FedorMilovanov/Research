@@ -56,7 +56,9 @@ The eCorp header cells `Business Name` and `Control Number` rendered empty in th
 - `The Georgia corporate entity formerly registered as G3 Ministries for the Church, Inc. changed its registered name to Lumena Ministries, Inc., effective 2026-10-28 (filing 32257311)` — **VERIFIED_PRIMARY** at the registry-index level.
 - `Two Amended Annual Registrations were filed after the name change (2026-10-30 and 2026-11-05)` — **VERIFIED_PRIMARY** at the registry-index level. Their contents are **not acquired**.
 - `No dissolution-type filing (notice of intent to dissolve, articles of dissolution, administrative dissolution) appears in the eight-row filing history on 2026-11-15` — **VERIFIED_PRIMARY as a dated registry-index observation**.
-- `G3 was formally dissolved under Georgia law` (`G3-C029`) — stays **REFUTED** for the Sep. 8 acquisition and is not supported by anything in the Nov. 15 filing history. A rename plus amended registrations is the conduct of a corporation that continues to exist on the register; it is not a liquidation event.
+- `G3 was formally dissolved under Georgia law` (`G3-C029`) — stays **REFUTED** for the Sep. 8 acquisition and is not supported by anything in the Nov. 15 filing history. What the index establishes is a rename, two later registrations and the absence of a dissolution-type row on the reading date. It does not by itself state the entity's present status, because the status field was not read (§1.7).
+
+**Ledger identity (review correction, 2026-11-15).** The Nov. 15 index objects in §1.1–§1.4 are carried in `SOURCE_LEDGER.md` as `G3-S144` (`A1 / PARTIAL_OBJECT / EXACT_LOCATOR_VERIFIED / REFERENCE`), separate from `G3-S001`. They are the same registry record family but do not inherit `FULL_OBJECT_VERIFIED` or `PUBLICATION_ELIGIBLE` from that row. Every `VERIFIED_PRIMARY` above is at the registry-index level, from a rendered readback without hashes.
 
 ### 1.6 Preserved internal tension
 
