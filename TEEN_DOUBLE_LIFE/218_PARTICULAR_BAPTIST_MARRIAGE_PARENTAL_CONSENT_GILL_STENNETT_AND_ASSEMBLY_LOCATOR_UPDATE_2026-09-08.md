@@ -98,7 +98,7 @@ Secondary scholarly source with exact primary locator:
 
 - Matthew D. Haste, “Nurseries of Heaven: Samuel Stennett on Marriage and Family,” *Churchman* 129/1, pp. 63–64: https://biblicalstudies.org.uk/pdf/churchman/129-01_055.pdf
 - Haste cites Samuel Stennett, *Discourses on Domestic Duties*, p. 127 (or *Works of Samuel Stennett*, vol. 3, p. 81 in the dissertation pagination discussed below).
-- **Locator correction (verified 2026-11-15, see the card in §4.1):** `p. 127` is **not** the 1783 London first edition. In the 1783 first edition the passage stands on printed **p. 162**; *Works* (1824) is **vol. 2, p. 81**, not vol. 3. Haste's `p. 127` matches the **Edinburgh 1800 reprint**, which was verified directly. Haste's *Works* volume numbers are inconsistent elsewhere in the same article (his endnote 71 cites `Works, 3:175` for a passage that is in *Works* vol. 2), so his volume numbers must not be copied without checking.
+- **Locator correction (verified 2026-11-15, see the card in §4.1):** `p. 127` is **not** the 1783 London first edition. In the 1783 first edition the passage stands on printed **p. 162**; *Works* (1824) is **vol. 2, p. 81**; *Domestic Duties* is not in vol. 3 at all, whose contents list runs the Scripture discourses and the occasional sermons. Haste's `p. 127` matches the **Edinburgh 1800 reprint**, which was verified directly. Haste's *Works* volume number for this treatise is wrong; and because a volume number in a citation can point to the wrong volume without looking wrong, his volume numbers must not be copied unchecked. (Haste's other *Works* citation, `Works, 3:175`, is **correct** — verified against the vol. 3 contents list, which runs the funeral sermons and occasional discourses, Gill's funeral sermon at p. 147 and Howard's at p. 279, with *A Trip to Holyhead* there. Correcting our own earlier overstatement: that endnote is not an error, and it is not evidence of a pattern.)
 
 Additional source:
 
@@ -124,6 +124,10 @@ Haste notes the legal background: Hardwicke's Marriage Act required parental per
 | *Discourses on Domestick Duties* (London, 1783), xi + 650 + [2] pp., ESTC T105038 | HathiTrust full view, University of California copy: `https://babel.hathitrust.org/cgi/pt?id=uc2.ark:/13960/t8nc5v03c` (permanent URL `https://hdl.handle.net/2027/uc2.ark:/13960/t8nc5v03c`) | printed **p. 162**, opening line of the paragraph; scan seq 178. The `sui juris` rule on printed **p. 161**, scan seq 177. Printed pp. 126–127 = scan seq 142–143 are the *family worship* discourse and contain nothing on marriage. |
 | *Discourses on Domestic Duties* (Edinburgh: J. Ritchie, 1800) | HathiTrust full view, Princeton Theological Seminary copy: `https://babel.hathitrust.org/cgi/pt?id=ia.ark:/13960/t6h140z7w` | printed **p. 127**, scan seq 121. This is the pagination Haste uses. |
 | *The Works of Samuel Stennett*, 3 vols (London: Thomas Tegg, 1824) | HathiTrust full view, Princeton Theological Seminary copy, **vol. 2**: `https://babel.hathitrust.org/cgi/pt?id=ia.ark:/13960/t5q81sw00` | **vol. 2, p. 81**, scan seq 95. The `sui juris` rule is on vol. 2, p. 80, scan seq 94. |
+
+**Second, independent physical copy of the 1783 edition (cross-check, same pagination):** HathiTrust/Internet Archive `bim_eighteenth-century_discourses-on-domestick-_stennett-samuel_1783` (a different digitisation from a different holding than the UC copy above). Its OCR page-number index gives leaf 173 = printed p. 162 and leaf 174 = p. 163; full-text search for `early period of life` returns that phrase on **leaf 172 = printed p. 161** (the `sui juris` rule) and for `concurrence of parents` on **leaf 173 = printed p. 162**. Two separate copies therefore agree, and the p. 162 locator does not depend on one library's scan.
+
+**Transcription protocol of record.** The pages were read through the text layer / page images served by HathiTrust and Internet Archive. Our quotation is therefore a faithful keyed transcription, not a diplomatic one: long-s is normalised to `s`, line-end hyphenation is silently joined, and the original accidentals (contractions, `-connexion`, capitalisation, italic) are not reproduced. The OCR misreads the roman `s` of `sui juris` as `f` (`fui juris`) and in one copy as `= Juris`; the underlying print reads `sui juris`. Anyone needing a diplomatic transcript must consult the plate.
 
 **Verified 1783 text (p. 162), long-s normalised, spelling otherwise unchanged:**
 
@@ -160,6 +164,17 @@ The correct category is therefore **graded, conscience-bounded filial duty of se
 **Why that over-interpretation fails on the page:** Stennett's `consent` is one item in a list of `judgment, advice, and consent` that the child is to *regard*, not a permission the child must *obtain*; his own later teaching limits parental command at mature age to `counsels` in `cases of a doubtful nature`; and the section is a set of prudential `rules to be observed in the forming this important connection`, not a doctrine of the validity of marriage.
 
 **Residual caution.** The locator chain in the secondary literature is unreliable in exactly the places this lane had been quoting: `p. 127` is the 1800 Edinburgh reprint, not the 1783 first edition, and `Works` vol. 3 does not contain *Domestic Duties* at all. Future citations should use **1783, p. 162** (with 1800 p. 127 and *Works* 1824, vol. 2, p. 81 as concordant witnesses).
+
+### 4.2 What this card does not settle
+
+Recorded so the reviewer does not have to discover it:
+
+- **`sui juris` is not a fixed calendar age.** Stennett defines it relativistically: `that age when a person, by the general consent of mankind, is deemed sui juris`. He nowhere states 21, 25, or any number, and he does not mention Hardwicke's Act. Haste's inference that this means `early twenties` is a reasonable reading of Stennett's argument, not a statement on Stennett's page. Do not put a number in his mouth.
+- **The duty/advice boundary is inferred from Stennett's own system, not from a single sentence.** The p. 162 paragraph calls for a `religious regard` but does not itself say `duty`; the grading language that makes the classification precise comes from the fifth-commandment discourse at pp. 269 and 276. The classification is sound, but it is a synthesis across the book and should be presented as such.
+- **`children` at p. 162 is not restricted to minors.** Stennett uses `children` for the filial relation as such, and the paragraph's own addressees are `young people` already `at their own disposal`. A reader who takes `children` there to mean `minors` will misread the passage.
+- **The 1824 *Works* is not a critical edition.** It is a repagination with modernised typography; its agreement with 1783 is evidence of textual stability, not a collation of substantive variants. No claim is made here about copies of the 1783 edition other than the two inspected.
+- **One passage was read in two witnesses, not all.** The p. 269 / p. 276 grading passages were read in the 1783 UC copy and cross-checked in the Edinburgh 1800 reprint by pagination shift; they were not separately located in the second 1783 copy by leaf.
+- **Nothing here speaks to Particular Baptists generally.** This is one author's practical theology in one book, cited for what he actually wrote.
 
 ### Evidence classification
 
