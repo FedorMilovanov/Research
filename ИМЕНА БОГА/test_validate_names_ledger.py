@@ -3063,5 +3063,34 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertEqual([], validate_source_access(self.sources))
 
 
+    def test_outhwaite_2023_ena4107_exodus6_custody(self) -> None:
+        source_id = "SRC-OUTHWAITE-2023-JTS-ENA4107-20-EX6-2-3"
+        self.assertEqual([], validate_source_access(self.sources))
+        for field, invalid in (
+            ("independentGlyphCollationDone", True),
+            ("imageReusePermissionGranted", True),
+            ("fullBhsGottingenLociCollated", True),
+            ("firstColumnRange", "Exod 3:14–17:16"),
+            ("photoPage", 149),
+        ):
+            with self.subTest(custody_field=field):
+                changed = copy.deepcopy(self.sources)
+                row = next(x for x in changed["records"] if x["id"] == source_id)
+                row["audit20261115"][field] = invalid
+                self.assertTrue(any("Outhwaite ENA4107 author photo cannot certify" in error
+                                    for error in validate_source_access(changed)))
+        for field, invalid in (
+            ("rightsState", "PUBLICATION_ELIGIBLE"),
+            ("criticalEditionCollated", True),
+            ("publicationState", "PROMOTE"),
+        ):
+            with self.subTest(source_field=field):
+                changed = copy.deepcopy(self.sources)
+                row = next(x for x in changed["records"] if x["id"] == source_id)
+                row[field] = invalid
+                self.assertTrue(any("Outhwaite ENA4107 author photo cannot certify" in error
+                                    for error in validate_source_access(changed)))
+
+
 if __name__ == "__main__":
     unittest.main()
