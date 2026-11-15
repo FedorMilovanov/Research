@@ -4,6 +4,8 @@
 **Evidence snapshot:** `main@893e952de4e7ae617af02aca1344d385abcdf71b`  
 **Supersedes for closure routing:** the search/backlog interpretation of `P0_CLOSURE_CHECKPOINT_2026-09-08.md` and `P0_REFRESH_2026-09-09.md`; those files remain authoritative evidence/history and are not rewritten.
 
+> **Later overlay, 2026-11-15:** the Q005 reopen condition (`Later Georgia filing/status change`) was met. The Q005 and Q006 rows below are preserved as the Sep. 9 state and are superseded for current routing by `Q005_Q006_GEORGIA_FILING_DELTA_2026-11-15.md`. No other row is affected.
+
 ## Closure meaning
 
 `PROOF_ROUTE_COMPLETE` does **not** mean every fact about G3 is known. It means the current public evidence universe has been driven to one of three terminal states:
