@@ -33,9 +33,11 @@
 - `SRC-NL-LIEDERENBANK` — Nederlandse Liederenbank (Meertens Instituut / KNAW) — Dutch Song Database  
   доступ: `NOT_ACQUIRED`, локатор: `LOCATOR_MISSING`, права: `RIGHTS_UNKNOWN`
 - `SRC-NL-LIEDERENBANK-9086` — Nederlandse Liederenbank record 9086 — Heerlijckheyds Loff (offline 2026-10-26)  
-  доступ: `CATALOG_ONLY`, локатор: `EXACT_LOCATOR_VERIFIED`, права: `RIGHTS_UNKNOWN`
+  доступ: `CATALOG_ONLY`, локатор: `EXACT_LOCATOR_VERIFIED`, права: `RIGHTS_UNKNOWN`  
+  2026-11-15: база доступна, карточка открыта и списана (`SOURCE_LIBRARY/SOURCE_URL_RESOLUTION_BATCH_2026-11-15.md` §3.6) — удержание держит неизвлечённое изображение с. 155 (scan 171), а больше не недоступность ссылки
 - `SRC-NL-LIEDERENBANK-INDEX` — Nederlandse Liederenbank — records surfaced through search indexing while the site is offline  
-  доступ: `LINK_ONLY`, локатор: `LOCATOR_MISSING`, права: `RIGHTS_UNKNOWN`
+  доступ: `LINK_ONLY`, локатор: `LOCATOR_MISSING`, права: `RIGHTS_UNKNOWN`  
+  2026-11-15: сайт доступен; извлечение из индекса остаётся классом C (только находка), но ряд записей теперь сверяется по открытой карточке
 - `SRC-PHOS-CLEM-COSGROVE` — Charles H. Cosgrove, «Clement of Alexandria and Early Christian Music», Journal of Early Christian Studies 14/3 (2006): 255–282  
   доступ: `NOT_ACQUIRED`, локатор: `COARSE_LOCATOR_ONLY`, права: `RIGHTS_UNKNOWN`
 - `SRC-PHOS-CLEM-HYMNARC` — Hymnology Archive (Chris Fenner), страница о гимне «Στόμιον πώλων ἀδαῶν» — рукописи, издания, переводы, оценки  
