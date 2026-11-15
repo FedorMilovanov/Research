@@ -469,6 +469,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-PESACHIM117A-COMPOSITE-KESYAH-AMORAIC-EDITED-DIGITAL": "TALMUD_PESACHIM117A_ATTRIBUTED_AMORAIC_ONE_WORD_AND_TWO_WORD_OPINIONS_NOT_ANCIENT_ALEPPO_PHOTO",
     "SRC-RASHBATZ-TASHBETZ-I177-KESYAH-RESPONSUM": "RASHBATZ_TASHBETZ_I177_DIRECT_HISTORICAL_AUTHOR_TESTIMONY_NON_ALEPPO_SCROLL_AND_CONFLICTING_MASORETIC_LISTS",
     "SRC-ARUCH-HASHULCHAN-YD27524-KESYAH-TWO-WORD-DECISION": "ARUCH_HASHULCHAN_YD27524_EXPLICIT_TWO_WORD_HALAKHIC_RULING_USING_FIVE_WORD_MASORAH_LIST",
+    "SRC-OUTHWAITE-2023-JTS-ENA4107-20-EX6-2-3": "OUTHWAITE_2023_AUTHOR_ORIGINAL_JTS_PHOTO_EX6_2_3_NOT_INDEPENDENT_GLYPH_COLLATION",
 }
 
 
@@ -2442,6 +2443,26 @@ def validate_source_access(sources: dict) -> list[str]:
         if rid == "SRC-SBLGNT-JOHN10":
             if source.get("rightsState") != "RIGHTS_UNKNOWN":
                 errors.append(f"{prefix}: host SBLGNT webpage rights wrongly inherited from publisher license")
+        if rid == "SRC-OUTHWAITE-2023-JTS-ENA4107-20-EX6-2-3":
+            evidence = source.get("audit20261115")
+            if (source.get("sourceRole") != "OUTHWAITE_2023_AUTHOR_ORIGINAL_JTS_PHOTO_EX6_2_3_NOT_INDEPENDENT_GLYPH_COLLATION"
+                or source.get("accessState") != "PARTIAL_OBJECT"
+                or source.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+                or source.get("rightsState") != "PERMISSION_REQUIRED"
+                or source.get("publicationState") != "BLOCKED"
+                or source.get("criticalEditionCollated") is not False
+                or set(source.get("holds", [])) != {"EVIDENCE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"}
+                or not isinstance(evidence, dict)
+                or evidence.get("shelfmark") != "JTS ENA 4107.20 (L588 fol20r)"
+                or evidence.get("firstColumnRange") != "Exod 5:11–6:3"
+                or evidence.get("photoPage") != 147
+                or evidence.get("sectionPage") != 150
+                or evidence.get("authorReportsExodus6_2Setuma") is not True
+                or evidence.get("originalPhotoViewed") is not True
+                or evidence.get("independentGlyphCollationDone") is not False
+                or evidence.get("imageReusePermissionGranted") is not False
+                or evidence.get("fullBhsGottingenLociCollated") is not False):
+                errors.append(f"{prefix}: Outhwaite ENA4107 author photo cannot certify ancient autopsy or rights")
         if rid == "SRC-CAMBRIDGE-GOD-PRONOUNS":
             if (source.get("creator") != "Nicholas Adams"
                 or source.get("year") != 2024
