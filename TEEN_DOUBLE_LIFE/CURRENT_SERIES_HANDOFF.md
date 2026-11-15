@@ -383,6 +383,13 @@ The main residual risk is now **compression/reconciliation error**: losing evide
 
 The former `ordinary lawful life becomes bland/flat` editorial HOLD is **resolved KEEP_WITH_CONTROLLED_WORDING** in `236`.
 
+**Closed 2026-11-15 (ARENA A9) — read before touching Stennett or PHOS-002:**
+
+- `218` §4.1 now holds the Stennett verification card; `STENNETT_PARENT_FRIEND_CONCURRENCE = VERIFIED_PRIMARY` against the 1783 first edition, printed **p. 162**. The old `p. 127` locator is the **Edinburgh 1800 reprint**, and the `Works` reference is **vol. 2, p. 81**, not vol. 3. Do not re-import the old pagination from `218`'s dated sections, from `218B`'s pre-2026-11-15 record, or from Haste.
+- `218` §4.2 records what that card does **not** settle: `sui juris` is not a calendar age and Stennett names none; the duty/advice classification is a synthesis across the book (pp. 269, 276), not one sentence; `children` at p. 162 does not mean minors.
+- `A9_QC_PHOS-002_PRIMARY_VS_EDITORIAL_RESTORATION_AUDIT_2026-11-15.md` is an **external review** of the PHOS-002 dossiers, written because A9 required the primary-vs-editorial-restoration boundary to be checked independently. It does not edit those dossiers and changes no status; its five wording fixes are proposals for the hymn-series owner. Do not treat it as a PHOS-002 authority. The dossiers remain owned by `SUNO_HYMNS/RESEARCH/`.
+- Both halves are research-only and **Draft PR #508**; nothing merged, no publication statuses moved.
+
 The former expanded-publication `ARCHITECTURE_REVIEW_REQUIRED` is **resolved at the Research layer** in `237`; `239` reconciles it with `188`. Product drafting of the seven primary owners is already materialized; live Product reconciliation, review/CI and publication release remain separate gates.
 
 ---
