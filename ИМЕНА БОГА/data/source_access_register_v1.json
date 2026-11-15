@@ -706,7 +706,6 @@
       "publicationState": "BLOCKED",
       "criticalEditionCollated": false,
       "holds": [
-        "RIGHTS_HOLD",
         "PUBLICATION_HOLD",
         "EVIDENCE_HOLD"
       ],
