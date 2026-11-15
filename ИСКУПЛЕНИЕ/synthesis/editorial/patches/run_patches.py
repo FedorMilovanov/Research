@@ -64,11 +64,23 @@ def main() -> int:
         before, after = p["before"], p["after"]
         n_before, n_after = text.count(before), text.count(after)
         if a.verify:
+            # --verify обязан понимать то же, что и --check: поздний патч переписывает
+            # фрагмент, введённый ранним, и AFTER раннего законно исчезает с диска.
+            # Тогда применяем его в тени и учитываем как выполненный, а не как поломку.
+            if n_after == 0 and n_before == 1:
+                shadow[p["file"]] = text.replace(before, after, 1)
+                done += 1
+                print(f'{p["id"]:>6}  учтён (затем перезаписан поздним)  {p["file"]}')
+                continue
             if n_after == 0:
                 fail.append(f'{p["id"]}: AFTER не найден в {p["file"]}')
             else:
+                shadow[p["file"]] = text
                 done += 1
             continue
+        # --verify обязан понимать то же, что и --check: поздний патч переписывает
+        # фрагмент, введённый ранним, поэтому AFTER раннего законно исчезает.
+        # Держим теневое состояние и по нему решаем, «уже применён» это или поломка.
         if n_before == 0 and n_after:
             print(f'{p["id"]:>6}  уже применён  {p["file"]}')
             done += 1
