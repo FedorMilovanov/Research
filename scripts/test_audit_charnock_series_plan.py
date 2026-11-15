@@ -84,6 +84,26 @@ class EditorialPlanTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'Unexpected changes'):
             check(self.plan)
 
+    def test_live_root_policy_drift_is_disclosed_not_promoted_to_charnock_source(self):
+        report = check(self.plan)
+        self.assertEqual(report['changedPacketMembers'],
+                         sorted(self.plan['expectedChangedPacketMembers']))
+        self.assertNotIn('AGENT_RULES.md', report['changedPacketMembers'])
+        self.assertTrue(all(
+            item['path'] == 'AGENT_RULES.md'
+            and len(item['receiptSha256']) == 64
+            and len(item['currentSha256']) == 64
+            and item['receiptSha256'] != item['currentSha256']
+            for item in report['liveRootPolicyDrift']))
+        self.assertFalse(report['historicalReceiptMatchesCurrentTree'])
+        self.assertEqual(report['currentRevisionCustody'], 'NOT_REVERIFIED')
+
+    def test_live_root_policy_cannot_be_whitelisted_as_packet_edit(self):
+        self.plan['expectedChangedPacketMembers'].append('AGENT_RULES.md')
+        with self.assertRaisesRegex(ValueError, 'Unexpected changes'):
+            check(self.plan)
+
+
     def test_all_boundary_rules_required(self):
         self.plan['duplicationRules'].pop()
         with self.assertRaisesRegex(ValueError, 'boundary rule'):
