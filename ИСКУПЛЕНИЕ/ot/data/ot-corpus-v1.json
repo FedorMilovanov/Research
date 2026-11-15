@@ -331,6 +331,18 @@
     "status": "DONE_WAVE17_FIRST_VERSION_APPARATUS_PENDING",
     "correctionNotice": "2026-11-03 supersedes defective results, not the original event date; earlier bytes retained in synchronization journal."
   },
+  "wave19": {
+    "date": "2026-11-15",
+    "card": "17_LXX_VERSIFICATION_AND_MIRROR_Z",
+    "scope": "Пересъём сдвига нумерации LXX (Лев. 5–7; Исх. 24–25) и согласия трёх разрешённых зеркал по 68 локусам כפר в Пятикнижии.",
+    "sources": "MT morphhb (3722 a, 93 стиха); ELI S11; SOL S10; F1K S23. Rahlfs не использован (S19/S22 EXCLUDED).",
+    "holdsOpened": ["LOCATOR_HOLD (нумерация печатных изданий)", "EVIDENCE_HOLD (независимость зеркал)"],
+    "holdsClosed": [],
+    "measured": {"mtKprVerses": 93, "pentateuchLoci": 68, "allThreeIdentical": 39, "eliSolF1kDiffers": 18, "f1kSolEliDiffers": 6, "allThreeDiffer": 4, "textMissing": 1, "lev16VersesChecked": 34},
+    "measuredAt": "2026-11-15T00:00:00Z",
+    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
+    "publicationEligible": false
+  },
   "qaFullPass": {
     "date": "2026-10-12",
     "scope": "full quote-verification pass with qa.py v2 over the authority document (00) and cards 01–11: every Hebrew fragment of 2+ words and every Greek fragment of 2+ words must be findable in MT (morphhb, ketiv and qere views), the LXX mirrors (ELI 1930, SOL 1909, F1K tlg0527, S23) and SBLGNT, per verse and in continuous per-book text; apparatus quotes and lexical lists with no reference nearby are reported as informational; the script-mixing check (Cyrillic inside Greek/Hebrew, Latin inside Cyrillic) is run separately",
@@ -2010,6 +2022,28 @@
       "reviewScope": "2026-11-03: corrected loci only; exact digital controls, not printed apparatus, full reading of all witnesses, or independent manuscript collation. Lexicons are B1 corroboration; source class does not describe access/rights.",
       "reviewEvidence": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
       "holdsScope": "EVIDENCE_HOLD: remaining identity/extent/interpretive questions, not the corrected local facts. LOCATOR_HOLD/ARCHIVE_HOLD: printed apparatus and collation, not acquired digital bytes. Publication remains separate."
+    },
+    {
+      "id": "17",
+      "file": "ИСКУПЛЕНИЕ/ot/17_LXX_VERSIFICATION_AND_MIRROR_Z.md",
+      "topic": "Сдвиг нумерации LXX в Лев. 5–7 и Исх. 24–25 и независимость трёх разрешённых зеркал (ELI S11 / SOL S10 / F1K S23) по 68 локусам כפר в Пятикнижии",
+      "status": "DONE_WAVE19_FIRST_VERSION_NUMBERING_AND_MIRRORS",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "holds": ["LOCATOR_HOLD", "EVIDENCE_HOLD", "ARCHIVE_HOLD", "PUBLICATION_HOLD"],
+      "verses": [],
+      "results": [
+        "A: Лев. 5:1–19 = MT; LXX 6:1–7 = MT 5:20–26; 6:8–30 = MT 6:1–23; 6:31–37 = MT 7:1–7; 6:38–40 = MT 7:8–10; 7:1–27 = MT 7:11–37; 7:28 = MT 7:38; с Лев. 8 нумерация совпадает снова.",
+        "B: в Лев. 16 (34 стиха) предлога ἀντί нет ни в ELI, ни в F1K; единственный תַּחַת в MT — 16:32 о преемстве.",
+        "C: 68 локусов Пятикнижия: все три зеркала совпадают в 39; ELI=SOL, F1K расходится в 18; F1K=SOL, ELI расходится в 6 (общая порча: θυσιαατήριον, τῆ, ιξω, ὁ/οἱ, ποήσει, обрыв Лев. 1:4) — F1K не независим от SOL; все три расходятся в 4 (Исх. 29:37; Лев. 16:24; Лев. 17:11; Числ. 15:28); текста нет в 1 (Лев. 5:26 = Swete 6:7).",
+        "D: Лев. 17:11 испорчен в SOL (ψυχή, ἐχιλ-) и в F1K (потеряно ἐξιλάσκεσθαι); формула ἀντὶ τῆς ψυχῆς ἐξιλάσεται подтверждается одним ELI — метка 2z+ карточки 01 читается верно только при знании, что второй голос даёт аппарат.",
+        "E: Пс 48:8 (= MT 49:8) в ELI даёт ἐξίλασμα αὐτοῦ; Пс 78:38 в ELI стоит как 77:38 — отсутствие по номеру было артефактом сдвига.",
+        "F: адресные поправки: 03 §44/§60/C10/§131/§285; 07 §3; 08 K7 (сдвиг Исх. 25 — отсутствие стиха, соответствующего MT 25:6) и формулировка о תַּחַת; 01 V2/§12; 10 (F1K покрывает Исх. 24:1–12, не содержит 24:13–18)."
+      ],
+      "doNot": "Не выдавать нумерацию свиты Свита за нумерацию печатных Rahlfs/Göttingen (LOCATOR_HOLD); не читать «3z» как три независимых свидетеля до снятия EVIDENCE_HOLD по независимости зеркал.",
+      "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot"
     }
   ],
   "plannedCards": [
@@ -2092,21 +2126,21 @@
       "чтоСчитаетсяДоводом": "заголовок «## » в любом .md лана, включая вложенные папки (synthesis/drafts, ot/tools); тело секции — до следующего «## » или до конца файла",
       "приоритет": "УДЕРЖИВАЕТСЯ > ОТКРЫТО > ЗАКРЫТО; маркеров нет -> БЕЗ МАРКЕРА; маркер вне классификации -> ошибка съёма, а не «прочее»",
       "метод": "scripts/atonement_claim_register.py обходит прозу лана целиком (без выборки), разбирает маркеры вида `ВЕРДИКТ`, сверяет локатор побайтово (файл + номер строки + текст)",
-      "строк": 200,
-      "файлов": 19,
+      "строк": 210,
+      "файлов": 20,
       "покрытоМашинно": 0,
-      "покрытоПоФайлу": 200,
-      "файловПрозы": 19,
+      "покрытоПоФайлу": 210,
+      "файловПрозы": 20,
       "файловБезКарточки": 0,
-      "разрешеноЛокаторов": 200,
+      "разрешеноЛокаторов": 210,
       "неРазрешено": 0,
       "поКлассам": {
-          "БЕЗ МАРКЕРА": 189,
-          "УДЕРЖИВАЕТСЯ": 10,
+          "БЕЗ МАРКЕРА": 195,
+          "УДЕРЖИВАЕТСЯ": 14,
           "СЛУЖЕБНОЕ": 1
       },
       "маркеры": {
-          "всего": 66,
+          "всего": 73,
           "различных": 6,
           "словарь": {
               "ARCHIVE_HOLD": "УДЕРЖИВАЕТСЯ",
@@ -2117,9 +2151,9 @@
               "RIGHTS_HOLD": "УДЕРЖИВАЕТСЯ"
           },
           "частоты": {
-              "ARCHIVE_HOLD": 22,
-              "LOCATOR_HOLD": 20,
-              "EVIDENCE_HOLD": 16,
+              "LOCATOR_HOLD": 24,
+              "ARCHIVE_HOLD": 23,
+              "EVIDENCE_HOLD": 18,
               "PUBLICATION_HOLD": 5,
               "RIGHTS_HOLD": 2,
               "OT-AUTH": 1
@@ -2142,15 +2176,15 @@
           ]
       },
       "сверкаСКарточками": {
-          "файловПрозы": 19,
-          "файловСКарточкой": 19,
+          "файловПрозы": 20,
+          "файловСКарточкой": 20,
           "файловБезКарточки": 0,
           "ссылокНаНесуществующийФайл": 0,
           "ссылокВнеОбходаЛана": 0,
           "записейВнеСтрокЛана": 0,
           "файловБезКарточкиСостояния": 2,
           "маркеровВПрозеНеОтражённыхВКарточке": 0,
-          "маркеровВКарточкеНеИзПрозыЛана": 26,
+          "маркеровВКарточкеНеИзПрозыЛана": 29,
           "детально": {
               "06_PESAH_EXOD12.md": {
                   "проза": 0,
@@ -2257,6 +2291,17 @@
                       "STORAGE_ONLY"
                   ],
                   "естьКарточка": true
+              },
+              "17_LXX_VERSIFICATION_AND_MIRROR_Z.md": {
+                  "проза": 4,
+                  "карточка": 7,
+                  "вПрозеНеВКарточке": [],
+                  "вКарточкеНеИзПрозы": [
+                      "BLOCKED",
+                      "PARTIAL_OBJECT",
+                      "STORAGE_ONLY"
+                  ],
+                  "естьКарточка": true
               }
           }
       },
@@ -2335,7 +2380,7 @@
               "код": "6@00_OT_AUTHORITY_2026-10-08",
               "лан": "ot",
               "файл": "ИСКУПЛЕНИЕ/ot/00_OT_AUTHORITY_2026-10-08.md",
-              "строка": 133,
+              "строка": 134,
               "срез": "6. Связь с корпусом",
               "класс": "БЕЗ МАРКЕРА",
               "маркеров": 0,
@@ -2347,7 +2392,7 @@
               "код": "7@00_OT_AUTHORITY_2026-10-08",
               "лан": "ot",
               "файл": "ИСКУПЛЕНИЕ/ot/00_OT_AUTHORITY_2026-10-08.md",
-              "строка": 140,
+              "строка": 141,
               "срез": "7. Следующий допустимый шаг",
               "класс": "БЕЗ МАРКЕРА",
               "маркеров": 0,
@@ -4668,6 +4713,136 @@
               "машинноПоФайлу": true
           },
           {
+              "код": "1@17_LXX_VERSIFICATION_AND_MIRROR_Z",
+              "лан": "ot",
+              "файл": "ИСКУПЛЕНИЕ/ot/17_LXX_VERSIFICATION_AND_MIRROR_Z.md",
+              "строка": 11,
+              "срез": "1. Зачем эта карточка",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "2@17_LXX_VERSIFICATION_AND_MIRROR_Z",
+              "лан": "ot",
+              "файл": "ИСКУПЛЕНИЕ/ot/17_LXX_VERSIFICATION_AND_MIRROR_Z.md",
+              "строка": 17,
+              "срез": "2. Метод и границы",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "LOCATOR_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "3@17_LXX_VERSIFICATION_AND_MIRROR_Z",
+              "лан": "ot",
+              "файл": "ИСКУПЛЕНИЕ/ot/17_LXX_VERSIFICATION_AND_MIRROR_Z.md",
+              "строка": 27,
+              "срез": "3. Результат A. Нумерация Лев. 5–7: формулировки карточек 03 и 07 подтверждаются",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "LOCATOR_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "4@17_LXX_VERSIFICATION_AND_MIRROR_Z",
+              "лан": "ot",
+              "файл": "ИСКУПЛЕНИЕ/ot/17_LXX_VERSIFICATION_AND_MIRROR_Z.md",
+              "строка": 50,
+              "срез": "4. Результат B. Лев. 16: предлога ἀντί в разрешённых зеркалах нет",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "5@17_LXX_VERSIFICATION_AND_MIRROR_Z",
+              "лан": "ot",
+              "файл": "ИСКУПЛЕНИЕ/ot/17_LXX_VERSIFICATION_AND_MIRROR_Z.md",
+              "строка": 59,
+              "срез": "5. Результат C. Согласие зеркал: 68 локусов в Пятикнижии",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "6@17_LXX_VERSIFICATION_AND_MIRROR_Z",
+              "лан": "ot",
+              "файл": "ИСКУПЛЕНИЕ/ot/17_LXX_VERSIFICATION_AND_MIRROR_Z.md",
+              "строка": 83,
+              "срез": "6. Результат D. Пс 49:8: ἐξίλασμα есть в разрешённом зеркале",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "7@17_LXX_VERSIFICATION_AND_MIRROR_Z",
+              "лан": "ot",
+              "файл": "ИСКУПЛЕНИЕ/ot/17_LXX_VERSIFICATION_AND_MIRROR_Z.md",
+              "строка": 89,
+              "срез": "7. Поправки к существующим карточкам",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "8@17_LXX_VERSIFICATION_AND_MIRROR_Z",
+              "лан": "ot",
+              "файл": "ИСКУПЛЕНИЕ/ot/17_LXX_VERSIFICATION_AND_MIRROR_Z.md",
+              "строка": 102,
+              "срез": "8. Что здесь не доказано",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EVIDENCE_HOLD",
+                  "LOCATOR_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "9@17_LXX_VERSIFICATION_AND_MIRROR_Z",
+              "лан": "ot",
+              "файл": "ИСКУПЛЕНИЕ/ot/17_LXX_VERSIFICATION_AND_MIRROR_Z.md",
+              "строка": 109,
+              "срез": "9. Пересъём",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "10@17_LXX_VERSIFICATION_AND_MIRROR_Z",
+              "лан": "ot",
+              "файл": "ИСКУПЛЕНИЕ/ot/17_LXX_VERSIFICATION_AND_MIRROR_Z.md",
+              "строка": 117,
+              "срез": "10. Следующий допустимый шаг",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "ARCHIVE_HOLD",
+                  "EVIDENCE_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
               "код": "СР@README",
               "лан": "ot",
               "файл": "ИСКУПЛЕНИЕ/ot/tools/README.md",
@@ -4706,8 +4881,8 @@
       ],
       "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
       "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
-      "measuredAt": "2026-11-03T22:36:41Z",
-      "checkedAt": "2026-11-03T22:36:41Z",
-      "предыдущийСъём": "2026-11-03T22:33:30Z"
+      "measuredAt": "2026-11-15T17:11:32Z",
+      "checkedAt": "2026-11-15T17:11:32Z",
+      "предыдущийСъём": "2026-11-03T22:36:41Z"
   }
 }
