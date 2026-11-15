@@ -295,7 +295,7 @@ Preserve together:
 - 1 Cor. 7:36–38 has substantial father/guardian and fiancé readings and cannot carry a universal doctrine alone;
 - historic Reformed tradition contains strong parental-consent practice while also condemning forced marriage and arbitrary/unjust refusal;
 - Gill supplies direct Particular Baptist parental/guardian-consent evidence plus indispensable voluntary consent and says parental power is less when children are grown;
-- Stennett remains `LOCATED_SECONDARY_WITH_EXACT_PRIMARY_LOCATOR` for `concurrence of parents and friends` and must not be upgraded to direct-primary transcription until the page is inspected;
+- Stennett is now `VERIFIED_PRIMARY` for `concurrence of parents and friends`: the 1783 London first edition was inspected directly at printed **p. 162** (HathiTrust `uc2.ark:/13960/t8nc5v03c`, seq 178), with the `sui juris` rule at p. 161; Haste's `p. 127` is the **Edinburgh 1800 reprint** and his `Works, vol. 3` is really **vol. 2, p. 81**. Verification card in `218`, §4.1. The upgrade permits direct transcription; it does not permit reading Stennett as requiring a father's permission for a valid marriage or as giving parents an absolute veto over a competent adult child (his own pp. 269 and 276 limit parental command at mature age to respectful counsel);
 - Russian ECB historical material strongly supports filial honour/family order and directly protects the voluntary desire of the marrying persons, but does not yet yield a universal adult parental-consent rule;
 - female education, productive work, property competence, gifts and substantial unmarried/widowed agency are not intrinsically rebellion;
 - the alternative to feminist/individualist autonomy is not paternal absolutism, male self-will or permanent childhood.
