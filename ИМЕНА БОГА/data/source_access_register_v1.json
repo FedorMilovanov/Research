@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 129,
+    "sourceRecords": 130,
     "approvedForProduct": 0
   },
   "records": [
@@ -5072,6 +5072,43 @@
         "externallyAcceptedOurResearchClaims": false,
         "photoRightsAndTextRepublicationPermissionGranted": false,
         "publicationProductApproved": false
+      }
+    },
+    {
+      "id": "SRC-OUTHWAITE-2023-JTS-ENA4107-20-EX6-2-3",
+      "title": "Ben Outhwaite (2023), Fragments of the earliest complete Torah scroll in the Cairo Genizah?, original printed pp143–152; JTS ENA 4107.20 Exod 6:2–3",
+      "creator": "Ben Outhwaite",
+      "year": 2023,
+      "url": "https://api.repository.cam.ac.uk/server/api/core/bitstreams/815fda66-78a0-47a3-8cac-2021754cd8b8/content",
+      "doi": "10.1515/9783111019963-009",
+      "sourceRole": "OUTHWAITE_2023_AUTHOR_ORIGINAL_JTS_PHOTO_EX6_2_3_NOT_INDEPENDENT_GLYPH_COLLATION",
+      "evidenceClass": "B1",
+      "objectType": "ORIGINAL_AUTHOR_SCHOLARLY_CHAPTER_WITH_JTS_PERMISSIONED_MANUSCRIPT_PHOTO",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "locator": "Cambridge institutional author original (2023): p146 first column coverage Exod5:11–6:3; p147 figure3 JTS ENA4107.20 photograph; p150 Exod6:2 setuma; 2023 DOI 10.1515/9783111019963-009.",
+      "sourceObjectState": "Original author PDF pages 143–150 selectively read and original manuscript photo figure3 visually inspected using PDF screenshot. Author identifies first column as Exod5:11–6:3 and section before Ex6:2; no direct independent collation of each ancient letter, especially on damage. This JTS manuscript is DIFFERENT from London-Ashkar fragments Cambridge T-S AS36.36 and NS282.88. JTS granted use to author for publication, not to this Product. BHS/Göttingen apparatus for Ex3/6/17 not directly read.",
+      "supportedUse": "Attribute author's identification of early physical witness to Exod6:2–3 and closed paragraph break before 6:2.",
+      "forbiddenUse": "Infer actual word variants not visually collated, claim independent ancient codex autopsy or published critical apparatus, inherit permissions for JTS image, equate this with Aleppo or London-Ashkar physical manuscript.",
+      "audit20261115": {
+        "shelfmark": "JTS ENA 4107.20 (L588 fol20r)",
+        "firstColumnRange": "Exod 5:11–6:3",
+        "photoPage": 147,
+        "coveragePage": 146,
+        "sectionPage": 150,
+        "authorReportsExodus6_2Setuma": true,
+        "originalPhotoViewed": true,
+        "independentGlyphCollationDone": false,
+        "imageReusePermissionGranted": false,
+        "fullBhsGottingenLociCollated": false
       }
     },
     {
