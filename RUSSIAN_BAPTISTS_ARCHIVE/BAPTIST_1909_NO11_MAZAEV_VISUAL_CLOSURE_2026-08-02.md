@@ -67,3 +67,17 @@ FULL OCR: NOT DONE
 BOUNDED TRANSCRIPTION: PENDING
 GENERAL QUOTE-READY: NO
 ```
+
+## 7. Независимая перепроверка 2026-11-15 (Agent 1)
+
+Дата: `2026-11-15` · Исполнитель: Agent 1 (перекрёстная проверка чужего закрытия по инструкции ARENA RESEARCH).
+
+Проверено заново, без опоры на прежние записи:
+
+- Drive `1pOyzFgm0NY0A-eBLScb9s9GVEiGVN1rU` («Баптист 1909 №11.pdf»): MIME `application/pdf`, размер `9842696`, SHA-256 `0d54f0c2157e76f621bf2fd65137386ae538a792516c473703179bc3127fba73` — совпадает с §1 этого файла.
+- Карточка p.14 `1yOm3KBJ9ujtETUG7u-0hl5ijrGiKuXYG`, SHA-256 `ed381e3ee5764483098fbdda76986953d8d5c7e2ab170e453d38d1a2fd6c23e5`, 2113688 B; карточка p.15 `1v-7bxYeZ6bMsaiVoFgqz5nWUctOtEwA8`, SHA-256 `bb3e78a0deb06b437cbf647c09fada131343eb48174d2fa0630809aca639b2ea`, 724613 B; сводный Doc `1zCwFFMTaOcI476aOP_cXSzgdViWNk4VEySJ2G88W6bY` — существуют.
+- Оба PNG реально открыты и прочитаны 2026-11-15: p.15 несёт колтитул «№ 11. Іюнь 1909 г.» / «Б А П Т И С Т Ъ» / печатная с. 15 и подпись «Вашъ меньшій братъ А. М. Мазаевъ.»; p.14 (правая колонка) содержит фразу «этотъ ужасный союзъ» в контексте отказа от одновременного членства в баптистской/православной церкви и евангельском союзе.
+- Полный OCR выпуска НЕ выполнялся; bounded transcription по-прежнему PENDING; общий quote-ready по-прежнему НЕ выдан.
+- Каталожного «прочтения» вместо файла не было: сначала файлы, потом текст.
+
+Статус 1909 №11 после перепроверки не повышается и не понижается: `VISUAL_PAGE_VERIFIED / BOUNDED_TRANSCRIPTION_PENDING / NOT GENERAL QUOTE-READY`.
