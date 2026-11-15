@@ -3092,5 +3092,37 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                                     for error in validate_source_access(changed)))
 
 
+    def test_nets_perkins_exodus_2009_is_not_critical_apparatus(self) -> None:
+        source_id = "SRC-NETS-PERKINS-EXODUS-2009-GOTTINGEN-TRANSLATION"
+        self.assertEqual([], validate_source_access(self.sources))
+        for field, invalid in (
+            ("sourceIndependentAncientManuscriptCollation", True),
+            ("gottIngen1991CriticalApparatusRead", True),
+            ("bhsCriticalApparatusRead", True),
+            ("publisherReusePermissionGranted", True),
+            ("exodus17FootnoteAlternate", False),
+            ("exodus6PdfPage", 16),
+            ("originalPdfPages", 41),
+        ):
+            with self.subTest(translation_scope=field):
+                changed = copy.deepcopy(self.sources)
+                row = next(x for x in changed["records"] if x["id"] == source_id)
+                row["netsPdfAudit20261116"][field] = invalid
+                self.assertTrue(any("NETS English translation must not certify" in error
+                                    for error in validate_source_access(changed)))
+        for field, invalid in (
+            ("evidenceClass", "A1"),
+            ("rightsState", "PUBLICATION_ELIGIBLE"),
+            ("publicationState", "REFERENCE"),
+            ("criticalEditionCollated", True),
+        ):
+            with self.subTest(license_or_manuscript=field):
+                changed = copy.deepcopy(self.sources)
+                row = next(x for x in changed["records"] if x["id"] == source_id)
+                row[field] = invalid
+                self.assertTrue(any("NETS English translation must not certify" in error
+                                    for error in validate_source_access(changed)))
+
+
 if __name__ == "__main__":
     unittest.main()
