@@ -295,7 +295,7 @@ Preserve together:
 - 1 Cor. 7:36–38 has substantial father/guardian and fiancé readings and cannot carry a universal doctrine alone;
 - historic Reformed tradition contains strong parental-consent practice while also condemning forced marriage and arbitrary/unjust refusal;
 - Gill supplies direct Particular Baptist parental/guardian-consent evidence plus indispensable voluntary consent and says parental power is less when children are grown;
-- Stennett remains `LOCATED_SECONDARY_WITH_EXACT_PRIMARY_LOCATOR` for `concurrence of parents and friends` and must not be upgraded to direct-primary transcription until the page is inspected;
+- Stennett is now `VERIFIED_PRIMARY` for `concurrence of parents and friends`: the 1783 London first edition was inspected directly at printed **p. 162** (HathiTrust `uc2.ark:/13960/t8nc5v03c`, seq 178), with the `sui juris` rule at p. 161; Haste's `p. 127` is the **Edinburgh 1800 reprint** and his `Works, vol. 3` is really **vol. 2, p. 81**. Verification card in `218`, §4.1. The upgrade permits direct transcription; it does not permit reading Stennett as requiring a father's permission for a valid marriage or as giving parents an absolute veto over a competent adult child (his own pp. 269 and 276 limit parental command at mature age to respectful counsel);
 - Russian ECB historical material strongly supports filial honour/family order and directly protects the voluntary desire of the marrying persons, but does not yet yield a universal adult parental-consent rule;
 - female education, productive work, property competence, gifts and substantial unmarried/widowed agency are not intrinsically rebellion;
 - the alternative to feminist/individualist autonomy is not paternal absolutism, male self-will or permanent childhood.
@@ -382,6 +382,13 @@ The main residual risk is now **compression/reconciliation error**: losing evide
 - exact modern eviction/tenancy/guardianship/reporting/estate operations require current-jurisdiction verification.
 
 The former `ordinary lawful life becomes bland/flat` editorial HOLD is **resolved KEEP_WITH_CONTROLLED_WORDING** in `236`.
+
+**Closed 2026-11-15 (ARENA A9) — read before touching Stennett or PHOS-002:**
+
+- `218` §4.1 now holds the Stennett verification card; `STENNETT_PARENT_FRIEND_CONCURRENCE = VERIFIED_PRIMARY` against the 1783 first edition, printed **p. 162**. The old `p. 127` locator is the **Edinburgh 1800 reprint**, and the `Works` reference is **vol. 2, p. 81**, not vol. 3. Do not re-import the old pagination from `218`'s dated sections, from `218B`'s pre-2026-11-15 record, or from Haste.
+- `218` §4.2 records what that card does **not** settle: `sui juris` is not a calendar age and Stennett names none; the duty/advice classification is a synthesis across the book (pp. 269, 276), not one sentence; `children` at p. 162 does not mean minors.
+- `A9_QC_PHOS-002_PRIMARY_VS_EDITORIAL_RESTORATION_AUDIT_2026-11-15.md` is an **external review** of the PHOS-002 dossiers, written because A9 required the primary-vs-editorial-restoration boundary to be checked independently. It does not edit those dossiers and changes no status; its five wording fixes are proposals for the hymn-series owner. Do not treat it as a PHOS-002 authority. The dossiers remain owned by `SUNO_HYMNS/RESEARCH/`.
+- Both halves are research-only and **Draft PR #508**; nothing merged, no publication statuses moved.
 
 The former expanded-publication `ARCHITECTURE_REVIEW_REQUIRED` is **resolved at the Research layer** in `237`; `239` reconciles it with `188`. Product drafting of the seven primary owners is already materialized; live Product reconciliation, review/CI and publication release remain separate gates.
 
