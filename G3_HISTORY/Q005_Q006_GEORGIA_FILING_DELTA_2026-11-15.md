@@ -64,7 +64,7 @@ Filing 32257311 carries two different registry date fields: `10/28/2026 2:47:06 
 
 ### 1.7 What was not acquired
 
-- **Current status field** (`Active/Compliance` or otherwise), current registered agent, principal office and officer list on the official `BusinessInformation` detail page. Every GET form of that route redirected to the blank search form. The last official reading of the status field remains the Sep. 8 `Active/Compliance` acquisition.
+- **Current status field** (`Active/Compliance` or otherwise), current registered agent, principal office and officer list on the official `BusinessInformation` detail page. Four GET forms of that route (bare `businessId`; with `businessType`; with `fromSearch=True`; with `isSeries=False`) each redirected to the blank search form. The last official reading of the status field remains the Sep. 8 `Active/Compliance` acquisition.
 - **Document bodies** of filings 32257311, 32260917 and 32269080 (articles of amendment, amended registration contents, signatory, officers). The guessed document route returned HTTP 404.
 - **Raw bytes / hashes.** The retrievals are rendered readbacks through the session fetch tool. The research sandbox has no network route to `ecorp.sos.ga.gov`; the repository workflow `g3-georgia-entity-acquisition` was last classified `ACCESS_HOLD` (run `42331190745`), and manual dispatch was refused to this session (HTTP 403). The filing-history table was read three times and returned identical rows each time.
 
@@ -92,7 +92,8 @@ Use: a lead that the status field was still `Active/Compliance` at a snapshot ta
 | `https://plus.g3min.org/legal/terms-of-service` | provider named `G3`; `Last Updated: April 03, 2025`; contact `admin@g3min.org` | none; no post-transfer legal-provider change |
 | `https://shop.g3min.org/` | G3 Press storefront, G3 branding and G3 social links; `/policies/terms-of-service` returns the store 404 page | none |
 | Georgia registry | see §1 | **new** |
-| Web search for `Lumena Ministries` | no site, announcement, storefront or press mention located | first search for this name |
+| Web search for `Lumena Ministries` | no indexed site, announcement, storefront or press mention | first search for this name |
+| `https://lumenaministries.com/` (direct) | pre-launch placeholder titled `Lumena Ministries`; operator not identified; no mention of G3, G3 Plus or G3 Press | **new lead**, see §2.6; recorded as `G3-S143` |
 
 No final-transition subscriber notice, recipient-ministry announcement, board or corporate transaction notice, or agreement/assignment/closing instrument was found. Searches across the secondary reporters already in the ledger surfaced no later statement identifying a transferee; those pages were checked through search results, not re-read in full.
 
@@ -134,6 +135,37 @@ Earlier guardrails are unchanged: `Living Heritage = successor` unverified, `Tre
 | Primary evidence naming a specific successor/transferee? | No | `TRANSFEREE = UNVERIFIED / EXTERNAL_DOCUMENT_HOLD`; `Lumena Ministries, Inc.` is recorded as the renamed G3 entity and as a lead only |
 | Primary evidence of the scope of the transfer? | Partly, as representation only | Both Plus and Press are named in G3's own notice; assets, rights, inventory, consideration and liabilities remain `EXTERNAL_DOCUMENT_HOLD` |
 
+### 2.6 Name-matching web surface — lead only
+
+A direct request to the obvious domain for the new registry name returned a live placeholder. It is not indexed by search and has no Wayback capture.
+
+**Page, `https://lumenaministries.com/`, 2026-11-15:** title `Lumena Ministries`; logo text `Lumena Ministries. Living Truth. Faithful Living.`; `Opening soon` / `Our new home is nearly ready. We are putting the final touches on our website. Please visit us again soon.`; a Psalm 43:3 quotation. The site's REST index answers `lumena_maintenance` / `This site is under maintenance.` (status 503), and the sitemap path returns the same placeholder. Guessed `plus.` and `shop.` subdomains could not be fetched, which is not evidence either way.
+
+**Domain registration records (RDAP), 2026-11-15:**
+
+| Domain | Registry registration event | Expiration | Registrar | Registrant |
+|---|---|---|---|---|
+| `lumenaministries.org` | 2026-08-27T20:13:03Z | 2027-08-27 | GoDaddy.com, LLC | not shown by the registry |
+| `lumenaministries.com` | 2026-08-27T20:13:10Z | 2029-08-27 | GoDaddy.com, LLC | `Registration Private` / `Domains By Proxy, LLC` |
+
+The registrar's own RDAP record renders the `.com` registration time as `15:13:10Z`; the registry value is used here and the difference is preserved, not resolved.
+
+For comparison, `g3min.org` sits at a different registrar (NameSilo, LLC) on different nameservers (Cloudflare). Its registry record shows a `last changed` event at 2026-11-14T18:15:43Z; RDAP does not say what changed. That observation belongs to Q019 and is not interpreted here.
+
+**What this is:** a pre-launch website under the same name as the renamed Georgia corporation, on two domains registered seven seconds apart on 2026-08-27 — the date carried by the G3+ subscriber email. That is a name match and a coincidence of dates.
+
+**What this is not:** evidence of who registered the domains or operates the site. The registrant is privacy-proxied, the page names no person, entity, state or address, and it does not mention G3, G3 Plus or G3 Press.
+
+Claim state: `LUMENA_NAME_MATCHING_WEB_SURFACE = EXISTS / PRE-LAUNCH PLACEHOLDER / OPERATOR UNIDENTIFIED / LINK TO THE GEORGIA ENTITY AND TO G3 PLUS OR G3 PRESS = UNVERIFIED`.
+
+Additional blocked inferences:
+
+- `lumenaministries.com is the website of the renamed Georgia corporation`;
+- `the acquiring ministry was already called Lumena on Aug. 27`, or any reconstruction of planning or intent from the registration date;
+- `G3 Plus and G3 Press will relaunch at this site`.
+
+Reopen trigger 4 in §4 is **not** met: the surface uses the name but does not connect it to G3 Plus or G3 Press.
+
 ## 3. Publication-safe formulations
 
 Subject to the corpus-wide `PUBLICATION_HOLD`:
@@ -142,7 +174,7 @@ Subject to the corpus-wide `PUBLICATION_HOLD`:
 
 > G3's website states that G3 Plus and G3 Press "are continuing in a new form, under new leadership," with details to follow once the transition is complete. No public document reviewed identifies who now controls those services, whether a transfer has closed, or on what terms.
 
-Not publication-safe: any sentence naming Lumena Ministries, Inc. as the acquirer, owner or operator of G3+ or G3 Press.
+Not publication-safe: any sentence naming Lumena Ministries, Inc. as the acquirer, owner or operator of G3+ or G3 Press, and any sentence presenting `lumenaministries.com` as that corporation's or G3's website.
 
 ## 4. Narrowed reopen triggers
 
@@ -151,7 +183,7 @@ Do not repeat this pass against unchanged surfaces. Reopen only on:
 1. the official `BusinessInformation` detail page for control no. `19085916` (status field, registered agent, officers) by any route that returns the record;
 2. the document body of filing 32257311, 32260917 or 32269080;
 3. a later filing on the same record, in particular any dissolution, merger or conversion filing;
-4. a public surface that uses the name `Lumena Ministries` and connects it to G3 Plus or G3 Press;
+4. a public surface that uses the name `Lumena Ministries` and connects it to G3 Plus or G3 Press, or identifies its own operator — in particular `lumenaministries.com` leaving maintenance mode with an About, legal, contact or donation page;
 5. a change of seller, developer, legal provider or merchant identity on the G3+ or G3 Press surfaces;
 6. the instruments already listed in `Q006_ASSET_TRANSFER_REFRESH_2026-09-09.md` §6, items 1–8.
 
