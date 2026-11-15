@@ -144,7 +144,7 @@ class ReformationAdversarialTenTwelve(unittest.TestCase):
         self.assertIsNone(READER_TECHNICAL_LOCATOR_RE.search(reader))
         for term in (
             "REF-P93", "REF-P94", "REF-P78", "REF-P25-1581",
-            "NAS PA2/12", "законодательное", "HOLD", 
+            "NAS PA2/12", "перечень подтверждаемых законов", "HOLD", 
             "не первичное принятие", "самостоятельное чтение физического",
             "REGNAL_ASSENT_HOLD", "NUMBERING_HOLD",
             "ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD",
