@@ -648,6 +648,106 @@
         "PUBLICATION_HOLD"
       ],
       "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
+    },
+    {
+      "id": "ED-00",
+      "file": "ИСКУПЛЕНИЕ/synthesis/editorial/00_WAVE1_READING_LOG_AND_CHAPTER_REVIEWS.md",
+      "topic": "Волна I: сквозное чтение 18 глав, внутренние редакторские характеристики",
+      "holds": [
+        "AI_TRANSLATION_HOLD",
+        "AUTHOR_FULL_WORK_HOLD",
+        "CONFESSIONAL_REVIEW_HOLD",
+        "EVIDENCE_HOLD",
+        "HOLD",
+        "LEXICAL_SCOPE_HOLD",
+        "LOCATOR_HOLD",
+        "MEYER_EDITION_HOLD",
+        "NICNT_FULL_TEXT_HOLD",
+        "PRECEDENT_OF_READING / ORIGINAL_TEXT_HOLD",
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "TEXTUAL_APPARATUS_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (машинный учёт редакторских материалов AGENT-7; сверка — claim_register --check)",
+      "status": "EDITORIAL / PUBLICATION_HOLD",
+      "role": "редакторский материал, не текст серии; не является главой читательской серии"
+    },
+    {
+      "id": "ED-01",
+      "file": "ИСКУПЛЕНИЕ/synthesis/editorial/01_HISTORICAL_AND_CONFESSIONAL_VERIFICATION.md",
+      "topic": "Историко-конфессиональная сверка: Дорт II, WCF/1689, Кальвин, Оуэн, XVII в., отцы, библейские тексты",
+      "holds": [
+        "LOCATOR_HOLD",
+        "MEYER_EDITION_HOLD",
+        "DOCUMENT_PARTIAL_COLLATION / LOCATOR_HOLD",
+        "FRENCH_TARGET_READ / FULL_TEXT_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (машинный учёт редакторских материалов AGENT-7; сверка — claim_register --check)",
+      "status": "EDITORIAL / PUBLICATION_HOLD",
+      "role": "редакторский материал, не текст серии; не является главой читательской серии"
+    },
+    {
+      "id": "ED-02",
+      "file": "ИСКУПЛЕНИЕ/synthesis/editorial/02_PATCH_REGISTER.md",
+      "topic": "Реестр 45 редакторских поправок к главам PR #309 с обоснованием",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LEXICAL_SCOPE_HOLD",
+        "PRECEDENT_OF_READING / ORIGINAL_TEXT_HOLD",
+        "MEYER_EDITION_HOLD",
+        "TEXTUAL_APPARATUS_HOLD",
+        "AI_TRANSLATION_HOLD",
+        "AUTHOR_FULL_WORK_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (машинный учёт редакторских материалов AGENT-7; сверка — claim_register --check)",
+      "status": "EDITORIAL / PUBLICATION_HOLD",
+      "role": "редакторский материал, не текст серии; не является главой читательской серии"
+    },
+    {
+      "id": "ED-03",
+      "file": "ИСКУПЛЕНИЕ/synthesis/editorial/03_RESEARCH_APPENDIX_STRONGER_COUNTERARGUMENTS.md",
+      "topic": "Научное приложение: недостающие сильные контраргументы и межглавные связки",
+      "holds": [],
+      "stateSource": "маркеры состояния прозы файла (машинный учёт редакторских материалов AGENT-7; сверка — claim_register --check)",
+      "status": "EDITORIAL / PUBLICATION_HOLD",
+      "role": "редакторский материал, не текст серии; не является главой читательской серии"
+    },
+    {
+      "id": "ED-04",
+      "file": "ИСКУПЛЕНИЕ/synthesis/editorial/04_SCIENTIFIC_APPENDICES_PLACEMENT.md",
+      "topic": "Рекомендации по месту научных приложений и служебных оговорок",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "AI_TRANSLATION_HOLD",
+        "JUDAS_NAMED_REDEMPTION_QUOTE_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (машинный учёт редакторских материалов AGENT-7; сверка — claim_register --check)",
+      "status": "EDITORIAL / PUBLICATION_HOLD",
+      "role": "редакторский материал, не текст серии; не является главой читательской серии"
+    },
+    {
+      "id": "ED-05",
+      "file": "ИСКУПЛЕНИЕ/synthesis/editorial/05_READER_FRAGMENTS_FOR_OWNER.md",
+      "topic": "Готовые читательские фрагменты: сильные контраргументы и межглавные связки",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (машинный учёт редакторских материалов AGENT-7; сверка — claim_register --check)",
+      "status": "PUBLICATION_HOLD",
+      "role": "редакторский материал, не текст серии; не является главой читательской серии"
+    },
+    {
+      "id": "ED-06",
+      "file": "ИСКУПЛЕНИЕ/synthesis/editorial/06_SUBMISSION_REPORT.md",
+      "topic": "Сдача AGENT-7: волна I, проверяемость, ограничения, OWN_TASK_DONE",
+      "holds": [
+        "MEYER_EDITION_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (машинный учёт редакторских материалов AGENT-7; сверка — claim_register --check)",
+      "status": "PUBLICATION_HOLD",
+      "role": "редакторский материал, не текст серии; не является главой читательской серии"
     }
   ],
   "initialSessionBranch": "arena/5fe5b33f-research",
@@ -802,68 +902,83 @@
     "чтоСчитаетсяДоводом": "заголовок «## » в любом .md лана, включая вложенные папки (synthesis/drafts, ot/tools); тело секции — до следующего «## » или до конца файла",
     "приоритет": "УДЕРЖИВАЕТСЯ > ОТКРЫТО > ЗАКРЫТО; маркеров нет -> БЕЗ МАРКЕРА; маркер вне классификации -> ошибка съёма, а не «прочее»",
     "метод": "scripts/atonement_claim_register.py обходит прозу лана целиком (без выборки), разбирает маркеры вида `ВЕРДИКТ`, сверяет локатор побайтово (файл + номер строки + текст)",
-    "строк": 244,
-    "файлов": 23,
+    "строк": 292,
+    "файлов": 30,
     "покрытоМашинно": 0,
-    "покрытоПоФайлу": 244,
-    "файловПрозы": 23,
+    "покрытоПоФайлу": 292,
+    "файловПрозы": 30,
     "файловБезКарточки": 0,
-    "разрешеноЛокаторов": 244,
+    "разрешеноЛокаторов": 292,
     "неРазрешено": 0,
     "поКлассам": {
-      "БЕЗ МАРКЕРА": 129,
-      "УДЕРЖИВАЕТСЯ": 89,
-      "ОТКРЫТО": 11,
+      "БЕЗ МАРКЕРА": 162,
+      "УДЕРЖИВАЕТСЯ": 103,
+      "ОТКРЫТО": 12,
       "СЛУЖЕБНОЕ": 9,
       "ЗАКРЫТО": 6
     },
     "маркеры": {
-      "всего": 460,
-      "различных": 35,
+      "всего": 512,
+      "различных": 50,
       "словарь": {
         "ACCESS_INTERRUPTED": "ОТКРЫТО",
         "AGENT_RULES": "СЛУЖЕБНОЕ",
+        "AI_TRANSLATION_HOLD": "УДЕРЖИВАЕТСЯ",
         "ARCHIVE_HOLD": "УДЕРЖИВАЕТСЯ",
         "ATTRIBUTION_HOLD": "УДЕРЖИВАЕТСЯ",
         "ATTRIBUTION_NOTE": "СЛУЖЕБНОЕ",
         "ATTRIBUTION_SECONDARY": "УДЕРЖИВАЕТСЯ",
+        "AUTHOR_FULL_WORK_HOLD": "УДЕРЖИВАЕТСЯ",
+        "BAXTER_SCOPED_PRINT_VERIFIED": "ЗАКРЫТО",
         "BIBLE_CORPUS": "СЛУЖЕБНОЕ",
+        "CONFESSIONAL_REVIEW_HOLD": "УДЕРЖИВАЕТСЯ",
         "CONTEXT_HOLD": "УДЕРЖИВАЕТСЯ",
         "DATE_HOLD": "УДЕРЖИВАЕТСЯ",
+        "DOCUMENT_PARTIAL_COLLATION / LOCATOR_HOLD": "УДЕРЖИВАЕТСЯ",
         "DRAFT / PUBLICATION_HOLD": "УДЕРЖИВАЕТСЯ",
         "EDITION_HOLD": "УДЕРЖИВАЕТСЯ",
         "EDITION_UNAVAILABLE": "УДЕРЖИВАЕТСЯ",
         "EVIDENCE_HOLD": "УДЕРЖИВАЕТСЯ",
         "EXACT_LOCATOR_VERIFIED": "ЗАКРЫТО",
+        "EXTENT_OPEN": "ОТКРЫТО",
         "FORBIDDEN": "УДЕРЖИВАЕТСЯ",
+        "FRENCH_TARGET_READ / FULL_TEXT_HOLD": "УДЕРЖИВАЕТСЯ",
         "FULL_OBJECT_VERIFIED": "ЗАКРЫТО",
         "HOLD": "УДЕРЖИВАЕТСЯ",
+        "JUDAS_NAMED_REDEMPTION_QUOTE_HOLD": "УДЕРЖИВАЕТСЯ",
         "LEGACY_NO_CLASSES": "СЛУЖЕБНОЕ",
+        "LEXICAL_SCOPE_HOLD": "УДЕРЖИВАЕТСЯ",
         "LOCATOR_HOLD": "УДЕРЖИВАЕТСЯ",
         "LOCATOR_PARTIAL": "УДЕРЖИВАЕТСЯ",
         "LOCATOR_SINGLE_ATTESTATION": "УДЕРЖИВАЕТСЯ",
+        "MEYER_EDITION_HOLD": "УДЕРЖИВАЕТСЯ",
+        "NICNT_FULL_TEXT_HOLD": "УДЕРЖИВАЕТСЯ",
         "OPEN": "ОТКРЫТО",
         "OPEN-LAYER": "ОТКРЫТО",
+        "OWN_TASK_DONE": "СЛУЖЕБНОЕ",
         "PERMISSION_REQUIRED": "УДЕРЖИВАЕТСЯ",
+        "PRECEDENT_OF_READING / ORIGINAL_TEXT_HOLD": "УДЕРЖИВАЕТСЯ",
         "PRIVATE_STUDY_ONLY": "УДЕРЖИВАЕТСЯ",
         "PUBLICATION_ELIGIBLE": "ЗАКРЫТО",
         "PUBLICATION_HOLD": "УДЕРЖИВАЕТСЯ",
         "RESOLVED": "ЗАКРЫТО",
         "RESOLVED-BY-TEXT": "ЗАКРЫТО",
+        "REVIEW_DEFERRED": "СЛУЖЕБНОЕ",
         "RIGHTS_HOLD": "УДЕРЖИВАЕТСЯ",
         "RIGHTS_UNKNOWN": "УДЕРЖИВАЕТСЯ",
         "SCOPED_IN_PART": "ОТКРЫТО",
         "SCOPED_OUT": "ЗАКРЫТО",
         "STORAGE_ONLY": "СЛУЖЕБНОЕ",
+        "TEXTUAL_APPARATUS_HOLD": "УДЕРЖИВАЕТСЯ",
         "TEXT_CRIT_NOTE": "СЛУЖЕБНОЕ"
       },
       "частоты": {
-        "EVIDENCE_HOLD": 97,
-        "PUBLICATION_HOLD": 66,
-        "RIGHTS_HOLD": 55,
+        "EVIDENCE_HOLD": 103,
+        "PUBLICATION_HOLD": 69,
+        "RIGHTS_HOLD": 57,
         "ATTRIBUTION_HOLD": 40,
         "EDITION_HOLD": 35,
-        "LOCATOR_HOLD": 30,
+        "LOCATOR_HOLD": 33,
         "RESOLVED-BY-TEXT": 30,
         "OPEN": 22,
         "LOCATOR_PARTIAL": 13,
@@ -871,22 +986,37 @@
         "BIBLE_CORPUS": 11,
         "PRIVATE_STUDY_ONLY": 9,
         "OPEN-LAYER": 7,
+        "EXTENT_OPEN": 6,
+        "MEYER_EDITION_HOLD": 6,
         "CONTEXT_HOLD": 4,
+        "TEXTUAL_APPARATUS_HOLD": 4,
+        "AI_TRANSLATION_HOLD": 3,
         "ATTRIBUTION_SECONDARY": 3,
         "EDITION_UNAVAILABLE": 3,
+        "HOLD": 3,
         "LEGACY_NO_CLASSES": 3,
-        "HOLD": 2,
+        "PRECEDENT_OF_READING / ORIGINAL_TEXT_HOLD": 3,
+        "AGENT_RULES": 2,
+        "AUTHOR_FULL_WORK_HOLD": 2,
+        "LEXICAL_SCOPE_HOLD": 2,
+        "NICNT_FULL_TEXT_HOLD": 2,
         "RESOLVED": 2,
+        "REVIEW_DEFERRED": 2,
         "RIGHTS_UNKNOWN": 2,
         "ACCESS_INTERRUPTED": 1,
-        "AGENT_RULES": 1,
         "ATTRIBUTION_NOTE": 1,
+        "BAXTER_SCOPED_PRINT_VERIFIED": 1,
+        "CONFESSIONAL_REVIEW_HOLD": 1,
         "DATE_HOLD": 1,
+        "DOCUMENT_PARTIAL_COLLATION / LOCATOR_HOLD": 1,
         "DRAFT / PUBLICATION_HOLD": 1,
         "EXACT_LOCATOR_VERIFIED": 1,
         "FORBIDDEN": 1,
+        "FRENCH_TARGET_READ / FULL_TEXT_HOLD": 1,
         "FULL_OBJECT_VERIFIED": 1,
+        "JUDAS_NAMED_REDEMPTION_QUOTE_HOLD": 1,
         "LOCATOR_SINGLE_ATTESTATION": 1,
+        "OWN_TASK_DONE": 1,
         "PERMISSION_REQUIRED": 1,
         "PUBLICATION_ELIGIBLE": 1,
         "SCOPED_IN_PART": 1,
@@ -899,6 +1029,8 @@
         "ATTRIBUTION_NOTE",
         "BIBLE_CORPUS",
         "LEGACY_NO_CLASSES",
+        "OWN_TASK_DONE",
+        "REVIEW_DEFERRED",
         "STORAGE_ONLY",
         "TEXT_CRIT_NOTE"
       ],
@@ -917,15 +1049,15 @@
       ]
     },
     "сверкаСКарточками": {
-      "файловПрозы": 23,
-      "файловСКарточкой": 23,
+      "файловПрозы": 30,
+      "файловСКарточкой": 30,
       "файловБезКарточки": 0,
       "ссылокНаНесуществующийФайл": 0,
       "ссылокВнеОбходаЛана": 0,
       "записейВнеСтрокЛана": 0,
       "файловБезКарточкиСостояния": 0,
       "маркеровВПрозеНеОтражённыхВКарточке": 0,
-      "маркеровВКарточкеНеИзПрозыЛана": 13,
+      "маркеровВКарточкеНеИзПрозыЛана": 18,
       "детально": {
         "01_what-is-atonement.md": {
           "проза": 7,
@@ -1041,6 +1173,51 @@
           "вПрозеНеВКарточке": [],
           "вКарточкеНеИзПрозы": [
             "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD"
+          ],
+          "естьКарточка": true
+        },
+        "00_WAVE1_READING_LOG_AND_CHAPTER_REVIEWS.md": {
+          "проза": 15,
+          "карточка": 14,
+          "вПрозеНеВКарточке": [],
+          "вКарточкеНеИзПрозы": [
+            "EDITORIAL / PUBLICATION_HOLD"
+          ],
+          "естьКарточка": true
+        },
+        "01_HISTORICAL_AND_CONFESSIONAL_VERIFICATION.md": {
+          "проза": 5,
+          "карточка": 5,
+          "вПрозеНеВКарточке": [],
+          "вКарточкеНеИзПрозы": [
+            "EDITORIAL / PUBLICATION_HOLD"
+          ],
+          "естьКарточка": true
+        },
+        "02_PATCH_REGISTER.md": {
+          "проза": 9,
+          "карточка": 8,
+          "вПрозеНеВКарточке": [],
+          "вКарточкеНеИзПрозы": [
+            "EDITORIAL / PUBLICATION_HOLD"
+          ],
+          "естьКарточка": true
+        },
+        "03_RESEARCH_APPENDIX_STRONGER_COUNTERARGUMENTS.md": {
+          "проза": 0,
+          "карточка": 1,
+          "вПрозеНеВКарточке": [],
+          "вКарточкеНеИзПрозы": [
+            "EDITORIAL / PUBLICATION_HOLD"
+          ],
+          "естьКарточка": true
+        },
+        "04_SCIENTIFIC_APPENDICES_PLACEMENT.md": {
+          "проза": 5,
+          "карточка": 5,
+          "вПрозеНеВКарточке": [],
+          "вКарточкеНеИзПрозы": [
+            "EDITORIAL / PUBLICATION_HOLD"
           ],
           "естьКарточка": true
         }
@@ -4319,12 +4496,651 @@
         ],
         "машинно": false,
         "машинноПоФайлу": true
+      },
+      {
+        "код": "0@00_WAVE1_READING_LOG_AND_CHAPTER_REVIEWS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/00_WAVE1_READING_LOG_AND_CHAPTER_REVIEWS.md",
+        "строка": 13,
+        "срез": "0. Итог одной таблицей",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "CONFESSIONAL_REVIEW_HOLD",
+          "EXTENT_OPEN",
+          "LEXICAL_SCOPE_HOLD",
+          "MEYER_EDITION_HOLD",
+          "NICNT_FULL_TEXT_HOLD",
+          "PRECEDENT_OF_READING / ORIGINAL_TEXT_HOLD",
+          "TEXTUAL_APPARATUS_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "1@00_WAVE1_READING_LOG_AND_CHAPTER_REVIEWS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/00_WAVE1_READING_LOG_AND_CHAPTER_REVIEWS.md",
+        "строка": 40,
+        "срез": "1. Метод и мерка",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "2@00_WAVE1_READING_LOG_AND_CHAPTER_REVIEWS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/00_WAVE1_READING_LOG_AND_CHAPTER_REVIEWS.md",
+        "строка": 58,
+        "срез": "2. Глава за главой",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "AI_TRANSLATION_HOLD",
+          "AUTHOR_FULL_WORK_HOLD",
+          "EVIDENCE_HOLD",
+          "NICNT_FULL_TEXT_HOLD",
+          "PRECEDENT_OF_READING / ORIGINAL_TEXT_HOLD",
+          "PUBLICATION_HOLD",
+          "REVIEW_DEFERRED",
+          "RIGHTS_HOLD",
+          "TEXTUAL_APPARATUS_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "3@00_WAVE1_READING_LOG_AND_CHAPTER_REVIEWS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/00_WAVE1_READING_LOG_AND_CHAPTER_REVIEWS.md",
+        "строка": 304,
+        "срез": "3. Сквозные дефекты серии (нужны единые решения, а не 18 разных)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "EXTENT_OPEN",
+          "HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "4@00_WAVE1_READING_LOG_AND_CHAPTER_REVIEWS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/00_WAVE1_READING_LOG_AND_CHAPTER_REVIEWS.md",
+        "строка": 359,
+        "срез": "4. Что проверено и что осталось непроверенным после этой волны",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "LOCATOR_HOLD",
+          "MEYER_EDITION_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "5@00_WAVE1_READING_LOG_AND_CHAPTER_REVIEWS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/00_WAVE1_READING_LOG_AND_CHAPTER_REVIEWS.md",
+        "строка": 380,
+        "срез": "5. Ограничения этой волны (честно)",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "1@01_HISTORICAL_AND_CONFESSIONAL_VERIFICATION",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/01_HISTORICAL_AND_CONFESSIONAL_VERIFICATION.md",
+        "строка": 11,
+        "срез": "1. Дортский синод, глава II",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "2@01_HISTORICAL_AND_CONFESSIONAL_VERIFICATION",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/01_HISTORICAL_AND_CONFESSIONAL_VERIFICATION.md",
+        "строка": 37,
+        "срез": "2. Вестминстерское исповедание и 1689",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "DOCUMENT_PARTIAL_COLLATION / LOCATOR_HOLD",
+          "LOCATOR_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "3@01_HISTORICAL_AND_CONFESSIONAL_VERIFICATION",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/01_HISTORICAL_AND_CONFESSIONAL_VERIFICATION.md",
+        "строка": 51,
+        "срез": "3. Кальвин",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "4@01_HISTORICAL_AND_CONFESSIONAL_VERIFICATION",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/01_HISTORICAL_AND_CONFESSIONAL_VERIFICATION.md",
+        "строка": 62,
+        "срез": "4. Оуэн",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "5@01_HISTORICAL_AND_CONFESSIONAL_VERIFICATION",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/01_HISTORICAL_AND_CONFESSIONAL_VERIFICATION.md",
+        "строка": 74,
+        "срез": "5. Девенант, Амиро, Бакстер, Калами, Мур, Сперджен",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "BAXTER_SCOPED_PRINT_VERIFIED",
+          "FRENCH_TARGET_READ / FULL_TEXT_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "6@01_HISTORICAL_AND_CONFESSIONAL_VERIFICATION",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/01_HISTORICAL_AND_CONFESSIONAL_VERIFICATION.md",
+        "строка": 91,
+        "срез": "6. Отцы Церкви",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "7@01_HISTORICAL_AND_CONFESSIONAL_VERIFICATION",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/01_HISTORICAL_AND_CONFESSIONAL_VERIFICATION.md",
+        "строка": 111,
+        "срез": "7. Библейские тексты и текстология",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "MEYER_EDITION_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "8@01_HISTORICAL_AND_CONFESSIONAL_VERIFICATION",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/01_HISTORICAL_AND_CONFESSIONAL_VERIFICATION.md",
+        "строка": 130,
+        "срез": "8. Что осталось непроверяемым в этой волне (честный список)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "LOCATOR_HOLD",
+          "MEYER_EDITION_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "9@01_HISTORICAL_AND_CONFESSIONAL_VERIFICATION",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/01_HISTORICAL_AND_CONFESSIONAL_VERIFICATION.md",
+        "строка": 142,
+        "срез": "9. Сводка",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "1@02_PATCH_REGISTER",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/02_PATCH_REGISTER.md",
+        "строка": 11,
+        "срез": "1. Как это проверить и применить",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "2@02_PATCH_REGISTER",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/02_PATCH_REGISTER.md",
+        "строка": 45,
+        "срез": "2. Что именно исправлено и почему",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 3,
+        "токены": [
+          "AGENT_RULES",
+          "AI_TRANSLATION_HOLD",
+          "AUTHOR_FULL_WORK_HOLD",
+          "EVIDENCE_HOLD",
+          "EXTENT_OPEN",
+          "LEXICAL_SCOPE_HOLD",
+          "MEYER_EDITION_HOLD",
+          "PRECEDENT_OF_READING / ORIGINAL_TEXT_HOLD",
+          "TEXTUAL_APPARATUS_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "3@02_PATCH_REGISTER",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/02_PATCH_REGISTER.md",
+        "строка": 108,
+        "срез": "3. Что патч **не** делает (и почему это важно)",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "4@02_PATCH_REGISTER",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/02_PATCH_REGISTER.md",
+        "строка": 118,
+        "срез": "4. Поправки, отклонённые при подготовке",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "1@03_RESEARCH_APPENDIX_STRONGER_COUNTERARGUMENTS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/03_RESEARCH_APPENDIX_STRONGER_COUNTERARGUMENTS.md",
+        "строка": 10,
+        "срез": "1. Зачем это отдельно от патчсета",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "2@03_RESEARCH_APPENDIX_STRONGER_COUNTERARGUMENTS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/03_RESEARCH_APPENDIX_STRONGER_COUNTERARGUMENTS.md",
+        "строка": 18,
+        "срез": "2. Вставка A — глава 8: приобретённая вера как аргумент **против** строгой позиции",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "3@03_RESEARCH_APPENDIX_STRONGER_COUNTERARGUMENTS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/03_RESEARCH_APPENDIX_STRONGER_COUNTERARGUMENTS.md",
+        "строка": 33,
+        "срез": "3. Вставка B — глава 13: возражение о «двойном взыскании» в его сильнейшей форме",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "4@03_RESEARCH_APPENDIX_STRONGER_COUNTERARGUMENTS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/03_RESEARCH_APPENDIX_STRONGER_COUNTERARGUMENTS.md",
+        "строка": 46,
+        "срез": "4. Вставка C — глава 17: чего Дорт **не** говорит, и почему это важнее того, что он говорит",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "5@03_RESEARCH_APPENDIX_STRONGER_COUNTERARGUMENTS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/03_RESEARCH_APPENDIX_STRONGER_COUNTERARGUMENTS.md",
+        "строка": 59,
+        "срез": "5. Вставка D — глава 18: практическое следствие, которое в серии отсутствует",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "6@03_RESEARCH_APPENDIX_STRONGER_COUNTERARGUMENTS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/03_RESEARCH_APPENDIX_STRONGER_COUNTERARGUMENTS.md",
+        "строка": 72,
+        "срез": "6. Межглавные связки: три перехода, которых не хватает",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "7@03_RESEARCH_APPENDIX_STRONGER_COUNTERARGUMENTS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/03_RESEARCH_APPENDIX_STRONGER_COUNTERARGUMENTS.md",
+        "строка": 86,
+        "срез": "7. Чего я намеренно не добавил",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "8@03_RESEARCH_APPENDIX_STRONGER_COUNTERARGUMENTS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/03_RESEARCH_APPENDIX_STRONGER_COUNTERARGUMENTS.md",
+        "строка": 97,
+        "срез": "8. Сводка предлагаемого",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "1@04_SCIENTIFIC_APPENDICES_PLACEMENT",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/04_SCIENTIFIC_APPENDICES_PLACEMENT.md",
+        "строка": 9,
+        "срез": "1. Проблема в цифрах",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "EVIDENCE_HOLD",
+          "RIGHTS_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "2@04_SCIENTIFIC_APPENDICES_PLACEMENT",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/04_SCIENTIFIC_APPENDICES_PLACEMENT.md",
+        "строка": 36,
+        "срез": "2. Предложение: три слоя вместо двух",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "3@04_SCIENTIFIC_APPENDICES_PLACEMENT",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/04_SCIENTIFIC_APPENDICES_PLACEMENT.md",
+        "строка": 60,
+        "срез": "3. Главы, которым нужно не приложение, а разделение",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "4@04_SCIENTIFIC_APPENDICES_PLACEMENT",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/04_SCIENTIFIC_APPENDICES_PLACEMENT.md",
+        "строка": 74,
+        "срез": "4. Шапки `STATUS:` — четыре варианта, один рекомендуемый",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "5@04_SCIENTIFIC_APPENDICES_PLACEMENT",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/04_SCIENTIFIC_APPENDICES_PLACEMENT.md",
+        "строка": 95,
+        "срез": "5. Библейский текст: один раз назвать перевод, один раз — нумерацию",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "6@04_SCIENTIFIC_APPENDICES_PLACEMENT",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/04_SCIENTIFIC_APPENDICES_PLACEMENT.md",
+        "строка": 105,
+        "срез": "6. Что делать с кодами, оставшимися в читательском тексте (37 вхождений)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "AI_TRANSLATION_HOLD",
+          "EVIDENCE_HOLD",
+          "EXTENT_OPEN",
+          "JUDAS_NAMED_REDEMPTION_QUOTE_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "7@04_SCIENTIFIC_APPENDICES_PLACEMENT",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/04_SCIENTIFIC_APPENDICES_PLACEMENT.md",
+        "строка": 119,
+        "срез": "7. Порядок работ, если владелец согласится",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "1@05_READER_FRAGMENTS_FOR_OWNER",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/05_READER_FRAGMENTS_FOR_OWNER.md",
+        "строка": 15,
+        "срез": "1. Глава 8, §8 — возражение в его сильной форме",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "2@05_READER_FRAGMENTS_FOR_OWNER",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/05_READER_FRAGMENTS_FOR_OWNER.md",
+        "строка": 23,
+        "срез": "2. Глава 13, §11 — чего стоит каждый из трёх ответов",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "3@05_READER_FRAGMENTS_FOR_OWNER",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/05_READER_FRAGMENTS_FOR_OWNER.md",
+        "строка": 31,
+        "срез": "3. Глава 17, §4 — чего Дорт не говорит",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "4@05_READER_FRAGMENTS_FOR_OWNER",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/05_READER_FRAGMENTS_FOR_OWNER.md",
+        "строка": 39,
+        "срез": "4. Глава 18, §9 — различение, которое читатель может применить",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "5@05_READER_FRAGMENTS_FOR_OWNER",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/05_READER_FRAGMENTS_FOR_OWNER.md",
+        "строка": 47,
+        "срез": "5. Три межглавные связки",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "6@05_READER_FRAGMENTS_FOR_OWNER",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/05_READER_FRAGMENTS_FOR_OWNER.md",
+        "строка": 63,
+        "срез": "6. Что владелец получает и чего не получает",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "1@06_SUBMISSION_REPORT",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/06_SUBMISSION_REPORT.md",
+        "строка": 10,
+        "срез": "1. Что сделано, в одном абзаце",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "2@06_SUBMISSION_REPORT",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/06_SUBMISSION_REPORT.md",
+        "строка": 16,
+        "срез": "2. Артефакты",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "3@06_SUBMISSION_REPORT",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/06_SUBMISSION_REPORT.md",
+        "строка": 33,
+        "срез": "3. Что изменено в тексте глав (содержательно, не косметика)",
+        "класс": "ОТКРЫТО",
+        "маркеров": 1,
+        "токены": [
+          "EXTENT_OPEN"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "4@06_SUBMISSION_REPORT",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/06_SUBMISSION_REPORT.md",
+        "строка": 49,
+        "срез": "4. Найденные дефекты (три подтверждённых, один риск)",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "5@06_SUBMISSION_REPORT",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/06_SUBMISSION_REPORT.md",
+        "строка": 60,
+        "срез": "5. Проверка, что ничего не сломано",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "6@06_SUBMISSION_REPORT",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/06_SUBMISSION_REPORT.md",
+        "строка": 81,
+        "срез": "6. Что я сознательно не сделал",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "PUBLICATION_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "7@06_SUBMISSION_REPORT",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/06_SUBMISSION_REPORT.md",
+        "строка": 92,
+        "срез": "7. Оставшиеся ограничения — честный список",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "MEYER_EDITION_HOLD",
+          "REVIEW_DEFERRED"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "8@06_SUBMISSION_REPORT",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/06_SUBMISSION_REPORT.md",
+        "строка": 109,
+        "срез": "8. Как принять работу",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "OWN_TASK_DONE",
+          "PUBLICATION_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
       }
     ],
     "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
     "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check synthesis",
-    "measuredAt": "2026-11-03T22:36:42Z",
-    "checkedAt": "2026-11-03T22:36:42Z",
-    "предыдущийСъём": "2026-11-03T22:33:30Z"
+    "measuredAt": "2026-11-15T17:05:31Z",
+    "checkedAt": "2026-11-15T17:05:31Z",
+    "предыдущийСъём": "2026-11-15T17:04:56Z"
   }
 }
