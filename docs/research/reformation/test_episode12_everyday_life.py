@@ -82,6 +82,32 @@ class EverydayLifeBookTests(unittest.TestCase):
         self.assertIn("TEMPORAL_EXTRAPOLATION_HOLD", claims)
         self.assertIn("PUBLICATION_HOLD", manuscript)
 
+    def test_final_chapter_crosschecks_nantes_printing_and_public_welfare(self):
+        """A legal right is not proven local implementation or universal freedom."""
+        reader, apparatus = CH.read_text(encoding="utf-8").split(
+            "## Источниковедческий аппарат", 1
+        )
+        legal = reader.split("## Право на совесть зависело от места и сословия", 1)[1].split(
+            "## Миграция была человеческой ценой конфессионализации", 1
+        )[0]
+        for term in (
+            "зарегистрированной парижской редакции Нантского эдикта 1599 года",
+            "статья XXI", "статья XXII", "печать и продажу",
+            "университеты, коллегии и школы", "больницы",
+            "не доказывает", "Варшавская конфедерация", "Торде",
+        ):
+            with self.subTest(term=term):
+                self.assertIn(term.lower(), legal.lower())
+        self.assertNotIn("REF-P27", reader)
+        self.assertEqual(reader.count("## "), 10)
+        for term in ("REF-P27", "L593–609", "L610–617", "015v",
+                     "PARTIAL_OBJECT", "LOCAL_EXECUTION_HOLD",
+                     "ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"):
+            with self.subTest(evidence=term):
+                self.assertIn(term, apparatus)
+        self.assertIn("30 января 1429 года", reader)
+        self.assertIn("epilogue_reformation_last_restoration_manuscript.md", reader)
+
     def test_book_navigation_false_claims_and_scots_legacy_fix(self):
         for path in ("README.md","SELF_PLAN.md","04_series_blueprint.md"):
             self.assertIn(CH.name,(D/path).read_text(encoding="utf-8"))
