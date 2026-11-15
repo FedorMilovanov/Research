@@ -44,9 +44,17 @@ A later Wayback rerun that receives 503 is transport failure and does not erase 
 
 ### Q005 — Georgia legal dissolution status
 
-**State:** `CLOSED AS OF 2026-09-08 / VERIFIED_PRIMARY`.
+**State:** `NAME_CHANGE_VERIFIED_PRIMARY (effective 2026-10-28) / NO_DISSOLUTION_FILING_IN_HISTORY_AS_OF_2026-11-15 / CURRENT_STATUS_FIELD_AND_FILING_BODIES_ACCESS_HOLD / TIME_SENSITIVE`.
 
-Georgia Secretary of State current search listed `G3 Ministries for the Church, Inc.` as `Active/Compliance` on the dated acquisition. Operational wind-down is not formal corporate dissolution. A later filing can reopen this time-sensitive answer.
+Georgia Secretary of State current search listed `G3 Ministries for the Church, Inc.` as `Active/Compliance` on the dated Sep. 8 acquisition. Operational wind-down is not formal corporate dissolution. A later filing can reopen this time-sensitive answer.
+
+**Reopened and updated 2026-11-15 by a later Georgia filing.** The official filing history and name change history for the same record show three filings after the Sep. 8 cutoff: a name amendment (`32257311`, effective 10/28/2026) changing `G3 Ministries for the Church, Inc.` to `Lumena Ministries, Inc.`, and two Amended Annual Registrations (`32260917`, 10/30/2026; `32269080`, 11/5/2026). No dissolution-type filing appears in the eight-row history on that date. The entity was renamed, not dissolved.
+
+Not acquired: the current status field, registered agent and officers on the official detail page, and the bodies of the three new filings. The Sep. 8 `Active/Compliance` reading therefore remains the last official reading of the status field itself; a third-party renderer showing `Active/Compliance` after Oct. 30 is a lead only.
+
+Canonical control: `Q005_Q006_GEORGIA_FILING_DELTA_2026-11-15.md`.
+
+**New evidence required:** official detail page for control no. `19085916`, a filing document body, or a later filing on the record.
 
 ### Q006 — G3+, G3 Press, subscriber relationships and successor
 
@@ -68,7 +76,16 @@ Therefore:
 
 FY2025 raw IRS evidence separately verifies that Living Heritage Homeschool was separated from G3 during 2025. Later service bundling does not establish `Living Heritage = 2026 successor`. Treefort/platform evidence likewise does not establish `Treefort = successor`.
 
-**New evidence required:** final-transition follow-up email, recipient ministry announcement, G3 board/corporate notice, agreement/assignment/closing statement, post-transfer legal-provider record or equivalent.
+**Dated re-check 2026-11-15 — `EXTERNAL_DOCUMENT_HOLD RETAINED`.** No primary object establishes a completed closing, a named transferee or transaction terms. Two new objects are recorded as context; neither lifts the hold:
+
+- G3's own root notice (`G3-S142`) states that `G3 Plus and G3 Press are continuing in a new form, under new leadership` with details to follow `once the transition is complete`. Press inclusion in the announced transition is now a **first-party representation**, no longer recipient-secondary only. Transaction scope in the legal sense — assets, rights, inventory, consideration, liabilities — is still unproved.
+- The Georgia registry shows the G3 corporation itself renamed `Lumena Ministries, Inc.` effective 10/28/2026 (`G3-S001`). `Lumena Ministries, Inc. = renamed G3 corporate entity` is **VERIFIED_PRIMARY**. `Lumena Ministries, Inc. = acquirer/owner/operator of G3+ or G3 Press` is **UNVERIFIED** and blocked.
+
+The Aug. 27 wording (`acquired by another ministry`), the site wording (`a new form, under new leadership`) and the registry rename are not reconciled by any acquired document. Apple seller/developer identity, the G3+ Terms of Service (last updated April 03, 2025) and the G3 Press storefront were unchanged on Nov. 15.
+
+Canonical control: `Q005_Q006_GEORGIA_FILING_DELTA_2026-11-15.md`.
+
+**New evidence required:** final-transition follow-up email, recipient ministry announcement, G3 board/corporate notice, agreement/assignment/closing statement, post-transfer legal-provider record or equivalent; or a public surface connecting the name `Lumena Ministries` to G3 Plus or G3 Press.
 
 ### Q006A — donated FY2022 real estate / FY2023 sale / receivable
 
