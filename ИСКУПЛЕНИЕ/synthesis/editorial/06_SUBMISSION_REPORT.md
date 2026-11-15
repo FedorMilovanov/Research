@@ -1,8 +1,8 @@
-# AGENT‑7 — сдача: редактура серии «Искупление» (волна I завершена, волны II–X спланированы)
+# AGENT‑7 — сдача: редактура серии «Искупление» (волны I–II закрыты, III–X спланированы)
 
 **Дата:** 2026-11-15
 **Ветка:** `arena/e7839688-research` (от `573f1a6` main)
-**Статус:** `OWN_TASK_DONE` по волне I; `PUBLICATION_HOLD` держится; Product/merge не запрашивались
+**Статус:** `OWN_TASK_DONE` по волнам I–II; `PUBLICATION_HOLD` держится; Product/merge не запрашивались
 **Исходный объект:** PR #309, HEAD `2392be62`, 18 читательских глав в `ИСКУПЛЕНИЕ/synthesis/drafts/article01…18`
 
 ---
@@ -23,9 +23,10 @@
 | [`03_RESEARCH_APPENDIX_STRONGER_COUNTERARGUMENTS.md`](03_RESEARCH_APPENDIX_STRONGER_COUNTERARGUMENTS.md) | Сильные контраргументы для гл. 8, 13, 17, 18 + межглавные связки; чего намеренно не добавлено | предложение |
 | [`04_SCIENTIFIC_APPENDICES_PLACEMENT.md`](04_SCIENTIFIC_APPENDICES_PLACEMENT.md) | Приложения: измерение объёма, четыре жанра под одним заголовком, три слоя, шапки `STATUS:`, перевод Писания | предложение |
 | [`05_READER_FRAGMENTS_FOR_OWNER.md`](05_READER_FRAGMENTS_FOR_OWNER.md) | Пять готовых фрагментов и три связки — чистый читательский текст с точками вставки | предложение |
-| [`patches/patches.json`](patches/patches.json) | 45 поправок машиночитаемо (`id/file/before/after/why/kind`), `base=2392be62` | готово |
+| [`patches/patches.json`](patches/patches.json) | 56 поправок машиночитаемо (`id/file/before/after/why/kind`), `base=2392be62` | готово |
 | [`patches/run_patches.py`](patches/run_patches.py) | Применитель: `--check` / `--apply` / `--verify --root` | готово |
-| [`patches/AGENT7_PR309_EDITORIAL.patch`](patches/AGENT7_PR309_EDITORIAL.patch) | `git diff` только по 18 главам (18 файлов, 42/42) | готово |
+| [`patches/AGENT7_PR309_EDITORIAL.patch`](patches/AGENT7_PR309_EDITORIAL.patch) | `git diff` только по 18 главам (18 файлов, 56/48) | готово |
+| [`07_WAVE2_CHAPTERS_1_3.md`](07_WAVE2_CHAPTERS_1_3.md) | Волна II: журнал по главам 1–3, ошибки, пойманные до сдачи | готово |
 | [`patches/AGENT7_PR309_EDITORIAL_FULL.patch`](patches/AGENT7_PR309_EDITORIAL_FULL.patch) | Полный диф со счётчиками (21 файл, 144/206) — воспроизведение один-в-один | готово |
 
 ---
@@ -111,7 +112,7 @@
 ```bash
 git fetch origin research/atonement-series-audit-20261104
 git worktree add --detach /tmp/pr309 FETCH_HEAD
-python3 ИСКУПЛЕНИЕ/synthesis/editorial/patches/run_patches.py --check --root /tmp/pr309   # 45/45
+python3 ИСКУПЛЕНИЕ/synthesis/editorial/patches/run_patches.py --check --root /tmp/pr309   # 56/56
 python3 ИСКУПЛЕНИЕ/synthesis/editorial/patches/run_patches.py --apply --root /tmp/pr309
 cd /tmp/pr309 && python3 -B scripts/atonement_claim_register.py --write synthesis \
   && python3 -B scripts/atonement_reshoot_state.py --write \

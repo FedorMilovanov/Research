@@ -10,6 +10,13 @@ Read-only against the repository: the caller points it at a checkout. Each patch
     python3 run_patches.py --check  --root <worktree>   # dry run, prints plan
     python3 run_patches.py --apply  --root <worktree>   # applies in place
     python3 run_patches.py --verify --root <worktree>   # AFTER must be present
+
+Order matters.  Some patches build on the result of an earlier one (their BEFORE
+contains the earlier patch's AFTER).  --check therefore does not test every patch
+against the untouched tree: it simulates the run in manifest order on an in-memory
+copy.  A patch whose BEFORE is absent from the untouched tree but present after the
+simulated predecessors is reported as "OK (после <id>)"; if such a dependency is
+declared but the predecessor did not fire, that is an error, not a pass.
 """
 from __future__ import annotations
 
@@ -43,12 +50,17 @@ def main() -> int:
     patches = load()
     fail: list[str] = []
     done = 0
+    # --check обязан проверять то, что произойдёт на деле: патчи выполняются по
+    # порядку манифеста, и поздний может опираться на результат раннего. Держим
+    # теневое состояние в памяти и не пишем на диск (прогон остаётся read-only).
+    shadow: dict[str, str] = {}
+    touched_ok: set[str] = set()
     for p in patches:
         f = target(root, p["file"])
         if not f.exists():
             fail.append(f'{p["id"]}: нет файла {p["file"]}')
             continue
-        text = f.read_text(encoding="utf-8")
+        text = shadow.get(p["file"]) or f.read_text(encoding="utf-8")
         before, after = p["before"], p["after"]
         n_before, n_after = text.count(before), text.count(after)
         if a.verify:
@@ -68,7 +80,11 @@ def main() -> int:
             fail.append(f'{p["id"]}: BEFORE == AFTER')
             continue
         if a.check:
-            print(f'{p["id"]:>6}  OK  {p["why"][:78]}')
+            on_disk = f.read_text(encoding="utf-8").count(before) == 1
+            note = "OK" if on_disk else "OK (после " + ", ".join(sorted(touched_ok)) + ")"
+            shadow[p["file"]] = text.replace(before, after, 1)
+            touched_ok.add(p["id"])
+            print(f'{p["id"]:>6}  {note}  {p["why"][:78]}')
         else:
             f.write_text(text.replace(before, after, 1), encoding="utf-8")
             print(f'{p["id"]:>6}  применён  {p["file"]}')
