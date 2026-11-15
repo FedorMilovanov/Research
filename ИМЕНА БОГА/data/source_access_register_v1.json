@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 130,
+    "sourceRecords": 131,
     "approvedForProduct": 0
   },
   "records": [
@@ -5109,6 +5109,44 @@
         "independentGlyphCollationDone": false,
         "imageReusePermissionGranted": false,
         "fullBhsGottingenLociCollated": false
+      }
+    },
+    {
+      "id": "SRC-NETS-PERKINS-EXODUS-2009-GOTTINGEN-TRANSLATION",
+      "title": "Larry J. Perkins, Exodus, A New English Translation of the Septuagint (NETS), translated English text with To the Reader, print pp. 43–82 (2009 PDF), target pp. 46, 53, 55, 64",
+      "creator": "Larry J. Perkins",
+      "year": 2009,
+      "url": "https://ccat.sas.upenn.edu/nets/edition/02-exod-nets.pdf",
+      "sourceRole": "NETS_PERKINS_EXODUS_TRANSLATION_INTRO_FOLLOWS_WEVERS1991_EDITED_GREEK_NO_ORIGINAL_APPARATUS_OR_MANUSCRIPT",
+      "evidenceClass": "B1",
+      "objectType": "PUBLISHED_SECONDARY_ENGLISH_TRANSLATION_OF_EDITED_LXX_AND_TRANSLATOR_INTRODUCTION",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "locator": "Original attached English NETS Exodus PDF (40 pages): pdf p1/print p43 (Wevers Göttingen Exodus 1991 edited Greek edition cited); pdf p4/print p46 (Divine Name and General Term for Deity); pdf p11/print p53 (Ex3:12–15); pdf p13/print p55 (Ex6:2–3); pdf p22/print p64 (Ex17:15–16 plus note a Or My Lord is a refuge).",
+      "sourceObjectState": "Original user-supplied 40-page publisher NETS Exodus PDF directly inspected on exact target pages, including print p46 and p64 visual image. Perkins explicitly bases translation on Wevers edited Greek Exodus (1991), generally differing only in punctuation. English NETS text and translator introduction, NOT Wevers 1991 Göttingen critical App I sigla/variants, NOT Wevers original original-language edition, NOT original BHS apparatus, NOT an ancient manuscript autopsy or independent physical Greek text witness. Page 46 qere/ketiv is Perkins's analytical framing, not independent proof of the history of qere practice when Greek Exodus originated.",
+      "supportedUse": "Source-attributed English NETS reading Ex3:12 promise I will be with you and 3:14 The One Who Is; Ex6:3 being their God for Hebrew בְּאֵל שַׁדָּי; Ex17:15 The Lord is my refuge with footnote Or My Lord is a refuge, Ex17:16 by a secret hand; discussion of κύριος/θεός as Perkins's Greek-to-Hebrew translation profile, not scientific manuscript claim.",
+      "forbiddenUse": "Certify direct reading of Göttingen 1991 original Greek Apparatus I or II, claim manuscript sigla variants, use English NETS as independent physical LXX codex, assert reconstructed MT Vorlage or ancient qere chronology solely from Perkins, republish copyrighted NETS without permission, grant Product publication or source rights.",
+      "netsPdfAudit20261116": {
+        "originalPdfPages": 40,
+        "translatedBy": "Larry J. Perkins",
+        "gottIngenSource": "Wevers Göttingen Exodus (1991) edited main Greek text, not Apparatus I",
+        "introPrintedPage": 46,
+        "exodus3PdfPage": 11,
+        "exodus6PdfPage": 13,
+        "exodus17PdfPage": 22,
+        "exodus17FootnoteAlternate": true,
+        "sourceIndependentAncientManuscriptCollation": false,
+        "gottIngen1991CriticalApparatusRead": false,
+        "bhsCriticalApparatusRead": false,
+        "publisherReusePermissionGranted": false
       }
     },
     {
