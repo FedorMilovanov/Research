@@ -5,9 +5,10 @@
 **Series:** `TEEN_DOUBLE_LIFE` / daughter-father-marriage companion  
 **Purpose:** record what the latest targeted archival pass actually searched, what was located, and why the remaining HOLDs remain evidence-honest rather than merely unfinished.
 
-Read with `199–201`, `208`, `218`, `231`, `237`.
+**Later status note (2026-11-15, appended; the dated record below is otherwise left as written):** the §5 Stennett HOLD has since been **closed by direct primary-page inspection** — 1783 London first edition, printed p. 162, `VERIFIED_PRIMARY`. See §5 (updated in place) and the verification card in `218`, §4.1.
 
 ---
+
 
 ## 1. Executive verdict
 
@@ -23,7 +24,7 @@ They do not mean:
 
 > `there is no Baptist evidence for parental involvement/consent`.
 
-Gill already supplies direct Particular Baptist parental/guardian-consent evidence; Stennett supplies a second eighteenth-century Baptist witness through an exact primary locator in the scholarly source chain.
+Gill already supplies direct Particular Baptist parental/guardian-consent evidence; Stennett supplies a second eighteenth-century Baptist witness, now verified directly on the 1783 page (see §5).
 
 They now mean:
 
@@ -176,7 +177,7 @@ Both outrun the located evidence.
 
 ---
 
-# 5. Samuel Stennett — status remains deliberately unchanged
+# 5. Samuel Stennett — upgraded to `VERIFIED_PRIMARY` on direct page inspection (2026-11-15)
 
 Primary work confirmed bibliographically:
 
@@ -185,20 +186,31 @@ Primary work confirmed bibliographically:
 - British Library original / ECCO reproduction surfaced via Folger;
 - later reprints/Works editions also surfaced.
 
-Existing `218` evidence:
+**This pass closed the HOLD directly.** The 1783 London first edition was inspected page by page in the HathiTrust full-view copy of the University of California volume (`https://hdl.handle.net/2027/uc2.ark:/13960/t8nc5v03c`):
 
-- Matthew D. Haste supplies exact primary locator for Stennett's discussion;
-- Stennett advises the `concurrence of parents and friends`;
-- the discussion occurs in connection with persons at/around the age treated as `sui juris`;
-- Stennett does not endorse arranged marriage.
+- the `concurrence of parents and friends` paragraph stands on printed **p. 162** (scan seq 178), **not** on p. 127;
+- the `sui juris` rule it qualifies stands on printed **p. 161** (scan seq 177);
+- printed pp. 126–127 (scan seq 142–143) are the *family worship* discourse and contain nothing about marriage.
 
-The current search did **not** expose a directly readable searchable primary page containing the exact phrase.
+Haste's `p. 127` is not the 1783 first edition. It matches the **Edinburgh 1800 reprint** (HathiTrust `ia.ark:/13960/t6h140z7w`, printed p. 127, scan seq 121), where the same paragraph was inspected directly. Haste's `Works` reference is likewise mis-stated: *Domestic Duties* is in **vol. 2, p. 81** of the 1824 Tegg *Works* (HathiTrust `ia.ark:/13960/t5q81sw00`, seq 95). Vol. 3 does not contain the treatise at all — its contents list (HathiTrust `ia.ark:/13960/t81j9wm40`, seq 11–12) runs the Scripture discourses (pp. 1–146) and then the occasional sermons from Gill's funeral sermon at p. 147 to Burford's at p. 339, the ordination sermon at p. 369, the fast sermon at p. 437, then *A Trip to Holyhead* at p. 461 and the hymns at pp. 531–555. Since a volume number can be wrong without looking wrong, Haste's volume numbers cannot be copied unchecked. **Correction of our own earlier claim:** we had written that Haste's endnote 71 (`Works, 3:175`) proves a pattern of error. It does not — that citation is **correct**, p. 175 falling inside the Gill funeral sermon that begins at p. 147. The `vol. 3` slip is isolated to the *Domestic Duties* citation, and our earlier inference should not be repeated.
 
-Therefore retain:
+Textual correspondence across 1783 → 1800 → 1824 is word-for-word apart from stop-punctuation and long-s/spelling modernisation. No doctrinal drift between editions.
 
-`STENNETT_PARENT_FRIEND_CONCURRENCE = LOCATED_SECONDARY_WITH_EXACT_PRIMARY_LOCATOR`.
+**Normative force now determined from the primary text, not from Haste.** Stennett places parental/friend concurrence under `a religious regard` owed within the fifth commandment, but grades parental authority by age in the same book: `absolute and unlimited obedience` only in earliest life; at mature age children may `be justified in disobeying` commands `directly opposed to the clear dictates of their own reason and judgment`, while owing respectful counsel-listening and, `in cases of a doubtful nature`, a `wisdom and duty` to `yield` (printed pp. 269, 276). It is therefore a **graded, conscience-bounded filial duty of consultation and regard**, not a legal condition of a valid marriage and not an absolute paternal veto.
 
-Do not silently upgrade to `VERIFIED_PRIMARY_TRANSCRIPTION` until the actual Stennett page is directly inspected.
+**Addressee.** `Virtuous and considerate young people` forming the connection at the age when a person `by the general consent of mankind, is deemed sui juris, or at his own disposal` — i.e. competent young adults at betrothal, not minors, and not a rule limited to courtship (`in all affairs, but especially in these matters`).
+
+The full verification card, with the verified quotation, the concordant locators and the permissible/impermissible formulations, is in `218`, §4.1.
+
+Therefore this status line is superseded:
+
+`STENNETT_PARENT_FRIEND_CONCURRENCE = LOCATED_SECONDARY_WITH_EXACT_PRIMARY_LOCATOR` (retained only as the historical pre-2026-11-15 state)
+
+and is replaced by:
+
+`STENNETT_PARENT_FRIEND_CONCURRENCE = VERIFIED_PRIMARY` (1783, p. 162; concordant 1800 p. 127 and *Works* 1824 vol. 2 p. 81).
+
+The upgrade licenses direct transcription of the primary text. It does **not** license `Stennett required a father's permission for a valid marriage` or `Stennett gave parents an absolute veto over a competent adult child's choice`.
 
 ---
 
@@ -302,7 +314,7 @@ But add positive located statements:
 - `GILL_PARENTAL_GUARDIAN_CONSENT = VERIFIED_PRIMARY`;
 - `GILL_PERSONAL_VOLUNTARY_CONSENT = VERIFIED_PRIMARY`;
 - `GILL_PARENTAL_POWER_LESS_WHEN_GROWN = VERIFIED_PRIMARY`;
-- `STENNETT_PARENT_FRIEND_CONCURRENCE = LOCATED_SECONDARY_WITH_EXACT_PRIMARY_LOCATOR`;
+- `STENNETT_PARENT_FRIEND_CONCURRENCE = VERIFIED_PRIMARY` (1783, p. 162; directly inspected 2026-11-15 — see §5 and `218` §4.1);
 - `RUSSIAN_ECB_PERSONAL_VOLUNTARY_MARITAL_DESIRE = LOCATED_PRIMARY_DENOMINATIONAL`;
 - `RUSSIAN_ECB_FILIAL_HONOUR_RELEVANT_TO_MARRIAGE_DISCERNMENT = LOCATED_PRIMARY_DENOMINATIONAL`;
 - `RUSSIAN_ECB_STRONG_FAMILY_ORDER = LOCATED_PRIMARY_DENOMINATIONAL`.
@@ -346,7 +358,7 @@ Priority order:
 1. direct full-text/transcription search of Renihan's collected 1689–1694 Assembly documents;
 2. direct inspection/search of Angus 1690 Narrative scan and 1691 full text;
 3. broader Keach EEBO corpus targeted with spelling variants for `marry/marriage/parents/consent/daughter/children`;
-4. direct Stennett 1783 p. 127 primary-page inspection;
+4. ~~direct Stennett 1783 p. 127 primary-page inspection~~ — **closed 2026-11-15**; the passage is 1783 p. 162 (`VERIFIED_PRIMARY`), see §5;
 5. full-text `mscexb.ru` historical `Баптист` / related evangelical periodical search with:
    - `брак`;
    - `бракосочетание`;
