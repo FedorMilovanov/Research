@@ -4,6 +4,8 @@
 **Corpus:** `LAWSON-2024-2026` + canonical biography closure + active external acquisitions  
 **Status:** `V6 CANONICAL / NOV-2026 REPORTED-ELDERS-LETTER MATERIAL EVIDENCE DELTA / ORIGINAL AUTHENTICITY HOLD / FOUR HOLDER RESPONSES RECORDED`
 
+**15-Nov direct-source handoff:** `87_` §12 now reconciles the primary **PCA Case 2016-15** Bachmann appeal (not an acquittal of charge B), the **11-Nov Justin Hoke report attributing six months of personal counseling meetings to named Terry Warren** (B1 carrier, original message not obtained), and the **official SVC officers roster** (Warren's current Reserve Elder status). Existing `24_` already documents the Beverly/Terry Warren couple via a 2020 church bulletin; do not count that as newly discovered or as proof of 2025 signatories. This is a post-V6 research supplement with explicit HOLDs, not a V7 rewrite, Product merge or live release.
+
 ## Important new evidence — 11–13 Nov 2026 (read before V6 publication decisions)
 
 **A new, issue-specific primary-object acquisition trigger exists.** On 11 November 2026 Protestia published a transcription of a purported 25 November 2025 Stephens Valley Church elders' recommendation. The text asserts Lawson was a **member in good standing**, describes **15 months of observation**, calls him **genuinely repentant**, and deems him **spiritually fit for potential ministry opportunities**. Other outlets independently reported journalistic inquiries and reactions, **not independent examination of the signed original**.
