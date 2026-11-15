@@ -1,6 +1,6 @@
 # OPEN_HOLDS — открытые HOLD-ы реестров SUNO_HYMNS
 
-Файл собран скриптом `scripts/render_hold_ledger.py` из `data/source-registry-v1.json` и `data/claim-ledger-v1.json`; сборка от 2026-10-28. **Вручную не править** — при изменении реестров пересобрать: `python3 scripts/render_hold_ledger.py`.
+Файл собран скриптом `scripts/render_hold_ledger.py` из `data/source-registry-v1.json` и `data/claim-ledger-v1.json`; сборка от 2026-11-15. **Вручную не править** — при изменении реестров пересобрать: `python3 scripts/render_hold_ledger.py`.
 
 Смысл сводки: HOLD — это обещание, которое ещё не исполнено. Список ниже — перечень того, что в текстах рубрики **нельзя** выдавать за проверенное.
 
@@ -15,10 +15,10 @@
 
 | Вид | У источников | У тезисов |
 |---|---|---|
-| `ARCHIVE_HOLD` | 16 | 29 |
-| `LOCATOR_HOLD` | 26 | 14 |
-| `EVIDENCE_HOLD` | 3 | 11 |
-| `RIGHTS_HOLD` | 124 | 43 |
+| `ARCHIVE_HOLD` | 17 | 29 |
+| `LOCATOR_HOLD` | 31 | 15 |
+| `EVIDENCE_HOLD` | 4 | 11 |
+| `RIGHTS_HOLD` | 133 | 43 |
 
 `RIGHTS_HOLD` стоит почти на всём: это общая оговорка о правах, а не конкретная дыра. Отдельного внимания требуют три остальных вида.
 
@@ -32,12 +32,10 @@
   доступ: `LINK_ONLY`, локатор: `LOCATOR_MISSING`, права: `RIGHTS_UNKNOWN`
 - `SRC-NL-LIEDERENBANK` — Nederlandse Liederenbank (Meertens Instituut / KNAW) — Dutch Song Database  
   доступ: `NOT_ACQUIRED`, локатор: `LOCATOR_MISSING`, права: `RIGHTS_UNKNOWN`
-- `SRC-NL-LIEDERENBANK-9086` — Nederlandse Liederenbank record 9086 — Heerlijckheyds Loff (offline 2026-10-26)  
-  доступ: `CATALOG_ONLY`, локатор: `EXACT_LOCATOR_VERIFIED`, права: `RIGHTS_UNKNOWN`  
-  2026-11-15: база доступна, карточка открыта и списана (`SOURCE_LIBRARY/SOURCE_URL_RESOLUTION_BATCH_2026-11-15.md` §3.6) — удержание держит неизвлечённое изображение с. 155 (scan 171), а больше не недоступность ссылки
+- `SRC-NL-LIEDERENBANK-9086` — Nederlandse Liederenbank record 9086 — Heerlijckheyds Loff (offline 2026-10-26; catalogue accessible 2026-11-15)  
+  доступ: `CATALOG_ONLY`, локатор: `EXACT_LOCATOR_VERIFIED`, права: `RIGHTS_UNKNOWN`
 - `SRC-NL-LIEDERENBANK-INDEX` — Nederlandse Liederenbank — records surfaced through search indexing while the site is offline  
-  доступ: `LINK_ONLY`, локатор: `LOCATOR_MISSING`, права: `RIGHTS_UNKNOWN`  
-  2026-11-15: сайт доступен; извлечение из индекса остаётся классом C (только находка), но ряд записей теперь сверяется по открытой карточке
+  доступ: `LINK_ONLY`, локатор: `LOCATOR_MISSING`, права: `RIGHTS_UNKNOWN`
 - `SRC-PHOS-CLEM-COSGROVE` — Charles H. Cosgrove, «Clement of Alexandria and Early Christian Music», Journal of Early Christian Studies 14/3 (2006): 255–282  
   доступ: `NOT_ACQUIRED`, локатор: `COARSE_LOCATOR_ONLY`, права: `RIGHTS_UNKNOWN`
 - `SRC-PHOS-CLEM-HYMNARC` — Hymnology Archive (Chris Fenner), страница о гимне «Στόμιον πώλων ἀδαῶν» — рукописи, издания, переводы, оценки  
@@ -58,6 +56,8 @@
   доступ: `PARTIAL_OBJECT`, локатор: `COARSE_LOCATOR_ONLY`, права: `RIGHTS_UNKNOWN`
 - `SRC-PHOS-TEDEUM-TEXT` — Латинский текст Te Deum по римской официальной редакции (Liber Usualis) и древнейший список — Бангорский антифонарий  
   доступ: `PARTIAL_OBJECT`, локатор: `COARSE_LOCATOR_ONLY`, права: `RIGHTS_UNKNOWN`
+- `SRC-PHOS-VRG-FONTAINE` — Жак Фонтен, «Ambroise de Milan: Hymnes» (Paris: Les Éditions du Cerf, 1992), с. 266–275  
+  доступ: `CATALOG_ONLY`, локатор: `EXACT_LOCATOR_VERIFIED`, права: `PERMISSION_REQUIRED`
 - `SRC-PSALMENGEZ-1938-75` — Psalmen en Gezangen (Hervormde Bundel 1938), Gezang 75, p. 501, nr. 239  
   доступ: `CATALOG_ONLY`, локатор: `EXACT_LOCATOR_VERIFIED`, права: `RIGHTS_UNKNOWN`
 
@@ -176,6 +176,16 @@
   доступ: `PARTIAL_OBJECT`, локатор: `COARSE_LOCATOR_ONLY`, права: `RIGHTS_UNKNOWN`
 - `SRC-PHOS-TEDEUM-TEXT` — Латинский текст Te Deum по римской официальной редакции (Liber Usualis) и древнейший список — Бангорский антифонарий  
   доступ: `PARTIAL_OBJECT`, локатор: `COARSE_LOCATOR_ONLY`, права: `RIGHTS_UNKNOWN`
+- `SRC-PHOS-VRG-B3` — Universitätsbibliothek Düsseldorf, MS B-3, л. 269r, ок. 810–829 — древнейший список семистрофной формы  
+  доступ: `CATALOG_ONLY`, локатор: `EXACT_LOCATOR_VERIFIED`, права: `RIGHTS_UNKNOWN`
+- `SRC-PHOS-VRG-BNF12044` — BnF, Paris, Latin 12044, л. 7v, XII в. — мелодический инципит  
+  доступ: `CATALOG_ONLY`, локатор: `EXACT_LOCATOR_VERIFIED`, права: `RIGHTS_UNKNOWN`
+- `SRC-PHOS-VRG-BNF15181` — BnF, Paris, Latin 15181, л. 157r, ок. 1300 — полная мелодия, бревиарий Нотр-Дам  
+  доступ: `CATALOG_ONLY`, локатор: `EXACT_LOCATOR_VERIFIED`, права: `RIGHTS_UNKNOWN`
+- `SRC-PHOS-VRG-EINS121` — Stiftsbibliothek Einsiedeln, Codex 121, ок. 1120 — древнейшее свидетельство напева  
+  доступ: `CATALOG_ONLY`, локатор: `EXACT_LOCATOR_VERIFIED`, права: `RIGHTS_UNKNOWN`
+- `SRC-PHOS-VRG-VATREG11` — Biblioteca Apostolica Vaticana, Reg. lat. 11, л. 233r — древнейший список гимна, 2-я половина VIII в.  
+  доступ: `CATALOG_ONLY`, локатор: `EXACT_LOCATOR_VERIFIED`, права: `RIGHTS_UNKNOWN`
 - `SRC-R-OVER-YSSEL-1630-WORK` — Over-Ysselsche sangen en dichten — 1630 edition as underlying work  
   доступ: `NOT_ACQUIRED`, локатор: `LOCATOR_MISSING`, права: `RIGHTS_UNKNOWN`
 
@@ -207,6 +217,8 @@
   статус: `SUPPORTED_WITH_SCOPE_LIMITS`
 - `CLM-PHOS-OXY-SETTING-HYPOTHESES` — Где пелся Оксиринхский гимн: евхаристия (Вольбергс), агапа и солист (Уршпрунг) — три гипотезы, ни одна не доказана  
   статус: `REPORTED_NOT_INDEPENDENTLY_VERIFIED`
+- `CLM-PHOS-VRG-SEVEN-STANZAS` — Семистрофная форма — выбор самой рукописной традиции, а не правка проекта  
+  статус: `SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION`
 - `CLM-REVIUS-1630` — Hy droech onse smerten: first publication and genre  
   статус: `SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION`
 
@@ -218,6 +230,8 @@
   доступ: `NOT_ACQUIRED`, локатор: `LOCATOR_MISSING`, права: `RIGHTS_UNKNOWN`
 - `SRC-MEDITATIEN-1674` — Meditatien over eenige van 's Heeren Gods Eygenschappen (1674)  
   доступ: `NOT_ACQUIRED`, локатор: `LOCATOR_MISSING`, права: `RIGHTS_UNKNOWN`
+- `SRC-PHOS-VRG-AUG372` — Проповедь 372 «На Рождество Господне», приписываемая Августину, — цитата шестой строфы с именем Амвросия  
+  доступ: `PARTIAL_OBJECT`, локатор: `EXACT_LOCATOR_VERIFIED`, права: `RIGHTS_UNKNOWN`
 - `SRC-R-OVER-YSSEL-1630-WORK` — Over-Ysselsche sangen en dichten — 1630 edition as underlying work  
   доступ: `NOT_ACQUIRED`, локатор: `LOCATOR_MISSING`, права: `RIGHTS_UNKNOWN`
 
@@ -276,6 +290,10 @@
   доступ: `PARTIAL_OBJECT`, права: `PERMISSION_REQUIRED`
 - `SRC-PHOS-SHOEMAKER-2008-KOLLYRIDIANS` — Stephen J. Shoemaker, «Epiphanius of Salamis, the Kollyridians, and the Early Dormition Narratives: The Cult of the Virgin in the Fourth Century», Journal of Early Christian Studies 16.3 (2008): 371–401, DOI 10.1353/earl.0.0185 — аннотация прочитана, полный текст за пейволлом  
   доступ: `LINK_ONLY`, права: `PERMISSION_REQUIRED`
+- `SRC-PHOS-VRG-FONTAINE` — Жак Фонтен, «Ambroise de Milan: Hymnes» (Paris: Les Éditions du Cerf, 1992), с. 266–275  
+  доступ: `CATALOG_ONLY`, права: `PERMISSION_REQUIRED`
+- `SRC-PHOS-VRG-GRMS2017` — «Ambrosian Hymns: Evidence for Roman Music of Late Antiquity?», Greek and Roman Musical Studies 5/1 (2017), 104–122  
+  доступ: `PARTIAL_OBJECT`, права: `PERMISSION_REQUIRED`
 - `SRC-R-HY-DROEG` — Hy droech onse smerten — poem page in the W.A.P. Smit edition  
   доступ: `PARTIAL_OBJECT`, права: `PERMISSION_REQUIRED`
 - `SRC-R-OVER-YSSEL-CONTENTS` — Over-Ysselsche sangen en dichten — scholarly edition contents  
