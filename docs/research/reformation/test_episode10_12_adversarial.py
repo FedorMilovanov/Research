@@ -122,6 +122,36 @@ class ReformationAdversarialTenTwelve(unittest.TestCase):
                 self.assertIn(term.lower(), s.lower())
         self.assertIn("не доказывает", s)
 
+    def test_ch10_full_editorial_read_legal_text_print_witness_and_1581_confirmation(self):
+        """Protect statutes vs enforcement, article print history, and Scottish legal stages."""
+        reader, apparatus = self.books[10].split("## Источниковедческий аппарат", 1)
+        self.assertGreater(len(reader.split()), 2400)
+        self.assertEqual(reader.count("## "), 10)
+        for term in (
+            "1534", "1549", "1552", "1559",
+            "церковное взыскание", "12 пенсов", "приходские старосты",
+            "1882 году", "1587 года", "девять человек",
+            "1562-м", "статьи XX", "статью XXIX",
+            "1563 года", "1571 году", "Supreme Head", "Supreme Governor",
+            "17 августа 1560", "декабре 1567", "1581 году",
+            "Библий и псалтырей в домохозяйствах",
+            "перечень ранее принятых", "номер **13 пропущен**",
+            "Первоначальная рукопись Шотландского исповедания",
+            "episode11_france_catholic_reform_nantes_1545_1599_manuscript.md",
+        ):
+            with self.subTest(term=term):
+                self.assertIn(term.lower(), reader.lower())
+        self.assertIsNone(READER_TECHNICAL_LOCATOR_RE.search(reader))
+        for term in (
+            "REF-P93", "REF-P94", "REF-P78", "REF-P25-1581",
+            "NAS PA2/12", "перечень подтверждаемых законов", "HOLD", 
+            "не первичное принятие", "самостоятельное чтение физического",
+            "REGNAL_ASSENT_HOLD", "NUMBERING_HOLD",
+            "ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD",
+        ):
+            with self.subTest(source_limit=term):
+                self.assertIn(term.lower(), apparatus.lower())
+
     def test_nantes_document_layers_and_rights(self):
         s = self.books[11]
         for term in ("95", "92", "93", "56 особых", "два brevets",
