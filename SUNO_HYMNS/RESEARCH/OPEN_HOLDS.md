@@ -32,7 +32,7 @@
   доступ: `LINK_ONLY`, локатор: `LOCATOR_MISSING`, права: `RIGHTS_UNKNOWN`
 - `SRC-NL-LIEDERENBANK` — Nederlandse Liederenbank (Meertens Instituut / KNAW) — Dutch Song Database  
   доступ: `NOT_ACQUIRED`, локатор: `LOCATOR_MISSING`, права: `RIGHTS_UNKNOWN`
-- `SRC-NL-LIEDERENBANK-9086` — Nederlandse Liederenbank record 9086 — Heerlijckheyds Loff (offline 2026-10-26)  
+- `SRC-NL-LIEDERENBANK-9086` — Nederlandse Liederenbank record 9086 — Heerlijckheyds Loff (offline 2026-10-26; catalogue accessible 2026-11-15)  
   доступ: `CATALOG_ONLY`, локатор: `EXACT_LOCATOR_VERIFIED`, права: `RIGHTS_UNKNOWN`
 - `SRC-NL-LIEDERENBANK-INDEX` — Nederlandse Liederenbank — records surfaced through search indexing while the site is offline  
   доступ: `LINK_ONLY`, локатор: `LOCATOR_MISSING`, права: `RIGHTS_UNKNOWN`
