@@ -190,6 +190,34 @@
       "route": "arithmetic on the already-held BOO extract (no new search wave): 372+65+192+256+56+75 then +39+275",
       "verdict": "ACCEPT",
       "locator": "books 1016 + pamphlet entries 314 = 1330 exactly; the 39 and 275 are positions inside 2 and 13 bound volumes, so 'items' mixes lots and convolute entries"
+    },
+    {
+      "id": "V-29",
+      "claim": "The 1680 sale began on a Monday, 4 October (Julian), as the catalogue itself states",
+      "route": "weekday computation against the printed announcement in the OCR text layer of the held C3707 scan",
+      "verdict": "ACCEPT",
+      "locator": "'This Auction will begin on Monday the Fourth day of October, 1680'; Julian 4 Oct 1680 = Gregorian 14 Oct 1680 = Monday"
+    },
+    {
+      "id": "V-30",
+      "claim": "The 1680 event was not Charnock's library alone: the same catalogue announces Thomas Watson's library as an appendix",
+      "route": "front-matter advertisement read from the OCR text layer of the held scan",
+      "verdict": "ACCEPT (announcement only; whether this copy continues into Watson lots is unverified)",
+      "locator": "'By way of Appendix to the Library of Mr. S. Charnock will be exposed to Sale ... the Library of ... Mr. Thomas Watson (late Master of the Charter-House-School in London), Catalogues of which are now Printing'"
+    },
+    {
+      "id": "V-31",
+      "claim": "The catalogue's printed conditions of sale contain no prices, so the £366 5s 1d total cannot derive from this copy",
+      "route": "conditions I-IV read from the OCR text layer; combined with the British Library copy not being marked 'Priced.' in the 1915 list",
+      "verdict": "ACCEPT",
+      "locator": "payment 'over one Month after the Auction is ended'; no price column or price note in the conditions"
+    },
+    {
+      "id": "V-32",
+      "claim": "By 4 October 1680 Charnock's discourses 'Of Providence' were publicly announced as being prepared for the press",
+      "route": "preface 'To the Reader' in the OCR text layer",
+      "verdict": "ACCEPT (a dated announcement, not an imprint)",
+      "locator": "'those Excellent Discourses of his, Of Providence, &c. That are now with all speed preparing for publick view'"
     }
   ],
   "rejectedOrCorrected": [
@@ -543,7 +571,8 @@
         "BCD-04 stays EXCLUDE until the Emmanuel admission book or matriculation register is obtained",
         "Laurence-dependent items (Irish stipend, further Dublin churches) still lack locators",
         "article PR #971 edits are outside this repository",
-        "CS-06: 1330 total and £366 5s 1d remain HOLD (a selective image check cannot prove the total; the sum is Lawler 1898-level secondary and cannot come from the unpriced BL copy)"
+        "CS-06: 1330 total and £366 5s 1d remain HOLD (a selective image check cannot prove the total; the sum is Lawler 1898-level secondary and cannot come from the unpriced BL copy)",
+        "CS-06: whether the Charnock total must exclude the Watson appendix lots is unresolved (the announcement is verified; the lot structure is not)"
       ],
       "publicationState": "BLOCKED",
       "done": [
