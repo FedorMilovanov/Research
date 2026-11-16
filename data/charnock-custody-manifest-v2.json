@@ -131,5 +131,6 @@
   "nextAction": "Загрузка обновлённых файлов манифеста v2 (00, 16, скрипты) на Drive и destination SHA256 readback для каждого; старая квитанция wave40 не переименована.",
   "supersededBy": "data/charnock-handoff-receipt-v2.json",
   "supersededAtUtc": "2026-11-16T09:51:57Z",
-  "supersessionNote": "Wave41 receipt supersedes this snapshot. The fileManifest entries for 00_README/16 predate the burial correction and are NOT current; manifestSha256 is not reproducible by any in-repo generator, so this document is retained as a historical snapshot only."
+  "supersessionNote": "Wave41 receipt supersedes this snapshot, and data/charnock-custody-manifest-v3.json replaces it as the generated custody record (build with scripts/build_charnock_custody_manifest.py, never by hand). The fileManifest entries here for 00_README/16 predate the burial correction and are NOT current; manifestSha256 in this file is not reproducible and is retained only as a historical snapshot.",
+  "supersededByCustodyManifest": "data/charnock-custody-manifest-v3.json"
 }
