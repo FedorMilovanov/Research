@@ -130,17 +130,17 @@
     },
     {
       "id": "V-20",
-      "claim": "wave44 packet receipt: zip uploaded to Google Drive and read back",
+      "claim": "wave45 packet receipt: zip uploaded to Google Drive and read back",
       "route": "google_drive upload_file + independent get_file",
       "verdict": "ACCEPT",
-      "locator": "data/charnock-handoff-receipt-v5.json; object 1F-hsVHNQCNmhrKSc9B2D6eU8WgtOVcNh; zip 6082453 B; sha256 20a06d493aa125ea9a809178041dbd17cc86af70f5ef13f26e82579f197f8988; md5 64e64b64d227dc543f4eee04bbc279c2; manifest sha256 db92572f0641fb217640ea6a76914b9036ea32eab1ab1478baf0013d911be84e"
+      "locator": "data/charnock-handoff-receipt-v6.json; object 1cyt8kgeOfs092NPmPeVp_KnbFbAji23A; zip 6082459 B; sha256 31532abcad88936921954edf8d4f5fd751cd6e085fd9e48b22ce06e4a16a1dc5; md5 0a9473023c031d98b4bd2db0d0f32ac9; manifest sha256 9e27d6f85e05cf8686c5ab2d9ef3bf85ad36ce6207c81bca729d61f07acd5731"
     },
     {
       "id": "V-21",
       "claim": "The wave41 packet manifest and the custody manifest are reproducible from the repository, not hand-maintained",
       "route": "scripts/build_charnock_custody_manifest.py rebuilds both from the receipt and re-hashes members",
       "verdict": "ACCEPT",
-      "locator": "data/charnock-wave44-packet-manifest.json (sha256 db92572f0641fb217640ea6a76914b9036ea32eab1ab1478baf0013d911be84e = receipt sourceManifestSha256); data/charnock-custody-manifest-v6.json (manifestSha256 2d0b3981a667ec0d567bb403043961cbe108e22d443b40612251799bf3a7deb7, 46 members, 19948827 B)"
+      "locator": "data/charnock-wave45-packet-manifest.json (sha256 9e27d6f85e05cf8686c5ab2d9ef3bf85ad36ce6207c81bca729d61f07acd5731 = receipt sourceManifestSha256); data/charnock-custody-manifest-v7.json (manifestSha256 3e429d29593d5603d21ed67cefcdfb3f594351ef87a55ac82a90fde6e089bc36, 46 members, 19949122 B)"
     },
     {
       "id": "V-22",
@@ -151,10 +151,17 @@
     },
     {
       "id": "V-23",
-      "claim": "The 18 reader-facing volumes no longer contain the dropped-space defect (including digit+section, digit+unit and em-dash+section forms), and the repair changed no letters or digits",
+      "claim": "The whole Charnock corpus (18 volumes and both JSON data files) carries no dropped-space defect, and the repair changed no letters or digits",
       "route": "scripts/audit_charnock_text_spacing.py --scope documents; insertion-only repair rule",
       "verdict": "ACCEPT",
-      "locator": "report TEXT_SPACING_DEFECT_2026-11-16.md; detector scoped to documents (13 tests including digit_then_section and digit_then_abbrev) returns TEXT_SPACING_CLEAN with 0 findings; 2511 insertion-only edits across waves 43-44; CI step 'Reader-facing documents keep their restored spacing'"
+      "locator": "scripts/audit_charnock_text_spacing.py --scope all returns TEXT_SPACING_CLEAN with 0 findings and verbatimSnapshotsVerified=2; 2511 document insertions (waves 43-44) plus 975 JSON value insertions with 123 pins re-derived (wave 45); report TEXT_SPACING_DEFECT_2026-11-16.md; CI steps 'Reader-facing documents keep their restored spacing' and 'Whole corpus keeps its restored spacing'"
+    },
+    {
+      "id": "V-24",
+      "claim": "Every one of the 123 derived pins that resolved to a row inside the two JSON files was re-derived, and the row changed by whitespace only",
+      "route": "scripts/repair_charnock_json_prose_spacing.py: canonical bytes of the pinned row compared before and after with all whitespace removed; ~2176 pins resolving to XML paragraphs and external registries were left untouched",
+      "verdict": "ACCEPT",
+      "locator": "repair_charnock_json_prose_spacing.py reports pinsResolvingInternally=123, pinsStale=[], nonWhitespaceDriftVsBase=[] against base revision 63143bb"
     }
   ],
   "rejectedOrCorrected": [
@@ -413,9 +420,9 @@
     },
     {
       "id": "N-9",
-      "finding": "В корпусе системно удалены пробелы между числом и словом, после «;»/«:»/«—», а также внутри форм «число+§» и «число+единица» (TCP/XML/SVG/SHA): было 2853 находки в 20 файлах. Тома 00–17 вычищены в wave43 (2404 вставки) и добиты в wave44 (107 вставок, включая 16§20, 02§10, —§, 79TCP/11XML); в двух JSON остаётся 874 находки.",
+      "finding": "В корпусе системно удалены пробелы между числом и словом, после «;»/«:»/«—», а также внутри форм «число+§» и «число+единица» (TCP/XML/SVG/SHA): было 2853 находки в 20 файлах. Тома 00–17 вычищены в wave43 (2404 вставки) и wave44 (107); два JSON — в wave45 (883 находки / 975 вставок) с пересчётом 123 внутренних пинов и доказательством «только пробелы» по каждому.",
       "use": "Дефект измерен детектором scripts/audit_charnock_text_spacing.py; механическая правка вставила бы 3198 пробелов, но требует регенерации ~2900 производных хешей (1302 = sha256 соседнего текста, 916 кросс-ссылки, 81 составной).",
-      "status": "PARTIALLY_CLOSED — documents fully clean after wave44 (2511 insertions, 0 findings); JSON prose strings remain (derived hash graph not regenerated)"
+      "status": "CLOSED — 2853 findings in 20 files reduced to 0: documents in waves 43-44, both JSON files in wave 45 with 123 internal pins re-derived and the whitespace-only property proven per pin"
     },
     {
       "id": "N-10",
@@ -495,8 +502,8 @@
       "done": [
         "burial correction in 00/16; admission/matriculation wording in 02; witness-count language removed in 10/03/12/13/14",
         "packet drift now zero: historicalReceiptMatchesCurrentTree true, currentRevisionCustody REVERIFIED_AGAINST_BASELINE_RECEIPT",
-        "wave44 receipt v5 issued: 47-member archive, 6082453 B, sha256 20a06d49…, manifest db92572f…, Drive readback matched (md5 64e64b64…); custody manifest v6 (46 members, 19948827 B, 2d0b3981…) reproduces via --check",
-        "18 volumes fully clean after wave44: 2511 insertion-only edits total, extended detector returns 0 findings in documents, 13/13 spacing tests pass; JSON prose strings still compacted (874)"
+        "wave45 receipt v6 issued: 47-member archive, 6082459 B, sha256 31532abc…, manifest 9e27d6f8…, Drive readback matched (md5 0a947302…); custody manifest v7 (46 members, 19949122 B, 3e429d29…) reproduces via --check",
+        "dropped-space defect closed corpus-wide: --scope all returns TEXT_SPACING_CLEAN 0 findings; JSON prose repaired with 123 internal pins re-derived and proven whitespace-only"
       ]
     },
     "lordchristArticlePr971": {

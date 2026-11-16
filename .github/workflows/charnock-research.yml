@@ -47,6 +47,11 @@ jobs:
       - name: Reader-facing documents keep their restored spacing
         run: |
           python3 scripts/audit_charnock_text_spacing.py --scope documents --fail-over 0
+      - name: Whole corpus keeps its restored spacing
+        run: |
+          python3 scripts/audit_charnock_text_spacing.py --scope all --fail-over 0
+          python3 scripts/repair_charnock_json_prose_spacing.py
+          python3 -m unittest discover -s scripts -p 'test_repair_charnock_json_prose_spacing.py' -v
       - name: Reproduce the custody manifest and packet pins
         run: |
           python3 scripts/build_charnock_custody_manifest.py --check

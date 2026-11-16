@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-25",
-  "scope": "Wave40 bounded research handoff:79TCP/11XML+28manual;40biographical decisions;5reception cases;44slots/40IDs across10planned documents;23quote dispositions/1research-onlySVG;18dossier owners. Completion conditional on separately verified custody receipt. No biography prose,publication approval,all-source/register/image acquisition or root authority.",
+  "scope": "Wave40 bounded research handoff:79 TCP/11 XML+28manual;40biographical decisions;5reception cases;44slots/40IDs across10planned documents;23quote dispositions/1research-onlySVG;18dossier owners. Completion conditional on separately verified custody receipt. No biography prose,publication approval,all-source/register/image acquisition or root authority.",
   "sources": {
     "A46911": {
       "id": "A46911",
@@ -228,7 +228,7 @@
       "teiPages": [
         "33"
       ],
-      "claimBoundary": "Знакомство около1644: вычисление от1680, не точная дата",
+      "claimBoundary": "Знакомство около 1644: вычисление от 1680, не точная дата",
       "seriesPart": "I",
       "evidenceClass": "A1",
       "accessState": "FULL_OBJECT_VERIFIED",
@@ -318,7 +318,7 @@
       "teiPages": [
         "783"
       ],
-      "claimBoundary": "Proctor5апреля1654 в разделе Fasti1654; печатный список, не оригинал назначения",
+      "claimBoundary": "Proctor5 апреля 1654 в разделе Fasti1654; печатный список, не оригинал назначения",
       "seriesPart": "I",
       "evidenceClass": "A1",
       "accessState": "FULL_OBJECT_VERIFIED",
@@ -336,7 +336,7 @@
       "teiPages": [
         null
       ],
-      "claimBoundary": "Ирландия на следующий год после proctorship; около1655, месяц не даётся",
+      "claimBoundary": "Ирландия на следующий год после proctorship; около 1655, месяц не даётся",
       "seriesPart": "I",
       "evidenceClass": "A1",
       "accessState": "FULL_OBJECT_VERIFIED",
@@ -372,7 +372,7 @@
       "teiPages": [
         null
       ],
-      "claimBoundary": "Около1660 прекращение публичного служения и возвращение",
+      "claimBoundary": "Около 1660 прекращение публичного служения и возвращение",
       "seriesPart": "I",
       "evidenceClass": "A1",
       "accessState": "FULL_OBJECT_VERIFIED",
@@ -390,7 +390,7 @@
       "teiPages": [
         null
       ],
-      "claimBoundary": "Нет постоянного призвания к прежней работе, не полное молчание15лет",
+      "claimBoundary": "Нет постоянного призвания к прежней работе, не полное молчание 15 лет",
       "seriesPart": "I",
       "evidenceClass": "A1",
       "accessState": "FULL_OBJECT_VERIFIED",
@@ -426,7 +426,7 @@
       "teiPages": [
         null
       ],
-      "claimBoundary": "Приблизительно5последних лет регулярной проповеди, не точный акт назначения",
+      "claimBoundary": "Приблизительно 5 последних лет регулярной проповеди, не точный акт назначения",
       "seriesPart": "I",
       "evidenceClass": "A1",
       "accessState": "FULL_OBJECT_VERIFIED",
@@ -480,7 +480,7 @@
       "teiPages": [
         "491"
       ],
-      "claimBoundary": "27июля1680/около52лет — утверждение Wood, не приходской регистр",
+      "claimBoundary": "27 июля 1680/около 52 лет — утверждение Wood, не приходской регистр",
       "seriesPart": "I",
       "evidenceClass": "A1",
       "accessState": "FULL_OBJECT_VERIFIED",
@@ -498,7 +498,7 @@
       "teiPages": [
         "492"
       ],
-      "claimBoundary": "Погребение30июля — по Wood; регистр не получен",
+      "claimBoundary": "Погребение 30 июля — по Wood; регистр не получен",
       "seriesPart": "I",
       "evidenceClass": "A1",
       "accessState": "FULL_OBJECT_VERIFIED",
@@ -552,7 +552,7 @@
       "teiPages": [
         null
       ],
-      "claimBoundary": "Та же формула в переиздании1684; не второй независимый голос",
+      "claimBoundary": "Та же формула в переиздании 1684; не второй независимый голос",
       "seriesPart": "IV",
       "evidenceClass": "A1",
       "accessState": "FULL_OBJECT_VERIFIED",
@@ -776,7 +776,7 @@
       "teiPages": [
         null
       ],
-      "claimBoundary": "Конкретный титул1682 и перечисленные книготорговцы; не доказательство отдельного выпуска1681",
+      "claimBoundary": "Конкретный титул 1682 и перечисленные книготорговцы; не доказательство отдельного выпуска 1681",
       "seriesPart": "V",
       "evidenceClass": "A1",
       "accessState": "FULL_OBJECT_VERIFIED",
@@ -986,7 +986,7 @@
       "teiPages": [
         "77"
       ],
-      "claimBoundary": "1Тим2:15: Чарнок отвергает зависимость спасения матери от веры детей; отвергаемую позицию нельзя цитировать как его утверждение",
+      "claimBoundary": "1Тим 2:15: Чарнок отвергает зависимость спасения матери от веры детей; отвергаемую позицию нельзя цитировать как его утверждение",
       "seriesPart": "VII",
       "evidenceClass": "A1",
       "accessState": "FULL_OBJECT_VERIFIED",
@@ -1286,7 +1286,7 @@
         null
       ],
       "section": "title page;1684 imprint",
-      "claimBoundary": "Конкретный титул Providence1684 отличается от1680; не доказательство всего состава Works1684.",
+      "claimBoundary": "Конкретный титул Providence1684 отличается от 1680; не доказательство всего состава Works1684.",
       "seriesPart": "V",
       "contextExcerpt": "eople. By the late Learned Divine, STEPHEN CHARNOCK, B. D. sometime Fellow of New-Colledg in OXON. Psalm 103.19. His Kingdom ruleth over all. LONDON: Printed by R. Roberts for Thomas Cockerill, at the Three Legs in the Poultrey, near the Stocks-Market. 1684. TO THE READER. Reader, THOU art here presented with a little piece, of a Great Man; Great indeed, if great Piety, great Parts, great Learning, and great Wisdom, may be admitted to claim that Title: And we verily believe that none well acquainted with him, will deny him his right; however malevolent Persons may grudge him the honour. It hath been expected, and desired by many, that some account of his Life might be given to the world; But we are not willing to offer violence to his ashes, by making him so publick now he is Dead, who so much affected privacy while he lived. Thou art therefore desired to rest satisfied with this brief account of him, That being very young he went to Cambridge, where in Immanuel Colledge he was brought up under the Tuition of the present Arch-Bishop of Canterbury. What Gracious workings and Evidences of the New-Birth appeared in him while th",
       "evidenceClass": "A1",
@@ -1306,7 +1306,7 @@
         null
       ],
       "section": "title page;edition statement",
-      "claimBoundary": "Титул прямо называет второе издание;это не найденный титул первого выпуска.",
+      "claimBoundary": "Титул прямо называет второе издание; это не найденный титул первого выпуска.",
       "seriesPart": "V",
       "contextExcerpt": "ise At CRIPPLE-GATE: OR, Several more Cases of Conscience Practically Resolved by sundry Ministers. The Second Edition. Our rejoycing is this, the Testimony of our Conscience, that in simplicity and Godly sincerity, not with fleshly Wisdom, but by the Grace of God, we have had our conversation in the World, 2 Cor. 1.12. Conscientia— est nescio quid divinum & nunquam perit, officium nostrum nobis semper ad memoriam revocat. Doroth. Bibl. Pat. T. 4. p. 769. Quaerimus, quomodo animus semper aequalis, secundoque cursu eat, & propitius sibi sit, & sua laetus adspiciat: & hoc gaudium non interrumpat, sed placido statu maneat, nec attollens se unquam, nec deprimens. Seneca de Tranq. anim. p. 678. LONDON, Printed for ",
       "evidenceClass": "A1",
@@ -1326,7 +1326,7 @@
         null
       ],
       "section": "title page;imprint year",
-      "claimBoundary": "На титуле1676;дата1674 в посвящении не заменяет дату этого отпечатка.",
+      "claimBoundary": "На титуле 1676; дата 1674 в посвящении не заменяет дату этого отпечатка.",
       "seriesPart": "V",
       "contextExcerpt": "LONDON, Printed for Thomas Cockerill, at the Sign of the Atlas in Cornhil, near the Royal-Exchange. MDCLXXVI. To that part of Christ's Flock to which I am more specially related, Grace, Mercy and Peace from God the Father, and the Lord Jesus Christ our Saviour. Beloved Christians, AS I called in a Contribution of Help for the composing of a Legacy for others, before my Civil Death; so I now tender you A Supplement to that Exercise, for your better liveliness of Spiritual Life. I shall say nothing to commend these Sermons to you; my Brethren are all herein unanimous, to seek the Church's Profit, not their own Applause; only this I must say, to prevent mistake, viz. If any curious Reader shall find mat",
       "evidenceClass": "A1",
@@ -1346,7 +1346,7 @@
         null
       ],
       "section": "dedication;Annesley signature",
-      "claimBoundary": "Дата посвящения Samuel Annesley;не доказательство печати первого выпуска именно в этот день или год.",
+      "claimBoundary": "Дата посвящения Samuel Annesley; не доказательство печати первого выпуска именно в этот день или год.",
       "seriesPart": "V",
       "contextExcerpt": "at these may be useful to you (whoever else censures them as useless) shall be the hearty Prayer of June 19. 1674. Your worthless Servant, Samuel Annesley. The CONTENTS. Dr. Annesley Serm. 1 HOw may we attain to love God with all our hearts, souls, and minds? Mat. 22.37, 38. Mr. Milward Serm. 2 How ought we to love our Neighbour as our selves? Mat. 22.39. Mr. Gale Serm. 3 Wherein the love of the world is inconsistent with the love of God? 1 Joh. 2.15. Mr. Jenkyn Serm. 4 How may we improve the present season of grace? 2 Cor. 6.1, 2. Mr. Veal Serm. 5 What spiritual knowledg they ought to seek for, that desire to be saved. &c. Isa. 27.11. Mr. Case Serm. 6 How ought the Sabbath to be sanctified? Isa. 58.13, 1",
       "evidenceClass": "A1",
@@ -1366,7 +1366,7 @@
         null
       ],
       "section": "contents;sermon19",
-      "claimBoundary": "В оглавлении инициалыS.C.,не полное имя;идентификация требует моста к позднейшему именному изданию.",
+      "claimBoundary": "В оглавлении инициалыS.C.,не полное имя; идентификация требует моста к позднейшему именному изданию.",
       "seriesPart": "V",
       "contextExcerpt": ". 3.20, 21. Mr. Janeway Serm. 18 What are the Duties of Masters and Servants? Eph. 6.5, 6, 7, 8, 9. Mr. S. C. Serm. 19 The sinfulness and cure of thoughts. Gen. 6.5. Mr. West Serm. 20 How must we govern our tongues? Eph. 4.29. Mr. Poole Serm. 21 How may detraction be best prevented, or cur'd? Psal. 15.3. Mr. Baxter Serm. 22 What is that light, which must shine before men in the works of Christ's Disciples? Matth. 5.16. Dr. Wilkinson Serm. 23 How must we do all in the Name of Christ? Col. 3.17. Mr. Cole Serm. 24 How may we steer an even course between Presumption, and Despair? Luke 3.5, 6. Mr. Fowler Serm. 25 How Christians may get such a faith, as may not only be saving at last, but comfortable and joyful at ",
       "evidenceClass": "A1",
@@ -1386,7 +1386,7 @@
         "471"
       ],
       "section": "sermon19;opening",
-      "claimBoundary": "Начало наTEI p.471;весь sermon19 простирается доp.502.Это пагинация1676,не1844.",
+      "claimBoundary": "Начало наTEI p.471; весь sermon19 простирается доp.502.Это пагинация 1676,не 1844.",
       "seriesPart": "V",
       "contextExcerpt": "he promoting this glorious work, and then our God would bless us, and we should bless him for ever. The Sinfulness and Cure of Thoughts. Serm. XIX. Gen. 6.5. And God saw that the wickedness of man was great in the earth, and that every imagination of the thoughts of his heart was only evil continually. I Know not a more lively description in the whole Book of God of the Natural corruption derived from our first Parents, than these words; Wherein you have the Ground of that grief, which lay so close to God's heart, v. 6. and the Resolve thereupon to destroy man, and whatsoever was serviceable to that ungrateful creature. That must be highly offensive, which moved God to repent of a fabrick so pleasing to him at the creation: every stone i",
       "evidenceClass": "A1",
@@ -1406,7 +1406,7 @@
         "473"
       ],
       "section": "sermon19;negative distinction",
-      "claimBoundary": "Автор различает мысленное представление о грехе и виновность;совпадение выбранной строки с1683 не полная колляция.",
+      "claimBoundary": "Автор различает мысленное представление о грехе и виновность; совпадение выбранной строки с1683 не полная колляция.",
       "seriesPart": "V",
       "contextExcerpt": " face in a glass. In this discourse let us first see what kind of thoughts are sins. 1. Negatively. A simple apprehension of sin is not sinful. Thoughts receive not a sinfulness barely from the object: That may be unlawful to be acted, which is not unlawful to be thought of. Though the will cannot will sin without guilt, yet the understanding may apprehend sin without guilt; for that doth no more contract a pollution by the bare apprehension, than the eye doth by the reception of the species of a loathsom object. Thoughts are morally evil, when they have a bad principle, want a due end, and converse with the object in a wrong manner. Angels cannot but understand the offence which displaced the Apostate Stars from heaven; but they kno",
       "evidenceClass": "A1",
@@ -1426,7 +1426,7 @@
         "502"
       ],
       "section": "sermon19;closing",
-      "claimBoundary": "Конечный выбранный фрагмент наp.502 соответствует p.19 перепечатки1683;не автоматическая идентичность каждой строки.",
+      "claimBoundary": "Конечный выбранный фрагмент наp.502 соответствует p.19 перепечатки 1683; не автоматическая идентичность каждой строки.",
       "seriesPart": "V",
       "contextExcerpt": " 1 Chron. 29.18. This will be an encouragement to God to send more such guests into our hearts. And by an affectionate entertainment of them, we shall gain both a habit of thinking well, and a stock too. How must we govern our Tongues? Serm. XX. Ephes. 4.29. Let no corrupt Communication proceed out of your mouth, but that which is good to the use of Edifying, that it may minister Grace to the Hearers. IN these words is a prohibition, and admonition; every corrupt word is restrained, savoury and useful Discourse is enjoyned. For exposition enquire 1. What is this corrupt speech that is forbid? Some restrain it to filthy unclean speech, others extend it to all wicked speech; I conceive it reaches also unto idle, empty, unprofitable ",
       "evidenceClass": "A1",
@@ -1446,7 +1446,7 @@
         null
       ],
       "section": "Scripture table;pagination warning",
-      "claimBoundary": "Предупреждение о повторных номерах и first/second folio не доказывает два отдельных тома;для физической структуры нужен экземпляр/скан.",
+      "claimBoundary": "Предупреждение о повторных номерах и first/second folio не доказывает два отдельных тома; для физической структуры нужен экземпляр/скан.",
       "seriesPart": "V",
       "contextExcerpt": " noble than to be a Monarch over others. A TABLE OF THE Places of Scripture Explained in this BOOK. Some few of the Numbers being twice gone over, the Reader may observe that this Mark †, where 'tis set after the Figures in this Table, and the following Index, directs him to the first of those Folio's; and where he finds no Mark at all, he is to consult the second. GENESIS. Chapters, Verses, Pages, 1. 1. 346, 439, 440 26. 443 2. 7. 30, 608 17. 796 3. 8. 803 15. 457 4. 26. 140, 801 6. 6. 225 18. 19. 287 22. 12. ibid. 32. 30. 116 46. 4. 657, 658 47. 31. 141 EXOD. Chapters, Verses, Pages, 3. 11. 328 14. 187, 188 4. 24. 801 6. 3. 439, 440 9. 16. 454 15. 11. 494 32. 10. 602 33. 19. 585 34. 9. 806 NUMB. 34. 10. 116 DEUT. Chapters, Verses, Pa",
       "evidenceClass": "A1",
@@ -1555,7 +1555,7 @@
       "teiPages": [
         null
       ],
-      "claimBoundary": "Титул листка сообщает28июля; CONFLICT с Wood27июля; не выбирать один день без оговорки.",
+      "claimBoundary": "Титул листка сообщает 28 июля; CONFLICT с Wood27 июля; не выбирать один день без оговорки.",
       "seriesPart": "I",
       "evidenceClass": "A1",
       "accessState": "FULL_OBJECT_VERIFIED",
@@ -1573,7 +1573,7 @@
       "teiPages": [
         "491"
       ],
-      "claimBoundary": "Около1649 по Wood; не точный день переезда.",
+      "claimBoundary": "Около 1649 по Wood; не точный день переезда.",
       "seriesPart": "I",
       "evidenceClass": "A1",
       "accessState": "FULL_OBJECT_VERIFIED",
@@ -1609,7 +1609,7 @@
       "teiPages": [
         "491"
       ],
-      "claimBoundary": "Политически окрашенная рамка Wood;не акт финансирования и не доказательство присвоения чужой собственности.",
+      "claimBoundary": "Политически окрашенная рамка Wood; не акт финансирования и не доказательство присвоения чужой собственности.",
       "seriesPart": "VIII",
       "evidenceClass": "A1",
       "accessState": "FULL_OBJECT_VERIFIED",
@@ -1627,7 +1627,7 @@
       "teiPages": [
         "523"
       ],
-      "claimBoundary": "Точная оговорка первичного текста;не считать её автоматическим опровержением или доказательством правоты Hoek.",
+      "claimBoundary": "Точная оговорка первичного текста; не считать её автоматическим опровержением или доказательством правоты Hoek.",
       "seriesPart": "VIII",
       "evidenceClass": "A1",
       "accessState": "FULL_OBJECT_VERIFIED",
@@ -1664,7 +1664,7 @@
       "teiPages": [
         "225"
       ],
-      "claimBoundary": "Авторская аналогия repentance/body;не приписывать Чарноку нормативные утверждения Hoek о добровольном страдании Бога.",
+      "claimBoundary": "Авторская аналогия repentance/body; не приписывать Чарноку нормативные утверждения Hoek о добровольном страдании Бога.",
       "seriesPart": "VIII",
       "evidenceClass": "A1",
       "accessState": "FULL_OBJECT_VERIFIED",
@@ -1885,7 +1885,7 @@
       "source": "UNIFORMITY1662",
       "locator": "III;Deprivation",
       "observedText": "shall (ipso facto) be deprived",
-      "claimBoundary": "Отказ/неисполнение в срок влечёт лишение духовных должностей с оговоркой lawful impediment; это норма, не доказательство изгнания Чарнока из конкретного прихода1662",
+      "claimBoundary": "Отказ/неисполнение в срок влечёт лишение духовных должностей с оговоркой lawful impediment; это норма, не доказательство изгнания Чарнока из конкретного прихода 1662",
       "seriesPart": "Введение",
       "verificationMethod": "manual reading of fetched extracted sections; NOT covered by TCP lexical auditor",
       "evidenceClass": "A1",
@@ -1904,7 +1904,7 @@
       "source": "CONVENTICLES1670",
       "locator": "I;Persons of the Age of16Years",
       "observedText": "five persons or more assembled together over and besides those of the same Household",
-      "claimBoundary": "Порог пять или более сверх домашнего хозяйства; субъект16лет и старше,в пределах обозначенных территорий; не «более пяти» и не всякое частное общение",
+      "claimBoundary": "Порог пять или более сверх домашнего хозяйства; субъект 16 лет и старше,в пределах обозначенных территорий; не «более пяти» и не всякое частное общение",
       "seriesPart": "Введение",
       "verificationMethod": "manual reading of fetched extracted sections; NOT covered by TCP lexical auditor",
       "evidenceClass": "A1",
@@ -1923,7 +1923,7 @@
       "source": "CONVENTICLES1670",
       "locator": "I–IV;Penalties",
       "observedText": "Twenty pounds",
-      "claimBoundary": "Слушатель5шиллингов первый/10повтор;проповедник£20/£40;хозяин£20;не смешивать фунты и шиллинги;этим актом не доказан смертный приговор за посещение",
+      "claimBoundary": "Слушатель 5 шиллингов первый/10 повтор; проповедник£20/£40; хозяин£20; не смешивать фунты и шиллинги; этим актом не доказан смертный приговор за посещение",
       "seriesPart": "Введение",
       "verificationMethod": "manual reading of fetched extracted sections; NOT covered by TCP lexical auditor",
       "evidenceClass": "A1",
@@ -1942,7 +1942,7 @@
       "source": "CONVENTICLES1670",
       "locator": "VI–VII;Appeals",
       "observedText": "within one weeke",
-      "claimBoundary": "Апелляция при взыскании свыше10шиллингов:неделя после уплаты/взыскания,Quarter Sessions,recognizance;есть jury,риск тройных costs;не всеобщий простой доступ к пересмотру",
+      "claimBoundary": "Апелляция при взыскании свыше 10 шиллингов: неделя после уплаты/взыскания,Quarter Sessions,recognizance; есть jury,риск тройных costs; не всеобщий простой доступ к пересмотру",
       "seriesPart": "Введение",
       "verificationMethod": "manual reading of fetched extracted sections; NOT covered by TCP lexical auditor",
       "evidenceClass": "A1",
@@ -1961,7 +1961,7 @@
       "source": "CONVENTICLES1670",
       "locator": "VIII;Break open Doors",
       "observedText": "after refusall or denyall to enter",
-      "claimBoundary": "Предусмотрен принудительный вход после отказа и разгон;не свидетельство конкретного обыска у Чарнока",
+      "claimBoundary": "Предусмотрен принудительный вход после отказа и разгон; не свидетельство конкретного обыска у Чарнока",
       "seriesPart": "Введение",
       "verificationMethod": "manual reading of fetched extracted sections; NOT covered by TCP lexical auditor",
       "evidenceClass": "A1",
@@ -1980,7 +1980,7 @@
       "source": "CONVENTICLES1670",
       "locator": "II,XII–XIII;Informer/construction/limitation",
       "observedText": "for the justification and encouragement",
-      "claimBoundary": "Часть штрафа информатору,расширительное толкование в пользу подавления,но3месяца на преследование и запрет двойного наказания за тот же эпизод;не диагноз всем судьям эпохи",
+      "claimBoundary": "Часть штрафа информатору,расширительное толкование в пользу подавления,но 3 месяца на преследование и запрет двойного наказания за тот же эпизод; не диагноз всем судьям эпохи",
       "seriesPart": "Введение",
       "verificationMethod": "manual reading of fetched extracted sections; NOT covered by TCP lexical auditor",
       "evidenceClass": "A1",
@@ -1999,7 +1999,7 @@
       "source": "SEAWARD1672",
       "locator": "paragraphs On15March1672/TheDeclarationwasissued/It didn’t last",
       "observedText": "licences",
-      "claimBoundary": "1672:приостановление penal laws и лицензирование общин;позднее отменено под парламентским давлением;это B1-контекст,не приобретённый текст декларации и не лицензия Чарнока",
+      "claimBoundary": "1672: приостановление penal laws и лицензирование общин; позднее отменено под парламентским давлением; это B1-контекст,не приобретённый текст декларации и не лицензия Чарнока",
       "seriesPart": "Введение",
       "verificationMethod": "manual reading of fetched extracted sections; NOT covered by TCP lexical auditor",
       "evidenceClass": "B1",
@@ -2018,7 +2018,7 @@
       "source": "SPURGEONPS103",
       "locator": "Explanatory Notes and Quaint Sayings;v12",
       "observedText": "When sin is pardoned, it is never charged again",
-      "claimBoundary": "Подписанная атрибуция StephenCharnock;точный исходный locus в проверенных TCP ещё не найден:не объявлять сверенным оригиналом",
+      "claimBoundary": "Подписанная атрибуция StephenCharnock; точный исходный locus в проверенных TCP ещё не найден: не объявлять сверенным оригиналом",
       "seriesPart": "VIII",
       "verificationMethod": "manual reading of fetched extracted sections; NOT covered by TCP lexical auditor",
       "evidenceClass": "A1",
@@ -2038,7 +2038,7 @@
       "source": "SPURGEONPS103",
       "locator": "Explanatory Notes and Quaint Sayings;v18",
       "observedText": "Commands are to be remembered in order to practice",
-      "claimBoundary": "Подписанная выдержка;совпадение с A32723,p699,различие comma/semicolon и оформления не скрывать",
+      "claimBoundary": "Подписанная выдержка; совпадение с A32723,p699,различие comma/semicolon и оформления не скрывать",
       "seriesPart": "VIII",
       "verificationMethod": "manual reading of fetched extracted sections; NOT covered by TCP lexical auditor",
       "evidenceClass": "A1",
@@ -2065,7 +2065,7 @@
       "source": "SPURGEONPS103",
       "locator": "Explanatory Notes and Quaint Sayings;v19,Condensed from Charnock",
       "observedText": "Duration of it. The heavens are incorruptible",
-      "claimBoundary": "Сокращённый6частный разбор прямо помечен Condensed;финальный пункт сопоставлен A32723,p702;не выдавать всю компиляцию за дословную цитату",
+      "claimBoundary": "Сокращённый 6 частный разбор прямо помечен Condensed; финальный пункт сопоставлен A32723,p702; не выдавать всю компиляцию за дословную цитату",
       "seriesPart": "VIII",
       "verificationMethod": "manual reading of fetched extracted sections; NOT covered by TCP lexical auditor",
       "evidenceClass": "A1",
@@ -2092,7 +2092,7 @@
       "source": "SPURGEONPS103",
       "locator": "Hints to the Village Preacher;v19",
       "observedText": "Nicol's Edition, Vol. II., pp. 400-499",
-      "claimBoundary": "Прямая рекомендация дискурса с адресом в Nichol/Nicol;указанный диапазон не проверен по скану этого издания;не переносить его на1682",
+      "claimBoundary": "Прямая рекомендация дискурса с адресом в Nichol/Nicol; указанный диапазон не проверен по скану этого издания; не переносить его на 1682",
       "seriesPart": "VIII",
       "verificationMethod": "manual reading of fetched extracted sections; NOT covered by TCP lexical auditor",
       "evidenceClass": "A1",
@@ -2356,7 +2356,7 @@
       "source": "HOEK2014",
       "locator": "https://indieskriflig.org.za/index.php/skriflig/article/view/1706/2867#22",
       "observedText": "Nevertheless, the theological contribution of Charnock must be welcomed as relevant and valuable to the ongoing debate concerning ‘God-talk’.",
-      "claimBoundary": "Положительный итог той же статьи сохраняется рядом с критикой;не выдавать Hoek за безоговорочного противника.",
+      "claimBoundary": "Положительный итог той же статьи сохраняется рядом с критикой; не выдавать Hoek за безоговорочного противника.",
       "seriesPart": "VIII",
       "verificationMethod": "Manual reading of fetched context; local selected-extract bytes checked separately,not original HTML/PDF SHA.",
       "extractId": "REC-06",
@@ -2394,7 +2394,7 @@
       "source": "SYMINGTONWEB",
       "locator": "https://www.apuritansmind.com/puritan-favorites/stephen-charnock-1628-1680/",
       "observedText": "Charnock may not have all the brilliancy of Bunyan, nor all the metaphysical acumen and subtle analysis of Howe, nor all the awful earnestness of Baxter",
-      "claimBoundary": "Условное сравнение с Bunyan/Howe/Baxter внутри панегирика;не абсолютное ранжирование и не независимо подтверждённая психология Чарнока.",
+      "claimBoundary": "Условное сравнение с Bunyan/Howe/Baxter внутри панегирика; не абсолютное ранжирование и не независимо подтверждённая психология Чарнока.",
       "seriesPart": "VIII",
       "verificationMethod": "Manual reading of fetched context; local selected-extract bytes checked separately,not original HTML/PDF SHA.",
       "extractId": "REC-08",
@@ -2586,7 +2586,7 @@
         "BIB-M02"
       ],
       "owner": "БИОГРАФИИ/Стивен Чарнок/03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md",
-      "boundary": "Получить титул,предисловие,состав и пагинацию основного фолианта;не подменять Supplement.",
+      "boundary": "Получить титул,предисловие,состав и пагинацию основного фолианта; не подменять Supplement.",
       "evidenceClass": "B1",
       "accessState": "CATALOG_ONLY",
       "locatorState": "LOCATOR_MISSING",
@@ -2608,7 +2608,7 @@
         "BIB-08"
       ],
       "owner": "БИОГРАФИИ/Стивен Чарнок/03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md",
-      "boundary": "Рекламируемые2Vol не датируют комплект;нужны титулы конкретных экземпляров.",
+      "boundary": "Рекламируемые2Vol не датируют комплект; нужны титулы конкретных экземпляров.",
       "evidenceClass": "C",
       "accessState": "NOT_ACQUIRED",
       "locatorState": "LOCATOR_MISSING",
@@ -2628,7 +2628,7 @@
       "unitType": "ACQUISITION_FAMILY",
       "refs": [],
       "owner": "БИОГРАФИИ/Стивен Чарнок/03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md",
-      "boundary": "Сверить титулы отдельных томов;не считать диапазон лет разрешением конфликта.",
+      "boundary": "Сверить титулы отдельных томов; не считать диапазон лет разрешением конфликта.",
       "evidenceClass": "C",
       "accessState": "NOT_ACQUIRED",
       "locatorState": "LOCATOR_MISSING",
@@ -2648,7 +2648,7 @@
       "unitType": "ACQUISITION_FAMILY",
       "refs": [],
       "owner": "БИОГРАФИИ/Стивен Чарнок/03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md",
-      "boundary": "Сверить пять титулов и состав;не считать весь пятитомник полученным по страницам одного тома.",
+      "boundary": "Сверить пять титулов и состав; не считать весь пятитомник полученным по страницам одного тома.",
       "evidenceClass": "C",
       "accessState": "NOT_ACQUIRED",
       "locatorState": "LOCATOR_MISSING",
@@ -2838,7 +2838,7 @@
         "CTX-04",
         "CTX-09"
       ],
-      "boundary": "1653:публичная религия/условная защита;1662/1670:разные нормы;Emmanuel:конфликтная среда. Не личные преследования/назначения Чарнока и не всеобщая свобода.",
+      "boundary": "1653: публичная религия/условная защита;1662/1670: разные нормы;Emmanuel: конфликтная среда. Не личные преследования/назначения Чарнока и не всеобщая свобода.",
       "selectionState": "SELECTION_ONLY",
       "publicationState": "BLOCKED",
       "holds": [
@@ -2855,7 +2855,7 @@
         "BIO-17",
         "CORE-06"
       ],
-      "boundary": "Обучение/должности по названным авторам;27/28июля показывать как конфликт, не как независимо установленные даты.",
+      "boundary": "Обучение/должности по названным авторам;27/28 июля показывать как конфликт, не как независимо установленные даты.",
       "selectionState": "SELECTION_ONLY",
       "publicationState": "BLOCKED",
       "holds": [
@@ -2871,7 +2871,7 @@
         "TXT-15",
         "TXT-16"
       ],
-      "boundary": "Редакторские свидетельства о работе систочниками;не вся личнаябиблиотека.",
+      "boundary": "Редакторские свидетельства о работе систочниками; не вся личнаябиблиотека.",
       "selectionState": "SELECTION_ONLY",
       "publicationState": "BLOCKED",
       "holds": [
@@ -2888,7 +2888,7 @@
         "TXT-18",
         "TXT-20"
       ],
-      "boundary": "Пять конкретных экзегетических случаев;не исчерпывающая герменевтика.",
+      "boundary": "Пять конкретных экзегетических случаев; не исчерпывающая герменевтика.",
       "selectionState": "SELECTION_ONLY",
       "publicationState": "BLOCKED",
       "holds": [
@@ -2904,7 +2904,7 @@
         "TXT-07",
         "TXT-08"
       ],
-      "boundary": "Атеизм/неизменность/грехвозрождённых/провидение;не полный синтез.",
+      "boundary": "Атеизм/неизменность/грехвозрождённых/провидение; не полный синтез.",
       "selectionState": "SELECTION_ONLY",
       "publicationState": "BLOCKED",
       "holds": [
@@ -2921,7 +2921,7 @@
         "BIB-03",
         "FST-01"
       ],
-      "boundary": "Титулы иредакционнаясборка;первоеиздание/основнойVol.IIнеподменяются.",
+      "boundary": "Титулы иредакционнаясборка; первоеиздание/основнойVol.IIнеподменяются.",
       "selectionState": "SELECTION_ONLY",
       "publicationState": "BLOCKED",
       "holds": [
@@ -2937,7 +2937,7 @@
         "TXT-16",
         "TXT-15"
       ],
-      "boundary": "Метод главной книги через предисловие;оценкиредакторов атрибутированы.",
+      "boundary": "Метод главной книги через предисловие; оценкиредакторов атрибутированы.",
       "selectionState": "SELECTION_ONLY",
       "publicationState": "BLOCKED",
       "holds": [
@@ -2953,7 +2953,7 @@
         "BIB-07",
         "BIB-06"
       ],
-      "boundary": "Providence,прощение,антропология,сохранившийсяразбор1Tim;неполныйNichol.",
+      "boundary": "Providence,прощение,антропология,сохранившийсяразбор1Tim; неполныйNichol.",
       "selectionState": "SELECTION_ONLY",
       "publicationState": "BLOCKED",
       "holds": [
@@ -2969,7 +2969,7 @@
         "REC-08",
         "BIB-08"
       ],
-      "boundary": "Антология,критикаHoek,похвалаSymington,редакторская реклама;не независимый консенсус и не весь след влияния.",
+      "boundary": "Антология,критикаHoek,похвалаSymington,редакторская реклама; не независимый консенсус и не весь след влияния.",
       "selectionState": "SELECTION_ONLY",
       "publicationState": "BLOCKED",
       "holds": [
@@ -2985,7 +2985,7 @@
         "CTX-16",
         "BIB-04"
       ],
-      "boundary": "Зависимостьсвидетелей,пагинация,титулы,неизвестнаядатапроповеди;неустранённыепробелы.",
+      "boundary": "Зависимостьсвидетелей,пагинация,титулы,неизвестнаядатапроповеди; неустранённыепробелы.",
       "selectionState": "SELECTION_ONLY",
       "publicationState": "BLOCKED",
       "holds": [
@@ -3025,7 +3025,7 @@
         "refs": [
           "BIO-17"
         ],
-        "safeFormulation": "Wood даёт возраст52года «или около того» в1680;1628 — приблизительная/традиционная датировка.",
+        "safeFormulation": "Wood даёт возраст 52 года «или около того» в1680;1628 — приблизительная/традиционная датировка.",
         "excludedClaim": null,
         "boundary": "Не превращать вычитание возраста в точную дату рождения.",
         "evidenceClass": "A1",
@@ -3104,9 +3104,9 @@
           "BIO-03",
           "BIO-04"
         ],
-        "safeFormulation": "Johnson в1680 вспоминает знакомство36лет назад и считает Чарнока уже обращённым к тому времени.",
+        "safeFormulation": "Johnson в1680 вспоминает знакомство 36 лет назад и считает Чарнока уже обращённым к тому времени.",
         "excludedClaim": null,
-        "boundary": "Около1644 — расчёт знакомства, не точная дата обращения; Josiah, не Jonah.",
+        "boundary": "Около 1644 — расчёт знакомства, не точная дата обращения; Josiah, не Jonah.",
         "evidenceClass": "A1",
         "accessState": "FULL_OBJECT_VERIFIED",
         "locatorState": "EXACT_LOCATOR_VERIFIED",
@@ -3218,7 +3218,7 @@
         "refs": [
           "BIO-08"
         ],
-        "safeFormulation": "Fasti у Wood помещает Charnock среди proctors,5апреля1654.",
+        "safeFormulation": "Fasti у Wood помещает Charnock среди proctors,5 апреля 1654.",
         "excludedClaim": null,
         "boundary": "Fasti и Athenae — два раздела одного автора, не независимая двойная проверка.",
         "evidenceClass": "A1",
@@ -3237,7 +3237,7 @@
         "refs": [
           "BIO-09"
         ],
-        "safeFormulation": "Редакторы относят поездку в Ирландию к году после proctorship: приблизительно1655.",
+        "safeFormulation": "Редакторы относят поездку в Ирландию к году после proctorship: приблизительно 1655.",
         "excludedClaim": null,
         "boundary": "Не добавлять август, общую поездку с Henry Cromwell или точный день.",
         "evidenceClass": "A1",
@@ -3257,8 +3257,8 @@
           "BIO-09"
         ],
         "safeFormulation": null,
-        "excludedClaim": "Чарнок как личный chaplain Henry Cromwell: точное назначение и титул покровителя на эту дату не удостоверены полученным актом; не переносить титул deputy1657 на1655.",
-        "boundary": "Чарнок как личный chaplain Henry Cromwell: точное назначение и титул покровителя на эту дату не удостоверены полученным актом; не переносить титул deputy1657 на1655.",
+        "excludedClaim": "Чарнок как личный chaplain Henry Cromwell: точное назначение и титул покровителя на эту дату не удостоверены полученным актом; не переносить титул deputy1657 на 1655.",
+        "boundary": "Чарнок как личный chaplain Henry Cromwell: точное назначение и титул покровителя на эту дату не удостоверены полученным актом; не переносить титул deputy1657 на 1655.",
         "evidenceClass": "A1",
         "accessState": "FULL_OBJECT_VERIFIED",
         "locatorState": "EXACT_LOCATOR_VERIFIED",
@@ -3315,8 +3315,8 @@
           "BIO-10"
         ],
         "safeFormulation": null,
-        "excludedClaim": "Одновременные точные назначения St Werburgh/Wood Quay и август1655: не получены приходские акты; общее ирландское служение не доказывает эти детали.",
-        "boundary": "Одновременные точные назначения St Werburgh/Wood Quay и август1655: не получены приходские акты; общее ирландское служение не доказывает эти детали.",
+        "excludedClaim": "Одновременные точные назначения St Werburgh/Wood Quay и август 1655: не получены приходские акты; общее ирландское служение не доказывает эти детали.",
+        "boundary": "Одновременные точные назначения St Werburgh/Wood Quay и август 1655: не получены приходские акты; общее ирландское служение не доказывает эти детали.",
         "evidenceClass": "A1",
         "accessState": "FULL_OBJECT_VERIFIED",
         "locatorState": "EXACT_LOCATOR_VERIFIED",
@@ -3334,7 +3334,7 @@
         "refs": [
           "BIO-11"
         ],
-        "safeFormulation": "Редакторы связывают прекращение ирландского служения и возвращение с периодом около1660.",
+        "safeFormulation": "Редакторы связывают прекращение ирландского служения и возвращение с периодом около 1660.",
         "excludedClaim": null,
         "boundary": "Не смешивать Dublin1660 с английским Act of Uniformity1662.",
         "evidenceClass": "A1",
@@ -3355,7 +3355,7 @@
         ],
         "safeFormulation": "Редакторы говорят о длительном отсутствии settled call после возвращения.",
         "excludedClaim": null,
-        "boundary": "Не утверждать абсолютное молчание и отсутствие всякого проповедования15лет.",
+        "boundary": "Не утверждать абсолютное молчание и отсутствие всякого проповедования 15 лет.",
         "evidenceClass": "A1",
         "accessState": "FULL_OBJECT_VERIFIED",
         "locatorState": "EXACT_LOCATOR_VERIFIED",
@@ -3411,8 +3411,8 @@
           "BIO-09"
         ],
         "safeFormulation": null,
-        "excludedClaim": "Личная политическая роль Чарнока при кризисе1659–1660 не установлена; связь с Ирландией не доказывает участие.",
-        "boundary": "Личная политическая роль Чарнока при кризисе1659–1660 не установлена; связь с Ирландией не доказывает участие.",
+        "excludedClaim": "Личная политическая роль Чарнока при кризисе 1659–1660 не установлена; связь с Ирландией не доказывает участие.",
+        "boundary": "Личная политическая роль Чарнока при кризисе 1659–1660 не установлена; связь с Ирландией не доказывает участие.",
         "evidenceClass": "A1",
         "accessState": "FULL_OBJECT_VERIFIED",
         "locatorState": "EXACT_LOCATOR_VERIFIED",
@@ -3429,8 +3429,8 @@
         "disposition": "EXCLUDE",
         "refs": [],
         "safeFormulation": null,
-        "excludedClaim": "Участие Чарнока в заговоре1663 не подтверждено; совпадение фамилии и общий контекст не идентификация.",
-        "boundary": "Участие Чарнока в заговоре1663 не подтверждено; совпадение фамилии и общий контекст не идентификация.",
+        "excludedClaim": "Участие Чарнока в заговоре 1663 не подтверждено; совпадение фамилии и общий контекст не идентификация.",
+        "boundary": "Участие Чарнока в заговоре 1663 не подтверждено; совпадение фамилии и общий контекст не идентификация.",
         "evidenceClass": "C",
         "accessState": "NOT_ACQUIRED",
         "locatorState": "LOCATOR_MISSING",
@@ -3712,9 +3712,9 @@
           "BIO-17",
           "CORE-06"
         ],
-        "safeFormulation": "Wood указывает27июля1680; титул The Sayings — среду28июля1680. День смерти остаётся конфликтным.",
+        "safeFormulation": "Wood указывает 27 июля 1680; титул The Sayings — среду 28 июля 1680. День смерти остаётся конфликтным.",
         "excludedClaim": null,
-        "boundary": "Обе версии сохранять; не выбирать27или28 без оговорки и не объявлять независимость свидетелей установленной.",
+        "boundary": "Обе версии сохранять; не выбирать 27 или 28 без оговорки и не объявлять независимость свидетелей установленной.",
         "evidenceClass": "A1",
         "accessState": "FULL_OBJECT_VERIFIED",
         "locatorState": "EXACT_LOCATOR_VERIFIED",
@@ -3732,7 +3732,7 @@
           "BIO-18",
           "CORE-06"
         ],
-        "safeFormulation": "Wood и титул The Sayings сообщают о погребении30июля1680.",
+        "safeFormulation": "Wood и титул The Sayings сообщают о погребении 30 июля 1680.",
         "excludedClaim": null,
         "boundary": "Совпадение не равно получению приходского реестра или доказанной независимости; локатор CORE-06 — весь титул листка.",
         "evidenceClass": "A1",
@@ -3802,7 +3802,7 @@
             "CTX-09",
             "CTX-12"
           ],
-          "boundary": "Режим,границысвободы,университеты;не действияЧарнока.",
+          "boundary": "Режим,границысвободы,университеты; не действияЧарнока.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -3819,7 +3819,7 @@
             "BIO-09",
             "BIO-17"
           ],
-          "boundary": "Названные свидетели обучения/должности/Ирландии/смерти;не независимые регистры.",
+          "boundary": "Названные свидетели обучения/должности/Ирландии/смерти; не независимые регистры.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -3835,7 +3835,7 @@
             "TXT-15",
             "TXT-16"
           ],
-          "boundary": "Редакторские свидетельства о работе систочниками;не вся личнаябиблиотека.",
+          "boundary": "Редакторские свидетельства о работе систочниками; не вся личнаябиблиотека.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -3852,7 +3852,7 @@
             "TXT-18",
             "TXT-20"
           ],
-          "boundary": "Пять конкретных экзегетических случаев;не исчерпывающая герменевтика.",
+          "boundary": "Пять конкретных экзегетических случаев; не исчерпывающая герменевтика.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -3868,7 +3868,7 @@
             "TXT-07",
             "TXT-08"
           ],
-          "boundary": "Атеизм/неизменность/грехвозрождённых/провидение;не полный синтез.",
+          "boundary": "Атеизм/неизменность/грехвозрождённых/провидение; не полный синтез.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -3885,7 +3885,7 @@
             "BIB-03",
             "FST-01"
           ],
-          "boundary": "Титулы иредакционнаясборка;первоеиздание/основнойVol.IIнеподменяются.",
+          "boundary": "Титулы иредакционнаясборка; первоеиздание/основнойVol.IIнеподменяются.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -3901,7 +3901,7 @@
             "TXT-16",
             "TXT-15"
           ],
-          "boundary": "Метод главной книги через предисловие;оценкиредакторов атрибутированы.",
+          "boundary": "Метод главной книги через предисловие; оценкиредакторов атрибутированы.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -3917,7 +3917,7 @@
             "BIB-07",
             "BIB-06"
           ],
-          "boundary": "Providence,прощение,антропология,сохранившийсяразбор1Tim;неполныйNichol.",
+          "boundary": "Providence,прощение,антропология,сохранившийсяразбор1Tim; неполныйNichol.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -3933,7 +3933,7 @@
             "BIO-22",
             "BIB-08"
           ],
-          "boundary": "Spurgeon—одинантологическийкейс;Wood—передачаформулы;реклама—нечитательскоеусвоение.",
+          "boundary": "Spurgeon— одинантологическийкейс;Wood— передачаформулы; реклама— нечитательскоеусвоение.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -3949,7 +3949,7 @@
             "CTX-16",
             "BIB-04"
           ],
-          "boundary": "Зависимостьсвидетелей,пагинация,титулы,неизвестнаядатапроповеди;неустранённыепробелы.",
+          "boundary": "Зависимостьсвидетелей,пагинация,титулы,неизвестнаядатапроповеди; неустранённыепробелы.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -3973,7 +3973,7 @@
             "CTX-09",
             "CTX-12"
           ],
-          "boundary": "Режим,границысвободы,университеты;не действияЧарнока.",
+          "boundary": "Режим,границысвободы,университеты; не действияЧарнока.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -3990,7 +3990,7 @@
             "BIO-17",
             "CORE-06"
           ],
-          "boundary": "Обучение/должности по названным авторам;27/28июля показывать как конфликт, не как независимо установленные даты.",
+          "boundary": "Обучение/должности по названным авторам;27/28 июля показывать как конфликт, не как независимо установленные даты.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -4006,7 +4006,7 @@
             "TXT-15",
             "TXT-16"
           ],
-          "boundary": "Редакторские свидетельства о работе систочниками;не вся личнаябиблиотека.",
+          "boundary": "Редакторские свидетельства о работе систочниками; не вся личнаябиблиотека.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -4023,7 +4023,7 @@
             "TXT-18",
             "TXT-20"
           ],
-          "boundary": "Пять конкретных экзегетических случаев;не исчерпывающая герменевтика.",
+          "boundary": "Пять конкретных экзегетических случаев; не исчерпывающая герменевтика.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -4039,7 +4039,7 @@
             "TXT-07",
             "TXT-08"
           ],
-          "boundary": "Атеизм/неизменность/грехвозрождённых/провидение;не полный синтез.",
+          "boundary": "Атеизм/неизменность/грехвозрождённых/провидение; не полный синтез.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -4056,7 +4056,7 @@
             "BIB-03",
             "FST-01"
           ],
-          "boundary": "Титулы иредакционнаясборка;первоеиздание/основнойVol.IIнеподменяются.",
+          "boundary": "Титулы иредакционнаясборка; первоеиздание/основнойVol.IIнеподменяются.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -4072,7 +4072,7 @@
             "TXT-16",
             "TXT-15"
           ],
-          "boundary": "Метод главной книги через предисловие;оценкиредакторов атрибутированы.",
+          "boundary": "Метод главной книги через предисловие; оценкиредакторов атрибутированы.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -4088,7 +4088,7 @@
             "BIB-07",
             "BIB-06"
           ],
-          "boundary": "Providence,прощение,антропология,сохранившийсяразбор1Tim;неполныйNichol.",
+          "boundary": "Providence,прощение,антропология,сохранившийсяразбор1Tim; неполныйNichol.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -4104,7 +4104,7 @@
             "BIO-22",
             "BIB-08"
           ],
-          "boundary": "Spurgeon—одинантологическийкейс;Wood—передачаформулы;реклама—нечитательскоеусвоение.",
+          "boundary": "Spurgeon— одинантологическийкейс;Wood— передачаформулы; реклама— нечитательскоеусвоение.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -4120,7 +4120,7 @@
             "CTX-16",
             "BIB-04"
           ],
-          "boundary": "Зависимостьсвидетелей,пагинация,титулы,неизвестнаядатапроповеди;неустранённыепробелы.",
+          "boundary": "Зависимостьсвидетелей,пагинация,титулы,неизвестнаядатапроповеди; неустранённыепробелы.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -4144,7 +4144,7 @@
             "CTX-09",
             "CTX-12"
           ],
-          "boundary": "Режим,границысвободы,университеты;не действияЧарнока.",
+          "boundary": "Режим,границысвободы,университеты; не действияЧарнока.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -4161,7 +4161,7 @@
             "BIO-17",
             "CORE-06"
           ],
-          "boundary": "Обучение/должности по названным авторам;27/28июля показывать как конфликт, не как независимо установленные даты.",
+          "boundary": "Обучение/должности по названным авторам;27/28 июля показывать как конфликт, не как независимо установленные даты.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -4177,7 +4177,7 @@
             "TXT-15",
             "TXT-16"
           ],
-          "boundary": "Редакторские свидетельства о работе систочниками;не вся личнаябиблиотека.",
+          "boundary": "Редакторские свидетельства о работе систочниками; не вся личнаябиблиотека.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -4194,7 +4194,7 @@
             "TXT-18",
             "TXT-20"
           ],
-          "boundary": "Пять конкретных экзегетических случаев;не исчерпывающая герменевтика.",
+          "boundary": "Пять конкретных экзегетических случаев; не исчерпывающая герменевтика.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -4210,7 +4210,7 @@
             "TXT-07",
             "TXT-08"
           ],
-          "boundary": "Атеизм/неизменность/грехвозрождённых/провидение;не полный синтез.",
+          "boundary": "Атеизм/неизменность/грехвозрождённых/провидение; не полный синтез.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -4227,7 +4227,7 @@
             "BIB-03",
             "FST-01"
           ],
-          "boundary": "Титулы иредакционнаясборка;первоеиздание/основнойVol.IIнеподменяются.",
+          "boundary": "Титулы иредакционнаясборка; первоеиздание/основнойVol.IIнеподменяются.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -4243,7 +4243,7 @@
             "TXT-16",
             "TXT-15"
           ],
-          "boundary": "Метод главной книги через предисловие;оценкиредакторов атрибутированы.",
+          "boundary": "Метод главной книги через предисловие; оценкиредакторов атрибутированы.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -4259,7 +4259,7 @@
             "BIB-07",
             "BIB-06"
           ],
-          "boundary": "Providence,прощение,антропология,сохранившийсяразбор1Tim;неполныйNichol.",
+          "boundary": "Providence,прощение,антропология,сохранившийсяразбор1Tim; неполныйNichol.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -4275,7 +4275,7 @@
             "REC-08",
             "BIB-08"
           ],
-          "boundary": "Антология,критикаHoek,похвалаSymington,редакторская реклама;не независимый консенсус и не весь след влияния.",
+          "boundary": "Антология,критикаHoek,похвалаSymington,редакторская реклама; не независимый консенсус и не весь след влияния.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -4291,7 +4291,7 @@
             "CTX-16",
             "BIB-04"
           ],
-          "boundary": "Зависимостьсвидетелей,пагинация,титулы,неизвестнаядатапроповеди;неустранённыепробелы.",
+          "boundary": "Зависимостьсвидетелей,пагинация,титулы,неизвестнаядатапроповеди; неустранённыепробелы.",
           "selectionState": "SELECTION_ONLY",
           "publicationState": "BLOCKED",
           "holds": [
@@ -4319,8 +4319,8 @@
           "RCX-01"
         ],
         "counterpartRefs": [],
-        "label": "Wood,1691,p491:полемическая политическая рамка",
-        "boundary": "Не независимая проверка каждого биографического факта;не богословское опровержение.",
+        "label": "Wood,1691,p491: полемическая политическая рамка",
+        "boundary": "Не независимая проверка каждого биографического факта; не богословское опровержение.",
         "independenceState": "NOT_ESTABLISHED",
         "influenceState": "NOT_INFERRED",
         "evidenceClass": "A1",
@@ -4340,7 +4340,7 @@
           "REC-03"
         ],
         "counterpartRefs": [],
-        "label": "Spurgeon,Psalm103:подписанная выдержка/Condensed",
+        "label": "Spurgeon,Psalm103: подписанная выдержка/Condensed",
         "boundary": "Один антологический кейс,не два независимых читателя и не принятие всей системы.",
         "independenceState": "NOT_ESTABLISHED",
         "influenceState": "NOT_INFERRED",
@@ -4363,7 +4363,7 @@
           "BIB-02"
         ],
         "counterpartRefs": [],
-        "label": "Veel/Cockerill,1699:сборка текста и реклама Works",
+        "label": "Veel/Cockerill,1699: сборка текста и реклама Works",
         "boundary": "Реклама и редакторский труд не доказывают продажи,тираж или усвоение читателями.",
         "independenceState": "NOT_ESTABLISHED",
         "influenceState": "NOT_INFERRED",
@@ -4383,8 +4383,8 @@
           "REC-08"
         ],
         "counterpartRefs": [],
-        "label": "Symington:похвала с условными литературными сравнениями",
-        "boundary": "Транскрипция;год/страница первопечати не проверены;цитаты редакторов внутри не независимые оценки.",
+        "label": "Symington: похвала с условными литературными сравнениями",
+        "boundary": "Транскрипция; год/страница первопечати не проверены; цитаты редакторов внутри не независимые оценки.",
         "independenceState": "NOT_ESTABLISHED",
         "influenceState": "NOT_INFERRED",
         "evidenceClass": "B1",
@@ -4411,8 +4411,8 @@
           "RCX-03",
           "RCX-04"
         ],
-        "label": "Hoek,2014:трансцендентность/близость,страдание,провидение",
-        "boundary": "Одна смешанная оценка с критикой и признанием ценности;не консенсус и не доказательство прямого чтения вXVIIвеке.",
+        "label": "Hoek,2014: трансцендентность/близость,страдание,провидение",
+        "boundary": "Одна смешанная оценка с критикой и признанием ценности; не консенсус и не доказательство прямого чтения вXVIIвеке.",
         "independenceState": "NOT_ESTABLISHED",
         "influenceState": "NOT_INFERRED",
         "evidenceClass": "B1",
@@ -4450,29 +4450,29 @@
               "GOV-01",
               "GOV-03"
             ],
-            "safeUse": "Нормативная рамка1653:публичная христианская религия и ограниченная защита исповедания с исключениями;не секулярный режим."
+            "safeUse": "Нормативная рамка 1653: публичная христианская религия и ограниченная защита исповедания с исключениями; не секулярный режим."
           },
           {
             "refs": [
               "CTX-02",
               "CTX-04"
             ],
-            "safeUse": "Различать1662:норму лишения должностей и1670:штрафные нормы собраний;не выводить личное дело Чарнока из общей нормы."
+            "safeUse": "Различать 1662: норму лишения должностей и1670: штрафные нормы собраний; не выводить личное дело Чарнока из общей нормы."
           },
           {
             "refs": [
               "CTX-09"
             ],
-            "safeUse": "Университетская среда менялась и была конфликтной;арест Holdsworth описывает среду,не действия Чарнока."
+            "safeUse": "Университетская среда менялась и была конфликтной; арест Holdsworth описывает среду,не действия Чарнока."
           }
         ],
         "exclusions": [
           "Не универсальная история гражданских войн/всех религиозных групп.",
-          "Не доказанная личная лицензия,арест,выплата или изгнание Чарнока1662.",
-          "Не тождество Dublin1660 и английского Act1662;не проекция секулярной свободы на1653.",
-          "Ирландские предписания1652 и декларация1672 остаются резервом,не новыми основными цитатами."
+          "Не доказанная личная лицензия,арест,выплата или изгнание Чарнока 1662.",
+          "Не тождество Dublin1660 и английского Act1662; не проекция секулярной свободы на 1653.",
+          "Ирландские предписания 1652 и декларация 1672 остаются резервом,не новыми основными цитатами."
         ],
-        "boundary": "Достаточно для ограниченного введения в среду и нормы;не для полной социальной истории или персонального судебного дела.",
+        "boundary": "Достаточно для ограниченного введения в среду и нормы; не для полной социальной истории или персонального судебного дела.",
         "publicationState": "BLOCKED",
         "holds": [
           "PUBLICATION_HOLD"
@@ -4492,25 +4492,25 @@
             "refs": [
               "TXT-08"
             ],
-            "safeUse": "Providence:знание ради управления,а не пассивный взгляд;пересказ собственного аргумента проповедника."
+            "safeUse": "Providence: знание ради управления,а не пассивный взгляд; пересказ собственного аргумента проповедника."
           },
           {
             "refs": [
               "TXT-04"
             ],
-            "safeUse": "Пастырское толкование Пс32 через лексику греха/прощения;не подтверждение каждой этимологии."
+            "safeUse": "Пастырское толкование Пс32 через лексику греха/прощения; не подтверждение каждой этимологии."
           },
           {
             "refs": [
               "BIB-07"
             ],
-            "safeUse": "Enmity:различение сотворённой и повреждённой природы в рассуждении по Рим8:7."
+            "safeUse": "Enmity: различение сотворённой и повреждённой природы в рассуждении по Рим8:7."
           },
           {
             "refs": [
               "BIB-06"
             ],
-            "safeUse": "Редактор различает утраченный первый разбор и сохранившееся продолжение1Тим1:15;история передачи не заменяется общим названием книги."
+            "safeUse": "Редактор различает утраченный первый разбор и сохранившееся продолжение1Тим 1:15; история передачи не заменяется общим названием книги."
           }
         ],
         "exclusions": [
@@ -4518,7 +4518,7 @@
           "Не все три утраченные проповеди якобы найдены.",
           "Не установлены время/место произнесения Enmity,авторизация всех печатей или первопечатный Supplement1674."
         ],
-        "boundary": "Достаточно для выборочного обзора иных текстов и редакционной передачи;полный синтез возрождения/пятитомника вне принятого объёма.",
+        "boundary": "Достаточно для выборочного обзора иных текстов и редакционной передачи; полный синтез возрождения/пятитомника вне принятого объёма.",
         "publicationState": "BLOCKED",
         "holds": [
           "PUBLICATION_HOLD"
@@ -4538,19 +4538,19 @@
             "refs": [
               "REC-02"
             ],
-            "safeUse": "Spurgeon:один случай подписанного антологического употребления;не принятие всей системы."
+            "safeUse": "Spurgeon: один случай подписанного антологического употребления; не принятие всей системы."
           },
           {
             "refs": [
               "REC-05"
             ],
-            "safeUse": "Hoek2014:атрибутированная критическая оценка;сопровождать положительным итогом REC-06 из receptionReview,не превращать в консенсус."
+            "safeUse": "Hoek2014: атрибутированная критическая оценка; сопровождать положительным итогом REC-06 из receptionReview,не превращать в консенсус."
           },
           {
             "refs": [
               "REC-08"
             ],
-            "safeUse": "Symington web:похвала с условным сравнением;не новое независимое биографическое доказательство."
+            "safeUse": "Symington web: похвала с условным сравнением; не новое независимое биографическое доказательство."
           },
           {
             "refs": [
@@ -4560,11 +4560,11 @@
           }
         ],
         "exclusions": [
-          "Не непрерывная цепь всех читателей1680–2026.",
+          "Не непрерывная цепь всех читателей 1680–2026.",
           "Не пять независимых подтверждений и не автоматическое влияние из переиздания/рекламы.",
           "Не прямая цитата из несверенного PDF Hoek,не проверенная печатная страница Symington."
         ],
-        "boundary": "Достаточно для нескольких типизированных маршрутов рецепции с критикой и оговорками;не для измерения всеобщего влияния.",
+        "boundary": "Достаточно для нескольких типизированных маршрутов рецепции с критикой и оговорками; не для измерения всеобщего влияния.",
         "publicationState": "BLOCKED",
         "holds": [
           "PUBLICATION_HOLD"
@@ -4604,7 +4604,7 @@
           "PUBLICATION_HOLD"
         ],
         "publicationState": "BLOCKED",
-        "attribution": "Instrument of Government1653:печатная нормативная статьяXXXVII,не слова Чарнока.",
+        "attribution": "Instrument of Government1653: печатная нормативная статьяXXXVII,не слова Чарнока.",
         "translationState": "NOT_PREPARED",
         "textKind": "LEXICAL_FRAGMENT_NOT_FINAL_QUOTATION"
       },
@@ -4622,7 +4622,7 @@
           ],
           "section": "Exact lexical locus in pinned TCP object"
         },
-        "boundary": "27июля1680/около52лет — утверждение Wood, не приходской регистр",
+        "boundary": "27 июля 1680/около 52 лет — утверждение Wood, не приходской регистр",
         "archive": {
           "kind": "PINNED_TCP_XML",
           "source": "A71277",
@@ -4640,7 +4640,7 @@
           "PUBLICATION_HOLD"
         ],
         "publicationState": "BLOCKED",
-        "attribution": "Anthony Wood1691:сообщение о смерти/возрасте,не актовая запись.",
+        "attribution": "Anthony Wood1691: сообщение о смерти/возрасте,не актовая запись.",
         "translationState": "NOT_PREPARED",
         "textKind": "LEXICAL_FRAGMENT_NOT_FINAL_QUOTATION"
       },
@@ -4658,7 +4658,7 @@
           ],
           "section": "Exact lexical locus in pinned TCP object"
         },
-        "boundary": "Титул листка сообщает28июля; CONFLICT с Wood27июля; не выбирать один день без оговорки.",
+        "boundary": "Титул листка сообщает 28 июля; CONFLICT с Wood27 июля; не выбирать один день без оговорки.",
         "archive": {
           "kind": "PINNED_TCP_XML",
           "source": "B02133",
@@ -4676,7 +4676,7 @@
           "PUBLICATION_HOLD"
         ],
         "publicationState": "BLOCKED",
-        "attribution": "Анонимный титул The Sayings1680:сообщение о смерти/погребении,не слова умершего и не приходский регистр.",
+        "attribution": "Анонимный титул The Sayings1680: сообщение о смерти/погребении,не слова умершего и не приходский регистр.",
         "translationState": "NOT_PREPARED",
         "textKind": "LEXICAL_FRAGMENT_NOT_FINAL_QUOTATION"
       },
@@ -4713,7 +4713,7 @@
           "PUBLICATION_HOLD"
         ],
         "publicationState": "BLOCKED",
-        "attribution": "Veel & Adams,To the Reader1682:редакторская оценка работы со Schoolmen,не прямая речь Чарнока.",
+        "attribution": "Veel & Adams,To the Reader1682: редакторская оценка работы со Schoolmen,не прямая речь Чарнока.",
         "translationState": "NOT_PREPARED",
         "textKind": "LEXICAL_FRAGMENT_NOT_FINAL_QUOTATION"
       },
@@ -4749,7 +4749,7 @@
           "PUBLICATION_HOLD"
         ],
         "publicationState": "BLOCKED",
-        "attribution": "Veel & Adams,To the Reader1682:редакторское заявление о рукописях,не полученный автограф.",
+        "attribution": "Veel & Adams,To the Reader1682: редакторское заявление о рукописях,не полученный автограф.",
         "translationState": "NOT_PREPARED",
         "textKind": "LEXICAL_FRAGMENT_NOT_FINAL_QUOTATION"
       },
@@ -4785,7 +4785,7 @@
           "PUBLICATION_HOLD"
         ],
         "publicationState": "BLOCKED",
-        "attribution": "Чарнок,Churches Stability:рассуждение об авторе/времени Пс87.",
+        "attribution": "Чарнок,Churches Stability: рассуждение об авторе/времени Пс87.",
         "translationState": "NOT_PREPARED",
         "textKind": "LEXICAL_FRAGMENT_NOT_FINAL_QUOTATION"
       },
@@ -4821,7 +4821,7 @@
           "PUBLICATION_HOLD"
         ],
         "publicationState": "BLOCKED",
-        "attribution": "Чарнок:рассуждение о неизменности/творении.",
+        "attribution": "Чарнок: рассуждение о неизменности/творении.",
         "translationState": "NOT_PREPARED",
         "textKind": "LEXICAL_FRAGMENT_NOT_FINAL_QUOTATION"
       },
@@ -4857,7 +4857,7 @@
           "PUBLICATION_HOLD"
         ],
         "publicationState": "BLOCKED",
-        "attribution": "Чарнок:различение интеллектуального и практического атеизма.",
+        "attribution": "Чарнок: различение интеллектуального и практического атеизма.",
         "translationState": "NOT_PREPARED",
         "textKind": "LEXICAL_FRAGMENT_NOT_FINAL_QUOTATION"
       },
@@ -4893,7 +4893,7 @@
           "PUBLICATION_HOLD"
         ],
         "publicationState": "BLOCKED",
-        "attribution": "Edward Veel,Advertisement1699:о работе Ashton и соединении материалов.",
+        "attribution": "Edward Veel,Advertisement1699: о работе Ashton и соединении материалов.",
         "translationState": "NOT_PREPARED",
         "textKind": "LEXICAL_FRAGMENT_NOT_FINAL_QUOTATION"
       },
@@ -4929,7 +4929,7 @@
           "PUBLICATION_HOLD"
         ],
         "publicationState": "BLOCKED",
-        "attribution": "Veel & Adams,To the Reader1682:редакторская характеристика доктринального разбора.",
+        "attribution": "Veel & Adams,To the Reader1682: редакторская характеристика доктринального разбора.",
         "translationState": "NOT_PREPARED",
         "textKind": "LEXICAL_FRAGMENT_NOT_FINAL_QUOTATION"
       },
@@ -4966,7 +4966,7 @@
           "PUBLICATION_HOLD"
         ],
         "publicationState": "BLOCKED",
-        "attribution": "Чарнок,Providence1680:знание и управление.",
+        "attribution": "Чарнок,Providence1680: знание и управление.",
         "translationState": "NOT_PREPARED",
         "textKind": "LEXICAL_FRAGMENT_NOT_FINAL_QUOTATION"
       },
@@ -5002,7 +5002,7 @@
           "PUBLICATION_HOLD"
         ],
         "publicationState": "BLOCKED",
-        "attribution": "Чарнок,Enmity,печатная передача1699:сотворённая/повреждённая природа.",
+        "attribution": "Чарнок,Enmity,печатная передача 1699: сотворённая/повреждённая природа.",
         "translationState": "NOT_PREPARED",
         "textKind": "LEXICAL_FRAGMENT_NOT_FINAL_QUOTATION"
       },
@@ -5038,7 +5038,7 @@
           "PUBLICATION_HOLD"
         ],
         "publicationState": "BLOCKED",
-        "attribution": "Чарнок:лексический разбор Пс32,не подтверждение этимологий современной филологией.",
+        "attribution": "Чарнок: лексический разбор Пс32,не подтверждение этимологий современной филологией.",
         "translationState": "NOT_PREPARED",
         "textKind": "LEXICAL_FRAGMENT_NOT_FINAL_QUOTATION"
       },
@@ -5074,7 +5074,7 @@
           "PUBLICATION_HOLD"
         ],
         "publicationState": "BLOCKED",
-        "attribution": "Книготорговое объявление в объекте1699:не отзыв читателя и не авторская речь Чарнока.",
+        "attribution": "Книготорговое объявление в объекте 1699: не отзыв читателя и не авторская речь Чарнока.",
         "translationState": "NOT_PREPARED",
         "textKind": "LEXICAL_FRAGMENT_NOT_FINAL_QUOTATION"
       },
@@ -5092,7 +5092,7 @@
           ],
           "section": "Scripture table;pagination warning"
         },
-        "boundary": "Предупреждение о повторных номерах и first/second folio не доказывает два отдельных тома;для физической структуры нужен экземпляр/скан.",
+        "boundary": "Предупреждение о повторных номерах и first/second folio не доказывает два отдельных тома; для физической структуры нужен экземпляр/скан.",
         "archive": {
           "kind": "PINNED_TCP_XML",
           "source": "A32723",
@@ -5110,7 +5110,7 @@
           "PUBLICATION_HOLD"
         ],
         "publicationState": "BLOCKED",
-        "attribution": "Примечание печатного Scripture table:составитель явно не установлен;не утверждать авторство Чарнока.",
+        "attribution": "Примечание печатного Scripture table: составитель явно не установлен; не утверждать авторство Чарнока.",
         "translationState": "NOT_PREPARED",
         "textKind": "LEXICAL_FRAGMENT_NOT_FINAL_QUOTATION"
       },
@@ -5146,7 +5146,7 @@
           "PUBLICATION_HOLD"
         ],
         "publicationState": "BLOCKED",
-        "attribution": "Edward Veel,Advertisement1699:неизвестные ему время/место Enmity.",
+        "attribution": "Edward Veel,Advertisement1699: неизвестные ему время/место Enmity.",
         "translationState": "NOT_PREPARED",
         "textKind": "LEXICAL_FRAGMENT_NOT_FINAL_QUOTATION"
       },
@@ -5161,7 +5161,7 @@
         "locator": {
           "description": "III;Deprivation"
         },
-        "boundary": "Отказ/неисполнение в срок влечёт лишение духовных должностей с оговоркой lawful impediment; это норма, не доказательство изгнания Чарнока из конкретного прихода1662",
+        "boundary": "Отказ/неисполнение в срок влечёт лишение духовных должностей с оговоркой lawful impediment; это норма, не доказательство изгнания Чарнока из конкретного прихода 1662",
         "archive": {
           "kind": "REGISTRY_OBSERVATION_ONLY",
           "source": "UNIFORMITY1662",
@@ -5179,7 +5179,7 @@
           "PUBLICATION_HOLD"
         ],
         "publicationState": "BLOCKED",
-        "attribution": "Act of Uniformity1662:нормативная статья,не личное судебное дело Чарнока.",
+        "attribution": "Act of Uniformity1662: нормативная статья,не личное судебное дело Чарнока.",
         "translationState": "NOT_PREPARED",
         "textKind": "NO_DIRECT_QUOTATION_SELECTED"
       },
@@ -5194,7 +5194,7 @@
         "locator": {
           "description": "I–IV;Penalties"
         },
-        "boundary": "Слушатель5шиллингов первый/10повтор;проповедник£20/£40;хозяин£20;не смешивать фунты и шиллинги;этим актом не доказан смертный приговор за посещение",
+        "boundary": "Слушатель 5 шиллингов первый/10 повтор; проповедник£20/£40; хозяин£20; не смешивать фунты и шиллинги; этим актом не доказан смертный приговор за посещение",
         "archive": {
           "kind": "REGISTRY_OBSERVATION_ONLY",
           "source": "CONVENTICLES1670",
@@ -5212,7 +5212,7 @@
           "PUBLICATION_HOLD"
         ],
         "publicationState": "BLOCKED",
-        "attribution": "Conventicle Act1670:штрафные нормы,не доказательство конкретного преследования.",
+        "attribution": "Conventicle Act1670: штрафные нормы,не доказательство конкретного преследования.",
         "translationState": "NOT_PREPARED",
         "textKind": "NO_DIRECT_QUOTATION_SELECTED"
       },
@@ -5248,7 +5248,7 @@
           "PUBLICATION_HOLD"
         ],
         "publicationState": "BLOCKED",
-        "attribution": "Jan Hoek2014:оценка автора статьи,не академический консенсус.",
+        "attribution": "Jan Hoek2014: оценка автора статьи,не академический консенсус.",
         "translationState": "NOT_PREPARED",
         "textKind": "NO_DIRECT_QUOTATION_SELECTED"
       },
@@ -5263,7 +5263,7 @@
         "locator": {
           "description": "https://www.apuritansmind.com/puritan-favorites/stephen-charnock-1628-1680/"
         },
-        "boundary": "Условное сравнение с Bunyan/Howe/Baxter внутри панегирика;не абсолютное ранжирование и не независимо подтверждённая психология Чарнока.",
+        "boundary": "Условное сравнение с Bunyan/Howe/Baxter внутри панегирика; не абсолютное ранжирование и не независимо подтверждённая психология Чарнока.",
         "archive": {
           "kind": "SELECTED_EXTRACT_ONLY",
           "source": "SYMINGTONWEB",
@@ -5285,7 +5285,7 @@
           "PUBLICATION_HOLD"
         ],
         "publicationState": "BLOCKED",
-        "attribution": "William Symington по атрибуции web-транскрипции;оригинальный выпуск/страница не сверены.",
+        "attribution": "William Symington по атрибуции web-транскрипции; оригинальный выпуск/страница не сверены.",
         "translationState": "NOT_PREPARED",
         "textKind": "NO_DIRECT_QUOTATION_SELECTED"
       },
@@ -5318,7 +5318,7 @@
           "RIGHTS_HOLD"
         ],
         "publicationState": "BLOCKED",
-        "attribution": "VCH,история Emmanuel:вторичное описание среды,не личное свидетельство Чарнока.",
+        "attribution": "VCH,история Emmanuel: вторичное описание среды,не личное свидетельство Чарнока.",
         "translationState": "NOT_PREPARED",
         "textKind": "NO_DIRECT_QUOTATION_SELECTED"
       },
@@ -5333,7 +5333,7 @@
         "locator": {
           "description": "Explanatory Notes and Quaint Sayings;v18"
         },
-        "boundary": "Подписанная выдержка;совпадение с A32723,p699,различие comma/semicolon и оформления не скрывать",
+        "boundary": "Подписанная выдержка; совпадение с A32723,p699,различие comma/semicolon и оформления не скрывать",
         "archive": {
           "kind": "REGISTRY_OBSERVATION_ONLY",
           "source": "SPURGEONPS103",
@@ -5351,7 +5351,7 @@
           "PUBLICATION_HOLD"
         ],
         "publicationState": "BLOCKED",
-        "attribution": "Spurgeon,антология Psalm103:выдержка с атрибуцией Чарноку,не вся система.",
+        "attribution": "Spurgeon,антология Psalm103: выдержка с атрибуцией Чарноку,не вся система.",
         "translationState": "NOT_PREPARED",
         "textKind": "NO_DIRECT_QUOTATION_SELECTED"
       },
@@ -5384,7 +5384,7 @@
           "RIGHTS_HOLD"
         ],
         "publicationState": "BLOCKED",
-        "attribution": "DIB,Henry Cromwell:вторичная хронология должностей,не оригинал акта назначения.",
+        "attribution": "DIB,Henry Cromwell: вторичная хронология должностей,не оригинал акта назначения.",
         "translationState": "NOT_PREPARED",
         "textKind": "NO_DIRECT_QUOTATION_SELECTED"
       }
@@ -5408,7 +5408,7 @@
         "graphPath": "data/biographies-shared-atlas-v1.json",
         "graphSha256": "b5c1c9d669c1352c1f49d117d2fb023a5845a776c66615b032309e762c00d765",
         "boundary": "Generated shared research-navigation projection,not a historical source/image or independent evidence;C applies to this illustration,not its people or constituent A/B source records. Mixed source restrictions;not approved for public product.",
-        "caption": "Общая исследовательская навигация. Типы связей не доказывают личный контакт или всеобщее влияние;источники и HOLD перечислены в реестре.",
+        "caption": "Общая исследовательская навигация. Типы связей не доказывают личный контакт или всеобщее влияние; источники и HOLD перечислены в реестре.",
         "supersededArtifacts": [
           {
             "sha256": "cf22d2199e56528bafb23c4c1ae7d5189f62d35c833e793db554c955d6651aa3",
@@ -5436,48 +5436,48 @@
     "reviewDate": "2026-10-26",
     "authorityRole": "corpus-specific-supporting-only",
     "closureMode": "RECEIPT_GATED_BOUNDED_RESEARCH",
-    "receiptPath": "data/charnock-handoff-receipt-v5.json",
+    "receiptPath": "data/charnock-handoff-receipt-v6.json",
     "architectureDocuments": 10,
     "dossierOwners": [
       {
         "path": "БИОГРАФИИ/Стивен Чарнок/00_README_AND_NAVIGATION.md",
         "role": "CURRENT_ENTRY",
-        "boundary": "Год1628 приблизителен;27/28июля1680 —CONFLICT;B.D. у Wood as I conceive. Старые каркасы ниже не проверенные актовые записи."
+        "boundary": "Год 1628 приблизителен;27/28 июля 1680 —CONFLICT;B.D. у Wood as I conceive. Старые каркасы ниже не проверенные актовые записи."
       },
       {
         "path": "БИОГРАФИИ/Стивен Чарнок/01_BIOGRAPHICAL_WITNESSES_AND_EVIDENCE_HIERARCHY.md",
         "role": "WITNESS_LAYER",
-        "boundary": "Текущее биографическое решение —02§10,не ранний счётчик конфликтов. Жанр похвалы не понижает первичный голос доB1 и не доказывает независимость."
+        "boundary": "Текущее биографическое решение — 02 §10,не ранний счётчик конфликтов. Жанр похвалы не понижает первичный голос доB1 и не доказывает независимость."
       },
       {
         "path": "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md",
         "role": "BIOGRAPHY_OWNER",
-        "boundary": "Текущая таблица40решений —§10;день смерти CONFLICT. Старые §§1–6 не конкурируют с ней;университетские/приходские акты не получены."
+        "boundary": "Текущая таблица 40 решений — §10; день смерти CONFLICT. Старые §§1–6 не конкурируют с ней; университетские/приходские акты не получены."
       },
       {
         "path": "БИОГРАФИИ/Стивен Чарнок/03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md",
         "role": "BIBLIOGRAPHY_OWNER",
-        "boundary": "Действующие контрольные слои:§12объекты/семейства,§13второй выпуск1676,§14два неотправленных запроса. Не полный VolII1684 и не первый Supplement1674."
+        "boundary": "Действующие контрольные слои:§12 объекты/семейства,§13 второй выпуск 1676,§14 два неотправленных запроса. Не полный VolII1684 и не первый Supplement1674."
       },
       {
         "path": "БИОГРАФИИ/Стивен Чарнок/04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
         "role": "THEOLOGY_AND_RECEPTION_OWNER",
-        "boundary": "Рецепция —§0AD,богословские/экзегетические опоры —реестр. Старые заявления о полном прочтении/всех сносках не текущая сертификация."
+        "boundary": "Рецепция — §0AD,богословские/экзегетические опоры — реестр. Старые заявления о полном прочтении/всех сносках не текущая сертификация."
       },
       {
         "path": "БИОГРАФИИ/Стивен Чарнок/05_CONTROVERSIES_AND_CLAIM_AUDIT.md",
         "role": "HISTORICAL_CLAIM_AUDIT",
-        "boundary": "Текущие решения —02§10/BCD. Участие1663не доказано;категорическое «опровергнуто» и полученный регистр/ордер из раннего пересказа не действующие результаты."
+        "boundary": "Текущие решения — 02 §10/BCD. Участие1663не доказано; категорическое «опровергнуто» и полученный регистр/ордер из раннего пересказа не действующие результаты."
       },
       {
         "path": "БИОГРАФИИ/Стивен Чарнок/06_CORPUS_ACCESS_MATRIX_AND_LOCATORS.md",
         "role": "QUOTATION_OWNER",
-        "boundary": "Текущий конечный план —§12:16кандидатов/7research-only/1SVG. Все BLOCKED/PUBLICATION_HOLD;переводы и публичный допуск не подготовлены."
+        "boundary": "Текущий конечный план — §12:16 кандидатов/7research-only/1 SVG. Все BLOCKED/PUBLICATION_HOLD; переводы и публичный допуск не подготовлены."
       },
       {
         "path": "БИОГРАФИИ/Стивен Чарнок/07_REPO_CROSSLINKS_AND_DRIVE_MIRROR.md",
         "role": "CROSSLINK_NAVIGATION",
-        "boundary": "91файл/763упоминания —историческая инвентаризация,не новый поиск. Общий атлас и source-owner links —навигация,не автоматическая сверка всех чужих цитат."
+        "boundary": "91 файл/763 упоминания — историческая инвентаризация,не новый поиск. Общий атлас и source-owner links — навигация,не автоматическая сверка всех чужих цитат."
       },
       {
         "path": "БИОГРАФИИ/Стивен Чарнок/08_ADAMS_AND_VEAL_TO_THE_READER_PRIMARY_EPISTLE.md",
@@ -5487,22 +5487,22 @@
       {
         "path": "БИОГРАФИИ/Стивен Чарнок/09_JOHNSON_FUNERAL_SERMON_1680_PRIMARY_TRANSCRIPTION.md",
         "role": "SOURCE_TRANSCRIPTION_APPENDIX",
-        "boundary": "Johnson сообщает собственные воспоминания/оценки. Около1644 —расчёт знакомства,не точная дата обращения;Josiah-like,не Jonah;гибель записи I believe."
+        "boundary": "Johnson сообщает собственные воспоминания/оценки. Около 1644 — расчёт знакомства,не точная дата обращения;Josiah-like,не Jonah; гибель записи I believe."
       },
       {
         "path": "БИОГРАФИИ/Стивен Чарнок/10_REPO_USAGE_LEDGER_AND_VERIFICATION_STATUS.md",
         "role": "REUSE_LEDGER",
-        "boundary": "Старое A2=цифровая копия SUPERSEDED:носитель сам не определяет класс. Текущая A1опора practical atheism —TXT-05/A32723p47;остальные внешние цитаты не получили массового допуска."
+        "boundary": "Старое A2=цифровая копия SUPERSEDED: носитель сам не определяет класс. Текущая A1 опора practical atheism —TXT-05/A32723p47; остальные внешние цитаты не получили массового допуска."
       },
       {
         "path": "БИОГРАФИИ/Стивен Чарнок/11_WOOD_ATHENAE_OXONIENSES_1691_PRIMARY_TRANSCRIPTION.md",
         "role": "SOURCE_TRANSCRIPTION_APPENDIX",
-        "boundary": "Wood —печатное сообщение,не университетский регистр. Fasti и Athenae одного автора не независимы;27июля не устраняет свидетельство28июля."
+        "boundary": "Wood — печатное сообщение,не университетский регистр. Fasti и Athenae одного автора не независимы;27 июля не устраняет свидетельство 28 июля."
       },
       {
         "path": "БИОГРАФИИ/Стивен Чарнок/12_THE_SAYINGS_1680_BROADSIDE_PRIMARY_TRANSCRIPTION.md",
         "role": "SOURCE_TRANSCRIPTION_APPENDIX",
-        "boundary": "B02133входит в11pinnedXML;получен CC0текст,не скан. «Единственный» и исчерпывающее совпадение всех афоризмов не сертифицируются этим пакетом."
+        "boundary": "B02133 входит в11pinnedXML; получен CC0 текст,не скан. «Единственный» и исчерпывающее совпадение всех афоризмов не сертифицируются этим пакетом."
       },
       {
         "path": "БИОГРАФИИ/Стивен Чарнок/13_NEW_POEMS_1680_ELEGY_ACROSTICS_EPITAPH_PRIMARY_TRANSCRIPTION.md",
@@ -5512,22 +5512,22 @@
       {
         "path": "БИОГРАФИИ/Стивен Чарнок/14_AN_ELEGY_1680_PRIMARY_TRANSCRIPTION.md",
         "role": "LEGACY_SOURCE_APPENDIX",
-        "boundary": "Ранняя транскрипция сохранена;A39134не входит в11pinnedXML. Импринт J.A.forThomasCockeril:печатник J.A.,книготорговец Cockerill. Два объекта не доказывают независимость;публичная цитата отсюда не выбрана."
+        "boundary": "Ранняя транскрипция сохранена;A39134не входит в11pinnedXML. Импринт J.A.forThomasCockeril: печатник J.A.,книготорговец Cockerill. Два объекта не доказывают независимость; публичная цитата отсюда не выбрана."
       },
       {
         "path": "БИОГРАФИИ/Стивен Чарнок/15_THE_EMMANUEL_LINE_PRESTON_POOLE_FOWLER.md",
         "role": "LITERARY_COMPARISON_OWNER",
-        "boundary": "Preston —редакторский литературный аналог,не личный учитель Чарнока. Не цепь доказанных преемств/заимствований;оригиналы всех внешних книг не получены."
+        "boundary": "Preston — редакторский литературный аналог,не личный учитель Чарнока. Не цепь доказанных преемств/заимствований; оригиналы всех внешних книг не получены."
       },
       {
         "path": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
         "role": "SERIES_SCOPE_OWNER",
-        "boundary": "Архитектура10будущих документов,а не18написанных глав. Текущий handoff —§20 и отдельная проверяемая квитанция;публикационный этап не открыт."
+        "boundary": "Архитектура 10 будущих документов,а не 18 написанных глав. Текущий handoff — §20 и отдельная проверяемая квитанция; публикационный этап не открыт."
       },
       {
         "path": "БИОГРАФИИ/Стивен Чарнок/17_PROMPT_PARALLEL_AGENT_HISTORICAL_CONTEXT.md",
         "role": "PARALLEL_PROMPT",
-        "boundary": "Промпт не означает выполненную работу другого агента. Новое расширение исследования/авторинг —только по отдельному заданию;не автоматический новый цикл поиска."
+        "boundary": "Промпт не означает выполненную работу другого агента. Новое расширение исследования/авторинг — только по отдельному заданию; не автоматический новый цикл поиска."
       }
     ],
     "scope": "Research material collection for a bounded10-document Charnock series only.18research dossiers are not18authored chapters. Accepted decisions retain all conflicts,HOLD and excluded claims. Not root authority,full corpus,all source images,publication approval or authoring.",

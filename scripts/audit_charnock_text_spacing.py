@@ -10,14 +10,19 @@ This script is a detector first and a repairer second:
     python3 scripts/audit_charnock_text_spacing.py                # report only
     python3 scripts/audit_charnock_text_spacing.py --dry-run      # show what would change
 
-`--apply` exists but is gated behind --force, because it is NOT safe on its own:
-the same JSON files carry ~2900 derived hashes (textSha256, noteSha256,
-canonicalRowSha256, canonicalAnchorSha256, ...) computed over these very strings.
-A mechanical repair leaves that hash graph stale, and only 1302 of those hashes
-are `sha256(text)` — the rest are cross-object or composite. Repair therefore
-belongs to a wave that regenerates the hashes and proves the regeneration by
-reproducing the current values first. See
+The two JSON files carry ~2300 derived hashes, and 123 of them pin rows that
+live inside those same two files (`canonicalRowSha256` over a quotationPlan or
+biographicalCoreReview row, and so on). wave45 repaired the JSON prose and
+re-derived exactly those 123 pins, proving for every refreshed pin that the old
+and new canonical bytes differ only in whitespace. Editing JSON values by hand
+therefore means walking that graph; text-level `--apply` on a JSON file is
+refused for that reason, and the value-level repair lives in
+scripts/repair_charnock_json_prose_spacing.py. See
 supplemental-audits/TEXT_SPACING_DEFECT_2026-11-16.md.
+
+Two plan fields are byte-for-byte copies of `data/biographies-shared-atlas-v1.json`
+shipped for other biographies, so they must stay verbatim: the scan excises them
+and re-checks the equality instead of silently skipping them.
 
 Repair is deliberately conservative: it only inserts a space, never deletes or
 reorders characters, and it leaves anything that looks like a bibliographic or
@@ -29,6 +34,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 from pathlib import Path
 
@@ -51,6 +57,45 @@ SCRIPTURE = {
 
 # word directly before a number that is a reference marker, not a word needing a space
 REF_WORDS = {"p", "pp", "vol", "vols", "no", "n", "ch", "chs", "f", "ff", "fol", "fols", "r", "v", "vv"}
+
+
+ATLAS = ROOT / "data/biographies-shared-atlas-v1.json"
+# (json file, dotted path inside it, key it must equal verbatim inside the atlas)
+VERBATIM_SNAPSHOTS = (
+    ("data/charnock-series-editorial-plan-v1.json", "routingReview.excludedLinksSnapshot", "excludedLinks"),
+    ("data/charnock-series-editorial-plan-v1.json", "routingReview.edgeBoundarySnapshot", "edges"),
+)
+
+
+def text_for_scan(path: Path, report: dict, atlas_override: dict | None = None) -> str:
+    """Read a corpus file, excising the subtrees that must stay verbatim.
+
+    The two excluded snapshot fields are copies of a shared atlas file that other
+    biographies also consume, so reflowing them would break the plan's own
+    equality pin. They are excised only after the copy is re-verified: an
+    exemption that no longer matches the atlas fails the audit instead of
+    hiding a defect.
+    """
+    text = path.read_text(encoding="utf-8")
+    name = str(path.relative_to(ROOT)).replace(os.sep, "/")
+    rules = [r for r in VERBATIM_SNAPSHOTS if r[0] == name]
+    if not rules:
+        return text
+    atlas = atlas_override if atlas_override is not None else json.loads(ATLAS.read_text(encoding="utf-8"))
+    data = json.loads(text)
+    for _, dotted, atlas_key in rules:
+        node = data
+        for part in dotted.split("."):
+            node = node[part]
+        if node != atlas[atlas_key]:
+            raise ValueError(f"verbatim snapshot drifted from the shared atlas: {dotted}")
+        report["verbatimSnapshotsVerified"] = report.get("verbatimSnapshotsVerified", 0) + 1
+        parent = data
+        parts = dotted.split(".")
+        for part in parts[:-1]:
+            parent = parent[part]
+        del parent[parts[-1]]
+    return json.dumps(data, ensure_ascii=False, indent=2)
 
 
 def corpus_files(scope: str = "all") -> list[Path]:
@@ -160,7 +205,7 @@ def propose(text: str) -> tuple[str, list[tuple[str, str]]]:
 def scan(scope: str = "all") -> dict:
     report = {"scope": scope, "files": {}, "totalFindings": 0, "byKind": {}}
     for path in corpus_files(scope):
-        text = path.read_text(encoding="utf-8")
+        text = text_for_scan(path, report)
         hits = findings(text)
         if not hits:
             continue
@@ -181,7 +226,14 @@ def scan(scope: str = "all") -> dict:
 def apply(dry_run: bool, scope: str = "all") -> dict:
     summary = {"scope": scope, "files": {}, "totalInsertions": 0, "dryRun": dry_run}
     for path in corpus_files(scope):
-        text = path.read_text(encoding="utf-8")
+        text = text_for_scan(path, summary)
+        if path.suffix == ".json":
+            if findings(text):
+                raise ValueError(
+                    f"{path.name} still has findings outside the verbatim snapshots; "
+                    "repair JSON values with scripts/repair_charnock_json_prose_spacing.py, "
+                    "never with a text-level --apply")
+            continue
         fixed, changes = propose(text)
         if not changes:
             continue

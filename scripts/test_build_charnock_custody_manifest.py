@@ -84,7 +84,7 @@ class CustodyManifestTests(unittest.TestCase):
         )
         self.assertEqual(custody["supersedes"], "data/charnock-custody-manifest-v4.json")
         self.assertEqual(custody["regenerateWith"], "python3 scripts/build_charnock_custody_manifest.py")
-        self.assertEqual(CUSTODY_OUT, "data/charnock-custody-manifest-v6.json")
+        self.assertEqual(CUSTODY_OUT, "data/charnock-custody-manifest-v7.json")
 
 
 if __name__ == "__main__":

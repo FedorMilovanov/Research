@@ -1,6 +1,7 @@
 import copy
 import json
 import unittest
+from pathlib import Path
 from audit_charnock_series_plan import ROOT, PLAN, check
 
 
@@ -85,7 +86,16 @@ class EditorialPlanTests(unittest.TestCase):
             check(self.plan)
 
     def test_unchanged_packet_members_not_exempted(self):
-        self.plan['expectedChangedPacketMembers'].append('data/charnock-biographical-anchors-v1.json')
+        # Declaring a member that did *not* change must fail, so pick one from the
+        # receipt that the observed drift does not contain: hard-coding anchors
+        # would make this test a tautology in any wave that repairs that file.
+        report = check(self.plan)
+        root = Path(__file__).resolve().parents[1]
+        receipt = json.loads((root / self.plan['baselineReceipt']).read_text())
+        members = [n for n in receipt['sourceManifest']['files'] if not n.startswith('xml/')]
+        unchanged = sorted(set(members) - set(report['changedPacketMembers']) - {'AGENT_RULES.md'})
+        self.assertTrue(unchanged, 'no unchanged member left to test the declaration rule')
+        self.plan['expectedChangedPacketMembers'].append(unchanged[0])
         with self.assertRaisesRegex(ValueError, 'Unexpected changes'):
             check(self.plan)
 

@@ -1,3 +1,4 @@
+import json
 import unittest
 
 from audit_charnock_text_spacing import findings, propose, scan
@@ -64,6 +65,26 @@ class SpacingDetectorTests(unittest.TestCase):
         )
         for entry in report["files"].values():
             self.assertEqual(len(entry["samples"]), min(5, entry["count"]))
+
+
+class VerbatimSnapshotTests(unittest.TestCase):
+    """The plan keeps two byte-exact copies of the shared atlas: exempt but checked."""
+
+    def test_shared_atlas_snapshots_are_exempt_but_verified(self):
+        report = scan("all")
+        self.assertEqual(report["totalFindings"], 0, report["files"])
+        self.assertEqual(report["verbatimSnapshotsVerified"], 2)
+
+    def test_snapshot_that_drifted_from_the_atlas_is_not_exempted(self):
+        from audit_charnock_text_spacing import ATLAS, ROOT, text_for_scan
+        atlas = json.loads(ATLAS.read_text(encoding="utf-8"))
+        atlas["edges"] = []
+        with self.assertRaisesRegex(ValueError, "verbatim snapshot drifted"):
+            text_for_scan(ROOT / "data/charnock-series-editorial-plan-v1.json", {}, atlas)
+
+
+if __name__ == "__main__":
+    unittest.main()
 
 
 if __name__ == "__main__":
