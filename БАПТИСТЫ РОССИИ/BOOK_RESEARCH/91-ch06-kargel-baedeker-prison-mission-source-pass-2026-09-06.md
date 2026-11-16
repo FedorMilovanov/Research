@@ -216,3 +216,28 @@ The `early/primary Bedeker-Kargel travel locators` gate is now **substantially r
 - Kargel memoir exact edition/page locators = open;
 - 12k = strongly sourced reported total;
 - 40k = weaker reported estimate, keep bounded.
+
+
+---
+
+## 16 ноября 2026 — major primary source upgrade: Ivan Kargel's first-person memoir
+
+В сентябре 2026 этот dossier имел P0 «получить "От края и до края земли"». **В данном проходе непосредственно найдено полное доступное русское издание собственной книги Каргеля**, что важнее ранних изложений миссии через Латимера и Пагеля.
+
+**Object:** [Каргель И. В. «От края и до края земли»](https://www.lio.org/shop/images/products/media/01-412_01_Kargel%2C%20Iwan%20-%20Zwischen%20den%20Enden%20der%20Erde%20download.pdf), «Свет на Востоке», Киев, 2017, 240 с., 2-е изд., перевод с немецкого **О. Гандзий**, ISBN 978-617-7554-00-3 / 978-3-944772-36-3. Издательское предисловие относит оригинальное немецкое сочинение к **1928 году**. **Web PDF text layer readable and inspected; web screenshot for page imagery returned cache miss**. Не утверждать image-level/page-facsimile verified.
+
+### События по авторскому тексту, с соответствующими печатными страницами
+
+- **С. 15–18**: Каргель сам говорит о подготовке большого маршрута **в 1889 году**, решении ехать **в 1890 году**, перевозке библейских книг между отделениями общества и рисках ледостава. Это фиксирует **1889 preparations ≠ 1890 journey** прямо из ретроспективных воспоминаний.
+- **С. 19–20**: **8 мая 1890 года** Каргель выехал раньше Бедекера из СПб; **10 мая** Бедекер прибыл в Москву, посещена центральная пересыльная тюрьма; оценка **около 3000 заключённых**. Число = **авторский рассказ**, не independently verified jail census.
+- **С. 29–33**: путь через Нижний Новгород, пароход, рассказ о бедных переселенцах в Сибирь, совместная организация горячей еды и раздача Новых Заветов. **Воспоминание содержит диалоги, написанные спустя годы**. Для literary prose использовать сжатую авторскую атрибуцию, не выдавать за стенограмму и не воспроизводить большие защищённые переводные пассажи.
+- **С. 34–35**: **19 мая 1890** Пермь, переполненная тюрьма и перебои перевозки заключённых; **20 мая** выезд через Урал.
+- **С. 132+**: Сахалин входит в главы книги; подробная количественная 1500/1000 attribution отдельно подтверждается ПЭ «Сахалинская область». Не смешивать с 12k/40k, которые встречаются в поздних summaries.
+
+### Historiographical precedence
+
+1. First-person 1928 memoir, **access through 2017 copyrighted Russian translation** — direct author testimony on route and intended work; **not contemporaneous 1890 diary or state census**.
+2. Бедекеровские письма, процитированные поздними исследователями, — отдельный contemporaneous documentary track; точные original scan and page locators remain OPEN.
+3. БРЭ / ПЭ 1889–1891 — general macro-frame, **not one continuous three-year trip**.
+
+This closes **discovery and readable-text P0** for the Kargel memoir; leaves **original German 1928 physical identity, 2017 licensed reproduction/rights and PDF image-verification OPEN**. Do not assert full source-final closure.
