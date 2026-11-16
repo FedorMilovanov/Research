@@ -8763,3 +8763,12 @@ whitespace-check PASS. ED-02/06/08 OPEN;12формальных переводо�
 - Коммит, push, новая PR, слияние и разрешение публикации не выполняются.
 
 Контроль95: **672 теста PASS = 659 Charnock + 13 атлас**; Fowler-элегия 1677 прочтена и сравнена с элегией ЧARNОК 1680; CONFLICT-14 сужен (жанровое чтение «Fowler's place»).
+
+
+---
+
+### 2026-11-16 — CONFLICT-10 re-opened for burial date (not a correction by inference)
+
+**Previously recorded result in §21.138 remains HISTORICAL, not publication authority.** The previously read Chester, *The Parish Registers of St. Michael, Cornhill* (1882), p. 265, was transcribed in this dossier as **Aug. 7, 1680**. Independently, James M’Cosh, *The Complete Works of Stephen Charnock*, vol. I (Edinburgh, 1864), introduction, note adjacent to his narrative of July 30, directly quotes the parish register as: **“July 30. was buryed Stephen Charnock, minister, under the steeple.”** [Source, OCR of printed edition](https://www.digitalpuritan.net/Digital%20Puritan%20Resources/Charnock%2C%20Stephen/The%20Complete%20Works%20of%20Stephen%20Charnock%20%28vol.1%29.txt.html). Wood 1691 and *The Sayings* broadside 1680 both also report July 30 as burial date. These are **conflicting reports about a register**, not interchangeable calendar notations. A later edited publication (Chester 1882) must not be called itself a contemporary printed witness of 1680.
+
+**Action:** re-open source images at Chester p. 264–265 and inspect page-year grouping, same-person identification and printed transcription; read McCosh's printed footnote; independently seek manuscript or bishop's transcript at London Metropolitan Archives (`P69/MIC2`) to adjudicate. Until reconciled, `CONFLICT` and `LOCATOR_HOLD` remain for a claim of burial on one exact day. Do not extrapolate the day of death (27 vs 28 July) from a contested burial date. No changes to other witness transcriptions or to the historical data rows above.
