@@ -77,27 +77,8 @@
   "wave5": {
     "date": "2026-10-08",
     "scope": "card 04 (dam / blood): 29 loci B1–B29 and controls K1–K3; MT lemmas and morphology (morphhb); LXX mirrors with word-level diff; numbering check Ps 51:16 = LXX 50:16; controls Lev 5:11, 16:16, 16:19, 16:27, 17:15, Num 35:33, Deut 21:4–6; NT: Heb 9:19–22, 10:4, 12:7–14, 13:12, 13:20; Acts 15:20, 15:29, 21:25, 20:28; Matt 26:28, Mark 14:24, Luke 22:19–20; 1 John 1:7, 2:2, 4:10; Rom 3:25; 1 Pet 1:2; Heb 11:28; John 6:53–56; Rev 7:14; Eph 2:13; Col 1:20; lemma counts; Strong, BDB and LSJ glosses",
-    "resultsSummary": [
-      "MT: דָּם (1818) in 29 loci; lemmas and morphology checked against morphhb. LXX αἷμα in all loci except Gen 4:10 (number changed, plural → singular) and Exod 24:6 (verb shift \"put\" → \"poured\").",
-      "Deut 21:7 ketiv / qere: ketiv שפכה (3 fs) and qere שָׁפְכוּ (3 pl); LXX ἐξέχεαν (3 pl) follows the qere. EVIDENCE_HOLD.",
-      "Mirror discrepancies recorded: Gen 9:5 (FW omits ἀνθρώπου); Lev 16:14 (FW omits πρόσωπον); Lev 17:14 (SOL and FW πόσης vs ELI πάσης); Exod 12:7 (SOL and FW extra καὶ θμῶν); Exod 12:13 (FW ἐκτριφθῆναι). Other differences are transcription artefacts. LOCATOR_HOLD where mirrors disagree.",
-      "Numbering: Ps 51:16 (MT) = LXX 50:16 = ET 51:14; LXX Ps 50:18 = MT 51:18.",
-      "Counter-texts to \"no forgiveness without blood\" (Heb 9:22): Lev 5:11–13 (flour sin offering, no blood; control K3); Num 16:46–47 (incense; card 01).",
-      "Ritual without blood: Deut 21:1–9 (no sprinkling; LXX νευροκοπέω for MT \"break the neck\" in 21:4).",
-      "NT lemma counts (MorphGNT): αἷμα 97; ῥαντισμός 2; ῥαντίζω 4; αἱματεκχυσία 1; πνικτός 3; ἐκχέω 27; πρόσχυσις 1; ἱλαστήριον 2; ἱλασμός 2; λύτρωσις 3; ἀφαιρέω 10; ῥαίνω 0; ἐξιλάσκομαι 0; ἁγιάζω 28; καθαρίζω 31.",
-      "Lexicon: Strong H1818, H3722, H2236, H5137, H8210, H5355, H5315; BDB דם, זרק, נזה, שפך, נקי / נקה; LSJ αἷμα, ῥαντισμός, ῥαίνω, πνικτός; αἱματεκχυσία — no LSJ entry (Perseus).",
-      "Criterion 3 (classes a / b / c) recorded in card §6.3: (a) supports particular wording (Exod 24:8; Lev 16:15; Lev 17:11; Deut 21:8; Zech 9:11; Matt 26:28; Mark 14:24; Luke 22:20; Heb 13:12; Acts 20:28); (b) universal scope only in Gen 9:5–6 (not atonement) and Lev 17:10–13 (prohibition), universal atonement wording only in NT pointers (1 John 2:2; Col 1:20); (c) neutral loci listed.",
-      "H0 (blood as life given \"instead of\" life): identity of blood and life supported (R1); the substitution mechanism rests on the LXX ἀντί (Lev 17:11; Gen 9:6), not on the MT. Counter-readings R2–R5 recorded. EVIDENCE_HOLD; no verdict."
-    ],
-    "sourcesUsed": [
-      "S10",
-      "S11",
-      "S13",
-      "S14",
-      "S15",
-      "S16",
-      "S23"
-    ],
+    "resultsSummary": ["MT: דָּם (1818) in 29 loci; lemmas and morphology checked against morphhb. LXX αἷμα in all loci except Gen 4:10 (number changed, plural → singular) and Exod 24:6 (verb shift \"put\" → \"poured\").", "Deut 21:7 ketiv / qere: ketiv שפכה (3 fs) and qere שָׁפְכוּ (3 pl); LXX ἐξέχεαν (3 pl) follows the qere. EVIDENCE_HOLD.", "Mirror discrepancies recorded: Gen 9:5 (FW omits ἀνθρώπου); Lev 16:14 (FW omits πρόσωπον); Lev 17:14 (SOL and FW πόσης vs ELI πάσης); Exod 12:7 (SOL and FW extra καὶ θμῶν); Exod 12:13 (FW ἐκτριφθῆναι). Other differences are transcription artefacts. LOCATOR_HOLD where mirrors disagree.", "Numbering: Ps 51:16 (MT) = LXX 50:16 = ET 51:14; LXX Ps 50:18 = MT 51:18.", "Counter-texts to \"no forgiveness without blood\" (Heb 9:22): Lev 5:11–13 (flour sin offering, no blood; control K3); Num 16:46–47 (incense; card 01).", "Ritual without blood: Deut 21:1–9 (no sprinkling; LXX νευροκοπέω for MT \"break the neck\" in 21:4).", "NT lemma counts (MorphGNT): αἷμα 97; ῥαντισμός 2; ῥαντίζω 4; αἱματεκχυσία 1; πνικτός 3; ἐκχέω 27; πρόσχυσις 1; ἱλαστήριον 2; ἱλασμός 2; λύτρωσις 3; ἀφαιρέω 10; ῥαίνω 0; ἐξιλάσκομαι 0; ἁγιάζω 28; καθαρίζω 31.", "Lexicon: Strong H1818, H3722, H2236, H5137, H8210, H5355, H5315; BDB דם, זרק, נזה, שפך, נקי / נקה; LSJ αἷμα, ῥαντισμός, ῥαίνω, πνικτός; αἱματεκχυσία — no LSJ entry (Perseus).", "Criterion 3 (classes a / b / c) recorded in card §6.3: (a) supports particular wording (Exod 24:8; Lev 16:15; Lev 17:11; Deut 21:8; Zech 9:11; Matt 26:28; Mark 14:24; Luke 22:20; Heb 13:12; Acts 20:28); (b) universal scope only in Gen 9:5–6 (not atonement) and Lev 17:10–13 (prohibition), universal atonement wording only in NT pointers (1 John 2:2; Col 1:20); (c) neutral loci listed.", "H0 (blood as life given \"instead of\" life): identity of blood and life supported (R1); the substitution mechanism rests on the LXX ἀντί (Lev 17:11; Gen 9:6), not on the MT. Counter-readings R2–R5 recorded. EVIDENCE_HOLD; no verdict."],
+    "sourcesUsed": ["S10", "S11", "S13", "S14", "S15", "S16", "S23"],
     "status": "DONE_WAVE5_FIRST_VERSION_APPARATUS_PENDING"
   },
   "wave6": {
@@ -157,15 +138,7 @@
       "NT (SBLGNT, 16 places): 1 Cor 5:7 (allusion); John 19:36 (formula, source not unique); Heb 11:28 (allusion); Heb 9:19 (composite, hyssop); 1 Pet 1:19 (allusion; ἄμωμος from LXX Exod 29:1); John 1:29, 1:36, Rev 5:6 (stretch); Acts 8:32 (LXX Isa 53:7, pointer to card 11); Gospels — chronology HOLD.",
       "Not done: Swete 1887 apparatus (S12) for the mirror disputes; Göttingen (ARCHIVE_HOLD); HALOT; LSJ ἐξολεθρεύω and related lemmas."
     ],
-    "sourcesUsed": [
-      "S10",
-      "S11",
-      "S13",
-      "S14",
-      "S15",
-      "S16",
-      "S23"
-    ],
+    "sourcesUsed": ["S10", "S11", "S13", "S14", "S15", "S16", "S23"],
     "status": "DONE_WAVE8_FIRST_VERSION_APPARATUS_PENDING"
   },
   "wave9": {
@@ -183,15 +156,7 @@
       "NT (SBLGNT, 10 entries, 10 verses): Heb 5:3 (allusion to Lev 4:3); Heb 9:7; Heb 9:22; Heb 10:1; Heb 10:4; Heb 13:11–12 (outside the camp); Rom 8:3 (περὶ ἁμαρτίας, HOLD); Luke 2:24 (Lev 12:8; poor's birds); 2 Cor 5:21 (stretch).",
       "Not done: Swete 1887 apparatus (S12); Göttingen (ARCHIVE_HOLD); HALOT; LSJ ἐξιλάσκομαι, ἀφίημι, ἐξαγορεύω, τελείωσις."
     ],
-    "sourcesUsed": [
-      "S10",
-      "S11",
-      "S13",
-      "S14",
-      "S15",
-      "S16",
-      "S23"
-    ],
+    "sourcesUsed": ["S10", "S11", "S13", "S14", "S15", "S16", "S23"],
     "status": "DONE_WAVE9_FIRST_VERSION_APPARATUS_PENDING"
   },
   "wave10": {
@@ -212,15 +177,7 @@
       "Apparatus (lxx-swete encoding, card §4b): Lev 16:8 κλήρους F; 16:10 prefixes; 16:11 om καὶ τοῦ οἴκου; 16:19 ἐπ᾿ αὐτὸ Bab F; 16:21 om ἑτοίμου B*; 16:22 ἀνομίας F; 16:24 om τοῦ λαοῦ Α; 16:29 + δεκάτη; 16:34 καθάπερ; Exod 30:10 + τῶν ἁμαρτιῶν τοῦ ἐξιλασμοῦ AF. Image check pending (Swete 1887, S12).",
       "Not done: Swete 1887 apparatus by image (S12); Göttingen Leviticus 1986 / Exodus 1991 / Numeri 1982 (ARCHIVE_HOLD); HALOT; LSJ καθαρίζω, ῥαίνω, καταπέτασμα."
     ],
-    "sourcesUsed": [
-      "S10",
-      "S11",
-      "S13",
-      "S14",
-      "S15",
-      "S16",
-      "S23"
-    ],
+    "sourcesUsed": ["S10", "S11", "S13", "S14", "S15", "S16", "S23"],
     "status": "DONE_WAVE10_FIRST_VERSION_APPARATUS_PENDING"
   },
   "wave11": {
@@ -240,15 +197,7 @@
       "Lexica: BDB a.ce.ag אֵזוֹב 'hyssop'; p.eg.ab עָפָר 'dry earth, dust'; g.co.aa זָרַק with 'Pu. of water of purification poured over one defiled by a corpse'; n.cj.aa נָזָה 'spurt, spatter'; r.ci.ad צָמִיד 'cover, of vessel, Nu 19:15'; h.cs.ab חָלָל 'pierced, fatally wounded'; LSJ ῥαντισμός links LXX Num 19:9 with Heb 12:24 and 1 Pet 1:2; LSJ ἀφαγνίζω cites Num 19:19; LSJ ὕσσωπος names the Hebrew ʾēzōb. LSJ δάμαλις, ἁγνισμός, ζυγός not present as entries in the Perseus digitisation.",
       "Not done: Swete 1887 apparatus by image (S12); Göttingen Numeri 1982 / Leviticus 1986 / Exodus 1991 (ARCHIVE_HOLD); HALOT."
     ],
-    "sourcesUsed": [
-      "S10",
-      "S11",
-      "S13",
-      "S14",
-      "S15",
-      "S16",
-      "S23"
-    ],
+    "sourcesUsed": ["S10", "S11", "S13", "S14", "S15", "S16", "S23"],
     "status": "DONE_WAVE11_FIRST_VERSION_APPARATUS_PENDING"
   },
   "wave12": {
@@ -382,503 +331,25 @@
     "status": "DONE_WAVE17_FIRST_VERSION_APPARATUS_PENDING",
     "correctionNotice": "2026-11-03 supersedes defective results, not the original event date; earlier bytes retained in synchronization journal."
   },
-  "wave19": {
-    "date": "2026-11-15",
-    "card": "17_LXX_VERSIFICATION_AND_MIRROR_Z",
-    "scope": "Пересъём сдвига нумерации LXX (Лев. 5–7; Исх. 24–25) и согласия трёх разрешённых зеркал по 68 локусам כפר в Пятикнижии.",
-    "sources": "MT morphhb (3722 a, 93 стиха); ELI S11; SOL S10; F1K S23. Rahlfs не использован (S19/S22 EXCLUDED).",
-    "holdsOpened": [
-      "LOCATOR_HOLD (нумерация печатных изданий)",
-      "EVIDENCE_HOLD (независимость зеркал)"
-    ],
-    "holdsClosed": [],
-    "measured": {
-      "mtKprVerses": 93,
-      "pentateuchLoci": 68,
-      "allThreeIdentical": 39,
-      "eliSolF1kDiffers": 18,
-      "f1kSolEliDiffers": 6,
-      "allThreeDiffer": 4,
-      "textMissing": 1,
-      "lev16VersesChecked": 34
-    },
-    "measuredAt": "2026-11-15T00:00:00Z",
-    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
-    "publicationEligible": false
-  },
-  "wave20": {
-    "date": "2026-11-15",
-    "card": "18_LXX_KOPHER_RANSOM_LOCI",
-    "scope": "Полная инвентаризация 13 локусов כֹּפֶר (3724 a) по разрешённым зеркалам: чем именно LXX передаёт «цену жизни».",
-    "sources": "MT morphhb (3724 a, 13 стихов; H3724 сводно 17); ELI S11 и F1K S23 — все 13 локусов; SOL S10 — только Пятикнижие. Rahlfs не использован (S19/S22 EXCLUDED).",
-    "holdsOpened": [
-      "EVIDENCE_HOLD (причина некриминальных передач)",
-      "LOCATOR_HOLD (нет аппарата)"
-    ],
-    "holdsClosed": [],
-    "measured": {
-      "loci": 13,
-      "lytron": 6,
-      "exilasma": 2,
-      "allagma": 2,
-      "perikatharma": 1,
-      "none": 2,
-      "witnessesFull": 3,
-      "witnessesPentateuchOnly": 2
-    },
-    "measuredAt": "2026-11-15T00:00:00Z",
-    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
-    "publicationEligible": false
-  },
-  "wave21": {
-    "date": "2026-11-15",
-    "card": "19_LXX_NUMBERING_ERRATA",
-    "edition": "second (erratum to the first edition of this same card)",
-    "scope": "Erratum: шесть классов сдвига нумерации у транскрипций Свиты, исправленные счётчики карточек 17 и 18, разбор двенадцати локусов «без hilask» по родам.",
-    "sources": "MT morphhb (3722 a, 93 стиха); ELI S11, SOL S10, F1K S23. Адреса заданы содержательными якорями, а не номерами стихов.",
-    "holdsOpened": [
-      "EVIDENCE_HOLD (причина различий нумерации: издание или транскрипция)"
-    ],
-    "holdsClosed": [
-      "LOCATOR_HOLD по адресам 1 Пар. 6:34 (→ 6:49) и Неем. 10:34 (→ 10:33) — разрешены по содержанию"
-    ],
-    "corrected": {
-      "card17_all3": [
-        39,
-        40,
-        41
-      ],
-      "card17_f1kEqSol": [
-        6,
-        5
-      ],
-      "card17_missing": [
-        1,
-        0
-      ],
-      "card17_eliEqSol": [
-        "57",
-        "58",
-        "59 of 68"
-      ],
-      "card17_eliEqF1k": [
-        "45-47",
-        "40",
-        "41 of 68"
-      ],
-      "hilask_with": [
-        76,
-        75,
-        81
-      ],
-      "hilask_without": [
-        17,
-        18,
-        12
-      ],
-      "resolved": [
-        91,
-        93,
-        93
-      ]
-    },
-    "refutedInThisCard": "Первая редакция утверждала «LXX Притч. 16 = MT Притч. 17». Неверно: номера глав совпадают, MT Притч. 16:6 стоит в конце LXX 15:27 (в LXX гл. 15 на 4 стиха меньше — 29 против 33, сдвиг обратного знака).",
-    "normalizationSensitivity": "Числ. 6:11 переезжает из all3 в alldiffer, если сохранять пробелы и латиницу (в хвосте F1K — ABBREV). 41/18/5/4 при буквенной нормализации; 40/18/5/5 при сохранении пунктуации.",
-    "measuredAt": "2026-11-15T00:00:00Z",
-    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
-    "publicationEligible": false
-  },
-  "wave22": {
-    "date": "2026-11-15",
-    "card": "19_LXX_NUMBERING_ERRATA",
-    "edition": "third (address corrections to cards 01, 03, 07, 08, 14 + quantified mirror independence)",
-    "scope": "Продолжение erratum: адресные поправки по чужим карточкам и первый числовой замер независимости зеркал (попарные дословные совпадения по Пятикнижию).",
-    "sources": "MT morphhb (WLC); ELI S11; SOL S10; F1K First1KGreek tlg0527 (data/tlg0527, grc1); S23 lxx-swete.",
-    "measured": {
-      "versesWithTextPentateuch": 5794,
-      "pairwiseIdentical": {
-        "ELI_SOL": [
-          5252,
-          5790,
-          "90.7%"
-        ],
-        "ELI_F1K": [
-          3691,
-          5760,
-          "64.1%"
-        ],
-        "ELI_S23": [
-          3663,
-          5760,
-          "63.6%"
-        ],
-        "F1K_SOL": [
-          3917,
-          5759,
-          "68.0%"
-        ],
-        "S23_SOL": [
-          3889,
-          5759,
-          "67.5%"
-        ],
-        "F1K_S23": [
-          5716,
-          5760,
-          "99.2%"
-        ]
-      },
-      "normalization": "NFD, нижний регистр, только буквы α–ω; различие в одном слове делает стих несовпадающим целиком, поэтому проценты — нижняя граница сходства."
-    },
-    "keyFinding": "F1K и S23 — один текст (99,2 %), поэтому «3z» означает не более двух независимых текстовых линий. Доля согласия не является мерой независимости: ELI↔SOL 90,7 % при независимых изданиях, F1K↔SOL 68 % при заведомо разных линиях.",
-    "toolPathNote": "F1K читается как First1KGreek/data/tlg0527/tlgNNN/tlg0527.tlgNNN.1st1K-grc1.xml; split/tlg0527/… не содержит verse-разметки и даёт пустой результат (f1k_count(Lev)=858 — контроль).",
-    "addressFixesApplied": [
-      "14: омонимы H3724 (3724 a=13, b/c/d пояснены)",
-      "07: оговорка к 3z",
-      "08: оговорка к 3z",
-      "01 §9 п.5: очередь локусов с исправленными адресами",
-      "14 §6.4: оговорка к 3z по Иеремии и Иову"
-    ],
-    "addressFixesWithdrawn": [
-      "03: утверждения о Притч 16→17 в карточке нет — приписано ошибочно; блок нумерации Лев. 6–7 верен во всех 8 якорях",
-      "01 §2: адреса V1/V6/V6b/V8 уже были верны",
-      "3z→2z переименование: отвергнуто, вместо него оговорка"
-    ],
-    "holdsOpened": [
-      "EVIDENCE_HOLD (что именно измеряет метка согласия зеркал)"
-    ],
-    "holdsClosed": [],
-    "measuredAt": "2026-11-15T00:00:00Z",
-    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
-    "publicationEligible": false
-  },
-  "wave23": {
-    "date": "2026-11-15",
-    "card": "19_LXX_NUMBERING_ERRATA",
-    "edition": "fourth (piecewise Psalter offset + systematic chapter screen and its blind spot)",
-    "scope": "§8 п.1 исполнен: сплошная сверка числа стихов по главам всех книгах, где есть и MT, и ELI. Побочно исправлен класс 2 (Псалмы) — сдвиг оказался кусочным, а не −1.",
-    "sources": "MT morphhb (WLC); ELI S11 (LXX-Swete-1930, 00-Swete_versification.csv); инструменты ИСКУПЛЕНИЕ/ot/tools/ot.py.",
-    "measured": {
-      "chaptersCompared": 913,
-      "divergentChapters": 141,
-      "booksWithDivergence": 30,
-      "booksCompared": 38,
-      "psalterSegments": {
-        "1-8": "без сдвига",
-        "9-10": "слиты в LXX 9; MT 10:1 = LXX 9:22, MT 10:18 = LXX 9:39",
-        "11-113": "→ 10-112, сдвиг −1",
-        "114-115": "слиты в LXX 113 (до ст. 26)",
-        "116": "→ LXX 114, сдвиг −2",
-        "117-145": "→ 115-143, сдвиг −1",
-        "146": "→ LXX 145, сдвиг −1",
-        "147": "разрезан: MT 147:1-11 = LXX 146, MT 147:12-20 = LXX 147",
-        "148-150": "без сдвига"
-      },
-      "worstBooks": {
-        "Jer": 29,
-        "Ps": 15,
-        "Exod": 10,
-        "Deut": 7,
-        "1Kgs": 7
-      },
-      "zeroDivergence": [
-        "Judg",
-        "Amos",
-        "Obad",
-        "Jonah",
-        "Hab",
-        "Ruth",
-        "Lam",
-        "Ezra"
-      ]
-    },
-    "keyFinding": "Признак «расхождение числа стихов в главе» необходим, но недостаточен: Исх 25 (40 ст. в MT и 40 в ELI) в карту не попадает, хотя внутри главы деление сдвинуто (MT 25:17 = ELI 25:16). Признак пропускает ровно тот класс, который лана уже ловила. 141 глава — список мест обязательной проверки адреса по содержанию, а не список ошибок.",
-    "methodErrorsFixed": [
-      "первый прогон дал 133 фиктивные расходящиеся главы в Пс: сравнивались номера без учёта сдвига Псалтири",
-      "первый прогон дал 0 глав в Песн: в ELI код книги Sol, а не Sng из ot.LXX",
-      "перепутано возвращаемое значение ot._eli_index(): (words, rows), итерация по кортежу давала 0 строк"
-    ],
-    "correctionsApplied": [
-      "19 §2 класс 2: плоское правило «Псалмы = MT−1» заменено кусочной картой с восемью областями",
-      "19 §3.6: новая секция — карта 141 главы, её очаги и её граница",
-      "17 §2 и §9: правило сдвига Псалтири исправлено в двух местах",
-      "18 §8: то же правило исправлено"
-    ],
-    "holdsOpened": [
-      "EVIDENCE_HOLD (причина расхождения нумерации Иеремии и деления Исх 25 — не установлена)"
-    ],
-    "holdsClosed": [],
-    "measuredAt": "2026-11-15T00:00:00Z",
-    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
-    "publicationEligible": false
-  },
-  "wave24": {
-    "date": "2026-11-15",
-    "card": "19_LXX_NUMBERING_ERRATA",
-    "edition": "fifth (causes of BOTH open divergences established: Jeremiah = block transposition; Exod 25 = missing v.6, reproduced in two lists)",
-    "scope": "Закрытие обоих вопросов, оставленных открытыми в волне 23: причина расхождения нумерации Иеремии и причина деления Исх 25. Проверено по содержанию, а не по корреляции счётчиков.",
-    "sources": "MT morphhb (WLC); ELI S11.",
-    "measured": {
-      "jeremiahOracleMap": {
-        "Elam": [
-          "MT 49:34",
-          "LXX 25:14"
-        ],
-        "Egypt": [
-          "MT 46:2",
-          "LXX 26:2"
-        ],
-        "Philistines": [
-          "MT 47:1-7",
-          "LXX 29:1-7"
-        ],
-        "Edom": [
-          "MT 49:7",
-          "LXX 29:8"
-        ],
-        "Ammon": [
-          "MT 49:1",
-          "LXX 30:1"
-        ],
-        "KedarHazor": [
-          "MT 49:28",
-          "LXX 30:6"
-        ],
-        "Damascus": [
-          "MT 49:23",
-          "LXX 30:12"
-        ],
-        "Moab": [
-          "MT 48:1",
-          "LXX 31:1"
-        ],
-        "CupOfWrath": [
-          "MT 25:15",
-          "LXX 32:1"
-        ]
-      },
-      "doubleOracleChapters": [
-        "ELI 26 = Elam (26:1) + Egypt (26:2-28)",
-        "ELI 29 = Philistines (29:1-7) + Edom (29:8-23)"
-      ],
-      "verseCounts": {
-        "Egypt_MT46": 28,
-        "Egypt_LXX26": 24,
-        "Moab_MT48": 47,
-        "Moab_LXX31": 44
-      }
-    },
-    "keyFinding": "Расхождение Иеремии — ПЕРЕСТАНОВКА целых оракулов о народах, а не сдвиг отдельных глав. Поэтому правила «номер плюс-минус k» для этой книги не существует вовсе: только таблица. Первые стихи глав LXX — дательные заголовки адресата и служат готовыми якорями; одна глава LXX может содержать два оракула.",
-    "methodNote": "Счётчики имён народов дали ложную корреляцию на двух шагах: форма 'מצרימ' не совпала с 'מצרים' в МТ, поэтому египетский оракул не находился, а косинус по 12 счётчикам уверенно указывал на ELI 27-28 (Вавилон). Причина найдена чтением первых стихов глав, а не корреляцией.",
-    "correctionsApplied": [
-      "19 §3.6: новая подсекция «Установленная причина: у Иеремии переставлен блок о народах (круг 76)» с таблицей из 9 якорей",
-      "18 §5b: ссылка переписана с «сдвиг нумерации» на «перестановка блока о народах»",
-      "authority: EVIDENCE_HOLD о причине Иеремии снят; причина Исх 25 остаётся открытой",
-      "authority: строка 19 и статус пятой редакции"
-    ],
-    "exodusFinding": {
-      "missing": "MT Exod 25:6 (елей для светильника, благовония для елея помазания и курения) отсутствует в ELI, SOL и F1K",
-      "alsoMissingAtParallelList": "MT Exod 35:8 — та же строка отсутствует (ELI 35:7 дёрма и дерево, ELI 35:8 сразу камни)",
-      "shiftExtent": "−1 от MT 25:7 (ELI 25:6) до MT 25:35; гаснет к 25:36 за счёт слияний и добавочного стиха в 25:31–36",
-      "whyMaximaEqual": "40/40: перетасовка внутри 25:31–36, а не дробление в конце (мою первую версию — «дробится MT 25:39» — опровергает ELI 25:39, это половина стиха)",
-      "notLexical": "греческий Исход знает elaion в 18 стихах (23:11; 27:20; 29:2,7,21,23,40; 30:24,25,31; 31:11; 35:14,19,28; 38:25; 39:16,17; 40:7)"
-    },
-    "holdsOpened": [],
-    "holdsClosed": [
-      "EVIDENCE_HOLD (причина расхождения нумерации Иеремии — установлена: перестановка блока о народах)",
-      "EVIDENCE_HOLD (причина расхождения Исх 25 — установлено ЧТО: отсутствует стих MT 25:6; HOLD переформулирован на вопрос о Vorlage)"
-    ],
-    "holdsRemaining": [
-      "EVIDENCE_HOLD переформулирован: известно, что в LXX отсутствует стих МТ Исх 25:6 (елей), воспроизводится в двух списках (Исх 25 и 35); неизвестно, восходит ли пропуск к Vorlage — решается аппаратом (Göttingen Exod 1991, Holmes–Parsons S20)"
-    ],
-    "measuredAt": "2026-11-15T00:00:00Z",
-    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
-    "publicationEligible": false
-  },
-  "wave25": {
-    "date": "2026-11-15",
-    "card": "19_LXX_NUMBERING_ERRATA",
-    "edition": "sixth (second screening signal, measured against the first)",
-    "scope": "Исполнение §8 п. 1а и 1б: признак, который поймал бы Исх 25, где число стихов совпадает (40/40), и проверка найденных им кандидатов по содержанию.",
-    "sources": "MT morphhb (WLC); ELI S11 (LXX-Swete-1930).",
-    "measured": {
-      "chaptersEvaluated": 787,
-      "minVersesPerChapter": 8,
-      "threshold": "r(best non-zero) >= 0.70 AND r - r0 >= 0.30",
-      "flagged": 27,
-      "exodus25": {
-        "r0": 0.23,
-        "r_at_minus1": 0.8
-      },
-      "controlsSameBook": {
-        "Exod26": 0.87,
-        "Exod27": 0.87,
-        "Exod23": 0.7
-      },
-      "mapComparisonWithoutPsalms": {
-        "verseCount": 125,
-        "lengthProfile": 27,
-        "overlap": 23,
-        "union": 129
-      },
-      "foundOnlyByProfile": {
-        "Exod25": [
-          -1,
-          0.23,
-          0.8,
-          "ПОДТВЕРЖДЁН: отсутствует стих МТ 25:6, сдвиг −1 до 25:35"
-        ],
-        "Song6": [
-          -1,
-          0.05,
-          0.89,
-          "ПОДТВЕРЖДЁН: МТ 6:1 = ELI 5:17, стих унесён за границу главы; 12/12 из-за дробления последнего (МТ 7:1 = ELI 6:12)"
-        ],
-        "Esth8": [
-          3,
-          -0.15,
-          0.81,
-          "ОПРОВЕРГНУТ: адреса совпадают; ложное срабатывание из-за выброса ELI Есф 8:12 (3492 знака против 129)"
-        ],
-        "Esth3": [
-          1,
-          0.42,
-          0.73,
-          "ОПРОВЕРГНУТ: адреса совпадают (МТ 3:1 = ELI 3:1 и далее)"
-        ]
-      },
-      "candidateVerdicts": {
-        "confirmed": 2,
-        "refuted": 2,
-        "inOverlapNotSeparatelyChecked": 23
-      },
-      "oldFindingsReconfirmed": {
-        "Gen32": [
-          0.15,
-          0.84
-        ],
-        "Neh10": [
-          0.71,
-          0.99
-        ]
-      }
-    },
-    "keyFinding": "Второй признак ловит Исх 25 (0,23 → 0,80 при −1) и Песн 6, независимо подтверждает Быт 32 и Неем 10, но НЕ видит перестановки: у Иеремии 28 глав по числу стихов и только 1 по профилю. Ни один признак не достаточен, и это измерено: пересечение 23, объединение 129.",
-    "methodNote": "Две свои ошибки признаны в этом же круге: величина сдвига от профиля не результат (на малых главах +3 и +4 выпадают на любом сдвиге); корреляция по длинам ломается о выброс в одном стихе (Есф 8:12, 3492 знака) — без проверки максимальной длины пометка ложная. Также напоминание: ot.eli() для Песни Песней требует код Sol, иначе возвращается пусто и глава выглядит отсутствующей.",
-    "correctionsApplied": [
-      "19 §3.7: новая секция — второй признак, его сила, три измеренные слабости, вердикты по кандидатам",
-      "19 §4 п. 4а, 4б: недостаточность одного признака; величина сдвига от косвенного признака не результат",
-      "19 §7: метод пересчёта профиля длин",
-      "19 §8 п. 1а и 1б закрыты",
-      "authority, README, SSOT — статус шестой редакции"
-    ],
-    "holdsOpened": [],
-    "holdsClosed": [],
-    "measuredAt": "2026-11-15T00:00:00Z",
-    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
-    "publicationEligible": false
-  },
   "qaFullPass": {
     "date": "2026-10-12",
     "scope": "full quote-verification pass with qa.py v2 over the authority document (00) and cards 01–11: every Hebrew fragment of 2+ words and every Greek fragment of 2+ words must be findable in MT (morphhb, ketiv and qere views), the LXX mirrors (ELI 1930, SOL 1909, F1K tlg0527, S23) and SBLGNT, per verse and in continuous per-book text; apparatus quotes and lexical lists with no reference nearby are reported as informational; the script-mixing check (Cyrillic inside Greek/Hebrew, Latin inside Cyrillic) is run separately",
     "perCard": [
-      {
-        "id": "00",
-        "hebrew": 8,
-        "greek": 26,
-        "problems": 0,
-        "informational": 3
-      },
-      {
-        "id": "01",
-        "hebrew": 11,
-        "greek": 43,
-        "problems": 0,
-        "informational": 0
-      },
-      {
-        "id": "02",
-        "hebrew": 24,
-        "greek": 78,
-        "problems": 0,
-        "informational": 0
-      },
-      {
-        "id": "03",
-        "hebrew": 80,
-        "greek": 118,
-        "problems": 0,
-        "informational": 0
-      },
-      {
-        "id": "04",
-        "hebrew": 44,
-        "greek": 99,
-        "problems": 0,
-        "informational": 0
-      },
-      {
-        "id": "05",
-        "hebrew": 36,
-        "greek": 58,
-        "problems": 0,
-        "informational": 1
-      },
-      {
-        "id": "05b",
-        "hebrew": 42,
-        "greek": 78,
-        "problems": 0,
-        "informational": 2
-      },
-      {
-        "id": "06",
-        "hebrew": 70,
-        "greek": 95,
-        "problems": 0,
-        "informational": 3
-      },
-      {
-        "id": "07",
-        "hebrew": 53,
-        "greek": 106,
-        "problems": 0,
-        "informational": 0
-      },
-      {
-        "id": "08",
-        "hebrew": 63,
-        "greek": 139,
-        "problems": 0,
-        "informational": 4
-      },
-      {
-        "id": "09",
-        "hebrew": 38,
-        "greek": 134,
-        "problems": 0,
-        "informational": 11
-      },
-      {
-        "id": "10",
-        "hebrew": 50,
-        "greek": 101,
-        "problems": 0,
-        "informational": 0
-      },
-      {
-        "id": "11",
-        "hebrew": 33,
-        "greek": 156,
-        "problems": 0,
-        "informational": 1
-      }
+      {"id": "00", "hebrew": 8, "greek": 26, "problems": 0, "informational": 3},
+      {"id": "01", "hebrew": 11, "greek": 43, "problems": 0, "informational": 0},
+      {"id": "02", "hebrew": 24, "greek": 78, "problems": 0, "informational": 0},
+      {"id": "03", "hebrew": 80, "greek": 118, "problems": 0, "informational": 0},
+      {"id": "04", "hebrew": 44, "greek": 99, "problems": 0, "informational": 0},
+      {"id": "05", "hebrew": 36, "greek": 58, "problems": 0, "informational": 1},
+      {"id": "05b", "hebrew": 42, "greek": 78, "problems": 0, "informational": 2},
+      {"id": "06", "hebrew": 70, "greek": 95, "problems": 0, "informational": 3},
+      {"id": "07", "hebrew": 53, "greek": 106, "problems": 0, "informational": 0},
+      {"id": "08", "hebrew": 63, "greek": 139, "problems": 0, "informational": 4},
+      {"id": "09", "hebrew": 38, "greek": 134, "problems": 0, "informational": 11},
+      {"id": "10", "hebrew": 50, "greek": 101, "problems": 0, "informational": 0},
+      {"id": "11", "hebrew": 33, "greek": 156, "problems": 0, "informational": 1}
     ],
-    "totals": {
-      "hebrew": 552,
-      "greek": 1231,
-      "problems": 0
-    },
+    "totals": {"hebrew": 552, "greek": 1231, "problems": 0},
     "informationalNote": "informational = apparatus lines, gloss/lemma lists and damaged mirror tokens; not counted as problems",
     "fixes": [
       "card 02: Ru 4:6 and Isa 63:9 now quote WLC as it stands (ketiv לגאול, ketiv לא) with the qere noted; Isa 63:9 LXX given as in ELI/F1K (no κύριος); the gloss line rewritten without truncated lemmas",
@@ -897,139 +368,26 @@
     "tool": "qalite.py and triage.py (both committed: ИСКУПЛЕНИЕ/ot/tools/); mixcheck.py",
     "scope": "re-run of the quote check over the sub-corpus after wave 17: authority document 00, cards 01–15 and the criterion-3 summary (16 files); every Hebrew and Greek fragment of 2+ tokens checked against MT (morphhb, ketiv and qere views), the LXX mirrors (ELI 1930, F1K tlg0527, S23 lxx-swete) and SBLGNT",
     "perCard": [
-      {
-        "id": "00",
-        "hebrew": 15,
-        "greek": 57,
-        "problems": 3,
-        "informational": 2
-      },
-      {
-        "id": "01",
-        "hebrew": 11,
-        "greek": 51,
-        "problems": 3,
-        "informational": 0
-      },
-      {
-        "id": "02",
-        "hebrew": 28,
-        "greek": 99,
-        "problems": 0,
-        "informational": 0
-      },
-      {
-        "id": "03",
-        "hebrew": 95,
-        "greek": 148,
-        "problems": 0,
-        "informational": 1
-      },
-      {
-        "id": "04",
-        "hebrew": 50,
-        "greek": 140,
-        "problems": 4,
-        "informational": 0
-      },
-      {
-        "id": "05",
-        "hebrew": 39,
-        "greek": 74,
-        "problems": 0,
-        "informational": 0
-      },
-      {
-        "id": "05b",
-        "hebrew": 50,
-        "greek": 89,
-        "problems": 1,
-        "informational": 0
-      },
-      {
-        "id": "06",
-        "hebrew": 77,
-        "greek": 114,
-        "problems": 3,
-        "informational": 0
-      },
-      {
-        "id": "07",
-        "hebrew": 59,
-        "greek": 119,
-        "problems": 1,
-        "informational": 0
-      },
-      {
-        "id": "08",
-        "hebrew": 67,
-        "greek": 158,
-        "problems": 7,
-        "informational": 0
-      },
-      {
-        "id": "09",
-        "hebrew": 49,
-        "greek": 176,
-        "problems": 6,
-        "informational": 4
-      },
-      {
-        "id": "10",
-        "hebrew": 61,
-        "greek": 118,
-        "problems": 0,
-        "informational": 0
-      },
-      {
-        "id": "11",
-        "hebrew": 56,
-        "greek": 207,
-        "problems": 0,
-        "informational": 0
-      },
-      {
-        "id": "12",
-        "hebrew": 80,
-        "greek": 250,
-        "problems": 0,
-        "informational": 0
-      },
-      {
-        "id": "13",
-        "hebrew": 96,
-        "greek": 254,
-        "problems": 0,
-        "informational": 1
-      },
-      {
-        "id": "14",
-        "hebrew": 61,
-        "greek": 196,
-        "problems": 0,
-        "informational": 0
-      },
-      {
-        "id": "15",
-        "hebrew": 63,
-        "greek": 196,
-        "problems": 0,
-        "informational": 0
-      },
-      {
-        "id": "16",
-        "hebrew": 7,
-        "greek": 18,
-        "problems": 0,
-        "informational": 0
-      }
+      {"id": "00", "hebrew": 15, "greek": 57, "problems": 3, "informational": 2},
+      {"id": "01", "hebrew": 11, "greek": 51, "problems": 3, "informational": 0},
+      {"id": "02", "hebrew": 28, "greek": 99, "problems": 0, "informational": 0},
+      {"id": "03", "hebrew": 95, "greek": 148, "problems": 0, "informational": 1},
+      {"id": "04", "hebrew": 50, "greek": 140, "problems": 4, "informational": 0},
+      {"id": "05", "hebrew": 39, "greek": 74, "problems": 0, "informational": 0},
+      {"id": "05b", "hebrew": 50, "greek": 89, "problems": 1, "informational": 0},
+      {"id": "06", "hebrew": 77, "greek": 114, "problems": 3, "informational": 0},
+      {"id": "07", "hebrew": 59, "greek": 119, "problems": 1, "informational": 0},
+      {"id": "08", "hebrew": 67, "greek": 158, "problems": 7, "informational": 0},
+      {"id": "09", "hebrew": 49, "greek": 176, "problems": 6, "informational": 4},
+      {"id": "10", "hebrew": 61, "greek": 118, "problems": 0, "informational": 0},
+      {"id": "11", "hebrew": 56, "greek": 207, "problems": 0, "informational": 0},
+      {"id": "12", "hebrew": 80, "greek": 250, "problems": 0, "informational": 0},
+      {"id": "13", "hebrew": 96, "greek": 254, "problems": 0, "informational": 1},
+      {"id": "14", "hebrew": 61, "greek": 196, "problems": 0, "informational": 0},
+      {"id": "15", "hebrew": 63, "greek": 196, "problems": 0, "informational": 0},
+      {"id": "16", "hebrew": 7, "greek": 18, "problems": 0, "informational": 0}
     ],
-    "totals": {
-      "hebrew": 964,
-      "greek": 2464,
-      "problems": 28,
-      "informational": 8
-    },
+    "totals": {"hebrew": 964, "greek": 2464, "problems": 28, "informational": 8},
     "result": "28 [A] lines and 8 [B] lines, each classified: apparatus reading (with sigla), lexicon citation, damaged mirror token or dictionary (lemma) form. No verse quotation of any card is unattested; two real defects were found and fixed (card 05 Hab 2:4, card 05b Ps 51:21)",
     "fixes": [
       "card 05 (T22, Hab 2:4): the LXX column read «ὁ δὲ δίκαιός μου ἐκ πίστεώς μου ζήσεται», not attested in any of the three mirrors — ELI, F1K and S23 read «ὁ δὲ δίκαιος ἐκ πίστεώς μου ζήσεται»; the extra μου belongs to the NT quotation (Heb 10:38). Column corrected; note added to the card journal",
@@ -1037,180 +395,35 @@
       "cards 13, 14, 15: counts confirmed (13: 1 [B]; 14, 15: 0 [A] / 0 [B])"
     ],
     "waived": [
-      {
-        "card": "00",
-        "fragment": "הַדָּם יְכַפֵּר",
-        "class": "невосстановимая старая форма, названная в тексте как ошибка",
-        "disposition": "в authority-документе стоит именно как цитата прежней ошибки («исправлено: … → точная фраза כִּי הַדָּם הוּא בַּנֶּפֶשׁ יְכַפֵּר»); в карточках такой формы нет"
-      },
-      {
-        "card": "00",
-        "fragment": "κριὸς τῆς πλημμελίας",
-        "class": "леммная словарная форма",
-        "disposition": "в LXX бытует только в косвенных падежах — исправлено ещё в волне 11.5 (см. fixes qaFullPass); в authority осталось как название леммы"
-      },
-      {
-        "card": "00",
-        "fragment": "τῶν ἁμαρτιῶν τοῦ ἐξιλασμοῦ",
-        "class": "аппаратное чтение (Исх. 30:10, A и F)",
-        "disposition": "так напечатано в аппарате; qalite ищет по тексту стиха, а не по аппарату"
-      },
-      {
-        "card": "00",
-        "fragment": "οὐκ ἔχι",
-        "class": "чтение B* (Числ. 19:15)",
-        "disposition": "орфография кодекса, аппаратная строка"
-      },
-      {
-        "card": "00",
-        "fragment": "τραύματος Α",
-        "class": "чтение A (Числ. 19:16) с сиглами",
-        "disposition": "аппаратная строка"
-      },
-      {
-        "card": "01",
-        "fragment": "καὶ δώσουσιν ἕκαστος λύτρα τῆς ψυχῆς αὐτοῦ τῷ κυρίῳ",
-        "class": "цитата по Studylight с артиклем τῷ",
-        "disposition": "в карточке помечена LOCATOR_HOLD (три зеркала дают κυρίῳ); Göttingen Exodus 1991 не открыт (ARCHIVE_HOLD)"
-      },
-      {
-        "card": "01",
-        "fragment": "ἀντὶ τῆς ψυχὴ ἐχιλάσεται",
-        "class": "порча транскрипции Swete 1909 (S10)",
-        "disposition": "в карточке описана явно как ошибка зеркала, не как чтение"
-      },
-      {
-        "card": "01",
-        "fragment": "καὶ ἀπένεγκε τὸ τάχος εἰς τὴν παρεμβολὴν καὶ ἐξίλασαι περὶ αὐτῶν",
-        "class": "цитата Studylight с чтением A и F (повелительное)",
-        "disposition": "в карточке помечена как вариант A/F; выбор чтения — LOCATOR_HOLD (Göttingen Numeri 1982)"
-      },
-      {
-        "card": "03",
-        "fragment": "κριὸς τῆς πλημμελίας",
-        "class": "леммная словарная форма (заголовок заметки)",
-        "disposition": "в LXX — только косвенные падежи; в заметке карточки дана как словарная форма, рядом с ней — «асхам = πλημμέλεια»"
-      },
-      {
-        "card": "04",
-        "fragment": "προσ οισουσιν",
-        "class": "разбиение слова в зеркале FW",
-        "disposition": "в карточке названо опечаткой, не разночтением"
-      },
-      {
-        "card": "04",
-        "fragment": "δια θηκης",
-        "class": "разбиение слова в зеркале FW",
-        "disposition": "в карточке названо разбиением, не разночтением"
-      },
-      {
-        "card": "04",
-        "fragment": "αἷμα ῥαντισμοῦ",
-        "class": "цитата LSJ (Евр. 12:24; 1 Пет. 1:2)",
-        "disposition": "в SBLGNT эти слова стоят в других падежах; это лексиконная справка, а не цитата стиха"
-      },
-      {
-        "card": "05",
-        "fragment": "лишнее μου после δίκαιος (Авв. 2:4)",
-        "class": "дефект LXX-колонки",
-        "disposition": "ИСПРАВЛЕНО 2026-10-14: колонка T22 приведена к трём зеркалам — ὁ δὲ δίκαιος ἐκ πίστεώς μου ζήσεται; в журнал карточки добавлена пометка (лишнее μου принадлежит НЗ-цитате, Евр. 10:38)"
-      },
-      {
-        "card": "05b",
-        "fragment": "θυσία δικαιοσύνης",
-        "class": "леммная форма вместо формы стиха",
-        "disposition": "ИСПРАВЛЕНО 2026-10-14: в O8 стоит форма стиха θυσίαν δικαιοσύνης"
-      },
-      {
-        "card": "05b",
-        "fragment": "θυσία σωτηρίου",
-        "class": "номинатив словарной статьи",
-        "disposition": "в карточке явно помечено «номинатив словарной статьи»; форма LXX — θυσίαν σωτηρίου (аттестована)"
-      },
-      {
-        "card": "06",
-        "fragment": "λαμβάνω ἁμαρτίαν",
-        "class": "леммная форма передачи נשא חטא",
-        "disposition": "в стихе — λήμψεται (аттестовано); лемма дана в словарном виде (в таблице и в списке смежных карточек)"
-      },
-      {
-        "card": "06",
-        "fragment": "θύειν τὸ π",
-        "class": "сокращение из цитаты LSJ (пасха)",
-        "disposition": "сокращённая словарная форма с точкой"
-      },
-      {
-        "card": "07",
-        "fragment": "λαμβάνω τὴν ἁμαρτίαν",
-        "class": "леммная форма с артиклем",
-        "disposition": "в стихе — τὴν ἁμαρτίαν λήμψεται (аттестовано); лемма дана в словарном виде"
-      },
-      {
-        "card": "08",
-        "fragment": "καὶ περὶ τοῦ λαοῦ Α",
-        "class": "аппаратная строка (Лев. 16:24)",
-        "disposition": "с сиглами; не текст стиха"
-      },
-      {
-        "card": "08",
-        "fragment": "τῶν ἁμαρτιῶν τοῦ ἐξιλασμοῦ",
-        "class": "аппаратное чтение A и F (Исх. 30:10)",
-        "disposition": "аппарат"
-      },
-      {
-        "card": "08",
-        "fragment": "τοῦ καθαρισμοῦ τῶν ἁμαρτιῶν τοῦ ἐξιλασμοῦ",
-        "class": "аппаратное чтение A и F (Исх. 30:10)",
-        "disposition": "аппарат"
-      },
-      {
-        "card": "08",
-        "fragment": "ἐκδύσεται Α",
-        "class": "аппаратное чтение A (Лев. 16:24)",
-        "disposition": "аппарат с сиглами"
-      },
-      {
-        "card": "08",
-        "fragment": "τῶν ἁμαρτιῶν τοῦ ἐξιλασμοῦ ἅπαξ τοῦ ἐνιαυτοῦ",
-        "class": "аппаратное чтение A и F (Исх. 30:10)",
-        "disposition": "аппарат"
-      },
-      {
-        "card": "08",
-        "fragment": "χρυσᾶ τορευτά",
-        "class": "аппаратное чтение BaAF (Исх. 25:17)",
-        "disposition": "аппаратная орфография"
-      },
-      {
-        "card": "09",
-        "fragment": "οὐκ εχι / οὐκ ἔχι",
-        "class": "чтения B* и A (Числ. 19:15)",
-        "disposition": "орфография кодексов, аппаратные строки (три линии)"
-      },
-      {
-        "card": "09",
-        "fragment": "τραύματος Α",
-        "class": "чтение A (Числ. 19:16) с сиглами",
-        "disposition": "аппаратная строка (две линии)"
-      },
-      {
-        "card": "09",
-        "fragment": "αἷμα ῥαντισμοῦ",
-        "class": "цитата LSJ",
-        "disposition": "лексиконная справка, не стих"
-      },
-      {
-        "card": "09",
-        "fragment": "ἐν ἑαυτῇ Α / εμμεσω ὑμῶν / ἐπὶ τοῦ ἡμμένον / καὶ ἁφὰ τῇ ἡμ",
-        "class": "аппаратные чтения A и F (Числ. 19)",
-        "disposition": "аппарат; часть — с порчей транскрипции («εμμεσω»)"
-      },
-      {
-        "card": "13",
-        "fragment": "ἐπιβλέψονται πρὸς μέ ἀνθʼ ὧν κατορχήσαντο",
-        "class": "односимвольное расхождение: κατα- против κατω- (Зах. 12:10)",
-        "disposition": "в карточке описано как расхождение зеркал (F1K и S23 — καταορχήσαντο, ELI — κατωρχήσαντο); не дефект"
-      }
+      {"card": "00", "fragment": "הַדָּם יְכַפֵּר", "class": "невосстановимая старая форма, названная в тексте как ошибка", "disposition": "в authority-документе стоит именно как цитата прежней ошибки («исправлено: … → точная фраза כִּי הַדָּם הוּא בַּנֶּפֶשׁ יְכַפֵּר»); в карточках такой формы нет"},
+      {"card": "00", "fragment": "κριὸς τῆς πλημμελίας", "class": "леммная словарная форма", "disposition": "в LXX бытует только в косвенных падежах — исправлено ещё в волне 11.5 (см. fixes qaFullPass); в authority осталось как название леммы"},
+      {"card": "00", "fragment": "τῶν ἁμαρτιῶν τοῦ ἐξιλασμοῦ", "class": "аппаратное чтение (Исх. 30:10, A и F)", "disposition": "так напечатано в аппарате; qalite ищет по тексту стиха, а не по аппарату"},
+      {"card": "00", "fragment": "οὐκ ἔχι", "class": "чтение B* (Числ. 19:15)", "disposition": "орфография кодекса, аппаратная строка"},
+      {"card": "00", "fragment": "τραύματος Α", "class": "чтение A (Числ. 19:16) с сиглами", "disposition": "аппаратная строка"},
+      {"card": "01", "fragment": "καὶ δώσουσιν ἕκαστος λύτρα τῆς ψυχῆς αὐτοῦ τῷ κυρίῳ", "class": "цитата по Studylight с артиклем τῷ", "disposition": "в карточке помечена LOCATOR_HOLD (три зеркала дают κυρίῳ); Göttingen Exodus 1991 не открыт (ARCHIVE_HOLD)"},
+      {"card": "01", "fragment": "ἀντὶ τῆς ψυχὴ ἐχιλάσεται", "class": "порча транскрипции Swete 1909 (S10)", "disposition": "в карточке описана явно как ошибка зеркала, не как чтение"},
+      {"card": "01", "fragment": "καὶ ἀπένεγκε τὸ τάχος εἰς τὴν παρεμβολὴν καὶ ἐξίλασαι περὶ αὐτῶν", "class": "цитата Studylight с чтением A и F (повелительное)", "disposition": "в карточке помечена как вариант A/F; выбор чтения — LOCATOR_HOLD (Göttingen Numeri 1982)"},
+      {"card": "03", "fragment": "κριὸς τῆς πλημμελίας", "class": "леммная словарная форма (заголовок заметки)", "disposition": "в LXX — только косвенные падежи; в заметке карточки дана как словарная форма, рядом с ней — «асхам = πλημμέλεια»"},
+      {"card": "04", "fragment": "προσ οισουσιν", "class": "разбиение слова в зеркале FW", "disposition": "в карточке названо опечаткой, не разночтением"},
+      {"card": "04", "fragment": "δια θηκης", "class": "разбиение слова в зеркале FW", "disposition": "в карточке названо разбиением, не разночтением"},
+      {"card": "04", "fragment": "αἷμα ῥαντισμοῦ", "class": "цитата LSJ (Евр. 12:24; 1 Пет. 1:2)", "disposition": "в SBLGNT эти слова стоят в других падежах; это лексиконная справка, а не цитата стиха"},
+      {"card": "05", "fragment": "лишнее μου после δίκαιος (Авв. 2:4)", "class": "дефект LXX-колонки", "disposition": "ИСПРАВЛЕНО 2026-10-14: колонка T22 приведена к трём зеркалам — ὁ δὲ δίκαιος ἐκ πίστεώς μου ζήσεται; в журнал карточки добавлена пометка (лишнее μου принадлежит НЗ-цитате, Евр. 10:38)"},
+      {"card": "05b", "fragment": "θυσία δικαιοσύνης", "class": "леммная форма вместо формы стиха", "disposition": "ИСПРАВЛЕНО 2026-10-14: в O8 стоит форма стиха θυσίαν δικαιοσύνης"},
+      {"card": "05b", "fragment": "θυσία σωτηρίου", "class": "номинатив словарной статьи", "disposition": "в карточке явно помечено «номинатив словарной статьи»; форма LXX — θυσίαν σωτηρίου (аттестована)"},
+      {"card": "06", "fragment": "λαμβάνω ἁμαρτίαν", "class": "леммная форма передачи נשא חטא", "disposition": "в стихе — λήμψεται (аттестовано); лемма дана в словарном виде (в таблице и в списке смежных карточек)"},
+      {"card": "06", "fragment": "θύειν τὸ π", "class": "сокращение из цитаты LSJ (пасха)", "disposition": "сокращённая словарная форма с точкой"},
+      {"card": "07", "fragment": "λαμβάνω τὴν ἁμαρτίαν", "class": "леммная форма с артиклем", "disposition": "в стихе — τὴν ἁμαρτίαν λήμψεται (аттестовано); лемма дана в словарном виде"},
+      {"card": "08", "fragment": "καὶ περὶ τοῦ λαοῦ Α", "class": "аппаратная строка (Лев. 16:24)", "disposition": "с сиглами; не текст стиха"},
+      {"card": "08", "fragment": "τῶν ἁμαρτιῶν τοῦ ἐξιλασμοῦ", "class": "аппаратное чтение A и F (Исх. 30:10)", "disposition": "аппарат"},
+      {"card": "08", "fragment": "τοῦ καθαρισμοῦ τῶν ἁμαρτιῶν τοῦ ἐξιλασμοῦ", "class": "аппаратное чтение A и F (Исх. 30:10)", "disposition": "аппарат"},
+      {"card": "08", "fragment": "ἐκδύσεται Α", "class": "аппаратное чтение A (Лев. 16:24)", "disposition": "аппарат с сиглами"},
+      {"card": "08", "fragment": "τῶν ἁμαρτιῶν τοῦ ἐξιλασμοῦ ἅπαξ τοῦ ἐνιαυτοῦ", "class": "аппаратное чтение A и F (Исх. 30:10)", "disposition": "аппарат"},
+      {"card": "08", "fragment": "χρυσᾶ τορευτά", "class": "аппаратное чтение BaAF (Исх. 25:17)", "disposition": "аппаратная орфография"},
+      {"card": "09", "fragment": "οὐκ εχι / οὐκ ἔχι", "class": "чтения B* и A (Числ. 19:15)", "disposition": "орфография кодексов, аппаратные строки (три линии)"},
+      {"card": "09", "fragment": "τραύματος Α", "class": "чтение A (Числ. 19:16) с сиглами", "disposition": "аппаратная строка (две линии)"},
+      {"card": "09", "fragment": "αἷμα ῥαντισμοῦ", "class": "цитата LSJ", "disposition": "лексиконная справка, не стих"},
+      {"card": "09", "fragment": "ἐν ἑαυτῇ Α / εμμεσω ὑμῶν / ἐπὶ τοῦ ἡμμένον / καὶ ἁφὰ τῇ ἡμ", "class": "аппаратные чтения A и F (Числ. 19)", "disposition": "аппарат; часть — с порчей транскрипции («εμμεσω»)"},
+      {"card": "13", "fragment": "ἐπιβλέψονται πρὸς μέ ἀνθʼ ὧν κατορχήσαντο", "class": "односимвольное расхождение: κατα- против κατω- (Зах. 12:10)", "disposition": "в карточке описано как расхождение зеркал (F1K и S23 — καταορχήσαντο, ELI — κατωρχήσαντο); не дефект"}
     ],
     "tooling": "qalite.py (committed) plus triage.py, which prints every unattested fragment with file:line for classification; both read the source mirrors from /tmp/arena-scratch/src (not committed)",
     "notCovered": [
@@ -12524,307 +11737,38 @@
     }
   ],
   "plannedCards": [
-    {
-      "id": "02",
-      "topic": "גאל ga'al; פדה padah; פִּדְיוֹן",
-      "status": "DONE_WAVE3_FIRST_VERSION_APPARATUS_PENDING"
-    },
-    {
-      "id": "03",
-      "topic": "אָשָׁם asham vs חַטָּאת hattat; עָוֹן / פֶּשַׁע / חַטָּאת",
-      "status": "DONE_WAVE4_FIRST_VERSION_APPARATUS_PENDING"
-    },
-    {
-      "id": "04",
-      "topic": "דָּם dam (полная карточка; Lev 17:11 частично в 01)",
-      "status": "DONE_WAVE5_FIRST_VERSION_APPARATUS_PENDING"
-    },
-    {
-      "id": "05",
-      "topic": "צֶדֶק / צְדָקָה (ṣedeq / ṣᵉdāqâ)",
-      "status": "DONE_WAVE6_FIRST_VERSION_APPARATUS_PENDING"
-    },
-    {
-      "id": "05b",
-      "topic": "עֹלָה, שְׁלָמִים, מִנְחָה, תָּמִיד (функции жертв)",
-      "status": "DONE_WAVE7_FIRST_VERSION_APPARATUS_PENDING"
-    },
-    {
-      "id": "06",
-      "topic": "Исх. 12 — пасха; Числ. 9; Втор. 16 (פֶּסַח: кровь, агнец, кто ест)",
-      "status": "DONE_WAVE8_FIRST_VERSION_APPARATUS_PENDING"
-    },
-    {
-      "id": "07",
-      "topic": "Лев. 1–7 — система жертв (kpr + slh: что делает каждая жертва)",
-      "status": "DONE_WAVE9_FIRST_VERSION_APPARATUS_PENDING"
-    },
-    {
-      "id": "08",
-      "topic": "Лев. 16 — День очищения; два козла; לַעֲזָאזֵל (пять живых чтений); LXX Lev 16:2 ἱλαστήριον; Lev 23:27 ἐξιλασμός",
-      "status": "DONE_WAVE10_FIRST_VERSION_APPARATUS_PENDING"
-    },
-    {
-      "id": "09",
-      "topic": "Числ. 19 — красная телица",
-      "status": "DONE_WAVE11_FIRST_VERSION_APPARATUS_PENDING"
-    },
-    {
-      "id": "10",
-      "topic": "Исх. 24 (кровь завета); Быт. 22 (Мориа)",
-      "status": "DONE_WAVE12_FIRST_VERSION_APPARATUS_PENDING"
-    },
-    {
-      "id": "11",
-      "topic": "Ис. 52:13–53:12 (אָשָׁם 53:10; רַבִּים 53:11–12)",
-      "status": "DONE_WAVE13_FIRST_VERSION_APPARATUS_PENDING"
-    },
-    {
-      "id": "12",
-      "topic": "Дан. 9:24–27 (לְכַפֵּר; LXX vs Theodotion)",
-      "status": "DONE_WAVE14_FIRST_VERSION_APPARATUS_PENDING"
-    },
-    {
-      "id": "13",
-      "topic": "Зах. 3; 12:10; 13:1; Пс. 22; 40; 69; 130 (LXX 129)",
-      "status": "DONE_WAVE15_FIRST_VERSION_APPARATUS_PENDING"
-    },
-    {
-      "id": "14",
-      "topic": "Иер. 31:31–34; Иов 19:25; 33:24",
-      "status": "DONE_WAVE16_FIRST_VERSION_APPARATUS_PENDING"
-    },
-    {
-      "id": "15",
-      "topic": "Ос. 13:14; Мих. 6:6–8; Ис. 1:11–17; Ам. 5; Пс. 51/50:16–17",
-      "status": "DONE_WAVE17_FIRST_VERSION_APPARATUS_PENDING",
-      "qaPass": "2026-10-14 (qaQalitePass): 0 unattested verse quotations; two defects fixed (card 05 Hab 2:4, card 05b Ps 51:21)"
-    }
+    {"id": "02", "topic": "גאל ga'al; פדה padah; פִּדְיוֹן", "status": "DONE_WAVE3_FIRST_VERSION_APPARATUS_PENDING"},
+    {"id": "03", "topic": "אָשָׁם asham vs חַטָּאת hattat; עָוֹן / פֶּשַׁע / חַטָּאת", "status": "DONE_WAVE4_FIRST_VERSION_APPARATUS_PENDING"},
+    {"id": "04", "topic": "דָּם dam (полная карточка; Lev 17:11 частично в 01)", "status": "DONE_WAVE5_FIRST_VERSION_APPARATUS_PENDING"},
+    {"id": "05", "topic": "צֶדֶק / צְדָקָה (ṣedeq / ṣᵉdāqâ)", "status": "DONE_WAVE6_FIRST_VERSION_APPARATUS_PENDING"},
+    {"id": "05b", "topic": "עֹלָה, שְׁלָמִים, מִנְחָה, תָּמִיד (функции жертв)", "status": "DONE_WAVE7_FIRST_VERSION_APPARATUS_PENDING"},
+    {"id": "06", "topic": "Исх. 12 — пасха; Числ. 9; Втор. 16 (פֶּסַח: кровь, агнец, кто ест)", "status": "DONE_WAVE8_FIRST_VERSION_APPARATUS_PENDING"},
+    {"id": "07", "topic": "Лев. 1–7 — система жертв (kpr + slh: что делает каждая жертва)", "status": "DONE_WAVE9_FIRST_VERSION_APPARATUS_PENDING"},
+    {"id": "08", "topic": "Лев. 16 — День очищения; два козла; לַעֲזָאזֵל (пять живых чтений); LXX Lev 16:2 ἱλαστήριον; Lev 23:27 ἐξιλασμός", "status": "DONE_WAVE10_FIRST_VERSION_APPARATUS_PENDING"},
+    {"id": "09", "topic": "Числ. 19 — красная телица", "status": "DONE_WAVE11_FIRST_VERSION_APPARATUS_PENDING"},
+    {"id": "10", "topic": "Исх. 24 (кровь завета); Быт. 22 (Мориа)", "status": "DONE_WAVE12_FIRST_VERSION_APPARATUS_PENDING"},
+    {"id": "11", "topic": "Ис. 52:13–53:12 (אָשָׁם 53:10; רַבִּים 53:11–12)", "status": "DONE_WAVE13_FIRST_VERSION_APPARATUS_PENDING"},
+    {"id": "12", "topic": "Дан. 9:24–27 (לְכַפֵּר; LXX vs Theodotion)", "status": "DONE_WAVE14_FIRST_VERSION_APPARATUS_PENDING"},
+    {"id": "13", "topic": "Зах. 3; 12:10; 13:1; Пс. 22; 40; 69; 130 (LXX 129)", "status": "DONE_WAVE15_FIRST_VERSION_APPARATUS_PENDING"},
+    {"id": "14", "topic": "Иер. 31:31–34; Иов 19:25; 33:24", "status": "DONE_WAVE16_FIRST_VERSION_APPARATUS_PENDING"},
+    {"id": "15", "topic": "Ос. 13:14; Мих. 6:6–8; Ис. 1:11–17; Ам. 5; Пс. 51/50:16–17", "status": "DONE_WAVE17_FIRST_VERSION_APPARATUS_PENDING", "qaPass": "2026-10-14 (qaQalitePass): 0 unattested verse quotations; two defects fixed (card 05 Hab 2:4, card 05b Ps 51:21)"}
   ],
-  "sourceRegistryRows": [
-    "S05",
-    "S06",
-    "S07",
-    "S08",
-    "S09",
-    "S10",
-    "S11",
-    "S12",
-    "S13",
-    "S14",
-    "S15",
-    "S16",
-    "S17",
-    "S18",
-    "S19",
-    "S20",
-    "S21",
-    "S22",
-    "S23"
-  ],
+  "sourceRegistryRows": ["S05", "S06", "S07", "S08", "S09", "S10", "S11", "S12", "S13", "S14", "S15", "S16", "S17", "S18", "S19", "S20", "S21", "S22", "S23"],
   "sources": [
-    {
-      "id": "S10",
-      "class": "P-BIBLE",
-      "name": "Swete 1909 LXX — digital transcription (Sollupulo/Swete-1909-LXX)",
-      "locator": "github.com/Sollupulo/Swete-1909-LXX (1.Genesis, 2.Exodus, 3.Leviticus, 4.Numbers)",
-      "usedFor": "LXX Gen 32:20; Exod 25:16–17, 30:12; Lev 4:20, 17:11; Num 16:46, 35:33",
-      "status": "CHECKED (2z; transcription errors at Lev 17:11)",
-      "evidenceClass": "A1 (text)",
-      "accessState": "body text, no apparatus",
-      "locatorState": "2z",
-      "rightsState": "CC BY-SA 4.0 (digital); print PD",
-      "publicationState": "not published; locators only",
-      "storage": "NOT_STORED"
-    },
-    {
-      "id": "S11",
-      "class": "P-BIBLE",
-      "name": "LXX Swete 1930 — word-level transcription (eliranwong/LXX-Swete-1930)",
-      "locator": "github.com/eliranwong/LXX-Swete-1930 (02-…word_without_punctuations.csv; 00-…versification.csv)",
-      "usedFor": "verification of all eight loci; Num 16:47; Ps 48:8",
-      "status": "CHECKED (verification only)",
-      "evidenceClass": "A1",
-      "accessState": "FULL_OBJECT_VERIFIED",
-      "locatorState": "EXACT_LOCATOR_VERIFIED",
-      "rightsState": "STORAGE_ONLY",
-      "publicationState": "BLOCKED",
-      "storage": "Complete digital files outside Git; selected extracts stored in controls/cards. Source availability must be rechecked after workspace restoration.",
-      "currentAcquisitionEvidence": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
-      "scopeOfCurrentVerification": "Named pinned digital objects/selected loci only; not all previous uses, manuscript readings, or complete human reading."
-    },
-    {
-      "id": "S12",
-      "class": "P-BIBLE",
-      "name": "Swete 1887, vol. I (Genesis–IV Kings), with apparatus",
-      "locator": "archive.org/details/oldtestamentingr01swet (djvu.txt; OCR tesseract; fragments 90, 94–95, 119–121 checked)",
-      "usedFor": "apparatus: Lev 17:11; Num 16:46–47; (Lev 13 apparatus presence)",
-      "status": "CHECKED by hand (OCR sigla to verify against image)",
-      "evidenceClass": "A1 (critical edition, 1887)",
-      "accessState": "OCR text",
-      "locatorState": "2z-plus",
-      "rightsState": "PD (1887)",
-      "publicationState": "OCR not copied; locators only",
-      "storage": "LINK_ONLY"
-    },
-    {
-      "id": "S13",
-      "class": "P-BIBLE",
-      "name": "MT morphology — openscriptures/morphhb (wlc OSIS XML)",
-      "locator": "github.com/openscriptures/morphhb (wlc/Gen.xml, Exod.xml, Lev.xml, Num.xml, Ps.xml)",
-      "usedFor": "lemma and morphology for V1–V8 and Num 17:12",
-      "status": "CHECKED",
-      "evidenceClass": "A1",
-      "accessState": "FULL_OBJECT_VERIFIED",
-      "locatorState": "EXACT_LOCATOR_VERIFIED",
-      "rightsState": "STORAGE_ONLY",
-      "publicationState": "BLOCKED",
-      "storage": "Complete digital files outside Git; selected extracts stored in controls/cards. Source availability must be rechecked after workspace restoration.",
-      "currentAcquisitionEvidence": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
-      "scopeOfCurrentVerification": "Named pinned digital objects/selected loci only; not all previous uses, manuscript readings, or complete human reading."
-    },
-    {
-      "id": "S14",
-      "class": "P-LEX",
-      "name": "BDB — openscriptures/HebrewLexicon (BrownDriverBriggs.xml, LexicalIndex.xml)",
-      "locator": "github.com/openscriptures/HebrewLexicon (readme.md)",
-      "usedFor": "glosses k.ct.ac, k.ct.ab, k.cu.ab, k.cu.ac, k.cv.ac, k.ct.ae",
-      "status": "CHECKED",
-      "evidenceClass": "B1 (lexicon; 1906)",
-      "accessState": "full XML",
-      "locatorState": "1z",
-      "rightsState": "text of BDB public domain; compilation CC BY 4.0",
-      "publicationState": "short glosses with attribution",
-      "storage": "LINK_ONLY"
-    },
-    {
-      "id": "S15",
-      "class": "P-LEX",
-      "name": "LSJ — Perseus via cltk/greek_lexica_perseus (greek_english_lexicon_lsj_1.xml)",
-      "locator": "github.com/cltk/greek_lexica_perseus (README: MPL 1.1)",
-      "usedFor": "e)cila/skomai; e)cilasmo/s; e)ci/lasma; i(lasth/rios; lu/tron",
-      "status": "CHECKED",
-      "evidenceClass": "B1 (lexicon; 1843/1940)",
-      "accessState": "full XML (beta-code keys)",
-      "locatorState": "1z",
-      "rightsState": "MPL 1.1 (per README)",
-      "publicationState": "short glosses with attribution",
-      "storage": "LINK_ONLY"
-    },
-    {
-      "id": "S16",
-      "class": "P-BIBLE",
-      "name": "NT Greek — morphgnt/sblgnt (MorphGNT lemma column; SBLGNT text)",
-      "locator": "github.com/morphgnt/sblgnt (61-…-morphgnt.txt to 87-Re)",
-      "usedFor": "lemma search (ἐξιλάσκομαι absent; ἱλάσκομαι, ἱλασμός, ἱλαστήριον, λύτρον, ἀντίλυτρον); Heb 9:22",
-      "status": "CHECKED",
-      "evidenceClass": "A1 (text) for NT locators",
-      "accessState": "full text (annotated)",
-      "locatorState": "1z (single annotated NT edition; no second NT mirror checked)",
-      "rightsState": "annotation CC BY-SA 3.0; SBLGNT text under SBLGNT EULA",
-      "publicationState": "locators and short phrases only",
-      "storage": "NOT_STORED"
-    },
-    {
-      "id": "S17",
-      "class": "P-LIB",
-      "name": "Göttingen Septuaginta — volume status (Gen 1974; Exod 1991; Lev 1986; Num 1982; Psalter — project since 2020)",
-      "locator": "adw-goe.de/en/research/completed-research-projects/academies-programme/septuaginta/ ; Brill bibliography; SearchWorks; CCAT IOSCS",
-      "usedFor": "ARCHIVE_HOLD; identifying which critical edition would decide the variants",
-      "status": "CHECKED (bibliography); text not opened",
-      "evidenceClass": "n/a",
-      "accessState": "none (no legal open copy found)",
-      "locatorState": "n/a",
-      "rightsState": "copyrighted print edition",
-      "publicationState": "not published",
-      "storage": "LINK_ONLY"
-    },
-    {
-      "id": "S18",
-      "class": "P-LIB",
-      "name": "Göttingen 'Text History' volumes (MSU XI, XVI, XIX, XXI) — PDF downloads listed on ADW page",
-      "locator": "adw-goe.de (same page; 'PDF-Download' links for Gen 1974, Num 1982, Lev 1986, Exod 1992)",
-      "usedFor": "candidate open route for variant history (not yet opened)",
-      "status": "NOT_OPENED",
-      "evidenceClass": "B1 (secondary) if used",
-      "accessState": "listed, not opened",
-      "locatorState": "n/a",
-      "rightsState": "unknown: check licence before downloading",
-      "publicationState": "n/a",
-      "storage": "NOT_STORED"
-    },
-    {
-      "id": "S19",
-      "class": "EXCLUDED",
-      "name": "eliranwong/LXX-Rahlfs-1935 (Rahlfs text, no licence)",
-      "locator": "github.com/eliranwong/LXX-Rahlfs-1935",
-      "usedFor": "none",
-      "status": "EXCLUDED (no licence; Rahlfs text is copyrighted)",
-      "evidenceClass": "n/a",
-      "accessState": "not used",
-      "locatorState": "n/a",
-      "rightsState": "unclear / protected",
-      "publicationState": "NO",
-      "storage": "NOT_STORED"
-    },
-    {
-      "id": "S20",
-      "class": "CANDIDATE",
-      "name": "Holmes–Parsons, Vetus Testamentum Graecum cum variis lectionibus (1798–1827)",
-      "locator": "not opened (scans on archive.org / Google Books — to check)",
-      "usedFor": "possible open apparatus for variants (wider than Swete 1887)",
-      "status": "NOT_OPENED",
-      "evidenceClass": "A1 (edition, 18th–19th c.)",
-      "accessState": "not checked",
-      "locatorState": "n/a",
-      "rightsState": "PD (expected; verify)",
-      "publicationState": "n/a",
-      "storage": "NOT_STORED"
-    },
-    {
-      "id": "S21",
-      "class": "P-BIBLE",
-      "name": "theancientbible.org — Isaiah (LXX) 59, Greek text page",
-      "locator": "theancientbible.org/isaiah-lxx-59/",
-      "usedFor": "second LXX host for Isa 59:20 (ῥυόμενος); verification only",
-      "status": "CHECKED (second host; edition not stated)",
-      "evidenceClass": "A1 (LXX text), edition unknown — treat as unverified A1",
-      "accessState": "read via search-result excerpt",
-      "locatorState": "2z (conditional: edition not stated)",
-      "rightsState": "unknown (edition not stated); verification only, no copying",
-      "publicationState": "n/a",
-      "storage": "LINK_ONLY"
-    },
-    {
-      "id": "S22",
-      "class": "EXCLUDED",
-      "name": "Rahlfs-based LXX web pages (die-bibel.de; lire.la-bible.net) — seen in search excerpts only",
-      "locator": "die-bibel.de/bibel/LXX/EXO.13.1-EXO.13.16; lire.la-bible.net/bible/LXX/EXO.13",
-      "usedFor": "none",
-      "status": "EXCLUDED (Rahlfs text; not opened, not used; cf. S19)",
-      "evidenceClass": "n/a",
-      "accessState": "search excerpt only",
-      "locatorState": "n/a",
-      "rightsState": "Rahlfs text — no licence assumed",
-      "publicationState": "n/a",
-      "storage": "NOT_STORED"
-    },
-    {
-      "id": "S23",
-      "class": "P-BIBLE",
-      "name": "lxx-swete — First1K-derived token files; project labelled Swete, but the observed Isaiah excerpts align with grc2/Ottley rather than an independent Swete witness.",
-      "locator": "lxx-swete/data (01.Genesis … 53.Ezechiel); README: derived from OpenGreekAndLatin/First1KGreek tlg0527",
-      "usedFor": "third LXX mirror for all OT books in card 03 (Lev 4–10; Num 5, 15, 18; Ps; Hos; Ezek; Isa 53); verification only",
-      "status": "Derived First1K transcription; not an independent witness or a verified codex collation.",
-      "evidenceClass": "A1",
-      "accessState": "FULL_OBJECT_VERIFIED",
-      "locatorState": "EXACT_LOCATOR_VERIFIED",
-      "rightsState": "STORAGE_ONLY",
-      "publicationState": "BLOCKED",
-      "storage": "Complete digital files outside Git; selected extracts stored in controls/cards. Source availability must be rechecked after workspace restoration.",
-      "currentAcquisitionEvidence": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
-      "scopeOfCurrentVerification": "Named pinned digital objects/selected loci only; not all previous uses, manuscript readings, or complete human reading."
-    }
+    {"id": "S10", "class": "P-BIBLE", "name": "Swete 1909 LXX — digital transcription (Sollupulo/Swete-1909-LXX)", "locator": "github.com/Sollupulo/Swete-1909-LXX (1.Genesis, 2.Exodus, 3.Leviticus, 4.Numbers)", "usedFor": "LXX Gen 32:20; Exod 25:16–17, 30:12; Lev 4:20, 17:11; Num 16:46, 35:33", "status": "CHECKED (2z; transcription errors at Lev 17:11)", "evidenceClass": "A1 (text)", "accessState": "body text, no apparatus", "locatorState": "2z", "rightsState": "CC BY-SA 4.0 (digital); print PD", "publicationState": "not published; locators only", "storage": "NOT_STORED"},
+    {"id": "S11", "class": "P-BIBLE", "name": "LXX Swete 1930 — word-level transcription (eliranwong/LXX-Swete-1930)", "locator": "github.com/eliranwong/LXX-Swete-1930 (02-…word_without_punctuations.csv; 00-…versification.csv)", "usedFor": "verification of all eight loci; Num 16:47; Ps 48:8", "status": "CHECKED (verification only)", "evidenceClass": "A1", "accessState": "FULL_OBJECT_VERIFIED", "locatorState": "EXACT_LOCATOR_VERIFIED", "rightsState": "STORAGE_ONLY", "publicationState": "BLOCKED", "storage": "Complete digital files outside Git; selected extracts stored in controls/cards. Source availability must be rechecked after workspace restoration.", "currentAcquisitionEvidence": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json", "scopeOfCurrentVerification": "Named pinned digital objects/selected loci only; not all previous uses, manuscript readings, or complete human reading."},
+    {"id": "S12", "class": "P-BIBLE", "name": "Swete 1887, vol. I (Genesis–IV Kings), with apparatus", "locator": "archive.org/details/oldtestamentingr01swet (djvu.txt; OCR tesseract; fragments 90, 94–95, 119–121 checked)", "usedFor": "apparatus: Lev 17:11; Num 16:46–47; (Lev 13 apparatus presence)", "status": "CHECKED by hand (OCR sigla to verify against image)", "evidenceClass": "A1 (critical edition, 1887)", "accessState": "OCR text", "locatorState": "2z-plus", "rightsState": "PD (1887)", "publicationState": "OCR not copied; locators only", "storage": "LINK_ONLY"},
+    {"id": "S13", "class": "P-BIBLE", "name": "MT morphology — openscriptures/morphhb (wlc OSIS XML)", "locator": "github.com/openscriptures/morphhb (wlc/Gen.xml, Exod.xml, Lev.xml, Num.xml, Ps.xml)", "usedFor": "lemma and morphology for V1–V8 and Num 17:12", "status": "CHECKED", "evidenceClass": "A1", "accessState": "FULL_OBJECT_VERIFIED", "locatorState": "EXACT_LOCATOR_VERIFIED", "rightsState": "STORAGE_ONLY", "publicationState": "BLOCKED", "storage": "Complete digital files outside Git; selected extracts stored in controls/cards. Source availability must be rechecked after workspace restoration.", "currentAcquisitionEvidence": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json", "scopeOfCurrentVerification": "Named pinned digital objects/selected loci only; not all previous uses, manuscript readings, or complete human reading."},
+    {"id": "S14", "class": "P-LEX", "name": "BDB — openscriptures/HebrewLexicon (BrownDriverBriggs.xml, LexicalIndex.xml)", "locator": "github.com/openscriptures/HebrewLexicon (readme.md)", "usedFor": "glosses k.ct.ac, k.ct.ab, k.cu.ab, k.cu.ac, k.cv.ac, k.ct.ae", "status": "CHECKED", "evidenceClass": "B1 (lexicon; 1906)", "accessState": "full XML", "locatorState": "1z", "rightsState": "text of BDB public domain; compilation CC BY 4.0", "publicationState": "short glosses with attribution", "storage": "LINK_ONLY"},
+    {"id": "S15", "class": "P-LEX", "name": "LSJ — Perseus via cltk/greek_lexica_perseus (greek_english_lexicon_lsj_1.xml)", "locator": "github.com/cltk/greek_lexica_perseus (README: MPL 1.1)", "usedFor": "e)cila/skomai; e)cilasmo/s; e)ci/lasma; i(lasth/rios; lu/tron", "status": "CHECKED", "evidenceClass": "B1 (lexicon; 1843/1940)", "accessState": "full XML (beta-code keys)", "locatorState": "1z", "rightsState": "MPL 1.1 (per README)", "publicationState": "short glosses with attribution", "storage": "LINK_ONLY"},
+    {"id": "S16", "class": "P-BIBLE", "name": "NT Greek — morphgnt/sblgnt (MorphGNT lemma column; SBLGNT text)", "locator": "github.com/morphgnt/sblgnt (61-…-morphgnt.txt to 87-Re)", "usedFor": "lemma search (ἐξιλάσκομαι absent; ἱλάσκομαι, ἱλασμός, ἱλαστήριον, λύτρον, ἀντίλυτρον); Heb 9:22", "status": "CHECKED", "evidenceClass": "A1 (text) for NT locators", "accessState": "full text (annotated)", "locatorState": "1z (single annotated NT edition; no second NT mirror checked)", "rightsState": "annotation CC BY-SA 3.0; SBLGNT text under SBLGNT EULA", "publicationState": "locators and short phrases only", "storage": "NOT_STORED"},
+    {"id": "S17", "class": "P-LIB", "name": "Göttingen Septuaginta — volume status (Gen 1974; Exod 1991; Lev 1986; Num 1982; Psalter — project since 2020)", "locator": "adw-goe.de/en/research/completed-research-projects/academies-programme/septuaginta/ ; Brill bibliography; SearchWorks; CCAT IOSCS", "usedFor": "ARCHIVE_HOLD; identifying which critical edition would decide the variants", "status": "CHECKED (bibliography); text not opened", "evidenceClass": "n/a", "accessState": "none (no legal open copy found)", "locatorState": "n/a", "rightsState": "copyrighted print edition", "publicationState": "not published", "storage": "LINK_ONLY"},
+    {"id": "S18", "class": "P-LIB", "name": "Göttingen 'Text History' volumes (MSU XI, XVI, XIX, XXI) — PDF downloads listed on ADW page", "locator": "adw-goe.de (same page; 'PDF-Download' links for Gen 1974, Num 1982, Lev 1986, Exod 1992)", "usedFor": "candidate open route for variant history (not yet opened)", "status": "NOT_OPENED", "evidenceClass": "B1 (secondary) if used", "accessState": "listed, not opened", "locatorState": "n/a", "rightsState": "unknown: check licence before downloading", "publicationState": "n/a", "storage": "NOT_STORED"},
+    {"id": "S19", "class": "EXCLUDED", "name": "eliranwong/LXX-Rahlfs-1935 (Rahlfs text, no licence)", "locator": "github.com/eliranwong/LXX-Rahlfs-1935", "usedFor": "none", "status": "EXCLUDED (no licence; Rahlfs text is copyrighted)", "evidenceClass": "n/a", "accessState": "not used", "locatorState": "n/a", "rightsState": "unclear / protected", "publicationState": "NO", "storage": "NOT_STORED"},
+    {"id": "S20", "class": "CANDIDATE", "name": "Holmes–Parsons, Vetus Testamentum Graecum cum variis lectionibus (1798–1827)", "locator": "not opened (scans on archive.org / Google Books — to check)", "usedFor": "possible open apparatus for variants (wider than Swete 1887)", "status": "NOT_OPENED", "evidenceClass": "A1 (edition, 18th–19th c.)", "accessState": "not checked", "locatorState": "n/a", "rightsState": "PD (expected; verify)", "publicationState": "n/a", "storage": "NOT_STORED"},
+    {"id": "S21", "class": "P-BIBLE", "name": "theancientbible.org — Isaiah (LXX) 59, Greek text page", "locator": "theancientbible.org/isaiah-lxx-59/", "usedFor": "second LXX host for Isa 59:20 (ῥυόμενος); verification only", "status": "CHECKED (second host; edition not stated)", "evidenceClass": "A1 (LXX text), edition unknown — treat as unverified A1", "accessState": "read via search-result excerpt", "locatorState": "2z (conditional: edition not stated)", "rightsState": "unknown (edition not stated); verification only, no copying", "publicationState": "n/a", "storage": "LINK_ONLY"},
+    {"id": "S22", "class": "EXCLUDED", "name": "Rahlfs-based LXX web pages (die-bibel.de; lire.la-bible.net) — seen in search excerpts only", "locator": "die-bibel.de/bibel/LXX/EXO.13.1-EXO.13.16; lire.la-bible.net/bible/LXX/EXO.13", "usedFor": "none", "status": "EXCLUDED (Rahlfs text; not opened, not used; cf. S19)", "evidenceClass": "n/a", "accessState": "search excerpt only", "locatorState": "n/a", "rightsState": "Rahlfs text — no licence assumed", "publicationState": "n/a", "storage": "NOT_STORED"},
+    {"id": "S23", "class": "P-BIBLE", "name": "lxx-swete — First1K-derived token files; project labelled Swete, but the observed Isaiah excerpts align with grc2/Ottley rather than an independent Swete witness.", "locator": "lxx-swete/data (01.Genesis … 53.Ezechiel); README: derived from OpenGreekAndLatin/First1KGreek tlg0527", "usedFor": "third LXX mirror for all OT books in card 03 (Lev 4–10; Num 5, 15, 18; Ps; Hos; Ezek; Isa 53); verification only", "status": "Derived First1K transcription; not an independent witness or a verified codex collation.", "evidenceClass": "A1", "accessState": "FULL_OBJECT_VERIFIED", "locatorState": "EXACT_LOCATOR_VERIFIED", "rightsState": "STORAGE_ONLY", "publicationState": "BLOCKED", "storage": "Complete digital files outside Git; selected extracts stored in controls/cards. Source availability must be rechecked after workspace restoration.", "currentAcquisitionEvidence": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json", "scopeOfCurrentVerification": "Named pinned digital objects/selected loci only; not all previous uses, manuscript readings, or complete human reading."}
   ],
   "doNot": [
     "pirate-copyrighted-pdfs",
@@ -12836,7 +11780,8 @@
     "commit-google_drive-scratch-exports",
     "copy-transcriptions-with-copyleft-or-unlicensed-data-into-repo",
     "cite-Lev-17:11-ἐξειλάσεται-B*-without-image-check"
-  ],
+  ]
+,
   "synchronizationReview": {
     "date": "2026-11-03",
     "evidence": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
@@ -12865,751 +11810,6 @@
     ],
     "supersedesOnly": "Generic request for a bounded OT comparison in Wave5 next actions, only for the explicitly listed ranges. Older wave findings/receipts remain historical; Cyril Greek/critical transmission remains open.",
     "nextAction": "Critical/printed collation of digital irregularities and proposed intertexts; separate Cyril Greek/critical transmission. No whole-OT/atonement closure."
-  },
-  "wave26": {
-    "date": "2026-11-15",
-    "card": "19_LXX_NUMBERING_ERRATA",
-    "edition": "seventh (content check of the 23-chapter overlap)",
-    "scope": "Закрытие долга §3.7: 23 главы пересечения двух карт, не прочитанные по содержанию, прочитаны все.",
-    "sources": "MT morphhb (WLC); ELI S11 (LXX-Swete-1930); SOL S10 (Swete-1909).",
-    "measured": {
-      "chaptersRead": 23,
-      "realDivergences": 23,
-      "profileMagnitudeCorrect": 21,
-      "profileMagnitudeWrongSign": 1,
-      "profileMagnitudeWhereOwnReadingWasWrong": 1,
-      "falseProfileFlags": 0,
-      "emptyEliAddresses": {
-        "count": 686,
-        "ofTotal": 30533,
-        "share": "2.2%",
-        "sameInSol": true
-      },
-      "mechanisms": {
-        "chapterBoundaryShift": 9,
-        "displacedChapterStart": 3,
-        "mergeOrSplitInsideChapter": 5,
-        "verseOmission": 2
-      },
-      "deuteronomy23": {
-        "mt": "23:1 = ELI 22:30",
-        "empty": "ELI 23:2 (record 116062 empty, also SOL 23:2)",
-        "mtWithoutMatch": "MT 23:3 (לא יבא ממזר)",
-        "note": "ELI 23:3 содержит МТ 23:4"
-      }
-    },
-    "keyFinding": "Все 23 главы пересечения — настоящие расхождения, и профиль дал верную величину в 21 случае из 23 при нуле ложных пометок. Но величина из корреляции остаётся гипотезой: Числ 17 — верный модуль при неверном знаке, а правило «разность числа стихов соседних глав равна сдвигу», которое я вывел и записал, ложно (Притч 19: +1 вместо -3 из-за выпавших МТ 19:1-3).",
-    "methodNote": "Мой собственный промах круга: я классифицировал Притч 19 по номерам стихов (МТ 19:1-3 против ELI 19:1-2) и получил +1, тогда как по содержанию ELI 19:1 = МТ 19:4 и сдвиг равен -3. Проверка якорем по биграммам и чтением опровергла. Так же была неверна строка про 1 Пар 12: якорь не на 12:1, а на 12:6 (место слияния).",
-    "correctionsApplied": [
-      "19 §3.8: новая секция — 23 якоря, счёт 21/1/1, три исключения, четыре механизма",
-      "19 §4 п. 4б переформулирован (гипотеза, проверяемая якорем)",
-      "19 §4 п. 4в, 4г добавлены (разность стихов не равна сдвигу; пустой адрес опаснее сдвига)",
-      "19 §7: метод проверки адреса якорем и отдельная проверка непустоты",
-      "19 §8 п. 1в закрыт",
-      "authority, README, SSOT — седьмая редакция"
-    ],
-    "holdsOpened": [
-      "Втор 23:2: пустой адрес в ELI и SOL; нужен печатный Свита или Гёттинген — §8 п. 3"
-    ],
-    "holdsClosed": [],
-    "measuredAt": "2026-11-15T00:00:00Z",
-    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
-    "publicationEligible": false
-  },
-  "wave27": {
-    "date": "2026-11-15",
-    "card": "19_LXX_NUMBERING_ERRATA",
-    "edition": "eighth (hilask count reproduced machine-side; new rod)",
-    "scope": "Исполнение §8 п. 2: проверка, нет ли локусов, где hilask-глагол передан синонимом — и обратного направления.",
-    "sources": "MT morphhb (WLC); ELI S11 (LXX-Swete-1930).",
-    "measured": {
-      "kafrVerses": 93,
-      "withHilaskVerb": 81,
-      "withoutHilaskVerb": 12,
-      "reproducedMachine": true,
-      "firstRunWrong": {
-        "with": 75,
-        "without": 18,
-        "cause": "не применены сдвиги классов 1 и 2"
-      },
-      "eliHilaskVersesTotal": 155,
-      "hilaskNounsSeparate": [
-        "ιλαστηριον",
-        "ιλασμος"
-      ],
-      "excludedAdjective": {
-        "form": "ἵλεως",
-        "example": "Isa 54:10 ELI Ἵλεώς σοι, Κύριε",
-        "mt": "מְרַחֲמֵךְ",
-        "why": "формула, hilask-глагола нет"
-      },
-      "salachVersesTotal": 45,
-      "salachWithKafr": 12,
-      "salachHilaskNoKafr": 4,
-      "salachOrdinary": 29,
-      "newRod": {
-        "2Kgs5:18": [
-          "ιλασεται",
-          "ιλασεται"
-        ],
-        "2Kgs24:4": [
-          "ιλασθηναι"
-        ],
-        "Ps25:11": [
-          "ιλαση"
-        ],
-        "Lam3:42": [
-          "ιλασθης"
-        ]
-      }
-    },
-    "keyFinding": "Счёт 81/12 воспроизведён машинно и верен. В направлении §8 п. 2 новых локусов нет, но обратное направление дало новый род: там, где МТ имеет סלח без כפר, LXX в четырёх случаях даёт hilask-глагол. Значит множество hilask-глаголов и множество כפר-стихов не совпадают и не вложены друг в друга.",
-    "methodNote": "Моя ошибка круга: первый прогон дал 75/18, потому что я считал по номерам, а не по установленным адресам — не применил свите-нумерацию Лев 5-7 (сдвиг в LXX 6) и кусочный сдвиг Псалтири. Поймано расхождением с записанным числом, не перечитыванием.",
-    "correctionsApplied": [
-      "19 §3.9: новая секция — машинное воспроизведение счёта и новый род",
-      "19 §3.3: указано, чего в четырёх родах нет (обратное направление)",
-      "19 §4 п. 4д добавлен (два множества не совпадают)",
-      "19 §7: разделение глаголов и существительных; исключение ἵλεως; скрипты пересчёта",
-      "19 §8 п. 2 закрыт",
-      "authority, README, SSOT — восьмая редакция"
-    ],
-    "holdsOpened": [],
-    "holdsClosed": [],
-    "measuredAt": "2026-11-15T00:00:00Z",
-    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
-    "publicationEligible": false
-  },
-  "wave28": {
-    "date": "2026-11-15",
-    "card": "19_LXX_NUMBERING_ERRATA",
-    "edition": "ninth (reverse set classified; rod V closed)",
-    "scope": "Классификация обратного множества hilask-глаголов в ELI и закрытие открытого вопроса рода В.",
-    "sources": "ELI S11 (Swete 1930); First1KGreek tlg056 (translatio Graeca) и tlg057 (Theodotionis versio), Swete t. III; MT morphhb (WLC).",
-    "measured": {
-      "eliHilaskVerbVerses": 109,
-      "withKafr": 81,
-      "withSalach": 4,
-      "neither": 11,
-      "outsideCanon": 12,
-      "noMtVerse": 1,
-      "arithmetic": "81+4+11+12+1=109",
-      "detector": "explicit list of 38 forms, not prefixes",
-      "kafr94vs93": "94 verses carry lemma 3722; Gen 6:14 is 3722 b (homonym 'to pitch'), the count 93 is 3722 a",
-      "dan9_24": {
-        "og": "απαλειψαι — no hilask",
-        "theodotion": "καὶ τοῦ ἐξιλάσασθαι ἀδικίας — hilask",
-        "verdict": "editorial difference, not translational"
-      },
-      "countIfTheodotion": "93/82/11"
-    },
-    "keyFinding": "Обратное множество целиком: 109. Род В закрыт по второму зеркалу того же стиха: Old Greek Дан 9:24 не имеет hilask, Феодотион имеет. Счёт 93/81/12 записан против Old Greek, и это надо называть всегда.",
-    "methodNote": "Дважды ошибся числами в этом круге: сначала назвал обратное множество 126 (арифметика 81+4+12+12+1=110 её опровергла), затем 12 локусов «ни то ни другое» (на деле 11). Оба числа исправлены прогоном tally.py, не рассуждением.",
-    "correctionsApplied": [
-      "19 §3.10 новая",
-      "19 §3.3 род В закрыт, роды Е-З разобраны",
-      "19 §3.9 число 155 -> 109",
-      "19 §4 п. 4д пересчитан (15 локусов, лишние 28)",
-      "19 §7 правило явного списка форм",
-      "authority п. 22, README девятая редакция, SSOT wave28"
-    ],
-    "holdsOpened": [],
-    "holdsClosed": [],
-    "measuredAt": "2026-11-15T00:00:00Z",
-    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
-    "publicationEligible": false
-  },
-  "wave29": {
-    "date": "2026-11-15",
-    "card": "19_LXX_NUMBERING_ERRATA",
-    "edition": "tenth (scope boundary measured)",
-    "scope": "Границы применимости счёта: афразиатские омонимы, культовые существительные, точное отношение множеств 3722 и 5545.",
-    "sources": "MT morphhb (WLC) леммы и метки смысла; ELI S11; First1KGreek tlg056/tlg057.",
-    "measured": {
-      "formSalach": {
-        "totalVerses": 133,
-        "strong": {
-          "5545": 45,
-          "5542": 74,
-          "5543": 6,
-          "5541": 4,
-          "5544": 2,
-          "5539": 1,
-          "5540": 1
-        }
-      },
-      "formKafr": {
-        "totalVerses": 171,
-        "strong": {
-          "3722": 94,
-          "3715": 32,
-          "3727": 22,
-          "3724": 17,
-          "3713": 6
-        }
-      },
-      "kafrVerbOnly": 93,
-      "salachVerbOnly": 45,
-      "intersection": 12,
-      "union": 127,
-      "notCounted": [
-        "3727 כפרת 22",
-        "3724 כפר 17",
-        "2470 חלה 73",
-        "5162 נחם 100",
-        "6419 פלל 82"
-      ],
-      "countAgainst": "Old Greek (tlg056)",
-      "countIfTheodotion": "93/82/11"
-    },
-    "keyFinding": "Счёт 93/81/12 отвечает на вопрос «как LXX передаёт глагол כפר», а не «где в еврейском тексте тема искупления». Под формой כפר в МТ 171 стих в пяти номерах, под формой סלח 133 в семи; к глаголам относятся 93 и 45. Систематический пропуск — כַּפֹּרֶת (22 стиха), то самое слово, которое LXX передаёт как ἱλαστήριον.",
-    "methodNote": "Все номера Strong в §3.11 сняты прогоном по леммам, а не по памяти: первая версия таблицы содержала номера без чисел, и это было исправлено до коммита.",
-    "correctionsApplied": [
-      "19 §3.11 новая",
-      "19 §3.2 явно назван греческий текст счёта",
-      "19 §8 п. 2: 155 -> 109 и ссылка на §3.10",
-      "authority п. 23, README десятая редакция, SSOT wave29"
-    ],
-    "holdsOpened": [],
-    "holdsClosed": [],
-    "measuredAt": "2026-11-15T00:00:00Z",
-    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
-    "publicationEligible": false
-  },
-  "wave30": {
-    "date": "2026-11-15",
-    "card": "19_LXX_NUMBERING_ERRATA",
-    "edition": "eleventh (Exodus 36-40 transposition)",
-    "scope": "Сплошной счёт культовых существительных как проверка второй стороны границы §3.11; обнаружена перестановка глав Исхода.",
-    "sources": "ELI S11; First1KGreek tlg002 (Exodus) и tlg0527/tlg056-057; MT morphhb.",
-    "measured": {
-      "exodus36_40": {
-        "mt": [
-          38,
-          29,
-          31,
-          43,
-          38
-        ],
-        "eli": [
-          40,
-          21,
-          27,
-          23,
-          32
-        ]
-      },
-      "chaptersDivergingExodus": 10,
-      "map": {
-        "MT36:8": "ELI37",
-        "MT37": "ELI38",
-        "MT38:1-20": "ELI39:1-10",
-        "MT38:21-23": "ELI37:19-21",
-        "MT39": "ELI36:8-end",
-        "MT40": "ELI40"
-      },
-      "independentWitness": "First1KGreek tlg002 same order",
-      "bigGapsPentateuch": [
-        "Exod 37",
-        "Exod 39",
-        "Exod 40",
-        "Lev 5",
-        "Lev 6",
-        "Lev 7",
-        "Num 16",
-        "Num 17"
-      ],
-      "newTranspositions": 1,
-      "countUnchanged": "93/81/12"
-    },
-    "keyFinding": "Исход 36-40 в LXX переставлен относительно МТ: блок переписи металлов (МТ 38:1-20) вынесен вперёд, ковчег и каппорет (МТ 37) ушли на главу позже, одежды (МТ 39) — в конец главы 36. §3.6 эти главы видел, но подпись «разное деление» их накрыла и дальше их никто не прочитал.",
-    "methodNote": "Круг начался с проверки второй стороны границы §3.11 (сплошной счёт существительных) и упёрся в расхождение, к существительным отношения не имеющее. Проверка на другие перестановки сделана по всему Пятикнижию, а не только по Исходу.",
-    "correctionsApplied": [
-      "19 §3.12 новая",
-      "19 §3.6 уточнение к фразе об Исходе",
-      "19 §8 п. 2а добавлен и закрыт",
-      "authority п. 24, README одиннадцатая редакция, SSOT wave30"
-    ],
-    "holdsOpened": [],
-    "holdsClosed": [],
-    "measuredAt": "2026-11-15T00:00:00Z",
-    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
-    "publicationEligible": false
-  },
-  "wave31": {
-    "date": "2026-11-15",
-    "card": "19_LXX_NUMBERING_ERRATA",
-    "edition": "twelfth (Jeremiah block transposition)",
-    "scope": "Проверка перестановок за пределами Пятикнижия; Иеремия как первая книга.",
-    "sources": "ELI S11; MT morphhb (WLC).",
-    "measured": {
-      "nationsBlock": {
-        "MT": "46-51",
-        "ELI": "25-32",
-        "rubrics": [
-          "Τῇ Αἰγύπτῳ=46",
-          "Ἐπὶ τοὺς ἀλλοφύλους=47",
-          "Τῇ Μωάβ=48",
-          "Τοῖς υἱοῖς Ἀμμών=49",
-          "ἐπὶ Βαβυλῶνα=50",
-          "ἐπὶ Βαβυλῶνα=51"
-        ]
-      },
-      "fallBlock": {
-        "MT": "37-44",
-        "ELI": "44-51",
-        "example": "ELI 45:1 = МТ 38:1"
-      },
-      "keyVerses": {
-        "MT31:1": "ELI38:1",
-        "MT31:31": "ELI38:31",
-        "MT33:1": "ELI40:1",
-        "MT45:4-5": "ELI51:34-35"
-      },
-      "countUnchanged": "93/81/12",
-      "methodsRejected": [
-        "big gap (124 chapters)",
-        "length-match with neighbour",
-        "anchor words"
-      ],
-      "methodWorks": "read the chapter opening"
-    },
-    "keyFinding": "В LXX Иеремии книги о народах стоят перед рассказом о падении Иерусалима, а в МТ — после. Это другая композиция книги, а не сдвиг номеров. §3.6 называл причину расплывчато («системно»), не проверив.",
-    "methodNote": "Круг стоил двух ошибок: сначала записал «Варух — ELI 51» по номеру, проверка по содержанию опровергла (ELI 51:1 о Египте); верный адрес — конец ELI 51, ст.34-35. Также отброшены три метода поиска перестановки, и это записано, чтобы их не повторяли.",
-    "correctionsApplied": [
-      "19 §3.13 новая",
-      "19 §3.6 уточнение об Иеремии",
-      "19 §8 п. 2б добавлен и закрыт",
-      "authority п. 25, README двенадцатая редакция, SSOT wave31"
-    ],
-    "holdsOpened": [],
-    "holdsClosed": [],
-    "measuredAt": "2026-11-15T00:00:00Z",
-    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
-    "publicationEligible": false
-  },
-  "wave32": {
-    "date": "2026-11-15",
-    "card": "19_LXX_NUMBERING_ERRATA",
-    "edition": "thirteenth (verse numbers preserved within Jeremiah blocks)",
-    "scope": "Проверка, сохраняется ли номер стиха внутри переставленных блоков Иеремии; сверка с карточкой 14.",
-    "sources": "ELI S11; MT morphhb (WLC); 14_JER31_JOB19_33.md как независимый источник адресов.",
-    "measured": {
-      "pairs": {
-        "46": "26",
-        "47": "29",
-        "48": "31",
-        "49": "30",
-        "50": "27",
-        "51": "28"
-      },
-      "verseNumbersPreserved": true,
-      "exception": {
-        "MT46:1": "заглавие цикла, отдельного стиха в LXX нет",
-        "ELI26:1": "рубрика о Еламе",
-        "ELI26:2": "МТ 46:2"
-      },
-      "elam": {
-        "MT": "49:34-39",
-        "ELI": "25:14-19",
-        "note": "отдельный блок перед Египтом"
-      },
-      "truncations": {
-        "ELI31": "до ст.45",
-        "ELI30": "до ст.37 (МТ до 39)"
-      },
-      "card14crosscheck": {
-        "31:31": "38:31 ✓",
-        "33:8": "40:8 ✓",
-        "36:3": "43:3 ✓",
-        "50:20": "27:20 ✓"
-      }
-    },
-    "keyFinding": "Внутри переставленных блоков Иеремии номер стиха сохраняется, поэтому правило адресации простое и механическое. Единственное исключение — МТ 46:1 (заглавие цикла) без соответствия в LXX. Карточка 14 независимо подтверждена в четырёх адресах.",
-    "methodNote": "Сверка с карточкой 14 сделана после своего разбора, а не вместо него — иначе это была бы не проверка, а повторение.",
-    "correctionsApplied": [
-      "19 §3.14 новая",
-      "19 §8 п. 2в добавлен и закрыт",
-      "authority п. 26, README тринадцатая редакция, SSOT wave32"
-    ],
-    "holdsOpened": [],
-    "holdsClosed": [],
-    "measuredAt": "2026-11-15T00:00:00Z",
-    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
-    "publicationEligible": false
-  },
-  "wave33": {
-    "date": "2026-11-15",
-    "card": "19_LXX_NUMBERING_ERRATA",
-    "edition": "fourteenth (second side measured; version 2 after re-shoot)",
-    "scope": "Исполнение §3.11 п. 5: сплошной счёт семи полей против hilask-глаголов в ELI, с поправкой на сдвиги адреса.",
-    "sources": "ELI S11 (LXX-Swete-1930); MT morphhb (WLC) как источник лемм.",
-    "measured": {
-      "fieldCensus": {
-        "3727": 22,
-        "3724": 17,
-        "3725": 7,
-        "2470": 73,
-        "5162": 100,
-        "6419": 82,
-        "2398": 220,
-        "total": 521
-      },
-      "hilaskVerbAtSameAddress": {
-        "3727": 0,
-        "3724": 0,
-        "3725": 4,
-        "2470": 3,
-        "5162": 1,
-        "6419": 1,
-        "2398": 15,
-        "total": 24
-      },
-      "outside93count": 6,
-      "outside93countLoci": [
-        "Mal 1:9",
-        "Zech 7:2",
-        "Zech 8:22",
-        "Exod 32:14",
-        "Ezek 43:22",
-        "Ezek 45:18"
-      ],
-      "nounOnlyLoss": {
-        "3727": 12,
-        "3725": 2,
-        "3724": 1,
-        "total": 15
-      },
-      "literalAddressCount": 70,
-      "documentedCount": 81,
-      "gapBreakdown": {
-        "lexicalRods": 12,
-        "shiftCorrections": 9,
-        "lev67Reorder": 2,
-        "total": 23
-      },
-      "shiftCorrectionsVerified": [
-        "Gen 32:21->32:20",
-        "Lev 5:26->6:7",
-        "Num 17:11->16:46",
-        "Num 17:12->16:47",
-        "Neh 10:34->10:33",
-        "1Chr 6:34->6:49",
-        "Ps 79:9->78:9",
-        "Ps 65:4->64:4",
-        "Ps 78:38->77:38"
-      ],
-      "lev67Reorders": [
-        "MT Lev 6:23 = ELI 6:30",
-        "MT Lev 7:7 = ELI 6:37"
-      ],
-      "formsInventory": {
-        "distinct": 33,
-        "verbs": 22,
-        "nouns": 10,
-        "hileosExcluded": 25
-      },
-      "openDiscrepancy": 0,
-      "eliVerbTotalAllBooks": 109,
-      "eliVerbInCanon": 96,
-      "eliVerbOutsideCanon": 13,
-      "eliNounTotal": 48,
-      "openDiscrepancyResolvedAs": "ошибка сравнения: Dan=Old Greek, Dat=Феодотион, книги вне канона не входят в прогон по книгам МТ",
-      "theodotion": {
-        "Dan 9:19": "ιλασθητι (есть)",
-        "Dan 9:24": "εξιλασασθαι (есть)",
-        "OldGreek 9:19": "нет",
-        "OldGreek 9:24": "нет"
-      }
-    },
-    "keyFinding": "Счёт 93/81/12 от расширения поля не меняется: добавка даёт 6 адресов, и все шесть уже были в §3.10. Но прогон по буквальному адресу даёт 70, а не 81 — разница объясняется девятью задокументированными сдвигами и двумя перестановками внутри Лев 6-7. Отсюда правило: называть счёт вместе со способом счёта.",
-    "methodNote": "Детектор переписан на явный список форм после того, как §3.10 показал несостоятельность префиксного правила: εξιλασεσθε (глагол) и εξιλασεως (существительное) расходятся только в конце.",
-    "correctionsApplied": [
-      "19 §3.15 переснята: 13→15 по существительным, «6 стихов» снято как ошибка сравнения",
-      "19 §8 п. 2г дополнен пересъёмом",
-      "authority п. 27 дополнен, README четырнадцатая редакция дополнена, SSOT wave33 v2"
-    ],
-    "holdsOpened": [
-      "постишная карта Лев 6-7 отсутствует"
-    ],
-    "holdsClosed": [],
-    "measuredAt": "2026-11-15T00:00:00Z",
-    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
-    "publicationEligible": false,
-    "selfCorrection": "В первой редакции §3.15 я записал расхождение в 6 стихов и потерю 13. Оба числа были следствием того, что сравнение шло по книгам МТ с картой ELI, где Dan=Old Greek и нет книг вне канона. Переснято прямым прогоном по всему корпусу."
-  },
-  "wave34": {
-    "date": "2026-11-15",
-    "card": "19_LXX_NUMBERING_ERRATA",
-    "edition": "fifteenth (verse map of Lev 5:14-7:38)",
-    "scope": "Исполнение HOLD из §3.15: постишная карта Лев 5:14–7:38.",
-    "sources": "ELI S11 (LXX-Swete-1930); MT morphhb (WLC).",
-    "measured": {
-      "chapterLengths": {
-        "MT": {
-          "5": 26,
-          "6": 23,
-          "7": 38
-        },
-        "ELI": {
-          "5": 19,
-          "6": 40,
-          "7": 28
-        }
-      },
-      "segments": [
-        {
-          "MT": "5:14-19",
-          "ELI": "5:14-19",
-          "shift": 0
-        },
-        {
-          "MT": "5:20-26",
-          "ELI": "6:1-7",
-          "shift": "шов через границу главы"
-        },
-        {
-          "MT": "6:1-23",
-          "ELI": "6:8-30",
-          "shift": 7
-        },
-        {
-          "MT": "7:1-10",
-          "ELI": "6:31-40",
-          "shift": "шов назад в главу 6"
-        },
-        {
-          "MT": "7:11-38",
-          "ELI": "7:1-28",
-          "shift": -10
-        }
-      ],
-      "verifiedInsideMT6": [
-        "6:2->6:9",
-        "6:3->6:10",
-        "6:5->6:12",
-        "6:7->6:14",
-        "6:9->6:16",
-        "6:10->6:17",
-        "6:12->6:19",
-        "6:14->6:21",
-        "6:17->6:24",
-        "6:20->6:27",
-        "6:22->6:29"
-      ],
-      "lossExplained": {
-        "MT 5:26": "ELI 6:7",
-        "MT 7:7": "ELI 6:37"
-      },
-      "hilaskShareInLev": 44,
-      "hilaskShareTotal": 109
-    },
-    "keyFinding": "Перекройка границ, а не сдвиг: греческая шестая глава забирает конец МТ 5 и начало МТ 7. Постоянный сдвиг есть только внутри МТ 6 (+7), и он проверен одиннадцатью парами. Оба hilask-стиха, потерянных буквальным прогоном, лежат в греческой главе 6 и арифметикой не выводятся.",
-    "methodNote": "Читались края всех четырёх кусков, три шва и одиннадцать пар внутри МТ 6. Якоря, длины и разрывы не применялись — §3.13 показал их непригодность.",
-    "correctionsApplied": [
-      "19 §3.16 новая",
-      "19 §8 п. 2д добавлен и закрыт с оговоркой о середине кусков 1 и 4",
-      "authority п. 28, README пятнадцатая редакция, SSOT wave34"
-    ],
-    "holdsOpened": [],
-    "holdsClosed": [
-      "постишная карта Лев 5:14-7:38"
-    ],
-    "measuredAt": "2026-11-15T00:00:00Z",
-    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
-    "publicationEligible": false
-  },
-  "wave35": {
-    "date": "2026-11-15",
-    "card": "19_LXX_NUMBERING_ERRATA",
-    "edition": "sixteenth (book is not the unit — file is)",
-    "scope": "Проверка правила §3.15 («называть файл, а не книгу») на всём корпусе ELI.",
-    "sources": "ELI S11 (LXX-Swete-1930), все 60 файлов-префиксов.",
-    "measured": {
-      "eliFilePrefixes": 60,
-      "pairs": {
-        "Dan/Dat": {
-          "what": "Old Greek / Феодотион",
-          "versesEach": 424,
-          "differs": "9:19, 9:24 (проверено)"
-        },
-        "Tob/Tbs": {
-          "what": "две версии Товита",
-          "versesEach": 244,
-          "identical": 2,
-          "differing": 225,
-          "onlyInOne": 18
-        },
-        "Psa/Pss": {
-          "what": "Псалтирь / Псалмы Соломона",
-          "note": "не пара одной книги; Псалом 151 лежит в Psa главой 151"
-        }
-      },
-      "tobitCitedInLane": false,
-      "tobitOnlyMention": "карточка 05, справка LSJ"
-    },
-    "keyFinding": "Правило §3.15 верно и случай не единственный: у Даниила и Товита в Swete по два файла, и тексты расходятся редакционно. У Товита расходятся 225 стихов из 244. Прямой ошибки в карточках ot/ нет — Товит там не цитируется, — но ловушка доказана и правило внесено в §4 как п. 4е.",
-    "methodNote": "Сверка Tob/Tbs шла через ot.eli() с нормализацией ot.gr_norm(); первый прогон по сырому индексу дал ложные результаты и был отброшен — предупреждение записано.",
-    "correctionsApplied": [
-      "19 §3.17 новая",
-      "19 §4 п. 4е добавлен",
-      "19 §5 оговорка о двух версиях Товита и Даниила",
-      "19 §8 п. 2е добавлен и закрыт с оговоркой",
-      "authority п. 29, README шестнадцатая редакция, SSOT wave35"
-    ],
-    "holdsOpened": [
-      "постишная карта расхождения Tob/Tbs"
-    ],
-    "holdsClosed": [
-      "проверка, единственный ли случай двух файлов на книгу"
-    ],
-    "measuredAt": "2026-11-15T00:00:00Z",
-    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
-    "publicationEligible": false
-  },
-  "wave36": {
-    "date": "2026-11-15",
-    "card": "19_LXX_NUMBERING_ERRATA",
-    "edition": "seventeenth (empty slots; version 2 with eli_status)",
-    "scope": "Природа случая «номер есть, текста нет»; сплошной счёт пустых слотов.",
-    "sources": "ELI S11: 00-Swete_versification.csv + 02-Swete_word_without_punctuations.csv; SOL 1909 (Sollupulo/Swete-1909-LXX) для контроля Deu 23:2.",
-    "measured": {
-      "totalVersesInVersification": 30533,
-      "emptySlots": 686,
-      "emptyInCanon": 240,
-      "emptyOutsideCanon": 446,
-      "byBook": {
-        "Ode": 264,
-        "1En": 106,
-        "1Ki": 49,
-        "Jer": 46,
-        "1Sa": 35,
-        "Sir": 34,
-        "Neh": 28,
-        "Sus": 18,
-        "Tbs": 16,
-        "Dan": 16,
-        "1Ch": 15,
-        "Pro": 9,
-        "Eze": 8,
-        "Jos": 7,
-        "Psa": 7,
-        "Bel": 7,
-        "Lam": 4,
-        "Deu": 3,
-        "2Ch": 2,
-        "Ezr": 2,
-        "Est": 2,
-        "Dat": 2,
-        "Gen": 1,
-        "Exo": 1,
-        "2Ki": 1,
-        "Job": 1,
-        "Isa": 1,
-        "3Ma": 1
-      },
-      "nests": [
-        "1Chr 1:11-1:23 (13)",
-        "1Kgs 14:1-14:20 (20, вся глава)",
-        "1Sam 17:12-17:31 (20)",
-        "Dan 4:3-4:6 (4)",
-        "Tbs 4:7-4:18 (12)",
-        "Jer 23:30-31",
-        "Jer 26:26",
-        "Jer 28:45-48"
-      ],
-      "ragged": {
-        "Neh 12": "11 пустых из 21, вразбивку"
-      },
-      "deu232": {
-        "ELI": "empty-slot (запись есть, слов нет)",
-        "SOL": "строки 5.Deut.23.2 нет в файле вовсе",
-        "verdict": "§3.8 верен; классификация уточнена — это empty-slot, подтверждённый вторым зеркалом"
-      },
-      "eliStatusFunction": {
-        "name": "eli_status",
-        "values": [
-          "ok",
-          "no-address",
-          "empty-slot"
-        ],
-        "eliUnchanged": true,
-        "gateCallers": 0
-      }
-    },
-    "keyFinding": "686 стихов в ELI перечислены разметкой, но слов не имеют; 240 из них в книгах канона, гнёздами до целой главы (1Kgs 14). Это дефект транскрипции, а не свойство греческого текста, и ot.eli() не отличает его от «адреса нет».",
-    "methodNote": "Два первых прогона дали верное число по неверной причине (немонотонный поиск конца; list.index вместо позиции) и совпали случайно. Рабочий вариант сортирует (индекс, ref) и берёт конец как следующий индекс в том же массиве.",
-    "correctionsApplied": [
-      "19 §3.18 новая",
-      "19 §4 п. 3 усилен двумя ветвями",
-      "19 §8 п. 2ж добавлен и закрыт с оговоркой",
-      "authority п. 30, README семнадцатая редакция, SSOT wave36",
-      "tools/ot.py: добавлена eli_status(), eli() не тронута"
-    ],
-    "holdsOpened": [
-      "лакуны бумажного Свиты или артефакт оцифровки — нужен образ страницы"
-    ],
-    "holdsClosed": [
-      "природа случая Tbs 4:7-4:18",
-      "проверка Deu 23:2 из §3.8",
-      "ot.eli() не различал два вида пустоты — добавлена eli_status(), eli() не тронута"
-    ],
-    "measuredAt": "2026-11-15T00:00:00Z",
-    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
-    "publicationEligible": false
-  },
-  "wave37": {
-    "date": "2026-11-15",
-    "card": "19_LXX_NUMBERING_ERRATA",
-    "edition": "eighteenth (address audit across lanes)",
-    "scope": "Сверка всех стиховых записей SSOT с текстом ELI по содержанию.",
-    "sources": "ELI S11; SSOT ot-corpus-v1.json (cards[id].verses всех карточек).",
-    "measured": {
-      "recordsWithVerse": 301,
-      "explicitLxxAddress": 23,
-      "explicitConfirmed": 18,
-      "explicitFailed": 5,
-      "explicitFailedReason": "карточка 07, сводный текст через многоточие; метрика, не адрес",
-      "manualRecheck": {
-        "Lev 7:23 (LXX 7:13)": "ELI 7:13 совпало точно",
-        "Lev 7:26-27 (LXX 7:16-17)": "ELI 7:16-17 совпало"
-      },
-      "implicitAddress": 273,
-      "implicitFailed": 20,
-      "implicitExplainedByKnownShift": 19,
-      "implicitGenuine": 1,
-      "genuineCase": {
-        "card": "05b",
-        "refs": [
-          "Ps 51:18",
-          "Ps 51:19",
-          "Ps 51:20",
-          "Ps 51:21",
-          "Ps 50:14"
-        ],
-        "actual": "ELI 50:18-21, 49:14",
-        "shift": -1,
-        "ps51:19": "no-address; глава 51 кончается на ст. 11",
-        "textFoundAt": "ELI 50:19"
-      }
-    },
-    "keyFinding": "Явные греческие адреса в чужих карточках верны. Найден один случай «верный текст под необъявленным адресом» — карточка 05b, сдвиг Псалтири −1. Это мягче ошибки в номере и опаснее, потому что незаметно: сверка текста сходится, расходится только нумерация.",
-    "methodNote": "Сравнивались слова, а не номера: поле lxx нормализовалось через gr_norm и искалось в ELI. Тот же приём, что поймал ошибку в §3.15.",
-    "correctionsApplied": [
-      "19 §3.19 новая",
-      "19 §6 адресная поправка по 05b",
-      "19 §8 п. 2з добавлен и закрыт с оговоркой",
-      "authority п. 31, README восемнадцатая редакция, SSOT wave37"
-    ],
-    "holdsOpened": [
-      "253 записи совпали по МТ-адресу — отсутствие сдвига не доказано",
-      "адресная поправка 05b — владельцу карточки"
-    ],
-    "holdsClosed": [
-      "аудит адресов в чужих карточках"
-    ],
-    "measuredAt": "2026-11-15T00:00:00Z",
-    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
-    "publicationEligible": false
   },
   "claimRegister20261026": {
     "чтоЭто": "реестр доводов лана «ot»: строка = раздел прозы уровня ## с локатором, классом из её собственных маркеров и отметкой съёма",
@@ -16646,8 +14846,1149 @@
     ],
     "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
     "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
-    "measuredAt": "2026-11-16T17:26:25Z",
-    "checkedAt": "2026-11-16T17:26:25Z",
-    "предыдущийСъём": "2026-11-16T17:26:00Z"
+    "measuredAt": "2026-11-16T20:01:26Z",
+    "checkedAt": "2026-11-16T20:01:26Z",
+    "предыдущийСъём": "2026-11-16T17:26:25Z"
+  },
+  "wave19": {
+    "date": "2026-11-15",
+    "card": "17_LXX_VERSIFICATION_AND_MIRROR_Z",
+    "scope": "Пересъём сдвига нумерации LXX (Лев. 5–7; Исх. 24–25) и согласия трёх разрешённых зеркал по 68 локусам כפר в Пятикнижии.",
+    "sources": "MT morphhb (3722 a, 93 стиха); ELI S11; SOL S10; F1K S23. Rahlfs не использован (S19/S22 EXCLUDED).",
+    "holdsOpened": [
+      "LOCATOR_HOLD (нумерация печатных изданий)",
+      "EVIDENCE_HOLD (независимость зеркал)"
+    ],
+    "holdsClosed": [],
+    "measured": {
+      "mtKprVerses": 93,
+      "pentateuchLoci": 68,
+      "allThreeIdentical": 39,
+      "eliSolF1kDiffers": 18,
+      "f1kSolEliDiffers": 6,
+      "allThreeDiffer": 4,
+      "textMissing": 1,
+      "lev16VersesChecked": 34
+    },
+    "measuredAt": "2026-11-15T00:00:00Z",
+    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
+    "publicationEligible": false
+  },
+  "wave20": {
+    "date": "2026-11-15",
+    "card": "18_LXX_KOPHER_RANSOM_LOCI",
+    "scope": "Полная инвентаризация 13 локусов כֹּפֶר (3724 a) по разрешённым зеркалам: чем именно LXX передаёт «цену жизни».",
+    "sources": "MT morphhb (3724 a, 13 стихов; H3724 сводно 17); ELI S11 и F1K S23 — все 13 локусов; SOL S10 — только Пятикнижие. Rahlfs не использован (S19/S22 EXCLUDED).",
+    "holdsOpened": [
+      "EVIDENCE_HOLD (причина некриминальных передач)",
+      "LOCATOR_HOLD (нет аппарата)"
+    ],
+    "holdsClosed": [],
+    "measured": {
+      "loci": 13,
+      "lytron": 6,
+      "exilasma": 2,
+      "allagma": 2,
+      "perikatharma": 1,
+      "none": 2,
+      "witnessesFull": 3,
+      "witnessesPentateuchOnly": 2
+    },
+    "measuredAt": "2026-11-15T00:00:00Z",
+    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
+    "publicationEligible": false
+  },
+  "wave21": {
+    "date": "2026-11-15",
+    "card": "19_LXX_NUMBERING_ERRATA",
+    "edition": "second (erratum to the first edition of this same card)",
+    "scope": "Erratum: шесть классов сдвига нумерации у транскрипций Свиты, исправленные счётчики карточек 17 и 18, разбор двенадцати локусов «без hilask» по родам.",
+    "sources": "MT morphhb (3722 a, 93 стиха); ELI S11, SOL S10, F1K S23. Адреса заданы содержательными якорями, а не номерами стихов.",
+    "holdsOpened": [
+      "EVIDENCE_HOLD (причина различий нумерации: издание или транскрипция)"
+    ],
+    "holdsClosed": [
+      "LOCATOR_HOLD по адресам 1 Пар. 6:34 (→ 6:49) и Неем. 10:34 (→ 10:33) — разрешены по содержанию"
+    ],
+    "corrected": {
+      "card17_all3": [
+        39,
+        40,
+        41
+      ],
+      "card17_f1kEqSol": [
+        6,
+        5
+      ],
+      "card17_missing": [
+        1,
+        0
+      ],
+      "card17_eliEqSol": [
+        "57",
+        "58",
+        "59 of 68"
+      ],
+      "card17_eliEqF1k": [
+        "45-47",
+        "40",
+        "41 of 68"
+      ],
+      "hilask_with": [
+        76,
+        75,
+        81
+      ],
+      "hilask_without": [
+        17,
+        18,
+        12
+      ],
+      "resolved": [
+        91,
+        93,
+        93
+      ]
+    },
+    "refutedInThisCard": "Первая редакция утверждала «LXX Притч. 16 = MT Притч. 17». Неверно: номера глав совпадают, MT Притч. 16:6 стоит в конце LXX 15:27 (в LXX гл. 15 на 4 стиха меньше — 29 против 33, сдвиг обратного знака).",
+    "normalizationSensitivity": "Числ. 6:11 переезжает из all3 в alldiffer, если сохранять пробелы и латиницу (в хвосте F1K — ABBREV). 41/18/5/4 при буквенной нормализации; 40/18/5/5 при сохранении пунктуации.",
+    "measuredAt": "2026-11-15T00:00:00Z",
+    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
+    "publicationEligible": false
+  },
+  "wave22": {
+    "date": "2026-11-15",
+    "card": "19_LXX_NUMBERING_ERRATA",
+    "edition": "third (address corrections to cards 01, 03, 07, 08, 14 + quantified mirror independence)",
+    "scope": "Продолжение erratum: адресные поправки по чужим карточкам и первый числовой замер независимости зеркал (попарные дословные совпадения по Пятикнижию).",
+    "sources": "MT morphhb (WLC); ELI S11; SOL S10; F1K First1KGreek tlg0527 (data/tlg0527, grc1); S23 lxx-swete.",
+    "measured": {
+      "versesWithTextPentateuch": 5794,
+      "pairwiseIdentical": {
+        "ELI_SOL": [
+          5252,
+          5790,
+          "90.7%"
+        ],
+        "ELI_F1K": [
+          3691,
+          5760,
+          "64.1%"
+        ],
+        "ELI_S23": [
+          3663,
+          5760,
+          "63.6%"
+        ],
+        "F1K_SOL": [
+          3917,
+          5759,
+          "68.0%"
+        ],
+        "S23_SOL": [
+          3889,
+          5759,
+          "67.5%"
+        ],
+        "F1K_S23": [
+          5716,
+          5760,
+          "99.2%"
+        ]
+      },
+      "normalization": "NFD, нижний регистр, только буквы α–ω; различие в одном слове делает стих несовпадающим целиком, поэтому проценты — нижняя граница сходства."
+    },
+    "keyFinding": "F1K и S23 — один текст (99,2 %), поэтому «3z» означает не более двух независимых текстовых линий. Доля согласия не является мерой независимости: ELI↔SOL 90,7 % при независимых изданиях, F1K↔SOL 68 % при заведомо разных линиях.",
+    "toolPathNote": "F1K читается как First1KGreek/data/tlg0527/tlgNNN/tlg0527.tlgNNN.1st1K-grc1.xml; split/tlg0527/… не содержит verse-разметки и даёт пустой результат (f1k_count(Lev)=858 — контроль).",
+    "addressFixesApplied": [
+      "14: омонимы H3724 (3724 a=13, b/c/d пояснены)",
+      "07: оговорка к 3z",
+      "08: оговорка к 3z",
+      "01 §9 п.5: очередь локусов с исправленными адресами",
+      "14 §6.4: оговорка к 3z по Иеремии и Иову"
+    ],
+    "addressFixesWithdrawn": [
+      "03: утверждения о Притч 16→17 в карточке нет — приписано ошибочно; блок нумерации Лев. 6–7 верен во всех 8 якорях",
+      "01 §2: адреса V1/V6/V6b/V8 уже были верны",
+      "3z→2z переименование: отвергнуто, вместо него оговорка"
+    ],
+    "holdsOpened": [
+      "EVIDENCE_HOLD (что именно измеряет метка согласия зеркал)"
+    ],
+    "holdsClosed": [],
+    "measuredAt": "2026-11-15T00:00:00Z",
+    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
+    "publicationEligible": false
+  },
+  "wave23": {
+    "date": "2026-11-15",
+    "card": "19_LXX_NUMBERING_ERRATA",
+    "edition": "fourth (piecewise Psalter offset + systematic chapter screen and its blind spot)",
+    "scope": "§8 п.1 исполнен: сплошная сверка числа стихов по главам всех книгах, где есть и MT, и ELI. Побочно исправлен класс 2 (Псалмы) — сдвиг оказался кусочным, а не −1.",
+    "sources": "MT morphhb (WLC); ELI S11 (LXX-Swete-1930, 00-Swete_versification.csv); инструменты ИСКУПЛЕНИЕ/ot/tools/ot.py.",
+    "measured": {
+      "chaptersCompared": 913,
+      "divergentChapters": 141,
+      "booksWithDivergence": 30,
+      "booksCompared": 38,
+      "psalterSegments": {
+        "1-8": "без сдвига",
+        "9-10": "слиты в LXX 9; MT 10:1 = LXX 9:22, MT 10:18 = LXX 9:39",
+        "11-113": "→ 10-112, сдвиг −1",
+        "114-115": "слиты в LXX 113 (до ст. 26)",
+        "116": "→ LXX 114, сдвиг −2",
+        "117-145": "→ 115-143, сдвиг −1",
+        "146": "→ LXX 145, сдвиг −1",
+        "147": "разрезан: MT 147:1-11 = LXX 146, MT 147:12-20 = LXX 147",
+        "148-150": "без сдвига"
+      },
+      "worstBooks": {
+        "Jer": 29,
+        "Ps": 15,
+        "Exod": 10,
+        "Deut": 7,
+        "1Kgs": 7
+      },
+      "zeroDivergence": [
+        "Judg",
+        "Amos",
+        "Obad",
+        "Jonah",
+        "Hab",
+        "Ruth",
+        "Lam",
+        "Ezra"
+      ]
+    },
+    "keyFinding": "Признак «расхождение числа стихов в главе» необходим, но недостаточен: Исх 25 (40 ст. в MT и 40 в ELI) в карту не попадает, хотя внутри главы деление сдвинуто (MT 25:17 = ELI 25:16). Признак пропускает ровно тот класс, который лана уже ловила. 141 глава — список мест обязательной проверки адреса по содержанию, а не список ошибок.",
+    "methodErrorsFixed": [
+      "первый прогон дал 133 фиктивные расходящиеся главы в Пс: сравнивались номера без учёта сдвига Псалтири",
+      "первый прогон дал 0 глав в Песн: в ELI код книги Sol, а не Sng из ot.LXX",
+      "перепутано возвращаемое значение ot._eli_index(): (words, rows), итерация по кортежу давала 0 строк"
+    ],
+    "correctionsApplied": [
+      "19 §2 класс 2: плоское правило «Псалмы = MT−1» заменено кусочной картой с восемью областями",
+      "19 §3.6: новая секция — карта 141 главы, её очаги и её граница",
+      "17 §2 и §9: правило сдвига Псалтири исправлено в двух местах",
+      "18 §8: то же правило исправлено"
+    ],
+    "holdsOpened": [
+      "EVIDENCE_HOLD (причина расхождения нумерации Иеремии и деления Исх 25 — не установлена)"
+    ],
+    "holdsClosed": [],
+    "measuredAt": "2026-11-15T00:00:00Z",
+    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
+    "publicationEligible": false
+  },
+  "wave24": {
+    "date": "2026-11-15",
+    "card": "19_LXX_NUMBERING_ERRATA",
+    "edition": "fifth (causes of BOTH open divergences established: Jeremiah = block transposition; Exod 25 = missing v.6, reproduced in two lists)",
+    "scope": "Закрытие обоих вопросов, оставленных открытыми в волне 23: причина расхождения нумерации Иеремии и причина деления Исх 25. Проверено по содержанию, а не по корреляции счётчиков.",
+    "sources": "MT morphhb (WLC); ELI S11.",
+    "measured": {
+      "jeremiahOracleMap": {
+        "Elam": [
+          "MT 49:34",
+          "LXX 25:14"
+        ],
+        "Egypt": [
+          "MT 46:2",
+          "LXX 26:2"
+        ],
+        "Philistines": [
+          "MT 47:1-7",
+          "LXX 29:1-7"
+        ],
+        "Edom": [
+          "MT 49:7",
+          "LXX 29:8"
+        ],
+        "Ammon": [
+          "MT 49:1",
+          "LXX 30:1"
+        ],
+        "KedarHazor": [
+          "MT 49:28",
+          "LXX 30:6"
+        ],
+        "Damascus": [
+          "MT 49:23",
+          "LXX 30:12"
+        ],
+        "Moab": [
+          "MT 48:1",
+          "LXX 31:1"
+        ],
+        "CupOfWrath": [
+          "MT 25:15",
+          "LXX 32:1"
+        ]
+      },
+      "doubleOracleChapters": [
+        "ELI 26 = Elam (26:1) + Egypt (26:2-28)",
+        "ELI 29 = Philistines (29:1-7) + Edom (29:8-23)"
+      ],
+      "verseCounts": {
+        "Egypt_MT46": 28,
+        "Egypt_LXX26": 24,
+        "Moab_MT48": 47,
+        "Moab_LXX31": 44
+      }
+    },
+    "keyFinding": "Расхождение Иеремии — ПЕРЕСТАНОВКА целых оракулов о народах, а не сдвиг отдельных глав. Поэтому правила «номер плюс-минус k» для этой книги не существует вовсе: только таблица. Первые стихи глав LXX — дательные заголовки адресата и служат готовыми якорями; одна глава LXX может содержать два оракула.",
+    "methodNote": "Счётчики имён народов дали ложную корреляцию на двух шагах: форма 'מצרימ' не совпала с 'מצרים' в МТ, поэтому египетский оракул не находился, а косинус по 12 счётчикам уверенно указывал на ELI 27-28 (Вавилон). Причина найдена чтением первых стихов глав, а не корреляцией.",
+    "correctionsApplied": [
+      "19 §3.6: новая подсекция «Установленная причина: у Иеремии переставлен блок о народах (круг 76)» с таблицей из 9 якорей",
+      "18 §5b: ссылка переписана с «сдвиг нумерации» на «перестановка блока о народах»",
+      "authority: EVIDENCE_HOLD о причине Иеремии снят; причина Исх 25 остаётся открытой",
+      "authority: строка 19 и статус пятой редакции"
+    ],
+    "exodusFinding": {
+      "missing": "MT Exod 25:6 (елей для светильника, благовония для елея помазания и курения) отсутствует в ELI, SOL и F1K",
+      "alsoMissingAtParallelList": "MT Exod 35:8 — та же строка отсутствует (ELI 35:7 дёрма и дерево, ELI 35:8 сразу камни)",
+      "shiftExtent": "−1 от MT 25:7 (ELI 25:6) до MT 25:35; гаснет к 25:36 за счёт слияний и добавочного стиха в 25:31–36",
+      "whyMaximaEqual": "40/40: перетасовка внутри 25:31–36, а не дробление в конце (мою первую версию — «дробится MT 25:39» — опровергает ELI 25:39, это половина стиха)",
+      "notLexical": "греческий Исход знает elaion в 18 стихах (23:11; 27:20; 29:2,7,21,23,40; 30:24,25,31; 31:11; 35:14,19,28; 38:25; 39:16,17; 40:7)"
+    },
+    "holdsOpened": [],
+    "holdsClosed": [
+      "EVIDENCE_HOLD (причина расхождения нумерации Иеремии — установлена: перестановка блока о народах)",
+      "EVIDENCE_HOLD (причина расхождения Исх 25 — установлено ЧТО: отсутствует стих MT 25:6; HOLD переформулирован на вопрос о Vorlage)"
+    ],
+    "holdsRemaining": [
+      "EVIDENCE_HOLD переформулирован: известно, что в LXX отсутствует стих МТ Исх 25:6 (елей), воспроизводится в двух списках (Исх 25 и 35); неизвестно, восходит ли пропуск к Vorlage — решается аппаратом (Göttingen Exod 1991, Holmes–Parsons S20)"
+    ],
+    "measuredAt": "2026-11-15T00:00:00Z",
+    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
+    "publicationEligible": false
+  },
+  "wave25": {
+    "date": "2026-11-15",
+    "card": "19_LXX_NUMBERING_ERRATA",
+    "edition": "sixth (second screening signal, measured against the first)",
+    "scope": "Исполнение §8 п. 1а и 1б: признак, который поймал бы Исх 25, где число стихов совпадает (40/40), и проверка найденных им кандидатов по содержанию.",
+    "sources": "MT morphhb (WLC); ELI S11 (LXX-Swete-1930).",
+    "measured": {
+      "chaptersEvaluated": 787,
+      "minVersesPerChapter": 8,
+      "threshold": "r(best non-zero) >= 0.70 AND r - r0 >= 0.30",
+      "flagged": 27,
+      "exodus25": {
+        "r0": 0.23,
+        "r_at_minus1": 0.8
+      },
+      "controlsSameBook": {
+        "Exod26": 0.87,
+        "Exod27": 0.87,
+        "Exod23": 0.7
+      },
+      "mapComparisonWithoutPsalms": {
+        "verseCount": 125,
+        "lengthProfile": 27,
+        "overlap": 23,
+        "union": 129
+      },
+      "foundOnlyByProfile": {
+        "Exod25": [
+          -1,
+          0.23,
+          0.8,
+          "ПОДТВЕРЖДЁН: отсутствует стих МТ 25:6, сдвиг −1 до 25:35"
+        ],
+        "Song6": [
+          -1,
+          0.05,
+          0.89,
+          "ПОДТВЕРЖДЁН: МТ 6:1 = ELI 5:17, стих унесён за границу главы; 12/12 из-за дробления последнего (МТ 7:1 = ELI 6:12)"
+        ],
+        "Esth8": [
+          3,
+          -0.15,
+          0.81,
+          "ОПРОВЕРГНУТ: адреса совпадают; ложное срабатывание из-за выброса ELI Есф 8:12 (3492 знака против 129)"
+        ],
+        "Esth3": [
+          1,
+          0.42,
+          0.73,
+          "ОПРОВЕРГНУТ: адреса совпадают (МТ 3:1 = ELI 3:1 и далее)"
+        ]
+      },
+      "candidateVerdicts": {
+        "confirmed": 2,
+        "refuted": 2,
+        "inOverlapNotSeparatelyChecked": 23
+      },
+      "oldFindingsReconfirmed": {
+        "Gen32": [
+          0.15,
+          0.84
+        ],
+        "Neh10": [
+          0.71,
+          0.99
+        ]
+      }
+    },
+    "keyFinding": "Второй признак ловит Исх 25 (0,23 → 0,80 при −1) и Песн 6, независимо подтверждает Быт 32 и Неем 10, но НЕ видит перестановки: у Иеремии 28 глав по числу стихов и только 1 по профилю. Ни один признак не достаточен, и это измерено: пересечение 23, объединение 129.",
+    "methodNote": "Две свои ошибки признаны в этом же круге: величина сдвига от профиля не результат (на малых главах +3 и +4 выпадают на любом сдвиге); корреляция по длинам ломается о выброс в одном стихе (Есф 8:12, 3492 знака) — без проверки максимальной длины пометка ложная. Также напоминание: ot.eli() для Песни Песней требует код Sol, иначе возвращается пусто и глава выглядит отсутствующей.",
+    "correctionsApplied": [
+      "19 §3.7: новая секция — второй признак, его сила, три измеренные слабости, вердикты по кандидатам",
+      "19 §4 п. 4а, 4б: недостаточность одного признака; величина сдвига от косвенного признака не результат",
+      "19 §7: метод пересчёта профиля длин",
+      "19 §8 п. 1а и 1б закрыты",
+      "authority, README, SSOT — статус шестой редакции"
+    ],
+    "holdsOpened": [],
+    "holdsClosed": [],
+    "measuredAt": "2026-11-15T00:00:00Z",
+    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
+    "publicationEligible": false
+  },
+  "wave26": {
+    "date": "2026-11-15",
+    "card": "19_LXX_NUMBERING_ERRATA",
+    "edition": "seventh (content check of the 23-chapter overlap)",
+    "scope": "Закрытие долга §3.7: 23 главы пересечения двух карт, не прочитанные по содержанию, прочитаны все.",
+    "sources": "MT morphhb (WLC); ELI S11 (LXX-Swete-1930); SOL S10 (Swete-1909).",
+    "measured": {
+      "chaptersRead": 23,
+      "realDivergences": 23,
+      "profileMagnitudeCorrect": 21,
+      "profileMagnitudeWrongSign": 1,
+      "profileMagnitudeWhereOwnReadingWasWrong": 1,
+      "falseProfileFlags": 0,
+      "emptyEliAddresses": {
+        "count": 686,
+        "ofTotal": 30533,
+        "share": "2.2%",
+        "sameInSol": true
+      },
+      "mechanisms": {
+        "chapterBoundaryShift": 9,
+        "displacedChapterStart": 3,
+        "mergeOrSplitInsideChapter": 5,
+        "verseOmission": 2
+      },
+      "deuteronomy23": {
+        "mt": "23:1 = ELI 22:30",
+        "empty": "ELI 23:2 (record 116062 empty, also SOL 23:2)",
+        "mtWithoutMatch": "MT 23:3 (לא יבא ממזר)",
+        "note": "ELI 23:3 содержит МТ 23:4"
+      }
+    },
+    "keyFinding": "Все 23 главы пересечения — настоящие расхождения, и профиль дал верную величину в 21 случае из 23 при нуле ложных пометок. Но величина из корреляции остаётся гипотезой: Числ 17 — верный модуль при неверном знаке, а правило «разность числа стихов соседних глав равна сдвигу», которое я вывел и записал, ложно (Притч 19: +1 вместо -3 из-за выпавших МТ 19:1-3).",
+    "methodNote": "Мой собственный промах круга: я классифицировал Притч 19 по номерам стихов (МТ 19:1-3 против ELI 19:1-2) и получил +1, тогда как по содержанию ELI 19:1 = МТ 19:4 и сдвиг равен -3. Проверка якорем по биграммам и чтением опровергла. Так же была неверна строка про 1 Пар 12: якорь не на 12:1, а на 12:6 (место слияния).",
+    "correctionsApplied": [
+      "19 §3.8: новая секция — 23 якоря, счёт 21/1/1, три исключения, четыре механизма",
+      "19 §4 п. 4б переформулирован (гипотеза, проверяемая якорем)",
+      "19 §4 п. 4в, 4г добавлены (разность стихов не равна сдвигу; пустой адрес опаснее сдвига)",
+      "19 §7: метод проверки адреса якорем и отдельная проверка непустоты",
+      "19 §8 п. 1в закрыт",
+      "authority, README, SSOT — седьмая редакция"
+    ],
+    "holdsOpened": [
+      "Втор 23:2: пустой адрес в ELI и SOL; нужен печатный Свита или Гёттинген — §8 п. 3"
+    ],
+    "holdsClosed": [],
+    "measuredAt": "2026-11-15T00:00:00Z",
+    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
+    "publicationEligible": false
+  },
+  "wave27": {
+    "date": "2026-11-15",
+    "card": "19_LXX_NUMBERING_ERRATA",
+    "edition": "eighth (hilask count reproduced machine-side; new rod)",
+    "scope": "Исполнение §8 п. 2: проверка, нет ли локусов, где hilask-глагол передан синонимом — и обратного направления.",
+    "sources": "MT morphhb (WLC); ELI S11 (LXX-Swete-1930).",
+    "measured": {
+      "kafrVerses": 93,
+      "withHilaskVerb": 81,
+      "withoutHilaskVerb": 12,
+      "reproducedMachine": true,
+      "firstRunWrong": {
+        "with": 75,
+        "without": 18,
+        "cause": "не применены сдвиги классов 1 и 2"
+      },
+      "eliHilaskVersesTotal": 155,
+      "hilaskNounsSeparate": [
+        "ιλαστηριον",
+        "ιλασμος"
+      ],
+      "excludedAdjective": {
+        "form": "ἵλεως",
+        "example": "Isa 54:10 ELI Ἵλεώς σοι, Κύριε",
+        "mt": "מְרַחֲמֵךְ",
+        "why": "формула, hilask-глагола нет"
+      },
+      "salachVersesTotal": 45,
+      "salachWithKafr": 12,
+      "salachHilaskNoKafr": 4,
+      "salachOrdinary": 29,
+      "newRod": {
+        "2Kgs5:18": [
+          "ιλασεται",
+          "ιλασεται"
+        ],
+        "2Kgs24:4": [
+          "ιλασθηναι"
+        ],
+        "Ps25:11": [
+          "ιλαση"
+        ],
+        "Lam3:42": [
+          "ιλασθης"
+        ]
+      }
+    },
+    "keyFinding": "Счёт 81/12 воспроизведён машинно и верен. В направлении §8 п. 2 новых локусов нет, но обратное направление дало новый род: там, где МТ имеет סלח без כפר, LXX в четырёх случаях даёт hilask-глагол. Значит множество hilask-глаголов и множество כפר-стихов не совпадают и не вложены друг в друга.",
+    "methodNote": "Моя ошибка круга: первый прогон дал 75/18, потому что я считал по номерам, а не по установленным адресам — не применил свите-нумерацию Лев 5-7 (сдвиг в LXX 6) и кусочный сдвиг Псалтири. Поймано расхождением с записанным числом, не перечитыванием.",
+    "correctionsApplied": [
+      "19 §3.9: новая секция — машинное воспроизведение счёта и новый род",
+      "19 §3.3: указано, чего в четырёх родах нет (обратное направление)",
+      "19 §4 п. 4д добавлен (два множества не совпадают)",
+      "19 §7: разделение глаголов и существительных; исключение ἵλεως; скрипты пересчёта",
+      "19 §8 п. 2 закрыт",
+      "authority, README, SSOT — восьмая редакция"
+    ],
+    "holdsOpened": [],
+    "holdsClosed": [],
+    "measuredAt": "2026-11-15T00:00:00Z",
+    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
+    "publicationEligible": false
+  },
+  "wave28": {
+    "date": "2026-11-15",
+    "card": "19_LXX_NUMBERING_ERRATA",
+    "edition": "ninth (reverse set classified; rod V closed)",
+    "scope": "Классификация обратного множества hilask-глаголов в ELI и закрытие открытого вопроса рода В.",
+    "sources": "ELI S11 (Swete 1930); First1KGreek tlg056 (translatio Graeca) и tlg057 (Theodotionis versio), Swete t. III; MT morphhb (WLC).",
+    "measured": {
+      "eliHilaskVerbVerses": 109,
+      "withKafr": 81,
+      "withSalach": 4,
+      "neither": 11,
+      "outsideCanon": 12,
+      "noMtVerse": 1,
+      "arithmetic": "81+4+11+12+1=109",
+      "detector": "explicit list of 38 forms, not prefixes",
+      "kafr94vs93": "94 verses carry lemma 3722; Gen 6:14 is 3722 b (homonym 'to pitch'), the count 93 is 3722 a",
+      "dan9_24": {
+        "og": "απαλειψαι — no hilask",
+        "theodotion": "καὶ τοῦ ἐξιλάσασθαι ἀδικίας — hilask",
+        "verdict": "editorial difference, not translational"
+      },
+      "countIfTheodotion": "93/82/11"
+    },
+    "keyFinding": "Обратное множество целиком: 109. Род В закрыт по второму зеркалу того же стиха: Old Greek Дан 9:24 не имеет hilask, Феодотион имеет. Счёт 93/81/12 записан против Old Greek, и это надо называть всегда.",
+    "methodNote": "Дважды ошибся числами в этом круге: сначала назвал обратное множество 126 (арифметика 81+4+12+12+1=110 её опровергла), затем 12 локусов «ни то ни другое» (на деле 11). Оба числа исправлены прогоном tally.py, не рассуждением.",
+    "correctionsApplied": [
+      "19 §3.10 новая",
+      "19 §3.3 род В закрыт, роды Е-З разобраны",
+      "19 §3.9 число 155 -> 109",
+      "19 §4 п. 4д пересчитан (15 локусов, лишние 28)",
+      "19 §7 правило явного списка форм",
+      "authority п. 22, README девятая редакция, SSOT wave28"
+    ],
+    "holdsOpened": [],
+    "holdsClosed": [],
+    "measuredAt": "2026-11-15T00:00:00Z",
+    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
+    "publicationEligible": false
+  },
+  "wave29": {
+    "date": "2026-11-15",
+    "card": "19_LXX_NUMBERING_ERRATA",
+    "edition": "tenth (scope boundary measured)",
+    "scope": "Границы применимости счёта: афразиатские омонимы, культовые существительные, точное отношение множеств 3722 и 5545.",
+    "sources": "MT morphhb (WLC) леммы и метки смысла; ELI S11; First1KGreek tlg056/tlg057.",
+    "measured": {
+      "formSalach": {
+        "totalVerses": 133,
+        "strong": {
+          "5545": 45,
+          "5542": 74,
+          "5543": 6,
+          "5541": 4,
+          "5544": 2,
+          "5539": 1,
+          "5540": 1
+        }
+      },
+      "formKafr": {
+        "totalVerses": 171,
+        "strong": {
+          "3722": 94,
+          "3715": 32,
+          "3727": 22,
+          "3724": 17,
+          "3713": 6
+        }
+      },
+      "kafrVerbOnly": 93,
+      "salachVerbOnly": 45,
+      "intersection": 12,
+      "union": 127,
+      "notCounted": [
+        "3727 כפרת 22",
+        "3724 כפר 17",
+        "2470 חלה 73",
+        "5162 נחם 100",
+        "6419 פלל 82"
+      ],
+      "countAgainst": "Old Greek (tlg056)",
+      "countIfTheodotion": "93/82/11"
+    },
+    "keyFinding": "Счёт 93/81/12 отвечает на вопрос «как LXX передаёт глагол כפר», а не «где в еврейском тексте тема искупления». Под формой כפר в МТ 171 стих в пяти номерах, под формой סלח 133 в семи; к глаголам относятся 93 и 45. Систематический пропуск — כַּפֹּרֶת (22 стиха), то самое слово, которое LXX передаёт как ἱλαστήριον.",
+    "methodNote": "Все номера Strong в §3.11 сняты прогоном по леммам, а не по памяти: первая версия таблицы содержала номера без чисел, и это было исправлено до коммита.",
+    "correctionsApplied": [
+      "19 §3.11 новая",
+      "19 §3.2 явно назван греческий текст счёта",
+      "19 §8 п. 2: 155 -> 109 и ссылка на §3.10",
+      "authority п. 23, README десятая редакция, SSOT wave29"
+    ],
+    "holdsOpened": [],
+    "holdsClosed": [],
+    "measuredAt": "2026-11-15T00:00:00Z",
+    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
+    "publicationEligible": false
+  },
+  "wave30": {
+    "date": "2026-11-15",
+    "card": "19_LXX_NUMBERING_ERRATA",
+    "edition": "eleventh (Exodus 36-40 transposition)",
+    "scope": "Сплошной счёт культовых существительных как проверка второй стороны границы §3.11; обнаружена перестановка глав Исхода.",
+    "sources": "ELI S11; First1KGreek tlg002 (Exodus) и tlg0527/tlg056-057; MT morphhb.",
+    "measured": {
+      "exodus36_40": {
+        "mt": [
+          38,
+          29,
+          31,
+          43,
+          38
+        ],
+        "eli": [
+          40,
+          21,
+          27,
+          23,
+          32
+        ]
+      },
+      "chaptersDivergingExodus": 10,
+      "map": {
+        "MT36:8": "ELI37",
+        "MT37": "ELI38",
+        "MT38:1-20": "ELI39:1-10",
+        "MT38:21-23": "ELI37:19-21",
+        "MT39": "ELI36:8-end",
+        "MT40": "ELI40"
+      },
+      "independentWitness": "First1KGreek tlg002 same order",
+      "bigGapsPentateuch": [
+        "Exod 37",
+        "Exod 39",
+        "Exod 40",
+        "Lev 5",
+        "Lev 6",
+        "Lev 7",
+        "Num 16",
+        "Num 17"
+      ],
+      "newTranspositions": 1,
+      "countUnchanged": "93/81/12"
+    },
+    "keyFinding": "Исход 36-40 в LXX переставлен относительно МТ: блок переписи металлов (МТ 38:1-20) вынесен вперёд, ковчег и каппорет (МТ 37) ушли на главу позже, одежды (МТ 39) — в конец главы 36. §3.6 эти главы видел, но подпись «разное деление» их накрыла и дальше их никто не прочитал.",
+    "methodNote": "Круг начался с проверки второй стороны границы §3.11 (сплошной счёт существительных) и упёрся в расхождение, к существительным отношения не имеющее. Проверка на другие перестановки сделана по всему Пятикнижию, а не только по Исходу.",
+    "correctionsApplied": [
+      "19 §3.12 новая",
+      "19 §3.6 уточнение к фразе об Исходе",
+      "19 §8 п. 2а добавлен и закрыт",
+      "authority п. 24, README одиннадцатая редакция, SSOT wave30"
+    ],
+    "holdsOpened": [],
+    "holdsClosed": [],
+    "measuredAt": "2026-11-15T00:00:00Z",
+    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
+    "publicationEligible": false
+  },
+  "wave31": {
+    "date": "2026-11-15",
+    "card": "19_LXX_NUMBERING_ERRATA",
+    "edition": "twelfth (Jeremiah block transposition)",
+    "scope": "Проверка перестановок за пределами Пятикнижия; Иеремия как первая книга.",
+    "sources": "ELI S11; MT morphhb (WLC).",
+    "measured": {
+      "nationsBlock": {
+        "MT": "46-51",
+        "ELI": "25-32",
+        "rubrics": [
+          "Τῇ Αἰγύπτῳ=46",
+          "Ἐπὶ τοὺς ἀλλοφύλους=47",
+          "Τῇ Μωάβ=48",
+          "Τοῖς υἱοῖς Ἀμμών=49",
+          "ἐπὶ Βαβυλῶνα=50",
+          "ἐπὶ Βαβυλῶνα=51"
+        ]
+      },
+      "fallBlock": {
+        "MT": "37-44",
+        "ELI": "44-51",
+        "example": "ELI 45:1 = МТ 38:1"
+      },
+      "keyVerses": {
+        "MT31:1": "ELI38:1",
+        "MT31:31": "ELI38:31",
+        "MT33:1": "ELI40:1",
+        "MT45:4-5": "ELI51:34-35"
+      },
+      "countUnchanged": "93/81/12",
+      "methodsRejected": [
+        "big gap (124 chapters)",
+        "length-match with neighbour",
+        "anchor words"
+      ],
+      "methodWorks": "read the chapter opening"
+    },
+    "keyFinding": "В LXX Иеремии книги о народах стоят перед рассказом о падении Иерусалима, а в МТ — после. Это другая композиция книги, а не сдвиг номеров. §3.6 называл причину расплывчато («системно»), не проверив.",
+    "methodNote": "Круг стоил двух ошибок: сначала записал «Варух — ELI 51» по номеру, проверка по содержанию опровергла (ELI 51:1 о Египте); верный адрес — конец ELI 51, ст.34-35. Также отброшены три метода поиска перестановки, и это записано, чтобы их не повторяли.",
+    "correctionsApplied": [
+      "19 §3.13 новая",
+      "19 §3.6 уточнение об Иеремии",
+      "19 §8 п. 2б добавлен и закрыт",
+      "authority п. 25, README двенадцатая редакция, SSOT wave31"
+    ],
+    "holdsOpened": [],
+    "holdsClosed": [],
+    "measuredAt": "2026-11-15T00:00:00Z",
+    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
+    "publicationEligible": false
+  },
+  "wave32": {
+    "date": "2026-11-15",
+    "card": "19_LXX_NUMBERING_ERRATA",
+    "edition": "thirteenth (verse numbers preserved within Jeremiah blocks)",
+    "scope": "Проверка, сохраняется ли номер стиха внутри переставленных блоков Иеремии; сверка с карточкой 14.",
+    "sources": "ELI S11; MT morphhb (WLC); 14_JER31_JOB19_33.md как независимый источник адресов.",
+    "measured": {
+      "pairs": {
+        "46": "26",
+        "47": "29",
+        "48": "31",
+        "49": "30",
+        "50": "27",
+        "51": "28"
+      },
+      "verseNumbersPreserved": true,
+      "exception": {
+        "MT46:1": "заглавие цикла, отдельного стиха в LXX нет",
+        "ELI26:1": "рубрика о Еламе",
+        "ELI26:2": "МТ 46:2"
+      },
+      "elam": {
+        "MT": "49:34-39",
+        "ELI": "25:14-19",
+        "note": "отдельный блок перед Египтом"
+      },
+      "truncations": {
+        "ELI31": "до ст.45",
+        "ELI30": "до ст.37 (МТ до 39)"
+      },
+      "card14crosscheck": {
+        "31:31": "38:31 ✓",
+        "33:8": "40:8 ✓",
+        "36:3": "43:3 ✓",
+        "50:20": "27:20 ✓"
+      }
+    },
+    "keyFinding": "Внутри переставленных блоков Иеремии номер стиха сохраняется, поэтому правило адресации простое и механическое. Единственное исключение — МТ 46:1 (заглавие цикла) без соответствия в LXX. Карточка 14 независимо подтверждена в четырёх адресах.",
+    "methodNote": "Сверка с карточкой 14 сделана после своего разбора, а не вместо него — иначе это была бы не проверка, а повторение.",
+    "correctionsApplied": [
+      "19 §3.14 новая",
+      "19 §8 п. 2в добавлен и закрыт",
+      "authority п. 26, README тринадцатая редакция, SSOT wave32"
+    ],
+    "holdsOpened": [],
+    "holdsClosed": [],
+    "measuredAt": "2026-11-15T00:00:00Z",
+    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
+    "publicationEligible": false
+  },
+  "wave33": {
+    "date": "2026-11-15",
+    "card": "19_LXX_NUMBERING_ERRATA",
+    "edition": "fourteenth (second side measured; version 2 after re-shoot)",
+    "scope": "Исполнение §3.11 п. 5: сплошной счёт семи полей против hilask-глаголов в ELI, с поправкой на сдвиги адреса.",
+    "sources": "ELI S11 (LXX-Swete-1930); MT morphhb (WLC) как источник лемм.",
+    "measured": {
+      "fieldCensus": {
+        "3727": 22,
+        "3724": 17,
+        "3725": 7,
+        "2470": 73,
+        "5162": 100,
+        "6419": 82,
+        "2398": 220,
+        "total": 521
+      },
+      "hilaskVerbAtSameAddress": {
+        "3727": 0,
+        "3724": 0,
+        "3725": 4,
+        "2470": 3,
+        "5162": 1,
+        "6419": 1,
+        "2398": 15,
+        "total": 24
+      },
+      "outside93count": 6,
+      "outside93countLoci": [
+        "Mal 1:9",
+        "Zech 7:2",
+        "Zech 8:22",
+        "Exod 32:14",
+        "Ezek 43:22",
+        "Ezek 45:18"
+      ],
+      "nounOnlyLoss": {
+        "3727": 12,
+        "3725": 2,
+        "3724": 1,
+        "total": 15
+      },
+      "literalAddressCount": 70,
+      "documentedCount": 81,
+      "gapBreakdown": {
+        "lexicalRods": 12,
+        "shiftCorrections": 9,
+        "lev67Reorder": 2,
+        "total": 23
+      },
+      "shiftCorrectionsVerified": [
+        "Gen 32:21->32:20",
+        "Lev 5:26->6:7",
+        "Num 17:11->16:46",
+        "Num 17:12->16:47",
+        "Neh 10:34->10:33",
+        "1Chr 6:34->6:49",
+        "Ps 79:9->78:9",
+        "Ps 65:4->64:4",
+        "Ps 78:38->77:38"
+      ],
+      "lev67Reorders": [
+        "MT Lev 6:23 = ELI 6:30",
+        "MT Lev 7:7 = ELI 6:37"
+      ],
+      "formsInventory": {
+        "distinct": 33,
+        "verbs": 22,
+        "nouns": 10,
+        "hileosExcluded": 25
+      },
+      "openDiscrepancy": 0,
+      "eliVerbTotalAllBooks": 109,
+      "eliVerbInCanon": 96,
+      "eliVerbOutsideCanon": 13,
+      "eliNounTotal": 48,
+      "openDiscrepancyResolvedAs": "ошибка сравнения: Dan=Old Greek, Dat=Феодотион, книги вне канона не входят в прогон по книгам МТ",
+      "theodotion": {
+        "Dan 9:19": "ιλασθητι (есть)",
+        "Dan 9:24": "εξιλασασθαι (есть)",
+        "OldGreek 9:19": "нет",
+        "OldGreek 9:24": "нет"
+      }
+    },
+    "keyFinding": "Счёт 93/81/12 от расширения поля не меняется: добавка даёт 6 адресов, и все шесть уже были в §3.10. Но прогон по буквальному адресу даёт 70, а не 81 — разница объясняется девятью задокументированными сдвигами и двумя перестановками внутри Лев 6-7. Отсюда правило: называть счёт вместе со способом счёта.",
+    "methodNote": "Детектор переписан на явный список форм после того, как §3.10 показал несостоятельность префиксного правила: εξιλασεσθε (глагол) и εξιλασεως (существительное) расходятся только в конце.",
+    "correctionsApplied": [
+      "19 §3.15 переснята: 13→15 по существительным, «6 стихов» снято как ошибка сравнения",
+      "19 §8 п. 2г дополнен пересъёмом",
+      "authority п. 27 дополнен, README четырнадцатая редакция дополнена, SSOT wave33 v2"
+    ],
+    "holdsOpened": [
+      "постишная карта Лев 6-7 отсутствует"
+    ],
+    "holdsClosed": [],
+    "measuredAt": "2026-11-15T00:00:00Z",
+    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
+    "publicationEligible": false,
+    "selfCorrection": "В первой редакции §3.15 я записал расхождение в 6 стихов и потерю 13. Оба числа были следствием того, что сравнение шло по книгам МТ с картой ELI, где Dan=Old Greek и нет книг вне канона. Переснято прямым прогоном по всему корпусу."
+  },
+  "wave34": {
+    "date": "2026-11-15",
+    "card": "19_LXX_NUMBERING_ERRATA",
+    "edition": "fifteenth (verse map of Lev 5:14-7:38)",
+    "scope": "Исполнение HOLD из §3.15: постишная карта Лев 5:14–7:38.",
+    "sources": "ELI S11 (LXX-Swete-1930); MT morphhb (WLC).",
+    "measured": {
+      "chapterLengths": {
+        "MT": {
+          "5": 26,
+          "6": 23,
+          "7": 38
+        },
+        "ELI": {
+          "5": 19,
+          "6": 40,
+          "7": 28
+        }
+      },
+      "segments": [
+        {
+          "MT": "5:14-19",
+          "ELI": "5:14-19",
+          "shift": 0
+        },
+        {
+          "MT": "5:20-26",
+          "ELI": "6:1-7",
+          "shift": "шов через границу главы"
+        },
+        {
+          "MT": "6:1-23",
+          "ELI": "6:8-30",
+          "shift": 7
+        },
+        {
+          "MT": "7:1-10",
+          "ELI": "6:31-40",
+          "shift": "шов назад в главу 6"
+        },
+        {
+          "MT": "7:11-38",
+          "ELI": "7:1-28",
+          "shift": -10
+        }
+      ],
+      "verifiedInsideMT6": [
+        "6:2->6:9",
+        "6:3->6:10",
+        "6:5->6:12",
+        "6:7->6:14",
+        "6:9->6:16",
+        "6:10->6:17",
+        "6:12->6:19",
+        "6:14->6:21",
+        "6:17->6:24",
+        "6:20->6:27",
+        "6:22->6:29"
+      ],
+      "lossExplained": {
+        "MT 5:26": "ELI 6:7",
+        "MT 7:7": "ELI 6:37"
+      },
+      "hilaskShareInLev": 44,
+      "hilaskShareTotal": 109
+    },
+    "keyFinding": "Перекройка границ, а не сдвиг: греческая шестая глава забирает конец МТ 5 и начало МТ 7. Постоянный сдвиг есть только внутри МТ 6 (+7), и он проверен одиннадцатью парами. Оба hilask-стиха, потерянных буквальным прогоном, лежат в греческой главе 6 и арифметикой не выводятся.",
+    "methodNote": "Читались края всех четырёх кусков, три шва и одиннадцать пар внутри МТ 6. Якоря, длины и разрывы не применялись — §3.13 показал их непригодность.",
+    "correctionsApplied": [
+      "19 §3.16 новая",
+      "19 §8 п. 2д добавлен и закрыт с оговоркой о середине кусков 1 и 4",
+      "authority п. 28, README пятнадцатая редакция, SSOT wave34"
+    ],
+    "holdsOpened": [],
+    "holdsClosed": [
+      "постишная карта Лев 5:14-7:38"
+    ],
+    "measuredAt": "2026-11-15T00:00:00Z",
+    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
+    "publicationEligible": false
+  },
+  "wave35": {
+    "date": "2026-11-15",
+    "card": "19_LXX_NUMBERING_ERRATA",
+    "edition": "sixteenth (book is not the unit — file is)",
+    "scope": "Проверка правила §3.15 («называть файл, а не книгу») на всём корпусе ELI.",
+    "sources": "ELI S11 (LXX-Swete-1930), все 60 файлов-префиксов.",
+    "measured": {
+      "eliFilePrefixes": 60,
+      "pairs": {
+        "Dan/Dat": {
+          "what": "Old Greek / Феодотион",
+          "versesEach": 424,
+          "differs": "9:19, 9:24 (проверено)"
+        },
+        "Tob/Tbs": {
+          "what": "две версии Товита",
+          "versesEach": 244,
+          "identical": 2,
+          "differing": 225,
+          "onlyInOne": 18
+        },
+        "Psa/Pss": {
+          "what": "Псалтирь / Псалмы Соломона",
+          "note": "не пара одной книги; Псалом 151 лежит в Psa главой 151"
+        }
+      },
+      "tobitCitedInLane": false,
+      "tobitOnlyMention": "карточка 05, справка LSJ"
+    },
+    "keyFinding": "Правило §3.15 верно и случай не единственный: у Даниила и Товита в Swete по два файла, и тексты расходятся редакционно. У Товита расходятся 225 стихов из 244. Прямой ошибки в карточках ot/ нет — Товит там не цитируется, — но ловушка доказана и правило внесено в §4 как п. 4е.",
+    "methodNote": "Сверка Tob/Tbs шла через ot.eli() с нормализацией ot.gr_norm(); первый прогон по сырому индексу дал ложные результаты и был отброшен — предупреждение записано.",
+    "correctionsApplied": [
+      "19 §3.17 новая",
+      "19 §4 п. 4е добавлен",
+      "19 §5 оговорка о двух версиях Товита и Даниила",
+      "19 §8 п. 2е добавлен и закрыт с оговоркой",
+      "authority п. 29, README шестнадцатая редакция, SSOT wave35"
+    ],
+    "holdsOpened": [
+      "постишная карта расхождения Tob/Tbs"
+    ],
+    "holdsClosed": [
+      "проверка, единственный ли случай двух файлов на книгу"
+    ],
+    "measuredAt": "2026-11-15T00:00:00Z",
+    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
+    "publicationEligible": false
+  },
+  "wave36": {
+    "date": "2026-11-15",
+    "card": "19_LXX_NUMBERING_ERRATA",
+    "edition": "seventeenth (empty slots; version 2 with eli_status)",
+    "scope": "Природа случая «номер есть, текста нет»; сплошной счёт пустых слотов.",
+    "sources": "ELI S11: 00-Swete_versification.csv + 02-Swete_word_without_punctuations.csv; SOL 1909 (Sollupulo/Swete-1909-LXX) для контроля Deu 23:2.",
+    "measured": {
+      "totalVersesInVersification": 30533,
+      "emptySlots": 686,
+      "emptyInCanon": 240,
+      "emptyOutsideCanon": 446,
+      "byBook": {
+        "Ode": 264,
+        "1En": 106,
+        "1Ki": 49,
+        "Jer": 46,
+        "1Sa": 35,
+        "Sir": 34,
+        "Neh": 28,
+        "Sus": 18,
+        "Tbs": 16,
+        "Dan": 16,
+        "1Ch": 15,
+        "Pro": 9,
+        "Eze": 8,
+        "Jos": 7,
+        "Psa": 7,
+        "Bel": 7,
+        "Lam": 4,
+        "Deu": 3,
+        "2Ch": 2,
+        "Ezr": 2,
+        "Est": 2,
+        "Dat": 2,
+        "Gen": 1,
+        "Exo": 1,
+        "2Ki": 1,
+        "Job": 1,
+        "Isa": 1,
+        "3Ma": 1
+      },
+      "nests": [
+        "1Chr 1:11-1:23 (13)",
+        "1Kgs 14:1-14:20 (20, вся глава)",
+        "1Sam 17:12-17:31 (20)",
+        "Dan 4:3-4:6 (4)",
+        "Tbs 4:7-4:18 (12)",
+        "Jer 23:30-31",
+        "Jer 26:26",
+        "Jer 28:45-48"
+      ],
+      "ragged": {
+        "Neh 12": "11 пустых из 21, вразбивку"
+      },
+      "deu232": {
+        "ELI": "empty-slot (запись есть, слов нет)",
+        "SOL": "строки 5.Deut.23.2 нет в файле вовсе",
+        "verdict": "§3.8 верен; классификация уточнена — это empty-slot, подтверждённый вторым зеркалом"
+      },
+      "eliStatusFunction": {
+        "name": "eli_status",
+        "values": [
+          "ok",
+          "no-address",
+          "empty-slot"
+        ],
+        "eliUnchanged": true,
+        "gateCallers": 0
+      }
+    },
+    "keyFinding": "686 стихов в ELI перечислены разметкой, но слов не имеют; 240 из них в книгах канона, гнёздами до целой главы (1Kgs 14). Это дефект транскрипции, а не свойство греческого текста, и ot.eli() не отличает его от «адреса нет».",
+    "methodNote": "Два первых прогона дали верное число по неверной причине (немонотонный поиск конца; list.index вместо позиции) и совпали случайно. Рабочий вариант сортирует (индекс, ref) и берёт конец как следующий индекс в том же массиве.",
+    "correctionsApplied": [
+      "19 §3.18 новая",
+      "19 §4 п. 3 усилен двумя ветвями",
+      "19 §8 п. 2ж добавлен и закрыт с оговоркой",
+      "authority п. 30, README семнадцатая редакция, SSOT wave36",
+      "tools/ot.py: добавлена eli_status(), eli() не тронута"
+    ],
+    "holdsOpened": [
+      "лакуны бумажного Свиты или артефакт оцифровки — нужен образ страницы"
+    ],
+    "holdsClosed": [
+      "природа случая Tbs 4:7-4:18",
+      "проверка Deu 23:2 из §3.8",
+      "ot.eli() не различал два вида пустоты — добавлена eli_status(), eli() не тронута"
+    ],
+    "measuredAt": "2026-11-15T00:00:00Z",
+    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
+    "publicationEligible": false
+  },
+  "wave37": {
+    "date": "2026-11-15",
+    "card": "19_LXX_NUMBERING_ERRATA",
+    "edition": "eighteenth (address audit across lanes)",
+    "scope": "Сверка всех стиховых записей SSOT с текстом ELI по содержанию.",
+    "sources": "ELI S11; SSOT ot-corpus-v1.json (cards[id].verses всех карточек).",
+    "measured": {
+      "recordsWithVerse": 301,
+      "explicitLxxAddress": 23,
+      "explicitConfirmed": 18,
+      "explicitFailed": 5,
+      "explicitFailedReason": "карточка 07, сводный текст через многоточие; метрика, не адрес",
+      "manualRecheck": {
+        "Lev 7:23 (LXX 7:13)": "ELI 7:13 совпало точно",
+        "Lev 7:26-27 (LXX 7:16-17)": "ELI 7:16-17 совпало"
+      },
+      "implicitAddress": 273,
+      "implicitFailed": 20,
+      "implicitExplainedByKnownShift": 19,
+      "implicitGenuine": 1,
+      "genuineCase": {
+        "card": "05b",
+        "refs": [
+          "Ps 51:18",
+          "Ps 51:19",
+          "Ps 51:20",
+          "Ps 51:21",
+          "Ps 50:14"
+        ],
+        "actual": "ELI 50:18-21, 49:14",
+        "shift": -1,
+        "ps51:19": "no-address; глава 51 кончается на ст. 11",
+        "textFoundAt": "ELI 50:19"
+      }
+    },
+    "keyFinding": "Явные греческие адреса в чужих карточках верны. Найден один случай «верный текст под необъявленным адресом» — карточка 05b, сдвиг Псалтири −1. Это мягче ошибки в номере и опаснее, потому что незаметно: сверка текста сходится, расходится только нумерация.",
+    "methodNote": "Сравнивались слова, а не номера: поле lxx нормализовалось через gr_norm и искалось в ELI. Тот же приём, что поймал ошибку в §3.15.",
+    "correctionsApplied": [
+      "19 §3.19 новая",
+      "19 §6 адресная поправка по 05b",
+      "19 §8 п. 2з добавлен и закрыт с оговоркой",
+      "authority п. 31, README восемнадцатая редакция, SSOT wave37"
+    ],
+    "holdsOpened": [
+      "253 записи совпали по МТ-адресу — отсутствие сдвига не доказано",
+      "адресная поправка 05b — владельцу карточки"
+    ],
+    "holdsClosed": [
+      "аудит адресов в чужих карточках"
+    ],
+    "measuredAt": "2026-11-15T00:00:00Z",
+    "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
+    "publicationEligible": false
   }
 }

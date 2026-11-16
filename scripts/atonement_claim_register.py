@@ -705,11 +705,36 @@ def insert_block(path: Path, block: dict) -> None:
     байт — иначе сама правка сдвинет счётчики упоминаний, которые лана измеряет."""
     raw = path.read_text(encoding="utf-8")
     form = canonical_indent(raw)
+    original = raw
+    if form is None and f'"{BLOCK_KEY}"' in original:
+        # Mixed-format historical registries must keep their untouched bytes.
+        # Replace the existing value at its original position, not the whole file.
+        pad = " " * top_level_indent(original)
+        token = json.dumps(BLOCK_KEY, ensure_ascii=False)
+        matches = list(re.finditer(r"(?m)^" + re.escape(pad + token)
+                                  + r"\s*:\s*", original))
+        if len(matches) != 1:
+            raise SystemExit(f"{path.name}: claim block is not uniquely anchored")
+        start = matches[0].end()
+        old_block, size = json.JSONDecoder().raw_decode(original[start:])
+        if not isinstance(old_block, dict):
+            raise SystemExit(f"{path.name}: claim block is not a JSON object")
+        encoded = json.dumps(block, ensure_ascii=False, indent=2)
+        encoded = encoded.replace("\n", "\n" + pad)
+        updated = original[:start] + encoded + original[start + size:]
+        before, after = json.loads(original), json.loads(updated)
+        if list(before) != list(after) or any(
+                before[key] != after[key] for key in before if key != BLOCK_KEY):
+            raise SystemExit(f"{path.name}: claim rewrite changed unrelated data")
+        path.write_text(updated, encoding="utf-8", newline="\n")
+        return
     if f'"{BLOCK_KEY}"' in raw:
         a, b = block_span(raw, BLOCK_KEY)
         raw = raw[:a].rstrip() + "\n" + raw[b:].lstrip("\n")
     if form is not None:
-        data_now = json.loads(raw)
+        # Preserve the original top-level key order when replacing a measured block.
+        # Removing then re-appending it produces a huge, misleading JSON diff.
+        data_now = json.loads(original)
         data_now[BLOCK_KEY] = block
         canon = json.dumps(data_now, ensure_ascii=False, indent=form) + "\n"
         probe = json.loads(canon)
