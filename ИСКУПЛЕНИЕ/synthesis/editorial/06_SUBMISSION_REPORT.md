@@ -1,8 +1,8 @@
-# AGENT‑7 — сдача: редактура серии «Искупление» (волны I–XIV закрыты; W-3 и W-4 закрыты)
+# AGENT‑7 — сдача: редактура серии «Искупление» (волны I–XV закрыты; W-3 и W-4 закрыты)
 
 **Дата:** 2026-11-15
 **Ветка:** `arena/e7839688-research` (от `573f1a6` main)
-**Статус:** `OWN_TASK_DONE` по волнам I–XIV; `PUBLICATION_HOLD` держится; Product/merge не запрашивались
+**Статус:** `OWN_TASK_DONE` по волнам I–XV; `PUBLICATION_HOLD` держится; Product/merge не запрашивались
 **Исходный объект:** PR #309, HEAD `2392be62`, 18 читательских глав в `ИСКУПЛЕНИЕ/synthesis/drafts/article01…18`
 
 ---
@@ -19,7 +19,7 @@
 |---|---|---|
 | [`00_WAVE1_READING_LOG_AND_CHAPTER_REVIEWS.md`](00_WAVE1_READING_LOG_AND_CHAPTER_REVIEWS.md) | Разбор 18 глав: что держит, главный дефект, патч; дефекты N‑a/N‑b; сквозные X‑1…X‑8 | готово |
 | [`01_HISTORICAL_AND_CONFESSIONAL_VERIFICATION.md`](01_HISTORICAL_AND_CONFESSIONAL_VERIFICATION.md) | 55 строк сверки: Дорт II (12 пунктов), WCF/1689, Кальвин, Оуэн, XVII в., отцы, библейские тексты + честный список непроверенного | готово |
-| [`02_PATCH_REGISTER.md`](02_PATCH_REGISTER.md) | 93 поправок (волны I–XII), каждая с объектом, причиной и проверяемым результатом; снятые и отклонённые идеи | готово |
+| [`02_PATCH_REGISTER.md`](02_PATCH_REGISTER.md) | 93 поправок (волны I–XV), каждая с объектом, причиной и проверяемым результатом; снятые и отклонённые идеи | готово |
 | [`03_RESEARCH_APPENDIX_STRONGER_COUNTERARGUMENTS.md`](03_RESEARCH_APPENDIX_STRONGER_COUNTERARGUMENTS.md) | Сильные контраргументы для гл. 8, 13, 17, 18 + межглавные связки; чего намеренно не добавлено | предложение |
 | [`04_SCIENTIFIC_APPENDICES_PLACEMENT.md`](04_SCIENTIFIC_APPENDICES_PLACEMENT.md) | Приложения: измерение объёма, четыре жанра под одним заголовком, три слоя, шапки `STATUS:`, перевод Писания | предложение |
 | [`05_READER_FRAGMENTS_FOR_OWNER.md`](05_READER_FRAGMENTS_FOR_OWNER.md) | Пять готовых фрагментов и три связки — чистый читательский текст с точками вставки | предложение |
@@ -39,6 +39,7 @@
 | [`17_WAVE12_STALE_STATUS_AND_SWEEP.md`](17_WAVE12_STALE_STATUS_AND_SWEEP.md) | Волна XII: сквозная проверка; мёртвый `LOCATOR_HOLD` в статусах тезисов | готово |
 | [`18_WAVE13_DRIVE_PDF_AND_LEDGER_EVIDENCE.md`](18_WAVE13_DRIVE_PDF_AND_LEDGER_EVIDENCE.md) | Волна XIII: Drive PDF проверен (запись верна); свидетельство Ассамблеи в C-01/C-06 | готово |
 | [`19_WAVE14_DORT_REJECTIO_AND_HELVETIC.md`](19_WAVE14_DORT_REJECTIO_AND_HELVETIC.md) | Волна XIV: латинский Rejectio II; Второе Гельветическое «pro omnibus et singulis» с 1 Ин. 2:2 | готово |
+| [`20_WAVE15_CORRECTION_OF_WAVE14.md`](20_WAVE15_CORRECTION_OF_WAVE14.md) | Волна XV: **поправка** — Rejectio II и с. 577 уже были в корпусе; волна XIV была переоткрытием | готово |
 | [`patches/AGENT7_PR309_EDITORIAL_FULL.patch`](patches/AGENT7_PR309_EDITORIAL_FULL.patch) | Полный диф со счётчиками (22 файла) — воспроизведение один-в-один | готово |
 
 ---
