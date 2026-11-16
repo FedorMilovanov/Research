@@ -99,6 +99,25 @@ class EditorialPlanTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'Unexpected changes'):
             check(self.plan)
 
+    def test_changed_member_that_nobody_declared_is_caught(self):
+        """Negative control for the PR #521 failure mode: a member really changed
+        on disk but left out of expectedChangedPacketMembers must go red."""
+        root = Path(__file__).resolve().parents[1]
+        receipt = json.loads((root / self.plan['baselineReceipt']).read_text())
+        members = [n for n in receipt['sourceManifest']['files']
+                   if not n.startswith('xml/') and n != 'AGENT_RULES.md']
+        target = min(members, key=lambda n: receipt['sourceManifest']['files'][n]['bytes'])
+        path = root / target
+        original = path.read_bytes()
+        self.assertEqual(self.plan['expectedChangedPacketMembers'], [])
+        try:
+            path.write_bytes(original + b'\n')
+            with self.assertRaisesRegex(ValueError, 'Unexpected changes'):
+                check(json.loads((root / 'data/charnock-series-editorial-plan-v1.json').read_text()))
+        finally:
+            path.write_bytes(original)
+        self.assertEqual(path.read_bytes(), original, 'member was not restored')
+
     def test_live_root_policy_drift_is_disclosed_not_promoted_to_charnock_source(self):
         report = check(self.plan)
         self.assertEqual(report['changedPacketMembers'],
