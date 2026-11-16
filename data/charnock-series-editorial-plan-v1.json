@@ -9,6 +9,11 @@
   "custodyBoundary": "Wave40 receipt describes its immutable source packet, not the current editorial changes to 00/07/16/17. These four changed dossier files are explicitly declared as drift; the historical custody receipt is not rewritten, and current revision custody remains NOT_REVERIFIED.",
   "expectedChangedPacketMembers": [
     "БИОГРАФИИ/Стивен Чарнок/00_README_AND_NAVIGATION.md",
+    "БИОГРАФИИ/Стивен Чарнок/01_BIOGRAPHICAL_WITNESSES_AND_EVIDENCE_HIERARCHY.md",
+    "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md",
+    "БИОГРАФИИ/Стивен Чарнок/03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md",
+    "БИОГРАФИИ/Стивен Чарнок/04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
+    "БИОГРАФИИ/Стивен Чарнок/06_CORPUS_ACCESS_MATRIX_AND_LOCATORS.md",
     "БИОГРАФИИ/Стивен Чарнок/07_REPO_CROSSLINKS_AND_DRIVE_MIRROR.md",
     "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
     "БИОГРАФИИ/Стивен Чарнок/17_PROMPT_PARALLEL_AGENT_HISTORICAL_CONTEXT.md"
@@ -2700,7 +2705,7 @@
       "legacyIds": [
         "CHR-LING-02"
       ],
-      "dossierSha256": "0654d30dfbf376421bc6087a42c2fcf6cc848bc7abeaf108c1df272684437666",
+      "dossierSha256": "851896cf427775a001c7e924dd89d7d6a7dca68156caddd2c17ea16911be27f5",
       "reviewState": "DERIVED_PAIR_PACKET_COUNTERPART_RECHECK_OPEN",
       "charnockSide": {
         "byteVerifiedContext": {
@@ -2981,7 +2986,7 @@
       "legacyIds": [
         "CHR-RAY-02"
       ],
-      "dossierSha256": "0654d30dfbf376421bc6087a42c2fcf6cc848bc7abeaf108c1df272684437666",
+      "dossierSha256": "851896cf427775a001c7e924dd89d7d6a7dca68156caddd2c17ea16911be27f5",
       "reviewState": "DERIVED_PAIR_PACKET_COUNTERPART_RECHECK_OPEN",
       "charnockSide": {
         "byteVerifiedContext": {
@@ -3236,7 +3241,7 @@
       "legacyIds": [
         "CHR-DAIL-TITE-729"
       ],
-      "dossierSha256": "0654d30dfbf376421bc6087a42c2fcf6cc848bc7abeaf108c1df272684437666",
+      "dossierSha256": "851896cf427775a001c7e924dd89d7d6a7dca68156caddd2c17ea16911be27f5",
       "reviewState": "DERIVED_PAIR_PACKET_COUNTERPART_RECHECK_OPEN",
       "charnockSide": {
         "byteVerifiedContext": {
