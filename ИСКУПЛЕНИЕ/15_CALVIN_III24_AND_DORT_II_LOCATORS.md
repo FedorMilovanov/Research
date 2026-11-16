@@ -412,6 +412,41 @@ LA-якоря: 8.5 — *ac omnibus ei a Patre datis non modo reconciliationem; v
 - Не даёт: **страницу нашего Drive PDF** (скан без текстового слоя — ось `unchecked` принципиально). Постатейная разбивка закрыта по изд. 1919.
 ---
 
+### D.0a Дорт Rejectio II и Второе Гельветическое — латинские verbatim (волна XIV)
+
+**Источник:** тот же скан, Schaff, *Creeds of Christendom* vol. III (1919), IA `creedsofchristen0003phil_c6k6`. Метод: `fulltext/inside.php` → лист → `page_numbers.json` → печатная страница.
+
+#### D.0a.1 Дорт, Rejectio Errorum, Head II — лист 578 = печатная 564
+
+**Зачем.** Корпус держал Rejectio II только в **переводе Томаса Скотта** (отмечено «сокращена»). Латинский оригинал в скане читался, но в корпус не попадал.
+
+**Verbatim (фрагмент, лист 578 = с. 564):**
+
+> «…arbitrio, se ad gratiam indifferenter oblatam applicante, non autem ex singulari misericordia dono, efficaciter in illis operante, ut præ aliis gratiam illam sibi applicent. Nam isti, dum simulant se distinctionem hanc sano sensu proponere, populo perniciosum Pelagianismi venenum conantur propinare.»
+
+**Что это даёт — и это важно для C-02.** Rejectio II отсекает не только «Христос умер только за избранных», но и противоположный полюс: представление, будто **применение** благодати зависит от того, приложит ли человек её сам, «при равном предложении» (*gratiam indifferenter oblatam*), а не от особого действия милосердия. Это не про объём смерти Христа, а про **механизм применения** — и здесь Синод одинаково жёсток к обеим карикатурам.
+
+**Границы.** Текст читается по OCR латинского набора (частые «æ→e», «v→u», «s→f» в OCR); фрагмент — конец статьи. **Начало статьи Rejectio II по этому скану не снято**; статус — «фрагмент локализован», не «статья прочитана целиком». Для Product нужен полный текст и сверка с изданием Скотта.
+
+#### D.0a.2 Второе Гельветическое исповедание, гл. II — лист 560 = печатная 546
+
+**Найдено попутно, и это самая прямая параллель в корпусе.**
+
+> «Proinde Jesus Christus, Mundi Salvator, **pro omnibus et singulis hominibus mortuus est**, omnibusque per mortem crucis promeritus reconciliationem et remissionem peccatorum; ita tamen ut **nemo remissionis illius reipsa particeps fiat, præter credentes**, idque etiam secundum verba Evangelii Joannis iii. 16: 'Ita Deus dilexit Mundum, ut Filium suum unigenitum dederit, ut quisquis credit in eum, non pereat, sed habeat vitam æternam.' Et epistola priore Joannis, Cap. ii. v. 2: '**Ipsa est propitiatio pro peccatis nostris, nec pro nostris tantum, sed etiam pro totius Mundi peccatis.**'»
+
+**Атрибуция проверена, а не предположена.** Заголовок раздела «CONFESSIO HELVETICA POSTERIOR, A.D. 1566» стоит на листе 247; раздел непрерывен до с. 597 и далее; лист 560 (с. 546) внутри него. Порядок статей внутри главы («De Deo… De Christo» и т. д.) согласуется.
+
+**Почему это важнее, чем очередная цитата.** Это реформированное исповедание, которое:
+1. говорит **«за всех и каждого»** (*pro omnibus et singulis*) — не «за всякого рода людей»;
+2. **сразу же** ограничивает плод: «никто не делается причастным, кроме верующих»;
+3. и оба полюса обосновывает **теми же текстами**, которые спор считает несовместимыми: Ин. 3:16 и **1 Ин. 2:2 как основание всеобщего «умер за всех»**.
+
+**Что это даёт леджеру.** Прямое свидетельство, что формула «умер за всех, спасительно — для верующих» существовала в реформированном исповедании **до** Дорта — и не считалась там несовместимой. Это не решает ни за particularism, ни за universalism: Гельветическое говорит об **объёме предложения и о условии участия**, а не о внутреннем намерении Троицы. Но это снимает возможность говорить, будто «за всех и каждого» — всегда и обязательно универсалистская формула.
+
+**Статус:** `PRIMARY_LOCATED` по тексту; уровень B1 по функции (исповедание, не экзегеза).
+
+---
+
 ### D.1a 1689 Charleston 1850 — чтение по самому изданию (закрыто 2026-11-15)
 
 **Зачем.** Корпус цитировал 1689 по OCR «полного текста» и двум транскрипциям, но **сам печатный экземпляр не открывался**. Найден именно тот экземпляр: IA `confessionoffait00char` — «A confession of faith put forth by the elders and brethren … Charleston Baptist Association (S.C.), Printed by B. Temple, 1850, 4th Charleston ed.» (65 + 30 + 24 с.; UNC Chapel Hill).
