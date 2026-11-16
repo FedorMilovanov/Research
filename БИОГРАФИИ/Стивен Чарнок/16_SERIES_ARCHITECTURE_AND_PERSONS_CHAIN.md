@@ -5160,9 +5160,9 @@ diff-check также PASS. Авторский режим Q-06/07 в этом к
 воспроизводился из XML (его прежние данные проверены тестами плана).
 
 
-### 21.72.5. Независимый академический источник: Edinburgh PhD диссертация 2009 (ED-06補足)
+### 21.72.5. Независимый академический источник: Edinburgh PhD диссертация 2009 (ED-06-дополнение)
 
-26.10.2026. ED-06補足 — независимый академический источник, адресующий
+26.10.2026. ED-06-дополнение — независимый академический источник, адресующий
 gap «0 независимых ревью переводов». Владелец: `editorialTranslationReview`
 плана серии. Не является ревью конкретных русских переводов и не заменяет
 независимую сверку SHA конкретных переводов.
@@ -8382,7 +8382,7 @@ whitespace-check PASS. ED-02/06/08 OPEN;12формальных переводо�
    отмена наказания; неопределённость «юности орла» оставляется по «мнению простых»;
    примета Amyrald в margins до предпочтительного чтения; полное прощение как восток—запад.
 
-Семь интерпретативных наблюдений SP01–SP07 с 실제 spans и хэшами. Вывод: два отрывка — не
+Семь интерпретативных наблюдений SP01–SP07 с проверенными текстовыми диапазонами и хешами. Вывод: два отрывка — не
 доказательство универсального метода толкования, не замена пяти проверяемых карт III, не
 современная зоология/физиология, не оригинал Амиралда. Чудеса сохранены как чудеса, не
 аллегоризированы. Наследуются C/RIGHTS_UNKNOWN/BLOCKED и четыре HOLD. Полные проповеди не
@@ -8443,7 +8443,7 @@ whitespace-check PASS. ED-02/06/08 OPEN;12формальных переводо�
 
 - В 1674 1-м издании проповедь XIX нач. стр. 422 (цитата "Fancy is like fire, a good Servant but a bad Master" с стр. 422, подтверждена Quote Investigator со ссылкой на Google Books Full View).
 - В 1676 2-м издании проповедь XIX на стр. 471–502 (полнотекстово прочитано в A25478; стр. 503 — начало проповеди XX).
-- 1844 репринт показывает стр. 393 — это реプリнтная пагинация Nichol, не оригинал.
+- 1844 репринт показывает стр. 393 — это пагинация репринта Nichol, не оригинал.
 
 **Вывод:** `CONFLICT-8` закрыт — оригинальная пагинация подтверждена в обоих изданиях (1674: стр. 422; 1676: стр. 471–502). `LOCATOR_HOLD` полностью снят для обоих изданий. Новая подтверждённая локаторная ссылка: 1674 1-е изд. стр. 422, 1676 2-е изд. стр. 471–502.
 
@@ -8458,7 +8458,7 @@ whitespace-check PASS. ED-02/06/08 OPEN;12формальных переводо�
 
 - *Supplement to the Morning Exercise at Cripplegate* выходил частями; диапазон 1674–1676 (по списку проповедей У. Дженкина).
 - Проповедь Чарнока № 19 (Serm. XIX) подтверждена в **обоих изданиях**: 1674 (1-е) и 1676 (2-е).
-- В 1844 репринте vol. 2 проповедь 19 находится на странице 393 (реプリнтная пагинация).
+- В 1844 репринте vol. 2 проповедь 19 находится на странице 393 (пагинация репринта).
 
 **Вывод:** `CONFLICT-9` закрыт — конкретный выпуск с проповедью XIX подтверждён как 1674 (1-е издание, Thomas Cockerill) и 1676 (2-е издание). `LOCATOR_HOLD` на page images сохраняется как формульность, но дата выпуска не подлежит сомнению.
 
@@ -8614,9 +8614,9 @@ whitespace-check PASS. ED-02/06/08 OPEN;12формальных переводо�
 | William Cooper (minister St Olave's, Southwark, ejected 1662) проповедал его панихиду 1677 | Wikipedia (William Cooper Puritan) | Связка Fowler → Cooper → Southwark |
 | Cooper matriculated Emmanuel College Cambridge 1628 | Wikipedia/Venn | **Тот же колледж**, что и Чарнок |
 | Кооперовы проповеди редактировал Samuel Annesley в *Morning Exercises at Cripplegate* | Wikipedia (William Cooper Puritan) | Та же издательская сеть, что и у Чарнока |
-| Возможно, основал пресвитерианскую congregцию в Unicorn Yard, Tooley Street (Southwark) | Wikipedia (Fowler) | «Fowler's place» может быть这里, не Crosby Hall |
+| Возможно, основал пресвитерианскую общину в Unicorn Yard, Tooley Street (Southwark) | Wikipedia (Fowler) | «Fowler's place» могло находиться здесь, а не в Crosby Hall |
 
-**Вывод:** «Fowler's place» в стихотворении 1680 года скорее относится к месту служения Фаулера в Southwark (конVENTICLE, Unicorn Yard или подобное), чем к Crosby Hall. Фаулер и Чарнок пересекались в сети *Morning Exercise at Cripplegate*, но в разных физических местах служения (Фаулер — Southwark/Kennington, Чарнок — Crosby Hall с 1675). Стихотворение не упоминает Crosby Hall и Thomas Watson вообще. CONFLICT-14 остаётся открытым: для разрешения нужны приходские/register-данные Southwark,表明ющие, брал ли Чарнок на себя место Фаулера после января 1678, или «Fowler's place» — фигуральное обозначение преемства среди несогласных проповедников.
+**Вывод:** «Fowler's place» в стихотворении 1680 года скорее относится к месту служения Фаулера в Southwark (нонконформистская молельня, Unicorn Yard или подобное), чем к Crosby Hall. Фаулер и Чарнок пересекались в сети *Morning Exercise at Cripplegate*, но в разных физических местах служения (Фаулер — Southwark/Kennington, Чарнок — Crosby Hall с 1675). Стихотворение не упоминает Crosby Hall и Thomas Watson вообще. CONFLICT-14 остаётся открытым: для разрешения нужны приходские/register-данные Southwark, которые позволят проверить, занимал ли Чарнок место Фаулера после января 1678, или «Fowler's place» — фигуральное обозначение преемства среди несогласных проповедников.
 
 ### 21.153. ED-02 — иностранные оригиналы CASE-LINGENDES/RAYNAUD/DAILLE: источники локализованы
 
@@ -8669,7 +8669,7 @@ whitespace-check PASS. ED-02/06/08 OPEN;12формальных переводо�
 - ED-02/06/08 OPEN; 12 формальных переводов / 0 независимых сверок; custody NOT_REVERIFIED.
 - CONFLICT-8 ЗАКРЫТ: оригинальная пагинация проповеди XIX подтверждена в обоих изданиях (1674: стр. 422; 1676: стр. 471–502).
 - CONFLICT-9 ЗАКРЫТ: выпуск с проповедью XIX подтверждён как 1-е изд. 1674 и 2-е изд. 1676 (оба Thomas Cockerill).
-- CONFLICT-14 обновлён: Фаулер служил в Southwark (не Crosby Hall), проповедовал в Morning Exercise at Cripplegate 1674–6, умер январь 1678; Crosby Hall congregation мигрировала в Maze Pond, Southwark только в 1769; Fowler мог основать congregуцию в Unicorn Yard, Tooley Street. «Fowler's place» скорее Southwark-место/конVENTICLE, чем Crosby Hall. Физические места разные: Фаулер — Southwark, ЧARNOCK — Crosby Hall (1675–1680).
+- CONFLICT-14 обновлён: Фаулер служил в Southwark (не Crosby Hall), проповедовал в Morning Exercise at Cripplegate 1674–6, умер январь 1678; Crosby Hall congregation мигрировала в Maze Pond, Southwark только в 1769; Fowler мог основать общину в Unicorn Yard, Tooley Street. «Fowler's place» скорее Southwark-место/нонконформистская молельня, чем Crosby Hall. Физические места разные: Фаулер — Southwark, ЧARNOCK — Crosby Hall (1675–1680).
 - CONFLICT-17: Calamy третья эпистола отсутствует в A32724; две эпистолы подтверждены.
 - ED-02: иностранные локаторы найдены (Lingendes BSB/Google Books; Raynaud IA/Google Books vol.5; Daillé PRDL/Google Books); fresh retrieval заблокирован SSL-ограничением sandbox.
 - Новых печатных семейств не добавлено.
@@ -8694,7 +8694,7 @@ whitespace-check PASS. ED-02/06/08 OPEN;12формальных переводо�
 | Латинский акростих и эпитафия на Fowler | IA djvu.txt, чанк 6 | Похвальная поэзия, без Crosby Hall |
 | Crosby Hall — НЕ упоминается ни разу | Весь текст проповеди (8 чанков) | **Важный отрицательный результат**: проповедь не связывает Fowler с Crosby Hall |
 
-**Вывод для CONFLICT-14:** Проповедь Купера 1677 не упоминает Crosby Hall. Fowler описан как Minister "formerly of Reading, and lastly of London" — путь через Reading и London, без Crosby Hall. Это усиливает версию, что «Fowler's place» в элегии 1680 года относится к месту служения Fowler в London/Southwark (конVENTICLE, Unicorn Yard), а не к Crosby Hall. Физические места разные: Fowler — Southwark/London, Charnock — Crosby Hall (1675–1680). CONFLICT-14 остаётся открытым: для окончательного разрешения нужны приходские/register-данные Southwark, показывающие, брал ли Charnock на себя место Fowler после января 1678.
+**Вывод для CONFLICT-14:** Проповедь Купера 1677 не упоминает Crosby Hall. Fowler описан как Minister "formerly of Reading, and lastly of London" — путь через Reading и London, без Crosby Hall. Это усиливает версию, что «Fowler's place» в элегии 1680 года относится к месту служения Fowler в London/Southwark (нонконформистская молельня, Unicorn Yard), а не к Crosby Hall. Физические места разные: Fowler — Southwark/London, Charnock — Crosby Hall (1675–1680). CONFLICT-14 остаётся открытым: для окончательного разрешения нужны приходские/register-данные Southwark, показывающие, брал ли Charnock на себя место Fowler после января 1678.
 
 ### 21.152. Состояние серии после 94
 
@@ -8702,7 +8702,7 @@ whitespace-check PASS. ED-02/06/08 OPEN;12формальных переводо�
 - ED-02/06/08 OPEN; 12 формальных переводов / 0 независимых сверок; custody NOT_REVERIFIED.
 - CONFLICT-8 ЗАКРЫТ: оригинальная пагинация проповеди XIX подтверждена в обоих изданиях (1674: стр. 422; 1676: стр. 471–502).
 - CONFLICT-9 ЗАКРЫТ: выпуск с проповедью XIX подтверждён как 1-е изд. 1674 и 2-е изд. 1676 (оба Thomas Cockerill).
-- CONFLICT-14 обновлён: проповедь Купера 1677 прочтена полностью; Crosby Hall НЕ упоминается; Fowler — Minister Reading и London, не Crosby Hall; Crosby Hall congregation мигрировала в Maze Pond, Southwark только в 1769; Fowler мог основать congregуцию в Unicorn Yard, Tooley Street. «Fowler's place» скорее Southwark/London-место/конVENTICLE, чем Crosby Hall. Физические места разные: Fowler — Southwark/London, ЧARNOCK — Crosby Hall (1675–1680).
+- CONFLICT-14 обновлён: проповедь Купера 1677 прочтена полностью; Crosby Hall НЕ упоминается; Fowler — Minister Reading и London, не Crosby Hall; Crosby Hall congregation мигрировала в Maze Pond, Southwark только в 1769; Fowler мог основать общину в Unicorn Yard, Tooley Street. «Fowler's place» скорее Southwark/London-место/нонконформистская молельня, чем Crosby Hall. Физические места разные: Fowler — Southwark/London, ЧARNOCK — Crosby Hall (1675–1680).
 - CONFLICT-17: Calamy третья эпистола отсутствует в A32724; две эпистолы подтверждены.
 - ED-02: иностранные локаторы найдены (Lingendes BSB/Google Books; Raynaud IA/Google Books vol.5; Daillé PRDL/Google Books); fresh retrieval заблокирован SSL-ограничением sandbox.
 - ED-08: Drive readback wykonан для квитанции wave40 v1 (sha256 совпал); локальные SHA256 файлов манифеста v2 пересчитаны; загрузка на Drive и readback файлов манифеста v2 — следующий шаг.

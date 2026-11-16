@@ -37,13 +37,13 @@ FAM-04:1815/1816и биографические ограничения сохр�
 
 **CONFLICT-11 — Parsons-издание 1815–1816 —16§§21.147–21.148.** Разрешён как диапазон 1815–1816 по HathiTrust, IA, Google Books, DNB.
 
-**CONFLICT-14 — Fowler-тексты 1677 и Southwark-служение —16§§21.145–21.146, 21.151, 21.154, 21.155.** Чарнок не упомянут в Fowler-элегиях; Fowler-элегия 1677 (A37311) прочтена полностью: Crosby Hall НЕ упоминается; Fowler проповедовал на Ин. 16:8 и Наум 2; Fowler описан как Minister "formerly of Reading, and lastly of London" (путь Marlborough→Oxford→Reading→Prison→London); Crosby Hall congregation мигрировала в Maze Pond, Southwark только в 1769 (после ЧARNOCK); Fowler мог основать congregуцию в Unicorn Yard, Tooley Street. «Fowler's place» скорее Southwark/London-место/конVENTICLE, чем Crosby Hall. Физ. места разные: Fowler — Southwark/London, ЧARNOCK — Crosby Hall (1675–1680).
+**CONFLICT-14 — Fowler-тексты 1677 и Southwark-служение —16§§21.145–21.146, 21.151, 21.154, 21.155.** Чарнок не упомянут в Fowler-элегиях; Fowler-элегия 1677 (A37311) прочтена полностью: Crosby Hall НЕ упоминается; Fowler проповедовал на Ин. 16:8 и Наум 2; Fowler описан как Minister "formerly of Reading, and lastly of London" (путь Marlborough→Oxford→Reading→Prison→London); Crosby Hall congregation мигрировала в Maze Pond, Southwark только в 1769 (после ЧARNOCK); Fowler мог основать congregуцию в Unicorn Yard, Tooley Street. «Fowler's place» скорее Southwark/London-место/нонконформистское молитвенное собрание, чем Crosby Hall. Физ. места разные: Fowler — Southwark/London, ЧARNOCK — Crosby Hall (1675–1680).
 
 **CONFLICT-17 — Calamy третья эпистола —16§§21.143–21.144.** Полная проверка A32724.xml: эпистолы в томе 1683 нет, две подтверждены.
 
 **CONFLICT-8 —16§21.140.** Оригинальная пагинация проповеди XIX подтверждена в обоих изданиях: 1674 стр. 422 (Quote Investigator → Google Books `UHPza-1yHckC`) и 1676 стр. 471–502 (EEBO-TCP A25478, полностью прочитано). `LOCATOR_HOLD` полностью снят.
 **CONFLICT-9 —16§21.141.** Дата выпуска подтверждена: 1-е издание 1674 и 2-е издание 1676 (оба Thomas Cockerill), проповедь XIX в обоих.
-**CONFLICT-14 —16§§21.145–21.146, 21.151, 21.154.** Чарнок не упомянут в Fowler-элегиях; проповедь Купера 1677 прочтена полностью (Internet Archive): Crosby Hall НЕ упоминается; Fowler описан как Minister "formerly of Reading, and lastly of London"; Crosby Hall congregation мигрировала в Maze Pond, Southwark только в 1769 (после ЧARNOCK); Fowler мог основать congregуцию в Unicorn Yard, Tooley Street. «Fowler's place» скорее Southwark/London-место/конVENTICLE, чем Crosby Hall. Физ. места разные: Fowler — Southwark/London, ЧARNOCK — Crosby Hall (1675–1680).
+**CONFLICT-14 —16§§21.145–21.146, 21.151, 21.154.** Чарнок не упомянут в Fowler-элегиях; проповедь Купера 1677 прочтена полностью (Internet Archive): Crosby Hall НЕ упоминается; Fowler описан как Minister "formerly of Reading, and lastly of London"; Crosby Hall congregation мигрировала в Maze Pond, Southwark только в 1769 (после ЧARNOCK); Fowler мог основать congregуцию в Unicorn Yard, Tooley Street. «Fowler's place» скорее Southwark/London-место/нонконформистское молитвенное собрание, чем Crosby Hall. Физ. места разные: Fowler — Southwark/London, ЧARNOCK — Crosby Hall (1675–1680).
 
 **Смерть 27/28 июля 1680 — CONFLICT-10; погребение 30 июля по печатному регистру —16§§21.138–21.139.** Ранние свидетельства расходятся в дне смерти. На изображении Chester (1882), с. 265, запись Чарнока относится к 30 июля; 7 августа — запись James Kelke. Прежнее утверждение о «подтверждённом 7 августа» и `substantially resolved` отменено как ошибочное. Рукописный оригинал и независимая приёмка ещё ожидаются; `PUBLICATION_HOLD` сохраняется.
 
@@ -319,7 +319,7 @@ Root-authority Research не повышена. После подтвержден
 **Дата создания:** 2026-10-25
 **Режим:** сбор материалов для мощной эпической биографии. Первичная верификация, иерархия свидетелей,
 фиксация конфликтов.
-**Объект:** Stephen Charnock, B.D. (1628 – 27 июля 1680), английский пуританский богослов и
+**Объект:** Stephen Charnock, B.D. (около 1628 — 27/28 июля 1680, `CONFLICT-10`), английский пуританский богослов и
 пресвитерианский проповедник.
 **Родитель:** [`БИОГРАФИИ/`](../00_README_AND_NAVIGATION.md)
 **Drive:** [`02 — СТИВЕН ЧАРНОК (1628–1680)`](https://drive.google.com/drive/folders/15iNGKO8rN3vJKPbJuXfPVx4rXHER5Xq2)
