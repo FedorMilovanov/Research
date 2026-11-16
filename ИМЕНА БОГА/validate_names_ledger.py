@@ -473,6 +473,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-NETS-PERKINS-EXODUS-2009-GOTTINGEN-TRANSLATION": "NETS_PERKINS_EXODUS_TRANSLATION_INTRO_FOLLOWS_WEVERS1991_EDITED_GREEK_NO_ORIGINAL_APPARATUS_OR_MANUSCRIPT",
     "SRC-CUL-TS-AS36-36-EX3-14-ORIGINAL-IIIF": "CUL_TS_AS36_36_ORIGINAL_ASHKAR_SCROLL_EX3_14_PHOTO_DIRECT_VISIBLE_EHYEH_FORMULA_NO_FULL_COLLATION",
     "SRC-CUL-TS-NS282-88-EX17-16-ABSENT-ORIGINAL-IIIF": "CUL_TS_NS282_88_ORIGINAL_ASHKAR_SCROLL_EX17_16_NOT_SURVIVING_CATALOG_EX17_6_9_AND_18_4_14",
+    "SRC-BL-HARLEY5683-F1R-EX17-16-OPENN-PHOTO": "LATE_THIRTEENTH_CENTURY_INDEPENDENT_PHYSICAL_CODEx_ORIGINAL_PHOTO_EX17_16_LOCUS_ONLY_UNCOLLATED",
 }
 
 
@@ -554,6 +555,42 @@ def validate_source_access(sources: dict) -> list[str]:
             errors.append(f"{prefix}: unreviewed source id {rid}")
         if source.get("sourceRole") != EXPECTED_SOURCE_ROLES.get(rid):
             errors.append(f"{prefix}: source relevance/role changed without research review")
+        if rid == "SRC-BL-HARLEY5683-F1R-EX17-16-OPENN-PHOTO":
+            # OPenn confirms a separately preserved physical codex/photo locus,
+            # NOT the joined/separate word reading, collation or Product permission.
+            required = {
+                "sourceRole": "LATE_THIRTEENTH_CENTURY_INDEPENDENT_PHYSICAL_CODEx_ORIGINAL_PHOTO_EX17_16_LOCUS_ONLY_UNCOLLATED",
+                "evidenceClass": "A2",
+                "accessState": "PARTIAL_OBJECT",
+                "locatorState": "EXACT_LOCATOR_VERIFIED",
+                "rightsState": "RIGHTS_UNKNOWN",
+                "publicationState": "BLOCKED",
+                "criticalEditionCollated": False,
+                "digitalPhotoId": "12967_0010.jpg",
+                "originalMasterImageUrl": "https://openn.library.upenn.edu/Data/0047/harley_ms_5683/data/master/12967_0010.jpg",
+            }
+            audit = source.get("archivalImageAudit20261116")
+            audit_required = {
+                "physicalManuscriptIndependentFromOr4445": True,
+                "datedAsEarlyTenthCentury": False,
+                "ex1716InFirstExtantFolioCatalogueRange": True,
+                "originalInstitutionalMasterJpegEndpointHttp200": True,
+                "originalNativePixelsIndependentlyReadForWordDivision": False,
+                "joinedWordProved": False,
+                "separatedWordsProved": False,
+                "manuscriptMarginaliaIndependentlyCollated": False,
+                "modernReferenceTextUsedAsOriginalPhotoWitness": False,
+                "separateOriginalCriticalBhsOrGottAppRead": False,
+                "criticalCollationsAccepted": 0,
+                "opennImagesPublicDomainMarkDisplayed": True,
+                "editorialProductImageReuseApproved": False,
+            }
+            if (any(source.get(k) != v for k, v in required.items())
+                    or not isinstance(audit, dict)
+                    or any(audit.get(k) != v for k, v in audit_required.items())
+                    or "Harley MS 5683" not in str(source.get("title", ""))
+                    or "not" not in str(source.get("forbiddenUse", "")).lower()):
+                errors.append(f"{prefix}: Harley MS5683 catalogue/photo locator cannot certify original word division, critical collation or Product release")
         wave50_evidence_locks = {
             "SRC-PESACHIM117A-COMPOSITE-KESYAH-AMORAIC-EDITED-DIGITAL": {
                 "year": None,

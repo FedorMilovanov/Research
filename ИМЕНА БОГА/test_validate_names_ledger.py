@@ -3228,6 +3228,20 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                 self.assertFalse(audit[key])
         self.assertEqual(0, audit["criticalCollationsAccepted"])
         self.assertEqual([], validate_source_access(self.sources))
+        for changed_field, wrong_value in (
+                ("originalNativePixelsIndependentlyReadForWordDivision", True),
+                ("joinedWordProved", True),
+                ("separatedWordsProved", True),
+                ("editorialProductImageReuseApproved", True),
+                ("physicalManuscriptIndependentFromOr4445", False),
+                ("opennImagesPublicDomainMarkDisplayed", False)):
+            with self.subTest(field=changed_field):
+                changed = copy.deepcopy(self.sources)
+                item = next(x for x in changed["records"] if x["id"] == "SRC-BL-HARLEY5683-F1R-EX17-16-OPENN-PHOTO")
+                item["archivalImageAudit20261116"][changed_field] = wrong_value
+                self.assertTrue(any("Harley MS5683 catalogue/photo locator cannot certify" in e
+                                    for e in validate_source_access(changed)))
+
 
 
 if __name__ == "__main__":
