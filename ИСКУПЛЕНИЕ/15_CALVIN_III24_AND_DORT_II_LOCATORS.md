@@ -412,6 +412,42 @@ LA-якоря: 8.5 — *ac omnibus ei a Patre datis non modo reconciliationem; v
 - Не даёт: **страницу нашего Drive PDF** (скан без текстового слоя — ось `unchecked` принципиально). Постатейная разбивка закрыта по изд. 1919.
 ---
 
+### D.1a 1689 Charleston 1850 — чтение по самому изданию (закрыто 2026-11-15)
+
+**Зачем.** Корпус цитировал 1689 по OCR «полного текста» и двум транскрипциям, но **сам печатный экземпляр не открывался**. Найден именно тот экземпляр: IA `confessionoffait00char` — «A confession of faith put forth by the elders and brethren … Charleston Baptist Association (S.C.), Printed by B. Temple, 1850, 4th Charleston ed.» (65 + 30 + 24 с.; UNC Chapel Hill).
+
+**Доступ.** Полнотекстовый поиск по скану работает (`fulltext/inside.php`). Изображения страниц **не открываются ни по одному каналу** (`BookReaderImages.php`, `page/nN.jpg`, прямой JP2 — HTTP 500 либо обрыв TLS). Значит: текст издания читаем, факсимиле как картинка — нет.
+
+**Локатор.** Лист **31** = печатная **25** (`page_numbers.json`: `confidence: 100`, `pageProb: 95`). Это совпадает с записанным в корпусе «с. 25–26».
+
+#### VIII.8 — подтверждено по самому изданию
+
+> «**8.** To all those for whom Christ hath **obtained eternal redemption**, he doth certainly and effectually apply, and communicate the same; making intercession for them; uniting them to himself by his spirit; revealing unto them, in and by the word, the mystery of salvation; persuading them to believe, and obey; governing their hearts by his word and spirit…» *(лист 31 = с. 25)*
+
+Формулировка та же, что в OCR полного текста и в двух транскрипциях. **`obtained eternal redemption` подтверждён по печатному экземпляру.**
+
+#### VIII.5 — и здесь поправка к нашей же записи
+
+> «The Lord Jesus by his perfect obedience and sacrifice of himself, which he through the eternal Spirit once offered up unto God, hath fully satisfied the justice of **God**, **procured reconciliation**, and **purchased an everlasting inheritance** in the kingdom of heaven, for all those whom the Father hath given unto him.» *(лист 31 = с. 25)*
+
+**WCF 8.5 (Шафф, с. 621):** «hath fully satisfied the justice of **his Father**, and **purchased not only** reconciliation, **but** an everlasting inheritance…»
+
+**Значит запись «§5 совпадает дословно у обоих» — неверна.** В §5 два расхождения:
+
+| | WCF 8.5 | 1689 VIII.5 |
+|---|---|---|
+| Кому удовлетворение | «justice of **his Father**» | «justice of **God**» |
+| Синтаксис | «purchased **not only** reconciliation, **but** an everlasting inheritance» | «**procured reconciliation**, and **purchased** an everlasting inheritance» |
+| Глагол приобретения наследия | **purchased** | **purchased** — совпадает |
+
+**Что это меняет в W-4.** W-4 говорил: «расхождение только в §8, §5 совпадает дословно». Теперь точная картина: **глагол `purchased` о наследии в §5 действительно общий у обоих** — и это главное, что нужно было для спора, — но §5 не «совпадает дословно»: у него другое лицо удовлетворения («Бог» / «Его Отец») и другой синтаксис примирения. Различие §5 не в глаголе приобретения и не касается объёма искупления.
+
+**Как это читать.** Ни одно из двух расхождений в §5 не даёт догматического вывода: «justice of God» и «justice of his Father» — одно и то же лицо Троицы, а «procured … and purchased» против «purchased not only … but» — стилистика, а не объём. Поэтому W-4 закрывается как **правило цитирования**: 1689 цитировать по собственным словам, §5 не приводить как «дословно то же», §8 не смешивать с §5.
+
+**Граница, которая остаётся.** Печатный текст прочитан **по OCR скана**, а не по изображению: `wordConf` у этого скана низкий (0–3 у большинства листов), правка «и»/«in» в OCR видна («inheiitance», «unlo-them», «bf;»). Изображение не открывалось — значит «сверено по факсимиле» сказать нельзя. Честная формулировка: **сверено по тексту самого экземпляра 1850 г.**, факсимиле как картинка не проверялось.
+
+---
+
 ### D.0 WCF гл. XI §4 — печатная страница, оговорка об американских правках и Камберленд 1829 (закрыто 2026-11-15)
 
 **Зачем.** W-3 держался как `CORPUS-CONFIRMED / NOT RE-READ`: гл. 15 §4 ссылалась на XI.4, но дословного текста и печатной страницы в корпусе не было.
