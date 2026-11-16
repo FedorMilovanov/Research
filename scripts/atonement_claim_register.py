@@ -125,7 +125,9 @@ def files_for(lan: str) -> list[Path]:
     карточки, и оставлять их вне счёта значило бы мерить лан по удобной ему части."""
     if lan == "root":
         return sorted(CORPUS_DIR.glob("*.md"))
-    return sorted((CORPUS_DIR / lan).rglob("*.md"))
+    # .scratch — служебные клоны источников (git-ignored), их README и заметки не проза лана:
+    # обход по ним мерил бы чужой репозиторий и делал бы число зависимым от наличия клонов.
+    return sorted(p for p in (CORPUS_DIR / lan).rglob("*.md") if ".scratch" not in p.parts)
 
 
 def registry_for(lan: str) -> Path:
