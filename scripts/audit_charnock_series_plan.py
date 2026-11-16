@@ -450,6 +450,11 @@ def check(plan, root=ROOT):
             changed.append(name)
     expected = ['БИОГРАФИИ/Стивен Чарнок/00_README_AND_NAVIGATION.md',
                 'БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md',
+                'БИОГРАФИИ/Стивен Чарнок/01_BIOGRAPHICAL_WITNESSES_AND_EVIDENCE_HIERARCHY.md',
+                'БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md',
+                'БИОГРАФИИ/Стивен Чарнок/03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md',
+                'БИОГРАФИИ/Стивен Чарнок/04_CHARACTER_MINISTRY_AND_THEOLOGY.md',
+                'БИОГРАФИИ/Стивен Чарнок/06_CORPUS_ACCESS_MATRIX_AND_LOCATORS.md',
                 'БИОГРАФИИ/Стивен Чарнок/07_REPO_CROSSLINKS_AND_DRIVE_MIRROR.md',
                 'БИОГРАФИИ/Стивен Чарнок/17_PROMPT_PARALLEL_AGENT_HISTORICAL_CONTEXT.md']
     if sorted(plan['expectedChangedPacketMembers']) != sorted(expected) or sorted(changed) != sorted(expected):
