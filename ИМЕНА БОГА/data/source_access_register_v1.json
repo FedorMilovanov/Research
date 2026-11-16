@@ -5111,10 +5111,10 @@
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "locator": "Cambridge institutional author original (2023): p146 first column coverage Exod5:11–6:3; p147 figure3 JTS ENA4107.20 photograph; p150 Exod6:2 setuma; 2023 DOI 10.1515/9783111019963-009.",
+      "locator": "Cambridge institutional author original (2023): p146 first column coverage Exod5:11–6:3; p147 figure3 JTS ENA4107.20 photograph; p150 Exod6:2 setuma; 2023 DOI 10.1515/9783111019963-009. 2026-11-16 original PDF page 149/150 screenshots: § orthography/correction/7:5 on print 149; six original manuscript section divisions analyzed on print 150 (6:2,6:14 closed; 6:10,6:13,7:8,7:14 open).",
       "sourceObjectState": "Original author PDF pages 143–150 selectively read and original manuscript photo figure3 visually inspected using PDF screenshot. Author identifies first column as Exod5:11–6:3 and section before Ex6:2; no direct independent collation of each ancient letter, especially on damage. This JTS manuscript is DIFFERENT from London-Ashkar fragments Cambridge T-S AS36.36 and NS282.88. JTS granted use to author for publication, not to this Product. BHS/Göttingen apparatus for Ex3/6/17 not directly read.",
-      "supportedUse": "Attribute author's identification of early physical witness to Exod6:2–3 and closed paragraph break before 6:2.",
-      "forbiddenUse": "Infer actual word variants not visually collated, claim independent ancient codex autopsy or published critical apparatus, inherit permissions for JTS image, equate this with Aleppo or London-Ashkar physical manuscript.",
+      "supportedUse": "Attribute author's identification of early physical witness to Exod6:2–3 and closed paragraph break before 6:2. 2026-11-16 direct reading of author's print p149–150 six section divisions (2 setuma/4 petucha) and their stated agreement with Leningrad Codex and Maimonides; NOT a fresh letter-by-letter reading of Ex6:2–3.",
+      "forbiddenUse": "Infer actual word variants not visually collated, claim independent ancient codex autopsy or published critical apparatus, inherit permissions for JTS image, equate this with Aleppo or London-Ashkar physical manuscript. Do not use the Ex6:12 damaged-line reconstruction, Ex6:14 orthography or Ex7:5 preposition variant as proof of a name/lexical variant in Ex6:2–3. DPUL Cairo Geniza catalog currently requires human check for item search, so no verified independent image/rights.",
       "audit20261115": {
         "shelfmark": "JTS ENA 4107.20 (L588 fol20r)",
         "firstColumnRange": "Exod 5:11–6:3",
@@ -5126,6 +5126,35 @@
         "independentGlyphCollationDone": false,
         "imageReusePermissionGranted": false,
         "fullBhsGottingenLociCollated": false
+      },
+      "audit20261116": {
+        "originalPublisherPdf": "https://api.repository.cam.ac.uk/server/api/core/bitstreams/815fda66-78a0-47a3-8cac-2021754cd8b8/content",
+        "originalPhotoFigure3Page": 147,
+        "originalOrthographicAndCorrectionAnalysisPage": 149,
+        "originalSectionClassificationPage": 150,
+        "closedSetumaLoci": [
+          "Exodus 6:2",
+          "Exodus 6:14"
+        ],
+        "openPetuchaLoci": [
+          "Exodus 6:10",
+          "Exodus 6:13",
+          "Exodus 7:8",
+          "Exodus 7:14"
+        ],
+        "sectionBreakBeforeEx6_2ConfirmedByAuthor": true,
+        "sectionBreakMatchesMasoreticCodexAndMaimonidesPerAuthor": true,
+        "sectionBreakIsNotSameAsLexicalNameReading": true,
+        "reportedOrthographicVariantsAt": "Exodus 6:14",
+        "reportedCorrectionAt": "Exodus 6:12",
+        "reportedPrepositionVariantAt": "Exodus 7:5",
+        "ancientNameVariantAtEx6_2_3Established": false,
+        "ex6_12LifneYhwhOnlySuggestedFromDamagedTraces": true,
+        "independentLetterByLetterImageCollation": false,
+        "highResolutionOriginalArchiveImageAccessVerified": false,
+        "dPulCollectionOnlyAccessible": "https://dpul.princeton.edu/cairo_geniza",
+        "dPulExactItemHumanCheckBlocked": true,
+        "jtsPhotoReusePermissionGranted": false
       }
     },
     {
