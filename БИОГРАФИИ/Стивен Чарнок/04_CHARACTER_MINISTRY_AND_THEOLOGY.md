@@ -202,7 +202,9 @@ Calamy объясняет причину: «his Disadvantagious Way of Reading w
 > «Mr. Johnson's Funeral Sermon for him was on Mat. xiii. 43. He (who had been acquainted with him
 > thirty-six Years) gave him an excellent Character; and among other Things said, that **he never
 > knew a Man in all his Life, that had attaind near unto that Skill that Mr. Charnock had, in the
-> Originals of the Old and New Testament**, except Mr. **Thomas Gataker**.»
+> Originals of the Old and New Testament**, except Mr. **Thomas Cawton**.»
+
+> **ПРИМЕЧАНИЕ 2026-11-16.** В прежних редакциях этого тома стояло «Gataker» — ошибка распознавания прежнего прохода. Сверка по скану IA `continuationofac01cala` (скан с. 159 = печатная с. 81) даёт **Cawton**, что совпадает с Johnson, p. 39 (том 09). Thomas Cawton (ум. 1677) — не величайший гебраист века, а лондонский нонконформист-востоковед; оценка Джонсона от этого меняет смысл: не «второй после корифея», а «второй в своём кругу». См. том 18, § 1.4.
 
 **Механизм, собираемый из двух записей одного свидетеля (1713 и 1727):**
 
@@ -222,7 +224,7 @@ Calamy объясняет причину: «his Disadvantagious Way of Reading w
    1727 объясняет, что такое были эти «Notes»: **дословно выписанные sermon'ы последних лет**.
    Фолиант — не авторская рукопись к печати, а **спасённое друзьями записанное слово**.
 3. **Чарнок стоял в ряду величайших библеистов Англии.** По свидетельству Джонсона, по skill в
-   оригиналах Ветхого и Нового Завета к нему близок был только **Thomas Gataker** (1574–1654) —
+   оригиналах Ветхого и Нового Завета к нему близок был только **Thomas Cawton** (ум. 1677) —
    величайший английский гебраист своего века. Это подтверждается аппаратом дискурса о
    вездесущности (том 04 §0A): Kimchi, Lessius, Rivet, Musculus, Drexel, Amyrald, Maccor.,
    Shelford, Pont. — работа на уровне университетской экзегезы.
@@ -511,7 +513,7 @@ believed the Serpent, both broke the command in eating the fruit, both were guil
 Ambition.»
 
 Это **прямое подтверждение** Johnson'овой оценки, данной Calamy 1727 (стр. 81): skill Чарнока в
-оригиналах был «near unto … Thomas Gataker». Здесь он работает с греческим текстом, с
+оригиналах был «near unto … Thomas Cawton». Здесь он работает с греческим текстом, с
 грамматикой, с иудейским и христианским контекстом — не как цитатор, а как филолог.
 
 **Что это даёт биографии.** Готовая сцена для «мощной эпической биографии»: холостяк, чья
@@ -647,7 +649,7 @@ severe penalty.»
 
 Чарнок **поправляет английский перевод** Пс. 36:23 по еврейскому: не «a good man», а «a valiant
 man». Это самый прямой в корпусе отдел доказательственный предмет для оценки Johnson'а
-(Calamy 1727, стр. 81): skill Чарнока в оригиналах «near unto … Thomas Gataker». Не похвала
+(Calamy 1727, стр. 81): skill Чарнока в оригиналах «near unto … Thomas Cawton». Не похвала
 биографа, а работа, которую можно проверить.
 
 **Второе филологическое свидетельство — опровержение Оригена (в теле, стр. 64):**

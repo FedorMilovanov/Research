@@ -101,7 +101,8 @@ PUBLICATION_HOLD**; для не проверенных по изображени
 | **Приходской регистр St Michael's** | `A1` | **НЕ получен** | unchecked | `ARCHIVE_HOLD` |
 | **Calendar of State Papers, Domestic** | `A1` | **НЕ получен** | unchecked | `ARCHIVE_HOLD`, `LOCATOR_HOLD` |
 | **New College books / Fasti Oxonienses** | `A1` | **НЕ получен** | unchecked | `ARCHIVE_HOLD` |
-| **Calamy, Account / Continuation** | `B1` | **НЕ получен** | unchecked | `ARCHIVE_HOLD` |
+| **Calamy, Account / Continuation** | `A1` (текст) / `B1` (жанр) | **ПОЛУЧЕН 2026-11-16** — *Account* 1713, т. II (IA `bim_eighteenth-century_an-abridgement-of-mr-ba_baxter-richard_1713_2`, статья «43 Mr. Stephen Charnock» на печатной с. 56 = скан 87) и *Continuation* 1727, **т. I** (IA `continuationofac01cala`, приписка на печатной с. 81 = скан 159) и т. II (`continuationofac02calaiala`, индекс: «Mr. Stephen Charnock, Acc. p. 56, Cont. p. 81») | **`checked`** | **Открытие:** в 1727 г. стоит **Cawton**, а не Gataker; том — **I**, а не III; оборот «not large» у Калами отсутствует вовсе. См. том 18, § 1.4 |
+| **Palmer, *The Nonconformist's Memorial* 1775** | `A1` (текст) / `B1` (жанр, компиляция) | **ПОЛУЧЕН 2026-11-16** — IA `nonconformistsm01cala`, т. I, с. 159–162 (скан 179–182) | **`checked`** | **Единственный источник** формулы «curious, tho' not large collection… burnt in the Fire of London» (с. 161). Палмер также: «studied physic»; локализует патристический портрет в предисловии Джонсона; «did not live to finish» об атрибутах. Компиляция — не независимое свидетельство (том 18, § 1.3–1.4, BH-13) |
 | **Wood, Athenae Oxonienses (ed. Bliss), iii. 1234–6** | `B1` | **НЕ получен** | unchecked | `ARCHIVE_HOLD` |
 | **Parker, History of his own Time, p. 71** | `D` | **НЕ получен** | unchecked | — |
 | **Wilson, Dissenting Churches, vol. i, pp. 331 sqq.** | `B1` | **НЕ получен** | unchecked | `ARCHIVE_HOLD` |

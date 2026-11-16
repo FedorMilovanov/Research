@@ -36,10 +36,11 @@
 |---|---|---|---|---|---|
 | W1 | Джон Джонсон, *Eklampsis tōn dikaiōn* (Лондон, 1680), с. 33 | 1680, прижизненный круг | О «Deed of Gift, or rather Copy of it, which shewed his title to Heaven»: «**I believe** perished with his Books in Londons flames; and I have forgot the particular places of Scripture» | `A1` (EEBO-TCP A46911, том 09) | прочитано дословно; **единственное современное указание на гибель книг**; ограничено формулой «I believe» и одним конкретным документом |
 | W2 | Ричард Адамс и Эдуард Вил, «To the Reader» к *A Treatise of Divine Providence* (Лондон, 1680; перепечатано в 1683 и 1684) | 1680 | «His Library, furnished (though not with a numerous, yet) a curious collection of Books, was his Workhouse, in which he laboured hard all the week» | `A1` (прочитано по набору 1684 г., том 08) | **пожар не упомянут**; фраза описывает библиотеку, которой он пользовался в конце жизни, т. е. **после** 1666 г. |
-| W3 | Эдмунд Калами, *A Continuation of the Account…* (Лондон, 1727), т. III, с. 81 | 1727 | «His Library was burnt in the fire of London» | `B2` (цитата по перепечатке в «Life and Character of Charnock», изд. 1815 г.; повторена Book Owners Online) | **первое явное печатное утверждение о пожаре**; на 47 лет позже события; сам том 01 §2.9E уже зафиксировал это место |
-| W4 | Калами, *An Account…* (1713) | 1713 | пожар **не упомянут** (по проверке Pearson 2010, прим. 7) | `B1` (Pearson) | согласуется с W1–W2: между 1680 и 1727 следов рассказа нет |
+| W3 | Эдмунд Калами, *A Continuation of the Account…* (Лондон, 1727), **т. I, с. 81** | 1727 | «**His Library was burnt in the Fire of London.**» — отдельным абзацем, под рубрикой «Pag. 56. Mr. Stephen Charnock, B. D.» | `A1` — **текст перечитан 2026-11-16** (IA `continuationofac01cala`, скан с. 159, колонтитул «in London, Westminster and Southwark. 81»; § 1.4) | **первое явное печатное утверждение о пожаре**; на 47 лет позже события. **Исправление прежней записи:** не «т. III», а **том I** — издание пагинировано как два тома, и приписки идут подряд за текстом 1713 г. Размера библиотеки Калами **не** называет |
+| W4 | Калами, *An Account…* (1713), т. II, с. 56 | 1713 | пожар **не упомянут** — проверено дважды: по Пирсону (2010, прим. 7) и **прямым поиском по тексту 2026-11-16** (слов «burnt», «burnt in the Fire of London» при статье нет; статья кончается смертью и «Funeral Sermon») | `A1` (текст) + `B1` (Пирсон) | согласуется с W1–W2: между 1680 и 1727 следов рассказа нет. Поиск «not large» по всему тому 1713 — **ноль совпадений** |
 | W5 | Энтони Вуд, *Athenae Oxonienses* (1691) | 1691 | «published nothing while he lived» — о книгах, не о библиотеке | `A1` (том 11) | к пожару не относится |
-| W6 | Палмер (1775) и нонконформистская традиция XIX в. (Уильям Саймингтон, Маккош) | 1775+ | пожар как установленный факт, часто с риторическим расширением («smouldering ashes», «much valuable manuscript perished») | `B2`/`C` | **расширения XIX века не имеют опоры в XVII в.** |
+| W6 | Сэмюэл Палмер, *The Nonconformist's Memorial* (Лондон, **1775**), т. I, **с. 161** | 1775 | «in his library, which was furnished with a **curious, tho' not large collection of books, and was burnt in the Fire of London**» | `A1` — **найдено 2026-11-16** (IA `nonconformistsm01cala`, скан с. 181; § 1.4) | **вот здесь и находится «not large»**. Палмер соединил две фразы, ходившие отдельно: «curious… collection» из предисловия Адамса–Вила 1680 г. и «burnt in the Fire of London» из Калами 1727 г. Приписано Калами ошибочно (см. § 1.3) |
+| W6a | Производные XIX в. от Палмера: Уильям Саймингтон, Маккош | 1853+ | пожар как установленный факт, часто с риторическим расширением («smouldering ashes», «much valuable manuscript perished») | `B2`/`C` | **расширения XIX века не имеют опоры в XVII в.**; их источник — компиляция Палмера, а не новые документы |
 | W7 | Дэвид Пирсон, *The Library* 11 (2010), 139–167, прим. 7 | 2010 | рассказ о пожаре отсутствует в earliest biographical accounts и в Калами 1713; в предисловии 1684 г. библиотека названа «not numerous, yet curious»; предупреждение против вывода о полном уничтожении | `B1` | внешняя проверка, принята |
 
 ### 1.2. Что устанавливается
@@ -53,11 +54,46 @@
 | Вопрос задачи | Состояние источника | Формулировка для текста |
 |---|---|---|
 | Место хранения библиотеки в 1666 г. | Ни один свидетель не называет адрес, дом, приход или чьё-либо хранилище. Чарнок в Лондоне с 1660 г. без settled call; адрес его жилья в 1666 г. в прочитанных источниках не зафиксирован | «Где именно стояли книги в сентябре 1666 года, неизвестно» |
-| Размер первой библиотеки | Нет ни числа томов, ни оценки стоимости. Калами (1727) в передаче XIX в. говорит «not large», но эта характеристика в прочитанных текстах относится к **библиотеке вообще**, а не к погибшей; у Пирсона она отнесена к собранию, описанному в 1684 г. | «Размер первой библиотеки не документирован» |
+| Размер первой библиотеки | Нет ни числа томов, ни оценки стоимости. Формула «not large» **найдена и локализована 2026-11-16**: она принадлежит **Палмеру 1775, т. I, с. 161** («a curious, tho' not large collection of books»), а не Калами. Калами 1727 о размере молчит; «not numerous» — из предисловия Адамса–Вила 1680 г. | «Размер первой библиотеки не документирован» |
 | Состав (языки, дисциплины, авторы) | Ни одного перечня. Каталог 1680 г. — вторая библиотека; отождествление запрещено | «Состав неизвестен; каталог 1680 года к ней не относится» |
 | Погибшие рукописи, кроме Deed of Gift | Нет свидетелей. Косвенно: в 1684 г. редакторы сообщают, что собственные заметки Чарнока к одному из рассуждений «upon stricter search not being found» (см. § 4.2) — но это утрата, зафиксированная **после смерти**, без указания причины | «Кроме записи о посвящении себя Богу, ни одна погибшая рукопись по имени не названа» |
 
-**Отдельно фиксируется ловушка.** А. Гордон (Book Owners Online) пишет: библиотека «described by Calamy as ‘not large’». В доступных мне перепечатках Калами этой фразы при описании пожара нет; слова «not numerous» принадлежат предисловию Адамса–Вила и относятся к собранию **после** 1666 г. Пока цитата не сверена с печатной страницей Калами, ссылку «Calamy: not large» использовать нельзя. Статус: `LOCATOR_HOLD`.
+**Ловушка «not large» — РАЗРЕШЕНО 2026-11-16.** А. Гордон (Book Owners Online) пишет: библиотека «described by Calamy as ‘not large’». Проверка по трём оригиналам:
+
+1. **Калами 1713** (т. II, с. 56): статьи о размере библиотеки нет; поиск «not large» по всему тому — ноль.
+2. **Калами 1727** (т. I, с. 81): есть только «His Library was burnt in the Fire of London»; поиск «not large» по тому I — **ноль**, по тому II — **ноль**.
+3. **Палмер 1775** (т. I, с. 161): «his library, which was furnished with a **curious, tho' not large collection of books, and was burnt in the Fire of London**» — единственное место, где формула существует.
+
+**Вывод.** Атрибуция «Calamy: not large» **неверна**; это **Палмер 1775**, и он в свою очередь склеил две цитаты разных авторов и разных десятилетий: «curious collection» — Адамс и Вил, 1680 (о библиотеке **после** 1666 г.); «burnt in the Fire of London» — Калами, 1727. Палмер писал популярную компиляцию и не различал источники. Статус: `LOCATOR_HOLD` **снят**; вместо него вводится `ATTRIBUTION_CORRECTED`. В тексте допустима только формула: «Палмер (1775, т. I, с. 161) называет собрание «curious, though not large»; это его сводная характеристика, соединяющая предисловие 1680 г. с известием Калами 1727 г.».
+
+### 1.4. Ключевые страницы: что именно прочитано (новое, 2026-11-16)
+
+| Объект | Место | Дословно |
+|---|---|---|
+| Калами 1727, т. I | с. **81** (скан 159), колонтитул «in London, Westminster and Southwark. 81». Рубрика «Pag. 56. Mr. Stephen Charnock, B. D.» → «Mr. Johnson's Funeral Sermon for him was on Mat. xiii. 43…» → абзац о библиотеке | «His Library was burnt in the Fire of London. It was only in his latter Years, when his Memory began to fail him, that he penn'd and read his Sermons verbatim: But in his younger Days, he us'd no Notes in the Pulpit.» |
+| Калами 1727, т. I, с. **81** (там же, абзацем выше) | рубрика «Pag. 56» | «…he never knew a Man in all his Life, that had attaind near unto that Skill that Mr. Charnock had, in the Originals of the Old and New Testament, except Mr. **Thomas Cawton**.» — **не Gataker** |
+| Калами 1713, т. II | печатная с. **56** = скан 87 (нумерованная статья «43») | «43 Mr. Stephen Charnock, B. D. first of Emanuel College in Cambridge, and afterwards Fellow of New-College in Oxford. He was Senior Proctor of the University in 1652, and manag'd that Office with great Honour and Reputation; and was much Applauded for his Exercises at the Act.» |
+| Палмер 1775, т. I | с. **160** | «in 1652, he was **senior proctor** of the university… **The year following** he was called to constant public employment in **Ireland**» |
+| Палмер 1775, т. I | с. **159–160** | «of Eman. Col. Camb. where he was under the tuition of **Dr. Sancroft**, afterwards Abp. of Canterbury. It was there that he first experienced the effectual operations of divine grace upon his heart… He afterwards spent some time in a private family, and then in the exercise of his ministry, in **Southwark**; where **7 or 8 persons** owned him as the instrument of their conversion.» |
+| Палмер 1775, т. I | с. **160** | «He had indeed studied **physic**, in which he had acquired considerable skill; but preaching was his peculiar gift.» |
+| Палмер 1775, т. I | с. **161** | «**Mr. John Johnson**, who preached his funeral sermon, and had been an intimate friend of his from the time they were fellow students at Cambridge, has, **in the preface to that sermon**, given him a very uncommon character in a number of striking passages **selected from the Greek Fathers**…» |
+| Палмер 1775, т. I | с. **161** | «He had entered upon a set of discourses concerning the **attributes of God**, which he **did not live to finish**» |
+
+**Что это меняет.** (а) Локатор «Калами 1727, т. III, с. 81» исправлен на **т. I, с. 81**; (б) «Gataker» — ошибка томов 01/05/09: в 1727 г. стоит **Cawton**, что снимает расхождение между Johnson (Cawton) и Calamy; (в) Палмер 1775 — **первый, кто локализует источник патристического портрета** в предисловии к похоронной проповеди Джонсона, то есть подтверждает вывод тома 09 независимо; (г) Палмер — **первый, кто называет незавершённость рассуждений об атрибутах** обстоятельством смерти, а не редакторской небрежностью (ср. § 4.2); (д) Палмер — **первый и единственный источник** «studied physic», и он согласуется с «neglecting the practice of Physick» Адамса–Вила: **изучал, но не практиковал**; (е) Палмер **не** поддерживает «senior proctor 1652» Калами: он даёт 1652, но при этом ставит Ирландию «the year following», то есть воспроизводит ошибку, уже разрешённую в томе 02 в пользу 1654 (Wood, *Fasti*, с. 783; McCosh).
+
+### 1.5. Урок для аппарата: как возникает «цитата Калами»
+
+Цепочка, восстановленная полностью, стоит того, чтобы её зафиксировать как типовой случай:
+
+1. **1680**, Адамс и Вил: «His Library, furnished (tho not with a numerous, yet) a curious Collection of Books, was his Workhouse» — о собрании **после** 1666 г., без слова «large» и без слова «burnt».
+2. **1713**, Калами: о библиотеке ничего.
+3. **1727**, Калами: «His Library was burnt in the Fire of London» — **без размера**.
+4. **1775**, Палмер: «his library, which was furnished with a curious, tho' **not large** collection of books, **and was burnt in the Fire of London**» — склейка (1) и (3) в одном предложении, причём обе половины относятся к **разным** собраниям.
+5. **XXI в.**, Book Owners Online: «described by Calamy as ‘not large’» — цитата приписана Калами, которого в этой точке цепочки нет.
+
+**Правило, которое из этого следует.** Формулу, соединяющую характеристику собрания с известием о его гибели, нельзя принимать на веру даже в академическом реестре: она может быть позднейшей склейкой двух источников. Проверка делается по **двум** признакам одновременно: (а) есть ли это слово в оригинале автора, которому цитата приписана; (б) не составлена ли фраза из двух предложений разных лет. В нашем случае «large» отсутствует у Калами во всех томах, а «curious» принадлежит 1680 году.
+
+**Следствие для биографии.** Характеристика «not large» может быть **употреблена**, но только с точной атрибуцией — «Палмер (1775, т. I, с. 161) называет собрание «curious, though not large»» — и с оговоркой, что это компиляция, а не свидетель эпохи.
 
 ---
 
@@ -443,7 +479,11 @@ Vol. II 1684: «if in two or three smaller Tracts the Author seem not altogether
 | BH-3 | £366 5s 1d | `SINGLE_SOURCE_UNVERIFIED` | не использовать как факт; при находке BH-2 — пересчитать |
 | BH-4 | Имя аукционера | вероятностная атрибуция | искать письма/счета Миллингтона 1680 г.; проверить, нет ли имени в других экземплярах титула |
 | BH-5 | Титульный лист 1682, образ | `RIGHTS_HOLD` | запрос Folger (228918) и Bodleian (EEBO 21:5) |
-| BH-6 | Цитата Калами «not large» | `LOCATOR_HOLD` | сверить с печатной страницей *Account* 1713 / *Continuation* 1727; сейчас цитируется по Book Owners Online |
+| ~~BH-6~~ | ~~Цитата Калами «not large»~~ | **ЗАКРЫТ 2026-11-16** | Источник найден: **Палмер 1775, т. I, с. 161**, а не Калами. Калами 1713 и 1727 (оба тома) оборота «not large» не содержат. Атрибуция Book Owners Online исправлена: `ATTRIBUTION_CORRECTED`. См. § 1.3–1.4 |
+| BH-11 | Локатор «Калами 1727, т. III, с. 81» в томах 00/01/03 | **ИСПРАВЛЕНО 2026-11-16** | Верно: **т. I, с. 81** (скан 159, колонтитул «in London, Westminster and Southwark. 81»). Исправлено в 01 §2.9E, 03 §3G, 18 §1.1 |
+| BH-12 | «Thomas Gataker» в цитате Калами 1727 | **ИСПРАВЛЕНО 2026-11-16** | В оригинале **Cawton** (сверено по скану). Исправлено в 01, 03, 04; совпадает с Johnson, p. 39. Оценка Джонсона меняет смысл: не «второй после корифея века», а «второй в своём кругу» |
+| BH-13 | Палмер 1775 как самостоятельный свидетель | `A1` получен, **не исчерпан** | Т. I, с. 159–162 прочитан. Палмер — первый, кто: называет «studied physic»; локализует патристический портрет в предисловии Джонсона; объясняет незавершённость атрибутов смертью автора. Требуется полная сверка с 1713/1727 на предмет остальных добавлений Палмера (изд. 1802, `nonconformistsme01cala_0`, другое) |
+| ~~BH-14~~ | ~~Свидетельство о саутворкском служении «7 or 8 persons»~~ | **ЗАКРЫТ 2026-11-16** | Источник — **Джонсон, p. 37** (том 09, §4.2): «In Southwark, where seven or eight… owned their conversion». Палмер 1775, т. I, с. 159 лишь пересказывает. `A1` уже был в корпусе; проверка не требовалась |
 | BH-7 | Природа выпуска 1683 г. в 94 с. (Wing C3712 Variant) | `CATALOG_ONLY` | сравнить с 397-страничным 8° и с блоком *Providence* в *Works* 1684 |
 | BH-8 | 1702 «3rd ed.» в Research | подозрение на ошибку | снять или дать локатор; 1699 г. сам себя называет «third edition corrected» |
 | BH-9 | Полные имена переписчиков («J. Wichens», «Ashton») и «Ingenious person» | `LOCATOR_HOLD` | читать сноски 1684 г. по образам, не по OCR |
@@ -457,13 +497,15 @@ Vol. II 1684: «if in two or three smaller Tracts the Author seem not altogether
 |---|---:|---:|---|
 | Продолжение 16.11.2026 (после передачи) | ≈14 | ≈46 | Поиски: «366 5s 1d», цены и итоги аукциона, Калами и пожар, Wing C3711A, ESTC R15604, Michael Hide Exeter, priced copies, Lawler, Supplement 1674, Two Discourses 1699, Folger CC BY-SA. Чтения: Пирсон (chunks 2–9), IA-каталог 1680 (chunk 4 + ранее 0–7), IA-метаданные двух микрофильмов 1682, ESTC R15604 / R231290 / R24823 / R21459(контроль), Folger записи 147608, 470309, 126705, 133622, 134068, 148053, 200087, 846678, 51421, Lawler (chunks 13–19, 30), BM *List of Catalogues* (chunks 0–2), Christie's Lauderdale (chunks 1, 3), Folger CC BY-SA (Folgerpedia) |
 
+| Проход BH-6 (16.11.2026, закрытие HOLD) | 0 | ≈14 | Чтения: IA full-text `continuationofac01cala` (запросы «Library was burnt», «not large», «no Notes in the Pulpit», «Prefatory Epistle»), `continuationofac02calaiala` («Charnock», «not large»), `bim_…1713_2` («Library», «burnt», «Applauded», «Cawton», «Senior Proctor», «not large»), `nonconformistsm01cala` («Charnock», «not large»), плюс `djvu.txt` chunks 41, 43–45, 61–64 (Калами 1727) и 57, 63–64 (Палмер 1775), метаданные двух объектов IA, `advancedsearch` по *Nonconformist's Memorial*. Поисков не было: задача решалась адресными чтениями известных объектов |
+
 Ограничения счёта: числа приблизительны; видимые результаты поиска не равны уникальным URL; часть страниц открывалась повторно для снятия неоднозначности.
 
 ---
 
 ## 11. Сводка в seven lines
 
-1. Пожар 1666 г. стоит на одном современном свидетельстве, сформулированном как мнение, и на одном позднем (Калами 1727); место, размер и состав погибшего собрания не документированы, кроме одного названного документа.
+1. Пожар 1666 г. стоит на одном современном свидетельстве, сформулированном как мнение (Джонсон 1680), и на одном позднем — **Калами 1727, т. I, с. 81**; место, размер и состав погибшего собрания не документированы, кроме одного названного документа. Знаменитое «not large» Калами **не принадлежит**: это **Палмер 1775, т. I, с. 161**, склеивший фразу Адамса–Вила 1680 г. с фразой Калами 1727 г.
 2. Каталог 1680 г. прочитан целиком: он не содержит ни общего числа лотов, ни суммы выручки, ни имени аукционера, ни упоминания пожара.
 3. Число 1 330 — арифметика разделов каталога, сходящаяся по двум независимым линиям (Пирсон; суммы 110+135+127=372 и 24+225+26=275).
 4. £366 5s 1d — одно современное свидетельство без раскрытого первоисточника; в BM-экземпляре каталог не помечен как priced.
