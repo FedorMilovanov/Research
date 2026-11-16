@@ -3,8 +3,8 @@
 **Дата:** 2026-11-15
 **Автор:** Arena-агент 3 (НЗ: Павел, Евреи, Соборные)
 **Статус:** `RESEARCH DOSSIER COMPLETE / NO SETTLED VERDICT / EVIDENCE_HOLD RETAINED / PUBLICATION_HOLD / RIGHTS_HOLD` — волна закрыта; файл готов к ревью координатором, **не к публикации**
-**Родитель:** [`00_CURRENT_AUTHORITY_2026-10-07.md`](00_CURRENT_AUTHORITY_2026-10-07.md) (`ATONEMENT-CORPUS-AUTHORITY-2026-10-07`)
-**НЗ-подкорпус:** [`nt/00_NT_AUTHORITY_2026-10-07.md`](nt/00_NT_AUTHORITY_2026-10-07.md)
+**Родитель:** [`00_CURRENT_AUTHORITY_2026-10-07.md`](../00_CURRENT_AUTHORITY_2026-10-07.md) (`ATONEMENT-CORPUS-AUTHORITY-2026-10-07`)
+**НЗ-подкорпус:** [`nt/00_NT_AUTHORITY_2026-10-07.md`](../nt/00_NT_AUTHORITY_2026-10-07.md)
 **Машинный SSOT цитат:** S1 (MorphGNT/SBLGNT, пин `904fed0…`; датасет `f95833b1…`), S7 (SBLGNT-TEI аппарат, `jjmccollum/sblgnt-tei` @ `2a95589b…`), S2/S3/S4 (TR: Scrivener .SCV, Stephens .STV, Elzevir .ELZ — **транслитерация, не греческая графика**, поэтому сверка по ним возможна только по латинским буквам), S5 (LXX Swete, пин `26bad3eb…`, датасет `5cf3ee82…`), S6 (BHSA `bhsa-min` через `ИСКУПЛЕНИЕ/nt/tools/mt_lookup.py`), S8 (Tregelles, транскрипция Tyndale House / Jongkind 2009, пин `07ecf21…`, **CC BY-NC-SA 3.0**; текст без аппарата — рукописных сигл не даёт, зарегистрирован в §16.22f)
 **Ветка:** `arena/930d2549-research`, база `573f1a6`
 **Класс работы:** исследовательский пакет агента 3 для сводной проверки координатором. Ни один файл владельца не изменён; все правки к ним переданы как **предложения** (§11, 33 пункта, ни один не применён). Merge в `main` и в PR #309 не выполнялся и не должен выполняться до проверки пересечений между тремя пакетами.
