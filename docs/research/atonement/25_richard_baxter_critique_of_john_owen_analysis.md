@@ -1,11 +1,19 @@
 # Тщательный догматический разбор претензий Ричарда Бакстера к Джону Оуэну: Полемика вокруг коммерческой оплаты (Solutio Idem vs Solutio Tantundem), неономианизм и истоки аргументации А. Прокопенко
 
+> **⚠ СТАТУС ФАЙЛА: `LEGACY_NO_CLASSES` + первоисточниковый аудит Волны 18 (2026-11-15).**
+> Исторический текст ниже написан до введения системы классов доказательств (`AGENT_RULES.md`) и **не удаляется**.
+> Первоисточниковая сверка Волны 18 (EEBO-TCP `A26862`, `A90278`, `A27064`; Goold *Works of John Owen* Vols. X & XII; [`ИСКУПЛЕНИЕ/fathers/17_`](../../../ИСКУПЛЕНИЕ/fathers/17_POST_REFORMATION_XVII_C_PRIMARY_AUDIT_1617_1689_2026-11-15.md) §3, [`fathers/19_`](../../../ИСКУПЛЕНИЕ/fathers/19_COUNTER_VOICES_TRENT_CONCORD_REMONSTRANTS_AMYRAUT_BAXTER_1547_1694_2026-11-15.md) §5, `F-45`) вынесена в пометки `PRIMARY_SOURCE_CORRECTION` ниже. Ключевые поправки: (1) трактат Бакстера **1684 г.** (*Catholick Communion Defended*) отвечает на 12 аргументов Оуэна по **экклезиологии/приходскому общению**, а не по искуплению; (2) цитата `Owen, Works, Vol. 10, p. 438` в §3.1 является пересказом (`QUOTE_RISK`); (3) различение *денежного* и *уголовного* долга разделяли также Ф. Турретин и Ч. Ходж, а сам Бакстер держался **безусловного избрания** избранных (поэтому ярлык «арминианство/полупелагианство» неточен, хотя его неономианизм *lex remedians / Evangelical Righteousness* действительно расходится с реформатским *sola fide*). Общекорпусный `EVIDENCE_HOLD` сохраняется.
+
 **Дата исследования:** Октябрь 2026  
 **Объект исследования:** Исторические и богословские дебаты между Ричардом Бакстером (1615–1691) и Джоном Оуэном (1616–1683).  
 **Первоисточники дебатов:** 
 1. **John Owen.** *Salus Electorum, Sanguis Jesu: The Death of Death in the Death of Christ* (1647);
 2. **Richard Baxter.** *Aphorismes of Justification* (1649); *Catholick Theologie* (1675); *Richard Baxter's Answer to Dr. Owen's Arguments* (1684);
 3. **John Owen.** *Of the Death of Christ and of Justification: A Defense Against Mr. Baxter* (1650); *Vindiciae Evangelicae* (1655).  
+
+> **Пометка 2026-11-15 (Волна 18, `PRIMARY_SOURCE_CORRECTION` к списку первоисточников — исторические строки выше не удаляются):**
+> - Трактат Бакстера **1684 г.** (*Catholick Communion Defended*, отвечавший на посмертные *Twelve Arguments* Оуэна) посвящён **экклезиологии и приходскому общению**, а не искуплению! Подлинные сотериологические тексты Бакстера в полемике с Оуэном: *Aphorismes of Justification* (1649, Appendix, EEBO-TCP `A26862`), *Rich. Baxters Confutation of a Dissertation* (1654, ответ на трактат Оуэна 1650 г.), *Catholick Theologie* (1675) & *Of the Imputation of Christ's Righteousness* (1675), *Universal Redemption* (диспутации ≤ 1657, изд. 1694, EEBO-TCP `A27064`).
+> - Точное заглавие трактата Оуэна 1650 г.: *Of the Death of Christ, the Price He Paid, and the Purchase He Made... Vindicated from the Exceptions and Objections of Mr. Baxter* (Goold *Works* X:429–479; EEBO-TCP `A90278`). *Vindiciae Evangelicae* (1655, Goold XII) направлен главным образом против социнианина Джона Биддла, а ответ Бакстеру помещён в приложении *Of the Death of Christ and of Justification* (Goold XII:591 sqq.).
 **Цель исследования:** Провести скрупулезный юридико-богословский анализ контраргументов Бакстера против Оуэна; разобрать различие между уплатой точного долга (*solutio eiusdem*) и эквивалента (*satisfactio tantundem*); показать, почему претензии Бакстера разрушают реформатское учение о благодати и как эти претензии были воспроизведены А. Прокопенко в разделе «Неверный аргумент».
 
 ---
@@ -65,6 +73,12 @@
    - У Бакстера: Христос умер за всех, но веру человек должен принести сам как условие Нового закона.
    - У Оуэна: **Христос Своей смертью КУПИЛ И ОБЕСПЕЧИЛ САМУ ВЕРУ ДЛЯ ИЗБРАННЫХ**!
    > *«Кровь Христа заслужила не просто возможность спасения при условии веры, но заслужила само устранение каменного сердца, само возрождение и сам дар веры (Евр. 9:14; Тит. 2:14; Флп. 1:29)»* (Owen, Works, Vol. 10, p. 438).
+
+> **Пометка 2026-11-15 (Волна 18, `QUOTE_RISK / PRIMARY_SOURCE_CORRECTION` к §§3.1–3.2 и §5 — исторические строки выше не удаляются):**
+> 1. **Локатор `Owen, Works, Vol. 10, p. 438`:** приведённая русская цитата является **синтетическим пересказом**, а не дословным текстом Goold X:438 (в Goold X:437–441 находится Ch. II трактата 1650 г. *Of the nature of the payment made by Christ*). Дословные формулы Оуэна о приобретении веры смертью Христа см. в *The Death of Death* (1647), Book III Ch. II (*«Christ procured salvation for us, to be bestowed conditionally, if we do believe; but faith itself, that he hath absolutely procured, without prescribing of any condition»*, CCEL) и *Of the Death of Christ* (1650, TCP `A90278`, p. 72: *«Faith it self being of the number of those things so procured»*; см. также `05_` §3, раунд 16).
+> 2. **Калибровка оценок Бакстера (§§3.1–3.2, §4, §5):**
+>    - Разграничение денежного долга (*solutio pecuniaria*, освобождающего *ipso facto*) и уголовного/заветного удовлетворения, требующего заветного условия применения во времени, поддерживали **внутри самой реформатской ортодоксии** Ф. Турретин (*Inst.* XIV Q. 10 §7) и Ч. Ходж (*ST* II:471–475, 557–558; см. `05_` §3, раунды 16–17; `ИСКУПЛЕНИЕ/fathers/17_` §5, `fathers/18_` §4).
+>    - Сам Бакстер, в отличие от арминиан, удерживал **безусловное особое избрание** к вере (*Universal Redemption*, 1694; *Aphorismes*, 1649, Appendix p. 313 — `fathers/19_` §5, `F-45`), поэтому ярлык «прикрытый арминианизм» (§4) неточен по исповеданию Бакстера. При этом критика его **неономианизма** (*lex remedians* + *Evangelical Righteousness* верующего как подчинённое основание оправдания, *Aphorismes* Theses VII, XIV, XXXVI) действительно фиксирует его коренной разрыв с реформатским *sola fide* и самим Амиро (`fathers/19_` §5).
 
 ### 3.2. Сокрушение «Нового Закона Благодати» (Разоблачение неономианизма)
 Оуэн вскрыл, что схема Бакстера **разрушает Реформацию и возвращает Церковь в Римский католицизм**:
