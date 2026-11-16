@@ -475,6 +475,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-CUL-TS-NS282-88-EX17-16-ABSENT-ORIGINAL-IIIF": "CUL_TS_NS282_88_ORIGINAL_ASHKAR_SCROLL_EX17_16_NOT_SURVIVING_CATALOG_EX17_6_9_AND_18_4_14",
     "SRC-BL-HARLEY5683-F1R-EX17-16-OPENN-PHOTO": "LATE_THIRTEENTH_CENTURY_INDEPENDENT_PHYSICAL_CODEx_ORIGINAL_PHOTO_EX17_16_LOCUS_ONLY_UNCOLLATED",
     "SRC-WEVERS-NOTES-GREEK-EXODUS-1990-P273274-EX17": "WEVERS_1990_AUTHOR_EX17_15_16_LXX_TRANSLATOR_REINTERPRETATION_1990_NOT_ORIGINAL_GOTTINGEN_1991_APPARATUS",
+    "SRC-COOLEY-HTR1122-2019-P202206-GEN22-EX17": "COOLEY_2019_ORIGINAL_PUBLISHER_ARTICLE_ONOMASTIC_HOMOIOGRAPH_GEN22_EX17_HYPOTHESIS_NOT_ANCIENT_INK",
 }
 
 
@@ -628,6 +629,41 @@ def validate_source_access(sources: dict) -> list[str]:
                     or not isinstance(audit, dict)
                     or any(audit.get(k) != v for k, v in flags.items())):
                 errors.append(f"{prefix}: Wevers 1990 OCR interpretive source falsely promoted to ancient witness or original 1991 apparatus")
+        if rid == "SRC-COOLEY-HTR1122-2019-P202206-GEN22-EX17":
+            # Printed, reviewed scholarly interpretation of ancient authorial
+            # wordplay is not independent Hebrew codex or apparatus collation.
+            c = source.get("originalCooleyArticleAudit20261116")
+            required = {
+                "sourceRole": "COOLEY_2019_ORIGINAL_PUBLISHER_ARTICLE_ONOMASTIC_HOMOIOGRAPH_GEN22_EX17_HYPOTHESIS_NOT_ANCIENT_INK",
+                "evidenceClass": "B1",
+                "accessState": "FULL_OBJECT_VERIFIED",
+                "locatorState": "EXACT_LOCATOR_VERIFIED",
+                "rightsState": "PERMISSION_REQUIRED",
+                "publicationState": "BLOCKED",
+                "criticalEditionCollated": False,
+                "year": 2019,
+            }
+            audit_flags = {
+                "originalPublisherPdfObtainedThroughWeb": True,
+                "articlePageCount": 25,
+                "originalPrintPagesVisuallyExamined": [202, 203, 204, 205, 206],
+                "independentOriginalPageScreenshotsVerified": True,
+                "articleGen22_14QalAndNiphalHomographyDiscussed": True,
+                "articleEx17_15_16KaphNunHomoiographyDiscussed": True,
+                "ancientVersionSupportsKaphToNunEmendationAccordingToAuthor": False,
+                "oathAlternativeAcknowledgedByAuthor": True,
+                "imaginedOlderSinaiAltarNamePresentedAsHypothesis": True,
+                "ancientOriginalHebrewCodexCollatedForThisClaim": False,
+                "originalGott1991ApparatusAccessed": False,
+                "originalBhsLowerApparatusAccessed": False,
+                "independentPeerReviewOfOurProjectGranted": False,
+                "journalPdfPublicReuseLicenseVerified": False,
+                "productApprovalGranted": False,
+            }
+            if (any(source.get(k) != v for k, v in required.items())
+                    or not isinstance(c, dict)
+                    or any(c.get(k) != v for k, v in audit_flags.items())):
+                errors.append(f"{prefix}: Cooley 2019 scholarly hypothesis cannot certify ancient original ink, critical apparatus or Product release")
         wave50_evidence_locks = {
             "SRC-PESACHIM117A-COMPOSITE-KESYAH-AMORAIC-EDITED-DIGITAL": {
                 "year": None,

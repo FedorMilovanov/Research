@@ -3275,5 +3275,29 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("Wevers 1990 OCR interpretive source falsely promoted" in e
                             for e in validate_source_access(altered)))
 
+    def test_cooley_2019_orig_publisher_article_not_a_hebrew_codex(self) -> None:
+        """Original scholarly print pages do not magically establish an ancient witness."""
+        self.assertEqual([], validate_source_access(self.sources))
+        sid = "SRC-COOLEY-HTR1122-2019-P202206-GEN22-EX17"
+        row = next(r for r in self.sources["records"] if r["id"] == sid)
+        self.assertEqual("BLOCKED", row["publicationState"])
+        self.assertEqual("FULL_OBJECT_VERIFIED", row["accessState"])
+        audit = row["originalCooleyArticleAudit20261116"]
+        for flag, wrong in (
+                ("ancientOriginalHebrewCodexCollatedForThisClaim", True),
+                ("originalGott1991ApparatusAccessed", True),
+                ("independentPeerReviewOfOurProjectGranted", True),
+                ("imaginedOlderSinaiAltarNamePresentedAsHypothesis", False),
+                ("ancientVersionSupportsKaphToNunEmendationAccordingToAuthor", True),
+                ("productApprovalGranted", True)):
+            with self.subTest(flag=flag):
+                m = copy.deepcopy(self.sources)
+                source = next(r for r in m["records"] if r["id"] == sid)
+                source["originalCooleyArticleAudit20261116"][flag] = wrong
+                self.assertTrue(any("Cooley 2019 scholarly hypothesis cannot certify" in e
+                                    for e in validate_source_access(m)))
+
+
+
 if __name__ == "__main__":
     unittest.main()
