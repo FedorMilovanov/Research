@@ -2477,7 +2477,8 @@ class ReshootTable91Tests(unittest.TestCase):
         self.assertEqual([], reshoot.check_table_91(self.corpus, text=self.document))
 
     def test_stale_numeric_cell_is_repaired_without_other_changes(self):
-        broken = self.ot_row.replace("| 230 |", "| 999 |", 1)
+        expected_count = self.corpus["integrityGate"]["scopeOfMeasurementRules"]["claimsPerRegistry"]["сверкаСКарточками"]["ot"]["строк"]
+        broken = self.ot_row.replace(f"| {expected_count} |", "| 999 |", 1)
         self.assertNotEqual(broken, self.ot_row)
         corrupted = self.document.replace(self.ot_row, broken, 1)
         self.assertTrue(reshoot.check_table_91(self.corpus, text=corrupted))

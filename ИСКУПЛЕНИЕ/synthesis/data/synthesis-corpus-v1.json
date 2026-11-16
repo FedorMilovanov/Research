@@ -906,14 +906,14 @@
     "разрешеноЛокаторов": 556,
     "неРазрешено": 0,
     "поКлассам": {
-      "БЕЗ МАРКЕРА": 405,
-      "УДЕРЖИВАЕТСЯ": 125,
+      "БЕЗ МАРКЕРА": 404,
+      "УДЕРЖИВАЕТСЯ": 126,
       "ОТКРЫТО": 9,
       "СЛУЖЕБНОЕ": 9,
       "ЗАКРЫТО": 8
     },
     "маркеры": {
-      "всего": 656,
+      "всего": 658,
       "различных": 83,
       "словарь": {
         "ACCESS_INTERRUPTED": "ОТКРЫТО",
@@ -1026,14 +1026,15 @@
         "DABNEY_FULL_BOOK_COLLATION_HOLD": 3,
         "DABNEY_OTHER_PAGES_HOLD": 3,
         "EDITION_UNAVAILABLE": 3,
+        "JUDAS_NAMED_REDEMPTION_QUOTE_HOLD": 3,
         "LEGACY_NO_CLASSES": 3,
         "MEYER_EDITION_HOLD": 3,
         "TEXTUAL_APPARATUS_HOLD": 3,
         "GREEK_BACKTRANSLATION_HOLD": 2,
         "GREEK_VORLAGE_AMBIGUOUS": 2,
         "HOLD": 2,
-        "JUDAS_NAMED_REDEMPTION_QUOTE_HOLD": 2,
         "MODERN_FULL_TEXT_HOLD": 2,
+        "OWEN_WCF_TIMING_HOLD": 2,
         "RESOLVED": 2,
         "RIGHTS_UNKNOWN": 2,
         "ACCESS_INTERRUPTED": 1,
@@ -1069,7 +1070,6 @@
         "OWEN_OTHER_LOCATORS_HOLD": 1,
         "OWEN_PAGE_HOLD": 1,
         "OWEN_PRINT_EDITION_HOLD": 1,
-        "OWEN_WCF_TIMING_HOLD": 1,
         "PAGE_LOCATOR_HOLD": 1,
         "PERMISSION_REQUIRED": 1,
         "PUBLICATION_ELIGIBLE": 1,
@@ -1114,7 +1114,7 @@
       "ссылокВнеОбходаЛана": 0,
       "записейВнеСтрокЛана": 0,
       "файловБезКарточкиСостояния": 15,
-      "маркеровВПрозеНеОтражённыхВКарточке": 77,
+      "маркеровВПрозеНеОтражённыхВКарточке": 78,
       "маркеровВКарточкеНеИзПрозыЛана": 18,
       "детально": {
         "01_SERIES_PLAN_AND_ARTICLE_COUNT.md": {
@@ -1371,7 +1371,7 @@
           "естьКарточка": true
         },
         "article13_double_payment_unbelief_and_acquired_faith.md": {
-          "проза": 14,
+          "проза": 15,
           "карточка": 1,
           "вПрозеНеВКарточке": [
             "AI_TRANSLATION_HOLD",
@@ -1384,6 +1384,7 @@
             "HODGE_PAGE_CHECK_HOLD",
             "MODERN_FULL_TEXT_HOLD",
             "OWEN_PRINT_EDITION_HOLD",
+            "OWEN_WCF_TIMING_HOLD",
             "PUBLICATION_HOLD",
             "QUOTE_SAFE",
             "RIGHTS_HOLD"
@@ -7461,9 +7462,11 @@
         "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/article11_bought_apostates_covenant_blood_and_weak_brother.md",
         "строка": 185,
         "срез": "Научное приложение — источниковые таблицы и редакционные HOLD (не для публикации)",
-        "класс": "БЕЗ МАРКЕРА",
-        "маркеров": 0,
-        "токены": [],
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "JUDAS_NAMED_REDEMPTION_QUOTE_HOLD"
+        ],
         "машинно": false,
         "машинноПоФайлу": true
       },
@@ -7471,7 +7474,7 @@
         "код": "СР@article11_bought_apostates_covenant_blood_and_weak_brother~2",
         "лан": "synthesis",
         "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/article11_bought_apostates_covenant_blood_and_weak_brother.md",
-        "строка": 189,
+        "строка": 191,
         "срез": "Контроль свидетельств, доступ и границы",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 1,
@@ -7486,7 +7489,7 @@
         "код": "СР@article11_bought_apostates_covenant_blood_and_weak_brother~3",
         "лан": "synthesis",
         "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/article11_bought_apostates_covenant_blood_and_weak_brother.md",
-        "строка": 209,
+        "строка": 211,
         "срез": "Приложение Б. Очередь первоисточников и неснимаемые удержания (служебное, вне читательского текста)",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 1,
@@ -7970,6 +7973,7 @@
           "HODGE_PAGE_CHECK_HOLD",
           "MODERN_FULL_TEXT_HOLD",
           "OWEN_PRINT_EDITION_HOLD",
+          "OWEN_WCF_TIMING_HOLD",
           "PUBLICATION_HOLD",
           "QUOTE_SAFE",
           "RESOLVED-BY-TEXT",
@@ -8617,9 +8621,9 @@
     ],
     "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
     "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check synthesis",
-    "measuredAt": "2026-11-16T21:28:41Z",
-    "checkedAt": "2026-11-16T21:28:41Z",
-    "предыдущийСъём": "2026-11-16T21:24:24Z"
+    "measuredAt": "2026-11-16T21:46:40Z",
+    "checkedAt": "2026-11-16T21:46:40Z",
+    "предыдущийСъём": "2026-11-16T21:28:41Z"
   },
   "seriesDevelopment20261106": {
     "status": "ACTIVE_RESEARCH",
