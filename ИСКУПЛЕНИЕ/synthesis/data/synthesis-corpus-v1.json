@@ -858,6 +858,17 @@
       "stateSource": "маркеры состояния прозы файла (машинный учёт редакторских материалов AGENT-7; сверка — claim_register --check)",
       "status": "PUBLICATION_HOLD",
       "role": "редакторский материал, не текст серии; не является главой читательской серии"
+    },
+    {
+      "id": "ED-17",
+      "file": "ИСКУПЛЕНИЕ/synthesis/editorial/17_WAVE12_STALE_STATUS_AND_SWEEP.md",
+      "topic": "Волна XII: сквозная проверка после уточнений; мёртвый LOCATOR_HOLD в таблицах тезисов (F15-04, F02-03, F02-06, F05-04); подозрение волны X опровергнуто",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (машинный учёт редакторских материалов AGENT-7; сверка — claim_register --check)",
+      "status": "PUBLICATION_HOLD",
+      "role": "редакторский материал, не текст серии; не является главой читательской серии"
     }
   ],
   "initialSessionBranch": "arena/5fe5b33f-research",
@@ -1012,24 +1023,24 @@
       "чтоСчитаетсяДоводом": "заголовок «## » в любом .md лана, включая вложенные папки (synthesis/drafts, ot/tools); тело секции — до следующего «## » или до конца файла",
       "приоритет": "УДЕРЖИВАЕТСЯ > ОТКРЫТО > ЗАКРЫТО; маркеров нет -> БЕЗ МАРКЕРА; маркер вне классификации -> ошибка съёма, а не «прочее»",
       "метод": "scripts/atonement_claim_register.py обходит прозу лана целиком (без выборки), разбирает маркеры вида `ВЕРДИКТ`, сверяет локатор побайтово (файл + номер строки + текст)",
-      "строк": 361,
-      "файлов": 40,
+      "строк": 369,
+      "файлов": 41,
       "покрытоМашинно": 0,
-      "покрытоПоФайлу": 361,
-      "файловПрозы": 40,
+      "покрытоПоФайлу": 369,
+      "файловПрозы": 41,
       "файловБезКарточки": 0,
-      "разрешеноЛокаторов": 361,
+      "разрешеноЛокаторов": 369,
       "неРазрешено": 0,
       "поКлассам": {
-          "БЕЗ МАРКЕРА": 208,
-          "УДЕРЖИВАЕТСЯ": 119,
+          "БЕЗ МАРКЕРА": 210,
+          "УДЕРЖИВАЕТСЯ": 125,
           "ОТКРЫТО": 14,
           "ЗАКРЫТО": 11,
           "СЛУЖЕБНОЕ": 9
       },
       "маркеры": {
-          "всего": 554,
-          "различных": 52,
+          "всего": 577,
+          "различных": 57,
           "словарь": {
               "ACCESS_INTERRUPTED": "ОТКРЫТО",
               "AGENT_RULES": "СЛУЖЕБНОЕ",
@@ -1045,6 +1056,8 @@
               "CONTEXT_HOLD": "УДЕРЖИВАЕТСЯ",
               "CORPUS-CONFIRMED / NOT RE-READ": "ЗАКРЫТО",
               "DATE_HOLD": "УДЕРЖИВАЕТСЯ",
+              "DOCUMENT_PARTIAL_COLLATION": "УДЕРЖИВАЕТСЯ",
+              "DOCUMENT_PARTIAL_COLLATION / LOCATOR_HOLD": "УДЕРЖИВАЕТСЯ",
               "DRAFT / PUBLICATION_HOLD": "УДЕРЖИВАЕТСЯ",
               "EDITION_HOLD": "УДЕРЖИВАЕТСЯ",
               "EDITION_UNAVAILABLE": "УДЕРЖИВАЕТСЯ",
@@ -1062,11 +1075,13 @@
               "LOCATOR_PARTIAL": "УДЕРЖИВАЕТСЯ",
               "LOCATOR_SINGLE_ATTESTATION": "УДЕРЖИВАЕТСЯ",
               "MEYER_EDITION_HOLD": "УДЕРЖИВАЕТСЯ",
+              "MODEL_OPEN": "ОТКРЫТО",
               "NICNT_FULL_TEXT_HOLD": "УДЕРЖИВАЕТСЯ",
               "OPEN": "ОТКРЫТО",
               "OPEN-LAYER": "ОТКРЫТО",
               "OWEN_WCF_TIMING_HOLD": "УДЕРЖИВАЕТСЯ",
               "OWN_TASK_DONE": "СЛУЖЕБНОЕ",
+              "PAGE_LOCATOR_HOLD": "УДЕРЖИВАЕТСЯ",
               "PERMISSION_REQUIRED": "УДЕРЖИВАЕТСЯ",
               "PRECEDENT_OF_READING": "СЛУЖЕБНОЕ",
               "PRECEDENT_OF_READING / ORIGINAL_TEXT_HOLD": "УДЕРЖИВАЕТСЯ",
@@ -1082,15 +1097,16 @@
               "SCOPED_OUT": "ЗАКРЫТО",
               "STORAGE_ONLY": "СЛУЖЕБНОЕ",
               "TEXTUAL_APPARATUS_HOLD": "УДЕРЖИВАЕТСЯ",
-              "TEXT_CRIT_NOTE": "СЛУЖЕБНОЕ"
+              "TEXT_CRIT_NOTE": "СЛУЖЕБНОЕ",
+              "TEXT_LOCATED": "ЗАКРЫТО"
           },
           "частоты": {
-              "EVIDENCE_HOLD": 111,
+              "EVIDENCE_HOLD": 113,
               "PUBLICATION_HOLD": 72,
               "RIGHTS_HOLD": 57,
+              "LOCATOR_HOLD": 48,
               "RESOLVED-BY-TEXT": 41,
               "ATTRIBUTION_HOLD": 40,
-              "LOCATOR_HOLD": 37,
               "EDITION_HOLD": 35,
               "OPEN": 22,
               "LOCATOR_PARTIAL": 13,
@@ -1101,6 +1117,7 @@
               "MEYER_EDITION_HOLD": 7,
               "EXTENT_OPEN": 6,
               "TEXTUAL_APPARATUS_HOLD": 6,
+              "LEXICAL_SCOPE_HOLD": 5,
               "NICNT_FULL_TEXT_HOLD": 5,
               "AI_TRANSLATION_HOLD": 4,
               "CONTEXT_HOLD": 4,
@@ -1110,9 +1127,9 @@
               "HOLD": 3,
               "LEGACY_NO_CLASSES": 3,
               "PRECEDENT_OF_READING / ORIGINAL_TEXT_HOLD": 3,
+              "TEXT_LOCATED": 3,
               "AGENT_RULES": 2,
               "AUTHOR_FULL_WORK_HOLD": 2,
-              "LEXICAL_SCOPE_HOLD": 2,
               "OWEN_WCF_TIMING_HOLD": 2,
               "RESOLVED": 2,
               "REVIEW_DEFERRED": 2,
@@ -1122,6 +1139,8 @@
               "BAXTER_SCOPED_PRINT_VERIFIED": 1,
               "CONFESSIONAL_REVIEW_HOLD": 1,
               "DATE_HOLD": 1,
+              "DOCUMENT_PARTIAL_COLLATION": 1,
+              "DOCUMENT_PARTIAL_COLLATION / LOCATOR_HOLD": 1,
               "DRAFT / PUBLICATION_HOLD": 1,
               "EXACT_LOCATOR_VERIFIED": 1,
               "FORBIDDEN": 1,
@@ -1129,7 +1148,9 @@
               "FULL_OBJECT_VERIFIED": 1,
               "JUDAS_NAMED_REDEMPTION_QUOTE_HOLD": 1,
               "LOCATOR_SINGLE_ATTESTATION": 1,
+              "MODEL_OPEN": 1,
               "OWN_TASK_DONE": 1,
+              "PAGE_LOCATOR_HOLD": 1,
               "PERMISSION_REQUIRED": 1,
               "PRECEDENT_OF_READING": 1,
               "PUBLICATION_ELIGIBLE": 1,
@@ -1164,15 +1185,15 @@
           ]
       },
       "сверкаСКарточками": {
-          "файловПрозы": 40,
-          "файловСКарточкой": 40,
+          "файловПрозы": 41,
+          "файловСКарточкой": 41,
           "файловБезКарточки": 0,
           "ссылокНаНесуществующийФайл": 0,
           "ссылокВнеОбходаЛана": 0,
           "записейВнеСтрокЛана": 0,
           "файловБезКарточкиСостояния": 0,
-          "маркеровВПрозеНеОтражённыхВКарточке": 17,
-          "маркеровВКарточкеНеИзПрозыЛана": 19,
+          "маркеровВПрозеНеОтражённыхВКарточке": 24,
+          "маркеровВКарточкеНеИзПрозыЛана": 18,
           "детально": {
               "01_what-is-atonement.md": {
                   "проза": 7,
@@ -1305,13 +1326,12 @@
                   "карточка": 5,
                   "вПрозеНеВКарточке": [],
                   "вКарточкеНеИзПрозы": [
-                      "DOCUMENT_PARTIAL_COLLATION / LOCATOR_HOLD",
                       "EDITORIAL / PUBLICATION_HOLD"
                   ],
                   "естьКарточка": true
               },
               "02_PATCH_REGISTER.md": {
-                  "проза": 15,
+                  "проза": 16,
                   "карточка": 8,
                   "вПрозеНеВКарточке": [
                       "LOCATOR_HOLD",
@@ -1339,6 +1359,15 @@
                   "вКарточкеНеИзПрозы": [
                       "EDITORIAL / PUBLICATION_HOLD"
                   ],
+                  "естьКарточка": true
+              },
+              "06_SUBMISSION_REPORT.md": {
+                  "проза": 7,
+                  "карточка": 2,
+                  "вПрозеНеВКарточке": [
+                      "LOCATOR_HOLD"
+                  ],
+                  "вКарточкеНеИзПрозы": [],
                   "естьКарточка": true
               },
               "09_WAVE4_CHAPTERS_7_9.md": {
@@ -1415,6 +1444,20 @@
                   "вПрозеНеВКарточке": [
                       "EVIDENCE_HOLD",
                       "LOCATOR_HOLD"
+                  ],
+                  "вКарточкеНеИзПрозы": [],
+                  "естьКарточка": true
+              },
+              "17_WAVE12_STALE_STATUS_AND_SWEEP.md": {
+                  "проза": 8,
+                  "карточка": 1,
+                  "вПрозеНеВКарточке": [
+                      "DOCUMENT_PARTIAL_COLLATION",
+                      "DOCUMENT_PARTIAL_COLLATION / LOCATOR_HOLD",
+                      "EVIDENCE_HOLD",
+                      "LEXICAL_SCOPE_HOLD",
+                      "LOCATOR_HOLD",
+                      "PAGE_LOCATOR_HOLD"
                   ],
                   "вКарточкеНеИзПрозы": [],
                   "естьКарточка": true
@@ -5101,6 +5144,22 @@
               "машинноПоФайлу": true
           },
           {
+              "код": "15@02_PATCH_REGISTER",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/02_PATCH_REGISTER.md",
+              "строка": 433,
+              "срез": "15. Волна XII — сквозная проверка и мёртвый статус: P94–P97",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 2,
+              "токены": [
+                  "LEXICAL_SCOPE_HOLD",
+                  "LOCATOR_HOLD",
+                  "TEXT_LOCATED"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
               "код": "1@03_RESEARCH_APPENDIX_STRONGER_COUNTERARGUMENTS",
               "лан": "synthesis",
               "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/03_RESEARCH_APPENDIX_STRONGER_COUNTERARGUMENTS.md",
@@ -5378,9 +5437,11 @@
               "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/06_SUBMISSION_REPORT.md",
               "строка": 16,
               "срез": "2. Артефакты",
-              "класс": "БЕЗ МАРКЕРА",
-              "маркеров": 0,
-              "токены": [],
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "LOCATOR_HOLD"
+              ],
               "машинно": false,
               "машинноПоФайлу": true
           },
@@ -5388,7 +5449,7 @@
               "код": "3@06_SUBMISSION_REPORT",
               "лан": "synthesis",
               "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/06_SUBMISSION_REPORT.md",
-              "строка": 43,
+              "строка": 44,
               "срез": "3. Что изменено в тексте глав (содержательно, не косметика)",
               "класс": "ОТКРЫТО",
               "маркеров": 1,
@@ -5402,7 +5463,7 @@
               "код": "4@06_SUBMISSION_REPORT",
               "лан": "synthesis",
               "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/06_SUBMISSION_REPORT.md",
-              "строка": 59,
+              "строка": 60,
               "срез": "4. Найденные дефекты (четыре подтверждённых, рисков не осталось)",
               "класс": "БЕЗ МАРКЕРА",
               "маркеров": 0,
@@ -5414,7 +5475,7 @@
               "код": "5@06_SUBMISSION_REPORT",
               "лан": "synthesis",
               "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/06_SUBMISSION_REPORT.md",
-              "строка": 70,
+              "строка": 71,
               "срез": "5. Проверка, что ничего не сломано",
               "класс": "БЕЗ МАРКЕРА",
               "маркеров": 0,
@@ -5426,7 +5487,7 @@
               "код": "6@06_SUBMISSION_REPORT",
               "лан": "synthesis",
               "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/06_SUBMISSION_REPORT.md",
-              "строка": 91,
+              "строка": 92,
               "срез": "6. Что я сознательно не сделал",
               "класс": "УДЕРЖИВАЕТСЯ",
               "маркеров": 1,
@@ -5440,7 +5501,7 @@
               "код": "7@06_SUBMISSION_REPORT",
               "лан": "synthesis",
               "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/06_SUBMISSION_REPORT.md",
-              "строка": 102,
+              "строка": 103,
               "срез": "7. Оставшиеся ограничения — честный список",
               "класс": "УДЕРЖИВАЕТСЯ",
               "маркеров": 3,
@@ -5456,7 +5517,7 @@
               "код": "8@06_SUBMISSION_REPORT",
               "лан": "synthesis",
               "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/06_SUBMISSION_REPORT.md",
-              "строка": 119,
+              "строка": 120,
               "срез": "8. Как принять работу",
               "класс": "УДЕРЖИВАЕТСЯ",
               "маркеров": 2,
@@ -6220,12 +6281,112 @@
               ],
               "машинно": false,
               "машинноПоФайлу": true
+          },
+          {
+              "код": "1@17_WAVE12_STALE_STATUS_AND_SWEEP",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/17_WAVE12_STALE_STATUS_AND_SWEEP.md",
+              "строка": 8,
+              "срез": "1. Зачем эта волна",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "2@17_WAVE12_STALE_STATUS_AND_SWEEP",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/17_WAVE12_STALE_STATUS_AND_SWEEP.md",
+              "строка": 16,
+              "срез": "2. Проход по утверждениям — чисто",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "3@17_WAVE12_STALE_STATUS_AND_SWEEP",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/17_WAVE12_STALE_STATUS_AND_SWEEP.md",
+              "строка": 24,
+              "срез": "3. Мёртвый статус: `LOCATOR_HOLD` в таблицах тезисов",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 2,
+              "токены": [
+                  "DOCUMENT_PARTIAL_COLLATION",
+                  "DOCUMENT_PARTIAL_COLLATION / LOCATOR_HOLD",
+                  "LEXICAL_SCOPE_HOLD",
+                  "LOCATOR_HOLD",
+                  "TEXT_LOCATED"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "4@17_WAVE12_STALE_STATUS_AND_SWEEP",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/17_WAVE12_STALE_STATUS_AND_SWEEP.md",
+              "строка": 41,
+              "срез": "4. Что я НЕ тронул — и почему это правильно",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 3,
+              "токены": [
+                  "EVIDENCE_HOLD",
+                  "LOCATOR_HOLD",
+                  "MODEL_OPEN",
+                  "PAGE_LOCATOR_HOLD",
+                  "TEXT_LOCATED"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "5@17_WAVE12_STALE_STATUS_AND_SWEEP",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/17_WAVE12_STALE_STATUS_AND_SWEEP.md",
+              "строка": 53,
+              "срез": "5. Проверено собственное подозрение волны X — и опровергнуто",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "6@17_WAVE12_STALE_STATUS_AND_SWEEP",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/17_WAVE12_STALE_STATUS_AND_SWEEP.md",
+              "строка": 65,
+              "срез": "6. Гейты",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "LOCATOR_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "7@17_WAVE12_STALE_STATUS_AND_SWEEP",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/editorial/17_WAVE12_STALE_STATUS_AND_SWEEP.md",
+              "строка": 77,
+              "срез": "7. Что осталось",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EVIDENCE_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
           }
       ],
       "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
       "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check synthesis",
-      "measuredAt": "2026-11-16T09:20:15Z",
-      "checkedAt": "2026-11-16T09:20:15Z",
-      "предыдущийСъём": "2026-11-16T09:19:18Z"
+      "measuredAt": "2026-11-16T10:57:58Z",
+      "checkedAt": "2026-11-16T10:57:58Z",
+      "предыдущийСъём": "2026-11-16T10:57:21Z"
   }
 }
