@@ -299,7 +299,7 @@ def tree_counts(root=None) -> dict:
 
     lane_glob = str(rel(ROOT / "docs" / "research" / "atonement")) + "/*.md"
     docs = stat(sorted(glob.glob(lane_glob)))
-    n_num = len([x for x in glob.glob(lane_glob) if re.search(r"/\d\d_", x)])
+    n_num = len([x for x in glob.glob(lane_glob) if re.search(r"[/\\]\d\d_", x)])
     rootmd = stat(sorted(glob.glob(str(rel(ROOT / "ИСКУПЛЕНИЕ")) + "/*.md")))
     b17 = rel(ROOT / "ИСКУПЛЕНИЕ" / "17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md").stat().st_size
     doc = rel(DOC)
@@ -2146,8 +2146,8 @@ def main() -> int:
         corp = apply_corpus(corp, n)
         # писать надо оба файла на каждом витке: байты корпуса входят в строку документа, а байты
         # документа — в реестр; пока хоть один не записан, следующий виток считает по чужим байтам
-        CORPUS.write_text(json.dumps(corp, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-        DOC.write_text(apply_doc(corp, n), encoding="utf-8")
+        CORPUS.write_text(json.dumps(corp, ensure_ascii=False, indent=1) + "\n", encoding="utf-8", newline="\n")
+        DOC.write_text(apply_doc(corp, n), encoding="utf-8", newline="\n")
         corp = json.loads(CORPUS.read_text(encoding="utf-8"))
         idx_file = json.loads(INDEX.read_text(encoding="utf-8"))
         new = registry_numbers(corp, idx_file)
