@@ -5,7 +5,7 @@
   "authorityRole": "corpus-specific-editorial-proposal-only",
   "stage": "BLUEPRINT_WITH_OPEN_WORK_NOT_AUTHORING",
   "baselineRegistry": "data/charnock-biographical-anchors-v1.json",
-  "baselineReceipt": "data/charnock-handoff-receipt-v6.json",
+  "baselineReceipt": "data/charnock-handoff-receipt-v7.json",
   "custodyBoundary": "Wave40receipt describes its immutable source packet,not the revised00/16. Current editorial revision is not yet transferred/independently received.",
   "expectedChangedPacketMembers": [],
   "evidenceClass": "C",
@@ -227,7 +227,7 @@
         "Иоанна 4: переход от сцены беседы к учению о поклонении; TXT-02, A32723 p110.",
         "Иезекииля 9:2: перечисление альтернатив с сохранением uncertain; TXT-03, A32724 p64.",
         "Псалом 87: признание неизвестных автора и времени перед церковно-пророческим толкованием; TXT-18, A32724 p20.",
-        "1Тим 2:15: разбор отвергаемого толкования; нельзя принять цитату оппонента за вывод Чарнока; TXT-20, A32724 p77.",
+        "1Тим2:15: разбор отвергаемого толкования; нельзя принять цитату оппонента за вывод Чарнока; TXT-20, A32724 p77.",
         "Сравнение пяти операций: язык, канонические связи, типология, полемика и границы уверенности."
       ],
       "primaryRefs": [
@@ -479,7 +479,7 @@
         "Providence: совет рассматривать совокупность событий, а не вырывать одно; TXT-17, pp366–367.",
         "Прощение: лексическое построение Пс32; TXT-04, Supplement p101. Основной разбор здесь, в III только ссылка.",
         "Enmity: сотворённая и повреждённая природа; BIB-07, p8.",
-        "Продолжение по1Тим 1:15: редактор различает утраченную и сохранившуюся части; BIB-06, ненумерованное предисловие.",
+        "Продолжение по1Тим1:15: редактор различает утраченную и сохранившуюся части; BIB-06, ненумерованное предисловие.",
         "Памятная проповедь Пятого ноября: авторская позиционная речь и типология; TXT-19, p42.",
         "Что осталось вне обзора: полный корпус возрождения, таинств, Nichol и неполученные объекты."
       ],
@@ -1577,7 +1577,7 @@
           "77"
         ]
       },
-      "boundary": "1Тим 2:15: Чарнок отвергает зависимость спасения матери от веры детей; отвергаемую позицию нельзя цитировать как его утверждение",
+      "boundary": "1Тим2:15: Чарнок отвергает зависимость спасения матери от веры детей; отвергаемую позицию нельзя цитировать как его утверждение",
       "evidenceClass": "A1",
       "accessState": "FULL_OBJECT_VERIFIED",
       "locatorState": "EXACT_LOCATOR_VERIFIED",
@@ -2007,7 +2007,7 @@
     {
       "id": "STUDY-TXT-20",
       "ref": "TXT-20",
-      "label": "1Тим 2:15: чей это вывод?",
+      "label": "1Тим2:15: чей это вывод?",
       "operation": "REJECTED_READING_AND_GRAMMAR",
       "positionRole": "REJECTED_POSITION",
       "question": "К кому относится переход от единственного к множественному числу и зависит ли спасение матери от веры детей?",
@@ -2695,7 +2695,7 @@
       "legacyIds": [
         "CHR-LING-02"
       ],
-      "dossierSha256": "525aa62663ef0ece83507191ec8f07a0119881db898d46267927ad153280ab68",
+      "dossierSha256": "b2e6344e2d49595ec7ceb5bef123f31b7423a4ba309ef1b14532f7a23051d374",
       "reviewState": "DERIVED_PAIR_PACKET_COUNTERPART_RECHECK_OPEN",
       "charnockSide": {
         "byteVerifiedContext": {
@@ -2976,7 +2976,7 @@
       "legacyIds": [
         "CHR-RAY-02"
       ],
-      "dossierSha256": "525aa62663ef0ece83507191ec8f07a0119881db898d46267927ad153280ab68",
+      "dossierSha256": "b2e6344e2d49595ec7ceb5bef123f31b7423a4ba309ef1b14532f7a23051d374",
       "reviewState": "DERIVED_PAIR_PACKET_COUNTERPART_RECHECK_OPEN",
       "charnockSide": {
         "byteVerifiedContext": {
@@ -3231,7 +3231,7 @@
       "legacyIds": [
         "CHR-DAIL-TITE-729"
       ],
-      "dossierSha256": "525aa62663ef0ece83507191ec8f07a0119881db898d46267927ad153280ab68",
+      "dossierSha256": "b2e6344e2d49595ec7ceb5bef123f31b7423a4ba309ef1b14532f7a23051d374",
       "reviewState": "DERIVED_PAIR_PACKET_COUNTERPART_RECHECK_OPEN",
       "charnockSide": {
         "byteVerifiedContext": {
@@ -3933,7 +3933,7 @@
       },
       {
         "ref": "BIB-06",
-        "question": "Что,по словамредактора,сохранилось из размышлений по1Тим 1:15?",
+        "question": "Что,по словамредактора,сохранилось из размышлений по1Тим1:15?",
         "argumentSteps": [
           "Предисловие подписаноEdw.Veel; упоминаются разрозненные бумаги,работаAshton и ограниченная сверка.",
           "Редактор называет найденный текст продолжением и второй доктриной; образ twins относится к двум частям,одна из которых,по его опасению,утрачена.",
@@ -4077,7 +4077,7 @@
       },
       {
         "id": "OTHER-MERCY",
-        "title": "Продолжение по1Тим 1:15",
+        "title": "Продолжение по1Тим1:15",
         "refs": [
           "BIB-06"
         ],
@@ -9253,7 +9253,7 @@
         "probeRole": "REJECTED_POSITION",
         "paragraphRole": "MIXED_REJECTED_READING_AND_AUTHORIAL_REPLY",
         "translationState": "NOT_PREPARED",
-        "question": "К кому Чарнок относит they в 1Тим 2:15 и какую причинность отвергает?",
+        "question": "К кому Чарнок относит they в 1Тим2:15 и какую причинность отвергает?",
         "rejectedReading": "Спасение матери зависит от веры и благодати её детей.",
         "authorAffirmation": "They автор относит к женщинам: Woman прочитано собирательно. В предшествующем абзаце чадородие обозначает состояние, а не причину спасения.",
         "argumentSteps": [

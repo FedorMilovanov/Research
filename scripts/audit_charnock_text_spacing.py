@@ -52,6 +52,7 @@ SCRIPTURE = {
     "Пс", "Ин", "Рим", "Кор", "Лук", "Матф", "Мк", "Евр", "Откр", "Ис", "Иез",
     "Дан", "Ос", "Мих", "Авв", "Зах", "Мал", "Еф", "Флп", "Кол", "Тит", "Флм",
     "Иак", "Пет", "Иуд", "Суд", "Руф", "Езд", "Неем", "Есф", "Иов", "Притч",
+    "Тим", "Флм", "Фес", "Гал", "Фил", "Еф",
     "Еккл", "Песн", "Плач", "Агг", "Соф", "Иоил", "Ам", "Авд", "Наум", "Соф",
 }
 
@@ -126,6 +127,20 @@ DIGIT_THEN_ABBREV = re.compile(
 DIGIT_THEN_SECTION = re.compile(r"(?<![A-Za-zА-Яа-яЁё0-9§])(\d{1,3})(§+)")
 
 
+def word_digit_is_reference(word: str) -> bool:
+    """True when `word`+number is a reference form, not prose that lost a space.
+
+    The detector and the repairer MUST share this: a repairer that inserts a
+    space the detector never flagged quietly rewrites `1Тим2:15` into
+    `1Тим 2:15`, and the post-repair scan cannot see it because it agrees with
+    the detector by construction.
+    """
+    # The whitelist is the whole guard. A length heuristic ("short and
+    # capitalised") looks tempting, but it also spares real prose defects such as
+    # `Год1628`, `Том03`, `Все6` — sentence-initial words that lost their space.
+    return word in SCRIPTURE or word.lower() in REF_WORDS
+
+
 def _context(text: str, start: int, end: int, pad: int = 32) -> str:
     left = max(0, start - pad)
     right = min(len(text), end + pad)
@@ -143,13 +158,8 @@ def findings(text: str) -> list[dict]:
         ("dash_then_token", DASH_THEN_TOKEN),
     ):
         for match in pattern.finditer(text):
-            if kind == "word_then_digit":
-                word = match.group(1)
-                if word in SCRIPTURE or word.lower() in REF_WORDS:
-                    continue
-                # `Пс32` style: a capitalised short token is a source reference
-                if len(word) <= 4 and word[0].isupper():
-                    continue
+            if kind == "word_then_digit" and word_digit_is_reference(match.group(1)):
+                continue
             out.append(
                 {
                     "kind": kind,
@@ -170,7 +180,7 @@ def propose(text: str) -> tuple[str, list[tuple[str, str]]]:
 
     def word_digit(match: re.Match) -> str:
         word = match.group(1)
-        if word in SCRIPTURE or word.lower() in REF_WORDS:
+        if word_digit_is_reference(word):
             return match.group(0)
         changes.append((match.group(0), f"{word} {match.group(2)}"))
         return f"{word} {match.group(2)}"

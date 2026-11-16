@@ -986,7 +986,7 @@
       "teiPages": [
         "77"
       ],
-      "claimBoundary": "1Тим 2:15: Чарнок отвергает зависимость спасения матери от веры детей; отвергаемую позицию нельзя цитировать как его утверждение",
+      "claimBoundary": "1Тим2:15: Чарнок отвергает зависимость спасения матери от веры детей; отвергаемую позицию нельзя цитировать как его утверждение",
       "seriesPart": "VII",
       "evidenceClass": "A1",
       "accessState": "FULL_OBJECT_VERIFIED",
@@ -4510,7 +4510,7 @@
             "refs": [
               "BIB-06"
             ],
-            "safeUse": "Редактор различает утраченный первый разбор и сохранившееся продолжение1Тим 1:15; история передачи не заменяется общим названием книги."
+            "safeUse": "Редактор различает утраченный первый разбор и сохранившееся продолжение1Тим1:15; история передачи не заменяется общим названием книги."
           }
         ],
         "exclusions": [
@@ -5436,7 +5436,7 @@
     "reviewDate": "2026-10-26",
     "authorityRole": "corpus-specific-supporting-only",
     "closureMode": "RECEIPT_GATED_BOUNDED_RESEARCH",
-    "receiptPath": "data/charnock-handoff-receipt-v6.json",
+    "receiptPath": "data/charnock-handoff-receipt-v7.json",
     "architectureDocuments": 10,
     "dossierOwners": [
       {

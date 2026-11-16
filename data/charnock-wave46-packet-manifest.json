@@ -1,0 +1,220 @@
+{
+  "contractId": "CHARNOCK-HANDOFF-V1",
+  "counts": {
+    "biographicalDecisions": 40,
+    "dossierOwners": 18,
+    "illustrations": 1,
+    "manualAnchors": 28,
+    "plannedDocuments": 10,
+    "receptionCases": 5,
+    "researchOnlyQuotes": 7,
+    "selectionIds": 40,
+    "selectionSlots": 44,
+    "tcpAnchors": 79,
+    "textCandidates": 16,
+    "xmlObjects": 11
+  },
+  "externalAtlasOwnerTargets": [
+    "apostasy/README.md",
+    "БИОГРАФИИ/Джон Гилл/00_README_AND_NAVIGATION.md",
+    "БИОГРАФИИ/Джон Гилл/53_SPURGEON_AND_GILL_PRIMARY_RECEPTION.md",
+    "СЕРИЯ СЕРДЦЕ/00_README_AND_NAVIGATION.md"
+  ],
+  "externalOwnerScope": "LINK_ONLY_IN_PACKET;file targets checked in full Research checkout;not mirrored,not deleted,not independently reverified as a whole.",
+  "externalOwnerTargets": [
+    "БИОГРАФИИ/00_README_AND_NAVIGATION.md",
+    "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md"
+  ],
+  "files": {
+    "AGENT_RULES.md": {
+      "bytes": 9892,
+      "sha256": "7e4b4685178838b2b5d68e3091ee733f8a04fb1921aa4317f523bd3892bc22e4"
+    },
+    "data/artifact-custody-policy-v2.json": {
+      "bytes": 1343,
+      "sha256": "94ba208a3d761b2fb093dab58e6e535b33f07202014311c558a9045b5afa5af7"
+    },
+    "data/biographies-shared-atlas-v1.json": {
+      "bytes": 10743,
+      "sha256": "b5c1c9d669c1352c1f49d117d2fb023a5845a776c66615b032309e762c00d765"
+    },
+    "data/charnock-biographical-anchors-v1.json": {
+      "bytes": 263112,
+      "sha256": "c2a2013590617141cdb298b83f1a4b172f30f850930471d261e06e5fc183f61e"
+    },
+    "data/charnock-reception-extracts-v1.json": {
+      "bytes": 1978,
+      "sha256": "60a8aeced1cf0be563389b8a49cd2f0c8854dfecb9a28a512934b81ee26aad36"
+    },
+    "data/repository-evidence-policy-v2.json": {
+      "bytes": 1889,
+      "sha256": "5746d1ebebda21e5af487c1f2a8268127b4376c840721c0daf48e13423c1ca4d"
+    },
+    "scripts/audit_charnock_biographical_anchors.py": {
+      "bytes": 24295,
+      "sha256": "dee5d6b0abe74c2e8e0a9efc07fd0fa55d157d54f1448e8ab276d1d5b920b486"
+    },
+    "scripts/audit_charnock_cudworth_refs.py": {
+      "bytes": 2644,
+      "sha256": "985c0466f5007eda9603b4f48c378c5dd3c1d86125826377af721bf6d5e340f4"
+    },
+    "scripts/audit_charnock_handoff.py": {
+      "bytes": 9633,
+      "sha256": "3c15616c02703c36502082bf415f2f84b711afd3a5288b99493df819a02576ca"
+    },
+    "scripts/audit_charnock_identity_refs.py": {
+      "bytes": 4826,
+      "sha256": "92790a16735f92e9123374edd03f67e71d25d8156f2275032844cc122a32405c"
+    },
+    "scripts/build_biographies_shared_atlas.py": {
+      "bytes": 12562,
+      "sha256": "b8f7aec2e765735931a43906b21e793216565895016fdd744cb8d4aac6419999"
+    },
+    "scripts/test_audit_charnock_biographical_anchors.py": {
+      "bytes": 15908,
+      "sha256": "1bc618657db26593481b22ad860b5b3cf73d4f2a3e2c6fbf39067cebd68e4d41"
+    },
+    "scripts/test_audit_charnock_handoff.py": {
+      "bytes": 5832,
+      "sha256": "7a2b051a145584a327808acd29ef03e0ebd32131ec42973c6ffd56338d3d1765"
+    },
+    "scripts/test_audit_charnock_identity_refs.py": {
+      "bytes": 6926,
+      "sha256": "42d1ad6073ff47f1f96a761340d0ba783572a9adeb51a2d38514ae7e41799d4e"
+    },
+    "scripts/test_build_biographies_shared_atlas.py": {
+      "bytes": 3463,
+      "sha256": "b75df53b51be9c296141d0fffabd815a0497189bf1730c5adb983f0b984520eb"
+    },
+    "xml/A25478.xml": {
+      "bytes": 3485491,
+      "sha256": "dd3588d681fe1ff35f067625504d275f31764b668476efbdb3eadfd0655f1cee"
+    },
+    "xml/A32722.xml": {
+      "bytes": 54754,
+      "sha256": "b25bad732f769d06e49315e201b2ce6004fa5a5d6ffb360c8a435b090fcb11c1"
+    },
+    "xml/A32723.xml": {
+      "bytes": 4622240,
+      "sha256": "d6205c4062867acf7f01c963ca06395ed07bb4f00774a071fcc8f903d22e6376"
+    },
+    "xml/A32724.xml": {
+      "bytes": 1146488,
+      "sha256": "efaf653b7c9d058927dc546382d3a9771fbffdc6e15b50d08a7941bd0aafa007"
+    },
+    "xml/A32726.xml": {
+      "bytes": 603576,
+      "sha256": "1268a63fa8eebeac66291887e30d655df8cc3a2d1c7a9508c3dba7ceafc1a497"
+    },
+    "xml/A41722.xml": {
+      "bytes": 76048,
+      "sha256": "ed2038ae64d1e5bb05f90eb5fdf10d6b67c3023b83903cdbe55204f4afc7b5a7"
+    },
+    "xml/A46911.xml": {
+      "bytes": 163974,
+      "sha256": "e2bea34fb919b90d21c076895c0cb09c4630505f020f3608f72ddf72d3f5b64b"
+    },
+    "xml/A71277.xml": {
+      "bytes": 6035109,
+      "sha256": "beaa62b9b406cbc3bcb589143266da53f714ccfb344408e38c3f953f0c4881d2"
+    },
+    "xml/A79420.xml": {
+      "bytes": 598792,
+      "sha256": "5f07206177dcffc80dde89ec85d0df9394acc6c6ddb8a8c7e319f5285b6ea5ac"
+    },
+    "xml/B02133.xml": {
+      "bytes": 17702,
+      "sha256": "505f653df483ce85f615b02e67dd454e7963b68fd16e2c008a724e480def1748"
+    },
+    "xml/B20167.xml": {
+      "bytes": 538534,
+      "sha256": "4708c9c4b5e3036c4ed477852b5b1b4372d5a27aa294c930000df19a5073508c"
+    },
+    "БИОГРАФИИ/atlas/biographies-shared.svg": {
+      "bytes": 16183,
+      "sha256": "fbfd61837ebf852407506281e4a926357ebda436e074c3e03b247beab62ef45d"
+    },
+    "БИОГРАФИИ/atlas/index.html": {
+      "bytes": 34214,
+      "sha256": "861aab0eca008b69a82e0d2ffdc9164bbcac972bdee1d4e0d04874e635e35c94"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/00_README_AND_NAVIGATION.md": {
+      "bytes": 141919,
+      "sha256": "6ffb0d5811c9ed72ea34adff81b93e2a61e33972b404569be48019ca866a8cfd"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/01_BIOGRAPHICAL_WITNESSES_AND_EVIDENCE_HIERARCHY.md": {
+      "bytes": 78599,
+      "sha256": "f72505380e0aa7516bea57ca4e786c36f7fe609a8a8f7bebf6b4b351f57461d6"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md": {
+      "bytes": 109751,
+      "sha256": "87c1a9079b27f8ba0414c990425048264af0336b8ec1406f47f0dd6e9b103edc"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md": {
+      "bytes": 116031,
+      "sha256": "1206b5ca307d8b2525e173c454596b5a1d8650806733fc0e5f370b78864ec939"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/04_CHARACTER_MINISTRY_AND_THEOLOGY.md": {
+      "bytes": 405383,
+      "sha256": "b2e6344e2d49595ec7ceb5bef123f31b7423a4ba309ef1b14532f7a23051d374"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/05_CONTROVERSIES_AND_CLAIM_AUDIT.md": {
+      "bytes": 40697,
+      "sha256": "96031ce35fd565e95dc1f659f4522aa6538807bf9c13bcd7d931db6b81cae64d"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/06_CORPUS_ACCESS_MATRIX_AND_LOCATORS.md": {
+      "bytes": 47411,
+      "sha256": "df3571bb7888869f9275262028511409ac6c4de56aac6f040cae91af55f0843e"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/07_REPO_CROSSLINKS_AND_DRIVE_MIRROR.md": {
+      "bytes": 19183,
+      "sha256": "a21331e862dfcd211c8160668c17180792f00a26f84be0a0132dd9102b496c39"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/08_ADAMS_AND_VEAL_TO_THE_READER_PRIMARY_EPISTLE.md": {
+      "bytes": 42686,
+      "sha256": "a9bc993e052e1a0899446d7e5243fc5ea88e5e932f144ff8eaa0272203b6083e"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/09_JOHNSON_FUNERAL_SERMON_1680_PRIMARY_TRANSCRIPTION.md": {
+      "bytes": 33518,
+      "sha256": "58dde18289e029ec9b82c3d4ffdb3174e5aaf2a65999e29abe2f4022346e1e2c"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/10_REPO_USAGE_LEDGER_AND_VERIFICATION_STATUS.md": {
+      "bytes": 24000,
+      "sha256": "942a9d56094da59e1d5c163fb59a5291c23366bbc2b8532fc7eab45505493517"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/11_WOOD_ATHENAE_OXONIENSES_1691_PRIMARY_TRANSCRIPTION.md": {
+      "bytes": 28941,
+      "sha256": "04e48765a0adf4367ff7fd7319fbac341864eb30630f944708d0cac423307729"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/12_THE_SAYINGS_1680_BROADSIDE_PRIMARY_TRANSCRIPTION.md": {
+      "bytes": 35842,
+      "sha256": "b69d3ab0239505c8164e5aba35985f1a41d2c3f35aa9f3f228ff5454e82a256e"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/13_NEW_POEMS_1680_ELEGY_ACROSTICS_EPITAPH_PRIMARY_TRANSCRIPTION.md": {
+      "bytes": 46787,
+      "sha256": "b33db74f5487514739df3f77d615548610f67cdaf1c1683d46197c1109791f1b"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/14_AN_ELEGY_1680_PRIMARY_TRANSCRIPTION.md": {
+      "bytes": 52513,
+      "sha256": "3f2f0ec80944f35c9da11d3bc39872744e2611479b374fe8b20c41c8730b1d4b"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/15_THE_EMMANUEL_LINE_PRESTON_POOLE_FOWLER.md": {
+      "bytes": 45781,
+      "sha256": "469f580a525ccfad84e8c92a090d0d2a148378042b2a461ae6307dfc870562ef"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md": {
+      "bytes": 884180,
+      "sha256": "da32a5d81926ff525ae9556a65146724e171a762324b2ab7f8bfd5022e07071d"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/17_PROMPT_PARALLEL_AGENT_HISTORICAL_CONTEXT.md": {
+      "bytes": 27738,
+      "sha256": "93f59a55e986045b8bb5423b452fad05b62918a663f3734aa2d88c6f7d2799f1"
+    }
+  },
+  "holds": [
+    "PUBLICATION_HOLD"
+  ],
+  "kind": "FULL_BOUNDED_CHARNOCK_RESEARCH_PACKET_NOT_FULL_RESEARCH_CHECKOUT",
+  "publicationState": "BLOCKED",
+  "scope": "Research material collection for a bounded10-document Charnock series only.18research dossiers are not18authored chapters. Accepted decisions retain all conflicts,HOLD and excluded claims. Not root authority,full corpus,all source images,publication approval or authoring."
+}

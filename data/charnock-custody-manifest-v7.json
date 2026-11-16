@@ -18,7 +18,7 @@
   ],
   "derivedFrom": {
     "receipt": "data/charnock-handoff-receipt-v6.json",
-    "receiptSha256": "c90a237366dccc2bde539e6fe132a2f6c5a604c9b46ab9fc9fb0b01afcfba55d",
+    "receiptSha256": "cc3c6f32edcfb2b851af27deb994d2fc82af787c2411f0badb570fe9881df06e",
     "sourceArtifactName": "CHARNOCK_FULL_BOUNDED_RESEARCH_wave45_2026-11-16.zip",
     "sourceArchiveBytes": 6082459,
     "sourceArchiveSha256": "31532abcad88936921954edf8d4f5fd751cd6e085fd9e48b22ce06e4a16a1dc5",

@@ -130,17 +130,17 @@
     },
     {
       "id": "V-20",
-      "claim": "wave45 packet receipt: zip uploaded to Google Drive and read back",
+      "claim": "wave46 packet receipt: zip uploaded to Google Drive and read back",
       "route": "google_drive upload_file + independent get_file",
       "verdict": "ACCEPT",
-      "locator": "data/charnock-handoff-receipt-v6.json; object 1cyt8kgeOfs092NPmPeVp_KnbFbAji23A; zip 6082459 B; sha256 31532abcad88936921954edf8d4f5fd751cd6e085fd9e48b22ce06e4a16a1dc5; md5 0a9473023c031d98b4bd2db0d0f32ac9; manifest sha256 9e27d6f85e05cf8686c5ab2d9ef3bf85ad36ce6207c81bca729d61f07acd5731"
+      "locator": "data/charnock-handoff-receipt-v7.json; object 1HEuZuDD9vHOUCv2YcwQPgKS2QkvteNxr; zip 6082467 B; sha256 012813dd5908207608949ff4ccc8c65c59b05ad4441f6afa14611d54e40c67b9; md5 e5115e387ecf80942834f2aae2da64af; manifest sha256 e456e545edb24f8e300bcf17617b144f3cbab985c3fc43c5b7ed5265313c42bc"
     },
     {
       "id": "V-21",
       "claim": "The wave41 packet manifest and the custody manifest are reproducible from the repository, not hand-maintained",
       "route": "scripts/build_charnock_custody_manifest.py rebuilds both from the receipt and re-hashes members",
       "verdict": "ACCEPT",
-      "locator": "data/charnock-wave45-packet-manifest.json (sha256 9e27d6f85e05cf8686c5ab2d9ef3bf85ad36ce6207c81bca729d61f07acd5731 = receipt sourceManifestSha256); data/charnock-custody-manifest-v7.json (manifestSha256 3e429d29593d5603d21ed67cefcdfb3f594351ef87a55ac82a90fde6e089bc36, 46 members, 19949122 B)"
+      "locator": "data/charnock-wave46-packet-manifest.json (sha256 e456e545edb24f8e300bcf17617b144f3cbab985c3fc43c5b7ed5265313c42bc = receipt sourceManifestSha256); data/charnock-custody-manifest-v8.json (manifestSha256 9e55c866360102811a80d9e044548573a358ebe8bbec76b03b6211506fd46506, 46 members, 19949111 B)"
     },
     {
       "id": "V-22",
@@ -154,14 +154,21 @@
       "claim": "The whole Charnock corpus (18 volumes and both JSON data files) carries no dropped-space defect, and the repair changed no letters or digits",
       "route": "scripts/audit_charnock_text_spacing.py --scope documents; insertion-only repair rule",
       "verdict": "ACCEPT",
-      "locator": "scripts/audit_charnock_text_spacing.py --scope all returns TEXT_SPACING_CLEAN with 0 findings and verbatimSnapshotsVerified=2; 2511 document insertions (waves 43-44) plus 975 JSON value insertions with 123 pins re-derived (wave 45); report TEXT_SPACING_DEFECT_2026-11-16.md; CI steps 'Reader-facing documents keep their restored spacing' and 'Whole corpus keeps its restored spacing'"
+      "locator": "scripts/audit_charnock_text_spacing.py --scope all returns TEXT_SPACING_CLEAN with 0 findings and verbatimSnapshotsVerified=2; 2502 document insertions plus 966 JSON value insertions with 44 pinned rows re-derived; report TEXT_SPACING_DEFECT_2026-11-16.md; CI steps 'Reader-facing documents keep their restored spacing' and 'Whole corpus keeps its restored spacing'"
     },
     {
       "id": "V-24",
-      "claim": "Every one of the 123 derived pins that resolved to a row inside the two JSON files was re-derived, and the row changed by whitespace only",
+      "claim": "The 123 derived pins that resolved to a row inside the two JSON files were verified, the 44 pinned rows that changed did so by whitespace only, and no external pin moved",
       "route": "scripts/repair_charnock_json_prose_spacing.py: canonical bytes of the pinned row compared before and after with all whitespace removed; ~2176 pins resolving to XML paragraphs and external registries were left untouched",
       "verdict": "ACCEPT",
-      "locator": "repair_charnock_json_prose_spacing.py reports pinsResolvingInternally=123, pinsStale=[], nonWhitespaceDriftVsBase=[] against base revision 63143bb"
+      "locator": "repair_charnock_json_prose_spacing.py reports pinsResolvingInternally=123, pinsStale=[], nonWhitespaceDriftVsBase=[]; independent diff of all 2299 pin values between 63143bb and 8246d2d shows exactly 63 changed, 0 added, 0 removed, all of them canonicalRowSha256/canonicalAnchorSha256/canonicalUnitSha256 whose new value matches a row in the two files; the 44 changed rows are identical once whitespace is removed"
+    },
+    {
+      "id": "V-25",
+      "claim": "No pin that resolves outside the two JSON files was altered by the wave45 repair",
+      "route": "pin-value diff between 63143bb and 8246d2d over every *Sha256 field in both files, cross-checked against the internal row index",
+      "verdict": "ACCEPT",
+      "locator": "2299 pins, 63 changed, 0 added, 0 removed; every changed pin's new value equals the canonical hash of a row inside data/charnock-biographical-anchors-v1.json or data/charnock-series-editorial-plan-v1.json"
     }
   ],
   "rejectedOrCorrected": [
@@ -429,6 +436,12 @@
       "finding": "Шапка всех 18 томов по-прежнему печатает `CHARNOCK-HANDOFF-V1 · wave40 · 2026-10-26` и ссылается на `data/charnock-handoff-receipt-v1.json`, хотя текущая квитанция — v5 (wave44). Ссылка резолвится (файл v1 существует как звено линии), поэтому ни один гейт не падает; расхождение чисто читательское.",
       "use": "Волна правки пробелов намеренно не трогала шапки: это редакционное решение (метка волны в шапке против метки контракта), а не типографика. 18 изменённых членов пакета ради метки потребовали бы ещё одной пересборки и новой квитанции без исследовательской ценности.",
       "status": "OPEN — требует отдельного редакционного решения о том, что печатает шапка (номер волны или номер контракта) и обновлять ли её каждую волну"
+    },
+    {
+      "id": "N-11",
+      "finding": "Правщик и детектор расходились: `propose()` вставлял пробел в каждой форме «слово+число», а `findings()` щадил короткий токен с заглавной. Волны 43–45 вставили из-за этого 18 пробелов, которых детектор не видел, и порвали авторскую компактную форму ссылок `1Тим2:15` (9 в томах 04/16, 9 в двух JSON). Тот же сторож щадил настоящие дефекты `Год1628`, `Том03`, `Все6`.",
+      "use": "Исправлено в wave46: единый предикат `word_digit_is_reference()` с белым списком книг вместо эвристики длины; 18 томов пересчитаны из `83cc47d`, JSON из `63143bb`; тест «правщик не меняет то, что детектор не пометил, и правка всегда сканируется чисто».",
+      "status": "CLOSED — единый предикат, 18 ссылок восстановлены, детектор 0 находок; остаётся урок: детектор и правщик обязаны делить один предикат, а счётчики волн считать по детектору"
     }
   ],
   "conflicts": [
@@ -502,8 +515,8 @@
       "done": [
         "burial correction in 00/16; admission/matriculation wording in 02; witness-count language removed in 10/03/12/13/14",
         "packet drift now zero: historicalReceiptMatchesCurrentTree true, currentRevisionCustody REVERIFIED_AGAINST_BASELINE_RECEIPT",
-        "wave45 receipt v6 issued: 47-member archive, 6082459 B, sha256 31532abc…, manifest 9e27d6f8…, Drive readback matched (md5 0a947302…); custody manifest v7 (46 members, 19949122 B, 3e429d29…) reproduces via --check",
-        "dropped-space defect closed corpus-wide: --scope all returns TEXT_SPACING_CLEAN 0 findings; JSON prose repaired with 123 internal pins re-derived and proven whitespace-only"
+        "dropped-space defect closed corpus-wide: --scope all returns TEXT_SPACING_CLEAN 0 findings; JSON prose repaired with 123 internal pins re-derived and proven whitespace-only",
+        "wave46 receipt v7 issued: 47-member archive, 6082467 B, sha256 012813dd…, manifest e456e545…, Drive readback matched (md5 e5115e38…); custody manifest v8 (46 members, 19949111 B, 9e55c866…) reproduces via --check"
       ]
     },
     "lordchristArticlePr971": {

@@ -46,9 +46,18 @@ class SpacingDetectorTests(unittest.TestCase):
         self.assertEqual(len(changes), 2)
 
     def test_repair_leaves_references_untouched(self):
-        fixed, changes = propose("Пс32; p.265; Hoek1:532")
-        self.assertEqual(fixed, "Пс32; p.265; Hoek1:532")
-        self.assertEqual(changes, [])
+        for text in ("Пс32; p.265; Hoek1:532", "1Тим2:15", "1Тим1:15 и 2Тим3:16", "Рим3:9–12"):
+            fixed, changes = propose(text)
+            self.assertEqual((fixed, changes), (text, []), text)
+
+    def test_repairer_and_detector_share_one_predicate(self):
+        # wave46: the repairer used to insert spaces the detector never flagged,
+        # turning the author's `1Тим2:15` into `1Тим 2:15` in 18 places.
+        for text in ("1Тим2:15", "Пс32", "Год1628 приблизителен", "Том03 §14", "Все6 пунктов"):
+            fixed, _ = propose(text)
+            self.assertEqual(findings(fixed), [], fixed)
+        self.assertEqual(propose("Год1628 приблизителен")[0], "Год 1628 приблизителен")
+        self.assertEqual(propose("Все6 пунктов")[0], "Все 6 пунктов")
 
     def test_reader_facing_documents_are_clean(self):
         report = scan(scope="documents")
