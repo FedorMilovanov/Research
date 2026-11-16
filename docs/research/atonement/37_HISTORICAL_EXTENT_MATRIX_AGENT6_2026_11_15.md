@@ -431,7 +431,8 @@ DT II (1888), c. 464–477:
 - Сперджен (№351/№2656) vs любая «Substitute for all» — несовместимы.
 - Ходж (561–562) vs пост-редемпционизм — несовместимы.
 - Оуэн vs Baxter (nature of satisfaction) — несовместимы по конструкции, хотя обе стороны реформатские.
-- Девенант vs Стронг-line: у Девенанта — стяжание веры действенное для избранных (particulare) + jus для всех; у Стронга — «специальные влияния Духа» вместо стяжания веры крестом — различие **существенное**, не лексическое. **Вербатим Стронга (том II, с. 773):** дарование веры «**is not, however, a part of his work of atonement; it is the application of the atonement**». Это прямой, названный отказ от Дорт II.8 — не расхождение акцентов.
+- Девенант vs Стронг-line: у Девенанта — стяжание веры действенное для избранных (particulare) + jus для всех; у Стронга — «специальные влияния Духа» вместо стяжания веры крестом — различие **существенное**, не лексическое (для **этой** пары).
+  **Ограничение области действия (2026-11-16, A.21):** на пару «definite atonement ↔ moderate Calvinism» это распространять нельзя. Уордло — участник спора — называет разницу между «purpose in the making» и «purpose respecting the application» почти словесной («a hardly divisible hair's breadth… a logomachy», т. II с. 447–448, 450–451), а Симингтон держит «двойную уплату» как довод от справедливости. Корпус фиксирует **разногласие**, а не решает его в пользу «существенности»: у Девенанта и у Стронга различие в **основании** (дар веры внутри приобретения vs перенос в применение), и это проверяемо; у Симингтона и у «moderate Calvinists» различие в **месте ограничения**, и там оценка спорна. **Вербатим Стронга (том II, с. 773):** дарование веры «**is not, however, a part of his work of atonement; it is the application of the atonement**». Это прямой, названный отказ от Дорт II.8 — не расхождение акцентов.
 - **Уточнение по прочитанному тексту Стронга (2026-11-16, A.19):** Стронг ограничивает свой универсализм **самим собой**, а не только школой: «Having endured the penalty of the sinner, **justice permits the sinner's discharge, but does not require it**, except as the fulfilment of a promise to his substitute, and then only **upon the appointed condition of repentance and faith**» (том II, с. 773). То есть у него универсально **объективное обеспечение** и **отсрочка казни** (pretermission, Рим. 3:25), а применение условно. Это делает разрыв с Дортом/Вестминстером **уже**, чем «provision для всех без условий», но шире, чем просто словоупотребление: Стронг утверждает, что смерть «made for all men» **по объёму**, тогда как Дорт II.8 держит стяжание веры внутри приобретения.
 
 ## Приложение A. Вербатим первичных текстов (с точными локаторами)
@@ -736,6 +737,32 @@ Spurgeon Gems хранит постраничные сканы томов Metrop
 
 **Ограничение:** прочитан участок гл. XXVI (1 Тим. 4:10; Тит. 2:11–12; 2 Пет. 3:9) и оглавление; остальные главы (XXIV–XXV целиком, с. 438–475) **не читаны** — таксономия трёх кальвинизмов известна пока **по оглавлению**, и её нельзя цитировать как прочитанный аргумент.
 
+### A.21 Уордло, гл. XXIV «On the Calvinistic Views of the Extent of the Atonement» (т. II, с. 443–454) — три кальвинизма, и спор о том, **где** лежит ограничение (2026-11-16)
+
+Прочитано: гл. XXIV целиком в границах с. 443–454 (колонтитулы `CALVINISTIC VIEWS OF` / `THE EXTENT OF THE ATONEMENT`, сигнатура «VOL. II. 2G» на с. 449). Класс [П-web] A1.
+
+**Таксономия, которую Уордло даёт сам (и которая важнее его оценок):**
+1. **Ограниченная достаточность** (hyper-Calvinism) — atonement of limited sufficiency; Уордло отвергает.
+2. **Definite atonement** — ограничение в самом искуплении, через его «**destination**»: Христос «appointed and voluntarily undertook to stand» только за определённое число. Представитель — **Dr. Symington** (Atonement and Intercession); Уордло называет эту партию «the large majority of the Presbyterian dissenters in Scotland, and … the evangelical party in the Establishment».
+3. **Moderate / modern Calvinism** — «a **general remedy with a particular application**»: ограничение только в применении, по суверенной воле.
+
+**Тезис Уордло о том, в чём именно расхождение (это и есть его вклад):** ограничение у «definite atonement» лежит **не в ценности**, а в предназначении; а раз ценность признана бесконечной, то разница между «purpose in the making» и «purpose respecting the application» — «a hardIy divisible hair's breadth… to approach as near as may be to a **logomachy**» (с. 447–448). Продолжение (с. 450–451): «the full amount of the difference… lies simply in this, namely, in the difference between a divine purpose **in the making** of the atonement, and a divine purpose **respecting the application** of the atonement when made».
+
+**Симингтон в передаче Уордло — довод «двойной уплаты» в классической форме (цит. по Symington, pp. 244–245):**
+> «…that an infinitely righteous God takes **double payment for the same debt, double satisfaction for the same offence**, first from the surety and then from those for whom the surety stood bound» (с. 450)
+> и: «If the punishment for sin has been borne, the remission of the offence follows of course. The principles of rectitude require this, nay, peremptorily demand it. **Justice could not be satisfied without it**» (с. 449)
+
+**Ответ Уордло — не тот, что у Ходжа/Дабни:** он не защищает популярную форму довода, а переносит удар: если для неизбранных «no atonement has been made», то их спасение невозможно **не по декрету, а по справедливости**, и тогда всеобщее предложение так же невозможно, как при ограниченной достаточности:
+> «…do not we feel ourselves as much tied up in making the universal offer of pardon, as we did on the scheme of exact equivalent… do we not feel as if **the word stuck in our throat** when we say:—“Whosoever will, let him take the water of life freely”?» (с. 453)
+
+И его согласие с Фуллером против модели «кредитор—должник»:
+> «I confess myself, **with Andrew Fuller**, more than disposed to doubt whether we should consider “the Moral Governor of the world as laid under such a kind of obligation to show mercy to sinners as a creditor is under to discharge a debtor, on having received full satisfaction at the hands of a surety”» (с. 451)
+
+**Что это обязывает исправить в корпусе (§10.5):**
+- Наш тезис «различие существенное, не лексическое» верен **для пары Девенант/Ушер ↔ Стронг** (разные основания: дар веры внутри приобретения vs перенос в применение) — это остаётся.
+- Но его **нельзя распространять** на пару «definite atonement ↔ moderate Calvinism»: участник спора прямо называет это различие почти словесным. Корпус обязан **записать разногласие**, а не adjudicate в пользу «существенности».
+- Довод «двойной уплаты» у Симингтона (с. 449–450) — та же форма, что разбирается в `34_` §4.40–4.41 (Бакстер 1694; Ходж; Дабни; Турретин). Свести при следующем проходе; **диапазоны Стронга и Уордло не совпадают** (Стронг: «Symington, Atonement, 184–234»; Уордло цитирует с. 102, 237–238, 244–245, 268–269), и склеивать их нельзя.
+
 ## Приложение B. Кросс-сверка с локальными досье (что читать по какой теме)
 | Утверждение матрицы | Файл / раздел (в рабочем дереве) | Класс |
 |---|---|---|
@@ -755,6 +782,7 @@ Spurgeon Gems хранит постраничные сканы томов Metrop
 | Амираут 1658, I (Brief traité) с. 94, 112–113; II (Eschantillon) с. 103–109, 207–208, 212, 215–218 — нижние колонтитулы скана (выверено постранично 2026-11-16, chunks 40–43); `brieftraitdela00amyr` (Princeton scan) прочитан 2026-11-15 | `…37_…md` Appendix A.9 (LOCATOR_RECHECK) | [П-web] A1 |
 | Стронг, *Systematic Theology*, **том II**, «E. The Extent of the Atonement», с. 771–773 (Philadelphia: Griffith & Rowland, «Published December 1907»; экземпляр NYPL, дар автора), `systematictheolo02stro` — прочитано 2026-11-16 | `…37_…md` Appendix A.19 | [П-web] A1 |
 | Уордло, *Systematic Theology*, т. II (Edinburgh: A. & C. Black, MDCCCLVII), гл. XXVI «On the Extent of the Atonement», с. 476–477 — 1 Тим. 4:10 = «preserver», «He saves them exclusively»; `systematictheolo02ward` (Princeton, 2024) — прочитано 2026-11-16 | `…37_…md` Appendix A.20 | [П-web] A1 |
+| Уордло, там же, гл. XXIV «On the Calvinistic Views of the Extent of the Atonement», с. 443–454 — три кальвинизма («limited sufficiency» / «definite atonement» = Symington / «moderate Calvinism — a general remedy with a particular application»), «logomachy», довод двойной уплаты (Symington pp. 244–245), «the word stuck in my throat» — прочитано 2026-11-16 | `…37_…md` Appendix A.21 | [П-web] A1 |
 | Оуэн, *Salus electorum sanguis Jesu* (London, 1845; репринт 1647 г.), 1 Ин. 2:2 (с. 257–261), 1 Тим. 2:4/6 (с. 270–277), Евр. 2:9 (с. 278–281), 2 Пет. 2:1 (с. 297–301) | `…37_…md` Appendix A.15 | [П-web] A1 |
 | Owen *Death of Death*, Book IV, ch. I (sufficiency preamble, с. 295–297); ch. IV (1 Тим. 2:4/6; Евр. 2:9, с. 344, 349–350); ch. V (2 Пет. 2:1, с. 362–364); ch. VI (против Мура — гл. XX), Goold X; CCEL-текст прочитан 2026-11-15 | `…37_…md` Appendix A.8 | [П-web] A1 |
 | Owen *Death of Death*, Book IV, ch. III (1 Ин. 2:1, 2 opening), Goold X с. 330–335; CCEL-версия прочитана 2026-11-15 | `docs/research/atonement/37_…md` Appendix A.7 | [П-web] A1 |
