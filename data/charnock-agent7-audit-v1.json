@@ -183,6 +183,13 @@
       "route": "offline check: json.dumps(sourceManifest) hashed against each receipt's sourceManifestSha256; previousReceipt links walked v1→v7",
       "verdict": "ACCEPT",
       "locator": "v1 3bda1d76…, v2 2584e9c0…, v3 6143eac1…, v4 da2ceb02…, v5 20a06d49…, v6 31532abc…, v7 012813dd… — seven receipts, all manifests hash correctly, all archive shas distinct"
+    },
+    {
+      "id": "V-28",
+      "claim": "Book Owners Online's '1330 items' is not an independent count but the exact sum of its own seven category figures, in a mixed unit",
+      "route": "arithmetic on the already-held BOO extract (no new search wave): 372+65+192+256+56+75 then +39+275",
+      "verdict": "ACCEPT",
+      "locator": "books 1016 + pamphlet entries 314 = 1330 exactly; the 39 and 275 are positions inside 2 and 13 bound volumes, so 'items' mixes lots and convolute entries"
     }
   ],
   "rejectedOrCorrected": [
