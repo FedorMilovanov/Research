@@ -3202,5 +3202,33 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                                 for err in validate_source_access(changed)))
 
 
+    def test_bl_harley5683_f1r_photo_is_a_distinct_held_uncollated_locus(self) -> None:
+        """A located medieval manuscript cannot be laundered into an original-ink textual reading."""
+        row = next(r for r in self.sources["records"]
+                   if r["id"] == "SRC-BL-HARLEY5683-F1R-EX17-16-OPENN-PHOTO")
+        audit = row["archivalImageAudit20261116"]
+        self.assertEqual("BLOCKED", row["publicationState"])
+        self.assertEqual("PARTIAL_OBJECT", row["accessState"])
+        self.assertEqual("A2", row["evidenceClass"])
+        self.assertEqual("RIGHTS_UNKNOWN", row["rightsState"])
+        self.assertFalse(row["criticalEditionCollated"])
+        self.assertEqual("12967_0010.jpg", row["digitalPhotoId"])
+        self.assertTrue(audit["physicalManuscriptIndependentFromOr4445"])
+        self.assertTrue(audit["ex1716InFirstExtantFolioCatalogueRange"])
+        self.assertTrue(audit["originalInstitutionalMasterJpegEndpointHttp200"])
+        self.assertTrue(audit["opennImagesPublicDomainMarkDisplayed"])
+        for key in ("datedAsEarlyTenthCentury",
+                    "originalNativePixelsIndependentlyReadForWordDivision",
+                    "joinedWordProved", "separatedWordsProved",
+                    "manuscriptMarginaliaIndependentlyCollated",
+                    "modernReferenceTextUsedAsOriginalPhotoWitness",
+                    "separateOriginalCriticalBhsOrGottAppRead",
+                    "editorialProductImageReuseApproved"):
+            with self.subTest(key=key):
+                self.assertFalse(audit[key])
+        self.assertEqual(0, audit["criticalCollationsAccepted"])
+        self.assertEqual([], validate_source_access(self.sources))
+
+
 if __name__ == "__main__":
     unittest.main()

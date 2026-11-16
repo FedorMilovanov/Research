@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 133,
+    "sourceRecords": 134,
     "approvedForProduct": 0
   },
   "records": [
@@ -5334,6 +5334,50 @@
         "externalPeerReviewOfOurOwnClaimsCompleted": false,
         "copyingOrRepublishingThesisPDFRightsGranted": false,
         "ProductPublicationApproved": false
+      }
+    },
+    {
+      "id": "SRC-BL-HARLEY5683-F1R-EX17-16-OPENN-PHOTO",
+      "title": "British Library Harley MS 5683, Italian Torah and haftarot codex (1260–1299), folio 1 recto: original photograph containing the beginning of extant Exodus 17:15–18",
+      "creator": "Unidentified Italian Jewish scribe; British Library original holding; University of Pennsylvania OPenn digitization",
+      "year": null,
+      "manuscriptDating": "1260–1299 CE, Italy, OPenn original institutional catalogue",
+      "url": "https://openn.library.upenn.edu/Data/0047/html/harley_ms_5683.html#a1r",
+      "originalMasterImageUrl": "https://openn.library.upenn.edu/Data/0047/harley_ms_5683/data/master/12967_0010.jpg",
+      "digitalPhotoId": "12967_0010.jpg",
+      "independentVerseLocator": "https://www.masoretica.org/?book=Exodus&chapter=17&manuscript=blharley5683&verse=16",
+      "objectType": "original_medieval_hebrew_codex_archival_folio_catalogued_and_direct_jpeg_route_verified_not_word_collated",
+      "sourceRole": "LATE_THIRTEENTH_CENTURY_INDEPENDENT_PHYSICAL_CODEx_ORIGINAL_PHOTO_EX17_16_LOCUS_ONLY_UNCOLLATED",
+      "evidenceClass": "A2",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "locator": "OPenn Harley MS5683 original institutional catalogue, first surviving folio 1r (single column, 24 lines), book begins Exodus 17:15, catalog dated Italian 1260–1299; third-party Masoretica maps Exodus17:16 to f001r. OPenn original photo 12967_0010.jpg HTTP200 via archival image retrieval, but no independent native-pixel ink/space collation.",
+      "rightsNotice": "OPenn original metadata explicitly labels images Public Domain Mark 1.0 and metadata CC0; this is a record of archive rights metadata, not a site rights review, not a grant of scholarly originality or our Product/production release permission.",
+      "sourceObjectState": "Official institutional OPenn manuscript catalogue and original master-JPEG endpoint checked directly on 2026-11-16. Catalog records verse 17:15 as first extant locus, manuscript codex dated 1260–1299 Italy; independent later manuscript from tenth-century BL Or4445, Leningrad, and missing Aleppo Exodus leaf. Original image endpoint returned HTTP200 image/jpeg, but original image pixels were NOT independently inspected to decode line1/word division; secondary Masoretica is used only for locus mapping, NOT verbatim witness transcription. No confirmed manuscript ink reading כסיה versus כס יה, vowel/accents, scribal note, textual family, or independent full collation. No new attestation/claim IDs and no critical apparatus acceptance.",
+      "supportedUse": "Register a physically distinct medieval Hebrew codex preserving an independently located Ex17:16 image candidate; offer exact archival image and catalogue citation; keep word-division and Masorah unresolved until original ink is collated. Note that OPenn marks its photos Public Domain Mark 1.0, with no automatic Product reuse approval.",
+      "forbiddenUse": "Claim actual original photographic Exodus17:16 Hebrew consonants, spacing or marginal annotation have been independently deciphered; treat a separate Masoretica reference display as this codex's verbatim transcription; equate Harley with Or4445, Leningrad or Aleppo; call this a second early-tenth-century witness; infer Greek Göttingen or BHS original apparatus collation; infer Product or scholarly release from Public Domain Mark metadata.",
+      "archivalImageAudit20261116": {
+        "physicalManuscriptIndependentFromOr4445": true,
+        "datedAsEarlyTenthCentury": false,
+        "ex1716InFirstExtantFolioCatalogueRange": true,
+        "originalInstitutionalMasterJpegEndpointHttp200": true,
+        "originalNativePixelsIndependentlyReadForWordDivision": false,
+        "joinedWordProved": false,
+        "separatedWordsProved": false,
+        "manuscriptMarginaliaIndependentlyCollated": false,
+        "modernReferenceTextUsedAsOriginalPhotoWitness": false,
+        "separateOriginalCriticalBhsOrGottAppRead": false,
+        "criticalCollationsAccepted": 0,
+        "opennImagesPublicDomainMarkDisplayed": true,
+        "editorialProductImageReuseApproved": false
       }
     }
   ],
