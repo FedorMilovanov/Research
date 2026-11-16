@@ -125,7 +125,9 @@ def files_for(lan: str) -> list[Path]:
     карточки, и оставлять их вне счёта значило бы мерить лан по удобной ему части."""
     if lan == "root":
         return sorted(CORPUS_DIR.glob("*.md"))
-    return sorted((CORPUS_DIR / lan).rglob("*.md"))
+    # .scratch — служебные клоны источников (git-ignored), их README и заметки не проза лана:
+    # обход по ним мерил бы чужой репозиторий и делал бы число зависимым от наличия клонов.
+    return sorted(p for p in (CORPUS_DIR / lan).rglob("*.md") if ".scratch" not in p.parts)
 
 
 def registry_for(lan: str) -> Path:
@@ -193,7 +195,7 @@ def card_index(lan: str) -> dict[str, list[dict]]:
         return out
     # корневой реестр лежит в ИСКУПЛЕНИЕ/data/, лановый — в ИСКУПЛЕНИЕ/<лан>/data/:
     # короткие ссылки вида «05_x.md» разрешаются относительно второго каталога сверху
-    base_rel = str(path.relative_to(ROOT).parents[1])
+    base_rel = path.relative_to(ROOT).parents[1].as_posix()
 
     def own_file(node: dict) -> str | None:
         for key in ("file", "path", "файл", "markdownFile"):
@@ -350,7 +352,7 @@ def scan_lan(lan: str) -> dict:
     seen: collections.Counter = collections.Counter()
 
     for path in files_for(lan):
-        rel = str(path.relative_to(ROOT))
+        rel = path.relative_to(ROOT).as_posix()
         text = path.read_text(encoding="utf-8").splitlines()
         starts = [(i, m.group(1)) for i, ln in enumerate(text, 1) if (m := HEADING_RE.match(ln))]
         for idx, (line, title) in enumerate(starts):
@@ -703,11 +705,36 @@ def insert_block(path: Path, block: dict) -> None:
     байт — иначе сама правка сдвинет счётчики упоминаний, которые лана измеряет."""
     raw = path.read_text(encoding="utf-8")
     form = canonical_indent(raw)
+    original = raw
+    if form is None and f'"{BLOCK_KEY}"' in original:
+        # Mixed-format historical registries must keep their untouched bytes.
+        # Replace the existing value at its original position, not the whole file.
+        pad = " " * top_level_indent(original)
+        token = json.dumps(BLOCK_KEY, ensure_ascii=False)
+        matches = list(re.finditer(r"(?m)^" + re.escape(pad + token)
+                                  + r"\s*:\s*", original))
+        if len(matches) != 1:
+            raise SystemExit(f"{path.name}: claim block is not uniquely anchored")
+        start = matches[0].end()
+        old_block, size = json.JSONDecoder().raw_decode(original[start:])
+        if not isinstance(old_block, dict):
+            raise SystemExit(f"{path.name}: claim block is not a JSON object")
+        encoded = json.dumps(block, ensure_ascii=False, indent=2)
+        encoded = encoded.replace("\n", "\n" + pad)
+        updated = original[:start] + encoded + original[start + size:]
+        before, after = json.loads(original), json.loads(updated)
+        if list(before) != list(after) or any(
+                before[key] != after[key] for key in before if key != BLOCK_KEY):
+            raise SystemExit(f"{path.name}: claim rewrite changed unrelated data")
+        path.write_text(updated, encoding="utf-8", newline="\n")
+        return
     if f'"{BLOCK_KEY}"' in raw:
         a, b = block_span(raw, BLOCK_KEY)
         raw = raw[:a].rstrip() + "\n" + raw[b:].lstrip("\n")
     if form is not None:
-        data_now = json.loads(raw)
+        # Preserve the original top-level key order when replacing a measured block.
+        # Removing then re-appending it produces a huge, misleading JSON diff.
+        data_now = json.loads(original)
         data_now[BLOCK_KEY] = block
         canon = json.dumps(data_now, ensure_ascii=False, indent=form) + "\n"
         probe = json.loads(canon)

@@ -254,6 +254,30 @@ def eli(book, ch, vs, abbrev=None):
     return ' '.join(words.get(k, '') for k in range(idx, end) if k in words).strip()
 
 
+def eli_status(book, ch, vs, abbrev=None):
+    """Три состояния адреса в ELI: 'ok' | 'no-address' | 'empty-slot'.
+
+    Нужно потому, что `eli()` возвращает '' в двух разных случаях, и различить их
+    по возвращённому значению нельзя (карточка 19 §3.18):
+      * 'no-address'  — стиха нет в разметке вовсе (напр. Дан 3:40, молитва Азарии:
+                        есть только по-гречески). Это свойство материала.
+      * 'empty-slot'  — разметка стих перечисляет, но слов на его диапазон нет
+                        (в ELI 1930 таких 686, из них 240 в книгах канона:
+                        1Chr 1:11-1:23, 1Kgs 14:1-14:20, 1Sam 17:12-17:31...).
+                        Это дефект транскрипции, а не чтение.
+    Поэтому «в LXX этого нет» нельзя говорить на основании '' от `eli()`.
+    """
+    ab = abbrev or LXX.get(book, (None, None, book))[2]
+    ref = '%s.%d:%d' % (ab, ch, vs)
+    words, rows = _eli_index()
+    for i, (idx, r) in enumerate(rows):
+        if r == ref:
+            end = rows[i + 1][0] if i + 1 < len(rows) else max(words) + 1
+            toks = [words[k] for k in range(idx, end) if words.get(k, "").strip()]
+            return 'ok' if toks else 'empty-slot'
+    return 'no-address'
+
+
 def eli_verse_tokens(book, ch, vs):
     t = eli(book, ch, vs)
     return [x for x in re.split(r'\s+', t) if x] if t else []

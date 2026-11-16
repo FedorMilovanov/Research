@@ -26,7 +26,7 @@ import atonement_wave8_sources as wave8
 import atonement_wave9_sources as wave9
 from atonement_source_metrics import source_label_prefix, legacy_carrier_code
 
-from atonement_claim_register import classify_token
+from atonement_claim_register import classify_token, insert_block, BLOCK_KEY
 from atonement_crossref_audit import FILE_REF, main as crossref_main
 from atonement_draft_citation_audit import audit_quotes, check_quote, load_bible, parse_ref
 from atonement_sync_check import (ROOT, REPORT, CONTROL, DRAFTS, SYNTHESIS_REPAIR_IDS,
@@ -1547,6 +1547,69 @@ class Wave9SourcesTests(unittest.TestCase):
         self.assertIn('scripts/atonement_wave9_sources.py', reshoot.PIPELINE_FILES)
         self.assertIn('check_wave9(root, report, wave9_control)', (ROOT / 'scripts/atonement_sync_check.py').read_text(encoding='utf-8'))
         self.assertIn('"atonement_wave9_sources.py"', (ROOT / '.github/workflows/atonement-corpus-integrity.yml').read_text(encoding='utf-8'))
+
+
+class ReshootTable91Tests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.corpus = json.loads(reshoot.CORPUS.read_text(encoding="utf-8"))
+        cls.document = reshoot.DOC.read_text(encoding="utf-8")
+        lines = cls.document.splitlines()
+        start = next(i for i, line in enumerate(lines) if line.startswith("### 9.1 "))
+        stop = next((i for i in range(start + 1, len(lines))
+                     if lines[i].startswith(("### ", "## "))), len(lines))
+        cls.ot_row = next(line for line in lines[start:stop]
+                          if line.startswith("| " + chr(96) + "ot" + chr(96) + " |"))
+
+    def test_claim_register_update_retains_key_order_and_unrelated_data(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "test.json"
+            original = {"before": {"x": 1}, BLOCK_KEY: {"rows": [1]},
+                        "after": {"y": 2}}
+            path.write_text(json.dumps(original, ensure_ascii=False, indent=2) + "\n",
+                            encoding="utf-8")
+            insert_block(path, {"rows": [1, 2]})
+            updated = json.loads(path.read_text(encoding="utf-8"))
+            self.assertEqual(list(original), list(updated))
+            self.assertEqual(updated["before"], {"x": 1})
+            self.assertEqual(updated["after"], {"y": 2})
+            self.assertEqual(updated[BLOCK_KEY], {"rows": [1, 2]})
+
+    def test_claim_register_mixed_format_is_updated_in_place(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "mixed.json"
+            token = json.dumps(BLOCK_KEY)
+            original = ('{\n  "before": {"x": 1},\n  '
+                        + token + ': {"rows": [1]},\n  "after": {"y": 2}\n}\n')
+            path.write_text(original, encoding="utf-8")
+            insert_block(path, {"rows": [1, 2]})
+            updated = path.read_text(encoding="utf-8")
+            self.assertIn('"before": {"x": 1}', updated)
+            self.assertIn('"after": {"y": 2}', updated)
+            self.assertEqual(list(json.loads(updated)), ["before", BLOCK_KEY, "after"])
+            self.assertEqual(json.loads(updated)[BLOCK_KEY], {"rows": [1, 2]})
+
+    def test_produced_table_is_an_exact_fixed_point(self):
+        self.assertEqual(self.document, reshoot.render_table_91(self.corpus, self.document))
+        self.assertEqual([], reshoot.check_table_91(self.corpus, text=self.document))
+
+    def test_stale_numeric_cell_is_repaired_without_other_changes(self):
+        broken = self.ot_row.replace("| 230 |", "| 999 |", 1)
+        self.assertNotEqual(broken, self.ot_row)
+        corrupted = self.document.replace(self.ot_row, broken, 1)
+        self.assertTrue(reshoot.check_table_91(self.corpus, text=corrupted))
+        self.assertEqual(self.document, reshoot.render_table_91(self.corpus, corrupted))
+
+    def test_duplicate_lan_row_is_rejected(self):
+        corrupted = self.document.replace(self.ot_row + "\n",
+                                          self.ot_row + "\n" + self.ot_row + "\n", 1)
+        with self.assertRaises(SystemExit):
+            reshoot.render_table_91(self.corpus, corrupted)
+
+    def test_missing_lan_row_is_rejected(self):
+        corrupted = self.document.replace(self.ot_row + "\n", "", 1)
+        with self.assertRaises(SystemExit):
+            reshoot.render_table_91(self.corpus, corrupted)
 
 
 if __name__ == "__main__":

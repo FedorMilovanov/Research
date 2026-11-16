@@ -887,6 +887,7 @@ SCAN_EXEMPT = {
     "apply_corpus": "писатель: подставляет измеренные числа в корпус; читает и сравнивает — другие; якорь `main`",
     "doc_numbers": "генератор: (регулярка, строка) для документа; сверка результата — в петле apply/check; якорь `diff_state_scan`",
     "apply_doc": "писатель: применяет сгенерированные строки к документу, отказывается при двух якорях; якорь `main`",
+    "render_table_91": "писатель: генерирует числовые строки §9.1 из учтённых карточек; результат независимо сверяется функцией check_table_91; вызывающий якорь `apply_doc`",
     "report_not_generated": "служебная фраза отчёта о блоках, которые генератор не создаёт; сравнивает ничего; якорь `main`",
     "main": "разбор флагов и вызов шагов; сверок в теле не определено; корневой якорь `main` — его никто не зовёт",
 }
@@ -1291,7 +1292,7 @@ def tree_counts_trap():
         for relpath, content in files.items():
             dst = Path(tmp) / relpath
             dst.parent.mkdir(parents=True, exist_ok=True)
-            dst.write_text(content, encoding="utf-8")
+            dst.write_text(content, encoding="utf-8", newline="\n")
         t = tree_counts(Path(tmp))
         problems = []
         if (t["docs"][0], t["docsNumbered"]) != (4, 3) or t["rootmd"][0] != 2:
@@ -1866,12 +1867,69 @@ def apply_doc(corp: dict, n: dict) -> str:
             raise SystemExit(f"якорь {pat!r} нашёл {len(hits)} строк вместо одной — генератор "
                              "остановлен, чтобы не писать в две строки или не пропустить свою")
         text = re.sub(pat, lambda _m, s=new: s, text, count=1, flags=re.M)
-    return text
+    return render_table_91(corp, text)
 
+
+
+def render_table_91(corp: dict, text: str) -> str:
+    """Rebuild only the numeric rows of section 9.1 from the canonical claim register.
+
+    Refuse ambiguous headings, duplicate/missing lanes and malformed tables
+    instead of silently repairing an unrelated passage. The independent
+    check_table_91 still validates the result.
+    """
+    lines = text.splitlines(keepends=True)
+    heads = [i for i, row in enumerate(lines) if re.match(r"^### 9\.1(?:\s|$)", row)]
+    if len(heads) != 1:
+        raise SystemExit(f"section 9.1 writer: expected one heading, found {len(heads)}")
+    start = heads[0]
+    stop = next((i for i in range(start + 1, len(lines))
+                 if lines[i].startswith(("### ", "## "))), len(lines))
+    cpr = corp["integrityGate"]["scopeOfMeasurementRules"]["claimsPerRegistry"]
+    keys = list(SUBLANES) + ["корпус"]
+    cols = ("строк", "покрытоПоФайлу", "файлов", "карточекБезСостояния",
+            "неОтраженоВКарточке", "терминовКарточкиВнеПрозы",
+            "ссылокВнеОбходаЛана")
+    expected = {}
+    for key in keys:
+        obj = cpr["сверкаСКарточками"][key]
+        expected[key] = [obj[k] for k in cols]
+    totals = [sum(expected[key][i] for key in keys) for i in range(7)]
+    if totals[0] != cpr["всего"]:
+        raise SystemExit("section 9.1 writer: row sum disagrees with canonical total")
+    expected["всего"] = totals
+    found = {}
+    for i in range(start, stop):
+        line = lines[i]
+        if not line.lstrip().startswith("|"):
+            continue
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        if not cells:
+            continue
+        raw_key = cells[0].replace(chr(96), "").replace("*", "").strip()
+        if raw_key not in expected:
+            continue
+        if raw_key in found or len(cells) != 8:
+            raise SystemExit(f"section 9.1 writer: duplicate or malformed row {raw_key}")
+        if any(not re.fullmatch(r"\*{0,2}[0-9 ]+\*{0,2}", val) for val in cells[1:]):
+            raise SystemExit(f"section 9.1 writer: non-numeric row {raw_key}")
+        vals = expected[raw_key]
+        displayed = ([f"**{v}**" for v in vals]
+                     if raw_key == "всего" else [str(v) for v in vals])
+        ending = "\n" if line.endswith("\n") else ""
+        lines[i] = "| " + cells[0] + " | " + " | ".join(displayed) + " |" + ending
+        found[raw_key] = True
+    if set(found) != set(expected):
+        raise SystemExit(f"section 9.1 writer: missing rows {sorted(set(expected)-set(found))}")
+    updated = "".join(lines)
+    problems = check_table_91(corp, text=updated)
+    if problems:
+        raise SystemExit("section 9.1 writer inconsistent: " + "; ".join(problems))
+    return updated
 
 def check_table_91(corp: dict, text: str = None) -> list:
-    """Таблицу §9.1 этот скрипт не порождает (её производитель — утраченный финалайзер круга 61),
-    но право её сверить оставляет: каждая ячейка обязана равняться полю реестра.
+    """Таблица §9.1 генерируется render_table_91 из канонического реестра,
+    а этот независимый читатель проверяет все строки и итоговые ячейки.
 
     `text` — тот же обход, но по поданному тексту: он нужен ловушке, чтобы посадить расхождение в
     строку, не трогая документ (круг 65, правка 12). Без этой опции сверка была непроверяема:
@@ -1936,9 +1994,10 @@ def report_not_generated(corp: dict) -> str:
             "reproducibility20261022.indexBytesNote20261026r53",
             "fourPointMassRegistry20261023.cardProseCrossCheck20261026r60.числа",
             "integrityGate." + ENV_DECL_BLOCK]
-    lines = ["этот скрипт переснимает только перечисленное; из разделов 9.1 и 9.2 документа 18 он "
-             "проверяет (но не пишет) таблицу §9.1, а остальное — проза, порождённая утраченным "
-             "финалайзером круга 61, и живёт до ближайшей ручной правки:", "  реестровые блоки-источник: "
+    lines = ["пересъёмщик обновляет таблицу §9.1 из `claimsPerRegistry` с независимой "
+             "проверкой всех ячеек; сам блок реестра производит `atonement_claim_register.py`. "
+             "Прочая историческая проза документа 18 не генерируется автоматически.",
+             "  реестровые блоки-источник: "
              + ", ".join("`%s`" % k for k in keys), "  поля, которые он намеренно не трогает: "
              "`claimsPerRegistry` целиком — с круга 65 у сводки есть свой производитель: "
              "atonement_claim_register.py (`--write` переснимает, `--check` и `--rollup` сверяют; "
