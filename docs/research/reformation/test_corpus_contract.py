@@ -17,8 +17,12 @@ class ReformationContractTests(unittest.TestCase):
     def test_current_corpus_integrity(self):
         errors, stats = corpus.validate()
         self.assertEqual(errors, [])
-        self.assertGreaterEqual(stats["sources"], 147)
-        self.assertGreaterEqual(stats["claims"], 226)
+        # The previous 147/226 thresholds were from an obsolete wave and
+        # could allow accidental loss of 42 sources and 89 claim rows.
+        # Pin the confirmed manuscript + epilogue candidate floor; any intentional retirement needs an
+        # explicit reviewed baseline change rather than silent attrition.
+        self.assertGreaterEqual(stats["sources"], 193)
+        self.assertGreaterEqual(stats["claims"], 319)
 
     def test_original_ledger_lf_crlf_and_tampering(self):
         data = (HERE / "source-ledger-2026-11-03-original.md").read_bytes()

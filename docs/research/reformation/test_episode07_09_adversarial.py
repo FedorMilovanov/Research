@@ -1,0 +1,234 @@
+#!/usr/bin/env python3
+"""Scoped, read-only contract for RF-EDIT-07-09: narrative distinctions.
+
+This guards the edited research texts; it does not verify historical truth,
+critical original-print collation, use rights or editorial publication approval.
+"""
+from pathlib import Path
+import json
+import unittest
+
+HERE = Path(__file__).resolve().parent
+BOOKS = {
+    7: HERE / "episode07_luther_peasants_war_1524_1525_manuscript.md",
+    8: HERE / "episode08_justification_confessions_1530_1563_manuscript.md",
+    9: HERE / "episode09_calvin_geneva_1535_1555_manuscript.md",
+}
+
+
+class ReformationAdversarialSevenNineTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.books = {n: p.read_text(encoding="utf-8") for n, p in BOOKS.items()}
+
+    def test_three_manuscripts_keep_reader_and_apparatus(self):
+        for n, s in self.books.items():
+            with self.subTest(chapter=n):
+                self.assertTrue(s.startswith(f"# Эпизод {n:02}."))
+                self.assertIn("## Источниковедческий аппарат", s)
+                reader, apparatus = s.split("## Источниковедческий аппарат", 1)
+                self.assertGreaterEqual(len(reader.split()), 1500)
+                self.assertIn("adversarial-матрица", apparatus)
+                for status in ("RESEARCH_MANUSCRIPT_DRAFT", "NOT_EDITORIAL_READY",
+                               "PUBLICATION_HOLD"):
+                    self.assertIn(status, apparatus)
+                for label in ("Допустим", "REF-P", "HOLD"):
+                    self.assertIn(label.lower(), apparatus.lower())
+
+    def test_wave411_reader_first_and_source_metadata_preserved(self):
+        """The publication gate survives in the apparatus, not as reader scaffolding."""
+        cases = (
+            (7, "Требования, которые нельзя свести к мятежу",
+             "не выводится число жертв из богословских памфлетов"),
+            (8, "После войны — к вопросу о мире с Богом",
+             "не является нейтральной отменой их разногласий"),
+            (9, "Реформация, которую Кальвин не начинал",
+             "не превращается в вымышленную стенограмму"),
+        )
+        for num, first_title, unique_provenance in cases:
+            with self.subTest(chapter=num):
+                content = self.books[num]
+                reader, apparatus = content.split("## Источниковедческий аппарат", 1)
+                self.assertTrue(reader.startswith(f"# Эпизод {num:02}."))
+                self.assertIn("\n\n## " + first_title, reader)
+                self.assertNotIn("**Статус:**", reader)
+                self.assertEqual(apparatus.count(unique_provenance), 1)
+                self.assertIn("**Статус:** RESEARCH_MANUSCRIPT_DRAFT", apparatus)
+                self.assertIn("NOT_EDITORIAL_READY", apparatus)
+                self.assertIn("RIGHTS_HOLD", apparatus)
+                self.assertIn("PUBLICATION_HOLD", apparatus)
+
+    def test_ch07_whole_reader_distinguishes_grievances_two_works_and_civic_violence(self):
+        """Protect chapter 07's one-pass argument without inventing execution proof."""
+        reader, apparatus = self.books[7].split("## Источниковедческий аппарат", 1)
+        self.assertGreater(len(reader.split()), 1950)
+        self.assertEqual(reader.count("## "), 9)
+        for term in ("«Двенадцати статей»", "Лотцер", "Шаппелер",
+                     "Вайнсберг и Вайнгартен", "Вайнгартенское соглашение",
+                     "два разных авторских текста", "смертоносному подавлению",
+                     "не документирует судьбу каждой деревни",
+                     "21 мая 1525 года войска Швабского союза сожгли Вайнсберг",
+                     "1553 году", "коллективного наказания",
+                     "не доказательство личной виновности каждого жителя",
+                     "непосредственному воздействию памфлета Лютера",
+                     "episode08_justification_confessions_1530_1563_manuscript.md"):
+            with self.subTest(term=term):
+                self.assertIn(term.lower(), reader.lower())
+        self.assertNotRegex(reader, r"https?://|\bVD16\b|\bREF-[PS]\d+")
+        for marker in ("REF-P07-ZRH", "REF-P07-WIT", "REF-P08",
+                       "REF-P08-ERF", "REF-S109", "REF-S96",
+                       "ORIGINAL_PUNITIVE_ORDER_UNREAD", "NOT_EDITORIAL_READY",
+                       "ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, apparatus)
+
+    def test_peasants_prints_and_voice_limit(self):
+        s = self.books[7]
+        for marker in ("Двенадцать статей", "прежнее увещание",
+                       "один авторский памфлет", "REF-P07-ZRH",
+                       "REF-P07-WIT", "REF-P08", "REF-P08-ERF",
+                       "не документирует судьбу каждой деревни",
+                       "Полное дипломатическое сопоставление каждой строки"):
+            with self.subTest(marker=marker):
+                self.assertIn(marker.lower(), s.lower())
+        self.assertIn("двух отдельных печатных экземплярах", s)
+
+    def test_justification_different_definitions_and_confessions(self):
+        s = self.books[8]
+        for marker in ("статья IV", "статья VI", "статья XX",
+                       "главе VII", "Глава VIII", "канон IX",
+                       "канон XI", "канон XXIV", "формальную",
+                       "инструментальную", "REF-P14", "REF-P20",
+                       "REF-P77", "1563"):
+            with self.subTest(marker=marker):
+                self.assertIn(marker.lower(), s.lower())
+        self.assertIn("не", s.lower())
+
+    def test_geneva_civil_verdict_vs_church_jurisdiction(self):
+        s = self.books[9]
+        for marker in ("21 мая 1536", "20 ноября 1541",
+                       "30 ноября", "2 января 1542",
+                       "16 февраля 1542", "десятое заседание",
+                       "Малому совету", "27 октября 1553",
+                       "не заменяет судебный протокол",
+                       "REF-P21", "REF-P22", "REF-P38",
+                       "REF-S82", "LEGAL_RECORD_HOLD"):
+            with self.subTest(marker=marker):
+                self.assertIn(marker.lower(), s.lower())
+
+    def test_ch09_complete_read_catechism_ordinances_and_civil_jurisdiction(self):
+        """Protect documented distinctions; not a substitute for original archive collation."""
+        reader, apparatus = self.books[9].split("## Источниковедческий аппарат", 1)
+        self.assertGreater(len(reader.split()), 2000)
+        self.assertEqual(reader.count("## "), 8)
+        for term in (
+            "10 ноября 1536 года", "подготовленные вместе с Кальвином",
+            "20 ноября 1541 года", "первое воскресенье сентября",
+            "по воскресеньям в полдень", "катехизис",
+            "публичного исповедания веры", "детокрещения",
+            "старейшин-мирян назначали городские советы",
+            "Перренов, Бертелье и Фавров",
+            "двух разных судебных преследований",
+            "Малому совету", "27 октября 1553 года",
+            "episode10_england_scotland_1534_1581_manuscript.md",
+        ):
+            with self.subTest(term=term):
+                self.assertIn(term.lower(), reader.lower())
+        self.assertNotRegex(reader, r"https?://|\bVD16\b|\bREF-[PS]\d+")
+        for term in (
+            "P.H.1384", "опубликованной архивной передачи",
+            "20.11.1541", "30 ноября", "REF-P38",
+            "самостоятельная колляция всего французского оригинала",
+            "ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD",
+        ):
+            self.assertIn(term.lower(), apparatus.lower())
+
+    def test_wave401_reader_keeps_historical_argument_without_editorial_process(self):
+        import re
+        for n, text in self.books.items():
+            with self.subTest(chapter=n):
+                reader, apparatus = text.split("## Источниковедческий аппарат", 1)
+                self.assertGreaterEqual(len(reader.split()), 1500)
+                self.assertEqual(reader.count("PUBLICATION_HOLD"), 0)
+                self.assertIn("PUBLICATION_HOLD", apparatus)
+                self.assertNotRegex(reader, r"\b(?:VD16|CATALOG_ONLY|REF-[A-Z0-9-]+)\b")
+                self.assertIn(f"### Волна 401 —", apparatus)
+                self.assertIn("PUBLICATION_HOLD", text)
+
+        # The research provenance is intentionally retained verbatim in the
+        # existing apparatus, not silently discarded or repeated in the reader.
+        cases = {
+            7: (
+                "Дополнительная сверка полного опубликованного",
+                "У этого раннего увещания была собственная история печати.",
+                "Полное дипломатическое сопоставление каждой строки двух факсимиле",
+            ),
+            8: (
+                "Ни один из этих выводов не разрешает нам смешать",
+                "для сильных буквальных сравнений формул необходимо вернуться",
+            ),
+            9: (
+                "В отдельных обзорных материалах того же архива встречается дата",
+                "В современном английском переводе ордонансов Университета Орегона",
+                "R.C. XXXV, fol. 449",
+            ),
+        }
+        for n, snippets in cases.items():
+            reader, apparatus = self.books[n].split("## Источниковедческий аппарат", 1)
+            for snippet in snippets:
+                with self.subTest(chapter=n, provenance=snippet[:42]):
+                    self.assertNotIn(snippet, reader)
+                    self.assertIn(snippet, apparatus)
+
+    def test_wave401_essential_oppositions_survive_editing(self):
+        r7, _ = self.books[7].split("## Источниковедческий аппарат", 1)
+        r8, _ = self.books[8].split("## Источниковедческий аппарат", 1)
+        r9, _ = self.books[9].split("## Источниковедческий аппарат", 1)
+        for marker in ("1525 года", "и к господам, и к крестьянам",
+                       "два разных авторских текста", "смертоносному подавлению",
+                       "Вайнсберг", "Вайнгартен"):
+            self.assertIn(marker.lower(), r7.lower())
+        for marker in ("статья IV", "статья VI", "статья XX",
+                       "главе VII", "глава VIII", "канон IX",
+                       "канон XI", "канон XXIV", "крещение — инструментальной",
+                       "сообщаемая человеку праведность — формальной",
+                       "Гейдельбергский", "Тридент"):
+            self.assertIn(marker.lower(), r8.lower())
+        for marker in ("21 мая 1536 года", "20 ноября 1541 года",
+                       "2 января 1542 года", "16 февраля 1542 года",
+                       "десятое заседание", "Консисторию", "Малому совету",
+                       "27 октября 1553 года"):
+            self.assertIn(marker.lower(), r9.lower())
+        plan = (HERE / "SELF_PLAN.md").read_text(encoding="utf-8")
+        # A completed wave moves to history; its reader/provenance contract survives.
+        # Only one numbered passport may be active at any point in time.
+        import re
+        self.assertRegex(plan, r"(?m)^## (?:ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна 401\b|ИСТОРИЧЕСКИЙ СРЕЗ ВОЛНЫ 401\b)")
+        active = re.findall(r"(?m)^## ТЕКУЩИЙ ПАСПОРТ И ОЧЕРЕДЬ — волна \d+\b", plan)
+        self.assertEqual(len(active), 1, "exactly one active SELF_PLAN passport")
+        self.assertIn("Research/main", plan)
+        self.assertIn("ORIGINAL_PRINT_COLLATION_HOLD", plan)
+        self.assertIn("INDEPENDENT_EXTERNAL_REVIEW_OPEN", plan)
+        self.assertIn("THEOLOGICAL_PEER_REVIEW_OPEN", plan)
+
+    def test_registry_count_and_single_active_plan(self):
+        j = json.loads((HERE / "source-registry-v1.json").read_text(encoding="utf-8"))
+        self.assertEqual(j["sourceCount"], len(j["sources"]))
+        self.assertGreaterEqual(j["sourceCount"], 195)
+        self.assertTrue(all(row["publicationState"] == "REFERENCE"
+                            and "PUBLICATION_HOLD" in row["holds"]
+                            for row in j["sources"]))
+        lines = (HERE / "03_claim_verification_register.md").read_text(encoding="utf-8").splitlines()
+        ids = [int(line.split(" |", 1)[0][3:])
+               for line in lines if line.startswith("| C")
+               and len(line) > 3 and line[3].isdigit()]
+        self.assertEqual(ids, list(range(1, 320)))
+        plan = (HERE / "SELF_PLAN.md").read_text(encoding="utf-8")
+        self.assertIn("ИСТОРИЧЕСКИЙ СРЕЗ ВОЛНЫ 385", plan)
+        self.assertIn("RF-EDIT-10-12", plan)
+        self.assertIn("STOP_DISCOVERY", plan)
+        self.assertIn("PUBLICATION_HOLD", plan)
+
+
+if __name__ == "__main__":
+    unittest.main()

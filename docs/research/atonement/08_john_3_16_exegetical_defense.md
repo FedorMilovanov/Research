@@ -1,5 +1,10 @@
 # Экзегетический и богословский анализ Иоанна 3:16: Тайна любви к «миру» (κόσμος), природа искупления и преодоление эйзегезы
 
+> **⚠️ Первоисточниковый аудит Волны 20 (2026-11-15; `LEGACY_NO_CLASSES`, исторические строки ниже не удаляются по `AGENT_RULES.md` §3):**
+> 1. **§II.1 (Б. Б. Уорфилд) — неверное название проповеди и пересказ (`PRIMARY_SOURCE_CORRECTION / QUOTE_RISK`):** знаменитая проповедь Б. Б. Уорфилда на Ин. 3:16 называется ***«God's Immeasurable Love»*** (в сб. *The Saviour of the World*, 1913; переизд. *New Horizons*, April 2003), а **НЕ** *«The Love of God for the World»*. Приведённый в §II.1 русский блок — **свободный пересказ** (в оригинале: *«There is nothing in it that can attract God's love—nay, that can justify the love of any good man»*). Кроме того, в §II.1 опущен важный постмилленаристский вывод самого Уорфилда: *«God did not then only so love the world as to give it a bare chance of salvation: He so loved the world that He saved the world»*.
+> 2. **§IV.1 (`οὕτως... ὥστε`):** категоричное противопоставление «образа действия» и «степени» требует калибровки — сам Джон Оуэн (*The Death of Death*) читал *houtōs* в значении высокой степени (*to such an astonishing extent*), а современные грамматисты (Карсон, Уоллес) признают переплетение значения способа и подразумеваемой степени.
+> 3. **Кальвин на Ин. 3:16:** см. верифицированное дополнение раунда 58 в конце файла (`34_` §4.124, класс `B1`). Общекорпусный `EVIDENCE_HOLD` по объёму искупления сохраняется.
+
 Данное исследование посвящено фундаментальному вопросу христианской сотериологии, вокруг которого веками ведется полемика между арминианством/амиральдианством и классическим реформатским богословием:  
 **«Ибо так возлюбил Бог мир, что отдал Сына Своего Единородного, дабы всякий верующий в Него не погиб, но имел жизнь вечную» (Иоанна 3:16).**
 
@@ -159,3 +164,8 @@ faith*».
 
 **4. Оговорки.** Класс **B1** (перевод CTS; лат. не сверен). Выражение «*reconciled*» в переводе против «*propice*»
 у Амиро — вероятно, переводчик передаёт «*propitium*»; **проверить по латыни** (не утверждать).
+
+> **[Волна 22, 2026-11-15 — закрытие латинского вопроса п. 4 (`propitium` vs `reconciliatum`); см. `ИСКУПЛЕНИЕ/fathers/21_` §8.1 и `09_` `F-51`]:**
+> Двойная независимая латинская сверка толкования Кальвина на Ин. 3:16 (`CO 47:64`, Женева 1553; John Goodwin 1651 и A. F. Mitchell / J. P. Struthers; полистная сверка скана CO 47:64 — `LOCATOR_HOLD`) **подтверждает гипотезу Раунда 58: в латинском оригинале стоит именно `propitium`**, а не `reconciliatum`:
+> *«Tametsi enim in mundo nihil reperietur Dei favore dignum, **se tamen toti mundo propitium ostendit**, quum sine exceptione omnes ad fidem Christi vocat, quae nihil aliud est quam ingressus in vitam. Caeterum meminerimus ita communiter promitti omnibus vitam in Christo, qui crediderint, ut tamen minime communis omnium sit fides. **Patet enim omnibus Christus ac expositus est, solis tamen electis oculos Deus aperit.**»*
+> Таким образом, английское *«reconciled»* у Прингла (CTS, 1847) — переводческое смещение (`F-51`); подлинная латынь Кальвина говорит о **благосклонности предложения** (`propitium`, ср. фр. *propice* у Амиро) при чётком ограничении действенного просвещения избранными (`solis tamen electis oculos Deus aperit`). Класс данного локуса повышен с `B1` до проверенного латинского текста (с сохранением `LOCATOR_HOLD` на печатный скан тома CO 47).

@@ -383,6 +383,15 @@
 
 # Анализ раздела «Необходимость баланса» у А. Прокопенко: Вырывание цитат из контекста (Quote-Mining) и богословская эквивокация
 
+> **⚠ СТАТУС ФАЙЛА: `LEGACY_NO_CLASSES` + первоисточниковый аудит Волны 18 (2026-11-15).**
+> Исторический текст ниже написан до введения системы классов доказательств (`AGENT_RULES.md`) и **не удаляется**.
+> Первоисточниковая сверка Волны 18 выявила **множественные ошибки атрибуции и неточные пересказы, оформленные как прямые цитаты**, в §§2.1–2.5:
+> - **Эдвардс (§2.1):** контрцитата из «*Miscellaneous Observations on Atonement*» не локализована (`QUOTE_RISK / LOCATOR_HOLD`);
+> - **Ч. Ходж (§2.2):** цитата `ST, II, p. 556` — пересказ (на с. 556 находятся три аналогии, см. `36_` с. 556; подлинная формула Ходжа — на с. 558);
+> - **Ч. Сперджен (§2.4):** **тройная ошибка** — проповедь *«General and Yet Particular»* имеет номер **#566** (24 апреля 1864 г.), а не **#564**, и прочитана на **Ин. 17:2**, а не на **1 Тим. 4:10**; обе русские цитаты в §2.4 сфабрикованы/пересказаны, причём в подлинном тексте #566 Сперджен действительно связывает продление жизни нечестивых с искуплением, одновременно жёстко ограничивая спасительный замысел избранными;
+> - **Л. Беркхоф (§2.5):** цитата сс. 393–397 — пересказ (`QUOTE_RISK`); подлинная формулировка см. в пометке ниже.
+> Подробные пометки `PRIMARY_SOURCE_CORRECTION` даны на месте без удаления прежних строк. Общекорпусный `EVIDENCE_HOLD` сохраняется.
+
 **Дата исследования:** Октябрь 2026  
 **Обязательное обновление (04.11.2026):** в старом §2.4 неверно определены номер и библейский текст проповеди Сперджена; доказательный статус и исправления во вновь добавленном §6 ниже. Ранние категоричные утверждения **не являются действующим научным вердиктом** без прямой сверки первоисточника.
 
@@ -418,6 +427,11 @@
   > *«Если Христос искупил тех, кто погибнет, значит, Его кровь была пролита напрасно, а правосудие Божье требует двойного удовлетворения — сначала на Кресте, а затем в вечном огне ада, что невозможно»*.
 - Превращать Эдвардса в свидетеля в пользу 4-пунктового амиральдизма — вопиющее насилие над его мыслью.
 
+> **Пометка 2026-11-15 (Волна 18, `QUOTE_RISK / LOCATOR_HOLD` для §2.1 — исторические строки выше не удаляются):**
+> 1. Цитата, которую приводит Прокопенко, действительно дословно принадлежит Эдвардсу (*Freedom of the Will*, 1754, Part IV, Sect. XII): *«From these things it will inevitably follow, that however Christ in some sense may be said to die for all, and to redeem all visible Christians, yea, the whole world, by his death; yet there must be something particular in the design of his death, with respect to such as he intended should actually be saved thereby»* (A1).
+> 2. Напротив, контрцитата, приписанная выше «*Miscellaneous Observations on Atonement*» (у Эдвардса нет сочинения с таким названием — есть *Miscellaneous Observations on Important Theological Subjects* [Edinburgh, 1793] и *Remarks on Important Theological Controversies*, Ch. V *Of Satisfaction for Sin*), **не найдена дословно** в корпусе Эдвардса и помечена как `QUOTE_RISK / LOCATOR_HOLD`.
+> 3. Реальная позиция Эдвардса сложнее: в *Miscellanies* #21 и #424 и в *The Wisdom of God Displayed in the Way of Salvation* (*Works*, Banner of Truth, Vol. II, p. 142) он строго утверждает частность спасительного замысла (*«God did not intend to save those, by the death of Christ, that he knew, from all eternity, he should not save by his death»*), но одновременно допускает, что временное сохранение жизни и возможность спасения даруются миру через крест (`ИСКУПЛЕНИЕ/fathers/18_` §3).
+
 ### 2.2. Чарльз Ходж и Арчибальд Ходж: смешение «ценности» и «замысла»
 Прокопенко цитирует Чарльза Ходжа (с. 9): *«Таким образом, в каком-то смысле Христос умер за всех, а в каком-то — только за избранных»*, и его сына А. А. Ходжа (сс. 9–10) о том, что эпоха долготерпения и временные милости куплены кровью Христовой.
 
@@ -430,6 +444,10 @@
 4. Чарльз Ходж эксплицитно заявляет:
    > *«Реформатская церковь категорически отрицает, что Бог имел какое-либо намерение или цель спасти всех людей через жертву Христа... Утверждать, что искупление является универсальным по замыслу, но частным по применению — значит разрушать целостность божественного плана»* (ST, II, p. 556).
 Прокопенко берет у Ходжа признание бесконечной ценности креста и побочных даров общей благодати, но умалчивает о том, что Ходж бескомпромиссно отвергает саму суть сотериологии Прокопенко.
+
+> **Пометка 2026-11-15 (Волна 18, `PRIMARY_SOURCE_CORRECTION / QUOTE_RISK` для §§2.2–2.3 — исторические строки выше не удаляются):**
+> - **Ч. Ходж (§2.2):** приведённый выше блок с пометкой `ST, II, p. 556` — **не дословная цитата** (на с. 556 находятся три аналогии Ходжа: кораблекрушение, выкуп пленных и званый пир; см. нашу полную выписку [`36_hodge_st_vol2_atonement_scan_2026-10-30.md`](36_hodge_st_vol2_atonement_scan_2026-10-30.md) на сс. 554–561). Дословная ключевая формула Ходжа находится на **с. 558**: *«Augustinians do not deny that Christ died for all men. What they deny is that He died equally, and with the same design, for all men»* (A1).
+> - **У. Г. Т. Шедд (§2.3):** утверждение о «меньшинстве/уловке» уточнено в [`34_`](34_atonement_vs_redemption_lexical_history_and_shedd_distinction.md) (§4.34–4.38) и [`ИСКУПЛЕНИЕ/fathers/18_`](../../../ИСКУПЛЕНИЕ/fathers/18_MODERN_ERA_XVIII_XIX_C_PRIMARY_AUDIT_1718_1931_2026-11-15.md) §4: стипуляция Шедда (*atonement* = объективное удовлетворение, *redemption* = действенное применение) унаследовала новоанглийский канал 1795–1819 гг. (*Utica Christian Magazine* 1815, Whelpley 1816, Weeks 1820), но при этом сам Шедд оставался строгим пятипунктным кальвинистом по намерению спасения.
 
 ### 2.3. Уильям Г. Т. Шедд: терминологическая уловка Прокопенко
 Прокопенко посвящает целую страницу (с. 10) Шедду, который предлагал формулу: *«Искупление (atonement) неограниченное, а избавление (redemption) ограниченное»*.
@@ -459,6 +477,14 @@
 2. Беркхоф формулирует нерушимый реформатский принцип:
    > *«Крест Христов действительно косвенно приносит неисчислимые временные блага миру (общая благодать, существование человеческой истории). Однако эти блага являются **не целью (design) искупления per se**, а его **неизбежным побочным плодом (incidental result)**, обусловленным тем, что избранные рождаются и живут бок о бок с нечестивыми в одном физическом мире»*.
 3. Беркхоф настаивает: неизбранные получают общую благодать не потому, что Христос стал их заместителем перед судом Бога, а потому, что Бог ради Своих избранных поддерживает существование мироздания до дня Второго пришествия.
+
+> **Пометка 2026-11-15 (Волна 18, `PRIMARY_SOURCE_CORRECTION / SUPERSEDED` для §§2.4–2.5 — исторические строки выше не удаляются):**
+> 1. **Чарльз Сперджен (§2.4) — тройная фактологическая ошибка + две сфабрикованные цитаты:**
+>    - Проповедь *«General and Yet Particular»* — это **Metropolitan Tabernacle Pulpit Vol. 10, Sermon No. 566** (24 апреля 1864 г., `spurgeon.org`), а **НЕ #564** (под № 564 от 10 апреля 1864 г. значится *A Promise for Us and for Our Children*).
+>    - Текст проповеди #566 — **Ин. 17:2** (*«Thou hast given him power over all flesh, that he should give eternal life to as many as thou hast given him»*), а **НЕ 1 Тим. 4:10**!
+>    - Обе русские цитаты в §2.4 отсутствуют в тексте проповеди #566 (`QUOTE_RISK`). Более того, в подлинном тексте #566 Сперджен **действительно связывает продление земной жизни нечестивых с искуплением и посреднической властью Христа**, одновременно жёстко ограничивая **спасительный замысел** исключительно избранными (A1, `spurgeon.org/sermons/general-and-yet-particular`):
+>      > *«I trace to Christ's atonement the continued life of the most obdurate. All the long-suffering mercy of God seems to me to flow through the channel of the Saviour's authority over all flesh... But why all this? The text tells us that the object and design of all this was not universal, but special — that the intention of God in thus putting all men under the power of Christ was not that all men might receive eternal life, but that he might give eternal life to as many as had been given to him.»*
+> 2. **Луис Беркхоф (§2.5):** приведённый в §2.5 русский блок (`ST, pp. 393–397`) — **пересказ** (`QUOTE_RISK`). В подлиннике (*Systematic Theology*, Part IV, Ch. III *Common Grace*, Sect. C *Common Grace and the Atoning Work of Christ*) Беркхоф фиксирует внутриреформатское различие (А. Кёйпер выводит общую благодать из Христа как Посредника творения, а ряд других реформатских богословов — из креста как косвенный плод): *«Several Reformed theologians hold that, though Christ suffered and died only for the purpose of saving the elect, many benefits of the cross of Christ do actually — and that also according to the plan of God — accrue to the benefit of those who do not accept Christ by faith. They believe that the blessings of common grace also result from the atoning work of Christ»* (ср. *Summary*: *«The blessings of common grace may be regarded as indirect results of the atoning work of Christ»*).
 
 ---
 

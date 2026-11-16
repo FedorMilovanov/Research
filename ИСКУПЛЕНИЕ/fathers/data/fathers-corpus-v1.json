@@ -893,7 +893,8 @@
         "ORIGINAL_TEXT_HOLD",
         "PUBLICATION_HOLD",
         "RIGHTS_HOLD",
-        "RIGHTS_UNCLEAR"
+        "RIGHTS_UNCLEAR",
+        "FALSE_LOCATOR"
       ],
       "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
     },
@@ -1001,7 +1002,11 @@
         "ARCHIVE_HOLD",
         "FALSE_FRIEND",
         "LOCATOR_HOLD",
-        "ORIGINAL_TEXT_HOLD"
+        "ORIGINAL_TEXT_HOLD",
+        "RIGHTS_HOLD",
+        "FALSE_LOCATOR",
+        "PARTIAL_VERIFICATION",
+        "PUBLICATION_HOLD"
       ],
       "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
     },
@@ -1013,9 +1018,131 @@
         "ARCHIVE_HOLD",
         "LOCATOR_HOLD",
         "ORIGINAL_TEXT_HOLD",
-        "RIGHTS_HOLD"
+        "RIGHTS_HOLD",
+        "FALSE_LOCATOR"
       ],
       "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "12",
+      "file": "ИСКУПЛЕНИЕ/fathers/12_DEEP_PRIMARY_DOSSIER_II_VIII_C_2026-11-15.md",
+      "topic": "Глубокое первоисточниковое досье II–VIII вв. (греческий и латинский тексты)",
+      "holds": [
+        "ORIGINAL_TEXT_HOLD",
+        "PARTIAL_VERIFICATION",
+        "PUBLICATION_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "13",
+      "file": "ИСКУПЛЕНИЕ/fathers/13_AUGUSTINE_AND_MEDIEVAL_TURNING_POINT_2026-11-15.md",
+      "topic": "Августин Иппонийский и средневековый перелом V–XIII вв. (проверенная латынь)",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "14",
+      "file": "ИСКУПЛЕНИЕ/fathers/14_FIVE_THESES_AUDIT_AND_CH14_16_BRIDGE_2026-11-15.md",
+      "topic": "Аудит пяти популярных тезисов, сводная матрица II–XIII вв. и мост к главам 14–16",
+      "holds": [
+        "FALSE_FRIEND",
+        "OPEN_TENSION",
+        "PUBLICATION_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "15",
+      "file": "ИСКУПЛЕНИЕ/fathers/15_LATE_PATRISTIC_AND_SCOTIST_PIVOT_IV_XIV_C_2026-11-15.md",
+      "topic": "Позднепатристический и скотистский перелом IV–XIV вв. (Кирилл Иер., Василий, Максим, Кьерси/Валанс, Бернард, Дунс Скот)",
+      "holds": [
+        "ORIGINAL_TEXT_HOLD",
+        "PARTIAL_VERIFICATION",
+        "PUBLICATION_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "16",
+      "file": "ИСКУПЛЕНИЕ/fathers/16_REFORMATION_ATONEMENT_PRIMARY_AUDIT_XVI_C_2026-11-15.md",
+      "topic": "Реформация XVI века об искуплении: Лютер, Кальвин, Гейдельбергский катехизис / Урсин, Второе гельветическое, Беза и аудит 15_ §§3–5",
+      "holds": [
+        "FALSE_FRIEND",
+        "OPEN_TENSION",
+        "ORIGINAL_TEXT_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "17",
+      "file": "ИСКУПЛЕНИЕ/fathers/17_POST_REFORMATION_XVII_C_PRIMARY_AUDIT_1617_1689_2026-11-15.md",
+      "topic": "Первоисточниковый аудит XVII века (1578–1689): Социн, Гроций, Дорт/Давенант, эволюция Оуэна 1647→1653, колляция WCF/Savoy/1689 (C-14), Гельветическая формула согласия и Турретин",
+      "holds": [
+        "FALSE_FRIEND",
+        "ORIGINAL_TEXT_HOLD",
+        "PUBLICATION_HOLD",
+        "QUOTE_RISK"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "18",
+      "file": "ИСКУПЛЕНИЕ/fathers/18_MODERN_ERA_XVIII_XIX_C_PRIMARY_AUDIT_1718_1931_2026-11-15.md",
+      "topic": "Первоисточниковый аудит XVIII–XX веков (1718–1931): Marrow/Бостон, Гилл и Фуллер, Эдвардс-ст.→мл./Новая Англия и Кэмпбелл, Бушнелл, Ч. Ходж, Шедд/Стронг, Бавинк и Аулен",
+      "holds": [
+        "FALSE_FRIEND",
+        "ORIGINAL_TEXT_HOLD",
+        "PUBLICATION_HOLD",
+        "QUOTE_RISK"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "19",
+      "file": "ИСКУПЛЕНИЕ/fathers/19_COUNTER_VOICES_TRENT_CONCORD_REMONSTRANTS_AMYRAUT_BAXTER_1547_1694_2026-11-15.md",
+      "topic": "Первоисточниковый аудит контрголосов и границ консенсуса XVI–XVII веков (1547–1694): Тридент, Формула Согласия, Арминий и ремонстранты, Камерон/Амиро и Ричард Бакстер",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "FALSE_FRIEND",
+        "ORIGINAL_TEXT_HOLD",
+        "PUBLICATION_HOLD",
+        "QUOTE_RISK"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
+    },
+    {
+      "id": "20",
+      "file": "20_EASTERN_RUSSIAN_AND_XX_C_ATONEMENT_RECEPTION_AUDIT_1350_2026_2026-11-15.md",
+      "topic": "Eastern Byzantine, Russian Orthodox & XX-XXI c. evangelical reception (1350-2026): Palamas, Cabasilas, St. Philaret, Khrapovitsky vs Florovsky/Lossky, Dodd vs Morris/Nicole, Barth, Packer, Russian EHB confessions",
+      "state": "primary-audit-wave-15-mixed-rights-and-original-holds",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "ORIGINAL_TEXT_HOLD",
+        "QUOTE_RISK",
+        "FALSE_FRIEND",
+        "ARCHIVE_HOLD"
+      ]
+    },
+    {
+      "id": "21",
+      "file": "21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
+      "topic": "Wave 22 original-language closures (II-IX c. patristic Greek/Latin & XVI-XVII c. Reformation Latin): Cyril of Jerusalem Cat. XIII.1-4, Chrysostom Hom. in Io. 65 & Hom. in Col. III, Augustine Enchiridion XVI.61-63 & Tract. in Io. 49.27, Hilary HIL-1 (fixing In Ps. I §18), Ambrose AMB-1 (III.3.19), Jerome JER-1 (I.11), Irenaeus V.1.1 suadela, Gottschalk IX c., Calvin John 3:16 propitium & 1 John 2:2 1551 Geneva Latin",
+      "state": "primary-original-language-closures-wave-22",
+      "holds": [
+        "ORIGINAL_TEXT_HOLD",
+        "PUBLICATION_HOLD",
+        "LOCATOR_HOLD",
+        "FALSE_LOCATOR",
+        "PARTIAL_VERIFICATION",
+        "FALSE_FRIEND",
+        "QUOTE_RISK",
+        "ARCHIVE_HOLD"
+      ]
     }
   ],
   "maps": [
@@ -1228,6 +1355,330 @@
       "locus": "Cyril of Alexandria, In Joannem Book I ch. 9 on John 1:11-13",
       "source": "Pusey 1872 Vol. I pp. 131-136 visual print scans (Wave 9)",
       "phrase": "p. 133: κατά γε τὸν τοῦ πεποιῆσθαι λόγον (creation) vs Israel πρωτότοκος vs p. 135: εἰς υἱοὺς... θέσει καὶ χάριτι διὰ πίστεως"
+    },
+    {
+      "cardId": "OR-1",
+      "locus": "Origen, In Matthaeum XVI.8; In Ioannem VI.53-55; Contra Celsum I.31",
+      "source": "OpenGreekAndLatin/First1KGreek (tlg2042.tlg030, tlg2042.tlg005, tlg2042.tlg001) — Wave 10",
+      "phrase": "λύτρον ἀντὶ πολλῶν τῶν πιστευσόντων... καὶ εἰ καθ’ ὑπόθεσιν πάντες ἐπίστευον... δεδώκει ἂν... ἀντὶ πάντων"
+    },
+    {
+      "cardId": "ATH-1",
+      "locus": "Athanasius, De Incarnatione §§9, 20, 54, 56-57",
+      "source": "OpenGreekAndLatin/First1KGreek (tlg2035.tlg002) — Wave 10",
+      "phrase": "ἀντίψυχον ὑπὲρ πάντων... ἐπλήρου τὸ ὀφειλόμενον ἐν τῷ θανάτῳ; §56 universal resurrection vs πῦρ αἰώνιον judgment"
+    },
+    {
+      "cardId": "GNZ-1",
+      "locus": "Gregory of Nazianzus, Oratio 45.22-30",
+      "source": "PG 36:653-664 Greek text (ldysinger.com) — Wave 10",
+      "phrase": "Εἰ μὲν τῷ πονηρῷ, φεῦ τῆς ὕβρεως... Εἰ δὲ τῷ Πατρί, πρῶτον μὲν πῶς; ... ὀλίγαι σταγόνες αἵματος τὸν κόσμον ὅλον ἀναπλάττουσαι"
+    },
+    {
+      "cardId": "GNY-1",
+      "locus": "Gregory of Nyssa, Oratio catechetica magna chs. 22-26, 30-32",
+      "source": "PG 45 Greek text (khazarzar.skeptik.net) — Wave 10",
+      "phrase": "δέλεαρ/ἄγκιστρον (ch. 24); ὁμότιμος ἐπὶ πάντας ἡ κλῆσις (ch. 30-31); apokatastasis of inventor of evil (ch. 26)"
+    },
+    {
+      "cardId": "CHR-1",
+      "locus": "John Chrysostom, In Epistulam I ad Timotheum Hom. VII",
+      "source": "PG 62:535-536 Greek text (documentacatholicaomnia.eu) — Wave 10",
+      "phrase": "Πάντας ἀνθρώπους θέλει σωθῆναι... Μιμοῦ τὸν Θεόν. Εἰ πάντας ἀνθρώπους θέλει σωθῆναι, εἰκότως ὑπὲρ πάντων δεῖ εὔχεσθαι"
+    },
+    {
+      "cardId": "DAM-1",
+      "locus": "John of Damascus, Expositio fidei III.27 (ch. 71) & IV.9 (ch. 82)",
+      "source": "PG 94:1096-1097, 1117-1125 Greek text (imgap.gr) — Wave 10 (resolves F-8)",
+      "phrase": "μὴ γὰρ γένοιτο τῷ τυράννῳ τὸ τοῦ Δεσπότου προσενεχθῆναι αἷμα... ἑαυτὸν τῷ Πατρὶ προσφέρει θυσίαν ὑπὲρ ἡμῶν; IV.9 = Περὶ πίστεως καὶ βαπτίσματος"
+    },
+    {
+      "cardId": "AUG-1",
+      "locus": "Augustine, diachronic 1 Tim 2:4 dossier (412-427) + De civ. Dei X.20, XXI.24; In Io. 87.2-3, 110.6; In Ep. Io. 1.8; Conf. X.43; Serm. 171/240/294",
+      "source": "Maurist / PL 32-45 Latin (augustinus.it) — Wave 10",
+      "phrase": "De spir. et litt. 33.58 (412) -> Contra Iul. IV.8.44, Ench. 27.103, De corr. et grat. 14.44-15.47 (omnes praedestinati + nullum exceptum facere); De civ. Dei XXI.24 & In Io. 87.2-3 do NOT comment on 1 Tim 2:4"
+    },
+    {
+      "cardId": "ANS-1",
+      "locus": "Anselm of Canterbury, Cur Deus Homo I.7-16, II.6-7, II.18-21",
+      "source": "F. S. Schmitt critical Latin edition vol. II (la.wikisource.org) — Wave 10 (closes F14-05)",
+      "phrase": "I.15 (II:74): necesse est ut omne peccatum satisfactio aut poena sequatur; II.18: Honor utique ille totius est trinitatis; II.20: accipe unigenitum meum... tolle me et redime te"
+    },
+    {
+      "cardId": "MED-ABE-LOM-AQU",
+      "locus": "Abelard Comm. in Rom. II; Peter Lombard Sent. III d. 20 c. 5; Thomas Aquinas ST III qq. 46-49, SCG IV.49, Super Sent. III d. 20",
+      "source": "PL 178 / PL 192:799 / Leonine Latin (corpusthomisticum.org) — Wave 10 (closes F14-06)",
+      "phrase": "Lombard: non diabolo, sed Deo Trinitati obtulit pro omnibus, quantum ad pretii sufficientiam; sed pro electis tantum, quantum ad efficaciam; Aquinas ST III q. 48 a. 6 ad 3 (5 modes) & q. 49 a. 3 ad 1 (applicatio per fidem et caritatem, et per fidei sacramenta)"
+    },
+    {
+      "cardId": "CYR-JER-1",
+      "locus": "Cyril of Jerusalem, Catecheses ad illuminandos XIII.32-33",
+      "source": "PG 33:809-812 Greek (catholiclibrary.org chunk 149 & khazarzar PG 33 PDF) — Wave 11 (closes 00_ §9 #3 for XIII.32-33)",
+      "phrase": "ὥρισεν ὁ θεὸς τὸν ἁμαρτάνοντα ἀποθνήσκειν... οὐ τοσοῦτον ἡμάρτομεν, ὅσον ἐδικαιοπράγησεν ὁ τὴν ψυχὴν ὑπὲρ ἡμῶν τεθεικώς"
+    },
+    {
+      "cardId": "BAS-1",
+      "locus": "Basil of Caesarea, Homilia in Psalmum 48 §§3-4",
+      "source": "PG 29:437C Greek (§3) + FOTC 46 p. 318 English (§4; §4 Greek on ORIGINAL_TEXT_HOLD) — Wave 11",
+      "phrase": "ἀδελφὸς ὑμᾶς λυτρώσασθαι οὐ δύναται... ἐξίλασμα δοῦναι τῷ Θεῷ... τῆς ψυχῆς ἀντάλλαγμα"
+    },
+    {
+      "cardId": "MAX-1",
+      "locus": "Maximus the Confessor, Quaestiones ad Thalassium Q. 21 & Q. 61",
+      "source": "PG 90:312-316 & 628-632 Greek (myriobiblos.gr/texts/greek/maximos/prosthalassion4.html & maksimologija.org) — Wave 11 (closes G66)",
+      "phrase": "Q. 61: τιμωρὸς δύναμις... πόνον καὶ θάνατον ἄδικον ὁμοῦ καὶ ἀναίτιον... τὸ ἐν τῷ παθητῷ κατάκριμα τῆς φύσεως κατὰ θέλησιν ὑποδύς... οὐ κατὰ χρέος ὑπὲρ ἁμαρτίας, ἀλλὰ κατ' οἰκονομίαν... κατὰ τῆς ἁμαρτίας"
+    },
+    {
+      "cardId": "CAR-853-855",
+      "locus": "Councils of Quiercy (853, DS 621-624) & Valence (855, DS 625-633)",
+      "source": "Denzinger-Schönmetzer Latin (catho.org & clerus.org) — Wave 11",
+      "phrase": "Quiercy c. 4: nullus est, fuit vel erit homo, pro quo passus non fuerit; Valence c. 4 (Valence, not Valenciennes): ex ipsa multitudine fidelium et redemptorum alios... ad plenitudinem salutis nullo modo pervenire"
+    },
+    {
+      "cardId": "BERN-1",
+      "locus": "Bernard of Clairvaux, Epistola 190 / Tractatus de erroribus Abaelardi V-IX (1140)",
+      "source": "PL 182:1053-1072 full Latin (osmtj1804.org/bernardus/21.html) — Wave 11 (closes G65)",
+      "phrase": "non jure acquisitum... juste tamen permissum; ut videlicet satisfactio unius omnibus imputetur; Non mors, sed voluntas placuit; Non requisivit Deus Pater sanguinem Filii, sed tamen acceptavit oblatum"
+    },
+    {
+      "cardId": "SCOT-1",
+      "locus": "John Duns Scotus, Reportata Parisiensia III d. 19 (+ Vatican Ordinatio III dd. 18-25 text-critical status)",
+      "source": "Wadding 11.1 Latin (catholiclibrary.org chunk 289) & Scotist Commission — Wave 11",
+      "phrase": "finitum intensive... infinitum terminative; justitiam distributivam; passio Christi... sequebatur praedestinationem; respectus ad certas personas (Ord. III dd. 18-25 absent from autograph)"
+    },
+    {
+      "cardId": "REF-LUT-CAL",
+      "locus": "Martin Luther In Gal. 3:13 (1535) & De servo arbitrio (1525); John Calvin Inst. 1559 II.16/III.1.1/III.22-24 & Comm. Mt 26:28, 1 Jn 2:2, Rom 5:18, Jn 10:15, Jn 17:9, 1 Tim 2:4",
+      "source": "WA 40/1:433-448 (martinluther.dk/gal3d.html), WA 18:685, CO / calvin.reformation.nl & CCEL calcom33-35 — Wave 11 (closes F14-07)",
+      "phrase": "Luther: reus factus est / poenam ferre / satisfacias fused directly with mirabile duellum; Calvin Inst. II.16.11: Neque tamen innuimus Deum fuisse unquam illi vel adversarium vel iratum; 1 Jn 2:2: verum esse illud dictum fateor; Mt 26:28 second quoted sentence in 15_ §3.2 unattested/fabricated"
+    },
+    {
+      "cardId": "REF-CONF-XVI",
+      "locus": "Heidelberg Catechism (1563) Q. 20/37/54/56 + Ursinus Comm. Q. 37; Second Helvetic Confession (1566) Cap. X & XI.15-16",
+      "source": "Schaff Creeds III German/Latin (ccel.org) & Ursinus Explicationes (p. 215) — Wave 11",
+      "phrase": "Ursinus Q. 37 Obj. 4: satisfied for all as it respects sufficiency, not application (denial = horrible blasphemy); Conf. Helv. Post. XI.15: reconciliavit omnibus fidelibus Dominus noster Patrem cœlestem"
+    },
+    {
+      "cardId": "SOC-GROT-XVII",
+      "locus": "F. Socinus De Jesu Christo Servatore (1578/94) I.1.2, III.1-3; H. Grotius Defensio fidei catholicae (1617/1679/1692) Cap. II, III, VI (3.1; 6.11; 6.14)",
+      "source": "EEBO-TCP A42221 (1692), Foster (1889), Grotiana 38.1 (2017) — Wave 12",
+      "phrase": "Grotius Cap. II: God acts as Rector, not private creditor; Cap. III: relaxatio legis (effectus voluntatis); Cap. 3.1 & 6.14: explicit rejection of acceptilatio (private law / solutio imaginaria) while defending solutio tantidem"
+    },
+    {
+      "cardId": "DORT-DAV-XVII",
+      "locus": "Canons of Dort (1619) Head II.3, II.5, II.8 & John Davenant Dissertatio de morte Christi (1650, Dissertationes Duae pp. 41-43; Allport tr. pp. 336-342, 370-375, 402-411)",
+      "source": "Dort primary locators (15_, 16_, 34_) & Davenant primary text — Wave 12",
+      "phrase": "Davenant distinguishes nuda sufficientia rei from sufficientia ordinata (ex animo et actu offerentis referring Christ's passion to all mankind, not fallen angels) within unconditional predestination to faith"
+    },
+    {
+      "cardId": "OWEN-XVII",
+      "locus": "John Owen Death of Death (1647, I.3 Goold X:173-174; III.7 Goold X:265-274), Of the Death of Christ (1650, Cap. II-III Goold X:442-444), Dissertation on Divine Justice (1653, Preface & Part II Ch. XII-XVII Goold X:481-624)",
+      "source": "CCEL Goold Vol. X & EEBO-TCP A90278 — Wave 12",
+      "phrase": "1647 Scotist concession (Goold X:271-272: God may omit punishment without wrong... his own will is the only rule of justice) reversed in 1653 against Twisse, Rutherford, Calvin, and Augustine"
+    },
+    {
+      "cardId": "WCF-SAVOY-1689",
+      "locus": "Parallel verbatim collation of WCF (1646), Savoy Declaration (1658), and 2LBC (1677/1689): Ch. III.6, VII.3, VIII.1-10, XI.3-4, XX.1-4",
+      "source": "proginosko.com/docs/wcf_sdfo_lbcf.html — Wave 12 (closes C-14 textual gap)",
+      "phrase": "Savoy/1689 shift justice of his Father -> justice of God (VIII.5, XI.3), insert explicit PSA clauses (VIII.4, XI.3), add personally (XI.4) & Ch. XX; 1689 uniquely adds Pactum Salutis (VII.3) & without any condition foreseen (VIII.8)"
+    },
+    {
+      "cardId": "FCH-1675",
+      "locus": "Formula Consensus Helvetica (1675) Canons I-XXIV (esp. IV-VI, XIII-XVI, XVII-XXII)",
+      "source": "Schaff Creeds I §61 (Latin Canon XIII) & Klauber 1990 full EN (Trinity Journal 11) — Wave 12",
+      "phrase": "Canon XIII: Pro solis electis ex decretorio Patris consilio propriaque intentione diram mortem oppetiit; Canon XIX affirms earnest external gospel call while Canons XVIII/XX reject saving grace via nature"
+    },
+    {
+      "cardId": "TURR-XVII",
+      "locus": "Francis Turretin Institutio Theologiae Elencticae (1679-1685) Locus XIV Q. 10-14 (and cross-ref 34_ III.10/11/19, XII.9-10, XIV.14)",
+      "source": "Willson 1859 PD tr. collated with Latin original (Monergism) & 34_ 1847 Latin — Wave 12",
+      "phrase": "Absolute moral necessity (Q. 10) + Grotian pecuniary vs penal debt distinction (relaxatio as to person + pardon harmonize with satisfaction) + explicit common non-saving blessings to reprobates (Q. 14 §3)"
+    },
+    {
+      "cardId": "MARROW-BOSTON-1726",
+      "locus": "Edward Fisher Marrow of Modern Divinity (1645, citing E. Culverwell & J. Preston Treatise of Faith p. 8) + Thomas Boston Notes (1726)",
+      "source": "Boston 1726 Notes (reformedbooksonline.com) — Wave 13",
+      "phrase": "Boston distinguishes 'Christ died for him' from 'Christ is dead for him' (deed of gift and grant / city of refuge = warrant of faith) while retaining Westminster particularism"
+    },
+    {
+      "cardId": "GILL-FULLER-XVIII",
+      "locus": "John Gill Cause of God (pp. 53, 156, 184), Body of Divinity (1769, II.4-5), Answer to Birmingham Dialogue Writer (1773, II:119); Andrew Fuller Gospel Worthy (1785/1801, Parts I-III), Conversations (1803, pp. 244-248), Works II:710",
+      "source": "OldPaths Pub, baptisthistoryhomepage.com, 1820Full.htm, & 34_ §4.33 — Wave 13",
+      "phrase": "Gill holds eternal immanent justification & denies 'offers of grace' while affirming proclamation; Fuller rejects commercialism & Marrow assurance-as-faith while placing particularity in 'the appointment or design of the Father and the Son'"
+    },
+    {
+      "cardId": "EDWARDS-CAMPBELL-XVIII-XIX",
+      "locus": "Jonathan Edwards Sr. Satisfaction for Sin & Wisdom §V; Jonathan Edwards Jr. Three Sermons (1785, Sermon I pp. 5, 8-9); John McLeod Campbell Nature of the Atonement (1856/1869, Ch. V-VII pp. 108, 118, 137, 146)",
+      "source": "CCEL Edwards Vol. 2, gospeltruth.net (Edwards Jr.), & Campbell primary excerpts — Wave 13",
+      "phrase": "Edwards Sr. poses 'adequate punishment or adequate repentance' and chooses penal substitution; Edwards Jr. pivots to Grotian governmentalism (paving 1795-1819 Hopkinsian pair); Campbell chooses 'perfect Amen / vicarious repentance' rejecting penal imputation"
+    },
+    {
+      "cardId": "HODGE-BUSHNELL-STRONG-XIX",
+      "locus": "Horace Bushnell Vicarious Sacrifice (1866) & Forgiveness and Law (1874, p. 35); Charles Hodge Systematic Theology II (1872, pp. 469-475, 544-562); W. G. T. Shedd (1888) & A. H. Strong (1907, II:771-773)",
+      "source": "CCEL Hodge Vol. II (direct pages 469-475, 545-562), Bushnell 1874, & 34_ — Wave 13",
+      "phrase": "Bushnell 1874 adds divine self-propitiation ('make cost'); Hodge distinguishes pecuniary vs penal/forensic satisfaction (II:470-472, 557-558) and affirms death 'was designed to have' the effect of justifying the universal offer (II:560-561)"
+    },
+    {
+      "cardId": "BAVINCK-AULEN-XIX-XX",
+      "locus": "Herman Bavinck Reformed Dogmatics III (1898/1908, Baker 2006 §§389-408, pp. 378-394, 455-475) & Gustaf Aulen Christus Victor (1930/1931)",
+      "source": "Bavinck RD III epub/Baker citations & Aulen primary typology critique — Wave 13",
+      "phrase": "Bavinck synthesizes Trinitarian substitutionary center with organic/cosmic renewal ('Intensively infinite, extensively encompasses the whole world', 3:470; real salvation of his people, 3:467); Waves 10-13 refute Aulen's rigid 3-type dichotomy across II-XIX c."
+    },
+    {
+      "cardId": "TRENT-SESS-VI-XXII",
+      "locus": "Concilium Tridentinum Sess. VI (1547, Cap. 1-3, 7, Can. XI, XVII, XXX, XXXII) & Sess. XXII (1562, Cap. 1-2, Can. I-IV)",
+      "source": "Schaff Creeds of Christendom Vol. II (CCEL creeds2.v.i.i.iv.html pp. 89-118; creeds2.v.i.i.ix.html pp. 177-186) — Wave 14",
+      "phrase": "Trent affirms Christ's cross as unica causa meritoria ('pro nobis Deo Patri satisfecit') while locating the Reformation breach in infused formal righteousness (Can. XI), temporal penalties/purgatory & merit (Can. XXX/XXXII), and Mass as sacrificium vere propitiatorium (Sess. XXII Cap. 2, Can. III)"
+    },
+    {
+      "cardId": "FORMULA-CONCORD-1577-XI",
+      "locus": "Formula of Concord (1577) Solid Declaration Art. XI (De Aeterna Praedestinatione et Electione Dei, §§4-8, 15-35, 40-46, 81-93)",
+      "source": "Triglot Concordia (BookOfConcord.org SD XI) — Wave 14",
+      "phrase": "Classical Lutheranism holds strict monergism & unconditional election (condemning any human cause in election, XI.88) together with universal redemption (XI.15, 28), single predestination, and rejection of contradictory wills in God (XI.34-35)"
+    },
+    {
+      "cardId": "ARMINIUS-REMONSTRANTS-1608-1618",
+      "locus": "Jacobus Arminius Oration IV, Declaration of Sentiments (1608), Examination of Perkins; Five Articles of Remonstrance (1610, Dutch/Latin/Eng); Sententia Remonstrantium at Dort (Dec 1618, Art. I-V)",
+      "source": "CCEL Arminius Works I & III; Schaff Creeds III:545-549 (creeds3.iv.xv.html); Acta Synodi pp. 113, 116-118 (Hoekema/De Jong trans.) — Wave 14",
+      "phrase": "Arminius retains rigid penal satisfaction (Oration IV) & 1610 Art. III rejects Pelagianism; 1618 Sententia Art. II.2 pivots impetration to Father's right to make a new covenant of grace and Art. V.3-4 affirms true believers can fall away"
+    },
+    {
+      "cardId": "CAMERON-AMYRAUT-SYNODS-1608-1659",
+      "locus": "John Cameron De triplici foedere (1608) & Amica Collatio (1622); Moise Amyraut Brief Traitte de la Predestination (Saumur, 1634, pp. 89-90, 96, 102-103); French National Synods Alencon 1637, Charenton 1644-45, Loudun 1659",
+      "source": "Amyraut Brief Traitte primary citations & John Quick Synodicon in Gallia Reformata (1692, II:352-357, 431-437) — Wave 14",
+      "phrase": "Amyraut retains unconditional particular election to faith and sola fide (acquitted thrice by French National Synods) but splits predestination into conditional universal decree ('pourvu que', frustree) vs absolute particular decree, unlike Davenant"
+    },
+    {
+      "cardId": "BAXTER-1649-1694",
+      "locus": "Richard Baxter Aphorismes of Justification (London, 1649, Theses VII, XIV, XXXVI, Answer to 15th Obj.), Catholick Theologie (1675, Sect. VI, VIII-IX), Universal Redemption (London, 1694, Props. VII, XX-XXII)",
+      "source": "EEBO-TCP A26862, Bodleian TCP A26883, & Quinta Press Universal Redemption — Wave 14",
+      "phrase": "Baxter adopts Grotius's solutio tantidem ('refuseable payment') to God as Legislator equally for all, instituting a New Law (lex remedians) with Evangelical Righteousness while retaining unconditional election of the elect"
+    },
+    {
+      "cardId": "20",
+      "father": "St. Philaret of Moscow (1823/1839)",
+      "work": "Пространный Православный Катихизис, Чл. 4, вопр. 206–207",
+      "language": "Russian",
+      "edition": "Synodal Russian text (1839; azbyka.ru)",
+      "keyPhrase": "совершенное удовлетворение правосудию Божию, осудившему нас за грех на смерть... принес Себя в жертву за всех людей",
+      "verification": "Direct Russian primary text verified; completes F-46"
+    },
+    {
+      "cardId": "20",
+      "father": "Russian Baptist Confession (1847/1906/1928)",
+      "work": "Вероучение русских евангельских христиан-баптистов (Онкен/Павлов/Одинцов), Чл. IV–V",
+      "language": "German/Russian",
+      "edition": "Hamburg 1847 German (theologische-links.de) + 1906 Russian (Kuntsevich 1912) + 1928 Moscow Odintsov (slavicbaptists.com)",
+      "keyPhrase": "als sein Volk, als die Schafe seiner Herde, für welche er sein Leben lassen wollte / как овцы Его стада, за которых Он положит Свою жизнь (Ин. 10:15,16,26,27; Ис. 53:12) — preserved verbatim in 1928 Odintsov",
+      "verification": "3-way verbatim collation verified (1847 German, 1906 Pavlov, 1928 Odintsov); early print scans ORIGINAL_TEXT_HOLD; completes F-50 and repairs docs/research/atonement/13_ & 14_"
+    },
+    {
+      "cardId": "20",
+      "father": "I. V. Kargel (1913) & AUCECB Confession (1985)",
+      "work": "Краткое изложение вероучения евангельских христиан (1913) & Вероучение ЕХБ (43-й съезд ВСЕХБ, 1985)",
+      "language": "Russian",
+      "edition": "Russian EHB confessional texts (1913/1985)",
+      "keyPhrase": "Посредством смерти Христа за всех человеков Бог предлагает умилостивление... Христос принял на Себя всю нашу вину и наказание за грех",
+      "verification": "Direct Russian confessional excerpts verified (early print scan ORIGINAL_TEXT_HOLD); completes F-50"
+    },
+    {
+      "cardId": "20",
+      "father": "St. Gregory Palamas (PG 151) & St. Nicholas Cabasilas (PG 150)",
+      "work": "Homily 16 (PG 151 cols. 189-220) & The Life in Christ I.7-11, IV.4 (PG 150)",
+      "language": "Greek/English-Russian",
+      "edition": "Veniamin / deCatanzaro references (PG 150-151 Greek page-level ORIGINAL_TEXT_HOLD)",
+      "keyPhrase": "ransom for us who were liable to punishment; render all honour due to the Father and make satisfaction for the debt of honour",
+      "verification": "Verified via published patristic translations with explicit Greek critical-edition ORIGINAL_TEXT_HOLD; completes F-46"
+    },
+    {
+      "cardId": "21",
+      "father": "Cyril of Jerusalem",
+      "work": "Catechesis XIII.1-2, 4 (PG 33:773-777)",
+      "language": "Greek",
+      "edition": "catholiclibrary.org synchronized PG 33 Greek (print scan LOCATOR_HOLD)",
+      "keyPhrase": "κόσμος ὅλος ἐλυτρώθη· οὐ γὰρ ἦν ἄνθρωπος ψιλός, ἀλλὰ υἱὸς θεοῦ μονογενής... ἑαυτὸν ἀντίλυτρον παραδούς, ἆρα τὴν ὀργὴν οὐ λύει τὴν κατὰ τῶν ἀνθρώπων;",
+      "verification": "Closes residual Wave 11 & 00_ §9 #3 ORIGINAL_TEXT_HOLD on Cat. XIII.2"
+    },
+    {
+      "cardId": "21",
+      "father": "John Chrysostom",
+      "work": "Hom. in Ioannem LXV.1 (PG 59:361-362, John 11:51-52)",
+      "language": "Greek",
+      "edition": "catholiclibrary.org synchronized Montfaucon/PG 59 Greek (print scan LOCATOR_HOLD)",
+      "keyPhrase": "Τέκνα δὲ Θεοῦ τὰ ἔθνη καλεῖ ὁ εὐαγγελιστής, ἀπὸ τοῦ μέλλοντος ἔσεσθαι... διὰ τοῦτο τῆς μελλούσης κολάσεως ἀπηλλάγησαν οἱ πιστοί",
+      "verification": "Independent direct Greek homily verification confirming οἱ πιστοί (vs Coislin 23 catena πολλοί in Wave 9); C-25 stays OPEN"
+    },
+    {
+      "cardId": "21",
+      "father": "John Chrysostom",
+      "work": "Hom. in Colossenses III (PG 62:318-324, Col. 1:20)",
+      "language": "Greek",
+      "edition": "catholiclibrary.org synchronized PG 62 Greek (print scan LOCATOR_HOLD)",
+      "keyPhrase": "ἐκπεπολεμωμένοι ἦσαν οἱ ἄγγελοι πρὸς τοὺς ἀνθρώπους... Ἐν μὲν γὰρ τῇ γῇ διπλῆ ἡ εἰρήνη... ἐν δὲ τοῖς οὐρανοῖς ἁπλῆ",
+      "verification": "Direct Greek patristic witness against angelic universalism on Col. 1:20"
+    },
+    {
+      "cardId": "21",
+      "father": "Augustine of Hippo",
+      "work": "Enchiridion XVI.61-63 (PL 40:260-261) & Tract. in Io. 49.27 (PL 35:1756)",
+      "language": "Latin",
+      "edition": "augustinus.it Maurist/PL Latin (print scan LOCATOR_HOLD)",
+      "keyPhrase": "Non enim pro Angelis mortuus est Christus... pacificantur caelestia cum terrestribus... Quomodo enim pacificantur caelestia nisi nobis, id est, concordando nobiscum?",
+      "verification": "Direct Latin witness for Col. 1:20 / Eph. 1:10 and re-verification of Tract. in Io. 49.27 secundum praedestinationem"
+    },
+    {
+      "cardId": "21",
+      "father": "Hilary of Poitiers (HIL-1)",
+      "work": "De Trinitate VI.40 (PL 10:190), X.22 (PL 10:364) & Tractatus in Psalmum I §18 (PL 9:260)",
+      "language": "Latin",
+      "edition": "la.wikisource.org / Corpus Corporum Migne PL 9-10 (print scan LOCATOR_HOLD)",
+      "keyPhrase": "homo Christus Jesus ad redemptionem animae et corporis nostri perfectus est natus; sed per redemptionem ligni vitae, id est, dominica passione",
+      "verification": "Closes Wave 2 HIL-1 ORIGINAL_TEXT_HOLD and fixes FALSE_LOCATOR in 11_ (NPNF2_09:L27208 is In Ps. I §18, not De Trin. XII.18; F-52)"
+    },
+    {
+      "cardId": "21",
+      "father": "Ambrose of Milan (AMB-1)",
+      "work": "De Officiis III.3.19 (PL 16:0150C-D)",
+      "language": "Latin",
+      "edition": "catholiclibrary.org synchronized PL 16 Latin (print scan LOCATOR_HOLD)",
+      "keyPhrase": "Christus quoque Dominus, qui pro universis mortuus est, mercedem sanguinis sui evacuatam dolebit",
+      "verification": "Closes Wave 2 AMB-1 ORIGINAL_TEXT_HOLD and corrects locator drift in 10_ (III.4 -> III.3.19; F-52)"
+    },
+    {
+      "cardId": "21",
+      "father": "Jerome (JER-1)",
+      "work": "Adversus Jovinianum I.11 (PL 23:0226C)",
+      "language": "Latin",
+      "edition": "catholiclibrary.org PL 23 + la.wikisource.org (print scan LOCATOR_HOLD)",
+      "keyPhrase": "Redempti sumus pretiosissimo sanguine Christi: immolatus est pro nobis agnus, et aspersi calidissimo rore hyssopi, omnem pituitam noxiae voluptatis excoximus",
+      "verification": "Closes Wave 2 JER-1 ORIGINAL_TEXT_HOLD"
+    },
+    {
+      "cardId": "21",
+      "father": "Irenaeus of Lyons & Gottschalk of Orbais",
+      "work": "Adv. Haer. V.1.1 (Harvey II:315, Latin clause) & Gottschalk Confessio/De praedestinatione (IX c.)",
+      "language": "Latin",
+      "edition": "Robinson CCEL fn. 201 / Wace DCB (Irenaeus, SC 153 continuous scan ORIGINAL_TEXT_HOLD); gottschalk.inrebus.com/lat015.html",
+      "keyPhrase": "non cum vi... sed secundum suadelam, quemadmodum decebat Deum suadentem, non vim inferentem, accipere quae vellet; per sanguinem crucis Christi solis est impensa prorsus electis",
+      "verification": "Corroborates Irenaeus F-4 suadela clause (PARTIAL_VERIFICATION) and IX c. Gottschalk particularist syllogism"
+    },
+    {
+      "cardId": "21",
+      "father": "John Calvin",
+      "work": "In Evangelium secundum Iohannem on John 3:16 (CO 47:64, Geneva 1553)",
+      "language": "Latin",
+      "edition": "Double-verified Latin via John Goodwin (1651) & A. F. Mitchell / J. P. Struthers (CO 47 print scan LOCATOR_HOLD)",
+      "keyPhrase": "se tamen toti mundo propitium ostendit, quum sine exceptione omnes ad fidem Christi vocat... Patet enim omnibus Christus ac expositus est, solis tamen electis oculos Deus aperit",
+      "verification": "Resolves docs/research/atonement/08_ Round 58 open Latin check: Latin is propitium, NOT reconciliatum (Pringle 1847 CTS shift -> F-51)"
+    },
+    {
+      "cardId": "21",
+      "father": "John Calvin",
+      "work": "Commentarii in Epistolas canonicas on 1 John 2:2 (Genève: Jean Crespin, 1551; CO 55:310) & Rom. 5:18 (CO 49:100)",
+      "language": "Latin",
+      "edition": "calviniopera.droz.org (Index Aureliensis 129.853) + Cox/Beman & Goodwin 1651 Latin (CO 55 print scan LOCATOR_HOLD)",
+      "keyPhrase": "Omitto phreneticorum deliria... Sufficienter pro toto mundo passum esse Christum, sed pro electis tantum efficaciter; Communem omnium gratiam facit, quia omnibus exposita est, non quod ad omnes extendatur re ipsa",
+      "verification": "Resolves docs/research/atonement/21_ §16.5 open publication date (1551) and verifies opening Latin of 1 John 2:2 & Rom. 5:18"
     }
   ],
   "falseFriendRegister": [
@@ -1284,8 +1735,8 @@
       "id": "F-8",
       "what": "«Дамаскин, Exp. fidei 4.9: не за всех умер»",
       "whereShown": "бриф §3.1",
-      "correction": "гл. IV.IX = «О вере и крещении», не о смерти Христа; тезис не подтверждён PD-текстом",
-      "tag": "UNVERIFIED` → `LOCATOR_HOLD"
+      "correction": "Разрешено по греческому оригиналу (Волна 10, 2026-11-15, `12_` §9): гл. IV.9 (гл. 82, PG 94:1117–1125) действительно посвящена вере и крещению (Περὶ πίστεως καὶ βαπτίσματος) и не содержит формулы «не за всех умер»; реальный сотериологический локус — гл. III.27 (гл. 71, PG 94:1096–1097), где Дамаскин отвергает выкуп тирану (μὴ γὰρ γένοιτο τῷ τυράννῳ) и учит жертве Отцу и «крючку» против Смерти",
+      "tag": "FALSE_LOCATOR (разрешено 2026-11-15, см. 12_ §9)"
     },
     {
       "id": "F-9",
@@ -1370,6 +1821,230 @@
       "whereShown": "Еф 1:14: «The redemption of God's own possession» (`NPNF1_13.txt:L5750`)",
       "correction": "у Златоуста здесь **«абсолютное искупление» происходит в конце** (Parousia), «тогда нет ни грехов, ни человеческих страданий» — эсхатологическое избавление, не крестная сделка",
       "tag": "FALSE_FRIEND` (см. `04_`, CHR-1)"
+    },
+    {
+      "id": "F-21",
+      "what": "«У Ансельма satisfactio = реформатское карательное замещение (PSA)»",
+      "whereShown": "популярная апологетика и учебники XX–XXI вв.",
+      "correction": "по критической латыни Schmitt II:74 (Cur Deus Homo I.15): necesse est ut omne peccatum satisfactio aut poena sequatur — удовлетворение и наказание у Ансельма взаимоисключающая альтернатива (aut ... aut); Христос приносит сверхдолжную заслугу, чтобы избавить от наказания, а не претерпевает карательный гнев Отца",
+      "tag": "FALSE_FRIEND (см. 13_ §2, 14_ §1)"
+    },
+    {
+      "id": "F-22",
+      "what": "«Августин толкует 1 Тим. 2:4 в De civitate Dei XXI.24 и In Io. 87.2»",
+      "whereShown": "вторичные ссылки, в т. ч. docs/research/atonement/15_ §2.2",
+      "correction": "по латинскому оригиналу (augustinus.it, PL 35 & 41) ни один из этих двух локусов не комментирует 1 Тим. 2:4: In Io. 87.2–3 разбирает Ин 15:18–19 / 1 Ин 2:2, а De civ. Dei XXI.24 — молитву за живых врагов против универсалистов; реальные места сужения 1 Тим. 2:4 — Ench. 27.103, Contra Iul. IV.8.44, De corr. et grat. 14.44, Ep. 217.6.19 (с учётом раннего De spir. et litt. 33.58)",
+      "tag": "FALSE_LOCATOR (см. 13_ §1.3, 14_ §3)"
+    },
+    {
+      "id": "F-23",
+      "what": "«Августин Serm. 171/240/294 (suscipiendo sine culpa poenam) = реформатское несение вечного наказания ада»",
+      "whereShown": "вырывание формулы poena sine culpa из пасхальных проповедей",
+      "correction": "сам Августин в Serm. 171.3 и 240.3 прямо определяет здесь poena как смертность и телесную смерть (poena est quia mortalis es... poenam solvit, a mortuis resurgendo), а не судебную импутацию вечных мук",
+      "tag": "QUOTE_RISK (см. 13_ §1.1)"
+    },
+    {
+      "id": "F-24",
+      "what": "«Ориген In Matt. XVI.8 учил дортскому ограниченному искуплению („не за всех, а только за многих“)»",
+      "whereShown": "выборочное цитирование ἀντὶ πολλῶν без продолжения фразы",
+      "correction": "по греческому тексту (First1KGreek tlg2042.tlg030, Klostermann): Ориген пишет ἀντὶ πολλῶν τῶν πιστευσόντων и тут же добавляет условное καὶ εἰ καθ’ ὑπόθεσιν πάντες ἐπίστευον... δεδώκει ἂν... ἀντὶ πάντων — ограничение связано с верой, а не с предвечным исключением неверующих из выкупа",
+      "tag": "QUOTE_RISK (см. 12_ §4.1)"
+    },
+    {
+      "id": "F-25",
+      "what": "«Пётр Абеляр был чистым моральным экземпляристом XIX века, отрицавшим прощение вины и первородный грех»",
+      "whereShown": "схема Г. Рашдалла и популярных обзоров теорий искупления",
+      "correction": "по латинскому тексту Comm. in Rom. II (на Рим 4:25 и 5:16, PL 178): наряду с центром на возжигании любви (dilectio, Рим 3:24–26) Абеляр прямо сохраняет прощение первородного и личных грехов (tam originali scilicet quam propriis per Christum condonatis) и освобождение от наказаний (ad poenarum absolutionem)",
+      "tag": "FALSE_FRIEND (см. 13_ §3)"
+    },
+    {
+      "id": "F-26",
+      "what": "«Синод в Валансьене 855 г. = дортское ограниченное искупление (L+P) в IX веке»",
+      "whereShown": "вторичные ссылки, в т. ч. docs/research/atonement/15_ §5",
+      "correction": "по латинскому тексту Concilium Valentinum (DS 625–633): (1) географически это Валанс (Valence, Дофине), не Валансьен; (2) Канон 4 прямо утверждает, что из числа истинно возрождённых и искуплённых кровью Христа (ex ipsa multitudine fidelium et redemptorum) часть отпадает и не достигает спасения (ad plenitudinem salutis nullo modo pervenire)",
+      "tag": "FALSE_FRIEND (см. 15_ §4)"
+    },
+    {
+      "id": "F-27",
+      "what": "«Дунс Скот, Ordinatio III d. 19 — бесспорный автограф Скота по искуплению»",
+      "whereShown": "стандартные ссылки на Wadding 7.1 / Vivès в учебной литературе",
+      "correction": "Ватиканская Скотистская комиссия установила, что дистинкции III.18–25 отсутствуют в автографе Ordinatio (у Wadding/Vivès они интерполированы из Антония Андреа); аутентичными первичными свидетелями являются Lectura III dd. 19–20 (Vat. 21) и Reportata Parisiensia III dd. 19–20",
+      "tag": "FALSE_LOCATOR (текстологическая ловушка, см. 15_ §6.1)"
+    },
+    {
+      "id": "F-28",
+      "what": "«Мартин Лютер учил чистому Christus Victor в противовес судебно-наказательному замещению»",
+      "whereShown": "дихотомия Густава Аулена (Christus Victor, 1931)",
+      "correction": "по латинскому тексту In Ep. ad Gal. (1535) на Гал. 3:13 (WA 40/1:433–448 = Erl. 23:16–28, §§49–68): Лютер бесшовно соединяет радикальное заместительное несение греха/наказания (reus factus est, poenam ferre, ut solvas et pro eis satisfacias, §§50–59) с космической дуэлью (mirabile duellum, §§62–68) в соседних абзацах одного толкования",
+      "tag": "FALSE_FRIEND (см. 16_ §1)"
+    },
+    {
+      "id": "F-29",
+      "what": "«Кальвин на Мф. 26:28 / Ин. 10:15 / Ин. 17:9 формулировал оуэновский партикуляризм XVII в.»",
+      "whereShown": "полемические пересказы, в т. ч. docs/research/atonement/15_ §3.2",
+      "correction": "по оригиналам Кальвина (CO 45:706, calcom33–35): вторая фраза в кавычках в 15_ §3.2 на Мф. 26:28 сфабрикована (у Кальвина там пастырское увещевание о Лк. «за вас»); на Ин. 10:15 Кальвин не обсуждает предызбрание (это Ин. 10:26 / Inst. III.22.7); на Ин. 17:9 он сопоставляет молитву за избранных с Лк. 23:34 без силлогизма Оуэна 1647 г., а на 1 Ин. 2:2 (CO 55:310) прямо признаёт ломбардскую формулу истинной (verum esse illud dictum fateor)",
+      "tag": "FALSE_LOCATOR (см. 16_ §2.2)"
+    },
+    {
+      "id": "F-30",
+      "what": "«Гейдельбергский катехизис в. 37 / Урсин и Второе гельветическое гл. 11 = либо универсализм Прокопенко, либо оуэновский отказ от ломбардской достаточности»",
+      "whereShown": "двойная поляризация в статье Прокопенко и в docs/research/atonement/15_ §§4.1–4.2",
+      "correction": "Захария Урсин (Explicationes Catecheticae Q. 37, Obj. 4) прямо защищает ломбардскую формулу (satisfied for all, as it respects the sufficiency, not application), называя отрицание достаточности «богохульством», а Второе гельветическое исповедание (1566, Schaff III:257) внутри самой гл. XI.15 прямо ограничивает примирение верующими (reconciliavit omnibus fidelibus Patrem cœlestem)",
+      "tag": "FALSE_FRIEND (см. 16_ §3)"
+    },
+    {
+      "id": "F-31",
+      "what": "«Правительственная теория Гуго Гроция (1617) = „теория акцептиляции“ (acceptilatio)»",
+      "whereShown": "популярные учебники и блоги (Шедд, Стормс и др.)",
+      "correction": "По Defensio 3.1 и 6.14 (Grotiana 38.1, 2017): Гроций прямо отвергает acceptilatio по двум основаниям (это частноправовой институт Digesta 46.4 и solutio imaginaria без реальной цены) и сам обвиняет в ней Социна; реальный разлом Гроция с ортодоксией — relaxatio legis (закон как effectus voluntatis) и solutio tantidem без вменения вины",
+      "tag": "FALSE_FRIEND (см. 17_ §1)"
+    },
+    {
+      "id": "F-32",
+      "what": "«Дорт (1619) либо поддерживает неограниченный atonement без особого замысла, либо тождественен коммерческому solutio ejusdem Оуэна 1647 г.»",
+      "whereShown": "полярные апелляции к Дорту II.3 vs II.8",
+      "correction": "Каноны Дорта строят трёхуровневый консенсус (abunde sufficiens II.3 / promiscue II.5 / omnes ac solos II.8), вместивший как aeque late patent (Оверэйссел/Гронинген), так и «упорядоченную достаточность» (sufficientia ordinata) британской делегации и Дж. Давенанта (Dissertation, pp. 402–411), при общем отвержении ремонстрантской обусловленности веры",
+      "tag": "FALSE_FRIEND (см. 17_ §2)"
+    },
+    {
+      "id": "F-33",
+      "what": "«Джон Оуэн всегда держался одного неизменного томистского учения об абсолютной необходимости искупления»",
+      "whereShown": "сведение всего Оуэна к Dissertation on Divine Justice (1653) без учёта 1647 г.",
+      "correction": "В Death of Death III.7 (1647, Goold X:271–272) Оуэн прямо защищал скотистский волюнтаризм («God may, by virtue of his supreme dominion, omit punishment without any wrong... his own will is the only rule of justice»), от которого радикально отрёкся в Dissertation on Divine Justice (1653, Goold X:481–624), открыто полемизируя с Твиссом, Резерфордом, Кальвином и Августином",
+      "tag": "QUOTE_RISK (см. 17_ §3)"
+    },
+    {
+      "id": "F-34",
+      "what": "«2LBC 1689 смягчает WCF 1646 в сторону универсализма — либо WCF 1646, Савой 1658 и 2LBC 1689 тождественны по тексту»",
+      "whereShown": "непроверенные пересказы без трёхколонной сверки (C-14)",
+      "correction": "Пословная колляция (proginosko.com, III.6, VII.3, VIII.1–10, XI.3–4, XX.1–4) показывает, что Савой 1658 и 1689 усилили PSA-клаузы (VIII.4, XI.3), заменили «правду Отца» на тринитарную «правду Бога» (VIII.5, XI.3), ввели Pactum Salutis (VII.3, VIII.1), without any condition foreseen (VIII.8), анти-антиномистское personally (XI.4) и новую главу XX о внешнем Евангелии",
+      "tag": "FALSE_FRIEND (см. 17_ §4)"
+    },
+    {
+      "id": "F-35",
+      "what": "«Высокая реформатская ортодоксия XVII в. целиком приняла схему solutio ejusdem Оуэна 1647 г. и отрицала всякие общие плоды креста для неизбранных»",
+      "whereShown": "карикатура «коммерческого оуэнизма» в адрес всей схоластики XVII в.",
+      "correction": "Франсуа Турретин (Institutio XIV Q. 10–11, 14; Willson pp. 5–7, 15; Ch. 5 §3) прямо использует гротцианское различение денежного и уголовного долга (relaxatio по лицу + pardon гармонируют с полным удовлетворением) и прямо признаёт реальные, хотя и неспасительные, общие блага смерти Христа для невозрождённых",
+      "tag": "FALSE_FRIEND (см. 17_ §5)"
+    },
+    {
+      "id": "F-36",
+      "what": "«Marrow of Modern Divinity и Томас Бостон („Christ is dead for him“ / deed of gift and grant) учили всеобщему амиральдианскому или арминианскому искуплению»",
+      "whereShown": "обвинение Генеральной ассамблеи Шотландии (1720) и современные путаницы вокруг Marrow",
+      "correction": "В примечаниях 1726 г. Бостон прямо разводит «Christ died for him» и «Christ is dead for him» (объективное установление и «город-убежище», дающие право веровать — warrant of faith), полностью сохраняя вестминстерско-дортский партикуляризм",
+      "tag": "FALSE_FRIEND (см. 18_ §1)"
+    },
+    {
+      "id": "F-37",
+      "what": "«Джон Гилл запрещал проповедовать Евангелие всем — а Эндрю Фуллер отказался от определённого искупления в пользу неограниченного atonement»",
+      "whereShown": "двойная полярная карикатура в баптистской полемике XVIII–XXI вв. (в т. ч. А. Х. Стронг II:773)",
+      "correction": "Гилл (Cause of God, p. 184; Answer, II:119) отрицал язык offers of grace, но утверждал всеобщую проповедь Христа распятого (при реальном расхождении с Савой/1689 XI.4 в имманентном вечном оправдании); Фуллер (Works II:710; Dialogues p. 244) отвергал коммерческую арифметику, но прямо помещал особенность искупления в «the appointment or design of the Father and the Son»",
+      "tag": "FALSE_FRIEND (см. 18_ §2)"
+    },
+    {
+      "id": "F-38",
+      "what": "«Джонатан Эдвардс-старший = правительственная теория Новой Англии и пара „неограниченный atonement / ограниченное redemption“»",
+      "whereShown": "склеивание Эдвардса-ст. с «Новой теологией» его сына и хопкинсианцев",
+      "correction": "Эдвардс-ст. (Satisfaction for Sin, Wisdom §V, Freedom of the Will) защищал классическое карательное замещение и 5 пунктов Дорта; поворот к гротцианскому правительственному эквиваленту совершил Дж. Эдвардс-мл. (1785), а лексическая пара atonement/redemption родилась у новоанглийских хопкинсианцев между 1795 и 1819 гг. (причём из той же дилеммы Эдвардса-ст. выросло и «заместительное покаяние» Дж. М. Кэмпбелла 1856 г.)",
+      "tag": "FALSE_FRIEND (см. 18_ §3)"
+    },
+    {
+      "id": "F-39",
+      "what": "«Г. Бушнелл всегда оставался чистым субъективистом, а Ч. Ходж и Старый Принстон отрицали преднамеренное основание всеобщего призыва и общих благ»",
+      "whereShown": "учебниковые схемы «морального влияния» и «коммерческого кальвинизма» XIX в.",
+      "correction": "Сам Бушнелл в Forgiveness and Law (1874, p. 35) пересмотрел свой Vicarious Sacrifice (1866), добавив «самоумилостивление Бога ценой страдания»; а Ч. Ходж (ST II:470–475, 545–546, 557–561) отверг коммерческий quid pro quo и прямо учил, что смерть Христа «had the effect of justifying the offer of salvation to every man; and of course was designed to have that effect»",
+      "tag": "QUOTE_RISK (см. 18_ §4)"
+    },
+    {
+      "id": "F-40",
+      "what": "«Типология Густава Аулена (Christus Victor, 1931: „Классический“ vs „Латинский“ vs „Субъективный“) адекватно описывает реальную историю искупления II–XIX вв.»",
+      "whereShown": "господствующая учебная схема XX–XXI веков",
+      "correction": "Первоисточники Волн 10–13 опровергают жёсткое противопоставление Аулена во всех четырёх эпохах: отцы II–VII вв. соединяли победу с жертвой Отцу и обменом; «латинский тип» склеивает несовместимые схемы Ансельма, Фомы, Бернарда и Скота; Лютер (1535) совмещал mirabile duellum и карательное замещение; Кальвин и Бавинк встраивают космическую победу в тринитарное заместительное послушание",
+      "tag": "FALSE_FRIEND (см. 18_ §5)"
+    },
+    {
+      "id": "F-41",
+      "what": "«Тридентский собор (1547/1562) отрицал крестную сатисфакцию Христа или учил спасению без креста»",
+      "whereShown": "популярная антикатолическая полемика без сверки латинского текста Тридента",
+      "correction": "Тридент (Sess. VI Cap. 7, Schaff II:95) прямо называет крест единственной causa meritoria (pro nobis Deo Patri satisfecit); подлинный разрыв с Реформацией проходит по влитой vs вменённой праведности (unica formalis causa, Can. XI), остатку временных наказаний/чистилища и заслуг (Can. XXX, XXXII) и статусу мессы как sacrificium vere propitiatorium (Sess. XXII Cap. 2, Can. III — статья A4)",
+      "tag": "FALSE_FRIEND (см. 19_ §1)"
+    },
+    {
+      "id": "F-42",
+      "what": "«Любое не-реформатское учение о всеобщем искуплении = арминианский синергизм и условное избрание по предвиденной вере»",
+      "whereShown": "бинарная карта «кальвинизм vs арминианство»",
+      "correction": "Лютеранская Формула Согласия (1577, SD XI.5, 8, 15, 28–35, 87–88) соединяет полный монергизм и безусловное избрание (отвергая любую человеческую причину избрания, XI.88) со всеобщим искуплением, отказом от двойного предопределения и запретом на «противоречивые воли в Боге» (XI.34–35)",
+      "tag": "FALSE_FRIEND (см. 19_ §2)"
+    },
+    {
+      "id": "F-43",
+      "what": "«Якоб Арминий (1608) тождественен поздним ремонстрантам (1618/1621+), либо Ремонстрация 1610 г. учила пелагианской автономии воли»",
+      "whereShown": "склеивание этапов арминианства без первичной сверки",
+      "correction": "Ремонстрация 1610 г. (Art. III–IV, Schaff III:546–547) строго отрицала духовную способность человека без возрождающей благодати; сам Арминий (Oration IV) ещё держал жёсткую карательную сатисфакцию; решающий поворот к «праву Отца заключить новый завет благодати» и окончательному отпадению произошёл в Sententia 1618 г. (Art. II.2, V.3–4) и углубился у Эпископия/Лимборха",
+      "tag": "FALSE_FRIEND (см. 19_ §3)"
+    },
+    {
+      "id": "F-44",
+      "what": "«Амиральдианство = полуарминианство, осуждённое Реформатской церковью как ересь, ИЛИ Амиро тождественен Давенанту и Кальвину»",
+      "whereShown": "ярлыки в споре вокруг Сомюра (C-11, B4)",
+      "correction": "Амиро (Brief Traitté, 1634, pp. 89–90, 96, 102–103) сохранял безусловное избрание к вере, sola fide и верность Дорту и был трижды оправдан французскими национальными синодами (Алансон 1637, Шарантон 1644–45, Луден 1659; Quick II:352–357, 431–437), но в отличие от Давенанта ввёл два конкурирующих декрета предопределения (условный pourvu que, названный frustrée, и безусловный частный)",
+      "tag": "FALSE_FRIEND (см. 19_ §4)"
+    },
+    {
+      "id": "F-45",
+      "what": "«Ричард Бакстер = просто „английский амиральдианин“ или „арминианин“»",
+      "whereShown": "упрощённая классификация пуританского богословия XVII в.",
+      "correction": "По Aphorismes (1649, Theses VII, XIV, XXXVI) и Universal Redemption (1694, Props. VII, XX–XXII), Бакстер создал особый гротцианско-неономианский гибрид — solutio tantidem Законодателю + lex remedians с собственной Evangelical Righteousness верующего (что отличает его от sola fide самого Амиро!) при сохранении безусловного особого избрания (против арминиан)",
+      "tag": "FALSE_FRIEND (см. 19_ §5)"
+    },
+    {
+      "id": "F-46",
+      "claim": "Eastern Orthodoxy always rejected divine justice, debt, and satisfaction vocabulary as a Western Anselmian distortion",
+      "source": "20_EASTERN_RUSSIAN_AND_XX_C_ATONEMENT_RECEPTION_AUDIT_1350_2026_2026-11-15.md",
+      "status": "FALSE_FRIEND",
+      "resolution": "Refuted by St. Gregory Palamas (Homily 16, PG 151), St. Nicholas Cabasilas (Life in Christ I.7-11, IV.4, PG 150), and St. Philaret of Moscow (Longer Catechism 1823/1839, Art. 4, Q. 206)."
+    },
+    {
+      "id": "F-47",
+      "claim": "Metr. Anthony Khrapovitsky's 1917 Gethsemane moral monism represents patristic Orthodox consensus",
+      "source": "20_EASTERN_RUSSIAN_AND_XX_C_ATONEMENT_RECEPTION_AUDIT_1350_2026_2026-11-15.md",
+      "status": "FALSE_FRIEND",
+      "resolution": "Rejected inside Russian Orthodoxy by both conservative hierarchs (Archbp. Theophan of Poltava 1925, Archbp. Seraphim Sobolev 1943) and neopatristic theologians (Fr. G. Florovsky, V. N. Lossky 1947)."
+    },
+    {
+      "id": "F-48",
+      "claim": "C. H. Dodd (1931/1935) proved Greek hilaskomai/hilasterion in LXX/NT means only impersonal expiation and excludes propitiation (averting wrath)",
+      "source": "20_EASTERN_RUSSIAN_AND_XX_C_ATONEMENT_RECEPTION_AUDIT_1350_2026_2026-11-15.md",
+      "status": "FALSE_FRIEND",
+      "resolution": "Refuted by L. Morris (1951/1955), R. Nicole (1955 WTJ 17), our 2z+ LXX locators (ot/01_ Gen 32:20; Num 16:46-47 orge), and Rom 1:18-3:26; biblical propitiation and expiation are complementary."
+    },
+    {
+      "id": "F-49",
+      "claim": "Karl Barth (CD IV/1) is either a liberal denier of penal substitution or a classical Dort Reformed particularist",
+      "source": "20_EASTERN_RUSSIAN_AND_XX_C_ATONEMENT_RECEPTION_AUDIT_1350_2026_2026-11-15.md",
+      "status": "FALSE_FRIEND",
+      "resolution": "CD IV/1 §59.2 radically recovers judicial penal substitution (The Judge Judged in Our Place), while CD II/2 reconstructs election Christocentrically with a universalist horizon yet refuses dogmatic apokatastasis."
+    },
+    {
+      "id": "F-50",
+      "claim": "Russian Evangelical-Baptist theology historically rested on the unlimited-atonement / limited-redemption lexical binary or a single ahistorical formula",
+      "source": "20_EASTERN_RUSSIAN_AND_XX_C_ATONEMENT_RECEPTION_AUDIT_1350_2026_2026-11-15.md",
+      "status": "FALSE_FRIEND",
+      "resolution": "Russian Baptist 1906/1928 confessions (Hamburg 1847) confessed Reformed satisfaction + unconditional election (Arts. IV-V); Kargel (1913) & AUCECB (1985) confessed penal substitution + universal sacrifice in biblical-kerygmatic register; the atonement/redemption binary entered via New England (1795-1819) -> A. H. Strong (1907)."
+    },
+    {
+      "id": "F-51",
+      "claim": "John Calvin on John 3:16 teaches that God is forensically 'reconciled' to the whole world",
+      "source": "21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
+      "status": "FALSE_FRIEND",
+      "resolution": "Double-verified Latin (CO 47:64, Geneva 1553; Goodwin 1651 & Mitchell/Struthers) reads 'se tamen toti mundo propitium ostendit' ('shows Himself propitious/favorable to the whole world' when calling all without exception to faith), NOT 'reconciliatum' (W. Pringle 1847 CTS translation shift), immediately followed by 'Patet enim omnibus Christus ac expositus est, solis tamen electis oculos Deus aperit'."
+    },
+    {
+      "id": "F-52",
+      "claim": "Hilary of Poitiers' 'redemption wrought by the tree of Life' lies in De Trinitate XII.18 and Ambrose's 'Christus... pro universis mortuus est' lies in De Officiis III.4",
+      "source": "21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
+      "status": "FALSE_LOCATOR",
+      "resolution": "Wave 22 direct PL 9/10/16 Latin verification caught two Wave 2 intra-corpus locator drifts: NPNF2_09:L27208 ('per redemptionem ligni vitae, id est, dominica passione') belongs to Hilary's Tractatus super Psalmos — In Psalmum I §18 (PL 9:260), NOT De Trin. XII.18; Ambrose's quote lies in De Officiis III.3.19 (PL 16:0150C-D), NOT III.4."
     }
   ],
   "silences": [
@@ -1615,21 +2290,22 @@
     "чтоСчитаетсяДоводом": "заголовок «## » в любом .md лана, включая вложенные папки (synthesis/drafts, ot/tools); тело секции — до следующего «## » или до конца файла",
     "приоритет": "УДЕРЖИВАЕТСЯ > ОТКРЫТО > ЗАКРЫТО; маркеров нет -> БЕЗ МАРКЕРА; маркер вне классификации -> ошибка съёма, а не «прочее»",
     "метод": "scripts/atonement_claim_register.py обходит прозу лана целиком (без выборки), разбирает маркеры вида `ВЕРДИКТ`, сверяет локатор побайтово (файл + номер строки + текст)",
-    "строк": 108,
-    "файлов": 12,
+    "строк": 171,
+    "файлов": 22,
     "покрытоМашинно": 39,
-    "покрытоПоФайлу": 108,
-    "файловПрозы": 12,
+    "покрытоПоФайлу": 171,
+    "файловПрозы": 22,
     "файловБезКарточки": 0,
-    "разрешеноЛокаторов": 108,
+    "разрешеноЛокаторов": 171,
     "неРазрешено": 0,
     "поКлассам": {
-      "БЕЗ МАРКЕРА": 60,
-      "УДЕРЖИВАЕТСЯ": 48
+      "БЕЗ МАРКЕРА": 87,
+      "УДЕРЖИВАЕТСЯ": 83,
+      "СЛУЖЕБНОЕ": 1
     },
     "маркеры": {
-      "всего": 142,
-      "различных": 18,
+      "всего": 357,
+      "различных": 23,
       "словарь": {
         "APPARATUS_FALSE_FRIEND": "УДЕРЖИВАЕТСЯ",
         "ARCHIVE_AVAILABLE": "ЗАКРЫТО",
@@ -1640,37 +2316,49 @@
         "EXACT_LOCATOR_VERIFIED": "ЗАКРЫТО",
         "FALSE_FRIEND": "УДЕРЖИВАЕТСЯ",
         "FALSE_LOCATOR": "УДЕРЖИВАЕТСЯ",
+        "FETCH_HEAD": "СЛУЖЕБНОЕ",
         "FULL_OBJECT_VERIFIED": "ЗАКРЫТО",
         "LOCATOR_HOLD": "УДЕРЖИВАЕТСЯ",
+        "OPEN_TENSION": "УДЕРЖИВАЕТСЯ",
         "ORIGINAL_TEXT_HOLD": "УДЕРЖИВАЕТСЯ",
+        "ORIGINAL_TEXT_VERIFIED": "ЗАКРЫТО",
         "PARTIAL_OBJECT": "УДЕРЖИВАЕТСЯ",
+        "PARTIAL_VERIFICATION": "УДЕРЖИВАЕТСЯ",
         "PUBLICATION_ELIGIBLE": "ЗАКРЫТО",
         "PUBLICATION_HOLD": "УДЕРЖИВАЕТСЯ",
         "QUOTE_RISK": "УДЕРЖИВАЕТСЯ",
+        "RESOLVED": "ЗАКРЫТО",
         "RIGHTS_HOLD": "УДЕРЖИВАЕТСЯ",
         "RIGHTS_UNCLEAR": "УДЕРЖИВАЕТСЯ"
       },
       "частоты": {
-        "LOCATOR_HOLD": 35,
-        "ARCHIVE_HOLD": 26,
-        "ORIGINAL_TEXT_HOLD": 21,
-        "RIGHTS_HOLD": 9,
-        "FALSE_FRIEND": 8,
-        "PUBLICATION_HOLD": 7,
+        "ORIGINAL_TEXT_HOLD": 71,
+        "FALSE_FRIEND": 58,
+        "LOCATOR_HOLD": 48,
+        "ORIGINAL_TEXT_VERIFIED": 36,
+        "ARCHIVE_HOLD": 30,
+        "RIGHTS_HOLD": 21,
+        "PUBLICATION_HOLD": 18,
+        "QUOTE_RISK": 15,
+        "FALSE_LOCATOR": 13,
+        "PARTIAL_VERIFICATION": 11,
         "ARCHIVE_AVAILABLE": 6,
-        "QUOTE_RISK": 5,
-        "EVIDENCE_HOLD": 4,
+        "EVIDENCE_HOLD": 5,
         "EXACT_LOCATOR_VERIFIED": 4,
         "PUBLICATION_ELIGIBLE": 4,
+        "RESOLVED": 4,
         "BLOCKED": 3,
         "ARCHIVE_READ": 2,
-        "FALSE_LOCATOR": 2,
         "FULL_OBJECT_VERIFIED": 2,
         "PARTIAL_OBJECT": 2,
         "APPARATUS_FALSE_FRIEND": 1,
+        "FETCH_HEAD": 1,
+        "OPEN_TENSION": 1,
         "RIGHTS_UNCLEAR": 1
       },
-      "служебные": [],
+      "служебные": [
+        "FETCH_HEAD"
+      ],
       "неОтнесено": {},
       "одиночныеСлова": [
         "BLOCKED",
@@ -1686,8 +2374,8 @@
       ]
     },
     "сверкаСКарточками": {
-      "файловПрозы": 12,
-      "файловСКарточкой": 12,
+      "файловПрозы": 22,
+      "файловСКарточкой": 22,
       "файловБезКарточки": 0,
       "ссылокНаНесуществующийФайл": 0,
       "ссылокВнеОбходаЛана": 0,
@@ -1748,8 +2436,8 @@
           "естьКарточка": true
         },
         "11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md": {
-          "проза": 5,
-          "карточка": 11,
+          "проза": 7,
+          "карточка": 12,
           "вПрозеНеВКарточке": [],
           "вКарточкеНеИзПрозы": [
             "READABLE",
@@ -1910,7 +2598,11 @@
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 1,
         "токены": [
-          "EVIDENCE_HOLD"
+          "EVIDENCE_HOLD",
+          "FALSE_LOCATOR",
+          "ORIGINAL_TEXT_HOLD",
+          "PUBLICATION_HOLD",
+          "RIGHTS_HOLD"
         ],
         "машинно": false,
         "машинноПоФайлу": true
@@ -2796,7 +3488,7 @@
         "код": "СР@09_SILENCES_AND_FALSE_FRIENDS~3",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/09_SILENCES_AND_FALSE_FRIENDS.md",
-        "строка": 56,
+        "строка": 88,
         "срез": "Часть III. Как проверять ложных друзей (чек-лист)",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 1,
@@ -2811,7 +3503,7 @@
         "код": "СР@09_SILENCES_AND_FALSE_FRIENDS~4",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/09_SILENCES_AND_FALSE_FRIENDS.md",
-        "строка": 66,
+        "строка": 98,
         "срез": "Часть IV. Объективные ограничения (HOLD — не «что не сделано»)",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 2,
@@ -3039,9 +3731,16 @@
         "файл": "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
         "строка": 181,
         "срез": "9. Ин. 11:52 — что проверено в каком языке (волна 4, 2026-11-03)",
-        "класс": "БЕЗ МАРКЕРА",
-        "маркеров": 0,
-        "токены": [],
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "FALSE_LOCATOR",
+          "LOCATOR_HOLD",
+          "ORIGINAL_TEXT_HOLD",
+          "PARTIAL_VERIFICATION",
+          "PUBLICATION_HOLD",
+          "RIGHTS_HOLD"
+        ],
         "машинно": false,
         "машинноПоФайлу": true
       },
@@ -3205,10 +3904,880 @@
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 1,
         "токены": [
+          "LOCATOR_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "СР@11_III_IV_GAPS_AND_LATIN_WEST_CARDS~3",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
+        "строка": 204,
+        "срез": "Дополнение Волны 22 (2026-11-15): латинская сверка `HIL-1`, `AMB-1`, `JER-1` и исправление ложного локатора `HIL-1`",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "ARCHIVE_HOLD",
+          "FALSE_LOCATOR",
+          "LOCATOR_HOLD",
+          "ORIGINAL_TEXT_HOLD",
+          "ORIGINAL_TEXT_VERIFIED",
+          "RIGHTS_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "1@12_DEEP_PRIMARY_DOSSIER_II_VIII_C_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/12_DEEP_PRIMARY_DOSSIER_II_VIII_C_2026-11-15.md",
+        "строка": 16,
+        "срез": "1. Апостольские отцы (I–II вв.)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "ORIGINAL_TEXT_VERIFIED",
+          "PARTIAL_VERIFICATION"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "2@12_DEEP_PRIMARY_DOSSIER_II_VIII_C_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/12_DEEP_PRIMARY_DOSSIER_II_VIII_C_2026-11-15.md",
+        "строка": 63,
+        "срез": "2. Апологеты и антигностический синтез (II в.)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "ORIGINAL_TEXT_HOLD",
+          "ORIGINAL_TEXT_VERIFIED",
+          "PARTIAL_VERIFICATION"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "3@12_DEEP_PRIMARY_DOSSIER_II_VIII_C_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/12_DEEP_PRIMARY_DOSSIER_II_VIII_C_2026-11-15.md",
+        "строка": 99,
+        "срез": "3. III–IV века и византийский итог: полифония моделей",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "ORIGINAL_TEXT_HOLD",
+          "ORIGINAL_TEXT_VERIFIED",
+          "PARTIAL_VERIFICATION"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "4@12_DEEP_PRIMARY_DOSSIER_II_VIII_C_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/12_DEEP_PRIMARY_DOSSIER_II_VIII_C_2026-11-15.md",
+        "строка": 180,
+        "срез": "4. Сводная верификационная таблица II–VIII вв.",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "ORIGINAL_TEXT_HOLD",
+          "ORIGINAL_TEXT_VERIFIED",
+          "PARTIAL_VERIFICATION"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "1@13_AUGUSTINE_AND_MEDIEVAL_TURNING_POINT_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/13_AUGUSTINE_AND_MEDIEVAL_TURNING_POINT_2026-11-15.md",
+        "строка": 15,
+        "срез": "1. Блаженный Августин Иппонийский (354–430) — `ORIGINAL_TEXT_VERIFIED`",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "2@13_AUGUSTINE_AND_MEDIEVAL_TURNING_POINT_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/13_AUGUSTINE_AND_MEDIEVAL_TURNING_POINT_2026-11-15.md",
+        "строка": 82,
+        "срез": "2. Ансельм Кентерберийский (*Cur Deus Homo*, 1098) — `ORIGINAL_TEXT_VERIFIED` (Schmitt II, закрывает `F14-05`)",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "3@13_AUGUSTINE_AND_MEDIEVAL_TURNING_POINT_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/13_AUGUSTINE_AND_MEDIEVAL_TURNING_POINT_2026-11-15.md",
+        "строка": 109,
+        "срез": "3. Пётр Абеляр (*Commentaria in Epistolam Pauli ad Romanos* II, ок. 1133–1139) — `ORIGINAL_TEXT_VERIFIED`",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "4@13_AUGUSTINE_AND_MEDIEVAL_TURNING_POINT_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/13_AUGUSTINE_AND_MEDIEVAL_TURNING_POINT_2026-11-15.md",
+        "строка": 121,
+        "срез": "4. Пётр Ломбардский (*Sententiae* III d. 20 c. 5, ок. 1155–1158) — `ORIGINAL_TEXT_VERIFIED`",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "5@13_AUGUSTINE_AND_MEDIEVAL_TURNING_POINT_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/13_AUGUSTINE_AND_MEDIEVAL_TURNING_POINT_2026-11-15.md",
+        "строка": 132,
+        "срез": "5. Фома Аквинский (*Summa Theologiae* IIIª qq. 46–49, 1272–1273) — `ORIGINAL_TEXT_VERIFIED` (Леонинская латынь, закрывает `F14-06`)",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "1@14_FIVE_THESES_AUDIT_AND_CH14_16_BRIDGE_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/14_FIVE_THESES_AUDIT_AND_CH14_16_BRIDGE_2026-11-15.md",
+        "строка": 9,
+        "срез": "1. Аудит пяти популярных полемических тезисов — `RESOLVED`",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "OPEN_TENSION",
+          "ORIGINAL_TEXT_VERIFIED",
+          "RESOLVED"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "2@14_FIVE_THESES_AUDIT_AND_CH14_16_BRIDGE_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/14_FIVE_THESES_AUDIT_AND_CH14_16_BRIDGE_2026-11-15.md",
+        "строка": 60,
+        "срез": "2. Сравнительная шестиосевая матрица авторов (II–XIII вв.)",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "3@14_FIVE_THESES_AUDIT_AND_CH14_16_BRIDGE_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/14_FIVE_THESES_AUDIT_AND_CH14_16_BRIDGE_2026-11-15.md",
+        "строка": 81,
+        "срез": "3. Аудит `docs/research/atonement/15_patristic_and_reformation_misattributions.md` (§§2.1–2.2) — `RESOLVED`",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "FALSE_FRIEND"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "4@14_FIVE_THESES_AUDIT_AND_CH14_16_BRIDGE_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/14_FIVE_THESES_AUDIT_AND_CH14_16_BRIDGE_2026-11-15.md",
+        "строка": 99,
+        "срез": "4. Координаторский мост к главам 14–16 (черновики PR #309) — `LOCATOR_VERIFIED`",
+        "класс": "СЛУЖЕБНОЕ",
+        "маркеров": 1,
+        "токены": [
+          "FETCH_HEAD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "0@15_LATE_PATRISTIC_AND_SCOTIST_PIVOT_IV_XIV_C_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/15_LATE_PATRISTIC_AND_SCOTIST_PIVOT_IV_XIV_C_2026-11-15.md",
+        "строка": 10,
+        "срез": "0. Методологическая рамка и закрываемые HOLD-позиции",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "1@15_LATE_PATRISTIC_AND_SCOTIST_PIVOT_IV_XIV_C_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/15_LATE_PATRISTIC_AND_SCOTIST_PIVOT_IV_XIV_C_2026-11-15.md",
+        "строка": 21,
+        "срез": "1. Кирилл Иерусалимский (*Catecheses ad illuminandos* XIII, ~348–350 гг.) — закрытие `00_` §9 #3",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "ORIGINAL_TEXT_HOLD",
+          "PARTIAL_VERIFICATION"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "2@15_LATE_PATRISTIC_AND_SCOTIST_PIVOT_IV_XIV_C_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/15_LATE_PATRISTIC_AND_SCOTIST_PIVOT_IV_XIV_C_2026-11-15.md",
+        "строка": 37,
+        "срез": "2. Василий Великий (*Homilia in Psalmum XLVIII* §§3–4, PG 29:437C–440A)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "ORIGINAL_TEXT_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "3@15_LATE_PATRISTIC_AND_SCOTIST_PIVOT_IV_XIV_C_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/15_LATE_PATRISTIC_AND_SCOTIST_PIVOT_IV_XIV_C_2026-11-15.md",
+        "строка": 52,
+        "срез": "3. Максим Исповедник (*Quaestiones ad Thalassium* Q. 21 и Q. 61, PG 90) — закрытие `G66`",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "4@15_LATE_PATRISTIC_AND_SCOTIST_PIVOT_IV_XIV_C_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/15_LATE_PATRISTIC_AND_SCOTIST_PIVOT_IV_XIV_C_2026-11-15.md",
+        "строка": 82,
+        "срез": "4. Каролингский спор IX века: Кьерси (853) и Валанс (855) — проверка тезиса `15_` §5",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "5@15_LATE_PATRISTIC_AND_SCOTIST_PIVOT_IV_XIV_C_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/15_LATE_PATRISTIC_AND_SCOTIST_PIVOT_IV_XIV_C_2026-11-15.md",
+        "строка": 103,
+        "срез": "5. Бернард Клервоский (*Epistola 190 / Tractatus de erroribus Abaelardi*, 1140, PL 182:1053–1072) — закрытие `G65`",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "6@15_LATE_PATRISTIC_AND_SCOTIST_PIVOT_IV_XIV_C_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/15_LATE_PATRISTIC_AND_SCOTIST_PIVOT_IV_XIV_C_2026-11-15.md",
+        "строка": 136,
+        "срез": "6. Иоанн Дунс Скот (*Reportata Parisiensia* III d. 19, ~1302–1308 гг.) — текстологическое открытие и двуликий перелом XIV века",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "7@15_LATE_PATRISTIC_AND_SCOTIST_PIVOT_IV_XIV_C_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/15_LATE_PATRISTIC_AND_SCOTIST_PIVOT_IV_XIV_C_2026-11-15.md",
+        "строка": 172,
+        "срез": "7. Сводная верификационная матрица Волны 11A (IV–XIV вв.)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "ORIGINAL_TEXT_HOLD",
+          "PARTIAL_VERIFICATION"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "0@16_REFORMATION_ATONEMENT_PRIMARY_AUDIT_XVI_C_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/16_REFORMATION_ATONEMENT_PRIMARY_AUDIT_XVI_C_2026-11-15.md",
+        "строка": 10,
+        "срез": "0. Главный историко-методологический результат Волны 11B",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "1@16_REFORMATION_ATONEMENT_PRIMARY_AUDIT_XVI_C_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/16_REFORMATION_ATONEMENT_PRIMARY_AUDIT_XVI_C_2026-11-15.md",
+        "строка": 18,
+        "срез": "1. Мартин Лютер (1525 и 1535) — синтез заместительного наказания и *Christus Victor* (`F-28`, закрытие `F14-07`)",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "2@16_REFORMATION_ATONEMENT_PRIMARY_AUDIT_XVI_C_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/16_REFORMATION_ATONEMENT_PRIMARY_AUDIT_XVI_C_2026-11-15.md",
+        "строка": 46,
+        "срез": "2. Жан Кальвин (1552–1559) — *Institutio* 1559 и *Commentarii* (закрытие `F14-07` и аудит `15_` §3)",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "3@16_REFORMATION_ATONEMENT_PRIMARY_AUDIT_XVI_C_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/16_REFORMATION_ATONEMENT_PRIMARY_AUDIT_XVI_C_2026-11-15.md",
+        "строка": 82,
+        "срез": "3. Реформатские исповедания XVI века: Гейдельбергский катехизис (1563) + Урсин и Второе гельветическое исповедание (1566) + Буллингер (`F-30`)",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "4@16_REFORMATION_ATONEMENT_PRIMARY_AUDIT_XVI_C_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/16_REFORMATION_ATONEMENT_PRIMARY_AUDIT_XVI_C_2026-11-15.md",
+        "строка": 121,
+        "срез": "4. Теодор Беза (1555–1588) и историография «Calvin against the Calvinists» — аудит `15_` §5",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "ORIGINAL_TEXT_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "5@16_REFORMATION_ATONEMENT_PRIMARY_AUDIT_XVI_C_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/16_REFORMATION_ATONEMENT_PRIMARY_AUDIT_XVI_C_2026-11-15.md",
+        "строка": 136,
+        "срез": "5. Сводный реестр поправок Волны 11 к `docs/research/atonement/15_` §§3–5",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "6@16_REFORMATION_ATONEMENT_PRIMARY_AUDIT_XVI_C_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/16_REFORMATION_ATONEMENT_PRIMARY_AUDIT_XVI_C_2026-11-15.md",
+        "строка": 148,
+        "срез": "6. Сводная траектория II–XVI веков (итог Волн 10 + 11)",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "1@17_POST_REFORMATION_XVII_C_PRIMARY_AUDIT_1617_1689_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/17_POST_REFORMATION_XVII_C_PRIMARY_AUDIT_1617_1689_2026-11-15.md",
+        "строка": 9,
+        "срез": "1. Фауст Социн (1578/1594) против Гуго Гроция (1617): правительственная теория, `relaxatio legis` и миф об «акцептиляции» (`D2`, `F-31`)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "ORIGINAL_TEXT_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "2@17_POST_REFORMATION_XVII_C_PRIMARY_AUDIT_1617_1689_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/17_POST_REFORMATION_XVII_C_PRIMARY_AUDIT_1617_1689_2026-11-15.md",
+        "строка": 39,
+        "срез": "2. Синод в Дорте (1618–1619) и «упорядоченная достаточность» Джона Давенанта (1650) (`F-32`)",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "3@17_POST_REFORMATION_XVII_C_PRIMARY_AUDIT_1617_1689_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/17_POST_REFORMATION_XVII_C_PRIMARY_AUDIT_1617_1689_2026-11-15.md",
+        "строка": 57,
+        "срез": "3. Эволюция Джона Оуэна (1647 → 1650 → 1653): Триллемма, спор с Гроцием и Бакстером и отречение от скотистского волюнтаризма (`F-33`)",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "4@17_POST_REFORMATION_XVII_C_PRIMARY_AUDIT_1617_1689_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/17_POST_REFORMATION_XVII_C_PRIMARY_AUDIT_1617_1689_2026-11-15.md",
+        "строка": 90,
+        "срез": "4. Пословная колляция Вестминстерского (1646), Савойского (1658) и Второго Лондонского баптистского (1677/1689) исповеданий — закрытие текстового пробела `C-14` (`F-34`)",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "5@17_POST_REFORMATION_XVII_C_PRIMARY_AUDIT_1617_1689_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/17_POST_REFORMATION_XVII_C_PRIMARY_AUDIT_1617_1689_2026-11-15.md",
+        "строка": 112,
+        "срез": "5. Гельветическая формула согласия (1675) и Франсуа Турретин (*Institutio*, 1679–1685): зрелый синтез реформатской ортодоксии (`F-35`)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "ORIGINAL_TEXT_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "6@17_POST_REFORMATION_XVII_C_PRIMARY_AUDIT_1617_1689_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/17_POST_REFORMATION_XVII_C_PRIMARY_AUDIT_1617_1689_2026-11-15.md",
+        "строка": 146,
+        "срез": "6. Сводная сквозная сравнительная матрица II–XVII веков (итог Волн 10 + 11 + 12)",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "7@17_POST_REFORMATION_XVII_C_PRIMARY_AUDIT_1617_1689_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/17_POST_REFORMATION_XVII_C_PRIMARY_AUDIT_1617_1689_2026-11-15.md",
+        "строка": 170,
+        "срез": "7. Сводка пяти новых ложных друзей XVII века (`F-31`–`F-35`)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "FALSE_FRIEND",
+          "QUOTE_RISK"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "1@18_MODERN_ERA_XVIII_XIX_C_PRIMARY_AUDIT_1718_1931_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/18_MODERN_ERA_XVIII_XIX_C_PRIMARY_AUDIT_1718_1931_2026-11-15.md",
+        "строка": 9,
+        "срез": "1. Шотландский спор вокруг «Сердцевины современного богословия» (*The Marrow Controversy*, 1718–1726): Томас Бостон и «дарение» Христа (`F-36`)",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "2@18_MODERN_ERA_XVIII_XIX_C_PRIMARY_AUDIT_1718_1931_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/18_MODERN_ERA_XVIII_XIX_C_PRIMARY_AUDIT_1718_1931_2026-11-15.md",
+        "строка": 24,
+        "срез": "2. «Современный вопрос» у английских частных баптистов XVIII в.: Джон Гилл (1735–1773) против Эндрю Фуллера (1785–1803) (`C-12`, `F-37`)",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "3@18_MODERN_ERA_XVIII_XIX_C_PRIMARY_AUDIT_1718_1931_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/18_MODERN_ERA_XVIII_XIX_C_PRIMARY_AUDIT_1718_1931_2026-11-15.md",
+        "строка": 55,
+        "срез": "3. Раздвоение наследия Джонатана Эдвардса (1738–1754) → Джонатан Эдвардс-мл. (1785), новоанглийская школа (1795–1819) и Джон Маклеод Кэмпбелл (1856) (`F-38`)",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "4@18_MODERN_ERA_XVIII_XIX_C_PRIMARY_AUDIT_1718_1931_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/18_MODERN_ERA_XVIII_XIX_C_PRIMARY_AUDIT_1718_1931_2026-11-15.md",
+        "строка": 86,
+        "срез": "4. Бушнелл (1866 → 1874), Старый Принстон (Ч. Ходж, 1872), Шедд (1888) и баптистский перенос Стронга (1907) (`F-39`)",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "5@18_MODERN_ERA_XVIII_XIX_C_PRIMARY_AUDIT_1718_1931_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/18_MODERN_ERA_XVIII_XIX_C_PRIMARY_AUDIT_1718_1931_2026-11-15.md",
+        "строка": 116,
+        "срез": "5. Органический синтез Германа Бавинка (*Gereformeerde Dogmatiek* III, 1898/1908) и критика типологии Густава Аулена (*Christus Victor*, 1931) — эпилог всей дуги II–XX веков (`F-40`)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "ORIGINAL_TEXT_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "6@18_MODERN_ERA_XVIII_XIX_C_PRIMARY_AUDIT_1718_1931_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/18_MODERN_ERA_XVIII_XIX_C_PRIMARY_AUDIT_1718_1931_2026-11-15.md",
+        "строка": 147,
+        "срез": "6. Сводная карта XVIII–XX веков и пять новых ложных друзей (`F-36`–`F-40`)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "FALSE_FRIEND",
+          "QUOTE_RISK"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "1@19_COUNTER_VOICES_TRENT_CONCORD_REMONSTRANTS_AMYRAUT_BAXTER_1547_1694_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/19_COUNTER_VOICES_TRENT_CONCORD_REMONSTRANTS_AMYRAUT_BAXTER_1547_1694_2026-11-15.md",
+        "строка": 19,
+        "срез": "1. Тридентский собор (1547 / 1562): где действительно проходит разлом с Реформацией",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "FALSE_FRIEND"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "2@19_COUNTER_VOICES_TRENT_CONCORD_REMONSTRANTS_AMYRAUT_BAXTER_1547_1694_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/19_COUNTER_VOICES_TRENT_CONCORD_REMONSTRANTS_AMYRAUT_BAXTER_1547_1694_2026-11-15.md",
+        "строка": 60,
+        "срез": "2. Классическое лютеранство — *Формула Согласия* (1577, *Solid Declaration* Art. XI): монергизм без ограниченного искупления и всеобщее искупление без арминианства",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "FALSE_FRIEND"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "3@19_COUNTER_VOICES_TRENT_CONCORD_REMONSTRANTS_AMYRAUT_BAXTER_1547_1694_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/19_COUNTER_VOICES_TRENT_CONCORD_REMONSTRANTS_AMYRAUT_BAXTER_1547_1694_2026-11-15.md",
+        "строка": 88,
+        "срез": "3. Якоб Арминий (1608) → Ремонстрация (1610) → *Sententia Remonstrantium* на Дорте (1618) и Эпископий (1621): внутренняя эволюция арминианства (к `C-16` п. 147)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "EVIDENCE_HOLD",
+          "FALSE_FRIEND"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "4@19_COUNTER_VOICES_TRENT_CONCORD_REMONSTRANTS_AMYRAUT_BAXTER_1547_1694_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/19_COUNTER_VOICES_TRENT_CONCORD_REMONSTRANTS_AMYRAUT_BAXTER_1547_1694_2026-11-15.md",
+        "строка": 138,
+        "срез": "4. Сомюрская школа: Джон Камерон (1608–1622), Моиз Амиро (*Brief Traitté*, 1634) и три национальных синода Франции (к `C-11`, `04_` P4, `D1`)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "FALSE_FRIEND"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "5@19_COUNTER_VOICES_TRENT_CONCORD_REMONSTRANTS_AMYRAUT_BAXTER_1547_1694_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/19_COUNTER_VOICES_TRENT_CONCORD_REMONSTRANTS_AMYRAUT_BAXTER_1547_1694_2026-11-15.md",
+        "строка": 176,
+        "срез": "5. Ричард Бакстер (1649–1694): гротцианский неономианизм, «Новый Закон» (*lex remedians*) и конфликт с Джоном Оуэном",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "FALSE_FRIEND"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "6@19_COUNTER_VOICES_TRENT_CONCORD_REMONSTRANTS_AMYRAUT_BAXTER_1547_1694_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/19_COUNTER_VOICES_TRENT_CONCORD_REMONSTRANTS_AMYRAUT_BAXTER_1547_1694_2026-11-15.md",
+        "строка": 210,
+        "срез": "6. Синоптическая матрица конфессиональных границ XVI–XVII веков и свод ложных друзей (`F-41`–`F-45`)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "FALSE_FRIEND",
+          "ORIGINAL_TEXT_HOLD",
+          "PUBLICATION_HOLD",
+          "QUOTE_RISK"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "1@20_EASTERN_RUSSIAN_AND_XX_C_ATONEMENT_RECEPTION_AUDIT_1350_2026_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/20_EASTERN_RUSSIAN_AND_XX_C_ATONEMENT_RECEPTION_AUDIT_1350_2026_2026-11-15.md",
+        "строка": 16,
+        "срез": "1. Поздневизантийский синтез XIV века: свт. Григорий Палама и прав. Николай Кавасила",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "2@20_EASTERN_RUSSIAN_AND_XX_C_ATONEMENT_RECEPTION_AUDIT_1350_2026_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/20_EASTERN_RUSSIAN_AND_XX_C_ATONEMENT_RECEPTION_AUDIT_1350_2026_2026-11-15.md",
+        "строка": 44,
+        "срез": "2. Русское православное богословие XIX–XX веков: свт. Филарет Московский и спор о «нравственном монизме»",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "3@20_EASTERN_RUSSIAN_AND_XX_C_ATONEMENT_RECEPTION_AUDIT_1350_2026_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/20_EASTERN_RUSSIAN_AND_XX_C_ATONEMENT_RECEPTION_AUDIT_1350_2026_2026-11-15.md",
+        "строка": 75,
+        "срез": "3. Лексический спор XX века об умилостивлении (*ἱλάσκομαι / ἱλαστήριον*): Ч. Х. Додд (1931/1935) против Леона Морриса и Роджера Николя (1955)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "RIGHTS_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "4@20_EASTERN_RUSSIAN_AND_XX_C_ATONEMENT_RECEPTION_AUDIT_1350_2026_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/20_EASTERN_RUSSIAN_AND_XX_C_ATONEMENT_RECEPTION_AUDIT_1350_2026_2026-11-15.md",
+        "строка": 102,
+        "срез": "4. XX век на Западе: парадокс Карла Барта (*CD* IV/1 и II/2), «модель и тайна» Дж. И. Пакера (1973) и современные споры об *extent*",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "ARCHIVE_HOLD",
+          "FALSE_FRIEND",
+          "RIGHTS_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "5@20_EASTERN_RUSSIAN_AND_XX_C_ATONEMENT_RECEPTION_AUDIT_1350_2026_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/20_EASTERN_RUSSIAN_AND_XX_C_ATONEMENT_RECEPTION_AUDIT_1350_2026_2026-11-15.md",
+        "строка": 133,
+        "срез": "5. Русская евангельско-баптистская традиция (1847–2026) и замыкание кольца с современным русскоязычным спором",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "6@20_EASTERN_RUSSIAN_AND_XX_C_ATONEMENT_RECEPTION_AUDIT_1350_2026_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/20_EASTERN_RUSSIAN_AND_XX_C_ATONEMENT_RECEPTION_AUDIT_1350_2026_2026-11-15.md",
+        "строка": 165,
+        "срез": "6. Сводная карта пяти новых ложных друзей Волны 15 (`F-46`–`F-50`) и итог дуги `12_`–`20_`",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "FALSE_FRIEND",
+          "ORIGINAL_TEXT_HOLD",
+          "PUBLICATION_HOLD",
+          "QUOTE_RISK",
+          "RIGHTS_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "1@21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
+        "строка": 11,
+        "срез": "1. Кирилл Иерусалимский, *Catechesis* XIII.1–2, 4 (греч., PG 33:773–777) — закрытие остаточного `ORIGINAL_TEXT_HOLD` Волны 11 и `00_` §9 #3",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "LOCATOR_HOLD",
+          "ORIGINAL_TEXT_HOLD",
+          "ORIGINAL_TEXT_VERIFIED"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "2@21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
+        "строка": 27,
+        "срез": "2. Иоанн Златоуст: *Hom. in Ioannem* LXV.1 (PG 59:361–362, Ин. 11:51–52) и *Hom. in Colossenses* III (PG 62:318–324, Кол. 1:20) — прямой греческий текст",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "LOCATOR_HOLD",
+          "ORIGINAL_TEXT_VERIFIED"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "3@21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
+        "строка": 51,
+        "срез": "3. Августин Иппонский: *Enchiridion* XVI.61–63 (PL 40:260–261) и *Tract. in Io.* 49.27 (PL 35:1756) — латинский оригинал",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "LOCATOR_HOLD",
+          "ORIGINAL_TEXT_VERIFIED"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "4@21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
+        "строка": 64,
+        "срез": "4. Иларий Пиктавийский (`HIL-1`): закрытие `ORIGINAL_TEXT_HOLD` (PL 10 / PL 9) и выявление `FALSE_LOCATOR` в `11_`",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "FALSE_LOCATOR",
+          "LOCATOR_HOLD",
+          "ORIGINAL_TEXT_HOLD",
+          "ORIGINAL_TEXT_VERIFIED"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "5@21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
+        "строка": 77,
+        "срез": "5. Амвросий Медиоланский (`AMB-1`): закрытие `ORIGINAL_TEXT_HOLD` (PL 16:0150C–D) и поправка дрейфа локатора `10_` (`III.4` → `III.3.19`)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "FALSE_LOCATOR",
+          "LOCATOR_HOLD",
+          "ORIGINAL_TEXT_VERIFIED"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "6@21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
+        "строка": 89,
+        "срез": "6. Иероним Стридонский (`JER-1`): закрытие `ORIGINAL_TEXT_HOLD` (PL 23:0226C)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "LOCATOR_HOLD",
+          "ORIGINAL_TEXT_VERIFIED"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "7@21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
+        "строка": 100,
+        "срез": "7. Ириней Лионский (*Adv. Haer.* V.1.1 — уточнение `F-4`) и Готшальк из Орбе (IX в.)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "LOCATOR_HOLD",
+          "ORIGINAL_TEXT_HOLD",
+          "PARTIAL_VERIFICATION"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "8@21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
+        "строка": 118,
+        "срез": "8. Жан Кальвин — закрытие двух явных латинских вопросов `docs/research/atonement/08_` (Раунд 58) и `21_` (§16.5)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "FALSE_FRIEND",
+          "LOCATOR_HOLD",
+          "ORIGINAL_TEXT_VERIFIED",
+          "PARTIAL_VERIFICATION",
+          "QUOTE_RISK"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "9@21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
+        "строка": 147,
+        "срез": "9. Постреформационная латынь XVII в. и реестр честных остаточных удержаний",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
           "ARCHIVE_HOLD",
           "LOCATOR_HOLD",
           "ORIGINAL_TEXT_HOLD",
-          "RIGHTS_HOLD"
+          "PUBLICATION_HOLD"
         ],
         "машинно": false,
         "машинноПоФайлу": true
@@ -3216,8 +4785,217 @@
     ],
     "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
     "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check fathers",
-    "measuredAt": "2026-11-08T05:46:26Z",
-    "checkedAt": "2026-11-08T05:46:26Z",
-    "предыдущийСъём": "2026-11-03T22:36:42Z"
+    "measuredAt": "2026-11-16T21:28:41Z",
+    "checkedAt": "2026-11-16T21:28:41Z",
+    "предыдущийСъём": "2026-11-16T21:24:24Z"
+  },
+  "patristicAndMedievalPrimaryDossierWave10": {
+    "recordedAtUtc": "2026-11-15T17:05:00Z",
+    "status": "PRIMARY_DOSSIERS_II_XIII_C_COMPLETE_F8_F1405_F1406_CLOSED_PUBLICATION_HOLD_PRESERVED",
+    "c25": "OPEN",
+    "publicationEligible": false,
+    "newFiles": [
+      "ИСКУПЛЕНИЕ/fathers/12_DEEP_PRIMARY_DOSSIER_II_VIII_C_2026-11-15.md",
+      "ИСКУПЛЕНИЕ/fathers/13_AUGUSTINE_AND_MEDIEVAL_TURNING_POINT_2026-11-15.md",
+      "ИСКУПЛЕНИЕ/fathers/14_FIVE_THESES_AUDIT_AND_CH14_16_BRIDGE_2026-11-15.md"
+    ],
+    "updatedFiles": [
+      "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
+      "ИСКУПЛЕНИЕ/fathers/09_SILENCES_AND_FALSE_FRIENDS.md",
+      "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
+      "docs/research/atonement/15_patristic_and_reformation_misattributions.md"
+    ],
+    "closedHoldsAndFalseLocators": [
+      "F-8",
+      "F14-05",
+      "F14-06"
+    ],
+    "remainingHolds": [
+      "Irenaeus AH V.1.1 full SC 153 continuous Greek/Latin page collation (ORIGINAL_TEXT_HOLD)",
+      "Cyril of Alexandria John 11:52 Pusey Vol. II pp. 294-296 & PG 74 cols. 69-70 scans (C-25 OPEN)",
+      "Sub-corpus PUBLICATION_HOLD"
+    ],
+    "fiveThesesAuditVerdicts": {
+      "thesis1_unanimousUniversalAtonement": "PARTIALLY_TRUE_ANACHRONISTIC_OVERCLAIM",
+      "thesis2_unanimousLimitedAtonement": "FALSE",
+      "thesis3_onlyDevilRansomOrChristusVictorPreAnselm": "FALSE",
+      "thesis4_anselmInventedPSA": "FALSE",
+      "thesis5_psa16thCInventionZeroPatristicRoots": "FALSE"
+    }
+  },
+  "patristicScotistAndReformationWave11": {
+    "recordedAtUtc": "2026-11-15T19:15:00Z",
+    "status": "LATE_PATRISTIC_SCOTIST_AND_REFORMATION_PRIMARY_AUDIT_COMPLETE_G65_G66_F1407_CLOSED_PUBLICATION_HOLD_PRESERVED",
+    "c25": "OPEN",
+    "publicationEligible": false,
+    "newFiles": [
+      "ИСКУПЛЕНИЕ/fathers/15_LATE_PATRISTIC_AND_SCOTIST_PIVOT_IV_XIV_C_2026-11-15.md",
+      "ИСКУПЛЕНИЕ/fathers/16_REFORMATION_ATONEMENT_PRIMARY_AUDIT_XVI_C_2026-11-15.md"
+    ],
+    "updatedFiles": [
+      "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
+      "ИСКУПЛЕНИЕ/fathers/09_SILENCES_AND_FALSE_FRIENDS.md",
+      "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
+      "docs/research/atonement/15_patristic_and_reformation_misattributions.md"
+    ],
+    "closedHoldsAndGaps": [
+      "00_ §9 #3 (Cyril of Jerusalem Cat. XIII.32-33 Greek)",
+      "PR #309 G65 (Bernard of Clairvaux Ep. 190 PL 182 Latin)",
+      "PR #309 G66 (Maximus the Confessor Ad Thalassium Q. 21 & Q. 61 PG 90 Greek)",
+      "PR #309 F14-07 (Luther WA 40/1 & WA 18 + Calvin Inst. 1559 & Commentarii Latin/English)"
+    ],
+    "newFalseFriends": [
+      "F-26",
+      "F-27",
+      "F-28",
+      "F-29",
+      "F-30"
+    ],
+    "remainingHolds": [
+      "Cyril of Jerusalem Cat. XIII.2 full Greek (ORIGINAL_TEXT_HOLD)",
+      "Basil of Caesarea Hom. in Ps. 48 §4 exact PG 29:440A Greek (ORIGINAL_TEXT_HOLD)",
+      "John Duns Scotus Lectura III dd. 19-20 Vatican Vol. 21 Latin (ORIGINAL_TEXT_HOLD)",
+      "Theodore Beza Acta Colloquii Montisbelgartensis 1587/1588 Latin print (ORIGINAL_TEXT_HOLD)",
+      "Irenaeus AH V.1.1 full SC 153 continuous Greek/Latin page collation (ORIGINAL_TEXT_HOLD)",
+      "Cyril of Alexandria John 11:52 Pusey Vol. II pp. 294-296 & PG 74 cols. 69-70 scans (C-25 OPEN)",
+      "Sub-corpus PUBLICATION_HOLD"
+    ]
+  },
+  "postReformationXviiPrimaryWave12": {
+    "recordedAtUtc": "2026-11-15T18:30:00Z",
+    "status": "COMPLETED_RESEARCH_WAVE_12",
+    "c25": "OPEN",
+    "publicationEligible": false,
+    "newFiles": [
+      "ИСКУПЛЕНИЕ/fathers/17_POST_REFORMATION_XVII_C_PRIMARY_AUDIT_1617_1689_2026-11-15.md"
+    ],
+    "updatedFiles": [
+      "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
+      "ИСКУПЛЕНИЕ/fathers/09_SILENCES_AND_FALSE_FRIENDS.md",
+      "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
+      "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+      "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
+      "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json"
+    ],
+    "closedHoldsAndGaps": [
+      "C-14 textual gap (word-for-word collation of WCF 1646 / Savoy 1658 / 2LBC 1677-1689 Ch. III.6, VII.3, VIII.1-10, XI.3-4, XX.1-4; 02_CONFLICT_LEDGER.md untouched to preserve synchronization_2026-11-02.json checks)",
+      "D2 Grotius Defensio 1617 acceptilatio myth resolved via 3.1 & 6.14 (Grotiana 38.1, 2017; EEBO-TCP A42221; Foster 1889)",
+      "Owen 1647 (Goold X:271-272) -> 1653 (Goold X:481-624) Scotist-to-essentialist reversal documented verbatim",
+      "Turretin XIV Q. 10-14 pecuniary/penal synthesis & Formula Consensus Helvetica 1675 Canons I-XXIV verified"
+    ],
+    "newFalseFriends": [
+      "F-31",
+      "F-32",
+      "F-33",
+      "F-34",
+      "F-35"
+    ],
+    "remainingHolds": [
+      "ORIGINAL_TEXT_HOLD: Grotius Defensio 1617 Leyden / 1730 Leipzig continuous Latin folio collation",
+      "ORIGINAL_TEXT_HOLD: Turretin Institutio 1682 Geneva Latin page collation for Locus XIV Q. 10-11",
+      "C-25 OPEN: Cyril of Alexandria In Io. VII 11:52 Pusey II pp. 294-296 / PG 74 cols. 69-70 scans"
+    ]
+  },
+  "modernEraXviiiXixPrimaryWave13": {
+    "recordedAtUtc": "2026-11-15T19:15:00Z",
+    "status": "COMPLETED_RESEARCH_WAVE_13",
+    "c25": "OPEN",
+    "publicationEligible": false,
+    "newFiles": [
+      "ИСКУПЛЕНИЕ/fathers/18_MODERN_ERA_XVIII_XIX_C_PRIMARY_AUDIT_1718_1931_2026-11-15.md"
+    ],
+    "updatedFiles": [
+      "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
+      "ИСКУПЛЕНИЕ/fathers/09_SILENCES_AND_FALSE_FRIENDS.md",
+      "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
+      "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+      "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
+      "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json"
+    ],
+    "closedHoldsAndGaps": [
+      "Complete 1,800-year historical-theological primary arc (II-XX c., files 12_-18_) linking Patristic/Medieval/Reformation/Post-Reformation debates directly to modern Baptist/Reformed terminology (1795-1907 -> 2019)",
+      "C-12 Gill vs Fuller primary synthesis documented cleanly without touching external sub-corpus БИОГРАФИИ/Джон Гилл/",
+      "Charles Hodge ST II:469-475, 544-562 direct CCEL primary collation + Bushnell 1866->1874 revision + Edwards Sr.->Edwards Jr./McLeod Campbell bifurcation + Bavinck organic synthesis vs Aulen typology"
+    ],
+    "newFalseFriends": [
+      "F-36",
+      "F-37",
+      "F-38",
+      "F-39",
+      "F-40"
+    ],
+    "remainingHolds": [
+      "ORIGINAL_TEXT_HOLD: full printed page collation of Fisher 1645 / Boston 1726, Yale WJE Edwards, Bushnell 1874, Campbell 1856/1869, Dutch GD III Bavinck, and Swedish/German Aulen 1930",
+      "C-25 OPEN: Cyril of Alexandria In Io. VII 11:52 Pusey II pp. 294-296 / PG 74 cols. 69-70 scans"
+    ]
+  },
+  "counterVoicesXviXviiPrimaryWave14": {
+    "recordedAtUtc": "2026-11-15T20:15:00Z",
+    "status": "COMPLETED_RESEARCH_WAVE_14",
+    "c25": "OPEN",
+    "publicationEligible": false,
+    "newFiles": [
+      "ИСКУПЛЕНИЕ/fathers/19_COUNTER_VOICES_TRENT_CONCORD_REMONSTRANTS_AMYRAUT_BAXTER_1547_1694_2026-11-15.md"
+    ],
+    "updatedFiles": [
+      "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
+      "ИСКУПЛЕНИЕ/fathers/09_SILENCES_AND_FALSE_FRIENDS.md",
+      "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
+      "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+      "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
+      "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json"
+    ],
+    "closedHoldsAndGaps": [
+      "Roman Catholic primary audit (Trent Sess. VI & XXII Latin/English) addressing 01_SERIES_PLAN §4 ('Римская сатисфакция и месса' / A4 background)",
+      "Classical Lutheran monergistic universalism primary audit (Formula of Concord SD XI) addressing 04_ §2 P6",
+      "Primary collation of Arminius (1608), Remonstrance (1610), and Sententia Remonstrantium at Dort (1618) addressing C-16 p. 147 primary-source gap without altering pinned ledger",
+      "Saumur primary audit (Cameron, Amyraut Brief Traitte 1634, Quick Synodicon 1637/1644-45/1659) addressing C-11 / B4 / D1",
+      "Richard Baxter EEBO-TCP primary audit (1649/1675/1694) clarifying Grotian-Neonomian hybrid vs Owen, Amyraut, and Arminius"
+    ],
+    "newFalseFriends": [
+      "F-41",
+      "F-42",
+      "F-43",
+      "F-44",
+      "F-45"
+    ],
+    "remainingHolds": [
+      "ORIGINAL_TEXT_HOLD: full printed page collation of 1620 Latin Acta Synodi Nationalis (pp. 113-118), 1634 Saumur print of Amyraut Brief Traitte, 1621/1622 Episcopius Confessio, and 1642 Cameron Opera",
+      "C-25 OPEN: Cyril of Alexandria In Io. VII 11:52 Pusey II pp. 294-296 / PG 74 cols. 69-70 scans"
+    ]
+  },
+  "easternRussianXxcReceptionWave15": {
+    "recordedAtUtc": "2026-11-15T12:00:00Z",
+    "dossier": "ИСКУПЛЕНИЕ/fathers/20_EASTERN_RUSSIAN_AND_XX_C_ATONEMENT_RECEPTION_AUDIT_1350_2026_2026-11-15.md",
+    "scope": "Eastern Byzantine (XIV c.), Russian Orthodox (XIX-XX c.), XX c. lexical/dogmatic debates (Dodd vs Morris/Nicole, Barth, Murray, Packer), and Russian EHB confessions (1847-1985)",
+    "falseFriendsAdded": [
+      "F-46",
+      "F-47",
+      "F-48",
+      "F-49",
+      "F-50"
+    ],
+    "totalFalseFriends": 50,
+    "c25Status": "OPEN",
+    "publicationEligible": false,
+    "rightsHoldObserved": true
+  },
+  "originalLanguageClosuresWave22": {
+    "recordedAtUtc": "2026-11-15T18:00:00Z",
+    "dossier": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
+    "scope": "Targeted patristic Greek/Latin & Reformation Latin closures: Cyril of Jerusalem Cat. XIII.1-4, Chrysostom Hom. in Io. 65 & Hom. in Col. III, Augustine Enchiridion XVI.61-63 & Tract. in Io. 49.27, Hilary HIL-1 (fixing In Ps. I §18), Ambrose AMB-1 (III.3.19), Jerome JER-1 (I.11), Irenaeus V.1.1 suadela, Gottschalk IX c., Calvin John 3:16 propitium & 1 John 2:2 1551 Geneva Latin",
+    "falseFriendsAdded": [
+      "F-51",
+      "F-52"
+    ],
+    "totalFalseFriends": 52,
+    "verifiedOriginalsAdded": 10,
+    "totalVerifiedOriginals": 75,
+    "legacyDossiersClosed": [
+      "docs/research/atonement/08_john_3_16_exegetical_defense.md (Round 58 propitium)",
+      "docs/research/atonement/21_exegesis_1john_2_2_and_parakletos_trilemma.md (§16.5 1551 Geneva Crespin ed. & CO 55:310 Latin)"
+    ],
+    "c25Status": "OPEN",
+    "publicationEligible": false
   }
 }

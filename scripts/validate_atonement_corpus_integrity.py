@@ -1130,7 +1130,9 @@ def _leaf_hits(obj):
 _own_json_hits = []
 _sub_json_hits = []
 _json_files_scanned = 0
-for _jp in sorted(CORPUS.rglob("*.json")):
+# .scratch — git-ignored клоны источников: их package.json и служебные файлы не проза корпуса,
+# и обход по ним делал бы раскладку зависимой от наличия клонов на диске.
+for _jp in sorted(p for p in CORPUS.rglob("*.json") if ".scratch" not in p.parts):
     try:
         _jd = json.loads(read(_jp))
     except Exception:

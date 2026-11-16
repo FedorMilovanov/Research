@@ -600,7 +600,7 @@ The nine entries below were added after reading the 1676 printing directly, the 
 - Publication state: REFERENCE
 - HOLDs: ARCHIVE_HOLD, RIGHTS_HOLD
 - Supports: That records exist for 'Heerlijckheyds Loff' across several 17th- and 18th-century songbooks (1676, Stapel's Lusthof 1681, Bundeltje 1718); That a recorded stanza scheme exists for the 1718 printing
-- Limits / caveats: Class C: index extracts are a discovery lead, never quote-safe and never a substitute for the database itself, which returned HTTP 403 on 2026-10-25. Do not cite these extracts as independent witnesses to a text or a melody.
+- Limits / caveats: Class C: index extracts are a discovery lead, never quote-safe and never a substitute for the database itself, which returned HTTP 403 on 2026-10-25 (reachable again on 2026-11-15 — record 9086 read directly, so the extracts are no longer the only witness). Do not cite these extracts as independent witnesses to a text or a melody.
 
 ## Fifth-pass additions — 2026-10-25
 
@@ -872,7 +872,7 @@ The Greek lane is registered in the same file as the Dutch one because it is the
 - Supports: The Rutgers reworking of Heerlijckheyds Loff as hymn XLIII, its opening line, its eight-line stanza shape and its placement in the 1806 collection
 - Limits / caveats: Read from the DBNL transcription of the 1806 printing, not from a page image; the stanza numbering and typography of the printed page have not been inspected.
 
-## SRC-NL-LIEDERENBANK-9086 — Nederlandse Liederenbank record 9086 — Heerlijckheyds Loff (offline 2026-10-26)
+## SRC-NL-LIEDERENBANK-9086 — Nederlandse Liederenbank record 9086 — Heerlijckheyds Loff (record inspected 2026-11-15; was offline 2026-10-26)
 
 - URL: https://www.liederenbank.nl/liedpresentatie.php?lan=nl&zoek=9086
 - Source role/type: Catalogue record in the Dutch Song Database (Meertens Instituut / KNAW)
@@ -883,7 +883,7 @@ The Greek lane is registered in the same file as the Dutch one because it is the
 - Publication state: REFERENCE
 - HOLDs: RIGHTS_HOLD, ARCHIVE_HOLD
 - Supports: Record fields: ten stanzas, date '27. in Ougstmaand 1665', the note that the melody is not that of 'Un jour m'en allais seulette', and the witness sigla Stapel LusthofZ1681, Bundeltje1718, EvangGez1806, PsalmenGezNH1938
-- Limits / caveats: The database returns HTTP 403 with a KNAW information-security notice and is offline as of 2026-10-26. The fields were read from the record's own rendering inside search results, not from an opened catalogue page. Re-check when the database returns; do not treat as inspected until then.
+- Limits / caveats: HTTP 403 with a KNAW information-security notice was observed on 2026-10-25/26; it no longer reproduces — the catalogue page was opened and read on 2026-11-15, so the fields are now inspected-catalogue readings, not search renderings. What still keeps this at `CATALOG_ONLY` is the unacquired page image (Lodenstein US1676, scan 171 = printed p. 155), not the link. Evidence: `SOURCE_LIBRARY/SOURCE_URL_RESOLUTION_BATCH_2026-11-15.md` §3.6.
 
 ## SRC-PSALMENGEZ-1938-75 — Psalmen en Gezangen (Hervormde Bundel 1938), Gezang 75, p. 501, nr. 239
 
