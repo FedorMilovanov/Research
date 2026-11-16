@@ -223,3 +223,44 @@
 ### F.6. Урок
 
 Ссылка, которая **открывается**, не есть ссылка, которая ведёт **куда заявлено**. Все восемь адресов `article13` были рабочими и все восемь вели на три страницы раньше. Ни один машинный гейт этого не видел — и не мог: он проверяет существование файла и номера разделов, а не совпадение адреса с заявленной страницей.
+
+
+---
+
+## G. Проверка CCEL-ссылок: 10 из 10 верны
+
+После находки §F (адрес ≠ заявленная страница) проверил ссылки `ccel.org` — их 36, и они заданы **не страницами**, а именованными путями (`deathofdeath.i.ix.vii`). Там возможен свой класс ошибки: путь ведёт не в ту книгу или не в ту главу.
+
+### G.1. Что проверено
+
+| Ссылка | Заявлено в главе | Открылось |
+|---|---|---|
+| `owen/deathofdeath.i.ix.vii` | Оуэн III.VII | «Book III, Chapter VII. Of the nature of the satisfaction of Christ», Arg. XIII |
+| `owen/deathofdeath.i.ix.ii` | Оуэн III.II | Book III, Chapter II — сходится |
+| `owen/deathofdeath.i.x.iii` | Оуэн IV.III | Book IV, Chapter III — сходится |
+| `owen/deathofdeath.i.x.iv` | «Book IV, chapter IV» | Book IV, Chapter IV — сходится |
+| `owen/display.i.xvi` | *Display* гл. IX | «Chapter IX. Of the death of Christ» — сходится |
+| `calvin/calcom45.v.iii.i` | 1 Ин. 2:1–2 | заголовок «1 John 2:1-2», текст 2:1–2 |
+| `calvin/calcom45.vii.iii.i` | 2 Пет. 2:1 | заголовок «2 Peter 2:1-3» |
+| `calvin/calcom38.ix.x` | Рим. 5:18 | заголовок «Romans 5:18» |
+| `calvin/calcom42.v.ii.iv` | Кол. 1:18–20 | заголовок «Colossians 1:18-20» |
+| `calvin/calcom34.vii.vii` | Ин. 1:29 | путь ведёт в тот же комментарий |
+
+Схему «путь → книга/глава» вывел не на глаз, а по оглавлениям CCEL (`deathofdeath.toc.html`, `display.toc.html`): `i.vii` = Book I, `i.viii` = Book II, `i.ix` = Book III, `i.x` = Book IV; в `display` главы начинаются с `i.viii`.
+
+### G.2. Вывод — отрицательный, и это результат
+
+**Ни одной ошибки адреса в CCEL-ссылках не найдено.** Это не «проверено всё»: проверены 10 путей из 36, выборка — самые нагруженные (Оуэн, на котором держится глава 13, и четыре места Кальвина, на которых держатся главы 9–12). Остальные 26 — того же вида и того же происхождения.
+
+Почему это важно записать: §F показал, что «ссылка открывается» ничего не доказывает. Здесь тот же метод дал обратный ответ — и его тоже надо зафиксировать, иначе следующая волна перепроверит то же самое.
+
+### G.3. Что при этом подтвердилось по содержанию
+
+Проверка была не только адресной. В четырёх местах Кальвина подтвердились **сами формулировки**, на которых стоят главы:
+
+- 1 Ин. 2:2 — «the expiation made by Christ extends to all who by faith embrace the gospel»;
+- Рим. 5:18 — «he makes this favor common to all, because it is propounded to all, and not because it is in reality extended to all», с редакторским примечанием CCEL: «It appears from this sentence that Calvin held general redemption»;
+- 2 Пет. 2:1 — разбор `δεσπότης` и «denying the Lord that bought them»;
+- Кол. 1:18–20 — «he has been made propitious to his creatures by the blood of Christ».
+
+Последнее примечание CCEL важно как **чужой** голос: оно показывает, что вопрос о всеобщем искуплении у Кальвина не выдуман нашим корпусом.
