@@ -1450,6 +1450,19 @@ def validate_source_access(sources: dict) -> list[str]:
 
         if rid == "SRC-WEVERS-GOTTINGEN-EXODUS-1991-AUTHOR-INTRO-EN2006":
             method = source.get("editorialMethodFacts20261112")
+            front = source.get("original1991GermanFrontMatterDnb20261116")
+            expected_frontmatter = {
+                "dnbDigitalFrontmatterPdf": "https://d-nb.info/910927367/04",
+                "originalTitlePageVisualVerified": True,
+                "originalContentsPageVisualVerified": True,
+                "fullOriginalCriticalTextInspected": False,
+                "fullApparatusForTargetLociInspected": False,
+                "editionYear": 1991,
+                "originalPrintedIntroApparatus1Page": 50,
+                "originalPrintedIntroApparatus2Page": 54,
+                "originalPrintedBiblicalTextBeginsPage": 65,
+                "cambridgeJtsSpecificExodusImageVerifiedFromArchive": False,
+            }
             expected = {
                 "printedEditionYear": 1991,
                 "authorEnglishTranslationYear": 2006,
@@ -1475,7 +1488,9 @@ def validate_source_access(sources: dict) -> list[str]:
                 or source.get("publicationState") != "BLOCKED"
                 or source.get("criticalEditionCollated") is not False
                 or not isinstance(method, dict)
-                or any(method.get(key) != value for key, value in expected.items())):
+                or any(method.get(key) != value for key, value in expected.items())
+                or not isinstance(front, dict)
+                or any(front.get(key) != value for key, value in expected_frontmatter.items())):
                 errors.append(f"{prefix}: Wevers 1991 apparatus introduction does not establish Exodus17:16 variant, Field independence or photo rights")
 
         if rid == "SRC-FIELD-HEXAPLA-1875-EX17-16-PRINT-P111-BSB":
