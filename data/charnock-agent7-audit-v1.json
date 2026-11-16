@@ -396,6 +396,12 @@
       "finding": "Reid (1853, ii.202) calls Charnock 'a fellow of the college' in the Dublin context (i.e. Trinity College Dublin) - a version found neither in Wood (New College, Oxford) nor in M'Cosh.",
       "use": "do NOT use to settle any Dublin fellowship question; no college act cited. Article should omit it.",
       "status": "HOLD (new variant, act required)"
+    },
+    {
+      "id": "N-9",
+      "finding": "В корпусе системно удалены пробелы между числом и словом и после «;»/«:»: 2853 находки в 20 файлах (16 — 1493, план — 614, 04 — 342, 00 — 288, реестр якорей — 255). Записи численно верны, поэтому ни один валидатор не срабатывал; страдает читаемость публикационного текста.",
+      "use": "Дефект измерен детектором scripts/audit_charnock_text_spacing.py; механическая правка вставила бы 3198 пробелов, но требует регенерации ~2900 производных хешей (1302 = sha256 соседнего текста, 916 кросс-ссылки, 81 составной).",
+      "status": "OPEN — требует отдельной волны регенерации хешей; см. supplemental-audits/TEXT_SPACING_DEFECT_2026-11-16.md"
     }
   ],
   "conflicts": [
