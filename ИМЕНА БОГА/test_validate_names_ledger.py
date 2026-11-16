@@ -2620,6 +2620,23 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                 row["editorialMethodFacts20261112"][key] = wrong
                 self.assertTrue(any("Wevers 1991 apparatus introduction" in e
                                     for e in validate_source_access(copy_sources)))
+        frontmatter_mutations = (
+            ("originalTitlePageVisualVerified", False),
+            ("originalContentsPageVisualVerified", False),
+            ("fullOriginalCriticalTextInspected", True),
+            ("fullApparatusForTargetLociInspected", True),
+            ("originalPrintedIntroApparatus1Page", 65),
+            ("originalPrintedIntroApparatus2Page", 50),
+            ("originalPrintedBiblicalTextBeginsPage", 54),
+            ("cambridgeJtsSpecificExodusImageVerifiedFromArchive", True),
+        )
+        for key, wrong in frontmatter_mutations:
+            with self.subTest(frontmatter_scope=key):
+                changed = copy.deepcopy(self.sources)
+                row = next(x for x in changed["records"] if x["id"] == source_id)
+                row["original1991GermanFrontMatterDnb20261116"][key] = wrong
+                self.assertTrue(any("Wevers 1991 apparatus introduction" in error
+                                    for error in validate_source_access(changed)))
         self.assertEqual([], validate_source_access(self.sources))
 
 
