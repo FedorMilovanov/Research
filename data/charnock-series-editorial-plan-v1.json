@@ -8,8 +8,9 @@
   "baselineReceipt": "data/charnock-handoff-receipt-v1.json",
   "custodyBoundary": "Wave40receipt describes its immutable source packet,not the revised00/16. Current editorial revision is not yet transferred/independently received.",
   "expectedChangedPacketMembers": [
-    "БИОГРАФИИ/Стивен Чарнок/00_README_AND_NAVIGATION.md",
-    "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md"
+    "БИОГРАФИИ/Стивен CHARНОК/00_README_AND_NAVIGATION.md",
+    "БИОГРАФИИ/Стивен CHARНОК/04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
+    "БИОГРАФИИ/Стивен CHARНОК/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md"
   ],
   "evidenceClass": "C",
   "accessState": "FULL_OBJECT_VERIFIED",
@@ -2698,7 +2699,7 @@
       "legacyIds": [
         "CHR-LING-02"
       ],
-      "dossierSha256": "0654d30dfbf376421bc6087a42c2fcf6cc848bc7abeaf108c1df272684437666",
+      "dossierSha256": "7f0acf7dc0d5bc2e3a09ae70b9cdbac6e518406feb43781c939bb839ce2b3ebe",
       "reviewState": "DERIVED_PAIR_PACKET_COUNTERPART_RECHECK_OPEN",
       "charnockSide": {
         "byteVerifiedContext": {
@@ -2979,7 +2980,7 @@
       "legacyIds": [
         "CHR-RAY-02"
       ],
-      "dossierSha256": "0654d30dfbf376421bc6087a42c2fcf6cc848bc7abeaf108c1df272684437666",
+      "dossierSha256": "7f0acf7dc0d5bc2e3a09ae70b9cdbac6e518406feb43781c939bb839ce2b3ebe",
       "reviewState": "DERIVED_PAIR_PACKET_COUNTERPART_RECHECK_OPEN",
       "charnockSide": {
         "byteVerifiedContext": {
@@ -3234,7 +3235,7 @@
       "legacyIds": [
         "CHR-DAIL-TITE-729"
       ],
-      "dossierSha256": "0654d30dfbf376421bc6087a42c2fcf6cc848bc7abeaf108c1df272684437666",
+      "dossierSha256": "7f0acf7dc0d5bc2e3a09ae70b9cdbac6e518406feb43781c939bb839ce2b3ebe",
       "reviewState": "DERIVED_PAIR_PACKET_COUNTERPART_RECHECK_OPEN",
       "charnockSide": {
         "byteVerifiedContext": {
