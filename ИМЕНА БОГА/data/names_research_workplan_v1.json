@@ -16,7 +16,7 @@
     "regressionTests": 324,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "VERIFIED_PREDECESSOR_HEAD_29e52b49a9f445246e072898d009e98f02d74794_6_OF_6_TERMINAL_SUCCESS_732_OF_732_TESTS_NEW_AUDIT_HEAD_RECHECK_REQUIRED",
+    "allSixCiChecks": "VERIFIED_PREDECESSOR_HEAD_1f17d34a427439e9a459089b3c24a15ad9708717_6_OF_6_TERMINAL_SUCCESS_740_OF_740_TESTS_NEW_AUDIT_HEAD_RECHECK_REQUIRED",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 26,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "29e52b49a9f445246e072898d009e98f02d74794",
+    "lastConfirmedAllSixChecksSha": "1f17d34a427439e9a459089b3c24a15ad9708717",
     "readerChapterCount": 3,
     "readerSectionCrosswalkCount": 32,
     "readerCrosswalkLinkedDistinctClaims": 25,
@@ -1082,7 +1082,7 @@
     }
   },
   "editorialExecution": {
-    "asOf": "2026-11-14",
+    "asOf": "2026-11-16",
     "owner": "ИМЕНА БОГА/11_MASTER_RESEARCH_WORKPLAN_AND_ACCEPTANCE.md §0a/§3b",
     "state": "SELF_PLAN_AUDIT_RECONCILED_TWO_DELIVERABLES_CH03_EDITORIAL_GAPS_AND_EX17_BOUNDED_READER_FRAGMENT_NO_SCHOLARLY_APPROVAL",
     "readerChapterCountApproved": null,
@@ -1673,10 +1673,10 @@
     "readerMainTextStatus20261111": "CH01_2415_WORDS;CH02_2222_WORDS;CH03_3109_WORDS_AFTER_W51_CONDENSATION; all not editorial ready; exact counts by whitespace tokenization from before appendix.",
     "readerResearchAppendixPreservation20261111": "CH03 native 2651-word Deir Alla section moved intact except original CC0 image block retained in reader, 30 source hyperlinks and 2 other images preserved in editorial appendix. Scientific facts, conflicting reconstruction and rights remain held.",
     "selfPlanAudit": {
-      "auditDate": "2026-11-14",
-      "checkedPredecessorHeadSha": "29e52b49a9f445246e072898d009e98f02d74794",
+      "auditDate": "2026-11-16",
+      "checkedPredecessorHeadSha": "1f17d34a427439e9a459089b3c24a15ad9708717",
       "verifiedPredecessorWorkflows": 6,
-      "verifiedPredecessorNamesTests": 732,
+      "verifiedPredecessorNamesTests": 740,
       "scope": "Only existing Research PR379 and canonical JSON/master; no Product/site/rights changes",
       "results": [
         {
@@ -1684,7 +1684,7 @@
           "severity": "P0",
           "result": "CORRECTED_THIS_AUDIT",
           "finding": "W70 nextAction and W69 CI as CURRENT despite W73",
-          "evidence": "Exact predecessor Actions 43474419588, 6/6 success / 732 tests"
+          "evidence": "Exact predecessor Names Actions 43847473021 and all six runs 43847472986–43847473131, 6/6 success / 740 tests (324+26+319+24+18+29)"
         },
         {
           "id": "SPA-02",
@@ -1704,7 +1704,7 @@
           "id": "SPA-04",
           "severity": "P1",
           "result": "DOCUMENTATION_HYGIENE_HOLD",
-          "finding": "PR has 619 commits/66 files and top CURRENT Wave63, reader orientation obscured",
+          "finding": "PR grew to 665 commits/66 changed files while top CURRENT remained Wave63 after W75; needs current evidence summary without history deletion",
           "evidence": "GitHub PR379 metadata and body"
         },
         {
@@ -1732,7 +1732,7 @@
       "stopRule": "No more than two active deliverables; two consecutive no-gain object searches end discovery; Research manuscript edit with explicit gaps can proceed, but no evidence/rights/scientific/Product approval is inferred from CI.",
       "decision": "CONTINUE_RESEARCH_ONLY_TWO_BOUNDED_TEXT_AND_EVIDENCE_TASKS_NOT_READY_TO_MERGE_OR_PUBLISH",
       "nextActionOwner": "ИМЕНА БОГА/data/names_research_workplan_v1.json",
-      "expectedTestsOnNextExactHead": 737
+      "expectedTestsOnNextExactHead": 740
     }
   },
   "systematicTheologyTriage": {
