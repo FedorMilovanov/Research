@@ -3161,5 +3161,46 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                                     for error in validate_source_access(changed)))
 
 
+    def test_cul_as36_ns282_direct_photos_and_ex1716_absence(self) -> None:
+        """Cambridge primary leaf 3:14 survives, but sibling 17:16 does not."""
+        self.assertEqual([], validate_source_access(self.sources))
+        changes = (
+            ("SRC-CUL-TS-AS36-36-EX3-14-ORIGINAL-IIIF",
+             "targetExodus3_14WithinCatalogueRange", False),
+            ("SRC-CUL-TS-AS36-36-EX3-14-ORIGINAL-IIIF",
+             "ehyehAsherEhyehVisibleInEnhancedImage", False),
+            ("SRC-CUL-TS-AS36-36-EX3-14-ORIGINAL-IIIF",
+             "fullyIndependentVerseCollationDone", True),
+            ("SRC-CUL-TS-AS36-36-EX3-14-ORIGINAL-IIIF",
+             "independentTextualTraditionVersusNs282_88", True),
+            ("SRC-CUL-TS-AS36-36-EX3-14-ORIGINAL-IIIF",
+             "photoPublicWebReproductionGranted", True),
+            ("SRC-CUL-TS-NS282-88-EX17-16-ABSENT-ORIGINAL-IIIF",
+             "targetExodus17_16WithinCatalogueRange", True),
+            ("SRC-CUL-TS-NS282-88-EX17-16-ABSENT-ORIGINAL-IIIF",
+             "manuscriptPhotoIsNotVerse17_16Evidence", False),
+            ("SRC-CUL-TS-NS282-88-EX17-16-ABSENT-ORIGINAL-IIIF",
+             "independentTextualTraditionVersusAs36_36", True),
+            ("SRC-CUL-TS-NS282-88-EX17-16-ABSENT-ORIGINAL-IIIF",
+             "photoPublicWebReproductionGranted", True),
+        )
+        for id, field, wrong in changes:
+            with self.subTest(source_id=id, field=field):
+                changed = copy.deepcopy(self.sources)
+                row = next(x for x in changed["records"] if x["id"] == id)
+                row["culImageAudit20261116"][field] = wrong
+                self.assertTrue(any("Cambridge original folio scope cannot certify" in err
+                                    for err in validate_source_access(changed)))
+        for id in (
+            "SRC-CUL-TS-AS36-36-EX3-14-ORIGINAL-IIIF",
+            "SRC-CUL-TS-NS282-88-EX17-16-ABSENT-ORIGINAL-IIIF",
+        ):
+            changed = copy.deepcopy(self.sources)
+            row = next(x for x in changed["records"] if x["id"] == id)
+            row["publicationState"] = "PROMOTE"
+            self.assertTrue(any("Cambridge original folio scope cannot certify" in err
+                                for err in validate_source_access(changed)))
+
+
 if __name__ == "__main__":
     unittest.main()
