@@ -449,7 +449,9 @@ def check(plan, root=ROOT):
         else:
             changed.append(name)
     expected = ['БИОГРАФИИ/Стивен Чарнок/00_README_AND_NAVIGATION.md',
-                'БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md']
+                'БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md',
+                'БИОГРАФИИ/Стивен Чарнок/07_REPO_CROSSLINKS_AND_DRIVE_MIRROR.md',
+                'БИОГРАФИИ/Стивен Чарнок/17_PROMPT_PARALLEL_AGENT_HISTORICAL_CONTEXT.md']
     if sorted(plan['expectedChangedPacketMembers']) != sorted(expected) or sorted(changed) != sorted(expected):
         raise ValueError('Unexpected changes to the preserved source packet: '
                          f'declared={sorted(plan["expectedChangedPacketMembers"])}; '
