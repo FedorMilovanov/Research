@@ -218,6 +218,27 @@
       "route": "preface 'To the Reader' in the OCR text layer",
       "verdict": "ACCEPT (a dated announcement, not an imprint)",
       "locator": "'those Excellent Discourses of his, Of Providence, &c. That are now with all speed preparing for publick view'"
+    },
+    {
+      "id": "V-33",
+      "claim": "1,330 is Pearson's count of lots in the 1680 catalogue, internally consistent with his five-catalogue total",
+      "route": "Pearson 2010 table 'NUMBER OF LOTS' plus the stated aggregate 6,904; cross-checked against the sum of BOO's seven category figures",
+      "verdict": "ACCEPT (as a lot count under a stated method; I did not recount lots from images)",
+      "locator": "917 + 1651 + 1330 + 1554 + 1452 = 6,904 = 'The 5 catalogues together contain 6,904 lots'; BOO categories 372+65+192+256+56+75+39+275 = 1330"
+    },
+    {
+      "id": "V-34",
+      "claim": "Pearson excluded the appendices of Coga and Knatchbull but does not discuss Charnock's, whose catalogue announces a Watson appendix — so 1,330 may include lots that were not Charnock's",
+      "route": "Pearson's footnotes 7 and 8 read against the front matter of the held C3707 scan",
+      "verdict": "CONFLICT / UNRESOLVED",
+      "locator": "Coga: 'includes an appendix ... which have been excluded from the analysis'; Knatchbull: appendix 'not included'; Charnock fn.7 mentions no appendix, while his catalogue says 'By way of Appendix ... the Library of ... Mr. Thomas Watson'"
+    },
+    {
+      "id": "V-35",
+      "claim": "A lot is not a volume: one lot may cover several physical volumes, so 1,330 must not be read as 1,330 bindings",
+      "route": "catalogue entries read from the OCR text layer (e.g. lot 1 'Augustini opera tomis undecim comprehensa, 7 vol.') combined with Pearson's lot-based method",
+      "verdict": "ACCEPT",
+      "locator": "lot 1 = 11 tomi in 7 volumes; 275 English pamphlet entries occupy 13 bound volumes"
     }
   ],
   "rejectedOrCorrected": [
@@ -571,8 +592,8 @@
         "BCD-04 stays EXCLUDE until the Emmanuel admission book or matriculation register is obtained",
         "Laurence-dependent items (Irish stipend, further Dublin churches) still lack locators",
         "article PR #971 edits are outside this repository",
-        "CS-06: 1330 total and £366 5s 1d remain HOLD (a selective image check cannot prove the total; the sum is Lawler 1898-level secondary and cannot come from the unpriced BL copy)",
-        "CS-06: whether the Charnock total must exclude the Watson appendix lots is unresolved (the announcement is verified; the lot structure is not)"
+        "CS-06: whether the Charnock total must exclude the Watson appendix lots is unresolved (the announcement is verified; the lot structure is not)",
+        "CS-06: whether the 1,330 lots include the Watson appendix lots is unresolved (Pearson is silent; his treatment of Coga and Knatchbull excluded appendices)"
       ],
       "publicationState": "BLOCKED",
       "done": [
