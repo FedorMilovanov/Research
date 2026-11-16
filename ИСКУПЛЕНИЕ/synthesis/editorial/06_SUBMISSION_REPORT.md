@@ -1,8 +1,8 @@
-# AGENT‑7 — сдача: редактура серии «Искупление» (волны I–XII закрыты; W-3 и W-4 закрыты)
+# AGENT‑7 — сдача: редактура серии «Искупление» (волны I–XIII закрыты; W-3 и W-4 закрыты)
 
 **Дата:** 2026-11-15
 **Ветка:** `arena/e7839688-research` (от `573f1a6` main)
-**Статус:** `OWN_TASK_DONE` по волнам I–XII; `PUBLICATION_HOLD` держится; Product/merge не запрашивались
+**Статус:** `OWN_TASK_DONE` по волнам I–XIII; `PUBLICATION_HOLD` держится; Product/merge не запрашивались
 **Исходный объект:** PR #309, HEAD `2392be62`, 18 читательских глав в `ИСКУПЛЕНИЕ/synthesis/drafts/article01…18`
 
 ---
@@ -37,6 +37,7 @@
 | [`15_WAVE10_WCF_XI4_PAGE_AND_ATTRIBUTION.md`](15_WAVE10_WCF_XI4_PAGE_AND_ATTRIBUTION.md) | Волна X: печатная с. 627 XI.4; оговорка об американских правках Шаффа; Камберленд 1829 | готово |
 | [`16_WAVE11_1689_PRIMARY_AND_W4_CORRECTION.md`](16_WAVE11_1689_PRIMARY_AND_W4_CORRECTION.md) | Волна XI: 1689 по экземпляру 1850 г.; **поправка к W-4** — «§5 дословно» неверно | готово |
 | [`17_WAVE12_STALE_STATUS_AND_SWEEP.md`](17_WAVE12_STALE_STATUS_AND_SWEEP.md) | Волна XII: сквозная проверка; мёртвый `LOCATOR_HOLD` в статусах тезисов | готово |
+| [`18_WAVE13_DRIVE_PDF_AND_LEDGER_EVIDENCE.md`](18_WAVE13_DRIVE_PDF_AND_LEDGER_EVIDENCE.md) | Волна XIII: Drive PDF проверен (запись верна); свидетельство Ассамблеи в C-01/C-06 | готово |
 | [`patches/AGENT7_PR309_EDITORIAL_FULL.patch`](patches/AGENT7_PR309_EDITORIAL_FULL.patch) | Полный диф со счётчиками (22 файла) — воспроизведение один-в-один | готово |
 
 ---
