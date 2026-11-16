@@ -8751,3 +8751,14 @@ whitespace-check PASS. ED-02/06/08 OPEN;12формальных переводо�
 - Коммит, push, новая PR, слияние и разрешение публикации не выполняются.
 
 Контроль95: **672 теста PASS = 659 Charnock + 13 атлас**; Fowler-элегия 1677 прочтена и сравнена с элегией ЧARNОК 1680; CONFLICT-14 сужен (жанровое чтение «Fowler's place»).
+
+
+---
+
+### 2026-11-16 — CONFLICT-10: correction of historical August 7 attribution
+
+**Provenance:** An earlier version of §21.138 conflated the Charnock entry with the following James Kelke entry on Chester's 1882 printed p. 265 and claimed burial on **Aug. 7** with `CONFLICT-10 substantially resolved`. This was an erroneous reading and is **HISTORICAL/SUPERSEDED**; the exact former version remains in Git history.
+
+**New evidence and limited correction (MAX, 16 November 2026):** The supplied page-image captures of Chester (1882), pp. 264–265 with index pp. 308–309, show **July 30 — Stephen Charnock**, then **Aug. 7 — James Kelke**. The image package is preserved at [OldPoet](https://drive.google.com/file/d/1T3Js2UKm0zp3Y8eLaSCWMoRpcmnF_IOc/view); see [biographical Drive ledger §26](../08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md). Wood 1691 and *The Sayings* 1680 also state July 30 for burial, but their independence is not established. McCosh 1864 reproduces a July 30 register entry; that is not a verified original manuscript. Chester's 1882 print cannot itself be described as a contemporaneous 1680 manuscript.
+
+**Remaining work:** Independent review by agents №2/№7 of printed images and transcription, and if a manuscript-level claim is required, exact-item verification of the relevant 1680 burial register in The London Archives `P69/MIC2`. The 27/28 July **death** conflict remains separate. The publication decision remains **BLOCKED**; no general release of historical, image-rights or quotation HOLD follows from this correction.

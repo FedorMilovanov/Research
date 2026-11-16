@@ -6,11 +6,17 @@
   "stage": "BLUEPRINT_WITH_OPEN_WORK_NOT_AUTHORING",
   "baselineRegistry": "data/charnock-biographical-anchors-v1.json",
   "baselineReceipt": "data/charnock-handoff-receipt-v1.json",
-  "custodyBoundary": "Wave40receipt describes its immutable source packet,not the revised00/16. Current editorial revision is not yet transferred/independently received.",
+  "custodyBoundary": "Wave40 receipt describes its immutable source packet, not the current editorial changes to 00/07/16/17. These four changed dossier files are explicitly declared as drift; the historical custody receipt is not rewritten, and current revision custody remains NOT_REVERIFIED.",
   "expectedChangedPacketMembers": [
     "БИОГРАФИИ/Стивен Чарнок/00_README_AND_NAVIGATION.md",
+    "БИОГРАФИИ/Стивен Чарнок/01_BIOGRAPHICAL_WITNESSES_AND_EVIDENCE_HIERARCHY.md",
+    "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md",
+    "БИОГРАФИИ/Стивен Чарнок/03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md",
     "БИОГРАФИИ/Стивен Чарнок/04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
-    "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md"
+    "БИОГРАФИИ/Стивен Чарнок/06_CORPUS_ACCESS_MATRIX_AND_LOCATORS.md",
+    "БИОГРАФИИ/Стивен Чарнок/07_REPO_CROSSLINKS_AND_DRIVE_MIRROR.md",
+    "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
+    "БИОГРАФИИ/Стивен Чарнок/17_PROMPT_PARALLEL_AGENT_HISTORICAL_CONTEXT.md"
   ],
   "evidenceClass": "C",
   "accessState": "FULL_OBJECT_VERIFIED",
@@ -2699,7 +2705,7 @@
       "legacyIds": [
         "CHR-LING-02"
       ],
-      "dossierSha256": "7f0acf7dc0d5bc2e3a09ae70b9cdbac6e518406feb43781c939bb839ce2b3ebe",
+      "dossierSha256": "1079e93a52bb8dac1b5324b9e390d5591852371c2865f7c51a24778dffd8fd8e",
       "reviewState": "DERIVED_PAIR_PACKET_COUNTERPART_RECHECK_OPEN",
       "charnockSide": {
         "byteVerifiedContext": {
@@ -2980,7 +2986,7 @@
       "legacyIds": [
         "CHR-RAY-02"
       ],
-      "dossierSha256": "7f0acf7dc0d5bc2e3a09ae70b9cdbac6e518406feb43781c939bb839ce2b3ebe",
+      "dossierSha256": "1079e93a52bb8dac1b5324b9e390d5591852371c2865f7c51a24778dffd8fd8e",
       "reviewState": "DERIVED_PAIR_PACKET_COUNTERPART_RECHECK_OPEN",
       "charnockSide": {
         "byteVerifiedContext": {
@@ -3235,7 +3241,7 @@
       "legacyIds": [
         "CHR-DAIL-TITE-729"
       ],
-      "dossierSha256": "7f0acf7dc0d5bc2e3a09ae70b9cdbac6e518406feb43781c939bb839ce2b3ebe",
+      "dossierSha256": "1079e93a52bb8dac1b5324b9e390d5591852371c2865f7c51a24778dffd8fd8e",
       "reviewState": "DERIVED_PAIR_PACKET_COUNTERPART_RECHECK_OPEN",
       "charnockSide": {
         "byteVerifiedContext": {

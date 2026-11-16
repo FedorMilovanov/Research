@@ -40,7 +40,7 @@ HISTORICAL, не текущая сертификация доступа/лице
 | A32724, Supplement1683 | A1 | FULL_OBJECT_VERIFIED для SHA-pinned XML в текущем проходе | EXACT_LOCATOR_VERIFIED для структуры/выбранных мест | PRIVATE_STUDY_ONLY | BLOCKED | 03,04;16 §8 |
 | Nichol1864–66/современные хосты | A1 — старый авторский текст; не A2 из-за сайта | PARTIAL_OBJECT — выбранные места, не полный локальный пяти-томный архив | COARSE_LOCATOR_ONLY для общего набора; отдельные цитаты имеют свои состояния | RIGHTS_UNKNOWN для конкретных файлов/репродукций | BLOCKED | 03,10 |
 | Приходской регистр/New College/оригинал завещания | A1 — целевой документ | NOT_ACQUIRED | LOCATOR_MISSING для самого не полученного объекта | RIGHTS_UNKNOWN | BLOCKED | 01,02,05 |
-| Аукционный каталог1680 | C — текущие сведения о доступе; класс самого документа отдельно | CATALOG_ONLY/частичные транзитные сведения, не подтверждённый здесь полный скан | COARSE_LOCATOR_ONLY | RIGHTS_UNKNOWN | BLOCKED | 03,04 §0X |
+| Аукционный каталог 1680 | `A1` — печатный объект, класс интерпретаций отдельно | Факсимиле IA/Drive получено, выборочные страницы проверены по изображениям | `PARTIAL_IMAGE_VERIFIED` | `RIGHTS_UNKNOWN / PUBLICATION_HOLD` | 03, дополнительный аудит CS-06 |
 | Внешние книги, цитируемые Чарноком | A1 для выбранного текста; идентификации могут оставаться C | PARTIAL_OBJECT | индивидуально по04 | индивидуально по04 | BLOCKED | 04 §0X–0AB |
 
 Для всех групп сохраняются применимые **ARCHIVE_HOLD, RIGHTS_HOLD,
@@ -101,7 +101,7 @@ PUBLICATION_HOLD**; для не проверенных по изображени
 | **Приходской регистр St Michael's** | `A1` | **НЕ получен** | unchecked | `ARCHIVE_HOLD` |
 | **Calendar of State Papers, Domestic** | `A1` | **НЕ получен** | unchecked | `ARCHIVE_HOLD`, `LOCATOR_HOLD` |
 | **New College books / Fasti Oxonienses** | `A1` | **НЕ получен** | unchecked | `ARCHIVE_HOLD` |
-| **Calamy, Account / Continuation** | `B1` | **НЕ получен** | unchecked | `ARCHIVE_HOLD` |
+| **Calamy, Account / Continuation** | `A1` для прочитанного текста / `B1` для поздней исторической передачи | **Получены:** Account 1713, т. II, печ. с. 56; Continuation 1727, **т. I**, печ. с. 81 (IA `continuationofac01cala`, скан 159) | `IMAGE_VERIFIED` для спорного имени | **Thomas Cawton**, не Gataker; «not large» не принадлежит Калами. [Проверка](supplemental-audits/BOOK_HISTORY_AND_LIBRARY_AUDIT_AGENT5_2026-11-16.md) |
 | **Wood, Athenae Oxonienses (ed. Bliss), iii. 1234–6** | `B1` | **НЕ получен** | unchecked | `ARCHIVE_HOLD` |
 | **Parker, History of his own Time, p. 71** | `D` | **НЕ получен** | unchecked | — |
 | **Wilson, Dissenting Churches, vol. i, pp. 331 sqq.** | `B1` | **НЕ получен** | unchecked | `ARCHIVE_HOLD` |
@@ -120,7 +120,7 @@ PUBLICATION_HOLD**; для не проверенных по изображени
 | **Christopher Fowler (1610–1678)**, изгнанный священник Reading, затем Kennington и Southwark — **кандидат в «Fowler's place»** | `B1` | **НЕ получен**; идентифицирован 2026-10-25 как гипотеза | unchecked | `ARCHIVE_HOLD`; требуется проверка по спискам проповедников *Morning Exercise* и Wilson, *Dissenting Churches* vol. i |
 | *The Morning Exercise at Cripplegate*, 2-е изд. (Спб./Лонд., 1844), vol. 2 — sermon 19 Чарнока | `A1` | **full text** — Digital Puritan PDF (35 pp.); Google Books 1844 vol. 2 `MuMEAAAAQAAJ`; IA `puritansermons160001unse` vol. 2; Monergism | `checked` на уровне документа; постранично — **`LOCATOR_HOLD`** | `LOCATOR_HOLD` по странице; часть-титул заключительной части (1676?) не прочитан |
 | **Oxford DNB**, ст. «Charnock, Stephen (1628–1680)», авт. Richard L. Greaves | `B1` | **НЕ получен полностью** (paywall); содержание по цитате | unchecked | `RIGHTS_HOLD` (подписка); Harrison-chaplaincy 1649–1650 и дата матрикуляции 30 мая 1642 требуют проверки |
-| ***Bibliotheca Charnockiana***, London, 1680 — **печатный каталог аукциона библиотеки Чарнока, 4 октября 1680** | `A1` (объект) / `B1` (сведения о нём) | **НЕ получен**; в EEBO-TCP отсутствует (проверено по каталогу из 61 315 записей); значится в ESTC; сведения по Book Owners Online | unchecked | **`ARCHIVE_HOLD`** — требуется скан каталога. 1330 предмета; Latin theology 372, English divinity 256, Latin medicine **65**, European languages 75, pamphlets 314; продажа **£366 5s 1d**. См. том 03 §3G |
+| ***Bibliotheca Charnockiana***, London, 1680 — аукционный каталог 4 октября, Wing C3707 | `A1` (факсимиле) / `B1` (сводные подсчёты) | **Получено:** IA `bim_early-english-books-1641-1700_bibliotheca-charnockiana_charnock-stephen_1680`, 35 изображений; Drive `1-4QH8FGjRs-kcYt5ZdhKHVGoRzHivC4E` | **По изображениям проверено:** латинская теология 110+135+127=**372** нумерованные позиции и медицина 12+12+41=**65** позиций. Суммарные **1 330 лотов** у Pearson 2010 / Book Owners Online — `SECONDARY_ATTESTED`, полный независимый счёт ещё открыт | Выручка **£366 5s 1d** у Lawler 1898, с. 139; priced-экземпляр Manchester John Rylands (JISC 91830889) не сверён; `ARCHIVE/RIGHTS/PUBLICATION_HOLD` сохраняются. [CS-06](supplemental-audits/CS06_BIBLIOTHECA_CHARNOCKIANA_INDEPENDENT_CHECK_2026-11-16.md) |
 | **Завещание Стивена Чарнока, 25 июля 1680** | `A1` (документ) / `B1` (сведения) | **НЕ получен**; содержание по ODNB (Greaves) | unchecked | **`ARCHIVE_HOLD`** — оригинал в PCC/National Archives. £111, преимущественно родственницам; исполнительница и кузина — **вдова Ann Sykes**; ни жены, ни детей не упомянуто. См. том 01 §2.10 |
 
 ---
@@ -184,7 +184,7 @@ Johnson 1680 (EEBO-TCP pp. 33–40) и из эпистола Adams & Veal (EEBO-
 1. Скачать полный текст всех 5 томов Nichol 1864 из IA и построить постраничный index для
    quote-card кандидатов.
 2. Найти и получить funeral sermon Johnson 1680 (EEBO/ESTC/Williams' Library).
-3. Найти Calamy, *Continuation*, p. 83 в оригинале.
+3. Calamy, *Continuation* (1727), т. I, с. 81 проверен по изображению; с. 83–84 относятся к другому эпизоду о Edward Veal. Повторно не запрашивать Calamy.
 4. Найти запись Calendar of State Papers (Domestic) за 19–20 июня 1663.
 5. Зафиксировать provenance каждого используемого скана (источник, дата скачивания, SHA-256).
 

@@ -107,7 +107,7 @@
 | 1678, ноябрь | **Антипапская апокалиптика:** единственное место во фолианте 1682, где Чарнок толкует Откровение как современность — Фиатира = «an Emblem or Description of the Romish State», Иезевель = «a whorish Church», «Rome did at first strongly profess Christianity… but afterwards fell into the practice of Jezebel» (стр. 329) | Фолиант 1682, узел `1:11`, стр. 329 | `A1` |
 | **1680, 25 июля** | **Составлено завещание.** «His will, made on 25 July 1680, bequeathed **£111**, mostly to female relatives, and the unspecified remainder to his executor and cousin, **the widow Ann Sykes; the will mentions neither wife nor children**» | Greaves, ODNB (DOI 10.1093/ref:odnb/5172) | `B1` по получению, `A1` по природе документа; `ARCHIVE_HOLD` на оригинал |
 | **1680, 27 июля** | Смерть. Завещание составлено **за два дня до** — смерть не была для Чарнока неожиданной | ODNB (завещание) | `B1` |
-| **1680, 4 октября** | **Аукцион второй библиотеки Чарнока** по печатному каталогу ***Bibliotheca Charnockiana***, Лондон; 1330 предмета; продажа принесла **£366 5s 1d** | Book Owners Online (по каталогу 1680 и Pearson, *The Library* 2010) | `B1`; `ARCHIVE_HOLD` |
+| **1680, 4 октября** | **Аукцион второй библиотеки Чарнока** по печатному каталогу ***Bibliotheca Charnockiana***, Лондон; **1 330 лотов по исследованию Pearson (2010)**, не 1 330 физических томов; сумма **£366 5s 1d** приводится у Lawler (1898, с. 139), однако **не сверена по первичному priced-экземпляру**. Проверка возможна: интерлинированный экземпляр с рукописными ценами — University of Manchester (John Rylands), JISC 91830889 | Book Owners Online (по каталогу 1680 и Pearson, *The Library* 2010); JISC для экземпляра | `B1`; `VERIFIABLE_AT_MANCHESTER` ([аудит книжного наследия](supplemental-audits/BOOK_HISTORY_AND_LIBRARY_AUDIT_AGENT5_2026-11-16.md), § 2.4) |
 | 1675–1680 | Жалоба congregation: sermons — «but morality or metaphysics» | Adams & Veal | `A1` |
 | **1675–1680 (или ранее)** | **Поэт 1680: «To Fowler's place God call'd him to succeed»** — единственное указание на **предшественника** Чарнока в лондонской должности. Ни Johnson, ни Adams & Veal, ни Wood, ни Calamy предшественника не называют | **Анонимный поэт 1680 (`A52960.0001.001`) — эксклюзив** | `A1` (печатный объект) / `B1` (утверждение) |
 | **1660** | **Причина ухода из Ирландии по поэту 1680: «Did then reduce him not for any crimes, / But by an alteration of the times»** — прямое отрицание вины; самая ранняя печатная версия | **Анонимный поэт 1680 (`A52960.0001.001`) — эксклюзив** | `B1` |
@@ -310,6 +310,17 @@ Morning-Exercise sermon. Разрешение: это не противореч�
 речь о разных событиях (admission vs matriculation) или одна из них — опечатка. Требуется Emmanuel
 College admissions register. До неё рабочая формулировка: **«в 1642 году принят sizar в Emmanuel
 College, Cambridge»** без дня.
+
+**Уточнение 2026-11-16 (`A1`, прочитан Парсонс 1815).** В биографическом очерке Парсонса — **первого
+издателя, снабдившего «Works» аппаратом**, — **даты матрикуляции нет вовсе**: период 1628–1642
+заполнен одной фразой «At a very early period, he entered upon a course of preparatory studies in
+Emanuel College, Cambridge, under… Dr. William Sancroft». Следовательно дата «8 июля 1642» **не
+принадлежит биографической традиции**, а приходит к Маккошу 1864 либо от университетского регистра,
+на который Маккош ссылается, либо от позднейшего справочника. Это **сужает круг проверки**: искать
+надо не в компиляциях XVIII–XIX вв., а в **административных записях Кембриджа** (Emmanuel College
+admissions, Cambridge University matriculation book). По датам Маккош, кстати, сам себе противоречит
+в другой точке: он пишет «entering in 1642, is proceeding B.A. in 1645-6», что для sizar'а,
+принятого в июле 1642 г., предполагает срок без обычной задержки.
 
 ### `CONFLICT-14` — последняя должность: «Fowler's place» или Crosby Hall с Watson'ом
 

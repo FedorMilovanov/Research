@@ -432,8 +432,15 @@ Discourse of Divine Providence.*»
 5. **Calamy не упоминает Crosby Hall, Thomas Watson, Richard Tymms, Whitechapel и St Michael's
    Cornhill.** Все эти эксклюзивы принадлежат Wood 1691.
 
-#### 2.9E. *A Continuation of the Account* (1727), стр. 81 — приписка к статье о Чарноке
-(**прочитана 2026-10-25; главная находка отдела по Calamy**)
+#### 2.9E. *A Continuation of the Account* (1727), **том I**, стр. 81 — приписка к статье о Чарноке
+(**прочитана 2026-10-25; сверена по скану 2026-11-16; главная находка отдела по Calamy**)
+
+> **УТОЧНЕНИЕ ЛОКАТОРА 2026-11-16.** Приписка стоит в **томе I**, а не в томе III: издание
+> пагинировано как два тома, и дополнения 1727 г. идут подряд за текстом 1713 г.
+> Проверено по IA `continuationofac01cala`, скан с. 159, колонтитул «in London, Westminster
+> and Southwark. 81». Тем же проходом: в цитате стоит **Cawton**, а не Gataker (см. §9.4);
+> оборот «not large» в томе I **отсутствует** — он принадлежит Палмеру 1775, т. I, с. 161
+> ([аудит книжного наследия](supplemental-audits/BOOK_HISTORY_AND_LIBRARY_AUDIT_AGENT5_2026-11-16.md), § 1.3).
 
 **Источник:** Edmund Calamy, *A Continuation of the Account of the Ministers, Lecturers, Masters
 and Fellows of Colleges, and Schoolmasters, who were Ejected and Silenced after the Restoration in
@@ -445,7 +452,7 @@ and Fellows of Colleges, and Schoolmasters, who were Ejected and Silenced after 
 > xiii. 43**. He (who had been acquainted with him **thirty-six Years**) gave him an excellent
 > Character; and among other Things said, that **he never knew a Man in all his Life, that had
 > attaind near unto that Skill that Mr. Charnock had, in the Originals of the Old and New
-> Testament**, except Mr. **Thomas Gataker**.
+> Testament**, except Mr. **Thomas Cawton**.
 >
 > **His Library was burnt in the Fire of London.** It was only in his **latter Years, when his
 > Memory began to fail him, that he penn'd and read his Sermons verbatim: But in his younger Days,
@@ -457,7 +464,7 @@ and Fellows of Colleges, and Schoolmasters, who were Ejected and Silenced after 
 |---|---|---|
 | 1 | Funeral sermon Johnson — на **Мф. 13:43** | **независимо подтверждено** самим sermon'ом (том 09); Calamy даёт второй источник |
 | 2 | Johnson знал Чарнока **36 лет** | согласуется с томом 02 (1644) и с припиской о Johnson 1644 |
-| 3 | **Чарнок был одним из величайших знатоков еврейского и греческого оригинала в Англии** — по словам Джонсона, близок к нему по skill только **Thomas Gataker** (1574–1654), величайший английский гебраист своего века | **ЭКСКЛЮЗИВ Calamy 1727**; ни Wood, ни Adams & Veal, ни элегии, ни modern biographies этого не дают |
+| 3 | **Чарнок был одним из величайших знатоков еврейского и греческого оригинала в Англии** — по словам Джонсона, близок к нему по skill только **Thomas Cawton** (ум. 1677) | **ЭКСКЛЮЗИВ Calamy 1727**; ни Wood, ни Adams & Veal, ни элегии, ни modern biographies этого не дают. **ИСПРАВЛЕНО 2026-11-16:** прежнее чтение «Gataker» — ошибка распознавания; сверка по скану (IA `continuationofac01cala`, скан с. 159) даёт **Cawton**, что совпадает с Johnson, p. 39 (том 09) |
 | 4 | **Библиотека Чарнока сгорела в Великом лондонском пожаре** | **ЭКСКЛЮЗИВ Calamy 1727** (пожар 1666) |
 | 5 | **«Только в последние годы, когда память начала его изменять, он выписывал и читал свои sermon'ы дословно; в молодости же он не употреблял в кафедре никаких заметок»** | **ГЛАВНАЯ НАХОДКА**; см. ниже |
 
@@ -778,10 +785,13 @@ World» есть фраза «Earthly Empires have their decayes and dissolution
 остаётся **объяснением Calamy**, не доказанной причинностью и не статистикой
 посещаемости Crosby Hall.
 
-В ранее внесённой транскрипции Calamy1727 стоит **Gataker**, тогда как полученный
-Johnson,p.39 даёт **Cawton**. До сверки изображения Calamy сохраняется CONFLICT/
-LOCATOR_HOLD; запрещено молча считать их одним лицом, приписывать Johnson
-«Gataker» или объявлять установленную ошибку автора, когда возможен OCR/переписчик.
+**РАЗРЕШЕНО 2026-11-16.** В ранее внесённой транскрипции Calamy1727 стояло **Gataker**,
+тогда как Johnson,p.39 даёт **Cawton**. Сверка по скану IA `continuationofac01cala`
+(скан с. 159 = печатная с. 81) показывает в оригинале **Cawton**. «Gataker» — ошибка
+распознавания прежнего прохода, а не расхождение источников. `CONFLICT` снят;
+`LOCATOR_HOLD` на изображение снят. **Запрет остаётся в силе** в общем виде: имя,
+различающееся одной-двумя буквами, не «исправляется» по догадке — только по образу.
+Ср. [аудит книжного наследия](supplemental-audits/BOOK_HISTORY_AND_LIBRARY_AUDIT_AGENT5_2026-11-16.md), § 1.4.
 «ЭКСКЛЮЗИВ Calamy» о пожаре также SUPERSEDED как абсолютное утверждение:
 Johnson1680,p.33 уже говорит о books in Londons flames, с оговоркой о бумаге.
 
