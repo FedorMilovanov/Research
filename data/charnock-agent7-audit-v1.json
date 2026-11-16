@@ -434,8 +434,20 @@
     {
       "id": "N-10",
       "finding": "Шапка всех 18 томов по-прежнему печатает `CHARNOCK-HANDOFF-V1 · wave40 · 2026-10-26` и ссылается на `data/charnock-handoff-receipt-v1.json`, хотя текущая квитанция — v5 (wave44). Ссылка резолвится (файл v1 существует как звено линии), поэтому ни один гейт не падает; расхождение чисто читательское.",
-      "use": "Волна правки пробелов намеренно не трогала шапки: это редакционное решение (метка волны в шапке против метки контракта), а не типографика. 18 изменённых членов пакета ради метки потребовали бы ещё одной пересборки и новой квитанции без исследовательской ценности.",
-      "status": "OPEN — требует отдельного редакционного решения о том, что печатает шапка (номер волны или номер контракта) и обновлять ли её каждую волну"
+      "use": "Решение принято владельцем (MAX): шапки 18 томов не меняются. Пояснение допускается одной строкой у владельца навигации; в этой ревизии оно не добавлялось, чтобы не создавать пересборку пакета ради заголовков.",
+      "status": "CLOSED / BY DESIGN (decision of 2026-11-16): the marker is the immutable origin id of the packet and its contract, not a claim that the current tree equals wave40 or receipt v1; current state is evidenced by the live authority checks, receipt v7 and custody v8. Headers are not edited, no live stamp, no contract bump, no rebuild for headings.",
+      "decision": {
+        "date": "2026-11-16",
+        "by": "MAX (owner), addressed to Agent No. 7",
+        "outcome": "CLOSED_BY_DESIGN",
+        "scope": [
+          "no header edits",
+          "no live wave stamp",
+          "no contract MARKER bump",
+          "no archive rebuild for headings"
+        ],
+        "publicationState": "BLOCKED"
+      }
     },
     {
       "id": "N-11",
