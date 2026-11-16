@@ -887,7 +887,7 @@ SCAN_EXEMPT = {
     "apply_corpus": "писатель: подставляет измеренные числа в корпус; читает и сравнивает — другие; якорь `main`",
     "doc_numbers": "генератор: (регулярка, строка) для документа; сверка результата — в петле apply/check; якорь `diff_state_scan`",
     "apply_doc": "писатель: применяет сгенерированные строки к документу, отказывается при двух якорях; якорь `main`",
-    "render_table_91": "писатель: генерирует числовые строки §9.1 из учтённых карточек; результат независимо сверяет `check_table_91`; вызывающий якорь `apply_doc`",
+    "render_table_91": "писатель: генерирует числовые строки §9.1 из учтённых карточек; результат независимо сверяется функцией check_table_91; вызывающий якорь `apply_doc`",
     "report_not_generated": "служебная фраза отчёта о блоках, которые генератор не создаёт; сравнивает ничего; якорь `main`",
     "main": "разбор флагов и вызов шагов; сверок в теле не определено; корневой якорь `main` — его никто не зовёт",
 }
@@ -1292,7 +1292,7 @@ def tree_counts_trap():
         for relpath, content in files.items():
             dst = Path(tmp) / relpath
             dst.parent.mkdir(parents=True, exist_ok=True)
-            dst.write_text(content, encoding="utf-8")
+            dst.write_text(content, encoding="utf-8", newline="\n")
         t = tree_counts(Path(tmp))
         problems = []
         if (t["docs"][0], t["docsNumbered"]) != (4, 3) or t["rootmd"][0] != 2:
