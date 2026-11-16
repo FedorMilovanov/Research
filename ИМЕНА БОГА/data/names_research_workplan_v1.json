@@ -12,11 +12,11 @@
     "arenaRecords": 29,
     "extensionRecords": 13,
     "contextAttestations": 105,
-    "sourceRegisterEntries": 134,
-    "regressionTests": 325,
+    "sourceRegisterEntries": 135,
+    "regressionTests": 326,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "VERIFIED_PREDECESSOR_HEAD_0ffffc24c89693890b51f31dc8fe70de2e4cd990_6_OF_6_TERMINAL_SUCCESS_740_OF_740_TESTS_NEW_W77_HEAD_RECHECK_REQUIRED",
+    "allSixCiChecks": "VERIFIED_PREDECESSOR_HEAD_e5ea7cac7a6f081f27e0a52055c704bdf097ab7b_6_OF_6_TERMINAL_SUCCESS_741_OF_741_TESTS_NEW_W78_HEAD_RECHECK_REQUIRED",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 26,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "0ffffc24c89693890b51f31dc8fe70de2e4cd990",
+    "lastConfirmedAllSixChecksSha": "e5ea7cac7a6f081f27e0a52055c704bdf097ab7b",
     "readerChapterCount": 3,
     "readerSectionCrosswalkCount": 32,
     "readerCrosswalkLinkedDistinctClaims": 25,
@@ -776,7 +776,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "2026-11-16 W77 NG04 source: official BL Harley MS5683 f1r is a NEW physically independent medieval codex containing the start of surviving Ex17:15, with separate Masoretica verse16 locus mapping; OPenn original 12967_0010.jpg HTTP200, PDM1.0 image rights metadata, but native photographic verse16 word division NOT independently collated. No Hebrew variant is claimed from this object. Cambridge T-S NS282.88 Ex17:16 ABSENT remains permanently excluded. Acquisition priorities: original BHS LOWER apparatus and full Wevers–Quast 1991 Göttingen Exodus App I/II at Ex3:12-15,6:2-3,17:15-16; independent native-pixel manuscript collation of BL Harley5683 f1r, BL Or4445 f59v, AS36.36 Ex3:14 and JTS ENA4107.20 Ex6:2-3. Read-only scholarly editorial STOP on missing documents; avoid unbounded generic source lists. 134 source entries ALL publication BLOCKED, 325 main ledger tests expected, 741 total expected on W77 head, zero accepted critical collations, external peer reviews and Product approvals; no UI/branch/merge/deploy.",
+  "nextAction": "W78 NG04: distinguish Greek translator's model in author Wevers Notes (1990, pp273–274) from original Wevers–Quast Göttingen 1991 apparatus (NOT read) and from real ancient Hebrew ink. Verify publisher-authorised page image for typographic Hebrew/Greek exact forms; no claim from third-party OCR alone. Keep Harley 5683 f1r uncatalogued native pixels undeceiphered: no proof כסיה/כס יה; Cambridge NS282.88 Ex17:16 is absent. Prioritize original BHS lower apparatus and Göttingen original per-verse App I/II Ex3:12–15,6:2–3,17:15–16; no generic unbounded searches. Research-only 135 source rows all publication BLOCKED, 326 main expected tests, 742 total expected, zero critical manuscripts completed / independent scholarly or Product permissions. Existing Draft PR only.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -858,8 +858,9 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-16",
-    "planStatus": "2026-11-16 W77: new original BL Harley5683 folio1r original archival photograph verified by URL HTTP200 and exact institutional catalogue + independent verse locator; manuscript text remains NOT collated. 134 blocked sources; 325 main ledger tests expected, 741 total expected; previous W76 exact head 0ffffc24 terminal 6/6 SUCCESS and 740/740 tests; exact W77 head recheck required. NG04 BLOCKED_SOURCE, all scientific and Product holds retained.",
+    "planStatus": "W78: Wevers' original authored Notes on Greek Exodus (1990) printed pp273–274 directly read only in visibly imperfect third-party Scribd OCR; publisher catalogue verified separately. Explicit translator-exegesis of Ex17:15–16 (banner/refuge, Hebrew word division vs Greek hidden hand) recorded as AUTHOR INTERPRETATION ONLY. NOT ancient Hebrew manuscript reading or original Wevers–Quast 1991 App I/II. 135 blocked sources; 326 core tests, 742 aggregate expected; previous W77 HEAD exact 6/6 and 741/741; W78 exact CI pending. NG04 BLOCKED_SOURCE unchanged.",
     "workCompleted": [
+      "W78 2026-11-16: identified original John W. Wevers, Notes on the Greek Text of Exodus (1990), print pp273–274, verified SBL publisher bibliographic record; author's Ex17:15–16 argument in third-party OCR: Greek refuge and hidden hand interpretive translation, not new ancient consonantal witness or proof of Hebrew original one-word form. Original Hebrew/Greek OCR glyphs unreliable, paper facsimile and 1991 full critical apparatus not inspected. One source + fail-closed test, all approvals still zero.",
       "2026-11-16 W77: new independent physical medieval Hebrew codex BL Harley MS5683 folio 1r, OPenn first-party institutional catalogue and original 12967_0010.jpg 200 image/jpeg; first extant Exodus17:15, Masoretica verse16 maps there. No native-pixel collation of כסיה vs כס יה or hand/Masorah, distinct from BL Or4445 and absent Cambridge NS282.88; PDM1.0 archive photo metadata does not authorize our Product automatically. Added one blocked source and one hard gate test; W76 predecessor 6/6 SUCCESS 740 tests, W77 expects 741 tests, no release.",
       "2026-11-16 W75 first-party Cambridge CUDL recto photographs of two separate leaves from one Ashkar–Gilson scroll; AS36.36 source includes Ex3:14 visible אהיה אשר אהיה, NS282.88 excludes Ex17:16. Supersession in dossier23 and exact source registry custody rules; no false ancient support for כסיה, no extra independent tradition, no publication rights. Native copyright all rights reserved and library permission needed for public site.",
       "2026-11-16 W74: Outhwaite source exact-page science: 2 setumot Ex6:2/6:14, 4 petuhot Ex6:10/6:13/7:8/7:14, author contrasts separate Ex6:12/6:14/7:5 readings with non-establishment of a new divine-name variant. DPUL collection does not grant exact ENA4107.20 high-res or reuse rights. Existing source/test/dossier expanded without count inflation; release gates unchanged.",
@@ -1675,9 +1676,9 @@
     "readerResearchAppendixPreservation20261111": "CH03 native 2651-word Deir Alla section moved intact except original CC0 image block retained in reader, 30 source hyperlinks and 2 other images preserved in editorial appendix. Scientific facts, conflicting reconstruction and rights remain held.",
     "selfPlanAudit": {
       "auditDate": "2026-11-16",
-      "checkedPredecessorHeadSha": "0ffffc24c89693890b51f31dc8fe70de2e4cd990",
+      "checkedPredecessorHeadSha": "e5ea7cac7a6f081f27e0a52055c704bdf097ab7b",
       "verifiedPredecessorWorkflows": 6,
-      "verifiedPredecessorNamesTests": 740,
+      "verifiedPredecessorNamesTests": 741,
       "scope": "Only existing Research PR379 and canonical JSON/master; no Product/site/rights changes",
       "results": [
         {
@@ -1685,7 +1686,7 @@
           "severity": "P0",
           "result": "CORRECTED_THIS_AUDIT",
           "finding": "W70 nextAction and W69 CI as CURRENT despite W73",
-          "evidence": "Exact predecessor Names Actions 43847473021 and all six runs 43847472986–43847473131, 6/6 success / 740 tests (324+26+319+24+18+29)"
+          "evidence": "W77 exact HEAD e5ea7cac: Names workflow 43874990025; all six GitHub Actions terminal SUCCESS, 741/741 (325+26+319+24+18+29); W78 exact HEAD requires a new run"
         },
         {
           "id": "SPA-02",
@@ -1733,7 +1734,7 @@
       "stopRule": "No more than two active deliverables; two consecutive no-gain object searches end discovery; Research manuscript edit with explicit gaps can proceed, but no evidence/rights/scientific/Product approval is inferred from CI.",
       "decision": "CONTINUE_RESEARCH_ONLY_TWO_BOUNDED_TEXT_AND_EVIDENCE_TASKS_NOT_READY_TO_MERGE_OR_PUBLISH",
       "nextActionOwner": "ИМЕНА БОГА/data/names_research_workplan_v1.json",
-      "expectedTestsOnNextExactHead": 741
+      "expectedTestsOnNextExactHead": 742
     }
   },
   "systematicTheologyTriage": {

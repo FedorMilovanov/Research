@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 134,
+    "sourceRecords": 135,
     "approvedForProduct": 0
   },
   "records": [
@@ -5378,6 +5378,53 @@
         "criticalCollationsAccepted": 0,
         "opennImagesPublicDomainMarkDisplayed": true,
         "editorialProductImageReuseApproved": false
+      }
+    },
+    {
+      "id": "SRC-WEVERS-NOTES-GREEK-EXODUS-1990-P273274-EX17",
+      "title": "John William Wevers, Notes on the Greek Text of Exodus (SCS 30, Scholars Press/SBL, 1990), printed pp. 273–274, commentary Exodus 17:15–16",
+      "creator": "John William Wevers",
+      "year": 1990,
+      "url": "https://www.scribd.com/document/670874689/John-W-Wevers-Notes-on-the-Greek-Text-of-Exodus-Soc-Biblical-Literature-1990",
+      "publisherCatalogue": "https://www.bibliovault.org/BV.book.epl?ISBN=9780884143734",
+      "originalPublicationYearVerifiedByPublisher": true,
+      "printedPageScope": "273–274, especially Exod 17:15–16; third-party Scribd web OCR text (author's book content), not publisher facsimile page autopsy",
+      "objectType": "original_scholar_author_commentary_accessed_in_third_party_ocr_not_original_critical_edition_apparatus",
+      "sourceRole": "WEVERS_1990_AUTHOR_EX17_15_16_LXX_TRANSLATOR_REINTERPRETATION_1990_NOT_ORIGINAL_GOTTINGEN_1991_APPARATUS",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "locator": "SBL/University of Chicago BiblioVault identifies Wevers 1990 Notes, SCS30 (eISBN 9780884143734); third-party web transcription of source has chapter17:15–16 and printed page markers 273–274. Specifically commentary 17:16 begins under printed p273 and ends p274. Scribd AI title and OCR are not scholarly editorial corrections.",
+      "sourceObjectState": "2026-11-16: directly read visible English AUTHOR text in a third-party Scribd web OCR of John W. Wevers' Notes on Greek Text of Exodus (1990), verses 17:15–16, printed pp273–274, against original publisher bibliographic record from University of Chicago BiblioVault. Hebrew letter sequencing and Greek diacritics in OCR are visibly corrupted, and printed original page pixels were NOT independently viewed. Wevers interprets the ancient Greek Exodus translator as hearing/combining כס יה into a 'hidden' reading corresponding to Greek κρυφαίᾳ; treats the grammatical explanation as a translator's exegetical reinterpretation, NOT a witnessed one-word original Hebrew codex photograph. Separately Wevers proposes that translating MT נסי as though נוסי ('my refuge') explains Greek καταφυγή in Ex17:15. The 17:16 paragraph considers but does NOT endorse certainty of conjecture כס -> נס (says no ancient witnesses support it), describes Origenic additions to Greek phrase and why the Greek version connects the altar name to YHWH's hidden power. This is the original author's INTERPRETIVE discussion accessed as third-party OCR; not Wevers–Quast 1991 printed apparatus I/II, not a collated Greek/MT codex witness or proof of Hebrew original Vorlage. Scholarly author may reuse older material; do not treat author+critical edition as independent physical witnesses. Copyright remains restricted; no copying PDF to repo or product.",
+      "supportedUse": "Cite Wevers by author and printed pp273–274 as an explicitly attributed scholarly model of Greek translator's exegetical reasoning at Exodus 17:15–16, distinguishing MT altar name/banner, Greek refuge and hidden-hand interpretation. Mark OCR uncertainty for precise original Hebrew/Greek glyph transcription; rely on separately verified printed biblical text for actual forms.",
+      "forbiddenUse": "Assert Wevers photographed or collated the lost Aleppo Ex17:16 folio; assert Greek's 'hidden' proves an extant 1-word Hebrew original; claim ancient witness supports conjectural nas replacing kas; attribute full Göttingen1991 apparatus sigla to this separate 1990 commentary; infer new divine personal name or qere history; claim third-party Scribd OCR is exact critical original print; copy copyrighted pages into Product; release scholarly/rights/marketing approval.",
+      "wevers1990ReadScope20261116": {
+        "sblPublisherCatalogueVerified": true,
+        "author1990BookContentReadInThirdPartyOcr": true,
+        "targetPrintedPages": [
+          273,
+          274
+        ],
+        "originalPrintPageImagesAutopsied": false,
+        "originalHebrewGlyphsVerifiedFromImage": false,
+        "scribdOcrContainsLetterCorruption": true,
+        "authorDiscussesGreekRefugeVsHebrewBanner": true,
+        "authorAttributesHiddenHandToGreekTranslatorSemanticReparsing": true,
+        "authorPositsGreekTranslatorReadSurfacesAsJoined": true,
+        "ancientHebrewSingleWordManuscriptFoundByThisSource": false,
+        "authorStatesHebrewNasEmendationSupportedByAncientWitnesses": false,
+        "origGottExodus1991ApparatusReviewed": false,
+        "independentlyCollatedManuscriptWitnesses": 0,
+        "publicationPermissionFromRightsHolder": false,
+        "productPublicationApproved": false
       }
     }
   ],

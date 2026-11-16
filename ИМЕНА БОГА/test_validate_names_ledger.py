@@ -3244,5 +3244,36 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
 
 
 
+    def test_wevers_1990_ex17_15_16_author_commentary_stays_bounded(self) -> None:
+        """John W. Wevers' original scholarship is not an ancient manuscript."""
+        self.assertEqual([], validate_source_access(self.sources))
+        sid = "SRC-WEVERS-NOTES-GREEK-EXODUS-1990-P273274-EX17"
+        row = next(r for r in self.sources["records"] if r["id"] == sid)
+        self.assertEqual("BLOCKED", row["publicationState"])
+        self.assertEqual("PERMISSION_REQUIRED", row["rightsState"])
+        self.assertEqual("PARTIAL_OBJECT", row["accessState"])
+        audit = row["wevers1990ReadScope20261116"]
+        self.assertTrue(audit["authorAttributesHiddenHandToGreekTranslatorSemanticReparsing"])
+        for field, wrong_value in (
+                ("originalPrintPageImagesAutopsied", True),
+                ("originalHebrewGlyphsVerifiedFromImage", True),
+                ("scribdOcrContainsLetterCorruption", False),
+                ("ancientHebrewSingleWordManuscriptFoundByThisSource", True),
+                ("origGottExodus1991ApparatusReviewed", True),
+                ("authorStatesHebrewNasEmendationSupportedByAncientWitnesses", True),
+                ("independentlyCollatedManuscriptWitnesses", 1),
+                ("productPublicationApproved", True)):
+            with self.subTest(field=field):
+                altered = copy.deepcopy(self.sources)
+                item = next(r for r in altered["records"] if r["id"] == sid)
+                item["wevers1990ReadScope20261116"][field] = wrong_value
+                self.assertTrue(any("Wevers 1990 OCR interpretive source falsely promoted" in e
+                                    for e in validate_source_access(altered)))
+        altered = copy.deepcopy(self.sources)
+        item = next(r for r in altered["records"] if r["id"] == sid)
+        item["publicationState"] = "PROMOTE"
+        self.assertTrue(any("Wevers 1990 OCR interpretive source falsely promoted" in e
+                            for e in validate_source_access(altered)))
+
 if __name__ == "__main__":
     unittest.main()

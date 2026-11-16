@@ -474,6 +474,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-CUL-TS-AS36-36-EX3-14-ORIGINAL-IIIF": "CUL_TS_AS36_36_ORIGINAL_ASHKAR_SCROLL_EX3_14_PHOTO_DIRECT_VISIBLE_EHYEH_FORMULA_NO_FULL_COLLATION",
     "SRC-CUL-TS-NS282-88-EX17-16-ABSENT-ORIGINAL-IIIF": "CUL_TS_NS282_88_ORIGINAL_ASHKAR_SCROLL_EX17_16_NOT_SURVIVING_CATALOG_EX17_6_9_AND_18_4_14",
     "SRC-BL-HARLEY5683-F1R-EX17-16-OPENN-PHOTO": "LATE_THIRTEENTH_CENTURY_INDEPENDENT_PHYSICAL_CODEx_ORIGINAL_PHOTO_EX17_16_LOCUS_ONLY_UNCOLLATED",
+    "SRC-WEVERS-NOTES-GREEK-EXODUS-1990-P273274-EX17": "WEVERS_1990_AUTHOR_EX17_15_16_LXX_TRANSLATOR_REINTERPRETATION_1990_NOT_ORIGINAL_GOTTINGEN_1991_APPARATUS",
 }
 
 
@@ -591,6 +592,42 @@ def validate_source_access(sources: dict) -> list[str]:
                     or "Harley MS 5683" not in str(source.get("title", ""))
                     or "not" not in str(source.get("forbiddenUse", "")).lower()):
                 errors.append(f"{prefix}: Harley MS5683 catalogue/photo locator cannot certify original word division, critical collation or Product release")
+        if rid == "SRC-WEVERS-NOTES-GREEK-EXODUS-1990-P273274-EX17":
+            # Original authored commentary is available as third-party OCR,
+            # not a collated manuscript or published 1991 Greek critical apparatus.
+            required = {
+                "sourceRole": "WEVERS_1990_AUTHOR_EX17_15_16_LXX_TRANSLATOR_REINTERPRETATION_1990_NOT_ORIGINAL_GOTTINGEN_1991_APPARATUS",
+                "evidenceClass": "B1",
+                "accessState": "PARTIAL_OBJECT",
+                "locatorState": "EXACT_LOCATOR_VERIFIED",
+                "rightsState": "PERMISSION_REQUIRED",
+                "publicationState": "BLOCKED",
+                "criticalEditionCollated": False,
+                "year": 1990,
+                "publisherCatalogue": "https://www.bibliovault.org/BV.book.epl?ISBN=9780884143734",
+            }
+            audit = source.get("wevers1990ReadScope20261116")
+            flags = {
+                "sblPublisherCatalogueVerified": True,
+                "author1990BookContentReadInThirdPartyOcr": True,
+                "targetPrintedPages": [273, 274],
+                "originalPrintPageImagesAutopsied": False,
+                "originalHebrewGlyphsVerifiedFromImage": False,
+                "scribdOcrContainsLetterCorruption": True,
+                "authorDiscussesGreekRefugeVsHebrewBanner": True,
+                "authorAttributesHiddenHandToGreekTranslatorSemanticReparsing": True,
+                "authorPositsGreekTranslatorReadSurfacesAsJoined": True,
+                "ancientHebrewSingleWordManuscriptFoundByThisSource": False,
+                "authorStatesHebrewNasEmendationSupportedByAncientWitnesses": False,
+                "origGottExodus1991ApparatusReviewed": False,
+                "independentlyCollatedManuscriptWitnesses": 0,
+                "publicationPermissionFromRightsHolder": False,
+                "productPublicationApproved": False,
+            }
+            if (any(source.get(k) != v for k, v in required.items())
+                    or not isinstance(audit, dict)
+                    or any(audit.get(k) != v for k, v in flags.items())):
+                errors.append(f"{prefix}: Wevers 1990 OCR interpretive source falsely promoted to ancient witness or original 1991 apparatus")
         wave50_evidence_locks = {
             "SRC-PESACHIM117A-COMPOSITE-KESYAH-AMORAIC-EDITED-DIGITAL": {
                 "year": None,
