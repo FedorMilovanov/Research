@@ -2484,6 +2484,7 @@ def validate_source_access(sources: dict) -> list[str]:
                 errors.append(f"{prefix}: NETS English translation must not certify Göttingen apparatus or source rights")
         if rid == "SRC-OUTHWAITE-2023-JTS-ENA4107-20-EX6-2-3":
             evidence = source.get("audit20261115")
+            extra = source.get("audit20261116")
             if (source.get("sourceRole") != "OUTHWAITE_2023_AUTHOR_ORIGINAL_JTS_PHOTO_EX6_2_3_NOT_INDEPENDENT_GLYPH_COLLATION"
                 or source.get("accessState") != "PARTIAL_OBJECT"
                 or source.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
@@ -2500,7 +2501,22 @@ def validate_source_access(sources: dict) -> list[str]:
                 or evidence.get("originalPhotoViewed") is not True
                 or evidence.get("independentGlyphCollationDone") is not False
                 or evidence.get("imageReusePermissionGranted") is not False
-                or evidence.get("fullBhsGottingenLociCollated") is not False):
+                or evidence.get("fullBhsGottingenLociCollated") is not False
+                or not isinstance(extra, dict)
+                or extra.get("originalPhotoFigure3Page") != 147
+                or extra.get("originalOrthographicAndCorrectionAnalysisPage") != 149
+                or extra.get("originalSectionClassificationPage") != 150
+                or extra.get("closedSetumaLoci") != ["Exodus 6:2", "Exodus 6:14"]
+                or extra.get("openPetuchaLoci") != ["Exodus 6:10", "Exodus 6:13", "Exodus 7:8", "Exodus 7:14"]
+                or extra.get("sectionBreakBeforeEx6_2ConfirmedByAuthor") is not True
+                or extra.get("sectionBreakIsNotSameAsLexicalNameReading") is not True
+                or extra.get("reportedOrthographicVariantsAt") != "Exodus 6:14"
+                or extra.get("reportedCorrectionAt") != "Exodus 6:12"
+                or extra.get("reportedPrepositionVariantAt") != "Exodus 7:5"
+                or extra.get("ancientNameVariantAtEx6_2_3Established") is not False
+                or extra.get("independentLetterByLetterImageCollation") is not False
+                or extra.get("highResolutionOriginalArchiveImageAccessVerified") is not False
+                or extra.get("jtsPhotoReusePermissionGranted") is not False):
                 errors.append(f"{prefix}: Outhwaite ENA4107 author photo cannot certify ancient autopsy or rights")
         if rid == "SRC-CAMBRIDGE-GOD-PRONOUNS":
             if (source.get("creator") != "Nicholas Adams"
