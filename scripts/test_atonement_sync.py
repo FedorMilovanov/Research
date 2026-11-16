@@ -1549,5 +1549,40 @@ class Wave9SourcesTests(unittest.TestCase):
         self.assertIn('"atonement_wave9_sources.py"', (ROOT / '.github/workflows/atonement-corpus-integrity.yml').read_text(encoding='utf-8'))
 
 
+class ReshootTable91Tests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.corpus = json.loads(reshoot.CORPUS.read_text(encoding="utf-8"))
+        cls.document = reshoot.DOC.read_text(encoding="utf-8")
+        lines = cls.document.splitlines()
+        start = next(i for i, line in enumerate(lines) if line.startswith("### 9.1 "))
+        stop = next((i for i in range(start + 1, len(lines))
+                     if lines[i].startswith(("### ", "## "))), len(lines))
+        cls.ot_row = next(line for line in lines[start:stop]
+                          if line.startswith("| " + chr(96) + "ot" + chr(96) + " |"))
+
+    def test_produced_table_is_an_exact_fixed_point(self):
+        self.assertEqual(self.document, reshoot.render_table_91(self.corpus, self.document))
+        self.assertEqual([], reshoot.check_table_91(self.corpus, text=self.document))
+
+    def test_stale_numeric_cell_is_repaired_without_other_changes(self):
+        broken = self.ot_row.replace("| 230 |", "| 999 |", 1)
+        self.assertNotEqual(broken, self.ot_row)
+        corrupted = self.document.replace(self.ot_row, broken, 1)
+        self.assertTrue(reshoot.check_table_91(self.corpus, text=corrupted))
+        self.assertEqual(self.document, reshoot.render_table_91(self.corpus, corrupted))
+
+    def test_duplicate_lan_row_is_rejected(self):
+        corrupted = self.document.replace(self.ot_row + "\n",
+                                          self.ot_row + "\n" + self.ot_row + "\n", 1)
+        with self.assertRaises(SystemExit):
+            reshoot.render_table_91(self.corpus, corrupted)
+
+    def test_missing_lan_row_is_rejected(self):
+        corrupted = self.document.replace(self.ot_row + "\n", "", 1)
+        with self.assertRaises(SystemExit):
+            reshoot.render_table_91(self.corpus, corrupted)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

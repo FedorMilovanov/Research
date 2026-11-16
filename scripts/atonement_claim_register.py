@@ -195,7 +195,7 @@ def card_index(lan: str) -> dict[str, list[dict]]:
         return out
     # корневой реестр лежит в ИСКУПЛЕНИЕ/data/, лановый — в ИСКУПЛЕНИЕ/<лан>/data/:
     # короткие ссылки вида «05_x.md» разрешаются относительно второго каталога сверху
-    base_rel = str(path.relative_to(ROOT).parents[1])
+    base_rel = path.relative_to(ROOT).parents[1].as_posix()
 
     def own_file(node: dict) -> str | None:
         for key in ("file", "path", "файл", "markdownFile"):
@@ -352,7 +352,7 @@ def scan_lan(lan: str) -> dict:
     seen: collections.Counter = collections.Counter()
 
     for path in files_for(lan):
-        rel = str(path.relative_to(ROOT))
+        rel = path.relative_to(ROOT).as_posix()
         text = path.read_text(encoding="utf-8").splitlines()
         starts = [(i, m.group(1)) for i, ln in enumerate(text, 1) if (m := HEADING_RE.match(ln))]
         for idx, (line, title) in enumerate(starts):

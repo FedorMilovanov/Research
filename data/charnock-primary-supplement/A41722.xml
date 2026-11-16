@@ -1,0 +1,906 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>The government op [sic] the Common-wealth of England, Scotland, and Ireland, and the dominions thereto belonging as it was publickly declared at Westminster, the 16. day of December 1653. In the presence of the Lords Commissioners of the Great Seal of England, the Lord Major and aldermen of the City of London, divers of the judges of the land, the officers of state and army, and many other persons of quality. At which time and place his Highness Oliver, Lord Protector of the said Common-wealth, took a solemn oath for observing the same. Published by His Highness the Lord Protector's special commandment.</title>
+            <author>Scotland. Lord Protector (1653-1658 : O. Cromwell)</author>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               <date>1654</date>
+            </edition>
+         </editionStmt>
+         <extent>Approx. 45 KB of XML-encoded text transcribed from 11 1-bit group-IV TIFF page images.</extent>
+         <publicationStmt>
+            <publisher>Text Creation Partnership,</publisher>
+            <pubPlace>Ann Arbor, MI ; Oxford (UK) :</pubPlace>
+            <date when="2012-10">2012-10 (EEBO-TCP Phase 2).</date>
+            <idno type="DLPS">A41722</idno>
+            <idno type="STC">Wing G1457</idno>
+            <idno type="STC">ESTC R218845</idno>
+            <idno type="EEBO-CITATION">99830402</idno>
+            <idno type="PROQUEST">99830402</idno>
+            <idno type="VID">34853</idno>
+            <availability>
+               <p>To the extent possible under law, the Text Creation Partnership has waived all copyright and related or neighboring rights to this keyboarded and encoded edition of the work described above, according to the terms of the CC0 1.0 Public Domain Dedication (http://creativecommons.org/publicdomain/zero/1.0/). This waiver does not extend to any page images or other supplementary files associated with this work, which may be protected by copyright or other license restrictions. Please go to https://www.textcreationpartnership.org/ for more information about the project.</p>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Early English books online.</title>
+         </seriesStmt>
+         <notesStmt>
+            <note>(EEBO-TCP ; phase 2, no. A41722)</note>
+            <note>Transcribed from: (Early English Books Online ; image set 34853)</note>
+            <note>Images scanned from microfilm: (Early English books, 1641-1700 ; 2091:9)</note>
+         </notesStmt>
+         <sourceDesc>
+            <biblFull>
+               <titleStmt>
+                  <title>The government op [sic] the Common-wealth of England, Scotland, and Ireland, and the dominions thereto belonging as it was publickly declared at Westminster, the 16. day of December 1653. In the presence of the Lords Commissioners of the Great Seal of England, the Lord Major and aldermen of the City of London, divers of the judges of the land, the officers of state and army, and many other persons of quality. At which time and place his Highness Oliver, Lord Protector of the said Common-wealth, took a solemn oath for observing the same. Published by His Highness the Lord Protector's special commandment.</title>
+                  <author>Scotland. Lord Protector (1653-1658 : O. Cromwell)</author>
+                  <author>Cromwell, Oliver, 1599-1658. aut</author>
+               </titleStmt>
+               <extent>20 p.   </extent>
+               <publicationStmt>
+                  <publisher>Printed at London, and re-printed at Leith,</publisher>
+                  <pubPlace>[Leith] :</pubPlace>
+                  <date>anno Dom. 1654.</date>
+               </publicationStmt>
+               <notesStmt>
+                  <note>Caption title on p. 3: The government of the Commonwealth of England, Scotland, and Ireland.</note>
+                  <note>Final leaf has "The oath taken by his Highness Oliver Cromwell, Lord Protector" signed at end: O. Cromwell.</note>
+                  <note>Reproduction of the original in the Edinburgh University Library.</note>
+               </notesStmt>
+            </biblFull>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Created by converting TCP files to TEI P5 using tcp2tei.xsl,
+      TEI @ Oxford.
+      </p>
+         </projectDesc>
+         <editorialDecl>
+            <p>EEBO-TCP is a partnership between the Universities of Michigan and Oxford and the publisher ProQuest to create accurately transcribed and encoded texts based on the image sets published by ProQuest via their Early English Books Online (EEBO) database (http://eebo.chadwyck.com). The general aim of EEBO-TCP is to encode one copy (usually the first edition) of every monographic English-language title published between 1473 and 1700 available in EEBO.</p>
+            <p>EEBO-TCP aimed to produce large quantities of textual data within the usual project restraints of time and funding, and therefore chose to create diplomatic transcriptions (as opposed to critical editions) with light-touch, mainly structural encoding based on the Text Encoding Initiative (http://www.tei-c.org).</p>
+            <p>The EEBO-TCP project was divided into two phases. The 25,368 texts created during Phase 1 of the project (2000-2009), initially available only to institutions that contributed to their creation, were released into the public domain on 1 January 2015. The approximately 40,000 texts produced during Phase 2 (2009- ), of which 34,963 had been released as of 2020, originally similarly restricted, were similarly freed from all restrictions on 1 August 2020. As of that date anyone is free to take and use these texts for any purpose (modify them, annotate them, distribute them, etc.). But we do respectfully request that due credit and attribution be given to their original source.</p>
+            <p>Users should be aware of the process of creating the TCP texts, and therefore of any assumptions that can be made about the data.</p>
+            <p>Text selection was based on the New Cambridge Bibliography of English Literature (NCBEL). If an author (or for an anonymous work, the title) appears in NCBEL, then their works are eligible for inclusion. Selection was intended to range over a wide variety of subject areas, to reflect the true nature of the print record of the period. In general, first editions of a works in English were prioritized, although there are a number of works in other languages, notably Latin and Welsh, included and sometimes a second or later edition of a work was chosen if there was a compelling reason to do so.</p>
+            <p>Image sets were sent to external keying companies for transcription and basic encoding. Quality assurance was then carried out by editorial teams in Oxford and Michigan. 5% (or 5 pages, whichever is the greater) of each text was proofread for accuracy and those which did not meet QA standards were returned to the keyers to be redone. After proofreading, the encoding was enhanced and/or corrected and characters marked as illegible were corrected where possible up to a limit of 100 instances per text. Any remaining illegibles were encoded as &lt;gap&gt;s. Understanding these processes should make clear that, while the overall quality of TCP data is very good, some errors will remain and some readable characters will be marked as illegible. Users should bear in mind that in all likelihood such instances will never have been looked at by a TCP editor.</p>
+            <p>The texts were encoded and linked to page images in accordance with level 4 of the TEI in Libraries guidelines.</p>
+            <p>Copies of the texts have been issued variously as SGML (TCP schema; ASCII text with mnemonic sdata character entities); displayable XML (TCP schema; characters represented either as UTF-8 Unicode or text strings within braces); or lossless XML (TEI P5, characters represented either as UTF-8 Unicode or TEI g elements).</p>
+            <p>Keying and markup guidelines are available at the <ref target="http://www.textcreationpartnership.org/docs/.">Text Creation Partnership web site</ref>.</p>
+         </editorialDecl>
+         <listPrefixDef>
+            <prefixDef ident="tcp"
+                       matchPattern="([0-9\-]+):([0-9IVX]+)"
+                       replacementPattern="http://eebo.chadwyck.com/downloadtiff?vid=$1&amp;page=$2"/>
+            <prefixDef ident="char"
+                       matchPattern="(.+)"
+                       replacementPattern="https://raw.githubusercontent.com/textcreationpartnership/Texts/master/tcpchars.xml#$1"/>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="eng">eng</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="http://authorities.loc.gov/">
+               <term>Great Britain --  History, (Commonwealth and Protectorate, 1649-1660) --  Early works to 1800.</term>
+               <term>Great Britain --  Politics and government, (1649-1660) --  Early works to 1800.</term>
+               <term>Oaths --  Scotland --  Early works to 1800.</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change>
+            <date>2011-05</date>
+            <label>TCP</label>Assigned for keying and markup</change>
+         <change>
+            <date>2011-05</date>
+            <label>SPi Global</label>Keyed and coded from ProQuest page images</change>
+         <change>
+            <date>2011-07</date>
+            <label>Judith Siefring</label>Sampled and proofread</change>
+         <change>
+            <date>2011-07</date>
+            <label>Judith Siefring</label>Text and markup reviewed and edited</change>
+         <change>
+            <date>2012-05</date>
+            <label>pfs</label>Batch review (QC) and XML conversion</change>
+      </revisionDesc>
+   </teiHeader>
+   <text xml:lang="eng">
+      <front>
+         <div type="title_page">
+            <pb facs="tcp:34853:1"/>
+            <pb facs="tcp:34853:1" rendition="simple:additions"/>
+            <p>THE GOVERNMENT OP THE COMMON-WEALTH OF ENGLAND, SCOTLAND, and IRELAND, And the Dominions thereto belonging; As it was publickly declared at <hi>Weſtmin<g ref="char:EOLhyphen"/>ſter,</hi> the 16. day of <hi>December</hi> 1653. In the preſence of the Lords Commiſſioners of the Great Seal of <hi>England,</hi> the Lord Major and Aldermen of the City of <hi>London,</hi> divers of the Judges of the Land, the Officers of State and Army, and many other Perſons of quality. At which time and place his Highnes <hi>OLIVER,</hi> LORD PROTECTOR of the ſaid Common-wealth, took a Solemn Oath for obſer<g ref="char:EOLhyphen"/>ving the ſame.</p>
+            <p>
+               <hi>Publiſhed by His Highneſs the</hi> LORD PROTECTOR'S <hi>ſpecial Commandment.</hi>
+            </p>
+            <p>Printed at <hi>London,</hi> and re-printed at <hi>Leith,</hi> Anno Dom. 1654.</p>
+         </div>
+      </front>
+      <body>
+         <div type="text">
+            <pb facs="tcp:34853:2"/>
+            <pb n="3" facs="tcp:34853:2"/>
+            <head>The Government of the Commonwealth of <hi>ENGLAND, SCOTLAND,</hi> and <hi>IRELAND.</hi>
+            </head>
+            <p n="1">I. <seg rend="decorInit">T</seg>Hat the Supreme Legiſlative Authority of the Commonwealth of <hi>England, Scotland,</hi> and <hi>Ireland,</hi> and the Dominions thereto belong<g ref="char:EOLhyphen"/>ing, ſhall be, and reſide in One Perſon, and the People aſſembled in Parliament; The Stile of which Perſon ſhall be, <hi>LORD PROTECTOR</hi> of the Commonwealth of <hi>England, Scotland,</hi> and <hi>Ireland.</hi>
+            </p>
+            <p n="2">II. That the Exerciſe of the chief Magiſtracie and Adminiſtra<g ref="char:EOLhyphen"/>tion of the Government over the ſaid Countries and Dommions, and the People thereof, ſhall be in the <hi>Lord PROTECTOR,</hi> aſſiſted with a Council; the Number whereof ſhal not exceed Twen<g ref="char:EOLhyphen"/>ty one, nor be leſs than Thirteen.</p>
+            <p n="3">III. That all Writs, Proceſſes, Commiſſions, Patents, Grants, and other things, which now run in the Name and Style of th<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap> Keep<g ref="char:EOLhyphen"/>ers of the Liberty of <hi>England</hi> by Authority of Parliament, ſhall run in the Name and Style of the <hi>Lord PROTECTOR;</hi> from whom for the future, ſhall be derived all Magiſtracie and Honors in theſe three Nations, and ſhall have the power of Pardons, (except in caſe of Murder and Treaſon) and benefit of all forfeitures for the publick uſe. And ſhall govern the ſaid Countries and Dominions in all things by the Advice of the Council; and according to theſe Preſents, and the Laws.</p>
+            <p n="4">IV. That the <hi>Lord PROTECTOR,</hi> the Parliament ſitting, ſhall diſpoſe and order the <hi>Militia</hi> and Forces both by Sea and Land, for the peace and good of the three Nations, by Conſent of Parlia<g ref="char:EOLhyphen"/>ment; And that the <hi>Lord PROTECTOR,</hi> with the Advice and Conſent of the major part of the Councill, ſhall diſpoſe and or<g ref="char:EOLhyphen"/>der the <hi>Militia</hi> for the ends aforeſaid in the Intervals of Parliament.</p>
+            <p n="5">V. That the <hi>Lord PROTECTOR</hi> by the Advice aforeſaid, ſhal direct in all things, concerning the keeping and holding of a good Correſpondencie with forreign Kings, Princes and States, and alſo
+<pb n="4" facs="tcp:34853:3"/>with the Conſent of the major part of the Council, have the power of War and Peace.</p>
+            <p n="6">VI. That the Laws ſhall not be altered, ſuſpended, abrogated, or repealed nor any new Law made, nor any Tax, Charge, or Impoſition laid upon the People, but by common conſent in Parliament, ſave only as <gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>s expreſſed in the 30. A ticle.</p>
+            <p n="7">VII. That there ſhall be a Parliament ſummoned to meet at <hi>W<gap reason="illegible" resp="#OXF" extent="2 letters">
+                     <desc>••</desc>
+                  </gap>tminst<gap reason="illegible" resp="#OXF" extent="1 letter">
+                     <desc>•</desc>
+                  </gap>r</hi> upon the third day of <hi>September,</hi> one thouſand ſix hun<g ref="char:EOLhyphen"/>dred fifty four; and that ſucceſſively a Parliament ſhal be ſummoned once in every third year, to be accompted from the diſſolution of the preceding Parliament.</p>
+            <p n="8">VIII. That neither the Parliament to be next ſummoned, nor any ſucceſsive Parliaments, ſhall, during the time of five Moneths, to be accompted from the day of their firſt meeting, be adjourned, pro<g ref="char:EOLhyphen"/>rogned, or diſſolved without their own Conſent.</p>
+            <p n="9">IX. That as well the next, as all other ſucceſsive Parliaments, ſhall be ſummoned and elected in manner hereafter expreſt, That is to ſay, The Perſons to be choſen within <hi>England, Wales,</hi> the Iſles of <hi>Jerſ<gap reason="illegible" resp="#OXF" extent="1 letter">
+                     <desc>•</desc>
+                  </gap>y</hi> and <hi>Guernſey</hi> and the Town of <hi>Berwick</hi> upon Tweed, to ſit and ſerve<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>h Parliament ſhall be, and not exceed the Number of Four hundred. Th<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap> Perſons to be choſen within <hi>Scotland</hi> to ſit and ſerve in P<gap reason="illegible" resp="#OXF" extent="2 letters">
+                  <desc>••</desc>
+               </gap>liament, ſhall be, and not exceed the Number of Th<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>rty. And th<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap> P<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>rſons to be choſen to ſit in Parliament for <hi>Ireland,</hi> ſhall be, and not exceed the number of thirty.</p>
+            <p n="10">X. That the Perſons to be elected to ſit in Parliament from time to time for the ſeveral Counties of <hi>England, Wales,</hi> the Iſles of <hi>Jer<gap reason="illegible" resp="#OXF" extent="1 letter">
+                     <desc>•</desc>
+                  </gap>ey</hi> and <hi>Guernſey,</hi> and the Town of <hi>Berwick</hi> upon Tweed, and all places w<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>thin the ſame reſpectively, ſhall be according to the proportions and numbers hereafter expreſt, That is to ſay,</p>
+            <list>
+               <item>
+                  <hi>For the Countie of</hi> Bedford, <hi>ſix,</hi> viz.
+<list>
+                     <item>
+                        <hi>For the Town of</hi> Bedford, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>For the Countie of</hi> Bedford, <hi>five.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>
+                  <hi>For the Countie of</hi> Berks, <hi>ſeven,</hi> viz.
+<list>
+                     <item>
+                        <hi>For the Borough of</hi> Abingdon, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>For the Borough of</hi> Reading, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>For the Countie of</hi> Berks, <hi>five.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>
+                  <hi>For the Countie of</hi> Bucks, <hi>eight,</hi> viz.
+<list>
+                     <item>
+                        <hi>For the Town of</hi> Buckingham, <hi>one.</hi>
+                     </item>
+                     <pb n="5" facs="tcp:34853:3"/>
+                     <item>
+                        <hi>For the Borough of</hi> Alisburie, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>For the Borough of</hi> Wiccomb, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>For the Countie of</hi> Bucks, <hi>five.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>
+                  <hi>For the Countie of</hi> Cambridge <hi>and</hi> Iſle of Ely, <hi>eight,</hi> viz.
+<list>
+                     <item>
+                        <hi>for the Town of</hi> Cambridge, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the <g ref="char:V">Ʋ</g>niverſity of</hi> Cambridge, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Iſle of</hi> Ely, <hi>two.</hi>
+                     </item>
+                     <item>
+                        <hi>for the County of</hi> Cambridge, <hi>four.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>
+                  <hi>For the County of</hi> Cheſter, <hi>Five,</hi> viz.
+<list>
+                     <item>
+                        <hi>for the City of</hi> Cheſter, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the County of</hi> Cheſter, <hi>four.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>
+                  <hi>For the County of</hi> Cornwel, <hi>Twelve,</hi> viz.
+<list>
+                     <item>
+                        <hi>for the Borough of</hi> Duniſhwet, <hi>otherwiſe</hi> Launceſton, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Borough of</hi> Truro, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Borough of</hi> Penryn, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Boroughs of</hi> Eaſtlow <hi>and</hi> Weſtlow, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the County of</hi> Cornwal, <hi>eight.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>
+                  <hi>For the County of</hi> Cumberland; <hi>Three,</hi> viz.
+<list>
+                     <item>
+                        <hi>for the City of</hi> Carliſle, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the County of</hi> Cumberland, <hi>two.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>
+                  <hi>For the County of</hi> Derby, <hi>Five,</hi> viz.
+<list>
+                     <item>
+                        <hi>for the Town of</hi> Derby, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the County of</hi> Derby, <hi>four.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>
+                  <hi>For the County of</hi> Devon, <hi>Twenty,</hi> viz.
+<list>
+                     <item>
+                        <hi>for the City of</hi> Exceſter, <hi>two.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Borough of</hi> Plymouth, <hi>two.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Borough of</hi> Dartmouth, Clifton, <hi>and</hi> Hardneſs, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Borough of</hi> Totneſs, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Borough of</hi> Barnſtable, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Borough of</hi> Tiverton, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Borough of</hi> Honyton, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the County of</hi> Devon, <hi>eleven.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>
+                  <hi>For the County of</hi> Dorſet, <hi>Ten,</hi> viz.
+<list>
+                     <item>
+                        <hi>for the Borough of</hi> Dorcheſter, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Borough of</hi> Weymouth, <hi>and</hi> Melcomb-Regis, <hi>one.</hi>
+                     </item>
+                     <pb n="6" facs="tcp:34853:4"/>
+                     <item>
+                        <hi>for the Burough of</hi> Lyme-Regis, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Town and County of</hi> Pool, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the County of</hi> Dorſet, <hi>ſix.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>
+                  <hi>For the County of</hi> Durham, <hi>Three,</hi> viz.
+<list>
+                     <item>
+                        <hi>for the City of</hi> Durham, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the County of</hi> Durham, <hi>two.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>
+                  <hi>For the County of</hi> York, <hi>Twenty two,</hi> viz.
+<list>
+                     <item>
+                        <hi>for the City of</hi> York, <hi>two.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Town of</hi> Kingſton <hi>upon</hi> Hull, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Borough of</hi> Beverley, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Borough of</hi> Scarborough, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Burough of</hi> Richmond, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Town of</hi> Leeds, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Town and Pariſh of</hi> Hallifax, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the County of</hi> York, <hi>fourteen, to be choſen diſtinctly by the three Ridings: That is to ſay, for the</hi> Weſt-<hi>riding, ſix, for the</hi> Eaſt-<hi>riding, four, for the</hi> North-<hi>riding, four.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>
+                  <hi>For the County of</hi> Eſſex, <hi>Sixteen,</hi> viz.
+<list>
+                     <item>
+                        <hi>for the Burough of</hi> Maldon, <hi>one,</hi>
+                     </item>
+                     <item>
+                        <hi>for the Borough of</hi> Colcheſter, <hi>two.</hi>
+                     </item>
+                     <item>
+                        <hi>for the County of</hi> Eſſex, <hi>thirteen.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>
+                  <hi>For the County of</hi> Glouceſter, <hi>and County of the City of</hi> Glou<g ref="char:EOLhyphen"/>ceſter, <hi>Nine,</hi> viz.
+<list>
+                     <item>
+                        <hi>for the City of</hi> Glouceſter, <hi>two.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Brough of</hi> Tewksberry, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Borough of</hi> Cirenceſter, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the County, and the County of the City of</hi> Glouceſter, <hi>ex<g ref="char:EOLhyphen"/>cept the ſaid City, five.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>
+                  <hi>For the County of</hi> Hereford, <hi>Six,</hi> viz.
+<list>
+                     <item>
+                        <hi>for the City of</hi> Hereford, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Borough of</hi> Leompſter, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the County of</hi> Hereford, <hi>four.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>
+                  <hi>For the County of</hi> Hartford, <hi>Seven,</hi> viz.
+<list>
+                     <item>
+                        <hi>for the Town of</hi> St. Alban, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Borough of</hi> Hartford, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Countie of</hi> Hartford, <hi>five.</hi>
+                     </item>
+                  </list>
+               </item>
+               <pb n="7" facs="tcp:34853:4"/>
+               <item>
+                  <hi>For the Countie of</hi> Huntingdon, <hi>four</hi> viz.
+<list>
+                     <item>
+                        <hi>for the Borough of</hi> Huntingdon, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the County of</hi> Huntingdon, <hi>three.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>
+                  <hi>For the County of</hi> Kent, <hi>Eighteen,</hi> viz.
+<list>
+                     <item>
+                        <hi>for the City of</hi> Canterbury, <hi>two.</hi>
+                     </item>
+                     <item>
+                        <hi>for the City of</hi> Rocheſter, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Borough of</hi> Maydſton, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Port of</hi> Dover, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Port of</hi> Sandwich, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Borough of</hi> Quinborough, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the County of</hi> Kent, <hi>eleven.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>
+                  <hi>For the County of</hi> Lancaſter, <hi>Eight,</hi> viz.
+<list>
+                     <item>
+                        <hi>for the Borough of</hi> Preſton <hi>in</hi> Anderneſs, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Borough of</hi> Lancaſter, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Borough of</hi> Leverpool, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Town and Pariſh of</hi> Mancheſter, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the County of</hi> Lancaſter, <hi>four.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>
+                  <hi>For the County of</hi> Leceſter, <hi>Six,</hi> viz.
+<list>
+                     <item>
+                        <hi>for the Borrough of</hi> Leceſter, <hi>two.</hi>
+                     </item>
+                     <item>
+                        <hi>for the County of</hi> Leceſter, <hi>four.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>
+                  <hi>For the County of</hi> Lilcoln, <hi>Sixteen,</hi> viz.
+<list>
+                     <item>
+                        <hi>for the City of</hi> Lincoln, <hi>two.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Town of</hi> Boſton, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Borough of</hi> Grantham, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Town of</hi> Stamford, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Town of Great</hi> Grimsby, <hi>one.</hi>
+                     </item>
+                     <item>
+                        <hi>for the County of</hi> Lincoln. <hi>ten.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>
+                  <hi>For the County of</hi> Middleſex, <hi>Six,</hi> viz.
+<list>
+                     <item>
+                        <hi>for the City of</hi> Weſtminſter, <hi>two.</hi>
+                     </item>
+                     <item>
+                        <hi>for the County of</hi> Middleſex, <hi>four.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>
+                  <hi>For the City of</hi> London, <hi>ſix.</hi>
+               </item>
+               <item>
+                  <hi>For the County of</hi> Monmouth, <hi>three.</hi>
+               </item>
+               <item>
+                  <hi>For the County of</hi> Northfolk, <hi>Sixteen,</hi> viz.
+<list>
+                     <item>
+                        <hi>for the City of</hi> Norwich, <hi>two.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Town of</hi> Lyn-Regis, <hi>two.</hi>
+                     </item>
+                     <pb n="8" facs="tcp:34853:5"/>
+                     <item>
+                        <hi>for the Town of Great</hi> Yarmouth, <hi>two.</hi>
+                     </item>
+                     <item>
+                        <hi>for the Countie of</hi> Northfolk, <hi>ten.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>
+                  <hi>For the Countie of</hi> Northampton, <hi>eight.</hi> viz.
+<list>
+                     <item>
+                        <hi>for the City of</hi> Peterborough, one.</item>
+                     <item>
+                        <hi>for the Town of</hi> Northampton, one.</item>
+                     <item>
+                        <hi>for the Countie of</hi> Northampton, ſix.</item>
+                  </list>
+               </item>
+               <item>
+                  <hi>For the County of</hi> Notingham, <hi>ſix,</hi> viz.
+<list>
+                     <item>
+                        <hi>for the Town of</hi> Notingham, two.</item>
+                     <item>
+                        <hi>for the County of</hi> Notingham, four.</item>
+                  </list>
+               </item>
+               <item>
+                  <hi>For the Countie of</hi> Northumberland, <hi>five,</hi> viz.
+<list>
+                     <item>
+                        <hi>for the Town of</hi> Newcaſtle <hi>upon</hi> Tyne, one.</item>
+                     <item>
+                        <hi>for the Town of</hi> Berwick, one.</item>
+                     <item>
+                        <hi>for the Countie of</hi> Northumberland, three.</item>
+                  </list>
+               </item>
+               <item>
+                  <hi>For the Countie of</hi> Oxford, <hi>eight,</hi> viz.
+<list>
+                     <item>
+                        <hi>for the City of</hi> Oxford. one.</item>
+                     <item>
+                        <hi>for the <g ref="char:V">Ʋ</g>niverſity of</hi> Oxford, one.</item>
+                     <item>
+                        <hi>for the Borough of</hi> Woodſtock, one.</item>
+                     <item>
+                        <hi>for the Countie of</hi> Oxford, <hi>five.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>For <hi>the Countie of</hi> Rutland, <hi>two.</hi>
+               </item>
+               <item>For <hi>the County of</hi> Salop, <hi>eight,</hi> viz.
+<list>
+                     <item>for <hi>the Town of</hi> Shrewsbury, <hi>two.</hi>
+                     </item>
+                     <item>for <hi>the Borough of</hi> Bruges <hi>alias</hi> Bridgnorth, <hi>one.</hi>
+                     </item>
+                     <item>for <hi>the Borough of</hi> Ludlow, <hi>one.</hi>
+                     </item>
+                     <item>for <hi>the Countie of</hi> Salop, <hi>four.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>For <hi>the Countie of</hi> Stafford, <hi>ſix,</hi> viz.
+<list>
+                     <item>for <hi>the Citie of</hi> Litchfield, <hi>one.</hi>
+                     </item>
+                     <item>for <hi>the Town of</hi> Stafford, <hi>one.</hi>
+                     </item>
+                     <item>for <hi>the Borough of</hi> Newcaſtle <hi>on the Line, one.</hi>
+                     </item>
+                     <item>for <hi>the Countie of</hi> Stafford, <hi>three.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>For <hi>the Countie of</hi> Sommerſet, <hi>ſixteen,</hi> viz.
+<list>
+                     <item>for <hi>the Borough of</hi> Taunton, <hi>two.</hi>
+                     </item>
+                     <item>for <hi>the Citie of</hi> Bath, <hi>one.</hi>
+                     </item>
+                     <item>for <hi>the Citie of</hi> Wells, <hi>one.</hi>
+                     </item>
+                     <item>for <hi>the Borough of</hi> Bridgwater, <hi>one.</hi>
+                     </item>
+                     <item>for <hi>the Countie of</hi> Sommerſet, <hi>elevens</hi>
+                     </item>
+                  </list>
+               </item>
+               <pb n="9" facs="tcp:34853:5"/>
+               <item>For <hi>the City of</hi> Briſtol, <hi>two.</hi>
+               </item>
+               <item>For <hi>the County of</hi> Southampton, <hi>fourteen,</hi> viz.
+<list>
+                     <item>for <hi>the City of</hi> Wincheſter, <hi>one.</hi>
+                     </item>
+                     <item>for <hi>the Town of</hi> Southampton, <hi>one.</hi>
+                     </item>
+                     <item>for <hi>the Town of</hi> Portſmouth, <hi>one.</hi>
+                     </item>
+                     <item>for <hi>the Iſle of</hi> Wight, <hi>two.</hi>
+                     </item>
+                     <item>for <hi>the Borough of</hi> Andover, <hi>one.</hi>
+                     </item>
+                     <item>for <hi>the County of</hi> Southampton, <hi>eight.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>For <hi>the County of</hi> Suffolk, <hi>ſixteen,</hi> viz.
+<list>
+                     <item>for <hi>the Borough of</hi> Ipſwitch, <hi>two.</hi>
+                     </item>
+                     <item>for <hi>the Borough of</hi> Bury <hi>St.</hi> Edmonds, <hi>two</hi>
+                     </item>
+                     <item>for <hi>the Burough of</hi> Dunwich, <hi>one.</hi>
+                     </item>
+                     <item>for <hi>the Borough of</hi> Sudbury, <hi>one.</hi>
+                     </item>
+                     <item>for <hi>the County of</hi> Suffolk, <hi>ten.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>For <hi>the County of</hi> Surry, <hi>ten,</hi> viz.
+<list>
+                     <item>for <hi>the Borough of</hi> Southwark, <hi>two.</hi>
+                     </item>
+                     <item>for <hi>the Borough of</hi> Guilford, <hi>one.</hi>
+                     </item>
+                     <item>for <hi>the Borough of</hi> Rygate, <hi>one.</hi>
+                     </item>
+                     <item>for <hi>the County of</hi> Surry, <hi>ſix.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>For <hi>the County of</hi> Suſſex, <hi>fourteen,</hi> viz.
+<list>
+                     <item>for <hi>the City of</hi> Chicheſter, <hi>one.</hi>
+                     </item>
+                     <item>for <hi>the Borough of</hi> Lewis, <hi>one.</hi>
+                     </item>
+                     <item>for <hi>the Borough of</hi> Eaſt-greenſtead, <hi>one.</hi>
+                     </item>
+                     <item>for <hi>the Borough of</hi> Arundel, <hi>one.</hi>
+                     </item>
+                     <item>for <hi>the Borough of</hi> Rye, <hi>one.</hi>
+                     </item>
+                     <item>for <hi>the County of</hi> Suſſex, <hi>nine.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>For <hi>the County of</hi> Weſtmoreland, <hi>two.</hi>
+               </item>
+               <item>For <hi>the County of</hi> Warwick, <hi>ſeven,</hi> viz.
+<list>
+                     <item>for <hi>the Citie of</hi> Coventry, <hi>two.</hi>
+                     </item>
+                     <item>for <hi>the Borough of</hi> Warwick, <hi>one.</hi>
+                     </item>
+                     <item>for <hi>the Countie of</hi> VVarwick, <hi>four.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>For <hi>the Countie of</hi> Worceſter, <hi>ſeven,</hi> viz.
+<list>
+                     <item>for <hi>the Citie and Countie of the Citie of</hi> Worceſter, <hi>two.</hi>
+                     </item>
+                     <item>for <hi>the Countie of</hi> Worceſter, <hi>five.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>for <hi>the Countie of</hi> Wilts, <hi>fourteen,</hi> viz.
+<list>
+                     <item>for <hi>the Citie of New</hi> Sarum, <hi>two.</hi>
+                     </item>
+                     <pb n="10" facs="tcp:34853:6"/>
+                     <item>for <hi>the Borough of</hi> Marleborough, <hi>one.</hi>
+                     </item>
+                     <item>for <hi>the Borough of the</hi> Devizes, <hi>one.</hi>
+                     </item>
+                     <item>for <hi>the Countie of</hi> Wilts, <hi>ten.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>For <hi>the County of</hi> Angleſey, <hi>two.</hi>
+               </item>
+               <item>For <hi>the Countie of</hi> Brecon, <hi>two.</hi>
+               </item>
+               <item>For <hi>the Countie of</hi> Cardigan, <hi>two.</hi>
+               </item>
+               <item>For <hi>the Countie of</hi> Carmarthen, <hi>two.</hi>
+               </item>
+               <item>For <hi>the Countie of</hi> Carnarvon, <hi>two.</hi>
+               </item>
+               <item>For <hi>the Countie of</hi> Denbigh, <hi>two.</hi>
+               </item>
+               <item>For <hi>the Countie of</hi> Flint, <hi>two.</hi>
+               </item>
+               <item>For <hi>the Countie of</hi> Glamorgan, <hi>three,</hi> viz.
+<list>
+                     <item>for <hi>the Town of</hi> Card<gap reason="illegible" resp="#OXF" extent="1 letter">
+                           <desc>•</desc>
+                        </gap>ffe, <hi>one.</hi>
+                     </item>
+                     <item>for <hi>the Countie of</hi> Glamorgan, <hi>two.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>For <hi>the C<gap reason="illegible" resp="#OXF" extent="1 letter">
+                        <desc>•</desc>
+                     </gap>untie of</hi> Merioneth, <hi>one.</hi>
+               </item>
+               <item>For <hi>the County of</hi> Montgomery, <hi>two.</hi>
+               </item>
+               <item>For <hi>the Countie of</hi> Pembrook, <hi>three,</hi> viz.
+<list>
+                     <item>for <hi>the Town of</hi> Haverfordweſt, <hi>one.</hi>
+                     </item>
+                     <item>for <hi>the Countie of</hi> Pembrook, <hi>two.</hi>
+                     </item>
+                  </list>
+               </item>
+               <item>For <hi>the Countie of</hi> Radnor, <hi>two.</hi>
+               </item>
+            </list>
+            <p>The diſtribution of the Perſons to be choſen for <hi>Scotland,</hi> and the ſeverall Counties C<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>ties, and places within the ſame, ſhall be according to ſuch proportions and number, as ſhall be agreed upon, and declar<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>d by the Lord <hi>Protector</hi> and the major part of the Councill, before the ſending forth Writs of Summons for the next Parliament. The diſtribution of the Perſons to be choſen for <hi>Ire<g ref="char:EOLhyphen"/>land,</hi> and the ſeverall Counties, Cities, and places within the ſame, ſhall be according to ſuch proportions and number, as ſhall be agreed upon, and declared by the Lord <hi>Protector,</hi> and the major part of the Councill, before the ſending forth Writs of Summons for the next Parliament.</p>
+            <p n="11">XI. That the Summons to Parliament ſhal be by Writ under the Great Seal of <hi>England,</hi> directed to the Sh<gap reason="illegible" resp="#OXF" extent="3 letters">
+                  <desc>•••</desc>
+               </gap>ffs of the ſeverall and reſpective Counties, with ſuch alteration as may ſuit with the pre<g ref="char:EOLhyphen"/>ſent
+<pb n="11" facs="tcp:34853:6"/>Government, to be made by the Lord <hi>Protector</hi> and his Coun<g ref="char:EOLhyphen"/>cil, which the Chancellour, Keeper, or Commiſſioners of the Great Seal, ſhall ſeal, iſſue, and ſend abroad by Warrant from the Lord <hi>Protector.</hi> If the Lord <hi>Protector</hi> ſhall not give warrant for iſſuing of Writs of Summons for the next Parliament, before the firſt day of <hi>June,</hi> one thouſand ſix-hundred fifty four, or for the Triennial Parliaments before the firſt day of <hi>Auguſt</hi> in every third year, to be accounted as aforeſaid; That then the Chancellour, Keeper, or Commiſsioners of the Great Seal for the time being ſhall, without any Warrant or direction, within ſeven dayes after the ſaid firſt day of <hi>June,</hi> one thouſand fix hundred fifty four, Seal, Iſſue, and ſend abroad Writs of Summons (changing th<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>rein what is to be chang<g ref="char:EOLhyphen"/>ed as aforeſaid) to the ſeverall and reſpective Sheriffs of <hi>England, Scotland,</hi> and <hi>Ireland,</hi> for ſummoning the Parliament to meet at <hi>Weſtminster,</hi> the third of <hi>September</hi> next; and ſhall likewiſe with<g ref="char:EOLhyphen"/>in ſeven dayes after the ſaid firſt day of <hi>Auguſt,</hi> in every third year, to be accounted from the diſſolution of the precedent Parliament, Seal, Iſſue, and ſend abroad ſeverall Writs of Summons, changing therein what is to be changed, as aforeſaid, for Summoning the Par<g ref="char:EOLhyphen"/>liament to meet at <hi>Weſtminſter</hi> the ſixt of <hi>November</hi> in that third year, That the ſaid ſeverall and reſpective Sheriffs ſhall, within ten dayes after the receipt of ſuch Writs as aforeſaid, cauſe the ſame to be proclaimed and publiſhed in every Market-Town with<g ref="char:EOLhyphen"/>in his County, upon the Market-daies thereof, between Twelve and Three of the Clock; and ſhall then alſo publiſh and declare the certain day of the week and moneth for chooſing Members to ſerve in Parliament for the Body of the ſaid County, according to the tenor of the ſaid Writ, which ſhall be upon Wedneſday five weeks after the date of the Writ; and ſhall likewiſe declare the place where the Election ſhall be made; for which purpoſe he ſhall ap<g ref="char:EOLhyphen"/>point the moſt convenient place for the whole County to meet in, and ſhall ſend Precepts for Elections to be made in all and every City, Town, Borough or place within his County, where Elections are to be made by vertue of theſe Preſents, to the Major, Sheriff, or other H<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>ad-Officer of ſuch City, Town, Borough or place, within Three dayes after the receit of ſuch Writ and Writs, which the ſaid Majors, Sheriffs and Officers reſpectively are to make publi<g ref="char:EOLhyphen"/>cation of, and of the certain day for ſuch Elections to be made in the ſaid City, Town or place aforeſaid, and to cauſe Elections to be made accordingly.</p>
+            <p n="12">
+               <pb n="12" facs="tcp:34853:7"/>XII. That at the day and place of Elections, the Sheriff of each Coun<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>y, and the ſaid Majors, Sheriffs, Bayliffs and other H<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>ad-Offi<g ref="char:EOLhyphen"/>cers within their Cities, Towns, Borough, and places reſpectively, ſhall take view of the ſaid Elections, and ſhall make return into the <hi>Chancery</hi> within Twenty-dayes after the ſaid Elections of the per<g ref="char:EOLhyphen"/>ſons elected by the greater number of Electors, under their hands and ſeals, between him on the one part, and the Electors on the other part; wherein ſhall be contained, That the perſons elected ſha<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>l not have power to alter the Government as it is hereby ſet<g ref="char:EOLhyphen"/>led in one ſingle Perſon and a Parliament.</p>
+            <p n="13">XIII. That the Sheriff, who ſhall writtingly and willingly make any f<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>ll return, or neglect his duty, ſhall incur the penalty of Two thouſand M<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>rks of lawfull Engliſh Money; the one moyety to the Lord <hi>Protector,</hi> and the other moyety to ſuch perſon as will ſue for th<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap> ſame.</p>
+            <p n="14">XIV. That all and every perſon and perſons, who have aided, ad<g ref="char:EOLhyphen"/>viſ<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>d, aſsiſted, or abetted in any War againſt the Parliament, ſince th<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap> Firſt day of <hi>January,</hi> One thouſand ſix hundred forty one (un<g ref="char:EOLhyphen"/>leſs they have been ſince in the ſervice of the Parliament, and given ſignall Teſtimo<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>y of their good Affections thereunto) ſhall be diſ<g ref="char:EOLhyphen"/>abled, and be uncapable to be elected, or to give any Vote in the El<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>ction of any Members to ſerve in the next Parliament, or in the three ſucceeding Tr<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>enniall Parliaments.</p>
+            <p n="15">XV. That all ſuch, who have adviſed, aſsiſted, or abetted the Rebellion of <hi>Ireland,</hi> ſhall be diſabled and uncapable for ever to be elected, or to give any Vote in the Election of any Member to ſerve in Parliament: as alſo all ſuch who do or ſhall profeſſe the Ro<g ref="char:EOLhyphen"/>man Catholick Religion.</p>
+            <p n="16">XVI. Tha<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap> all Votes and Elections given or made contrary, or not accord<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>ng to theſe Qualifications, ſhall be null and void: And if any perſon who is hereby made uncapable, ſhall give his Vote for Election of Members to ſerve in Parliament, ſuch perſon ſhall loſe and forfe<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>t one full years value of his reall eſtate, and one full third part of his perſonal eſtate, one moiety thereof to the <hi>Lord Protector,</hi> and the other moyetie to him, or them who ſhall ſue for the ſame.</p>
+            <p n="17">XVII. That the perſons who ſhall be elected to ſerve in Parlia<g ref="char:EOLhyphen"/>ment ſhall be ſuch (and no other then ſuch) as are perſons of known Integrity, fearing God, and of good converſation, and being of the age of One and twenty years.</p>
+            <p n="18">XVIII. That all and every perſon and perſons ſeized or poſſeſſed
+<pb n="13" facs="tcp:34853:7"/>to his own uſe, of any eſtate real<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap> or perſonall, to the value of Two hundred pounds, and not within the aforeſaid Exceptions, ſhall be ca<g ref="char:EOLhyphen"/>pable to elect Members to ſerve in Parliament for Counties.</p>
+            <p n="19">XIX. That the Chancellor, Keeper or Commiſsioners of the Great Seal, ſhall be ſworn before they enter into their Offices, truly and faithfully to <gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>ſſue forth and ſend abroad Writs of Summons to Parliaments at the times, and in the manner before expreſt And in caſe of neglect or failer, to iſſue and ſend abroad Writs accordingly, he or they ſhall for every ſuch offence, be guilty of High Treaſon, and ſuffer the pains and penalties thereof.</p>
+            <p n="20">XX. That in caſe Writs be not iſſued out, as is before expreſt, but that there be a neglect therein, fifteen dayes after the time wherein the ſame ought to be iſſued out by the Chancellor, Keeper or Com<g ref="char:EOLhyphen"/>miſsioners of the Great Seal, that then the Parliament ſhall, as often as ſuch failer ſhall happen, aſſemble and be held at <hi>Weſtmin<g ref="char:EOLhyphen"/>ſter,</hi> in the uſuall place, at the times prefixt, in manner, and by the means hereafter expreſſed, That is to ſay, That the Sheriffs of the ſe<g ref="char:EOLhyphen"/>veral and reſpective Counties, Sheriffdoms, Cities, Boroughs and places aforeſaid, within <hi>England, Wales, Scotland</hi> and <hi>Ireland,</hi> the Chancellor, Maſters and Schollars of the Univerſities of <hi>Oxford</hi> and <hi>Cambridge,</hi> and the Major and Bailiffs of the Borough of <hi>Borwick</hi> upon Tweed, and other the places aforeſaid reſpectively, ſha<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>l at the ſeveral Courts and places to be appointed, as aforeſaid, within Thirty dayes after the ſaid Fifteen dayes, cauſe ſuch Members to be choſen for their ſaid ſeveral and reſpective Counties Sheriffdoms, Univerſi<g ref="char:EOLhyphen"/>ties, Cities, Boroughs, and places aforeſaid, by ſuch perſons, and in ſuch maner, as if ſeveral and reſpective Writs of Summons to Parlia<g ref="char:EOLhyphen"/>ment under the Great Seal had iſſued and been awarded according to the Tenor aboveſaid: That if the Sheriff or other perſons authori<g ref="char:EOLhyphen"/>zed, ſhall neglect his or their duty herein; That all and every ſuch Sheriff and perſon authorized as aforeſaid, ſo neglecting his or their duty, ſhall, for every ſuch Offence, be guilty of High Treaſon, and ſhall ſuffer the pains and penalties thereof.</p>
+            <p n="21">XXI. That the Clerk, called <hi>The Clerk of the Commonwealth,</hi> in Chancery for the time being, and all others who ſhall afterwards execute that Office, to whom the Returns ſhall be made, ſhall for the next Parliament and the two ſucceeding Triennial Parliaments, the next day after ſuch Return, certifie the Names of the ſeveral perſons ſo returned, and of the places for which he and they were choſen re<g ref="char:EOLhyphen"/>ſpectively, unto the Council, who ſhall peruſe the ſaid Returns, and
+<pb n="14" facs="tcp:34853:8"/>examine whether the perſons ſo Elected and Returned be ſuch as is ag<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>eeable to the Qualifications, and not diſ<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>bled to be elected: And that every perſon and perſons being ſo duly Elected, and being appro<g ref="char:EOLhyphen"/>ved of by the major part of the Council to be perſons not diſabled, but qualified as aforeſaid, ſhall be eſteemed a Member of Parliament, and be admitted to ſit in Parliament, and not otherwiſe.</p>
+            <p n="22">XXII. That the perſons choſen and aſſembled in maner afore<g ref="char:EOLhyphen"/>ſaid, or any Sixty of them, ſhall be, and be deemed the Parliament of <hi>England, Scotland</hi> and <hi>Ireland;</hi> and the Supreme Legiſlative Power to be and reſide in the <hi>Lord Protector</hi> and ſuch Parliament, in maner herein expreſt.</p>
+            <p n="23">XXIII. That the <hi>Lord Protector,</hi> with the advice of the major part of the Council, ſhall at any other time then is before expreſt, when the neceſsities of the State ſhall require it, ſummon Parliaments in manner before expreſt, which ſhall not be Adjourned, Prorogued or Diſſolved without their own Conſent, during the firſt three Moneths of their Sitting: And in caſe of future War with any For<g ref="char:EOLhyphen"/>reign State, a Parliament ſhall be forthwith Summoned for their Ad<g ref="char:EOLhyphen"/>vice concerning the ſame.</p>
+            <p n="24">XXIV. That all Bills agreed unto by the Parliament, ſhall be pre<g ref="char:EOLhyphen"/>ſented to the <hi>Lord Protector</hi> for his conſent; and in caſe he ſhall not give his conſent thereto, within Twenty dayes after they ſhall be preſented to him, or give ſatisfaction to the Parliament within the time limited; That then, upon Declaration of the Parliament, That the <hi>Lord Protector</hi> hath not conſented nor given Satisfaction, ſuch Bills ſhall paſs into, and become Laws, although he ſhall not give his conſent thereunto; provided ſuch Bills contein nothing in them con<g ref="char:EOLhyphen"/>trary to the matters conteined in theſe Preſents.</p>
+            <p n="25">XXV. That <hi>Philip</hi> Lord Viſcount <hi>Liſle, Charles Fleetwood Eſ<g ref="char:EOLhyphen"/>quire, John Lambert</hi> Eſquire, Sir <hi>Gilbert Pickering</hi> Baronet, Sir <hi>Charles Wolſeley</hi> Baronet, Sir <hi>Anthony Aſhley-Cooper</hi> Baronet, <hi>Ed<g ref="char:EOLhyphen"/>ward Montagu</hi> Eſquire, <hi>John Disborow</hi> Eſquire, <hi>Walter Strick<g ref="char:EOLhyphen"/>land</hi> Eſquire, <hi>Henry Lawrence</hi> Eſquire, <hi>William Sydenham</hi> Eſquire, <hi>Philip Jones</hi> Eſquire, <hi>Richard Major</hi> Eſquire, <hi>Francis Rous, Phil. Skippon</hi> Eſquires, or any ſeven of them, ſhall be a Council for the purpoſes expreſt in this Writing, and upon the death, or other re<g ref="char:EOLhyphen"/>moval of any of them, the Parliament ſhall nominate ſix perſons of Ability, Integrity, and fearing God, for every one that is dead or re<g ref="char:EOLhyphen"/>moved, out of which the major part of the Council ſhall elect two, and preſent them to the <hi>Lord Protector,</hi> of which he ſhall elect one;
+<pb n="15" facs="tcp:34853:8"/>And in caſe the Parliament ſhall not nominate within Twenty dayes after notice given unto them thereof, the major part of the Council of ſhall nominate three as aforeſaid, to the <hi>Lord Protector,</hi> who out of them ſhall ſupply the vacancy; And untill this Choice be made, the remaining part of the Council ſhall execute as fully in all things, as if their number were full: And in caſe of corruption, or other miſ-carriage in any of the Council in their Truſt, the Parliament ſhall ap<g ref="char:EOLhyphen"/>point ſeven of their numbers, and the Council ſix, who, together with the Lord Chancellor, Lord Keeper, or Commiſſioners of the Great Seal for the time being, ſhall have power to hear and determin LAM ſuch corruption and miſ-carriage, and to award and inflict puniſh<g ref="char:EOLhyphen"/>ment, as the nature of the Offence ſhall deſerve; which puniſhment ſhall not be pardoned or remitted by the <hi>Lord Protector:</hi> And in the interval of Parliaments, the major part of the Council, with the con<g ref="char:EOLhyphen"/>ſent of the <hi>Lord Protector,</hi> may, for Corrupt on, or other miſ-carri<g ref="char:EOLhyphen"/>age, as aforeſaid, ſuſpend any of their number from the exerciſe of their Truſt, if they ſhall finde it juſt, untill the matter ſhall be heard and examined, as aforeſaid.</p>
+            <p n="26">XXVI. That the <hi>Lord Protector,</hi> and the major part of the Coun<g ref="char:EOLhyphen"/>cil aforeſaid, may at any time before the meeting of the next Parlia<g ref="char:EOLhyphen"/>ment, add to the Council ſuch perſons as they ſhall think fit; provi<g ref="char:EOLhyphen"/>ded the number of the Council be not made thereby to exceed One and twenty, and the <hi>Quorum</hi> to be prop<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>rtioned accordingly by the <hi>Lord Protector,</hi> and the major part of the Council.</p>
+            <p n="27">XXVII. That a conſtant yearly Revenue ſhal be raiſed, ſetled and eſtabliſht for maintaining of Ten thouſand Horſe and Dragoons, and Twenty thouſand Foot, in <hi>England, Scotland</hi> and <hi>Ireland,</hi> for the Defence and Security thereof, and alſo for a convenient number of Ships for guarding of the Seas; beſides Two hundred thouſand pounds <hi>per annum,</hi> for defraying the other neceſſary Charges for ad<g ref="char:EOLhyphen"/>miniſtration of Juſtice, and other Expences of the Government: Which Revenue ſhall be raiſed by the Cuſtoms, and ſuch other ways and means as ſhall be agreed upon by the <hi>Lord Protector</hi> and Coun<g ref="char:EOLhyphen"/>cil, and ſhall not be taken away or diminiſht, nor the way agreed upon for raiſing the ſame altered, but by the conſent of the <hi>Lord Protector</hi> and the Parliament.</p>
+            <p n="28">XXVIII. That the ſaid yearly Revenue ſhall be paid into the publ<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>ck Treaſury, and ſhall be iſſued out for the Uſes aforeſaid.</p>
+            <p n="29">XXIX. That in caſe there ſhall not be cauſe hereafter to keep up ſo great a Defence at Land or Sea, but that there be an abatement
+<pb n="16" facs="tcp:34853:9"/>made thereof; the Money which w<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>ll be ſaved thereby, ſhall remain in bank for the Publick Service, and not be employed to any other uſe but by conſent of Parliament; or in the intervals of Parliament, by the <hi>Lord Protector</hi> and major part of the Council.</p>
+            <p n="30">XXX. That the raiſing of Money for defraying the Charge of preſent extraordinary Forces both at Land and Sea, in reſpect of the preſent Wars, ſhall be by conſent in Parliament, and not otherwiſe; ſave onely that the Lord Protector, with the conſent of the major part of the Councill, for preventing the Diſorders and Dangers which may otherwiſe fall out both at Sea and Land, ſhall have power, un<g ref="char:EOLhyphen"/>till the meeting of the firſt Parliament, to raiſe Money for the purpo<g ref="char:EOLhyphen"/>ſes aforeſaid, and alſo to make Laws and Ordinances for the Peace and Welfare of theſe Nations where it ſhall be neceſſary, which ſhall be binding and in force, untill Order ſhall be taken in Parliament con<g ref="char:EOLhyphen"/>cerning the ſame.</p>
+            <p n="31">XXXI. That the Lands, Tenements, Rents, Royalties, Juriſdictions and Hereditaments which remain yet unfold or undiſpoſed of by Act or Ordinance of Parliament, belonging to the Commonwealth, (ex<g ref="char:EOLhyphen"/>cept the Foreſts and Chaſes, and the Honors and Manors belonging to the ſame; the Lands of the Rebels in <hi>Ireland,</hi> lying in the four Coun<g ref="char:EOLhyphen"/>ties of <hi>Dublin, Cork, Kildare,</hi> and <hi>Katerlaugh;</hi> the Lands forfeited by the People of <hi>Scotland</hi> in the late Wars; and alſo the Lands of Pa<g ref="char:EOLhyphen"/>piſts and Delinquents in <hi>England,</hi> who have not yet compounded) ſhall be veſted in the Lord <hi>Protector;</hi> To hold to him and his Suc<g ref="char:EOLhyphen"/>ceſſors, <hi>Lord Protectors</hi> of theſe Nations, and ſhall not be aliened, but by conſent in Parliament: And all Debts, Fines, Iſſues, Amer<g ref="char:EOLhyphen"/>ciaments, Penalties and Profits, certain and caſual, due to the Keep<g ref="char:EOLhyphen"/>ers of the Liberties of <hi>England</hi> by Authority of Parliament, ſhall be due to the <hi>Lord Protector,</hi> and be payable into his Publick Receipt, and ſhall be recovered and proſecuted in his Name.</p>
+            <p n="32">XXXII. That the Office of the <hi>Lord Protector</hi> over theſe Nati<g ref="char:EOLhyphen"/>ons, ſhall be Elective, and not Hereditary; and upon the death of the <hi>Lord Protector,</hi> an other fit Perſon ſhall be forthwith elected to ſucceed Him in the Government, which Election ſhall be by the Council; who, immediatly upon the death of the <hi>Lord Protector,</hi> ſhall aſſemble in the Chamber where they uſually fit in Council, and having given notice to all their number, of the cauſe of their aſſem<g ref="char:EOLhyphen"/>bling, ſhall (being thirteen at leaſt preſent) proceed to the Election; and before they depart out of the ſaid Chamber, ſhall elect a fit Per<g ref="char:EOLhyphen"/>ſon to ſucceed in the Government, and forthwith cauſe Procama<g ref="char:EOLhyphen"/>tion
+<pb n="17" facs="tcp:34853:9"/>thereof to be made in all the three Nations as ſhall be requiſite: And the Perſon that they, or the major part of them ſhall elect, as aforeſaid, ſhall be, and ſhall be taken to be <hi>Lord Protector</hi> over theſe Nations of <hi>England, Scotland,</hi> and <hi>Ireland,</hi> and the Dominions thereto belonging: Provided, that none of the Children of the late King, nor any or his Line or Fam<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>ly, be elected to be <hi>Lord Protector</hi> or other Chief Magiſtrate over theſe Nations, or any the Domi<g ref="char:EOLhyphen"/>nions thereto belonging. And until the aforeſaid Election be paſt, the Council ſhall take care of the Government, and adminiſter in all things as fully as the <hi>Lord Protector,</hi> or the <hi>Lord Protector</hi> and Council are enabled to do.</p>
+            <p n="33">XXXIII. That OLIVER CROMWELL, Captain General of the Forces of <hi>England, Scotland,</hi> and <hi>Ireland,</hi> ſhall be, and is hereby declared to be LORD PROTECTOR of the Commonwealth of <hi>Eng<g ref="char:EOLhyphen"/>land, Scotland,</hi> and <hi>Ireland,</hi> and the Dominions thereto belonging, for his life.</p>
+            <p n="34">XXXIV. That the Chancellor, Keeper or Commiſſioners of the Great Seal, the Treaſurer, Admiral, Chief Governors of <hi>Ireland</hi> and <hi>Scotland,</hi> and the Chief Juſtices of both the Benches, ſhall be choſen by the approbation of Parliament; and in the intervals of Parliament, by the approbation of the major part of the Council, to be afterwards approved by the Parliament.</p>
+            <p n="35">XXXV. That the Chriſtian Religion, conteined in the Scriptures, be held forth and recomended as the Publick Profeſſion of theſe Nations; and that as ſoon as may be, a proviſion leſs ſubject to ſcruple and contention, and more certain than the preſent, be made for the Encouragement and Maintenance of able and painful Teachers, for in<g ref="char:EOLhyphen"/>ſtructing the People, and for diſcovery and confutation of Error, Hereſie, and whatever is contrary to ſound Doctrine: And that, until ſuch Proviſion be made, the preſent Maintenance ſhall not be taken away nor impeached.</p>
+            <p n="36">XXXVI. That to the publick Profeſſion held forth, none ſhall be compelled by penalries or otherwiſe, but that Endeavors be uſed to win them by ſound Doctrine, and the Example of a good Conver<g ref="char:EOLhyphen"/>ſation.</p>
+            <p n="37">XXXVII. That ſuch as profeſs Faith in God by Jeſus Chriſt, (though differing in judgment from the Doctrine, Worſhip or Diſ<g ref="char:EOLhyphen"/>cipline publickly held forth) ſhall not be reſtrained from, but ſhall be protected in the profeſſion of the Faith, and exerciſe of their Religion; ſo as they abuſe not this Liberty, to the civil Injury of others, and to the actual Diſturbance of the Publick Peace on their
+<pb n="18" facs="tcp:34853:10"/>parts: Provided, this Liberty be not extended to Popery or Prelacy, nor to ſuch as (under the profeſſion of Chriſt) hold forth and pra<g ref="char:EOLhyphen"/>ctiſ<gap reason="illegible" resp="#OXF" extent="2 letters">
+                  <desc>••</desc>
+               </gap> Licentiouſneſs.</p>
+            <p n="38">38 XXXVIII. That all Laws, Statutes, Ordinances and Clauſes in any Law, Statute and Ordinance to the contrary of the aforeſaid Li<g ref="char:EOLhyphen"/>berty ſhall be eſteemed as null and void.</p>
+            <p n="39">XXXIX. That the Acts and Ordinances of Parliament; made for the Sale or other Diſpoſition of the Lands, Rents and Here<g ref="char:EOLhyphen"/>ditaments of the late King, Queen and Prince, of Arch-Biſhops and B<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>ſhops, <hi>&amp;c.</hi> Deans and Chapters, the Lands of Delinquents, and Fo<gap reason="illegible" resp="#OXF" extent="2 letters">
+                  <desc>••</desc>
+               </gap>ſt Lu<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>ds, or any of them; or of any other Lands, Tene<g ref="char:EOLhyphen"/>ments, Rents and Hereditaments belonging to the Commonwealth, ſhall no way be impeached or made invalid; but ſhall remain good and firm: And that the Securities given by Act and Ordinance of Parliament for any ſum or ſums of Money, by any of the ſaid Lands, the Excize, or by any other publick Revenue; and alſo the Securities given by the Publick Fa<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>th of the Nation; and the Engagement of the Publ<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>ck Faith for ſatisfaction of Debts and Damages, ſhall re<g ref="char:EOLhyphen"/>main firm and good, and not be made void and invalid upon any pretence whatſoever.</p>
+            <p n="40">XL. That the Articles given to, or made with the Enemy, and af<g ref="char:EOLhyphen"/>terwards confirmed by Parliament, ſhall be performed and made good to the perſons concerned therein. And that ſuch Appeals, as were depending in the laſt Parliament, for relief concerning Bills of Sale of Delinquents Eſtates, may be heard and determined the next Parliament, Any thing in this Writing, or otherwiſe to the contrary notwithſtanding.</p>
+            <p n="41">XLI. That every ſucceſſive <hi>Lord Protector</hi> over theſe Nations, ſhall take and ſubſcribe a Solemn Oath, in the preſence of the Coun<g ref="char:EOLhyphen"/>cil, and ſuch others as they ſhall call to them, That he will ſeek the Peace, Quiet, and Welfare of theſe Nations, cauſe Law and Juſtice to be equally adminiſtred and that he will not violate or infringe the matters and things contained in this Writing; and in all other things will to his power, and to the beſt of his underſtand<gap reason="illegible" resp="#OXF" extent="1 letter">
+                  <desc>•</desc>
+               </gap>ng, govern theſe Nations, according to the Laws, Statutes and Cuſtoms.</p>
+            <p n="42">XLII. That each perſon of the Council ſhall, before they enter upon their Truſt, take, and ſubſcribe an Oath, That they will be true and faithful in their Truſt, according to the beſt of their know<g ref="char:EOLhyphen"/>ledge; And, that in the Election of every ſucceſſive <hi>Lord Protector,</hi> they ſhall proceed therein impartially, and do nothing therein for any promiſe, fear, favor or reward.</p>
+            <div type="part">
+               <pb n="19" facs="tcp:34853:10"/>
+               <head>The OATH taken by his Highneſs <hi>Oliver Cromwell,</hi> LORD PROTECTOR.</head>
+               <p>WHereas the major part of the laſt Par<g ref="char:EOLhyphen"/>liament (judging that their ſitting any longer, as then conſtituted, would not be for the good of this Common-wealth) did diſſolve the ſame, and by a Writing under their Hands, dated the <hi>12.</hi> day of this inſtant <hi>December,</hi> re<g ref="char:EOLhyphen"/>ſigned unto Mee their Powers and Authori<g ref="char:EOLhyphen"/>ties; And whereas it was neceſſary thereupon, That ſome ſpeedy courſe ſhould be taken for the ſettlement of theſe Nations upon ſuch a Baſis and foundation, as, by the bleſsing of God, might be laſting, ſecure Property, and anſwer thoſe great Ends of Religion and Li<g ref="char:EOLhyphen"/>berty, ſo long contended for; And upon full and mature Conſideration had of the Form of Go<g ref="char:EOLhyphen"/>vernment hereunto annexed, being ſatisfied that the ſame, through Divine aſsiſtance, may anſwer the Ends afore-mentioned; And ha<g ref="char:EOLhyphen"/>ving alſo been deſired, and adviſed, aſwell by
+<pb n="20" facs="tcp:34853:11"/>ſeveral perſons of Intereſt and Fidelity in this Commonwealth, as the Officers of the Army, to take upon mee the Protection and Govern<g ref="char:EOLhyphen"/>ment of theſe Nations in the maner expreſſed in the ſaid Form of Government, I have ac<g ref="char:EOLhyphen"/>cepted thereof, and do hereby declare my Ac<g ref="char:EOLhyphen"/>ceptance accordingly. And do promiſe in the preſence of God, That I will not violate, or in<g ref="char:EOLhyphen"/>fringe the matters and things contained there<g ref="char:EOLhyphen"/>in, but, to my power, obſerve the ſame, and cauſe them to be obſerved; And ſhal in al other things to the beſt of my underſtanding, govern theſe Nations according to the Laws, Statutes and Cuſtoms, ſeeking their Peace, and cauſing Ju<g ref="char:EOLhyphen"/>ſtice and Law to be equally adminiſtred.</p>
+               <closer>
+                  <signed>O. CROMWELL.</signed>
+               </closer>
+               <postscript>
+                  <p>Oliver Cromwel, <hi>Captain General of all the Forces of this Commonwealth, and now delared</hi> Lord Protector <hi>thereof, did this ſixteenth day of</hi> December, <hi>1653. ſign this Writing, and ſolemnly promiſe as is therein contained, in the preſence of the Lords Commiſſioners of the Great Seal of</hi> England, <hi>who adminiſtred the ſame Oath, and of the Lord Maior and Aldermen of the City of</hi> London, <hi>divers of the Judges of the Land, the Officers of State and Army, and many other perſons of quality.</hi>
+                  </p>
+               </postscript>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
