@@ -39,7 +39,7 @@
 | [`17_WAVE12_STALE_STATUS_AND_SWEEP.md`](17_WAVE12_STALE_STATUS_AND_SWEEP.md) | Волна XII: сквозная проверка; мёртвый `LOCATOR_HOLD` в статусах тезисов | готово |
 | [`18_WAVE13_DRIVE_PDF_AND_LEDGER_EVIDENCE.md`](18_WAVE13_DRIVE_PDF_AND_LEDGER_EVIDENCE.md) | Волна XIII: Drive PDF проверен (запись верна); свидетельство Ассамблеи в C-01/C-06 | готово |
 | [`19_WAVE14_DORT_REJECTIO_AND_HELVETIC.md`](19_WAVE14_DORT_REJECTIO_AND_HELVETIC.md) | Волна XIV: латинский Rejectio II; Второе Гельветическое «pro omnibus et singulis» с 1 Ин. 2:2 | готово |
-| [`20_WAVE15_CORRECTION_OF_WAVE14.md`](20_WAVE15_CORRECTION_OF_WAVE14.md) | Волна XV: **поправка** — Rejectio II и с. 577 уже были в корпусе; волна XIV была переоткрытием. Плюс §D: `sync PASS` был артефактом выноса глав из `drafts/`; §E: 23 битые ссылки на несуществующие протоколы, ложный локатор Девенанта, `DV-1` понижен; §F: `/page/N` ≠ печатная N — 7 адресов пересчитаны; §G: CCEL 10/10 верны (отрицательный результат записан) | готово |
+| [`20_WAVE15_CORRECTION_OF_WAVE14.md`](20_WAVE15_CORRECTION_OF_WAVE14.md) | Волна XV: **поправка** — Rejectio II и с. 577 уже были в корпусе; волна XIV была переоткрытием. Плюс §D: `sync PASS` был артефактом выноса глав из `drafts/`; §E: 23 битые ссылки на несуществующие протоколы, ложный локатор Девенанта, `DV-1` понижен; §F: `/page/N` ≠ печатная N — 7 адресов пересчитаны; §G: CCEL 10/10 верны; §H–I: newadvent 11/11, 1689 и CRCNA — адреса верны (отрицательные результаты записаны) | готово |
 | [`patches/AGENT7_PR309_EDITORIAL_FULL.patch`](patches/AGENT7_PR309_EDITORIAL_FULL.patch) | Полный диф со счётчиками (22 файла) — воспроизведение один-в-один | готово |
 
 ---
