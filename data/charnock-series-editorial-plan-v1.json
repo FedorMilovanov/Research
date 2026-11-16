@@ -8,9 +8,9 @@
   "baselineReceipt": "data/charnock-handoff-receipt-v1.json",
   "custodyBoundary": "Wave40receipt describes its immutable source packet,not the revised00/16. Current editorial revision is not yet transferred/independently received.",
   "expectedChangedPacketMembers": [
-    "БИОГРАФИИ/Стивен CHARНОК/00_README_AND_NAVIGATION.md",
-    "БИОГРАФИИ/Стивен CHARНОК/04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
-    "БИОГРАФИИ/Стивен CHARНОК/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md"
+    "БИОГРАФИИ/Стивен Чарнок/00_README_AND_NAVIGATION.md",
+    "БИОГРАФИИ/Стивен Чарнок/04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
+    "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md"
   ],
   "evidenceClass": "C",
   "accessState": "FULL_OBJECT_VERIFIED",

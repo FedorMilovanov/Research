@@ -449,7 +449,8 @@ def check(plan, root=ROOT):
         else:
             changed.append(name)
     expected = ['БИОГРАФИИ/Стивен Чарнок/00_README_AND_NAVIGATION.md',
-                'БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md']
+                'БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md',
+                'БИОГРАФИИ/Стивен Чарнок/04_CHARACTER_MINISTRY_AND_THEOLOGY.md']
     if sorted(plan['expectedChangedPacketMembers']) != sorted(expected) or sorted(changed) != sorted(expected):
         raise ValueError('Unexpected changes to the preserved source packet')
     architecture = (root / expected[1]).read_text()
