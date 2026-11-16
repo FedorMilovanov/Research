@@ -10,7 +10,7 @@
 
 Ниже перечислены факты и документы, которые были **получены, прочитаны или проверены впервые** в рамках данного исследования (vols 04, 05, 06, 08, 15, 16 полностью; vols 01, 03 — частично/повторно) и которые либо не присутствовали в Research до начала работы, либо были известны только по пересказу и теперь подтверждены первичным источником.
 
-Для каждой находки указано: **что nuevo**, **где зафиксировано в Research**, **первоисточник с локатором**, **почему это значимо**.
+Для каждой находки указано: **что зафиксировано**, **где зафиксировано в Research**, **первоисточник с локатором**, **почему это значимо**.
 
 ---
 
@@ -18,7 +18,7 @@
 
 ### 1.1. Завещание Чарнока, 25 июля 1680
 
-**Что nuevo:** Первое named living relative в корпусе — «the widow Ann Sykes», кузина и исполнительница завещания; £111, mostly to female relatives; will mentions neither wife nor children. Завещание составлено за два дня до смерти (27 июля 1680).
+**Что:** Первое named living relative в корпусе — «the widow Ann Sykes», кузина и исполнительница завещания; £111, mostly to female relatives; will mentions neither wife nor children. Завещание составлено за два дня до смерти (27 июля 1680).
 
 **Где в Research:** Том 01 §2.10; том 02 §2 (BCD-32 EXCLUDE, BCD-33 EXCLUDE); том 00 (Priorities, пункт об очереди).
 
@@ -28,7 +28,7 @@
 
 ### 1.2. Сертификат в пользу Edward Veal, 31 декабря 1661
 
-**Что nuevo:** Прочитан напрямую в Calamy, *A Continuation of the Account…*, 1727, стр. 83–84 (Internet Archive `continuationofac01cala`), а не через пересказ McCosh. Чарнок подписывает себя «formerly Minister at Warbouroughs, and late Lecturer at Christ Church, Dublin». Слово «late» — к 1661 году он уже не занимал дублинских постов.
+**Что:** Прочитан напрямую в Calamy, *A Continuation of the Account…*, 1727, стр. 83–84 (Internet Archive `continuationofac01cala`), а не через пересказ McCosh. Чарнок подписывает себя «formerly Minister at Warbouroughs, and late Lecturer at Christ Church, Dublin». Слово «late» — к 1661 году он уже не занимал дублинских постов.
 
 **Где в Research:** Том 01 §2.6, §2.6A, §2.6B.
 
@@ -38,7 +38,7 @@
 
 ### 1.3. Место смерти — дом Ричарда Тиммса, глазир, приход Уайтчепел
 
-**Что nuevo:** Полный вход Wood (вход [429], p. 491) получен из EEBO-TCP `A71277.0001.001` и прочитан впервые. Wood сообщает: «He died in the house of one Rich. Tymms a Gla∣zier in the Parish of White Chappel near London». Это место смерти, которого нет ни в одном пересказе (McCosh, Symington, DNB).
+**Что:** Полный вход Wood (вход [429], p. 491) получен из EEBO-TCP `A71277.0001.001` и прочитан впервые. Wood сообщает: «He died in the house of one Rich. Tymms a Gla∣zier in the Parish of White Chappel near London». Это место смерти, которого нет ни в одном пересказе (McCosh, Symington, DNB).
 
 **Где в Research:** Том 01 §2.7; том 02 §2 (BCD-36 ATTRIBUTED).
 
@@ -46,19 +46,19 @@
 
 **Почему значимо:** Чарнок умер не в Crosby Hall, а в чужом доме в Уайтчепеле. Wood не объясняет, был ли он там жильцом или гостем. Это уточняет географию последних часов жизни.
 
-### 1.4. Погребение — конфликт 30 июля vs 7 августа (Chester 1882)
+### 1.4. Погребение — 30 июля 1680 (Chester 1882, стр. 265)
 
-**Что nuevo:** Приходской реестр St Michael Cornhill (Chester, 1882, стр. 264–265, индекс «Stephen, 265») подтверждает погребение «Charnock, minister» 7 августа 1680. Это создаёт конфликт с другими testemониями о 30 июля.
+**Что:** Приходской реестр St Michael Cornhill (Chester, 1882, стр. 264–265) подтверждает погребение «Charnock, minister» 30 июля 1680 года под шпилем церкви («under the steeple»). Это согласуется со смертью 27 июля 1680.
 
 **Где в Research:** Том 00 (CONFLICT-10 substantially resolved); том 02 §2 (BCD-38).
 
-**Первоисточник:** J. L. Chester, *The Parish Registers of St. Michael, Cornhill* (1882), стр. 264–265.
+**Первоисточник:** J. L. Chester, *The Parish Registers of St. Michael, Cornhill* (1882), стр. 264–265 (изображение печатного регистра).
 
-**Почему значимо:** Две даты погребения (30 июля и 7 августа) не согласованы. CONFLICT-10 substantially resolved для даты смерти (27 июля), но дата погребения остаётся конфликтной.
+**Почему значимо:** Погребение 30 июля 1680 подтверждено первичным источником. Запись о погребении 7 августа 1680 на той же странице регистра относится к James Kelke, а не к Чарноку; вторая версия не является равноправной альтернативой.
 
 ### 1.5. «The old is better» — единственное direct speech Чарнока
 
-**Что nuevo:** Единственное достоверно зафиксированное высказывание Чарнока в прямой речи: «the old is better» (Luke 5:39). Сообщено эдикторами в предисловии 1682 года.
+**Что:** Единственное достоверно зафиксированное высказывание Чарнока в прямой речи: «the old is better» (Luke 5:39). Сообщено эдикторами в предисловии 1682 года.
 
 **Где в Research:** Том 01 §2.7 (добавление 2026-10-25, том 08 §4A); том 08.
 
@@ -68,7 +68,7 @@
 
 ### 1.6. Портрет Чарнока — патристический компилят, не описание Джонсона
 
-**Что nuevo:** Знаменитый «характер» Чарнока («venerable and grave, like an aged person from his youth»), который McCosh и Symington приводили как описание Джонсона, на самом деле — патристический commonplace, который Джонсон заимствовал из сочинений Отцов Церкви. Джонсон сам пишет: «taken out of several of the Fathers Writings».
+**Что:** Знаменитый «характер» Чарнока («venerable and grave, like an aged person from his youth»), который McCosh и Symington приводили как описание Джонсона, на самом деле — патристический commonplace, который Джонсон заимствовал из сочинений Отцов Церкви. Джонсон сам пишет: «taken out of several of the Fathers Writings».
 
 **Где в Research:** Том 01 §2.1 (Johnson); том 00 (Разрешение 2026-10-25 (2)).
 
@@ -78,7 +78,7 @@
 
 ### 1.7. Транскрибаторы рукописей — Mr. J. Wichens и Mr. Ashton
 
-**Что nuevo:** Новые лица, непосредственные переписчики рукописей Чарнока, названы по именам в сноске *1.1 предисловия 1682 года. Ни Calamy, ни McCosh, ни Symington, ни DNB этих имён не называют.
+**Что:** Новые лица, непосредственные переписчики рукописей Чарнока, названы по именам в сноске *1.1 предисловия 1682 года. Ни Calamy, ни McCosh, ни Symington, ни DNB этих имён не называют.
 
 **Где в Research:** Том 01 §2.7 (добавление 2026-10-25, том 08 §2A); том 00 (Priorities, пункт 25).
 
@@ -88,7 +88,7 @@
 
 ### 1.8. Чарнок не был популярен при жизни (Calamy 1713)
 
-**Что nuevo:** Calamy 1713, стр. 56: Чарнок «much admir'd as a Preacher by the more Judicious part of Mankind; but not Popular or much follow'd, because of his Disadvantagious Way of Reading with the help of a Glass». Причина уточнена Calamy 1727, стр. 81: в последние годы память начала изменять, он читал проповеди с бумаги.
+**Что:** Calamy 1713, стр. 56: Чарнок «much admir'd as a Preacher by the more Judicious part of Mankind; but not Popular or much follow'd, because of his Disadvantagious Way of Reading with the help of a Glass». Причина уточнена Calamy 1727, стр. 81: в последние годы память начала изменять, он читал проповеди с бумаги.
 
 **Где в Research:** Том 01 §2.9, §2.9B, §2.9F.
 
@@ -100,9 +100,9 @@
 
 ## 2. Богословские находки
 
-### 2.1. Генри Мора ×2 в фолианте 1682 — первое документированное философское влияние
+### 2.1. Генри Мора ×2 в фолианте 1682 — первое документированное философское цитирование
 
-**Что nuevo:** Чарнок цитирует Генри Мора дважды в главном труде: стр. 261 (сноска 1.98, omniscience) и стр. 329 (сноска 1.113, знание; рекомендует *Exposition of the Seven Churches* «every sober Romanist»). Это первое документированное философское влияние на главный труд Чарнока.
+**Что:** Чарнок цитирует Генри Мора дважды в главном труде: стр. 261 (сноска 1.98, omniscience) и стр. 329 (сноска 1.113, знание; рекомендует *Exposition of the Seven Churches* «every sober Romanist»). Это первое документированное философское цитирование в главном труде Чарнока — цитирование, а не доказанное влияние: цитата какого-либо автора не sama по себе подтверждает исторического влияния, личного контакта или полного богословского согласия.
 
 **Где в Research:** Том 04 §0A; том 00 (Key Results).
 
@@ -112,7 +112,7 @@
 
 ### 2.2. Попеч. 1.108 — Ноябрь 1678, Popish Plot
 
-**Что nuevo:** Единственная в корпусе проповедь Чарнока с точным месяцем: «A DISCOURSE UPON Gods Knowledg» (Пс. 147:5), сноска 1.108, стр. 328: «Nov. 1678. When the Popish Plot was discover'd.» Страница 329 содержит антипапскую апокалиптику (Фиатира = «the Romish State», Иезевель = «a whorish Church»).
+**Что:** Единственная в корпусе проповедь Чарнока с точным месяцем: «A DISCOURSE UPON Gods Knowledg» (Пс. 147:5), сноска 1.108, стр. 328: «Nov. 1678. When the Popish Plot was discover'd.» Страница 329 содержит антипапскую апокалиптику (Фиатира = «the Romish State», Иезевель = «a whorish Church»).
 
 **Где в Research:** Том 02 §2; том 04 §0K.
 
@@ -122,7 +122,7 @@
 
 ### 2.3. Пятое ноября — дискурс Supplement pp.42–55
 
-**Что nuevo:** Антипапская апокалиптика с typology Egypt=Rome в дискурсе Supplement 1683.
+**Что:** Антипапская апокалиптика с typology Egypt=Rome в дискурсе Supplement 1683.
 
 **Где в Research:** Том 04 (Supplement 1683, все 8 дискурсов прочитаны).
 
@@ -132,7 +132,7 @@
 
 ### 2.4. Church of England identity — двойное подтверждение
 
-**Что nuevo:** Формула «true Son of the Church of England, in that sound Doctrine laid down in the Articles of Religion, and Taught by our most famous ancient Divines and Reformers» встречается у Adams & Veal (1680/1684) и независимо у Wood (1691, entrada [429], p. 491).
+**Что:** Формула «true Son of the Church of England, in that sound Doctrine laid down in the Articles of Religion, and Taught by our most famous ancient Divines and Reformers» встречается у Adams & Veal (1680/1684) и независимо у Wood (1691, entrada [429], p. 491).
 
 **Где в Research:** Том 01 §2.2 (Adams & Veal); том 01 §2.7 (Wood); том 05 (CLAIM-06 narrowed).
 
@@ -146,7 +146,7 @@
 
 ### 3.1. Пять sermon'ов Чарнока в элегии 1680
 
-**Что nuevo:** Анонимная элегия 1680 года (`A39134`) содержит пять аттрибуций sermon'ов Чарнока по библейским текстам: 2 Пар. 16:9, Ин. 16:9, Ин. 17:3, Пс. 14:1, Наум 1:3. Это единственный contemporaneous перечень sermon'ов Чарнока по библейским текстам.
+**Что:** Анонимная элегия 1680 года (`A39134`) содержит пять аттрибуций sermon'ов Чарнока по библейским текстам: 2 Пар. 16:9, Ин. 16:9, Ин. 17:3, Пс. 14:1, Наум 1:3. Это единственный contemporaneous перечень sermon'ов Чарнока по библейским текстам.
 
 **Где в Research:** Том 01 §2.11; том 02 §2.
 
@@ -156,7 +156,7 @@
 
 ### 3.2. Наум 1:3 — тема последней проповеди (два независимых поэта)
 
-**Что nuevo:** Тема последней проповеди Чарнока — терпение Божье (Наум 1:3) — подтверждена двумя разными поэтами 1680 года независимо друг от друга:
+**Что:** Тема последней проповеди Чарнока — терпение Божье (Наум 1:3) — подтверждена двумя разными поэтами 1680 года независимо друг от друга:
 - *New Poems* (A52960): «To anger he was slow for our sins past. / Upon which subject Charnock preacht the last»
 - Элегия Cockerill (A39134): «he clos'd with Patience», сноска «Upon Nabum 1.3»
 
@@ -168,7 +168,7 @@
 
 ### 3.3. «Fowler's place» — единственное указание на предшественника
 
-**Что nuevo:** Анонимный поэт 1680 года (*New Poems*, A52960): «To Fowler's place God call'd him to succeed». Единственное в отделе указание на то, что Чарнок сменил конкретного человека в лондонской должности. Ни Johnson, ни Adams & Veal, ни Wood, ни Calamy предшественника не называют.
+**Что:** Анонимный поэт 1680 года (*New Poems*, A52960): «To Fowler's place God call'd him to succeed». Единственное в отделе указание на то, что Чарнок сменил конкретного человека в лондонской должности. Ни Johnson, ни Adams & Veal, ни Wood, ни Calamy предшественника не называют.
 
 **Где в Research:** Том 01 §2.8; том 02 §2 (BCD-26 EXCLUDE — идентификация Fowler'а не установлена); том 00 (Priorities, пункт 9).
 
@@ -178,7 +178,7 @@
 
 ### 3.4. Причина ухода из Ирландии — «не за преступления, а из-за перемен времен»
 
-**Что nuevo:** «Did then reduce him not for any crimes, / But by an alteration of the times» (*New Poems*, 1680). Самое раннее печатное объяснение ухода Чарнока из Ирландии, прямо отрицающее его вину.
+**Что:** «Did then reduce him not for any crimes, / But by an alteration of the times» (*New Poems*, 1680). Самое раннее печатное объяснение ухода Чарнока из Ирландии, прямо отрицающее его вину.
 
 **Где в Research:** Том 01 §2.8; том 02 §2.
 
@@ -188,7 +188,7 @@
 
 ### 3.5. «The Sinfulness and Cure of Thoughts» — единственная прижизненная публикация
 
-**Что nuevo:** Проповедь на Быт. 6:5 вошла в *Supplement to the Morning Exercise at Cripplegate* под инициалами «S. C.». Это единственная прижизненная публикация Чарнока.
+**Что:** Проповедь на Быт. 6:5 вошла в *Supplement to the Morning Exercise at Cripplegate* под инициалами «S. C.». Это единственная прижизненная публикация Чарнока.
 
 **Где в Research:** Том 00 (Priorities, пункт 1); том 02 §2 (Calamy 1713: «publish'd nothing whilst he liv'd, but a Sermon of The Sinfulness and Cure of Thoughts»); том 10 (CHARN_PRACT_ATHEISM_001).
 
