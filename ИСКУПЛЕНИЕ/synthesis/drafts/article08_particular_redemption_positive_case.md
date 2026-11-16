@@ -183,7 +183,7 @@
 
 ### Исследовательские локаторы, аудит и статус чтения
 
-- **Библия и греческие ограничения:** [03_BIBLICAL_CORPUS](../../03_BIBLICAL_CORPUS_AND_REDEMPTION_VOCABULARY.md) §§III–V; [12_HARD_TEXTS](../../12_HARD_TEXTS_EXTENT_CARDS.md) H1–H9, §11; [NT/15 на Ин. 11:52](../../nt/15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md). Ссылки — на проверенные исследовательские карты; полный новый текстологический аппарат не заявляется.
+- **Библия и греческие ограничения:** [03_BIBLICAL_CORPUS](../../03_BIBLICAL_CORPUS_AND_REDEMPTION_VOCABULARY.md) §§III–V; [12_HARD_TEXTS](../../12_HARD_TEXTS_EXTENT_CARDS.md) H1–H11; [NT/15 на Ин. 11:52](../../nt/15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md). Ссылки — на проверенные исследовательские карты; полный новый текстологический аппарат не заявляется.
 - **Структура позиций:** [карта P1–P8](../../04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md), [текущая статья №7](article07_extent_questions_models_and_primary_texts.md) и [конфликт-леджер](../02_CONFLICT_LEDGER.md), в особенности C-01/C-09/C-11/C-16/C-20/C-23/C-25.
 - **Прокопенко, получающая вера, двойное взыскание и широкий ответ:** [P17 §§1–4, 17–27](../../../docs/research/atonement/17_quote_mining_and_theological_equivocation.md), [P05](../../../docs/research/atonement/05_pactum_salutis_and_double_jeopardy.md). Установленная собственным PDF дарованная вера — не открытая атрибуция, но систематическое заключение ещё спорно.
 - **Историческая конфессиональная опора:** [Дорт Head II](https://www.crcna.org/welcome/beliefs/confessions/canons-dort), [1689 гл. 8](https://the1689.org/chapters/8); это собственные тексты исповеданий. Современные интерпретации Девенанта, Шульца, Уэра, Пайпера и Риккарди здесь не цитируются и не выдаются за полные прочитанные главы.

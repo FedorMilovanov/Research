@@ -519,3 +519,17 @@ P93 исправлял текст, введённый P35; `--check`/`--apply` �
 ### 18.4. Гейты этого не ловят
 
 Они проверяют согласованность чисел, а не новизну утверждений. **Правило:** перед волной — `grep` по ключевой формуле задачи в `15_`, `02_CONFLICT_LEDGER.md` и `00_CURRENT_AUTHORITY`.
+
+### 18.5. Третья находка: «sync PASS» был артефактом выноса глав
+
+`atonement_sync_check.py` сверяет число файлов в `drafts/` с `draftCount` **чужого** снимка (`synchronization_2026-11-02.json`: 13, ветка `arena/d7043ba0-research`). В дереве 31 файл. Чтобы получить PASS, главы выносили в `/tmp` и возвращали.
+
+Гейт не проверял мои главы — он их не видел. PASS в журналах волн XI–XV относится к дереву без моих глав. Подробности и таблица проверок — [`20_WAVE15_CORRECTION_OF_WAVE14.md` §D](20_WAVE15_CORRECTION_OF_WAVE14.md). `draftCount` не меняю: это область чужой ланы.
+
+### 18.6. Волна XV: 23 битые ссылки и один ложный локатор
+
+В главах было **23 ссылки на `.md`-файлы, которых никогда не существовало** (`AT010_…`, `WAVE1_DABNEY…`, `07_LIVING_EXECUTION_BOARD…`, `20_SCHOLARLY_SERIES…`; `git log --all --diff-filter=A` — ноль). Гейт `crossref` их не видел: он проверяет файл только при наличии `§` в строке, а 16 из 23 шли без `§`.
+
+Отдельно: `article11` утверждал локатор «Девенант, *On the Death of Christ*, с. 392–398» со ссылкой на `17_quote_mining…md`, где Девенанта нет. Заменён на реальный [*De Morte Christi* VI §75](https://viapatrum.org/works/davenant-dissertationes-duae/75/).
+
+Следствие: вердикт `DV-1` в `01_` стоял на файле-призраке и понижен с `CONFIRMED` до `NOT-CONFIRMED-BY-MISSING-PROTOCOL`. Подробности — [`20_WAVE15_CORRECTION_OF_WAVE14.md` §E](20_WAVE15_CORRECTION_OF_WAVE14.md).
