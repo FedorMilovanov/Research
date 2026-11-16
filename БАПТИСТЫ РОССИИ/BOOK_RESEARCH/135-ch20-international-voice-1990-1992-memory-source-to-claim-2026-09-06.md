@@ -924,3 +924,33 @@ The strongest ending is:
 > **The Soviet night ended in stages. Long before the state disappeared, believers had already moved their testimony across borders; external churches, archivists and governments translated that testimony into public records and political questions. In 1990 the legal order itself changed. In 1991 the common state space broke apart and a new law named religiously motivated Soviet coercion as political repression. In 1992 Baptist structures adapted to a landscape of independent states. What survives now is not one uncontested story but an archive of competing church voices, state records, exile testimony and later memory — each of which must be read in its own evidentiary class.**
 
 That is a documentary ending rather than a triumphalist one.
+
+---
+
+## 16 ноября 2026 — Source-to-prose verification, Drive and book Chapter 20
+
+Литературная рукопись: [«После ночи: возвращение голоса, новая свобода и память»](./160-ch20-international-voice-freedom-memory-literary-manuscript-2026-11-16.md). Дополнение внесено в существующий dossier, не создаётся дублирующий checkpoint.
+
+### Прямо прочитанные официальные источники
+
+1. [«Братский вестник», **1990 №2**](https://mbchurch.ru/publications/brotherly_journal/3487/) — полный HTML-репринт о **44-м Всесоюзном съезде ЕХБ**, **21–24.02.1990**; вечернее богослужение **20.02**, детский хор, **714 фактически присутствовавших делегатов**, **360 гостей**, а **726** — отдельно, число избранных на предсъездовых собраниях. **714 участвовавших ≠ 726 избранных**, поздняя оценка 687 не приоритетна первичному документу.
+2. [«Братский вестник», **1990 №3**](https://mbchurch.ru/publications/brotherly_journal/3488/) — официальный Устав Союза ЕХБ СССР, принят **22.02.1990**. Реорганизация начинается **до законов 1990 и распада СССР в 1991**.
+3. [Белый дом, **27.04.1979**](https://www.presidency.ucsb.edu/documents/united-states-soviet-union-exchange-prisoners-white-house-statement) — согласованный обмен, прибытие пяти людей, включая Г. П. Винса. Не смешивать с актом о лишении гражданства **24.04.1979**.
+4. [Указ Президента СССР №568, **15.08.1990**](https://base.garant.ru/6323290/) — отмена акта 1979 и паспортный механизм по желанию; это **юридическая отмена лишения/выдворения**, не доказательство даты первого возвращения и не «снятие уголовной ссылки».
+5. [«Братский вестник», **1993 №3**](https://mbchurch.ru/publications/brotherly_journal/5722/) — Устав Евро-Азиатской федерации самостоятельных союзов, заседание совета **11–12.03.1993**, регистрация Устава **10.03.1993, свидетельство №211**. Это не закрывает exact dates съезда ноября 1992.
+
+### Прямой read Google Drive, актуальный MASTER
+
+[MASTER ARCHIVE CATALOG](https://docs.google.com/spreadsheets/d/1y9d_7bWAEsz8iYdMuRrtb6onDYEXLQx5PgT95oYNsSM/edit), sheet **05 Photos Captions**. Метаданные и ровно указанные строки прочитаны; исторические image binaries **не** просмотрены.
+
+- **1605** — фото-кандидат 44-го Всесоюзного съезда ЕХБ 21–24 февраля 1990. MASTER помечает Article ready YES, но личность, подлинность, авторство, лицензия и точный исторический момент **не удостоверены по самому снимку**.
+- **751** — подпись об августовском 1990 правовом акте Винса, фото имеет **Article ready NO**. Поздняя формула о «восстановлении гражданства» упрощает точное действие указа 568: **отмена указа 1979 + паспорта по желанию**; предполагаемая поездка ноября требует другого первичного документа.
+- **1947** — почти та же подпись о Винсе при другом изображении, **Article ready NO**. Это повторное позднее сообщение, **не независимое подтверждение** юридического механизма.
+- В именах файлов фотографии присутствуют современные даты архивных постов 2023/2025, не даты старой фотосъёмки.
+
+### Редакционная граница и оставшиеся вопросы
+
+- **1990**: церковная перестройка в феврале → союзный закон 1 октября → республиканский закон 25 октября. **1991**: независимые республики, поиск общего церковного канала; реабилитационный закон 18 октября **не** значит «все баптисты реабилитированы в один день». **1992**: федерация в ноябре, exact 9–14 / 9–13 / 10–13 — HOLD до первичного текста «Братского вестника» 1993 №1, source pp.55–79. **1993**: 10 марта регистрация Устава федерации.
+- **Registered/unregistered**: архив KC.22 и KC.29 сохраняет противоположные источниковые голоса; finding aid ≠ прямо прочитанный оригинальный документ.
+- **Винс**: 1976 foreign committee attention, 24.04.1979 юридический акт, 27.04.1979 обмен, 07.06.1979 свидетельство, 15.08.1990 отмена акта — разные доказательные объекты.
+- **Product/AuditRepo**: в reader-facing главе нет имён файлов Drive, локальных путей, кодов HOLD, архивных SHA и технической отчётности. Доказательства и статусы остаются в этом аппарате Research; права фото и публичный Product admission требуют самостоятельной приёмки.

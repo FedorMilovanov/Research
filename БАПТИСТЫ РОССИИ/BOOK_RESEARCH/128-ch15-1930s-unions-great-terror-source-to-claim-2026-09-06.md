@@ -826,3 +826,40 @@ We can already document:
 - a real archive visual spine of congregations, choirs, families, prison notes and case photographs.
 
 What remains is not to invent more dramatic prose. It is to **upgrade the remaining secondary claims to actual files**, especially the closure/property records and the unresolved individual cases, and then let those documents carry the chapter.
+
+
+---
+
+## 16 November 2026 — Drive + archival witness reconciliation for Chapter 15 prose
+
+Written the complete [literary research manuscript for Chapter 15](./156-ch15-1930s-communities-terror-literary-manuscript-2026-11-16.md). This adds a **direct Google Drive source pass**, not merely reuse of the repo's source list.
+
+### Drive documents actually opened
+
+- **Vladimir Stepanov, «Гонения 1930-х годов»**, Drive DOCX [item](https://docs.google.com/document/d/1TkiaG3nMv9kJpW-Go7YpRX6VCvPqTzPR/edit), complete **5,695-character source text read**. A second copy [item](https://docs.google.com/document/d/18q2AZiHg5pD5FuOkygRB8mDA3X_A-cEb/edit) has identical readable text. Evidence is authorial secondary/history-memory, **not a contemporaneous case file**. Newly available chapter-specific material: 1933/35 Leningrad passport exclusion, Ivan M. Kozlov and Vasily F. Sizov succession, lay meeting leader Grigory V. Nikulin, house meetings after May 1938, narrative of families and later survivor memory.
+- **Current Google Sheets MASTER**, [file](https://docs.google.com/spreadsheets/d/1y9d_7bWAEsz8iYdMuRrtb6onDYEXLQx5PgT95oYNsSM/edit), exact tab **05 Photos Captions**, columns A:J, live rows searched after sheet metadata. Relevant:
+  - row **2267**: `photos/photo_2268@23-12-2025_17-12-52.jpg` — caption attributes Novosibirsk choir to 1937, before arrests of F. P. Kuksenko and others. DIRECT / Article ready YES, **but photo raw binary, author, provenance and rights NOT seen**.
+  - row **182**: earlier caption of Novosibirsk choir before arrests (different photo path); do **not** assume same file.
+  - row **684**: Slavgorod choir 1927, contemporary caption names Kuksenko and Rimma Alekseevna; **caption claim only** until image/person ID verified.
+  - row **940**: 1928 Novosibirsk choir with Kuksenko, Ananyin, Eglit and named spouses; **caption claim only**.
+  - rows **623/1141**: images associated with Ivan Kozlov and Ernst Klau(p)nik, later/duplicate captions. Spellings vary; use independent memorial name authority.
+  - row **2265**: Siberian Baptist Union 1928 group, with name Kuksenko and colleagues; needs original person/object verification.
+
+### Independent check of selected Drive narrative
+
+- [**Petersburg/Leningrad martyrology, Evangelical Christians and Baptists**](https://petergen.com/bovkalo/mar/ehb.html) independently lists:
+  - **I. M. Kozlov**: arrest 20 Aug 1937 → sentence 28 Sep 1937 → execution 4 Oct 1937.
+  - **V. F. Sizov**: arrest 9 Dec 1937 → execution 2 Jan 1938; five children noted.
+  - **V. Ya. Levin**: choir, infant son, executed 2 Jan 1938;
+  - **S. G. Nefedov**: eight children, executed 2 Jan 1938;
+  - **M. F. Shepyrev**: choir conductor, two young sons, executed 2 Jan 1938;
+  - **G. V. Nikulin**: arrest 1 Sep 1939 → sentence 29 Dec 1939, **five years exile**; must not be presented as a death sentence.
+  These are case-backed memorial compilations with archival references for some entries, **not yet controlled individual case page images**.
+- [**A. I. Savin, Slavgorod microhistory**](https://zaimka.ru/savin-baptist-congregation/) gives exact case-group/event boundaries: 26 Sep 1937 troika **9 death sentences, 3 ten-year, 2 eight-year** in one local group; 8 May 1938 closure, 20 Sep property transfer. These figures are **not** the Novosibirsk Kukhman case of **26 accused / 18 death sentences (28 Aug 1937)**, nor the broad 793-person NKVD “sectarian” allegation. The Novosibirsk claim remains via Savin's Kukhman-specific research (2005/2009) and dossier 131.
+- [**Order 00447 dated 30 July 1937**, EBID with exact original archive locators](https://docs.historyrussia.org/ru/nodes/49315) and [full published text](https://www.istmat.org/node/32818). **Do not label April 1937 Kukhman arrest “by Order 00447”, or assume every 1937–1939 case was part of that operation**.
+
+### Draft quality / publication gates
+
+- No fictional dialogues, invented burial places, extrapolated nationwide Baptist death totals, or fake archival imagery.
+- Stepanov (Drive) and archive captions are **content sources with explicit layers**, not original page-image proofs. Never auto-promote their detailed claims to `PRIMARY-CLOSED`.
+- One literary Chapter 15 manuscript and this exact-source addendum only; do not create duplicate status ledger or modify Drive source materials.
