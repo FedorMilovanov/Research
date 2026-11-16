@@ -48,6 +48,7 @@ jobs:
         run: |
           python3 scripts/build_charnock_custody_manifest.py --check
           python3 -m unittest discover -s scripts -p 'test_build_charnock_custody_manifest.py' -v
+          python3 -m unittest discover -s scripts -p 'test_build_charnock_packet.py' -v
       - name: Confirm validators did not alter the checkout
         run: |
           git diff --exit-code

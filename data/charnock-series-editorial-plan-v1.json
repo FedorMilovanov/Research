@@ -5,7 +5,7 @@
   "authorityRole": "corpus-specific-editorial-proposal-only",
   "stage": "BLUEPRINT_WITH_OPEN_WORK_NOT_AUTHORING",
   "baselineRegistry": "data/charnock-biographical-anchors-v1.json",
-  "baselineReceipt": "data/charnock-handoff-receipt-v2.json",
+  "baselineReceipt": "data/charnock-handoff-receipt-v3.json",
   "custodyBoundary": "Wave40receipt describes its immutable source packet,not the revised00/16. Current editorial revision is not yet transferred/independently received.",
   "expectedChangedPacketMembers": [],
   "evidenceClass": "C",
