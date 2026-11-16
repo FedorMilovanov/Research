@@ -4539,10 +4539,10 @@
         "PUBLICATION_HOLD"
       ],
       "criticalEditionCollated": false,
-      "locator": "C. Re this Edition §1 Introduction, §3 List of Sources, §4 Apparatus I, §6 Apparatus II; D Signs and Abbreviations, 'Later Greek translations (Apparatus II)', 'Literature and Collections' entries Br.-M., Field, BHS; English author 2006 translation of 1991 original German edition. These online sections directly read, not 1991 printed Greek verse text / Exod17:16 apparatus.",
-      "sourceObjectState": "Original edition's scholarly introduction available in its editor's English translation (author Wevers, edited Robert A. Kraft for online use 2006, University of Pennsylvania CCAT). Selected §§ C1/3/4/6, D abbreviations and bibliography read in original English; full printed 1991 volume's Exodus17:16 critically edited text and apparatus NOT accessed. Wevers states Apparatus I records substantively differing variants, not every orthographic/itacistic detail; Apparatus II mainly later Greek versions and marginal witnesses; Greek α' is Aquila, σ' Symmachus, θ' Theodotion, οἱ γ' is the Three. The text of Field 1875 was compared in assembling Göttingen 1991, so later apparatus and Field cannot be mechanically counted as independent physical manuscript collation. Printed Brooke/McLean 1909 variants are a separate editor edition, not Wevers Greek apparatus auto-proof. Publisher catalog corroborates 1991 date and editors. None of these methodological comments identifies the precise Exodus17:16 lemma, supporting codex sigla or manuscript provenance of specific variant.",
+      "locator": "C. Re this Edition §1 Introduction, §3 List of Sources, §4 Apparatus I, §6 Apparatus II; D Signs and Abbreviations, 'Later Greek translations (Apparatus II)', 'Literature and Collections' entries Br.-M., Field, BHS; English author 2006 translation of 1991 original German edition. These online sections directly read, not 1991 printed Greek verse text / Exod17:16 apparatus. Additional firsthand original printed volume TITLE/TOC: German National Library digital facsimile https://d-nb.info/910927367/04, TOC p6: §4 Apparatus I p50, §6 Apparatus II p54, Edition text p65; none proves a target verse's critical variant.",
+      "sourceObjectState": "Original edition's scholarly introduction available in its editor's English translation (author Wevers, edited Robert A. Kraft for online use 2006, University of Pennsylvania CCAT). Selected §§ C1/3/4/6, D abbreviations and bibliography read in original English; full printed 1991 volume's Exodus17:16 critically edited text and apparatus NOT accessed. Wevers states Apparatus I records substantively differing variants, not every orthographic/itacistic detail; Apparatus II mainly later Greek versions and marginal witnesses; Greek α' is Aquila, σ' Symmachus, θ' Theodotion, οἱ γ' is the Three. The text of Field 1875 was compared in assembling Göttingen 1991, so later apparatus and Field cannot be mechanically counted as independent physical manuscript collation. Printed Brooke/McLean 1909 variants are a separate editor edition, not Wevers Greek apparatus auto-proof. Publisher catalog corroborates 1991 date and editors. None of these methodological comments identifies the precise Exodus17:16 lemma, supporting codex sigla or manuscript provenance of specific variant. W73 2026-11-16: visually read original 1991 German critical volume's DNB facsimile TITLE and TOC only, https://d-nb.info/910927367/04; App I methodological intro at printed p50, App II method p54, Greek biblical text begins p65. Actual per-verse Wevers apparatus Ex3/6/17 NOT obtained. Princeton Geniza Lab confirms open ENA image COLLECTION but exact JTS ENA4107.20 archival pixels not independently fetched from the gallery, old viewer returned 502.",
       "supportedUse": "Explain how Göttingen critical edition 1991 distinguishes Apparatus I substantive Greek variant witnesses and Apparatus II mainly later translators and catena marginalia; cite α'/σ'/θ'/οἱ γ' explicitly as author's abbreviation legend. Recognize Wevers compared Field 1875, Brooke-McLean1909 and prior sources, so reprinting variant claims via multiple editions does NOT generate independent manuscript autopsy. Use as methodological original author commentary with limited access state.",
-      "forbiddenUse": "Describe Göttingen Exodus17:16 printed lemma or apparatus I/II as directly accessed; presume all Brooke-McLean 1909 variant sigla match Wevers 1991, presume Aquila/Symmachus/Theodotion = OG LXX, elevate Field editorial compilation to new surviving Greek physical manuscript, assert Hebrew lost Aleppo Exodus17:16 photo or BHS apparatus read, infer journal copyright license from public English introduction or grant Product/scholarly/rights approval.",
+      "forbiddenUse": "Describe Göttingen Exodus17:16 printed lemma or apparatus I/II as directly accessed; presume all Brooke-McLean 1909 variant sigla match Wevers 1991, presume Aquila/Symmachus/Theodotion = OG LXX, elevate Field editorial compilation to new surviving Greek physical manuscript, assert Hebrew lost Aleppo Exodus17:16 photo or BHS apparatus read, infer journal copyright license from public English introduction or grant Product/scholarly/rights approval. Original 1991 frontmatter/TOC p50,54 cannot be cited as critical apparatus for Exod 3/6/17; do not infer verified images of JTS ENA 4107.20 from Princeton collection metadata.",
       "editorialMethodFacts20261112": {
         "printedEditionYear": 1991,
         "authorEnglishTranslationYear": 2006,
@@ -4560,6 +4560,23 @@
         "brookeMclean1909SameCriticalEditionAs1991": false,
         "criticalManuscriptsPersonallyCollated": false,
         "photographRightsApproved": false
+      },
+      "original1991GermanFrontMatterDnb20261116": {
+        "dnbDigitalFrontmatterPdf": "https://d-nb.info/910927367/04",
+        "originalTitlePageVisualVerified": true,
+        "originalContentsPageVisualVerified": true,
+        "fullOriginalCriticalTextInspected": false,
+        "fullApparatusForTargetLociInspected": false,
+        "editionTitle": "Septuaginta, Vetus Testamentum Graecum, vol. II/1: Exodus",
+        "originalEditors": "John William Wevers; adiuvante U. Quast",
+        "editionYear": 1991,
+        "originalPrintedIntroApparatus1Page": 50,
+        "originalPrintedIntroApparatus2Page": 54,
+        "originalPrintedBiblicalTextBeginsPage": 65,
+        "distinction": "Printed 50 and 54 describe methods of App I/II, and are not apparatus entries for Ex3,6,17. DNB digitized front matter only. Do not infer specific variant sigla or author readings.",
+        "cambridgeOpenJtsCollectionInfo": "https://genizalab.princeton.edu/resources/jts-image-collection",
+        "cambridgeJtsSpecificExodusImageVerifiedFromArchive": false,
+        "note": "Princeton Geniza Lab lists open JTS ENA image collection; its old JTS viewer link failed HTTP 502 in this audit and no exact ENA4107.20 IIIF asset was verified. This is a discovery route only; image reuse requires source-specific permission."
       }
     },
     {
@@ -5155,7 +5172,7 @@
       "creator": "David Lloyd Lyons",
       "year": 1983,
       "url": "https://eprints.soas.ac.uk/33841/1/11010631.pdf",
-    "institutionalOriginalPDF": "https://eprints.soas.ac.uk/33841/1/11010631.pdf",
+      "institutionalOriginalPDF": "https://eprints.soas.ac.uk/33841/1/11010631.pdf",
       "university": "University of London (Senate House); archival original PDF via SOAS institutional eprints",
       "manuscriptPhysicalWitness": "British Library Or 4445 (London Codex), original tenth-century Pentateuch",
       "manuscriptFolioLinkedFromPreviousSource": "59v, OPenn 13291_0125.jpg (not directly supplied by the thesis excerpt)",
