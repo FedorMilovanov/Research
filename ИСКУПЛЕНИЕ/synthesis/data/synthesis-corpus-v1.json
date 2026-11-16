@@ -473,11 +473,14 @@
     {
       "id": "D1_EVOLUTION",
       "file": "ИСКУПЛЕНИЕ/synthesis/D1_EVOLUTION_OF_UNDERSTANDING_AXIS.md",
-      "topic": "Ось D1: эволюция понимания",
+      "topic": "Ось D1: эволюция понимания (обновлена по Волнам 10–15: fathers/12_–20_)",
       "holds": [
         "ARCHIVE_HOLD",
         "EVIDENCE_HOLD",
         "LOCATOR_HOLD",
+        "OPEN",
+        "OPEN-LAYER",
+        "ORIGINAL_TEXT_HOLD",
         "PUBLICATION_HOLD",
         "RIGHTS_HOLD"
       ],
@@ -486,10 +489,11 @@
     {
       "id": "D2_GOVERNMEN",
       "file": "ИСКУПЛЕНИЕ/synthesis/D2_GOVERNMENTAL_THEORY_GROTIUS_AXIS.md",
-      "topic": "Ось D2: правительственная теория / Grotius",
+      "topic": "Ось D2: правительственная теория / Grotius → Бакстер → Новая Англия",
       "holds": [
         "EVIDENCE_HOLD",
         "LOCATOR_HOLD",
+        "ORIGINAL_TEXT_HOLD",
         "PUBLICATION_HOLD",
         "RIGHTS_HOLD"
       ],
@@ -648,6 +652,58 @@
         "PUBLICATION_HOLD"
       ],
       "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
+    },
+    {
+      "id": "D3_CHRISTUS_",
+      "file": "ИСКУПЛЕНИЕ/synthesis/D3_CHRISTUS_VICTOR_WRATH_AND_EASTERN_AXIS.md",
+      "topic": "Ось D3: Christus Victor, спор о гневе (Додд vs Моррис/Николь) и восточно-православный диалог",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ORIGINAL_TEXT_HOLD",
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
+    },
+    {
+      "id": "D4_ROMAN_SAT",
+      "file": "ИСКУПЛЕНИЕ/synthesis/D4_ROMAN_SATISFACTION_MASS_AND_TRENT_AXIS.md",
+      "topic": "Ось D4: римская сатисфакция, месса и контрреформационная граница Тридента",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ORIGINAL_TEXT_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
+    },
+    {
+      "id": "D5_SOCINIANI",
+      "file": "ИСКУПЛЕНИЕ/synthesis/D5_SOCINIANISM_AND_MORAL_INFLUENCE_AXIS.md",
+      "topic": "Ось D5: социнианство, моральное влияние и границы евангельского консенсуса",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "ORIGINAL_TEXT_HOLD",
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
+    },
+    {
+      "id": "D6_BAPTIST_1",
+      "file": "ИСКУПЛЕНИЕ/synthesis/D6_BAPTIST_1689_VS_WESTMINSTER_AND_RUSSIAN_EHB_AXIS.md",
+      "topic": "Ось D6: 1689 vs Вестминстер (гл. 8), стык Гилл/Фуллер и русские вероучения ЕХБ (1847–1985)",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "OPEN",
+        "OPEN-LAYER",
+        "ORIGINAL_TEXT_HOLD",
+        "PUBLICATION_HOLD",
+        "RESOLVED-BY-TEXT",
+        "RIGHTS_HOLD"
+      ],
+      "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --check)"
     }
   ],
   "initialSessionBranch": "arena/5fe5b33f-research",
@@ -797,29 +853,47 @@
     ],
     "summary": "Wave 9 verifies 21 visual A1 print scans, 3 corrected A1 TEI-XML editions (PL 54, PL 75, First1KGreek Or. 30), and 27 class-C OCR/JSONL witnesses without promoting OCR to VERIFIED_ORIGINAL. Cramer 1841 Vol. II p. 322 (Coislin 23 catena scan, A1) confirms the shorter anonymous scholion on John 11:51-52 displaced after John 12:8; Pusey 1872 Vol. II pp. 294-296 and PG 74 cols. 69-70 remain without page scans, keeping C-25 OPEN. Five-locus comparison of Cyril In Joannem (1:11-13 A1 scan; 8:46-47, 10:14-16, 11:44 C OCR with Praefatio p. ix rejecting the 691A paragraph; 11:49-52) confirms a two-register Johannine grammar (universal creator kinship versus eschatological adoption through faith). GRG-1 is repaired from PL 75 cols. 524C/612B/614A/642B (sine aestimatione dabatur percipi, Misertus ergo creator ut redimeret); LEO-1 (PL 54 + Greek column scans), NAZ-1 (Mason 1899 pp. 140-143 scans; Or. 45.22 remains class C), and CHR-2 (Cramer II p. 320 scan + Hom. 65 OCR) are bound to exact locators."
   },
+  "dLayerExpansionWave16": {
+    "recordedAtUtc": "2026-11-15T14:00:00Z",
+    "cardsOpened": [
+      "D1",
+      "D2",
+      "D3",
+      "D4",
+      "D5",
+      "D6"
+    ],
+    "cardsUnopenedByPolicy": [
+      "Gill vs Fuller standalone axis (C-12 external owned sub-corpus БИОГРАФИИ/Джон Гилл/)",
+      "Gibson & Gibson 2013 map (RIGHTS_HOLD + ARCHIVE_HOLD)"
+    ],
+    "draftCountUnchanged": 13,
+    "publicationEligible": false,
+    "sourceBridge": "ИСКУПЛЕНИЕ/fathers/12_–20_ (Waves 10–15, F-1–F-50)"
+  },
   "claimRegister20261026": {
     "чтоЭто": "реестр доводов лана «synthesis»: строка = раздел прозы уровня ## с локатором, классом из её собственных маркеров и отметкой съёма",
     "чтоСчитаетсяДоводом": "заголовок «## » в любом .md лана, включая вложенные папки (synthesis/drafts, ot/tools); тело секции — до следующего «## » или до конца файла",
     "приоритет": "УДЕРЖИВАЕТСЯ > ОТКРЫТО > ЗАКРЫТО; маркеров нет -> БЕЗ МАРКЕРА; маркер вне классификации -> ошибка съёма, а не «прочее»",
     "метод": "scripts/atonement_claim_register.py обходит прозу лана целиком (без выборки), разбирает маркеры вида `ВЕРДИКТ`, сверяет локатор побайтово (файл + номер строки + текст)",
-    "строк": 244,
-    "файлов": 23,
+    "строк": 260,
+    "файлов": 27,
     "покрытоМашинно": 0,
-    "покрытоПоФайлу": 244,
-    "файловПрозы": 23,
+    "покрытоПоФайлу": 260,
+    "файловПрозы": 27,
     "файловБезКарточки": 0,
-    "разрешеноЛокаторов": 244,
+    "разрешеноЛокаторов": 260,
     "неРазрешено": 0,
     "поКлассам": {
-      "БЕЗ МАРКЕРА": 129,
-      "УДЕРЖИВАЕТСЯ": 89,
+      "БЕЗ МАРКЕРА": 134,
+      "УДЕРЖИВАЕТСЯ": 100,
       "ОТКРЫТО": 11,
       "СЛУЖЕБНОЕ": 9,
       "ЗАКРЫТО": 6
     },
     "маркеры": {
-      "всего": 460,
-      "различных": 35,
+      "всего": 496,
+      "различных": 36,
       "словарь": {
         "ACCESS_INTERRUPTED": "ОТКРЫТО",
         "AGENT_RULES": "СЛУЖЕБНОЕ",
@@ -844,6 +918,7 @@
         "LOCATOR_SINGLE_ATTESTATION": "УДЕРЖИВАЕТСЯ",
         "OPEN": "ОТКРЫТО",
         "OPEN-LAYER": "ОТКРЫТО",
+        "ORIGINAL_TEXT_HOLD": "УДЕРЖИВАЕТСЯ",
         "PERMISSION_REQUIRED": "УДЕРЖИВАЕТСЯ",
         "PRIVATE_STUDY_ONLY": "УДЕРЖИВАЕТСЯ",
         "PUBLICATION_ELIGIBLE": "ЗАКРЫТО",
@@ -858,19 +933,20 @@
         "TEXT_CRIT_NOTE": "СЛУЖЕБНОЕ"
       },
       "частоты": {
-        "EVIDENCE_HOLD": 97,
-        "PUBLICATION_HOLD": 66,
-        "RIGHTS_HOLD": 55,
+        "EVIDENCE_HOLD": 101,
+        "PUBLICATION_HOLD": 70,
+        "RIGHTS_HOLD": 67,
         "ATTRIBUTION_HOLD": 40,
         "EDITION_HOLD": 35,
+        "RESOLVED-BY-TEXT": 31,
         "LOCATOR_HOLD": 30,
-        "RESOLVED-BY-TEXT": 30,
         "OPEN": 22,
+        "ARCHIVE_HOLD": 14,
         "LOCATOR_PARTIAL": 13,
-        "ARCHIVE_HOLD": 11,
         "BIBLE_CORPUS": 11,
+        "ORIGINAL_TEXT_HOLD": 11,
         "PRIVATE_STUDY_ONLY": 9,
-        "OPEN-LAYER": 7,
+        "OPEN-LAYER": 8,
         "CONTEXT_HOLD": 4,
         "ATTRIBUTION_SECONDARY": 3,
         "EDITION_UNAVAILABLE": 3,
@@ -917,8 +993,8 @@
       ]
     },
     "сверкаСКарточками": {
-      "файловПрозы": 23,
-      "файловСКарточкой": 23,
+      "файловПрозы": 27,
+      "файловСКарточкой": 27,
       "файловБезКарточки": 0,
       "ссылокНаНесуществующийФайл": 0,
       "ссылокВнеОбходаЛана": 0,
@@ -2559,15 +2635,15 @@
         "код": "2@D1_EVOLUTION_OF_UNDERSTANDING_AXIS",
         "лан": "synthesis",
         "файл": "ИСКУПЛЕНИЕ/synthesis/D1_EVOLUTION_OF_UNDERSTANDING_AXIS.md",
-        "строка": 24,
+        "строка": 23,
         "срез": "2. Ось: этап — где закрыто — что не утверждать",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 2,
         "токены": [
           "ARCHIVE_HOLD",
           "EVIDENCE_HOLD",
-          "LOCATOR_HOLD",
           "OPEN-LAYER",
+          "ORIGINAL_TEXT_HOLD",
           "RIGHTS_HOLD"
         ],
         "машинно": false,
@@ -2577,7 +2653,7 @@
         "код": "3@D1_EVOLUTION_OF_UNDERSTANDING_AXIS",
         "лан": "synthesis",
         "файл": "ИСКУПЛЕНИЕ/synthesis/D1_EVOLUTION_OF_UNDERSTANDING_AXIS.md",
-        "строка": 44,
+        "строка": 43,
         "срез": "3. Что карточка не делает",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 1,
@@ -2595,7 +2671,7 @@
         "код": "4@D1_EVOLUTION_OF_UNDERSTANDING_AXIS",
         "лан": "synthesis",
         "файл": "ИСКУПЛЕНИЕ/synthesis/D1_EVOLUTION_OF_UNDERSTANDING_AXIS.md",
-        "строка": 55,
+        "строка": 54,
         "срез": "4. Что дальше (шаг дуги VII-2, не начат)",
         "класс": "БЕЗ МАРКЕРА",
         "маркеров": 0,
@@ -2621,9 +2697,11 @@
         "файл": "ИСКУПЛЕНИЕ/synthesis/D2_GOVERNMENTAL_THEORY_GROTIUS_AXIS.md",
         "строка": 24,
         "срез": "2. Ось: что где закрыто — что не утверждать",
-        "класс": "БЕЗ МАРКЕРА",
-        "маркеров": 0,
-        "токены": [],
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "ORIGINAL_TEXT_HOLD"
+        ],
         "машинно": false,
         "машинноПоФайлу": true
       },
@@ -2631,7 +2709,7 @@
         "код": "3@D2_GOVERNMENTAL_THEORY_GROTIUS_AXIS",
         "лан": "synthesis",
         "файл": "ИСКУПЛЕНИЕ/synthesis/D2_GOVERNMENTAL_THEORY_GROTIUS_AXIS.md",
-        "строка": 34,
+        "строка": 36,
         "срез": "3. Что карточка не делает",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 1,
@@ -2645,11 +2723,242 @@
         "код": "4@D2_GOVERNMENTAL_THEORY_GROTIUS_AXIS",
         "лан": "synthesis",
         "файл": "ИСКУПЛЕНИЕ/synthesis/D2_GOVERNMENTAL_THEORY_GROTIUS_AXIS.md",
-        "строка": 47,
+        "строка": 49,
         "срез": "4. Что дальше",
         "класс": "БЕЗ МАРКЕРА",
         "маркеров": 0,
         "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "1@D3_CHRISTUS_VICTOR_WRATH_AND_EASTERN_AXIS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/D3_CHRISTUS_VICTOR_WRATH_AND_EASTERN_AXIS.md",
+        "строка": 5,
+        "срез": "1. Условие входа и назначение оси",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "RIGHTS_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "2@D3_CHRISTUS_VICTOR_WRATH_AND_EASTERN_AXIS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/D3_CHRISTUS_VICTOR_WRATH_AND_EASTERN_AXIS.md",
+        "строка": 11,
+        "срез": "2. Ось: узел спора — где закрыто — что не утверждать",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "ORIGINAL_TEXT_HOLD",
+          "RIGHTS_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "3@D3_CHRISTUS_VICTOR_WRATH_AND_EASTERN_AXIS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/D3_CHRISTUS_VICTOR_WRATH_AND_EASTERN_AXIS.md",
+        "строка": 21,
+        "срез": "3. Что карточка не делает",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "EVIDENCE_HOLD",
+          "ORIGINAL_TEXT_HOLD",
+          "PUBLICATION_HOLD",
+          "RIGHTS_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "4@D3_CHRISTUS_VICTOR_WRATH_AND_EASTERN_AXIS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/D3_CHRISTUS_VICTOR_WRATH_AND_EASTERN_AXIS.md",
+        "строка": 27,
+        "срез": "4. Практический вывод для редактора серии",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "1@D4_ROMAN_SATISFACTION_MASS_AND_TRENT_AXIS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/D4_ROMAN_SATISFACTION_MASS_AND_TRENT_AXIS.md",
+        "строка": 5,
+        "срез": "1. Назначение оси и связь со статьёй A4",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "2@D4_ROMAN_SATISFACTION_MASS_AND_TRENT_AXIS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/D4_ROMAN_SATISFACTION_MASS_AND_TRENT_AXIS.md",
+        "строка": 10,
+        "срез": "2. Ось: этап и спорная точка — где закрыто — что не утверждать",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "3@D4_ROMAN_SATISFACTION_MASS_AND_TRENT_AXIS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/D4_ROMAN_SATISFACTION_MASS_AND_TRENT_AXIS.md",
+        "строка": 20,
+        "срез": "3. Что карточка не делает",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "EVIDENCE_HOLD",
+          "ORIGINAL_TEXT_HOLD",
+          "PUBLICATION_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "4@D4_ROMAN_SATISFACTION_MASS_AND_TRENT_AXIS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/D4_ROMAN_SATISFACTION_MASS_AND_TRENT_AXIS.md",
+        "строка": 26,
+        "срез": "4. Практический вывод для редактора серии",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "1@D5_SOCINIANISM_AND_MORAL_INFLUENCE_AXIS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/D5_SOCINIANISM_AND_MORAL_INFLUENCE_AXIS.md",
+        "строка": 5,
+        "срез": "1. Назначение оси: предохранитель, а не главный собеседник",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "2@D5_SOCINIANISM_AND_MORAL_INFLUENCE_AXIS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/D5_SOCINIANISM_AND_MORAL_INFLUENCE_AXIS.md",
+        "строка": 10,
+        "срез": "2. Ось: фигура — где закрыто — точная линия разлома и что не утверждать",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "ORIGINAL_TEXT_HOLD",
+          "RIGHTS_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "3@D5_SOCINIANISM_AND_MORAL_INFLUENCE_AXIS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/D5_SOCINIANISM_AND_MORAL_INFLUENCE_AXIS.md",
+        "строка": 21,
+        "срез": "3. Что карточка не делает",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "EVIDENCE_HOLD",
+          "ORIGINAL_TEXT_HOLD",
+          "PUBLICATION_HOLD",
+          "RIGHTS_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "4@D5_SOCINIANISM_AND_MORAL_INFLUENCE_AXIS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/D5_SOCINIANISM_AND_MORAL_INFLUENCE_AXIS.md",
+        "строка": 27,
+        "срез": "4. Практический вывод для редактора серии",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "1@D6_BAPTIST_1689_VS_WESTMINSTER_AND_RUSSIAN_EHB_AXIS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/D6_BAPTIST_1689_VS_WESTMINSTER_AND_RUSSIAN_EHB_AXIS.md",
+        "строка": 5,
+        "срез": "1. Исполнение условия входа по 1689 и честные границы по `C-12`",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "ARCHIVE_HOLD",
+          "LOCATOR_HOLD",
+          "RIGHTS_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "2@D6_BAPTIST_1689_VS_WESTMINSTER_AND_RUSSIAN_EHB_AXIS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/D6_BAPTIST_1689_VS_WESTMINSTER_AND_RUSSIAN_EHB_AXIS.md",
+        "строка": 12,
+        "срез": "2. Ось: баптистская линия XVII–XXI вв. — где закрыто — что не утверждать",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 3,
+        "токены": [
+          "OPEN-LAYER",
+          "ORIGINAL_TEXT_HOLD",
+          "RESOLVED-BY-TEXT"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "3@D6_BAPTIST_1689_VS_WESTMINSTER_AND_RUSSIAN_EHB_AXIS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/D6_BAPTIST_1689_VS_WESTMINSTER_AND_RUSSIAN_EHB_AXIS.md",
+        "строка": 22,
+        "срез": "3. Что карточка не делает",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "ARCHIVE_HOLD",
+          "EVIDENCE_HOLD",
+          "ORIGINAL_TEXT_HOLD",
+          "PUBLICATION_HOLD",
+          "RIGHTS_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "4@D6_BAPTIST_1689_VS_WESTMINSTER_AND_RUSSIAN_EHB_AXIS",
+        "лан": "synthesis",
+        "файл": "ИСКУПЛЕНИЕ/synthesis/D6_BAPTIST_1689_VS_WESTMINSTER_AND_RUSSIAN_EHB_AXIS.md",
+        "строка": 28,
+        "срез": "4. Итоговый баланс резерва слоя D (`01_` §4)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "ARCHIVE_HOLD",
+          "RIGHTS_HOLD"
+        ],
         "машинно": false,
         "машинноПоФайлу": true
       },
@@ -4323,8 +4632,8 @@
     ],
     "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
     "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check synthesis",
-    "measuredAt": "2026-11-03T22:36:42Z",
-    "checkedAt": "2026-11-03T22:36:42Z",
-    "предыдущийСъём": "2026-11-03T22:33:30Z"
+    "measuredAt": "2026-11-16T06:36:41Z",
+    "checkedAt": "2026-11-16T06:36:41Z",
+    "предыдущийСъём": "2026-11-15T21:14:28Z"
   }
 }
