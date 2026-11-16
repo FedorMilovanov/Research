@@ -97,6 +97,88 @@
 
 ---
 
+### 1.6. Парсонс 1815 — первое издание с аппаратом и первый источник двух ошибок (новое, 2026-11-16)
+
+Всё это время источником «биографической рамки» служил **Маккош 1864**, у которого, как показал BH-8, уже есть одна порча (1702). Теперь прочитан его предшественник — **Эдвард Парсонс, *The Works of the late Rev. Stephen Charnock*, 9 томов, Лондон: Baynes / Лидс: Robinson, Son and Holdsworth, 1815–1816** (IA `worksoflaterevst01char`…`09char`, полный OCR всех девяти томов). Это **первое собрание, снабжённое биографическим очерком и предисловием**, то есть первый текст, из которого позднейшие компиляторы брали «факты о жизни».
+
+**Титулы прочитаны дословно (снимает неопределённость `CONFLICT-11`):**
+
+| Том | Год на титуле | Отметка |
+|---|---|---|
+| I | **1815** | «IN NINE VOLUMES. WITH A PREFATORY DEDICATION AND MEMOIR, BY EDWARD PARSONS» |
+| II | 1815 | — |
+| III | 1815 | — |
+| IV | 1815 | — |
+| V | 1815 (в OCR «1810» — дефект литеры) | — |
+| VI | 1815 | — |
+| VII | «1815» набран как **«ISli»** — OCR почти не читается, год восстанавливается по серии | — |
+| VIII | **1816** | — |
+| IX | **1816** | — |
+
+**Вывод по `CONFLICT-11`:** тома выходили не «в 1815 или 1816», а **двумя партиями: I–VII в 1815, VIII–IX в 1816** (по крайней мере по экземпляру Princeton Theological Seminary, ныне в IA). Тираж мог рассылаться с обложкой-общим титулом 1815 г. — но **год на титуле каждого тома разный, и это проверяемо**. Прежняя формула «1815–1816» верна как диапазон, но теперь она уточняется до партий. Предисловие Парсонса датировано: «**Leeds, August 1, 1815**».
+
+**Что Парсонс даёт положительно (проверяемо по первоисточникам):**
+
+1. **Состав девяти томов** — полная оглавка каждого тома (см. § 1.6а ниже); она объясняет, почему в XIX в. «Works» = 9 томов, а у Маккоша — 5: Маккош **перегруппировал** то же содержание.
+2. **Memoir, pp. XI–XXI** — компиляция из Джонсона, Адамса–Вила, Калами и Вуда. Парсонс сам объявляет метод: «the biographer must content himself to become the mere echo of those who have preceded him… never assuming the power of creating materials». Это редкий случай, когда компилятор **прямо предупреждает**, что нового материала у него нет, — и это надо ценить.
+3. **Первое печатное упоминание о несохранившихся мемуарах Джона Гантера** (см. ниже).
+4. **Единственное, что Парсонс добавляет от себя** — богословская оценка и цитата из Топлади («a late author») об «Attributes»; биографических фактов он не изобретает.
+
+**Что Парсонс даёт отрицательно — две ошибки, которые пошли в литературу:**
+
+| № | Утверждение Парсонса 1815 | Что в источниках | Как исправлять |
+|---|---|---|---|
+| **P-1** | Наставник Чарнока в Эммануиле — **«Dr. William Sancroft, afterwards archbishop of Canterbury»** (Memoir, p. XII) | Сэнкрофт был **наставником** по Вуду 1691 и по эпистолу 1680; но Маккош 1864 называет **другого** человека: «The tutor from whom Charnock received his chief instruction was **Mr W. Bancroft** (afterwards Archbishop of Canterbury), who was attached to the royalist cause». **Двух архиепископов с почти одинаковой фамилией перепутать легко; Банкрофт стал архиепископом в 1604 и умер в 1610, за 18 лет до рождения Чарнока, и наставником быть не мог.** | Парсонс здесь следует Вуду и прав; **ошибка — у Маккоша**: имя «Bancroft» с датой «afterwards Archbishop» несовместимо. Если Маккош имел в виду **Richard Bancroft** — тот умер в 1610. Никакого иного «W. Bancroft, Archbishop» не существует. **Формула для текста:** наставник — **Уильям Сэнкрофт** (Вуд 1691; эпистол 1680; Палмер 1775; Парсонс 1815). У Маккоша 1864 на этом месте — **порча имени**. |
+| **P-2** | «Stephen Charnock, one of the most eminent divines of the **sixteenth** century» (Memoir, p. XII) | Чарнок — **1628–1680**, XVII век | Прямая опечатка/оговорка. В тексте не воспроизводить; фиксировать как **признак того, что и у Парсонса набор набран с ошибками** (в т. V год «1810» — та же природа) |
+
+**Отдельно: два новых свидетельства, которых в корпусе не было.**
+
+| Свидетель | Дословно | Значение |
+|---|---|---|
+| **Парсонс 1815, Memoir, p. XVIII** | «**His library, though not numerous, was furnished with a curious and valuable collection of books; but of this, his inestimable treasure, he was afterwards deprived by the fire of London.**» | Это **третье** независимое звено той же цепи, что Палмер 1775: «not numerous» взято из Адамса–Вила 1680, «fire of London» — из Калами 1727. **Парсонс 1815 — первый, кто склеил их на английском в биографическом очерке до Палмера?** Нет: Палмер 1775 раньше. Но Парсонс **повторяет** склейку, и именно из Парсонса она попадает в Маккоша и далее. Таким образом цепочка: Адамс–Вил 1680 + Калами 1727 → **Палмер 1775** → **Парсонс 1815** → Маккош 1864 → XIX–XX вв. |
+| **Парсонс 1815, Memoir, p. XX** | «Immediately after his death, his body was conveyed to **Crosby-house**, the residence of **Sir John Langham**… he was buried in St. Michael's church, Cornhill, **by the Tower under the Belfry**. Mr. **John Johnson**, who had been his **fellow-student at Cambridge**, and who had known him intimately **from the sixteenth year of his age**, preached his funeral sermon from **Matthew xiii. 42**» | Сводка позднейших данных; **важна одна деталь**: Парсонс (и вслед за ним Маккош) даёт **Мф. 13:42**, тогда как корпус и Калами 1727 дают **13:43**. См. `CONFLICT-16` ниже |
+| **Парсонс 1815, Memoir, p. XVIII** | «In his younger days, he preached **without the use of notes**; but towards the close of his life, his memory beginning to fail him, he became a **close reader of his sermons**; and to this disadvantage was added his **reading with a glass**.» | **Это — источник пассажа об очках**, который в корпусе приписан Калами 1713/1727 (том 04 §0B). Смысл тождествен и, вероятно, восходит к Калами; но **в каламиевой формулировке 1727-го «penn'd and read his Sermons verbatim»**, а у Парсонса — «close reader». Разница мелкая, но при цитировании надо брать **Калами**, а Парсонса указывать как посредника |
+| **Парсонс 1815, Memoir, p. XX** | «he is said to have expressed his conviction that his sermon on '**Divine Patience**' would be the last he should preach» | Новый факт: последняя проповедь — о **долготерпении Божием** (Наум 1:3), и именно она замыкает корпус «Атрибутов». Согласуется с Палмером 1775 («did not live to finish»): он умер, готовя «The Mercy of God», а последняя произнесённая — «Divine Patience» |
+| **Парсонс 1815, Memoir, p. XII** | «His biographical memoirs are distinguished by nothing… He may indeed **decompose** their materials, and give them the cast and character of his own peculiar style» | Методологическое признание компилятора. Полезно как **формула честности** в аппарате: «Парсонс 1815 сам предупреждает, что нового материала у него нет» |
+| **Парсонс 1815, Memoir, p. XI** | «Calamy mentions that **Memoirs of Mr Steph. Charnock were written by Mr John Gunter, his 'chamber-fellow' at Oxford**; but of these we have not been able to find any trace… We have made researches in London, in Cambridge, and in Dublin» | Подтверждает и **датирует** поиск мемуаров Гантера: он искался уже в 1815 и не был найден. Корпус использовал Маккоша; теперь известно, что **отрицательный результат восходит к 1815**, а не к 1864 |
+
+### 1.6а. Состав девяти томов Парсонса против пятитомника Маккоша — BH-10 (новое, 2026-11-16)
+
+Снято с «CONTENTS» каждого тома (IA `worksoflaterevst01char`…`09char`). **Это половина BH-10.**
+
+| Том | Год | Содержание (страницы по оглавлению; дефекты OCR помечены) |
+|---|---|---|
+| **I** | 1815 | Dedication iii–x; Memoir xi–xxi. *The Existence of God* 1; *Practical Atheism* 103; *The Spirituality of God* и *Spiritual Worship* 242; *The Eternity of God* 395; *The Immutability of God* 447; *The Omnipresence of God* 527 |
+| **II** | 1815 | *The Knowledge of God* 1; *The Wisdom of God* 146; *The Power of God* 324; *The Holiness of God* 487 |
+| **III** | 1815 | *The Goodness of God* 1; *The Dominion of God* 231; *The Patience of God* 414; *The Providence of God* 497 |
+| **IV** | 1815 | *The Providence of God* (продолжение) от *Part VII* 1; *The Necessity of Regeneration* [«ng»]; *The Nature of Regeneration* [«2f,7»]; *The Efficient of Regeneration* 439 |
+| **V** | 1815 | *The Efficient of Regeneration* (продолжение) 1; *The Instrument of Regeneration* 121; *The Author of Reconciliation* 181; *The Knowledge of God* [«5iy»] |
+| **VI** | 1815 | *The Knowledge of God* 1; *The Knowledge of God in Christ* 54; *Conviction of Sin* 166; *Unbelief the greatest Sin* 289; *The Misery of Unbelievers* 445; *Who are Unbelievers* 553 |
+| **VII** | 1815 | *The Lord's Supper* 1; *The Subjects of the Lord's Supper* 75; *Unworthily receiving* 169; *Self-examination* 193; *The Knowledge of Christ Crucified* 217; *Christ our Passover* 241; *The Voluntariness of Christ's Death* 311; *The Acceptableness of Christ's Death* 335; *The Necessity of Christ's Death* [«Ao^»]; *The Necessity of Christ's Exaltation* 507; *The Pardon of Sin* [«5-jO»] |
+| **VIII** | 1816 | *The Intercession of Christ* 1; *The Object of Faith* 113; *The Virtue of the Blood of Christ* 133; *Christian Obedience* 251; *The Afflictions of Believers* 275; *The Removal of the Gospel* 299; *Weak Grace Victorious* 339; *Mercy Received* 401; *Mortification* 479; *Sinful Thoughts* [«5qj»]; *The Stability of the Church* 561 |
+| **IX** | 1816 | *On the Popish Plot* 1; *Delight in Prayer* 41; *Mourning for the Sins of Others* 63; **«Comfort in the Time of Travail» 101**; *Sins of the Regenerate* 133; *Man's Enmity to God* 175; *Mercy for the Chief of Sinners* 321; *Table of Scriptures* 391; *General Index* 429 |
+
+**Три вывода для BH-10.**
+
+**1. Девятитомник Парсонса — не «другая редакция», а другая раскладка.** Содержание и порядок дискурсов те же, что у Маккоша; разбивка на томы иная (9 тонких вместо 5 толстых), пагинация внутри томов своя. **Смешивать примечания «по Парсонсу» и «по Маккошу» в одной сноске нельзя.**
+
+**2. Ровно одно место, где оглавления расходятся.** В томе IX Парсонс между «Mourning for the Sins of Others» (63) и «Sins of the Regenerate» (133) ставит **«Comfort in the Time of Travail» (101)**. Маккош в томе V на том же месте даёт **«A Discourse for the Comfort of Child-Bearing Women», 1 Тим. 2:15** (порядковый номер в его «CONTENTS» — 398; OCR печатает «898», но следующее заглавие стоит на 414, а предыдущее на 380, так что чтение «398» согласуется с порядком страниц).
+
+Возможны два объяснения, и **выбрать между ними по OCR нельзя**:
+
+- это **один и тот же дискурс** под двумя заглавиями, и Маккош переименовал его по тексту (1 Тим. 2:15), а Парсонс — по предмету («время родов», Иоан. 16:21);
+- это **два разных дискурса**, и тогда канон 64 дискурсов у двух издателей не совпадает на одно заглавие.
+
+Практическое следствие: **нельзя утверждать, что «64 дискурса» — одинаковый набор в обоих изданиях**, пока не сверены образы. Это новый подвопрос — **BH-10a** в § 9.
+
+**3. Заглавие «On the Popish Plot» — не название Чарнока.** Парсонс переименовал *A Discourse upon the Fifth of November* в *On the Popish Plot*; Маккош восстановил исходное. Один и тот же текст ходит под двумя именами — при цитировании ранних изданий XIX в. это надо помнить.
+
+**Оговорка.** Часть страничных чисел в OCR разрушена («ng», «2f,7», «5iy», «Ao^», «5-jO», «5qj»); они оставлены как есть, без догадок. Заглавия читаются уверенно. Для точной пагинации нужны образы оглавлений; для задачи «состав, а не пагинация» сказанного достаточно.
+
+**Ещё одна вещь, которую Парсонс проясняет.****Ещё одна вещь, которую Парсонс проясняет.** Маккош пишет «matriculated as a sizar at Cambridge **July 8, 1642**». У Парсонса матрикуляции нет вовсе — период 1628–1642 у него пуст, а начало биографии сразу: «At a very early period, he entered upon a course of preparatory studies in Emanuel College». Значит **дата 8 июля 1642 — не от Парсонса**, а либо от Маккоша, либо от университетского регистра, на который Маккош ссылается. Это сужает `CONFLICT-02` (дата матрикуляции): проверять надо **регистр Кембриджа**, а не биографическую традицию.
+
+**Ограничение.** Всё прочитано по OCR Internet Archive (Princeton Theological Seminary, шифр `BX 9315 .C427 1815`). OCR девятнадцатого века с долгой «ſ» даёт регулярные сбои («1810», «ISli», «EBWAMB FAMSONS»). Ни один вывод выше не зависит от дефектных литер; годы томов VIII–IX (1816) и I (1815) читаются чисто и подтверждаются оглавлениями. **Класс: `A1` (текст), с оговоркой об OCR.**
+
 ## 2. Вторая библиотека: *Bibliotheca Charnockiana* (1680)
 
 ### 2.1. Объект и его экземпляры
@@ -525,7 +607,10 @@ Vol. II 1684: «if in two or three smaller Tracts the Author seem not altogether
 | ~~BH-8~~ | ~~1702 «3rd ed.»~~ | **ЗАКРЫТ 2026-11-16** | Издания 1702 г. нет: `GHOST_EDITION`. Проверено по JISC Library Hub Discover (автор / заглавие / диапазон дат), IA, HOLLIS, OpenLibrary — везде только 1699 «third edition corrected». Источник — Маккош 1864. Исправлено в 03 §3A и §9. См. § 3.4 |
 | BH-15 | Листовая коллация 1699 г. (т. I): титул *Treatise* на **3S2r** с «John Harris»; пустые **4C2**, **4N4**; пагинация 555–648 после [2] | `CATALOG_ONLY` | сверка по образу экземпляра NLW/Southampton или BL; проверить, совпадает ли с EEBO 653:7 |
 | BH-9 | Полные имена переписчиков («J. Wichens», «Ashton») и «Ingenious person» | `LOCATOR_HOLD` | читать сноски 1684 г. по образам, не по OCR |
-| BH-10 | Состав 9-томного Парсонса и 5-томного Николя | `CATALOG_ONLY` | сверить тома по IA/каталогам, прежде чем говорить о «реальных отличиях редакций» |
+| BH-10 | Состав 9-томного Парсонса и 5-томного Николя | **НАПОЛОВИНУ ЗАКРЫТ 2026-11-16** | **Парсонс:** все девять оглавлений прочитаны (§ 1.6а); состав = тот же корпус, другая раскладка (9 томов вместо 5), пагинация своя. **Маккош:** оглавление т. V прочитано, содержит «Comfort of Child-Bearing Women» (1 Тим. 2:15, с. 398). Остаётся — **Маккош/Николь**: сверить остальные четыре тома и разрешить BH-10a |
+| BH-10a | Тождество «Comfort in the Time of Travail» (Парсонс, т. IX, с. 101) и «Comfort of Child-Bearing Women» (Маккош, т. V, с. 398) | `ARCHIVE_HOLD` | нужны **образы** страниц 101–133 т. IX Парсонса и 398–414 т. V Маккоша: сверить текст 1 Тим. 2:15 / Иоан. 16:21. **Пока не сверено — не утверждать, что канон 64 дискурсов одинаков у обоих издателей** |
+| BH-16 | Имя наставника: **Sancroft** или **Bancroft** | `RESOLVED` (в пользу Sancroft) | Вуд 1691, эпистол 1680, Палмер 1775, Парсонс 1815 — все дают **William Sancroft**. Маккош 1864 даёт «Mr W. Bancroft (afterwards Archbishop of Canterbury)», что **невозможно**: Банкрофт — архиепископ 1604–1610, ум. за 18 лет до рождения Чарнока. Формула: у Маккоша **порча имени** |
+| BH-17 | `CONFLICT-16` — стих похоронной проповеди: **Мф. 13:42** или **13:43** | `CONFLICT` | Джонсон 1680, Калами 1727 и корпус (том 09, §4) — **13:43**; Парсонс 1815 (Memoir, p. XX) и, вероятно, вслед за ним Маккош — **13:42**. В 13:42 «ввержены в пещь огненную», в 13:43 «тогда праведницы просветятся яко солнце» — Парсонс сам цитирует **слова 43-го стиха**, значит его «42» — опечатка. Требуется сверка титульного листа печатной проповеди, но рабочее чтение — **13:43** |
 
 ---
 
@@ -535,6 +620,7 @@ Vol. II 1684: «if in two or three smaller Tracts the Author seem not altogether
 |---|---:|---:|---|
 | Продолжение 16.11.2026 (после передачи) | ≈14 | ≈46 | Поиски: «366 5s 1d», цены и итоги аукциона, Калами и пожар, Wing C3711A, ESTC R15604, Michael Hide Exeter, priced copies, Lawler, Supplement 1674, Two Discourses 1699, Folger CC BY-SA. Чтения: Пирсон (chunks 2–9), IA-каталог 1680 (chunk 4 + ранее 0–7), IA-метаданные двух микрофильмов 1682, ESTC R15604 / R231290 / R24823 / R21459(контроль), Folger записи 147608, 470309, 126705, 133622, 134068, 148053, 200087, 846678, 51421, Lawler (chunks 13–19, 30), BM *List of Catalogues* (chunks 0–2), Christie's Lauderdale (chunks 1, 3), Folger CC BY-SA (Folgerpedia) |
 
+| Проход BH-10 / Парсонс 1815 (16.11.2026) | 0 | ≈9 | Чтения: IA `worksoflaterevst01char` (chunks 0–3: титул, Memoir полностью, CONTENTS), `worksoflaterevst02–09char` (по chunk 0: титул + CONTENTS каждого тома), `completeworksofs01char` (chunks 0–1, Маккош: матрикуляция, Банкрофт/Сэнкрофт, сноска о Топлади), `completeworksofs05char` (chunk 0: CONTENTS т. V Маккоша), IA full-text `worksoflaterevst05char` по «child-bearing» и «Timothy» (в т. V Парсонса этих заглавий нет). Поисков не было |
 | Проход BH-2 (16.11.2026, экземпляр с ценами) | 0 | ≈6 | Чтения: JISC Library Hub Discover (`title=bibliotheca charnockiana`; `q=charnockiana`; `id=91830889` в JSON и HTML; `q=charnock&fromdate=1680&todate=1680`), попытка Manchester Primo API (недоступен из пескари), проверка Christie's Lauderdale (лот 49) и Bodleian LibGuides по аукционным каталогам |
 | Проход BH-8 (16.11.2026, «1702») | ≈6 | ≈12 | Поиски: «Charnock 1702 folio third edition», «MDCCII Works reissue», ESTC-запросы. Чтения: JISC Library Hub Discover (`author=charnock stephen`; `title=works of the late learned divine…`; `q="third edition corrected" charnock`; `date=1702`; `fromdate=1701&todate=1705`), Harvard HOLLIS API (`Charnock works existence attributes`; `"Charnock" AND "1702"`), OpenLibrary search (два запроса), IA `worksoflaterevst01char` (full-text «1702» → 0), `archive.org/metadata` двух объектов, ESTC/CERL (не поисковый), Google Books API (квота исчерпана) |
 | Проход BH-6 (16.11.2026, закрытие HOLD) | 0 | ≈14 | Чтения: IA full-text `continuationofac01cala` (запросы «Library was burnt», «not large», «no Notes in the Pulpit», «Prefatory Epistle»), `continuationofac02calaiala` («Charnock», «not large»), `bim_…1713_2` («Library», «burnt», «Applauded», «Cawton», «Senior Proctor», «not large»), `nonconformistsm01cala` («Charnock», «not large»), плюс `djvu.txt` chunks 41, 43–45, 61–64 (Калами 1727) и 57, 63–64 (Палмер 1775), метаданные двух объектов IA, `advancedsearch` по *Nonconformist's Memorial*. Поисков не было: задача решалась адресными чтениями известных объектов |
@@ -543,7 +629,7 @@ Vol. II 1684: «if in two or three smaller Tracts the Author seem not altogether
 
 ---
 
-## 11. Сводка в девять строк
+## 11. Сводка в десять строк
 
 1. Пожар 1666 г. стоит на одном современном свидетельстве, сформулированном как мнение (Джонсон 1680), и на одном позднем — **Калами 1727, т. I, с. 81**; место, размер и состав погибшего собрания не документированы, кроме одного названного документа. Знаменитое «not large» Калами **не принадлежит**: это **Палмер 1775, т. I, с. 161**, склеивший фразу Адамса–Вила 1680 г. с фразой Калами 1727 г.
 2. Каталог 1680 г. прочитан целиком: он не содержит ни общего числа лотов, ни суммы выручки, ни имени аукционера, ни упоминания пожара.
@@ -553,4 +639,5 @@ Vol. II 1684: «if in two or three smaller Tracts the Author seem not altogether
 6. Издание 1682 г. существует в двух состояниях (C3711 и C3711aA с импрессом Michael Hide в Эксетере); титульный лист по образу не верифицирован и по правам закрыт.
 7. **Найден экземпляр каталога с рукописными ценами** (Manchester, John Rylands, JISC 91830889, интерлинированный): £366 5s 1d из «непроверяемого» стало «проверяемым в одном месте»; этот же экземпляр закрывает и пересчёт лотов.
 8. Год **1702** — призрачное издание (`GHOST_EDITION`): сводные каталоги и IA знают только 1699 г., титул которого сам говорит «The third edition corrected»; ошибка идёт от Маккоша 1864.
-9. Редакторская цепь 1680–1699 документирована дословно: два переписчика с взаимной сверкой, два корректора-редактора, третий наблюдатель за печатью, стенограммы двух постоянных слушателей и прямые жалобы на «imperfect Notes» посторонних изданий.
+9. **Прочитан Парсонс 1815–1816 — первое издание с аппаратом.** Он даёт: точные годы томов (I–VII — 1815, VIII–IX — 1816), состав всех девяти томов, датировку предисловия («Leeds, August 1, 1815») и **две поправки к позднейшей традиции**: наставник — **Сэнкрофт**, а не «Банкрофт» Маккоша; очки и «close reader» — уже у Парсонса, до Маккоша. Заодно `CONFLICT-02`: у Парсонса даты матрикуляции нет вовсе, значит «8 июля 1642» — не из биографической традиции, а из университетского регистра.
+10. Редакторская цепь 1680–1699 документирована дословно: два переписчика с взаимной сверкой, два корректора-редактора, третий наблюдатель за печатью, стенограммы двух постоянных слушателей и прямые жалобы на «imperfect Notes» посторонних изданий.

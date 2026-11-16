@@ -590,8 +590,8 @@ Wood 1691, Calamy 1727, DNB 1887, Symington 1853, McCosh 1864, ODNB (Greaves), *
 
 | Год | Издание |
 |---|---|
-| 1815 | *The works of the late Rev. Stephen Charnock*, ed. Edward Parsons (1762–1833) — London: Printed for Baynes [etc.]; Leeds: Robinson, Son, and Holdsworth. IA `worksoflaterevst01char` (**см. `CONFLICT-11`**) |
-| 1816 | 9 vols. 8vo, ed. Rev. Edward Parsons of Leeds (по DNB) (**см. `CONFLICT-11`**) |
+| 1815 | *The works of the late Rev. Stephen Charnock*, ed. Edward Parsons (1762–1833) — London: Printed for Baynes [etc.]; Leeds: Robinson, Son, and Holdsworth. **Тома I–VII датированы 1815** на титуле (сверено 2026-11-16 по всем девяти томам IA `worksoflaterevst01char`…`09char`). Предисловие: «Leeds, August 1, 1815» |
+| 1816 | **Тома VIII–IX датированы 1816** на титуле (там же). 9 vols. 8vo, ed. Rev. Edward Parsons of Leeds (по DNB) (**см. `CONFLICT-11`**) |
 | 1830 | *Discourses on Christ crucified*, Presbyterian Board of Publication |
 | 1835 | Thomas Tegg and Son |
 | 1838 | *A discourse proving weak grace victorious*, Religious Tract Society |
@@ -611,8 +611,21 @@ Wood 1691, Calamy 1727, DNB 1887, Symington 1853, McCosh 1864, ODNB (Greaves), *
 | IA `worksoflaterevst01char` | Publication date **1815**, London: Printed for Baynes; Leeds: Robinson, Son, and Holdsworth |
 | DNB | «1816 in 9 vols. 8vo, ed. the Rev. Edward Parsons of Leeds» |
 
-**Разрешение:** не разрешён. Вероятно, тома выходили в 1815 и 1816. Рабочая формулировка:
-**1815–1816, ed. Edward Parsons**.
+**Разрешение (2026-11-16):** `CONFLICT-11` **закрыт по титулам**. Прочитаны титульные листы всех
+девяти томов (IA `worksoflaterevst01char`…`09char`, экземпляр Princeton Theological Seminary,
+шифр `BX 9315 .C427 1815`): **I–VII — 1815, VIII–IX — 1816**. Расхождение «1815 или 1816» —
+не ошибка одного из источников, а **две партии одного издания**. Рабочая формулировка:
+**1815–1816, ed. Edward Parsons**; при точной ссылке указывать том и его год.
+
+> Оговорка по OCR: в томе V год напечатан с дефектом литеры и распознаётся как «1810», в томе VII —
+> как «ISli». Оба читаются по серии как **1815** и подтверждаются общей датировкой предисловия.
+> Тома VIII и IX читаются чисто как **1816**.
+
+**Что даёт Парсонс сверх титулов** (разбор — том 18, § 1.6–1.6а): девятитомник — **не другая
+редакция**, а другая раскладка того же корпуса; пагинация внутри томов своя, поэтому примечания
+«по Парсонсу» и «по Маккошу» нельзя смешивать. Одно расхождение требует сверки образов:
+в т. IX Парсонса стоит **«Comfort in the Time of Travail»** (с. 101), у Маккоша на том же месте —
+**«Comfort of Child-Bearing Women»** (1 Тим. 2:15, т. V, с. 398). Это **BH-10a**, том 18 § 9.
 
 **PRDL** (`prdl.org/author_view.php?a_id=201`) перечисляет 22 заглавия / 54 тома изданий Чарнока,
 включая немецкий перевод (Berlin, 1710).

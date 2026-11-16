@@ -182,6 +182,8 @@ Calamy объясняет причину: «his Disadvantagious Way of Reading w
 при жизни; его знали «более судящая часть человечества», но не толпа. И причину Calamy называет
 совершенно прозаическую — очки и чтение с бумаги.
 
+**Уточнение об источнике (2026-11-16).** Дословная формула, которую использует корпус — «close reader of his sermons» и «reading with a glass» — стоит **у Парсонса 1815** (Memoir, p. XVIII): «In his younger days, he preached without the use of notes; but towards the close of his life, his memory beginning to fail him, he became a **close reader** of his sermons; and to this disadvantage was added his **reading with a glass**.» Калами 1727 (т. I, с. 81) даёт ту же мысль в другой формулировке: «**penn'd and read his Sermons verbatim**». Значит перед нами **не одна цитата, а две формулировки одного сведения**, и при цитировании надо брать **Калами** (ближе к событию), а Парсонса указывать как **посредника**, через которого это попало к Маккошу и в XIX в. Разница смысловая небольшая, но она есть: «close reader» — манера, «penn'd and read verbatim» — способ подготовки текста.
+
 **Ограничение.** Calamy 1713 — `B1`, и он мог знать Чарнока только понаслышке. Но он —
 **единственный** свидетель этой черты, и его объяснение конкретно и проверяемо косвенно: отдел
 уже установил, что фолиант 1682 был «transcrib'd from his Notes» (Calamy) и что проповеди

@@ -31,7 +31,9 @@ FAM-04:1815/1816и биографические ограничения сохр�
 
 **CONFLICT-1 — переезд и fellowship —16§§21.149–21.150.** Разрешён как разделение событий: переезд 1649, fellowship 1650 (Wood 1691, CCEL).
 
-**CONFLICT-11 — Parsons-издание 1815–1816 —16§§21.147–21.148.** Разрешён как диапазон 1815–1816 по HathiTrust, IA, Google Books, DNB.
+**CONFLICT-11 — Parsons-издание 1815–1816 —16§§21.147–21.148, 18§1.6.** **Закрыт по титулам 2026-11-16**: прочитаны титульные листы всех девяти томов (IA `worksoflaterevst01char`…`09char`) — **I–VII 1815, VIII–IX 1816**, две партии одного издания. Предисловие датировано «Leeds, August 1, 1815».
+
+**Парсонс 1815 — прочитан (18§1.6, 18§1.6а).** Девятитомник = **не другая редакция**, а другая раскладка того же корпуса (9 томов вместо 5 у Маккоша), пагинация своя. Попутно: **BH-16** — наставник Сэнкрофт, а не «Банкрофт» (у Маккоша 1864 порча имени; Банкрофт-архиепископ умер в 1610); **BH-10a** — «Comfort in the Time of Travail» (Парсонс IX.101) ↔ «Comfort of Child-Bearing Women» (Маккош V.398), тождество не сверено.
 
 **CONFLICT-14 — Fowler-тексты 1677 и Southwark-служение —16§§21.145–21.146, 21.151, 21.154, 21.155.** Чарнок не упомянут в Fowler-элегиях; Fowler-элегия 1677 (A37311) прочтена полностью: Crosby Hall НЕ упоминается; Fowler проповедовал на Ин. 16:8 и Наум 2; Fowler описан как Minister "formerly of Reading, and lastly of London" (путь Marlborough→Oxford→Reading→Prison→London); Crosby Hall congregation мигрировала в Maze Pond, Southwark только в 1769 (после ЧARNOCK); Fowler мог основать congregуцию в Unicorn Yard, Tooley Street. «Fowler's place» скорее Southwark/London-место/конVENTICLE, чем Crosby Hall. Физ. места разные: Fowler — Southwark/London, ЧARNOCK — Crosby Hall (1675–1680).
 
