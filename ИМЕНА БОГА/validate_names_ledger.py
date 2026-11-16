@@ -471,6 +471,8 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-ARUCH-HASHULCHAN-YD27524-KESYAH-TWO-WORD-DECISION": "ARUCH_HASHULCHAN_YD27524_EXPLICIT_TWO_WORD_HALAKHIC_RULING_USING_FIVE_WORD_MASORAH_LIST",
     "SRC-OUTHWAITE-2023-JTS-ENA4107-20-EX6-2-3": "OUTHWAITE_2023_AUTHOR_ORIGINAL_JTS_PHOTO_EX6_2_3_NOT_INDEPENDENT_GLYPH_COLLATION",
     "SRC-NETS-PERKINS-EXODUS-2009-GOTTINGEN-TRANSLATION": "NETS_PERKINS_EXODUS_TRANSLATION_INTRO_FOLLOWS_WEVERS1991_EDITED_GREEK_NO_ORIGINAL_APPARATUS_OR_MANUSCRIPT",
+    "SRC-CUL-TS-AS36-36-EX3-14-ORIGINAL-IIIF": "CUL_TS_AS36_36_ORIGINAL_ASHKAR_SCROLL_EX3_14_PHOTO_DIRECT_VISIBLE_EHYEH_FORMULA_NO_FULL_COLLATION",
+    "SRC-CUL-TS-NS282-88-EX17-16-ABSENT-ORIGINAL-IIIF": "CUL_TS_NS282_88_ORIGINAL_ASHKAR_SCROLL_EX17_16_NOT_SURVIVING_CATALOG_EX17_6_9_AND_18_4_14",
 }
 
 
@@ -2459,6 +2461,55 @@ def validate_source_access(sources: dict) -> list[str]:
         if rid == "SRC-SBLGNT-JOHN10":
             if source.get("rightsState") != "RIGHTS_UNKNOWN":
                 errors.append(f"{prefix}: host SBLGNT webpage rights wrongly inherited from publisher license")
+        if rid == "SRC-CUL-TS-AS36-36-EX3-14-ORIGINAL-IIIF":
+            cul = source.get("culImageAudit20261116")
+            expected_cul = {
+                "physicalShelfmark": "T-S AS 36.36",
+                "sourceCatalogueSurvivingRanges": ["Exodus 2:14–3:7", "Exodus 3:11–21"],
+                "originalDigitalPhotoOpened": True,
+                "targetExodus3_14WithinCatalogueRange": True,
+                "ehyehAsherEhyehVisibleInEnhancedImage": True,
+                "fullyIndependentVerseCollationDone": False,
+                "independentTextualTraditionVersusNs282_88": False,
+                "containsExodus17_16": False,
+                "photoPublicWebReproductionGranted": False,
+            }
+            if (source.get("sourceRole") != "CUL_TS_AS36_36_ORIGINAL_ASHKAR_SCROLL_EX3_14_PHOTO_DIRECT_VISIBLE_EHYEH_FORMULA_NO_FULL_COLLATION"
+                or source.get("evidenceClass") != "A2"
+                or source.get("accessState") != "PARTIAL_OBJECT"
+                or source.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+                or source.get("rightsState") != "PERMISSION_REQUIRED"
+                or source.get("publicationState") != "BLOCKED"
+                or source.get("criticalEditionCollated") is not False
+                or set(source.get("holds", [])) != {"EVIDENCE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"}
+                or not isinstance(cul, dict)
+                or any(cul.get(key) != value for key, value in expected_cul.items())):
+                errors.append(f"{prefix}: Cambridge original folio scope cannot certify missing verse, independent tradition, completed collation or photo rights")
+
+        if rid == "SRC-CUL-TS-NS282-88-EX17-16-ABSENT-ORIGINAL-IIIF":
+            cul = source.get("culImageAudit20261116")
+            expected_cul = {
+                "physicalShelfmark": "T-S NS 282.88",
+                "sourceCatalogueSurvivingRanges": ["Exodus 17:6–9", "Exodus 18:4–14"],
+                "originalDigitalPhotoOpened": True,
+                "targetExodus17_16WithinCatalogueRange": False,
+                "targetExodus17_15WithinCatalogueRange": False,
+                "independentTextualTraditionVersusAs36_36": False,
+                "manuscriptPhotoIsNotVerse17_16Evidence": True,
+                "photoPublicWebReproductionGranted": False,
+            }
+            if (source.get("sourceRole") != "CUL_TS_NS282_88_ORIGINAL_ASHKAR_SCROLL_EX17_16_NOT_SURVIVING_CATALOG_EX17_6_9_AND_18_4_14"
+                or source.get("evidenceClass") != "A2"
+                or source.get("accessState") != "PARTIAL_OBJECT"
+                or source.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+                or source.get("rightsState") != "PERMISSION_REQUIRED"
+                or source.get("publicationState") != "BLOCKED"
+                or source.get("criticalEditionCollated") is not False
+                or set(source.get("holds", [])) != {"EVIDENCE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"}
+                or not isinstance(cul, dict)
+                or any(cul.get(key) != value for key, value in expected_cul.items())):
+                errors.append(f"{prefix}: Cambridge original folio scope cannot certify missing verse, independent tradition, completed collation or photo rights")
+
         if rid == "SRC-NETS-PERKINS-EXODUS-2009-GOTTINGEN-TRANSLATION":
             evidence = source.get("netsPdfAudit20261116")
             if (source.get("sourceRole") != "NETS_PERKINS_EXODUS_TRANSLATION_INTRO_FOLLOWS_WEVERS1991_EDITED_GREEK_NO_ORIGINAL_APPARATUS_OR_MANUSCRIPT"
