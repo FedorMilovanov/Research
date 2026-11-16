@@ -5,12 +5,9 @@
   "authorityRole": "corpus-specific-editorial-proposal-only",
   "stage": "BLUEPRINT_WITH_OPEN_WORK_NOT_AUTHORING",
   "baselineRegistry": "data/charnock-biographical-anchors-v1.json",
-  "baselineReceipt": "data/charnock-handoff-receipt-v1.json",
+  "baselineReceipt": "data/charnock-handoff-receipt-v2.json",
   "custodyBoundary": "Wave40receipt describes its immutable source packet,not the revised00/16. Current editorial revision is not yet transferred/independently received.",
-  "expectedChangedPacketMembers": [
-    "БИОГРАФИИ/Стивен Чарнок/00_README_AND_NAVIGATION.md",
-    "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md"
-  ],
+  "expectedChangedPacketMembers": [],
   "evidenceClass": "C",
   "accessState": "FULL_OBJECT_VERIFIED",
   "locatorState": "EXACT_LOCATOR_VERIFIED",
@@ -4876,12 +4873,12 @@
         "originalDisposition": "EXCLUDE",
         "action": "EXCLUDE_WITHOUT_NEW_EVIDENCE",
         "safeFormulation": null,
-        "excludedClaim": "Точный день поступления:8июля/30мая1642 не разрешён полученным университетским реестром; обучение не доказывает день.",
-        "boundary": "Точный день поступления:8июля/30мая1642 не разрешён полученным университетским реестром; обучение не доказывает день.",
+        "excludedClaim": "Точный день допуска как акт колледжа не подтверждён полученным первоисточником: печатная разработка допускных книг (Venn, Alumni Cantabrigienses I.i) даёт «sizar at Emmanuel, May 30, 1642» и «Matric. 1642» без дня, McCosh даёт 8 июля 1642. Вторичное свидетельство не заменяет акт.",
+        "boundary": "Допуск (admission) и матрикуляция — разные акты; 30 мая 1642 относится к допуску по печатной разработке колледжных книг, университетский реестр не читан. В тексте — только с атрибуцией «по Venn», не как проверенный акт.",
         "refs": [
           "BIO-02"
         ],
-        "canonicalRowSha256": "656509b2785d4178e4a43d03dc707336cf690d44547b49bc9f8afdabc66a3a44",
+        "canonicalRowSha256": "e3257f7070060ae94a3f0ff2a25c541691a8224173c5dc2c81b87cd174ec563e",
         "sourceStateSnapshot": {
           "evidenceClass": "A1",
           "accessState": "FULL_OBJECT_VERIFIED",

@@ -128,5 +128,8 @@
   "verifiedBy": "Arena coding agent",
   "verificationMethod": "google_drive__download_file + local sha256sum comparison",
   "verificationBoundary": "Независимый readback выполнен для квитанции wave40 v1 (sha256 совпал: 3a0fc081...). Локальные SHA256 файлов манифеста v2 (00/16/скрипты) пересчитаны после правок §21.140–21.153; их загрузка на Drive и readback остаются следующим шагом для полного закрытия ED-08.",
-  "nextAction": "Загрузка обновлённых файлов манифеста v2 (00, 16, скрипты) на Drive и destination SHA256 readback для каждого; старая квитанция wave40 не переименована."
+  "nextAction": "Загрузка обновлённых файлов манифеста v2 (00, 16, скрипты) на Drive и destination SHA256 readback для каждого; старая квитанция wave40 не переименована.",
+  "supersededBy": "data/charnock-handoff-receipt-v2.json",
+  "supersededAtUtc": "2026-11-16T09:51:57Z",
+  "supersessionNote": "Wave41 receipt supersedes this snapshot. The fileManifest entries for 00_README/16 predate the burial correction and are NOT current; manifestSha256 is not reproducible by any in-repo generator, so this document is retained as a historical snapshot only."
 }

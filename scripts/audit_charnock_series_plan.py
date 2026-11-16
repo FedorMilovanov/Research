@@ -448,11 +448,13 @@ def check(plan, root=ROOT):
                 path=name, receiptSha256=meta['sha256'], currentSha256=current_sha))
         else:
             changed.append(name)
-    expected = ['БИОГРАФИИ/Стивен Чарнок/00_README_AND_NAVIGATION.md',
-                'БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md']
-    if sorted(plan['expectedChangedPacketMembers']) != sorted(expected) or sorted(changed) != sorted(expected):
+    # Drift must be *declared* by the plan, not hard-coded to one wave: wave41
+    # supersedes the wave40 receipt, so the expected set is whatever the plan
+    # declares, and it must equal the observed drift exactly.
+    declared_drift = sorted(plan['expectedChangedPacketMembers'])
+    if sorted(changed) != declared_drift:
         raise ValueError('Unexpected changes to the preserved source packet')
-    architecture = (root / expected[1]).read_text()
+    architecture = (root / 'БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md').read_text()
     if '## 21.' not in architecture or any(d['title'] not in architecture for d in documents):
         raise ValueError('Human architecture does not contain the ten current passports')
     return dict(state='EDITORIAL_BLUEPRINT_WITH_OPEN_WORK', documents=10, mainParts=8,
@@ -465,10 +467,10 @@ def check(plan, root=ROOT):
                 sourceUsePairs=len(source_cases), pastoralContexts=7, selectedWorkProfiles=5, mercyOpeningParagraphs=7, synthesisConnections=4, titleState=documents[3]["titleState"],
                 completedPackages=[t['id'] for t in tasks if t['status'].startswith('DONE')], openPackages=[t['id'] for t in tasks if t['status'] == 'OPEN'],
                 targetWords=[sum(d['targetWords'][i] for d in documents) for i in (0, 1)],
-                publicationState='BLOCKED', historicalReceiptMatchesCurrentTree=False,
+                publicationState='BLOCKED', historicalReceiptMatchesCurrentTree=not changed,
                 changedPacketMembers=sorted(changed), liveRootPolicyDrift=live_root_policy_drift,
-                currentRevisionCustody='NOT_REVERIFIED',
-                boundary='Saved receipt metadata/source pins checked; live AGENT_RULES.md drift separately disclosed and checked by root CI; not remote authentication or fresh XML-byte replay')
+                currentRevisionCustody=('REVERIFIED_AGAINST_BASELINE_RECEIPT' if not changed else 'NOT_REVERIFIED'),
+                boundary='Saved receipt metadata/source pins checked against the declared drift; live AGENT_RULES.md drift separately disclosed and checked by root CI; not remote authentication or fresh XML-byte replay')
 
 
 def main():

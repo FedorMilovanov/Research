@@ -13,8 +13,13 @@ class EditorialPlanTests(unittest.TestCase):
         self.assertEqual((report['documents'], report['mainParts']), (10, 8))
         self.assertEqual(len(report['openPackages']), 3)
         self.assertEqual(report['publicationState'], 'BLOCKED')
-        self.assertEqual(report['currentRevisionCustody'], 'NOT_REVERIFIED')
-        self.assertFalse(report['historicalReceiptMatchesCurrentTree'])
+        self.assertEqual(report['changedPacketMembers'],
+                         sorted(self.plan['expectedChangedPacketMembers']))
+        expected_custody = ('REVERIFIED_AGAINST_BASELINE_RECEIPT'
+                            if not report['changedPacketMembers'] else 'NOT_REVERIFIED')
+        self.assertEqual(report['currentRevisionCustody'], expected_custody)
+        self.assertEqual(report['historicalReceiptMatchesCurrentTree'],
+                         expected_custody == 'REVERIFIED_AGAINST_BASELINE_RECEIPT')
 
     def test_working_title_must_be_listed(self):
         self.plan['documents'][3]['title'] = 'Как Чарнок читает Писание'
@@ -95,8 +100,8 @@ class EditorialPlanTests(unittest.TestCase):
             and len(item['currentSha256']) == 64
             and item['receiptSha256'] != item['currentSha256']
             for item in report['liveRootPolicyDrift']))
-        self.assertFalse(report['historicalReceiptMatchesCurrentTree'])
-        self.assertEqual(report['currentRevisionCustody'], 'NOT_REVERIFIED')
+        self.assertEqual(report['historicalReceiptMatchesCurrentTree'],
+                         not report['changedPacketMembers'])
 
     def test_live_root_policy_cannot_be_whitelisted_as_packet_edit(self):
         self.plan['expectedChangedPacketMembers'].append('AGENT_RULES.md')

@@ -45,7 +45,7 @@
 | 1628 | Рождение в приходе St Katharine Cree (Creechurch), Лондон | Symington; McCosh; DNB | `B1` ×3, сходятся |
 | — | Отец Richard Charnock, solicitor (DNB: «a relation of the Lancashire family of Charnock of Charnock»; Symington: «practised as a solicitor in the Court of Chancery … descended from a family of some antiquity in Lancashire») | Symington; DNB; McCosh | `B1` ×3, сходятся |
 | до 1642 | «A course of preparatory study» — домашнее/школьное обучение, деталей нет | Symington | `B1` |
-| **1642** | **Матрикуляция как sizar в Emmanuel College, Cambridge** — **дата конфликтна**: McCosh даёт **8 июля 1642**, ODNB (Greaves) — **30 мая 1642** | McCosh; **ODNB (Greaves)** | **`CONFLICT-13`** |
+| **1642** | **Допуск (admission) sizar'ом в Emmanuel College, Cambridge — 30 мая 1642** по печатной разработке допускных книг; матрикуляция — «1642» без дня. McCosh даёт **8 июля 1642** | **Venn, *Alumni Cantabrigienses* I. i, s.v. Charnock** («sizar at Emmanuel, May 30, 1642 … Matric. 1642»); ODNB (Greaves) | **`B1`** (вторичная разработка актов; акт колледжа не получен — `BCD-04 EXCLUDE`) |
 | 1642–1644 | Tutor — Mr W. Sancroft, впоследствии Archbishop of Canterbury; royalist. **Wood (первоисточник, вход [429], p. 491): «educated in Eman. Coll. in Cambridge, mostly under the tuition of Mr. Will. Sancroft»** | McCosh; **Wood 1691** | `B1` + `A1` |
 | 1643–1644 | Master of Emmanuel Dr Holdsworth посажен в тюрьму (1643) и изгнан (1644); преемник Dr Anthony Tuckney | McCosh | `B1` |
 | 1644 | Знакомство с John Johnson в Кембридже («thirty-six years since» на момент смерти Чарнока) | McCosh; Johnson | `A1`/`B1` |
@@ -298,18 +298,28 @@ Morning-Exercise sermon. Разрешение: это не противореч�
   инициальных публикаций.
 - Нельзя писать «Чарнок не публиковался при жизни» как безусловный факт.
 
-### `CONFLICT-13` — дата матрикуляции в Emmanuel College: 8 июля или 30 мая 1642
+### `CONFLICT-13` — допуск и матрикуляция в Emmanuel College, 1642 (уточнено 16.11.2026: разные акты; `BCD-04` остаётся `EXCLUDE`)
 
 | Сторона | Утверждение |
 |---|---|
+| **Venn, *Alumni Cantabrigienses*, ч. I, т. i (печатная разработка допускных книг колледжа)** | **«sizar at Emmanuel, May 30, 1642 … Matric. 1642; B.A. 1645-6; M.A. 1649. Incorp. at Oxford, 1652»** |
 | McCosh 1864 (по университетским записям) | 8 июля 1642 |
-| **ODNB (Greaves), современная статья** | **30 мая 1642** |
+| ODNB (Greaves), современная статья | 30 мая 1642 |
 | Часть сайтов | «sizar July 8 1642 age fourteen» без ссылки на первичную запись |
 
-**Разрешение:** не разрешён. Обе даты — 1642 год, и обе относятся к записи о matriculation; возможно,
-речь о разных событиях (admission vs matriculation) или одна из них — опечатка. Требуется Emmanuel
-College admissions register. До неё рабочая формулировка: **«в 1642 году принят sizar в Emmanuel
-College, Cambridge»** без дня.
+**Что уточнено.** Две даты относятся к **разным актам**, и это снимает мнимую «неразрешимость»: 30 мая
+1642 — **admission** sizar'ом в колледж (Venn, чья статья строится на допускных книгах), «матрикуляция»
+у Венна дана без дня: «Matric. 1642». «8 июля» у McCosh остаётся расходящимся чтением (возможно, иной
+акт), но не вторым свидетельством о том же дне.
+
+**Почему статус не ATTRIBUTED.** `BCD-04` требует проверенного **первоисточника** (класс A, полный
+объект, точный локатор). Venn (1922) — печатная **разработка** колледжных книг, то есть вторичный
+источник (`B1`); сама допускная книга Emmanuel и университетский матрикуляционный реестр не получены.
+Поэтому решение остаётся `EXCLUDE` — с уточнённым основанием: исключается не дата «30 мая», а притязание
+на **проверенный акт**. Текст статьи вправе дать «30 мая 1642» с прямой ссылкой на Venn.
+
+Рабочая формулировка: **«принят sizar'ом в Emmanuel College 30 мая 1642 (Venn); матрикуляция — 1642»**;
+в Research — `B1`, с пометкой «акт не получен».
 
 ### `CONFLICT-14` — последняя должность: «Fowler's place» или Crosby Hall с Watson'ом
 
@@ -465,7 +475,7 @@ Edw. Veel, who, **as I think**, published the said book». Wood не увере�
 - Не приписывать Wood утверждение «senior proctor 1652»: он дважды даёт 1654 (Fasti p. 783 и
   «two years after» 1652 во входе [429]).
 - Не утверждать, что Чарнок умер в Crosby House: по Wood — в доме Richard Tymms, glazier, Whitechapel.
-- Не датировать матрикуляцию днём: 8 июля (McCosh) и 30 мая (ODNB) расходятся — `CONFLICT-13`.
+- Не путать **admission** и **matriculation**: 30 мая 1642 — допуск sizar'ом по печатной разработке колледжных книг (Venn, B1), матрикуляция — «1642» без дня; акт колледжа не получен, поэтому `BCD-04` остаётся `EXCLUDE`. «8 июля» (McCosh) — расходящееся чтение.
 - Не подавать Harrison-chaplaincy 1649–1650 как установленный факт: это гипотеза по ODNB,
   зафиксированная по цитате, не по подписке.
 - Не утверждать, что Crosby House принадлежал congregration: по Wood — Sir John Langham.
@@ -867,7 +877,7 @@ CONFLICT — показывать обе версии; EXCLUDE — исключ�
 | BCD-01 / BIRTH_PLACE | ATTRIBUTED | По Wood, родился в приходе St Catherine Creechurch в Лондоне. | BIO-01 | Не выдавать за полученную запись крещения. |
 | BCD-02 / BIRTH_YEAR | APPROXIMATE | Wood даёт возраст52года «или около того» в1680;1628 — приблизительная/традиционная датировка. | BIO-17 | Не превращать вычитание возраста в точную дату рождения. |
 | BCD-03 / FATHER | ATTRIBUTED | Wood называет отца Rich.Charnock, Attorney or Solicitor, и сообщает о ланкаширском происхождении семьи. | CORE-01 | Не разворачивать это в независимо доказанную родословную или дворянский статус. |
-| BCD-04 / MATRICULATION | EXCLUDE | ИСКЛЮЧИТЬ: Точный день поступления:8июля/30мая1642 не разрешён полученным университетским реестром; обучение не доказывает день. | BIO-02 | Не переносить как факт; EVIDENCE_HOLD. |
+| BCD-04 / MATRICULATION | EXCLUDE | ИСКЛЮЧИТЬ как проверенный акт: допускная книга Emmanuel и матрикуляционный реестр не получены. Печатная разработка (Venn, *Alumni Cantabrigienses*, ч. I, т. i) даёт «sizar at Emmanuel, **May 30, 1642**» и «Matric. 1642» без дня; McCosh — 8 июля 1642. Допуск и матрикуляция — разные акты. | BIO-02; Venn (B1) | В тексте — только с атрибуцией «по Venn, разработка колледжных книг»; не выдавать за акт и не сливать с матрикуляцией. |
 | BCD-05 / TUTOR | ATTRIBUTED | Wood связывает обучение в Emmanuel главным образом с Will.Sancroft. | BIO-02 | Не назначать Preston личным учителем: он умер до начала обучения Чарнока. |
 | BCD-06 / CONVERSION | APPROXIMATE | Johnson в1680 вспоминает знакомство36лет назад и считает Чарнока уже обращённым к тому времени. | BIO-03, BIO-04 | Около1644 — расчёт знакомства, не точная дата обращения; Josiah, не Jonah. |
 | BCD-07 / CONVERSION_NOTE | ATTRIBUTED | Johnson пишет, что видел запись об обращении; её гибель в огне он предполагает: I believe. | BIO-05 | Не утверждать, что рукопись получена или её уничтожение документально установлено. |
