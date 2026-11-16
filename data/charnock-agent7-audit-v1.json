@@ -113,6 +113,13 @@
       "route": "full OCR of Eyre, Transcript of the Registers ... vol. III (1913-14), IA 1913transcriptof03statuoft",
       "verdict": "ACCEPT",
       "locator": "Eyre vol. III, printed p. 138 (register leaf [17]); images 150-151"
+    },
+    {
+      "id": "V-18",
+      "claim": "Charnock preached in St Werburgh's Church, Dublin",
+      "route": "Reid, History of the Presbyterian Church in Ireland, vol. II (1853), full OCR + search inside (IA historyofpresbyt02reid)",
+      "verdict": "ACCEPT (secondary, 1853)",
+      "locator": "printed p. 202 (leaf 224; offset 22 verified at leaves 25 and 245)"
     }
   ],
   "rejectedOrCorrected": [
@@ -213,8 +220,9 @@
         "PR #971 article, note [5]"
       ],
       "error": "No locator; conflicts with Research BCD-17 EXCLUDE",
-      "verdict": "HOLD",
-      "minimalFix": "Keep St Werburgh + Christ Church; summarise Laurence in one clause with locator"
+      "verdict": "HOLD (narrowed)",
+      "minimalFix": "Keep St Werburgh (M'Cosh 1864; Reid 1853, ii.202; DNB 1887) and Christ Church with attribution (M'Cosh's supposition; Reid places Harrison, not Charnock, there); drop St John / St Catherine / St Patrick / St Kevin until the Laurence locator.",
+      "newEvidence": "J. S. Reid, History of the Presbyterian Church in Ireland, vol. II (1853), p. 202 (IA historyofpresbyt02reid, leaf 224): Charnock 'became a fellow of the college and a preacher in St. Werburgh's Church' - independent of DNB and M'Cosh for St Werburgh; says nothing about the other churches."
     },
     {
       "id": "R-10",
@@ -361,6 +369,12 @@
       "finding": "The three posthumous books were entered as one package on the last day of the legal year 1682/3; 'Vollume 1st' and '2nd vollume' are separate entries, so the two-folio structure is a registration fact; the register calls him 'Batchelor in divinity, and sometimes fellow of New Colledge in Oxford' - a corporate (not booksellers') witness independent of Wood, though not an act of degree.",
       "use": "dated scene for the editorial-history paragraph; corroborates N-03 and the New College/B.D. attribution; does not supply a degree date (BCD-04/CONFLICT-13 distinction stands)",
       "status": "ACCEPT (source read); BCD-04 date question unaffected"
+    },
+    {
+      "id": "N-08",
+      "finding": "Reid (1853, ii.202) calls Charnock 'a fellow of the college' in the Dublin context (i.e. Trinity College Dublin) - a version found neither in Wood (New College, Oxford) nor in M'Cosh.",
+      "use": "do NOT use to settle any Dublin fellowship question; no college act cited. Article should omit it.",
+      "status": "HOLD (new variant, act required)"
     }
   ],
   "conflicts": [
