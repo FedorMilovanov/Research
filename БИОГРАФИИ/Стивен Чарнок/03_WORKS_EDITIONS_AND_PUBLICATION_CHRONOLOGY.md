@@ -100,7 +100,7 @@ Adams & Veal в эпистоле 1684 называют свою публикац
 | **1683** | Второй фолиант: discourses on regeneration, reconciliation, the Lord's supper, и прочие | — |
 | **1684** | *The works of the late learned divine Stephen Charnock, B.D.* — two volumes folio, 2nd edition | Включает *Discourse of divine providence* |
 | **1699** | Две discourses с «An Advertisement to the Reader» by Edward Veal: *Man's Enmity to God*; *Mercy for the Chief of Sinners* | — |
-| **1702** | Третье издание | — |
+| **1702** | ~~Третье издание~~ | **СНЯТО 2026-11-16 как призрачное издание.** Проверено: (1) в ESTC-производных и национальных сводных каталогах записи 1702 г. нет — Library Hub Discover (JISC, замена недоступному напрямую ESTC) на запросы по автору, по заглавию и по дате даёт только **1699** («The third edition corrected», т. I; т. II — «The second edition corrected»); (2) в *List of Catalogues* и в IA-корпусе 1702 г. отсутствует; (3) единственный источник «1702» — фраза Маккоша 1864 г. и пересказ Саймингтона: «a second edition … came out in 1684, and **a third in 1702**». Но Маккош тут же описывает 1699 год как выход *Two Discourses* — то есть **«третье издание» у него и есть 1699-е**, датированное им по-другому. Вероятный механизм ошибки: 1699-е издание имеет титулы с разными датами в двух томах, и год «1702» мог быть взят из вторичной литературы, а не с титула. Формула для текста: «собрание переиздано в 1684 г.; в 1699 г. вышло издание, на титуле которого стоит „The third edition corrected“ (том II — „second edition corrected“)». Упоминать «1702» можно только как ошибку XIX в. (`GHOST_EDITION`; том 18, § 3.4 и BH-8) |
 
 **EEBO-TCP:** `A79420.0001.001` — *A discourse of divine providence: I. In general… II. In particular:
 how all Gods providences in the world, are in order to the good of his people. By the late learned
@@ -741,7 +741,7 @@ say next of the mercy, grace, and goodness of God, which he is gone to see and a
 
 - Нельзя утверждать, что *Existence and Attributes of God* был «написан как книга»: это серия
   проповедей, отредактированная посмертно.
-- Нельзя утверждать, что Nichol 1864–66 — «первое собрание сочинений»: были издания 1684, 1702, 1816.
+- Нельзя утверждать, что Nichol 1864–66 — «первое собрание сочинений»: были издания 1684 и 1699 (на титуле 1699 г. стоит «The third edition corrected»), 1815–16. **Издание 1702 года не существует** — это `GHOST_EDITION` из Маккоша 1864 (см. § 3A и том 18 § 3.4).
 - Нельзя attribуить Adams и Veal авторство содержания: они эдикторы и транскрипторы.
 - Нельзя citing Nichol как «издание, авторизованное автором»: оно посмертное.
 

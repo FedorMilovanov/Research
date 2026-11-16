@@ -249,7 +249,7 @@
 2. Наличие второго импресса («sold by Michael Hide in Exon») — документальное свидетельство **провинциального распространения** первого тома: книга не осталась в лондонском круге. Это самостоятельный факт книжной истории, которого в Research нет.
 3. Запись National Trust CHA с ценой «1li. 2s. 6d. besides carriage» и датой покупки 26 октября 1682 г. — редчайший случай **датированной покупки** первого тома; полезна как свидетельство цены и скорости распространения. Внимание: это провенанс одного экземпляра, не цена издания.
 
-### 3.4. 1683–1702
+### 3.4. 1683–1699 (ранее «1683–1702»: 1702 — призрачный год, см. ниже)
 
 | Год | Объект | Данные | Локатор | Статус |
 |---|---|---|---|---|
@@ -262,11 +262,32 @@
 | 1685 | *A Discourse of Divine Providence* — переиздание | «Printed for John Harris, at the Harrow, over against the Church in the Poultrey»; [16], 397, [3] | Folger (EEBO `99896919`) | `CATALOG_ONLY` (Wing не зафиксирован) |
 | 1699 | *Works… The third edition corrected* (2 т.) | Wing **C3704** (т. I), **C3706** (т. II); «Printed for Ben. Griffin, John Lawrence, Eliz. Harris, John Nicholson, and Tho. Cockerill»; I: [6], 648, [22] + портрет; II: [6], 758, [20] + портрет; **том II помечен «The second edition corrected»**; «To the reader» подписан Edw. Veel и Ri. Adams | Folger (EEBO 653:7 и 653:8) | `A1` (каталожная запись) |
 | 1699 | *Two Discourses: Of Man's Enmity to God (Рим 8:7); Of the Salvation of Sinners (1 Тим 1:15)* | Wing **C3713**, ESTC **R035566**; «Printed for Tho. Cockerill, at the Three Legs and Bible in the Poultrey»; [12], 76, 79–254, [2]; 148 с.; 8°; **«Publish'd from his original manuscripts by Mr. Edward Veel»**; «An Advertisement to the reader» подписан Edw. Veel; вторая часть с колонтитулом «Chiefest sinners objects of choicest mercy» | Folger 200087 (Enquiry 348220) | `A1` (каталожная запись); текст `B20167` |
-| 1702 | 3-е изд. (?) | в текущем Research значится «1702 3rd ed.» | — | **не подтверждено**; вероятно, смешение с 1699 «third edition»: требует снятия или локатора (`FAM-03`) |
+| ~~1702~~ | ~~3-е изд.~~ | **ЗАКРЫТО 2026-11-16: издания 1702 г. не существует** (`GHOST_EDITION`) | Проверено по Library Hub Discover (JISC — сводный каталог UK, рабочая замена недоступного напрямую ESTC): запросы по автору + по заглавию + по диапазону дат дают по Чарноку **только 1699** в двух вариантах описания («The third edition corrected», 2 т. in folio; т. II — «The second edition corrected»), ни одной записи 1702 г. Нет записи и в IA, Harvard HOLLIS, OpenLibrary | `GHOST_EDITION`. Источник ошибки — **Маккош 1864**: «a second edition … in two volumes, folio, came out in 1684, and **a third in 1702**», при том что следующей фразой он описывает 1699 год. «Третье издание» Маккоша = **1699**; дату 1702 он взял не с титула. Допустимая формулировка: «издание 1699 г. называет себя «The third edition corrected»» |
 | 1797 | *Discourses upon the Existence and Attributes of God, abridged… by the Rev. Griffith Williams* | ESTC **T73779**; Лондон, 8°; viii, [2], 559 с.; «Price Six Shillings and Six-Pence in Boards» | Folger 846678 | `A1` (запись); **в Research отсутствует** |
 | 1815–1816 | *The Works of the Late Rev. Stephen Charnock… with a prefatory dedication and memoir* (Edward Parsons), 9 т. 8° | IA: `worksoflaterevst04char`, `…05char`, `…08char` (1815) | IA | `CATALOG_ONLY` (состав томов не сверен) |
 | 1840 / 1853 / 1859 | *The Doctrine of Regeneration… selected from the writings*; *Discourses upon the Existence and Attributes of God*, изд. с «Life and Character» Уильяма Саймингтона (R. Carter, New York, 1859; первое издание 1853) | HathiTrust 100873983; IA `discoursesuponex02char_0` (1854), `discoursesupone01symigoog` (1853) | `B2` |
 | 1864–1866 | *The Complete Works* / «With introd. by James M'Cosh», Edinburgh: J. Nichol, 5 т., серия «Nichol's Series of Standard Divines. Puritan Period» | Folger 51421, шифр BX9315.C4A1 1864; IA `completeworksofs03char` | `A1` (запись); вступительная статья Маккоша используется в Research, но её **полный текст не сверен** |
+
+### 3.4a. Два открытия каталогов, сделанные при снятии BH-8 (новое, 2026-11-16)
+
+Поиск «1702» заставил пройти по сводным каталогам, и это дало две находки, которых в корпусе не было.
+
+**(1) Инструмент: ESTC доступен не напрямую, но через JISC.** `datb.cerl.org/estc/search?q=` поиска не поддерживает (отвечает «data does not exist»). Рабочая замена — **Library Hub Discover** (`discover.libraryhub.jisc.ac.uk/search?...&format=json`), сводный каталог ~100 британских и ирландских библиотек с машиночитаемым ответом: параметры `author`, `title`, `date`, `fromdate`/`todate`, `pagesize`. По Чарноку он даёт 288 записей и позволяет проверять существование издания эмпирически, а не по памяти. Это снимает значительную часть `ARCHIVE_HOLD`, висевшего на ESTC в томе 06.
+
+**(2) Коллация 1699 г. по экземпляру Национальной библиотеки Уэльса — полнее, чем у нас.** Запись NLW (item 9500587; та же, что в BL) даёт то, чего не было в наших сведениях из EEBO:
+
+| Параметр | Значение (NLW, «The third edition corrected», 1699, т. I) |
+|---|---|
+| Формула | [6], 278, 281–504, 507–564, [2], **555–648**, [24] с., [1] л. портрета |
+| Портрет | «Frontis. portrait (plate) of the author signed: **R. White sculp.**» |
+| Особенность | «A treatise of divine providence» имеет **отдельный датированный титул**, в котором «**John Harris**» заменяет «Eliz. Harris» в импрессуме, на листе **3S2r** |
+| Supplement | «A supplement to the several discourses upon various divine subjects» — **caption title**, пагинация начинается с **p. 555**, регистр с тетради **4B** |
+| Пустые листы | **4C2** и **4N4** |
+| Прочие экземпляры той же записи | Southampton (Hartley) |
+
+**Почему это важно для аппарата.** (а) Пагинация т. I 1699 г. **не линейна** и включает блок 555–648 уже **после** [2] — то есть *Supplement* 1683 г. внутри 1699 г. не «приложение в конце», а часть регистра, идущая своим счётом; (б) указание на лист **3S2r** — это первый в корпусе **листовой** локатор для титула *Treatise of Divine Providence* в составе собрания (раньше был только год); (в) замена «Eliz. Harris» → «John Harris» на этом листе объясняет, почему в разных описаниях одного и того же издания фигурируют разные имена издателей: это **не разные издания**, а **вариант титульного листа внутри одного**.
+
+**Ограничение.** Всё это — каталожная запись (`B2` по нашей шкале), а не просмотр образа; лист 3S2r и пустые листы 4C2/4N4 требуют визуальной сверки. Статус: `CATALOG_ONLY`, добавлено в § 9 как BH-15.
 
 ### 3.5. Уточнение по «второму тому» и *Supplement*
 
@@ -485,7 +506,8 @@ Vol. II 1684: «if in two or three smaller Tracts the Author seem not altogether
 | BH-13 | Палмер 1775 как самостоятельный свидетель | `A1` получен, **не исчерпан** | Т. I, с. 159–162 прочитан. Палмер — первый, кто: называет «studied physic»; локализует патристический портрет в предисловии Джонсона; объясняет незавершённость атрибутов смертью автора. Требуется полная сверка с 1713/1727 на предмет остальных добавлений Палмера (изд. 1802, `nonconformistsme01cala_0`, другое) |
 | ~~BH-14~~ | ~~Свидетельство о саутворкском служении «7 or 8 persons»~~ | **ЗАКРЫТ 2026-11-16** | Источник — **Джонсон, p. 37** (том 09, §4.2): «In Southwark, where seven or eight… owned their conversion». Палмер 1775, т. I, с. 159 лишь пересказывает. `A1` уже был в корпусе; проверка не требовалась |
 | BH-7 | Природа выпуска 1683 г. в 94 с. (Wing C3712 Variant) | `CATALOG_ONLY` | сравнить с 397-страничным 8° и с блоком *Providence* в *Works* 1684 |
-| BH-8 | 1702 «3rd ed.» в Research | подозрение на ошибку | снять или дать локатор; 1699 г. сам себя называет «third edition corrected» |
+| ~~BH-8~~ | ~~1702 «3rd ed.»~~ | **ЗАКРЫТ 2026-11-16** | Издания 1702 г. нет: `GHOST_EDITION`. Проверено по JISC Library Hub Discover (автор / заглавие / диапазон дат), IA, HOLLIS, OpenLibrary — везде только 1699 «third edition corrected». Источник — Маккош 1864. Исправлено в 03 §3A и §9. См. § 3.4 |
+| BH-15 | Листовая коллация 1699 г. (т. I): титул *Treatise* на **3S2r** с «John Harris»; пустые **4C2**, **4N4**; пагинация 555–648 после [2] | `CATALOG_ONLY` | сверка по образу экземпляра NLW/Southampton или BL; проверить, совпадает ли с EEBO 653:7 |
 | BH-9 | Полные имена переписчиков («J. Wichens», «Ashton») и «Ingenious person» | `LOCATOR_HOLD` | читать сноски 1684 г. по образам, не по OCR |
 | BH-10 | Состав 9-томного Парсонса и 5-томного Николя | `CATALOG_ONLY` | сверить тома по IA/каталогам, прежде чем говорить о «реальных отличиях редакций» |
 
@@ -497,13 +519,14 @@ Vol. II 1684: «if in two or three smaller Tracts the Author seem not altogether
 |---|---:|---:|---|
 | Продолжение 16.11.2026 (после передачи) | ≈14 | ≈46 | Поиски: «366 5s 1d», цены и итоги аукциона, Калами и пожар, Wing C3711A, ESTC R15604, Michael Hide Exeter, priced copies, Lawler, Supplement 1674, Two Discourses 1699, Folger CC BY-SA. Чтения: Пирсон (chunks 2–9), IA-каталог 1680 (chunk 4 + ранее 0–7), IA-метаданные двух микрофильмов 1682, ESTC R15604 / R231290 / R24823 / R21459(контроль), Folger записи 147608, 470309, 126705, 133622, 134068, 148053, 200087, 846678, 51421, Lawler (chunks 13–19, 30), BM *List of Catalogues* (chunks 0–2), Christie's Lauderdale (chunks 1, 3), Folger CC BY-SA (Folgerpedia) |
 
+| Проход BH-8 (16.11.2026, «1702») | ≈6 | ≈12 | Поиски: «Charnock 1702 folio third edition», «MDCCII Works reissue», ESTC-запросы. Чтения: JISC Library Hub Discover (`author=charnock stephen`; `title=works of the late learned divine…`; `q="third edition corrected" charnock`; `date=1702`; `fromdate=1701&todate=1705`), Harvard HOLLIS API (`Charnock works existence attributes`; `"Charnock" AND "1702"`), OpenLibrary search (два запроса), IA `worksoflaterevst01char` (full-text «1702» → 0), `archive.org/metadata` двух объектов, ESTC/CERL (не поисковый), Google Books API (квота исчерпана) |
 | Проход BH-6 (16.11.2026, закрытие HOLD) | 0 | ≈14 | Чтения: IA full-text `continuationofac01cala` (запросы «Library was burnt», «not large», «no Notes in the Pulpit», «Prefatory Epistle»), `continuationofac02calaiala` («Charnock», «not large»), `bim_…1713_2` («Library», «burnt», «Applauded», «Cawton», «Senior Proctor», «not large»), `nonconformistsm01cala` («Charnock», «not large»), плюс `djvu.txt` chunks 41, 43–45, 61–64 (Калами 1727) и 57, 63–64 (Палмер 1775), метаданные двух объектов IA, `advancedsearch` по *Nonconformist's Memorial*. Поисков не было: задача решалась адресными чтениями известных объектов |
 
 Ограничения счёта: числа приблизительны; видимые результаты поиска не равны уникальным URL; часть страниц открывалась повторно для снятия неоднозначности.
 
 ---
 
-## 11. Сводка в seven lines
+## 11. Сводка в восемь строк
 
 1. Пожар 1666 г. стоит на одном современном свидетельстве, сформулированном как мнение (Джонсон 1680), и на одном позднем — **Калами 1727, т. I, с. 81**; место, размер и состав погибшего собрания не документированы, кроме одного названного документа. Знаменитое «not large» Калами **не принадлежит**: это **Палмер 1775, т. I, с. 161**, склеивший фразу Адамса–Вила 1680 г. с фразой Калами 1727 г.
 2. Каталог 1680 г. прочитан целиком: он не содержит ни общего числа лотов, ни суммы выручки, ни имени аукционера, ни упоминания пожара.
@@ -511,4 +534,5 @@ Vol. II 1684: «if in two or three smaller Tracts the Author seem not altogether
 4. £366 5s 1d — одно современное свидетельство без раскрытого первоисточника; в BM-экземпляре каталог не помечен как priced.
 5. Аукцион документирован по месту и дате; аукционер не назван; каталог раздавался в лавке Кокерилла, и в нём уже анонсированы готовящиеся посмертные «Discourses».
 6. Издание 1682 г. существует в двух состояниях (C3711 и C3711aA с импрессом Michael Hide в Эксетере); титульный лист по образу не верифицирован и по правам закрыт.
-7. Редакторская цепь 1680–1699 документирована дословно: два переписчика с взаимной сверкой, два корректора-редактора, третий наблюдатель за печатью, стенограммы двух постоянных слушателей и прямые жалобы на «imperfect Notes» посторонних изданий.
+7. Год **1702** — призрачное издание (`GHOST_EDITION`): сводные каталоги и IA знают только 1699 г., титул которого сам говорит «The third edition corrected»; ошибка идёт от Маккоша 1864.
+8. Редакторская цепь 1680–1699 документирована дословно: два переписчика с взаимной сверкой, два корректора-редактора, третий наблюдатель за печатью, стенограммы двух постоянных слушателей и прямые жалобы на «imperfect Notes» посторонних изданий.
