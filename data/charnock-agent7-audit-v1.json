@@ -676,5 +676,16 @@
       "source-use A32723 at 44657e7",
       "wave46 archive rebuilt to the same sha256 012813dd…c67b9"
     ]
+  },
+  "custodyReadback": {
+    "object": "1HEuZuDD9vHOUCv2YcwQPgKS2QkvteNxr",
+    "name": "CHARNOCK_FULL_BOUNDED_RESEARCH_wave46_2026-11-16.zip",
+    "parent": "15iNGKO8rN3vJKPbJuXfPVx4rXHER5Xq2",
+    "size": 6082467,
+    "md5": "e5115e387ecf80942834f2aae2da64af",
+    "trashed": false,
+    "driveModifiedTime": "2026-11-16T11:29:11.391Z",
+    "checkedOn": "2026-11-16",
+    "agreement": "matches receipt v7 (sourceArchiveSha256 012813dd…c67b9, 6,082,467 bytes) and the rebuilt archive"
   }
 }
