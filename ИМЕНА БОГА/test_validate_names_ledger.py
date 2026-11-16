@@ -3082,6 +3082,26 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
 
     def test_outhwaite_2023_ena4107_exodus6_custody(self) -> None:
         source_id = "SRC-OUTHWAITE-2023-JTS-ENA4107-20-EX6-2-3"
+
+        additional_mutations = (
+            ("closedSetumaLoci", ["Exodus 6:3", "Exodus 6:14"]),
+            ("openPetuchaLoci", ["Exodus 6:10", "Exodus 6:13", "Exodus 7:8"]),
+            ("reportedOrthographicVariantsAt", "Exodus 6:3"),
+            ("reportedCorrectionAt", "Exodus 6:2"),
+            ("reportedPrepositionVariantAt", "Exodus 6:2"),
+            ("ancientNameVariantAtEx6_2_3Established", True),
+            ("independentLetterByLetterImageCollation", True),
+            ("highResolutionOriginalArchiveImageAccessVerified", True),
+            ("jtsPhotoReusePermissionGranted", True),
+        )
+        for key, invalid in additional_mutations:
+            with self.subTest(section_or_scope=key):
+                changed = copy.deepcopy(self.sources)
+                row = next(x for x in changed["records"] if x["id"] == source_id)
+                row["audit20261116"][key] = invalid
+                self.assertTrue(any("Outhwaite ENA4107 author photo cannot certify" in e
+                                    for e in validate_source_access(changed)))
+
         self.assertEqual([], validate_source_access(self.sources))
         for field, invalid in (
             ("independentGlyphCollationDone", True),
