@@ -239,6 +239,27 @@
       "route": "catalogue entries read from the OCR text layer (e.g. lot 1 'Augustini opera tomis undecim comprehensa, 7 vol.') combined with Pearson's lot-based method",
       "verdict": "ACCEPT",
       "locator": "lot 1 = 11 tomi in 7 volumes; 275 English pamphlet entries occupy 13 bound volumes"
+    },
+    {
+      "id": "V-36",
+      "claim": "The 35-leaf scan matches the catalogue's stated [4] + 31 pagination exactly, so it contains one catalogue and not two",
+      "route": "page count from MAX's image report added to the pagination asserted for C3707; combined with the front matter's 'Catalogues of which are now Printing' for Watson",
+      "verdict": "ACCEPT (page count matches; printed numerals not collated with leaves)",
+      "locator": "4 + 31 = 35 PDF pages; Watson catalogues 'now Printing' at the time of printing"
+    },
+    {
+      "id": "V-37",
+      "claim": "The 1,330 lots counted from C3707 are Charnock's catalogue lots, the Watson appendix being a separate publication",
+      "route": "consequence of V-36 and of the announcement wording",
+      "verdict": "ACCEPT (with the caveat that a copy with Watson quires bound in would be a different copy)",
+      "locator": "front matter advertisement; 35-leaf structure"
+    },
+    {
+      "id": "V-38",
+      "claim": "Pearson's database puts 80 per cent of the books auctioned in 1680 before 1660, which bears on the second-hand market rather than refuting the 1666 fire",
+      "route": "Pearson 2010, read in the article's own framing",
+      "verdict": "ACCEPT as a secondary database figure (not image-verified; not yet used in volume 03)",
+      "locator": "'80 per cent of the books auctioned in 1680 dated from before 1660' / 'The potential of the second-hand book trade may be most evident from Charnock's library, if the story is true...'"
     }
   ],
   "rejectedOrCorrected": [
@@ -592,8 +613,7 @@
         "BCD-04 stays EXCLUDE until the Emmanuel admission book or matriculation register is obtained",
         "Laurence-dependent items (Irish stipend, further Dublin churches) still lack locators",
         "article PR #971 edits are outside this repository",
-        "CS-06: whether the Charnock total must exclude the Watson appendix lots is unresolved (the announcement is verified; the lot structure is not)",
-        "CS-06: whether the 1,330 lots include the Watson appendix lots is unresolved (Pearson is silent; his treatment of Coga and Knatchbull excluded appendices)"
+        "CS-06: the printed page numerals of C3707 have not been collated with the scan's leaves (the count matches, the numbering does not)"
       ],
       "publicationState": "BLOCKED",
       "done": [
