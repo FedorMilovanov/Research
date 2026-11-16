@@ -449,9 +449,13 @@ def check(plan, root=ROOT):
         else:
             changed.append(name)
     expected = ['БИОГРАФИИ/Стивен Чарнок/00_README_AND_NAVIGATION.md',
-                'БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md']
+                'БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md',
+                'БИОГРАФИИ/Стивен Чарнок/07_REPO_CROSSLINKS_AND_DRIVE_MIRROR.md',
+                'БИОГРАФИИ/Стивен Чарнок/17_PROMPT_PARALLEL_AGENT_HISTORICAL_CONTEXT.md']
     if sorted(plan['expectedChangedPacketMembers']) != sorted(expected) or sorted(changed) != sorted(expected):
-        raise ValueError('Unexpected changes to the preserved source packet')
+        raise ValueError('Unexpected changes to the preserved source packet: '
+                         f'declared={sorted(plan["expectedChangedPacketMembers"])}; '
+                         f'allowed={sorted(expected)}; observed={sorted(changed)}')
     architecture = (root / expected[1]).read_text()
     if '## 21.' not in architecture or any(d['title'] not in architecture for d in documents):
         raise ValueError('Human architecture does not contain the ten current passports')
