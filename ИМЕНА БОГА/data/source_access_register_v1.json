@@ -5,7 +5,7 @@
   "policyPath": "../../data/repository-evidence-policy-v2.json",
   "notes": "Source-access audit, not a list of independently approved quote-safe materials. License is source-specific; no rights transitivity to Bible translations/images/manuscripts. Where publisher metadata/HTML is available but exhaustive textual review has not been done accessState remains PARTIAL_OBJECT.",
   "counts": {
-    "sourceRecords": 131,
+    "sourceRecords": 133,
     "approvedForProduct": 0
   },
   "records": [
@@ -5193,6 +5193,90 @@
         "gottIngen1991CriticalApparatusRead": false,
         "bhsCriticalApparatusRead": false,
         "publisherReusePermissionGranted": false
+      }
+    },
+    {
+      "id": "SRC-CUL-TS-AS36-36-EX3-14-ORIGINAL-IIIF",
+      "title": "Cambridge University Library, Taylor-Schechter AS 36.36, original parchment Torah scroll recto, Exod 2:14–3:7 and 3:11–21; Exodus 3:14 אהיה אשר אהיה, official IIIF photo",
+      "creator": "Cambridge University Library, Taylor-Schechter Genizah Research Unit",
+      "year": null,
+      "url": "https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00036-00036/1",
+      "imageOriginalIIIF": "https://images.lib.cam.ac.uk/iiif/MS-TS-AS-00036-00036-000-00001.jp2/full/2000,/0/default.jpg",
+      "sourceRole": "CUL_TS_AS36_36_ORIGINAL_ASHKAR_SCROLL_EX3_14_PHOTO_DIRECT_VISIBLE_EHYEH_FORMULA_NO_FULL_COLLATION",
+      "evidenceClass": "A2",
+      "objectType": "official_ancient_parchment_original_digital_folio_photograph_partial_target_text_direct_visual_review",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "locator": "Cambridge Digital Library MS-TS-AS-00036-00036, physical 1r (IIIF sequence 000-00001). Official catalogue: Exod 2:14–3:7; 3:11–21 (two noncontinuous surviving sections). Upper photograph of same physical piece; bottom left-hand text fragment includes Ex3:14. 7th–8th c. scholarly date. ark:/12090/cula/vfprwqbfn.",
+      "sourceObjectState": "Original official Cambridge viewer page and direct 2000px IIIF JPEG visually opened, including zoomed contrast-only inspection of extant line bearing Hebrew אהיה אשר אהיה and subsequent line; catalog first-hand clarifies physical survivorship of Ex3:14. No independent entire-leaf sign-by-sign collation, formal variant comparison, palaeographic authentication, or proof of unprecedented name spelling. The leaflet is from SAME historical Ashkar–Gilson scroll as T-S NS 282.88, not a second independently transmitted textual tradition. The official viewer has NO transcription and NO translation. Cam CUL marks photos copyright all rights reserved and requires genizah@lib.cam.ac.uk permission before public web reproduction.",
+      "supportedUse": "Direct physical manuscript visual evidence that a segment of Exodus 3:14 survives; exact shelfmark and identifiable consonantal אהיה אשר אהיה, cautiously located on 1r; report catalog 3:11–21 including 3:14; source must be differentiated from an independent full apparatus or Leningrad codex.",
+      "forbiddenUse": "Describe entire Exodus 3:12–15 as fully legible, extrapolate damaged characters, fabricate distinct Yahweh spelling or phonetic vocalization, count two leaves of same scroll as independent textual traditions, copy protected archive photos to Product or claim professional complete Hebrew collator acceptance.",
+      "culImageAudit20261116": {
+        "physicalShelfmark": "T-S AS 36.36",
+        "ark": "ark:/12090/cula/vfprwqbfn",
+        "datedByLibrary": "7th–8th centuries",
+        "originalDigitalPhotoOpened": true,
+        "rectoIIIFImageNumber": 1,
+        "sourceCatalogueSurvivingRanges": [
+          "Exodus 2:14–3:7",
+          "Exodus 3:11–21"
+        ],
+        "targetExodus3_14WithinCatalogueRange": true,
+        "ehyehAsherEhyehVisibleInEnhancedImage": true,
+        "fullyIndependentVerseCollationDone": false,
+        "otherPhysicalWitnessDistinctFromNs282_88": true,
+        "independentTextualTraditionVersusNs282_88": false,
+        "containsExodus17_16": false,
+        "photoPublicWebReproductionGranted": false
+      }
+    },
+    {
+      "id": "SRC-CUL-TS-NS282-88-EX17-16-ABSENT-ORIGINAL-IIIF",
+      "title": "Cambridge University Library, Taylor-Schechter NS 282.88, original parchment fragment Ashkar–Gilson Torah scroll; exact surviving Exod 17:6–9, 18:4–14, excludes 17:15–16",
+      "creator": "Cambridge University Library, Taylor-Schechter Genizah Research Unit",
+      "year": null,
+      "url": "https://cudl.lib.cam.ac.uk/view/MS-TS-NS-00282-00088/1",
+      "imageOriginalIIIF": "https://images.lib.cam.ac.uk/iiif/MS-TS-NS-00282-00088-000-00001.jp2/full/1200,/0/default.jpg",
+      "sourceRole": "CUL_TS_NS282_88_ORIGINAL_ASHKAR_SCROLL_EX17_16_NOT_SURVIVING_CATALOG_EX17_6_9_AND_18_4_14",
+      "evidenceClass": "A2",
+      "objectType": "official_ancient_parchment_fragment_digital_photograph_exact_catalog_coverage_negative_verse_witness",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "criticalEditionCollated": false,
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "locator": "Cambridge Digital Library MS-TS-NS-00282-00088, physical 1r, IIIF 000-00001; official precise extant text Exod 17:6–9; 18:4–14, 27 lines from one column plus traces of two others. ark:/12090/cula/q7wbq5387. Broader research inventories Exod17:5–18:14 INCOMPLETE must not be misread as survival of Ex17:16.",
+      "sourceObjectState": "Original official Cambridge viewer and recto 1200px IIIF JPEG directly inspected; original leaf visible, with damaged columns. Cambridge direct CATALOG says exactly surviving Exod17:6–9 and 18:4–14, which are noncontiguous portions; target Exod17:15–16 ABSENT. This resolves candidate inclusion of 17:16 as a physical witness and forbids extrapolating Hebrew כס יה / כסיה from this leaf. It is one ancient scroll with sibling T-S AS 36.36 and other London–Ashkar pieces. Cambridge copyright all rights reserved; photo reproduction on public web requires library permission.",
+      "supportedUse": "Source-backed NEGATIVE claim: fragment does not preserve target Exod17:15–16; use official Cambridge scope as correction to incomplete research inventory 17:5–18:14; cite original recto image for physical object without asserting reading of absent line.",
+      "forbiddenUse": "Present T-S NS 282.88 as witness for Hebrew כס יה/כסיה or any text of 17:15–16; treat broad 17:5–18:14 archaeological range as full coverage; count same scroll as independent tradition; grant public image reuse or scientific full collation.",
+      "culImageAudit20261116": {
+        "physicalShelfmark": "T-S NS 282.88",
+        "ark": "ark:/12090/cula/q7wbq5387",
+        "datedByLibrary": "7th–8th centuries",
+        "originalDigitalPhotoOpened": true,
+        "rectoIIIFImageNumber": 1,
+        "sourceCatalogueSurvivingRanges": [
+          "Exodus 17:6–9",
+          "Exodus 18:4–14"
+        ],
+        "targetExodus17_16WithinCatalogueRange": false,
+        "targetExodus17_15WithinCatalogueRange": false,
+        "independentTextualTraditionVersusAs36_36": false,
+        "manuscriptPhotoIsNotVerse17_16Evidence": true,
+        "photoPublicWebReproductionGranted": false
       }
     },
     {
