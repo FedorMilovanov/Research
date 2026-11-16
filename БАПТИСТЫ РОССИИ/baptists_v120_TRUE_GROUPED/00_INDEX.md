@@ -9,6 +9,7 @@
 3. `groups/04_SAMIZDAT_PERSECUTION.md` — текущие самиздатные закрытия.
 4. `data/PROOF_STATUS_LEDGER.csv` — статусы конкретных выпусков.
 5. `data/NEXT_MICROBATCH.csv` — следующий список на файл/OCR/quote-card.
+6. [BOOK_RESEARCH](../BOOK_RESEARCH/README.md) — побайтно сохранённые исследования книги из Product; source manifest и SHA-256, без снятия научных HOLD.
 
 ## Текущий статус
 
