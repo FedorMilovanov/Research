@@ -169,6 +169,20 @@
       "route": "pin-value diff between 63143bb and 8246d2d over every *Sha256 field in both files, cross-checked against the internal row index",
       "verdict": "ACCEPT",
       "locator": "2299 pins, 63 changed, 0 added, 0 removed; every changed pin's new value equals the canonical hash of a row inside data/charnock-biographical-anchors-v1.json or data/charnock-series-editorial-plan-v1.json"
+    },
+    {
+      "id": "V-26",
+      "claim": "The wave46 archive is reproducible from a freshly re-downloaded EEBO-TCP cache, and the 11 XML members still match their registry pins",
+      "route": "codeload tarballs for each source commit; size+sha256 against anchors registry; rebuild of the packet from /tmp/wave41xml",
+      "verdict": "ACCEPT",
+      "locator": "11/11 XML objects byte-matched (sizes e.g. A71277 6035109 B, sha256 beaa62b9…); rebuilt archive sha256 012813dd5908207608949ff4ccc8c65c59b05ad4441f6afa14611d54e40c67b9 = receipt v7 sourceArchiveSha256 = Drive object 1HEuZuDD9vHOUCv2YcwQPgKS2QkvteNxr readback"
+    },
+    {
+      "id": "V-27",
+      "claim": "Every historical receipt in the chain is self-consistent and the chain links with no reused archive",
+      "route": "offline check: json.dumps(sourceManifest) hashed against each receipt's sourceManifestSha256; previousReceipt links walked v1→v7",
+      "verdict": "ACCEPT",
+      "locator": "v1 3bda1d76…, v2 2584e9c0…, v3 6143eac1…, v4 da2ceb02…, v5 20a06d49…, v6 31532abc…, v7 012813dd… — seven receipts, all manifests hash correctly, all archive shas distinct"
     }
   ],
   "rejectedOrCorrected": [
@@ -521,7 +535,8 @@
         "publicationState remains BLOCKED by series policy (quote decisions)",
         "BCD-04 stays EXCLUDE until the Emmanuel admission book or matriculation register is obtained",
         "Laurence-dependent items (Irish stipend, further Dublin churches) still lack locators",
-        "article PR #971 edits are outside this repository"
+        "article PR #971 edits are outside this repository",
+        "CS-06: 1330 total and £366 5s 1d remain HOLD (a selective image check cannot prove the total; the sum is Lawler 1898-level secondary and cannot come from the unpriced BL copy)"
       ],
       "publicationState": "BLOCKED",
       "done": [
