@@ -2,7 +2,7 @@
 
 > **CHARNOCK-HANDOFF-V1 · wave40 · 2026-10-26**
 > Роль: BIBLIOGRAPHY_OWNER. Текущий объём/пределы —[00](00_README_AND_NAVIGATION.md)
-> и[16§20](16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md); статус доставки —
+> и[16 §20](16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md); статус доставки —
 > `data/charnock-handoff-receipt-v1.json` после независимой проверки. Без квитанции закрытие не утверждается.
 > Действующие контрольные слои:§12 объекты/семейства,§13 второй выпуск 1676,§14 два неотправленных запроса. Не полный VolII1684 и не первый Supplement1674.
 > Исходные транскрипции/старые выводы сохранены; противоречащие текущим решениям итоги HISTORICAL/SUPERSEDED,не разрешение публикации.

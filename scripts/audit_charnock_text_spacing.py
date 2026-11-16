@@ -69,7 +69,16 @@ PUNCT_THEN_CHAR = re.compile(r"([;:])([А-Яа-яЁё])")
 # The same pass also swallowed the space after an em dash ("—16§21.109").
 # En dashes are left alone: they carry ranges ("27–28 июля"), and a digit before
 # the dash means a span ("1660—1680"), not a sentence break.
-DASH_THEN_TOKEN = re.compile(r"(?<!\d)—(?=[0-9А-Яа-яЁё])")
+DASH_THEN_TOKEN = re.compile(r"(?<!\d)—(?=[0-9А-Яа-яЁё§])")
+# Number glued to a Latin abbreviation ("79TCP/11XML") or to a section sign
+# ("16§§21.10"). The lookbehind protects source ids whose letters come first
+# (A71277, B02133), which must never be split.
+UNIT_ABBREV = "TCP|XML|SVG|SHA"
+DIGIT_THEN_ABBREV = re.compile(
+    r"(?<![A-Za-zА-Яа-яЁё0-9§._%‑–\-])"      # never split §0AB, -4FW, %5BCG, 2026_60PLUS
+    r"(\d{1,4})(" + UNIT_ABBREV + r")\b"
+)
+DIGIT_THEN_SECTION = re.compile(r"(?<![A-Za-zА-Яа-яЁё0-9§])(\d{1,3})(§+)")
 
 
 def _context(text: str, start: int, end: int, pad: int = 32) -> str:
@@ -84,6 +93,8 @@ def findings(text: str) -> list[dict]:
         ("digit_then_word", DIGIT_THEN_WORD),
         ("word_then_digit", WORD_THEN_DIGIT),
         ("punct_then_char", PUNCT_THEN_CHAR),
+        ("digit_then_abbrev", DIGIT_THEN_ABBREV),
+        ("digit_then_section", DIGIT_THEN_SECTION),
         ("dash_then_token", DASH_THEN_TOKEN),
     ):
         for match in pattern.finditer(text):
@@ -126,6 +137,17 @@ def propose(text: str) -> tuple[str, list[tuple[str, str]]]:
     text = DIGIT_THEN_WORD.sub(digit_word, text)
     text = WORD_THEN_DIGIT.sub(word_digit, text)
     text = PUNCT_THEN_CHAR.sub(punct_char, text)
+
+    def digit_abbrev(match: re.Match) -> str:
+        changes.append((match.group(0), f"{match.group(1)} {match.group(2)}"))
+        return f"{match.group(1)} {match.group(2)}"
+
+    def digit_section(match: re.Match) -> str:
+        changes.append((match.group(0), f"{match.group(1)} {match.group(2)}"))
+        return f"{match.group(1)} {match.group(2)}"
+
+    text = DIGIT_THEN_ABBREV.sub(digit_abbrev, text)
+    text = DIGIT_THEN_SECTION.sub(digit_section, text)
 
     def dash_token(match: re.Match) -> str:
         changes.append((f"—{match.string[match.end()]}", f"— {match.string[match.end()]}"))

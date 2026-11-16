@@ -2,7 +2,7 @@
 
 > **CHARNOCK-HANDOFF-V1 · wave40 · 2026-10-26**
 > Роль: SOURCE_TRANSCRIPTION_APPENDIX. Текущий объём/пределы —[00](00_README_AND_NAVIGATION.md)
-> и[16§20](16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md); статус доставки —
+> и[16 §20](16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md); статус доставки —
 > `data/charnock-handoff-receipt-v1.json` после независимой проверки. Без квитанции закрытие не утверждается.
 > A79420 —Providence1684,не основной фолиант WorksVolII. Общие формулы предисловия с1680не становятся независимыми свидетельствами.
 > Исходные транскрипции/старые выводы сохранены; противоречащие текущим решениям итоги HISTORICAL/SUPERSEDED,не разрешение публикации.

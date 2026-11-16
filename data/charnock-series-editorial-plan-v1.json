@@ -5,7 +5,7 @@
   "authorityRole": "corpus-specific-editorial-proposal-only",
   "stage": "BLUEPRINT_WITH_OPEN_WORK_NOT_AUTHORING",
   "baselineRegistry": "data/charnock-biographical-anchors-v1.json",
-  "baselineReceipt": "data/charnock-handoff-receipt-v4.json",
+  "baselineReceipt": "data/charnock-handoff-receipt-v5.json",
   "custodyBoundary": "Wave40receipt describes its immutable source packet,not the revised00/16. Current editorial revision is not yet transferred/independently received.",
   "expectedChangedPacketMembers": [],
   "evidenceClass": "C",
@@ -2695,7 +2695,7 @@
       "legacyIds": [
         "CHR-LING-02"
       ],
-      "dossierSha256": "c052295301a946049a9d0d17ea6e39f8e093e7807090bdbe79c96fdee2541354",
+      "dossierSha256": "525aa62663ef0ece83507191ec8f07a0119881db898d46267927ad153280ab68",
       "reviewState": "DERIVED_PAIR_PACKET_COUNTERPART_RECHECK_OPEN",
       "charnockSide": {
         "byteVerifiedContext": {
@@ -2976,7 +2976,7 @@
       "legacyIds": [
         "CHR-RAY-02"
       ],
-      "dossierSha256": "c052295301a946049a9d0d17ea6e39f8e093e7807090bdbe79c96fdee2541354",
+      "dossierSha256": "525aa62663ef0ece83507191ec8f07a0119881db898d46267927ad153280ab68",
       "reviewState": "DERIVED_PAIR_PACKET_COUNTERPART_RECHECK_OPEN",
       "charnockSide": {
         "byteVerifiedContext": {
@@ -3231,7 +3231,7 @@
       "legacyIds": [
         "CHR-DAIL-TITE-729"
       ],
-      "dossierSha256": "c052295301a946049a9d0d17ea6e39f8e093e7807090bdbe79c96fdee2541354",
+      "dossierSha256": "525aa62663ef0ece83507191ec8f07a0119881db898d46267927ad153280ab68",
       "reviewState": "DERIVED_PAIR_PACKET_COUNTERPART_RECHECK_OPEN",
       "charnockSide": {
         "byteVerifiedContext": {

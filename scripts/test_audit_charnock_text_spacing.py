@@ -12,13 +12,28 @@ class SpacingDetectorTests(unittest.TestCase):
         self.assertEqual([h["match"] for h in findings("справочник;главы")], [";г"])
 
     def test_dropped_space_after_em_dash(self):
-        self.assertEqual([h["kind"] for h in findings("итог —16§21.109")], ["dash_then_token"])
+        self.assertEqual([h["kind"] for h in findings("итог —16§21.109")], ["digit_then_section", "dash_then_token"])
 
     def test_ranges_keep_their_dashes(self):
         for text in ("27–28 июля", "1660—1680", "§§21.138–21.139"):
             self.assertEqual(findings(text), [], text)
             fixed, changes = propose(text)
             self.assertEqual((fixed, changes), (text, []))
+
+    def test_number_glued_to_latin_abbreviation(self):
+        self.assertEqual(propose("79TCP/11XML")[0], "79 TCP/11 XML")
+
+    def test_section_ids_and_urls_are_not_split(self):
+        for text in ("04 §0AB.3", "§0AA", "LtbD-4FWpPcC", "%5BCG%20v2", "CLOSURE_60PLUS_2026"):
+            self.assertEqual(propose(text), (text, []), text)
+
+    def test_source_ids_are_never_split(self):
+        for text in ("A71277", "B02133", "A32726.0001.001", "wave40"):
+            self.assertEqual(propose(text), (text, []))
+
+    def test_number_glued_to_section_sign(self):
+        self.assertEqual(propose("16§§21.10–21.11")[0], "16 §§21.10–21.11")
+        self.assertEqual(propose("§21.8")[0], "§21.8")
 
     def test_scripture_references_and_times_are_not_flagged(self):
         for text in ("Рим3:9–12", "1Тим2:15", "09:51:57Z", "p.265", "vol.16", "§§21.138", "A71277"):

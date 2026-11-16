@@ -10,8 +10,8 @@ Usage:
     python3 scripts/build_charnock_custody_manifest.py --check    # verify, write nothing
 
 Outputs (both deterministic, no clock reads):
-    data/charnock-wave43-packet-manifest.json   -- byte-exact packet manifest
-    data/charnock-custody-manifest-v5.json      -- custody manifest derived from it
+    data/charnock-wave44-packet-manifest.json   -- byte-exact packet manifest
+    data/charnock-custody-manifest-v6.json      -- custody manifest derived from it
 """
 
 from __future__ import annotations
@@ -22,9 +22,9 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-RECEIPT = "data/charnock-handoff-receipt-v4.json"
-PACKET_MANIFEST_OUT = "data/charnock-wave43-packet-manifest.json"
-CUSTODY_OUT = "data/charnock-custody-manifest-v5.json"
+RECEIPT = "data/charnock-handoff-receipt-v5.json"
+PACKET_MANIFEST_OUT = "data/charnock-wave44-packet-manifest.json"
+CUSTODY_OUT = "data/charnock-custody-manifest-v6.json"
 
 # The packet manifest is serialised exactly as the builder wrote it into the zip:
 # sorted keys, indent 2, UTF-8, one trailing newline. sourceManifestSha256 pins

@@ -2,7 +2,7 @@
 
 > **CHARNOCK-HANDOFF-V1 · wave40 · 2026-10-26**
 > Роль: REUSE_LEDGER. Текущий объём/пределы —[00](00_README_AND_NAVIGATION.md)
-> и[16§20](16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md); статус доставки —
+> и[16 §20](16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md); статус доставки —
 > `data/charnock-handoff-receipt-v1.json` после независимой проверки. Без квитанции закрытие не утверждается.
 > Старое A2=цифровая копия SUPERSEDED: носитель сам не определяет класс. Текущая A1 опора practical atheism —TXT-05/A32723p47; остальные внешние цитаты не получили массового допуска.
 > Исходные транскрипции/старые выводы сохранены; противоречащие текущим решениям итоги HISTORICAL/SUPERSEDED,не разрешение публикации.
