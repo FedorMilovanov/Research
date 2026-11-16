@@ -179,6 +179,10 @@
 | Всего решений | 23 |
 | TEXT_CANDIDATE | 16 (все A1, FULL_OBJECT_VERIFIED, EXACT_LOCATOR_VERIFIED, PUBLICATION_ELIGIBLE) |
 | RESEARCH_ONLY | 7 (смесь A1/B1, PARTIAL_OBJECT, разные rightsState) |
+| **rightsState: PUBLICATION_ELIGIBLE** | **17** (Q-01…Q-16 = 16 TEXT_CANDIDATE + Q-19 = 1 RESEARCH_ONLY) |
+| **rightsState: RIGHTS_UNKNOWN** | **4** (Q-17, Q-18, Q-20, Q-22) |
+| **rightsState: PRIVATE_STUDY_ONLY** | **2** (Q-21, Q-23) |
+| **Сумма rightsState** | **17 + 4 + 2 = 23** |
 | Все с PUBLICATION_HOLD | 23 (100%) |
 | Все с translationState NOT_PREPARED | 23 (100%) |
 | Все с textKind LEXICAL_FRAGMENT_NOT_FINAL_QUOTATION | 16 (TEXT_CANDIDATE) |
@@ -192,7 +196,7 @@
 2. **Переводы не подготовлены** — все 23 NOT_PREPARED
 3. **16 TEXT_CANDIDATE имеют полную верификацию** (A1, FULL_OBJECT_VERIFIED, EXACT_LOCATOR_VERIFIED, PUBLICATION_ELIGIBLE) — но требуют снятия PUBLICATION_HOLD и подготовки перевода
 4. **7 RESEARCH_ONLY имеют PARTIAL_OBJECT access** — требуют дополнительной работы перед тем, как можно будет даже говорить о публикации
-5. **rightsState варьируется:** PUBLICATION_ELIGIBLE (19), RIGHTS_UNKNOWN (4), PRIVATE_STUDY_ONLY (2)
+5. **rightsState варьируется:** PUBLICATION_ELIGIBLE (17), RIGHTS_UNKNOWN (4), PRIVATE_STUDY_ONLY (2)
 6. **inheritedHOLD не снят автоматически** ни для одного решения — соответствует правилу из тома 16 §21.3
 
 **Следующее действие:** при переходе к публикации — снять PUBLICATION_HOLD отдельно для каждого решения, подготовить переводы, подтвердить права для RIGHTS_UNKNOWN и PRIVATE_STUDY_ONLY объектов.
