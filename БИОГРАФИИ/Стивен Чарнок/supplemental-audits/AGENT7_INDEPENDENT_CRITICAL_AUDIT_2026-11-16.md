@@ -455,6 +455,8 @@ Stationers' Register (Eyre, т. III, с. 138) под 23 марта 1682/3 вно
 
 **Версии, на которых вынесены вердикты.** `main` = `97f32c7` (PR #538); база обеих ветвей = `70defa6`; моя ветка `arena/1c7822a1-research` = **`0469858`**; PR #521 = **`98cb884`**. Клон в этой сессии мелкий (depth 1 на main), поэтому «нет общей истории» — артефакт клонирования, а не переписывание `main`; после `--deepen` merge-base обеих ветвей = `70defa6`.
 
+**Три конкретных возражения MAX — ответ по существу.** (1) «`main` уехал»: да, `origin/main` сейчас `97f32c7` (PR #538), база обеих ветвей `70defa6`, между ними 22 файла, и **ни один** не находится в дереве Charnock — на мои артефакты это не влияет. (2) «`a2a5d82` больше не существует»: подтверждаю, `git cat-file -e a2a5d82` даёт отсутствие объекта; это устаревшая ссылка, и любое место, где она ещё стоит, должно быть перекрыто, а не «исправлено» вручную. (3) «на ветке 54 файла против базы»: да, 54, и это набор пакета (квитанции, манифесты, custody, скрипты, тесты, аудиты) плюс правка пробелов; переносить их в чужие ветки не нужно — пересечение с #521 всего четыре файла, см. карту ниже.
+
 ### Вердикты
 
 | Объект | Версия | Вердикт | Основание |
@@ -591,3 +593,19 @@ python3 -c "import datetime" # 27.07.1680 — вторник; 28.07.1680 — с�
 ---
 
 *Аудит выполнен без изменения исследовательских выводов; ни один статус публикации не снят. Все исправления сформулированы как минимально необходимые.*
+
+### Повторная локальная репетиция воркфлоу на `081da0a` (16.11.2026)
+
+CI на эту ветку не запускается по устройству воркфлоу (`pull_request` и `push` в `main`), поэтому ниже — прогон **всех его шагов** локально, в том же порядке, с `PYTHONDONTWRITEBYTECODE=1`. Это репетиция, а не «CI прошёл».
+
+| Шаг воркфлоу | Команды | Результат |
+|---|---|---|
+| Test saved evidence contracts and negative controls | `unittest discover -p 'test_audit_charnock*.py'`; `… -p 'test_build_biographies_shared_atlas.py'` | PASS |
+| Validate current editorial plan and authority | `audit_charnock_series_plan.py`; `validate_research_root_authority.py`; `validate_repository_authority_integrity.py` | PASS |
+| Reader-facing documents keep their restored spacing | `audit_charnock_text_spacing.py --scope documents --fail-over 0` | PASS |
+| Whole corpus keeps its restored spacing | `--scope all`; `repair_charnock_json_prose_spacing.py`; `unittest … test_repair…` | PASS |
+| Reproduce the custody manifest and packet pins | `build_charnock_custody_manifest.py --check`; `unittest … custody`; `unittest … packet` | PASS |
+| Confirm validators did not alter the checkout | `git diff --exit-code`; `test -z "$(git status --porcelain)"` | PASS |
+
+Проверки, которые воркфлоу **не** содержит и которые я веду отдельно: якоря TCP (11/11 сверены побайтно на `44657e7`; кэш `/tmp/wave41xml` затем очистила среда), source-use на `A32723`, воспроизведение архива `wave46` из свежего кэша (дало тот же `012813dd…c67b9`).
+

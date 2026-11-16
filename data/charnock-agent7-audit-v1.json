@@ -639,5 +639,42 @@
       "verdict": "HOLD",
       "reason": "quote decisions for the corpus remain BLOCKED/PUBLICATION_HOLD; biography frame usable after Research fixes"
     }
+  },
+  "ciReplay": {
+    "commit": "081da0a",
+    "branch": "arena/1c7822a1-research",
+    "date": "2026-11-16",
+    "note": "No GitHub CI run exists for this branch (the workflow triggers on pull_request and on push to main only). This is a local replay of every workflow command, not CI.",
+    "steps": [
+      {
+        "name": "tests/negative controls",
+        "result": "PASS"
+      },
+      {
+        "name": "plan+root authority+repo integrity",
+        "result": "PASS"
+      },
+      {
+        "name": "spacing documents",
+        "result": "PASS"
+      },
+      {
+        "name": "spacing all+repair verifier",
+        "result": "PASS"
+      },
+      {
+        "name": "custody check+packet tests",
+        "result": "PASS"
+      },
+      {
+        "name": "checkout unaltered",
+        "result": "PASS"
+      }
+    ],
+    "outsideWorkflow": [
+      "biographical anchors 11/11 byte-verified at 44657e7",
+      "source-use A32723 at 44657e7",
+      "wave46 archive rebuilt to the same sha256 012813dd…c67b9"
+    ]
   }
 }
