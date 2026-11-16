@@ -431,7 +431,7 @@ DT II (1888), c. 464–477:
 - Сперджен (№351/№2656) vs любая «Substitute for all» — несовместимы.
 - Ходж (561–562) vs пост-редемпционизм — несовместимы.
 - Оуэн vs Baxter (nature of satisfaction) — несовместимы по конструкции, хотя обе стороны реформатские.
-- Девенант vs Стронг-line: у Девенанта — стяжание веры действенное для избранных (particulare) + jus для всех; у Стронга — «специальные влияния Духа» вместо стяжания веры крестом — различие **существенное**, не лексическое.
+- Девенант vs Стронг-line: у Девенанта — стяжание веры действенное для избранных (particulare) + jus для всех; у Стронга — «специальные влияния Духа» вместо стяжания веры крестом — различие **существенное**, не лексическое. **Вербатим Стронга (том II, с. 773):** дарование веры «**is not, however, a part of his work of atonement; it is the application of the atonement**». Это прямой, названный отказ от Дорт II.8 — не расхождение акцентов.
 - **Уточнение по прочитанному тексту Стронга (2026-11-16, A.19):** Стронг ограничивает свой универсализм **самим собой**, а не только школой: «Having endured the penalty of the sinner, **justice permits the sinner's discharge, but does not require it**, except as the fulfilment of a promise to his substitute, and then only **upon the appointed condition of repentance and faith**» (том II, с. 773). То есть у него универсально **объективное обеспечение** и **отсрочка казни** (pretermission, Рим. 3:25), а применение условно. Это делает разрыв с Дортом/Вестминстером **уже**, чем «provision для всех без условий», но шире, чем просто словоупотребление: Стронг утверждает, что смерть «made for all men» **по объёму**, тогда как Дорт II.8 держит стяжание веры внутри приобретения.
 
 ## Приложение A. Вербатим первичных текстов (с точными локаторами)
@@ -692,6 +692,21 @@ Spurgeon Gems хранит постраничные сканы томов Metrop
 
 И собственная граница Стронга (с. 773):
 > «The atonement is unlimited, — the whole human race might be saved through it; the application of the atonement is limited, — only those who repent and [believe]…»; и рядом: «Having endured the penalty of the sinner, **justice permits the sinner's discharge, but does not require it**, except as the fulfilment of a promise to his substitute, and then only upon the appointed condition of repentance and faith».
+
+**Продолжение раздела (с. 773, чанк 281) — самое важное для §10.5.** Стронг не просто распределяет объём и применение; он **выводит стяжание веры из состава искупления**:
+> «Christ is specially the Savior of those who believe, in that he exerts a special power of his Spirit to procure their acceptance of his salvation. **This is not, however, a part of his work of atonement; it is the application of the atonement**, and as such is hereafter to be considered.» (**с. 773**)
+
+Это и есть точка разрыва, названная в §10.5 по смыслу, — теперь **вербатим**. Дорт II.8 держит веру внутри приобретения («quam… morte sua acquisivit»); Стронг прямо отказывает: дарование веры — **не часть дела искупления**, а его применение. Отсюда и его цитата Фарли как выражение собственной позиции:
+> «Christ's work is completed as much for one man as for another, as much for the unbeliever as for the believer» (Farley, цит. Стронгом **одобрительно**, с. 773)
+
+**Его собственные списки сторон (с. 773) — с точными локаторами, которые корпус до сих пор держал неполно:**
+> «Among those who hold to a limited atonement is **Owen**… So also **Turretin, loc. 4, quaes. 10 and 17**; **Symington, Atonement, 184–234**; **Candlish** on the Atonement; **Cunningham, Hist. Theol., 2:323–370**; **Shedd, Dogm. Theol., 2:464–489**.»
+> «For the view presented in the text, see **Andrew Fuller, Works, 2:373, 374; 689–698; 700–709**; **Wardlaw, Syst. Theol., 2:485–549**; **Jenkyn, Extent of the Atonement**; **E. P. Griffin, Extent of the Atonement**; **Woods, Works, 2:490–521**; **Richards, Lectures on Theology, 302–327**.»
+
+Три замечания к этим спискам, которые надо держать раздельно:
+- Стронг цитирует Оуэна **через Кэмпбелла** (довод о неверии: «this unbelief is a sin, and Christ was punished for it») — это **не** колляция Оуэна; у корпуса Оуэн читается по 1648/1650/1721 (A.15/A.18), и ссылаться надо туда.
+- «Cunningham, Hist. Theol., **2:323–370**» — это **ссылка Стронга**, а не разрешение открытого `REQ-8` («Каннингем, страницы 333–370»); диапазоны разные, и совпадение границы не делает их одним.
+- «Shedd, Dogm. Theol., **2:464–489**» в OCR напечатано сбито («8:464–489»); принимаю 2:464–489 по смыслу серии, но помечаю, что цифра тома в скане читается плохо.
 
 **Что это меняет для корпуса (не косметика):**
 1. **Тезис Прокопенко у Стронга действительно есть**, и дословно: «not the atonement… the application». Но у Стронга это **не** лексическое разграничение *atonement/redemption* (как в нью-английской паре 1795/1815), а утверждение о **пределе применения**, притом что сама смерть названа «made for all men».
