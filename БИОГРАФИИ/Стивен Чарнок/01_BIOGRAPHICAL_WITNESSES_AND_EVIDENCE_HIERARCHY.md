@@ -2,13 +2,13 @@
 
 > **CHARNOCK-HANDOFF-V1 · wave40 · 2026-10-26**
 > Роль: WITNESS_LAYER. Текущий объём/пределы —[00](00_README_AND_NAVIGATION.md)
-> и[16§20](16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md);статус доставки —
+> и[16§20](16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md); статус доставки —
 > `data/charnock-handoff-receipt-v1.json` после независимой проверки. Без квитанции закрытие не утверждается.
-> Текущее биографическое решение —02§10,не ранний счётчик конфликтов. Жанр похвалы не понижает первичный голос доB1 и не доказывает независимость.
-> Исходные транскрипции/старые выводы сохранены;противоречащие текущим решениям итоги HISTORICAL/SUPERSEDED,не разрешение публикации.
+> Текущее биографическое решение — 02§10,не ранний счётчик конфликтов. Жанр похвалы не понижает первичный голос доB1 и не доказывает независимость.
+> Исходные транскрипции/старые выводы сохранены; противоречащие текущим решениям итоги HISTORICAL/SUPERSEDED,не разрешение публикации.
 
 
-> **HISTORICAL wave29: дальнейшие решения —02§10(wave37).** В ранних
+> **HISTORICAL wave29: дальнейшие решения — 02§10(wave37).** В ранних
 > описаниях ниже частично SUPERSEDED: патристический жанр не понижает A1 до B1;
 > совпадение Wood с редакторами не доказывает независимости; ожидаемая биография
 > не означает установленного третьего автора или доказанного отсутствия рукописи.
@@ -721,10 +721,10 @@ Blue Letter Bible. Это A1-свидетельство **редакторско
 
 | ID | Источник и локатор | Опора и ограничение |
 |---|---|---|
-| REC-01 | [SPURGEONPS103](https://www.blueletterbible.org/comm/spurgeon_charles/tod/ps103.cfm);Explanatory Notes and Quaint Sayings;v12 | Подписанная атрибуция StephenCharnock;точный исходный locus в проверенных TCP ещё не найден:не объявлять сверенным оригиналом |
-| REC-02 | [SPURGEONPS103](https://www.blueletterbible.org/comm/spurgeon_charles/tod/ps103.cfm);Explanatory Notes and Quaint Sayings;v18 | Подписанная выдержка;совпадение с A32723,p699,различие comma/semicolon и оформления не скрывать |
-| REC-03 | [SPURGEONPS103](https://www.blueletterbible.org/comm/spurgeon_charles/tod/ps103.cfm);Explanatory Notes and Quaint Sayings;v19,Condensed from Charnock | Сокращённый6частный разбор прямо помечен Condensed;финальный пункт сопоставлен A32723,p702;не выдавать всю компиляцию за дословную цитату |
-| REC-04 | [SPURGEONPS103](https://www.blueletterbible.org/comm/spurgeon_charles/tod/ps103.cfm);Hints to the Village Preacher;v19 | Прямая рекомендация дискурса с адресом в Nichol/Nicol;указанный диапазон не проверен по скану этого издания;не переносить его на1682 |
+| REC-01 | [SPURGEONPS103](https://www.blueletterbible.org/comm/spurgeon_charles/tod/ps103.cfm);Explanatory Notes and Quaint Sayings;v12 | Подписанная атрибуция StephenCharnock; точный исходный locus в проверенных TCP ещё не найден: не объявлять сверенным оригиналом |
+| REC-02 | [SPURGEONPS103](https://www.blueletterbible.org/comm/spurgeon_charles/tod/ps103.cfm);Explanatory Notes and Quaint Sayings;v18 | Подписанная выдержка; совпадение с A32723,p699,различие comma/semicolon и оформления не скрывать |
+| REC-03 | [SPURGEONPS103](https://www.blueletterbible.org/comm/spurgeon_charles/tod/ps103.cfm);Explanatory Notes and Quaint Sayings;v19,Condensed from Charnock | Сокращённый 6 частный разбор прямо помечен Condensed; финальный пункт сопоставлен A32723,p702; не выдавать всю компиляцию за дословную цитату |
+| REC-04 | [SPURGEONPS103](https://www.blueletterbible.org/comm/spurgeon_charles/tod/ps103.cfm);Hints to the Village Preacher;v19 | Прямая рекомендация дискурса с адресом в Nichol/Nicol; указанный диапазон не проверен по скану этого издания; не переносить его на 1682 |
 
 ### 9.2. Сопоставление с Чарноком
 
@@ -738,10 +738,10 @@ v.18 — та же мысль и подпись Stephen Charnock, но посл�
 **REC-03:** на стороне *Treasury*,v.19,шесть пунктов завершаются пометой
 **Condensed from Charnock**. Последний пункт соответствует A32723,p.702:
 «The Heavens are incorruptible, his Throne is placed there in an incorruptible
-state.» В1682между этим и «The Throne of God outlives the dissolution of the
+state.» В1682 между этим и «The Throne of God outlives the dissolution of the
 World» есть фраза «Earthly Empires have their decayes and dissolutions»,
 которую сокращённая передача опускает. Получена конкретная демонстрация отбора,
-не основание печатать сокращение как непрерывную дословную цитату1682.
+не основание печатать сокращение как непрерывную дословную цитату 1682.
 
 **REC-01:** подпись и выдержка приv.12 прочитаны. В проверенном TCP supplement
 исходный locus этой формулы не установлен. Отрицательный поиск одного
@@ -772,7 +772,7 @@ World» есть фраза «Earthly Empires have their decayes and dissolution
 **Частично SUPERSEDED §2.9B:**Calamy1713 не может быть печатным первоисточником
 для Wood1691–92. Направление зависимости не устанавливается одним сходством;
 печатный текст Calamy позднее Wood. Формулы об уме/практической проповеди
-есть уже у редакторов1680; прежние «эксклюзив Calamy» не означают установленной
+есть уже у редакторов 1680; прежние «эксклюзив Calamy» не означают установленной
 уникальности. Цитирование Johnson у Calamy не является независимым наблюдением
 того же события. Раннее объяснение отсутствия популярности чтением через стекло
 остаётся **объяснением Calamy**, не доказанной причинностью и не статистикой
@@ -790,7 +790,7 @@ Johnson1680,p.33 уже говорит о books in Londons flames, с огово
 REC-01–04:A1/PARTIAL_OBJECT/EXACT_LOCATOR_VERIFIED для названных веб-разделов,
 RIGHTS_UNKNOWN/BLOCKED; ARCHIVE_HOLD/RIGHTS_HOLD/PUBLICATION_HOLD.
 REC-01:LOCATOR_HOLD к исходному Чарноку; REC-04:LOCATOR_HOLD к скану Nichol.
-REC-02/03:локальные SHA-pinned TCP фрагменты сверены, но это не проверка первого
+REC-02/03: локальные SHA-pinned TCP фрагменты сверены, но это не проверка первого
 отпечатка *Treasury*. Современные BLB условия публикации не исследованы;
 наличие общественного достояния у старого автора не выдаёт лицензию хоста.
 

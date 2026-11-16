@@ -53,9 +53,11 @@ SCRIPTURE = {
 REF_WORDS = {"p", "pp", "vol", "vols", "no", "n", "ch", "chs", "f", "ff", "fol", "fols", "r", "v", "vv"}
 
 
-def corpus_files() -> list[Path]:
+def corpus_files(scope: str = "all") -> list[Path]:
+    """scope='documents' limits the scan to the 18 reader-facing volumes."""
     files = sorted(CORPUS.glob("*.md"))
-    files += [ROOT / name for name in DATA_FILES]
+    if scope == "all":
+        files += [ROOT / name for name in DATA_FILES]
     return [f for f in files if f.is_file()]
 
 
@@ -64,6 +66,10 @@ WORD_THEN_DIGIT = re.compile(r"([А-Яа-яЁё]{2,})(\d{1,4})(?![\wА-Яа-яЁ
 # Cyrillic only: `Рим3:9` and `09:51:57Z` must survive, so a digit after the
 # colon is never treated as a missing space.
 PUNCT_THEN_CHAR = re.compile(r"([;:])([А-Яа-яЁё])")
+# The same pass also swallowed the space after an em dash ("—16§21.109").
+# En dashes are left alone: they carry ranges ("27–28 июля"), and a digit before
+# the dash means a span ("1660—1680"), not a sentence break.
+DASH_THEN_TOKEN = re.compile(r"(?<!\d)—(?=[0-9А-Яа-яЁё])")
 
 
 def _context(text: str, start: int, end: int, pad: int = 32) -> str:
@@ -78,6 +84,7 @@ def findings(text: str) -> list[dict]:
         ("digit_then_word", DIGIT_THEN_WORD),
         ("word_then_digit", WORD_THEN_DIGIT),
         ("punct_then_char", PUNCT_THEN_CHAR),
+        ("dash_then_token", DASH_THEN_TOKEN),
     ):
         for match in pattern.finditer(text):
             if kind == "word_then_digit":
@@ -119,12 +126,18 @@ def propose(text: str) -> tuple[str, list[tuple[str, str]]]:
     text = DIGIT_THEN_WORD.sub(digit_word, text)
     text = WORD_THEN_DIGIT.sub(word_digit, text)
     text = PUNCT_THEN_CHAR.sub(punct_char, text)
+
+    def dash_token(match: re.Match) -> str:
+        changes.append((f"—{match.string[match.end()]}", f"— {match.string[match.end()]}"))
+        return "— "
+
+    text = DASH_THEN_TOKEN.sub(dash_token, text)
     return text, changes
 
 
-def scan() -> dict:
-    report = {"files": {}, "totalFindings": 0, "byKind": {}}
-    for path in corpus_files():
+def scan(scope: str = "all") -> dict:
+    report = {"scope": scope, "files": {}, "totalFindings": 0, "byKind": {}}
+    for path in corpus_files(scope):
         text = path.read_text(encoding="utf-8")
         hits = findings(text)
         if not hits:
@@ -143,9 +156,9 @@ def scan() -> dict:
     return report
 
 
-def apply(dry_run: bool) -> dict:
-    summary = {"files": {}, "totalInsertions": 0, "dryRun": dry_run}
-    for path in corpus_files():
+def apply(dry_run: bool, scope: str = "all") -> dict:
+    summary = {"scope": scope, "files": {}, "totalInsertions": 0, "dryRun": dry_run}
+    for path in corpus_files(scope):
         text = path.read_text(encoding="utf-8")
         fixed, changes = propose(text)
         if not changes:
@@ -167,14 +180,16 @@ def main() -> int:
     parser.add_argument("--apply", action="store_true", help="rewrite the corpus (requires --force)")
     parser.add_argument("--force", action="store_true", help="acknowledge that derived hashes will go stale")
     parser.add_argument("--fail-over", type=int, default=None, help="exit 1 when findings exceed N")
+    parser.add_argument("--scope", choices=("all", "documents"), default="all",
+                        help="documents = the 18 reader-facing volumes only (the two JSON files keep a known residue)")
     args = parser.parse_args()
 
     if args.apply and not args.force:
         parser.error("--apply would invalidate ~2900 derived hashes; pass --force only inside a hash-regeneration wave")
     if args.dry_run or args.apply:
-        result = apply(dry_run=not args.apply)
+        result = apply(dry_run=not args.apply, scope=args.scope)
     else:
-        result = scan()
+        result = scan(scope=args.scope)
     print(json.dumps(result, ensure_ascii=False, indent=2))
     if args.fail_over is not None and result.get("totalFindings", 0) > args.fail_over:
         return 1

@@ -10,8 +10,8 @@ Usage:
     python3 scripts/build_charnock_custody_manifest.py --check    # verify, write nothing
 
 Outputs (both deterministic, no clock reads):
-    data/charnock-wave42-packet-manifest.json   -- byte-exact packet manifest
-    data/charnock-custody-manifest-v4.json      -- custody manifest derived from it
+    data/charnock-wave43-packet-manifest.json   -- byte-exact packet manifest
+    data/charnock-custody-manifest-v5.json      -- custody manifest derived from it
 """
 
 from __future__ import annotations
@@ -22,9 +22,9 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-RECEIPT = "data/charnock-handoff-receipt-v3.json"
-PACKET_MANIFEST_OUT = "data/charnock-wave42-packet-manifest.json"
-CUSTODY_OUT = "data/charnock-custody-manifest-v4.json"
+RECEIPT = "data/charnock-handoff-receipt-v4.json"
+PACKET_MANIFEST_OUT = "data/charnock-wave43-packet-manifest.json"
+CUSTODY_OUT = "data/charnock-custody-manifest-v5.json"
 
 # The packet manifest is serialised exactly as the builder wrote it into the zip:
 # sorted keys, indent 2, UTF-8, one trailing newline. sourceManifestSha256 pins
@@ -167,7 +167,7 @@ def build(receipt_path: str = RECEIPT, xml_dir: str | None = None) -> tuple[dict
         "verifiedBy": receipt["verifiedBy"],
         "verificationMethod": receipt["verificationMethod"],
         "verificationBoundary": receipt["verificationBoundary"],
-        "supersedes": "data/charnock-custody-manifest-v3.json",
+        "supersedes": "data/charnock-custody-manifest-v4.json",
         "nextAction": (
             "Do not edit by hand. After any packet rebuild rerun "
             "python3 scripts/build_charnock_custody_manifest.py --receipt <new receipt> "

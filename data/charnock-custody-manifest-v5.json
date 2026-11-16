@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 2,
+  "contractId": "CHARNOCK-CUSTODY-V3",
+  "createdAtUtc": "2026-11-16T11:01:36Z",
+  "createdBy": "Arena coding agent;independent Google Drive get_file after upload",
+  "authorityRole": "corpus-specific-supporting-only",
+  "scope": "Bounded research material collection only;not biography prose,publication approval,full Research checkout or all historical originals.",
+  "custodyState": "ACQUIRED_DURABLE",
+  "researchCompletion": "BOUNDED_RESEARCH_COMPLETE",
+  "evidenceClass": "C",
+  "evidenceClassBoundary": "C applies to this operational research receipt,not the independent historical source records.",
+  "accessState": "FULL_OBJECT_VERIFIED",
+  "locatorState": "EXACT_LOCATOR_VERIFIED",
+  "rightsState": "PRIVATE_STUDY_ONLY",
+  "publicationState": "BLOCKED",
+  "holds": [
+    "PUBLICATION_HOLD"
+  ],
+  "derivedFrom": {
+    "receipt": "data/charnock-handoff-receipt-v4.json",
+    "receiptSha256": "d7042b76158816a81c9ce76a99ed05cf1e0096a4f388925cdd7a381d9939fa1f",
+    "sourceArtifactName": "CHARNOCK_FULL_BOUNDED_RESEARCH_wave43_2026-11-16.zip",
+    "sourceArchiveBytes": 6082493,
+    "sourceArchiveSha256": "da2ceb02bfd880a6f2c4c18471c8802efd64448ab0f8cfd11be6019b8747b0ba",
+    "sourceManifestPath": "data/charnock-wave43-packet-manifest.json",
+    "sourceManifestSha256": "21c3bd78f84993df4464b56ff3820244629d3d1fdcc312edca0e64afe149c632"
+  },
+  "fileManifest": {
+    "AGENT_RULES.md": {
+      "bytes": 9892,
+      "sha256": "7e4b4685178838b2b5d68e3091ee733f8a04fb1921aa4317f523bd3892bc22e4",
+      "verifiedFrom": "repo"
+    },
+    "data/artifact-custody-policy-v2.json": {
+      "bytes": 1343,
+      "sha256": "94ba208a3d761b2fb093dab58e6e535b33f07202014311c558a9045b5afa5af7",
+      "verifiedFrom": "repo"
+    },
+    "data/biographies-shared-atlas-v1.json": {
+      "bytes": 10743,
+      "sha256": "b5c1c9d669c1352c1f49d117d2fb023a5845a776c66615b032309e762c00d765",
+      "verifiedFrom": "repo"
+    },
+    "data/charnock-biographical-anchors-v1.json": {
+      "bytes": 262819,
+      "sha256": "8ee4228bd8fac59eb781d0abd9daf6643928346d767f5e87bc0d7842243d72f4",
+      "verifiedFrom": "repo"
+    },
+    "data/charnock-reception-extracts-v1.json": {
+      "bytes": 1978,
+      "sha256": "60a8aeced1cf0be563389b8a49cd2f0c8854dfecb9a28a512934b81ee26aad36",
+      "verifiedFrom": "repo"
+    },
+    "data/repository-evidence-policy-v2.json": {
+      "bytes": 1889,
+      "sha256": "5746d1ebebda21e5af487c1f2a8268127b4376c840721c0daf48e13423c1ca4d",
+      "verifiedFrom": "repo"
+    },
+    "scripts/audit_charnock_biographical_anchors.py": {
+      "bytes": 24295,
+      "sha256": "dee5d6b0abe74c2e8e0a9efc07fd0fa55d157d54f1448e8ab276d1d5b920b486",
+      "verifiedFrom": "repo"
+    },
+    "scripts/audit_charnock_cudworth_refs.py": {
+      "bytes": 2644,
+      "sha256": "985c0466f5007eda9603b4f48c378c5dd3c1d86125826377af721bf6d5e340f4",
+      "verifiedFrom": "repo"
+    },
+    "scripts/audit_charnock_handoff.py": {
+      "bytes": 9633,
+      "sha256": "3c15616c02703c36502082bf415f2f84b711afd3a5288b99493df819a02576ca",
+      "verifiedFrom": "repo"
+    },
+    "scripts/audit_charnock_identity_refs.py": {
+      "bytes": 4826,
+      "sha256": "92790a16735f92e9123374edd03f67e71d25d8156f2275032844cc122a32405c",
+      "verifiedFrom": "repo"
+    },
+    "scripts/build_biographies_shared_atlas.py": {
+      "bytes": 12562,
+      "sha256": "b8f7aec2e765735931a43906b21e793216565895016fdd744cb8d4aac6419999",
+      "verifiedFrom": "repo"
+    },
+    "scripts/test_audit_charnock_biographical_anchors.py": {
+      "bytes": 15908,
+      "sha256": "1bc618657db26593481b22ad860b5b3cf73d4f2a3e2c6fbf39067cebd68e4d41",
+      "verifiedFrom": "repo"
+    },
+    "scripts/test_audit_charnock_handoff.py": {
+      "bytes": 5832,
+      "sha256": "7a2b051a145584a327808acd29ef03e0ebd32131ec42973c6ffd56338d3d1765",
+      "verifiedFrom": "repo"
+    },
+    "scripts/test_audit_charnock_identity_refs.py": {
+      "bytes": 6926,
+      "sha256": "42d1ad6073ff47f1f96a761340d0ba783572a9adeb51a2d38514ae7e41799d4e",
+      "verifiedFrom": "repo"
+    },
+    "scripts/test_build_biographies_shared_atlas.py": {
+      "bytes": 3463,
+      "sha256": "b75df53b51be9c296141d0fffabd815a0497189bf1730c5adb983f0b984520eb",
+      "verifiedFrom": "repo"
+    },
+    "xml/A25478.xml": {
+      "bytes": 3485491,
+      "sha256": "dd3588d681fe1ff35f067625504d275f31764b668476efbdb3eadfd0655f1cee",
+      "verifiedFrom": "receipt-pin (object not present in checkout)"
+    },
+    "xml/A32722.xml": {
+      "bytes": 54754,
+      "sha256": "b25bad732f769d06e49315e201b2ce6004fa5a5d6ffb360c8a435b090fcb11c1",
+      "verifiedFrom": "receipt-pin (object not present in checkout)"
+    },
+    "xml/A32723.xml": {
+      "bytes": 4622240,
+      "sha256": "d6205c4062867acf7f01c963ca06395ed07bb4f00774a071fcc8f903d22e6376",
+      "verifiedFrom": "receipt-pin (object not present in checkout)"
+    },
+    "xml/A32724.xml": {
+      "bytes": 1146488,
+      "sha256": "efaf653b7c9d058927dc546382d3a9771fbffdc6e15b50d08a7941bd0aafa007",
+      "verifiedFrom": "receipt-pin (object not present in checkout)"
+    },
+    "xml/A32726.xml": {
+      "bytes": 603576,
+      "sha256": "1268a63fa8eebeac66291887e30d655df8cc3a2d1c7a9508c3dba7ceafc1a497",
+      "verifiedFrom": "receipt-pin (object not present in checkout)"
+    },
+    "xml/A41722.xml": {
+      "bytes": 76048,
+      "sha256": "ed2038ae64d1e5bb05f90eb5fdf10d6b67c3023b83903cdbe55204f4afc7b5a7",
+      "verifiedFrom": "receipt-pin (object not present in checkout)"
+    },
+    "xml/A46911.xml": {
+      "bytes": 163974,
+      "sha256": "e2bea34fb919b90d21c076895c0cb09c4630505f020f3608f72ddf72d3f5b64b",
+      "verifiedFrom": "receipt-pin (object not present in checkout)"
+    },
+    "xml/A71277.xml": {
+      "bytes": 6035109,
+      "sha256": "beaa62b9b406cbc3bcb589143266da53f714ccfb344408e38c3f953f0c4881d2",
+      "verifiedFrom": "receipt-pin (object not present in checkout)"
+    },
+    "xml/A79420.xml": {
+      "bytes": 598792,
+      "sha256": "5f07206177dcffc80dde89ec85d0df9394acc6c6ddb8a8c7e319f5285b6ea5ac",
+      "verifiedFrom": "receipt-pin (object not present in checkout)"
+    },
+    "xml/B02133.xml": {
+      "bytes": 17702,
+      "sha256": "505f653df483ce85f615b02e67dd454e7963b68fd16e2c008a724e480def1748",
+      "verifiedFrom": "receipt-pin (object not present in checkout)"
+    },
+    "xml/B20167.xml": {
+      "bytes": 538534,
+      "sha256": "4708c9c4b5e3036c4ed477852b5b1b4372d5a27aa294c930000df19a5073508c",
+      "verifiedFrom": "receipt-pin (object not present in checkout)"
+    },
+    "БИОГРАФИИ/atlas/biographies-shared.svg": {
+      "bytes": 16183,
+      "sha256": "fbfd61837ebf852407506281e4a926357ebda436e074c3e03b247beab62ef45d",
+      "verifiedFrom": "repo"
+    },
+    "БИОГРАФИИ/atlas/index.html": {
+      "bytes": 34214,
+      "sha256": "861aab0eca008b69a82e0d2ffdc9164bbcac972bdee1d4e0d04874e635e35c94",
+      "verifiedFrom": "repo"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/00_README_AND_NAVIGATION.md": {
+      "bytes": 141873,
+      "sha256": "84daf8b84b3cee48ef7b72c7707c80a8c5c1fc9cac8842853ffd85e82f6d8aa9",
+      "verifiedFrom": "repo"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/01_BIOGRAPHICAL_WITNESSES_AND_EVIDENCE_HIERARCHY.md": {
+      "bytes": 78596,
+      "sha256": "d26ba2544b5fac06ddd87764b702230314490a436ca0b3f51ae9d7be710d951d",
+      "verifiedFrom": "repo"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md": {
+      "bytes": 109747,
+      "sha256": "9f1ce8fe2e2cc162969f6a22bfa87008ca0d80ad5550021dbf6bec90ddc97a6c",
+      "verifiedFrom": "repo"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md": {
+      "bytes": 116030,
+      "sha256": "6644674c3d533c7fb1c9fd600acbdf2bf4a34a742851cfee2d0105de174d4aa3",
+      "verifiedFrom": "repo"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/04_CHARACTER_MINISTRY_AND_THEOLOGY.md": {
+      "bytes": 405378,
+      "sha256": "c052295301a946049a9d0d17ea6e39f8e093e7807090bdbe79c96fdee2541354",
+      "verifiedFrom": "repo"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/05_CONTROVERSIES_AND_CLAIM_AUDIT.md": {
+      "bytes": 40695,
+      "sha256": "489b7fc2431afd4c69daf2522336f1dd0ed643be3bc650ae65eecfe9d5b4d0f2",
+      "verifiedFrom": "repo"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/06_CORPUS_ACCESS_MATRIX_AND_LOCATORS.md": {
+      "bytes": 47404,
+      "sha256": "3b853e68c6ce4899f88a4e94534d632e2ade6c343be8e302e98808a3f0e86a2f",
+      "verifiedFrom": "repo"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/07_REPO_CROSSLINKS_AND_DRIVE_MIRROR.md": {
+      "bytes": 19182,
+      "sha256": "1b84811042f14650373dd8421e6b9bcb3ce3ef766ed8a187e4a315fd22416d68",
+      "verifiedFrom": "repo"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/08_ADAMS_AND_VEAL_TO_THE_READER_PRIMARY_EPISTLE.md": {
+      "bytes": 42685,
+      "sha256": "3f02473f6793a111c5fba94c31b9d50e4c830b059183b19f68168ceb5efcb457",
+      "verifiedFrom": "repo"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/09_JOHNSON_FUNERAL_SERMON_1680_PRIMARY_TRANSCRIPTION.md": {
+      "bytes": 33517,
+      "sha256": "e22bf8aa7d373ad2d69e8432084d857bae1a8bc96a21cf5827051e246b80fc58",
+      "verifiedFrom": "repo"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/10_REPO_USAGE_LEDGER_AND_VERIFICATION_STATUS.md": {
+      "bytes": 23999,
+      "sha256": "997415f2c6d82882c2fc3d799962d74fbb71012684ff3f5963ab2830a067cf5d",
+      "verifiedFrom": "repo"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/11_WOOD_ATHENAE_OXONIENSES_1691_PRIMARY_TRANSCRIPTION.md": {
+      "bytes": 28940,
+      "sha256": "e903039883a7e2a78198b895a5225a15582504539a3251b4ea2752384487520f",
+      "verifiedFrom": "repo"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/12_THE_SAYINGS_1680_BROADSIDE_PRIMARY_TRANSCRIPTION.md": {
+      "bytes": 35841,
+      "sha256": "0eaa3acdf9f0b59ccd7c64dee9c856c28359f19053033315974a26ef0945df38",
+      "verifiedFrom": "repo"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/13_NEW_POEMS_1680_ELEGY_ACROSTICS_EPITAPH_PRIMARY_TRANSCRIPTION.md": {
+      "bytes": 46786,
+      "sha256": "ec27b48e7c1e5bab28c8b9319559ef6ce6d3f1e79fad2c4338d2d7f5f584652b",
+      "verifiedFrom": "repo"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/14_AN_ELEGY_1680_PRIMARY_TRANSCRIPTION.md": {
+      "bytes": 52512,
+      "sha256": "53964c6df48c70b08f3a7d33ad17e3b10ef4286a7efae949550d562de0d66c21",
+      "verifiedFrom": "repo"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/15_THE_EMMANUEL_LINE_PRESTON_POOLE_FOWLER.md": {
+      "bytes": 45780,
+      "sha256": "20ac248979356e706194bd2f6769d27495795b9cdbc6e5380ad7d25239c806bd",
+      "verifiedFrom": "repo"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md": {
+      "bytes": 884165,
+      "sha256": "9f9c03d8e60e72a50ff2feeb6ba03939ca91180ec7ca693e1c9c006f7a20b589",
+      "verifiedFrom": "repo"
+    },
+    "БИОГРАФИИ/Стивен Чарнок/17_PROMPT_PARALLEL_AGENT_HISTORICAL_CONTEXT.md": {
+      "bytes": 27732,
+      "sha256": "40d86f5596f240440fedac4630e967e3b8da41bd01fe5f595269dfcff1634522",
+      "verifiedFrom": "repo"
+    }
+  },
+  "fileCount": 46,
+  "totalBytes": 19948720,
+  "manifestSha256": "22e8f465c2b3b8cb6e6036cbc1afe35323d0253a1c7166ae6263d2e91abfab8f",
+  "manifestSha256Method": "sha256 of the members-only fileManifest map serialised as json.dumps(..., ensure_ascii=False, sort_keys=True, indent=2) + \\n, UTF-8; the packet manifest itself (with counts/scope/holds) is pinned separately as sourceManifestSha256",
+  "destinationProvider": "Google Drive",
+  "destinationObjectId": "1FyBQBXhQdBjYvV-qWIkMbqveXOYjxCzb",
+  "destinationPath": "15iNGKO8rN3vJKPbJuXfPVx4rXHER5Xq2/CHARNOCK_FULL_BOUNDED_RESEARCH_wave43_2026-11-16.zip",
+  "destinationParentIds": [
+    "15iNGKO8rN3vJKPbJuXfPVx4rXHER5Xq2"
+  ],
+  "destinationBytes": 6082493,
+  "destinationSha256Readback": "da2ceb02bfd880a6f2c4c18471c8802efd64448ab0f8cfd11be6019b8747b0ba",
+  "verifiedAtUtc": "2026-11-16T11:01:36Z",
+  "verifiedBy": "Arena coding agent;independent Google Drive get_file after upload",
+  "verificationMethod": "INDEPENDENT_DRIVE_GET_FILE_SHA256_CHECKSUM",
+  "verificationBoundary": "Server checksum/size/parents independently read back after upload (get_file);remote bytes were NOT downloaded for the readback. Before bundling,all eleven EEBO-TCP XML objects were re-downloaded and byte-matched against data/charnock-biographical-anchors-v1.json. The wave43 text repair inserts spaces only:no letter,digit or word order was changed and no page image was collated,so the transcription volumes keep the same letter-level content. Offline checker validates the saved receipt,not remote authentication or a digital signature.",
+  "supersedes": "data/charnock-custody-manifest-v4.json",
+  "nextAction": "Do not edit by hand. After any packet rebuild rerun python3 scripts/build_charnock_custody_manifest.py --receipt <new receipt> so the member map, totalBytes and manifestSha256 are recomputed.",
+  "regenerateWith": "python3 scripts/build_charnock_custody_manifest.py"
+}

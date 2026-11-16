@@ -5436,7 +5436,7 @@
     "reviewDate": "2026-10-26",
     "authorityRole": "corpus-specific-supporting-only",
     "closureMode": "RECEIPT_GATED_BOUNDED_RESEARCH",
-    "receiptPath": "data/charnock-handoff-receipt-v3.json",
+    "receiptPath": "data/charnock-handoff-receipt-v4.json",
     "architectureDocuments": 10,
     "dossierOwners": [
       {

@@ -82,9 +82,9 @@ class CustodyManifestTests(unittest.TestCase):
         self.assertEqual(
             custody["derivedFrom"]["sourceManifestSha256"], self.receipt["sourceManifestSha256"]
         )
-        self.assertEqual(custody["supersedes"], "data/charnock-custody-manifest-v3.json")
+        self.assertEqual(custody["supersedes"], "data/charnock-custody-manifest-v4.json")
         self.assertEqual(custody["regenerateWith"], "python3 scripts/build_charnock_custody_manifest.py")
-        self.assertEqual(CUSTODY_OUT, "data/charnock-custody-manifest-v4.json")
+        self.assertEqual(CUSTODY_OUT, "data/charnock-custody-manifest-v5.json")
 
 
 if __name__ == "__main__":

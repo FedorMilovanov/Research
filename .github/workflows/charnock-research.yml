@@ -44,6 +44,9 @@ jobs:
           python3 scripts/audit_charnock_series_plan.py
           python3 scripts/validate_research_root_authority.py
           python3 scripts/validate_repository_authority_integrity.py
+      - name: Reader-facing documents keep their restored spacing
+        run: |
+          python3 scripts/audit_charnock_text_spacing.py --scope documents --fail-over 0
       - name: Reproduce the custody manifest and packet pins
         run: |
           python3 scripts/build_charnock_custody_manifest.py --check

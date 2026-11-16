@@ -11,6 +11,15 @@ class SpacingDetectorTests(unittest.TestCase):
     def test_dropped_space_after_punctuation_is_detected(self):
         self.assertEqual([h["match"] for h in findings("справочник;главы")], [";г"])
 
+    def test_dropped_space_after_em_dash(self):
+        self.assertEqual([h["kind"] for h in findings("итог —16§21.109")], ["dash_then_token"])
+
+    def test_ranges_keep_their_dashes(self):
+        for text in ("27–28 июля", "1660—1680", "§§21.138–21.139"):
+            self.assertEqual(findings(text), [], text)
+            fixed, changes = propose(text)
+            self.assertEqual((fixed, changes), (text, []))
+
     def test_scripture_references_and_times_are_not_flagged(self):
         for text in ("Рим3:9–12", "1Тим2:15", "09:51:57Z", "p.265", "vol.16", "§§21.138", "A71277"):
             self.assertEqual(findings(text), [], text)
@@ -24,6 +33,11 @@ class SpacingDetectorTests(unittest.TestCase):
         fixed, changes = propose("Пс32; p.265; Hoek1:532")
         self.assertEqual(fixed, "Пс32; p.265; Hoek1:532")
         self.assertEqual(changes, [])
+
+    def test_reader_facing_documents_are_clean(self):
+        report = scan(scope="documents")
+        self.assertEqual(report["totalFindings"], 0, report["files"])
+        self.assertEqual(report["state"], "TEXT_SPACING_CLEAN")
 
     def test_live_corpus_report_shape(self):
         report = scan()
