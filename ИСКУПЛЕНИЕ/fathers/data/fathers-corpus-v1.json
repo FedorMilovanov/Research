@@ -893,7 +893,8 @@
         "ORIGINAL_TEXT_HOLD",
         "PUBLICATION_HOLD",
         "RIGHTS_HOLD",
-        "RIGHTS_UNCLEAR"
+        "RIGHTS_UNCLEAR",
+        "FALSE_LOCATOR"
       ],
       "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
     },
@@ -1002,7 +1003,10 @@
         "FALSE_FRIEND",
         "LOCATOR_HOLD",
         "ORIGINAL_TEXT_HOLD",
-        "RIGHTS_HOLD"
+        "RIGHTS_HOLD",
+        "FALSE_LOCATOR",
+        "PARTIAL_VERIFICATION",
+        "PUBLICATION_HOLD"
       ],
       "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
     },
@@ -1014,7 +1018,8 @@
         "ARCHIVE_HOLD",
         "LOCATOR_HOLD",
         "ORIGINAL_TEXT_HOLD",
-        "RIGHTS_HOLD"
+        "RIGHTS_HOLD",
+        "FALSE_LOCATOR"
       ],
       "stateSource": "маркеры состояния прозы файла (дубль для машинного учёта; сверка — claim_register --cross)"
     },
@@ -1120,6 +1125,22 @@
         "ORIGINAL_TEXT_HOLD",
         "QUOTE_RISK",
         "FALSE_FRIEND",
+        "ARCHIVE_HOLD"
+      ]
+    },
+    {
+      "id": "21",
+      "file": "21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
+      "topic": "Wave 22 original-language closures (II-IX c. patristic Greek/Latin & XVI-XVII c. Reformation Latin): Cyril of Jerusalem Cat. XIII.1-4, Chrysostom Hom. in Io. 65 & Hom. in Col. III, Augustine Enchiridion XVI.61-63 & Tract. in Io. 49.27, Hilary HIL-1 (fixing In Ps. I §18), Ambrose AMB-1 (III.3.19), Jerome JER-1 (I.11), Irenaeus V.1.1 suadela, Gottschalk IX c., Calvin John 3:16 propitium & 1 John 2:2 1551 Geneva Latin",
+      "state": "primary-original-language-closures-wave-22",
+      "holds": [
+        "ORIGINAL_TEXT_HOLD",
+        "PUBLICATION_HOLD",
+        "LOCATOR_HOLD",
+        "FALSE_LOCATOR",
+        "PARTIAL_VERIFICATION",
+        "FALSE_FRIEND",
+        "QUOTE_RISK",
         "ARCHIVE_HOLD"
       ]
     }
@@ -1568,6 +1589,96 @@
       "edition": "Veniamin / deCatanzaro references (PG 150-151 Greek page-level ORIGINAL_TEXT_HOLD)",
       "keyPhrase": "ransom for us who were liable to punishment; render all honour due to the Father and make satisfaction for the debt of honour",
       "verification": "Verified via published patristic translations with explicit Greek critical-edition ORIGINAL_TEXT_HOLD; completes F-46"
+    },
+    {
+      "cardId": "21",
+      "father": "Cyril of Jerusalem",
+      "work": "Catechesis XIII.1-2, 4 (PG 33:773-777)",
+      "language": "Greek",
+      "edition": "catholiclibrary.org synchronized PG 33 Greek (print scan LOCATOR_HOLD)",
+      "keyPhrase": "κόσμος ὅλος ἐλυτρώθη· οὐ γὰρ ἦν ἄνθρωπος ψιλός, ἀλλὰ υἱὸς θεοῦ μονογενής... ἑαυτὸν ἀντίλυτρον παραδούς, ἆρα τὴν ὀργὴν οὐ λύει τὴν κατὰ τῶν ἀνθρώπων;",
+      "verification": "Closes residual Wave 11 & 00_ §9 #3 ORIGINAL_TEXT_HOLD on Cat. XIII.2"
+    },
+    {
+      "cardId": "21",
+      "father": "John Chrysostom",
+      "work": "Hom. in Ioannem LXV.1 (PG 59:361-362, John 11:51-52)",
+      "language": "Greek",
+      "edition": "catholiclibrary.org synchronized Montfaucon/PG 59 Greek (print scan LOCATOR_HOLD)",
+      "keyPhrase": "Τέκνα δὲ Θεοῦ τὰ ἔθνη καλεῖ ὁ εὐαγγελιστής, ἀπὸ τοῦ μέλλοντος ἔσεσθαι... διὰ τοῦτο τῆς μελλούσης κολάσεως ἀπηλλάγησαν οἱ πιστοί",
+      "verification": "Independent direct Greek homily verification confirming οἱ πιστοί (vs Coislin 23 catena πολλοί in Wave 9); C-25 stays OPEN"
+    },
+    {
+      "cardId": "21",
+      "father": "John Chrysostom",
+      "work": "Hom. in Colossenses III (PG 62:318-324, Col. 1:20)",
+      "language": "Greek",
+      "edition": "catholiclibrary.org synchronized PG 62 Greek (print scan LOCATOR_HOLD)",
+      "keyPhrase": "ἐκπεπολεμωμένοι ἦσαν οἱ ἄγγελοι πρὸς τοὺς ἀνθρώπους... Ἐν μὲν γὰρ τῇ γῇ διπλῆ ἡ εἰρήνη... ἐν δὲ τοῖς οὐρανοῖς ἁπλῆ",
+      "verification": "Direct Greek patristic witness against angelic universalism on Col. 1:20"
+    },
+    {
+      "cardId": "21",
+      "father": "Augustine of Hippo",
+      "work": "Enchiridion XVI.61-63 (PL 40:260-261) & Tract. in Io. 49.27 (PL 35:1756)",
+      "language": "Latin",
+      "edition": "augustinus.it Maurist/PL Latin (print scan LOCATOR_HOLD)",
+      "keyPhrase": "Non enim pro Angelis mortuus est Christus... pacificantur caelestia cum terrestribus... Quomodo enim pacificantur caelestia nisi nobis, id est, concordando nobiscum?",
+      "verification": "Direct Latin witness for Col. 1:20 / Eph. 1:10 and re-verification of Tract. in Io. 49.27 secundum praedestinationem"
+    },
+    {
+      "cardId": "21",
+      "father": "Hilary of Poitiers (HIL-1)",
+      "work": "De Trinitate VI.40 (PL 10:190), X.22 (PL 10:364) & Tractatus in Psalmum I §18 (PL 9:260)",
+      "language": "Latin",
+      "edition": "la.wikisource.org / Corpus Corporum Migne PL 9-10 (print scan LOCATOR_HOLD)",
+      "keyPhrase": "homo Christus Jesus ad redemptionem animae et corporis nostri perfectus est natus; sed per redemptionem ligni vitae, id est, dominica passione",
+      "verification": "Closes Wave 2 HIL-1 ORIGINAL_TEXT_HOLD and fixes FALSE_LOCATOR in 11_ (NPNF2_09:L27208 is In Ps. I §18, not De Trin. XII.18; F-52)"
+    },
+    {
+      "cardId": "21",
+      "father": "Ambrose of Milan (AMB-1)",
+      "work": "De Officiis III.3.19 (PL 16:0150C-D)",
+      "language": "Latin",
+      "edition": "catholiclibrary.org synchronized PL 16 Latin (print scan LOCATOR_HOLD)",
+      "keyPhrase": "Christus quoque Dominus, qui pro universis mortuus est, mercedem sanguinis sui evacuatam dolebit",
+      "verification": "Closes Wave 2 AMB-1 ORIGINAL_TEXT_HOLD and corrects locator drift in 10_ (III.4 -> III.3.19; F-52)"
+    },
+    {
+      "cardId": "21",
+      "father": "Jerome (JER-1)",
+      "work": "Adversus Jovinianum I.11 (PL 23:0226C)",
+      "language": "Latin",
+      "edition": "catholiclibrary.org PL 23 + la.wikisource.org (print scan LOCATOR_HOLD)",
+      "keyPhrase": "Redempti sumus pretiosissimo sanguine Christi: immolatus est pro nobis agnus, et aspersi calidissimo rore hyssopi, omnem pituitam noxiae voluptatis excoximus",
+      "verification": "Closes Wave 2 JER-1 ORIGINAL_TEXT_HOLD"
+    },
+    {
+      "cardId": "21",
+      "father": "Irenaeus of Lyons & Gottschalk of Orbais",
+      "work": "Adv. Haer. V.1.1 (Harvey II:315, Latin clause) & Gottschalk Confessio/De praedestinatione (IX c.)",
+      "language": "Latin",
+      "edition": "Robinson CCEL fn. 201 / Wace DCB (Irenaeus, SC 153 continuous scan ORIGINAL_TEXT_HOLD); gottschalk.inrebus.com/lat015.html",
+      "keyPhrase": "non cum vi... sed secundum suadelam, quemadmodum decebat Deum suadentem, non vim inferentem, accipere quae vellet; per sanguinem crucis Christi solis est impensa prorsus electis",
+      "verification": "Corroborates Irenaeus F-4 suadela clause (PARTIAL_VERIFICATION) and IX c. Gottschalk particularist syllogism"
+    },
+    {
+      "cardId": "21",
+      "father": "John Calvin",
+      "work": "In Evangelium secundum Iohannem on John 3:16 (CO 47:64, Geneva 1553)",
+      "language": "Latin",
+      "edition": "Double-verified Latin via John Goodwin (1651) & A. F. Mitchell / J. P. Struthers (CO 47 print scan LOCATOR_HOLD)",
+      "keyPhrase": "se tamen toti mundo propitium ostendit, quum sine exceptione omnes ad fidem Christi vocat... Patet enim omnibus Christus ac expositus est, solis tamen electis oculos Deus aperit",
+      "verification": "Resolves docs/research/atonement/08_ Round 58 open Latin check: Latin is propitium, NOT reconciliatum (Pringle 1847 CTS shift -> F-51)"
+    },
+    {
+      "cardId": "21",
+      "father": "John Calvin",
+      "work": "Commentarii in Epistolas canonicas on 1 John 2:2 (Genève: Jean Crespin, 1551; CO 55:310) & Rom. 5:18 (CO 49:100)",
+      "language": "Latin",
+      "edition": "calviniopera.droz.org (Index Aureliensis 129.853) + Cox/Beman & Goodwin 1651 Latin (CO 55 print scan LOCATOR_HOLD)",
+      "keyPhrase": "Omitto phreneticorum deliria... Sufficienter pro toto mundo passum esse Christum, sed pro electis tantum efficaciter; Communem omnium gratiam facit, quia omnibus exposita est, non quod ad omnes extendatur re ipsa",
+      "verification": "Resolves docs/research/atonement/21_ §16.5 open publication date (1551) and verifies opening Latin of 1 John 2:2 & Rom. 5:18"
     }
   ],
   "falseFriendRegister": [
@@ -1920,6 +2031,20 @@
       "source": "20_EASTERN_RUSSIAN_AND_XX_C_ATONEMENT_RECEPTION_AUDIT_1350_2026_2026-11-15.md",
       "status": "FALSE_FRIEND",
       "resolution": "Russian Baptist 1906/1928 confessions (Hamburg 1847) confessed Reformed satisfaction + unconditional election (Arts. IV-V); Kargel (1913) & AUCECB (1985) confessed penal substitution + universal sacrifice in biblical-kerygmatic register; the atonement/redemption binary entered via New England (1795-1819) -> A. H. Strong (1907)."
+    },
+    {
+      "id": "F-51",
+      "claim": "John Calvin on John 3:16 teaches that God is forensically 'reconciled' to the whole world",
+      "source": "21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
+      "status": "FALSE_FRIEND",
+      "resolution": "Double-verified Latin (CO 47:64, Geneva 1553; Goodwin 1651 & Mitchell/Struthers) reads 'se tamen toti mundo propitium ostendit' ('shows Himself propitious/favorable to the whole world' when calling all without exception to faith), NOT 'reconciliatum' (W. Pringle 1847 CTS translation shift), immediately followed by 'Patet enim omnibus Christus ac expositus est, solis tamen electis oculos Deus aperit'."
+    },
+    {
+      "id": "F-52",
+      "claim": "Hilary of Poitiers' 'redemption wrought by the tree of Life' lies in De Trinitate XII.18 and Ambrose's 'Christus... pro universis mortuus est' lies in De Officiis III.4",
+      "source": "21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
+      "status": "FALSE_LOCATOR",
+      "resolution": "Wave 22 direct PL 9/10/16 Latin verification caught two Wave 2 intra-corpus locator drifts: NPNF2_09:L27208 ('per redemptionem ligni vitae, id est, dominica passione') belongs to Hilary's Tractatus super Psalmos — In Psalmum I §18 (PL 9:260), NOT De Trin. XII.18; Ambrose's quote lies in De Officiis III.3.19 (PL 16:0150C-D), NOT III.4."
     }
   ],
   "silences": [
@@ -2351,26 +2476,44 @@
     "publicationEligible": false,
     "rightsHoldObserved": true
   },
+  "originalLanguageClosuresWave22": {
+    "recordedAtUtc": "2026-11-15T18:00:00Z",
+    "dossier": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
+    "scope": "Targeted patristic Greek/Latin & Reformation Latin closures: Cyril of Jerusalem Cat. XIII.1-4, Chrysostom Hom. in Io. 65 & Hom. in Col. III, Augustine Enchiridion XVI.61-63 & Tract. in Io. 49.27, Hilary HIL-1 (fixing In Ps. I §18), Ambrose AMB-1 (III.3.19), Jerome JER-1 (I.11), Irenaeus V.1.1 suadela, Gottschalk IX c., Calvin John 3:16 propitium & 1 John 2:2 1551 Geneva Latin",
+    "falseFriendsAdded": [
+      "F-51",
+      "F-52"
+    ],
+    "totalFalseFriends": 52,
+    "verifiedOriginalsAdded": 10,
+    "totalVerifiedOriginals": 75,
+    "legacyDossiersClosed": [
+      "docs/research/atonement/08_john_3_16_exegetical_defense.md (Round 58 propitium)",
+      "docs/research/atonement/21_exegesis_1john_2_2_and_parakletos_trilemma.md (§16.5 1551 Geneva Crespin ed. & CO 55:310 Latin)"
+    ],
+    "c25Status": "OPEN",
+    "publicationEligible": false
+  },
   "claimRegister20261026": {
     "чтоЭто": "реестр доводов лана «fathers»: строка = раздел прозы уровня ## с локатором, классом из её собственных маркеров и отметкой съёма",
     "чтоСчитаетсяДоводом": "заголовок «## » в любом .md лана, включая вложенные папки (synthesis/drafts, ot/tools); тело секции — до следующего «## » или до конца файла",
     "приоритет": "УДЕРЖИВАЕТСЯ > ОТКРЫТО > ЗАКРЫТО; маркеров нет -> БЕЗ МАРКЕРА; маркер вне классификации -> ошибка съёма, а не «прочее»",
     "метод": "scripts/atonement_claim_register.py обходит прозу лана целиком (без выборки), разбирает маркеры вида `ВЕРДИКТ`, сверяет локатор побайтово (файл + номер строки + текст)",
-    "строк": 161,
-    "файлов": 21,
+    "строк": 171,
+    "файлов": 22,
     "покрытоМашинно": 39,
-    "покрытоПоФайлу": 161,
-    "файловПрозы": 21,
+    "покрытоПоФайлу": 171,
+    "файловПрозы": 22,
     "файловБезКарточки": 0,
-    "разрешеноЛокаторов": 161,
+    "разрешеноЛокаторов": 171,
     "неРазрешено": 0,
     "поКлассам": {
       "БЕЗ МАРКЕРА": 87,
-      "УДЕРЖИВАЕТСЯ": 73,
+      "УДЕРЖИВАЕТСЯ": 83,
       "СЛУЖЕБНОЕ": 1
     },
     "маркеры": {
-      "всего": 291,
+      "всего": 357,
       "различных": 23,
       "словарь": {
         "APPARATUS_FALSE_FRIEND": "УДЕРЖИВАЕТСЯ",
@@ -2398,17 +2541,17 @@
         "RIGHTS_UNCLEAR": "УДЕРЖИВАЕТСЯ"
       },
       "частоты": {
-        "FALSE_FRIEND": 56,
-        "ORIGINAL_TEXT_HOLD": 52,
-        "LOCATOR_HOLD": 34,
-        "ARCHIVE_HOLD": 27,
-        "ORIGINAL_TEXT_VERIFIED": 24,
+        "ORIGINAL_TEXT_HOLD": 71,
+        "FALSE_FRIEND": 58,
+        "LOCATOR_HOLD": 48,
+        "ORIGINAL_TEXT_VERIFIED": 36,
+        "ARCHIVE_HOLD": 30,
         "RIGHTS_HOLD": 21,
-        "PUBLICATION_HOLD": 15,
-        "QUOTE_RISK": 13,
-        "PARTIAL_VERIFICATION": 7,
+        "PUBLICATION_HOLD": 18,
+        "QUOTE_RISK": 15,
+        "FALSE_LOCATOR": 13,
+        "PARTIAL_VERIFICATION": 11,
         "ARCHIVE_AVAILABLE": 6,
-        "FALSE_LOCATOR": 6,
         "EVIDENCE_HOLD": 5,
         "EXACT_LOCATOR_VERIFIED": 4,
         "PUBLICATION_ELIGIBLE": 4,
@@ -2440,8 +2583,8 @@
       ]
     },
     "сверкаСКарточками": {
-      "файловПрозы": 21,
-      "файловСКарточкой": 21,
+      "файловПрозы": 22,
+      "файловСКарточкой": 22,
       "файловБезКарточки": 0,
       "ссылокНаНесуществующийФайл": 0,
       "ссылокВнеОбходаЛана": 0,
@@ -2502,8 +2645,8 @@
           "естьКарточка": true
         },
         "11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md": {
-          "проза": 5,
-          "карточка": 11,
+          "проза": 7,
+          "карточка": 12,
           "вПрозеНеВКарточке": [],
           "вКарточкеНеИзПрозы": [
             "READABLE",
@@ -2665,6 +2808,7 @@
         "маркеров": 1,
         "токены": [
           "EVIDENCE_HOLD",
+          "FALSE_LOCATOR",
           "ORIGINAL_TEXT_HOLD",
           "PUBLICATION_HOLD",
           "RIGHTS_HOLD"
@@ -3553,7 +3697,7 @@
         "код": "СР@09_SILENCES_AND_FALSE_FRIENDS~3",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/09_SILENCES_AND_FALSE_FRIENDS.md",
-        "строка": 86,
+        "строка": 88,
         "срез": "Часть III. Как проверять ложных друзей (чек-лист)",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 1,
@@ -3568,7 +3712,7 @@
         "код": "СР@09_SILENCES_AND_FALSE_FRIENDS~4",
         "лан": "fathers",
         "файл": "ИСКУПЛЕНИЕ/fathers/09_SILENCES_AND_FALSE_FRIENDS.md",
-        "строка": 96,
+        "строка": 98,
         "срез": "Часть IV. Объективные ограничения (HOLD — не «что не сделано»)",
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 2,
@@ -3799,7 +3943,11 @@
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 1,
         "токены": [
+          "FALSE_LOCATOR",
+          "LOCATOR_HOLD",
           "ORIGINAL_TEXT_HOLD",
+          "PARTIAL_VERIFICATION",
+          "PUBLICATION_HOLD",
           "RIGHTS_HOLD"
         ],
         "машинно": false,
@@ -3965,9 +4113,25 @@
         "класс": "УДЕРЖИВАЕТСЯ",
         "маркеров": 1,
         "токены": [
+          "LOCATOR_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "СР@11_III_IV_GAPS_AND_LATIN_WEST_CARDS~3",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
+        "строка": 204,
+        "срез": "Дополнение Волны 22 (2026-11-15): латинская сверка `HIL-1`, `AMB-1`, `JER-1` и исправление ложного локатора `HIL-1`",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
           "ARCHIVE_HOLD",
+          "FALSE_LOCATOR",
           "LOCATOR_HOLD",
           "ORIGINAL_TEXT_HOLD",
+          "ORIGINAL_TEXT_VERIFIED",
           "RIGHTS_HOLD"
         ],
         "машинно": false,
@@ -4681,12 +4845,157 @@
         ],
         "машинно": false,
         "машинноПоФайлу": true
+      },
+      {
+        "код": "1@21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
+        "строка": 11,
+        "срез": "1. Кирилл Иерусалимский, *Catechesis* XIII.1–2, 4 (греч., PG 33:773–777) — закрытие остаточного `ORIGINAL_TEXT_HOLD` Волны 11 и `00_` §9 #3",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "LOCATOR_HOLD",
+          "ORIGINAL_TEXT_HOLD",
+          "ORIGINAL_TEXT_VERIFIED"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "2@21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
+        "строка": 27,
+        "срез": "2. Иоанн Златоуст: *Hom. in Ioannem* LXV.1 (PG 59:361–362, Ин. 11:51–52) и *Hom. in Colossenses* III (PG 62:318–324, Кол. 1:20) — прямой греческий текст",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "LOCATOR_HOLD",
+          "ORIGINAL_TEXT_VERIFIED"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "3@21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
+        "строка": 51,
+        "срез": "3. Августин Иппонский: *Enchiridion* XVI.61–63 (PL 40:260–261) и *Tract. in Io.* 49.27 (PL 35:1756) — латинский оригинал",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "LOCATOR_HOLD",
+          "ORIGINAL_TEXT_VERIFIED"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "4@21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
+        "строка": 64,
+        "срез": "4. Иларий Пиктавийский (`HIL-1`): закрытие `ORIGINAL_TEXT_HOLD` (PL 10 / PL 9) и выявление `FALSE_LOCATOR` в `11_`",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "FALSE_LOCATOR",
+          "LOCATOR_HOLD",
+          "ORIGINAL_TEXT_HOLD",
+          "ORIGINAL_TEXT_VERIFIED"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "5@21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
+        "строка": 77,
+        "срез": "5. Амвросий Медиоланский (`AMB-1`): закрытие `ORIGINAL_TEXT_HOLD` (PL 16:0150C–D) и поправка дрейфа локатора `10_` (`III.4` → `III.3.19`)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "FALSE_LOCATOR",
+          "LOCATOR_HOLD",
+          "ORIGINAL_TEXT_VERIFIED"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "6@21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
+        "строка": 89,
+        "срез": "6. Иероним Стридонский (`JER-1`): закрытие `ORIGINAL_TEXT_HOLD` (PL 23:0226C)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "LOCATOR_HOLD",
+          "ORIGINAL_TEXT_VERIFIED"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "7@21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
+        "строка": 100,
+        "срез": "7. Ириней Лионский (*Adv. Haer.* V.1.1 — уточнение `F-4`) и Готшальк из Орбе (IX в.)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "LOCATOR_HOLD",
+          "ORIGINAL_TEXT_HOLD",
+          "PARTIAL_VERIFICATION"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "8@21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
+        "строка": 118,
+        "срез": "8. Жан Кальвин — закрытие двух явных латинских вопросов `docs/research/atonement/08_` (Раунд 58) и `21_` (§16.5)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "FALSE_FRIEND",
+          "LOCATOR_HOLD",
+          "ORIGINAL_TEXT_VERIFIED",
+          "PARTIAL_VERIFICATION",
+          "QUOTE_RISK"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "9@21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15",
+        "лан": "fathers",
+        "файл": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
+        "строка": 147,
+        "срез": "9. Постреформационная латынь XVII в. и реестр честных остаточных удержаний",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "ARCHIVE_HOLD",
+          "LOCATOR_HOLD",
+          "ORIGINAL_TEXT_HOLD",
+          "PUBLICATION_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
       }
     ],
     "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
     "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check fathers",
-    "measuredAt": "2026-11-16T06:39:33Z",
-    "checkedAt": "2026-11-16T06:39:33Z",
-    "предыдущийСъём": "2026-11-16T06:36:41Z"
+    "measuredAt": "2026-11-16T16:39:07Z",
+    "checkedAt": "2026-11-16T16:39:07Z",
+    "предыдущийСъём": "2026-11-16T16:39:06Z"
   }
 }

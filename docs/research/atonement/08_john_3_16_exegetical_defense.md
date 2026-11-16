@@ -164,3 +164,8 @@ faith*».
 
 **4. Оговорки.** Класс **B1** (перевод CTS; лат. не сверен). Выражение «*reconciled*» в переводе против «*propice*»
 у Амиро — вероятно, переводчик передаёт «*propitium*»; **проверить по латыни** (не утверждать).
+
+> **[Волна 22, 2026-11-15 — закрытие латинского вопроса п. 4 (`propitium` vs `reconciliatum`); см. `ИСКУПЛЕНИЕ/fathers/21_` §8.1 и `09_` `F-51`]:**
+> Двойная независимая латинская сверка толкования Кальвина на Ин. 3:16 (`CO 47:64`, Женева 1553; John Goodwin 1651 и A. F. Mitchell / J. P. Struthers; полистная сверка скана CO 47:64 — `LOCATOR_HOLD`) **подтверждает гипотезу Раунда 58: в латинском оригинале стоит именно `propitium`**, а не `reconciliatum`:
+> *«Tametsi enim in mundo nihil reperietur Dei favore dignum, **se tamen toti mundo propitium ostendit**, quum sine exceptione omnes ad fidem Christi vocat, quae nihil aliud est quam ingressus in vitam. Caeterum meminerimus ita communiter promitti omnibus vitam in Christo, qui crediderint, ut tamen minime communis omnium sit fides. **Patet enim omnibus Christus ac expositus est, solis tamen electis oculos Deus aperit.**»*
+> Таким образом, английское *«reconciled»* у Прингла (CTS, 1847) — переводческое смещение (`F-51`); подлинная латынь Кальвина говорит о **благосклонности предложения** (`propitium`, ср. фр. *propice* у Амиро) при чётком ограничении действенного просвещения избранными (`solis tamen electis oculos Deus aperit`). Класс данного локуса повышен с `B1` до проверенного латинского текста (с сохранением `LOCATOR_HOLD` на печатный скан тома CO 47).

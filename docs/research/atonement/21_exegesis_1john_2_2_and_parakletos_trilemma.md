@@ -474,3 +474,7 @@ mettoit à la grâce de la remission*». Дорт (S145–S146) возражае
 **16.5. Оговорки.** Класс **B1** (перевод; лат. текст не сверен). При сверке с латинским изданием толкований класс
 поднимется до **A3**. Дата латинского издания толкований на 1 Ин. — **не устанавливалась** (не утверждать по
 памяти).
+
+> **[Волна 22, 2026-11-15 — закрытие библиографического и латинского пробела §16.5; см. `ИСКУПЛЕНИЕ/fathers/21_` §8.2]:**
+> 1. **Точная дата первого латинского издания установлена:** *Ioannis Calvini Commentarii in Epistolas canonicas, Unam Petri. Unam Joannis...*, **Genève: Jean Crespin, 1551** (`calviniopera.droz.org`, критич. изд. K. Hagen 2009; *Index Aureliensis* 129.853).
+> 2. **Латынь зачина схоластического разбора (`CO 55:310`, по Cox / Beman):** *«Sed hic movetur quaestio, quomodo mundi totius peccata expientur. Omitto phreneticorum deliria, qui hoc praetextu reprobos omnes, adeoque Satanam ipsum in salutem admittunt: tale portentum refutatione indignum est. Qui hanc absurditatem volebant effugere, dixerunt: **Sufficienter pro toto mundo passum esse Christum, sed pro electis tantum efficaciter.**»* (На вторую половину абзаца от *Solutio haec in scholis* по печатному скану CO 55:310 сохраняется `LOCATOR_HOLD`; латинская параллель Рим. 5:18 `CO 49:100` — см. `ИСКУПЛЕНИЕ/fathers/21_` §8.2.)
