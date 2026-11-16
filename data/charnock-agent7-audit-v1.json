@@ -11,38 +11,135 @@
     "noRightsCleared": true
   },
   "verifiedIndependently": [
-    {"id": "V-01", "claim": "TCP A46911 (Johnson 1680) byte-identical to Research pinned hash e2bea34f...", "route": "codeload + sha256", "verdict": "ACCEPT"},
-    {"id": "V-02", "claim": "TCP A71277 (Wood 1691) byte-identical to Research pinned hash beaa62b9...", "route": "codeload + sha256", "verdict": "ACCEPT"},
-    {"id": "V-03", "claim": "Johnson ESTC R16247 / Wing J783; 'Thirty six years since'; 'Josiah-like'; 'seven or eight' in Southwark; 'verbatim, pen'd and read all his Notes'; 'I believe perished with his Books'", "route": "A46911 full text", "verdict": "ACCEPT"},
-    {"id": "V-04", "claim": "Adams & Veal epistle quotes in the article are genuine in the 1680 edition (A32726), not only 1864/1684 reprints", "route": "A32726 + A79420", "verdict": "ACCEPT"},
-    {"id": "V-05", "claim": "1680 epistle calls the tutor 'the present Arch-B. of Canterbury' (independent of Wood)", "route": "A32726", "verdict": "ACCEPT"},
-    {"id": "V-06", "claim": "Sayings 1680 title: 'Wednesday the 28 of July, 1680 ... Interred the 30th following'", "route": "B02133 + scanned sheet", "verdict": "ACCEPT"},
-    {"id": "V-07", "claim": "New Poems 1680 and An Elegy 1680 both give 27 July", "route": "A52960, A39134, Folger 534763", "verdict": "ACCEPT"},
-    {"id": "V-08", "claim": "Weekdays: 27.07.1680 Julian = Tuesday; 28 = Wednesday; 30 = Friday", "route": "JDN computation", "verdict": "ACCEPT"},
-    {"id": "V-09", "claim": "Wood: birthplace, Sancroft tuition, Oxford 1649/1650, MA 1652 + proctor 'two years after', Ireland 4-5 years, 15 years, France/Holland, B.D. 'as I conceive', death 27 July at Tymms, burial 30 July under the Belfry, 'published nothing while he lived'", "route": "A71277 entry [429]", "verdict": "ACCEPT"},
-    {"id": "V-10", "claim": "Bibliotheca Charnockiana: [4], 31 p., auction 4 Oct 1680, Sign of the Lamb Cornhill, Wing C3707", "route": "Folger 533300", "verdict": "ACCEPT"},
-    {"id": "V-11", "claim": "Several Discourses 1682: [10], 827, [28] p., D. Newman, T. Cockerill, B. Griffin, T. Simmons, B. Alsop", "route": "Folger 470309", "verdict": "ACCEPT"},
-    {"id": "V-12", "claim": "Met 360649 'Prospects of London Before and After the Great Fire', 1666, 17.50.100,.101, second state of five, PD", "route": "Met Collection API", "verdict": "ACCEPT"},
-    {"id": "V-13", "claim": "Met 361738 'London before the Great Fire', 1666-77, 56.581.8, second state of two, PD", "route": "Met Collection API", "verdict": "ACCEPT"},
-    {"id": "V-14", "claim": "Yale B1977.14.15862 Howlett after Schnebbelie, 1819, CC0", "route": "YCBA catalogue", "verdict": "ACCEPT"},
-    {"id": "V-15", "claim": "NPG D29678: Robert White, line engraving, published 1684, Reference Collection, (c) NPG", "route": "NPG catalogue", "verdict": "ACCEPT"},
-    {"id": "V-16", "claim": "Article image files match catalogue metadata (dimensions, sizes, SHA-256)", "route": "gh api raw + sha256/file", "verdict": "ACCEPT"}
+    {
+      "id": "V-01",
+      "claim": "TCP A46911 (Johnson 1680) byte-identical to Research pinned hash e2bea34f...",
+      "route": "codeload + sha256",
+      "verdict": "ACCEPT"
+    },
+    {
+      "id": "V-02",
+      "claim": "TCP A71277 (Wood 1691) byte-identical to Research pinned hash beaa62b9...",
+      "route": "codeload + sha256",
+      "verdict": "ACCEPT"
+    },
+    {
+      "id": "V-03",
+      "claim": "Johnson ESTC R16247 / Wing J783; 'Thirty six years since'; 'Josiah-like'; 'seven or eight' in Southwark; 'verbatim, pen'd and read all his Notes'; 'I believe perished with his Books'",
+      "route": "A46911 full text",
+      "verdict": "ACCEPT"
+    },
+    {
+      "id": "V-04",
+      "claim": "Adams & Veal epistle quotes in the article are genuine in the 1680 edition (A32726), not only 1864/1684 reprints",
+      "route": "A32726 + A79420",
+      "verdict": "ACCEPT"
+    },
+    {
+      "id": "V-05",
+      "claim": "1680 epistle calls the tutor 'the present Arch-B. of Canterbury' (independent of Wood)",
+      "route": "A32726",
+      "verdict": "ACCEPT"
+    },
+    {
+      "id": "V-06",
+      "claim": "Sayings 1680 title: 'Wednesday the 28 of July, 1680 ... Interred the 30th following'",
+      "route": "B02133 + scanned sheet",
+      "verdict": "ACCEPT"
+    },
+    {
+      "id": "V-07",
+      "claim": "New Poems 1680 and An Elegy 1680 both give 27 July",
+      "route": "A52960, A39134, Folger 534763",
+      "verdict": "ACCEPT"
+    },
+    {
+      "id": "V-08",
+      "claim": "Weekdays: 27.07.1680 Julian = Tuesday; 28 = Wednesday; 30 = Friday",
+      "route": "JDN computation",
+      "verdict": "ACCEPT"
+    },
+    {
+      "id": "V-09",
+      "claim": "Wood: birthplace, Sancroft tuition, Oxford 1649/1650, MA 1652 + proctor 'two years after', Ireland 4-5 years, 15 years, France/Holland, B.D. 'as I conceive', death 27 July at Tymms, burial 30 July under the Belfry, 'published nothing while he lived'",
+      "route": "A71277 entry [429]",
+      "verdict": "ACCEPT"
+    },
+    {
+      "id": "V-10",
+      "claim": "Bibliotheca Charnockiana: [4], 31 p., auction 4 Oct 1680, Sign of the Lamb Cornhill, Wing C3707",
+      "route": "Folger 533300",
+      "verdict": "ACCEPT"
+    },
+    {
+      "id": "V-11",
+      "claim": "Several Discourses 1682: [10], 827, [28] p., D. Newman, T. Cockerill, B. Griffin, T. Simmons, B. Alsop",
+      "route": "Folger 470309",
+      "verdict": "ACCEPT"
+    },
+    {
+      "id": "V-12",
+      "claim": "Met 360649 'Prospects of London Before and After the Great Fire', 1666, 17.50.100,.101, second state of five, PD",
+      "route": "Met Collection API",
+      "verdict": "ACCEPT"
+    },
+    {
+      "id": "V-13",
+      "claim": "Met 361738 'London before the Great Fire', 1666-77, 56.581.8, second state of two, PD",
+      "route": "Met Collection API",
+      "verdict": "ACCEPT"
+    },
+    {
+      "id": "V-14",
+      "claim": "Yale B1977.14.15862 Howlett after Schnebbelie, 1819, CC0",
+      "route": "YCBA catalogue",
+      "verdict": "ACCEPT"
+    },
+    {
+      "id": "V-15",
+      "claim": "NPG D29678: Robert White, line engraving, published 1684, Reference Collection, (c) NPG",
+      "route": "NPG catalogue",
+      "verdict": "ACCEPT"
+    },
+    {
+      "id": "V-16",
+      "claim": "Article image files match catalogue metadata (dimensions, sizes, SHA-256)",
+      "route": "gh api raw + sha256/file",
+      "verdict": "ACCEPT"
+    },
+    {
+      "id": "V-17",
+      "claim": "Stationers' Register, 23 March 1682/3: Cockerill enters Charnock's Providence and both volumes of the Works",
+      "route": "full OCR of Eyre, Transcript of the Registers ... vol. III (1913-14), IA 1913transcriptof03statuoft",
+      "verdict": "ACCEPT",
+      "locator": "Eyre vol. III, printed p. 138 (register leaf [17]); images 150-151"
+    }
   ],
   "rejectedOrCorrected": [
     {
       "id": "R-01",
       "claim": "Stephen Charnock was buried 7 August 1680",
-      "locations": ["БИОГРАФИИ/Стивен Чарнок/00_README_AND_NAVIGATION.md", "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md §21.138", "PR #971 article section 'Июль 1680 года' + note [19]"],
+      "locations": [
+        "БИОГРАФИИ/Стивен Чарнок/00_README_AND_NAVIGATION.md",
+        "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md §21.138",
+        "PR #971 article section 'Июль 1680 года' + note [19]"
+      ],
       "error": "'Aug. 7' is the date of the NEXT register entry (baptism of James Kelke), wrongly glued to Charnock's note",
       "proof": "Harleian Society vol. 7 (Chester 1882), printed p. 265: 'July 30 Stephen Charnock, minister ; over Mr Sykes, under the steeple | Aug. 7 James Kelke, son of James Kelke & Anne his wife'",
-      "corroboration": ["Wood 1691 'on the 30 day of the same month'", "Sayings 1680 'Interred the 30th following'", "McCosh 1864 quoting the register as 'July 30'"],
+      "corroboration": [
+        "Wood 1691 'on the 30 day of the same month'",
+        "Sayings 1680 'Interred the 30th following'",
+        "McCosh 1864 quoting the register as 'July 30'"
+      ],
       "verdict": "REJECT",
       "minimalFix": "Burial = 30 July 1680; register locator Chester 1882 p. 265; delete '7 August' and the 11-day argument"
     },
     {
       "id": "R-02",
       "claim": "Death date 27 July is confirmed by the parish register",
-      "locations": ["16 §21.138"],
+      "locations": [
+        "16 §21.138"
+      ],
       "error": "The register records burial only; no death date",
       "verdict": "REJECT",
       "minimalFix": "State that the register confirms burial only"
@@ -50,7 +147,9 @@
     {
       "id": "R-03",
       "claim": "8 witnesses for 27 July vs 1 for 28 July resolves CONFLICT-10",
-      "locations": ["16 §21.138"],
+      "locations": [
+        "16 §21.138"
+      ],
       "error": "Counts dependent retellings (DNB<-Wood; 19th-c. compilations) and treats agreement as proof",
       "verdict": "REJECT",
       "minimalFix": "Keep CONFLICT; independent early voices are 3:1 (New Poems, Elegy, Wood : Sayings)"
@@ -58,7 +157,9 @@
     {
       "id": "R-04",
       "claim": "About 11 days between death and burial was a normal interval",
-      "locations": ["16 §21.138"],
+      "locations": [
+        "16 §21.138"
+      ],
       "error": "Built on R-01; actual interval 2-3 days",
       "verdict": "REJECT",
       "minimalFix": "Delete"
@@ -66,7 +167,9 @@
     {
       "id": "R-05",
       "claim": "A later edition of the register prints 7 August",
-      "locations": ["PR #971 article"],
+      "locations": [
+        "PR #971 article"
+      ],
       "error": "No such edition; single misread page",
       "verdict": "REJECT",
       "minimalFix": "Replace with register 30 July statement"
@@ -74,7 +177,10 @@
     {
       "id": "R-06",
       "claim": "Exact admission day 1642 must be excluded as unresolved (BCD-04 / CONFLICT-13)",
-      "locations": ["02 §2", "02 §10 BCD-04"],
+      "locations": [
+        "02 §2",
+        "02 §10 BCD-04"
+      ],
       "error": "Alumni Cantabrigienses (Venn) gives 'sizar at Emmanuel, May 30, 1642'; admission and matriculation are conflated",
       "verdict": "REWORK",
       "minimalFix": "Move BCD-04 to ATTRIBUTED with Venn locator; article to cite Venn; B.A. = early 1646 (1645/6)"
@@ -82,7 +188,9 @@
     {
       "id": "R-07",
       "claim": "Charnock signed the certificate for Veel 'in Dublin' on 31 Dec 1661",
-      "locations": ["PR #971 article"],
+      "locations": [
+        "PR #971 article"
+      ],
       "error": "DNB gives date and signatories only; place unsupported and inconsistent with his return to England c.1660",
       "verdict": "REWORK",
       "minimalFix": "Drop 'in Dublin' or add a document locator"
@@ -90,31 +198,42 @@
     {
       "id": "R-08",
       "claim": "Quarterly payment of GBP 50 = annual stipend of about GBP 200 (1656)",
-      "locations": ["PR #971 article, note [5]"],
+      "locations": [
+        "PR #971 article, note [5]"
+      ],
       "error": "No page locator in Laurence; 'corresponded in 1656' implies a conversion that does not exist; wider inference about office",
       "verdict": "HOLD",
-      "minimalFix": "Give chapter/appendix locator or soften to 'regular maintenance of c. GBP 200 a year'"
+      "minimalFix": "Give chapter/appendix locator or soften to 'regular maintenance of c. GBP 200 a year'",
+      "negativeCheck": "M'Cosh memoir (Complete Works, 1864, i.xvi-xxvi) gives one Dublin stipend only - Harrison, 'chaplain to Henry Cromwell, with a salary of GBP 300 a year'; no figure for Charnock in M'Cosh, Wood or Calamy as transmitted. The GBP 200 figure rests on Laurence alone."
     },
     {
       "id": "R-09",
       "claim": "Dublin preaching list: St Werburgh, St John, St Catherine, St Patrick, St Kevin",
-      "locations": ["PR #971 article, note [5]"],
+      "locations": [
+        "PR #971 article, note [5]"
+      ],
       "error": "No locator; conflicts with Research BCD-17 EXCLUDE",
       "verdict": "HOLD",
       "minimalFix": "Keep St Werburgh + Christ Church; summarise Laurence in one clause with locator"
     },
     {
       "id": "R-10",
-      "claim": "Stationers' Register entry dated 23 March 1682/3 for Charnock copyrights",
-      "locations": ["PR #971 article, note [18]"],
-      "error": "Only a search snippet; date not verified; paragraph's interpretation depends on it",
-      "verdict": "HOLD",
-      "minimalFix": "Verify printed Register vol. III with entry number, or delete the paragraph"
+      "claim": "Stationers' Register entry dated 23 March 1682/3 for Charnock copyrights (article note [18])",
+      "locations": [
+        "PR #971 article, note [18]",
+        "Eyre, Transcript of the Registers ... 1640-1708, vol. III, p. 138 (IA 1913transcriptof03statuoft, images 150-151)"
+      ],
+      "error": "Original HOLD reason was that only a search snippet existed. Checked against the printed transcript: the entry exists and is dated exactly as the article says.",
+      "verdict": "ACCEPT",
+      "verified": "23th March 1682 [i.e. 1682-3], three consecutive entries signed Tho: Cockerill (witness Martin Newton): (1) 'A treatise of Divine providence ... by ye late learned divine, Mr Stephen Charnock, Batchelor in divinity, and sometimes fellow of New Colledge in Oxford ... vj s'; (2) 'The works ... 2nd vollume'; (3) 'The works ... Vollume 1st first [sic] ... upon the existence and attributes of God' (also signed Bennet Griffin). Running heads p.137 '17-22 March 1682' -> p.139 '24-26 March 1682-3' -> p.140 '26-27 March 1683' show 23 March was the last day of the legal year.",
+      "minimalFix": "Technical only: in note [18] replace the 'search extract' caveat with the locator (Eyre vol. III, p. 138). Body sentence can stand; optionally add that all three books were entered the same day."
     },
     {
       "id": "R-11",
       "claim": "Charnock served a 'presbyterian nonconformist congregation' (flat)",
-      "locations": ["PR #971 article, epilogue"],
+      "locations": [
+        "PR #971 article, epilogue"
+      ],
       "error": "Presbyterian characterisation is a later-biographer label; Wood says 'private meetings'",
       "verdict": "REWORK",
       "minimalFix": "Add attribution clause"
@@ -122,7 +241,9 @@
     {
       "id": "R-12",
       "claim": "In 1675 Charnock became pastor together with Thomas Watson (flat)",
-      "locations": ["PR #971 article, Crosby Hall section"],
+      "locations": [
+        "PR #971 article, Crosby Hall section"
+      ],
       "error": "DNB 1887 only; Wood attests same building, not joint pastorate; congregational document not obtained",
       "verdict": "REWORK",
       "minimalFix": "Attribute to later biographies; note the missing community record"
@@ -130,7 +251,9 @@
     {
       "id": "R-13",
       "claim": "One sermon published in his lifetime; McCosh calls it the only one",
-      "locations": ["PR #971 article"],
+      "locations": [
+        "PR #971 article"
+      ],
       "error": "Wood 1691 says 'he published nothing while he lived'; CONFLICT-9 hidden from the reader",
       "verdict": "REWORK",
       "minimalFix": "Add one sentence with Wood's contrary statement"
@@ -138,7 +261,9 @@
     {
       "id": "R-14",
       "claim": "'Documents allow us to speak of his position under Henry Cromwell's administration'",
-      "locations": ["PR #971 article"],
+      "locations": [
+        "PR #971 article"
+      ],
       "error": "No documentary series was obtained; printed witnesses only",
       "verdict": "REWORK",
       "minimalFix": "'Sources' instead of 'documents'"
@@ -146,7 +271,9 @@
     {
       "id": "R-15",
       "claim": "Crosby Hall 'connected with Richard III'",
-      "locations": ["PR #971 article"],
+      "locations": [
+        "PR #971 article"
+      ],
       "error": "Tradition, not a documented fact; Historic England notes 1466 and John Crosby",
       "verdict": "REWORK",
       "minimalFix": "Mark as tradition or drop"
@@ -154,7 +281,9 @@
     {
       "id": "R-16",
       "claim": "Johnson preached the funeral sermon (without qualification)",
-      "locations": ["PR #971 article"],
+      "locations": [
+        "PR #971 article"
+      ],
       "error": "Johnson's own preface says he revised and repeated a Leicestershire funeral sermon to 'some very few of Mr. Charnocks Hearers'",
       "verdict": "REWORK",
       "minimalFix": "Add the qualification; it strengthens the scene"
@@ -162,7 +291,9 @@
     {
       "id": "R-17",
       "claim": "NPG print = ordinary museum impression",
-      "locations": ["PR #971 images catalogue row 1"],
+      "locations": [
+        "PR #971 images catalogue row 1"
+      ],
       "error": "It is an extra-illustrated plate from Fleming's Granger (NPG Reference Collection)",
       "verdict": "ACCEPT_WITH_NOTE",
       "minimalFix": "State provenance in the catalogue"
@@ -170,7 +301,9 @@
     {
       "id": "R-18",
       "claim": "Editors' quotes cited via 1864 reprint",
-      "locations": ["PR #971 article, note [11]"],
+      "locations": [
+        "PR #971 article, note [11]"
+      ],
       "error": "All key phrases are verifiable in the 1680 edition (A32726)",
       "verdict": "REWORK",
       "minimalFix": "Cite A32726 with the 1864/1684 collation as cross-check"
@@ -178,33 +311,142 @@
     {
       "id": "R-19",
       "claim": "Emmanuel College 'paintings' page as a source",
-      "locations": ["PR #971 article, note [4]"],
+      "locations": [
+        "PR #971 article, note [4]"
+      ],
       "error": "Not a source for the tutorship or the admission date; unused in the body",
       "verdict": "REJECT",
       "minimalFix": "Replace with Venn and A32726"
     }
   ],
   "newFindings": [
-    {"id": "N-01", "finding": "Parish register gives burial place: 'upper new vault in S. isle ... over Mr Sykes, under the steeple'", "use": "narrative detail; 30 July 1680", "status": "ACCEPT"},
-    {"id": "N-02", "finding": "Auction catalogues distributed at the Sign of the Lamb (Cornhill) and at the Sign of the Three Legs in the Poultry - Thomas Cockerill's shop, publisher of the posthumous works; same sale appended 'the library of ... Mr. Thomes Watson'", "use": "link between library sale and printing house; Watson identity = hypothesis", "status": "ACCEPT_WITH_NOTE"},
-    {"id": "N-03", "finding": "1680 auction catalogue styles him 'S.T.B.' - earliest printed B.D. title, before Wood's 'as I conceive'", "use": "one clause; not a degree record", "status": "ACCEPT_WITH_NOTE"},
-    {"id": "N-04", "finding": "1680 epistle independently names Sancroft as tutor ('the present Arch-B. of Canterbury')", "use": "strengthens the Cambridge contrast without relying on Wood", "status": "ACCEPT"},
-    {"id": "N-05", "finding": "Johnson's funeral sermon is a reworked Leicestershire funeral sermon ('Text given by their Father the day before his Death'), repeated to a few of Charnock's hearers", "use": "scene detail plus attribution precision", "status": "ACCEPT"},
-    {"id": "N-06", "finding": "Burial 'over Mr Sykes' vs the (unobtained) will naming Ann Sykes", "use": "research lead only, no kinship claim", "status": "HOLD"}
+    {
+      "id": "N-01",
+      "finding": "Parish register gives burial place: 'upper new vault in S. isle ... over Mr Sykes, under the steeple'",
+      "use": "narrative detail; 30 July 1680",
+      "status": "ACCEPT"
+    },
+    {
+      "id": "N-02",
+      "finding": "Auction catalogues distributed at the Sign of the Lamb (Cornhill) and at the Sign of the Three Legs in the Poultry - Thomas Cockerill's shop, publisher of the posthumous works; same sale appended 'the library of ... Mr. Thomes Watson'",
+      "use": "link between library sale and printing house; Watson identity = hypothesis",
+      "status": "ACCEPT_WITH_NOTE"
+    },
+    {
+      "id": "N-03",
+      "finding": "1680 auction catalogue styles him 'S.T.B.' - earliest printed B.D. title, before Wood's 'as I conceive'",
+      "use": "one clause; not a degree record",
+      "status": "ACCEPT_WITH_NOTE"
+    },
+    {
+      "id": "N-04",
+      "finding": "1680 epistle independently names Sancroft as tutor ('the present Arch-B. of Canterbury')",
+      "use": "strengthens the Cambridge contrast without relying on Wood",
+      "status": "ACCEPT"
+    },
+    {
+      "id": "N-05",
+      "finding": "Johnson's funeral sermon is a reworked Leicestershire funeral sermon ('Text given by their Father the day before his Death'), repeated to a few of Charnock's hearers",
+      "use": "scene detail plus attribution precision",
+      "status": "ACCEPT"
+    },
+    {
+      "id": "N-06",
+      "finding": "Burial 'over Mr Sykes' vs the (unobtained) will naming Ann Sykes",
+      "use": "research lead only, no kinship claim",
+      "status": "HOLD"
+    },
+    {
+      "id": "N-07",
+      "finding": "The three posthumous books were entered as one package on the last day of the legal year 1682/3; 'Vollume 1st' and '2nd vollume' are separate entries, so the two-folio structure is a registration fact; the register calls him 'Batchelor in divinity, and sometimes fellow of New Colledge in Oxford' - a corporate (not booksellers') witness independent of Wood, though not an act of degree.",
+      "use": "dated scene for the editorial-history paragraph; corroborates N-03 and the New College/B.D. attribution; does not supply a degree date (BCD-04/CONFLICT-13 distinction stands)",
+      "status": "ACCEPT (source read); BCD-04 date question unaffected"
+    }
   ],
   "conflicts": [
-    {"id": "C-01", "topic": "death 27 vs 28 July 1680", "state": "CONFLICT", "independentEarlyVoices27": ["New Poems 1680", "An Elegy 1680", "Wood 1691"], "independentEarlyVoices28": ["Sayings 1680 (weekday correct)"], "action": "keep both; article formulation acceptable"},
-    {"id": "C-02", "topic": "burial 30 July vs 7 August", "state": "RESOLVED_30_JULY", "proof": "register Chester 1882 p. 265 + Wood + Sayings 1680"},
-    {"id": "C-03", "topic": "medical studies", "state": "ACCEPT_LIMITED", "note": "knowledge attested by editors and Wood; no diploma or licence"},
-    {"id": "C-04", "topic": "army service under Harrison", "state": "HOLD", "note": "ODNB by quotation; 'Charnuke' identification in Laurence not inspected"},
-    {"id": "C-05", "topic": "1663 arrest", "state": "ACCEPT_AS_WARRANT", "note": "McCosh verbatim: 'warrant to Joel Hardy to apprehend Stephen Charnock', 19 June 1663; execution unknown"},
-    {"id": "C-06", "topic": "library auction", "state": "ACCEPT_CATALOGUE_HOLD_FIGURES", "note": "4 Oct 1680, [4]+31 p.; sale totals unverified"},
-    {"id": "C-07", "topic": "Job Charnock kinship", "state": "HOLD", "note": "ODNB hypothesis; no acts"},
-    {"id": "C-08", "topic": "editorial history of posthumous works", "state": "ACCEPT_1680_1682_1684_HOLD_STATIONERS", "note": "epistle verified in 1680 and 1684 editions"}
+    {
+      "id": "C-01",
+      "topic": "death 27 vs 28 July 1680",
+      "state": "CONFLICT",
+      "independentEarlyVoices27": [
+        "New Poems 1680",
+        "An Elegy 1680",
+        "Wood 1691"
+      ],
+      "independentEarlyVoices28": [
+        "Sayings 1680 (weekday correct)"
+      ],
+      "action": "keep both; article formulation acceptable"
+    },
+    {
+      "id": "C-02",
+      "topic": "burial 30 July vs 7 August",
+      "state": "RESOLVED_30_JULY",
+      "proof": "register Chester 1882 p. 265 + Wood + Sayings 1680"
+    },
+    {
+      "id": "C-03",
+      "topic": "medical studies",
+      "state": "ACCEPT_LIMITED",
+      "note": "knowledge attested by editors and Wood; no diploma or licence"
+    },
+    {
+      "id": "C-04",
+      "topic": "army service under Harrison",
+      "state": "HOLD",
+      "note": "ODNB by quotation; 'Charnuke' identification in Laurence not inspected"
+    },
+    {
+      "id": "C-05",
+      "topic": "1663 arrest",
+      "state": "ACCEPT_AS_WARRANT",
+      "note": "McCosh verbatim: 'warrant to Joel Hardy to apprehend Stephen Charnock', 19 June 1663; execution unknown"
+    },
+    {
+      "id": "C-06",
+      "topic": "library auction",
+      "state": "ACCEPT_CATALOGUE_HOLD_FIGURES",
+      "note": "4 Oct 1680, [4]+31 p.; sale totals unverified"
+    },
+    {
+      "id": "C-07",
+      "topic": "Job Charnock kinship",
+      "state": "HOLD",
+      "note": "ODNB hypothesis; no acts"
+    },
+    {
+      "id": "C-08",
+      "topic": "editorial history of posthumous works",
+      "state": "ACCEPT_1680_1682_1684_HOLD_STATIONERS",
+      "note": "epistle verified in 1680 and 1684 editions"
+    }
   ],
   "readiness": {
-    "research": {"verdict": "REWORK", "blockers": ["false CONFLICT-10 resolution", "CONFLICT-13/BCD-04 outdated", "counted witnesses", "note [19] chain"], "publicationState": "BLOCKED"},
-    "lordchristArticlePr971": {"verdict": "REWORK", "blockers": ["R-05", "R-07", "R-10", "R-13", "two language fixes"], "images": "ACCEPT", "rights": "ACCEPT_FOR_USED_IMAGES"},
-    "gbSeries": {"verdict": "HOLD", "reason": "quote decisions for the corpus remain BLOCKED/PUBLICATION_HOLD; biography frame usable after Research fixes"}
+    "research": {
+      "verdict": "REWORK",
+      "blockers": [
+        "false CONFLICT-10 resolution",
+        "CONFLICT-13/BCD-04 outdated",
+        "counted witnesses",
+        "note [19] chain"
+      ],
+      "publicationState": "BLOCKED"
+    },
+    "lordchristArticlePr971": {
+      "verdict": "REWORK",
+      "blockers": [
+        "R-05",
+        "R-07",
+        "R-13",
+        "two language fixes"
+      ],
+      "images": "ACCEPT",
+      "rights": "ACCEPT_FOR_USED_IMAGES",
+      "note": "R-10 closed 16.11.2026: Stationers entry verified in print; only note [18] locator remains."
+    },
+    "gbSeries": {
+      "verdict": "HOLD",
+      "reason": "quote decisions for the corpus remain BLOCKED/PUBLICATION_HOLD; biography frame usable after Research fixes"
+    }
   }
 }
