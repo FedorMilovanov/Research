@@ -8403,32 +8403,20 @@ whitespace-check PASS. ED-02/06/08 OPEN;12формальных переводо�
 0независимых сверок; custody NOT_REVERIFIED. Коммит, push, новая PR,
 слияние и разрешение публикации не выполнялись.
 
-### 21.138. Дата смерти Чарнока: 27 июля 1680 — CONFLICT-10 substantially resolved
+### 21.138. CONFLICT-10: смерть 27 или 28 июля 1680; погребение 30 июля по изображению печатного регистра
 
-Продолжение85. Досье §3 содержит полный подсчёт contemporaneous печатных объектов 1680 года с датой смерти:
+**Актуальная корректировка MAX от 16.11.2026.** Прежняя версия этого раздела ошибочно приписывала Чарноку запись **7 августа** из Chester (1882), с. 265, называла это «современным первичным источником» и преждевременно объявляла конфликт `substantially resolved`. Эти выводы **отозваны**; их история сохраняется в Git и в описании исправления ниже, но они не действуют как доказательство.
 
-| Объект | Дата в заголовке | Статус |
-|---|---|---|
-| Broadside *The sayings…* 1680 (`B02133.0001.001`) | 28 июля | получен полностью |
-| *New poems…* 1680 (`A52960.0001.001`) | 27 июля | получен полностью |
-| *An Elegy…* 1680 (`A39134.0001.001`) | 27 июля | получен полностью |
+**День смерти — CONFLICT.** Печатные свидетельства 1680 года не совпадают:
+- *The Sayings…* (`B02133`): **28 июля 1680**, Wednesday;
+- *New Poems…* (`A52960`) и *An Elegy…* (`A39134`): **27 июля 1680**;
+- более поздние биографические сообщения нередко воспроизводят 27 июля, но численное большинство и зависимые перепечатки не заменяют проверку независимости свидетелей.
 
-Плюс поздние свидетельства: Wood 1691, Calamy 1727, DNB 1887, Symington 1853, McCosh 1864, ODNB (Greaves) — все за 27 июля.
+**Дата погребения в печатной редакции реестра:** на предоставленном изображении с. 265 `The Parish Registers of St. Michael, Cornhill`, ed. Joseph Lemuel Chester (1882), запись **30 июля 1680** относится к Stephen Charnock («over Mr Sykes, under the steeple»); следующая запись **7 августа 1680** относится к James Kelke, не к Чарноку. Указатель на с. 309 относит Stephen Charnock к с. 265. Образ печатной страницы получен и визуально просмотрен; [сохранён на Google Drive OldPoet](https://drive.google.com/file/d/1T3Js2UKm0zp3Y8eLaSCWMoRpcmnF_IOc/view), происхождение и служебная передача — [реестр §26](../08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md).
 
-**НОВЫЕ ДАННЫЕ (28.10.2026): Приходской реестр St Michael Cornhill, London.**
-Получена и прочитана страница 265 приходского реестра *The Parish Registers of St. Michael, Cornhill, London, containing the marriages, baptisms, and burials from 1546 to 1754*, ed. Joseph Lemuel Chester (London: Mitchell & Hughes, 1882), Google Books `UshO-rtdTEYC`:
+**Ограничения:** Chester (1882) — поздняя редакционная публикация записей, не сама приходская рукопись XVII века. Подлинник в The London Archives, фонд `P69/MIC2`, не проверен; независимая рецензия агентов №2 и №7 и установление точного рукописного листа остаются открытыми. Неизвестно, являлись ли McCosh 1864, Wood 1691 и печатные свидетельства 1680 года независимыми свидетелями одного факта. **Дата смерти 27/28 июля остаётся конфликтной**; из даты погребения нельзя логически вывести точный день смерти. До отдельной научной приёмки — `CONFLICT / INDEPENDENT_IMAGE_CHECK_PENDING / MANUSCRIPT_HOLD / PUBLICATION_HOLD`.
 
-- **Заголовок года на стр. 264–265: «1680»** — подтверждает, что записи относятся к 1680 году
-- **Запись погребения на стр. 265:** *«Charnock, minister ; over Mr Sykes, under the steeple Aug. 7»* — ЧARNОК, священник; погребён над мистером Сайксом, под шпилем, 7 августа
-- **Индекс на стр. 309:** *«Charnock, Alice, 11 ; Hannah, 51 ; 8. John, 51; Stephen, 265; Wiliam, 11»* — подтверждает, что запись о Stephen Charnock на странице 265
-
-Это современный первичный источник (приходский реестр, страницы 264–265 охватывают погребения 1680 года). Регистр подтверждает погребение ЧARNОКа 7 августа 1680 года в St Michael Cornhill — что согласуется со смертью 27 июля 1680 (около 11 дней между смертью и погребением — обычный срок для того времени).
-
-**Итог подсчёта:** за **27 июля** — 8 свидетелей (из них 2 contemporaneous печатных объекта, один — у независимого печатника Snowden'а). За **28 июля** — 1 contemporaneous broadside. Утверждение «28 июля — единственное contemporaneous свидетельство» опровергнуто. Приходской регистр St Michael Cornhill подтверждает погребение в августе 1680 года.
-
-**CONFLICT-10 substantially resolved:** рабочая дата **27 июля 1680** подтверждена приходским реестром St Michael Cornhill (погребение 7 августа 1680). CONFLICT-10 переведён в состояние substantially resolved с фиксацией приходского регистра как современного первичного источника. Архивный Hold на приходских регистрах можно считать снятым для целей рабочей даты.
-
-**Рабочая формулировка:** **27 июля 1680**, погребение 7 августа 1680 в St Michael Cornhill.
+**Допустимая исследовательская формулировка:** «Печатное издание приходского регистра 1882 года относит погребение Стивена Чарнока к **30 июля 1680 года**; позднейшая сверка изображения устранила ошибочное чтение 7 августа. Дата смерти в ранних сообщениях расходится — **27 либо 28 июля**». Это не разрешение на публичную публикацию.
 
 ### 21.139. Состояние серии после 85
 
@@ -8767,8 +8755,10 @@ whitespace-check PASS. ED-02/06/08 OPEN;12формальных переводо�
 
 ---
 
-### 2026-11-16 — CONFLICT-10 re-opened for burial date (not a correction by inference)
+### 2026-11-16 — CONFLICT-10: correction of historical August 7 attribution
 
-**Previously recorded result in §21.138 remains HISTORICAL, not publication authority.** The previously read Chester, *The Parish Registers of St. Michael, Cornhill* (1882), p. 265, was transcribed in this dossier as **Aug. 7, 1680**. Independently, James M’Cosh, *The Complete Works of Stephen Charnock*, vol. I (Edinburgh, 1864), introduction, note adjacent to his narrative of July 30, directly quotes the parish register as: **“July 30. was buryed Stephen Charnock, minister, under the steeple.”** [Source, OCR of printed edition](https://www.digitalpuritan.net/Digital%20Puritan%20Resources/Charnock%2C%20Stephen/The%20Complete%20Works%20of%20Stephen%20Charnock%20%28vol.1%29.txt.html). Wood 1691 and *The Sayings* broadside 1680 both also report July 30 as burial date. These are **conflicting reports about a register**, not interchangeable calendar notations. A later edited publication (Chester 1882) must not be called itself a contemporary printed witness of 1680.
+**Provenance:** An earlier version of §21.138 conflated the Charnock entry with the following James Kelke entry on Chester's 1882 printed p. 265 and claimed burial on **Aug. 7** with `CONFLICT-10 substantially resolved`. This was an erroneous reading and is **HISTORICAL/SUPERSEDED**; the exact former version remains in Git history.
 
-**Action:** re-open source images at Chester p. 264–265 and inspect page-year grouping, same-person identification and printed transcription; read McCosh's printed footnote; independently seek manuscript or bishop's transcript at London Metropolitan Archives (`P69/MIC2`) to adjudicate. Until reconciled, `CONFLICT` and `LOCATOR_HOLD` remain for a claim of burial on one exact day. Do not extrapolate the day of death (27 vs 28 July) from a contested burial date. No changes to other witness transcriptions or to the historical data rows above.
+**New evidence and limited correction (MAX, 16 November 2026):** The supplied page-image captures of Chester (1882), pp. 264–265 with index pp. 308–309, show **July 30 — Stephen Charnock**, then **Aug. 7 — James Kelke**. The image package is preserved at [OldPoet](https://drive.google.com/file/d/1T3Js2UKm0zp3Y8eLaSCWMoRpcmnF_IOc/view); see [biographical Drive ledger §26](../08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md). Wood 1691 and *The Sayings* 1680 also state July 30 for burial, but their independence is not established. McCosh 1864 reproduces a July 30 register entry; that is not a verified original manuscript. Chester's 1882 print cannot itself be described as a contemporaneous 1680 manuscript.
+
+**Remaining work:** Independent review by agents №2/№7 of printed images and transcription, and if a manuscript-level claim is required, exact-item verification of the relevant 1680 burial register in The London Archives `P69/MIC2`. The 27/28 July **death** conflict remains separate. The publication decision remains **BLOCKED**; no general release of historical, image-rights or quotation HOLD follows from this correction.
