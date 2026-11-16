@@ -358,3 +358,22 @@ Never combine these into one grand-total figure. They are different organization
 10. Close at least two historical objects through full Book Authority media gate.
 
 Current verdict: **NARRATIVE AND INTERNATIONAL RELIEF AXIS STRONG / PRIMARY WESTERN INSTITUTIONAL EVIDENCE STRONG / DIASPORA PRIMARY FACSIMILES OPEN / NOT BOOK-READY**.
+
+
+---
+
+## 17. Прямой источниковый контроль и литературная глава — 16 ноября 2026
+
+Написана [литературная исследовательская редакция главы 11](./152-ch11-famine-international-brotherhood-literary-manuscript-2026-11-16.md).
+
+В этой волне непосредственно повторно прочитаны открытые тексты следующих первичных институциональных документов:
+
+| Объект | Установленное по тексту | Не путать |
+|---|---|---|
+| [American Baptist Foreign Mission Society Annual Report 1923, печ. с. 26–28](https://studylib.net/doc/18621627/american-baptist-foreign-mission-society) | Почти 7 000 посылок; **1 091** тюк одежды, **8** тюков детских вещей, **26** ящиков; ARA freight, Одесса, советский досмотр, У. О. Льюис, Дж. Г. Рашбрук; общероссийский баптистско-евангельский комитет помощи; раздача также нуждающимся вне баптистских общин | Это **вторая конкретная clothing-кампания**, а не весь объём российской помощи |
+| [ABFMS Annual 1923, с. 23–25](https://studylib.net/doc/18621627/american-baptist-foreign-mission-society) | Исполком BWA **1 августа 1922** и ABFMS Board **10 октября 1922** одобряли российскую инициативу к объединению | Одобрение зарубежной стороной ≠ фактически завершённый российский союз; не было доказано, что каждая помощь выдавалась под условием объединения |
+| [ABFMS Annual 1923, с. 25–30](https://studylib.net/doc/18621627/american-baptist-foreign-mission-society) | Европейская сеть помощи до голода; отдельная отправка 1921 **Ship of Fellowship** и следующая **Rush a Ship to Russia**; 1920 Лондон и координатор Рашбрук | **Общеевропейская сумма около $1–1.5 млн в отчёте не равна сумме помощи России**; два груза не объединять |
+| [BWA Resolution 1923.3, официальный текст и оригинальный locator](https://baptistworld.org/bwa-resolutions/thanks-for-help-in-time-of-distress/) | Помощь голодающим, нуждающимся в одежде, вдовам и сиротам, **в том числе за пределами баптистских общин**; W. T. Whitley (ed.), *Third Baptist World Congress*, 21–27 июля 1923, pp.57–58 | Резолюция **об общей послевоенной беде европейских баптистских общин**, не только о России |
+| [BWA Resolution 1923.6, официальный архив](https://baptistworld.org/resolutions/) | Приветствует русских делегатов и передаёт College Fund на дальнейшее рассмотрение; pp.xxviii | Это **Chapter 12 Education/College**, не famine cash; решение не доказывает открытие колледжа |
+
+**Статус:** текст нормативных/институциональных публикаций непосредственно прочитан; физические страницы первоначальных выпусков, идентичность и права иллюстраций и русскоязычные страницы «Сеятеля истины» остались в соответствующих HOLD. Новых чисел общей стоимости всей помощи не вычислять. Это усиление доказательного корпуса для литературной главы, не publication approval.
