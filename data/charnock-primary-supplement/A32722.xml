@@ -1,0 +1,310 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A sermon preached by the late eminent Mr. Steph. Charnock on 2 Cor. V. XIX.</title>
+            <author>Charnock, Stephen, 1628-1680.</author>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               <date>1680</date>
+            </edition>
+         </editionStmt>
+         <extent>Approx. 40 KB of XML-encoded text transcribed from 19 1-bit group-IV TIFF page images.</extent>
+         <publicationStmt>
+            <publisher>Text Creation Partnership,</publisher>
+            <pubPlace>Ann Arbor, MI ; Oxford (UK) :</pubPlace>
+            <date when="2013-12">2013-12 (EEBO-TCP Phase 2).</date>
+            <idno type="DLPS">A32722</idno>
+            <idno type="STC">Wing C3710</idno>
+            <idno type="STC">ESTC R13260</idno>
+            <idno type="EEBO-CITATION">12097504</idno>
+            <idno type="OCLC">ocm 12097504</idno>
+            <idno type="VID">53998</idno>
+            <availability>
+               <p>To the extent possible under law, the Text Creation Partnership has waived all copyright and related or neighboring rights to this keyboarded and encoded edition of the work described above, according to the terms of the CC0 1.0 Public Domain Dedication (http://creativecommons.org/publicdomain/zero/1.0/). This waiver does not extend to any page images or other supplementary files associated with this work, which may be protected by copyright or other license restrictions. Please go to https://www.textcreationpartnership.org/ for more information about the project.</p>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Early English books online.</title>
+         </seriesStmt>
+         <notesStmt>
+            <note>(EEBO-TCP ; phase 2, no. A32722)</note>
+            <note>Transcribed from: (Early English Books Online ; image set 53998)</note>
+            <note>Images scanned from microfilm: (Early English books, 1641-1700 ; 863:58)</note>
+         </notesStmt>
+         <sourceDesc>
+            <biblFull>
+               <titleStmt>
+                  <title>A sermon preached by the late eminent Mr. Steph. Charnock on 2 Cor. V. XIX.</title>
+                  <author>Charnock, Stephen, 1628-1680.</author>
+               </titleStmt>
+               <extent>[2], 5-38 p.   </extent>
+               <publicationStmt>
+                  <publisher>Printed by Thomas Milbourn, for J.K., and are to be sold by Langley Curtis ...,</publisher>
+                  <pubPlace>London :</pubPlace>
+                  <date>1680.</date>
+               </publicationStmt>
+               <notesStmt>
+                  <note>Reproduction of original in the University of Illinois (Urbana-Champaign Campus). Library.</note>
+               </notesStmt>
+            </biblFull>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Created by converting TCP files to TEI P5 using tcp2tei.xsl,
+      TEI @ Oxford.
+      </p>
+         </projectDesc>
+         <editorialDecl>
+            <p>EEBO-TCP is a partnership between the Universities of Michigan and Oxford and the publisher ProQuest to create accurately transcribed and encoded texts based on the image sets published by ProQuest via their Early English Books Online (EEBO) database (http://eebo.chadwyck.com). The general aim of EEBO-TCP is to encode one copy (usually the first edition) of every monographic English-language title published between 1473 and 1700 available in EEBO.</p>
+            <p>EEBO-TCP aimed to produce large quantities of textual data within the usual project restraints of time and funding, and therefore chose to create diplomatic transcriptions (as opposed to critical editions) with light-touch, mainly structural encoding based on the Text Encoding Initiative (http://www.tei-c.org).</p>
+            <p>The EEBO-TCP project was divided into two phases. The 25,368 texts created during Phase 1 of the project (2000-2009), initially available only to institutions that contributed to their creation, were released into the public domain on 1 January 2015. The approximately 40,000 texts produced during Phase 2 (2009- ), of which 34,963 had been released as of 2020, originally similarly restricted, were similarly freed from all restrictions on 1 August 2020. As of that date anyone is free to take and use these texts for any purpose (modify them, annotate them, distribute them, etc.). But we do respectfully request that due credit and attribution be given to their original source.</p>
+            <p>Users should be aware of the process of creating the TCP texts, and therefore of any assumptions that can be made about the data.</p>
+            <p>Text selection was based on the New Cambridge Bibliography of English Literature (NCBEL). If an author (or for an anonymous work, the title) appears in NCBEL, then their works are eligible for inclusion. Selection was intended to range over a wide variety of subject areas, to reflect the true nature of the print record of the period. In general, first editions of a works in English were prioritized, although there are a number of works in other languages, notably Latin and Welsh, included and sometimes a second or later edition of a work was chosen if there was a compelling reason to do so.</p>
+            <p>Image sets were sent to external keying companies for transcription and basic encoding. Quality assurance was then carried out by editorial teams in Oxford and Michigan. 5% (or 5 pages, whichever is the greater) of each text was proofread for accuracy and those which did not meet QA standards were returned to the keyers to be redone. After proofreading, the encoding was enhanced and/or corrected and characters marked as illegible were corrected where possible up to a limit of 100 instances per text. Any remaining illegibles were encoded as &lt;gap&gt;s. Understanding these processes should make clear that, while the overall quality of TCP data is very good, some errors will remain and some readable characters will be marked as illegible. Users should bear in mind that in all likelihood such instances will never have been looked at by a TCP editor.</p>
+            <p>The texts were encoded and linked to page images in accordance with level 4 of the TEI in Libraries guidelines.</p>
+            <p>Copies of the texts have been issued variously as SGML (TCP schema; ASCII text with mnemonic sdata character entities); displayable XML (TCP schema; characters represented either as UTF-8 Unicode or text strings within braces); or lossless XML (TEI P5, characters represented either as UTF-8 Unicode or TEI g elements).</p>
+            <p>Keying and markup guidelines are available at the <ref target="http://www.textcreationpartnership.org/docs/.">Text Creation Partnership web site</ref>.</p>
+         </editorialDecl>
+         <listPrefixDef>
+            <prefixDef ident="tcp"
+                       matchPattern="([0-9\-]+):([0-9IVX]+)"
+                       replacementPattern="http://eebo.chadwyck.com/downloadtiff?vid=$1&amp;page=$2"/>
+            <prefixDef ident="char"
+                       matchPattern="(.+)"
+                       replacementPattern="https://raw.githubusercontent.com/textcreationpartnership/Texts/master/tcpchars.xml#$1"/>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="eng">eng</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="http://authorities.loc.gov/">
+               <term>Bible. --  N.T. --  Corinthians, 2nd, V, 19 --  Sermons.</term>
+               <term>Sermons, English --  17th century.</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change>
+            <date>2012-08</date>
+            <label>TCP</label>Assigned for keying and markup</change>
+         <change>
+            <date>2012-08</date>
+            <label>SPi Global</label>Keyed and coded from ProQuest page images</change>
+         <change>
+            <date>2012-10</date>
+            <label>Olivia Bottum</label>Sampled and proofread</change>
+         <change>
+            <date>2012-10</date>
+            <label>Olivia Bottum</label>Text and markup reviewed and edited</change>
+         <change>
+            <date>2013-02</date>
+            <label>pfs</label>Batch review (QC) and XML conversion</change>
+      </revisionDesc>
+   </teiHeader>
+   <text xml:lang="eng">
+      <front>
+         <div type="title_page">
+            <pb facs="tcp:53998:1"/>
+            <pb facs="tcp:53998:1"/>
+            <p>A SERMON Preached by the Late Eminent Mr. <hi>Steph. Charnock</hi> ON 2 COR. V. XIX.</p>
+            <p>
+               <hi>LONDON,</hi> Printed by <hi>Thomas Milbourn,</hi> for <hi>J. K.</hi> and are to be Sold by <hi>Langley Curtis,</hi> in <hi>Goat-Court,</hi> on <hi>Lud<g ref="char:EOLhyphen"/>gate-Hill,</hi> 1680.</p>
+         </div>
+      </front>
+      <body>
+         <div type="sermon">
+            <pb facs="tcp:53998:2"/>
+            <pb n="5" facs="tcp:53998:2"/>
+            <head>
+               <hi>A SERMON Preached on 2 Cor. 5.19</hi> God was in Chriſt, recon<g ref="char:EOLhyphen"/>ciling the World unto Himſelf.</head>
+            <head type="sub">The Doctrine from theſe Words, was this;
+<q>That God the Father, is the Chief Author of the whole <g ref="char:V">Ʋ</g>ndertaking and effecting our Reconciliation by Christ.</q>
+            </head>
+            <p>
+               <seg rend="decorInit">T</seg>IS fit we ſhould joyn Iſſue with <hi>God,</hi> in being Recon<g ref="char:EOLhyphen"/>ciled to him: We ſhould comply with <hi>God,</hi> in this great Ordinance. The Con<g ref="char:EOLhyphen"/>ſideration of this <hi>Doctrine,</hi> ſhould work Relenting and Believing: Let therefore, the Deſign of <hi>God</hi> prevail with us.
+<pb n="6" facs="tcp:53998:3"/> In this alone we ſhall find Expiation of our Sins, the Grace of <hi>God,</hi> Peace of Conſcience: In a word, What-ever <hi>God</hi> (as Reconciled) can Give, or <hi>Chriſt</hi> (as Reconciling) can Purchaſe. 'Tis tender Mercy, Bowels of Mercy, where<g ref="char:EOLhyphen"/>by the <hi>Day-Spring from on High hath viſited us.</hi> When we lay wallowing in a Miry Sink, rea<g ref="char:EOLhyphen"/>dy to be cruſh't by <hi>God</hi>'s Righteous Hand, then he pitied us. So that, we ſhall be the more diſ-ingenuous, if we refuſe this Amity: The Dignity of the Donor, renders the Gift more valuable, than it may be in it ſelf. The Preſent of a <hi>Prince</hi> is more priz'd, than when it is beſtow'd by an ordinary Perſon. The Gift of <hi>Chriſt,</hi> the Offer of Peace by him is Incomprehenſible in it ſelf; and receives a Va<g ref="char:EOLhyphen"/>lue from that <hi>God</hi> that hath Prepared, and Of<g ref="char:EOLhyphen"/>fered it.</p>
+            <p>What Pleaſure can any Man taſte in Earth<g ref="char:EOLhyphen"/>ly Comforts, though he hath a Confluence of all manner of Delight, if he hath no Share in a Reconciled <hi>God,</hi> by a Reconciling Media<g ref="char:EOLhyphen"/>tor? While he forces that <hi>God</hi> that is the Au<g ref="char:EOLhyphen"/>thor of this Peace, to ſtand over him, with a drawn Sword, pointed at his Breaſt?</p>
+            <p>Corn, Wine, and Oyl, and whatſoever comes within the Compaſs of the delightful Things
+<pb n="7" facs="tcp:53998:3"/> of this World, are little in compariſon of this Peace, and the Light of <hi>God</hi>'s Countenance. And,</p>
+            <p n="1">1. Conſider, ſomething muſt be done on our Parts, ſomething there is Incumbent up<g ref="char:EOLhyphen"/>on us: If all Men were <hi>Reconciled</hi> without Conditions, on their Part, the Apoſtle might have held his Peace, and not added the other Clauſe; <hi>We pray you, be ye Reconciled unto God.</hi> Then there would be no need of that Inference. But in the Text, he ſpeaks of a <hi>Fundamental Reconciliation;</hi> in This, of the <hi>Actual.</hi> If all Men had been <hi>Reconciled</hi> to <hi>God,</hi> it would not have been Senſe: For then he would ſay, <hi>Ye are Reconciled; therefore, be Reconciled.</hi> It had been an Exhortation to do that, which was already done to their Hands. If all Men are <hi>Actually Reconciled,</hi> How come any to miſs the Fruits of it? Why is it not applyed to All? Be<g ref="char:EOLhyphen"/>cauſe all that are Called, do not comply with that Call; they anſwer not <hi>God</hi>'s Commands and Intreaties. The Purchaſe, and the Appli<g ref="char:EOLhyphen"/>cation of it, are diſtinct. The Purchaſe is made by <hi>Chriſt</hi> alone, on the Croſs, without any Qua<g ref="char:EOLhyphen"/>lification in the Creature: But the Applicati<g ref="char:EOLhyphen"/>on is not wrought without ſomething in the Creature, concurring with it, though that al<g ref="char:EOLhyphen"/>ſo
+<pb n="8" facs="tcp:53998:4"/> be wrought by the Spirit of <hi>God. God</hi> or<g ref="char:EOLhyphen"/>dained Peace for us; but yet there is ſome Work to be wrought in us: The one is Grace in the Spring; the other is Grace in the Veſ<g ref="char:EOLhyphen"/>ſel: The one is the Act of <hi>God</hi> in <hi>Chriſt;</hi> the other is the Act of <hi>God</hi> by the Spirit. Though the Fire burns, if we would warm our ſelves, we muſt not run from it, but approach to it. Something muſt be done by us.</p>
+            <p n="2">2. This Qualification is Faith. As Infinite Grace in <hi>God</hi> qualified him, (if I may uſe that Expreſſion) for the effecting it; ſo Faith in us qualifies us for the Enjoying it. Though <hi>Chriſt</hi> be the Purchaſer, yet Faith is the Teſtator in it, <hi>Rom.</hi> 5.1.</p>
+            <p>This Ineſtimable Mercy is not conferr'd, but on Men that affect, value, and conſent to it. We muſt lay our Hands on the Head of this Sacrifice, and own him to be ours. This is the Band that unites us to <hi>Chriſt</hi> the Purcha<g ref="char:EOLhyphen"/>ſer, by Him to <hi>God</hi> the Author of this <hi>Recon<g ref="char:EOLhyphen"/>ciliation.</hi> This gives us a Right to this Peace; and will, at laſt, give us the Comfort of it.</p>
+            <p n="3">3. The Order of Conveyance, is firſt our Acceptance of <hi>Chriſt,</hi> then of <hi>God</hi> in and through <hi>Chriſt:</hi> We muſt firſt comply with the Means,
+<pb n="9" facs="tcp:53998:4"/> before we attain the End. Our Nearneſs to <hi>God,</hi> was purchaſed by the Blood of <hi>Chriſt,</hi> and is Actually confer'd by our Union with <hi>Chriſt.</hi> Epheſ. 2.13. <hi>But now, in</hi> Chriſt Jeſus, <hi>ye that were ſometime afar off, are made nigh by the Blood of</hi> Chriſt. They were made nigh by the Blood of <hi>Chriſt;</hi> but it was Actually con<g ref="char:EOLhyphen"/>ferred by their being in <hi>Chriſt.</hi> Faith hath Re<g ref="char:EOLhyphen"/>courſe firſt to the Atonement made by the Blood of <hi>Chriſt,</hi> and by that Blood unto <hi>God.</hi> Rom. 3.25. <hi>Whom</hi> God <hi>hath ſet ſorth to be a Pro<g ref="char:EOLhyphen"/>pitiation;</hi> but how? <hi>Through Faith in his Blood.</hi> This Blood alone quencheth the Conſuming Fire of <hi>God</hi>'s Wrath. By <hi>Chriſt</hi> we are <hi>Recon<g ref="char:EOLhyphen"/>ciled,</hi> by Him alone we <hi>receive the Atonement, Rom.</hi> 5.11. As <hi>God</hi> was in <hi>Chriſt</hi> Reconciling, ſo we muſt be in <hi>Chriſt</hi> Accepting this <hi>Recon<g ref="char:EOLhyphen"/>ciliation.</hi> You are <hi>Chriſt</hi>'s, and <hi>Chriſt</hi> is <hi>God</hi>'s. In the Apoſtle's Order, we muſt firſt be <hi>Chriſt</hi>'s by our Acceptance of him, as <hi>Chriſt</hi> was <hi>God</hi>'s by his Calling and Commiſſioning him. As <hi>God</hi> goes out to us by Him, our return muſt be by Him to <hi>God.</hi> He paid our Debts, made an end of Sin, and removed the Wrath we Merited. <hi>God</hi> is our Judge, <hi>Chriſt</hi> is our Me<g ref="char:EOLhyphen"/>diatour: By this Mediatour we muſt be Con<g ref="char:EOLhyphen"/>ducted to our Judge. We have offended the
+<pb n="10" facs="tcp:53998:5"/> Law-Maker; we muſt firſt go to him, who is the Repairer of the Honour of the Law. We muſt take the <hi>Redemption</hi> of <hi>Chriſt</hi> along with us, his pacifying Blood, and repreſent it to <hi>God;</hi> by whoſe Authority we were under Wrath. This is that, that upholds us before <hi>God.</hi> If we are not in <hi>Chriſt,</hi> as ſatisfying, we ſhall ſtill be as Stubble before the Conſuming Fire. Think not of ſtanding ſure by Abſo<g ref="char:EOLhyphen"/>lute Mercy. Mercy is through <hi>Chriſt</hi> only: It breaths in no other Air. We muſt firſt take hold of the Strength of <hi>God,</hi> before we can make Peace with him: We muſt take hold of <hi>Chriſt,</hi> who is the Power, as well as the Wiſdom of <hi>God.</hi> There is a Direction how we muſt act, <hi>By taking hold;</hi> and the End, <hi>That we may be at Peace;</hi> and the Aſſurance in that Method, <hi>And he ſhall obtain Peace with me,</hi> Iſa. 27.5.</p>
+            <p>To uſe ſome Motives.</p>
+            <p>
+               <hi>Firſt,</hi> There is the higheſt Encouragement, and Ground for Acceptance: There's no room for any hard Thoughts of <hi>God,</hi> after ſo ſignal a Diſcovery of himſelf. He is not a <hi>God</hi> of unquenchable VVrath, but willing that his Ju<g ref="char:EOLhyphen"/>ſtice ſhould be Appeaſed. He hath taken all the Courſes that were poſſible for Infinite Wiſ<g ref="char:EOLhyphen"/>dom
+<pb n="11" facs="tcp:53998:5"/> to invent, for Infinite Power to effect, for Infinite Love to propoſe. What greater Security can we have for our Bleſſing, than that he hath made his Son a Curſe, that we might be Bleſt by him? How ſhould ſo much Love make us change any unworthy Opini<g ref="char:EOLhyphen"/>ons of <hi>God,</hi> that we harbour in our Breaſts. If the <hi>Father</hi> hath Contrived, the <hi>Son</hi> hath Ef<g ref="char:EOLhyphen"/>fected, the <hi>Spirit</hi> ſtands ready to Apply it to every Believer: The Refuſal of it, puts a Scorn upon all.</p>
+            <p>As ſoon as <hi>Adam</hi> ſinned, the ſame Day <hi>God</hi> applies the Plaiſter of a <hi>Redeemer:</hi> Not a Day did ſlip, for ought we know, not an Hour, before he made it known to him. His Heart was in Travel, and he long'd to be Delivered of this Gracious Promiſe of a <hi>Mediator.</hi> He arm'd him with this Cordial, before he ſubjected him to thoſe ſtanding Miſeries. What Heart he had <hi>then,</hi> the ſame he hath <hi>ſtill.</hi> His Kind<g ref="char:EOLhyphen"/>neſs made him deſirous to Publiſh this Pro<g ref="char:EOLhyphen"/>miſe; and, Can his Truth be leſs zealous to perform it? The ſame Kindneſs that moved him to Aſſure it, he hath ſtill to Effect it: He is ſtill willing to apply it to every one that ſeeks it, through his <hi>Son.</hi> The Wrath that we were under, is over-come by his Love, through
+<pb n="12" facs="tcp:53998:6"/> the Mediation of his <hi>Son;</hi> who hath honou<g ref="char:EOLhyphen"/>red him more, than Sin diſhonoured him.</p>
+            <p>By our Accepting of this, we Glorifie <hi>God;</hi> and Honour him as much by our Faith, as we have Diſhonour'd him by our Sin. There<g ref="char:EOLhyphen"/>by we own that Satisfaction, that was as grate<g ref="char:EOLhyphen"/>ful to him, as Sin is Hateful. As he honou<g ref="char:EOLhyphen"/>red himſelf by the Death of his <hi>Son,</hi> ſo he doth <hi>Chriſt</hi> by giving forth the Fruits of that Death alſo. He Delighteth in honouring <hi>Chriſt,</hi> and ſeeing us honour him. It contributes to <hi>God</hi>'s Delight, when we approach with Faith in his Blood. If he made this Proviſion, contrived this Expiatory Offering before the World was made, Will he not alſo Communicate it? Can there be a greater Motive to overcome the Fears of Rebels, extinguiſh the Rebellion, ha<g ref="char:EOLhyphen"/>ſten our Approach, and quicken our Confi<g ref="char:EOLhyphen"/>dence?</p>
+            <p>
+               <hi>Secondly,</hi> The Terms on which it is offered, are Juſt and Reaſonable: Nothing can be ob<g ref="char:EOLhyphen"/>jected againſt the Conditions required. Can any Malefactor expect a Peace with Arms in his Hand? Is it not a fit Condition, that we ſhould Juſtifie <hi>God,</hi> ſince we are guilty Offen<g ref="char:EOLhyphen"/>ders? Can any thing leſs be required, than to caſt away our VVeapons, to bewail our Crime,
+<pb n="13" facs="tcp:53998:6"/> to receive his <hi>Son</hi> as our Mediatour, to ſerve him in Newneſs of Life? All which are de<g ref="char:EOLhyphen"/>ſirable Priviledges. 'Twas in his Power to appoint what Terms he pleaſed, becauſe he was a free Benefactor; What could he appoint leſs, than Believing and Receiving this <hi>Recon<g ref="char:EOLhyphen"/>ciliation?</hi> It is impoſſible we ſhould receive a<g ref="char:EOLhyphen"/>ny Benefit, without it. 'Tis not fit it ſhould be confer'd upon us, except we ask it. There's no reaſon any ſhould enjoy a Benefit, that doth not think it to be ſo. All the Self-Love of Men, could not have framed any reaſonable Terms: They would have thought of <hi>Rivers of Oyl, and a Thouſand of Rams,</hi> impoſſible things to Appeaſe <hi>God.</hi> But he commands us to lie humbly at his Feet, to reach out our Hands to receive the Aſſurance he gives us.</p>
+            <p>VVhat can be more eaſie than this? If Faith be difficult, 'tis not in regard of it ſelf; but from our Natural Enmity againſt <hi>God,</hi> and the Pride of our own Wills. Faith is hard only, as the Law is weak through the Fleſh. But nothing could be more reaſonable, no<g ref="char:EOLhyphen"/>thing more eaſie in it ſelf.</p>
+            <p>Ingenuous Amazement at this unexpected Kindneſs, ſhould make us run more ſwiftly to Embrace <hi>God,</hi> than ever we ran from him.
+<pb n="14" facs="tcp:53998:7"/> We ſhould ſubſcribe to the Articles, as <hi>God</hi> ſtrives and preſſes us in the Method he hath enjoyned.</p>
+            <p>
+               <hi>Thirdly,</hi> There is an abſolute Neceſſity of this Complyance for our Happineſs. If you have not a Peace of <hi>God</hi>'s Ordaining, never look for One of your own Inventing. There can be no Fellowſhip with <hi>God,</hi> without it: And therefore, we can't be Happy, becauſe we can't Enjoy him, wherein all our Felicity doth conſiſt.</p>
+            <p>Guilt and Purity cannot Converſe together: What Society can Stubble have with Fire, but to its own Deſtruction. We can't ſee <hi>God's</hi> Face without it; and if a Sight of <hi>God</hi>'s Face be wanting, Felicity is at a diſtance. The grea<g ref="char:EOLhyphen"/>teſt part of Evil remains, though there be no poſitive Evil. How can <hi>Two</hi> walk together, except they be agreed? What Intercourſe can there be between a Guilty <hi>Rebel,</hi> and a Frown<g ref="char:EOLhyphen"/>ing <hi>Judge?</hi> a Sinful <hi>Creature,</hi> and a Provoked <hi>God? When he hides his Face, who can behold him?</hi> Job 34.29. But when an Agreement is made, there are Mutual Endearments. We are Ene<g ref="char:EOLhyphen"/>mies to <hi>God</hi> by Birth; He is an Enemy to us by his Law: The Enmity will remain on <hi>God</hi>'s Part, if it remain on ours.</p>
+            <pb n="15" facs="tcp:53998:7"/>
+            <p>Strike up therefore a Treaty with <hi>God,</hi> ſince there is a Neceſſity for it, and you can't be Happy without it. Shall not <hi>God</hi>'s Love melt us, and our own Neceſſities move us?</p>
+            <p>
+               <hi>Fourthly,</hi> Wrath is unavoidable, without our Complyance with <hi>God.</hi> If we will not enter into theſe Terms of <hi>Reconciliation,</hi> the Heart of <hi>God,</hi> which before was incenſed by Sin, can<g ref="char:EOLhyphen"/>not but riſe higher in Indignation. If we are reſolv'd to reſiſt it, abuſed Love will be kin<g ref="char:EOLhyphen"/>dled into the hotteſt Wrath.</p>
+            <p>When Man, after his Creation, grew Perfi<g ref="char:EOLhyphen"/>dious unto <hi>God,</hi> then there roſe a War between them, which can be ended only by Him that hath put an end to Sin. <hi>We</hi> muſt all have endured, what <hi>Chriſt</hi> ſuffered, had he not ſtood in our ſtead: And thoſe that refuſe the Grace proffer'd them, by the Great <hi>God</hi> muſt endure the ſame for ever. If we do not receive him as a Friend, we cannot avoid him as an Ene<g ref="char:EOLhyphen"/>my. His Eye will behold us, his Hand will paſs through the thickeſt Covering of Darkneſs. VVhere he is not received as the Author of Reconciliation in his own way, he will be the Author of Judgment in his own way. If the Satisfaction to his Juſtice that he hath pro<g ref="char:EOLhyphen"/>vided, be ſlighted, then his Juſtice will be
+<pb n="16" facs="tcp:53998:8"/> ſatisfied on our own Perſons. If we deny him the Honour of the Sufferings of <hi>Chriſt,</hi> he will vin<g ref="char:EOLhyphen"/>dicate it by the Sufferings of our ſelves. His Law is in full Force againſt us, and <hi>God</hi> is ob<g ref="char:EOLhyphen"/>liged to inflict Death upon the Sinners: The Law is on Record. The Goſpel alſo will be the Author of Damnation, to every one that believes not. There's no Diſcovery out of <hi>Chriſt,</hi> but of <hi>Wrath prepared againſt the Day of Wrath,</hi> Rom. 2.5. The Day wherein <hi>God</hi> is <hi>unreconciled</hi> to his Enemies, is called not only the <hi>Day of Wrath;</hi> but, <hi>Wrath againſt the Day of Wrath.</hi> His <hi>Feet will be as Pillars of Fire,</hi> to conſume thoſe that refuſe his Peace, <hi>Revel.</hi> 10.1.</p>
+            <p>Conſider, then, that we are ſunk under In<g ref="char:EOLhyphen"/>finite Guilt, and can't riſe up without an Al<g ref="char:EOLhyphen"/>mighty Hand. We are drowned in an Uni<g ref="char:EOLhyphen"/>verſal Filth, and cannot be cleans'd without an Infinite Purity. Sin is ſtrong in its Accu<g ref="char:EOLhyphen"/>ſations; our Righteouſneſs is imperfect to ef<g ref="char:EOLhyphen"/>fect a Compenſation for the VVrongs we have done; our Duties are beſpotted, and not fit<g ref="char:EOLhyphen"/>ted for a pure Eye. VVhat VVrath is due to all? There is but one way of Eſcaping, but one City of Refuge, to eſcape the Edge of the Avenging Sword: Divine Juſtice will ſeize
+<pb n="17" facs="tcp:53998:8"/> on all that are without this Shelter. It will touch none that are under <hi>Chriſt</hi>'s Wing; but will be like a Conſuming Fire to every thing elſe. One Spark of his <hi>Wrath,</hi> is enough to conſume <hi>Stubble:</hi> Haſten therefore to Accept of what <hi>God</hi> Propoſes, leſt <hi>Death</hi> put a Period to any further Treaty.</p>
+            <p>
+               <hi>Fifthly,</hi> All other wayes of <hi>Reconciliation</hi> are Inſufficient: To pretend to any other way, is an Injury to the <hi>Divine Wiſdom;</hi> as though his Contrivance were not ſufficient for his Creatures Reſtauration. <hi>Divine Mercy</hi> will not wrong any of his Attributes, nor diſhonour <hi>Chriſt.</hi> But if we do not receive this, we de<g ref="char:EOLhyphen"/>ny <hi>Chriſt,</hi> the Efficacy of his Prieſthood. Men are naturally ſtudious of making <hi>God</hi> a Com<g ref="char:EOLhyphen"/>penſation for their VVrongs, and a Satisfacti<g ref="char:EOLhyphen"/>on of their own coining: They are unwil<g ref="char:EOLhyphen"/>ling to acquieſce in the <hi>Will</hi> and <hi>Wiſdom</hi> of <hi>God.</hi>
+            </p>
+            <p>Thoſe <hi>Two</hi> great Things, that <hi>God</hi> ad<g ref="char:EOLhyphen"/>vances by his Grace, Men oppoſe; his <hi>Wiſ<g ref="char:EOLhyphen"/>dom,</hi> by their Pride and Reaſon; his <hi>Authori<g ref="char:EOLhyphen"/>ty,</hi> by the Perverſneſs of their Wills. But, Do we need <hi>Reconciliation,</hi> or do we not? If we need it not, How came we to be Friends to <hi>God,</hi> who were born Enemies? If we need,
+<pb n="18" facs="tcp:53998:9"/> is it not ſafeſt to enter into thoſe Terms, that <hi>God</hi> hath propoſed, where-with he is ſatisfied? rather than ſtand to failing, and at the beſt, but uncertain Methods; but are indeed abſolute<g ref="char:EOLhyphen"/>ly falſe and inſufficient. The ſafeſt way on<g ref="char:EOLhyphen"/>ly, is the Choice of wiſe Men. If other wayes would do, 'tis the greateſt VViſdom to take that Courſe that <hi>God</hi> hath provided; whoſe <hi>Wiſ<g ref="char:EOLhyphen"/>dom</hi> ſees further into its Strength and Suffici<g ref="char:EOLhyphen"/>ency, than any Creatures can.</p>
+            <p>Let us not then be ſuch Fools, to refuſe the Goſpel-Method, except we can meet with a<g ref="char:EOLhyphen"/>ny thing that can be a ſufficient Plea. Had all the Angels in Heaven, and all the Men on Earth contrived another <hi>Way,</hi> it would have been ineffectual. <hi>God</hi> never was in them, <hi>re<g ref="char:EOLhyphen"/>conciling</hi> the VVorld to himſelf. This one Me<g ref="char:EOLhyphen"/>diatour that he hath appointed, hath done that, which neither Men on Earth, nor Saints and Angels in Heaven, could do by their joint In<g ref="char:EOLhyphen"/>terceſſions. We can have no Confidence in our Humiliations, Moral Righteouſneſs, Ser<g ref="char:EOLhyphen"/>vices, and Duties: <hi>God</hi> never was in them, as <hi>Reconciling.</hi> All that we can do by thoſe, will be but Enmity to <hi>God;</hi> what-ever falſe Colours they are dawb'd withal, we cannot pleaſe <hi>God</hi> without Faith. VVhere <hi>Righteouſ<g ref="char:EOLhyphen"/>neſs</hi>
+               <pb n="19" facs="tcp:53998:9"/> is at the higheſt Elevation, 'tis but a Crea<g ref="char:EOLhyphen"/>ture; therefore, 'tis not a fit Object of Truſt.</p>
+            <p>Though <hi>Adam</hi> might have ventured his Na<g ref="char:EOLhyphen"/>tural <hi>Righteouſneſs</hi> as a Plea; yet becauſe it might have failed, it was not a fit Object of Truſt. But ſince the Fall of <hi>Adam,</hi> all Pleas of <hi>Corrupt Righteouſneſs</hi> are inſufficient in the Court of Heaven.</p>
+            <p>Abſolute Mercy, without Faith in <hi>Chriſt,</hi> of<g ref="char:EOLhyphen"/>fered by a <hi>God</hi> as a <hi>Reconciler,</hi> cannot ſave us. As <hi>God</hi> could not (after the Sanction of his Law, in regard of his Truth) pardon the Violation of it, without Satisfaction: So ſince he hath ſetled this way of <hi>Reconciliation</hi> by Faith, in the Blood of <hi>Chriſt,</hi> he cannot (on the ſame ſcore of his Truth) ſave any in a way of Abſolute Mercy; eſpecially, thoſe that refuſe the Method that his Mercy hath appointed. And as it is againſt his Truth and Juſtice; ſo it is againſt the Honour of his <hi>Son:</hi> For if he be at Peace with one by Abſolute Mercy, Why could he not as well with others, in the ſame manner? And then, VVhat need is there of the Sufferings of his only <hi>Son,</hi> to make up the Breach? If any thing elſe be choſen by any beſides this, <hi>God</hi>
+               <pb n="20" facs="tcp:53998:10"/> may ſay to ſuch at the Day of Judgment, <hi>Go to your Reconcilers, that you have choſen, and ſee whether they will make Peace for you, or no;</hi> as he did to the <hi>Iſraelites,</hi> Judg. 10.14. <hi>Go, and cry to the Gods that ye have choſen; let them deliver you in the Time of your Tribulation.</hi> A Dreadful, but a Juſt Speech of the Eternal <hi>God!</hi>
+            </p>
+            <p>
+               <hi>Sixthly, God</hi> ſeeks it at our Hands, and is willing to receive us. <hi>God</hi> was not only in <hi>Chriſt, reconciling the World;</hi> but he is in his Ambaſſadors, intreating us; as though <hi>God</hi> did beſeech you by Us.</p>
+            <p>This is all the Tenor of his Proclamation, <hi>Be ye Reconciled.</hi> If he had not deſired it, he would not have ſpent his Thoughts about it, nor been at any Expence to effect it. He was not bound to it: He might have left us to ſink into the Depth of Miſery, that we had merited; without expoſing his <hi>Son</hi> to Death, which we had not deſerved. We had Con<g ref="char:EOLhyphen"/>tracted a Neceſſity of Death; our Surety was no more bound to ſeek us out, nor <hi>God</hi> to make to <hi>Adam</hi> a Promiſe of <hi>Redemption,</hi> than he was to make any of his Creatures. He might have raiſed a new VVorld, and filled it with new Inhabitants. It muſt needs be a
+<pb n="21" facs="tcp:53998:10"/> thing of vaſt Concernment, for which <hi>God</hi> ſeeks to us, and ſpeaks to us in his Goſpel; who is infinitely more Glorious, than we are Vile. <hi>God</hi> did us not the leaſt VVrong, though he hath born many of our Affronts. It is as ea<g ref="char:EOLhyphen"/>ſie for him to breath us into Hell, as to breath out one kind Invitation. He hath no more need of our Friendſhip, than he fears our En<g ref="char:EOLhyphen"/>mity. He is no more benefited by us, than the <hi>Sun</hi> by darting its Beams on a Grain of Sand.</p>
+            <p>That <hi>Soul</hi> ſurely is not ſenſible of the Mi<g ref="char:EOLhyphen"/>ſery that the VVar with <hi>God</hi> hath ſunk him into, that refuſes to receive Peace that he ſo tenderly and importunately offers: Nor can he, without unconceivable Shame, look <hi>God</hi> in the Face, after ſo notorious a Rejecting of it. He ſeeks it to Day; but, perhaps, he will not to Morrow: For there is a Day, when he will pour out his VVrath on the un<g ref="char:EOLhyphen"/>believing VVorld.</p>
+            <p>Now, that he is a great way off, his Thun<g ref="char:EOLhyphen"/>der is at a diſtance, he ſends us as Ambaſſadors of Peace: He ſhuts out none, that ſhut not out themſelves. Beſides, he is willing to re<g ref="char:EOLhyphen"/>ceive us into favour; more willing to em<g ref="char:EOLhyphen"/>brace us, than we to receive him.</p>
+            <pb n="22" facs="tcp:53998:11"/>
+            <p>The Eternal Motions in his Heart, gave Birth to this gracious Deſigne; and they have the ſame force ſtill: He will never forget them. They are the Bublings of his own Heart; and will be alike forcible for the Re<g ref="char:EOLhyphen"/>ception of us, as they were to give a Com<g ref="char:EOLhyphen"/>miſſion to <hi>Chriſt</hi> for us.</p>
+            <p>Oh, that every one of us were as willing to be at Peace with <hi>God,</hi> as <hi>God</hi> is to be at Peace with us! He ſeeks to us; 'tis an Imi<g ref="char:EOLhyphen"/>tation of God, to ſeek to him.</p>
+            <p>That's the Firſt Branch of the EXHORTATION.</p>
+            <div n="2" type="exhortation">
+               <head>II. <hi>EXHORTATION.</hi>
+               </head>
+               <p>BE at Enmity with Sin. <hi>God</hi> was in <hi>Chriſt</hi> reconciling Sinners, not Sin: He ſent his <hi>Son</hi> to reconcile Enemies, not their Enmity. Fire and Water can ſooner agree, than <hi>God</hi> and <hi>Sin;</hi> Peace with <hi>God,</hi> and Peace with <hi>Iniquity.</hi> A Traitour may be reconciled
+<pb n="23" facs="tcp:53998:11"/> to his <hi>Prince;</hi> but the Treaſon is ſtill as hate<g ref="char:EOLhyphen"/>ful as before.</p>
+               <p>Indeed, this Enmity with Sin, is the beſt Signe of our <hi>Actual Reconciliation;</hi> when we hate that which made the firſt Separation be<g ref="char:EOLhyphen"/>tween <hi>God,</hi> and the <hi>Soul. Chriſt</hi> Expiated <hi>Sin,</hi> but did not Encourage it: He Dyed not on<g ref="char:EOLhyphen"/>ly to make Peace; but he Dyed alſo to make us Holy, and purifie a People to himſelf.</p>
+               <p>The Deſigne of <hi>God,</hi> in the Manifeſtation of <hi>Chriſt</hi> in the Fleſh, was to deſtroy the VVorks of the <hi>Devil:</hi> The chief VVork of the <hi>Devil;</hi> was to enter Man into a League with him<g ref="char:EOLhyphen"/>ſelf, in his Rebellion againſt <hi>God</hi> his Maker. <hi>God</hi> aimed at the Death of <hi>Sin,</hi> when he aim<g ref="char:EOLhyphen"/>ed at the Life of our <hi>Souls.</hi> The Ends of <hi>Chriſt</hi>'s Death, are not ſeparated: He is no Atoner, where he is not a Refiner.</p>
+               <p>'Tis as certain, as any VVord the Mouth of <hi>God</hi> hath ſpoken, <hi>That there is no Peace to the Wicked.</hi>
+               </p>
+               <p>An unſpotted Conſcience, and a pure Will, are the Benefits of this <hi>Reconciliation:</hi> For this <hi>Reconciliation</hi> muſt be Mutual.</p>
+               <p>As <hi>God</hi> lays down his VVrath againſt us, ſo we muſt throw down our Arms againſt him. As there is a double Enmity; the one
+<pb n="24" facs="tcp:53998:12"/> rooted in our Nature, the other in our wick<g ref="char:EOLhyphen"/>ed VVorks; ſo there muſt be an Alteration of our State, and of our Actions.</p>
+               <p>The End of <hi>Chriſt</hi>'s <hi>Reconciling</hi> us to <hi>God,</hi> was, to bring us back to him. We cannot be link't in Peace to him, except we be transform'd into the Image of his <hi>Son.</hi>
+               </p>
+               <p>How can we expect to be received into the Boſom of <hi>God,</hi> if we every Day dawb our Souls? Can there be any Familiarity with <hi>God,</hi> when we daily lay Bars in the way.</p>
+               <p>God <hi>was in</hi> Chriſt, <hi>Reconciling the World;</hi> be<g ref="char:EOLhyphen"/>cauſe he was a Holy, as well as a Gracious <hi>God:</hi> becauſe he had a Deteſtation of Sin, as well as becauſe he had a Love for the Crea<g ref="char:EOLhyphen"/>ture. He is of purer Eyes, than to behold the leaſt Iniquity.</p>
+               <p>As before, <hi>God</hi> was ſanctifyed in <hi>Chriſt,</hi> when he <hi>Reconciled the World;</hi> ſo he will be in thoſe that entertain it. There muſt be an Enmity with that, for which the <hi>Son of God</hi> was made a Sacrifice: Elſe we ſhall act but <hi>Judas</hi>'s Part with <hi>God</hi>'s Grace, betray it to ſerve our Luſts.</p>
+               <p>Be afraid therefore of offending <hi>God;</hi> not only becauſe he hath Power to hurt, but be<g ref="char:EOLhyphen"/>cauſe of his Love, whereby he hath obliged
+<pb n="25" facs="tcp:53998:12"/> you. The Peace that was broken by the Diſ<g ref="char:EOLhyphen"/>obedience of <hi>Adam,</hi> was reſtored by the Obe<g ref="char:EOLhyphen"/>dience of <hi>Chriſt:</hi> But our Obedience is neceſ<g ref="char:EOLhyphen"/>ſary for the Joyful Fruits of it. <hi>Pſal.</hi> 119. <hi>Great Peace have they, that love thy Law.</hi>
+               </p>
+            </div>
+            <div n="3" type="exhortation">
+               <head>III. <hi>EXHORTATION.</hi>
+               </head>
+               <p>BE Induſtrious and Affectionate in your Ser<g ref="char:EOLhyphen"/>vices to <hi>God.</hi> Hath <hi>God</hi> done ſo much for us, and ſhall we put off <hi>God</hi> with a little Service, with the ſcantlings of Duty? <hi>God</hi> hath done his utmoſt to engage our Af<g ref="char:EOLhyphen"/>fection, and encourage our choiceſt Service. There was not an higher way to Procure it, nor a dearer way to Conferr it.</p>
+               <p>View the Creatures, and <hi>God</hi>'s Goodneſs in them to Man, and it will raiſe a Natural Love: But, What an Height of Love ſhould we a<g ref="char:EOLhyphen"/>ſcend to, that have an higher Step to mount? The leaſt Love, is more than is due to us; How much more that Immenſity of Love he hath ſhewn us? And, Shall we return but Drops for an Ocean, when he hath ſtopt the Torrent
+<pb n="26" facs="tcp:53998:13"/> of Legal Penalties, that were deſerved by us? How ſhould we combine all our Thoughts and Affections together, to ſerve that <hi>God,</hi> who hath made all his Thoughts conſpire, to reduce us Honourably and Succeſsfully?</p>
+               <p>
+                  <hi>I am the Lord thy</hi> God, <hi>that brought thee up out of the Land of</hi> Egypt, <hi>&amp;c.</hi> is the Preface to the <hi>Decalogue,</hi> and an Incitement to the <hi>Iſrae<g ref="char:EOLhyphen"/>lites,</hi> to obey all his Precepts.</p>
+               <p>God <hi>hath been in</hi> Chriſt, <hi>Reconciling us to him<g ref="char:EOLhyphen"/>ſelf,</hi> is the Tenour of the Goſpel; and ſhould be an Incitement to greater Service, by how much our Spiritual Deliverance (the Anti<g ref="char:EOLhyphen"/>type of it) is greater. We ſhould ſerve <hi>God</hi> as Friends: And as he hath given us an high<g ref="char:EOLhyphen"/>er State, ſo we ſhould give him the greater Honour.</p>
+               <p>Do all things therefore unto <hi>God,</hi> as <hi>Recon<g ref="char:EOLhyphen"/>ciled,</hi> without baſe Ends, and ſordid Deſigns. <hi>God</hi> had no other End, in being the Author of Peace, but his own Glory, and Man's Good. We ſhould have no other Deſign, but <hi>God</hi>'s Glory, and our own Welfare. Serve him then with Delight; a dull and ſluggiſh Tem<g ref="char:EOLhyphen"/>per doth not become us, when we approach ſo hearty a Friend, that was ſo induſtrious to be at Peace with us.</p>
+               <pb n="27" facs="tcp:53998:13"/>
+               <p>Next to that Delight <hi>God</hi> hath in his <hi>Re<g ref="char:EOLhyphen"/>conciling Son,</hi> is that he hath in his <hi>Reconciled Children.</hi>
+               </p>
+            </div>
+            <div n="4" type="exhortation">
+               <head>IV. <hi>EXHORTATION.</hi>
+               </head>
+               <p>LEt all your Approaches to <hi>God,</hi> be begun, and ended with a Senſe of this, in any Duty; eſpecially, in Prayer. <hi>God</hi> in all his Communications to his People, acts as a <hi>Reconciling God;</hi> we ſhould eye him ſo, in all our Addreſſes to him.</p>
+               <p>As there is not one Mercy, not one Act of Grace <hi>God</hi> ſhews to us, but the Spring is from this reſtored Affection; ſo there is not a Duty we offer to <hi>God,</hi> but ſhould do it in the Senſe of this. What is not by and through <hi>Chriſt,</hi> will not be accepted as a Duty. This Conſideration ſhould animate us in all our Addreſſes. This is neceſſary to be acted by us, to make us humble; and to conſider what we were, before we were freely reduced; to make us believe, and come with holy Bold<g ref="char:EOLhyphen"/>neſs. And, What Ground can there be for
+<pb n="28" facs="tcp:53998:14"/> Deſpondency, when we have ſo many To<g ref="char:EOLhyphen"/>kens of his Heartineſs in it?</p>
+               <p>This will make us more earneſt, to fetch Fire from Heaven to enflame our Souls: This will raiſe our Hope. For, What can be a greater Foundation for it, than this?</p>
+               <p>We ſhould think, before we perform our Duties, of the Love that <hi>God</hi> bears to <hi>Chr ſt;</hi> and this will be Ground of Confidence: for this Love was with a reſpect to thoſe that Believe.</p>
+               <p>Think much of the Vertue of <hi>Chriſt</hi>'s Death, when he ſprinkled the Mercy-ſeat with his Blood. Turn <hi>God</hi>'s Mercy-ſeat into a Throne of Grace.</p>
+               <p>
+                  <hi>Every Act about Chriſt,</hi> is a fit Argument in Prayer. God will never deny his own Acts, nor the Ends of them, which made way for him to Communicate himſelf.</p>
+               <p>
+                  <hi>Chriſt,</hi> and <hi>God</hi> in <hi>Chriſt,</hi> is Entertaining, as well as Reconciling us. Let us not therefore lift up our Eyes to Heaven; but then carry this Atonement by Faith in his Blood, in the Hand of every Prayer to him.</p>
+            </div>
+            <div n="5" type="exhortation">
+               <pb n="29" facs="tcp:53998:14"/>
+               <head>V. <hi>EXHORTATION.</hi>
+               </head>
+               <p>LOok for Grace and Strength from God in Chriſt. The Conduit of Grace and Mer<g ref="char:EOLhyphen"/>cy, was unſtopt in Chriſt; and by him, it flows freely down to Man. This is the Foundation of all <hi>Regeneration.</hi>
+               </p>
+               <p>In the 16, 17, &amp; 18. <hi>Verſes</hi> of this <hi>Chapter,</hi> having ſpoken of the New-Creature, <hi>Verſe</hi> 16. he ſhews the Ground of it: It was all from this <hi>Reconciler.</hi> Seek for Grace only on this Bottom; for Strength, and increaſe in it only on this Ground.</p>
+               <p>'Tis not the Conſideration of <hi>God</hi>'s Precepts, but of his Promiſes, and the Application of this <hi>Reconciling Love</hi> by Faith, that is attended with a Vigorous Benediction on the <hi>Soul,</hi> for the pulling up the Foundation of Enmity. The <hi>Spirit</hi> is received by the Mediation of the <hi>Goſpel,</hi> not by the Precepts of the Law.</p>
+               <p>Men begin at the wrong End, when they would riſe from <hi>Obedience</hi> to <hi>Faith:</hi> They deal with <hi>God,</hi> as if he were gratified and appea<g ref="char:EOLhyphen"/>ſed
+<pb n="30" facs="tcp:53998:15"/> by them. But begin with <hi>Faith,</hi> whereby we caſt our ſelves on <hi>God</hi> in <hi>Chriſt,</hi> and re<g ref="char:EOLhyphen"/>ceive Vigour for all Spiritual Actions. <hi>Faith</hi> is the Principle, whereby we Obey; not the Effect of our Obedience.</p>
+               <p>
+                  <hi>God</hi> is a <hi>God</hi> of Peace; then a <hi>God</hi> of Grace. We muſt look on <hi>God,</hi> as a <hi>God</hi> of Peace, and then implore him as a <hi>God</hi> of Grace, and for all our habitual growth in Grace. As he is a <hi>God</hi> of Peace, he works in us that which is well pleaſing in his Sight.</p>
+            </div>
+            <div n="6" type="exhortation">
+               <pb n="31" facs="tcp:53998:15"/>
+               <head>VI. <hi>EXHORTATION.</hi>
+               </head>
+               <p>WHen there are any Riſings of Enmity in thy <hi>Soul,</hi> go to <hi>God</hi> in <hi>Chriſt.</hi> As <hi>God</hi> was in <hi>Chriſt, Reconciling the World;</hi> ſo he is in <hi>Chriſt, Reconciling the Soul.</hi> Not that I think, that the whole Maſs of Guilt returns on a Believer, on his Fall; but the Particular Guilt of that <hi>Sin;</hi> for which we muſt fetch freſh Applications of <hi>Reconciling Grace:</hi> We muſt go to <hi>God</hi> in <hi>Chriſt,</hi> for it.</p>
+               <p>As the <hi>Firſt</hi> Application was from <hi>God</hi> in <hi>Chriſt,</hi> ſo muſt the <hi>Second</hi> and <hi>Third. Chriſt</hi> is an Officer in <hi>Heaven,</hi> for this Purpoſe.</p>
+               <p>The Apoſtle writes to the <hi>Corinthians,</hi> ſome whereof were <hi>reconciled;</hi> yet he beſeeches them to be <hi>reconciled:</hi> That is, to renew their <hi>Re<g ref="char:EOLhyphen"/>conciliation</hi> on every New Breach; to regain the Favour they had forfeited by their <hi>Sins,</hi> for which he had reproved them in the former <hi>Epiſtle.</hi>
+               </p>
+               <p>This ſhould be ſued out every Day. What was the Foundation of our firſt Peace, muſt
+<pb n="32" facs="tcp:53998:16"/> be the Foundation of our Renewal of the ſame: The Courſe we took for the <hi>Firſt,</hi> will be ſucceſsful for the <hi>Second. God</hi> was not out of <hi>Chriſt</hi> in the firſt, he will not be out of <hi>Chriſt,</hi> when we need it again.</p>
+               <p>If <hi>God</hi> was willing and deſirous to make <hi>Reconciliation</hi> by the Blood of <hi>Chriſt,</hi> for all our Sins, when they lay before him in their Crim<g ref="char:EOLhyphen"/>ſon Aggravations, much more will he renew it on a particular Fall. But he may hide his Face, with-draw the Comfort of this Peace for a long while, even for as long as we live.</p>
+               <p>Let none therefore preſume on this: for the making up of our Enmity on a particular Breach, belongs not to thoſe that live in a Courſe of known <hi>Sin.</hi> This is Inconſiſtent with a <hi>Re<g ref="char:EOLhyphen"/>conciled State;</hi> which is to make up the great Breach, the Breach of Nature.</p>
+            </div>
+            <div n="7" type="exhortation">
+               <pb n="33" facs="tcp:53998:16"/>
+               <head>VII. <hi>EXHORTATION.</hi>
+               </head>
+               <p>HOw contented ſhould thoſe be in every Condition, that are <hi>Reconciled.</hi> This Peace of <hi>God</hi> ſhould bear Rule in their Hearts, and compoſe them under all Emer<g ref="char:EOLhyphen"/>gencies, <hi>Phil.</hi> 4.6, 7. We may deſpiſe the Pro<g ref="char:EOLhyphen"/>miſes of the World that allure us, and the Threatnings of the World that ſcare us. If this Peace guard our Souls, it will render us Happy, when the World thinks us Miſerable. If you have not the Honour of the World, it will content us without it: Bear the Scorns and Reproaches of the World, with it.</p>
+               <p>The whole World can't ſecure you, if you have War with <hi>God:</hi> Nothing can defend you from the Arrows of his Wrath.</p>
+               <p>But if you have this Peace of <hi>God,</hi> you are mounted above the Enmity of the World. Let your <hi>Spirits</hi> be guarded by it, againſt tumul<g ref="char:EOLhyphen"/>tuous Paſſions. You may well endure the Strokes of a <hi>Father,</hi> ſince you are not like to feel his Sword, as a <hi>Judge.</hi>
+               </p>
+            </div>
+            <div n="8" type="exhortation">
+               <pb n="34" facs="tcp:53998:17"/>
+               <head>VIII. <hi>EXHORTATION.</hi>
+               </head>
+               <p>LEt us be <hi>reconcileable</hi> to others; not only where we offer, but to thoſe from whom we receive an Injury. <hi>God</hi>'s <hi>Reconciliation</hi> ſhould be our <hi>Rule</hi> of dealing with others.</p>
+               <p>Hard Hearts, and uncharitable Diſpoſitions, are unlike to <hi>God,</hi> that had a Heart full of Ten<g ref="char:EOLhyphen"/>derneſs. Such will not part with a Grain of their <hi>Right,</hi> though <hi>God</hi> parted with his <hi>Son</hi> to work our Peace: And had he not been more forward in it than we, we had periſht for ever, <hi>Luk.</hi> 6.36. <hi>God</hi> ſets his own Actions, as a Pat<g ref="char:EOLhyphen"/>tern for ours. If we are Irreconcileable to our Brother, we do not imitate <hi>God;</hi> but reject this Bleſſed Pattern, and diſcover no ſenſe of the Kindneſs of <hi>God</hi> to us.</p>
+               <p>Since <hi>God</hi> hath made <hi>Chriſt a Propitiation for our Sins; if God ſo loved us, ought not we alſo to love one another?</hi> 1 Joh. 4.10, 11.</p>
+               <p>The <hi>Son</hi> of his Boſom vailed his Glory, that he might be at Peace with us, Entertain us, and Accept us into Favour: And ſhall we on e<g ref="char:EOLhyphen"/>very
+<pb n="35" facs="tcp:53998:17"/> occaſion, be at Swords-point with our Brother?</p>
+               <p>Such a Diſpoſition, ſuch a Woolfiſh and Bruit<g ref="char:EOLhyphen"/>iſh Nature, is againſt the Tenour of the <hi>Goſ<g ref="char:EOLhyphen"/>pel.</hi>
+               </p>
+               <p>
+                  <hi>Chriſt</hi> came to ſlay the Enmity between <hi>God</hi> and Us: 'Tis a croſſing his Deſigne, to pre<g ref="char:EOLhyphen"/>ſerve it between Chriſtian and Chriſtian.</p>
+               <p>This is a keeping up the Partition-Wall; a fruſtrating of <hi>Chriſt</hi>'s Death, which was to de<g ref="char:EOLhyphen"/>moliſh it.</p>
+            </div>
+            <div n="9" type="exhortation">
+               <pb n="36" facs="tcp:53998:18"/>
+               <head>IX. &amp; Laſt <hi>EXHORTATION.</hi>
+               </head>
+               <p>GLorifie <hi>God</hi> for this! Since <hi>God</hi> hath ſent his own <hi>Son</hi> out of his Boſom, let us ſend our lowd Praiſes up to him. When Heaven ſmiles upon the Earth, the Earth bleſ<g ref="char:EOLhyphen"/>ſes Heaven.</p>
+               <p>'Tis to the Glory of <hi>God</hi> the Father, and our Lord <hi>Jeſus Chriſt,</hi> that though all we have comes immediately from <hi>Chriſt;</hi> yet <hi>Chriſt,</hi> and All comes from the <hi>Father.</hi> He is the Propi<g ref="char:EOLhyphen"/>tiation for our Sins; but he was appointed by the <hi>Father:</hi> He came to Redeem us; but he was ſent by <hi>God.</hi> He paid our Debts, as our Surety; but he was Accepted by <hi>God.</hi> He was our Mediatour, to bring us to <hi>God;</hi> but he was Commiſſioned by Him to this pur<g ref="char:EOLhyphen"/>poſe.</p>
+               <p>What Love had he for the Creature, though he abominated the Sin? In the mid'ſt of his Indignation againſt his Iniquities, he had Bow<g ref="char:EOLhyphen"/>els of Mercy for his Perſon.</p>
+               <pb n="37" facs="tcp:53998:18"/>
+               <p>
+                  <hi>God</hi> had fore-caſt the Priſoner into the Pit, where was no Water; and the Captive was under a mighty Sea of Trouble. The Law of <hi>God</hi> was againſt him. The Truth of <hi>God</hi> took part with his Law: His Bowels and VViſdom took a Way to ſatisfie the Curſe of the Law, that we might enjoy the Bleſſings of the <hi>Goſpel.</hi>
+               </p>
+               <p>We could plead nothing of our own Deſerts; unleſs Perverſity, Peeviſhneſs, Diſloyalty, Weak<g ref="char:EOLhyphen"/>neſs, and Wilfulneſs, could paſs for Deſert: Then, indeed, we had been unconceivable Me<g ref="char:EOLhyphen"/>ritors.</p>
+               <p>But ſeeing we could not merit it, nor con<g ref="char:EOLhyphen"/>tract Peace of our ſelves: How great there<g ref="char:EOLhyphen"/>fore, is the Depth of that VViſdom? And, How is that Goodneſs to be adored, that found out a <hi>Refuge,</hi> when Heaven and Earth were at War?</p>
+               <p>There is no <hi>Sinner,</hi> but is born the Object of the Curſes of the Law, and the Scorn of the Malicious <hi>Devil. Jeſus Chriſt</hi> was ſent to pacifie the Law, and ſlay <hi>Satan</hi> our Enemy.</p>
+               <p>The Angels glorifie <hi>God</hi> for this Peace; and, Shall we be out-ſtript by thoſe Beings, that are leſs concerned? <hi>God</hi> was Appeaſed through <hi>Chriſt;</hi> and through <hi>Him</hi> we ſhould offer up
+<pb n="38" facs="tcp:53998:19"/> our Sacrifices of Thankſgiving to <hi>God.</hi>
+               </p>
+               <p>If all the Sparks that have leapt out of the Fire ſince the Creation, and all the Drops of Rain that have been diſtilled on the World, were turned into the Tongues of Angels, they would come ſhort of the Praiſes due to <hi>God,</hi> for this Exceſs of Love!</p>
+               <p>O that our Praiſes of <hi>God</hi> for this, might be the Buſineſs not of a Day, or an Hour, but of our whole Lives; ſince Eternity it ſelf, is too little, to ſet forth <hi>God</hi>'s Magnificent Love!</p>
+            </div>
+            <trailer>FINIS.</trailer>
+            <pb facs="tcp:53998:19"/>
+         </div>
+      </body>
+   </text>
+</TEI>
