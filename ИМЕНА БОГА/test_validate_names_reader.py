@@ -108,6 +108,55 @@ class ReaderCrosswalkTests(unittest.TestCase):
                 err = self.check(registry=changed, readers=readers, sources=sources)
                 self.assertTrue(any("CH03 Ruth/Job" in e for e in err), err)
 
+    def test_ch03_source_urls_cannot_be_moved_out_of_their_section_or_duplicated(self):
+        path = EXPECTED_READER_FILES["CH-PILOT-03"]
+        heading = "### Когда «Шаддай» звучит без «Эль»"
+        for url in (
+                "https://mechon-mamre.org/p/pt/pt2901.htm",
+                "https://mechon-mamre.org/p/pt/pt2705.htm",
+                "https://mechon-mamre.org/p/pt/pt2742.htm"):
+            with self.subTest(url=url, mutation="moved"):
+                original = self.readers[path]
+                link = next(part for part in original.splitlines()
+                            if f"]({url})" in part)
+                # Move only the Markdown link, preserving all other content.
+                import re
+                match = re.search(r"\[[^\]]+\]\(" + re.escape(url) + r"\)", link)
+                self.assertIsNotNone(match)
+                token = match.group()
+                moved = original.replace(token, "", 1)
+                moved = moved.replace(heading, token + "\n\n" + heading, 1)
+                mutated = dict(self.readers)
+                mutated[path] = moved
+                err = self.check(readers=mutated)
+                self.assertTrue(
+                    any("source hyperlink must appear exactly once inside its own" in e
+                        for e in err), err,
+                )
+            with self.subTest(url=url, mutation="duplicated"):
+                original = self.readers[path]
+                pos = original.index(f"]({url})")
+                token_start = original.rfind("[", 0, pos)
+                token_end = pos + len(f"]({url})")
+                token = original[token_start:token_end]
+                duplicate = dict(self.readers)
+                duplicate[path] = original[:token_end] + " " + token + original[token_end:]
+                err = self.check(readers=duplicate)
+                self.assertTrue(
+                    any("source hyperlink must appear exactly once inside its own" in e
+                        for e in err), err,
+                )
+
+    def test_direct_text_loci_must_not_appear_in_unrelated_sections(self):
+        for chapter_idx, section_idx in ((0, 0), (1, 0), (2, 0), (2, 8)):
+            with self.subTest(chapter=chapter_idx, section=section_idx):
+                changed = copy.deepcopy(self.registry)
+                changed["chapters"][chapter_idx]["sections"][section_idx]["directTextLoci"] = []
+                self.assertTrue(
+                    any("direct digital-MT trace illegally attached" in e
+                        for e in self.check(registry=changed))
+                )
+
     def test_secondary_theology_requires_explicit_unclosed_boundary(self):
         changed = copy.deepcopy(self.registry)
         changed["chapters"][0]["sections"][3]["unresolvedArgumentBoundary"] = ""

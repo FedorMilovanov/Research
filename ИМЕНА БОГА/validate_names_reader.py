@@ -106,7 +106,17 @@ def validate_reader_crosswalk(
             errors.append(f"reader: {cid} reader publication boundary removed")
         if reader_words(reading) > WORD_BUDGETS[cid]:
             errors.append(f"reader: {cid} main reader narrative exceeds word budget")
-        headings = re.findall(r"^### (.+?)\s*$", reading, flags=re.MULTILINE)
+        heading_matches = list(re.finditer(r"^### (.+?)\s*$", reading, flags=re.MULTILINE))
+        headings = [m.group(1) for m in heading_matches]
+        section_bodies = {
+            match.group(1): reading[
+                match.end():(
+                    heading_matches[i + 1].start()
+                    if i + 1 < len(heading_matches) else len(reading)
+                )
+            ]
+            for i, match in enumerate(heading_matches)
+        }
         sections = chapter.get("sections", [])
         if not isinstance(sections, list):
             errors.append(f"reader: {cid} sections not a list")
@@ -154,6 +164,10 @@ def validate_reader_crosswalk(
                 source = by_source_id.get(source_id)
                 if source and source.get("publicationState") != "BLOCKED":
                     errors.append(f"reader: {cid}/{heading} source was prematurely promoted")
+            if "directTextLoci" in row and not (
+                    cid == "CH-PILOT-03"
+                    and heading == "Когда «Шаддай» звучит без «Эль»"):
+                errors.append("reader: direct digital-MT trace illegally attached to unrelated section")
             if cid == "CH-PILOT-03" and heading == "Когда «Шаддай» звучит без «Эль»":
                 expected = [
                     {
@@ -176,8 +190,14 @@ def validate_reader_crosswalk(
                         or src.get("criticalEditionCollated") is not False
                         or src.get("publicationState") != "BLOCKED"):
                     errors.append("reader: CH03 Ruth/Job modern MT source was falsely upgraded")
-                if any(url not in reading for _, url, _ in CH03_UNMAPPED_MT_LOCI):
-                    errors.append("reader: CH03 Ruth/Job required source hyperlinks absent")
+                own_section = section_bodies.get(heading, "")
+                if any(
+                        own_section.count(f"]({url})") != 1
+                        for _, url, _ in CH03_UNMAPPED_MT_LOCI):
+                    errors.append(
+                        "reader: CH03 Ruth/Job source hyperlink must appear exactly once "
+                        "inside its own narrative section"
+                    )
                 if "SOURCE_GRAPH_HOLD" not in (row.get("unresolvedArgumentBoundary") or ""):
                     errors.append("reader: CH03 Ruth/Job graph HOLD removed")
             gap = row.get("unresolvedArgumentBoundary")

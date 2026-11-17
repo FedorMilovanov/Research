@@ -16,7 +16,7 @@
     "regressionTests": 328,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "VERIFIED_PREDECESSOR_HEAD_846a26fed50cd8b7776f0042e6109d7abcd7507a_W85_6_OF_6_TERMINAL_SUCCESS_NAMES_744_OF_744_RUN_44060601166; W86_EXACT_CI_746_TESTS_REQUIRED",
+    "allSixCiChecks": "VERIFIED_PREDECESSOR_HEAD_05f3123c93d71d5c0a0448c4515c155ee08f94dd_W86_6_OF_6_TERMINAL_SUCCESS_NAMES_746_OF_746_RUN_44137606772; W87_SECTION_LOCAL_READER_TESTS_748_EXPECTED_EXACT_HEAD_CI_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 26,
@@ -64,11 +64,11 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "846a26fed50cd8b7776f0042e6109d7abcd7507a",
+    "lastConfirmedAllSixChecksSha": "05f3123c93d71d5c0a0448c4515c155ee08f94dd",
     "readerChapterCount": 3,
     "readerSectionCrosswalkCount": 32,
     "readerCrosswalkLinkedDistinctClaims": 25,
-    "readerCrosswalkIndependentAdversarialTests": 20
+    "readerCrosswalkIndependentAdversarialTests": 22
   },
   "allowedStatuses": [
     "DONE",
@@ -776,7 +776,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "2026-11-17 W86 CH03 Ruth1:20–21 / Job5:17 / Job42:7–9 modern printed MT text-locus trace, 3 registered SOURCE-ID digital verse URLs with Naomi/Eliphaz/YHWH speaker boundary and 2 anti-overclaim reader regression tests. Preserves original 105 ATTs, 87 CLMs, 137 SRCs BLOCKED. Exposes SOURCE_GRAPH_HOLD for missing standalone Ruth/Job CLM/ATT even after direct original-digital verse check. Prior W85 c846? exact 846a26fed50cd8b7776f0042e6109d7abcd7507a = 6/6 SUCCESS Names 744/744; W86 Names 746 EXPECTED, exact CI NOT YET VERIFIED. NG04 BHS original lower apparatus Ex17:16 and Göttingen Ex1991 App I/II; Harley f1r independent human paleography still BLOCKED_SOURCE. External reviews, rights, Product permits zero. Existing PR379 remains Draft and main/site unchanged.",
+  "nextAction": "2026-11-17 W87 bounded audit fixes: correct previously stale W84/W85 CI descriptions using VERIFIED predecessor W86 05f3123c93d71d5c0a0448c4515c155ee08f94dd, 6/6 SUCCESS and Names 746/746 run44137606772. CH03 remains exactly 3240 whitespace-delimited main reader words with 3 correctly located direct MT Ruth/Job links and unchanged reader prose. Reader validation now enforces exactly one Markdown source link per URL in its own heading-bounded narrative section and rejects foreign directTextLoci elsewhere, protected by 2 new negative test methods; expected W87 748 total (328+26+319+24+22+29), exact new W87 HEAD CI PENDING. W86 scholarly SOURCE_GRAPH_HOLD remains for no standalone locked Ruth/Job ATT/CLM links; 137 registered SRC all BLOCKED, 105 ATT / 87 CLM / 75 relations unchanged, 3 reader pilots internal. NG04 original BHS Ex17:16 lower apparatus, Göttingen Wevers/Quast Exodus 1991 App I+II and damaged Harley f1r independent paleography still unavailable; external theology/philology reviewers, rights and Product approval zero. Stop discovery on unavailable exact editions; existing PR379 stays Draft, do not merge/main or publish site.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -858,7 +858,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-17",
-    "planStatus": "W86 2026-11-17: directly checked edited MT source Ruth1:20–21 and Job5:17/42:7–9. Added directTextLoci with three source URLs and human/divine speaker roles to existing CH03 unmapped section; 2 new fail-closed mutation tests (20 reader, 746 expected total). No new historic attestation or claim; SOURCE_GRAPH_HOLD still applies. Research scholarly and critical-printed-edition review, rights and Product permissions still HOLD; W86 exact CI pending, W85 6/6 744 verified.",
+    "planStatus": "W87 2026-11-17 corrective audit wave: predecessor W86 05f3123c93d71d5c0a0448c4515c155ee08f94dd independently 6/6 SUCCESS, profile Names run 44137606772 746/746; current W87 exact new SHA CI PENDING (748 expected after +2 reader regression methods). Reader 3240-word CH03 unchanged; 3 digital MT Ruth/Job hyperlinks now guarded within their exact section boundary, duplicate/relocated links and unexpected directTextLoci fail-closed. No newly created ancient ATT/CLM/SRC or independent scientific review, and no rights/Product release. Machine SSOT/master/README CURRENT synchronized, historical waves retained.",
     "workCompleted": [
       "W82 2026-11-17 direct original 4982×6379-pixel photo Or4445 f59v, rightmost column last line, reads על כסיה מלחמה as JOINED original ink, correction of prior wrong machine reading, image source and in-place guards/test updated, no new physical source or rights/critical apparatus claims.",
       "W81 2026-11-17: first true browser image-backed inspection of OPenn original Harley MS5683 fol1r JPG 12967_0010.jpg at 4840x6636 native pixels, whole surface and specified source-coordinate crops. Historic W80 'JPG unavailable' limitation now resolved. Present physical original ink and repair damage directly observed; contested original word boundary remains unresolved pending controlled second philologist review; no machine/OCR textual substitute, no new ancient witness. Existing source record and fail-closed regression amended in place; no extra sources or test count.",
@@ -1020,7 +1020,7 @@
       "2026-11-10 WAVE24 image-acquisition source audit: via live browser found Brill scholarly reader for 4Q72 urn:cts:ancJewLit:dss.4q72.dsbo-eng2:f1i-f6, directly observed no-right-credentials page; secondary request HTTP403; version/type unverified as image so not called photo URL. Publisher image access guide says photos supplied from PAM/IAA, but no actual picture pixels loaded. DJD XV 1997 21.4MB third-party PDF web screenshot error 400 TOO_LARGE, live second browser only filename; full plate content/presence in PDF UNKNOWN. Open Dead Sea explicit licensing states its modern research text data CC BY-NC 4.0, original photos only outbound to IAA or Israel Museum, no derived reprint rights. Existing Tov source row and dossier16 updated, 101 records/289 tests unchanged, NG10/rights/Product HOLD."
     ],
     "stillOpen": [
-      "W86: three direct edited-MT verse links Ruth1:20–21, Job5:17, Job42:7–9 are evidence-typed and machine-guarded; missing standalone graph edges in 105 ATTs/87 CLMs remain SOURCE_GRAPH_HOLD. W86 exact 746-test CI required, prior W85 6/6 and 744/744 passed. NG04 original BHS/Göttingen apparatus and damaged Harley human review; independent theological/philological review, rights/Product HOLD.",
+      "W87: W86 6/6 SUCCESS/746/746 completed; W87 new HEAD needs independent CI 748 expected. Ruth1:20–21/Job5:17/Job42:7–9 three verse URLs guarded in exact CH03 section, without standalone locked ATT/CLM graph edges: SOURCE_GRAPH_HOLD. NG04 original BHS critical lower apparatus Ex17:16, Göttingen Ex1991 App I/II, Harley f1r independent reader and external scholarly review/rights/Product remain blocked.",
       "Authorized 4Q72 original manuscript photo from Brill or IAA with exact editor frg55ii Jer33:16–20 physical image match; Brill reader denies credentials HTTP403, no photo image/URN verified.",
       "DJD XV actual PDF photographic-plate presence not verified; Tov 1991 OBO109 I–VII ZORA Anubis blocked; 1997 XXX–XXXVI original raster plates not viewed.",
       "IAA B360205 plate245 Frag6 vs DJD frg55ii historical frame and glyph correspondence unproven; initial יהוה צד only edited transcript, [קנו] restored, no independent paleo-autopsy.",
@@ -1102,8 +1102,8 @@
         "acceptance": "One continuous Russian reader chapter distinguishing Elohim morphological number and referents, El Elyon within Gen14 narrative, direct self-declaration El Shaddai and Isaac blessing, disputed etymology with bounded competing academic explanation and separate scholarly-rights HOLD appendix.",
         "status": "ACTIVE_BOUNDED_SOURCE_GAP_TRIAGE_INTERNAL_ONLY_EXTERNAL_SCHOLARLY_REVIEW_PENDING_NOT_EDITORIAL_READY",
         "file": "ИМЕНА БОГА/reader/CH-PILOT-03_EL_ELOHIM_SHADDAI.md",
-        "verification": "Research reader chapter ≈3109 whitespace-separated words + research/editorial apparatus; Wave51 condensed Deir Alla from 2651-word embedded main excursion to 309-word bounded narrative, preserving former complete research text and two alternative images in internal scholarly appendix, keeping original CC0 museum photo in reading. Wave52 adds section-claim-source crosswalk for 32 headings and 25 distinct claim IDs with 18 negative regressions. Existing two internal adversarial Hebrew-source passes remain exactly two, not an external review; no independent scientific, rights or Product acceptance. W74 original MT direct Ruth1:20–21, Job5:17/42:7–9 editorial reassessment committed in CH03; original 105 attestation IDs untouched, source graph gap disclosed in crosswalk; first 3 pilot chapters unchanged, no reviewer approval. W84 original publisher scholarly PDF extracted author English text Müller/Pakkala 2022 §3.1 printed pp46–50 read with omission counterargument; independent DBG Rahlfs–Hanhart Greek verse checked and differing other Greek online reading identified. CH03 reader and appendix revised. NOT physical ancient manuscript collation, no SBL print screenshot, no external scholarly review or rights approval.",
-        "nextReview": "W84 Gen14:22 source-specific MT/LXX/Syriac/Samaritan variance and author hypothesis now bounded, external Greek edition apparatus remains needed for universal LXX statement. CH03 Ruth/Job original-105 ATTs SOURCE_GRAPH_HOLD remains explicit; seek independent scholar review. Gill/Berkhof/Bavinck belong CH01, not CH03. No Product publication."
+        "verification": "Research reader chapter 3240 whitespace-separated words + research/editorial apparatus; Wave51 condensed Deir Alla from 2651-word embedded main excursion to 309-word bounded narrative, preserving former complete research text and two alternative images in internal scholarly appendix, keeping original CC0 museum photo in reading. Wave52 adds section-claim-source crosswalk for 32 headings and 25 distinct claim IDs with 20 W86 reader negative regressions. Existing two internal adversarial Hebrew-source passes remain exactly two, not an external review; no independent scientific, rights or Product acceptance. W74 original MT direct Ruth1:20–21, Job5:17/42:7–9 editorial reassessment committed in CH03; original 105 attestation IDs untouched, source graph gap disclosed in crosswalk; first 3 pilot chapters unchanged, no reviewer approval. W84 original publisher scholarly PDF extracted author English text Müller/Pakkala 2022 §3.1 printed pp46–50 read with omission counterargument; independent DBG Rahlfs–Hanhart Greek verse checked and differing other Greek online reading identified. CH03 reader and appendix revised. NOT physical ancient manuscript collation, no SBL print screenshot, no external scholarly review or rights approval. W87 audit: three existing Ruth/Job digital MT URLs now checked within their own chapter section (not anywhere in reading); foreign `directTextLoci` rejected. Two additional adversarial test methods bring reader suite to 22 after own W87 CI. No standalone Ruth/Job ATT/CLM, independent original critical manuscript collation, peer review or rights/Product grant.",
+        "nextReview": "W87: CH03 main reader 3240 whitespace tokens and 13 sections; W86 original digitized MT Ruth1:20–21, Job5:17, Job42:7–9 links properly inside their section. W87 guards require own exact SHA CI. Preserve standalone Ruth/Job ATT/CLM SOURCE_GRAPH_HOLD despite directTextLoci; obtain independent philology/theology review and make a bounded editorial decision. Gen14:22 alternative LXX edition argument remains edition-specific; no universal textual collation; Gill/Berkhof/Bavinck are CH01. NG04 source blockers separate; no Product promotion."
       },
       {
         "id": "NG-04",
@@ -1666,8 +1666,8 @@
       "verifiedReaderChapters": 3,
       "tracedReaderSections": 32,
       "selectedUniqueResearchClaims": 25,
-      "tests": 20,
-      "crosswalkState": "SECTION_TRACE_PLUS_THREE_DIRECT_EDITED_MT_LOCUS_LINKS_UNREGISTERED_IN_LOCKED_105_ATT_87_CLM_CLAIM_GRAPH_HOLD",
+      "tests": 22,
+      "crosswalkState": "SECTION_LEVEL_MT_LOCUS_TRACE_WITH_EXACT_SECTION_LOCAL_LINK_AND_NO_FOREIGN_DIRECT_TEXT_LOCI_SOURCE_GRAPH_HOLD",
       "knownGaps": [
         "CH01 Gill/Berkhof/Bavinck interpreted theology not source-ID-mapped in main claim registry",
         "Ruth1:20–21, Job5:17, Job42:7–9 CH03 exact edited MT locus/source role URLs now separately traced with negative regressions; still outside standalone 105 ATT / 87 CLM registry, SOURCE_GRAPH_HOLD, external review unresolved.",
@@ -1680,9 +1680,9 @@
     "readerResearchAppendixPreservation20261111": "CH03 native 2651-word Deir Alla section moved intact except original CC0 image block retained in reader, 30 source hyperlinks and 2 other images preserved in editorial appendix. Scientific facts, conflicting reconstruction and rights remain held.",
     "selfPlanAudit": {
       "auditDate": "2026-11-17",
-      "checkedPredecessorHeadSha": "846a26fed50cd8b7776f0042e6109d7abcd7507a",
+      "checkedPredecessorHeadSha": "05f3123c93d71d5c0a0448c4515c155ee08f94dd",
       "verifiedPredecessorWorkflows": 6,
-      "verifiedPredecessorNamesTests": 744,
+      "verifiedPredecessorNamesTests": 746,
       "scope": "Only existing Research PR379 and canonical JSON/master; no Product/site/rights changes",
       "results": [
         {
@@ -1690,7 +1690,7 @@
           "severity": "P0",
           "result": "CORRECTED_THIS_AUDIT",
           "finding": "W70 nextAction and W69 CI as CURRENT despite W73",
-          "evidence": "W84 verified predecessor c730b811f2b6328c43c16629eb8a278a5171ddef: 6/6 SUCCESS, Names workflow 44053162865 shows 744/744 (328+26+319+24+18+29). W85 docs+archive exact CI must run separately."
+          "evidence": "W86 exact 05f3123c93d71d5c0a0448c4515c155ee08f94dd: 6/6 terminal SUCCESS, Names #44137606772 = 746/746 (328+26+319+24+20+29). W87 section-local link guards and current docs must pass own exact-HEAD CI (748 expected)."
         },
         {
           "id": "SPA-02",
@@ -1738,7 +1738,7 @@
       "stopRule": "No more than two active deliverables; two consecutive no-gain object searches end discovery; Research manuscript edit with explicit gaps can proceed, but no evidence/rights/scientific/Product approval is inferred from CI.",
       "decision": "CONTINUE_RESEARCH_ONLY_TWO_BOUNDED_TEXT_AND_EVIDENCE_TASKS_NOT_READY_TO_MERGE_OR_PUBLISH",
       "nextActionOwner": "ИМЕНА БОГА/data/names_research_workplan_v1.json",
-      "expectedTestsOnNextExactHead": 746
+      "expectedTestsOnNextExactHead": 748
     }
   },
   "systematicTheologyTriage": {
