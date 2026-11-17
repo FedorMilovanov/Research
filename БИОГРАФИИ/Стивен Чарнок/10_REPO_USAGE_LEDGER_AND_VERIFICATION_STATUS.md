@@ -28,13 +28,15 @@ Nichol 1864. Ниже — полная карта с оценкой.
 
 ---
 
-## 2. HISTORICAL — функциональные роли;старое A2 по цифровому носителю SUPERSEDED
+## 2. Функциональные роли — исправленные статусы; прежнее цифровое `A2` SUPERSEDED
+
+В ранней матрице **хостинг цифровой передачи** (CCEL, Digital Puritan, Monergism) был ошибочно приравнен к классу `A2`. По действующей `data/repository-evidence-policy-v2.json` это неверно: `A2` — официальное независимое расследование/отчёт/стенограмма либо первичная институциональная публикация, а не любой электронный репринт. **Пока не доказаны точная редакция, авторство текста, полнота контекста и локатор, цифровое зеркало — лишь `C` (непроверенная передача/наводка).** Сам оригинальный авторский текст при индивидуальной первичной сверке может получить `A1` по природе документа. Не путать `evidenceClass`, `accessState`, `locatorState`, `rightsState`, `publicationState`: цифровая доступность не равна quote-safe и праву публикации.
 
 | Роль | Где используется | Дискурс (Nichol) | Статус |
 |---|---|---|---|
-| **Practical atheism** — язык для скрытой безбожности сердца | `СЕРИЯ СЕРДЦЕ/19`, `25`, `27`, `03`, `04`, `07`, `12`, `13` | vol. 1, *A Discourse on Practical Atheism* (Пс. 14:1) | `A2` (Monergism HTML), `locatorState = digital` |
-| **Regeneration anatomy** — two states, no middle, grace predominating | `СЕРИЯ СЕРДЦЕ/43`, `62`, `63`, `65`; `TEEN_DOUBLE_LIFE/52` | vol. 3, *Necessity of Regeneration*, *Nature of Regeneration*, *Efficient of Regeneration*, *Word, Instrument of Regeneration* | `A2` (CCEL, Digital Puritan vol. 3), `locatorState = digital` |
-| **Restraint vs. reformation** — fear может удерживать действие, не меняя желание | `TEEN_DOUBLE_LIFE/52`, `44`, `90`, `156` | vol. 3, regeneration discourses | `A2`, `locatorState = digital` |
+| **Practical atheism** — язык для скрытой безбожности сердца | `СЕРИЯ СЕРДЦЕ/19`, `25`, `27`, `03`, `04`, `07`, `12`, `13` | vol. 1, *A Discourse on Practical Atheism* (Пс. 14:1) | `C` (непроверенная передача Monergism); `locatorState = COARSE_LOCATOR_ONLY` |
+| **Regeneration anatomy** — two states, no middle, grace predominating | `СЕРИЯ СЕРДЦЕ/43`, `62`, `63`, `65`; `TEEN_DOUBLE_LIFE/52` | vol. 3, *Necessity of Regeneration*, *Nature of Regeneration*, *Efficient of Regeneration*, *Word, Instrument of Regeneration* | `C` (непроверенная передача CCEL/Digital Puritan); `locatorState = COARSE_LOCATOR_ONLY` |
+| **Restraint vs. reformation** — fear может удерживать действие, не меняя желание | `TEEN_DOUBLE_LIFE/52`, `44`, `90`, `156` | vol. 3, regeneration discourses | `C` (непроверенная передача); `locatorState = COARSE_LOCATOR_ONLY` |
 
 ---
 
@@ -128,7 +130,7 @@ Restricted; страница Michigan: CC0 — расхождение не ра�
 - **Источник корпуса:** Digital Puritan, *The Complete Works of Stephen Charnock* (vol. 3).txt.html.
 - **Противопоставление корпуса:** Boston's four states включают creation и eternity; Charnock's
   two-state diagnostic действует внутри истории после падения.
-- **`evidenceClass`:** `A2`.
+- **`evidenceClass`:** `C` для пока не сверенной с авторским изданием передачи Digital Puritan; установление `A1` по тексту самого Чарнока требует точной первичной сверки.
 - **`locatorState`:** **`unverified`** — нет страницы Nichol vol. 3.
 - **HOLD:** `LOCATOR_HOLD`.
 - **Дополнительное требование:** необходимо установить, в каком из четырёх regeneration discourses
@@ -139,7 +141,7 @@ Restricted; страница Michigan: CC0 — расхождение не ра�
 
 - **Где:** `СЕРИЯ СЕРДЦЕ/43` §5, таблица §300.
 - **Функция:** отделить regenerate status от conversion как act.
-- **Статус:** paraphrase, не цитата. `A2`. `LOCATOR_HOLD`.
+- **Статус:** paraphrase, не цитата; `C` для не сверенной цифровой передачи; `LOCATOR_HOLD` и `PUBLICATION_HOLD` до верификации.
 
 ### 3.4. «Custom can deepen nature's disorder»
 
@@ -147,18 +149,18 @@ Restricted; страница Michigan: CC0 — расхождение не ра�
 - **Формулировка корпуса:** «he argues that custom can deepen nature's disorder; a person does not
   cure sinful habit by mere self-accustoming, because the heart itself needs overruling grace».
 - **Функция:** связка с concern пользователя о patterns, childhood formation, deeply rooted attachments.
-- **Статус:** paraphrase. `A2`. `LOCATOR_HOLD`.
+- **Статус:** paraphrase; `C` для не сверенной цифровой передачи; `LOCATOR_HOLD` и `PUBLICATION_HOLD` до верификации.
 
 ### 3.5. Regeneration / restraint cluster (`TEEN_DOUBLE_LIFE/52`)
 
 | Утверждение | Источник корпуса | Статус |
 |---|---|---|
-| Regeneration — real inward change, не новая религиозная внешность | CCEL `nec_regen.ii.html` | `A2`, `locatorState = digital` |
-| Outward reformation insufficient but «of excellent use» | CCEL `nec_regen.ii.html` | `A2` |
-| Fear может restrain action without changing desire | CCEL `nec_regen.ii.html` | `A2` |
-| Convictions ≠ regeneration | CCEL `nec_regen.ii.html`, `nat_regen.i.html` | `A2` |
-| Christian parents ищут regeneration детей, не merely worldly success | CCEL `nec_regen.ii.html` | `A2` |
-| Inability/perversity не отменяет справедливость заповеди | CCEL `efficient_regeneration.ii.html` | `A2` |
+| Regeneration — real inward change, не новая религиозная внешность | CCEL `nec_regen.ii.html` | `C`, `COARSE_LOCATOR_ONLY`, `LOCATOR_HOLD` |
+| Outward reformation insufficient but «of excellent use» | CCEL `nec_regen.ii.html` | `C`, `LOCATOR_HOLD` |
+| Fear может restrain action without changing desire | CCEL `nec_regen.ii.html` | `C`, `LOCATOR_HOLD` |
+| Convictions ≠ regeneration | CCEL `nec_regen.ii.html`, `nat_regen.i.html` | `C`, `LOCATOR_HOLD` |
+| Christian parents ищут regeneration детей, не merely worldly success | CCEL `nec_regen.ii.html` | `C`, `LOCATOR_HOLD` |
+| Inability/perversity не отменяет справедливость заповеди | CCEL `efficient_regeneration.ii.html` | `C`, `LOCATOR_HOLD` |
 | «Rhetorical application, not Charnock quote» — явная пометка корпуса | — | **образцовая практика** |
 
 **Отметка отдела:** `TEEN_DOUBLE_LIFE/52` line 86 содержит явную пометку «Rhetorical application,
@@ -171,22 +173,21 @@ not Charnock quote». Это ровно та дисциплина, котору�
 
 | Источник | Что даёт | evidenceClass | locatorState |
 |---|---|---|---|
-| CCEL `ccel.org/c/charnock/nec_regen` + `.ii.html` + PDF | *Necessity of Regeneration* | `A2` | digital |
-| CCEL `ccel.org/ccel/charnock/nat_regen/nat_regen.i.html` | *Nature of Regeneration* | `A2` | digital |
-| CCEL `ccel.org/ccel/charnock/efficient_regeneration/efficient_regeneration.{ii,iii}.html` | *Efficient of Regeneration* | `A2` | digital |
-| CCEL `ccel.org/ccel/charnock/instr_regen/instr_regen.html` | *Word, Instrument of Regeneration* | `A2` | digital |
-| CCEL `ccel.org/ccel/charnock/reconcil.html` | *God the Author of Reconciliation* | `A2` | digital |
-| CCEL `ccel.org/ccel/charnock/cleansing.html` | *Cleansing Virtue of Christ's Blood* | `A2` | digital |
-| Digital Puritan vol. 1–5 (txt.html / epub / pdf) | Полные тома | `A2` | digital |
-| Digital Puritan vol. 1 Ind Titles `[SC] A Discourse Upon Spiritual Worship.pdf` | *Spiritual Worship* | `A2` | digital |
-| Digital Puritan vol. 1 Ind Titles `[SC] Practical Atheism.pdf` | *Practical Atheism* | `A2` | digital |
-| Monergism `A Treatise on Divine Providence` (pdf/epub) | *Providence* + epistol Adams & Veal | `A2` | digital |
-| grace-ebooks `SC-Discourses-On-The-Existence-and-Attributes-of-God-Vol-1.pdf` | *Attributes* vol. 1 | `A2` | digital |
+| CCEL `ccel.org/c/charnock/nec_regen` + `.ii.html` + PDF | *Necessity of Regeneration* | `C` до сверки издания | `COARSE_LOCATOR_ONLY` |
+| CCEL `ccel.org/ccel/charnock/nat_regen/nat_regen.i.html` | *Nature of Regeneration* | `C` до сверки издания | `COARSE_LOCATOR_ONLY` |
+| CCEL `ccel.org/ccel/charnock/efficient_regeneration/efficient_regeneration.{ii,iii}.html` | *Efficient of Regeneration* | `C` до сверки издания | `COARSE_LOCATOR_ONLY` |
+| CCEL `ccel.org/ccel/charnock/instr_regen/instr_regen.html` | *Word, Instrument of Regeneration* | `C` до сверки издания | `COARSE_LOCATOR_ONLY` |
+| CCEL `ccel.org/ccel/charnock/reconcil.html` | *God the Author of Reconciliation* | `C` до сверки издания | `COARSE_LOCATOR_ONLY` |
+| CCEL `ccel.org/ccel/charnock/cleansing.html` | *Cleansing Virtue of Christ's Blood* | `C` до сверки издания | `COARSE_LOCATOR_ONLY` |
+| Digital Puritan vol. 1–5 (txt.html / epub / pdf) | Полные тома | `C` до сверки издания | `COARSE_LOCATOR_ONLY` |
+| Digital Puritan vol. 1 Ind Titles `[SC] A Discourse Upon Spiritual Worship.pdf` | *Spiritual Worship* | `C` до сверки издания | `COARSE_LOCATOR_ONLY` |
+| Digital Puritan vol. 1 Ind Titles `[SC] Practical Atheism.pdf` | *Practical Atheism* | `C` до сверки издания | `COARSE_LOCATOR_ONLY` |
+| Monergism `A Treatise on Divine Providence` (pdf/epub) | *Providence* + epistol Adams & Veal | `C` до сверки издания | `COARSE_LOCATOR_ONLY` |
+| grace-ebooks `SC-Discourses-On-The-Existence-and-Attributes-of-God-Vol-1.pdf` | *Attributes* vol. 1 | `C` до сверки издания | `COARSE_LOCATOR_ONLY` |
 
-**Все эти источники — `A2`.** `СЕРИЯ СЕРДЦЕ/27` §4 явно ставит Charnock в класс **A** со
-статусом «доступен и проверяем», но оговаривает: «для точной цитаты проверять контекст».
-Отдел «БИОГРАФИИ/Стивен Чарнок» **подтверждает** эту классификацию и добавляет требование:
-для quote-safe необходима постраничная сверка с Nichol 1864.
+**SUPERSEDED:** общая классификация всех цифровых зеркал как `A2` ошибочна. Старая помета `A` в `СЕРИЯ СЕРДЦЕ/27` §4 — историческое описание чужого корпуса, а не независимая квалификация первичного свидетеля.
+
+**Текущий допуск:** для каждого claim требуется установить конкретное издание, проверить полный контекст и точный локатор по авторскому источнику (например, 1682 либо надлежащий печатный Nichol) и отдельно оформить права. До этого `C`/`LOCATOR_HOLD`/`PUBLICATION_HOLD`; после этого *конкретный первичный текст*, не всё зеркало, может быть подтверждён как `A1`. `CHARN_PRACT_ATHEISM_001` уже имеет отдельную первичную опору: издание 1682, p. 47 (§3.1), но HOLD на Nichol и права не сняты.
 
 ---
 
@@ -228,7 +229,7 @@ not Charnock quote». Это ровно та дисциплина, котору�
 
 ## 7. Права, архив и публикационные HOLD
 
-- Все quote-anchors корпусов: `A2`, `locatorState = digital`. `LOCATOR_HOLD` сохраняется.
+- Непроверенные цифровые quote-anchors корпусов: старое `A2` SUPERSEDED; до индивидуальной первичной сверки — `C`, `LOCATOR_HOLD` и `PUBLICATION_HOLD`. Исключение доказано только для `CHARN_PRACT_ATHEISM_001` (1682, p. 47, §3.1): `A1`, `EXACT_LOCATOR_VERIFIED` для **этой цитаты**, но отдельные права и Nichol-привязка остаются HOLD.
 - Новые `A1` quote-safe источники (томы 08, 09): CC0 1.0 для TCP-текста; `PUBLICATION_HOLD`
   сохраняется до постраничной сверки со снимком.
 - Перенос в Product: `PUBLICATION_HOLD` по всему отделу.
