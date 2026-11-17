@@ -584,9 +584,16 @@
   молча: 0».**
 
 - **Дополнение раунда 58, часть 5 (2026-10-19; `34_` §4.124; `08_`; `01_` §12.7; класс **B1**).**
-  **(а) Ин. 3:16 сверен; передача Амиро точна, построчно.** Кальвин: «*invite all indiscriminately… to cut off every
-  excuse from unbelievers*»; «*he shows himself to be reconciled to the whole world, when he invites all men without
-  exception*»; и тотчас «*the elect alone are they whose eyes God opens*». **(б) Закономерность двух мест:**
+  **(а) Ин. 3:16 сверен в английском переводе CTS; передача Амиро проверялась по этому чтению.** Кальвин:
+  «*invite all indiscriminately… to cut off every excuse from unbelievers*»; у переводчика W. Pringle (CTS, 1847)
+  «*he shows himself to be reconciled to the whole world, when he invites all men without exception*»;
+  и тотчас «*the elect alone are they whose eyes God opens*». **Позднейшая латинская проверка (волна 22,
+  2026-11-15; `docs/research/atonement/08_john_3_16_exegetical_defense.md` §4 и
+  `ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md` §8.1)
+  устанавливает `se tamen toti mundo propitium ostendit`, а НЕ `reconciliatum`: английское
+  `reconciled` — выбор переводчика, не дословное слово Кальвина. Латинская формулировка подтверждена
+  двумя независимыми печатными передачами, но визуальная сверка CO 47:64 сохраняет `LOCATOR_HOLD`.**
+  **(б) Закономерность двух мест:**
   всеобщность — **предложение**, определённость — **призвание**; **приобретения нет**. **(в) Точная формула сдвига
   статьи — два симметричных сдвига:** «предложение → приобретение», «призвание → применение». **(г) П. 239 — 2 из
   5.** **(д) `RIGHTS_HOLD`, `PUBLICATION_HOLD`, `ATTRIBUTION_HOLD` (S155), C-16 — без изменений; «снято молча: 0».**
@@ -617,7 +624,11 @@ from this sentence that Calvin held general redemption. — Ed.*» **Есть** 
 by faith*».
 
 **Почему `TENSION`, а не `RESOLVED`.** Слово «приобретение» у Кальвина в этих местах **не стоит**; он различает
-**предложение** и **сообщение**. Но утверждать, что у него «нет ничего похожего на всеобщую достаточность», **нельзя**:
+**предложение** и **сообщение**. При чтении Ин. 3:16 учитывать исправленную латинскую атрибуцию:
+`se tamen toti mundo propitium ostendit` (`propitium`, не `reconciliatum`); английское `reconciled`
+нельзя использовать как буквальное свидетельство о категории «примирения» у Кальвина (см. уточнение
+раунда 58, §4.124, и `fathers/21_` §8.1). Скан CO 47:64 по-прежнему на `LOCATOR_HOLD`.
+Но утверждать, что у Кальвина «нет ничего похожего на всеобщую достаточность», **нельзя**:
 «пострадал за грехи всего мира» сказано прямо. **Держим обе части**, не сглаживая.
 
 **Запреты.** Не цитировать сноску CTS как Кальвина. Не говорить «Кальвин учил ограниченному искуплению» без того же
