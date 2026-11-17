@@ -8688,12 +8688,12 @@
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article09_world_and_propitiation_johannine_case.md",
-      "sha256": "476801578af6ac6f6c55b0e1d301af7d8301264e0fad59dc7c3f41493e27da4c",
+      "sha256": "4d402ee549bf093dda7a142bfa2b8e717e065627901832a9c7103b0d062151cd",
       "reviewedAt": "2026-11-07",
       "note": "Статья №9/18, положительный анализ Иоанновых текстов о мире и умилостивлении; первичные греческие формы и исторические авторы отделены от вторичных пересказов, FULL_TEXT_HOLD/RIGHTS_HOLD/EVIDENCE_HOLD/PUBLICATION_HOLD сохранены",
       "publicationEligible": false,
       "digestRefreshedAt": "2026-11-17",
-      "digestRefreshedReason": "Agent 7 editorial patchset (93 scoped replacements, #541); this hash refresh does not assert new print-source collation or authorize publication"
+      "digestRefreshedReason": "PR #559 scoped editorial revision; SHA-256 pin refreshed for the revised bytes. No new source collation or evidence acquisition; publication remains ineligible."
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article10_ransom_for_all_two_adams_paul_hebrews.md",
@@ -8814,12 +8814,12 @@
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article07_extent_questions_models_and_primary_texts.md",
-      "sha256": "b2cc04b651180df1da8a253320c5f9f0311fa360b91c0e53f54577bb323bc5b8",
+      "sha256": "186c32ba49b380d44c29c8f0a8d6085842a81f3039278a1b63317629cbec3ca5",
       "reviewedAt": "2026-11-10",
       "note": "Reader-W4: independent narrative chapter 07 with twelve scoped F07 claims and strongest contrary readings; earlier historic drafts preserved. Not an independent full recollation, not publication rights or final extent verdict. EVIDENCE_HOLD / ATTRIBUTION_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD; NOT PEER REVIEWED.",
       "publicationEligible": false,
       "digestRefreshedAt": "2026-11-17",
-      "digestRefreshedReason": "Agent 7 editorial patchset (93 scoped replacements, #541); this hash refresh does not assert new print-source collation or authorize publication"
+      "digestRefreshedReason": "PR #559 scoped editorial revision; SHA-256 pin refreshed for the revised bytes. No new source collation or evidence acquisition; publication remains ineligible."
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article17_free_offer_gospel_assurance_all_hearers.md",
