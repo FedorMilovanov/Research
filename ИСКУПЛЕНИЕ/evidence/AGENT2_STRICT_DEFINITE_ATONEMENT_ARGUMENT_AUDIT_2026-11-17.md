@@ -809,3 +809,20 @@ HOLD без изменений: CO 49:100, CO 45:706, `PRINT_IMAGE_HOLD`, пра
 **Исправлено в файлах:** `22_` (пп. 1, 3, 7, 14, 21, 27, 34–37; матрица; итоговая фраза; 42eb); `01_` п. 2; `02_` пп. 8, 10; `21_` (CO 55:310); `34_` (§4.153, S168, журнал, индекс).
 
 **HOLD после раунда 70:** CO 49:100; `LOCATOR_HOLD(visual)` для CO 45:711 и CO 47:64–65; `PRINT_IMAGE_HOLD`; критические издания (Lambot 1945, PL 121, CSEL 92, SC 199) не открывались; права; публикационный HOLD; C-17 `TENSION`.
+
+## 22. Раунд 71 (2026-11-17): библиографическая ревизия `22_`, пп. 4, 5, 16, 22, 24, строка № 39
+
+Подробности — `34_` §4.154 (Q150), S169.
+
+| # | Место | Итог |
+|---|---|---|
+| 1 | *Enchiridion* 103 (п. 4) | `PARAPHRASE`: «omnes homines, omne genus hominum… per quascumque differentias distributos»; второе из двух толкований |
+| 2 | Проспер, возражение I (п. 5) | сверено: Hurter 35 (1877), с. 186 — «recte omnes dicantur redempti… redemptionis proprietas… penes illos»; `02_` п. 5 — `PARTIAL` |
+| 3 | 39 статей (п. 16) | `PARTIAL`: ст. XXXI «for all the sins of the whole world» (Schaff III ≈ с. 507) |
+| 4 | *Formula Consensus Helvetica* (п. 22) | `LOCATOR_ERROR`: в Schaff III нет (сс. 437–485 — шотландские исповедания); Schaff I, указатель «478»; текст — Niemeyer, pp. 729–739 |
+| 5 | Ussher, *True Intent and Extent* (п. 24) | `LOCATOR_ERROR`: Works XII, сс. 551–571, не 559–596; с. 565 — против «only for the elect, and for others nullo modo» |
+| 6 | Ходж, строка № 39 | `PARTIAL` (вывод): II, 558 «Augustinians do not deny that Christ died for all men…» |
+
+**Вердикты S1–S5 не меняются.** Правки касаются фона (патристика, исповедания, XVII в.), а не локаторов Кальвина.
+
+**HOLD после раунда 71:** без изменений (см. §21).
