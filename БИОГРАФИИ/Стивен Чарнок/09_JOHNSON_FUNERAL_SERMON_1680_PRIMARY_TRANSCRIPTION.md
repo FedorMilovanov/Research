@@ -261,7 +261,7 @@ Charnock than those to whom they affixed it». Он не называет ист
 > along with him. He was a most Powerful and Practical Preacher. **He was so, but now he is not.**
 
 **«a Professor in Divinity»** — Johnson дважды называет Чарнока «Professor in Divinity» (здесь и на
-page 40). Это не университетская должность, а почётное именование: он был признан учителем богословия.
+page 40). Это не университетская должность, а honоrific: он был признан учителем богословия.
 **«except Mr. Thomas Cawton»** — Johnson, сам учёный, ставит Чарнока вторым после Cawton в знании
 оригинальных языков.
 
@@ -340,7 +340,7 @@ Johnson повторял sermon, написанную для другого по
 - Нельзя утверждать, что Johnson был очевидцем последних лет Чарнока: он обращается к congregration
   как внешний («Were I to speak to Mr. Charnock's people»).
 - Нельзя датировать что-либо по этой sermon.
-- Нельзя приписывать Чарноку звание «Professor in Divinity» как университетскую должность.
+- Нельзя attribуть Чарноку звание «Professor in Divinity» как университетскую должность.
 - Нельзя утверждать, что Johnson описывал Чарнока как «venerable and grave»: он перевёл чужие строки.
 
 ---
