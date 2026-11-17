@@ -1696,7 +1696,7 @@
           "id": "SPA-02",
           "severity": "P0",
           "result": "BOUNDED_MT_TEXT_EDIT_DONE_CLAIM_GRAPH_HOLD",
-          "finding": "CH03 crosswalk 32 sections has distinct source gaps Naomi/Job and historical theologian attributions; no external scholarly review",
+          "finding": "CH03 Ruth1/Job5/42 reader sentences already bounded-edited W74; original 105 locked ATTs still lack their individual CLM/SRC graph links (SOURCE_GRAPH_HOLD). Gill/Berkhof/Bavinck are CH01 secondary attribution queue, not CH03 or a third active deliverable. No external scholarly review.",
           "evidence": "names_reader_claim_crosswalk_v1.json and chapter03"
         },
         {
