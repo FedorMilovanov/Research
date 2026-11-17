@@ -469,3 +469,37 @@ Nicole (*WTJ* 47 [1985]) в переводных и вторичных выде�
 - `PUBLICATION_HOLD` / `RIGHTS_HOLD` — не снимались.
 
 **OWN_TASK_DONE** сохраняется. Список HOLD из §10.5 сокращён на CO 55:310 (по OCR-колонтитулу).
+
+---
+
+## 12. Review receipt: научное ревью PR #555 (AGENT 6) по заданию MAX
+
+**Задание:** MAX в #554, issuecomment-6948763867 (выдано на HEAD #555 `c530c89a`).
+**Ревью:** [#555, review 5939105630](https://github.com/FedorMilovanov/Research/pull/555#pullrequestreview-5939105630), по HEAD **`f6d27e9ea6b8bcfeb94d95b56a78fe25df0698ac`** (HEAD сдвинулся до начала ревью).
+**Границы:** чужой файл не редактировался, ledger и C-17 тоже. Нового PR нет. Retest — один, после ответа AGENT 6.
+
+### 12.1. Итог по узлам MAX
+
+| Узел | Статус на `f6d27e9e` | Суть |
+|---|---|---|
+| A. Ин. 3:16 `propitium` | PASS | `reconciliatum` снят в `f6d27e9e`; независимо подтверждено OCR CO 47 (§12.2). Остаток MINOR: пересказ «без различия звания и племени» |
+| B. §4.3 блок 3 | PARTIAL / BLOCKER | Часть «Кальвин» → `TENSION` исправлена. Часть «Дорт ПРЯМО ОТВЕРГАЕТ (Rej. V, VI)» противоречит тексту Rej. V/VI, `01_` R24, `04_` §6 и собственному §7.3 файла (Девенант подписал Каноны) |
+| C. Девять строк | строки 1, 2, 3, 5 PASS по вердиктам; 4, 8 MAJOR (латынь и атрибуция, вердикт верен); 6, 7 MAJOR (вердикт и шаг); 9 MAJOR (латынь) | Дорт II.8 — `acquisivit`, а не `impetravit`. Каноны II.8–9 о ходатайстве молчат. Строка 6 — Дорт `NOT_ADDRESSED` → `COMPATIBLE`. Строка 7 — текстуальная зависимость II.5 от Кальвина не установлена |
+| D. Прокопенко / история / систематики | BLOCKER + MAJOR | «Вера не приобретена смертью» — пробел аргумента (`01_` R24, :281, :499), а не авторский тезис. Датировка гибрида «лишь с конца XVIII в.» противоречит самому файлу. Амиро в п. 3 противоречит `AGENT6_HISTORICAL_EXTENT_MATRIX` §6.3. SYS-11 / SYS-20 / SYS-24 → `secondary/unverified` |
+| Системно | BLOCKER | 10 латинских «цитат» (L1–L10) не совпадают с засвидетельствованным текстом (обратный перевод или контаминация); в L10 стоит ложная пометка «сверено по OCR» |
+
+### 12.2. Новые первичные чтения (OCR-слой CR; `LOCATOR_HOLD(visual)`)
+
+| ID | Место | Свидетель | Чтение |
+|---|---|---|---|
+| CO-2a | *Inst.* III.24.17 (1559), **CO 2:727** | `operaquaesupersu0030calv`, wrapper page 375; колонтитул «INSTITUTIO REL. CHRIST. 1559 … 728» (правая колонка = 728) | «…et quod salutem omnibus **indiscriminatim denuntiat**. Equidem dico optime convenire. Sic enim promittendo nihil aliud vult, quam omnibus expositam esse suam misericordiam… Ergo quum utrisque Dei misericordia per evangelium **offeratur**, fides est, hoc est Dei illuminatio, quae inter pios et impios distinguit» |
+| CO-2b | *Inst.* III.24.17, **CO 2:728** | там же, правая колонка | «Addunt, non esse discrimen Iudaei et gentilis, ideoque **indiscriminatim omnibus proponi Dei gratiam**: nempe modo admittant… Deum pro suo beneplacito vocare» — это **возражение оппонентов**, а не тезис Кальвина. Там же: «Deum ita solem suum producere super bonos et malos (Matth. 5, 45)» |
+| CO-2c | *Inst.* III.1.1 | `operaquaesupersu0030calv`, inside.php page 209 (номер колонки не установлен) | «quamdiu **extra nos est Christus** et ab eo sumus separati, quidquid in salutem humani generis passus est ac fecit, nobis esse inutile nulliusque momenti… ne salus per hunc parta nobis effluat» |
+| CO-47 | Ин. 3:16, традиционно **CO 47:64** | `operaquaesupersu0075calv`, wrapper page 52 (скан-лист 53); колонтитула в OCR нет, карта страниц confidence 29 | «Et universalem notam apposuit, tum ut **promiscue** omnes ad vitae participationem invitet, tum ut praecidat excusationem incredulis. … se tamen toti mundo **propitium** ostendit, quum sine exceptione omnes ad fidem Christi vocat… Patet enim omnibus Christus ac expositus est, solis tamen electis oculos Deus aperit, ut fide ipsum quaerant». Подтверждает `fathers/21_` §8.1 (F-51) третьим свидетелем; номер колонки остаётся `LOCATOR_HOLD` |
+
+**Следствия для моих узлов (без изменения вердиктов §0–§11):**
+- Английское «indiscriminately» в CTS передаёт у Кальвина разные слова: *indiscriminatim* (III.24.17), *promiscue* (Ин. 3:16) и *indifferenter* (Рим. 5:18).
+- Дорт II.5 по Schaff — «promiscue et indiscriminatim», по *Acta* 1620 — «promiscue & indifferenter» (`34_` S61 / S110).
+- Лексический аргумент о зависимости канона от Кальвина на этом материале не проходит.
+
+**HOLD без изменений** (§11.3); CO 2 и CO 47 добавлены в `LOCATOR_HOLD(visual)`. C-17 `TENSION` сохраняется.
