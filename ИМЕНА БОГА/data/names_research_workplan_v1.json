@@ -13,7 +13,7 @@
     "extensionRecords": 13,
     "contextAttestations": 105,
     "sourceRegisterEntries": 137,
-    "regressionTests": 327,
+    "regressionTests": 328,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
     "allSixCiChecks": "VERIFIED_PREDECESSOR_HEAD_2373fe7ffec2c7eb64931fe6de8eb5ea0ea78bf2_6_OF_6_TERMINAL_SUCCESS_743_OF_743_TESTS_W83; NEW_GEN14_EDITORIAL_HEAD_REQUIRES_EXACT_CI",
@@ -776,7 +776,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "2026-11-17 W84 Tier1 CH03 Gen14:22 author original SBL publisher PDF extracted English selected pp46–50 and DBG Rahlfs-Hanhart 2006 Greek verse read, variant and counterargument integrated with an explicit alternate Greek web-edition caveat. Now 137 source records, 105 attestations, 87 held claims, 75 relations, 743 original tests expected; all sources publication BLOCKED and 0 independent scientific/rights/Product approval. NG04 BHS critical apparatus / Göttingen Exodus1991 Apps I/II remains legal targeted access request; CH03 Ruth/Job SOURCE_GRAPH_HOLD and independent expert review remain. W84 exact HEAD CI pending; no main/merge/site.",
+  "nextAction": "2026-11-17 W84 Tier1 CH03 Gen14:22 author original SBL publisher PDF extracted English selected pp46–50 and DBG Rahlfs-Hanhart 2006 Greek verse read, variant and counterargument integrated with an explicit alternate Greek web-edition caveat. Now 137 source records, 105 attestations, 87 held claims, 75 relations, 744 tests expected (328 core + 26 plan + 319 provenance + 24 locus + 18 reader + 29 consumer); all sources publication BLOCKED and 0 independent scientific/rights/Product approval. NG04 BHS critical apparatus / Göttingen Exodus1991 Apps I/II remains legal targeted access request; CH03 Ruth/Job SOURCE_GRAPH_HOLD and independent expert review remain. W84 exact HEAD CI pending; no main/merge/site.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -1738,7 +1738,7 @@
       "stopRule": "No more than two active deliverables; two consecutive no-gain object searches end discovery; Research manuscript edit with explicit gaps can proceed, but no evidence/rights/scientific/Product approval is inferred from CI.",
       "decision": "CONTINUE_RESEARCH_ONLY_TWO_BOUNDED_TEXT_AND_EVIDENCE_TASKS_NOT_READY_TO_MERGE_OR_PUBLISH",
       "nextActionOwner": "ИМЕНА БОГА/data/names_research_workplan_v1.json",
-      "expectedTestsOnNextExactHead": 743
+      "expectedTestsOnNextExactHead": 744
     }
   },
   "systematicTheologyTriage": {

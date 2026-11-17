@@ -366,6 +366,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-RASHI-EXO6": "HISTORICAL_JEWISH_COMMENTARY",
     "SRC-NET-GEN14": "ATTRIBUTED_TRANSLATION_NOTES",
     "SRC-CARGILL-2019": "ATTRIBUTED_HISTORICAL_CRITICAL_HYPOTHESIS_ABSTRACT",
+    "SRC-MULLER-PAKKALA-2022-GEN14-22-P46-50": "ACADEMIC_GEN14_22_MT_LXX_PESHITTA_SP_1Q20_COMPETING_SHORT_LONG_HYPOTHESES_NOT_CRITICAL_MANUSCRIPT_COLLATION",
     "SRC-SBL-REVELATION": "GREEK_TEXT_SURFACE_ONLY",
     "SRC-TR1550-REV18": "HISTORIC_PRINTED_EDITION_SURFACE",
     "SRC-THGNT-REV216": "GREEK_TEXT_SURFACE_ONLY",
@@ -2838,6 +2839,25 @@ def validate_source_access(sources: dict) -> list[str]:
             errors.append(f"{prefix}: catalogue falsely promoted to full manuscript witness")
         if rid == "SRC-GREEVER-2020" and "יָהּ" not in str(source.get("forbiddenUse", "")):
             errors.append(f"{prefix}: Psalm 68:18 typology cannot prove Yah lexeme")
+        if rid == "SRC-MULLER-PAKKALA-2022-GEN14-22-P46-50":
+            # W84 research-review acceptance of a NEW scholarly secondary source.
+            # Do not relax the global reviewed-source inventory. Lock this source
+            # as publisher-authored extracted text ONLY, not ancient codex evidence.
+            if (source.get("url") != "https://www.sbl-site.org/wp-content/uploads/2024/11/9780884145110_txt.pdf"
+                    or source.get("evidenceClass") != "B1"
+                    or source.get("accessState") != "PARTIAL_OBJECT"
+                    or source.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
+                    or source.get("rightsState") != "PERMISSION_REQUIRED"
+                    or source.get("publicationState") != "BLOCKED"
+                    or source.get("criticalEditionCollated") is not False
+                    or set(source.get("holds", [])) != {"EVIDENCE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"}
+                    or "§3.1" not in str(source.get("locator", ""))
+                    or "pp46–50" not in str(source.get("locator", ""))
+                    or "cache miss" not in str(source.get("sourceObjectState", ""))
+                    or "not visually collated" not in str(source.get("sourceObjectState", ""))
+                    or "all Greek LXX" not in str(source.get("forbiddenUse", ""))
+                    or "1Q20" not in str(source.get("supportedUse", ""))):
+                errors.append(f"{prefix}: Muller/Pakkala Gen14:22 source scope or rights overclaimed")
         if rid == "SRC-CARGILL-2019":
             if source.get("accessState") != "CATALOG_ONLY" or source.get("locatorState") != "COARSE_LOCATOR_ONLY":
                 errors.append(f"{prefix}: Cargill chapter abstract cannot be promoted to collated manuscript evidence")

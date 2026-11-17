@@ -142,6 +142,25 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(any("official Q IIIF manifest falsely promoted" in e
                             for e in validate_source_access(sources)))
 
+    def test_muller_pakkala_gen14_22_source_scope_fails_closed(self) -> None:
+        # Newly accepted author study is not a physical LXX, SP, Peshitta
+        # or 1Q20 collation, nor image-rights/peer approval.
+        changes = (
+            ("accessState", "FULL_OBJECT_VERIFIED"),
+            ("rightsState", "PUBLICATION_ELIGIBLE"),
+            ("criticalEditionCollated", True),
+            ("sourceObjectState", "Original pages and ancient witnesses collated"),
+            ("forbiddenUse", ""),
+        )
+        for field, val in changes:
+            with self.subTest(field=field):
+                changed = copy.deepcopy(self.sources)
+                row = next(x for x in changed["records"]
+                           if x["id"] == "SRC-MULLER-PAKKALA-2022-GEN14-22-P46-50")
+                row[field] = val
+                self.assertTrue(any("Muller/Pakkala Gen14:22 source scope" in err
+                                    for err in validate_source_access(changed)))
+
     def test_current_research_corpora_pass_structure(self) -> None:
         self.assertEqual([], validate(self.baseline))
         self.assertEqual([], validate_extension(self.extension, self.baseline))
