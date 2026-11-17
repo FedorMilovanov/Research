@@ -162,7 +162,9 @@ Manton links Christ’s title “the beginning” to the renewed estate / new cr
 
 ## 5. Stephen Charnock — strongest V67 diagnostic addition
 
-### Primary locator
+### Цифровой ориентир — НЕ подтверждённый первичный локатор
+
+> **EVIDENCE / LOCATOR / PUBLICATION HOLD (Research authority, 17.11.2026):** Digital Puritan — доступная цифровая передача текста, но сама по себе не `A2` и не проверенная страница печатного Charnock/Nichol. Операционный статус этой несверенной передачи — `C` (поисковый источник), `COARSE_LOCATOR_ONLY`, `LOCATOR_HOLD` и `PUBLICATION_HOLD`. Авторский первоисточник может получить `A1` только после проверки конкретной редакции, полного контекста и точного локатора; право публикации проверяется отдельно. См. действующий [отдел Чарнока, том 00](../БИОГРАФИИ/Стивен%20Чарнок/00_README_AND_NAVIGATION.md); историческая классификация цифровых зеркал в томе 10 признана SUPERSEDED. Ни одно «article-ready» суждение ниже не является самостоятельным разрешением на публикацию.
 
 - Stephen Charnock, `Complete Works`, Vol. 3, Digital Puritan full text:  
   https://www.digitalpuritan.net/Digital%20Puritan%20Resources/Charnock%2C%20Stephen/The%20Complete%20Works%20of%20Stephen%20Charnock%20%28vol.3%29.txt.html
@@ -224,7 +226,9 @@ state of glory = no such remaining opposition
 
 Charnock’s discussion of habit is very important for the user’s earlier concern about patterns, childhood formation, and deeply rooted attachments. He argues that custom can deepen nature’s disorder; a person does not cure sinful habit by mere self-accustoming, because the heart itself needs overruling grace.
 
-### Article-ready paragraph
+### Исследовательский черновик абзаца — NOT QUOTE-SAFE / NOT PUBLICATION-READY
+
+> **Использование:** концептуальная рабочая формулировка автора V67, а не сверенная прямая цитата Чарнока. Нельзя копировать в читательскую статью как подтверждённое авторское свидетельство до точной проверки английского оригинала (том, беседа, страница и контекст) и отдельного разрешения на публикацию.
 
 > Charnock gives one of the cleanest pastoral formulations: the difference between nature and grace is not that the believer has no remaining corruption, but that grace has become the predominant living principle. In nature the corrupt habit rules; in grace a new principle rules and fights the opposite that still partly remains.
 
