@@ -32,6 +32,20 @@ CH03_UNMAPPED_MT_LOCI = (
      "YHWH_REBUKES_THREE_FRIENDS_NO_BLANKET_DENIAL_OF_EVERY_ELIPHAZ_SENTENCE"),
 )
 
+# Independently checked digital-MT verse excerpts, scoped editorial assertions only.
+# These READ-prefixed IDs are NOT registered CLM or ATT IDs; peer review is absent.
+CH03_PROVISIONAL_ASSERTIONS = (
+    ("READ-CH03-RUTH1-20-21", "Ruth 1:20–21", "וְשַׁדַּי הֵרַע לִי",
+     "Naomi speaks in first person about Shaddai as the cause of her suffering; she also mentions YHWH in the same lament. This is narrated human speech, not a direct divine self-designation.",
+     "Do not promote Naomi's grief statement to YHWH's self-description or a guaranteed conclusion that the narrator endorses Naomi's entire evaluation."),
+    ("READ-CH03-JOB5-17", "Job 5:17", "וּמוּסַר שַׁדַּי",
+     "Eliphaz, a human speaker in dialogue, speaks of Shaddai's discipline while referring to Eloah in the same verse. The narrator does not present this sentence as a direct oracle of YHWH.",
+     "Do not treat all of Eliphaz's instruction as automatically endorsed by God merely because it uses Shaddai or Eloah."),
+    ("READ-CH03-JOB42-7-9", "Job 42:7–9", "לֹא דִבַּרְתֶּם אֵלַי נְכוֹנָה",
+     "The narrator explicitly represents YHWH as rebuking Eliphaz and his two companions for their speech and commanding them to seek Job's intercession.",
+     "Do not infer universal logical negation of every earlier Eliphaz sentence; speaking to/about God and the rebuke's precise scope remain contested."),
+)
+
 ROLES = {
     "EXACT_RESEARCH_CLAIM_MATCH",
     "SECONDARY_ATTRIBUTED_NOT_IN_CLAIM_GRAPH",
@@ -182,6 +196,27 @@ def validate_reader_crosswalk(
                         or "Сеоу" not in appendix
                         or "SOURCE_GRAPH_HOLD" not in appendix):
                     errors.append("reader: CH03 Seow original journal review boundary missing")
+                provisional = [
+                    {
+                        "id": assertion_id,
+                        "locus": locus,
+                        "sourceId": "SRC-MT-MECHON",
+                        "hebrewExcerpt": excerpt,
+                        "boundedAssertion": statement,
+                        "prohibitedInference": boundary,
+                        "state": "PROVISIONAL_DIGITAL_MT_READER_ASSERTION_NOT_LOCKED_CLM_ATT",
+                        "publicationState": "BLOCKED",
+                    }
+                    for assertion_id, locus, excerpt, statement, boundary
+                    in CH03_PROVISIONAL_ASSERTIONS
+                ]
+                if row.get("provisionalReaderAssertions") != provisional:
+                    errors.append("reader: CH03 Ruth/Job provisional source-located assertions drifted")
+                if any(excerpt not in appendix for _, _, excerpt, _, _ in CH03_PROVISIONAL_ASSERTIONS):
+                    errors.append("reader: CH03 Ruth/Job exact original-script excerpt missing from editorial apparatus")
+                if any(r["locus"] != original["locus"]
+                       for r, original in zip(provisional, row.get("directTextLoci", []))):
+                    errors.append("reader: CH03 Ruth/Job provisional assertion to verse map drifted")
                 expected = [
                     {
                         "locus": locus,

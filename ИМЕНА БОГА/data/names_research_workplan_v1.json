@@ -16,7 +16,7 @@
     "regressionTests": 328,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "VERIFIED_PREDECESSOR_HEAD_7cf53d6ea333d09a2c35dcbb35dab31c90a93c9f_W87_6_OF_6_TERMINAL_SUCCESS_NAMES_748_OF_748_RUN_44157882873; W88_SEOW_JOURNAL_SOURCE_AND_READER_SECTION_HOLD_749_TESTS_EXPECTED_NEW_EXACT_HEAD_PENDING",
+    "allSixCiChecks": "VERIFIED_PREDECESSOR_HEAD_34f9c17107a8825d1c3542919cf2dfbda049239d_W88_6_OF_6_TERMINAL_SUCCESS_NAMES_749_OF_749_RUN_44181739840; W89_PROVISIONAL_RUTH_JOB_VERSE_ASSERTION_PIN_750_EXPECTED_EXACT_CI_PENDING",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 26,
@@ -64,11 +64,11 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "7cf53d6ea333d09a2c35dcbb35dab31c90a93c9f",
+    "lastConfirmedAllSixChecksSha": "34f9c17107a8825d1c3542919cf2dfbda049239d",
     "readerChapterCount": 3,
     "readerSectionCrosswalkCount": 32,
     "readerCrosswalkLinkedDistinctClaims": 25,
-    "readerCrosswalkIndependentAdversarialTests": 23
+    "readerCrosswalkIndependentAdversarialTests": 24
   },
   "allowedStatuses": [
     "DONE",
@@ -776,7 +776,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "2026-11-18 W88 CH03 original publisher scholarly counterargument: Seow 2026 Interpretation DOI 10.1177/00209643251410214 original HTML Divine Anger and Intercession selected sections directly read; competing interpretations Job42:7–10 attributed and compared against printed digital Mechon-Mamre Job5:17/42:7–9, without original critical manuscript collation. One new SRC B1/PARTIAL_OBJECT/RIGHTS_HOLD/BLOCKED (138 total), reader apparatus source-specific note and existing CH03 section crosswalk supplementary link; 1 new reader mutation regression => 749 expected (328+26+319+24+23+29), W88 exact CI PENDING. W87 verified 7cf53d6ea333d09a2c35dcbb35dab31c90a93c9f 6/6 and 748/748. CH03 main reader remains 3240 words. Original locked 105 ATT, 87 CLM, 75 semantic relations untouched; Ruth/Job standalone claim SOURCE_GRAPH_HOLD remains. NG04 original BHS Ex17:16 lower apparatus, Göttingen Ex1991 AppI/II and Harley f1r independent paleography, external scholarly review, rights and Product still HOLD. Same Draft PR379, no main/site writes.",
+  "nextAction": "2026-11-18 W89 precise CH03 provisional verse-level claim trace: source-located original short Hebrew Ruth1:21 Shaddai, Job5:17 Shaddai/Eloah human Eliphaz, Job42:7–9 YHWH divine judgment, with bounded and forbidden inferences in existing reader crosswalk, 3 READ-prefixed provisionalReaderAssertions and interpretive notes only in chapter03 scholarly appendix. These are NOT CLM or ATT in original locked scientific graph: Ruth/Job standalone independent CLM/ATT source-graph SOURCE_GRAPH_HOLD stays. Add one fail-closed mutation regression (reader 24, expected all Names 750 = 328+26+319+24+24+29) and original Hebrew excerpt guard. Prior W88 34f9c17107a8825d1c3542919cf2dfbda049239d exact 6/6 GitHub Actions SUCCESS and 749/749 Names run 44181739840; W89 exact head CI PENDING. 138 SRC all publication BLOCKED, original 105 ATT/87 CLM/75 relations unchanged, 3 CH pilots main reader prose unchanged; no critical codex apparatus approval. NG04 original BHS lower Ex17:16 and Göttingen 1991 Exodus App I/II plus Harley independent palaeographer not yet acquired; independent philological/theological and rights/Product approvals zero. Same single draft PR #379, no main merge, site or new research branches.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -858,7 +858,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-18",
-    "planStatus": "W88 2026-11-18: directly read selected original publisher SAGE Seow 2026 scholarly article sections Divine Anger/Intercession and attributed alternate readings of Job42:7–10 in CH03 editorial apparatus. New B1 PARTIAL_OBJECT/RIGHTS_HOLD/BLOCKED source registered, total 138, claim crosswalk supplement and one negative reader regression added; profile 749 expected. Previous W87 6/6 Actions / 748/748 tests verified, new W88 exact HEAD CI pending. Reader body unchanged, 105 ATT/87 CLM/75 relations locked, Ruth/Job SOURCE_GRAPH_HOLD, NG04 apparatus/Harley, external reviews, rights and Product still blocked.",
+    "planStatus": "W89 2026-11-18: in existing CH03 source crosswalk converted 3 checked digital MT Ruth1:20–21 / Job5:17 / Job42:7–9 references into three READ-prefixed provisionalReaderAssertions, each with original-script excerpt, local bounded statement and explicit invalid inference. Existing CH03 editorial apparatus explains all three without changing 3240-word reader text. One fail-closed reader negative test adds mutations on assertion ID, Hebrew, source, claim boundary, state/publication; reader suite 24 and Names 750 EXPECTED pending exact CI. W88 34f9c17107a8825d1c3542919cf2dfbda049239d verified 6/6 749/749. These are not registered locked ATT/CLM: original 105 ATT / 87 held CLM / 75 relations unchanged, source graph scholarly HOLD preserved; 138 SRC blocked, no external review/rights/Product acceptance or BHS/Göttingen original critical apparatus.",
     "workCompleted": [
       "W82 2026-11-17 direct original 4982×6379-pixel photo Or4445 f59v, rightmost column last line, reads על כסיה מלחמה as JOINED original ink, correction of prior wrong machine reading, image source and in-place guards/test updated, no new physical source or rights/critical apparatus claims.",
       "W81 2026-11-17: first true browser image-backed inspection of OPenn original Harley MS5683 fol1r JPG 12967_0010.jpg at 4840x6636 native pixels, whole surface and specified source-coordinate crops. Historic W80 'JPG unavailable' limitation now resolved. Present physical original ink and repair damage directly observed; contested original word boundary remains unresolved pending controlled second philologist review; no machine/OCR textual substitute, no new ancient witness. Existing source record and fail-closed regression amended in place; no extra sources or test count.",
@@ -1020,7 +1020,7 @@
       "2026-11-10 WAVE24 image-acquisition source audit: via live browser found Brill scholarly reader for 4Q72 urn:cts:ancJewLit:dss.4q72.dsbo-eng2:f1i-f6, directly observed no-right-credentials page; secondary request HTTP403; version/type unverified as image so not called photo URL. Publisher image access guide says photos supplied from PAM/IAA, but no actual picture pixels loaded. DJD XV 1997 21.4MB third-party PDF web screenshot error 400 TOO_LARGE, live second browser only filename; full plate content/presence in PDF UNKNOWN. Open Dead Sea explicit licensing states its modern research text data CC BY-NC 4.0, original photos only outbound to IAA or Israel Museum, no derived reprint rights. Existing Tov source row and dossier16 updated, 101 records/289 tests unchanged, NG10/rights/Product HOLD."
     ],
     "stillOpen": [
-      "W88: new original-publisher scholarly Seow2026 Job42 article supplies attributed competing readings but not printed Hebrew critical apparatus or independent manuscript autopsy; Ruth/Job original 105 ATT/87 CLM graph edges missing, SOURCE_GRAPH_HOLD persists. New W88 exact 749 tests pending; predecessor W87 6/6 success and 748/748. NG04 original BHS Exodus17:16 lower notes and Göttingen Exodus1991 AppI/II plus independent Harley reading unresolved; independent theological/philological review and rights/Product HOLD.",
+      "W89: 3 provisional source-located READ assertions now document Ruth/Job verse text and negative inference, but none is a standalone accepted CLM or ATT in the original 105/87 graph, SOURCE_GRAPH_HOLD remains. W88 exact CI 6/6 green and 749/749 confirmed, W89 exact 750 expected pending. NG04 original BHS Ex17:16 lower apparatus / Göttingen Exodus1991 App I/II and independent Harley human paleography missing. Independent scholarly review, rights and Product release still blocked.",
       "Authorized 4Q72 original manuscript photo from Brill or IAA with exact editor frg55ii Jer33:16–20 physical image match; Brill reader denies credentials HTTP403, no photo image/URN verified.",
       "DJD XV actual PDF photographic-plate presence not verified; Tov 1991 OBO109 I–VII ZORA Anubis blocked; 1997 XXX–XXXVI original raster plates not viewed.",
       "IAA B360205 plate245 Frag6 vs DJD frg55ii historical frame and glyph correspondence unproven; initial יהוה צד only edited transcript, [קנו] restored, no independent paleo-autopsy.",
@@ -1102,8 +1102,8 @@
         "acceptance": "One continuous Russian reader chapter distinguishing Elohim morphological number and referents, El Elyon within Gen14 narrative, direct self-declaration El Shaddai and Isaac blessing, disputed etymology with bounded competing academic explanation and separate scholarly-rights HOLD appendix.",
         "status": "ACTIVE_BOUNDED_SOURCE_GAP_TRIAGE_INTERNAL_ONLY_EXTERNAL_SCHOLARLY_REVIEW_PENDING_NOT_EDITORIAL_READY",
         "file": "ИМЕНА БОГА/reader/CH-PILOT-03_EL_ELOHIM_SHADDAI.md",
-        "verification": "Research reader chapter 3240 whitespace-separated words + research/editorial apparatus; Wave51 condensed Deir Alla from 2651-word embedded main excursion to 309-word bounded narrative, preserving former complete research text and two alternative images in internal scholarly appendix, keeping original CC0 museum photo in reading. Wave52 adds section-claim-source crosswalk for 32 headings and 25 distinct claim IDs with 20 W86 reader negative regressions. Existing two internal adversarial Hebrew-source passes remain exactly two, not an external review; no independent scientific, rights or Product acceptance. W74 original MT direct Ruth1:20–21, Job5:17/42:7–9 editorial reassessment committed in CH03; original 105 attestation IDs untouched, source graph gap disclosed in crosswalk; first 3 pilot chapters unchanged, no reviewer approval. W84 original publisher scholarly PDF extracted author English text Müller/Pakkala 2022 §3.1 printed pp46–50 read with omission counterargument; independent DBG Rahlfs–Hanhart Greek verse checked and differing other Greek online reading identified. CH03 reader and appendix revised. NOT physical ancient manuscript collation, no SBL print screenshot, no external scholarly review or rights approval. W87 audit: three existing Ruth/Job digital MT URLs now checked within their own chapter section (not anywhere in reading); foreign `directTextLoci` rejected. Two additional adversarial test methods bring reader suite to 22 after own W87 CI. No standalone Ruth/Job ATT/CLM, independent original critical manuscript collation, peer review or rights/Product grant. W88: Seow2026 Interpretation original publisher HTML sections Divine Anger/Intercession independently inspected; author alternatives and textual emendations attributed in editorial apparatus only, source B1/PARTIAL_OBJECT/BLOCKED, not original critical witness or external independent review. Ruth/Job source graph remains HOLD.",
-        "nextReview": "W88: CH03 Naomi/Eliphaz/YHWH speech roles and 3 printed Hebrew MT source URLs remain section-local, now with source-registered Seow2026 competing Job42:7–10 scholarly explanation in editorial appendix. W88 exact 749-test CI required, source-graph original 105 ATT / 87 CLM standalone Ruth/Job edges remain absent, external textual/philological review unresolved. Gen14:22 disputed LXX edition reading remains scoped, Gill/Berkhof/Bavinck belong CH01. No rights, printed critical apparatus completion or Product grant."
+        "verification": "Research reader chapter 3240 whitespace-separated words + research/editorial apparatus; Wave51 condensed Deir Alla from 2651-word embedded main excursion to 309-word bounded narrative, preserving former complete research text and two alternative images in internal scholarly appendix, keeping original CC0 museum photo in reading. Wave52 adds section-claim-source crosswalk for 32 headings and 25 distinct claim IDs with 20 W86 reader negative regressions. Existing two internal adversarial Hebrew-source passes remain exactly two, not an external review; no independent scientific, rights or Product acceptance. W74 original MT direct Ruth1:20–21, Job5:17/42:7–9 editorial reassessment committed in CH03; original 105 attestation IDs untouched, source graph gap disclosed in crosswalk; first 3 pilot chapters unchanged, no reviewer approval. W84 original publisher scholarly PDF extracted author English text Müller/Pakkala 2022 §3.1 printed pp46–50 read with omission counterargument; independent DBG Rahlfs–Hanhart Greek verse checked and differing other Greek online reading identified. CH03 reader and appendix revised. NOT physical ancient manuscript collation, no SBL print screenshot, no external scholarly review or rights approval. W87 audit: three existing Ruth/Job digital MT URLs now checked within their own chapter section (not anywhere in reading); foreign `directTextLoci` rejected. Two additional adversarial test methods bring reader suite to 22 after own W87 CI. No standalone Ruth/Job ATT/CLM, independent original critical manuscript collation, peer review or rights/Product grant. W88: Seow2026 Interpretation original publisher HTML sections Divine Anger/Intercession independently inspected; author alternatives and textual emendations attributed in editorial apparatus only, source B1/PARTIAL_OBJECT/BLOCKED, not original critical witness or external independent review. Ruth/Job source graph remains HOLD. W89: three READ-prefixed provisional source-located editorial assertions in existing section crosswalk with one exact modern digital MT Hebrew excerpt, bounded contextual claim and negative inference each; one independent negative reader regression method. No accepted CLM or ATT and no external human scholarly review.",
+        "nextReview": "W89: CH03 now records three verse-specific provisional READ claims with sourceId, Hebrew excerpt, correct Naomi/Eliphaz/YHWH speech scope and forbidden interpretive extensions. Existing 105 ATT/87 CLM locked graph still has zero standalone Ruth/Job CLM-ATT edges, SOURCE_GRAPH_HOLD remains, and original printed/critical editions and independent scholar review are required for acceptance. No change to chapter's 3240-word reader text, rights and Product unchanged. NG04 critical apparatus and Harley outside this active deliverable."
       },
       {
         "id": "NG-04",
@@ -1666,8 +1666,8 @@
       "verifiedReaderChapters": 3,
       "tracedReaderSections": 32,
       "selectedUniqueResearchClaims": 25,
-      "tests": 23,
-      "crosswalkState": "SECTION_LOCAL_MT_RUTH_JOB_LINKS_WITH_ATTRIBUTED_SEOW2026_ACADEMIC_ALTERNATIVE_STILL_SOURCE_GRAPH_HOLD",
+      "tests": 24,
+      "crosswalkState": "THREE_VERSE_LEVEL_DIGITAL_MT_PROVISIONAL_READER_ASSERTIONS_WITH_HEBREW_SCOPE_AND_NEGATIVE_BOUNDARIES_OUTSIDE_LOCKED_CLM_ATT_SOURCE_GRAPH_HOLD",
       "knownGaps": [
         "CH01 Gill/Berkhof/Bavinck interpreted theology not source-ID-mapped in main claim registry",
         "Ruth1:20–21, Job5:17, Job42:7–9 CH03 exact edited MT locus/source role URLs now separately traced with negative regressions; still outside standalone 105 ATT / 87 CLM registry, SOURCE_GRAPH_HOLD, external review unresolved.",
@@ -1680,9 +1680,9 @@
     "readerResearchAppendixPreservation20261111": "CH03 native 2651-word Deir Alla section moved intact except original CC0 image block retained in reader, 30 source hyperlinks and 2 other images preserved in editorial appendix. Scientific facts, conflicting reconstruction and rights remain held.",
     "selfPlanAudit": {
       "auditDate": "2026-11-18",
-      "checkedPredecessorHeadSha": "7cf53d6ea333d09a2c35dcbb35dab31c90a93c9f",
+      "checkedPredecessorHeadSha": "34f9c17107a8825d1c3542919cf2dfbda049239d",
       "verifiedPredecessorWorkflows": 6,
-      "verifiedPredecessorNamesTests": 748,
+      "verifiedPredecessorNamesTests": 749,
       "scope": "Only existing Research PR379 and canonical JSON/master; no Product/site/rights changes",
       "results": [
         {
@@ -1690,7 +1690,7 @@
           "severity": "P0",
           "result": "CORRECTED_THIS_AUDIT",
           "finding": "W70 nextAction and W69 CI as CURRENT despite W73",
-          "evidence": "W87 exact 7cf53d6ea333d09a2c35dcbb35dab31c90a93c9f: 6/6 terminal SUCCESS, Names #44157882873 = 748/748 (328+26+319+24+22+29). W88 novel Seow2026 source / reader apparatus and negative test require independent exact-HEAD CI 749 expected."
+          "evidence": "W88 exact 34f9c17107a8825d1c3542919cf2dfbda049239d: 6/6 terminal SUCCESS, Names workflow #44181739840 749/749 (328+26+319+24+23+29). W89 adds three scope-bounded original-script provisional READ claims without original locked ATT/CLM; new reader regression: 750 tests expected, independent exact CI required."
         },
         {
           "id": "SPA-02",
@@ -1738,7 +1738,7 @@
       "stopRule": "No more than two active deliverables; two consecutive no-gain object searches end discovery; Research manuscript edit with explicit gaps can proceed, but no evidence/rights/scientific/Product approval is inferred from CI.",
       "decision": "CONTINUE_RESEARCH_ONLY_TWO_BOUNDED_TEXT_AND_EVIDENCE_TASKS_NOT_READY_TO_MERGE_OR_PUBLISH",
       "nextActionOwner": "ИМЕНА БОГА/data/names_research_workplan_v1.json",
-      "expectedTestsOnNextExactHead": 749
+      "expectedTestsOnNextExactHead": 750
     }
   },
   "systematicTheologyTriage": {

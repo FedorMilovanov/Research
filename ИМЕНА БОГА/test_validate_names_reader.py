@@ -182,6 +182,35 @@ class ReaderCrosswalkTests(unittest.TestCase):
                 issues = self.check(registry=registry, sources=sources, readers=readers)
                 self.assertTrue(any("CH03 Seow" in issue for issue in issues), issues)
 
+    def test_provisional_ruth_job_assertions_are_exact_held_digital_loci_not_new_claims(self):
+        mutations = (
+            (0, "id", "CLM-FALSELY-APPROVED-RUTH"),
+            (0, "sourceId", "SRC-UNREGISTERED"),
+            (0, "hebrewExcerpt", "שַׁדַּי"),
+            (0, "prohibitedInference", "The narrator endorses all of Naomi's claims."),
+            (1, "boundedAssertion", "YHWH personally speaks the warning in Job 5:17."),
+            (1, "locus", "Job 4:17"),
+            (2, "state", "INDEPENDENT_SCHOLAR_APPROVED"),
+            (2, "publicationState", "PROMOTE"),
+        )
+        for i, field, fake in mutations:
+            with self.subTest(index=i, field=field):
+                change = copy.deepcopy(self.registry)
+                change["chapters"][2]["sections"][9]["provisionalReaderAssertions"][i][field] = fake
+                self.assertTrue(
+                    any("provisional source-located assertions drifted" in e
+                        for e in self.check(registry=change))
+                )
+        path = EXPECTED_READER_FILES["CH-PILOT-03"]
+        replaced = dict(self.readers)
+        replaced[path] = replaced[path].replace(
+            "`לֹא דִבַּרְתֶּם אֵלַי נְכוֹנָה`",
+            "`השדים`", 1)
+        self.assertTrue(
+            any("exact original-script excerpt missing" in e
+                for e in self.check(readers=replaced))
+        )
+
     def test_secondary_theology_requires_explicit_unclosed_boundary(self):
         changed = copy.deepcopy(self.registry)
         changed["chapters"][0]["sections"][3]["unresolvedArgumentBoundary"] = ""

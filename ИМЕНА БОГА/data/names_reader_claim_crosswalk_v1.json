@@ -391,10 +391,42 @@
               "claimGraphStatus": "NO_STANDALONE_LOCKED_ATT_OR_CLM"
             }
           ],
+          "provisionalReaderAssertions": [
+            {
+              "id": "READ-CH03-RUTH1-20-21",
+              "locus": "Ruth 1:20–21",
+              "sourceId": "SRC-MT-MECHON",
+              "hebrewExcerpt": "וְשַׁדַּי הֵרַע לִי",
+              "boundedAssertion": "Naomi speaks in first person about Shaddai as the cause of her suffering; she also mentions YHWH in the same lament. This is narrated human speech, not a direct divine self-designation.",
+              "prohibitedInference": "Do not promote Naomi's grief statement to YHWH's self-description or a guaranteed conclusion that the narrator endorses Naomi's entire evaluation.",
+              "state": "PROVISIONAL_DIGITAL_MT_READER_ASSERTION_NOT_LOCKED_CLM_ATT",
+              "publicationState": "BLOCKED"
+            },
+            {
+              "id": "READ-CH03-JOB5-17",
+              "locus": "Job 5:17",
+              "sourceId": "SRC-MT-MECHON",
+              "hebrewExcerpt": "וּמוּסַר שַׁדַּי",
+              "boundedAssertion": "Eliphaz, a human speaker in dialogue, speaks of Shaddai's discipline while referring to Eloah in the same verse. The narrator does not present this sentence as a direct oracle of YHWH.",
+              "prohibitedInference": "Do not treat all of Eliphaz's instruction as automatically endorsed by God merely because it uses Shaddai or Eloah.",
+              "state": "PROVISIONAL_DIGITAL_MT_READER_ASSERTION_NOT_LOCKED_CLM_ATT",
+              "publicationState": "BLOCKED"
+            },
+            {
+              "id": "READ-CH03-JOB42-7-9",
+              "locus": "Job 42:7–9",
+              "sourceId": "SRC-MT-MECHON",
+              "hebrewExcerpt": "לֹא דִבַּרְתֶּם אֵלַי נְכוֹנָה",
+              "boundedAssertion": "The narrator explicitly represents YHWH as rebuking Eliphaz and his two companions for their speech and commanding them to seek Job's intercession.",
+              "prohibitedInference": "Do not infer universal logical negation of every earlier Eliphaz sentence; speaking to/about God and the rebuke's precise scope remain contested.",
+              "state": "PROVISIONAL_DIGITAL_MT_READER_ASSERTION_NOT_LOCKED_CLM_ATT",
+              "publicationState": "BLOCKED"
+            }
+          ],
           "supplementalSourceIds": [
             "SRC-SEOW-INTERPRETATION-2026-JOB42-7-10-DIVINE-ANGER"
           ],
-          "unresolvedArgumentBoundary": "W86: Ruth 1:20–21, Job 5:17 and Job 42:7–9 original modern EDITED MT digital Hebrew verse surfaces directly compared with chapter: Naomi grief is not divine self-declaration, Eliphaz counsel is not divine speech, and YHWH rebuke in Job42 does not automatically negate every sentence Eliphaz ever spoke. Three source-backed directTextLoci are verse-locator editorial evidence only (B1/PARTIAL_OBJECT/BLOCKED, no critical apparatus). Source graph remains SOURCE_GRAPH_HOLD: ZERO standalone registered ATT or CLM entries for Ruth/Job in locked original 105/87 baseline. Does not certify manuscript, independent scholarly verdict, rights or Product release."
+          "unresolvedArgumentBoundary": "W89: three verse-specific PROVISIONAL_DIGITAL_MT_READER_ASSERTION_NOT_LOCKED_CLM_ATT nodes now stage sourceId, short Hebrew excerpt, bounded claim and prohibited inference in existing reader crosswalk, alongside directTextLoci and attributed Seow 2026. NOT 105 ATT / 87 CLM original locked claim graph, NO independent scholarly acceptance or critical apparatus/codex autopsy. SOURCE_GRAPH_HOLD persists for missing standalone registered ATT and CLM and independent source review; rights and Product blocked."
         },
         {
           "heading": "От Аврама к Моисею",
@@ -438,7 +470,7 @@
   ],
   "knownHolds": [
     "Secondary dogmatic sources Gill/Berkhof/Bavinck in CH01 have no individual CLM/SRC crosswalk; their chapter apparatus is source-list evidence, not certification.",
-    "CH03 Ruth1:20–21 and Job5:17 / Job42:7–9 are now verse-level traced to verified edited MT digital chapter URLs in directTextLoci, but still have no standalone ATT or CLM records in locked original 105/87 source graph: SOURCE_GRAPH_HOLD, not critical collation, scholar review or publication approval.",
+    "CH03 Ruth1:20–21 / Job5:17 / Job42:7–9 have 3 directTextLoci plus 3 bounded provisionalReaderAssertions on edited MT, with Hebrew snippets and explicit negative inferences; NO standalone original 105 ATT / 87 CLM. SOURCE_GRAPH_HOLD, independent philology, critical apparati and rights/Product remain.",
     "Reader CH03 Shaddai and Deir Alla subarguments rely on explicitly disputed secondary scientific models and incomplete originals.",
     "Reader text does not provide sentence-by-sentence tracing; this section-based map is the first auditable layer, not a publication sign-off.",
     "Yeivin and Breuer original printed apparatus and other critical manuscripts plus rights/scholarly peer-review still missing."
