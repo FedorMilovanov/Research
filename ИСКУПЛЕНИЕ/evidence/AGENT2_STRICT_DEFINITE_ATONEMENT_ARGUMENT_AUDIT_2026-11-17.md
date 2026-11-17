@@ -875,3 +875,17 @@ HOLD без изменений: CO 49:100, CO 45:706, `PRINT_IMAGE_HOLD`, пра
 **Вердикты S1–S5 не меняются.** Кирилл и Оранж к локаторам Кальвина отношения не имеют.
 
 **HOLD после раунда 74:** как в §21–§24; добавлено `LOCATOR_HOLD` (колонка PG 33 для XIII.4).
+
+## 26. Раунд 75 (2026-11-17): `01_` §2.3 — Ходж и Сперджен; `22_` п. 39
+
+Подробности — `34_` §4.158 (Q154), S173.
+
+| # | Место | Итог |
+|---|---|---|
+| 1 | `01_` §2.3, Ходж | `PARTIAL`: Амиро подробно разобран в ST II, гл. I §4 (321–324), а не в гл. VIII; опущены «There is a sense… He died for all» (546) и «Augustinians do not deny that Christ died for all men» (558) |
+| 2 | `01_` §2.3, Сперджен | `CONFLATION`: «смерть за людей в аду… monstrous iniquity» — «A Defense of Calvinism» (*Autobiography*, т. 1), а не № 566; в № 566 — «in that other sense… a propitiation for the sins of the whole world» |
+| 3 | `22_` п. 39 | `PARTIAL` («Фокус»: подробный разбор Амиро — не в гл. VIII) |
+
+**Вердикты S1–S5 не меняются.**
+
+**HOLD после раунда 75:** как в §25; факсимиле *Autobiography* т. 1 / MTP 10 — A2.
