@@ -67,6 +67,7 @@
 15. **Second Helvetic Confession (1566).** Confessio Helvetica Posterior, Cap. XI, XVII.
     - *Критическое издание:* Schaff P. *The Creeds of Christendom*, Vol. 3, pp. 237–306.
     - *Фокус:* *Solus Christus*: Христос — единственный Спаситель мира в противовес римским заслугам и святым.
+    - *Поправка 2026-11-17 (раунд 72; `34_` §4.155, S170; аудит AGENT 2 §23) — `LOCATOR_ERROR` (незначительная).* По оглавлению Schaff, *Creeds of Christendom* III (New York: Harper, 1877; IA `creedschristendo03scha`, обёртки 10–11) *Confessio Helvetica posterior* начинается на **с. 233**, Гейдельбергский катехизис — на с. 307. Верно: **сс. 233–306**, а не 237–306. Тексты гл. XI и XVII в этом раунде не перечитывались; строка «Фокус» не проверялась.
 16. **Thirty-Nine Articles of Religion (1571).** Art. XVII (Of Predestination and Election), Art. XXXI.
     - *Издание:* Church of England; Schaff, Vol. 3, pp. 486–516.
     - *Фокус:* Безусловное избрание святых к вечной жизни во Христе.
@@ -98,6 +99,7 @@
 23. **John Davenant.** *Dissertatio de Morte Christi* (1627, publ. 1650).
     - *Издание:* Cambridge; transl. J. Allport, London: Hamilton, Adams, 1832.
     - *Фокус:* Английский девенантизм: всеобщая достаточность завета при суверенном избрании.
+    - *Поправка 2026-11-17 (раунд 72; `34_` §4.155, S170; аудит AGENT 2 §23) — издание Allport подтверждено; дата «1627» не подтверждена (`DATE_HOLD`).* Титульный лист т. II (IA `anexpositionepi05unkngoog`, лист 7): «An Exposition of the Epistle of St. Paul to the Colossians… translated from the original Latin… by Josiah Allport… To the whole is added, a translation of Dissertatio de Morte Christi by the same prelate. Vol. II. London: Hamilton, Adams, and Co.; Birmingham: Beilby, Knott, and Beilby. MDCCCXXXII». Значит, **1832** верно; метаданные IA (1831) ошибочны. Примечание переводчика (лист 319) называет издание in folio **1650** «together with the Dissertatio de Predestinatione et Reprobatione» и отдельное издание in 12° 1683 (со ссылкой на «Life… Vol. I. p. xlviii»). Года «1627» как даты написания в т. II нет: поиск по «1627» дал только OCR-сбой в примечании о Баньесе. До сверки с т. I или с изданием 1650 г. дата остаётся `DATE_HOLD`. Место издания «Cambridge» в этом раунде не проверялось.
 24. **James Ussher.** *The True Intent and Extent of Christ's Death and Satisfaction upon the Cross* (1617).
     - *Издание:* *The Whole Works of the Most Rev. James Ussher*, Vol. 12, Dublin, 1864, pp. 559–596.
     - *Фокус:* Двойной аспект: достаточность для мира, действенность для Церкви.
@@ -131,9 +133,23 @@
 31. **Jonathan Edwards.** *The Freedom of the Will* (1754), Part IV, Section XII.
     - *Критическое издание:* Yale Edition, Vol. 1 (ed. Paul Ramsey).
     - *Фокус:* Опровержение Д. Уитби; необходимость конкретного замысла спасения.
+    - *Поправка 2026-11-17 (раунд 72; `34_` §4.155, S170; аудит AGENT 2 §23) — `LOCATOR_ERROR` (раздел).* Фраза о смерти Христа «in some sense… for all» находится не в ч. IV, разд. XII, а в **«Conclusion»** — после разд. XIII. Проверено по изданию Andover: Gould, Newman & Saxton, 1840 (IA `inquiryintomoder00edwa`, `inside.php`, A2 — OCR):
+      - разд. XII («Of a supposed tendency of these principles to atheism…») — лист 390 (≈ с. 384);
+      - разд. XIII — с. 388 (по оглавлению);
+      - «CONCLUSION» — лист 404 (≈ с. 398);
+      - цитата — лист 411 (≈ с. 405): «From these things it will inevitably follow, that however Christ in some sense may be said to die for all, and to redeem all visible Christians, yea, the whole world, by his death; yet there must be something particular in the design of his death, with respect to such as he intended should actually be saved thereby».
+      - Та же фраза есть в изданиях 1768, 1775 и 1790 (глобальный полнотекстовый поиск IA).
+      - В `17_` §12.4 локус уже указан верно («Conclusion», сс. 338–339 другой печати).
+      - Это собственная уступительная оговорка Эдвардса («in some sense»), а не «гипотетический аргумент оппонента». См. поправки к `01_` (§2.3, пример с Эдвардсом) и `17_` §2.1.
 32. **Jonathan Edwards.** *Miscellaneous Observations on Important Theological Subjects: Concerning the Satisfaction for Sin* (1793).
     - *Издание:* *The Works of Jonathan Edwards*, Vol. 2. Edinburgh: Banner of Truth, 1974.
     - *Фокус:* Невозможность двойного правосудия; крест не может быть бесплодным.
+    - *Поправка 2026-11-17 (раунд 72; `34_` §4.155, S170; аудит AGENT 2 §23) — `ATTRIBUTION_ERROR` (сочинение); «Фокус» — `QUOTE_RISK`.* Глава о сатисфакции находится не в *Miscellaneous Observations on Important Theological Subjects* (Edinburgh, 1793), а в *Remarks on Important Theological Controversies* (Edinburgh, 1796). Издание 1796 г. — IA `bim_eighteenth-century_remarks-on-important-the_edwards-jonathan_1796`, A2 (OCR):
+      - оглавление (лист 3): **гл. VI** «Of the necessity and reasonableness of the Christian doctrine of satisfaction for sin», за ней гл. VII «Of faith»;
+      - заголовок главы «CONCERNING THE NECESSITY AND REASONABLENESS OF THE CHRISTIAN DOCTRINE OF SATISFACTION FOR SIN» — лист 343 (≈ с. 339, по оглавлению); § 1: «Justice requires that sin be punished, because sin deserves punishment».
+      - Полнотекстовый поиск IA по фразе «satisfaction for sin» в изданиях 1790–1800 гг. находит её только в *Remarks* (1796) и *History of Redemption* (1793); в *Miscellaneous Observations* (1793) — нет.
+      - «Фокус» («невозможность двойного правосудия») повторяет контрцитату, которая в `17_` §2.1 (пометка волны 18) уже имеет статус `QUOTE_RISK / LOCATOR_HOLD`. В OCR издания 1796 г. слово «twice» встречается только на листах 30 и 135, то есть до гл. VI. Пока глава не прочитана целиком, довод о «двойной уплате» по этому пункту Эдвардсу не приписывать.
+      - Т. 2 издания Banner of Truth (1974) в этом раунде не открывался.
 33. **John Gill.** *The Cause of God and Truth* (1735–1738); *A Body of Doctrinal Divinity* (1769), Book V, Ch. 5.
     - *Издание:* London; repr. Grand Rapids: Baker, 1980.
     - *Фокус:* Партикулярный баптистский манифест: опровержение ремонстрантской интерпретации универсалистских текстов.
@@ -977,6 +993,11 @@
     - 42ea. *Дополнение 2026-11-17 (раунд 69; `34_` §4.152, S167).* **Сверка колонок CO по сканам IA серии `operaquaesupersu00NNcalv`.** CO 52:268 (1 Тим. 2:4; `operaquaesupersu0080calv`, обёртка 145, «268» над правой колонкой): «nullum mundi vel populum, vel ordinem a salute excludi… At de hominum generibus, non singulis personis, sermo est» — **подтверждено**. CO 55:310 (1 Ин. 2:2; `operaquaesupersu0083calv`, обёртка 166, «310» над правой колонкой): всё толкование 2:2 в этой колонке — колонка **откалибрована**. CO 45:711 (Мф. 26:28) подтверждено по **второму, независимому экземпляру** (`operaquaesupersu0000calv`, обёртка 375, «112» = 712 над правой колонкой, фраза — в левой). CO 9:523–524: фразы «pro solis electis passus est» **нет**, стоит «Christum omnibus generaliter corpus suum et sanguinem offerre» → п. 11 и строка № 11 таблицы — `SUPERSEDED` / `MISATTRIBUTION_PROBABLE`. `operaquaesupersu0050calv_c6j3` — это CO 50 («Vol. L», Гал. 1); CO 49 на IA нет, CO 49:100 — `HOLD`. Класс A2 (OCR); `PRINT_IMAGE_HOLD`; `LOCATOR_HOLD(visual)` для CO 45:711.
     - 42eb. *Дополнение 2026-11-17 (раунд 70; `34_` §4.153, S168).* **Ревизия верхних пунктов реестра и итоговой матрицы.** Поправки внесены под пп. 1 (Афанасий: ἀντὶ/ὑπὲρ πάντων, τὸ ὀφειλόμενον — 8.4; 9.1–2; 20.2, 20.6; 37.7), 3 (Августин: в гл. 7 нет ограничения крови), 7 (Готшалк: формула «pro solis electis sanguinem fudit» — `QUOTE_UNVERIFIED`; суть — через Гинкмара у Ашера, *Works* IV, с. 44), 14 (в. 37: «des ganzen menschlichen Geschlechts»), 21 (Турретин: необходимость удовлетворения — Q. X, p. 368; объект — Q. XIV, p. 400), 27 (Буньян — `SUPERSEDED`), 34–37 (русские баптисты — согласовано с `14_`). Матрица: строки №№ 1, 3, 14, 26, 27, 38, 47, 50; итоговая фраза «все 53… сверены» помечена `SUPERSEDED`.
     - 42ec. *Дополнение 2026-11-17 (раунд 71; `34_` §4.154, S169).* **Библиографическая ревизия пп. 4, 5, 16, 22, 24 и строки № 39.** П. 4 — латинская «цитата» из *Enchiridion* 103 оказалась пересказом (`PARAPHRASE`). П. 5 — Проспер, возражение I, сверено по Hurter 35, с. 186 («recte omnes dicantur redempti… redemptionis proprietas… penes illos»). П. 16 — ст. XXXI («for all the sins of the whole world»), Schaff III ≈ с. 507. П. 22 — в Schaff III Формулы нет (`LOCATOR_ERROR`). П. 24 — Ussher XII, сс. 551–571, а не 559–596. Строка № 39 — Ходж, II, 558.
+    - 42ed. *Дополнение 2026-11-17 (раунд 72; `34_` §4.155, S170).* **Библиографическая ревизия пп. 15, 23, 31, 32.**
+      - П. 15 — Второе Гельветическое исповедание в Schaff III занимает сс. 233–306, а не 237–306.
+      - П. 23 — Allport, т. II: 1832 и издание 1650 г. подтверждены; «1627» — `DATE_HOLD`.
+      - П. 31 — цитата Эдвардса «in some sense… for all» стоит в «Conclusion», а не в ч. IV, разд. XII (Andover 1840, ≈ с. 405).
+      - П. 32 — глава о сатисфакции — это *Remarks* (1796), гл. VI, а не *Miscellaneous Observations* (1793); «Фокус» — `QUOTE_RISK`.
 
 43. **Benjamin Breckinridge Warfield.** *The Plan of Salvation* (1915); *The Term 'World' in the Johannine Writings* (1914).
     - *Издание:* Philadelphia: Presbyterian Board of Publication; *Selected Shorter Writings*, Vol. 2.
@@ -1034,4 +1055,4 @@
 
 Все 53 ключевых первоисточника сверены с оригинальными критическими изданиями, контекстуализированы и очищены от вторичных искажений.
 
-> **SUPERSEDED (раунд 70, 2026-11-17; `34_` §4.153; аудит AGENT 2 §21) — фраза выше сохранена как HISTORICAL.** Утверждение «все 53… сверены с оригинальными критическими изданиями» неверно. (1) Строки №№ 3, 11, 27, 47 и 50 после проверки сняты с «Verified»; строки №№ 1, 14 и 26 — «Verified» только как локатор, вывод частичный или оценочный; в № 38 был неверный номер проповеди. (2) Для многих позиций (например, CSEL 92, SC 199, Lambot 1945, CCSL 46) критическое издание в корпусе по экземпляру не открывалось; сверка шла по доступным печатным сканам и цифровым текстам с классами A1/A2. (3) Пп. 1, 3, 7, 21, 27, 34–37 получили поправки в раунде 70; п. 11 — в раунде 69; пп. 4, 5, 16, 22, 24 и строка № 39 — в раунде 71. Публикационный HOLD сохраняется.
+> **SUPERSEDED (раунд 70, 2026-11-17; `34_` §4.153; аудит AGENT 2 §21) — фраза выше сохранена как HISTORICAL.** Утверждение «все 53… сверены с оригинальными критическими изданиями» неверно. (1) Строки №№ 3, 11, 27, 47 и 50 после проверки сняты с «Verified»; строки №№ 1, 14 и 26 — «Verified» только как локатор, вывод частичный или оценочный; в № 38 был неверный номер проповеди. (2) Для многих позиций (например, CSEL 92, SC 199, Lambot 1945, CCSL 46) критическое издание в корпусе по экземпляру не открывалось; сверка шла по доступным печатным сканам и цифровым текстам с классами A1/A2. (3) Пп. 1, 3, 7, 21, 27, 34–37 получили поправки в раунде 70; п. 11 — в раунде 69; пп. 4, 5, 16, 22, 24 и строка № 39 — в раунде 71; пп. 15, 23, 31, 32 — в раунде 72. Публикационный HOLD сохраняется.
