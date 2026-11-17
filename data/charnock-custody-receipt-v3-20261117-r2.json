@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 3,
+  "contractId": "CHARNOCK-CUSTODY-V3",
+  "authorityRole": "corpus-specific-supporting-only",
+  "sourceGitSha": "b8ded620b8fedb61eb0947ce7b06c141e6e34807",
+  "sourceWorkflowRunId": 44134214698,
+  "sourceArtifactId": 14350737754,
+  "sourceArchiveName": "charnock-custody-v3-main-b8ded620.zip",
+  "sourceArchiveBytes": 1045446,
+  "sourceArchiveSha256": "9c86b0b1beb0a913546dcc8979c49bdcd6d14ac0446a3f863f2edb510581fc8f",
+  "nestedSourceZipSha256": "03577c2137c8fc6dc65c10bf62000de391f1132f2bec286eeb9af487b30df714",
+  "nestedManifestSha256": "7c8ba529af03d88ef271d4894098742b43154b96eb4ab2854ed10c606f842e36",
+  "sourceFileCount": 15,
+  "sourceTotalBytes": 3643323,
+  "sourceOwnerSha256": {
+    "БИОГРАФИИ/Стивен Чарнок/00_README_AND_NAVIGATION.md": "2a8d41c113c5c0de826297dbab482024735c594a25debff0befe16615fc2fdb6",
+    "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md": "706748bb1f3eb22d4b96f00ef6151cdd02c8975749b534d1dd86c7561ebaf832"
+  },
+  "driveFolderId": "15iNGKO8rN3vJKPbJuXfPVx4rXHER5Xq2",
+  "driveFileId": "1r2rJUlYFdZKTITF3I9Vz0pNdMQGCSXdH",
+  "driveFileName": "CHARNOCK_CUSTODY_V3_MAIN_b8ded620b8fe_2026-11-17.zip",
+  "driveUrl": "https://drive.google.com/file/d/1r2rJUlYFdZKTITF3I9Vz0pNdMQGCSXdH/view?usp=drivesdk",
+  "destinationBytesReadBack": 1045446,
+  "destinationSha256ReadBack": "9c86b0b1beb0a913546dcc8979c49bdcd6d14ac0446a3f863f2edb510581fc8f",
+  "sourceDestinationBytesIdentical": true,
+  "verificationDateUtc": "2026-11-17",
+  "verificationMethod": "INDEPENDENT_GOOGLE_DRIVE_RAW_DOWNLOAD_LOCAL_SHA256_AND_BYTE_EQUALITY",
+  "verificationBoundary": "Complete GitHub artifact ZIP downloaded; nested candidate ZIP and manifest inspected. Exactly 15 source member bytes and SHA256 matched the manifest. Uploaded a new ZIP to existing Charnock Drive folder, downloaded independently from Drive, verified identical bytes and SHA256. Not a collation of facsimile pages, independent scholarly approval, use rights, or publication approval.",
+  "custodyState": "ACQUIRED_DURABLE_SOURCE_SNAPSHOT",
+  "publicationState": "BLOCKED",
+  "rightsState": "PRIVATE_STUDY_ONLY",
+  "holds": [
+    "PUBLICATION_HOLD",
+    "ARCHIVE_HOLD",
+    "RIGHTS_HOLD",
+    "EVIDENCE_HOLD"
+  ],
+  "previousVerifiedReceipt": "data/charnock-custody-receipt-v3-20261117.json",
+  "supersedesHistoricalArchive": false,
+  "ed02Status": "OPEN_IMAGE_EDITION_AND_LOCATOR_REVIEW",
+  "ed06Status": "OPEN_INDEPENDENT_TRANSLATION_REVIEW",
+  "nextAction": "Reacquire if any of the 15 source files change; independently verify exact original facsimile and translations; live publication requires separate authority and provider readback."
+}
