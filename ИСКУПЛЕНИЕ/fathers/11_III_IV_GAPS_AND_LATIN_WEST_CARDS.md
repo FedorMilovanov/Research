@@ -198,6 +198,22 @@
 | H-1 Ипполит — `LOCATOR_HOLD` | **HIP-1** (2 лока; атрибуция фрагмента и деление «On Daniel» — `LOCATOR_HOLD`) |
 | Иларий — `LOCATOR_HOLD` | **HIL-1** (3 лока: De Trin. VI, X, XII.18) |
 | Амвросий — `LOCATOR_HOLD` | **AMB-1** (De officiis III.3; De Spiritu Sancto I.12.126) |
+
+---
+
+## Дополнение Волны 22 (2026-11-15): латинская сверка `HIL-1`, `AMB-1`, `JER-1` и исправление ложного локатора `HIL-1`
+
+> **Неразрушающее обновление (см. [`21_`](21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md) §§4–6 и `F-52` в `09_`):** исторические строки Волны 2 выше сохранены нетронутыми; ниже зафиксированы результаты прямой латинской сверки PL 9/10/16/23.
+
+1. **`HIL-1` (Иларий Пиктавийский — `ORIGINAL_TEXT_VERIFIED`; печатный скан колонок PL 9/10 — `LOCATOR_HOLD`):**
+   - ***De Trinitate* VI.40 (PL 10:190, `la.wikisource.org`):** `ad ea quae ex nihilo sunt substituta redimenda, eum qui ex nihilo substitit praebuisse: non facit magni meriti fidem vilis et spernenda jactura... Deus diligens mundum, filium non adoptivum, sed suum, sed unigenitum dedit.`
+   - ***De Trinitate* X.22 (PL 10:364, `la.wikisource.org`):** `homo Christus Jesus ad redemptionem animae et corporis nostri perfectus est natus.`
+   - **Поправка `FALSE_LOCATOR`:** указанный выше в таблице `HIL-1` локус `NPNF2_09.txt:L27208` («redemption wrought by the tree of Life, that is, by the Passion of the Lord») принадлежит **не *De Trinitate* XII.18**, а ***Tractatus super Psalmos — In Psalmum I*, §18 (`PL 9:260`, `la.wikisource.org`)**: `sed per redemptionem ligni vitae, id est, dominica passione, cum ipsi ligno vitae similes erimus, jam quidquid in nobis fiet, aeternum est: aeternum autem cum beatitudinis sensu.`
+2. **`AMB-1` (Амвросий Медиоланский — `ORIGINAL_TEXT_VERIFIED`; печатный скан PL 16 — `LOCATOR_HOLD`):**
+   - ***De Officiis* III.3.19 (PL 16:0150C–D, `catholiclibrary.org`, исправляет запись `III.4` в таблице `10_`):** `Christus quoque Dominus, qui pro universis mortuus est, mercedem sanguinis sui evacuatam dolebit.`
+3. **`JER-1` (Иероним Стридонский — `ORIGINAL_TEXT_VERIFIED`; печатный скан PL 23 — `LOCATOR_HOLD`):**
+   - ***Adversus Jovinianum* I.11 (PL 23:0226C, `catholiclibrary.org` / `la.wikisource.org`):** `Pretio empti estis, nolite fieri servi hominum. Redempti sumus pretiosissimo sanguine Christi: immolatus est pro nobis agnus, et aspersi calidissimo rore hyssopi, omnem pituitam noxiae voluptatis excoximus.`
+4. **Без изменений (`ORIGINAL_TEXT_HOLD` / `ARCHIVE_HOLD`):** греческие оригиналы `HIP-1`, `MET-1`, `ALX-1`, `EUS-1` остаются на английском переводе ANF/NPNF.
 | Иероним — `ARCHIVE_HOLD` (том не выгружен) | **JER-1** (Adv. Jovinianum I.11) |
 | Евсевий — не начат | **EUS-1** (Oration XV) + *DE* = `ARCHIVE_HOLD` |
 | III в.: Григорий Чудотворец, Мефодий, Лактанций | **THA-1** (молчание), **MET-1**, **LAC-1** + **латынь VI.3/VI.12 сверена** |

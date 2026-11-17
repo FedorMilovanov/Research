@@ -95,6 +95,32 @@ class NantesWorshipAndAmnestyTests(unittest.TestCase):
         self.assertGreaterEqual(len(self.refs), 205)
         self.assertIn("PUBLICATION_HOLD", self.refs["REF-P27"]["holds"])
 
+    def test_paris_1599_everyday_rights_are_distinct_from_worship_and_execution(self):
+        """One edited print, distinct legal protections, no inferred local enforcement."""
+        reader, apparatus = self.chapter.split("## Источниковедческий аппарат", 1)
+        nant = reader.split("## Нант, апрель 1598 года:", 1)[1].split(
+            "## Один «эдикт» — несколько документов", 1
+        )[0]
+        for term in (
+            "Статья XVIII", "против воли",
+            "Статья XXI", "печатать и продавать",
+            "статья XXII", "университеты", "больницы",
+            "Статья XXVI", "наследства",
+            "Статья XXVII", "публичные должности",
+            "не доказывает", "судебные",
+        ):
+            with self.subTest(term=term):
+                self.assertIn(term.lower(), nant.lower())
+        self.assertNotIn("все школы исполняли", nant.lower())
+        self.assertEqual(reader.count("## "), 10)
+        for loc in ("L553–565", "L593–609", "L610–617", "L656–662", "L663–704",
+                    "1599 года", "PARTIAL_OBJECT", "ARCHIVE_HOLD",
+                    "RIGHTS_HOLD", "PUBLICATION_HOLD"):
+            with self.subTest(locator=loc):
+                self.assertIn(loc, apparatus)
+        self.assertIn("PARTIAL_OBJECT", self.refs["REF-P27"]["accessState"])
+        self.assertIn("PUBLICATION_HOLD", self.refs["REF-P27"]["holds"])
+
     def test_engraving_is_not_primary_1599_witness(self):
         for marker in ("REF-S100", "Jan Luyken", "Élie Benoist",
                        "1693", "нельзя принимать за репортаж", "RIGHTS_HOLD"):

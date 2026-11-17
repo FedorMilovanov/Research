@@ -201,7 +201,7 @@ Trinity, Exposition — и всё). У Чарнока второй том (158 �
 
 | Лицо | Даты | Роль | Связи | Том |
 |---|---|---|---|---|
-| **Стивен Чарнок** | 1628–27.07.1680 | центр | — | все |
+| **Стивен Чарнок** | 1628–1680; дата смерти 27/28 июля (`CONFLICT-10`) | центр | — | все |
 | Richard Charnock | д. ок. 1665 | отец, attorney в Court of Chancery, род из Charnock Richard (Lancashire) | `KIN` → Стивен | 02, 11 |
 | **Ann Sykes** | вдова | **кузина и исполнительница завещания** 25 июля 1680 | `KIN` → Стивен | 01 §2.10 |
 | **William Sancroft** | 1617–1693 | наставник в Эммануиле; Archbishop of Canterbury 1678–1691 | `TEACHER` → Стивен; `CONTEMP` | 02, 11 |
@@ -5160,9 +5160,9 @@ diff-check также PASS. Авторский режим Q-06/07 в этом к
 воспроизводился из XML (его прежние данные проверены тестами плана).
 
 
-### 21.72.5. Независимый академический источник: Edinburgh PhD диссертация 2009 (ED-06補足)
+### 21.72.5. Независимый академический источник: Edinburgh PhD диссертация 2009 (ED-06-дополнение)
 
-26.10.2026. ED-06補足 — независимый академический источник, адресующий
+26.10.2026. ED-06-дополнение — независимый академический источник, адресующий
 gap «0 независимых ревью переводов». Владелец: `editorialTranslationReview`
 плана серии. Не является ревью конкретных русских переводов и не заменяет
 независимую сверку SHA конкретных переводов.
@@ -8382,7 +8382,7 @@ whitespace-check PASS. ED-02/06/08 OPEN;12формальных переводо�
    отмена наказания; неопределённость «юности орла» оставляется по «мнению простых»;
    примета Amyrald в margins до предпочтительного чтения; полное прощение как восток—запад.
 
-Семь интерпретативных наблюдений SP01–SP07 с 실제 spans и хэшами. Вывод: два отрывка — не
+Семь интерпретативных наблюдений SP01–SP07 с проверенными текстовыми диапазонами и хешами. Вывод: два отрывка — не
 доказательство универсального метода толкования, не замена пяти проверяемых карт III, не
 современная зоология/физиология, не оригинал Амиралда. Чудеса сохранены как чудеса, не
 аллегоризированы. Наследуются C/RIGHTS_UNKNOWN/BLOCKED и четыре HOLD. Полные проповеди не
@@ -8403,32 +8403,20 @@ whitespace-check PASS. ED-02/06/08 OPEN;12формальных переводо�
 0независимых сверок; custody NOT_REVERIFIED. Коммит, push, новая PR,
 слияние и разрешение публикации не выполнялись.
 
-### 21.138. Дата смерти Чарнока: 27 июля 1680 — CONFLICT-10 substantially resolved
+### 21.138. CONFLICT-10: смерть 27 или 28 июля 1680; погребение 30 июля по изображению печатного регистра
 
-Продолжение85. Досье §3 содержит полный подсчёт contemporaneous печатных объектов 1680 года с датой смерти:
+**Актуальная корректировка MAX от 16.11.2026.** Прежняя версия этого раздела ошибочно приписывала Чарноку запись **7 августа** из Chester (1882), с. 265, называла это «современным первичным источником» и преждевременно объявляла конфликт `substantially resolved`. Эти выводы **отозваны**; их история сохраняется в Git и в описании исправления ниже, но они не действуют как доказательство.
 
-| Объект | Дата в заголовке | Статус |
-|---|---|---|
-| Broadside *The sayings…* 1680 (`B02133.0001.001`) | 28 июля | получен полностью |
-| *New poems…* 1680 (`A52960.0001.001`) | 27 июля | получен полностью |
-| *An Elegy…* 1680 (`A39134.0001.001`) | 27 июля | получен полностью |
+**День смерти — CONFLICT.** Печатные свидетельства 1680 года не совпадают:
+- *The Sayings…* (`B02133`): **28 июля 1680**, Wednesday;
+- *New Poems…* (`A52960`) и *An Elegy…* (`A39134`): **27 июля 1680**;
+- более поздние биографические сообщения нередко воспроизводят 27 июля, но численное большинство и зависимые перепечатки не заменяют проверку независимости свидетелей.
 
-Плюс поздние свидетельства: Wood 1691, Calamy 1727, DNB 1887, Symington 1853, McCosh 1864, ODNB (Greaves) — все за 27 июля.
+**Дата погребения в печатной редакции реестра:** на предоставленном изображении с. 265 `The Parish Registers of St. Michael, Cornhill`, ed. Joseph Lemuel Chester (1882), запись **30 июля 1680** относится к Stephen Charnock («over Mr Sykes, under the steeple»); следующая запись **7 августа 1680** относится к James Kelke, не к Чарноку. Указатель на с. 309 относит Stephen Charnock к с. 265. Образ печатной страницы получен и визуально просмотрен; [сохранён на Google Drive OldPoet](https://drive.google.com/file/d/1T3Js2UKm0zp3Y8eLaSCWMoRpcmnF_IOc/view), происхождение и служебная передача — [реестр §26](../08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md).
 
-**НОВЫЕ ДАННЫЕ (28.10.2026): Приходской реестр St Michael Cornhill, London.**
-Получена и прочитана страница 265 приходского реестра *The Parish Registers of St. Michael, Cornhill, London, containing the marriages, baptisms, and burials from 1546 to 1754*, ed. Joseph Lemuel Chester (London: Mitchell & Hughes, 1882), Google Books `UshO-rtdTEYC`:
+**Ограничения:** Chester (1882) — поздняя редакционная публикация записей, не сама приходская рукопись XVII века. Подлинник в The London Archives, фонд `P69/MIC2`, не проверен; независимая рецензия агентов №2 и №7 и установление точного рукописного листа остаются открытыми. Неизвестно, являлись ли McCosh 1864, Wood 1691 и печатные свидетельства 1680 года независимыми свидетелями одного факта. **Дата смерти 27/28 июля остаётся конфликтной**; из даты погребения нельзя логически вывести точный день смерти. До отдельной научной приёмки — `CONFLICT / INDEPENDENT_IMAGE_CHECK_PENDING / MANUSCRIPT_HOLD / PUBLICATION_HOLD`.
 
-- **Заголовок года на стр. 264–265: «1680»** — подтверждает, что записи относятся к 1680 году
-- **Запись погребения на стр. 265:** *«Charnock, minister ; over Mr Sykes, under the steeple Aug. 7»* — ЧARNОК, священник; погребён над мистером Сайксом, под шпилем, 7 августа
-- **Индекс на стр. 309:** *«Charnock, Alice, 11 ; Hannah, 51 ; 8. John, 51; Stephen, 265; Wiliam, 11»* — подтверждает, что запись о Stephen Charnock на странице 265
-
-Это современный первичный источник (приходский реестр, страницы 264–265 охватывают погребения 1680 года). Регистр подтверждает погребение ЧARNОКа 7 августа 1680 года в St Michael Cornhill — что согласуется со смертью 27 июля 1680 (около 11 дней между смертью и погребением — обычный срок для того времени).
-
-**Итог подсчёта:** за **27 июля** — 8 свидетелей (из них 2 contemporaneous печатных объекта, один — у независимого печатника Snowden'а). За **28 июля** — 1 contemporaneous broadside. Утверждение «28 июля — единственное contemporaneous свидетельство» опровергнуто. Приходской регистр St Michael Cornhill подтверждает погребение в августе 1680 года.
-
-**CONFLICT-10 substantially resolved:** рабочая дата **27 июля 1680** подтверждена приходским реестром St Michael Cornhill (погребение 7 августа 1680). CONFLICT-10 переведён в состояние substantially resolved с фиксацией приходского регистра как современного первичного источника. Архивный Hold на приходских регистрах можно считать снятым для целей рабочей даты.
-
-**Рабочая формулировка:** **27 июля 1680**, погребение 7 августа 1680 в St Michael Cornhill.
+**Допустимая исследовательская формулировка:** «Печатное издание приходского регистра 1882 года относит погребение Стивена Чарнока к **30 июля 1680 года**; позднейшая сверка изображения устранила ошибочное чтение 7 августа. Дата смерти в ранних сообщениях расходится — **27 либо 28 июля**». Это не разрешение на публичную публикацию.
 
 ### 21.139. Состояние серии после 85
 
@@ -8455,7 +8443,7 @@ whitespace-check PASS. ED-02/06/08 OPEN;12формальных переводо�
 
 - В 1674 1-м издании проповедь XIX нач. стр. 422 (цитата "Fancy is like fire, a good Servant but a bad Master" с стр. 422, подтверждена Quote Investigator со ссылкой на Google Books Full View).
 - В 1676 2-м издании проповедь XIX на стр. 471–502 (полнотекстово прочитано в A25478; стр. 503 — начало проповеди XX).
-- 1844 репринт показывает стр. 393 — это реプリнтная пагинация Nichol, не оригинал.
+- 1844 репринт показывает стр. 393 — это пагинация репринта Nichol, не оригинал.
 
 **Вывод:** `CONFLICT-8` закрыт — оригинальная пагинация подтверждена в обоих изданиях (1674: стр. 422; 1676: стр. 471–502). `LOCATOR_HOLD` полностью снят для обоих изданий. Новая подтверждённая локаторная ссылка: 1674 1-е изд. стр. 422, 1676 2-е изд. стр. 471–502.
 
@@ -8470,7 +8458,7 @@ whitespace-check PASS. ED-02/06/08 OPEN;12формальных переводо�
 
 - *Supplement to the Morning Exercise at Cripplegate* выходил частями; диапазон 1674–1676 (по списку проповедей У. Дженкина).
 - Проповедь Чарнока № 19 (Serm. XIX) подтверждена в **обоих изданиях**: 1674 (1-е) и 1676 (2-е).
-- В 1844 репринте vol. 2 проповедь 19 находится на странице 393 (реプリнтная пагинация).
+- В 1844 репринте vol. 2 проповедь 19 находится на странице 393 (пагинация репринта).
 
 **Вывод:** `CONFLICT-9` закрыт — конкретный выпуск с проповедью XIX подтверждён как 1674 (1-е издание, Thomas Cockerill) и 1676 (2-е издание). `LOCATOR_HOLD` на page images сохраняется как формульность, но дата выпуска не подлежит сомнению.
 
@@ -8626,9 +8614,9 @@ whitespace-check PASS. ED-02/06/08 OPEN;12формальных переводо�
 | William Cooper (minister St Olave's, Southwark, ejected 1662) проповедал его панихиду 1677 | Wikipedia (William Cooper Puritan) | Связка Fowler → Cooper → Southwark |
 | Cooper matriculated Emmanuel College Cambridge 1628 | Wikipedia/Venn | **Тот же колледж**, что и Чарнок |
 | Кооперовы проповеди редактировал Samuel Annesley в *Morning Exercises at Cripplegate* | Wikipedia (William Cooper Puritan) | Та же издательская сеть, что и у Чарнока |
-| Возможно, основал пресвитерианскую congregцию в Unicorn Yard, Tooley Street (Southwark) | Wikipedia (Fowler) | «Fowler's place» может быть这里, не Crosby Hall |
+| Возможно, основал пресвитерианскую общину в Unicorn Yard, Tooley Street (Southwark) | Wikipedia (Fowler) | «Fowler's place» могло находиться здесь, а не в Crosby Hall |
 
-**Вывод:** «Fowler's place» в стихотворении 1680 года скорее относится к месту служения Фаулера в Southwark (конVENTICLE, Unicorn Yard или подобное), чем к Crosby Hall. Фаулер и Чарнок пересекались в сети *Morning Exercise at Cripplegate*, но в разных физических местах служения (Фаулер — Southwark/Kennington, Чарнок — Crosby Hall с 1675). Стихотворение не упоминает Crosby Hall и Thomas Watson вообще. CONFLICT-14 остаётся открытым: для разрешения нужны приходские/register-данные Southwark,表明ющие, брал ли Чарнок на себя место Фаулера после января 1678, или «Fowler's place» — фигуральное обозначение преемства среди несогласных проповедников.
+**Вывод:** «Fowler's place» в стихотворении 1680 года скорее относится к месту служения Фаулера в Southwark (нонконформистская молельня, Unicorn Yard или подобное), чем к Crosby Hall. Фаулер и Чарнок пересекались в сети *Morning Exercise at Cripplegate*, но в разных физических местах служения (Фаулер — Southwark/Kennington, Чарнок — Crosby Hall с 1675). Стихотворение не упоминает Crosby Hall и Thomas Watson вообще. CONFLICT-14 остаётся открытым: для разрешения нужны приходские/register-данные Southwark, которые позволят проверить, занимал ли Чарнок место Фаулера после января 1678, или «Fowler's place» — фигуральное обозначение преемства среди несогласных проповедников.
 
 ### 21.153. ED-02 — иностранные оригиналы CASE-LINGENDES/RAYNAUD/DAILLE: источники локализованы
 
@@ -8681,7 +8669,7 @@ whitespace-check PASS. ED-02/06/08 OPEN;12формальных переводо�
 - ED-02/06/08 OPEN; 12 формальных переводов / 0 независимых сверок; custody NOT_REVERIFIED.
 - CONFLICT-8 ЗАКРЫТ: оригинальная пагинация проповеди XIX подтверждена в обоих изданиях (1674: стр. 422; 1676: стр. 471–502).
 - CONFLICT-9 ЗАКРЫТ: выпуск с проповедью XIX подтверждён как 1-е изд. 1674 и 2-е изд. 1676 (оба Thomas Cockerill).
-- CONFLICT-14 обновлён: Фаулер служил в Southwark (не Crosby Hall), проповедовал в Morning Exercise at Cripplegate 1674–6, умер январь 1678; Crosby Hall congregation мигрировала в Maze Pond, Southwark только в 1769; Fowler мог основать congregуцию в Unicorn Yard, Tooley Street. «Fowler's place» скорее Southwark-место/конVENTICLE, чем Crosby Hall. Физические места разные: Фаулер — Southwark, ЧARNOCK — Crosby Hall (1675–1680).
+- CONFLICT-14 обновлён: Фаулер служил в Southwark (не Crosby Hall), проповедовал в Morning Exercise at Cripplegate 1674–6, умер январь 1678; Crosby Hall congregation мигрировала в Maze Pond, Southwark только в 1769; Fowler мог основать общину в Unicorn Yard, Tooley Street. «Fowler's place» скорее Southwark-место/нонконформистская молельня, чем Crosby Hall. Физические места разные: Фаулер — Southwark, ЧARNOCK — Crosby Hall (1675–1680).
 - CONFLICT-17: Calamy третья эпистола отсутствует в A32724; две эпистолы подтверждены.
 - ED-02: иностранные локаторы найдены (Lingendes BSB/Google Books; Raynaud IA/Google Books vol.5; Daillé PRDL/Google Books); fresh retrieval заблокирован SSL-ограничением sandbox.
 - Новых печатных семейств не добавлено.
@@ -8706,7 +8694,7 @@ whitespace-check PASS. ED-02/06/08 OPEN;12формальных переводо�
 | Латинский акростих и эпитафия на Fowler | IA djvu.txt, чанк 6 | Похвальная поэзия, без Crosby Hall |
 | Crosby Hall — НЕ упоминается ни разу | Весь текст проповеди (8 чанков) | **Важный отрицательный результат**: проповедь не связывает Fowler с Crosby Hall |
 
-**Вывод для CONFLICT-14:** Проповедь Купера 1677 не упоминает Crosby Hall. Fowler описан как Minister "formerly of Reading, and lastly of London" — путь через Reading и London, без Crosby Hall. Это усиливает версию, что «Fowler's place» в элегии 1680 года относится к месту служения Fowler в London/Southwark (конVENTICLE, Unicorn Yard), а не к Crosby Hall. Физические места разные: Fowler — Southwark/London, Charnock — Crosby Hall (1675–1680). CONFLICT-14 остаётся открытым: для окончательного разрешения нужны приходские/register-данные Southwark, показывающие, брал ли Charnock на себя место Fowler после января 1678.
+**Вывод для CONFLICT-14:** Проповедь Купера 1677 не упоминает Crosby Hall. Fowler описан как Minister "formerly of Reading, and lastly of London" — путь через Reading и London, без Crosby Hall. Это усиливает версию, что «Fowler's place» в элегии 1680 года относится к месту служения Fowler в London/Southwark (нонконформистская молельня, Unicorn Yard), а не к Crosby Hall. Физические места разные: Fowler — Southwark/London, Charnock — Crosby Hall (1675–1680). CONFLICT-14 остаётся открытым: для окончательного разрешения нужны приходские/register-данные Southwark, показывающие, брал ли Charnock на себя место Fowler после января 1678.
 
 ### 21.152. Состояние серии после 94
 
@@ -8714,7 +8702,7 @@ whitespace-check PASS. ED-02/06/08 OPEN;12формальных переводо�
 - ED-02/06/08 OPEN; 12 формальных переводов / 0 независимых сверок; custody NOT_REVERIFIED.
 - CONFLICT-8 ЗАКРЫТ: оригинальная пагинация проповеди XIX подтверждена в обоих изданиях (1674: стр. 422; 1676: стр. 471–502).
 - CONFLICT-9 ЗАКРЫТ: выпуск с проповедью XIX подтверждён как 1-е изд. 1674 и 2-е изд. 1676 (оба Thomas Cockerill).
-- CONFLICT-14 обновлён: проповедь Купера 1677 прочтена полностью; Crosby Hall НЕ упоминается; Fowler — Minister Reading и London, не Crosby Hall; Crosby Hall congregation мигрировала в Maze Pond, Southwark только в 1769; Fowler мог основать congregуцию в Unicorn Yard, Tooley Street. «Fowler's place» скорее Southwark/London-место/конVENTICLE, чем Crosby Hall. Физические места разные: Fowler — Southwark/London, ЧARNOCK — Crosby Hall (1675–1680).
+- CONFLICT-14 обновлён: проповедь Купера 1677 прочтена полностью; Crosby Hall НЕ упоминается; Fowler — Minister Reading и London, не Crosby Hall; Crosby Hall congregation мигрировала в Maze Pond, Southwark только в 1769; Fowler мог основать общину в Unicorn Yard, Tooley Street. «Fowler's place» скорее Southwark/London-место/нонконформистская молельня, чем Crosby Hall. Физические места разные: Fowler — Southwark/London, ЧARNOCK — Crosby Hall (1675–1680).
 - CONFLICT-17: Calamy третья эпистола отсутствует в A32724; две эпистолы подтверждены.
 - ED-02: иностранные локаторы найдены (Lingendes BSB/Google Books; Raynaud IA/Google Books vol.5; Daillé PRDL/Google Books); fresh retrieval заблокирован SSL-ограничением sandbox.
 - ED-08: Drive readback wykonан для квитанции wave40 v1 (sha256 совпал); локальные SHA256 файлов манифеста v2 пересчитаны; загрузка на Drive и readback файлов манифеста v2 — следующий шаг.
@@ -8763,3 +8751,14 @@ whitespace-check PASS. ED-02/06/08 OPEN;12формальных переводо�
 - Коммит, push, новая PR, слияние и разрешение публикации не выполняются.
 
 Контроль95: **672 теста PASS = 659 Charnock + 13 атлас**; Fowler-элегия 1677 прочтена и сравнена с элегией ЧARNОК 1680; CONFLICT-14 сужен (жанровое чтение «Fowler's place»).
+
+
+---
+
+### 2026-11-16 — CONFLICT-10: correction of historical August 7 attribution
+
+**Provenance:** An earlier version of §21.138 conflated the Charnock entry with the following James Kelke entry on Chester's 1882 printed p. 265 and claimed burial on **Aug. 7** with `CONFLICT-10 substantially resolved`. This was an erroneous reading and is **HISTORICAL/SUPERSEDED**; the exact former version remains in Git history.
+
+**New evidence and limited correction (MAX, 16 November 2026):** The supplied page-image captures of Chester (1882), pp. 264–265 with index pp. 308–309, show **July 30 — Stephen Charnock**, then **Aug. 7 — James Kelke**. The image package is preserved at [OldPoet](https://drive.google.com/file/d/1T3Js2UKm0zp3Y8eLaSCWMoRpcmnF_IOc/view); see [biographical Drive ledger §26](../08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md). Wood 1691 and *The Sayings* 1680 also state July 30 for burial, but their independence is not established. McCosh 1864 reproduces a July 30 register entry; that is not a verified original manuscript. Chester's 1882 print cannot itself be described as a contemporaneous 1680 manuscript.
+
+**Remaining work:** Independent review by agents №2/№7 of printed images and transcription, and if a manuscript-level claim is required, exact-item verification of the relevant 1680 burial register in The London Archives `P69/MIC2`. The 27/28 July **death** conflict remains separate. The publication decision remains **BLOCKED**; no general release of historical, image-rights or quotation HOLD follows from this correction.

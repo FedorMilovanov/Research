@@ -172,7 +172,7 @@ Everything else is spelling (`c`/`k`, `u`/`v`) and does not affect reading.
 
 - Transcription: `CAPTURED_IN_REPOSITORY`, from a digital text layer.
 - Page image: **not inspected** — typography, drop capitals and the illustration `ill0155` remain `UNVERIFIED`.
-- Melody: `UNKNOWN_NOT_VERIFIED` (Liederenbank returns 403; the 2005 apparatus gives no origin).
+- Melody: `UNKNOWN_NOT_VERIFIED` — a verified negative as of 2026-11-15: Liederenbank record 9086 is reachable, names only the wijs `Un jour &c.` and explicitly denies that it is 'Un jour m'en allais seulette'; the 2005 apparatus gives no origin either.
 
 ## A second hymn with almost the same title — checked in the 1676 table of contents
 

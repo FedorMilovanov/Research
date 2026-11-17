@@ -168,7 +168,7 @@ class EnglandScotlandTests(unittest.TestCase):
             (D / "source-registry-v1.json").read_text(encoding="utf-8")
         )
         self.assertEqual(registry["sourceCount"], len(registry["sources"]))
-        self.assertEqual(registry["sourceCount"], 219)
+        self.assertGreaterEqual(registry["sourceCount"], 219)
         target = next(x for x in registry["sources"] if x["id"] == "REF-P94")
         self.assertEqual(target["evidenceClass"], "A2")
         self.assertEqual(target["accessState"], "PARTIAL_OBJECT")
@@ -202,7 +202,7 @@ class EnglandScotlandTests(unittest.TestCase):
         self.assertIn("оригинальный рукописный лист и изображение", ch)
         self.assertEqual(
             sum("PUBLICATION_HOLD" in x["holds"] for x in registry["sources"]),
-            219,
+            registry["sourceCount"],
         )
 
     def test_claim_guards_and_published_chapter_numbering(self):

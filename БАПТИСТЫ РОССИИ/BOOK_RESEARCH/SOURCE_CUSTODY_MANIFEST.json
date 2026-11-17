@@ -1,0 +1,1505 @@
+{
+  "schemaVersion": 1,
+  "custodyType": "exact Git blob preservation; origin Git history remains in source repository",
+  "sourceRepository": "FedorMilovanov/gb-is-my-strength",
+  "sourceCommit": "e71d4ca3d8104c1c3469f8490ace53914b1cc4d5",
+  "sourcePrefix": "baptisty-rossii/research/",
+  "destinationRepository": "FedorMilovanov/Research",
+  "destinationPrefix": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/",
+  "migratedFileCount": 248,
+  "migratedBytes": 20691314,
+  "contentSetSha256": "6dc68b35b9b346a795e31483022136b049b7771bc302011806699dc6454c1249",
+  "verificationAlgorithm": "sorted path TAB byte_count TAB sha256 LF, SHA-256 UTF-8",
+  "publicationStatus": "RESEARCH_CUSTODY_ONLY; NO_AUTO_PUBLICATION; NO_RIGHTS_UPGRADE",
+  "retirementPolicy": "Retire Product originals only after merge, exact blob check, dependency inventory and independent Product CI",
+  "files": [
+    {
+      "path": "00-master-source-index-glossary-map.md",
+      "bytes": 136834,
+      "sha256": "893cfdfffbed9b790b41c4e392f36a7bd86786205db3e59b600ae56a260046f3",
+      "sourceBlobSha": "5ab8f74cb27b4d788c1e3d20827131fcfb4caa5c"
+    },
+    {
+      "path": "01-origins-1863-1884-and-first-articles.md",
+      "bytes": 209138,
+      "sha256": "5376bb7b44d52d87b57c51a3b2f34f5900561618195363b30c32785bb6fca502",
+      "sourceBlobSha": "8fe32cf363edc50ec9acfeada02f85fbff37cd5f"
+    },
+    {
+      "path": "02-union-1944-1945-and-vsehib.md",
+      "bytes": 84426,
+      "sha256": "72425bcec6cc3ed517ff1b66962b8f0c0c8e56dc5065690bc27d5a61200d42d0",
+      "sourceBlobSha": "117b3f876bff8e7b225d3979ce3b44c923408653"
+    },
+    {
+      "path": "03-soviet-night-1917-1944-law-repressions-press.md",
+      "bytes": 138464,
+      "sha256": "067db8308b20e75dc1c838329420390ac9f615a2bb84a75f8ef7f7a5b97b8087",
+      "sourceBlobSha": "9a6e0ec3f5f699d9f4f0dd56b5e6ed84a7c884c1"
+    },
+    {
+      "path": "04-persecution-conscience-military-question.md",
+      "bytes": 105040,
+      "sha256": "640a5295cd79328ea9c35fcfba61091f92db5ae4a83567d89155a7266a4d5904",
+      "sourceBlobSha": "cf82b0a27d7558cde980ab9f8ffad97c0099ea04"
+    },
+    {
+      "path": "05-council-of-churches-underground-press-1960-1991.md",
+      "bytes": 118568,
+      "sha256": "b42b3ada86f2310f4d43b8f5ef82c2cca73a2cd1762239e44bcabe6238c54550",
+      "sourceBlobSha": "4c8f03f2d15dde369b7e0edf7c177361bc307c3e"
+    },
+    {
+      "path": "06-local-sources-inventory.md",
+      "bytes": 2692,
+      "sha256": "51316d4f5130b7b7fe57b1311e065a9c4454a23fcfcdbbdeb0a87971cd42c40b",
+      "sourceBlobSha": "160aae5a23ab6a27cffbb6a5d29e6d62672f6727"
+    },
+    {
+      "path": "07-petersburg-line-redstock-pashkov-prokhanov-2026-06-13.md",
+      "bytes": 18831,
+      "sha256": "e6ea6aedd63096f1e476f3e86aa216f39b01dfba4e4b999f97a59d1bbb02618a",
+      "sourceBlobSha": "00575c13c3e12f5083e8e317cb9db47b51946830"
+    },
+    {
+      "path": "08-conscience-article-transfer-2026-06-13.md",
+      "bytes": 5946,
+      "sha256": "3ff652a336b92d20947327ab228f82f588b8f15c1f6bff981b493d5b9056b613",
+      "sourceBlobSha": "5ba21d39eadecffa26b630c10af6bfc9e7d6a256"
+    },
+    {
+      "path": "09-soviet-night-article-transfer-and-new-sources-2026-06-13.md",
+      "bytes": 10321,
+      "sha256": "9608189f0171ab8951917b928fce36df153767e7ce89e19e2a23f9da56f24632",
+      "sourceBlobSha": "9cabc71c57fe39fc47bd4d400b487e83d52cc47d"
+    },
+    {
+      "path": "10-vsehib-1944-golden-chapter-source-to-claim-2026-09-06.md",
+      "bytes": 20664,
+      "sha256": "5ad7f21499c58b64a65ffaab70fb767342f2a341c78bd7d55c9ccd14b508ceb4",
+      "sourceBlobSha": "7e0b21cfae5996953d474b0ea602815040493d5f"
+    },
+    {
+      "path": "10-vsehib-article-transfer-and-primary-sources-2026-06-13.md",
+      "bytes": 7984,
+      "sha256": "24773226dd642ca3cbef966d1328d48b9cc8278ca6b6ea40f4eefefcaf2ac451",
+      "sourceBlobSha": "fcb52ae9bdfde177d56809cdddabc58546fcbd2e"
+    },
+    {
+      "path": "100-ch08-periodical-acquisition-and-page-control-2026-09-06.md",
+      "bytes": 10891,
+      "sha256": "6eab280e077ddde1a11d8807929d1de6b1aa0b3f6f214a1d1420f44087cac0a8",
+      "sourceBlobSha": "e67dd75516a9bf0ea4a0e638086c464156814506"
+    },
+    {
+      "path": "101-ch08-print-republic-qa-resolutions-2026-09-06.md",
+      "bytes": 8188,
+      "sha256": "15d25f385c1ae4995f82f436f2aa6f4b98b01fa23848d0dfe6a581e3061e3ee1",
+      "sourceBlobSha": "62aad53693d715675b00cb482b51bc8dddf1dd66"
+    },
+    {
+      "path": "102-ch09-fetler-house-gospel-source-to-claim-2026-09-06.md",
+      "bytes": 22617,
+      "sha256": "b9a9d392da2514403e38241177813a9186ff38f6e185cd39b658e010d9303acd",
+      "sourceBlobSha": "cf20484be979d5504a74fdeca3b9bb3889eb997a"
+    },
+    {
+      "path": "103-ch09-fetler-house-gospel-visual-dossier-2026-09-06.md",
+      "bytes": 11455,
+      "sha256": "b92f08a6a00dc6082fc37e44494b976b15576074b706a01476752341a8fa26b1",
+      "sourceBlobSha": "54b56a8cec5731a5299e292145b55ec195308913"
+    },
+    {
+      "path": "104-ch09-house-gospel-date-and-calendar-control-2026-09-06.md",
+      "bytes": 8096,
+      "sha256": "799b31a75516c821b30b4ecb9be4e19ffc3a6e3c8b93d7efd05958c9730437e2",
+      "sourceBlobSha": "fa65b91f1524902552abbbbfeb1051c58bce3f2c"
+    },
+    {
+      "path": "105-ch09-fetler-war-arrest-exile-source-resolution-2026-09-06.md",
+      "bytes": 10325,
+      "sha256": "bf9c631c16e07e425bf92de077c4dc2341f239e8a6933cdbd7a83ceeb37c16a6",
+      "sourceBlobSha": "07f775ad1e4aa2bdf4060385d0c081a452140a5f"
+    },
+    {
+      "path": "106-ch10-1917-1921-source-to-claim-2026-09-06.md",
+      "bytes": 18819,
+      "sha256": "5a7f1372e356465a4430f90d77e2d074cb9e929965ecc014df37349048e6c27e",
+      "sourceBlobSha": "7ea6509e372b7d3bc579617bc9d07d0237d5206d"
+    },
+    {
+      "path": "107-ch10-1917-1921-visual-dossier-2026-09-06.md",
+      "bytes": 11276,
+      "sha256": "cfeefe5fc51496554e53c5a029502b2944107fb6e050b6c9b889ec72e2203f9b",
+      "sourceBlobSha": "cf454c442f45374ab5a61c220ffa47026c1c0c76"
+    },
+    {
+      "path": "108-ch10-1917-1921-date-and-calendar-control-2026-09-06.md",
+      "bytes": 6457,
+      "sha256": "6d6273d238ee59a897c2a424bbfe99cb87e5f9ec424b95a7c244afcee4db4443",
+      "sourceBlobSha": "f51b9c71aa8514a0ff36b7a895ef4fb734467f6d"
+    },
+    {
+      "path": "109-ch10-conscience-military-duty-and-state-resolution-1918-1921-2026-09-06.md",
+      "bytes": 9786,
+      "sha256": "9888813750dfa0262ff8ba986ee9a9a91c985405672b28e2b0ec5d61f258e3fa",
+      "sourceBlobSha": "04eb4b27ac3f3bd2dac665dfcaeaf1506d7bc91c"
+    },
+    {
+      "path": "11-initiative-group-article-transfer-and-primary-sources-2026-06-13.md",
+      "bytes": 15022,
+      "sha256": "71adfd24b77d7f2da216307636dc00e79437cde024d3bb8eca3be0af9389752a",
+      "sourceBlobSha": "5ad37c982a94b2c5e5bf1b1cea857a515591c06f"
+    },
+    {
+      "path": "11-vsehib-1944-visual-dossier-2026-09-06.md",
+      "bytes": 15955,
+      "sha256": "10b677d70c3fa0b8af7199603dc187a723ea51e032082276058ab678174b8f73",
+      "sourceBlobSha": "b4a503033c537647d968da7db46cd931fcd8466d"
+    },
+    {
+      "path": "110-ch11-famine-international-brotherhood-source-to-claim-2026-09-06.md",
+      "bytes": 20321,
+      "sha256": "1fe577044377399020fef7a2267c751bffb83cbb79f1b7fbfcbca4e6021ffa1a",
+      "sourceBlobSha": "6bded891112d986f8147c33f1c1bff412c291cec"
+    },
+    {
+      "path": "111-ch11-famine-international-brotherhood-visual-dossier-2026-09-06.md",
+      "bytes": 10993,
+      "sha256": "d40f659a00acee8c89da29d9ca01567f80cca8fffd0a9ac14a476f9451ec4366",
+      "sourceBlobSha": "1b2bee37f9cbd320aa4e9c1c74dd6b72010f68fb"
+    },
+    {
+      "path": "112-ch11-international-relief-network-and-source-resolution-2026-09-06.md",
+      "bytes": 11982,
+      "sha256": "55ab088e886f0ece2ef69080b269dae49d9254e6577bb4589a70385f3a745a74",
+      "sourceBlobSha": "22487a4be8c8309d4a355847a1d2b9ee09262995"
+    },
+    {
+      "path": "113-ch11-wardin-archive-recovery-map-2026-09-06.md",
+      "bytes": 8446,
+      "sha256": "587c52e5f68c84dd1255ecc9a14ef89a0bf0bd7da20d8fe51449300d431705b4",
+      "sourceBlobSha": "cc01de48127884653ae38a2e6c5106b804fdef21"
+    },
+    {
+      "path": "114-ch11-to-ch12-relief-reconstruction-boundary-2026-09-06.md",
+      "bytes": 6721,
+      "sha256": "d26104163068df47a6c8054fcdde76f2c7d3159d9b7f654a5fbfac62f3348f34",
+      "sourceBlobSha": "4b409129dd94b72d516155b130f3156d0e30b4e6"
+    },
+    {
+      "path": "115-ch12-school-bible-failed-unity-source-to-claim-2026-09-06.md",
+      "bytes": 13725,
+      "sha256": "f45b398d0de8edcb249b501f6537059ac6c72ba0af33f88100931ba5d7275a14",
+      "sourceBlobSha": "09749922e01b140c9f44293a0a203e6ea6d6e65d"
+    },
+    {
+      "path": "116-ch12-school-bible-failed-unity-visual-dossier-2026-09-06.md",
+      "bytes": 7791,
+      "sha256": "7a15d631109049286cf68bfbb44d0bf66c990a2575b02449328d3e268ea9d713",
+      "sourceBlobSha": "97897e0a4995ebbd598dbab305bd01f9ef4253c1"
+    },
+    {
+      "path": "117-ch12-joint-to-separate-bible-courses-source-resolution-2026-09-06.md",
+      "bytes": 5749,
+      "sha256": "43df9c612599c5b03a91c760a314d0f44edf2bccbe571dee37174c6cf44d094d",
+      "sourceBlobSha": "64d1b97434e41dab2ac6486b294eaa0271e8c23e"
+    },
+    {
+      "path": "118-ch12-bible-and-periodical-publishing-object-audit-2026-09-06.md",
+      "bytes": 6326,
+      "sha256": "8d79bfe045be5c02a7971d49ab89e7796e1d2f630bff63baa52174f62900add0",
+      "sourceBlobSha": "127d88c4a79166d1bec72efbab443198319262d7"
+    },
+    {
+      "path": "119-ch12-1924-bible-course-duration-and-label-resolution-2026-09-06.md",
+      "bytes": 4295,
+      "sha256": "ea0c803cbb7b52bde9032182ea33c41017b1e73d24099d8b996d6084d18bcb46",
+      "sourceBlobSha": "9176b4edf9479ff516c7957c9cf247274bc0ccf8"
+    },
+    {
+      "path": "12-iniciativnaya-gruppa-golden-chapter-source-to-claim-2026-09-06.md",
+      "bytes": 18396,
+      "sha256": "922e615c998257fa7ebff37b3c60623809f3165cd188534321cab454bf234ba1",
+      "sourceBlobSha": "b321e4f6bb48062a2ce64b77a4bceb793cb09a49"
+    },
+    {
+      "path": "12-underground-press-article-transfer-and-primary-sources-2026-06-13.md",
+      "bytes": 14644,
+      "sha256": "fc7ff27609e41485db50725e4497259a0dad0dca67b13ae2e12264348a44bf68",
+      "sourceBlobSha": "b1fc8fc38b60612095b88acfeb9d32c27bd38069"
+    },
+    {
+      "path": "12-vsehib-1944-brotherly-vestnik-1945-01-acquisition-gap-2026-09-06.md",
+      "bytes": 4969,
+      "sha256": "34c7078fd8c3c28856d64fe192c55ff91ff58f1786bf929db32ab6940cde00d6",
+      "sourceBlobSha": "14c04591316f88505bbb0efcd05aa5a7cad155f6"
+    },
+    {
+      "path": "120-ch13-conscience-army-state-source-to-claim-2026-09-06.md",
+      "bytes": 15833,
+      "sha256": "9eba0e6561ac81fecd7559171086c1b22b3aaf4c8a0991453516809c4911d87e",
+      "sourceBlobSha": "deb1049d39c28f3cfc0b993a971399eec8b8c6bb"
+    },
+    {
+      "path": "121-ch13-conscience-army-state-visual-dossier-2026-09-06.md",
+      "bytes": 9686,
+      "sha256": "a2f7169253dda36e31f0e5ac50c1cbcaf3460d737801e6db82066621e1e97224",
+      "sourceBlobSha": "e01629aba0b1a5f968c21ff3b413ac712e8aeecb"
+    },
+    {
+      "path": "122-ch13-circular-237-and-1925-law-legal-control-2026-09-06.md",
+      "bytes": 15066,
+      "sha256": "b2e863b0db4bdcb16c0b893ef283f9c0503aa4ca517cff48fd5f3bacdc6d2d23",
+      "sourceBlobSha": "1c0f3b5b9fc22b5aad5d00f5ef59c24ab361f7e9"
+    },
+    {
+      "path": "123-ch13-1923-1926-congress-resolution-and-arrest-count-control-2026-09-06.md",
+      "bytes": 14227,
+      "sha256": "eff209351e99277d2398e356775b9dd4970dd7d22450a57c1f4d6e15b6792d15",
+      "sourceBlobSha": "d95d6a4e7de10b01249dffa248402513d507b077"
+    },
+    {
+      "path": "124-ch14-1929-law-church-life-source-to-claim-2026-09-06.md",
+      "bytes": 19690,
+      "sha256": "e93e7092eb9dbe84270f0596b8b10e3a3f718dc31a6b3c1428390f782078650f",
+      "sourceBlobSha": "df989449de953024375d6867f6648a098eb5b4a2"
+    },
+    {
+      "path": "125-ch14-1929-law-church-life-visual-dossier-2026-09-06.md",
+      "bytes": 18221,
+      "sha256": "c3ba6ef623ff3bf1d7ee07bb2c641d15837b7e88612f2419cdc04c20c08c6cc2",
+      "sourceBlobSha": "820feaff1ffd10f7f85b8afa75d1d842986956a5"
+    },
+    {
+      "path": "126-ch14-1929-law-church-life-legal-control-2026-09-06.md",
+      "bytes": 17118,
+      "sha256": "2b650d7853a74c158463b82bf52ae1447fdce79a889bc890521a03116c60b644",
+      "sourceBlobSha": "71024e0817c1e75a0bc48a3e6f2b292a49202ce5"
+    },
+    {
+      "path": "127-ch14-1929-law-church-life-implementation-response-control-2026-09-06.md",
+      "bytes": 16183,
+      "sha256": "95b42e70738214b8c7818d4fde390e340bba16f6b28cacfe66a6751a35d7d4f2",
+      "sourceBlobSha": "aced439e3fe73b732dc634b5b1c63b1448adf093"
+    },
+    {
+      "path": "128-ch15-1930s-unions-great-terror-source-to-claim-2026-09-06.md",
+      "bytes": 33468,
+      "sha256": "06a220ff3cf100a16baff5736bd2295ad01677d544da3cde1a481eb9197ff76b",
+      "sourceBlobSha": "eb615a4d7503eb8a9d89db799c2f001bd7fc38c9"
+    },
+    {
+      "path": "129-ch15-1930s-unions-great-terror-visual-dossier-2026-09-06.md",
+      "bytes": 21413,
+      "sha256": "38f54e4efda1ada548c83c54290e9652ee5c988b21c22fc10d461cdff2efa47f",
+      "sourceBlobSha": "eeb8ff957049fcef76f23385a6c978cf7ad626bf"
+    },
+    {
+      "path": "13-iniciativnaya-gruppa-visual-dossier-2026-09-06.md",
+      "bytes": 9183,
+      "sha256": "8545ddc0a02d64284131ca5de168fa8f20e7d4f2bc208a4ec06ef2e5142800e9",
+      "sourceBlobSha": "5516e7399ae422b35afdbb7c2c857e79c43f3ab4"
+    },
+    {
+      "path": "13-reference-article-transfer-2026-06-14.md",
+      "bytes": 8235,
+      "sha256": "2514497ffebdd3f6fb5be732abc3ade0cb1622510bbe2ffceefefb92651d5fae",
+      "sourceBlobSha": "3a5bc479791f185aeb63b8f40875ab6570f5480b"
+    },
+    {
+      "path": "130-ch15-1930s-repression-mechanism-case-attribution-control-2026-09-06.md",
+      "bytes": 14986,
+      "sha256": "48d4e86a2bcd18db803fabe9737b30dd7f9d53ea03d128ad3e7cbe4492fe8ef9",
+      "sourceBlobSha": "11be67038831f95cdb0c950d6cd21cb6dbff7eda"
+    },
+    {
+      "path": "131-ch15-regional-survival-novosibirsk-kuksenko-control-2026-09-06.md",
+      "bytes": 24766,
+      "sha256": "f11faaef08132db0eb6767031e42e7964ae1fd0e8f04421a3bd9b57049b7c2ce",
+      "sourceBlobSha": "94fb4b796e69b6fa80db748b4eca082bbd6ae55b"
+    },
+    {
+      "path": "132-ch16-war-1944-union-source-to-claim-2026-09-06.md",
+      "bytes": 28449,
+      "sha256": "5ffd7db6784ba6c9c4f941b0d6e039c8ccf8885b3789d3fa0a9f887610b0f112",
+      "sourceBlobSha": "4a92991d69002d7e8ef2a6c135ed07537429e44e"
+    },
+    {
+      "path": "133-ch16-war-1944-union-visual-document-dossier-2026-09-06.md",
+      "bytes": 16433,
+      "sha256": "59c6106faca90976d90cdea0b1ef42e2d875518267fc4854222d72f0062dfb00",
+      "sourceBlobSha": "95f2f78ebb57ca96b8dfc6e4cc384894a801ca39"
+    },
+    {
+      "path": "134-ch16-1942-leader-release-state-causality-control-2026-09-06.md",
+      "bytes": 13509,
+      "sha256": "8cbd1087148c82782bc36e969b77dfe0551b09b18ab8639ca310c8118a27de9e",
+      "sourceBlobSha": "313a0f5929c54801bb99e87bdd52be3cb5a17b59"
+    },
+    {
+      "path": "135-ch20-international-voice-1990-1992-memory-source-to-claim-2026-09-06.md",
+      "bytes": 34153,
+      "sha256": "a068ddd882e38e89d6fa44429a4db36a3979937debb236bb7f77dcaa21987a8a",
+      "sourceBlobSha": "eec5adfaf57936efe90be9a2ad8c8ec3dde80442"
+    },
+    {
+      "path": "136-ch20-external-archive-emigration-provenance-control-2026-09-06.md",
+      "bytes": 20704,
+      "sha256": "371ead44409a5635186a9bcf453bb54b025443cd75b7f1b542416f2ad63de320",
+      "sourceBlobSha": "c27f4bbfb25d70ce7c1d0e743a809ae08110937a"
+    },
+    {
+      "path": "137-ch20-international-voice-memory-visual-archive-dossier-2026-09-06.md",
+      "bytes": 19378,
+      "sha256": "199a7f9151719748b5e367d526212c80d3ab9dd6cfb11f34cf3d0ac40bb33765",
+      "sourceBlobSha": "869e4820c4d6cee4e02ff7937b3b6b484ce622a8"
+    },
+    {
+      "path": "138-ch20-1990-1992-institutional-succession-memory-control-2026-09-06.md",
+      "bytes": 15881,
+      "sha256": "7207f33d53cb956aa056d39e3ce57ae839fb4e5359cb3a296740088278d593ef",
+      "sourceBlobSha": "5d3ac37737d579c75094af26fcaba50c27933c06"
+    },
+    {
+      "path": "139-ch20-vins-1976-1979-international-diplomacy-testimony-control-2026-09-06.md",
+      "bytes": 18368,
+      "sha256": "e6b66f135d7ba02726729f5137a85268ecea97e2f2cd7621e6dcdf2ff32762a3",
+      "sourceBlobSha": "8235ce11eb692f0815d334b93940cf9f7491f12e"
+    },
+    {
+      "path": "14-council-relatives-bulletin-pdf-catalog-2026-06-14.md",
+      "bytes": 6546,
+      "sha256": "1e4b63164669f931e16100bb49188b6492461fabb4bf1d72f616583adf21087e",
+      "sourceBlobSha": "eb01a2d34b48ebe688b176fb7c255a4306500df4"
+    },
+    {
+      "path": "14-podpolnaya-pechat-golden-chapter-source-to-claim-2026-09-06.md",
+      "bytes": 18142,
+      "sha256": "2a6e072b491609f2f24204cbd1d7d03343ed19b0c06f7655f35f44075c50fcd8",
+      "sourceBlobSha": "c3f98d4e8a884f0fc9038c96c948393e38e49ff7"
+    },
+    {
+      "path": "140-ch20-eaf-charter-1992-congress-date-conflict-control-2026-09-06.md",
+      "bytes": 12089,
+      "sha256": "731bac21b4f9edf68e8a093c4f90b950da0dbd47890388655b5c995dcb366895",
+      "sourceBlobSha": "4587ae544a24d1e3ac284b8925aee1d8cc29979d"
+    },
+    {
+      "path": "141-ch20-vins-citizenship-1979-1990-legal-instrument-control-2026-09-06.md",
+      "bytes": 10711,
+      "sha256": "b8a7684be2ba899a13d388c171457846e45d2fd7d29314ec37679e16f1e522e5",
+      "sourceBlobSha": "4cd4c2b1a28869490183727efcc487834ece6cf9"
+    },
+    {
+      "path": "142-ch20-international-representation-1980-formation-control-2026-09-06.md",
+      "bytes": 10632,
+      "sha256": "791b3b57a2fba3f6b4c1a481f25176ee34b2a2ce9d8133e55a8570165f89ab76",
+      "sourceBlobSha": "1f4043c78d557751f845be4384a477a983853396"
+    },
+    {
+      "path": "143-ch20-rehabilitation-memory-person-level-control-2026-09-06.md",
+      "bytes": 13597,
+      "sha256": "c71dfb25234c3911ab599ba34e1b58bc8b4792ace26309e84a9d8c48038bdcfb",
+      "sourceBlobSha": "da19f57e59f60ab6be679b460593af8c4e54d2b6"
+    },
+    {
+      "path": "144-ch20-kc22-registered-baptist-counterarchive-control-2026-09-06.md",
+      "bytes": 10716,
+      "sha256": "50ac659b09cbabfe8b790dc1bd7a8e1bfe79b9a8f2fc2f7cf784defdeedbd9c8",
+      "sourceBlobSha": "692257d10dd4603856354708fa8b309b23332438"
+    },
+    {
+      "path": "145-ch20-kc29-vins-csce-translation-chain-control-2026-09-06.md",
+      "bytes": 11196,
+      "sha256": "0ecece20783ece80fa92e1e0e6c658b503e81d31c518847f7be5888bc234a183",
+      "sourceBlobSha": "91bb7acbd74fda0811694d08c1eb26bb7747205a"
+    },
+    {
+      "path": "146-ch01-pre-baptist-origins-authority-reconciliation-2026-09-11.md",
+      "bytes": 11476,
+      "sha256": "9a22ac6d956fab03357914dfbe07e3208d73295603aca4c14a1a88d7bedc58fb",
+      "sourceBlobSha": "096b5b033ed5a3a56578fb8b7fee66c91a6d5073"
+    },
+    {
+      "path": "147-media-container-recovery-status-2026-09-11.md",
+      "bytes": 4747,
+      "sha256": "99cff681c75fd6ecc77487576ae1c0d97ff7e43032aacc8916e2347c6df27aa6",
+      "sourceBlobSha": "7ffe68fdf16aaee1c0e3e4cae7927dca41a18cc4"
+    },
+    {
+      "path": "147-total-production-audit-2026-09-11.md",
+      "bytes": 11079,
+      "sha256": "0aeb4e258dd03681aa0c26d88f7850d47fdeea48a2f892094cb6d80a90e7ed39",
+      "sourceBlobSha": "0761a78c012210f7d1cc3a24257d80b7043a85e9"
+    },
+    {
+      "path": "148-book-production-reconciliation-status-2026-09-11.md",
+      "bytes": 6515,
+      "sha256": "407522eaeb62b19fc3ecbc9c573a95dd399b09fa325119c89caa5be5cc09b7cc",
+      "sourceBlobSha": "1c78c4a788c52bc4bc602b19957a5ade67ffa015"
+    },
+    {
+      "path": "149-3d-history-evidence-reconciliation-2026-11-14.md",
+      "bytes": 6267,
+      "sha256": "fa78bc50d75774432b861e133f2fbd81a926752c251fd58d98478d19e543c66d",
+      "sourceBlobSha": "6bc565c3abce1947fe79439da2bde3b75f1438a2"
+    },
+    {
+      "path": "15-podpolnaya-pechat-visual-dossier-2026-09-06.md",
+      "bytes": 10253,
+      "sha256": "3f132699e81e60826be02170bd465791d428326a084d05934f265f5950555dee",
+      "sourceBlobSha": "1245a2d7cf176bc16dfbf57192f8e4845094b0a6"
+    },
+    {
+      "path": "15-pre-1867-russian-baptist-like-precursors-2026-06-14.md",
+      "bytes": 12105,
+      "sha256": "d03e3bfc4d1fc63ba2a681ec555f6c26dbe8d93c0a4c8b927801cc17d8338735",
+      "sourceBlobSha": "fdd6d0d506abb75a979271d0f3cb8a0ff0458d72"
+    },
+    {
+      "path": "16-ch17-vsehb-1945-1959-source-to-claim-2026-09-06.md",
+      "bytes": 22444,
+      "sha256": "77467323050dc6b234285402fe357210098536b373a64b8a3f7ed96c6d8dee1c",
+      "sourceBlobSha": "184b410a42ff72ce85915eccd687d3204b729b6b"
+    },
+    {
+      "path": "16-persecution-case-index-1930s-1980s-2026-06-14.md",
+      "bytes": 10147,
+      "sha256": "fd7b1482a66c273f9f2ad7fe5af083f9db81ad36d7c72b5be01d15e61fd35d84",
+      "sourceBlobSha": "cc718ee6b9e72c8e7114dcc15f41e75d0c343b59"
+    },
+    {
+      "path": "16-podpolnaya-pechat-bulletin-44-pdf-verification-2026-09-06.md",
+      "bytes": 3828,
+      "sha256": "d7efc8ceffb4c251125ccfe0b42066b4173520952ee99a37b31854d43996a965",
+      "sourceBlobSha": "51e245cd945f270b343e9108e5ceb85cab6afb78"
+    },
+    {
+      "path": "17-3d-map-clarity-and-persecution-layer-2026-06-14.md",
+      "bytes": 11984,
+      "sha256": "247694285b419e04d703c399f9da9838ec8110bc7e7ef9bf9da56bd2d3b14341",
+      "sourceBlobSha": "c0a7810c98147d239d1eeb9bf1fb48d8c32f4a40"
+    },
+    {
+      "path": "17-ch17-vsehb-1945-1959-visual-dossier-2026-09-06.md",
+      "bytes": 12048,
+      "sha256": "a4c0b005c34d6fd0fa81e493c01601cdb460cf614f2b79f5abd09dd4bd903904",
+      "sourceBlobSha": "65495ed90152782c5c20e9a95023ba03224fbd08"
+    },
+    {
+      "path": "18-ch17-registration-policy-1945-1958-2026-09-06.md",
+      "bytes": 20406,
+      "sha256": "b8744eb64939f05d3be7ff36198dc9f4123590cedd169f06c2729fd6edfc0f55",
+      "sourceBlobSha": "cad02e129f2e01fa45f8f5f1865aba9ad1e739a4"
+    },
+    {
+      "path": "18-iniciativnaya-gruppa-1962-orgkomitet-document-recovery-2026-09-06.md",
+      "bytes": 5392,
+      "sha256": "1485d33c33748c2a93605d64df320f2485cef5f6fd52da9bde70475b59ea530e",
+      "sourceBlobSha": "4b2c0af9b5ee635666f27016ae7fef359377f1aa"
+    },
+    {
+      "path": "18-primary-source-link-register-30plus-2026-06-14.md",
+      "bytes": 19314,
+      "sha256": "5d353085e80b1a225f0ef5d36ab701bba9682e68b516bc9a5a9f82bb07b82e3e",
+      "sourceBlobSha": "55ecfa5b1cf1db11ab9691c18d8bf5bf480a288f"
+    },
+    {
+      "path": "19-ch17-1696-registration-number-source-chain-2026-09-06.md",
+      "bytes": 6540,
+      "sha256": "b9b5806e8743e9401cb625dca3dfebb03311df7294628471506a4b08dfc86acf",
+      "sourceBlobSha": "5505ddfef344d6434a3d0eb0e0cda0763a9aedb8"
+    },
+    {
+      "path": "19-iniciativnaya-gruppa-1962-orgkomitet-archival-citation-chain-2026-09-06.md",
+      "bytes": 7254,
+      "sha256": "84537091d38d4e562d16a52bc9c24846b747798c5fcfd7b27d47d0e1a38ef2a9",
+      "sourceBlobSha": "6a4b77568784c256b77a1bd8311fe6151d02f098"
+    },
+    {
+      "path": "19-origins-primary-source-branch-2026-06-18.md",
+      "bytes": 23753,
+      "sha256": "023aa679fcc1267c6786121635b291cbf50dddd5b7e2da0ee7da64c36071de94",
+      "sourceBlobSha": "c5d2a96dddd57e82a5cc3b038ce78b2fee7bc468"
+    },
+    {
+      "path": "20-southern-ukraine-primary-source-pass-2026-06-18.md",
+      "bytes": 9959,
+      "sha256": "3bb8ecdb40ac6461ac34f525b955ccdc24cf485dd9b533763b0c63e1e330eb03",
+      "sourceBlobSha": "08e8d3f49787d72ac4fbd626caac90cfa11c3338"
+    },
+    {
+      "path": "21-dorodnitsyn-official-reports-southern-line-2026-06-18.md",
+      "bytes": 7730,
+      "sha256": "feb730b28588eac62b7fcf58ca94821d3c566c17be9b2990b6709bad53b79885",
+      "sourceBlobSha": "42566edf9e7b13e63fdcb0fbc39c6a85adf5c073"
+    },
+    {
+      "path": "22-rozhdestvensky-shtunda-not-baptism-nuance-2026-06-18.md",
+      "bytes": 8154,
+      "sha256": "23e37fb90c9d8ea1053a78855e45f28be4ac359ab87da2a922d17949f8a58ede",
+      "sourceBlobSha": "8b054c97d728d805c807c14ea9eb16b1e9aea884"
+    },
+    {
+      "path": "23-two-1884-meetings-primary-source-trail-2026-06-18.md",
+      "bytes": 7461,
+      "sha256": "7f7ef86514674d7bdfbd9cd03a712d3caa3b01f190441d9b4c6073ad3cda824e",
+      "sourceBlobSha": "6a3abd56fff1d79a2676f77a67e5c678f73590e7"
+    },
+    {
+      "path": "24-first-confession-and-brotherhood-order-source-trail-2026-06-18.md",
+      "bytes": 10610,
+      "sha256": "eb33f459406f86b73136cdbe9f36aba93af78843f23fb3edfc655b756aa566f6",
+      "sourceBlobSha": "3858b677ca3f80b655e4b3c7d530c812ca4915f8"
+    },
+    {
+      "path": "25-3d-map-origins-safe-update-plan-2026-06-18.md",
+      "bytes": 7042,
+      "sha256": "d00719956f3ba01562ab857f9e27ccecfb816ab856bdb6b439b2ff34150f7c18",
+      "sourceBlobSha": "d639e8187356944f91a300d81658ec0805cc75f3"
+    },
+    {
+      "path": "26-pre-1867-origin-open-questions-and-source-leads-2026-06-18.md",
+      "bytes": 14217,
+      "sha256": "a0145118b0150f98331b4fa7acb18587e440b0849f67c46a3577d42ead168881",
+      "sourceBlobSha": "8c40d13c8bfb8d140a60d5727c08b186081acf4d"
+    },
+    {
+      "path": "27-origins-web-source-ledger-30plus-2026-06-18.md",
+      "bytes": 42321,
+      "sha256": "55c7d35789d7767b7659e6cdc022835bea43726fdbffeec1e977526abfd74119",
+      "sourceBlobSha": "61205f41ab1cb1b08e4ff366365ebdff3d8996c7"
+    },
+    {
+      "path": "28-brotherly-herald-origins-memory-1947-1967-2026-06-18.md",
+      "bytes": 9729,
+      "sha256": "3e2b912dd04190325d84a2ddf81a85ccf6fc6d09d595db6a876e4df5c71bbbbe",
+      "sourceBlobSha": "a969e974509d5f5416ccb6a3030d164b4d8b8cc1"
+    },
+    {
+      "path": "29-voronin-letter-1889-and-ivanov-manuscript-leads-2026-06-18.md",
+      "bytes": 8576,
+      "sha256": "a68fb6799b7e332f33e9c82035392c3bfd3301a7d677e1a4db70013313942c2e",
+      "sourceBlobSha": "97442c8afa29a2b81b22b16c69b51d04b5b51d84"
+    },
+    {
+      "path": "30-valkevich-appendix-voronin-letter-page-27-verified-2026-06-18.md",
+      "bytes": 9697,
+      "sha256": "4d7a1a9ec64cf39494949b7b5c85197aae36e53f57b41a62cf1cfaace9201c7d",
+      "sourceBlobSha": "c8661e15a81f8d1d9974c60d6c92d91fabf9efbf"
+    },
+    {
+      "path": "31-editorial-expansion-roadmap-2026-06-19.md",
+      "bytes": 7264,
+      "sha256": "2392d7e4fbced3eb4bea0e5b2106fcf39661e900ad3f05f9167ceeb93436a0ce",
+      "sourceBlobSha": "b8bd178c5f2f5d283cd3963eee0c7b3ffef790cd"
+    },
+    {
+      "path": "32-2d-svg-visual-atlas-plan-2026-06-19.md",
+      "bytes": 5104,
+      "sha256": "dfcf60bdcb4993d3cffbfeeb4c9018b04a381870b1b7abcdcda169725d3bede3",
+      "sourceBlobSha": "6c1654bb9783cb10eae360a4ef3106b9c0528b2e"
+    },
+    {
+      "path": "36-wardin-2009-indigenous-question-verified-2026-06-19.md",
+      "bytes": 10573,
+      "sha256": "3da73a50051c8e22e68e32d4caf0e1110c736d87947be37d6bef85e0a1333e61",
+      "sourceBlobSha": "52049b47358c775fdc2cb3e3a4ce1b9b13ae289e"
+    },
+    {
+      "path": "37-pritzkau-1914-english-translation-source-2026-06-19.md",
+      "bytes": 9906,
+      "sha256": "fbc30a8f60df2820415eb7d1ce7f11e94395b6107ca39971f835b04b39c2c0ed",
+      "sourceBlobSha": "a8460c170781e13743ee9c55e3c82b25ff5b3c54"
+    },
+    {
+      "path": "38-dorodnitsyn-1908-documents-rules-catechism-1884-2026-06-19.md",
+      "bytes": 12864,
+      "sha256": "8852897a1761af8358a640675a8c0a8914e6258312b3ee8b1471ee0e03105361",
+      "sourceBlobSha": "fc33d8caed89f42f71fb49cf5a39520ec30b568c"
+    },
+    {
+      "path": "39-two-1884-events-coleman-verified-2026-06-19.md",
+      "bytes": 7256,
+      "sha256": "4fd3fda0ba66ec244c0669489a281b5d1949c38a613e57e8eddcc38bf07c16ed",
+      "sourceBlobSha": "919011d9efeb0588d4bd728bcd5d68cff4026f93"
+    },
+    {
+      "path": "40-origins-corpus-status-and-draft-repos-recovery-2026-06-19.md",
+      "bytes": 9854,
+      "sha256": "854693bd5f0abab095ea86256deb422b6ac5e4029d6c04e189d74f3345588996",
+      "sourceBlobSha": "8f617db00c23aad0133f42597436fea9464c2a59"
+    },
+    {
+      "path": "41-origins-geography-source-confidence-matrix-2026-06-19.md",
+      "bytes": 9044,
+      "sha256": "0a4bb3b5cf04a8a25012b6a09d4c71ca6510f15c9eaf9ee8ecb863a785d7228f",
+      "sourceBlobSha": "3cb0c6ebfe7c5dcf41cdd00c2e4e9da6dedac62d"
+    },
+    {
+      "path": "42-tiflis-line-deepening-voronin-kalweit-delyakov-2026-06-19.md",
+      "bytes": 11877,
+      "sha256": "0775d86acab0a3c634b8b0b00be5b41d3e450b30ae796360ffb56ec1394e9b4c",
+      "sourceBlobSha": "c8f484980d53d428d33cc9a5507dff469313269a"
+    },
+    {
+      "path": "43-petersburg-line-deepening-verified-2026-06-19.md",
+      "bytes": 11275,
+      "sha256": "ba8c0e1978f4648c586cef5e7cebbda4db3017da1faba16a307b7cef2876a53f",
+      "sourceBlobSha": "7dbf7112d7103117661ee2ac58af600a835f3f10"
+    },
+    {
+      "path": "44-prokhanov-evangelical-christians-union-verified-2026-06-19.md",
+      "bytes": 8371,
+      "sha256": "e731e55b4bfd68fda07b5d046f423ea858f15ccdc2cdf1ed8941c408ee4c4871",
+      "sourceBlobSha": "c5b5ce3df416dfc4878e940a42980cd8e492152c"
+    },
+    {
+      "path": "45-village-coordinates-for-atlas-2026-06-19.md",
+      "bytes": 5495,
+      "sha256": "77130a7b35001b9e71176208fd0ded4d2082e7cedaa4407e836f5cac2cb5ea5c",
+      "sourceBlobSha": "7e3d7241bc8bae3fcffe6bb781bb1735781cbf41"
+    },
+    {
+      "path": "46-archive-request-drafts-closed-primaries-2026-06-19.md",
+      "bytes": 8439,
+      "sha256": "8f5449f5a885216902ce1cf781f283c9bb0577b0d91fbada3404ecef8c94a13c",
+      "sourceBlobSha": "e93a00709acd2519b4c424e4d440ce8ced9db6d3"
+    },
+    {
+      "path": "47-kargel-the-bridge-figure-verified-2026-06-19.md",
+      "bytes": 9245,
+      "sha256": "7d692ad4d2d8e9a8c400fe632ae37617aaf8a8d2bd83ac441e4603c87dffef90",
+      "sourceBlobSha": "a930e78e1e1598af794d8127ae690e6543c06474"
+    },
+    {
+      "path": "48-two-streams-to-1944-synthesis-2026-06-19.md",
+      "bytes": 5503,
+      "sha256": "1098660e3785945671c3ddd3857049c8ae672482254cb64f7d034049b30c33b2",
+      "sourceBlobSha": "3f457f324e0bc3fcec0ace5a8d0fa07796d42727"
+    },
+    {
+      "path": "49-late-soviet-initiative-group-council-churches-samizdat-verified-2026-06-19.md",
+      "bytes": 10445,
+      "sha256": "33219b453e79a744762c7c91f21c20aea1113f8e6008530048adf58bac241a6d",
+      "sourceBlobSha": "0c09bb6e0370c7b6858ea492dd3dc653eb9b84cc"
+    },
+    {
+      "path": "50-series-master-plan-narrative-and-structure-2026-06-19.md",
+      "bytes": 14778,
+      "sha256": "9f79cb15b65d4cb96d318a56851ca2e6aecdad165ce42ea93098d2a03afde654",
+      "sourceBlobSha": "76e05cbb4c259843efba5859f90b1dffaab60f00"
+    },
+    {
+      "path": "51-military-question-primary-trail-1918-1926-verified-2026-06-19.md",
+      "bytes": 9942,
+      "sha256": "6256a4bfbdc4f3b108dcee0d985420032eb1f1730d373d425243e9ce2a4ba6b3",
+      "sourceBlobSha": "3ccf07861386dc8f17d429990816856ac9224b0f"
+    },
+    {
+      "path": "52-1929-legal-turning-point-spring-to-night-verified-2026-06-19.md",
+      "bytes": 7706,
+      "sha256": "c4c60af47df84aff39c192e6f7a8cd24872571253ad46a7efc694fbc37e07e20",
+      "sourceBlobSha": "78eb3fe74a7cc4ac5aa6e83c25c38d38d6be9b60"
+    },
+    {
+      "path": "53-postwar-accessions-vsehib-1945-1965-verified-2026-06-19.md",
+      "bytes": 9965,
+      "sha256": "e7fb4ffe2c504ebe19c66d0da129c7746f0027c81c2e0a8e991c0bb8c158cd75",
+      "sourceBlobSha": "87b62dc2a41a16316ca1d8ac36fd3d6da805ab50"
+    },
+    {
+      "path": "54-early-pietist-roots-wuest-bonekemper-stundism-verified-2026-06-19.md",
+      "bytes": 9537,
+      "sha256": "d46b4b53aaf708afa3b6d1d46b7ff86ee4fc379de0f5e057691741bc69cf6b4e",
+      "sourceBlobSha": "00f0adf4008dee34023c2a36437902a97d379cca"
+    },
+    {
+      "path": "55-qa-open-questions-and-discrepancies-register-2026-06-19.md",
+      "bytes": 11895,
+      "sha256": "20311f6e0a677df8fac23562996fd39f88a4fa3feffe487bd1e52b043613cb97",
+      "sourceBlobSha": "39ee55cfaaf98db0ec12c9485470228cc41b3477"
+    },
+    {
+      "path": "56-international-dimension-vins-siberian-seven-helsinki-verified-2026-06-19.md",
+      "bytes": 8692,
+      "sha256": "55079abe58957b816423f762395a7fdf3c01212d8e8d8475894e27041253ef73",
+      "sourceBlobSha": "309f94c1144a35d8407393150c406baee61901c6"
+    },
+    {
+      "path": "57-postsoviet-epilogue-rsehb-msc-ehb-1990-today-verified-2026-06-19.md",
+      "bytes": 8294,
+      "sha256": "43c014368237cb16c40732c3e11c3fdf138e99f4e6b9dbc99fcc9ac0101ac0fd",
+      "sourceBlobSha": "3a6921ec826a9e407d36fd2072fee359023c09ae"
+    },
+    {
+      "path": "58-foreign-levers-tms-macarthur-seminaries-verified-2026-06-19.md",
+      "bytes": 8610,
+      "sha256": "e970aa582fee9558fb135711dfa95977c0d43e10b6a7c8a52415b82435730499",
+      "sourceBlobSha": "60f0f127b77d1c8befb5a8237d41d2ee029a3226"
+    },
+    {
+      "path": "59-calvinism-arminianism-russian-baptists-verified-2026-06-19.md",
+      "bytes": 8781,
+      "sha256": "21865fb0e785ab78bca70bf57f33d3a8b2b84c599a28c77ea5a83f38f35cd643",
+      "sourceBlobSha": "8ad2614474f7f529bcf6aaf5c13d597cf2e94f11"
+    },
+    {
+      "path": "60-emigration-america-central-asia-1874-1920s-verified-2026-06-19.md",
+      "bytes": 7080,
+      "sha256": "4b70fbea9d5fa67b396eb3bf108b608274d87f3e9fb331e2b393816cc1b28b79",
+      "sourceBlobSha": "cb7b6d7a22dec72dd0e4177178795026a81e16bf"
+    },
+    {
+      "path": "61-military-question-world-wars-debates-verified-2026-06-19.md",
+      "bytes": 7187,
+      "sha256": "25d2d39772d3c2e0fbb87549a058d89fdf1497c213c2ff8a3cbd530694c0f534",
+      "sourceBlobSha": "7cc558a20beba0959d46752d0deb511ba9b4a36e"
+    },
+    {
+      "path": "62-theological-debates-alcohol-practice-verified-2026-06-19.md",
+      "bytes": 6698,
+      "sha256": "fde1e2f58c06d24a20972f1d527e731023d81d7c330e9269faf132636401eeee",
+      "sourceBlobSha": "cac0508334041425b924a9545820e2a8641a0179"
+    },
+    {
+      "path": "63-series-plan-addendum-themes-and-premium-features-2026-06-19.md",
+      "bytes": 8289,
+      "sha256": "606353664342773f10be4ea5fb6a8f281525491be2587fbc1d26a9f0ea1634cd",
+      "sourceBlobSha": "f75d84bf99e3eeeb0bb4c5253f11bc7ebca39f4b"
+    },
+    {
+      "path": "64-foreign-channels-sga-radio-bible-smuggling-verified-2026-06-19.md",
+      "bytes": 8534,
+      "sha256": "e238de78edb0f30a4b9f90a3ab83d1b8f5e70ed5a2679390177a924605e6a9a6",
+      "sourceBlobSha": "907bd7a84a88104d65c9d72924bd14e9a03e9c17"
+    },
+    {
+      "path": "65-fetler-dom-evangelia-petersburg-verified-2026-06-19.md",
+      "bytes": 10086,
+      "sha256": "3af42f6019a68c391ecaf02f9664690d8d86504d629c9388547c748f3f9c19ca",
+      "sourceBlobSha": "6b749a8b6e0628d06fce43c5226617cdf4cc4d05"
+    },
+    {
+      "path": "66-john-macarthur-ukraine-russia-2019-break-verified-2026-06-19.md",
+      "bytes": 8535,
+      "sha256": "0ef424c3dc897c7306ad6ce945b8b8f9ad4084a460d899abc10090476040d324",
+      "sourceBlobSha": "fdbc4d828e12411aebe811db2b6cd27661f3f029"
+    },
+    {
+      "path": "67-russian-radio-preachers-poysti-and-tmai-geography-verified-2026-06-19.md",
+      "bytes": 7899,
+      "sha256": "0a8d505c7c486ff5079892645ceaa83b519f6c6afee7e3db04feb6232c481f96",
+      "sourceBlobSha": "641d1e36d1e78d4b1396ccef479e4dbd92ddb440"
+    },
+    {
+      "path": "68-macarthur-moscow-2004-conference-and-qa-verified-2026-06-19.md",
+      "bytes": 7047,
+      "sha256": "d44ea7a1644c22be4a63d51478485edc41afad3d8e36b17d70fd911fe26013fe",
+      "sourceBlobSha": "3663946bf838d3141a29e22a59705cfd61c478f8"
+    },
+    {
+      "path": "69-macarthur-own-account-kiev-russia-trips-tms-podcast-verified-2026-06-19.md",
+      "bytes": 9425,
+      "sha256": "715a6032a7afc60a56379fd4b494adf579494a64591141f9963a9fd7d17a8cad",
+      "sourceBlobSha": "56f9fd3225d2f1c7881ebd2e8721469eccc61499"
+    },
+    {
+      "path": "70-hero-profiles-pavlov-mazaev-verified-2026-06-19.md",
+      "bytes": 11032,
+      "sha256": "529355bea29679716ad017adc902a869e4cb32d604cb6addc3fa52cb923e8bcb",
+      "sourceBlobSha": "a944d5eb5c4487eef8009a404302711d5367f451"
+    },
+    {
+      "path": "71-public-perception-orthodoxy-press-and-interconfessional-matrix-2026-06-21.md",
+      "bytes": 19159,
+      "sha256": "ff33e4cb785cf754214225c9b7606f723e01424379d1a6d1be805cf8eb5036e4",
+      "sourceBlobSha": "5ce77e5a190cb077bf8b4cde807394086b48d6f3"
+    },
+    {
+      "path": "72-public-perception-and-interconfessional-source-ledger-40plus-2026-06-21.md",
+      "bytes": 22602,
+      "sha256": "e3672a8d2c139bc077c561f7b1c595c0d39cbe90587d5cef92c16166ac61a37f",
+      "sourceBlobSha": "ba3bedcce49265d34cae49d2456cec1731d55d08"
+    },
+    {
+      "path": "73-quote-bank-sect-label-public-opinion-and-interconfessional-angles-2026-06-21.md",
+      "bytes": 12392,
+      "sha256": "6257f91c4bbf1519133dd2a0e577a1ce02d7f0aacdfc68a9efe8c45623b32672",
+      "sourceBlobSha": "28236a01a3aead6ef7726b6871aa3df1fb937478"
+    },
+    {
+      "path": "74-press-public-opinion-and-anti-sect-rhetoric-deep-dive-2026-06-21.md",
+      "bytes": 8668,
+      "sha256": "44eb06b69dc6bd0f7203aed3b9780a85132e186539321d9d47672212eb4a55f9",
+      "sourceBlobSha": "e239f320becb42fe1ec6113247f6cdc6663f4738"
+    },
+    {
+      "path": "75-orthodoxy-baptists-and-why-the-sect-label-stuck-2026-06-21.md",
+      "bytes": 6891,
+      "sha256": "a457c82b1cff590062689388eed5896feb021028094cf43fa1bff49f2a32568d",
+      "sourceBlobSha": "76a0708c9d64bc50fa73f4483e951c9d9b5d3b80"
+    },
+    {
+      "path": "75A-sect-label-claim-to-source-control-2026-07-30.md",
+      "bytes": 5908,
+      "sha256": "de79ab55b74ef729f4136d8a6d2c3ceb8191287288e22b4f2d8505c0cbe73f05",
+      "sourceBlobSha": "a9417b99cec46b3ef2d52caaf5ea710715f2a2e9"
+    },
+    {
+      "path": "76-newspaper-and-polemical-witness-bank-2026-06-21.md",
+      "bytes": 7366,
+      "sha256": "90697060ac35755178d1272c76a5145f0bb7677a51f564ac896ca3078cba7180",
+      "sourceBlobSha": "cb567fabd99f6c3eebf9501e0cf25bcdba487e0d"
+    },
+    {
+      "path": "77-1905-1917-freedom-conscience-and-public-turn-source-pack-2026-06-21.md",
+      "bytes": 5978,
+      "sha256": "7c61bcec047a607a5315a7fa320a6c9bf07136a0aec8915d73ea217c70b1511d",
+      "sourceBlobSha": "45c88f2543f7631c1c09ca13b62f2fbf388e382b"
+    },
+    {
+      "path": "78-theological-identity-orthodox-proximity-and-russian-baptist-selfhood-2026-06-21.md",
+      "bytes": 7061,
+      "sha256": "64d4340813364838bc01278641255d032e4008b373176f70a0e452039092e0d2",
+      "sourceBlobSha": "47d534a8479177ed3e934a20a69cedab5cd88175"
+    },
+    {
+      "path": "79-book-conversion-and-editorial-audit-2026-07-31.md",
+      "bytes": 21763,
+      "sha256": "7ffa85de77cd4afb955fac5fb5a665ea99fbdf3213211772d58637ad308caa62",
+      "sourceBlobSha": "e9051576e6ea9e43a7c59d41d362f30779b7dd25"
+    },
+    {
+      "path": "80-official-periodicals-pdf-ledger-73-links-2026-07-31.md",
+      "bytes": 20238,
+      "sha256": "db8558d0f679af810cc1e1ff45007a7ddc84a7a12144975e040e44017032ad43",
+      "sourceBlobSha": "39f28c31c5c9cc7ab33668a9156cc67aa2d545ec"
+    },
+    {
+      "path": "81-official-hole-closures-2026-07-31.md",
+      "bytes": 4096,
+      "sha256": "168c062a32409621b17eefbd58af4e9be8b5de3bdd021b003a88d6e8e2a7f805",
+      "sourceBlobSha": "384433e04a81aab1d87efadb2d82836dd2f738f4"
+    },
+    {
+      "path": "82-book-engine-migration-inventory-2026-07-31.md",
+      "bytes": 9500,
+      "sha256": "b9bea0d384d43ddc09db2c6b3239533bc7aa8ad3c22ec3bebaa35f5faef33ccb",
+      "sourceBlobSha": "e57dd3996146ced9194acca839166a8c9d12964a"
+    },
+    {
+      "path": "83-initial-claim-to-source-matrix-10-chapters-2026-07-31.md",
+      "bytes": 27014,
+      "sha256": "86e601778552d3adb7175674c5db4ca2ba140ab5b1ecd96f7d5c5c55ac85035e",
+      "sourceBlobSha": "f9da9f0eb1a4250bd2df377b3d07942f2a6b096d"
+    },
+    {
+      "path": "84-book-production-status-and-marathon-plan-2026-09-06.md",
+      "bytes": 30445,
+      "sha256": "1073bb07a28e5005f0655e9376e496b502d4f882d974f081b3950dda77cc28d8",
+      "sourceBlobSha": "800c3b2bca5d214d4f2dd76e749b2d1b7d75b1b5"
+    },
+    {
+      "path": "84-second-pdf-djvu-acquisition-ledger-61-links-2026-07-31.md",
+      "bytes": 15891,
+      "sha256": "6fbf7ebc2d5a9db48f4a3bb7d132aa2bdfbf61d6094ab9c976b0ce0b8f84209f",
+      "sourceBlobSha": "de07e913ded2c1715380aef5a0d5b1cfb9f05121"
+    },
+    {
+      "path": "85-ch06-kargel-source-to-claim-2026-09-06.md",
+      "bytes": 18254,
+      "sha256": "21fdce2e73de1f4eb73feeac890bfbde2e3c5074e90e477809a2222927d3aeed",
+      "sourceBlobSha": "4ca051cf71eacc2d323dad18b48544285142b832"
+    },
+    {
+      "path": "86-ch06-kargel-visual-dossier-2026-09-06.md",
+      "bytes": 10314,
+      "sha256": "5fd97832989d4723bddb365a67fcbbf8e4f2c8c994f7c39bbdefe3cc63f51c01",
+      "sourceBlobSha": "008ad935fad139e621209a6c8e00d193432a8a59"
+    },
+    {
+      "path": "87-ch06-kargel-1884-novovasilievka-role-closure-2026-09-06.md",
+      "bytes": 3329,
+      "sha256": "199dec1f05a5bae759515cb2f6066c1aae239adb80a5271e5cedeb5856456d17",
+      "sourceBlobSha": "68d5c033261a6c912b4063f3083a63844f945908"
+    },
+    {
+      "path": "88-ch06-kargel-1907-congress-role-closure-2026-09-06.md",
+      "bytes": 3969,
+      "sha256": "769e51101dadc1f56a295716be8817ebb804e920adf75d59261dfb17bcdba6da",
+      "sourceBlobSha": "1c91ac6a877bf9805b389fbf78f769f368f3eda2"
+    },
+    {
+      "path": "89-ch06-kargel-1913-creed-facsimile-identity-rights-2026-09-06.md",
+      "bytes": 4271,
+      "sha256": "a23a5e6685df6047379b41980e3d3b85e4157f0e86edd41dcde1084a9b8f1032",
+      "sourceBlobSha": "abf1f31cb57fae68894e4e7149f96128cfb2ec47"
+    },
+    {
+      "path": "90-ch06-kargel-1913-theology-claim-matrix-2026-09-06.md",
+      "bytes": 10474,
+      "sha256": "fe77951adec66e69f7ab77b91d07ade5d9c645e7afecb2c754cfca1d29212a51",
+      "sourceBlobSha": "676abb7900e0d8ad137e9e79251288b8870549a0"
+    },
+    {
+      "path": "91-ch06-kargel-baedeker-prison-mission-source-pass-2026-09-06.md",
+      "bytes": 13137,
+      "sha256": "4fd17e6d5cfe8a04efb01e900067e91c1bc0c769a58f768e6e9b6e31237d2714",
+      "sourceBlobSha": "e30fb7263878ca68ba6957d1c513ab841933f941"
+    },
+    {
+      "path": "92-ch06-kargel-1869-baptism-discrepancy-resolution-2026-09-06.md",
+      "bytes": 7735,
+      "sha256": "999c20ae7fbd3ed662a7fd4182f0e6b82f8cf1f2e35df074a6cf1cdda8c606da",
+      "sourceBlobSha": "9eb9a4c07d10211630bbd56bd9c7e8b62bbe0bee"
+    },
+    {
+      "path": "93-ch06-kargel-dor-status-2026-09-06.md",
+      "bytes": 3276,
+      "sha256": "6da8dd8d79ca6bb7626dcd12f1ce56c5a758aa722418d22fa68a588720ee4082",
+      "sourceBlobSha": "eabe11cc9a0ffb155cc7e4f67ece4023c37d57d8"
+    },
+    {
+      "path": "94-ch07-mazaev-prokhanov-source-to-claim-2026-09-06.md",
+      "bytes": 22567,
+      "sha256": "bcb5f4ada356e88f7f8fc33535c3024a383e3da0d99fb2783d13c0ec79e87c57",
+      "sourceBlobSha": "b3ea5cd2eab6443817c499fe07aac522dd5b764f"
+    },
+    {
+      "path": "95-ch07-mazaev-prokhanov-visual-dossier-2026-09-06.md",
+      "bytes": 12169,
+      "sha256": "60ef4af53c629e73a8942434053e453222e3f99aee1299288d20044f921deb26",
+      "sourceBlobSha": "511170feec868e0fade9ca95a0d07c2bba278c98"
+    },
+    {
+      "path": "96-ch07-vladikavkaz-1912-date-resolution-2026-09-06.md",
+      "bytes": 9650,
+      "sha256": "eea1fa3c0ce5e10ae10a402da87489a8c4e79155d9a1f5b13c5dc9e507a7b2bd",
+      "sourceBlobSha": "39947da71e4aa21a0bde578895e6dd55d82b1829"
+    },
+    {
+      "path": "97-ch07-baptist-1911-1912-periodical-acquisition-2026-09-06.md",
+      "bytes": 9542,
+      "sha256": "48bb94167a584f35aec87ac61e7a829055aa7d78c8047ce6793dd9be9089ba50",
+      "sourceBlobSha": "4bc1a01e21f461638116acdd11ea530696e2175f"
+    },
+    {
+      "path": "98-ch08-print-republic-source-to-claim-2026-09-06.md",
+      "bytes": 25246,
+      "sha256": "a6f4bd3e81a7d2a01d6869731f1a1ee90a5b9839edea457eddc2a34043005964",
+      "sourceBlobSha": "d92272c9eb6f2d8109daef8ceef581ff5e2ac654"
+    },
+    {
+      "path": "99-ch08-print-republic-visual-dossier-2026-09-06.md",
+      "bytes": 14156,
+      "sha256": "e287b3994fac0c672c054cfd62af78f6245dead78674a71fe97660f73ba74edb",
+      "sourceBlobSha": "031456da526028d96b8c0564da58d898255d2cf1"
+    },
+    {
+      "path": "baptist_history_research.md",
+      "bytes": 202412,
+      "sha256": "1cf7b409f11dabc084c6fbdffcfcdeae563609f133f08436bcec0b02165c1426",
+      "sourceBlobSha": "06337e6abc3fb82478bfefdfc1bb5868dad13b77"
+    },
+    {
+      "path": "baptist_sources_report.md",
+      "bytes": 7598,
+      "sha256": "2f3d5f67ea54619a061a3ac01935fdb8d10ea89db802a490c18d55209aa2bdde",
+      "sourceBlobSha": "03b5a65f873f0b9220f795636bd0016aa81309b0"
+    },
+    {
+      "path": "map-data/README.md",
+      "bytes": 3116,
+      "sha256": "ff8846e63adda23078bc33b78c3880750a440fd0a308b83b6f072ec6705137d2",
+      "sourceBlobSha": "549ed725b6561f0851dc90dff5bebad7f133592d"
+    },
+    {
+      "path": "map-data/church-points-draft.csv",
+      "bytes": 15510,
+      "sha256": "262ac71e38c8ef428c6eedc7ec7aca1b27c21ab150bd7a2ee3df58539a0c6e7f",
+      "sourceBlobSha": "d647306e855d5db4f88b123b2f1cfb763cb7884c"
+    },
+    {
+      "path": "map-data/closure-events-draft.csv",
+      "bytes": 5748,
+      "sha256": "2a1136f82c639ce303445cba08179d38bed9faac038a43aebff3ecf11ecee874",
+      "sourceBlobSha": "ff16e47955436c53132052044b234d8ba9942daa"
+    },
+    {
+      "path": "media-ledger.md",
+      "bytes": 21355,
+      "sha256": "a58c028c5ca4a4f3cb4b5be4e7e81449c6234a4a76043e81ea84106a0db72788",
+      "sourceBlobSha": "917f186299ae10970773d6017650bc6aa919de5f"
+    },
+    {
+      "path": "raw-media/commons/bulletin-relatives-1972.jpg",
+      "bytes": 352367,
+      "sha256": "6deaeff4ff589abf19efcd69a0be4fa5a2db5f369ad9518d3983b741f3020442",
+      "sourceBlobSha": "d0f14c3e7078b5c6b706f262aba92d4f1b572048"
+    },
+    {
+      "path": "raw-media/commons/bulletin-relatives-1981.jpg",
+      "bytes": 548707,
+      "sha256": "499231991571e3fc4857268cb981a0ede5a8c0680d8e179f9b60afe2e7bbeef0",
+      "sourceBlobSha": "5f28bf95d00a07739408d965f093196dc22f474f"
+    },
+    {
+      "path": "raw-media/commons/initiative-letter-1961.jpg",
+      "bytes": 219731,
+      "sha256": "70a14c9dd3c993cabcf55ccfe9a16b51c71c034833fe256ed16d1e767f6bc6f9",
+      "sourceBlobSha": "52703bcd75ae45dd00cec3c5e6d27e23716c4dcc"
+    },
+    {
+      "path": "raw-media/commons/kalveit.jpg",
+      "bytes": 80661,
+      "sha256": "911513a7ee5efa50759e9a0db1a9f6ef3761ae98a81ad7b42eab38fd657f9a52",
+      "sourceBlobSha": "360c449ef87531ed7465943a444565670402c91e"
+    },
+    {
+      "path": "raw-media/commons/kargel-ivan.jpg",
+      "bytes": 28316,
+      "sha256": "23f2f782c369f8ae3aef9a16a62551d0a76c4ec3729bd97a604c03ca107ee221",
+      "sourceBlobSha": "7bad748a91e05e3da527ba6985778af4148dd81e"
+    },
+    {
+      "path": "raw-media/commons/kryuchkov-vins-trial-1966.jpg",
+      "bytes": 55891,
+      "sha256": "3955eb67b01f74824ded3bf73006b9e76371f22b519eeec0892c92887713a7a2",
+      "sourceBlobSha": "72ad08994bc78de697ef30f5b41847ab65e3d6cf"
+    },
+    {
+      "path": "raw-media/commons/pashkov-vasily.jpg",
+      "bytes": 280819,
+      "sha256": "a4b5d8be676d0f5913d607c20bf1f1382b9c35fae3aa4a20f751c9f40ba773e1",
+      "sourceBlobSha": "ae1d1c5a270c0dd411b8ea17034182c52783ab72"
+    },
+    {
+      "path": "raw-media/commons/prokhanov-young.png",
+      "bytes": 397430,
+      "sha256": "ba9c78101e22edadd3f9dbf2f6299aefda1963eb904c36e0a3ad1958c8ad0f51",
+      "sourceBlobSha": "245f1b06952b85abce1f450611cc04d0520152db"
+    },
+    {
+      "path": "raw-media/commons/ratushny-mikhail.jpg",
+      "bytes": 114467,
+      "sha256": "c5fad220e753edd7471476e0fede51f7e77039bf365fd3bbe544c859be9b18ae",
+      "sourceBlobSha": "85d876206f37effc42fa1fca3cac7fb3f51c39a4"
+    },
+    {
+      "path": "raw-media/commons/ratushny-pavlov-lisitsin.jpg",
+      "bytes": 41179,
+      "sha256": "a4da2c74519d5f25f93a13e9ffeaeac451a83fc33386619e0148f07eaab4b34c",
+      "sourceBlobSha": "0cd1e7509d932efb54cb0914a30be04d169f95eb"
+    },
+    {
+      "path": "raw-media/commons/vestnik-spaseniya-1965.jpg",
+      "bytes": 101395,
+      "sha256": "eeecf7de882a953d45087f3b7685dc663c7a27a666b9b5ee8fe6370e375ca437",
+      "sourceBlobSha": "95f47d3f1f97c05b921aad4d801c649e9cc9f20a"
+    },
+    {
+      "path": "raw-media/commons/vladivostok-appeal-1961.jpg",
+      "bytes": 1602926,
+      "sha256": "bd0f869d1d319d017b37370298860c4391287b445834c1d0d3639684f3a8417e",
+      "sourceBlobSha": "86dd9b7a1f490be4d7b5ec310f081b37b50d3a94"
+    },
+    {
+      "path": "raw-media/commons/voronin-nikita.jpg",
+      "bytes": 120593,
+      "sha256": "0aa88bdb0ed7b14d5e51638ca16bfe333ac964bf3579283bd7f3853f9f5b0128",
+      "sourceBlobSha": "6b5614bc1e90fead71ea2e893f6a3e883ca5caaa"
+    },
+    {
+      "path": "raw-media/commons/vsehb-august-1945.png",
+      "bytes": 1001074,
+      "sha256": "f8ef9209a766c0afc99a70fe33a7eb16b58a25d00917ecc1d02fd05f0c0d0092",
+      "sourceBlobSha": "fc462c9ba22befe8d5e5ca5f394d064748b92cd2"
+    },
+    {
+      "path": "raw-media/commons/wieler-family-before-1889.jpg",
+      "bytes": 551334,
+      "sha256": "833a1bc07d86fed6592005cdeae68e5b9f33bc2b14d036fab2e5ca1432780faa",
+      "sourceBlobSha": "7d36dbcb9749678f6ab4426c81df8fc6a5932b1d"
+    },
+    {
+      "path": "raw-sources/1929-constitutional-amendment-art4-2026-06-19.txt",
+      "bytes": 3444,
+      "sha256": "b02117f9e70a7a3d2eb4d3a2c4c41a07e10967e7ac128ca58441d9faf53e09bb",
+      "sourceBlobSha": "ceb6a011f6882f0259f89f696a921cc5a193138e"
+    },
+    {
+      "path": "raw-sources/altdanzig-geography-gazetteer-2026-06-19.txt",
+      "bytes": 3142,
+      "sha256": "b0d467250ab9f015b440a8e3adcb984f3fef31be50729c3dff6472565d453e2c",
+      "sourceBlobSha": "7ebb273d79d571a02e51f2816baf2b4a04480e77"
+    },
+    {
+      "path": "raw-sources/azbyka-smolin-russian-sects.txt",
+      "bytes": 280677,
+      "sha256": "05d58c278f71272f671be5a18953777928ea93d34235ec9c108281e72e864ed1",
+      "sourceBlobSha": "651f5a1a6cf388318e6a0173d77512d2a750232b"
+    },
+    {
+      "path": "raw-sources/baptist-org-kalweit-1419261-snapshot-2026-06-19.txt",
+      "bytes": 4017,
+      "sha256": "1a17742c74473869cfc142bcaceb6daabc561c822c279dab3b292cbe67d6a737",
+      "sourceBlobSha": "8d9646386f7d7121b1d06d55b5684ad4b4719d18"
+    },
+    {
+      "path": "raw-sources/baptist-org-kalweit-article-1419261-lead-404.txt",
+      "bytes": 268,
+      "sha256": "449b9a9f4007a76ef375264042e3ce0145e05771d7d4232be4a8602785b3b60e",
+      "sourceBlobSha": "61fb994890cc26af52c0c93c9bbd8032e452c5ff"
+    },
+    {
+      "path": "raw-sources/batchenko-nkvd-normative-acts-1929-1930.txt",
+      "bytes": 120678,
+      "sha256": "52460e08fc9360d4d3cac20597d6ebbd00d929a8c60dbc56285eec04049a204c",
+      "sourceBlobSha": "b0549755220976a3b7476f93d52eb21a45a260c0"
+    },
+    {
+      "path": "raw-sources/belyakova-collective-practices-ehb-late-ussr-2012.pdf",
+      "bytes": 455064,
+      "sha256": "dc8cff49681dfbd1fd5f180b54a6c7819567b0641ef36649c1c802f75e36ce0a",
+      "sourceBlobSha": "5a682d5a57cb4d4036bbe9d394019de92924c1cd"
+    },
+    {
+      "path": "raw-sources/bornovolokov-military-question-ru-real.pdf",
+      "bytes": 742828,
+      "sha256": "c7b34ccdbd7fc783f04647c4320451c2078c957f730d6b4d45f95ce55665542e",
+      "sourceBlobSha": "3b397dba02261cce5aba2ad85366162e16c611dc"
+    },
+    {
+      "path": "raw-sources/bornovolokov-military-question-ru-real.txt",
+      "bytes": 121668,
+      "sha256": "a176798816b53a7947c42ce2168de88a6022a37d420f7b2ccb3926ab47c440ed",
+      "sourceBlobSha": "280f9b284dc7ce8183862d5815d0515f39d46428"
+    },
+    {
+      "path": "raw-sources/bornovolokov-military-question-ru.pdf",
+      "bytes": 3746,
+      "sha256": "5561479ba19a52f1f91ad664014cf7df6bf98cce1e7f6060b654537dc5d3d117",
+      "sourceBlobSha": "2426ca211d05f852544dfb33bd5f76ba22775129"
+    },
+    {
+      "path": "raw-sources/bornovolokov-military-question-uk-real.pdf",
+      "bytes": 710945,
+      "sha256": "ff8a0002b7918761dea10144c6e7025972b90f28ed51c31d13e88a786ebd6fd1",
+      "sourceBlobSha": "e614dadc830963d765daaf9be6f1798d42452c87"
+    },
+    {
+      "path": "raw-sources/bornovolokov-military-question-uk-real.txt",
+      "bytes": 118806,
+      "sha256": "c486a66e43f45d5c89503ce37d35a4be5f53df4efa99e58ce7fc866b21e5595b",
+      "sourceBlobSha": "0369be44c6d1bc983b52e7d8f87005215cfe2bc1"
+    },
+    {
+      "path": "raw-sources/bornovolokov-military-question-uk.pdf",
+      "bytes": 3746,
+      "sha256": "dfec17855298d7cec46252ae995480b42c54b101f00f3a4f3b0374c23bc27c38",
+      "sourceBlobSha": "0b479408e237628402e0b0c6e7683757cffeb936"
+    },
+    {
+      "path": "raw-sources/brotherly-vestnik-1963-06-mbchurch.txt",
+      "bytes": 387164,
+      "sha256": "0249e140033bd9300a6d396e8838c5b012628f74c0853c68506df2a292cf63f0",
+      "sourceBlobSha": "6bd79f4fdee8d3c2ccacc44d8c708d611d07272a"
+    },
+    {
+      "path": "raw-sources/bulletin-council-relatives-009-1972.pdf",
+      "bytes": 949926,
+      "sha256": "be3eaa57f2db6e4f016b3cd8403718ab55495cb79229f1514feea0ef9923d72d",
+      "sourceBlobSha": "5c355d098a78709833d747d980c08d2be37f8c31"
+    },
+    {
+      "path": "raw-sources/bulletin-council-relatives-010-1972.pdf",
+      "bytes": 1433431,
+      "sha256": "b23b0eb684103544e855a4a8f8b9f0f8813a6cf4ad9311bbb38fa0560e98cdd0",
+      "sourceBlobSha": "633bb614e261bb097cfe798560a0ccea893491cf"
+    },
+    {
+      "path": "raw-sources/bulletin-council-relatives-044-1977.pdf",
+      "bytes": 1171788,
+      "sha256": "79e9fab61164ffd2c881ac641402e8b8bd9806bad8cf9b1360aa8b35568ce55c",
+      "sourceBlobSha": "66f54198e369f836387a18b40c203468c662a4eb"
+    },
+    {
+      "path": "raw-sources/bulletin-council-relatives-084-1980.pdf",
+      "bytes": 863296,
+      "sha256": "04c74d788c18535e37134f15f5bb99b30aa8ea2e7b4c9d727ca581ca559d6f84",
+      "sourceBlobSha": "d7f4c8624c60db8b35d02cb1faac546528a3ac77"
+    },
+    {
+      "path": "raw-sources/bulletin-council-relatives-088-1980.pdf",
+      "bytes": 934092,
+      "sha256": "b9ab4ba90de42e4ea37a53843e8f0dfe72fd79515d4121ddb7f79bc6095a3750",
+      "sourceBlobSha": "d8e3602a055666b4edd0959761c8f7eb0741d3a1"
+    },
+    {
+      "path": "raw-sources/calvinism-arminianism-russian-baptists-2026-06-19.txt",
+      "bytes": 3504,
+      "sha256": "9bb010b25245cb0bcb571e558b13e9ef5f122c5cbec84f615f1dfe8fcd7e7e5c",
+      "sourceBlobSha": "b93effd577012eab4a9a5481dcf136eb5f643ce2"
+    },
+    {
+      "path": "raw-sources/church-directory-moscowbaptist-2026-06-14.txt",
+      "bytes": 14621,
+      "sha256": "85633f58f79dc7dd08c077d885d92c32a21431dd4e785b4b77c4cdcd9af7bf04",
+      "sourceBlobSha": "db34e1992d834590972228153b65998f78ff7919"
+    },
+    {
+      "path": "raw-sources/church-directory-nrc-ebf-ru-2026-06-14.txt",
+      "bytes": 4721,
+      "sha256": "23f3059805f982d77bcf1a891a2b60a3aa1916f838455b6f48bfb748fcfd365f",
+      "sourceBlobSha": "0c6d0ce7441d46c4950cdfb636df603ff04eccae"
+    },
+    {
+      "path": "raw-sources/church-directory-ocehb-spb-2026-06-14.txt",
+      "bytes": 1069,
+      "sha256": "670d0dc232e1c634fd5893deba07582b4cc85a4c8c8b9876dd1fa47d1210de07",
+      "sourceBlobSha": "262ac3fd2128effd1cfab6b10cafa087431958fb"
+    },
+    {
+      "path": "raw-sources/church-directory-rusbaptist-stunda-addresses-2026-06-14.txt",
+      "bytes": 139377,
+      "sha256": "b3fc7cbdff7f238f9fa9d1b0c3fd6d2bd9142a3af1a8be2717914c9191564186",
+      "sourceBlobSha": "fea8ada51608b46e48986536c74939c80c8fa053"
+    },
+    {
+      "path": "raw-sources/coleman-2005-two-1884-events-excerpts-2026-06-19.txt",
+      "bytes": 2280,
+      "sha256": "f84986da5e8fed3864c4ed942d46a09850d9fc5fac96859a09ec44ac86404c46",
+      "sourceBlobSha": "e31cdfa60ea932568ef8247dcc872485712b51d2"
+    },
+    {
+      "path": "raw-sources/coleman-petersburg-1884-unity-conference-2026-06-19.txt",
+      "bytes": 2432,
+      "sha256": "14c58a5a0bceeaa5776fc9f7f06144fd974498eaa61791862f5d9ae341f0738a",
+      "sourceBlobSha": "5d3e45483eeca4d5acd24f9b591d72b82e162e0e"
+    },
+    {
+      "path": "raw-sources/corrado-2000-pashkovites-2026-06-19.txt",
+      "bytes": 2214,
+      "sha256": "2eb8ef20efcad5e138310d7ae98ec1ad9fcd3aee163cbc86d92dba7d0d7a7002",
+      "sourceBlobSha": "562b046c36d548056814d3247fb46bf9910694e6"
+    },
+    {
+      "path": "raw-sources/dorodnitsyn-materialy-1908-doc301-307-323-excerpts-2026-06-19.txt",
+      "bytes": 5633,
+      "sha256": "78f9cd3857b874fee90e960824a1a99f5a36885ecc19037821622f177925f561",
+      "sourceBlobSha": "4145db4dfbb752e2a9d8ef7974f6f849a7bb8eec"
+    },
+    {
+      "path": "raw-sources/dorodnitsyn-yuzhno-russkij-neobaptizm-azbyka.txt",
+      "bytes": 836810,
+      "sha256": "75e7ee5508cfc0a72e59a6bb60f8f6c6d3b51f015d361955942f101caf4bd843",
+      "sourceBlobSha": "753c9c086c92c268b889cc9a30f509dcff739bfd"
+    },
+    {
+      "path": "raw-sources/early-pietist-roots-wuest-bonekemper-2026-06-19.txt",
+      "bytes": 5340,
+      "sha256": "1b92eca236c7dfb23c765d3a39165ae96d3d421911a5115f73b3d2e7cee93ff2",
+      "sourceBlobSha": "d58f18f0a7c638da96f7e9a9017946c3f61bc2fc"
+    },
+    {
+      "path": "raw-sources/emigration-america-central-asia-2026-06-19.txt",
+      "bytes": 2978,
+      "sha256": "40b55855936e65c9d8c76d3aa3bc910e71de396c7ded953ef809e29de2bd9bff",
+      "sourceBlobSha": "6ffb7245b2ebdb07827b6a4b07630fa840a7270b"
+    },
+    {
+      "path": "raw-sources/fetler-dom-evangelia-2026-06-19.txt",
+      "bytes": 5831,
+      "sha256": "f163aa5574bf5753229a33af7fc67332f886380d5b98d6ff053dc943699599ba",
+      "sourceBlobSha": "1b544d5594bd5e84d33c77532f364be83d3e4d23"
+    },
+    {
+      "path": "raw-sources/foreign-channels-sga-radio-smuggling-2026-06-19.txt",
+      "bytes": 3807,
+      "sha256": "fb64c6f78baa9b03ff5fe80acf7c0b992bf6d9c8b60f9369595f2fc0c162c939",
+      "sourceBlobSha": "7896fbe7075702089936d862a1c211860997bc71"
+    },
+    {
+      "path": "raw-sources/foreign-levers-tms-macarthur-2026-06-19.txt",
+      "bytes": 3796,
+      "sha256": "b8617049d50b3f1670a0f0d97d89b63d414bca29ee08e797e9cd299d06c40b50",
+      "sourceBlobSha": "ba351a5fe8905bcf78307fd1f1323124c6d2f255"
+    },
+    {
+      "path": "raw-sources/hero-profiles-pavlov-mazaev-2026-06-19.txt",
+      "bytes": 4531,
+      "sha256": "716a3ed132df97aceb5f1b51c7461613c79622bf381bdd85886d2db8d99ed161",
+      "sourceBlobSha": "5d460d24fa776f2797dda354e548ace90d50b00d"
+    },
+    {
+      "path": "raw-sources/historyofecb-self-origin-debate-excerpt-2026-06-19.txt",
+      "bytes": 3250,
+      "sha256": "c43b370112a5d7cdf0cc635cd854a35517480403e3ba9dc7c5c1a866d6bc977e",
+      "sourceBlobSha": "447306f5fa9109a349a7d6411a0b796d3c2e2252"
+    },
+    {
+      "path": "raw-sources/international-dimension-vins-siberian-seven-2026-06-19.txt",
+      "bytes": 4433,
+      "sha256": "9b9490be400fd1ce0ebe232ce55469a48f26323afae1abab5901f1507d43d440",
+      "sourceBlobSha": "4f4648b15da1ef766c011de4a978f412559685f2"
+    },
+    {
+      "path": "raw-sources/istmat-1919-decree.txt",
+      "bytes": 5786,
+      "sha256": "b7b8d75a05f8e17cdb8449ee634a49724702dc504216c3d4828909bf29045b2b",
+      "sourceBlobSha": "fc86ce51f91599da5dcb818c063bf55a9c673a4d"
+    },
+    {
+      "path": "raw-sources/kargel-bridge-figure-verified-2026-06-19.txt",
+      "bytes": 5829,
+      "sha256": "5379fc52aa6f18d54dd4d678748a7c23880c2e0b219f617a85e679053892c604",
+      "sourceBlobSha": "64f2f5f8930047046cd18b94befcd15560fb3c46"
+    },
+    {
+      "path": "raw-sources/late-soviet-initiative-council-samizdat-2026-06-19.txt",
+      "bytes": 7072,
+      "sha256": "4acd8d26b6ab5c8a270cdd8bbaf4a6bfd0d946357f7f072d9d883d031f6215c0",
+      "sourceBlobSha": "91b6ddd304c5e87d8619f43dd4f8789f049fe817"
+    },
+    {
+      "path": "raw-sources/macarthur-and-the-russians-tms-podcast-2026-06-19.txt",
+      "bytes": 5817,
+      "sha256": "67fb6c00505029d7d5fe0d2c28594ec12a1a0379219ae21e128e39229cb6f83b",
+      "sourceBlobSha": "18cf1a0dd4e505f5ceb58f554e9661a704198d0d"
+    },
+    {
+      "path": "raw-sources/macarthur-moscow-2004-qa-2026-06-19.txt",
+      "bytes": 2512,
+      "sha256": "cd8c43aab2fd32eb562ba7f260c98e1d431332743d5c691d07e751e523eb214e",
+      "sourceBlobSha": "acbf300d4685011fcf56b64ca5964b96c3d16dc8"
+    },
+    {
+      "path": "raw-sources/macarthur-ukraine-russia-2019-2026-06-19.txt",
+      "bytes": 2836,
+      "sha256": "1c2f0fe8d5cd9b03c7f6041d429092f20116e4e290a85e52c9d52768de694a53",
+      "sourceBlobSha": "68ffc375fcb42aef4cd14a134a35584e3c73b96e"
+    },
+    {
+      "path": "raw-sources/mbchurch-brotherly-vestnik-1947-05.txt",
+      "bytes": 328100,
+      "sha256": "2876e1f54d3d3dce1e88e7abdada7ed193c259c8885368034bb8abbb62e11e9f",
+      "sourceBlobSha": "b856a1eb9c7d66c1ea0578b4b5cf7067b069fc74"
+    },
+    {
+      "path": "raw-sources/mbchurch-brotherly-vestnik-1967-04.txt",
+      "bytes": 411254,
+      "sha256": "b7aeae4a05e3beb5b1fd2cbc1ba270123fa250f87a829f850e0644693579fe78",
+      "sourceBlobSha": "2b49ddb8678ca4b9a13168c8d2bb380d24cffdda"
+    },
+    {
+      "path": "raw-sources/mbchurch-voronin-article-2017.txt",
+      "bytes": 30063,
+      "sha256": "908222cfddc953b70981007af4afbc71483050e436a50752e05e0b931d744911",
+      "sourceBlobSha": "3b3c15e09a139b2337f14067a35f82e3a47ac245"
+    },
+    {
+      "path": "raw-sources/military-question-primary-trail-1918-1926-2026-06-19.txt",
+      "bytes": 8683,
+      "sha256": "94806a1744ba01932d41902c0eba709db0943fae9da249d988a7c42bb9bb3116",
+      "sourceBlobSha": "008bb6fb09f7988ad9a00c00696ea5397af8205a"
+    },
+    {
+      "path": "raw-sources/military-question-world-wars-2026-06-19.txt",
+      "bytes": 3381,
+      "sha256": "902d9588f2ed073104dc7da23c822f6cb7dae50baeb8753781c47b0c425c408b",
+      "sourceBlobSha": "346a1569a26a426eb358984154fda833af105b66"
+    },
+    {
+      "path": "raw-sources/missionary-magazine-1870-01-vol50-no1.txt",
+      "bytes": 133114,
+      "sha256": "23f5f4a1e2b1d69aff2112373d9e1259703fa1adbf346ae5c6b53740105b9da7",
+      "sourceBlobSha": "9bd9dfd25542f1df66a75b29e6c7d3c2f9c471d8"
+    },
+    {
+      "path": "raw-sources/postsoviet-rsehb-msc-ehb-2026-06-19.txt",
+      "bytes": 5173,
+      "sha256": "309f6f8f31dd5fe4d856c6729c53fb147530598e837c51f107819531991ffa57",
+      "sourceBlobSha": "92e4ca48c3721df95fd8aca5d1c975472ba53d90"
+    },
+    {
+      "path": "raw-sources/postwar-accessions-1945-1965-2026-06-19.txt",
+      "bytes": 6960,
+      "sha256": "b0626b4ff34d98c794806b5764c28f4da3c594cc2c546da2ef3eafe965083a79",
+      "sourceBlobSha": "6ea0f51bb0cc424d6446887537a2dd76bbad951c"
+    },
+    {
+      "path": "raw-sources/potapova-russian-baptists-evangelical-christians-origin-unity-2014.pdf",
+      "bytes": 383336,
+      "sha256": "548bd1c6fb7dca872743c7c70e04958e44f37245a48fda996ff6f350cf39e5e0",
+      "sourceBlobSha": "a95bac9f9ea2e815514bb1437d25bc09305d5071"
+    },
+    {
+      "path": "raw-sources/poysti-radio-and-tmai-geography-2026-06-19.txt",
+      "bytes": 2592,
+      "sha256": "ee0ae33647477d7d83471f8422fb1d6289174ff06914185f37e49220abae373e",
+      "sourceBlobSha": "a0d6ec9ea97233c2fc6dc056e309d1a75055583d"
+    },
+    {
+      "path": "raw-sources/pravenc-molokane-2021.txt",
+      "bytes": 52923,
+      "sha256": "29f504ba64d9fc8a346c9847ca1e1f676ddeb3fe8721eb802e07a95bf48dfbab",
+      "sourceBlobSha": "541d18223a00173fb30b47abadbba804ffb4b9e0"
+    },
+    {
+      "path": "raw-sources/pravenc-voronin-2010.txt",
+      "bytes": 4271,
+      "sha256": "a3d84ad7e03d759301e0be88db7f84426a94b3bb8377c5fc567167f7075f629a",
+      "sourceBlobSha": "097124f69b928b265a93f256732d804cce055100"
+    },
+    {
+      "path": "raw-sources/pritzkau-1914-english-review-excerpts-2026-06-19.txt",
+      "bytes": 4014,
+      "sha256": "61940fa198fb52b67b653da8943a50d9c7d0b3b885815b5fae5a923520a501bc",
+      "sourceBlobSha": "c270924c543d78fede128d06198e25f330bd9f7b"
+    },
+    {
+      "path": "raw-sources/prokhanov-evangelical-christians-verified-2026-06-19.txt",
+      "bytes": 3083,
+      "sha256": "4acdb4257469ff67b74314d27002bdd5fa6f640c179bd0d46b94c5dbf482be80",
+      "sourceBlobSha": "5048008cddcfd14b8d78e72a1f99eecaf2552a8f"
+    },
+    {
+      "path": "raw-sources/reshenie-life-given-for-christ-popov-2014.txt",
+      "bytes": 24135,
+      "sha256": "ef48b7a71a9830a435d66457786c239da1d0ebcb1914097134c537b33a021d03",
+      "sourceBlobSha": "e75ce073a4753bf239e3b0bf81adf25a81c9e6d1"
+    },
+    {
+      "path": "raw-sources/rozhdestvensky-yuzhnorusskij-shtundizm-azbyka.txt",
+      "bytes": 1170171,
+      "sha256": "13f31432b55ecd57090a04e512f29af1942e07afbb06be30ee51839e285cd22d",
+      "sourceBlobSha": "49b6da3659bf0f4c5e24df23ad5fe1a64ccf7821"
+    },
+    {
+      "path": "raw-sources/sim_baptist-missionary-magazine_1870-02_50_2.txt",
+      "bytes": 136319,
+      "sha256": "0e7275ad148fb8e6e37a0ea8debd2753aa301065fcec6b10b38ccdc2911bbb94",
+      "sourceBlobSha": "cc00a1927ab96d9196779c757ce7f0a0e37390b4"
+    },
+    {
+      "path": "raw-sources/sim_baptist-missionary-magazine_1870-12_50_12.txt",
+      "bytes": 130599,
+      "sha256": "6860334f20f3672532766d29868583e993e17b61f4f18e0cec9be3d5d02053da",
+      "sourceBlobSha": "8ffc0b59b170e1b2dc228a1b81c8c5888fcff941"
+    },
+    {
+      "path": "raw-sources/theological-debates-alcohol-2026-06-19.txt",
+      "bytes": 2632,
+      "sha256": "55541ec90d7c040bce0c9c82b1a3848e7af9f7899406ef8b22966dda1ba22a7a",
+      "sourceBlobSha": "a4cd7f895c4b76f1af3a0c55e7a5a5501df5b8d1"
+    },
+    {
+      "path": "raw-sources/wardin-2009-indigenous-question-excerpts-2026-06-19.txt",
+      "bytes": 5309,
+      "sha256": "a55bed293ab77bb04c48325585320475e5818eda7fcb6f99b94ea38808445b31",
+      "sourceBlobSha": "3e6b5edd4364420c33f275ed5049ed2accd95a07"
+    }
+  ]
+}

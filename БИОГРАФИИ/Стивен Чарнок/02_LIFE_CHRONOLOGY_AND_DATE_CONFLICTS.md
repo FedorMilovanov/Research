@@ -106,13 +106,13 @@
 | **1678, ноябрь** | **Проповедь «A DISCOURSE UPON Gods Knowledg» (Пс. 147:5) — единственная в корпусе проповедь Чарнока с точным месяцем.** Сноска 1.108 в фолианте 1682, стр. 328, дословно: «**Nov. 1678. When the Popish Plot was discover'd.**» В теле: «'Tis a ground of great Comfort under the present dispensation wherein we are; We have heard the Doctrinal part, and God hath given us the Experimental part of it in his special Providence this day, upon the Stage of the World» | **Фолиант 1682, узел `A32723.0001.001/1:11`, сноска 1.108** | `A1` |
 | 1678, ноябрь | **Антипапская апокалиптика:** единственное место во фолианте 1682, где Чарнок толкует Откровение как современность — Фиатира = «an Emblem or Description of the Romish State», Иезевель = «a whorish Church», «Rome did at first strongly profess Christianity… but afterwards fell into the practice of Jezebel» (стр. 329) | Фолиант 1682, узел `1:11`, стр. 329 | `A1` |
 | **1680, 25 июля** | **Составлено завещание.** «His will, made on 25 July 1680, bequeathed **£111**, mostly to female relatives, and the unspecified remainder to his executor and cousin, **the widow Ann Sykes; the will mentions neither wife nor children**» | Greaves, ODNB (DOI 10.1093/ref:odnb/5172) | `B1` по получению, `A1` по природе документа; `ARCHIVE_HOLD` на оригинал |
-| **1680, 27 июля** | Смерть. Завещание составлено **за два дня до** — смерть не была для Чарнока неожиданной | ODNB (завещание) | `B1` |
-| **1680, 4 октября** | **Аукцион второй библиотеки Чарнока** по печатному каталогу ***Bibliotheca Charnockiana***, Лондон; 1330 предмета; продажа принесла **£366 5s 1d** | Book Owners Online (по каталогу 1680 и Pearson, *The Library* 2010) | `B1`; `ARCHIVE_HOLD` |
+| **1680, 27 или 28 июля** | Ранние печатные свидетельства расходятся относительно дня смерти. Завещание от 25 июля предшествовало смерти примерно на 2–3 дня; по самому интервалу нельзя судить, ожидал ли Чарнок её наступления. **Погребение 30 июля** удостоверено по изображению печатного регистра Chester 1882, с. 265; рукопись ещё не проверена | Broadsides 1680, ODNB и Chester (1882) | `CONFLICT` (смерть), `PRINTED_IMAGE_VERIFIED` (погребение) |
+| **1680, 4 октября** | **Аукцион второй библиотеки Чарнока** по печатному каталогу ***Bibliotheca Charnockiana***, Лондон; **1 330 лотов по исследованию Pearson (2010)**, не 1 330 физических томов; сумма **£366 5s 1d** приводится у Lawler (1898, с. 139), однако **не сверена по первичному priced-экземпляру**. Проверка возможна: интерлинированный экземпляр с рукописными ценами — University of Manchester (John Rylands), JISC 91830889 | Book Owners Online (по каталогу 1680 и Pearson, *The Library* 2010); JISC для экземпляра | `B1`; `VERIFIABLE_AT_MANCHESTER` ([аудит книжного наследия](supplemental-audits/BOOK_HISTORY_AND_LIBRARY_AUDIT_AGENT5_2026-11-16.md), § 2.4) |
 | 1675–1680 | Жалоба congregation: sermons — «but morality or metaphysics» | Adams & Veal | `A1` |
 | **1675–1680 (или ранее)** | **Поэт 1680: «To Fowler's place God call'd him to succeed»** — единственное указание на **предшественника** Чарнока в лондонской должности. Ни Johnson, ни Adams & Veal, ни Wood, ни Calamy предшественника не называют | **Анонимный поэт 1680 (`A52960.0001.001`) — эксклюзив** | `A1` (печатный объект) / `B1` (утверждение) |
 | **1660** | **Причина ухода из Ирландии по поэту 1680: «Did then reduce him not for any crimes, / But by an alteration of the times»** — прямое отрицание вины; самая ранняя печатная версия | **Анонимный поэт 1680 (`A52960.0001.001`) — эксклюзив** | `B1` |
 | **1680** | Первое издание *A treatise of divine providence* (`A32726.0001.001`, Wing C3712): титульный лист с эпиграфом **Пс. 103:19 «His Kingdom Ruleth over all»**, лист «Advertisement», эпистол «TO THE READER» | **EEBO-TCP, CC0-статус под вопросом (каталог: Restricted)** | `A1` |
-| **~1628** | **Отрицательный факт: «His Birth and his Beginning scarcely known»** — в 1680 году сочувствующий поэт, пишущий слушателям, открыто заявляет, что данных о рождении нет. Внутреннее подтверждение того, что в 1680 году в среде не circulировало сведений о годе и месте рождения | **Анонимный поэт 1680 (`A52960.0001.001`)** | `B1` (утверждение об отсутствии) |
+| **~1628** | **Отрицательный факт: «His Birth and his Beginning scarcely known»** — в 1680 году сочувствующий поэт, пишущий слушателям, открыто заявляет, что данных о рождении нет. Внутреннее подтверждение того, что в 1680 году в среде не циркулировало сведений о годе и месте рождения | **Анонимный поэт 1680 (`A52960.0001.001`)** | `B1` (утверждение об отсутствии) |
 | **1680, последняя проповедь** | **Тема: «To anger he was slow for our sins past. / Upon which subject Charnock preacht the last»** — медленность Божьего гнева, долготерпение в день благодати; и следствие: «Patiently for to bear, when we did discern / Offences given, and in our hearts to love / Our Enemies». **Текст sermon: Наум 1:3** | **ДВА независимых поэта 1680: `A52960.0001.001` (Thomas Snowden) и `A39134.0001.001` (Thomas Cockerill) — эксклюзив; больше нигде в отделе** | `B1` ×2 |
 | **1680** | Элегия 100 строк даёт **пять sermon'ов Чарнока по библейским текстам**: 2 Пар. 16:9 (Промысл), Ин. 16:9 (неверие), Ин. 17:3 (познание Бога и Христа), Пс. 14:1 (бытие Божье и атеист), Наум 1:3 (терпение) | **Анонимная элегия 1680 (`A39134.0001.001`) — эксклюзив** | `A1` (объект) / `B1` (аттрибуция) |
 | **~1675–1680** | «From God an Instance but for **five years** space» — независимое contemporaneous подтверждение длины лондонского периода публичного служения | **Элегия 1680 (`A39134.0001.001`)**; ср. Wood: «the five last years of his life» | `B1` |
@@ -311,6 +311,17 @@ Morning-Exercise sermon. Разрешение: это не противореч�
 College admissions register. До неё рабочая формулировка: **«в 1642 году принят sizar в Emmanuel
 College, Cambridge»** без дня.
 
+**Уточнение 2026-11-16 (`A1`, прочитан Парсонс 1815).** В биографическом очерке Парсонса — **первого
+издателя, снабдившего «Works» аппаратом**, — **даты матрикуляции нет вовсе**: период 1628–1642
+заполнен одной фразой «At a very early period, he entered upon a course of preparatory studies in
+Emanuel College, Cambridge, under… Dr. William Sancroft». Следовательно дата «8 июля 1642» **не
+принадлежит биографической традиции**, а приходит к Маккошу 1864 либо от университетского регистра,
+на который Маккош ссылается, либо от позднейшего справочника. Это **сужает круг проверки**: искать
+надо не в компиляциях XVIII–XIX вв., а в **административных записях Кембриджа** (Emmanuel College
+admissions, Cambridge University matriculation book). По датам Маккош, кстати, сам себе противоречит
+в другой точке: он пишет «entering in 1642, is proceeding B.A. in 1645-6», что для sizar'а,
+принятого в июле 1642 г., предполагает срок без обычной задержки.
+
 ### `CONFLICT-14` — последняя должность: «Fowler's place» или Crosby Hall с Watson'ом
 
 | Сторона | Утверждение | Источник |
@@ -327,7 +338,7 @@ College, Cambridge»** без дня.
 Hall — позднейшее приписывание (Wood даёт «as I think» об издателе и лишь указывает здание).
 
 **Допустимая формулировка:** «Поэт 1680 года называет предшественника Чарнока в его последней
-лондонской должности "Fowler'ом"; этот факт не согласуется с narrativом о Crosby Hall / Watson и
+лондонской должности "Fowler'ом"; этот факт не согласуется с нарративом о Crosby Hall / Watson и
 требует отдельной проверки.»
 
 **Гипотеза (B1).** Fowler = **Christopher Fowler (1610–1678)**, изгнанный по Act of Uniformity
@@ -645,7 +656,7 @@ Emmanuel admission/matriculation record, New College fellowship book, акт о�
 
 | ID | Источник и локатор | Опора и ограничение |
 |---|---|---|
-| CTX-01 | [UNIFORMITY1662](https://www.legislation.gov.uk/aep/Cha2/14/4/enacted);II;Form of Assent | Держатель бенефиция должен публично прочитать установленную молитву и объявить согласие; в тексте срок доStBartholomew1662, не дата королевской санкции |
+| CTX-01 | [UNIFORMITY1662](https://www.legislation.gov.uk/aep/Cha2/14/4/enacted);II;Form of Assent | Держатель бенефиция должен публично прочитать установленную молитву и объявить согласие; в тексте срок до St Bartholomew 1662, не дата королевской санкции |
 | CTX-02 | [UNIFORMITY1662](https://www.legislation.gov.uk/aep/Cha2/14/4/enacted);III;Deprivation | Отказ/неисполнение в срок влечёт лишение духовных должностей с оговоркой lawful impediment; это норма, не доказательство изгнания Чарнока из конкретного прихода1662 |
 | CTX-03 | [CONVENTICLES1670](https://www.legislation.gov.uk/aep/Cha2/22/1/enacted);I;Persons of the Age of16Years | Порог пять или более сверх домашнего хозяйства; субъект16лет и старше,в пределах обозначенных территорий; не «более пяти» и не всякое частное общение |
 | CTX-04 | [CONVENTICLES1670](https://www.legislation.gov.uk/aep/Cha2/22/1/enacted);I–IV;Penalties | Слушатель5шиллингов первый/10повтор;проповедник£20/£40;хозяин£20;не смешивать фунты и шиллинги;этим актом не доказан смертный приговор за посещение |
@@ -841,7 +852,7 @@ Barnard подчёркивает зависимость Henry от оккупа�
 SHA256 `505f653df483ce85f615b02e67dd454e7963b68fd16e2c008a724e480def1748`.
 Это keyboarded text, не изображение листа и не приходский регистр.
 Титул сообщает **Wednesday the28ofJuly,1680**, погребение30числа;
-Wood,1691,p.491 сообщает **27July1680**, погребение30числа наp.492.
+Wood,1691,p.491 сообщает **27July1680**, погребение30числа на p. 492.
 Обе версии сохранены. Два объекта не удостоверяют независимость сведений;
 день недели не используется для молчаливого выбора даты.
 

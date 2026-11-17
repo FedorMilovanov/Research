@@ -95,6 +95,7 @@ Current analytical authority:
 - The visible email itself does not establish G3 Press as part of the same transaction. Press inclusion remains a weaker recipient/secondary layer pending a Press-specific transaction/recipient object.
 - `Living Heritage = successor` and `Treefort = successor` are blocked. Living Heritage bundling and Treefort/app infrastructure are service/vendor evidence, not beneficial-ownership proof.
 - Apple/Google G3 seller/developer metadata and the live G3+/Press surfaces are dated platform state only; they cannot prove either that a transfer closed or that it did not.
+- **Nov. 15, 2026 delta:** G3's own root notice says G3 Plus and G3 Press `are continuing in a new form, under new leadership`, details to follow once the transition is complete. Transferee, closing and terms remain an external-document hold; the registry name `Lumena Ministries, Inc.` is the renamed G3 corporation and must not be reported as the acquirer.
 
 Canonical Q006 controls:
 
@@ -102,10 +103,12 @@ Canonical Q006 controls:
 - [`PRIMARY_SOURCE_G3PLUS_SUBSCRIBER_EMAIL_2026-08-27.md`](PRIMARY_SOURCE_G3PLUS_SUBSCRIBER_EMAIL_2026-08-27.md)
 - [`ASSET_TRANSFER_TREEFORT_VENDOR_GUARDRAIL.md`](ASSET_TRANSFER_TREEFORT_VENDOR_GUARDRAIL.md)
 - [`EVIDENCE_BATCH_2026-09-08_PASS23.md`](EVIDENCE_BATCH_2026-09-08_PASS23.md)
+- [`Q005_Q006_GEORGIA_FILING_DELTA_2026-11-15.md`](Q005_Q006_GEORGIA_FILING_DELTA_2026-11-15.md) — dated Q005/Q006 overlay
 
 ### Governance / legal status
 
 - Georgia Secretary of State listed `G3 Ministries for the Church, Inc.` as **Active/Compliance** on Sep. 8, 2026. Operational wind-down therefore must not be called completed Georgia corporate dissolution at that cutoff.
+- **Nov. 15, 2026 delta:** Georgia filing history shows the same corporation renamed **`Lumena Ministries, Inc.`**, effective Oct. 28, 2026, followed by two amended annual registrations, and no dissolution filing. The current status field and the filing bodies were not acquired. See [`Q005_Q006_GEORGIA_FILING_DELTA_2026-11-15.md`](Q005_Q006_GEORGIA_FILING_DELTA_2026-11-15.md).
 - Official archived G3 `Who We Are` capture `20260721102641` primary-verifies a July 21, 2026 Board of Directors consisting of Buck Braswell, Matt Broome, Jon Norton, Matt Sikes, Dylan Joyner and Ron Mooney.
 - Exact-head late-board CDX acquisition for Jul. 21–Aug. 31 returned only that capture. The exact target-page Wayback route is exhausted; absence of a later capture does **not** prove the roster stayed unchanged.
 - Exact 2025 director transition mechanics remain a new-primary-evidence/document hold: both known G3 roster archive paths are exhausted for the critical window, while Georgia detail/history access is 403 unauthenticated.

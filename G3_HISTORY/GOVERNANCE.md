@@ -222,15 +222,16 @@ Official Georgia Secretary of State Business Search acquired on 2026-09-08 lists
 
 The acquisition code was corrected to follow the live Georgia markup and exact official detail navigation contract. Exact-head run `34244820320` reproduced the site's POST to `/BusinessSearch/BusinessInformation` with `businessId=2751672`, `businessType=Domestic Nonprofit Corporation`, and `fromSearch=true`; that detail/filing-history endpoint returned **HTTP 403**, as did query/path GET fallbacks.
 
-Thus:
+**Date-scoped September finding (2026-09-08):**
 
 - operational wind-down — supported;
 - Church Network dissolution — supported;
-- Georgia corporate dissolution — **not true as of the dated official status observation**;
-- current search-row state — primary-accessible;
-- later detail/filing-history surface — exactly resolved but access-blocked.
+- the Georgia business-search status field on 2026-09-08 said `Active/Compliance`;
+- the detail endpoint was unavailable in that acquisition, which never proved an absence of subsequent filings.
 
-A later filing can change the status. The detail 403 does not prove that later filings do not exist and does not provide exact 2025 director-transition dates.
+**New official registry-index evidence (2026-11-15; see [`Q005_Q006_GEORGIA_FILING_DELTA_2026-11-15.md`](Q005_Q006_GEORGIA_FILING_DELTA_2026-11-15.md) and `SOURCE_LEDGER.md` G3-S144):** the *same* corporation appears under the amended name **Lumena Ministries, Inc.**, effective **2026-10-28** (filing `32257311`). The index lists amended annual registrations `32260917` (2026-10-30) and `32269080` (2026-11-05). At the time of that index reading no dissolution-type entry appeared in the eight listed filings. This is **not** an acquired current-status field, dissolution certificate, filing-body PDF, officer roster or proof that Lumena acquired G3+ / G3 Press.
+
+The November index and September status are distinct dated primary observations. Do not present September's `Active/Compliance` as a November status, or the absence of a dissolution filing in the observed index as an all-time legal certification. Details of the 2025 director transitions remain an external-document HOLD; the 2025 registration index row `29366217` is not its unread filing body.
 
 ## G3 Church Network governance problem
 

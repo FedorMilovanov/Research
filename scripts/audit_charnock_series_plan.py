@@ -425,22 +425,42 @@ def check(plan, root=ROOT):
     if receipt['sourceArchiveSha256'] != receipt['destinationSha256Readback']:
         raise ValueError('Historical receipt archive checksum mismatch')
     changed = []
+    live_root_policy_drift = []
     for name, meta in manifest['files'].items():
         if name.startswith('xml/'):
             source = registry['sources'][Path(name).stem]
             if meta['sha256'] != source['sha256'] or meta['bytes'] != source['size']:
                 raise ValueError('Baseline source pin changed')
-            continue  # XML bytes remain external;this audit is not an XML replay.
+            continue  # XML bytes remain external; this audit is not an XML replay.
         path = (root / name).resolve()
         if not path.is_relative_to(root.resolve()):
             raise ValueError('Unsafe baseline manifest path')
         raw = path.read_bytes()
-        if len(raw) != meta['bytes'] or hashlib.sha256(raw).hexdigest() != meta['sha256']:
+        current_sha = hashlib.sha256(raw).hexdigest()
+        if len(raw) == meta['bytes'] and current_sha == meta['sha256']:
+            continue
+        if name == 'AGENT_RULES.md':
+            # This is a live repository-wide policy, not a Charnock source witness.
+            # Retain the immutable historical receipt, report its dated divergence,
+            # and leave validation of the *current* policy to the required root
+            # authority CI. Never certify these new bytes as the saved packet.
+            live_root_policy_drift.append(dict(
+                path=name, receiptSha256=meta['sha256'], currentSha256=current_sha))
+        else:
             changed.append(name)
     expected = ['БИОГРАФИИ/Стивен Чарнок/00_README_AND_NAVIGATION.md',
-                'БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md']
+                'БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md',
+                'БИОГРАФИИ/Стивен Чарнок/01_BIOGRAPHICAL_WITNESSES_AND_EVIDENCE_HIERARCHY.md',
+                'БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md',
+                'БИОГРАФИИ/Стивен Чарнок/03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md',
+                'БИОГРАФИИ/Стивен Чарнок/04_CHARACTER_MINISTRY_AND_THEOLOGY.md',
+                'БИОГРАФИИ/Стивен Чарнок/06_CORPUS_ACCESS_MATRIX_AND_LOCATORS.md',
+                'БИОГРАФИИ/Стивен Чарнок/07_REPO_CROSSLINKS_AND_DRIVE_MIRROR.md',
+                'БИОГРАФИИ/Стивен Чарнок/17_PROMPT_PARALLEL_AGENT_HISTORICAL_CONTEXT.md']
     if sorted(plan['expectedChangedPacketMembers']) != sorted(expected) or sorted(changed) != sorted(expected):
-        raise ValueError('Unexpected changes to the preserved source packet')
+        raise ValueError('Unexpected changes to the preserved source packet: '
+                         f'declared={sorted(plan["expectedChangedPacketMembers"])}; '
+                         f'allowed={sorted(expected)}; observed={sorted(changed)}')
     architecture = (root / expected[1]).read_text()
     if '## 21.' not in architecture or any(d['title'] not in architecture for d in documents):
         raise ValueError('Human architecture does not contain the ten current passports')
@@ -455,8 +475,9 @@ def check(plan, root=ROOT):
                 completedPackages=[t['id'] for t in tasks if t['status'].startswith('DONE')], openPackages=[t['id'] for t in tasks if t['status'] == 'OPEN'],
                 targetWords=[sum(d['targetWords'][i] for d in documents) for i in (0, 1)],
                 publicationState='BLOCKED', historicalReceiptMatchesCurrentTree=False,
-                changedPacketMembers=sorted(changed), currentRevisionCustody='NOT_REVERIFIED',
-                boundary='Saved receipt metadata/source pins checked;not remote authentication or fresh XML-byte replay')
+                changedPacketMembers=sorted(changed), liveRootPolicyDrift=live_root_policy_drift,
+                currentRevisionCustody='NOT_REVERIFIED',
+                boundary='Saved receipt metadata/source pins checked; live AGENT_RULES.md drift separately disclosed and checked by root CI; not remote authentication or fresh XML-byte replay')
 
 
 def main():
