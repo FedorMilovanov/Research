@@ -700,3 +700,34 @@ Nicole (*WTJ* 47 [1985]) в переводных и вторичных выде�
 ### 16.4. Статус
 
 **HOLD без изменений:** колонки CO 49:100 и CO 45:706; `PRINT_IMAGE_HOLD`; права Nicole/Rainbow/Helm/Archbald; публикационный HOLD; C-17 `TENSION`. **Новый `OPEN`:** путь цитаты Strong III.778 (канал не установлен; состав установлен).
+
+## 17. Раунд 66 (2026-11-17): датировка и источник пастиша Strong III.778
+
+Полная запись — `34_` §4.149 (Q145), S161–S163, `22_` 42dx.
+
+### 17.1. Что установлено
+
+| # | Утверждение | Основание | Класс |
+|---|---|---|---|
+| 1 | Примечание «Richards, Theology, 303-307… he acceded to the theory of universal atonement» уже есть в Strong 1886 (p. 426), в той же формулировке | IA `systematictheolo00strouoft`, лист 450, `inside.php` q=acceded + полное чтение OCR-обёртки 449 | A2 (OCR) |
+| 2 | Пастиша «In later days Calvin wrote…» в издании 1886 г. нет | `inside.php`: «door unto hope» — 0; «without distinction» — только в указателе | `STRONG` (отрицательный поиск по OCR одного экземпляра) |
+| 3 | В изданиях 1889 и 1902 гг. пастиша тоже нет; впервые он появляется в 1907 г. | Полнотекстовый поиск HathiTrust: фраза о «hyper-Calvinistic» — в 1886/1889/1902/1907/1909, «door unto hope» + Calvin + Richards — только в 1907/1909 | `STRONG` (поиск, без прямого чтения 1889/1902) |
+| 4 | Часть «Ин. 3:16» пастиша дословно совпадает с переводом в письме «A Side Light», *New-York Evangelist*, 23.07.1891 (вплоть до ошибки *propitium ostendit* → «holds out the propitiation»); расходится только последнее слово («life» → «hope») | IA FTS (единственное попадание до 1907 г.) + чтение OCR | A2 (OCR); зависимость — `STRONG`; прямое заимствование Стронгом — `OPEN` |
+| 5 | Graham 1857 (pp. 86–87) цитирует латынь Кальвина на Рим. 5:18 в толковании 1 Ин. 2:2 («through the goodness of God, is offered equally to all») | IA `spiritofloveorpr00grahuoft`, лист 123 | A2 (OCR); как звено — `PARALLEL`, не доказано |
+| 6 | Richards p. 309 (Ин. 3:16) в §4.148 и §16.1 процитирован верно («shows himself propitious… calls all men without exception… an entrance into life») | `inside.php` q=propitious, лист 321 | A2 (OCR); пункт 4 «следующих шагов» раунда 65 закрыт |
+| 7 | Рецепция пастиша после 1907 г.: Topical Excerpt Library 1908, Poe 1938, **Thiessen 1949**, Sword of the Lord 1958, McComas 1975, Baker 1994, Towns 1995 | Только сниппеты IA FTS | `LEAD` |
+
+### 17.2. Что не найдено (отрицательные результаты)
+
+- «offered unto all men without distinction» и «not for a part of the world only» (часть «Рим. 5:18») — в IA FTS до 1907 г. 0 попаданий.
+- В IA FTS «door unto hope» до 1907 г. не встречается.
+
+### 17.3. Значение для корпуса
+
+- Гипотеза «Стронг взял пастиш у Ричардса» ослаблена ещё больше: ссылка на Ричардса появилась в 1886 г., пастиш — только в 1907 г., и формулировка Ин. 3:16 у них разная.
+- Вероятный фон появления пастиша — американский пресвитерианский спор 1889–1893 гг. о пересмотре Вестминстерского исповедания (формулы с «propitiation» по 1 Ин. 2:2). Это `INFERRED`.
+- Для `01_` (линия Strong → Chafer/Thiessen) Thiessen 1949 отмечен как воспроизводящий пастиш (`LEAD`, `VERIFY` по книге: книга доступна только через выдачу).
+
+### 17.4. Статус
+
+HOLD без изменений: CO 49:100, CO 45:706, `PRINT_IMAGE_HOLD`, права, публикационный HOLD, C-17 `TENSION`. Путь пастиша: часть «Ин. 3:16» → *New-York Evangelist* 1891 (`STRONG`); части «Рим. 5:18» и «Мф. 26:28» и прямой источник Стронга — `OPEN`. Доступ к HathiTrust заблокирован с адреса песочницы, поэтому прямое чтение изданий 1889 и 1902 гг. отложено.
