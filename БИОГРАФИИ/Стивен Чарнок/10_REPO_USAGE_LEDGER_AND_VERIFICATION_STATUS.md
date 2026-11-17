@@ -106,7 +106,7 @@ without **A**theistical heads». Формулировка, зафиксиров�
 («atheistical hearts without atheistical heads»), — **нормализованная по капитализации**. При
 цитировании по первому изданию капитализации следует восстановить либо оговорить нормализацию.
 
-**Контекст, который должен сопровождать цитату.** Афоризм стоит внутри толковании Пс. 14:1 и
+**Контекст, который должен сопровождать цитату.** Афоризм стоит внутри толкования Пс. 14:1 и
 непосредственно развивается двумя предложениями: «Their reasons may defend the Notion of a Deity,
 while their hearts are empty of affection to the Deity: Jobs Children may curse God in their
 hearts, tho not with their lips.» Это **усиливает** предохранитель корпуса: Чарнок говорит не о
