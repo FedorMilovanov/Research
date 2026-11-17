@@ -99,3 +99,5 @@
 9. Agent 5 / PR #526, merged 2026-11-16 with 4/4 checks pass: historical status for F-51 and the CO 47:64 Latin witness is recorded in the authority/review note; this status does not lift `LOCATOR_HOLD` on the scan.
 
 **Status semantics:** statements about Calvin are historical claims in a translated/commentary witness; statements about Greek are local textual observations against the identified digital edition; doctrinal classifications remain inferences. No single lemma and no single verse supplies the complete extent doctrine.
+
+> **Поправка 2026-11-17 (AGENT 2, раунд 64; строки выше не правились).** Локатор «CO 47:64» (стр. 86, 95, 99) уточняется до **CO 47:64–65**: OCR-слой печатного скана CO 47 (`operaquaesupersu0075calv`, лист 53) прочитан, фраза «se tamen toti mundo propitium ostendit, quum sine exceptione omnes ad fidem Christi vocat» стоит в **кол. 65** (карта колонтитулов). Формула «печатный скан CO 47:64 всё ещё `LOCATOR_HOLD`» устарела: текст сверен по самому CO, открытым остаётся только `LOCATOR_HOLD(visual)` — изображение страницы не просмотрено. Основание — `AGENT2_STRICT_DEFINITE_ATONEMENT_ARGUMENT_AUDIT_2026-11-17.md` §14.2, §15.
