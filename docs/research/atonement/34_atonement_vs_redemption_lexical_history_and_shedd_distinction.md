@@ -8192,6 +8192,8 @@ vniverselle**, que toutesfois **Dieu n'appelle pas à foy tous hommes selon ce p
 
 См. S39/S46/S50/S158/S160, §4.31, §8 пп. 33 и 46, `01_` §3.1.2. Статья Прокопенко пастиш не воспроизводит.
 
+**Локатор CO 45 (раунды 68–69, 2026-11-17).** В доступном томе `ioanniscalviniop0045vari` (CO vol. 45, Brunsvigae 1891) OCR-шапки колонок связывают обёртки 376/378/379/380 с колонками 706/710/712/714. Текст `Caeterum sub multorum nomine non partem mundi tantum designat, sed totum humanum genus…` и следующее `Notandum tamen simul est, quod apud Lucam (pro vobis)…` локализуются в кол. 711; кол. 706 содержит Мф. 26:26 (`Hoc est corpus meum`). Раунд 69 сообщает независимую вторую копию IA `operaquaesupersu0000calv` (том не указан в метаданных): OCR помещает «Sub multorum nomine…» рядом с шапкой «112» (= кол. 712), что подтверждает локатор 711 по левой колонке. Поэтому локальные ссылки на пассаж Мф. 26:28 исправлены с 706 на 711. Оба чтения — `A2` по OCR, не визуальная колляция; `LOCATOR_HOLD(visual)` сохраняется. См. отчёты [раунда 68](https://github.com/FedorMilovanov/Research/pull/554#issuecomment-6955876089) и [раунда 69](https://github.com/FedorMilovanov/Research/pull/554#issuecomment-6956542801) в PR #554.
+
 **Остаётся `HOLD`.** Визуальная колляция печатных страниц и точный путь источников в Strong не установлены (`PRINT_IMAGE_HOLD`; `OPEN`). Вывод о позиции Кальвина по объёму искупления здесь не выносится.
 ## 5. Анализ и границы допустимой формулировки
 

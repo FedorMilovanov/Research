@@ -129,9 +129,14 @@ def check_repairs(root: Path, report: dict, overrides: dict | None = None) -> li
                     revision_ids.add(revision_id)
                 if (not isinstance(old_text, str) or not old_text
                         or not isinstance(replacement_text, str) or not replacement_text
-                        or old_text == replacement_text or not revision.get("reason")
+                        or old_text == replacement_text
+                        or not isinstance(revision.get("reason"), str)
+                        or not revision["reason"].strip()
                         or not isinstance(revision_basis, dict)
-                        or not revision_basis.get("file") or not revision_basis.get("section")):
+                        or not isinstance(revision_basis.get("file"), str)
+                        or not revision_basis["file"].strip()
+                        or not isinstance(revision_basis.get("section"), str)
+                        or not revision_basis["section"].strip()):
                     errors.append(f"{ident}: incomplete historical revision {revision_id}")
                     continue
                 if historical.count(old_text) != 1:
@@ -142,9 +147,39 @@ def check_repairs(root: Path, report: dict, overrides: dict | None = None) -> li
                     errors.append(f"{ident}: superseded historical wording remains in {file}")
                 if replacement_text not in text:
                     errors.append(f"{ident}: reviewed historical revision {revision_id} missing in {file}")
-                revision_basis_file = revision_basis["file"]
-                if not (root / revision_basis_file).is_file():
-                    errors.append(f"{ident}: missing historical revision evidence {revision_basis_file}")
+
+                # These fields are traceability anchors only. They do not prove
+                # that the cited source supports the revision; scholarly review
+                # remains a separate human decision.
+                revision_basis_path = Path(revision_basis["file"])
+                if revision_basis_path.is_absolute() or ".." in revision_basis_path.parts:
+                    errors.append(f"{ident}: historical revision evidence path must be repository-relative")
+                else:
+                    repository_root = root.resolve()
+                    evidence_path = (root / revision_basis_path).resolve()
+                    try:
+                        evidence_path.relative_to(repository_root)
+                    except ValueError:
+                        errors.append(f"{ident}: historical revision evidence path escapes repository")
+                    else:
+                        if not evidence_path.is_file():
+                            errors.append(f"{ident}: missing historical revision evidence {revision_basis_path}")
+                        else:
+                            section_anchor = revision_basis["section"]
+                            try:
+                                evidence_text = evidence_path.read_text(encoding="utf-8")
+                            except (OSError, UnicodeDecodeError):
+                                errors.append(f"{ident}: unreadable historical revision evidence {revision_basis_path}")
+                            else:
+                                heading_lines = [
+                                    line for line in evidence_text.splitlines()
+                                    if re.match(r"^#{1,6}\s+.+$", line)
+                                ]
+                                if heading_lines.count(section_anchor) != 1:
+                                    errors.append(
+                                        f"{ident}: historical revision evidence locator is missing or non-unique "
+                                        f"in {revision_basis_path}"
+                                    )
             if "SUPERSEDED" not in required or historical not in text:
                 errors.append(f"{ident}: historical retention lost its explicit boundary/text")
             if required in text and historical in text and text.index(required) > text.index(historical):
