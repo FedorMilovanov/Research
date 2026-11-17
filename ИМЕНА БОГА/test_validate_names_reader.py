@@ -71,6 +71,43 @@ class ReaderCrosswalkTests(unittest.TestCase):
         changed["chapters"][2]["sections"][9]["editorialRole"] = "EXACT_RESEARCH_CLAIM_MATCH"
         self.assertTrue(any("unproved section" in e for e in self.check(registry=changed)))
 
+    def test_ruth_job_direct_digital_mt_locus_cannot_be_moved_or_promoted(self):
+        mutations = (
+            (0, "url", "https://mechon-mamre.org/p/pt/pt2705.htm"),
+            (0, "sourceId", "SRC-NONEXISTENT"),
+            (0, "speakerAndForce", "YHWH_DIRECT_SPEECH"),
+            (1, "locus", "Job 6:17"),
+            (1, "witnessScope", "ANCIENT_MANUSCRIPT_DIRECT_COLLATION"),
+            (2, "claimGraphStatus", "APPROVED_REGISTERED_CLAIM"),
+        )
+        for idx, field, fake in mutations:
+            with self.subTest(index=idx, field=field):
+                changed = copy.deepcopy(self.registry)
+                changed["chapters"][2]["sections"][9]["directTextLoci"][idx][field] = fake
+                self.assertTrue(any("CH03 Ruth/Job direct digital-MT trace drifted" in e
+                                    for e in self.check(registry=changed)))
+
+    def test_ruth_job_reader_links_hold_and_modern_mt_status_remain_enforced(self):
+        for mutation in ("delete_locus", "erase_source_link", "erase_hold", "upgrade_mt"):
+            with self.subTest(mutation=mutation):
+                changed = copy.deepcopy(self.registry)
+                readers = dict(self.readers)
+                sources = copy.deepcopy(self.sources)
+                row = changed["chapters"][2]["sections"][9]
+                if mutation == "delete_locus":
+                    row["directTextLoci"].pop()
+                elif mutation == "erase_source_link":
+                    path = EXPECTED_READER_FILES["CH-PILOT-03"]
+                    readers[path] = readers[path].replace(
+                        "https://mechon-mamre.org/p/pt/pt2901.htm", "https://invalid.example/ruth", 1)
+                elif mutation == "erase_hold":
+                    row["unresolvedArgumentBoundary"] = "All source graph gaps closed."
+                else:
+                    mt = next(s for s in sources["records"] if s["id"] == "SRC-MT-MECHON")
+                    mt["criticalEditionCollated"] = True
+                err = self.check(registry=changed, readers=readers, sources=sources)
+                self.assertTrue(any("CH03 Ruth/Job" in e for e in err), err)
+
     def test_secondary_theology_requires_explicit_unclosed_boundary(self):
         changed = copy.deepcopy(self.registry)
         changed["chapters"][0]["sections"][3]["unresolvedArgumentBoundary"] = ""

@@ -22,6 +22,16 @@ EXPECTED_READER_FILES = {
     "CH-PILOT-03": "reader/CH-PILOT-03_EL_ELOHIM_SHADDAI.md",
 }
 WORD_BUDGETS = {"CH-PILOT-01": 3200, "CH-PILOT-02": 3200, "CH-PILOT-03": 3600}
+# Three direct modern printed-MT verse surfaces, not attestation or critical apparatus.
+CH03_UNMAPPED_MT_LOCI = (
+    ("Ruth 1:20–21", "https://mechon-mamre.org/p/pt/pt2901.htm",
+     "NAOMI_GRIEF_HUMAN_SPEECH_NOT_DIVINE_SELF_IDENTIFICATION"),
+    ("Job 5:17", "https://mechon-mamre.org/p/pt/pt2705.htm",
+     "ELIPHAZ_ADMONITION_HUMAN_SPEECH_NOT_DIVINE_SPEECH"),
+    ("Job 42:7–9", "https://mechon-mamre.org/p/pt/pt2742.htm",
+     "YHWH_REBUKES_THREE_FRIENDS_NO_BLANKET_DENIAL_OF_EVERY_ELIPHAZ_SENTENCE"),
+)
+
 ROLES = {
     "EXACT_RESEARCH_CLAIM_MATCH",
     "SECONDARY_ATTRIBUTED_NOT_IN_CLAIM_GRAPH",
@@ -144,6 +154,32 @@ def validate_reader_crosswalk(
                 source = by_source_id.get(source_id)
                 if source and source.get("publicationState") != "BLOCKED":
                     errors.append(f"reader: {cid}/{heading} source was prematurely promoted")
+            if cid == "CH-PILOT-03" and heading == "Когда «Шаддай» звучит без «Эль»":
+                expected = [
+                    {
+                        "locus": locus,
+                        "sourceId": "SRC-MT-MECHON",
+                        "url": url,
+                        "speakerAndForce": speech_role,
+                        "witnessScope": "MODERN_EDITED_HEBREW_TEXT_NOT_CRITICAL_MANUSCRIPT_COLLATION",
+                        "claimGraphStatus": "NO_STANDALONE_LOCKED_ATT_OR_CLM",
+                    }
+                    for locus, url, speech_role in CH03_UNMAPPED_MT_LOCI
+                ]
+                if (row.get("directTextLoci") != expected
+                        or ids != [] or stored_sources != []
+                        or role != "BIBLICAL_LOCI_NOT_IN_LOCKED_105_ATTESTATIONS"):
+                    errors.append("reader: CH03 Ruth/Job direct digital-MT trace drifted")
+                src = by_source_id.get("SRC-MT-MECHON", {})
+                if (src.get("evidenceClass") != "B1" or src.get("accessState") != "PARTIAL_OBJECT"
+                        or src.get("sourceRole") != "DIGITAL_TEXT_SURFACE_ONLY"
+                        or src.get("criticalEditionCollated") is not False
+                        or src.get("publicationState") != "BLOCKED"):
+                    errors.append("reader: CH03 Ruth/Job modern MT source was falsely upgraded")
+                if any(url not in reading for _, url, _ in CH03_UNMAPPED_MT_LOCI):
+                    errors.append("reader: CH03 Ruth/Job required source hyperlinks absent")
+                if "SOURCE_GRAPH_HOLD" not in (row.get("unresolvedArgumentBoundary") or ""):
+                    errors.append("reader: CH03 Ruth/Job graph HOLD removed")
             gap = row.get("unresolvedArgumentBoundary")
             if not ids and role not in {
                 "SECONDARY_ATTRIBUTED_NOT_IN_CLAIM_GRAPH",
