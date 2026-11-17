@@ -1,6 +1,6 @@
 # Чарнок ED-02 — сверка трёх изображений Lingendes 1663 по BSB IIIF (17.11.2026)
 
-**Класс записи:** `RESEARCH_ONLY / ORIGINAL_SCAN_IMAGE_ACCESSED / CITATION_ALIGNMENT_UNRESOLVED`. Дополнение к защищённому историческому досье [04, §0Y](../../04_CHARACTER_MINISTRY_AND_THEOLOGY.md), **не изменение его байтов**.
+**Класс записи:** `RESEARCH_ONLY / ORIGINAL_SCAN_IMAGE_ACCESSED / CITATION_ALIGNMENT_UNRESOLVED`. Дополнение к защищённому историческому досье [04, §0Y](../04_CHARACTER_MINISTRY_AND_THEOLOGY.md), **не изменение его байтов**.
 
 ## Зачем сделана новая сверка
 
