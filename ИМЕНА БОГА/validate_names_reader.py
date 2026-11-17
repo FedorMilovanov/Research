@@ -169,6 +169,19 @@ def validate_reader_crosswalk(
                     and heading == "Когда «Шаддай» звучит без «Эль»"):
                 errors.append("reader: direct digital-MT trace illegally attached to unrelated section")
             if cid == "CH-PILOT-03" and heading == "Когда «Шаддай» звучит без «Эль»":
+                seow = by_source_id.get("SRC-SEOW-INTERPRETATION-2026-JOB42-7-10-DIVINE-ANGER", {})
+                if (row.get("supplementalSourceIds") != ["SRC-SEOW-INTERPRETATION-2026-JOB42-7-10-DIVINE-ANGER"]
+                        or seow.get("sourceRole") !=
+                        "SEOW2026_ORIGINAL_JOURNAL_JOB42_7_10_MULTIPLE_SCHOLARLY_INTERPRETATIONS_NOT_CRITICAL_GREEK_HEBREW_COLLATION"
+                        or seow.get("evidenceClass") != "B1"
+                        or seow.get("criticalEditionCollated") is not False
+                        or seow.get("rightsState") != "PERMISSION_REQUIRED"
+                        or seow.get("publicationState") != "BLOCKED"):
+                    errors.append("reader: CH03 Seow commentary attribution/status drifted")
+                if ("https://journals.sagepub.com/doi/full/10.1177/00209643251410214" not in appendix
+                        or "Сеоу" not in appendix
+                        or "SOURCE_GRAPH_HOLD" not in appendix):
+                    errors.append("reader: CH03 Seow original journal review boundary missing")
                 expected = [
                     {
                         "locus": locus,

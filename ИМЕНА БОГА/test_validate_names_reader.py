@@ -157,6 +157,31 @@ class ReaderCrosswalkTests(unittest.TestCase):
                         for e in self.check(registry=changed))
                 )
 
+    def test_seow_research_commentary_cannot_be_omitted_or_promoted(self):
+        source_id = "SRC-SEOW-INTERPRETATION-2026-JOB42-7-10-DIVINE-ANGER"
+        for mutation in ("drop_link", "fake_article", "promote_source", "fake_role", "erase_apparatus"):
+            with self.subTest(mutation=mutation):
+                registry = copy.deepcopy(self.registry)
+                sources = copy.deepcopy(self.sources)
+                readers = dict(self.readers)
+                row = registry["chapters"][2]["sections"][9]
+                article = next(s for s in sources["records"] if s["id"] == source_id)
+                if mutation == "drop_link":
+                    row["supplementalSourceIds"] = []
+                elif mutation == "fake_article":
+                    row["supplementalSourceIds"] = ["SRC-KRUGER-SHADDAY-JOB-2023-CONTEXT-CRITIQUE"]
+                elif mutation == "promote_source":
+                    article["criticalEditionCollated"] = True
+                elif mutation == "fake_role":
+                    article["sourceRole"] = "ANCIENT_ORIGINAL_HEBREW_CODEX_COLLATED"
+                else:
+                    path = EXPECTED_READER_FILES["CH-PILOT-03"]
+                    readers[path] = readers[path].replace(
+                        "https://journals.sagepub.com/doi/full/10.1177/00209643251410214",
+                        "https://invalid.example/journal", 1)
+                issues = self.check(registry=registry, sources=sources, readers=readers)
+                self.assertTrue(any("CH03 Seow" in issue for issue in issues), issues)
+
     def test_secondary_theology_requires_explicit_unclosed_boundary(self):
         changed = copy.deepcopy(self.registry)
         changed["chapters"][0]["sections"][3]["unresolvedArgumentBoundary"] = ""
