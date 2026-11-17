@@ -503,3 +503,52 @@ Nicole (*WTJ* 47 [1985]) в переводных и вторичных выде�
 - Лексический аргумент о зависимости канона от Кальвина на этом материале не проходит.
 
 **HOLD без изменений** (§11.3); CO 2 и CO 47 добавлены в `LOCATOR_HOLD(visual)`. C-17 `TENSION` сохраняется.
+
+## 13. Review receipt: peer review PR #557 (AGENT 4) и перехват верификации после заморозки #555
+
+**Основание.** MAX, #554, 13:50:39Z (адресное peer review #557); MAX, #555, 13:50:37Z (`PROBATION FAILED / FREEZE`). Пользователь: AGENT 6 закрыт, проверки продолжаются силами AGENT 2. Файлы AGENT 4 и AGENT 6, ledger, C-17 и reader-главы **не редактировались**.
+
+### 13.1. #557 @ `c7707700` — вердикт `CONDITIONAL / HOLD`
+
+Комментарий: `issuecomment-6950270026`.
+- **BLOCKER D1.** rev6 §2 («у Strong III.778 ровно два компонента; хвост Ин. 3:16 — веб-расширение») опровергается печатным OCR p. 778. Стронг сшивает **три** локуса — Рим. 5:18 + Мф. 26:28 + Ин. 3:16 — и приписывает их Comm. 1 Jn 2:2.
+- **MAJOR:**
+  - D2 — блог-транскрипция ≠ A1; пагинация блога не совпадает со сканом;
+  - D4 — «вербатим» → переводческая эквивалентность;
+  - D5 — противоречие Fuller ↔ Рим. 5:18; роль Richards сузить до элемента Мф. 26:28 (Ин. 3:16 — вероятно);
+  - D6 — усечение 1 Ин. 2:2 происходит уже у Уоттса p. 153.
+- **D3** (Рим. 5:18 у Ричардса отсутствует) подтверждён и усилен: постраничный OCR вместо индексного отсутствия.
+- **Цепочка по уровням:**
+  - (b) доказано: Watts p. 153 → Richards pp. 308–310 и Richards → Strong (только для Мф. 26:28);
+  - (c) гипотеза: Watts → Strong для Рим. 5:18 (H1); формула «without distinction» как стандартная передача *indifferenter* (Дорт 1619, англ., II.5) (H2); посредник до 1907 г. (H3).
+
+### 13.2. Новые чтения (OCR текстового слоя; `PRINT_IMAGE_HOLD`)
+
+| ID | Свидетель | Пагинация | Существенное |
+|---|---|---|---|
+| ST-778 | Strong III, `cu31924092368236`, лист 17 | p. 778 (S39) | полный текст цитаты с хвостом «…for although in the world nothing is found worthy of the favor of God, yet he holds out the propitiation to the whole world, since without exception he summons all to the faith of Christ, which is nothing else than the door unto hope» |
+| RI-306–311 | Richards 1846, `lecturesonmental00richrich`, листы 318–323 (wrapper 315–320) | лист = стр. + 12 (S50) | раздел о Кальвине целиком: p. 308 — «distinctly asserted by Dr. Watts» и Мф. 26:28; p. 309 — Ин. 3:16, 1 Кор. 8:11–12, Евр. 10:26; p. 310 — 1 Ин. 2:2 (до «agrees to this place»), 2 Пет. 2:1; p. 311 — Иуд. 4. Рим. 5:18 нет; `"indifferently"` и `"suffered for the sins of the whole world"` → 0 |
+| WA-152–153 | Watts, *Works* VI (1811), `worksofreverendl06watt`, листы 166–167 | лист = стр. + 14 (якоря 149/161, интерполяция) | p. 152: сноска «See the end of this Fifth Consideration». p. 153: катена с латынью — Мф. 26:28, **Рим. 5:18** («…atque omnibus indifferenter Dei benignitate offertur…» / «offered indifferently to all by the bounty of God»), 1 Кор. 8:11–12, 1 Ин. 2:2 (обрыв после «quadrare»), 2 Пет. 2:1. Сноска «Comments… labours of his riper years» |
+
+Следствие для моих узлов: латынь Рим. 5:18, на которую опирается S5 (§0), теперь засвидетельствована печатью 1811 г., а не только вторичными носителями. **CO 49:100 остаётся `LOCATOR_HOLD(visual)`.** Вердикты §0–§12 не меняются.
+
+### 13.3. Перехват после заморозки #555: эталон засвидетельствованного текста вместо L1–L10
+
+Файл AGENT 6 заморожен и не редактируется. Для будущего ревьюера, который будет заменять или снимать L1–L10, здесь фиксируется только засвидетельствованный текст (источники — ревью `5939105630` и §12). **В reader-главы не копировать.**
+
+| # | Не использовать (#555) | Засвидетельствовано | Опора |
+|---|---|---|---|
+| L1 | II.3 `infinitae virtutis` | `infiniti valoris` | `34_` S110 (*Acta* 1620) |
+| L2 | II.2 `aut nostro loco` | `seu vice nostra` | S110 |
+| L3 | II.8 `impetravit` | `acquisivit` | S110 |
+| L4 | Rej. VI `aequaliter` | `ex aequo` | S110 |
+| L5 | II.5 `indiscriminatim` (Schaff) | `promiscue & indifferenter` (*Acta*) | S61 / S110 |
+| L6 | 1 Ин. 2:2, пересказ с `fateor` | «verum esse illud dictum fateor: nego tamen praesenti loco quadrare» | CO 55:310 (OCR) + Watts 1811 p. 153 |
+| L7 | CO 8:336 с `in scholis jactata` | контаминация; в тексте — `pro omnibus` | ревью 5939105630 |
+| L8 | *Inst.* III.1.1 | «quamdiu extra nos est Christus… nobis esse inutile nulliusque momenti» | §12.2 CO-2c |
+| L9 | III.24.17 `offert` | `indiscriminatim denuntiat` (727); `proponi` — слова оппонентов (728) | §12.2 CO-2a/b |
+| L10 | CO 9:484, пересказ с пометкой «OCR-verified» | текст в рамке «quatenus est spiritualis animarum cibus» | ревью 5939105630 |
+
+Сохраняется исправленная формулировка узла B-1: Дорт II.8 — `EXPLICIT` (действенное искупление избранных); несовместимость с гипотетическим универсализмом — `INFERRED`, а не «прямое отвержение» (Rej. V/VI о другом; Девенант подписал Каноны). Строки матрицы 4/6/7/8 — по ревью `5939105630`.
+
+**HOLD без изменений.** Публикационный HOLD; `LOCATOR_HOLD(visual)` для CO 2, 8, 9, 45, 47, 55; `LOCATOR_HOLD` для CO 49:100; C-17 `TENSION`.
