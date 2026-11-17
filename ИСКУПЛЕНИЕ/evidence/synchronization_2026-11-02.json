@@ -2197,7 +2197,48 @@
       },
       "reason": "Retain historical source quotations while explicitly withdrawing derivative interpretations before the reader encounters them.",
       "status": "INTEGRATED_SOURCE_CHECKED",
-      "historicalRetained": true
+      "historicalRetained": true,
+      "historicalRevisions": [
+        {
+          "id": "S50-2026-11-17-Strong-III-778-attribution",
+          "oldText": "Значение: источник пастиша Strong III.778 (фраза о Мф. 26:28 приписана 1 Ин. 2:2); статья Прокопенко пастиш не воспроизводит.",
+          "replacementText": "Значение: близкий текстуальный параллель для Matthew 26:28 clause и 1 John 2:2 context в Strong III.778, но не доказанный источник всего композита. Более ранний Watts, *Works* VI (1811), p. 153 (S158), ставит рядом Calvin-attributed варианты Matt. 26:28 и Rom. 5:18 в обратном порядке; Richards возможен как канал, однако точная передача в Strong не установлена. См. `34_` §4.31/Q144 и §8 п. 46. Статья Прокопенко пастиш не воспроизводит.",
+          "reason": "P34 §4.31/Q144 and §8 item 46, with S158 in this registry, support close verbal parallels only: Watts (1811) precedes Richards (1846), and the exact transmission to Strong III.778 remains open. Narrow the former direct-source attribution; retained source excerpts and locators are unchanged.",
+          "basis": {
+            "file": "docs/research/atonement/34_atonement_vs_redemption_lexical_history_and_shedd_distinction.md",
+            "section": "§4.31/Q144; §8 item 46"
+          }
+        }
+      ],
+      "preCorrectionRetest20261117": {
+        "evaluatedAt": "2026-11-17T16:01:08Z",
+        "method": "Original check_repairs logic materialized from each Git revision before audited historicalRevisions support.",
+        "results": [
+          {
+            "label": "PR fork base",
+            "commit": "5fab12abd16246a0ff5fab558f11001304f2e970",
+            "status": "PASS",
+            "removedExactPresent": true,
+            "requiredNoticePresent": true
+          },
+          {
+            "label": "latest main before merge",
+            "commit": "6b87fc60b0a0aafb86d7da3508cc69529fd13134",
+            "status": "PASS",
+            "removedExactPresent": true,
+            "requiredNoticePresent": true
+          },
+          {
+            "label": "PR HEAD before correction",
+            "commit": "2b21ef30ae115d7ed916f07a877343c182904a62",
+            "status": "FAIL",
+            "error": "S40: historical retention lost its explicit boundary/text",
+            "removedExactPresent": false,
+            "requiredNoticePresent": true
+          }
+        ],
+        "conclusion": "S40 was introduced by the PR’s reviewed 42e wording revision, not pre-existing on either base tree. The current record preserves that exact revision rather than masking the failure."
+      }
     },
     {
       "id": "S41",

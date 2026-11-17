@@ -104,11 +104,50 @@ def check_repairs(root: Path, report: dict, overrides: dict | None = None) -> li
             errors.append(f"{ident}: empty regression control")
             continue
         if row.get("historicalRetained"):
-            # Explicitly preserved history is not an active accepted claim. The
-            # reviewed supersession notice must precede the old wording.
-            if "SUPERSEDED" not in required or removed not in text:
+            # Explicitly preserved history is not an active accepted claim. Later
+            # reviewed corrections to a retained preimage must be listed as exact
+            # old/new text pairs; replay only those pairs, then require the entire
+            # adjusted historical body verbatim behind the supersession notice.
+            historical = removed
+            revisions = row.get("historicalRevisions", [])
+            if not isinstance(revisions, list):
+                errors.append(f"{ident}: invalid historical revision list")
+                revisions = []
+            revision_ids = set()
+            for revision in revisions:
+                if not isinstance(revision, dict):
+                    errors.append(f"{ident}: invalid historical revision record")
+                    continue
+                revision_id = revision.get("id")
+                old_text = revision.get("oldText")
+                replacement_text = revision.get("replacementText")
+                revision_basis = revision.get("basis")
+                if (not isinstance(revision_id, str) or not revision_id.strip()
+                        or revision_id in revision_ids):
+                    errors.append(f"{ident}: missing/duplicate historical revision id")
+                else:
+                    revision_ids.add(revision_id)
+                if (not isinstance(old_text, str) or not old_text
+                        or not isinstance(replacement_text, str) or not replacement_text
+                        or old_text == replacement_text or not revision.get("reason")
+                        or not isinstance(revision_basis, dict)
+                        or not revision_basis.get("file") or not revision_basis.get("section")):
+                    errors.append(f"{ident}: incomplete historical revision {revision_id}")
+                    continue
+                if historical.count(old_text) != 1:
+                    errors.append(f"{ident}: historical revision {revision_id} is not unique in retained preimage")
+                else:
+                    historical = historical.replace(old_text, replacement_text, 1)
+                if old_text in text:
+                    errors.append(f"{ident}: superseded historical wording remains in {file}")
+                if replacement_text not in text:
+                    errors.append(f"{ident}: reviewed historical revision {revision_id} missing in {file}")
+                revision_basis_file = revision_basis["file"]
+                if not (root / revision_basis_file).is_file():
+                    errors.append(f"{ident}: missing historical revision evidence {revision_basis_file}")
+            if "SUPERSEDED" not in required or historical not in text:
                 errors.append(f"{ident}: historical retention lost its explicit boundary/text")
-            if required in text and removed in text and text.index(required) > text.index(removed):
+            if required in text and historical in text and text.index(required) > text.index(historical):
                 errors.append(f"{ident}: supersession notice must precede historical wording")
         elif removed in text:
             errors.append(f"{ident}: rejected wording still present in {file}")

@@ -1292,6 +1292,32 @@ class SynthesisEvidenceTests(unittest.TestCase):
         errors = check_repairs(ROOT, self.report, {row["file"]: broken})
         self.assertTrue(any(row["id"] in e and "must precede" in e for e in errors))
 
+    def test_s40_retains_the_preimage_with_only_its_reviewed_exact_revision(self):
+        row = next(r for r in self.report["repairs"] if r["id"] == "S40")
+        revisions = row.get("historicalRevisions", [])
+        self.assertEqual(len(revisions), 1)
+        revision = revisions[0]
+        self.assertEqual(row["removed"].count(revision["oldText"]), 1)
+        original = (ROOT / row["file"]).read_text(encoding="utf-8")
+        retained = row["removed"].replace(revision["oldText"], revision["replacementText"], 1)
+        self.assertIn(retained, original)
+        self.assertNotIn(revision["oldText"], original)
+        self.assertFalse(any(e.startswith("S40:") for e in check_repairs(ROOT, self.report)))
+
+        without_revision = deepcopy(row)
+        without_revision.pop("historicalRevisions")
+        errors = check_repairs(ROOT, {"repairs": [without_revision]})
+        self.assertTrue(any("S40: historical retention lost" in e for e in errors))
+
+        reverted = original.replace(revision["replacementText"], revision["oldText"], 1)
+        errors = check_repairs(ROOT, {"repairs": [row]}, {row["file"]: reverted})
+        self.assertTrue(any("S40: superseded historical wording remains" in e for e in errors))
+
+        tampered = deepcopy(row)
+        tampered["historicalRevisions"][0]["replacementText"] += " [unreviewed]"
+        errors = check_repairs(ROOT, {"repairs": [tampered]})
+        self.assertTrue(any("S40: historical retention lost" in e for e in errors))
+
 
 class Wave3ParserTests(unittest.TestCase):
     def test_eli_uses_ids_not_zero_based_list_slices(self):
