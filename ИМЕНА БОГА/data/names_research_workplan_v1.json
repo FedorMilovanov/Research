@@ -12,11 +12,11 @@
     "arenaRecords": 29,
     "extensionRecords": 13,
     "contextAttestations": 105,
-    "sourceRegisterEntries": 136,
+    "sourceRegisterEntries": 137,
     "regressionTests": 327,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "VERIFIED_PREDECESSOR_HEAD_958412a1e0d2746cd04ed1c8682e5f0d77daf95e_6_OF_6_TERMINAL_SUCCESS_743_OF_743_TESTS_W82; NEW_DOCUMENTATION_HEAD_REQUIRES_EXACT_CI",
+    "allSixCiChecks": "VERIFIED_PREDECESSOR_HEAD_2373fe7ffec2c7eb64931fe6de8eb5ea0ea78bf2_6_OF_6_TERMINAL_SUCCESS_743_OF_743_TESTS_W83; NEW_GEN14_EDITORIAL_HEAD_REQUIRES_EXACT_CI",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 26,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "958412a1e0d2746cd04ed1c8682e5f0d77daf95e",
+    "lastConfirmedAllSixChecksSha": "2373fe7ffec2c7eb64931fe6de8eb5ea0ea78bf2",
     "readerChapterCount": 3,
     "readerSectionCrosswalkCount": 32,
     "readerCrosswalkLinkedDistinctClaims": 25,
@@ -776,7 +776,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "2026-11-17 W83 targeted NG04 ACCESS_REQUEST / no new textual collation. W82 Or4445 fol59v joined כסיה remains exact one-locus original-photo reading. Need original BHS 1997 Exod 17:16 PRINT LOWER APPARATUS (publisher Standard Edition ISBN 978-3-438-05218-6 or licensed Logos BHS with Critical Apparatus https://www.logos.com/product/17645/biblia-hebraica-stuttgartensia-bhs) plus Göttingen Septuaginta II/1 Exodus (Wevers/Quast 1991) Exod17:15-16 App I AND App II (separate licensed digital editions https://verbum.com/product/180028/exodus-apparatus-i and https://verbum.com/product/180029/exodus-apparatus-ii). SBL BHS PDF https://www.sbl-site.org/resources/digital-texts/biblia-hebraica-stuttgartensia/ and DBG BIBELDIGITAL module are TEXT ONLY and cannot close apparatus HOLD. Google Drive keyword check in 2 connected accounts did not locate original volumes; Desktop Commander unavailable in checked accounts; no false acquisition or ownership claim. User request once: only legally accessible page photos/scans or authorized on-screen review, exactly Ex17:16 (and adjacent context if needed), never upload copyrighted full editions to public git. Stop broad discovery; preserve NG04 BLOCKED_SOURCE, 136 blocked source entries, 0 scholarly/rights/Product approvals. CH03 is separate active deliverable.",
+  "nextAction": "2026-11-17 W84 Tier1 CH03 Gen14:22 author original SBL publisher PDF extracted English selected pp46–50 and DBG Rahlfs-Hanhart 2006 Greek verse read, variant and counterargument integrated with an explicit alternate Greek web-edition caveat. Now 137 source records, 105 attestations, 87 held claims, 75 relations, 743 original tests expected; all sources publication BLOCKED and 0 independent scientific/rights/Product approval. NG04 BHS critical apparatus / Göttingen Exodus1991 Apps I/II remains legal targeted access request; CH03 Ruth/Job SOURCE_GRAPH_HOLD and independent expert review remain. W84 exact HEAD CI pending; no main/merge/site.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -858,7 +858,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-17",
-    "planStatus": "W82 substantive original BL Or4445 folio59v image autopsy: 4982x6379 master JPEG opened directly, native pixel x2850–4500 y4150–4860 shows original על כסיה מלחמה with JOINED כסיה (right column bottom line), independently corroborates Dovi MAM and Lyons1983. Historical low-res automated two-word report DISCONFIRMED. One previously registered source updated IN PLACE, no new sources/attestations; 136 records blocked, 327 core/743 total tests. Original physical Or4445 marginalia, other mss, Aleppo, BHS/Göttingen full critical, external scholarship and Product all HOLD. W82 exact-head CI VERIFIED 6/6 TERMINAL SUCCESS and 743/743 tests on 958412a1e0d2746cd04ed1c8682e5f0d77daf95e; new documentation commit requires fresh CI.",
+    "planStatus": "W84 2026-11-17 CH03 Gen14:22 manuscript editorial edit: Müller/Pakkala 2022 §3.1 pp46–50 publisher-authored English PDF text directly read but original facsimile screenshot cache miss, compared DBG Rahlfs-Hanhart published Greek and alternative website Greek printing Κυριον; independently no ancient codices/critical apparatus inspected. New B1 source registered, 137 rows all BLOCKED, 105 ATTs and 87 claims unchanged. No external academic, rights or Product grants. W84 exact CI required.",
     "workCompleted": [
       "W82 2026-11-17 direct original 4982×6379-pixel photo Or4445 f59v, rightmost column last line, reads על כסיה מלחמה as JOINED original ink, correction of prior wrong machine reading, image source and in-place guards/test updated, no new physical source or rights/critical apparatus claims.",
       "W81 2026-11-17: first true browser image-backed inspection of OPenn original Harley MS5683 fol1r JPG 12967_0010.jpg at 4840x6636 native pixels, whole surface and specified source-coordinate crops. Historic W80 'JPG unavailable' limitation now resolved. Present physical original ink and repair damage directly observed; contested original word boundary remains unresolved pending controlled second philologist review; no machine/OCR textual substitute, no new ancient witness. Existing source record and fail-closed regression amended in place; no extra sources or test count.",
@@ -1102,8 +1102,8 @@
         "acceptance": "One continuous Russian reader chapter distinguishing Elohim morphological number and referents, El Elyon within Gen14 narrative, direct self-declaration El Shaddai and Isaac blessing, disputed etymology with bounded competing academic explanation and separate scholarly-rights HOLD appendix.",
         "status": "ACTIVE_BOUNDED_SOURCE_GAP_TRIAGE_INTERNAL_ONLY_EXTERNAL_SCHOLARLY_REVIEW_PENDING_NOT_EDITORIAL_READY",
         "file": "ИМЕНА БОГА/reader/CH-PILOT-03_EL_ELOHIM_SHADDAI.md",
-        "verification": "Research reader chapter ≈3109 whitespace-separated words + research/editorial apparatus; Wave51 condensed Deir Alla from 2651-word embedded main excursion to 309-word bounded narrative, preserving former complete research text and two alternative images in internal scholarly appendix, keeping original CC0 museum photo in reading. Wave52 adds section-claim-source crosswalk for 32 headings and 25 distinct claim IDs with 18 negative regressions. Existing two internal adversarial Hebrew-source passes remain exactly two, not an external review; no independent scientific, rights or Product acceptance. W74 original MT direct Ruth1:20–21, Job5:17/42:7–9 editorial reassessment committed in CH03; original 105 attestation IDs untouched, source graph gap disclosed in crosswalk; first 3 pilot chapters unchanged, no reviewer approval.",
-        "nextReview": "CH03 Ruth/Job original MT author-context review DONE only as a bounded paragraph-level edit, but no matching current CLM/ATT rows in original locked 105; preserve explicit SOURCE_GRAPH_HOLD instead of new fabricated IDs. No Gill/Berkhof/Bavinck claim in CH03 manuscript: these three are a separate CH01 crosswalk/editorial queue (not a third active deliverable). Check original Naomi/Eliphaz nuance if new Tier1/2 evidence emerges; independent external original language/rights review still pending."
+        "verification": "Research reader chapter ≈3109 whitespace-separated words + research/editorial apparatus; Wave51 condensed Deir Alla from 2651-word embedded main excursion to 309-word bounded narrative, preserving former complete research text and two alternative images in internal scholarly appendix, keeping original CC0 museum photo in reading. Wave52 adds section-claim-source crosswalk for 32 headings and 25 distinct claim IDs with 18 negative regressions. Existing two internal adversarial Hebrew-source passes remain exactly two, not an external review; no independent scientific, rights or Product acceptance. W74 original MT direct Ruth1:20–21, Job5:17/42:7–9 editorial reassessment committed in CH03; original 105 attestation IDs untouched, source graph gap disclosed in crosswalk; first 3 pilot chapters unchanged, no reviewer approval. W84 original publisher scholarly PDF extracted author English text Müller/Pakkala 2022 §3.1 printed pp46–50 read with omission counterargument; independent DBG Rahlfs–Hanhart Greek verse checked and differing other Greek online reading identified. CH03 reader and appendix revised. NOT physical ancient manuscript collation, no SBL print screenshot, no external scholarly review or rights approval.",
+        "nextReview": "W84 Gen14:22 source-specific MT/LXX/Syriac/Samaritan variance and author hypothesis now bounded, external Greek edition apparatus remains needed for universal LXX statement. CH03 Ruth/Job original-105 ATTs SOURCE_GRAPH_HOLD remains explicit; seek independent scholar review. Gill/Berkhof/Bavinck belong CH01, not CH03. No Product publication."
       },
       {
         "id": "NG-04",
@@ -1680,7 +1680,7 @@
     "readerResearchAppendixPreservation20261111": "CH03 native 2651-word Deir Alla section moved intact except original CC0 image block retained in reader, 30 source hyperlinks and 2 other images preserved in editorial appendix. Scientific facts, conflicting reconstruction and rights remain held.",
     "selfPlanAudit": {
       "auditDate": "2026-11-17",
-      "checkedPredecessorHeadSha": "958412a1e0d2746cd04ed1c8682e5f0d77daf95e",
+      "checkedPredecessorHeadSha": "2373fe7ffec2c7eb64931fe6de8eb5ea0ea78bf2",
       "verifiedPredecessorWorkflows": 6,
       "verifiedPredecessorNamesTests": 743,
       "scope": "Only existing Research PR379 and canonical JSON/master; no Product/site/rights changes",
