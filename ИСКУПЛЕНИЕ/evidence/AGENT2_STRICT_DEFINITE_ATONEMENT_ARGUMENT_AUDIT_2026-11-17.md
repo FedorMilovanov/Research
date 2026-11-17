@@ -224,7 +224,7 @@
 - S5-c: редактор = Кальвин;
 - ~~английское «sealed… effectual» у Cole с. 151 как слова Кальвина~~ — `SUPERSEDED`: это слова Кальвина (CO 8:336, «obsignatur, ut rata sit»; §9.2). Ошибочным был мой вывод волны 1, а не корпус.
 
-**EXACT_LOCATORS:** см. §2 (L1–L7) и §9.1. В волне 2 по скану CO сверены CO 9:484, CO 9:485 и CO 8:336. CO 9:524 как locus «solis electis passus» не подтверждён (§9.3). CO 49:100 по скану CO не сверен (CR 77 в IA не найден); латынь Рим. 5:18 сверена только по сноске CTS.
+**EXACT_LOCATORS:** см. §2 (L1–L7) и §9.1. В волне 2 по скану CO сверены CO 9:484, CO 9:485 и CO 8:336. CO 9:524 как locus «solis electis passus» не подтверждён (§9.3). CO 49:100 по скану CO не сверен (CR 77 в IA не найден); латынь Рим. 5:18 сверена только по сноске CTS. *[Раунд 69, §20: CO 52:268 и CO 55:310 сверены по скану; CO 45:711 подтверждено вторым экземпляром; CO 9:523–524 прочитаны — фразы «pro solis electis passus est» нет; CO 49 на IA нет.]*
 
 **PR/HEAD/TESTS:**
 - ветка `arena/0fbd0e42-research`, база `5fab12a`; PR — Draft, номер в описании PR;
@@ -256,7 +256,7 @@
 | CO-1 | Против Хесхузия, «scire velim… edant impii…» | `operaquaesupersu0037calv` (CR 37 = CO 9), лист 320, правая колонка | **CO 9:484** | лист 319 = кол. 481(–482), лист 321 = кол. (485–)486 → лист 320 = 483–484 | A1 |
 | CO-2 | Там же, «sanctificationem, quae solis electis… propria est» + аксиома | тот же том, лист 321, левая колонка | **CO 9:485** | то же | A1 |
 | CO-3 | *De aeterna Dei praed.*, против Георгия | `operaquaesupersu0036calv` (CR 36 = CO 8), лист 210, правая колонка | **CO 8:336** | лист 209 = кол. 333(–334), лист 211 = кол. (337–)338 → лист 210 = 335–336 | A1 |
-| CO-4 | 1 Ин. 2:2, «Ego quamquam verum… nego tamen praesenti loco quadrare» | `operaquaesupersu0083calv` (CR 83 = CO 55), лист 167, правая колонка | традиционно **CO 55:310**; текст сверен, колонка **не откалибрована** (номера страниц в json этого тома интерполированы) | — | A1 (текст) / `LOCATOR_APPROX` (колонка) |
+| CO-4 | 1 Ин. 2:2, «Ego quamquam verum… nego tamen praesenti loco quadrare» | `operaquaesupersu0083calv` (CR 83 = CO 55), лист 167, правая колонка | традиционно **CO 55:310**; текст сверен, колонка **не откалибрована** (номера страниц в json этого тома интерполированы) *[раунд 69, §20: откалибрована — «310» над правой колонкой, OCR-обёртка 166; `LOCATOR_APPROX` снят]* | — | A1 (текст) / `LOCATOR_APPROX` (колонка) |
 
 **Выводы по локаторам:**
 - Традиционные CO 9:484 и CO 8:336 **подтверждены**.
@@ -719,7 +719,7 @@ Nicole (*WTJ* 47 [1985]) в переводных и вторичных выде�
 
 ### 17.2. Что не найдено (отрицательные результаты)
 
-- «offered unto all men without distinction» и «not for a part of the world only» (часть «Рим. 5:18») — в IA FTS до 1907 г. 0 попаданий.
+- «offered unto all men without distinction» и «not for a part of the world only» (часть «Рим. 5:18») — в IA FTS до 1907 г. 0 попаданий. *[Поправка раунда 69 (§20): «not for a part of the world only» относится к части «Мф. 26:28», а не «Рим. 5:18». Отрицательный результат верен только для точной формы с «for». Форма без «for» — «not a part of the world only» — засвидетельствована с 1740 г.: [J. Wesley], *Serious Considerations concerning the Doctrines of Election and Reprobation. Extracted from a late author* (1740; извлечение из Уоттса; IA `bim_eighteenth-century_serious-considerations-c_watts-isaac_1740`, лист 7 по `inside.php`): «Sub multorum nomine non partem mundi tantum designat, sed totum humanum genus, Under the Name of Many, he signifies not a Part of the World only, but all Mankind» к «Matt. xxvi. v. 8» [sic, = 28]. Далее — Watts, *Works* VI, p. 153 (S158), Richards 1846, CTS Harmony 1846, Bacon 1855 (`34_` §4.148, §4.150, §4.152).]*
 - В IA FTS «door unto hope» до 1907 г. не встречается.
 
 ### 17.3. Значение для корпуса
@@ -765,3 +765,24 @@ HOLD без изменений: CO 49:100, CO 45:706, `PRINT_IMAGE_HOLD`, пра
 **Исправлено в файлах:** `15_` §3.2; `fathers/09_` F-29; `fathers/10_`; `fathers/16_` (3 места); `arena/AGENT4_DOGMATICS_*` и `arena/AGENT4_EDITORIAL_*` (пометка «→ 711»); `34_` (абзац HOLD в §4.148). Сгенерированный `fathers-corpus-v1.json` пересобран.
 
 **HOLD после раунда 68:** CO 49:100; `LOCATOR_HOLD(visual)` для CO 45:711 и CO 47:64–65; `PRINT_IMAGE_HOLD`; права; публикационный HOLD; C-17 `TENSION`.
+
+## 20. Раунд 69 (2026-11-17): остальные колонки CO; «CO 9:524» опровергнут
+
+Полная запись — `34_` §4.152 (Q148), S167, `22_` 42ea.
+
+| # | Утверждение | Основание | Класс |
+|---|---|---|---|
+| 1 | 1 Тим. 2:4 — **CO 52:268**: «nullum mundi vel populum, vel ordinem a salute excludi… At de hominum generibus, non singulis personis, sermo est» | `operaquaesupersu0080calv` (CR 80 = CO 52), OCR-обёртка 145; «268» над правой колонкой | A2 (OCR) |
+| 2 | 1 Ин. 2:2 — **CO 55:310** (всё толкование 2:2 в правой колонке; 2:1 — кол. 309) | `operaquaesupersu0083calv`, обёртка 166; «310» над правой колонкой | A2; `LOCATOR_APPROX` CO-4 снят |
+| 3 | Мф. 26:28 — **CO 45:711** по второму, независимому экземпляру | `operaquaesupersu0000calv` (том в метаданных не указан; по тексту — CO 45), обёртка 375; «112» = 712 справа, фраза — в левой колонке | A2; `LOCATOR_HOLD(visual)` |
+| 4 | `operaquaesupersu0050calv_c6j3` — это CO 50 («Vol. L», Гал. 1); тома CO 49 на IA нет | обёртка 100 | CO 49:100 — `HOLD` |
+| 5 | В CO 9:523–524 фразы «pro solis electis passus est» **нет**; там: «Christum omnibus generaliter corpus suum et sanguinem offerre: sed quia infideles ianuam claudunt eius liberalitati, non recipere quod offertur» | `operaquaesupersu0037calv`, обёртка 339 (колонтитул «… 524») | A2 |
+| 6 | Во всём томе CO 9 «electis passus» — 0 совпадений; «solis electis» — 1 (CO 9:485, об освящении) | `inside.php` по тому | отрицательный OCR-поиск (точные формы) |
+| 7 | Заголовок `22_` п. 11 (*Defensio sanae et orthodoxae doctrinae de sacramentis… contra Heshusii*) смешивает *Defensio* 1555 (Цюрихское соглашение) и *Dilucida explicatio… ad discutiendas Heshusii nebulas* (Genevae: Badius, 1561) | титулы в CO 9, `inside.php` листы 19 и 46 | A2 |
+| 8 | Поправка к §17.2: «not for a part of the world only» — часть «Мф. 26:28», не «Рим. 5:18»; ноль только для формы с «for». Форма без «for» — с 1740 г. ([Wesley], *Serious Considerations… Extracted from a late author*, лист 7: «not a Part of the World only, but all Mankind») | `inside.php` q="part of the world" | A2 (OCR) |
+
+**Вердикты.** S3-c — `MISATTRIBUTION_PROBABLE` без изменений; основание усилено прямым чтением кол. 523–524. Повышения классов нет.
+
+**Исправлено в файлах:** `22_` п. 11 (поправка), строка № 11 таблицы (`~~Verified~~ → MISATTRIBUTION_PROBABLE`), 42ea; `01_` п. 3 о Хесхузии (`SUPERSEDED`); AGENT6 HOLD № 7 (пометка); в этом файле — CO-4, строка `EXACT_LOCATORS` и §17.2.
+
+**HOLD после раунда 69:** CO 49:100; `LOCATOR_HOLD(visual)` для CO 45:711 и CO 47:64–65; `PRINT_IMAGE_HOLD`; права; публикационный HOLD; C-17 `TENSION`.
