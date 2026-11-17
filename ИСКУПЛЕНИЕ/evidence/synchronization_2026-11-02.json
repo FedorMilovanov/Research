@@ -8670,12 +8670,12 @@
   "postReviewDrafts": [
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article02_sacrifice_covenant_passover_day_of_atonement.md",
-      "sha256": "5e68dc3a0d216d3cd4db9e013236cbf06a1ce5535a16ed2843284b24e7024101",
+      "sha256": "5c94869286d3847ce48c7f151d17fb63168ce587f54225eff0e94ff05b3f16cb",
       "reviewedAt": "2026-11-07",
       "note": "Статья №2/18, отдельная от исторического черновика 02_why-the-cross-necessity: Пасха Исх. 12, кровь завета Исх. 24, Лев. 1–7 и мучное исключение 5:11–13, Лев. 16/17, Ис. 53 и Евр. 9–10; 21 scoped semantic claims F02-01…F02-21 из предыдущих OT/NT карточек, не самостоятельная новая рукописная колляция. EVIDENCE/LOCATOR/ARCHIVE/RIGHTS/PUBLICATION HOLD действуют; независимый reviewer не подписывал",
       "publicationEligible": false,
       "digestRefreshedAt": "2026-11-17",
-      "digestRefreshedReason": "Agent 7 editorial patchset (93 scoped replacements, #541); this hash refresh does not assert new print-source collation or authorize publication"
+      "digestRefreshedReason": "Integration coordinator reviewed and precisely revised existing Agent-7 editorial wording; five manuscript SHA-256 digests refreshed after verified source-level changes and false-duplicate prevention. Does not imply new collation, peer review or publication eligibility."
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article08_particular_redemption_positive_case.md",
@@ -8769,39 +8769,39 @@
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article01_what_is_atonement_biblical_language_and_work.md",
-      "sha256": "d351be378eaf819b453254d48c8a83c822138182affc9d64166368a3a9946c84",
+      "sha256": "6d0acf6e961b7b7334ca29daf6ab28d4b2f563754e175896e12ffa3ba287e9af",
       "reviewedAt": "2026-11-10",
       "note": "Reader-W1: самостоятельная читательская редакция №1 на основе исторического 01. Двенадцать F01-тезисов с первичными библейскими локаторами без новой полной критической колляции. EVIDENCE_HOLD, GOTTINGEN_APPARATUS_HOLD, RIGHTS_HOLD, PUBLICATION_HOLD. NOT PEER REVIEWED.",
       "publicationEligible": false,
       "digestRefreshedAt": "2026-11-17",
-      "digestRefreshedReason": "Agent 7 editorial patchset (93 scoped replacements, #541); this hash refresh does not assert new print-source collation or authorize publication"
+      "digestRefreshedReason": "Integration coordinator reviewed and precisely revised existing Agent-7 editorial wording; five manuscript SHA-256 digests refreshed after verified source-level changes and false-duplicate prevention. Does not imply new collation, peer review or publication eligibility."
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article03_why_cross_love_holiness_justice.md",
-      "sha256": "441ebe014552d6776f6ad9fbbb6a65d2bd7d1021f03ff47bf4de904c4085ed32",
+      "sha256": "614631133aa99b785b27ba0ad25c99a1bb5e16a0db64795455414d8f7ba924d0",
       "reviewedAt": "2026-11-10",
       "note": "READER-W2: standalone narrative chapter 03; twelve F03 semantic claims supported by prior Research primary text cards and scoped adverse readings. Existing historic drafts preserved; no full new manuscript/critical apparatus or independently verified modern books. EVIDENCE_HOLD / HISTORICAL_SOURCE_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD; NOT PEER REVIEWED.",
       "publicationEligible": false,
       "digestRefreshedAt": "2026-11-17",
-      "digestRefreshedReason": "Agent 7 editorial patchset (93 scoped replacements, #541); this hash refresh does not assert new print-source collation or authorize publication"
+      "digestRefreshedReason": "Integration coordinator reviewed and precisely revised existing Agent-7 editorial wording; five manuscript SHA-256 digests refreshed after verified source-level changes and false-duplicate prevention. Does not imply new collation, peer review or publication eligibility."
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article04_substitution_victory_reconciliation_how_cross_saves.md",
-      "sha256": "37daddc8259a105cf08597079319234bc777f12e1dbdbd4b422d529b4e393a03",
+      "sha256": "372a225e402fefdf75df8e6708b1d471f59bcb0632693a79849f1a4aaff8962f",
       "reviewedAt": "2026-11-10",
       "note": "READER-W2: standalone narrative chapter 04; twelve F04 semantic claims supported by prior Research primary text cards and scoped adverse readings. Existing historic drafts preserved; no full new manuscript/critical apparatus or independently verified modern books. EVIDENCE_HOLD / HISTORICAL_SOURCE_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD; NOT PEER REVIEWED.",
       "publicationEligible": false,
       "digestRefreshedAt": "2026-11-17",
-      "digestRefreshedReason": "Agent 7 editorial patchset (93 scoped replacements, #541); this hash refresh does not assert new print-source collation or authorize publication"
+      "digestRefreshedReason": "Integration coordinator reviewed and precisely revised existing Agent-7 editorial wording; five manuscript SHA-256 digests refreshed after verified source-level changes and false-duplicate prevention. Does not imply new collation, peer review or publication eligibility."
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article05_once_for_all_sacrifice_living_high_priest.md",
-      "sha256": "96606fc3c8426844668ee0f4a6ee2dbcfda39b1aecb1d5f55a89bbfb2e4bf6bd",
+      "sha256": "e81c2695e4f9b7ca6d9b847555da8fe7cf01ee90f441f500276f56182d0d1894",
       "reviewedAt": "2026-11-10",
       "note": "Reader-W3: standalone chapter 05; twelve scoped F05 claims. Previously available biblical cards and original confessional locators, no new full critical apparatus / modern books. Historic file preserved. EVIDENCE_HOLD / LOCATOR_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD; NOT PEER REVIEWED.",
       "publicationEligible": false,
       "digestRefreshedAt": "2026-11-17",
-      "digestRefreshedReason": "Agent 7 editorial patchset (93 scoped replacements, #541); this hash refresh does not assert new print-source collation or authorize publication"
+      "digestRefreshedReason": "Integration coordinator reviewed and precisely revised existing Agent-7 editorial wording; five manuscript SHA-256 digests refreshed after verified source-level changes and false-duplicate prevention. Does not imply new collation, peer review or publication eligibility."
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article06_accomplishment_union_faith_justification.md",

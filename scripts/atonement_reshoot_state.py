@@ -1860,44 +1860,6 @@ def doc_numbers(corp: dict, n: dict) -> list:
     ]
 
 
-def refresh_table_91(corp: dict, text: str) -> str:
-    """Rebuild the scoped §9.1 rows from the existing claim-register measurement.
-
-    The original round-61 finalizer is absent. A hand-maintained copy of its
-    numbers drifted whenever new drafts were added. The live producer is the
-    claim register, and this function owns only the seven displayed columns.
-    Refuse absent/duplicate rows instead of inventing a second measurement.
-    """
-    cpr = corp["integrityGate"]["scopeOfMeasurementRules"]["claimsPerRegistry"]
-    by_lan = cpr["сверкаСКарточками"]
-    lines = text.splitlines(keepends=True)
-    start = next((i for i, row in enumerate(lines) if row.startswith("### 9.1 ")), None)
-    if start is None:
-        raise SystemExit("§9.1: cannot find the claim reconciliation chapter")
-    stop = next((i for i in range(start + 1, len(lines))
-                 if lines[i].startswith(("### ", "## "))), len(lines))
-    column_names = ("строк", "покрытоПоФайлу", "файлов", "карточекБезСостояния",
-                    "неОтраженоВКарточке", "терминовКарточкиВнеПрозы",
-                    "ссылокВнеОбходаЛана")
-    totals = [0] * len(column_names)
-    for lan in (*SUBLANES, "корпус"):
-        data = by_lan[lan]
-        vals = [int(data[k]) for k in column_names]
-        totals = [a + b for a, b in zip(totals, vals)]
-        needle = "| `" + lan + "` |"
-        matches = [i for i in range(start, stop) if lines[i].startswith(needle)]
-        if len(matches) != 1:
-            raise SystemExit(f"§9.1: expected one {lan} row, got {len(matches)}")
-        lines[matches[0]] = "| `" + lan + "` | " + " | ".join(str(v) for v in vals) + " |\n"
-    if totals[0] != int(cpr["всего"]) or totals[1] != int(cpr["детально"]["покрытоПоФайлу"]):
-        raise SystemExit("§9.1: claim-register subtotal does not match the corpus")
-    matches = [i for i in range(start, stop) if lines[i].startswith("| **всего** |")]
-    if len(matches) != 1:
-        raise SystemExit(f"§9.1: expected one total row, got {len(matches)}")
-    lines[matches[0]] = "| **всего** | " + " | ".join("**" + str(v) + "**" for v in totals) + " |\n"
-    return "".join(lines)
-
-
 def apply_doc(corp: dict, n: dict) -> str:
     text = DOC.read_text(encoding="utf-8")
     for pat, new in doc_numbers(corp, n):
