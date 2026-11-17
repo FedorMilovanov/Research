@@ -589,3 +589,48 @@ Nicole (*WTJ* 47 [1985]) в переводных и вторичных выде�
 | S2-d / S2-d′ `UNDETERMINED`; S3-c `MISATTRIBUTION_PROBABLE` | исчерпаны тексты CO 9:483–485 и OCR 1667 (§9–§11); новый источник не появился | — (вердикты окончательны при данной доказательной базе) |
 
 Публикационный HOLD и C-17 `TENSION` не затрагиваются.
+
+## 15. Раунд 64 (2026-11-17): исправление ложной информации в корпусе и закрытие `34_` п. 46
+
+После ухода остальных агентов владелец передал AGENT 2 право править корпус (без мерджа). Принцип тот же: прежние строки не удаляются, исправления — датированными пометками «испр. 2026-11-17 / раунд 64»; классы не повышаются.
+
+### 15.1. Новые чтения (OCR-слой IA; `PRINT_IMAGE_HOLD`)
+
+| ID | Свидетель | Локатор | Результат |
+|---|---|---|---|
+| CTS-R | Calvin, *Romans*, tr. Owen (CTS 1849), `commentariesonep00calv` | лист 225 = **p. 211** (`_page_numbers.json`, confidence 100) | Рим. 5:18: «for though Christ suffered for the sins of the whole world, and is offered through God's benignity indiscriminately to all, yet all do not receive him» |
+| WA-152–154 | Watts, *Works* VI (1811), `worksofreverendl06watt` | wrapper 165–167 (pp. 152–154); заглавие «Ruin and Recovery of Mankind» — листы 61/71; «Question XIII» — лист 162, «Question XIV» — лист 176 | p. 152: «Calvin himself has frequently intimated, in his Comments on Scripture, that Christ did in some sense die for all men»; p. 153 Мф. 26:28 — «all mankind» (не «whole human race»); p. 154 Иуд. 4 и вывод «in some sense he died for all». `"without distinction"` по тому — только листы 92, 93, 169 (вне катены) |
+| RI-312 | Richards 1846 | wrapper 321 = p. 312 | «First. As to the first position…» — раздел о Кальвине кончился на p. 311 |
+
+### 15.2. Закрыто
+
+- **`34_` §8 п. 46 — CLOSED.** Первая половина пастиша Strong III.778 — Кальвин на **Рим. 5:18** (CTS p. 211; латынь — Watts p. 153). Пастиш трёхчастный: Рим. 5:18 + Мф. 26:28 + Ин. 3:16, все три ложно отнесены к Comm. 1 John 2:2. Звенья Watts → Richards и Richards → Strong (Мф. 26:28) — A2 по тексту; путь Рим. 5:18 → Strong (через Уоттса или напрямую из CTS) — `HOLD`. Фуллер p. 712 — параллель, не звено.
+- **`34_` S46 «по памяти, `VERIFY`»** для Рим. 5:18 снят (CTS p. 211). Вторая часть — Мф. 26:28, а не Мк. 14:24.
+- **CO 47:64 → CO 47:64–65** (фраза `propitium` — кол. 65; `LOCATOR_HOLD(visual)`).
+
+### 15.3. Исправленная ложная информация (файлы и характер правки)
+
+| Файл | Было | Исправление |
+|---|---|---|
+| `docs/research/atonement/34_…shedd_distinction.md` | Richards pp. 303–310 — «источник пастиша»; две части; первая — источник открыт; обрыв 1 Ин. 2:2 «у Ричардса»; Фуллер — «кандидат в родословную» | новый **§4.148 (Q144)**, источники **S158** (Watts) и **S159** (CTS Romans); пометки в S39, S46, S50, §4.31 п. 4, §4.33 п. 4 (г), §5 (3 строки), §6 (3 строки хронологии), §8 пп. 33, 46; дополнение к указателю (4.146–4.148); журнал «раунд 64» |
+| `docs/research/atonement/22_…registry…md` | 42a «провенанс `VERIFY`»; 42e «источник пастиша», pp. 303–310 | **42a/42e не трогаются** (входят в исторический блок контроля S40 `synchronization_2026-11-02.json`); добавлены 42du (Watts), 42dv (CTS Romans), 42dw (поправка к 42a/42e) |
+| `docs/research/atonement/01_prokopenko_article_review.md` §14.1 п. 4 | «Источник пастиша — Richards 1846» | пометка: верно лишь для одной из трёх частей |
+| `docs/research/atonement/35_…registry.md` FP-138 | «Richards 1846 = источник пастиша» | пометка: Watts → Richards → Strong, три локуса |
+| `08_`, `THEMATIC_TAXONOMY…`, `fathers/00_`, `09_`, `10_`, `21_`, `fathers-corpus-v1.json` | «CO 47:64»; «скан CO 47:64 — `LOCATOR_HOLD`» | «CO 47:64–65»; в `08_` и `21_` — пометка: скан CO 47 прочитан по OCR, фраза — кол. 65, `LOCATOR_HOLD(visual)` |
+| `ИСКУПЛЕНИЕ/evidence/AGENT6_HISTORICAL_EXTENT_MATRIX_2026_11_15.md` (Приложение, Rej. II) | «Дорт классифицирует Strong-линию… как пелагианское отравление»; «доктрина Прокопенко — переоткрытие заблуждения, отвергнутого Rej. II.3 и II.6» | поправка **`INVALID`**: Rej. II.6 — о различии *по свободной воле*, Rej. II.3 — о «nullis certo meruisse… fidem»; Strong III.779 и PDF Прокопенко (с. 25, 30–31; `34_` §4.146) учат обратному |
+
+Блок `claimRegister20261026` в `fathers-corpus-v1.json` и таблица ценза пересняты штатными `--write` (новый маркер `LOCATOR_HOLD(visual)` в `fathers/21_`).
+
+### 15.4. Самопроверка (что исправлено в моих собственных черновиках до коммита)
+
+- Латинская цитата Ин. 3:16 в первом черновике §4.148 была дана по памяти («…quae vere ingressus est in vitam») — заменена на прочитанную по CO 47 («quum sine exceptione omnes ad fidem Christi vocat, quae nihil aliud est quam ingressus in vitam», §14.2).
+- Удалены непроверенные детали первого черновика: список всех упоминаний «Calvin» у Ричардса, «confidence 100» для якорей Уоттса, ложная ссылка «с. 211 — по `01_` §14.1» (номер страницы взят из `_page_numbers.json`). «Question XIII» и заглавие трактата оставлены только после кавычечной проверки `inside.php`.
+- «Не Гал. 5:12» смягчено: Гал. 5:12 тоже содержит «suffered for the sins of the whole world»; к Рим. 5:18 указывает именно пара с «offered… indifferenter».
+
+### 15.5. Не правилось (вне ветки) — предложение владельцам `main`
+
+- `ИСКУПЛЕНИЕ/evidence/AGENT5_CALVIN_EXEGETICAL_DELTA_AUDIT_2026-11-17.md` (есть только на `main`), стр. 86, 95, 99: «CO 47:64» и «печатный скан CO 47:64 всё ещё `LOCATOR_HOLD`» → «CO 47:64–65; OCR скана прочитан (кол. 65), `LOCATOR_HOLD(visual)`».
+- PR #556 (round 58 §4.124 в `02_CONFLICT_LEDGER.md`): та же формула «скан CO 47:64 ещё не сверен»; заявленное в описании ограничение C-17 в диффе отдельной правкой не видно.
+- `docs/research/arena/AGENT4_*` — журналы агента; «CO 47:64» там — историческая запись, не правится.
+
+**HOLD без изменений:** колонки CO 49:100 и CO 45:706; `PRINT_IMAGE_HOLD`; права Nicole/Rainbow/Helm/Archbald; публикационный HOLD; C-17 `TENSION`.

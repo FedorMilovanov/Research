@@ -1665,7 +1665,7 @@
     {
       "cardId": "21",
       "father": "John Calvin",
-      "work": "In Evangelium secundum Iohannem on John 3:16 (CO 47:64, Geneva 1553)",
+      "work": "In Evangelium secundum Iohannem on John 3:16 (CO 47:64–65, Geneva 1553)",
       "language": "Latin",
       "edition": "Double-verified Latin via John Goodwin (1651) & A. F. Mitchell / J. P. Struthers (CO 47 print scan LOCATOR_HOLD)",
       "keyPhrase": "se tamen toti mundo propitium ostendit, quum sine exceptione omnes ad fidem Christi vocat... Patet enim omnibus Christus ac expositus est, solis tamen electis oculos Deus aperit",
@@ -2037,7 +2037,7 @@
       "claim": "John Calvin on John 3:16 teaches that God is forensically 'reconciled' to the whole world",
       "source": "21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
       "status": "FALSE_FRIEND",
-      "resolution": "Double-verified Latin (CO 47:64, Geneva 1553; Goodwin 1651 & Mitchell/Struthers) reads 'se tamen toti mundo propitium ostendit' ('shows Himself propitious/favorable to the whole world' when calling all without exception to faith), NOT 'reconciliatum' (W. Pringle 1847 CTS translation shift), immediately followed by 'Patet enim omnibus Christus ac expositus est, solis tamen electis oculos Deus aperit'."
+      "resolution": "Double-verified Latin (CO 47:64–65, Geneva 1553; Goodwin 1651 & Mitchell/Struthers) reads 'se tamen toti mundo propitium ostendit' ('shows Himself propitious/favorable to the whole world' when calling all without exception to faith), NOT 'reconciliatum' (W. Pringle 1847 CTS translation shift), immediately followed by 'Patet enim omnibus Christus ac expositus est, solis tamen electis oculos Deus aperit'."
     },
     {
       "id": "F-52",
@@ -2304,7 +2304,7 @@
       "СЛУЖЕБНОЕ": 1
     },
     "маркеры": {
-      "всего": 357,
+      "всего": 358,
       "различных": 23,
       "словарь": {
         "APPARATUS_FALSE_FRIEND": "УДЕРЖИВАЕТСЯ",
@@ -2335,7 +2335,7 @@
         "ORIGINAL_TEXT_HOLD": 71,
         "FALSE_FRIEND": 58,
         "LOCATOR_HOLD": 48,
-        "ORIGINAL_TEXT_VERIFIED": 36,
+        "ORIGINAL_TEXT_VERIFIED": 37,
         "ARCHIVE_HOLD": 30,
         "RIGHTS_HOLD": 21,
         "PUBLICATION_HOLD": 18,
@@ -4785,9 +4785,9 @@
     ],
     "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
     "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check fathers",
-    "measuredAt": "2026-11-16T21:46:40Z",
-    "checkedAt": "2026-11-16T21:46:40Z",
-    "предыдущийСъём": "2026-11-16T21:28:41Z"
+    "measuredAt": "2026-11-17T15:37:20Z",
+    "checkedAt": "2026-11-17T15:37:20Z",
+    "предыдущийСъём": "2026-11-16T21:46:40Z"
   },
   "patristicAndMedievalPrimaryDossierWave10": {
     "recordedAtUtc": "2026-11-15T17:05:00Z",
