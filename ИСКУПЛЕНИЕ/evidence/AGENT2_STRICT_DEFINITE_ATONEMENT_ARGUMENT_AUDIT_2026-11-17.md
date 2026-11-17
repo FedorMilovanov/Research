@@ -11,6 +11,8 @@
 
 ## 0. Краткий ответ
 
+> **Волна 3 (§10, ответ на ревью MAX):** границы каждого `EXPLICIT` сужены. S3-b понижено до `WEAK_INFERENCE` / `TENSION`: в том же трактате на той же странице (CO 9:483) Кальвин говорит, что нечестивые отвергают «victimam, qua expiata sunt mundi peccata». «PRIMARY_VERIFIED» заменено точными осями `evidenceClass` / `accessState` / `locatorState`. Печатная страница 1667 г. — `LOCATOR_HOLD`. Таблица поправок к реестрам — §10.3.
+>
 > **Волна 2 (§9):** CO 9:484, 9:485 и 8:336 сверены по скану *Corpus Reformatorum*. Моя пометка «Cole sealed… = переводчик» снята: это латынь Кальвина. «solis electis» в CO 9 встречается только об освящении. Добавлено S1-b′: «nec aliud Christi officium… quam ut morte sua in unum congreget Dei filios» — `EXPLICIT`. Главный вывод §0 и §5 не меняется.
 
 1. **Что у Кальвина явно (EXPLICIT).**
@@ -60,15 +62,15 @@
 
 | ID | Текст | Издание (IA id) | Печатная страница | Класс |
 |---|---|---|---|---|
-| L1 | Кальвин против Хесхузия, *Dilucida explicatio* (1561) | *Opera omnia*, Amsterdam 1667, т. VIII, `bub_gb_6COCD48cJ90C` | скан с. **759** | A1 |
+| L1 | Кальвин против Хесхузия, *Dilucida explicatio* (1561) | *Opera omnia*, Amsterdam 1667, т. VIII, `bub_gb_6COCD48cJ90C` | скан с. **759** | A1 **Волна 3 (§10.2):** «с. 759» — индекс скана (inside.php), печатная страница 1667 не установлена (`LOCATOR_HOLD`; в томе несколько пагинаций). Основной локатор — CO 9:484. |
 | L1e | то же, англ. | CTS *Tracts relating to the Reformation*, vol. 2 (Beveridge), `tractsreformatio02calvuoft` | **527** (лист 531) | B1 |
-| L2 | *De aeterna Dei praedestinatione* (1552), раздел против Георгия Сицилийского | 1667, т. VIII, тот же скан | скан с. **628** | A1 |
+| L2 | *De aeterna Dei praedestinatione* (1552), раздел против Георгия Сицилийского | 1667, т. VIII, тот же скан | скан с. **628** | A1 **Волна 3 (§10.2):** «с. 628» — индекс скана; основной локатор — CO 8:336. |
 | L2e | то же, англ. | H. Cole, *Calvin's Calvinism* (1856), `calvinscalvinis00colegoog` | **150–151** | B1 |
 | L3 | Комм. на Рим. 5:18 | CTS *Romans* (Owen, 1849), `commentariesonth00calvuoft` | **211** (комментарий и лат. сноска 3); примечание «— Ed.» на **212** | B1 + лат. A1 в сноске |
 | L4 | Комм. на Рим. 8:34 («who intercedes») | там же | **325** (по указателю: «Intercession… of Christ, how to be understood, 325») | B1 |
 | L5 | Комм. на Ин. 17:6, 9 | CTS *John*, vol. 2 (Pringle, 1847), `commentaryongosp02calvuoft` | 17:6 — **170**; 17:9 — **172**; «Christ prays for the elect only» — **173** (лист = индекс, калибровка как у L3) | B1 |
 | L6 | Комм. на 1 Ин. 2:2 | CTS 1855, `commentariesonca00calv` | **173** (уже в `13_` §2.2) | B1, лат. CO 55:310 в `fathers/16_` §2.2 |
-| L7 | Оуэн, *Death of Death*, кн. I, гл. VII | Goold, *Works* X (1850), `worksofjohnowe185010owen` | заголовок главы — индекс 198 (кн. I = с. 157–199 по `14_`) | A2 (не Кальвин) |
+| L7 | Оуэн, *Death of Death*, кн. I, гл. VII | Goold, *Works* X (1850), `worksofjohnowe185010owen` | заголовок главы — индекс 198 (кн. I = с. 157–199 по `14_`) | A2 (не Кальвин) **Волна 3 (§10.2):** класс исправлен на A1 (для позиции *Оуэна*, не Кальвина); прочитаны только синопсис и заголовок главы. |
 
 ### 2.1. Дословные тексты, на которые опирается матрица
 
@@ -115,8 +117,8 @@
 | **S2-b** | Рим. 8:34 (L4, с. 325) | Ходатайство есть непрерывно предъявляемая сила смерти и воскресения | — | Нет | `EXPLICIT` (**NEW_DELTA** для S2) |
 | **S2-c** | S2-a + S2-b | Значит, предъявляемая действенность смерти ограничена избранными | S2-a, S2-b | Это вывод о **действенности/применении**, а не об объёме жертвы как такового | `STRONG_INFERENCE` (собран из двух явных мест Кальвина) |
 | **S2-d** | S2-c + L2/L3 | Кальвин **исключает** различение «всеобщее основание призыва (жертва за весь мир, предложение всем) + особое ходатайство» | **P-same-object** (Оуэн, L7) или отказ от «двойного ходатайства» (Утрехт 1620, Acta pp. 122–123, A2, матрица Agent 6, A.2) | Кальвин явно держит оба полюса: «offertur omnibus reconciliatio» / «peculiare electis beneficium» (L2), «propounded to all / not extended to all» (L3). Тезиса «жертва и ходатайство коэкстенсивны» в его проверенных текстах нет. Цитата «Inst 2.16.16» в `32_` — склейка (`QUOTE_RISK`, уже отмечено там) | `WEAK_INFERENCE` → `UNDETERMINED`. Различение `COMPATIBLE` с Кальвиным, но им **не сформулировано**. Кальвин также не постулирует второе, общее ходатайство за отверженных |
-| **S3-a** | Хесхузий (L1, с. 759) | Плоть Христа не распята за нечестивых, кровь не пролита для искупления их грехов | — | — | `EXPLICIT` (в этой ограниченной формулировке). **PRIMARY_VERIFIED** |
-| **S3-b** | L1 + аксиома о Духе | Это утверждение Кальвина об **объёме** жертвы, в оуэновском смысле | **P-ctx**: евхаристический вопрос («как едят…») переносим на учение об объёме. Плюс **P-sincere**: фраза — не довод ad hominem | (1) Контекст — manducatio impiorum; Христос взят «как духовная пища». (2) Рамка ad hominem: «quando tam mordicus verbis adhaeret». (3) Та же лексика «expiandis… peccatis» утверждается о «totius mundi» в L2 того же тома. (4) Довод работает и при чтении «не распята за них **действенно / как пища**» | `STRONG_INFERENCE` в лучшем случае; спорно. Не `EXPLICIT` для оуэновского объёма |
+| **S3-a** | Хесхузий (L1, с. 759) | Плоть Христа не распята за нечестивых, кровь не пролита для искупления их грехов | — | — | `EXPLICIT` (в этой ограниченной формулировке). **PRIMARY_VERIFIED** Волна 3: «PRIMARY_VERIFIED» заменено на точные оси (§10.2). |
+| **S3-b** | L1 + аксиома о Духе | Это утверждение Кальвина об **объёме** жертвы, в оуэновском смысле | **P-ctx**: евхаристический вопрос («как едят…») переносим на учение об объёме. Плюс **P-sincere**: фраза — не довод ad hominem | (1) Контекст — manducatio impiorum; Христос взят «как духовная пища». (2) Рамка ad hominem: «quando tam mordicus verbis adhaeret». (3) Та же лексика «expiandis… peccatis» утверждается о «totius mundi» в L2 того же тома. (4) Довод работает и при чтении «не распята за них **действенно / как пища**» | `STRONG_INFERENCE` в лучшем случае; спорно. Не `EXPLICIT` для оуэновского объёма **Волна 3 (§10.1, E1): понижено до `WEAK_INFERENCE` / `TENSION`** — на той же странице CO 9:483 нечестивые отвергают «victimam, qua expiata sunt mundi peccata». |
 | **S3-c** | «Christum solis electis passum esse» (`01_`:890); «pro solis electis passus est», CO 9:524 (`22_` #11/#998) | Кальвин дословно говорил «только за избранных» | Наличие фразы в тексте | В 1667, т. VIII, по OCR не найдено: «solis electis», «folis electis», «femper dixi» — 0 совпадений. В CTS Tracts II: «always said» — 0; «elect alone» — только о вере (лист 136). Два целевых прохода безрезультатны → `STOP_DISCOVERY` | `INVALID` как verbatim (до предъявления скана). Отсутствие в OCR — не доказательство отсутствия в тексте, но метка «Verified» в `22_` не обоснована Волна 2: в CO 9 единственное «solis electis» — о *освящении*, кол. 485 (§9.3) |
 | **S4-a** | 1 Ин. 2:2 (L6; CO 55:310) | «Весь мир» здесь — верующие по всему миру, без отверженных | — | — | `EXPLICIT` |
 | **S4-b** | то же | Кальвин выводит партикулярный объём **через** формулу «достаточно/действенно» | Что формула — его аргумент здесь | Он называет формулу «истинной», но «не подходящей к этому месту». В L2 он её «in praesens» откладывает | `INVALID` (формулу нельзя вменять как его довод) Волна 2: «nego praesenti loco quadrare» — устойчивая экзегетическая формула Кальвина (ещё Евр. 5:6, CO 55; §9.5) |
@@ -206,7 +208,7 @@
 - Утрехт 1620 против двойного ходатайства — это A2, а не Кальвин.
 
 **NEW_DELTA** (две содержательные позиции волны):
-1. **Хесхузий — PRIMARY_VERIFIED.** 1667, т. VIII, с. 759; CTS Tracts II p. 527. Wording исправлен. Вердикт: `EXPLICIT` в ограниченной формулировке и не более чем `STRONG_INFERENCE` для оуэновского объёма.
+1. **Хесхузий — ~~PRIMARY_VERIFIED~~ (`SUPERSEDED` волной 3: см. оси в §10.2; вердикт S3-b понижен в §10.1).** 1667, т. VIII, скан-индекс 759; CTS Tracts II p. 527. Wording исправлен. Вердикт: `EXPLICIT` в ограниченной формулировке и не более чем `STRONG_INFERENCE` для оуэновского объёма.
 2. ***De aeterna Dei praed.*, против Георгия (1667 с. 628; Cole 150–151).**
    - Кальвин откладывает формулу Ломбарда «in praesens».
    - Он признаёт «controversia caret» об искуплении грехов всего мира.
@@ -321,3 +323,99 @@ Nicole (*WTJ* 47 [1985]) в переводных и вторичных выде�
   - Nicole/Rainbow/Helm/Archbald не прочитаны.
 - **STOP_DISCOVERY:** по «solis electis» — закрыто окончательно (три издания).
 - **REVIEW_DEFERRED:** без изменений; общие файлы и C-17 не трогались.
+
+---
+
+## 10. Волна 3 (2026-11-17): адресный ответ на ревью MAX в PR #554
+
+Ревью MAX (комментарий в Conversation PR #554, 2026-11-17 11:56 UTC) — пять пунктов. Широкого поиска в этой волне нет: прочитаны только страницы, уже названные в §2 и §9, и их непосредственный контекст. Для полного текста одной страницы использовался текстовый слой IA BookReader (`BookReaderGetTextWrapper.php`, страница *n* = лист *n*+1).
+
+### 10.1. Пункт 1: что именно доказывает каждый новый `EXPLICIT`
+
+| ID | Цитата и локатор | Что доказано (`EXPLICIT`) | Что **не** доказано | Ближайший контекст, проверенный в этой волне |
+|---|---|---|---|---|
+| **E1** | Хесхузий: «scire velim quomodo Christi carnem edant impii, pro quibus non est crucifixa…» — CO 9:484 | В евхаристическом споре Кальвин утверждает: нечестивые не могут «есть» плоть, которая не распята за них, и «пить» кровь, не пролитую для искупления их грехов. Вопрос стоит в рамке «quatenus est spiritualis animarum cibus, vita denique et salus mundi» и в условной ad hominem конструкции «quando tam mordicus verbis adhaeret» | Общее учение об объёме *impetratio*. Это не трактат об объёме, а довод о вкушении; нужна P-ctx (§4.3) | **CO 9:483, левая колонка той же страницы**: «Christum enim tam reprobis quam fidelibus corpus suum in coena porrigere sic asserimus…»; и о нечестивых, отвергающих дар: «merito profani et bruti contemptus damnantur: quia **victimam, qua expiata sunt mundi peccata**, et homines Deo reconciliati, pro nihilo ducunt». То есть в одном трактате и на одной странице стоят «не распята за нечестивых» (484) и «нечестивые презирают жертву, которой искуплены грехи мира» (483). **S3-b понижено: `WEAK_INFERENCE` / `TENSION`** (было «STRONG_INFERENCE в лучшем случае»). Строка Agent 6 «9. … Resp. Heshusius — EXPLICIT» (PR #555) — см. §10.4 |
+| **E2** | «Nec vero aliud Christi officium commendat evangelista Ioannes, quam ut morte sua in unum congreget Dei filios (Ioann. 11, 52)» — CO 8:336 | Подлежащее — *evangelista Ioannes*, глагол *commendat*. Кальвин говорит: Иоанн (в Ин. 11:52) указывает служение Христа как собирание чад Божиих Его смертью. Фраза служит посылкой для вывода «Unde colligimus… peculiare tamen esse electis beneficium» | Что у смерти Христа вообще нет иной цели или отношения. Фраза — о том, что *Иоанн* «рекомендует» в этом месте, и стоит **между** «Controversia etiam caret… totius mundi peccatis» и «offeratur omnibus reconciliatio». Моя формулировка S1-b′ в §9.4 («`EXPLICIT` — NEW_DELTA в пользу строгой стороны») **сужается**: `EXPLICIT` только для иоанновского *officium* в аргументе об особом благе | Предшествует: «Quod si in fide consistit possessio, et fides ex spiritu adoptionis manat, restat, ut in numerum filiorum is duntaxat ascitus sit, qui futurus est Christi particeps». Следует: вывод об особом благе избранных и оговорка «obsignatur, ut rata sit» |
+| **E3** | «Ne valeat in praesens communis illa solutio…» — CO 8:336 | В этом месте Кальвин не строит ответ на формуле Ломбарда | Ни принятия формулы как довода об объёме, ни её доктринального отвержения | См. §10.2 (границы фраз) |
+| **E4** | «Controversia etiam caret, Christum expiandis totius mundi peccatis venisse» — CO 8:336 | Кальвин признаёт это утверждение бесспорным в споре с Георгием | Что «totius mundi» здесь распределительно = каждый человек. Предыдущая фраза глоссирует Иоанна как «fideles… per quascunque mundi plagas dispersi», и сразу следует «Sed confestim occurrit illa solutio: Ut quisquis credit…» | Смысл «totius mundi» — `UNDETERMINED` (как в N-1) |
+| **E5** | «sed ad quos pervenit, ne eorum quidem cordibus indifferenter obsignatur, ut rata sit» — CO 8:336 | Действенное запечатление — не у всех, до кого дошло послание | — | Авторская оговорка; в волне 1 была обрезана (§9.2) |
+| **E6** | Рим. 8:34, CTS Romans с. 325; Ин. 17:9, CTS John II с. 172–173 | Ходатайство = непрерывно предъявляемая сила смерти и воскресения; Христос молится только за избранных | Объём жертвы как таковой (S2-c/S2-d без изменений) | — |
+
+### 10.2. Пункты 2–3: границы фраз *De aeterna* и оси классификации
+
+**(a) Выравнивание CO 8:336 / 1667 (скан-индекс 628) / Cole с. 150–151 по смысловым единицам.**
+
+| № | CO 8:336 (OCR-слой скана CO) | 1667, скан-индекс 628 (OCR) | Cole 1856, с. 150–151 | Замечание |
+|---|---|---|---|---|
+| 0 | «Atqui ego sic universalem Dei gratiam esse fateor, ut in hoc tamen situm esse discrimen addam: quod non omnes secundum Dei propositum vocantur.²)» (сн. 2: франц. добавка «dont parle sainct Paul, qui emporte un mouvement certain du sainct esprit») | не извлекалось | не извлекалось | **Авторская рамка перед абзацем**: всеобщая благодать признаётся с различением |
+| 1 | «Argute se ratiocinari putat, quum dicit: Christus propitiatio est pro peccatis totius mundi. Ergo extra mundum reprobos constituant oportet qui a Christi participatione arcere eos volunt.» | Начало в выписке волны 1 было реконструировано в скобках; дальше «…mundum reprobos constitu[…] oportet…» | «Georgius imagines himself to argue very cleverly… must, of necessity, place them somewhere out of the world.» | Довод Георгия. Чтение «constituere» в §2.1 — моя нормализация; следовать CO: «constituant» |
+| 2 | «Ne valeat **in praesens** communis illa solutio: Christum sufficienter pro omnibus passum esse, efficaciter tantum pro electis.» | совпадает (OCR «fufficienter») | «Now we will not permit the common solution of this question to avail, **on the present occasion**; which would have it, that Christ suffered sufficiently for all men; but effectually for his elect alone.» | Граница «in praesens» сохранена во всех трёх |
+| 3 | «Magna illa absurditas, ob quam plausum sibi inter suos gregales monachus quaesivit, apud me nihil habet momenti.³)» (сн. 3: «Hoc comma om. in versione») | совпадает | «This great absurdity, by which our monk has procured for himself so much applause… has no weight whatever with me.» | **На кого указывает «magna illa absurditas».** В CO 8:335 Кальвин передаёт довод Георгия «Verum sequetur, solos electos destitui gloria Dei». Сноска 3 там цитирует французскую версию: «il obiecte qu'il s'ensuyvroit une grande absurdité». Значит, «magna absurditas» — это вывод, которым Георгий грозит, а не формула Ломбарда. Английский Cole ставит фразу сразу после формулы, и читатель может отнести её к формуле: это риск перевода. Во французской версии фраза опущена |
+| 4 | «Per quascunque mundi plagas dispersi sint **fideles**, expiationem Christi morte partam ad eos Ioannes extendit.» | совпадает | «John does indeed extend the benefits of the atonement… to **all the elect of God**, throughout what climes…» | **Сдвиг перевода**: *fideles* → «the elect of God». Цитировать по латыни |
+| 5 | «Id certe non obstat, quominus reprobi in mundo electis permixti sint.» | совпадает | «…it by no means alters the fact, that the reprobate are mingled with the elect in the world.» | — |
+| 6 | «**Controversia etiam caret**, Christum expiandis totius mundi peccatis venisse.» | совпадает | «It is also a fact, without controversy, that Christ came to atone for the sins "of the whole world."» | Cole берёт «of the whole world» в кавычки (как цитату Писания); в латыни кавычек нет. Граница фразы сохранена |
+| 7 | «Sed confestim occurrit illa **solutio**: Ut quisquis credit in eum non pereat… (Ioann. 3, 15).» | совпадает | «But the solution of all difficulty is immediately at hand…» | Кальвин отвечает Георгию «решением» из Ин. 3:15, а не схоластическим |
+| 8 | «Nec vero qualis sit Christi virtus, vel quid per se valeat, nunc quaeritur: sed quibus se fruendum exhibeat.» | совпадает | «…not what the power or virtue of Christ is, nor what efficacy it has in itself; but, who those are, to whom He gives himself to be enjoyed.» | — |
+| 9 | «…Nec vero aliud Christi officium commendat evangelista Ioannes… Unde colligimus quamvis per ipsum offeratur omnibus reconciliatio, peculiare tamen esse electis beneficium…» | совпадает | Cole с. 151 | E2 |
+| 10 | «Quanquam dum omnibus offerri dico, non ita accipio, quasi ad omnes legatio illa perveniat…: sed ad quos pervenit, ne eorum quidem cordibus indifferenter obsignatur, ut rata sit.⁴)» (сн. 4: продолжение «на целую страницу» отсутствует во французской версии) | в выписке волны 1 обрезано после «perveniat» | «…not sealed indiscriminately on the hearts of all… so as to be effectual in them» | Авторская оговорка **не обрезана** в расширенном фрагменте (исправлено в §9.2) |
+
+**Вывод по пункту 2.** Обе границы — «in praesens» (ед. 2) и «Controversia etiam caret» (ед. 6) — одинаковы в CO, в 1667 г. и у Cole. Авторские ограничения стоят до абзаца (ед. 0) и в его конце (ед. 10). Расширенный фрагмент их не обрезает. Два риска перевода у Cole — ед. 3 (отнесение «absurditas») и ед. 4 (*fideles* → «elect») — зафиксированы. Цитировать по латыни CO.
+
+**(b) Оси по `data/repository-evidence-policy-v2.json` и `AGENT_RULES.md` §1.** В этом под-корпусе латинский текст автора — `A1` (участник-автор); английский перевод CTS — `B1` (`ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md`, раунд 61: «Класс остаётся B1: везде английский перевод CTS»).
+
+| Источник | evidenceClass | accessState (что реально прочитано) | locatorState | Quote-safe? |
+|---|---|---|---|---|
+| CO 9 (CR 37), *Dilucida explicatio* | A1 | OCR-слой скана: полный текст страницы кол. 483–484 и абзац кол. 485. **Изображение страницы глазами не проверено** | **кол. 484** — колонтитул «DE VERA PARTICIPATIONE 484» в OCR-слое той же страницы; **483** — левая колонка той же страницы; **485** — вычислено по листу (±1) | Нет: `LOCATOR_HOLD(visual)`. Совпадение 1667 = CO = CTS — сильный индикатор, но не замена визуальной сверки |
+| CO 8 (CR 36), *De aeterna* | A1 | OCR-слой: полный текст кол. 335–336 со сносками | **кол. 336** — колонтитул «DE AETERNA DEI 336» в OCR-слое; кол. 335 — левая колонка | Нет: `LOCATOR_HOLD(visual)` |
+| CO 55 (CR 83), 1 Ин. 2:2 и Евр. 5:6 | A1 | OCR-абзацы | 55:310 — традиционный; колонка **не откалибрована** | Нет: `LOCATOR_HOLD` |
+| 1667 *Opera* т. VIII | A1 (раннее собрание; издание идентифицировано) | OCR-абзацы | «с. 628 / 759» — **индексы скана**, не печатные страницы; в томе несколько пагинаций (с листа 742 счёт начинается заново) | Нет: `LOCATOR_HOLD` |
+| CTS *Tracts* II | B1 | абзац | p. 527 — по автоматическому `page_numbers.json` IA; колонтитула в OCR-слое нет | Не единственная опора |
+| CTS *Romans* 1849 | B1 (латинская сноска — A1-текст, но в B1-носителе; издание латыни не названо) | абзацы p. 211, 212, 325 | p. 212 — колонтитул «212 COMMENTARIES… V. 19» в OCR; 211 — предыдущий лист; 325 — по указателю книги | Не единственная опора; CO 49:100 `LOCATOR_HOLD` |
+| CTS *John* II 1847 | B1 | абзацы p. 170–173 | по `page_numbers.json` IA; колонтитула в OCR нет | Не единственная опора |
+| Cole 1856 | B1 | абзацы pp. 150–151 + отдельные совпадения | колонтитулы найдены поиском по номерам | Не единственная опора; риски перевода: ед. 3, 4, 6 |
+| Owen, *Works* X | **A1 для позиции Оуэна** (исправлено: в §2 стояло «A2») | только синопсис и заголовок кн. I, гл. VII | печатная страница не установлена | Только как свидетельство *формулировки Оуэна* |
+| Утрехт 1620, Acta pp. 122–123 | A2 (по матрице Agent 6) | **мною не читано** | по Agent 6 | Ссылка транзитивная |
+
+**Понижения статуса.** «PRIMARY_VERIFIED» (S3, §0/§8) и «сверен» (§9.1) означали: текст найден в OCR-слое идентифицированного издания, а колонка подтверждена колонтитулом в том же OCR-слое. По оси `locatorState` это **не** визуальная сверка, поэтому статус по этой оси — `LOCATOR_HOLD(visual)`. Класс `A1` остаётся (это класс источника, а не степень проверки).
+
+### 10.3. Пункт 4: короткая адресная таблица исправлений к существующим реестрам (не применены)
+
+| # | Файл : строка (на `origin/main` 5fab12a) | Сейчас | Исправление | Основание | Флаг |
+|---|---|---|---|---|---|
+| R1 | `docs/research/atonement/22_master_source_registry_50_plus_primary_citations.md` : 48–50 (п. 11) | «CO 9:524 … *Christus pro solis electis passus est*» | `SUPERSEDED` → «*Dilucida explicatio* (1561), CO 9:484: "…pro quibus non est crucifixa… qui expiandis eorum peccatis non est effusus" (евхаристический контекст)» | §9.3: в OCR CO 9 «electis passus/passum» — 0; «solis electis» только о *освящении*, CO 9:485 | `MISATTRIBUTION_PROBABLE`, `LOCATOR_HOLD(visual)` |
+| R2 | там же : 998 (табл. #11) | «*Contra Heshus.* \| Verified \| «pro solis electis passus est»» | «Verified» → `QUOTE_HOLD`; цитату заменить по R1 | то же | то же |
+| R3 | `docs/research/atonement/01_prokopenko_article_review.md` : 890 | «Nihil aliud dico quam quod semper dixi: Christum solis electis passum esse» | `SUPERSEDED/QUOTE_HOLD` → цитата по R1 с оговоркой E1 (CO 9:483 vs 484) | §9.3: «semper dixi» — 0 в CO 9 и в 1667 | `MISATTRIBUTION_PROBABLE` |
+| R4 | `docs/research/atonement/02_history_of_atonement_controversies.md` : 30 (#17) | «…qui non est effusus in peccatorum eorum expiationem», CO 9:484 | вторую половину заменить на «qui expiandis eorum peccatis non est effusus»; локатор CO 9:484 — верен | CO 9:484 = 1667 | wording |
+| R5 | `ИСКУПЛЕНИЕ/evidence/AGENT6_HISTORICAL_EXTENT_MATRIX_2026_11_15.md` : 137 (§4.5) и 951 (HOLD #7) | «quae non pro ipsis crucifixa est… qui non pro ipsorum peccatis effusus est»; `HESHUSIUS_VERBATIM_HOLD` | wording по R4; HOLD сузить до `LOCATOR_HOLD(visual)`; часть о «solis electis» сохранить и дополнить ссылкой на §9.3 | CO 9:484 | файл Agent 6 — правит владелец/MAX |
+| R6 | `docs/research/atonement/32_archbald_dissertation_calvin_boundaries_vs_prokopenko.md` : 80 | цитата Хесхузия | **без изменений** — совпадает с CO 9:484 дословно. Добавить контекст CO 9:483 («victimam, qua expiata sunt mundi peccata») к выводу «твёрдая аксиома» | E1 | context |
+| R7 | `ИСКУПЛЕНИЕ/13_` §2.2; `fathers/16_` §2.2 | формула «достаточно/действенно» у Кальвина | добавить параллель CO 8:336 «Ne valeat in praesens…» и ед. 3 (§10.2: «magna absurditas» = довод Георгия, по CO 8:335 сн. 3) | §10.2 | framing |
+| R8 | `ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md` : 132 (открытый пункт «латинский Кальвин (*De aeterna*) — нужен CR/OS, а не OCR-перебор») | открыто | для MAX: текст CO 8:335–336 найден и выровнен (§10.2), но через OCR-слой скана CR; пункт остаётся `LOCATOR_HOLD(visual)` и закрывается только визуальной сверкой страницы | §10.2(b) | не закрывать |
+| R9 | `synthesis/02_CONFLICT_LEDGER.md` C-17 | `TENSION` | **не редактировалось**. Для MAX: E1 (CO 9:483/484) и E4 (CO 8:336) — две внутритомные пары «за мир / не за нечестивых», статус `TENSION` подтверждается | §10.1 | — |
+
+### 10.4. Пункт 5: пересечение с AGENT 3/6
+
+- **AGENT 6, PR #555** (`arena/c5802a5f-research`, HEAD `f9a4ba2c341934e25dcca4c62e13fd6dfe578305`, файл `ИСКУПЛЕНИЕ/evidence/AGENT6_CALVIN_DORT_DOGMATIC_CROSSWALK_2026-11-17.md`) — **реальное пересечение**:
+  - строка 9: «Resp. Heshusius … **EXPLICIT**»;
+  - строка 1: Рим. 5:18 и 1 Ин. 2:2 как опора «бесконечной достаточности»;
+  - строка 8: Inst II.16.16.
+  Оставлен **один** предметный review по этому SHA. Файлы Agent 6 не редактировались.
+- **AGENT 3:** открытого PR с объектом пересечения нет → `REVIEW_DEFERRED`.
+- **AGENT 4 (#557), AGENT 5 (#558):** по диффу совпадений с Хесхузием, *De aeterna* и «solis electis» нет → без review.
+
+### 10.5. Финальная передача MAX
+
+- **PR/HEAD/CI:** PR #554 (Draft), ветка `arena/0fbd0e42-research`. HEAD и CI — в последнем комментарии PR.
+- **ALREADY_PROVEN:** без изменений (§8).
+- **NEW_DELTA волны 3** (две позиции):
+  1. CO 9:483 — контекстный противовес E1 на той же странице; S3-b → `WEAK_INFERENCE` / `TENSION`.
+  2. Выравнивание *De aeterna* по 10 единицам: «magna absurditas» = довод Георгия (CO 8:335 сн. 3); риск Cole *fideles* → «elect».
+- **INVALID_INFERENCES (добавка):**
+  - «Хесхузий = EXPLICIT отвержение всеобщего удовлетворения» (PR #555, строка 9);
+  - «magna absurditas = формула Ломбарда» (по английскому Cole);
+  - моя S1-b′ в широкой формулировке (сужено, E2).
+- **HOLD:**
+  - `LOCATOR_HOLD(visual)` — для всех CO-локаторов;
+  - `LOCATOR_HOLD` — печатные страницы 1667 г., CO 49:100, CO 55:310;
+  - Nicole, Rainbow, Helm, Archbald не прочитаны;
+  - `PUBLICATION_HOLD` / `RIGHTS_HOLD` не снимались.
+- **OWN_TASK_DONE:** S1–S5 и Фаза 2 закрыты в границах задания. Дальнейшая активность без нового адресного запроса MAX не планируется.
