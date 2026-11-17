@@ -618,6 +618,7 @@ Nicole (*WTJ* 47 [1985]) в переводных и вторичных выде�
 | `docs/research/atonement/35_…registry.md` FP-138 | «Richards 1846 = источник пастиша» | пометка: Watts → Richards → Strong, три локуса |
 | `08_`, `THEMATIC_TAXONOMY…`, `fathers/00_`, `09_`, `10_`, `21_`, `fathers-corpus-v1.json` | «CO 47:64»; «скан CO 47:64 — `LOCATOR_HOLD`» | «CO 47:64–65»; в `08_` и `21_` — пометка: скан CO 47 прочитан по OCR, фраза — кол. 65, `LOCATOR_HOLD(visual)` |
 | `ИСКУПЛЕНИЕ/evidence/AGENT6_HISTORICAL_EXTENT_MATRIX_2026_11_15.md` (Приложение, Rej. II) | «Дорт классифицирует Strong-линию… как пелагианское отравление»; «доктрина Прокопенко — переоткрытие заблуждения, отвергнутого Rej. II.3 и II.6» | поправка **`INVALID`**: Rej. II.6 — о различии *по свободной воле*, Rej. II.3 — о «nullis certo meruisse… fidem»; Strong III.779 и PDF Прокопенко (с. 25, 30–31; `34_` §4.146) учат обратному |
+| `01_` §VII (строка «История вопроса»), `README.md` (§34, раунд 8), `THEMATIC_TAXONOMY…` (§34), `synthesis/00_SYNTHESIS_AUTHORITY…` | «источник пастиша Стронга — Richards pp. 303/308–310» | краткая пометка: Ричардс — источник лишь части о Мф. 26:28; пастиш трёхчастный, цепочка Watts → Richards → Strong |
 
 Блок `claimRegister20261026` в `fathers-corpus-v1.json` и таблица ценза пересняты штатными `--write` (новый маркер `LOCATOR_HOLD(visual)` в `fathers/21_`).
 
