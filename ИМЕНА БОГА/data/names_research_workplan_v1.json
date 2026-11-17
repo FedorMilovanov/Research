@@ -16,7 +16,7 @@
     "regressionTests": 327,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "VERIFIED_PREDECESSOR_HEAD_8af98031183f7ff70750eb09c44e62e5f70b5b66_6_OF_6_TERMINAL_SUCCESS_743_OF_743_TESTS_NEW_W80_SCOPE_AUDIT_HEAD_RECHECK_REQUIRED",
+    "allSixCiChecks": "VERIFIED_PREDECESSOR_HEAD_f1be1b18cb8dd95b120dbda18cfd974842758150_6_OF_6_TERMINAL_SUCCESS_743_OF_743_TESTS_NEW_W81_IMAGE_AUDIT_HEAD_RECHECK_REQUIRED",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 26,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "8af98031183f7ff70750eb09c44e62e5f70b5b66",
+    "lastConfirmedAllSixChecksSha": "f1be1b18cb8dd95b120dbda18cfd974842758150",
     "readerChapterCount": 3,
     "readerSectionCrosswalkCount": 32,
     "readerCrosswalkLinkedDistinctClaims": 25,
@@ -776,7 +776,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "2026-11-17 W80 NG04: NO new independently colllated Hebrew reading. Original Harley MS5683 f1r is catalogued but damaged; Masoretica near-Aleppo comparison text is NOT witness transcription; archive 200 OK does not imply local original-photo autopsy. Stop repeated low-yield generic searches. For concrete advancement obtain original native full-resolution pixels of Harley folio1r and directly verify which of Ex17:16's target graphemes survive, separately corroborate Or4445 f59v original word division; acquire actual BHS lower apparatus and Göttingen Exodus 1991 App I/II. Preserve 136 blocked sources, 327 core/743 total tests, 0 scientific manuscript/apparatus/rights/Product approvals; no site work or merge.",
+  "nextAction": "2026-11-17 W81 NG04: first original Harley5683 f1r scan was DIRECTLY opened in browser (4840x6636), source native crop x1400–3300 y820–1160 examined; source has surviving original Hebrew writing under stains/repairs. Do NOT say photo unavailable. NEXT achieve certified independent palaeographic letter-by-letter reading and word-space assessment of actual Ex17:16 כס יה versus כסיה, including a second manual reading of original. Independently confirm Or4445 f59v and acquire original BHS lower Exodus apparatus / Wevers-Quast Göttingen Exodus1991 App I/II. 136 source records remain BLOCKED, 327 core +743 aggregate tests, 0 accepted critical original variant collations/rights/science/Product approvals, no site or merge.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -858,8 +858,9 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-17",
-    "planStatus": "W80 documentary scope-correction only: 136 blocked source records, 327 main/743 aggregate tests UNCHANGED; exact predecessor W79 8af9803 had 6/6 terminal SUCCESS, 743/743. Masoretica display explicitly near-Aleppo REFERENCE not Harley manuscript transcription; initial folio damaged, individual Ex17:16 glyph survival and word spacing UNVERIFIED. JPEG HTTP200 is not independent readable-pixel autopsy; OPenn photo PDM copyright separate from Product acceptance. No external scholarly/rights/product approvals, no critical apparatus collation. New W80 exact SHA requires CI check; NG04 BLOCKED_SOURCE unchanged.",
+    "planStatus": "W81: original BL Harley5683 f1r OPenn JPG 12967_0010.jpg actually opened in read-only browser with native dimensions 4840×6636; original full photo plus 3 source-pixel crops examined. Surviving ink, tears, discoloration, conservation stitching visually proven. Specific target consonant spacing כסיה/כס יה NOT independently established as specialist collation; original BHS/Göttingen per-verse apparatus inaccessible. W80 head f1be1b18 confirmed 6/6 terminal SUCCESS, 743/743. No new sources/tests/attestations; 136 blocked source rows, 327 core/743 aggregate tests, zero accepted critical witnesses/rights/Product release; W81 exact CI required.",
     "workCompleted": [
+      "W81 2026-11-17: first true browser image-backed inspection of OPenn original Harley MS5683 fol1r JPG 12967_0010.jpg at 4840x6636 native pixels, whole surface and specified source-coordinate crops. Historic W80 'JPG unavailable' limitation now resolved. Present physical original ink and repair damage directly observed; contested original word boundary remains unresolved pending controlled second philologist review; no machine/OCR textual substitute, no new ancient witness. Existing source record and fail-closed regression amended in place; no extra sources or test count.",
       "W80 2026-11-17: bounded *negative* photographic scope review. Institutional OPenn catalogue and direct JPEG HTTP200 confirmed, but no locally visible original native pixels; Masoretica 'near-Aleppo reference text' explicitly NOT a transcription, opening first folio severely damaged, so Ex17:16 specific כס(יה) graphemes not independently attested. Archive PDM image reuse notice separately distinguished from our Project publication sign-off. Revised EXISTING Harley row/dossier, no new source IDs, no extra tests or claims.",
       "W79 2026-11-16: Original Cambridge Core HTR112/2 (2019) Cooley article full publisher PDF accessible, original printed pp202–206 visually inspected. Gen22:14 double vocalization; Ex17:15–16 kaph/nun homoiograph & author's proposed old Sinai altar/centralizing theology vs rejected-conjecture and oath interpretations. Treat as peer-reviewed author HYPOTHESIS NOT peer review of OUR project, not ancient codex or critical apparatus. One B1 blocked scholarly source added plus explicit role lock/test; prior W78 exact 6/6 742/742.",
       "W78 2026-11-16: identified original John W. Wevers, Notes on the Greek Text of Exodus (1990), print pp273–274, verified SBL publisher bibliographic record; author's Ex17:15–16 argument in third-party OCR: Greek refuge and hidden hand interpretive translation, not new ancient consonantal witness or proof of Hebrew original one-word form. Original Hebrew/Greek OCR glyphs unreliable, paper facsimile and 1991 full critical apparatus not inspected. One source + fail-closed test, all approvals still zero.",
@@ -1678,7 +1679,7 @@
     "readerResearchAppendixPreservation20261111": "CH03 native 2651-word Deir Alla section moved intact except original CC0 image block retained in reader, 30 source hyperlinks and 2 other images preserved in editorial appendix. Scientific facts, conflicting reconstruction and rights remain held.",
     "selfPlanAudit": {
       "auditDate": "2026-11-17",
-      "checkedPredecessorHeadSha": "8af98031183f7ff70750eb09c44e62e5f70b5b66",
+      "checkedPredecessorHeadSha": "f1be1b18cb8dd95b120dbda18cfd974842758150",
       "verifiedPredecessorWorkflows": 6,
       "verifiedPredecessorNamesTests": 743,
       "scope": "Only existing Research PR379 and canonical JSON/master; no Product/site/rights changes",
@@ -1688,7 +1689,7 @@
           "severity": "P0",
           "result": "CORRECTED_THIS_AUDIT",
           "finding": "W70 nextAction and W69 CI as CURRENT despite W73",
-          "evidence": "W79 exact HEAD 8af98031183f7ff70750eb09c44e62e5f70b5b66: Names job 43955574053, 743/743, all 6 GitHub Actions terminal SUCCESS. W80 no new tests/sources, exact new head requires recheck."
+          "evidence": "W80 exact HEAD f1be1b18, six Actions terminal SUCCESS, 743/743 (327+26+319+24+18+29), verified from exact SHA; W81 source-image first direct-pixel review has not been CI checked at exact new SHA."
         },
         {
           "id": "SPA-02",

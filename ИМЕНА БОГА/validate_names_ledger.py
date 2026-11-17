@@ -586,6 +586,22 @@ def validate_source_access(sources: dict) -> list[str]:
                 "criticalCollationsAccepted": 0,
                 "opennImagesPublicDomainMarkDisplayed": True,
                 "editorialProductImageReuseApproved": False,
+                "localNativePixelFullPhotoAvailableForPersonalReview": True,
+                "originalNativePixelsOpenedReadOnlyBrowser20261117": True,
+                "fullResolutionNaturalWidth": 4840,
+                "fullResolutionNaturalHeight": 6636,
+                "originalPhotoCanvasCropsReviewedPixelCoords": [[0,0,4840,6636],[950,700,4550,2000],[1400,820,3300,1160],[1650,835,2850,1135]],
+                "topSurvivingHebrewInkVisuallyInspectedFromSourcePixels": True,
+                "openingLeafDamageAndConservationStitchingVisible": True,
+                "photographicPixelInspectionIsNotOriginalConsonantalWordDivisionCollation": True,
+                "wordBoundaryDefinitivelyEstablishedFromOriginal": False,
+                "comparisonTextSubstitutedForOriginalInk": False,
+                "independentSecondPalaeographicReviewCompleted": False,
+                "originalImageAccessSupersedesW80FailedPixelRetrieval": True,
+                "correctTargetWordDivisionStillUnresolved": True,
+                "physicalSurvivalOfIndividualEx1716TargetGraphemesConfirmed": False,
+                "updateNoteDate": "2026-11-17",
+
             }
             if (any(source.get(k) != v for k, v in required.items())
                     or not isinstance(audit, dict)

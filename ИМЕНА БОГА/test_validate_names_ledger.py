@@ -3217,6 +3217,21 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertTrue(audit["ex1716InFirstExtantFolioCatalogueRange"])
         self.assertTrue(audit["originalInstitutionalMasterJpegEndpointHttp200"])
         self.assertTrue(audit["opennImagesPublicDomainMarkDisplayed"])
+        self.assertTrue(audit["localNativePixelFullPhotoAvailableForPersonalReview"])
+        self.assertTrue(audit["originalNativePixelsOpenedReadOnlyBrowser20261117"])
+        self.assertEqual(4840, audit["fullResolutionNaturalWidth"])
+        self.assertEqual(6636, audit["fullResolutionNaturalHeight"])
+        self.assertEqual([1400,820,3300,1160],
+                         audit["originalPhotoCanvasCropsReviewedPixelCoords"][2])
+        self.assertTrue(audit["topSurvivingHebrewInkVisuallyInspectedFromSourcePixels"])
+        self.assertTrue(audit["openingLeafDamageAndConservationStitchingVisible"])
+        self.assertTrue(audit["originalImageAccessSupersedesW80FailedPixelRetrieval"])
+        self.assertTrue(audit["photographicPixelInspectionIsNotOriginalConsonantalWordDivisionCollation"])
+        self.assertTrue(audit["correctTargetWordDivisionStillUnresolved"])
+        self.assertFalse(audit["wordBoundaryDefinitivelyEstablishedFromOriginal"])
+        self.assertFalse(audit["independentSecondPalaeographicReviewCompleted"])
+        self.assertFalse(audit["physicalSurvivalOfIndividualEx1716TargetGraphemesConfirmed"])
+
         for key in ("datedAsEarlyTenthCentury",
                     "originalNativePixelsIndependentlyReadForWordDivision",
                     "joinedWordProved", "separatedWordsProved",
@@ -3234,7 +3249,13 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                 ("separatedWordsProved", True),
                 ("editorialProductImageReuseApproved", True),
                 ("physicalManuscriptIndependentFromOr4445", False),
-                ("opennImagesPublicDomainMarkDisplayed", False)):
+                ("opennImagesPublicDomainMarkDisplayed", False),
+                ("localNativePixelFullPhotoAvailableForPersonalReview", False),
+                ("originalNativePixelsOpenedReadOnlyBrowser20261117", False),
+                ("fullResolutionNaturalWidth", 5000),
+                ("wordBoundaryDefinitivelyEstablishedFromOriginal", True),
+                ("independentSecondPalaeographicReviewCompleted", True),
+                ("correctTargetWordDivisionStillUnresolved", False)):
             with self.subTest(field=changed_field):
                 changed = copy.deepcopy(self.sources)
                 item = next(x for x in changed["records"] if x["id"] == "SRC-BL-HARLEY5683-F1R-EX17-16-OPENN-PHOTO")
