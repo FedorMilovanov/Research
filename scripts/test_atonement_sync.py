@@ -189,6 +189,51 @@ class CrossReferenceTests(unittest.TestCase):
             self.assertIn("SECTION_NOT_FOUND", output.getvalue())
             self.assertIn("02_nt.md", output.getvalue())
 
+    def test_reader_link_without_section_is_checked(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            drafts = root / "drafts"
+            drafts.mkdir()
+            (drafts / "article01_reader.md").write_text(
+                "[evidence](../01_missing.md)\\n", encoding="utf-8"
+            )
+            output = io.StringIO()
+            with redirect_stdout(output):
+                status = crossref_main(["--drafts", str(drafts), "--check"])
+            self.assertEqual(status, 1)
+            self.assertIn("LINK_FILE_NOT_FOUND", output.getvalue())
+            self.assertIn("01_missing.md", output.getvalue())
+
+    def test_reader_link_without_section_resolves_exact_file(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            drafts = root / "drafts"
+            drafts.mkdir()
+            (root / "01_source.md").write_text("## 1. Source\\n", encoding="utf-8")
+            (drafts / "article01_reader.md").write_text(
+                "[real source](../01_source.md#section)\\n", encoding="utf-8"
+            )
+            output = io.StringIO()
+            with redirect_stdout(output):
+                status = crossref_main(["--drafts", str(drafts), "--check"])
+            self.assertEqual(status, 0, output.getvalue())
+            self.assertIn("отсутствуют: 0", output.getvalue())
+
+    def test_reader_link_check_skips_external_and_code_fences(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            drafts = Path(tmp) / "drafts"
+            drafts.mkdir()
+            (drafts / "article01_reader.md").write_text(
+                "[external](https://example.org/missing.md)\\n"
+                "[local anchor](#missing)\\n"
+                "\x60\x60\x60md\\n[example](../no_such_file.md)\\n\x60\x60\x60\\n",
+                encoding="utf-8",
+            )
+            output = io.StringIO()
+            with redirect_stdout(output):
+                status = crossref_main(["--drafts", str(drafts), "--check"])
+            self.assertEqual(status, 0, output.getvalue())
+
     def test_real_research_draft_sections_resolve(self):
         output = io.StringIO()
         with redirect_stdout(output):
