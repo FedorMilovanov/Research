@@ -2807,7 +2807,7 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
         self.assertEqual([], validate_source_access(self.sources))
 
 
-    def test_bl_or4445_f59v_photo_conflicting_reading_not_manuscript_autopsy(self) -> None:
+    def test_bl_or4445_f59v_joined_original_photo_not_full_masorah(self) -> None:
         source_id = "SRC-BL-OR4445-F59V-EX17-16-OPENN-IMAGE-UNRESOLVED"
         mutations = (
             ("originalAncientHebrewManuscript", "Aleppo Codex"),
@@ -2821,9 +2821,9 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
             ("manuscriptSectionAscribedToExodus17_16BySecondaryTable", False),
             ("secondaryComparisonClaimsJoinedOneWord", False),
             ("machineBrowserImageReadingClaimsTwoSeparateWords", False),
-            ("conflictResolvedByIndependentAutopsy", True),
-            ("finalOriginalWordDivision", "ONE_WORD_CONFIRMED"),
-            ("nativePixelOriginalGlyphAndSpacingCollationCompleted", True),
+            ("conflictResolvedByIndependentAutopsy", False),
+            ("finalOriginalWordDivision", "FALSE_TWO_WORDS"),
+            ("nativePixelOriginalGlyphAndSpacingCollationCompleted", False),
             ("originalMasorahMarginaliaDecoded", True),
             ("comparativeTableIsAdditionalPhysicalManuscript", True),
             ("sameManuscriptAsLeningradB19a", True),
@@ -2838,7 +2838,7 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
             ("editorialMAMOr4445MasorahQuoted", "תרתין מלין"),
             ("twoPublishedComparisonsConcurJoinedOneWord", False),
             ("formerAutomatedPhotoTwoWordClaimReliable", True),
-            ("independentPhotoAutopsyStillUnfinished", False),
+            ("independentPhotoAutopsyStillUnfinished", True),
             ("editorialConsensusIsAnIndependentPhotoCollationByUs", True),
         )
         for field, wrong in mutations:
@@ -2846,7 +2846,7 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                 changed = copy.deepcopy(self.sources)
                 row = next(x for x in changed["records"] if x["id"] == source_id)
                 row["originalFacsimileCrosscheck20261113"][field] = wrong
-                self.assertTrue(any("Or 4445 f59v image conflict cannot be upgraded" in err
+                self.assertTrue(any("Or 4445 f59v photo joined-word reading cannot certify" in err
                                     for err in validate_source_access(changed)))
         for field, wrong in (
             ("accessState", "FULL_OBJECT_VERIFIED"),
@@ -2858,7 +2858,7 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                 changed = copy.deepcopy(self.sources)
                 row = next(x for x in changed["records"] if x["id"] == source_id)
                 row[field] = wrong
-                self.assertTrue(any("Or 4445 f59v image conflict cannot be upgraded" in err
+                self.assertTrue(any("Or 4445 f59v photo joined-word reading cannot certify" in err
                                     for err in validate_source_access(changed)))
         for field, invalid in (
             ("institutionalCatalogue", "https://example.invalid"),
@@ -2866,7 +2866,7 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
             ("institutionalCatalogueReportsMasorahParvaAndMagnaPossiblyUpToCenturyLaterThanText", False),
             ("specificExodus1716MarginalNoteSameScribeHandConfirmed", True),
             ("specificExodus1716MarginalNoteLayerIndependentlyDated", True),
-            ("specificExodus1716ConsonantalSpacingIndependentlyCollated", True),
+            ("specificExodus1716ConsonantalSpacingIndependentlyCollated", False),
             ("modernEditorialDoviMasorahCitationNotSameAsOriginalInkAutopsy", False),
             ("beiler2023CambridgeThesisAuthor", "David Lloyd Lyons"),
             ("beiler2023InstitutionalPDF", "https://example.invalid"),
@@ -2882,6 +2882,23 @@ class ResearchEvidenceGuardTests(unittest.TestCase):
                 row["layerDatingAndProvenanceCaution20261113"][field] = invalid
                 self.assertTrue(any("Or 4445 f59v layer-dating hold cannot be bypassed" in err
                                     for err in validate_source_access(changed)))
+        src = next(x for x in self.sources["records"] if x["id"] == source_id)
+        native = src["originalOr4445PhotoAudit20261117"]
+        self.assertEqual("על כסיה מלחמה", native["originalConsonantalReading"])
+        self.assertTrue(native["joinedKsYahOriginalInk"])
+        self.assertFalse(native["separateKsYahGapVisible"])
+        for key, wrong in (("nativeWidthPx", 4000),
+                           ("joinedKsYahOriginalInk", False),
+                           ("separateKsYahGapVisible", True),
+                           ("fullMasorahTextCollated", True),
+                           ("externalProjectScientificApproval", True),
+                           ("productOrPhotoRightsApproval", True)):
+            with self.subTest(original_ink_guard=key):
+                modified = copy.deepcopy(self.sources)
+                item = next(x for x in modified["records"] if x["id"] == source_id)
+                item["originalOr4445PhotoAudit20261117"][key] = wrong
+                self.assertTrue(any("Or 4445 f59v original-photo single-locus verification" in error
+                                    for error in validate_source_access(modified)))
         self.assertEqual([], validate_source_access(self.sources))
 
 

@@ -16,7 +16,7 @@
     "regressionTests": 327,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "VERIFIED_PREDECESSOR_HEAD_f1be1b18cb8dd95b120dbda18cfd974842758150_6_OF_6_TERMINAL_SUCCESS_743_OF_743_TESTS_NEW_W81_IMAGE_AUDIT_HEAD_RECHECK_REQUIRED",
+    "allSixCiChecks": "VERIFIED_PREDECESSOR_HEAD_8755ae7d9e241cff27454d375d5b4bb1998f9cff_6_OF_6_TERMINAL_SUCCESS_743_OF_743_TESTS_W82_RECHECK_REQUIRED",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 26,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "f1be1b18cb8dd95b120dbda18cfd974842758150",
+    "lastConfirmedAllSixChecksSha": "8755ae7d9e241cff27454d375d5b4bb1998f9cff",
     "readerChapterCount": 3,
     "readerSectionCrosswalkCount": 32,
     "readerCrosswalkLinkedDistinctClaims": 25,
@@ -776,7 +776,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "2026-11-17 W81 NG04: first original Harley5683 f1r scan was DIRECTLY opened in browser (4840x6636), source native crop x1400–3300 y820–1160 examined; source has surviving original Hebrew writing under stains/repairs. Do NOT say photo unavailable. NEXT achieve certified independent palaeographic letter-by-letter reading and word-space assessment of actual Ex17:16 כס יה versus כסיה, including a second manual reading of original. Independently confirm Or4445 f59v and acquire original BHS lower Exodus apparatus / Wevers-Quast Göttingen Exodus1991 App I/II. 136 source records remain BLOCKED, 327 core +743 aggregate tests, 0 accepted critical original variant collations/rights/science/Product approvals, no site or merge.",
+  "nextAction": "2026-11-17 W82 NG04: original BL Or4445 fol59v JOINED כסיה independently visually verified in original ink at x2850–4500 y4150–4860; record remains partial-locus, not complete Masorah/codex collation. Next original BHS Exodus lower apparatus, Göttingen Wevers/Quast 1991 App I/II, and second palaeographic verification of damaged Harley5683 fol1r. Keep 136 blocked sources and 327 main/743 overall tests, zero scientific external approval/rights/Product; Draft no merge/site.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -858,8 +858,9 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-17",
-    "planStatus": "W81: original BL Harley5683 f1r OPenn JPG 12967_0010.jpg actually opened in read-only browser with native dimensions 4840×6636; original full photo plus 3 source-pixel crops examined. Surviving ink, tears, discoloration, conservation stitching visually proven. Specific target consonant spacing כסיה/כס יה NOT independently established as specialist collation; original BHS/Göttingen per-verse apparatus inaccessible. W80 head f1be1b18 confirmed 6/6 terminal SUCCESS, 743/743. No new sources/tests/attestations; 136 blocked source rows, 327 core/743 aggregate tests, zero accepted critical witnesses/rights/Product release; W81 exact CI required.",
+    "planStatus": "W82 substantive original BL Or4445 folio59v image autopsy: 4982x6379 master JPEG opened directly, native pixel x2850–4500 y4150–4860 shows original על כסיה מלחמה with JOINED כסיה (right column bottom line), independently corroborates Dovi MAM and Lyons1983. Historical low-res automated two-word report DISCONFIRMED. One previously registered source updated IN PLACE, no new sources/attestations; 136 records blocked, 327 core/743 total tests. Original physical Or4445 marginalia, other mss, Aleppo, BHS/Göttingen full critical, external scholarship and Product all HOLD. W82 exact CI required.",
     "workCompleted": [
+      "W82 2026-11-17 direct original 4982×6379-pixel photo Or4445 f59v, rightmost column last line, reads על כסיה מלחמה as JOINED original ink, correction of prior wrong machine reading, image source and in-place guards/test updated, no new physical source or rights/critical apparatus claims.",
       "W81 2026-11-17: first true browser image-backed inspection of OPenn original Harley MS5683 fol1r JPG 12967_0010.jpg at 4840x6636 native pixels, whole surface and specified source-coordinate crops. Historic W80 'JPG unavailable' limitation now resolved. Present physical original ink and repair damage directly observed; contested original word boundary remains unresolved pending controlled second philologist review; no machine/OCR textual substitute, no new ancient witness. Existing source record and fail-closed regression amended in place; no extra sources or test count.",
       "W80 2026-11-17: bounded *negative* photographic scope review. Institutional OPenn catalogue and direct JPEG HTTP200 confirmed, but no locally visible original native pixels; Masoretica 'near-Aleppo reference text' explicitly NOT a transcription, opening first folio severely damaged, so Ex17:16 specific כס(יה) graphemes not independently attested. Archive PDM image reuse notice separately distinguished from our Project publication sign-off. Revised EXISTING Harley row/dossier, no new source IDs, no extra tests or claims.",
       "W79 2026-11-16: Original Cambridge Core HTR112/2 (2019) Cooley article full publisher PDF accessible, original printed pp202–206 visually inspected. Gen22:14 double vocalization; Ex17:15–16 kaph/nun homoiograph & author's proposed old Sinai altar/centralizing theology vs rejected-conjecture and oath interpretations. Treat as peer-reviewed author HYPOTHESIS NOT peer review of OUR project, not ancient codex or critical apparatus. One B1 blocked scholarly source added plus explicit role lock/test; prior W78 exact 6/6 742/742.",
@@ -1679,7 +1680,7 @@
     "readerResearchAppendixPreservation20261111": "CH03 native 2651-word Deir Alla section moved intact except original CC0 image block retained in reader, 30 source hyperlinks and 2 other images preserved in editorial appendix. Scientific facts, conflicting reconstruction and rights remain held.",
     "selfPlanAudit": {
       "auditDate": "2026-11-17",
-      "checkedPredecessorHeadSha": "f1be1b18cb8dd95b120dbda18cfd974842758150",
+      "checkedPredecessorHeadSha": "8755ae7d9e241cff27454d375d5b4bb1998f9cff",
       "verifiedPredecessorWorkflows": 6,
       "verifiedPredecessorNamesTests": 743,
       "scope": "Only existing Research PR379 and canonical JSON/master; no Product/site/rights changes",
@@ -1689,7 +1690,7 @@
           "severity": "P0",
           "result": "CORRECTED_THIS_AUDIT",
           "finding": "W70 nextAction and W69 CI as CURRENT despite W73",
-          "evidence": "W80 exact HEAD f1be1b18, six Actions terminal SUCCESS, 743/743 (327+26+319+24+18+29), verified from exact SHA; W81 source-image first direct-pixel review has not been CI checked at exact new SHA."
+          "evidence": "W81 exact 8755ae7d9e241cff27454d375d5b4bb1998f9cff: 6/6 success, 743 Names tests; W82 exact new head CI mandatory."
         },
         {
           "id": "SPA-02",

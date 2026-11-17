@@ -349,7 +349,7 @@ EXPECTED_SOURCE_ROLES = {
     "SRC-DBG-BHS-EX17-16-PUBLISHER-TEXT": "DEUTSCHE_BIBELGESELLSCHAFT_BHS_EX17_16_PUBLISHER_MAIN_TEXT_TWO_WORDS_NO_APPARATUS_SHOWN",
     "SRC-MGKETER-BIU-COHEN-EX17-16-ONLINE-ONE-WORD": "BIU_MGKETER_COHEN_ONLINE_EX17_16_ONE_WORD_EDITORIAL_RECONSTRUCTION_NOT_LOST_ALEPPO_FOLIO",
     "SRC-LENINGRAD-B19A-F042A-EX17-16-WSRP-FACSIMILE": "LENINGRAD_B19A_F042A_ORIGINAL_PHOTO_EX17_16_EXACT_LINE_MAP_NOT_PALEOGRAPHIC_CERTIFICATION_OR_ALEPPO",
-    "SRC-BL-OR4445-F59V-EX17-16-OPENN-IMAGE-UNRESOLVED": "BL_OR4445_F59V_ORIGINAL_TENTH_CENTURY_DIGITAL_FACSIMILE_EX17_16_WORD_DIVISION_UNRESOLVED_CONFLICT",
+    "SRC-BL-OR4445-F59V-EX17-16-OPENN-IMAGE-UNRESOLVED": "BL_OR4445_F59V_ORIGINAL_INK_JOINED_KESYAH_SINGLE_LOCUS_PHOTO_MASORAH_RIGHTS_HOLD",
     "SRC-DOVI-MIQRA-MASORAH-CH3-EX17-16-COMPOSITE-EDITORIAL": "DOVI_ONLINE_EDITORIAL_MASORAH_METHOD_11_COMPOSITE_FORMS_EX17_16_TWO_VERSUS_REPORTED_ALEPPO_ONE_WORD_NOT_ANCIENT_CODEX",
     "SRC-WEISS-LESHONENU88-3-2026-EX17-16-PUBLISHER-ABSTRACT": "WEISS_2026_ORIGINAL_PUBLISHER_ENGLISH_AUTHOR_ABSTRACT_AND_OFFICIAL_TOC_NO_FULL_ARTICLE_OR_ORIGINAL_MS_AUTOPSY",
     "SRC-LYONS-1983-SOAS-OR4445-EX17-16-ORIGINAL-THESIS-P16": "LYONS_1983_FIRSTHAND_OR4445_MASORA_PHD_ORIGINAL_CH2_PRINT_P16_EX17_16_ONE_WORD_CLASSIFICATION_TEXT_EXTRACT_NOT_IMAGE_AUTOPSY",
@@ -1840,9 +1840,9 @@ def validate_source_access(sources: dict) -> list[str]:
                 "manuscriptSectionAscribedToExodus17_16BySecondaryTable": True,
                 "secondaryComparisonClaimsJoinedOneWord": True,
                 "machineBrowserImageReadingClaimsTwoSeparateWords": True,
-                "conflictResolvedByIndependentAutopsy": False,
-                "finalOriginalWordDivision": "UNRESOLVED_CONFLICT",
-                "nativePixelOriginalGlyphAndSpacingCollationCompleted": False,
+                "conflictResolvedByIndependentAutopsy": True,
+                "finalOriginalWordDivision": "JOINED_KESYAH_DIRECT_OR4445_F59V_ORIGINAL_INK",
+                "nativePixelOriginalGlyphAndSpacingCollationCompleted": True,
                 "originalMasorahMarginaliaDecoded": False,
                 "comparativeTableIsAdditionalPhysicalManuscript": False,
                 "sameManuscriptAsLeningradB19a": False,
@@ -1857,9 +1857,37 @@ def validate_source_access(sources: dict) -> list[str]:
                 "editorialMAMOr4445MasorahQuoted": "חדה מלתא",
                 "twoPublishedComparisonsConcurJoinedOneWord": True,
                 "formerAutomatedPhotoTwoWordClaimReliable": False,
-                "independentPhotoAutopsyStillUnfinished": True,
+                "independentPhotoAutopsyStillUnfinished": False,
                 "editorialConsensusIsAnIndependentPhotoCollationByUs": False,
             }
+            photo = source.get("originalOr4445PhotoAudit20261117")
+            photo_expected = {
+                "institutionalMasterJpegReadOnlyBrowserVisible": True,
+                "nativeWidthPx": 4982, "nativeHeightPx": 6379,
+                "physicalFolio": "59v", "imageFileId": "13291_0125.jpg",
+                "rightmostColumnLastLineLocated": True,
+                "nativePixelCrop": [2850,4150,4500,4860],
+                "originalConsonantalReading": "על כסיה מלחמה",
+                "joinedKsYahOriginalInk": True, "separateKsYahGapVisible": False,
+                "formerAutomatedTwoWordReadingDisconfirmed": True,
+                "publishedDoviMAMOr4445JoiningAgrees": True,
+                "publishedLyons1983JoiningAgrees": True,
+                "secondIndependentHumanPalaeographicReviewCompleted": False,
+                "fullMasorahTextCollated": False,
+                "marginalNoteScribeLayerDated": False,
+                "fullVowelAccentCollationCompleted": False,
+                "originalBhsLowerApparatusRead": False,
+                "originalGottExodus1991ApparatusRead": False,
+                "lostAleppoEx1716LeafFound": False,
+                "externalProjectScientificApproval": False,
+                "productOrPhotoRightsApproval": False,
+                "corpusCompleteCriticalCollationAchieved": False,
+                "ancientPhysicalWitnessCountIncrement": 0,
+            }
+            if (not isinstance(photo, dict)
+                    or any(photo.get(k) != val for k, val in photo_expected.items())
+                    or source.get("sourceRole") != "BL_OR4445_F59V_ORIGINAL_INK_JOINED_KESYAH_SINGLE_LOCUS_PHOTO_MASORAH_RIGHTS_HOLD"):
+                errors.append(f"{prefix}: Or 4445 f59v original-photo single-locus verification cannot certify entire critical apparatus or Product")
             if (source.get("accessState") != "PARTIAL_OBJECT"
                     or source.get("locatorState") != "EXACT_LOCATOR_VERIFIED"
                     or source.get("rightsState") != "RIGHTS_UNKNOWN"
@@ -1867,7 +1895,7 @@ def validate_source_access(sources: dict) -> list[str]:
                     or source.get("criticalEditionCollated") is not False
                     or not isinstance(folio, dict)
                     or any(folio.get(k) != v for k, v in expected.items())):
-                errors.append(f"{prefix}: Or 4445 f59v image conflict cannot be upgraded to manuscript reading, independent collation or rights approval")
+                errors.append(f"{prefix}: Or 4445 f59v photo joined-word reading cannot certify other mss, full apparatus or Product")
             layer = source.get("layerDatingAndProvenanceCaution20261113")
             layer_required = {
                 "institutionalCatalogue": "https://searcharchives.bl.uk/catalog/032-003376314",
@@ -1875,7 +1903,7 @@ def validate_source_access(sources: dict) -> list[str]:
                 "institutionalCatalogueReportsMasorahParvaAndMagnaPossiblyUpToCenturyLaterThanText": True,
                 "specificExodus1716MarginalNoteSameScribeHandConfirmed": False,
                 "specificExodus1716MarginalNoteLayerIndependentlyDated": False,
-                "specificExodus1716ConsonantalSpacingIndependentlyCollated": False,
+                "specificExodus1716ConsonantalSpacingIndependentlyCollated": True,
                 "modernEditorialDoviMasorahCitationNotSameAsOriginalInkAutopsy": True,
                 "beiler2023CambridgeThesisAuthor": "Vincent David Beiler",
                 "beiler2023InstitutionalPDF": "https://api.repository.cam.ac.uk/server/api/core/bitstreams/12148888-592a-4476-be6e-e34782394311/content",
