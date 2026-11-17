@@ -16,7 +16,7 @@
     "regressionTests": 328,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "VERIFIED_PREDECESSOR_HEAD_2373fe7ffec2c7eb64931fe6de8eb5ea0ea78bf2_6_OF_6_TERMINAL_SUCCESS_743_OF_743_TESTS_W83; NEW_GEN14_EDITORIAL_HEAD_REQUIRES_EXACT_CI",
+    "allSixCiChecks": "VERIFIED_PREDECESSOR_HEAD_c730b811f2b6328c43c16629eb8a278a5171ddef_W84_6_OF_6_TERMINAL_SUCCESS_NAMES_744_OF_744_RUN_44053162865; NEW_W85_ARCHIVAL_DOC_HEAD_REQUIRES_OWN_EXACT_CI",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 26,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "2373fe7ffec2c7eb64931fe6de8eb5ea0ea78bf2",
+    "lastConfirmedAllSixChecksSha": "c730b811f2b6328c43c16629eb8a278a5171ddef",
     "readerChapterCount": 3,
     "readerSectionCrosswalkCount": 32,
     "readerCrosswalkLinkedDistinctClaims": 25,
@@ -776,7 +776,7 @@
       "task": "NG-09"
     }
   ],
-  "nextAction": "2026-11-17 W84 Tier1 CH03 Gen14:22 author original SBL publisher PDF extracted English selected pp46–50 and DBG Rahlfs-Hanhart 2006 Greek verse read, variant and counterargument integrated with an explicit alternate Greek web-edition caveat. Now 137 source records, 105 attestations, 87 held claims, 75 relations, 744 tests expected (328 core + 26 plan + 319 provenance + 24 locus + 18 reader + 29 consumer); all sources publication BLOCKED and 0 independent scientific/rights/Product approval. NG04 BHS critical apparatus / Göttingen Exodus1991 Apps I/II remains legal targeted access request; CH03 Ruth/Job SOURCE_GRAPH_HOLD and independent expert review remain. W84 exact HEAD CI pending; no main/merge/site.",
+  "nextAction": "2026-11-17 W85 bounded internal closeout: preserved original 217094-character PR body verbatim in one in-repo archive file; compact CURRENT PR body uses machine SSOT. W84 c730b811f2b6328c43c16629eb8a278a5171ddef 6/6 SUCCESS and Names 744/744 pinned as predecessor; W85 own exact SHA CI mandatory. No unresolved internal W84 test failure. Whole Names of God project NOT finished: NG04 full original BHS Ex17:16 lower critical apparatus and Göttingen Exodus1991 Wevers/Quast App I + App II not read, Harley damaged locus independent human review, CH03 Ruth/Job locked claim-graph SOURCE_GRAPH_HOLD, external philology/theology review, NG05–15 other machine task statuses, rights & Product approvals remain unresolved. Only 2 scoped active deliverables; STOP_DISCOVERY while lawful originals inaccessible; one precise user request recorded. 137 source entries all BLOCKED / 105 ATTs / 87 preliminary claims / 75 typed relations; no critical edition collation completed, no independent project approval, rights or Product authorization. PR379 remains Draft; no main merge or site write.",
   "futureUpdateProtocol": "At every marathon: read this JSON first, select an OPEN/IN_PROGRESS task, update verified status and evidence, update humanGuide, validate DAG, then edit PR; never 'DONE' a blocked task on expectations.",
   "researchPeople": [
     {
@@ -858,7 +858,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-17",
-    "planStatus": "W84 2026-11-17 CH03 Gen14:22 manuscript editorial edit: Müller/Pakkala 2022 §3.1 pp46–50 publisher-authored English PDF text directly read but original facsimile screenshot cache miss, compared DBG Rahlfs-Hanhart published Greek and alternative website Greek printing Κυριον; independently no ancient codices/critical apparatus inspected. New B1 source registered, 137 rows all BLOCKED, 105 ATTs and 87 claims unchanged. No external academic, rights or Product grants. W84 exact CI required.",
+    "planStatus": "W85 documentation and history clean-up (17.11.2026): predecessor W84 c730b811 exact 6/6 SUCCESS and Names 744/744. Original 217094-char PR body with W63 outdated header preserved verbatim in single archive markdown under ИМЕНА БОГА/archive, replaces noisy CURRENT in PR with short status and precise scientific/rights HOLDs. Root authority/AGENT_RULES unchanged; machine SSOT/master/navigation corrected. W85 HEAD fresh exact CI REQUIRED. Three reader manuscripts remain INTERNAL ONLY and full project is NOT scholarly/reuse/Product READY, no merge/publication.",
     "workCompleted": [
       "W82 2026-11-17 direct original 4982×6379-pixel photo Or4445 f59v, rightmost column last line, reads על כסיה מלחמה as JOINED original ink, correction of prior wrong machine reading, image source and in-place guards/test updated, no new physical source or rights/critical apparatus claims.",
       "W81 2026-11-17: first true browser image-backed inspection of OPenn original Harley MS5683 fol1r JPG 12967_0010.jpg at 4840x6636 native pixels, whole surface and specified source-coordinate crops. Historic W80 'JPG unavailable' limitation now resolved. Present physical original ink and repair damage directly observed; contested original word boundary remains unresolved pending controlled second philologist review; no machine/OCR textual substitute, no new ancient witness. Existing source record and fail-closed regression amended in place; no extra sources or test count.",
@@ -1020,7 +1020,7 @@
       "2026-11-10 WAVE24 image-acquisition source audit: via live browser found Brill scholarly reader for 4Q72 urn:cts:ancJewLit:dss.4q72.dsbo-eng2:f1i-f6, directly observed no-right-credentials page; secondary request HTTP403; version/type unverified as image so not called photo URL. Publisher image access guide says photos supplied from PAM/IAA, but no actual picture pixels loaded. DJD XV 1997 21.4MB third-party PDF web screenshot error 400 TOO_LARGE, live second browser only filename; full plate content/presence in PDF UNKNOWN. Open Dead Sea explicit licensing states its modern research text data CC BY-NC 4.0, original photos only outbound to IAA or Israel Museum, no derived reprint rights. Existing Tov source row and dossier16 updated, 101 records/289 tests unchanged, NG10/rights/Product HOLD."
     ],
     "stillOpen": [
-      "W70 exact-head Actions CI PENDING, expected 732 aggregate tests = 321+21+319+24+18+29; previous W69 exact SHA 58c5c30d all 6 workflows SUCCESS with 731/731. LYONS 1983 original Chapter2 p16 list Ex17:16 is one word but own photo autopsy and native resolution PDF screenshot unable: source proves author's report, not physical glyph by us; original Yeivin p82 unread. Cambridge T-S NS282.88 7th/8th c Ex17:5–18:14 INCOMPLETE candidate only, require proof 17:16 extant before variant claims. Weiss 2026 original pp242–272, Breuer original p260–261 n1, BHS/Göttingen original apparatus hold; independent source critical collations 0, external scientific/rights/Product approvals 0.",
+      "W85 current: W84 c730b811 technical suite accepted 6/6 and 744/744; new W85 docs+archive HEAD needs its own CI. W84 scoped Gen14 editorial correction is scientifically bounded, not peer-approved. NG04 BHS Ex17:16 lower critical apparatus + Göttingen Exodus1991 App I/II unread, Yeivin p82 and Breuer pp260–261 n1 unread, Weiss2026 full original article unread, Harley f1r damaged word boundary unresolved; CH03 Ruth/Job locked graph SOURCE_GRAPH_HOLD. Independent expert review, source-specific rights and Product approval zero. STOP_DISCOVERY until precisely licensed originals available.",
       "Authorized 4Q72 original manuscript photo from Brill or IAA with exact editor frg55ii Jer33:16–20 physical image match; Brill reader denies credentials HTTP403, no photo image/URN verified.",
       "DJD XV actual PDF photographic-plate presence not verified; Tov 1991 OBO109 I–VII ZORA Anubis blocked; 1997 XXX–XXXVI original raster plates not viewed.",
       "IAA B360205 plate245 Frag6 vs DJD frg55ii historical frame and glyph correspondence unproven; initial יהוה צד only edited transcript, [קנו] restored, no independent paleo-autopsy.",
@@ -1680,9 +1680,9 @@
     "readerResearchAppendixPreservation20261111": "CH03 native 2651-word Deir Alla section moved intact except original CC0 image block retained in reader, 30 source hyperlinks and 2 other images preserved in editorial appendix. Scientific facts, conflicting reconstruction and rights remain held.",
     "selfPlanAudit": {
       "auditDate": "2026-11-17",
-      "checkedPredecessorHeadSha": "2373fe7ffec2c7eb64931fe6de8eb5ea0ea78bf2",
+      "checkedPredecessorHeadSha": "c730b811f2b6328c43c16629eb8a278a5171ddef",
       "verifiedPredecessorWorkflows": 6,
-      "verifiedPredecessorNamesTests": 743,
+      "verifiedPredecessorNamesTests": 744,
       "scope": "Only existing Research PR379 and canonical JSON/master; no Product/site/rights changes",
       "results": [
         {
@@ -1690,7 +1690,7 @@
           "severity": "P0",
           "result": "CORRECTED_THIS_AUDIT",
           "finding": "W70 nextAction and W69 CI as CURRENT despite W73",
-          "evidence": "W82 exact 958412a1e0d2746cd04ed1c8682e5f0d77daf95e: 6/6 terminal SUCCESS, Names 743/743 (327+26+319+24+18+29); subsequent documentation-only HEAD requires its own CI."
+          "evidence": "W84 verified predecessor c730b811f2b6328c43c16629eb8a278a5171ddef: 6/6 SUCCESS, Names workflow 44053162865 shows 744/744 (328+26+319+24+18+29). W85 docs+archive exact CI must run separately."
         },
         {
           "id": "SPA-02",
@@ -1709,9 +1709,9 @@
         {
           "id": "SPA-04",
           "severity": "P1",
-          "result": "DOCUMENTATION_HYGIENE_HOLD",
-          "finding": "PR grew to 665 commits/66 changed files while top CURRENT remained Wave63 after W75; needs current evidence summary without history deletion",
-          "evidence": "GitHub PR379 metadata and body"
+          "result": "CORRECTED_PR_CURRENT_WITH_SINGLE_VERBATIM_ARCHIVE",
+          "finding": "Historic 217094-character PR #379 body CURRENT remained W63 and exceeded reliable complete-body update. Its entire original content preserved verbatim under ИМЕНА БОГА/archive/PR379_ORIGINAL_BODY_BEFORE_W85_20261117.md. Short replacement PR CURRENT explicitly links to the archive; no historical text deleted from Git provenance.",
+          "evidence": "Original PR description archived as single W85 snapshot file; short GitHub PR379 CURRENT uses machine SSOT as canonical status, old W63 demoted to historical; original-body snapshot bytes read directly from PR metadata."
         },
         {
           "id": "SPA-05",
