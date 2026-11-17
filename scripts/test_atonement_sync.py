@@ -195,7 +195,7 @@ class CrossReferenceTests(unittest.TestCase):
             drafts = root / "drafts"
             drafts.mkdir()
             (drafts / "article01_reader.md").write_text(
-                "[evidence](../01_missing.md)\\n", encoding="utf-8"
+                "[evidence](../01_missing.md)\n", encoding="utf-8"
             )
             output = io.StringIO()
             with redirect_stdout(output):
@@ -209,9 +209,9 @@ class CrossReferenceTests(unittest.TestCase):
             root = Path(tmp)
             drafts = root / "drafts"
             drafts.mkdir()
-            (root / "01_source.md").write_text("## 1. Source\\n", encoding="utf-8")
+            (root / "01_source.md").write_text("## 1. Source\n", encoding="utf-8")
             (drafts / "article01_reader.md").write_text(
-                "[real source](../01_source.md#section)\\n", encoding="utf-8"
+                "[real source](../01_source.md#section)\n", encoding="utf-8"
             )
             output = io.StringIO()
             with redirect_stdout(output):
@@ -224,9 +224,9 @@ class CrossReferenceTests(unittest.TestCase):
             drafts = Path(tmp) / "drafts"
             drafts.mkdir()
             (drafts / "article01_reader.md").write_text(
-                "[external](https://example.org/missing.md)\\n"
-                "[local anchor](#missing)\\n"
-                "\x60\x60\x60md\\n[example](../no_such_file.md)\\n\x60\x60\x60\\n",
+                "[external](https://example.org/missing.md)\n"
+                "[local anchor](#missing)\n"
+                "\x60\x60\x60md\n[example](../no_such_file.md)\n\x60\x60\x60\n",
                 encoding="utf-8",
             )
             output = io.StringIO()
