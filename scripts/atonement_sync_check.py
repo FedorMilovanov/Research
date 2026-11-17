@@ -288,8 +288,43 @@ def check(root: Path, report: dict, control: dict) -> tuple[list[str], dict]:
     wave9_control = json.loads((root / WAVE9_CONTROL).read_text(encoding="utf-8"))
     errors += check_wave9(root, report, wave9_control)
     drafts = sorted((root / DRAFTS).glob("*.md"))
-    if len(drafts) != report["draftCount"]:
-        errors.append("draft inventory differs from the reviewed scope")
+    # The dated baseline scope remains 13. New drafts must be independently
+    # inventoried and byte-identified; neither changing that historical count
+    # nor silently ignoring new files is permitted.
+    additions = report.get("postReviewDrafts", [])
+    if not isinstance(additions, list):
+        errors.append("post-review draft inventory must be a list")
+        additions = []
+    added_paths: set[str] = set()
+    for item in additions:
+        if not isinstance(item, dict):
+            errors.append("post-review draft declaration is not an object")
+            continue
+        declared_path, digest = item.get("path"), item.get("sha256")
+        if not isinstance(declared_path, str) or not isinstance(digest, str):
+            errors.append("post-review draft lacks path/sha256")
+            continue
+        rel = Path(declared_path)
+        if rel.parent != Path(DRAFTS) or rel.suffix != ".md" or declared_path != rel.as_posix():
+            errors.append(f"post-review draft path outside the drafts directory: {declared_path}")
+            continue
+        if declared_path in added_paths:
+            errors.append(f"duplicate post-review draft declaration: {declared_path}")
+            continue
+        added_paths.add(declared_path)
+        if item.get("publicationEligible") is not False:
+            errors.append(f"post-review draft must remain unpublished: {declared_path}")
+        target = root / rel
+        if not target.is_file():
+            errors.append(f"declared post-review draft absent: {declared_path}")
+        elif not re.fullmatch(r"[0-9a-f]{64}", digest):
+            errors.append(f"invalid post-review draft sha256: {declared_path}")
+        elif hashlib.sha256(target.read_bytes()).hexdigest() != digest:
+            errors.append(f"post-review draft bytes differ from declaration: {declared_path}")
+    current_paths = {p.relative_to(root).as_posix() for p in drafts}
+    if (not added_paths.issubset(current_paths)
+            or len(drafts) - len(added_paths) != report["draftCount"]):
+        errors.append("draft inventory differs from reviewed baseline plus declared additions")
     rows = audit_quotes(root / DRAFTS, corpora)
     counts = dict(Counter(r["status"] for r in rows))
     if len(rows) != report["markedCitationCount"]:

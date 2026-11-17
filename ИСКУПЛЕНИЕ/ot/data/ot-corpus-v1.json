@@ -77,8 +77,27 @@
   "wave5": {
     "date": "2026-10-08",
     "scope": "card 04 (dam / blood): 29 loci B1–B29 and controls K1–K3; MT lemmas and morphology (morphhb); LXX mirrors with word-level diff; numbering check Ps 51:16 = LXX 50:16; controls Lev 5:11, 16:16, 16:19, 16:27, 17:15, Num 35:33, Deut 21:4–6; NT: Heb 9:19–22, 10:4, 12:7–14, 13:12, 13:20; Acts 15:20, 15:29, 21:25, 20:28; Matt 26:28, Mark 14:24, Luke 22:19–20; 1 John 1:7, 2:2, 4:10; Rom 3:25; 1 Pet 1:2; Heb 11:28; John 6:53–56; Rev 7:14; Eph 2:13; Col 1:20; lemma counts; Strong, BDB and LSJ glosses",
-    "resultsSummary": ["MT: דָּם (1818) in 29 loci; lemmas and morphology checked against morphhb. LXX αἷμα in all loci except Gen 4:10 (number changed, plural → singular) and Exod 24:6 (verb shift \"put\" → \"poured\").", "Deut 21:7 ketiv / qere: ketiv שפכה (3 fs) and qere שָׁפְכוּ (3 pl); LXX ἐξέχεαν (3 pl) follows the qere. EVIDENCE_HOLD.", "Mirror discrepancies recorded: Gen 9:5 (FW omits ἀνθρώπου); Lev 16:14 (FW omits πρόσωπον); Lev 17:14 (SOL and FW πόσης vs ELI πάσης); Exod 12:7 (SOL and FW extra καὶ θμῶν); Exod 12:13 (FW ἐκτριφθῆναι). Other differences are transcription artefacts. LOCATOR_HOLD where mirrors disagree.", "Numbering: Ps 51:16 (MT) = LXX 50:16 = ET 51:14; LXX Ps 50:18 = MT 51:18.", "Counter-texts to \"no forgiveness without blood\" (Heb 9:22): Lev 5:11–13 (flour sin offering, no blood; control K3); Num 16:46–47 (incense; card 01).", "Ritual without blood: Deut 21:1–9 (no sprinkling; LXX νευροκοπέω for MT \"break the neck\" in 21:4).", "NT lemma counts (MorphGNT): αἷμα 97; ῥαντισμός 2; ῥαντίζω 4; αἱματεκχυσία 1; πνικτός 3; ἐκχέω 27; πρόσχυσις 1; ἱλαστήριον 2; ἱλασμός 2; λύτρωσις 3; ἀφαιρέω 10; ῥαίνω 0; ἐξιλάσκομαι 0; ἁγιάζω 28; καθαρίζω 31.", "Lexicon: Strong H1818, H3722, H2236, H5137, H8210, H5355, H5315; BDB דם, זרק, נזה, שפך, נקי / נקה; LSJ αἷμα, ῥαντισμός, ῥαίνω, πνικτός; αἱματεκχυσία — no LSJ entry (Perseus).", "Criterion 3 (classes a / b / c) recorded in card §6.3: (a) supports particular wording (Exod 24:8; Lev 16:15; Lev 17:11; Deut 21:8; Zech 9:11; Matt 26:28; Mark 14:24; Luke 22:20; Heb 13:12; Acts 20:28); (b) universal scope only in Gen 9:5–6 (not atonement) and Lev 17:10–13 (prohibition), universal atonement wording only in NT pointers (1 John 2:2; Col 1:20); (c) neutral loci listed.", "H0 (blood as life given \"instead of\" life): identity of blood and life supported (R1); the substitution mechanism rests on the LXX ἀντί (Lev 17:11; Gen 9:6), not on the MT. Counter-readings R2–R5 recorded. EVIDENCE_HOLD; no verdict."],
-    "sourcesUsed": ["S10", "S11", "S13", "S14", "S15", "S16", "S23"],
+    "resultsSummary": [
+      "MT: דָּם (1818) in 29 loci; lemmas and morphology checked against morphhb. LXX αἷμα in all loci except Gen 4:10 (number changed, plural → singular) and Exod 24:6 (verb shift \"put\" → \"poured\").",
+      "Deut 21:7 ketiv / qere: ketiv שפכה (3 fs) and qere שָׁפְכוּ (3 pl); LXX ἐξέχεαν (3 pl) follows the qere. EVIDENCE_HOLD.",
+      "Mirror discrepancies recorded: Gen 9:5 (FW omits ἀνθρώπου); Lev 16:14 (FW omits πρόσωπον); Lev 17:14 (SOL and FW πόσης vs ELI πάσης); Exod 12:7 (SOL and FW extra καὶ θμῶν); Exod 12:13 (FW ἐκτριφθῆναι). Other differences are transcription artefacts. LOCATOR_HOLD where mirrors disagree.",
+      "Numbering: Ps 51:16 (MT) = LXX 50:16 = ET 51:14; LXX Ps 50:18 = MT 51:18.",
+      "Counter-texts to \"no forgiveness without blood\" (Heb 9:22): Lev 5:11–13 (flour sin offering, no blood; control K3); Num 16:46–47 (incense; card 01).",
+      "Ritual without blood: Deut 21:1–9 (no sprinkling; LXX νευροκοπέω for MT \"break the neck\" in 21:4).",
+      "NT lemma counts (MorphGNT): αἷμα 97; ῥαντισμός 2; ῥαντίζω 4; αἱματεκχυσία 1; πνικτός 3; ἐκχέω 27; πρόσχυσις 1; ἱλαστήριον 2; ἱλασμός 2; λύτρωσις 3; ἀφαιρέω 10; ῥαίνω 0; ἐξιλάσκομαι 0; ἁγιάζω 28; καθαρίζω 31.",
+      "Lexicon: Strong H1818, H3722, H2236, H5137, H8210, H5355, H5315; BDB דם, זרק, נזה, שפך, נקי / נקה; LSJ αἷμα, ῥαντισμός, ῥαίνω, πνικτός; αἱματεκχυσία — no LSJ entry (Perseus).",
+      "Criterion 3 (classes a / b / c) recorded in card §6.3: (a) supports particular wording (Exod 24:8; Lev 16:15; Lev 17:11; Deut 21:8; Zech 9:11; Matt 26:28; Mark 14:24; Luke 22:20; Heb 13:12; Acts 20:28); (b) universal scope only in Gen 9:5–6 (not atonement) and Lev 17:10–13 (prohibition), universal atonement wording only in NT pointers (1 John 2:2; Col 1:20); (c) neutral loci listed.",
+      "H0 (blood as life given \"instead of\" life): identity of blood and life supported (R1); the substitution mechanism rests on the LXX ἀντί (Lev 17:11; Gen 9:6), not on the MT. Counter-readings R2–R5 recorded. EVIDENCE_HOLD; no verdict."
+    ],
+    "sourcesUsed": [
+      "S10",
+      "S11",
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "S23"
+    ],
     "status": "DONE_WAVE5_FIRST_VERSION_APPARATUS_PENDING"
   },
   "wave6": {
@@ -138,7 +157,15 @@
       "NT (SBLGNT, 16 places): 1 Cor 5:7 (allusion); John 19:36 (formula, source not unique); Heb 11:28 (allusion); Heb 9:19 (composite, hyssop); 1 Pet 1:19 (allusion; ἄμωμος from LXX Exod 29:1); John 1:29, 1:36, Rev 5:6 (stretch); Acts 8:32 (LXX Isa 53:7, pointer to card 11); Gospels — chronology HOLD.",
       "Not done: Swete 1887 apparatus (S12) for the mirror disputes; Göttingen (ARCHIVE_HOLD); HALOT; LSJ ἐξολεθρεύω and related lemmas."
     ],
-    "sourcesUsed": ["S10", "S11", "S13", "S14", "S15", "S16", "S23"],
+    "sourcesUsed": [
+      "S10",
+      "S11",
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "S23"
+    ],
     "status": "DONE_WAVE8_FIRST_VERSION_APPARATUS_PENDING"
   },
   "wave9": {
@@ -156,7 +183,15 @@
       "NT (SBLGNT, 10 entries, 10 verses): Heb 5:3 (allusion to Lev 4:3); Heb 9:7; Heb 9:22; Heb 10:1; Heb 10:4; Heb 13:11–12 (outside the camp); Rom 8:3 (περὶ ἁμαρτίας, HOLD); Luke 2:24 (Lev 12:8; poor's birds); 2 Cor 5:21 (stretch).",
       "Not done: Swete 1887 apparatus (S12); Göttingen (ARCHIVE_HOLD); HALOT; LSJ ἐξιλάσκομαι, ἀφίημι, ἐξαγορεύω, τελείωσις."
     ],
-    "sourcesUsed": ["S10", "S11", "S13", "S14", "S15", "S16", "S23"],
+    "sourcesUsed": [
+      "S10",
+      "S11",
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "S23"
+    ],
     "status": "DONE_WAVE9_FIRST_VERSION_APPARATUS_PENDING"
   },
   "wave10": {
@@ -177,7 +212,15 @@
       "Apparatus (lxx-swete encoding, card §4b): Lev 16:8 κλήρους F; 16:10 prefixes; 16:11 om καὶ τοῦ οἴκου; 16:19 ἐπ᾿ αὐτὸ Bab F; 16:21 om ἑτοίμου B*; 16:22 ἀνομίας F; 16:24 om τοῦ λαοῦ Α; 16:29 + δεκάτη; 16:34 καθάπερ; Exod 30:10 + τῶν ἁμαρτιῶν τοῦ ἐξιλασμοῦ AF. Image check pending (Swete 1887, S12).",
       "Not done: Swete 1887 apparatus by image (S12); Göttingen Leviticus 1986 / Exodus 1991 / Numeri 1982 (ARCHIVE_HOLD); HALOT; LSJ καθαρίζω, ῥαίνω, καταπέτασμα."
     ],
-    "sourcesUsed": ["S10", "S11", "S13", "S14", "S15", "S16", "S23"],
+    "sourcesUsed": [
+      "S10",
+      "S11",
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "S23"
+    ],
     "status": "DONE_WAVE10_FIRST_VERSION_APPARATUS_PENDING"
   },
   "wave11": {
@@ -197,7 +240,15 @@
       "Lexica: BDB a.ce.ag אֵזוֹב 'hyssop'; p.eg.ab עָפָר 'dry earth, dust'; g.co.aa זָרַק with 'Pu. of water of purification poured over one defiled by a corpse'; n.cj.aa נָזָה 'spurt, spatter'; r.ci.ad צָמִיד 'cover, of vessel, Nu 19:15'; h.cs.ab חָלָל 'pierced, fatally wounded'; LSJ ῥαντισμός links LXX Num 19:9 with Heb 12:24 and 1 Pet 1:2; LSJ ἀφαγνίζω cites Num 19:19; LSJ ὕσσωπος names the Hebrew ʾēzōb. LSJ δάμαλις, ἁγνισμός, ζυγός not present as entries in the Perseus digitisation.",
       "Not done: Swete 1887 apparatus by image (S12); Göttingen Numeri 1982 / Leviticus 1986 / Exodus 1991 (ARCHIVE_HOLD); HALOT."
     ],
-    "sourcesUsed": ["S10", "S11", "S13", "S14", "S15", "S16", "S23"],
+    "sourcesUsed": [
+      "S10",
+      "S11",
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "S23"
+    ],
     "status": "DONE_WAVE11_FIRST_VERSION_APPARATUS_PENDING"
   },
   "wave12": {
@@ -335,21 +386,103 @@
     "date": "2026-10-12",
     "scope": "full quote-verification pass with qa.py v2 over the authority document (00) and cards 01–11: every Hebrew fragment of 2+ words and every Greek fragment of 2+ words must be findable in MT (morphhb, ketiv and qere views), the LXX mirrors (ELI 1930, SOL 1909, F1K tlg0527, S23) and SBLGNT, per verse and in continuous per-book text; apparatus quotes and lexical lists with no reference nearby are reported as informational; the script-mixing check (Cyrillic inside Greek/Hebrew, Latin inside Cyrillic) is run separately",
     "perCard": [
-      {"id": "00", "hebrew": 8, "greek": 26, "problems": 0, "informational": 3},
-      {"id": "01", "hebrew": 11, "greek": 43, "problems": 0, "informational": 0},
-      {"id": "02", "hebrew": 24, "greek": 78, "problems": 0, "informational": 0},
-      {"id": "03", "hebrew": 80, "greek": 118, "problems": 0, "informational": 0},
-      {"id": "04", "hebrew": 44, "greek": 99, "problems": 0, "informational": 0},
-      {"id": "05", "hebrew": 36, "greek": 58, "problems": 0, "informational": 1},
-      {"id": "05b", "hebrew": 42, "greek": 78, "problems": 0, "informational": 2},
-      {"id": "06", "hebrew": 70, "greek": 95, "problems": 0, "informational": 3},
-      {"id": "07", "hebrew": 53, "greek": 106, "problems": 0, "informational": 0},
-      {"id": "08", "hebrew": 63, "greek": 139, "problems": 0, "informational": 4},
-      {"id": "09", "hebrew": 38, "greek": 134, "problems": 0, "informational": 11},
-      {"id": "10", "hebrew": 50, "greek": 101, "problems": 0, "informational": 0},
-      {"id": "11", "hebrew": 33, "greek": 156, "problems": 0, "informational": 1}
+      {
+        "id": "00",
+        "hebrew": 8,
+        "greek": 26,
+        "problems": 0,
+        "informational": 3
+      },
+      {
+        "id": "01",
+        "hebrew": 11,
+        "greek": 43,
+        "problems": 0,
+        "informational": 0
+      },
+      {
+        "id": "02",
+        "hebrew": 24,
+        "greek": 78,
+        "problems": 0,
+        "informational": 0
+      },
+      {
+        "id": "03",
+        "hebrew": 80,
+        "greek": 118,
+        "problems": 0,
+        "informational": 0
+      },
+      {
+        "id": "04",
+        "hebrew": 44,
+        "greek": 99,
+        "problems": 0,
+        "informational": 0
+      },
+      {
+        "id": "05",
+        "hebrew": 36,
+        "greek": 58,
+        "problems": 0,
+        "informational": 1
+      },
+      {
+        "id": "05b",
+        "hebrew": 42,
+        "greek": 78,
+        "problems": 0,
+        "informational": 2
+      },
+      {
+        "id": "06",
+        "hebrew": 70,
+        "greek": 95,
+        "problems": 0,
+        "informational": 3
+      },
+      {
+        "id": "07",
+        "hebrew": 53,
+        "greek": 106,
+        "problems": 0,
+        "informational": 0
+      },
+      {
+        "id": "08",
+        "hebrew": 63,
+        "greek": 139,
+        "problems": 0,
+        "informational": 4
+      },
+      {
+        "id": "09",
+        "hebrew": 38,
+        "greek": 134,
+        "problems": 0,
+        "informational": 11
+      },
+      {
+        "id": "10",
+        "hebrew": 50,
+        "greek": 101,
+        "problems": 0,
+        "informational": 0
+      },
+      {
+        "id": "11",
+        "hebrew": 33,
+        "greek": 156,
+        "problems": 0,
+        "informational": 1
+      }
     ],
-    "totals": {"hebrew": 552, "greek": 1231, "problems": 0},
+    "totals": {
+      "hebrew": 552,
+      "greek": 1231,
+      "problems": 0
+    },
     "informationalNote": "informational = apparatus lines, gloss/lemma lists and damaged mirror tokens; not counted as problems",
     "fixes": [
       "card 02: Ru 4:6 and Isa 63:9 now quote WLC as it stands (ketiv לגאול, ketiv לא) with the qere noted; Isa 63:9 LXX given as in ELI/F1K (no κύριος); the gloss line rewritten without truncated lemmas",
@@ -368,26 +501,139 @@
     "tool": "qalite.py and triage.py (both committed: ИСКУПЛЕНИЕ/ot/tools/); mixcheck.py",
     "scope": "re-run of the quote check over the sub-corpus after wave 17: authority document 00, cards 01–15 and the criterion-3 summary (16 files); every Hebrew and Greek fragment of 2+ tokens checked against MT (morphhb, ketiv and qere views), the LXX mirrors (ELI 1930, F1K tlg0527, S23 lxx-swete) and SBLGNT",
     "perCard": [
-      {"id": "00", "hebrew": 15, "greek": 57, "problems": 3, "informational": 2},
-      {"id": "01", "hebrew": 11, "greek": 51, "problems": 3, "informational": 0},
-      {"id": "02", "hebrew": 28, "greek": 99, "problems": 0, "informational": 0},
-      {"id": "03", "hebrew": 95, "greek": 148, "problems": 0, "informational": 1},
-      {"id": "04", "hebrew": 50, "greek": 140, "problems": 4, "informational": 0},
-      {"id": "05", "hebrew": 39, "greek": 74, "problems": 0, "informational": 0},
-      {"id": "05b", "hebrew": 50, "greek": 89, "problems": 1, "informational": 0},
-      {"id": "06", "hebrew": 77, "greek": 114, "problems": 3, "informational": 0},
-      {"id": "07", "hebrew": 59, "greek": 119, "problems": 1, "informational": 0},
-      {"id": "08", "hebrew": 67, "greek": 158, "problems": 7, "informational": 0},
-      {"id": "09", "hebrew": 49, "greek": 176, "problems": 6, "informational": 4},
-      {"id": "10", "hebrew": 61, "greek": 118, "problems": 0, "informational": 0},
-      {"id": "11", "hebrew": 56, "greek": 207, "problems": 0, "informational": 0},
-      {"id": "12", "hebrew": 80, "greek": 250, "problems": 0, "informational": 0},
-      {"id": "13", "hebrew": 96, "greek": 254, "problems": 0, "informational": 1},
-      {"id": "14", "hebrew": 61, "greek": 196, "problems": 0, "informational": 0},
-      {"id": "15", "hebrew": 63, "greek": 196, "problems": 0, "informational": 0},
-      {"id": "16", "hebrew": 7, "greek": 18, "problems": 0, "informational": 0}
+      {
+        "id": "00",
+        "hebrew": 15,
+        "greek": 57,
+        "problems": 3,
+        "informational": 2
+      },
+      {
+        "id": "01",
+        "hebrew": 11,
+        "greek": 51,
+        "problems": 3,
+        "informational": 0
+      },
+      {
+        "id": "02",
+        "hebrew": 28,
+        "greek": 99,
+        "problems": 0,
+        "informational": 0
+      },
+      {
+        "id": "03",
+        "hebrew": 95,
+        "greek": 148,
+        "problems": 0,
+        "informational": 1
+      },
+      {
+        "id": "04",
+        "hebrew": 50,
+        "greek": 140,
+        "problems": 4,
+        "informational": 0
+      },
+      {
+        "id": "05",
+        "hebrew": 39,
+        "greek": 74,
+        "problems": 0,
+        "informational": 0
+      },
+      {
+        "id": "05b",
+        "hebrew": 50,
+        "greek": 89,
+        "problems": 1,
+        "informational": 0
+      },
+      {
+        "id": "06",
+        "hebrew": 77,
+        "greek": 114,
+        "problems": 3,
+        "informational": 0
+      },
+      {
+        "id": "07",
+        "hebrew": 59,
+        "greek": 119,
+        "problems": 1,
+        "informational": 0
+      },
+      {
+        "id": "08",
+        "hebrew": 67,
+        "greek": 158,
+        "problems": 7,
+        "informational": 0
+      },
+      {
+        "id": "09",
+        "hebrew": 49,
+        "greek": 176,
+        "problems": 6,
+        "informational": 4
+      },
+      {
+        "id": "10",
+        "hebrew": 61,
+        "greek": 118,
+        "problems": 0,
+        "informational": 0
+      },
+      {
+        "id": "11",
+        "hebrew": 56,
+        "greek": 207,
+        "problems": 0,
+        "informational": 0
+      },
+      {
+        "id": "12",
+        "hebrew": 80,
+        "greek": 250,
+        "problems": 0,
+        "informational": 0
+      },
+      {
+        "id": "13",
+        "hebrew": 96,
+        "greek": 254,
+        "problems": 0,
+        "informational": 1
+      },
+      {
+        "id": "14",
+        "hebrew": 61,
+        "greek": 196,
+        "problems": 0,
+        "informational": 0
+      },
+      {
+        "id": "15",
+        "hebrew": 63,
+        "greek": 196,
+        "problems": 0,
+        "informational": 0
+      },
+      {
+        "id": "16",
+        "hebrew": 7,
+        "greek": 18,
+        "problems": 0,
+        "informational": 0
+      }
     ],
-    "totals": {"hebrew": 964, "greek": 2464, "problems": 28, "informational": 8},
+    "totals": {
+      "hebrew": 964,
+      "greek": 2464,
+      "problems": 28,
+      "informational": 8
+    },
     "result": "28 [A] lines and 8 [B] lines, each classified: apparatus reading (with sigla), lexicon citation, damaged mirror token or dictionary (lemma) form. No verse quotation of any card is unattested; two real defects were found and fixed (card 05 Hab 2:4, card 05b Ps 51:21)",
     "fixes": [
       "card 05 (T22, Hab 2:4): the LXX column read «ὁ δὲ δίκαιός μου ἐκ πίστεώς μου ζήσεται», not attested in any of the three mirrors — ELI, F1K and S23 read «ὁ δὲ δίκαιος ἐκ πίστεώς μου ζήσεται»; the extra μου belongs to the NT quotation (Heb 10:38). Column corrected; note added to the card journal",
@@ -395,35 +641,180 @@
       "cards 13, 14, 15: counts confirmed (13: 1 [B]; 14, 15: 0 [A] / 0 [B])"
     ],
     "waived": [
-      {"card": "00", "fragment": "הַדָּם יְכַפֵּר", "class": "невосстановимая старая форма, названная в тексте как ошибка", "disposition": "в authority-документе стоит именно как цитата прежней ошибки («исправлено: … → точная фраза כִּי הַדָּם הוּא בַּנֶּפֶשׁ יְכַפֵּר»); в карточках такой формы нет"},
-      {"card": "00", "fragment": "κριὸς τῆς πλημμελίας", "class": "леммная словарная форма", "disposition": "в LXX бытует только в косвенных падежах — исправлено ещё в волне 11.5 (см. fixes qaFullPass); в authority осталось как название леммы"},
-      {"card": "00", "fragment": "τῶν ἁμαρτιῶν τοῦ ἐξιλασμοῦ", "class": "аппаратное чтение (Исх. 30:10, A и F)", "disposition": "так напечатано в аппарате; qalite ищет по тексту стиха, а не по аппарату"},
-      {"card": "00", "fragment": "οὐκ ἔχι", "class": "чтение B* (Числ. 19:15)", "disposition": "орфография кодекса, аппаратная строка"},
-      {"card": "00", "fragment": "τραύματος Α", "class": "чтение A (Числ. 19:16) с сиглами", "disposition": "аппаратная строка"},
-      {"card": "01", "fragment": "καὶ δώσουσιν ἕκαστος λύτρα τῆς ψυχῆς αὐτοῦ τῷ κυρίῳ", "class": "цитата по Studylight с артиклем τῷ", "disposition": "в карточке помечена LOCATOR_HOLD (три зеркала дают κυρίῳ); Göttingen Exodus 1991 не открыт (ARCHIVE_HOLD)"},
-      {"card": "01", "fragment": "ἀντὶ τῆς ψυχὴ ἐχιλάσεται", "class": "порча транскрипции Swete 1909 (S10)", "disposition": "в карточке описана явно как ошибка зеркала, не как чтение"},
-      {"card": "01", "fragment": "καὶ ἀπένεγκε τὸ τάχος εἰς τὴν παρεμβολὴν καὶ ἐξίλασαι περὶ αὐτῶν", "class": "цитата Studylight с чтением A и F (повелительное)", "disposition": "в карточке помечена как вариант A/F; выбор чтения — LOCATOR_HOLD (Göttingen Numeri 1982)"},
-      {"card": "03", "fragment": "κριὸς τῆς πλημμελίας", "class": "леммная словарная форма (заголовок заметки)", "disposition": "в LXX — только косвенные падежи; в заметке карточки дана как словарная форма, рядом с ней — «асхам = πλημμέλεια»"},
-      {"card": "04", "fragment": "προσ οισουσιν", "class": "разбиение слова в зеркале FW", "disposition": "в карточке названо опечаткой, не разночтением"},
-      {"card": "04", "fragment": "δια θηκης", "class": "разбиение слова в зеркале FW", "disposition": "в карточке названо разбиением, не разночтением"},
-      {"card": "04", "fragment": "αἷμα ῥαντισμοῦ", "class": "цитата LSJ (Евр. 12:24; 1 Пет. 1:2)", "disposition": "в SBLGNT эти слова стоят в других падежах; это лексиконная справка, а не цитата стиха"},
-      {"card": "05", "fragment": "лишнее μου после δίκαιος (Авв. 2:4)", "class": "дефект LXX-колонки", "disposition": "ИСПРАВЛЕНО 2026-10-14: колонка T22 приведена к трём зеркалам — ὁ δὲ δίκαιος ἐκ πίστεώς μου ζήσεται; в журнал карточки добавлена пометка (лишнее μου принадлежит НЗ-цитате, Евр. 10:38)"},
-      {"card": "05b", "fragment": "θυσία δικαιοσύνης", "class": "леммная форма вместо формы стиха", "disposition": "ИСПРАВЛЕНО 2026-10-14: в O8 стоит форма стиха θυσίαν δικαιοσύνης"},
-      {"card": "05b", "fragment": "θυσία σωτηρίου", "class": "номинатив словарной статьи", "disposition": "в карточке явно помечено «номинатив словарной статьи»; форма LXX — θυσίαν σωτηρίου (аттестована)"},
-      {"card": "06", "fragment": "λαμβάνω ἁμαρτίαν", "class": "леммная форма передачи נשא חטא", "disposition": "в стихе — λήμψεται (аттестовано); лемма дана в словарном виде (в таблице и в списке смежных карточек)"},
-      {"card": "06", "fragment": "θύειν τὸ π", "class": "сокращение из цитаты LSJ (пасха)", "disposition": "сокращённая словарная форма с точкой"},
-      {"card": "07", "fragment": "λαμβάνω τὴν ἁμαρτίαν", "class": "леммная форма с артиклем", "disposition": "в стихе — τὴν ἁμαρτίαν λήμψεται (аттестовано); лемма дана в словарном виде"},
-      {"card": "08", "fragment": "καὶ περὶ τοῦ λαοῦ Α", "class": "аппаратная строка (Лев. 16:24)", "disposition": "с сиглами; не текст стиха"},
-      {"card": "08", "fragment": "τῶν ἁμαρτιῶν τοῦ ἐξιλασμοῦ", "class": "аппаратное чтение A и F (Исх. 30:10)", "disposition": "аппарат"},
-      {"card": "08", "fragment": "τοῦ καθαρισμοῦ τῶν ἁμαρτιῶν τοῦ ἐξιλασμοῦ", "class": "аппаратное чтение A и F (Исх. 30:10)", "disposition": "аппарат"},
-      {"card": "08", "fragment": "ἐκδύσεται Α", "class": "аппаратное чтение A (Лев. 16:24)", "disposition": "аппарат с сиглами"},
-      {"card": "08", "fragment": "τῶν ἁμαρτιῶν τοῦ ἐξιλασμοῦ ἅπαξ τοῦ ἐνιαυτοῦ", "class": "аппаратное чтение A и F (Исх. 30:10)", "disposition": "аппарат"},
-      {"card": "08", "fragment": "χρυσᾶ τορευτά", "class": "аппаратное чтение BaAF (Исх. 25:17)", "disposition": "аппаратная орфография"},
-      {"card": "09", "fragment": "οὐκ εχι / οὐκ ἔχι", "class": "чтения B* и A (Числ. 19:15)", "disposition": "орфография кодексов, аппаратные строки (три линии)"},
-      {"card": "09", "fragment": "τραύματος Α", "class": "чтение A (Числ. 19:16) с сиглами", "disposition": "аппаратная строка (две линии)"},
-      {"card": "09", "fragment": "αἷμα ῥαντισμοῦ", "class": "цитата LSJ", "disposition": "лексиконная справка, не стих"},
-      {"card": "09", "fragment": "ἐν ἑαυτῇ Α / εμμεσω ὑμῶν / ἐπὶ τοῦ ἡμμένον / καὶ ἁφὰ τῇ ἡμ", "class": "аппаратные чтения A и F (Числ. 19)", "disposition": "аппарат; часть — с порчей транскрипции («εμμεσω»)"},
-      {"card": "13", "fragment": "ἐπιβλέψονται πρὸς μέ ἀνθʼ ὧν κατορχήσαντο", "class": "односимвольное расхождение: κατα- против κατω- (Зах. 12:10)", "disposition": "в карточке описано как расхождение зеркал (F1K и S23 — καταορχήσαντο, ELI — κατωρχήσαντο); не дефект"}
+      {
+        "card": "00",
+        "fragment": "הַדָּם יְכַפֵּר",
+        "class": "невосстановимая старая форма, названная в тексте как ошибка",
+        "disposition": "в authority-документе стоит именно как цитата прежней ошибки («исправлено: … → точная фраза כִּי הַדָּם הוּא בַּנֶּפֶשׁ יְכַפֵּר»); в карточках такой формы нет"
+      },
+      {
+        "card": "00",
+        "fragment": "κριὸς τῆς πλημμελίας",
+        "class": "леммная словарная форма",
+        "disposition": "в LXX бытует только в косвенных падежах — исправлено ещё в волне 11.5 (см. fixes qaFullPass); в authority осталось как название леммы"
+      },
+      {
+        "card": "00",
+        "fragment": "τῶν ἁμαρτιῶν τοῦ ἐξιλασμοῦ",
+        "class": "аппаратное чтение (Исх. 30:10, A и F)",
+        "disposition": "так напечатано в аппарате; qalite ищет по тексту стиха, а не по аппарату"
+      },
+      {
+        "card": "00",
+        "fragment": "οὐκ ἔχι",
+        "class": "чтение B* (Числ. 19:15)",
+        "disposition": "орфография кодекса, аппаратная строка"
+      },
+      {
+        "card": "00",
+        "fragment": "τραύματος Α",
+        "class": "чтение A (Числ. 19:16) с сиглами",
+        "disposition": "аппаратная строка"
+      },
+      {
+        "card": "01",
+        "fragment": "καὶ δώσουσιν ἕκαστος λύτρα τῆς ψυχῆς αὐτοῦ τῷ κυρίῳ",
+        "class": "цитата по Studylight с артиклем τῷ",
+        "disposition": "в карточке помечена LOCATOR_HOLD (три зеркала дают κυρίῳ); Göttingen Exodus 1991 не открыт (ARCHIVE_HOLD)"
+      },
+      {
+        "card": "01",
+        "fragment": "ἀντὶ τῆς ψυχὴ ἐχιλάσεται",
+        "class": "порча транскрипции Swete 1909 (S10)",
+        "disposition": "в карточке описана явно как ошибка зеркала, не как чтение"
+      },
+      {
+        "card": "01",
+        "fragment": "καὶ ἀπένεγκε τὸ τάχος εἰς τὴν παρεμβολὴν καὶ ἐξίλασαι περὶ αὐτῶν",
+        "class": "цитата Studylight с чтением A и F (повелительное)",
+        "disposition": "в карточке помечена как вариант A/F; выбор чтения — LOCATOR_HOLD (Göttingen Numeri 1982)"
+      },
+      {
+        "card": "03",
+        "fragment": "κριὸς τῆς πλημμελίας",
+        "class": "леммная словарная форма (заголовок заметки)",
+        "disposition": "в LXX — только косвенные падежи; в заметке карточки дана как словарная форма, рядом с ней — «асхам = πλημμέλεια»"
+      },
+      {
+        "card": "04",
+        "fragment": "προσ οισουσιν",
+        "class": "разбиение слова в зеркале FW",
+        "disposition": "в карточке названо опечаткой, не разночтением"
+      },
+      {
+        "card": "04",
+        "fragment": "δια θηκης",
+        "class": "разбиение слова в зеркале FW",
+        "disposition": "в карточке названо разбиением, не разночтением"
+      },
+      {
+        "card": "04",
+        "fragment": "αἷμα ῥαντισμοῦ",
+        "class": "цитата LSJ (Евр. 12:24; 1 Пет. 1:2)",
+        "disposition": "в SBLGNT эти слова стоят в других падежах; это лексиконная справка, а не цитата стиха"
+      },
+      {
+        "card": "05",
+        "fragment": "лишнее μου после δίκαιος (Авв. 2:4)",
+        "class": "дефект LXX-колонки",
+        "disposition": "ИСПРАВЛЕНО 2026-10-14: колонка T22 приведена к трём зеркалам — ὁ δὲ δίκαιος ἐκ πίστεώς μου ζήσεται; в журнал карточки добавлена пометка (лишнее μου принадлежит НЗ-цитате, Евр. 10:38)"
+      },
+      {
+        "card": "05b",
+        "fragment": "θυσία δικαιοσύνης",
+        "class": "леммная форма вместо формы стиха",
+        "disposition": "ИСПРАВЛЕНО 2026-10-14: в O8 стоит форма стиха θυσίαν δικαιοσύνης"
+      },
+      {
+        "card": "05b",
+        "fragment": "θυσία σωτηρίου",
+        "class": "номинатив словарной статьи",
+        "disposition": "в карточке явно помечено «номинатив словарной статьи»; форма LXX — θυσίαν σωτηρίου (аттестована)"
+      },
+      {
+        "card": "06",
+        "fragment": "λαμβάνω ἁμαρτίαν",
+        "class": "леммная форма передачи נשא חטא",
+        "disposition": "в стихе — λήμψεται (аттестовано); лемма дана в словарном виде (в таблице и в списке смежных карточек)"
+      },
+      {
+        "card": "06",
+        "fragment": "θύειν τὸ π",
+        "class": "сокращение из цитаты LSJ (пасха)",
+        "disposition": "сокращённая словарная форма с точкой"
+      },
+      {
+        "card": "07",
+        "fragment": "λαμβάνω τὴν ἁμαρτίαν",
+        "class": "леммная форма с артиклем",
+        "disposition": "в стихе — τὴν ἁμαρτίαν λήμψεται (аттестовано); лемма дана в словарном виде"
+      },
+      {
+        "card": "08",
+        "fragment": "καὶ περὶ τοῦ λαοῦ Α",
+        "class": "аппаратная строка (Лев. 16:24)",
+        "disposition": "с сиглами; не текст стиха"
+      },
+      {
+        "card": "08",
+        "fragment": "τῶν ἁμαρτιῶν τοῦ ἐξιλασμοῦ",
+        "class": "аппаратное чтение A и F (Исх. 30:10)",
+        "disposition": "аппарат"
+      },
+      {
+        "card": "08",
+        "fragment": "τοῦ καθαρισμοῦ τῶν ἁμαρτιῶν τοῦ ἐξιλασμοῦ",
+        "class": "аппаратное чтение A и F (Исх. 30:10)",
+        "disposition": "аппарат"
+      },
+      {
+        "card": "08",
+        "fragment": "ἐκδύσεται Α",
+        "class": "аппаратное чтение A (Лев. 16:24)",
+        "disposition": "аппарат с сиглами"
+      },
+      {
+        "card": "08",
+        "fragment": "τῶν ἁμαρτιῶν τοῦ ἐξιλασμοῦ ἅπαξ τοῦ ἐνιαυτοῦ",
+        "class": "аппаратное чтение A и F (Исх. 30:10)",
+        "disposition": "аппарат"
+      },
+      {
+        "card": "08",
+        "fragment": "χρυσᾶ τορευτά",
+        "class": "аппаратное чтение BaAF (Исх. 25:17)",
+        "disposition": "аппаратная орфография"
+      },
+      {
+        "card": "09",
+        "fragment": "οὐκ εχι / οὐκ ἔχι",
+        "class": "чтения B* и A (Числ. 19:15)",
+        "disposition": "орфография кодексов, аппаратные строки (три линии)"
+      },
+      {
+        "card": "09",
+        "fragment": "τραύματος Α",
+        "class": "чтение A (Числ. 19:16) с сиглами",
+        "disposition": "аппаратная строка (две линии)"
+      },
+      {
+        "card": "09",
+        "fragment": "αἷμα ῥαντισμοῦ",
+        "class": "цитата LSJ",
+        "disposition": "лексиконная справка, не стих"
+      },
+      {
+        "card": "09",
+        "fragment": "ἐν ἑαυτῇ Α / εμμεσω ὑμῶν / ἐπὶ τοῦ ἡμμένον / καὶ ἁφὰ τῇ ἡμ",
+        "class": "аппаратные чтения A и F (Числ. 19)",
+        "disposition": "аппарат; часть — с порчей транскрипции («εμμεσω»)"
+      },
+      {
+        "card": "13",
+        "fragment": "ἐπιβλέψονται πρὸς μέ ἀνθʼ ὧν κατορχήσαντο",
+        "class": "односимвольное расхождение: κατα- против κατω- (Зах. 12:10)",
+        "disposition": "в карточке описано как расхождение зеркал (F1K и S23 — καταορχήσαντο, ELI — κατωρχήσαντο); не дефект"
+      }
     ],
     "tooling": "qalite.py (committed) plus triage.py, which prints every unattested fragment with file:line for classification; both read the source mirrors from /tmp/arena-scratch/src (not committed)",
     "notCovered": [
@@ -11737,38 +12128,307 @@
     }
   ],
   "plannedCards": [
-    {"id": "02", "topic": "גאל ga'al; פדה padah; פִּדְיוֹן", "status": "DONE_WAVE3_FIRST_VERSION_APPARATUS_PENDING"},
-    {"id": "03", "topic": "אָשָׁם asham vs חַטָּאת hattat; עָוֹן / פֶּשַׁע / חַטָּאת", "status": "DONE_WAVE4_FIRST_VERSION_APPARATUS_PENDING"},
-    {"id": "04", "topic": "דָּם dam (полная карточка; Lev 17:11 частично в 01)", "status": "DONE_WAVE5_FIRST_VERSION_APPARATUS_PENDING"},
-    {"id": "05", "topic": "צֶדֶק / צְדָקָה (ṣedeq / ṣᵉdāqâ)", "status": "DONE_WAVE6_FIRST_VERSION_APPARATUS_PENDING"},
-    {"id": "05b", "topic": "עֹלָה, שְׁלָמִים, מִנְחָה, תָּמִיד (функции жертв)", "status": "DONE_WAVE7_FIRST_VERSION_APPARATUS_PENDING"},
-    {"id": "06", "topic": "Исх. 12 — пасха; Числ. 9; Втор. 16 (פֶּסַח: кровь, агнец, кто ест)", "status": "DONE_WAVE8_FIRST_VERSION_APPARATUS_PENDING"},
-    {"id": "07", "topic": "Лев. 1–7 — система жертв (kpr + slh: что делает каждая жертва)", "status": "DONE_WAVE9_FIRST_VERSION_APPARATUS_PENDING"},
-    {"id": "08", "topic": "Лев. 16 — День очищения; два козла; לַעֲזָאזֵל (пять живых чтений); LXX Lev 16:2 ἱλαστήριον; Lev 23:27 ἐξιλασμός", "status": "DONE_WAVE10_FIRST_VERSION_APPARATUS_PENDING"},
-    {"id": "09", "topic": "Числ. 19 — красная телица", "status": "DONE_WAVE11_FIRST_VERSION_APPARATUS_PENDING"},
-    {"id": "10", "topic": "Исх. 24 (кровь завета); Быт. 22 (Мориа)", "status": "DONE_WAVE12_FIRST_VERSION_APPARATUS_PENDING"},
-    {"id": "11", "topic": "Ис. 52:13–53:12 (אָשָׁם 53:10; רַבִּים 53:11–12)", "status": "DONE_WAVE13_FIRST_VERSION_APPARATUS_PENDING"},
-    {"id": "12", "topic": "Дан. 9:24–27 (לְכַפֵּר; LXX vs Theodotion)", "status": "DONE_WAVE14_FIRST_VERSION_APPARATUS_PENDING"},
-    {"id": "13", "topic": "Зах. 3; 12:10; 13:1; Пс. 22; 40; 69; 130 (LXX 129)", "status": "DONE_WAVE15_FIRST_VERSION_APPARATUS_PENDING"},
-    {"id": "14", "topic": "Иер. 31:31–34; Иов 19:25; 33:24", "status": "DONE_WAVE16_FIRST_VERSION_APPARATUS_PENDING"},
-    {"id": "15", "topic": "Ос. 13:14; Мих. 6:6–8; Ис. 1:11–17; Ам. 5; Пс. 51/50:16–17", "status": "DONE_WAVE17_FIRST_VERSION_APPARATUS_PENDING", "qaPass": "2026-10-14 (qaQalitePass): 0 unattested verse quotations; two defects fixed (card 05 Hab 2:4, card 05b Ps 51:21)"}
+    {
+      "id": "02",
+      "topic": "גאל ga'al; פדה padah; פִּדְיוֹן",
+      "status": "DONE_WAVE3_FIRST_VERSION_APPARATUS_PENDING"
+    },
+    {
+      "id": "03",
+      "topic": "אָשָׁם asham vs חַטָּאת hattat; עָוֹן / פֶּשַׁע / חַטָּאת",
+      "status": "DONE_WAVE4_FIRST_VERSION_APPARATUS_PENDING"
+    },
+    {
+      "id": "04",
+      "topic": "דָּם dam (полная карточка; Lev 17:11 частично в 01)",
+      "status": "DONE_WAVE5_FIRST_VERSION_APPARATUS_PENDING"
+    },
+    {
+      "id": "05",
+      "topic": "צֶדֶק / צְדָקָה (ṣedeq / ṣᵉdāqâ)",
+      "status": "DONE_WAVE6_FIRST_VERSION_APPARATUS_PENDING"
+    },
+    {
+      "id": "05b",
+      "topic": "עֹלָה, שְׁלָמִים, מִנְחָה, תָּמִיד (функции жертв)",
+      "status": "DONE_WAVE7_FIRST_VERSION_APPARATUS_PENDING"
+    },
+    {
+      "id": "06",
+      "topic": "Исх. 12 — пасха; Числ. 9; Втор. 16 (פֶּסַח: кровь, агнец, кто ест)",
+      "status": "DONE_WAVE8_FIRST_VERSION_APPARATUS_PENDING"
+    },
+    {
+      "id": "07",
+      "topic": "Лев. 1–7 — система жертв (kpr + slh: что делает каждая жертва)",
+      "status": "DONE_WAVE9_FIRST_VERSION_APPARATUS_PENDING"
+    },
+    {
+      "id": "08",
+      "topic": "Лев. 16 — День очищения; два козла; לַעֲזָאזֵל (пять живых чтений); LXX Lev 16:2 ἱλαστήριον; Lev 23:27 ἐξιλασμός",
+      "status": "DONE_WAVE10_FIRST_VERSION_APPARATUS_PENDING"
+    },
+    {
+      "id": "09",
+      "topic": "Числ. 19 — красная телица",
+      "status": "DONE_WAVE11_FIRST_VERSION_APPARATUS_PENDING"
+    },
+    {
+      "id": "10",
+      "topic": "Исх. 24 (кровь завета); Быт. 22 (Мориа)",
+      "status": "DONE_WAVE12_FIRST_VERSION_APPARATUS_PENDING"
+    },
+    {
+      "id": "11",
+      "topic": "Ис. 52:13–53:12 (אָשָׁם 53:10; רַבִּים 53:11–12)",
+      "status": "DONE_WAVE13_FIRST_VERSION_APPARATUS_PENDING"
+    },
+    {
+      "id": "12",
+      "topic": "Дан. 9:24–27 (לְכַפֵּר; LXX vs Theodotion)",
+      "status": "DONE_WAVE14_FIRST_VERSION_APPARATUS_PENDING"
+    },
+    {
+      "id": "13",
+      "topic": "Зах. 3; 12:10; 13:1; Пс. 22; 40; 69; 130 (LXX 129)",
+      "status": "DONE_WAVE15_FIRST_VERSION_APPARATUS_PENDING"
+    },
+    {
+      "id": "14",
+      "topic": "Иер. 31:31–34; Иов 19:25; 33:24",
+      "status": "DONE_WAVE16_FIRST_VERSION_APPARATUS_PENDING"
+    },
+    {
+      "id": "15",
+      "topic": "Ос. 13:14; Мих. 6:6–8; Ис. 1:11–17; Ам. 5; Пс. 51/50:16–17",
+      "status": "DONE_WAVE17_FIRST_VERSION_APPARATUS_PENDING",
+      "qaPass": "2026-10-14 (qaQalitePass): 0 unattested verse quotations; two defects fixed (card 05 Hab 2:4, card 05b Ps 51:21)"
+    }
   ],
-  "sourceRegistryRows": ["S05", "S06", "S07", "S08", "S09", "S10", "S11", "S12", "S13", "S14", "S15", "S16", "S17", "S18", "S19", "S20", "S21", "S22", "S23"],
+  "sourceRegistryRows": [
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S11",
+    "S12",
+    "S13",
+    "S14",
+    "S15",
+    "S16",
+    "S17",
+    "S18",
+    "S19",
+    "S20",
+    "S21",
+    "S22",
+    "S23"
+  ],
   "sources": [
-    {"id": "S10", "class": "P-BIBLE", "name": "Swete 1909 LXX — digital transcription (Sollupulo/Swete-1909-LXX)", "locator": "github.com/Sollupulo/Swete-1909-LXX (1.Genesis, 2.Exodus, 3.Leviticus, 4.Numbers)", "usedFor": "LXX Gen 32:20; Exod 25:16–17, 30:12; Lev 4:20, 17:11; Num 16:46, 35:33", "status": "CHECKED (2z; transcription errors at Lev 17:11)", "evidenceClass": "A1 (text)", "accessState": "body text, no apparatus", "locatorState": "2z", "rightsState": "CC BY-SA 4.0 (digital); print PD", "publicationState": "not published; locators only", "storage": "NOT_STORED"},
-    {"id": "S11", "class": "P-BIBLE", "name": "LXX Swete 1930 — word-level transcription (eliranwong/LXX-Swete-1930)", "locator": "github.com/eliranwong/LXX-Swete-1930 (02-…word_without_punctuations.csv; 00-…versification.csv)", "usedFor": "verification of all eight loci; Num 16:47; Ps 48:8", "status": "CHECKED (verification only)", "evidenceClass": "A1", "accessState": "FULL_OBJECT_VERIFIED", "locatorState": "EXACT_LOCATOR_VERIFIED", "rightsState": "STORAGE_ONLY", "publicationState": "BLOCKED", "storage": "Complete digital files outside Git; selected extracts stored in controls/cards. Source availability must be rechecked after workspace restoration.", "currentAcquisitionEvidence": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json", "scopeOfCurrentVerification": "Named pinned digital objects/selected loci only; not all previous uses, manuscript readings, or complete human reading."},
-    {"id": "S12", "class": "P-BIBLE", "name": "Swete 1887, vol. I (Genesis–IV Kings), with apparatus", "locator": "archive.org/details/oldtestamentingr01swet (djvu.txt; OCR tesseract; fragments 90, 94–95, 119–121 checked)", "usedFor": "apparatus: Lev 17:11; Num 16:46–47; (Lev 13 apparatus presence)", "status": "CHECKED by hand (OCR sigla to verify against image)", "evidenceClass": "A1 (critical edition, 1887)", "accessState": "OCR text", "locatorState": "2z-plus", "rightsState": "PD (1887)", "publicationState": "OCR not copied; locators only", "storage": "LINK_ONLY"},
-    {"id": "S13", "class": "P-BIBLE", "name": "MT morphology — openscriptures/morphhb (wlc OSIS XML)", "locator": "github.com/openscriptures/morphhb (wlc/Gen.xml, Exod.xml, Lev.xml, Num.xml, Ps.xml)", "usedFor": "lemma and morphology for V1–V8 and Num 17:12", "status": "CHECKED", "evidenceClass": "A1", "accessState": "FULL_OBJECT_VERIFIED", "locatorState": "EXACT_LOCATOR_VERIFIED", "rightsState": "STORAGE_ONLY", "publicationState": "BLOCKED", "storage": "Complete digital files outside Git; selected extracts stored in controls/cards. Source availability must be rechecked after workspace restoration.", "currentAcquisitionEvidence": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json", "scopeOfCurrentVerification": "Named pinned digital objects/selected loci only; not all previous uses, manuscript readings, or complete human reading."},
-    {"id": "S14", "class": "P-LEX", "name": "BDB — openscriptures/HebrewLexicon (BrownDriverBriggs.xml, LexicalIndex.xml)", "locator": "github.com/openscriptures/HebrewLexicon (readme.md)", "usedFor": "glosses k.ct.ac, k.ct.ab, k.cu.ab, k.cu.ac, k.cv.ac, k.ct.ae", "status": "CHECKED", "evidenceClass": "B1 (lexicon; 1906)", "accessState": "full XML", "locatorState": "1z", "rightsState": "text of BDB public domain; compilation CC BY 4.0", "publicationState": "short glosses with attribution", "storage": "LINK_ONLY"},
-    {"id": "S15", "class": "P-LEX", "name": "LSJ — Perseus via cltk/greek_lexica_perseus (greek_english_lexicon_lsj_1.xml)", "locator": "github.com/cltk/greek_lexica_perseus (README: MPL 1.1)", "usedFor": "e)cila/skomai; e)cilasmo/s; e)ci/lasma; i(lasth/rios; lu/tron", "status": "CHECKED", "evidenceClass": "B1 (lexicon; 1843/1940)", "accessState": "full XML (beta-code keys)", "locatorState": "1z", "rightsState": "MPL 1.1 (per README)", "publicationState": "short glosses with attribution", "storage": "LINK_ONLY"},
-    {"id": "S16", "class": "P-BIBLE", "name": "NT Greek — morphgnt/sblgnt (MorphGNT lemma column; SBLGNT text)", "locator": "github.com/morphgnt/sblgnt (61-…-morphgnt.txt to 87-Re)", "usedFor": "lemma search (ἐξιλάσκομαι absent; ἱλάσκομαι, ἱλασμός, ἱλαστήριον, λύτρον, ἀντίλυτρον); Heb 9:22", "status": "CHECKED", "evidenceClass": "A1 (text) for NT locators", "accessState": "full text (annotated)", "locatorState": "1z (single annotated NT edition; no second NT mirror checked)", "rightsState": "annotation CC BY-SA 3.0; SBLGNT text under SBLGNT EULA", "publicationState": "locators and short phrases only", "storage": "NOT_STORED"},
-    {"id": "S17", "class": "P-LIB", "name": "Göttingen Septuaginta — volume status (Gen 1974; Exod 1991; Lev 1986; Num 1982; Psalter — project since 2020)", "locator": "adw-goe.de/en/research/completed-research-projects/academies-programme/septuaginta/ ; Brill bibliography; SearchWorks; CCAT IOSCS", "usedFor": "ARCHIVE_HOLD; identifying which critical edition would decide the variants", "status": "CHECKED (bibliography); text not opened", "evidenceClass": "n/a", "accessState": "none (no legal open copy found)", "locatorState": "n/a", "rightsState": "copyrighted print edition", "publicationState": "not published", "storage": "LINK_ONLY"},
-    {"id": "S18", "class": "P-LIB", "name": "Göttingen 'Text History' volumes (MSU XI, XVI, XIX, XXI) — PDF downloads listed on ADW page", "locator": "adw-goe.de (same page; 'PDF-Download' links for Gen 1974, Num 1982, Lev 1986, Exod 1992)", "usedFor": "candidate open route for variant history (not yet opened)", "status": "NOT_OPENED", "evidenceClass": "B1 (secondary) if used", "accessState": "listed, not opened", "locatorState": "n/a", "rightsState": "unknown: check licence before downloading", "publicationState": "n/a", "storage": "NOT_STORED"},
-    {"id": "S19", "class": "EXCLUDED", "name": "eliranwong/LXX-Rahlfs-1935 (Rahlfs text, no licence)", "locator": "github.com/eliranwong/LXX-Rahlfs-1935", "usedFor": "none", "status": "EXCLUDED (no licence; Rahlfs text is copyrighted)", "evidenceClass": "n/a", "accessState": "not used", "locatorState": "n/a", "rightsState": "unclear / protected", "publicationState": "NO", "storage": "NOT_STORED"},
-    {"id": "S20", "class": "CANDIDATE", "name": "Holmes–Parsons, Vetus Testamentum Graecum cum variis lectionibus (1798–1827)", "locator": "not opened (scans on archive.org / Google Books — to check)", "usedFor": "possible open apparatus for variants (wider than Swete 1887)", "status": "NOT_OPENED", "evidenceClass": "A1 (edition, 18th–19th c.)", "accessState": "not checked", "locatorState": "n/a", "rightsState": "PD (expected; verify)", "publicationState": "n/a", "storage": "NOT_STORED"},
-    {"id": "S21", "class": "P-BIBLE", "name": "theancientbible.org — Isaiah (LXX) 59, Greek text page", "locator": "theancientbible.org/isaiah-lxx-59/", "usedFor": "second LXX host for Isa 59:20 (ῥυόμενος); verification only", "status": "CHECKED (second host; edition not stated)", "evidenceClass": "A1 (LXX text), edition unknown — treat as unverified A1", "accessState": "read via search-result excerpt", "locatorState": "2z (conditional: edition not stated)", "rightsState": "unknown (edition not stated); verification only, no copying", "publicationState": "n/a", "storage": "LINK_ONLY"},
-    {"id": "S22", "class": "EXCLUDED", "name": "Rahlfs-based LXX web pages (die-bibel.de; lire.la-bible.net) — seen in search excerpts only", "locator": "die-bibel.de/bibel/LXX/EXO.13.1-EXO.13.16; lire.la-bible.net/bible/LXX/EXO.13", "usedFor": "none", "status": "EXCLUDED (Rahlfs text; not opened, not used; cf. S19)", "evidenceClass": "n/a", "accessState": "search excerpt only", "locatorState": "n/a", "rightsState": "Rahlfs text — no licence assumed", "publicationState": "n/a", "storage": "NOT_STORED"},
-    {"id": "S23", "class": "P-BIBLE", "name": "lxx-swete — First1K-derived token files; project labelled Swete, but the observed Isaiah excerpts align with grc2/Ottley rather than an independent Swete witness.", "locator": "lxx-swete/data (01.Genesis … 53.Ezechiel); README: derived from OpenGreekAndLatin/First1KGreek tlg0527", "usedFor": "third LXX mirror for all OT books in card 03 (Lev 4–10; Num 5, 15, 18; Ps; Hos; Ezek; Isa 53); verification only", "status": "Derived First1K transcription; not an independent witness or a verified codex collation.", "evidenceClass": "A1", "accessState": "FULL_OBJECT_VERIFIED", "locatorState": "EXACT_LOCATOR_VERIFIED", "rightsState": "STORAGE_ONLY", "publicationState": "BLOCKED", "storage": "Complete digital files outside Git; selected extracts stored in controls/cards. Source availability must be rechecked after workspace restoration.", "currentAcquisitionEvidence": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json", "scopeOfCurrentVerification": "Named pinned digital objects/selected loci only; not all previous uses, manuscript readings, or complete human reading."}
+    {
+      "id": "S10",
+      "class": "P-BIBLE",
+      "name": "Swete 1909 LXX — digital transcription (Sollupulo/Swete-1909-LXX)",
+      "locator": "github.com/Sollupulo/Swete-1909-LXX (1.Genesis, 2.Exodus, 3.Leviticus, 4.Numbers)",
+      "usedFor": "LXX Gen 32:20; Exod 25:16–17, 30:12; Lev 4:20, 17:11; Num 16:46, 35:33",
+      "status": "CHECKED (2z; transcription errors at Lev 17:11)",
+      "evidenceClass": "A1 (text)",
+      "accessState": "body text, no apparatus",
+      "locatorState": "2z",
+      "rightsState": "CC BY-SA 4.0 (digital); print PD",
+      "publicationState": "not published; locators only",
+      "storage": "NOT_STORED"
+    },
+    {
+      "id": "S11",
+      "class": "P-BIBLE",
+      "name": "LXX Swete 1930 — word-level transcription (eliranwong/LXX-Swete-1930)",
+      "locator": "github.com/eliranwong/LXX-Swete-1930 (02-…word_without_punctuations.csv; 00-…versification.csv)",
+      "usedFor": "verification of all eight loci; Num 16:47; Ps 48:8",
+      "status": "CHECKED (verification only)",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "storage": "Complete digital files outside Git; selected extracts stored in controls/cards. Source availability must be rechecked after workspace restoration.",
+      "currentAcquisitionEvidence": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+      "scopeOfCurrentVerification": "Named pinned digital objects/selected loci only; not all previous uses, manuscript readings, or complete human reading."
+    },
+    {
+      "id": "S12",
+      "class": "P-BIBLE",
+      "name": "Swete 1887, vol. I (Genesis–IV Kings), with apparatus",
+      "locator": "archive.org/details/oldtestamentingr01swet (djvu.txt; OCR tesseract; fragments 90, 94–95, 119–121 checked)",
+      "usedFor": "apparatus: Lev 17:11; Num 16:46–47; (Lev 13 apparatus presence)",
+      "status": "CHECKED by hand (OCR sigla to verify against image)",
+      "evidenceClass": "A1 (critical edition, 1887)",
+      "accessState": "OCR text",
+      "locatorState": "2z-plus",
+      "rightsState": "PD (1887)",
+      "publicationState": "OCR not copied; locators only",
+      "storage": "LINK_ONLY"
+    },
+    {
+      "id": "S13",
+      "class": "P-BIBLE",
+      "name": "MT morphology — openscriptures/morphhb (wlc OSIS XML)",
+      "locator": "github.com/openscriptures/morphhb (wlc/Gen.xml, Exod.xml, Lev.xml, Num.xml, Ps.xml)",
+      "usedFor": "lemma and morphology for V1–V8 and Num 17:12",
+      "status": "CHECKED",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "storage": "Complete digital files outside Git; selected extracts stored in controls/cards. Source availability must be rechecked after workspace restoration.",
+      "currentAcquisitionEvidence": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+      "scopeOfCurrentVerification": "Named pinned digital objects/selected loci only; not all previous uses, manuscript readings, or complete human reading."
+    },
+    {
+      "id": "S14",
+      "class": "P-LEX",
+      "name": "BDB — openscriptures/HebrewLexicon (BrownDriverBriggs.xml, LexicalIndex.xml)",
+      "locator": "github.com/openscriptures/HebrewLexicon (readme.md)",
+      "usedFor": "glosses k.ct.ac, k.ct.ab, k.cu.ab, k.cu.ac, k.cv.ac, k.ct.ae",
+      "status": "CHECKED",
+      "evidenceClass": "B1 (lexicon; 1906)",
+      "accessState": "full XML",
+      "locatorState": "1z",
+      "rightsState": "text of BDB public domain; compilation CC BY 4.0",
+      "publicationState": "short glosses with attribution",
+      "storage": "LINK_ONLY"
+    },
+    {
+      "id": "S15",
+      "class": "P-LEX",
+      "name": "LSJ — Perseus via cltk/greek_lexica_perseus (greek_english_lexicon_lsj_1.xml)",
+      "locator": "github.com/cltk/greek_lexica_perseus (README: MPL 1.1)",
+      "usedFor": "e)cila/skomai; e)cilasmo/s; e)ci/lasma; i(lasth/rios; lu/tron",
+      "status": "CHECKED",
+      "evidenceClass": "B1 (lexicon; 1843/1940)",
+      "accessState": "full XML (beta-code keys)",
+      "locatorState": "1z",
+      "rightsState": "MPL 1.1 (per README)",
+      "publicationState": "short glosses with attribution",
+      "storage": "LINK_ONLY"
+    },
+    {
+      "id": "S16",
+      "class": "P-BIBLE",
+      "name": "NT Greek — morphgnt/sblgnt (MorphGNT lemma column; SBLGNT text)",
+      "locator": "github.com/morphgnt/sblgnt (61-…-morphgnt.txt to 87-Re)",
+      "usedFor": "lemma search (ἐξιλάσκομαι absent; ἱλάσκομαι, ἱλασμός, ἱλαστήριον, λύτρον, ἀντίλυτρον); Heb 9:22",
+      "status": "CHECKED",
+      "evidenceClass": "A1 (text) for NT locators",
+      "accessState": "full text (annotated)",
+      "locatorState": "1z (single annotated NT edition; no second NT mirror checked)",
+      "rightsState": "annotation CC BY-SA 3.0; SBLGNT text under SBLGNT EULA",
+      "publicationState": "locators and short phrases only",
+      "storage": "NOT_STORED"
+    },
+    {
+      "id": "S17",
+      "class": "P-LIB",
+      "name": "Göttingen Septuaginta — volume status (Gen 1974; Exod 1991; Lev 1986; Num 1982; Psalter — project since 2020)",
+      "locator": "adw-goe.de/en/research/completed-research-projects/academies-programme/septuaginta/ ; Brill bibliography; SearchWorks; CCAT IOSCS",
+      "usedFor": "ARCHIVE_HOLD; identifying which critical edition would decide the variants",
+      "status": "CHECKED (bibliography); text not opened",
+      "evidenceClass": "n/a",
+      "accessState": "none (no legal open copy found)",
+      "locatorState": "n/a",
+      "rightsState": "copyrighted print edition",
+      "publicationState": "not published",
+      "storage": "LINK_ONLY"
+    },
+    {
+      "id": "S18",
+      "class": "P-LIB",
+      "name": "Göttingen 'Text History' volumes (MSU XI, XVI, XIX, XXI) — PDF downloads listed on ADW page",
+      "locator": "adw-goe.de (same page; 'PDF-Download' links for Gen 1974, Num 1982, Lev 1986, Exod 1992)",
+      "usedFor": "candidate open route for variant history (not yet opened)",
+      "status": "NOT_OPENED",
+      "evidenceClass": "B1 (secondary) if used",
+      "accessState": "listed, not opened",
+      "locatorState": "n/a",
+      "rightsState": "unknown: check licence before downloading",
+      "publicationState": "n/a",
+      "storage": "NOT_STORED"
+    },
+    {
+      "id": "S19",
+      "class": "EXCLUDED",
+      "name": "eliranwong/LXX-Rahlfs-1935 (Rahlfs text, no licence)",
+      "locator": "github.com/eliranwong/LXX-Rahlfs-1935",
+      "usedFor": "none",
+      "status": "EXCLUDED (no licence; Rahlfs text is copyrighted)",
+      "evidenceClass": "n/a",
+      "accessState": "not used",
+      "locatorState": "n/a",
+      "rightsState": "unclear / protected",
+      "publicationState": "NO",
+      "storage": "NOT_STORED"
+    },
+    {
+      "id": "S20",
+      "class": "CANDIDATE",
+      "name": "Holmes–Parsons, Vetus Testamentum Graecum cum variis lectionibus (1798–1827)",
+      "locator": "not opened (scans on archive.org / Google Books — to check)",
+      "usedFor": "possible open apparatus for variants (wider than Swete 1887)",
+      "status": "NOT_OPENED",
+      "evidenceClass": "A1 (edition, 18th–19th c.)",
+      "accessState": "not checked",
+      "locatorState": "n/a",
+      "rightsState": "PD (expected; verify)",
+      "publicationState": "n/a",
+      "storage": "NOT_STORED"
+    },
+    {
+      "id": "S21",
+      "class": "P-BIBLE",
+      "name": "theancientbible.org — Isaiah (LXX) 59, Greek text page",
+      "locator": "theancientbible.org/isaiah-lxx-59/",
+      "usedFor": "second LXX host for Isa 59:20 (ῥυόμενος); verification only",
+      "status": "CHECKED (second host; edition not stated)",
+      "evidenceClass": "A1 (LXX text), edition unknown — treat as unverified A1",
+      "accessState": "read via search-result excerpt",
+      "locatorState": "2z (conditional: edition not stated)",
+      "rightsState": "unknown (edition not stated); verification only, no copying",
+      "publicationState": "n/a",
+      "storage": "LINK_ONLY"
+    },
+    {
+      "id": "S22",
+      "class": "EXCLUDED",
+      "name": "Rahlfs-based LXX web pages (die-bibel.de; lire.la-bible.net) — seen in search excerpts only",
+      "locator": "die-bibel.de/bibel/LXX/EXO.13.1-EXO.13.16; lire.la-bible.net/bible/LXX/EXO.13",
+      "usedFor": "none",
+      "status": "EXCLUDED (Rahlfs text; not opened, not used; cf. S19)",
+      "evidenceClass": "n/a",
+      "accessState": "search excerpt only",
+      "locatorState": "n/a",
+      "rightsState": "Rahlfs text — no licence assumed",
+      "publicationState": "n/a",
+      "storage": "NOT_STORED"
+    },
+    {
+      "id": "S23",
+      "class": "P-BIBLE",
+      "name": "lxx-swete — First1K-derived token files; project labelled Swete, but the observed Isaiah excerpts align with grc2/Ottley rather than an independent Swete witness.",
+      "locator": "lxx-swete/data (01.Genesis … 53.Ezechiel); README: derived from OpenGreekAndLatin/First1KGreek tlg0527",
+      "usedFor": "third LXX mirror for all OT books in card 03 (Lev 4–10; Num 5, 15, 18; Ps; Hos; Ezek; Isa 53); verification only",
+      "status": "Derived First1K transcription; not an independent witness or a verified codex collation.",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "storage": "Complete digital files outside Git; selected extracts stored in controls/cards. Source availability must be rechecked after workspace restoration.",
+      "currentAcquisitionEvidence": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
+      "scopeOfCurrentVerification": "Named pinned digital objects/selected loci only; not all previous uses, manuscript readings, or complete human reading."
+    }
   ],
   "doNot": [
     "pirate-copyrighted-pdfs",
@@ -11780,8 +12440,7 @@
     "commit-google_drive-scratch-exports",
     "copy-transcriptions-with-copyleft-or-unlicensed-data-into-repo",
     "cite-Lev-17:11-ἐξειλάσεται-B*-without-image-check"
-  ]
-,
+  ],
   "synchronizationReview": {
     "date": "2026-11-03",
     "evidence": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-03.json",
@@ -11816,37 +12475,65 @@
     "чтоСчитаетсяДоводом": "заголовок «## » в любом .md лана, включая вложенные папки (synthesis/drafts, ot/tools); тело секции — до следующего «## » или до конца файла",
     "приоритет": "УДЕРЖИВАЕТСЯ > ОТКРЫТО > ЗАКРЫТО; маркеров нет -> БЕЗ МАРКЕРА; маркер вне классификации -> ошибка съёма, а не «прочее»",
     "метод": "scripts/atonement_claim_register.py обходит прозу лана целиком (без выборки), разбирает маркеры вида `ВЕРДИКТ`, сверяет локатор побайтово (файл + номер строки + текст)",
-    "строк": 230,
+    "строк": 239,
     "файлов": 22,
     "покрытоМашинно": 0,
-    "покрытоПоФайлу": 230,
+    "покрытоПоФайлу": 239,
     "файловПрозы": 22,
     "файловБезКарточки": 0,
-    "разрешеноЛокаторов": 230,
+    "разрешеноЛокаторов": 239,
     "неРазрешено": 0,
     "поКлассам": {
-      "БЕЗ МАРКЕРА": 209,
-      "УДЕРЖИВАЕТСЯ": 20,
+      "БЕЗ МАРКЕРА": 213,
+      "УДЕРЖИВАЕТСЯ": 25,
       "СЛУЖЕБНОЕ": 1
     },
     "маркеры": {
-      "всего": 84,
-      "различных": 6,
+      "всего": 121,
+      "различных": 20,
       "словарь": {
         "ARCHIVE_HOLD": "УДЕРЖИВАЕТСЯ",
+        "CODEX_WITNESS_HOLD": "УДЕРЖИВАЕТСЯ",
+        "COPTIC_CHILDREN_READING_LOCATED": "ЗАКРЫТО",
+        "COPTIC_POSSESSIVE_FORM_LOCATED": "ЗАКРЫТО",
+        "EDITION_VARIANT_LOCATED": "ЗАКРЫТО",
+        "EDITORIAL_TRANSCRIPTION_HOLD": "УДЕРЖИВАЕТСЯ",
         "EVIDENCE_HOLD": "УДЕРЖИВАЕТСЯ",
+        "GOTTINGEN_APPARATUS_HOLD": "УДЕРЖИВАЕТСЯ",
+        "GOTTINGEN_WITNESS_COLLATED": "ЗАКРЫТО",
+        "GREEK_BACKTRANSLATION_HOLD": "УДЕРЖИВАЕТСЯ",
+        "GREEK_VORLAGE_AMBIGUOUS": "УДЕРЖИВАЕТСЯ",
         "LOCATOR_HOLD": "УДЕРЖИВАЕТСЯ",
         "OT-AUTH": "СЛУЖЕБНОЕ",
         "PUBLICATION_HOLD": "УДЕРЖИВАЕТСЯ",
-        "RIGHTS_HOLD": "УДЕРЖИВАЕТСЯ"
+        "RECEPTION_SCOPE_OPEN": "ОТКРЫТО",
+        "RIGHTS_HOLD": "УДЕРЖИВАЕТСЯ",
+        "SUBJECT_OPEN": "ОТКРЫТО",
+        "SUBJECT_OPEN / EDITION_WITNESS_HOLD": "УДЕРЖИВАЕТСЯ",
+        "SWETE_III_PRINT_FACSIMILE_VERIFIED": "ЗАКРЫТО",
+        "SYNTAX_LEXEME_OPEN": "ОТКРЫТО"
       },
       "частоты": {
-        "LOCATOR_HOLD": 32,
-        "ARCHIVE_HOLD": 24,
+        "LOCATOR_HOLD": 33,
+        "ARCHIVE_HOLD": 25,
         "EVIDENCE_HOLD": 20,
-        "PUBLICATION_HOLD": 5,
-        "RIGHTS_HOLD": 2,
-        "OT-AUTH": 1
+        "PUBLICATION_HOLD": 10,
+        "RIGHTS_HOLD": 7,
+        "CODEX_WITNESS_HOLD": 4,
+        "GOTTINGEN_APPARATUS_HOLD": 4,
+        "SYNTAX_LEXEME_OPEN": 3,
+        "GREEK_BACKTRANSLATION_HOLD": 2,
+        "GREEK_VORLAGE_AMBIGUOUS": 2,
+        "SUBJECT_OPEN": 2,
+        "COPTIC_CHILDREN_READING_LOCATED": 1,
+        "COPTIC_POSSESSIVE_FORM_LOCATED": 1,
+        "EDITION_VARIANT_LOCATED": 1,
+        "EDITORIAL_TRANSCRIPTION_HOLD": 1,
+        "GOTTINGEN_WITNESS_COLLATED": 1,
+        "OT-AUTH": 1,
+        "RECEPTION_SCOPE_OPEN": 1,
+        "SUBJECT_OPEN / EDITION_WITNESS_HOLD": 1,
+        "SWETE_III_PRINT_FACSIMILE_VERIFIED": 1
       },
       "служебные": [
         "OT-AUTH"
@@ -11873,7 +12560,7 @@
       "ссылокВнеОбходаЛана": 0,
       "записейВнеСтрокЛана": 0,
       "файловБезКарточкиСостояния": 2,
-      "маркеровВПрозеНеОтражённыхВКарточке": 0,
+      "маркеровВПрозеНеОтражённыхВКарточке": 7,
       "маркеровВКарточкеНеИзПрозыЛана": 35,
       "детально": {
         "06_PESAH_EXOD12.md": {
@@ -11926,9 +12613,17 @@
           "естьКарточка": true
         },
         "11_ISA52_53_SERVANT.md": {
-          "проза": 0,
+          "проза": 18,
           "карточка": 8,
-          "вПрозеНеВКарточке": [],
+          "вПрозеНеВКарточке": [
+            "CODEX_WITNESS_HOLD",
+            "EDITORIAL_TRANSCRIPTION_HOLD",
+            "GOTTINGEN_APPARATUS_HOLD",
+            "GREEK_BACKTRANSLATION_HOLD",
+            "GREEK_VORLAGE_AMBIGUOUS",
+            "RIGHTS_HOLD",
+            "SUBJECT_OPEN / EDITION_WITNESS_HOLD"
+          ],
           "вКарточкеНеИзПрозы": [
             "BLOCKED",
             "EXACT_LOCATOR_VERIFIED",
@@ -13779,6 +14474,156 @@
         "машинноПоФайлу": true
       },
       {
+        "код": "11@11_ISA52_53_SERVANT",
+        "лан": "ot",
+        "файл": "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md",
+        "строка": 254,
+        "срез": "11. R3 — издательская греческая сверка 52:15 / 53:4–5 / 53:10 (08.11.2026)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 2,
+        "токены": [
+          "ARCHIVE_HOLD",
+          "EDITORIAL_TRANSCRIPTION_HOLD",
+          "LOCATOR_HOLD",
+          "PUBLICATION_HOLD",
+          "RECEPTION_SCOPE_OPEN",
+          "RIGHTS_HOLD",
+          "SUBJECT_OPEN / EDITION_WITNESS_HOLD",
+          "SYNTAX_LEXEME_OPEN"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "12@11_ISA52_53_SERVANT",
+        "лан": "ot",
+        "файл": "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md",
+        "строка": 265,
+        "срез": "12. R4 — реальный печатный Swete III подтверждён по факсимиле (08.11.2026)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 3,
+        "токены": [
+          "CODEX_WITNESS_HOLD",
+          "GOTTINGEN_APPARATUS_HOLD",
+          "PUBLICATION_HOLD",
+          "RIGHTS_HOLD",
+          "SWETE_III_PRINT_FACSIMILE_VERIFIED",
+          "SYNTAX_LEXEME_OPEN"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "13@11_ISA52_53_SERVANT",
+        "лан": "ot",
+        "файл": "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md",
+        "строка": 277,
+        "срез": "13. AT-010-R5 — фотографии Ottley II (1906) с текстом A и выборочным аппаратом (08.11.2026)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 3,
+        "токены": [
+          "CODEX_WITNESS_HOLD",
+          "EDITION_VARIANT_LOCATED",
+          "GOTTINGEN_APPARATUS_HOLD",
+          "GOTTINGEN_WITNESS_COLLATED",
+          "PUBLICATION_HOLD",
+          "RIGHTS_HOLD",
+          "SUBJECT_OPEN",
+          "SYNTAX_LEXEME_OPEN"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "14@11_ISA52_53_SERVANT",
+        "лан": "ot",
+        "файл": "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md",
+        "строка": 287,
+        "срез": "14. AT-010-R6 — коптские копии Ис. 53:5/10 как переводное свидетельство (08.11.2026)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 3,
+        "токены": [
+          "CODEX_WITNESS_HOLD",
+          "COPTIC_CHILDREN_READING_LOCATED",
+          "COPTIC_POSSESSIVE_FORM_LOCATED",
+          "GOTTINGEN_APPARATUS_HOLD",
+          "GREEK_BACKTRANSLATION_HOLD",
+          "GREEK_VORLAGE_AMBIGUOUS",
+          "PUBLICATION_HOLD",
+          "RIGHTS_HOLD",
+          "SUBJECT_OPEN"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "15@11_ISA52_53_SERVANT",
+        "лан": "ot",
+        "файл": "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md",
+        "строка": 296,
+        "срез": "15. AT-010-R7 — первичная фотографическая локализация sa 48, честный предел чтения (08.11.2026)",
+        "класс": "УДЕРЖИВАЕТСЯ",
+        "маркеров": 1,
+        "токены": [
+          "CODEX_WITNESS_HOLD",
+          "GOTTINGEN_APPARATUS_HOLD",
+          "GREEK_BACKTRANSLATION_HOLD",
+          "GREEK_VORLAGE_AMBIGUOUS",
+          "PUBLICATION_HOLD",
+          "RIGHTS_HOLD"
+        ],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "16@11_ISA52_53_SERVANT",
+        "лан": "ot",
+        "файл": "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md",
+        "строка": 300,
+        "срез": "16. AT-010-R8 — Morgan M.568 f.54v и Bodmer XXIII f.13v/14r: фото плюс дипломатическая транскрипция (08.11.2026)",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "17@11_ISA52_53_SERVANT",
+        "лан": "ot",
+        "файл": "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md",
+        "строка": 308,
+        "срез": "17. AT-010-R9 — extra Coptic witnesses of Isaiah 53:10 (2026-11-08)",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "18@11_ISA52_53_SERVANT",
+        "лан": "ot",
+        "файл": "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md",
+        "строка": 312,
+        "срез": "18. AT-010-R17 — еврейские варианты Ис. 53:10–12 (09.11.2026)",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
+        "код": "19@11_ISA52_53_SERVANT",
+        "лан": "ot",
+        "файл": "ИСКУПЛЕНИЕ/ot/11_ISA52_53_SERVANT.md",
+        "строка": 318,
+        "срез": "19. AT-010-R18 — греческая рукопись Q по официальным снимкам, Ис. 53:5 и 53:10 (09.11.2026)",
+        "класс": "БЕЗ МАРКЕРА",
+        "маркеров": 0,
+        "токены": [],
+        "машинно": false,
+        "машинноПоФайлу": true
+      },
+      {
         "код": "1@12_DAN9_SEVENTY_WEEKS",
         "лан": "ot",
         "файл": "ИСКУПЛЕНИЕ/ot/12_DAN9_SEVENTY_WEEKS.md",
@@ -14846,9 +15691,9 @@
     ],
     "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
     "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check ot",
-    "measuredAt": "2026-11-16T20:01:26Z",
-    "checkedAt": "2026-11-16T20:01:26Z",
-    "предыдущийСъём": "2026-11-16T17:26:25Z"
+    "measuredAt": "2026-11-16T21:46:40Z",
+    "checkedAt": "2026-11-16T21:46:40Z",
+    "предыдущийСъём": "2026-11-16T21:28:41Z"
   },
   "wave19": {
     "date": "2026-11-15",

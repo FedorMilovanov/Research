@@ -696,7 +696,7 @@ def write_rollup(fresh: dict) -> list:
                                                            sort_keys=True) != json.dumps(
                 gate_a[key], ensure_ascii=False, sort_keys=True):
             raise SystemExit(f"запись сводки задела чужой ключ integrityGate.{key!r} — так нельзя")
-    path.write_text(out, encoding="utf-8")
+    path.write_text(out, encoding="utf-8", newline="\n")
     return [l for l in rollup_diff(fresh)]
 
 
@@ -745,7 +745,7 @@ def insert_block(path: Path, block: dict) -> None:
                 data_now[key], ensure_ascii=False, sort_keys=True
             ):
                 raise SystemExit(f"{path.name}: привидение к форме задело ключ {key!r}")
-        path.write_text(canon, encoding="utf-8")
+        path.write_text(canon, encoding="utf-8", newline="\n")
         return
     i = raw.rstrip().rfind("\n}")
     if i < 0:
@@ -767,7 +767,7 @@ def insert_block(path: Path, block: dict) -> None:
             data[key], ensure_ascii=False, sort_keys=True
         ):
             raise SystemExit(f"{path.name}: вставка задела чужой ключ {key!r} — так нельзя")
-    path.write_text(new, encoding="utf-8")
+    path.write_text(new, encoding="utf-8", newline="\n")
 
 
 def build_block(lan: str, fresh: dict, previous: dict | None) -> dict:

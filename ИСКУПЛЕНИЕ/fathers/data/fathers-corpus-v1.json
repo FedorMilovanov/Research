@@ -2285,215 +2285,6 @@
     ],
     "summary": "Wave 9 verifies 21 visual A1 print scans, 3 corrected A1 TEI-XML editions (PL 54, PL 75, First1KGreek Or. 30), and 27 class-C OCR/JSONL witnesses without promoting OCR to VERIFIED_ORIGINAL. Cramer 1841 Vol. II p. 322 (Coislin 23 catena scan, A1) confirms the shorter anonymous scholion on John 11:51-52 displaced after John 12:8; Pusey 1872 Vol. II pp. 294-296 and PG 74 cols. 69-70 remain without page scans, keeping C-25 OPEN. Five-locus comparison of Cyril In Joannem (1:11-13 A1 scan; 8:46-47, 10:14-16, 11:44 C OCR with Praefatio p. ix rejecting the 691A paragraph; 11:49-52) confirms a two-register Johannine grammar (universal creator kinship versus eschatological adoption through faith). GRG-1 is repaired from PL 75 cols. 524C/612B/614A/642B (sine aestimatione dabatur percipi, Misertus ergo creator ut redimeret); LEO-1 (PL 54 + Greek column scans), NAZ-1 (Mason 1899 pp. 140-143 scans; Or. 45.22 remains class C), and CHR-2 (Cramer II p. 320 scan + Hom. 65 OCR) are bound to exact locators."
   },
-  "patristicAndMedievalPrimaryDossierWave10": {
-    "recordedAtUtc": "2026-11-15T17:05:00Z",
-    "status": "PRIMARY_DOSSIERS_II_XIII_C_COMPLETE_F8_F1405_F1406_CLOSED_PUBLICATION_HOLD_PRESERVED",
-    "c25": "OPEN",
-    "publicationEligible": false,
-    "newFiles": [
-      "ИСКУПЛЕНИЕ/fathers/12_DEEP_PRIMARY_DOSSIER_II_VIII_C_2026-11-15.md",
-      "ИСКУПЛЕНИЕ/fathers/13_AUGUSTINE_AND_MEDIEVAL_TURNING_POINT_2026-11-15.md",
-      "ИСКУПЛЕНИЕ/fathers/14_FIVE_THESES_AUDIT_AND_CH14_16_BRIDGE_2026-11-15.md"
-    ],
-    "updatedFiles": [
-      "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
-      "ИСКУПЛЕНИЕ/fathers/09_SILENCES_AND_FALSE_FRIENDS.md",
-      "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
-      "docs/research/atonement/15_patristic_and_reformation_misattributions.md"
-    ],
-    "closedHoldsAndFalseLocators": [
-      "F-8",
-      "F14-05",
-      "F14-06"
-    ],
-    "remainingHolds": [
-      "Irenaeus AH V.1.1 full SC 153 continuous Greek/Latin page collation (ORIGINAL_TEXT_HOLD)",
-      "Cyril of Alexandria John 11:52 Pusey Vol. II pp. 294-296 & PG 74 cols. 69-70 scans (C-25 OPEN)",
-      "Sub-corpus PUBLICATION_HOLD"
-    ],
-    "fiveThesesAuditVerdicts": {
-      "thesis1_unanimousUniversalAtonement": "PARTIALLY_TRUE_ANACHRONISTIC_OVERCLAIM",
-      "thesis2_unanimousLimitedAtonement": "FALSE",
-      "thesis3_onlyDevilRansomOrChristusVictorPreAnselm": "FALSE",
-      "thesis4_anselmInventedPSA": "FALSE",
-      "thesis5_psa16thCInventionZeroPatristicRoots": "FALSE"
-    }
-  },
-  "patristicScotistAndReformationWave11": {
-    "recordedAtUtc": "2026-11-15T19:15:00Z",
-    "status": "LATE_PATRISTIC_SCOTIST_AND_REFORMATION_PRIMARY_AUDIT_COMPLETE_G65_G66_F1407_CLOSED_PUBLICATION_HOLD_PRESERVED",
-    "c25": "OPEN",
-    "publicationEligible": false,
-    "newFiles": [
-      "ИСКУПЛЕНИЕ/fathers/15_LATE_PATRISTIC_AND_SCOTIST_PIVOT_IV_XIV_C_2026-11-15.md",
-      "ИСКУПЛЕНИЕ/fathers/16_REFORMATION_ATONEMENT_PRIMARY_AUDIT_XVI_C_2026-11-15.md"
-    ],
-    "updatedFiles": [
-      "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
-      "ИСКУПЛЕНИЕ/fathers/09_SILENCES_AND_FALSE_FRIENDS.md",
-      "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
-      "docs/research/atonement/15_patristic_and_reformation_misattributions.md"
-    ],
-    "closedHoldsAndGaps": [
-      "00_ §9 #3 (Cyril of Jerusalem Cat. XIII.32-33 Greek)",
-      "PR #309 G65 (Bernard of Clairvaux Ep. 190 PL 182 Latin)",
-      "PR #309 G66 (Maximus the Confessor Ad Thalassium Q. 21 & Q. 61 PG 90 Greek)",
-      "PR #309 F14-07 (Luther WA 40/1 & WA 18 + Calvin Inst. 1559 & Commentarii Latin/English)"
-    ],
-    "newFalseFriends": [
-      "F-26",
-      "F-27",
-      "F-28",
-      "F-29",
-      "F-30"
-    ],
-    "remainingHolds": [
-      "Cyril of Jerusalem Cat. XIII.2 full Greek (ORIGINAL_TEXT_HOLD)",
-      "Basil of Caesarea Hom. in Ps. 48 §4 exact PG 29:440A Greek (ORIGINAL_TEXT_HOLD)",
-      "John Duns Scotus Lectura III dd. 19-20 Vatican Vol. 21 Latin (ORIGINAL_TEXT_HOLD)",
-      "Theodore Beza Acta Colloquii Montisbelgartensis 1587/1588 Latin print (ORIGINAL_TEXT_HOLD)",
-      "Irenaeus AH V.1.1 full SC 153 continuous Greek/Latin page collation (ORIGINAL_TEXT_HOLD)",
-      "Cyril of Alexandria John 11:52 Pusey Vol. II pp. 294-296 & PG 74 cols. 69-70 scans (C-25 OPEN)",
-      "Sub-corpus PUBLICATION_HOLD"
-    ]
-  },
-  "postReformationXviiPrimaryWave12": {
-    "recordedAtUtc": "2026-11-15T18:30:00Z",
-    "status": "COMPLETED_RESEARCH_WAVE_12",
-    "c25": "OPEN",
-    "publicationEligible": false,
-    "newFiles": [
-      "ИСКУПЛЕНИЕ/fathers/17_POST_REFORMATION_XVII_C_PRIMARY_AUDIT_1617_1689_2026-11-15.md"
-    ],
-    "updatedFiles": [
-      "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
-      "ИСКУПЛЕНИЕ/fathers/09_SILENCES_AND_FALSE_FRIENDS.md",
-      "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
-      "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
-      "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
-      "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json"
-    ],
-    "closedHoldsAndGaps": [
-      "C-14 textual gap (word-for-word collation of WCF 1646 / Savoy 1658 / 2LBC 1677-1689 Ch. III.6, VII.3, VIII.1-10, XI.3-4, XX.1-4; 02_CONFLICT_LEDGER.md untouched to preserve synchronization_2026-11-02.json checks)",
-      "D2 Grotius Defensio 1617 acceptilatio myth resolved via 3.1 & 6.14 (Grotiana 38.1, 2017; EEBO-TCP A42221; Foster 1889)",
-      "Owen 1647 (Goold X:271-272) -> 1653 (Goold X:481-624) Scotist-to-essentialist reversal documented verbatim",
-      "Turretin XIV Q. 10-14 pecuniary/penal synthesis & Formula Consensus Helvetica 1675 Canons I-XXIV verified"
-    ],
-    "newFalseFriends": [
-      "F-31",
-      "F-32",
-      "F-33",
-      "F-34",
-      "F-35"
-    ],
-    "remainingHolds": [
-      "ORIGINAL_TEXT_HOLD: Grotius Defensio 1617 Leyden / 1730 Leipzig continuous Latin folio collation",
-      "ORIGINAL_TEXT_HOLD: Turretin Institutio 1682 Geneva Latin page collation for Locus XIV Q. 10-11",
-      "C-25 OPEN: Cyril of Alexandria In Io. VII 11:52 Pusey II pp. 294-296 / PG 74 cols. 69-70 scans"
-    ]
-  },
-  "modernEraXviiiXixPrimaryWave13": {
-    "recordedAtUtc": "2026-11-15T19:15:00Z",
-    "status": "COMPLETED_RESEARCH_WAVE_13",
-    "c25": "OPEN",
-    "publicationEligible": false,
-    "newFiles": [
-      "ИСКУПЛЕНИЕ/fathers/18_MODERN_ERA_XVIII_XIX_C_PRIMARY_AUDIT_1718_1931_2026-11-15.md"
-    ],
-    "updatedFiles": [
-      "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
-      "ИСКУПЛЕНИЕ/fathers/09_SILENCES_AND_FALSE_FRIENDS.md",
-      "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
-      "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
-      "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
-      "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json"
-    ],
-    "closedHoldsAndGaps": [
-      "Complete 1,800-year historical-theological primary arc (II-XX c., files 12_-18_) linking Patristic/Medieval/Reformation/Post-Reformation debates directly to modern Baptist/Reformed terminology (1795-1907 -> 2019)",
-      "C-12 Gill vs Fuller primary synthesis documented cleanly without touching external sub-corpus БИОГРАФИИ/Джон Гилл/",
-      "Charles Hodge ST II:469-475, 544-562 direct CCEL primary collation + Bushnell 1866->1874 revision + Edwards Sr.->Edwards Jr./McLeod Campbell bifurcation + Bavinck organic synthesis vs Aulen typology"
-    ],
-    "newFalseFriends": [
-      "F-36",
-      "F-37",
-      "F-38",
-      "F-39",
-      "F-40"
-    ],
-    "remainingHolds": [
-      "ORIGINAL_TEXT_HOLD: full printed page collation of Fisher 1645 / Boston 1726, Yale WJE Edwards, Bushnell 1874, Campbell 1856/1869, Dutch GD III Bavinck, and Swedish/German Aulen 1930",
-      "C-25 OPEN: Cyril of Alexandria In Io. VII 11:52 Pusey II pp. 294-296 / PG 74 cols. 69-70 scans"
-    ]
-  },
-  "counterVoicesXviXviiPrimaryWave14": {
-    "recordedAtUtc": "2026-11-15T20:15:00Z",
-    "status": "COMPLETED_RESEARCH_WAVE_14",
-    "c25": "OPEN",
-    "publicationEligible": false,
-    "newFiles": [
-      "ИСКУПЛЕНИЕ/fathers/19_COUNTER_VOICES_TRENT_CONCORD_REMONSTRANTS_AMYRAUT_BAXTER_1547_1694_2026-11-15.md"
-    ],
-    "updatedFiles": [
-      "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
-      "ИСКУПЛЕНИЕ/fathers/09_SILENCES_AND_FALSE_FRIENDS.md",
-      "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
-      "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
-      "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
-      "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json"
-    ],
-    "closedHoldsAndGaps": [
-      "Roman Catholic primary audit (Trent Sess. VI & XXII Latin/English) addressing 01_SERIES_PLAN §4 ('Римская сатисфакция и месса' / A4 background)",
-      "Classical Lutheran monergistic universalism primary audit (Formula of Concord SD XI) addressing 04_ §2 P6",
-      "Primary collation of Arminius (1608), Remonstrance (1610), and Sententia Remonstrantium at Dort (1618) addressing C-16 p. 147 primary-source gap without altering pinned ledger",
-      "Saumur primary audit (Cameron, Amyraut Brief Traitte 1634, Quick Synodicon 1637/1644-45/1659) addressing C-11 / B4 / D1",
-      "Richard Baxter EEBO-TCP primary audit (1649/1675/1694) clarifying Grotian-Neonomian hybrid vs Owen, Amyraut, and Arminius"
-    ],
-    "newFalseFriends": [
-      "F-41",
-      "F-42",
-      "F-43",
-      "F-44",
-      "F-45"
-    ],
-    "remainingHolds": [
-      "ORIGINAL_TEXT_HOLD: full printed page collation of 1620 Latin Acta Synodi Nationalis (pp. 113-118), 1634 Saumur print of Amyraut Brief Traitte, 1621/1622 Episcopius Confessio, and 1642 Cameron Opera",
-      "C-25 OPEN: Cyril of Alexandria In Io. VII 11:52 Pusey II pp. 294-296 / PG 74 cols. 69-70 scans"
-    ]
-  },
-  "easternRussianXxcReceptionWave15": {
-    "recordedAtUtc": "2026-11-15T12:00:00Z",
-    "dossier": "ИСКУПЛЕНИЕ/fathers/20_EASTERN_RUSSIAN_AND_XX_C_ATONEMENT_RECEPTION_AUDIT_1350_2026_2026-11-15.md",
-    "scope": "Eastern Byzantine (XIV c.), Russian Orthodox (XIX-XX c.), XX c. lexical/dogmatic debates (Dodd vs Morris/Nicole, Barth, Murray, Packer), and Russian EHB confessions (1847-1985)",
-    "falseFriendsAdded": [
-      "F-46",
-      "F-47",
-      "F-48",
-      "F-49",
-      "F-50"
-    ],
-    "totalFalseFriends": 50,
-    "c25Status": "OPEN",
-    "publicationEligible": false,
-    "rightsHoldObserved": true
-  },
-  "originalLanguageClosuresWave22": {
-    "recordedAtUtc": "2026-11-15T18:00:00Z",
-    "dossier": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
-    "scope": "Targeted patristic Greek/Latin & Reformation Latin closures: Cyril of Jerusalem Cat. XIII.1-4, Chrysostom Hom. in Io. 65 & Hom. in Col. III, Augustine Enchiridion XVI.61-63 & Tract. in Io. 49.27, Hilary HIL-1 (fixing In Ps. I §18), Ambrose AMB-1 (III.3.19), Jerome JER-1 (I.11), Irenaeus V.1.1 suadela, Gottschalk IX c., Calvin John 3:16 propitium & 1 John 2:2 1551 Geneva Latin",
-    "falseFriendsAdded": [
-      "F-51",
-      "F-52"
-    ],
-    "totalFalseFriends": 52,
-    "verifiedOriginalsAdded": 10,
-    "totalVerifiedOriginals": 75,
-    "legacyDossiersClosed": [
-      "docs/research/atonement/08_john_3_16_exegetical_defense.md (Round 58 propitium)",
-      "docs/research/atonement/21_exegesis_1john_2_2_and_parakletos_trilemma.md (§16.5 1551 Geneva Crespin ed. & CO 55:310 Latin)"
-    ],
-    "c25Status": "OPEN",
-    "publicationEligible": false
-  },
   "claimRegister20261026": {
     "чтоЭто": "реестр доводов лана «fathers»: строка = раздел прозы уровня ## с локатором, классом из её собственных маркеров и отметкой съёма",
     "чтоСчитаетсяДоводом": "заголовок «## » в любом .md лана, включая вложенные папки (synthesis/drafts, ot/tools); тело секции — до следующего «## » или до конца файла",
@@ -4994,8 +4785,217 @@
     ],
     "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
     "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check fathers",
-    "measuredAt": "2026-11-16T16:39:07Z",
-    "checkedAt": "2026-11-16T16:39:07Z",
-    "предыдущийСъём": "2026-11-16T16:39:06Z"
+    "measuredAt": "2026-11-16T21:46:40Z",
+    "checkedAt": "2026-11-16T21:46:40Z",
+    "предыдущийСъём": "2026-11-16T21:28:41Z"
+  },
+  "patristicAndMedievalPrimaryDossierWave10": {
+    "recordedAtUtc": "2026-11-15T17:05:00Z",
+    "status": "PRIMARY_DOSSIERS_II_XIII_C_COMPLETE_F8_F1405_F1406_CLOSED_PUBLICATION_HOLD_PRESERVED",
+    "c25": "OPEN",
+    "publicationEligible": false,
+    "newFiles": [
+      "ИСКУПЛЕНИЕ/fathers/12_DEEP_PRIMARY_DOSSIER_II_VIII_C_2026-11-15.md",
+      "ИСКУПЛЕНИЕ/fathers/13_AUGUSTINE_AND_MEDIEVAL_TURNING_POINT_2026-11-15.md",
+      "ИСКУПЛЕНИЕ/fathers/14_FIVE_THESES_AUDIT_AND_CH14_16_BRIDGE_2026-11-15.md"
+    ],
+    "updatedFiles": [
+      "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
+      "ИСКУПЛЕНИЕ/fathers/09_SILENCES_AND_FALSE_FRIENDS.md",
+      "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
+      "docs/research/atonement/15_patristic_and_reformation_misattributions.md"
+    ],
+    "closedHoldsAndFalseLocators": [
+      "F-8",
+      "F14-05",
+      "F14-06"
+    ],
+    "remainingHolds": [
+      "Irenaeus AH V.1.1 full SC 153 continuous Greek/Latin page collation (ORIGINAL_TEXT_HOLD)",
+      "Cyril of Alexandria John 11:52 Pusey Vol. II pp. 294-296 & PG 74 cols. 69-70 scans (C-25 OPEN)",
+      "Sub-corpus PUBLICATION_HOLD"
+    ],
+    "fiveThesesAuditVerdicts": {
+      "thesis1_unanimousUniversalAtonement": "PARTIALLY_TRUE_ANACHRONISTIC_OVERCLAIM",
+      "thesis2_unanimousLimitedAtonement": "FALSE",
+      "thesis3_onlyDevilRansomOrChristusVictorPreAnselm": "FALSE",
+      "thesis4_anselmInventedPSA": "FALSE",
+      "thesis5_psa16thCInventionZeroPatristicRoots": "FALSE"
+    }
+  },
+  "patristicScotistAndReformationWave11": {
+    "recordedAtUtc": "2026-11-15T19:15:00Z",
+    "status": "LATE_PATRISTIC_SCOTIST_AND_REFORMATION_PRIMARY_AUDIT_COMPLETE_G65_G66_F1407_CLOSED_PUBLICATION_HOLD_PRESERVED",
+    "c25": "OPEN",
+    "publicationEligible": false,
+    "newFiles": [
+      "ИСКУПЛЕНИЕ/fathers/15_LATE_PATRISTIC_AND_SCOTIST_PIVOT_IV_XIV_C_2026-11-15.md",
+      "ИСКУПЛЕНИЕ/fathers/16_REFORMATION_ATONEMENT_PRIMARY_AUDIT_XVI_C_2026-11-15.md"
+    ],
+    "updatedFiles": [
+      "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
+      "ИСКУПЛЕНИЕ/fathers/09_SILENCES_AND_FALSE_FRIENDS.md",
+      "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
+      "docs/research/atonement/15_patristic_and_reformation_misattributions.md"
+    ],
+    "closedHoldsAndGaps": [
+      "00_ §9 #3 (Cyril of Jerusalem Cat. XIII.32-33 Greek)",
+      "PR #309 G65 (Bernard of Clairvaux Ep. 190 PL 182 Latin)",
+      "PR #309 G66 (Maximus the Confessor Ad Thalassium Q. 21 & Q. 61 PG 90 Greek)",
+      "PR #309 F14-07 (Luther WA 40/1 & WA 18 + Calvin Inst. 1559 & Commentarii Latin/English)"
+    ],
+    "newFalseFriends": [
+      "F-26",
+      "F-27",
+      "F-28",
+      "F-29",
+      "F-30"
+    ],
+    "remainingHolds": [
+      "Cyril of Jerusalem Cat. XIII.2 full Greek (ORIGINAL_TEXT_HOLD)",
+      "Basil of Caesarea Hom. in Ps. 48 §4 exact PG 29:440A Greek (ORIGINAL_TEXT_HOLD)",
+      "John Duns Scotus Lectura III dd. 19-20 Vatican Vol. 21 Latin (ORIGINAL_TEXT_HOLD)",
+      "Theodore Beza Acta Colloquii Montisbelgartensis 1587/1588 Latin print (ORIGINAL_TEXT_HOLD)",
+      "Irenaeus AH V.1.1 full SC 153 continuous Greek/Latin page collation (ORIGINAL_TEXT_HOLD)",
+      "Cyril of Alexandria John 11:52 Pusey Vol. II pp. 294-296 & PG 74 cols. 69-70 scans (C-25 OPEN)",
+      "Sub-corpus PUBLICATION_HOLD"
+    ]
+  },
+  "postReformationXviiPrimaryWave12": {
+    "recordedAtUtc": "2026-11-15T18:30:00Z",
+    "status": "COMPLETED_RESEARCH_WAVE_12",
+    "c25": "OPEN",
+    "publicationEligible": false,
+    "newFiles": [
+      "ИСКУПЛЕНИЕ/fathers/17_POST_REFORMATION_XVII_C_PRIMARY_AUDIT_1617_1689_2026-11-15.md"
+    ],
+    "updatedFiles": [
+      "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
+      "ИСКУПЛЕНИЕ/fathers/09_SILENCES_AND_FALSE_FRIENDS.md",
+      "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
+      "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+      "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
+      "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json"
+    ],
+    "closedHoldsAndGaps": [
+      "C-14 textual gap (word-for-word collation of WCF 1646 / Savoy 1658 / 2LBC 1677-1689 Ch. III.6, VII.3, VIII.1-10, XI.3-4, XX.1-4; 02_CONFLICT_LEDGER.md untouched to preserve synchronization_2026-11-02.json checks)",
+      "D2 Grotius Defensio 1617 acceptilatio myth resolved via 3.1 & 6.14 (Grotiana 38.1, 2017; EEBO-TCP A42221; Foster 1889)",
+      "Owen 1647 (Goold X:271-272) -> 1653 (Goold X:481-624) Scotist-to-essentialist reversal documented verbatim",
+      "Turretin XIV Q. 10-14 pecuniary/penal synthesis & Formula Consensus Helvetica 1675 Canons I-XXIV verified"
+    ],
+    "newFalseFriends": [
+      "F-31",
+      "F-32",
+      "F-33",
+      "F-34",
+      "F-35"
+    ],
+    "remainingHolds": [
+      "ORIGINAL_TEXT_HOLD: Grotius Defensio 1617 Leyden / 1730 Leipzig continuous Latin folio collation",
+      "ORIGINAL_TEXT_HOLD: Turretin Institutio 1682 Geneva Latin page collation for Locus XIV Q. 10-11",
+      "C-25 OPEN: Cyril of Alexandria In Io. VII 11:52 Pusey II pp. 294-296 / PG 74 cols. 69-70 scans"
+    ]
+  },
+  "modernEraXviiiXixPrimaryWave13": {
+    "recordedAtUtc": "2026-11-15T19:15:00Z",
+    "status": "COMPLETED_RESEARCH_WAVE_13",
+    "c25": "OPEN",
+    "publicationEligible": false,
+    "newFiles": [
+      "ИСКУПЛЕНИЕ/fathers/18_MODERN_ERA_XVIII_XIX_C_PRIMARY_AUDIT_1718_1931_2026-11-15.md"
+    ],
+    "updatedFiles": [
+      "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
+      "ИСКУПЛЕНИЕ/fathers/09_SILENCES_AND_FALSE_FRIENDS.md",
+      "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
+      "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+      "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
+      "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json"
+    ],
+    "closedHoldsAndGaps": [
+      "Complete 1,800-year historical-theological primary arc (II-XX c., files 12_-18_) linking Patristic/Medieval/Reformation/Post-Reformation debates directly to modern Baptist/Reformed terminology (1795-1907 -> 2019)",
+      "C-12 Gill vs Fuller primary synthesis documented cleanly without touching external sub-corpus БИОГРАФИИ/Джон Гилл/",
+      "Charles Hodge ST II:469-475, 544-562 direct CCEL primary collation + Bushnell 1866->1874 revision + Edwards Sr.->Edwards Jr./McLeod Campbell bifurcation + Bavinck organic synthesis vs Aulen typology"
+    ],
+    "newFalseFriends": [
+      "F-36",
+      "F-37",
+      "F-38",
+      "F-39",
+      "F-40"
+    ],
+    "remainingHolds": [
+      "ORIGINAL_TEXT_HOLD: full printed page collation of Fisher 1645 / Boston 1726, Yale WJE Edwards, Bushnell 1874, Campbell 1856/1869, Dutch GD III Bavinck, and Swedish/German Aulen 1930",
+      "C-25 OPEN: Cyril of Alexandria In Io. VII 11:52 Pusey II pp. 294-296 / PG 74 cols. 69-70 scans"
+    ]
+  },
+  "counterVoicesXviXviiPrimaryWave14": {
+    "recordedAtUtc": "2026-11-15T20:15:00Z",
+    "status": "COMPLETED_RESEARCH_WAVE_14",
+    "c25": "OPEN",
+    "publicationEligible": false,
+    "newFiles": [
+      "ИСКУПЛЕНИЕ/fathers/19_COUNTER_VOICES_TRENT_CONCORD_REMONSTRANTS_AMYRAUT_BAXTER_1547_1694_2026-11-15.md"
+    ],
+    "updatedFiles": [
+      "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
+      "ИСКУПЛЕНИЕ/fathers/09_SILENCES_AND_FALSE_FRIENDS.md",
+      "ИСКУПЛЕНИЕ/fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md",
+      "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+      "ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
+      "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json"
+    ],
+    "closedHoldsAndGaps": [
+      "Roman Catholic primary audit (Trent Sess. VI & XXII Latin/English) addressing 01_SERIES_PLAN §4 ('Римская сатисфакция и месса' / A4 background)",
+      "Classical Lutheran monergistic universalism primary audit (Formula of Concord SD XI) addressing 04_ §2 P6",
+      "Primary collation of Arminius (1608), Remonstrance (1610), and Sententia Remonstrantium at Dort (1618) addressing C-16 p. 147 primary-source gap without altering pinned ledger",
+      "Saumur primary audit (Cameron, Amyraut Brief Traitte 1634, Quick Synodicon 1637/1644-45/1659) addressing C-11 / B4 / D1",
+      "Richard Baxter EEBO-TCP primary audit (1649/1675/1694) clarifying Grotian-Neonomian hybrid vs Owen, Amyraut, and Arminius"
+    ],
+    "newFalseFriends": [
+      "F-41",
+      "F-42",
+      "F-43",
+      "F-44",
+      "F-45"
+    ],
+    "remainingHolds": [
+      "ORIGINAL_TEXT_HOLD: full printed page collation of 1620 Latin Acta Synodi Nationalis (pp. 113-118), 1634 Saumur print of Amyraut Brief Traitte, 1621/1622 Episcopius Confessio, and 1642 Cameron Opera",
+      "C-25 OPEN: Cyril of Alexandria In Io. VII 11:52 Pusey II pp. 294-296 / PG 74 cols. 69-70 scans"
+    ]
+  },
+  "easternRussianXxcReceptionWave15": {
+    "recordedAtUtc": "2026-11-15T12:00:00Z",
+    "dossier": "ИСКУПЛЕНИЕ/fathers/20_EASTERN_RUSSIAN_AND_XX_C_ATONEMENT_RECEPTION_AUDIT_1350_2026_2026-11-15.md",
+    "scope": "Eastern Byzantine (XIV c.), Russian Orthodox (XIX-XX c.), XX c. lexical/dogmatic debates (Dodd vs Morris/Nicole, Barth, Murray, Packer), and Russian EHB confessions (1847-1985)",
+    "falseFriendsAdded": [
+      "F-46",
+      "F-47",
+      "F-48",
+      "F-49",
+      "F-50"
+    ],
+    "totalFalseFriends": 50,
+    "c25Status": "OPEN",
+    "publicationEligible": false,
+    "rightsHoldObserved": true
+  },
+  "originalLanguageClosuresWave22": {
+    "recordedAtUtc": "2026-11-15T18:00:00Z",
+    "dossier": "ИСКУПЛЕНИЕ/fathers/21_ORIGINAL_LANGUAGE_CLOSURES_PATRISTIC_AND_REFORMED_2026-11-15.md",
+    "scope": "Targeted patristic Greek/Latin & Reformation Latin closures: Cyril of Jerusalem Cat. XIII.1-4, Chrysostom Hom. in Io. 65 & Hom. in Col. III, Augustine Enchiridion XVI.61-63 & Tract. in Io. 49.27, Hilary HIL-1 (fixing In Ps. I §18), Ambrose AMB-1 (III.3.19), Jerome JER-1 (I.11), Irenaeus V.1.1 suadela, Gottschalk IX c., Calvin John 3:16 propitium & 1 John 2:2 1551 Geneva Latin",
+    "falseFriendsAdded": [
+      "F-51",
+      "F-52"
+    ],
+    "totalFalseFriends": 52,
+    "verifiedOriginalsAdded": 10,
+    "totalVerifiedOriginals": 75,
+    "legacyDossiersClosed": [
+      "docs/research/atonement/08_john_3_16_exegetical_defense.md (Round 58 propitium)",
+      "docs/research/atonement/21_exegesis_1john_2_2_and_parakletos_trilemma.md (§16.5 1551 Geneva Crespin ed. & CO 55:310 Latin)"
+    ],
+    "c25Status": "OPEN",
+    "publicationEligible": false
   }
 }
