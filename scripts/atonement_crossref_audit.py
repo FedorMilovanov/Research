@@ -31,6 +31,7 @@ import os
 import re
 import sys
 from pathlib import Path
+from urllib.parse import unquote
 
 FILE_REF = re.compile(r"((?:\.\./)*)((?:[A-Za-z0-9_\-]+/)*)([0-9]{2}_[A-Za-z0-9_\-]+\.md)")
 SECTION = re.compile(r"§\s*([A-ZА-Я]?\.?\s?\d+(?:\.\d+)?)")
@@ -63,6 +64,54 @@ def heading_ids(path: Path) -> dict[str, str]:
     return ids
 
 
+
+# Reader-facing article links need a separate file-existence check. The section
+# validator below intentionally covers numbered corpus references; it must not
+# silently pass a plain Markdown link without §.
+INLINE_LOCAL_LINK = re.compile(r'\[[^\]]+\]\(([^)\s]+)(?:\s+"[^"]*")?\)')
+
+
+def reader_file_links(draft: Path, body: str) -> tuple[int, list[dict]]:
+    """Return checked local Markdown links and absent files for a reader draft.
+
+    Do not reinterpret historic prose, fenced examples, URL-only references or
+    fragment-only links as filesystem evidence. Never auto-repair a bad path by
+    searching for a same-named file elsewhere.
+    """
+    inspected = 0
+    failures: list[dict] = []
+    fence = None
+    for lineno, line in enumerate(body.splitlines(), 1):
+        stripped = line.lstrip()
+        if stripped.startswith(("\x60\x60\x60", "~~~")):
+            marker = stripped[:3]
+            if fence is None:
+                fence = marker
+            elif fence == marker:
+                fence = None
+            continue
+        if fence is not None:
+            continue
+        for link in INLINE_LOCAL_LINK.finditer(line):
+            raw = link.group(1).strip("<>")
+            if (raw.startswith(("#", "/", "//"))
+                    or re.match(r"^[A-Za-z][A-Za-z0-9+.-]*:", raw)):
+                continue
+            rel = unquote(raw.split("#", 1)[0].split("?", 1)[0])
+            if not rel.lower().endswith(".md"):
+                continue
+            inspected += 1
+            target = Path(os.path.normpath(draft.parent / rel))
+            if not target.is_file():
+                failures.append({
+                    "draft": draft.name,
+                    "line": lineno,
+                    "target": str(target),
+                    "diagnosis": "LINK_FILE_NOT_FOUND",
+                })
+    return inspected, failures
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -75,8 +124,14 @@ def main(argv=None) -> int:
 
     cache: dict[Path, dict[str, str]] = {}
     rows = []
+    reader_links_checked = 0
+    broken_reader_links: list[dict] = []
     for draft in sorted(Path(args.drafts).glob("*.md")):
         text = draft.read_text(encoding="utf-8")
+        if re.match(r"^article[0-9]+_", draft.name):
+            count, failures = reader_file_links(draft, text)
+            reader_links_checked += count
+            broken_reader_links.extend(failures)
         for lineno, line in enumerate(text.splitlines(), 1):
             filerefs = list(FILE_REF.finditer(line))
             if not filerefs:
@@ -151,6 +206,9 @@ def main(argv=None) -> int:
     print(f"перекрёстных ссылок с номером подраздела: {len(rows)}")
     for k in sorted(by_diag):
         print(f"  {k}: {by_diag[k]}")
+    print(f"локальных Markdown-ссылок читательских глав: {reader_links_checked}; отсутствуют: {len(broken_reader_links)}")
+    for r in broken_reader_links:
+        print(f"\n[{r['diagnosis']}] {r['draft']}:{r['line']} → {r['target']}")
     for r in bad:
         print(f"\n[{r['diagnosis']}] {r['draft']}:{r['line']} §{r['section']} → {r['target']}")
         if r["nearest_ids"]:
@@ -158,11 +216,13 @@ def main(argv=None) -> int:
 
     if args.json:
         Path(args.json).write_text(
-            json.dumps({"total": len(rows), "missing": bad, "all": rows},
+            json.dumps({"total": len(rows), "missing": bad, "all": rows,
+                        "readerLinksChecked": reader_links_checked,
+                        "missingReaderLinks": broken_reader_links},
                        ensure_ascii=False, indent=1),
             encoding="utf-8",
         )
-    if args.check and bad:
+    if args.check and (bad or broken_reader_links):
         return 1
     return 0
 
