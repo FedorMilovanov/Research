@@ -47,7 +47,7 @@ Nichol 1864. Ниже — полная карта с оценкой.
 - **Указанный источник:** *Discourse on Practical Atheism*, Monergism HTML, **lines 82–84** в web
   extraction, opening Psalm 14:1 exposition.
 - **Печатный локатор первого издания:** *Several discourses upon the existence and attributes of
-  God* (Lond., 1682), **стр. 47** — афоризм стоит на стр. 47 в толковании Пс. 14:1, внутри
+  God* (Lond., 1682), **стр. 47** — афоризм стоит на стр. 47 в exposиции Пс. 14:1, внутри
   «Doct. 2. PRACTICAL Atheism is natural to Man in his depraved state». Установлено 2026-10-25
   прямым чтением `A32723.0001.001`, узел `1:5`.
 - **Функция:** показать разрыв между правильной идеей о Боге и практическим отношением сердца.
@@ -84,7 +84,7 @@ Practical Atheism; **from Psal. 14.1**.» То есть дискурс, явля
 
 **Добавление 2026-10-25 (том 10 §3.1): точная страница цитаты установлена — стр. 47.** Дискурс
 «A DISCOURSE UPON PRACTICAL ATHEISM» (узел `1:5`) открывается на стр. 47 заголовком, текстом
-Пс. 14:1 и «Doct. 2.», и афоризм стоит **на самой стр. 47**, в толковании текста (не в «use»):
+Пс. 14:1 и «Doct. 2.», и афоризм стоит **на самой стр. 47**, в exposиции текста (не в «use»):
 
 > **Page 47.** A DISCOURSE UPON PRACTICAL ATHEISM. > Psalm 14.1. Doct. 2. PRACTICAL Atheism is
 > natural to Man in his depraved state, and very frequent in the hearts and lives of Men. The Fool
@@ -106,7 +106,7 @@ without **A**theistical heads». Формулировка, зафиксиров�
 («atheistical hearts without atheistical heads»), — **нормализованная по капитализации**. При
 цитировании по первому изданию капитализации следует восстановить либо оговорить нормализацию.
 
-**Контекст, который должен сопровождать цитату.** Афоризм стоит внутри толкования Пс. 14:1 и
+**Контекст, который должен сопровождать цитату.** Афоризм стоит внутри exposиции Пс. 14:1 и
 непосредственно развивается двумя предложениями: «Their reasons may defend the Notion of a Deity,
 while their hearts are empty of affection to the Deity: Jobs Children may curse God in their
 hearts, tho not with their lips.» Это **усиливает** предохранитель корпуса: Чарнок говорит не о
