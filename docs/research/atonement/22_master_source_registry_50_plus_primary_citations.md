@@ -39,6 +39,7 @@
 8. **Anselm of Canterbury.** *Cur Deus Homo* (Почему Бог стал Человеком), Lib. II, cap. 14, 18–19.
    - *Критическое издание:* Schmitt F.S. *S. Anselmi Opera Omnia*, Vol. 2. Edinburgh: Nelson, 1946.
    - *Фокус:* Бесконечная ценность смерти Богочеловека (*dignitas infinita*), покрывающая нарушение чести Творца.
+   - *Поправка 2026-11-17 (раунд 73; `34_` §4.156, S171; аудит AGENT 2 §24) — локаторы подтверждены; формула «*dignitas infinita*» — `PARAPHRASE`; «Фокус» — `PARTIAL`.* Текст сверен по изданию O. F. Fritzsche (Turici: Schulthess, 1893; IA `anselmicantuari00unkngoog`, `inside.php`, A2 — OCR); та же фраза есть в издании Ф. С. Шмитта (*Florilegium Patristicum* 18, 1929; глобальный полнотекстовый поиск IA). II.14 («Quomodo mors eius praevaleat numero et magnitudini peccatorum omnium», лист 92): «Putasne tantum bonum tam amabile posse sufficere ad solvendum quod debetur pro peccatis totius mundi? — Immo plus potest in infinitum… Vides igitur, quomodo vita haec vincat omnia peccata, si pro illis detur». II.18 («Quomodo vita Christi solvatur deo pro peccatis hominum…», лист 107): «ut sufficere possit ad solvendum quod pro peccatis totius mundi debetur, et plus in infinitum». В OCR Fritzsche слова «infinita» нет, так что латинская формула в скобках — пересказ. «Фокус» опускает прямое «pro peccatis totius mundi». У Ансельма это высказывание о **достаточности** цены, а не об объёме замысла; класс доводов об объёме оно не повышает ни для одной стороны. Выходные данные Nelson 1946 в этом раунде не проверялись.
 
 ---
 
@@ -57,9 +58,16 @@
 12. **Theodore Beza.** *Quaestionum et responsionum christianarum libellus* (1570).
     - *Издание:* Geneva: Eustathius Vignon.
     - *Фокус:* Логическая корреляция между вечным декретом избрания и сотериологической целью смерти Христа.
+    - *Поправка 2026-11-17 (раунд 73; `34_` §4.156, S171; аудит AGENT 2 §24) — `IMPRINT_ERROR_PROBABLE` (типограф).* По библиографии J.-F. Gilmont, *Bibliographie des éditions de Jean Crespin, 1550–1573*, t. I (1981), № 70/1, первое издание 1570 г. вышло «[Genève], Apud I. Crispinum» (Жан Креспен) и анонсировано к Франкфуртской ярмарке весны 1570 г.; «editio secunda» — Crispinus, 1571 (список микроформ Center for Reformation Research, 1977). Эсташ Виньон (Eustathius Vignon) — преемник Креспена после 1572 г., так что для издания 1570 г. он указан неверно. Оба свидетельства — вторичные (A3, фрагменты полнотекстового поиска IA по изданиям с ограниченным доступом); титул 1570 г. не открывался. «Фокус» не проверялся.
 13. **Zacharias Ursinus.** *Explicatio Catecheseos Heidelbergensis* (Толкование Гейдельбергского катехизиса), Pars II, Quaest. 37, 40.
     - *Издание:* Heidelberg, 1591; *The Commentary of Dr. Zacharias Ursinus*, Phillipsburg: P&R, 2004.
     - *Фокус:* Разъяснение вопроса 37: гнев Божий против греха рода человеческого не означает всеобщего спасения; спасаются только соединенные со Христом через веру.
+    - *Поправка 2026-11-17 (раунд 73; `34_` §4.156, S171; аудит AGENT 2 §24) — `PARTIAL` («Фокус»); выходные данные — `IMPRINT_HOLD`.* Сверено по переводу G. W. Williard (Cincinnati: T. P. Bucher, 1851; IA `commentaryofdrza00ursi`, страницы по `_page_numbers.json`, A2 — OCR):
+      - в. 37, возражение 4 (с. 215, лист 261): «If Christ made satisfaction for all, then all ought to be saved… Ans. Christ satisfied for all, as it respects the sufficiency of the satisfaction which he made, but not as it respects the application thereof»;
+      - там же (с. 213, лист 259): Христос перенёс «a sense of the wrath of God against the sins of the whole human race»;
+      - в. 20 (с. 106, лист 152): «the atonement of Christ is for the sins of the whole world, as it respects the dignity and sufficiency of the satisfaction which he made — but it arises from unbelief».
+      - «Фокус» передаёт только вторую половину различения (спасаются соединённые со Христом верой) и опускает первую: «satisfied for all, as it respects the sufficiency». Это та же закономерность, что в пп. 1, 5, 14, 16 и 31.
+      - «Heidelberg, 1591» не подтверждено: в IA есть латинские издания *Doctrinae christianae compendium* (Cambridge, 1585; `doctrinaechristi00ursi`) и *Explicationum catecheticarum* (1587; EEBO). Первое издание и место печати по экземпляру не установлены — `IMPRINT_HOLD`. Год репринта P&R (2004) не проверялся.
 14. **Heidelberg Catechism (1563).** Quaestiones 20, 37, 54.
     - *Критическое издание:* Schaff P. *The Creeds of Christendom*, Vol. 3, pp. 307–355.
     - *Фокус:* Спасутся ли все? Нет, только привитые к Нему истинной верой (Q. 20).
@@ -84,8 +92,14 @@
     - *Фокус:* Рождение амиральдианства: гипотетический универсальный декрет искупления всех при условии веры.
 19. **Pierre du Moulin.** *Examen de la doctrine de Messieurs Amyraut et Testard*. Sedan, 1638.
     - *Фокус:* Ортодоксальное гугенотское опровержение Сомюра: условный декрет превращает Бога в беспомощного наблюдателя.
+    - *Поправка 2026-11-17 (раунд 73; `34_` §4.156, S171; аудит AGENT 2 §24) — `IMPRINT_ERROR_PROBABLE` («Sedan»).* Три независимых вторичных источника называют местом издания **Амстердам**:
+      - W. Gass, *Geschichte der protestantischen Dogmatik* (Berlin: Reimer, 1857; IA `geschichtederpr00gassgoog`, лист 372, свободный доступ): «P. Moulin, Examen de la doctrine de messieurs Amyraut et Testard — Amstel. 1638»;
+      - Th.-E. Roehrich, *La Doctrine de la Prédestination et l’École de Saumur* (Strasbourg, 1867; IA `IA41547023_0042`, лист 31): «Examen de la doctrine de Messieurs Amyraut et Testard touchant la prédestination et les points qui en dépendent. Amst. 1658» (в OCR «1658» вместо «1638»; на том же листе так же искажена дата другого сочинения — «Salm. 1658»);
+      - R. J. M. van de Schoor, *The Irenical Theology of Théophile Brachet de la Milletière* (Leiden: Brill, 1995; фрагмент полнотекстового поиска IA): «published at Amsterdam under the title Examen de la Doctrine de Messieurs Amyraut & Testard».
+      - Ни один из них не упоминает седанского издания. Титульный лист 1638 г. не открывался, поэтому статус — `IMPRINT_ERROR_PROBABLE`, а не окончательная ошибка. «Фокус» не проверялся.
 20. **Friedrich Spanheim the Elder.** *Exercitationes de gratia universali*. Lugduni Batavorum (Leiden), 1646.
     - *Фокус:* Академический разгром двухдекретной схемы Амиро; защита решений Дорта.
+    - *Поправка 2026-11-17 (раунд 73; `34_` §4.156, S171; аудит AGENT 2 §24) — выходные данные подтверждены (A3).* Gass (1857, лист 372): «F. Spanhemius, De gratia universali, Lugd. 1644. Hierauf gegen Amyraut’s Vertheidigung Ejusd. Exercitationes de gratia universali, Lugd. 1646. 3 tomi, und Vindiciae exercitationum de gr. univ. Salm. 1648». Лейден, 1646 — верно; у Гасса указаны три тома. Свидетельство вторичное; «Фокус» не проверялся.
 21. **Francis Turretin.** *Institutio Theologiae Elencticae* (1679–1685), Locus XIV, Quaestio 14: *De necessitate satisfactionis*; Quaestio 14: *De amplitudine mortis Christi*.
     - *Критическое издание:* Geneva; transl. G.M. Giger, ed. J.T. Dennison, Phillipsburg: P&R, 1994, Vol. 2, pp. 445–469.
     - *Фокус:* Систематическое доказательство невозможности всеобщего искупления: разрыв Троицы, тщетность воли Бога, неразрывность завета.
@@ -130,6 +144,11 @@
 30. **Second London Baptist Confession of Faith (1677 / 1689).** Chapters 3, 8.
     - *Критическое издание:* Lumpkin W.L. *Baptist Confessions of Faith*. Valley Forge: Judson Press, 1969.
     - *Фокус:* Точное воспроизведение Вестминстерской статьи VIII.8 партикулярными баптистами Англии.
+    - *Поправка 2026-11-17 (раунд 73; `34_` §4.156, S171; аудит AGENT 2 §24) — `INACCURATE` («точное воспроизведение»).*
+      - WCF VIII.8 (Schaff, *Creeds* III, 1877, лист 638, ≈ с. 622): «To all those for whom Christ hath **purchased redemption** he doth certainly and effectually apply and communicate the same; making intercession for them, and revealing unto them…».
+      - 2LBC 8.8, 4-е изд. (London, 1719; IA `bim_eighteenth-century_a-confession-of-faith-p_1719`, лист 42): «To all those for whom Christ hath **obtained Eternal Redemption**, he doth certainly and effectually apply, and communicate the same; making Intercession for them; **uniting them to himself** by his Spirit…». Та же формулировка — в филадельфийских изданиях 1773 и 1818 гг. (глобальный полнотекстовый поиск IA).
+      - Значит, баптисты не просто воспроизвели статью: «purchased» заменено на «obtained Eternal Redemption» и добавлено «uniting them to himself». Корректно: «близкая переработка WCF VIII.8 с изменениями».
+      - Издание 1677 г. в этом раунде не открывалось (A2 — по изданию 1719 г.). Выходные данные Lumpkin (Valley Forge: Judson, 1969) не проверялись.
 31. **Jonathan Edwards.** *The Freedom of the Will* (1754), Part IV, Section XII.
     - *Критическое издание:* Yale Edition, Vol. 1 (ed. Paul Ramsey).
     - *Фокус:* Опровержение Д. Уитби; необходимость конкретного замысла спасения.
@@ -994,6 +1013,13 @@
     - 42eb. *Дополнение 2026-11-17 (раунд 70; `34_` §4.153, S168).* **Ревизия верхних пунктов реестра и итоговой матрицы.** Поправки внесены под пп. 1 (Афанасий: ἀντὶ/ὑπὲρ πάντων, τὸ ὀφειλόμενον — 8.4; 9.1–2; 20.2, 20.6; 37.7), 3 (Августин: в гл. 7 нет ограничения крови), 7 (Готшалк: формула «pro solis electis sanguinem fudit» — `QUOTE_UNVERIFIED`; суть — через Гинкмара у Ашера, *Works* IV, с. 44), 14 (в. 37: «des ganzen menschlichen Geschlechts»), 21 (Турретин: необходимость удовлетворения — Q. X, p. 368; объект — Q. XIV, p. 400), 27 (Буньян — `SUPERSEDED`), 34–37 (русские баптисты — согласовано с `14_`). Матрица: строки №№ 1, 3, 14, 26, 27, 38, 47, 50; итоговая фраза «все 53… сверены» помечена `SUPERSEDED`.
     - 42ec. *Дополнение 2026-11-17 (раунд 71; `34_` §4.154, S169).* **Библиографическая ревизия пп. 4, 5, 16, 22, 24 и строки № 39.** П. 4 — латинская «цитата» из *Enchiridion* 103 оказалась пересказом (`PARAPHRASE`). П. 5 — Проспер, возражение I, сверено по Hurter 35, с. 186 («recte omnes dicantur redempti… redemptionis proprietas… penes illos»). П. 16 — ст. XXXI («for all the sins of the whole world»), Schaff III ≈ с. 507. П. 22 — в Schaff III Формулы нет (`LOCATOR_ERROR`). П. 24 — Ussher XII, сс. 551–571, а не 559–596. Строка № 39 — Ходж, II, 558.
     - 42ed. *Дополнение 2026-11-17 (раунд 72; `34_` §4.155, S170).* **Библиографическая ревизия пп. 15, 23, 31, 32.**
+    - 42ee. *Дополнение 2026-11-17 (раунд 73; `34_` §4.156, S171).* **Библиографическая ревизия пп. 8, 12, 13, 19, 20, 30.**
+      - П. 8 — Ансельм, II.14 и II.18 подтверждены («pro peccatis totius mundi… et plus in infinitum»); «*dignitas infinita*» — пересказ.
+      - П. 12 — Беза, 1570: типограф — Креспен, а не Виньон (`IMPRINT_ERROR_PROBABLE`).
+      - П. 13 — Урсин, в. 37: «Christ satisfied for all, as it respects the sufficiency… but not as it respects the application» (Williard 1851, с. 215); «Фокус» — `PARTIAL`.
+      - П. 19 — Du Moulin, *Examen*: Амстердам, а не Седан (`IMPRINT_ERROR_PROBABLE`).
+      - П. 20 — Spanheim, Лейден, 1646 — подтверждено (A3).
+      - П. 30 — 2LBC 8.8 не «точное воспроизведение» WCF VIII.8 (`INACCURATE`).
       - П. 15 — Второе Гельветическое исповедание в Schaff III занимает сс. 233–306, а не 237–306.
       - П. 23 — Allport, т. II: 1832 и издание 1650 г. подтверждены; «1627» — `DATE_HOLD`.
       - П. 31 — цитата Эдвардса «in some sense… for all» стоит в «Conclusion», а не в ч. IV, разд. XII (Andover 1840, ≈ с. 405).
@@ -1055,4 +1081,4 @@
 
 Все 53 ключевых первоисточника сверены с оригинальными критическими изданиями, контекстуализированы и очищены от вторичных искажений.
 
-> **SUPERSEDED (раунд 70, 2026-11-17; `34_` §4.153; аудит AGENT 2 §21) — фраза выше сохранена как HISTORICAL.** Утверждение «все 53… сверены с оригинальными критическими изданиями» неверно. (1) Строки №№ 3, 11, 27, 47 и 50 после проверки сняты с «Verified»; строки №№ 1, 14 и 26 — «Verified» только как локатор, вывод частичный или оценочный; в № 38 был неверный номер проповеди. (2) Для многих позиций (например, CSEL 92, SC 199, Lambot 1945, CCSL 46) критическое издание в корпусе по экземпляру не открывалось; сверка шла по доступным печатным сканам и цифровым текстам с классами A1/A2. (3) Пп. 1, 3, 7, 21, 27, 34–37 получили поправки в раунде 70; п. 11 — в раунде 69; пп. 4, 5, 16, 22, 24 и строка № 39 — в раунде 71; пп. 15, 23, 31, 32 — в раунде 72. Публикационный HOLD сохраняется.
+> **SUPERSEDED (раунд 70, 2026-11-17; `34_` §4.153; аудит AGENT 2 §21) — фраза выше сохранена как HISTORICAL.** Утверждение «все 53… сверены с оригинальными критическими изданиями» неверно. (1) Строки №№ 3, 11, 27, 47 и 50 после проверки сняты с «Verified»; строки №№ 1, 14 и 26 — «Verified» только как локатор, вывод частичный или оценочный; в № 38 был неверный номер проповеди. (2) Для многих позиций (например, CSEL 92, SC 199, Lambot 1945, CCSL 46) критическое издание в корпусе по экземпляру не открывалось; сверка шла по доступным печатным сканам и цифровым текстам с классами A1/A2. (3) Пп. 1, 3, 7, 21, 27, 34–37 получили поправки в раунде 70; п. 11 — в раунде 69; пп. 4, 5, 16, 22, 24 и строка № 39 — в раунде 71; пп. 15, 23, 31, 32 — в раунде 72; пп. 8, 12, 13, 19, 20, 30 — в раунде 73. Публикационный HOLD сохраняется.

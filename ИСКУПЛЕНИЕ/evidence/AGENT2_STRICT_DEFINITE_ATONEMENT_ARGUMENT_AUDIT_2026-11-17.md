@@ -844,3 +844,20 @@ HOLD без изменений: CO 49:100, CO 45:706, `PRINT_IMAGE_HOLD`, пра
 **Вердикты S1–S5 не меняются.** Правки касаются фона (исповедания, XVII–XVIII вв.), а не локаторов Кальвина.
 
 **HOLD после раунда 72:** как в §21. Добавлены `DATE_HOLD` (Davenant «1627») и `LOCATOR_HOLD` (страница гл. VI *Remarks*).
+
+## 24. Раунд 73 (2026-11-17): библиографическая ревизия `22_`, пп. 8, 12, 13, 19, 20, 30
+
+Подробности — `34_` §4.156 (Q152), S171.
+
+| # | Место | Итог |
+|---|---|---|
+| 1 | Ансельм, *Cur Deus homo* (п. 8) | локаторы II.14 и II.18 подтверждены: «pro peccatis totius mundi… et plus in infinitum»; «dignitas infinita» — `PARAPHRASE`; «Фокус» — `PARTIAL` |
+| 2 | Беза, 1570 (п. 12) | `IMPRINT_ERROR_PROBABLE`: Креспен (Gilmont № 70/1), а не Виньон |
+| 3 | Урсин, в. 37 (п. 13) | `PARTIAL`: «Christ satisfied for all, as it respects the sufficiency… but not as it respects the application» (Williard 1851, с. 215); «Heidelberg, 1591» — `IMPRINT_HOLD` |
+| 4 | Du Moulin, *Examen* (п. 19) | `IMPRINT_ERROR_PROBABLE`: Амстердам (Gass 1857; Roehrich 1867; van de Schoor 1995), а не Седан |
+| 5 | Spanheim (п. 20) | подтверждено (A3): Лейден, 1646, 3 тома |
+| 6 | 2LBC 8.8 (п. 30) | `INACCURATE`: «obtained Eternal Redemption… uniting them to himself» вместо «purchased redemption» в WCF VIII.8 |
+
+**Вердикты S1–S5 не меняются.** Урсин и Ансельм говорят о достаточности; это фон, а не локатор Кальвина.
+
+**HOLD после раунда 73:** как в §21–§23; добавлено `IMPRINT_HOLD` (Урсин).
