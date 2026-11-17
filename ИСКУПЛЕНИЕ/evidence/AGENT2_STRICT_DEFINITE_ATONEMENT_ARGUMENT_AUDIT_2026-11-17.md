@@ -367,7 +367,7 @@ Nicole (*WTJ* 47 [1985]) в переводных и вторичных выде�
 |---|---|---|---|---|
 | CO 9 (CR 37), *Dilucida explicatio* | A1 | OCR-слой скана: полный текст страницы кол. 483–484 и абзац кол. 485. **Изображение страницы глазами не проверено** | **кол. 484** — колонтитул «DE VERA PARTICIPATIONE 484» в OCR-слое той же страницы; **483** — левая колонка той же страницы; **485** — вычислено по листу (±1) | Нет: `LOCATOR_HOLD(visual)`. Совпадение 1667 = CO = CTS — сильный индикатор, но не замена визуальной сверки |
 | CO 8 (CR 36), *De aeterna* | A1 | OCR-слой: полный текст кол. 335–336 со сносками | **кол. 336** — колонтитул «DE AETERNA DEI 336» в OCR-слое; кол. 335 — левая колонка | Нет: `LOCATOR_HOLD(visual)` |
-| CO 55 (CR 83), 1 Ин. 2:2 и Евр. 5:6 | A1 | OCR-абзацы | 55:310 — традиционный; колонка **не откалибрована** | Нет: `LOCATOR_HOLD` |
+| CO 55 (CR 83), 1 Ин. 2:2 и Евр. 5:6 | A1 | OCR-абзацы | 55:310 — традиционный; колонка **не откалибрована** | Нет: `LOCATOR_HOLD` **Волна 4 (§11.1):** кол. 310 подтверждена колонтитулом «310» в OCR-слое; 1 Ин. 2:1 — кол. 309. `LOCATOR_HOLD(visual)` |
 | 1667 *Opera* т. VIII | A1 (раннее собрание; издание идентифицировано) | OCR-абзацы | «с. 628 / 759» — **индексы скана**, не печатные страницы; в томе несколько пагинаций (с листа 742 счёт начинается заново) | Нет: `LOCATOR_HOLD` |
 | CTS *Tracts* II | B1 | абзац | p. 527 — по автоматическому `page_numbers.json` IA; колонтитула в OCR-слое нет | Не единственная опора |
 | CTS *Romans* 1849 | B1 (латинская сноска — A1-текст, но в B1-носителе; издание латыни не названо) | абзацы p. 211, 212, 325 | p. 212 — колонтитул «212 COMMENTARIES… V. 19» в OCR; 211 — предыдущий лист; 325 — по указателю книги | Не единственная опора; CO 49:100 `LOCATOR_HOLD` |
@@ -428,3 +428,44 @@ Nicole (*WTJ* 47 [1985]) в переводных и вторичных выде�
   - Nicole, Rainbow, Helm, Archbald не прочитаны;
   - `PUBLICATION_HOLD` / `RIGHTS_HOLD` не снимались.
 - **OWN_TASK_DONE:** S1–S5 и Фаза 2 закрыты в границах задания. Дальнейшая активность без нового адресного запроса MAX не планируется.
+
+
+---
+
+## 11. Волна 4 (2026-11-17): закрытие одного HOLD из списка §10.5 и одна текстовая дельта к S2
+
+Без нового запроса MAX широкого поиска нет. Проверены только два HOLD-локатора, уже названные в §10.5 (CO 55:310 и CO 49:100), каждый не более чем двумя целевыми проходами.
+
+### 11.1. CO 55:310 (1 Ин. 2:2) — колонка подтверждена; на той же странице текст к S2
+
+Страница скана `operaquaesupersu0083calv` (CR 83 = CO 55), текстовый слой BookReader, страница 166 (= лист 167). Правая колонка начинается с колонтитула **«310»**, перед ним стоит «CAPUT II.» в конце левой колонки. Значит, левая колонка — **кол. 309**.
+
+- **Кол. 310, 1 Ин. 2:2:** «Qui hanc absurditatem volebant effugere, dixerunt, sufficienter pro toto mundo passum esse Christum: sed pro electis tantum efficaciter. Vulgo haec solutio in scholis obtinuit. Ego quamquam verum esse illud dictum fateor: nego tamen praesenti loco quadrare. Neque enim aliud fuit consilium Iohannis, quam toti ecclesiae commune facere hoc bonum. Ergo sub omnibus, reprobos non comprehendit…». Это совпадает с `fathers/16_` §2.2 и `13_` §2.2. Традиционный локатор CO 55:310 **подтверждён** по колонтитулу в OCR-слое, глазами не проверен.
+- **Кол. 309, 1 Ин. 2:1 (новое для S2):**
+  > «Porro dum ostendere vult quomodo redeamus cum Deo in gratiam, dicit Christum esse nobis advocatum. Nam in hoc apparet coram facie Dei, ut sacrificii sui vim et efficaciam erga nos exserat. Quo melius hoc possit intelligi, crassius loquar. **Intercessio Christi continua est mortis eius applicatio in salutem nostram.** Quod ergo Deus peccata nobis non imputat, hoc fit quia Christum deprecatorem respicit.»
+
+| ID | Утверждение | Вердикт |
+|---|---|---|
+| S2-b′ | Для Кальвина ходатайство Христа есть **постоянное применение (*applicatio*)** Его смерти ко спасению «нас» | `EXPLICIT` (CO 55:309). Подкрепляет S2-b (Рим. 8:34, CTS p. 325) латинским A1-текстом |
+| S2-c′ | Значит, ограничение ходатайства избранными (Ин. 17:9) — это ограничение **применения** смерти | `STRONG_INFERENCE` (S2-a + S2-b′, оба места — Кальвин) |
+| S2-d′ | Значит, Кальвин ограничивает избранными и **импетрацию** (объём жертвы) | По-прежнему `WEAK_INFERENCE` / `UNDETERMINED`. Собственное определение Кальвина помещает ходатайство на сторону *applicatio*. Поэтому из ограничения ходатайства выводится ограничение применения, а не объёма жертвы, пока не добавлена P-coext (Оуэн, *Death of Death* I.vii) |
+
+**Значение.** Это самый точный текст Кальвина по узлу S2 из найденных. Он не решает спор: строгая сторона прочтёт его так, что применяется именно то, что приобретено для тех же лиц. Но он фиксирует, на какой стороне различения Кальвин сам ставит ходатайство. Тезис `32_` / Archbald «жертва и ходатайство коэкстенсивны» по-прежнему опирается на P-same-object (§4.2), которой в этом тексте нет.
+
+### 11.2. CO 49:100 (Рим. 5:18) — `STOP_DISCOVERY`
+
+| Проход | Запрос | Результат |
+|---|---|---|
+| 1 | advancedsearch IA: «calvini opera» AND (volume 49 / 77 / «vol XLIX» / «romanos») | 0 |
+| 2 | advancedsearch IA по фразе «Communem omnium gratiam facit» | 0 |
+
+Два целевых прохода безрезультатны → `STOP_DISCOVERY`. CO 49:100 остаётся `LOCATOR_HOLD`. Латынь Рим. 5:18 по-прежнему опирается только на сноску CTS 1849, p. 211 (B1-носитель) и на `fathers/16_` §2.2.
+
+### 11.3. Обновлённые HOLD
+
+- `LOCATOR_HOLD(visual)` — CO 8:335–336, CO 9:483–485, CO 55:309–310: найдены по OCR-слою, колонки подтверждены колонтитулами (кроме 9:485 — вычислено по листу);
+- `LOCATOR_HOLD` — CO 49:100; печатные страницы 1667 г.;
+- Nicole, Rainbow, Helm, Archbald — `HOLD` (не прочитаны);
+- `PUBLICATION_HOLD` / `RIGHTS_HOLD` — не снимались.
+
+**OWN_TASK_DONE** сохраняется. Список HOLD из §10.5 сокращён на CO 55:310 (по OCR-колонтитулу).
