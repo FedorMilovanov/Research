@@ -87,6 +87,7 @@
 - **раунд 65 (2026-11-17, AGENT 2, самопоправка):** §3 (S160 — CTS Harmony III), §4.148 переписан: «Richards → Strong доказано по формулировке Мф. 26:28» снято (та же формулировка в CTS 1846); добавлены Strong p. 777 (ссылка на Richards 303-307) и Richards p. 309 (Ин. 3:16); путь цитаты в Strong — `OPEN`; Richards pp. 312–314 прочитаны — Кальвина нет
 - **раунд 66 (2026-11-17, AGENT 2):** §3 (S161–S163), новый §4.149 (Q145): Strong 1886 — примечание о Ричардсе есть, пастиша нет (то же для 1889/1902 по поиску HathiTrust); часть «Ин. 3:16» — по переводу *New-York Evangelist* 1891 с общей ошибкой «holds out the propitiation»; Graham 1857 — параллель для Рим. 5:18 внутри 1 Ин. 2:2; рецепция до Thiessen 1949 (`LEAD`)
 - **раунд 67 (2026-11-17, AGENT 2):** §3 (S164–S165), новый §4.150 (Q146): часть «Рим. 5:18» пастиша Strong III.778 — сходящиеся буквальные переводы (Scott 1786, Anderson 1837, Bacon 1855 = S83b листы 65–66, Graham 1857), общей ошибки нет — `PARALLEL`, недиагностично; катена Бэкона Мф. 26:28 → Рим. 5:18 → … → 1 Ин. 2:2; тезис «Кальвин-экзегет против „Наставления“» уже у Anderson 1837
+- **раунд 68 (2026-11-17, AGENT 2):** §3 (S166), новый §4.151 (Q147): том CO 45 найден на IA (`ioanniscalviniop0045vari`); Кальвин на Мф. 26:28 / Мк. 14:24 — CO 45:710–711, фраза «Sub multorum nomine…» — **711**, а не 706; исправлено в `15_`, `fathers/09_`, `fathers/10_`, `fathers/16_`, `arena/AGENT4_*`; CO 49:100 — `HOLD`
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -415,6 +416,7 @@
 | S163 *(раунд 66, 2026-11-17)* | A. H. Strong, *Systematic Theology* (Rochester: E. R. Andrews, 1886), p. 426 (по указателю Стронга); IA `systematictheolo00strouoft` (`ia800109`, `/32/items/`), лист 450 (OCR-обёртка 449) | A2 (OCR-слой печати) | «Richards, Theology, 303-307, shows that Calvin, while in his early work, the Institutes, he avoided definite statements… yet in his latter works, the Commentaries, he acceded to the theory of universal atonement»; цитаты «In later days Calvin wrote…» в томе нет (`inside.php`: «door unto hope» — 0, «without distinction» — 0 вне указателя) | PD; `PRINT_IMAGE_HOLD`. Значение: ссылка на Ричардса старше пастиша на 21 год; пастиш — вставка 1907 г. (§4.149) |
 | S164 *(раунд 67, 2026-11-17)* | Robert Anderson, *A Practical Exposition of St. Paul's Epistle to the Romans* [With] Appendix (1837); IA `apracticalexpos02andegoog` (`ia800506`, `/17/items/`; скан Google, Oxford), лист 36 по `inside.php` (печатная страница не установлена) | A2 (OCR-слой печати) | Латынь Кальвина на Рим. 5:18 и перевод «For although Christ suffered for the sins of the whole world, and, by the mercy of God, is offered to all without distinction; yet all do not lay hold of him. In this passage Calvin speaks as an interpreter of Scripture; in the Institutes, as the advocate of a system» | PD; место издания не сверено; `PRINT_IMAGE_HOLD`. Значение: ближайший до 1907 г. перевод части «Рим. 5:18» пастиша (недиагностично) и тезис «Комментарии против „Наставления“» за 9 лет до Ричардса (§4.150) |
 | S165 *(раунд 67, 2026-11-17)* | Thomas Scott, *The Doctrines of Election, and Final Perseverance Stated from Scripture…* A sermon preached at the Lock-Chapel, November 26th, 1786 (1786); IA `bim_eighteenth-century_the-doctrines-of-electio_scott-thomas_1786` (`ia800506`, `/10/items/`; микрофильм ECCO), лист 13 по `inside.php` (FTS `page_num` 50 — не согласовано) | A2 (OCR-слой микрофильма) | «Even Calvin himself writes thus on Rom. 5. 18… For altho' Christ suffered for the sins of the whole world; and is offered indiscriminately to all men, by the goodness of God; yet all do not apprehend him. And on John II. 2. Christ suffered sufficiently for the whole world; but…» | PD; `PRINT_IMAGE_HOLD`. Значение: ранний английский перевод Рим. 5:18 со всеми элементами формулировки Стронга, кроме «without distinction»; Рим. 5:18 рядом с 1 Ин. 2:2 (§4.150) |
+| S166 *(раунд 68, 2026-11-17)* | *Ioannis Calvini opera quae supersunt omnia*, vol. XLV (= CR 73), ed. G. Baum, E. Cunitz, E. Reuss (Brunsvigae: C. A. Schwetschke, 1891), *Harmonia ex tribus Evangelistis composita*, Мф. 26:26–28 / Мк. 14:22–24 / Лк. 22:19–20; IA `ioanniscalviniop0045vari` (`ia801809`, `/24/items/`; University of Arizona Library), OCR-обёртки 376–380 | A2 (OCR-слой печати; колонцифры по OCR) | Кол. 710 (низ): «Marc. 24. Hic est sanguis meus. Iam prius admonui, quum dicitur fundendus sanguis (apud»; кол. 711: «Matthaeum) in remissionem peccatorum… Caeterum sub multorum nomine non partem mundi tantum designat, sed totum humanum genus… Notandum tamen simul est, quod apud Lucam (pro vobis)…» | PD; `LOCATOR_HOLD(visual)`, `PRINT_IMAGE_HOLD`. Значение: исправление локатора CO 45:706 → **711** во всём корпусе (§4.151) |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -7939,6 +7941,7 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.148 | Q144 | Пастиш Strong III.778 разложен на три локуса Кальвина; звено Watts → Richards; передача в Strong открыта (р. 64–65) |
 | 4.149 | Q145 | Пастиш появился в редакции 1907 г. (в 1886/1889/1902 нет); часть «Ин. 3:16» — по переводу *New-York Evangelist* 1891; Graham 1857 — параллель; рецепция (Thiessen 1949) (р. 66) |
 | 4.150 | Q146 | Часть «Рим. 5:18» пастиша: сходящиеся буквальные переводы (Scott 1786, Anderson 1837, Bacon 1855, Graham 1857) — недиагностично; катена Бэкона Мф. 26:28 + Рим. 5:18; тезис «экзегет против „Наставления“» уже у Anderson 1837 (р. 67) |
+| 4.151 | Q147 | Колонка CO 45 для Мф. 26:28 / Мк. 14:24: «706» неверно; толкование — CO 45:710–711, фраза «Sub multorum nomine…» — 711 (скан `ioanniscalviniop0045vari`); CO 49:100 — по-прежнему `HOLD` (р. 68) |
 
 ⇒ разделов с `Q` — **144**, разделов §4.x — **146**; пропуски нумерации прежние.
 
@@ -8211,7 +8214,7 @@ vniverselle**, que toutesfois **Dieu n'appelle pas à foy tous hommes selon ce p
 
 *(Раунд 66, §4.149: путь части «Ин. 3:16» найден — перевод *New-York Evangelist* 1891 г. с общей ошибкой «holds out the propitiation»; цитата впервые появляется в редакции 1907 г., в изданиях 1886/1889/1902 её нет.)*
 
-**Что остаётся `HOLD`.** Колонки CO 49:100 (Рим. 5:18; тома CO 49 нет на IA) и CO 45:706 (Мф. 26:28; тома CO 45 нет на IA); `PRINT_IMAGE_HOLD` для всех OCR-чтений этого раздела; путь цитаты в Strong (`OPEN`). Вывод о **позиции самого Кальвина** по объёму искупления этим разделом **не выносится**: установлено только, *как* его слова были собраны в цитату.
+**Что остаётся `HOLD`.** Колонки CO 49:100 (Рим. 5:18; тома CO 49 нет на IA) и CO 45:706 (Мф. 26:28; тома CO 45 нет на IA) *[раунд 68, §4.151: том CO 45 найден (`ioanniscalviniop0045vari`); правильная колонка — **CO 45:711** (толкование 710–711), «706» было ошибкой; `HOLD` по CO 45 снят до уровня `LOCATOR_HOLD(visual)`]*; `PRINT_IMAGE_HOLD` для всех OCR-чтений этого раздела; путь цитаты в Strong (`OPEN`). Вывод о **позиции самого Кальвина** по объёму искупления этим разделом **не выносится**: установлено только, *как* его слова были собраны в цитату.
 
 ### 4.149. Q145 — Когда и откуда пастиш появился у Стронга: издание 1886 г., *New-York Evangelist* 1891 г., Graham 1857 г. и рецепция (раунд 66, 2026-11-17)
 
@@ -8306,6 +8309,31 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 | Соседство Мф. 26:28 + Рим. 5:18 | есть у Bacon 1855 (S83b) — `PARALLEL` |
 | Ложный локатор «1 John 2:2» | возможно, наследие катен, где Рим. 5:18 соседствует с 1 Ин. 2:2 — `INFERRED` |
 | Склейка в одну «цитату» | впервые у Strong 1907 (§4.149) |
+
+### 4.151. Q147 — Колонка CO 45 для Кальвина на Мф. 26:28 / Мк. 14:24: «706» неверно, фраза «Sub multorum nomine…» — CO 45:711 (раунд 68, 2026-11-17)
+
+**Повод.** Во всём корпусе фраза «Sub multorum nomine non partem mundi tantum designat, sed totum humanum genus» цитировалась как **CO 45:706** (`fathers/16_` ×3, `15_` §3.2, `fathers/09_` F-29, `fathers/10_`, `arena/AGENT4_*`). Колонка оставалась в `HOLD`, потому что тома CO 45 (= CR 73) на IA найти не удавалось (§4.148, аудит AGENT 2 §14).
+
+**Находка.** Том есть на IA под нестандартным идентификатором: **`ioanniscalviniop0045vari`** — *Ioannis Calvini opera quae supersunt omnia*, vol. 45 (Brunsvigae, 1891); скан Internet Archive (University of Arizona Library), 446 изображений, OCR Tesseract lat+eng; сервер `ia801809`, `/24/items/`. Полнотекстовый поиск работает (`inside.php` q="partem mundi" → лист 380 по `inside.php` = OCR-обёртка `page=379`).
+
+**Колонцифры по OCR-обёрткам** (в шапках правой, чётной колонки OCR стабильно читает первую цифру «7» как «1»):
+
+| Обёртка | Колонцифра правой колонки (OCR) | Колонки страницы | Содержание |
+|---|---|---|---|
+| 376 | «106» | 705–706 | Мф. 26:26: «Accepit Iesus panem… Hoc est corpus meum» |
+| 378 | «110» | 709–710 | Лк. 22:19 «Quod pro vobis datur»; Мф. 26:27 «Bibite ex hoc omnes»; **внизу колонки 710:** «Marc. 24. Hic est sanguis meus. Iam prius admonui, quum dicitur fundendus sanguis (apud» |
+| **379** | «112» | **711–712** | **верх колонки 711:** «Matthaeum) in remissionem peccatorum, his verbis nos dirigi ad mortis Christi sacrificium… Caeterum sub multorum nomine non partem mundi tantum designat, sed totum humanum genus: multos enim uni opponit, ac si diceret, se non unius hominis fore redemptorem, sed mortem obire, ut multos a reatu maledictionis liberet. Nec dubium est, quin Christus paucos alloquens communem pluribus doctrinam facere voluerit. Notandum tamen simul est, quod apud Lucam (pro vobis) nominatim discipulos compellans singulos fideles hortatur, ut sanguinis effusionem in suum usum accommodent. Ergo dum ad sacram mensam accedimus, non solum haec generalis cogitatio in mentem veniat, redemptum Christi sanguine esse mundum, sed pro se quisque reputet peccata sua expiata esse»; колонка 712 — Мф. 26:31–35 (текст) |
+| 380 | «114» | 713–714 | Мф. 26:31 «Omnes vos…», Лк. 22:31 «Ecce Satanas» |
+
+Последовательность 706 → 710 → 712 → 714 на обёртках 376 → 378 → 379 → 380 внутренне согласована (две колонки на страницу, чётная справа). Порядок величины тоже сходится: около 22 листов вводной части, затем примерно 357 страниц × 2 ≈ 714 колонок.
+
+**Вывод.**
+
+1. Толкование Мф. 26:28 у Кальвина стоит в «Гармонии» под леммой **«Marc. 24»** (Мк. 14:24), что согласуется с CTS Harmony III, p. 214, «Mark XIV. 24» (S160). Оно начинается внизу **CO 45:710**, а фраза «Sub multorum nomine…» и следующее за ней увещевание по Лк. «pro vobis» стоят в **CO 45:711**.
+2. **«CO 45:706» — ошибка локатора.** Колонка 706 относится к Мф. 26:26 («Hoc est corpus meum»), то есть к тому же перикопу, но на 5 колонок раньше. Вероятно, это колонка начала перикопа, перенесённая на конкретную фразу; откуда она взялась впервые, не установлено. Правка: `CO 45:706` → **`CO 45:711`** (толкование — 710–711).
+3. **Содержание проверки F-29 подтверждается по латыни CO.** После «Sub multorum nomine…» у Кальвина действительно идёт «Notandum tamen simul est, quod apud Lucam (pro vobis)…», а фразы «потому что под этим словом Он обозначает тех, кому надлежит вкусить плод Его смерти» нет. Вывод `15_` §3.2 / `fathers/09_` F-29 о том, что вторая фраза сфабрикована, теперь стоит и на CO (A2, OCR), а не только на CTS и ccel.
+4. **Класс.** A2 по OCR-слою скана CO; колонка определена по OCR колонцифр, изображение не сверено, поэтому `LOCATOR_HOLD(visual)` — так же, как для CO 47:64–65 (§4.148). `PRINT_IMAGE_HOLD` сохраняется.
+5. **CO 49:100 (Рим. 5:18) остаётся `HOLD`.** По IA advancedsearch (титулы «Calvini opera» / «Corpus reformatorum», включая 1892–1893 гг. и идентификаторы `ioanniscalviniop00*` / `corpusreformator00*`) и по полнотекстовому поиску IA на «Communem omnium gratiam facit» скана тома CO 49 не найдено: есть только цитаты в других книгах.
 
 ## 5. Анализ и границы допустимой формулировки
 
