@@ -731,3 +731,19 @@ Nicole (*WTJ* 47 [1985]) в переводных и вторичных выде�
 ### 17.4. Статус
 
 HOLD без изменений: CO 49:100, CO 45:706, `PRINT_IMAGE_HOLD`, права, публикационный HOLD, C-17 `TENSION`. Путь пастиша: часть «Ин. 3:16» → *New-York Evangelist* 1891 (`STRONG`); части «Рим. 5:18» и «Мф. 26:28» и прямой источник Стронга — `OPEN`. Доступ к HathiTrust заблокирован с адреса песочницы, поэтому прямое чтение изданий 1889 и 1902 гг. отложено.
+
+## 18. Раунд 67 (2026-11-17): часть «Рим. 5:18» пастиша Стронга
+
+Полная запись — `34_` §4.150 (Q146), S164–S165, добавление к S83(b), `22_` 42dy.
+
+| # | Утверждение | Основание | Класс |
+|---|---|---|---|
+| 1 | Strong III.778, Рим. 5:18: «Christ suffered for the sins of the whole world, and in the goodness of God is offered unto all men without distinction» | `inside.php` по `cu31924092368236`, лист 17 | A2 (OCR) |
+| 2 | Th. Scott 1786: «suffered for the sins of the whole world; and is offered indiscriminately to all men, by the goodness of God»; следом — 1 Ин. 2:2 | `inside.php`, лист 13 | A2 (OCR) |
+| 3 | R. Anderson 1837: «…by the mercy of God, is offered to all without distinction»; «In this passage Calvin speaks as an interpreter of Scripture; in the Institutes, as the advocate of a system» | `inside.php`, лист 36 | A2 (OCR) |
+| 4 | W. Bacon 1855 (= S83b): катена Мф. 26:28 → Рим. 5:18 («offered to all, without distinction») → 1 Кор. 8:11 → 2 Пет. 2:1 → 1 Ин. 2:2 | полный OCR-текст `_djvu.txt`, листы 65–66 | A2 (OCR) |
+| 5 | Ни один свидетель не даёт формулировку Стронга целиком; все элементы — буквальные переводы одной латыни; общей ошибки нет | сравнение 1–4 с Watts (S158) и Graham (S162) | вывод: `PARALLEL`, недиагностично |
+| 6 | Тезис «Кальвин-экзегет против „Наставления“» в англоязычной литературе — по меньшей мере с 1837 г. (до Ричардса 1846) | п. 3 | A2; связь Anderson → Richards **не** установлена |
+| 7 | Ложный локатор «1 John 2:2» у Стронга может происходить из катен, где Рим. 5:18 соседствует с 1 Ин. 2:2 (Scott, Bacon, Graham) | структурное наблюдение | `INFERRED` |
+
+**Статус пути пастиша:** часть «Ин. 3:16» — `STRONG` (общая ошибка, *New-York Evangelist* 1891); части «Рим. 5:18» и «Мф. 26:28» — `PARALLEL`, недиагностично; прямой источник Стронга — `OPEN`. HOLD без изменений.
