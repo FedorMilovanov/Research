@@ -7,12 +7,16 @@ on:
       - 'scripts/build_charnock_custody_candidate.py'
       - 'scripts/test_build_charnock_custody_candidate.py'
       - 'data/charnock-custody-manifest-v2.json'
+      - 'БИОГРАФИИ/Стивен Чарнок/00_README_AND_NAVIGATION.md'
+      - 'БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md'
   push:
     branches: [main]
     paths:
       - '.github/workflows/charnock-custody-snapshot.yml'
       - 'scripts/build_charnock_custody_candidate.py'
       - 'scripts/test_build_charnock_custody_candidate.py'
+      - 'БИОГРАФИИ/Стивен Чарнок/00_README_AND_NAVIGATION.md'
+      - 'БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md'
   workflow_dispatch:
 
 permissions:
