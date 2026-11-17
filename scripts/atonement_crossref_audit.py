@@ -68,7 +68,7 @@ def heading_ids(path: Path) -> dict[str, str]:
 # Reader-facing article links need a separate file-existence check. The section
 # validator below intentionally covers numbered corpus references; it must not
 # silently pass a plain Markdown link without §.
-INLINE_LOCAL_LINK = re.compile(r'\\[[^\\]]+\\]\\(([^)\\s]+)(?:\\s+"[^"]*")?\\)')
+INLINE_LOCAL_LINK = re.compile(r'\[[^\]]+\]\(([^)\s]+)(?:\s+"[^"]*")?\)')
 
 
 def reader_file_links(draft: Path, body: str) -> tuple[int, list[dict]]:
