@@ -8693,7 +8693,7 @@
       "note": "Статья №9/18, положительный анализ Иоанновых текстов о мире и умилостивлении; первичные греческие формы и исторические авторы отделены от вторичных пересказов, FULL_TEXT_HOLD/RIGHTS_HOLD/EVIDENCE_HOLD/PUBLICATION_HOLD сохранены",
       "publicationEligible": false,
       "digestRefreshedAt": "2026-11-17",
-      "digestRefreshedReason": "Agent 7 editorial patchset (93 scoped replacements, #541); this hash refresh does not assert new print-source collation or authorize publication"
+      "digestRefreshedReason": "PR #559 scoped editorial revision; SHA-256 pin refreshed for the revised bytes. No new source collation or evidence acquisition; publication remains ineligible."
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article10_ransom_for_all_two_adams_paul_hebrews.md",
@@ -8819,7 +8819,7 @@
       "note": "Reader-W4: independent narrative chapter 07 with twelve scoped F07 claims and strongest contrary readings; earlier historic drafts preserved. Not an independent full recollation, not publication rights or final extent verdict. EVIDENCE_HOLD / ATTRIBUTION_HOLD / RIGHTS_HOLD / PUBLICATION_HOLD; NOT PEER REVIEWED.",
       "publicationEligible": false,
       "digestRefreshedAt": "2026-11-17",
-      "digestRefreshedReason": "Agent 7 editorial patchset (93 scoped replacements, #541); this hash refresh does not assert new print-source collation or authorize publication"
+      "digestRefreshedReason": "PR #559 scoped editorial revision; SHA-256 pin refreshed for the revised bytes. No new source collation or evidence acquisition; publication remains ineligible."
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article17_free_offer_gospel_assurance_all_hearers.md",
