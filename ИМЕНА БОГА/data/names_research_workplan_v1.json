@@ -16,7 +16,7 @@
     "regressionTests": 327,
     "criticalCollationsCompleted": 0,
     "productApprovals": 0,
-    "allSixCiChecks": "VERIFIED_PREDECESSOR_HEAD_8755ae7d9e241cff27454d375d5b4bb1998f9cff_6_OF_6_TERMINAL_SUCCESS_743_OF_743_TESTS_W82_RECHECK_REQUIRED",
+    "allSixCiChecks": "VERIFIED_PREDECESSOR_HEAD_958412a1e0d2746cd04ed1c8682e5f0d77daf95e_6_OF_6_TERMINAL_SUCCESS_743_OF_743_TESTS_W82; NEW_DOCUMENTATION_HEAD_REQUIRES_EXACT_CI",
     "snapshotKind": "CURRENT_CORPUS_COUNTS_REQUIRING_EXPLICIT_UPDATE_AFTER_CHANGES",
     "originalVerifiedCommit": "70442271aadf1bcae2afeaad729336218874f180",
     "planRegressionTests": 26,
@@ -64,7 +64,7 @@
     "consumerContractRegressionTests": 29,
     "consumerContractExternalVerified": 0,
     "consumerMigrationV2Approvals": 0,
-    "lastConfirmedAllSixChecksSha": "8755ae7d9e241cff27454d375d5b4bb1998f9cff",
+    "lastConfirmedAllSixChecksSha": "958412a1e0d2746cd04ed1c8682e5f0d77daf95e",
     "readerChapterCount": 3,
     "readerSectionCrosswalkCount": 32,
     "readerCrosswalkLinkedDistinctClaims": 25,
@@ -858,7 +858,7 @@
   ],
   "lastWorkReport": {
     "date": "2026-11-17",
-    "planStatus": "W82 substantive original BL Or4445 folio59v image autopsy: 4982x6379 master JPEG opened directly, native pixel x2850–4500 y4150–4860 shows original על כסיה מלחמה with JOINED כסיה (right column bottom line), independently corroborates Dovi MAM and Lyons1983. Historical low-res automated two-word report DISCONFIRMED. One previously registered source updated IN PLACE, no new sources/attestations; 136 records blocked, 327 core/743 total tests. Original physical Or4445 marginalia, other mss, Aleppo, BHS/Göttingen full critical, external scholarship and Product all HOLD. W82 exact CI required.",
+    "planStatus": "W82 substantive original BL Or4445 folio59v image autopsy: 4982x6379 master JPEG opened directly, native pixel x2850–4500 y4150–4860 shows original על כסיה מלחמה with JOINED כסיה (right column bottom line), independently corroborates Dovi MAM and Lyons1983. Historical low-res automated two-word report DISCONFIRMED. One previously registered source updated IN PLACE, no new sources/attestations; 136 records blocked, 327 core/743 total tests. Original physical Or4445 marginalia, other mss, Aleppo, BHS/Göttingen full critical, external scholarship and Product all HOLD. W82 exact-head CI VERIFIED 6/6 TERMINAL SUCCESS and 743/743 tests on 958412a1e0d2746cd04ed1c8682e5f0d77daf95e; new documentation commit requires fresh CI.",
     "workCompleted": [
       "W82 2026-11-17 direct original 4982×6379-pixel photo Or4445 f59v, rightmost column last line, reads על כסיה מלחמה as JOINED original ink, correction of prior wrong machine reading, image source and in-place guards/test updated, no new physical source or rights/critical apparatus claims.",
       "W81 2026-11-17: first true browser image-backed inspection of OPenn original Harley MS5683 fol1r JPG 12967_0010.jpg at 4840x6636 native pixels, whole surface and specified source-coordinate crops. Historic W80 'JPG unavailable' limitation now resolved. Present physical original ink and repair damage directly observed; contested original word boundary remains unresolved pending controlled second philologist review; no machine/OCR textual substitute, no new ancient witness. Existing source record and fail-closed regression amended in place; no extra sources or test count.",
@@ -1112,8 +1112,8 @@
         "acceptance": "Sentence-level five-claim review: printed MT and LXX are attributed and separated; conjecture not promoted; Dovi/Lyons about same Or4445 not counted as two manuscripts; lost Aleppo leaf not observed; specific Masorah note not palaeographically dated. Apply local text fix if claim fails; otherwise evidence-limited editorial STOP and NG04 BLOCKED_SOURCE.",
         "status": "ACTIVE_TEXT_EDIT_ONLY_TASK_NG04_BLOCKED_SOURCE_NO_INDEPENDENT_ORIGINAL_COLLATION",
         "file": "ИМЕНА БОГА/23_YIREH_NISSI_ANSWER_PLACE_MOUNTAIN_EDITION_CRUX_20261107.md",
-        "verification": "Wave73 added a bounded connected prepublication reader passage inside research dossier, NOT a fourth reader chapter and NOT independent scholarly approval; preceding exact SHA 29e52b49 had 6/6 CI and 732/732. W74 targeted Weiss counterargument added to existing dossier23 reader excerpt: own author abstract says accentuation SEEMS two-word and postulates later Aleppo joining correction; no original manuscript photo or published full Hebrew article claimed.",
-        "nextReview": "If original Weiss article 242–272 or native Or4445 f59v / original printed BHS/Göttingen/Yeivin/Breuer pages become verifiably accessible, inspect exact text; otherwise STOP_DISCOVERY, leave NG04 BLOCKED_SOURCE. No fourth chapter. Treat Lyons/Dovi two authored reports as one physical manuscript's reading; Masorah marginal date unresolved."
+        "verification": "W82 directly inspected original OPenn BL Or4445 fol59v 4982×6379 native JPEG: right column final line על כסיה מלחמה has joined כסיה. W81 inspected damaged Harley MS5683 fol1r without reliable word-boundary verdict. Both remain narrow photo observations, not a complete Masorah/codex or BHS/Göttingen apparatus collation. Ex17 reader paragraph remains in dossier23, NOT chapter 04; 0 external scholarly/rights/Product acceptance.",
+        "nextReview": "Obtain and read actual original BHS Exodus17:16 lower apparatus and Göttingen Wevers/Quast Exodus1991 App I/II; independently re-examine Harley MS5683 f1r damaged word boundary and Or4445 Masorah layer only if source evidence permits. Weiss2026 full pages and Yeivin82/Breuer260–261 remain targeted access requests. No new global web discovery without claim-changing object; NG04 stays BLOCKED_SOURCE."
       }
     ],
     "nextChapterCandidates": [],
@@ -1680,7 +1680,7 @@
     "readerResearchAppendixPreservation20261111": "CH03 native 2651-word Deir Alla section moved intact except original CC0 image block retained in reader, 30 source hyperlinks and 2 other images preserved in editorial appendix. Scientific facts, conflicting reconstruction and rights remain held.",
     "selfPlanAudit": {
       "auditDate": "2026-11-17",
-      "checkedPredecessorHeadSha": "8755ae7d9e241cff27454d375d5b4bb1998f9cff",
+      "checkedPredecessorHeadSha": "958412a1e0d2746cd04ed1c8682e5f0d77daf95e",
       "verifiedPredecessorWorkflows": 6,
       "verifiedPredecessorNamesTests": 743,
       "scope": "Only existing Research PR379 and canonical JSON/master; no Product/site/rights changes",
@@ -1690,7 +1690,7 @@
           "severity": "P0",
           "result": "CORRECTED_THIS_AUDIT",
           "finding": "W70 nextAction and W69 CI as CURRENT despite W73",
-          "evidence": "W81 exact 8755ae7d9e241cff27454d375d5b4bb1998f9cff: 6/6 success, 743 Names tests; W82 exact new head CI mandatory."
+          "evidence": "W82 exact 958412a1e0d2746cd04ed1c8682e5f0d77daf95e: 6/6 terminal SUCCESS, Names 743/743 (327+26+319+24+18+29); subsequent documentation-only HEAD requires its own CI."
         },
         {
           "id": "SPA-02",
@@ -1703,7 +1703,7 @@
           "id": "SPA-03",
           "severity": "P0",
           "result": "BOUNDED_READER_WEISS_COUNTERARGUMENT_EDIT_DONE_NG04_SOURCE_HOLD",
-          "finding": "Ex17 reader text exists inside dossier23; NOT a full CH04 or verified original folio autopsy",
+          "finding": "Ex17 reader fragment exists in dossier23, not a full CH04. W82 original Or4445 fol59v single-locus joined כסיה inspected; NOT a complete codex/Masorah/critical-apparatus collation.",
           "evidence": "dossier23 Wave73; NG04 BLOCKED_SOURCE"
         },
         {
@@ -1724,7 +1724,7 @@
           "id": "SPA-06",
           "severity": "P0",
           "result": "EVIDENCE_HOLD_PRESERVED",
-          "finding": "BHQ Exodus unpublished; BHS/Göttingen, Weiss, original Or4445 folio not collated; 0 critical original photo inspections",
+          "finding": "BHQ Exodus not published; full BHS/Göttingen critical apparatus and original Weiss article still missing. W82 native Or4445 image checked only at the single כסיה locus; full Masorah, Harley boundary, Aleppo and external scholarly review remain unverified.",
           "evidence": "NG04 recorded publisher status, dossier23, source register"
         },
         {
