@@ -84,7 +84,24 @@ jobs:
 
           paths = sorted(p for lane in ("ot", "nt", "fathers", "synthesis")
                          for p in (Path("ИСКУПЛЕНИЕ") / lane).glob("*.md"))
-          assert len(paths) == 57, f"unexpected source inventory: {len(paths)}"
+          # Compare the working tree with the *complete tracked Git inventory*, not
+          # a frozen count from an earlier research wave. A missing, untracked or
+          # platform-mutated manuscript must still fail closed.
+          lane_dirs = {Path("ИСКУПЛЕНИЕ") / lane
+                       for lane in ("ot", "nt", "fathers", "synthesis")}
+          tracked = subprocess.check_output(
+              ["git", "-c", "core.quotepath=false", "ls-tree", "-r",
+               "--name-only", "HEAD", "--", *map(str, sorted(lane_dirs))],
+              text=True, encoding="utf-8",
+          ).splitlines()
+          expected = sorted(p for p in tracked if Path(p).parent in lane_dirs
+                            and p.endswith(".md"))
+          actual = sorted(p.as_posix() for p in paths)
+          if not expected or actual != expected:
+              raise SystemExit(f"Tracked source inventory differs from worktree: "
+                               f"tracked={len(expected)}, live={len(actual)}, "
+                               f"missing={sorted(set(expected)-set(actual))[:8]}, "
+                               f"extra={sorted(set(actual)-set(expected))[:8]}")
           drift = []
           for path in paths:
               original = subprocess.check_output(["git", "show", f"HEAD:{path.as_posix()}"])
@@ -116,8 +133,24 @@ jobs:
           from pathlib import Path
           paths = sorted(p for lane in ("ot", "nt", "fathers", "synthesis")
                          for p in (Path("ИСКУПЛЕНИЕ") / lane).glob("*.md"))
-          if len(paths) != 57:
-              raise SystemExit(f"Unexpected markdown inventory: {len(paths)}")
+          # Compare the working tree with the *complete tracked Git inventory*, not
+          # a frozen count from an earlier research wave. A missing, untracked or
+          # platform-mutated manuscript must still fail closed.
+          lane_dirs = {Path("ИСКУПЛЕНИЕ") / lane
+                       for lane in ("ot", "nt", "fathers", "synthesis")}
+          tracked = subprocess.check_output(
+              ["git", "-c", "core.quotepath=false", "ls-tree", "-r",
+               "--name-only", "HEAD", "--", *map(str, sorted(lane_dirs))],
+              text=True, encoding="utf-8",
+          ).splitlines()
+          expected = sorted(p for p in tracked if Path(p).parent in lane_dirs
+                            and p.endswith(".md"))
+          actual = sorted(p.as_posix() for p in paths)
+          if not expected or actual != expected:
+              raise SystemExit(f"Tracked source inventory differs from worktree: "
+                               f"tracked={len(expected)}, live={len(actual)}, "
+                               f"missing={sorted(set(expected)-set(actual))[:8]}, "
+                               f"extra={sorted(set(actual)-set(expected))[:8]}")
           drift = []
           size_live = size_git = 0
           for path in paths:
