@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "artifactId": "OFFICIAL-CORE-DATASETS-REPRODUCIBILITY-2026-11-18",
+  "role": "DERIVED_READ_ONLY_NOT_AUTHORITY",
+  "checkedAt": "2026-11-18",
+  "question": "Воспроизводимы ли три набора данных из official core 59 после того, как артефакт CI истечёт 2026-11-24?",
+  "method": "curl https://codeload.github.com/<owner>/<repo>/zip/<pinned-commit> в /tmp; сравнение байтового размера с записанным в документе статуса 2026-07-30; sha256 посчитан локально. Ничего не загружалось на Drive и не менялось в репозиториях.",
+  "urlPattern": "https://codeload.github.com/{owner}/{repo}/zip/{commit}",
+  "items": [
+    {
+      "name": "STEPBible Data repository snapshot",
+      "repository": "STEPBible/STEPBible-Data",
+      "commit": "b86d26cdb1f51729e73b5b4eb7f7ccadc5dfba39",
+      "bytes": 100920275,
+      "recordedBytes": 100920275,
+      "sha256": "6845fa9660c62301a0eec38c009ca34ef82647a9737529d8c56ac45d35182df0"
+    },
+    {
+      "name": "Open Scriptures Hebrew Bible (morphhb) snapshot",
+      "repository": "openscriptures/morphhb",
+      "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+      "bytes": 20870584,
+      "recordedBytes": 20870584,
+      "sha256": "f56c150708b5d74719ecb709c712c31eae9855bca7b111fd82ec91b5d177b4c7"
+    },
+    {
+      "name": "Faithlife SBLGNT snapshot",
+      "repository": "Faithlife/SBLGNT",
+      "commit": "c4d241a9c1c479a55b989ba35a4976c1d0b8052c",
+      "bytes": 1414688,
+      "recordedBytes": 1414688,
+      "sha256": "4fc2659ce10ec6f57552f22e039de927ed3e417c7b5a757f34f05dae530e4c0f"
+    }
+  ],
+  "result": {
+    "matched": 3,
+    "total": 3,
+    "bytesTotal": 123205547,
+    "recordedBytesTotal": 123205547,
+    "verdict": "Размеры совпали байт в байт; наборы воспроизводимы по зафиксированному коммиту. sha256 сняты впервые."
+  },
+  "boundaries": [
+    "Совпадение размера и воспроизводимость архива не подтверждают права на использование наборов; вопрос прав остаётся открытым.",
+    "Содержимое архивов не распаковывалось и не читалось: проверялся носитель, а не текст.",
+    "Коммит может исчезнуть только при перезаписи истории в апстриме; на 2026-11-18 все три резолвятся через api.github.com.",
+    "Скачивание выполнялось в /tmp песочницы; в репозиторий и на Drive байты не попадали."
+  ]
+}
