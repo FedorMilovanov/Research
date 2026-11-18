@@ -214,7 +214,7 @@ The evidence rule is the same as everywhere in this project: a work enters this 
   `DOSSIER_PHOS-007_PART5_WHY_P_LACKS_IT.md` (часть 5: состояние кодекса P и его списков) ·
   `DOSSIER_PHOS-007_PART6_COPIES_AND_SCHOLIA.md` (часть 6: оба списка до конца, схолии и их отсутствие) ·
   `DOSSIER_PHOS-007_PART7_HARNACK_READ.md` (часть 7: Гарнак прочитан — аргумент против авторства и другая дата) ·
-  `DOSSIER_PHOS-007_PART8_EUSEBIUS_HYMNODY.md` (часть 8: Непос проверен; три рода свидетельств о ранних христианских песнях у Евсевия) ·
+  `DOSSIER_PHOS-007_PART8_EUSEBIUS_HYMNODY.md` (часть 8: греческие V.28 / VII.24 / VII.30 — написание, псалмодия Непоса и исполнение; голоса и пределы свидетельств) ·
   `DOSSIER_PHOS-007_PART9_CORRECTION_AND_SECOND_POEM.md` (часть 9: поправка к части 6 — глоссы
   к гимну есть; второе стихотворение прочитано) ·
   `DOSSIER_PHOS-007_PART10_APPARATUS_PARALLELS_LOSSES.md` (часть 10: аппарат издания, счёт
