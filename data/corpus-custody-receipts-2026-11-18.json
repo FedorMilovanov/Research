@@ -1125,5 +1125,39 @@
         "allOwnerOnly": true
       }
     }
+  },
+  "rbaRightsManifest": {
+    "checkedAt": "2026-11-18",
+    "folder": {
+      "name": "08 — RIGHTS, MANIFESTS & SHA256",
+      "id": "1aj8HdRA9EcqW6NLLHaw9M68hY8rOGMEd",
+      "parent": "01 — РУССКИЕ БАПТИСТЫ — RESEARCH CORPUS (1B5i05JKLeb7mA0cOjM9_q7EYQR4qDKpz)",
+      "objectCount": 1
+    },
+    "file": {
+      "name": "SINICHKIN — WORKING LIBRARY ACTIONS & SHA256.csv",
+      "id": "1lrMtZKiaF8ocAp-kqLerQ_37H4-rFi_0",
+      "bytes": 77692,
+      "sha256": "8a3684581df7d8fc353bce518f79177c49bf23f92e6c52dc3c1f099acb9d270b",
+      "columns": [
+        "Source",
+        "SHA256",
+        "Action",
+        "Destination"
+      ],
+      "actionValue": "COPIED_TO_WORKING_LIBRARY",
+      "sourceRoot": "04 — CHANNEL METADATA & EXPORTS\\ChatExport_2026-06-27\\files\\",
+      "destinationRoot": "01 — РУССКИЕ БАПТИСТЫ — RESEARCH CORPUS\\00 — СИНИЧКИН — MASTER INTAKE & ORIGINALS\\02 — SOURCES, LINKS & BAPTIST PDF\\01 — PDF & BOOKS FROM SINICHKIN\\BATCH-0001\\"
+    },
+    "findings": [
+      "Папка с именем «RIGHTS» содержит один файл, и это не определение прав, а журнал копирования: Source / SHA256 / Action / Destination.",
+      "Ни файла, ни папки нет в репозитории: поиск по ID и по обоим именам даёт 0.",
+      "Пути, записанные в журнале, описывают дерево, которого больше нет: папки «00 — СИНИЧКИН — MASTER INTAKE & ORIGINALS» среди 12 текущих детей корпуса нет, а в «90 — SOURCE INTAKES & ORIGINALS» лежит «01 — СИНИЧКИН — TELEGRAM CHANNEL EXPORT — SOURCE INTAKE». Сверять надо по SHA256, а не по путям."
+    ],
+    "limits": [
+      "Строки не считались: прочитаны первые ~3 КБ из 77 692 Б, структура и первые пять записей.",
+      "Хеши из журнала с текущими файлами архива не сверялись — это отдельная работа, и без неё журнал ничего не подтверждает.",
+      "Другие папки корпуса РБА, кроме 02 (периодика) и 08 (этот журнал) и 99 (HOLD), не читались."
+    ]
   }
 }
