@@ -1293,6 +1293,92 @@ class SynthesisEvidenceTests(unittest.TestCase):
         self.assertTrue(any(row["id"] in e and "must precede" in e for e in errors))
 
 
+    def _make_synthetic_s40_revision(self):
+        """Test the schema without changing the real historical S40 snapshot."""
+        report = deepcopy(self.report)
+        row = next(r for r in report["repairs"] if r["id"] == "S40")
+        original = (ROOT / row["file"]).read_text(encoding="utf-8")
+        old_text = ("Косвенные временные блага для творения как побочный "
+                    "результат креста, а не заместительная уплата за неизбранных.")
+        replacement_text = ("[SYNTHETIC TEST FIXTURE: not a historical or "
+                            "scholarly claim]")
+        self.assertEqual(row["removed"].count(old_text), 1)
+        self.assertEqual(original.count(row["removed"]), 1)
+        revised_history = row["removed"].replace(old_text, replacement_text, 1)
+        revised_file = original.replace(row["removed"], revised_history, 1)
+        row["historicalRevisions"] = [{
+            "id": "TEST-S40-EXACT-REVISION",
+            "oldText": old_text,
+            "replacementText": replacement_text,
+            "reason": "In-memory mutation fixture, never a source claim",
+            "basis": {"file": "README.md", "section": "# Research"},
+        }]
+        return report, row, original, revised_file
+
+    def test_s40_synthetic_historical_revision_is_accepted_only_with_exact_preimage(self):
+        report, row, original, revised = self._make_synthetic_s40_revision()
+        errors = check_repairs(ROOT, report, {row["file"]: revised})
+        self.assertFalse([error for error in errors if error.startswith("S40:")], errors)
+        self.assertEqual((ROOT / row["file"]).read_text(encoding="utf-8"), original)
+
+        without_record = deepcopy(report)
+        next(r for r in without_record["repairs"] if r["id"] == "S40").pop(
+            "historicalRevisions"
+        )
+        errors = check_repairs(ROOT, without_record, {row["file"]: revised})
+        self.assertTrue(any(
+            "S40: historical retention lost" in error for error in errors
+        ))
+
+        errors = check_repairs(ROOT, report, {row["file"]: original})
+        self.assertTrue(any(
+            "S40: superseded historical wording remains" in error
+            for error in errors
+        ))
+
+        tampered = deepcopy(report)
+        next(r for r in tampered["repairs"] if r["id"] == "S40")[
+            "historicalRevisions"
+        ][0]["replacementText"] += " [unapproved mutation]"
+        errors = check_repairs(ROOT, tampered, {row["file"]: revised})
+        self.assertTrue(any(
+            "S40: historical retention lost" in error for error in errors
+        ))
+
+    def test_s40_synthetic_historical_revision_rejects_bad_basis_and_duplicate_ids(self):
+        report, row, _, revised = self._make_synthetic_s40_revision()
+
+        bad_path = deepcopy(report)
+        next(r for r in bad_path["repairs"] if r["id"] == "S40")[
+            "historicalRevisions"
+        ][0]["basis"]["file"] = "../README.md"
+        errors = check_repairs(ROOT, bad_path, {row["file"]: revised})
+        self.assertTrue(any(
+            "S40: historical revision evidence path must be repository-relative"
+            in error for error in errors
+        ))
+
+        missing_heading = deepcopy(report)
+        next(r for r in missing_heading["repairs"] if r["id"] == "S40")[
+            "historicalRevisions"
+        ][0]["basis"]["section"] = "# Not An Existing Research Heading"
+        errors = check_repairs(ROOT, missing_heading, {row["file"]: revised})
+        self.assertTrue(any(
+            "S40: historical revision evidence locator is missing or non-unique"
+            in error for error in errors
+        ))
+
+        duplicates = deepcopy(report)
+        entry = next(r for r in duplicates["repairs"] if r["id"] == "S40")
+        entry["historicalRevisions"].append(deepcopy(entry["historicalRevisions"][0]))
+        errors = check_repairs(ROOT, duplicates, {row["file"]: revised})
+        self.assertTrue(any(
+            "S40: missing/duplicate historical revision id" in error
+            for error in errors
+        ))
+
+
+
 class Wave3ParserTests(unittest.TestCase):
     def test_eli_uses_ids_not_zero_based_list_slices(self):
         verses = b"10\tIsa.1:1\n12\tIsa.1:2\n"
