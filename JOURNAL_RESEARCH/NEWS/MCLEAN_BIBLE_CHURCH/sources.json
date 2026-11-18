@@ -1,6 +1,6 @@
 {
   "caseId": "JR-MBC-2026",
-  "version": 7,
+  "version": 8,
   "reviewedAt": "2026-11-18",
   "corpus": "JOURNAL_RESEARCH/NEWS/MCLEAN_BIBLE_CHURCH",
   "evidencePolicy": "data/repository-evidence-policy-v2.json",
@@ -664,6 +664,29 @@
         "HOSTED_BY_LITIGATION_PARTICIPANT",
         "NO_INDEPENDENT_ACCOUNTING_AUTHENTICATION",
         "NOT_AN_AUDIT_OPINION"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-040",
+      "title": "Court of Appeals of Virginia official oral argument audio index: Gaskins I (2023) and Gaskins II (2026)",
+      "url": "https://vacourts.gov/courts/cav/oral_arguments/home",
+      "evidenceClass": "A1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "Official Court of Appeals of Virginia oral arguments listing: Feb 15 2023, Region 4, record 1074-22-4 (Gaskins v. MBC); Mar 25 2026, Region 4, record 0185-25-4 (Gaskins v. MBC). Both listed with 'Play Audio' control; indexed listing inspected, no recording downloaded or listened to.",
+      "provesOnly": "The court's public index identifies oral-argument audio entries associated with two numbered Gaskins appeals. It does not verify what anyone said, the recording quality, or the content of either hearing. Not a primary source for a spoken quotation until the actual recording is lawfully obtained and heard.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD"
+      ],
+      "integrityFlags": [
+        "OFFICIAL_INDEX_ONLY",
+        "AUDIO_NOT_DOWNLOADED_OR_LISTENED",
+        "NO_VERIFIED_AUDIO_TIMECODES"
       ]
     }
   ]
