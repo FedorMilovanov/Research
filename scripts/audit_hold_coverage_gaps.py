@@ -12,6 +12,13 @@
 «not verified», «не сличалось»). Так выглядит `SRC-PHOS-BASIL-DSS`: `PROMOTE`,
 `holds: []`, а в `limits` написано, что греческий текст не сличался.
 
+Третий режим (`--no-holds-field`) — про записи, у которых поля `holds` нет **вовсе**.
+Основной обход их не видит и не может увидеть: он ищет `holds: []`, то есть явное
+«HOLD не выставлен», а отсутствие поля — это другое высказывание (чаще всего другая
+схема, иногда забытая строка). На 2026-11-18 таких 52 против 51 с пустым массивом;
+среди них 10 с `RIGHTS_UNKNOWN` и 8 с `PERMISSION_REQUIRED`. Держать их в одном
+числе нельзя, а не считать — тоже: молчание не должно совпадать с ответом.
+
 Скрипт печатает две величины, потому что они означают разное: сколько записей
 **объявляют** объём осмотра (`limits`, `inspection_scope`, `inspection_level`,
 `claim_limit`) и сколько **молчат** о нём. Молчащая запись — это дефект; объявившая
@@ -25,6 +32,7 @@
     python3 scripts/audit_hold_coverage_gaps.py
     python3 scripts/audit_hold_coverage_gaps.py --summary
     python3 scripts/audit_hold_coverage_gaps.py --promotion-gaps
+    python3 scripts/audit_hold_coverage_gaps.py --no-holds-field
 """
 
 from __future__ import annotations
@@ -187,6 +195,65 @@ def build_promotion_gaps() -> list[dict]:
     return rows
 
 
+def build_without_holds_field() -> list[dict]:
+    """Записи «объект не приобретён», у которых поля `holds` нет вовсе.
+
+    Основной обход их пропускает: он требует `holds`, чтобы отличить явное «HOLD не
+    выставлен» от отсутствия поля. Здесь собирается вторая половина той же картины.
+    """
+    rows: list[dict] = []
+    for path in iter_json():
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, UnicodeDecodeError):
+            continue
+        rel = str(path.relative_to(ROOT))
+
+        def walk_absent(node, parent_id: str | None) -> None:
+            if isinstance(node, dict):
+                access = next(
+                    (
+                        str(node[k]).strip().upper()
+                        for k in ACCESS_KEYS
+                        if isinstance(node.get(k), str)
+                    ),
+                    None,
+                )
+                if access in NOT_FULL and holds_of(node) is None:
+                    ident = (
+                        node.get("id")
+                        or node.get("source_id")
+                        or node.get("sourceId")
+                        or node.get("objectId")
+                        or node.get("recordId")
+                        or parent_id
+                        or "(без id)"
+                    )
+                    rows.append(
+                        {
+                            "path": rel,
+                            "id": str(ident),
+                            "accessState": access,
+                            "rightsState": str(
+                                node.get("rightsState") or node.get("rights_state") or ""
+                            ),
+                            "publicationState": str(
+                                node.get("publicationState")
+                                or node.get("publication_state")
+                                or ""
+                            ),
+                        }
+                    )
+                for key, value in node.items():
+                    walk_absent(value, node.get("id") or parent_id)
+            elif isinstance(node, list):
+                for value in node:
+                    walk_absent(value, parent_id)
+
+        walk_absent(data, None)
+    return rows
+
+
 def build() -> dict:
     rows: list[dict] = []
     unreadable: list[str] = []
@@ -213,6 +280,26 @@ def build() -> dict:
 
 
 def main(argv: list[str]) -> int:
+    if "--no-holds-field" in argv:
+        absent = build_without_holds_field()
+        print(f"Записей «объект не приобретён», у которых поля holds нет вовсе: {len(absent)}")
+        print("  основной обход их не видит: он ищет holds: [], то есть явный отказ от HOLD")
+        by_rights = collections.Counter(r["rightsState"] or "(не задано)" for r in absent)
+        by_file = collections.Counter(r["path"] for r in absent)
+        print("\nпо rightsState:")
+        for key, value in by_rights.most_common():
+            print(f"  {key}: {value}")
+        print("\nпо файлам:")
+        for key, value in by_file.most_common():
+            print(f"  {value:4d}  {key}")
+        print("\nпо записям:")
+        for row in absent:
+            print(
+                f"  {row['path']} | {row['id']} | {row['accessState']} | "
+                f"rights={row['rightsState'] or '-'} | pub={row['publicationState'] or '-'}"
+            )
+        return 0
+
     if "--promotion-gaps" in argv:
         gaps = build_promotion_gaps()
         print(f"Записей PROMOTE с объявленным пробелом в доказательствах: {len(gaps)}")
@@ -232,6 +319,10 @@ def main(argv: list[str]) -> int:
     print(f"Записей «объект не приобретён, HOLD не выставлен»: {len(rows)}")
     print(f"  из них сами называют объём осмотра (limits/inspection_scope/claim_limit): {len(declared)}")
     print(f"  молчат о нём совсем: {len(silent)}")
+    print(
+        "  вне этого числа: записей без поля holds вовсе — "
+        f"{len(build_without_holds_field())} (см. --no-holds-field)"
+    )
     print(f"Файлов с такими записями: {len(result['byFile'])}")
     if "--summary" in argv:
         print("\nпо accessState:")

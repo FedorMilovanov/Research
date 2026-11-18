@@ -51,6 +51,11 @@ GATES = [
 INFORMATIONAL = [
     ("PROMOTE с объявленным пробелом", ROOT, ["python3", "-B", "scripts/audit_hold_coverage_gaps.py", "--promotion-gaps"]),
     ("Недо-приобретено без HOLD", ROOT, ["python3", "-B", "scripts/audit_hold_coverage_gaps.py"]),
+    (
+        "Недо-приобретено без поля holds",
+        ROOT,
+        ["python3", "-B", "scripts/audit_hold_coverage_gaps.py", "--no-holds-field"],
+    ),
 ]
 
 

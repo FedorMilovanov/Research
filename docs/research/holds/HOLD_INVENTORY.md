@@ -1,6 +1,6 @@
 # HOLD inventory — сквозной инвентарь HOLD-ов Research
 
-**Собрано:** 2026-11-18; **проверенный коммит:** `a25418f8bca8a9ea46be32727815c924a4551b8c`. **Роль:** производный read-only артефакт, не authority. Пересобрать: `python3 -B scripts/render_hold_inventory.py`; весь контур гейтов: `python3 -B scripts/run_research_gates.py`.
+**Собрано:** 2026-11-18; **проверенный коммит:** `c30348dcd519b0bfe23f336801756ad7f3c78844`. **Роль:** производный read-only артефакт, не authority. Пересобрать: `python3 -B scripts/render_hold_inventory.py`; весь контур гейтов: `python3 -B scripts/run_research_gates.py`.
 
 Инвентарь отвечает на один вопрос: какие HOLD-и объявлены в репозитории, какого они типа и что нужно, чтобы закрыть каждый честно. Он **ничего не снимает**: по `data/repository-evidence-policy-v2.json` HOLD не снимается ни присутствием файла в Research/Drive, ни достижимостью URL, ни библиографической записью.
 
@@ -12,7 +12,7 @@
 | JSON-записей (объектов) с HOLD-ами | 2235 |
 | Всего HOLD-вхождений в `holds`-массивах | 6016 |
 | Markdown-файлов с типизированными токенами | 763 |
-| Всего типизированных токенов в Markdown/YAML | 7166 |
+| Всего типизированных токенов в Markdown/YAML | 7167 |
 | Нетипизированных строк `HOLD` | 0 |
 
 По типам:
@@ -22,7 +22,7 @@
 | `EVIDENCE_HOLD` | 1117 | 1088 | EXTERNAL_EVIDENCE |
 | `LOCATOR_HOLD` | 236 | 1583 | EXTERNAL_LOCATOR |
 | `ARCHIVE_HOLD` | 1344 | 1175 | EXTERNAL_OBJECT |
-| `RIGHTS_HOLD` | 1355 | 1210 | EXTERNAL_RIGHTS |
+| `RIGHTS_HOLD` | 1355 | 1211 | EXTERNAL_RIGHTS |
 | `PUBLICATION_HOLD` | 1964 | 2110 | TERMINAL_BY_DEFAULT |
 
 Счётчики не суммировать: один и тот же HOLD описывается и в машинном реестре, и в досье, и в аудите.
@@ -39,7 +39,7 @@
 
 | Корпус | JSON-записей с HOLD | Markdown-токенов |
 |---|---|---|
-| `docs` | 219 | 2373 |
+| `docs` | 219 | 2374 |
 | `ИСКУПЛЕНИЕ` | 526 | 1977 |
 | `БИОГРАФИИ` | 0 | 1329 |
 | `data` | 1248 | 1 |
