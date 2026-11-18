@@ -3,27 +3,27 @@
  "artifact": "REPO-HOLD-INVENTORY",
  "role": "DERIVED_READ_ONLY_NOT_AUTHORITY",
  "generatedAt": "2026-11-18",
- "testedCommit": "125613a0e89e8c5d3b80b478c5ba8ee392db3bc2",
+ "testedCommit": "dc6ef8f4d9364322ffdf8c17e0f402f9556a7f91",
  "policy": "data/repository-evidence-policy-v2.json",
  "totals": {
   "json_files_with_holds": 35,
-  "json_nodes_with_holds": 2231,
-  "json_hold_entries": 6012,
+  "json_nodes_with_holds": 2235,
+  "json_hold_entries": 6016,
   "json_hold_by_type": {
    "ARCHIVE_HOLD": 1344,
-   "EVIDENCE_HOLD": 1113,
+   "EVIDENCE_HOLD": 1117,
    "LOCATOR_HOLD": 236,
    "PUBLICATION_HOLD": 1964,
    "RIGHTS_HOLD": 1355
   },
-  "markdown_files_with_typed_tokens": 762,
-  "markdown_typed_tokens": 7152,
+  "markdown_files_with_typed_tokens": 763,
+  "markdown_typed_tokens": 7164,
   "markdown_typed_by_type": {
-   "ARCHIVE_HOLD": 1173,
-   "EVIDENCE_HOLD": 1082,
-   "LOCATOR_HOLD": 1582,
-   "PUBLICATION_HOLD": 2108,
-   "RIGHTS_HOLD": 1207
+   "ARCHIVE_HOLD": 1175,
+   "EVIDENCE_HOLD": 1088,
+   "LOCATOR_HOLD": 1583,
+   "PUBLICATION_HOLD": 2110,
+   "RIGHTS_HOLD": 1208
   },
   "bare_untyped_status_lines": 0
  },
@@ -33,7 +33,7 @@
    "markdown_hold_tokens": 21
   },
   "1_PETER_BOT": {
-   "json_nodes_with_holds": 15,
+   "json_nodes_with_holds": 19,
    "markdown_hold_tokens": 27
   },
   "1_КОРИНФЯНАМ_11": {
@@ -90,7 +90,7 @@
   },
   "docs": {
    "json_nodes_with_holds": 219,
-   "markdown_hold_tokens": 2359
+   "markdown_hold_tokens": 2371
   },
   "БАПТИСТЫ РОССИИ": {
    "json_nodes_with_holds": 0,
@@ -1369,7 +1369,7 @@
    "caveat": "Один и тот же объект может учитываться в двух реестрах корпуса (например, карточка и её снимок в плане), поэтому сумма — верхняя граница."
   },
   "files_with_holds": 35,
-  "nodes_with_holds": 2231
+  "nodes_with_holds": 2235
  },
  "examinedCases": [
   {
