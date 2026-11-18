@@ -1,0 +1,612 @@
+{
+  "schemaVersion": 1,
+  "artifactId": "ARTIFACT-CUSTODY-SNAPSHOT-2026-11-18",
+  "role": "DERIVED_READ_ONLY_NOT_AUTHORITY",
+  "generatedAt": "2026-11-18",
+  "repo": "FedorMilovanov/Research",
+  "method": "gh api repos/<repo>/actions/artifacts по всем страницам; gitleaks-отчёты исключены как шум сканера",
+  "families": [
+    {
+      "family": "ephemeral-second-editorial-40-pdf",
+      "artifacts": 2,
+      "bytes": 2544452839,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "Сборка PDF из внешних источников; перепрогон даёт актуальное состояние источников, а не те же байты. Квитанции на хранение нет.",
+      "workflow": ".github/workflows/build-commons-second-editorial-40-pdf.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": true
+    },
+    {
+      "family": "ephemeral-commons-strict-literary-pdf-40plus",
+      "artifacts": 2,
+      "bytes": 1253265815,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "То же: внешние PDF, перепрогон не воспроизводит прежние байты.",
+      "workflow": ".github/workflows/build-commons-russian-literature-open-pdf-archive.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": true
+    },
+    {
+      "family": "ephemeral-official-core-acquisition-59-v2",
+      "artifacts": 2,
+      "bytes": 1022896773,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "Приобретение официальных цифровых коллекций; на стороне источника объекты меняются.",
+      "workflow": ".github/workflows/official-core-acquisition-40plus.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": true
+    },
+    {
+      "family": "ephemeral-poet-portrait-review-v4",
+      "artifacts": 11,
+      "bytes": 316242407,
+      "firstCreated": "2026-11-01",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-12-01",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "Отобранные портреты для ревью; источник может измениться.",
+      "workflow": ".github/workflows/build-poet-portrait-review-candidates.yml",
+      "retentionDays": 30,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": true
+    },
+    {
+      "family": "ephemeral-ephemera-review-candidates",
+      "artifacts": 11,
+      "bytes": 282489273,
+      "firstCreated": "2026-11-01",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-12-01",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "Кандидаты эфемерид для ревью.",
+      "workflow": ".github/workflows/build-ephemera-review-candidates.yml",
+      "retentionDays": 30,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": true
+    },
+    {
+      "family": "ephemeral-approved-ephemera-originals",
+      "artifacts": 2,
+      "bytes": 213327748,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "Одобренные оригиналы, скачанные из внешнего источника.",
+      "workflow": ".github/workflows/download-approved-ephemera-originals.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": true
+    },
+    {
+      "family": "ephemeral-approved-core-poet-portraits",
+      "artifacts": 2,
+      "bytes": 63239012,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "Одобренные портреты из внешнего источника.",
+      "workflow": ".github/workflows/download-approved-core-poet-portraits.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": true
+    },
+    {
+      "family": "total-cross-repo-source-audit",
+      "artifacts": 16,
+      "bytes": 31206062,
+      "firstCreated": "2026-10-26",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-25",
+      "expired": 0,
+      "branches": [
+        "arena/c5406629-research",
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2",
+        "main"
+      ],
+      "class": "REGENERABLE_AUDIT",
+      "why": "Сводный аудит источников: отчёт о состоянии, а не приобретённый объект.",
+      "workflow": ".github/workflows/total-cross-repo-source-audit.yml",
+      "retentionDays": 30,
+      "declaresEphemeral": false,
+      "declaresNoDurableReceipt": false
+    },
+    {
+      "family": "charnock-custody-v3-research-only",
+      "artifacts": 6,
+      "bytes": 6267303,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-12-17",
+      "expired": 0,
+      "branches": [
+        "charnock/custody-v3-source-snapshot-20261117",
+        "charnock/ed02-custody-authority-20261117",
+        "main"
+      ],
+      "class": "HAS_DURABLE_RECEIPT",
+      "why": "Оба V3-архива имеют квитанцию с Drive ID и SHA-256; сумма сверена с Drive 2026-11-18.",
+      "workflow": ".github/workflows/charnock-custody-snapshot.yml",
+      "retentionDays": 30,
+      "declaresEphemeral": false,
+      "declaresNoDurableReceipt": false
+    },
+    {
+      "family": "1peter-product-handoff",
+      "artifacts": 25,
+      "bytes": 1924600,
+      "firstCreated": "2026-11-01",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-12-01",
+      "expired": 0,
+      "branches": [
+        "arena/576cf1ae-research",
+        "dependabot/github_actions/actions/checkout-7.0.1",
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2",
+        "main"
+      ],
+      "class": "REGENERABLE_AUDIT",
+      "why": "Пакет handoff собирается из файлов репозитория; артефакт — производная сборка.",
+      "workflow": ".github/workflows/1peter-product-handoff-audit.yml",
+      "retentionDays": 30,
+      "declaresEphemeral": false,
+      "declaresNoDurableReceipt": false
+    },
+    {
+      "family": "g3-archive-content-inventory",
+      "artifacts": 2,
+      "bytes": 1693836,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "G3: записи IRS, округов, Wayback-снимки. Wayback и опубликованный IRS XML стабильны, но записи округов и текущие страницы меняются; квитанции на хранение нет.",
+      "workflow": ".github/workflows/g3-archive-content-inventory-acquisition.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": false
+    },
+    {
+      "family": "g3-douglas-property",
+      "artifacts": 2,
+      "bytes": 972884,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "G3: записи IRS, округов, Wayback-снимки. Wayback и опубликованный IRS XML стабильны, но записи округов и текущие страницы меняются; квитанции на хранение нет.",
+      "workflow": ".github/workflows/g3-douglas-property-acquisition.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": false
+    },
+    {
+      "family": "baptist-scan-request-package",
+      "artifacts": 10,
+      "bytes": 596762,
+      "firstCreated": "2026-11-01",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-12-01",
+      "expired": 0,
+      "branches": [
+        "arena/eba7cf2b-research",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2",
+        "main"
+      ],
+      "class": "REGENERABLE_PACKAGE",
+      "why": "Пакет запроса на сканы — заявка, а не сам скан.",
+      "workflow": ".github/workflows/baptist-scan-acquisition.yml",
+      "retentionDays": 30,
+      "declaresEphemeral": false,
+      "declaresNoDurableReceipt": false
+    },
+    {
+      "family": "g3-irs-FY2025",
+      "artifacts": 2,
+      "bytes": 313313,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "G3: записи IRS, округов, Wayback-снимки. Wayback и опубликованный IRS XML стабильны, но записи округов и текущие страницы меняются; квитанции на хранение нет.",
+      "workflow": ".github/workflows/g3-irs-raw-acquisition.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": true
+    },
+    {
+      "family": "g3-irs-FY2024",
+      "artifacts": 2,
+      "bytes": 309732,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "G3: записи IRS, округов, Wayback-снимки. Wayback и опубликованный IRS XML стабильны, но записи округов и текущие страницы меняются; квитанции на хранение нет.",
+      "workflow": ".github/workflows/g3-irs-raw-acquisition.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": true
+    },
+    {
+      "family": "g3-buck-media",
+      "artifacts": 14,
+      "bytes": 277229,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "G3: записи IRS, округов, Wayback-снимки. Wayback и опубликованный IRS XML стабильны, но записи округов и текущие страницы меняются; квитанции на хранение нет.",
+      "workflow": ".github/workflows/g3-buck-media-windows.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": false,
+      "declaresNoDurableReceipt": false
+    },
+    {
+      "family": "g3-irs-FY2023",
+      "artifacts": 2,
+      "bytes": 241083,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "G3: записи IRS, округов, Wayback-снимки. Wayback и опубликованный IRS XML стабильны, но записи округов и текущие страницы меняются; квитанции на хранение нет.",
+      "workflow": ".github/workflows/g3-irs-raw-acquisition.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": true
+    },
+    {
+      "family": "g3-wayback-late-board",
+      "artifacts": 2,
+      "bytes": 219732,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "G3: записи IRS, округов, Wayback-снимки. Wayback и опубликованный IRS XML стабильны, но записи округов и текущие страницы меняются; квитанции на хранение нет.",
+      "workflow": ".github/workflows/g3-wayback-2025-board-transition.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": true
+    },
+    {
+      "family": "g3-irs-FY2022_LATER",
+      "artifacts": 2,
+      "bytes": 210678,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "G3: записи IRS, округов, Wayback-снимки. Wayback и опубликованный IRS XML стабильны, но записи округов и текущие страницы меняются; квитанции на хранение нет.",
+      "workflow": ".github/workflows/g3-irs-raw-acquisition.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": true
+    },
+    {
+      "family": "baptist-proof-ledger-v2-canonical-view",
+      "artifacts": 10,
+      "bytes": 204764,
+      "firstCreated": "2026-11-01",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-12-01",
+      "expired": 0,
+      "branches": [
+        "arena/eba7cf2b-research",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2",
+        "main"
+      ],
+      "class": "REGENERABLE_VIEW",
+      "why": "Канонический вид строится из реестра в репозитории.",
+      "workflow": ".github/workflows/baptist-proof-ledger-v2.yml",
+      "retentionDays": 30,
+      "declaresEphemeral": false,
+      "declaresNoDurableReceipt": false
+    },
+    {
+      "family": "official-digital-collections-link-audit",
+      "artifacts": 15,
+      "bytes": 138005,
+      "firstCreated": "2026-10-21",
+      "lastCreated": "2026-11-18",
+      "earliestExpiry": "2026-11-20",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2",
+        "main"
+      ],
+      "class": "REGENERABLE_AUDIT",
+      "why": "Проверка ссылок: результат — отчёт о состоянии URL на момент прогона. Перепрогон даёт новый отчёт, но исходные объекты не теряются.",
+      "workflow": ".github/workflows/audit-official-digital-collections-links.yml",
+      "retentionDays": 30,
+      "declaresEphemeral": false,
+      "declaresNoDurableReceipt": false
+    },
+    {
+      "family": "g3-georgia-entity",
+      "artifacts": 2,
+      "bytes": 137035,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "G3: записи IRS, округов, Wayback-снимки. Wayback и опубликованный IRS XML стабильны, но записи округов и текущие страницы меняются; квитанции на хранение нет.",
+      "workflow": ".github/workflows/g3-georgia-entity-acquisition.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": true
+    },
+    {
+      "family": "google-drive-upload-46-link-audit",
+      "artifacts": 16,
+      "bytes": 103135,
+      "firstCreated": "2026-10-20",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-19",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2",
+        "main"
+      ],
+      "class": "REGENERABLE_AUDIT",
+      "why": "Проверка ссылок: результат — отчёт о состоянии URL на момент прогона. Перепрогон даёт новый отчёт, но исходные объекты не теряются.",
+      "workflow": ".github/workflows/audit-google-drive-upload-links.yml",
+      "retentionDays": 30,
+      "declaresEphemeral": false,
+      "declaresNoDurableReceipt": false
+    },
+    {
+      "family": "g3-buck-titus-media-evidence",
+      "artifacts": 2,
+      "bytes": 38646,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "G3: записи IRS, округов, Wayback-снимки. Wayback и опубликованный IRS XML стабильны, но записи округов и текущие страницы меняются; квитанции на хранение нет.",
+      "workflow": ".github/workflows/g3-buck-media-windows.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": false,
+      "declaresNoDurableReceipt": false
+    },
+    {
+      "family": "g3-wayback-2025-board",
+      "artifacts": 2,
+      "bytes": 18190,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "G3: записи IRS, округов, Wayback-снимки. Wayback и опубликованный IRS XML стабильны, но записи округов и текущие страницы меняются; квитанции на хранение нет.",
+      "workflow": ".github/workflows/g3-wayback-2025-board-transition.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": true,
+      "declaresNoDurableReceipt": true
+    },
+    {
+      "family": "g3-buck-rss-media-inventory",
+      "artifacts": 2,
+      "bytes": 13087,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "G3: записи IRS, округов, Wayback-снимки. Wayback и опубликованный IRS XML стабильны, но записи округов и текущие страницы меняются; квитанции на хранение нет.",
+      "workflow": ".github/workflows/g3-buck-media-windows.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": false,
+      "declaresNoDurableReceipt": false
+    },
+    {
+      "family": "g3-content-inventory",
+      "artifacts": 2,
+      "bytes": 3480,
+      "firstCreated": "2026-11-17",
+      "lastCreated": "2026-11-17",
+      "earliestExpiry": "2026-11-24",
+      "expired": 0,
+      "branches": [
+        "dependabot/github_actions/actions/setup-python-7.1.0",
+        "dependabot/github_actions/actions/upload-artifact-7.0.2"
+      ],
+      "class": "NON_DETERMINISTIC_ACQUISITION",
+      "why": "G3: записи IRS, округов, Wayback-снимки. Wayback и опубликованный IRS XML стабильны, но записи округов и текущие страницы меняются; квитанции на хранение нет.",
+      "workflow": ".github/workflows/g3-content-inventory-acquisition.yml",
+      "retentionDays": 7,
+      "declaresEphemeral": false,
+      "declaresNoDurableReceipt": false
+    }
+  ],
+  "totals": {
+    "artifacts": 168,
+    "bytes": 5740803423,
+    "expired": 0,
+    "families": 27,
+    "byClass": {
+      "NON_DETERMINISTIC_ACQUISITION": 70,
+      "REGENERABLE_AUDIT": 72,
+      "HAS_DURABLE_RECEIPT": 6,
+      "REGENERABLE_PACKAGE": 10,
+      "REGENERABLE_VIEW": 10
+    },
+    "bytesByClass": {
+      "NON_DETERMINISTIC_ACQUISITION": 5700362792,
+      "REGENERABLE_AUDIT": 33371802,
+      "HAS_DURABLE_RECEIPT": 6267303,
+      "REGENERABLE_PACKAGE": 596762,
+      "REGENERABLE_VIEW": 204764
+    }
+  },
+  "deadlines": {
+    "2026-11-19": {
+      "bytes": 103135,
+      "families": [
+        "google-drive-upload-46-link-audit"
+      ]
+    },
+    "2026-11-20": {
+      "bytes": 138005,
+      "families": [
+        "official-digital-collections-link-audit"
+      ]
+    },
+    "2026-11-24": {
+      "bytes": 5101631112,
+      "families": [
+        "ephemeral-approved-core-poet-portraits",
+        "ephemeral-approved-ephemera-originals",
+        "ephemeral-commons-strict-literary-pdf-40plus",
+        "ephemeral-official-core-acquisition-59-v2",
+        "ephemeral-second-editorial-40-pdf",
+        "g3-archive-content-inventory",
+        "g3-buck-media",
+        "g3-buck-rss-media-inventory",
+        "g3-buck-titus-media-evidence",
+        "g3-content-inventory",
+        "g3-douglas-property",
+        "g3-georgia-entity",
+        "g3-irs-FY2022_LATER",
+        "g3-irs-FY2023",
+        "g3-irs-FY2024",
+        "g3-irs-FY2025",
+        "g3-wayback-2025-board",
+        "g3-wayback-late-board"
+      ]
+    },
+    "2026-11-25": {
+      "bytes": 31206062,
+      "families": [
+        "total-cross-repo-source-audit"
+      ]
+    },
+    "2026-12-01": {
+      "bytes": 601457806,
+      "families": [
+        "1peter-product-handoff",
+        "baptist-proof-ledger-v2-canonical-view",
+        "baptist-scan-request-package",
+        "ephemeral-ephemera-review-candidates",
+        "ephemeral-poet-portrait-review-v4"
+      ]
+    },
+    "2026-12-17": {
+      "bytes": 6267303,
+      "families": [
+        "charnock-custody-v3-research-only"
+      ]
+    }
+  }
+}
