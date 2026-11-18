@@ -483,8 +483,302 @@
         "domain": false
       },
       {
+        "kind": "shard",
+        "family": "commons",
+        "id": "1JcpOMbKwNPWl0KaXQldKP74NgopPwYsJ",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "commons",
+        "id": "13k_0dAsEktbR_wB_DjHqapgQX4svc7dd",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "commons",
+        "id": "1VKlMMB2bMTFqkplVqx4k1WWUwmrEyD7v",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "commons",
+        "id": "1NyDYYVSuPxk-5jjvuPb59SYLK5qPqSdG",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "commons",
+        "id": "1ybgXXoI2Txfwk37Hl7jP2SfIkp8DwJA4",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "commons",
+        "id": "16YwcXyvR0iGfUpq4PSSDeaN9l5UWVaBZ",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "commons",
+        "id": "1ErA3Xo8IGfWr42K-rOcGEOlUZwfaavoL",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "commons",
+        "id": "1qnTCG2WCTQXqogN5QYzula2rn4h3rl81",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "commons",
+        "id": "1s45tVKvZMKFJyDzY_5brSm08AfFSWWG_",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "second-editorial",
+        "id": "1cLg23XvpSxTuJXG14pwsxHACmbbqrah4",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "second-editorial",
+        "id": "1fDuFrAOklfmazeC1wvkuIFN_HiuojybM",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "second-editorial",
+        "id": "14QR3UlghkWlXABp52feO1Dkpzy_2NYIu",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "second-editorial",
+        "id": "1DRavSKBH34HABvRLrovlampMZWTwDwqW",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "portraits",
+        "id": "1p74lMCCL-4jBUoJAkTIMwlNc-Z44o29p",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "portraits",
+        "id": "1npjCwiSvNAGv_uNB7gYmn4Q2TTj-dvRb",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "portraits",
+        "id": "1TUIiE80Kuv0VIzeTGsTYwSYk8hUHfv4b",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "ephemera",
+        "id": "14DsRdBd3zvEvR9JiF_2yAOL-agZfE7GU",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "ephemera",
+        "id": "1yi5Vzi7DbTFVhJ5IaIAmTsXjDvFdm72C",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "ephemera",
+        "id": "1fVWuckOkgxHRTmdxyLqvfSJR35mjkRsi",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "ephemera",
+        "id": "1-JY6zCDgDp0I38oqXLZaQCbEfL20wef-",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "shard",
+        "family": "ephemera",
+        "id": "13JOBCx_Pu5FfIPOshYYEOMPBkPCRQndl",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
         "kind": "file",
-        "label": "OFFICIAL CORE ACQUISITION 59 — STATUS & GAPS",
+        "label": "OFFICIAL CORE ACQUISITION 59 — STATUS & GAPS (Google Doc)",
         "id": "1zIOOcYUrOfNf1liH7-XDn_JjtE0E5auejyqeAp5q9A8",
         "permissions": [
           {
@@ -509,57 +803,27 @@
         ],
         "anyone": false,
         "domain": false
-      },
-      {
-        "kind": "file",
-        "label": "портреты, шард 01 — ESENIN BUNIN SEVERYANIN.zip",
-        "id": "1p74lMCCL-4jBUoJAkTIMwlNc-Z44o29p",
-        "permissions": [
-          {
-            "type": "user",
-            "role": "owner",
-            "email": "oldpoet2025@gmail.com"
-          }
-        ],
-        "anyone": false,
-        "domain": false
-      },
-      {
-        "kind": "file",
-        "label": "эфемериды, шард 01 — ORIGINALS 01-16.zip",
-        "id": "14DsRdBd3zvEvR9JiF_2yAOL-agZfE7GU",
-        "permissions": [
-          {
-            "type": "user",
-            "role": "owner",
-            "email": "oldpoet2025@gmail.com"
-          }
-        ],
-        "anyone": false,
-        "domain": false
-      },
-      {
-        "kind": "file",
-        "label": "второй редакционный, шард 01-10",
-        "id": "1cLg23XvpSxTuJXG14pwsxHACmbbqrah4",
-        "permissions": [
-          {
-            "type": "user",
-            "role": "owner",
-            "email": "oldpoet2025@gmail.com"
-          }
-        ],
-        "anyone": false,
-        "domain": false
       }
     ],
-    "summary": "12 объектов, у каждого ровно одно разрешение — владелец; ни одного anyone, ни одного domain, ни одного дополнительного пользователя.",
+    "counts": {
+      "folders": 7,
+      "shards": 21,
+      "otherFiles": 2,
+      "total": 30,
+      "shardsByFamily": {
+        "commons": 9,
+        "second-editorial": 4,
+        "portraits": 3,
+        "ephemera": 5
+      }
+    },
+    "summary": "30 объектов, у каждого ровно одно разрешение — владелец; ни одного anyone, ни одного domain, ни одного второго пользователя. Проверены ВСЕ 21 шард четырёх семейств, то есть все сохранённые байты этих семейств: PDF лежат внутри zip, отдельными объектами Drive не являются.",
     "limits": [
-      "Это выборка, а не перепись: проверены 9 папок и 3 шарда из 21 файла четырёх семей.",
-      "Дочерние объекты наследуют доступ папки, но могут быть расшарены отдельно; проверка трёх шардов не гарантирует, что остальные 18 не расшарены.",
-      "Владелец — потребительский аккаунт Gmail, поэтому domain-разрешений в этом наборе быть не может по определению; проверить это как отсутствие заслуги нельзя.",
-      "Полная проверка — 21 вызов list_permissions по числу файлов; здесь 3.",
-      "Открытость источника (DBNL, archive.org) и открытость нашего хранилища — разные вещи; эта запись только про наше."
+      "Проверены шарды, папки и два манифеста. Не проверены три контрольных файла в папке commons: список проверки sha256, ORIGINAL MANIFEST и PROCESSED CONTROL PACKAGE.",
+      "Остальные области Drive (архив РБА, ИСКУПЛЕНИЕ и прочие) не проверялись вовсе.",
+      "Владелец — потребительский аккаунт Gmail: domain-разрешений здесь не может быть по определению, их отсутствие ничего не доказывает.",
+      "Права доступа могут измениться в любой момент после этой проверки; значения сняты 2026-11-18.",
+      "Открытость источника (DBNL, archive.org) и открытость нашего хранилища — разные вещи; запись только про наше хранилище."
     ]
   }
 }
