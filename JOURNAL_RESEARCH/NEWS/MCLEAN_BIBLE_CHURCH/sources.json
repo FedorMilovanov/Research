@@ -1,6 +1,6 @@
 {
   "caseId": "JR-MBC-2026",
-  "version": 3,
+  "version": 5,
   "reviewedAt": "2026-11-18",
   "corpus": "JOURNAL_RESEARCH/NEWS/MCLEAN_BIBLE_CHURCH",
   "evidencePolicy": "data/repository-evidence-policy-v2.json",
@@ -59,20 +59,22 @@
     },
     {
       "sourceId": "JR-MBC-004",
-      "title": "McLean Bible Church — FAQ",
+      "title": "MBC: Frequently Asked Questions (published revision date 13 Aug 2021)",
       "url": "https://mcleanbible.org/faq/",
       "evidenceClass": "A3",
       "accessState": "PARTIAL_OBJECT",
-      "locatorState": "COARSE_LOCATOR_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
-      "locator": "MBC FAQ as currently hosted: church government, elders, SBC — revision history not established",
-      "provesOnly": "MBC's own current explanation; preserve revision-date uncertainty",
+      "locator": "FAQ updated 13 Aug 2021, section 1 'Has MBC's relationship with SBC changed since 2016?', first two paragraphs",
+      "provesOnly": "Church's public explanation states initial elders motion 23 Mar 2016, support suspended June 2021, elders decided to end agreement 9 Aug 2021; first-party narrative, not signed 2016 minutes",
       "holds": [
         "PUBLICATION_HOLD",
         "EVIDENCE_HOLD",
-        "LOCATOR_HOLD",
         "RIGHTS_HOLD"
+      ],
+      "mergedFormerSourceIds": [
+        "JR-MBC-023"
       ]
     },
     {
@@ -322,20 +324,22 @@
     },
     {
       "sourceId": "JR-MBC-019",
-      "title": "MBC — official legal update (prior chronology)",
+      "title": "MBC elders' official 'Legal Update': partnership, audit assertions, and source exhibits",
       "url": "https://mcleanbible.org/legalupdate/",
       "evidenceClass": "A3",
       "accessState": "PARTIAL_OBJECT",
-      "locatorState": "COARSE_LOCATOR_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
-      "locator": "Prior church updates; page revision date to verify",
-      "provesOnly": "MBC's claims and legal positions; cannot stand in for current November response",
+      "locator": "Seven numbered MBC findings, especially #1, #4, #5, #6 and exhibits linked 17–39; date on page to verify, context post-2023",
+      "provesOnly": "MBC acknowledges terminology/implementation confusion and asserts financial flows survived independent audit; auditor reports themselves not supplied by this statement",
       "holds": [
         "PUBLICATION_HOLD",
         "EVIDENCE_HOLD",
-        "LOCATOR_HOLD",
         "RIGHTS_HOLD"
+      ],
+      "mergedFormerSourceIds": [
+        "JR-MBC-029"
       ]
     },
     {
@@ -385,23 +389,6 @@
       "provesOnly": "Board chair formally informed SBC of unanimous vote to withdraw from 2016 cooperation; letter proves communication and institutional position, not independent verification of all practical downstream terminations",
       "holds": [
         "PUBLICATION_HOLD",
-        "RIGHTS_HOLD"
-      ]
-    },
-    {
-      "sourceId": "JR-MBC-023",
-      "title": "MBC: Frequently Asked Questions (published revision date 13 Aug 2021)",
-      "url": "https://mcleanbible.org/faq/",
-      "evidenceClass": "A3",
-      "accessState": "PARTIAL_OBJECT",
-      "locatorState": "EXACT_LOCATOR_VERIFIED",
-      "rightsState": "RIGHTS_UNKNOWN",
-      "publicationState": "REFERENCE",
-      "locator": "FAQ updated 13 Aug 2021, section 1 'Has MBC's relationship with SBC changed since 2016?', first two paragraphs",
-      "provesOnly": "Church's public explanation states initial elders motion 23 Mar 2016, support suspended June 2021, elders decided to end agreement 9 Aug 2021; first-party narrative, not signed 2016 minutes",
-      "holds": [
-        "PUBLICATION_HOLD",
-        "EVIDENCE_HOLD",
         "RIGHTS_HOLD"
       ]
     },
@@ -491,23 +478,6 @@
       ]
     },
     {
-      "sourceId": "JR-MBC-029",
-      "title": "MBC elders' official 'Legal Update': partnership, audit assertions, and source exhibits",
-      "url": "https://mcleanbible.org/legalupdate/",
-      "evidenceClass": "A3",
-      "accessState": "PARTIAL_OBJECT",
-      "locatorState": "EXACT_LOCATOR_VERIFIED",
-      "rightsState": "RIGHTS_UNKNOWN",
-      "publicationState": "REFERENCE",
-      "locator": "Seven numbered MBC findings, especially #1, #4, #5, #6 and exhibits linked 17–39; date on page to verify, context post-2023",
-      "provesOnly": "MBC acknowledges terminology/implementation confusion and asserts financial flows survived independent audit; auditor reports themselves not supplied by this statement",
-      "holds": [
-        "PUBLICATION_HOLD",
-        "EVIDENCE_HOLD",
-        "RIGHTS_HOLD"
-      ]
-    },
-    {
       "sourceId": "JR-MBC-030",
       "title": "Historical pre-2023 MBC constitution scan (provenance subject to review)",
       "url": "https://static1.squarespace.com/static/65d7a10086d588109eb3c279/t/65ef9ab84c9da064d14794a9/1710201529920/MBC_000642_Constitution.pdf",
@@ -522,6 +492,56 @@
         "PUBLICATION_HOLD",
         "EVIDENCE_HOLD",
         "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-031",
+      "title": "MBC trustees' undated and unsigned proposed letter to SBC Executive Committee",
+      "url": "https://mcleanbible.org/legalupdate3",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "One scanned page, no date and no executed signatures; entire PDF page visually inspected",
+      "provesOnly": "A draft requests partnership with national SBC, says no desire at THAT time to formalize state-convention/local-association partnership, mentions Cooperative Program and financial contributions; blank signature lines do not establish dispatch or acceptance",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-032",
+      "title": "New City Network incorporation and bylaws PDF (MBC-hosted collection)",
+      "url": "https://mcleanbible.org/legalupdate4",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "24-page combined file; PDF pp.0 and 6, 15–16 and 20 images inspected; bylaws printed pp.10, 11, 15; selected clauses independently extracted, exact adoption not certified",
+      "provesOnly": "NCN is integrated auxiliary of MBC. NCN's official affiliation and oversight sit with MBC, whose elders can remove NCN directors, control important transfers, receive financial reports and resolve bylaws disputes. Does not establish that SBC controls MBC. Full version, signed adoption, and later amendments not independently proved",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "EVIDENCE_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-033",
+      "title": "MBC–New City Network MOU Support Services Addendum effective 2017",
+      "url": "https://mcleanbible.org/legalupdate5",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "7-page PDF, title page, pp.3–4 and signature/approval p.7 inspected; document updated 16 May 2016, effective calendar 2017, NCN approved 21 May 2017, MBC approved 24 May 2017",
+      "provesOnly": "MBC handles bank accounts, general ledger, payroll, monthly reporting and annual audit preparation for NCN; NCN approves its own disbursements and reimburses direct costs and services. Not the same as the missing March 2016 SBC Attachment 9 or Attachment 10, and not a direct SBC–MBC control agreement",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "EVIDENCE_HOLD"
       ]
     }
   ]
