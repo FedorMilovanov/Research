@@ -713,7 +713,7 @@ The Greek lane is registered in the same file as the Dutch one because it is the
 - URL: https://www.pravenc.ru/text/2662040.html
 - Evidence class: B1 · Access: FULL_OBJECT_VERIFIED · Locator: EXACT_LOCATOR_VERIFIED · Rights: PERMISSION_REQUIRED · Publication: REFERENCE · HOLDs: RIGHTS_HOLD, ARCHIVE_HOLD
 - Supports: the hymn's fixed place in all post-iconoclast Byzantine monastic Vespers and its absence from the Hagia Sophia rite; its presence in the earliest Palestinian Horologia; the Sophronius ascription and why it is probably wrong (P. Lond. 2037B, 6th–7th c.); Basil, *De Spiritu Sancto* 73, as the earliest testimony, with the Trinitarian formula; the Athenogenes conflation; the three-part structure; the Φῶς ἀγαθόν parallel in Varro.
-- Limits: a secondary encyclopaedia article, not an edition. It does **not** ascribe the hymn to the *Apostolic Constitutions* — which is why that claim is under `EVIDENCE_HOLD`.
+- Limits: a secondary encyclopaedia article, not an edition. It does not ascribe the hymn to the *Apostolic Constitutions*, but its silence is not an independent negative check of that text. Scope corrected 2026-11-18: the former reference here to an open `EVIDENCE_HOLD` is not the current status of `CLM-PHOS-AC-CHECKED`; that narrow finding rests on the separately read English passages VII.47–49 and VIII.34–37, not on this article's omission.
 
 ### SRC-PHOS-BASIL-DSS — Basil of Caesarea, De Spiritu Sancto 29.73 — Blomfield Jackson, NPNF2 8 (1895), веб-редакция New Advent
 
