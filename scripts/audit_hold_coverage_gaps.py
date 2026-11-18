@@ -6,12 +6,19 @@
 `PARTIAL_OBJECT` / `CATALOG_ONLY` / `LINK_ONLY` / `NOT_ACQUIRED`, а массив
 `holds` пуст. Такая запись выглядит полностью обеспеченной, хотя объекта нет.
 
+Второй режим (`--promotion-gaps`) ищет обратную ошибку: запись продвигается в
+публикацию (`publicationState = PROMOTE`) при том, что объект не приобретён
+полностью или сама запись объявляет пробел в `limits` («not collated»,
+«not verified», «не сличалось»). Так выглядит `SRC-PHOS-BASIL-DSS`: `PROMOTE`,
+`holds: []`, а в `limits` написано, что греческий текст не сличался.
+
 Скрипт ничего не правит: он только считает и раскладывает по файлам. Решение о
 том, какой HOLD уместен, — за владельцем, потому что неверно выставленный HOLD
 расщепляет источник так же, как правка `holds` без правки прозы.
 
     python3 scripts/audit_hold_coverage_gaps.py
     python3 scripts/audit_hold_coverage_gaps.py --summary
+    python3 scripts/audit_hold_coverage_gaps.py --promotion-gaps
 """
 
 from __future__ import annotations
@@ -25,6 +32,20 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 SKIP_DIRS = {".git", "node_modules", "__pycache__", ".github", "docs/research/holds"}
 
 NOT_FULL = {"PARTIAL_OBJECT", "CATALOG_ONLY", "LINK_ONLY", "NOT_ACQUIRED"}
+
+# Формулировки, которыми запись сама объявляет, что доказательство неполно.
+GAP_MARKERS = (
+    "not collated",
+    "not verified",
+    "not checked",
+    "not inspected",
+    "not read",
+    "unverified",
+    "not confirmed",
+    "не сличал",
+    "не сверял",
+    "не проверял",
+)
 ACCESS_KEYS = ("accessState", "access_state")
 HOLD_KEYS = ("holds", "hold", "activeHolds", "active_holds")
 
@@ -89,6 +110,68 @@ def walk(node, path: str, out: list[dict], parent_id: str | None = None) -> None
             walk(value, path, out, parent_id)
 
 
+def limit_text(node: dict) -> str:
+    parts = []
+    for key in ("limits", "limit", "caveats", "qualifiers", "notes"):
+        value = node.get(key)
+        if isinstance(value, str):
+            parts.append(value)
+        elif isinstance(value, list):
+            parts.extend(str(v) for v in value if isinstance(v, (str, int, float)))
+    return " ".join(parts).lower()
+
+
+def build_promotion_gaps() -> list[dict]:
+    """Записи, продвигаемые в публикацию при объявленном пробеле в доказательствах."""
+    rows: list[dict] = []
+    for path in iter_json():
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, UnicodeDecodeError):
+            continue
+        rel = str(path.relative_to(ROOT))
+
+        def walk_pg(node, parent_id: str | None) -> None:
+            if isinstance(node, dict):
+                pub = str(
+                    node.get("publicationState") or node.get("publication_state") or ""
+                ).strip().upper()
+                if pub == "PROMOTE":
+                    access = next(
+                        (
+                            str(node[k]).strip().upper()
+                            for k in ACCESS_KEYS
+                            if isinstance(node.get(k), str)
+                        ),
+                        "",
+                    )
+                    text = limit_text(node)
+                    markers = sorted({m for m in GAP_MARKERS if m in text})
+                    if access in NOT_FULL or markers:
+                        rows.append(
+                            {
+                                "path": rel,
+                                "id": str(
+                                    node.get("id")
+                                    or node.get("source_id")
+                                    or parent_id
+                                    or "(без id)"
+                                ),
+                                "accessState": access,
+                                "holds": sorted(holds_of(node) or []),
+                                "gapMarkers": markers,
+                            }
+                        )
+                for key, value in node.items():
+                    walk_pg(value, node.get("id") or parent_id)
+            elif isinstance(node, list):
+                for value in node:
+                    walk_pg(value, parent_id)
+
+        walk_pg(data, None)
+    return rows
+
+
 def build() -> dict:
     rows: list[dict] = []
     unreadable: list[str] = []
@@ -115,6 +198,18 @@ def build() -> dict:
 
 
 def main(argv: list[str]) -> int:
+    if "--promotion-gaps" in argv:
+        gaps = build_promotion_gaps()
+        print(f"Записей PROMOTE с объявленным пробелом в доказательствах: {len(gaps)}")
+        for row in gaps:
+            marks = ", ".join(row["gapMarkers"]) or "—"
+            holds = ", ".join(row["holds"]) or "нет"
+            print(
+                f"  {row['path']} | {row['id']} | access={row['accessState'] or '-'} | "
+                f"holds={holds} | маркеры: {marks}"
+            )
+        return 0
+
     result = build()
     rows = result["rows"]
     print(f"Записей «объект не приобретён, HOLD не выставлен»: {len(rows)}")
