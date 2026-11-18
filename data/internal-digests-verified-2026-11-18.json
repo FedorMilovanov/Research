@@ -12785,5 +12785,13 @@
       "state": "unclaimed",
       "paths": []
     }
-  ]
+  ],
+  "jsonRecords": {
+    "records": 2329,
+    "byState": {
+      "external": 421,
+      "match": 58,
+      "stale": 1850
+    }
+  }
 }

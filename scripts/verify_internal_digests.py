@@ -240,6 +240,71 @@ def verify(root: Path, skip_lines: int = 0) -> dict:
     }
 
 
+PATHY_RE = re.compile(r"^[^\n]{1,160}\.(?:md|json|txt|csv|zip|pdf|py|xml|tei|png|jpg|jpeg)$")
+
+
+def iter_json(root: Path) -> list[Path]:
+    out = []
+    for path in sorted(root.rglob("*.json")):
+        rel = path.relative_to(root).as_posix()
+        if rel.startswith(SKIP_DIRS) or rel.startswith("incoming/"):
+            continue
+        out.append(path)
+    return out
+
+
+def verify_json(root: Path) -> dict:
+    """Check machine registries that pair one digest with one path in one object.
+
+    A JSON record such as ``{"path": "data/x.json", "sha256": "…"}`` claims the
+    bytes of a file inside the checkout. The pairing is only accepted when the
+    object holds exactly one digest and exactly one path-like string; anything
+    looser is not paired, because guessing which hash belongs to which file would
+    manufacture a claim the record never made.
+    """
+    findings = []
+    by_state: dict[str, int] = {}
+    for path in iter_json(root):
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, UnicodeDecodeError, json.JSONDecodeError):
+            continue
+        rel = path.relative_to(root).as_posix()
+
+        def walk(node: object) -> None:
+            if isinstance(node, dict):
+                digests = [v for v in node.values() if isinstance(v, str) and HEX_RE.fullmatch(v)]
+                paths = [v for v in node.values() if isinstance(v, str) and PATHY_RE.match(v)]
+                if len(digests) == 1 and len(paths) == 1:
+                    candidate = paths[0]
+                    resolved = None
+                    try:
+                        maybe = (root / candidate).resolve()
+                        maybe.relative_to(root)
+                        resolved = maybe if maybe.is_file() else None
+                    except (OSError, ValueError):
+                        resolved = None
+                    if resolved is None:
+                        state = "external"
+                    else:
+                        state = "match" if sha256_of(resolved) == digests[0] else "stale"
+                    by_state[state] = by_state.get(state, 0) + 1
+                    findings.append({
+                        "file": rel, "sha256": digests[0], "path": candidate, "state": state,
+                    })
+                for value in node.values():
+                    walk(value)
+            elif isinstance(node, list):
+                for value in node:
+                    walk(value)
+
+        walk(data)
+    return {
+        "totals": {"records": len(findings), "byState": by_state},
+        "findings": findings,
+    }
+
+
 def summary(report: dict) -> str:
     totals = report["totals"]
     states = totals["byState"]
@@ -262,9 +327,25 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--check", action="store_true",
                         help="exit 1 when a live document's claim no longer matches the bytes")
     parser.add_argument("--only", choices=("stale", "external", "external-drive", "unclaimed", "ambiguous", "match"))
+    parser.add_argument("--json-mode", action="store_true", help="check JSON records instead of Markdown lines")
+    parser.add_argument("--no-json", action="store_true", help="skip the JSON pass in the report")
     args = parser.parse_args(argv)
     root = Path(args.root).resolve()
+    if args.json_mode:
+        payload = verify_json(root)
+        states = payload["totals"]["byState"]
+        print("JSON records: " + ", ".join(f"{k}={v}" for k, v in sorted(states.items())))
+        for finding in payload["findings"]:
+            if args.only and finding["state"] != args.only:
+                continue
+            print(f"  {finding['state']:9s} {finding['file']} {finding['sha256'][:12]}… -> {finding['path']}")
+        if args.check and states.get("stale"):
+            return 1
+        return 0
+
     report = verify(root)
+    if not args.no_json:
+        report["jsonRecords"] = verify_json(root)["totals"]
     if args.only:
         report["findings"] = [f for f in report["findings"] if f["state"] == args.only]
     if args.output:

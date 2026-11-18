@@ -115,6 +115,34 @@ class SourceKindTests(unittest.TestCase):
         self.assertEqual(vid.source_kind("docs/research/HOLDS_REGISTER_2026-11-18.md"), "live-document")
 
 
+class JsonRecordTests(unittest.TestCase):
+    """Machine registries pair one digest with one path; looser shapes claim nothing."""
+
+    def setUp(self) -> None:
+        self.fx = Fixture()
+        self.fx.write("data/target.json", '{"a": 1}\n')
+        self.digest = self.fx.digest("data/target.json")
+
+    def tearDown(self) -> None:
+        self.fx.close()
+
+    def _states(self, payload: dict) -> list[str]:
+        self.fx.write("data/registry.json", __import__("json").dumps(payload))
+        return [f["state"] for f in vid.verify_json(self.fx.root)["findings"]]
+
+    def test_matching_record(self) -> None:
+        self.assertEqual(self._states({"path": "data/target.json", "sha256": self.digest}), ["match"])
+
+    def test_record_of_earlier_bytes(self) -> None:
+        self.assertEqual(self._states({"path": "data/target.json", "sha256": "0" * 64}), ["stale"])
+
+    def test_path_outside_the_checkout(self) -> None:
+        self.assertEqual(self._states({"path": "gone/file.pdf", "sha256": self.digest}), ["external"])
+
+    def test_two_digests_are_not_paired(self) -> None:
+        self.assertEqual(self._states({"path": "data/target.json", "sha256": self.digest, "other": "1" * 64}), [])
+
+
 class CheckTests(unittest.TestCase):
     def setUp(self) -> None:
         self.fx = Fixture()

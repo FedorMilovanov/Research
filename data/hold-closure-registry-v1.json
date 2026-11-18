@@ -234,12 +234,13 @@
         "СЕРИЯ СЕРДЦЕ/V70_SINGLE_ZIP_MANIFEST.md — 21 подпись совпала",
         "СЕРИЯ СЕРДЦЕ/V69_SINGLE_ZIP_MANIFEST.md — 19 совпало",
         "СЕРИЯ СЕРДЦЕ/V68_SINGLE_ZIP_MANIFEST.md — 17 совпало",
-        "778 подписей относятся к объектам Drive, 248 — к файлам вне дерева, 419 стоят без пути"
+        "778 подписей относятся к объектам Drive, 248 — к файлам вне дерева, 419 стоят без пути",
+        "2 329 записей в JSON-реестрах: 1 850 из них описывают прошлое состояние файла, поэтому машинный реестр нельзя читать как текущую сверку"
       ],
       "verification": {
         "command": "python3 -B scripts/verify_internal_digests.py --summary",
-        "expect": "1 537 подписей: match=58, stale=27 (round-manifest=21, handoff=6), 0 в живых документах; external=248, external-drive=778, ambiguous=7, unclaimed=419",
-        "tests": "python3 -B -m unittest discover -s scripts -p 'test_verify_internal_digests.py' → 15 OK",
+        "expect": "Markdown: 1 537 подписей, match=58, stale=27 (round-manifest=21, handoff=6), 0 в живых документах, external=248, external-drive=778, ambiguous=7, unclaimed=419. JSON: 2 329 записей, 1 908 о файлах в дереве (58 совпало, 1 850 описывают прошлое состояние), 421 о файлах вне дерева; JSON-проход не гейтится",
+        "tests": "python3 -B -m unittest discover -s scripts -p 'test_verify_internal_digests.py' → 19 OK",
         "ci": ".github/workflows/holds-inventory.yml, шаг «Reject stale digests in live documents»"
       },
       "limits": [
