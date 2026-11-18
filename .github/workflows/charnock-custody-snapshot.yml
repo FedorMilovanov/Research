@@ -1,0 +1,52 @@
+name: Charnock custody v3 — research-only source snapshot
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/charnock-custody-snapshot.yml'
+      - 'scripts/build_charnock_custody_candidate.py'
+      - 'scripts/test_build_charnock_custody_candidate.py'
+      - 'data/charnock-custody-manifest-v2.json'
+      - 'БИОГРАФИИ/Стивен Чарнок/00_README_AND_NAVIGATION.md'
+      - 'БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/charnock-custody-snapshot.yml'
+      - 'scripts/build_charnock_custody_candidate.py'
+      - 'scripts/test_build_charnock_custody_candidate.py'
+      - 'БИОГРАФИИ/Стивен Чарнок/00_README_AND_NAVIGATION.md'
+      - 'БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - name: Check out exact Git revision
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Prove v3 source-byte boundaries with synthetic tests
+        run: python3 -m unittest discover -s scripts -p 'test_build_charnock_custody_candidate.py' -v
+      - name: Create reproducible current-source candidate without Drive writes
+        shell: bash
+        run: |
+          set -euo pipefail
+          repo_sha="$(git rev-parse HEAD)"
+          python3 scripts/build_charnock_custody_candidate.py \
+            --root . --git-sha "$repo_sha" --out-dir /tmp/charnock-custody
+          sha256sum /tmp/charnock-custody/*.zip
+          git diff --exit-code
+          test -z "$(git status --porcelain)"
+      - name: Retain unapproved source ZIP and independent SHA request
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: charnock-custody-v3-research-only
+          path: /tmp/charnock-custody/
+          retention-days: 30
+          if-no-files-found: error
