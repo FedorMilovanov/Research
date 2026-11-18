@@ -173,6 +173,10 @@
   - **Ответ статьи** не задевает форму с неизбежным применением («the Holy Spirit would invariably bring them to faith») — `MISIDENTIFIED_TARGET` распространён на сн. 70.
   - Бёттнер признаёт достаточность для всех («amply sufficient»), а оставление — «for their willing continuance in sin».
   - Грудем, с. 672 — HOLD. Вердикты S1–S5 не меняются. Документ: REPASS, §18.
+- **раунд 96 (2026-11-17, AGENT 2):** §3 (S194), новый §4.179 (Q175): «Наставление» IV.14.7 (с. 4, сн. 12) — по латыни CO 2 (1559) и OS I (1536); поправка к §4.177 п. 3.
+  - **IV.14.7:** «Qualiter omnibus in salutem oblatus a patre ac propositus Christus, non tamen ab omnibus agnitus exceptusque est» — ACCURATE по смыслу. Особенности русского перевода: «oblatus» опущено; сравнение подано как самостоятельное утверждение.
+  - **Датировка:** фраза есть уже в издании 1536 г., поэтому «в более поздних комментариях» (Галатам, 1548) — верно. **`CHRONOLOGY_UNSUPPORTED` раунда 94 снят:** сравнивались годы изданий, а не слои текста.
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §19.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -529,6 +533,7 @@
 | S191 *(раунд 93, 2026-11-17)* | (а) L. Berkhof, *Systematic Theology*, IA `systematic-theology-by-louis-berkhof_202405` (загрузка пользователя: текстовый PDF, дата в метаданных 1944, Public Domain Mark; печатные страницы не распознаны, указаны листы): л. 151 (список «later Supralapsarians», включая Урсина), л. 153 («It is sometimes represented as if God destined some men for eternal destruction… without taking account of their sin»; порядок решений супра и инфра), лл. 156–157 (возражение 4: «hardly correct, though it may be true of some Supralapsarians»), л. 158 («official standards have always adopted the infralapsarian position… always tolerated, the other view»), л. 159 («Sin is not the ultimate cause of reprobation»). (б) Schaff, *Creeds* III, IA `creedsofchriste03scha`: Дорт I.15, латынь л. 569 = p. 555, английский л. 598 = p. 584; II Helv. XI.15, л. 271 = p. 257. (в) WCF III.3, 6, 7 (Creeds.json). (г) Z. Ursinus, *Explicationum catecheticarum…* (1587), IA `bim_early-english-books-1641-1700_explicationum-catechetic_ursinus-zacharias_1587`: л. 475, л. 243. | (а) B/C (издание и пагинация не установлены); (б) A1; (в) B/C; (г) A1 (OCR низкого качества) |
 | S192 *(раунд 94, 2026-11-17)* | (а) J. Calvin, *Opera omnia in novem tomos digesta*, t. VII: *Commentarii in omnes epistolas S. Pauli apostoli…* (Amstelodami: J. J. Schipper, 1667), IA `bub_gb_eZ32b3TNqbAC` (Национальная библиотека Неаполя; d1 `ia903103`, dir `/16/items/…`; постраничный текст через `BookReaderGetTextWrapper`): л. 322 = p. 311 (Гал. 5:12: «Respondeo, id verum esse dum homines respicimus: nam omnium salus sine exceptione nobis a Deo commendatur; quemadmodum pro peccatis totius mundi passus est Christus: sed fit interdum…»); л. 47 (Рим. 5:17–18: «non ad omnes homines pervenit Christi beneficium»; «etsi passus est Christus pro peccatis totius mundi… non tamen omnes apprehendunt»). (б) WCF VIII.5, VIII.8 (Creeds.json). | (а) A1 (OCR, поздняя некритическая редакция; CO 50 не открыт); (б) B/C |
 | S193 *(раунд 95, 2026-11-17)* | L. Boettner, *The Reformed Faith* — PDF по URL сн. 70 статьи (`monergism.com/thethreshold/sdg/boettner/The_Reformed_Faith_-_Loraine_Boettner.pdf`), разделы «Christ's Atonement» и о Божьей справедливости: «a Person of infinite value, amply sufficient to save all men had God so desired it»; «high efficiency… wide extension… universal salvation»; «punishing their sins twice, once in Christ, and then again in them… the Holy Spirit would invariably bring them to faith and repentance»; «a just equivalent for all that His people would have suffered in an eternity in hell»; «by-pass for their willing continuance in sin». Грудем (сн. 71) — не открыт (IA `systematictheolo00grud_0`: «not available»). | B (без печатной пагинации; `RIGHTS_HOLD` — только краткие цитаты) |
+| S194 *(раунд 96, 2026-11-17)* | (а) *Ioannis Calvini Institutio religionis christianae… triplici forma*, ed. Baum, Cunitz, Reuss (Brunsvigae: Schwetschke, 1869 = CO 2, текст 1559 г.), IA `ioanniscalvinii00cunigoog` (d1 `ia800400`, dir `/5/items/…`): лл. 483–484 = col. 946–948 (IV.14.7). (б) *Joannis Calvini opera selecta*, ed. P. Barth, vol. I (München, 1926), *Institutio* 1536, гл. IV, IA `joanniscalviniop0001calv` (d1 `ia601803`, dir `/17/items/…`): лл. 136–137 (пагинация 1536 г. [103]–[104]): «Qualiter omnibus in salutem oblatus a patre ac propositus est Christus, non tamen ab omnibus agnitus exceptusque est». | (а), (б) A1 |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8083,8 +8088,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.176 | Q172 | Лапсарианские схемы (с. 29–30, сн. 93): «невиновные» — `SOURCE_SAYS_OPPOSITE` (частично) по самому Беркхофу; «мало последователей» — `SOURCE_SAYS_MORE`; сн. 93 — точно по содержанию; инфра-отвержение — смешение оставления и осуждения (Дорт I.15; WCF III.7); латынь Урсина; II Helv. XI.15; корпус: `16_` §4 — `OVERSTATED` (р. 93) |
 | 4.177 | Q173 | Кальвин на Гал. 5:12 по латыни (1667, p. 311) — ACCURATE, рамка «dum homines respicimus» опущена (мягко); «в более поздних комментариях» — `CHRONOLOGY_UNSUPPORTED`; Рим. 5:18 подтверждён; заключение «ключевые исповедания подчёркивают неограниченную цену» — `CONCLUSION_EXCEEDS_BODY` (р. 94) |
 | 4.178 | Q174 | Бёттнер, *The Reformed Faith* (сн. 70): пересказ довода — ACCURATE; «слабая форма» — `STRAWMAN` (мягко); «усиленная форма» — уже у Бёттнера; ответ статьи не задевает форму с неизбежным применением — `MISIDENTIFIED_TARGET` распространён на сн. 70; Грудем — HOLD (р. 95) |
+| 4.179 | Q175 | «Наставление» IV.14.7 (сн. 12) по латыни 1559 и 1536 гг.: ACCURATE; особенности русского перевода («oblatus» опущено). Фраза — уже 1536 г., поэтому «в более поздних комментариях» верно; `CHRONOLOGY_UNSUPPORTED` §4.177 снят (р. 96) |
 
-⇒ разделов с `Q` — **171**, разделов §4.x — **173**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **172**, разделов §4.x — **174**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -9114,6 +9120,7 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 1. **Латынь Гал. 5:12** (*Opera* 1667, t. VII, л. 322 = p. 311): «Sed talis imprecatio videtur parum congruere mansuetudini Apostolicae… Respondeo, id verum esse dum homines respicimus: nam omnium salus sine exceptione nobis a Deo commendatur; quemadmodum pro peccatis totius mundi passus est Christus: sed fit interdum ut piae mentes extra hominum considerationem efferantur: dum scilicet intuentur Dei gloriam et Christi regnum». Русская цитата статьи передаёт середину фразы точно — **ACCURATE**. «Заповедует… желать» чуть сильнее «commendatur», но в пределах перевода.
 2. **Рамка.** Статья начинает с «Ведь…» («nam») и опускает «Respondeo, id verum esse dum homines respicimus» и последующее «sed…». Рамка относится к нашему долгу желать спасения всех; придаточное о страдании Христа она не ограничивает. **`CONTEXT_OMITTED` (мягко)**: формула остаётся всеобщей, как и сказано в `06_` §8.
 3. **«В более поздних комментариях… ещё более очевидна»** (с. 4, сн. 13). Комментарий на Галатам впервые вышел в 1548 г., раньше окончательной редакции «Наставления» (1559), которую цитирует статья (сн. 11–12). **`CHRONOLOGY_UNSUPPORTED` (мягко).** Датировку самого текста IV.14.7 по ранним редакциям раунд не проверял, поэтому это не `FACT_ERROR`.
+   > **Снято (раунд 96, 2026-11-17; §4.179, S194).** Фраза IV.14.7 есть уже в *Institutio* 1536 г. (OS I, [103]–[104]), поэтому комментарий 1548 г. для сн. 12 действительно «более поздний». Вердикт `CHRONOLOGY_UNSUPPORTED` выше снят; строка сохранена как HISTORICAL.
 4. **Рим. 5:17–18** (л. 47), для `01_` R05: «etsi passus est Christus pro peccatis totius mundi, atque omnibus indifferenter Dei benignitate offertur: non tamen omnes apprehendunt». В том же месте, к ст. 17: «non ad omnes homines pervenit Christi beneficium… in eum inseri nos per fidem oportet». R05 подтверждён по латыни.
 5. **Заключение, с. 36: «Ключевые кальвинистские исповедания веры подчёркивают неограниченный размер заплаченной цены».** Основная часть показывает это только для Дорта (II.3). О WCF и 2LBC статья говорит другое: там употреблено *redemption*, а не *atonement* (с. 26–27). Это довод от умолчания, а не «подчёркивание». WCF VIII.5 относит саму покупку к данным Отцом («purchased… for all those whom the Father hath given unto him»), VIII.8 связывает её с непременным применением (ср. §4.20, Q18) — **`CONCLUSION_EXCEEDS_BODY`**.
 6. **Остальные пункты заключения уже разобраны:** «преобладал до XVII века» — REPASS §15; «плата не вменяется, пока не уверует» — REPASS §3 и §15. Сублапсарианская схема как логическая конструкция непротиворечива; историко-терминологическая сторона — `16_` §3.1 и §4.176.
@@ -9141,6 +9148,26 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 **Вывод.** Статья пересказывает Бёттнера верно, но спорит со слабой формой, которой у него нет. Сильная форма у него уже есть, и ответ через вменение её не задевает. Умысел не утверждается.
 
 **Чего нет.** Грудем, с. 672; печатная пагинация брошюры Бёттнера.
+
+Вердикты S1–S5 не меняются.
+
+### 4.179. Q175 — «Наставление» IV.14.7 (с. 4, сн. 12) по латыни 1559 и 1536 гг.; поправка к §4.177 п. 3 (раунд 96, 2026-11-17)
+
+**Повод.** В §4.177 п. 3 слова статьи «в более поздних комментариях» получили вердикт `CHRONOLOGY_UNSUPPORTED` по сравнению годов изданий (Галатам 1548 против «Наставления» 1559). Датировка самого текста IV.14.7 оставалась в HOLD. Полная таблица — REPASS-документ, §19. Источники — S194.
+
+**Ответы.**
+1. **Латынь 1559 г.** (CO 2, col. 946–947): «Itaque certum est nobis a Domino misericordiam, ac gratiae suae pignus cum sacro suo verbo, tum sacramentis offerri. Verum non apprehenditur nisi ab his qui verbum et sacramenta certa fide accipiunt. Qualiter omnibus in salutem oblatus a patre ac propositus Christus, non tamen ab omnibus agnitus exceptusque est». Цитата статьи — **ACCURATE по смыслу** (подтверждает REPASS §15).
+2. **Особенности русского перевода, не автора статьи.**
+   - «Несомненно также и то, что…» превращает сравнительную фразу («Qualiter…») в самостоятельное утверждение; у Кальвина «certum est» относится к предложению милости в Слове и таинствах.
+   - «Явлен» передаёт «propositus», а «oblatus» опущено.
+   - «Узнан и признан» стоит вместо «agnitus exceptusque» («признан и принят»).
+   - Вывод статьи, что неизбранным «был предложен Христос», латынь выражает даже прямее.
+3. **Датировка.** Фраза почти дословно есть уже в *Institutio* **1536 г.** (OS I, гл. IV «De sacramentis», пагинация 1536 г. [103]–[104]). Комментарий на Галатам (1548) позднее этого текста. **`CHRONOLOGY_UNSUPPORTED` (§4.177 п. 3) снят** в части сн. 12. Датировку II.12.3 (сн. 11) раунд не проверял.
+4. **Методический урок.** Хронологию цитаты из «Наставления» надо определять по слою текста (1536 / 1539–1554 / 1559), а не по году издания, которым пользуется статья. Строки §4.177 сохранены как HISTORICAL.
+
+**Вывод.** Обе кальвиновские цитаты на с. 4 (сн. 12 и 14) подлинны по латыни. Слова «в более поздних комментариях» для сн. 12 хронологически верны.
+
+**Чего нет.** Датировка II.12.3 по редакциям; русский том РГГУ и его страница.
 
 Вердикты S1–S5 не меняются.
 

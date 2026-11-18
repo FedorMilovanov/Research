@@ -677,6 +677,7 @@
 - **Новые вердикты по статье:**
   - Гал. 5:12 — ACCURATE по латыни; рамка «dum homines respicimus» опущена — `CONTEXT_OMITTED` (мягко);
   - «в более поздних комментариях» — `CHRONOLOGY_UNSUPPORTED` (мягко);
+    - **Снято в раунде 96 (§19):** фраза IV.14.7 есть уже в издании 1536 г.; «в более поздних комментариях» для сн. 12 — ACCURATE.
   - заключение, «ключевые исповедания подчёркивают неограниченную цену» — `CONCLUSION_EXCEEDS_BODY`.
 - **Корпус:** `01_` R05 (Рим. 5:18) и `06_` §8 подтверждены по латыни.
 - **HOLD:** CO 50 (критический текст); с. 525 русского перевода; датировка IV.14.7 по редакциям «Наставления»; печатная страница Рим. 5:18 в издании 1667 г.
@@ -722,5 +723,36 @@
   - ответ статьи не задевает форму Бёттнера с неизбежным применением: `MISIDENTIFIED_TARGET` (раунд 80) распространён на сн. 70.
 - **Корпус:** `34_` п. 88 (раунд 16) — закрыт в части Бёттнера; Грудем — HOLD.
 - **HOLD:** Грудем, с. 672 (рус.) и соответствующее место английского издания; печатная пагинация брошюры Бёттнера.
+
+Вердикты S1–S5 не меняются. Умысел не утверждается.
+
+## 19. Раунд 96 (2026-11-17): «Наставление» IV.14.7 (с. 4, сн. 12) по латыни 1559 и 1536 гг.; поправка к §17 — хронология «более поздних комментариев»
+
+**Повод.** В §17 (раунд 94) датировка IV.14.7 по редакциям «Наставления» осталась в HOLD. При этом слова статьи «в более поздних комментариях» получили вердикт `CHRONOLOGY_UNSUPPORTED`: Галатам 1548 г. против «Наставления» 1559 г. Ниже — латынь обеих редакций.
+
+### 19.1. Источники
+
+- (а) **CO 2** = *Ioannis Calvini Institutio religionis christianae… triplici forma*, ed. Baum, Cunitz, Reuss (Brunsvigae: Schwetschke, 1869; переиздание CO 1–2 1863–1864), том с текстом 1559 г.; IA `ioanniscalvinii00cunigoog` (Harvard, скан Google), лл. 483–484 = **col. 946–948**. **Класс A1** — критический текст.
+  - IV.14.7: «Itaque certum est nobis a Domino misericordiam, ac gratiae suae pignus cum sacro suo verbo, tum sacramentis offerri. Verum non apprehenditur nisi ab his qui verbum et sacramenta certa fide accipiunt. Qualiter omnibus in salutem oblatus a patre ac propositus Christus, non tamen ab omnibus agnitus exceptusque est. Id quum alicubi indicare Augustinus vellet, dixit, verbi efficaciam in sacramento proferri, non quia dicitur, sed quia creditur».
+- (б) **OS I** = *Joannis Calvini opera selecta*, ed. P. Barth, vol. I (München: Kaiser, 1926), *Institutio* **1536 г.**, гл. IV «De sacramentis»; IA `joanniscalviniop0001calv`, лл. 136–137 (в тексте — пагинация издания 1536 г. **[103]–[104]**). **Класс A1.**
+  - «Itaque certum est, nobis a Domino misericordiam ac bonae suae voluntatis gratiam, cum sacro suo verbo, tum sacramentis offerri. Verum non apprehenditur nisi ab his, qui et verbum et sacramenta certa fide accipiunt. Qualiter omnibus in salutem oblatus a patre ac propositus est Christus, non tamen ab omnibus agnitus exceptusque est. Id cum alicubi indicare Augustinus vellet…» (примечание издателя: Augustinus, *In Ioh. tract.* 80, 3).
+
+### 19.2. Сверка
+
+| Место | Тезис статьи | Состоятельность | Факты |
+|---|---|---|---|
+| С. 4, сн. 12: цитата | «Несомненно также и то, что Господь наш Иисус Христос был явлен Отцом для спасения всех людей, но не всеми был узнан и признан» (рус. пер. РГГУ, 1997) | ✓ | **ACCURATE по смыслу**, латынь (а) подтверждает вердикт §15. Особенности русского перевода, не автора статьи: (1) у Кальвина «certum est» относится к предыдущей фразе (милость предлагается в Слове и таинствах), а фраза о Христе — сравнительная («Qualiter… — так же, как…»); (2) «явлен» передаёт только «propositus», а «oblatus» («предложен») опущено; (3) «узнан и признан» — вместо «agnitus exceptusque» («признан и принят»). Вывод статьи «им был предложен Христос» латынь выражает даже сильнее («oblatus»). Русский том и страницу не открывал |
+| С. 4, сн. 13: «**В более поздних комментариях** позиция Кальвина… ещё более очевидна» | Хронология | **✓ для фразы из сн. 12** | Фраза IV.14.7 почти дословно есть уже в издании **1536 г.** (б). Комментарий на Галатам (1548) — действительно позднее этого текста. **Вердикт §17 `CHRONOLOGY_UNSUPPORTED` снимается** в части сн. 12. Датировку II.12.3 (сн. 11) раунд не проверял |
+
+### 19.3. Поправка к §17 и источник ошибки
+
+- В §17 сравнивались **даты изданий** (1548 и 1559), а не **дата самого текста**. Окончательная редакция «Наставления» переносит фразу из 1536 г. Вопрос «раньше или позже» нужно решать по слоям текста, а не по году издания, которым пользуется статья. Это методическая ошибка проверяющего; строки §17 сохранены как HISTORICAL.
+- Что остаётся от §17 без изменений: Гал. 5:12 — ACCURATE; рамка «dum homines respicimus» — `CONTEXT_OMITTED` (мягко); заключение — `CONCLUSION_EXCEEDS_BODY`.
+
+### 19.4. Итог раунда 96
+
+- **Новые вердикты по статье:** сн. 12 — ACCURATE по латыни 1559 и 1536 гг. (особенности русского перевода отмечены); сн. 13, «в более поздних комментариях» — **ACCURATE** для фразы из сн. 12.
+- **Снято:** §17 `CHRONOLOGY_UNSUPPORTED`.
+- **HOLD:** датировка II.12.3 по редакциям; русский том РГГУ (т. 3, с. 271?).
 
 Вердикты S1–S5 не меняются. Умысел не утверждается.
