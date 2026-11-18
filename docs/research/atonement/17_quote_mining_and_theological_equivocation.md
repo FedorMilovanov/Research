@@ -199,6 +199,12 @@
 > - **Гангел (с. 13).** Перевод точен. Подача «флагманская кальвинистская школа» создаёт эффект уступки. Но неограниченное искупление — позиция основателя DTS Чейфера (*BSac* 1948/1980) — `FRAMING_AS_CONCESSION` (мягко).
 > - **Бакстер (сн. 34).** Перевод точен. Опущено продолжение §98 «resolved into that of Predestination» — мягкий `SELECTIVE_CITATION`.
 > - **Тиссен (сн. 95–96).** Редактор Доэрксен (1979) назван самим автором — претензии к статье нет.
+>
+> **Дополнение к таблице (раунд 86, 2026-11-17; `34_` §4.169, S184; REPASS §9).** Сверка по сканам IA:
+> - **Куйпер (стр. 19).** *For Whom Did Christ Die?* (1959), с. 78: многоточие после «(careless)…» в статье пропускает фразу: «To be sure, if by „for“ be meant in the place of, the statement is accurate enough, for those in whose stead Christ suffered the penalty of sin will not themselves have to suffer that penalty… If, however, by „for“ be meant in behalf of, it is inaccurate». Это `ELLIPSIS_REMOVES_QUALIFIER`. Автор цитирует через Дэниела (сн. 49), поэтому чьё многоточие — HOLD. Подтверждает `22_` п. 45 уже по тексту. На титуле Куйпер — «Professor Emeritus of Practical Theology», а не систематики.
+> - **Беркхоф (стр. 18).** Пропущен п. 2 («dubious and very unsatisfactory view» о схеме статьи); в п. 1(d) опущено «in virtue of their close association with the people of God».
+> - **А. А. Ходж.** «universal reference» переведено как «всеобщее применение»; опущен п. II (вопрос о порядке: искупление — средство избрания или избрание — средство «otherwise inoperative» искупления).
+> - **Ашшер, Эдвардс, Шедд** — точно (Шедд: снято «well» в «cannot well be misconceived»). Ашшер — «Archbishop of Armagh, and Primate of all Ireland», не «английский».
 
 Свежая контрольная сверка Робертсона на 1 Ин. 2:2 подтвердила именно всеобщее обеспечение при примирении с Богом: в данном месте цитата Прокопенко соответствует собственному тексту комментатора. Его нельзя объявить скрытым строгим оппонентом только по месту преподавания. Иэн Х. Мюррей в примечаниях 44–45 — автор *The Forgotten Spurgeon*, а не Джон Мюррей, автор *Redemption Accomplished and Applied*. Посредничество источника указано самой статьёй; русский 2003 и MTP VII, 26 остаются отдельной задачей колляции. [Робертсон, стих 2](https://www.studylight.org/commentaries/eng/rwp/1-john-2.html), [издательская запись Мюррея](https://banneroftruth.org/uk/store/theology/forgotten-spurgeon/).
 
@@ -530,6 +536,8 @@
 | **Уильям Шедд** | Разделял *atonement* (ценность) и *redemption* (применение). | Как нормативную модель для преодоления споров. | Игнорирование того, что персонализированная библейская жертва не разделяет вину и искупление. |
 | **Чарльз Сперджен** | Строгий партикулярный баптист. Бескомпромиссный критик всеобщего искупления. | Как автора, признававшего «общее искупление» в проповеди 1864 г. | Подмена *провиденциального сохранения* жизни грешников (1 Тим. 4:10) заместительным искуплением от ада. |
 | **Луис Беркхоф** | Классический 5-пунктный пресвитерианин. Защитник Канонов Дорта. | Как допускающего, что смерть Христа обеспечивает спасительные блага миру. | Отождествление косвенных побочных плодов для творения (*incidental benefits*) с целью жертвы (*design*). |
+
+> **Поправка (раунд 86, `34_` §4.169, S184).** «Пресвитерианин» о Беркхофе неточно: он пастор и профессор Christian Reformed Church, ректор Calvin Theological Seminary в 1931–1944 гг. (CCEL, класс C). Та же неточность есть в статье (с. 11). Строка выше не меняется. По существу (скан *Systematic Theology*, «Extent of the Atonement», п. 2) Беркхоф называет схему «decree to send Christ… to save all men… on condition of faith → decree to give a certain elect number special grace» «**This dubious and very unsatisfactory view**». Статья этот пункт не приводит — `OMITTED_COUNTERPOSITION`.
 
 ---
 
