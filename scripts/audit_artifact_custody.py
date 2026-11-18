@@ -93,6 +93,63 @@ DETERMINISM = {
 }
 
 
+
+# Проверено на Drive 2026-11-18. Здесь только то, что подтверждено чтением:
+# `list_files` по идентификатору папки и `get_file` по самим объектам.
+DRIVE_VERIFICATION = {
+    "ephemeral-second-editorial-40-pdf": {
+        "class": "DURABLE_ON_DRIVE_UNRECORDED_IN_REPO",
+        "folder": "02 — SECOND EDITORIAL 40",
+        "folderId": "1qba3eUdOo0x4Sp2T1viB_MMdWQf80UtZ",
+        "objects": 40,
+        "bytes": None,
+        "sha256Present": True,
+        "manifest": {
+            "name": "SECOND EDITORIAL 40 — MANIFEST RIGHTS SHA256.zip",
+            "id": "1bHbwp7AoS2F645_BZhNVNTjWfKYoHm4g",
+            "bytes": 25419,
+            "sha256": "f363ec567be8a40cd5828d251e288572270c4368f5940602c0b29548b4a7e547",
+        },
+        "observed": "40 PDF в четырёх шардах 01-10 / 11-20 / 21-30 / 31-40, у каждого серверный sha256Checksum; "
+        "рядом ZIP с манифестом прав и SHA-256.",
+        "missing": "В репозитории нет квитанции, связывающей ID папки и sums с манифестом.",
+    },
+    "ephemeral-commons-strict-literary-pdf-40plus": {
+        "class": "DURABLE_ON_DRIVE_UNRECORDED_IN_REPO",
+        "folder": "01 — COMMONS STRICT 40",
+        "folderId": "1DSfzT3YJC19iI0YG9IjfOXybVilgnQFJ",
+        "objects": 9,
+        "bytes": 610192501,
+        "sha256Present": True,
+        "manifest": {
+            "name": "commons_strict_sha256_verification.txt",
+            "id": "1PvXKzW6Oq1U7qP-j0FLIXx_gv19ogez9",
+            "bytes": 3110,
+            "sha256": None,
+        },
+        "observed": "Девять ZIP-шардов (01-10 / 11-20 / 21-30 / 31-40, по частям A/B/C), сумма размеров "
+        "610 192 501 Б против 610 183 443 Б заявленных для 40 PDF; файл проверки перечисляет 40 из 40 «OK».",
+        "missing": "В репозитории нет квитанции, связывающей ID папки и суммы шардов с манифестом.",
+    },
+    "ephemeral-official-core-acquisition-59-v2": {
+        "class": "NO_DURABLE_DESTINATION",
+        "folder": None,
+        "folderId": None,
+        "objects": 0,
+        "bytes": 0,
+        "sha256Present": False,
+        "manifest": {
+            "name": "2026-07-30 — OFFICIAL CORE ACQUISITION 59 — V2 MANIFEST.zip",
+            "id": "1EccGOxBl74_8X-03tRwQz2W_J-3N9phB",
+            "bytes": 19137,
+            "sha256": None,
+        },
+        "observed": "На Drive только манифест 19 137 Б и документ статуса; STEPBible, morphhb и SBLGNT "
+        "поиском не обнаружены — это же записано в самом документе статуса от 2026-07-30.",
+        "missing": "Сами наборы данных. Артефакт CI на 123 193 373 Б истекает 2026-11-24.",
+    },
+}
+
 def gh_pages() -> list[dict]:
     rows: list[dict] = []
     for page in range(1, 40):
@@ -125,6 +182,17 @@ def family_of(name: str) -> str:
 
 
 def classify(family: str) -> tuple[str, str]:
+    if family in DRIVE_VERIFICATION:
+        note = DRIVE_VERIFICATION[family]
+        if note["class"] == "DURABLE_ON_DRIVE_UNRECORDED_IN_REPO":
+            return (
+                "DURABLE_ON_DRIVE_UNRECORDED_IN_REPO",
+                "Байты найдены на Drive 2026-11-18; в репозитории нет квитанции, связывающей их с манифестом.",
+            )
+        return (
+            "NO_DURABLE_DESTINATION",
+            "На Drive есть только манифест; сами объекты отсутствуют и живут лишь в артефакте.",
+        )
     if family.startswith("g3-"):
         return DETERMINISM["g3-"]
     if family in DETERMINISM:
@@ -250,6 +318,7 @@ def build() -> dict:
         item["retentionDays"] = meta.get("retentionDays")
         item["declaresEphemeral"] = meta.get("declaresEphemeral", False)
         item["declaresNoDurableReceipt"] = meta.get("declaresNoDurableReceipt", False)
+        item["drive"] = DRIVE_VERIFICATION.get(item["family"])
         item["branches"] = sorted(item["branches"])
 
     ordered = sorted(families.values(), key=lambda x: -x["bytes"])
@@ -281,6 +350,7 @@ def build() -> dict:
             "byClass": dict(by_class),
             "bytesByClass": dict(bytes_by_class),
         },
+        "driveVerification": DRIVE_VERIFICATION,
         "deadlines": {day: {"bytes": v["bytes"], "families": sorted(v["families"])} for day, v in sorted(deadline.items())},
     }
 
@@ -320,6 +390,8 @@ def render(snapshot: dict) -> str:
         "REGENERABLE_VIEW": "производная сборка из реестра репозитория",
         "REGENERABLE_PACKAGE": "заявка/пакет, а не сам объект",
         "NON_DETERMINISTIC_ACQUISITION": "перепрогон даёт другое состояние источника — байты не воспроизводятся",
+        "DURABLE_ON_DRIVE_UNRECORDED_IN_REPO": "байты на Drive есть, квитанции в репозитории нет",
+        "NO_DURABLE_DESTINATION": "на Drive только манифест, объекты живут лишь в артефакте",
         "UNCLASSIFIED": "требует ручного решения",
     }
     for cls, count in sorted(totals["byClass"].items(), key=lambda kv: -totals["bytesByClass"][kv[0]]):
@@ -351,7 +423,32 @@ def render(snapshot: dict) -> str:
     add("`NON_DETERMINISTIC_ACQUISITION` перепрогон даёт **другое состояние источника**, и если")
     add("владелец считает прежние байты доказательством, их нужно забрать до этой даты.")
     add("")
-    add("## 5. Что здесь не так, помимо срока")
+    add("## 5. Проверка на Drive: у двух семей байты уже сохранены")
+    add("")
+    add("Срок артефакта сам по себе не означает потери. Проверка на Drive 2026-11-18 разделила")
+    add("эти гигабайты на две несопоставимые части: у двух семей байты сохранены, у одной — нет.")
+    add("")
+    add("| Семья | Что найдено на Drive | Объектов | Байт | SHA-256 |")
+    add("|---|---|---:|---:|---|")
+    for family, note in snapshot["driveVerification"].items():
+        sha = "есть" if note["sha256Present"] else "нет"
+        where = f"папка «{note['folder']}»" if note["folder"] else "папки нет"
+        add(
+            f"| `{family}` | {where} | {note['objects']} | "
+            f"{format(note['bytes'], ',d').replace(',', ' ') if note['bytes'] else '—'} | {sha} |"
+        )
+    add("")
+    for family, note in snapshot["driveVerification"].items():
+        add(f"**`{family}`** — {note['observed']}")
+        add("")
+        add(f"Чего не хватает: {note['missing']}")
+        add("")
+    add("Отсюда поправка к первой редакции снимка: прежний вывод «квитанции нет» был верен")
+    add("только про репозиторий. Для second-editorial и commons strict байты на Drive есть, и")
+    add("потеря артефакта их не уничтожит. Настоящий риск — только у `official-core`: там на Drive")
+    add("лежит манифест на 19 КБ, а объекты на 123 МБ истекают 24 ноября.")
+    add("")
+    add("## 6. Что здесь не так, помимо срока")
     add("")
     add("Артефакты сборки PDF висят на прогонах **dependabot-ветвей**: обновление версии")
     add("`upload-artifact` меняет сам workflow-файл, а path-фильтр включает этот файл, поэтому")
@@ -365,6 +462,8 @@ def render(snapshot: dict) -> str:
     add("  по проверке совпадения байтов двух прогонов: такой проверки не делалось.")
     add("- `HAS_DURABLE_RECEIPT` присвоен только семье Charnock V3, и только потому, что суммы")
     add("  сверены с Drive 2026-11-18 в `docs/research/holds/DRIVE_SHA256_READBACK_CROSSCHECK_2026-11-18.md`.")
+    add("- Раздел 5 опирается на `list_files` по ID папок и `get_file` по объектам. Содержимое")
+    add("  архивов не распаковывалось: совпадение объёма и наличие sums — не проверка содержимого.")
     add("- Снимок датирован. Retention и состав семей меняются каждым прогоном, поэтому файл")
     add("  пересобирается, а не правится.")
     add("")

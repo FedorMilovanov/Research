@@ -18,12 +18,28 @@
         "dependabot/github_actions/actions/setup-python-7.1.0",
         "dependabot/github_actions/actions/upload-artifact-7.0.2"
       ],
-      "class": "NON_DETERMINISTIC_ACQUISITION",
-      "why": "Сборка PDF из внешних источников; перепрогон даёт актуальное состояние источников, а не те же байты. Квитанции на хранение нет.",
+      "class": "DURABLE_ON_DRIVE_UNRECORDED_IN_REPO",
+      "why": "Байты найдены на Drive 2026-11-18; в репозитории нет квитанции, связывающей их с манифестом.",
       "workflow": ".github/workflows/build-commons-second-editorial-40-pdf.yml",
       "retentionDays": 7,
       "declaresEphemeral": true,
-      "declaresNoDurableReceipt": true
+      "declaresNoDurableReceipt": true,
+      "drive": {
+        "class": "DURABLE_ON_DRIVE_UNRECORDED_IN_REPO",
+        "folder": "02 — SECOND EDITORIAL 40",
+        "folderId": "1qba3eUdOo0x4Sp2T1viB_MMdWQf80UtZ",
+        "objects": 40,
+        "bytes": null,
+        "sha256Present": true,
+        "manifest": {
+          "name": "SECOND EDITORIAL 40 — MANIFEST RIGHTS SHA256.zip",
+          "id": "1bHbwp7AoS2F645_BZhNVNTjWfKYoHm4g",
+          "bytes": 25419,
+          "sha256": "f363ec567be8a40cd5828d251e288572270c4368f5940602c0b29548b4a7e547"
+        },
+        "observed": "40 PDF в четырёх шардах 01-10 / 11-20 / 21-30 / 31-40, у каждого серверный sha256Checksum; рядом ZIP с манифестом прав и SHA-256.",
+        "missing": "В репозитории нет квитанции, связывающей ID папки и sums с манифестом."
+      }
     },
     {
       "family": "ephemeral-commons-strict-literary-pdf-40plus",
@@ -37,12 +53,28 @@
         "dependabot/github_actions/actions/setup-python-7.1.0",
         "dependabot/github_actions/actions/upload-artifact-7.0.2"
       ],
-      "class": "NON_DETERMINISTIC_ACQUISITION",
-      "why": "То же: внешние PDF, перепрогон не воспроизводит прежние байты.",
+      "class": "DURABLE_ON_DRIVE_UNRECORDED_IN_REPO",
+      "why": "Байты найдены на Drive 2026-11-18; в репозитории нет квитанции, связывающей их с манифестом.",
       "workflow": ".github/workflows/build-commons-russian-literature-open-pdf-archive.yml",
       "retentionDays": 7,
       "declaresEphemeral": true,
-      "declaresNoDurableReceipt": true
+      "declaresNoDurableReceipt": true,
+      "drive": {
+        "class": "DURABLE_ON_DRIVE_UNRECORDED_IN_REPO",
+        "folder": "01 — COMMONS STRICT 40",
+        "folderId": "1DSfzT3YJC19iI0YG9IjfOXybVilgnQFJ",
+        "objects": 9,
+        "bytes": 610192501,
+        "sha256Present": true,
+        "manifest": {
+          "name": "commons_strict_sha256_verification.txt",
+          "id": "1PvXKzW6Oq1U7qP-j0FLIXx_gv19ogez9",
+          "bytes": 3110,
+          "sha256": null
+        },
+        "observed": "Девять ZIP-шардов (01-10 / 11-20 / 21-30 / 31-40, по частям A/B/C), сумма размеров 610 192 501 Б против 610 183 443 Б заявленных для 40 PDF; файл проверки перечисляет 40 из 40 «OK».",
+        "missing": "В репозитории нет квитанции, связывающей ID папки и суммы шардов с манифестом."
+      }
     },
     {
       "family": "ephemeral-official-core-acquisition-59-v2",
@@ -56,12 +88,28 @@
         "dependabot/github_actions/actions/setup-python-7.1.0",
         "dependabot/github_actions/actions/upload-artifact-7.0.2"
       ],
-      "class": "NON_DETERMINISTIC_ACQUISITION",
-      "why": "Приобретение официальных цифровых коллекций; на стороне источника объекты меняются.",
+      "class": "NO_DURABLE_DESTINATION",
+      "why": "На Drive есть только манифест; сами объекты отсутствуют и живут лишь в артефакте.",
       "workflow": ".github/workflows/official-core-acquisition-40plus.yml",
       "retentionDays": 7,
       "declaresEphemeral": true,
-      "declaresNoDurableReceipt": true
+      "declaresNoDurableReceipt": true,
+      "drive": {
+        "class": "NO_DURABLE_DESTINATION",
+        "folder": null,
+        "folderId": null,
+        "objects": 0,
+        "bytes": 0,
+        "sha256Present": false,
+        "manifest": {
+          "name": "2026-07-30 — OFFICIAL CORE ACQUISITION 59 — V2 MANIFEST.zip",
+          "id": "1EccGOxBl74_8X-03tRwQz2W_J-3N9phB",
+          "bytes": 19137,
+          "sha256": null
+        },
+        "observed": "На Drive только манифест 19 137 Б и документ статуса; STEPBible, morphhb и SBLGNT поиском не обнаружены — это же записано в самом документе статуса от 2026-07-30.",
+        "missing": "Сами наборы данных. Артефакт CI на 123 193 373 Б истекает 2026-11-24."
+      }
     },
     {
       "family": "ephemeral-poet-portrait-review-v4",
@@ -80,7 +128,8 @@
       "workflow": ".github/workflows/build-poet-portrait-review-candidates.yml",
       "retentionDays": 30,
       "declaresEphemeral": true,
-      "declaresNoDurableReceipt": true
+      "declaresNoDurableReceipt": true,
+      "drive": null
     },
     {
       "family": "ephemeral-ephemera-review-candidates",
@@ -99,7 +148,8 @@
       "workflow": ".github/workflows/build-ephemera-review-candidates.yml",
       "retentionDays": 30,
       "declaresEphemeral": true,
-      "declaresNoDurableReceipt": true
+      "declaresNoDurableReceipt": true,
+      "drive": null
     },
     {
       "family": "ephemeral-approved-ephemera-originals",
@@ -118,7 +168,8 @@
       "workflow": ".github/workflows/download-approved-ephemera-originals.yml",
       "retentionDays": 7,
       "declaresEphemeral": true,
-      "declaresNoDurableReceipt": true
+      "declaresNoDurableReceipt": true,
+      "drive": null
     },
     {
       "family": "ephemeral-approved-core-poet-portraits",
@@ -137,7 +188,8 @@
       "workflow": ".github/workflows/download-approved-core-poet-portraits.yml",
       "retentionDays": 7,
       "declaresEphemeral": true,
-      "declaresNoDurableReceipt": true
+      "declaresNoDurableReceipt": true,
+      "drive": null
     },
     {
       "family": "total-cross-repo-source-audit",
@@ -158,7 +210,8 @@
       "workflow": ".github/workflows/total-cross-repo-source-audit.yml",
       "retentionDays": 30,
       "declaresEphemeral": false,
-      "declaresNoDurableReceipt": false
+      "declaresNoDurableReceipt": false,
+      "drive": null
     },
     {
       "family": "charnock-custody-v3-research-only",
@@ -178,7 +231,8 @@
       "workflow": ".github/workflows/charnock-custody-snapshot.yml",
       "retentionDays": 30,
       "declaresEphemeral": false,
-      "declaresNoDurableReceipt": false
+      "declaresNoDurableReceipt": false,
+      "drive": null
     },
     {
       "family": "1peter-product-handoff",
@@ -200,7 +254,8 @@
       "workflow": ".github/workflows/1peter-product-handoff-audit.yml",
       "retentionDays": 30,
       "declaresEphemeral": false,
-      "declaresNoDurableReceipt": false
+      "declaresNoDurableReceipt": false,
+      "drive": null
     },
     {
       "family": "g3-archive-content-inventory",
@@ -219,7 +274,8 @@
       "workflow": ".github/workflows/g3-archive-content-inventory-acquisition.yml",
       "retentionDays": 7,
       "declaresEphemeral": true,
-      "declaresNoDurableReceipt": false
+      "declaresNoDurableReceipt": false,
+      "drive": null
     },
     {
       "family": "g3-douglas-property",
@@ -238,7 +294,8 @@
       "workflow": ".github/workflows/g3-douglas-property-acquisition.yml",
       "retentionDays": 7,
       "declaresEphemeral": true,
-      "declaresNoDurableReceipt": false
+      "declaresNoDurableReceipt": false,
+      "drive": null
     },
     {
       "family": "baptist-scan-request-package",
@@ -258,7 +315,8 @@
       "workflow": ".github/workflows/baptist-scan-acquisition.yml",
       "retentionDays": 30,
       "declaresEphemeral": false,
-      "declaresNoDurableReceipt": false
+      "declaresNoDurableReceipt": false,
+      "drive": null
     },
     {
       "family": "g3-irs-FY2025",
@@ -277,7 +335,8 @@
       "workflow": ".github/workflows/g3-irs-raw-acquisition.yml",
       "retentionDays": 7,
       "declaresEphemeral": true,
-      "declaresNoDurableReceipt": true
+      "declaresNoDurableReceipt": true,
+      "drive": null
     },
     {
       "family": "g3-irs-FY2024",
@@ -296,7 +355,8 @@
       "workflow": ".github/workflows/g3-irs-raw-acquisition.yml",
       "retentionDays": 7,
       "declaresEphemeral": true,
-      "declaresNoDurableReceipt": true
+      "declaresNoDurableReceipt": true,
+      "drive": null
     },
     {
       "family": "g3-buck-media",
@@ -315,7 +375,8 @@
       "workflow": ".github/workflows/g3-buck-media-windows.yml",
       "retentionDays": 7,
       "declaresEphemeral": false,
-      "declaresNoDurableReceipt": false
+      "declaresNoDurableReceipt": false,
+      "drive": null
     },
     {
       "family": "g3-irs-FY2023",
@@ -334,7 +395,8 @@
       "workflow": ".github/workflows/g3-irs-raw-acquisition.yml",
       "retentionDays": 7,
       "declaresEphemeral": true,
-      "declaresNoDurableReceipt": true
+      "declaresNoDurableReceipt": true,
+      "drive": null
     },
     {
       "family": "g3-wayback-late-board",
@@ -353,7 +415,8 @@
       "workflow": ".github/workflows/g3-wayback-2025-board-transition.yml",
       "retentionDays": 7,
       "declaresEphemeral": true,
-      "declaresNoDurableReceipt": true
+      "declaresNoDurableReceipt": true,
+      "drive": null
     },
     {
       "family": "g3-irs-FY2022_LATER",
@@ -372,7 +435,8 @@
       "workflow": ".github/workflows/g3-irs-raw-acquisition.yml",
       "retentionDays": 7,
       "declaresEphemeral": true,
-      "declaresNoDurableReceipt": true
+      "declaresNoDurableReceipt": true,
+      "drive": null
     },
     {
       "family": "baptist-proof-ledger-v2-canonical-view",
@@ -392,7 +456,8 @@
       "workflow": ".github/workflows/baptist-proof-ledger-v2.yml",
       "retentionDays": 30,
       "declaresEphemeral": false,
-      "declaresNoDurableReceipt": false
+      "declaresNoDurableReceipt": false,
+      "drive": null
     },
     {
       "family": "official-digital-collections-link-audit",
@@ -412,7 +477,8 @@
       "workflow": ".github/workflows/audit-official-digital-collections-links.yml",
       "retentionDays": 30,
       "declaresEphemeral": false,
-      "declaresNoDurableReceipt": false
+      "declaresNoDurableReceipt": false,
+      "drive": null
     },
     {
       "family": "g3-georgia-entity",
@@ -431,7 +497,8 @@
       "workflow": ".github/workflows/g3-georgia-entity-acquisition.yml",
       "retentionDays": 7,
       "declaresEphemeral": true,
-      "declaresNoDurableReceipt": true
+      "declaresNoDurableReceipt": true,
+      "drive": null
     },
     {
       "family": "google-drive-upload-46-link-audit",
@@ -451,7 +518,8 @@
       "workflow": ".github/workflows/audit-google-drive-upload-links.yml",
       "retentionDays": 30,
       "declaresEphemeral": false,
-      "declaresNoDurableReceipt": false
+      "declaresNoDurableReceipt": false,
+      "drive": null
     },
     {
       "family": "g3-buck-titus-media-evidence",
@@ -470,7 +538,8 @@
       "workflow": ".github/workflows/g3-buck-media-windows.yml",
       "retentionDays": 7,
       "declaresEphemeral": false,
-      "declaresNoDurableReceipt": false
+      "declaresNoDurableReceipt": false,
+      "drive": null
     },
     {
       "family": "g3-wayback-2025-board",
@@ -489,7 +558,8 @@
       "workflow": ".github/workflows/g3-wayback-2025-board-transition.yml",
       "retentionDays": 7,
       "declaresEphemeral": true,
-      "declaresNoDurableReceipt": true
+      "declaresNoDurableReceipt": true,
+      "drive": null
     },
     {
       "family": "g3-buck-rss-media-inventory",
@@ -508,7 +578,8 @@
       "workflow": ".github/workflows/g3-buck-media-windows.yml",
       "retentionDays": 7,
       "declaresEphemeral": false,
-      "declaresNoDurableReceipt": false
+      "declaresNoDurableReceipt": false,
+      "drive": null
     },
     {
       "family": "g3-content-inventory",
@@ -527,7 +598,8 @@
       "workflow": ".github/workflows/g3-content-inventory-acquisition.yml",
       "retentionDays": 7,
       "declaresEphemeral": false,
-      "declaresNoDurableReceipt": false
+      "declaresNoDurableReceipt": false,
+      "drive": null
     }
   ],
   "totals": {
@@ -536,18 +608,72 @@
     "expired": 0,
     "families": 27,
     "byClass": {
-      "NON_DETERMINISTIC_ACQUISITION": 70,
+      "DURABLE_ON_DRIVE_UNRECORDED_IN_REPO": 4,
+      "NO_DURABLE_DESTINATION": 2,
+      "NON_DETERMINISTIC_ACQUISITION": 64,
       "REGENERABLE_AUDIT": 72,
       "HAS_DURABLE_RECEIPT": 6,
       "REGENERABLE_PACKAGE": 10,
       "REGENERABLE_VIEW": 10
     },
     "bytesByClass": {
-      "NON_DETERMINISTIC_ACQUISITION": 5700362792,
+      "DURABLE_ON_DRIVE_UNRECORDED_IN_REPO": 3797718654,
+      "NO_DURABLE_DESTINATION": 1022896773,
+      "NON_DETERMINISTIC_ACQUISITION": 879747365,
       "REGENERABLE_AUDIT": 33371802,
       "HAS_DURABLE_RECEIPT": 6267303,
       "REGENERABLE_PACKAGE": 596762,
       "REGENERABLE_VIEW": 204764
+    }
+  },
+  "driveVerification": {
+    "ephemeral-second-editorial-40-pdf": {
+      "class": "DURABLE_ON_DRIVE_UNRECORDED_IN_REPO",
+      "folder": "02 — SECOND EDITORIAL 40",
+      "folderId": "1qba3eUdOo0x4Sp2T1viB_MMdWQf80UtZ",
+      "objects": 40,
+      "bytes": null,
+      "sha256Present": true,
+      "manifest": {
+        "name": "SECOND EDITORIAL 40 — MANIFEST RIGHTS SHA256.zip",
+        "id": "1bHbwp7AoS2F645_BZhNVNTjWfKYoHm4g",
+        "bytes": 25419,
+        "sha256": "f363ec567be8a40cd5828d251e288572270c4368f5940602c0b29548b4a7e547"
+      },
+      "observed": "40 PDF в четырёх шардах 01-10 / 11-20 / 21-30 / 31-40, у каждого серверный sha256Checksum; рядом ZIP с манифестом прав и SHA-256.",
+      "missing": "В репозитории нет квитанции, связывающей ID папки и sums с манифестом."
+    },
+    "ephemeral-commons-strict-literary-pdf-40plus": {
+      "class": "DURABLE_ON_DRIVE_UNRECORDED_IN_REPO",
+      "folder": "01 — COMMONS STRICT 40",
+      "folderId": "1DSfzT3YJC19iI0YG9IjfOXybVilgnQFJ",
+      "objects": 9,
+      "bytes": 610192501,
+      "sha256Present": true,
+      "manifest": {
+        "name": "commons_strict_sha256_verification.txt",
+        "id": "1PvXKzW6Oq1U7qP-j0FLIXx_gv19ogez9",
+        "bytes": 3110,
+        "sha256": null
+      },
+      "observed": "Девять ZIP-шардов (01-10 / 11-20 / 21-30 / 31-40, по частям A/B/C), сумма размеров 610 192 501 Б против 610 183 443 Б заявленных для 40 PDF; файл проверки перечисляет 40 из 40 «OK».",
+      "missing": "В репозитории нет квитанции, связывающей ID папки и суммы шардов с манифестом."
+    },
+    "ephemeral-official-core-acquisition-59-v2": {
+      "class": "NO_DURABLE_DESTINATION",
+      "folder": null,
+      "folderId": null,
+      "objects": 0,
+      "bytes": 0,
+      "sha256Present": false,
+      "manifest": {
+        "name": "2026-07-30 — OFFICIAL CORE ACQUISITION 59 — V2 MANIFEST.zip",
+        "id": "1EccGOxBl74_8X-03tRwQz2W_J-3N9phB",
+        "bytes": 19137,
+        "sha256": null
+      },
+      "observed": "На Drive только манифест 19 137 Б и документ статуса; STEPBible, morphhb и SBLGNT поиском не обнаружены — это же записано в самом документе статуса от 2026-07-30.",
+      "missing": "Сами наборы данных. Артефакт CI на 123 193 373 Б истекает 2026-11-24."
     }
   },
   "deadlines": {
