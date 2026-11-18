@@ -270,6 +270,7 @@
 - Факсимиле Ашшера, p. 567: имя Амвросия в сноске.
 - Gomes 2003, p. 741–743 (соответствие 1888 г.).
 - Банер-изд. Беркхофа: точные страницы пп. 1, 2, 5.
+  > **Снято (раунд 99, 2026-11-17; §22).** Сн. 46 = p. 393 (п. 1(d), переход на p. 394), сн. 47 = pp. 398–399, сн. 48 = p. 399 — EXACT; п. 2 («dubious and very unsatisfactory») — p. 394.
 - Книга Дэниела, p. 360–363: чьё многоточие у Куйпера.
 - Преподавательские должности Куйпера до 1959 г. по независимому источнику.
 - *LW* 26, p. 277, 285.
@@ -639,6 +640,8 @@
   - дословная латынь Урсина;
   - печатные страницы скана Беркхофа.
 
+> **Снято из HOLD (раунд 99, 2026-11-17; §22).** Berkhof, p. 125 — локатор EXACT по изданию Eerdmans с той же пагинацией, что у статьи (калибровка по сн. 46–48). Печатные страницы для листов выше: л. 151 = p. 118, л. 153 = p. 119, л. 157 = p. 122, л. 158 = p. 123, л. 159 = p. 124. Список HOLD выше сохранён как HISTORICAL.
+
 Вердикты S1–S5 не меняются. Умысел не утверждается.
 
 ## 17. Раунд 94 (2026-11-17): Кальвин на Гал. 5:12 (с. 4, сн. 14) — латынь; Рим. 5:17–18; заключение (с. 35–36) против основной части
@@ -820,5 +823,38 @@
 - **Метод:** правило курсива CO 2 подтверждено и предисловием (CO 1, л. 54), и сличением текста.
 - **Снято из HOLD:** CO 1 (текст 1539–1554 гг.). Визуальная проверка курсива CO 2 больше не нужна для вердикта (остаётся как желательная).
 - **HOLD:** русский том РГГУ, т. 1, с. 465.
+
+Вердикты S1–S5 не меняются. Умысел не утверждается.
+
+## 22. Раунд 99 (2026-11-17): печатные страницы Беркхофа — сн. 93 (p. 125) и сн. 46–48 (pp. 393, 398–399)
+
+**Повод.** В §16 (раунд 93) текст Беркхофа сверен по скану без пагинации (IA `systematic-theology-by-louis-berkhof_202405`, «листы»). Локатор сн. 93 «p. 125» и точные страницы для сн. 46–48 (§9.3) оставались в HOLD.
+
+### 22.1. Источники
+
+- (а) **L. Berkhof, *Systematic Theology*** (W. B. Eerdmans), IA `berkhof-louis-systematic-theology-w.-b.-eerdmans` (`ia601902`, dir `/23/items/…`): текстовый PDF с печатными колонтитулами страниц (напр., л. 399: «THE PURPOSE AND EXTENT OF THE ATONEMENT 399»); `page_numbers.json` — общая уверенность 82. Соответствие листов страницам: л. 113 = p. 118 (уверенность 100), л. 114 = p. 119, л. 117 = p. 122, л. 118 = p. 123, л. 119 = p. 124, л. 120 = p. 125 (93); л. 392 = p. 393, л. 393 — пустой, л. 394 = p. 394, л. 399 = p. 399. **Класс A2**: издание Banner of Truth 2003, которое цитирует статья, не открыто, но пагинация совпадает (калибровка — ниже, (б)).
+- (б) **Калибровка по сн. 46–48** (те же страницы, что у статьи по Banner 2003):
+  - сн. 46, «p. 393»: фраза п. 1(d) «…accrue to the benefit of the non-elect» начинается на p. 393 и продолжается на p. 394 («of their close association with the people of God…»). **Совпадает.**
+  - сн. 47, «pp. 398–399»: «…many benefits of the cross of Christ do actually — and that also according to the plan of God — accrue to the benefit of those who do not accept Christ by faith. They believe that the blessings of common grace also result from the atoning work of Christ» — переход с p. 398 на p. 399. **Совпадает.**
+  - сн. 48, «p. 399»: Еф. 1:10, Кол. 1:20 (ангельский мир), «a new heaven and a new earth… the lower creation will also share, Rom. 8:19-22». **Совпадает.**
+  - Три независимые точки совпадения показывают, что пагинация этого PDF равна пагинации издания статьи.
+
+### 22.2. Сверка
+
+| Место | Тезис статьи | Состоятельность | Факты |
+|---|---|---|---|
+| С. 29, сн. 93: «Ни одно из исторических кальвинистских вероисповеданий не следует супралапсарианской схеме» (Berkhof, p. 125) | Факт об исповеданиях | ✓ | **ACCURATE; локатор EXACT.** P. 125: «Our confessional standards embody the infralapsarian position, **but do not condemn Supralapsarianism. It was felt that this view was not necessarily inconsistent with Reformed theology.** And the conclusions of Utrecht, adopted in 1908 by our Church, state that, while it is not permissible to represent the supralapsarian view as the doctrine of the Reformed churches in the Netherlands, it is just as little permissible to molest any one who cherishes that view for himself». Ср. p. 123: «have always adopted the infralapsarian position, even though they have never condemned, but always tolerated, the other view» |
+| То же — объём цитирования | — | Мягко | **`CONTEXT_OMITTED` (мягко).** Оговорка о терпимости стоит **на той же странице**, что и использованный факт. Статья её не приводит и на с. 30 пишет, что супралапсарианство «делает Бога причиной гибели невинных людей». При этом статья сама относит все три схемы к кальвинизму (с. 30), так что прямого противоречия источнику нет. Это уточняет пометку §16 («статья опускает „always tolerated“»), теперь с точной страницей |
+| §16 — листы скана → печатные страницы | — | — | л. 151 → **p. 118** (Кальвин «clearly a Supralapsarian» в исходном смысле; список «later Supralapsarians»); л. 153 → **p. 119** («It is sometimes represented as if…»; «abhor the idea of a tyrannical God»; начало порядка (a)–(d), с переходом на следующую страницу); л. 157 → **p. 122** («hardly correct, though it may be true of some Supralapsarians»); л. 158 → **p. 123** («never condemned, but always tolerated»; председатели Дорта и Вестминстера — супралапсарии); л. 159 → **p. 124** («Sin is not the ultimate cause of reprobation»; «not… absolutely antithetical»). Вердикты §16 не меняются, у них появляются печатные страницы |
+| Сн. 46–48 (с. 11–12): страницы | — | ✓ | **Локаторы EXACT** (см. 22.1 (б)). Пропущенный п. 2 («This dubious and very unsatisfactory view…», §9) стоит на **p. 394** — на следующей странице после сн. 46, внутри диапазона, который статья цитирует (pp. 393–399) |
+
+### 22.3. Итог раунда 99
+
+- **Новые вердикты:**
+  - сн. 93 — ACCURATE, локатор p. 125 EXACT; оговорка «do not condemn… not necessarily inconsistent with Reformed theology» на той же странице опущена — `CONTEXT_OMITTED` (мягко);
+  - сн. 46, 47, 48 — локаторы EXACT.
+- **Печатные страницы** для цитат §16: pp. 118, 119, 122, 123, 124.
+- **Снято из HOLD:** Berkhof, p. 125; «Банер-изд. Беркхофа: точные страницы» (§9.3); «печатные страницы скана Беркхофа» (§16).
+- **HOLD без изменений:** Lewis & Demarest (на IA есть, но `access-restricted-item`: поиск по тексту недоступен); Тиссен, p. 104; Эриксон, с. 779.
 
 Вердикты S1–S5 не меняются. Умысел не утверждается.

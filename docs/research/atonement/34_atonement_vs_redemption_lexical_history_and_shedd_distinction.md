@@ -186,6 +186,10 @@
   - **Первая часть цитаты** — 1539 г. по существу (переписана в 1559 г.). **Ключевая фраза** «carnem quam a nobis accepit, obtulisse in sacrificium» — 1559 г., установлено прямым сличением (SUPPORTED).
   - **«В более поздних комментариях»** — `CHRONOLOGY_PARTIAL` повышен с PROBABLE до SUPPORTED.
   - Вердикты S1–S5 не меняются. Документ: REPASS, §21.
+- **раунд 99 (2026-11-17, AGENT 2):** §3 (S197), новый §4.182 (Q178): печатные страницы Беркхофа по изданию Eerdmans с пагинацией статьи.
+  - **Сн. 93 (p. 125):** ACCURATE, локатор EXACT; оговорка «do not condemn Supralapsarianism… not necessarily inconsistent with Reformed theology» на той же странице опущена — `CONTEXT_OMITTED` (мягко).
+  - **Сн. 46–48 (pp. 393, 398–399, 399):** локаторы EXACT (калибровка). Листы §4.176 → pp. 118, 119, 122, 123, 124.
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §22.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -545,6 +549,7 @@
 | S194 *(раунд 96, 2026-11-17)* | (а) *Ioannis Calvini Institutio religionis christianae… triplici forma*, ed. Baum, Cunitz, Reuss (Brunsvigae: Schwetschke, 1869 = CO 2, текст 1559 г.), IA `ioanniscalvinii00cunigoog` (d1 `ia800400`, dir `/5/items/…`): лл. 483–484 = col. 946–948 (IV.14.7). (б) *Joannis Calvini opera selecta*, ed. P. Barth, vol. I (München, 1926), *Institutio* 1536, гл. IV, IA `joanniscalviniop0001calv` (d1 `ia601803`, dir `/17/items/…`): лл. 136–137 (пагинация 1536 г. [103]–[104]): «Qualiter omnibus in salutem oblatus a patre ac propositus est Christus, non tamen ab omnibus agnitus exceptusque est». | (а), (б) A1 |
 | S195 *(раунд 97, 2026-11-17)* | CO 2 (*Institutio… triplici forma*, ed. Baum, Cunitz, Reuss, 1869), IA `ioanniscalvinii00cunigoog`: л. 8 — предисловие («postrema additamenta… typis cursivis sive italicis… excudenda curaremus»); лл. 181–182 = col. 342–343 (II.12.1–3: «ut carnem nostram in satisfactionis pretium iusto Dei iudicio sisteret»; «communem naturam pignus esse nostrae cum filio Dei societatis… carnem quam a nobis accepit, obtulisse in sacrificium…»). Контроль: OS I (1536), поиск «a nobis accepit» — 0. | A1 (определение слоя 1559 г. — по признаку курсива через OCR, визуально не проверено) |
 | S196 *(раунд 98, 2026-11-17)* | CO 1 = CR 29 (*Ioannis Calvini Opera quae supersunt omnia*, t. I, ed. Baum, Cunitz, Reuss; Brunsvigae: Schwetschke, 1863; репринт Johnson), IA `operaquaesupersu0029calv` (`ia803102`, dir `/14/items/…`): л. 54 — предисловие к CO 2 (романский шрифт = 1550–1554, курсив = новое 1559 г.); л. 65 — предисловие к тексту 1539–1554 гг. (романский = 1539, курсив = 1543/1545, мелкий = 1550/1553/1554); лл. 325–326 = col. 517–520 (cap. VII (IV) «Symboli explicatio», §8–§12; §10: «Prodiit ergo verus homo… ut carnem nostram in satisfactionem iusto Dei iudicio statueret ac sisteret, ut in eadem carne peccati poenam persolveret»; §11 — о манихеях). Поиск по тому: «debellasse» — 0; «a nobis accepit» — нет. | A1 |
+| S197 *(раунд 99, 2026-11-17)* | L. Berkhof, *Systematic Theology* (W. B. Eerdmans), IA `berkhof-louis-systematic-theology-w.-b.-eerdmans` (`ia601902`, dir `/23/items/…`; текстовый PDF с печатными колонтитулами; `page_numbers.json`, уверенность 82): л. 113 = p. 118; л. 114 = p. 119; л. 117 = p. 122; л. 118 = p. 123; л. 119 = p. 124; л. 120 = p. 125 («Our confessional standards embody the infralapsarian position, but do not condemn Supralapsarianism…»; Утрехт 1908); л. 392/394 = pp. 393/394 (п. 1(d); п. 2 «dubious and very unsatisfactory»); л. 399 = p. 399 (колонтитул «…ATONEMENT 399»; Еф. 1:10; Кол. 1:20; Рим. 8:19–22). Калибровка с Banner of Truth 2003 — по сн. 46–48 статьи (3 точки). | A2 (пагинация издания статьи установлена калибровкой; само издание Banner 2003 не открыто) |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8102,8 +8107,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.179 | Q175 | «Наставление» IV.14.7 (сн. 12) по латыни 1559 и 1536 гг.: ACCURATE; особенности русского перевода («oblatus» опущено). Фраза — уже 1536 г., поэтому «в более поздних комментариях» верно; `CHRONOLOGY_UNSUPPORTED` §4.177 снят (р. 96) |
 | 4.180 | Q176 | «Наставление» II.12.3 (сн. 11) по латыни CO 2: ACCURATE; в русском переводе «carnem nostram» → «своё тело»; ключевая фраза — вероятно слой 1559 г. (курсив CO 2), поэтому «в более поздних комментариях» — `CHRONOLOGY_PARTIAL` (р. 97) |
 | 4.181 | Q177 | II.12.3 (сн. 11) по CO 1 (1539–1554): первая часть — 1539 г., ключевая фраза — 1559 г. (SUPPORTED); `CHRONOLOGY_PARTIAL` повышен до SUPPORTED; метод курсива CO 2 подтверждён (р. 98) |
+| 4.182 | Q178 | Печатные страницы Беркхофа: сн. 93 (p. 125) — ACCURATE, локатор EXACT, оговорка о терпимости на той же странице опущена (`CONTEXT_OMITTED`, мягко); сн. 46–48 — EXACT; листы §4.176 → pp. 118–124 (р. 99) |
 
-⇒ разделов с `Q` — **174**, разделов §4.x — **176**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **175**, разделов §4.x — **177**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -9123,6 +9129,8 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 
 **Чего нет.** Berkhof, p. 125 по изданию Banner of Truth 2003 г.; Тиссен, p. 104; Эриксон, с. 779; дословная латынь Урсина; печатные страницы загруженного скана Беркхофа.
 
+> **Снято из HOLD (раунд 99, 2026-11-17; §4.182, S197).** Berkhof, p. 125 — EXACT; печатные страницы скана: л. 151 = p. 118, л. 153 = p. 119, л. 157 = p. 122, л. 158 = p. 123, л. 159 = p. 124. Строка «Чего нет» выше сохранена как HISTORICAL.
+
 Вердикты S1–S5 не меняются.
 
 ### 4.177. Q173 — Кальвин на Гал. 5:12 и Рим. 5:17–18 по латыни (*Opera*, 1667); заключение статьи (с. 35–36) против основной части (раунд 94, 2026-11-17)
@@ -9214,6 +9222,21 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 6. **Что не меняется.** Слой 1559 г. не ослабляет цитату — это окончательная редакция Кальвина. Довод статьи об объёме (`NON_SEQUITUR`, §4.175 / REPASS §15) раундом не затронут.
 
 **Чего нет.** Русский том РГГУ (т. 1, с. 465). Визуальная проверка курсива CO 2 для вердикта больше не нужна.
+
+Вердикты S1–S5 не меняются.
+
+### 4.182. Q178 — Печатные страницы Беркхофа: сн. 93 (p. 125) и сн. 46–48 (раунд 99, 2026-11-17)
+
+**Повод.** §4.176 сверил текст Беркхофа по скану без пагинации; локатор сн. 93 «p. 125» и точные страницы сн. 46–48 оставались в HOLD. Полная таблица — REPASS-документ, §22. Источники — S197.
+
+**Ответы.**
+1. **Издание с пагинацией статьи найдено.** IA `berkhof-louis-systematic-theology-w.-b.-eerdmans` — текстовый PDF с печатными колонтитулами. Совпадение с Banner of Truth 2003 проверено по трём сноскам статьи: сн. 46 (p. 393 — п. 1(d), переход на p. 394), сн. 47 (pp. 398–399 — блага общей благодати «result from the atoning work of Christ»), сн. 48 (p. 399 — Еф. 1:10, Кол. 1:20, Рим. 8:19–22). Все три — **EXACT**.
+2. **Сн. 93 — ACCURATE, локатор EXACT.** P. 125: «Our confessional standards embody the infralapsarian position, but do not condemn Supralapsarianism. It was felt that this view was not necessarily inconsistent with Reformed theology». Далее — выводы Утрехта (1908): нельзя выдавать супралапсарианство за учение Реформатских церквей Нидерландов, но так же нельзя «molest any one who cherishes that view for himself».
+3. **`CONTEXT_OMITTED` (мягко).** Оговорка о терпимости стоит на той же странице, что и использованный факт; в статье её нет, а на с. 30 сказано, что супралапсарианство «делает Бога причиной гибели невинных людей». Прямого противоречия источнику нет: статья сама называет все три схемы кальвинистскими (с. 30).
+4. **Печатные страницы для цитат §4.176:** «clearly a Supralapsarian» и список «later Supralapsarians» — p. 118; «It is sometimes represented as if…», «abhor the idea of a tyrannical God», начало порядка (a)–(d) — p. 119 (порядок продолжается на следующей странице); «it may be true of some Supralapsarians» — p. 122; «never condemned, but always tolerated» — p. 123; «Sin is not the ultimate cause of reprobation», «not… absolutely antithetical» — p. 124. Вердикты §4.176 не меняются.
+5. **Сн. 46–48.** Пропущенный в статье п. 2 («This dubious and very unsatisfactory view…») стоит на p. 394 — между цитируемыми pp. 393 и 398.
+
+**Чего нет.** Lewis & Demarest (на IA есть два экземпляра, оба `access-restricted-item`, поиск по тексту недоступен); Тиссен, p. 104; Эриксон, с. 779.
 
 Вердикты S1–S5 не меняются.
 
