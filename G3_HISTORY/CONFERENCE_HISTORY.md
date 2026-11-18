@@ -16,15 +16,15 @@ This closes an important chronology point:
 
 These are three different dates and must not be collapsed into a single `founded in 2013/2020` sentence without qualification.
 
-## Confirmed / strongly corroborated growth markers
+## Attendance and growth markers — reported figures and evidence status
 
-| Year | Approx. attendance | Evidence status | Notes |
-|---|---:|---|---|
+| Year | Reported attendance / scope | Evidence status | Notes |
+|---|---|---|---|
 | 2013 | ~750 | CORROBORATED | Multiple participant/retrospective sources. Tim Challies says he spoke at the debut event and that the first couple were hosted in/by Pray’s Mill; later contemporary histories report ~750. Exact registration ledger still not acquired. |
 | 2017 | 1,300+ for major Horn–White debate | PARTIAL | Debate audience, not necessarily whole-conference attendance. Do not use as total conference figure. |
-| 2020 | ~5,000–5,600 | CORROBORATED | Contemporary participant accounts place it around 5,000; later G3-linked histories give 5,600. Treat as range until original official attendance statement is pinned. |
-| 2021 | ~6,500 | VERIFIED_PRIMARY + CORROBORATED | FY2021 Form 990 program description says conference attendance increased to 6,500; independent participant histories agree. |
-| 2023 | ~8,200; reports range above 8,000 | CORROBORATED | Contemporaneous attendee Elizabeth Prata reports 8,200; other participant/exhibitor reports exceed 8,000. Exact official final attendance remains to be pinned. |
+| 2020 | G3 TY2020 Form 990: 5,600; G3 retrospective: 5,600; participant estimates: `over 5,000` / `about 5,500` | G3-filed statement + same-organization retrospective + attendee/exhibitor estimates; no independent count | The TY2020 Form 990, filed 2021-04-01, says G3 “Grew to 5,600 attendees at the 2020 January national conference” (G3-S158); no method is stated and it is not an independently audited headcount. G3's official History page (2023 archive capture) also says 5,600 (G3-S156), but is not independent corroboration of G3's own filing. Chris Anderson / Church Works Media describes attendance as about 5,000 and, in a passage about conference demand, says “Over 5,000 people” (G3-S060); attendee Elizabeth Prata estimates about 5,500 (G3-S155). These are reported figures, not registration data or independently verified headcounts; do not treat them as a verified range. |
+| 2021 | G3 FY2021 Form 990: 6,500; attendee estimate: `about 6,500` | G3-filed statement + participant estimate; independence/method unestablished | The Form 990 program description says attendance increased to 6,500 (G3-S002). Jeff Crotts of Anchorage Grace, writing as an attendee, estimates “about 6,500 in attendance this year” (G3-S157). The numerical match does not establish an independent count; neither source supplies methodology or attendance records. |
+| 2023 | G3-reported 8,300; attendee reports include 8,200 and “8,000+” | VERIFIED_PRIMARY (self-report; not independently audited) | FY2023 Form 990 Part III reports 8,300. Prata’s Day 1 caption says Virgil Walker welcomed 8,200 attendees; her Day 3 post uses “8000 other people”; D. M. Green’s recap gives 8,300. These are dated reports, not independent audits. See G3-S002, G3-S059, G3-S151–G3-S152. |
 
 ## Phase 1 — 2013–2017: church-hosted annual conference
 
@@ -88,6 +88,8 @@ explicitly says the 2016 conference concerns **the doctrine of the Trinity**. Th
 
 Official archive labels surviving sessions as **`Reformation 500`**. The exact full official schedule still needs a single pinned route, but archive sessions strongly establish the theme.
 
+In a Jan. 18, 2025 publisher transcript (G3-S153), Buice retrospectively says that in 2017 G3 moved its conference from the church campus to a convention center, and that “after about 2020” it shifted toward a content-producing ministry. This is Buice's recollection as rendered in the transcript, not a contemporaneous venue record; the audio was not played or checked against the transcript.
+
 ## Phase 2 — 2018–2020: venue expansion and national scale
 
 ### 2018 — Knowing God / discipleship
@@ -106,6 +108,8 @@ preserves a heavily missions-centered program: mission, church planting, context
 
 G3’s own later `The Mission of God Study` explicitly says its curriculum was based on sermons preached at the **2019 G3 National Conference**.
 
+An exact archived official program capture (G3-S145) enumerates Main Sessions 1–16 and a separate Q&A item. The GNL catalog (G3-S146) includes corresponding records and identifies Session 11 as Voddie Baucham’s “The Missionary Character of the Abrahamic Covenant” (item `207429`). This confirms catalog metadata and the published archive program—not the contents of the recordings or that each recording was delivered as listed. The audio was not played.
+
 ### 2020 — Worship
 
 Official archive:
@@ -116,11 +120,11 @@ labels the conference `Worship` and includes sessions from John MacArthur, Voddi
 
 Tim Challies’ Jan. 20, 2020 first-person report says he had just spoken at the annual G3 Conference in Atlanta and participated in a Q&A with MacArthur, Washer, Baucham, Lawson and Buice. This is a useful independent contemporary anchor for the broad conservative-Reformed coalition at that point.
 
-By 2020, participant accounts put attendance around 5,000; later G3-linked historical material says 5,600. **Publication wording: roughly 5,000–5,600** until the original official attendance record is acquired.
+G3's TY2020 Form 990, filed 2021-04-01, says, “Grew to 5,600 attendees at the 2020 January national conference” (`G3-S158`). This is G3's near-contemporary filed statement, but no count method or registration record is disclosed and it is not an independently audited headcount. G3's official History page later states 5,600 retrospectively (`G3-S156`); as another G3 statement, it is not independent corroboration of the filing. Participant/exhibitor Chris Anderson says attendance grew to about 5,000 and, in a passage about conference demand, “Over 5,000 people” (`G3-S060`); attendee Elizabeth Prata estimates about 5,500 (`G3-S155`). These are distinct reports, not a verified 5,000–5,600 interval or independently verified headcount. Under Q014, registration/final-count records and counting methods remain unacquired; do not write a single established total.
 
-A concrete 2020 wide-audience photograph is now source-pinned in `MEDIA_LEDGER.md` to a contemporaneous Church Works Media report, but remains `PERMISSION_REQUIRED`.
+A concrete 2020 wide-audience photograph is source-pinned in `MEDIA_LEDGER.md` to the Church Works Media report (`G3-M017`), but remains `PERMISSION_REQUIRED`. The photograph is a visual illustration, not a quantitative attendance record.
 
-## Phase 3 — 2021: 6,500 and formal institutional scale
+## Phase 3 — 2021: 6,500 reported attendance and formal institutional scale
 
 Official archive:
 
@@ -128,14 +132,16 @@ Official archive:
 
 labels the 2021 conference **`Christ`** and preserves a predominantly Christological/theological main-session program. It also includes a session on Black Liberation Theology, demonstrating that culture/ideology disputes existed inside an otherwise strongly theological program.
 
+The event-specific Wayback capture dated 2021-09-19 (G3-S147) labels the event `G3 2021 | Christ`, gives the theme line `Christ is supreme over all`, and lists Sep. 30–Oct. 2 in Atlanta. It is a pre-event announcement and does not establish that every advertised speaker or activity appeared as scheduled.
+
 FY2021 Form 990 program text states that G3:
 
 - hired an Executive Director of Operations;
 - hired an Executive Vice President;
 - expanded online resources;
-- increased conference attendance to **6,500**.
+- reported that conference attendance increased to **6,500**.
 
-This is stronger than blog estimates because it is the organization’s own federal filing.
+This is a direct statement by G3 in its federal filing, but it does not disclose a counting method or establish an independently verified headcount. Jeff Crotts, writing as an attendee for Anchorage Grace Church, separately estimates “about 6,500 in attendance this year” (`G3-S157`). The matching figure does not establish that his estimate is independent of G3's reported number; underlying registration/attendance records remain unacquired.
 
 Tim Challies adds a different kind of primary evidence: before the 2021 event, Buice told him he was no longer sufficiently aligned with G3 and that renewed invitation would require signing the Dallas Statement and ceasing promotion/quotation of certain Christians. Challies declined. This is direct participant evidence of coalition narrowing after the broad first-eight-year era; it does not by itself adjudicate whether the boundary was theologically justified.
 
@@ -151,19 +157,23 @@ Official G3 study page:
 
 states that the curriculum was based on sermons preached at the **2023 G3 National Conference** and points readers to `The Sovereignty of God: The 2023 G3 National Conference` presentations.
 
-A contemporaneous official G3 article published immediately before the conference likewise states that attendees would gather under the thematic banner of **God's sovereignty**, with **13 main sessions and 15 breakout sessions**.
+The exact official G3 event-page capture dated 2023-09-17 (G3-S149) identifies the event as the G3 National Conference, gives the theme **`The Sovereignty of God`**, and enumerates Sessions 1–13 plus 15 separate breakout offerings. Session 7 is a plenary Q&A, so the count should not be paraphrased as 13 sermons or single-speaker talks.
+
+The AJC article published 2023-09-06 (G3-S148) also reports the announced Sep. 21–23 dates, GICC venue, theme, and that Ken Ham was planned as a guest speaker at one of 13 sessions. The article also calls it an “Answers in Genesis event”; the G3 program identifies it as the G3 National Conference. AJC is a pre-event announcement, not evidence of final attendance, full program delivery, or the later threat.
 
 This matters historically: political theology had become an explicit conference subject by 2023, but the national event's main thematic frame remained a recognizably theological doctrine-of-God theme.
 
+### Published schedule versus program delivered
+
+G3's pre-event schedule (capture 2023-09-17; G3-S150) lists Session 10 as a John MacArthur video sermon at 8:00 a.m. Saturday, followed by Session 11 Ken Ham at 9:00 and Sessions 12–13. Attendee Elizabeth Prata reports that the prerecorded MacArthur sermon was canceled and Ken Ham became the first speaker that morning (G3-S151); ChurchLeaders reports the revised schedule similarly (G3-S154). G3's Oct. 2 schedule capture lists Sessions 11–13 but omits Session 10 (G3-S150). These sources establish a change to the published plan, not a complete record of everything delivered. Do not state that all 13 numbered program items occurred.
+
 ### Attendance
 
-Contemporary sources report:
+- G3's FY2023 Form 990 Part III reports **8,300 attendees** at its national conference (G3-S002). This is a primary source for the number G3 reported, not an independently audited turnstile or ticket count.
+- Prata's separate Day 1 post caption describes Virgil Walker as welcoming **8,200 attendees** (G3-S059). Her Day 3 post uses the rounded phrase “8000 other people” (G3-S151); the latter wording does not negate the separate Day 1 report.
+- D. M. Green's attendee recap gives 8,300, but does not identify an independent counting method and includes a session list that should not be used to establish that the canceled MacArthur video was delivered (G3-S152).
 
-- 8,000+ registered shortly before the conference;
-- Elizabeth Prata, attending and photographing the event, reports **8,200 attendees**;
-- another exhibitor/participant report gives a figure above 8,000.
-
-Exact G3 final attendance remains `COARSE_LOCATOR_ONLY` until a primary event record is acquired. The prudent publication formulation is **roughly 8,200 / more than 8,000**, attributed to contemporaneous attendee reporting rather than to G3's own final count.
+The prior **8,200** figure is retained as a contemporaneous attendee-reported estimate, not a verified count. The earlier statement that no G3-reported number was pinned is superseded by the Form 990 self-report of **8,300**. Whether either figure equals an independently verified final physical headcount remains unestablished.
 
 ### Political-theology dispute
 

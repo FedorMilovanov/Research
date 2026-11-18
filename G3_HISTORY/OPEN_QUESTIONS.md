@@ -168,6 +168,10 @@ No quantitative ideological percentage may be published until a reproducible dat
 
 Distinguish registrations, announced attendance and actual attendance.
 
+**2020 update (2026-11-18):** G3's TY2020 Form 990, filed 2021-04-01, states, “Grew to 5,600 attendees at the 2020 January national conference” (`G3-S158`). This is a near-contemporary primary statement by the organization in its federal filing, but the filing does not disclose a counting method or provide attendance/registration records and is not an independent audit. G3's archived History page later gives the same 5,600 figure (`G3-S156`); it is another statement by G3, not independent corroboration. Chris Anderson / Church Works Media describes attendance as about 5,000 and, in a passage about conference demand, says “Over 5,000 people” (`G3-S060`); attendee Elizabeth Prata estimates “about 5500” (`G3-S155`). These are differently attributed reports, not a verified range or headcount.
+
+**2021 update (2026-11-18):** G3's FY2021 Form 990 reports that attendance increased to 6,500 (`G3-S002`). Jeff Crotts, writing as an attendee for Anchorage Grace Church, estimates “about 6,500 in attendance this year” (`G3-S157`). The matching number does not establish that the attendee estimate is independent of G3's figure; neither source provides a count method or underlying records. Crotts also retrospectively says the event started in 2013 with 750 people; that is not a contemporary 2013 registration record. Q014 remains open for comparable year-by-year data, definitions, registration/final-count records and methods. Keep registrations, organization announcements/filings, participant estimates and actual verified attendance distinct.
+
 ### Q015 — relationship network
 
 **State:** `ACTIVE MAPPING / CONTROL INFERENCE BLOCKED`.
