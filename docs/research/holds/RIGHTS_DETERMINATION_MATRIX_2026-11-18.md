@@ -170,6 +170,25 @@
 
 Титул прочитан глазами: «SANCTI PATRIS NOSTRI CYRILLI ARCHIEPISCOPI ALEXANDRINI IN D. JOANNIS EVANGELIUM … EDIDIT POST AUBERTUM PHILIPPUS EDVARDUS PUSEY, A.M.», «VOL. I.», «Oxonii E TYPOGRAPHEO CLARENDONIANO MDCCCLXXII», карандашная помета «Opera. Vol. 3». Библиотечный номер тома (3) и печатный номер (I) расходятся; запись реестра описывает печатный.
 
+### 4.3 Предметы, на которые опирается корпус: статус заявлен у всех
+
+Метод: одно чтение <archive.org>/metadata/<id>/metadata на предмет; файлы не скачивались.
+
+| Предмет | Том | Год | `possible-copyright-status` | `copyright-region` | Спонсор / держатель | Кадров | ppi |
+|---|---|---|---|---|---|---:|---:|
+| `operacyrilli03cyriuoft` | 3 (печатный I) | 1868 | `NOT_IN_COPYRIGHT` | — | University of Toronto / Robarts - University of Toronto | 754 | 400 |
+| `operacyrilli04cyriuoft` | 4 (печатный II) | 1868 | `NOT_IN_COPYRIGHT` | — | University of Toronto / Robarts - University of Toronto | 758 | 400 |
+| `operacyrilli05cyriuoft` | 5 (печатный III) | 1868 | `NOT_IN_COPYRIGHT` | — | University of Toronto / Robarts - University of Toronto | 724 | 400 |
+| `sanctipatrisnos02pusegoog` | печатный II (Google, Michigan) | 1872 | `NOT_IN_COPYRIGHT` | `US` | Google / University of Michigan | 775 | — |
+| `indjoannisevang00pusegoog` | печатный II (Google, Wisconsin) | 1872 | `NOT_IN_COPYRIGHT` | `US` | Google / University of Wisconsin - Madison | 709 | 600 |
+| `patrologiaecurs25hopfgoog` | 74 | 1859 | `NOT_IN_COPYRIGHT` | `US` | Google / Harvard University | 641 | 600 |
+
+У всех шести предметов статус заявлен и одинаков: `NOT_IN_COPYRIGHT`. Это снимает вопрос «оцифровщик молчал» для всего корпуса, но не даёт лицензии: у трёх Google-предметов дополнительно указан `copyright-region: US`, то есть заявление локальное, а не всемирное. Практический вывод для C-25: целевые страницы существуют как изображения в трёх независимых каналах (758, 775 и 709 кадров), поэтому «сканов нет» — неверно; недоступен не объект, а скачивание из этой среды.
+
+Метаданные предмета: `notes: tight gutter`, `page_number_confidence: 96`. Число кадров у предмета (754) больше числа файлов в GitHub-инвентаре (i0001–i0718): расхождение не объяснено, кадры за пределами 718 не проверялись.
+
+Что это меняет для C-25 и подобных очередей: вопрос не «существуют ли сканы», а «кто скачает и прочитает». Ни один из шести предметов не открывается из среды, где собирался этот отчёт, поэтому визуальная сверка страниц остаётся делом человека с доступом к archive.org.
+
 Отсюда два честных пути закрытия восьми узлов — и оба требуют владельца, а не поиска:
 
 1. **Политика faithful reproduction.** Издание 1872 г. вне охраны (колофон осмотрен визуально),
@@ -186,6 +205,6 @@
 - Классификация опирается на дату и природу объекта, записанные в репозитории, а не на внешнюю проверку сроков охраны по юрисдикциям.
 - Внешние проверки выполнены только по api.github.com; archive.org, rca.org, opc.org, frcna.org, anglican.ca, catholic.com в этой сессии не открывались.
 - Отсутствие заявленной лицензии у оцифровщика не читается ни как разрешение, ни как запрет.
-- Проверка оцифровщика 2026-11-18 покрывает один предмет (`operacyrilli03cyriuoft`): метаданные остальных Pusey-томов (`operacyrilli04`, `operacyrilli05` и др.) не читались.
+- Проверка оцифровщика 2026-11-18 покрывает шесть предметов archive.org из числа цитируемых корпусом; остальные идентификаторы реестров не читались. Соответствие «кадр ↔ печатная страница» проверено только для т. I (титул прочитан визуально) и выведено из page_numbers.json для т. II; на других предметах оно не проверялось.
 
 Воспроизводимость: `python3 scripts/render_rights_matrix.py --check`.

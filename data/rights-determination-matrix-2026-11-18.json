@@ -503,6 +503,99 @@
         }
       ],
       "visualRead": "Титул прочитан глазами: «SANCTI PATRIS NOSTRI CYRILLI ARCHIEPISCOPI ALEXANDRINI IN D. JOANNIS EVANGELIUM … EDIDIT POST AUBERTUM PHILIPPUS EDVARDUS PUSEY, A.M.», «VOL. I.», «Oxonii E TYPOGRAPHEO CLARENDONIANO MDCCCLXXII», карандашная помета «Opera. Vol. 3». Библиотечный номер тома (3) и печатный номер (I) расходятся; запись реестра описывает печатный."
+    },
+    "corpusItems": {
+      "checkedAt": "2026-11-18",
+      "method": "одно чтение <archive.org>/metadata/<id>/metadata на предмет; файлы не скачивались",
+      "note": "Предметы, на которые опирается кирилловский корпус. Проверены не все: список охватывает те, что названы в реестрах волн 7–9 и в досье C-25.",
+      "items": [
+        {
+          "id": "operacyrilli03cyriuoft",
+          "volume": "3 (печатный I)",
+          "year": "1868",
+          "publisher": "Oxonium : Typ. Clar.",
+          "possibleCopyrightStatus": "NOT_IN_COPYRIGHT",
+          "copyrightRegion": null,
+          "sponsor": "University of Toronto",
+          "contributor": "Robarts - University of Toronto",
+          "scanningCenter": "uoft",
+          "imagecount": 754,
+          "ppi": 400,
+          "usedFor": "8 узлов PUSEY-V1 (титул, Praefatio, Erratum, Capita)",
+          "qualityNote": "Метаданные предмета: `notes: tight gutter`, `page_number_confidence: 96`. Число кадров у предмета (754) больше числа файлов в GitHub-инвентаре (i0001–i0718): расхождение не объяснено, кадры за пределами 718 не проверялись."
+        },
+        {
+          "id": "operacyrilli04cyriuoft",
+          "volume": "4 (печатный II)",
+          "year": "1868",
+          "publisher": "Oxonium : Typ. Clar.",
+          "possibleCopyrightStatus": "NOT_IN_COPYRIGHT",
+          "copyrightRegion": null,
+          "sponsor": "University of Toronto",
+          "contributor": "Robarts - University of Toronto",
+          "scanningCenter": "uoft",
+          "imagecount": 758,
+          "ppi": 400,
+          "usedFor": "OCR кн. VI–VII; целевые страницы 294–296 = кадры 306–308"
+        },
+        {
+          "id": "operacyrilli05cyriuoft",
+          "volume": "5 (печатный III)",
+          "year": "1868",
+          "publisher": "Oxonium : Typ. Clar.",
+          "possibleCopyrightStatus": "NOT_IN_COPYRIGHT",
+          "copyrightRegion": null,
+          "sponsor": "University of Toronto",
+          "contributor": "Robarts - University of Toronto",
+          "scanningCenter": "uoft",
+          "imagecount": 724,
+          "ppi": 400,
+          "usedFor": "идентификация томов; в выборке корпуса не читался"
+        },
+        {
+          "id": "sanctipatrisnos02pusegoog",
+          "volume": "печатный II (Google, Michigan)",
+          "year": "1872",
+          "publisher": "Oxonii, e typographeo Clarendoniano",
+          "possibleCopyrightStatus": "NOT_IN_COPYRIGHT",
+          "copyrightRegion": "US",
+          "sponsor": "Google",
+          "contributor": "University of Michigan",
+          "scanningCenter": "google",
+          "imagecount": 775,
+          "ppi": null,
+          "usedFor": "второй канал к тем же страницам т. II; в корпусе читался только OCR"
+        },
+        {
+          "id": "indjoannisevang00pusegoog",
+          "volume": "печатный II (Google, Wisconsin)",
+          "year": "1872",
+          "publisher": "Oxonii, e typographeo Clarendoniano",
+          "possibleCopyrightStatus": "NOT_IN_COPYRIGHT",
+          "copyrightRegion": "US",
+          "sponsor": "Google",
+          "contributor": "University of Wisconsin - Madison",
+          "scanningCenter": "google",
+          "imagecount": 709,
+          "ppi": 600,
+          "usedFor": "третий канал к тем же страницам; в корпусе не использовался"
+        },
+        {
+          "id": "patrologiaecurs25hopfgoog",
+          "volume": "74",
+          "year": "1859",
+          "publisher": "Parisiis",
+          "possibleCopyrightStatus": "NOT_IN_COPYRIGHT",
+          "copyrightRegion": "US",
+          "sponsor": "Google",
+          "contributor": "Harvard University",
+          "scanningCenter": "google",
+          "imagecount": 641,
+          "ppi": 600,
+          "usedFor": "PG 74, кол. 69–70 — второй контрольный канал для C-25"
+        }
+      ],
+      "reading": "У всех шести предметов статус заявлен и одинаков: `NOT_IN_COPYRIGHT`. Это снимает вопрос «оцифровщик молчал» для всего корпуса, но не даёт лицензии: у трёх Google-предметов дополнительно указан `copyright-region: US`, то есть заявление локальное, а не всемирное. Практический вывод для C-25: целевые страницы существуют как изображения в трёх независимых каналах (758, 775 и 709 кадров), поэтому «сканов нет» — неверно; недоступен не объект, а скачивание из этой среды."
     }
   },
   "summary": {
@@ -525,6 +618,6 @@
     "Классификация опирается на дату и природу объекта, записанные в репозитории, а не на внешнюю проверку сроков охраны по юрисдикциям.",
     "Внешние проверки выполнены только по api.github.com; archive.org, rca.org, opc.org, frcna.org, anglican.ca, catholic.com в этой сессии не открывались.",
     "Отсутствие заявленной лицензии у оцифровщика не читается ни как разрешение, ни как запрет.",
-    "Проверка оцифровщика 2026-11-18 покрывает один предмет (`operacyrilli03cyriuoft`): метаданные остальных Pusey-томов (`operacyrilli04`, `operacyrilli05` и др.) не читались."
+    "Проверка оцифровщика 2026-11-18 покрывает шесть предметов archive.org из числа цитируемых корпусом; остальные идентификаторы реестров не читались. Соответствие «кадр ↔ печатная страница» проверено только для т. I (титул прочитан визуально) и выведено из page_numbers.json для т. II; на других предметах оно не проверялось."
   ]
 }

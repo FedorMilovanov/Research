@@ -292,6 +292,34 @@ def render(matrix: dict) -> str:
             add("")
             add(byte["visualRead"])
             add("")
+    corpus = check.get("corpusItems")
+    if corpus:
+        add("### 4.3 Предметы, на которые опирается корпус: статус заявлен у всех")
+        add("")
+        add(f"Метод: {corpus['method']}.")
+        add("")
+        add("| Предмет | Том | Год | `possible-copyright-status` | `copyright-region` | Спонсор / держатель | Кадров | ppi |")
+        add("|---|---|---|---|---|---|---:|---:|")
+        for it in corpus["items"]:
+            add(
+                f"| `{it['id']}` | {it['volume']} | {it['year']} | `{it['possibleCopyrightStatus']}` | "
+                f"{('`' + it['copyrightRegion'] + '`') if it['copyrightRegion'] else '—'} | "
+                f"{it['sponsor']} / {it['contributor']} | {it['imagecount']} | {it['ppi'] or '—'} |"
+            )
+        add("")
+        add(corpus["reading"])
+        add("")
+        note = next(
+            (it.get("qualityNote") for it in corpus["items"] if it.get("qualityNote")), None
+        )
+        if note:
+            add(note)
+            add("")
+        add("Что это меняет для C-25 и подобных очередей: вопрос не «существуют ли сканы», а «кто "
+            "скачает и прочитает». Ни один из шести предметов не открывается из среды, где "
+            "собирался этот отчёт, поэтому визуальная сверка страниц остаётся делом человека с "
+            "доступом к archive.org.")
+        add("")
     add("Отсюда два честных пути закрытия восьми узлов — и оба требуют владельца, а не поиска:")
     add("")
     add("1. **Политика faithful reproduction.** Издание 1872 г. вне охраны (колофон осмотрен визуально),")
