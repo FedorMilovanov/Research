@@ -327,6 +327,56 @@
         "Ни один объект не проверялся на пригодность как доказательство: проверялась только уникальность места хранения.",
         "Папка не описана ни в одном документе репозитория до 2026-11-18 — это и было найдено."
       ]
+    },
+    {
+      "folder": "99 — QUARANTINE — ТЕСТЫ И НЕОПОЗНАННОЕ",
+      "folderId": "1oZlhSG9Y1U9MpO38mpV_Jco6GTrAXSEh",
+      "referencedInRepo": false,
+      "checkedAt": "2026-11-18",
+      "method": "list_files по ID папки и вложенных папок до четвёртого уровня; read_file_text для двух JSON и двух CSV; read_file_text на пустом документе вернул extraction_status=empty",
+      "contents": [
+        {
+          "name": "TEST — GOOGLE DRIVE CONNECTOR — 2026-07-30",
+          "id": "11q4Cb4kZd5Qv3CxV8jxQWTSXAjYPRo__",
+          "items": 1,
+          "what": "CHATGPT_DRIVE_CONNECTION_OK.txt, 91 B — проверка подключения.",
+          "status": "TECHNICAL"
+        },
+        {
+          "name": "02 — HISTORY AUDIT — FINDINGS & SAFE CLEANUP PLAN",
+          "id": "1F9Sgqc2aCcQP2plydI66ykpORXv_rT_R",
+          "items": 2,
+          "what": "Две пустые подпапки; в «01 — READABLE REPORTS» один Google Doc, который экспортируется пустым (extraction_status=empty, 3 байта).",
+          "status": "PLACEHOLDER_EMPTY"
+        },
+        {
+          "name": "90 — TECHNICAL AI ACCESS — НЕ КОНТЕНТ",
+          "id": "1OxRefJrtnJN2rvOoPFJtrFvI3Q9HOVMH",
+          "items": 3,
+          "what": "Манифесты технического прохода 2026-07-30 и распакованные копии посторонних архивов (git-архив истории чужого проекта, скриншоты сервиса Microlink).",
+          "status": "TECHNICAL"
+        }
+      ],
+      "census": {
+        "artifact": "AI_ACCESS_MANIFEST_20260730-192437.csv",
+        "artifactId": "1HBFJ4NuT4JBUentvgbmj4J-1u3W3bAes",
+        "bytes": 2262138,
+        "companionSummary": "AI_ACCESS_SUMMARY_20260730-192437.json",
+        "scanned": 6028,
+        "direct": 6026,
+        "largeSkipped": 2,
+        "maxFileMb": 90,
+        "maxItemsPerFolder": 75,
+        "errors": 0,
+        "created": "2026-07-30T19:25:02+03:00"
+      },
+      "verdict": "Исследовательского содержимого нет: тест подключения, пустой документ-заглушка и технические манифесты. Ценность одна и косвенная — манифест даёт счётчик объектов Drive на 2026-07-30 (6028 просканировано), но с оговорками, которые не позволяют считать его полным.",
+      "limits": [
+        "Манифест не читался построчно: заявлены только числа из его сводки (232 B JSON), сам CSV на 2 262 138 B не разбирался.",
+        "Счётчик 6028 — не население Drive: при обходе стоял потолок 75 объектов на папку и пропуск файлов больше 90 MB, поэтому это нижняя граница.",
+        "Снимок сделан 2026-07-30 и с тех пор не обновлялся; к текущей дате он не привязан.",
+        "Ни один объект внутри «05 — EXTRACTED LARGE ARCHIVES» не открывался: содержание определено по именам папок верхнего уровня."
+      ]
     }
   ]
 }
