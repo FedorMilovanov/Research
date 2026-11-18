@@ -76,7 +76,51 @@ ZIP-шардов, у каждого серверный `sha256Checksum`:
 нечем проверить, — а неверная сумма в квитанции хуже отсутствующей. Проверять нужно чтением,
 а не копированием.
 
-## 3. Чего эти квитанции не доказывают
+## 3. APPROVED CORE POET PORTRAITS 45 и APPROVED EPHEMERA 63
+
+Те же два класса объектов, что и выше, но наборы одобренные, а не полные. Оба живут в
+артефактах с retention 7–30 дней и оба уже имеют папки на Drive.
+
+**Портреты.** Папка `01 — APPROVED CORE POET PORTRAITS 45` (`1BcHMZEPJtTDbE9zXZnRLtjCBtvGG3S02`):
+
+| Объект | Drive ID | Байт | SHA-256 |
+|---|---|---:|---|
+| `01 — ESENIN BUNIN SEVERYANIN.zip` | `1p74lMCCL-4jBUoJAkTIMwlNc-Z44o29p` | 5 693 954 | `bbb49e26…a43effeb` |
+| `02 — BALMONT TYUTCHEV MAYKOV.zip` | `1npjCwiSvNAGv_uNB7gYmn4Q2TTj-dvRb` | 4 297 804 | `b6e8ffb4…0703609` |
+| `03 — BRYUSOV BLOK FET.zip` | `1TUIiE80Kuv0VIzeTGsTYwSYk8hUHfv4b` | 5 615 172 | `ee82a6eb…cf2074c` |
+| **Итого** | 3 шарда | **15 606 930** | |
+
+Рядом `PORTRAITS 45 — MANIFEST RIGHTS SHA256.zip` (`1wqrGOW86x_cHPW14Xe_6x9yvaYxJS8sD`, 23 433 Б).
+Важно: в самом allowlist-файле статус записан как `CURRENT LICENSE RECHECK REQUIRED` — квитанция
+про байты этого не отменяет.
+
+**Эфемериды.** Папка `02 — APPROVED EPHEMERA 63` (`1vfSja20qrEwQNuYDS1dI_WFZYxD18-_C`):
+
+| Объект | Drive ID | Байт | SHA-256 |
+|---|---|---:|---|
+| `01 — ORIGINALS 01-16.zip` | `14DsRdBd3zvEvR9JiF_2yAOL-agZfE7GU` | 3 942 853 | `12d846f9…8ab30341` |
+| `02 — ORIGINALS 17-32.zip` | `1yi5Vzi7DbTFVhJ5IaIAmTsXjDvFdm72C` | 30 333 112 | `b3e71942…e2093807` |
+| `03 — ORIGINALS 33-48.zip` | `1fVWuckOkgxHRTmdxyLqvfSJR35mjkRsi` | 60 674 985 | `7c2ca45b…b75ec8c29d` |
+| `04 — ORIGINALS 49-63.zip` | `1-JY6zCDgDp0I38oqXLZaQCbEfL20wef-` | 11 570 623 | `b216b40d…94f8234c` |
+| `90 — REVIEW CONTACT SHEETS AND CANDIDATES.zip` | `13JOBCx_Pu5FfIPOshYYEOMPBkPCRQndl` | 26 686 822 | `2b311c37…415e27a27` |
+| **Итого** | 5 объектов | **133 208 395** | |
+
+Рядом `EPHEMERA 63 — MANIFEST RIGHTS SHA256.zip` (`1XVd-P7ttZrWnvmow0A0s2Bb3KVN-Srp3`, 27 553 Б).
+
+**Честная оговорка по обоим наборам:** объёмы артефактов не сходятся с суммами шардов, и
+расхождение не объяснено. Для портретов артефакт 63 239 012 Б на два прогона (≈31,6 МБ на
+прогон) против 15,6 МБ на Drive — артефакт больше. Для эфемерид 213 327 748 Б на два прогона
+против 133,2 МБ на Drive — тоже больше. Возможные причины (в артефакт попадают промежуточные
+файлы, контрольные листы, несколько версий одного объекта) не проверялись. Поэтому здесь
+записано только то, что подтверждено: **папки и суммы существуют**, а не «байты совпадают».
+
+**Материал ревью** (`ephemeral-poet-portrait-review-v4` 316,2 МБ и
+`ephemeral-ephemera-review-candidates` 282,5 МБ) отдельной квитанции не имеет и не должен:
+на Drive лежит его итог — контрольные листы, `ephemera-candidates.csv` (1,2 МБ) и
+`ephemera-candidates.json` (1,7 МБ), то есть то, по чему принималось решение. Скачанные
+изображения кандидатов — расходный материал ревью, а не доказательство.
+
+## 4. Чего эти квитанции не доказывают
 
 - **Не доказывают права.** Оба корпуса собраны из открытых источников, но квитанция про байты.
   `RIGHTS_HOLD` и `PUBLICATION_HOLD` остаются как были.
@@ -89,7 +133,7 @@ ZIP-шардов, у каждого серверный `sha256Checksum`:
 - **Не вечны.** Значения сняты 2026-11-18. Перезапись объекта на Drive изменит сумму; квитанцию
   тогда пересобирают заново, а не «подправляют».
 
-## 4. Воспроизводимость
+## 5. Воспроизводимость
 
 ```text
 list_files(q="'1DSfzT3YJC19iI0YG9IjfOXybVilgnQFJ' in parents and trashed = false",

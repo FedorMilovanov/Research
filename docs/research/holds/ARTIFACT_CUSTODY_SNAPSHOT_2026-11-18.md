@@ -22,11 +22,12 @@
 
 | Класс | Артефактов | Байт | Что это значит |
 |---|---:|---:|---|
-| `DURABLE_ON_DRIVE_UNRECORDED_IN_REPO` | 4 | 3.80 ГБ | байты на Drive есть, квитанции в репозитории нет |
+| `DURABLE_ON_DRIVE_RECEIPTED` | 8 | 4.07 ГБ | байты на Drive есть, квитанция записана 2026-11-18 |
 | `NO_DURABLE_DESTINATION` | 2 | 1.02 ГБ | на Drive только манифест, объекты живут лишь в артефакте |
-| `NON_DETERMINISTIC_ACQUISITION` | 64 | 0.88 ГБ | перепрогон даёт другое состояние источника — байты не воспроизводятся |
+| `REVIEW_MATERIAL_ONLY` | 22 | 0.60 ГБ | артефакт — расходный материал ревью, хранению не подлежит |
 | `REGENERABLE_AUDIT` | 72 | 0.03 ГБ | пересобирается; потеря артефакта не теряет доказательство |
 | `HAS_DURABLE_RECEIPT` | 6 | 0.01 ГБ | есть квитанция хранения с Drive ID и SHA-256 |
+| `NON_DETERMINISTIC_ACQUISITION` | 38 | 0.00 ГБ | перепрогон даёт другое состояние источника — байты не воспроизводятся |
 | `REGENERABLE_PACKAGE` | 10 | 0.00 ГБ | заявка/пакет, а не сам объект |
 | `REGENERABLE_VIEW` | 10 | 0.00 ГБ | производная сборка из реестра репозитория |
 
@@ -34,13 +35,13 @@
 
 | Семья | n | ГБ | Класс | Создано | Истекает | retention | Объявлено |
 |---|---:|---:|---|---|---|---:|---|
-| `ephemeral-second-editorial-40-pdf` | 2 | 2.54 | `DURABLE_ON_DRIVE_UNRECORDED_IN_REPO` | 2026-11-17…2026-11-17 | 2026-11-24 | 7 | эфемерно, квитанции нет |
-| `ephemeral-commons-strict-literary-pdf-40plus` | 2 | 1.25 | `DURABLE_ON_DRIVE_UNRECORDED_IN_REPO` | 2026-11-17…2026-11-17 | 2026-11-24 | 7 | эфемерно, квитанции нет |
+| `ephemeral-second-editorial-40-pdf` | 2 | 2.54 | `DURABLE_ON_DRIVE_RECEIPTED` | 2026-11-17…2026-11-17 | 2026-11-24 | 7 | квитанция есть |
+| `ephemeral-commons-strict-literary-pdf-40plus` | 2 | 1.25 | `DURABLE_ON_DRIVE_RECEIPTED` | 2026-11-17…2026-11-17 | 2026-11-24 | 7 | квитанция есть |
 | `ephemeral-official-core-acquisition-59-v2` | 2 | 1.02 | `NO_DURABLE_DESTINATION` | 2026-11-17…2026-11-17 | 2026-11-24 | 7 | эфемерно, квитанции нет |
-| `ephemeral-poet-portrait-review-v4` | 11 | 0.32 | `NON_DETERMINISTIC_ACQUISITION` | 2026-11-01…2026-11-17 | 2026-12-01 | 30 | эфемерно, квитанции нет |
-| `ephemeral-ephemera-review-candidates` | 11 | 0.28 | `NON_DETERMINISTIC_ACQUISITION` | 2026-11-01…2026-11-17 | 2026-12-01 | 30 | эфемерно, квитанции нет |
-| `ephemeral-approved-ephemera-originals` | 2 | 0.21 | `NON_DETERMINISTIC_ACQUISITION` | 2026-11-17…2026-11-17 | 2026-11-24 | 7 | эфемерно, квитанции нет |
-| `ephemeral-approved-core-poet-portraits` | 2 | 0.06 | `NON_DETERMINISTIC_ACQUISITION` | 2026-11-17…2026-11-17 | 2026-11-24 | 7 | эфемерно, квитанции нет |
+| `ephemeral-poet-portrait-review-v4` | 11 | 0.32 | `REVIEW_MATERIAL_ONLY` | 2026-11-01…2026-11-17 | 2026-12-01 | 30 | расходный материал |
+| `ephemeral-ephemera-review-candidates` | 11 | 0.28 | `REVIEW_MATERIAL_ONLY` | 2026-11-01…2026-11-17 | 2026-12-01 | 30 | расходный материал |
+| `ephemeral-approved-ephemera-originals` | 2 | 0.21 | `DURABLE_ON_DRIVE_RECEIPTED` | 2026-11-17…2026-11-17 | 2026-11-24 | 7 | квитанция есть |
+| `ephemeral-approved-core-poet-portraits` | 2 | 0.06 | `DURABLE_ON_DRIVE_RECEIPTED` | 2026-11-17…2026-11-17 | 2026-11-24 | 7 | квитанция есть |
 | `total-cross-repo-source-audit` | 16 | 0.03 | `REGENERABLE_AUDIT` | 2026-10-26…2026-11-17 | 2026-11-25 | 30 | не объявлено |
 | `charnock-custody-v3-research-only` | 6 | 0.01 | `HAS_DURABLE_RECEIPT` | 2026-11-17…2026-11-17 | 2026-12-17 | 30 | квитанция есть |
 | `1peter-product-handoff` | 25 | 0.00 | `REGENERABLE_AUDIT` | 2026-11-01…2026-11-17 | 2026-12-01 | 30 | не объявлено |
@@ -85,6 +86,10 @@
 |---|---|---:|---:|---|
 | `ephemeral-second-editorial-40-pdf` | папка «02 — SECOND EDITORIAL 40» | 40 | — | есть |
 | `ephemeral-commons-strict-literary-pdf-40plus` | папка «01 — COMMONS STRICT 40» | 9 | 610 192 501 | есть |
+| `ephemeral-approved-core-poet-portraits` | папка «01 — APPROVED CORE POET PORTRAITS 45» | 3 | 15 606 930 | есть |
+| `ephemeral-approved-ephemera-originals` | папка «02 — APPROVED EPHEMERA 63» | 5 | 133 208 395 | есть |
+| `ephemeral-poet-portrait-review-v4` | папка «01 — PEOPLE & PORTRAITS» | 0 | — | нет |
+| `ephemeral-ephemera-review-candidates` | папка «01 — PEOPLE & PORTRAITS» | 0 | — | нет |
 | `ephemeral-official-core-acquisition-59-v2` | папки нет | 0 | — | нет |
 
 **`ephemeral-second-editorial-40-pdf`** — 40 PDF в четырёх шардах 01-10 / 11-20 / 21-30 / 31-40, у каждого серверный sha256Checksum; рядом ZIP с манифестом прав и SHA-256.
@@ -94,6 +99,22 @@
 **`ephemeral-commons-strict-literary-pdf-40plus`** — Девять ZIP-шардов (01-10 / 11-20 / 21-30 / 31-40, по частям A/B/C), сумма размеров 610 192 501 Б против 610 183 443 Б заявленных для 40 PDF; файл проверки перечисляет 40 из 40 «OK».
 
 Чего не хватает: В репозитории нет квитанции, связывающей ID папки и суммы шардов с манифестом.
+
+**`ephemeral-approved-core-poet-portraits`** — Три ZIP-шарда с серверными суммами и манифест прав. В самом allowlist-файле статус записан как CURRENT LICENSE RECHECK REQUIRED.
+
+Чего не хватает: Квитанция есть: docs/research/holds/CORPUS_CUSTODY_RECEIPTS_2026-11-18.md §3. Объём артефакта больше суммы шардов, причина расхождения не установлена.
+
+**`ephemeral-approved-ephemera-originals`** — Четыре шарда оригиналов (01-16, 17-32, 33-48, 49-63) плюс контрольный лист и кандидаты; у каждого серверная сумма.
+
+Чего не хватает: Квитанция есть: CORPUS_CUSTODY_RECEIPTS_2026-11-18.md §3. Артефакт больше суммы шардов — расхождение не объяснено.
+
+**`ephemeral-poet-portrait-review-v4`** — На Drive — итог ревью: контрольные листы и списки кандидатов. Скачанные изображения кандидатов на Drive не переносились и доказательством не являются.
+
+Чего не хватает: Ничего: расходный материал ревью не подлежит хранению как доказательство.
+
+**`ephemeral-ephemera-review-candidates`** — На Drive — контрольные листы, ephemera-candidates.csv (1,2 МБ) и ephemera-candidates.json (1,7 МБ): то, по чему принималось решение.
+
+Чего не хватает: Ничего по хранению; сами кандидаты — расходный материал.
 
 **`ephemeral-official-core-acquisition-59-v2`** — На Drive только манифест 19 137 Б и документ статуса; STEPBible, morphhb и SBLGNT поиском не обнаружены — это же записано в самом документе статуса от 2026-07-30.
 

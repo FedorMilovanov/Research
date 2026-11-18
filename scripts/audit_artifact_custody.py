@@ -98,7 +98,7 @@ DETERMINISM = {
 # `list_files` по идентификатору папки и `get_file` по самим объектам.
 DRIVE_VERIFICATION = {
     "ephemeral-second-editorial-40-pdf": {
-        "class": "DURABLE_ON_DRIVE_UNRECORDED_IN_REPO",
+        "class": "DURABLE_ON_DRIVE_RECEIPTED",
         "folder": "02 — SECOND EDITORIAL 40",
         "folderId": "1qba3eUdOo0x4Sp2T1viB_MMdWQf80UtZ",
         "objects": 40,
@@ -116,7 +116,7 @@ DRIVE_VERIFICATION = {
         "(снята 2026-11-18). Остаётся не сверенным содержимое шардов.",
     },
     "ephemeral-commons-strict-literary-pdf-40plus": {
-        "class": "DURABLE_ON_DRIVE_UNRECORDED_IN_REPO",
+        "class": "DURABLE_ON_DRIVE_RECEIPTED",
         "folder": "01 — COMMONS STRICT 40",
         "folderId": "1DSfzT3YJC19iI0YG9IjfOXybVilgnQFJ",
         "objects": 9,
@@ -131,6 +131,66 @@ DRIVE_VERIFICATION = {
         "observed": "Девять ZIP-шардов (01-10 / 11-20 / 21-30 / 31-40, по частям A/B/C), сумма размеров "
         "610 192 501 Б против 610 183 443 Б заявленных для 40 PDF; файл проверки перечисляет 40 из 40 «OK».",
         "missing": "В репозитории нет квитанции, связывающей ID папки и суммы шардов с манифестом.",
+    },
+    "ephemeral-approved-core-poet-portraits": {
+        "class": "DURABLE_ON_DRIVE_RECEIPTED",
+        "folder": "01 — APPROVED CORE POET PORTRAITS 45",
+        "folderId": "1BcHMZEPJtTDbE9zXZnRLtjCBtvGG3S02",
+        "objects": 3,
+        "bytes": 15606930,
+        "sha256Present": True,
+        "manifest": {
+            "name": "PORTRAITS 45 — MANIFEST RIGHTS SHA256.zip",
+            "id": "1wqrGOW86x_cHPW14Xe_6x9yvaYxJS8sD",
+            "bytes": 23433,
+            "sha256": None,
+        },
+        "observed": "Три ZIP-шарда с серверными суммами и манифест прав. В самом allowlist-файле статус "
+        "записан как CURRENT LICENSE RECHECK REQUIRED.",
+        "missing": "Квитанция есть: docs/research/holds/CORPUS_CUSTODY_RECEIPTS_2026-11-18.md §3. "
+        "Объём артефакта больше суммы шардов, причина расхождения не установлена.",
+    },
+    "ephemeral-approved-ephemera-originals": {
+        "class": "DURABLE_ON_DRIVE_RECEIPTED",
+        "folder": "02 — APPROVED EPHEMERA 63",
+        "folderId": "1vfSja20qrEwQNuYDS1dI_WFZYxD18-_C",
+        "objects": 5,
+        "bytes": 133208395,
+        "sha256Present": True,
+        "manifest": {
+            "name": "EPHEMERA 63 — MANIFEST RIGHTS SHA256.zip",
+            "id": "1XVd-P7ttZrWnvmow0A0s2Bb3KVN-Srp3",
+            "bytes": 27553,
+            "sha256": None,
+        },
+        "observed": "Четыре шарда оригиналов (01-16, 17-32, 33-48, 49-63) плюс контрольный лист и "
+        "кандидаты; у каждого серверная сумма.",
+        "missing": "Квитанция есть: CORPUS_CUSTODY_RECEIPTS_2026-11-18.md §3. Артефакт больше суммы "
+        "шардов — расхождение не объяснено.",
+    },
+    "ephemeral-poet-portrait-review-v4": {
+        "class": "REVIEW_MATERIAL_ONLY",
+        "folder": "01 — PEOPLE & PORTRAITS",
+        "folderId": "1YlAac-1QA_iiWPK63X7ZINsJmaPy6ndH",
+        "objects": 0,
+        "bytes": 0,
+        "sha256Present": False,
+        "manifest": None,
+        "observed": "На Drive — итог ревью: контрольные листы и списки кандидатов. Скачанные изображения "
+        "кандидатов на Drive не переносились и доказательством не являются.",
+        "missing": "Ничего: расходный материал ревью не подлежит хранению как доказательство.",
+    },
+    "ephemeral-ephemera-review-candidates": {
+        "class": "REVIEW_MATERIAL_ONLY",
+        "folder": "01 — PEOPLE & PORTRAITS",
+        "folderId": "1YlAac-1QA_iiWPK63X7ZINsJmaPy6ndH",
+        "objects": 0,
+        "bytes": 0,
+        "sha256Present": False,
+        "manifest": None,
+        "observed": "На Drive — контрольные листы, ephemera-candidates.csv (1,2 МБ) и "
+        "ephemera-candidates.json (1,7 МБ): то, по чему принималось решение.",
+        "missing": "Ничего по хранению; сами кандидаты — расходный материал.",
     },
     "ephemeral-official-core-acquisition-59-v2": {
         "class": "NO_DURABLE_DESTINATION",
@@ -188,10 +248,15 @@ def family_of(name: str) -> str:
 def classify(family: str) -> tuple[str, str]:
     if family in DRIVE_VERIFICATION:
         note = DRIVE_VERIFICATION[family]
-        if note["class"] == "DURABLE_ON_DRIVE_UNRECORDED_IN_REPO":
+        if note["class"] == "REVIEW_MATERIAL_ONLY":
             return (
-                "DURABLE_ON_DRIVE_UNRECORDED_IN_REPO",
-                "Байты найдены на Drive 2026-11-18; в репозитории нет квитанции, связывающей их с манифестом.",
+                "REVIEW_MATERIAL_ONLY",
+                "На Drive только итог ревью; скачанные кандидаты — расходный материал и доказательством не являются.",
+            )
+        if note["class"] == "DURABLE_ON_DRIVE_RECEIPTED":
+            return (
+                "DURABLE_ON_DRIVE_RECEIPTED",
+                "Байты найдены на Drive 2026-11-18, квитанция записана в CORPUS_CUSTODY_RECEIPTS.",
             )
         return (
             "NO_DURABLE_DESTINATION",
@@ -394,8 +459,9 @@ def render(snapshot: dict) -> str:
         "REGENERABLE_VIEW": "производная сборка из реестра репозитория",
         "REGENERABLE_PACKAGE": "заявка/пакет, а не сам объект",
         "NON_DETERMINISTIC_ACQUISITION": "перепрогон даёт другое состояние источника — байты не воспроизводятся",
-        "DURABLE_ON_DRIVE_UNRECORDED_IN_REPO": "байты на Drive есть, квитанции в репозитории нет",
+        "DURABLE_ON_DRIVE_RECEIPTED": "байты на Drive есть, квитанция записана 2026-11-18",
         "NO_DURABLE_DESTINATION": "на Drive только манифест, объекты живут лишь в артефакте",
+        "REVIEW_MATERIAL_ONLY": "артефакт — расходный материал ревью, хранению не подлежит",
         "UNCLASSIFIED": "требует ручного решения",
     }
     for cls, count in sorted(totals["byClass"].items(), key=lambda kv: -totals["bytesByClass"][kv[0]]):
@@ -406,9 +472,14 @@ def render(snapshot: dict) -> str:
     add("| Семья | n | ГБ | Класс | Создано | Истекает | retention | Объявлено |")
     add("|---|---:|---:|---|---|---|---:|---|")
     for item in snapshot["families"]:
-        declared = "эфемерно, квитанции нет" if item["declaresNoDurableReceipt"] else (
-            "квитанция есть" if item["class"] == "HAS_DURABLE_RECEIPT" else "не объявлено"
-        )
+        if item["class"] in {"HAS_DURABLE_RECEIPT", "DURABLE_ON_DRIVE_RECEIPTED"}:
+            declared = "квитанция есть"
+        elif item["class"] == "REVIEW_MATERIAL_ONLY":
+            declared = "расходный материал"
+        elif item["declaresNoDurableReceipt"]:
+            declared = "эфемерно, квитанции нет"
+        else:
+            declared = "не объявлено"
         add(
             f"| `{item['family']}` | {item['artifacts']} | {item['bytes'] / 1e9:.2f} | "
             f"`{item['class']}` | {item['firstCreated']}…{item['lastCreated']} | "

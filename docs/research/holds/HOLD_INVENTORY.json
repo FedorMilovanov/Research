@@ -3,7 +3,7 @@
  "artifact": "REPO-HOLD-INVENTORY",
  "role": "DERIVED_READ_ONLY_NOT_AUTHORITY",
  "generatedAt": "2026-11-18",
- "testedCommit": "3150419628f7f305254f8517db1ebebae1d69d3b",
+ "testedCommit": "c30348dcd519b0bfe23f336801756ad7f3c78844",
  "policy": "data/repository-evidence-policy-v2.json",
  "totals": {
   "json_files_with_holds": 35,

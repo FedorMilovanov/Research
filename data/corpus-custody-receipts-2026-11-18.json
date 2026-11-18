@@ -154,6 +154,113 @@
         "Пофайловые суммы прочитаны через коннектор, но в репозиторий не перенесены: перенос 40 значений вручную создаёт риск опечатки, который нечем проверить",
         "Содержимое PDF не открывалось"
       ]
+    },
+    {
+      "name": "APPROVED CORE POET PORTRAITS 45 — одобренные портреты ядра поэтов",
+      "claimInRepo": {
+        "path": "SOURCE_LIBRARY/processed/APPROVED_CORE_POET_PORTRAITS_45_ALLOWLIST_2026-07-30.md",
+        "portraits": 45,
+        "statusInFile": "CURRENT LICENSE RECHECK REQUIRED"
+      },
+      "drive": {
+        "folder": "01 — APPROVED CORE POET PORTRAITS 45",
+        "folderId": "1BcHMZEPJtTDbE9zXZnRLtjCBtvGG3S02"
+      },
+      "objects": [
+        {
+          "name": "01 — ESENIN BUNIN SEVERYANIN.zip",
+          "id": "1p74lMCCL-4jBUoJAkTIMwlNc-Z44o29p",
+          "bytes": 5693954,
+          "sha256": "bbb49e2606080312d8325b5c5fbabdedfbde7cf804623ad3abdd3a74243effeb"
+        },
+        {
+          "name": "02 — BALMONT TYUTCHEV MAYKOV.zip",
+          "id": "1npjCwiSvNAGv_uNB7gYmn4Q2TTj-dvRb",
+          "bytes": 4297804,
+          "sha256": "b6e8ffb483b11b05431ad71458775b3fd0d394f6874d52c560298325b0703609"
+        },
+        {
+          "name": "03 — BRYUSOV BLOK FET.zip",
+          "id": "1TUIiE80Kuv0VIzeTGsTYwSYk8hUHfv4b",
+          "bytes": 5615172,
+          "sha256": "ee82a6eb81d7988aa1d08f9612fb9bd7a3c1411fbf53ab9ca521a81c9cf2074c"
+        }
+      ],
+      "aggregate": {
+        "objects": 3,
+        "bytes": 15606930
+      },
+      "controlFiles": [
+        {
+          "name": "PORTRAITS 45 — MANIFEST RIGHTS SHA256.zip",
+          "id": "1wqrGOW86x_cHPW14Xe_6x9yvaYxJS8sD",
+          "bytes": 23433
+        }
+      ],
+      "verdict": "Три ZIP-шарда с серверными суммами плюс манифест прав и SHA-256. Байты одобренного набора на Drive есть.",
+      "unverified": [
+        "Соответствие шардов артефакту по объёму не установлено: артефакт 63 239 012 Б на два прогона против 15 606 930 Б на Drive",
+        "Содержимое не распаковывалось"
+      ]
+    },
+    {
+      "name": "APPROVED EPHEMERA 63 — одобренные эфемериды",
+      "claimInRepo": {
+        "path": "SOURCE_LIBRARY/processed/APPROVED_EPHEMERA_63_ALLOWLIST_2026-07-30.md",
+        "objects": 63
+      },
+      "drive": {
+        "folder": "02 — APPROVED EPHEMERA 63",
+        "folderId": "1vfSja20qrEwQNuYDS1dI_WFZYxD18-_C"
+      },
+      "objects": [
+        {
+          "name": "01 — ORIGINALS 01-16.zip",
+          "id": "14DsRdBd3zvEvR9JiF_2yAOL-agZfE7GU",
+          "bytes": 3942853,
+          "sha256": "12d846f929afd6f660d8da87b3cc07344afea2a1c5809d5dbc22435e8ab30341"
+        },
+        {
+          "name": "02 — ORIGINALS 17-32.zip",
+          "id": "1yi5Vzi7DbTFVhJ5IaIAmTsXjDvFdm72C",
+          "bytes": 30333112,
+          "sha256": "b3e719420f395b4b045f42b4724d4c7ef482fdc6dc9ee8d17337b0b0e2093807"
+        },
+        {
+          "name": "03 — ORIGINALS 33-48.zip",
+          "id": "1fVWuckOkgxHRTmdxyLqvfSJR35mjkRsi",
+          "bytes": 60674985,
+          "sha256": "7c2ca45bb72fbbaf0f817961c73e490d286044e7e828986496a2bfb75ec8c29d"
+        },
+        {
+          "name": "04 — ORIGINALS 49-63.zip",
+          "id": "1-JY6zCDgDp0I38oqXLZaQCbEfL20wef-",
+          "bytes": 11570623,
+          "sha256": "b216b40d956ce7c7262e4aef28990941b2376b783b613e02ba95683794f8234c"
+        },
+        {
+          "name": "90 — REVIEW CONTACT SHEETS AND CANDIDATES.zip",
+          "id": "13JOBCx_Pu5FfIPOshYYEOMPBkPCRQndl",
+          "bytes": 26686822,
+          "sha256": "2b311c3743e6ae8f931a2cb2f548df95a44263f25bcfcc9258672c9415e27a27"
+        }
+      ],
+      "aggregate": {
+        "objects": 5,
+        "bytes": 133208395
+      },
+      "controlFiles": [
+        {
+          "name": "EPHEMERA 63 — MANIFEST RIGHTS SHA256.zip",
+          "id": "1XVd-P7ttZrWnvmow0A0s2Bb3KVN-Srp3",
+          "bytes": 27553
+        }
+      ],
+      "verdict": "Четыре шарда оригиналов (01-16, 17-32, 33-48, 49-63) плюс контрольный лист и кандидаты; у каждого серверная сумма. Байты одобренного набора на Drive есть.",
+      "unverified": [
+        "Объём артефакта (213 327 748 Б на два прогона) больше суммы шардов; причина расхождения не установлена",
+        "Содержимое не распаковывалось"
+      ]
     }
   ],
   "boundaries": [
