@@ -1,0 +1,183 @@
+{
+  "role": "DERIVED_READ_ONLY_NOT_AUTHORITY",
+  "pin": {
+    "repository": "STEPBible/STEPBible-Data",
+    "commit": "b86d26cdb1f51729e73b5b4eb7f7ccadc5dfba39",
+    "url": "https://codeload.github.com/STEPBible/STEPBible-Data/zip/b86d26cdb1f51729e73b5b4eb7f7ccadc5dfba39",
+    "bytes": 100920275,
+    "sha256": "6845fa9660c62301a0eec38c009ca34ef82647a9737529d8c56ac45d35182df0"
+  },
+  "readme": {
+    "firstLine": "# STEPBible Data Repository  **CC BY 4.0**",
+    "claimsCcBy40": true,
+    "creditRequested": "STEP Bible",
+    "derivativeCaveat": "Much of the data is based on other publically licenced sources"
+  },
+  "totals": {
+    "files": 106,
+    "dataFiles": 104,
+    "bytesUncompressed": 414629228,
+    "archiveBytes": 100920275,
+    "topLevelEntries": 7
+  },
+  "subdatasets": [
+    {
+      "path": "Lexicons",
+      "files": 4,
+      "bytes": 40233864,
+      "declaredTerms": [
+        {
+          "token": "CC-BY",
+          "files": 4
+        }
+      ],
+      "filesWithoutTokenInName": [],
+      "note": "Содержит TFLSJ (полный LSJ) и TBESG (на основе Abbott-Smith): README говорит, что «much of the data is based on other publically licenced sources». CC BY 4.0 заявлен на форматирование и разметку; права на исходные словари этим не подтверждены."
+    },
+    {
+      "path": "Morphology codes",
+      "files": 2,
+      "bytes": 861636,
+      "declaredTerms": [
+        {
+          "token": "CC-BY",
+          "files": 2
+        }
+      ],
+      "filesWithoutTokenInName": [],
+      "note": null
+    },
+    {
+      "path": "Older Formats",
+      "files": 9,
+      "bytes": 76717734,
+      "declaredTerms": [
+        {
+          "token": "CC-BY",
+          "files": 9
+        }
+      ],
+      "filesWithoutTokenInName": [],
+      "note": null
+    },
+    {
+      "path": "Proper Nouns",
+      "files": 1,
+      "bytes": 8611754,
+      "declaredTerms": [
+        {
+          "token": "CC-BY",
+          "files": 1
+        }
+      ],
+      "filesWithoutTokenInName": [],
+      "note": null
+    },
+    {
+      "path": "Tagged-Bibles",
+      "files": 77,
+      "bytes": 118416113,
+      "declaredTerms": [
+        {
+          "token": "CC-BY-NC",
+          "files": 1
+        },
+        {
+          "token": "CC-BY-SA",
+          "files": 70
+        }
+      ],
+      "filesWithoutTokenInName": [
+        {
+          "path": "Tagged-Bibles/Arabic Bibles/Readme.md",
+          "bytes": 1
+        },
+        {
+          "path": "Tagged-Bibles/Arabic Bibles/SVD Tagging Documents/Tagging of Smith - Van Dyck Arabic translation with Strong’s Numbers.docx",
+          "bytes": 1935764
+        },
+        {
+          "path": "Tagged-Bibles/Arabic Bibles/SVD Tagging Documents/ربط (وسم) كلمات ترجمة سميث وفان دايك العربية بأرقام سترونج (Unicode Encoding Conflict).docx",
+          "bytes": 1936219
+        },
+        {
+          "path": "Tagged-Bibles/Arabic Bibles/SVD Tagging Documents/ربط (وسم) كلمات ترجمة سميث وفان دايك العربية بأرقام سترونج.docx",
+          "bytes": 1936219
+        },
+        {
+          "path": "Tagged-Bibles/Arabic Bibles/SVD Tagging Documents/ما هي أرقام سترونج.docx",
+          "bytes": 2605763
+        },
+        {
+          "path": "Tagged-Bibles/Arabic Bibles/Translation Tags Individual Books/README",
+          "bytes": 1
+        }
+      ],
+      "note": null,
+      "nestedNotes": [
+        {
+          "path": "Tagged-Bibles/Arabic Bibles",
+          "note": "CC BY-SA: share-alike. Производные разметки обязаны распространяться на тех же условиях — единственный share-alike подкаталог в архиве."
+        }
+      ]
+    },
+    {
+      "path": "Translators Amalgamated OT+NT",
+      "files": 10,
+      "bytes": 163982676,
+      "declaredTerms": [
+        {
+          "token": "CC-BY",
+          "files": 10
+        }
+      ],
+      "filesWithoutTokenInName": [],
+      "note": null
+    },
+    {
+      "path": "Versification",
+      "files": 1,
+      "bytes": 5790928,
+      "declaredTerms": [
+        {
+          "token": "CC-BY",
+          "files": 1
+        }
+      ],
+      "filesWithoutTokenInName": [],
+      "note": null
+    }
+  ],
+  "nestedSubdatasets": [
+    {
+      "path": "Tagged-Bibles/Arabic Bibles",
+      "files": 76,
+      "bytes": 113981535,
+      "declaredTerms": [
+        {
+          "token": "CC-BY-SA",
+          "files": 70
+        }
+      ],
+      "note": "CC BY-SA: share-alike. Производные разметки обязаны распространяться на тех же условиях — единственный share-alike подкаталог в архиве."
+    }
+  ],
+  "looseFiles": [
+    {
+      "path": "README.md",
+      "bytes": 14495,
+      "tokens": []
+    },
+    {
+      "path": "_config.yml",
+      "bytes": 28,
+      "tokens": []
+    }
+  ],
+  "limits": [
+    "Лицензия в имени файла — утверждение распространителя, а не решение владельца.",
+    "Разметка и форматирование могут быть CC BY 4.0 при том, что исходный текст (ESV, LSJ, Abbott-Smith) имеет собственные права.",
+    "Содержимое файлов не читалось: разобраны имена и README.",
+    "Ни один HOLD этим не снимается; это материал для решения о правах."
+  ]
+}
