@@ -3,7 +3,7 @@
  "artifact": "REPO-HOLD-INVENTORY",
  "role": "DERIVED_READ_ONLY_NOT_AUTHORITY",
  "generatedAt": "2026-11-18",
- "testedCommit": "c30348dcd519b0bfe23f336801756ad7f3c78844",
+ "testedCommit": "5f1d4ea06e994ef1eb9acd1ee13b4d2a76dfc471",
  "policy": "data/repository-evidence-policy-v2.json",
  "totals": {
   "json_files_with_holds": 35,
@@ -243,6 +243,7 @@
      "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
      "id": "dort",
      "rightsState": "RIGHTS_UNKNOWN",
+     "publicationState": "BLOCKED",
      "holds": [
       "PUBLICATION_HOLD"
      ]
@@ -251,6 +252,7 @@
      "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
      "id": "westminster",
      "rightsState": "RIGHTS_UNKNOWN",
+     "publicationState": "BLOCKED",
      "holds": [
       "PUBLICATION_HOLD"
      ]
@@ -259,6 +261,7 @@
      "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
      "id": "heidelberg",
      "rightsState": "RIGHTS_UNKNOWN",
+     "publicationState": "BLOCKED",
      "holds": [
       "PUBLICATION_HOLD"
      ]
@@ -267,6 +270,7 @@
      "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
      "id": "davenant2024",
      "rightsState": "RIGHTS_UNKNOWN",
+     "publicationState": "BLOCKED",
      "holds": [
       "PUBLICATION_HOLD"
      ]
@@ -275,16 +279,18 @@
      "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
      "id": "articles39",
      "rightsState": "RIGHTS_UNKNOWN",
+     "publicationState": "BLOCKED",
      "holds": [
       "PUBLICATION_HOLD"
      ]
     }
    ],
-   "rightsState_gaps_in_dated_snapshots": [
+   "rightsState_gaps_gated_by_BLOCKED": [
     {
      "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
      "id": "dort",
      "rightsState": "RIGHTS_UNKNOWN",
+     "publicationState": "BLOCKED",
      "holds": [
       "PUBLICATION_HOLD"
      ]
@@ -293,6 +299,7 @@
      "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
      "id": "westminster",
      "rightsState": "RIGHTS_UNKNOWN",
+     "publicationState": "BLOCKED",
      "holds": [
       "PUBLICATION_HOLD"
      ]
@@ -301,6 +308,7 @@
      "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
      "id": "heidelberg",
      "rightsState": "RIGHTS_UNKNOWN",
+     "publicationState": "BLOCKED",
      "holds": [
       "PUBLICATION_HOLD"
      ]
@@ -309,6 +317,7 @@
      "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
      "id": "davenant2024",
      "rightsState": "RIGHTS_UNKNOWN",
+     "publicationState": "BLOCKED",
      "holds": [
       "PUBLICATION_HOLD"
      ]
@@ -317,6 +326,55 @@
      "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
      "id": "articles39",
      "rightsState": "RIGHTS_UNKNOWN",
+     "publicationState": "BLOCKED",
+     "holds": [
+      "PUBLICATION_HOLD"
+     ]
+    }
+   ],
+   "rightsState_gaps_not_gated": [],
+   "rightsState_gaps_in_dated_snapshots": [
+    {
+     "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
+     "id": "dort",
+     "rightsState": "RIGHTS_UNKNOWN",
+     "publicationState": "BLOCKED",
+     "holds": [
+      "PUBLICATION_HOLD"
+     ]
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
+     "id": "westminster",
+     "rightsState": "RIGHTS_UNKNOWN",
+     "publicationState": "BLOCKED",
+     "holds": [
+      "PUBLICATION_HOLD"
+     ]
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
+     "id": "heidelberg",
+     "rightsState": "RIGHTS_UNKNOWN",
+     "publicationState": "BLOCKED",
+     "holds": [
+      "PUBLICATION_HOLD"
+     ]
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
+     "id": "davenant2024",
+     "rightsState": "RIGHTS_UNKNOWN",
+     "publicationState": "BLOCKED",
+     "holds": [
+      "PUBLICATION_HOLD"
+     ]
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
+     "id": "articles39",
+     "rightsState": "RIGHTS_UNKNOWN",
+     "publicationState": "BLOCKED",
      "holds": [
       "PUBLICATION_HOLD"
      ]

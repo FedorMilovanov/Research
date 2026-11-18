@@ -470,7 +470,7 @@ def check_hold_coverage(nodes_by_file):
             if node["rightsState"] in {"RIGHTS_UNKNOWN", "PERMISSION_REQUIRED"} and "RIGHTS_HOLD" not in holds:
                 missing_rights.append(
                     {"path": path, "id": node["id"], "rightsState": node["rightsState"],
-                     "holds": sorted(holds)}
+                     "publicationState": node["publicationState"], "holds": sorted(holds)}
                 )
             if node["publicationState"] == "BLOCKED" and "PUBLICATION_HOLD" not in holds:
                 blocked_without_publication.append(
@@ -479,8 +479,15 @@ def check_hold_coverage(nodes_by_file):
     dated = re.compile(r"\d{4}-\d{2}-\d{2}")
     dated_gaps = [x for x in missing_rights if dated.search(x["path"])]
     current_gaps = [x for x in missing_rights if not dated.search(x["path"])]
+    # Не всякая такая запись открыта для публикации: если `publicationState`
+    # = `BLOCKED`, публикацию держит другая ось, и отсутствие `RIGHTS_HOLD`
+    # остаётся дефектом разметки, но не пропуском в публикацию.
+    unblocked = [x for x in missing_rights if x.get("publicationState") != "BLOCKED"]
+    gated = [x for x in missing_rights if x.get("publicationState") == "BLOCKED"]
     return {
         "rightsState_without_RIGHTS_HOLD": missing_rights,
+        "rightsState_gaps_gated_by_BLOCKED": gated,
+        "rightsState_gaps_not_gated": unblocked,
         "rightsState_gaps_in_dated_snapshots": dated_gaps,
         "rightsState_gaps_in_current_files": current_gaps,
         "BLOCKED_without_PUBLICATION_HOLD": blocked_without_publication,
@@ -1188,6 +1195,16 @@ def render_markdown(report):
         f"`publicationState` = `BLOCKED` и без `PUBLICATION_HOLD`: **{len(blocked)}**."
     )
     add("")
+    ungated = coverage.get("rightsState_gaps_not_gated", [])
+    gated = coverage.get("rightsState_gaps_gated_by_BLOCKED", [])
+    add(
+        f"Разделение по второй оси: **{len(gated)}** из них несут "
+        f"`publicationState` = `BLOCKED`, то есть публикацию держит не права, а "
+        f"блокировка, и отсутствие `RIGHTS_HOLD` — дефект разметки, а не пропуск. "
+        f"Открытых для публикации записей без `RIGHTS_HOLD` при неизвестных правах: "
+        f"**{len(ungated)}**."
+    )
+    add("")
     if missing_rights:
         add("| Файл | id | rightsState | Фактические HOLD-и |")
         add("|---|---|---|---|")
@@ -1198,12 +1215,21 @@ def render_markdown(report):
                 + " |"
             )
         add("")
-        add(
-            "Это дыра в обратную сторону: запись выглядит права-разрешённой, "
-            "хотя права не установлены. Правильная реакция — добавить "
-            "типизированный `RIGHTS_HOLD` в актуальную запись, а не переписывать "
-            "датированный снимок задним числом."
-        )
+        if ungated:
+            add(
+                "Это дыра в обратную сторону: запись выглядит права-разрешённой, "
+                "хотя права не установлены. Правильная реакция — добавить "
+                "типизированный `RIGHTS_HOLD` в актуальную запись, а не переписывать "
+                "датированный снимок задним числом."
+            )
+        else:
+            add(
+                "Ни одна из этих записей не открыта для публикации: во всех "
+                "`publicationState` = `BLOCKED`, поэтому пропуска в публикацию нет — "
+                "есть только неполная разметка. Датированные снимки задним числом не "
+                "переписываются; типизированный `RIGHTS_HOLD` уместен в актуальной "
+                "записи, когда она появится."
+            )
         add("")
 
     decision = checks["decision_only_holds"]
