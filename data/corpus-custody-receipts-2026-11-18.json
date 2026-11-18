@@ -280,5 +280,53 @@
     "Квитанция подтверждает наличие байтов на носителе. Она не подтверждает права, не разрешает публикацию и не снимает ни один HOLD.",
     "Совпадение объёма — не тождество содержимого. Проверка содержимого требует распаковки и сверки пофайловых сумм.",
     "Значения сняты 2026-11-18. Перезапись объекта на Drive изменит сумму, и квитанция устареет — её пересобирают, а не правят."
+  ],
+  "driveHoldAreas": [
+    {
+      "folder": "99 — HOLD — DUPLICATES, UNCLEAR & TO REVIEW",
+      "folderId": "1ZMOonLynLF2ykCLNjh4fTXbT6vRvZSXr",
+      "referencedInRepo": false,
+      "checkedAt": "2026-11-18",
+      "method": "list_files по ID папки и search_files по именам объектов; read_file_text для двух PDF",
+      "objects": [
+        {
+          "name": "OLD DRAFT — БАПТИСТЫ MASTER CATALOG — НЕ ИСПОЛЬЗОВАТЬ",
+          "id": "1c_Okh7AnWp2N6V6eq5BWI9TlIYCgi0WjxrxN9zMfKoE",
+          "type": "application/vnd.google-apps.spreadsheet",
+          "bytes": 1547983,
+          "sha256": null,
+          "status": "SUPERSEDED_BY_NAME",
+          "note": "Имя само объявляет черновик непригодным к использованию; в репозитории объект не цитируется."
+        },
+        {
+          "name": "sinichkin (1).dialog3.pdf",
+          "id": "10tviSg3ywPg3nESVA00mxWhYCTrr09tF",
+          "type": "application/pdf",
+          "bytes": 263540,
+          "sha256": "0f454c7bdc1bb563a9827213bd0f3f48e8feb5666896e06f23ab8e97ef08d4a7",
+          "status": "BYTE_IDENTICAL_DUPLICATE",
+          "duplicateOf": "1chedeNOxeFNqrWDa8yTKNfyiAaHc08rm",
+          "duplicateParent": "17gFvLg_yjpDEoU7eqPTLO9U0C6bp_4Nn",
+          "note": "«Богословский вестник» ЕХБ, № 12 (2006), ISSN 1815-8803, с. 87–127 — сводный отчёт о встрече СЦ ЕХБ с ВСЕХБ 23 марта 1966 г., составленный А. В. Синичкиным. Не скан, а реконструкция; современное издание."
+        },
+        {
+          "name": "ИСП_Краткая записка.pdf",
+          "id": "19hDwRip7EIE9HnFEwI0xtFJnjSzRtF7x",
+          "type": "application/pdf",
+          "bytes": 376310,
+          "sha256": "7d651ff5a408b4813f5a9386b419d278890d167dc7c0997a23cb923ff77cfcc3",
+          "status": "BYTE_IDENTICAL_DUPLICATE",
+          "duplicateOf": "1190iff8v0RmdoL4qgG0idB--KZ8nUKxq",
+          "duplicateParent": "17gFvLg_yjpDEoU7eqPTLO9U0C6bp_4Nn",
+          "note": "«Краткая записка о возникновении, развитии и настоящем положении евангельского движения в России» — записка И. С. Проханова в МВД 8 января 1905 г., составлена И. П. Кушнеровым при участии В. И. Долгополова и В. Н. Иванова; 22 приложения. Первоисточник 1905 г."
+        }
+      ],
+      "verdict": "Уникального содержимого нет: два PDF побайтово совпадают (равные sha256) с копиями в папке 17gFvLg_yjpDEoU7eqPTLO9U0C6bp_4Nn, которую корпус РБА уже считает дублем, а третий объект — таблица, имя которой прямо запрещает использование.",
+      "limits": [
+        "Факт совпадения установлен по серверным sha256, а не по скачиванию файлов.",
+        "Ни один объект не проверялся на пригодность как доказательство: проверялась только уникальность места хранения.",
+        "Папка не описана ни в одном документе репозитория до 2026-11-18 — это и было найдено."
+      ]
+    }
   ]
 }
