@@ -2197,7 +2197,48 @@
       },
       "reason": "Retain historical source quotations while explicitly withdrawing derivative interpretations before the reader encounters them.",
       "status": "INTEGRATED_SOURCE_CHECKED",
-      "historicalRetained": true
+      "historicalRetained": true,
+      "historicalRevisions": [
+        {
+          "id": "S50-2026-11-17-Strong-III-778-attribution",
+          "oldText": "Значение: источник пастиша Strong III.778 (фраза о Мф. 26:28 приписана 1 Ин. 2:2); статья Прокопенко пастиш не воспроизводит.",
+          "replacementText": "Значение: Richards pp. 308–310 дают близкие текстуальные параллели для мест Кальвина на Мф. 26:28 и Ин. 3:16 и контекста выдержки на 1 Ин. 2:2, но не устанавливают источник Strong III.778. Цитата Strong составлена из трёх мест — Рим. 5:18, Мф. 26:28 и Ин. 3:16 — и ошибочно приписана комментарию на 1 Ин. 2:2. На p. 777 Strong ссылается на Richards pp. 303–307 для тезиса о ранних *Institutes* и поздних *Commentaries*; эта ссылка подтверждает связь для тезиса, но не происхождение цитаты p. 778. Richards pp. 311–314 прочитаны: Кальвина и Рим. 5:18 там нет. Формулировка о Мф. 26:28 встречается также в CTS Harmony III (1846), p. 214 (S160), поэтому совпадение само по себе не устанавливает канал. Watts, *Works* VI (1811), p. 153 (S158), даёт раннюю параллель для Мф. 26:28 и Рим. 5:18; связь Watts → Richards подтверждена для отдельных выдержек, но точный путь цитаты в Strong остаётся `OPEN` (см. `34_` §4.148/Q144 и §8 пп. 33, 46). Статья Прокопенко пастиш не воспроизводит.",
+          "reason": "P34 §4.148/Q144 and §8 items 33, 46; S160. Harmonize the retained 42e wording in Russian and record the reviewed three-locus attribution, Strong p. 777 thesis citation (not quotation provenance), CTS Harmony III p. 214 as a non-diagnostic parallel, and the completed Richards pp. 311–314 read. Retained historical source excerpts and locators are unchanged; the exact old/new substitution remains the sole authorized revision.",
+          "basis": {
+            "file": "docs/research/atonement/34_atonement_vs_redemption_lexical_history_and_shedd_distinction.md",
+            "section": "### 4.148. Q144 — Strong III.778: три места Кальвина, Watts → Richards и открытый путь цитаты (раунд 64; уточнено в раунде 65, 2026-11-17)"
+          }
+        }
+      ],
+      "preCorrectionRetest20261117": {
+        "evaluatedAt": "2026-11-17T16:01:08Z",
+        "method": "Original check_repairs logic materialized from each Git revision before audited historicalRevisions support.",
+        "results": [
+          {
+            "label": "PR fork base",
+            "commit": "5fab12abd16246a0ff5fab558f11001304f2e970",
+            "status": "PASS",
+            "removedExactPresent": true,
+            "requiredNoticePresent": true
+          },
+          {
+            "label": "latest main before merge",
+            "commit": "6b87fc60b0a0aafb86d7da3508cc69529fd13134",
+            "status": "PASS",
+            "removedExactPresent": true,
+            "requiredNoticePresent": true
+          },
+          {
+            "label": "PR HEAD before correction",
+            "commit": "2b21ef30ae115d7ed916f07a877343c182904a62",
+            "status": "FAIL",
+            "error": "S40: historical retention lost its explicit boundary/text",
+            "removedExactPresent": false,
+            "requiredNoticePresent": true
+          }
+        ],
+        "conclusion": "S40 was introduced by the PR’s reviewed 42e wording revision, not pre-existing on either base tree. The current record preserves that exact revision rather than masking the failure."
+      }
     },
     {
       "id": "S41",
@@ -8751,12 +8792,12 @@
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article15_dort_westminster_saumur_english_hu.md",
-      "sha256": "9610f027a39bbd9f892f5d5324010b88e25285e1164025860d8156db6049527d",
+      "sha256": "5bce51a326bf2542e3887a2c162ad9a6706f7ab8eefab647b32b1f23cc6c171f",
       "reviewedAt": "2026-11-10",
       "note": "Статья №15/18: читательский исторический анализ Дорт II.3/5/8/Rejection, WCF/1689 VIII.5/8, английских делегатов и условного реформатского универсализма. Первичная сверка строго по архивным локаторам, не новый полный просмотр трактатов. HISTORICAL_SOURCE_HOLD/ATTRIBUTION_HOLD/RIGHTS_HOLD/PUBLICATION_HOLD. NOT PEER REVIEWED.",
       "publicationEligible": false,
       "digestRefreshedAt": "2026-11-17",
-      "digestRefreshedReason": "Agent 7 editorial patchset (93 scoped replacements, #541); this hash refresh does not assert new print-source collation or authorize publication"
+      "digestRefreshedReason": "Agent 7 editorial patchset (93 scoped replacements, #541); 2026-11-17: narrow, non-publication distinction of the Acta 1620 Sententia, the separate 1629 Collegiat Suffrage, and the final Canons, based on text-only HathiTrust OCR and EEBO-TCP transcript. The Acta image check, band R autograph/crosswalk, full Lynch reading, peer review, and publication remain on HOLD; this digest refresh verifies bytes only and upgrades no evidence or publication status."
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/article16_boundaries_calvinism_reformed_family.md",

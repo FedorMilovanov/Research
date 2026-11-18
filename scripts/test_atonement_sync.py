@@ -1292,6 +1292,75 @@ class SynthesisEvidenceTests(unittest.TestCase):
         errors = check_repairs(ROOT, self.report, {row["file"]: broken})
         self.assertTrue(any(row["id"] in e and "must precede" in e for e in errors))
 
+    def test_s40_retains_the_preimage_with_only_its_reviewed_exact_revision(self):
+        row = next(r for r in self.report["repairs"] if r["id"] == "S40")
+        revisions = row.get("historicalRevisions", [])
+        self.assertEqual(len(revisions), 1)
+        revision = revisions[0]
+        self.assertEqual(row["removed"].count(revision["oldText"]), 1)
+        original = (ROOT / row["file"]).read_text(encoding="utf-8")
+        retained = row["removed"].replace(revision["oldText"], revision["replacementText"], 1)
+        self.assertIn(retained, original)
+        self.assertNotIn(revision["oldText"], original)
+        self.assertFalse(any(e.startswith("S40:") for e in check_repairs(ROOT, self.report)))
+
+        without_revision = deepcopy(row)
+        without_revision.pop("historicalRevisions")
+        errors = check_repairs(ROOT, {"repairs": [without_revision]})
+        self.assertTrue(any("S40: historical retention lost" in e for e in errors))
+
+        reverted = original.replace(revision["replacementText"], revision["oldText"], 1)
+        errors = check_repairs(ROOT, {"repairs": [row]}, {row["file"]: reverted})
+        self.assertTrue(any("S40: superseded historical wording remains" in e for e in errors))
+
+        tampered = deepcopy(row)
+        tampered["historicalRevisions"][0]["replacementText"] += " [unreviewed]"
+        errors = check_repairs(ROOT, {"repairs": [tampered]})
+        self.assertTrue(any("S40: historical retention lost" in e for e in errors))
+
+    def test_s40_basis_requires_repository_relative_file_and_unique_locator(self):
+        broken_locator = deepcopy(self.report)
+        row = next(r for r in broken_locator["repairs"] if r["id"] == "S40")
+        row["historicalRevisions"][0]["basis"] = {
+            "file": "README.md",
+            "section": "THIS_SECTION_DOES_NOT_EXIST",
+        }
+        errors = check_repairs(ROOT, broken_locator)
+        self.assertTrue(any(
+            "S40: historical revision evidence locator is missing or non-unique" in e
+            for e in errors
+        ))
+
+        body_text_locator = deepcopy(self.report)
+        row = next(r for r in body_text_locator["repairs"] if r["id"] == "S40")
+        row["historicalRevisions"][0]["basis"] = {
+            "file": "README.md",
+            "section": "Исследовательский backend и база знаний",
+        }
+        errors = check_repairs(ROOT, body_text_locator)
+        self.assertTrue(any(
+            "S40: historical revision evidence locator is missing or non-unique" in e
+            for e in errors
+        ))
+
+        traversal_path = deepcopy(self.report)
+        row = next(r for r in traversal_path["repairs"] if r["id"] == "S40")
+        row["historicalRevisions"][0]["basis"]["file"] = "../README.md"
+        errors = check_repairs(ROOT, traversal_path)
+        self.assertTrue(any(
+            "S40: historical revision evidence path must be repository-relative" in e
+            for e in errors
+        ))
+
+        absolute_path = deepcopy(self.report)
+        row = next(r for r in absolute_path["repairs"] if r["id"] == "S40")
+        row["historicalRevisions"][0]["basis"]["file"] = str((ROOT / "README.md").resolve())
+        errors = check_repairs(ROOT, absolute_path)
+        self.assertTrue(any(
+            "S40: historical revision evidence path must be repository-relative" in e
+            for e in errors
+        ))
+
 
 class Wave3ParserTests(unittest.TestCase):
     def test_eli_uses_ids_not_zero_based_list_slices(self):

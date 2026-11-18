@@ -104,11 +104,85 @@ def check_repairs(root: Path, report: dict, overrides: dict | None = None) -> li
             errors.append(f"{ident}: empty regression control")
             continue
         if row.get("historicalRetained"):
-            # Explicitly preserved history is not an active accepted claim. The
-            # reviewed supersession notice must precede the old wording.
-            if "SUPERSEDED" not in required or removed not in text:
+            # Explicitly preserved history is not an active accepted claim. Later
+            # reviewed corrections to a retained preimage must be listed as exact
+            # old/new text pairs; replay only those pairs, then require the entire
+            # adjusted historical body verbatim behind the supersession notice.
+            historical = removed
+            revisions = row.get("historicalRevisions", [])
+            if not isinstance(revisions, list):
+                errors.append(f"{ident}: invalid historical revision list")
+                revisions = []
+            revision_ids = set()
+            for revision in revisions:
+                if not isinstance(revision, dict):
+                    errors.append(f"{ident}: invalid historical revision record")
+                    continue
+                revision_id = revision.get("id")
+                old_text = revision.get("oldText")
+                replacement_text = revision.get("replacementText")
+                revision_basis = revision.get("basis")
+                if (not isinstance(revision_id, str) or not revision_id.strip()
+                        or revision_id in revision_ids):
+                    errors.append(f"{ident}: missing/duplicate historical revision id")
+                else:
+                    revision_ids.add(revision_id)
+                if (not isinstance(old_text, str) or not old_text
+                        or not isinstance(replacement_text, str) or not replacement_text
+                        or old_text == replacement_text
+                        or not isinstance(revision.get("reason"), str)
+                        or not revision["reason"].strip()
+                        or not isinstance(revision_basis, dict)
+                        or not isinstance(revision_basis.get("file"), str)
+                        or not revision_basis["file"].strip()
+                        or not isinstance(revision_basis.get("section"), str)
+                        or not revision_basis["section"].strip()):
+                    errors.append(f"{ident}: incomplete historical revision {revision_id}")
+                    continue
+                if historical.count(old_text) != 1:
+                    errors.append(f"{ident}: historical revision {revision_id} is not unique in retained preimage")
+                else:
+                    historical = historical.replace(old_text, replacement_text, 1)
+                if old_text in text:
+                    errors.append(f"{ident}: superseded historical wording remains in {file}")
+                if replacement_text not in text:
+                    errors.append(f"{ident}: reviewed historical revision {revision_id} missing in {file}")
+
+                # These fields are traceability anchors only. They do not prove
+                # that the cited source supports the revision; scholarly review
+                # remains a separate human decision.
+                revision_basis_path = Path(revision_basis["file"])
+                if revision_basis_path.is_absolute() or ".." in revision_basis_path.parts:
+                    errors.append(f"{ident}: historical revision evidence path must be repository-relative")
+                else:
+                    repository_root = root.resolve()
+                    evidence_path = (root / revision_basis_path).resolve()
+                    try:
+                        evidence_path.relative_to(repository_root)
+                    except ValueError:
+                        errors.append(f"{ident}: historical revision evidence path escapes repository")
+                    else:
+                        if not evidence_path.is_file():
+                            errors.append(f"{ident}: missing historical revision evidence {revision_basis_path}")
+                        else:
+                            section_anchor = revision_basis["section"]
+                            try:
+                                evidence_text = evidence_path.read_text(encoding="utf-8")
+                            except (OSError, UnicodeDecodeError):
+                                errors.append(f"{ident}: unreadable historical revision evidence {revision_basis_path}")
+                            else:
+                                heading_lines = [
+                                    line for line in evidence_text.splitlines()
+                                    if re.match(r"^#{1,6}\s+.+$", line)
+                                ]
+                                if heading_lines.count(section_anchor) != 1:
+                                    errors.append(
+                                        f"{ident}: historical revision evidence locator is missing or non-unique "
+                                        f"in {revision_basis_path}"
+                                    )
+            if "SUPERSEDED" not in required or historical not in text:
                 errors.append(f"{ident}: historical retention lost its explicit boundary/text")
-            if required in text and removed in text and text.index(required) > text.index(removed):
+            if required in text and historical in text and text.index(required) > text.index(historical):
                 errors.append(f"{ident}: supersession notice must precede historical wording")
         elif removed in text:
             errors.append(f"{ident}: rejected wording still present in {file}")
