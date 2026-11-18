@@ -1158,6 +1158,72 @@
       "Строки не считались: прочитаны первые ~3 КБ из 77 692 Б, структура и первые пять записей.",
       "Хеши из журнала с текущими файлами архива не сверялись — это отдельная работа, и без неё журнал ничего не подтверждает.",
       "Другие папки корпуса РБА, кроме 02 (периодика) и 08 (этот журнал) и 99 (HOLD), не читались."
-    ]
+    ],
+    "reconciliation": {
+      "method": "по SHA-256, не по путям: пути в журнале описывают дерево, которого больше нет",
+      "sourceSide": {
+        "path": "90 — SOURCE INTAKES & ORIGINALS\\01 — СИНИЧКИН — TELEGRAM CHANNEL EXPORT — SOURCE INTAKE\\01 — RAW CHANNEL MATERIALS — СИНИЧКИН\\04 — CHANNEL METADATA & EXPORTS\\ChatExport_2026-06-27\\files",
+        "id": "17gFvLg_yjpDEoU7eqPTLO9U0C6bp_4Nn",
+        "objectCount": 177,
+        "note": "PDF и рядом с каждым *_thumb.jpg; самих PDF порядка 90"
+      },
+      "destinationSide": {
+        "status": "NOT_FOUND_AS_WRITTEN",
+        "missingPath": "00 — СИНИЧКИН — MASTER INTAKE & ORIGINALS\\02 — SOURCES, LINKS & BAPTIST PDF\\01 — PDF & BOOKS FROM SINICHKIN\\BATCH-0001",
+        "stillPresent": "01 — PDF & BOOKS FROM SINICHKIN под 02 — SOURCES, LINKS & BAPTIST PDF отсутствует; там теперь 2 PDF и один zip",
+        "foundInstead": {
+          "folder": "01 — БАПТИСТ",
+          "id": "1fbtu6bbko-ruWMznopxi6nOhFE7-kQ08",
+          "parent": "02 — PERIODICALS (17zQ9dAkjJTaZOuy8GWtnnwtc--8hS1_b)"
+        }
+      },
+      "verifiedDuplicates": [
+        {
+          "name": "_Батist_ 1 января 1909 года.pdf",
+          "sha256": "9fc077725f2db38bb22a3b34822910319d9f878365f96cb3288bbfb3995895f8",
+          "bytes": 8381880,
+          "sourceId": "1wzwNp2WuriZXlk4MaHx0-_BtDJsbzXMM",
+          "archiveId": "1of5R9xUYNC2cHXNVuHLAHhPkCMKL_PZS"
+        },
+        {
+          "name": "_Батist_ 1 июня 1911.23.pdf",
+          "sha256": "9fa70ec2c037fb2a36e4cf8c15b74741b4c59374d888056afc5512b346b3f371",
+          "bytes": 4669811,
+          "sourceId": "1MlDPua2ftFxwtcgXkSMp3_ezvCjAzUgL",
+          "archiveId": "16kDhC5fgFIYmmR-KR050kcnFPKt30CLf"
+        },
+        {
+          "name": "_Батist_ 1 января 1910 года.pdf",
+          "sha256": "34023b196ea1858603ed13324b4cfadce95438bfe49bd867f7f69a03b22a3a56",
+          "bytes": 4961746,
+          "sourceId": "1uVSMRGoHyti8LrQtxURtp8-bePSLwLe2",
+          "archiveId": "1Lcov9OqNPzAPs5tuo7Xe1nv2CxaYxav5"
+        },
+        {
+          "name": "_Батist_ 1 января 1911 года.pdf",
+          "sha256": "a4c2ff0c0943af482213583e629bae3fe621e83f58902988438a170b78e6d6a5",
+          "bytes": 5288660,
+          "sourceId": "10GRFhBmvECroX-OsEO-ENhIsnhVG4ylQ",
+          "archiveId": "1Pzz94HIW74YNrp9S0N9ra2vB1XW_abSk"
+        },
+        {
+          "name": "_Батist_ 10 марта 1910 года.pdf",
+          "sha256": "6ba9708c18b42f4842099cbb90ba28eee78b3bca1d4ac8aa9a2a360fb435b0bc",
+          "bytes": 5199640,
+          "sourceId": "1AgFmQawx_55ly98TH5DmtJ46BeS9SqSAj",
+          "archiveId": "1Ilk2NYifXUalmaA-FTOH9bk3eSF3Vxcl"
+        }
+      ],
+      "verifiedDuplicatesCount": 5,
+      "ambiguousName": {
+        "name": "BATCH-0001",
+        "note": "в My Drive не менее 10 папок с этим именем у разных родителей — имя само по себе не идентифицирует партию"
+      },
+      "limits": [
+        "Сверены пять пар из порядка 90 PDF экспорта — выборка первых по порядку имён, не случайная.",
+        "Строки журнала не считались и с диском не сверялись построчно: журнал прочитан на первые ~3 КБ.",
+        "Папка 01 — БАПТИСТ не пересчитана: список отдаётся страницами, total_count равен размеру страницы."
+      ]
+    }
   }
 }
