@@ -210,6 +210,11 @@
 > - **Сперджен (сн. 45, вторая цитата).** Это № 3331 *Knowing and Believing* (1866/1912), MTP **58**:583–584 по Мюррею, а не «Vol. 7. P. 26». Перед цитатой: «You may believe that Jesus Christ died for you, and may believe what is not true». Мюррей приводит отрывок против всеобщего искупления.
 > - **Ч. Ходж (сн. 36).** У Ходжа «customary with **Augustinians**», а не «утверждение Августина». Сразу после цитируемой фразы, на той же с. 546, — вопрос о том, не являются ли прочие следствия «merely incidental».
 > - **Цвингли (сн. 8) и Амвросий (сн. 33)** — переданы точно (Z II, л. 130; *in Luc.* VI.25).
+>
+> **Дополнение (раунд 88, 2026-11-17; `34_` §4.171, S186; REPASS §11) — Кол. 1:20, строки 33–34 таблицы выше.**
+> - **Винсент (сн. 106).** p. 475, сноска к «All things»: цитата точна («a larger purpose of God in redemption than is commonly conceived»). Опущено начало той же сноски: «Paul's declarations elsewhere as to the ultimate fate of evil men and angels, must certainly be allowed their full weight». «Нач. XIX в.» противоречит собственной дате статьи (т. 3 — 1887): `DATE_ERROR`.
+> - **Винсент и Лайтфут (сн. 102).** τὰ πάντα — «the whole universe, material and spiritual» (Винсент); «universal nature… material as well as spiritual» (Лайтфут, перепечатка изд. 1879, pp. 159–160). Это шире, чем «земное = люди, небесное = ангелы»: `SOURCE_BROADER_THAN_CLAIM`.
+> - **«Мэттью Генри» (сн. 105).** Пересказ точен («all holy creatures, angels as well as men, into one glorious and blessed society»), но в *Exposition* VI (1828) Колоссянам помечено «Completed by Dr. W. Harris» (л. 593): `AUTHORSHIP_NOTE`.
 
 Свежая контрольная сверка Робертсона на 1 Ин. 2:2 подтвердила именно всеобщее обеспечение при примирении с Богом: в данном месте цитата Прокопенко соответствует собственному тексту комментатора. Его нельзя объявить скрытым строгим оппонентом только по месту преподавания. Иэн Х. Мюррей в примечаниях 44–45 — автор *The Forgotten Spurgeon*, а не Джон Мюррей, автор *Redemption Accomplished and Applied*. Посредничество источника указано самой статьёй; русский 2003 и MTP VII, 26 остаются отдельной задачей колляции. [Робертсон, стих 2](https://www.studylight.org/commentaries/eng/rwp/1-john-2.html), [издательская запись Мюррея](https://banneroftruth.org/uk/store/theology/forgotten-spurgeon/).
 
