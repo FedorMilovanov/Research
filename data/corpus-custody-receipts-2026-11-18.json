@@ -378,5 +378,188 @@
         "Ни один объект внутри «05 — EXTRACTED LARGE ARCHIVES» не открывался: содержание определено по именам папок верхнего уровня."
       ]
     }
-  ]
+  ],
+  "sharingPosture": {
+    "checkedAt": "2026-11-18",
+    "method": "list_permissions по каждому объекту; смотрелись type, role, emailAddress, domain, allowFileDiscovery",
+    "question": "Видит ли кто-нибудь эти объекты, кроме владельца?",
+    "objects": [
+      {
+        "kind": "folder",
+        "label": "01 — COMMONS STRICT 40",
+        "id": "1DSfzT3YJC19iI0YG9IjfOXybVilgnQFJ",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "folder",
+        "label": "02 — SECOND EDITORIAL 40",
+        "id": "1qba3eUdOo0x4Sp2T1viB_MMdWQf80UtZ",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "folder",
+        "label": "01 — APPROVED CORE POET PORTRAITS 45",
+        "id": "1BcHMZEPJtTDbE9zXZnRLtjCBtvGG3S02",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "folder",
+        "label": "02 — APPROVED EPHEMERA 63",
+        "id": "1vfSja20qrEwQNuYDS1dI_WFZYxD18-_C",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "folder",
+        "label": "99 — HOLD — DUPLICATES, UNCLEAR & TO REVIEW",
+        "id": "1ZMOonLynLF2ykCLNjh4fTXbT6vRvZSXr",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "folder",
+        "label": "99 — QUARANTINE — ТЕСТЫ И НЕОПОЗНАННОЕ",
+        "id": "1oZlhSG9Y1U9MpO38mpV_Jco6GTrAXSEh",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "folder",
+        "label": "99 — HOLD — SUPERSEDED MIRRORS",
+        "id": "1FK7_q8431ys6MAv_0zFsXfht1Dnl5wmd",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "file",
+        "label": "OFFICIAL CORE ACQUISITION 59 — STATUS & GAPS",
+        "id": "1zIOOcYUrOfNf1liH7-XDn_JjtE0E5auejyqeAp5q9A8",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "file",
+        "label": "PORTRAITS 45 — MANIFEST RIGHTS SHA256.zip",
+        "id": "1bHbwp7AoS2F645_BZhNVNTjWfKYoHm4g",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "file",
+        "label": "портреты, шард 01 — ESENIN BUNIN SEVERYANIN.zip",
+        "id": "1p74lMCCL-4jBUoJAkTIMwlNc-Z44o29p",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "file",
+        "label": "эфемериды, шард 01 — ORIGINALS 01-16.zip",
+        "id": "14DsRdBd3zvEvR9JiF_2yAOL-agZfE7GU",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "file",
+        "label": "второй редакционный, шард 01-10",
+        "id": "1cLg23XvpSxTuJXG14pwsxHACmbbqrah4",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      }
+    ],
+    "summary": "12 объектов, у каждого ровно одно разрешение — владелец; ни одного anyone, ни одного domain, ни одного дополнительного пользователя.",
+    "limits": [
+      "Это выборка, а не перепись: проверены 9 папок и 3 шарда из 21 файла четырёх семей.",
+      "Дочерние объекты наследуют доступ папки, но могут быть расшарены отдельно; проверка трёх шардов не гарантирует, что остальные 18 не расшарены.",
+      "Владелец — потребительский аккаунт Gmail, поэтому domain-разрешений в этом наборе быть не может по определению; проверить это как отсутствие заслуги нельзя.",
+      "Полная проверка — 21 вызов list_permissions по числу файлов; здесь 3.",
+      "Открытость источника (DBNL, archive.org) и открытость нашего хранилища — разные вещи; эта запись только про наше."
+    ]
+  }
 }
