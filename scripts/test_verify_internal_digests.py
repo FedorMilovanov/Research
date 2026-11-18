@@ -71,7 +71,7 @@ class PairingTests(unittest.TestCase):
         report = self._line(
             f"| `target.md` | `{self.digest}` | `other.md` | `{hashlib.sha256(other.read_bytes()).hexdigest()}` |"
         )
-        self.assertEqual({f["sha256"]: f["state"] for f in report["findings"]},
+        self.assertEqual({f["digest"]: f["state"] for f in report["findings"]},
                          {self.digest: "match",
                           hashlib.sha256(other.read_bytes()).hexdigest(): "match"})
 
@@ -80,7 +80,7 @@ class PairingTests(unittest.TestCase):
         # bytes at handoff: both name the same file, so both are claims.
         line = f"| `target.md` | `{'0' * 64}` | `{self.digest}` |"
         report = self._line(line)
-        states = {f["sha256"]: f["state"] for f in report["findings"]}
+        states = {f["digest"]: f["state"] for f in report["findings"]}
         self.assertEqual(states[("0" * 64)], "stale")
         self.assertEqual(states[self.digest], "match")
 
@@ -113,6 +113,44 @@ class SourceKindTests(unittest.TestCase):
 
     def test_live_document(self) -> None:
         self.assertEqual(vid.source_kind("docs/research/HOLDS_REGISTER_2026-11-18.md"), "live-document")
+
+
+class ShortDigestTests(unittest.TestCase):
+    """A 40-hex value is a Git object id unless the line says it is a file digest."""
+
+    def setUp(self) -> None:
+        self.fx = Fixture()
+        self.fx.write("target.md", "one\ntwo\n")
+        data = (self.fx.root / "target.md").read_bytes()
+        self.plain = hashlib.sha1(data).hexdigest()
+        blob = hashlib.sha1(b"blob %d\0" % len(data) + data).hexdigest()
+        self.blob = blob
+
+    def tearDown(self) -> None:
+        self.fx.close()
+
+    def _states(self, line: str) -> dict:
+        self.fx.write("doc.md", line + "\n")
+        report = vid.verify(self.fx.root)
+        return {f["digest"][:8]: f["state"] for f in report["findings"]}
+
+    def test_labelled_sha1_is_verified(self) -> None:
+        self.assertEqual(self._states(f"- `target.md` — sha1 `{self.plain}`"), {self.plain[:8]: "match"})
+
+    def test_labelled_sha1_of_earlier_bytes_is_stale(self) -> None:
+        self.assertEqual(self._states(f"- `target.md` — sha1 `{'0' * 40}`"), {"00000000": "stale"})
+
+    def test_git_blob_spelling_also_matches(self) -> None:
+        self.assertEqual(self._states(f"- `target.md` — Git blob sha1 `{self.blob}`"), {self.blob[:8]: "match"})
+
+    def test_unlabelled_commit_id_is_not_a_claim(self) -> None:
+        # A closeout table lists a commit next to a file name; that is not a claim
+        # about the bytes of the file, and proximity must not convict it.
+        line = f"| 2 | `target.md` | `{'a' * 40}` |"
+        self.assertEqual(self._states(line), {"aaaaaaaa": "git-object-id"})
+
+    def test_unlabelled_md5_is_not_a_claim(self) -> None:
+        self.assertEqual(self._states(f"- `target.md` — {'b' * 32}"), {"bbbbbbbb": "unlabelled-partial"})
 
 
 class JsonRecordTests(unittest.TestCase):

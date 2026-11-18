@@ -39,10 +39,25 @@ import re
 import sys
 from pathlib import Path
 
-SCHEMA_VERSION = "internal-digests-verified/1"
+SCHEMA_VERSION = "internal-digests-verified/2"
 AUTHORITY_ID = "INTERNAL-DIGESTS-2026-11-18"
 
-HEX_RE = re.compile(r"\b[0-9a-f]{64}\b")
+# A receipt language does not stop at SHA-256: the corpus also carries SHA-1 and
+# MD5 values, and none of those were re-read either. The three lengths are
+# unambiguous, so the algorithm is read off the token rather than guessed.
+DIGEST_RE = re.compile(r"\b(?:[0-9a-f]{64}|[0-9a-f]{40}|[0-9a-f]{32})\b")
+HEX_RE = DIGEST_RE  # kept for callers that still import the old name
+ALGORITHM_BY_LENGTH = {64: "sha256", 40: "sha1", 32: "md5"}
+# A 40-hex value in this corpus is usually a Git object id: a commit, or the blob
+# of a snapshot that may live in another repository entirely. On a table row such
+# an id sits right next to a file name ("| 2 | `X.md` | `ef81a5…` |") without being
+# a claim about the bytes of X.md, so proximity alone must not convict it. A value
+# that short is a digest claim only when the line or its column says so.
+SHA1_LABEL_RE = re.compile(
+    r"sha-?1|sha1|md-?5|md5|\u043a\u043e\u043d\u0442\u0440\u043e\u043b\u044c\u043d|checksum|digest|\u0445\u0435\u0448",
+    re.I,
+)
+COMMIT_LABEL_RE = re.compile(r"commit|\u043a\u043e\u043c\u043c\u0438\u0442|blob|\bmain=|at/after|\u0441\u043b\u0438\u044f\u043d", re.I)
 DRIVE_RE = re.compile(r"drive(File)?Id|drive\.google\.com|https?://drive|\bgoogle_drive\b", re.I)
 # A Drive identifier is 25-50 URL-safe characters and is not a hex digest, so a
 # row that carries one is a Drive table even when the word "drive" is absent.
@@ -81,6 +96,42 @@ def iter_markdown(root: Path) -> list[Path]:
             continue
         out.append(path)
     return out
+
+
+def algorithm_of(token: str) -> str:
+    return ALGORITHM_BY_LENGTH[len(token)]
+
+
+def git_blob_sha1(path: Path) -> str:
+    """SHA-1 the way Git computes it for a blob: ``blob <len>\\0`` plus the bytes.
+
+    Documents written by a round often quote the value ``git hash-object`` prints,
+    which is not the SHA-1 of the bytes. Both are defined functions of the file,
+    so a claim is checked against its own algorithm rather than declared stale
+    for being recorded in Git's spelling.
+    """
+    data = path.read_bytes()
+    digest = hashlib.sha1()
+    digest.update(b"blob %d\0" % len(data))
+    digest.update(data)
+    return digest.hexdigest()
+
+
+def file_digest(path: Path, algorithm: str) -> str:
+    if algorithm == "sha256":
+        return sha256_of(path)
+    digest = hashlib.new(algorithm)
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1 << 20), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def matches(path: Path, token: str) -> bool:
+    algorithm = algorithm_of(token)
+    if file_digest(path, algorithm) == token:
+        return True
+    return algorithm == "sha1" and git_blob_sha1(path) == token
 
 
 def sha256_of(path: Path) -> str:
@@ -129,6 +180,13 @@ def classify(line: str, digest: str, source: Path, root: Path) -> dict:
     return {"state": state, "paths": claimed_paths, "marked": bool(DIGEST_WORDS.search(line))}
 
 
+def sha1_is_labelled(line: str) -> bool:
+    """Only a labelled short digest is a claim about the bytes of a named file."""
+    if not SHA1_LABEL_RE.search(line):
+        return False
+    return not COMMIT_LABEL_RE.search(line.replace("Git blob", ""))
+
+
 def pair_claims(line: str) -> list[tuple[str, str]] | None:
     """Pair hashes with paths by order, or refuse when the counts disagree.
 
@@ -136,7 +194,7 @@ def pair_claims(line: str) -> list[tuple[str, str]] | None:
     hash with the first path is right only when the row has one of each, or the
     same number of both. Otherwise the row is ambiguous and nothing is claimed.
     """
-    hashes = HEX_RE.findall(line)
+    hashes = [h for h in DIGEST_RE.findall(line) if len(h) == 64 or sha1_is_labelled(line)]
     paths = [c for c in PATH_RE.findall(line) if not c.startswith(("http", "www."))]
     if not hashes or not paths:
         return None
@@ -156,6 +214,7 @@ def verify(root: Path, skip_lines: int = 0) -> dict:
     findings = []
     by_state: dict[str, int] = {}
     stale_by_kind: dict[str, int] = {}
+    by_algorithm: dict[str, int] = {}
     files_touched: dict[str, int] = {}
     for path in iter_markdown(root):
         rel = path.relative_to(root).as_posix()
@@ -166,19 +225,34 @@ def verify(root: Path, skip_lines: int = 0) -> dict:
         except (OSError, UnicodeDecodeError):
             continue
         for lineno, line in enumerate(text.splitlines(), 1):
+            if not sha1_is_labelled(line):
+                for match in DIGEST_RE.finditer(line):
+                    if len(match.group(0)) == 64:
+                        continue
+                    state = "git-object-id" if len(match.group(0)) == 40 else "unlabelled-partial"
+                    by_state[state] = by_state.get(state, 0) + 1
+                    findings.append({
+                        "file": rel, "line": lineno, "digest": match.group(0),
+                        "algorithm": algorithm_of(match.group(0)),
+                        "state": state, "paths": [],
+                    })
+                # 64-hex values on the same line still need the normal path below
+                if not any(len(m.group(0)) == 64 for m in DIGEST_RE.finditer(line)):
+                    continue
             if DRIVE_RE.search(line) or any(
                 ID_TOKEN_RE.fullmatch(tok) and not HEX_ONLY_RE.fullmatch(tok)
                 for tok in ID_TOKEN_RE.findall(line)
             ):
-                for match in HEX_RE.finditer(line):
+                for match in DIGEST_RE.finditer(line):
                     findings.append({
-                        "file": rel, "line": lineno, "sha256": match.group(0),
+                        "file": rel, "line": lineno, "digest": match.group(0),
+                        "algorithm": algorithm_of(match.group(0)),
                         "state": "external-drive", "paths": [],
                     })
                     by_state["external-drive"] = by_state.get("external-drive", 0) + 1
                 continue
             pairs = pair_claims(line)
-            for match in HEX_RE.finditer(line):
+            for match in DIGEST_RE.finditer(line):
                 if pairs is None:
                     if not PATH_RE.findall(line):
                         state = "unclaimed"
@@ -186,7 +260,8 @@ def verify(root: Path, skip_lines: int = 0) -> dict:
                         state = "ambiguous"
                     by_state[state] = by_state.get(state, 0) + 1
                     findings.append({
-                        "file": rel, "line": lineno, "sha256": match.group(0),
+                        "file": rel, "line": lineno, "digest": match.group(0),
+                        "algorithm": algorithm_of(match.group(0)),
                         "state": state, "paths": [],
                     })
                     continue
@@ -199,16 +274,19 @@ def verify(root: Path, skip_lines: int = 0) -> dict:
                         paths.append({"path": candidate, "state": "external"})
                     else:
                         paths.append({"path": candidate,
-                                      "state": "match" if sha256_of(resolved) == digest else "stale"})
+                                      "state": "match" if matches(resolved, digest) else "stale"})
                 states = {c["state"] for c in paths}
                 state = "match" if "match" in states else ("stale" if "stale" in states else "external")
                 by_state[state] = by_state.get(state, 0) + 1
+                algo = algorithm_of(digest)
+                by_algorithm[algo] = by_algorithm.get(algo, 0) + 1
                 kind = source_kind(rel)
                 if state == "stale":
                     files_touched[rel] = files_touched.get(rel, 0) + 1
                     stale_by_kind[kind] = stale_by_kind.get(kind, 0) + 1
                 findings.append({
-                    "file": rel, "line": lineno, "sha256": digest,
+                    "file": rel, "line": lineno, "digest": digest,
+                    "algorithm": algorithm_of(digest),
                     "state": state, "paths": paths, "sourceKind": kind,
                 })
             continue
@@ -234,6 +312,7 @@ def verify(root: Path, skip_lines: int = 0) -> dict:
             "byState": by_state,
             "filesWithStaleClaims": len(files_touched),
             "staleBySourceKind": stale_by_kind,
+            "byAlgorithm": dict(sorted(by_algorithm.items())),
         },
         "staleByFile": dict(sorted(files_touched.items(), key=lambda kv: (-kv[1], kv[0]))),
         "findings": findings,

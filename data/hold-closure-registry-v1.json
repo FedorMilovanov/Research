@@ -250,6 +250,30 @@
         "Просроченные подписи в манифестах раундов и хендоффе не переписаны: это исторические записи о моменте."
       ]
     }
+
+    ,{
+      "id": "HCR-2026-11-18-10",
+      "axis": "short digests: SHA-1 and MD5 written next to file names",
+      "method": "short-digest-label",
+      "closedOn": "2026-11-18",
+      "state": "closed",
+      "question": "Документы приводят 40- и 32-знаковые хеши рядом с именами файлов. Утверждают ли они байты этих файлов?",
+      "finding": "Почти нет. 789 значений из 40 знаков — идентификаторы объектов Git (коммиты и blob-ы, часть в чужих репозиториях), 165 из 32 знаков не размечены вовсе. Проверка по близости дала бы 12 ложных обвинений в живых документах: колонка «Коммит» в закрывающем отчёте DEEP_PASS_XXV, «at/after <sha1>» в apostasy/README.md, «main=<sha1>» в independent_review_packets.md и Git blob словаря из gb-vosk-tts рядом с упоминанием AGENTS.md.",
+      "evidence": "data/internal-digests-verified-2026-11-18.json (schema internal-digests-verified/2, totals.byAlgorithm, состояния git-object-id и unlabelled-partial)",
+      "closedScope": "Хеш считается подписью байтов только при словесной разметке (sha1, sha-1, md5, checksum, контрольная) и отсутствии commit/коммит/blob/main=/at/after. Размеченных коротких подписей 10 (sha1 3, md5 7), и все десять указывают на объекты вне рабочего дерева — локально сверять нечего. Совпадений с файлами дерева и просроченных среди них нет.",
+      "notClosed": "Тот же предел, что у SHA-256: совпадение подтверждает байты, а не прочтение, издание или права. Короткие подписи внешних объектов не перепроверены — их нечем сверять без повторной загрузки.",
+      "limits": [
+        "40-знаковое значение сверяется и как обычный sha1, и как Git blob (blob <len>\\0 + байты): обе функции определены.",
+        "Значения без разметки не обвиняются: git-object-id и unlabelled-partial — это «не утверждает», а не «утверждает неверно».",
+        "В CI не гейтится: гейт стоит на живых Markdown-документах и на состояниях match/stale для SHA-256."
+      ],
+      "commands": [
+        "python3 -B scripts/verify_internal_digests.py --summary",
+        "python3 -B scripts/verify_internal_digests.py --only match",
+        "python3 -B -m unittest discover -s scripts -p 'test_verify_internal_digests.py'"
+      ],
+      "tests": "python3 -B -m unittest discover -s scripts -p 'test_verify_internal_digests.py' → 24 OK"
+    }
   ],
   "confirmations": [
     {
