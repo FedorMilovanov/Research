@@ -237,6 +237,10 @@
   - Каннингем, *Historical Theology* II (1863), p. 373: Гомар — «defender of Calvinism», Ремонстрацию 1610 г. подали последователи Арминия после его смерти; p. 435: «colleague and opponent of Arminius» — `SOURCE_CONTRADICTS_CLAIM`. Pp. 379–380 — общая оценка синода (`LOCATOR_IMPRECISE`, мягко).
   - Коллинз: цитата сн. 76 EXACT; значение 2a — «reconciliation», *redemption* — «a buying back», «atonement for guilt» — `SELECTIVE_CITATION` (мягко).
   - Вердикты S1–S5 не меняются. Документ: REPASS, §34.
+- **раунд 112 (2026-11-17, AGENT 2):** §3 (S210), новый §4.195 (Q191): сноски ↔ библиография; электронные издания.
+  - PDF статьи: 112 сносок, 69 позиций библиографии (61 печатная + 8 электронных) — все процитированы; не внесены: сн. 11, 76, 1 — `BIBLIOGRAPHY_INCOMPLETE` (мягко). «Сн. 114–120» — артефакт поиска.
+  - Бокэм «1998», Смолли «1989», Вюст «1997» — метаданные Logos (печать WBC 50/51 — 1983/1984) — `ELECTRONIC_EDITION_UNMARKED` (мягко); Лайтфут «8th ed., 1886» — реальная перепечатка. *Expiation* в сн. 75/76 — `INTERNAL_INCONSISTENCY` (мягко).
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §35.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -609,6 +613,7 @@
 | S207 *(раунд 109, 2026-11-17)* | (1) *Acta Synodi… Dordrechti habitae* (1620), IA `actasynodination00syno`, `_djvu.txt`, чанк 169: pp. 316–318 (сессии CXLVII–CXLIX). (2) Schaff, *Creeds* I, IA `creedschristendo01scha` (`ia801407`), л. 573. (3) Schaff, *Creeds* III, IA `creedsofchriste03scha` (`ia801000`), л. 569 (Дорт I.15). | A1 (1, OCR); B (2); A2 (3) |
 | S208 *(раунд 110, 2026-11-17)* | (1) Th. Scott, *Remarks on the Refutation of Calvinism*, vol. I (London: C. Baldwin / L. B. Seeley, 1811), IA `remarksonrefuta00tomlgoog`: предисловие, p. xiii. (2) Th. Scott, *Remarks…*, 2nd ed. (London, 1817), IA `a608278200scotuoft`: л. 18 = p. xiv; л. 771 = p. 747; оглавление. (3) Erasmus, *In Novum Testamentum Annotationes* (Basel: Froben, 1535), IA `ARes162052`, `_djvu.txt`, чанки 249–250 (Кол. 1:19–20, p. 635). | A1 (OCR) |
 | S209 *(раунд 111, 2026-11-17)* | (1) W. Cunningham, *Historical Theology*, vol. II (Edinburgh: T. & T. Clark, 1863), IA `historicaltheolo02cunnuoft` (`ia600104`, `/14/items/historicaltheolo02cunnuoft`): `_djvu.txt`, чанки 140–143 = pp. 372–383; `inside.php` q=«Gomarus» (листы 385, 401, 447 = pp. 373, 389, 435), q=«Remonstrance» (лист 396 = p. 384), q=«Dort» (оглавление: «Synod of Dort … 379»); `page_numbers.json`: лист 391 = p. 379. (2) Collins English Dictionary, онлайн, s.v. *atonement*, *redemption* (просмотр 2026-11-17) | A1 (Каннингем, OCR); B1/C (Коллинз, текущая онлайн-редакция) | **p. 373:** «much contention between him and his colleague, Gomarus, who was a learned and zealous defender of Calvinism»; «He died in 1609. After his death, Episcopius was considered the head of the party»; «The followers of Arminius, in 1610, presented a remonstrance… under five heads or articles». **pp. 373–374:** «in November 1618, a national synod was held at Dort»; «sat for about six months». **p. 379–380:** «Sec. II. — Synod of Dort»: общая оценка; «unanimously determined against the innovations of Arminius and his followers». **p. 384:** пять статей «determined… the form in which the whole subject was afterwards discussed». **p. 435:** «Gomarus, the colleague and opponent of Arminius». **Коллинз, atonement:** «1. satisfaction, reparation, or expiation given for an injury or wrong»; «2a. the reconciliation of humankind with God…»; «4. obsolete: reconciliation or agreement»; «C16: from Middle English phrase at onement in harmony». **redemption:** «3b. atonement for guilt»; «Latin redemptiō a buying back» | изд. 1882 г. (на него ссылается статья) не видено; визуальная сверка не проводилась |
+| S210 *(раунд 112, 2026-11-17)* | (1) PDF статьи А. Прокопенко «За кого умер Христос» (Google Drive `1ZlmUe1PfCeZFAB2aZjjLcx7R7s3stWQo`, 40 с.; текстовый слой, `pypdf`): сн. 1–112 (с. 1–35), библиография (с. 36–40). (2) Open Library `search.json`: WBC 50 (Bauckham) — first_publish_year 1983; WBC 51 (Smalley) — 1984. (3) Формат цитат электронных изданий Logos: форум Logos (Bauckham, «Dallas: Word, Incorporated, 1998»); цитаты Smalley «(1989)… Dallas: Word, Incorporated»; Wuest «Eerdmans, 1997, c1984»; карточка продукта Logos (Lightfoot, «8th ed.», серия «Classic Commentaries on the Greek New Testament», «Logos Release Date: 2004») | A1 (статья); B1 (каталог); C (цитаты Logos) | Не внесены в библиографию: сн. 11 (Calvin, *Sermons on the Saving Work of Christ*, Solid Ground 2011), сн. 76 (Collins), сн. 1 (URL tms.edu, dispensationalpublishing.com). Оформление: «P. 240» в записи Бокэма; «(2.12)» в записи *Наставления*; Джабалла без издательства; «BDAG» (сн. 108) без расшифровки. Сн. 75: «expiation (удаление вины)» ↔ сн. 76: «компенсация» | страницы Logos не сверены с печатью; Бокэм, BDAG, Бюксель, Шрайнер, Смолли, Дэниел — HOLD |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8180,8 +8185,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.192 | Q188 | Дорт, сессия CXLVIII — 1 мая 1619 г. (среда), после полудня (*Acta*, p. 317–318); `16_` §1 «синоним» — `CORPUS_MISREAD`; примечания `11_`, `06_`, `01_`, `12_` (р. 109) |
 | 4.193 | Q189 | Скотт: *Remarks* 1811, p. xiii — «not answerable for… the Synod of Dort» (`CHRONOLOGY_PARTIAL` подтверждён); 1817, p. 747 — мотив перевода; Стюарт «xiv» и прим. 23 — по 1817 г.; Эразм, *Annotationes* (1535) к Кол. 1:20 — «erga se», `OVERSTATEMENT` подтверждён (р. 110) |
 | 4.194 | Q190 | Сн. 78: Каннингем (1863), pp. 373, 435 — Гомар противник Арминия, Ремонстрация 1610 г. от его последователей (`SOURCE_CONTRADICTS_CLAIM`); pp. 379–380 — общая оценка синода (`LOCATOR_IMPRECISE`, мягко). Сн. 76: Коллинз — цитата EXACT, пара «цена / результат» словарём не поддержана (`SELECTIVE_CITATION`, мягко) (р. 111) |
+| 4.195 | Q191 | Аппарат статьи: 112 сносок ↔ 69 позиций библиографии (61 печатная + 8 электронных); не внесены сн. 11, 76, 1 (`BIBLIOGRAPHY_INCOMPLETE`, мягко); годы Бокэма, Смолли, Вюста — метаданные Logos (`ELECTRONIC_EDITION_UNMARKED`, мягко); *expiation* в сн. 75/76 (`INTERNAL_INCONSISTENCY`, мягко) (р. 112) |
 
-⇒ разделов с `Q` — **187**, разделов §4.x — **189**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **188**, разделов §4.x — **190**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -9500,6 +9506,22 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 5. **Коллинз против пары «цена / результат».** В той же статье словаря богословское значение 2a — «the reconciliation of humankind with God», устаревшее значение 4 — «reconciliation or agreement». *Redemption* словарь выводит из лат. «a buying back» и в значении 3b определяет как «atonement for guilt». Источник сн. 76 показывает пересечение терминов — `SELECTIVE_CITATION` (мягко). Это подтверждает §Q1 (Ч. Ходж, S2) на источнике самой статьи. Смягчение: статья сама признаёт, что термины «нередко используются как синонимы».
 
 **Чего нет.** Daniel, pp. 37–38; Лейн, с. 187; пагинация Каннингема 1882 г. (SWRB 1991); визуальная сверка pp. 373–384 (текстовый слой OCR); редакция Коллинза, которую видел автор.
+
+Вердикты S1–S5 не меняются.
+
+### 4.195. Q191 — Аппарат статьи: сноски ↔ библиография; электронные издания за выходными данными (раунд 112, 2026-11-17)
+
+**Повод.** Остаток пробелов покрытия раунда 111 и «странные» годы ряда источников. Полная таблица — REPASS-документ, §35. Источники — S210.
+
+**Ответы.**
+1. **Счёт.** В статье 112 сносок (с. 1–35). «Сн. 114–120» в списке пробелов — номера строк библиографии в текстовой версии academia.edu, а не сноски.
+2. **Полнота библиографии.** Все 69 позиций библиографии (61 печатная + 8 электронных) процитированы. Не внесены три источника из сносок: сн. 11 — Calvin, *Sermons on the Saving Work of Christ* (Solid Ground, 2011); сн. 76 — словарь Коллинза; сн. 1 — два URL о Р. Томасе. Имена сн. 91 автор сам отсылает к Стюарту. `BIBLIOGRAPHY_INCOMPLETE` (мягко).
+3. **Электронные издания.** Бокэм «Dallas: Word, 1998» и Смолли «Dallas: Word, 1989» — выходные данные ресурсов Logos; печатные WBC 50 и 51 вышли в 1983 и 1984 гг. Так же Вюст «1997» (c1984); Свонсон — издание самой Logos; вероятно, TWOT «1999» и «Vid. sub» без страниц у Кинера и Робертсона. HALOT «1994–2000» — реальный печатный выпуск. В библиографии пометки «электронное издание» нет — `ELECTRONIC_EDITION_UNMARKED` (мягко). Это не `DATE_ERROR`.
+4. **Лайтфут.** Серия «Classic Commentaries on the Greek New Testament» — название Logos, но «8th ed., 1886» — реальная перепечатка (оборот титула оттиска 1890 г.: «…1884, 1886, 1889, 1890»). Вердикт по локатору не меняется.
+5. **Сн. 75 ↔ 76.** *Expiation* — «удаление вины» (сн. 75) и «компенсация» (сн. 76, перевод Коллинза). `INTERNAL_INCONSISTENCY` (мягко); подтверждает §4.194 п. 4.
+6. **Сн. 99** — авторское отступление без источника, вне предмета статьи; не оценивается.
+
+**Чего нет.** Бокэм p. 240; BDAG p. 14; Бюксель pp. 125–126; Шрайнер p. 329; Смолли p. 40; Дэниел pp. 37–38, 55 — в открытом доступе нет. Совпадение страниц Logos с печатью не проверено.
 
 Вердикты S1–S5 не меняются.
 
