@@ -76,10 +76,12 @@ require(
     "04/25/2017" in TEXT and "28 декабря 2018" in TEXT,
     "Contradictory 2018 minutes dates omitted",
 )
+require({"ARCHIVE_HOLD", "EVIDENCE_HOLD"} <= set(archive["holds"]), "2018 source must remain archive/evidence HOLD")
 require("устава 2023 года" in TEXT, "Audit policy must identify applicable constitution year")
 terms = next(o for o in items if o["sourceId"] == "JR-MBC-038")
 require("AI_AUTOMATION_PROHIBITED_BY_SOURCE_TERMS" in terms.get("integrityFlags", []), "ACMS anti-bot restriction missing")
 require("не производили автоматизированного поиска внутри ACMS" in TEXT, "Court access restriction not disclosed")
+require(re.search(r"JR-MBC-\d{3}[–-]\d{2,3}", TEXT) is None, "Compressed source ID ranges hide exact citation links")
 require("первичный протокол мартовского собрания ещё не приобретён" not in TEXT, "2016 chronology incorrectly denies known minutes fragment")
 require("полноценные приложения №9" in TEXT, "2016 minutes vs unavailable attachments distinction omitted")
 audio = next(o for o in items if o["sourceId"] == "JR-MBC-040")
