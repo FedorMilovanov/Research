@@ -1428,3 +1428,35 @@
 - Не сделано: пересчёт *redeem/redemption* (V1) по скану (а) — без OCR это потребовало бы ручного чтения 25 страниц; прежний счёт V1 не оспаривается.
 
 Вердикты S1–S5 не меняются. Умысел не утверждается.
+
+## 38. Раунд 115 (2026-11-17): сн. 82 — счёт слов WCF повторён по печатному скану (OCR + визуальная проверка)
+
+**Повод.** В §37.3 осталось: «пересчёт *redeem/redemption* (V1) по скану не сделан». Прежний счёт (`34_` S32, раунд 4; аудит V1) сделан по двум цифровым зеркалам издания 1647 г. (класс C).
+
+### 38.1. Метод
+
+- Скан — тот же, что в §37 (Tercentenary Edition, Presbyterian Church of England, 1946; Google Drive `1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4`; 25 листов, печатная с. = лист + 1). A2.
+- OCR: `rapidocr-onnxruntime` (PyPI; модели в пакете), рендер 200 dpi, все 25 листов, ~69 400 знаков. Поиск по подстроке без границ слов: OCR местами склеивает слова («dayofredemption»).
+- Каждое расхождение с S32 проверено визуально по рендеру страницы. Перенос слова через строку OCR не ловит: «satis-|faction», XI.3.
+
+### 38.2. Счёт
+
+| Лемма | OCR-скан | S32 (цифровой текст) | Места по скану | Итог |
+|---|---|---|---|---|
+| *redemption* | 5 | 5 | VIII.6 (p. 10), VIII.8 (p. 10), XII (p. 12), XVIII.2 (p. 15, OCR «dayofredemption»), XXXII.1 (p. 24) | **совпадает** |
+| *redeemed* | 3 | 3 | III.6 ×2 (p. 7), VIII.1 (p. 9) | **совпадает** |
+| *atone-* | 0 | 0 | — | **совпадает** |
+| *propitiation* | 1 | 1 | XXIX.2 (p. 22): «Christ's one, only sacrifice, the alone propitiation for all the sins of His elect» | **совпадает** |
+| *purchas-* | 4 | 4 | — | **совпадает** |
+| *satisf-* | 6 + 1 | 7 | второе вхождение XI.3 («proper, real, and full satis-|faction», p. 12) OCR пропустил из-за переноса, на рендере оно видно | **совпадает (7)** |
+| *reconcil-* | 3 | 2 | третье — «irreconcilable war» (XIII.2), другое слово | **совпадает (2)** |
+| *sacrific-* | 6 | 5 | сверх S32: VII.5 «sacrifices» (ветхозаветные прообразы; мн. ч.) | **уточнение:** 6 с формой мн. ч.; на вывод не влияет |
+
+### 38.3. Итог
+
+- Утверждение сн. 82 «redemption/redeem — 8 раз, atonement — ни разу» **подтверждено по печатному изданию** (A2), а не только по цифровым зеркалам. Вердикт V1 / S32 как арифметики — **ACCURATE**.
+- Оценка довода не меняется (`34_` §4.20; аудит V1): в том же тексте *propitiation* — «for all the sins of His elect» (XXIX.2), *purchased* — «for all those whom the Father hath given unto Him» (VIII.5). Счёт «0 atonement» ожидаем для 1647 г. и не показывает различения «цена/результат».
+- Попутно (p. 12, XI.4): «God did, from all eternity, decree to justify all the elect, and Christ did, in the fulness of time, die for their sins» — уже учтено в корпусе (аудит, `TENSION_WITH_WCF_XI.4`, раунд 80); новых выводов не добавляет.
+- Мелкое уточнение S32: *sacrifice* — 5 только в ед. ч.; с VII.5 «sacrifices» — 6.
+
+Вердикты S1–S5 не меняются. Умысел не утверждается.

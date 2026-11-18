@@ -249,6 +249,9 @@
   - III.3 «foreordained to everlasting death» (p. 6); VIII.1 без оговорки о завете, VIII.5 «purchased, not only reconciliation», VIII.8 «purchased redemption» без оговорки о благодати, гл. VIII кончается §8 (pp. 9–10).
   - Расхождения T-13 и §36 подтверждены сканами обеих сторон; вердикты прежние. Книг из HOLD на Drive нет.
   - Вердикты S1–S5 не меняются. Документ: REPASS, §37.
+- **раунд 115 (2026-11-17, AGENT 2):** §3 (S213), новый §4.198 (Q194): счёт слов WCF (сн. 82) повторён по печатному скану (OCR + визуальная проверка).
+  - *redemption* 5, *redeemed* 3, *atone-* 0, *propitiation* 1, *purchased* 4, *satisf-* 7, *reconcil-* 2 — совпадает с S32; *sacrifice* с мн. ч. VII.5 — 6.
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §38.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -624,6 +627,7 @@
 | S210 *(раунд 112, 2026-11-17)* | (1) PDF статьи А. Прокопенко «За кого умер Христос» (Google Drive `1ZlmUe1PfCeZFAB2aZjjLcx7R7s3stWQo`, 40 с.; текстовый слой, `pypdf`): сн. 1–112 (с. 1–35), библиография (с. 36–40). (2) Open Library `search.json`: WBC 50 (Bauckham) — first_publish_year 1983; WBC 51 (Smalley) — 1984. (3) Формат цитат электронных изданий Logos: форум Logos (Bauckham, «Dallas: Word, Incorporated, 1998»); цитаты Smalley «(1989)… Dallas: Word, Incorporated»; Wuest «Eerdmans, 1997, c1984»; карточка продукта Logos (Lightfoot, «8th ed.», серия «Classic Commentaries on the Greek New Testament», «Logos Release Date: 2004») | A1 (статья); B1 (каталог); C (цитаты Logos) | Не внесены в библиографию: сн. 11 (Calvin, *Sermons on the Saving Work of Christ*, Solid Ground 2011), сн. 76 (Collins), сн. 1 (URL tms.edu, dispensationalpublishing.com). Оформление: «P. 240» в записи Бокэма; «(2.12)» в записи *Наставления*; Джабалла без издательства; «BDAG» (сн. 108) без расшифровки. Сн. 75: «expiation (удаление вины)» ↔ сн. 76: «компенсация» | страницы Logos не сверены с печатью; Бокэм, BDAG, Бюксель, Шрайнер, Смолли, Дэниел — HOLD |
 | S211 *(раунд 113, 2026-11-17)* | (1) Скан IA `per_early-baptist_a-confession-of-faith-_john-ripon_1689` (микрофильм, 51 л.; титул «PRINTED AT LONDON, 1688», объявление о подписке — вероятно, перепечатка Риппона; `inside.php`): л. 13 — III.3 «others being left to act in their sin to their just condemnation»; л. 19 — VIII.1 «according to the covenant made between them both»; л. 21 — VIII.8 «without any condition foreseen in them, to procure it», VIII.9–10; л. 50 — оглавление с главой «Of the Gospel, and of the Extent of the Grace thereof». (2) Creeds.json (`NonlinearFruit/Creeds.json`, HEAD `2ae21a4`): WCF 1647, 1689 LBCF, Savoy 1658 — пословное сравнение всех 160 параграфов 1689 г. (3) Schaff, *Creeds* III, `creedsofchriste03scha` (`inside.php`): «just condemnation» — только Нью-Гэмпширское исповедание; «condition foreseen» — 0 | A2 (скан перепечатки 1688 г.); W (Creeds.json); A1 (отрицательный поиск в Шаффе) | 160 параграфов: ≥ 0.95 — 32, 0.80–0.95 — 58, 0.50–0.80 — 36, < 0.50 — 34; совпадающих слов 69.6 % (нижняя граница); 49 параграфов ближе к Савойской декларации | дата скана не установлена; WCF III.3 — только по Creeds.json; нормализация орфографии неполная |
 | S212 *(раунд 114, 2026-11-17)* | (1) Google Drive пользователя: «Westminster Confession of Faith (PD copy).pdf» (id `1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4`, md5 `c992905d7f02a04c8cc33fbf4731529b`, 25 л., без текстового слоя) — Tercentenary Edition, London: Publishing Office of the Presbyterian Church of England (метаданные PDF: 1946); печатная с. = лист + 1; прочитаны визуально pp. 4, 6, 9, 10. (2) Скан изд. 1688 г. (S211 (1)), `inside.php`: л. 20 — VIII.5 «[p]rocured reconciliation». | A2 (оба скана) | WCF III.3 «and others foreordained to everlasting death» (p. 6); II.3 — короткая формула (p. 6); VIII.1 — без «according to a covenant made between them both» (p. 9); VIII.5 «purchased, not only reconciliation, but an everlasting inheritance… for all those whom the Father hath given unto Him» (p. 10); VIII.8 «purchased redemption… unsearchable dispensation.» — конец параграфа; после §VIII — гл. IX (p. 10) | редакция 1946 г. не сверена с изд. 1647 г. постранично; счёт V1 по скану не повторён |
+| S213 *(раунд 115, 2026-11-17)* | Скан S212 (1) (WCF, Tercentenary Edition, 1946; Google Drive `1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4`), OCR `rapidocr-onnxruntime` (PyPI), 200 dpi, все 25 листов (~69 400 знаков), поиск по подстроке; расхождения проверены по рендеру: XI.3 «full satis-|faction» (p. 12), XVIII.2 «sealed to the day of redemption» (p. 15), XIII.2 «irreconcilable», VII.5 «sacrifices» (p. 9), XXIX.2 «the alone propitiation for all the sins of His elect» (p. 22) | A2 (скан); OCR — вспомогательный инструмент | *redemption* 5; *redeemed* 3; *atone-* 0; *propitiation* 1; *purchased* 4; *satisf-* 7; *reconcil-* 2 (без «irreconcilable»); *sacrific-* 6 (с мн. ч.) | OCR не ловит переносы слов; полнота обеспечена совпадением с независимым цифровым счётом S32 |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -661,7 +665,7 @@ S1, p. 475: *«Although Christ's atonement, in the discussion of its value and s
 
 **Что остаётся верным у Прокопенко (историческое зерно).** На Ассамблее действительно сидели гипотетические универсалисты (Калами, Эрроусмит, Вайнс, Симен — S6, p. lv), и Митчелл честно признаёт, что не может с уверенностью сказать, что Ассамблея решила против них; формулировки 8.5/8.8 не говорят прямо о **ширине** приобретения (`15_` §D держит `EVIDENCE_HOLD`). Но это зерно формулируется на языке **намерения** (Калами, p. 152: «a price for all — absolute intention for the elect, conditional intention for the reprobate in case they do believe»), а не на языке «atonement vs redemption». Калами сам называет свой взгляд «universal redemption» (не в арминианском смысле) — то есть для него *redemption* — слово о **цене** («pay a price for all»), прямо вопреки П1. *(Раунд 3, уточнение: «зерно» — одна сторона непроголосованного спора; на тех же заседаниях Калами возражали Гиллеспи, Прайс, Рутерфорд, Харрис, Гудвин, Лайтфут — см. S19 и §4.13.)*
 
-**Счёт слов.** Утверждение «redemption/redeem — 8 раз, atonement — 0» в этом досье не пересчитывалось (не влияет на вывод: 0 — ожидаемо для 1647 г., см. п. 1). *(Раунд 4: пересчитано по полному тексту — 5 *redemption* + 3 *redeemed* = 8, *atonement* 0; верно как арифметика; см. S32 и §4.20 о том, почему это не аргумент: *purchased* VIII.5 и *propitiation* XXIX.2 отнесены к тому же кругу.)*
+**Счёт слов.** Утверждение «redemption/redeem — 8 раз, atonement — 0» в этом досье не пересчитывалось (не влияет на вывод: 0 — ожидаемо для 1647 г., см. п. 1). *(Раунд 4: пересчитано по полному тексту — 5 *redemption* + 3 *redeemed* = 8, *atonement* 0; верно как арифметика; см. S32 и §4.20 о том, почему это не аргумент: *purchased* VIII.5 и *propitiation* XXIX.2 отнесены к тому же кругу.)* *(Раунд 115: счёт подтверждён по печатному скану изд. 1946 г. — OCR + визуальная проверка; S213, §4.198.)*
 
 ### 4.4. Q4 — Дорт: латинский текст не знает дихотомии *atonement/redemption*
 
@@ -8198,8 +8202,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.195 | Q191 | Аппарат статьи: 112 сносок ↔ 69 позиций библиографии (61 печатная + 8 электронных); не внесены сн. 11, 76, 1 (`BIBLIOGRAPHY_INCOMPLETE`, мягко); годы Бокэма, Смолли, Вюста — метаданные Logos (`ELECTRONIC_EDITION_UNMARKED`, мягко); *expiation* в сн. 75/76 (`INTERNAL_INCONSISTENCY`, мягко) (р. 112) |
 | 4.196 | Q192 | Карта покрытия сн. 1–112 (без упоминаний были 20, 29, 38, 63, 100); сн. 20: Второе Лондонское «почти дословно, кроме баптистских особенностей» — `SIMPLIFIED` (мягко): III.3, VIII.8–10, XVII.1, гл. XV, XX (р. 113) |
 | 4.197 | Q193 | WCF III.3, VIII.1, VIII.5, VIII.8 по печатному скану (изд. 1946 г.): расхождения T-13 и §4.196 подтверждены сканами обеих сторон; вердикты прежние (р. 114) |
+| 4.198 | Q194 | Сн. 82: счёт *redemption/redeemed/atonement* в WCF по печатному скану (OCR + визуальная проверка) — 5/3/0, совпадает с S32 (р. 115) |
 
-⇒ разделов с `Q` — **190**, разделов §4.x — **192**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **191**, разделов §4.x — **193**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -9567,6 +9572,17 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 4. **Google Drive:** книг из списка HOLD нет.
 
 **Чего нет.** Постраничная сверка изд. 1946 г. с изд. 1647 г.; повторный счёт *redeem/redemption* (V1) по скану.
+
+Вердикты S1–S5 не меняются.
+
+### 4.198. Q194 — Счёт слов WCF (сн. 82) по печатному скану (раунд 115, 2026-11-17)
+
+**Повод.** Счёт S32 (раунд 4) сделан по цифровым зеркалам (класс C). Повторён по печатному изданию. Таблица — REPASS-документ, §38. Источник — S213.
+
+**Ответы.**
+1. *redemption* — 5 (VIII.6, VIII.8, XII, XVIII.2, XXXII.1); *redeemed* — 3 (III.6 ×2, VIII.1); *atonement* — 0. Утверждение сн. 82 «8 и 0» **верно и по печатному тексту**.
+2. Совпадают и вспомогательные счёты S32: *propitiation* 1 (XXIX.2 «for all the sins of His elect»), *purchased* 4, *satisf-* 7, *reconcil-* 2. Уточнение: *sacrifice* — 6, если считать VII.5 «sacrifices».
+3. Вывод §4.20 не меняется: счёт верен как арифметика, но не доказывает различения «цена/результат».
 
 Вердикты S1–S5 не меняются.
 
