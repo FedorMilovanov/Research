@@ -1,6 +1,6 @@
 {
   "caseId": "JR-MBC-2026",
-  "version": 1,
+  "version": 2,
   "reviewedAt": "2026-11-18",
   "corpus": "JOURNAL_RESEARCH/NEWS/MCLEAN_BIBLE_CHURCH",
   "evidencePolicy": "data/repository-evidence-policy-v2.json",
@@ -66,7 +66,7 @@
       "locatorState": "COARSE_LOCATOR_ONLY",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
-      "locator": "Sections on elders, church government and SBC",
+      "locator": "MBC FAQ as currently hosted: church government, elders, SBC — revision history not established",
       "provesOnly": "MBC's own current explanation; preserve revision-date uncertainty",
       "holds": [
         "PUBLICATION_HOLD",
@@ -81,33 +81,30 @@
       "url": "https://mcleanbible.org/questions/",
       "evidenceClass": "A3",
       "accessState": "PARTIAL_OBJECT",
-      "locatorState": "COARSE_LOCATOR_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
-      "locator": "SBC relationship, mission giving and 2016–2021 cooperation",
-      "provesOnly": "MBC's institutional defense; not independent audit of funds",
+      "locator": "MBC Commonly Asked Questions, visibly revised 13 Aug 2021; section on 23 Mar 2016 elders' motion, 9 Aug 2021 decision, and giving",
+      "provesOnly": "MBC's dated institutional account: partnership decision 23 Mar 2016, suspension of financial support June 2021, elders' unanimous decision to end cooperation on 9 Aug 2021; not independent verification of the March 2016 motion or money trail",
       "holds": [
         "PUBLICATION_HOLD",
         "EVIDENCE_HOLD",
-        "LOCATOR_HOLD",
         "RIGHTS_HOLD"
       ]
     },
     {
       "sourceId": "JR-MBC-006",
-      "title": "MBC — April 6, 2021 statement on SBC cooperation",
+      "title": "Larry Cooper, MBC Board chairman, letter to Ashley Clayton, 6 Apr 2021",
       "url": "https://mcleanbible.org/legalupdate16",
-      "evidenceClass": "A3",
-      "accessState": "PARTIAL_OBJECT",
-      "locatorState": "COARSE_LOCATOR_ONLY",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
-      "locator": "April 6 2021 notice; mentions cooperation beginning under Lon Solomon",
-      "provesOnly": "Evidence of publicly expressed MBC position at that date, not proof of all documents",
+      "locator": "Single-page letter, dated 6 Apr 2021; entire text and page visually checked",
+      "provesOnly": "MBC Board chair said that cooperation with SBC bodies began before Platt and that MBC understood it was not a formal denominational affiliation; this is his documented 2021 position",
       "holds": [
         "PUBLICATION_HOLD",
-        "EVIDENCE_HOLD",
-        "LOCATOR_HOLD",
         "RIGHTS_HOLD"
       ]
     },
@@ -152,15 +149,14 @@
       "url": "https://mcleanbible.org/wp-content/uploads/2023/05/MBC-Constitution_2023.pdf",
       "evidenceClass": "A1",
       "accessState": "PARTIAL_OBJECT",
-      "locatorState": "COARSE_LOCATOR_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
-      "locator": "2023 edition; exact Article II vs 2021 version must be separately reconciled",
-      "provesOnly": "May establish 2023 rules, never presume it is 2021 governing text",
+      "locator": "Constitution May 2023 PDF: p.1 Article I §2; p.3 Article III §§1–2; p.4 Article IV §4; pp.4–5 Article V; page images/selected text checked",
+      "provesOnly": "Rules expressly present in the 2023 edition, including permanent non-affiliation clause and limited cooperation authority; not proof these exact rules governed 2016 or 2021",
       "holds": [
         "PUBLICATION_HOLD",
         "EVIDENCE_HOLD",
-        "LOCATOR_HOLD",
         "RIGHTS_HOLD"
       ]
     },
@@ -170,14 +166,13 @@
       "url": "https://www.christianpost.com/news/virginia-court-rejects-mclean-bibles-attempt-to-stop-lawsuit.html",
       "evidenceClass": "B1",
       "accessState": "FULL_OBJECT_VERIFIED",
-      "locatorState": "COARSE_LOCATOR_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
-      "locator": "Michael Gryboski, 10 Nov 2026; reports one-sentence order emailed to paper",
-      "provesOnly": "Independent journalism for November event; official court order not obtained",
+      "locator": "Michael Gryboski, The Christian Post, published 10 Nov 2026, report of 9 Nov one-sentence order; author quotes attorneys for both sides",
+      "provesOnly": "Verifies that this journalist reported receipt of the Nov 9 denial and records named sides' quotes; original Nov 9 SCV order itself is not possessed",
       "holds": [
         "PUBLICATION_HOLD",
-        "LOCATOR_HOLD",
         "RIGHTS_HOLD"
       ]
     },
@@ -354,6 +349,73 @@
       "publicationState": "REFERENCE",
       "locator": "CRI release text",
       "provesOnly": "Announcement proves film/claim publication, not truth of allegations",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-021",
+      "title": "Ashley Clayton (SBC Executive Committee), letter clarifying 'affiliation' vs 'membership', made public by MBC June 2021",
+      "url": "https://mcleanbible.org/wp-content/uploads/2021/06/SBC_Letter.pdf",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "Single-page reprinted/redacted letter; entire printed page and image checked; exact signing date not printed in public reproduction",
+      "provesOnly": "An SBC Executive Committee official wrote that MBC's cooperation did not mean denominational membership and that the SBC database ID was for accounting; reprint hosted by MBC, not independently authenticated from SBC servers",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-022",
+      "title": "Larry Cooper, MBC Board chair, 13 Aug 2021 withdrawal letter to Ashley Clayton",
+      "url": "https://mcleanbible.org/wp-content/uploads/2021/08/Larry-Cooper-SBC-Withdrawal-Letter.pdf",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "Signed one-page original MBC letter, dated 13 Aug 2021; text and page image checked",
+      "provesOnly": "Board chair formally informed SBC of unanimous vote to withdraw from 2016 cooperation; letter proves communication and institutional position, not independent verification of all practical downstream terminations",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-023",
+      "title": "MBC: Frequently Asked Questions (published revision date 13 Aug 2021)",
+      "url": "https://mcleanbible.org/faq/",
+      "evidenceClass": "A3",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "FAQ updated 13 Aug 2021, section 1 'Has MBC's relationship with SBC changed since 2016?', first two paragraphs",
+      "provesOnly": "Church's public explanation states initial elders motion 23 Mar 2016, support suspended June 2021, elders decided to end agreement 9 Aug 2021; first-party narrative, not signed 2016 minutes",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-024",
+      "title": "The Christian Post, 20 Oct 2026: Virginia Supreme Court initial dismissal of MBC appeal",
+      "url": "https://www.christianpost.com/books/va-supreme-court-allows-mclean-bible-church-lawsuit-to-continue.html",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "Article published 20 Oct 2026; precise order/document not independently read",
+      "provesOnly": "Reports an earlier separate procedural action on appeal; don't collapse Oct denial and Nov 9 rehearing denial into one event",
       "holds": [
         "PUBLICATION_HOLD",
         "EVIDENCE_HOLD",
