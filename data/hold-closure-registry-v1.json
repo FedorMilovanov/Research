@@ -182,11 +182,18 @@
     {
       "id": "HCR-2026-11-18-C1",
       "title": "Charnock custody v3 ZIP — независимое подтверждение квитанции",
+      "holdType": "ARCHIVE_HOLD",
+      "status": "CONFIRMATION_NOT_CLOSURE",
       "recordLocations": ["data/charnock-custody-receipt-v3-20261117-r2.json"],
       "method": "raw-download-compare",
       "object": {"driveFileId": "1r2rJUlYFdZKTITF3I9Vz0pNdMQGCSXdH", "bytes": 1045446, "sha256": "9c86b0b1beb0a913546dcc8979c49bdcd6d14ac0446a3f863f2edb510581fc8f"},
       "result": "Скачанные из Drive байты дали SHA-256 9c86b0b1…fc8f, совпадающий и с `sourceArchiveSha256`, и с `destinationSha256ReadBack` квитанции; это подтверждает уже заявленный readback, но новых прав, локаторов или публикационного решения не даёт.",
-      "alsoVerified": "Два owner-файла квитанции совпадают с текущими байтами репозитория: 00_README_AND_NAVIGATION.md = 2a8d41c113c5c0de826297dbab482024735c594a25debff0befe16615fc2fdb6, 16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md = 706748bb1f3eb22d4b96f00ef6151cdd02c8975749b534d1dd86c7561ebaf832."
+      "alsoVerified": "Два owner-файла квитанции совпадают с текущими байтами репозитория: 00_README_AND_NAVIGATION.md = 2a8d41c113c5c0de826297dbab482024735c594a25debff0befe16615fc2fdb6, 16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md = 706748bb1f3eb22d4b96f00ef6151cdd02c8975749b534d1dd86c7561ebaf832.",
+      "limits": [
+        "Совпадение хешей удостоверяет байты архива, а не право на их публикацию: RIGHTS_HOLD/PUBLICATION_HOLD не снимаются.",
+        "Совпадение с `destinationSha256ReadBack` подтверждает уже заявленный readback; независимость ограничена тем, что оба значения записаны одной стороной.",
+        "Хеш не доказывает, что содержимое архива прочитано и что в нём именно заявленный текст."
+      ]
     },
     {
       "id": "HCR-2026-11-18-C2",
@@ -210,6 +217,29 @@
         "Совпадение хеша удостоверяет байты объекта на коммите, а не факт чтения содержания и не тождество издания.",
         "ARCHIVE_HOLD на сканы и RIGHTS_HOLD/PUBLICATION_HOLD этим не снимаются.",
         "URL без закреплённого коммита не проверяются: у них нет версии, к которой можно привязать байты."
+      ]
+    },
+    {
+      "id": "HCR-2026-11-18-C3",
+      "title": "Якоря разделов: 36 ссылок с #fragment, 36/36 указывают на существующий заголовок; 2 мёртвых якоря найдено, 1 исправлен",
+      "holdType": "LOCATOR_HOLD",
+      "status": "CONFIRMATION_NOT_CLOSURE",
+      "closedScope": "Снято сомнение в адресности ссылок вида `файл.md#раздел`: до правки аудит читал только путь, якорь не проверялся. Добавлена проверка фрагмента по заголовкам цели; 36/36 ссылок с фрагментом резолвятся. Два мёртвых якоря: в `docs/research/reformation/README.md` исправлено `пр`→`pr` (заголовок «…после PR #496–499»), в `ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md` ссылка верна — тире в диапазоне `6–7` в slug исчезает, поэтому сравнение нормализует дефисные формы.",
+      "recordLocations": [
+        "scripts/audit_relative_links.py",
+        "scripts/test_audit_relative_links.py",
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §8.1"
+      ],
+      "method": "section-anchor-slug-check",
+      "verification": {
+        "command": "python3 -B scripts/audit_relative_links.py --summary",
+        "expect": "2 410 файлов; resolves=2 709, missing=58, missing-anchor=0, external=5 974; --strict → 0 необъяснённых",
+        "tests": "python3 -B -m unittest discover -s scripts -p 'test_audit_relative_links.py' → 27 OK"
+      },
+      "limits": [
+        "Существование заголовка не доказывает, что раздел прочитан и что в нём сказано именно это.",
+        "Якоря `#L12` и фрагменты не-markdown целей не проверяются: заголовков у них нет.",
+        "Slug считается по правилам GitHub приближённо: экзотические символы в заголовке могут дать ложный дефект, поэтому дефисные формы нормализуются."
       ]
     }
   ],

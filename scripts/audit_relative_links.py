@@ -15,6 +15,8 @@ Link states:
   ``../`` chains that leave the tree);
 * ``unqualified``- a bare host (``www.example.org/x.pdf``) parsed by Markdown
   as a relative path; a scheme is missing;
+* ``missing-anchor`` - the file exists, but the ``#fragment`` names no heading
+  in it (a dead section locator);
 * ``external``   - ``http(s)``, ``mailto``, ``tel`` and in-page ``#anchor``
   links; not a filesystem locator and therefore not judged here.
 
@@ -44,6 +46,8 @@ AUTHORITY_ID = "RESEARCH-RELATIVE-LINKS-INVENTORY-V1"
 ROOT = Path(__file__).resolve().parents[1]
 
 LINK_RE = re.compile(r"(!?)\[[^\]\n]*\]\(([^()\n]+)\)")
+HEADING_RE = re.compile(r"^#{1,6}\s+(.+?)\s*#*\s*$")
+SLUG_DROP_RE = re.compile(r"[^\w\- \u0400-\u04ff]")
 SCHEME_RE = re.compile(r"^(?:https?|mailto|tel|ftp):", re.IGNORECASE)
 BARE_HOST_RE = re.compile(r"^(?:www\.)?[a-z0-9-]+(?:\.[a-z0-9-]+)+/", re.IGNORECASE)
 FENCE_RE = re.compile(r"^\s{0,3}(```|~~~)")
@@ -51,7 +55,7 @@ INLINE_CODE_RE = re.compile(r"`[^`\n]*`")
 
 SKIP_DIRS = {".git", "node_modules", ".arena", ".cache", ".local", "__pycache__",
              ".pytest_cache", ".ruff_cache", ".venv", "venv", ".mypy_cache"}
-STATES = ("resolves", "missing", "outside", "unqualified", "external")
+STATES = ("resolves", "missing", "outside", "unqualified", "external", "missing-anchor")
 
 
 def iter_markdown(root: Path) -> list[Path]:
@@ -78,7 +82,50 @@ def strip_fences(text: str) -> str:
     return "\n".join(result)
 
 
-def classify(raw: str, source: Path, root: Path) -> tuple[str, str]:
+def slugify(text: str) -> str:
+    """GitHub-flavoured anchor slug, close enough for checking our own headings.
+
+    Links and inline code are removed first so that a heading like
+    ``## См. [`X`](x.md)`` slugs by its visible words, not by the markup.
+    """
+    text = re.sub(r"\[[^\]]*\]\([^)]*\)", "", text)
+    text = text.replace("`", "")
+    text = re.sub(r"[*_]{1,3}", "", text)
+    text = text.strip().lower()
+    text = SLUG_DROP_RE.sub("", text)
+    return text.replace(" ", "-")
+
+
+def normalise_anchor(anchor: str) -> str:
+    """Fold cosmetic differences that do not change which heading is meant.
+
+    En/em dashes render as nothing on GitHub, so ``6–7`` and ``6-7`` are the same
+    place; repeated hyphens come from the spaces around a dropped dash.
+    """
+    anchor = anchor.replace("\u2013", "-").replace("\u2014", "-")
+    anchor = re.sub(r"(?<=\d)-(?=\d)", "", anchor)
+    return re.sub(r"-{2,}", "-", anchor.lower())
+
+
+def anchors_of(path: Path) -> set[str]:
+    out: set[str] = set()
+    seen: dict[str, int] = {}
+    try:
+        lines = path.read_text(encoding="utf-8", errors="ignore").splitlines()
+    except OSError:
+        return out
+    for line in lines:
+        match = HEADING_RE.match(line)
+        if not match:
+            continue
+        base = slugify(match.group(1))
+        count = seen.get(base, 0)
+        seen[base] = count + 1
+        out.add(base if count == 0 else f"{base}-{count}")
+    return out
+
+
+def classify(raw: str, source: Path, root: Path, anchor_cache: dict[Path, set[str]] | None = None) -> tuple[str, str]:
     target = raw.strip()
     if target.startswith("<") and target.endswith(">"):
         target = target[1:-1].strip()
@@ -97,6 +144,17 @@ def classify(raw: str, source: Path, root: Path) -> tuple[str, str]:
     except ValueError:
         return "outside", "escapes repository root"
     if resolved.exists():
+        fragment = unquote(target.split("#", 1)[1]) if "#" in target else ""
+        if fragment and resolved.suffix.lower() == ".md":
+            cache = anchor_cache if anchor_cache is not None else {}
+            anchors = cache.get(resolved)
+            if anchors is None:
+                anchors = anchors_of(resolved)
+                cache[resolved] = anchors
+            wanted = normalise_anchor(fragment)
+            known = {normalise_anchor(a) for a in anchors}
+            if wanted not in known and not fragment.startswith("L"):
+                return "missing-anchor", "no such heading in target"
         return "resolves", "ok"
     if (root / path_part).exists():
         # a copy of a root-level document (an archive snapshot) carries the original
@@ -132,6 +190,7 @@ def scan(root: Path, exceptions: dict[tuple[str, str], str] | None = None) -> di
     by_state: Counter = Counter()
     by_file: Counter = Counter()
     kinds: Counter = Counter()
+    anchor_cache: dict[Path, set[str]] = {}
     for path in files:
         rel = path.relative_to(root).as_posix()
         try:
@@ -141,13 +200,13 @@ def scan(root: Path, exceptions: dict[tuple[str, str], str] | None = None) -> di
         for lineno, line in enumerate(strip_fences(text).splitlines(), 1):
             for match in LINK_RE.finditer(line):
                 is_image = bool(match.group(1))
-                state, reason = classify(match.group(2), path, root)
+                state, reason = classify(match.group(2), path, root, anchor_cache)
                 kind = "image" if is_image else "link"
                 by_state[state] += 1
                 kinds[state if kind == "link" else f"image-{state}"] += 1
-                if state in ("missing", "outside", "unqualified"):
+                if state in ("missing", "outside", "unqualified", "missing-anchor"):
                     by_file[rel] += 1
-                if state in ("missing", "outside", "unqualified"):
+                if state in ("missing", "outside", "unqualified", "missing-anchor"):
                     target_text = match.group(2).strip()
                     justification = exceptions.get((rel, target_text))
                     findings.append({
@@ -167,7 +226,7 @@ def scan(root: Path, exceptions: dict[tuple[str, str], str] | None = None) -> di
         "totals": {
             "byState": {state: by_state.get(state, 0) for state in STATES},
             "byKind": dict(sorted(kinds.items())),
-            "defects": sum(by_state.get(s, 0) for s in ("missing", "outside", "unqualified")),
+            "defects": sum(by_state.get(s, 0) for s in ("missing", "outside", "unqualified", "missing-anchor")),
             "filesWithDefects": len(by_file),
             "explained": sum(1 for f in findings if f["explained"]),
             "unexplained": sum(1 for f in findings if not f["explained"]),

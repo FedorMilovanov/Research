@@ -150,6 +150,65 @@ class ExceptionTests(unittest.TestCase):
         self.assertEqual(arl.load_exceptions(self.fx.root / "nope.json"), {})
 
 
+class SectionAnchorTests(unittest.TestCase):
+    """A ``#fragment`` must name a heading that exists in the target file.
+
+    Section locators are the cheapest kind of citation to get wrong: the file
+    stays put while the heading is reworded, and the link keeps looking alive.
+    """
+
+    def setUp(self) -> None:
+        self.fx = Fixture()
+
+    def tearDown(self) -> None:
+        self.fx.close()
+
+    def _state(self, target_text: str, link: str) -> str:
+        target = self.fx.write("docs/target.md", target_text)
+        page = self.fx.write("docs/page.md", f"[t]({link})\n")
+        state, _reason = arl.classify(link, page, self.fx.root)
+        return state
+
+    def test_existing_heading_resolves(self) -> None:
+        self.assertEqual(self._state("# Head\n\n## Part Two\n", "target.md#part-two"), "resolves")
+
+    def test_absent_heading_is_a_defect(self) -> None:
+        self.assertEqual(self._state("# Head\n\n## Part Two\n", "target.md#part-three"), "missing-anchor")
+
+    def test_dash_forms_do_not_change_the_heading(self) -> None:
+        # GitHub renders an en dash as nothing, so 6\u20137 and 6-7 are one place.
+        heading = "## 9. \u0425\u043e\u0434\u0436, \u0433\u043b. VII \u00a7\u00a76\u20137\n"
+        self.assertEqual(
+            self._state(heading, "target.md#9-\u0445\u043e\u0434\u0436-\u0433\u043b-vii-6-7"),
+            "resolves",
+        )
+
+    def test_anchor_is_checked_case_insensitively(self) -> None:
+        self.assertEqual(self._state("## Proof\n", "target.md#Proof"), "resolves")
+
+    def test_fragment_on_a_missing_file_stays_missing(self) -> None:
+        self.assertEqual(self._state("## Proof\n", "gone.md#proof"), "missing")
+
+    def test_non_markdown_fragment_is_not_checked(self) -> None:
+        (self.fx.root / "docs" / "data.json").write_text("{}", encoding="utf-8")
+        self.assertEqual(self._state("## Proof\n", "data.json#anything"), "resolves")
+
+    def test_line_anchor_is_left_alone(self) -> None:
+        self.assertEqual(self._state("## Proof\n", "target.md#L12"), "resolves")
+
+    def test_missing_anchor_counts_as_a_defect(self) -> None:
+        self.fx.write("docs/target.md", "## Part Two\n")
+        self.fx.write("docs/page.md", "[t](target.md#part-three)\n")
+        report = self.fx.scan()
+        self.assertEqual(report["totals"]["byState"]["missing-anchor"], 1)
+        self.assertEqual(report["totals"]["defects"], 1)
+
+    def test_slug_uses_visible_words_of_a_heading(self) -> None:
+        self.assertEqual(
+            arl.normalise_anchor(arl.slugify("See [`x`](x.md) now")), "see-now"
+        )
+
+
 class InterfaceTests(unittest.TestCase):
     def setUp(self) -> None:
         self.fx = Fixture()
