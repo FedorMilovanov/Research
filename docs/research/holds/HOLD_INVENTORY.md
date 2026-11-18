@@ -1,6 +1,6 @@
 # HOLD inventory — сквозной инвентарь HOLD-ов Research
 
-**Собрано:** 2026-11-18; **проверенный коммит:** `c30348dcd519b0bfe23f336801756ad7f3c78844`. **Роль:** производный read-only артефакт, не authority. Пересобрать: `python3 -B scripts/render_hold_inventory.py`.
+**Собрано:** 2026-11-18; **проверенный коммит:** `fe4e1cc7f2e1fec81d9dc91fb0e6aba7a9103ee4`. **Роль:** производный read-only артефакт, не authority. Пересобрать: `python3 -B scripts/render_hold_inventory.py`.
 
 Инвентарь отвечает на один вопрос: какие HOLD-и объявлены в репозитории, какого они типа и что нужно, чтобы закрыть каждый честно. Он **ничего не снимает**: по `data/repository-evidence-policy-v2.json` HOLD не снимается ни присутствием файла в Research/Drive, ни достижимостью URL, ни библиографической записью.
 
@@ -84,9 +84,11 @@
 
 ### 4.4 «Реформация»: датированный аудит против выросшего реестра
 
-В реестре сейчас 219 источников; аудит 2026-11-11 покрывал 211 (датированный аудит 2026-11-11). Дельта: 8.
+В реестре 219 записей. Аудит 2026-11-11 объявляет охват 211 записей и содержит таблицу §4 ровно на 211 строк. Записей, отсутствующих в аудите целиком: **0**. Записей, описанных в прозе аудита, но не попавших в таблицу: **8**.
 
-Действующие HOLD-и реестра: `ARCHIVE_HOLD`=164, `EVIDENCE_HOLD`=92, `LOCATOR_HOLD`=55, `PUBLICATION_HOLD`=219, `RIGHTS_HOLD`=198.
+Только в прозе: `REF-P88`, `REF-P89`, `REF-P90`, `REF-P91`, `REF-P92`, `REF-P93`, `REF-P94`, `REF-S109`. Без типизированных HOLD-ов среди них: **0**. Это дельта формы подачи, а не пропуск аудита.
+
+Действующие HOLD-и реестра: `ARCHIVE_HOLD`=164, `EVIDENCE_HOLD`=92, `LOCATOR_HOLD`=55, `PUBLICATION_HOLD`=219, `RIGHTS_HOLD`=198. Вердикт: **PASS**.
 
 ### 4.5 Формальные противоречия HOLD и его оси состояния
 
@@ -98,7 +100,7 @@
 
 ### 4.6 HOLD недозаявлен (fail-closed проверка)
 
-Записей с `rightsState` = `RIGHTS_UNKNOWN`/`PERMISSION_REQUIRED` и без `RIGHTS_HOLD`: **5**. Записей с `publicationState` = `BLOCKED` и без `PUBLICATION_HOLD`: **0**.
+Записей с `rightsState` = `RIGHTS_UNKNOWN`/`PERMISSION_REQUIRED` и без `RIGHTS_HOLD`: **5**, из них в датированных снимках **5**, а в недатированных (действующих) файлах **0**. Записей с `publicationState` = `BLOCKED` и без `PUBLICATION_HOLD`: **0**.
 
 | Файл | id | rightsState | Фактические HOLD-и |
 |---|---|---|---|
@@ -109,6 +111,27 @@
 | `ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json` | `articles39` | `RIGHTS_UNKNOWN` | `PUBLICATION_HOLD` |
 
 Это дыра в обратную сторону: запись выглядит права-разрешённой, хотя права не установлены. Правильная реакция — добавить типизированный `RIGHTS_HOLD` в актуальную запись, а не переписывать датированный снимок задним числом.
+
+### 4.7 Что держат только права и публикация
+
+Объектов, прочитанных полностью и с точным локатором, где все HOLD-и сводятся к `RIGHTS_HOLD`/`PUBLICATION_HOLD`: **417** в машинных реестрах. Здесь новый поиск ничего не изменит — нужен ответ по правам и решение о публикации.
+
+| Реестр | Объектов | Примеры |
+|---|---|---|
+| `data/charnock-biographical-anchors-v1.json` | 146 | `A25478`, `A32722`, `A32723` |
+| `data/charnock-series-editorial-plan-v1.json` | 110 | `(без id)`, `(без id)`, `(без id)` |
+| `ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json` | 83 | `allargs-scan-cheek2025-p94`, `allargs-scan-cheek2025-p95`, `allargs-scan-cheek2025-p96` |
+| `ИСКУПЛЕНИЕ/evidence/source_controls_wave6_2026-11-03.json` | 24 | `F1K-LICENSE`, `F1K-README`, `JOHN` |
+| `ИСКУПЛЕНИЕ/evidence/source_controls_wave9_2026-11-03.json` | 24 | `CRAMER-V2-P318-JPG`, `CRAMER-V2-P319-JPG`, `CRAMER-V2-P320-JPG` |
+| `ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json` | 8 | `PUSEY-V1-CAPITA-JPG`, `PUSEY-V1-COLOPHON-JPG`, `PUSEY-V1-ERRATUM-JPG` |
+| `SUNO_HYMNS/data/source-registry-v1.json` | 6 | `SRC-CONF-1689-LBCF`, `SRC-PHOS-CLEM-EB1911`, `SRC-PHOS-CLEM-MCCLINTOCK` |
+| `ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json` | 5 | `S1`, `S2`, `S3` |
+| `data/bible-corpus-rights-provenance-2026-08-06.json` | 4 | `CROSSWIRE-RUSSYNODAL-COPYRIGHT`, `CROSSWIRE-RUSSYNODALLIO-1.0.3`, `ONLY-BIBLE-KASSIAN-PERMISSION-NOTICE` |
+| `ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json` | 2 | `AUGUSTINE`, `CHRYSOSTOM` |
+| `ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json` | 2 | `(без id)`, `(без id)` |
+| `data/charnock-handoff-receipt-v1.json` | 1 | `(без id)` |
+
+Оговорка: Один и тот же объект может учитываться в двух реестрах корпуса (например, карточка и её снимок в плане), поэтому сумма — верхняя граница.
 
 ## 5. Проверенные кандидаты и вердикты
 

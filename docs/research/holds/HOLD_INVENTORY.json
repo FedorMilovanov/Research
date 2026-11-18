@@ -3,7 +3,7 @@
  "artifact": "REPO-HOLD-INVENTORY",
  "role": "DERIVED_READ_ONLY_NOT_AUTHORITY",
  "generatedAt": "2026-11-18",
- "testedCommit": "c30348dcd519b0bfe23f336801756ad7f3c78844",
+ "testedCommit": "fe4e1cc7f2e1fec81d9dc91fb0e6aba7a9103ee4",
  "policy": "data/repository-evidence-policy-v2.json",
  "totals": {
   "json_files_with_holds": 35,
@@ -198,10 +198,23 @@
    "live_holds": []
   },
   "reformation_registry_vs_sweep": {
-   "status": "DATED_SNAPSHOT",
+   "status": "PASS",
    "detail": [],
    "registry_source_count": 219,
-   "sweep_scope": "211 (датированный аудит 2026-11-11)",
+   "sweep_table_rows": 211,
+   "sweep_declared_scope": 211,
+   "ids_only_in_prose": [
+    "REF-P88",
+    "REF-P89",
+    "REF-P90",
+    "REF-P91",
+    "REF-P92",
+    "REF-P93",
+    "REF-P94",
+    "REF-S109"
+   ],
+   "ids_absent_from_sweep": [],
+   "prose_only_without_typed_holds": [],
    "registry_hold_counts": {
     "ARCHIVE_HOLD": 164,
     "EVIDENCE_HOLD": 92,
@@ -209,8 +222,7 @@
     "PUBLICATION_HOLD": 219,
     "RIGHTS_HOLD": 198
    },
-   "note": "Датированный аудит не переписывается. Если реестр вырос после 2026-11-11, это дельта, а не ошибка аудита; новые REF требуют отдельного прохода.",
-   "sources_added_since_sweep": 8
+   "note": "Восемь записей (P88–P94, S109) описаны в прозе аудита, но не в таблице §4. Все они несут типизированные HOLD-и; это дельта формы, а не пропуск аудита. Датированный файл не переписывается; при следующем аудите таблица должна покрывать все записи реестра."
   },
   "axis_contradictions": [
    {
@@ -264,7 +276,178 @@
      ]
     }
    ],
+   "rightsState_gaps_in_dated_snapshots": [
+    {
+     "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
+     "id": "dort",
+     "rightsState": "RIGHTS_UNKNOWN",
+     "holds": [
+      "PUBLICATION_HOLD"
+     ]
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
+     "id": "westminster",
+     "rightsState": "RIGHTS_UNKNOWN",
+     "holds": [
+      "PUBLICATION_HOLD"
+     ]
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
+     "id": "heidelberg",
+     "rightsState": "RIGHTS_UNKNOWN",
+     "holds": [
+      "PUBLICATION_HOLD"
+     ]
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
+     "id": "davenant2024",
+     "rightsState": "RIGHTS_UNKNOWN",
+     "holds": [
+      "PUBLICATION_HOLD"
+     ]
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
+     "id": "articles39",
+     "rightsState": "RIGHTS_UNKNOWN",
+     "holds": [
+      "PUBLICATION_HOLD"
+     ]
+    }
+   ],
+   "rightsState_gaps_in_current_files": [],
    "BLOCKED_without_PUBLICATION_HOLD": []
+  },
+  "decision_only_holds": {
+   "total_objects": 417,
+   "byFile": {
+    "data/charnock-biographical-anchors-v1.json": {
+     "count": 146,
+     "ids": [
+      "A25478",
+      "A32722",
+      "A32723",
+      "A32724",
+      "A32726"
+     ]
+    },
+    "data/charnock-series-editorial-plan-v1.json": {
+     "count": 110,
+     "ids": [
+      "(без id)",
+      "(без id)",
+      "(без id)",
+      "(без id)",
+      "(без id)"
+     ]
+    },
+    "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json": {
+     "count": 83,
+     "ids": [
+      "allargs-scan-cheek2025-p94",
+      "allargs-scan-cheek2025-p95",
+      "allargs-scan-cheek2025-p96",
+      "allargs-scan-cheek2025-p97",
+      "allargs-scan-cheek2025-p98"
+     ]
+    },
+    "ИСКУПЛЕНИЕ/evidence/source_controls_wave6_2026-11-03.json": {
+     "count": 24,
+     "ids": [
+      "F1K-LICENSE",
+      "F1K-README",
+      "JOHN",
+      "LXX",
+      "LXX-Deut"
+     ]
+    },
+    "ИСКУПЛЕНИЕ/evidence/source_controls_wave9_2026-11-03.json": {
+     "count": 24,
+     "ids": [
+      "CRAMER-V2-P318-JPG",
+      "CRAMER-V2-P319-JPG",
+      "CRAMER-V2-P320-JPG",
+      "CRAMER-V2-P321-JPG",
+      "CRAMER-V2-P322-JPG"
+     ]
+    },
+    "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json": {
+     "count": 8,
+     "ids": [
+      "PUSEY-V1-CAPITA-JPG",
+      "PUSEY-V1-COLOPHON-JPG",
+      "PUSEY-V1-ERRATUM-JPG",
+      "PUSEY-V1-PRAEF-IX-JPG",
+      "PUSEY-V1-PRAEF-VII-JPG"
+     ]
+    },
+    "SUNO_HYMNS/data/source-registry-v1.json": {
+     "count": 6,
+     "ids": [
+      "SRC-CONF-1689-LBCF",
+      "SRC-PHOS-CLEM-EB1911",
+      "SRC-PHOS-CLEM-MCCLINTOCK",
+      "SRC-PHOS-CLEM-TEXT",
+      "SRC-PHOS-EPIPHANIUS-COLLYRIDIANS-LOCATORS"
+     ]
+    },
+    "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json": {
+     "count": 5,
+     "ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S8"
+     ]
+    },
+    "data/bible-corpus-rights-provenance-2026-08-06.json": {
+     "count": 4,
+     "ids": [
+      "CROSSWIRE-RUSSYNODAL-COPYRIGHT",
+      "CROSSWIRE-RUSSYNODALLIO-1.0.3",
+      "ONLY-BIBLE-KASSIAN-PERMISSION-NOTICE",
+      "RBO-KASSIAN-CATALOG-2039"
+     ]
+    },
+    "ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json": {
+     "count": 2,
+     "ids": [
+      "AUGUSTINE",
+      "CHRYSOSTOM"
+     ]
+    },
+    "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json": {
+     "count": 2,
+     "ids": [
+      "(без id)",
+      "(без id)"
+     ]
+    },
+    "data/charnock-handoff-receipt-v1.json": {
+     "count": 1,
+     "ids": [
+      "(без id)"
+     ]
+    },
+    "ИСКУПЛЕНИЕ/evidence/source_controls_wave5_2026-11-03.json": {
+     "count": 1,
+     "ids": [
+      "JOHANNINE-TEXT"
+     ]
+    },
+    "ИСКУПЛЕНИЕ/ot/data/ot-corpus-v1.json": {
+     "count": 1,
+     "ids": [
+      "(без id)"
+     ]
+    }
+   },
+   "meaning": "accessState=FULL_OBJECT_VERIFIED и locatorState=EXACT_LOCATOR_VERIFIED, а holds ⊆ {RIGHTS_HOLD, PUBLICATION_HOLD}. Закрытие таких HOLD-ов — решение о правах и публикации, а не новый поиск.",
+   "caveat": "Один и тот же объект может учитываться в двух реестрах корпуса (например, карточка и её снимок в плане), поэтому сумма — верхняя граница."
   },
   "files_with_holds": 35,
   "nodes_with_holds": 2231

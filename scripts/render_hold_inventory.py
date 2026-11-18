@@ -380,30 +380,55 @@ def check_one_peter_effective_holds():
 
 
 def check_reformation_sweep():
-    """Датированный аудит 211 REF против текущего реестра."""
+    """Сверить датированный аудит «Реформации» с текущим реестром.
+
+    Аудит 2026-11-11 объявляет проход 211/211 записей и содержит таблицу §4
+    ровно на 211 строк. Реестр с тех пор содержит 219 записей. Разница важна:
+    надо отделить «запись не аудировалась» от «запись описана в прозе, но не
+    попала в таблицу». Второе — форма подачи, первое — реальный пробел.
+    """
     result = {"status": "NOT_RUN", "detail": []}
     registry = load_json("docs/research/reformation/source-registry-v1.json")
-    sweep = ROOT / "docs" / "research" / "reformation" / "HOLD_SOURCE_SWEEP_2026-11-11.md"
-    if not registry or not sweep.is_file():
+    sweep_path = ROOT / "docs" / "research" / "reformation" / "HOLD_SOURCE_SWEEP_2026-11-11.md"
+    if not registry or not sweep_path.is_file():
         result["detail"].append("реестр или HOLD_SOURCE_SWEEP отсутствует")
         return result
 
     sources = registry.get("sources", [])
+    by_id = {s.get("id"): s for s in sources if s.get("id")}
     counts = collections.Counter()
     for src in sources:
         for hold in src.get("holds", []) or []:
             counts[hold] += 1
-    sweep_text = sweep.read_text(encoding="utf-8")
-    match = re.search(r"211/211", sweep_text)
-    result["status"] = "DATED_SNAPSHOT"
+
+    sweep_text = sweep_path.read_text(encoding="utf-8")
+    table_ids = set(re.findall(r"^\|\s*\[?(REF-[A-Z0-9\-]+)\]?", sweep_text, re.M))
+    prose_ids = set(re.findall(r"\bREF-[A-Z0-9\-]+\b", sweep_text))
+
+    only_in_prose = sorted(set(by_id) - table_ids)
+    absent = sorted(set(by_id) - prose_ids)
+    prose_without_holds = [
+        sid for sid in only_in_prose if not (by_id[sid].get("holds") or [])
+    ]
+
     result["registry_source_count"] = len(sources)
-    result["sweep_scope"] = "211 (датированный аудит 2026-11-11)" if match else "не найдено"
+    result["sweep_table_rows"] = len(table_ids)
+    result["sweep_declared_scope"] = 211
+    result["ids_only_in_prose"] = only_in_prose
+    result["ids_absent_from_sweep"] = absent
+    result["prose_only_without_typed_holds"] = prose_without_holds
     result["registry_hold_counts"] = dict(sorted(counts.items()))
-    result["note"] = (
-        "Датированный аудит не переписывается. Если реестр вырос после 2026-11-11, "
-        "это дельта, а не ошибка аудита; новые REF требуют отдельного прохода."
+    result["status"] = (
+        "PASS"
+        if not absent and not prose_without_holds
+        else "GAP"
     )
-    result["sources_added_since_sweep"] = max(0, len(sources) - 211)
+    result["note"] = (
+        "Восемь записей (P88–P94, S109) описаны в прозе аудита, но не в таблице §4. "
+        "Все они несут типизированные HOLD-и; это дельта формы, а не пропуск аудита. "
+        "Датированный файл не переписывается; при следующем аудите таблица должна "
+        "покрывать все записи реестра."
+    )
     return result
 
 
@@ -447,9 +472,52 @@ def check_hold_coverage(nodes_by_file):
                 blocked_without_publication.append(
                     {"path": path, "id": node["id"], "holds": sorted(holds)}
                 )
+    dated = re.compile(r"\d{4}-\d{2}-\d{2}")
+    dated_gaps = [x for x in missing_rights if dated.search(x["path"])]
+    current_gaps = [x for x in missing_rights if not dated.search(x["path"])]
     return {
         "rightsState_without_RIGHTS_HOLD": missing_rights,
+        "rightsState_gaps_in_dated_snapshots": dated_gaps,
+        "rightsState_gaps_in_current_files": current_gaps,
         "BLOCKED_without_PUBLICATION_HOLD": blocked_without_publication,
+    }
+
+
+def check_decision_only_holds(nodes_by_file):
+    """Объекты, которые держат только права и публикация.
+
+    Это слой решений владельца, а не слой отсутствующих доказательств:
+    объект прочитан целиком, локатор сверен, а HOLD-и сводятся к
+    `RIGHTS_HOLD` / `PUBLICATION_HOLD`. Новый поиск здесь ничего не изменит.
+    """
+    by_file = {}
+    total = 0
+    for path, nodes in nodes_by_file.items():
+        rows = []
+        for node in nodes:
+            holds = set(node["holds"])
+            if (
+                holds
+                and holds <= {"RIGHTS_HOLD", "PUBLICATION_HOLD"}
+                and node["accessState"] == "FULL_OBJECT_VERIFIED"
+                and node["locatorState"] == "EXACT_LOCATOR_VERIFIED"
+            ):
+                rows.append(node["id"] or "(без id)")
+        if rows:
+            total += len(rows)
+            by_file[path] = {"count": len(rows), "ids": sorted(rows)[:5]}
+    return {
+        "total_objects": total,
+        "byFile": dict(sorted(by_file.items(), key=lambda kv: -kv[1]["count"])),
+        "meaning": (
+            "accessState=FULL_OBJECT_VERIFIED и locatorState=EXACT_LOCATOR_VERIFIED, "
+            "а holds ⊆ {RIGHTS_HOLD, PUBLICATION_HOLD}. Закрытие таких HOLD-ов — "
+            "решение о правах и публикации, а не новый поиск."
+        ),
+        "caveat": (
+            "Один и тот же объект может учитываться в двух реестрах корпуса "
+            "(например, карточка и её снимок в плане), поэтому сумма — верхняя граница."
+        ),
     }
 
 
@@ -508,6 +576,7 @@ def build():
         "reformation_registry_vs_sweep": check_reformation_sweep(),
         "axis_contradictions": check_hold_axes_contradictions(nodes_by_file),
         "hold_coverage": check_hold_coverage(nodes_by_file),
+        "decision_only_holds": check_decision_only_holds(nodes_by_file),
     }
     checks.update(check_registry_files_exist(nodes_by_file))
 
@@ -745,14 +814,27 @@ def render_markdown(report):
     add("### 4.4 «Реформация»: датированный аудит против выросшего реестра")
     add("")
     add(
-        f"В реестре сейчас {ref.get('registry_source_count', 0)} источников; "
-        f"аудит 2026-11-11 покрывал {ref.get('sweep_scope', '—')}. "
-        f"Дельта: {ref.get('sources_added_since_sweep', 0)}."
+        f"В реестре {ref.get('registry_source_count', 0)} записей. Аудит "
+        f"2026-11-11 объявляет охват {ref.get('sweep_declared_scope', '—')} "
+        f"записей и содержит таблицу §4 ровно на "
+        f"{ref.get('sweep_table_rows', 0)} строк. Записей, отсутствующих в аудите "
+        f"целиком: **{len(ref.get('ids_absent_from_sweep', []))}**. Записей, "
+        f"описанных в прозе аудита, но не попавших в таблицу: "
+        f"**{len(ref.get('ids_only_in_prose', []))}**."
     )
     add("")
+    if ref.get("ids_only_in_prose"):
+        add(
+            "Только в прозе: "
+            + ", ".join(f"`{x}`" for x in ref["ids_only_in_prose"])
+            + f". Без типизированных HOLD-ов среди них: "
+            f"**{len(ref.get('prose_only_without_typed_holds', []))}**. "
+            "Это дельта формы подачи, а не пропуск аудита."
+        )
+        add("")
     add("Действующие HOLD-и реестра: " + ", ".join(
         f"`{k}`={v}" for k, v in ref.get("registry_hold_counts", {}).items()
-    ) + ".")
+    ) + ". Вердикт: **" + str(ref.get("status")) + "**.")
     add("")
     contradictions = checks["axis_contradictions"]
     add("### 4.5 Формальные противоречия HOLD и его оси состояния")
@@ -781,7 +863,10 @@ def render_markdown(report):
     blocked = coverage["BLOCKED_without_PUBLICATION_HOLD"]
     add(
         f"Записей с `rightsState` = `RIGHTS_UNKNOWN`/`PERMISSION_REQUIRED` и без "
-        f"`RIGHTS_HOLD`: **{len(missing_rights)}**. Записей с "
+        f"`RIGHTS_HOLD`: **{len(missing_rights)}**, из них в датированных снимках "
+        f"**{len(coverage.get('rightsState_gaps_in_dated_snapshots', []))}**, "
+        f"а в недатированных (действующих) файлах "
+        f"**{len(coverage.get('rightsState_gaps_in_current_files', []))}**. Записей с "
         f"`publicationState` = `BLOCKED` и без `PUBLICATION_HOLD`: **{len(blocked)}**."
     )
     add("")
@@ -802,6 +887,26 @@ def render_markdown(report):
             "датированный снимок задним числом."
         )
         add("")
+
+    decision = checks["decision_only_holds"]
+    add("### 4.7 Что держат только права и публикация")
+    add("")
+    add(
+        f"Объектов, прочитанных полностью и с точным локатором, где все HOLD-и "
+        f"сводятся к `RIGHTS_HOLD`/`PUBLICATION_HOLD`: **{decision['total_objects']}** "
+        "в машинных реестрах. Здесь новый поиск ничего не изменит — нужен "
+        "ответ по правам и решение о публикации."
+    )
+    add("")
+    if decision["byFile"]:
+        add("| Реестр | Объектов | Примеры |")
+        add("|---|---|---|")
+        for path, info in list(decision["byFile"].items())[:12]:
+            sample = ", ".join(f"`{x}`" for x in info["ids"][:3])
+            add(f"| `{path}` | {info['count']} | {sample} |")
+        add("")
+    add(f"Оговорка: {decision['caveat']}")
+    add("")
 
     add("## 5. Проверенные кандидаты и вердикты")
     add("")
