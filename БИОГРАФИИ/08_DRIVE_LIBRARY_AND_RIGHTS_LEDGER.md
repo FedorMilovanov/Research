@@ -230,6 +230,12 @@ SHA-256 локальных файлов в момент загрузки:
 Custody ближе к `TRANSFER_PENDING_VERIFICATION` по строгой политике.
 **Не заявлять forensic acquisition.**
 
+> **UPDATE 2026-11-18 (§27.1):** обратный readback трёх копий §2 **выполнен** — обе стороны каждой пары
+> скачаны заново из Drive, локальный SHA-256 совпал, байты идентичны. Абзац выше сохраняется как
+> история волны 1; его «SHA-256 readback не выполнялся» закрыто только для оси custody копий.
+> `LOCATOR_HOLD` по локаторам Works 3–5, `EVIDENCE_HOLD` по непрочитанным фрагментам 2–16,
+> `RIGHTS_HOLD` и `PUBLICATION_HOLD` **не сняты**.
+
 ### 2.3. Charnock Works 3–5 locators — содержание копии
 
 Источник данных: `https://calvinandcalvinism.com/?p=17`, прочитан **2026-10-23**, фрагмент **1 из 16**.
@@ -344,8 +350,10 @@ Custody ближе к `TRANSFER_PENDING_VERIFICATION` по строгой пол
 
 ## 6. Следующее проверяемое действие
 
-1. Выполнить SHA-256 readback по трём копиям и перевести custody в `ACQUIRED_DURABLE`
-   или зафиксировать расхождение.
+1. ~~Выполнить SHA-256 readback по трём копиям и перевести custody в `ACQUIRED_DURABLE`
+   или зафиксировать расхождение.~~ **DONE 2026-11-18 (§27.1):** расхождений нет, байты копий
+   идентичны байтам источников; custody этих копий переведён в `ACQUIRED_DURABLE`
+   относительно пары копия/источник. Остальные оси (локаторы, права, публикация) — без изменений.
 2. Прочитать фрагменты 2–16 `calvinandcalvinism.com/?p=17` и дополнить таблицу локаторов.
 3. Сверить все 7 локаторов Works 3–5 с печатным Nichol 1864.
 4. Заложить в `03 — PRIMARY SOURCES & EDITIONS` первый первоисточник из очереди §4.
@@ -1878,3 +1886,86 @@ Sandbox-эгресс агента ограничен: `github.com`, `codeload.gi
 9. **NEXT PRIORITY (≤2, обновлено 2026-11-16 после докачки):** (1) image-level сверка CS-03 viewer-captures (стр. 264–265; индекс 308–309) агентами №2/№7 → erratum §21.138 → снятие `IMAGE_CHECK_PENDING`; (2) image-level пересчёт CS-06 по 35 листам Drive-PDF (прежде всего English divinity и Miscellany; сверка Medicine 64↔65; контроль структуры [4]+31; контроль 1330) — агент №5 → том 03 / статья №2. Мастер-JP2 (800 ppi) желателен как архивная норма (по-прежнему в IA, `_jp2.zip` 84 902 231 B), но не блокирует пересчёт: Drive-PDF содержит те же листья.
 
 *Конец третьего прохода. Read-only; в репозитории изменён только этот файл; Drive не изменялся.*
+
+---
+
+## 27. Волна 47 (2026-11-18): обратный readback Drive — что закрыто, что осталось
+
+**Предмет:** закрыть только ту часть `ARCHIVE_HOLD`, которая была обоснована отсутствием обратной
+сверки байтов Drive (§2.2 и блоки волн 22–25). Внешние оригиналы, сканы и печатные издания в этой
+волне не открывались; права не пересматривались; на Drive не записывался ни один объект; файлы
+отдела не редактировались.
+
+**Метод:** (а) для трёх копий §2 — независимое скачивание **обеих** сторон пары, локальный
+`sha256sum` и побайтовое сравнение `cmp`; (б) для зеркал волн 22–25 — `get_file` →
+`sha256Checksum` каждого объекта со сверкой против SHA-256, записанного в этом ledger при загрузке.
+**Контроль метода:** скачанный в этой же волне `Westminster Confession (PD copy).pdf` (16 179 601 B)
+дал локальный SHA-256 `ff7e220cd60eb48cd7ca0cedcef4dfc3801bb8f0d9d564d2e557d89df7a1dced`,
+идентичный серверному, — то есть серверная сумма является хешем реальных байтов.
+
+### 27.1. Три копии §2 / §6 — readback выполнен, расхождений нет
+
+| Пара (копия → источник) | Drive ID копии | Drive ID источника | Байты | SHA-256 копии = источника |
+|---|---|---:|---:|---|
+| Charnock Works 3–5, семь локаторов (.md) | `1Vg9tA3uhECDf6uHLdv2_PArcgd7BL70x` | `13pODGSirmiu3no33l_O0XsGRtvJRkAyr` | 2 965 | `5ad0aa52…dec4b0ea` |
+| Gill Rippon 1838 (PDF) | `14bfNjtyOgIh7MQV-7yK8I6K2p3AG6dNY` | `1q4IFETrDu9bH8mGMIPQO38qQTVwxjxMu` | 9 297 102 | `362019ee…af461792` |
+| Gill mobile reference (.txt) | `1uXU3sR6yn8VEUhQWQ_z_ctwtD300-Pwi` | `1tQ6MLcTuslMxH3jTecVOjWC-Ju-LqE1m` | 40 563 | `7472a79f…bac89beee` |
+
+**Следствие:** `TRANSFER_PENDING_VERIFICATION` трёх копий закрыт; custody **этих трёх копий**
+переведён в `ACQUIRED_DURABLE` относительно пары копия/источник. Полные хеши и объекты —
+[`data/hold-closure-registry-v1.json`](../data/hold-closure-registry-v1.json), запись
+`HCR-2026-11-18-01`.
+
+**Что этим не закрыто:** локаторы Works 3–5 по-прежнему не сверены с печатным Nichol 1864
+(`LOCATOR_HOLD`), фрагменты 2–16 страницы не читались (`EVIDENCE_HOLD`), права и публикационный
+гейт не меняются (`RIGHTS_HOLD`, `PUBLICATION_HOLD`). Readback копии не является проверкой
+содержания страницы.
+
+### 27.2. Зеркала волн 22–25 — обратный SHA-256 совпал 17/17
+
+| Волна | Файл | Drive ID | Байты | SHA-256 (сверено) |
+|---|---|---|---:|---|
+| 22 | `00_README_AND_NAVIGATION.md` | `1sV3jfs0slLQh1lX6FawkL-It7tob2X10` | 89 100 | `c6ce878b…ac6cdd793e` ✓ |
+| 22 | `01_BIOGRAPHICAL_WITNESSES_AND_EVIDENCE_HIERARCHY.md` | `1JmhghsHYSS13PF_nVpn4b0jdEc7WrQkT` | 67 556 | `a74bed26…28be226fa` ✓ |
+| 22 | `03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md` | `12btSm2nqtKH7PaI0KbpVeSs2nalWvI5W` | 78 099 | `7e92a299…cca8cec4` ✓ |
+| 22 | `04_CHARACTER_MINISTRY_AND_THEOLOGY.md` | `1liMd0gBB7tWsYQTqonR_QnglutSPnn1A` | 259 911 | `0ca99267…b896d33aca` ✓ |
+| 22 | `16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md` | `10q8rOMAWPxUqMRqoR9M-lEYWU8HHvewl` | 96 664 | `fb81a207…db442be5c59` ✓ |
+| 23 | `00_README_AND_NAVIGATION.md` | `1iCUZfGdbKooPjYAPbNsb2TFcffILhlCT` | 90 213 | `5fc719ea…fc2c62c5fe317` ✓ |
+| 23 | `04_CHARACTER_MINISTRY_AND_THEOLOGY.md` | `1AhkIF3iJkQhLW4yYGwqQNoJMChq2Eb4t` | 282 635 | `1d5d31df…994911fc3ea85` ✓ |
+| 23 | `16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md` | `1bl8xcxmO8-rf0IzVOukQRsk9y09MFt2U` | 99 321 | `65285327…7221503938e` ✓ |
+| 24 | `00_README_AND_NAVIGATION.md` | `1_wHf4f_UMG1SkQS4Fl4_w801Vez47Oex` | 90 930 | `0917e29d…89069b90a688` ✓ |
+| 24 | `04_CHARACTER_MINISTRY_AND_THEOLOGY.md` | `1VMvcvf6kYoEAyzJiB9U9lbq4utChNRgI` | 322 011 | `dee9d3bd…d10a6eea527e` ✓ |
+| 24 | `16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md` | `155aLE0bTV1oeE55cjecCnF_KVY7Vx-Oe` | 106 429 | `c29a7859…5961320143d7` ✓ |
+| 25 | `00_README_AND_NAVIGATION.md` | `1GE2jLataKXvuS2ytMbu_f_hF0AnM296T` | 92 265 | `5096db74…ae6dccbefb2a` ✓ |
+| 25 | `03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md` | `1swq3vIOnx4EBLUZ3bTdOxrTertuzcGmy` | 79 802 | `05712e4c…706abc8c11d` ✓ |
+| 25 | `04_CHARACTER_MINISTRY_AND_THEOLOGY.md` | `1IJ0b2EdKmV2SfhocXXcZpRiCqJa1_h86` | 361 036 | `c85efe86…447c3f4125b` ✓ |
+| 25 | `05_CONTROVERSIES_AND_CLAIM_AUDIT.md` | `17L0RvwAQJoSME3oGBbbeyFRQQbP84J2M` | 26 361 | `947446ea…b2fe8f64903cc` ✓ |
+| 25 | `16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md` | `1dU7xOdML0KZtUfqAsmRXiQ7ru4rYhkz3` | 114 395 | `3db4a59b…7f6686ffacb1` ✓ |
+| 25 | `17_PROMPT_PARALLEL_AGENT_HISTORICAL_CONTEXT.md` | `1z_Kv6vTbloN5bQ35BfwWeS8Ams7BeOLQ` | 23 093 | `c1214336…d81fe0b7fd5f6409ed03` ✓ |
+
+**Следствие:** утверждения блоков волн 22–25 «обратная SHA-256 сверка не выполнена / readback
+открыт» закрыты для **своих снимков**; `ARCHIVE_HOLD` этих снимков снят по оси readback.
+Полные записи — `HCR-2026-11-18-02…05`.
+
+**Что этим не закрыто:** это исторические снимки, а не текущие файлы отдела: сегодняшние
+`00`, `04`, `16` новее зеркал волны 22–25, и readback старых ревизий не делает их актуальными.
+Новая загрузка и квитанция новой ревизии (ED-08 как upload-действие) в этой волне **не
+выполнялись**. `EVIDENCE_HOLD`/`LOCATOR_HOLD` первоисточников, `RIGHTS_HOLD` и `PUBLICATION_HOLD`
+не менялись.
+
+### 27.3. Что осталось открытым (без изменений)
+
+1. `IMAGE_CHECK_PENDING` по CS-03 (с. 264–265, индекс 308–309) и CS-06 (35 листов; медицина 64↔65) — требует просмотра изображений, а не хешей.
+2. Внешние оригиналы и точные страницы: Charnock 1682/1683, Nichol 1864, BSB/IA-объекты, Claude/Puente, архивные выписки — `EVIDENCE_HOLD`/`LOCATOR_HOLD` в силе.
+3. Права на цифровые изображения и тексты (`RIGHTS_HOLD`) и перенос в публичный продукт (`PUBLICATION_HOLD`) — отдельные решения владельца, не следствие Drive-сверки.
+4. Независимая внешняя научная приёмка (агенты №2/№7), решение MAX по §21.138, erratum тома 16 — не выполнены.
+5. В машинных реестрах 134 из 6 146 значений `holds` — не канонические HOLD-флаги (`ORIGINAL_TEXT_HOLD`, `PRIVATE_STUDY_ONLY`, `RESOLVED-BY-TEXT`, `PARTIAL_OBJECT` и др.). Это смешение осей в корпусных SSOT; автоматически не переписывалось, требует решения владельца корпуса.
+
+### 27.4. Воспроизводимость
+
+- инвентарь маркеров: `python3 scripts/audit_repository_holds.py --summary`;
+- снимок инвентаря: [`data/repository-holds-inventory-v1.json`](../data/repository-holds-inventory-v1.json) (дата среза — 2026-11-18);
+- реестр закрытий: [`data/hold-closure-registry-v1.json`](../data/hold-closure-registry-v1.json);
+- тесты read-only поведения: `python3 -B -m unittest discover -s scripts -p 'test_audit_repository_holds.py'`.
+
+*Конец §27. Все действия — read-only; на Drive не выполнялось ни одной записи; единственные изменения в репозитории — этот раздел, §2.2, пункт 1 §6 и перечисленные выше реестры/скрипты.*

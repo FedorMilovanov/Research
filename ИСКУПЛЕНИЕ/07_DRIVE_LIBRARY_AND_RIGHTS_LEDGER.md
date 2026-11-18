@@ -540,3 +540,33 @@ Offer of the Gospel (EN original from opc.org, PRIVATE STUDY).docx»: 56 967 B, 
 `HOLD_private_study`, `pages_seen`; markdown-исходник хранится локально вне Git (правило о полном
 тексте XX в. остаётся в силе и для оригинала). Правовой режим обеих версий — PRIVATE_STUDY; EN —
 публичная страница церкви, кладётся для сверки точности перевода и minority, которого в RU нет.
+
+---
+
+## Волна 2026-11-18 — parity четырёх PD-копий §2 по серверной SHA-256
+
+**Предмет:** закрыть только утверждение §2 «копия создана через Drive `copy_file`; SHA-256 readback
+не выполнялся». Внешние книги не открывались, права и публикационный гейт не пересматривались,
+на Drive не выполнялось ни одной записи.
+
+**Метод:** `get_file` → `sha256Checksum` для копии и для её источника с раздельным сравнением
+размера и суммы. **Контроль метода:** скачанный в этой же волне `Westminster Confession (PD copy).pdf`
+(16 179 601 B) дал локальный SHA-256
+`ff7e220cd60eb48cd7ca0cedcef4dfc3801bb8f0d9d564d2e557d89df7a1dced`, идентичный серверному,
+— серверная сумма является хешем реальных байтов.
+
+| Пара (копия → источник) | Drive ID копии | Drive ID источника | Байты | SHA-256 (копия = источник) |
+|---|---|---:|---:|---|
+| Owen, *Works* | `1gfKY8eXGhV-HL5O4u1tVVcCRYNKx-dQY` | `1e1rTdQH8bBrDh8NeEufhtVcBhbzWqyFK` | 42 084 171 | `f245a520…ab66fd7aae` ✓ |
+| Calvin, *Institutes* | `1DLcwFWyRXtTDBzdS_tHptGkoItoumVWZ` | `1Pj5iUMrf8OlRuTowMVt7tRoHejpHY1_6` | 45 351 929 | `1597cfde…ce3ee4a3b0f` ✓ |
+| Goodwin, *Works* | `1o9T7mIQxIH3ZB2EVc2hQsKdjEQM3SW-M` | `1q_D74eAj1x1J_rgE9qL1Y_N3kRPpMrSL` | 27 215 853 | `1ba271e8…390762caa6` ✓ |
+| Westminster Confession | `1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4` | `1zbqz-EaFN5Fwnqo3a8ynVG4B1MpqVVVX` | 16 179 601 | `ff7e220c…7a1dced` ✓ |
+
+**Следствие:** `TRANSFER_PENDING_VERIFICATION` четырёх копий закрыт по оси custody:
+байты копии равны байтам источника, расхождений нет. Полные записи — `HCR-2026-11-18-06`
+в [`data/hold-closure-registry-v1.json`](../data/hold-closure-registry-v1.json).
+
+**Что этим не закрыто:** parity копия/источник **не** доказывает, что в PDF есть нужная печатная
+страница. У WCF нет текстового слоя (§2.1), у Owen/Calvin превышен cap извлечения; страничные
+`LOCATOR_HOLD` по WCF 8 и Dort II остаются, `PUBLICATION_HOLD` сохраняется, права на PD-объекты
+не пересматривались. Хеши не заменяют сверку изображений и OCR.

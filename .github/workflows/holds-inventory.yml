@@ -1,0 +1,48 @@
+name: Holds inventory (read-only)
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/holds-inventory.yml'
+      - 'data/repository-evidence-policy-v2.json'
+      - 'data/repository-holds-inventory-v1.json'
+      - 'data/hold-closure-registry-v1.json'
+      - 'docs/research/HOLDS_REGISTER_2026-11-18.md'
+      - 'scripts/audit_repository_holds.py'
+      - 'scripts/test_audit_repository_holds.py'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/holds-inventory.yml'
+      - 'data/repository-evidence-policy-v2.json'
+      - 'data/repository-holds-inventory-v1.json'
+      - 'data/hold-closure-registry-v1.json'
+      - 'docs/research/HOLDS_REGISTER_2026-11-18.md'
+      - 'scripts/audit_repository_holds.py'
+      - 'scripts/test_audit_repository_holds.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inventory:
+    runs-on: ubuntu-24.04
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - name: Checkout Research
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - name: Compile inventory tool
+        run: python3 -m py_compile scripts/audit_repository_holds.py
+      - name: Test classification and read-only behaviour
+        run: python3 -B -m unittest discover -s scripts -p 'test_audit_repository_holds.py' -v
+      - name: Scan (must not touch the working tree)
+        run: |
+          python3 scripts/audit_repository_holds.py -o /tmp/holds-a.json
+          python3 scripts/audit_repository_holds.py -o /tmp/holds-b.json
+          cmp /tmp/holds-a.json /tmp/holds-b.json
+      - name: Reject working-tree changes
+        run: git diff --exit-code
+      - name: Report counts without asserting closure
+        run: python3 scripts/audit_repository_holds.py --summary

@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "RESEARCH-HOLD-CLOSURE-REGISTRY-V1",
+  "snapshotDate": "2026-11-18",
+  "policy": "data/repository-evidence-policy-v2.json",
+  "custodyPolicy": "data/artifact-custody-policy-v2.json",
+  "inventory": "data/repository-holds-inventory-v1.json",
+  "inventoryTool": "scripts/audit_repository_holds.py",
+  "boundaries": {
+    "holdIsNotEvidenceClass": true,
+    "onlyCustodyReadbackAxisClosed": true,
+    "originalsStillUnread": true,
+    "rightsUnchanged": true,
+    "publicationHoldUnchanged": true,
+    "noDriveWritePerformed": true,
+    "note": "Каждая запись закрывает только тот HOLD, который был прямо обоснован отсутствием обратной SHA-256 сверки байтов Drive. EVIDENCE_HOLD/LOCATOR_HOLD по внешним оригиналам, RIGHTS_HOLD и PUBLICATION_HOLD этими проверками не снимаются: ни одна внешняя страница, рукопись или издание в этой волне не читались."
+  },
+  "verificationMethods": {
+    "raw-download-compare": "Независимое скачивание обоих объектов из Google Drive, локальный sha256sum и побайтовое сравнение (cmp).",
+    "server-checksum-readback": "Google Drive `get_file` → `sha256Checksum` для каждого объекта; сравнивался с SHA-256, зафиксированным в репозитории при загрузке. Метод контроля: скачанный в этой же волне объект Westminster Confession (16 179 601 B) дал локальный SHA-256 ff7e220cd60eb48cd7ca0cedcef4dfc3801bb8f0d9d564d2e557d89df7a1dced, идентичный серверному, то есть серверная сумма — хеш реальных байтов."
+  },
+  "closures": [
+    {
+      "id": "HCR-2026-11-18-01",
+      "title": "Три исторические копии §2 / §6 — обратный SHA-256 readback выполнен",
+      "holdType": "ARCHIVE_HOLD",
+      "previousState": "TRANSFER_PENDING_VERIFICATION; в реестрах прямо записано «копия создана через Drive copy_file; SHA-256 readback не выполнялся»",
+      "closedScope": "Custody-ось трёх копий: байты копии совпадают с байтами исходного объекта Drive. `ACQUIRED_DURABLE` относительно пары копия/источник.",
+      "recordLocations": [
+        "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md §2, §2.2, §6 п.1",
+        "БИОГРАФИИ/Стивен Чарнок/07_REPO_CROSSLINKS_AND_DRIVE_MIRROR.md §6"
+      ],
+      "method": "raw-download-compare",
+      "objects": [
+        {
+          "pair": "Charnock Works 3–5 locators (фрагмент 1 из 16, .md)",
+          "copy": {"driveFileId": "1Vg9tA3uhECDf6uHLdv2_PArcgd7BL70x", "bytes": 2965, "sha256": "5ad0aa5211571d24894fb2516a4f1b173ed3bcb5922f732120234e27dec4b0ea"},
+          "source": {"driveFileId": "13pODGSirmiu3no33l_O0XsGRtvJRkAyr", "bytes": 2965, "sha256": "5ad0aa5211571d24894fb2516a4f1b173ed3bcb5922f732120234e27dec4b0ea"},
+          "byteIdentical": true
+        },
+        {
+          "pair": "Gill Rippon 1838 PDF",
+          "copy": {"driveFileId": "14bfNjtyOgIh7MQV-7yK8I6K2p3AG6dNY", "bytes": 9297102, "sha256": "362019ee851280e14eb4c6cd8bca70a30df957af225ac56c7c6d95bbaf461792"},
+          "source": {"driveFileId": "1q4IFETrDu9bH8mGMIPQO38qQTVwxjxMu", "bytes": 9297102, "sha256": "362019ee851280e14eb4c6cd8bca70a30df957af225ac56c7c6d95bbaf461792"},
+          "byteIdentical": true
+        },
+        {
+          "pair": "Gill mobile reference .txt",
+          "copy": {"driveFileId": "1uXU3sR6yn8VEUhQWQ_z_ctwtD300-Pwi", "bytes": 40563, "sha256": "7472a79f61e911451312aab278c1c574dde289ebf0863c39153c981bac89beee"},
+          "source": {"driveFileId": "1tQ6MLcTuslMxH3jTecVOjWC-Ju-LqE1m", "bytes": 40563, "sha256": "7472a79f61e911451312aab278c1c574dde289ebf0863c39153c981bac89beee"},
+          "byteIdentical": true
+        }
+      ],
+      "residualHolds": ["LOCATOR_HOLD", "EVIDENCE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"],
+      "residualReason": "Readback подтверждает только совпадение байтов копии и её источника. Локаторы Works 3–5 по-прежнему не сверены с печатным Nichol 1864, фрагменты 2–16 страницы calvinandcalvinism не читались, права и публикационный гейт не меняются."
+    },
+    {
+      "id": "HCR-2026-11-18-02",
+      "title": "Зеркала отдела Чарнока, волна 22 (5 файлов) — обратная SHA-256 сверка",
+      "holdType": "ARCHIVE_HOLD",
+      "previousState": "«SHA-256 readback открыт» (CHR-DRIVE-W22, accessState=upload-acknowledged-size-and-md5-matched)",
+      "closedScope": "Серверные байты каждого объекта совпадают с SHA-256 локального снимка, зафиксированным при загрузке.",
+      "recordLocations": ["БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md §7"],
+      "method": "server-checksum-readback",
+      "objects": [
+        {"name": "00_README_AND_NAVIGATION.md", "driveFileId": "1sV3jfs0slLQh1lX6FawkL-It7tob2X10", "bytes": 89100, "sha256": "c6ce878b5ed468a524020cc2fe83fb86211038e98cfb45c0e4ce99ac6cdd793e", "matchesRecorded": true},
+        {"name": "01_BIOGRAPHICAL_WITNESSES_AND_EVIDENCE_HIERARCHY.md", "driveFileId": "1JmhghsHYSS13PF_nVpn4b0jdEc7WrQkT", "bytes": 67556, "sha256": "a74bed26fdf265989f45d5aa1aced994571db8a9af264abfb6e2cba28be226fa", "matchesRecorded": true},
+        {"name": "03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md", "driveFileId": "12btSm2nqtKH7PaI0KbpVeSs2nalWvI5W", "bytes": 78099, "sha256": "7e92a29912ca2a4147e4fd162700a4bb3a96f90726af5c0501a90924cca8cec4", "matchesRecorded": true},
+        {"name": "04_CHARACTER_MINISTRY_AND_THEOLOGY.md", "driveFileId": "1liMd0gBB7tWsYQTqonR_QnglutSPnn1A", "bytes": 259911, "sha256": "0ca9926770ae5814f011fd4a7a9a1b8a8f6eb407b5e857a109e597b896d33aca", "matchesRecorded": true},
+        {"name": "16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md", "driveFileId": "10q8rOMAWPxUqMRqoR9M-lEYWU8HHvewl", "bytes": 96664, "sha256": "fb81a207686712b3d932165e2a1d7475820dcb87b53d7641374c3db442be5c59", "matchesRecorded": true}
+      ],
+      "residualHolds": ["PUBLICATION_HOLD", "EVIDENCE_HOLD", "LOCATOR_HOLD", "RIGHTS_HOLD"],
+      "residualReason": "Зеркала волны 22 — исторические снимки, а не текущие файлы отдела; readback не совпадает с проверкой содержания, локаторов первоисточников или прав."
+    },
+    {
+      "id": "HCR-2026-11-18-03",
+      "title": "Зеркала отдела Чарнока, волна 23 (3 файла) — обратная SHA-256 сверка",
+      "holdType": "ARCHIVE_HOLD",
+      "previousState": "CHR-DRIVE-W23: «ARCHIVE_HOLD (обратная SHA-256 сверка байтов Drive не выполнена)»",
+      "closedScope": "Серверные байты трёх объектов совпадают с SHA-256 локального снимка.",
+      "recordLocations": ["БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md, блок волны 23"],
+      "method": "server-checksum-readback",
+      "objects": [
+        {"name": "00_README_AND_NAVIGATION.md", "driveFileId": "1iCUZfGdbKooPjYAPbNsb2TFcffILhlCT", "bytes": 90213, "sha256": "5fc719eae7aa11cd9b3a7d4fdd885eff331561f328ece4c2cfc012c62c5fe317", "matchesRecorded": true},
+        {"name": "04_CHARACTER_MINISTRY_AND_THEOLOGY.md", "driveFileId": "1AhkIF3iJkQhLW4yYGwqQNoJMChq2Eb4t", "bytes": 282635, "sha256": "1d5d31df1b7d069286b407a4a53e67791ad54acab2a07d8920c994911fc3ea85", "matchesRecorded": true},
+        {"name": "16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md", "driveFileId": "1bl8xcxmO8-rf0IzVOukQRsk9y09MFt2U", "bytes": 99321, "sha256": "65285327acc4aa73939a225ca6beb7faa1044efd09bd473545d6c7221503938e", "matchesRecorded": true}
+      ],
+      "residualHolds": ["PUBLICATION_HOLD", "EVIDENCE_HOLD", "LOCATOR_HOLD", "RIGHTS_HOLD"],
+      "residualReason": "То же, что HCR-2026-11-18-02: сверены только байты исторического снимка."
+    },
+    {
+      "id": "HCR-2026-11-18-04",
+      "title": "Зеркала отдела Чарнока, волна 24 (3 файла) — обратная SHA-256 сверка",
+      "holdType": "ARCHIVE_HOLD",
+      "previousState": "CHR-DRIVE-W24: «ARCHIVE_HOLD (обратная SHA-256 сверка байтов Drive не выполнена)»",
+      "closedScope": "Серверные байты трёх объектов совпадают с SHA-256 локального снимка.",
+      "recordLocations": ["БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md, блок волны 24"],
+      "method": "server-checksum-readback",
+      "objects": [
+        {"name": "00_README_AND_NAVIGATION.md", "driveFileId": "1_wHf4f_UMG1SkQS4Fl4_w801Vez47Oex", "bytes": 90930, "sha256": "0917e29dc35c64bae4c4a844d5e628529d309a91ef09444178cd89069b90a688", "matchesRecorded": true},
+        {"name": "04_CHARACTER_MINISTRY_AND_THEOLOGY.md", "driveFileId": "1VMvcvf6kYoEAyzJiB9U9lbq4utChNRgI", "bytes": 322011, "sha256": "dee9d3bdb59aa7ade467c7ef16f337cf19697908372ce8508501d10a6eea527e", "matchesRecorded": true},
+        {"name": "16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md", "driveFileId": "155aLE0bTV1oeE55cjecCnF_KVY7Vx-Oe", "bytes": 106429, "sha256": "c29a785988b5c1b5b3383cc6aa96567dbc61cb6e910eb7a94c3d5961320143d7", "matchesRecorded": true}
+      ],
+      "residualHolds": ["PUBLICATION_HOLD", "EVIDENCE_HOLD", "LOCATOR_HOLD", "RIGHTS_HOLD"],
+      "residualReason": "То же, что HCR-2026-11-18-02: сверены только байты исторического снимка."
+    },
+    {
+      "id": "HCR-2026-11-18-05",
+      "title": "Зеркала отдела Чарнока, волна 25 (6 файлов) — обратный SHA-256 readback",
+      "holdType": "ARCHIVE_HOLD",
+      "previousState": "CHR-DRIVE-W25: «ARCHIVE_HOLD (обратное получение и SHA-256 содержимого Drive не выполнены)»",
+      "closedScope": "Серверные байты шести объектов совпадают с SHA-256 локального снимка.",
+      "recordLocations": ["БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md, блок волны 25"],
+      "method": "server-checksum-readback",
+      "objects": [
+        {"name": "00_README_AND_NAVIGATION.md", "driveFileId": "1GE2jLataKXvuS2ytMbu_f_hF0AnM296T", "bytes": 92265, "sha256": "5096db747e8f354ea5510b8d84c4fece44d65aed442959db70ca4e6dccbefb2a", "matchesRecorded": true},
+        {"name": "03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md", "driveFileId": "1swq3vIOnx4EBLUZ3bTdOxrTertuzcGmy", "bytes": 79802, "sha256": "05712e4cf3130137d559a3ad135bb48662285dcd79a0641de96e7706abc8c11d", "matchesRecorded": true},
+        {"name": "04_CHARACTER_MINISTRY_AND_THEOLOGY.md", "driveFileId": "1IJ0b2EdKmV2SfhocXXcZpRiCqJa1_h86", "bytes": 361036, "sha256": "c85efe86cc3825c8cf471e6d30414671e044352617c9a5186559b447c3f4125b", "matchesRecorded": true},
+        {"name": "05_CONTROVERSIES_AND_CLAIM_AUDIT.md", "driveFileId": "17L0RvwAQJoSME3oGBbbeyFRQQbP84J2M", "bytes": 26361, "sha256": "947446ea424417256d93c5aef69a4052e3696e2584206da49b1b2fe8f64903cc", "matchesRecorded": true},
+        {"name": "16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md", "driveFileId": "1dU7xOdML0KZtUfqAsmRXiQ7ru4rYhkz3", "bytes": 114395, "sha256": "3db4a59b8039200adb6bec690bf9d8b99bfc002aa1964307e7507f6686ffacb1", "matchesRecorded": true},
+        {"name": "17_PROMPT_PARALLEL_AGENT_HISTORICAL_CONTEXT.md", "driveFileId": "1z_Kv6vTbloN5bQ35BfwWeS8Ams7BeOLQ", "bytes": 23093, "sha256": "c12143367a115e11d99dd3479484fed386b0cae89f73d81fe0b7fd5f6409ed03", "matchesRecorded": true}
+      ],
+      "residualHolds": ["PUBLICATION_HOLD", "EVIDENCE_HOLD", "LOCATOR_HOLD", "RIGHTS_HOLD"],
+      "residualReason": "То же, что HCR-2026-11-18-02. Права исходников (BSB NoC-NC/1.0, Pittion CC BY-NC-ND) этими хешами не затрагиваются."
+    },
+    {
+      "id": "HCR-2026-11-18-06",
+      "title": "Искупление — четыре PD-копии: parity копия/источник по серверной SHA-256",
+      "holdType": "ARCHIVE_HOLD",
+      "previousState": "«копия создана через Drive copy_file; SHA-256 readback не выполнялся» → TRANSFER_PENDING_VERIFICATION",
+      "closedScope": "Байты каждой копии равны байтам её исходного объекта (серверные SHA-256 и размеры совпадают).",
+      "recordLocations": ["ИСКУПЛЕНИЕ/07_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md §2"],
+      "method": "server-checksum-readback",
+      "objects": [
+        {"pair": "Owen, Works", "copy": {"driveFileId": "1gfKY8eXGhV-HL5O4u1tVVcCRYNKx-dQY", "bytes": 42084171, "sha256": "f245a520c376ccdb4e8813d34b36b8b10f18429e63664461dbbe90ab66fd7aae"}, "source": {"driveFileId": "1e1rTdQH8bBrDh8NeEufhtVcBhbzWqyFK", "bytes": 42084171, "sha256": "f245a520c376ccdb4e8813d34b36b8b10f18429e63664461dbbe90ab66fd7aae"}, "byteIdentical": true},
+        {"pair": "Calvin, Institutes", "copy": {"driveFileId": "1DLcwFWyRXtTDBzdS_tHptGkoItoumVWZ", "bytes": 45351929, "sha256": "1597cfde8222438e387c415084cd728ea35b43cb7f10b615542b2ce3ee4a3b0f"}, "source": {"driveFileId": "1Pj5iUMrf8OlRuTowMVt7tRoHejpHY1_6", "bytes": 45351929, "sha256": "1597cfde8222438e387c415084cd728ea35b43cb7f10b615542b2ce3ee4a3b0f"}, "byteIdentical": true},
+        {"pair": "Goodwin, Works", "copy": {"driveFileId": "1o9T7mIQxIH3ZB2EVc2hQsKdjEQM3SW-M", "bytes": 27215853, "sha256": "1ba271e897f6be5685eb1f3676765ce5d82f993f1a1f6e06754e8b390762caa6"}, "source": {"driveFileId": "1q_D74eAj1x1J_rgE9qL1Y_N3kRPpMrSL", "bytes": 27215853, "sha256": "1ba271e897f6be5685eb1f3676765ce5d82f993f1a1f6e06754e8b390762caa6"}, "byteIdentical": true},
+        {"pair": "Westminster Confession", "copy": {"driveFileId": "1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4", "bytes": 16179601, "sha256": "ff7e220cd60eb48cd7ca0cedcef4dfc3801bb8f0d9d564d2e557d89df7a1dced"}, "source": {"driveFileId": "1zbqz-EaFN5Fwnqo3a8ynVG4B1MpqVVVX", "bytes": 16179601, "sha256": "ff7e220cd60eb48cd7ca0cedcef4dfc3801bb8f0d9d564d2e557d89df7a1dced"}, "byteIdentical": true}
+      ],
+      "residualHolds": ["LOCATOR_HOLD", "PUBLICATION_HOLD"],
+      "residualReason": "Parity копия/источник не доказывает, что PDF содержит нужную печатную страницу: текстового слоя у WCF нет, cap извлечения у Owen/Calvin превышен. Страничные локаторы этих объектов по-прежнему `unchecked`."
+    }
+  ],
+  "confirmations": [
+    {
+      "id": "HCR-2026-11-18-C1",
+      "title": "Charnock custody v3 ZIP — независимое подтверждение квитанции",
+      "recordLocations": ["data/charnock-custody-receipt-v3-20261117-r2.json"],
+      "method": "raw-download-compare",
+      "object": {"driveFileId": "1r2rJUlYFdZKTITF3I9Vz0pNdMQGCSXdH", "bytes": 1045446, "sha256": "9c86b0b1beb0a913546dcc8979c49bdcd6d14ac0446a3f863f2edb510581fc8f"},
+      "result": "Скачанные из Drive байты дали SHA-256 9c86b0b1…fc8f, совпадающий и с `sourceArchiveSha256`, и с `destinationSha256ReadBack` квитанции; это подтверждает уже заявленный readback, но новых прав, локаторов или публикационного решения не даёт.",
+      "alsoVerified": "Два owner-файла квитанции совпадают с текущими байтами репозитория: 00_README_AND_NAVIGATION.md = 2a8d41c113c5c0de826297dbab482024735c594a25debff0befe16615fc2fdb6, 16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md = 706748bb1f3eb22d4b96f00ef6151cdd02c8975749b534d1dd86c7561ebaf832."
+    }
+  ],
+  "notClosed": [
+    {
+      "class": "Внешние первоисточники и точные страницы",
+      "holds": ["EVIDENCE_HOLD", "LOCATOR_HOLD"],
+      "reason": "Внешние архивы, сканы и печатные издания в этой волне не открывались; исходящая сеть ограничена, а каталог, аннотация и URL не считаются прочтением объекта."
+    },
+    {
+      "class": "Права на хранение и публикацию",
+      "holds": ["RIGHTS_HOLD", "PUBLICATION_HOLD"],
+      "reason": "Требуют отдельного лицензионного решения по каждому объекту и не снимаются ни хешами, ни присутствием на Drive."
+    },
+    {
+      "class": "Зеркала, отставшие от HEAD",
+      "holds": ["ARCHIVE_HOLD"],
+      "reason": "Текущие редакции томов 00/04/16 и досье новее последних проверенных зеркал; закрытие readback исторических снимков не делает их актуальными. Новая загрузка/квитанция в этой волне не выполнялись."
+    },
+    {
+      "class": "Независимая научная приёмка",
+      "holds": ["EVIDENCE_HOLD"],
+      "reason": "Независимый внешний рецензент не привлекался; агентская проверка не подменяет рецензию."
+    }
+  ]
+}
