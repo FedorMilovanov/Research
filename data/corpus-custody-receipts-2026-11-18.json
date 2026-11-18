@@ -1316,21 +1316,31 @@
     "rightsQueuesOutsideLedger": [
       {
         "path": "05 — PHOTO ARCHIVE\\08 — RIGHTS OR SOURCE UNCLEAR",
-        "id": "1qjYcgRpPIwzSnRCKU29Ui0ZdXhJzHHxk"
+        "id": "1qjYcgRpPIwzSnRCKU29Ui0ZdXhJzHHxk",
+        "objectCount": 0,
+        "measuredAt": "2026-11-18"
       },
       {
         "path": "05 — PHOTO ARCHIVE\\09 — UNCAPTIONED — NEEDS IDENTIFICATION",
-        "id": "11p2KPAS9LWb1TeveIAtvrWN3GhJXbTJS"
+        "id": "11p2KPAS9LWb1TeveIAtvrWN3GhJXbTJS",
+        "objectCount": 0,
+        "measuredAt": "2026-11-18"
       },
       {
         "path": "07 — BIBLIOGRAPHY\\06 — PAYWALLED, ARCHIVE ACCESS & PERMISSIONS NEEDED",
-        "id": "14DJ-u0hsqXAkyGCIwEr_WPMuZrX13sG2"
+        "id": "14DJ-u0hsqXAkyGCIwEr_WPMuZrX13sG2",
+        "objectCount": 0,
+        "measuredAt": "2026-11-18"
       }
     ],
     "limits": [
       "Читался только верхний уровень шести разделов: ни одного файла внутри, ни одной подпапки второго уровня.",
-      "Неизвестно, пусты ли три правовых ящика — наличие раздела не доказывает наличия объектов в нём.",
-      "Утверждение «открытых записей без RIGHTS_HOLD — 0» относится к леджеру репозитория и ничего не говорит об этих трёх ящиках."
-    ]
+      "Правовые ящики измерены на верхнем уровне: три папки, по нулю объектов в каждой.",
+      "Утверждение «открытых записей без RIGHTS_HOLD — 0» относится к леджеру репозитория; пустые ящики корпуса не делают его утверждением о корпусе."
+    ],
+    "rightsQueuesMeasured": {
+      "objects": 0,
+      "conclusion": "Все три правовых ящика корпуса пусты. Значит ноль открытых записей без RIGHTS_HOLD не опровергается ими — и не подтверждается: очередь пуста не потому, что споров о правах нет, а потому, что ни один объект корпуса в неё не положен."
+    }
   }
 }
