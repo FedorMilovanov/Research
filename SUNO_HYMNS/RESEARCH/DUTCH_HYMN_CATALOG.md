@@ -8,10 +8,10 @@ The status below records the project state known from prior conversation, not pu
 - **Author:** Jodocus van Lodenstein (1620–1677).
 - **Text category:** stanzaic Dutch Reformed devotional song with printed melody direction.
 - **Critical-edition item:** no. 51.
-- **Date claim:** The 2005 critical edition gives November 1661. The exact item locator is currently in a copyrighted critical edition; inspect the original 1676 page image before a quote-sensitive claim.
+- **Date claim:** `Slagt-m. 1661` (November 1661), closing line of [DBNL's diplomatic transcription of the 1676 edition](https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0056.php), also dated November 1661 in critical-edition item 51. Not an image check.
 - **First reliable publication anchor:** *Uyt-spanningen*, Utrecht, Willem Clerck, 1676.
 - **Tune direction:** *Singt als: Rosemont waar gy vliedt* — the 1676 print reads **waar**; the critical edition normalises it to *waer*. The melody is untraced.
-- **Structure:** eight stanzas, eight lines per stanza. **Verified from the print itself** (printed pp. 131–134, `SRC-L-1676-SCHEPSELEN-131-134`), not from the critical edition.
+- **Structure:** eight stanzas, eight lines per stanza. **Read in the diplomatic transcription of the first edition** (printed pp. 131–134, `SRC-L-1676-SCHEPSELEN-131-134`), not from the critical edition.
 - **Stanza architecture (verified):** each stanza is a statement of four lines, then a Christological address with its own verb of attraction, then a closing couplet. The addresses **vary**: *soet* / *hoogste*, *lief* / *hoogste*, *schoon* / *schoonste*, *lief* / *minlijckst*, *schoon* / *cierlickst*, *lief* / *soetste*, *soet* / *soetste*, *lief* / *waardigst*. There is **no refrain**; a Russian text that holds one address constant across all eight stanzas is a documented adaptation, not a translation.
 - **Theological boundary:** do not imply created things are intrinsically evil; the text contrasts Christ's supreme worth with created things when they compete for the heart or become ultimate ends.
 - **Translation decisions:** the eight points raised on 2026-10-25 (reciprocal vow, favour/disfavour, the sanctify-or-kill couplet, and the archaic lexis) are recorded in `DOSSIER_DUTCH-001_TRANSLATION_DECISIONS.md`, with a confidence rating per item and `PENDING_LEXICAL_CHECK` status for the expressions that still need a dictionary.

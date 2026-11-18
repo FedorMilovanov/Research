@@ -314,6 +314,10 @@ remains `CUMULATIVE_INFERENCE`, not an undisputed explicit NT statute.
 
 ### Current archival status — use `218B`
 
+**18 November 2026:** [218B §6.E](218B_TARGETED_ARCHIVAL_PASS_KEACH_ASSEMBLIES_STENNETT_AND_RUSSIAN_BAPTIST_MARRIAGE_CONSENT_HOLDS_2026-09-08.md#e-article-viii-of-the-southern-russian-brotherhood-rules-checked-2026-11-18) locates an explicit parental-consent clause in the southern Brotherhood’s marriage rite (Dorodnitsyn 1903, ch. VI, art. VIII). The 1908 doc. 301 colophon identifies the handwritten witness; it is not a second collation of that sentence. The local text does **not** specify adults, a father-only veto or a rule for all Russian Baptists. The 1947 voluntary-consent evidence and the universal-rule HOLD below stand.
+
+[218B §4, Horsley-down](218B_TARGETED_ARCHIVAL_PASS_KEACH_ASSEMBLIES_STENNETT_AND_RUSSIAN_BAPTIST_MARRIAGE_CONSENT_HOLDS_2026-09-08.md#horsley-down-article-xxxvi-the-marriage-provision-itself-18-november-2026): Keach signed the congregation’s 1697 confession. Article XXXVI (p. 35 in both TCP records) requires believers to marry in the Lord but says nothing about parental permission or age. This is one local church’s article, not two votes or a General Assembly rule.
+
 - `PARTICULAR_BAPTIST_GENERAL_ASSEMBLY_ADULT_PARENTAL_CONSENT_RULE = TARGETED_SEARCH_NO_EXACT_LOCATOR / LOCATOR_HOLD`;
 - `KEACH_UNIVERSAL_ADULT_MARRIAGE_PERMISSION_RULE = TARGETED_EEBO_SEARCH_NO_EXACT_LOCATOR / LOCATOR_HOLD`;
 - `RUSSIAN_BAPTIST_ADULT_PARENTAL_CONSENT_RULE = TARGETED_ARCHIVE_SEARCH_NO_EXACT_LOCATOR / ARCHIVAL_LOCATOR_HOLD`.
@@ -377,7 +381,7 @@ The main residual risk is now **compression/reconciliation error**: losing evide
 ## 10. Explicit unresolved items
 
 - `PARTICULAR_BAPTIST_GENERAL_ASSEMBLY_ADULT_PARENTAL_CONSENT_RULE = TARGETED_SEARCH_NO_EXACT_LOCATOR / LOCATOR_HOLD`;
-- `KEACH_UNIVERSAL_ADULT_MARRIAGE_PERMISSION_RULE = TARGETED_EEBO_SEARCH_NO_EXACT_LOCATOR / LOCATOR_HOLD`;
+- `KEACH_UNIVERSAL_ADULT_MARRIAGE_PERMISSION_RULE = TARGETED_EEBO_SEARCH_NO_EXACT_LOCATOR / LOCATOR_HOLD` — the local 1697 article is located (218B §4, p. 35); the universal rule is not.
 - `RUSSIAN_BAPTIST_ADULT_PARENTAL_CONSENT_RULE = TARGETED_ARCHIVE_SEARCH_NO_EXACT_LOCATOR / ARCHIVAL_LOCATOR_HOLD`;
 - exact modern eviction/tenancy/guardianship/reporting/estate operations require current-jurisdiction verification.
 

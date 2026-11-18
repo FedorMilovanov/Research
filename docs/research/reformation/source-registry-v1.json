@@ -45,17 +45,16 @@
       "title": "Luther to Albrecht, 31 October",
       "evidenceClass": "A1",
       "accessState": "PARTIAL_OBJECT",
-      "locatorState": "COARSE_LOCATOR_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
       "holds": [
-        "LOCATOR_HOLD",
         "RIGHTS_HOLD",
         "PUBLICATION_HOLD"
       ],
-      "url": "https://www.gutenberg.org/cache/epub/31604/pg31604.html",
-      "verificationNote": "1915 translation; institution THULB (Ott 2017) states original autograph in Stockholm but Leppin/Wengert (2015 p.379) states letters not surviving; original scan not inspected; separate source REF-P02-ARCHIVE",
-      "checkedAt": "2026-11-04"
+      "url": "https://github.com/GITenberg/Works-of-Martin-Luther-with-Introductions-and-Notes--Volume-I-_31604/blob/b6ad34d952305aed18c2b806448d9401093daa9c/31604-0.txt#L989-L1097",
+      "verificationNote": "English translation by C. M. Jacobs, Works of Martin Luther I (Philadelphia: A. J. Holman, 1915), Project Gutenberg #31604. Read the letter in the pinned UTF-8 text (file SHA-256 2a942d7510ecf8c8e43f7eda0f0cdf9e3310de7245881bcd9f5d65ceb303d392): lines 989–997 date/addressee; 1013–1026 distinguishes preaching not heard from beliefs attributed to the people; 1060–1078 instruction and appeal; 1089–1097 Wittenberg dating, disputations and signature. Exact for this electronic witness only: no printed page or fresh Latin WA collation. THULB (Ott 2017) and Leppin/Wengert (2015 p.379) disagree on survival; autograph and attachment are separate (REF-P02-ARCHIVE).",
+      "checkedAt": "2026-11-18"
     },
     {
       "id": "REF-P03",

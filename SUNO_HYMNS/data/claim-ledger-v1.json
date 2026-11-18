@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "ledgerId": "SUNO-HYMNS-HISTORICAL-CLAIM-LEDGER-V1",
- "asOf": "2026-11-03",
+ "asOf": "2026-11-18",
  "claimStatusVocabulary": [
   "SUPPORTED_WITH_SCOPE_LIMITS",
   "SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION",
@@ -31,36 +31,35 @@
   {
    "id": "CLM-DUTCH-001-TITLE-TUNE",
    "topic": "Schepselen niet en Jesus al title and tune",
-   "claim": "The 2005 critical-edition item 51 gives the title Schepselen niet en Jesus al and the tune direction Singt als: Rosemont waer gy vliedt.",
-   "claimStatus": "SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION",
+   "claim": "DBNL's diplomatic transcription of the 1676 edition gives the title Schepselen Niet en Iesus Al and the tune direction 'Singt als: Rosemont waar gy vliedt'; the 2005 critical edition (item 51) reads 'waer'.",
+   "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
    "sourceIds": [
+    "SRC-L-1676-SCHEPSELEN-131-134",
     "SRC-L-SCHEPSELEN-51",
-    "SRC-L-1676",
     "SRC-MUSIC-ROSEMONT"
    ],
    "notes": [
-    "The exact item page currently accessed is the copyrighted critical edition; a direct first-edition item locator has not yet been pinned. Do not present the modern version as a historically faithful arrangement.",
+    "The first-edition heading is located in the transcription of printed pp. 131–134 (DBNL item 0056); this records a direction, not the melody or the sound of a modern arrangement. Typography still requires an image.",
     "SRC-MUSIC-ROSEMONT supplies musicological context for the Dutch song repertoire the tune name belongs to; it does not identify the tune itself."
    ],
    "holds": [
-    "RIGHTS_HOLD",
-    "LOCATOR_HOLD"
+    "RIGHTS_HOLD"
    ]
   },
   {
    "id": "CLM-DUTCH-001-DATE",
    "topic": "Date attributed to Schepselen niet en Jesus al",
-   "claim": "The critical edition gives November 1661 as the date associated with the text.",
-   "claimStatus": "SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION",
+   "claim": "The closing date line in the DBNL transcription of the 1676 edition reads 'Slagt-m. 1661' (November 1661), consistent with the date in the 2005 critical edition.",
+   "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
    "sourceIds": [
+    "SRC-L-1676-SCHEPSELEN-131-134",
     "SRC-L-SCHEPSELEN-51"
    ],
    "notes": [
-    "Exact date currently supported by the critical edition. Inspect the original first-edition image before presenting a direct quotation or a facsimile-dependent claim."
+    "The locator is the end of the poem on printed pp. 131–134 in DBNL item 0056. This is the date attached to the poem, not the 1676 publication date. No page image was inspected."
    ],
    "holds": [
-    "RIGHTS_HOLD",
-    "LOCATOR_HOLD"
+    "RIGHTS_HOLD"
    ]
   },
   {
@@ -625,11 +624,14 @@
    "claim": "The poem was reprinted as 'Heemels heerlijkheids lof' in Stapel's Lusthof (1681) and as 'HEERLYKHEITS LOF' in the Bundeltje (1718), and the 1938 Hervormde Bundel contains a modernised reworking with a different incipit ('t Oog omhoog, het hart naar boven!) and a melody attributed to Loys Bourgeois.",
    "claimStatus": "SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION",
    "sourceIds": [
+    "SRC-STAPEL-1681-LUSTHOF",
+    "SRC-NL-LIEDERENBANK-9086",
     "SRC-NL-LIEDERENBANK-INDEX",
+    "SRC-PSALMENGEZ-1938-75",
     "SRC-HB-1938-PRINT"
    ],
    "notes": [
-    "The reprint data come from search-engine extracts of the Dutch Song Database while the site itself was offline: class C discovery leads, not quote-safe.",
+    "The 1681 heading and incipit are located in the DBNL transcription (Claes Stapel, p. 495); the two-column layout prevents reliable full-text collation. The 1718 entry is still a catalogue lead.",
     "The 1938 reworking is a separate modern object with its own rights questions and must never be quoted as the 1665 poem.",
     "The Bourgeois melody attribution is a 20th-century hymnal attribution, not evidence of the poem's original tune."
    ],
@@ -637,8 +639,8 @@
     "EVIDENCE_HOLD",
     "RIGHTS_HOLD"
    ],
-   "evidenceGap": "Neither the 1681 and 1718 reprints nor the printed 1938 bundel have been collated; the melody of the 1665 tune is untraced.",
-   "nextCheck": "Collate the 1681 and 1718 printings when reachable, and the printed 1938 bundel; retry the Dutch Song Database for 'Un jour' and record lode002uyt_01_0047."
+   "evidenceGap": "The 1718 printing and the page for Gezang 75 have not been inspected. The existing Delpher reading of Gezang 205 does not verify Gezang 75 or its melody credit; the 1665 tune remains untraced.",
+   "nextCheck": "Inspect the 1681 page image (p. 495), the 1718 Bundeltje (p. 230, no. 56) and the actual page for Gezang 75 (catalogue: p. 501). Do not substitute the other hymn on images 724–725."
   },
   {
    "id": "CLM-HB-1938-205-CREDITS",
@@ -650,7 +652,7 @@
     "SRC-HB-1938-PRINT-CALIBRATION"
    ],
    "notes": [
-    "Read from the page images, not from a transcription.",
+    "Credits recorded in the earlier Delpher collation at image locators 724–725; the page-level OCR is incomplete for the sung text. No new image collation.",
     "The convention explains how a 16th- or 18th-century tune name comes to sit above a 20th-century hymnal item, and is the mechanism behind the reported Bourgeois attribution of the 1938 't Oog omhoog.",
     "The Bach attribution is a 1938 hymnal credit: it is not the 1674 tune, which the 1676 print names as 'Onherroepelijke Jeugd' / 'Gavotte. A la fronté' of poem I.",
     "Delpher states 'Auteursrechtelijk beschermd. Op dit object rust auteursrecht.'"
@@ -999,43 +1001,51 @@
   {
    "id": "CLM-PHOS-BASIL-73",
    "topic": "Earliest testimony",
-   "claim": "Basil of Caesarea, De Spiritu Sancto 29.73 (c. 375), says that the fathers did not receive the evening light in silence, that the author of the lamp-lighting thanksgiving cannot be named, that the people utter 'the ancient form', and quotes the formula 'We praise Father, Son, and God's Holy Spirit'; he mentions the Hymn of Athenogenes separately, in the next sentence.",
+   "claim": "In Blomfield Jackson's NPNF2 8 English translation (1895), as revised on New Advent, De Spiritu Sancto 29.73 says that the fathers gave thanks at evening light, that the author of the lamp-lighting thanksgiving cannot be named, and that the people utter an ancient formula: 'We praise Father, Son, and God's Holy Spirit'. The Hymn of Athenogenes is named in the next sentence, not identified with that thanksgiving.",
    "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
    "sourceIds": [
     "SRC-PHOS-BASIL-DSS",
-    "SRC-PHOS-PRAVENC"
+    "SRC-PHOS-BASIL-PG32-OCR",
+    "SRC-PHOS-BASIL-DATE"
    ],
    "notes": [
-    "This establishes that the hymn existed and was already called ancient c. 375, and that the Trinitarian part at least existed then. It does not give a date of composition.",
-    "The Greek was not collated: the passage was read in the NPNF English translation."
+    "The claim is explicitly about the passage as read in the English web edition, not a verbatim transcription of the Greek or a quotation of all six hymn lines.",
+    "The Greek passage has now been read in PG 32 OCR only, including readable Θεοῦ; no scan, critical apparatus or manuscript collation. The approximate date belongs to the separately identified dating source.",
+    "No EVIDENCE_HOLD is mechanically added just because the whole treatise is unread: the evidence claim is limited to the read passage and language. Publication and rights decisions remain separate."
    ],
-   "holds": []
+   "holds": [
+    "RIGHTS_HOLD"
+   ]
   },
   {
    "id": "CLM-PHOS-AUTHORSHIP",
    "topic": "Authorship",
-   "claim": "The author is unknown. The ascriptions to Athenogenes of Sebasteia and to Sophronius of Jerusalem are not established: the first arose from conflating two testimonies in Basil, the second is contradicted by papyrus P. Lond. 2037B (6th–7th c.), which is older than Sophronius.",
+   "claim": "The original author is not established. In the NPNF rendering Basil cannot name the author of the lamp-lighting thanksgiving and names the Hymn of Athenogenes separately; the claim that this proves Athenogenes wrote Phos Hilaron is not warranted. Attribution to Sophronius cannot explain the pre-seventh-century thanksgiving attested by Basil; this does not rule out later redaction of the received text. The 500–699 catalogue date of Papyrus London 2037 b alone does not refute seventh-century authorship.",
    "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
    "sourceIds": [
     "SRC-PHOS-PRAVENC",
-    "SRC-PHOS-BASIL-DSS"
+    "SRC-PHOS-BASIL-DSS",
+    "SRC-PHOS-BASIL-PG32-OCR",
+    "SRC-PHOS-PAPLOND2037B-DCLP",
+    "SRC-PHOS-PAPLOND2037B-MILNE1927"
    ],
    "notes": [
-    "The papyrus is known here only through the encyclopaedia article's report of Tripolitis 1970; it has not been seen.",
-    "Public copy must say 'author unknown' and may mention the attributions only as attributions."
+    "The encyclopaedia reports that the Athenogenes ascription resulted from conflating two testimonies. The juxtaposition is read in Basil; the historical origin of the attribution has not independently been traced through manuscripts.",
+    "Papyrus identity and catalogue date are checked in DCLP/LDAB, and the extent is now described in Milne 1927 no. 244, read in OCR. The papyrus letters, images and palaeography are not examined. A seventh-century fragment can carry earlier or contemporary words; this does not identify their author.",
+    "Public copy and any attribution/redaction decision remain outside this research update."
    ],
    "holds": [
     "ARCHIVE_HOLD"
    ],
    "limits": [
-    "The ascription to Sophronius is refuted by Basil (c. 375), not by the papyrus: a 7th-century copy can carry a 7th-century hymn. Sophronius at most a redactor.",
-    "Basil quotes the Trinitarian clause, not the six lines."
+    "Basil quotes a Trinitarian clause, not the six lines; exclude authorship of the ancient thanksgiving, not every possible later revision.",
+    "ARCHIVE_HOLD remains for the unexamined papyrus and attribution-bearing manuscript/edition evidence."
    ]
   },
   {
    "id": "CLM-PHOS-AC-CHECKED",
-   "topic": "Записан ли гимн в Апостольских постановлениях (проверено в обеих книгах)",
-   "claim": "Распространённое утверждение, будто гимн впервые записан в Апостольских постановлениях, ложно — и проверено теперь в обеих книгах, где его могли бы поместить. Книга VIII §§34-37 даёт вечерний чин: собрание, псалом при возжении светильников, просительную молитву диакона, благодарение епископа — но не текст гимна. Книга VII §§47-49 даёт суточные молитвы: утреннюю (Δόξα ἐν ὑψίστοις), вечернюю (Αἰνεῖτε παῖδες, то есть Пс 112:1 LXX, с Σοὶ πρέπει αἶνος и песнью Симеона Νῦν ἀπολύεις) и перед трапезой (Εὐλογητὸς εἶ) — снова ни одной строки Φῶς ἱλαρόν. Независимый научный перечень гимнов VII книги (Мессенджер, 1942) не включает Φῶς ἱλαρόν вовсе и упоминает его отдельно, как гимн, который Василий в IV веке называет очень древним.",
+   "topic": "Подтверждает ли ссылка на Апостольские постановления VIII.35 запись Phos Hilaron?",
+   "claim": "Нет: в прочитанной английской веб-передаче Donaldson / New Advent VIII.34–37 даёт часы молитвы, вечернее собрание, неназванный псалом при возжении светильников, прошения и благодарение, но не текст Phos Hilaron. В дополнительно прочитанных VII.47–49 находятся утреннее славословие, вечерняя молитва с псалмовой хвалой и песнью Симеона, затем молитва перед трапезой — также не этот гимн. Отрицательный результат относится к указанным местам, не к полному просмотру всех книг или греческой рукописной традиции.",
    "claimStatus": "VERIFIED_NEGATIVE",
    "sourceIds": [
     "SRC-PHOS-AC-ANF",
@@ -1044,33 +1054,39 @@
     "SRC-PHOS-PRAVENC"
    ],
    "notes": [
-    "Book VIII.34–37 read in the ANF translation on 2026-10-26; the chapters are the evening rite, not the hymn.",
-    "The scholarly encyclopaedia article does not ascribe the hymn to the Apostolic Constitutions at all.",
-    "Перепроверено 2026-10-26: добавлена книга VII §§47-49, ранее проверялась только книга VIII.",
-    "Происхождение ошибки понятно: VIII.35 предписывает «псалом при возжении светильников», то есть чин; отсюда и пошло «гимн записан в Постановлениях». Чин есть, текста нет.",
-    "Утверждение повторяют английская Википедия и десятки сайтов; оно неверно.",
-    "Greek text of the Constitutions was not collated; both books checked in English translation only (ANF/NPNF)."
+    "18.11.2026 перечитаны VII.47–49 и VIII.34–37 с границей VIII.38, по закреплённому HTML-зеркалу; выходные данные дополнительно прочитаны на живых страницах. Переводчик James Donaldson, ANF 7 (1886), не Schaff и не NPNF. Полные книги не прочитаны.",
+    "Положительный контроль — VII.47 действительно содержит утреннее славословие (CLM-PHOS-GLORIA-AC); вечерний псалом в VIII.35 не назван и не может быть отождествлён с Phos Hilaron по одному предписанию петь.",
+    "Прежнее объяснение «отсюда и пошла ошибка» заменено: сходство обряда может объяснять путаницу, но история её возникновения и распространения здесь не прослежена. Поисковая передача Messenger (C / LINK_ONLY) не считается независимо прочитанным подтверждением.",
+    "VERIFIED_NEGATIVE сохранён только для проверки названных локаторов. RIGHTS_HOLD у двух источников ограничивает перепечатку веб-редакции; собственный пересказ результата не объявляет эту редакцию лицензированной."
    ],
    "holds": [],
-   "nextCheck": "If a critical Greek text is ever collated, check whether any Greek line of the hymn appears anywhere in Books VII–VIII; on the English evidence it does not.",
+   "nextCheck": "Если потребуется утверждение о греческом тексте, сверить VII.47–49 и VIII.34–38 по точно идентифицированному критическому изданию; для более широкого отрицания сначала определить и действительно прочитать полный требуемый объём.",
    "limits": [
-    "Checked in translation only (ANF, newadvent.org); the Greek text of the Constitutions was not collated."
+    "Английская веб-редакция, не критический греческий текст и не скан ANF. Универсальное отсутствие гимна во всём сочинении этим проходом не доказывается.",
+    "Греческие названия псалма и песней в досье — идентификационные обозначения, а не результат греческой сверки. Ни время возникновения гимна, ни генеалогия популярной ошибки из этих отрывков не следуют.",
+    "Отсутствие цитаты в уставном предписании не доказывает, что гимн не мог исполняться при обряде; здесь проверяется наличие текста по указанной ссылке, не история исполнения."
    ],
    "status": null
   },
   {
    "id": "CLM-PHOS-OLDEST-SCOPE",
-   "claim": "Phos Hilaron is the earliest non-scriptural Christian hymn whose complete text survives and which has been sung continuously to the present day. It is not the oldest Christian hymn by manuscript age or by date of composition.",
+   "claim": "The qualified description of Phos Hilaron as the earliest non-scriptural hymn preserved complete and sung continuously is a comparative literature claim still requiring verification, not a conclusion established by Basil 29.73. Basil supplies an ancient lamp-lighting formula; he does not establish six-line textual identity or continuous performance. The selected hymn is not claimed to be the oldest by manuscript or composition.",
    "limits": [
-    "Older by manuscript: P.Oxy. XV 1786 (c. 250–300, notated, fragmentary) and P. Bodmer XI (Odes of Solomon 11, 3rd–4th c.). Older by composition: the Odes of Solomon (c. 70–125) and the Naassene hymn quoted by Hippolytus (early 3rd c.). The superlative may be used in copy only with the full qualifier."
+    "The earlier formulation and its permission to use the qualified superlative are superseded here, not silently treated as verified. The comparison with older hymns in the source list was not an exhaustive demonstration.",
+    "EVIDENCE_HOLD applies to the comparative superlative and continuity, not to the existence of the read Basil passage. The papyrus facsimile was not acquired; the limited OCR publication is recorded separately below. Track selection is unchanged; no product copy has been edited.",
+    "Milne 1927 no. 244 is now read in OCR: it is not a complete six-line witness (CLM-PHOS-PAPYRUS-EXTENT). The material basis for the previous completeness argument has therefore been narrowed, not verified. EVIDENCE_HOLD remains."
    ],
    "topic": "The scope of the word 'oldest'",
-   "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+   "claimStatus": "SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION",
    "sourceIds": [
     "SRC-PHOS-BASIL-DSS",
     "SRC-PHOS-PRAVENC",
     "SRC-PHOS-POXY",
-    "SRC-PHOS-ODES"
+    "SRC-PHOS-ODES",
+    "SRC-PHOS-PAPLOND2037B-MILNE1927"
+   ],
+   "holds": [
+    "EVIDENCE_HOLD"
    ]
   },
   {
@@ -1088,31 +1104,75 @@
   },
   {
    "id": "CLM-PHOS-BASIL-SCOPE",
-   "claim": "Basil c. 375 attests the antiquity of the lamp-lighting thanksgiving and quotes its Trinitarian clause, but does not quote the six lines. The core of the hymn is therefore attested by 375; the complete six-line text is first read in a papyrus of the 6th–7th century.",
+   "claim": "In the NPNF English translation, Basil attests the antiquity of a lamp-lighting thanksgiving and quotes a Trinitarian clause, not the complete received six-line Phos Hilaron. Neither its full wording in c. 375 nor the date of composition or a complete textual transmission can be inferred from this passage.",
    "limits": [
-    "Whether the six lines existed verbatim in 375 is not established and is not asserted in this project."
+    "The Greek comparison is confined to OCR of the printed passage, not a verified Greek transcription. Several OCR versions of PG 32 are not independent textual witnesses.",
+    "The former statement that the complete six-line text is first read in a 6th–7th-century papyrus exceeded access and is superseded. DCLP has an empty edition block; the subsequent OCR reading of Milne no. 244 instead describes a strip and prints two incomplete lines (CLM-PHOS-PAPYRUS-EXTENT). No complete early text or facsimile reading is claimed."
    ],
    "topic": "What Basil does and does not attest",
    "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
    "sourceIds": [
-    "SRC-PHOS-BASIL-DSS"
+    "SRC-PHOS-BASIL-DSS",
+    "SRC-PHOS-BASIL-PG32-OCR",
+    "SRC-PHOS-BASIL-DATE",
+    "SRC-PHOS-PAPLOND2037B-MILNE1927"
    ]
   },
   {
    "id": "CLM-PHOS-DATING-OPEN",
    "topic": "Date of composition",
-   "claim": "The date of composition is unknown. The hymn is called ancient by Basil c. 375; the oldest physical witness in this record is papyrus P. Lond. 2037B of the 6th–7th century.",
+   "claim": "The date of composition is unknown. In the read NPNF passage Basil treats the lamp-lighting thanksgiving/formula as ancient c. 375. The papyrus witness reported in the literature is now identified in DCLP as London 2037 b = P. Lond. Lit. 244, dated 500–699 by the catalogue, not palaeographically verified here.",
    "claimStatus": "RESEARCH_OPEN",
    "sourceIds": [
     "SRC-PHOS-BASIL-DSS",
-    "SRC-PHOS-PRAVENC"
+    "SRC-PHOS-PRAVENC",
+    "SRC-PHOS-BASIL-PG32-OCR",
+    "SRC-PHOS-PAPLOND2037B-DCLP",
+    "SRC-PHOS-PAPLOND2037B-MILNE1927"
    ],
    "notes": [
     "The popular '200 AD or earlier' figure was not verified in this pass and is not used.",
-    "Do not present any second- or third-century date as established."
+    "Do not present any second- or third-century date as established.",
+    "A catalogue date of a copy is neither a date of composition nor a firsthand reading of six complete lines. Milne no. 244 is now read in OCR, reporting a sixth/seventh-century strip and printing two incomplete lines, not a complete text. The papyrus and page images remain unread."
    ],
    "holds": [
     "ARCHIVE_HOLD"
+   ]
+  },
+  {
+   "id": "CLM-PHOS-PAPYRUS-CATALOG",
+   "topic": "Идентификация папирусного свидетеля",
+   "projectLevel": true,
+   "claim": "DCLP/TM 65200, LDAB 6442 identifies London, British Library Pap 2037 b as P. Lond. Lit. 244 and dates the papyrus to 500–699, from Egypt. Bibliographic record 48085 for Tripolitis 1970 links P. Lond. Inv. 2037, P. lit. Lond. 244 and van Haelst 942. The catalogue edition block is empty: these records identify a reading target, not a verified transcription of Phos Hilaron.",
+   "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+   "sourceIds": [
+    "SRC-PHOS-PAPLOND2037B-DCLP"
+   ],
+   "notes": [
+    "Read: DCLP XML and bibliography, with exact identifiers and displayed date. Its edition block remains empty. Subsequently Milne no. 244 was read separately in OCR (CLM-PHOS-PAPYRUS-EXTENT), not as a DCLP transcription. Papyrus images and Tripolitis pp. 189–196 remain unread. Catalogue CC BY 3.0 is not an image or article licence."
+   ],
+   "holds": [
+    "ARCHIVE_HOLD",
+    "LOCATOR_HOLD"
+   ]
+  },
+  {
+   "id": "CLM-PHOS-PAPYRUS-EXTENT",
+   "topic": "Полнота раннего свидетеля Phos Hilaron",
+   "projectLevel": true,
+   "claim": "In the OCR of Milne 1927, no. 244 (pp. 205–206), Pap. 2037 B is described as a 3 × 13.8 cm strip and published under Hymn (?) in two incomplete lines, followed by no. 245. The entry presents a fragmentary witness, not the complete received Phos Hilaron. The link to the hymn is made through the separately identified Tripolitis bibliography; Milne does not name Phos Hilaron in this entry.",
+   "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+   "sourceIds": [
+    "SRC-PHOS-PAPLOND2037B-MILNE1927",
+    "SRC-PHOS-PAPLOND2037B-DCLP"
+   ],
+   "notes": [
+    "Actual access: OCR of the catalogue description and transcription, not the page images or the papyrus; Greek letters, accents, brackets and individual readings are not quote-verified.",
+    "This corrects the inference that the full six-line text was read on the early papyrus. It neither dates composition nor establishes which witness first preserves the complete text, nor continuous performance.",
+    "The sixth/seventh-century date, measurements and acquisition/numbering history are those reported by Milne, not independently verified palaeography or archive research."
+   ],
+   "holds": [
+    "RIGHTS_HOLD"
    ]
   },
   {
@@ -1157,19 +1217,19 @@
   },
   {
    "id": "CLM-PHOS-GLORIA-AC",
-   "topic": "Whether the Greek Gloria is in the Apostolic Constitutions",
-   "claim": "Yes. Book VII.47 (ANF) is headed 'A Morning Prayer' and opens 'Glory be to God in the highest, and upon earth peace, good-will among men', continuing 'We praise You, we sing hymns to You, we bless You…'. This is the opposite result from the check run on Φῶς ἱλαρόν in the same book: the Constitutions do carry the Gloria, and do not carry the lamp-lighting hymn.",
+   "topic": "Утреннее славословие VII.47 по английской веб-передаче",
+   "claim": "В английской веб-передаче Donaldson / New Advent VII.47 озаглавлена A Morning Prayer: открывается Лк 2:14 и продолжается утренней хвалой, относимой к Gloria. Это положительная проверка указанного места, не утверждение о тождестве всех слов современной греческой редакции; отрицательный результат по Phos Hilaron ограничен отдельно прочитанными местами.",
    "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
    "sourceIds": [
     "SRC-PHOS-AC-BOOK7"
    ],
    "notes": [
-    "Read 2026-10-26 in the NPNF English translation; the Greek was not collated.",
+    "Перепроверено 18.11.2026: VII.47–49 в закреплённом HTML и на живой странице; выходные данные называют James Donaldson, ANF 7 (1886), редакцию New Advent / Kevin Knight. Прежнее NPNF исправлено; печатный том и греческий текст не сверены.",
     "A positive check, recorded because the earlier negative one (CLM-PHOS-AC-CHECKED) shows the method is not rigged to say no.",
     "Series-level: recorded in RESEARCH/SERIES_ANCIENT_HYMNS_ROADMAP.md, not attached to a work because no work exists yet."
    ],
    "limits": [
-    "English translation only."
+    "Только названные английские разделы, не вся книга и не критическая греческая колляция. RIGHTS_HOLD у источника не позволяет объявлять веб-редакцию свободной для перепечатки; здесь собственный пересказ."
    ],
    "projectLevel": true
   },
@@ -1309,7 +1369,7 @@
    "notes": [
     "Формулировка приведена по вторичной передаче с точной ссылкой на страницу.",
     "Проверка Евсевия, Ц. И. II, 17, и Филона (DOSSIER_SERIES_PHILON_THERAPEUTAE_WITNESS.md) показывает, как расходятся две половины критерия: у Φῶς ἱλαρόν и у Климента есть текст, но нет прямого свидетельства о пении в богослужении; у терапевтов есть подробное описание пения новых небиблейских гимнов в собрании, но не сохранилось ни одной строки. Практика без текста против текста без практики.",
-    "Третье звено той же проверки (Юстин, 1 Апология 67): подробное описание христианского собрания в Риме сер. II в. обходится без пения, но предстоятель слагает молитву и благодарение «ὅση δύναμις αὐτῷ» — по мере силы, то есть заново; текста опять не сохранилось (CLM-PHOS-SERIES-JUSTIN-EXTEMPORE)."
+    "Уточнено 18.11.2026 по Юстину I.13 и I.65–68: «по мере сил» не доказывает сочинение молитвы заново или целиком небиблейский состав; полной молитвы в описании нет, но I.66 приводит слова установления. Поэтому Юстин не объявлен третьим свидетельством нового внебиблейского пения и не используется как доказательство выполнения критерия серии (CLM-PHOS-SERIES-JUSTIN-EXTEMPORE)."
    ],
    "limits": [
     "Smith 2011 не открывался целиком; LOCATOR_HOLD."
@@ -1372,19 +1432,40 @@
   {
    "id": "CLM-PHOS-005-FAILS-RULE",
    "topic": "Te Deum и правило допуска серии",
-   "claim": "Te Deum не проходит правило, по которому отобраны PHOS-001 и PHOS-002 (Смит 2011, с. 211: гимн не взят из Библии и не построен по библейским образцам). Третья часть гимна, от Salvum fac, — ряд псалмических стихов (Пс 27:9, Пс 30:2 и др.), приложенный впоследствии; гимн построен по схеме Апостольского Символа веры; содержит Sanctus из Ис 6:3. Кроме того, тот же ряд псалмических стихов встречается приложенным к Великому славословию (PHOS-003) — то есть материал пересекается.",
+   "claim": "Te Deum не проходит правило серии (Смит 2011, с. 211): гимн содержит Sanctus (Ис 6:3), следует схеме Символа веры и включает псалмические прошения. В римской редакции ряд от Salvum fac до In te, Domine, speravi обрамляют Пс 27:9 и 30:2; это не описание окончания во всех списках. С Великим славословием пересекаются отдельные формулы, а не обязательно весь ряд в одном порядке.",
    "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
    "projectLevel": true,
    "sourceIds": [
+    "SRC-PHOS-TEDEUM-LU1961",
+    "SRC-PHOS-BANGOR-WARREN1895",
     "SRC-PHOS-TEDEUM-NCE",
     "SRC-PHOS-TEDEUM-TEXT"
    ],
    "notes": [
-    "Латинский текст прочитан целиком в этом проходе.",
+    "В Hymnology Archive прочитаны латинский текст и перевод. В издании 1961 г. текст обеих распевных версий сверен по с. 1832–1837, включая Sanctus и ряд прошений.",
     "Кандидат снят из очереди по правилу, а не по вкусу; этим же снимается и моё прежнее возражение «слишком длинно» — оно было слабым и не главным."
    ],
    "limits": [
-    "Утверждение о приложенности заключительных прошений восходит к английской Википедии без ссылки (citation needed) и к Новой католической энциклопедии; состав гимна по первоисточнику не сверен."
+    "Состав и порядок — по двум распевам одного Liber Usualis (1961) и по Warren II, [7], [116]–[117]. Описываемое Угло родство рядов не устанавливает дату и направление заимствования. Обе страницы Уоррена прочитаны через OCR, а не с листов кодекса."
+   ]
+  },
+  {
+   "id": "CLM-PHOS-005-BANGOR-ENDING",
+   "topic": "Чем оканчивается Te Deum в изданиях Бангорского списка и в Liber Usualis 1961",
+   "claim": "У Уоррена (II, [7], с. 10) за Salvum fac, Et rege eos и Per singulos dies следует Et laudamus … Amen; затем Fiat, Domine, misericordia tua … speravimus in te, и начинается [8] Sancti venite. В обоих распевах Liber Usualis после Et laudamus нет Amen: идут Dignare, Miserere nostri, Fiat misericordia tua, Domine и In te, Domine, speravi. Трёх строк римского окончания (Dignare, Miserere nostri, In te, Domine, speravi) в бангорском [7] нет.",
+   "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+   "projectLevel": true,
+   "sourceIds": [
+    "SRC-PHOS-BANGOR-WARREN1895",
+    "SRC-PHOS-BANGOR-PL72",
+    "SRC-PHOS-TEDEUM-LU1961",
+    "SRC-PHOS-BANGOR-AMBROSIANA"
+   ],
+   "notes": [
+    "Уоррен нумерует строки как издатель: [7], ст. 22–26; в Liber Usualis это строки 22–29 по делению досье, не номера в книге. PL 72 в электронной передаче подтверждает окончание той же рукописи через другое издание. MIrA 115 даёт шифр и дату, не слова."
+   ],
+   "limits": [
+    "Это вывод о порядке в изданиях, не о начертаниях на л. 10r–v. Уоррен допускает и привычную вставку Amen переписчиком, и след прежнего окончания; ни эта развилка, ни разница с LU не датируют развитие гимна. Сходные формулы в [116] и [117] не принадлежат [7]."
    ]
   },
   {
@@ -2622,43 +2703,47 @@
   },
   {
    "id": "CLM-PHOS-SERIES-JUSTIN-NO-SINGING",
-   "topic": "Юстин, 1 Апология 67: подробное описание воскресного собрания — без пения; но умолчание не доказательство",
-   "claim": "Прочитано по-гречески (1 Апология, гл. 67): чтение «ἀπομνημονεύματα τῶν ἀποστόλων ἢ τὰ συγγράμματα τῶν προφητῶν», проповедь предстоятеля, «ἔπειτα ἀνιστάμεθα κοινῇ πάντες καὶ εὐχὰς πέμπομεν», хлеб, вино и вода, молитва и благодарение предстоятеля, «ὁ λαὸς ἐπευφημεῖ λέγων τὸ Ἀμήν», причащение, посылание отсутствующим, сбор в пользу нуждающихся. **Пения на этом перечне нет.** Подсчёт по всему файлу (68 глав, ~14 400 слов): ὕμνος — 1 раз, ψαλμός, ᾠδή, ᾄδω, μέλος — ни разу; εὐχαριστ- — 10 раз; ἐπευφημέω — 3. **Но умолчание не доказательство**: слово ὕμνος Юстин знает и употребляет о христианском богослужении вообще (гл. 13: «πομπὰς καὶ ὕμνους πέμπειν»), а описание его сжатое и апологетическое, а не устав. Вывода «в собрании не пели» из этого не делается.",
+   "topic": "Юстин I.65–67: порядок собрания описан, отдельный способ пения не указан; это не доказательство отсутствия пения",
+   "claim": "В прочитанной греческой передаче First1KGreek I.67 Юстин перечисляет чтение, наставление, общую молитву, приношение, молитву и благодарение предстоятеля, Аминь народа, причащение и помощь нуждающимся. Пение не выделено отдельным действием; способ произнесения Аминя не описан. I.13 действительно употребляет ὕμνους. Из умолчания в I.65–67 не следует, что в собрании не пели, а из возгласа Аминь — что его обязательно говорили, а не распевали.",
    "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
    "sourceIds": [
     "SRC-PHOS-SERIES-JUSTIN-APOL-I"
    ],
    "notes": [
-    "Участие народа у Юстина — возглас «Ἀμήν», а не припев; у Филона (DVC 80) община как раз подхватывает припевы, τὰ ἀκροτελεύτια καὶ ἐφύμνια.",
-    "Это третий случай подряд, когда описание пения не сопровождается текстом (Филон, Плиний, Юстин)."
+    "Перечитаны I.13 и I.65–68, 18.11.2026; греческий текст и собственный пересказ, не реконструкция звучания собрания.",
+    "Вспомогательный поиск в закреплённом XML даёт 1 форму ὕμνους, 12 форм с началом εὐχαριστ- и 3 с ἐπευφημ-. Это подсчёт форм, не словарных лемм и не классификация всех способов исполнения.",
+    "Прежнее «третий случай описания пения без сохранившегося текста» уточнено: у Юстина здесь описаны прежде всего молитва и участие народа; новый небиблейский гимн и его импровизация не установлены."
    ],
    "holds": [],
    "limits": [
-    "Подсчёт слов — по одному файлу; критического издания не читал.",
-    "Аргумент от умолчания в этой записи прямо назван слабым и не используется как доказательство.",
-    "Юстин описывает Рим, Плиний — Вифинию: это не одна община и не одно десятилетие."
+    "Один цифровой текст, ограниченное чтение названных глав; не полная колляция Апологии и не просмотр критического аппарата.",
+    "Автоматическое отсутствие искомого слова или отдельного упоминания пения не есть доказательство отсутствия музыки.",
+    "Юстин и Плиний относятся к разным десятилетиям и местам; именование дня у Юстина не раскрывает автоматически Плиниево stato die."
    ],
    "projectLevel": true
   },
   {
    "id": "CLM-PHOS-SERIES-JUSTIN-EXTEMPORE",
-   "topic": "У Юстина предстоятель слагает молитву и благодарение «по мере силы своей» — богослужебный текст не фиксирован и не из Писания, но ни одного такого текста не сохранилось",
-   "claim": "В 1 Апологии 67 сказано: «ὁ προεστὼς εὐχὰς ὁμοίως καὶ εὐχαριστίας, **ὅση δύναμις αὐτῷ**, ἀναπέμπει» — предстоятель возсылает молитвы и благодарения **по мере силы своей**; в гл. 65 он же возсылает «αἶνον καὶ δόξαν» Отцу всего и «εὐχαριστίαν … ἐπὶ πολὺ ποιεῖται» — творит благодарение пространно; в гл. 13 та же формула о всех: «ὅση δύναμις». Следовательно, в Риме середины II века литургический текст **сочинялся предстоятелем заново**, то есть был небиблейским и не фиксированным письменно — это как раз то, чего требует вторая половина критерия Смита. **Но ни одного такого текста не сохранилось:** Юстин не приводит ни строки. Практика без текста — третий раз подряд.",
+   "topic": "Юстин I.67: «по мере сил» не определяет способ составления молитвы; полного текста молитвы здесь нет",
+   "claim": "В греческой передаче First1KGreek по Rauschen 1911, I.67 предстоятель возсылает молитвы и благодарения ὅση δύναμις αὐτῷ — по мере сил; I.65 говорит о пространном благодарении, а I.13 употребляет сходную формулу о хвале вообще. Эти места сами по себе не устанавливают, что молитва каждый раз сочинялась заново, не читалась по книге или не включала переданных слов. Полного текста молитвы предстоятеля в I.65–67 не приведено; однако I.66 передаёт слова установления Евхаристии. Это не доказательство отсутствия таких молитвенных текстов вообще.",
    "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
    "sourceIds": [
     "SRC-PHOS-SERIES-JUSTIN-APOL-I"
    ],
    "notes": [
-    "Связь с Плинием и Филоном: все трое описывают сочиняемое заново небиблейское пение или молитву и никто не сохраняет текста.",
-    "«ὅση δύναμις αὐτῷ» — буквально «сколько у него силы»; с Плиниевым «carmen … dicere» и Филоновым «καινὸν αὐτὸς πεποιηκώς» это один ряд явлений."
+    "Перепроверка 18.11.2026: I.13 и I.65–68 прочитаны в закреплённом греческом XML. Стабильный ID EXTEMPORE сохранён, но прежнее «по мере сил, следовательно заново и не фиксировано» отозвано как более сильное, чем прочитанный текст.",
+    "ἀναπέμπει описывает вознесение/возсылание молитвы, а не прямо её сочинение. Оговорка об усилии/способности совместима со свободным выражением, но сама не исключает известной формы или сочетания переданных и свободных слов; обратный вывод о доказанном фиксированном формуляре также не сделан.",
+    "I.66 — контроль против прежнего «не приводит ни строки»: слова о теле, крови и воспоминании действительно переданы. Это цитата из евангельского предания, не стенограмма полной молитвы предстоятеля; её точное место в произносимой им молитве по этому отрывку не устанавливается.",
+    "Юстин, Плиний и Филон не свидетельствуют об одном и том же способе составления текста. Пение, молитва, новизна сочинения и наличие полного приведённого текста — разные признаки; вторая половина критерия Смита не считается выполненной по одной этой оговорке Юстина."
    ],
    "holds": [],
    "limits": [
-    "Чтение «ὅση δύναμις αὐτῷ» — по изданию Раушена; критического аппарата не видел.",
-    "Дата (150–160) — по источнику класса C, с внутренней привязкой гл. 46 (CLM-PHOS-SERIES-JUSTIN-DATE).",
-    "Из того, что текст слагался заново, не следует, что его не записывали после произнесения; об этом источник молчит."
+    "Предел — названные главы одной цифровой передачи. Изображение Rauschen 1911, аппарат, современный критический комментарий и рукописи не сверены.",
+    "Неприведение полной молитвы здесь не равно её несуществованию или полной утрате. Не установлен ни обязательный экспромт, ни обязательный письменный формуляр.",
+    "Датировка 150–160 гг. остаётся внешней датировкой по источнику класса C; чтение I.67 не уточняет её само по себе."
    ],
-   "projectLevel": true
+   "projectLevel": true,
+   "nextCheck": "Для более сильного вывода о свободной и фиксированной молитве потребуется отдельный научный комментарий именно к I.67 и проверка его аргументов. Текущий проход завершён ограничением вывода; общей очереди поиска или нового кандидата в производство не создаёт."
   },
   {
    "id": "CLM-PHOS-SERIES-JUSTIN-SUNDAY",
@@ -3259,7 +3344,8 @@
     "SRC-PHOS-GLORIA-LATIN",
     "SRC-PHOS-LXX-ODES-14",
     "SRC-PHOS-DOXOLOGIA",
-    "SRC-PHOS-GLORIA-LATIN-DATING"
+    "SRC-PHOS-GLORIA-LATIN-DATING",
+    "SRC-PHOS-BANGOR-WARREN1895"
    ],
    "holds": [],
    "notes": [
@@ -3268,7 +3354,8 @@
    ],
    "limits": [
     "Латинский — перевод, а не греческий свидетель: он подтверждает греческое чтение лишь через греческую основу перевода.",
-    "Читался современный официальный текст мессы, а не критическое издание латинской традиции гимна."
+    "Читался современный официальный текст мессы, а не критическое издание латинской традиции гимна.",
+    "Для Бангорского Gloria это не полный набор параллелей: у Уоррена, II, [116], с. 31 (OCR), есть Laudamus te, но один раз qui tollis peccatum mundi (ед. ч.) и Suscipe orationem nostram. Это другое латинское последование, не опровержение чтения римского листка и не сверка греческой рукописи."
    ],
    "projectLevel": true
   },
@@ -3385,12 +3472,13 @@
    "claim": "Основание не во вкусе и не в цензуре, а в исповедании. **1689 Лондонское баптистское исповедание 22.2:** «Religious worship is to be given to God the Father, Son, and Holy Spirit, and to him alone; not to angels, saints, or any other creatures; and since the fall, not without a mediator, nor in the mediation of any other but Christ alone»; **8.9:** служение посредника «may not be either in whole, or any part thereof, transferred from him to any other». **Baptist Faith and Message 2000, II.B:** Христос — «the One Mediator, fully God, fully man». Отсюда: петь молитву, обращённую к Марии, мы не будем, а историю этой молитвы разбирать будем. Исследование не есть одобрение.",
    "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
    "sourceIds": [
+    "SRC-CONF-1677-TCP",
     "SRC-CONF-1689-LBCF",
     "SRC-CONF-BFM-2000"
    ],
    "holds": [],
    "notes": [
-    "Исповедания прочитаны firsthand; это первичные документы, а не пересказ чьей-то позиции.",
+    "В наборе издания 1677 г. независимо от Reformed Reader проверены VIII.9 (с. 34) и XXII.2 (с. 74). Это те же положения, не второй независимый акт и не проверка подписей 1689 г.",
     "Правило канала вытекает из них и записано в `projects/lord-god-strength/RULES.md` § 7 (заглавная только о Боге) и § 17 (вероучение).",
     "Практическое следствие для серии: богородичный материал уходит в раздел исследований (`RESEARCH_LANE_NOT_FOR_SINGING.md`), а не в очередь на пение."
    ],
@@ -3478,7 +3566,7 @@
   {
    "id": "CLM-PHOS-EPIPHANIUS-COLLYRIDIANS",
    "topic": "Что Епифаний на самом деле говорит о почитании Марии: жертва запрещена, почитание — нет, а конца её он не знает",
-   "claim": "Около 375 г. Епифаний Саламинский обличает коллиридиан, приносивших хлебцы в имя Марии («Панарион» 78:13), и формулирует границу по-гречески: `Πέρα τοῦ δέοντος οὐ χρὴ τιμᾷν τοὺς ἁγίους, ἀλλὰ τιμᾷν τὸν αὐτῶν Δεσπότην` — святых **не сверх должного**, а Владыку их; `Οὔτε γὰρ θεὸς ἡ Μαρία` — **Мария не бог**; `Καὶ μηδεὶς εἰς ὄνομα ταύτης προσφερέτω` — **никто да не приносит в имя её**, ибо губит душу свою; `μήτε πάλιν ἐμπαροινείτω ἐξυβρίζων τὴν ἁγίαν Παρθένον` — но и не оскорбляй святую Деву. **Три вещи, которых в тексте нет и которых нельзя в него вчитывать.** 1) Запрещена **жертва и поклонение**, а не почитание: в переводе Williams — «Honor Mary, but let the Father, the Son, and the Holy Spirit be worshiped, but let no one worship Mary… even though Mary is most beautiful and holy and venerable, yet she is not to be worshiped» (79:1, 4). 2) **Конца её он не знает**: «τὸ τέλος γὰρ αὐτῆς οὐδεὶς ἔγνω» — около 375 г. учитель церкви открыто не знает, умерла ли она. 3) Епифаний не протестант: он высоко чтит Деву и запрещает её хулить. Выдавать его за сторонника нашей позиции — значит искажать свидетеля.",
+   "claim": "Около 375 г. Епифаний Саламинский обличает коллиридиан, приносивших хлебцы в имя Марии («Панарион» 78:13), и формулирует границу по-гречески: `Πέρα τοῦ δέοντος οὐ χρὴ τιμᾷν τοὺς ἁγίους, ἀλλὰ τιμᾷν τὸν αὐτῶν Δεσπότην` — святых **не сверх должного**, а Владыку их; `Οὔτε γὰρ θεὸς ἡ Μαρία` — **Мария не бог**; `Καὶ μηδεὶς εἰς ὄνομα ταύτης προσφερέτω` — **никто да не приносит в имя её**, ибо губит душу свою; `μήτε πάλιν ἐμπαροινείτω ἐξυβρίζων τὴν ἁγίαν Παρθένον` — но и не оскорбляй святую Деву. **Три вещи, которых в тексте нет и которых нельзя в него вчитывать.** 1) Запрещена **жертва и поклонение**, а не почитание: в цитате, приведённой Madrid со ссылкой на Williams, — «Honor Mary, but let the Father, the Son, and the Holy Spirit be worshiped, but let no one worship Mary… even though Mary is most beautiful and holy and venerable, yet she is not to be worshiped» (79:1, 4). 2) **Конца её он не знает**: «τὸ τέλος γὰρ αὐτῆς οὐδεὶς ἔγνω» — около 375 г. учитель церкви открыто не знает, умерла ли она. 3) Епифаний не протестант: он высоко чтит Деву и запрещает её хулить. Выдавать его за сторонника нашей позиции — значит искажать свидетеля.",
    "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
    "sourceIds": [
     "SRC-PHOS-EPIPHANIUS-PANARION-78",
@@ -3489,7 +3577,7 @@
     "ARCHIVE_HOLD"
    ],
    "notes": [
-    "Греческий текст прочитан своими глазами (Migne PG 42, стб. 736–738) и переведён заново; локаторы и стандартный английский перевод взяты из второго источника и совпали по смыслу.",
+    "Греческий фрагмент гл. 78 прочитан в наборе Sowell по PG 42, 736–738; слова о чести сопоставлены по смыслу с цитатой у Madrid. Греческий текст гл. 79 по этой статье не проверен.",
     "Значение для карточки: около 375 г. почитание Марии уже существует и уже вызывает спор о мере — то есть спор идёт о границе, а не о самом факте.",
     "Граница, которую проводит Епифаний (жертва принадлежит Богу), совпадает с границей наших исповеданий (1689, гл. 22 § 2), но сама по себе она не делает его протестантом.",
     "**Возражение против обычного употребления этого места — в части 5 досье и в `CLM-PHOS-COLLYRIDIANS-RECONSIDERED`: по Шумейкеру 2008, коллиридиане, вероятнее всего, не считали Марию богиней, и обличает Епифаний жертву и поклонение, а не почитание как таковое.**"
@@ -3630,7 +3718,7 @@
     "ARCHIVE_HOLD"
    ],
    "notes": [
-    "Греческий текст 78-й главы прочитан firsthand (часть 4); локаторы и греческие термины 79-й — по вторичному разбору с точными ссылками на Williams (Brill, 2013).",
+    "В части 4 прочитан отрывок гл. 78 в наборе Sowell; локаторы и греческие термины 79-й — по вторичному разбору с точными ссылками на Williams (Brill, 2013).",
     "Практический вывод для текстов канала: сильная сторона аргумента не в «ранняя церковь осудила», а в свидетельстве Писания и в хронологии самих свидетельств (до 150 г. — ни одного, культ — с середины IV в., взрыв — после 431-го).",
     "Епифаний при этом остаётся ценным свидетелем: он фиксирует, что около 375 г. такая практика уже существует и уже вызывает спор о мере."
    ],

@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "registryId": "SUNO-HYMNS-SOURCE-REGISTRY-V1",
- "asOf": "2026-11-03",
+ "asOf": "2026-11-18",
  "note": "Project-local source inventory. The repository root evidence policy remains controlling; source class and operational states are separate. For a historical source served through a modern digital presentation, evidenceClass describes the underlying source when stated, while accessState and rightsState describe what is actually accessed and can be reused.",
  "fields": [
   "evidenceClass",
@@ -943,18 +943,18 @@
    ],
    "limits": [
     "Web transcriptions, not the printed bundel: not quote-safe for a disputed claim.",
-    "The printed 1938 bundel is reachable as a Delpher scan (identifier MMKB06:000000593) and has not been collated."
+    "See SRC-HB-1938-PRINT-COLLATED for the Delpher page OCR; these web witnesses do not establish the wording of stanza 1 in print."
    ]
   },
   {
    "id": "SRC-HB-1938-PRINT",
    "title": "Psalmen en Gezangen voor den Eeredienst (Hervormde Bundel, 1938) — printed object",
    "url": "https://www.delpher.nl/nl/boeken/view?coll=boeken&identifier=MMKB06:000000593",
-   "type": "The printed hymnal itself; target object for collation",
+   "type": "Volume-level record for Delpher MMKB06:000000593 (KB, PPN 416504787)",
    "evidenceClass": "A1",
-   "accessState": "NOT_ACQUIRED",
-   "locatorState": "LOCATOR_MISSING",
-   "rightsState": "RIGHTS_UNKNOWN",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "COARSE_LOCATOR_ONLY",
+   "rightsState": "PERMISSION_REQUIRED",
    "publicationState": "REFERENCE",
    "holds": [
     "EVIDENCE_HOLD",
@@ -962,10 +962,10 @@
     "RIGHTS_HOLD"
    ],
    "supports": [
-    "Would settle the exact 1938 wording, the five-stanza composition and any melody attribution"
+    "Gezang 205 is located at Delpher images 724–725 in this volume; see SRC-HB-1938-PRINT-COLLATED for the earlier page-level reading, not a second copy."
    ],
    "limits": [
-    "Not collated. A 20th-century publication: its own rights status must be assessed before any use of its wording."
+    "Stanza 1 dropped out of the OCR on image 724. Gezang 75 ('t Oog omhoog) is a different item: printed p. 501 is a catalogue lead, not a verified scan locator. Neither the whole book nor that page was collated here. Delpher marks the object copyright-protected."
    ]
   },
   {
@@ -1194,7 +1194,7 @@
     "Gezang 75 stands on printed p. 501 of the 1938 bundel, its incipit is «'t Oog omhoog, het hart naar boven», and the melody is credited to Louis Bourgeois"
    ],
    "limits": [
-    "The printed bundel has not been collated; the page number and the melody credit come from the database rendering, and the database is offline."
+    "The p. 501 locator and Bourgeois credit for Gezang 75 come from the catalogue rendering, not inspection of its printed page. The separate Delpher page check is for Gezang 205."
    ]
   },
   {
@@ -1323,30 +1323,116 @@
    ],
    "limits": [
     "A secondary encyclopaedia article, not a critical edition: it reports the papyrus and the manuscript position without printing an apparatus",
-    "It does NOT ascribe the hymn to the Apostolic Constitutions; the widespread 'first recorded in the Apostolic Constitutions VIII.35' is therefore not supported by the source read here and is held open",
+    "Scope corrected 2026-11-18: the article does not ascribe the hymn to the Apostolic Constitutions, but its silence is not an independent check of that primary text. The narrow finding in CLM-PHOS-AC-CHECKED rests on the separately read English passages VII.47–49 and VIII.34–37; the former 'held open' wording is not its current claim status",
     "The papyrus itself was not seen; only the article's report of it"
    ]
   },
   {
    "id": "SRC-PHOS-BASIL-DSS",
-   "title": "Basil of Caesarea, De Spiritu Sancto 29.73 — NPNF translation (Schaff)",
+   "title": "Basil of Caesarea, De Spiritu Sancto 29.73 — Blomfield Jackson, NPNF2 8 (1895), веб-редакция New Advent",
    "url": "https://www.newadvent.org/fathers/3203.htm",
-   "type": "Primary patristic text in a public-domain English translation",
+   "type": "Первичный патристический текст в английском переводе; прочитана современная веб-редакция перевода, не печать 1895 г.",
    "evidenceClass": "A1",
    "accessState": "PARTIAL_OBJECT",
    "locatorState": "EXACT_LOCATOR_VERIFIED",
-   "rightsState": "PUBLICATION_ELIGIBLE",
-   "publicationState": "PROMOTE",
-   "holds": [],
+   "rightsState": "RIGHTS_UNKNOWN",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "RIGHTS_HOLD"
+   ],
    "supports": [
-    "The fathers did not receive the evening light in silence but gave thanks at its appearing",
-    "The author of the lamp-lighting thanksgiving is unknown to Basil ('Who was the author of these words of thanksgiving at the lighting of the lamps, we are not able to say')",
-    "The people utter 'the ancient form', and the quoted formula is 'We praise Father, Son, and God's Holy Spirit'",
-    "The Hymn of Athenogenes is mentioned as a different thing, in the following sentence"
+    "В переводе Jackson: отцы благодарили при появлении вечернего света; автор слов светильничного благодарения не назван; народ произносит древнюю формулу хвалы Отцу, Сыну и Божию Святому Духу.",
+    "Гимн Афиногена назван следующим предложением; отрывок не отождествляет его со светильничным благодарением и не цитирует весь шестистрочный Phos Hilaron."
    ],
    "limits": [
-    "Read in the NPNF English translation (§ 73 and the opening of §§ 74–75); the Greek was not collated",
-    "This proves that the hymn existed and was called ancient c. 375, not when it was composed"
+    "Прочитаны 29.73 и контекст 29.71–75 в английской веб-редакции, а также её выходные данные: NPNF, Second Series, vol. 8, ред. Philip Schaff и Henry Wace, Buffalo: Christian Literature Publishing Co., 1895; переводчик — Blomfield Jackson, не Schaff. Весь трактат и печать NPNF не сверены.",
+    "Греческий отрывок отдельно прочитан только в OCR PG 32 (SRC-PHOS-BASIL-PG32-OCR), без изображения колонки и критического аппарата. Это не полная греческая сверка и не основание повышать доступ до FULL_OBJECT_VERIFIED.",
+    "Дата около 375 г. взята из SRC-PHOS-BASIL-DATE. Место свидетельствует о древности благодарения и формулы, не о дате сочинения, полном раннем тексте или непрерывности исполнения на протяжении всех последующих веков.",
+    "PROMOTE заменён на REFERENCE 18.11.2026: исследовательское чтение ограниченного места не есть решение о выпуске. Сам PARTIAL_OBJECT не требует EVIDENCE_HOLD, если утверждение явно ограничено прочитанным отрывком и языком; общая автоматическая переклассификация остальных частичных источников не выполнялась."
+   ],
+   "secondaryUrl": "https://github.com/augustiniusliang/nicene-trans/blob/587532868ab43097efff5722c947170e7e744537/newadvent/fathers/3203.htm#L324-L336",
+   "rightsBasis": "Исторический греческий текст и перевод Blomfield Jackson 1895 г. отделены от фактически прочитанной страницы New Advent: её выходные данные говорят Revised and edited by Kevin Knight, а сайт заявляет copyright. Печатная страница NPNF не сопоставлена, лицензия на эту редакцию/HTML не получена. В Research — ссылка, собственный пересказ и минимальные короткие цитаты; не перепечатка страницы или трактата."
+  },
+  {
+   "id": "SRC-PHOS-BASIL-PG32-OCR",
+   "title": "Basil of Caesarea, De Spiritu Sancto 29.73 — PG 32 (Paris: J.-P. Migne, 1857), кол. 205; OCR OGL",
+   "url": "https://github.com/OGL-PatrologiaGraecaDev/Vol.-32/blob/61a1044e95e42bd06b3cb8f266c38050b97c592a/hvd.32044020606729_ocr/110.txt#L1-L16",
+   "secondaryUrl": "https://github.com/OGL-PatrologiaGraecaDev/Vol.-32/blob/61a1044e95e42bd06b3cb8f266c38050b97c592a/hvd.32044048207401_ocr/108.txt#L1-L17",
+   "type": "OCR печатного греческого текста и параллельной латыни; не изображение страницы, не новый рукописный свидетель",
+   "printedPages": "PG 32, кол. 205–206; светильничный отрывок перед §74; выходные данные в hvd.32044020606729_ocr/010.txt",
+   "evidenceClass": "B1",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "RIGHTS_UNKNOWN",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "RIGHTS_HOLD"
+   ],
+   "rightsBasis": "Историческое издание отделено от цифрового OCR и скана. Лицензия на воспроизведение цифрового объекта не установлена; здесь ссылки и результат чтения, не раздача OCR или изображений.",
+   "supports": [
+    "В доступных OCR читаются светильничное благодарение, неизвестный автор, древняя формула народа и Πνεῦμα Θεοῦ. Следом — отдельное предложение о гимне Афиногена, затем §74 о Григории.",
+    "Родительный Θεοῦ отличается от винительного Θεόν в принятом для трека богослужебном тексте; это различие передач текста, а не установленная хронология вариантов."
+   ],
+   "limits": [
+    "Колонка опознана по номеру 205 в hvd.32044048207401_ocr/108.txt, той же последовательности в других OCR и переходу к §74. Изображение печати, рукописи и критический аппарат не просмотрены. Несколько OCR одного издания не составляют независимый текстологический кворум.",
+    "Первый глагол формулы OCR передают с ошибками (Αὶνοῦιιεν / Λὶνοὺμεν). Здесь он не выдаётся за проверенную греческую цитату; нормализованное αἰνοῦμεν надо сверить с печатью. Ударения, придыхания и пунктуация по OCR не удостоверяются.",
+    "Источник помогает проверить предел отрывка, но не доказывает дату сочинения, полный шестистрочный текст или историю атрибуций."
+   ]
+  },
+  {
+   "id": "SRC-PHOS-PAPLOND2037B-DCLP",
+   "title": "Papyrus London 2037 b = P. Lond. Lit. 244 — каталог DCLP/TM 65200, LDAB 6442",
+   "url": "https://github.com/papyri/idp.data/blob/83e0a6ad0fb4e2726fe96ded26dcc22e11bf29f0/DCLP/65/65200.xml#L8-L43",
+   "secondaryUrl": "https://github.com/papyri/idp.data/blob/83e0a6ad0fb4e2726fe96ded26dcc22e11bf29f0/Biblio/49/48085.xml#L6-L28",
+   "type": "Папирус, идентифицированный по каталогу DCLP/LDAB и библиографической записи Tripolitis 1970; не прочитанное издание гимна",
+   "evidenceClass": "B1",
+   "accessState": "CATALOG_ONLY",
+   "locatorState": "COARSE_LOCATOR_ONLY",
+   "rightsState": "PUBLICATION_ELIGIBLE",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "ARCHIVE_HOLD",
+    "LOCATOR_HOLD"
+   ],
+   "rightsBasis": "CC BY 3.0 в заголовке DCLP относится к каталожным данным DCLP/LDAB с атрибуцией. Не переносится на фотографии British Library, издание Milne 1927 или статью Tripolitis 1970.",
+   "supports": [
+    "DCLP/TM 65200, LDAB 6442: London, British Library Pap 2037 b, P. Lond. Lit. 244; папирус, Египет, каталожная датировка 500–699.",
+    "Библиографическая запись 48085: Antonia Tripolitis, Phos hilaron. Ancient Hymn and Modern Enigma, Vigiliae Christianae 24 (1970), с. 189–196; соответствие P. Lond. Inv. 2037 = P. lit. Lond. 244 = van Haelst 942.",
+    "В XML есть адреса изображений BL и ссылки на издания; div type=\"edition\" пуст. Получены данные каталога, не строки папируса."
+   ],
+   "limits": [
+    "Датировка сообщена каталогом, не выведена из самостоятельной палеографии. Нельзя превращать её в дату сочинения гимна.",
+    "18.11.2026 адрес access.bl.uk из записи не открылся инструментом чтения; старый FullDisplay.aspx перенаправил на общую страницу Digitised manuscripts and archives. Это результат двух маршрутов, не доказательство, что папирус не оцифрован или отсутствует в BL.",
+    "Сам папирус и его буквы не просмотрены. В продолжении 18.11.2026 отдельно прочитан OCR Milne 1927, №244, с. 205–206 (SRC-PHOS-PAPLOND2037B-MILNE1927): полоска с двумя неполными строками, не полный текст. Эта новая карточка не повышает каталог DCLP до чтения факсимиле; ARCHIVE_HOLD и LOCATOR_HOLD рукописи сохранены. Tripolitis 1970, с. 189–196, ещё не прочитана."
+   ]
+  },
+  {
+   "id": "SRC-PHOS-PAPLOND2037B-MILNE1927",
+   "title": "H. J. M. Milne, Catalogue of the Literary Papyri in the British Museum (London: Trustees, 1927), №244, с. 205–206 — OCR экземпляра Duke",
+   "url": "https://archive.org/details/catalogueofliter00brit/page/205/mode/1up",
+   "secondaryUrl": "https://archive.org/download/catalogueofliter00brit/catalogueofliter00brit_djvu.txt",
+   "type": "OCR описания и двухстрочной публикации фрагмента в издании 1927 г.; не фотография папируса и не просмотр печатного изображения",
+   "printedPages": "№244: описание с. 205, две неполные строки и примечание с. 206; дополнительно титул и Method of publication, с. xi",
+   "evidenceClass": "B1",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "RIGHTS_UNKNOWN",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "RIGHTS_HOLD"
+   ],
+   "rightsBasis": "Старая печать, издательский набор и цифровой объект Duke / Internet Archive рассматриваются отдельно. В этом проходе лицензия на воспроизведение OCR, сканов или папируса не устанавливалась; в Research только ссылка, минимальная цитата обозначения Hymn (?) и собственный пересказ. Права DCLP CC BY 3.0 на этот объект не переносятся.",
+   "supports": [
+    "№244, с. 205: Pap. 2037 B, VI–VII вв.; приобретён в 1893 г., получил номер в 1913 г.; полоска папируса 3 × 13,8 см, письмо вдоль волокон, наклонный унциал коптского типа; на обороте остатки византийского протокола. Это описание Milne, не наши измерения или палеография.",
+    "Обозначение у Milne — Hymn (?) без названия Phos Hilaron. На с. 206 напечатаны две неполные строки, после них примечание и №245 (Pap. 2037 D). Следовательно, №244 не публикует полный шестистрочный текст.",
+    "На с. xi редактор различает утраты в квадратных скобках и другие знаки; греческий OCR сильно повреждён и не позволяет удостоверить эти знаки посимвольно. Привязка отрывка к Phos Hilaron опирается также на библиографическую запись Tripolitis 1970, не на одно обозначение Hymn (?)."
+   ],
+   "limits": [
+    "Прочитан текстовый OCR титула, метода публикации и статьи №244 с границами соседних №243/245. Полная книга, печатные изображения с. 205–206 и сам папирус не просмотрены. EXACT_LOCATOR_VERIFIED относится к статье издания и её пагинации, не к буквам и знакам оригинала. OCR даёт инвентарный номер как 20378; литера B опознана через соответствие №244 в DCLP, не проверена по изображению печати.",
+    "Размер, палеографическая дата, сведения о приобретении и протоколе переданы по Milne. Дату протокола нельзя приписывать гимну; наличие текста на другой стороне само по себе не устанавливает порядок записей.",
+    "Нельзя восстанавливать шесть строк или утверждать чтения Θεόν/Θεοῦ, αἰνοῦμεν/ὑμνοῦμεν по двум повреждённым строкам этого OCR. Статья Tripolitis 1970 (с. 189–196) и критический текст Plank 2001 не прочитаны.",
+    "Доступ — чтение через fetch_page, 18.11.2026: титул, метод публикации с. xi и №244 с. 205–206, включая границы №243/245; отдельно карта страниц IA с leafNum 225/226 для с. 205/206. Файлы книги локально не приобретены, контрольные суммы и долговременное хранение не заявлены.",
+    "Повторный доступ к изображениям 18.11.2026: прямая загрузка опубликованного IA PDF из среды завершилась ошибкой TLS, адрес BookReaderImages не дал изображение (HTTP 500); локальный PDF/кадр не получен. STOP_DISCOVERY для этих маршрутов. Точный REQUEST_USER — Milne 1927, с. 205–206, сканы/фото для буквенной сверки №244; альтернатива — факсимиле именно Pap. 2037 b. Фотографический локатор на Hymnology Archive указан в досье, но снимок не просмотрен и чужое разрешение на его использование не унаследовано."
    ]
   },
   {
@@ -1445,23 +1531,29 @@
   },
   {
    "id": "SRC-PHOS-AC-ANF",
-   "title": "Apostolic Constitutions, Book VIII §§34–37 — ANF translation (Schaff), newadvent.org",
+   "title": "Apostolic Constitutions, Book VIII — James Donaldson, ANF 7 (1886), веб-редакция New Advent",
    "url": "https://www.newadvent.org/fathers/07158.htm",
-   "type": "Primary liturgical text in a public-domain English translation",
+   "type": "Первичный литургический текст в английском переводе; прочитаны отдельные разделы веб-редакции, не греческий оригинал и не печать ANF",
    "evidenceClass": "A1",
    "accessState": "PARTIAL_OBJECT",
    "locatorState": "EXACT_LOCATOR_VERIFIED",
-   "rightsState": "PUBLICATION_ELIGIBLE",
+   "rightsState": "RIGHTS_UNKNOWN",
    "publicationState": "REFERENCE",
-   "holds": [],
-   "supports": [
-    "VIII.34 prescribes the hours of prayer including evening",
-    "VIII.35 orders the evening assembly and 'the repetition of the psalm at the lighting up the lights'",
-    "VIII.36 is the deacon's bidding prayer for the evening",
-    "VIII.37 is the bishop's evening thanksgiving ('O God, who art without beginning and without end…')",
-    "Not one line of Φῶς ἱλαρόν occurs in VIII.34–37 — the Constitutions give the rite, not the text of the hymn"
+   "holds": [
+    "RIGHTS_HOLD"
    ],
-   "limits": "Read only in the NPNF English translation; the Greek was not collated. Chapters were read in the sequence VIII.34–37 and XLII–XLV, not the whole book."
+   "supports": [
+    "VIII.34 перечисляет часы молитвы, в том числе вечер; VIII.35 предписывает собрание и псалом при возжении светильников. Номер/название этого псалма и его музыкальный текст в §35 не приведены.",
+    "VIII.36 содержит просительную молитву диакона, VIII.37 — вечернее благодарение епископа, молитву преклонения и переход к утреннему чину; VIII.38 начинается отдельным утренним благодарением.",
+    "В прочитанном английском отрывке VIII.34–37 нет текста Phos Hilaron. Следовательно, ссылка именно на VIII.35 не удостоверяет его запись; это не вывод о каждом месте всех восьми книг."
+   ],
+   "limits": [
+    "По выходным данным: переводчик James Donaldson; Ante-Nicene Fathers, vol. 7, редакторы Alexander Roberts, James Donaldson и A. Cleveland Coxe; Buffalo: Christian Literature Publishing Co., 1886. Прежние обозначения Schaff/NPNF в этой карточке исправлены, не являются альтернативной редакцией.",
+    "Перечитаны целиком абзацы VIII.34–37 и пограничный VIII.38 в закреплённом HTML, строки 137–151; отдельно выходные данные, строка 358. Ранее читались также XLII–XLV, но этот новый результат ими не обосновывается. Весь текст книги VIII, печатное издание 1886 г. и критический греческий текст не сверены.",
+    "PARTIAL_OBJECT не означает автоматический EVIDENCE_HOLD для узкого вывода о прочитанном месте. RIGHTS_HOLD добавлен по неустановленной лицензии именно веб-редакции; REFERENCE сохранён."
+   ],
+   "secondaryUrl": "https://github.com/augustiniusliang/nicene-trans/blob/587532868ab43097efff5722c947170e7e744537/newadvent/fathers/07158.htm#L139-L151",
+   "rightsBasis": "Исторический текст и перевод Donaldson 1886 г. отделены от фактически прочитанной редакции New Advent / Kevin Knight. Живые страницы называют эту редактуру и copyright New Advent LLC 2026; закреплённое HTML-зеркало содержит copyright Kevin Knight 2009 и не объявлено побайтовой копией живой страницы. Лицензия на правку/HTML не установлена, печатная страница ANF не сопоставлена. В Research — ссылка и собственный пересказ; права на перепечатку веб-текста не подтверждены."
   },
   {
    "id": "SRC-PHOS-BL-ALEX",
@@ -1545,25 +1637,29 @@
   },
   {
    "id": "SRC-PHOS-AC-BOOK7",
-   "title": "Apostolic Constitutions, Book VII §§47-49 — the daily prayers (morning, evening, dinner)",
+   "title": "Apostolic Constitutions, Book VII — James Donaldson, ANF 7 (1886), веб-редакция New Advent",
    "url": "https://www.newadvent.org/fathers/07157.htm",
-   "type": "Primary liturgical text in a public-domain English translation",
+   "type": "Первичный литургический текст в английском переводе; прочитаны отдельные разделы веб-редакции, не греческий оригинал и не печать ANF",
    "evidenceClass": "A1",
    "accessState": "PARTIAL_OBJECT",
    "locatorState": "EXACT_LOCATOR_VERIFIED",
-   "rightsState": "PUBLICATION_ELIGIBLE",
+   "rightsState": "RIGHTS_UNKNOWN",
    "publicationState": "REFERENCE",
-   "holds": [],
-   "supports": [
-    "VII.47 is headed 'A Morning Prayer' and opens 'Glory be to God in the highest, and upon earth peace, good-will among men' (Luke 2:14)",
-    "It continues 'We praise You, we sing hymns to You, we bless You; we glorify You, we worship You by Your great High Priest…'",
-    "VII.48 is the evening prayer; VII.49 the prayer at dinner",
-    "So the Greek Gloria does appear in the Apostolic Constitutions — unlike Φῶς ἱλαρόν, which does not",
-    "§48 «Вечерняя молитва» (An Evening Prayer): «Αἰνεῖτε παῖδες» — «Дети, хвалите Господа, хвалите имя Господне» (Пс 112:1 LXX), затем «Σοὶ πρέπει αἶνος» — «Тебе подобает хвала… через Сына во Святом Духе» и «Νῦν ἀπολύεις» — «Ныне отпущаеши раба Твоего», то есть песнь Симеона (Лк 2:29-32)",
-    "§49 «Молитва перед трапезой» (A Prayer at Dinner): «Εὐλογητὸς εἶ» — «Благословен Ты, Господи, питающий меня от юности моей»",
-    "Ни одна строка Φῶς ἱλαρόν в §§47-49 нет: вечерняя молитва составлена из псалма и евангельской песни"
+   "holds": [
+    "RIGHTS_HOLD"
    ],
-   "limits": "Read in the NPNF English translation only; the Greek was not collated. Only VII.47–49 were read, not the whole book."
+   "supports": [
+    "VII.47 озаглавлена A Morning Prayer: славословие начинается Лк 2:14 и продолжается утренней хвалой, относимой к традиции Gloria. Это положительный результат, не тождество всех слов современного греческого славословия.",
+    "VII.48 — вечерняя молитва: призыв детям хвалить Господа, хвала Отцу через Сына во Святом Духе и песнь Симеона (Лк 2:29–32). VII.49 — молитва перед трапезой.",
+    "В прочитанных английских абзацах VII.47–49 нет текста Phos Hilaron. Греческие инципиты, употреблявшиеся в прежней карточке, не следует принимать за греческие строки, сверенные по этой английской странице."
+   ],
+   "limits": [
+    "По выходным данным: переводчик James Donaldson; Ante-Nicene Fathers, vol. 7, редакторы Alexander Roberts, James Donaldson и A. Cleveland Coxe; Buffalo: Christian Literature Publishing Co., 1886. Прежние обозначения Schaff/NPNF в этой карточке исправлены, не являются альтернативной редакцией.",
+    "Перечитаны целиком VII.47–49 в закреплённом HTML, строки 170–178, и выходные данные, строка 180; отдельно прочитаны те же разделы и выходные данные на живой странице. Печатный том ANF, греческий оригинал и вся книга VII не просмотрены.",
+    "Закреплённый HTML и живая веб-редакция — разные цифровые версии. Ни автоматическое извлечение живой страницы, ни совпадение английского инципита не служат критической греческой колляцией. REFERENCE сохранён, RIGHTS_HOLD относится к воспроизведению веб-редакции."
+   ],
+   "secondaryUrl": "https://github.com/augustiniusliang/nicene-trans/blob/587532868ab43097efff5722c947170e7e744537/newadvent/fathers/07157.htm#L170-L178",
+   "rightsBasis": "Исторический текст и перевод Donaldson 1886 г. отделены от фактически прочитанной редакции New Advent / Kevin Knight. Живые страницы называют эту редактуру и copyright New Advent LLC 2026; закреплённое HTML-зеркало содержит copyright Kevin Knight 2009 и не объявлено побайтовой копией живой страницы. Лицензия на правку/HTML не установлена, печатная страница ANF не сопоставлена. В Research — ссылка и собственный пересказ; права на перепечатку веб-текста не подтверждены."
   },
   {
    "id": "SRC-PHOS-SUBTUUM",
@@ -1733,7 +1829,6 @@
    "publicationState": "REFERENCE",
    "holds": [
     "RIGHTS_HOLD",
-    "LOCATOR_HOLD",
     "ARCHIVE_HOLD"
    ],
    "supports": [
@@ -1743,7 +1838,101 @@
     "Авторство: свидетельства склоняются к Никите Ремесианскому, но часть современных исследователей считает гимн анонимным",
     "Кёлер (1958) полагал, что Te Deum в исходном виде принадлежал к заутренней мессе Великой субботы, завершавшей чин крещения-миропомазания"
    ],
-   "limits": "В этом источнике есть логически несостоятельное утверждение: будто гимн «уверенно датируется концом IV или началом V в., потому что включён в уставы Цезария и Бенедикта». Эти уставы VI в. и доказывают лишь существование гимна к VI в. Текст по вторичной передаче Liber Usualis, не по изданию (`LOCATOR_HOLD`); рукописи не видел (`ARCHIVE_HOLD`)."
+   "limits": "В этом источнике есть логически несостоятельное утверждение: будто гимн «уверенно датируется концом IV или началом V в., потому что включён в уставы Цезария и Бенедикта». Эти уставы VI в. и доказывают лишь существование гимна к VI в. Для латинского текста это вторичная передача. Страницы издания 1961 г. теперь проверены отдельно (SRC-PHOS-TEDEUM-LU1961), не по этой статье. Бангорское окончание прочитано отдельно по изданиям (SRC-PHOS-BANGOR-WARREN1895, SRC-PHOS-BANGOR-PL72); сами рукописи не просмотрены (ARCHIVE_HOLD)."
+  },
+  {
+   "id": "SRC-PHOS-TEDEUM-LU1961",
+   "title": "Te Deum в Liber Usualis (Desclée, 1961), приложение I, с. 1832–1837",
+   "url": "https://github.com/DDMAL/MEI3to5/blob/c88a43d826805fbd223230a74b821a2ac0d01696/IIIF/1561%20-%202340/liber_2078_scaled.jpg",
+   "secondaryUrl": "https://github.com/DDMAL/MEI3to5/blob/c88a43d826805fbd223230a74b821a2ac0d01696/IIIF/1561%20-%202340/liber_2083.jpg",
+   "type": "Издание бенедиктинцев Солема с английскими рубриками; сканы страниц в DDMAL/MEI3to5",
+   "printedPages": "Оглавление vj; Hymn of Thanksgiving: Solemn Tone, с. 1832–1834; Simple Tone, с. 1834–1837",
+   "evidenceClass": "A1",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "PERMISSION_REQUIRED",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "RIGHTS_HOLD"
+   ],
+   "supports": [
+    "Под нотами обеих версий проверена последовательность латинского текста, включая тройное Sanctus и заключительные прошения от Salvum fac до In te Domine speravi. В печати нет сквозной нумерации 1–29.",
+    "После benedic в Solemn Tone напечатано hereditati (с. 1834), в Simple Tone — haereditati (с. 1836); это орфография внутри одного издания."
+   ],
+   "limits": [
+    "Прочитаны титул, оборот, страница оглавления и шесть страниц приложения, не вся книга. Эта редакция не устанавливает исходный напев, время присоединения прошений, авторство или чтения Бангорского антифонария.",
+    "Оборот титула: © 1961 Desclée & Co., All rights reserved. Разрешения на перепечатку нот, страниц или сканов нет. Карта кадров и контрольные суммы — в досье PHOS-005, §1."
+   ]
+  },
+  {
+   "id": "SRC-PHOS-BANGOR-WARREN1895",
+   "title": "F. E. Warren (ред.), The Antiphonary of Bangor, Part II (HBS X, 1895): Te Deum [7] и антифоны при Gloria [116]",
+   "url": "https://github.com/latin-ocr/antiphonarybang00ambrgoog/blob/a65f987f429d456bdf381e0d42139b1ff0c991ed/antiphonarybang00ambrgoog_0056.txt#L45-L68",
+   "secondaryUrl": "https://github.com/latin-ocr/antiphonarybang00ambrgoog/blob/a65f987f429d456bdf381e0d42139b1ff0c991ed/antiphonarybang00ambrgoog_0073.txt#L64-L117",
+   "type": "Исправленный текст и примечания издателя; прочитаны OCR отдельных страниц, не их снимки и не факсимиле рукописи",
+   "printedPages": "[7] Hymnus in die Dominica, с. 10, ст. 1–26; примечания с. 43–44; для сопоставления с. 31, [116] и начало [117]",
+   "evidenceClass": "B1",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "RIGHTS_UNKNOWN",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "RIGHTS_HOLD"
+   ],
+   "supports": [
+    "В [7] ст. 22–26 идут Salvum fac, Et rege eos, Per singulos dies, Et laudamus … Amen, Fiat, Domine, misericordia tua … speravimus in te. Дальше — [8] Sancti venite. Нумерация издательская.",
+    "На с. 44 объяснения Amen в ст. 25 предложены как альтернативы. На с. 31 Dignare и Miserere nobis входят в иной ряд при Gloria [116], In te, Domine, speravi открывает антифон в [117]; это не продолжение [7]."
+   ],
+   "limits": [
+    "Уоррен различает textus codicis с факсимиле в части I (1893) и исправленный текст части II. В OCR искажены отдельные буквы и пометы листов. Точный локатор относится к изданию; дипломатическая запись по нему невозможна.",
+    "Не установлены время и путь присоединения прошений, автор или мелодия. Разрешение на воспроизведение цифровых страниц не проверено; в репозитории только ссылки и результат чтения."
+   ]
+  },
+  {
+   "id": "SRC-PHOS-BANGOR-PL72",
+   "title": "Antiphonarium monasterii Benchorensis, Hymnum in die Dominico — PL 72 (1849), электронный текст Leipzig / OpenGreekAndLatin",
+   "url": "https://github.com/OpenGreekAndLatin/patrologia_latina-dev/blob/8c651f859f821f0868755596f1a513946ca25350/volumes/PL72/PL72.xml#L28914-L28949",
+   "secondaryUrl": "https://github.com/OpenGreekAndLatin/patrologia_latina-dev/blob/8c651f859f821f0868755596f1a513946ca25350/volumes/PL72/PL72.xml#L29-L39",
+   "type": "Цифровая передача более раннего издания того же Бангорского списка; исправленный OCR в TEI, не изображение",
+   "printedPages": "PL 72, участок между метками pb 587 и 589; PL72.xml, строки 28914–28949",
+   "evidenceClass": "B1",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "PUBLICATION_ELIGIBLE",
+   "publicationState": "REFERENCE",
+   "holds": [],
+   "supports": [
+    "В размеченном тексте последовательность от Salvum fac до Amen и следующего за ним Fiat совпадает с [7] у Уоррена; после Fiat — заглавие другого гимна и Sancti venite."
+   ],
+   "limits": [
+    "Сверен порядок формул и граница статьи в XML, не печатная колонка или буква кодекса. PL и Уоррен не дают двух независимых рукописных свидетелей.",
+    "CC BY-SA 4.0 относится к электронному тексту (Jouve, University of Leipzig, 2015): при повторном использовании — атрибуция и соблюдение условий лицензии. Это не лицензия на рукопись, фото или ноты и не решение о выпуске трека."
+   ]
+  },
+  {
+   "id": "SRC-PHOS-BANGOR-AMBROSIANA",
+   "title": "Бангорский антифонарий, Milano, Biblioteca Ambrosiana, C 5 inf. — MIrA 115 и институциональный IIIF-манифест",
+   "url": "https://github.com/padraicmoran/MIrA/blob/76438fe67754deb2dab4fed4e956e4f8f983787b/data/mss_mira/115.xml#L3-L24",
+   "secondaryUrl": "https://digitallibrary.unicatt.it/veneranda/data/public/manifests/0b/02/da/82/80/05/1c/10/0b02da8280051c10.json",
+   "type": "Рукопись, идентифицированная по научному каталогу; каталог содержит ссылку на манифест IIIF, не текст гимна",
+   "evidenceClass": "B1",
+   "accessState": "CATALOG_ONLY",
+   "locatorState": "COARSE_LOCATOR_ONLY",
+   "rightsState": "RIGHTS_UNKNOWN",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "ARCHIVE_HOLD",
+    "LOCATOR_HOLD",
+    "RIGHTS_HOLD"
+   ],
+   "supports": [
+    "MIrA: шифр C 5 inf., Bangor (Ирландия), 680–691, последующий провенанс — Боббио. TM 66408 различает Warren I (HBS IV, 1893) и II (HBS X, 1895).",
+    "18.11.2026 в самом манифесте прочитаны подписи 029_C5inf_c.10r и 030_C5inf_c.10v, canvas c0902da828003efca и c0902da828003efcb. Это проверка идентификаторов кадров, не чтение букв на них."
+   ],
+   "limits": [
+    "Для шифра и датировки прочитана MIrA; для идентификации кадров — нужный участок институционального манифеста. Сами изображения л. 10r–v и факсимиле Warren I не прочитаны. Точный локатор кадров не равен проверенному локатору слов; ARCHIVE_HOLD и LOCATOR_HOLD по тексту рукописи сохранены.",
+    "Манифест сообщает Printable: No, Restriction of use: No Downloadable. Кадры не скачаны для хранения или публикации. CC BY-NC-SA 4.0 в TEI MIrA относится к каталогу, не лицензирует фото Амброзианы; RIGHTS_HOLD сохранён."
+   ]
   },
   {
    "id": "SRC-PHOS-TEDEUM-NCE",
@@ -1788,7 +1977,7 @@
     "VIII книга Постановлений и литургия Иакова дают Трисвятое (Ἅγιος, ἅγιος, ἅγιος); в другой части той же литургии — Τρισάγιος ὕμνος",
     "Постановления датируются IV или V веком, вероятнее IV; по Брайтману, составлены в Антиохии или её окрестностях"
    ],
-   "limits": "Страница открывалась, но целиком не прочитана: перечень гимнов получен из развёрнутой поисковой выдачи, а не с самой страницы. Записано как LINK_ONLY намеренно. Фундамент отрицательного вывода — не этот источник, а собственное чтение ANF (книги VII и VIII); Мессенджер служит независимым подтверждением. Уровень C, 1942 г.; греческий текст Постановлений не сличался."
+   "limits": "Страница целиком не прочитана: перечень гимнов получен из развёрнутой поисковой выдачи, не из собственного чтения главы. LINK_ONLY и класс C сохранены. Это направление для чтения Messenger, не независимая проверка греческого текста или истории ошибки. Узкий отрицательный результат по VII.47–49 и VIII.34–37 опирается на отдельное чтение Donaldson / New Advent; прежняя формулировка «независимое подтверждение» этим источником отозвана."
   },
   {
    "id": "SRC-PHOS-BASIL-DATE",
@@ -1856,7 +2045,8 @@
     "Заголовок рукописной традиции: ΥΜΝΟΣ ΤΟΥ ΣΩΤΗΡΟΣ ΧΡΙΣΤΟΥ ΤΟΥ ΑΓΙΟΥ ΚΛΗΜΕΝΤΟΣ",
     "Текст дошёл целиком, без лакун"
    ],
-   "limits": "Не указано, по какому критическому изданию набран греческий текст; с Марковичем и ван Винденом 2002 не сличён. Параллельный английский перевод расходится с греческим: «wing of wandering birds» при греческом ἀπλανῶν («неблуждающих»); брать его за образец нельзя."
+   "limits": "Не указано, по какому критическому изданию набран греческий текст; с Марковичем и ван Винденом 2002 не сличён. Параллельный английский перевод расходится с греческим: «wing of wandering birds» при греческом ἀπλανῶν («неблуждающих»); брать его за образец нельзя.",
+   "rightsBasis": "Древнегреческий гимн не тождествен современной двуязычной странице. Английский перевод, редактуру и вёрстку Catholic Library не переносить. Для греческих строк есть отдельно идентифицированный текст Штелина 1905 г. в First1KGreek (SRC-PHOS-CLEM-FIRST1K-PAED, CC BY-SA 4.0 для TEI). Его условия не распространяются на Catholic Library."
   },
   {
    "id": "SRC-PHOS-CLEM-MESSENGER-VI",
@@ -1942,7 +2132,8 @@
     "Фрагмент Кая у Евсевия: «all the psalms and odes written by faithful brethren from the beginning» воспевают Христа, Слово Божие, как Бога",
     "Третий гимн — вечерний, «при возжении светильников» (φῶς ἱλαρὸν ἁγίας δόξης) — «holds its place to this day in the services of the Greek rite»"
    ],
-   "limits": "Страница прочитана целиком (оба фрагмента); статья 1911 г., то есть уровень вторичного обзора столетней давности. Филон, Тертуллиан и Кай цитируются внутри статьи, не по сочинениям; греческий текст «Педагога» не сличался."
+   "limits": "Страница прочитана целиком (оба фрагмента); статья 1911 г., то есть уровень вторичного обзора столетней давности. Филон, Тертуллиан и Кай цитируются внутри статьи, не по сочинениям; греческий текст «Педагога» не сличался.",
+   "rightsBasis": "Основание для обращения к старому тексту — 11-е печатное издание, т. 14, с. 182 (1911). Возраст статьи не является лицензией на файл DjVu, вычитку или оформление Wikisource. Для цитаты из печати указать редакцию и страницу; условия переноса текста или изображения с сайта отдельно не проверены."
   },
   {
    "id": "SRC-PHOS-CLEM-ECW-BAPTIZED",
@@ -2072,7 +2263,8 @@
     "Три английских перевода: У. Уилсон (Ante-Nicene Christian Library, т. 4, Clement of Alexandria, 1, 343 сл.); миссис Чарльз (Christian Life in Song, с. 44 сл.); Сэвилл (Lyra Sacra, Лондон, 1865, с. 5; принят Шаффом в Christ in Song, с. 675)",
     "Отсылка за немецкими переводами и разбором содержания и строения гимна: проф. Пайпер, Evangelischer Kalender за 1868 г., с. 17–39"
    ],
-   "limits": "Статья прочитана целиком (один фрагмент). Источник XIX века: утверждение «древнейший сохранившийся христианский гимн» дано без критерия и не проверялось. Оцифровка с дефектами (пропущенные придыхания; «18605» вместо 1865). Заглавие набрано с нестандартной сигмой."
+   "limits": "Статья прочитана целиком (один фрагмент). Источник XIX века: утверждение «древнейший сохранившийся христианский гимн» дано без критерия и не проверялось. Оцифровка с дефектами (пропущенные придыхания; «18605» вместо 1865). Заглавие набрано с нестандартной сигмой.",
+   "rightsBasis": "Печатная статья XIX века и веб-перепечатка — разные объекты. Ссылаться на статью; для дословной цитаты сверить печатную страницу, а не воспроизводить набор сайта с ошибкой «18605». Ни скан, ни редакторские дополнения сайта для выпуска не выбраны."
   },
   {
    "id": "SRC-PHOS-CLEM-APOSTOLIKI",
@@ -2408,9 +2600,9 @@
   },
   {
    "id": "SRC-PHOS-SERIES-JUSTIN-APOL-I",
-   "title": "Iustinus Martyr, Apologia I — греческий текст в открытом корпусе First1KGreek (tlg0645.tlg001; издание: Gerhard Rauschen, S. Iustini Apologiae Duae, Florilegium Patristicum; лицензия корпуса CC BY-SA 4.0)",
-   "url": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/master/data/tlg0645/tlg001/tlg0645.tlg001.1st1K-grc1.xml",
-   "type": "Размеченный греческий текст в открытом корпусе; издание — учебная серия текстов, не критическое",
+   "title": "Iustinus Martyr, Apologia I — First1KGreek по Gerhard Rauschen, S. Iustini Apologiae Duae, Bonn: Petri Hanstein, 1911 (Florilegium Patristicum 2)",
+   "url": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg0645/tlg001/tlg0645.tlg001.1st1K-grc1.xml#L1695-L1774",
+   "type": "Размеченный греческий текст First1KGreek / Perseus, не изображение печати; в sourceDesc указано издание Rauschen 1911 г. Аппарат и примечания в данном XML не закодированы; это не вывод об их отсутствии в печатном томе.",
    "evidenceClass": "B1",
    "accessState": "PARTIAL_OBJECT",
    "locatorState": "EXACT_LOCATOR_VERIFIED",
@@ -2418,17 +2610,23 @@
    "publicationState": "REFERENCE",
    "holds": [],
    "supports": [
-    "Гл. 67, собрание в день солнца: «τῇ τοῦ ἡλίου λεγομένῃ ἡμέρᾳ … ἐπὶ τὸ αὐτὸ συνέλευσις γίνεται, καὶ τὰ ἀπομνημονεύματα τῶν ἀποστόλων ἢ τὰ συγγράμματα τῶν προφητῶν ἀναγινώσκεται, μέχρις ἐγχωρεῖ»; затем проповедь предстоятеля, «ἔπειτα ἀνιστάμεθα κοινῇ πάντες καὶ εὐχὰς πέμπομεν», приношение, молитва и благодарение предстоятеля, «καὶ ὁ λαὸς ἐπευφημεῖ λέγων τὸ Ἀμήν», раздача и посылание отсутствующим, добровольный сбор",
-    "Гл. 67, оговорка: «ὁ προεστὼς εὐχὰς ὁμοίως καὶ εὐχαριστίας, ὅση δύναμις αὐτῷ, ἀναπέμπει» — **по мере силы своей**",
-    "Гл. 65: при крещении предстоятель «αἶνον καὶ δόξαν τῷ πατρὶ τῶν ὅλων … ἀναπέμπει καὶ εὐχαριστίαν … ἐπὶ πολὺ ποιεῖται»",
-    "**Пения в описании собрания нет.** Подсчёт по всему файлу (68 глав, ~14 400 слов): ὕμνος — 1 раз (гл. 13, не в собрании); ψαλμός, ᾠδή, ᾄδω, μέλος — ни разу; εὐχαριστ- — 10; ἐπευφημέω — 3",
-    "Гл. 13, единственное ὕμνος: «ἐκείνῳ δὲ εὐχαρίστους ὄντας διὰ λόγου πομπὰς καὶ ὕμνους πέμπειν…»; там же «λόγῳ εὐχῆς καὶ εὐχαριστίας … ὅση δύναμις, αἰνοῦντες»",
-    "Гл. 67, объяснение дня: «ἐπειδὴ πρώτη ἐστὶν ἡμέρα, ἐν ᾗ ὁ θεὸς … κόσμον ἐποίησε, καὶ Ἰησοῦς Χριστὸς … τῇ αὐτῇ ἡμέρᾳ ἐκ νεκρῶν ἀνέστη»",
-    "Гл. 1: обращение к Антонину Пию с сыновьями, сенату и народу Рима; автор: «Ἰουστῖνος Πρίσκου τοῦ Βακχείου, τῶν ἀπὸ Φλαουΐας Νέας πόλεως τῆς Συρίας Παλαιστίνης»",
-    "Гл. 46: внутренний якорь датировки — «πρὸ ἐτῶν ἑκατὸν πεκτήκοντα [sic] γεγεννῆσθαι τὸν Χριστὸν λέγειν ἡμᾶς ἐπὶ Κυρηνίου»; гл. 34 — та же перепись при Квиринии",
-    "Все греческие цитаты в досье сверены с файлом программой (24 фрагмента, совпадение дословное)"
+    "I.67 описывает чтение апостольских воспоминаний или пророков, наставление, общую молитву стоя, приношение, молитвы и благодарения предстоятеля, ответ народа Аминь, раздачу и помощь нуждающимся; день прямо назван днём солнца и связан с воскресением Христа.",
+    "I.67: предстоятель возсылает молитвы и благодарения ὅση δύναμις αὐτῷ — по мере сил; I.65: благодарение совершается ἐπὶ πολύ — пространно. В этих словах не сказано, пользуется ли он книгой, заученной формой, собственным составлением или сочетанием этих способов.",
+    "I.13 употребляет ὅση δύναμις о христианской хвале вообще, а не только о предстоятеле; там же есть ὕμνους. Это не техническое определение импровизации и не полный текст гимна.",
+    "I.66 передаёт слова установления из апостольских воспоминаний, называемых Евангелиями, о теле, крови и воспоминании. Поэтому «Юстин не приводит ни строки» слишком широко. Полной молитвы предстоятеля в I.65–67 нет; приведённые в I.66 слова принадлежат евангельскому преданию. Как именно эти слова использовались в молитве предстоятеля, здесь не установлено.",
+    "В I.65 и I.67 Аминь назван ответом народа; способ его произнесения или распева не описан. Отсутствие отдельного указания на пение не удостоверяет, что собрание было без пения.",
+    "Автоматический поиск форм в теле закреплённого XML, не лемматизация: после снятия диакритики и приведения конечной сигмы — ὕμνους 1 раз (I.13), начало слова εὐχαριστ- 12 раз (I.13, 65, 66, 67), ἐπευφημ- 3 раза (I.65 и 67). Прежние 10 для εὐχαριστ- не воспроизводятся как число всех форм с этой основой.",
+    "Историческое чтение 27.10.2026 также включало I.1, 34 и 46: адресат и самопредставление Юстина, перепись при Квиринии и внутреннее числовое указание. Их датировочная интерпретация этим новым проходом не пересматривалась."
    ],
-   "limits": "Издание — Раушен, Florilegium Patristicum: учебная серия, не критическое издание (не Маркович, не PG 6). В тексте по меньшей мере две явные опечатки: «πεκτήκοντα» вместо πεντήκοντα (гл. 46) и «Φιλισόφῳ» вместо φιλοσόφῳ (гл. 1). Подсчёт слов сделан по этому файлу: если издание что-то сокращало, счёт неполон (по объёму текст цел — 68 глав, ~14 400 слов)."
+   "limits": [
+    "18.11.2026 перечитаны целиком I.13 и I.65–68 (включая помещённое в I.68 письмо Адриана), заголовок и выходные данные XML. Пограничные абзацы I.12/14/64 использованы только как контекст. Весь файл получен и проверен по байтам; автоматический поиск форм по всем 68 главам не есть чтение всей Апологии. PARTIAL_OBJECT сохранён.",
+    "Источник по собственному sourceDesc — Rauschen 1911, не просто издание без года. Из названия серии нельзя вывести прежнее «не критическое издание». Печатный том, его аппарат и рукописные варианты не просмотрены. Цифровые опечатки Φιλισόφῳ, πεκτήκοντα и Aplogiae в библиографическом заглавии не объявлены ошибками исторической печати.",
+    "Сочинение молитвы каждый раз заново, её целиком небиблейский состав, отсутствие письменной формы и отсутствие сохранившихся текстов вообще из этих отрывков не установлены. Но и наличие полного фиксированного формуляра этим проходом не доказывается. Узкий вывод относится к тому, что Юстин приводит и чего не приводит здесь.",
+    "Прежняя общая отметка о программной сверке 24 цитат — запись прохода 27.10.2026, не результат новой полной колляции. Теперь отдельно проверены ключевые формулировки I.13/65–67 и зафиксирована версия файла. Повторные общие поиски истории литургии не проводились; научный комментарий к спорной формуле остаётся отдельным непрочитанным объектом.",
+    "Объект получен из GitHub во временный локальный кэш: 195802 байта, Git blob 6341ccec424d29d3761bd07c14fdcf6dfaffeac3, SHA-256 d89772ab0d12a0a293c299652ddf4a5d69ccbd6cced5c4f9181ae887bde074bf. Долговременное сохранение в Drive не заявляется. Предварительный поиск по названиям Rauschen / Юстин / Иустин / Apologiae / tlg0645 в подключённом Drive дал 0 файлов, не доказательство отсутствия любой книги о Юстине."
+   ],
+   "secondaryUrl": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg0645/tlg001/tlg0645.tlg001.1st1K-grc1.xml#L4-L54",
+   "rightsBasis": "В publicationStmt этого XML, строки 11–17, указаны Trustees of Tufts University / Perseus Project и CC BY-SA 4.0. PUBLICATION_ELIGIBLE относится к этому цифровому тексту при атрибуции, обозначении изменений и соблюдении ShareAlike, не к изображениям печати или рукописей и не к выпуску трека; publicationState остаётся REFERENCE."
   },
   {
    "id": "SRC-PHOS-SERIES-JUSTIN-DATE-ECW",
@@ -2840,7 +3038,29 @@
     "**8.2:** Сын «was conceived by the Holy Spirit in the womb of the Virgin Mary… so that two whole, perfect, and distinct natures were inseparably joined together in one person… which person is very God and very man, yet one Christ, the only mediator between God and man». Мария названа ровно в этом месте и ровно в этом смысле.",
     "**22.1:** acceptable worship «is instituted by himself, and so limited by his own revealed will, that he may not be worshipped according to the imagination and devices of men» — регулятивное начало богослужения; практика не выводится из благочестия."
    ],
-   "limits": "Читался английский текст исповедания 1689 г.; оно не естьSymbol веры канала — владелец назвал свою принадлежность устно, документ взят как классическая формула баптистско-реформатской веры."
+   "limits": "Читался английский текст исповедания 1689 г.; это не подписанный каналом символ веры — владелец назвал свою принадлежность устно, документ взят как классическая формула баптистско-реформатской веры.",
+   "rightsBasis": "Произведение XVII века не даёт автоматического права на английскую веб-редакцию Reformed Reader. Для VIII.9 и XXII.2 можно вместо неё ссылаться на издание 1677 г. в наборе TCP (SRC-CONF-1677-TCP); указывать именно 1677 г. Лицензия TCP не относится к сайту, его редактуре или фото страниц."
+  },
+  {
+   "id": "SRC-CONF-1677-TCP",
+   "title": "A Confession of Faith (1677), VIII.9 и XXII.2 — EEBO-TCP A34255, Wing C5794, ESTC R25352",
+   "url": "https://github.com/textcreationpartnership/A34255/blob/327b766aed8cdde720f73d6ac9c9db1c60e46e0d/A34255.xml#L475-L483",
+   "secondaryUrl": "https://github.com/textcreationpartnership/A34255/blob/327b766aed8cdde720f73d6ac9c9db1c60e46e0d/A34255.xml#L323-L328",
+   "type": "Первичный исповедальный документ в транскрипции экземпляра Union Theological Seminary Library (Нью-Йорк), EEBO image set 42012; не факсимиле",
+   "printedPages": "VIII.9 — с. 34 (tcp:42012:25); XXII.2 — с. 74 (tcp:42012:45)",
+   "evidenceClass": "A1",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "PUBLICATION_ELIGIBLE",
+   "rightsBasis": "В A34255.xml, строки 17–25, TCP прямо относит CC0 1.0 к своей клавиатурной транскрипции и кодировке; waiver исключает изображения страниц и приложения.",
+   "publicationState": "REFERENCE",
+   "holds": [],
+   "supports": [
+    "В издании 1677 г. VIII.9 относит служение посредника только ко Христу и запрещает переносить его даже отчасти; XXII.2 относит богопочитание к Богу одному, не к ангелам, святым или иной твари, и называет Христа единственным посредником."
+   ],
+   "limits": [
+    "Проверены выходные данные, лицензия и указанные параграфы с соседним текстом. Это не просмотр исторических страниц или свидетельство подписания в 1689 г. Современная веб-редакция не коллирована целиком с 1677 г.; в TCP в XXII.2 набрано wihtout. При цитировании назвать издание и не выдавать нормализацию за его буквальное чтение."
+   ]
   },
   {
    "id": "SRC-CONF-BFM-2000",
@@ -2909,7 +3129,8 @@
     "**Без мощей [00:52:38–00:53:43]:** Мария — не мученица и не оставила останков, поэтому «a shrine was not as important to the emergence of the cult of the virgin… her veneration may have initially emerged in the absence of a specific cult center». Первые центры — место Рождества между Иерусалимом и Вифлеемом и гробница в Гефсимании.",
     "**Предостережение протестантам [00:26:24; 00:30:54–00:31:19]:** «Protestant writers have often emphasized the influence of ancient goddess traditions. In order to make Marian devotion appear as something alien to the Christian tradition». И Кэмерон: «no religious development of such importance can be explained in simple or monocausal terms. Pagan syncretism may have played a part, but in my view it was a minor one»."
    ],
-   "limits": "Прочитана стенограмма публичной лекции целиком (8 чанков, с отметками времени), а не книга 2016 г.: лекция — популярное изложение, без аппарата. Датировки папируса Шумейкер держится ранней — вопреки Фёрстеру, де Брёйну, Эффенбергеру и Михайко; это меньшинство, и оно названо. Гипотезу о «неправославных» истоках культа автор сам дважды оговаривает как гипотезу."
+   "limits": "Прочитана стенограмма публичной лекции целиком (8 чанков, с отметками времени), а не книга 2016 г.: лекция — популярное изложение, без аппарата. Датировки папируса Шумейкер держится ранней — вопреки Фёрстеру, де Брёйну, Эффенбергеру и Михайко; это меньшинство, и оно названо. Гипотезу о «неправославных» истоках культа автор сам дважды оговаривает как гипотезу.",
+   "rightsBasis": "Современная стенограмма (University of Portland, 31.01.2017); разрешения на перепечатку PDF или текста нет в деле. Решение для этой работы: ссылка и изложение аргумента своими словами с атрибуцией, без воспроизведения стенограммы. Книга Yale 2016 не была прочитана вместо неё."
   },
   {
    "id": "SRC-PHOS-FULTON-BROWN-2017",
@@ -2935,7 +3156,7 @@
   },
   {
    "id": "SRC-PHOS-EPIPHANIUS-PANARION-78",
-   "title": "Епифаний Саламинский, «Панарион», гл. 78 (против коллиридиан) — греческий текст по Migne PG 42, стб. 736–738, набранный и переведённый Eric Sowell (2012)",
+   "title": "Епифаний Саламинский, «Панарион», гл. 78 (против антидикомариан) — греческий текст по Migne PG 42, стб. 736–738, набранный и переведённый Eric Sowell (2012)",
    "url": "http://ericsowell.com/blog/2012/2/6/mary-in-epiphanius-panarion-78",
    "type": "Первичный текст: древнейшее прямое обличение почитания Марии; греческий читался мной по набранному тексту, перевод сверен",
    "evidenceClass": "A1",
@@ -2973,7 +3194,8 @@
     "Даты: Епифаний 315–403, «Панарион» 374–377; движение коллиридиан датируется 350–450.",
     "Отдельно — две крайности IV века: чрезмерное возвеличивание Марии (коллиридиане) и её уничижение (антидикомариане)."
    ],
-   "limits": "Полемический католический источник: он приводит Епифания как обличителя идолопоклонства, но сам чтит Марию и спорит с протестантами. Цитаты с локаторами сверены с греческим текстом (см. SRC-PHOS-EPIPHANIUS-PANARION-78) и совпали по смыслу; перевод Williams не открывался."
+   "limits": "Полемический католический источник: он приводит Епифания как обличителя идолопоклонства, но сам чтит Марию и спорит с протестантами. С греческим набором Sowell (PG 42, 736–738) сопоставлено суждение о пределах чести, приводимое для 78:23. Это набор фрагмента гл. 78, не проверка всех ссылок Madrid. Для гл. 79 Madrid приводит 79:1, 4, а Boyce указывает 79.7.5 для сходной формулы; места не отождествлены по печатному тексту. GCS 37 и сам перевод Williams здесь не прочитаны.",
+   "rightsBasis": "Статья Patrick Madrid (1994) и цитируемый ею английский перевод Williams — не древний греческий текст. Решение: ссылка на статью для навигации; в продукт не переносить ни прозу Madrid, ни его подборку чужих цитат. Наличие греческого отрывка у Sowell не лицензирует перевод."
   },
   {
    "id": "SRC-PHOS-SHOEMAKER-2008-KOLLYRIDIANS",

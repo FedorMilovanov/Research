@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "catalogId": "SUNO-HYMNS-TRACK-CATALOG-V1",
-  "asOf": "2026-11-03",
+  "asOf": "2026-11-18",
   "scope": "Project-local inventory based on conversation records; not an exhaustive scan of the owner's computer, local storage or public channels.",
   "stateBoundary": "Production state and public publication status are separate. This catalog does not replace the root Research evidence policy.",
   "statusVocabulary": {
@@ -43,7 +43,7 @@
       "structure": {
         "stanzas": 8,
         "linesPerStanza": 8,
-        "source": "1676 print, printed pp. 131-134, verified line by line in the fourth pass"
+        "source": "DBNL diplomatic transcription of the 1676 edition, printed pp. 131-134; no page-image check"
       },
       "productionState": "ASSETS_PREPARED",
       "publicPublicationStatus": "UNKNOWN_NOT_VERIFIED",

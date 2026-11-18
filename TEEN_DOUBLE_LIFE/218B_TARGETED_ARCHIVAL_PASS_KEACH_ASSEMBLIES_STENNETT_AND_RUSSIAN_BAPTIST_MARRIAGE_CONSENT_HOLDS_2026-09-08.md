@@ -7,8 +7,9 @@
 
 **Later status note (2026-11-15, appended; the dated record below is otherwise left as written):** the §5 Stennett HOLD has since been **closed by direct primary-page inspection** — 1783 London first edition, printed p. 162, `VERIFIED_PRIMARY`. See §5 (updated in place) and the verification card in `218`, §4.1.
 
----
+**18 November 2026:** §4 now identifies the exact text of the 1697 Horsley-down marriage article, not an Assembly rule. §6.E locates an early local parental-consent clause. The unresolved Russian claim below concerns a *universal adult* rule, not the existence of any consent language.
 
+---
 
 ## 1. Executive verdict
 
@@ -145,6 +146,17 @@ Keach uses marriage/consent language analogically for union with Christ, stressi
 This demonstrates that Keach can reason with marriage and consent as categories.
 
 It is **not** evidence for a civil/domestic parental-consent rule.
+
+## Horsley-down, article XXXVI: the marriage provision itself (18 November 2026)
+
+This is a **local confession**, not General Assembly minutes. The [attestation in *The Articles of the Faith*](https://github.com/textcreationpartnership/A47381/blob/183f0bfa715da186641dc0d718fcecb189babfdf/A47381.xml#L150-L159) dates the act to **10 August 1697** and says that the subscribers testify on the congregation’s behalf; Benjamin Keach signs as pastor. The complete article between XXXV and XXXVII was read in both TCP objects:
+
+| Object (Union Theological Seminary Library, New York) | Exact locator in the transcription |
+|---|---|
+| *The Articles of the Faith*, London, 1697; Wing K46, ESTC R10175; **A47381** (79,094 bytes; SHA-256 `5f5dedb831f5c482a7ee660ed91c009433436173e87c90c754a56973485ae445`) | [XXXVI, “Of Marriages,” p. 35, `tcp:61805:22`](https://github.com/textcreationpartnership/A47381/blob/183f0bfa715da186641dc0d718fcecb189babfdf/A47381.xml#L660-L675) |
+| *A Short Confession of Faith*, [London, 1697?]; Wing K86, ESTC R24038; **A47606** (75,769 bytes; SHA-256 `e70ca69b6cf10d8239dd2ce80321069d1630000c468bb2c17226d68a0f2a0bbc`) | [Inner Horsley-down title dated 1697](https://github.com/textcreationpartnership/A47606/blob/b93bcde7c33c3b20c6e2d84725bb1350d392d8d5/A47606.xml#L148-L156); [XXXVI, p. 35, `tcp:40608:23`](https://github.com/textcreationpartnership/A47606/blob/b93bcde7c33c3b20c6e2d84725bb1350d392d8d5/A47606.xml#L581-L595) |
+
+The article affirms marriage between one man and one woman, prohibits simultaneous wives, calls believers to marry **in the Lord** (explained as marrying a believer or godly person), and expressly allows ministers to marry. Neither rendering of **this article** mentions parents, permission or an age threshold. The two TCP records transmit the same congregation’s article, not two independent Baptist decisions. This establishes what Keach’s church put in its marriage article; it does **not** establish that Keach rejected parental counsel or that every competent adult required permission. No page images or 1690/1691 Assembly proceedings were read in this check. The strong Keach and Assembly `LOCATOR_HOLD`s below remain. The TCP headers license the encoded texts under CC0, not images of the originals.
 
 ## Previously searched Keach corpus
 
@@ -292,6 +304,16 @@ The latest broad term search did not locate an exact pre-1917 adult parental-con
 
 This archive is now a much better future search surface than image-only manual scans.
 
+## E. Article VIII of the southern Russian Brotherhood rules (checked 2026-11-18)
+
+A local rule does name parental consent. In Aleksii (Dorodnitsyn), [*Южно-русский необаптизм, известный под именем штунды*](https://azbyka.ru/otechnik/Aleksij_Dorodnicyn/yuzhno-russkij-neobaptizm-izvestnyj-pod-imenem-shtundy/) (1903), ch. VI, the editor identifies the «Правила вероисповедания новообращенного русского братства» with the papers found at Mikhail Ratushny’s (report of 11 February 1873, № 54). [Local Azbyka text, lines 695–699 and 721–723](../БАПТИСТЫ%20РОССИИ/BOOK_RESEARCH/raw-sources/dorodnitsyn-yuzhno-russkij-neobaptizm-azbyka.txt#L695-L723). Article VIII, «О браке», ends:
+
+> Обряд бракосочетания совершается согласием родителей под благословением церкви и рукоположением духовного наставника.
+
+The wording is the Brotherhood’s rule **as reproduced by a polemical editor**, read in an electronic transcription of the 1903 work. It prescribes parental consent for the rite alongside church blessing and the minister’s laying on of hands. It does not report what happened in any particular marriage. It names parents, not the father alone, and specifies neither an age nor what happens if consent is refused.
+
+**Separate identity check:** the [1908 *Материалы*, doc. 301, printed pp. 477–482; June page-read excerpts, lines 6–24](../БАПТИСТЫ%20РОССИИ/BOOK_RESEARCH/raw-sources/dorodnitsyn-materialy-1908-doc301-307-323-excerpts-2026-06-19.txt#L6-L24) record the title, heading VIII and a colophon dated **8 October 1871** in the name of Ratushny as **scribe**, not proven author. Those excerpts do **not** transcribe the marriage clause. The 1908 volume is not a second independent reading of its wording here; doc. 307 is a different work. Compare [dossier 38](../БАПТИСТЫ%20РОССИИ/BOOK_RESEARCH/38-dorodnitsyn-1908-documents-rules-catechism-1884-2026-06-19.md).
+
 ### Russian conclusion
 
 Upgrade status to:
@@ -311,10 +333,12 @@ But add positive located statements:
 ## Verified / located positive evidence
 
 - `1689_PERSONAL_MARRIAGE_CONSENT = CONFESSIONAL_EXPLICIT`;
+- Horsley-down, 1697, art. XXXVI: believers should marry in the Lord; no parental-permission or age clause **in this article** (§4, TCP p. 35).
 - `GILL_PARENTAL_GUARDIAN_CONSENT = VERIFIED_PRIMARY`;
 - `GILL_PERSONAL_VOLUNTARY_CONSENT = VERIFIED_PRIMARY`;
 - `GILL_PARENTAL_POWER_LESS_WHEN_GROWN = VERIFIED_PRIMARY`;
 - `STENNETT_PARENT_FRIEND_CONCURRENCE = VERIFIED_PRIMARY` (1783, p. 162; directly inspected 2026-11-15 — see §5 and `218` §4.1);
+- Local southern Brotherhood rule: explicit parental consent in the marriage rite (art. VIII as transmitted in 1903; §6.E), **not** an all-ages denominational veto;
 - `RUSSIAN_ECB_PERSONAL_VOLUNTARY_MARITAL_DESIRE = LOCATED_PRIMARY_DENOMINATIONAL`;
 - `RUSSIAN_ECB_FILIAL_HONOUR_RELEVANT_TO_MARRIAGE_DISCERNMENT = LOCATED_PRIMARY_DENOMINATIONAL`;
 - `RUSSIAN_ECB_STRONG_FAMILY_ORDER = LOCATED_PRIMARY_DENOMINATIONAL`.
@@ -339,7 +363,7 @@ Until an exact locator appears, phrase the conservative case from what is actual
 
 Allowed:
 
-> **The located Baptist evidence strongly rejects the idea that marriage is merely a private romantic act of two socially detached individuals. Gill explicitly places parental/guardian consent inside the marriage process while requiring the couple’s own voluntary consent; Stennett likewise urges parental/friend concurrence. Russian ECB historical materials retain strong filial honour and family order, and also explicitly protect the voluntary desire of the marrying persons. What has not been located is a universal Keach, General Assembly, or Russian Baptist rule giving every father an absolute veto over every competent adult child's marriage.**
+> **The located Baptist evidence strongly rejects the idea that marriage is merely a private romantic act of two socially detached individuals. Gill explicitly places parental/guardian consent inside the marriage process while requiring the couple’s own voluntary consent; Stennett likewise urges parental/friend concurrence. One early southern Brotherhood rule expressly includes parental consent in the marriage rite. The 1947 ECB discussion separately requires the voluntary desire of both marrying persons. What has not been located is a universal Keach, General Assembly, or Russian Baptist rule giving every father an absolute veto over every competent adult child's marriage.**
 
 Not allowed:
 

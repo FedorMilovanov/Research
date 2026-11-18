@@ -10,7 +10,7 @@
 
 ## 1. Почему мы это не поём: вероучительное основание
 
-Три текста, прочитанных своими глазами.
+Ниже — два параграфа английского исповедания и формула Южной баптистской конвенции.
 
 **1689 Лондонское баптистское исповедание, гл. 22 «О богослужении», § 2:**
 
@@ -24,6 +24,8 @@
 > This office of mediator between God and man is proper only to Christ, who is the
 > prophet, priest, and king of the church of God; and may not be either in whole, or any
 > part thereof, transferred from him to any other. (1 Тим 2:5)
+
+**Проверка редакции (18.11.2026).** Выше — английский текст в современной передаче. Оба положения есть уже в [издании 1677 г.](https://github.com/textcreationpartnership/A34255/blob/327b766aed8cdde720f73d6ac9c9db1c60e46e0d/A34255.xml#L108-L121): [VIII.9, с. 34](https://github.com/textcreationpartnership/A34255/blob/327b766aed8cdde720f73d6ac9c9db1c60e46e0d/A34255.xml#L323-L328) — служение посредника принадлежит одному Христу, [XXII.2, с. 74](https://github.com/textcreationpartnership/A34255/blob/327b766aed8cdde720f73d6ac9c9db1c60e46e0d/A34255.xml#L475-L483) — поклонение не обращают к ангелам, святым или иным творениям. Прочитан набор EEBO-TCP, не изображения. Его CC0 относится к XML издания **1677** г., не к веб-тексту под датой 1689. Это свидетельство формулировки, не документ о том, кто её подписал.
 
 **Baptist Faith and Message 2000 (Южная баптистская конвенция), ст. II.B:**
 
