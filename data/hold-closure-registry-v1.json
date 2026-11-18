@@ -298,6 +298,31 @@
       ],
       "tests": "python3 -B -m unittest discover -s scripts -p 'test_audit_document_twins.py' → 8 OK"
     }
+
+    ,{
+      "id": "HCR-2026-11-18-12",
+      "axis": "self-dating headers vs Git history",
+      "method": "state-stamp-vs-commit",
+      "closedOn": "2026-11-18",
+      "state": "closed",
+      "question": "Соответствует ли дата, которую документ ставит себе в заголовке, тому, когда файл действительно менялся?",
+      "finding": "Из 2 409 Markdown-файлов 17 датируют себя в первых 15 строках: 9 совпадают с последним коммитом, 6 отредактированы позже своей даты (с темами коммитов как уликой), 2 датированы позже истории файла, невозможных 0.",
+      "evidence": "data/state-stamps-2026-11-18.json (schema state-stamps/1)",
+      "closedScope": "Перепись полная: каждая самодатировка в шапке документа найдена и сверена с датой последнего коммита. Даты не переписывались — инструмент печатает дату, коммит и его тему.",
+      "notClosed": "«Отредактирован после своей даты» — факт, а не приговор: законность поздней правки решает владелец лана. Два файла ИСКУПЛЕНИЕ/fathers/ связаны квитанциями лана.",
+      "limits": [
+        "Сверяется только шапка (первые 15 строк) и только дата, стоящая в той же строке, что и фраза-штамп.",
+        "Строки таблиц и строки со ссылкой исключены: они датируют чужой документ (19 из 36 строк отсеяно).",
+        "Дата последнего коммита — дата коммита, а не дата правки; правка нумерации или пробелов тоже двигает её.",
+        "--check падает только на невозможной дате (позже сегодняшней); в CI шаг отчётный."
+      ],
+      "commands": [
+        "python3 -B scripts/audit_state_stamps.py --summary",
+        "python3 -B scripts/audit_state_stamps.py -o data/state-stamps-2026-11-18.json",
+        "python3 -B -m unittest discover -s scripts -p 'test_audit_state_stamps.py'"
+      ],
+      "tests": "python3 -B -m unittest discover -s scripts -p 'test_audit_state_stamps.py' → 8 OK"
+    }
   ],
   "confirmations": [
     {
@@ -354,7 +379,7 @@
       "method": "section-anchor-slug-check",
       "verification": {
         "command": "python3 -B scripts/audit_relative_links.py --summary",
-        "expect": "2 416 файлов; resolves=2 855, missing=58, missing-anchor=0, external=5 974; --strict → 0 необъяснённых",
+        "expect": "2 416 файлов; resolves=2 856, missing=58, missing-anchor=0, external=5 974; --strict → 0 необъяснённых",
         "tests": "python3 -B -m unittest discover -s scripts -p 'test_audit_relative_links.py' → 27 OK"
       },
       "limits": [
