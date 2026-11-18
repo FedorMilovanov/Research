@@ -1342,5 +1342,68 @@
       "objects": 0,
       "conclusion": "Все три правовых ящика корпуса пусты. Значит ноль открытых записей без RIGHTS_HOLD не опровергается ими — и не подтверждается: очередь пуста не потому, что споров о правах нет, а потому, что ни один объект корпуса в неё не положен."
     }
+  },
+  "corpusOwnIndex": {
+    "checkedAt": "2026-11-18",
+    "folder": {
+      "name": "00 — INDEX, ROADMAP & MASTER CATALOG",
+      "id": "1JOrP8aO2XIrK3JzXsfKw8aTBbCNbyjkw",
+      "objectCount": 5
+    },
+    "objects": [
+      {
+        "name": "README — SOURCE INTAKE SINICHKIN — STORAGE RULES.txt",
+        "id": "1cGbpwLZFYDfnGHWabC33B01g_NP0pnOJ",
+        "bytes": 1381,
+        "inRepo": false
+      },
+      {
+        "name": "README — КАК ПОПОЛНЯТЬ И ИСПОЛЬЗОВАТЬ АРХИВ «РУССКИЕ БАПТИСТЫ»",
+        "id": "15-9ZA3y2IItoM-UEaFY6kHEAZDkLlAORwjoToETgxMA",
+        "googleDoc": true,
+        "exportedChars": 4246,
+        "listingBytes": 3030,
+        "inRepo": false
+      },
+      {
+        "name": "SINICHKIN — AUDIO & VIDEO INDEX — 52 FILES.csv",
+        "id": "1iiJMBxjbY7MjJZW61mHwC2G6nDP0mdVM",
+        "bytes": 9987,
+        "inRepo": false
+      },
+      {
+        "name": "SINICHKIN — MASTER FILE CATALOG — 5941 FILES.csv",
+        "id": "1nIayA3h9JuBrUQ8QJcf95hA3K4orGTwS",
+        "bytes": 1469442,
+        "files": 5941,
+        "inRepo": false
+      },
+      {
+        "name": "РУССКИЕ БАПТИСТЫ — MASTER ARCHIVE CATALOG",
+        "id": "1y9d_7bWAEsz8iYdMuRrtb6onDYEXLQx5PgT95oYNsSM",
+        "bytes": 2986417,
+        "googleSheet": true,
+        "inRepo": true,
+        "repoReference": "00_RUSSIAN_BAPTISTS_ARCHIVE.md и DRIVE_SNAPSHOT_MANIFEST_2026-07-31.md"
+      }
+    ],
+    "ownRules": {
+      "originals": "90 — SOURCE INTAKES & ORIGINALS: оригинальные ZIP и крупные поступления хранятся неизменными",
+      "workCopies": "02 — SOURCES, LINKS & BAPTIST PDF\\01 — PDF & BOOKS FROM SINICHKIN",
+      "texts": "02 — SOURCES, LINKS & BAPTIST PDF\\02 — TEXTS & NOTES FROM SINICHKIN",
+      "catalogs": "03 — CATALOGS & WORKING INDEXES",
+      "missingIssueRule": "отсутствующий выпуск сначала отмечается в очереди TO DOWNLOAD и не считается утраченным без библиографической проверки"
+    },
+    "violations": [
+      "Пункт 3 правил хранения называет путь 02 — SOURCES, LINKS & BAPTIST PDF\\01 — PDF & BOOKS FROM SINICHKIN; такого уровня больше нет, а рабочие копии выпусков лежат в 02 — PERIODICALS\\01 — БАПТИСТ.",
+      "Пункт 4 называет 02\\02 — TEXTS & NOTES FROM SINICHKIN; этой папки тоже нет: в 02 осталось два объекта (папка 01 — PDF — ИСТОРИЯ И ДОКТРИНА БАПТИСТОВ и zip).",
+      "Ни один из двух README о правилах хранения в репозитории не упомянут.",
+      "Машинный каталог на 5 941 файл в репозитории не упомянут ни разу."
+    ],
+    "limits": [
+      "Прочитаны два README (1 381 байт текста и 4 246 символов экспорта); CSV на 1 469 442 байта и таблица на 2 986 417 байт не открывались.",
+      "Число 5 941 взято из имени файла, а не из подсчёта строк.",
+      "У Google Doc размер в листинге (3 030) не равен длине текста при экспорте (4 246) — это разные величины, и путать их нельзя."
+    ]
   }
 }
