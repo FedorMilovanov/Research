@@ -76,8 +76,8 @@
     ]
   },
   "totals": {
-    "filesScanned": 3092,
-    "filesWithMentions": 897,
+    "filesScanned": 3094,
+    "filesWithMentions": 899,
     "mentions": {
       "ARCHIVE_HOLD": 1408,
       "BLOCKING-HOLD": 16,
@@ -98,16 +98,16 @@
       "HOLD_MAJOR": 11,
       "HOLD_RETAINED": 1,
       "LIVE-READBACK-HOLD": 4,
-      "LOCATOR_HOLD": 1965,
+      "LOCATOR_HOLD": 1966,
       "PAGE-IMAGE-HOLD": 14,
-      "PUBLICATION_HOLD": 2582,
+      "PUBLICATION_HOLD": 2588,
       "RIGHTS_HOLD": 1453,
       "VERSION-HOLD": 23
     },
     "mentionsByStatus": {
       "closed": 821,
-      "open": 2341,
-      "unmarked": 5939
+      "open": 2343,
+      "unmarked": 5944
     },
     "canonicalFlagLineStatesRecordedAsBothOpenAndClosed": 403,
     "filesWithJsonHolds": 38,
@@ -360,14 +360,14 @@
       "mentions": {
         "ARCHIVE_HOLD": 541,
         "EVIDENCE_HOLD": 435,
-        "LOCATOR_HOLD": 330,
+        "LOCATOR_HOLD": 331,
         "PUBLICATION_HOLD": 1037,
         "RIGHTS_HOLD": 563
       },
       "status": {
         "closed": 247,
         "open": 1107,
-        "unmarked": 1698
+        "unmarked": 1699
       }
     },
     "scripts": {
@@ -419,18 +419,18 @@
       }
     },
     "БИОГРАФИИ": {
-      "files": 49,
+      "files": 51,
       "mentions": {
         "ARCHIVE_HOLD": 299,
         "EVIDENCE_HOLD": 75,
         "LOCATOR_HOLD": 425,
-        "PUBLICATION_HOLD": 336,
+        "PUBLICATION_HOLD": 342,
         "RIGHTS_HOLD": 212
       },
       "status": {
         "closed": 107,
-        "open": 384,
-        "unmarked": 901
+        "open": 386,
+        "unmarked": 905
       }
     },
     "ИСКУПЛЕНИЕ": {
@@ -26321,12 +26321,12 @@
       "mentions": {
         "ARCHIVE_HOLD": 4,
         "EVIDENCE_HOLD": 8,
-        "LOCATOR_HOLD": 15
+        "LOCATOR_HOLD": 16
       },
       "status": {
         "closed": 4,
         "open": 7,
-        "unmarked": 20
+        "unmarked": 21
       }
     },
     {
@@ -28242,6 +28242,17 @@
       }
     },
     {
+      "path": "БИОГРАФИИ/Стивен Чарнок/manuscripts/IV_BOGOSLOVSKII_PORTRET_WORKING_DRAFT.md",
+      "corpus": "БИОГРАФИИ",
+      "mentions": {
+        "PUBLICATION_HOLD": 3
+      },
+      "status": {
+        "open": 1,
+        "unmarked": 2
+      }
+    },
+    {
       "path": "БИОГРАФИИ/Стивен Чарнок/manuscripts/I_CHELOVEK_KEMBRIDZH_DUBLIN_LONDON_WORKING_DRAFT.md",
       "corpus": "БИОГРАФИИ",
       "mentions": {
@@ -28249,6 +28260,17 @@
       },
       "status": {
         "unmarked": 3
+      }
+    },
+    {
+      "path": "БИОГРАФИИ/Стивен Чарнок/manuscripts/V_KAK_PROPOVEDI_STALI_KNIGAMI_WORKING_DRAFT.md",
+      "corpus": "БИОГРАФИИ",
+      "mentions": {
+        "PUBLICATION_HOLD": 3
+      },
+      "status": {
+        "open": 1,
+        "unmarked": 2
       }
     },
     {
