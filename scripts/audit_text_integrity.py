@@ -48,6 +48,17 @@ TOKEN_RE = re.compile(r"([\u0410-\u044f\u0401\u0451]+)(\d+)([\u0410-\u044f\u0401
 SUFFIXES = {".md", ".json", ".txt"}
 CONTEXT = 25
 SKIP_DIRS = {".git", "node_modules", "incoming/archive"}
+# ИСКУПЛЕНИЕ keeps a byte-for-byte inventory of its lane sources and data corpus
+# (.github/workflows/atonement-corpus-integrity.yml, atonement_reshoot_state).
+# One inserted space re-issues a whole lane snapshot that other agents are
+# editing, so repairs there belong to that lane's own round, not to this tool.
+WITNESSED_PREFIXES = (
+    "ИСКУПЛЕНИЕ/ot/",
+    "ИСКУПЛЕНИЕ/nt/",
+    "ИСКУПЛЕНИЕ/fathers/",
+    "ИСКУПЛЕНИЕ/synthesis/",
+    "ИСКУПЛЕНИЕ/data/",
+)
 # The tool's own report quotes glued forms on purpose; scanning it would make the
 # count depend on the previous run.
 SELF_REFERENTIAL = {"data/text-integrity-repairs-2026-11-18.json"}
@@ -148,6 +159,11 @@ def recorded_hashes(root: Path) -> set[str]:
     return seen
 
 
+def lane_witnessed(path: Path, root: Path) -> bool:
+    rel = path.relative_to(root).as_posix()
+    return rel.startswith(WITNESSED_PREFIXES)
+
+
 def receipt_blocked(path: Path, receipts: set[str]) -> bool:
     import hashlib
 
@@ -168,11 +184,17 @@ def audit(root: Path, history_provider=None, ignore_receipts: bool = False) -> d
         if not tokens:
             continue
         history = history_provider(path, root)
-        blocked = False if ignore_receipts else receipt_blocked(path, receipts)
+        if lane_witnessed(path, root):
+            state_for_all = "lane-blocked"
+        elif not ignore_receipts and receipt_blocked(path, receipts):
+            state_for_all = "receipt-blocked"
+        else:
+            state_for_all = ""
+        blocked = bool(state_for_all)
         for start, token in tokens:
             window = window_of(text, start, token)
             if blocked:
-                state = "receipt-blocked"
+                state = state_for_all
             elif not history:
                 state = "not-checked"
             elif has_evidence(window, history):
@@ -229,7 +251,7 @@ def repair(root: Path, history_provider=None, passes: int = 5,
             tokens = find_tokens(text)
             if not tokens:
                 continue
-            if not ignore_receipts and receipt_blocked(path, receipts):
+            if lane_witnessed(path, root) or (not ignore_receipts and receipt_blocked(path, receipts)):
                 rel = path.relative_to(root).as_posix()
                 if rel not in skipped:
                     skipped.append(rel)
