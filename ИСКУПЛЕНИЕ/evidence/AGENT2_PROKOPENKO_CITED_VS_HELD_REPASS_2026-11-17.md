@@ -858,3 +858,38 @@
 - **HOLD без изменений:** Lewis & Demarest (на IA есть, но `access-restricted-item`: поиск по тексту недоступен); Тиссен, p. 104; Эриксон, с. 779.
 
 Вердикты S1–S5 не меняются. Умысел не утверждается.
+
+## 23. Раунд 100 (2026-11-17): Эриксон (сн. 95–97) по 3-му изд. и его примечаниям; откуда рамка «Наставление — раньше, комментарии — позже» (сн. 13)
+
+**Повод.** Эриксон (сн. 95–97, рус. пер. 1999, с. 779) был в HOLD. Звено «Erickson» в генеалогии таблицы (`34_` §4.27) стояло на классе C (S41). Тиссен (сн. 95–96) и Lewis & Demarest (сн. 10, 13) на IA есть только с ограниченным доступом (`access-restricted-item`, поиск по тексту недоступен).
+
+### 23.1. Источники
+
+- (а) **M. J. Erickson, *Christian Theology*, 3rd ed.** (Grand Rapids: Baker, 2013), IA `erickson-millard-j-christian-theology-baker` (`ia600505`, dir `/0/items/…`; текстовый PDF, `page_numbers.json` уверенность 0 — **печатные страницы не установлены**, указаны листы). **Класс A2**: другое издание, чем русский перевод 1999 г.; содержание проверяемо, страница статьи — нет.
+  - Л. 984 (гл. 43; ср. прим. 619: «The varieties of Calvinism will be discussed at greater length in chapter 43»): «The other major variation among Calvinists has to do with the logical order of God's decrees. Here we distinguish the supralapsarian, infralapsarian, and sublapsarian positions… The positions also differ on whether the atonement was for all or only for those chosen to be saved». Далее три схемы по **четыре** шага: Supralapsarianism (1. decree to save some and condemn others; 2. to create both the elect and the reprobate; 3. to permit the fall of both classes; 4. to provide salvation only for the elect); Infralapsarianism (1. create; 2. permit the fall; 3. save some and condemn others; 4. provide salvation only for the elect) — **прим. 1599**; «**Sublapsarianism (unlimited atonement with a limited application)**» (1. create; 2. permit the fall; 3. provide salvation sufficient for all; 4. choose some to receive this salvation) — **прим. 1600**.
+  - Л. 1519 (примечания): «1599. Benjamin B. Warfield, *The Plan of Salvation* (Grand Rapids: Eerdmans, 1942), 31»; «**1600. Strong, Systematic Theology, 778-79**»; «1595. Louis Berkhof, Systematic Theology (… 1953), 114–15».
+  - Л. 882 (гл. 38 «The Extent of the Atonement»): «It is generally assumed that all Calvinists regard the decision to save certain persons as logically prior to the decision to provide salvation… On the other hand, Augustus Strong contests the assumption… He himself holds that the decision to provide salvation is prior, and **he maintains that Calvin in his commentaries took a similar position**» — **прим. 1398**.
+  - Л. 1512: «1398. Augustus Hopkins Strong, Systematic Theology (Westwood, NJ: Revell, 1907), 777-78».
+- (б) **Strong 1907, III, pp. 777–778** — уже в корпусе (S39, A1): «Richards… shows that Calvin, while in his **early work, the Institutes**, he avoided definite statements… yet in his **latter works, the Commentaries**, acceded to the theory of universal atonement» (p. 777, петит); «In later days Calvin wrote in his Commentary on 1 John 2:2…» (p. 778).
+
+### 23.2. Сверка
+
+| Место | Тезис статьи | Состоятельность | Факты |
+|---|---|---|---|
+| Сн. 96: «Эриксон рассматривает четыре шага» | — | ✓ | **ACCURATE** (3-е изд., л. 984): у каждой из трёх схем четыре шага |
+| С. 30, сн. 97: «Сублапсарианский взгляд иногда называют „неограниченное искупление с ограниченным применением“» | — | ✓ | **ACCURATE**: «Sublapsarianism (unlimited atonement with a limited application)» (л. 984). Страница русского перевода (с. 779) — HOLD |
+| Сн. 95: «в последнее время в литературе появляется более чёткое разграничение между инфра- и суб- (см., напр., Эриксон)» | Разграничение — новое | Мягко | **`SIMPLIFIED` (мягко).** Собственный источник Эриксона для сублапсарианской схемы — **Strong 1907, pp. 778–79** (прим. 1600). То есть «разграничение» у Эриксона — это переопределение слова *sub* Стронгом в 1907 г., а не недавнее уточнение. Это подтверждает `34_` §4.27 п. 4, теперь по самому Эриксону (было — класс C) |
+| С. 30: таблица, супралапсарианский столбец (1 — сотворить; 2 — предопределить…) | — | Мягко | **Расходится и с Эриксоном** (сн. 96 — источник схемы): у Эриксона, как у Беркхофа (p. 119) и Уорфилда, супралапсарианское решение о спасении и осуждении стоит **первым, до сотворения**. Это дополняет вывод §16 («расходится с собственным источником», мягко). Пятишаговая схема Тиссена (сн. 96) не открыта — HOLD |
+| Генеалогия таблицы (`34_` §4.27) | — | — | **Уточнение.** Эриксон собирает таблицу из двух источников: супра/инфра — по Уорфилду (*Plan of Salvation*, p. 31; прим. 1599), «сублапсарианство» — по Стронгу (pp. 778–79; прим. 1600). Звено «Strong → Erickson» теперь **прямое и документированное** (A2), а не только через Чейфера и Тиссена. Сам Уорфилд называет третью схему «Post-redemptionism (… Amyraldianism, or Hypothetical Universalism)» (§4.27, S38) |
+| С. 4, сн. 13: «В более поздних комментариях позиция Кальвина по всеобщему искуплению ещё более очевидна» | Хронология «Наставление → поздние комментарии» | Происхождение рамки | **Рамка документирована раньше статьи:** Richards 1846 → **Strong 1907, p. 777** («early work, the Institutes… latter works, the Commentaries», A1) → **Erickson** («Calvin in his commentaries took a similar position», прим. 1398 = Strong 777–78, A2). Статья ссылается на Lewis & Demarest (HOLD), поэтому её путь к рамке **не утверждается**. По существу раунды 96–98 показали, где рамка Стронга ломается: «Наставление», которое цитирует статья, — редакция **1559 г.**, а ключевая фраза сн. 11 впервые появилась именно в 1559 г., то есть **после** комментария на Галатам (1548). Называть «Наставление» «ранней работой» верно для 1536–1539 гг., но не для текста, который цитирует статья. Это объясняет `CHRONOLOGY_PARTIAL` (§20–§21), но вердикт не меняет |
+
+### 23.3. Итог раунда 100
+
+- **Новые вердикты:**
+  - сн. 96, 97 — ACCURATE по содержанию (3-е изд.; русская страница — HOLD);
+  - сн. 95, «в последнее время» — `SIMPLIFIED` (мягко): собственный источник Эриксона — Strong 1907;
+  - таблица, супралапсарианский столбец — расходится также с Эриксоном (мягко).
+- **Генеалогия:** звено Strong → Erickson подтверждено примечанием самого Эриксона (A2). Рамка «Institutes — раньше, Commentaries — позже» прослежена до Richards/Strong (A1) и Эриксона (A2); путь к статье — HOLD (Lewis & Demarest).
+- **HOLD:** русский перевод Эриксона, с. 779; Тиссен 1979, p. 104 (IA, доступ ограничен); Lewis & Demarest (IA, доступ ограничен).
+
+Вердикты S1–S5 не меняются. Умысел не утверждается.
