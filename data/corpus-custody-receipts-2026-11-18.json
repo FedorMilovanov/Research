@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "artifactId": "CORPUS-CUSTODY-RECEIPTS-2026-11-18",
+  "role": "DERIVED_READ_ONLY_NOT_AUTHORITY",
+  "checkedAt": "2026-11-18",
+  "method": "list_files по ID папки, get_file по объекту, read_file_text по текстовому файлу; только чтение, ни один объект не скачивался и не изменялся",
+  "purpose": "Зафиксировать, где физически лежат два корпуса, которые до сих пор жили только в артефактах CI. Квитанция про носитель, не про права и не про публикацию.",
+  "corpora": [
+    {
+      "name": "COMMONS STRICT 40 — строгий корпус 40 PDF по русской литературе",
+      "claimInRepo": {
+        "path": "SOURCE_LIBRARY/COMMONS_RUSSIAN_LITERATURE_40PLUS_PDF_PASS_2026-07-30.md",
+        "bytes": 610183443,
+        "pages": 12434,
+        "pdfs": 40,
+        "sha256Matches": 40,
+        "licences": {
+          "Public Domain": 39,
+          "CC BY-SA 4.0": 1
+        }
+      },
+      "drive": {
+        "folder": "01 — COMMONS STRICT 40",
+        "folderId": "1DSfzT3YJC19iI0YG9IjfOXybVilgnQFJ"
+      },
+      "objects": [
+        {
+          "name": "01 — PDF 01-10 — PART A.zip",
+          "id": "1JcpOMbKwNPWl0KaXQldKP74NgopPwYsJ",
+          "bytes": 93419267,
+          "sha256": "36e94ab7ba382a2f1766e0e95b34c48ea383eb2f38c53a38ccb7404a8ff084d5"
+        },
+        {
+          "name": "01 — PDF 01-10 — PART B.zip",
+          "id": "13k_0dAsEktbR_wB_DjHqapgQX4svc7dd",
+          "bytes": 35560492,
+          "sha256": "88a6cc17782c7263f9a4c4ceb26ba8f4ee784d1a0ffa1f50e4f8c69c866c0a8c"
+        },
+        {
+          "name": "02 — PDF 11-20 — PART A.zip",
+          "id": "1VKlMMB2bMTFqkplVqx4k1WWUwmrEyD7v",
+          "bytes": 90799683,
+          "sha256": "aca6903acdfaf66d55d22e7f57527f54ff48afb6ca8c82172330b49c05654454"
+        },
+        {
+          "name": "02 — PDF 11-20 — PART B.zip",
+          "id": "1NyDYYVSuPxk-5jjvuPb59SYLK5qPqSdG",
+          "bytes": 22299138,
+          "sha256": "5ff95785dd455a9701a8d24bb06d63eb75c6d1ae8b1a441d5da004cd9c55b9a2"
+        },
+        {
+          "name": "03 — PDF 21-30 — PART A.zip",
+          "id": "1ybgXXoI2Txfwk37Hl7jP2SfIkp8DwJA4",
+          "bytes": 89990950,
+          "sha256": "0d2c417fde0c0be5ed36684acd1cd78dc525db27773384b1a872b6aa2483b4cf"
+        },
+        {
+          "name": "03 — PDF 21-30 — PART B.zip",
+          "id": "16YwcXyvR0iGfUpq4PSSDeaN9l5UWVaBZ",
+          "bytes": 62752353,
+          "sha256": "dc4c148d3e9220367d54eac8e27c51011c08d390a84ec4b55958a88831b4244c"
+        },
+        {
+          "name": "04 — PDF 31-40 — PART A.zip",
+          "id": "1ErA3Xo8IGfWr42K-rOcGEOlUZwfaavoL",
+          "bytes": 84277081,
+          "sha256": "589049c2a691be19811a737fb3ecc0b3804cc642be5091649a25d4f309e99ebb"
+        },
+        {
+          "name": "04 — PDF 31-40 — PART B.zip",
+          "id": "1qnTCG2WCTQXqogN5QYzula2rn4h3rl81",
+          "bytes": 87106112,
+          "sha256": "f026b53cf6a4f0107c41fb84d84d9fa9137bdb2f6a7c6875ff337b64a12f43d7"
+        },
+        {
+          "name": "04 — PDF 31-40 — PART C.zip",
+          "id": "1s45tVKvZMKFJyDzY_5brSm08AfFSWWG_",
+          "bytes": 43987425,
+          "sha256": "565f7d2486e8d0d2dd6f1f0b1610b02b4816947a1ad8d293ecc189cdf2132fc5"
+        }
+      ],
+      "aggregate": {
+        "objects": 9,
+        "bytes": 610192501,
+        "bytesVsClaim": 9058
+      },
+      "controlFiles": [
+        {
+          "name": "commons_strict_sha256_verification.txt",
+          "id": "1PvXKzW6Oq1U7qP-j0FLIXx_gv19ogez9",
+          "bytes": 3110,
+          "content": "40 строк «OK», по одной на PDF"
+        },
+        {
+          "name": "COMMONS STRICT 40 — ORIGINAL MANIFEST.zip",
+          "id": "1qdpO--2fZim1Ui4suCm0hoxppCEhl0kM",
+          "bytes": 27136
+        },
+        {
+          "name": "COMMONS STRICT 40 — PROCESSED CONTROL PACKAGE.zip",
+          "id": "1RIA4gU8AkkwQ-JR72Ek5pCJr-5VBnnQC",
+          "bytes": 826936
+        }
+      ],
+      "verdict": "Байты корпуса в шардах на Drive. Разница 9 058 Б между суммой шардов и заявленным объёмом PDF объясняется оверхедом zip (заголовки, имена), а не расхождением объектов.",
+      "unverified": [
+        "Содержимое шардов не распаковывалось",
+        "Пофайловые SHA-256 внутри шардов против списка «OK» не сверялись — сверялся только итоговый объём"
+      ]
+    },
+    {
+      "name": "SECOND EDITORIAL 40 — второй редакционный корпус 40 открытых PDF",
+      "claimInRepo": {
+        "path": "SOURCE_LIBRARY/SECOND_EDITORIAL_40_PDF_PASS_2026-07-30.md",
+        "pdfs": 40
+      },
+      "drive": {
+        "folder": "02 — SECOND EDITORIAL 40",
+        "folderId": "1qba3eUdOo0x4Sp2T1viB_MMdWQf80UtZ",
+        "shards": [
+          {
+            "name": "01-10",
+            "id": "1cLg23XvpSxTuJXG14pwsxHACmbbqrah4"
+          },
+          {
+            "name": "11-20",
+            "id": "1fDuFrAOklfmazeC1wvkuIFN_HiuojybM"
+          },
+          {
+            "name": "21-30",
+            "id": "14QR3UlghkWlXABp52feO1Dkpzy_2NYIu"
+          },
+          {
+            "name": "31-40",
+            "id": "1DRavSKBH34HABvRLrovlampMZWTwDwqW"
+          }
+        ]
+      },
+      "objects": {
+        "count": 40,
+        "perShard": 10,
+        "perFileSha256Present": true
+      },
+      "controlFiles": [
+        {
+          "name": "SECOND EDITORIAL 40 — MANIFEST RIGHTS SHA256.zip",
+          "id": "1bHbwp7AoS2F645_BZhNVNTjWfKYoHm4g",
+          "bytes": 25419,
+          "sha256": "f363ec567be8a40cd5828d251e288572270c4368f5940602c0b29548b4a7e547"
+        }
+      ],
+      "verdict": "40 PDF на месте, у каждого серверный sha256Checksum; рядом ZIP с манифестом прав и сумм.",
+      "unverified": [
+        "Пофайловые суммы прочитаны через коннектор, но в репозиторий не перенесены: перенос 40 значений вручную создаёт риск опечатки, который нечем проверить",
+        "Содержимое PDF не открывалось"
+      ]
+    }
+  ],
+  "boundaries": [
+    "Квитанция подтверждает наличие байтов на носителе. Она не подтверждает права, не разрешает публикацию и не снимает ни один HOLD.",
+    "Совпадение объёма — не тождество содержимого. Проверка содержимого требует распаковки и сверки пофайловых сумм.",
+    "Значения сняты 2026-11-18. Перезапись объекта на Drive изменит сумму, и квитанция устареет — её пересобирают, а не правят."
+  ]
+}

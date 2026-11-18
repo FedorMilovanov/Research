@@ -112,7 +112,8 @@ DRIVE_VERIFICATION = {
         },
         "observed": "40 PDF в четырёх шардах 01-10 / 11-20 / 21-30 / 31-40, у каждого серверный sha256Checksum; "
         "рядом ZIP с манифестом прав и SHA-256.",
-        "missing": "В репозитории нет квитанции, связывающей ID папки и sums с манифестом.",
+        "missing": "Квитанция теперь есть: docs/research/holds/CORPUS_CUSTODY_RECEIPTS_2026-11-18.md "
+        "(снята 2026-11-18). Остаётся не сверенным содержимое шардов.",
     },
     "ephemeral-commons-strict-literary-pdf-40plus": {
         "class": "DURABLE_ON_DRIVE_UNRECORDED_IN_REPO",
