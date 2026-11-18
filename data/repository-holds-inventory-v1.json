@@ -76,8 +76,8 @@
     ]
   },
   "totals": {
-    "filesScanned": 3096,
-    "filesWithMentions": 901,
+    "filesScanned": 3098,
+    "filesWithMentions": 903,
     "mentions": {
       "ARCHIVE_HOLD": 1408,
       "BLOCKING-HOLD": 16,
@@ -100,14 +100,14 @@
       "LIVE-READBACK-HOLD": 4,
       "LOCATOR_HOLD": 1966,
       "PAGE-IMAGE-HOLD": 14,
-      "PUBLICATION_HOLD": 2592,
+      "PUBLICATION_HOLD": 2596,
       "RIGHTS_HOLD": 1453,
       "VERSION-HOLD": 23
     },
     "mentionsByStatus": {
       "closed": 821,
       "open": 2343,
-      "unmarked": 5948
+      "unmarked": 5952
     },
     "canonicalFlagLineStatesRecordedAsBothOpenAndClosed": 403,
     "filesWithJsonHolds": 38,
@@ -419,18 +419,18 @@
       }
     },
     "БИОГРАФИИ": {
-      "files": 53,
+      "files": 55,
       "mentions": {
         "ARCHIVE_HOLD": 299,
         "EVIDENCE_HOLD": 75,
         "LOCATOR_HOLD": 425,
-        "PUBLICATION_HOLD": 346,
+        "PUBLICATION_HOLD": 350,
         "RIGHTS_HOLD": 212
       },
       "status": {
         "closed": 107,
         "open": 386,
-        "unmarked": 909
+        "unmarked": 913
       }
     },
     "ИСКУПЛЕНИЕ": {
@@ -28260,6 +28260,26 @@
       },
       "status": {
         "unmarked": 3
+      }
+    },
+    {
+      "path": "БИОГРАФИИ/Стивен Чарнок/manuscripts/REFERENCE_KHRONOLOGIYA_TRUDY_ISTOCHNIKI_WORKING_DRAFT.md",
+      "corpus": "БИОГРАФИИ",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "БИОГРАФИИ/Стивен Чарнок/manuscripts/VIII_CHARNOCK_POSLE_CHARNOCKA_WORKING_DRAFT.md",
+      "corpus": "БИОГРАФИИ",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
       }
     },
     {

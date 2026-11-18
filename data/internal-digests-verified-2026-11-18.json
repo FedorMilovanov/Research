@@ -3,7 +3,7 @@
   "authorityId": "INTERNAL-DIGESTS-2026-11-18",
   "root": ".",
   "scope": {
-    "markdownFiles": 2414
+    "markdownFiles": 2416
   },
   "totals": {
     "claims": 2739,
@@ -24007,10 +24007,10 @@
     }
   ],
   "jsonRecords": {
-    "records": 1844,
+    "records": 3046,
     "byState": {
       "external": 183,
-      "stale": 1634,
+      "stale": 2836,
       "match": 27
     }
   }
