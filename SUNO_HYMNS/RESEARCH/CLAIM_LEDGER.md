@@ -791,19 +791,20 @@ Both were `projectLevel` facts while the text had no work. DUTCH-005 now links t
 **Review state:** SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION · **Sources:** SRC-PHOS-CPDL, SRC-PHOS-PRAVENC · **HOLDs:** LOCATOR_HOLD
 **Limits / next action:** read in a community transcription; collate against a printed Horologion or Plank 2001 before quoting it as "the received text".
 
-### CLM-PHOS-BASIL-73 — earliest testimony
+### CLM-PHOS-BASIL-73 — Earliest testimony
 
-**Claim:** Basil, *De Spiritu Sancto* 29.73 (c. 375), says the author of the lamp-lighting thanksgiving cannot be named, that the people utter "the ancient form", and quotes "We praise Father, Son, and God's Holy Spirit"; the Hymn of Athenogenes is mentioned separately.
+**Claim:** In Blomfield Jackson's NPNF2 8 English translation (1895), as revised on New Advent, De Spiritu Sancto 29.73 says that the fathers gave thanks at evening light, that the author of the lamp-lighting thanksgiving cannot be named, and that the people utter an ancient formula: 'We praise Father, Son, and God's Holy Spirit'. The Hymn of Athenogenes is named in the next sentence, not identified with that thanksgiving.
 
-**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-BASIL-DSS, SRC-PHOS-PRAVENC · **HOLDs:** none
-**Limits / next action:** read in the NPNF English translation, Greek not collated. Establishes antiquity by c. 375, not a date of composition.
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-BASIL-DSS, SRC-PHOS-BASIL-PG32-OCR, SRC-PHOS-BASIL-DATE · **HOLDs:** RIGHTS_HOLD
+**Notes:** The claim is explicitly about the passage as read in the English web edition, not a verbatim transcription of the Greek or a quotation of all six hymn lines; The Greek passage has now been read in PG 32 OCR only, including readable Θεοῦ; no scan, critical apparatus or manuscript collation. The approximate date belongs to the separately identified dating source; No EVIDENCE_HOLD is mechanically added just because the whole treatise is unread: the evidence claim is limited to the read passage and language. Publication and rights decisions remain separate.
 
-### CLM-PHOS-AUTHORSHIP — authorship
+### CLM-PHOS-AUTHORSHIP — Authorship
 
-**Claim:** the author is unknown; the ascriptions to Athenogenes and to Sophronius are not established — the first from a conflation of two testimonies in Basil, the second failing not because of P. Lond. 2037 (a 7th-century copy can carry a 7th-century hymn) but because Basil calls the thanksgiving ancient c. 375B (6th–7th c.).
+**Claim:** The original author is not established. In the NPNF rendering Basil cannot name the author of the lamp-lighting thanksgiving and names the Hymn of Athenogenes separately; the claim that this proves Athenogenes wrote Phos Hilaron is not warranted. Attribution to Sophronius cannot explain the pre-seventh-century thanksgiving attested by Basil; this does not rule out later redaction of the received text. The 500–699 catalogue date of Papyrus London 2037 b alone does not refute seventh-century authorship.
 
-**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-PRAVENC, SRC-PHOS-BASIL-DSS · **HOLDs:** ARCHIVE_HOLD
-**Limits / next action:** the papyrus is known only through the encyclopaedia's report; see it in a catalogue.
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-PRAVENC, SRC-PHOS-BASIL-DSS, SRC-PHOS-BASIL-PG32-OCR, SRC-PHOS-PAPLOND2037B-DCLP · **HOLDs:** ARCHIVE_HOLD
+**Notes:** The encyclopaedia reports that the Athenogenes ascription resulted from conflating two testimonies. The juxtaposition is read in Basil; the historical origin of the attribution has not independently been traced through manuscripts; Papyrus identity and catalogue date have now been checked in DCLP/LDAB, not its letters, completeness or palaeography. A seventh-century copy can carry an earlier or contemporary text; Public copy and any attribution/redaction decision remain outside this research update.
+**Limits / next action:** Basil quotes a Trinitarian clause, not the six lines; exclude authorship of the ancient thanksgiving, not every possible later revision; ARCHIVE_HOLD remains for the unexamined papyrus and attribution-bearing manuscript/edition evidence.
 
 ### CLM-PHOS-AC-CHECKED — the Apostolic Constitutions claim, read and dropped
 
@@ -812,12 +813,12 @@ Both were `projectLevel` facts while the text had no work. DUTCH-005 now links t
 **Review state:** `VERIFIED_NEGATIVE` — looked for in a primary text and found not to be the case · **Sources:** SRC-PHOS-AC-ANF · **HOLDs:** none
 **Limits:** checked in English translation only; the Greek text of the Constitutions was not collated.
 
-### CLM-PHOS-OLDEST-SCOPE — what «oldest» may mean
+### CLM-PHOS-OLDEST-SCOPE — The scope of the word 'oldest'
 
-**Claim:** Phos Hilaron is the earliest non-scriptural Christian hymn whose complete text survives and which has been sung continuously to the present day. It is **not** the oldest by manuscript age or by date of composition.
+**Claim:** The qualified description of Phos Hilaron as the earliest non-scriptural hymn preserved complete and sung continuously is a comparative literature claim still requiring verification, not a conclusion established by Basil 29.73. Basil supplies an ancient lamp-lighting formula; he does not establish six-line textual identity or continuous performance. The selected hymn is not claimed to be the oldest by manuscript or composition.
 
-**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-BASIL-DSS, SRC-PHOS-PRAVENC, SRC-PHOS-POXY, SRC-PHOS-ODES
-**Limits / next action:** older by manuscript — P.Oxy. XV 1786 (c. 250–300, notated, fragmentary), P. Bodmer XI (Odes of Solomon 11, 3rd–4th c.); older by composition — the Odes of Solomon (c. 70–125), the Naassene hymn in Hippolytus. The superlative may appear in copy only with the full qualifier (dossier § 3.6).
+**Review state:** SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION · **Sources:** SRC-PHOS-BASIL-DSS, SRC-PHOS-PRAVENC, SRC-PHOS-POXY, SRC-PHOS-ODES · **HOLDs:** EVIDENCE_HOLD
+**Limits / next action:** The earlier formulation and its permission to use the qualified superlative are superseded here, not silently treated as verified. The comparison with older hymns in the source list was not an exhaustive demonstration; EVIDENCE_HOLD applies to the comparative superlative and continuity, not to the existence of the read Basil passage. The papyrus text was not acquired. Track selection is unchanged; no product copy has been edited.
 
 ### CLM-PHOS-NOT-ALEXANDRINUS — the Codex Alexandrinus claim, dropped
 
@@ -826,19 +827,27 @@ Both were `projectLevel` facts while the text had no work. DUTCH-005 now links t
 **Review state:** `VERIFIED_NEGATIVE` — looked for in a primary text and found not to be the case · **Sources:** SRC-PHOS-BL-ALEX, SRC-PHOS-ODES-BOOK
 **Limits:** from the library's description and the standard list of odes; the codex was not examined page by page. The confusion is with the Gloria, which does have a 5th-century Alexandrian witness.
 
-### CLM-PHOS-BASIL-SCOPE — what Basil does and does not attest
+### CLM-PHOS-BASIL-SCOPE — What Basil does and does not attest
 
-**Claim:** Basil c. 375 attests the antiquity of the lamp-lighting thanksgiving and quotes its Trinitarian clause, but does not quote the six lines. The core is therefore attested by 375; the complete six-line text is first read in a papyrus of the 6th–7th century.
+**Claim:** In the NPNF English translation, Basil attests the antiquity of a lamp-lighting thanksgiving and quotes a Trinitarian clause, not the complete received six-line Phos Hilaron. Neither its full wording in c. 375 nor the date of composition or a complete textual transmission can be inferred from this passage.
 
-**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-BASIL-DSS
-**Limits / next action:** whether the six lines existed verbatim in 375 is not established and is not asserted.
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-BASIL-DSS, SRC-PHOS-BASIL-PG32-OCR, SRC-PHOS-BASIL-DATE · **HOLDs:** none
+**Limits / next action:** The Greek comparison is confined to OCR of the printed passage, not a verified Greek transcription. Several OCR versions of PG 32 are not independent textual witnesses; The former second clause, that the complete six-line text is first read in a 6th–7th-century papyrus, exceeded the access actually obtained. The papyrus is identified only in a catalogue (CLM-PHOS-PAPYRUS-CATALOG), whose edition block is empty; no such firsthand reading is claimed.
 
-### CLM-PHOS-DATING-OPEN — date of composition
+### CLM-PHOS-DATING-OPEN — Date of composition
 
-**Claim:** the date of composition is unknown; the hymn is called ancient by Basil c. 375; the oldest physical witness in this record is P. Lond. 2037B.
+**Claim:** The date of composition is unknown. In the read NPNF passage Basil treats the lamp-lighting thanksgiving/formula as ancient c. 375. The papyrus witness reported in the literature is now identified in DCLP as London 2037 b = P. Lond. Lit. 244, dated 500–699 by the catalogue, not palaeographically verified here.
 
-**Review state:** RESEARCH_OPEN · **Sources:** SRC-PHOS-BASIL-DSS, SRC-PHOS-PRAVENC · **HOLDs:** ARCHIVE_HOLD
-**Limits / next action:** the popular "200 AD or earlier" is unverified here and is not used.
+**Review state:** RESEARCH_OPEN · **Sources:** SRC-PHOS-BASIL-DSS, SRC-PHOS-PRAVENC, SRC-PHOS-BASIL-PG32-OCR, SRC-PHOS-PAPLOND2037B-DCLP · **HOLDs:** ARCHIVE_HOLD
+**Notes:** The popular '200 AD or earlier' figure was not verified in this pass and is not used; Do not present any second- or third-century date as established; A catalogue date of a copy is neither a date of composition nor a firsthand reading of six complete lines. The linked image routes did not yield the papyrus text in this pass.
+
+### CLM-PHOS-PAPYRUS-CATALOG — Идентификация папирусного свидетеля
+
+**Claim:** DCLP/TM 65200, LDAB 6442 identifies London, British Library Pap 2037 b as P. Lond. Lit. 244 and dates the papyrus to 500–699, from Egypt. Bibliographic record 48085 for Tripolitis 1970 links P. Lond. Inv. 2037, P. lit. Lond. 244 and van Haelst 942. The catalogue edition block is empty: these records identify a reading target, not a verified transcription of Phos Hilaron.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-PAPLOND2037B-DCLP · **HOLDs:** ARCHIVE_HOLD, LOCATOR_HOLD
+**Level:** project research; not added to the production track.
+**Limits / next action:** Read: catalogue XML and bibliography, with exact identifiers and displayed date. Not read: papyrus image, Milne no. 244 or Tripolitis pp. 189–196. Catalogue CC BY 3.0 is not an image or article licence.
 
 ### CLM-PHOS-RU-TRADITION — Russian translation history
 

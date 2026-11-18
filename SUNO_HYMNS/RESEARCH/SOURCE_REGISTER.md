@@ -715,12 +715,35 @@ The Greek lane is registered in the same file as the Dutch one because it is the
 - Supports: the hymn's fixed place in all post-iconoclast Byzantine monastic Vespers and its absence from the Hagia Sophia rite; its presence in the earliest Palestinian Horologia; the Sophronius ascription and why it is probably wrong (P. Lond. 2037B, 6th–7th c.); Basil, *De Spiritu Sancto* 73, as the earliest testimony, with the Trinitarian formula; the Athenogenes conflation; the three-part structure; the Φῶς ἀγαθόν parallel in Varro.
 - Limits: a secondary encyclopaedia article, not an edition. It does **not** ascribe the hymn to the *Apostolic Constitutions* — which is why that claim is under `EVIDENCE_HOLD`.
 
-### SRC-PHOS-BASIL-DSS — Basil of Caesarea, *De Spiritu Sancto* 29.73
+### SRC-PHOS-BASIL-DSS — Basil of Caesarea, De Spiritu Sancto 29.73 — Blomfield Jackson, NPNF2 8 (1895), веб-редакция New Advent
 
 - URL: https://www.newadvent.org/fathers/3203.htm
-- Evidence class: A1 · Access: PARTIAL_OBJECT · Locator: EXACT_LOCATOR_VERIFIED · Rights: PUBLICATION_ELIGIBLE · Publication: PROMOTE · HOLDs: none
-- Supports: the verbatim statement that the author of the lamp-lighting thanksgiving cannot be named, that the people utter "the ancient form", and the quoted formula "We praise Father, Son, and God's Holy Spirit"; the Hymn of Athenogenes is named separately, in the next sentence.
-- Limits: read in the NPNF English translation; the Greek was not collated. Proves antiquity by c. 375, not a date of composition.
+- Контрольная ссылка: https://github.com/augustiniusliang/nicene-trans/blob/587532868ab43097efff5722c947170e7e744537/newadvent/fathers/3203.htm#L324-L336
+- Source role/type: Первичный патристический текст в английском переводе; прочитана современная веб-редакция перевода, не печать 1895 г.
+- Evidence class: A1 · Access: PARTIAL_OBJECT · Locator: EXACT_LOCATOR_VERIFIED · Rights: RIGHTS_UNKNOWN · Publication: REFERENCE · HOLDs: RIGHTS_HOLD
+- Основание и способ использования: Исторический греческий текст и перевод Blomfield Jackson 1895 г. отделены от фактически прочитанной страницы New Advent: её выходные данные говорят Revised and edited by Kevin Knight, а сайт заявляет copyright. Печатная страница NPNF не сопоставлена, лицензия на эту редакцию/HTML не получена. В Research — ссылка, собственный пересказ и минимальные короткие цитаты; не перепечатка страницы или трактата.
+- Supports: В переводе Jackson: отцы благодарили при появлении вечернего света; автор слов светильничного благодарения не назван; народ произносит древнюю формулу хвалы Отцу, Сыну и Божию Святому Духу; Гимн Афиногена назван следующим предложением; отрывок не отождествляет его со светильничным благодарением и не цитирует весь шестистрочный Phos Hilaron.
+- Limits: Прочитаны 29.73 и контекст 29.71–75 в английской веб-редакции, а также её выходные данные: NPNF, Second Series, vol. 8, ред. Philip Schaff и Henry Wace, Buffalo: Christian Literature Publishing Co., 1895; переводчик — Blomfield Jackson, не Schaff. Весь трактат и печать NPNF не сверены; Греческий отрывок отдельно прочитан только в OCR PG 32 (SRC-PHOS-BASIL-PG32-OCR), без изображения колонки и критического аппарата. Это не полная греческая сверка и не основание повышать доступ до FULL_OBJECT_VERIFIED; Дата около 375 г. взята из SRC-PHOS-BASIL-DATE. Место свидетельствует о древности благодарения и формулы, не о дате сочинения, полном раннем тексте или непрерывности исполнения на протяжении всех последующих веков; PROMOTE заменён на REFERENCE 18.11.2026: исследовательское чтение ограниченного места не есть решение о выпуске. Сам PARTIAL_OBJECT не требует EVIDENCE_HOLD, если утверждение явно ограничено прочитанным отрывком и языком; общая автоматическая переклассификация остальных частичных источников не выполнялась.
+
+### SRC-PHOS-BASIL-PG32-OCR — Basil of Caesarea, De Spiritu Sancto 29.73 — PG 32 (Paris: J.-P. Migne, 1857), кол. 205; OCR OGL
+
+- URL: https://github.com/OGL-PatrologiaGraecaDev/Vol.-32/blob/61a1044e95e42bd06b3cb8f266c38050b97c592a/hvd.32044020606729_ocr/110.txt#L1-L16
+- Контрольная ссылка: https://github.com/OGL-PatrologiaGraecaDev/Vol.-32/blob/61a1044e95e42bd06b3cb8f266c38050b97c592a/hvd.32044048207401_ocr/108.txt#L1-L17
+- Source role/type: OCR печатного греческого текста и параллельной латыни; не изображение страницы, не новый рукописный свидетель
+- Evidence class: B1 · Access: PARTIAL_OBJECT · Locator: EXACT_LOCATOR_VERIFIED · Rights: RIGHTS_UNKNOWN · Publication: REFERENCE · HOLDs: RIGHTS_HOLD
+- Основание и способ использования: Историческое издание отделено от цифрового OCR и скана. Лицензия на воспроизведение цифрового объекта не установлена; здесь ссылки и результат чтения, не раздача OCR или изображений.
+- Supports: В доступных OCR читаются светильничное благодарение, неизвестный автор, древняя формула народа и Πνεῦμα Θεοῦ. Следом — отдельное предложение о гимне Афиногена, затем §74 о Григории; Родительный Θεοῦ отличается от винительного Θεόν в принятом для трека богослужебном тексте; это различие передач текста, а не установленная хронология вариантов.
+- Limits: Колонка опознана по номеру 205 в hvd.32044048207401_ocr/108.txt, той же последовательности в других OCR и переходу к §74. Изображение печати, рукописи и критический аппарат не просмотрены. Несколько OCR одного издания не составляют независимый текстологический кворум; Первый глагол формулы OCR передают с ошибками (Αὶνοῦιιεν / Λὶνοὺμεν). Здесь он не выдаётся за проверенную греческую цитату; нормализованное αἰνοῦμεν надо сверить с печатью. Ударения, придыхания и пунктуация по OCR не удостоверяются; Источник помогает проверить предел отрывка, но не доказывает дату сочинения, полный шестистрочный текст или историю атрибуций.
+
+### SRC-PHOS-PAPLOND2037B-DCLP — Papyrus London 2037 b = P. Lond. Lit. 244 — каталог DCLP/TM 65200, LDAB 6442
+
+- URL: https://github.com/papyri/idp.data/blob/83e0a6ad0fb4e2726fe96ded26dcc22e11bf29f0/DCLP/65/65200.xml#L8-L43
+- Контрольная ссылка: https://github.com/papyri/idp.data/blob/83e0a6ad0fb4e2726fe96ded26dcc22e11bf29f0/Biblio/49/48085.xml#L6-L28
+- Source role/type: Папирус, идентифицированный по каталогу DCLP/LDAB и библиографической записи Tripolitis 1970; не прочитанное издание гимна
+- Evidence class: B1 · Access: CATALOG_ONLY · Locator: COARSE_LOCATOR_ONLY · Rights: PUBLICATION_ELIGIBLE · Publication: REFERENCE · HOLDs: ARCHIVE_HOLD, LOCATOR_HOLD
+- Основание и способ использования: CC BY 3.0 в заголовке DCLP относится к каталожным данным DCLP/LDAB с атрибуцией. Не переносится на фотографии British Library, издание Milne 1927 или статью Tripolitis 1970.
+- Supports: DCLP/TM 65200, LDAB 6442: London, British Library Pap 2037 b, P. Lond. Lit. 244; папирус, Египет, каталожная датировка 500–699; Библиографическая запись 48085: Antonia Tripolitis, Phos hilaron. Ancient Hymn and Modern Enigma, Vigiliae Christianae 24 (1970), с. 189–196; соответствие P. Lond. Inv. 2037 = P. lit. Lond. 244 = van Haelst 942; В XML есть адреса изображений BL и ссылки на издания; div type="edition" пуст. Получены данные каталога, не строки папируса.
+- Limits: Датировка сообщена каталогом, не выведена из самостоятельной палеографии. Нельзя превращать её в дату сочинения гимна; 18.11.2026 адрес access.bl.uk из записи не открылся инструментом чтения; старый FullDisplay.aspx перенаправил на общую страницу Digitised manuscripts and archives. Это результат двух маршрутов, не доказательство, что папирус не оцифрован или отсутствует в BL; Текст, полнота шести строк, повреждения и порядок строк по папирусу не проверены. Следующее действие — Milne, Catalogue of Literary Papyri in the British Museum (1927), №244, либо факсимиле именно фрагмента b; Tripolitis 1970, с. 189–196 — отдельное чтение, не выполненное по карточке.
 
 ### SRC-PHOS-CPDL — ChoralWiki (CPDL), "Phos Hilaron"
 
@@ -875,11 +898,14 @@ The Greek lane is registered in the same file as the Dutch one because it is the
 - Исправленный OCR: Jouve; [University of Leipzig, 2015, CC BY-SA 4.0](https://github.com/OpenGreekAndLatin/patrologia_latina-dev/blob/8c651f859f821f0868755596f1a513946ca25350/volumes/PL72/PL72.xml#L29-L39). Проверены строки XML, а не изображение колонки. Лицензия разметки не распространяется на фото рукописи и ноты.
 - `PL72.xml`: 3 747 750 байт, SHA-256 `a8a8b69d0519079d8efff785307b36466738ef502f28796adf9cd0012f6bd091`. Это контрольная сумма всего файла; прочитан указанный фрагмент.
 
-### SRC-PHOS-BANGOR-AMBROSIANA — Милан, Biblioteca Ambrosiana, C 5 inf. (каталог, не снимок)
+### SRC-PHOS-BANGOR-AMBROSIANA — Бангорский антифонарий, Milano, Biblioteca Ambrosiana, C 5 inf. — MIrA 115 и институциональный IIIF-манифест
 
-- [MIrA 115, шифр, IIIF и датировка](https://github.com/padraicmoran/MIrA/blob/76438fe67754deb2dab4fed4e956e4f8f983787b/data/mss_mira/115.xml#L3-L24); [TM 66408, два тома Уоррена и ссылка на печатное факсимиле](https://github.com/papyri/idp.data/blob/ba1bed719e44f6e1c8a2a0eeadc0f7a05fcd04ae/DCLP/66/66408.xml#L83-L87). Бангор, 680–691; точного рисунка букв запись не даёт.
-- Evidence class: B1 (каталог) · Access: CATALOG_ONLY · Locator: COARSE_LOCATOR_ONLY (для текста на л. 10r–v) · Rights: RIGHTS_UNKNOWN (изображения) · Publication: REFERENCE · HOLDs: ARCHIVE_HOLD, LOCATOR_HOLD, RIGHTS_HOLD
-- [Лицензия каталожной записи](https://github.com/padraicmoran/MIrA/blob/76438fe67754deb2dab4fed4e956e4f8f983787b/data/mss_tei-converted/115.xml#L13-L18) не очищает права на изображения. Манифест указан в каталоге; наличие адреса не равно получению кадров. [Что прочитано вместо факсимиле](DOSSIER_PHOS-005_TE_DEUM.md#bangor-warren-1895).
+- URL: https://github.com/padraicmoran/MIrA/blob/76438fe67754deb2dab4fed4e956e4f8f983787b/data/mss_mira/115.xml#L3-L24
+- Контрольная ссылка: https://digitallibrary.unicatt.it/veneranda/data/public/manifests/0b/02/da/82/80/05/1c/10/0b02da8280051c10.json
+- Source role/type: Рукопись, идентифицированная по научному каталогу; каталог содержит ссылку на манифест IIIF, не текст гимна
+- Evidence class: B1 · Access: CATALOG_ONLY · Locator: COARSE_LOCATOR_ONLY · Rights: RIGHTS_UNKNOWN · Publication: REFERENCE · HOLDs: ARCHIVE_HOLD, LOCATOR_HOLD, RIGHTS_HOLD
+- Supports: MIrA: шифр C 5 inf., Bangor (Ирландия), 680–691, последующий провенанс — Боббио. TM 66408 различает Warren I (HBS IV, 1893) и II (HBS X, 1895); 18.11.2026 в самом манифесте прочитаны подписи 029_C5inf_c.10r и 030_C5inf_c.10v, canvas c0902da828003efca и c0902da828003efcb. Это проверка идентификаторов кадров, не чтение букв на них.
+- Limits: Для шифра и датировки прочитана MIrA; для идентификации кадров — нужный участок институционального манифеста. Сами изображения л. 10r–v и факсимиле Warren I не прочитаны. Точный локатор кадров не равен проверенному локатору слов; ARCHIVE_HOLD и LOCATOR_HOLD по тексту рукописи сохранены; Манифест сообщает Printable: No, Restriction of use: No Downloadable. Кадры не скачаны для хранения или публикации. CC BY-NC-SA 4.0 в TEI MIrA относится к каталогу, не лицензирует фото Амброзианы; RIGHTS_HOLD сохранён.
 
 ### SRC-PHOS-TEDEUM-NCE — Новая католическая энциклопедия, статья *Te Deum* (М. Угло)
 

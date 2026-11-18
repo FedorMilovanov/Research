@@ -1329,24 +1329,81 @@
   },
   {
    "id": "SRC-PHOS-BASIL-DSS",
-   "title": "Basil of Caesarea, De Spiritu Sancto 29.73 — NPNF translation (Schaff)",
+   "title": "Basil of Caesarea, De Spiritu Sancto 29.73 — Blomfield Jackson, NPNF2 8 (1895), веб-редакция New Advent",
    "url": "https://www.newadvent.org/fathers/3203.htm",
-   "type": "Primary patristic text in a public-domain English translation",
+   "type": "Первичный патристический текст в английском переводе; прочитана современная веб-редакция перевода, не печать 1895 г.",
    "evidenceClass": "A1",
    "accessState": "PARTIAL_OBJECT",
    "locatorState": "EXACT_LOCATOR_VERIFIED",
-   "rightsState": "PUBLICATION_ELIGIBLE",
-   "publicationState": "PROMOTE",
-   "holds": [],
+   "rightsState": "RIGHTS_UNKNOWN",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "RIGHTS_HOLD"
+   ],
    "supports": [
-    "The fathers did not receive the evening light in silence but gave thanks at its appearing",
-    "The author of the lamp-lighting thanksgiving is unknown to Basil ('Who was the author of these words of thanksgiving at the lighting of the lamps, we are not able to say')",
-    "The people utter 'the ancient form', and the quoted formula is 'We praise Father, Son, and God's Holy Spirit'",
-    "The Hymn of Athenogenes is mentioned as a different thing, in the following sentence"
+    "В переводе Jackson: отцы благодарили при появлении вечернего света; автор слов светильничного благодарения не назван; народ произносит древнюю формулу хвалы Отцу, Сыну и Божию Святому Духу.",
+    "Гимн Афиногена назван следующим предложением; отрывок не отождествляет его со светильничным благодарением и не цитирует весь шестистрочный Phos Hilaron."
    ],
    "limits": [
-    "Read in the NPNF English translation (§ 73 and the opening of §§ 74–75); the Greek was not collated",
-    "This proves that the hymn existed and was called ancient c. 375, not when it was composed"
+    "Прочитаны 29.73 и контекст 29.71–75 в английской веб-редакции, а также её выходные данные: NPNF, Second Series, vol. 8, ред. Philip Schaff и Henry Wace, Buffalo: Christian Literature Publishing Co., 1895; переводчик — Blomfield Jackson, не Schaff. Весь трактат и печать NPNF не сверены.",
+    "Греческий отрывок отдельно прочитан только в OCR PG 32 (SRC-PHOS-BASIL-PG32-OCR), без изображения колонки и критического аппарата. Это не полная греческая сверка и не основание повышать доступ до FULL_OBJECT_VERIFIED.",
+    "Дата около 375 г. взята из SRC-PHOS-BASIL-DATE. Место свидетельствует о древности благодарения и формулы, не о дате сочинения, полном раннем тексте или непрерывности исполнения на протяжении всех последующих веков.",
+    "PROMOTE заменён на REFERENCE 18.11.2026: исследовательское чтение ограниченного места не есть решение о выпуске. Сам PARTIAL_OBJECT не требует EVIDENCE_HOLD, если утверждение явно ограничено прочитанным отрывком и языком; общая автоматическая переклассификация остальных частичных источников не выполнялась."
+   ],
+   "secondaryUrl": "https://github.com/augustiniusliang/nicene-trans/blob/587532868ab43097efff5722c947170e7e744537/newadvent/fathers/3203.htm#L324-L336",
+   "rightsBasis": "Исторический греческий текст и перевод Blomfield Jackson 1895 г. отделены от фактически прочитанной страницы New Advent: её выходные данные говорят Revised and edited by Kevin Knight, а сайт заявляет copyright. Печатная страница NPNF не сопоставлена, лицензия на эту редакцию/HTML не получена. В Research — ссылка, собственный пересказ и минимальные короткие цитаты; не перепечатка страницы или трактата."
+  },
+  {
+   "id": "SRC-PHOS-BASIL-PG32-OCR",
+   "title": "Basil of Caesarea, De Spiritu Sancto 29.73 — PG 32 (Paris: J.-P. Migne, 1857), кол. 205; OCR OGL",
+   "url": "https://github.com/OGL-PatrologiaGraecaDev/Vol.-32/blob/61a1044e95e42bd06b3cb8f266c38050b97c592a/hvd.32044020606729_ocr/110.txt#L1-L16",
+   "secondaryUrl": "https://github.com/OGL-PatrologiaGraecaDev/Vol.-32/blob/61a1044e95e42bd06b3cb8f266c38050b97c592a/hvd.32044048207401_ocr/108.txt#L1-L17",
+   "type": "OCR печатного греческого текста и параллельной латыни; не изображение страницы, не новый рукописный свидетель",
+   "printedPages": "PG 32, кол. 205–206; светильничный отрывок перед §74; выходные данные в hvd.32044020606729_ocr/010.txt",
+   "evidenceClass": "B1",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "RIGHTS_UNKNOWN",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "RIGHTS_HOLD"
+   ],
+   "rightsBasis": "Историческое издание отделено от цифрового OCR и скана. Лицензия на воспроизведение цифрового объекта не установлена; здесь ссылки и результат чтения, не раздача OCR или изображений.",
+   "supports": [
+    "В доступных OCR читаются светильничное благодарение, неизвестный автор, древняя формула народа и Πνεῦμα Θεοῦ. Следом — отдельное предложение о гимне Афиногена, затем §74 о Григории.",
+    "Родительный Θεοῦ отличается от винительного Θεόν в принятом для трека богослужебном тексте; это различие передач текста, а не установленная хронология вариантов."
+   ],
+   "limits": [
+    "Колонка опознана по номеру 205 в hvd.32044048207401_ocr/108.txt, той же последовательности в других OCR и переходу к §74. Изображение печати, рукописи и критический аппарат не просмотрены. Несколько OCR одного издания не составляют независимый текстологический кворум.",
+    "Первый глагол формулы OCR передают с ошибками (Αὶνοῦιιεν / Λὶνοὺμεν). Здесь он не выдаётся за проверенную греческую цитату; нормализованное αἰνοῦμεν надо сверить с печатью. Ударения, придыхания и пунктуация по OCR не удостоверяются.",
+    "Источник помогает проверить предел отрывка, но не доказывает дату сочинения, полный шестистрочный текст или историю атрибуций."
+   ]
+  },
+  {
+   "id": "SRC-PHOS-PAPLOND2037B-DCLP",
+   "title": "Papyrus London 2037 b = P. Lond. Lit. 244 — каталог DCLP/TM 65200, LDAB 6442",
+   "url": "https://github.com/papyri/idp.data/blob/83e0a6ad0fb4e2726fe96ded26dcc22e11bf29f0/DCLP/65/65200.xml#L8-L43",
+   "secondaryUrl": "https://github.com/papyri/idp.data/blob/83e0a6ad0fb4e2726fe96ded26dcc22e11bf29f0/Biblio/49/48085.xml#L6-L28",
+   "type": "Папирус, идентифицированный по каталогу DCLP/LDAB и библиографической записи Tripolitis 1970; не прочитанное издание гимна",
+   "evidenceClass": "B1",
+   "accessState": "CATALOG_ONLY",
+   "locatorState": "COARSE_LOCATOR_ONLY",
+   "rightsState": "PUBLICATION_ELIGIBLE",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "ARCHIVE_HOLD",
+    "LOCATOR_HOLD"
+   ],
+   "rightsBasis": "CC BY 3.0 в заголовке DCLP относится к каталожным данным DCLP/LDAB с атрибуцией. Не переносится на фотографии British Library, издание Milne 1927 или статью Tripolitis 1970.",
+   "supports": [
+    "DCLP/TM 65200, LDAB 6442: London, British Library Pap 2037 b, P. Lond. Lit. 244; папирус, Египет, каталожная датировка 500–699.",
+    "Библиографическая запись 48085: Antonia Tripolitis, Phos hilaron. Ancient Hymn and Modern Enigma, Vigiliae Christianae 24 (1970), с. 189–196; соответствие P. Lond. Inv. 2037 = P. lit. Lond. 244 = van Haelst 942.",
+    "В XML есть адреса изображений BL и ссылки на издания; div type=\"edition\" пуст. Получены данные каталога, не строки папируса."
+   ],
+   "limits": [
+    "Датировка сообщена каталогом, не выведена из самостоятельной палеографии. Нельзя превращать её в дату сочинения гимна.",
+    "18.11.2026 адрес access.bl.uk из записи не открылся инструментом чтения; старый FullDisplay.aspx перенаправил на общую страницу Digitised manuscripts and archives. Это результат двух маршрутов, не доказательство, что папирус не оцифрован или отсутствует в BL.",
+    "Текст, полнота шести строк, повреждения и порядок строк по папирусу не проверены. Следующее действие — Milne, Catalogue of Literary Papyri in the British Museum (1927), №244, либо факсимиле именно фрагмента b; Tripolitis 1970, с. 189–196 — отдельное чтение, не выполненное по карточке."
    ]
   },
   {
@@ -1815,7 +1872,7 @@
   },
   {
    "id": "SRC-PHOS-BANGOR-AMBROSIANA",
-   "title": "Бангорский антифонарий, Milano, Biblioteca Ambrosiana, C 5 inf. — по каталогу MIrA, запись 115",
+   "title": "Бангорский антифонарий, Milano, Biblioteca Ambrosiana, C 5 inf. — MIrA 115 и институциональный IIIF-манифест",
    "url": "https://github.com/padraicmoran/MIrA/blob/76438fe67754deb2dab4fed4e956e4f8f983787b/data/mss_mira/115.xml#L3-L24",
    "secondaryUrl": "https://digitallibrary.unicatt.it/veneranda/data/public/manifests/0b/02/da/82/80/05/1c/10/0b02da8280051c10.json",
    "type": "Рукопись, идентифицированная по научному каталогу; каталог содержит ссылку на манифест IIIF, не текст гимна",
@@ -1830,11 +1887,12 @@
     "RIGHTS_HOLD"
    ],
    "supports": [
-    "MIrA: шифр C 5 inf., Bangor (Ирландия), 680–691, последующий провенанс — Боббио. TM 66408 различает Warren I (HBS IV, 1893) и II (HBS X, 1895)."
+    "MIrA: шифр C 5 inf., Bangor (Ирландия), 680–691, последующий провенанс — Боббио. TM 66408 различает Warren I (HBS IV, 1893) и II (HBS X, 1895).",
+    "18.11.2026 в самом манифесте прочитаны подписи 029_C5inf_c.10r и 030_C5inf_c.10v, canvas c0902da828003efca и c0902da828003efcb. Это проверка идентификаторов кадров, не чтение букв на них."
    ],
    "limits": [
-    "Для шифра и датировки прочитаны поля записи; для слов и знаков на л. 10r–v снимки не получены. Локатор листа сообщён, не сверен по кадрам. Альтернатива — факсимиле Уоррена I.",
-    "CC BY-NC-SA 4.0 указана в TEI каталога; права на воспроизведение кадров Амброзианы не проверены. Запись каталога и адрес манифеста не заменяют архивный экземпляр."
+    "Для шифра и датировки прочитана MIrA; для идентификации кадров — нужный участок институционального манифеста. Сами изображения л. 10r–v и факсимиле Warren I не прочитаны. Точный локатор кадров не равен проверенному локатору слов; ARCHIVE_HOLD и LOCATOR_HOLD по тексту рукописи сохранены.",
+    "Манифест сообщает Printable: No, Restriction of use: No Downloadable. Кадры не скачаны для хранения или публикации. CC BY-NC-SA 4.0 в TEI MIrA относится к каталогу, не лицензирует фото Амброзианы; RIGHTS_HOLD сохранён."
    ]
   },
   {

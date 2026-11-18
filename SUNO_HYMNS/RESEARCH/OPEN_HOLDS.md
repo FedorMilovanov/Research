@@ -15,10 +15,10 @@
 
 | Вид | У источников | У тезисов |
 |---|---|---|
-| `ARCHIVE_HOLD` | 18 | 29 |
-| `LOCATOR_HOLD` | 31 | 13 |
-| `EVIDENCE_HOLD` | 4 | 11 |
-| `RIGHTS_HOLD` | 136 | 43 |
+| `ARCHIVE_HOLD` | 19 | 30 |
+| `LOCATOR_HOLD` | 32 | 14 |
+| `EVIDENCE_HOLD` | 4 | 12 |
+| `RIGHTS_HOLD` | 138 | 44 |
 
 `RIGHTS_HOLD` стоит почти на всём: это общая оговорка о правах, а не конкретная дыра. Отдельного внимания требуют три остальных вида.
 
@@ -36,7 +36,7 @@
   доступ: `CATALOG_ONLY`, локатор: `EXACT_LOCATOR_VERIFIED`, права: `RIGHTS_UNKNOWN`
 - `SRC-NL-LIEDERENBANK-INDEX` — Nederlandse Liederenbank — records surfaced through search indexing while the site is offline  
   доступ: `LINK_ONLY`, локатор: `LOCATOR_MISSING`, права: `RIGHTS_UNKNOWN`
-- `SRC-PHOS-BANGOR-AMBROSIANA` — Бангорский антифонарий, Milano, Biblioteca Ambrosiana, C 5 inf. — по каталогу MIrA, запись 115  
+- `SRC-PHOS-BANGOR-AMBROSIANA` — Бангорский антифонарий, Milano, Biblioteca Ambrosiana, C 5 inf. — MIrA 115 и институциональный IIIF-манифест  
   доступ: `CATALOG_ONLY`, локатор: `COARSE_LOCATOR_ONLY`, права: `RIGHTS_UNKNOWN`
 - `SRC-PHOS-CLEM-COSGROVE` — Charles H. Cosgrove, «Clement of Alexandria and Early Christian Music», Journal of Early Christian Studies 14/3 (2006): 255–282  
   доступ: `NOT_ACQUIRED`, локатор: `COARSE_LOCATOR_ONLY`, права: `RIGHTS_UNKNOWN`
@@ -50,6 +50,8 @@
   доступ: `PARTIAL_OBJECT`, локатор: `EXACT_LOCATOR_VERIFIED`, права: `RIGHTS_UNKNOWN`
 - `SRC-PHOS-OXY-TEXT` — Cosgrove 2011, текст и перевод Оксиринхского гимна (P.Oxy. XV 1786) с разметкой лакун  
   доступ: `PARTIAL_OBJECT`, локатор: `COARSE_LOCATOR_ONLY`, права: `RIGHTS_UNKNOWN`
+- `SRC-PHOS-PAPLOND2037B-DCLP` — Papyrus London 2037 b = P. Lond. Lit. 244 — каталог DCLP/TM 65200, LDAB 6442  
+  доступ: `CATALOG_ONLY`, локатор: `COARSE_LOCATOR_ONLY`, права: `PUBLICATION_ELIGIBLE`
 - `SRC-PHOS-PRAVENC` — «Свете тихий» — Православная энциклопедия, т. 62, с. 54–55 (свящ. Михаил Желтов)  
   доступ: `FULL_OBJECT_VERIFIED`, локатор: `EXACT_LOCATOR_VERIFIED`, права: `PERMISSION_REQUIRED`
 - `SRC-PHOS-SHOEMAKER-2008-KOLLYRIDIANS` — Stephen J. Shoemaker, «Epiphanius of Salamis, the Kollyridians, and the Early Dormition Narratives: The Cult of the Virgin in the Fourth Century», Journal of Early Christian Studies 16.3 (2008): 371–401, DOI 10.1353/earl.0.0185 — аннотация прочитана, полный текст за пейволлом  
@@ -121,6 +123,8 @@
   статус: `SUPPORTED_WITH_SCOPE_LIMITS`
 - `CLM-PHOS-OXY-PW-NOTATION-DISPUTED` — Спорят не только о словах: отдельные ноты Оксиринхского гимна читаются по-разному у Ханта, Вагнера, Пёльманна, Уиннингтон-Инграма и Уэста  
   статус: `SUPPORTED_WITH_SCOPE_LIMITS`
+- `CLM-PHOS-PAPYRUS-CATALOG` — Идентификация папирусного свидетеля  
+  статус: `SUPPORTED_WITH_SCOPE_LIMITS`
 - `CLM-PHOS-SIX-BOOKS-BETHLEHEM-DATING` — «Шестикнижное сказание» — вифлеемская традиция: не менее пяти сирийских рукописей V–VI вв., датировка IV веком  
   статус: `REPORTED_NOT_INDEPENDENTLY_VERIFIED`
 
@@ -134,7 +138,7 @@
   доступ: `NOT_ACQUIRED`, локатор: `LOCATOR_MISSING`, права: `RIGHTS_UNKNOWN`
 - `SRC-PHOS-AZBYKA` — Азбука веры, статья «Свете Тихий» — церковнославянский текст, русский перевод, толкование  
   доступ: `PARTIAL_OBJECT`, локатор: `LOCATOR_MISSING`, права: `RIGHTS_UNKNOWN`
-- `SRC-PHOS-BANGOR-AMBROSIANA` — Бангорский антифонарий, Milano, Biblioteca Ambrosiana, C 5 inf. — по каталогу MIrA, запись 115  
+- `SRC-PHOS-BANGOR-AMBROSIANA` — Бангорский антифонарий, Milano, Biblioteca Ambrosiana, C 5 inf. — MIrA 115 и институциональный IIIF-манифест  
   доступ: `CATALOG_ONLY`, локатор: `COARSE_LOCATOR_ONLY`, права: `RIGHTS_UNKNOWN`
 - `SRC-PHOS-BASIL-DATE` — Новая католическая энциклопедия, статья «Basil, St.» — датировка трактата De Spiritu Sancto  
   доступ: `PARTIAL_OBJECT`, локатор: `COARSE_LOCATOR_ONLY`, права: `RIGHTS_UNKNOWN`
@@ -164,6 +168,8 @@
   доступ: `PARTIAL_OBJECT`, локатор: `COARSE_LOCATOR_ONLY`, права: `RIGHTS_UNKNOWN`
 - `SRC-PHOS-OXY-TEXT` — Cosgrove 2011, текст и перевод Оксиринхского гимна (P.Oxy. XV 1786) с разметкой лакун  
   доступ: `PARTIAL_OBJECT`, локатор: `COARSE_LOCATOR_ONLY`, права: `RIGHTS_UNKNOWN`
+- `SRC-PHOS-PAPLOND2037B-DCLP` — Papyrus London 2037 b = P. Lond. Lit. 244 — каталог DCLP/TM 65200, LDAB 6442  
+  доступ: `CATALOG_ONLY`, локатор: `COARSE_LOCATOR_ONLY`, права: `PUBLICATION_ELIGIBLE`
 - `SRC-PHOS-POXY` — Oxyrhynchus hymn, P.Oxy. XV 1786 — datings and description (search excerpts, 2025 reporting)  
   доступ: `PARTIAL_OBJECT`, локатор: `LOCATOR_MISSING`, права: `RIGHTS_UNKNOWN`
 - `SRC-PHOS-RUSKLINE-BALMONT` — Л. Яцкевич, «Свете тихий… Заметки литературоведа» (Русская линия, 2018) — цитирует переложение К. Бальмонта  
@@ -215,6 +221,8 @@
   статус: `SUPPORTED_WITH_SCOPE_LIMITS`
 - `CLM-PHOS-OXY-SETTING-HYPOTHESES` — Где пелся Оксиринхский гимн: евхаристия (Вольбергс), агапа и солист (Уршпрунг) — три гипотезы, ни одна не доказана  
   статус: `REPORTED_NOT_INDEPENDENTLY_VERIFIED`
+- `CLM-PHOS-PAPYRUS-CATALOG` — Идентификация папирусного свидетеля  
+  статус: `SUPPORTED_WITH_SCOPE_LIMITS`
 - `CLM-PHOS-VRG-SEVEN-STANZAS` — Семистрофная форма — выбор самой рукописной традиции, а не правка проекта  
   статус: `SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION`
 - `CLM-REVIUS-1630` — Hy droech onse smerten: first publication and genre  
@@ -253,6 +261,8 @@
   статус: `SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION`
 - `CLM-HERT-II-DATE-1674` — Date of II. Hert-sterckte in Jehova  
   статус: `EVIDENCE_HOLD`
+- `CLM-PHOS-OLDEST-SCOPE` — The scope of the word 'oldest'  
+  статус: `SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION`
 - `CLM-REES-MEDITATIEN-1674` — The four-poem Rees group and the 1674 pamphlet  
   статус: `SUPPORTED_WITH_SCOPE_LIMITS`
 - `CLM-REVIUS-1630` — Hy droech onse smerten: first publication and genre  
