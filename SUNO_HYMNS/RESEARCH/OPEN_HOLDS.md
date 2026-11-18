@@ -46,7 +46,7 @@
   доступ: `NOT_ACQUIRED`, локатор: `LOCATOR_MISSING`, права: `RIGHTS_UNKNOWN`
 - `SRC-PHOS-CLEM-PHILLIPS` — C. S. Phillips, «Hymnody Past and Present» (1937) — формулировка о древнейшем датируемом христианском гимне (известна в цитате)  
   доступ: `NOT_ACQUIRED`, локатор: `LOCATOR_MISSING`, права: `RIGHTS_UNKNOWN`
-- `SRC-PHOS-EPIPHANIUS-PANARION-78` — Епифаний Саламинский, «Панарион», гл. 78 (против коллиридиан) — греческий текст по Migne PG 42, стб. 736–738, набранный и переведённый Eric Sowell (2012)  
+- `SRC-PHOS-EPIPHANIUS-PANARION-78` — Епифаний Саламинский, «Панарион», гл. 78 (против антидикомариан) — греческий текст по Migne PG 42, стб. 736–738, набранный и переведённый Eric Sowell (2012)  
   доступ: `PARTIAL_OBJECT`, локатор: `EXACT_LOCATOR_VERIFIED`, права: `RIGHTS_UNKNOWN`
 - `SRC-PHOS-OXY-TEXT` — Cosgrove 2011, текст и перевод Оксиринхского гимна (P.Oxy. XV 1786) с разметкой лакун  
   доступ: `PARTIAL_OBJECT`, локатор: `COARSE_LOCATOR_ONLY`, права: `RIGHTS_UNKNOWN`
@@ -150,7 +150,7 @@
   доступ: `FULL_OBJECT_VERIFIED`, локатор: `COARSE_LOCATOR_ONLY`, права: `PUBLICATION_ELIGIBLE`
 - `SRC-PHOS-DOXOLOGIA` — «Η Μεγάλη Δοξολογία» — греческий богослужебный текст Великого славословия  
   доступ: `PARTIAL_OBJECT`, локатор: `COARSE_LOCATOR_ONLY`, права: `RIGHTS_UNKNOWN`
-- `SRC-PHOS-EPIPHANIUS-PANARION-78` — Епифаний Саламинский, «Панарион», гл. 78 (против коллиридиан) — греческий текст по Migne PG 42, стб. 736–738, набранный и переведённый Eric Sowell (2012)  
+- `SRC-PHOS-EPIPHANIUS-PANARION-78` — Епифаний Саламинский, «Панарион», гл. 78 (против антидикомариан) — греческий текст по Migne PG 42, стб. 736–738, набранный и переведённый Eric Sowell (2012)  
   доступ: `PARTIAL_OBJECT`, локатор: `EXACT_LOCATOR_VERIFIED`, права: `RIGHTS_UNKNOWN`
 - `SRC-PHOS-LATIN-RENDERINGS` — Латинские переложения Φῶς ἱλαρόν — `Lumen hilare` и `Iucunda lux tu gloriae` (форумные и блоговые свидетельства)  
   доступ: `PARTIAL_OBJECT`, локатор: `LOCATOR_MISSING`, права: `RIGHTS_UNKNOWN`
