@@ -176,6 +176,46 @@
         "Внешние URL по сети не проверялись (исходящая сеть ограничена github/npm/pypi).",
         "Ссылки внутри нетронутых снимков останутся мёртвыми по построению."
       ]
+    },
+    {
+      "id": "HCR-2026-11-18-08",
+      "title": "Повреждённый текст: 95 склеек «слово+число+слово» восстановлены по истории самих файлов; 446 остаются под квитанциями",
+      "holdType": "TEXT_INTEGRITY_HOLD",
+      "previousState": "Массовые проходы по репозиторию записали прозу без пробелов вокруг чисел: «Архитектура10будущих документов», «погребение30июля», «Итого44строки». Текст читается, но цитата из него не является транскрипцией; ни один HOLD на это не срабатывал, потому что путь и файл на месте.",
+      "closedScope": "Не «весь текст корпуса», а измеримый класс: 541 склейка в 19 файлах. 95 починены там, где в истории того же файла уже существовало окно ±25 символов с теми же словами и пробелами (проверка нечувствительна к пробелам: «10будущих» = «10 будущих» ≠ «11 будущих»). 446 в 9 файлах не тронуты: их текущие байты названы SHA-256 внутри корпуса (квитанции, `dossierSha256`), и правка сломала бы квитанцию молча — такие файлы помечаются `receipt-blocked`, `--repair` их пропускает, `--check` падает только на чинимой склейке. Для всех изменённых файлов выполнено «текст без пробелов совпадает до и после», все изменённые .json остаются валидным JSON.",
+      "recordLocations": [
+        "data/text-integrity-repairs-2026-11-18.json",
+        "scripts/audit_text_integrity.py",
+        "scripts/test_audit_text_integrity.py",
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §12"
+      ],
+      "method": "space-restoration-backed-by-file-history",
+      "objects": [
+        "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md — 52 починено",
+        "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md — 24",
+        "БИОГРАФИИ/Стивен Чарнок/06_CORPUS_ACCESS_MATRIX_AND_LOCATORS.md — 7",
+        "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json — 3",
+        "ещё 6 файлов — 9",
+        "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md — 277 receipt-blocked",
+        "data/charnock-series-editorial-plan-v1.json — 96 receipt-blocked",
+        "БИОГРАФИИ/Стивен Чарнок/00_README_AND_NAVIGATION.md — 29 receipt-blocked",
+        "data/charnock-biographical-anchors-v1.json — 28 receipt-blocked",
+        "ещё 5 файлов — 16 receipt-blocked"
+      ],
+      "verification": {
+        "command": "python3 -B scripts/audit_text_integrity.py --summary",
+        "expect": "446 glued tokens in 9 files, все receipt-blocked; --check → 0",
+        "tests": "python3 -B -m unittest discover -s scripts -p 'test_audit_text_integrity.py' → 21 OK",
+        "invariant": "re.sub(r'\\s+', '', before) == re.sub(r'\\s+', '', after) для всех изменённых файлов",
+        "provenance": "склейки появились в основном в c6a6ea67 (2026-10-26, «organize biographies»); история не переписывалась"
+      },
+      "limits": [
+        "Число, лишь замыкающее слово («Кор80»), не чинится: та же форма у цитат вида «Мф5» и «1Кор».",
+        "446 склеек в 9 файлах корпуса Чарнока остаются под квитанциями: нужен владелец корпуса, который переиздаст SHA-256, иначе правка уничтожит свидетельство.",
+        "Возвращены пробелы, а не иное повреждение того же прохода: кавычки, абзацы, маркеры сносок этим не восстанавливаются.",
+        "Наличие окна в истории доказывает раздельность слов, но не верность числа по существу.",
+        "Права, издания и прочитанность текста не затрагивались: RIGHTS_HOLD/PUBLICATION_HOLD остаются."
+      ]
     }
   ],
   "confirmations": [
@@ -233,7 +273,7 @@
       "method": "section-anchor-slug-check",
       "verification": {
         "command": "python3 -B scripts/audit_relative_links.py --summary",
-        "expect": "2 410 файлов; resolves=2 709, missing=58, missing-anchor=0, external=5 974; --strict → 0 необъяснённых",
+        "expect": "2 410 файлов; resolves=2 710, missing=58, missing-anchor=0, external=5 974; --strict → 0 необъяснённых",
         "tests": "python3 -B -m unittest discover -s scripts -p 'test_audit_relative_links.py' → 27 OK"
       },
       "limits": [

@@ -22,6 +22,9 @@ on:
       - 'scripts/verify_pinned_github_locators.py'
       - 'scripts/test_verify_pinned_github_locators.py'
       - 'scripts/test_hold_closure_registry.py'
+      - 'scripts/audit_text_integrity.py'
+      - 'scripts/test_audit_text_integrity.py'
+      - 'data/text-integrity-repairs-2026-11-18.json'
       - 'data/hold-closure-registry-v1.json'
       - 'docs/research/HOLDS_REGISTER_2026-11-18.md'
   push:
@@ -46,6 +49,9 @@ on:
       - 'scripts/verify_pinned_github_locators.py'
       - 'scripts/test_verify_pinned_github_locators.py'
       - 'scripts/test_hold_closure_registry.py'
+      - 'scripts/audit_text_integrity.py'
+      - 'scripts/test_audit_text_integrity.py'
+      - 'data/text-integrity-repairs-2026-11-18.json'
       - 'data/hold-closure-registry-v1.json'
       - 'docs/research/HOLDS_REGISTER_2026-11-18.md'
   workflow_dispatch:
@@ -69,6 +75,7 @@ jobs:
           python3 -m py_compile scripts/publication_gate_status.py
           python3 -m py_compile scripts/verify_pinned_github_locators.py
           python3 -m py_compile scripts/test_hold_closure_registry.py
+          python3 -m py_compile scripts/audit_text_integrity.py
       - name: Test classification and read-only behaviour
         run: |
           python3 -B -m unittest discover -s scripts -p 'test_audit_repository_holds.py' -v
@@ -77,6 +84,7 @@ jobs:
           python3 -B -m unittest discover -s scripts -p 'test_publication_gate_status.py' -v
           python3 -B -m unittest discover -s scripts -p 'test_verify_pinned_github_locators.py' -v
           python3 -B -m unittest discover -s scripts -p 'test_hold_closure_registry.py' -v
+          python3 -B -m unittest discover -s scripts -p 'test_audit_text_integrity.py' -v
       - name: Scan (must not touch the working tree)
         run: |
           python3 scripts/audit_repository_holds.py -o /tmp/holds-a.json
@@ -91,6 +99,8 @@ jobs:
         run: python3 scripts/audit_relative_links.py --strict
       - name: Check non-canonical holds vocabulary coverage
         run: python3 -B scripts/check_hold_vocabulary.py --check
+      - name: Reject new glued tokens in prose
+        run: python3 -B scripts/audit_text_integrity.py --check
       - name: Check publication gate queue composition
         run: python3 -B scripts/publication_gate_status.py --check
       - name: Report counts without asserting closure

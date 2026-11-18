@@ -1,0 +1,129 @@
+{
+  "schemaVersion": "text-integrity-repairs/1",
+  "authorityId": "TEXT-INTEGRITY-GLUED-TOKENS-2026-11-18",
+  "snapshotDate": "2026-11-18",
+  "tool": "scripts/audit_text_integrity.py",
+  "method": "space-restoration-backed-by-file-history",
+  "rule": "Склейка «слово+число+слово» чинится только если окно ±25 символов, нечувствительное к пробелам, уже есть в прежнем blob'е того же файла. Файл, чьи текущие байты названы SHA-256 где-то в корпусе, не переписывается вообще: этот хеш — квитанция.",
+  "totals": {
+    "repairedTokens": 95,
+    "repairedFiles": 10,
+    "blockedTokens": 446,
+    "blockedFiles": 9,
+    "tokensRemainingRepairable": 0,
+    "nonWhitespaceDifferences": 0,
+    "invalidJsonAfterRepair": 0
+  },
+  "verification": {
+    "whitespaceInvariant": "re.sub(r'\\s+', '', before) == re.sub(r'\\s+', '', after) для всех изменённых файлов",
+    "jsonValidity": "json.load на каждом изменённом .json",
+    "postRepairAudit": "python3 -B scripts/audit_text_integrity.py --summary → 446 склеек в 9 файлах, все receipt-blocked",
+    "check": "python3 -B scripts/audit_text_integrity.py --check → 0 (ни одной чинимой склейки)",
+    "tests": "python3 -B -m unittest discover -s scripts -p 'test_audit_text_integrity.py' → 21 OK"
+  },
+  "files": [
+    {
+      "file": "БИОГРАФИИ/00_README_AND_NAVIGATION.md",
+      "repairedTokens": 1,
+      "firstCommitWithGluedForm": "c6a6ea67 2026-10-26 research: organize biographies and preserve audited Charnock research"
+    },
+    {
+      "file": "БИОГРАФИИ/01_GILL_RELOCATION_AND_SUPERSESSION_RECORD.md",
+      "repairedTokens": 2,
+      "firstCommitWithGluedForm": "c6a6ea67 2026-10-26 research: organize biographies and preserve audited Charnock research"
+    },
+    {
+      "file": "БИОГРАФИИ/08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
+      "repairedTokens": 52,
+      "firstCommitWithGluedForm": "c6a6ea67 2026-10-26 research: organize biographies and preserve audited Charnock research"
+    },
+    {
+      "file": "БИОГРАФИИ/Стивен Чарнок/01_BIOGRAPHICAL_WITNESSES_AND_EVIDENCE_HIERARCHY.md",
+      "repairedTokens": 2,
+      "firstCommitWithGluedForm": "c6a6ea67 2026-10-26 research: organize biographies and preserve audited Charnock research"
+    },
+    {
+      "file": "БИОГРАФИИ/Стивен Чарнок/02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md",
+      "repairedTokens": 24,
+      "firstCommitWithGluedForm": "c6a6ea67 2026-10-26 research: organize biographies and preserve audited Charnock research"
+    },
+    {
+      "file": "БИОГРАФИИ/Стивен Чарнок/03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md",
+      "repairedTokens": 2,
+      "firstCommitWithGluedForm": "c6a6ea67 2026-10-26 research: organize biographies and preserve audited Charnock research"
+    },
+    {
+      "file": "БИОГРАФИИ/Стивен Чарнок/06_CORPUS_ACCESS_MATRIX_AND_LOCATORS.md",
+      "repairedTokens": 7,
+      "firstCommitWithGluedForm": "c6a6ea67 2026-10-26 research: organize biographies and preserve audited Charnock research"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+      "repairedTokens": 3,
+      "firstCommitWithGluedForm": "9944ecd2 2026-10-26 круг 58 аудит серии: срез дерева, двадцать один пробел и семь дуг достройки"
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+      "repairedTokens": 1,
+      "firstCommitWithGluedForm": "3a1a3fb8 2026-11-17 research(atonement): integrate verified 18-chapter series and seven-agent source corpus (#309)"
+    },
+    {
+      "file": "ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/VERIFICATION_LOG.md",
+      "repairedTokens": 1,
+      "firstCommitWithGluedForm": "f10f9268 2026-06-27 research: Deep Pass IX — харизматич./евангелич. крыло (Pilavachi/Soul Survivor + Bethel Redding/Bolz-Armstrong) + углубление Houston финансовым слоем 2023 (Wilkie/ACNC/Dooley/Lentz)"
+    }
+  ],
+  "blockedFiles": [
+    {
+      "file": "БИОГРАФИИ/Стивен Чарнок/16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md",
+      "tokens": 277,
+      "reason": "sha256 текущих байтов записан в корпусе"
+    },
+    {
+      "file": "data/charnock-series-editorial-plan-v1.json",
+      "tokens": 96,
+      "reason": "sha256 текущих байтов записан в корпусе"
+    },
+    {
+      "file": "БИОГРАФИИ/Стивен Чарнок/00_README_AND_NAVIGATION.md",
+      "tokens": 29,
+      "reason": "sha256 текущих байтов записан в корпусе"
+    },
+    {
+      "file": "data/charnock-biographical-anchors-v1.json",
+      "tokens": 28,
+      "reason": "sha256 текущих байтов записан в корпусе"
+    },
+    {
+      "file": "БИОГРАФИИ/Стивен Чарнок/04_CHARACTER_MINISTRY_AND_THEOLOGY.md",
+      "tokens": 8,
+      "reason": "sha256 текущих байтов записан в корпусе"
+    },
+    {
+      "file": "БИОГРАФИИ/Стивен Чарнок/05_CONTROVERSIES_AND_CLAIM_AUDIT.md",
+      "tokens": 2,
+      "reason": "sha256 текущих байтов записан в корпусе"
+    },
+    {
+      "file": "БИОГРАФИИ/Стивен Чарнок/08_ADAMS_AND_VEAL_TO_THE_READER_PRIMARY_EPISTLE.md",
+      "tokens": 2,
+      "reason": "sha256 текущих байтов записан в корпусе"
+    },
+    {
+      "file": "БИОГРАФИИ/Стивен Чарнок/11_WOOD_ATHENAE_OXONIENSES_1691_PRIMARY_TRANSCRIPTION.md",
+      "tokens": 2,
+      "reason": "sha256 текущих байтов записан в корпусе"
+    },
+    {
+      "file": "БИОГРАФИИ/Стивен Чарнок/12_THE_SAYINGS_1680_BROADSIDE_PRIMARY_TRANSCRIPTION.md",
+      "tokens": 2,
+      "reason": "sha256 текущих байтов записан в корпусе"
+    }
+  ],
+  "limits": [
+    "Число, замыкающее слово (Кор80), не чинится: та же форма у цитат Мф5 и 1Кор.",
+    "446 склеек в 9 файлах корпуса Чарнока остаются: их текущие байты закреплены SHA-256 в квитанциях, и правка сломала бы квитанцию молча. Нужен владелец корпуса, который переиздаст квитанцию.",
+    "Возвращены пробелы, а не иное повреждение того же прохода.",
+    "Наличие окна в истории доказывает раздельность слов, но не верность числа по существу."
+  ]
+}
