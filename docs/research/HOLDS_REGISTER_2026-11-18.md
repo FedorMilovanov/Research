@@ -25,27 +25,31 @@
 
 | Показатель | Значение |
 |---|---:|
-| просканировано текстовых файлов | 3 074 |
+| просканировано текстовых файлов | 3 075 |
 | файлов хотя бы с одним маркером | 889 |
-| канонические упоминания `PUBLICATION_HOLD` | 2 575 |
-| канонические упоминания `LOCATOR_HOLD` | 1 972 |
-| канонические упоминания `RIGHTS_HOLD` | 1 454 |
-| канонические упоминания `ARCHIVE_HOLD` | 1 417 |
-| канонические упоминания `EVIDENCE_HOLD` | 1 291 |
-| строки, где флаг зафиксирован как действующий (`open`) | 2 338 |
-| строки, где флаг зафиксирован как снятый (`closed`) | 819 |
-| строки без явного состояния (`unmarked`) | 5 955 |
+| канонические упоминания `PUBLICATION_HOLD` | 2 573 |
+| канонические упоминания `LOCATOR_HOLD` | 1 963 |
+| канонические упоминания `RIGHTS_HOLD` | 1 448 |
+| канонические упоминания `ARCHIVE_HOLD` | 1 408 |
+| канонические упоминания `EVIDENCE_HOLD` | 1 289 |
+| строки, где флаг зафиксирован как действующий (`open`) | 2 335 |
+| строки, где флаг зафиксирован как снятый (`closed`) | 818 |
+| строки без явного состояния (`unmarked`) | 5 931 |
 | строки, где одновременно записаны и снятие, и сохранение (`mixed`) | 403 |
-| JSON-файлов с массивом `holds` | 39 |
-| значений в массивах `holds` | 6 152 |
+| JSON-файлов с массивом `holds` | 38 |
+| значений в массивах `holds` | 6 146 |
+
+Замер снят с исключением артефактов, которые **сами описывают удержания** (`data/repository-holds-inventory-v1.json`, `data/hold-closure-registry-v1.json`, `data/hold-value-mapping-proposal-v1.json`, этот регистр): иначе пасс считал бы свои же классы и число зависело бы от того, сколько их перечислили. Поэтому цифры ниже отличаются от предыдущего снимка не только потому, что добавились файлы.
 
 **Как читать числа.** Это счётчик текста, а не аудит источников: одна строка может называть
 несколько флагов, `mixed`-строки попадают в оба состояния (поэтому `open + closed + unmarked + mixed`
 не равна сумме упоминаний), исторические блоки учитываются наравне с текущими. Смысл среза — не
-«8706 проблем», а карта: где именно стоит маркер и записано ли рядом его состояние.
+«8 681 проблема», а карта: где именно стоит маркер и записано ли рядом его состояние.
 
-**Что не считается.** Собственные артефакты инвентаря (`data/repository-holds-inventory-v1.json`
-и этот документ) исключены из сканирования, иначе снимок учитывал бы сам себя. Каталоги `.git`,
+**Что не считается.** Собственные артефакты инвентаря исключены из сканирования, иначе снимок
+учитывал бы сам себя: `data/repository-holds-inventory-v1.json`, этот документ,
+`data/hold-closure-registry-v1.json` и `data/hold-value-mapping-proposal-v1.json` — последние два
+называют классы удержаний, а не состояния объектов. Каталоги `.git`,
 `google_drive`, `.cache`, `.scratch`, `node_modules` и аналогичные не сканируются.
 
 ### 2.1. Где стоят канонические флаги
@@ -106,7 +110,7 @@
 
 ## 5. Наблюдение по машинным реестрам (не исправлялось)
 
-В 39 JSON-файлах массивы `holds` содержат 6 152 значения, из них **134 значения (39 различных) —
+В 38 JSON-файлах массивы `holds` содержат 6 146 значений, из них **134 значения (39 различных) —
 не канонические HOLD-флаги**: `ORIGINAL_TEXT_HOLD` (25), `PRIVATE_STUDY_ONLY` (13),
 `LOCATOR_PARTIAL` (12), `FALSE_FRIEND` (11), `QUOTE_RISK` (6), `ATTRIBUTION_HOLD`/`EDITION_HOLD`
 (по 5), а также единичные `RESOLVED-BY-TEXT`, `PARTIAL_OBJECT`, `RIGHTS_UNKNOWN`, `BLOCKED`,
@@ -165,7 +169,7 @@ HOLD-флаги считались, а мёртвые относительные
 механический: путь обещает объект, объекта нет. Добавлен read-only замер
 `scripts/audit_relative_links.py` (18 офлайн-тестов, CI-шаг «Reject unexplained dead locators»).
 
-Замер на 18.11.2026: **2 407** Markdown-файлов, **8 710** ссылок — `resolves` 2 686,
+Замер на 18.11.2026: **2 407** Markdown-файлов, **8 712** ссылок — `resolves` 2 688,
 `external` 5 966, `missing` 58, `outside` 0, `unqualified` 0. Все 58 дефектов разобраны:
 
 | Класс | Ссылок | Что сделано | Почему так |
@@ -188,4 +192,74 @@ HOLD-флаги считались, а мёртвые относительные
 python3 -B scripts/audit_relative_links.py --summary
 python3 -B scripts/audit_relative_links.py --strict          # 0 необъяснённых
 python3 -B scripts/audit_relative_links.py --only missing    # полный список с номерами строк
+```
+
+## 9. Неканонические значения `holds`: предложение соответствия (не правка)
+
+В 38 JSON-файлах массивы `holds` содержат 6 146 значений, из них **134 (39 написаний)** — не
+канонические флаги. Это смешение осей, которое policy v2 запрещает концептуально. Автоматически
+переписать такие поля нельзя — это machine-SSOT чужих корпусов, — но и оставлять их без разбора
+значит хранить неизмеримое.
+
+Предложение вынесено в `data/hold-value-mapping-proposal-v1.json` со статусом **`PROPOSAL_ONLY`**:
+ни одно значение в реестрах не перезаписано. Классы:
+
+| Класс | Значений | Что означает |
+|---|---:|---|
+| `canonical` | 80 | по смыслу это канонический HOLD, записанный своим именем |
+| `axis` | 24 | это значение оси policy v2 (`accessState` / `rightsState` / `publicationState` / `locatorState`), а не HOLD |
+| `split` | 7 | в одной строке склеены две вещи (флаг + статус, два флага) |
+| `status` | 20 | статус записи, а не удержание: `OPEN`, `RESOLVED-BY-TEXT`, `RESEARCH / NOT PRODUCT` |
+| `manual` | 3 | из строки не выводится (`HOLD`, `FORBIDDEN`), читает человек |
+
+| Написание в `holds` | Значений | Класс | Предлагаемое место |
+|---|---:|---|---|
+| `ORIGINAL_TEXT_HOLD` | 25 | canonical | EVIDENCE_HOLD |
+| `PRIVATE_STUDY_ONLY` | 13 | axis | rightsState=PRIVATE_STUDY_ONLY (+ RIGHTS_HOLD while publication is intended) |
+| `LOCATOR_PARTIAL` | 12 | canonical | LOCATOR_HOLD (+ locatorState=COARSE_LOCATOR_ONLY) |
+| `FALSE_FRIEND` | 11 | status | translationRisk note; no hold |
+| `QUOTE_RISK` | 6 | canonical | PUBLICATION_HOLD |
+| `ATTRIBUTION_HOLD` | 5 | canonical | EVIDENCE_HOLD |
+| `EDITION_HOLD` | 5 | canonical | EVIDENCE_HOLD (+ PUBLICATION_HOLD when a quote depends on it) |
+| `FALSE_LOCATOR` | 5 | canonical | LOCATOR_HOLD |
+| `MT_HOLD` | 5 | canonical | EVIDENCE_HOLD (note: Masoretic tradition) |
+| `LXX_HOLD` | 4 | canonical | EVIDENCE_HOLD (note: Septuagint tradition) |
+| `PARTIAL_VERIFICATION` | 4 | axis | accessState=PARTIAL_OBJECT (+ EVIDENCE_HOLD if a claim depends on the missing part) |
+| `ATTRIBUTION_SECONDARY` | 3 | canonical | EVIDENCE_HOLD |
+| `RIGHTS_UNKNOWN` | 3 | axis | rightsState=RIGHTS_UNKNOWN (+ RIGHTS_HOLD) |
+| `DRAFT / PUBLICATION_HOLD` | 2 | split | PUBLICATION_HOLD + status=DRAFT |
+| `EDITION_UNAVAILABLE` | 2 | split | EVIDENCE_HOLD + accessState=NOT_ACQUIRED |
+| `HOLD` | 2 | manual | requires per-record reading |
+| `OPEN` | 2 | status | status=OPEN; no hold |
+| `OPEN-LAYER` | 2 | status | status=OPEN (layer pending); no hold |
+| `OPEN_TENSION` | 2 | status | conflict record (CONFLICT) with status OPEN |
+| `RECONCILIATION_HOLD` | 2 | canonical | EVIDENCE_HOLD (+ pointer to the conflict record) |
+| `APPARATUS_FALSE_FRIEND` | 1 | status | translationRisk note (apparatus); no hold |
+| `BLOCKED` | 1 | axis | publicationState=BLOCKED (+ PUBLICATION_HOLD) |
+| `CONFLICT / LOCATOR_HOLD` | 1 | split | LOCATOR_HOLD + conflict record |
+| `CONTEXT_HOLD` | 1 | canonical | EVIDENCE_HOLD |
+| `DATE_HOLD` | 1 | canonical | EVIDENCE_HOLD |
+| `FACSIMILE_HOLD` | 1 | canonical | EVIDENCE_HOLD (+ accessState=PARTIAL_OBJECT) |
+| `FORBIDDEN` | 1 | manual | requires per-record reading |
+| `LOCATOR_SINGLE_ATTESTATION` | 1 | canonical | LOCATOR_HOLD |
+| `MIRROR-LAG` | 1 | canonical | ARCHIVE_HOLD |
+| `NO SETTLED VERDICT / EVIDENCE_HOLD` | 1 | split | EVIDENCE_HOLD + status=no settled verdict |
+| `PARTIALLY_VERIFIED` | 1 | axis | accessState=PARTIAL_OBJECT |
+| `PARTIAL_OBJECT` | 1 | axis | accessState=PARTIAL_OBJECT |
+| `PERMISSION_REQUIRED` | 1 | axis | rightsState=PERMISSION_REQUIRED (+ RIGHTS_HOLD) |
+| `RESEARCH / NOT PRODUCT` | 1 | status | publicationState=REFERENCE |
+| `RESEARCH / NOT PUBLICATION-READY` | 1 | canonical | PUBLICATION_HOLD |
+| `RESOLVED-BY-TEXT` | 1 | status | closed: record with pointer to the passage that resolved it |
+| `RIGHTS_HOLD + PUBLICATION_HOLD` | 1 | split | RIGHTS_HOLD + PUBLICATION_HOLD |
+| `RIGHTS_UNCLEAR` | 1 | canonical | RIGHTS_HOLD (+ rightsState=RIGHTS_UNKNOWN) |
+| `TEXT_ACCESS_HOLD` | 1 | canonical | EVIDENCE_HOLD (+ accessState=LINK_ONLY|NOT_ACQUIRED) |
+
+Проверка не даёт таблице разойтись с инвентарём: `scripts/check_hold_vocabulary.py --check`
+сверяет покрытие (каждое написание из инвентаря отображено, устаревших нет), счётчики и то, что
+предложенная ось существует в policy v2 с таким значением. Смена статуса с `PROPOSAL_ONLY`
+валит проверку — правка реестров возможна только решением владельца корпуса, а не скриптом.
+
+```bash
+python3 -B scripts/check_hold_vocabulary.py --check    # PASS: 39 написаний / 134 значения
+python3 -B scripts/check_hold_vocabulary.py --render   # таблица выше — из машинного файла
 ```

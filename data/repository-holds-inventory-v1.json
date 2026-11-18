@@ -41,6 +41,8 @@
       "target"
     ],
     "selfReferentialArtifacts": [
+      "data/hold-closure-registry-v1.json",
+      "data/hold-value-mapping-proposal-v1.json",
       "data/repository-holds-inventory-v1.json",
       "docs/research/HOLDS_REGISTER_2026-11-18.md"
     ],
@@ -74,13 +76,13 @@
     ]
   },
   "totals": {
-    "filesScanned": 3074,
+    "filesScanned": 3075,
     "filesWithMentions": 889,
     "mentions": {
-      "ARCHIVE_HOLD": 1417,
+      "ARCHIVE_HOLD": 1408,
       "BLOCKING-HOLD": 16,
       "BOOK-FULLTEXT-HOLD": 15,
-      "EVIDENCE_HOLD": 1291,
+      "EVIDENCE_HOLD": 1289,
       "HOLD-APPARATUS": 1,
       "HOLD-AS": 3,
       "HOLD-GLOSS": 1,
@@ -96,22 +98,22 @@
       "HOLD_MAJOR": 11,
       "HOLD_RETAINED": 1,
       "LIVE-READBACK-HOLD": 4,
-      "LOCATOR_HOLD": 1972,
+      "LOCATOR_HOLD": 1963,
       "PAGE-IMAGE-HOLD": 14,
-      "PUBLICATION_HOLD": 2575,
-      "RIGHTS_HOLD": 1454,
+      "PUBLICATION_HOLD": 2573,
+      "RIGHTS_HOLD": 1448,
       "VERSION-HOLD": 23
     },
     "mentionsByStatus": {
-      "closed": 819,
-      "open": 2338,
-      "unmarked": 5955
+      "closed": 818,
+      "open": 2335,
+      "unmarked": 5931
     },
     "canonicalFlagLineStatesRecordedAsBothOpenAndClosed": 403,
-    "filesWithJsonHolds": 39,
+    "filesWithJsonHolds": 38,
     "jsonHoldsValues": {
       "APPARATUS_FALSE_FRIEND": 1,
-      "ARCHIVE_HOLD": 1345,
+      "ARCHIVE_HOLD": 1344,
       "ATTRIBUTION_HOLD": 5,
       "ATTRIBUTION_SECONDARY": 3,
       "BLOCKED": 1,
@@ -121,13 +123,13 @@
       "DRAFT / PUBLICATION_HOLD": 2,
       "EDITION_HOLD": 5,
       "EDITION_UNAVAILABLE": 2,
-      "EVIDENCE_HOLD": 1115,
+      "EVIDENCE_HOLD": 1113,
       "FACSIMILE_HOLD": 1,
       "FALSE_FRIEND": 11,
       "FALSE_LOCATOR": 5,
       "FORBIDDEN": 1,
       "HOLD": 2,
-      "LOCATOR_HOLD": 237,
+      "LOCATOR_HOLD": 236,
       "LOCATOR_PARTIAL": 12,
       "LOCATOR_SINGLE_ATTESTATION": 1,
       "LXX_HOLD": 4,
@@ -143,13 +145,13 @@
       "PARTIAL_VERIFICATION": 4,
       "PERMISSION_REQUIRED": 1,
       "PRIVATE_STUDY_ONLY": 13,
-      "PUBLICATION_HOLD": 1965,
+      "PUBLICATION_HOLD": 1964,
       "QUOTE_RISK": 6,
       "RECONCILIATION_HOLD": 2,
       "RESEARCH / NOT PRODUCT": 1,
       "RESEARCH / NOT PUBLICATION-READY": 1,
       "RESOLVED-BY-TEXT": 1,
-      "RIGHTS_HOLD": 1356,
+      "RIGHTS_HOLD": 1355,
       "RIGHTS_HOLD + PUBLICATION_HOLD": 1,
       "RIGHTS_UNCLEAR": 1,
       "RIGHTS_UNKNOWN": 3,
@@ -338,19 +340,19 @@
       }
     },
     "data": {
-      "files": 20,
+      "files": 19,
       "mentions": {
-        "ARCHIVE_HOLD": 16,
-        "EVIDENCE_HOLD": 17,
+        "ARCHIVE_HOLD": 6,
+        "EVIDENCE_HOLD": 9,
         "HOLD_MAJOR": 3,
-        "LOCATOR_HOLD": 34,
-        "PUBLICATION_HOLD": 33,
-        "RIGHTS_HOLD": 17
+        "LOCATOR_HOLD": 24,
+        "PUBLICATION_HOLD": 25,
+        "RIGHTS_HOLD": 10
       },
       "status": {
-        "closed": 11,
-        "open": 12,
-        "unmarked": 100
+        "closed": 10,
+        "open": 9,
+        "unmarked": 61
       }
     },
     "docs": {
@@ -369,12 +371,12 @@
       }
     },
     "scripts": {
-      "files": 39,
+      "files": 40,
       "mentions": {
-        "ARCHIVE_HOLD": 35,
+        "ARCHIVE_HOLD": 36,
         "BLOCKING-HOLD": 4,
         "BOOK-FULLTEXT-HOLD": 1,
-        "EVIDENCE_HOLD": 43,
+        "EVIDENCE_HOLD": 49,
         "HOLD-APPARATUS": 1,
         "HOLD-AS": 1,
         "HOLD-GLOSS": 1,
@@ -390,16 +392,16 @@
         "HOLD_MAJOR": 1,
         "HOLD_RETAINED": 1,
         "LIVE-READBACK-HOLD": 1,
-        "LOCATOR_HOLD": 14,
+        "LOCATOR_HOLD": 15,
         "PAGE-IMAGE-HOLD": 2,
-        "PUBLICATION_HOLD": 96,
-        "RIGHTS_HOLD": 45,
+        "PUBLICATION_HOLD": 102,
+        "RIGHTS_HOLD": 46,
         "VERSION-HOLD": 4
       },
       "status": {
         "closed": 7,
         "open": 13,
-        "unmarked": 215
+        "unmarked": 230
       }
     },
     "БАПТИСТЫ РОССИИ": {
@@ -14342,36 +14344,6 @@
       ]
     },
     {
-      "path": "data/hold-closure-registry-v1.json",
-      "pointer": "/notClosed/0/holds",
-      "values": [
-        "EVIDENCE_HOLD",
-        "LOCATOR_HOLD"
-      ]
-    },
-    {
-      "path": "data/hold-closure-registry-v1.json",
-      "pointer": "/notClosed/1/holds",
-      "values": [
-        "RIGHTS_HOLD",
-        "PUBLICATION_HOLD"
-      ]
-    },
-    {
-      "path": "data/hold-closure-registry-v1.json",
-      "pointer": "/notClosed/2/holds",
-      "values": [
-        "ARCHIVE_HOLD"
-      ]
-    },
-    {
-      "path": "data/hold-closure-registry-v1.json",
-      "pointer": "/notClosed/3/holds",
-      "values": [
-        "EVIDENCE_HOLD"
-      ]
-    },
-    {
       "path": "data/osk-wave6-site-transfer-ledger-2026-08-01.json",
       "pointer": "/existing_article_decision/holds",
       "values": [
@@ -25927,22 +25899,6 @@
       }
     },
     {
-      "path": "data/hold-closure-registry-v1.json",
-      "corpus": "data",
-      "mentions": {
-        "ARCHIVE_HOLD": 10,
-        "EVIDENCE_HOLD": 8,
-        "LOCATOR_HOLD": 10,
-        "PUBLICATION_HOLD": 8,
-        "RIGHTS_HOLD": 7
-      },
-      "status": {
-        "closed": 1,
-        "open": 3,
-        "unmarked": 39
-      }
-    },
-    {
       "path": "data/osk-wave2-decisions-2026-08-01.json",
       "corpus": "data",
       "mentions": {
@@ -27658,6 +27614,20 @@
         "closed": 5,
         "open": 10,
         "unmarked": 14
+      }
+    },
+    {
+      "path": "scripts/test_check_hold_vocabulary.py",
+      "corpus": "scripts",
+      "mentions": {
+        "ARCHIVE_HOLD": 1,
+        "EVIDENCE_HOLD": 6,
+        "LOCATOR_HOLD": 1,
+        "PUBLICATION_HOLD": 6,
+        "RIGHTS_HOLD": 1
+      },
+      "status": {
+        "unmarked": 15
       }
     },
     {

@@ -93,6 +93,13 @@ SKIP_DIRS = {
 SELF_REFERENTIAL = {
     "data/repository-holds-inventory-v1.json",
     "docs/research/HOLDS_REGISTER_2026-11-18.md",
+    # The closure registry and the vocabulary proposal are bookkeeping *about*
+    # holds: their `holds` fields name the classes they discuss, not the state
+    # of an object. Counting them would let this pass inflate the very numbers
+    # it is supposed to measure -- and would make the snapshot depend on how
+    # many classes the register happens to list.
+    "data/hold-closure-registry-v1.json",
+    "data/hold-value-mapping-proposal-v1.json",
 }
 
 TEXT_SUFFIXES = {

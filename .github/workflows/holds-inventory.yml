@@ -13,6 +13,9 @@ on:
       - 'scripts/audit_relative_links.py'
       - 'scripts/test_audit_relative_links.py'
       - 'data/relative-link-exceptions-v1.json'
+      - 'scripts/check_hold_vocabulary.py'
+      - 'scripts/test_check_hold_vocabulary.py'
+      - 'data/hold-value-mapping-proposal-v1.json'
   push:
     branches: [main]
     paths:
@@ -26,6 +29,9 @@ on:
       - 'scripts/audit_relative_links.py'
       - 'scripts/test_audit_relative_links.py'
       - 'data/relative-link-exceptions-v1.json'
+      - 'scripts/check_hold_vocabulary.py'
+      - 'scripts/test_check_hold_vocabulary.py'
+      - 'data/hold-value-mapping-proposal-v1.json'
   workflow_dispatch:
 
 permissions:
@@ -43,10 +49,12 @@ jobs:
         run: |
           python3 -m py_compile scripts/audit_repository_holds.py
           python3 -m py_compile scripts/audit_relative_links.py
+          python3 -m py_compile scripts/check_hold_vocabulary.py
       - name: Test classification and read-only behaviour
         run: |
           python3 -B -m unittest discover -s scripts -p 'test_audit_repository_holds.py' -v
           python3 -B -m unittest discover -s scripts -p 'test_audit_relative_links.py' -v
+          python3 -B -m unittest discover -s scripts -p 'test_check_hold_vocabulary.py' -v
       - name: Scan (must not touch the working tree)
         run: |
           python3 scripts/audit_repository_holds.py -o /tmp/holds-a.json
@@ -59,6 +67,8 @@ jobs:
         run: git diff --exit-code
       - name: Reject unexplained dead locators
         run: python3 scripts/audit_relative_links.py --strict
+      - name: Check non-canonical holds vocabulary coverage
+        run: python3 -B scripts/check_hold_vocabulary.py --check
       - name: Report counts without asserting closure
         run: |
           python3 scripts/audit_repository_holds.py --summary

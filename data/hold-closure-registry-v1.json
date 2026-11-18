@@ -145,7 +145,7 @@
       "title": "Локаторная ось Markdown: 58 мёртвых относительных ссылок классифицированы, 3 дефекта починены, остальное объяснено точечно",
       "holdType": "LOCATOR_HOLD",
       "previousState": "Машинного учёта относительных ссылок в репозитории не было: сколько мёртвых путей, в каких файлах и почему — не измерялось. Два пути в STEVE_LAWSON/README.md вели на удалённые файлы, один внешний URL был записан без схемы, архивная копия корневого README выглядела как набор битых ссылок.",
-      "closedScope": "Не «все LOCATOR_HOLD корпуса», а локаторная ось Markdown: 2 407 файлов, 8 710 ссылок измерены, 58 дефектов разобраны по классам; 3 дефекта исправлены проверяемым способом (указание на коммит вместо мёртвого пути; добавление схемы https://), остальные 55 записаны в data/relative-link-exceptions-v1.json парами (файл, ссылка) с причиной. Ни одна ссылка не переписана «на глаз».",
+      "closedScope": "Не «все LOCATOR_HOLD корпуса», а локаторная ось Markdown: 2 407 файлов, 8 712 ссылок измерены, 58 дефектов разобраны по классам; 3 дефекта исправлены проверяемым способом (указание на коммит вместо мёртвого пути; добавление схемы https://), остальные 55 записаны в data/relative-link-exceptions-v1.json парами (файл, ссылка) с причиной. Ни одна ссылка не переписана «на глаз».",
       "recordLocations": [
         "scripts/audit_relative_links.py",
         "scripts/test_audit_relative_links.py",
@@ -166,7 +166,7 @@
       ],
       "verification": {
         "command": "python3 -B scripts/audit_relative_links.py --summary && python3 -B scripts/audit_relative_links.py --strict",
-        "expect": "resolves 2 686, missing 58, outside 0, unqualified 0, external 5 966; explained 58, unexplained 0; strict exit 0",
+        "expect": "resolves 2 688, missing 58, outside 0, unqualified 0, external 5 966; explained 58, unexplained 0; strict exit 0",
         "tests": "python3 -B -m unittest discover -s scripts -p 'test_audit_relative_links.py' → 18 OK",
         "ci": ".github/workflows/holds-inventory.yml, шаг «Reject unexplained dead locators»"
       },
@@ -190,6 +190,13 @@
     }
   ],
   "notClosed": [
+    {
+      "class": "Неканонические значения `holds` (134 значения / 39 написаний)",
+      "holds": ["EVIDENCE_HOLD", "LOCATOR_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"],
+      "reason": "Смешение осей в machine-SSOT: часть значений — это accessState/rightsState/publicationState, часть — статусы, часть — склейки двух флагов. Переписывать поля без владельца корпуса нельзя.",
+      "proposal": "data/hold-value-mapping-proposal-v1.json (status PROPOSAL_ONLY): 80 значений — канонические флаги, 24 — значения осей, 7 — склейки, 20 — статусы, 3 — требуют чтения записи человеком. Проверка соответствия: python3 -B scripts/check_hold_vocabulary.py --check",
+      "decisionRequiredFrom": "владелец корпуса"
+    },
     {
       "class": "Внешние первоисточники и точные страницы",
       "holds": ["EVIDENCE_HOLD", "LOCATOR_HOLD"],

@@ -1,0 +1,427 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "RESEARCH-HOLD-VALUE-MAPPING-PROPOSAL-V1",
+  "date": "2026-11-18",
+  "status": "PROPOSAL_ONLY",
+  "policy": "data/repository-evidence-policy-v2.json",
+  "inventory": "data/repository-holds-inventory-v1.json",
+  "note": "Предложение владельцу корпуса. Ни одно значение в машинных реестрах не перезаписано: здесь только соответствие «написание -> ось/канонический флаг/статус» с обоснованием по policy v2. Канонический флаг — это HOLD; ось — accessState/locatorState/rightsState/publicationState; статус — не удержание. Значения класса `manual` нельзя вывести из строки, их читает человек.",
+  "counts": {
+    "values": 134,
+    "spellings": 39,
+    "byClass": {
+      "axis": 24,
+      "canonical": 80,
+      "manual": 3,
+      "split": 7,
+      "status": 20
+    }
+  },
+  "values": [
+    {
+      "value": "ORIGINAL_TEXT_HOLD",
+      "count": 25,
+      "files": [
+        "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+        "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+        "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
+      ],
+      "class": "canonical",
+      "proposedRepresentation": "EVIDENCE_HOLD",
+      "justification": "Original-language text/witness not read: the object itself is absent, so the claim rests on an edition or a translation. That is EVIDENCE_HOLD; the axis value accessState=NOT_ACQUIRED says the same in the vocabulary of policy v2."
+    },
+    {
+      "value": "PRIVATE_STUDY_ONLY",
+      "count": 13,
+      "files": [
+        "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+        "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+        "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
+      ],
+      "class": "axis",
+      "proposedRepresentation": "rightsState=PRIVATE_STUDY_ONLY (+ RIGHTS_HOLD while publication is intended)",
+      "justification": "Already an exact rightsState value in policy v2. Leaving it inside a HOLD array mixes two axes; a value that describes rights must live in the rights field."
+    },
+    {
+      "value": "LOCATOR_PARTIAL",
+      "count": 12,
+      "files": [
+        "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+        "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+        "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
+      ],
+      "class": "canonical",
+      "proposedRepresentation": "LOCATOR_HOLD (+ locatorState=COARSE_LOCATOR_ONLY)",
+      "justification": "Exactly a locator not exact enough for a quote-safe claim; the canonical flag exists for this."
+    },
+    {
+      "value": "FALSE_FRIEND",
+      "count": 11,
+      "files": [
+        "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+        "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json"
+      ],
+      "class": "status",
+      "proposedRepresentation": "translationRisk note; no hold",
+      "justification": "A false friend is a hazard of translation, not a state of the object. It forbids a phrasing, it does not block the source."
+    },
+    {
+      "value": "QUOTE_RISK",
+      "count": 6,
+      "files": [
+        "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json"
+      ],
+      "class": "canonical",
+      "proposedRepresentation": "PUBLICATION_HOLD",
+      "justification": "If a passage cannot be quoted safely yet, publication of that claim is what is blocked."
+    },
+    {
+      "value": "ATTRIBUTION_HOLD",
+      "count": 5,
+      "files": [
+        "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+        "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
+      ],
+      "class": "canonical",
+      "proposedRepresentation": "EVIDENCE_HOLD",
+      "justification": "While authorship/witness attribution is unsettled the evidence itself is not established."
+    },
+    {
+      "value": "EDITION_HOLD",
+      "count": 5,
+      "files": [
+        "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+        "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
+      ],
+      "class": "canonical",
+      "proposedRepresentation": "EVIDENCE_HOLD (+ PUBLICATION_HOLD when a quote depends on it)",
+      "justification": "An unidentified edition fails quoteSafeContract.requiresIdentifiedEditionOrVersion, so the claim is not evidence-grade and cannot be promoted."
+    },
+    {
+      "value": "FALSE_LOCATOR",
+      "count": 5,
+      "files": [
+        "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json"
+      ],
+      "class": "canonical",
+      "proposedRepresentation": "LOCATOR_HOLD",
+      "justification": "The recorded locator is wrong; nothing about the object changed, only the pointer."
+    },
+    {
+      "value": "MT_HOLD",
+      "count": 5,
+      "files": [
+        "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+        "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json"
+      ],
+      "class": "canonical",
+      "proposedRepresentation": "EVIDENCE_HOLD (note: Masoretic tradition)",
+      "justification": "Tradition-specific: the Masoretic reading was not read. The tradition belongs in a note; the hold is evidentiary."
+    },
+    {
+      "value": "LXX_HOLD",
+      "count": 4,
+      "files": [
+        "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+        "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json"
+      ],
+      "class": "canonical",
+      "proposedRepresentation": "EVIDENCE_HOLD (note: Septuagint tradition)",
+      "justification": "Same as MT_HOLD: tradition in a note, hold in the canonical flag."
+    },
+    {
+      "value": "PARTIAL_VERIFICATION",
+      "count": 4,
+      "files": [
+        "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json"
+      ],
+      "class": "axis",
+      "proposedRepresentation": "accessState=PARTIAL_OBJECT (+ EVIDENCE_HOLD if a claim depends on the missing part)",
+      "justification": "Already an access-state meaning; a partial read is not a verdict about the claim."
+    },
+    {
+      "value": "ATTRIBUTION_SECONDARY",
+      "count": 3,
+      "files": [
+        "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+        "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
+      ],
+      "class": "canonical",
+      "proposedRepresentation": "EVIDENCE_HOLD",
+      "justification": "B1-only corroboration cannot stand as sole support (policy v2, b1SoleSupportForbidden); the hold is evidentiary, the class stays in evidenceClass."
+    },
+    {
+      "value": "RIGHTS_UNKNOWN",
+      "count": 3,
+      "files": [
+        "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+        "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+        "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
+      ],
+      "class": "axis",
+      "proposedRepresentation": "rightsState=RIGHTS_UNKNOWN (+ RIGHTS_HOLD)",
+      "justification": "Exact rightsState value in policy v2."
+    },
+    {
+      "value": "DRAFT / PUBLICATION_HOLD",
+      "count": 2,
+      "files": [
+        "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
+      ],
+      "class": "split",
+      "proposedRepresentation": "PUBLICATION_HOLD + status=DRAFT",
+      "justification": "Two facts glued by a slash: document status and a hold. Each belongs in its own field."
+    },
+    {
+      "value": "EDITION_UNAVAILABLE",
+      "count": 2,
+      "files": [
+        "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
+      ],
+      "class": "split",
+      "proposedRepresentation": "EVIDENCE_HOLD + accessState=NOT_ACQUIRED",
+      "justification": "Says both \"edition not held\" and \"object not acquired\"; the canonical system separates them."
+    },
+    {
+      "value": "HOLD",
+      "count": 2,
+      "files": [
+        "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+        "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
+      ],
+      "class": "manual",
+      "proposedRepresentation": "requires per-record reading",
+      "justification": "Untyped. Which axis it means cannot be inferred from the string; guessing would be fabrication."
+    },
+    {
+      "value": "OPEN",
+      "count": 2,
+      "files": [
+        "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
+      ],
+      "class": "status",
+      "proposedRepresentation": "status=OPEN; no hold",
+      "justification": "An open question is not a hold: nothing is being withheld, the work is simply unfinished."
+    },
+    {
+      "value": "OPEN-LAYER",
+      "count": 2,
+      "files": [
+        "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
+      ],
+      "class": "status",
+      "proposedRepresentation": "status=OPEN (layer pending); no hold",
+      "justification": "Same as OPEN, with the layer named."
+    },
+    {
+      "value": "OPEN_TENSION",
+      "count": 2,
+      "files": [
+        "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json"
+      ],
+      "class": "status",
+      "proposedRepresentation": "conflict record (CONFLICT) with status OPEN",
+      "justification": "An unresolved tension between sources is a conflict record, not a hold on the object."
+    },
+    {
+      "value": "RECONCILIATION_HOLD",
+      "count": 2,
+      "files": [
+        "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json"
+      ],
+      "class": "canonical",
+      "proposedRepresentation": "EVIDENCE_HOLD (+ pointer to the conflict record)",
+      "justification": "Two sources disagree and neither is established; that is an evidentiary hold, and the disagreement itself belongs to the conflict ledger."
+    },
+    {
+      "value": "APPARATUS_FALSE_FRIEND",
+      "count": 1,
+      "files": [
+        "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json"
+      ],
+      "class": "status",
+      "proposedRepresentation": "translationRisk note (apparatus); no hold",
+      "justification": "Same class as FALSE_FRIEND, narrowed to the apparatus."
+    },
+    {
+      "value": "BLOCKED",
+      "count": 1,
+      "files": [
+        "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json"
+      ],
+      "class": "axis",
+      "proposedRepresentation": "publicationState=BLOCKED (+ PUBLICATION_HOLD)",
+      "justification": "Exact publicationState value in policy v2."
+    },
+    {
+      "value": "CONFLICT / LOCATOR_HOLD",
+      "count": 1,
+      "files": [
+        "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json"
+      ],
+      "class": "split",
+      "proposedRepresentation": "LOCATOR_HOLD + conflict record",
+      "justification": "The hold part is canonical; the conflict part belongs to the conflict ledger."
+    },
+    {
+      "value": "CONTEXT_HOLD",
+      "count": 1,
+      "files": [
+        "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
+      ],
+      "class": "canonical",
+      "proposedRepresentation": "EVIDENCE_HOLD",
+      "justification": "quoteSafeContract.requiresContextVerification is unmet; context unverified is an evidentiary hold."
+    },
+    {
+      "value": "DATE_HOLD",
+      "count": 1,
+      "files": [
+        "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
+      ],
+      "class": "canonical",
+      "proposedRepresentation": "EVIDENCE_HOLD",
+      "justification": "Dating unresolved weakens the claim itself, not its pointer."
+    },
+    {
+      "value": "FACSIMILE_HOLD",
+      "count": 1,
+      "files": [
+        "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json"
+      ],
+      "class": "canonical",
+      "proposedRepresentation": "EVIDENCE_HOLD (+ accessState=PARTIAL_OBJECT)",
+      "justification": "The facsimile was not seen, so only a transcription was read: a partial object."
+    },
+    {
+      "value": "FORBIDDEN",
+      "count": 1,
+      "files": [
+        "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
+      ],
+      "class": "manual",
+      "proposedRepresentation": "requires per-record reading",
+      "justification": "Could be a rights prohibition, a doctrinal ban or a scope rule; the string alone does not say which."
+    },
+    {
+      "value": "LOCATOR_SINGLE_ATTESTATION",
+      "count": 1,
+      "files": [
+        "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
+      ],
+      "class": "canonical",
+      "proposedRepresentation": "LOCATOR_HOLD",
+      "justification": "A locator attested by a single witness is not an exact locator."
+    },
+    {
+      "value": "MIRROR-LAG",
+      "count": 1,
+      "files": [
+        "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json"
+      ],
+      "class": "canonical",
+      "proposedRepresentation": "ARCHIVE_HOLD",
+      "justification": "The mirror trails the source: the archive copy is not the current object."
+    },
+    {
+      "value": "NO SETTLED VERDICT / EVIDENCE_HOLD",
+      "count": 1,
+      "files": [
+        "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json"
+      ],
+      "class": "split",
+      "proposedRepresentation": "EVIDENCE_HOLD + status=no settled verdict",
+      "justification": "Canonical hold plus a status phrase; keep them apart."
+    },
+    {
+      "value": "PARTIALLY_VERIFIED",
+      "count": 1,
+      "files": [
+        "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json"
+      ],
+      "class": "axis",
+      "proposedRepresentation": "accessState=PARTIAL_OBJECT",
+      "justification": "Same meaning as PARTIAL_VERIFICATION."
+    },
+    {
+      "value": "PARTIAL_OBJECT",
+      "count": 1,
+      "files": [
+        "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json"
+      ],
+      "class": "axis",
+      "proposedRepresentation": "accessState=PARTIAL_OBJECT",
+      "justification": "Exact accessState value in policy v2."
+    },
+    {
+      "value": "PERMISSION_REQUIRED",
+      "count": 1,
+      "files": [
+        "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
+      ],
+      "class": "axis",
+      "proposedRepresentation": "rightsState=PERMISSION_REQUIRED (+ RIGHTS_HOLD)",
+      "justification": "Exact rightsState value in policy v2."
+    },
+    {
+      "value": "RESEARCH / NOT PRODUCT",
+      "count": 1,
+      "files": [
+        "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json"
+      ],
+      "class": "status",
+      "proposedRepresentation": "publicationState=REFERENCE",
+      "justification": "\"Not a product\" is a publication-state statement, not a hold."
+    },
+    {
+      "value": "RESEARCH / NOT PUBLICATION-READY",
+      "count": 1,
+      "files": [
+        "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json"
+      ],
+      "class": "canonical",
+      "proposedRepresentation": "PUBLICATION_HOLD",
+      "justification": "The plain meaning is exactly the publication hold."
+    },
+    {
+      "value": "RESOLVED-BY-TEXT",
+      "count": 1,
+      "files": [
+        "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
+      ],
+      "class": "status",
+      "proposedRepresentation": "closed: record with pointer to the passage that resolved it",
+      "justification": "A closure recorded as a hold value inverts the meaning; the record must say closed and where."
+    },
+    {
+      "value": "RIGHTS_HOLD + PUBLICATION_HOLD",
+      "count": 1,
+      "files": [
+        "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json"
+      ],
+      "class": "split",
+      "proposedRepresentation": "RIGHTS_HOLD + PUBLICATION_HOLD",
+      "justification": "Both are canonical; stored as one string they cannot be counted."
+    },
+    {
+      "value": "RIGHTS_UNCLEAR",
+      "count": 1,
+      "files": [
+        "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json"
+      ],
+      "class": "canonical",
+      "proposedRepresentation": "RIGHTS_HOLD (+ rightsState=RIGHTS_UNKNOWN)",
+      "justification": "Same meaning as RIGHTS_UNKNOWN; the canonical flag plus the axis value."
+    },
+    {
+      "value": "TEXT_ACCESS_HOLD",
+      "count": 1,
+      "files": [
+        "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json"
+      ],
+      "class": "canonical",
+      "proposedRepresentation": "EVIDENCE_HOLD (+ accessState=LINK_ONLY|NOT_ACQUIRED)",
+      "justification": "Only a link or a catalogue entry was reachable; the text was not read."
+    }
+  ]
+}
