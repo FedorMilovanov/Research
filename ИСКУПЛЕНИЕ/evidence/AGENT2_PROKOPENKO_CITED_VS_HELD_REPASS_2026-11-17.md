@@ -571,6 +571,7 @@
   - верный счёт стихов.
 - **Для корпуса:** `15_` §4.1 — в. 20 как довод против статьи — `NON_SEQUITUR`.
 - **HOLD:** Lewis & Demarest; White; Шнукер; Green, p. 118; Berkhof, p. 125; Стюарт; латынь Урсина; лист II Helv. XI.15; описание супралапсарианства (с. 29–30; проверка по памяти не допускается).
+  > **Снято из HOLD (раунд 101, 2026-11-17; §24, `34_` §4.184, S199).** Стюарт, *SBET* 2008: страницы сн. 86–89, 92 — EXACT; сн. 90 — ACCURATE; сн. 91 — `LOCATOR_ERROR` (вероятно). Новые мягкие вердикты (`SCOPE_EXCEEDED`, `OVERGENERALIZATION`, `TRANSLATION_SHIFT`, `CONTEXT_OMITTED`) — в §24.2.
 
 Вердикты S1–S5 не меняются. Умысел не утверждается.
 
@@ -891,5 +892,52 @@
   - таблица, супралапсарианский столбец — расходится также с Эриксоном (мягко).
 - **Генеалогия:** звено Strong → Erickson подтверждено примечанием самого Эриксона (A2). Рамка «Institutes — раньше, Commentaries — позже» прослежена до Richards/Strong (A1) и Эриксона (A2); путь к статье — HOLD (Lewis & Demarest).
 - **HOLD:** русский перевод Эриксона, с. 779; Тиссен 1979, p. 104 (IA, доступ ограничен); Lewis & Demarest (IA, доступ ограничен).
+
+Вердикты S1–S5 не меняются. Умысел не утверждается.
+
+## 24. Раунд 101 (2026-11-17): Стюарт, *SBET* 2008 (сн. 80, 86–92) — постраничная сверка; закрыт хвост раунда 98 («a nobis accepit» в CO 1)
+
+**Повод.** В обходе статьи (§15.3, строка «27–28») и в сводке §15.5 Стюарт стоял в HOLD. В корпусе он есть (`34_` S8, класс B1; `11_`), но ссылки статьи на страницы не сверялись. Кроме того, в раунде 98 (§21.1(г)) из трёх частей выдачи поиска «accepit» по CO 1 была прочитана только первая.
+
+### 24.1. Источники
+
+- (а) **K. J. Stewart, «The Points of Calvinism: Retrospect and Prospect»**, *Scottish Bulletin of Evangelical Theology* 26.2 (2008) 187–203; PDF `biblicalstudies.org.uk/pdf/sbet/26-2_187.pdf` (вёрстка журнала). Номера страниц в текстовом слое не выводятся. Страницы отсчитаны по разрывам страниц и колонтитулу чётных страниц («SCOTTISH BULLETIN OF EVANGELICAL THEOLOGY»): 17 страниц = 187–203, колонтитулы на 192, 196, 198, 200 сходятся. **Класс A1 для текста; номера страниц выведены (надёжно, но не прочитаны с листа).** Раскладка:
+  - p. 189: §II «mistaken premise»; Spitz 1971; начало §III.i;
+  - p. 193: Скотт и Томлайн; p. 194: Скотт — «General Redemption», *Sylloge* 1804; Топлади — «limited redemption»;
+  - p. 196: Эдвардс 1715, начало §IV, прим. 35;
+  - p. 197: предостережения Беттнера, Палмера, Пакера (прим. 36–38);
+  - p. 198: «universal benefits in that particular redemption», прим. 41–44;
+  - p. 199: Сперджен; «There is no pretending here…»;
+  - pp. 201–203: таблица «Expositions of the points of Calvinism traced since 1900».
+- (б) **CO 1** (`operaquaesupersu0029calv`), `inside.php` q=accepit, части 1–2 выдачи: совпадения на листах 380 (власть церкви: «quod a patre accepit»), 400 (пост: «finem in Christo… accepit»), 478 (ВЗ/НЗ: «legem accepit populus Israel»), 541 (таинства: «quia malum accepit»), 601 (возложение рук), 635 (терпение). **«a nobis accepit» нет и здесь.** Вместе с частью 0 (раунд 98) просмотрена вся выдача. Вывод §21.1(г) подтверждён в пределах распознанного текста. §21 не правится.
+
+### 24.2. Сверка
+
+| Сн. | Тезис статьи | Состоятельность | Факты |
+|---|---|---|---|
+| 86 (с. 27) | «…обе группы исходят из ошибочной предпосылки… что акроним TULIP сам по себе историчен» | — | **ACCURATE, EXACT** (p. 189): «both tendencies are unwittingly working from a mistaken premise… that the acronym TULIP is itself historic». Слово «unwittingly» опущено — несущественно |
+| — (с. 27, без сноски) | «Стюарт показывает, что кальвинистские авторы **XVII**–XIX веков не употребляют таких формулировок» | Охват источника расширен | **`SCOPE_EXCEEDED` (мягко).** Обзор Стюарта (§III.i–iii) идёт от Джона Эдвардса (1707, 1715), Ридгли (1731) и Гилла (1735) до Дабни (1895). XVIII век он называет «that century which followed immediately on after the epoch of the Synod of Dordt and the Westminster Assembly» (p. 192). Авторов XVII века он не разбирает |
+| 87 | Самый ранний известный случай — Беттнер 1932 г. | — | **ACCURATE, EXACT** (прим. 35 на p. 196): «unable, to date, to document any earlier use of it»; в таблице — «introduced for the first time known to the writer». Слово «известный» в статье сохраняет осторожность Стюарта. **Примечание:** корпус (`11_`) отмечает более раннее свидетельство — Vail 1913 о лекции Макафи около 1905 г. По источнику 2008 г. статья верна; знал ли автор о более раннем свидетельстве, не утверждается |
+| — | «Беттнер… предупреждал, что реформатская вера гораздо шире» | — | **ACCURATE**: p. 197 («against ‘a too close identification of the Five Points and the Calvinist system’», прим. 36) и таблица («the cautions of 1932 that the Reformed faith is much larger than TULIP») |
+| 88 | Шпитц 1971: «известная карикатура на богословие Кальвина» | — | **ACCURATE, EXACT** (p. 189): «a ‘familiar caricature of Calvin’s theology’» |
+| 89 | «Единственный богослов **до XX века**», чья терминология приближается к *limited atonement», — Топлади (*limited redemption*) | Охват источника расширен | **Страницы EXACT**: p. 194 («from whence a limited redemption necessarily follows») и прим. 41 на p. 198 («With the exception of Augustus Toplady… the literature produced by Calvinists in the **eighteenth and nineteenth centuries** consistently speaks of the atonement as ‘particular’ rather than ‘limited’»). Стюарт ограничивает утверждение XVIII–XIX веками и рассмотренной литературой; статья делает его абсолютным («единственный… до XX века») → **`OVERGENERALIZATION` (мягко)**. По существу утверждение опровергнуто в корпусе (`34_` §4.5, П7: Каннингем 1862/63; Гриффин 1819 — `11_`). В §4.5 уже отмечено, что статья ужесточила прим. 41 до «единственный»; теперь это подтверждено по страницам |
+| 90 | «Большинство кальвинистских богословов XVII–XIX веков… предпочитают… particular redemption» (см. pp. 190–198) | Выборка → генеральная совокупность | **Страницы ACCURATE** (обзор — pp. 189–197; вывод — p. 198). У Стюарта: «The vast majority of older writers **surveyed here**» (p. 198), а сам обзор он называет выборкой («but a sample», p. 192; «a sufficient sampling», p. 196). Статья переносит это на всех богословов XVII–XIX веков → **`OVERGENERALIZATION` (мягко)**; XVII век — см. строку выше |
+| — (с. 28) | «Надо полагать, что их симпатии… потому что он делает акцент на **результате** — спасении избранных» | Догадка (статья сама так её называет) | **Стюарт даёт другую причину**, и статья цитирует её абзацем ниже: particular redemption «carried with it suggestions of **adequacy and capaciousness**… ‘room at the cross’» (p. 199). Это не фактическая ошибка (статья помечает догадку как догадку), а **несогласованность с собственным источником (мягко)** |
+| 91 | Warfield, Boice & Ryken, George, Nicole, Sproul, Warburton; «библиографическую информацию см. в Stewart. P. 196» | — | **Содержание ACCURATE** по таблице Стюарта (Warfield, V.363: «particular redemption»; Boice/Ryken и Nicole: «Limited becomes Particular»; George: «Singular or Particular Redemption»; Sproul: «Limited becomes Purposeful»; Warburton: «Particular Redemption, not Limited Atonement»). **Страница — `LOCATOR_ERROR` (вероятно):** таблица стоит на pp. 201–203, библиография — в прим. 4 (p. 188) и 8–9 (p. 190). На p. 196 этих имён нет. Оговорка: номера страниц выведены (24.1(а)) |
+| 92 (с. 28) | «Нет смысла утверждать, что “ограниченное искупление”… просто синоним “частного искупления”… добровольное изгнание самих себя в гетто, даже по сравнению с девятнадцатым веком» | — | **Страница EXACT** (p. 199). **`TRANSLATION_SHIFT` (мягко):** (1) «There is no pretending **here**» — замечание о только что приведённых словах Сперджена («some who think it necessary… to limit the merit of the blood of Jesus… I would cast it to the winds»). Перевод «Нет смысла утверждать» превращает его в общий тезис, а контекст Сперджена опущен. (2) «carried with it **suggestions** of adequacy and capaciousness» → «обладал достаточной адекватностью и широтой». (3) Вставка «[для кальвинистских авторов прежней эпохи]» по смыслу допустима (p. 198: «Earlier defenders… were frequently embracive»). (4) «По окончании своего исторического обзора… приходит к выводу»: фрагмент взят из §IV («Observations and inferences»), а не из заключения (§V), но после обзора — формально верно |
+| 92, контекст | Переход статьи: «если смерть Христа… преследовала ещё какие-то цели для всего мира, то искупление должно быть в каком-то смысле… неограниченным» | Широта у Стюарта → «неограниченное искупление» | **`CONTEXT_OMITTED` (мягко).** На той же странице, что и прим. 41 (p. 198), Стюарт определяет эту широту: «there were **universal benefits in that particular redemption** won by Christ» (Эдвардс, Ридгли; Ch. Hodge, *ST* II.558; Dabney, *Lectures*, 527) и достаточность по Дорту II.3. У Стюарта широта — свойство **частного** искупления, а не довод против него. Статья вправе использовать эту мысль («цели для всего мира»), но ярлык «неограниченное искупление» Стюарту не принадлежит (ср. `11_`: Стюарт — пресвитерианин PCA, не амиральдианин). Совпадает с корпусной линией «универсальные блага при частном искуплении» (Ч. Ходж) |
+| 80 | Скотт «верил в общее искупление, хотя и признавал, что некоторые братья придерживаются более узкого взгляда» | — | **ACCURATE** (p. 194): «Scott… preferred ‘General Redemption’, and yet allowed that there were others holding a narrower view». Дата 1804 — ошибка уже учтена (`11_`: 1804 — латинская *Sylloge*, а не перевод Скотта) |
+
+### 24.3. Итог раунда 101
+
+- **Стюарт снят из HOLD.** Страницы сн. 86, 87, 88, 89, 92 — EXACT; сн. 90 — ACCURATE; сн. 91 — `LOCATOR_ERROR` (вероятно; содержание верно).
+- **Новые мягкие вердикты:**
+  - «XVII–XIX веков» — `SCOPE_EXCEEDED`;
+  - сн. 89 («единственный… до XX века») и сн. 90 («большинство… богословов») — `OVERGENERALIZATION`;
+  - сн. 92 — `TRANSLATION_SHIFT` (утрачен контекст Сперджена) и `CONTEXT_OMITTED` («universal benefits in that particular redemption»);
+  - догадка о «результате» (с. 28) не согласуется с причиной, которую называет сам Стюарт.
+- **Сильная сторона статьи:** передача осторожности Стюарта о Беттнере («самый ранний **известный**») и его же предостережений точна.
+- **Хвост раунда 98 закрыт:** во всей выдаче «accepit» по CO 1 «a nobis accepit» нет (§21.1(г) подтверждён).
+- **HOLD:** Lewis & Demarest (сн. 83 и др.); MacArthur & Mayhue, *Biblical Doctrine*, p. 544 (сн. 91, «ср.»); Green, p. 118; White; Шнукер; Грудем, с. 672.
 
 Вердикты S1–S5 не меняются. Умысел не утверждается.

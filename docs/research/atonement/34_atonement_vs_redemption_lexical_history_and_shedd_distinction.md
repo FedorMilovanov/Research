@@ -194,6 +194,10 @@
   - **Сн. 96–97:** ACCURATE по содержанию. **Сн. 95** («в последнее время»): `SIMPLIFIED` (мягко) — источник Эриксона для «sublapsarianism» — Strong 1907, pp. 778–79.
   - **Генеалогия:** Strong → Erickson подтверждено примечанием Эриксона (A2); супра/инфра у Эриксона — по Уорфилду. Рамка «Institutes — раньше, Commentaries — позже» (сн. 13) прослежена до Richards/Strong; путь к статье — HOLD.
   - Вердикты S1–S5 не меняются. Документ: REPASS, §23.
+- **раунд 101 (2026-11-17, AGENT 2):** §3 (S199), новый §4.184 (Q180): Стюарт, *SBET* 26.2 (2008) — постраничная сверка сн. 80, 86–92.
+  - **Сн. 86–89, 92:** страницы EXACT. **Сн. 91:** `LOCATOR_ERROR` (вероятно). Мягкие вердикты: «XVII–XIX веков» — `SCOPE_EXCEEDED`; сн. 89–90 — `OVERGENERALIZATION`; сн. 92 — `TRANSLATION_SHIFT` и `CONTEXT_OMITTED` («universal benefits in that particular redemption»).
+  - **CO 1, «accepit»:** вся выдача просмотрена; «a nobis accepit» нет — вывод раунда 98 подтверждён.
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §24.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -555,6 +559,7 @@
 | S196 *(раунд 98, 2026-11-17)* | CO 1 = CR 29 (*Ioannis Calvini Opera quae supersunt omnia*, t. I, ed. Baum, Cunitz, Reuss; Brunsvigae: Schwetschke, 1863; репринт Johnson), IA `operaquaesupersu0029calv` (`ia803102`, dir `/14/items/…`): л. 54 — предисловие к CO 2 (романский шрифт = 1550–1554, курсив = новое 1559 г.); л. 65 — предисловие к тексту 1539–1554 гг. (романский = 1539, курсив = 1543/1545, мелкий = 1550/1553/1554); лл. 325–326 = col. 517–520 (cap. VII (IV) «Symboli explicatio», §8–§12; §10: «Prodiit ergo verus homo… ut carnem nostram in satisfactionem iusto Dei iudicio statueret ac sisteret, ut in eadem carne peccati poenam persolveret»; §11 — о манихеях). Поиск по тому: «debellasse» — 0; «a nobis accepit» — нет. | A1 |
 | S197 *(раунд 99, 2026-11-17)* | L. Berkhof, *Systematic Theology* (W. B. Eerdmans), IA `berkhof-louis-systematic-theology-w.-b.-eerdmans` (`ia601902`, dir `/23/items/…`; текстовый PDF с печатными колонтитулами; `page_numbers.json`, уверенность 82): л. 113 = p. 118; л. 114 = p. 119; л. 117 = p. 122; л. 118 = p. 123; л. 119 = p. 124; л. 120 = p. 125 («Our confessional standards embody the infralapsarian position, but do not condemn Supralapsarianism…»; Утрехт 1908); л. 392/394 = pp. 393/394 (п. 1(d); п. 2 «dubious and very unsatisfactory»); л. 399 = p. 399 (колонтитул «…ATONEMENT 399»; Еф. 1:10; Кол. 1:20; Рим. 8:19–22). Калибровка с Banner of Truth 2003 — по сн. 46–48 статьи (3 точки). | A2 (пагинация издания статьи установлена калибровкой; само издание Banner 2003 не открыто) |
 | S198 *(раунд 100, 2026-11-17)* | M. J. Erickson, *Christian Theology*, 3rd ed. (Grand Rapids: Baker, 2013), IA `erickson-millard-j-christian-theology-baker` (`ia600505`, dir `/0/items/…`; текстовый PDF, `page_numbers.json` уверенность 0 — печатные страницы не установлены): л. 984 (гл. 43: супра/инфра/суб по четыре шага; «Sublapsarianism (unlimited atonement with a limited application)»); л. 1519 (прим. 1599: Warfield, *Plan of Salvation*, 1942, p. 31; прим. 1600: Strong, *ST*, 778–79); л. 882 (гл. 38: Strong «maintains that Calvin in his commentaries took a similar position»); л. 1512 (прим. 1398: Strong 1907, 777–78). | A2 (другое издание, чем рус. пер. 1999 г.; страница статьи не проверена) |
+| S199 *(раунд 101, 2026-11-17)* | K. J. Stewart, «The Points of Calvinism: Retrospect and Prospect», *SBET* 26.2 (2008) 187–203, PDF `biblicalstudies.org.uk/pdf/sbet/26-2_187.pdf` (вёрстка журнала; страницы выведены по разрывам и колонтитулам: 17 стр. = 187–203): p. 189 («mistaken premise»; Spitz 1971), p. 194 (Скотт — «General Redemption»; Топлади — «limited redemption»), p. 196 (прим. 35: Беттнер 1932), p. 198 («universal benefits in that particular redemption»; прим. 41), p. 199 («There is no pretending here…»), pp. 201–203 (таблица). Дополнительно: CO 1 (`operaquaesupersu0029calv`), `inside.php` q=accepit, части 1–2 выдачи (листы 380, 400, 478, 541, 601, 635). | A1 (текст); номера страниц — выведены |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8115,8 +8120,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.181 | Q177 | II.12.3 (сн. 11) по CO 1 (1539–1554): первая часть — 1539 г., ключевая фраза — 1559 г. (SUPPORTED); `CHRONOLOGY_PARTIAL` повышен до SUPPORTED; метод курсива CO 2 подтверждён (р. 98) |
 | 4.182 | Q178 | Печатные страницы Беркхофа: сн. 93 (p. 125) — ACCURATE, локатор EXACT, оговорка о терпимости на той же странице опущена (`CONTEXT_OMITTED`, мягко); сн. 46–48 — EXACT; листы §4.176 → pp. 118–124 (р. 99) |
 | 4.183 | Q179 | Эриксон (сн. 95–97) по 3-му изд.: сн. 96–97 ACCURATE; сн. 95 «в последнее время» — `SIMPLIFIED` (источник Эриксона — Strong 1907); звено Strong → Erickson — A2; рамка сн. 13 прослежена до Richards/Strong (р. 100) |
+| 4.184 | Q180 | Стюарт 2008 (сн. 80, 86–92): страницы EXACT, кроме сн. 91 (`LOCATOR_ERROR`, вероятно); «XVII–XIX веков» — `SCOPE_EXCEEDED`; сн. 89–90 — `OVERGENERALIZATION`; сн. 92 — `TRANSLATION_SHIFT`, `CONTEXT_OMITTED`; CO 1 «accepit» — хвост раунда 98 закрыт (р. 101) |
 
-⇒ разделов с `Q` — **176**, разделов §4.x — **178**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **177**, разделов §4.x — **179**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -9259,6 +9265,24 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 5. **Рамка сн. 13.** Противопоставление «Institutes — ранняя работа / Commentaries — поздние» есть у Strong 1907, p. 777 (через Richards; S39, A1), и Эриксон его повторяет: Strong «maintains that Calvin in his commentaries took a similar position» (гл. 38, прим. 1398 = Strong 777–78). Статья ссылается на Lewis & Demarest, поэтому её путь к рамке не утверждается. По существу рамка анахронична для текста, который цитирует статья: «Наставление» — редакция 1559 г., а ключевая фраза сн. 11 появилась в 1559 г., после комментария на Галатам 1548 г. (§4.180–§4.181). Вердикт `CHRONOLOGY_PARTIAL` не меняется; раунд объясняет, откуда могла взяться такая подача.
 
 **Чего нет.** Русский перевод Эриксона, с. 779; Тиссен 1979, p. 104; Lewis & Demarest II, p. 380 (оба на IA с ограниченным доступом).
+
+Вердикты S1–S5 не меняются.
+
+### 4.184. Q180 — Стюарт, *SBET* 2008 (сн. 80, 86–92): постраничная сверка (раунд 101, 2026-11-17)
+
+**Повод.** Стюарт (S8, класс B1) использовался в корпусе аналитически (прим. 41, 44, 50), но страницы, на которые ссылается статья, не сверялись: в REPASS §15 он стоял в HOLD. Полная таблица — REPASS-документ, §24. Источник — S199.
+
+**Ответы.**
+1. **Точные места.** Сн. 86 (p. 189, «mistaken premise»), сн. 87 (p. 196, прим. 35: Беттнер 1932 — «unable, to date, to document any earlier use»), сн. 88 (p. 189, Spitz: «familiar caricature of Calvin’s theology»), сн. 89 (p. 194 — Топлади, «limited redemption»; прим. 41 на p. 198), сн. 92 (p. 199) — EXACT. Сн. 80 (Скотт — «General Redemption», p. 194) — ACCURATE.
+2. **Сн. 91 — `LOCATOR_ERROR` (вероятно).** Имена и формулы (Warfield, Boice & Ryken, George, Nicole, Sproul, Warburton) переданы верно, но стоят в таблице на pp. 201–203, а не на p. 196.
+3. **Расширение охвата (мягко).** Обзор Стюарта начинается с 1707 г.; прим. 41 говорит о XVIII–XIX веках и о рассмотренной литературе; вывод на p. 198 — о «writers surveyed here». Статья пишет «XVII–XIX веков», «единственный… до XX века», «большинство… богословов» (`SCOPE_EXCEEDED`, `OVERGENERALIZATION`). Сам тезис о «единственном» Топлади опровергнут в §4.5 (П7: Каннингем 1862/63; Гриффин 1819 — `11_`). Там же отмечено, что статья ужесточила прим. 41; теперь это подтверждено по страницам: прим. 41 стоит на p. 198 и ограничено XVIII–XIX веками.
+4. **Сн. 92 — `TRANSLATION_SHIFT` (мягко).** «There is no pretending here» относится к словам Сперджена о том, что заслугу крови Христа нельзя ограничивать. Перевод «Нет смысла утверждать» делает из этого общий тезис; «suggestions of adequacy and capaciousness» передано как «обладал адекватностью и широтой».
+5. **`CONTEXT_OMITTED` (мягко).** На p. 198 Стюарт определяет широту, которую хвалит: «universal benefits in that particular redemption» (Эдвардс, Ридгли, Ч. Ходж II.558, Дабни) плюс Дорт II.3. Статья переходит от этой цитаты к «неограниченному в каком-то смысле» искуплению. Мысль о «целях для всего мира» с Стюартом совместима, ярлык — нет.
+6. **Несогласованность с источником (мягко).** Догадка статьи, почему старые авторы предпочитали *particular redemption* («акцент на результате — спасении избранных»), отличается от причины Стюарта («adequacy and capaciousness… room at the cross»), которую статья приводит абзацем ниже.
+7. **Сильная сторона статьи.** Осторожность Стюарта («самый ранний **известный**»; предостережения Беттнера 1932 г.) передана точно.
+8. **CO 1, «accepit».** Части 1–2 выдачи (листы 380–635) не содержат «a nobis accepit». Вывод раунда 98 (§4.181) подтверждён для всей выдачи (в пределах распознанного текста).
+
+**Чего нет.** MacArthur & Mayhue, *Biblical Doctrine*, p. 544 (сн. 91, «ср.»); Lewis & Demarest, II, p. 381 (сн. 83).
 
 Вердикты S1–S5 не меняются.
 
