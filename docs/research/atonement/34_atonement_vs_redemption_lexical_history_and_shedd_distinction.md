@@ -218,6 +218,17 @@
   - *Acta* 1620, сессия CXLVIII (≈ 1 мая 1619 г.): иностранные и нидерландские богословы единогласно признали учение катехизиса «Verbo Dei in omnibus consentientem… omnino retineri debere» — ACCURATE. Уточнение: катехизис подтверждён, а не включён впервые (`IMPRECISE_TERM`, минимально).
   - Логика: для синода в. 37 совместим с II.8, поэтому в. 37 не решает спора об объёме — `EVIDENCE_UNDERDETERMINES` (мягко).
   - Вердикты S1–S5 не меняются. Документ: REPASS, §29.
+- **раунд 107 (2026-11-17, AGENT 2):** §3 (S205), новый §4.190 (Q186): с. 26 — Томас Скотт (сн. 80) по первоисточникам.
+  - «Общее искупление… более узкий взгляд» — ACCURATE (Стюарт; *Remarks* II, 1817). «1804 г.» — `DATE_ERROR` подтверждён по первоисточникам: 1804 — *Sylloge Confessionum*; перевод — 1817/1818. «Продвигал» — `CHRONOLOGY_PARTIAL` (мягко).
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §30.
+- **раунд 108 (2026-11-17, AGENT 2):** §3 (S206), новый §4.191 (Q187): Стюарт pp. 193/194 и «ibid. p. 725»; Скотт 1817; Эразм к Кол. 1:20.
+  - Сн. 80 — EXACT (текст — p. 193, сноска — p. 194); сн. 92 — локатор EXACT (пометки §4.184 остаются). Перевод Скотта впервые напечатан в *Remarks*, 2-е изд. (1817), p. 725; у Стюарта «1811» — `EDITION_MISLABEL` (мягко).
+  - Эразм (*Paraphrases*, 1521) найден: «omnia sibi reconciliaret» + мир небесных с земными — у статьи `OVERSTATEMENT` (мягко) вместо NOT_LOCATED.
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §31.
+- **раунд 109 (2026-11-17, AGENT 2):** §3 (S207), новый §4.192 (Q188): дата сессии CXLVIII; корпусные формулы.
+  - *Acta* 1620, p. 317–318: сессия CXLVII — «Calendis Maij, Die Mercurij ante meridiem», CXLVIII — «Eodem Die post meridiem». Дата — 1 мая 1619 г. (среда), после полудня.
+  - `16_` §1: «синоним» — `CORPUS_MISREAD` (мягко), статья различает «инфра-» и «суб-». `11_`, `06_`, `01_` — примечания о p. 725; `12_` `T-10` — HOLD снят.
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §32.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -585,6 +596,9 @@
 | S202 *(раунд 104, 2026-11-17)* | (1) Lightfoot, *Saint Paul's Epistles to the Colossians and to Philemon* (London: Macmillan, 1890), IA `ed9saintpaulsepis00ligh` (`ia601902`): выходные сведения — л. 12; ст. 20 — лл. 175–176 = pp. 157–158 (`page_numbers.json`). (2) Каталожная запись Cornell при IA `cu31924092322548`: «Vincent, Marvin Richardson, 1834-1922». (3) Henry, *Exposition*, vol. 6 (1828), IA `expositionofoldn06henr`: предисловие продолжателей — л. 290. | A1 (Лайтфут, Генри); A2 (каталожная запись) |
 | S203 *(раунд 105, 2026-11-17)* | (1) Указатель MTP 7 по оригинальной пагинации, archive.spurgeon.org `index/c07.php`: № 349 — p. 9, № 350 — p. 17, **№ 351 *Plenteous Redemption* — p. 25**, № 352 — p. 33; оглавление Passmore 1862 (Google Books `cctBAQAAMAAJ`, выдача поиска). (2) Текст № 351: archive.spurgeon.org `sermons/0351.php` (прочитан целиком). (3) I. Murray, *The Forgotten Spurgeon*, гл. 3 — отрывок Banner of Truth (1.XI.2023), прим. 1–24. (4) A. Lang, *Der Heidelberger Katechismus und vier verwandte Katechismen* (Leipzig, 1907), IA `derheidelberger00ursigoog`: редакционное правило — л. 77; в. 37 — л. 137. (5) E. F. K. Müller, *Die Bekenntnisschriften der reformierten Kirche* (Leipzig, 1903), IA `diebekenntnissc01mlgoog`: в. 37 — л. 770. (6) Schaff, *Creeds* I, IA `creedschristendo01scha`, л. 529 (формула подписи). | A2 (1, 4, 5); B (2, 6); C (3) |
 | S204 *(раунд 106, 2026-11-17)* | *Acta Synodi nationalis… Dordrechti habitae* (Lugduni Batavorum: Elzevir, 1620), IA `actasynodination00syno` (Princeton Theological Seminary; `ia801505`, `/0/items/…`; `inside.php`; `page_numbers.json`, уверенность 60): предисловие Генеральных штатов — л. 12 («Catechesin hactenus hic usitatam… recognosci»); сессия 17 — л. 93 («Catechesis Palatina, ab Ecclesiis nostris recepta»); «XXX. Aprilis» — л. 344; сессия CXLVIII — л. 364 ≈ p. 318 (одобрение катехизиса; ниже — «II. Maij»). | A1 (OCR; изображение листа не открывалось) |
+| S205 *(раунд 107, 2026-11-17)* | (1) Th. Scott, *The Articles of the Synod of Dort… Translated from the Latin* (London: L. B. Seeley, 1818), IA `india.history.resource.18439`: титул; гл. II — с. 128–134. (2) J. Scott, *The Life of the Rev. Thomas Scott* (London, 1822), IA `lifeofrevthomas00scot`, лл. 484, 682. (3) Th. Scott, *Remarks on the Refutation of Calvinism*, vol. 2 (Philadelphia: Woodward, 1817), IA `remarksonrefutat02scot`, л. 115. (4) Stewart 2008 (S199). | A1 (1, 3); A2 (2) |
+| S206 *(раунд 108, 2026-11-17)* | (1) Th. Scott, *Remarks on the Refutation of Calvinism*, 2nd ed. (London: A. MacIntosh / L. B. Seeley, 1817), IA `a608278200scotuoft`: л. 749 = p. 725 (`page_numbers.json`, уверенность 100); оглавление (кн. IV, pp. 473, 477–484; гл. II Дорта — pp. 732–735). (2) Erasmus, *Paraphrases… in omnes Epistolas Pauli* (Basel, 1521), IA `ARes14515`, `_djvu.txt`, чанк 98 (Кол. 1:19–20). (3) W. H. Vail, *The Outlook* 104 (21.VI.1913), IA `sim_new-outlook_1913-06-21_104_8`, л. 45. (4) Stewart 2008 (S199), граница pp. 192–194 по тексту PDF. | A1 (OCR) |
+| S207 *(раунд 109, 2026-11-17)* | (1) *Acta Synodi… Dordrechti habitae* (1620), IA `actasynodination00syno`, `_djvu.txt`, чанк 169: pp. 316–318 (сессии CXLVII–CXLIX). (2) Schaff, *Creeds* I, IA `creedschristendo01scha` (`ia801407`), л. 573. (3) Schaff, *Creeds* III, IA `creedsofchriste03scha` (`ia801000`), л. 569 (Дорт I.15). | A1 (1, OCR); B (2); A2 (3) |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8151,8 +8165,11 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.187 | Q183 | Кол. 1:20, хвосты: Лайтфут p. 158 — EXACT (оттиск 1890 г. с формы 1879 г.); Винсент 1834–1922 — `DATE_ERROR` подтверждён; «Генри» — продолжатели по стенограммам, `AUTHORSHIP_NOTE` смягчён (р. 104) |
 | 4.188 | Q184 | Сн. 45: «MTP 7, p. 26» — вторая страница № 351 *Plenteous Redemption*, цитаты нет, там отвергается «that all men are redeemed» — `LOCATOR_ERROR` подтверждён положительно; сн. 15: немецкий в. 37 = текст 1563 г. (Lang 1907, Müller 1903) — ACCURATE (р. 105) |
 | 4.189 | Q185 | С. 5: «включённый Дортским синодом» — ACCURATE по *Acta* 1620, сессия CXLVIII (≈ 1.V.1619, единогласно; подтверждён, а не впервые включён — `IMPRECISE_TERM`, минимально); для синода в. 37 совместим с II.8 — `EVIDENCE_UNDERDETERMINES` (р. 106) |
+| 4.190 | Q186 | С. 26, Скотт (сн. 80): «общее искупление» — ACCURATE; «1804 г.» — `DATE_ERROR` подтверждён по первоисточникам (перевод 1817/1818); «продвигал» — `CHRONOLOGY_PARTIAL` (р. 107) |
+| 4.191 | Q187 | Стюарт: сн. 80 — EXACT (p. 193/194), сн. 92 — локатор EXACT; «ibid. p. 725» = *Remarks* 1817 (у Стюарта «1811» — `EDITION_MISLABEL`); Эразм к Кол. 1:20 — найден, у статьи `OVERSTATEMENT` (р. 108) |
+| 4.192 | Q188 | Дорт, сессия CXLVIII — 1 мая 1619 г. (среда), после полудня (*Acta*, p. 317–318); `16_` §1 «синоним» — `CORPUS_MISREAD`; примечания `11_`, `06_`, `01_`, `12_` (р. 109) |
 
-⇒ разделов с `Q` — **182**, разделов §4.x — **184**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **185**, разделов §4.x — **187**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -9305,6 +9322,7 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 
 **Ответы.**
 1. **Точные места.** Сн. 86 (p. 189, «mistaken premise»), сн. 87 (p. 196, прим. 35: Беттнер 1932 — «unable, to date, to document any earlier use»), сн. 88 (p. 189, Spitz: «familiar caricature of Calvin’s theology»), сн. 89 (p. 194 — Топлади, «limited redemption»; прим. 41 на p. 198), сн. 92 (p. 199) — EXACT. Сн. 80 (Скотт — «General Redemption», p. 194) — ACCURATE.
+   - *Уточнение раундов 108–109 (§4.191):* фраза о «General Redemption» стоит в конце p. 193, её сноска 23 — на p. 194; локатор «P. 193–194» — EXACT.
 2. **Сн. 91 — `LOCATOR_ERROR` (вероятно).** Имена и формулы (Warfield, Boice & Ryken, George, Nicole, Sproul, Warburton) переданы верно, но стоят в таблице на pp. 201–203, а не на p. 196.
 3. **Расширение охвата (мягко).** Обзор Стюарта начинается с 1707 г.; прим. 41 говорит о XVIII–XIX веках и о рассмотренной литературе; вывод на p. 198 — о «writers surveyed here». Статья пишет «XVII–XIX веков», «единственный… до XX века», «большинство… богословов» (`SCOPE_EXCEEDED`, `OVERGENERALIZATION`). Сам тезис о «единственном» Топлади опровергнут в §4.5 (П7: Каннингем 1862/63; Гриффин 1819 — `11_`). Там же отмечено, что статья ужесточила прим. 41; теперь это подтверждено по страницам: прим. 41 стоит на p. 198 и ограничено XVIII–XIX веками.
 4. **Сн. 92 — `TRANSLATION_SHIFT` (мягко).** «There is no pretending here» относится к словам Сперджена о том, что заслугу крови Христа нельзя ограничивать. Перевод «Нет смысла утверждать» делает из этого общий тезис; «suggestions of adequacy and capaciousness» передано как «обладал адекватностью и широтой».
@@ -9344,6 +9362,7 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 3. **Контекст Златоуста.** Перед цитатой: «Was war and battle there also? How then do we pray… "as in heaven, so on earth"?»; после: «in heaven it was simple»; применение: «Why then place ye confidence in Angels?». Пересказ статьи («примирение ангелов с людьми») верен.
 4. **Сн. 104, Феодорит.** PG 82, ad Col. 1:20 (IA л. 323): «Αὐτὸς ἐπραγματεύσατο τὰς ἡμετέρας καταλλαγάς… καὶ συνῆψε τοῖς ἐπιγείοις τὰ ἐπουράνια. Ἀπεστρέφοντο γὰρ ἡμᾶς καὶ τῶν ἀγγέλων οἱ δῆμοι, διὰ τὴν πολλὴν πονηρίαν». Характеристика Баркли (по статье) для Феодорита подтверждена по смыслу. Колонка PG не прочитана.
 5. **Сн. 104, Эразм.** В *Paraphrasis* (1540, IA `ARes19210`) место к Кол. 1:20 поиском OCR не найдено — NOT_LOCATED.
+   - *Уточнение раунда 108 (§4.191):* найдено в *Paraphrases* (Basel, 1521, IA `ARes14515`) — у статьи `OVERSTATEMENT` (мягко).
 6. **Логика с. 34–35.** Тезис и вывод раздела — творение (в том числе небесное) примиряется **с Богом**. Златоуст и Феодорит толкуют «небесное» как мир ангелов **с людьми** и прямо отводят вражду неба с Богом. Статья называет это различие в сн. 104, но подаёт оба толкования как иллюстрацию одного тезиса — `INTERNAL_TENSION` (мягко). Ошибки факта нет.
 
 **Чего нет.** Баркли, p. 124; Эразм к Кол. 1:20; колонка PG 82; Вюст, Кинер, MSB, BDAG, Мелик, Гайслер (авторское право).
@@ -9389,10 +9408,54 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 **Ответы.**
 1. **Акт.** Сессия CXLVIII (*Acta* 1620, л. 364 ≈ p. 318): «Declaratum fuit consentientibus omnium tam Exterorum, quam Belgicorum Theologorum suffragiis, doctrinam in Catechesi Palatina comprehensam, Verbo Dei in omnibus esse consentientem… atque omnino retineri debere». Фраза статьи — ACCURATE.
 2. **Дата.** После полудня накануне 2 мая 1619 г.; по всей вероятности 1 мая (заголовок утреннего заседания этого дня в OCR не найден).
+   - *Уточнение раунда 109 (§4.192):* заголовок найден (p. 317, «Calendis Maij, Die Mercurij ante meridiem»). Дата — 1 мая 1619 г., после полудня.
 3. **Слово «включённый».** Катехизис уже был формулой единства («Catechesin hactenus hic usitatam», л. 12; «ab Ecclesiis nostris recepta», л. 93). Синод его пересмотрел и подтвердил — `IMPRECISE_TERM` (минимально).
 4. **Логика.** Статья читает Дорт как «неограниченное искупление с ограниченным применением» (с. 25–26), поэтому одобрение катехизиса её линии не противоречит. Но синод, принявший II.8, признал в. 37 согласным со Словом «in omnibus». Значит, в. 37 совместим и с партикуляристским чтением Дорта и сам по себе спора об объёме не решает — `EVIDENCE_UNDERDETERMINES` (мягко); ср. §4.175 (Урсин: «sufficiency… not… application»).
 
 **Чего нет.** Изображение л. 364 и печатная страница визуально не сверены. Голландское издание актов (*Handelingen*, 1669) не открывалось.
+
+Вердикты S1–S5 не меняются.
+
+### 4.190. Q186 — с. 26: Томас Скотт (сн. 80) по первоисточникам (раунд 107, 2026-11-17)
+
+**Повод.** Сн. 80 признана ACCURATE по Стюарту (§4.184), ошибка «1804» учтена в `11_` и `06_` §40, но сам Скотт не открывался (`12_` `T-10`). Полная таблица — REPASS-документ, §30. Источники — S205.
+
+**Ответы.**
+1. **Взгляд Скотта.** Стюарт: «preferred ‘General Redemption’, and yet allowed that there were others holding a narrower view». *Remarks* II (1817), л. 115: «General redemption is also clearly declared; and rested on its proper ground, the divine dignity and all-sufficiency of the Redeemer». Пересказ статьи — ACCURATE.
+2. **Дата перевода.** Титул отдельного издания — 1818; *Life*, л. 484: работа закончена весной 1818 г. Первая публикация — в *Remarks*, 2-е изд. (1817), p. 725 (§4.191). 1804 — год оксфордской *Sylloge Confessionum*. `DATE_ERROR` подтверждён по первоисточникам.
+3. **«Продвигал богословие канонов».** В 1-м изд. *Remarks* (1811) Скотт сам повторил сокращение Тиленуса–Хейлина как подлинные каноны; позже он назвал это «a gross misrepresentation of the Synod» (*Life*, л. 682). `CHRONOLOGY_PARTIAL` (мягко).
+4. **Логика.** Перевод 1818 г.: II.3 «abundantly sufficient to expiate the sins of the whole world»; II.8 «efficaciously redeem all those, and those only». «General redemption» Скотта — достаточность при ограниченной действенности. Это поддерживает с. 25–26 статьи, но не формулу с. 36 — `EVIDENCE_UNDERDETERMINES` (мягко).
+
+**Чего нет.** 1-е изд. *Remarks* (1811) не открывалось.
+
+Вердикты S1–S5 не меняются.
+
+### 4.191. Q187 — Стюарт: граница pp. 193/194 и «ibid. p. 725»; Скотт 1817; Эразм к Кол. 1:20 (раунд 108, 2026-11-17)
+
+**Повод.** HOLD раунда 107 и NOT_LOCATED §4.186 (Эразм). Полная таблица — REPASS-документ, §31. Источники — S206.
+
+**Ответы.**
+1. **Стюарт, сн. 80.** P. 192 кончается словами «Anglican evan-». Фраза «preferred ‘General Redemption’… narrower view. He maintained ‘Perseverance’,» стоит на p. 193. P. 194 начинается словами «while allowing that ‘not all who contend for perseverance will enjoy it’.23» и содержит *Sylloge* 1804 (прим. 24). Локатор «P. 193–194» — EXACT.
+2. **Стюарт, сн. 92.** P. 199 — EXACT. Пометки §4.184 (`TRANSLATION_SHIFT`, `CONTEXT_OMITTED`) остаются.
+3. **«ibid. p. 725».** *Remarks*, 2-е изд. (London, 1817), л. 749 = p. 725: «I shall insert a literal translation of the articles of the synod of Dort itself, as contained, in Sylloge Confessionum, &c. Oxford, 1804». Значит, первая публикация перевода — 1817. Стюарт обозначает книгу как «London: 1811», а страницы даёт по 2-му изданию — `EDITION_MISLABEL` (мягко, у Стюарта).
+4. **Эразм к Кол. 1:20.** *Paraphrases* (Basel, 1521): «ut omnia sibi reconciliaret, non per angelos, sed per filium proprium… ut abolitis peccatis quae dirimebant concordiam et pacem coelestium ac terrestrium, iam amicitia iungerentur omnia». У Эразма есть оба мотива — примирение с Богом и мир небесного с земным. Формула статьи «не с Богом, а с людьми» — `OVERSTATEMENT` (мягко); `CITATION_VIA_SECONDARY` (через Баркли) остаётся.
+5. **TULIP (справочно).** Vail 1913: лекция Макафи около 1905 г. со словом «Tulip». Совпадает с `11_`.
+
+**Чего нет.** *Annotationes* Эразма к Кол. 1:20; Баркли, p. 124.
+
+Вердикты S1–S5 не меняются.
+
+### 4.192. Q188 — дата сессии CXLVIII по *Acta* 1620; корпусные формулы о Скотте и лапсарианской терминологии (раунд 109, 2026-11-17)
+
+**Повод.** В §4.189 дата оставлена как «по всей вероятности 1 мая». В `16_`, `11_`, `06_`, `01_`, `12_` остались формулы, которые уточнили раунды 101 и 107–108. Полная таблица — REPASS-документ, §32. Источники — S207.
+
+**Ответы.**
+1. **Дата.** *Acta*, p. 317: сессия CXLVII — «Calendis Maij, Die Mercurij ante meridiem». Катехизис, «jam olim ab Ecclesiis Belgicis recepta, atque in iisdem hactenus tradita», прочитан полностью («omnes quaestiones & responsiones ejusdem relectae fuerunt»). P. 317–318: сессия CXLVIII — «Eodem Die post meridiem», одобрение. Дата — **1 мая 1619 г. (среда), после полудня**; p. 318 — EXACT. Так и у Шаффа (*Creeds* I, л. 573: «148th Session, May 1, 1619»).
+2. **`16_` §1.** Формула «употребляет «сублапсарианство» как синоним инфралапсарианства» неточна. Статья описывает три схемы. «Сублапсарианство» у неё — отдельный порядок, где решение послать Христа для всех стоит перед избранием. О прежней синонимии терминов статья сообщает в сн. 95 и ссылается на более чёткое различение у Эриксона. `CORPUS_MISREAD` (мягко); вывод `16_` §1 в пользу автора от этого только усиливается.
+3. **Скотт в корпусе.** «Reply 1811, с. 725» (`11_`, `06_` §40, `01_` §4.31) повторяет `EDITION_MISLABEL` Стюарта: p. 725 — 2-е изд. 1817 г. `12_` `T-10` (`EDITION_HOLD`) снят. Примечания внесены.
+4. **Лапсарианский раздел.** Дорт I.15 (Schaff III, л. 569): «ex liberrimo… beneplacito decrevit… relinquere… propter… peccata… damnare… Atque hoc est decretum reprobationis». Это подтверждает §16 (раунд 93); новых вердиктов по статье нет.
+
+**Чего нет.** Изображения pp. 317–318 *Acta* визуально не сверены (текстовый слой OCR).
 
 Вердикты S1–S5 не меняются.
 
