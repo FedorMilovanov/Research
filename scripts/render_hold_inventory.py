@@ -1029,7 +1029,8 @@ def render_markdown(report):
     add(
         f"**Собрано:** {report['generatedAt']}; **проверенный коммит:** "
         f"`{report['testedCommit']}`. **Роль:** производный read-only артефакт, "
-        "не authority. Пересобрать: `python3 -B scripts/render_hold_inventory.py`."
+        "не authority. Пересобрать: `python3 -B scripts/render_hold_inventory.py`; "
+        "весь контур гейтов: `python3 -B scripts/run_research_gates.py`."
     )
     add("")
     add(
