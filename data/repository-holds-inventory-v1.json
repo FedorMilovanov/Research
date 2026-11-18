@@ -76,8 +76,8 @@
     ]
   },
   "totals": {
-    "filesScanned": 3094,
-    "filesWithMentions": 899,
+    "filesScanned": 3096,
+    "filesWithMentions": 901,
     "mentions": {
       "ARCHIVE_HOLD": 1408,
       "BLOCKING-HOLD": 16,
@@ -100,14 +100,14 @@
       "LIVE-READBACK-HOLD": 4,
       "LOCATOR_HOLD": 1966,
       "PAGE-IMAGE-HOLD": 14,
-      "PUBLICATION_HOLD": 2588,
+      "PUBLICATION_HOLD": 2592,
       "RIGHTS_HOLD": 1453,
       "VERSION-HOLD": 23
     },
     "mentionsByStatus": {
       "closed": 821,
       "open": 2343,
-      "unmarked": 5944
+      "unmarked": 5948
     },
     "canonicalFlagLineStatesRecordedAsBothOpenAndClosed": 403,
     "filesWithJsonHolds": 38,
@@ -419,18 +419,18 @@
       }
     },
     "БИОГРАФИИ": {
-      "files": 51,
+      "files": 53,
       "mentions": {
         "ARCHIVE_HOLD": 299,
         "EVIDENCE_HOLD": 75,
         "LOCATOR_HOLD": 425,
-        "PUBLICATION_HOLD": 342,
+        "PUBLICATION_HOLD": 346,
         "RIGHTS_HOLD": 212
       },
       "status": {
         "closed": 107,
         "open": 386,
-        "unmarked": 905
+        "unmarked": 909
       }
     },
     "ИСКУПЛЕНИЕ": {
@@ -28260,6 +28260,26 @@
       },
       "status": {
         "unmarked": 3
+      }
+    },
+    {
+      "path": "БИОГРАФИИ/Стивен Чарнок/manuscripts/VII_ZA_PREDELAMI_GLAVNOI_KNIGI_WORKING_DRAFT.md",
+      "corpus": "БИОГРАФИИ",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
+      "path": "БИОГРАФИИ/Стивен Чарнок/manuscripts/VI_GLAVNAYA_KNIGA_BYTIE_I_ATRIBUTY_WORKING_DRAFT.md",
+      "corpus": "БИОГРАФИИ",
+      "mentions": {
+        "PUBLICATION_HOLD": 2
+      },
+      "status": {
+        "unmarked": 2
       }
     },
     {
