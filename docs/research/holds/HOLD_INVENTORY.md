@@ -1,6 +1,6 @@
 # HOLD inventory — сквозной инвентарь HOLD-ов Research
 
-**Собрано:** 2026-11-18; **проверенный коммит:** `8333d3bd4ea95f13112ca34f145d7af85e12c0c2`. **Роль:** производный read-only артефакт, не authority. Пересобрать: `python3 -B scripts/render_hold_inventory.py`.
+**Собрано:** 2026-11-18; **проверенный коммит:** `5798516cac7347bdbc4b1635132af7a24bcdb2b0`. **Роль:** производный read-only артефакт, не authority. Пересобрать: `python3 -B scripts/render_hold_inventory.py`.
 
 Инвентарь отвечает на один вопрос: какие HOLD-и объявлены в репозитории, какого они типа и что нужно, чтобы закрыть каждый честно. Он **ничего не снимает**: по `data/repository-evidence-policy-v2.json` HOLD не снимается ни присутствием файла в Research/Drive, ни достижимостью URL, ни библиографической записью.
 
@@ -131,6 +131,26 @@
 | `ИСКУПЛЕНИЕ/evidence/source_controls_wave4_2026-11-03.json` | 2 | `AUGUSTINE`, `CHRYSOSTOM` |
 | `ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json` | 2 | `(без id)`, `(без id)` |
 | `data/charnock-handoff-receipt-v1.json` | 1 | `(без id)` |
+
+Разрез по правам (как их называет сам реестр, не как их оценивает этот отчёт):
+
+| `rightsState` | Объектов |
+|---|---|
+| `PUBLICATION_ELIGIBLE` | 281 |
+| `PRIVATE_STUDY_ONLY` | 43 |
+| `PUBLIC_DOMAIN` | 37 |
+| `STORAGE_ONLY` | 34 |
+| `RIGHTS_UNKNOWN` | 19 |
+| `PERMISSION_REQUIRED` | 3 |
+
+Из 417 объектов: **318** уже помечены как публикационно допустимые или общественное достояние — их держит только решение о публикации, а не права; **77** по политике владельца существуют только для внутренней работы; и лишь **22** требуют запроса о правах или разрешения.
+
+Кто именно требует запроса о правах:
+
+- `SUNO_HYMNS/data/source-registry-v1.json` (`RIGHTS_UNKNOWN`): `SRC-CONF-1689-LBCF`, `SRC-PHOS-CLEM-EB1911`, `SRC-PHOS-CLEM-MCCLINTOCK`, `SRC-PHOS-CLEM-TEXT`, `SRC-PHOS-EPIPHANIUS-COLLYRIDIANS-LOCATORS`, `SRC-PHOS-SHOEMAKER-LECTURE-2017`
+- `data/bible-corpus-rights-provenance-2026-08-06.json` (`PERMISSION_REQUIRED`): `CROSSWIRE-RUSSYNODALLIO-1.0.3`, `ONLY-BIBLE-KASSIAN-PERMISSION-NOTICE`, `RBO-KASSIAN-CATALOG-2039`
+- `ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json` (`RIGHTS_UNKNOWN`): `articles39`, `davenant2024`, `dort`, `heidelberg`, `westminster`
+- `ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json` (`RIGHTS_UNKNOWN`): `PUSEY-V1-CAPITA-JPG`, `PUSEY-V1-COLOPHON-JPG`, `PUSEY-V1-ERRATUM-JPG`, `PUSEY-V1-PRAEF-IX-JPG`, `PUSEY-V1-PRAEF-VII-JPG`, `PUSEY-V1-PRAEF-VIII-JPG` и ещё 2
 
 Оговорка: Один и тот же объект может учитываться в двух реестрах корпуса (например, карточка и её снимок в плане), поэтому сумма — верхняя граница.
 

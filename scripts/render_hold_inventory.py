@@ -769,22 +769,49 @@ def check_decision_only_holds(nodes_by_file):
     """
     by_file = {}
     total = 0
+    by_rights = collections.Counter()
+    by_holds = collections.Counter()
+    ready_by_rights = 0
+    internal_only = 0
+    rights_enquiry = 0
+    enquiry_rows = []
     for path, nodes in nodes_by_file.items():
         rows = []
         for node in nodes:
             holds = set(node["holds"])
-            if (
+            if not (
                 holds
                 and holds <= {"RIGHTS_HOLD", "PUBLICATION_HOLD"}
                 and node["accessState"] == "FULL_OBJECT_VERIFIED"
                 and node["locatorState"] == "EXACT_LOCATOR_VERIFIED"
             ):
-                rows.append(node["id"] or "(без id)")
+                continue
+            rows.append(node["id"] or "(без id)")
+            rights = node["rightsState"] or "(не задано)"
+            by_rights[rights] += 1
+            by_holds[", ".join(sorted(holds))] += 1
+            # Права уже не мешают: остаётся только решение о публикации.
+            if rights in {"PUBLICATION_ELIGIBLE", "PUBLIC_DOMAIN"}:
+                ready_by_rights += 1
+            # Политика владельца: объект существует только для внутренней работы.
+            elif rights in {"PRIVATE_STUDY_ONLY", "STORAGE_ONLY"}:
+                internal_only += 1
+            else:
+                rights_enquiry += 1
+                enquiry_rows.append(
+                    {"path": path, "id": node["id"] or "(без id)", "rights": rights}
+                )
         if rows:
             total += len(rows)
             by_file[path] = {"count": len(rows), "ids": sorted(rows)[:5]}
     return {
         "total_objects": total,
+        "byRights": dict(by_rights.most_common()),
+        "byHolds": dict(by_holds.most_common()),
+        "ready_by_rights": ready_by_rights,
+        "internal_only": internal_only,
+        "rights_enquiry": rights_enquiry,
+        "enquiry_rows": enquiry_rows,
         "byFile": dict(sorted(by_file.items(), key=lambda kv: -kv[1]["count"])),
         "meaning": (
             "accessState=FULL_OBJECT_VERIFIED и locatorState=EXACT_LOCATOR_VERIFIED, "
@@ -1184,6 +1211,33 @@ def render_markdown(report):
         for path, info in list(decision["byFile"].items())[:12]:
             sample = ", ".join(f"`{x}`" for x in info["ids"][:3])
             add(f"| `{path}` | {info['count']} | {sample} |")
+        add("")
+    add("Разрез по правам (как их называет сам реестр, не как их оценивает этот отчёт):")
+    add("")
+    add("| `rightsState` | Объектов |")
+    add("|---|---|")
+    for rights, count in decision["byRights"].items():
+        add(f"| `{rights}` | {count} |")
+    add("")
+    add(
+        f"Из {decision['total_objects']} объектов: **{decision['ready_by_rights']}** "
+        "уже помечены как публикационно допустимые или общественное достояние — "
+        "их держит только решение о публикации, а не права; "
+        f"**{decision['internal_only']}** по политике владельца существуют только "
+        f"для внутренней работы; и лишь **{decision['rights_enquiry']}** требуют "
+        "запроса о правах или разрешения."
+    )
+    add("")
+    if decision["enquiry_rows"]:
+        add("Кто именно требует запроса о правах:")
+        add("")
+        grouped_enq = collections.defaultdict(list)
+        for row in decision["enquiry_rows"]:
+            grouped_enq[(row["path"], row["rights"])].append(row["id"])
+        for (path, rights), ids in sorted(grouped_enq.items()):
+            sample = ", ".join(f"`{i}`" for i in sorted(ids)[:6])
+            more = f" и ещё {len(ids) - 6}" if len(ids) > 6 else ""
+            add(f"- `{path}` (`{rights}`): {sample}{more}")
         add("")
     add(f"Оговорка: {decision['caveat']}")
     add("")
