@@ -164,6 +164,9 @@ def walk_json_hold_nodes(node, acc, depth=0):
                         "rightsState": node.get("rightsState"),
                         "publicationState": node.get("publicationState"),
                         "title": (node.get("title") or node.get("claim") or node.get("name") or "")[:160],
+                        "finding": str(
+                            node.get("finding") or node.get("note") or node.get("limits") or ""
+                        )[:400],
                     }
                 )
         for value in node.values():
@@ -798,8 +801,14 @@ def check_decision_only_holds(nodes_by_file):
                 internal_only += 1
             else:
                 rights_enquiry += 1
+                finding = node.get("finding") or ""
                 enquiry_rows.append(
-                    {"path": path, "id": node["id"] or "(без id)", "rights": rights}
+                    {
+                        "path": path,
+                        "id": node["id"] or "(без id)",
+                        "rights": rights,
+                        "negative": bool(re.search(r"\breject", finding, re.IGNORECASE)),
+                    }
                 )
         if rows:
             total += len(rows)
@@ -812,6 +821,7 @@ def check_decision_only_holds(nodes_by_file):
         "internal_only": internal_only,
         "rights_enquiry": rights_enquiry,
         "enquiry_rows": enquiry_rows,
+        "enquiry_already_negative": sum(1 for row in enquiry_rows if row["negative"]),
         "byFile": dict(sorted(by_file.items(), key=lambda kv: -kv[1]["count"])),
         "meaning": (
             "accessState=FULL_OBJECT_VERIFIED и locatorState=EXACT_LOCATOR_VERIFIED, "
@@ -1239,6 +1249,14 @@ def render_markdown(report):
             more = f" и ещё {len(ids) - 6}" if len(ids) > 6 else ""
             add(f"- `{path}` (`{rights}`): {sample}{more}")
         add("")
+        if decision["enquiry_already_negative"]:
+            add(
+                f"Из них **{decision['enquiry_already_negative']}** уже несут "
+                "записанный отрицательный вердикт в собственном поле `finding`: "
+                "вопрос прав там отвечен «не использовать», и открытым остаётся "
+                "только формальное снятие, а не запрос."
+            )
+            add("")
     add(f"Оговорка: {decision['caveat']}")
     add("")
 

@@ -3,7 +3,7 @@
  "artifact": "REPO-HOLD-INVENTORY",
  "role": "DERIVED_READ_ONLY_NOT_AUTHORITY",
  "generatedAt": "2026-11-18",
- "testedCommit": "5798516cac7347bdbc4b1635132af7a24bcdb2b0",
+ "testedCommit": "865749d3a1e280963ac1c0c79720a99dbcdfe43d",
  "policy": "data/repository-evidence-policy-v2.json",
  "totals": {
   "json_files_with_holds": 35,
@@ -1053,114 +1053,137 @@
     {
      "path": "SUNO_HYMNS/data/source-registry-v1.json",
      "id": "SRC-PHOS-CLEM-TEXT",
-     "rights": "RIGHTS_UNKNOWN"
+     "rights": "RIGHTS_UNKNOWN",
+     "negative": false
     },
     {
      "path": "SUNO_HYMNS/data/source-registry-v1.json",
      "id": "SRC-PHOS-CLEM-EB1911",
-     "rights": "RIGHTS_UNKNOWN"
+     "rights": "RIGHTS_UNKNOWN",
+     "negative": false
     },
     {
      "path": "SUNO_HYMNS/data/source-registry-v1.json",
      "id": "SRC-PHOS-CLEM-MCCLINTOCK",
-     "rights": "RIGHTS_UNKNOWN"
+     "rights": "RIGHTS_UNKNOWN",
+     "negative": false
     },
     {
      "path": "SUNO_HYMNS/data/source-registry-v1.json",
      "id": "SRC-CONF-1689-LBCF",
-     "rights": "RIGHTS_UNKNOWN"
+     "rights": "RIGHTS_UNKNOWN",
+     "negative": false
     },
     {
      "path": "SUNO_HYMNS/data/source-registry-v1.json",
      "id": "SRC-PHOS-SHOEMAKER-LECTURE-2017",
-     "rights": "RIGHTS_UNKNOWN"
+     "rights": "RIGHTS_UNKNOWN",
+     "negative": false
     },
     {
      "path": "SUNO_HYMNS/data/source-registry-v1.json",
      "id": "SRC-PHOS-EPIPHANIUS-COLLYRIDIANS-LOCATORS",
-     "rights": "RIGHTS_UNKNOWN"
+     "rights": "RIGHTS_UNKNOWN",
+     "negative": false
     },
     {
      "path": "data/bible-corpus-rights-provenance-2026-08-06.json",
      "id": "CROSSWIRE-RUSSYNODALLIO-1.0.3",
-     "rights": "PERMISSION_REQUIRED"
+     "rights": "PERMISSION_REQUIRED",
+     "negative": true
     },
     {
      "path": "data/bible-corpus-rights-provenance-2026-08-06.json",
      "id": "RBO-KASSIAN-CATALOG-2039",
-     "rights": "PERMISSION_REQUIRED"
+     "rights": "PERMISSION_REQUIRED",
+     "negative": false
     },
     {
      "path": "data/bible-corpus-rights-provenance-2026-08-06.json",
      "id": "ONLY-BIBLE-KASSIAN-PERMISSION-NOTICE",
-     "rights": "PERMISSION_REQUIRED"
+     "rights": "PERMISSION_REQUIRED",
+     "negative": false
     },
     {
      "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
      "id": "dort",
-     "rights": "RIGHTS_UNKNOWN"
+     "rights": "RIGHTS_UNKNOWN",
+     "negative": false
     },
     {
      "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
      "id": "westminster",
-     "rights": "RIGHTS_UNKNOWN"
+     "rights": "RIGHTS_UNKNOWN",
+     "negative": false
     },
     {
      "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
      "id": "heidelberg",
-     "rights": "RIGHTS_UNKNOWN"
+     "rights": "RIGHTS_UNKNOWN",
+     "negative": false
     },
     {
      "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
      "id": "davenant2024",
-     "rights": "RIGHTS_UNKNOWN"
+     "rights": "RIGHTS_UNKNOWN",
+     "negative": false
     },
     {
      "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
      "id": "articles39",
-     "rights": "RIGHTS_UNKNOWN"
+     "rights": "RIGHTS_UNKNOWN",
+     "negative": false
     },
     {
      "path": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
      "id": "PUSEY-V1-COLOPHON-JPG",
-     "rights": "RIGHTS_UNKNOWN"
+     "rights": "RIGHTS_UNKNOWN",
+     "negative": false
     },
     {
      "path": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
      "id": "PUSEY-V1-TITLE-JPG",
-     "rights": "RIGHTS_UNKNOWN"
+     "rights": "RIGHTS_UNKNOWN",
+     "negative": false
     },
     {
      "path": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
      "id": "PUSEY-V1-PRAEF-VII-JPG",
-     "rights": "RIGHTS_UNKNOWN"
+     "rights": "RIGHTS_UNKNOWN",
+     "negative": false
     },
     {
      "path": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
      "id": "PUSEY-V1-PRAEF-VIII-JPG",
-     "rights": "RIGHTS_UNKNOWN"
+     "rights": "RIGHTS_UNKNOWN",
+     "negative": false
     },
     {
      "path": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
      "id": "PUSEY-V1-PRAEF-IX-JPG",
-     "rights": "RIGHTS_UNKNOWN"
+     "rights": "RIGHTS_UNKNOWN",
+     "negative": false
     },
     {
      "path": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
      "id": "PUSEY-V1-PRAEF-X-JPG",
-     "rights": "RIGHTS_UNKNOWN"
+     "rights": "RIGHTS_UNKNOWN",
+     "negative": false
     },
     {
      "path": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
      "id": "PUSEY-V1-ERRATUM-JPG",
-     "rights": "RIGHTS_UNKNOWN"
+     "rights": "RIGHTS_UNKNOWN",
+     "negative": false
     },
     {
      "path": "ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json",
      "id": "PUSEY-V1-CAPITA-JPG",
-     "rights": "RIGHTS_UNKNOWN"
+     "rights": "RIGHTS_UNKNOWN",
+     "negative": false
     }
    ],
+   "enquiry_already_negative": 1,
    "byFile": {
     "data/charnock-biographical-anchors-v1.json": {
      "count": 146,

@@ -1,6 +1,6 @@
 # HOLD inventory — сквозной инвентарь HOLD-ов Research
 
-**Собрано:** 2026-11-18; **проверенный коммит:** `5798516cac7347bdbc4b1635132af7a24bcdb2b0`. **Роль:** производный read-only артефакт, не authority. Пересобрать: `python3 -B scripts/render_hold_inventory.py`.
+**Собрано:** 2026-11-18; **проверенный коммит:** `865749d3a1e280963ac1c0c79720a99dbcdfe43d`. **Роль:** производный read-only артефакт, не authority. Пересобрать: `python3 -B scripts/render_hold_inventory.py`.
 
 Инвентарь отвечает на один вопрос: какие HOLD-и объявлены в репозитории, какого они типа и что нужно, чтобы закрыть каждый честно. Он **ничего не снимает**: по `data/repository-evidence-policy-v2.json` HOLD не снимается ни присутствием файла в Research/Drive, ни достижимостью URL, ни библиографической записью.
 
@@ -151,6 +151,8 @@
 - `data/bible-corpus-rights-provenance-2026-08-06.json` (`PERMISSION_REQUIRED`): `CROSSWIRE-RUSSYNODALLIO-1.0.3`, `ONLY-BIBLE-KASSIAN-PERMISSION-NOTICE`, `RBO-KASSIAN-CATALOG-2039`
 - `ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json` (`RIGHTS_UNKNOWN`): `articles39`, `davenant2024`, `dort`, `heidelberg`, `westminster`
 - `ИСКУПЛЕНИЕ/evidence/source_controls_wave8_2026-11-03.json` (`RIGHTS_UNKNOWN`): `PUSEY-V1-CAPITA-JPG`, `PUSEY-V1-COLOPHON-JPG`, `PUSEY-V1-ERRATUM-JPG`, `PUSEY-V1-PRAEF-IX-JPG`, `PUSEY-V1-PRAEF-VII-JPG`, `PUSEY-V1-PRAEF-VIII-JPG` и ещё 2
+
+Из них **1** уже несут записанный отрицательный вердикт в собственном поле `finding`: вопрос прав там отвечен «не использовать», и открытым остаётся только формальное снятие, а не запрос.
 
 Оговорка: Один и тот же объект может учитываться в двух реестрах корпуса (например, карточка и её снимок в плане), поэтому сумма — верхняя граница.
 
