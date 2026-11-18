@@ -572,3 +572,71 @@
 - **HOLD:** Lewis & Demarest; White; Шнукер; Green, p. 118; Berkhof, p. 125; Стюарт; латынь Урсина; лист II Helv. XI.15; описание супралапсарианства (с. 29–30; проверка по памяти не допускается).
 
 Вердикты S1–S5 не меняются. Умысел не утверждается.
+
+## 16. Раунд 93 (2026-11-17): лапсарианские схемы (с. 29–30, сн. 93) по Беркхофу, Дорту I.15 и WCF III.7; латынь Урсина; II Helv. XI.15
+
+**Повод.** В §15 два места остались в HOLD:
+- описание супралапсарианства на с. 29–30 (проверено только по памяти);
+- сн. 93 (Berkhof, p. 125).
+
+Плюс латынь Урсина и лист II Helv. XI.15. Ниже — только по первоисточникам, открытым в этой сессии.
+
+### 16.1. Источники
+
+- (а) **L. Berkhof, *Systematic Theology*** — IA `systematic-theology-by-louis-berkhof_202405`. Это загрузка пользователя: текстовый PDF, в метаданных дата 1944 г., пометка Public Domain Mark. Распознавание страниц у IA — «page_number_confidence 0», поэтому **печатные страницы не установлены**: указаны листы скана. Издание, с которым сверялась статья (Banner of Truth, 2003), не открыто. **Класс B/C** — содержание проверяемо, страница нет.
+  - Л. 151: «In this sense of the word Calvin was clearly a Supralapsarian. The later development… began with Beza»; «of the later Supralapsarians, such as Beza, Gomarus, Peter Martyr, Zanchius, Ursinus, Perkins, Twisse, Trigland, Voetius, Burmannus, Witsius and Comrie, at least some are quite willing to admit that in the decree of Reprobation God in some way took sin [into consideration]».
+  - Л. 153: «It is sometimes represented as if God destined some men for eternal destruction, simply by an act of His sovereign will, without taking account of their sin; as if, like a tyrant… But Supralapsarians abhor the idea of a tyrannical God, and at least some of them explicitly state that, while preterition is an act of God's sovereign will, the second element of reprobation, namely, condemnation, is an act of justice and certainly takes account of sin». Там же — супралапсарианский порядок: «(a) The decree of God to glorify Himself… in the salvation of some and the perdition of other rational creatures, which exist in the divine mind as yet only as possibilities. (b) The decree to create… (c) The decree to permit them to fall. (d) The decree to justify the elect and to condemn the non-elect».
+  - Лл. 156–157, возражение (4) против супралапсарианства: «…sin does not come into consideration in the decree of reprobation. But this is hardly correct, though it may be true of some Supralapsarians… they usually regard precondemnation as an act of divine justice which does take sin into consideration».
+  - Л. 158: «the Reformed Churches in their official standards have always adopted the infralapsarian position, even though they have never condemned, but always tolerated, the other view… (the presiding officer in both cases belonging to the number), but in both the Canons of Dort and the Westminster Confession the infralapsarian view finds expression».
+  - Л. 159, об инфралапсариях: «Infralapsarianism really wants to explain reprobation as an act of God's justice… This really makes the decree of reprobation a conditional decree and leads into the Arminian fold. But infralapsarians on the whole do not want to teach a conditional decree… Sin is not the ultimate cause of reprobation any more than faith and good works are the cause of election, for all men are by nature dead in sin and trespasses».
+- (б) **Дорт I.15** — Schaff III, IA `creedsofchriste03scha`. Класс A1.
+  - Латынь, л. 569 = p. 555: «quos scilicet Deus ex liberrimo, justissimo, irreprehensibili, et immutabili beneplacito decrevit in communi miseria, in quam se sua culpa praecipitarunt, relinquere… tandem non tantum propter infidelitatem, sed etiam caetera omnia peccata, ad declarationem justitiae suae damnare… Atque hoc est decretum reprobationis».
+  - Английский текст, л. 598 = p. 584.
+- (в) **WCF III.7** (Creeds.json, класс B/C): «The rest of mankind God was pleased, according to the unsearchable counsel of his own will… to pass by, and to ordain them to dishonor and wrath for their sin, to the praise of his glorious justice».
+- (г) **Урсин, латынь**: *Explicationum catecheticarum…* (1587), IA `bim_early-english-books-1641-1700_explicationum-catechetic_ursinus-zacharias_1587`, поиск `inside.php`. Класс A1 с оговоркой: OCR плохой, а редакционная история издания в этом раунде не проверялась.
+  - Л. 475: «Ob. Sed si pro omnibus satisfecit… Resp. Satisfecit pro omnibus, quoad [OCR: «Satisfagi.onem»], non quoad applica[tionem]».
+  - Л. 243: «…sufficientiam, non quod ad applicationem».
+- (д) **II Helv. XI.15** — Schaff III, л. 271 = p. 257: «reconciliavit omnibus fidelibus Dominus noster Patrem coelestem… salusque et sufficientia abundantissima». Класс A1.
+
+### 16.2. С. 29–30: тезис / логическая форма / состоятельность / факты
+
+| Место | Тезис статьи | Логическая форма | Состоятельность | Факты |
+|---|---|---|---|---|
+| С. 29: супралапсарианство | Бог «как бы на пустом месте, с чистого листа… одних пока ещё невиновных людей избирает ко спасению, других не менее невиновных людей — к погибели» | Объект решения («ещё не павшие») → основание осуждения («невиновные») | **✗ Смешение** логического объекта решения с основанием приговора. Так уже `06_` §42; теперь это подтверждено собственным источником статьи | **`SOURCE_SAYS_OPPOSITE` (частично).** Беркхоф, цитируемый в сн. 93, называет такое представление ходячим искажением: «It is sometimes represented as if…» (а, л. 153). Супралапсарии, по Беркхофу, «abhor the idea of a tyrannical God» и обычно считают осуждение актом правосудия «which does take sin into consideration» (лл. 153, 157). Оговорка самого Беркхофа: «it may be true of some Supralapsarians», то есть для части авторов описание статьи возможно |
+| С. 30: «супралапсарианство делает Бога причиной гибели невинных людей (так как к погибели предопределяются люди независимо от их грехопадения)» | То же, как вывод | **✗ `NON_SEQUITUR`.** Из того, что решение логически предшествует допущению падения, не следует, что осуждение не учитывает грех: Беркхоф разводит praeteritio и praecondemnatio | (а, лл. 153, 157) |
+| С. 30: таблица, супралапсарианский столбец | 1 — сотворить; 2 — предопределить одних к спасению, других к погибели; 3 — допустить падение; 4 — Христос; 5 — Дух | Учебная схема | **Расходится с собственным источником** (мягко; сн. 96 сама оговаривает разнобой схем). У Беркхофа сотворение идёт **после** решения об избрании и отвержении, а осуждение — отдельный последний шаг (d), после падения. Совпадает с `06_` §42 | (а, л. 153) |
+| С. 29: «Хотя эту точку зрения отстаивал… Беза… она не приобрела большого количества последователей» | Мало сторонников | **`SOURCE_SAYS_MORE`** (мягко) | Беркхоф (л. 151) перечисляет среди «later Supralapsarians» Безу, Гомара, Петра Мартира, Занхия, **Урсина**, Перкинса, Твисса, Триглэнда, Воэция, Бурмана, Витсия, Комри. Председатели и Дорта, и Вестминстерской ассамблеи были супралапсариями (л. 158). «Немного последователей» и «не принята в исповеданиях» — разные утверждения |
+| С. 29, сн. 93: «Ни одно из исторических кальвинистских вероисповеданий не следует супралапсарианской схеме» | Факт об исповеданиях | **V** | **ACCURATE по содержанию.** Беркхоф (л. 158): официальные стандарты всегда инфралапсарианские, «never condemned, but always tolerated, the other view». Локатор «p. 125» не проверен: другое издание. Для полноты: статья опускает «always tolerated» — по Беркхофу это допустимая внутри исповеданий школа |
+| С. 29–30: инфралапсарианство: «предопределение к погибели — условное, основанное на предузнании человеческой греховности»; «доктрина двойного предопределения таким образом исключается… точнее, двойное безусловное» | Объект решения — падшие → отвержение обусловлено грехом | **✗ Смешение оставления и осуждения** + **внутренняя несостоятельность.** Если объект решения — **все** падшие, то предвиденный грех общий для всех. Значит, он не может объяснить, почему одни оставлены, а другие нет; различает только благоволение. Беркхоф делает тот же вывод: «Sin is not the ultimate cause of reprobation… for all men are by nature dead in sin» (л. 159). Об осуждении («за грех») статья права | Дорт I.15 (б): оставление — «ex liberrimo… beneplacito», осуждение — «propter infidelitatem… et caetera omnia peccata»; документ сам называет это «decretum reprobationis». WCF III.7 (в): «pass by» — «according to the unsearchable counsel of his own will… as he pleaseth»; «ordain them to dishonor and wrath **for their sin**». По Беркхофу, сведение отвержения к правосудию «makes the decree of reprobation a conditional decree and leads into the Arminian fold» (л. 159). Это слова Беркхофа об опасности, а не обвинение автора в арминианстве: статья прямо держит безусловное избрание (с. 30) |
+| С. 30: «все три схемы отражают кальвинистскую позицию» | Классификация | **V** для супра и инфра. «Сублапсарианство» в смысле статьи (Христос — для всех, перед избранием) — это порядок амиральдистского типа. Терминологию разбирает `16_` §3.1 (поправка 2026-10-15) | — |
+
+### 16.3. Урсин и II Helv. XI.15
+
+- **Урсин, латынь (г).** Формула «satisfecit pro omnibus… non quoad applicationem» засвидетельствована по скану 1587 г. (л. 475; ср. л. 243: «…sufficientiam, non quod ad applicationem»). Это подтверждает английский перевод Уилларда, приведённый в §15 (д, л. 261). Слово после «quoad» OCR не прочитал — дословно латынь не цитировать. **Попутно:** Беркхоф (л. 151) числит Урсина среди супралапсариев. Значит, «всеобщая» формула в. 37 у её автора сочетается с супралапсарианским порядком решений и с различением достаточности и применения. Для чтения в. 37 как «неограниченного искупления» в смысле замещения каждого это ещё одно предостережение (§15, строка «эквивокация»).
+- **II Helv. XI.15 (д).** «Reconciliavit omnibus fidelibus… Patrem» стоит **перед** XI.16–17, которые цитирует статья (сн. 16). Слово «sufficientia abundantissima» относится к полноте Христа для верующих. Вывод `15_` §5.1 (волна 11) о пропущенном ограничении в XI.15 подтверждён по листу. Это `CONTEXT_OMITTED` (мягко): XI.17 само говорит о спасаемых верой, так что противоречия нет.
+
+### 16.4. Сторона корпуса
+
+- **`16_` §4, пп. 1 и 3.** «Ни один супралапсарианин… **никогда** не утверждал» и «исполнение… **всегда** осуществляется только propter peccatum» — **`OVERSTATED`**. Беркхоф допускает, что описание, отвергаемое корпусом, «may be true of some Supralapsarians» (л. 157), а осуждение за грех признают «at least some of them» (л. 153). Суть возражения корпуса верна, кванторы — нет. Текст `16_` §1 (действующий) уже сформулирован осторожно.
+- **`06_` §42** («для такого обвинения нужен их собственный текст») — подтверждён. Теперь есть текст собственного источника статьи (сн. 93), который отвергает это представление как обычное искажение.
+
+### 16.5. Сводка §16
+
+- **Закрыто из HOLD:**
+  - описание супралапсарианства на с. 29–30 — по Беркхофу (источнику сн. 93), Дорту I.15 и WCF III.7;
+  - содержание сн. 93 — ACCURATE (локатор p. 125 не проверен);
+  - латынь Урсина — в целом;
+  - II Helv. XI.15.
+- **Новые вердикты по статье:**
+  - с. 29–30: «невиновные» — `SOURCE_SAYS_OPPOSITE` (частично) и `NON_SEQUITUR`;
+  - таблица — расходится с источником (мягко);
+  - «мало последователей» — `SOURCE_SAYS_MORE`;
+  - инфралапсарианское «условное отвержение» — смешение оставления и осуждения, внутренне несостоятельно (предвиденный грех общий для всех падших).
+- **Корпус:** `16_` §4 — `OVERSTATED` (кванторы «никогда» и «всегда»).
+- **HOLD:**
+  - Berkhof, p. 125 (по изданию статьи);
+  - Тиссен, p. 104; Эриксон, с. 779;
+  - дословная латынь Урсина;
+  - печатные страницы скана Беркхофа.
+
+Вердикты S1–S5 не меняются. Умысел не утверждается.
