@@ -143,9 +143,22 @@ class AuditTests(unittest.TestCase):
         self.assertEqual(report["totals"]["filesWithTokens"], 1)
         self.assertEqual(report["totals"]["byState"], {"evidence": 1})
 
-    def test_check_returns_one_while_tokens_remain(self) -> None:
+    def test_token_without_history_is_not_checked(self) -> None:
+        # Outside a git repository the tool cannot tell damage from prose that was
+        # always written this way, so it must not claim either: no failure.
         self.fx.write("docs/a.md", "Итого44строки.\n")
-        self.assertEqual(ati.main(["--root", str(self.fx.root), "--check"]), 1)
+        report = self.fx.audit({})
+        self.assertEqual(report["totals"]["byState"], {"not-checked": 1})
+        self.assertEqual(ati.main(["--root", str(self.fx.root), "--check"]), 0)
+
+    def test_check_fails_on_a_repairable_token(self) -> None:
+        self.fx.write("docs/a.md", "Итого44строки.\n")
+        original = ati.file_history_text
+        ati.file_history_text = lambda path, root, limit=0: "Итого 44 строки.\n"
+        try:
+            self.assertEqual(ati.main(["--root", str(self.fx.root), "--check"]), 1)
+        finally:
+            ati.file_history_text = original
 
     def test_receipt_blocked_file_is_not_repaired_and_does_not_fail_check(self) -> None:
         import hashlib

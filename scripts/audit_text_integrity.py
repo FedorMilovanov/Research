@@ -12,6 +12,10 @@ searched for the same words with the spaces present; the repair is applied only
 when that evidence is found, and the whole window around the token - not just
 the token - has to match. Tokens without evidence are reported and left alone.
 
+A file with no readable history (a shallow clone, or a file added in the very
+commit being checked) is marked ``not-checked``: the tool does not claim either
+way, and ``--check`` does not fail on it.
+
 A file whose current bytes are named by a SHA-256 somewhere in the corpus is
 never rewritten: that hash is a receipt, and editing the file would quietly
 break it. Such files are reported with state ``receipt-blocked`` and need their
@@ -150,7 +154,8 @@ def receipt_blocked(path: Path, receipts: set[str]) -> bool:
     return hashlib.sha256(path.read_bytes()).hexdigest() in receipts
 
 
-def audit(root: Path, history_provider=file_history_text, ignore_receipts: bool = False) -> dict:
+def audit(root: Path, history_provider=None, ignore_receipts: bool = False) -> dict:
+    history_provider = history_provider or file_history_text
     receipts = set() if ignore_receipts else recorded_hashes(root)
     findings = []
     per_file: dict[str, dict] = {}
@@ -168,6 +173,8 @@ def audit(root: Path, history_provider=file_history_text, ignore_receipts: bool 
             window = window_of(text, start, token)
             if blocked:
                 state = "receipt-blocked"
+            elif not history:
+                state = "not-checked"
             elif has_evidence(window, history):
                 state = "evidence"
             else:
@@ -200,7 +207,7 @@ def audit(root: Path, history_provider=file_history_text, ignore_receipts: bool 
     }
 
 
-def repair(root: Path, history_provider=file_history_text, passes: int = 5,
+def repair(root: Path, history_provider=None, passes: int = 5,
            ignore_receipts: bool = False) -> dict:
     """Insert the missing spaces where the file's history shows them.
 
@@ -208,6 +215,7 @@ def repair(root: Path, history_provider=file_history_text, passes: int = 5,
     insertion changes the window the second one is judged by. The loop repeats
     until nothing changes, so a single --repair always reaches the fixpoint.
     """
+    history_provider = history_provider or file_history_text
     totals: dict[str, int] = {}
     skipped: list[str] = []
     receipts = set() if ignore_receipts else recorded_hashes(root)

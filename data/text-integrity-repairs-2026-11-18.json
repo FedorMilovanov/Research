@@ -19,7 +19,8 @@
     "jsonValidity": "json.load на каждом изменённом .json",
     "postRepairAudit": "python3 -B scripts/audit_text_integrity.py --summary → 446 склеек в 9 файлах, все receipt-blocked",
     "check": "python3 -B scripts/audit_text_integrity.py --check → 0 (ни одной чинимой склейки)",
-    "tests": "python3 -B -m unittest discover -s scripts -p 'test_audit_text_integrity.py' → 21 OK"
+    "tests": "python3 -B -m unittest discover -s scripts -p 'test_audit_text_integrity.py' → 22 OK",
+    "ci": ".github/workflows/holds-inventory.yml, шаг «Reject new glued tokens in prose»; в job включён fetch-depth: 0"
   },
   "files": [
     {
@@ -122,6 +123,7 @@
   ],
   "limits": [
     "Число, замыкающее слово (Кор80), не чинится: та же форма у цитат Мф5 и 1Кор.",
+    "В мелком клоне без истории файл получает not-checked, а не приговор: проверка в CI требует fetch-depth: 0.",
     "446 склеек в 9 файлах корпуса Чарнока остаются: их текущие байты закреплены SHA-256 в квитанциях, и правка сломала бы квитанцию молча. Нужен владелец корпуса, который переиздаст квитанцию.",
     "Возвращены пробелы, а не иное повреждение того же прохода.",
     "Наличие окна в истории доказывает раздельность слов, но не верность числа по существу."

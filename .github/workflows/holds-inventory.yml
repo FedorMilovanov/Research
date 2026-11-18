@@ -67,6 +67,11 @@ jobs:
     steps:
       - name: Checkout Research
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          # The text-integrity check needs the file's own history: without it a
+          # glued token cannot be told apart from prose that was always written
+          # that way, and the tool would report `not-checked` for everything.
+          fetch-depth: 0
       - name: Compile inventory tools
         run: |
           python3 -m py_compile scripts/audit_repository_holds.py
