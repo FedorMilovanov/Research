@@ -802,8 +802,8 @@ Both were `projectLevel` facts while the text had no work. DUTCH-005 now links t
 
 **Claim:** The original author is not established. In the NPNF rendering Basil cannot name the author of the lamp-lighting thanksgiving and names the Hymn of Athenogenes separately; the claim that this proves Athenogenes wrote Phos Hilaron is not warranted. Attribution to Sophronius cannot explain the pre-seventh-century thanksgiving attested by Basil; this does not rule out later redaction of the received text. The 500–699 catalogue date of Papyrus London 2037 b alone does not refute seventh-century authorship.
 
-**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-PRAVENC, SRC-PHOS-BASIL-DSS, SRC-PHOS-BASIL-PG32-OCR, SRC-PHOS-PAPLOND2037B-DCLP · **HOLDs:** ARCHIVE_HOLD
-**Notes:** The encyclopaedia reports that the Athenogenes ascription resulted from conflating two testimonies. The juxtaposition is read in Basil; the historical origin of the attribution has not independently been traced through manuscripts; Papyrus identity and catalogue date have now been checked in DCLP/LDAB, not its letters, completeness or palaeography. A seventh-century copy can carry an earlier or contemporary text; Public copy and any attribution/redaction decision remain outside this research update.
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-PRAVENC, SRC-PHOS-BASIL-DSS, SRC-PHOS-BASIL-PG32-OCR, SRC-PHOS-PAPLOND2037B-DCLP, SRC-PHOS-PAPLOND2037B-MILNE1927 · **HOLDs:** ARCHIVE_HOLD
+**Notes:** The encyclopaedia reports that the Athenogenes ascription resulted from conflating two testimonies. The juxtaposition is read in Basil; the historical origin of the attribution has not independently been traced through manuscripts; Papyrus identity and catalogue date are checked in DCLP/LDAB, and the extent is now described in Milne 1927 no. 244, read in OCR. The papyrus letters, images and palaeography are not examined. A seventh-century fragment can carry earlier or contemporary words; this does not identify their author; Public copy and any attribution/redaction decision remain outside this research update.
 **Limits / next action:** Basil quotes a Trinitarian clause, not the six lines; exclude authorship of the ancient thanksgiving, not every possible later revision; ARCHIVE_HOLD remains for the unexamined papyrus and attribution-bearing manuscript/edition evidence.
 
 ### CLM-PHOS-AC-CHECKED — the Apostolic Constitutions claim, read and dropped
@@ -817,8 +817,8 @@ Both were `projectLevel` facts while the text had no work. DUTCH-005 now links t
 
 **Claim:** The qualified description of Phos Hilaron as the earliest non-scriptural hymn preserved complete and sung continuously is a comparative literature claim still requiring verification, not a conclusion established by Basil 29.73. Basil supplies an ancient lamp-lighting formula; he does not establish six-line textual identity or continuous performance. The selected hymn is not claimed to be the oldest by manuscript or composition.
 
-**Review state:** SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION · **Sources:** SRC-PHOS-BASIL-DSS, SRC-PHOS-PRAVENC, SRC-PHOS-POXY, SRC-PHOS-ODES · **HOLDs:** EVIDENCE_HOLD
-**Limits / next action:** The earlier formulation and its permission to use the qualified superlative are superseded here, not silently treated as verified. The comparison with older hymns in the source list was not an exhaustive demonstration; EVIDENCE_HOLD applies to the comparative superlative and continuity, not to the existence of the read Basil passage. The papyrus text was not acquired. Track selection is unchanged; no product copy has been edited.
+**Review state:** SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION · **Sources:** SRC-PHOS-BASIL-DSS, SRC-PHOS-PRAVENC, SRC-PHOS-POXY, SRC-PHOS-ODES, SRC-PHOS-PAPLOND2037B-MILNE1927 · **HOLDs:** EVIDENCE_HOLD
+**Limits / next action:** The earlier formulation and its permission to use the qualified superlative are superseded here, not silently treated as verified. The comparison with older hymns in the source list was not an exhaustive demonstration; EVIDENCE_HOLD applies to the comparative superlative and continuity, not to the existence of the read Basil passage. The papyrus facsimile was not acquired; the limited OCR publication is recorded separately below. Track selection is unchanged; no product copy has been edited; Milne 1927 no. 244 is now read in OCR: it is not a complete six-line witness (CLM-PHOS-PAPYRUS-EXTENT). The material basis for the previous completeness argument has therefore been narrowed, not verified. EVIDENCE_HOLD remains.
 
 ### CLM-PHOS-NOT-ALEXANDRINUS — the Codex Alexandrinus claim, dropped
 
@@ -831,15 +831,15 @@ Both were `projectLevel` facts while the text had no work. DUTCH-005 now links t
 
 **Claim:** In the NPNF English translation, Basil attests the antiquity of a lamp-lighting thanksgiving and quotes a Trinitarian clause, not the complete received six-line Phos Hilaron. Neither its full wording in c. 375 nor the date of composition or a complete textual transmission can be inferred from this passage.
 
-**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-BASIL-DSS, SRC-PHOS-BASIL-PG32-OCR, SRC-PHOS-BASIL-DATE · **HOLDs:** none
-**Limits / next action:** The Greek comparison is confined to OCR of the printed passage, not a verified Greek transcription. Several OCR versions of PG 32 are not independent textual witnesses; The former second clause, that the complete six-line text is first read in a 6th–7th-century papyrus, exceeded the access actually obtained. The papyrus is identified only in a catalogue (CLM-PHOS-PAPYRUS-CATALOG), whose edition block is empty; no such firsthand reading is claimed.
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-BASIL-DSS, SRC-PHOS-BASIL-PG32-OCR, SRC-PHOS-BASIL-DATE, SRC-PHOS-PAPLOND2037B-MILNE1927 · **HOLDs:** none
+**Limits / next action:** The Greek comparison is confined to OCR of the printed passage, not a verified Greek transcription. Several OCR versions of PG 32 are not independent textual witnesses; The former statement that the complete six-line text is first read in a 6th–7th-century papyrus exceeded access and is superseded. DCLP has an empty edition block; the subsequent OCR reading of Milne no. 244 instead describes a strip and prints two incomplete lines (CLM-PHOS-PAPYRUS-EXTENT). No complete early text or facsimile reading is claimed.
 
 ### CLM-PHOS-DATING-OPEN — Date of composition
 
 **Claim:** The date of composition is unknown. In the read NPNF passage Basil treats the lamp-lighting thanksgiving/formula as ancient c. 375. The papyrus witness reported in the literature is now identified in DCLP as London 2037 b = P. Lond. Lit. 244, dated 500–699 by the catalogue, not palaeographically verified here.
 
-**Review state:** RESEARCH_OPEN · **Sources:** SRC-PHOS-BASIL-DSS, SRC-PHOS-PRAVENC, SRC-PHOS-BASIL-PG32-OCR, SRC-PHOS-PAPLOND2037B-DCLP · **HOLDs:** ARCHIVE_HOLD
-**Notes:** The popular '200 AD or earlier' figure was not verified in this pass and is not used; Do not present any second- or third-century date as established; A catalogue date of a copy is neither a date of composition nor a firsthand reading of six complete lines. The linked image routes did not yield the papyrus text in this pass.
+**Review state:** RESEARCH_OPEN · **Sources:** SRC-PHOS-BASIL-DSS, SRC-PHOS-PRAVENC, SRC-PHOS-BASIL-PG32-OCR, SRC-PHOS-PAPLOND2037B-DCLP, SRC-PHOS-PAPLOND2037B-MILNE1927 · **HOLDs:** ARCHIVE_HOLD
+**Notes:** The popular '200 AD or earlier' figure was not verified in this pass and is not used; Do not present any second- or third-century date as established; A catalogue date of a copy is neither a date of composition nor a firsthand reading of six complete lines. Milne no. 244 is now read in OCR, reporting a sixth/seventh-century strip and printing two incomplete lines, not a complete text. The papyrus and page images remain unread.
 
 ### CLM-PHOS-PAPYRUS-CATALOG — Идентификация папирусного свидетеля
 
@@ -847,7 +847,15 @@ Both were `projectLevel` facts while the text had no work. DUTCH-005 now links t
 
 **Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-PAPLOND2037B-DCLP · **HOLDs:** ARCHIVE_HOLD, LOCATOR_HOLD
 **Level:** project research; not added to the production track.
-**Limits / next action:** Read: catalogue XML and bibliography, with exact identifiers and displayed date. Not read: papyrus image, Milne no. 244 or Tripolitis pp. 189–196. Catalogue CC BY 3.0 is not an image or article licence.
+**Notes:** Read: DCLP XML and bibliography, with exact identifiers and displayed date. Its edition block remains empty. Subsequently Milne no. 244 was read separately in OCR (CLM-PHOS-PAPYRUS-EXTENT), not as a DCLP transcription. Papyrus images and Tripolitis pp. 189–196 remain unread. Catalogue CC BY 3.0 is not an image or article licence.
+
+### CLM-PHOS-PAPYRUS-EXTENT — Полнота раннего свидетеля Phos Hilaron
+
+**Claim:** In the OCR of Milne 1927, no. 244 (pp. 205–206), Pap. 2037 B is described as a 3 × 13.8 cm strip and published under Hymn (?) in two incomplete lines, followed by no. 245. The entry presents a fragmentary witness, not the complete received Phos Hilaron. The link to the hymn is made through the separately identified Tripolitis bibliography; Milne does not name Phos Hilaron in this entry.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-PAPLOND2037B-MILNE1927, SRC-PHOS-PAPLOND2037B-DCLP · **HOLDs:** RIGHTS_HOLD
+**Level:** project research; not added to the production track.
+**Notes:** Actual access: OCR of the catalogue description and transcription, not the page images or the papyrus; Greek letters, accents, brackets and individual readings are not quote-verified; This corrects the inference that the full six-line text was read on the early papyrus. It neither dates composition nor establishes which witness first preserves the complete text, nor continuous performance; The sixth/seventh-century date, measurements and acquisition/numbering history are those reported by Milne, not independently verified palaeography or archive research.
 
 ### CLM-PHOS-RU-TRADITION — Russian translation history
 
