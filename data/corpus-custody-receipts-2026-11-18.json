@@ -999,7 +999,131 @@
         "Проверены только предки перечисленных объектов; остальные ветки «00 — GITHUB PROJECTS» не смотрелись.",
         "Корень My Drive отдельно не проверялся: у корня нет списка разрешений в том же смысле, что у папки.",
         "Права предка могут измениться после проверки; значения сняты 2026-11-18."
-      ]
+      ],
+      "siblingsUnderGithubProjects": {
+        "note": "Все семь папок-детей «00 — GITHUB PROJECTS» проверены: три из них — предки объектов (02, 03, 99), четыре остальные проверены отдельно.",
+        "checked": [
+          {
+            "name": "00 — START HERE — INDEX, LINKS, RIGHTS",
+            "id": "13stt7DBDwc-hkqgpez6GMANFkiIuJgfC",
+            "permissions": [
+              {
+                "type": "user",
+                "role": "owner",
+                "email": "oldpoet2025@gmail.com"
+              }
+            ],
+            "anyone": false,
+            "domain": false
+          },
+          {
+            "name": "01 — gb-is-my-strength — GOSPOD-BOG.RU",
+            "id": "1kJ0hLJOFCCePhUKiynUJ6S6us2HELD-W",
+            "permissions": [
+              {
+                "type": "user",
+                "role": "owner",
+                "email": "oldpoet2025@gmail.com"
+              }
+            ],
+            "anyone": false,
+            "domain": false
+          },
+          {
+            "name": "04 — AuditRepo — АУДИТ И ВЕРИФИКАЦИЯ",
+            "id": "1NBIapUtgwzXJ1TSuAjkuH9a3DnLwHzwt",
+            "permissions": [
+              {
+                "type": "user",
+                "role": "owner",
+                "email": "oldpoet2025@gmail.com"
+              }
+            ],
+            "anyone": false,
+            "domain": false
+          },
+          {
+            "name": "90 — SHARED — ОБЩИЕ МАТЕРИАЛЫ МЕЖДУ ПРОЕКТАМИ",
+            "id": "1C5nkQe1cLPOkekBy7elCnmPZ1_99IBBm",
+            "permissions": [
+              {
+                "type": "user",
+                "role": "owner",
+                "email": "oldpoet2025@gmail.com"
+              }
+            ],
+            "anyone": false,
+            "domain": false
+          }
+        ],
+        "result": "все семь — только владелец"
+      },
+      "rootLevelResearchItems": {
+        "note": "Объекты верхнего уровня My Drive, относящиеся к исследованию, проверены отдельно; остальные 28 объектов корня — не исследовательские (торты, скриншоты, боты) и не проверялись.",
+        "checked": [
+          {
+            "name": "Искупление",
+            "id": "1RBmK2XWQMhFvjL9G3-WnlqAh2o76bX_3",
+            "permissions": [
+              {
+                "type": "user",
+                "role": "owner",
+                "email": "oldpoet2025@gmail.com"
+              }
+            ],
+            "anyone": false,
+            "domain": false
+          },
+          {
+            "name": "99 — EMERGENCY SNAPSHOT — РУССКИЕ БАПТИСТЫ — 2026-07-31",
+            "id": "1W8egf7QYGqBxKee_YgvGldxhcNyfTJRa",
+            "permissions": [
+              {
+                "type": "user",
+                "role": "owner",
+                "email": "oldpoet2025@gmail.com"
+              }
+            ],
+            "anyone": false,
+            "domain": false
+          },
+          {
+            "name": "Ограниченное искупление - Алексей Прокопенко.pdf",
+            "id": "1ZlmUe1PfCeZFAB2aZjjLcx7R7s3stWQo",
+            "permissions": [
+              {
+                "type": "user",
+                "role": "owner",
+                "email": "oldpoet2025@gmail.com"
+              }
+            ],
+            "anyone": false,
+            "domain": false
+          },
+          {
+            "name": "Grace Church (RU)",
+            "id": "1_PWjTMHvLEyTpXiAqvcpooLzY0Mbxm39",
+            "permissions": [
+              {
+                "type": "user",
+                "role": "owner",
+                "email": "oldpoet2025@gmail.com"
+              }
+            ],
+            "anyone": false,
+            "domain": false
+          }
+        ],
+        "result": "все четыре — только владелец"
+      },
+      "totals": {
+        "familyObjects": 33,
+        "ancestors": 7,
+        "siblings": 4,
+        "rootLevel": 4,
+        "grandTotal": 48,
+        "allOwnerOnly": true
+      }
     }
   }
 }
