@@ -22,7 +22,8 @@ def require(condition: bool, message: str) -> None:
 
 items = DATA["objects"]
 require(DATA["publicationDecision"] == "PUBLICATION_HOLD", "Publication gate must stay HOLD")
-require(len(items) >= 37, "Expected 37 objects after financial extension")
+require(len(items) >= 38, "Expected 38 objects after court audio index reconciliation")
+require(DATA["version"] >= 8, "Audio archive registry version is stale")
 ids = [o["sourceId"] for o in items]
 urls = [o["url"].rstrip("/") for o in items]
 require(len(set(ids)) == len(ids), "Repeated sourceId")
@@ -79,6 +80,13 @@ require("устава 2023 года" in TEXT, "Audit policy must identify applic
 terms = next(o for o in items if o["sourceId"] == "JR-MBC-038")
 require("AI_AUTOMATION_PROHIBITED_BY_SOURCE_TERMS" in terms.get("integrityFlags", []), "ACMS anti-bot restriction missing")
 require("не производили автоматизированного поиска внутри ACMS" in TEXT, "Court access restriction not disclosed")
+require("первичный протокол мартовского собрания ещё не приобретён" not in TEXT, "2016 chronology incorrectly denies known minutes fragment")
+require("полноценные приложения №9" in TEXT, "2016 minutes vs unavailable attachments distinction omitted")
+audio = next(o for o in items if o["sourceId"] == "JR-MBC-040")
+require(audio["accessState"] == "CATALOG_ONLY" and audio["locatorState"] == "COARSE_LOCATOR_ONLY", "Unheard oral arguments must remain catalog-only")
+require({"OFFICIAL_INDEX_ONLY", "AUDIO_NOT_DOWNLOADED_OR_LISTENED", "NO_VERIFIED_AUDIO_TIMECODES"} <= set(audio.get("integrityFlags", [])), "Unheard audio disclaimers lost")
+require({"EVIDENCE_HOLD", "LOCATOR_HOLD", "PUBLICATION_HOLD"} <= set(audio["holds"]), "Unheard audio publication/locator hold missing")
+require("JR-MBC-040" in TEXT and "не скачаны и не прослушаны" in TEXT, "Court recording absence not visible in narrative")
 nc = next(o for o in items if o["sourceId"] == "JR-MBC-039")
 require(nc["rightsState"] == "PRIVATE_STUDY_ONLY", "Confidential 2017 NCN report must not be publishable")
 require("NOT_AN_AUDIT_OPINION" in nc.get("integrityFlags", []), "NCN summary is not an independent audit")
