@@ -273,13 +273,36 @@
       "method": "section-anchor-slug-check",
       "verification": {
         "command": "python3 -B scripts/audit_relative_links.py --summary",
-        "expect": "2 410 файлов; resolves=2 710, missing=58, missing-anchor=0, external=5 974; --strict → 0 необъяснённых",
+        "expect": "2 410 файлов; resolves=2 711, missing=58, missing-anchor=0, external=5 974; --strict → 0 необъяснённых",
         "tests": "python3 -B -m unittest discover -s scripts -p 'test_audit_relative_links.py' → 27 OK"
       },
       "limits": [
         "Существование заголовка не доказывает, что раздел прочитан и что в нём сказано именно это.",
         "Якоря `#L12` и фрагменты не-markdown целей не проверяются: заголовков у них нет.",
         "Slug считается по правилам GitHub приближённо: экзотические символы в заголовке могут дать ложный дефект, поэтому дефисные формы нормализуются."
+      ]
+    },
+    {
+      "id": "HCR-2026-11-18-C4",
+      "title": "Объекты Drive: 8 из 24 перечитаны у сервера, 8/8 совпали по размеру и SHA-256 с заявленными в реестре",
+      "holdType": "ARCHIVE_HOLD",
+      "status": "CONFIRMATION_NOT_CLOSURE",
+      "closedScope": "Снято сомнение в том, что объекты, на которые ссылаются замыкания HCR-2026-11-18-01 и -02, всё ещё существуют и что их серверный `sha256Checksum` не изменился. Прочитаны метаданные восьми объектов (`files.get`, fields=id,name,size,sha256Checksum,mimeType): 8/8 совпали по размеру и хешу, 0 отсутствующих, 0 расхождений. Байты не скачивались — независимый пересчёт содержимого сделан только для объекта из HCR-C1.",
+      "recordLocations": [
+        "data/drive-metadata-recheck-2026-11-18.json",
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §13"
+      ],
+      "method": "google-drive-server-metadata-read",
+      "verification": {
+        "command": "google_drive.get_file (соединитель) по восьми driveFileId из реестра; сверка size и sha256Checksum с заявленными",
+        "expect": "8/8 match, 0 mismatch, 0 not-found; 24 различных объекта в реестре, проверено 8",
+        "tests": "сетевой проход, в CI не включён: соединитель Drive недоступен в сборке"
+      },
+      "limits": [
+        "Серверный sha256Checksum — заявление Drive, а не пересчёт байтов: подмена объекта с обновлением метаданных этим не ловится.",
+        "Проверено 8 из 24 объектов; остальные 16 не проверялись.",
+        "Выборка не случайная: первые по порядку объекты замыканий 01 и 02.",
+        "Совпадение хеша не даёт прав на публикацию и не доказывает, что текст прочитан: RIGHTS_HOLD/PUBLICATION_HOLD остаются."
       ]
     }
   ],

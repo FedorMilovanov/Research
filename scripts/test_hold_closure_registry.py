@@ -44,13 +44,33 @@ class RegistryShapeTests(unittest.TestCase):
                 with self.subTest(entry["id"], record=record):
                     self.assertTrue((ROOT / path).exists(), f"{entry['id']}: missing {path}")
 
-    def test_verification_commands_are_runnable_strings(self) -> None:
+    def test_verification_names_a_repeatable_route(self) -> None:
+        # A check that cannot be repeated is a claim. The route may be a local
+        # script or an external connector, but it has to be named.
         for entry in self.data["confirmations"]:
             verification = entry.get("verification")
             if not isinstance(verification, dict):
                 continue
+            text = verification.get("command", "") + verification.get("tests", "")
             with self.subTest(entry["id"]):
-                self.assertIn("python3", verification.get("command", "") + verification.get("tests", ""))
+                self.assertTrue(
+                    "python3" in text or "соединитель" in text or "connector" in text,
+                    f"{entry['id']}: verification names no repeatable route",
+                )
+
+    def test_external_route_declares_why_ci_cannot_run_it(self) -> None:
+        for entry in self.data["confirmations"]:
+            verification = entry.get("verification")
+            if not isinstance(verification, dict):
+                continue
+            text = (verification.get("command", "") + verification.get("tests", "")).lower()
+            if "python3" in text:
+                continue
+            with self.subTest(entry["id"]):
+                self.assertTrue(
+                    "ci" in text,
+                    f"{entry['id']}: a non-script route must say what CI does with it",
+                )
 
     def test_every_confirmation_is_visible_in_the_register(self) -> None:
         text = REGISTER.read_text(encoding="utf-8")
