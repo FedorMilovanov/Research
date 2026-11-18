@@ -972,7 +972,7 @@ def build():
     closures = [
         {
             "item": "SUNO_HYMNS/RESEARCH/OPEN_HOLDS.md",
-            "action": "Пересобрано генератором scripts/render_hold_ledger.py",
+            "action": "Пересобрано генератором SUNO_HYMNS/scripts/render_hold_ledger.py",
             "effect": (
                 "Состав HOLD-ов не изменился (реестры те же); обновлена только "
                 "дата сборки, то есть устранено расхождение «сводка от 2026-11-15 "

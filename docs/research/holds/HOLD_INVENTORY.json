@@ -3,7 +3,7 @@
  "artifact": "REPO-HOLD-INVENTORY",
  "role": "DERIVED_READ_ONLY_NOT_AUTHORITY",
  "generatedAt": "2026-11-18",
- "testedCommit": "5f1d4ea06e994ef1eb9acd1ee13b4d2a76dfc471",
+ "testedCommit": "4b393e3df16cce7a997918aa873b702fec6d50c0",
  "policy": "data/repository-evidence-policy-v2.json",
  "totals": {
   "json_files_with_holds": 35,
@@ -1412,7 +1412,7 @@
  "closuresThisPass": [
   {
    "item": "SUNO_HYMNS/RESEARCH/OPEN_HOLDS.md",
-   "action": "Пересобрано генератором scripts/render_hold_ledger.py",
+   "action": "Пересобрано генератором SUNO_HYMNS/scripts/render_hold_ledger.py",
    "effect": "Состав HOLD-ов не изменился (реестры те же); обновлена только дата сборки, то есть устранено расхождение «сводка от 2026-11-15 при реестрах без изменений»."
   }
  ],
