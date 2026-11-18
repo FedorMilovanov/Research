@@ -15,10 +15,10 @@
 
 | Вид | У источников | У тезисов |
 |---|---|---|
-| `ARCHIVE_HOLD` | 17 | 29 |
-| `LOCATOR_HOLD` | 30 | 13 |
+| `ARCHIVE_HOLD` | 18 | 29 |
+| `LOCATOR_HOLD` | 31 | 13 |
 | `EVIDENCE_HOLD` | 4 | 11 |
-| `RIGHTS_HOLD` | 134 | 43 |
+| `RIGHTS_HOLD` | 136 | 43 |
 
 `RIGHTS_HOLD` стоит почти на всём: это общая оговорка о правах, а не конкретная дыра. Отдельного внимания требуют три остальных вида.
 
@@ -36,6 +36,8 @@
   доступ: `CATALOG_ONLY`, локатор: `EXACT_LOCATOR_VERIFIED`, права: `RIGHTS_UNKNOWN`
 - `SRC-NL-LIEDERENBANK-INDEX` — Nederlandse Liederenbank — records surfaced through search indexing while the site is offline  
   доступ: `LINK_ONLY`, локатор: `LOCATOR_MISSING`, права: `RIGHTS_UNKNOWN`
+- `SRC-PHOS-BANGOR-AMBROSIANA` — Бангорский антифонарий, Milano, Biblioteca Ambrosiana, C 5 inf. — по каталогу MIrA, запись 115  
+  доступ: `CATALOG_ONLY`, локатор: `COARSE_LOCATOR_ONLY`, права: `RIGHTS_UNKNOWN`
 - `SRC-PHOS-CLEM-COSGROVE` — Charles H. Cosgrove, «Clement of Alexandria and Early Christian Music», Journal of Early Christian Studies 14/3 (2006): 255–282  
   доступ: `NOT_ACQUIRED`, локатор: `COARSE_LOCATOR_ONLY`, права: `RIGHTS_UNKNOWN`
 - `SRC-PHOS-CLEM-HYMNARC` — Hymnology Archive (Chris Fenner), страница о гимне «Στόμιον πώλων ἀδαῶν» — рукописи, издания, переводы, оценки  
@@ -132,6 +134,8 @@
   доступ: `NOT_ACQUIRED`, локатор: `LOCATOR_MISSING`, права: `RIGHTS_UNKNOWN`
 - `SRC-PHOS-AZBYKA` — Азбука веры, статья «Свете Тихий» — церковнославянский текст, русский перевод, толкование  
   доступ: `PARTIAL_OBJECT`, локатор: `LOCATOR_MISSING`, права: `RIGHTS_UNKNOWN`
+- `SRC-PHOS-BANGOR-AMBROSIANA` — Бангорский антифонарий, Milano, Biblioteca Ambrosiana, C 5 inf. — по каталогу MIrA, запись 115  
+  доступ: `CATALOG_ONLY`, локатор: `COARSE_LOCATOR_ONLY`, права: `RIGHTS_UNKNOWN`
 - `SRC-PHOS-BASIL-DATE` — Новая католическая энциклопедия, статья «Basil, St.» — датировка трактата De Spiritu Sancto  
   доступ: `PARTIAL_OBJECT`, локатор: `COARSE_LOCATOR_ONLY`, права: `RIGHTS_UNKNOWN`
 - `SRC-PHOS-CLEM-COSGROVE` — Charles H. Cosgrove, «Clement of Alexandria and Early Christian Music», Journal of Early Christian Studies 14/3 (2006): 255–282  

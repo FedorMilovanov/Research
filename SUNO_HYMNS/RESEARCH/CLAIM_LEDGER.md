@@ -945,10 +945,17 @@ Both were `projectLevel` facts while the text had no work. DUTCH-005 now links t
 
 ### CLM-PHOS-005-FAILS-RULE — *Te Deum* не проходит правило допуска
 
-**Claim:** третья часть гимна (от `Salvum fac`) — ряд псалмических стихов (Пс 27:9, Пс 30:2), приложенный впоследствии; гимн построен по схеме Апостольского Символа веры; содержит `Sanctus` из Ис 6:3. Тот же ряд стихов встречается приложенным к Великому славословию — материал пересекается с PHOS-003.
+**Claim:** гимн следует схеме Символа веры, содержит `Sanctus` (Ис 6:3) и псалмические прошения. Пс 27:9 и Пс 30:2 обрамляют **римский** ряд. С PHOS-003 пересекаются отдельные формулы; полного тождества текстов и порядка нет.
 
-**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-TEDEUM-LU1961, SRC-PHOS-TEDEUM-NCE, SRC-PHOS-TEDEUM-TEXT · **Level:** series
-**Limits:** наличие *Sanctus* и порядок прошений проверены в [издании 1961 г., с. 1832–1837](DOSSIER_PHOS-005_TE_DEUM.md#liber-usualis-1961); история их присоединения и параллель с Великим славословием — по вторичным источникам, не по сверке древних списков.
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-TEDEUM-LU1961, SRC-PHOS-BANGOR-WARREN1895, SRC-PHOS-TEDEUM-NCE, SRC-PHOS-TEDEUM-TEXT · **Level:** series
+**Limits:** наличие *Sanctus* и порядок прошений проверены в [издании 1961 г., с. 1832–1837](DOSSIER_PHOS-005_TE_DEUM.md#liber-usualis-1961); частичное пересечение с антифонами при *Gloria* видно у Уоррена. [Сопоставление изданий](DOSSIER_PHOS-005_TE_DEUM.md#bangor-warren-1895) не датирует присоединение.
+
+### CLM-PHOS-005-BANGOR-ENDING — два разных окончания *Te Deum*
+
+**Claim:** в [7] у Уоррена: *Salvum fac → Et rege eos → Per singulos dies → Et laudamus … Amen → Fiat, Domine, misericordia tua*. Затем [8], *Sancti venite*. В обоих распевах римского издания после *Et laudamus* нет *Amen*: идут *Dignare → Miserere nostri → Fiat misericordia tua, Domine → In te, Domine, speravi*.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-BANGOR-WARREN1895, SRC-PHOS-BANGOR-PL72, SRC-PHOS-TEDEUM-LU1961, SRC-PHOS-BANGOR-AMBROSIANA · **Level:** series
+**Limits:** [Уоррен II, с. 10, ст. 22–26; примечания с. 43–44; параллель с. 31](DOSSIER_PHOS-005_TE_DEUM.md#bangor-warren-1895) и электронная PL 72 передают один кодекс. MIrA 115 даёт шифр и датировку; снимки л. 10r–v не получены. Разница в порядке не доказывает, чем гимн оканчивался изначально или когда прибавились строки.
 
 ### CLM-PHOS-005-MELODY-GAP — древней мелодии нет
 
@@ -1662,9 +1669,9 @@ Both were `projectLevel` facts while the text had no work. DUTCH-005 now links t
 
 **Claim:** Прочитан латинский текст «Gloria in excelsis Deo» по официальному листу Liturgy Office (Missale Romanum и Graduale Romanum). **Он сходится с одой и расходится с нынешней греческой службой ровно в тех трёх местах, где мы выбирали:** «**Laudamus te**» = `αἰνοῦμέν` (хвалим), а не `Ὑμνοῦμέν` (поём); «**qui tollis peccata mundi**» стоит дважды и оба раза во множественном числе = `τὰς ἁμαρτίας` в обоих случаях; «**suscipe deprecationem nostram**» = `δέησις` как «прошение», а не «моление». То есть буквальные чтения оды подтверждает не только пятый век, но и западная линия перевода.
 
-**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-GLORIA-LATIN, SRC-PHOS-LXX-ODES-14, SRC-PHOS-DOXOLOGIA, SRC-PHOS-GLORIA-LATIN-DATING · **Level:** series
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-GLORIA-LATIN, SRC-PHOS-LXX-ODES-14, SRC-PHOS-DOXOLOGIA, SRC-PHOS-GLORIA-LATIN-DATING, SRC-PHOS-BANGOR-WARREN1895 · **Level:** series
 **Notes:** Латинский не во всём совпадает с греческой одой: он добавляет «tu solus Altissimus» и относит Духа к заключительной формуле — значит, его греческая основа отличалась от текста оды, и доверять ему надо выборочно.; Древнейшие латинские рукописные свидетели (Бангорский антифонарий, ок. 690) много моложе Александрийского кодекса; традиционная атрибуция Иларию (ум. 368) не доказана.;
-**Limits:** Латинский — перевод, а не греческий свидетель: он подтверждает греческое чтение лишь через греческую основу перевода.; Читался современный официальный текст мессы, а не критическое издание латинской традиции гимна.;
+**Limits:** Латинский — перевод, а не греческий свидетель: он подтверждает греческое чтение лишь через греческую основу перевода.; Утверждение о трёх чтениях относится к современному римскому листку. Бангорское славословие у Уоррена, II, [116] (с. 31), даёт *Laudamus*, но *peccatum* один раз и *Suscipe orationem nostram*. Это не колляция греческой рукописи.;
 
 ### CLM-PHOS-SUBTUUM-IADGARI-READ — Иерусалимское свидетельство прочитано своими глазами: молитва стоит в «Хвалах Богородице» воскресной службы, и текст её другой
 

@@ -852,7 +852,7 @@ The Greek lane is registered in the same file as the Dutch one because it is the
 - URL: https://www.hymnologyarchive.com/te-deum-laudamus
 - Evidence class: C · Access: PARTIAL_OBJECT · Locator: COARSE_LOCATOR_ONLY · Rights: RIGHTS_UNKNOWN · Publication: REFERENCE · HOLDs: RIGHTS_HOLD, ARCHIVE_HOLD
 - Supports: полный латинский текст, **29 стихов** по римской редакции (*Liber Usualis*), с параллельным переводом; **древнейший список — Бангорский антифонарий (Амброзиана, MS C 5 inf., лл. 10r–10v), ок. 680–691**, надписан «Hymnus in die Dominica»; легенда об Амвросии и Августине восходит к Гинкмару Реймсскому (859); Кёлер 1958 связывал исходный вид гимна с заутренней мессой Великой субботы.
-- Limits: **в источнике есть логически несостоятельное утверждение** — будто гимн «уверенно датируется IV–V вв., потому что включён в уставы Цезария и Бенедикта». Эти уставы VI в. и доказывают лишь существование гимна к VI в. Статья даёт вторичную передачу. Для текста *Liber Usualis* есть отдельная прямая сверка (SRC-PHOS-TEDEUM-LU1961); рукописи остаются под `ARCHIVE_HOLD`.
+- Limits: **в источнике есть логически несостоятельное утверждение** — будто гимн «уверенно датируется IV–V вв., потому что включён в уставы Цезария и Бенедикта». Эти уставы VI в. и доказывают лишь существование гимна к VI в. Статья даёт вторичную передачу. Для текста *Liber Usualis* есть отдельная прямая сверка (SRC-PHOS-TEDEUM-LU1961); для бангорского окончания есть издания Уоррена и PL 72 (см. ниже). Это не просмотр рукописи; `ARCHIVE_HOLD` сохраняется.
 
 ### SRC-PHOS-TEDEUM-LU1961 — *Te Deum* в печатном *Liber Usualis*, 1961
 
@@ -860,6 +860,26 @@ The Greek lane is registered in the same file as the Dutch one because it is the
 - Evidence class: A1 (для текста издания) · Access: PARTIAL_OBJECT · Locator: EXACT_LOCATOR_VERIFIED · Rights: PERMISSION_REQUIRED · Publication: REFERENCE · HOLDs: RIGHTS_HOLD
 - Прочитаны оба текста под нотами: тройное *Sanctus* и ряд прошений на месте; после *benedic* различаются `hereditati` и `haereditati`. [Карта страниц и проверенных изображений](DOSSIER_PHOS-005_TE_DEUM.md#liber-usualis-1961).
 - Издание свидетельствует о своём тексте и распевах, не о датировке гимна, исходной мелодии или древнейшей рукописи. На обороте титула © 1961; разрешения на воспроизведение страниц нет.
+
+### SRC-PHOS-BANGOR-WARREN1895 — Бангор в издании Уоррена (1895), не факсимиле
+
+- F. E. Warren, *The Antiphonary of Bangor*, II, London, HBS X: [с. 10, № 7, включая начало № 8](https://github.com/latin-ocr/antiphonarybang00ambrgoog/blob/a65f987f429d456bdf381e0d42139b1ff0c991ed/antiphonarybang00ambrgoog_0056.txt#L5-L68); [с. 31, № 116–117](https://github.com/latin-ocr/antiphonarybang00ambrgoog/blob/a65f987f429d456bdf381e0d42139b1ff0c991ed/antiphonarybang00ambrgoog_0073.txt#L43-L117); [с. 44, примечания к ст. 25–26](https://github.com/latin-ocr/antiphonarybang00ambrgoog/blob/a65f987f429d456bdf381e0d42139b1ff0c991ed/antiphonarybang00ambrgoog_0085.txt#L40-L51).
+- Evidence class: B1 · Access: PARTIAL_OBJECT · Locator: EXACT_LOCATOR_VERIFIED · Rights: RIGHTS_UNKNOWN · Publication: REFERENCE · HOLDs: RIGHTS_HOLD
+- У № 7 проверена граница *Amen → Fiat → Sancti venite* (новый гимн); № 116–117 — другой контекст. В [оговорке издателя](https://github.com/latin-ocr/antiphonarybang00ambrgoog/blob/a65f987f429d456bdf381e0d42139b1ff0c991ed/antiphonarybang00ambrgoog_0048.txt#L24-L39) различены исправленный текст части II и факсимиле части I. По OCR нельзя устанавливать начертания, рукописную нумерацию или права на страницы.
+- Проверяемый файл с окончанием — `_0056.txt`, 2236 байт, SHA-256 `cec3d287f84b73812cdf79743ac5defa5b479b0c6ee1e5257079189b55a40bfc` (не хеш листа).
+
+### SRC-PHOS-BANGOR-PL72 — Бангор в PL 72 (1849), электронная передача
+
+- [*Hymnum in die Dominico*](https://github.com/OpenGreekAndLatin/patrologia_latina-dev/blob/8c651f859f821f0868755596f1a513946ca25350/volumes/PL72/PL72.xml#L28914-L28949), *Antiphonarium monasterii Benchorensis*, PL 72 ([выходные данные в TEI](https://github.com/OpenGreekAndLatin/patrologia_latina-dev/blob/8c651f859f821f0868755596f1a513946ca25350/volumes/PL72/PL72.xml#L94-L108)); после метки `pb 587`, до `pb 589`. Контроль состава и границы того же списка, не независимая рукопись.
+- Evidence class: B1 · Access: PARTIAL_OBJECT · Locator: EXACT_LOCATOR_VERIFIED · Rights: PUBLICATION_ELIGIBLE (только XML, на условиях лицензии) · Publication: REFERENCE · HOLDs: нет
+- Исправленный OCR: Jouve; [University of Leipzig, 2015, CC BY-SA 4.0](https://github.com/OpenGreekAndLatin/patrologia_latina-dev/blob/8c651f859f821f0868755596f1a513946ca25350/volumes/PL72/PL72.xml#L29-L39). Проверены строки XML, а не изображение колонки. Лицензия разметки не распространяется на фото рукописи и ноты.
+- `PL72.xml`: 3 747 750 байт, SHA-256 `a8a8b69d0519079d8efff785307b36466738ef502f28796adf9cd0012f6bd091`. Это контрольная сумма всего файла; прочитан указанный фрагмент.
+
+### SRC-PHOS-BANGOR-AMBROSIANA — Милан, Biblioteca Ambrosiana, C 5 inf. (каталог, не снимок)
+
+- [MIrA 115, шифр, IIIF и датировка](https://github.com/padraicmoran/MIrA/blob/76438fe67754deb2dab4fed4e956e4f8f983787b/data/mss_mira/115.xml#L3-L24); [TM 66408, два тома Уоррена и ссылка на печатное факсимиле](https://github.com/papyri/idp.data/blob/ba1bed719e44f6e1c8a2a0eeadc0f7a05fcd04ae/DCLP/66/66408.xml#L83-L87). Бангор, 680–691; точного рисунка букв запись не даёт.
+- Evidence class: B1 (каталог) · Access: CATALOG_ONLY · Locator: COARSE_LOCATOR_ONLY (для текста на л. 10r–v) · Rights: RIGHTS_UNKNOWN (изображения) · Publication: REFERENCE · HOLDs: ARCHIVE_HOLD, LOCATOR_HOLD, RIGHTS_HOLD
+- [Лицензия каталожной записи](https://github.com/padraicmoran/MIrA/blob/76438fe67754deb2dab4fed4e956e4f8f983787b/data/mss_tei-converted/115.xml#L13-L18) не очищает права на изображения. Манифест указан в каталоге; наличие адреса не равно получению кадров. [Что прочитано вместо факсимиле](DOSSIER_PHOS-005_TE_DEUM.md#bangor-warren-1895).
 
 ### SRC-PHOS-TEDEUM-NCE — Новая католическая энциклопедия, статья *Te Deum* (М. Угло)
 

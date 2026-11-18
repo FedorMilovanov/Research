@@ -1742,7 +1742,7 @@
     "Авторство: свидетельства склоняются к Никите Ремесианскому, но часть современных исследователей считает гимн анонимным",
     "Кёлер (1958) полагал, что Te Deum в исходном виде принадлежал к заутренней мессе Великой субботы, завершавшей чин крещения-миропомазания"
    ],
-   "limits": "В этом источнике есть логически несостоятельное утверждение: будто гимн «уверенно датируется концом IV или началом V в., потому что включён в уставы Цезария и Бенедикта». Эти уставы VI в. и доказывают лишь существование гимна к VI в. Для латинского текста это вторичная передача. Страницы издания 1961 г. теперь проверены отдельно (SRC-PHOS-TEDEUM-LU1961), не по этой статье. Рукописи не просмотрены (ARCHIVE_HOLD)."
+   "limits": "В этом источнике есть логически несостоятельное утверждение: будто гимн «уверенно датируется концом IV или началом V в., потому что включён в уставы Цезария и Бенедикта». Эти уставы VI в. и доказывают лишь существование гимна к VI в. Для латинского текста это вторичная передача. Страницы издания 1961 г. теперь проверены отдельно (SRC-PHOS-TEDEUM-LU1961), не по этой статье. Бангорское окончание прочитано отдельно по изданиям (SRC-PHOS-BANGOR-WARREN1895, SRC-PHOS-BANGOR-PL72); сами рукописи не просмотрены (ARCHIVE_HOLD)."
   },
   {
    "id": "SRC-PHOS-TEDEUM-LU1961",
@@ -1766,6 +1766,75 @@
    "limits": [
     "Прочитаны титул, оборот, страница оглавления и шесть страниц приложения, не вся книга. Эта редакция не устанавливает исходный напев, время присоединения прошений, авторство или чтения Бангорского антифонария.",
     "Оборот титула: © 1961 Desclée & Co., All rights reserved. Разрешения на перепечатку нот, страниц или сканов нет. Карта кадров и контрольные суммы — в досье PHOS-005, §1."
+   ]
+  },
+  {
+   "id": "SRC-PHOS-BANGOR-WARREN1895",
+   "title": "F. E. Warren (ред.), The Antiphonary of Bangor, Part II (HBS X, 1895): Te Deum [7] и антифоны при Gloria [116]",
+   "url": "https://github.com/latin-ocr/antiphonarybang00ambrgoog/blob/a65f987f429d456bdf381e0d42139b1ff0c991ed/antiphonarybang00ambrgoog_0056.txt#L45-L68",
+   "secondaryUrl": "https://github.com/latin-ocr/antiphonarybang00ambrgoog/blob/a65f987f429d456bdf381e0d42139b1ff0c991ed/antiphonarybang00ambrgoog_0073.txt#L64-L117",
+   "type": "Исправленный текст и примечания издателя; прочитаны OCR отдельных страниц, не их снимки и не факсимиле рукописи",
+   "printedPages": "[7] Hymnus in die Dominica, с. 10, ст. 1–26; примечания с. 43–44; для сопоставления с. 31, [116] и начало [117]",
+   "evidenceClass": "B1",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "RIGHTS_UNKNOWN",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "RIGHTS_HOLD"
+   ],
+   "supports": [
+    "В [7] ст. 22–26 идут Salvum fac, Et rege eos, Per singulos dies, Et laudamus … Amen, Fiat, Domine, misericordia tua … speravimus in te. Дальше — [8] Sancti venite. Нумерация издательская.",
+    "На с. 44 объяснения Amen в ст. 25 предложены как альтернативы. На с. 31 Dignare и Miserere nobis входят в иной ряд при Gloria [116], In te, Domine, speravi открывает антифон в [117]; это не продолжение [7]."
+   ],
+   "limits": [
+    "Уоррен различает textus codicis с факсимиле в части I (1893) и исправленный текст части II. В OCR искажены отдельные буквы и пометы листов. Точный локатор относится к изданию; дипломатическая запись по нему невозможна.",
+    "Не установлены время и путь присоединения прошений, автор или мелодия. Разрешение на воспроизведение цифровых страниц не проверено; в репозитории только ссылки и результат чтения."
+   ]
+  },
+  {
+   "id": "SRC-PHOS-BANGOR-PL72",
+   "title": "Antiphonarium monasterii Benchorensis, Hymnum in die Dominico — PL 72 (1849), электронный текст Leipzig / OpenGreekAndLatin",
+   "url": "https://github.com/OpenGreekAndLatin/patrologia_latina-dev/blob/8c651f859f821f0868755596f1a513946ca25350/volumes/PL72/PL72.xml#L28914-L28949",
+   "secondaryUrl": "https://github.com/OpenGreekAndLatin/patrologia_latina-dev/blob/8c651f859f821f0868755596f1a513946ca25350/volumes/PL72/PL72.xml#L29-L39",
+   "type": "Цифровая передача более раннего издания того же Бангорского списка; исправленный OCR в TEI, не изображение",
+   "printedPages": "PL 72, участок между метками pb 587 и 589; PL72.xml, строки 28914–28949",
+   "evidenceClass": "B1",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "PUBLICATION_ELIGIBLE",
+   "publicationState": "REFERENCE",
+   "holds": [],
+   "supports": [
+    "В размеченном тексте последовательность от Salvum fac до Amen и следующего за ним Fiat совпадает с [7] у Уоррена; после Fiat — заглавие другого гимна и Sancti venite."
+   ],
+   "limits": [
+    "Сверен порядок формул и граница статьи в XML, не печатная колонка или буква кодекса. PL и Уоррен не дают двух независимых рукописных свидетелей.",
+    "CC BY-SA 4.0 относится к электронному тексту (Jouve, University of Leipzig, 2015): при повторном использовании — атрибуция и соблюдение условий лицензии. Это не лицензия на рукопись, фото или ноты и не решение о выпуске трека."
+   ]
+  },
+  {
+   "id": "SRC-PHOS-BANGOR-AMBROSIANA",
+   "title": "Бангорский антифонарий, Milano, Biblioteca Ambrosiana, C 5 inf. — по каталогу MIrA, запись 115",
+   "url": "https://github.com/padraicmoran/MIrA/blob/76438fe67754deb2dab4fed4e956e4f8f983787b/data/mss_mira/115.xml#L3-L24",
+   "secondaryUrl": "https://digitallibrary.unicatt.it/veneranda/data/public/manifests/0b/02/da/82/80/05/1c/10/0b02da8280051c10.json",
+   "type": "Рукопись, идентифицированная по научному каталогу; каталог содержит ссылку на манифест IIIF, не текст гимна",
+   "evidenceClass": "B1",
+   "accessState": "CATALOG_ONLY",
+   "locatorState": "COARSE_LOCATOR_ONLY",
+   "rightsState": "RIGHTS_UNKNOWN",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "ARCHIVE_HOLD",
+    "LOCATOR_HOLD",
+    "RIGHTS_HOLD"
+   ],
+   "supports": [
+    "MIrA: шифр C 5 inf., Bangor (Ирландия), 680–691, последующий провенанс — Боббио. TM 66408 различает Warren I (HBS IV, 1893) и II (HBS X, 1895)."
+   ],
+   "limits": [
+    "Для шифра и датировки прочитаны поля записи; для слов и знаков на л. 10r–v снимки не получены. Локатор листа сообщён, не сверен по кадрам. Альтернатива — факсимиле Уоррена I.",
+    "CC BY-NC-SA 4.0 указана в TEI каталога; права на воспроизведение кадров Амброзианы не проверены. Запись каталога и адрес манифеста не заменяют архивный экземпляр."
    ]
   },
   {
