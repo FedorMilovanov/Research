@@ -139,6 +139,43 @@
       ],
       "residualHolds": ["LOCATOR_HOLD", "PUBLICATION_HOLD"],
       "residualReason": "Parity копия/источник не доказывает, что PDF содержит нужную печатную страницу: текстового слоя у WCF нет, cap извлечения у Owen/Calvin превышен. Страничные локаторы этих объектов по-прежнему `unchecked`."
+    },
+    {
+      "id": "HCR-2026-11-18-07",
+      "title": "Локаторная ось Markdown: 58 мёртвых относительных ссылок классифицированы, 3 дефекта починены, остальное объяснено точечно",
+      "holdType": "LOCATOR_HOLD",
+      "previousState": "Машинного учёта относительных ссылок в репозитории не было: сколько мёртвых путей, в каких файлах и почему — не измерялось. Два пути в STEVE_LAWSON/README.md вели на удалённые файлы, один внешний URL был записан без схемы, архивная копия корневого README выглядела как набор битых ссылок.",
+      "closedScope": "Не «все LOCATOR_HOLD корпуса», а локаторная ось Markdown: 2 407 файлов, 8 710 ссылок измерены, 58 дефектов разобраны по классам; 3 дефекта исправлены проверяемым способом (указание на коммит вместо мёртвого пути; добавление схемы https://), остальные 55 записаны в data/relative-link-exceptions-v1.json парами (файл, ссылка) с причиной. Ни одна ссылка не переписана «на глаз».",
+      "recordLocations": [
+        "scripts/audit_relative_links.py",
+        "scripts/test_audit_relative_links.py",
+        "data/relative-link-exceptions-v1.json",
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §8",
+        "STEVE_LAWSON/README.md п.4, п.6",
+        "history/README_CORPUS_INDEX_2026-08-17.md (шапка)",
+        "incoming/arena-auditor/2026-07-09/pr2-lossless-snapshots/README_SNAPSHOT_FIDELITY.md",
+        "ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/29_EXTERNAL_LINKS_REGISTRY_30_PLUS.md (строка 1)"
+      ],
+      "method": "read-only-link-audit",
+      "objects": [
+        {"class": "Исправлено: мёртвый путь → коммит + blob", "files": ["STEVE_LAWSON/README.md"], "detail": "03_ARTICLE_RU_POLISHED_2026-09-27.md удалён в dff6e36a (2026-09-28), читается из b8f15a6c, blob fcf649c93aa00ff35bf4af3a9d93f9f266326216, 37 149 байт; 05_ARTICLE_RU_REFINED_V2_2026-09-27.md удалён там же, читается из e3952667, blob 3f91d6d0ae052dd8a7c0c05bc66f13359e55e56a, 52 255 байт. Проверено `git cat-file -s` и `git rev-parse`."},
+        {"class": "Исправлено: ссылка без схемы", "files": ["ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/29_EXTERNAL_LINKS_REGISTRY_30_PLUS.md"], "detail": "www.sataskforce.net/s/... → https://www.sataskforce.net/s/... Доступность URL в этой сессии не проверялась (исходящая сеть ограничена); правка меняет только форму записи, не утверждение о доступности."},
+        {"class": "Объяснено: архивная копия корневого README (50 ссылок)", "files": ["history/README_CORPUS_INDEX_2026-08-17.md"], "detail": "Все 50 путей разрешаются от корня репозитория (проверено отдельным проходом: 50 из 50). Текст копии не переписывался; в шапку добавлено правило чтения и ссылка на ../README.md и ../CURRENT_AUTHORITY.md."},
+        {"class": "Объяснено: HISTORICAL самим корпусом (4 ссылки)", "files": ["БИОГРАФИИ/Джон Гилл/01_SERIES_GAPS_AND_PRIMARY_SOURCES.md"], "detail": "§7 файла уже фиксирует, что AUDIT_gb-main_* и verified/MASTER_BUG_MATRIX.md принадлежали параллельному аудиторскому checkout и в Research не переносились; строки намеренно не удаляются и не переписываются."},
+        {"class": "Объяснено: lossless-снимок (4 ссылки)", "files": ["incoming/arena-auditor/2026-07-09/pr2-lossless-snapshots/"], "detail": "Снимок main@58e1ea5f: относительные пути принадлежат исходному расположению БИОГРАФИИ/Джон Гилл/. Байтовая верность важнее навигации; добавлена отдельная заметка README_SNAPSHOT_FIDELITY.md, сами снимки не тронуты."}
+      ],
+      "verification": {
+        "command": "python3 -B scripts/audit_relative_links.py --summary && python3 -B scripts/audit_relative_links.py --strict",
+        "expect": "resolves 2 686, missing 58, outside 0, unqualified 0, external 5 966; explained 58, unexplained 0; strict exit 0",
+        "tests": "python3 -B -m unittest discover -s scripts -p 'test_audit_relative_links.py' → 18 OK",
+        "ci": ".github/workflows/holds-inventory.yml, шаг «Reject unexplained dead locators»"
+      },
+      "limits": [
+        "Проверено существование байтов по пути, а не тождество объекта, на который ссылка указывает: разрешающаяся ссылка не доказывает содержание.",
+        "Исключения — не починка: 55 мёртвых локаторов остаются мёртвыми и видны в отчёте.",
+        "Внешние URL по сети не проверялись (исходящая сеть ограничена github/npm/pypi).",
+        "Ссылки внутри нетронутых снимков останутся мёртвыми по построению."
+      ]
     }
   ],
   "confirmations": [

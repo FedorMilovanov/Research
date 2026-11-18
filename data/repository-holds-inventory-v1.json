@@ -74,8 +74,8 @@
     ]
   },
   "totals": {
-    "filesScanned": 3070,
-    "filesWithMentions": 888,
+    "filesScanned": 3074,
+    "filesWithMentions": 889,
     "mentions": {
       "ARCHIVE_HOLD": 1417,
       "BLOCKING-HOLD": 16,
@@ -96,16 +96,16 @@
       "HOLD_MAJOR": 11,
       "HOLD_RETAINED": 1,
       "LIVE-READBACK-HOLD": 4,
-      "LOCATOR_HOLD": 1969,
+      "LOCATOR_HOLD": 1972,
       "PAGE-IMAGE-HOLD": 14,
       "PUBLICATION_HOLD": 2575,
       "RIGHTS_HOLD": 1454,
       "VERSION-HOLD": 23
     },
     "mentionsByStatus": {
-      "closed": 818,
+      "closed": 819,
       "open": 2338,
-      "unmarked": 5953
+      "unmarked": 5955
     },
     "canonicalFlagLineStatesRecordedAsBothOpenAndClosed": 403,
     "filesWithJsonHolds": 39,
@@ -343,14 +343,14 @@
         "ARCHIVE_HOLD": 16,
         "EVIDENCE_HOLD": 17,
         "HOLD_MAJOR": 3,
-        "LOCATOR_HOLD": 32,
+        "LOCATOR_HOLD": 34,
         "PUBLICATION_HOLD": 33,
         "RIGHTS_HOLD": 17
       },
       "status": {
-        "closed": 10,
+        "closed": 11,
         "open": 12,
-        "unmarked": 99
+        "unmarked": 100
       }
     },
     "docs": {
@@ -369,7 +369,7 @@
       }
     },
     "scripts": {
-      "files": 38,
+      "files": 39,
       "mentions": {
         "ARCHIVE_HOLD": 35,
         "BLOCKING-HOLD": 4,
@@ -390,7 +390,7 @@
         "HOLD_MAJOR": 1,
         "HOLD_RETAINED": 1,
         "LIVE-READBACK-HOLD": 1,
-        "LOCATOR_HOLD": 13,
+        "LOCATOR_HOLD": 14,
         "PAGE-IMAGE-HOLD": 2,
         "PUBLICATION_HOLD": 96,
         "RIGHTS_HOLD": 45,
@@ -399,7 +399,7 @@
       "status": {
         "closed": 7,
         "open": 13,
-        "unmarked": 214
+        "unmarked": 215
       }
     },
     "БАПТИСТЫ РОССИИ": {
@@ -25932,13 +25932,14 @@
       "mentions": {
         "ARCHIVE_HOLD": 10,
         "EVIDENCE_HOLD": 8,
-        "LOCATOR_HOLD": 8,
+        "LOCATOR_HOLD": 10,
         "PUBLICATION_HOLD": 8,
         "RIGHTS_HOLD": 7
       },
       "status": {
+        "closed": 1,
         "open": 3,
-        "unmarked": 38
+        "unmarked": 39
       }
     },
     {
@@ -27516,6 +27517,16 @@
       },
       "status": {
         "unmarked": 5
+      }
+    },
+    {
+      "path": "scripts/audit_relative_links.py",
+      "corpus": "scripts",
+      "mentions": {
+        "LOCATOR_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
       }
     },
     {

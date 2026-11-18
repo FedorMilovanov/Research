@@ -10,6 +10,9 @@ on:
       - 'docs/research/HOLDS_REGISTER_2026-11-18.md'
       - 'scripts/audit_repository_holds.py'
       - 'scripts/test_audit_repository_holds.py'
+      - 'scripts/audit_relative_links.py'
+      - 'scripts/test_audit_relative_links.py'
+      - 'data/relative-link-exceptions-v1.json'
   push:
     branches: [main]
     paths:
@@ -20,6 +23,9 @@ on:
       - 'docs/research/HOLDS_REGISTER_2026-11-18.md'
       - 'scripts/audit_repository_holds.py'
       - 'scripts/test_audit_repository_holds.py'
+      - 'scripts/audit_relative_links.py'
+      - 'scripts/test_audit_relative_links.py'
+      - 'data/relative-link-exceptions-v1.json'
   workflow_dispatch:
 
 permissions:
@@ -33,16 +39,27 @@ jobs:
     steps:
       - name: Checkout Research
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
-      - name: Compile inventory tool
-        run: python3 -m py_compile scripts/audit_repository_holds.py
+      - name: Compile inventory tools
+        run: |
+          python3 -m py_compile scripts/audit_repository_holds.py
+          python3 -m py_compile scripts/audit_relative_links.py
       - name: Test classification and read-only behaviour
-        run: python3 -B -m unittest discover -s scripts -p 'test_audit_repository_holds.py' -v
+        run: |
+          python3 -B -m unittest discover -s scripts -p 'test_audit_repository_holds.py' -v
+          python3 -B -m unittest discover -s scripts -p 'test_audit_relative_links.py' -v
       - name: Scan (must not touch the working tree)
         run: |
           python3 scripts/audit_repository_holds.py -o /tmp/holds-a.json
           python3 scripts/audit_repository_holds.py -o /tmp/holds-b.json
           cmp /tmp/holds-a.json /tmp/holds-b.json
+          python3 scripts/audit_relative_links.py -o /tmp/links-a.json
+          python3 scripts/audit_relative_links.py -o /tmp/links-b.json
+          cmp /tmp/links-a.json /tmp/links-b.json
       - name: Reject working-tree changes
         run: git diff --exit-code
+      - name: Reject unexplained dead locators
+        run: python3 scripts/audit_relative_links.py --strict
       - name: Report counts without asserting closure
-        run: python3 scripts/audit_repository_holds.py --summary
+        run: |
+          python3 scripts/audit_repository_holds.py --summary
+          python3 scripts/audit_relative_links.py --summary
