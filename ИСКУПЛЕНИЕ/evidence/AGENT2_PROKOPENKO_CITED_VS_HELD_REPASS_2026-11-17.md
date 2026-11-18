@@ -1204,6 +1204,7 @@
 - **Уточнено:** `DATE_ERROR` (сн. 80) — правильно 1817 (в составе *Remarks*), отдельно 1818. Сн. 92 — локатор EXACT, пометки §24 остаются.
 - **У самого Стюарта (мягко):** `EDITION_MISLABEL` (1811 вместо 1817).
 - **HOLD:** *Annotationes* Эразма к Кол. 1:20; 1-е изд. *Remarks* (1811; IA `remarksonrefuta00tomlgoog` не открывалось) — что перевода там нет, известно со слов самого Скотта.
+  - *Уточнено (раунд 110, 2026-11-17; §33):* *Annotationes* (Basel, 1535) к Кол. 1:20 прочитаны — HOLD снят. 1-е изд. *Remarks* (1811), т. I, прочитано; т. II в IA нет, HOLD сужен до него.
 
 Вердикты S1–S5 не меняются. Умысел не утверждается.
 
@@ -1234,5 +1235,39 @@
 - **Корпус:** `16_` §1 — `CORPUS_MISREAD` (мягко): статья различает «инфра-» и «суб-», а не отождествляет. `11_`, `06_`, `01_` — примечания о p. 725 (2-е изд. 1817). `12_` `T-10` — HOLD снят.
 - **Лапсарианский раздел:** повторная сверка подтверждает §16 и §22; новых вердиктов по статье нет.
 - **HOLD без изменений:** Цвингли, рус. с. 76; Мюррей, рус. с. 84; MTP 58 (визуальная сверка); Даути, p. 62; Льюис и Демарест; Грудем; Тиссен, p. 104; Эриксон, рус. с. 779; *LW* 26; Green, p. 118; Баркли, p. 124; Вюст; Кинер; MSB; BDAG; Мелик; Гайслер; колонки PG 82/62; *Annotationes* Эразма; *Remarks* 1811.
+
+Вердикты S1–S5 не меняются. Умысел не утверждается.
+
+## 33. Раунд 110 (2026-11-17): Скотт 1811 и 1817 — предисловие о Дорте; все локаторы Стюарта (прим. 22–24) ведут к изданию 1817 г.; *Annotationes* Эразма к Кол. 1:20
+
+**Повод.** HOLD §31.4: 1-е изд. *Remarks* (1811) и *Annotationes* Эразма к Кол. 1:20.
+
+### 33.1. Источники
+
+- (а) **Scott Th.**, *Remarks on the Refutation of Calvinism*, vol. I (London: printed for the author by C. Baldwin, sold by L. B. Seeley, **1811**); IA `remarksonrefuta00tomlgoog` (Google/NYPL, 394 листа; `_djvu.txt`, чанки 0–1; `inside.php`). Класс A1 (OCR низкого качества). Т. II 1811 г. в IA нет.
+- (б) **Scott Th.**, *Remarks…*, 2nd ed. (London, **1817**); IA `a608278200scotuoft` (`page_numbers.json`, уверенность 100: л. 18 = p. xiv; смещение листов к страницам 24 — л. 749 = p. 725, л. 771 = p. 747, л. 798 = p. 774). Класс A1.
+- (в) **Erasmus D.**, *In Novum Testamentum Annotationes* (Basel: Froben, **1535**); IA `ARes162052` (Севилья), `_djvu.txt`, чанки 249–250; колонтитулы «IN EPIST. AD COLOSSENSES CAP. I | 635», «636 ANNOTATION…». Класс A1 (OCR издания XVI в.; долгое s → «f», i → «í»).
+- (г) Stewart 2008, pp. 193–194, прим. 21–24 (текст PDF, см. §24, §31).
+
+### 33.2. Сверка
+
+| Место | Вопрос | Источник | Итог |
+|---|---|---|---|
+| Сн. 80, «продвигал богословие Дортских канонов» | Как Скотт относился к Дорту в 1811 г.? | (а), предисловие, **p. xiii** (колонтитул «PREFACE. xiii»; подпись «Aston Sandford, Nov. 16, 1811»): «…our being called Calvinists, not by our own free consent, does not bring us under any obligation, to embrace all Calvin’s sentiments… **Much less are we answerable for the Lambeth articles, or those of the Synod of Dort.**» | **`CHRONOLOGY_PARTIAL` подтверждён прямым текстом 1811 г.**: в 1811 г. Скотт отказывается отвечать за каноны Дорта. В OCR предисловия, перепечатанного в 1817 г. (б, лл. 9–20), эта фраза поиском («Lambeth», «answerable») не находится. *Не найдено ≠ удалено; визуально не сверено* |
+| То же, 1817 | Почему Скотт перевёл каноны? | (б), **p. 747** (л. 771): «I purpose, if spared, in a very short time, to publish in a separate pamphlet, a translation of the articles of the Synod of Dort, **with the rejection of doctrines annexed; the preface and the conclusions**… I consider this, as incumbent on me, who, misled by writers on whom I depended, have in many instances, **unintentionally borne false witness against this Synod**, and would make what reparation I can: and… the publication may serve **to check Antinomian Calvinism, by shewing how guarded the doctrines of these most reprobated Calvinists were**». Ср. оглавление: «A translation of the real articles of the Synod of Dort; contrasted with the abbreviation from Heylin; and with brief remarks, 726–746» | В 1817 г. — только положительные статьи; в 1818 г. — с отвержением заблуждений, предисловием и заключением. Это подтверждает прим. 24 Стюарта («enlarged edition… in 1818») — **EXACT**. Мотив Скотта — исправить собственное ложное свидетельство и сдержать антиномианский кальвинизм. «Продвигал» верно для 1817–1821 гг. как защиту от искажений, а не как программу «пяти пунктов» |
+| Стюарт, прим. 22: «Reply… (London: 1811), xiv» | Где цитата «sweep away at once the labors of his whole life»? | (б), л. 18 = **p. xiv**: «could not consider ‘The Refutation’ in any other light, than as tending to **sweep away at once the labours of his whole life**…». В (а) предисловие кончается на p. xiii; поиск «sweep» в OCR 1811 г. ничего не дал | **EXACT по изданию 1817 г.** Четвёртый локатор Стюарта (после pp. 473, 634 и 725) совпадает с 2-м изданием. `EDITION_MISLABEL` (мягко, у Стюарта) подтверждён ещё раз |
+| Стюарт, прим. 23: «ibid. 2-9, 51, 227, 473, 634» и формулы основного текста | Совпадают ли с 1817 г.? | (б), оглавление: «Sect. 1. On Original Sin, p. 1–7. 2. On Incorrigible Depravity, p. 8–20»; «Sect. 1. On Free-will, p. 51–64»; «BOOK II.— On Regeneration, p. 227–325»; «BOOK IV.— On Universal Redemption, Election, and Reprobation, 473–689». У Стюарта в тексте: «‘Original Sin and Incorrigible Depravity’… ‘On Free Will’… ‘Regeneration and Conversion’». В (а) книга устроена по главам Томлайна («In the first chapter… In the second chapter…») | Формулы Стюарта — это заголовки разделов **издания 1817 г.** Страницы совпадают. Вывод §31 (Стюарт пользовался 2-м изданием, подписывая его 1811 г.) **подтверждён** |
+| Сн. 104: Эразм к Кол. 1:20, *Annotationes* | Есть ли у Эразма-филолога толкование «ангелы примирены с людьми, не с Богом»? | (в), **p. 635**, к Кол. 1:19–20 (OCR нормализован, пропуски — […]): к «complacuit» — «Id si referatur ad patrem… commodior erit interpretatio, quam si ad filium… Proinde nos, patri, addidimus de nostro». К «[reconciliare] omnia in ipsum» — «Cur non & antea vertit, in ipsum, cum Graecis [eadem] sint verba, εἰς αὐτόν. quanquam rectius erat Reconciliare, verbum activum […] **erga se; melius quam In ipsum.**» Далее — о «pacificans» и «per sanguinem crucis eius… per ipsum», филологически | **HOLD снят.** В *Annotationes* толкования об ангелах и людях нет. Эразм предлагает понимать εἰς αὐτόν как «**к Себе**» (Отец примиряет всё с Собою). Значит, оба текста Эразма — *Paraphrases* (§31: «omnia sibi reconciliaret») и *Annotationes* — **против** формулы статьи «не с Богом». `OVERSTATEMENT` (мягко) §31 **подтверждён**; `CITATION_VIA_SECONDARY` остаётся |
+
+### 33.3. Логика
+
+- **Сн. 80.** Статья пишет о Скотте одной фразой, без хронологии. Первоисточники показывают три этапа: 1811 — «not answerable for… the Synod of Dort»; 1817 — признание своего «false witness» и перевод статей; 1818 — полный перевод с отвержением заблуждений. Для довода статьи («даже переводчик Дорта держался общего искупления») важен этап 1817–1818: перевод не изменил его взгляда на «general redemption» (оглавление 1817 г., кн. IV). Довод статьи **не ослабевает**. Неточны только дата (`DATE_ERROR`, §30) и сглаженная хронология (`CHRONOLOGY_PARTIAL`, мягко).
+- **Сн. 104.** Ни один из двух текстов Эразма не содержит «не с Богом». Формула статьи держится только на пересказе Баркли (p. 124, не прочитан). Этот пересказ мог исказить Эразма: у того мотив мира небесных с земными — побочный (*Paraphrases*). Механизм не утверждается.
+
+### 33.4. Итог раунда 110
+
+- **Снято с HOLD:** *Annotationes* Эразма к Кол. 1:20 (1535) — толкования «не с Богом» нет; 1-е изд. *Remarks* (1811), т. I.
+- **Подтверждено:** `CHRONOLOGY_PARTIAL` (сн. 80) — прямой текст 1811 г.; прим. 24 Стюарта («enlarged edition 1818») — EXACT; `EDITION_MISLABEL` у Стюарта — четыре локатора и заголовки разделов совпадают с 1817 г.; `OVERSTATEMENT` (сн. 104) — оба текста Эразма.
+- **HOLD:** т. II 1-го изд. *Remarks* (1811) — в IA нет; Баркли, p. 124; визуальная сверка pp. xiii (1811), xiv и 747 (1817), p. 635 (*Annotationes*). Прочие HOLD — как в §32.3.
 
 Вердикты S1–S5 не меняются. Умысел не утверждается.

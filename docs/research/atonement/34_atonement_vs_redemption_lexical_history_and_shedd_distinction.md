@@ -229,6 +229,10 @@
   - *Acta* 1620, p. 317–318: сессия CXLVII — «Calendis Maij, Die Mercurij ante meridiem», CXLVIII — «Eodem Die post meridiem». Дата — 1 мая 1619 г. (среда), после полудня.
   - `16_` §1: «синоним» — `CORPUS_MISREAD` (мягко), статья различает «инфра-» и «суб-». `11_`, `06_`, `01_` — примечания о p. 725; `12_` `T-10` — HOLD снят.
   - Вердикты S1–S5 не меняются. Документ: REPASS, §32.
+- **раунд 110 (2026-11-17, AGENT 2):** §3 (S208), новый §4.193 (Q189): Скотт 1811/1817; локаторы Стюарта; *Annotationes* Эразма.
+  - *Remarks* 1811, p. xiii: «Much less are we answerable for… the Synod of Dort» — `CHRONOLOGY_PARTIAL` (сн. 80) подтверждён. 1817, p. 747: перевод как «reparation» за «false witness against this Synod»; прим. 24 Стюарта EXACT.
+  - Стюарт «xiv» = p. xiv изд. 1817 г.; все его локаторы — по 1817 г. (`EDITION_MISLABEL`). *Annotationes* (1535), p. 635: «erga se», ангелов нет — `OVERSTATEMENT` (сн. 104) подтверждён.
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §33.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -599,6 +603,7 @@
 | S205 *(раунд 107, 2026-11-17)* | (1) Th. Scott, *The Articles of the Synod of Dort… Translated from the Latin* (London: L. B. Seeley, 1818), IA `india.history.resource.18439`: титул; гл. II — с. 128–134. (2) J. Scott, *The Life of the Rev. Thomas Scott* (London, 1822), IA `lifeofrevthomas00scot`, лл. 484, 682. (3) Th. Scott, *Remarks on the Refutation of Calvinism*, vol. 2 (Philadelphia: Woodward, 1817), IA `remarksonrefutat02scot`, л. 115. (4) Stewart 2008 (S199). | A1 (1, 3); A2 (2) |
 | S206 *(раунд 108, 2026-11-17)* | (1) Th. Scott, *Remarks on the Refutation of Calvinism*, 2nd ed. (London: A. MacIntosh / L. B. Seeley, 1817), IA `a608278200scotuoft`: л. 749 = p. 725 (`page_numbers.json`, уверенность 100); оглавление (кн. IV, pp. 473, 477–484; гл. II Дорта — pp. 732–735). (2) Erasmus, *Paraphrases… in omnes Epistolas Pauli* (Basel, 1521), IA `ARes14515`, `_djvu.txt`, чанк 98 (Кол. 1:19–20). (3) W. H. Vail, *The Outlook* 104 (21.VI.1913), IA `sim_new-outlook_1913-06-21_104_8`, л. 45. (4) Stewart 2008 (S199), граница pp. 192–194 по тексту PDF. | A1 (OCR) |
 | S207 *(раунд 109, 2026-11-17)* | (1) *Acta Synodi… Dordrechti habitae* (1620), IA `actasynodination00syno`, `_djvu.txt`, чанк 169: pp. 316–318 (сессии CXLVII–CXLIX). (2) Schaff, *Creeds* I, IA `creedschristendo01scha` (`ia801407`), л. 573. (3) Schaff, *Creeds* III, IA `creedsofchriste03scha` (`ia801000`), л. 569 (Дорт I.15). | A1 (1, OCR); B (2); A2 (3) |
+| S208 *(раунд 110, 2026-11-17)* | (1) Th. Scott, *Remarks on the Refutation of Calvinism*, vol. I (London: C. Baldwin / L. B. Seeley, 1811), IA `remarksonrefuta00tomlgoog`: предисловие, p. xiii. (2) Th. Scott, *Remarks…*, 2nd ed. (London, 1817), IA `a608278200scotuoft`: л. 18 = p. xiv; л. 771 = p. 747; оглавление. (3) Erasmus, *In Novum Testamentum Annotationes* (Basel: Froben, 1535), IA `ARes162052`, `_djvu.txt`, чанки 249–250 (Кол. 1:19–20, p. 635). | A1 (OCR) |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8168,8 +8173,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.190 | Q186 | С. 26, Скотт (сн. 80): «общее искупление» — ACCURATE; «1804 г.» — `DATE_ERROR` подтверждён по первоисточникам (перевод 1817/1818); «продвигал» — `CHRONOLOGY_PARTIAL` (р. 107) |
 | 4.191 | Q187 | Стюарт: сн. 80 — EXACT (p. 193/194), сн. 92 — локатор EXACT; «ibid. p. 725» = *Remarks* 1817 (у Стюарта «1811» — `EDITION_MISLABEL`); Эразм к Кол. 1:20 — найден, у статьи `OVERSTATEMENT` (р. 108) |
 | 4.192 | Q188 | Дорт, сессия CXLVIII — 1 мая 1619 г. (среда), после полудня (*Acta*, p. 317–318); `16_` §1 «синоним» — `CORPUS_MISREAD`; примечания `11_`, `06_`, `01_`, `12_` (р. 109) |
+| 4.193 | Q189 | Скотт: *Remarks* 1811, p. xiii — «not answerable for… the Synod of Dort» (`CHRONOLOGY_PARTIAL` подтверждён); 1817, p. 747 — мотив перевода; Стюарт «xiv» и прим. 23 — по 1817 г.; Эразм, *Annotationes* (1535) к Кол. 1:20 — «erga se», `OVERSTATEMENT` подтверждён (р. 110) |
 
-⇒ разделов с `Q` — **185**, разделов §4.x — **187**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **186**, разделов §4.x — **188**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -9443,6 +9449,8 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 
 **Чего нет.** *Annotationes* Эразма к Кол. 1:20; Баркли, p. 124.
 
+*Уточнение раунда 110 (§4.193):* *Annotationes* (1535) прочитаны — толкования «не с Богом» в них нет.
+
 Вердикты S1–S5 не меняются.
 
 ### 4.192. Q188 — дата сессии CXLVIII по *Acta* 1620; корпусные формулы о Скотте и лапсарианской терминологии (раунд 109, 2026-11-17)
@@ -9456,6 +9464,21 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 4. **Лапсарианский раздел.** Дорт I.15 (Schaff III, л. 569): «ex liberrimo… beneplacito decrevit… relinquere… propter… peccata… damnare… Atque hoc est decretum reprobationis». Это подтверждает §16 (раунд 93); новых вердиктов по статье нет.
 
 **Чего нет.** Изображения pp. 317–318 *Acta* визуально не сверены (текстовый слой OCR).
+
+Вердикты S1–S5 не меняются.
+
+### 4.193. Q189 — Скотт 1811/1817: Дорт в предисловии и мотив перевода; локаторы Стюарта; *Annotationes* Эразма к Кол. 1:20 (раунд 110, 2026-11-17)
+
+**Повод.** HOLD §4.191: 1-е изд. *Remarks* (1811) и *Annotationes* Эразма. Полная таблица — REPASS-документ, §33. Источники — S208.
+
+**Ответы.**
+1. **Скотт в 1811 г.** Предисловие, p. xiii (подпись «Nov. 16, 1811»): «Much less are we answerable for the Lambeth articles, or those of the Synod of Dort». Значит, в 1811 г. Скотт отказывается отвечать за каноны. `CHRONOLOGY_PARTIAL` (сн. 80, «продвигал») подтверждён прямым текстом.
+2. **Скотт в 1817 г.** P. 747: он обещает отдельное издание «with the rejection of doctrines annexed; the preface and the conclusions». Он считает это своим долгом, потому что, «misled by writers on whom I depended», он «unintentionally borne false witness against this Synod». Издание должно также «check Antinomian Calvinism». Прим. 24 Стюарта («enlarged edition… in 1818») — EXACT.
+3. **Локаторы Стюарта.** «xiv» (прим. 22) — p. xiv изд. 1817 г.: «sweep away at once the labours of his whole life». В издании 1811 г. предисловие кончается на p. xiii. Формулы основного текста Стюарта («Original Sin and Incorrigible Depravity», «On Free Will») и страницы прим. 23 (1–20, 51, 227, 473) совпадают с разделами издания 1817 г. `EDITION_MISLABEL` (мягко, у Стюарта) подтверждён.
+4. **Эразм, *Annotationes* (Basel, 1535), p. 635.** Комментарий к Кол. 1:19–20 филологический. «Complacuit» он относит к Отцу. К «in ipsum» (εἰς αὐτόν) пишет: «rectius erat Reconciliare, verbum activum […] erga se; melius quam In ipsum». Об ангелах и людях здесь ничего нет. Вместе с *Paraphrases* («omnia sibi reconciliaret», §4.191) это значит, что оба текста Эразма говорят о примирении **с Богом**. `OVERSTATEMENT` (сн. 104) подтверждён; `CITATION_VIA_SECONDARY` (через Баркли) остаётся.
+5. **Логика.** Хронология Скотта (1811 → 1817 → 1818) не ослабляет довода статьи: его «general redemption» осталась и после перевода (1817, кн. IV). Неточны лишь дата и сглаженная хронология.
+
+**Чего нет.** Т. II 1-го изд. *Remarks* (1811) — в IA нет. Баркли, p. 124. Визуальная сверка pp. xiii (1811), xiv и 747 (1817), p. 635 (*Annotationes*) не проводилась (текстовый слой OCR).
 
 Вердикты S1–S5 не меняются.
 
