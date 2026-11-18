@@ -10,14 +10,14 @@
     "byState": {
       "unclaimed": 419,
       "external-drive": 778,
-      "ambiguous": 13,
-      "external": 244,
-      "stale": 26,
-      "match": 57
+      "ambiguous": 7,
+      "external": 248,
+      "stale": 27,
+      "match": 58
     },
     "filesWithStaleClaims": 4,
     "staleBySourceKind": {
-      "handoff": 5,
+      "handoff": 6,
       "round-manifest": 21
     }
   },
@@ -25,7 +25,7 @@
     "СЕРИЯ СЕРДЦЕ/V68_SINGLE_ZIP_MANIFEST.md": 7,
     "СЕРИЯ СЕРДЦЕ/V69_SINGLE_ZIP_MANIFEST.md": 7,
     "СЕРИЯ СЕРДЦЕ/V70_SINGLE_ZIP_MANIFEST.md": 7,
-    "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/agent6/Чарнок_ED-08_handoff_preparation.md": 5
+    "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/agent6/Чарнок_ED-08_handoff_preparation.md": 6
   },
   "findings": [
     {
@@ -1008,15 +1008,27 @@
       "file": "docs/research/reformation/11_schleitheim_1527_original_iiif_audit.md",
       "line": 109,
       "sha256": "8516534279ddcd6f4f59e5f02807ac85cf6a08df13b0458cabb2dad405e9d76e",
-      "state": "ambiguous",
-      "paths": []
+      "state": "external",
+      "paths": [
+        {
+          "path": "articles-I-II-IV-VII-1527-1550-iiif-receipts-20261105.json",
+          "state": "external"
+        }
+      ],
+      "sourceKind": "live-document"
     },
     {
       "file": "docs/research/reformation/11_schleitheim_1527_original_iiif_audit.md",
       "line": 109,
       "sha256": "e80ae4159427ecb0034f5b98b914f59442abf6af38783575425560efe7e8fc33",
-      "state": "ambiguous",
-      "paths": []
+      "state": "external",
+      "paths": [
+        {
+          "path": "articles-I-II-IV-VII-1527-1550-iiif-receipts-20261105.json",
+          "state": "external"
+        }
+      ],
+      "sourceKind": "live-document"
     },
     {
       "file": "docs/research/reformation/11_schleitheim_1527_original_iiif_audit.md",
@@ -9979,29 +9991,53 @@
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/agent6/Чарнок_ED-08_handoff_preparation.md",
       "line": 13,
       "sha256": "19f9f24d41a09e9883e4d1620f7f6d6c4094cb2a5d3cab3314025780dd34f8aa",
-      "state": "ambiguous",
-      "paths": []
+      "state": "stale",
+      "paths": [
+        {
+          "path": "AGENT_RULES.md",
+          "state": "stale"
+        }
+      ],
+      "sourceKind": "handoff"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/agent6/Чарнок_ED-08_handoff_preparation.md",
       "line": 13,
       "sha256": "7e4b4685178838b2b5d68e3091ee733f8a04fb1921aa4317f523bd3892bc22e4",
-      "state": "ambiguous",
-      "paths": []
+      "state": "match",
+      "paths": [
+        {
+          "path": "AGENT_RULES.md",
+          "state": "match"
+        }
+      ],
+      "sourceKind": "handoff"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/agent6/Чарнок_ED-08_handoff_preparation.md",
       "line": 14,
       "sha256": "21a2e1af6fe409c788b1af1b11f30ac913e8488484a10529236193fa72c2a863",
-      "state": "ambiguous",
-      "paths": []
+      "state": "external",
+      "paths": [
+        {
+          "path": "Чарнок/00_README_AND_NAVIGATION.md",
+          "state": "external"
+        }
+      ],
+      "sourceKind": "handoff"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/agent6/Чарнок_ED-08_handoff_preparation.md",
       "line": 14,
       "sha256": "bce8d38772c7debf86ea032027da920f9f2da4e56e5092cb9998224cff13b646",
-      "state": "ambiguous",
-      "paths": []
+      "state": "external",
+      "paths": [
+        {
+          "path": "Чарнок/00_README_AND_NAVIGATION.md",
+          "state": "external"
+        }
+      ],
+      "sourceKind": "handoff"
     },
     {
       "file": "БИОГРАФИИ/Стивен Чарнок/supplemental-audits/agent6/Чарнок_ED-08_handoff_preparation.md",

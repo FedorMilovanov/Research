@@ -144,6 +144,11 @@ def pair_claims(line: str) -> list[tuple[str, str]] | None:
         return list(zip(hashes, paths))
     if len(hashes) == 1 and len(paths) == 1:
         return [(hashes[0], paths[0])]
+    if len(hashes) == 2 and len(paths) == 1:
+        # A receipt row often carries two hashes for one file: the hash written in
+        # an earlier receipt and the hash of the bytes at the time of writing.
+        # Both are claims about the same path, so each is checked on its own.
+        return [(hash_, paths[0]) for hash_ in hashes]
     return None
 
 

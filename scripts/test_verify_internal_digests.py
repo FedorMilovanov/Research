@@ -75,8 +75,17 @@ class PairingTests(unittest.TestCase):
                          {self.digest: "match",
                           hashlib.sha256(other.read_bytes()).hexdigest(): "match"})
 
+    def test_two_hashes_for_one_path_are_both_checked(self) -> None:
+        # The handoff table lists the hash from the old receipt and the hash of the
+        # bytes at handoff: both name the same file, so both are claims.
+        line = f"| `target.md` | `{'0' * 64}` | `{self.digest}` |"
+        report = self._line(line)
+        states = {f["sha256"]: f["state"] for f in report["findings"]}
+        self.assertEqual(states[("0" * 64)], "stale")
+        self.assertEqual(states[self.digest], "match")
+
     def test_unequal_counts_are_ambiguous(self) -> None:
-        report = self._line(f"| `target.md` | `{self.digest}` | `{'1' * 64}` |")
+        report = self._line(f"| `target.md` | `{self.digest}` | `{'1' * 64}` | `{'2' * 64}` |")
         self.assertEqual({f["state"] for f in report["findings"]}, {"ambiguous"})
 
     def test_missing_file_is_external(self) -> None:
