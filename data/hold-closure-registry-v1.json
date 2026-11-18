@@ -216,6 +216,38 @@
         "Наличие окна в истории доказывает раздельность слов, но не верность числа по существу.",
         "Права, издания и прочитанность текста не затрагивались: RIGHTS_HOLD/PUBLICATION_HOLD остаются."
       ]
+    },
+    {
+      "id": "HCR-2026-11-18-09",
+      "title": "Подписи SHA-256 в Markdown: 1 537 подписей разобраны, 57 совпали с байтами, 0 просроченных в живых документах",
+      "holdType": "EVIDENCE_HOLD",
+      "previousState": "Квитанции вида «файл = sha256» лежали в документах, но ни один инструмент не перечитывал байты: подпись могла описывать прошлую редакцию, другой файл или ничего, а документ продолжал выглядеть сверенным.",
+      "closedScope": "Не «все хеши в репозитории», а измеримая ось: 1 537 подписей в 2 410 Markdown-файлах разобраны по состояниям. 57 подписей впервые сверены с байтами рабочего дерева и совпали. Просроченных 26, и все они в документах, которые фиксируют момент: 21 в манифестах раундов V68–V70 (включая три самоподписи, которые не могут совпасть никогда) и 5 в хендофф-таблице, которая сама сообщает о расхождении квитанции с файлом. Просроченных подписей в живых документах — 0.",
+      "recordLocations": [
+        "data/internal-digests-verified-2026-11-18.json",
+        "scripts/verify_internal_digests.py",
+        "scripts/test_verify_internal_digests.py",
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §14"
+      ],
+      "method": "internal-digest-rehash",
+      "objects": [
+        "СЕРИЯ СЕРДЦЕ/V70_SINGLE_ZIP_MANIFEST.md — 21 подпись совпала",
+        "СЕРИЯ СЕРДЦЕ/V69_SINGLE_ZIP_MANIFEST.md — 19 совпало",
+        "СЕРИЯ СЕРДЦЕ/V68_SINGLE_ZIP_MANIFEST.md — 17 совпало",
+        "778 подписей относятся к объектам Drive, 244 — к файлам вне дерева, 419 стоят без пути"
+      ],
+      "verification": {
+        "command": "python3 -B scripts/verify_internal_digests.py --summary",
+        "expect": "1 537 подписей: match=57, stale=26 (round-manifest=21, handoff=5), 0 в живых документах; external=244, external-drive=778, ambiguous=13, unclaimed=419",
+        "tests": "python3 -B -m unittest discover -s scripts -p 'test_verify_internal_digests.py' → 14 OK",
+        "ci": ".github/workflows/holds-inventory.yml, шаг «Reject stale digests in live documents»"
+      },
+      "limits": [
+        "Проверяется целый файл по названному пути; хеш фрагмента, страницы или архива так не проверяется.",
+        "Подпись без пути в той же строке остаётся unclaimed: она не подтверждена и не опровергнута.",
+        "Совпадение хеша удостоверяет байты, а не факт чтения, не издание и не права: RIGHTS_HOLD/PUBLICATION_HOLD остаются.",
+        "Просроченные подписи в манифестах раундов и хендоффе не переписаны: это исторические записи о моменте."
+      ]
     }
   ],
   "confirmations": [
@@ -273,7 +305,7 @@
       "method": "section-anchor-slug-check",
       "verification": {
         "command": "python3 -B scripts/audit_relative_links.py --summary",
-        "expect": "2 410 файлов; resolves=2 711, missing=58, missing-anchor=0, external=5 974; --strict → 0 необъяснённых",
+        "expect": "2 410 файлов; resolves=2 712, missing=58, missing-anchor=0, external=5 974; --strict → 0 необъяснённых",
         "tests": "python3 -B -m unittest discover -s scripts -p 'test_audit_relative_links.py' → 27 OK"
       },
       "limits": [

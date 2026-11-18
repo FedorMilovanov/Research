@@ -24,6 +24,9 @@ on:
       - 'scripts/test_hold_closure_registry.py'
       - 'scripts/audit_text_integrity.py'
       - 'scripts/test_audit_text_integrity.py'
+      - 'scripts/verify_internal_digests.py'
+      - 'scripts/test_verify_internal_digests.py'
+      - 'data/internal-digests-verified-2026-11-18.json'
       - 'data/text-integrity-repairs-2026-11-18.json'
       - 'data/hold-closure-registry-v1.json'
       - 'docs/research/HOLDS_REGISTER_2026-11-18.md'
@@ -51,6 +54,9 @@ on:
       - 'scripts/test_hold_closure_registry.py'
       - 'scripts/audit_text_integrity.py'
       - 'scripts/test_audit_text_integrity.py'
+      - 'scripts/verify_internal_digests.py'
+      - 'scripts/test_verify_internal_digests.py'
+      - 'data/internal-digests-verified-2026-11-18.json'
       - 'data/text-integrity-repairs-2026-11-18.json'
       - 'data/hold-closure-registry-v1.json'
       - 'docs/research/HOLDS_REGISTER_2026-11-18.md'
@@ -81,6 +87,7 @@ jobs:
           python3 -m py_compile scripts/verify_pinned_github_locators.py
           python3 -m py_compile scripts/test_hold_closure_registry.py
           python3 -m py_compile scripts/audit_text_integrity.py
+          python3 -m py_compile scripts/verify_internal_digests.py
       - name: Test classification and read-only behaviour
         run: |
           python3 -B -m unittest discover -s scripts -p 'test_audit_repository_holds.py' -v
@@ -90,6 +97,7 @@ jobs:
           python3 -B -m unittest discover -s scripts -p 'test_verify_pinned_github_locators.py' -v
           python3 -B -m unittest discover -s scripts -p 'test_hold_closure_registry.py' -v
           python3 -B -m unittest discover -s scripts -p 'test_audit_text_integrity.py' -v
+          python3 -B -m unittest discover -s scripts -p 'test_verify_internal_digests.py' -v
       - name: Scan (must not touch the working tree)
         run: |
           python3 scripts/audit_repository_holds.py -o /tmp/holds-a.json
@@ -106,6 +114,8 @@ jobs:
         run: python3 -B scripts/check_hold_vocabulary.py --check
       - name: Reject new glued tokens in prose
         run: python3 -B scripts/audit_text_integrity.py --check
+      - name: Reject stale digests in live documents
+        run: python3 -B scripts/verify_internal_digests.py --check
       - name: Check publication gate queue composition
         run: python3 -B scripts/publication_gate_status.py --check
       - name: Report counts without asserting closure
