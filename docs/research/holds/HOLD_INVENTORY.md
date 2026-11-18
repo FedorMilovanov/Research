@@ -1,6 +1,6 @@
 # HOLD inventory — сквозной инвентарь HOLD-ов Research
 
-**Собрано:** 2026-11-18; **проверенный коммит:** `865749d3a1e280963ac1c0c79720a99dbcdfe43d`. **Роль:** производный read-only артефакт, не authority. Пересобрать: `python3 -B scripts/render_hold_inventory.py`.
+**Собрано:** 2026-11-18; **проверенный коммит:** `b3b9d6baa5da7b2bbd8e5d0312b35ec1e99289f0`. **Роль:** производный read-only артефакт, не authority. Пересобрать: `python3 -B scripts/render_hold_inventory.py`.
 
 Инвентарь отвечает на один вопрос: какие HOLD-и объявлены в репозитории, какого они типа и что нужно, чтобы закрыть каждый честно. Он **ничего не снимает**: по `data/repository-evidence-policy-v2.json` HOLD не снимается ни присутствием файла в Research/Drive, ни достижимостью URL, ни библиографической записью.
 
@@ -11,19 +11,19 @@
 | JSON-файлов с HOLD-ами | 35 |
 | JSON-записей (объектов) с HOLD-ами | 2231 |
 | Всего HOLD-вхождений в `holds`-массивах | 6012 |
-| Markdown-файлов с типизированными токенами | 755 |
-| Всего типизированных токенов в Markdown/YAML | 7131 |
+| Markdown-файлов с типизированными токенами | 756 |
+| Всего типизированных токенов в Markdown/YAML | 7136 |
 | Нетипизированных строк `HOLD` | 0 |
 
 По типам:
 
 | Тип | В JSON-реестрах | В Markdown/YAML | Маршрут закрытия |
 |---|---|---|---|
-| `EVIDENCE_HOLD` | 1113 | 1077 | EXTERNAL_EVIDENCE |
-| `LOCATOR_HOLD` | 236 | 1581 | EXTERNAL_LOCATOR |
-| `ARCHIVE_HOLD` | 1344 | 1173 | EXTERNAL_OBJECT |
-| `RIGHTS_HOLD` | 1355 | 1202 | EXTERNAL_RIGHTS |
-| `PUBLICATION_HOLD` | 1964 | 2098 | TERMINAL_BY_DEFAULT |
+| `EVIDENCE_HOLD` | 1113 | 1078 | EXTERNAL_EVIDENCE |
+| `LOCATOR_HOLD` | 236 | 1582 | EXTERNAL_LOCATOR |
+| `ARCHIVE_HOLD` | 1344 | 1174 | EXTERNAL_OBJECT |
+| `RIGHTS_HOLD` | 1355 | 1203 | EXTERNAL_RIGHTS |
+| `PUBLICATION_HOLD` | 1964 | 2099 | TERMINAL_BY_DEFAULT |
 
 Счётчики не суммировать: один и тот же HOLD описывается и в машинном реестре, и в досье, и в аудите.
 
@@ -39,7 +39,7 @@
 
 | Корпус | JSON-записей с HOLD | Markdown-токенов |
 |---|---|---|
-| `docs` | 219 | 2345 |
+| `docs` | 219 | 2350 |
 | `ИСКУПЛЕНИЕ` | 526 | 1976 |
 | `БИОГРАФИИ` | 0 | 1323 |
 | `data` | 1248 | 1 |

@@ -129,8 +129,9 @@ def iter_files():
         if any(part in SKIP_DIRS for part in path.parts):
             continue
         # Собственные выходные файлы не считаем: иначе отчёт учитывает сам себя
-        # и счётчики меняются от его же содержимого.
-        if OUT_DIR in path.parents:
+        # и счётчики меняются от его же содержимого. Прочие документы каталога
+        # (квитанции, записки) считаются как обычные файлы.
+        if path in {OUT_MD, OUT_JSON}:
             continue
         yield path
 
