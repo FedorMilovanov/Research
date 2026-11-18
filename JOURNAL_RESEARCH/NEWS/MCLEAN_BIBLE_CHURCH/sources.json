@@ -1,6 +1,6 @@
 {
   "caseId": "JR-MBC-2026",
-  "version": 8,
+  "version": 9,
   "reviewedAt": "2026-11-18",
   "corpus": "JOURNAL_RESEARCH/NEWS/MCLEAN_BIBLE_CHURCH",
   "evidencePolicy": "data/repository-evidence-policy-v2.json",
@@ -616,7 +616,9 @@
       "provesOnly": "Text records a public NCN update on 45 trained pastors and 9 training for military installations, and financial review. However contradictory footer/attachment dates and nonmonotonic training counts versus Dec 2017 require verification from another archival original; do not use to support precise longitudinal totals.",
       "holds": [
         "PUBLICATION_HOLD",
-        "RIGHTS_HOLD"
+        "RIGHTS_HOLD",
+        "ARCHIVE_HOLD",
+        "EVIDENCE_HOLD"
       ],
       "integrityFlags": [
         "INTERNAL_DOCUMENT_DATE_CONFLICT",
