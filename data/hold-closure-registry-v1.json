@@ -187,6 +187,30 @@
       "object": {"driveFileId": "1r2rJUlYFdZKTITF3I9Vz0pNdMQGCSXdH", "bytes": 1045446, "sha256": "9c86b0b1beb0a913546dcc8979c49bdcd6d14ac0446a3f863f2edb510581fc8f"},
       "result": "Скачанные из Drive байты дали SHA-256 9c86b0b1…fc8f, совпадающий и с `sourceArchiveSha256`, и с `destinationSha256ReadBack` квитанции; это подтверждает уже заявленный readback, но новых прав, локаторов или публикационного решения не даёт.",
       "alsoVerified": "Два owner-файла квитанции совпадают с текущими байтами репозитория: 00_README_AND_NAVIGATION.md = 2a8d41c113c5c0de826297dbab482024735c594a25debff0befe16615fc2fdb6, 16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md = 706748bb1f3eb22d4b96f00ef6151cdd02c8975749b534d1dd86c7561ebaf832."
+    },
+    {
+      "id": "HCR-2026-11-18-C2",
+      "title": "Закреплённые GitHub-локаторы: 17 объектов перепроверены независимо, 4 из 4 заявленных SHA-256 совпали",
+      "holdType": "LOCATOR_HOLD",
+      "status": "CONFIRMATION_NOT_CLOSURE",
+      "closedScope": "Снято не удержание, а сомнение в заявке: 17 локаторов `github.com/…/blob/<commit>/<path>` существуют на своих коммитах (0 недоступных); у 4 заявлен SHA-256 и размер — 4/4 совпали побайтово после независимого скачивания. У 13 заявки нет: байты и хеши измерены и записаны, но закрывать нечего, пока корпус не заявил, что искал.",
+      "recordLocations": [
+        "data/pinned-github-locators-verified-2026-11-18.json",
+        "scripts/verify_pinned_github_locators.py",
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §11"
+      ],
+      "method": "pinned-commit-raw-fetch-and-rehash",
+      "verification": {
+        "command": "python3 -B scripts/verify_pinned_github_locators.py --summary",
+        "expect": "17 локаторов, match=4, mismatch=0, unavailable=0, unclaimed=13",
+        "tests": "python3 -B -m unittest discover -s scripts -p 'test_verify_pinned_github_locators.py' → 13 OK",
+        "note": "нужна сеть: обращение к api.github.com через gh; в CI не включено, чтобы не ломать сборку без сети"
+      },
+      "limits": [
+        "Совпадение хеша удостоверяет байты объекта на коммите, а не факт чтения содержания и не тождество издания.",
+        "ARCHIVE_HOLD на сканы и RIGHTS_HOLD/PUBLICATION_HOLD этим не снимаются.",
+        "URL без закреплённого коммита не проверяются: у них нет версии, к которой можно привязать байты."
+      ]
     }
   ],
   "notClosed": [

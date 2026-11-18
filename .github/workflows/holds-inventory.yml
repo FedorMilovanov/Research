@@ -19,6 +19,8 @@ on:
       - 'scripts/publication_gate_status.py'
       - 'scripts/test_publication_gate_status.py'
       - 'data/publication-gate-queue-v1.json'
+      - 'scripts/verify_pinned_github_locators.py'
+      - 'scripts/test_verify_pinned_github_locators.py'
   push:
     branches: [main]
     paths:
@@ -38,6 +40,8 @@ on:
       - 'scripts/publication_gate_status.py'
       - 'scripts/test_publication_gate_status.py'
       - 'data/publication-gate-queue-v1.json'
+      - 'scripts/verify_pinned_github_locators.py'
+      - 'scripts/test_verify_pinned_github_locators.py'
   workflow_dispatch:
 
 permissions:
@@ -57,12 +61,14 @@ jobs:
           python3 -m py_compile scripts/audit_relative_links.py
           python3 -m py_compile scripts/check_hold_vocabulary.py
           python3 -m py_compile scripts/publication_gate_status.py
+          python3 -m py_compile scripts/verify_pinned_github_locators.py
       - name: Test classification and read-only behaviour
         run: |
           python3 -B -m unittest discover -s scripts -p 'test_audit_repository_holds.py' -v
           python3 -B -m unittest discover -s scripts -p 'test_audit_relative_links.py' -v
           python3 -B -m unittest discover -s scripts -p 'test_check_hold_vocabulary.py' -v
           python3 -B -m unittest discover -s scripts -p 'test_publication_gate_status.py' -v
+          python3 -B -m unittest discover -s scripts -p 'test_verify_pinned_github_locators.py' -v
       - name: Scan (must not touch the working tree)
         run: |
           python3 scripts/audit_repository_holds.py -o /tmp/holds-a.json

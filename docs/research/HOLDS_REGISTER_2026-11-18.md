@@ -25,16 +25,16 @@
 
 | Показатель | Значение |
 |---|---:|
-| просканировано текстовых файлов | 3 081 |
-| файлов хотя бы с одним маркером | 894 |
+| просканировано текстовых файлов | 3 084 |
+| файлов хотя бы с одним маркером | 896 |
 | канонические упоминания `PUBLICATION_HOLD` | 2 581 |
-| канонические упоминания `LOCATOR_HOLD` | 1 963 |
+| канонические упоминания `LOCATOR_HOLD` | 1 965 |
 | канонические упоминания `RIGHTS_HOLD` | 1 452 |
 | канонические упоминания `ARCHIVE_HOLD` | 1 408 |
 | канонические упоминания `EVIDENCE_HOLD` | 1 290 |
 | строки, где флаг зафиксирован как действующий (`open`) | 2 339 |
 | строки, где флаг зафиксирован как снятый (`closed`) | 821 |
-| строки без явного состояния (`unmarked`) | 5 937 |
+| строки без явного состояния (`unmarked`) | 5 939 |
 | строки, где одновременно записаны и снятие, и сохранение (`mixed`) | 403 |
 | JSON-файлов с массивом `holds` | 38 |
 | значений в массивах `holds` | 6 146 |
@@ -44,7 +44,7 @@
 **Как читать числа.** Это счётчик текста, а не аудит источников: одна строка может называть
 несколько флагов, `mixed`-строки попадают в оба состояния (поэтому `open + closed + unmarked + mixed`
 не равна сумме упоминаний), исторические блоки учитываются наравне с текущими. Смысл среза — не
-«8 694 проблемы», а карта: где именно стоит маркер и записано ли рядом его состояние.
+«8 696 проблем», а карта: где именно стоит маркер и записано ли рядом его состояние.
 
 **Что не считается.** Собственные артефакты инвентаря исключены из сканирования, иначе снимок
 учитывал бы сам себя: `data/repository-holds-inventory-v1.json`, этот документ,
@@ -88,6 +88,7 @@
 | `HCR-2026-11-18-05` | зеркала, волна 25: 6 объектов, 6/6 | серверная SHA-256 | там же |
 | `HCR-2026-11-18-06` | «Искупление», четыре PD-копии (Owen, Calvin, Goodwin, WCF): копия = источник, 4/4 | серверная SHA-256 | [`ИСКУПЛЕНИЕ/07`](../../ИСКУПЛЕНИЕ/07_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md) |
 | `HCR-2026-11-18-07` | локаторная ось Markdown: 58 мёртвых ссылок из 8 710 разобраны; 3 починены (2 → коммит+blob, 1 → схема), 55 объяснены точечно | read-only обход + 18 тестов + `--strict` | [`data/hold-closure-registry-v1.json`](../../data/hold-closure-registry-v1.json), §8 ниже, [`data/relative-link-exceptions-v1.json`](../../data/relative-link-exceptions-v1.json) |
+| `HCR-2026-11-18-C2` (подтверждение, не закрытие) | 17 закреплённых GitHub-локаторов: 0 недоступных, 4/4 заявленных SHA-256 совпали побайтово; 13 объектов измерены, заявок нет | `gh api` raw по закреплённому коммиту + локальный пересчёт | §11 ниже, [`data/pinned-github-locators-verified-2026-11-18.json`](../../data/pinned-github-locators-verified-2026-11-18.json) |
 | `HCR-2026-11-18-C1` (подтверждение, не закрытие) | Charnock custody v3 ZIP: скачанные байты дали `9c86b0b1…fc8f` = `sourceArchiveSha256` = `destinationSha256ReadBack`; два owner-файла совпали с текущими байтами репозитория | полные байты | `data/charnock-custody-receipt-v3-20261117-r2.json` |
 
 **Важная граница.** Readback говорит только «байты копии равны байтам источника / байты на Drive
@@ -295,3 +296,52 @@ python3 -B scripts/publication_gate_status.py --check
 
 Это по-прежнему **не** закрытие прав и не разрешение на публикацию: ни одно удержание не снято,
 ни один `disposition` не изменён.
+
+## 11. Закреплённые GitHub-локаторы: независимая перепроверка байтов (18.11.2026)
+
+В корпусе 17 уникальных локаторов вида `github.com/<owner>/<repo>/blob/<commit>/<path>` (в 7 файлах,
+в основном EEBO-TCP XML по Чарноку). Такой локатор проверяем без доверия автору: объект на
+закреплённом коммите можно скачать и пересчитать.
+
+Метод: `scripts/verify_pinned_github_locators.py` — `gh api contents?ref=<commit>` с raw-медиатипом,
+локальный пересчёт размера и SHA-256, заявка читается **только с той же строки** (иначе «не заявлено»,
+а не догадка). Отчёт: `data/pinned-github-locators-verified-2026-11-18.json`.
+
+Итог: **17 локаторов, 0 недоступных, 0 расхождений**; у 4 есть заявленный SHA-256/размер —
+**4 из 4 совпали побайтово**; у 13 заявки нет, но их байты и хеши теперь измерены и записаны,
+чтобы владелец корпуса мог их принять, а не пересказывать.
+
+| Репозиторий | Коммит | Путь | Заявка | Байт (факт) | SHA-256 (факт) | Состояние |
+|---|---|---|---|---:|---|---|
+| `FedorMilovanov/gb-is-my-strength` | `bc8f63dd` | `docs/LAWSON-SOURCE-RECHECK-2026-11-15.md` | — | 18517 | `c51a1654dc04ef2a…` | unclaimed |
+| `FedorMilovanov/Research` | `26c5531c` | `ИСКУПЛЕНИЕ/evidence/AGENT2_JOHANNINE_ATONEMENT_EXEGESIS_HANDOFF_2026-11-15.md` | — | 115085 | `0eaca9d9d1f49370…` | unclaimed |
+| `textcreationpartnership/A46911` | `32dc300b` | `A46911.xml` | да | 163974 | `e2bea34fb919b90d…` | match |
+| `textcreationpartnership/A71277` | `97f473a5` | `A71277.xml` | да | 6035109 | `beaa62b9b406cbc3…` | match |
+| `textcreationpartnership/A32726` | `460e9c2a` | `A32726.xml` | да | 603576 | `1268a63fa8eebeac…` | match |
+| `textcreationpartnership/A79420` | `492c6013` | `A79420.xml` | да | 598792 | `5f07206177dcffc8…` | match |
+| `textcreationpartnership/A41722` | `7f99242e` | `A41722.xml` | — | 76048 | `ed2038ae64d1e5bb…` | unclaimed |
+| `textcreationpartnership/B02133` | `41dc7ea9` | `B02133.xml` | — | 17702 | `505f653df483ce85…` | unclaimed |
+| `textcreationpartnership/A32722` | `5c9d910f` | `A32722.xml` | — | 54754 | `b25bad732f769d06…` | unclaimed |
+| `textcreationpartnership/B20167` | `11049eba` | `B20167.xml` | — | 538534 | `4708c9c4b5e3036c…` | unclaimed |
+| `textcreationpartnership/A25478` | `ea0aef19` | `A25478.xml` | — | 3485491 | `dd3588d681fe1ff3…` | unclaimed |
+| `textcreationpartnership/A32723` | `caa75dff` | `A32723.xml` | — | 4622240 | `d6205c4062867acf…` | unclaimed |
+| `textcreationpartnership/A32724` | `aa978932` | `A32724.xml` | — | 1146488 | `efaf653b7c9d0589…` | unclaimed |
+| `textcreationpartnership/A35345` | `81cb6888` | `A35345.xml` | — | 4535033 | `5ef15afca7c22866…` | unclaimed |
+| `textcreationpartnership/B15418` | `44913a36` | `B15418.xml` | — | 1704145 | `1b0ec102e0e3ef82…` | unclaimed |
+| `GITenberg/Selections-from-the-Principles-of-Philosophy_4391` | `fe5d9245` | `4391.txt` | — | 195080 | `be132739f8ca6689…` | unclaimed |
+| `textcreationpartnership/A52424` | `7859df5a` | `A52424.xml` | — | 352981 | `3680ed708035808b…` | unclaimed |
+
+**Что это даёт.** Заявка «SHA-256 фактических байтов» в `БИОГРАФИИ/Стивен Чарнок/02_…` перестала
+быть утверждением автора: она воспроизводится с закреплённого объекта. Это узкая, но настоящая
+победа локаторной оси.
+
+**Чего это не даёт.** Совпадение хеша удостоверяет байты, а не прочтение: что текст именно прочитан,
+что издание то самое и что есть права на воспроизведение — из хеша не следует. `ARCHIVE_HOLD` на
+сканы и `RIGHTS_HOLD`/`PUBLICATION_HOLD` этим не снимаются. Для 13 объектов без заявки измерение
+добавляет факт, но не закрывает удержание: закрывать нечего, пока корпус не заявил, что искал.
+
+```bash
+python3 -B scripts/verify_pinned_github_locators.py --summary       # нужна сеть (gh api)
+python3 -B scripts/verify_pinned_github_locators.py --offline --summary   # только сбор заявок
+python3 -B -m unittest discover -s scripts -p 'test_verify_pinned_github_locators.py'
+```
