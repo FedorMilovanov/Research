@@ -1,5 +1,9 @@
 # Чарнок — связка с материалом, уже имеющимся в Research, и Drive-зеркало
 
+> **CURRENT RESEARCH CROSS-REPO SNAPSHOT — 18.11.2026 (научная навигация, не новая root authority).** Действующие точные исследования Lingendes и 12 переводов индексированы в [supplemental-audits/README](supplemental-audits/README.md). **ED-03 = DONE_BOUNDED** (14 строк, четыре контекстные карточки, том 16 §21.8); старый ED-03 OPEN в историческом чек-листе не действует. **ED-02** — подтверждены факсимиле и две параллели, но не издание, принадлежность сноски и независимая рецензия. **ED-06** — пакет 12/12 EN/RU проверен по хешам; независимых заключений 0/12. **№13** остаётся под редакционно-публикационным HOLD: [LordChrist Issue #997](https://github.com/FedorMilovanov/video-channel-manager/issues/997). `Research DONE != Product approval`.
+>
+> **Раздельные Drive-объекты.** Три исторические копии из §6 были сделаны через `copy_file` без независимого байтового readback; их `TRANSFER_PENDING_VERIFICATION` **не отменён**. Другой объект — новый **15-файловый Charnock custody v3** — подтверждён SHA-256 после загрузки и скачивания с Drive ([первая квитанция](../../data/charnock-custody-receipt-v3-20261117.json), [последующая r2](../../data/charnock-custody-receipt-v3-20261117-r2.json)). Он хранит только перечисленные в квитанциях исходные файлы/коммиты; это не пересмотр прав, не копии из таблицы §6 и не полный архив всех приложений. Следующие новые дополнения ED-02/ED-06 находятся в Git и вне границы v3.
+
 > **CHARNOCK-HANDOFF-V1 · wave40 · 2026-10-26**
 > Роль: CROSSLINK_NAVIGATION. Текущий объём/пределы —[00](00_README_AND_NAVIGATION.md)
 > и[16§20](16_SERIES_ARCHITECTURE_AND_PERSONS_CHAIN.md);статус доставки —
@@ -212,8 +216,7 @@
 | Gill Rippon 1838 PDF (копия) | `14bfNjtyOgIh7MQV-7yK8I6K2p3AG6dNY` | `01 — ДЖОН ГИЛЛ` | копия `1q4IFETrDu9bH8mGMIPQO38qQTVwxjxMu` |
 | Gill mobile reference .txt (копия) | `1uXU3sR6yn8VEUhQWQ_z_ctwtD300-Pwi` | `01 — ДЖОН ГИЛЛ` | копия `1tQ6MLcTuslMxH3jTecVOjWC-Ju-LqE1m` |
 
-**Custody:** все три копии созданы через Drive `copy_file`; оригиналы на месте; **SHA-256 readback
-не выполнялся** → `TRANSFER_PENDING_VERIFICATION`. Не заявлять forensic acquisition.
+**Custody именно трёх строк-копий в §6:** созданы через Drive `copy_file`; оригиналы на месте; **SHA-256 readback этих трёх копий не выполнялся** → `TRANSFER_PENDING_VERIFICATION`. Отдельные независимые v3/r2 ZIP-архивы 15 исходных файлов выше **проверены**, но не служат квитанцией этих трёх копий. Не заявлять forensic acquisition там, где его нет.
 Подробный ledger — в [`../08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md`](../08_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md).
 
 ---
@@ -221,7 +224,7 @@
 ## 7. Права, архив и публикационные HOLD
 
 - **SUPERSEDED (после Research PR #552/#553):** старое обобщение «все Charnock-локаторы = `B1`/digital» не соответствует evidence-policy v2. Класс источника определяется происхождением конкретного свидетельства, не цифровым носителем. Непроверенные цифровые зеркала CCEL/Digital Puritan/Monergism — `C`/поисковые свидетельства с адресным `LOCATOR_HOLD` и `PUBLICATION_HOLD`; независимо проверенный первичный текст учитывается отдельно по собственному локатору и контексту. Нельзя автоматически повышать все ссылки до `B1` или снимать права/публикационный HOLD.
-- Копии на Drive: `TRANSFER_PENDING_VERIFICATION` custody.
+- Исторические три копии §6: `TRANSFER_PENDING_VERIFICATION` (без SHA-256 readback). Новые отдельно созданные v3/r2 архивы ED-08: `ACQUIRED_DURABLE_SOURCE_SNAPSHOT` **только для своих 15 файлов и pinned source commits**; не переводить статус на всё содержимое Drive.
 - Перенос в Product: `PUBLICATION_HOLD` по всему отделу.
 
 ---
