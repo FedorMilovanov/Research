@@ -210,6 +210,7 @@
 > - **Сперджен (сн. 45, вторая цитата).** Это № 3331 *Knowing and Believing* (1866/1912), MTP **58**:583–584 по Мюррею, а не «Vol. 7. P. 26». Перед цитатой: «You may believe that Jesus Christ died for you, and may believe what is not true». Мюррей приводит отрывок против всеобщего искупления.
 > - **Ч. Ходж (сн. 36).** У Ходжа «customary with **Augustinians**», а не «утверждение Августина». Сразу после цитируемой фразы, на той же с. 546, — вопрос о том, не являются ли прочие следствия «merely incidental».
 > - **Цвингли (сн. 8) и Амвросий (сн. 33)** — переданы точно (Z II, л. 130; *in Luc.* VI.25).
+> - *Пометка раунда 105 (`34_` §4.188; REPASS §28):* «MTP 7, p. 26» — вторая страница № 351 *Plenteous Redemption* (MTP 7, pp. 25–32). Цитаты там нет; на этих страницах Сперджен отвергает учение «that all men are redeemed» (ср. §6 и §18 выше).
 >
 > **Дополнение (раунд 88, 2026-11-17; `34_` §4.171, S186; REPASS §11) — Кол. 1:20, строки 33–34 таблицы выше.**
 > - **Винсент (сн. 106).** p. 475, сноска к «All things»: цитата точна («a larger purpose of God in redemption than is commonly conceived»). Опущено начало той же сноски: «Paul's declarations elsewhere as to the ultimate fate of evil men and angels, must certainly be allowed their full weight». «Нач. XIX в.» противоречит собственной дате статьи (т. 3 — 1887): `DATE_ERROR`.
