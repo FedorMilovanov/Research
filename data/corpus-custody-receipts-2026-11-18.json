@@ -803,27 +803,76 @@
         ],
         "anyone": false,
         "domain": false
+      },
+      {
+        "kind": "control-file",
+        "label": "commons_strict_sha256_verification.txt",
+        "id": "1PvXKzW6Oq1U7qP-j0FLIXx_gv19ogez9",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "control-file",
+        "label": "COMMONS STRICT 40 — ORIGINAL MANIFEST.zip",
+        "id": "1qdpO--2fZim1Ui4suCm0hoxppCEhl0kM",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      {
+        "kind": "control-file",
+        "label": "COMMONS STRICT 40 — PROCESSED CONTROL PACKAGE.zip",
+        "id": "1RIA4gU8AkkwQ-JR72Ek5pCJr-5VBnnQC",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
       }
     ],
     "counts": {
       "folders": 7,
       "shards": 21,
-      "otherFiles": 2,
-      "total": 30,
+      "manifests": 2,
+      "controlFiles": 3,
+      "total": 33,
       "shardsByFamily": {
         "commons": 9,
         "second-editorial": 4,
         "portraits": 3,
         "ephemera": 5
-      }
+      },
+      "familiesFullyCovered": [
+        "commons",
+        "second-editorial",
+        "portraits",
+        "ephemera"
+      ]
     },
-    "summary": "30 объектов, у каждого ровно одно разрешение — владелец; ни одного anyone, ни одного domain, ни одного второго пользователя. Проверены ВСЕ 21 шард четырёх семейств, то есть все сохранённые байты этих семейств: PDF лежат внутри zip, отдельными объектами Drive не являются.",
+    "summary": "33 объекта, у каждого ровно одно разрешение — владелец; ни одного anyone, ни одного domain, ни одного второго пользователя. Четыре папки семейств покрыты целиком: все 21 шард и все сопутствующие файлы, то есть всё, что в них лежит.",
     "limits": [
-      "Проверены шарды, папки и два манифеста. Не проверены три контрольных файла в папке commons: список проверки sha256, ORIGINAL MANIFEST и PROCESSED CONTROL PACKAGE.",
-      "Остальные области Drive (архив РБА, ИСКУПЛЕНИЕ и прочие) не проверялись вовсе.",
+      "Проверены четыре папки семейств, три карантинные папки и всё содержимое первых четырёх. Остальные области Drive (архив РБА, ИСКУПЛЕНИЕ и прочие) не проверялись вовсе.",
       "Владелец — потребительский аккаунт Gmail: domain-разрешений здесь не может быть по определению, их отсутствие ничего не доказывает.",
       "Права доступа могут измениться в любой момент после этой проверки; значения сняты 2026-11-18.",
-      "Открытость источника (DBNL, archive.org) и открытость нашего хранилища — разные вещи; запись только про наше хранилище."
+      "Открытость источника (DBNL, archive.org) и открытость нашего хранилища — разные вещи; запись только про наше хранилище.",
+      "Карантинные папки проверены как папки; их содержимое отдельно не перепроверялось — кроме двух объектов, у которых уже сняты квитанции в §5 и §6."
     ]
   }
 }
