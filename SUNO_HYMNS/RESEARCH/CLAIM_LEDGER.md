@@ -806,12 +806,14 @@ Both were `projectLevel` facts while the text had no work. DUTCH-005 now links t
 **Notes:** The encyclopaedia reports that the Athenogenes ascription resulted from conflating two testimonies. The juxtaposition is read in Basil; the historical origin of the attribution has not independently been traced through manuscripts; Papyrus identity and catalogue date are checked in DCLP/LDAB, and the extent is now described in Milne 1927 no. 244, read in OCR. The papyrus letters, images and palaeography are not examined. A seventh-century fragment can carry earlier or contemporary words; this does not identify their author; Public copy and any attribution/redaction decision remain outside this research update.
 **Limits / next action:** Basil quotes a Trinitarian clause, not the six lines; exclude authorship of the ancient thanksgiving, not every possible later revision; ARCHIVE_HOLD remains for the unexamined papyrus and attribution-bearing manuscript/edition evidence.
 
-### CLM-PHOS-AC-CHECKED — the Apostolic Constitutions claim, read and dropped
+### CLM-PHOS-AC-CHECKED — Подтверждает ли ссылка на Апостольские постановления VIII.35 запись Phos Hilaron?
 
-**Claim:** that the hymn is first recorded in the *Apostolic Constitutions* (VIII.35) is **false**. VIII.35–37 (ANF translation, read 2026-10-26) contain the evening assembly, the psalm at the lighting of the lamps, the deacon's bidding prayer and the bishop's thanksgiving («O God, who art without beginning and without end…»), but not one line of the hymn.
+**Claim:** Нет: в прочитанной английской веб-передаче Donaldson / New Advent VIII.34–37 даёт часы молитвы, вечернее собрание, неназванный псалом при возжении светильников, прошения и благодарение, но не текст Phos Hilaron. В дополнительно прочитанных VII.47–49 находятся утреннее славословие, вечерняя молитва с псалмовой хвалой и песнью Симеона, затем молитва перед трапезой — также не этот гимн. Отрицательный результат относится к указанным местам, не к полному просмотру всех книг или греческой рукописной традиции.
 
-**Review state:** `VERIFIED_NEGATIVE` — looked for in a primary text and found not to be the case · **Sources:** SRC-PHOS-AC-ANF · **HOLDs:** none
-**Limits:** checked in English translation only; the Greek text of the Constitutions was not collated.
+**Review state:** VERIFIED_NEGATIVE · **Sources:** SRC-PHOS-AC-ANF, SRC-PHOS-AC-BOOK7, SRC-PHOS-MESSENGER-ACHYMNS, SRC-PHOS-PRAVENC · **HOLDs:** none
+**Notes:** 18.11.2026 перечитаны VII.47–49 и VIII.34–37 с границей VIII.38, по закреплённому HTML-зеркалу; выходные данные дополнительно прочитаны на живых страницах. Переводчик James Donaldson, ANF 7 (1886), не Schaff и не NPNF. Полные книги не прочитаны; Положительный контроль — VII.47 действительно содержит утреннее славословие (CLM-PHOS-GLORIA-AC); вечерний псалом в VIII.35 не назван и не может быть отождествлён с Phos Hilaron по одному предписанию петь; Прежнее объяснение «отсюда и пошла ошибка» заменено: сходство обряда может объяснять путаницу, но история её возникновения и распространения здесь не прослежена. Поисковая передача Messenger (C / LINK_ONLY) не считается независимо прочитанным подтверждением; VERIFIED_NEGATIVE сохранён только для проверки названных локаторов. RIGHTS_HOLD у двух источников ограничивает перепечатку веб-редакции; собственный пересказ результата не объявляет эту редакцию лицензированной.
+**Limits:** Английская веб-редакция, не критический греческий текст и не скан ANF. Универсальное отсутствие гимна во всём сочинении этим проходом не доказывается; Греческие названия псалма и песней в досье — идентификационные обозначения, а не результат греческой сверки. Ни время возникновения гимна, ни генеалогия популярной ошибки из этих отрывков не следуют; Отсутствие цитаты в уставном предписании не доказывает, что гимн не мог исполняться при обряде; здесь проверяется наличие текста по указанной ссылке, не история исполнения.
+**Next check:** Если потребуется утверждение о греческом тексте, сверить VII.47–49 и VIII.34–38 по точно идентифицированному критическому изданию; для более широкого отрицания сначала определить и действительно прочитать полный требуемый объём.
 
 ### CLM-PHOS-OLDEST-SCOPE — The scope of the word 'oldest'
 
@@ -871,12 +873,14 @@ Both were `projectLevel` facts while the text had no work. DUTCH-005 now links t
 **Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-CPDL · **HOLDs:** none
 **Limits / next action:** every choice and every rejected alternative is in `DOSSIER_PHOS-001_TRANSLATION_DECISIONS.md`; a working draft, not an owner-approved text.
 
-### CLM-PHOS-GLORIA-AC — the Greek Gloria in the Apostolic Constitutions
+### CLM-PHOS-GLORIA-AC — Утреннее славословие VII.47 по английской веб-передаче
 
-**Claim:** yes. Book VII.47 (ANF) is headed «A Morning Prayer» and opens «Glory be to God in the highest, and upon earth peace, good-will among men», continuing «We praise You, we sing hymns to You, we bless You…».
+**Claim:** В английской веб-передаче Donaldson / New Advent VII.47 озаглавлена A Morning Prayer: открывается Лк 2:14 и продолжается утренней хвалой, относимой к Gloria. Это положительная проверка указанного места, не утверждение о тождестве всех слов современной греческой редакции; отрицательный результат по Phos Hilaron ограничен отдельно прочитанными местами.
 
-**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-AC-BOOK7 · **Level:** series (roadmap)
-**Limits:** English translation only; the Greek was not collated. Recorded because the check on Φῶς ἱλαρόν in the same book came out negative — the method is not rigged to say no.
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-AC-BOOK7 · **HOLDs:** none
+**Level:** project research; not added to the production track.
+**Notes:** Перепроверено 18.11.2026: VII.47–49 в закреплённом HTML и на живой странице; выходные данные называют James Donaldson, ANF 7 (1886), редакцию New Advent / Kevin Knight. Прежнее NPNF исправлено; печатный том и греческий текст не сверены; A positive check, recorded because the earlier negative one (CLM-PHOS-AC-CHECKED) shows the method is not rigged to say no; Series-level: recorded in RESEARCH/SERIES_ANCIENT_HYMNS_ROADMAP.md, not attached to a work because no work exists yet.
+**Limits:** Только названные английские разделы, не вся книга и не критическая греческая колляция. RIGHTS_HOLD у источника не позволяет объявлять веб-редакцию свободной для перепечатки; здесь собственный пересказ.
 
 ### CLM-PHOS-POXY-TEXT — the state of the Oxyrhynchus hymn
 

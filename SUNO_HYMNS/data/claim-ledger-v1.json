@@ -1044,8 +1044,8 @@
   },
   {
    "id": "CLM-PHOS-AC-CHECKED",
-   "topic": "Записан ли гимн в Апостольских постановлениях (проверено в обеих книгах)",
-   "claim": "Распространённое утверждение, будто гимн впервые записан в Апостольских постановлениях, ложно — и проверено теперь в обеих книгах, где его могли бы поместить. Книга VIII §§34-37 даёт вечерний чин: собрание, псалом при возжении светильников, просительную молитву диакона, благодарение епископа — но не текст гимна. Книга VII §§47-49 даёт суточные молитвы: утреннюю (Δόξα ἐν ὑψίστοις), вечернюю (Αἰνεῖτε παῖδες, то есть Пс 112:1 LXX, с Σοὶ πρέπει αἶνος и песнью Симеона Νῦν ἀπολύεις) и перед трапезой (Εὐλογητὸς εἶ) — снова ни одной строки Φῶς ἱλαρόν. Независимый научный перечень гимнов VII книги (Мессенджер, 1942) не включает Φῶς ἱλαρόν вовсе и упоминает его отдельно, как гимн, который Василий в IV веке называет очень древним.",
+   "topic": "Подтверждает ли ссылка на Апостольские постановления VIII.35 запись Phos Hilaron?",
+   "claim": "Нет: в прочитанной английской веб-передаче Donaldson / New Advent VIII.34–37 даёт часы молитвы, вечернее собрание, неназванный псалом при возжении светильников, прошения и благодарение, но не текст Phos Hilaron. В дополнительно прочитанных VII.47–49 находятся утреннее славословие, вечерняя молитва с псалмовой хвалой и песнью Симеона, затем молитва перед трапезой — также не этот гимн. Отрицательный результат относится к указанным местам, не к полному просмотру всех книг или греческой рукописной традиции.",
    "claimStatus": "VERIFIED_NEGATIVE",
    "sourceIds": [
     "SRC-PHOS-AC-ANF",
@@ -1054,17 +1054,17 @@
     "SRC-PHOS-PRAVENC"
    ],
    "notes": [
-    "Book VIII.34–37 read in the ANF translation on 2026-10-26; the chapters are the evening rite, not the hymn.",
-    "The scholarly encyclopaedia article does not ascribe the hymn to the Apostolic Constitutions at all.",
-    "Перепроверено 2026-10-26: добавлена книга VII §§47-49, ранее проверялась только книга VIII.",
-    "Происхождение ошибки понятно: VIII.35 предписывает «псалом при возжении светильников», то есть чин; отсюда и пошло «гимн записан в Постановлениях». Чин есть, текста нет.",
-    "Утверждение повторяют английская Википедия и десятки сайтов; оно неверно.",
-    "Greek text of the Constitutions was not collated; both books checked in English translation only (ANF/NPNF)."
+    "18.11.2026 перечитаны VII.47–49 и VIII.34–37 с границей VIII.38, по закреплённому HTML-зеркалу; выходные данные дополнительно прочитаны на живых страницах. Переводчик James Donaldson, ANF 7 (1886), не Schaff и не NPNF. Полные книги не прочитаны.",
+    "Положительный контроль — VII.47 действительно содержит утреннее славословие (CLM-PHOS-GLORIA-AC); вечерний псалом в VIII.35 не назван и не может быть отождествлён с Phos Hilaron по одному предписанию петь.",
+    "Прежнее объяснение «отсюда и пошла ошибка» заменено: сходство обряда может объяснять путаницу, но история её возникновения и распространения здесь не прослежена. Поисковая передача Messenger (C / LINK_ONLY) не считается независимо прочитанным подтверждением.",
+    "VERIFIED_NEGATIVE сохранён только для проверки названных локаторов. RIGHTS_HOLD у двух источников ограничивает перепечатку веб-редакции; собственный пересказ результата не объявляет эту редакцию лицензированной."
    ],
    "holds": [],
-   "nextCheck": "If a critical Greek text is ever collated, check whether any Greek line of the hymn appears anywhere in Books VII–VIII; on the English evidence it does not.",
+   "nextCheck": "Если потребуется утверждение о греческом тексте, сверить VII.47–49 и VIII.34–38 по точно идентифицированному критическому изданию; для более широкого отрицания сначала определить и действительно прочитать полный требуемый объём.",
    "limits": [
-    "Checked in translation only (ANF, newadvent.org); the Greek text of the Constitutions was not collated."
+    "Английская веб-редакция, не критический греческий текст и не скан ANF. Универсальное отсутствие гимна во всём сочинении этим проходом не доказывается.",
+    "Греческие названия псалма и песней в досье — идентификационные обозначения, а не результат греческой сверки. Ни время возникновения гимна, ни генеалогия популярной ошибки из этих отрывков не следуют.",
+    "Отсутствие цитаты в уставном предписании не доказывает, что гимн не мог исполняться при обряде; здесь проверяется наличие текста по указанной ссылке, не история исполнения."
    ],
    "status": null
   },
@@ -1217,19 +1217,19 @@
   },
   {
    "id": "CLM-PHOS-GLORIA-AC",
-   "topic": "Whether the Greek Gloria is in the Apostolic Constitutions",
-   "claim": "Yes. Book VII.47 (ANF) is headed 'A Morning Prayer' and opens 'Glory be to God in the highest, and upon earth peace, good-will among men', continuing 'We praise You, we sing hymns to You, we bless You…'. This is the opposite result from the check run on Φῶς ἱλαρόν in the same book: the Constitutions do carry the Gloria, and do not carry the lamp-lighting hymn.",
+   "topic": "Утреннее славословие VII.47 по английской веб-передаче",
+   "claim": "В английской веб-передаче Donaldson / New Advent VII.47 озаглавлена A Morning Prayer: открывается Лк 2:14 и продолжается утренней хвалой, относимой к Gloria. Это положительная проверка указанного места, не утверждение о тождестве всех слов современной греческой редакции; отрицательный результат по Phos Hilaron ограничен отдельно прочитанными местами.",
    "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
    "sourceIds": [
     "SRC-PHOS-AC-BOOK7"
    ],
    "notes": [
-    "Read 2026-10-26 in the NPNF English translation; the Greek was not collated.",
+    "Перепроверено 18.11.2026: VII.47–49 в закреплённом HTML и на живой странице; выходные данные называют James Donaldson, ANF 7 (1886), редакцию New Advent / Kevin Knight. Прежнее NPNF исправлено; печатный том и греческий текст не сверены.",
     "A positive check, recorded because the earlier negative one (CLM-PHOS-AC-CHECKED) shows the method is not rigged to say no.",
     "Series-level: recorded in RESEARCH/SERIES_ANCIENT_HYMNS_ROADMAP.md, not attached to a work because no work exists yet."
    ],
    "limits": [
-    "English translation only."
+    "Только названные английские разделы, не вся книга и не критическая греческая колляция. RIGHTS_HOLD у источника не позволяет объявлять веб-редакцию свободной для перепечатки; здесь собственный пересказ."
    ],
    "projectLevel": true
   },

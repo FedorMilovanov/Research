@@ -1431,7 +1431,8 @@
     "Прочитан текстовый OCR титула, метода публикации и статьи №244 с границами соседних №243/245. Полная книга, печатные изображения с. 205–206 и сам папирус не просмотрены. EXACT_LOCATOR_VERIFIED относится к статье издания и её пагинации, не к буквам и знакам оригинала. OCR даёт инвентарный номер как 20378; литера B опознана через соответствие №244 в DCLP, не проверена по изображению печати.",
     "Размер, палеографическая дата, сведения о приобретении и протоколе переданы по Milne. Дату протокола нельзя приписывать гимну; наличие текста на другой стороне само по себе не устанавливает порядок записей.",
     "Нельзя восстанавливать шесть строк или утверждать чтения Θεόν/Θεοῦ, αἰνοῦμεν/ὑμνοῦμεν по двум повреждённым строкам этого OCR. Статья Tripolitis 1970 (с. 189–196) и критический текст Plank 2001 не прочитаны.",
-    "Доступ — чтение через fetch_page, 18.11.2026: титул, метод публикации с. xi и №244 с. 205–206, включая границы №243/245; отдельно карта страниц IA с leafNum 225/226 для с. 205/206. Файлы книги локально не приобретены, контрольные суммы и долговременное хранение не заявлены."
+    "Доступ — чтение через fetch_page, 18.11.2026: титул, метод публикации с. xi и №244 с. 205–206, включая границы №243/245; отдельно карта страниц IA с leafNum 225/226 для с. 205/206. Файлы книги локально не приобретены, контрольные суммы и долговременное хранение не заявлены.",
+    "Повторный доступ к изображениям 18.11.2026: прямая загрузка опубликованного IA PDF из среды завершилась ошибкой TLS, адрес BookReaderImages не дал изображение (HTTP 500); локальный PDF/кадр не получен. STOP_DISCOVERY для этих маршрутов. Точный REQUEST_USER — Milne 1927, с. 205–206, сканы/фото для буквенной сверки №244; альтернатива — факсимиле именно Pap. 2037 b. Фотографический локатор на Hymnology Archive указан в досье, но снимок не просмотрен и чужое разрешение на его использование не унаследовано."
    ]
   },
   {
@@ -1530,23 +1531,29 @@
   },
   {
    "id": "SRC-PHOS-AC-ANF",
-   "title": "Apostolic Constitutions, Book VIII §§34–37 — ANF translation (Schaff), newadvent.org",
+   "title": "Apostolic Constitutions, Book VIII — James Donaldson, ANF 7 (1886), веб-редакция New Advent",
    "url": "https://www.newadvent.org/fathers/07158.htm",
-   "type": "Primary liturgical text in a public-domain English translation",
+   "type": "Первичный литургический текст в английском переводе; прочитаны отдельные разделы веб-редакции, не греческий оригинал и не печать ANF",
    "evidenceClass": "A1",
    "accessState": "PARTIAL_OBJECT",
    "locatorState": "EXACT_LOCATOR_VERIFIED",
-   "rightsState": "PUBLICATION_ELIGIBLE",
+   "rightsState": "RIGHTS_UNKNOWN",
    "publicationState": "REFERENCE",
-   "holds": [],
-   "supports": [
-    "VIII.34 prescribes the hours of prayer including evening",
-    "VIII.35 orders the evening assembly and 'the repetition of the psalm at the lighting up the lights'",
-    "VIII.36 is the deacon's bidding prayer for the evening",
-    "VIII.37 is the bishop's evening thanksgiving ('O God, who art without beginning and without end…')",
-    "Not one line of Φῶς ἱλαρόν occurs in VIII.34–37 — the Constitutions give the rite, not the text of the hymn"
+   "holds": [
+    "RIGHTS_HOLD"
    ],
-   "limits": "Read only in the NPNF English translation; the Greek was not collated. Chapters were read in the sequence VIII.34–37 and XLII–XLV, not the whole book."
+   "supports": [
+    "VIII.34 перечисляет часы молитвы, в том числе вечер; VIII.35 предписывает собрание и псалом при возжении светильников. Номер/название этого псалма и его музыкальный текст в §35 не приведены.",
+    "VIII.36 содержит просительную молитву диакона, VIII.37 — вечернее благодарение епископа, молитву преклонения и переход к утреннему чину; VIII.38 начинается отдельным утренним благодарением.",
+    "В прочитанном английском отрывке VIII.34–37 нет текста Phos Hilaron. Следовательно, ссылка именно на VIII.35 не удостоверяет его запись; это не вывод о каждом месте всех восьми книг."
+   ],
+   "limits": [
+    "По выходным данным: переводчик James Donaldson; Ante-Nicene Fathers, vol. 7, редакторы Alexander Roberts, James Donaldson и A. Cleveland Coxe; Buffalo: Christian Literature Publishing Co., 1886. Прежние обозначения Schaff/NPNF в этой карточке исправлены, не являются альтернативной редакцией.",
+    "Перечитаны целиком абзацы VIII.34–37 и пограничный VIII.38 в закреплённом HTML, строки 137–151; отдельно выходные данные, строка 358. Ранее читались также XLII–XLV, но этот новый результат ими не обосновывается. Весь текст книги VIII, печатное издание 1886 г. и критический греческий текст не сверены.",
+    "PARTIAL_OBJECT не означает автоматический EVIDENCE_HOLD для узкого вывода о прочитанном месте. RIGHTS_HOLD добавлен по неустановленной лицензии именно веб-редакции; REFERENCE сохранён."
+   ],
+   "secondaryUrl": "https://github.com/augustiniusliang/nicene-trans/blob/587532868ab43097efff5722c947170e7e744537/newadvent/fathers/07158.htm#L139-L151",
+   "rightsBasis": "Исторический текст и перевод Donaldson 1886 г. отделены от фактически прочитанной редакции New Advent / Kevin Knight. Живые страницы называют эту редактуру и copyright New Advent LLC 2026; закреплённое HTML-зеркало содержит copyright Kevin Knight 2009 и не объявлено побайтовой копией живой страницы. Лицензия на правку/HTML не установлена, печатная страница ANF не сопоставлена. В Research — ссылка и собственный пересказ; права на перепечатку веб-текста не подтверждены."
   },
   {
    "id": "SRC-PHOS-BL-ALEX",
@@ -1630,25 +1637,29 @@
   },
   {
    "id": "SRC-PHOS-AC-BOOK7",
-   "title": "Apostolic Constitutions, Book VII §§47-49 — the daily prayers (morning, evening, dinner)",
+   "title": "Apostolic Constitutions, Book VII — James Donaldson, ANF 7 (1886), веб-редакция New Advent",
    "url": "https://www.newadvent.org/fathers/07157.htm",
-   "type": "Primary liturgical text in a public-domain English translation",
+   "type": "Первичный литургический текст в английском переводе; прочитаны отдельные разделы веб-редакции, не греческий оригинал и не печать ANF",
    "evidenceClass": "A1",
    "accessState": "PARTIAL_OBJECT",
    "locatorState": "EXACT_LOCATOR_VERIFIED",
-   "rightsState": "PUBLICATION_ELIGIBLE",
+   "rightsState": "RIGHTS_UNKNOWN",
    "publicationState": "REFERENCE",
-   "holds": [],
-   "supports": [
-    "VII.47 is headed 'A Morning Prayer' and opens 'Glory be to God in the highest, and upon earth peace, good-will among men' (Luke 2:14)",
-    "It continues 'We praise You, we sing hymns to You, we bless You; we glorify You, we worship You by Your great High Priest…'",
-    "VII.48 is the evening prayer; VII.49 the prayer at dinner",
-    "So the Greek Gloria does appear in the Apostolic Constitutions — unlike Φῶς ἱλαρόν, which does not",
-    "§48 «Вечерняя молитва» (An Evening Prayer): «Αἰνεῖτε παῖδες» — «Дети, хвалите Господа, хвалите имя Господне» (Пс 112:1 LXX), затем «Σοὶ πρέπει αἶνος» — «Тебе подобает хвала… через Сына во Святом Духе» и «Νῦν ἀπολύεις» — «Ныне отпущаеши раба Твоего», то есть песнь Симеона (Лк 2:29-32)",
-    "§49 «Молитва перед трапезой» (A Prayer at Dinner): «Εὐλογητὸς εἶ» — «Благословен Ты, Господи, питающий меня от юности моей»",
-    "Ни одна строка Φῶς ἱλαρόν в §§47-49 нет: вечерняя молитва составлена из псалма и евангельской песни"
+   "holds": [
+    "RIGHTS_HOLD"
    ],
-   "limits": "Read in the NPNF English translation only; the Greek was not collated. Only VII.47–49 were read, not the whole book."
+   "supports": [
+    "VII.47 озаглавлена A Morning Prayer: славословие начинается Лк 2:14 и продолжается утренней хвалой, относимой к традиции Gloria. Это положительный результат, не тождество всех слов современного греческого славословия.",
+    "VII.48 — вечерняя молитва: призыв детям хвалить Господа, хвала Отцу через Сына во Святом Духе и песнь Симеона (Лк 2:29–32). VII.49 — молитва перед трапезой.",
+    "В прочитанных английских абзацах VII.47–49 нет текста Phos Hilaron. Греческие инципиты, употреблявшиеся в прежней карточке, не следует принимать за греческие строки, сверенные по этой английской странице."
+   ],
+   "limits": [
+    "По выходным данным: переводчик James Donaldson; Ante-Nicene Fathers, vol. 7, редакторы Alexander Roberts, James Donaldson и A. Cleveland Coxe; Buffalo: Christian Literature Publishing Co., 1886. Прежние обозначения Schaff/NPNF в этой карточке исправлены, не являются альтернативной редакцией.",
+    "Перечитаны целиком VII.47–49 в закреплённом HTML, строки 170–178, и выходные данные, строка 180; отдельно прочитаны те же разделы и выходные данные на живой странице. Печатный том ANF, греческий оригинал и вся книга VII не просмотрены.",
+    "Закреплённый HTML и живая веб-редакция — разные цифровые версии. Ни автоматическое извлечение живой страницы, ни совпадение английского инципита не служат критической греческой колляцией. REFERENCE сохранён, RIGHTS_HOLD относится к воспроизведению веб-редакции."
+   ],
+   "secondaryUrl": "https://github.com/augustiniusliang/nicene-trans/blob/587532868ab43097efff5722c947170e7e744537/newadvent/fathers/07157.htm#L170-L178",
+   "rightsBasis": "Исторический текст и перевод Donaldson 1886 г. отделены от фактически прочитанной редакции New Advent / Kevin Knight. Живые страницы называют эту редактуру и copyright New Advent LLC 2026; закреплённое HTML-зеркало содержит copyright Kevin Knight 2009 и не объявлено побайтовой копией живой страницы. Лицензия на правку/HTML не установлена, печатная страница ANF не сопоставлена. В Research — ссылка и собственный пересказ; права на перепечатку веб-текста не подтверждены."
   },
   {
    "id": "SRC-PHOS-SUBTUUM",
@@ -1966,7 +1977,7 @@
     "VIII книга Постановлений и литургия Иакова дают Трисвятое (Ἅγιος, ἅγιος, ἅγιος); в другой части той же литургии — Τρισάγιος ὕμνος",
     "Постановления датируются IV или V веком, вероятнее IV; по Брайтману, составлены в Антиохии или её окрестностях"
    ],
-   "limits": "Страница открывалась, но целиком не прочитана: перечень гимнов получен из развёрнутой поисковой выдачи, а не с самой страницы. Записано как LINK_ONLY намеренно. Фундамент отрицательного вывода — не этот источник, а собственное чтение ANF (книги VII и VIII); Мессенджер служит независимым подтверждением. Уровень C, 1942 г.; греческий текст Постановлений не сличался."
+   "limits": "Страница целиком не прочитана: перечень гимнов получен из развёрнутой поисковой выдачи, не из собственного чтения главы. LINK_ONLY и класс C сохранены. Это направление для чтения Messenger, не независимая проверка греческого текста или истории ошибки. Узкий отрицательный результат по VII.47–49 и VIII.34–37 опирается на отдельное чтение Donaldson / New Advent; прежняя формулировка «независимое подтверждение» этим источником отозвана."
   },
   {
    "id": "SRC-PHOS-BASIL-DATE",
