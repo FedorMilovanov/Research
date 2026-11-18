@@ -182,6 +182,10 @@
   - **Слой:** по предисловию CO 2 курсив = 1559 г. Ключевая фраза «carnem quam a nobis accepit, obtulisse in sacrificium» — вероятно 1559 г. (признак курсива по OCR).
   - **«В более поздних комментариях»** — `CHRONOLOGY_PARTIAL`: верно для сн. 12, вероятно неверно для сн. 11.
   - Вердикты S1–S5 не меняются. Документ: REPASS, §20.
+- **раунд 98 (2026-11-17, AGENT 2):** §3 (S196), новый §4.181 (Q177): II.12.3 (сн. 11) по CO 1 (текст 1539–1554 гг.); уточнение к §4.180.
+  - **Первая часть цитаты** — 1539 г. по существу (переписана в 1559 г.). **Ключевая фраза** «carnem quam a nobis accepit, obtulisse in sacrificium» — 1559 г., установлено прямым сличением (SUPPORTED).
+  - **«В более поздних комментариях»** — `CHRONOLOGY_PARTIAL` повышен с PROBABLE до SUPPORTED.
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §21.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -540,6 +544,7 @@
 | S193 *(раунд 95, 2026-11-17)* | L. Boettner, *The Reformed Faith* — PDF по URL сн. 70 статьи (`monergism.com/thethreshold/sdg/boettner/The_Reformed_Faith_-_Loraine_Boettner.pdf`), разделы «Christ's Atonement» и о Божьей справедливости: «a Person of infinite value, amply sufficient to save all men had God so desired it»; «high efficiency… wide extension… universal salvation»; «punishing their sins twice, once in Christ, and then again in them… the Holy Spirit would invariably bring them to faith and repentance»; «a just equivalent for all that His people would have suffered in an eternity in hell»; «by-pass for their willing continuance in sin». Грудем (сн. 71) — не открыт (IA `systematictheolo00grud_0`: «not available»). | B (без печатной пагинации; `RIGHTS_HOLD` — только краткие цитаты) |
 | S194 *(раунд 96, 2026-11-17)* | (а) *Ioannis Calvini Institutio religionis christianae… triplici forma*, ed. Baum, Cunitz, Reuss (Brunsvigae: Schwetschke, 1869 = CO 2, текст 1559 г.), IA `ioanniscalvinii00cunigoog` (d1 `ia800400`, dir `/5/items/…`): лл. 483–484 = col. 946–948 (IV.14.7). (б) *Joannis Calvini opera selecta*, ed. P. Barth, vol. I (München, 1926), *Institutio* 1536, гл. IV, IA `joanniscalviniop0001calv` (d1 `ia601803`, dir `/17/items/…`): лл. 136–137 (пагинация 1536 г. [103]–[104]): «Qualiter omnibus in salutem oblatus a patre ac propositus est Christus, non tamen ab omnibus agnitus exceptusque est». | (а), (б) A1 |
 | S195 *(раунд 97, 2026-11-17)* | CO 2 (*Institutio… triplici forma*, ed. Baum, Cunitz, Reuss, 1869), IA `ioanniscalvinii00cunigoog`: л. 8 — предисловие («postrema additamenta… typis cursivis sive italicis… excudenda curaremus»); лл. 181–182 = col. 342–343 (II.12.1–3: «ut carnem nostram in satisfactionis pretium iusto Dei iudicio sisteret»; «communem naturam pignus esse nostrae cum filio Dei societatis… carnem quam a nobis accepit, obtulisse in sacrificium…»). Контроль: OS I (1536), поиск «a nobis accepit» — 0. | A1 (определение слоя 1559 г. — по признаку курсива через OCR, визуально не проверено) |
+| S196 *(раунд 98, 2026-11-17)* | CO 1 = CR 29 (*Ioannis Calvini Opera quae supersunt omnia*, t. I, ed. Baum, Cunitz, Reuss; Brunsvigae: Schwetschke, 1863; репринт Johnson), IA `operaquaesupersu0029calv` (`ia803102`, dir `/14/items/…`): л. 54 — предисловие к CO 2 (романский шрифт = 1550–1554, курсив = новое 1559 г.); л. 65 — предисловие к тексту 1539–1554 гг. (романский = 1539, курсив = 1543/1545, мелкий = 1550/1553/1554); лл. 325–326 = col. 517–520 (cap. VII (IV) «Symboli explicatio», §8–§12; §10: «Prodiit ergo verus homo… ut carnem nostram in satisfactionem iusto Dei iudicio statueret ac sisteret, ut in eadem carne peccati poenam persolveret»; §11 — о манихеях). Поиск по тому: «debellasse» — 0; «a nobis accepit» — нет. | A1 |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8096,8 +8101,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.178 | Q174 | Бёттнер, *The Reformed Faith* (сн. 70): пересказ довода — ACCURATE; «слабая форма» — `STRAWMAN` (мягко); «усиленная форма» — уже у Бёттнера; ответ статьи не задевает форму с неизбежным применением — `MISIDENTIFIED_TARGET` распространён на сн. 70; Грудем — HOLD (р. 95) |
 | 4.179 | Q175 | «Наставление» IV.14.7 (сн. 12) по латыни 1559 и 1536 гг.: ACCURATE; особенности русского перевода («oblatus» опущено). Фраза — уже 1536 г., поэтому «в более поздних комментариях» верно; `CHRONOLOGY_UNSUPPORTED` §4.177 снят (р. 96) |
 | 4.180 | Q176 | «Наставление» II.12.3 (сн. 11) по латыни CO 2: ACCURATE; в русском переводе «carnem nostram» → «своё тело»; ключевая фраза — вероятно слой 1559 г. (курсив CO 2), поэтому «в более поздних комментариях» — `CHRONOLOGY_PARTIAL` (р. 97) |
+| 4.181 | Q177 | II.12.3 (сн. 11) по CO 1 (1539–1554): первая часть — 1539 г., ключевая фраза — 1559 г. (SUPPORTED); `CHRONOLOGY_PARTIAL` повышен до SUPPORTED; метод курсива CO 2 подтверждён (р. 98) |
 
-⇒ разделов с `Q` — **173**, разделов §4.x — **175**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **174**, разделов §4.x — **176**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -9190,6 +9196,24 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 5. **Метод.** Слой цитаты из «Наставления» определяется по CO 1–2: курсив CO 2 = 1559 г., текст 1539–1554 гг. — CO 1. Год издания, которым пользуется статья, для этого не годится.
 
 **Чего нет.** Визуальная проверка курсива; CO 1 (текст 1539–1554 гг.); русский том РГГУ.
+
+> **Уточнение (раунд 98, 2026-11-17; §4.181, S196).** CO 1 прочитан: ключевая фраза сн. 11 отсутствует в тексте 1539–1554 гг., первая часть цитаты есть уже в 1539 г. Слой 1559 г. установлен (SUPPORTED); `CHRONOLOGY_PARTIAL` — SUPPORTED. Пометки PROBABLE и «Чего нет: CO 1» выше сохранены как HISTORICAL.
+
+Вердикты S1–S5 не меняются.
+
+### 4.181. Q177 — «Наставление» II.12.3 (сн. 11) по CO 1: текст 1539–1554 гг.; слой ключевой фразы (раунд 98, 2026-11-17)
+
+**Повод.** §4.180 определил слой ключевой фразы сн. 11 как «вероятно 1559 г.» только по признаку курсива в OCR CO 2; CO 1 оставался в HOLD. Полная таблица — REPASS-документ, §21. Источники — S196.
+
+**Ответы.**
+1. **CO 1 найден и прочитан** (col. 517–520, §8–§12 главы «Symboli explicatio» редакций 1539–1554 гг.). По предисловию издателей (л. 65) прямой шрифт там — 1539 г., курсив — 1543 г., мелкий шрифт — 1550–1554 гг.
+2. **Первая часть цитаты — 1539 г. по существу.** §10: «Prodiit ergo verus homo, Dominus noster, Adae personam induit, nomen assumpsit, ut patri se obedientem pro eo exhiberet, ut carnem nostram in satisfactionem iusto Dei iudicio statueret ac sisteret, ut in eadem carne peccati poenam persolveret». В 1559 г. формулировки переписаны («ut eius vices subiret patri obediendo», «in satisfactionis pretium», «poenam quam meriti eramus»); русский перевод идёт по 1559 г.
+3. **Ключевая фраза — 1559 г. (SUPPORTED).** В тексте 1539–1554 гг. за §10 сразу следует §11 о манихеях и маркионитах. Фраз «communem naturam pignus… debellasse mortem cum peccato… carnem quam a nobis accepit, obtulisse in sacrificium» нет ни в одном из трёх слоев CO 1; поиск по тому подтверждает («debellasse» — 0).
+4. **Калибровка §4.180.** Места CO 2 с искажениями OCR, характерными для курсива, совпали ровно с формулировками, которых нет в CO 1. Правило «курсив CO 2 = 1559 г.» подтверждено также предисловием издателей к CO 2, напечатанным в CO 1 (л. 54).
+5. **«В более поздних комментариях» (сн. 13) — `CHRONOLOGY_PARTIAL`, теперь SUPPORTED** (мягкий по весу). Для сн. 12 — верно (1536 г.). Для сн. 11: мысль о «нашей плоти» перед судом Божьим — 1539 г. (раньше Галатам 1548 г.), а фраза, на которой стоит вывод статьи, — 1559 г. (позже).
+6. **Что не меняется.** Слой 1559 г. не ослабляет цитату — это окончательная редакция Кальвина. Довод статьи об объёме (`NON_SEQUITUR`, §4.175 / REPASS §15) раундом не затронут.
+
+**Чего нет.** Русский том РГГУ (т. 1, с. 465). Визуальная проверка курсива CO 2 для вердикта больше не нужна.
 
 Вердикты S1–S5 не меняются.
 

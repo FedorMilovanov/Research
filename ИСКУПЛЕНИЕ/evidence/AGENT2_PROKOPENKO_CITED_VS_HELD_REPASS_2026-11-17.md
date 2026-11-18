@@ -786,4 +786,39 @@
 - **Метод:** курсив CO 2 = слой 1559 г. (по предисловию издателей). Определение по OCR косвенное.
 - **HOLD:** визуальная проверка курсива на col. 342–343; текст 1539–1554 гг. (CO 1 в сети не найден; скан 1539 г. на IA без текстового слоя); русский том РГГУ.
 
+> **Уточнение (раунд 98, 2026-11-17; §21).** CO 1 найден (IA `operaquaesupersu0029calv`, col. 517–519). В тексте 1539–1554 гг. первая часть цитаты сн. 11 есть уже в 1539 г. (в иной редакции), а вторая, ключевая («carnem quam a nobis accepit, obtulisse in sacrificium»), отсутствует. Слой 1559 г. теперь установлен прямым сличением; `CHRONOLOGY_PARTIAL` — SUPPORTED. Пометки «PROBABLE» и HOLD «CO 1 в сети не найден» выше сохранены как HISTORICAL.
+
+Вердикты S1–S5 не меняются. Умысел не утверждается.
+
+## 21. Раунд 98 (2026-11-17): II.12.3 (сн. 11) по CO 1 — текст 1539–1554 гг.; слой ключевой фразы установлен прямым сличением
+
+**Повод.** В §20 слой 1559 г. для ключевой фразы сн. 11 был выведен косвенно, по признаку курсива в OCR CO 2 (PROBABLE). Текст 1539–1554 гг. (CO 1) оставался в HOLD как «в сети не найден». Найден: CO 1 = CR 29, IA `operaquaesupersu0029calv` (Schwetschke 1863; репринт Johnson; OCR tesseract, качественный).
+
+### 21.1. Источники
+
+- (а) **CO 1, предисловие издателей** (л. 65): «typi ordinarii romani… textui editionis anni **1539** exprimendo destinati sunt; additamenta editionis anni **1543** (quae a. 1545 fere invariata iterum prodiit) typis cursivis sive italicis… expressa sunt; recentiores vero accessiones, editionibus genevensibus annorum **1550, 1553 et 1554** propriis, typis minoribus exarandas curavimus». **Класс A1.**
+- (б) **CO 1, предисловие к CO 2** (л. 54): «quaecunque ex praecedente editione (annorum 1550 ad 1554) repetita in hac ultima servantur, typis ordinariis sive romanis…, additamenta vero nova italicis sive cursivis». Это **независимое подтверждение** правила, на котором стоял §20. **Класс A1.**
+- (в) **CO 1, col. 517–519** (лл. 325–326; колонтитулы «CAP. VII. (IV.) SYMBOLI EXPLICATIO», «INSTITUTIO REL. CHRIST. 1539—1554»), §8–§12 главы об объяснении Символа. **§10** (латынь нормализована по OCR): «Alterum hoc redemptionis nostrae caput erat, ut homo, qui sua se inobedientia perdiderat, suam confusionem obedientia tolleret, iudicio Dei satisfaceret, poenas peccati persolveret. Prodiit ergo verus homo, Dominus noster, Adae personam induit, nomen assumpsit, ut patri se obedientem pro eo exhiberet, ut carnem nostram in satisfactionem iusto Dei iudicio statueret ac sisteret, ut in eadem carne peccati poenam persolveret. Quum denique mortem nec solus Deus sentire, nec solus homo superare posset, humanitatem cum divinitate sociavit… Qui ergo Christum sua aut divinitate, aut humanitate spoliant…». Сразу за ним **§11** — о манихеях и маркионитах («Divinitatem pluribus demonstrare supervacuum…»). **Класс A1.**
+- (г) **Поиск по всему тому CO 1** (`inside.php`): «debellasse» — 0; «pignus» — 4 совпадения, все в других местах (о Церкви, о завете, варианты 1550); среди совпадений «accepit» нет «a nobis accepit». Отрицательный результат по OCR — слабое свидетельство само по себе, но здесь он совпадает с прямым чтением §10–§11 (в).
+
+### 21.2. Сверка
+
+| Место | Тезис статьи | Состоятельность | Факты |
+|---|---|---|---|
+| Сн. 11, первая часть («явился… предоставить… своё тело… претерпеть казнь») | — | ✓ | **Слой 1539 г. по существу.** В CO 1 этот текст набран обычным прямым шрифтом без признаков курсива; межстрочный шаг по координатам OCR (~45 px) тот же, что у окружающего текста (косвенно против мелкого шрифта 1550–1554). Уже в 1539 г.: «carnem **nostram**… iusto Dei iudicio… sisteret». Редакция 1559 г. переписала формулировки: «redemptionis nostrae caput» → «nostrae cum Deo reconciliationis caput»; «suam confusionem obedientia tolleret» → «remedii loco obedientiam opponeret»; «ut patri se obedientem pro eo exhiberet» → «ut eius vices subiret patri obediendo»; «in satisfactionem… statueret ac sisteret» → «in satisfactionis pretium… sisteret»; «peccati poenam» → «poenam quam meriti eramus». Русский перевод («заместить его Собою», «казнь, которую заслужили мы») идёт по тексту 1559 г. |
+| Сн. 11, вторая часть («Воплотившись, Он победил смерть… плоть, которую принял от нас») | Основа вывода статьи об общей природе | ✓ | **Слой 1559 г. — установлен (SUPPORTED).** В тексте 1539–1554 гг. (все три слоя CO 1: 1539, 1543, 1550–1554) за §10 сразу следует §11 о манихеях; фраз «communem naturam pignus esse… carne nostra vestitum debellasse… carnem quam a nobis accepit, obtulisse in sacrificium» нет |
+| Калибровка метода §20 | — | — | Места, которые в OCR CO 2 искажены как курсив («obediefUiam», «paki obedimdo», «commumm… debdlasse… expiatime»), **ровно совпадают** с формулировками, которых нет в CO 1. Метод «курсив CO 2 = 1559 г.» на этом примере подтверждён прямым сличением |
+| С. 4, сн. 13: «в более поздних комментариях… ещё более очевидна» | Хронология | **Частично** | `CHRONOLOGY_PARTIAL` — **теперь твёрдо (SUPPORTED)**, а не PROBABLE. Для сн. 12 — верно (1536 г., §19). Для сн. 11: общая мысль о Христе в нашей плоти и о суде Божьем — 1539 г., то есть **раньше** Галатам (1548); а ключевая фраза, на которой стоит вывод статьи («плоть, которую принял от нас»), — 1559 г., то есть **позже**. Подача «Наставление → более поздние комментарии» для неё обратна действительной хронологии |
+
+**Что из этого не следует.** Слой 1559 г. не ослабляет цитату: это окончательная редакция Кальвина. Довод статьи об объёме (`NON_SEQUITUR`, §15) этим раундом не меняется. Ошибка — только во временной подаче, и она мягкая. Умысел не утверждается.
+
+### 21.3. Итог раунда 98
+
+- **Новые вердикты:**
+  - сн. 11, слой: первая часть — 1539 г. (переписана в 1559 г.), вторая, ключевая — **1559 г.** (SUPPORTED, A1: прямое сличение CO 1 ↔ CO 2);
+  - «в более поздних комментариях» — `CHRONOLOGY_PARTIAL` повышен с PROBABLE до SUPPORTED (мягкий вердикт по весу).
+- **Метод:** правило курсива CO 2 подтверждено и предисловием (CO 1, л. 54), и сличением текста.
+- **Снято из HOLD:** CO 1 (текст 1539–1554 гг.). Визуальная проверка курсива CO 2 больше не нужна для вердикта (остаётся как желательная).
+- **HOLD:** русский том РГГУ, т. 1, с. 465.
+
 Вердикты S1–S5 не меняются. Умысел не утверждается.
