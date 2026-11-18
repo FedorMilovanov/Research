@@ -274,6 +274,30 @@
       ],
       "tests": "python3 -B -m unittest discover -s scripts -p 'test_verify_internal_digests.py' → 24 OK"
     }
+
+    ,{
+      "id": "HCR-2026-11-18-11",
+      "axis": "twin documents: one text under two names",
+      "method": "document-twin-shingles",
+      "closedOn": "2026-11-18",
+      "state": "closed-with-open-item",
+      "question": "Есть ли в корпусе один и тот же документ под двумя именами, и объявлено ли это?",
+      "finding": "На уровне сходства >= 0.5 найдено 12 пар среди 2 385 документов, все внутри одного корпуса. Три пары дословно совпадают; две объявлены в мастер-индексе («дубль файла 08», «дубль файла 14»), третья — 13_ADVERSARIAL_AND_LIBERAL_READINGS_DOSSIER.md и 24_ADVERSARIAL_AND_LIBERAL_READINGS_2026-08-09.md — стоит в индексе как самостоятельный PASS-1 без пометки.",
+      "evidence": "data/document-twins-2026-11-18.json (schema document-twins/1)",
+      "closedScope": "Скрытого дублирования между корпусами на сходстве >= 0.5 нет: все 12 пар лежат в 1 Кор. 11, «Обратной стороне кафедры» и STEVE_LAWSON. Пары-надмножества (04⊂30, 10⊂29, v0_5⊂v0_6) объявлены как supplement или поколения.",
+      "notClosed": "Пара 13↔24 не объявлена в мастер-индексе — открытый пункт владельцу лана: инструмент не правит чужую карту.",
+      "limits": [
+        "Сходство — перекрытие слов, не смысла: пересказ не ловится, общий блок цитат может сблизить разные документы.",
+        "Совпадение байтов подтверждает копию, но не говорит, какая копия каноническая.",
+        "--check не подключён в CI: сегодня он падал бы на необъявленной дословной паре, а это решение владельца индекса."
+      ],
+      "commands": [
+        "python3 -B scripts/audit_document_twins.py --summary",
+        "python3 -B scripts/audit_document_twins.py -o data/document-twins-2026-11-18.json",
+        "python3 -B -m unittest discover -s scripts -p 'test_audit_document_twins.py'"
+      ],
+      "tests": "python3 -B -m unittest discover -s scripts -p 'test_audit_document_twins.py' → 8 OK"
+    }
   ],
   "confirmations": [
     {
@@ -330,7 +354,7 @@
       "method": "section-anchor-slug-check",
       "verification": {
         "command": "python3 -B scripts/audit_relative_links.py --summary",
-        "expect": "2 416 файлов; resolves=2 854, missing=58, missing-anchor=0, external=5 974; --strict → 0 необъяснённых",
+        "expect": "2 416 файлов; resolves=2 855, missing=58, missing-anchor=0, external=5 974; --strict → 0 необъяснённых",
         "tests": "python3 -B -m unittest discover -s scripts -p 'test_audit_relative_links.py' → 27 OK"
       },
       "limits": [

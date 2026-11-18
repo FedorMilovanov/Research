@@ -27,6 +27,9 @@ on:
       - 'scripts/verify_internal_digests.py'
       - 'scripts/test_verify_internal_digests.py'
       - 'data/internal-digests-verified-2026-11-18.json'
+      - 'scripts/audit_document_twins.py'
+      - 'scripts/test_audit_document_twins.py'
+      - 'data/document-twins-2026-11-18.json'
       - 'data/text-integrity-repairs-2026-11-18.json'
       - 'data/hold-closure-registry-v1.json'
       - 'docs/research/HOLDS_REGISTER_2026-11-18.md'
@@ -57,6 +60,9 @@ on:
       - 'scripts/verify_internal_digests.py'
       - 'scripts/test_verify_internal_digests.py'
       - 'data/internal-digests-verified-2026-11-18.json'
+      - 'scripts/audit_document_twins.py'
+      - 'scripts/test_audit_document_twins.py'
+      - 'data/document-twins-2026-11-18.json'
       - 'data/text-integrity-repairs-2026-11-18.json'
       - 'data/hold-closure-registry-v1.json'
       - 'docs/research/HOLDS_REGISTER_2026-11-18.md'
@@ -98,6 +104,7 @@ jobs:
           python3 -B -m unittest discover -s scripts -p 'test_hold_closure_registry.py' -v
           python3 -B -m unittest discover -s scripts -p 'test_audit_text_integrity.py' -v
           python3 -B -m unittest discover -s scripts -p 'test_verify_internal_digests.py' -v
+          python3 -B -m unittest discover -s scripts -p 'test_audit_document_twins.py' -v
       - name: Scan (must not touch the working tree)
         run: |
           python3 scripts/audit_repository_holds.py -o /tmp/holds-a.json
@@ -116,6 +123,11 @@ jobs:
         run: python3 -B scripts/audit_text_integrity.py --check
       - name: Reject stale digests in live documents
         run: python3 -B scripts/verify_internal_digests.py --check
+      # Reported, not gated: one byte-identical pair currently carries no declaration,
+      # and that is an open item for the lane owning its master index. A red gate here
+      # would invite the tool to edit somebody's index instead of reporting it.
+      - name: Count document twins (report only)
+        run: python3 -B scripts/audit_document_twins.py --summary
       - name: Check publication gate queue composition
         run: python3 -B scripts/publication_gate_status.py --check
       - name: Report counts without asserting closure
