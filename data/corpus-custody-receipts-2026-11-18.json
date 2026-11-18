@@ -873,6 +873,133 @@
       "Права доступа могут измениться в любой момент после этой проверки; значения сняты 2026-11-18.",
       "Открытость источника (DBNL, archive.org) и открытость нашего хранилища — разные вещи; запись только про наше хранилище.",
       "Карантинные папки проверены как папки; их содержимое отдельно не перепроверялось — кроме двух объектов, у которых уже сняты квитанции в §5 и §6."
-    ]
+    ],
+    "ancestors": {
+      "question": "Может ли доступ прийти сверху: унаследован ли объект от расшаренного предка?",
+      "method": "get_file(fields=parents) от каждой папки семейства до корня, затем list_permissions на каждом предке",
+      "checkedAt": "2026-11-18",
+      "chain": [
+        {
+          "name": "00 — GITHUB PROJECTS — FedorMilovanov",
+          "id": "1nDRnR-zd86qhgsGt6_ycPDu1F-2E_abH",
+          "permissions": [
+            {
+              "type": "user",
+              "role": "owner",
+              "email": "oldpoet2025@gmail.com"
+            }
+          ],
+          "anyone": false,
+          "domain": false
+        },
+        {
+          "name": "02 — TheLegendaryPoet — САЙТ О ПОЭТАХ",
+          "id": "15GOHglfgGwORn_mM9YqSfKJvLfXDu4Vu",
+          "permissions": [
+            {
+              "type": "user",
+              "role": "owner",
+              "email": "oldpoet2025@gmail.com"
+            }
+          ],
+          "anyone": false,
+          "domain": false
+        },
+        {
+          "name": "01 — SOURCES — PDF LIBRARY",
+          "id": "1-A9Rk7TqAPKbWDl0OzvpL6uFOog3cPQR",
+          "permissions": [
+            {
+              "type": "user",
+              "role": "owner",
+              "email": "oldpoet2025@gmail.com"
+            }
+          ],
+          "anyone": false,
+          "domain": false
+        },
+        {
+          "name": "02 — MEDIA — PORTRAITS & EPHEMERA",
+          "id": "1DvT6JoP2MJ6584km3eqOZYKJfwXIDLFB",
+          "permissions": [
+            {
+              "type": "user",
+              "role": "owner",
+              "email": "oldpoet2025@gmail.com"
+            }
+          ],
+          "anyone": false,
+          "domain": false
+        },
+        {
+          "name": "03 — Research — ИССЛЕДОВАТЕЛЬСКИЙ БЭКЕНД",
+          "id": "1Eb8qglwGIqeJY-02J8eXNpDaQfdkmozs",
+          "permissions": [
+            {
+              "type": "user",
+              "role": "owner",
+              "email": "oldpoet2025@gmail.com"
+            }
+          ],
+          "anyone": false,
+          "domain": false
+        },
+        {
+          "name": "01 — РУССКИЕ БАПТИСТЫ — RESEARCH CORPUS",
+          "id": "1B5i05JKLeb7mA0cOjM9_q7EYQR4qDKpz",
+          "permissions": [
+            {
+              "type": "user",
+              "role": "owner",
+              "email": "oldpoet2025@gmail.com"
+            }
+          ],
+          "anyone": false,
+          "domain": false
+        },
+        {
+          "name": "07 — СЕРИЯ «ИСКУПЛЕНИЕ»",
+          "id": "1VULVPNq4DbBFS5KvBDpSkJOlx4jbEQAV",
+          "permissions": [
+            {
+              "type": "user",
+              "role": "owner",
+              "email": "oldpoet2025@gmail.com"
+            }
+          ],
+          "anyone": false,
+          "domain": false
+        }
+      ],
+      "tree": [
+        "00 — GITHUB PROJECTS — FedorMilovanov (1nDRnR…)",
+        "  02 — TheLegendaryPoet — САЙТ О ПОЭТАХ (15GOHgl…)",
+        "    01 — SOURCES — PDF LIBRARY (1-A9Rk7…) → 01 COMMONS STRICT 40, 02 SECOND EDITORIAL 40",
+        "    02 — MEDIA — PORTRAITS & EPHEMERA (1DvT6Jo…) → портреты 45, эфемериды 63",
+        "  03 — Research — ИССЛЕДОВАТЕЛЬСКИЙ БЭКЕНД (1Eb8qgl…)",
+        "    01 — РУССКИЕ БАПТИСТЫ — RESEARCH CORPUS (1B5i05J…) → 99 — HOLD — DUPLICATES, UNCLEAR & TO REVIEW",
+        "    07 — СЕРИЯ «ИСКУПЛЕНИЕ» (1VULVPN…) → 99 — HOLD — SUPERSEDED MIRRORS",
+        "  99 — QUARANTINE — ТЕСТЫ И НЕОПОЗНАННОЕ (1oZlhSG9…)"
+      ],
+      "extraRootFolder": {
+        "name": "Искупление",
+        "id": "1RBmK2XWQMhFvjL9G3-WnlqAh2o76bX_3",
+        "permissions": [
+          {
+            "type": "user",
+            "role": "owner",
+            "email": "oldpoet2025@gmail.com"
+          }
+        ],
+        "anyone": false,
+        "domain": false
+      },
+      "result": "Семь предков и одна корневая папка «Искупление» — у каждой ровно одно разрешение: владелец. Ни на одном уровне цепочки от корня до объектов нет ни anyone, ни domain, ни второго пользователя.",
+      "limits": [
+        "Проверены только предки перечисленных объектов; остальные ветки «00 — GITHUB PROJECTS» не смотрелись.",
+        "Корень My Drive отдельно не проверялся: у корня нет списка разрешений в том же смысле, что у папки.",
+        "Права предка могут измениться после проверки; значения сняты 2026-11-18."
+      ]
+    }
   }
 }
