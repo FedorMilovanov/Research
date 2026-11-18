@@ -1469,3 +1469,15 @@ HOLD без изменений: CO 49:100, CO 45:706, `PRINT_IMAGE_HOLD`, пра
 | 2 | Сн. 20 | «Почти дословно» — верно для 90 из 160 параграфов (≥ 0.80; совпадающих слов ≥ 69.6 %). «Кроме баптистских особенностей» — `SIMPLIFIED` (мягко): изменены III.3 («left to act in their sin to their just condemnation» вместо «fore-ordained to everlasting death»), VIII.8 («without any condition foreseen in them»), VIII.9–10, XVII.1; гл. XV и XX — из Савойской декларации. Скан 1688 г. (перепечатка, IA), лл. 13, 19, 21, 50 |
 
 **Вердикты S1–S5 не меняются.**
+
+## 65. Раунд 114 (2026-11-17): WCF по печатному скану
+
+Подробности — `34_` §4.197 (Q193), S212; REPASS-документ, §37.
+
+| # | Место | Итог |
+|---|---|---|
+| 1 | WCF III.3, II.3, VIII.1, VIII.5, VIII.8, конец гл. VIII | Сверены по скану изд. 1946 г. (Google Drive, pp. 6, 9, 10). «Foreordained to everlasting death»; «purchased, not only reconciliation»; «purchased redemption» без оговорки о благодати; гл. VIII кончается §8 |
+| 2 | `12_` T-13, REPASS §36 | Расхождения теперь подтверждены сканами обеих сторон (вторая — перепечатка изд. 1688 г., лл. 13, 19, 20, 21). Вердикты прежние |
+| 3 | Google Drive | Книг из списка HOLD нет |
+
+**Вердикты S1–S5 не меняются.**

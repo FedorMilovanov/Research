@@ -1398,3 +1398,33 @@
 - **Сн. 38** — внутренняя отсылка верна. **Сн. 29** — отступление.
 
 Вердикты S1–S5 не меняются. Умысел не утверждается.
+
+## 37. Раунд 114 (2026-11-17): WCF III.3 и гл. VIII по печатному скану; T-13 и §36 подкреплены сканами с обеих сторон
+
+**Повод.** В §36.3 осталась оговорка: «WCF III.3 сверен только по Creeds.json» (класс W). Строка `12_` T-13 (VIII.5, VIII.8) тоже опиралась на цифровой текст WCF. Поиск на Google Drive пользователя книг из списка HOLD (Бокэм, Смолли, Дэниел, Хиберт, Хукема, Шрайнер, Эйкин, Ходжес, Грудем, Лейн, Демарест, BDAG, TDNT, BKC, WBC) ничего не дал. Нашёлся скан WCF.
+
+### 37.1. Источник
+
+- (а) Google Drive пользователя, файл «Westminster Confession of Faith (PD copy).pdf» (id `1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4`, 16 179 601 B, md5 `c992905d7f02a04c8cc33fbf4731529b`; 25 листов, без текстового слоя). Титул: «Tercentenary Edition. The Confession of Faith of the Assembly of Divines at Westminster. London: Publishing Office of the Presbyterian Church of England… Price Sixpence»; в метаданных PDF — «1946 Tercentenary Edition». Печатная страница = лист + 1. Прочитан визуально (рендер страниц). Класс A2 (печатное издание XX в. текста 1647 г.). В репозиторий не добавлен.
+- (б) Скан издания 1688 г. (§36.1 (а)), `inside.php`, поиск «reconciliation».
+
+### 37.2. Сверка
+
+| Место | WCF, скан (а) | 1688, скан (б) / §36 | Итог |
+|---|---|---|---|
+| III.3 | p. 6 (л. 5): «By the decree of God, for the manifestation of His glory, some men and angels are predestinated unto everlasting life; and others **foreordained to everlasting death**.» | л. 13: «others being left to act in their sin to their just condemnation» | Расхождение **подтверждено сканами с обеих сторон**. Оговорка §36.3 снята |
+| II.3 | p. 6 (л. 5): короткая формула («three persons, of one substance, power, and eternity… the Holy Ghost eternally proceeding from the Father and the Son») | расширенная формула (Creeds.json) | Расширение в 1689 г. подтверждено со стороны WCF |
+| VIII.1 | p. 9 (л. 8): «to choose and ordain the Lord Jesus, His only begotten Son, to be the Mediator…» — **без** «according to a covenant made between them both» | л. 19: с этой оговоркой | Подтверждено |
+| VIII.5 | p. 10 (л. 9): «hath fully satisfied the justice of His Father; and **purchased, not only reconciliation, but an everlasting inheritance** in the kingdom of heaven, for all those whom the Father hath given unto Him» | л. 20 (OCR): «[p]rocured reconciliation, and… an everlasting inheritance in the kingdom of heaven, for all [t]hose whom the Father hath [given unto H]im» | T-13 **подтверждена по сканам** |
+| VIII.8 | p. 10 (л. 9): «To all those for whom Christ hath **purchased redemption**… in such manner, and ways, as are most consonant to His wonderful and unsearchable dispensation.» — конец параграфа, оговорки о благодати нет | л. 21: «obtained eternal redemption… and all of free, and absolute grace, without any condition foreseen in them, to procure it» | Подтверждено |
+| Объём гл. VIII | p. 10: после §VIII — сразу «Chapter IX. Of Free-Will» | л. 21: §§9–10 | VIII.9–10 — добавка 1677 г., подтверждено |
+
+*Попутно:* на p. 9 рядом с VII.6 — рукописная помета прежнего владельца «cf 20:1»; к тексту исповедания не относится.
+
+### 37.3. Итог раунда 114
+
+- Все текстовые расхождения, на которых стоят `12_` T-13 и §36 (III.3, VIII.1, VIII.5, VIII.8, VIII.9–10), теперь сверены по печатным сканам **обеих** сторон (WCF — изд. 1946 г.; Второе Лондонское — перепечатка изд. 1688 г.). Вердикты не меняются: T-13 — `DIRECT_TEXTUAL_VARIANT`; сн. 20 — `SIMPLIFIED` (мягко).
+- **Google Drive:** книг из списка HOLD там нет. Список HOLD — как в §36.4.
+- Не сделано: пересчёт *redeem/redemption* (V1) по скану (а) — без OCR это потребовало бы ручного чтения 25 страниц; прежний счёт V1 не оспаривается.
+
+Вердикты S1–S5 не меняются. Умысел не утверждается.
