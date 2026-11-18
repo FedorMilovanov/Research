@@ -241,6 +241,10 @@
   - PDF статьи: 112 сносок, 69 позиций библиографии (61 печатная + 8 электронных) — все процитированы; не внесены: сн. 11, 76, 1 — `BIBLIOGRAPHY_INCOMPLETE` (мягко). «Сн. 114–120» — артефакт поиска.
   - Бокэм «1998», Смолли «1989», Вюст «1997» — метаданные Logos (печать WBC 50/51 — 1983/1984) — `ELECTRONIC_EDITION_UNMARKED` (мягко); Лайтфут «8th ed., 1886» — реальная перепечатка. *Expiation* в сн. 75/76 — `INTERNAL_INCONSISTENCY` (мягко).
   - Вердикты S1–S5 не меняются. Документ: REPASS, §35.
+- **раунд 113 (2026-11-17, AGENT 2):** §3 (S211), новый §4.196 (Q192): карта покрытия сн. 1–112; сн. 20.
+  - Без упоминаний оставались сн. 20, 29, 38, 63, 100 — теперь у всех есть статус (63, 100 — HOLD; 29 — отступление; 38 — верная внутренняя отсылка).
+  - Сн. 20: «почти дословно» верно для большинства параграфов; «кроме баптистских особенностей» — `SIMPLIFIED` (мягко): III.3, VIII.8–10, XVII.1, гл. XV и XX (Савойская) по скану 1688 г.
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §36.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -614,6 +618,7 @@
 | S208 *(раунд 110, 2026-11-17)* | (1) Th. Scott, *Remarks on the Refutation of Calvinism*, vol. I (London: C. Baldwin / L. B. Seeley, 1811), IA `remarksonrefuta00tomlgoog`: предисловие, p. xiii. (2) Th. Scott, *Remarks…*, 2nd ed. (London, 1817), IA `a608278200scotuoft`: л. 18 = p. xiv; л. 771 = p. 747; оглавление. (3) Erasmus, *In Novum Testamentum Annotationes* (Basel: Froben, 1535), IA `ARes162052`, `_djvu.txt`, чанки 249–250 (Кол. 1:19–20, p. 635). | A1 (OCR) |
 | S209 *(раунд 111, 2026-11-17)* | (1) W. Cunningham, *Historical Theology*, vol. II (Edinburgh: T. & T. Clark, 1863), IA `historicaltheolo02cunnuoft` (`ia600104`, `/14/items/historicaltheolo02cunnuoft`): `_djvu.txt`, чанки 140–143 = pp. 372–383; `inside.php` q=«Gomarus» (листы 385, 401, 447 = pp. 373, 389, 435), q=«Remonstrance» (лист 396 = p. 384), q=«Dort» (оглавление: «Synod of Dort … 379»); `page_numbers.json`: лист 391 = p. 379. (2) Collins English Dictionary, онлайн, s.v. *atonement*, *redemption* (просмотр 2026-11-17) | A1 (Каннингем, OCR); B1/C (Коллинз, текущая онлайн-редакция) | **p. 373:** «much contention between him and his colleague, Gomarus, who was a learned and zealous defender of Calvinism»; «He died in 1609. After his death, Episcopius was considered the head of the party»; «The followers of Arminius, in 1610, presented a remonstrance… under five heads or articles». **pp. 373–374:** «in November 1618, a national synod was held at Dort»; «sat for about six months». **p. 379–380:** «Sec. II. — Synod of Dort»: общая оценка; «unanimously determined against the innovations of Arminius and his followers». **p. 384:** пять статей «determined… the form in which the whole subject was afterwards discussed». **p. 435:** «Gomarus, the colleague and opponent of Arminius». **Коллинз, atonement:** «1. satisfaction, reparation, or expiation given for an injury or wrong»; «2a. the reconciliation of humankind with God…»; «4. obsolete: reconciliation or agreement»; «C16: from Middle English phrase at onement in harmony». **redemption:** «3b. atonement for guilt»; «Latin redemptiō a buying back» | изд. 1882 г. (на него ссылается статья) не видено; визуальная сверка не проводилась |
 | S210 *(раунд 112, 2026-11-17)* | (1) PDF статьи А. Прокопенко «За кого умер Христос» (Google Drive `1ZlmUe1PfCeZFAB2aZjjLcx7R7s3stWQo`, 40 с.; текстовый слой, `pypdf`): сн. 1–112 (с. 1–35), библиография (с. 36–40). (2) Open Library `search.json`: WBC 50 (Bauckham) — first_publish_year 1983; WBC 51 (Smalley) — 1984. (3) Формат цитат электронных изданий Logos: форум Logos (Bauckham, «Dallas: Word, Incorporated, 1998»); цитаты Smalley «(1989)… Dallas: Word, Incorporated»; Wuest «Eerdmans, 1997, c1984»; карточка продукта Logos (Lightfoot, «8th ed.», серия «Classic Commentaries on the Greek New Testament», «Logos Release Date: 2004») | A1 (статья); B1 (каталог); C (цитаты Logos) | Не внесены в библиографию: сн. 11 (Calvin, *Sermons on the Saving Work of Christ*, Solid Ground 2011), сн. 76 (Collins), сн. 1 (URL tms.edu, dispensationalpublishing.com). Оформление: «P. 240» в записи Бокэма; «(2.12)» в записи *Наставления*; Джабалла без издательства; «BDAG» (сн. 108) без расшифровки. Сн. 75: «expiation (удаление вины)» ↔ сн. 76: «компенсация» | страницы Logos не сверены с печатью; Бокэм, BDAG, Бюксель, Шрайнер, Смолли, Дэниел — HOLD |
+| S211 *(раунд 113, 2026-11-17)* | (1) Скан IA `per_early-baptist_a-confession-of-faith-_john-ripon_1689` (микрофильм, 51 л.; титул «PRINTED AT LONDON, 1688», объявление о подписке — вероятно, перепечатка Риппона; `inside.php`): л. 13 — III.3 «others being left to act in their sin to their just condemnation»; л. 19 — VIII.1 «according to the covenant made between them both»; л. 21 — VIII.8 «without any condition foreseen in them, to procure it», VIII.9–10; л. 50 — оглавление с главой «Of the Gospel, and of the Extent of the Grace thereof». (2) Creeds.json (`NonlinearFruit/Creeds.json`, HEAD `2ae21a4`): WCF 1647, 1689 LBCF, Savoy 1658 — пословное сравнение всех 160 параграфов 1689 г. (3) Schaff, *Creeds* III, `creedsofchriste03scha` (`inside.php`): «just condemnation» — только Нью-Гэмпширское исповедание; «condition foreseen» — 0 | A2 (скан перепечатки 1688 г.); W (Creeds.json); A1 (отрицательный поиск в Шаффе) | 160 параграфов: ≥ 0.95 — 32, 0.80–0.95 — 58, 0.50–0.80 — 36, < 0.50 — 34; совпадающих слов 69.6 % (нижняя граница); 49 параграфов ближе к Савойской декларации | дата скана не установлена; WCF III.3 — только по Creeds.json; нормализация орфографии неполная |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8186,8 +8191,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.193 | Q189 | Скотт: *Remarks* 1811, p. xiii — «not answerable for… the Synod of Dort» (`CHRONOLOGY_PARTIAL` подтверждён); 1817, p. 747 — мотив перевода; Стюарт «xiv» и прим. 23 — по 1817 г.; Эразм, *Annotationes* (1535) к Кол. 1:20 — «erga se», `OVERSTATEMENT` подтверждён (р. 110) |
 | 4.194 | Q190 | Сн. 78: Каннингем (1863), pp. 373, 435 — Гомар противник Арминия, Ремонстрация 1610 г. от его последователей (`SOURCE_CONTRADICTS_CLAIM`); pp. 379–380 — общая оценка синода (`LOCATOR_IMPRECISE`, мягко). Сн. 76: Коллинз — цитата EXACT, пара «цена / результат» словарём не поддержана (`SELECTIVE_CITATION`, мягко) (р. 111) |
 | 4.195 | Q191 | Аппарат статьи: 112 сносок ↔ 69 позиций библиографии (61 печатная + 8 электронных); не внесены сн. 11, 76, 1 (`BIBLIOGRAPHY_INCOMPLETE`, мягко); годы Бокэма, Смолли, Вюста — метаданные Logos (`ELECTRONIC_EDITION_UNMARKED`, мягко); *expiation* в сн. 75/76 (`INTERNAL_INCONSISTENCY`, мягко) (р. 112) |
+| 4.196 | Q192 | Карта покрытия сн. 1–112 (без упоминаний были 20, 29, 38, 63, 100); сн. 20: Второе Лондонское «почти дословно, кроме баптистских особенностей» — `SIMPLIFIED` (мягко): III.3, VIII.8–10, XVII.1, гл. XV, XX (р. 113) |
 
-⇒ разделов с `Q` — **188**, разделов §4.x — **190**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **189**, разделов §4.x — **191**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -9522,6 +9528,25 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 6. **Сн. 99** — авторское отступление без источника, вне предмета статьи; не оценивается.
 
 **Чего нет.** Бокэм p. 240; BDAG p. 14; Бюксель pp. 125–126; Шрайнер p. 329; Смолли p. 40; Дэниел pp. 37–38, 55 — в открытом доступе нет. Совпадение страниц Logos с печатью не проверено.
+
+Вердикты S1–S5 не меняются.
+
+### 4.196. Q192 — Карта покрытия сносок; сн. 20: «почти дословно, кроме баптистских особенностей» (раунд 113, 2026-11-17)
+
+**Повод.** Проверить, какие сноски статьи корпус ещё не затрагивал, и закрыть доступные. Полные таблицы — REPASS-документ, §36. Источники — S211.
+
+**Ответы.**
+1. **Покрытие.** Из 112 сносок без упоминаний оставались сн. 20, 29, 38, 63, 100. Сн. 29 — авторское отступление; сн. 38 — верная внутренняя отсылка (раздел «Терминологические различия», с. 23); сн. 63 (Хиберт, с. 97) и сн. 100 (Хукема, с. 360) — HOLD.
+2. **Сн. 20, «почти дословно».** Для большей части текста верно: из 160 параграфов 1689 г. 90 имеют сходство с WCF ≥ 0.80; совпадающих слов не меньше 69.6 %. Но 49 параграфов ближе к Савойской декларации, а гл. XV и XX взяты из неё.
+3. **Сн. 20, «кроме баптистских особенностей».** Неверно как исчерпывающее описание. По скану 1688 г.:
+   - III.3: вместо «fore-ordained to everlasting death» — «left to act in their sin to their just condemnation»;
+   - VIII.8: добавлено «without any condition foreseen in them»;
+   - VIII.9–10: новые параграфы;
+   - XVII.1 расширен.
+   Это вероучительные, а не баптистские изменения — `SIMPLIFIED` (мягко).
+4. **Направление изменений** — к частности (III.3, VIII.8, XV.1 «Such of the Elect», XX.1 «the means of calling the Elect»). Это дополняет `12_` T-13 и REPASS §14.
+
+**Чего нет.** Датированный экземпляр 1677 или 1689 г. (скан — перепечатка издания 1688 г.); WCF III.3 по скану 1647 г.; Хиберт с. 97; Хукема с. 360.
 
 Вердикты S1–S5 не меняются.
 
