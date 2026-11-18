@@ -56,6 +56,11 @@ INFORMATIONAL = [
         ROOT,
         ["python3", "-B", "scripts/audit_hold_coverage_gaps.py", "--no-holds-field"],
     ),
+    (
+        "HOLD назван прозой, а не полем",
+        ROOT,
+        ["python3", "-B", "scripts/audit_prose_holds.py"],
+    ),
 ]
 
 
