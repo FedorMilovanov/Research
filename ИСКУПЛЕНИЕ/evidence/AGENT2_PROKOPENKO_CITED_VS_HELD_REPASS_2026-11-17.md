@@ -640,3 +640,45 @@
   - печатные страницы скана Беркхофа.
 
 Вердикты S1–S5 не меняются. Умысел не утверждается.
+
+## 17. Раунд 94 (2026-11-17): Кальвин на Гал. 5:12 (с. 4, сн. 14) — латынь; Рим. 5:17–18; заключение (с. 35–36) против основной части
+
+**Повод.** Цитата Кальвина на Гал. 5:12 до сих пор была сверена только по английскому переводу CCEL (`01_` R05, `06_` §8). Последний непроверенный узел заключения — тезис об «исповеданиях». Ниже — только по первоисточникам, открытым в этой сессии.
+
+### 17.1. Источники
+
+- (а) **J. Calvin, *Opera omnia in novem tomos digesta*, t. VII: *Commentarii in omnes epistolas S. Pauli…*** (Amstelodami: apud J. J. Schipper, 1667), IA `bub_gb_eZ32b3TNqbAC` (Национальная библиотека Неаполя, скан Google). Текст страниц взят через `BookReaderGetTextWrapper` (OCR ABBYY; долгое s распознано как f). **Класс A1** — латинский текст самого Кальвина; поздняя, но не критическая редакция (CO 50 не открыт).
+  - **Гал. 5:12**, л. 322, колонтитул «GALAT. Cap. V. 311»: «Sed talis imprecatio videtur parum congruere mansuetudini Apostolicae. nam ut salvi sint omnes optandum est: non ergo ut quisquam pereat. Respondeo, id verum esse dum homines respicimus: nam omnium salus sine exceptione nobis a Deo commendatur; quemadmodum pro peccatis totius mundi passus est Christus: sed fit interdum ut piae mentes extra hominum considerationem efferantur: dum scilicet intuentur Dei gloriam et Christi regnum. Nam quanto praestantior est Dei gloria hominum salute… ita fit ut… fideles mundi et hominum obliviscantur: ideoque malint totum mundum interire, quam decedere aliquid gloriae Dei» (нормализовано по OCR: «Ime» → «sine», «CnriAui» → «Christus», «pix» → «piae»).
+  - **Рим. 5:17–18**, л. 47: (5:17) «Altera est, quod non ad omnes homines pervenit Christi beneficium, quemadmodum universum suum genus damnatione Adam involvit… ut in participationem gratiae Christi veniamus, in eum inseri nos per fidem oportet»; (5:18) «Communem omnium gratiam facit, quia omnibus exposita est, non quod ad omnes extendatur re ipsa. nam etsi passus est Christus pro peccatis totius mundi, atque omnibus indifferenter Dei benignitate offertur: non tamen omnes apprehendunt». Печатная страница по колонтитулу не распознана.
+- (б) **WCF VIII.5, VIII.8** (Creeds.json, класс B/C): «purchased not only reconciliation, but an everlasting inheritance… for all those whom the Father hath given unto him»; «To all those for whom Christ hath purchased redemption he doth certainly and effectually apply and communicate the same». Ср. `34_` §4.20 (Q18).
+- (в) Текст статьи: с. 4 (Гал. 5:12, сн. 13–14), с. 25–27 (Дорт II.8, WCF III.6), с. 35–36 (заключение).
+
+### 17.2. Гал. 5:12 (с. 4): тезис / логическая форма / состоятельность / факты
+
+| Место | Тезис статьи | Логическая форма | Состоятельность | Факты |
+|---|---|---|---|---|
+| Цитата, с. 4 | «Ведь Бог заповедует нам желать спасения всех без исключения людей, подобно тому как Христос пострадал за грехи всего мира» (сн. 14: рус. пер. Мамсурова, 2007, с. 525) | Цитата как свидетельство | ✓ | **ACCURATE.** Латынь: «omnium salus sine exceptione nobis a Deo commendatur; quemadmodum pro peccatis totius mundi passus est Christus». «Заповедует… желать» чуть сильнее «commendatur» («вверено, поручено нам Богом»), но в пределах перевода. Страница русского перевода не проверена |
+| Рамка цитаты | Начало «Ведь…» передаёт «nam»; предшествующее «Respondeo, id verum esse **dum homines respicimus**» и последующее «sed fit interdum…» опущены | — | Рамка Кальвина относится к нашему долгу желать спасения всех («пока мы смотрим на людей»). Придаточное «quemadmodum… passus est» она не отменяет | **`CONTEXT_OMITTED` (мягко).** Главная формула от этого не меняется; `06_` §8 («всеобщая формула остаётся») подтверждён по латыни |
+| Хронология | «В более поздних комментариях позиция Кальвина по всеобщему искуплению ещё более очевидна» — после цитат из «Наставления» (сн. 11–12: издание, переведённое с 1559 г.) | «Позже → яснее» | Временной довод в аргументе не нужен. Сам тезис «ещё более очевидна» — §14/§15 (`CONTEXT_OMITTED`, вывод Рувендаля); здесь — только хронология | **`CHRONOLOGY_UNSUPPORTED` (мягко).** Комментарий на Галатам впервые вышел в 1548 г., то есть раньше окончательной редакции «Наставления» (1559), из которой цитирует статья. Датировку самого текста IV.14.7 по ранним редакциям этот раунд не проверял |
+| Рим. 5:18 (наш корпус, `01_` R05) | «ещё одно действительное всеобщее высказывание вместе с различением предложения и принятия» | — | ✓ | **Подтверждено по латыни**: «etsi passus est Christus pro peccatis totius mundi… non tamen omnes apprehendunt». В тексте рядом, к ст. 17, Кальвин пишет: «non ad omnes homines pervenit Christi beneficium… in eum inseri nos per fidem oportet». Это баланс в одном месте; статья этот текст не приводит |
+
+### 17.3. Заключение (с. 35–36) против основной части
+
+| Место заключения | Опора в основной части | Итог |
+|---|---|---|
+| «Взгляд неограниченного искупления преобладал… до начала XVII века» | с. 5 | Разобрано в §15 (`OVERGENERALIZATION`: два документа → «преобладающее»); не повторяется |
+| «Многие кальвинистские толкователи… Христос заплатил… эта плата не вменяется, пока он не уверует» | с. 19–23 | Разобрано в §3 (`CONFLATION_AT_CONCLUSION`) и §15 (строка «36»); не повторяется |
+| «**Ключевые кальвинистские исповедания** веры **подчёркивают** неограниченный размер заплаченной цены, даже когда они же указывают на ограниченный результат» | с. 25–27: Дорт II.3 (бесконечная ценность) и II.8; WCF III.6 — только довод от отсутствия слова *atonement* | **`CONCLUSION_EXCEEDS_BODY`.** В основной части «подчёркивание цены» показано лишь для Дорта (II.3–4). О WCF и 2LBC сказано другое: они употребляют *redemption*, а не *atonement* (с. 26–27). Это довод от умолчания, а не «подчёркивание». Более того, WCF VIII.5 относит саму покупку («purchased… for all those whom the Father hath given unto him») к данным Отцом, а VIII.8 связывает покупку с непременным применением (ср. `34_` §4.20). Во множественном числе тезис сильнее того, что статья показала. Смежно — §15, `INTERNAL_TENSION` (с. 5 ↔ 25–26: смена регистра «неограниченного искупления») |
+| «Сублапсарианство позволяет логически согласовать, что Христос умер за всех, но спасены будут лишь избранные» | с. 29–31 | Как описание схемы — ✓ (порядок решений без внутреннего противоречия). Историческая и терминологическая часть — `16_` §3.1, §16 выше |
+| Четыре цели искупления (заместительная, умилостивительная, восстановительная, примирительная) | с. 31–35 | Экзегеза Кол. 1:20 и 1 Ин. 2:2 — вне этого раунда (S2/S4 в аудите) |
+
+### 17.4. Итог раунда 94
+
+- **Новые вердикты по статье:**
+  - Гал. 5:12 — ACCURATE по латыни; рамка «dum homines respicimus» опущена — `CONTEXT_OMITTED` (мягко);
+  - «в более поздних комментариях» — `CHRONOLOGY_UNSUPPORTED` (мягко);
+  - заключение, «ключевые исповедания подчёркивают неограниченную цену» — `CONCLUSION_EXCEEDS_BODY`.
+- **Корпус:** `01_` R05 (Рим. 5:18) и `06_` §8 подтверждены по латыни.
+- **HOLD:** CO 50 (критический текст); с. 525 русского перевода; датировка IV.14.7 по редакциям «Наставления»; печатная страница Рим. 5:18 в издании 1667 г.
+
+Вердикты S1–S5 не меняются. Умысел не утверждается.
