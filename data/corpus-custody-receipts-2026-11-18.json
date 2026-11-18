@@ -1175,6 +1175,23 @@
           "folder": "01 — БАПТИСТ",
           "id": "1fbtu6bbko-ruWMznopxi6nOhFE7-kQ08",
           "parent": "02 — PERIODICALS (17zQ9dAkjJTaZOuy8GWtnnwtc--8hS1_b)"
+        },
+        "workingCopy": {
+          "path": "09 — INBOX — NEW PDF, PHOTOS & MATERIALS\\90 — PROCESSED — AWAITING FINAL PLACEMENT\\2026-07-30 — SINICHKIN PDF WORKING COPY — PROCESSED & EMPTY",
+          "id": "1NW82MDkm1OfLpS3lf5CV0cHMB_jgY6NY",
+          "children": [
+            {
+              "name": "BATCH-0001",
+              "id": "1oqkaSb3sc9RT5IkMjKxG8PB6FDzfS9YW",
+              "objectCount": 0
+            },
+            {
+              "name": "BATCH-0002",
+              "id": "18Kv0vrAHZC7jGv6LAie_wz2tEFuMWzX2",
+              "objectCount": 0
+            }
+          ],
+          "note": "Партия не исчезла бесследно: рабочая копия СИНИЧКИНА есть, в двух партиях, и обе пусты — файлы вынуты после раскладки. Имя папки само это и говорит: PROCESSED & EMPTY."
         }
       },
       "verifiedDuplicates": [
@@ -1222,8 +1239,98 @@
       "limits": [
         "Сверены пять пар из порядка 90 PDF экспорта — выборка первых по порядку имён, не случайная.",
         "Строки журнала не считались и с диском не сверялись построчно: журнал прочитан на первые ~3 КБ.",
-        "Папка 01 — БАПТИСТ не пересчитана: список отдаётся страницами, total_count равен размеру страницы."
+        "Папка 01 — БАПТИСТ не пересчитана: список отдаётся страницами, total_count равен размеру страницы.",
+        "Куда именно вынуты файлы из BATCH-0002, не проверялось: сверены только пять пар BATCH-0001."
       ]
     }
+  },
+  "corpusSectionsNotInLedger": {
+    "checkedAt": "2026-11-18",
+    "corpus": {
+      "id": "1B5i05JKLeb7mA0cOjM9_q7EYQR4qDKpz",
+      "name": "01 — РУССКИЕ БАПТИСТЫ — RESEARCH CORPUS",
+      "childFolders": 12
+    },
+    "inLedger": [
+      "00 — INDEX, ROADMAP & MASTER CATALOG",
+      "01 — PDF LIBRARY",
+      "02 — PERIODICALS",
+      "99 — HOLD"
+    ],
+    "notInLedger": [
+      {
+        "section": "03 — PRIMARY SOURCES — DOCUMENTS, LETTERS & LAWS",
+        "id": "1EB6Y0Ho1RHjKfkMbKfItxoIoUA0SBQHx",
+        "childFolders": 9,
+        "defect": "две параллельные нумерации: 01–05 (съезды, дом Евангелия, церковные документы, пресса) и 01–03 (законы, письма, дневники); номер раздела перестаёт задавать порядок"
+      },
+      {
+        "section": "04 — PEOPLE, CHURCHES & ORGANIZATIONS",
+        "id": "1PhEduUYKutHTsf3HaPJfngG15aWaef20",
+        "childFolders": 4,
+        "children": [
+          "01 — PEOPLE — BIOGRAPHIES & NAME AUTHORITY",
+          "02 — CHURCHES & LOCAL COMMUNITIES",
+          "03 — UNIONS, MISSIONS & ORGANIZATIONS",
+          "04 — PLACES, REGIONS & MAPS"
+        ]
+      },
+      {
+        "section": "05 — PHOTO ARCHIVE — CAPTIONS, RIGHTS & ARTICLE-READY",
+        "id": "1sOBqlgLjPqAhEoVuAvPpiSYzkquXhxXq",
+        "childFolders": 9,
+        "defect": "нет раздела 07; есть собственный правовой ящик 08 — RIGHTS OR SOURCE UNCLEAR и 09 — UNCAPTIONED — NEEDS IDENTIFICATION"
+      },
+      {
+        "section": "06 — SERIES DOSSIERS — ARTICLES & CHRONOLOGY",
+        "id": "1bDmRcCQKBzhVy9Jn0siXlOCkwSmnTHA6",
+        "childFolders": 5,
+        "children": [
+          "00 — MASTER CHRONOLOGY & SERIES MAP",
+          "01 — PLANNED ARTICLE DOSSIERS",
+          "02 — IN PROGRESS",
+          "03 — READY FOR SITE & PUBLICATION",
+          "90 — THEMATIC BACKLOG"
+        ]
+      },
+      {
+        "section": "07 — BIBLIOGRAPHY, LINKS & TO DOWNLOAD",
+        "id": "1od2nZzYeoHxzhVoRH_2_5FsVY1WqSkJ3",
+        "childFolders": 6,
+        "defect": "нет раздела 02; есть 06 — PAYWALLED, ARCHIVE ACCESS & PERMISSIONS NEEDED"
+      },
+      {
+        "section": "09 — INBOX — NEW PDF, PHOTOS & MATERIALS",
+        "id": "1DLLOg8LW130z6C1bvhkz7g1PH8707vZD",
+        "childFolders": 6,
+        "children": [
+          "01 — NEW PDF",
+          "02 — NEW PHOTOS & SCANS",
+          "03 — NEW LINKS, NOTES & BIBLIOGRAPHY",
+          "04 — NEW AUDIO & VIDEO",
+          "05 — NEW ZIP, EXPORTS & BULK INTAKES",
+          "90 — PROCESSED — AWAITING FINAL PLACEMENT"
+        ]
+      }
+    ],
+    "rightsQueuesOutsideLedger": [
+      {
+        "path": "05 — PHOTO ARCHIVE\\08 — RIGHTS OR SOURCE UNCLEAR",
+        "id": "1qjYcgRpPIwzSnRCKU29Ui0ZdXhJzHHxk"
+      },
+      {
+        "path": "05 — PHOTO ARCHIVE\\09 — UNCAPTIONED — NEEDS IDENTIFICATION",
+        "id": "11p2KPAS9LWb1TeveIAtvrWN3GhJXbTJS"
+      },
+      {
+        "path": "07 — BIBLIOGRAPHY\\06 — PAYWALLED, ARCHIVE ACCESS & PERMISSIONS NEEDED",
+        "id": "14DJ-u0hsqXAkyGCIwEr_WPMuZrX13sG2"
+      }
+    ],
+    "limits": [
+      "Читался только верхний уровень шести разделов: ни одного файла внутри, ни одной подпапки второго уровня.",
+      "Неизвестно, пусты ли три правовых ящика — наличие раздела не доказывает наличия объектов в нём.",
+      "Утверждение «открытых записей без RIGHTS_HOLD — 0» относится к леджеру репозитория и ничего не говорит об этих трёх ящиках."
+    ]
   }
 }
