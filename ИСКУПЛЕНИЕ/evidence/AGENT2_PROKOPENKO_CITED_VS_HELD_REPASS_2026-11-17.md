@@ -1271,3 +1271,36 @@
 - **HOLD:** т. II 1-го изд. *Remarks* (1811) — в IA нет; Баркли, p. 124; визуальная сверка pp. xiii (1811), xiv и 747 (1817), p. 635 (*Annotationes*). Прочие HOLD — как в §32.3.
 
 Вердикты S1–S5 не меняются. Умысел не утверждается.
+
+## 34. Раунд 111 (2026-11-17): сн. 78 — Каннингем, *Historical Theology* II, pp. 373–384; сн. 76 — словарная статья Коллинза
+
+**Повод.** Пробел в покрытии сносок (раунд 111): сн. 75–78 нигде не сверены по тексту. `12_` `T-06` прямо требует проверить по страницам, есть ли ошибочная связка «Арминий и Гомар» у Cunningham / Daniel / Lane.
+
+### 34.1. Источники
+
+- (а) **Cunningham W.**, *Historical Theology*, vol. II (Edinburgh: T. & T. Clark, **1863**); IA `historicaltheolo02cunnuoft` (тот же скан, что S4/S95 в `34_`); `_djvu.txt`, чанки 140–143 (колонтитулы «SEC. I.] ARMINIUS AND THE ARMINIANS. 373», «374», «376», «378», «SEC. II.] SYNOD OF DORT. 379», «380», «381»); `inside.php` q=«Gomarus», «Remonstrance», «Dort»; указатель: «GOMARUS, ii. 389, 435»; оглавление: «2. Synod of Dort … 379». Класс A1 (текстовый слой OCR). Статья ссылается на изд. 1882 г. (репр. SWRB 1991); его пагинация не видена.
+- (б) **Collins English Dictionary**, онлайн, s.v. *atonement* и *redemption* (collinsdictionary.com, просмотр 2026-11-17). Класс B1/C: текущая онлайн-редакция; какую редакцию видел автор, неизвестно.
+
+### 34.2. Сверка
+
+| Место | Вопрос | Источник | Итог |
+|---|---|---|---|
+| С. 24, сн. 78: Cunningham, vol. 2, **pp. 379–380** | Что стоит на указанных страницах? | (а), p. 379: начало «Sec. II. — Synod of Dort»: «The Synod of Dort marks one of the most important eras in the history of Christian theology…»; люди «in the beginning of the seventeenth century» подвергли учение Реформации «a pretty searching scrutiny». P. 380: делегаты «from almost all the Protestant churches, except the Lutheran»; синод «unanimously determined against the innovations of Arminius and his followers» | Общая характеристика синода. **Дат нет, пяти статей нет, Гомара нет.** По пагинации 1863 г. — `LOCATOR_IMPRECISE` (мягко): конкретные факты фразы статьи стоят на pp. 373–374 и 384. Если в изд. 1882 г. пагинация иная, вердикт по локатору — HOLD |
+| То же: «пять возражений… группой… под руководством **Арминия и Гомара**» | Поддерживает ли Каннингем связку? | (а), **p. 373**: у Арминия «much contention between him and his colleague, **Gomarus, who was a learned and zealous defender of Calvinism**»; «He died in **1609**. After his death, **Episcopius** was considered the head of the party»; «**The followers of Arminius, in 1610**, presented a remonstrance… stating, under **five heads or articles**, the opinions they had adopted». **p. 435** (по `inside.php`, лист 447): «particularly **Gomarus, the colleague and opponent of Arminius**» | **Источник статьи прямо опровергает связку.** У Каннингема Гомар — защитник кальвинизма и противник Арминия; Ремонстрацию подали последователи Арминия уже после его смерти; главой партии назван Епископий. `FACT_ERROR` (V5; `12_` `T-06`) усиливается: **`SOURCE_CONTRADICTS_CLAIM`** для Каннингема. Связка взята не из Каннингема. Daniel и Лейн — HOLD; механизм ошибки не утверждается |
+| То же: синод созван «специально для того, чтобы выработать ответ на пять возражений» | Есть ли это у Каннингема? | (а), **p. 384** (`inside.php`, лист 396): пять статей Ремонстрации 1610 г. «determined, to a large extent, the form in which the whole subject was afterwards discussed, — first at the conference at the Hague, in 1611, and afterwards at the Synod of Dort, in 1618» | **ACCURATE по существу** (вне указанного диапазона страниц) |
+| То же: даты 13.11.1618 – 9.05.1619 | Есть ли у Каннингема? | (а), pp. 373–374: «At length, in **November 1618**, a national synod was held at Dort»; «This synod sat for **about six months**» | Согласуется; точных дней у Каннингема нет. Даты подтверждены по Шаффу (§15, лист 536) — **ACCURATE** |
+| С. 23, сн. 76: Коллинз — «satisfaction, reparation, or expiation given for an injury or wrong»; этимология *at onement* | Точна ли цитата? | (б), *atonement* in British English: «**1.** satisfaction, reparation, or expiation given for an injury or wrong»; «Word origin: C16: from Middle English phrase **at onement** in harmony» | **EXACT** (цитата и этимология). Перевод «expiation» как «компенсация» — вольный (мягко): *expiation* — заглаживание вины, искупление, а не возмещение |
+| То же: вывод «Atonement… акцент на цене или средстве», «Redemption… акцент на конечном результате» | Поддерживает ли словарь пару «цена / результат»? | (б), *atonement*: «**2a.** (Christian theology) the **reconciliation** of humankind with God through the life, sufferings, and sacrificial death of Christ»; «**4.** obsolete: **reconciliation or agreement**». *Redemption*: «Word origin: C14: … Latin redemptiō **a buying back**»; «**3b.** (Christianity) **atonement for guilt**» | **`SELECTIVE_CITATION` (мягко).** Статья берёт только светское значение 1. Богословское значение 2a той же статьи словаря — «примирение» (результат). *Redemption* словарь выводит из «выкупа» (цены) и в значении 3b определяет через *atonement*. То есть источник сн. 76 показывает пересечение терминов, а не распределение «цена / результат». Это подтверждает вывод `34_` §Q1 (по Ч. Ходжу, S2) уже на источнике самой статьи. Смягчение: статья сама оговаривает, что термины «нередко используются как синонимы» |
+
+### 34.3. Логика
+
+- **Сн. 78.** Это гроздь из трёх источников на всю фразу. Проверенный источник подтверждает общую рамку (Ремонстрация из пяти статей → Гаага 1611 → Дорт 1618) и **опровергает** имя Гомара среди руководителей. Значит, ошибка не унаследована от Каннингема. Унаследована ли она от Daniel или Лейна, не проверено.
+- **Сн. 76.** Довод статьи о «терминологической ловушке» законен как предупреждение о многозначности. Но сама словарная статья, на которую он опирается, не даёт строгого распределения смыслов. На вывод статьи о Дорте (с. 25–26) это не влияет: там довод строится на тексте канонов, а не на словаре.
+
+### 34.4. Итог раунда 111
+
+- **Новое:** сн. 78 — Каннингем (1863), pp. 373, 384, 435 опровергает «Арминия и Гомара» (`SOURCE_CONTRADICTS_CLAIM`); локатор pp. 379–380 — `LOCATOR_IMPRECISE` (мягко, по пагинации 1863 г.). Сн. 76 — цитата EXACT; вывод о паре терминов — `SELECTIVE_CITATION` (мягко); перевод «expiation» — вольный (мягко).
+- **Подтверждено:** `FACT_ERROR` «Арминий и Гомар» (V5; `12_` `T-06`); даты Дорта — ACCURATE; рамка «пять статей → Дорт» — ACCURATE.
+- **HOLD:** Daniel, *History and Theology of Calvinism*, pp. 37–38; Лейн, *Христианские мыслители*, с. 187; пагинация изд. Каннингема 1882 г. (SWRB 1991); визуальная сверка pp. 373–384 (OCR). Прочие HOLD — как в §33.4.
+
+Вердикты S1–S5 не меняются. Умысел не утверждается.

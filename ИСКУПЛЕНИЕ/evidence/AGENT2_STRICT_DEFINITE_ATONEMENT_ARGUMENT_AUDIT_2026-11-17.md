@@ -1433,3 +1433,15 @@ HOLD без изменений: CO 49:100, CO 45:706, `PRINT_IMAGE_HOLD`, пра
 | 4 | Сн. 104, Эразм, *Annotationes* (1535), p. 635 | Толкования «ангелы с людьми» нет; εἰς αὐτόν — «erga se» (к Себе). `OVERSTATEMENT` подтверждён обоими текстами Эразма |
 
 **Вердикты S1–S5 не меняются.**
+
+## 62. Раунд 111 (2026-11-17): сн. 78 — Каннингем; сн. 76 — Коллинз
+
+Подробности — `34_` §4.194 (Q190), S209; REPASS-документ, §34.
+
+| # | Место | Итог |
+|---|---|---|
+| 1 | Сн. 78, «под руководством Арминия и Гомара» | Каннингем (1863), p. 373: Гомар — «a learned and zealous defender of Calvinism», Арминий умер в 1609 г., Ремонстрацию 1610 г. подали «the followers of Arminius»; p. 435: «Gomarus, the colleague and opponent of Arminius». Источник статьи опровергает связку — `SOURCE_CONTRADICTS_CLAIM`; `FACT_ERROR` (V5) усилен |
+| 2 | Сн. 78, локатор pp. 379–380 | По пагинации 1863 г. — начало раздела «Synod of Dort», общая оценка синода, без дат и имён. `LOCATOR_IMPRECISE` (мягко); при иной пагинации изд. 1882 г. — HOLD |
+| 3 | Сн. 76, Коллинз | Цитата и этимология «at onement» — EXACT. Но значение 2a той же статьи — «reconciliation of humankind with God», а *redemption* — «a buying back» и «atonement for guilt». Пара «atonement = цена, redemption = результат» источником не поддержана — `SELECTIVE_CITATION` (мягко) |
+
+**Вердикты S1–S5 не меняются.**

@@ -233,6 +233,10 @@
   - *Remarks* 1811, p. xiii: «Much less are we answerable for… the Synod of Dort» — `CHRONOLOGY_PARTIAL` (сн. 80) подтверждён. 1817, p. 747: перевод как «reparation» за «false witness against this Synod»; прим. 24 Стюарта EXACT.
   - Стюарт «xiv» = p. xiv изд. 1817 г.; все его локаторы — по 1817 г. (`EDITION_MISLABEL`). *Annotationes* (1535), p. 635: «erga se», ангелов нет — `OVERSTATEMENT` (сн. 104) подтверждён.
   - Вердикты S1–S5 не меняются. Документ: REPASS, §33.
+- **раунд 111 (2026-11-17, AGENT 2):** §3 (S209), новый §4.194 (Q190): сн. 78 (Каннингем) и сн. 76 (Коллинз).
+  - Каннингем, *Historical Theology* II (1863), p. 373: Гомар — «defender of Calvinism», Ремонстрацию 1610 г. подали последователи Арминия после его смерти; p. 435: «colleague and opponent of Arminius» — `SOURCE_CONTRADICTS_CLAIM`. Pp. 379–380 — общая оценка синода (`LOCATOR_IMPRECISE`, мягко).
+  - Коллинз: цитата сн. 76 EXACT; значение 2a — «reconciliation», *redemption* — «a buying back», «atonement for guilt» — `SELECTIVE_CITATION` (мягко).
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §34.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -604,6 +608,7 @@
 | S206 *(раунд 108, 2026-11-17)* | (1) Th. Scott, *Remarks on the Refutation of Calvinism*, 2nd ed. (London: A. MacIntosh / L. B. Seeley, 1817), IA `a608278200scotuoft`: л. 749 = p. 725 (`page_numbers.json`, уверенность 100); оглавление (кн. IV, pp. 473, 477–484; гл. II Дорта — pp. 732–735). (2) Erasmus, *Paraphrases… in omnes Epistolas Pauli* (Basel, 1521), IA `ARes14515`, `_djvu.txt`, чанк 98 (Кол. 1:19–20). (3) W. H. Vail, *The Outlook* 104 (21.VI.1913), IA `sim_new-outlook_1913-06-21_104_8`, л. 45. (4) Stewart 2008 (S199), граница pp. 192–194 по тексту PDF. | A1 (OCR) |
 | S207 *(раунд 109, 2026-11-17)* | (1) *Acta Synodi… Dordrechti habitae* (1620), IA `actasynodination00syno`, `_djvu.txt`, чанк 169: pp. 316–318 (сессии CXLVII–CXLIX). (2) Schaff, *Creeds* I, IA `creedschristendo01scha` (`ia801407`), л. 573. (3) Schaff, *Creeds* III, IA `creedsofchriste03scha` (`ia801000`), л. 569 (Дорт I.15). | A1 (1, OCR); B (2); A2 (3) |
 | S208 *(раунд 110, 2026-11-17)* | (1) Th. Scott, *Remarks on the Refutation of Calvinism*, vol. I (London: C. Baldwin / L. B. Seeley, 1811), IA `remarksonrefuta00tomlgoog`: предисловие, p. xiii. (2) Th. Scott, *Remarks…*, 2nd ed. (London, 1817), IA `a608278200scotuoft`: л. 18 = p. xiv; л. 771 = p. 747; оглавление. (3) Erasmus, *In Novum Testamentum Annotationes* (Basel: Froben, 1535), IA `ARes162052`, `_djvu.txt`, чанки 249–250 (Кол. 1:19–20, p. 635). | A1 (OCR) |
+| S209 *(раунд 111, 2026-11-17)* | (1) W. Cunningham, *Historical Theology*, vol. II (Edinburgh: T. & T. Clark, 1863), IA `historicaltheolo02cunnuoft` (`ia600104`, `/14/items/historicaltheolo02cunnuoft`): `_djvu.txt`, чанки 140–143 = pp. 372–383; `inside.php` q=«Gomarus» (листы 385, 401, 447 = pp. 373, 389, 435), q=«Remonstrance» (лист 396 = p. 384), q=«Dort» (оглавление: «Synod of Dort … 379»); `page_numbers.json`: лист 391 = p. 379. (2) Collins English Dictionary, онлайн, s.v. *atonement*, *redemption* (просмотр 2026-11-17) | A1 (Каннингем, OCR); B1/C (Коллинз, текущая онлайн-редакция) | **p. 373:** «much contention between him and his colleague, Gomarus, who was a learned and zealous defender of Calvinism»; «He died in 1609. After his death, Episcopius was considered the head of the party»; «The followers of Arminius, in 1610, presented a remonstrance… under five heads or articles». **pp. 373–374:** «in November 1618, a national synod was held at Dort»; «sat for about six months». **p. 379–380:** «Sec. II. — Synod of Dort»: общая оценка; «unanimously determined against the innovations of Arminius and his followers». **p. 384:** пять статей «determined… the form in which the whole subject was afterwards discussed». **p. 435:** «Gomarus, the colleague and opponent of Arminius». **Коллинз, atonement:** «1. satisfaction, reparation, or expiation given for an injury or wrong»; «2a. the reconciliation of humankind with God…»; «4. obsolete: reconciliation or agreement»; «C16: from Middle English phrase at onement in harmony». **redemption:** «3b. atonement for guilt»; «Latin redemptiō a buying back» | изд. 1882 г. (на него ссылается статья) не видено; визуальная сверка не проводилась |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8174,8 +8179,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.191 | Q187 | Стюарт: сн. 80 — EXACT (p. 193/194), сн. 92 — локатор EXACT; «ibid. p. 725» = *Remarks* 1817 (у Стюарта «1811» — `EDITION_MISLABEL`); Эразм к Кол. 1:20 — найден, у статьи `OVERSTATEMENT` (р. 108) |
 | 4.192 | Q188 | Дорт, сессия CXLVIII — 1 мая 1619 г. (среда), после полудня (*Acta*, p. 317–318); `16_` §1 «синоним» — `CORPUS_MISREAD`; примечания `11_`, `06_`, `01_`, `12_` (р. 109) |
 | 4.193 | Q189 | Скотт: *Remarks* 1811, p. xiii — «not answerable for… the Synod of Dort» (`CHRONOLOGY_PARTIAL` подтверждён); 1817, p. 747 — мотив перевода; Стюарт «xiv» и прим. 23 — по 1817 г.; Эразм, *Annotationes* (1535) к Кол. 1:20 — «erga se», `OVERSTATEMENT` подтверждён (р. 110) |
+| 4.194 | Q190 | Сн. 78: Каннингем (1863), pp. 373, 435 — Гомар противник Арминия, Ремонстрация 1610 г. от его последователей (`SOURCE_CONTRADICTS_CLAIM`); pp. 379–380 — общая оценка синода (`LOCATOR_IMPRECISE`, мягко). Сн. 76: Коллинз — цитата EXACT, пара «цена / результат» словарём не поддержана (`SELECTIVE_CITATION`, мягко) (р. 111) |
 
-⇒ разделов с `Q` — **186**, разделов §4.x — **188**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **187**, разделов §4.x — **189**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -9479,6 +9485,21 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 5. **Логика.** Хронология Скотта (1811 → 1817 → 1818) не ослабляет довода статьи: его «general redemption» осталась и после перевода (1817, кн. IV). Неточны лишь дата и сглаженная хронология.
 
 **Чего нет.** Т. II 1-го изд. *Remarks* (1811) — в IA нет. Баркли, p. 124. Визуальная сверка pp. xiii (1811), xiv и 747 (1817), p. 635 (*Annotationes*) не проводилась (текстовый слой OCR).
+
+Вердикты S1–S5 не меняются.
+
+### 4.194. Q190 — Сн. 78: Каннингем о Гомаре и Ремонстрации; сн. 76: словарная статья Коллинза (раунд 111, 2026-11-17)
+
+**Повод.** Сн. 75–78 не были сверены по тексту; `12_` `T-06` требует проверить источник связки «Арминий и Гомар» по страницам. Полная таблица — REPASS-документ, §34. Источники — S209.
+
+**Ответы.**
+1. **Каннингем, pp. 379–380.** Это начало «Sec. II. — Synod of Dort»: общая оценка синода и его представительства. Дат, пяти статей и имени Гомара здесь нет. По пагинации 1863 г. локатор неточен — `LOCATOR_IMPRECISE` (мягко). Пагинация изд. 1882 г., на которое ссылается статья, не видена.
+2. **Каннингем о Гомаре.** P. 373: «his colleague, Gomarus, who was a learned and zealous defender of Calvinism»; Арминий «died in 1609», после него главой партии был Епископий; Ремонстрацию 1610 г. подали «the followers of Arminius». P. 435: «Gomarus, the colleague and opponent of Arminius». Источник самой статьи опровергает формулу «под руководством Арминия и Гомара» — `SOURCE_CONTRADICTS_CLAIM`; `FACT_ERROR` (V5) усилен. Откуда взята связка, не установлено (Daniel, Лейн — HOLD).
+3. **Рамка и даты.** P. 384: пять статей Ремонстрации определили форму спора в Гааге (1611) и в Дорте (1618) — ACCURATE по существу. Pp. 373–374: «November 1618», «about six months» — согласуется с датами статьи (точные дни — по Шаффу, ACCURATE).
+4. **Коллинз (сн. 76).** Цитата «satisfaction, reparation, or expiation given for an injury or wrong» и этимология «at onement» — EXACT. Перевод «expiation» как «компенсация» — вольный (мягко).
+5. **Коллинз против пары «цена / результат».** В той же статье словаря богословское значение 2a — «the reconciliation of humankind with God», устаревшее значение 4 — «reconciliation or agreement». *Redemption* словарь выводит из лат. «a buying back» и в значении 3b определяет как «atonement for guilt». Источник сн. 76 показывает пересечение терминов — `SELECTIVE_CITATION` (мягко). Это подтверждает §Q1 (Ч. Ходж, S2) на источнике самой статьи. Смягчение: статья сама признаёт, что термины «нередко используются как синонимы».
+
+**Чего нет.** Daniel, pp. 37–38; Лейн, с. 187; пагинация Каннингема 1882 г. (SWRB 1991); визуальная сверка pp. 373–384 (текстовый слой OCR); редакция Коллинза, которую видел автор.
 
 Вердикты S1–S5 не меняются.
 
