@@ -1,6 +1,6 @@
 # OPEN_HOLDS — открытые HOLD-ы реестров SUNO_HYMNS
 
-Файл собран скриптом `scripts/render_hold_ledger.py` из `data/source-registry-v1.json` и `data/claim-ledger-v1.json`; сборка от 2026-11-15. **Вручную не править** — при изменении реестров пересобрать: `python3 scripts/render_hold_ledger.py`.
+Файл собран скриптом `scripts/render_hold_ledger.py` из `data/source-registry-v1.json` и `data/claim-ledger-v1.json`; сборка от 2026-11-18. **Вручную не править** — при изменении реестров пересобрать: `python3 scripts/render_hold_ledger.py`.
 
 Смысл сводки: HOLD — это обещание, которое ещё не исполнено. Список ниже — перечень того, что в текстах рубрики **нельзя** выдавать за проверенное.
 
@@ -16,9 +16,9 @@
 | Вид | У источников | У тезисов |
 |---|---|---|
 | `ARCHIVE_HOLD` | 17 | 29 |
-| `LOCATOR_HOLD` | 31 | 15 |
+| `LOCATOR_HOLD` | 30 | 13 |
 | `EVIDENCE_HOLD` | 4 | 11 |
-| `RIGHTS_HOLD` | 133 | 43 |
+| `RIGHTS_HOLD` | 134 | 43 |
 
 `RIGHTS_HOLD` стоит почти на всём: это общая оговорка о правах, а не конкретная дыра. Отдельного внимания требуют три остальных вида.
 
@@ -127,7 +127,7 @@
 **Источники**
 
 - `SRC-HB-1938-PRINT` — Psalmen en Gezangen voor den Eeredienst (Hervormde Bundel, 1938) — printed object  
-  доступ: `NOT_ACQUIRED`, локатор: `LOCATOR_MISSING`, права: `RIGHTS_UNKNOWN`
+  доступ: `PARTIAL_OBJECT`, локатор: `COARSE_LOCATOR_ONLY`, права: `PERMISSION_REQUIRED`
 - `SRC-MEDITATIEN-1674` — Meditatien over eenige van 's Heeren Gods Eygenschappen (1674)  
   доступ: `NOT_ACQUIRED`, локатор: `LOCATOR_MISSING`, права: `RIGHTS_UNKNOWN`
 - `SRC-PHOS-AZBYKA` — Азбука веры, статья «Свете Тихий» — церковнославянский текст, русский перевод, толкование  
@@ -174,8 +174,6 @@
   доступ: `PARTIAL_OBJECT`, локатор: `COARSE_LOCATOR_ONLY`, права: `RIGHTS_UNKNOWN`
 - `SRC-PHOS-TEDEUM-NCE` — Новая католическая энциклопедия, статья Te Deum (Мишель Угло): атрибуции по рукописям, датировка, состав, мелодия  
   доступ: `PARTIAL_OBJECT`, локатор: `COARSE_LOCATOR_ONLY`, права: `RIGHTS_UNKNOWN`
-- `SRC-PHOS-TEDEUM-TEXT` — Латинский текст Te Deum по римской официальной редакции (Liber Usualis) и древнейший список — Бангорский антифонарий  
-  доступ: `PARTIAL_OBJECT`, локатор: `COARSE_LOCATOR_ONLY`, права: `RIGHTS_UNKNOWN`
 - `SRC-PHOS-VRG-B3` — Universitätsbibliothek Düsseldorf, MS B-3, л. 269r, ок. 810–829 — древнейший список семистрофной формы  
   доступ: `CATALOG_ONLY`, локатор: `EXACT_LOCATOR_VERIFIED`, права: `RIGHTS_UNKNOWN`
 - `SRC-PHOS-VRG-BNF12044` — BnF, Paris, Latin 12044, л. 7v, XII в. — мелодический инципит  
@@ -191,10 +189,6 @@
 
 **Тезисы**
 
-- `CLM-DUTCH-001-DATE` — Date attributed to Schepselen niet en Jesus al  
-  статус: `SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION`
-- `CLM-DUTCH-001-TITLE-TUNE` — Schepselen niet en Jesus al title and tune  
-  статус: `SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION`
 - `CLM-DUTCH-003-SONNET-DRAMATURGY` — DUTCH-003: the sonnet's structure, turn and closing line  
   статус: `SUPPORTED_WITH_SCOPE_LIMITS`
 - `CLM-DUTCH-004-TEXT` — DUTCH-004 source text and title  
@@ -227,7 +221,7 @@
 **Источники**
 
 - `SRC-HB-1938-PRINT` — Psalmen en Gezangen voor den Eeredienst (Hervormde Bundel, 1938) — printed object  
-  доступ: `NOT_ACQUIRED`, локатор: `LOCATOR_MISSING`, права: `RIGHTS_UNKNOWN`
+  доступ: `PARTIAL_OBJECT`, локатор: `COARSE_LOCATOR_ONLY`, права: `PERMISSION_REQUIRED`
 - `SRC-MEDITATIEN-1674` — Meditatien over eenige van 's Heeren Gods Eygenschappen (1674)  
   доступ: `NOT_ACQUIRED`, локатор: `LOCATOR_MISSING`, права: `RIGHTS_UNKNOWN`
 - `SRC-PHOS-VRG-AUG372` — Проповедь 372 «На Рождество Господне», приписываемая Августину, — цитата шестой строфы с именем Амвросия  
@@ -270,6 +264,8 @@
   доступ: `PARTIAL_OBJECT`, права: `PERMISSION_REQUIRED`
 - `SRC-ENSIE-VANDALE-1898` — Groot woordenboek der Nederlandsche taal (Van Dale, 1898) on Ensie  
   доступ: `LINK_ONLY`, права: `PERMISSION_REQUIRED`
+- `SRC-HB-1938-PRINT` — Psalmen en Gezangen voor den Eeredienst (Hervormde Bundel, 1938) — printed object  
+  доступ: `PARTIAL_OBJECT`, права: `PERMISSION_REQUIRED`
 - `SRC-HB-1938-PRINT-CALIBRATION` — Page map of the 1938 Hervormde Bundel — calibration points for locating an item  
   доступ: `PARTIAL_OBJECT`, права: `PERMISSION_REQUIRED`
 - `SRC-HB-1938-PRINT-COLLATED` — Gezang 205 in the printed 1938 Hervormde Bundel — collated page images 724-725  
@@ -290,6 +286,8 @@
   доступ: `PARTIAL_OBJECT`, права: `PERMISSION_REQUIRED`
 - `SRC-PHOS-SHOEMAKER-2008-KOLLYRIDIANS` — Stephen J. Shoemaker, «Epiphanius of Salamis, the Kollyridians, and the Early Dormition Narratives: The Cult of the Virgin in the Fourth Century», Journal of Early Christian Studies 16.3 (2008): 371–401, DOI 10.1353/earl.0.0185 — аннотация прочитана, полный текст за пейволлом  
   доступ: `LINK_ONLY`, права: `PERMISSION_REQUIRED`
+- `SRC-PHOS-TEDEUM-LU1961` — Te Deum в Liber Usualis (Desclée, 1961), приложение I, с. 1832–1837  
+  доступ: `PARTIAL_OBJECT`, права: `PERMISSION_REQUIRED`
 - `SRC-PHOS-VRG-FONTAINE` — Жак Фонтен, «Ambroise de Milan: Hymnes» (Paris: Les Éditions du Cerf, 1992), с. 266–275  
   доступ: `CATALOG_ONLY`, права: `PERMISSION_REQUIRED`
 - `SRC-PHOS-VRG-GRMS2017` — «Ambrosian Hymns: Evidence for Roman Music of Late Antiquity?», Greek and Roman Musical Studies 5/1 (2017), 104–122  

@@ -16,29 +16,31 @@ Claim status is a project-local review label, not a new source class and not the
 
 **HOLDs:** RIGHTS_HOLD
 
+The two DUTCH-001 locator decisions below were reconciled on 2026-11-18 with the [earlier first-edition transcription check](DOSSIER_DUTCH-001_TRANSLATION_DECISIONS.md). They do not record a new inspection of the printed leaves.
+
 ## CLM-DUTCH-001-TITLE-TUNE — Schepselen niet en Jesus al title and tune
 
-**Claim:** The 2005 critical-edition item 51 gives the title Schepselen niet en Jesus al and the tune direction Singt als: Rosemont waer gy vliedt.
+**Claim:** DBNL's diplomatic transcription of the 1676 edition gives the title Schepselen Niet en Iesus Al and the tune direction 'Singt als: Rosemont waar gy vliedt'; the 2005 critical edition (item 51) reads 'waer'.
 
-**Review state:** SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS
 
-**Source IDs:** SRC-L-SCHEPSELEN-51, SRC-L-1676
+**Source IDs:** SRC-L-1676-SCHEPSELEN-131-134, SRC-L-SCHEPSELEN-51, SRC-MUSIC-ROSEMONT
 
-**Limits / next action:** The exact item page currently accessed is the copyrighted critical edition; a direct first-edition item locator has not yet been pinned. Do not present the modern version as a historically faithful arrangement.
+**Limits / next action:** The first-edition heading is located in the transcription of printed pp. 131–134 (DBNL item 0056); this records a direction, not the melody or the sound of a modern arrangement. Typography still requires an image.
 
-**HOLDs:** RIGHTS_HOLD, LOCATOR_HOLD
+**HOLDs:** RIGHTS_HOLD
 
 ## CLM-DUTCH-001-DATE — Date attributed to Schepselen niet en Jesus al
 
-**Claim:** The critical edition gives November 1661 as the date associated with the text.
+**Claim:** The closing date line in the DBNL transcription of the 1676 edition reads 'Slagt-m. 1661' (November 1661), consistent with the date in the 2005 critical edition.
 
-**Review state:** SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS
 
-**Source IDs:** SRC-L-SCHEPSELEN-51
+**Source IDs:** SRC-L-1676-SCHEPSELEN-131-134, SRC-L-SCHEPSELEN-51
 
-**Limits / next action:** Exact date currently supported by the critical edition. Inspect the original first-edition image before presenting a direct quotation or a facsimile-dependent claim.
+**Limits / next action:** The locator is the end of the poem on printed pp. 131–134 in DBNL item 0056. This is the date attached to the poem, not the 1676 publication date. No page image was inspected.
 
-**HOLDs:** RIGHTS_HOLD, LOCATOR_HOLD
+**HOLDs:** RIGHTS_HOLD
 
 ## CLM-HERT-I-VS-II — Two poems titled Hert-sterckte in Jehova
 
@@ -488,13 +490,13 @@ Review state: **SUPPORTED_WITH_SCOPE_LIMITS**. HOLDs: RIGHTS_HOLD.
 
 **Review state:** SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION  (`projectLevel: true` — concerns a text that is not a production work)
 
-**Source IDs:** SRC-NL-LIEDERENBANK-INDEX, SRC-HB-1938-PRINT
+**Source IDs:** SRC-STAPEL-1681-LUSTHOF, SRC-NL-LIEDERENBANK-9086, SRC-NL-LIEDERENBANK-INDEX, SRC-PSALMENGEZ-1938-75, SRC-HB-1938-PRINT
 
-**Notes:** The reprint data come from search-engine extracts of the Dutch Song Database while the site itself was offline: class C discovery leads, not quote-safe. The 1938 reworking is a separate modern object with its own rights questions and must never be quoted as the 1665 poem. The Bourgeois melody attribution is a 20th-century hymnal attribution, not evidence of the poem's original tune.
+**Notes:** The 1681 heading and incipit are located in the DBNL transcription (Claes Stapel, p. 495); the two-column layout prevents reliable full-text collation. The 1718 entry is still a catalogue lead. The 1938 reworking is a separate modern object with its own rights questions and must never be quoted as the 1665 poem. The Bourgeois melody attribution is a 20th-century hymnal attribution, not evidence of the poem's original tune.
 
-**Limits / next action:** Collate the 1681 and 1718 printings when reachable, and the printed 1938 bundel; retry the Dutch Song Database for 'Un jour' and record lode002uyt_01_0047.
+**Limits / next action:** Inspect the 1681 page image (p. 495), the 1718 Bundeltje (p. 230, no. 56) and the actual page for Gezang 75 (catalogue: p. 501). Do not substitute the other hymn on images 724–725.
 
-**Evidence gap:** Neither the 1681 and 1718 reprints nor the printed 1938 bundel have been collated; the melody of the 1665 tune is untraced.
+**Evidence gap:** The 1718 printing and the page for Gezang 75 have not been inspected. The existing Delpher reading of Gezang 205 does not verify Gezang 75 or its melody credit; the 1665 tune remains untraced.
 
 **HOLDs:** EVIDENCE_HOLD, RIGHTS_HOLD
 
@@ -508,7 +510,7 @@ Review state: **SUPPORTED_WITH_SCOPE_LIMITS**. HOLDs: RIGHTS_HOLD.
 
 **Source IDs:** SRC-HB-1938-PRINT-COLLATED, SRC-HB-1938-PRINT-CALIBRATION
 
-**Notes:** Read from the page images, not from a transcription. The convention explains how a 16th- or 18th-century tune name comes to sit above a 20th-century hymnal item, and is the mechanism behind the reported Bourgeois attribution of the 1938 't Oog omhoog. The Bach attribution is a 1938 hymnal credit: it is not the 1674 tune, which the 1676 print names as 'Onherroepelijke Jeugd' / 'Gavotte. A la fronté' of poem I. Delpher states 'Auteursrechtelijk beschermd. Op dit object rust auteursrecht.'
+**Notes:** Credits recorded in the earlier Delpher collation at image locators 724–725; the page-level OCR is incomplete for the sung text. No new image collation. The convention explains how a 16th- or 18th-century tune name comes to sit above a 20th-century hymnal item, and is the mechanism behind the reported Bourgeois attribution of the 1938 't Oog omhoog. The Bach attribution is a 1938 hymnal credit: it is not the 1674 tune, which the 1676 print names as 'Onherroepelijke Jeugd' / 'Gavotte. A la fronté' of poem I. Delpher states 'Auteursrechtelijk beschermd. Op dit object rust auteursrecht.'
 
 **HOLDs:** RIGHTS_HOLD
 
@@ -945,8 +947,8 @@ Both were `projectLevel` facts while the text had no work. DUTCH-005 now links t
 
 **Claim:** третья часть гимна (от `Salvum fac`) — ряд псалмических стихов (Пс 27:9, Пс 30:2), приложенный впоследствии; гимн построен по схеме Апостольского Символа веры; содержит `Sanctus` из Ис 6:3. Тот же ряд стихов встречается приложенным к Великому славословию — материал пересекается с PHOS-003.
 
-**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-TEDEUM-NCE, SRC-PHOS-TEDEUM-TEXT · **Level:** series
-**Limits:** утверждение о приложенности заключительных прошений — по Википедии без ссылки и по НКЭ; состав гимна по первоисточнику не сверен.
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-TEDEUM-LU1961, SRC-PHOS-TEDEUM-NCE, SRC-PHOS-TEDEUM-TEXT · **Level:** series
+**Limits:** наличие *Sanctus* и порядок прошений проверены в [издании 1961 г., с. 1832–1837](DOSSIER_PHOS-005_TE_DEUM.md#liber-usualis-1961); история их присоединения и параллель с Великим славословием — по вторичным источникам, не по сверке древних списков.
 
 ### CLM-PHOS-005-MELODY-GAP — древней мелодии нет
 

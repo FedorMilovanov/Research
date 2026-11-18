@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "registryId": "SUNO-HYMNS-SOURCE-REGISTRY-V1",
- "asOf": "2026-11-03",
+ "asOf": "2026-11-18",
  "note": "Project-local source inventory. The repository root evidence policy remains controlling; source class and operational states are separate. For a historical source served through a modern digital presentation, evidenceClass describes the underlying source when stated, while accessState and rightsState describe what is actually accessed and can be reused.",
  "fields": [
   "evidenceClass",
@@ -943,18 +943,18 @@
    ],
    "limits": [
     "Web transcriptions, not the printed bundel: not quote-safe for a disputed claim.",
-    "The printed 1938 bundel is reachable as a Delpher scan (identifier MMKB06:000000593) and has not been collated."
+    "See SRC-HB-1938-PRINT-COLLATED for the Delpher page OCR; these web witnesses do not establish the wording of stanza 1 in print."
    ]
   },
   {
    "id": "SRC-HB-1938-PRINT",
    "title": "Psalmen en Gezangen voor den Eeredienst (Hervormde Bundel, 1938) — printed object",
    "url": "https://www.delpher.nl/nl/boeken/view?coll=boeken&identifier=MMKB06:000000593",
-   "type": "The printed hymnal itself; target object for collation",
+   "type": "Volume-level record for Delpher MMKB06:000000593 (KB, PPN 416504787)",
    "evidenceClass": "A1",
-   "accessState": "NOT_ACQUIRED",
-   "locatorState": "LOCATOR_MISSING",
-   "rightsState": "RIGHTS_UNKNOWN",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "COARSE_LOCATOR_ONLY",
+   "rightsState": "PERMISSION_REQUIRED",
    "publicationState": "REFERENCE",
    "holds": [
     "EVIDENCE_HOLD",
@@ -962,10 +962,10 @@
     "RIGHTS_HOLD"
    ],
    "supports": [
-    "Would settle the exact 1938 wording, the five-stanza composition and any melody attribution"
+    "Gezang 205 is located at Delpher images 724–725 in this volume; see SRC-HB-1938-PRINT-COLLATED for the earlier page-level reading, not a second copy."
    ],
    "limits": [
-    "Not collated. A 20th-century publication: its own rights status must be assessed before any use of its wording."
+    "Stanza 1 dropped out of the OCR on image 724. Gezang 75 ('t Oog omhoog) is a different item: printed p. 501 is a catalogue lead, not a verified scan locator. Neither the whole book nor that page was collated here. Delpher marks the object copyright-protected."
    ]
   },
   {
@@ -1194,7 +1194,7 @@
     "Gezang 75 stands on printed p. 501 of the 1938 bundel, its incipit is «'t Oog omhoog, het hart naar boven», and the melody is credited to Louis Bourgeois"
    ],
    "limits": [
-    "The printed bundel has not been collated; the page number and the melody credit come from the database rendering, and the database is offline."
+    "The p. 501 locator and Bourgeois credit for Gezang 75 come from the catalogue rendering, not inspection of its printed page. The separate Delpher page check is for Gezang 205."
    ]
   },
   {
@@ -1733,7 +1733,6 @@
    "publicationState": "REFERENCE",
    "holds": [
     "RIGHTS_HOLD",
-    "LOCATOR_HOLD",
     "ARCHIVE_HOLD"
    ],
    "supports": [
@@ -1743,7 +1742,31 @@
     "Авторство: свидетельства склоняются к Никите Ремесианскому, но часть современных исследователей считает гимн анонимным",
     "Кёлер (1958) полагал, что Te Deum в исходном виде принадлежал к заутренней мессе Великой субботы, завершавшей чин крещения-миропомазания"
    ],
-   "limits": "В этом источнике есть логически несостоятельное утверждение: будто гимн «уверенно датируется концом IV или началом V в., потому что включён в уставы Цезария и Бенедикта». Эти уставы VI в. и доказывают лишь существование гимна к VI в. Текст по вторичной передаче Liber Usualis, не по изданию (`LOCATOR_HOLD`); рукописи не видел (`ARCHIVE_HOLD`)."
+   "limits": "В этом источнике есть логически несостоятельное утверждение: будто гимн «уверенно датируется концом IV или началом V в., потому что включён в уставы Цезария и Бенедикта». Эти уставы VI в. и доказывают лишь существование гимна к VI в. Для латинского текста это вторичная передача. Страницы издания 1961 г. теперь проверены отдельно (SRC-PHOS-TEDEUM-LU1961), не по этой статье. Рукописи не просмотрены (ARCHIVE_HOLD)."
+  },
+  {
+   "id": "SRC-PHOS-TEDEUM-LU1961",
+   "title": "Te Deum в Liber Usualis (Desclée, 1961), приложение I, с. 1832–1837",
+   "url": "https://github.com/DDMAL/MEI3to5/blob/c88a43d826805fbd223230a74b821a2ac0d01696/IIIF/1561%20-%202340/liber_2078_scaled.jpg",
+   "secondaryUrl": "https://github.com/DDMAL/MEI3to5/blob/c88a43d826805fbd223230a74b821a2ac0d01696/IIIF/1561%20-%202340/liber_2083.jpg",
+   "type": "Издание бенедиктинцев Солема с английскими рубриками; сканы страниц в DDMAL/MEI3to5",
+   "printedPages": "Оглавление vj; Hymn of Thanksgiving: Solemn Tone, с. 1832–1834; Simple Tone, с. 1834–1837",
+   "evidenceClass": "A1",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "PERMISSION_REQUIRED",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "RIGHTS_HOLD"
+   ],
+   "supports": [
+    "Под нотами обеих версий проверена последовательность латинского текста, включая тройное Sanctus и заключительные прошения от Salvum fac до In te Domine speravi. В печати нет сквозной нумерации 1–29.",
+    "После benedic в Solemn Tone напечатано hereditati (с. 1834), в Simple Tone — haereditati (с. 1836); это орфография внутри одного издания."
+   ],
+   "limits": [
+    "Прочитаны титул, оборот, страница оглавления и шесть страниц приложения, не вся книга. Эта редакция не устанавливает исходный напев, время присоединения прошений, авторство или чтения Бангорского антифонария.",
+    "Оборот титула: © 1961 Desclée & Co., All rights reserved. Разрешения на перепечатку нот, страниц или сканов нет. Карта кадров и контрольные суммы — в досье PHOS-005, §1."
+   ]
   },
   {
    "id": "SRC-PHOS-TEDEUM-NCE",

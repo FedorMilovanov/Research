@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "ledgerId": "SUNO-HYMNS-HISTORICAL-CLAIM-LEDGER-V1",
- "asOf": "2026-11-03",
+ "asOf": "2026-11-18",
  "claimStatusVocabulary": [
   "SUPPORTED_WITH_SCOPE_LIMITS",
   "SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION",
@@ -31,36 +31,35 @@
   {
    "id": "CLM-DUTCH-001-TITLE-TUNE",
    "topic": "Schepselen niet en Jesus al title and tune",
-   "claim": "The 2005 critical-edition item 51 gives the title Schepselen niet en Jesus al and the tune direction Singt als: Rosemont waer gy vliedt.",
-   "claimStatus": "SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION",
+   "claim": "DBNL's diplomatic transcription of the 1676 edition gives the title Schepselen Niet en Iesus Al and the tune direction 'Singt als: Rosemont waar gy vliedt'; the 2005 critical edition (item 51) reads 'waer'.",
+   "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
    "sourceIds": [
+    "SRC-L-1676-SCHEPSELEN-131-134",
     "SRC-L-SCHEPSELEN-51",
-    "SRC-L-1676",
     "SRC-MUSIC-ROSEMONT"
    ],
    "notes": [
-    "The exact item page currently accessed is the copyrighted critical edition; a direct first-edition item locator has not yet been pinned. Do not present the modern version as a historically faithful arrangement.",
+    "The first-edition heading is located in the transcription of printed pp. 131–134 (DBNL item 0056); this records a direction, not the melody or the sound of a modern arrangement. Typography still requires an image.",
     "SRC-MUSIC-ROSEMONT supplies musicological context for the Dutch song repertoire the tune name belongs to; it does not identify the tune itself."
    ],
    "holds": [
-    "RIGHTS_HOLD",
-    "LOCATOR_HOLD"
+    "RIGHTS_HOLD"
    ]
   },
   {
    "id": "CLM-DUTCH-001-DATE",
    "topic": "Date attributed to Schepselen niet en Jesus al",
-   "claim": "The critical edition gives November 1661 as the date associated with the text.",
-   "claimStatus": "SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION",
+   "claim": "The closing date line in the DBNL transcription of the 1676 edition reads 'Slagt-m. 1661' (November 1661), consistent with the date in the 2005 critical edition.",
+   "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
    "sourceIds": [
+    "SRC-L-1676-SCHEPSELEN-131-134",
     "SRC-L-SCHEPSELEN-51"
    ],
    "notes": [
-    "Exact date currently supported by the critical edition. Inspect the original first-edition image before presenting a direct quotation or a facsimile-dependent claim."
+    "The locator is the end of the poem on printed pp. 131–134 in DBNL item 0056. This is the date attached to the poem, not the 1676 publication date. No page image was inspected."
    ],
    "holds": [
-    "RIGHTS_HOLD",
-    "LOCATOR_HOLD"
+    "RIGHTS_HOLD"
    ]
   },
   {
@@ -625,11 +624,14 @@
    "claim": "The poem was reprinted as 'Heemels heerlijkheids lof' in Stapel's Lusthof (1681) and as 'HEERLYKHEITS LOF' in the Bundeltje (1718), and the 1938 Hervormde Bundel contains a modernised reworking with a different incipit ('t Oog omhoog, het hart naar boven!) and a melody attributed to Loys Bourgeois.",
    "claimStatus": "SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION",
    "sourceIds": [
+    "SRC-STAPEL-1681-LUSTHOF",
+    "SRC-NL-LIEDERENBANK-9086",
     "SRC-NL-LIEDERENBANK-INDEX",
+    "SRC-PSALMENGEZ-1938-75",
     "SRC-HB-1938-PRINT"
    ],
    "notes": [
-    "The reprint data come from search-engine extracts of the Dutch Song Database while the site itself was offline: class C discovery leads, not quote-safe.",
+    "The 1681 heading and incipit are located in the DBNL transcription (Claes Stapel, p. 495); the two-column layout prevents reliable full-text collation. The 1718 entry is still a catalogue lead.",
     "The 1938 reworking is a separate modern object with its own rights questions and must never be quoted as the 1665 poem.",
     "The Bourgeois melody attribution is a 20th-century hymnal attribution, not evidence of the poem's original tune."
    ],
@@ -637,8 +639,8 @@
     "EVIDENCE_HOLD",
     "RIGHTS_HOLD"
    ],
-   "evidenceGap": "Neither the 1681 and 1718 reprints nor the printed 1938 bundel have been collated; the melody of the 1665 tune is untraced.",
-   "nextCheck": "Collate the 1681 and 1718 printings when reachable, and the printed 1938 bundel; retry the Dutch Song Database for 'Un jour' and record lode002uyt_01_0047."
+   "evidenceGap": "The 1718 printing and the page for Gezang 75 have not been inspected. The existing Delpher reading of Gezang 205 does not verify Gezang 75 or its melody credit; the 1665 tune remains untraced.",
+   "nextCheck": "Inspect the 1681 page image (p. 495), the 1718 Bundeltje (p. 230, no. 56) and the actual page for Gezang 75 (catalogue: p. 501). Do not substitute the other hymn on images 724–725."
   },
   {
    "id": "CLM-HB-1938-205-CREDITS",
@@ -650,7 +652,7 @@
     "SRC-HB-1938-PRINT-CALIBRATION"
    ],
    "notes": [
-    "Read from the page images, not from a transcription.",
+    "Credits recorded in the earlier Delpher collation at image locators 724–725; the page-level OCR is incomplete for the sung text. No new image collation.",
     "The convention explains how a 16th- or 18th-century tune name comes to sit above a 20th-century hymnal item, and is the mechanism behind the reported Bourgeois attribution of the 1938 't Oog omhoog.",
     "The Bach attribution is a 1938 hymnal credit: it is not the 1674 tune, which the 1676 print names as 'Onherroepelijke Jeugd' / 'Gavotte. A la fronté' of poem I.",
     "Delpher states 'Auteursrechtelijk beschermd. Op dit object rust auteursrecht.'"
@@ -1376,15 +1378,16 @@
    "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
    "projectLevel": true,
    "sourceIds": [
+    "SRC-PHOS-TEDEUM-LU1961",
     "SRC-PHOS-TEDEUM-NCE",
     "SRC-PHOS-TEDEUM-TEXT"
    ],
    "notes": [
-    "Латинский текст прочитан целиком в этом проходе.",
+    "В Hymnology Archive прочитаны латинский текст и перевод. В издании 1961 г. текст обеих распевных версий сверен по с. 1832–1837, включая Sanctus и ряд прошений.",
     "Кандидат снят из очереди по правилу, а не по вкусу; этим же снимается и моё прежнее возражение «слишком длинно» — оно было слабым и не главным."
    ],
    "limits": [
-    "Утверждение о приложенности заключительных прошений восходит к английской Википедии без ссылки (citation needed) и к Новой католической энциклопедии; состав гимна по первоисточнику не сверен."
+    "Печать 1961 г. показывает место прошений в этой редакции, но не когда они вошли в гимн. История присоединения и сопоставление с Великим славословием опираются на вторичные источники; древние рукописи здесь не коллированы."
    ]
   },
   {

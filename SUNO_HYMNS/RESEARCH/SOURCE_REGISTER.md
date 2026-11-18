@@ -574,20 +574,22 @@ The nine entries below were added after reading the 1676 printing directly, the 
 - Publication state: REFERENCE
 - HOLDs: RIGHTS_HOLD
 - Supports: That Gezang 205 has five stanzas; That its stanzas correspond to 1806 stanzas 1, 2, 3, 6 and 7, with the closing couplet of 1806 stanza 5 appended to the fourth; That the 1938 form replaces 'zielverdervend eigen' with 'trots, hoogmoedig eigen'
-- Limits / caveats: Web transcriptions, not the printed bundel: not quote-safe for a disputed claim. The printed 1938 bundel is reachable as a Delpher scan (identifier MMKB06:000000593) and has not been collated.
+- Limits / caveats: Web transcriptions, not the printed bundel: not quote-safe for a disputed claim. See SRC-HB-1938-PRINT-COLLATED for the Delpher page OCR; these web witnesses do not establish the wording of stanza 1 in print.
 
 ## SRC-HB-1938-PRINT — Psalmen en Gezangen voor den Eeredienst (Hervormde Bundel, 1938) — printed object
 
+2026-11-18: the earlier volume-level `NOT_ACQUIRED` entry is superseded by the existing [Gezang 205 page check](COLLATION_GEZANG205_THREE_WAY.md), not a new acquisition.
+
 - URL: https://www.delpher.nl/nl/boeken/view?coll=boeken&identifier=MMKB06:000000593
-- Source role/type: The printed hymnal itself; target object for collation
+- Source role/type: Volume-level record for Delpher MMKB06:000000593 (KB, PPN 416504787)
 - Evidence class: A1
-- Access state: NOT_ACQUIRED
-- Locator state: LOCATOR_MISSING
-- Rights state: RIGHTS_UNKNOWN
+- Access state: PARTIAL_OBJECT
+- Locator state: COARSE_LOCATOR_ONLY
+- Rights state: PERMISSION_REQUIRED
 - Publication state: REFERENCE
 - HOLDs: EVIDENCE_HOLD, LOCATOR_HOLD, RIGHTS_HOLD
-- Supports: Would settle the exact 1938 wording, the five-stanza composition and any melody attribution
-- Limits / caveats: Not collated. A 20th-century publication: its own rights status must be assessed before any use of its wording.
+- Supports: Gezang 205 is located at Delpher images 724–725 in this volume; see SRC-HB-1938-PRINT-COLLATED for the earlier page-level reading, not a second copy.
+- Limits / caveats: Stanza 1 dropped out of the OCR on image 724. Gezang 75 ('t Oog omhoog) is a different item: printed p. 501 is a catalogue lead, not a verified scan locator. Neither the whole book nor that page was collated here. Delpher marks the object copyright-protected.
 
 ## SRC-NL-LIEDERENBANK-INDEX — Nederlandse Liederenbank — records surfaced through search indexing while the site is offline
 
@@ -848,9 +850,16 @@ The Greek lane is registered in the same file as the Dutch one because it is the
 ### SRC-PHOS-TEDEUM-TEXT — латинский текст *Te Deum* и Бангорский антифонарий
 
 - URL: https://www.hymnologyarchive.com/te-deum-laudamus
-- Evidence class: C · Access: PARTIAL_OBJECT · Locator: COARSE_LOCATOR_ONLY · Rights: RIGHTS_UNKNOWN · Publication: REFERENCE · HOLDs: RIGHTS_HOLD, LOCATOR_HOLD, ARCHIVE_HOLD
+- Evidence class: C · Access: PARTIAL_OBJECT · Locator: COARSE_LOCATOR_ONLY · Rights: RIGHTS_UNKNOWN · Publication: REFERENCE · HOLDs: RIGHTS_HOLD, ARCHIVE_HOLD
 - Supports: полный латинский текст, **29 стихов** по римской редакции (*Liber Usualis*), с параллельным переводом; **древнейший список — Бангорский антифонарий (Амброзиана, MS C 5 inf., лл. 10r–10v), ок. 680–691**, надписан «Hymnus in die Dominica»; легенда об Амвросии и Августине восходит к Гинкмару Реймсскому (859); Кёлер 1958 связывал исходный вид гимна с заутренней мессой Великой субботы.
-- Limits: **в источнике есть логически несостоятельное утверждение** — будто гимн «уверенно датируется IV–V вв., потому что включён в уставы Цезария и Бенедикта». Эти уставы VI в. и доказывают лишь существование гимна к VI в. Текст по вторичной передаче `Liber Usualis` (`LOCATOR_HOLD`); рукописи не видел (`ARCHIVE_HOLD`).
+- Limits: **в источнике есть логически несостоятельное утверждение** — будто гимн «уверенно датируется IV–V вв., потому что включён в уставы Цезария и Бенедикта». Эти уставы VI в. и доказывают лишь существование гимна к VI в. Статья даёт вторичную передачу. Для текста *Liber Usualis* есть отдельная прямая сверка (SRC-PHOS-TEDEUM-LU1961); рукописи остаются под `ARCHIVE_HOLD`.
+
+### SRC-PHOS-TEDEUM-LU1961 — *Te Deum* в печатном *Liber Usualis*, 1961
+
+- Издание: бенедиктинцы Солема, Desclée, Турне — Нью-Йорк; [начало приложения I](https://github.com/DDMAL/MEI3to5/blob/c88a43d826805fbd223230a74b821a2ac0d01696/IIIF/1561%20-%202340/liber_2078_scaled.jpg). *Solemn Tone* — с. 1832–1834; *Simple Tone* — с. 1834–1837.
+- Evidence class: A1 (для текста издания) · Access: PARTIAL_OBJECT · Locator: EXACT_LOCATOR_VERIFIED · Rights: PERMISSION_REQUIRED · Publication: REFERENCE · HOLDs: RIGHTS_HOLD
+- Прочитаны оба текста под нотами: тройное *Sanctus* и ряд прошений на месте; после *benedic* различаются `hereditati` и `haereditati`. [Карта страниц и проверенных изображений](DOSSIER_PHOS-005_TE_DEUM.md#liber-usualis-1961).
+- Издание свидетельствует о своём тексте и распевах, не о датировке гимна, исходной мелодии или древнейшей рукописи. На обороте титула © 1961; разрешения на воспроизведение страниц нет.
 
 ### SRC-PHOS-TEDEUM-NCE — Новая католическая энциклопедия, статья *Te Deum* (М. Угло)
 
@@ -896,7 +905,7 @@ The Greek lane is registered in the same file as the Dutch one because it is the
 - Publication state: REFERENCE
 - HOLDs: RIGHTS_HOLD, ARCHIVE_HOLD
 - Supports: Gezang 75 stands on printed p. 501 of the 1938 bundel, its incipit is «'t Oog omhoog, het hart naar boven», and the melody is credited to Louis Bourgeois
-- Limits / caveats: The printed bundel has not been collated; the page number and the melody credit come from the database rendering, and the database is offline.
+- Limits / caveats: The p. 501 locator and Bourgeois credit for Gezang 75 come from the catalogue rendering, not inspection of its printed page. The separate Delpher page check is for Gezang 205.
 
 ## SRC-HB-1938-75-WEB — Gezang 75 — public reproduction of the 1938 text in modernised spelling
 
