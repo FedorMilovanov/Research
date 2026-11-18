@@ -177,6 +177,11 @@
   - **IV.14.7:** «Qualiter omnibus in salutem oblatus a patre ac propositus Christus, non tamen ab omnibus agnitus exceptusque est» — ACCURATE по смыслу. Особенности русского перевода: «oblatus» опущено; сравнение подано как самостоятельное утверждение.
   - **Датировка:** фраза есть уже в издании 1536 г., поэтому «в более поздних комментариях» (Галатам, 1548) — верно. **`CHRONOLOGY_UNSUPPORTED` раунда 94 снят:** сравнивались годы изданий, а не слои текста.
   - Вердикты S1–S5 не меняются. Документ: REPASS, §19.
+- **раунд 97 (2026-11-17, AGENT 2):** §3 (S195), новый §4.180 (Q176): «Наставление» II.12.3 (сн. 11) по латыни CO 2; слои текста по курсиву издателей.
+  - **II.12.3:** ACCURATE по смыслу. В русском переводе «carnem nostram» → «своё тело».
+  - **Слой:** по предисловию CO 2 курсив = 1559 г. Ключевая фраза «carnem quam a nobis accepit, obtulisse in sacrificium» — вероятно 1559 г. (признак курсива по OCR).
+  - **«В более поздних комментариях»** — `CHRONOLOGY_PARTIAL`: верно для сн. 12, вероятно неверно для сн. 11.
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §20.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -534,6 +539,7 @@
 | S192 *(раунд 94, 2026-11-17)* | (а) J. Calvin, *Opera omnia in novem tomos digesta*, t. VII: *Commentarii in omnes epistolas S. Pauli apostoli…* (Amstelodami: J. J. Schipper, 1667), IA `bub_gb_eZ32b3TNqbAC` (Национальная библиотека Неаполя; d1 `ia903103`, dir `/16/items/…`; постраничный текст через `BookReaderGetTextWrapper`): л. 322 = p. 311 (Гал. 5:12: «Respondeo, id verum esse dum homines respicimus: nam omnium salus sine exceptione nobis a Deo commendatur; quemadmodum pro peccatis totius mundi passus est Christus: sed fit interdum…»); л. 47 (Рим. 5:17–18: «non ad omnes homines pervenit Christi beneficium»; «etsi passus est Christus pro peccatis totius mundi… non tamen omnes apprehendunt»). (б) WCF VIII.5, VIII.8 (Creeds.json). | (а) A1 (OCR, поздняя некритическая редакция; CO 50 не открыт); (б) B/C |
 | S193 *(раунд 95, 2026-11-17)* | L. Boettner, *The Reformed Faith* — PDF по URL сн. 70 статьи (`monergism.com/thethreshold/sdg/boettner/The_Reformed_Faith_-_Loraine_Boettner.pdf`), разделы «Christ's Atonement» и о Божьей справедливости: «a Person of infinite value, amply sufficient to save all men had God so desired it»; «high efficiency… wide extension… universal salvation»; «punishing their sins twice, once in Christ, and then again in them… the Holy Spirit would invariably bring them to faith and repentance»; «a just equivalent for all that His people would have suffered in an eternity in hell»; «by-pass for their willing continuance in sin». Грудем (сн. 71) — не открыт (IA `systematictheolo00grud_0`: «not available»). | B (без печатной пагинации; `RIGHTS_HOLD` — только краткие цитаты) |
 | S194 *(раунд 96, 2026-11-17)* | (а) *Ioannis Calvini Institutio religionis christianae… triplici forma*, ed. Baum, Cunitz, Reuss (Brunsvigae: Schwetschke, 1869 = CO 2, текст 1559 г.), IA `ioanniscalvinii00cunigoog` (d1 `ia800400`, dir `/5/items/…`): лл. 483–484 = col. 946–948 (IV.14.7). (б) *Joannis Calvini opera selecta*, ed. P. Barth, vol. I (München, 1926), *Institutio* 1536, гл. IV, IA `joanniscalviniop0001calv` (d1 `ia601803`, dir `/17/items/…`): лл. 136–137 (пагинация 1536 г. [103]–[104]): «Qualiter omnibus in salutem oblatus a patre ac propositus est Christus, non tamen ab omnibus agnitus exceptusque est». | (а), (б) A1 |
+| S195 *(раунд 97, 2026-11-17)* | CO 2 (*Institutio… triplici forma*, ed. Baum, Cunitz, Reuss, 1869), IA `ioanniscalvinii00cunigoog`: л. 8 — предисловие («postrema additamenta… typis cursivis sive italicis… excudenda curaremus»); лл. 181–182 = col. 342–343 (II.12.1–3: «ut carnem nostram in satisfactionis pretium iusto Dei iudicio sisteret»; «communem naturam pignus esse nostrae cum filio Dei societatis… carnem quam a nobis accepit, obtulisse in sacrificium…»). Контроль: OS I (1536), поиск «a nobis accepit» — 0. | A1 (определение слоя 1559 г. — по признаку курсива через OCR, визуально не проверено) |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8089,8 +8095,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.177 | Q173 | Кальвин на Гал. 5:12 по латыни (1667, p. 311) — ACCURATE, рамка «dum homines respicimus» опущена (мягко); «в более поздних комментариях» — `CHRONOLOGY_UNSUPPORTED`; Рим. 5:18 подтверждён; заключение «ключевые исповедания подчёркивают неограниченную цену» — `CONCLUSION_EXCEEDS_BODY` (р. 94) |
 | 4.178 | Q174 | Бёттнер, *The Reformed Faith* (сн. 70): пересказ довода — ACCURATE; «слабая форма» — `STRAWMAN` (мягко); «усиленная форма» — уже у Бёттнера; ответ статьи не задевает форму с неизбежным применением — `MISIDENTIFIED_TARGET` распространён на сн. 70; Грудем — HOLD (р. 95) |
 | 4.179 | Q175 | «Наставление» IV.14.7 (сн. 12) по латыни 1559 и 1536 гг.: ACCURATE; особенности русского перевода («oblatus» опущено). Фраза — уже 1536 г., поэтому «в более поздних комментариях» верно; `CHRONOLOGY_UNSUPPORTED` §4.177 снят (р. 96) |
+| 4.180 | Q176 | «Наставление» II.12.3 (сн. 11) по латыни CO 2: ACCURATE; в русском переводе «carnem nostram» → «своё тело»; ключевая фраза — вероятно слой 1559 г. (курсив CO 2), поэтому «в более поздних комментариях» — `CHRONOLOGY_PARTIAL` (р. 97) |
 
-⇒ разделов с `Q` — **172**, разделов §4.x — **174**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **173**, разделов §4.x — **175**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -9168,6 +9175,21 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 **Вывод.** Обе кальвиновские цитаты на с. 4 (сн. 12 и 14) подлинны по латыни. Слова «в более поздних комментариях» для сн. 12 хронологически верны.
 
 **Чего нет.** Датировка II.12.3 по редакциям; русский том РГГУ и его страница.
+
+Вердикты S1–S5 не меняются.
+
+### 4.180. Q176 — «Наставление» II.12.3 (с. 3–4, сн. 11) по латыни CO 2; слой текста по курсиву издателей (раунд 97, 2026-11-17)
+
+**Повод.** §4.179 подтвердил хронологию «в более поздних комментариях» для сн. 12 (IV.14.7 — уже 1536 г.). Сн. 11 (II.12.3) осталась без датировки. Полная таблица — REPASS-документ, §20. Источники — S195.
+
+**Ответы.**
+1. **Латынь** (CO 2, col. 342–343): «Prodiit ergo verus homo, Dominus noster, Adae personam induit, nomen assumpsit, ut eius vices subiret patri obediendo, ut carnem nostram in satisfactionis pretium iusto Dei iudicio sisteret; ac in eadem carne poenam quam meriti eramus persolveret… carne nostra vestitum debellasse mortem cum peccato, ut nostra esset victoria et triumphus noster; carnem quam a nobis accepit, obtulisse in sacrificium, ut facta expiatione reatum nostrum deleret, et placaret iustam patris iram». Цитата статьи — **ACCURATE по смыслу**.
+2. **Особенности русского перевода, не автора.** «Carnem **nostram**» → «**своё** тело»; «verus homo» опущено; «satisfactionis pretium» → «цена умилостивления». Перевод здесь ослабляет довод статьи: в латыни плоть прямо названа «нашей», и акцент статьи на общей природе латынь поддерживает сильнее перевода.
+3. **Слой текста.** Издатели CO 2 набрали курсивом всё, что впервые появилось в 1559 г. (предисловие, л. 8). Вторая часть цитаты, на которой стоит вывод статьи («плоть, которую принял от нас»), по признаку курсива (искажения OCR), **вероятно, 1559 г.** Фраза «Prodiit ergo verus homo… nomen assumpsit» набрана прямым шрифтом, то есть взята из ранних редакций. Калибровка: IV.14.7 (есть в 1536 г.) распознано чисто. Страница визуально не открыта.
+4. **«В более поздних комментариях» (сн. 13) — `CHRONOLOGY_PARTIAL` (мягко, PROBABLE).** Для сн. 12 — верно. Для ключевой фразы сн. 11 — вероятно, наоборот: текст 1559 г. позже комментария на Галатам (1548). Это уточняет §4.179, а не отменяет его.
+5. **Метод.** Слой цитаты из «Наставления» определяется по CO 1–2: курсив CO 2 = 1559 г., текст 1539–1554 гг. — CO 1. Год издания, которым пользуется статья, для этого не годится.
+
+**Чего нет.** Визуальная проверка курсива; CO 1 (текст 1539–1554 гг.); русский том РГГУ.
 
 Вердикты S1–S5 не меняются.
 

@@ -756,3 +756,34 @@
 - **HOLD:** датировка II.12.3 по редакциям; русский том РГГУ (т. 3, с. 271?).
 
 Вердикты S1–S5 не меняются. Умысел не утверждается.
+
+## 20. Раунд 97 (2026-11-17): «Наставление» II.12.3 (с. 3–4, сн. 11) по латыни CO 2; слои текста по курсиву издателей; хронология «более поздних комментариев» для сн. 11
+
+**Повод.** В §19 хронология «в более поздних комментариях» подтверждена для сн. 12 (IV.14.7 — уже 1536 г.). Датировка II.12.3 (сн. 11) осталась в HOLD. До сих пор цитата сверялась только по английскому Беверидж (REPASS §15).
+
+### 20.1. Источники
+
+- (а) **CO 2** (ed. Baum, Cunitz, Reuss, 1869; IA `ioanniscalvinii00cunigoog`), **col. 342–343**, лл. 181–182 (II.12.1–3). **Класс A1.**
+  - Предисловие издателей к тому (л. 8): «omnia eiusdem postrema additamenta, quae in antiquioribus exemplaribus nondum comparuerant, **typis cursivis sive italicis**… excudenda curaremus». То есть **курсивом набрано всё, что впервые появилось в 1559 г.**
+  - II.12.3 (латынь нормализована по OCR): «Alterum hoc nostrae cum Deo reconciliationis caput erat, ut homo, qui sua se inobedientia perdiderat, remedii loco obedientiam opponeret, iudicio Dei satisfaceret, poenas peccati persolveret. Prodiit ergo verus homo, Dominus noster, Adae personam induit, nomen assumpsit, ut eius vices subiret patri obediendo, ut carnem nostram in satisfactionis pretium iusto Dei iudicio sisteret; ac in eadem carne poenam quam meriti eramus persolveret. Quum denique mortem nec solus Deus sentire, nec solus homo superare posset… Adde quod sperandus fuit redemptor ille Abrahae Davidisque filius… Sed illud, quod nuper exposui, praecipue tenendum est, communem naturam pignus esse nostrae cum filio Dei societatis; carne nostra vestitum debellasse mortem cum peccato, ut nostra esset victoria et triumphus noster; carnem quam a nobis accepit, obtulisse in sacrificium, ut facta expiatione reatum nostrum deleret, et placaret iustam patris iram».
+- (б) **OS I** (*Institutio* 1536, IA `joanniscalviniop0001calv`): поиск «a nobis accepit» — 0 совпадений (качественный OCR). Отрицательный результат поиска — слабое свидетельство.
+- (в) **Калибровка признака.** IV.14.7 в CO 2 (col. 946–947), которое есть уже в 1536 г. (§19), распознано чисто, как прямой шрифт. Фрагменты II.12.1–3 распознаны с характерными для курсива искажениями («obediefUiam», «paki obedimdo», «Hitw sancta Ula fraternitas», «commumm naturam… mstrae… debdlasse… vidoria… qtuim… expiatime… dderet… placard»). Признак косвенный: **страница визуально не открыта.**
+
+### 20.2. Сверка
+
+| Место | Тезис статьи | Состоятельность | Факты |
+|---|---|---|---|
+| Сн. 11, первая часть цитаты | «Потому и явился Господь наш Иисус, приняв имя и облик Адама, дабы заместить его Собою, подчиниться Отцу и предоставить на его праведный суд **своё тело** как цену умилостивления, претерпеть казнь, которую заслужили мы, во плоти, в которой совершён грех» | ✓ | **ACCURATE по смыслу.** Особенности русского перевода, не автора: «carnem **nostram**» («**нашу** плоть») передано как «своё тело»; «verus homo» опущено; «satisfactionis pretium» — «цена удовлетворения», а не «умилостивления». Перевод здесь ослабляет довод статьи: в латыни плоть прямо названа «нашей», и акцент статьи на общей природе латынь поддерживает сильнее перевода |
+| Сн. 11, вторая часть цитаты (после «<…>») | «Воплотившись, Он победил смерть вместе с грехом так, что эта победа стала нашей. Он предложил в жертву плоть, которую принял от нас…» | ✓ | **ACCURATE по смыслу**: «carne nostra vestitum debellasse mortem cum peccato… carnem quam a nobis accepit, obtulisse in sacrificium». Под многоточием — «communem naturam pignus esse nostrae cum filio Dei societatis»; это уже учтено в §15 (вывод об объёме — `NON_SEQUITUR`) |
+| Слой текста | — | — | **Вероятно (PROBABLE), 1559 г.:** вторая часть цитаты, на которой стоит вывод статьи («плоть, которую принял от нас»), и вступление «Alterum hoc… persolveret» — по признаку курсива. Прямым шрифтом, то есть из ранних редакций, — «Prodiit ergo verus homo… nomen assumpsit» и «ac in eadem carne… persolveret» |
+| С. 4, сн. 13: «в более поздних комментариях… ещё более очевидна» | Хронология | **Частично** | Для сн. 12 — ACCURATE (§19). Для сн. 11 — **вероятно, обратная хронология**: ключевая фраза II.12.3, по-видимому, добавлена в 1559 г., то есть **позже** комментария на Галатам (1548). Вердикт: `CHRONOLOGY_PARTIAL` (мягко; PROBABLE до визуальной сверки курсива) |
+
+### 20.3. Итог раунда 97
+
+- **Новые вердикты по статье:**
+  - сн. 11 — ACCURATE по латыни CO 2 (особенности русского перевода отмечены: «своё тело» вместо «нашей плоти»);
+  - «в более поздних комментариях» — `CHRONOLOGY_PARTIAL`: верно для сн. 12, вероятно неверно для ключевой фразы сн. 11 (1559 г.).
+- **Метод:** курсив CO 2 = слой 1559 г. (по предисловию издателей). Определение по OCR косвенное.
+- **HOLD:** визуальная проверка курсива на col. 342–343; текст 1539–1554 гг. (CO 1 в сети не найден; скан 1539 г. на IA без текстового слоя); русский том РГГУ.
+
+Вердикты S1–S5 не меняются. Умысел не утверждается.
