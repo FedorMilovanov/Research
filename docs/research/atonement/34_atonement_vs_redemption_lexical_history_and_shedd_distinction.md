@@ -214,6 +214,10 @@
   - **Сперджен:** «MTP 7, p. 26» — вторая страница № 351 *Plenteous Redemption* (pp. 25–32). Цитаты там нет; на этих страницах Сперджен отвергает учение «that all men are redeemed». `LOCATOR_ERROR` подтверждён положительно; механизм ошибки не установлен (у Мюррея по-английски ссылка верна).
   - **Гейдельбергский катехизис, в. 37:** Lang 1907 и Müller 1903 (textus receptus 1563 г.) — «wider die sünde des gantzen menschlichen geschlechts»: ACCURATE; HOLD снят. **Дорт (с. 5):** `PLAUSIBLE`.
   - Вердикты S1–S5 не меняются. Документ: REPASS, §28.
+- **раунд 106 (2026-11-17, AGENT 2):** §3 (S204), новый §4.189 (Q185): с. 5 — Дорт и Гейдельбергский катехизис по актам 1620 г.
+  - *Acta* 1620, сессия CXLVIII (≈ 1 мая 1619 г.): иностранные и нидерландские богословы единогласно признали учение катехизиса «Verbo Dei in omnibus consentientem… omnino retineri debere» — ACCURATE. Уточнение: катехизис подтверждён, а не включён впервые (`IMPRECISE_TERM`, минимально).
+  - Логика: для синода в. 37 совместим с II.8, поэтому в. 37 не решает спора об объёме — `EVIDENCE_UNDERDETERMINES` (мягко).
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §29.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -580,6 +584,7 @@
 | S201 *(раунд 103, 2026-11-17)* | (1) NPNF¹ 13 (Schaff, 1889), CCEL `npnf113.iv.iv.iii` (Беседа III на Кол.), маркеры печатных страниц 271–273; титул p. 173 и предисловие p. 176 (`npnf113.iv.i`, `npnf113.iv.ii`). (2) PG 82, Theodoret, *Interpretatio in Ep. ad Colossenses*, IA `patrologiae_cursus_completus_gr_vol_082` (`ia902803`): заголовок — л. 319, Кол. 1:20 — л. 323; колонка PG не прочитана. (3) Erasmus, *Operum septimus tomus* (Basel, 1540), IA `ARes19210`: парафраз на Кол. 1 — лл. 730–731; место к 1:20 не найдено. | A1 (NPNF — электронное воспроизведение с печатной пагинацией; PG — греческий OCR) |
 | S202 *(раунд 104, 2026-11-17)* | (1) Lightfoot, *Saint Paul's Epistles to the Colossians and to Philemon* (London: Macmillan, 1890), IA `ed9saintpaulsepis00ligh` (`ia601902`): выходные сведения — л. 12; ст. 20 — лл. 175–176 = pp. 157–158 (`page_numbers.json`). (2) Каталожная запись Cornell при IA `cu31924092322548`: «Vincent, Marvin Richardson, 1834-1922». (3) Henry, *Exposition*, vol. 6 (1828), IA `expositionofoldn06henr`: предисловие продолжателей — л. 290. | A1 (Лайтфут, Генри); A2 (каталожная запись) |
 | S203 *(раунд 105, 2026-11-17)* | (1) Указатель MTP 7 по оригинальной пагинации, archive.spurgeon.org `index/c07.php`: № 349 — p. 9, № 350 — p. 17, **№ 351 *Plenteous Redemption* — p. 25**, № 352 — p. 33; оглавление Passmore 1862 (Google Books `cctBAQAAMAAJ`, выдача поиска). (2) Текст № 351: archive.spurgeon.org `sermons/0351.php` (прочитан целиком). (3) I. Murray, *The Forgotten Spurgeon*, гл. 3 — отрывок Banner of Truth (1.XI.2023), прим. 1–24. (4) A. Lang, *Der Heidelberger Katechismus und vier verwandte Katechismen* (Leipzig, 1907), IA `derheidelberger00ursigoog`: редакционное правило — л. 77; в. 37 — л. 137. (5) E. F. K. Müller, *Die Bekenntnisschriften der reformierten Kirche* (Leipzig, 1903), IA `diebekenntnissc01mlgoog`: в. 37 — л. 770. (6) Schaff, *Creeds* I, IA `creedschristendo01scha`, л. 529 (формула подписи). | A2 (1, 4, 5); B (2, 6); C (3) |
+| S204 *(раунд 106, 2026-11-17)* | *Acta Synodi nationalis… Dordrechti habitae* (Lugduni Batavorum: Elzevir, 1620), IA `actasynodination00syno` (Princeton Theological Seminary; `ia801505`, `/0/items/…`; `inside.php`; `page_numbers.json`, уверенность 60): предисловие Генеральных штатов — л. 12 («Catechesin hactenus hic usitatam… recognosci»); сессия 17 — л. 93 («Catechesis Palatina, ab Ecclesiis nostris recepta»); «XXX. Aprilis» — л. 344; сессия CXLVIII — л. 364 ≈ p. 318 (одобрение катехизиса; ниже — «II. Maij»). | A1 (OCR; изображение листа не открывалось) |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8145,8 +8150,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.186 | Q182 | Кол. 1:20: Златоуст, сн. 103 — ACCURATE, NPNF¹ 13, p. 272 EXACT; Феодорит, сн. 104 — подтверждён по PG 82; Эразм — не найден; с. 34–35 — `INTERNAL_TENSION` (мягко) (р. 103) |
 | 4.187 | Q183 | Кол. 1:20, хвосты: Лайтфут p. 158 — EXACT (оттиск 1890 г. с формы 1879 г.); Винсент 1834–1922 — `DATE_ERROR` подтверждён; «Генри» — продолжатели по стенограммам, `AUTHORSHIP_NOTE` смягчён (р. 104) |
 | 4.188 | Q184 | Сн. 45: «MTP 7, p. 26» — вторая страница № 351 *Plenteous Redemption*, цитаты нет, там отвергается «that all men are redeemed» — `LOCATOR_ERROR` подтверждён положительно; сн. 15: немецкий в. 37 = текст 1563 г. (Lang 1907, Müller 1903) — ACCURATE (р. 105) |
+| 4.189 | Q185 | С. 5: «включённый Дортским синодом» — ACCURATE по *Acta* 1620, сессия CXLVIII (≈ 1.V.1619, единогласно; подтверждён, а не впервые включён — `IMPRECISE_TERM`, минимально); для синода в. 37 совместим с II.8 — `EVIDENCE_UNDERDETERMINES` (р. 106) |
 
-⇒ разделов с `Q` — **181**, разделов §4.x — **183**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **182**, разделов §4.x — **184**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -9370,8 +9376,23 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 3. **Откуда ошибка.** В английском Мюррее (гл. 3, прим. 17) стоит «Sermons, Volume 58, pages 583–4»; «7, 26» в открытом отрывке (прим. 1–24) нет. Механизм ошибки не установлен; русская с. 84 — HOLD. Не утверждается, что ошибся переводчик или автор статьи.
 4. **Гейдельбергский катехизис, в. 37.** Lang 1907 (textus receptus Пфальцского церковного устава 1563 г., л. 137) и Müller 1903 (л. 770): «den zorn Gottes wider die sünde des gantzen menschlichen geschlechts getragen hat». Слова сн. 15 — ACCURATE (орфография модернизирована). Сама печать 1563 г. не открывалась (A2).
 5. **«Включённый Дортским синодом» (с. 5)** — `PLAUSIBLE`; акт Дорта в первоисточнике не открыт.
+   - *Уточнение раунда 106 (§4.189):* акт открыт (*Acta* 1620, сессия CXLVIII) — ACCURATE.
 
 **Чего нет.** Скан страницы MTP 7, p. 26; русское издание Мюррея (с. 84); разночтения первых трёх изданий в примечаниях Ланга; Цвингли, рус. изд. с. 76; Дэниел, pp. 360–363.
+
+Вердикты S1–S5 не меняются.
+
+### 4.189. Q185 — с. 5: «позднее включённый Дортским синодом в число символьных документов» по актам Дорта 1620 г. (раунд 106, 2026-11-17)
+
+**Повод.** В §4.188 эта фраза оставлена как `PLAUSIBLE`. Полная таблица — REPASS-документ, §29. Источник — S204.
+
+**Ответы.**
+1. **Акт.** Сессия CXLVIII (*Acta* 1620, л. 364 ≈ p. 318): «Declaratum fuit consentientibus omnium tam Exterorum, quam Belgicorum Theologorum suffragiis, doctrinam in Catechesi Palatina comprehensam, Verbo Dei in omnibus esse consentientem… atque omnino retineri debere». Фраза статьи — ACCURATE.
+2. **Дата.** После полудня накануне 2 мая 1619 г.; по всей вероятности 1 мая (заголовок утреннего заседания этого дня в OCR не найден).
+3. **Слово «включённый».** Катехизис уже был формулой единства («Catechesin hactenus hic usitatam», л. 12; «ab Ecclesiis nostris recepta», л. 93). Синод его пересмотрел и подтвердил — `IMPRECISE_TERM` (минимально).
+4. **Логика.** Статья читает Дорт как «неограниченное искупление с ограниченным применением» (с. 25–26), поэтому одобрение катехизиса её линии не противоречит. Но синод, принявший II.8, признал в. 37 согласным со Словом «in omnibus». Значит, в. 37 совместим и с партикуляристским чтением Дорта и сам по себе спора об объёме не решает — `EVIDENCE_UNDERDETERMINES` (мягко); ср. §4.175 (Урсин: «sufficiency… not… application»).
+
+**Чего нет.** Изображение л. 364 и печатная страница визуально не сверены. Голландское издание актов (*Handelingen*, 1669) не открывалось.
 
 Вердикты S1–S5 не меняются.
 
