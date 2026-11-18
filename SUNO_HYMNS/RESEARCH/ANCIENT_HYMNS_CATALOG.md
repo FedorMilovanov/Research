@@ -73,8 +73,7 @@ The evidence rule is the same as everywhere in this project: a work enters this 
 - **Publication status:** `UNKNOWN_NOT_VERIFIED`; there is nothing to publish yet.
 - **Package:** `../SUNO/PHOS-001_PRODUCTION_PACKAGE.md` · text: `../SUNO/PHOS-001_LYRICS.md` · style: `../SUNO/PHOS-001_STYLE.md`.
 - **Research record:** `DOSSIER_PHOS-001_PHOS_HILARON.md` · translation decisions: `DOSSIER_PHOS-001_TRANSLATION_DECISIONS.md` · свидетельства о **практике собраний, пения и молитвы** (не готовые полные тексты для серии): `DOSSIER_SERIES_PHILON_THERAPEUTAE_WITNESS.md` (Филон и Евсевий, Ц. И. II, 17: новые гимны поют в собрании, но ни одного текста не сохранилось) ·
-  `DOSSIER_SERIES_PLINY_X96.md` (Плиний, Письма X, 96, ок. 112 г., прочитано по-латыни: христиане поют песнь
-  Христу до рассвета; текста песни нет) ·
+  [`DOSSIER_SERIES_PLINY_X96.md`](DOSSIER_SERIES_PLINY_X96.md#pliny-perseus-x96) (Плиний, X.96–97: передаёт показания о песне Христу до рассвета, не описывает увиденную им службу. Собственные допросы в письме есть; слов песни и имени дня нет. Дата около 112 г. остаётся внешней) ·
   [`DOSSIER_SERIES_JUSTIN_APOL_67.md`](DOSSIER_SERIES_JUSTIN_APOL_67.md#justin-first1k-1911) (Юстин, I.13 и I.65–68: порядок воскресного собрания; «по мере сил» не доказывает сочинение молитвы заново. Полной молитвы здесь нет, но I.66 передаёт слова установления; способ пения не определён).
 - **References:** https://www.pravenc.ru/text/2662040.html ; https://www.newadvent.org/fathers/3203.htm ; https://www.cpdl.org/wiki/index.php/Phos_Hilaron
 
