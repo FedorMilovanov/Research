@@ -3,7 +3,7 @@
  "artifact": "REPO-HOLD-INVENTORY",
  "role": "DERIVED_READ_ONLY_NOT_AUTHORITY",
  "generatedAt": "2026-11-18",
- "testedCommit": "fe4e1cc7f2e1fec81d9dc91fb0e6aba7a9103ee4",
+ "testedCommit": "dda70d6a4af441b417492c0230c1dcb3ab6b07a3",
  "policy": "data/repository-evidence-policy-v2.json",
  "totals": {
   "json_files_with_holds": 35,
@@ -320,6 +320,712 @@
    ],
    "rightsState_gaps_in_current_files": [],
    "BLOCKED_without_PUBLICATION_HOLD": []
+  },
+  "untyped_holds": {
+   "untyped_entries": 134,
+   "new_debt_entries": 18,
+   "tokens": {
+    "canonical": 53,
+    "generic": 2,
+    "status": 78,
+    "typed": 6
+   },
+   "canonical_equivalent": 53,
+   "canonical_rows": [
+    {
+     "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+     "id": "04",
+     "raw": "LXX_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+     "id": "04",
+     "raw": "MT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+     "id": "07",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+     "id": "12",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+     "id": "14",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+     "id": "17",
+     "raw": "RECONCILIATION_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+     "id": "00c",
+     "raw": "ATTRIBUTION_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+     "id": "00c",
+     "raw": "EDITION_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+     "id": "00c",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+     "id": "00c",
+     "raw": "RECONCILIATION_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+     "id": "00r",
+     "raw": "LXX_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+     "id": "00r",
+     "raw": "MT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+     "id": "",
+     "raw": "FACSIMILE_HOLD",
+     "as": "ARCHIVE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+     "id": "",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+     "id": "00",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+     "id": "01",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+     "id": "03",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+     "id": "04",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+     "id": "10",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+     "id": "11",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+     "id": "12",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+     "id": "15",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+     "id": "16",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+     "id": "17",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+     "id": "18",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+     "id": "19",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+     "id": "20",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+     "id": "21",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+     "id": "00",
+     "raw": "TEXT_ACCESS_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+     "id": "09",
+     "raw": "LXX_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+     "id": "09",
+     "raw": "MT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+     "id": "10",
+     "raw": "MT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+     "id": "11",
+     "raw": "LXX_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+     "id": "11",
+     "raw": "MT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+     "id": "00_SYNTHESIS",
+     "raw": "ATTRIBUTION_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+     "id": "00_SYNTHESIS",
+     "raw": "EDITION_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+     "id": "00_SYNTHESIS",
+     "raw": "EDITION_UNAVAILABLE",
+     "as": "ARCHIVE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+     "id": "02_CONFLICT_",
+     "raw": "ATTRIBUTION_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+     "id": "02_CONFLICT_",
+     "raw": "CONTEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+     "id": "02_CONFLICT_",
+     "raw": "DATE_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+     "id": "02_CONFLICT_",
+     "raw": "EDITION_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+     "id": "02_CONFLICT_",
+     "raw": "LOCATOR_SINGLE_ATTESTATION",
+     "as": "LOCATOR_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+     "id": "03_PRACTICAL",
+     "raw": "EDITION_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+     "id": "05_RIGHTS_AN",
+     "raw": "ATTRIBUTION_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+     "id": "05_RIGHTS_AN",
+     "raw": "EDITION_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+     "id": "06_MERGE_REA",
+     "raw": "ATTRIBUTION_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+     "id": "06_MERGE_REA",
+     "raw": "EDITION_UNAVAILABLE",
+     "as": "ARCHIVE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+     "id": "D1_EVOLUTION",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+     "id": "D2_GOVERNMEN",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+     "id": "D3_CHRISTUS_",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+     "id": "D4_ROMAN_SAT",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+     "id": "D5_SOCINIANI",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+     "id": "D6_BAPTIST_1",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    }
+   ],
+   "canonical_without_new_debt": 35,
+   "new_debt": [
+    {
+     "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+     "id": "07",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+     "id": "",
+     "raw": "FACSIMILE_HOLD",
+     "as": "ARCHIVE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+     "id": "01",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+     "id": "03",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+     "id": "04",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+     "id": "10",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+     "id": "11",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+     "id": "12",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+     "id": "15",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+     "id": "16",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+     "id": "17",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+     "id": "18",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+     "id": "20",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+     "id": "21",
+     "raw": "ORIGINAL_TEXT_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+     "id": "05_RIGHTS_AN",
+     "raw": "ATTRIBUTION_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+     "id": "06_MERGE_REA",
+     "raw": "ATTRIBUTION_HOLD",
+     "as": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+     "id": "06_MERGE_REA",
+     "raw": "EDITION_UNAVAILABLE",
+     "as": "ARCHIVE_HOLD"
+    }
+   ],
+   "status_values": {
+    "PRIVATE_STUDY_ONLY": 13,
+    "LOCATOR_PARTIAL": 12,
+    "FALSE_FRIEND": 11,
+    "QUOTE_RISK": 6,
+    "FALSE_LOCATOR": 5,
+    "PARTIAL_VERIFICATION": 4,
+    "RIGHTS_UNKNOWN": 3,
+    "ATTRIBUTION_SECONDARY": 3,
+    "OPEN_TENSION": 2,
+    "DRAFT": 2,
+    "OPEN": 2,
+    "OPEN-LAYER": 2,
+    "RESEARCH / NOT PRODUCT": 1,
+    "MIRROR-LAG": 1,
+    "NO SETTLED VERDICT": 1,
+    "PARTIALLY_VERIFIED": 1,
+    "RESEARCH / NOT PUBLICATION-READY": 1,
+    "RIGHTS_UNCLEAR": 1,
+    "APPARATUS_FALSE_FRIEND": 1,
+    "CONFLICT": 1,
+    "BLOCKED": 1,
+    "PARTIAL_OBJECT": 1,
+    "FORBIDDEN": 1,
+    "PERMISSION_REQUIRED": 1,
+    "RESOLVED-BY-TEXT": 1
+   },
+   "generic_markers": [
+    {
+     "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+     "id": "15",
+     "raw": "HOLD"
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+     "id": "00_SYNTHESIS",
+     "raw": "HOLD"
+    }
+   ],
+   "unknown": [],
+   "top_raw": {
+    "ORIGINAL_TEXT_HOLD": 25,
+    "PRIVATE_STUDY_ONLY": 13,
+    "LOCATOR_PARTIAL": 12,
+    "FALSE_FRIEND": 11,
+    "QUOTE_RISK": 6,
+    "MT_HOLD": 5,
+    "ATTRIBUTION_HOLD": 5,
+    "EDITION_HOLD": 5,
+    "FALSE_LOCATOR": 5,
+    "LXX_HOLD": 4,
+    "PARTIAL_VERIFICATION": 4,
+    "RIGHTS_UNKNOWN": 3
+   },
+   "status": "PASS"
+  },
+  "baptist_book": {
+   "status_lines": 25,
+   "files": 17,
+   "routes": {
+    "EVIDENCE_HOLD": 16,
+    "ARCHIVE_HOLD": 6,
+    "LOCATOR_HOLD": 2,
+    "RIGHTS_HOLD": 1
+   },
+   "top_labels": [
+    [
+     "SECONDARY REPORTED / HOLD",
+     2
+    ],
+    [
+     "NARRATIVE RESOLVED / TECHNICAL TERMINOLOGY HOLD",
+     1
+    ],
+    [
+     "A2 RECEIVED / CORE FACT STRONGLY SUPPORTED / LOCATOR_HOLD",
+     1
+    ],
+    [
+     "FUNCTIONAL PROFILE STRONG / NUMERIC DETAIL HOLD",
+     1
+    ],
+    [
+     "CORE EVENT STRONGLY SUPPORTED / PRIMARY PAGE BINARY OPEN / MOTIVE HOLD",
+     1
+    ],
+    [
+     "OUTCOME STRONGLY SUPPORTED / LEGAL SEQUENCE HOLD",
+     1
+    ],
+    [
+     "DOCUMENT IDENTITY STRONG / BINARY OPEN / PAGE_VISUAL OPEN / MOTIVE HOLD",
+     1
+    ],
+    [
+     "LEGAL_TERMINOLOGY_HOLD",
+     1
+    ]
+   ],
+   "closure_claims": [],
+   "media_files": 26,
+   "rows": [
+    {
+     "path": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/101-ch08-print-republic-qa-resolutions-2026-09-06.md",
+     "line": 66,
+     "label": "NARRATIVE RESOLVED / TECHNICAL TERMINOLOGY HOLD",
+     "route": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/102-ch09-fetler-house-gospel-source-to-claim-2026-09-06.md",
+     "line": 143,
+     "label": "A2 RECEIVED / CORE FACT STRONGLY SUPPORTED / LOCATOR_HOLD",
+     "route": "LOCATOR_HOLD"
+    },
+    {
+     "path": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/102-ch09-fetler-house-gospel-source-to-claim-2026-09-06.md",
+     "line": 314,
+     "label": "FUNCTIONAL PROFILE STRONG / NUMERIC DETAIL HOLD",
+     "route": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/102-ch09-fetler-house-gospel-source-to-claim-2026-09-06.md",
+     "line": 344,
+     "label": "CORE EVENT STRONGLY SUPPORTED / PRIMARY PAGE BINARY OPEN / MOTIVE HOLD",
+     "route": "ARCHIVE_HOLD"
+    },
+    {
+     "path": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/102-ch09-fetler-house-gospel-source-to-claim-2026-09-06.md",
+     "line": 382,
+     "label": "OUTCOME STRONGLY SUPPORTED / LEGAL SEQUENCE HOLD",
+     "route": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/103-ch09-fetler-house-gospel-visual-dossier-2026-09-06.md",
+     "line": 267,
+     "label": "DOCUMENT IDENTITY STRONG / BINARY OPEN / PAGE_VISUAL OPEN / MOTIVE HOLD",
+     "route": "ARCHIVE_HOLD"
+    },
+    {
+     "path": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/105-ch09-fetler-war-arrest-exile-source-resolution-2026-09-06.md",
+     "line": 155,
+     "label": "LEGAL_TERMINOLOGY_HOLD",
+     "route": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/107-ch10-1917-1921-visual-dossier-2026-09-06.md",
+     "line": 218,
+     "label": "HOLD FOR IDENTITY VERIFICATION",
+     "route": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/11-vsehib-1944-visual-dossier-2026-09-06.md",
+     "line": 87,
+     "label": "HOLD UNTIL OBJECT IDENTIFIED",
+     "route": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/110-ch11-famine-international-brotherhood-source-to-claim-2026-09-06.md",
+     "line": 116,
+     "label": "STRONG LOCATOR CHAIN / FINAL SUMMATION HOLD",
+     "route": "LOCATOR_HOLD"
+    },
+    {
+     "path": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/111-ch11-famine-international-brotherhood-visual-dossier-2026-09-06.md",
+     "line": 270,
+     "label": "HOLD FOR FACSIMILE",
+     "route": "ARCHIVE_HOLD"
+    },
+    {
+     "path": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/116-ch12-school-bible-failed-unity-visual-dossier-2026-09-06.md",
+     "line": 105,
+     "label": "EVENT STRONG / EXACT COHORT IDENTITY HOLD",
+     "route": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/116-ch12-school-bible-failed-unity-visual-dossier-2026-09-06.md",
+     "line": 140,
+     "label": "HOLD — TITLE-PAGE AUDIT REQUIRED",
+     "route": "ARCHIVE_HOLD"
+    },
+    {
+     "path": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/117-ch12-joint-to-separate-bible-courses-source-resolution-2026-09-06.md",
+     "line": 78,
+     "label": "SEPARATION DIRECTION STRONG / 1925 COHORT COMPOSITION HOLD",
+     "route": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/128-ch15-1930s-unions-great-terror-source-to-claim-2026-09-06.md",
+     "line": 463,
+     "label": "FINAL SENTENCE/EXECUTION STRONG / INTERMEDIATE ARREST CHRONOLOGY HOLD",
+     "route": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/128-ch15-1930s-unions-great-terror-source-to-claim-2026-09-06.md",
+     "line": 510,
+     "label": "HOLD FOR PRIMARY UPGRADE",
+     "route": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/128-ch15-1930s-unions-great-terror-source-to-claim-2026-09-06.md",
+     "line": 632,
+     "label": "QUANTIFICATION HOLD",
+     "route": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/130-ch15-1930s-repression-mechanism-case-attribution-control-2026-09-06.md",
+     "line": 261,
+     "label": "HOLD",
+     "route": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/132-ch16-war-1944-union-source-to-claim-2026-09-06.md",
+     "line": 535,
+     "label": "CAUSAL CLAIM HOLD",
+     "route": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/133-ch16-war-1944-union-visual-document-dossier-2026-09-06.md",
+     "line": 388,
+     "label": "HIGH POTENTIAL / CURRENTLY HOLD",
+     "route": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/137-ch20-international-voice-memory-visual-archive-dossier-2026-09-06.md",
+     "line": 116,
+     "label": "BEST HUMAN HERO CANDIDATE / RIGHTS HOLD",
+     "route": "RIGHTS_HOLD"
+    },
+    {
+     "path": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/140-ch20-eaf-charter-1992-congress-date-conflict-control-2026-09-06.md",
+     "line": 199,
+     "label": "SECONDARY REPORTED / HOLD",
+     "route": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/140-ch20-eaf-charter-1992-congress-date-conflict-control-2026-09-06.md",
+     "line": 205,
+     "label": "SECONDARY REPORTED / HOLD",
+     "route": "EVIDENCE_HOLD"
+    },
+    {
+     "path": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/140-ch20-eaf-charter-1992-congress-date-conflict-control-2026-09-06.md",
+     "line": 216,
+     "label": "B1 / HOLD against primary page",
+     "route": "ARCHIVE_HOLD"
+    },
+    {
+     "path": "БАПТИСТЫ РОССИИ/BOOK_RESEARCH/94-ch07-mazaev-prokhanov-source-to-claim-2026-09-06.md",
+     "line": 146,
+     "label": "strong bibliographic locators; **long quotes HOLD until exact facsimile + page_visual_verified",
+     "route": "ARCHIVE_HOLD"
+    }
+   ],
+   "verdict": "NO_HOLD_CLOSABLE_FROM_REPO"
+  },
+  "suno_mirror": {
+   "registry_sources": 146,
+   "mirror_sections": 146,
+   "missing_in_mirror": [],
+   "extra_in_mirror": [],
+   "hold_drift": [],
+   "group_headings": [
+    "Third-pass additions — 2026-10-25",
+    "Fourth-pass additions — 2026-10-25",
+    "Fifth-pass additions — 2026-10-25",
+    "Seventh-pass addition — 2026-10-25",
+    "Ancient-hymn lane (PHOS-001) — added 2026-10-26",
+    "Источники PHOS-008 — *Veni redemptor gentium* (Амвросий Медиоланский), добавлены 2026-11-03"
+   ],
+   "status": "PASS"
   },
   "decision_only_holds": {
    "total_objects": 417,

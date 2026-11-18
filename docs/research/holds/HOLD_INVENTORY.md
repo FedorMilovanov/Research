@@ -1,6 +1,6 @@
 # HOLD inventory — сквозной инвентарь HOLD-ов Research
 
-**Собрано:** 2026-11-18; **проверенный коммит:** `fe4e1cc7f2e1fec81d9dc91fb0e6aba7a9103ee4`. **Роль:** производный read-only артефакт, не authority. Пересобрать: `python3 -B scripts/render_hold_inventory.py`.
+**Собрано:** 2026-11-18; **проверенный коммит:** `dda70d6a4af441b417492c0230c1dcb3ab6b07a3`. **Роль:** производный read-only артефакт, не authority. Пересобрать: `python3 -B scripts/render_hold_inventory.py`.
 
 Инвентарь отвечает на один вопрос: какие HOLD-и объявлены в репозитории, какого они типа и что нужно, чтобы закрыть каждый честно. Он **ничего не снимает**: по `data/repository-evidence-policy-v2.json` HOLD не снимается ни присутствием файла в Research/Drive, ни достижимостью URL, ни библиографической записью.
 
@@ -132,6 +132,64 @@
 | `data/charnock-handoff-receipt-v1.json` | 1 | `(без id)` |
 
 Оговорка: Один и тот же объект может учитываться в двух реестрах корпуса (например, карточка и её снимок в плане), поэтому сумма — верхняя граница.
+
+### 4.8 Неканоническая лексика внутри `holds`
+
+Записей в `holds`, которые не являются каноническим типом: **134**, вердикт **PASS**. Корпуса `ИСКУПЛЕНИЕ/{data,nt,synthesis,fathers}` объявляют свои `holds` как «маркеры состояния прозы файла (дубль для машинного учёта)», поэтому в одном массиве лежат три разных словаря: типизированные HOLD-и, HOLD-и в неканонической записи, значения осей состояния и вердикты. Массивы не переписываются: правка данных без правки прозы расщепила бы источник.
+
+| Неканоническая запись | Канонический тип | Всего | Из них добавляют новый долг |
+|---|---|---|---|
+| `ORIGINAL_TEXT_HOLD` | `EVIDENCE_HOLD` | 25 | 13 |
+| `ATTRIBUTION_HOLD` | `EVIDENCE_HOLD` | 5 | 2 |
+| `EDITION_HOLD` | `EVIDENCE_HOLD` | 5 | 0 |
+| `MT_HOLD` | `EVIDENCE_HOLD` | 5 | 0 |
+| `LXX_HOLD` | `EVIDENCE_HOLD` | 4 | 0 |
+| `EDITION_UNAVAILABLE` | `ARCHIVE_HOLD` | 2 | 1 |
+| `RECONCILIATION_HOLD` | `EVIDENCE_HOLD` | 2 | 0 |
+| `CONTEXT_HOLD` | `EVIDENCE_HOLD` | 1 | 0 |
+| `DATE_HOLD` | `EVIDENCE_HOLD` | 1 | 0 |
+| `FACSIMILE_HOLD` | `ARCHIVE_HOLD` | 1 | 1 |
+| `LOCATOR_SINGLE_ATTESTATION` | `LOCATOR_HOLD` | 1 | 0 |
+| `TEXT_ACCESS_HOLD` | `EVIDENCE_HOLD` | 1 | 0 |
+
+Итого: **53** записей сводятся к каноническому типу, из них **35** лишь повторяют уже объявленный на том же узле тип. Новый долг добавляют только **18** записей (17 уникальных пар «узел + тип»):
+
+- `ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json` → `ARCHIVE_HOLD`: `(без id)`
+- `ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json` → `EVIDENCE_HOLD`: `07`
+- `ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json` → `EVIDENCE_HOLD`: `01`, `03`, `04`, `10`, `11`, `12`, `15`, `16`, `17`, `18`, `20`, `21`
+- `ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json` → `ARCHIVE_HOLD`: `06_MERGE_REA`
+- `ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json` → `EVIDENCE_HOLD`: `05_RIGHTS_AN`, `06_MERGE_REA`
+
+Ещё **78** записей — это значения осей состояния и вердикты, а не HOLD-и (`PRIVATE_STUDY_ONLY`, `LOCATOR_PARTIAL`, `FALSE_FRIEND`, `QUOTE_RISK`, `FALSE_LOCATOR`, `PARTIAL_VERIFICATION`, `RIGHTS_UNKNOWN`, `ATTRIBUTION_SECONDARY`, `OPEN_TENSION`, `DRAFT` и др.). Они не требуют ни объекта, ни решения: это подписи к прозе.
+
+Голый `HOLD` встречается 2 раза (`ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json`/15, `ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json`/00_SYNTHESIS) и всегда рядом с типизированным HOLD на том же узле, то есть своего долга не несёт.
+
+Правило зафиксировано в генераторе: незнакомое значение в `holds` переводит проверку в `REVIEW`, поэтому новый словарь не проскочит молча.
+
+### 4.9 Книга «Баптисты России»: HOLD в прозе досье
+
+В `БАПТИСТЫ РОССИИ` HOLD объявлен строкой `Status:` досье, а не реестром: таких строк **25** в **17** файлах (остальные упоминания — прозаические ссылки на те же метки).
+
+| Маршрут закрытия | Меток |
+|---|---|
+| `EVIDENCE_HOLD` | 16 |
+| `ARCHIVE_HOLD` | 6 |
+| `LOCATOR_HOLD` | 2 |
+| `RIGHTS_HOLD` | 1 |
+
+Самые частые метки: `SECONDARY REPORTED / HOLD` ×2; `NARRATIVE RESOLVED / TECHNICAL TERMINOLOGY HOLD` ×1; `A2 RECEIVED / CORE FACT STRONGLY SUPPORTED / LOCATOR_HOLD` ×1; `FUNCTIONAL PROFILE STRONG / NUMERIC DETAIL HOLD` ×1; `CORE EVENT STRONGLY SUPPORTED / PRIMARY PAGE BINARY OPEN / MOTIVE HOLD` ×1; `OUTCOME STRONGLY SUPPORTED / LEGAL SEQUENCE HOLD` ×1; `DOCUMENT IDENTITY STRONG / BINARY OPEN / PAGE_VISUAL OPEN / MOTIVE HOLD` ×1; `LEGAL_TERMINOLOGY_HOLD` ×1.
+
+Заявлений о снятии HOLD в корпусе: **0**. То есть ни одна метка не забыта и не отменена молча.
+
+Медиа в каталоге: **26** файлов (PDF и снимки по другим объектам — Борноволоков, Белякова, Потапова, бюллетени Совета родственников), страничных образов, которых требуют метки `BINARY OPEN` / `HOLD FOR FACSIMILE`, среди них нет.
+
+Вердикт: **NO_HOLD_CLOSABLE_FROM_REPO** — метки называют конкретный отсутствующий объект, поэтому закрываются только получением страничных образов, а не работой с текстом репозитория.
+
+### 4.10 Зеркало реестра SUNO
+
+Реестр: **146** источников, зеркало: **146** записей, отсутствующих в зеркале **0**, лишних **0**, расхождений по HOLD **0** — вердикт **PASS**.
+
+Заголовков без id в зеркале: **6** — это групповые заголовки проходов («Third-pass additions» и т. п.), а не источники. Поздние греческие записи лежат на уровень ниже (`###`) и держат поля в одной строке через `·`, поэтому подсчёт только по `##` ошибочно показывает их отсутствующими.
 
 ## 5. Проверенные кандидаты и вердикты
 

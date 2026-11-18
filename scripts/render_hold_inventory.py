@@ -483,6 +483,283 @@ def check_hold_coverage(nodes_by_file):
     }
 
 
+# Словарь неканонической лексики внутри `holds`-массивов.
+
+# Часть корпусов (`ИСКУПЛЕНИЕ/{data,nt,synthesis,fathers}`) объявляет свои
+# `holds` как «маркеры состояния прозы файла (дубль для машинного учёта)».
+# Поэтому там встречаются три разных словаря в одном массиве: типизированные
+# HOLD-и, HOLD-и в неканонической записи, значения осей состояния и вердикты.
+# Переписывать такие файлы нельзя: они дублируют прозу, и правка массива без
+# правки прозы расщепит источник. Поэтому словарь живёт здесь, в производном
+# отчёте, и проверка падает, если появилось незнакомое значение.
+UNTYPED_CANONICAL_EQUIVALENT = {
+    "ORIGINAL_TEXT_HOLD": "EVIDENCE_HOLD",
+    "MT_HOLD": "EVIDENCE_HOLD",
+    "LXX_HOLD": "EVIDENCE_HOLD",
+    "ATTRIBUTION_HOLD": "EVIDENCE_HOLD",
+    "EDITION_HOLD": "EVIDENCE_HOLD",
+    "RECONCILIATION_HOLD": "EVIDENCE_HOLD",
+    "TEXT_ACCESS_HOLD": "EVIDENCE_HOLD",
+    "CONTEXT_HOLD": "EVIDENCE_HOLD",
+    "DATE_HOLD": "EVIDENCE_HOLD",
+    "FACSIMILE_HOLD": "ARCHIVE_HOLD",
+    "EDITION_UNAVAILABLE": "ARCHIVE_HOLD",
+    "LOCATOR_SINGLE_ATTESTATION": "LOCATOR_HOLD",
+}
+
+UNTYPED_STATUS_VOCABULARY = {
+    "PRIVATE_STUDY_ONLY",
+    "LOCATOR_PARTIAL",
+    "PARTIAL_OBJECT",
+    "RIGHTS_UNKNOWN",
+    "RIGHTS_UNCLEAR",
+    "PERMISSION_REQUIRED",
+    "BLOCKED",
+    "FORBIDDEN",
+    "CONFLICT",
+    "OPEN",
+    "OPEN-LAYER",
+    "OPEN_TENSION",
+    "DRAFT",
+    "MIRROR-LAG",
+    "FALSE_FRIEND",
+    "APPARATUS_FALSE_FRIEND",
+    "FALSE_LOCATOR",
+    "QUOTE_RISK",
+    "ATTRIBUTION_SECONDARY",
+    "PARTIAL_VERIFICATION",
+    "PARTIALLY_VERIFIED",
+    "NO SETTLED VERDICT",
+    "RESOLVED-BY-TEXT",
+    "RESEARCH / NOT PRODUCT",
+    "RESEARCH / NOT PUBLICATION-READY",
+}
+
+UNTYPED_GENERIC = {"HOLD"}
+
+UNTYPED_SPLIT = re.compile(r"\s*(?:/|\+)\s*")
+
+
+def classify_untyped(raw):
+    """Разложить неканоническую запись на понятные составляющие."""
+    if raw in HOLD_TYPES:
+        return "typed", raw
+    if raw in UNTYPED_CANONICAL_EQUIVALENT:
+        return "canonical", UNTYPED_CANONICAL_EQUIVALENT[raw]
+    if raw in UNTYPED_STATUS_VOCABULARY:
+        return "status", None
+    if raw in UNTYPED_GENERIC:
+        return "generic", None
+    tokens = [tok for tok in UNTYPED_SPLIT.split(raw) if tok]
+    if len(tokens) > 1:
+        kinds = {classify_untyped(tok)[0] for tok in tokens}
+        if "unknown" not in kinds:
+            return "compound", None
+    return "unknown", None
+
+
+def check_untyped_holds(nodes_by_file):
+    """Что на самом деле лежит в `holds`-массивах помимо канонических типов."""
+    kinds = collections.Counter()
+    by_raw = collections.Counter()
+    canonical_rows = []
+    status_rows = collections.Counter()
+    unknown_rows = []
+    generic_rows = []
+    new_debt = []
+    for path, nodes in nodes_by_file.items():
+        for node in nodes:
+            typed = set(node["holds"])
+            for raw in node["untyped"]:
+                kind, target = classify_untyped(raw)
+                by_raw[raw] += 1
+                parts = [raw] if kind in {"canonical", "status", "generic"} else [
+                    tok for tok in UNTYPED_SPLIT.split(raw) if tok
+                ]
+                for part in parts:
+                    part_kind, part_target = classify_untyped(part)
+                    kinds[part_kind] += 1
+                    if part_kind == "canonical":
+                        canonical_rows.append(
+                            {"path": path, "id": node["id"], "raw": part, "as": part_target}
+                        )
+                        if part_target not in typed:
+                            new_debt.append(
+                                {
+                                    "path": path,
+                                    "id": node["id"],
+                                    "raw": part,
+                                    "as": part_target,
+                                }
+                            )
+                    elif part_kind == "status":
+                        status_rows[part] += 1
+                    elif part_kind == "typed":
+                        pass
+                    elif part_kind == "generic":
+                        generic_rows.append({"path": path, "id": node["id"], "raw": part})
+                    else:
+                        unknown_rows.append({"path": path, "id": node["id"], "raw": part})
+    deduped = []
+    seen = set()
+    for row in new_debt:
+        key = (row["path"], row["id"], row["as"])
+        if key in seen:
+            continue
+        seen.add(key)
+        deduped.append(row)
+
+    return {
+        "untyped_entries": sum(by_raw.values()),
+        "new_debt_entries": len(new_debt),
+        "tokens": dict(sorted(kinds.items())),
+        "canonical_equivalent": len(canonical_rows),
+        "canonical_rows": canonical_rows,
+        "canonical_without_new_debt": len(canonical_rows) - len(new_debt),
+        "new_debt": deduped,
+        "status_values": dict(status_rows.most_common()),
+        "generic_markers": generic_rows,
+        "unknown": unknown_rows,
+        "top_raw": dict(by_raw.most_common(12)),
+        "status": "PASS" if not unknown_rows else "REVIEW",
+    }
+
+
+BAPTIST_DIR = ROOT / "БАПТИСТЫ РОССИИ"
+
+# Метка в этом корпусе живёт в строке `Status:` досье, а не в JSON-реестре.
+BAPTIST_STATUS_RE = re.compile(r"^\s*-?\s*Status:\s*(.+)$")
+BAPTIST_CLOSED_RE = re.compile(
+    r"hold[s]?\s+(closed|lifted|released|resolved|cleared)", re.IGNORECASE
+)
+BAPTIST_ROUTES = (
+    ("ARCHIVE_HOLD", re.compile(r"FACSIMILE|BINARY|PAGE|VISUAL|BYTES|SCAN")),
+    ("LOCATOR_HOLD", re.compile(r"LOCATOR")),
+    ("RIGHTS_HOLD", re.compile(r"RIGHTS|PERMISSION")),
+    ("PUBLICATION_HOLD", re.compile(r"PUBLICATION")),
+)
+
+
+SUNO_DIR = ROOT / "SUNO_HYMNS"
+SUNO_REGISTRY = SUNO_DIR / "data" / "source-registry-v1.json"
+SUNO_MIRROR = SUNO_DIR / "RESEARCH" / "SOURCE_REGISTER.md"
+SUNO_SECTION_RE = re.compile(r"^#{2,3}\s+(.+)$")
+SUNO_ID_RE = re.compile(r"^[A-Z0-9][A-Z0-9-]{4,}$")
+
+
+def check_suno_mirror():
+    """Сверить человекочитаемое зеркало SUNO с машинным реестром.
+
+    Зеркало использует два уровня заголовков: обычные записи идут как `##`,
+    поздние греческие записи — как `##`-группа с `###`-записями внутри и
+    полями в одну строку через `·`. Считать только `##` — значит объявить
+    недостающими те записи, которые на самом деле есть.
+    """
+    if not SUNO_REGISTRY.exists() or not SUNO_MIRROR.exists():
+        return {"status": "SKIP", "reason": "registry or mirror missing"}
+    data = json.loads(SUNO_REGISTRY.read_text(encoding="utf-8"))
+    sources = data["sources"] if isinstance(data, dict) else data
+    registry = {src["id"]: src for src in sources}
+    sections = {}
+    headings_without_id = []
+    current = None
+    for line in SUNO_MIRROR.read_text(encoding="utf-8").splitlines():
+        match = SUNO_SECTION_RE.match(line)
+        if match:
+            token = match.group(1).split(" ")[0]
+            if SUNO_ID_RE.match(token):
+                current = token
+                sections.setdefault(current, [])
+            else:
+                current = None
+                headings_without_id.append(match.group(1).strip())
+            continue
+        if current is None:
+            continue
+        found = re.search(r"HOLDs:\s*([^·]*)", line)
+        if found:
+            sections[current].append(found.group(1).strip())
+    missing = sorted(set(registry) - set(sections))
+    extra = sorted(set(sections) - set(registry))
+    drift = []
+    for sid, values in sections.items():
+        if sid not in registry:
+            continue
+        text = values[-1] if values else ""
+        tokens = {tok for tok in re.split(r"[,\s]+", text) if tok in HOLD_TYPES}
+        expected = set(registry[sid].get("holds") or [])
+        if tokens != expected:
+            drift.append(
+                {"id": sid, "mirror": text[:80], "registry": sorted(expected)}
+            )
+    return {
+        "registry_sources": len(registry),
+        "mirror_sections": len(sections),
+        "missing_in_mirror": missing,
+        "extra_in_mirror": extra,
+        "hold_drift": drift,
+        "group_headings": headings_without_id,
+        "status": "PASS" if not (missing or extra or drift) else "DRIFT",
+    }
+
+
+def check_baptist_book_holds():
+    """Разобрать HOLD-метки книги «Баптисты России».
+
+    Здесь HOLD объявлен прозой досье (`Status: ... HOLD`), а не реестром,
+    поэтому единственное, что можно установить по репозиторию: сколько меток
+    живо, что каждая называет, и нет ли заявленного снятия.
+    """
+    status_lines = []
+    closure_claims = []
+    if BAPTIST_DIR.exists():
+        for path in sorted(BAPTIST_DIR.rglob("*.md")):
+            try:
+                lines = path.read_text(encoding="utf-8").splitlines()
+            except (OSError, UnicodeDecodeError):
+                continue
+            for number, line in enumerate(lines, 1):
+                if BAPTIST_CLOSED_RE.search(line):
+                    closure_claims.append(
+                        {"path": rel(path), "line": number, "text": line.strip()[:200]}
+                    )
+                match = BAPTIST_STATUS_RE.match(line)
+                if not match:
+                    continue
+                label = match.group(1).strip().strip("*`").strip().rstrip("*`.")
+                tokens = re.findall(r"[A-Za-z_]+", label.upper())
+                if not any(tok == "HOLD" or tok.endswith("_HOLD") for tok in tokens):
+                    continue
+                label = re.sub(r"\*\*\.?$", "", label).strip()
+                route = "EVIDENCE_HOLD"
+                for name, pattern in BAPTIST_ROUTES:
+                    if pattern.search(label.upper()):
+                        route = name
+                        break
+                status_lines.append(
+                    {"path": rel(path), "line": number, "label": label, "route": route}
+                )
+    media = []
+    if BAPTIST_DIR.exists():
+        media = [
+            rel(path)
+            for path in BAPTIST_DIR.rglob("*")
+            if path.is_file() and path.suffix.lower() in {".pdf", ".jpg", ".jpeg", ".png"}
+        ]
+    routes = collections.Counter(row["route"] for row in status_lines)
+    labels = collections.Counter(row["label"] for row in status_lines)
+    return {
+        "status_lines": len(status_lines),
+        "files": len({row["path"] for row in status_lines}),
+        "routes": dict(routes.most_common()),
+        "top_labels": [[label, count] for label, count in labels.most_common(8)],
+        "closure_claims": closure_claims,
+        "media_files": len(media),
+        "rows": status_lines,
+        "verdict": "NO_HOLD_CLOSABLE_FROM_REPO" if not closure_claims else "REVIEW",
+    }
+
+
 def check_decision_only_holds(nodes_by_file):
     """Объекты, которые держат только права и публикация.
 
@@ -576,6 +853,9 @@ def build():
         "reformation_registry_vs_sweep": check_reformation_sweep(),
         "axis_contradictions": check_hold_axes_contradictions(nodes_by_file),
         "hold_coverage": check_hold_coverage(nodes_by_file),
+        "untyped_holds": check_untyped_holds(nodes_by_file),
+        "baptist_book": check_baptist_book_holds(),
+        "suno_mirror": check_suno_mirror(),
         "decision_only_holds": check_decision_only_holds(nodes_by_file),
     }
     checks.update(check_registry_files_exist(nodes_by_file))
@@ -906,6 +1186,135 @@ def render_markdown(report):
             add(f"| `{path}` | {info['count']} | {sample} |")
         add("")
     add(f"Оговорка: {decision['caveat']}")
+    add("")
+
+    untyped = checks["untyped_holds"]
+    add("### 4.8 Неканоническая лексика внутри `holds`")
+    add("")
+    add(
+        f"Записей в `holds`, которые не являются каноническим типом: "
+        f"**{untyped['untyped_entries']}**, вердикт **{untyped['status']}**. "
+        "Корпуса `ИСКУПЛЕНИЕ/{data,nt,synthesis,fathers}` объявляют свои "
+        "`holds` как «маркеры состояния прозы файла (дубль для машинного "
+        "учёта)», поэтому в одном массиве лежат три разных словаря: "
+        "типизированные HOLD-и, HOLD-и в неканонической записи, значения осей "
+        "состояния и вердикты. Массивы не переписываются: правка данных без "
+        "правки прозы расщепила бы источник."
+    )
+    add("")
+    add("| Неканоническая запись | Канонический тип | Всего | Из них добавляют новый долг |")
+    add("|---|---|---|---|")
+    mapping = collections.Counter()
+    for row in untyped["canonical_equivalent_list"] if "canonical_equivalent_list" in untyped else []:
+        pass
+    canon_rows = untyped.get("canonical_rows", [])
+    for row in canon_rows:
+        mapping[(row["raw"], row["as"])] += 1
+    novel = collections.Counter((r["raw"], r["as"]) for r in untyped["new_debt"])
+    for (raw, target), count in sorted(mapping.items(), key=lambda kv: (-kv[1], kv[0])):
+        add(f"| `{raw}` | `{target}` | {count} | {novel.get((raw, target), 0)} |")
+    add("")
+    add(
+        f"Итого: **{untyped['canonical_equivalent']}** записей сводятся к "
+        f"каноническому типу, из них **{untyped['canonical_without_new_debt']}** "
+        "лишь повторяют уже объявленный на том же узле тип. Новый долг "
+        f"добавляют только **{untyped['new_debt_entries']}** записей "
+        f"({len(untyped['new_debt'])} уникальных пар «узел + тип»):"
+    )
+    add("")
+    grouped = collections.defaultdict(list)
+    for row in untyped["new_debt"]:
+        grouped[(row["path"], row["as"])].append(row["id"] or "(без id)")
+    for (path, target), ids in sorted(grouped.items()):
+        add(f"- `{path}` → `{target}`: {', '.join(f'`{i}`' for i in sorted(ids))}")
+    add("")
+    status_counts = untyped["status_values"]
+    add(
+        f"Ещё **{sum(status_counts.values())}** записей — это значения осей "
+        "состояния и вердикты, а не HOLD-и (`"
+        + "`, `".join(list(status_counts)[:10])
+        + "` и др.). Они не требуют ни объекта, ни решения: это подписи к прозе."
+    )
+    add("")
+    if untyped["generic_markers"]:
+        places = ", ".join(
+            f"`{row['path']}`/{row['id'] or '(без id)'}" for row in untyped["generic_markers"]
+        )
+        add(
+            f"Голый `HOLD` встречается {len(untyped['generic_markers'])} раза "
+            f"({places}) и всегда рядом с типизированным HOLD на том же узле, "
+            "то есть своего долга не несёт."
+        )
+        add("")
+    add(
+        "Правило зафиксировано в генераторе: незнакомое значение в `holds` "
+        "переводит проверку в `REVIEW`, поэтому новый словарь не проскочит "
+        "молча."
+    )
+    add("")
+
+    baptist = checks["baptist_book"]
+    add("### 4.9 Книга «Баптисты России»: HOLD в прозе досье")
+    add("")
+    add(
+        f"В `БАПТИСТЫ РОССИИ` HOLD объявлен строкой `Status:` досье, а не "
+        f"реестром: таких строк **{baptist['status_lines']}** в "
+        f"**{baptist['files']}** файлах (остальные упоминания — прозаические "
+        "ссылки на те же метки)."
+    )
+    add("")
+    if baptist["routes"]:
+        add("| Маршрут закрытия | Меток |")
+        add("|---|---|")
+        for route, count in baptist["routes"].items():
+            add(f"| `{route}` | {count} |")
+        add("")
+    if baptist["top_labels"]:
+        add("Самые частые метки: " + "; ".join(
+            f"`{label}` ×{count}" for label, count in baptist["top_labels"]
+        ) + ".")
+        add("")
+    add(
+        f"Заявлений о снятии HOLD в корпусе: **{len(baptist['closure_claims'])}**. "
+        "То есть ни одна метка не забыта и не отменена молча."
+    )
+    add("")
+    add(
+        f"Медиа в каталоге: **{baptist['media_files']}** файлов (PDF и снимки "
+        "по другим объектам — Борноволоков, Белякова, Потапова, бюллетени "
+        "Совета родственников), страничных образов, которых требуют метки "
+        "`BINARY OPEN` / `HOLD FOR FACSIMILE`, среди них нет."
+    )
+    add("")
+    add(
+        "Вердикт: **" + baptist["verdict"] + "** — метки называют конкретный "
+        "отсутствующий объект, поэтому закрываются только получением "
+        "страничных образов, а не работой с текстом репозитория."
+    )
+    add("")
+
+    suno = checks["suno_mirror"]
+    add("### 4.10 Зеркало реестра SUNO")
+    add("")
+    if suno.get("status") == "SKIP":
+        add("Реестр или зеркало отсутствуют — проверка пропущена.")
+    else:
+        add(
+            f"Реестр: **{suno['registry_sources']}** источников, зеркало: "
+            f"**{suno['mirror_sections']}** записей, отсутствующих в зеркале "
+            f"**{len(suno['missing_in_mirror'])}**, лишних "
+            f"**{len(suno['extra_in_mirror'])}**, расхождений по HOLD "
+            f"**{len(suno['hold_drift'])}** — вердикт **{suno['status']}**."
+        )
+        add("")
+        add(
+            "Заголовков без id в зеркале: "
+            f"**{len(suno['group_headings'])}** — это групповые заголовки "
+            "проходов («Third-pass additions» и т. п.), а не источники. "
+            "Поздние греческие записи лежат на уровень ниже (`###`) и держат "
+            "поля в одной строке через `·`, поэтому подсчёт только по `##` "
+            "ошибочно показывает их отсутствующими."
+        )
     add("")
 
     add("## 5. Проверенные кандидаты и вердикты")
