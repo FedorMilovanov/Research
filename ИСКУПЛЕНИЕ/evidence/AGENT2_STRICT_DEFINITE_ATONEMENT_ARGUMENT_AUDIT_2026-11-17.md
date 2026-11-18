@@ -1304,3 +1304,18 @@ HOLD без изменений: CO 49:100, CO 45:706, `PRINT_IMAGE_HOLD`, пра
 | 8 | CO 1, «accepit», части 1–2 | «a nobis accepit» нет; вывод раунда 98 подтверждён |
 
 **Вердикты S1–S5 не меняются.** Снято из HOLD: Стюарт. HOLD: Lewis & Demarest; MacArthur & Mayhue, p. 544; Green, p. 118; White; Шнукер; Грудем.
+
+## 53. Раунд 102 (2026-11-17): Лютер, сн. 5, по WA 40/I
+
+Подробности — `34_` §4.185 (Q181), S200; REPASS-документ, §25.
+
+| # | Место | Итог |
+|---|---|---|
+| 1 | Сн. 5: «несет грехи всех людей в Своем теле» | ACCURATE, дословно: WA 40/I, 433 «qui habet et portat omnia omnium peccata in corpore suo» |
+| 2 | Сн. 5: «понес грехи всего мира» | ACCURATE: WA 40/I, 443 «gestaret in nostra larva peccatum totius mundi» |
+| 3 | Сн. 5: «от первого человека и до последнего дня… на плечах одного, родившегося от Марии» | По смыслу подтверждено (439: «praeterita, praesentia et futura»; 442: «in humeros suos»); словесная форма не найдена — `WORDING_NOT_LOCATED` (мягко) |
+| 4 | Локатор *LW* 26, pp. 285, 277 | `PLAUSIBLE` (*LW* недоступен; WA 433 ≈ *LW* 26:277) |
+| 5 | Контекст (444: «Quatenus igitur hoc credis, eatenus habes») | Совпадает со схемой статьи «обеспечение — всем, применение — по вере»; `CONTEXT_OMITTED` не ставится |
+| 6 | Green, сн. 56–57 | IA: только экземпляры с ограниченным доступом — HOLD |
+
+**Вердикты S1–S5 не меняются.** HOLD: *LW* 26 (страницы); Green; Lewis & Demarest; MacArthur & Mayhue; White; Шнукер; Грудем.

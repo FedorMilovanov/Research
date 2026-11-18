@@ -198,6 +198,9 @@
   - **Сн. 86–89, 92:** страницы EXACT. **Сн. 91:** `LOCATOR_ERROR` (вероятно). Мягкие вердикты: «XVII–XIX веков» — `SCOPE_EXCEEDED`; сн. 89–90 — `OVERGENERALIZATION`; сн. 92 — `TRANSLATION_SHIFT` и `CONTEXT_OMITTED` («universal benefits in that particular redemption»).
   - **CO 1, «accepit»:** вся выдача просмотрена; «a nobis accepit» нет — вывод раунда 98 подтверждён.
   - Вердикты S1–S5 не меняются. Документ: REPASS, §24.
+- **раунд 102 (2026-11-17, AGENT 2):** §3 (S200), новый §4.185 (Q181): Лютер, сн. 5, по латинскому оригиналу (WA 40/I, Гал. 3:13).
+  - Две фразы из трёх — дословно (WA 40/I, 433, 443); третья — по смыслу (439, 442), словесная форма не найдена (`WORDING_NOT_LOCATED`, мягко). Локатор *LW* — `PLAUSIBLE`. Контекст («Quatenus credis, eatenus habes») совпадает со схемой статьи — `CONTEXT_OMITTED` не ставится.
+  - Green (сн. 56–57): IA закрыт — HOLD. Вердикты S1–S5 не меняются. Документ: REPASS, §25.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -560,6 +563,7 @@
 | S197 *(раунд 99, 2026-11-17)* | L. Berkhof, *Systematic Theology* (W. B. Eerdmans), IA `berkhof-louis-systematic-theology-w.-b.-eerdmans` (`ia601902`, dir `/23/items/…`; текстовый PDF с печатными колонтитулами; `page_numbers.json`, уверенность 82): л. 113 = p. 118; л. 114 = p. 119; л. 117 = p. 122; л. 118 = p. 123; л. 119 = p. 124; л. 120 = p. 125 («Our confessional standards embody the infralapsarian position, but do not condemn Supralapsarianism…»; Утрехт 1908); л. 392/394 = pp. 393/394 (п. 1(d); п. 2 «dubious and very unsatisfactory»); л. 399 = p. 399 (колонтитул «…ATONEMENT 399»; Еф. 1:10; Кол. 1:20; Рим. 8:19–22). Калибровка с Banner of Truth 2003 — по сн. 46–48 статьи (3 точки). | A2 (пагинация издания статьи установлена калибровкой; само издание Banner 2003 не открыто) |
 | S198 *(раунд 100, 2026-11-17)* | M. J. Erickson, *Christian Theology*, 3rd ed. (Grand Rapids: Baker, 2013), IA `erickson-millard-j-christian-theology-baker` (`ia600505`, dir `/0/items/…`; текстовый PDF, `page_numbers.json` уверенность 0 — печатные страницы не установлены): л. 984 (гл. 43: супра/инфра/суб по четыре шага; «Sublapsarianism (unlimited atonement with a limited application)»); л. 1519 (прим. 1599: Warfield, *Plan of Salvation*, 1942, p. 31; прим. 1600: Strong, *ST*, 778–79); л. 882 (гл. 38: Strong «maintains that Calvin in his commentaries took a similar position»); л. 1512 (прим. 1398: Strong 1907, 777–78). | A2 (другое издание, чем рус. пер. 1999 г.; страница статьи не проверена) |
 | S199 *(раунд 101, 2026-11-17)* | K. J. Stewart, «The Points of Calvinism: Retrospect and Prospect», *SBET* 26.2 (2008) 187–203, PDF `biblicalstudies.org.uk/pdf/sbet/26-2_187.pdf` (вёрстка журнала; страницы выведены по разрывам и колонтитулам: 17 стр. = 187–203): p. 189 («mistaken premise»; Spitz 1971), p. 194 (Скотт — «General Redemption»; Топлади — «limited redemption»), p. 196 (прим. 35: Беттнер 1932), p. 198 («universal benefits in that particular redemption»; прим. 41), p. 199 («There is no pretending here…»), pp. 201–203 (таблица). Дополнительно: CO 1 (`operaquaesupersu0029calv`), `inside.php` q=accepit, части 1–2 выдачи (листы 380, 400, 478, 541, 601, 635). | A1 (текст); номера страниц — выведены |
+| S200 *(раунд 102, 2026-11-17)* | *D. Martin Luthers Werke. Kritische Gesamtausgabe*, Bd. 40/I (Weimar, 1911), IA `werkekritischege40luthuoft` (`ia800806`, dir `/10/items/…`): толкование Гал. 3:13, слой «Dr» (печатный текст 1535 г.). Страница = лист − 13 (сигнатура «XL, 1 — 28» на л. 446 = p. 433): pp. 433 (л. 446), 437 (л. 450), 439 (л. 452), 442–444 (лл. 455–457). Дополнительно: Green, *2 Peter and Jude* (TNTC) — на IA только экземпляры с ограниченным доступом. | A1 (латинский оригинал; номера страниц WA выведены по сигнатуре) |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8121,8 +8125,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.182 | Q178 | Печатные страницы Беркхофа: сн. 93 (p. 125) — ACCURATE, локатор EXACT, оговорка о терпимости на той же странице опущена (`CONTEXT_OMITTED`, мягко); сн. 46–48 — EXACT; листы §4.176 → pp. 118–124 (р. 99) |
 | 4.183 | Q179 | Эриксон (сн. 95–97) по 3-му изд.: сн. 96–97 ACCURATE; сн. 95 «в последнее время» — `SIMPLIFIED` (источник Эриксона — Strong 1907); звено Strong → Erickson — A2; рамка сн. 13 прослежена до Richards/Strong (р. 100) |
 | 4.184 | Q180 | Стюарт 2008 (сн. 80, 86–92): страницы EXACT, кроме сн. 91 (`LOCATOR_ERROR`, вероятно); «XVII–XIX веков» — `SCOPE_EXCEEDED`; сн. 89–90 — `OVERGENERALIZATION`; сн. 92 — `TRANSLATION_SHIFT`, `CONTEXT_OMITTED`; CO 1 «accepit» — хвост раунда 98 закрыт (р. 101) |
+| 4.185 | Q181 | Лютер, сн. 5, по WA 40/I: две фразы — дословно (433, 443), третья — по смыслу (`WORDING_NOT_LOCATED`); *LW* — `PLAUSIBLE`; контекст согласуется со статьёй; Green — IA закрыт (р. 102) |
 
-⇒ разделов с `Q` — **177**, разделов §4.x — **179**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **178**, разделов §4.x — **180**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -9283,6 +9288,23 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 8. **CO 1, «accepit».** Части 1–2 выдачи (листы 380–635) не содержат «a nobis accepit». Вывод раунда 98 (§4.181) подтверждён для всей выдачи (в пределах распознанного текста).
 
 **Чего нет.** MacArthur & Mayhue, *Biblical Doctrine*, p. 544 (сн. 91, «ср.»); Lewis & Demarest, II, p. 381 (сн. 83).
+
+Вердикты S1–S5 не меняются.
+
+### 4.185. Q181 — Лютер, сн. 5: латинский оригинал толкования на Гал. 3:13 (WA 40/I) (раунд 102, 2026-11-17)
+
+**Повод.** Сн. 5 (*LW* 26, pp. 285, 277) с раунда 83 — HOLD; в раунде 86 смысл подтверждён по английскому переводу 1575 г. Полная таблица — REPASS-документ, §25. Источник — S200.
+
+**Ответы.**
+1. **«Он взял и несет грехи всех людей в Своем теле»** — дословно: WA 40/I, 433, «qui habet et portat omnia omnium peccata in corpore suo. Non quod ipse commiserit ea, sed quod ea a nobis commissa susceperit in corpus».
+2. **«Он понес грехи всего мира»** — WA 40/I, 443, «cum ita gestaret in nostra larva peccatum totius mundi… pro nobis Maledictum factus est»; ср. «mea, tua et totius mundi peccata in sese recepisset».
+3. **«Грехи всего мира, от первого человека и до последнего дня истории, лежат на плечах одного, родившегося от Марии»** — по смыслу: 439, «totius mundi peccata praeterita, praesentia et futura»; 442, «imponere in humeros suos peccata». Буквальная форма в WA 40/I, 432–444 не найдена — `WORDING_NOT_LOCATED` (мягко; возможно, вольная передача или формула *LW*).
+4. **Локатор.** Страницы *LW* не проверены. При обычном соответствии *LW* 26:277 ≈ WA 40/I, 433 ссылка правдоподобна (`PLAUSIBLE`).
+5. **Контекст.** WA 40/I, 444: «sola Fides apprehendit hanc victoriam Christi. Quatenus igitur hoc credis, eatenus habes». Всеобщее несение и обладание по вере — та же схема, что у статьи на с. 31. `CONTEXT_OMITTED` не ставится.
+6. **Граница вывода.** Лютер — свидетель всеобщего языка несения грехов. Вопрос о намерении в смысле позднейших споров (Дорт II.8) он не решает, и статья ему этого не приписывает.
+7. **Green, сн. 56–57.** На IA только экземпляры с ограниченным доступом — HOLD.
+
+**Чего нет.** *LW* 26, pp. 277, 285 (печатные страницы); Green, p. 118.
 
 Вердикты S1–S5 не меняются.
 
