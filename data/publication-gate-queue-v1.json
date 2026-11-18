@@ -1,0 +1,433 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "RESEARCH-PUBLICATION-GATE-QUEUE-V1",
+  "snapshotDate": "2026-11-18",
+  "currentAuthority": "RESEARCH-PUBLIC-PROJECTION-CURRENT-2026-08-02",
+  "baseQueue": "data/public-projection-queue-2026-08-01.json",
+  "compositionRule": "Load the base queue by record id, replace every supersedes_queue_record_id with overlay.effective_record, then recompute counts. Consumers must not read the base queue as current without applying all listed overlays.",
+  "policy": {
+    "baseQueueAloneIsHistorical": true,
+    "overlayApplicationRequired": true,
+    "countsMustBeRecomputed": true,
+    "researchClosureIsNotPublication": true,
+    "promoteRequiresNoHolds": true
+  },
+  "declaredCounts": {
+    "PROMOTE": 0,
+    "REFERENCE": 4,
+    "SUPERSEDED": 0,
+    "BLOCKED": 6,
+    "total": 10
+  },
+  "composedCounts": {
+    "BLOCKED": 6,
+    "REFERENCE": 4
+  },
+  "overlaysApplied": [
+    {
+      "overlay": "data/public-projection-osk-wave6-overlay-2026-08-01.json",
+      "authorityId": "A06-OSK-CURRENT-PROJECTION-2026-08-02",
+      "record": "osk-power-dark-side-standalone",
+      "previousDisposition": "BLOCKED",
+      "effectiveDisposition": "REFERENCE"
+    }
+  ],
+  "records": [
+    {
+      "id": "baptist-archive-v156",
+      "corpus": "БАПТИСТЫ РОССИИ / grouped archive",
+      "disposition": "BLOCKED",
+      "effectiveHolds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "researchStatus": "ACTIVE_MICROBATCH_V156",
+      "targetRouteState": "EXISTING_PRODUCTION_DIST_SERIES",
+      "alreadyPublic": true,
+      "nextAction": "Acquire scans, perform OCR plus visual verification, and map verified page claims to individual existing Baptist routes.",
+      "forbiddenPromotion": "Holdings, finding aids, snippets and page-count metadata do not prove article-ready content or quotation rights.",
+      "sourceAuthorities": [
+        {
+          "path": "00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md",
+          "exists": true
+        },
+        {
+          "path": "БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/data/NEXT_MICROBATCH.csv",
+          "exists": true
+        }
+      ],
+      "rightsLedgerIds": [
+        {
+          "id": "DRV-BAPTIST-ARCHIVE",
+          "recordedInRepository": true
+        }
+      ],
+      "rightsLedger": {
+        "rightsLedgerId": "DRV-BAPTIST-ARCHIVE",
+        "rightsState": "ARCHIVE_CONTENT_AND_REUSE_NOT_OBTAINED",
+        "publicationEligible": false,
+        "driveObjects": 3,
+        "driveCheckedAt": "2026-08-01",
+        "rule": "Drive presence proves custody only. Publication requires item-level provenance, rights basis, credit line, identity/content review, and a target route owner."
+      },
+      "supersededBy": null,
+      "previousDisposition": null,
+      "previousHolds": null
+    },
+    {
+      "id": "biblical-atlas-primary-strengthening",
+      "corpus": "БИБЛЕЙСКИЙ АТЛАС",
+      "disposition": "BLOCKED",
+      "effectiveHolds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "researchStatus": "ACTIVE_PIHAHIROTH_SEA_CROSSING_AND_PRIMARY_SOURCE_STRENGTHENING",
+      "targetRouteState": "EXISTING_MAP_HUB_AND_NATIVE_ROUTES",
+      "alreadyPublic": true,
+      "nextAction": "Pin exact primary locators and map/base-image rights before changing map claims or assets.",
+      "forbiddenPromotion": "A map geometry or working dossier does not establish historical location certainty or image reuse rights.",
+      "sourceAuthorities": [
+        {
+          "path": "00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md",
+          "exists": true
+        },
+        {
+          "path": "БИБЛЕЙСКИЙ АТЛАС/README.md",
+          "exists": true
+        }
+      ],
+      "rightsLedgerIds": [
+        {
+          "id": "DRV-BIBLICAL-ATLAS",
+          "recordedInRepository": true
+        }
+      ],
+      "rightsLedger": {
+        "rightsLedgerId": "DRV-BIBLICAL-ATLAS",
+        "rightsState": "UNKNOWN",
+        "publicationEligible": false,
+        "driveObjects": 0,
+        "driveCheckedAt": "2026-08-01",
+        "rule": "Drive presence proves custody only. Publication requires item-level provenance, rights basis, credit line, identity/content review, and a target route owner."
+      },
+      "supersededBy": null,
+      "previousDisposition": null,
+      "previousHolds": null
+    },
+    {
+      "id": "bratsky-listok-1906-1910",
+      "corpus": "Братский листок 1906–1910",
+      "disposition": "BLOCKED",
+      "effectiveHolds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "researchStatus": "RESEARCH_PACKAGE_READY_SITE_PUBLICATION_FALSE",
+      "targetRouteState": "EXISTING_ROUTE_CANDIDATES_NO_APPROVED_CLAIM_MAP",
+      "alreadyPublic": true,
+      "nextAction": "Select one bounded thesis, pin the Research manifest digest, resolve every quotation to a page image, and disclose the eight unknown issues.",
+      "forbiddenPromotion": "Do not claim the complete run was examined or that page maps alone make wording quote-ready.",
+      "sourceAuthorities": [
+        {
+          "path": "RUSSIAN_BAPTISTS_ARCHIVE/BRATSKY_LISTOK_PUBLICATION_AUTHORITY_2026-08-01.md",
+          "exists": true
+        },
+        {
+          "path": "data/bratsky-listok-publication-ledger.json",
+          "exists": true
+        }
+      ],
+      "rightsLedgerIds": [
+        {
+          "id": "DRV-BRATSKY-REGISTER",
+          "recordedInRepository": true
+        }
+      ],
+      "rightsLedger": {
+        "rightsLedgerId": "DRV-BRATSKY-REGISTER",
+        "rightsState": "SCAN_PAGE_AND_REUSE_REVIEW_REQUIRED",
+        "publicationEligible": false,
+        "driveObjects": 2,
+        "driveCheckedAt": "2026-08-01",
+        "rule": "Drive presence proves custody only. Publication requires item-level provenance, rights basis, credit line, identity/content review, and a target route owner."
+      },
+      "supersededBy": null,
+      "previousDisposition": null,
+      "previousHolds": null
+    },
+    {
+      "id": "genesis6-enoch-hard-texts",
+      "corpus": "Genesis 6 / Enoch extension",
+      "disposition": "REFERENCE",
+      "effectiveHolds": [
+        "PUBLICATION_HOLD"
+      ],
+      "researchStatus": "NAMED_RESEARCH_BLOCKERS_CLOSED_PUBLICATION_HOLD",
+      "targetRouteState": "EXISTING_HARD_TEXT_SERIES",
+      "alreadyPublic": true,
+      "nextAction": "Compare current hard-text wording and locators to the two manifests before any editorial change.",
+      "forbiddenPromotion": "Research closure does not itself approve a reader-facing wording or deployment.",
+      "sourceAuthorities": [
+        {
+          "path": "00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md",
+          "exists": true
+        },
+        {
+          "path": "data/genesis6-authority-manifest.json",
+          "exists": true
+        },
+        {
+          "path": "data/genesis6-enoch-extension-authority-manifest.json",
+          "exists": true
+        }
+      ],
+      "rightsLedgerIds": [],
+      "rightsLedger": null,
+      "supersededBy": null,
+      "previousDisposition": null,
+      "previousHolds": null
+    },
+    {
+      "id": "gill-archive-families",
+      "corpus": "John Gill closed-book/archive families",
+      "disposition": "BLOCKED",
+      "effectiveHolds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "researchStatus": "ACTIVE_ARCHIVE_FAMILIES_AFTER_PUBLIC_SUITE",
+      "targetRouteState": "EXISTING_PUBLIC_SUITE_WITH_SEPARATE_ARCHIVE_BACKLOG",
+      "alreadyPublic": true,
+      "nextAction": "Identify the canonical physical package, map each closed-book family to the Gill witness registry, then open only claim-bounded follow-ups.",
+      "forbiddenPromotion": "Do not infer provenance or rights from a bibliography, title, OCR fragment or Drive search miss.",
+      "sourceAuthorities": [
+        {
+          "path": "00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md",
+          "exists": true
+        }
+      ],
+      "rightsLedgerIds": [
+        {
+          "id": "DRV-GILL-ARCHIVE",
+          "recordedInRepository": true
+        }
+      ],
+      "rightsLedger": {
+        "rightsLedgerId": "DRV-GILL-ARCHIVE",
+        "rightsState": "UNKNOWN",
+        "publicationEligible": false,
+        "driveObjects": 0,
+        "driveCheckedAt": "2026-08-01",
+        "rule": "Drive presence proves custody only. Publication requires item-level provenance, rights basis, credit line, identity/content review, and a target route owner."
+      },
+      "supersededBy": null,
+      "previousDisposition": null,
+      "previousHolds": null
+    },
+    {
+      "id": "heart-series-source-closure",
+      "corpus": "СЕРИЯ СЕРДЦЕ",
+      "disposition": "REFERENCE",
+      "effectiveHolds": [
+        "PUBLICATION_HOLD"
+      ],
+      "researchStatus": "EVIDENCE_CLOSED_85_SOURCES_18_CLAIMS",
+      "targetRouteState": "EXISTING_PRODUCTION_DIST_ROUTE_SET",
+      "alreadyPublic": true,
+      "nextAction": "Compare the post-PR79 claim decisions against the current article text; change only bounded claim sections in a separately owned product PR.",
+      "forbiddenPromotion": "Do not treat all 85 sources or all 18 claims as quote-safe; only nine claims are quote-safe in the governing registry.",
+      "sourceAuthorities": [
+        {
+          "path": "СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-01.md",
+          "exists": true
+        },
+        {
+          "path": "СЕРИЯ СЕРДЦЕ/74_SOURCE_CLOSURE_REGISTRY_2026-08-01.json",
+          "exists": true
+        }
+      ],
+      "rightsLedgerIds": [],
+      "rightsLedger": null,
+      "supersededBy": null,
+      "previousDisposition": null,
+      "previousHolds": null
+    },
+    {
+      "id": "osk-power-dark-side-standalone",
+      "corpus": "ОБРАТНАЯ СТОРОНА КАФЕДРЫ",
+      "disposition": "REFERENCE",
+      "effectiveHolds": [
+        "PUBLICATION_HOLD"
+      ],
+      "researchStatus": "WAVES_1_TO_11_RESEARCH_CLOSED_PRODUCT_PUBLICATION_HOLD",
+      "targetRouteState": "WAVE12_SOURCE_ROUTE_MERGED_LIVE_WITNESS_NOT_CLAIMED",
+      "alreadyPublic": true,
+      "nextAction": "Wave 12 source-route acceptance is complete at Product merge e604b97dbbe45cf9ba9e2a84551b799f0dac1a0e. Obtain a separate same-release production/live witness for /articles/diotrefy-nashego-vremeni/, verify deployed bytes, metadata, search, print, no-JS and browser behavior, then explicitly decide whether PUBLICATION_HOLD can be removed.",
+      "forbiddenPromotion": "Do not treat Research closure or source merge as a live release; do not add unbounded case rosters, verdict language, or media without separate rights review.",
+      "sourceAuthorities": [
+        {
+          "path": "00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md",
+          "exists": true
+        },
+        {
+          "path": "ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/35_CURRENT_AUTHORITY_POWER_CASE_ROUTING_2026-08-01.md",
+          "exists": true
+        },
+        {
+          "path": "ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/40_WAVE6_SITE_TRANSFER_PUBLICATION_LEDGER_2026-08-01.md",
+          "exists": true
+        },
+        {
+          "path": "ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/41_WAVE7_PRODUCT_ARTICLE_PARAGRAPH_AUDIT_2026-08-01.md",
+          "exists": true
+        },
+        {
+          "path": "ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/43_WAVE10_FAITHFUL_WITNESS_UNDER_PRESSURE_2026-08-01.md",
+          "exists": true
+        },
+        {
+          "path": "ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/44_WAVE11_PRODUCT_INTEGRATION_CLOSEOUT_2026-08-01.md",
+          "exists": true
+        }
+      ],
+      "rightsLedgerIds": [],
+      "rightsLedger": null,
+      "supersededBy": "A06-OSK-CURRENT-PROJECTION-2026-08-02",
+      "previousDisposition": "BLOCKED",
+      "previousHolds": [
+        "EVIDENCE_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    {
+      "id": "source-library-editorial-40-pdf",
+      "corpus": "Source Library second editorial 40-PDF archive",
+      "disposition": "REFERENCE",
+      "effectiveHolds": [
+        "RIGHTS_HOLD"
+      ],
+      "researchStatus": "SEPARATE_RESEARCH_CORPUS",
+      "targetRouteState": "RESEARCH_REFERENCE_NO_DIRECT_PUBLIC_ROUTE",
+      "alreadyPublic": false,
+      "nextAction": "Use as source navigation; create a separate bounded claim or media lane before any public use.",
+      "forbiddenPromotion": "Open PDF acquisition does not automatically clear embedded illustrations or every edition for production.",
+      "sourceAuthorities": [
+        {
+          "path": "SOURCE_LIBRARY/SECOND_EDITORIAL_40_PDF_PASS_2026-07-30.md",
+          "exists": true
+        }
+      ],
+      "rightsLedgerIds": [
+        {
+          "id": "DRV-EDITORIAL-40",
+          "recordedInRepository": true
+        }
+      ],
+      "rightsLedger": {
+        "rightsLedgerId": "DRV-EDITORIAL-40",
+        "rightsState": "REFERENCE_ONLY_ITEM_REVIEW_REQUIRED",
+        "publicationEligible": false,
+        "driveObjects": 3,
+        "driveCheckedAt": "2026-08-01",
+        "rule": "Drive presence proves custody only. Publication requires item-level provenance, rights basis, credit line, identity/content review, and a target route owner."
+      },
+      "supersededBy": null,
+      "previousDisposition": null,
+      "previousHolds": null
+    },
+    {
+      "id": "source-library-ephemera-63",
+      "corpus": "Source Library approved ephemera 63",
+      "disposition": "BLOCKED",
+      "effectiveHolds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "researchStatus": "PRIVATE_ARCHIVE_ACQUIRED_63_OF_63",
+      "targetRouteState": "NO_ASSIGNED_PRODUCT_ROUTE",
+      "alreadyPublic": false,
+      "nextAction": "Create item-level provenance and credit records only when a route owner selects a specific image.",
+      "forbiddenPromotion": "Archive approval is not production approval; embedded and institutional reproductions require separate review.",
+      "sourceAuthorities": [
+        {
+          "path": "SOURCE_LIBRARY/processed/APPROVED_EPHEMERA_63_ALLOWLIST_2026-07-30.md",
+          "exists": true
+        }
+      ],
+      "rightsLedgerIds": [
+        {
+          "id": "DRV-EPHEMERA-63",
+          "recordedInRepository": true
+        }
+      ],
+      "rightsLedger": {
+        "rightsLedgerId": "DRV-EPHEMERA-63",
+        "rightsState": "ITEM_LEVEL_REVIEW_REQUIRED",
+        "publicationEligible": false,
+        "driveObjects": 6,
+        "driveCheckedAt": "2026-08-01",
+        "rule": "Drive presence proves custody only. Publication requires item-level provenance, rights basis, credit line, identity/content review, and a target route owner."
+      },
+      "supersededBy": null,
+      "previousDisposition": null,
+      "previousHolds": null
+    },
+    {
+      "id": "source-library-poet-portraits-45",
+      "corpus": "Source Library approved core poet portraits 45",
+      "disposition": "BLOCKED",
+      "effectiveHolds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "researchStatus": "REVIEW_ALLOWLIST_READY_ORIGINALS_ARCHIVED",
+      "targetRouteState": "NO_ROUTE_IN_GB_PRODUCT",
+      "alreadyPublic": false,
+      "nextAction": "Route through a separately owned poet-site media lane with human identity and item-level rights verification.",
+      "forbiddenPromotion": "Automated discovery and archive allowlisting do not identify a person or authorize public use.",
+      "sourceAuthorities": [
+        {
+          "path": "SOURCE_LIBRARY/POET_PORTRAIT_REVIEW_WORKFLOW_2026-07-30.md",
+          "exists": true
+        },
+        {
+          "path": "SOURCE_LIBRARY/processed/APPROVED_CORE_POET_PORTRAITS_45_ALLOWLIST_2026-07-30.md",
+          "exists": true
+        }
+      ],
+      "rightsLedgerIds": [
+        {
+          "id": "DRV-POET-PORTRAITS-45",
+          "recordedInRepository": true
+        }
+      ],
+      "rightsLedger": {
+        "rightsLedgerId": "DRV-POET-PORTRAITS-45",
+        "rightsState": "IDENTITY_AND_ITEM_RIGHTS_REVIEW_REQUIRED",
+        "publicationEligible": false,
+        "driveObjects": 3,
+        "driveCheckedAt": "2026-08-01",
+        "rule": "Drive presence proves custody only. Publication requires item-level provenance, rights basis, credit line, identity/content review, and a target route owner."
+      },
+      "supersededBy": null,
+      "previousDisposition": null,
+      "previousHolds": null
+    }
+  ],
+  "checks": {
+    "recordsWithMissingAuthorityFile": 0,
+    "rightsIdsNotRecorded": 0,
+    "recordsWithoutRightsLedgerEntry": 3,
+    "rightsLedgerEntriesPublicationEligible": 0
+  },
+  "note": "Снимок собран по правилу композиции из current-authority: база + оверлеи, пересчёт счётчиков. Наличие файла authority и упоминание rights-id в репозитории — проверяемые факты; они не являются ни правами, ни разрешением на публикацию."
+}

@@ -205,7 +205,9 @@
     {
       "class": "Права на хранение и публикацию",
       "holds": ["RIGHTS_HOLD", "PUBLICATION_HOLD"],
-      "reason": "Требуют отдельного лицензионного решения по каждому объекту и не снимаются ни хешами, ни присутствием на Drive."
+      "reason": "Требуют отдельного лицензионного решения по каждому объекту и не снимаются ни хешами, ни присутствием на Drive.",
+      "queue": "docs/research/PUBLICATION_GATE_QUEUE_2026-11-18.md — 10 записей очереди, PROMOTE 0; для корпусов без записи повышение невозможно арифметически (productWriteRequiresPromoteRecord)",
+      "check": "python3 -B scripts/publication_gate_status.py --check"
     },
     {
       "class": "Зеркала, отставшие от HEAD",

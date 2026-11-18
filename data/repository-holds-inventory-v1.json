@@ -76,13 +76,13 @@
     ]
   },
   "totals": {
-    "filesScanned": 3075,
-    "filesWithMentions": 889,
+    "filesScanned": 3081,
+    "filesWithMentions": 894,
     "mentions": {
       "ARCHIVE_HOLD": 1408,
       "BLOCKING-HOLD": 16,
       "BOOK-FULLTEXT-HOLD": 15,
-      "EVIDENCE_HOLD": 1289,
+      "EVIDENCE_HOLD": 1290,
       "HOLD-APPARATUS": 1,
       "HOLD-AS": 3,
       "HOLD-GLOSS": 1,
@@ -100,14 +100,14 @@
       "LIVE-READBACK-HOLD": 4,
       "LOCATOR_HOLD": 1963,
       "PAGE-IMAGE-HOLD": 14,
-      "PUBLICATION_HOLD": 2573,
-      "RIGHTS_HOLD": 1448,
+      "PUBLICATION_HOLD": 2581,
+      "RIGHTS_HOLD": 1452,
       "VERSION-HOLD": 23
     },
     "mentionsByStatus": {
-      "closed": 818,
-      "open": 2335,
-      "unmarked": 5931
+      "closed": 821,
+      "open": 2339,
+      "unmarked": 5937
     },
     "canonicalFlagLineStatesRecordedAsBothOpenAndClosed": 403,
     "filesWithJsonHolds": 38,
@@ -340,38 +340,38 @@
       }
     },
     "data": {
-      "files": 19,
+      "files": 20,
       "mentions": {
         "ARCHIVE_HOLD": 6,
         "EVIDENCE_HOLD": 9,
         "HOLD_MAJOR": 3,
         "LOCATOR_HOLD": 24,
-        "PUBLICATION_HOLD": 25,
+        "PUBLICATION_HOLD": 26,
         "RIGHTS_HOLD": 10
       },
       "status": {
         "closed": 10,
         "open": 9,
-        "unmarked": 61
+        "unmarked": 62
       }
     },
     "docs": {
-      "files": 96,
+      "files": 97,
       "mentions": {
         "ARCHIVE_HOLD": 541,
-        "EVIDENCE_HOLD": 434,
+        "EVIDENCE_HOLD": 435,
         "LOCATOR_HOLD": 330,
-        "PUBLICATION_HOLD": 1034,
-        "RIGHTS_HOLD": 561
+        "PUBLICATION_HOLD": 1037,
+        "RIGHTS_HOLD": 563
       },
       "status": {
-        "closed": 245,
-        "open": 1105,
-        "unmarked": 1696
+        "closed": 247,
+        "open": 1107,
+        "unmarked": 1698
       }
     },
     "scripts": {
-      "files": 40,
+      "files": 41,
       "mentions": {
         "ARCHIVE_HOLD": 36,
         "BLOCKING-HOLD": 4,
@@ -394,14 +394,14 @@
         "LIVE-READBACK-HOLD": 1,
         "LOCATOR_HOLD": 15,
         "PAGE-IMAGE-HOLD": 2,
-        "PUBLICATION_HOLD": 102,
-        "RIGHTS_HOLD": 46,
+        "PUBLICATION_HOLD": 103,
+        "RIGHTS_HOLD": 47,
         "VERSION-HOLD": 4
       },
       "status": {
         "closed": 7,
         "open": 13,
-        "unmarked": 230
+        "unmarked": 232
       }
     },
     "БАПТИСТЫ РОССИИ": {
@@ -419,32 +419,32 @@
       }
     },
     "БИОГРАФИИ": {
-      "files": 48,
+      "files": 49,
       "mentions": {
         "ARCHIVE_HOLD": 299,
         "EVIDENCE_HOLD": 75,
         "LOCATOR_HOLD": 425,
-        "PUBLICATION_HOLD": 333,
+        "PUBLICATION_HOLD": 336,
         "RIGHTS_HOLD": 212
       },
       "status": {
         "closed": 107,
-        "open": 382,
-        "unmarked": 900
+        "open": 384,
+        "unmarked": 901
       }
     },
     "ИСКУПЛЕНИЕ": {
-      "files": 152,
+      "files": 153,
       "mentions": {
         "ARCHIVE_HOLD": 226,
         "EVIDENCE_HOLD": 506,
         "HOLD-STUB": 5,
         "LOCATOR_HOLD": 849,
         "PUBLICATION_HOLD": 581,
-        "RIGHTS_HOLD": 354
+        "RIGHTS_HOLD": 355
       },
       "status": {
-        "closed": 320,
+        "closed": 321,
         "open": 688,
         "unmarked": 1688
       }
@@ -25997,6 +25997,16 @@
       }
     },
     {
+      "path": "data/publication-gate-queue-v1.json",
+      "corpus": "data",
+      "mentions": {
+        "PUBLICATION_HOLD": 1
+      },
+      "status": {
+        "unmarked": 1
+      }
+    },
+    {
       "path": "data/research-stage-closure-2026-08-02.json",
       "corpus": "data",
       "mentions": {
@@ -26004,6 +26014,20 @@
       },
       "status": {
         "unmarked": 1
+      }
+    },
+    {
+      "path": "docs/research/PUBLICATION_GATE_QUEUE_2026-11-18.md",
+      "corpus": "docs",
+      "mentions": {
+        "EVIDENCE_HOLD": 1,
+        "PUBLICATION_HOLD": 3,
+        "RIGHTS_HOLD": 2
+      },
+      "status": {
+        "closed": 2,
+        "open": 2,
+        "unmarked": 2
       }
     },
     {
@@ -27631,6 +27655,17 @@
       }
     },
     {
+      "path": "scripts/test_publication_gate_status.py",
+      "corpus": "scripts",
+      "mentions": {
+        "PUBLICATION_HOLD": 1,
+        "RIGHTS_HOLD": 1
+      },
+      "status": {
+        "unmarked": 2
+      }
+    },
+    {
       "path": "scripts/validate_gill_closed_book_families.py",
       "corpus": "scripts",
       "mentions": {
@@ -28141,6 +28176,17 @@
       },
       "status": {
         "unmarked": 2
+      }
+    },
+    {
+      "path": "БИОГРАФИИ/Стивен Чарнок/manuscripts/III_CHARNOCK_AND_SCRIPTURE_FROM_TEXT_TO_SERMON_WORKING_DRAFT.md",
+      "corpus": "БИОГРАФИИ",
+      "mentions": {
+        "PUBLICATION_HOLD": 3
+      },
+      "status": {
+        "open": 2,
+        "unmarked": 1
       }
     },
     {
@@ -28848,6 +28894,16 @@
       },
       "status": {
         "open": 1
+      }
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/evidence/MAX_S40_STRONG_RICHARDS_WATTS_PROVENANCE_DECISION_2026-11-18.md",
+      "corpus": "ИСКУПЛЕНИЕ",
+      "mentions": {
+        "RIGHTS_HOLD": 1
+      },
+      "status": {
+        "closed": 1
       }
     },
     {
