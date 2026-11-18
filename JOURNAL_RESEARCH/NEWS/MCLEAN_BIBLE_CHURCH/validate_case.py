@@ -22,7 +22,7 @@ def require(condition: bool, message: str) -> None:
 
 items = DATA["objects"]
 require(DATA["publicationDecision"] == "PUBLICATION_HOLD", "Publication gate must stay HOLD")
-require(len(items) >= 31, "Expected 31 vetted source objects")
+require(len(items) >= 36, "Expected 36 source objects after wave 5")
 ids = [o["sourceId"] for o in items]
 urls = [o["url"].rstrip("/") for o in items]
 require(len(set(ids)) == len(ids), "Repeated sourceId")
@@ -64,5 +64,20 @@ require(ncn_total == 5276707 and 5276708-ncn_total == 1, "NCN arithmetic gate ch
 require(related_total == 1963552, "SBC-flow arithmetic gate changed")
 require("$5,276,707" in TEXT and "$5,276,708" in TEXT,"Published $1 discrepancy not visible")
 require("не" in TEXT and "финансов" in TEXT, "Narrative control absent")
+for sid in ("JR-MBC-034", "JR-MBC-035", "JR-MBC-036", "JR-MBC-037", "JR-MBC-038"):
+    require(sid in ids and sid in TEXT, sid + " source not referenced")
+archive = next(o for o in items if o["sourceId"] == "JR-MBC-037")
+require(
+    {"INTERNAL_DOCUMENT_DATE_CONFLICT", "CROSS_DOCUMENT_REPORTED_COUNTS_CONFLICT"} <= set(archive.get("integrityFlags", [])),
+    "2018 archive integrity caveats missing",
+)
+require(
+    "04/25/2017" in TEXT and "28 декабря 2018" in TEXT,
+    "Contradictory 2018 minutes dates omitted",
+)
+require("устава 2023 года" in TEXT, "Audit policy must identify applicable constitution year")
+terms = next(o for o in items if o["sourceId"] == "JR-MBC-038")
+require("AI_AUTOMATION_PROHIBITED_BY_SOURCE_TERMS" in terms.get("integrityFlags", []), "ACMS anti-bot restriction missing")
+require("не производили автоматизированного поиска внутри ACMS" in TEXT, "Court access restriction not disclosed")
 print("JOURNAL_RESEARCH CASE GATE PASS:", len(items),
       "unique source documents;", len(set(ids)), "IDs; publication HOLD; arithmetic and case distinctions PASS")

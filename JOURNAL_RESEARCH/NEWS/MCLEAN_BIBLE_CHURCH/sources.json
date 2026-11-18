@@ -1,6 +1,6 @@
 {
   "caseId": "JR-MBC-2026",
-  "version": 5,
+  "version": 6,
   "reviewedAt": "2026-11-18",
   "corpus": "JOURNAL_RESEARCH/NEWS/MCLEAN_BIBLE_CHURCH",
   "evidencePolicy": "data/repository-evidence-policy-v2.json",
@@ -154,8 +154,8 @@
       "locatorState": "EXACT_LOCATOR_VERIFIED",
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
-      "locator": "Constitution May 2023 PDF: p.1 Article I §2; p.3 Article III §§1–2; p.4 Article IV §4; pp.4–5 Article V; page images/selected text checked",
-      "provesOnly": "Rules expressly present in the 2023 edition, including permanent non-affiliation clause and limited cooperation authority; not proof these exact rules governed 2016 or 2021",
+      "locator": "May 2023 MBC Constitution: printed p.8 Article VII §4 'Audits and Church Records' independently read and page-image checked; other cited Articles I, IV, V reviewed previously",
+      "provesOnly": "Under its 2023 text, elders must commission annual audits and present summaries to members, who may review audited statements at church offices in the presence of designated leaders. This is an access rule and institutional duty, NOT possession of audit opinions or proof these rules governed earlier years.",
       "holds": [
         "PUBLICATION_HOLD",
         "EVIDENCE_HOLD",
@@ -542,6 +542,105 @@
         "PUBLICATION_HOLD",
         "RIGHTS_HOLD",
         "EVIDENCE_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-034",
+      "title": "MBC 'Stewardship Integrity' financial controls statement, hosted 2019/12",
+      "url": "https://mcleanbible.org/wp-content/uploads/2019/12/StewardshipIntegrity.pdf",
+      "evidenceClass": "A3",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "One-page official MBC policy statement; text and page image checked; publication/revision date beyond URL directory not independently dated",
+      "provesOnly": "MBC states that elders review/sign most checks, senior pastor cannot sign disbursement checks, budgets pass congregation vote, and annual external audit is done. A policy statement is not independent proof of actual control execution or auditor's opinion.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "integrityFlags": [
+        "SELF_REPORTED_CONTROL_DESIGN_ONLY"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-035",
+      "title": "MBC congregation meeting minutes, March 29 2017, NCN and finances",
+      "url": "https://mcleanbible.org/legalupdate13",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "Two-page file; p.1 image checked, both pages text reviewed; NCN section p.1 and proposed 2017 budget p.2",
+      "provesOnly": "The published minutes record Clint Clifton's public presentation on NCN, 40 church plants at various maturity stages, staff reductions under revenue pressure, and a proposed 2017 budget of $29,744,787 accepted by members. Statements and minutes are not independent proof of number of plants or implementation of budget.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "integrityFlags": [
+        "PUBLISHED_MINUTES_WITHOUT_FULL_ATTACHMENT_A"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-036",
+      "title": "MBC congregation meeting minutes, Dec 6 2017, NCN and 2018 budget",
+      "url": "https://mcleanbible.org/legalupdate14",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "Two-page PDF; p.1 image checked, p.2 text reviewed; NCN update and budget sections p.1",
+      "provesOnly": "The published minutes record a public NCN update including a claim of over 50 pastors trained, YTD expense review, and approval of 2018 budget; no line-item accounting or independent number verification appears in these minutes.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "integrityFlags": [
+        "PUBLISHED_MINUTES_WITHOUT_BUDGET_ATTACHMENTS"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-037",
+      "title": "MBC congregation meeting minutes, Mar 28 2018, internally conflicting date fields",
+      "url": "https://mcleanbible.org/legalupdate15",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "Two-page file both pages text and images read; heading says Mar 28 2018, footer says 04/25/2017, attachments refer to Dec 28 2018 (future relative to heading), secretary signature visible",
+      "provesOnly": "Text records a public NCN update on 45 trained pastors and 9 training for military installations, and financial review. However contradictory footer/attachment dates and nonmonotonic training counts versus Dec 2017 require verification from another archival original; do not use to support precise longitudinal totals.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "integrityFlags": [
+        "INTERNAL_DOCUMENT_DATE_CONFLICT",
+        "CROSS_DOCUMENT_REPORTED_COUNTS_CONFLICT",
+        "INDEPENDENT_AUTHENTICATION_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-038",
+      "title": "Virginia Appellate Case Management System ACMS public terms of use",
+      "url": "https://eapps.courts.state.va.us/acms-public",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "Official public EULA/terms page, §3.7 User Conduct; lines 47–59 prohibit automated scripting, AI/bots to navigate/access or download inside ACMS",
+      "provesOnly": "Public court database is a relevant source location but explicitly bars use of automated bots/AI. No protected case queries or document downloads made. Official Oct 2 and Nov 9 2026 orders remain unacquired. Seek court clerk or a voluntarily provided original rather than automate ACMS.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "integrityFlags": [
+        "AI_AUTOMATION_PROHIBITED_BY_SOURCE_TERMS"
       ]
     }
   ]
