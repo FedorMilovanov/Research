@@ -29,7 +29,7 @@
         "folder": "02 — SECOND EDITORIAL 40",
         "folderId": "1qba3eUdOo0x4Sp2T1viB_MMdWQf80UtZ",
         "objects": 40,
-        "bytes": null,
+        "bytes": 1250680919,
         "sha256Present": true,
         "manifest": {
           "name": "SECOND EDITORIAL 40 — MANIFEST RIGHTS SHA256.zip",
@@ -37,8 +37,8 @@
           "bytes": 25419,
           "sha256": "f363ec567be8a40cd5828d251e288572270c4368f5940602c0b29548b4a7e547"
         },
-        "observed": "40 PDF в четырёх шардах 01-10 / 11-20 / 21-30 / 31-40, у каждого серверный sha256Checksum; рядом ZIP с манифестом прав и SHA-256.",
-        "missing": "Квитанция теперь есть: docs/research/holds/CORPUS_CUSTODY_RECEIPTS_2026-11-18.md (снята 2026-11-18). Остаётся не сверенным содержимое шардов."
+        "observed": "40 PDF в четырёх шардах 01-10 / 11-20 / 21-30 / 31-40, у каждого серверный sha256Checksum; рядом ZIP с манифестом прав и SHA-256. Суммарный объём 1 250 680 919 Б сложен из серверных `size` по шардам (351 290 078 + 200 155 682 + 360 460 618 + 338 774 541) 2026-11-18.",
+        "missing": "Квитанция теперь есть: docs/research/holds/CORPUS_CUSTODY_RECEIPTS_2026-11-18.md (снята 2026-11-18). Пофайловые суммы остаются только на Drive; содержимое шардов не сверялось."
       }
     },
     {
@@ -684,7 +684,7 @@
       "folder": "02 — SECOND EDITORIAL 40",
       "folderId": "1qba3eUdOo0x4Sp2T1viB_MMdWQf80UtZ",
       "objects": 40,
-      "bytes": null,
+      "bytes": 1250680919,
       "sha256Present": true,
       "manifest": {
         "name": "SECOND EDITORIAL 40 — MANIFEST RIGHTS SHA256.zip",
@@ -692,8 +692,8 @@
         "bytes": 25419,
         "sha256": "f363ec567be8a40cd5828d251e288572270c4368f5940602c0b29548b4a7e547"
       },
-      "observed": "40 PDF в четырёх шардах 01-10 / 11-20 / 21-30 / 31-40, у каждого серверный sha256Checksum; рядом ZIP с манифестом прав и SHA-256.",
-      "missing": "Квитанция теперь есть: docs/research/holds/CORPUS_CUSTODY_RECEIPTS_2026-11-18.md (снята 2026-11-18). Остаётся не сверенным содержимое шардов."
+      "observed": "40 PDF в четырёх шардах 01-10 / 11-20 / 21-30 / 31-40, у каждого серверный sha256Checksum; рядом ZIP с манифестом прав и SHA-256. Суммарный объём 1 250 680 919 Б сложен из серверных `size` по шардам (351 290 078 + 200 155 682 + 360 460 618 + 338 774 541) 2026-11-18.",
+      "missing": "Квитанция теперь есть: docs/research/holds/CORPUS_CUSTODY_RECEIPTS_2026-11-18.md (снята 2026-11-18). Пофайловые суммы остаются только на Drive; содержимое шардов не сверялось."
     },
     "ephemeral-commons-strict-literary-pdf-40plus": {
       "class": "DURABLE_ON_DRIVE_RECEIPTED",

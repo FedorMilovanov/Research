@@ -58,13 +58,13 @@ ZIP-шардов, у каждого серверный `sha256Checksum`:
 На Drive — папка `02 — SECOND EDITORIAL 40` (`1qba3eUdOo0x4Sp2T1viB_MMdWQf80UtZ`), четыре шарда
 по десять PDF:
 
-| Шард | Drive ID | Объектов |
-|---|---|---:|
-| `01-10` | `1cLg23XvpSxTuJXG14pwsxHACmbbqrah4` | 10 |
-| `11-20` | `1fDuFrAOklfmazeC1wvkuIFN_HiuojybM` | 10 |
-| `21-30` | `14QR3UlghkWlXABp52feO1Dkpzy_2NYIu` | 10 |
-| `31-40` | `1DRavSKBH34HABvRLrovlampMZWTwDwqW` | 10 |
-| **Итого** | | **40 PDF** |
+| Шард | Drive ID | Объектов | Байт (сумма серверных `size`) |
+|---|---|---:|---:|
+| `01-10` | `1cLg23XvpSxTuJXG14pwsxHACmbbqrah4` | 10 | 351 290 078 |
+| `11-20` | `1fDuFrAOklfmazeC1wvkuIFN_HiuojybM` | 10 | 200 155 682 |
+| `21-30` | `14QR3UlghkWlXABp52feO1Dkpzy_2NYIu` | 10 | 360 460 618 |
+| `31-40` | `1DRavSKBH34HABvRLrovlampMZWTwDwqW` | 10 | 338 774 541 |
+| **Итого** | | **40 PDF** | **1 250 680 919** |
 
 У каждого PDF Drive отдаёт серверный `sha256Checksum`. Рядом —
 `SECOND EDITORIAL 40 — MANIFEST RIGHTS SHA256.zip` (`1bHbwp7AoS2F645_BZhNVNTjWfKYoHm4g`,
@@ -75,6 +75,11 @@ ZIP-шардов, у каждого серверный `sha256Checksum`:
 названа прямо: перенос сорока значений вручную создаёт риск опечатки, который в репозитории
 нечем проверить, — а неверная сумма в квитанции хуже отсутствующей. Проверять нужно чтением,
 а не копированием.
+
+Позже в тот же день сюда добавлен **итог**, а не сорок значений: объём каждой папки сложен из
+серверных `size` (четыре сложения вместо сорока переносов), и итог 1 250 680 919 Б проверяем
+повторным `list_files` по тем же четырём ID. Это закрывает вопрос «сколько занимает корпус» и
+не закрывает вопрос «совпадают ли байты с манифестом»: сумма размеров — не сумма `sha256`.
 
 ## 3. APPROVED CORE POET PORTRAITS 45 и APPROVED EPHEMERA 63
 
