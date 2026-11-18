@@ -1,6 +1,6 @@
 {
   "caseId": "JR-MBC-2026",
-  "version": 2,
+  "version": 3,
   "reviewedAt": "2026-11-18",
   "corpus": "JOURNAL_RESEARCH/NEWS/MCLEAN_BIBLE_CHURCH",
   "evidencePolicy": "data/repository-evidence-policy-v2.json",
@@ -420,6 +420,107 @@
         "PUBLICATION_HOLD",
         "EVIDENCE_HOLD",
         "LOCATOR_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-025",
+      "title": "MBC-reproduced elder board minutes: 23 Mar 2016 SBC/NAMB partnership motion",
+      "url": "https://mcleanbible.org/legalupdate2",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "One-page excerpt headed 'Partnership with the North American Mission Board, Southern Baptist Convention'; page text and image verified, full minutes + Attachment 9 not supplied",
+      "provesOnly": "Dale's partnership proposal was approved on motion by Lon seconded by John; mentions New City Network and draft letter. Excerpt does not itself establish wording or approval of all later agreements",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-026",
+      "title": "SBCV Church Information and Partnership Form, 2017, officially rehosted by MBC",
+      "url": "https://mcleanbible.org/legalupdate19",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "REFERENCE",
+      "locator": "Four-page redacted form; printed page 1 (2016 vote date 3/23/16, Unique Partnership, BFM 2000); printed page 3 (dated signatures 28–29 Aug 2017); image checked",
+      "provesOnly": "Documents a submitted state-convention partnership application and agreement to cooperate; DOES NOT by itself establish denominational governance or invalidate Article I §2 of applicable constitution; mirrors of form not independent evidence",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-027",
+      "title": "MBC-published NCN contributions summary, 2017–2021",
+      "url": "https://mcleanbible.org/legalupdate20",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "Single-page MBC source summary, 2017–2021; visual and text verified, total $5,276,708",
+      "provesOnly": "Published MBC summary prints total ,276,708, but five annual rows add to ,276,707 (one-dollar discrepancy). This is a self-reported MBC->NCN schedule, not an independent end-use audit",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "EVIDENCE_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-028",
+      "title": "MBC and NCN payments to SBC and related organizations, 2017–2020",
+      "url": "https://mcleanbible.org/legalupdate21",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "Single-page accounting-style schedule, 2017–2020; visual and text verified, reported total $1,963,552",
+      "provesOnly": "Payments reported for two entities and multiple beneficiaries, including church plants; possible overlap with source JR-MBC-027, do not sum or infer fraud",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-029",
+      "title": "MBC elders' official 'Legal Update': partnership, audit assertions, and source exhibits",
+      "url": "https://mcleanbible.org/legalupdate/",
+      "evidenceClass": "A3",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "locator": "Seven numbered MBC findings, especially #1, #4, #5, #6 and exhibits linked 17–39; date on page to verify, context post-2023",
+      "provesOnly": "MBC acknowledges terminology/implementation confusion and asserts financial flows survived independent audit; auditor reports themselves not supplied by this statement",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-030",
+      "title": "Historical pre-2023 MBC constitution scan (provenance subject to review)",
+      "url": "https://static1.squarespace.com/static/65d7a10086d588109eb3c279/t/65ef9ab84c9da064d14794a9/1710201529920/MBC_000642_Constitution.pdf",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "REFERENCE",
+      "locator": "Confidential-labeled discovery scan from an interested-party host, pages 3 Article I §2 and 8–9 membership/8-week inactivity; exact adoption date not established from scan",
+      "provesOnly": "Proves text appears in a historical scan; DOES NOT prove this exact scan was the governing edition in 2016 or 2021. Similar 2014-revised constitution annexed to 2017 form is same family, not independent confirmation",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "EVIDENCE_HOLD",
         "RIGHTS_HOLD"
       ]
     }
