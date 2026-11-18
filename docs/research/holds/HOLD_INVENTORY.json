@@ -1,0 +1,802 @@
+{
+ "schemaVersion": 1,
+ "artifact": "REPO-HOLD-INVENTORY",
+ "role": "DERIVED_READ_ONLY_NOT_AUTHORITY",
+ "generatedAt": "2026-11-18",
+ "testedCommit": "c30348dcd519b0bfe23f336801756ad7f3c78844",
+ "policy": "data/repository-evidence-policy-v2.json",
+ "totals": {
+  "json_files_with_holds": 35,
+  "json_nodes_with_holds": 2231,
+  "json_hold_entries": 6012,
+  "json_hold_by_type": {
+   "ARCHIVE_HOLD": 1344,
+   "EVIDENCE_HOLD": 1113,
+   "LOCATOR_HOLD": 236,
+   "PUBLICATION_HOLD": 1964,
+   "RIGHTS_HOLD": 1355
+  },
+  "markdown_files_with_typed_tokens": 754,
+  "markdown_typed_tokens": 7124,
+  "markdown_typed_by_type": {
+   "ARCHIVE_HOLD": 1172,
+   "EVIDENCE_HOLD": 1076,
+   "LOCATOR_HOLD": 1580,
+   "PUBLICATION_HOLD": 2096,
+   "RIGHTS_HOLD": 1200
+  },
+  "bare_untyped_status_lines": 0
+ },
+ "perCorpus": {
+  "(root)": {
+   "json_nodes_with_holds": 0,
+   "markdown_hold_tokens": 21
+  },
+  "1_PETER_BOT": {
+   "json_nodes_with_holds": 15,
+   "markdown_hold_tokens": 27
+  },
+  "1_КОРИНФЯНАМ_11": {
+   "json_nodes_with_holds": 0,
+   "markdown_hold_tokens": 25
+  },
+  "1КОРИНФЯНАМ_11_ПОКРЫВАЛО": {
+   "json_nodes_with_holds": 0,
+   "markdown_hold_tokens": 217
+  },
+  "APOSTASY": {
+   "json_nodes_with_holds": 0,
+   "markdown_hold_tokens": 6
+  },
+  "BIBLE_CORPUS": {
+   "json_nodes_with_holds": 0,
+   "markdown_hold_tokens": 15
+  },
+  "G3_HISTORY": {
+   "json_nodes_with_holds": 0,
+   "markdown_hold_tokens": 142
+  },
+  "LE_CANON_SUCRE": {
+   "json_nodes_with_holds": 0,
+   "markdown_hold_tokens": 44
+  },
+  "SOURCE_LIBRARY": {
+   "json_nodes_with_holds": 0,
+   "markdown_hold_tokens": 8
+  },
+  "STEVE_LAWSON": {
+   "json_nodes_with_holds": 0,
+   "markdown_hold_tokens": 33
+  },
+  "SUNO_HYMNS": {
+   "json_nodes_with_holds": 223,
+   "markdown_hold_tokens": 618
+  },
+  "TEEN_DOUBLE_LIFE": {
+   "json_nodes_with_holds": 0,
+   "markdown_hold_tokens": 58
+  },
+  "apostasy": {
+   "json_nodes_with_holds": 0,
+   "markdown_hold_tokens": 183
+  },
+  "data": {
+   "json_nodes_with_holds": 1248,
+   "markdown_hold_tokens": 1
+  },
+  "docs": {
+   "json_nodes_with_holds": 219,
+   "markdown_hold_tokens": 2345
+  },
+  "БАПТИСТЫ РОССИИ": {
+   "json_nodes_with_holds": 0,
+   "markdown_hold_tokens": 4
+  },
+  "БИОГРАФИИ": {
+   "json_nodes_with_holds": 0,
+   "markdown_hold_tokens": 1323
+  },
+  "ИСКУПЛЕНИЕ": {
+   "json_nodes_with_holds": 526,
+   "markdown_hold_tokens": 1973
+  },
+  "ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ": {
+   "json_nodes_with_holds": 0,
+   "markdown_hold_tokens": 15
+  },
+  "ОТСТУПНИЧЕСТВО": {
+   "json_nodes_with_holds": 0,
+   "markdown_hold_tokens": 31
+  },
+  "СЕРИЯ 1 КОРИНФЯНАМ 11": {
+   "json_nodes_with_holds": 0,
+   "markdown_hold_tokens": 9
+  },
+  "СЕРИЯ ЖЕНЩИНЫ В СЛУЖЕНИИ": {
+   "json_nodes_with_holds": 0,
+   "markdown_hold_tokens": 14
+  },
+  "СЕРИЯ СЕРДЦЕ": {
+   "json_nodes_with_holds": 0,
+   "markdown_hold_tokens": 2
+  },
+  "ТРУДНЫЕ ТЕКСТЫ": {
+   "json_nodes_with_holds": 0,
+   "markdown_hold_tokens": 10
+  }
+ },
+ "closureRoutes": {
+  "PUBLICATION_HOLD": {
+   "class": "TERMINAL_BY_DEFAULT",
+   "requires": "Отдельное решение владельца о публикации. Исследовательский проход не снимает PUBLICATION_HOLD, даже если источник прочитан полностью."
+  },
+  "RIGHTS_HOLD": {
+   "class": "EXTERNAL_RIGHTS",
+   "requires": "Нужно установить права на объект (издатель, архив, лицензия). Чтение текста и достижимость URL права не устанавливают."
+  },
+  "ARCHIVE_HOLD": {
+   "class": "EXTERNAL_OBJECT",
+   "requires": "Нужен сам архивный/печатный объект: страницы, листы, сканы, документ из закрытого собрания. Каталог и опись объект не заменяют."
+  },
+  "LOCATOR_HOLD": {
+   "class": "EXTERNAL_LOCATOR",
+   "requires": "Нужен точный локатор в конкретном издании: страница, столбец, номер строки, лист, таймкод — сверенный с самим объектом."
+  },
+  "EVIDENCE_HOLD": {
+   "class": "EXTERNAL_EVIDENCE",
+   "requires": "Нужно прочитать сам источник (полный текст в нужной редакции) либо получить независимое свидетельство требуемой силы."
+  }
+ },
+ "checks": {
+  "suno_source_register_parity": {
+   "status": "PASS",
+   "detail": [],
+   "checked": 126,
+   "unmirrored_json_sources": [
+    "SRC-PHOS-AC-ANF",
+    "SRC-PHOS-AC-BOOK7",
+    "SRC-PHOS-AZBYKA",
+    "SRC-PHOS-BASIL-DSS",
+    "SRC-PHOS-BL-ALEX",
+    "SRC-PHOS-CPDL",
+    "SRC-PHOS-DOXOLOGIA",
+    "SRC-PHOS-FIRST-HYMN-2025",
+    "SRC-PHOS-LATIN-RENDERINGS",
+    "SRC-PHOS-ODES",
+    "SRC-PHOS-ODES-BOOK",
+    "SRC-PHOS-POXY",
+    "SRC-PHOS-PRAVENC",
+    "SRC-PHOS-RUSKLINE-BALMONT",
+    "SRC-PHOS-SDAMP",
+    "SRC-PHOS-SUBTUUM",
+    "SRC-PHOS-SUBTUUM-TEXT",
+    "SRC-PHOS-TEDEUM",
+    "SRC-PHOS-TEDEUM-NCE",
+    "SRC-PHOS-TEDEUM-TEXT"
+   ]
+  },
+  "suno_claim_ledger_parity": {
+   "status": "PASS",
+   "detail": [],
+   "checked": 51,
+   "unmirrored_json_claims": 141
+  },
+  "one_peter_effective_holds": {
+   "status": "PASS",
+   "detail": [],
+   "total_candidates": 144,
+   "override_records": 7,
+   "frozen_hold_labels": [
+    "w3q_013",
+    "w3q_031",
+    "w3q_036",
+    "w3q_038",
+    "w3q_050",
+    "w3q_051",
+    "w3q_075"
+   ],
+   "live_holds": []
+  },
+  "reformation_registry_vs_sweep": {
+   "status": "DATED_SNAPSHOT",
+   "detail": [],
+   "registry_source_count": 219,
+   "sweep_scope": "211 (датированный аудит 2026-11-11)",
+   "registry_hold_counts": {
+    "ARCHIVE_HOLD": 164,
+    "EVIDENCE_HOLD": 92,
+    "LOCATOR_HOLD": 55,
+    "PUBLICATION_HOLD": 219,
+    "RIGHTS_HOLD": 198
+   },
+   "note": "Датированный аудит не переписывается. Если реестр вырос после 2026-11-11, это дельта, а не ошибка аудита; новые REF требуют отдельного прохода.",
+   "sources_added_since_sweep": 8
+  },
+  "axis_contradictions": [
+   {
+    "path": "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+    "id": "S15",
+    "axis": "rightsState",
+    "value": "PUBLICATION_ELIGIBLE",
+    "hold": "RIGHTS_HOLD"
+   }
+  ],
+  "hold_coverage": {
+   "rightsState_without_RIGHTS_HOLD": [
+    {
+     "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
+     "id": "dort",
+     "rightsState": "RIGHTS_UNKNOWN",
+     "holds": [
+      "PUBLICATION_HOLD"
+     ]
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
+     "id": "westminster",
+     "rightsState": "RIGHTS_UNKNOWN",
+     "holds": [
+      "PUBLICATION_HOLD"
+     ]
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
+     "id": "heidelberg",
+     "rightsState": "RIGHTS_UNKNOWN",
+     "holds": [
+      "PUBLICATION_HOLD"
+     ]
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
+     "id": "davenant2024",
+     "rightsState": "RIGHTS_UNKNOWN",
+     "holds": [
+      "PUBLICATION_HOLD"
+     ]
+    },
+    {
+     "path": "ИСКУПЛЕНИЕ/evidence/source_controls_2026-11-05.json",
+     "id": "articles39",
+     "rightsState": "RIGHTS_UNKNOWN",
+     "holds": [
+      "PUBLICATION_HOLD"
+     ]
+    }
+   ],
+   "BLOCKED_without_PUBLICATION_HOLD": []
+  },
+  "files_with_holds": 35,
+  "nodes_with_holds": 2231
+ },
+ "examinedCases": [
+  {
+   "case": "SUNO_HYMNS SRC-PHOS-PRAVENC",
+   "requested": "ARCHIVE_HOLD при accessState=FULL_OBJECT_VERIFIED",
+   "verdict": "ОСТАВЛЕН",
+   "reason": "Полностью прочитана энциклопедическая статья, но печатный том Православной энциклопедии (т. 62, с. 54–55) не сверялся; ARCHIVE_HOLD относится к печатному объекту, а не к веб-тексту."
+  },
+  {
+   "case": "SUNO_HYMNS SRC-PHOS-VRG-B3",
+   "requested": "LOCATOR_HOLD при locatorState=EXACT_LOCATOR_VERIFIED",
+   "verdict": "ОСТАВЛЕН",
+   "reason": "Локатор л. 269r взят из каталога, факсимиле рукописи не открывалось (accessState=CATALOG_ONLY); каталог не подтверждает лист."
+  },
+  {
+   "case": "ИСКУПЛЕНИЕ/nt S15 (Каноны Дорта)",
+   "requested": "RIGHTS_HOLD при rightsState=PUBLICATION_ELIGIBLE",
+   "verdict": "ОСТАВЛЕН",
+   "reason": "PUBLICATION_ELIGIBLE ограничен явно только английским фрагментом 1840 г. из локальной записи; RIGHTS_HOLD держит остальные издания (CRC 1986, OPC 1948)."
+  },
+  {
+   "case": "1_PETER_BOT w3q_013/031/036/038/050/051/075",
+   "requested": "status=HOLD в базовых чанках кандидатов",
+   "verdict": "НЕ ДЕЙСТВУЕТ (снят цепочкой override)",
+   "reason": "Все семь базовых меток перекрыты question-overrides-wave3g/k/l/n; действующий счёт HOLD = 0, что подтверждает пересчёт в этом отчёте. Исторические файлы не перезаписываются."
+  },
+  {
+   "case": "1_PETER_BOT data/p0-claim-holds-wave3.json (1 Pet 5:2a/5:2b)",
+   "requested": "P0_HOLD после закрытия HOLD-TC-5-2A/5-2B",
+   "verdict": "ОСТАВЛЕН",
+   "reason": "Другая ось: поле officialECMWitnessStatus означает прямой readback аппарата ECM, а волна 3n закрывала кандидата по маршруту peer-reviewed ECM-based treatment и прямо не заявляла прямого dECM readback. Файл при этом нигде в репозитории не цитируется."
+  },
+  {
+   "case": "G3 Q005 / Q006",
+   "requested": "снять hold после переименования в Lumena Ministries",
+   "verdict": "ОСТАВЛЕН",
+   "reason": "Переименование подтверждено на уровне индекса реестра, но не даёт ни текущего status field, ни документов о переходе; Q006 TRANSFEREE/CLOSING остаётся EXTERNAL_DOCUMENT_HOLD."
+  }
+ ],
+ "closuresThisPass": [
+  {
+   "item": "SUNO_HYMNS/RESEARCH/OPEN_HOLDS.md",
+   "action": "Пересобрано генератором scripts/render_hold_ledger.py",
+   "effect": "Состав HOLD-ов не изменился (реестры те же); обновлена только дата сборки, то есть устранено расхождение «сводка от 2026-11-15 при реестрах без изменений»."
+  }
+ ],
+ "untypedHoldTokensInJson": [
+  {
+   "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+   "id": "04",
+   "tokens": [
+    "LXX_HOLD",
+    "MT_HOLD"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+   "id": "05",
+   "tokens": [
+    "LOCATOR_PARTIAL",
+    "PRIVATE_STUDY_ONLY",
+    "RIGHTS_UNKNOWN"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+   "id": "07",
+   "tokens": [
+    "ORIGINAL_TEXT_HOLD"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+   "id": "08",
+   "tokens": [
+    "PRIVATE_STUDY_ONLY"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+   "id": "09",
+   "tokens": [
+    "PRIVATE_STUDY_ONLY"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+   "id": "12",
+   "tokens": [
+    "LOCATOR_PARTIAL",
+    "ORIGINAL_TEXT_HOLD"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+   "id": "13",
+   "tokens": [
+    "LOCATOR_PARTIAL",
+    "RESEARCH / NOT PRODUCT"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+   "id": "14",
+   "tokens": [
+    "FALSE_FRIEND",
+    "ORIGINAL_TEXT_HOLD"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+   "id": "15",
+   "tokens": [
+    "HOLD"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+   "id": "17",
+   "tokens": [
+    "LOCATOR_PARTIAL",
+    "MIRROR-LAG",
+    "NO SETTLED VERDICT / EVIDENCE_HOLD",
+    "RECONCILIATION_HOLD",
+    "RIGHTS_HOLD + PUBLICATION_HOLD"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+   "id": "18",
+   "tokens": [
+    "ATTRIBUTION_SECONDARY",
+    "PARTIALLY_VERIFIED"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+   "id": "00c",
+   "tokens": [
+    "ATTRIBUTION_HOLD",
+    "EDITION_HOLD",
+    "LOCATOR_PARTIAL",
+    "ORIGINAL_TEXT_HOLD",
+    "PRIVATE_STUDY_ONLY",
+    "RECONCILIATION_HOLD",
+    "RESEARCH / NOT PUBLICATION-READY"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+   "id": "00r",
+   "tokens": [
+    "LXX_HOLD",
+    "MT_HOLD"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+   "id": "",
+   "tokens": [
+    "FACSIMILE_HOLD"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+   "id": "",
+   "tokens": [
+    "ORIGINAL_TEXT_HOLD"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+   "id": "00",
+   "tokens": [
+    "ORIGINAL_TEXT_HOLD",
+    "RIGHTS_UNCLEAR",
+    "FALSE_LOCATOR"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+   "id": "01",
+   "tokens": [
+    "ORIGINAL_TEXT_HOLD"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+   "id": "03",
+   "tokens": [
+    "FALSE_FRIEND",
+    "ORIGINAL_TEXT_HOLD"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+   "id": "04",
+   "tokens": [
+    "ORIGINAL_TEXT_HOLD"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+   "id": "09",
+   "tokens": [
+    "APPARATUS_FALSE_FRIEND",
+    "FALSE_FRIEND",
+    "FALSE_LOCATOR",
+    "QUOTE_RISK"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+   "id": "10",
+   "tokens": [
+    "FALSE_FRIEND",
+    "ORIGINAL_TEXT_HOLD",
+    "FALSE_LOCATOR",
+    "PARTIAL_VERIFICATION"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+   "id": "11",
+   "tokens": [
+    "ORIGINAL_TEXT_HOLD",
+    "FALSE_LOCATOR"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+   "id": "12",
+   "tokens": [
+    "ORIGINAL_TEXT_HOLD",
+    "PARTIAL_VERIFICATION"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+   "id": "14",
+   "tokens": [
+    "FALSE_FRIEND",
+    "OPEN_TENSION"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+   "id": "15",
+   "tokens": [
+    "ORIGINAL_TEXT_HOLD",
+    "PARTIAL_VERIFICATION"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+   "id": "16",
+   "tokens": [
+    "FALSE_FRIEND",
+    "OPEN_TENSION",
+    "ORIGINAL_TEXT_HOLD"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+   "id": "17",
+   "tokens": [
+    "FALSE_FRIEND",
+    "ORIGINAL_TEXT_HOLD",
+    "QUOTE_RISK"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+   "id": "18",
+   "tokens": [
+    "FALSE_FRIEND",
+    "ORIGINAL_TEXT_HOLD",
+    "QUOTE_RISK"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+   "id": "19",
+   "tokens": [
+    "FALSE_FRIEND",
+    "ORIGINAL_TEXT_HOLD",
+    "QUOTE_RISK"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+   "id": "20",
+   "tokens": [
+    "ORIGINAL_TEXT_HOLD",
+    "QUOTE_RISK",
+    "FALSE_FRIEND"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+   "id": "21",
+   "tokens": [
+    "ORIGINAL_TEXT_HOLD",
+    "FALSE_LOCATOR",
+    "PARTIAL_VERIFICATION",
+    "FALSE_FRIEND",
+    "QUOTE_RISK"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+   "id": "00",
+   "tokens": [
+    "PRIVATE_STUDY_ONLY",
+    "TEXT_ACCESS_HOLD"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+   "id": "06",
+   "tokens": [
+    "LOCATOR_PARTIAL"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+   "id": "09",
+   "tokens": [
+    "LXX_HOLD",
+    "MT_HOLD"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+   "id": "10",
+   "tokens": [
+    "MT_HOLD"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+   "id": "11",
+   "tokens": [
+    "CONFLICT / LOCATOR_HOLD",
+    "LXX_HOLD",
+    "MT_HOLD"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+   "id": "12",
+   "tokens": [
+    "BLOCKED"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+   "id": "13",
+   "tokens": [
+    "PARTIAL_OBJECT",
+    "RIGHTS_UNKNOWN"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+   "id": "15",
+   "tokens": [
+    "LOCATOR_PARTIAL"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+   "id": "00_SYNTHESIS",
+   "tokens": [
+    "ATTRIBUTION_HOLD",
+    "ATTRIBUTION_SECONDARY",
+    "DRAFT / PUBLICATION_HOLD",
+    "EDITION_HOLD",
+    "EDITION_UNAVAILABLE",
+    "HOLD",
+    "LOCATOR_PARTIAL",
+    "PRIVATE_STUDY_ONLY"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+   "id": "02_CONFLICT_",
+   "tokens": [
+    "ATTRIBUTION_HOLD",
+    "ATTRIBUTION_SECONDARY",
+    "CONTEXT_HOLD",
+    "DATE_HOLD",
+    "EDITION_HOLD",
+    "FORBIDDEN",
+    "LOCATOR_PARTIAL",
+    "LOCATOR_SINGLE_ATTESTATION"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+   "id": "03_PRACTICAL",
+   "tokens": [
+    "EDITION_HOLD",
+    "LOCATOR_PARTIAL"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+   "id": "04_FINAL_VER",
+   "tokens": [
+    "DRAFT / PUBLICATION_HOLD"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+   "id": "05_RIGHTS_AN",
+   "tokens": [
+    "ATTRIBUTION_HOLD",
+    "EDITION_HOLD",
+    "LOCATOR_PARTIAL",
+    "PERMISSION_REQUIRED",
+    "PRIVATE_STUDY_ONLY",
+    "RIGHTS_UNKNOWN"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+   "id": "06_MERGE_REA",
+   "tokens": [
+    "ATTRIBUTION_HOLD",
+    "EDITION_UNAVAILABLE",
+    "LOCATOR_PARTIAL"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+   "id": "D1_EVOLUTION",
+   "tokens": [
+    "OPEN",
+    "OPEN-LAYER",
+    "ORIGINAL_TEXT_HOLD"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+   "id": "D2_GOVERNMEN",
+   "tokens": [
+    "ORIGINAL_TEXT_HOLD"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+   "id": "03_nature-of",
+   "tokens": [
+    "PRIVATE_STUDY_ONLY"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+   "id": "04_perfectio",
+   "tokens": [
+    "PRIVATE_STUDY_ONLY"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+   "id": "08_calvin-ow",
+   "tokens": [
+    "PRIVATE_STUDY_ONLY"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+   "id": "11_order-of-",
+   "tokens": [
+    "PRIVATE_STUDY_ONLY"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+   "id": "12_union-wit",
+   "tokens": [
+    "PRIVATE_STUDY_ONLY"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+   "id": "13_justifica",
+   "tokens": [
+    "PRIVATE_STUDY_ONLY"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+   "id": "D3_CHRISTUS_",
+   "tokens": [
+    "ORIGINAL_TEXT_HOLD"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+   "id": "D4_ROMAN_SAT",
+   "tokens": [
+    "ORIGINAL_TEXT_HOLD"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+   "id": "D5_SOCINIANI",
+   "tokens": [
+    "ORIGINAL_TEXT_HOLD"
+   ]
+  },
+  {
+   "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+   "id": "D6_BAPTIST_1",
+   "tokens": [
+    "OPEN",
+    "OPEN-LAYER",
+    "ORIGINAL_TEXT_HOLD",
+    "RESOLVED-BY-TEXT"
+   ]
+  }
+ ],
+ "bareStatusLines": [],
+ "jsonParseErrors": [],
+ "limits": [
+  "Инвентарь не перечитывает внешние источники и не проверяет их содержание.",
+  "HOLD-и в Markdown посчитаны как токены; один и тот же HOLD может упоминаться в досье, реестре и аудите несколько раз.",
+  "Счётчики по корпусам не складывать между собой: наборы пересекаются."
+ ]
+}
