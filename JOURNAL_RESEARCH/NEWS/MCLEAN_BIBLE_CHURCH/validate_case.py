@@ -22,7 +22,7 @@ def require(condition: bool, message: str) -> None:
 
 items = DATA["objects"]
 require(DATA["publicationDecision"] == "PUBLICATION_HOLD", "Publication gate must stay HOLD")
-require(len(items) >= 36, "Expected 36 source objects after wave 5")
+require(len(items) >= 37, "Expected 37 objects after financial extension")
 ids = [o["sourceId"] for o in items]
 urls = [o["url"].rstrip("/") for o in items]
 require(len(set(ids)) == len(ids), "Repeated sourceId")
@@ -79,5 +79,10 @@ require("устава 2023 года" in TEXT, "Audit policy must identify applic
 terms = next(o for o in items if o["sourceId"] == "JR-MBC-038")
 require("AI_AUTOMATION_PROHIBITED_BY_SOURCE_TERMS" in terms.get("integrityFlags", []), "ACMS anti-bot restriction missing")
 require("не производили автоматизированного поиска внутри ACMS" in TEXT, "Court access restriction not disclosed")
+nc = next(o for o in items if o["sourceId"] == "JR-MBC-039")
+require(nc["rightsState"] == "PRIVATE_STUDY_ONLY", "Confidential 2017 NCN report must not be publishable")
+require("NOT_AN_AUDIT_OPINION" in nc.get("integrityFlags", []), "NCN summary is not an independent audit")
+require({"PUBLICATION_HOLD", "RIGHTS_HOLD", "EVIDENCE_HOLD"} <= set(nc["holds"]), "Private NCN source missing HOLD")
+require("JR-MBC-039" in TEXT and "58 977" in TEXT and "главным образом" in TEXT, "NCN accounting qualifier omitted")
 print("JOURNAL_RESEARCH CASE GATE PASS:", len(items),
       "unique source documents;", len(set(ids)), "IDs; publication HOLD; arithmetic and case distinctions PASS")

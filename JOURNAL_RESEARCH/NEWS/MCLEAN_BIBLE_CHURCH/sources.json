@@ -1,6 +1,6 @@
 {
   "caseId": "JR-MBC-2026",
-  "version": 6,
+  "version": 7,
   "reviewedAt": "2026-11-18",
   "corpus": "JOURNAL_RESEARCH/NEWS/MCLEAN_BIBLE_CHURCH",
   "evidencePolicy": "data/repository-evidence-policy-v2.json",
@@ -641,6 +641,29 @@
       ],
       "integrityFlags": [
         "AI_AUTOMATION_PROHIBITED_BY_SOURCE_TERMS"
+      ]
+    },
+    {
+      "sourceId": "JR-MBC-039",
+      "title": "NCN September 2017 executive financial summary, litigation discovery copy MBC_001505–001506",
+      "url": "https://static1.squarespace.com/static/65d7a10086d588109eb3c279/t/681cd765ef7b62602715b065/1746720613182/MBC_001505-001506.pdf",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "REFERENCE",
+      "locator": "Two-page internal NCN September 2017 financial summary, image and text checked: p.1 cash/revenue/expenses/payable; p.2 YTD contributions, other revenue and NAMB apprenticeship note. Stamped CONFIDENTIAL and hosted by an interested third party.",
+      "provesOnly": "The source describes YTD contributions $1,077,199, other revenue $58,977 (primarily NAMB apprentice funds through MBC), liabilities due to MBC $105,777, plus expense lines and 2017 timing. Illustrates MBC↔NCN inter-entity flows. Not independent audit and not proof that every amount is accurate, lawful or unlawful.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "EVIDENCE_HOLD"
+      ],
+      "integrityFlags": [
+        "CONFIDENTIAL_DISCOVERY_COPY",
+        "HOSTED_BY_LITIGATION_PARTICIPANT",
+        "NO_INDEPENDENT_ACCOUNTING_AUTHENTICATION",
+        "NOT_AN_AUDIT_OPINION"
       ]
     }
   ]
