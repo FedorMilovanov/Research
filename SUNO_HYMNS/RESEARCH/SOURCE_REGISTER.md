@@ -15,11 +15,12 @@ This registry is the human-readable view of data/source-registry-v1.json. The re
 - Source role/type: Digital, explicitly diplomatic presentation of the 1676 source edition
 - Evidence class: A1
 - Access state: PARTIAL_OBJECT
-- Locator state: COARSE_LOCATOR_ONLY
+- Locator state: COARSE_LOCATOR_ONLY (точечные локаторы точны для восьми слаг-адресов, но не для всей книги)
 - Rights state: RIGHTS_UNKNOWN
 - Publication state: REFERENCE
 - HOLDs: RIGHTS_HOLD
 - Supports: Title-page imprint, original collection and primary text witness
+- Slug map: `SUNO_HYMNS/data/dbnl-slug-map-1676.json` — печатная страница ↔ слаг-адрес для восьми адресов, каждый прочитан 2026-11-18 по маркерам `[p. N]` на самой странице DBNL. Источник остаётся COARSE_LOCATOR_ONLY: точны восемь пар из 143 слаг-адресов, а не книга целиком.
 - Limits / caveats: DBNL marks the underlying 1676 work Auteursrechtvrij, but the online transcription is diplomatic rather than a complete unmediated scan; its colophon records omissions and editorial corrections. Use the exact page or scan for poem-level claims.
 
 ## SRC-L-1676-COLOPHON — DBNL colophon for the 1676 Uyt-spanningen transcription

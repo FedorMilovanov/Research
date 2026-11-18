@@ -318,9 +318,11 @@ Added after reading the 1676 printing directly (both Hert-sterckte poems and *De
 **Review state:** SUPPORTED_WITH_SCOPE_LIMITS  
 **Project-level:** yes
 
-**Source IDs:** SRC-L-1676, SRC-L-1676-DEN-NEDRIGEN, SRC-L-1676-HERT-II-82-84
+**Source IDs:** SRC-L-1676, SRC-L-1676-DEN-NEDRIGEN, SRC-L-1676-HERT-I-78-81, SRC-L-1676-HERT-II-82-84, SRC-L-1676-SIMEONS-29, SRC-L-1676-SCHEPSELEN-131-134
 
 - Reading the colophon's 'p. 84' as slug 0084 lands on an unrelated funeral poem. Cite the printed page bracket and the poem title.
+- Eight pairs were read in the pages themselves on 2026-11-18, where the printed number stands openly as [p. N]: 0007 = pp. 12-13; 0013 = p. 29; 0036 = pp. 74-75; 0038 = pp. 78-81; 0039 = pp. 82-84; 0040 = pp. 85-87; 0056 = pp. 131-134; 0061 = pp. 155-158. The map lives in `SUNO_HYMNS/data/dbnl-slug-map-1676.json`.
+- For slugs 0056 and 0061 the opening page carries no printed marker; 131 and 155 are inferred from the illustration filenames `ill0131.gif` and `ill0155.gif` and are therefore a reading aid, not a read value.
 
 **HOLDs:** None recorded.
 
