@@ -1,0 +1,6 @@
+diff --git a/src/components/journal/g3History.css b/src/components/journal/g3History.css
+--- a/src/components/journal/g3History.css
++++ b/src/components/journal/g3History.css
+@@ -60 +60 @@
+-.journal-edition .je-history-milestones { margin: 27px 0 30px; border-block: 2px solid var(--je-gold) 1px solid var(--je-rule); padding: 27px 0 0; }
++.journal-edition .je-history-milestones { margin: 27px 0 30px; border-block-start: 2px solid var(--je-gold); border-block-end: 1px solid var(--je-rule); padding: 27px 0 0; }
