@@ -76,13 +76,13 @@
     ]
   },
   "totals": {
-    "filesScanned": 3108,
-    "filesWithMentions": 903,
+    "filesScanned": 3110,
+    "filesWithMentions": 904,
     "mentions": {
-      "ARCHIVE_HOLD": 1408,
+      "ARCHIVE_HOLD": 1410,
       "BLOCKING-HOLD": 16,
       "BOOK-FULLTEXT-HOLD": 15,
-      "EVIDENCE_HOLD": 1290,
+      "EVIDENCE_HOLD": 1291,
       "HOLD-APPARATUS": 1,
       "HOLD-AS": 3,
       "HOLD-GLOSS": 1,
@@ -107,7 +107,7 @@
     "mentionsByStatus": {
       "closed": 821,
       "open": 2343,
-      "unmarked": 5952
+      "unmarked": 5955
     },
     "canonicalFlagLineStatesRecordedAsBothOpenAndClosed": 403,
     "filesWithJsonHolds": 38,
@@ -371,12 +371,12 @@
       }
     },
     "scripts": {
-      "files": 42,
+      "files": 43,
       "mentions": {
-        "ARCHIVE_HOLD": 36,
+        "ARCHIVE_HOLD": 38,
         "BLOCKING-HOLD": 4,
         "BOOK-FULLTEXT-HOLD": 1,
-        "EVIDENCE_HOLD": 49,
+        "EVIDENCE_HOLD": 50,
         "HOLD-APPARATUS": 1,
         "HOLD-AS": 1,
         "HOLD-GLOSS": 1,
@@ -401,7 +401,7 @@
       "status": {
         "closed": 7,
         "open": 13,
-        "unmarked": 233
+        "unmarked": 236
       }
     },
     "БАПТИСТЫ РОССИИ": {
@@ -27684,6 +27684,17 @@
       },
       "status": {
         "unmarked": 2
+      }
+    },
+    {
+      "path": "scripts/test_render_closures_summary.py",
+      "corpus": "scripts",
+      "mentions": {
+        "ARCHIVE_HOLD": 2,
+        "EVIDENCE_HOLD": 1
+      },
+      "status": {
+        "unmarked": 3
       }
     },
     {

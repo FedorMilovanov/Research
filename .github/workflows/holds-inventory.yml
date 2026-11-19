@@ -37,6 +37,8 @@ on:
       - 'scripts/test_audit_drive_ledger.py'
       - 'data/drive-ledger-audit-2026-11-18.json'
       - 'data/drive-ledger-snapshot-2026-11-18.json'
+      - 'scripts/render_closures_summary.py'
+      - 'scripts/test_render_closures_summary.py'
       - 'data/text-integrity-repairs-2026-11-18.json'
       - 'data/hold-closure-registry-v1.json'
       - 'docs/research/HOLDS_REGISTER_2026-11-18.md'
@@ -77,6 +79,8 @@ on:
       - 'scripts/test_audit_drive_ledger.py'
       - 'data/drive-ledger-audit-2026-11-18.json'
       - 'data/drive-ledger-snapshot-2026-11-18.json'
+      - 'scripts/render_closures_summary.py'
+      - 'scripts/test_render_closures_summary.py'
       - 'data/text-integrity-repairs-2026-11-18.json'
       - 'data/hold-closure-registry-v1.json'
       - 'docs/research/HOLDS_REGISTER_2026-11-18.md'
@@ -121,6 +125,7 @@ jobs:
           python3 -B -m unittest discover -s scripts -p 'test_audit_document_twins.py' -v
           python3 -B -m unittest discover -s scripts -p 'test_audit_state_stamps.py' -v
           python3 -B -m unittest discover -s scripts -p 'test_audit_drive_ledger.py' -v
+          python3 -B -m unittest discover -s scripts -p 'test_render_closures_summary.py' -v
       - name: Scan (must not touch the working tree)
         run: |
           python3 scripts/audit_repository_holds.py -o /tmp/holds-a.json
@@ -152,6 +157,10 @@ jobs:
       # network: the snapshot is what Drive answered on its date, and it is committed.
       - name: Reconcile Drive library ledger (report only)
         run: python3 -B scripts/audit_drive_ledger.py --snapshot data/drive-ledger-snapshot-2026-11-18.json --summary
+      # A generated map that disagrees with the registry is the same defect as a stale
+      # counter: it quotes an older state of the file it summarises. This one is gated.
+      - name: Closure map matches the registry
+        run: python3 -B scripts/render_closures_summary.py --check
       - name: Check publication gate queue composition
         run: python3 -B scripts/publication_gate_status.py --check
       - name: Report counts without asserting closure
