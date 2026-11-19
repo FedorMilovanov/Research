@@ -697,6 +697,32 @@
         "EVIDENCE_HOLD"
       ],
       "residualReason": "Проверка ловит расхождение с артефактом, но не судит, должно ли утверждение быть таким; числа без машинного поля остаются без срока годности."
+    },
+    {
+      "id": "HCR-2026-11-18-18",
+      "title": "Ссылки: отчёт стал закоммиченным артефактом, таблица §8 генерируется, отчёт сверяется в CI",
+      "holdType": "LOCATOR_HOLD",
+      "previousState": "Замер §8 (2 856 / 5 974 / 58) жил только в прозе; у инструмента был -o, но отчёт не коммитился — сверять было не с чем",
+      "closedScope": "Отчёт data/relative-links-audit-2026-11-18.json закоммичен, §8 генерируется из него, CI сверяет отчёт с новым прогоном: resolves 2 861, external 5 984, missing 58",
+      "recordLocations": [
+        "docs/research/HOLDS_REGISTER_2026-11-18.md §22",
+        "data/relative-links-audit-2026-11-18.json",
+        "scripts/audit_register_claims.py"
+      ],
+      "method": "relative-link-audit",
+      "objects": [
+        {
+          "resolves": 2861,
+          "external": 5984,
+          "missing": 58,
+          "explained": 58,
+          "unexplained": 0
+        }
+      ],
+      "residualHolds": [
+        "LOCATOR_HOLD"
+      ],
+      "residualReason": "Проверяются относительные ссылки рабочего дерева; внешние адреса не запрашивались, и ни одна ссылка не подтверждает содержимое удалённого объекта."
     }
   ],
   "confirmations": [

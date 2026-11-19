@@ -13,6 +13,7 @@ on:
       - 'scripts/audit_relative_links.py'
       - 'scripts/test_audit_relative_links.py'
       - 'data/relative-link-exceptions-v1.json'
+      - 'data/relative-links-audit-2026-11-18.json'
       - 'scripts/check_hold_vocabulary.py'
       - 'scripts/test_check_hold_vocabulary.py'
       - 'data/hold-value-mapping-proposal-v1.json'
@@ -41,6 +42,7 @@ on:
       - 'scripts/test_render_closures_summary.py'
       - 'scripts/audit_register_claims.py'
       - 'scripts/test_audit_register_claims.py'
+      - 'data/relative-links-audit-2026-11-18.json'
       - 'data/text-integrity-repairs-2026-11-18.json'
       - 'data/hold-closure-registry-v1.json'
       - 'docs/research/HOLDS_REGISTER_2026-11-18.md'
@@ -139,6 +141,9 @@ jobs:
           python3 scripts/audit_relative_links.py -o /tmp/links-a.json
           python3 scripts/audit_relative_links.py -o /tmp/links-b.json
           cmp /tmp/links-a.json /tmp/links-b.json
+          # The register's §8 table is generated from this committed report, so the report
+          # itself has to be current - otherwise the table would faithfully quote an old run.
+          cmp /tmp/links-a.json data/relative-links-audit-2026-11-18.json
       - name: Reject working-tree changes
         run: git diff --exit-code
       - name: Reject unexplained dead locators

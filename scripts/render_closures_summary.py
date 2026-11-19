@@ -49,6 +49,7 @@ METHOD_NAMES = {
     "register-claims-audit": "счётчики против артефактов",
     "server-checksum-readback": "серверная контрольная сумма",
     "read-only-link-audit": "read-only проверка ссылок",
+    "relative-link-audit": "проверка относительных ссылок",
     "space-restoration-backed-by-file-history": "пробелы по истории файла",
     "internal-digest-rehash": "пересчёт внутренних подписей",
 }

@@ -41,6 +41,8 @@ TWINS = "data/document-twins-2026-11-18.json"
 STAMPS = "data/state-stamps-2026-11-18.json"
 LEDGER = "data/drive-ledger-audit-2026-11-18.json"
 REGISTRY = "data/hold-closure-registry-v1.json"
+LINKS = "data/relative-links-audit-2026-11-18.json"
+REPAIRS = "data/text-integrity-repairs-2026-11-18.json"
 
 # label as printed in the register -> (artefact, field). The label is matched literally
 # inside a markdown table row, so a reworded row is reported instead of passing silently.
@@ -182,6 +184,12 @@ PROSE_CLAIMS: list[dict] = [
     {"id": "twins-markdown-files",
      "pattern": r"документов \(из (?P<n>[\d\s\u2009]+) Markdown",
      "artefact": TWINS, "field": "scope.markdownFiles"},
+    {"id": "repairs-applied",
+     "pattern": r"(?P<n>\d+) склеек «слово\+число\+слово» восстановлены",
+     "artefact": REPAIRS, "field": "totals.repairedTokens"},
+    {"id": "repairs-blocked",
+     "pattern": r"(?P<n>\d+) остаются под квитанциями",
+     "artefact": REPAIRS, "field": "totals.blockedTokens"},
     {"id": "stamps-verified",
      "pattern": r"Проверено: \*\*(?P<n>\d+)\*\* документов из",
      "artefact": STAMPS, "field": "totals.stamped"},
@@ -224,6 +232,70 @@ def prose_audit(text: str, root: Path) -> list[dict]:
                 entry["state"] = "stale"
         findings.append(entry)
     return findings
+
+
+
+LINKS_BEGIN = "<!-- links-slice:begin -->"
+LINKS_END = "<!-- links-slice:end -->"
+LINK_ROWS = [
+    ("Markdown-файлов", "scope.markdownFiles"),
+    # Labels must be unique in the whole document: §13 already has a row called `external`
+    # (signatures), and a second one with a different value would be ambiguous, not a claim.
+    ("ссылок `resolves`", "totals.byState.resolves"),
+    ("ссылок `external`", "totals.byState.external"),
+    ("ссылок `missing`", "totals.byState.missing"),
+    ("ссылок `outside`", "totals.byState.outside"),
+    ("ссылок `unqualified`", "totals.byState.unqualified"),
+    ("ссылок `missing-anchor`", "totals.byState.missing-anchor"),
+    ("дефектов разобрано (`explained`)", "totals.explained"),
+    ("дефектов необъяснённых (`unexplained`)", "totals.unexplained"),
+]
+
+
+def _pick(data: dict, field: str):
+    node = data
+    for part in field.split("."):
+        node = node.get(part, {}) if isinstance(node, dict) else None
+    return node
+
+
+def render_links_table(links: dict) -> str:
+    lines = [LINKS_BEGIN, "| Показатель ссылок | Значение |", "|---|---:|"]
+    for label, field in LINK_ROWS:
+        value = _pick(links, field)
+        if isinstance(value, int):
+            lines.append(f"| {label} | {fmt(value)} |")
+    lines.append(LINKS_END)
+    return "\n".join(lines)
+
+
+def replace_between(text: str, begin: str, end: str, block: str) -> tuple[str, bool]:
+    start, stop = text.find(begin), text.find(end)
+    if start == -1 or stop == -1 or stop < start:
+        return text, False
+    return text[:start] + block + text[stop + len(end):], True
+
+
+# name -> (marker pair, artefact, renderer). Adding a generated block here is the whole
+# change needed for it to be written and checked; nothing else enumerates them.
+SLICES = {
+    "inventory": ((SLICE_BEGIN, SLICE_END), INVENTORY, render_slice_table),
+    "corpus": ((CORPUS_BEGIN, CORPUS_END), INVENTORY, render_corpus_table),
+    "links": ((LINKS_BEGIN, LINKS_END), LINKS, render_links_table),
+}
+
+
+def slice_states(text: str, root: Path) -> dict[str, str]:
+    states = {}
+    for name, ((begin, end), artefact, renderer) in SLICES.items():
+        path = root / artefact
+        if not path.exists():
+            states[name] = "source-missing"
+            continue
+        expected = renderer(json.loads(path.read_text(encoding="utf-8")))
+        updated, found = replace_between(text, begin, end, expected)
+        states[name] = "match" if found and updated == text else ("anchor-missing" if not found else "stale")
+    return states
 
 
 TABLE_ROW = re.compile(r"^\|\s*(?P<label>[^|]+?)\s*\|\s*(?P<value>-?[\d\s\u2009\u00a0]{1,12})\s*\|")
@@ -274,13 +346,8 @@ def audit(root: Path, register: Path | None = None) -> dict:
     register = register or root / REGISTER
     text = register.read_text(encoding="utf-8")
     inventory_path = root / INVENTORY
-    corpus_state = slice_state = "source-missing"
-    if inventory_path.exists():
-        inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
-        updated, found = replace_corpus_block(text, render_corpus_table(inventory))
-        corpus_state = "match" if found and updated == text else ("anchor-missing" if not found else "stale")
-        updated2, found2 = replace_slice_block(text, render_slice_table(inventory))
-        slice_state = "match" if found2 and updated2 == text else ("anchor-missing" if not found2 else "stale")
+    states = slice_states(text, root)
+    corpus_state, slice_state, links_state = states["corpus"], states["inventory"], states["links"]
     printed = rows(text)
     prose = prose_audit(text, root)
     findings = []
@@ -316,6 +383,7 @@ def audit(root: Path, register: Path | None = None) -> dict:
         "totals": totals,
         "corpusTable": corpus_state,
         "sliceTable": slice_state,
+        "linksTable": links_state,
         "findings": findings,
     }
 
@@ -325,7 +393,8 @@ def summary(report: dict) -> str:
     lines = [f"Заявленных счётчиков: {report['scope']['declaredClaims']} — " +
              ", ".join(f"{k}={v}" for k, v in sorted(totals.items())),
              f"Таблица §2.1 по корпусам: {report['corpusTable']}",
-             f"Таблица §2 (машинный срез): {report['sliceTable']}"]
+             f"Таблица §2 (машинный срез): {report['sliceTable']}",
+             f"Таблица §8 (ссылки): {report['linksTable']}"]
     for finding in report["findings"]:
         if finding["state"] in ("match", "superseded"):
             continue
@@ -344,6 +413,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("-o", "--output", default=None)
     parser.add_argument("--write-corpus-table", action="store_true")
     parser.add_argument("--write-slice-table", action="store_true")
+    parser.add_argument("--write-links-table", action="store_true")
+    parser.add_argument("--write-all", action="store_true")
     args = parser.parse_args(argv)
 
     root = Path(args.root).resolve()
@@ -357,26 +428,30 @@ def main(argv: list[str] | None = None) -> int:
         print(summary(report))
     bad = [f for f in report["findings"] if f["state"] not in ("match", "superseded")]
     for state, label in ((report["corpusTable"], "§2.1 таблица по корпусам"),
-                         (report["sliceTable"], "§2 машинный срез")):
+                         (report["sliceTable"], "§2 машинный срез"),
+                         (report["linksTable"], "§8 таблица ссылок")):
         if state != "match":
             bad = bad + [{"state": state, "label": label, "claimed": None, "actual": None, "line": None}]
-    if args.write_corpus_table or args.write_slice_table:
-        inventory = json.loads((root / INVENTORY).read_text(encoding="utf-8"))
+    writes = []
+    if args.write_all or args.write_corpus_table or args.write_slice_table or args.write_links_table:
         target = Path(args.register) if args.register else root / REGISTER
         text = target.read_text(encoding="utf-8")
-        writes = []
-        if args.write_corpus_table:
-            text, found = replace_corpus_block(text, render_corpus_table(inventory))
-            if not found:
-                print("corpus-table markers not found", file=sys.stderr)
+        wanted = [name for name, flag in (("corpus", args.write_corpus_table),
+                                          ("inventory", args.write_slice_table),
+                                          ("links", args.write_links_table)) if flag]
+        if args.write_all:
+            wanted = list(SLICES)
+        for name in wanted:
+            (begin, end), artefact, renderer = SLICES[name]
+            path = root / artefact
+            if not path.exists():
+                print(f"{artefact} missing", file=sys.stderr)
                 return 1
-            writes.append("corpus table")
-        if args.write_slice_table:
-            text, found = replace_slice_block(text, render_slice_table(inventory))
+            text, found = replace_between(text, begin, end, renderer(json.loads(path.read_text(encoding="utf-8"))))
             if not found:
-                print("inventory-slice markers not found", file=sys.stderr)
+                print(f"{name} markers not found", file=sys.stderr)
                 return 1
-            writes.append("inventory slice")
+            writes.append(name)
         target.write_text(text, encoding="utf-8")
         print(f"wrote {', '.join(writes)} into {target}", file=sys.stderr)
         return 0

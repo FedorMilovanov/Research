@@ -164,5 +164,44 @@ class ProseClaimTests(unittest.TestCase):
         self.fx.write_register("Сравнено **9** документов (из 4 Markdown).\n")
         self.assertEqual(claims.main(["--root", str(self.fx.root), "--check"]), 1)
 
+class SliceRegistryTests(unittest.TestCase):
+    """Every generated block is declared once, and an unknown name is not silently skipped."""
+
+    def setUp(self) -> None:
+        self.fx = Fixture()
+        self.fx.write_json(claims.LINKS, {"scope": {"markdownFiles": 7},
+                                          "totals": {"byState": {"resolves": 5, "external": 2, "missing": 1},
+                                                     "explained": 1, "unexplained": 0}})
+
+    def tearDown(self) -> None:
+        self.fx.close()
+
+    def test_links_slice_renders_from_the_committed_report(self) -> None:
+        block = claims.render_links_table(json.loads((self.fx.root / claims.LINKS).read_text(encoding="utf-8")))
+        self.assertIn("| ссылок `resolves` | 5 |", block)
+        self.assertIn("| Markdown-файлов | 7 |", block)
+
+    def test_links_slice_drift_is_detected(self) -> None:
+        self.fx.write_register(claims.LINKS_BEGIN + "\n| ссылок `resolves` | 99 |\n" + claims.LINKS_END + "\n")
+        self.assertEqual(self.report()["linksTable"], "stale")
+
+    def test_write_all_fills_every_declared_slice(self) -> None:
+        self.fx.write_register("\n".join([
+            claims.SLICE_BEGIN, claims.SLICE_END,
+            claims.CORPUS_BEGIN, claims.CORPUS_END,
+            claims.LINKS_BEGIN, claims.LINKS_END, ""]))
+        self.assertEqual(claims.main(["--root", str(self.fx.root), "--write-all"]), 0)
+        states = self.report()
+        self.assertEqual([states["sliceTable"], states["corpusTable"], states["linksTable"]],
+                         ["match", "match", "match"])
+
+    def test_missing_artefact_makes_the_slice_source_missing(self) -> None:
+        (self.fx.root / claims.LINKS).unlink()
+        self.fx.write_register(claims.LINKS_BEGIN + "\n" + claims.LINKS_END + "\n")
+        self.assertEqual(self.report()["linksTable"], "source-missing")
+
+    def report(self) -> dict:
+        return claims.audit(self.fx.root)
+
 if __name__ == "__main__":
     unittest.main()
