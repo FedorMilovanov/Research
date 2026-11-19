@@ -1551,6 +1551,19 @@ HOLD без изменений: CO 49:100, CO 45:706, `PRINT_IMAGE_HOLD`, пра
 | 1 | С. 8, сн. 27: «отменена в 1706 г.» | `SIMPLIFIED` прежний. Решение Компании 25.06.1706 принято «sans toucher à la doctrine contenue dans les règlements de 1649»: отменена подпись, сохранено увещание «à ne rien enseigner contre les règlements» (л. 139) |
 | 2 | Дата речи Турретина (§70, п. 3) | Скорее всего, 29.06.1706 (`DATE_INFERRED`): заседание 25.06 (пятница), делегаты выступили позже, а вторник после 25-го — только 29-е (григ.) |
 | 3 | «Преемник» (§67, п. 1) | Бюде, л. 80: «en remplacement de Louis Tronchin», 29.09.1705 — подтверждено независимо |
-| 4 | `27_`: Цюрих | Регистр 1706 г.: «on ne signe point à Zurich» ↔ Schaff-Herzog (до 1725–1740) — `SOURCE_TENSION` |
+| 4 | `27_`: Цюрих | Регистр 1706 г.: «on ne signe point à Zurich» ↔ Schaff-Herzog (до 1725–1740) — `SOURCE_TENSION` | *(Раунд 121, §72: Schaff-Herzog V, p. 218 — «Zurich and Bern retained it»; дат 1725–1740 там нет.)*
+
+**Вердикты S1–S5 не меняются.**
+
+## 72. Раунд 121 (2026-11-17): «не продержалась долго даже в Швейцарии» — Шафф и *New Schaff-Herzog*
+
+Подробности — `34_` §4.204 (Q200), S219; REPASS-документ, §44.
+
+| # | Место | Итог |
+|---|---|---|
+| 1 | С. 8, сн. 26–27: «не продержалась долго даже в Швейцарии» | По смыслу совпадает с Schaff, *Creeds* I, p. 486 («about half a century») и *New Schaff-Herzog* V, p. 218 («could not long hold its position»). Заимствование не утверждается |
+| 2 | «…и была отменена в 1706 г.» | `SIMPLIFIED` прежний: 1706 — Женева, «Zurich and Bern retained it», «never formally abolished» (SH V, p. 218) |
+| 3 | `27_`: «к 1725–1740 гг.… (Schaff-Herzog V:218)» | На p. 218 дат нет — `LOCATOR_DOES_NOT_SUPPORT_DATES` (поправка к корпусу, мягко) |
+| 4 | Цюрих (§71, п. 4) | `SOURCE_TENSION` прежний: регистр Компании 1706 г. ↔ SH «Zurich and Bern retained it» |
 
 **Вердикты S1–S5 не меняются.**

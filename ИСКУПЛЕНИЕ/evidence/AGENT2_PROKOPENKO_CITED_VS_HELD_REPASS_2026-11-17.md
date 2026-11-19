@@ -1646,6 +1646,35 @@ E. de Budé, *Vie de J.-A. Turrettini, théologien genevois, 1671–1737* (G. Br
 | Сн. 27: «отменена в 1706 г.» | Вердикт **`SIMPLIFIED`** не меняется, опора теперь — постановление Компании (по регистрам у Бюде). Решение от 25.06.1706 принято «**sans toucher à la doctrine contenue dans les règlements de 1649**»: отменена подпись, доктрина оставлена, увещание «à ne rien enseigner contre les règlements» сохранено |
 | Хронология 1706 г. | 25.06 — Компания (12 из 34 отсутствуют, в том числе Каландрини и Пикте) → около 29.06 — речь Турретина перед Малым советом (Чандлер) → 13.08 — протест меньшинства → посредничество Консистории → 27.08 — формуляр Компании → 20.09 — ратификация Советом (Боржо). DeYoung даёт для Совета 06.09 (§40, `DATE_DISCREPANCY` — прежний) |
 | «Преемник на богословской кафедре» (§39) | Бюде (л. 80) независимо подтверждает: преемник Луи Троншена с 29.09.1705. `FACT_ERROR` (мягко) прежний |
-| `27_`: Цюрих | Регистр Компании 1706 г.: «on ne signe point à Zurich» ↔ `27_` (Schaff-Herzog): Цюрих — до 1725–1740 гг. `SOURCE_TENSION`. Возможно, речь о разном: о подписи при посвящении и о действии Формулы как закона. Не разрешено |
+| `27_`: Цюрих | Регистр Компании 1706 г.: «on ne signe point à Zurich» ↔ `27_` (Schaff-Herzog): Цюрих — до 1725–1740 гг. `SOURCE_TENSION`. Возможно, речь о разном: о подписи при посвящении и о действии Формулы как закона. Не разрешено | *(Раунд 121, §44: в Schaff-Herzog V, p. 218 дат «1725–1740» нет; там — «Zurich and Bern retained it» и «never formally abolished, it gradually fell entirely into disuse».)*
+
+Вердикты S1–S5 не меняются. Умысел не утверждается.
+
+## 44. Раунд 121 (2026-11-17): сн. 26–27, «не продержалась долго даже в Швейцарии» — Шафф (*Creeds* I, pp. 485–486) и *New Schaff-Herzog* V, p. 218; поправка к `27_` («1725–1740»)
+
+**Повод.** В §43 осталось `SOURCE_TENSION`. Регистр Компании 1706 г. пишет: «on ne signe point à Zurich». В `27_` (пометка Волны 18, п. 3) сказано: «к **1725–1740 гг.** она вышла из употребления также в Цюрихе и Берне (Schaff-Herzog *Encyc.* V:218)». Сам локатор V:218 в корпусе не открывался. Формулировку статьи «не продержалась долго даже в Швейцарии» с общими справочниками раньше не сверяли.
+
+### 44.1. Источники
+
+- (а) Ph. Schaff, *The Creeds of Christendom* I (1877), §61, IA `creedschristendo01scha`, `BookReaderGetTextWrapper` (индекс = лист − 1). Лист 509 = **p. 485**, лист 510 = **p. 486** (как в §13), лист 512 = p. 488. Класс A2 (историческое изложение; OCR).
+- (б) *The New Schaff-Herzog Encyclopedia of Religious Knowledge*, vol. V (1909), IA `newschaffherzog38haucgoog` (скан Google), статья «Helvetic Consensus». Индекс 241 — колонтитул «Helvetic Consensus THE NEW SCHAFF-HERZOG **218**». Подпись автора в OCR искажена («Eiol Eou.»). Класс B (энциклопедия; OCR).
+
+### 44.2. Что сказано
+
+| Источник | Текст (OCR) | Что даёт |
+|---|---|---|
+| (а) p. 485–486 | «…agreed upon by the ecclesiastical and civil authorities of Zurich, Basle, and Geneva, and adopted in other Reformed cantons as a binding rule of public teaching for ministers and professors. Its authority was confined to Switzerland, and **even there it could not maintain itself longer than about half a century**… the great Elector Frederick William of Brandenburg (1686), and afterwards the Kings of Prussia and England, and the Corpus Evangelicorum at Ratisbon (1722), urged the Reformed cantons… to abandon the Formula. It **gradually lost its hold** upon the Swiss churches, and was allowed to die and be buried without mourners» | «Около полувека» (1675 + ~50 ≈ 1725) и «постепенно» — ни года 1706, ни акта отмены для Швейцарии в целом |
+| (а) p. 488 | «The concluding article (the 26th) prohibits the teaching of new or doubtful and unauthorized doctrines which are contrary to the Word of God, the Second Helvetic Confession, the Canons of the Synod of Dort, and other Reformed symbols» | Ср. п. 3 женевского формуляра 1706 г. (§40): Дорт и «règlements… des Églises de Suisse» |
+| (б) p. 218 | «Although the Helvetic Consensus was introduced everywhere in the Reformed Church of Switzerland, **it could not long hold its position**… brought it about that the signature was not demanded in Basel after 1686, and it was also dropped in Schaffhausen and later (1706) in Geneva, **while Zurich and Bern retained it**» | 1706 — **женевская** дата. Цюрих и Берн подпись **сохранили** |
+| (б) p. 218 | «An agreement between the liberal and conservative parties was temporarily attained in so far that it was decided that the Consensus was not to be regarded as a rule of faith, but only as a norm of teaching. In 1722 Prussia and England applied… for the abolition of the formula… The reply was somewhat evasive; but, **though the formula was never formally abolished, it gradually fell entirely into disuse**» | Формально Формула **не отменялась**. Различие «не правило веры, а норма учения» соответствует женевскому снятию «sic sentio» при сохранении обещания (§41, §43) |
+
+### 44.3. Итог
+
+| Вопрос | Итог |
+|---|---|
+| Сн. 26–27: «не продержалась долго даже в Швейцарии» | Совпадает **по смыслу** с (а) «could not maintain itself longer than about half a century» и (б) «could not long hold its position». Заимствование **не утверждается**: сноски статьи ведут к Клауберу |
+| Сн. 27: «и была отменена в 1706 г.» | Оба справочника против прочтения «в Швейцарии»: 1706 — женевская дата, Цюрих и Берн подпись сохранили, Формула «never formally abolished». Вердикт **`SIMPLIFIED`** не меняется, теперь его подтверждают и общие справочники |
+| `27_`, п. 3 пометки Волны 18: «к 1725–1740 гг. она вышла из употребления также в Цюрихе и Берне (Schaff-Herzog V:218)» | В (б) на p. 218 **дат 1725–1740 нет**: там сказано «Zurich and Bern retained it» и «gradually fell entirely into disuse» без года. **`LOCATOR_DOES_NOT_SUPPORT_DATES`** (поправка к корпусу, мягко): суть («вышла из употребления») подтверждена, даты по этому локатору — нет. «Базель 1686, затем Шаффхаузен, Женева 1706» подтверждено. «1722» подтверждено, но в (б) это одна дата, а не «1722–1723» |
+| Цюрих: `SOURCE_TENSION` (§43) | Уточнено. Против регистра Компании («on ne signe point à Zurich», довод одной из сторон спора) стоит (б): «Zurich and Bern retained it». Перевес у (б) как у описания, но это энциклопедия без указания на акты. Метка `SOURCE_TENSION` прежняя: две стороны теперь названы прямо, акты Цюриха не открывались |
 
 Вердикты S1–S5 не меняются. Умысел не утверждается.
