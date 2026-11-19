@@ -178,6 +178,7 @@ python3 -B scripts/check_drive_mirror_pairs.py            # таблица: ре
 python3 -B scripts/check_drive_mirror_pairs.py --check    # структурные ошибки -> ненулевой код
 python3 -B scripts/check_drive_mirror_pairs.py --summary   # одна строка для раннера гейтов
 python3 -B scripts/check_drive_mirror_pairs.py --index     # что значит `bytes` в записях индекса
+python3 -B scripts/check_drive_mirror_pairs.py --cross     # id в корпусе, индексе и реестре пар
 ```
 
 Режим `--index` — продолжение того же разбора: он сверяет запись индекса с парой и печатает, какой из четырёх смыслов лежит в её поле `bytes` (см. `DRIVE_INDEX_BYTES_FIELD_2026-11-18.md`), а также считает противоречия `kind: file` у Docs-объектов — сейчас их восемь.

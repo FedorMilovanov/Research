@@ -23,6 +23,7 @@
     python3 -B scripts/check_drive_mirror_pairs.py --check
     python3 -B scripts/check_drive_mirror_pairs.py --summary   # одна строка
     python3 -B scripts/check_drive_mirror_pairs.py --index     # что значит поле bytes в индексе
+    python3 -B scripts/check_drive_mirror_pairs.py --cross     # id в корпусе, индексе и реестре
 
 Отдельно `--index` сверяет записи индекса библиотеки с этим реестром и печатает,
 какой из четырёх смыслов лежит в их поле `bytes` (внутренний размер Docs, размер
@@ -45,6 +46,7 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "docs" / "research" / "data" / "drive-mirror-pairs.json"
 INDEX = ROOT / "ИСКУПЛЕНИЕ" / "data" / "atonement-library-index.json"
+CORPUS = ROOT / "ИСКУПЛЕНИЕ" / "data" / "atonement-corpus-v1.json"
 EXPECTED_MIRRORS = 13
 
 
@@ -242,6 +244,63 @@ def report_index(entries: list[dict]) -> int:
     return 0
 
 
+
+# Как зовётся каждое зеркало в driveMirrors корпуса: там ключи fileNN, а не наши «05_».
+CORPUS_KEYS = {
+    "03_": "file03", "04_": None, "05_": "file05", "07_": "file07", "08_": "file08",
+    "09_": None, "10_": None, "11_": "file11", "12_": "file12", "13_": "file13",
+    "14_": "file14", "15_": "file15", "16_": "file16",
+}
+
+
+def report_cross(entries: list[dict]) -> int:
+    """Три места, где живёт личность зеркала: корпус (SSOT ID), индекс, реестр пар."""
+    if not CORPUS.exists():
+        print("корпус не найден", file=sys.stderr)
+        return 1
+    corpus = json.loads(CORPUS.read_text(encoding="utf-8"))
+    mirrors = corpus.get("driveMirrors") or {}
+    records = index_records()
+
+    print(f"{'зеркало':<8} {'корпус':<16} {'индекс':<12} {'реестр':<10} состояние SSOT")
+    mismatches = 0
+    bare = 0
+    for entry in entries:
+        tag = entry.get("mirror", "?")
+        drive_id = entry.get("drive_id")
+        key = CORPUS_KEYS.get(tag)
+        corpus_val = mirrors.get(key) if key else None
+        if isinstance(corpus_val, dict):
+            corpus_id, corpus_state = corpus_val.get("driveId"), "запись-объект"
+        elif isinstance(corpus_val, str):
+            corpus_id, corpus_state = corpus_val, "голая строка ID"
+            bare += 1
+        elif key is None:
+            corpus_id, corpus_state = "—", "ключа нет"
+        else:
+            corpus_id, corpus_state = "—", "отсутствует"
+
+        rec = records.get(drive_id) or {}
+        index_rev = rec.get("contentRevision") or "—"
+        registry_rev = entry.get("revision") or "—"
+
+        ok = True
+        if corpus_id not in (None, "—") and corpus_id != drive_id:
+            ok = False
+            mismatches += 1
+        if rec and (rec.get("contentRevision") != entry.get("revision")):
+            ok = False
+            mismatches += 1
+        print(
+            f"{tag:<8} {('совпадает' if corpus_id == drive_id else corpus_state):<16} "
+            f"{index_rev:<12} {registry_rev:<10} {corpus_state}{'' if ok else '  ← расходится'}"
+        )
+
+    print(f"\nзеркал: {len(entries)}; ID расходятся с корпусом/индексом: {mismatches}; "
+          f"в driveMirrors записаны голой строкой: {bare}")
+    return 1 if mismatches else 0
+
+
 def main(argv: list[str]) -> int:
     data, errors = load()
     mode_check = "--check" in argv
@@ -253,6 +312,9 @@ def main(argv: list[str]) -> int:
             entry_errors, info = check_entry(entry)
             errors.extend(entry_errors)
             infos.append(info)
+
+    if "--cross" in argv:
+        return report_cross(data.get("mirrors", []))
 
     if "--index" in argv:
         return report_index(data.get("mirrors", []))
