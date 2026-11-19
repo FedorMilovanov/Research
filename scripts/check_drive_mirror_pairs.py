@@ -38,6 +38,7 @@ from __future__ import annotations
 import hashlib
 import json
 import pathlib
+import re
 import subprocess
 import sys
 
@@ -165,6 +166,29 @@ def classify_bytes(entry: dict, rec: dict) -> tuple[str, bool]:
     return f"не опознан (в индексе {declared})", False
 
 
+CURRENCY_FIELD = re.compile(r"(gitBytes|bytesAfter|gitMd5|md5After|driveBytes|driveMd5)", re.I)
+
+
+def check_currency_claims(entry: dict, rec: dict, path: pathlib.Path, verbose: bool) -> int:
+    """Поля записи, которые называют себя текущими числами файла: сколько из них отстало."""
+    claims = {k: v for k, v in rec.items() if CURRENCY_FIELD.search(k)}
+    if not claims:
+        return 0
+    data = path.read_bytes()
+    size, md5 = len(data), hashlib.md5(data).hexdigest()
+    stale = 0
+    for key, value in claims.items():
+        is_md5 = "md5" in key.lower()
+        actual = md5 if is_md5 else size
+        ok = str(value).lower() == str(actual).lower()
+        if not ok:
+            stale += 1
+        if verbose or not ok:
+            delta = "" if is_md5 else f" (расхождение {size - int(value)} B)"
+            print(f"         {key} = {value} — {'совпадает' if ok else 'не совпадает, сейчас ' + str(actual) + delta}")
+    return stale
+
+
 def report_index(entries: list[dict]) -> int:
     records = index_records()
     if not records:
@@ -172,6 +196,7 @@ def report_index(entries: list[dict]) -> int:
         return 1
     print(f"{'зеркало':<8} {'bytes':>8} {'kind':<9} смысл поля bytes")
     contradictions = 0
+    stale_claims = 0
     for entry in entries:
         rec = records.get(entry.get("drive_id") or "")
         tag = entry.get("mirror", "?")
@@ -185,7 +210,11 @@ def report_index(entries: list[dict]) -> int:
             flag = "  ← kind: file у Docs-объекта"
             contradictions += 1
         print(f"{tag:<8} {str(rec.get('bytes')):>8} {kind:<9} {sense}{'' if fits else '  ← расходится'}{flag}")
+        path = ROOT / (entry.get("path") or "")
+        if path.exists():
+            stale_claims += check_currency_claims(entry, rec, path, verbose=False)
     print(f"\nпротиворечий kind/mime: {contradictions} (нормализация — решение владельца, см. DRIVE_INDEX_BYTES_FIELD_2026-11-18.md)")
+    print(f"полей, называющих себя текущими числами и разошедшихся с HEAD: {stale_claims}")
     return 0
 
 

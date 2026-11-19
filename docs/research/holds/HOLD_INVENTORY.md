@@ -1,6 +1,6 @@
 # HOLD inventory — сквозной инвентарь HOLD-ов Research
 
-**Собрано:** 2026-11-19; **проверенный коммит:** `c4fe02c2d65440242fac4d725bc56a2124c7f993`. **Роль:** производный read-only артефакт, не authority. Пересобрать: `python3 -B scripts/render_hold_inventory.py`; весь контур гейтов: `python3 -B scripts/run_research_gates.py`.
+**Собрано:** 2026-11-19; **проверенный коммит:** `fcf6822e5ba98f0e21008fbfba8c1489a0c2076d`. **Роль:** производный read-only артефакт, не authority. Пересобрать: `python3 -B scripts/render_hold_inventory.py`; весь контур гейтов: `python3 -B scripts/run_research_gates.py`.
 
 Инвентарь отвечает на один вопрос: какие HOLD-и объявлены в репозитории, какого они типа и что нужно, чтобы закрыть каждый честно. Он **ничего не снимает**: по `data/repository-evidence-policy-v2.json` HOLD не снимается ни присутствием файла в Research/Drive, ни достижимостью URL, ни библиографической записью.
 
