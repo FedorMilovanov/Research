@@ -1964,3 +1964,55 @@ Wayback Machine, страница `www.gracechurch.org/about/doctrinal-statement
 | Цитата `02_` | `QUOTE_NOT_VERBATIM` (мягко) |
 
 Вердикты S1–S5 не меняются. Умысел не утверждается.
+
+## 54. Раунд 131 (2026-11-17): *Formula Consensus Helvetica*, канон XIII — латинский текст по Нимейеру (1840) и Августи (1846); «diram» или «duram» (с. 7, сн. 25; корпус `27_`, `fathers/10_`, `AGENT6` A.10)
+
+**Повод.** §11 (строка «Канон XIII (с. 7, сн. 25)»): перевод Клаубера, которым пользуется статья («dreadful death instead of the elect alone»; у статьи — «мучительную смерть»), признан ACCURATE. Латинский текст в корпусе расходится в одном слове:
+- `27_` (пометка Волны 18) и `fathers/17_` по Шаффу (I, p. 488) дают «Pro solis electis… propriaque intentione **diram** mortem oppetiit»;
+- `AGENT6` A.10 по Августи (1846, p. 450–451) — «propria que intentione **duram** mortem oppetiit».
+
+Кроме того, `fathers/10_` пишет: «Каноны XIII–XVI (Niemeyer 1840, pp. 733–735, сверено в Волне 18)», а `AGENT6` A.10 — «Niemeyer Collectio и Schaff §61 не открывались».
+
+### 54.1. Источники
+
+- (а) H. A. Niemeyer, *Collectio confessionum in ecclesiis reformatis publicatarum* (Lipsiae: Klinkhardt, 1840), IA `collectioconfes00niemgoog` (скан Google). Текст — `BookReaderGetTextWrapper`; номера страниц — `_page_numbers.json` и колонтитулы через `inside.php`.
+- (б) J. C. W. Augusti (изд.), *Corpus librorum symbolicorum qui in ecclesia reformatorum auctoritatem publicam obtinuerunt*, ed. altera (Lipsiae: Friedlein & Hirsch, 1846), IA `MN41545ucmf_4`. Поиск — `inside.php`.
+- (в) Ph. Schaff, *Creeds of Christendom* I (1877), IA `creedschristendo01scha`, лист 512 (индекс 511) = p. 488 — повторное чтение сноски (см. §46).
+- Класс A1 (латинский текст изданий), OCR.
+
+### 54.2. Нимейер (а): где стоят каноны и чего в скане нет
+
+| Лист скана | Печатная страница | Содержание (OCR) |
+|---|---|---|
+| 786 | **729** (`page_numbers.json`: уверенность 99; колонтитул «Formula Consensus Helvetica. 729») | Конец предисловия: «Sal[vum]… per Dei gratiam stat fundamentum fidei… Salva unitas corporis mystici et Sp[iritus]» — латынь, которую `27_` цитирует по Шаффу (I:487), **есть** у Нимейера; затем «Canones. I.» |
+| 787 | 730 | Каноны II–IV, начало V |
+| — | **731 — в скане нет** | Листы 787–794 покрывают pp. 730–738: 8 листов на 9 страниц. По разрыву текста (конец V – начало VIII) пропущена, по всей видимости, именно эта страница |
+| 788 | 732 (вывод) | Конец VIII, IX–XII; внизу — начало XIII: «Sicut Christus ab aeterno electus est ut Caput, Princeps et Haeres omnium eorum, qui in tempore per gratiam eius…» |
+| 789 | 733 (вывод) | Изображение низкого разрешения, OCR неполный: читается конец XIII («…Patris eligentis, Filii redimentis, et Spiritus [S. sanctificantis]… aequalis… pateat»), XIV, начало XV. **Ключевое предложение XIII («Pro solis quippe electis… mortem oppetiit») в OCR не читается**; `inside.php` по «oppetiit» — 0 попаданий |
+| 790 | 734 (вывод) | Конец XV, **XVI** («Haec omnia cum ita se omnino habeant, haud sane probare possumus oppositam doctrinam illorum, qui statuunt, Christum propria intentione et consilio tum suo, tum Patris ipsum mittentis, mortuum esse pro omnibus et singulis, addita conditione impossibili, si videlicet credant…»), XVII, начало XVIII |
+| 791 | 735 (вывод) | Конец XVIII, XIX («…Christusque adeo non pro singulis, sed pro solis [Electis]… mortuus est») |
+| 795 | **739** (колонтитул; уверенность 60) | — |
+
+**Итог по локатору `fathers/10_` («XIII–XVI, pp. 733–735»).** По реконструкции, XIII начинается внизу p. 732, XVI стоит на p. 734, а pp. 733–735 охватывают конец XIII – XIX. Локатор близок, но неточен — `LOCATOR_IMPRECISE` (мягко). Номера 732–735 выведены из пропуска одной страницы, а не прочитаны в колонтитулах. Пометка «сверено в Волне 18» по Нимейеру расходится с `AGENT6` A.10 («не открывались»). Вероятнее всего, локатор Нимейера взят из аппарата Шаффа, где Нимейер назван как источник латыни. Ключевое предложение XIII по этому скану Нимейера проверить нельзя.
+
+### 54.3. Августи (б): «diram»
+
+- Колонтитулы через `inside.php`: лист 468 = p. 444, 471 = 447, 473 = 449, 475 = 451, 476 = 452, 477 = 453, 478 = 454, 481 = 457, 482 = 458, 483 = 459 (смещение 24). Канон XIII — на листе 474 = **p. 450**.
+- `inside.php` по «diram» — одно попадание, канон XIII: «Pro solis quippe electis ex decretorio patris consilio, propria[que intentione] **diram** mortem oppetiit: solos illos in sinum paternae gratiae restituit: solos Deo patri offenso reconciliavit, et a maledictione legis liberavit». По «duram» — **0 попаданий**.
+- Значит, «duram» в `AGENT6` A.10 — ошибка транскрипции (`QUOTE_NOT_VERBATIM`, мягко). Там же «ommino» в XVI вместо «omnino» (Нимейер, лист 790: «omnino» по смыслу OCR) — опечатка.
+- Диапазон «pp. 443–457» в `AGENT6` A.10 короток: канон XXV начинается на p. 457 и продолжается на p. 458, колонтитул «Formula Consensus Helvetica. 459» — на листе 483. Документ идёт как минимум до p. 459 — `LOCATOR_IMPRECISE` (мягко).
+
+### 54.4. Шафф (в)
+
+Лист 512 = p. 488, сноска: «Art. XIII. Pro solis electis ex decretorio Patris consilio propriaque intentione **diram** mortem oppetiit…». Шафф опускает «quippe» (у Августи оно есть) — сокращённая цитата. В основном тексте той же страницы: «5. Limited atonement. Christ died only for the elect… The infinite value and inherent sufficiency of Christ's satisfaction is not denied… Art. 13–16. Against Amyraut» (см. §46). Сноски в печати помечены значками по странице. Номера «fn. 932, 936» в `27_` — не печатные (вероятно, сквозная нумерация электронного издания; здесь не проверено).
+
+### 54.5. Итог
+
+| Вопрос | Итог |
+|---|---|
+| С. 7, сн. 25: канон XIII в переводе Клаубера («dreadful death» = «мучительную смерть») | Латынь «**diram** mortem» засвидетельствована в двух изданиях: Августи 1846, p. 450; Шафф 1877, p. 488. Перевод точен. Вердикт ACCURATE (§11) **прежний** |
+| `AGENT6` A.10: «duram» | `QUOTE_NOT_VERBATIM` (мягко), транскрипционная ошибка |
+| `fathers/10_`: Нимейер, «XIII–XVI, pp. 733–735, сверено в Волне 18» | `LOCATOR_IMPRECISE` (мягко, по реконструкции: XIII с p. 732); провенанс сверки не подтверждается |
+| Предисловие («Salvum… stat fundamentum fidei… Salva unitas corporis mystici») | Есть у Нимейера, p. 729 — цитата `27_` подтверждена по второму изданию |
+
+Вердикты S1–S5 не меняются. Умысел не утверждается.
