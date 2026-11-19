@@ -153,6 +153,8 @@
 
 > **Дополнение (раунд 93, 2026-11-17; `34_` §4.176, S191).** (1) Латынь Урсина: *Explicationum catecheticarum…* (1587), IA `bim_early-english-books-1641-1700_explicationum-catechetic_ursinus-zacharias_1587`, л. 475 — «Satisfecit pro omnibus, quoad […], non quoad applica[tionem]»; л. 243 — «…sufficientiam, non quod ad applicationem». OCR плохой, дословно не цитировать; формула подтверждена. (2) II Helv. XI.15 сверено по листу: Schaff III, л. 271 = p. 257, «reconciliavit omnibus fidelibus Dominus noster Patrem coelestem». П. 3 поправки волны 11 подтверждён.
 
+> **Дополнение (раунд 129, 2026-11-17; `34_` §4.212, S227; REPASS §52).** К п. 3 (II Helv.) и к Гейдельбергу, в. 37. Шафф (*Creeds* I, p. 635) читает оба текста как учащие, «that God's promises and Christ's redemption are general». При этом он цитирует II Helv. X: «Promissiones Dei sunt universales fidelibus» — с собственной пометкой «(not electis)», и в той же фразе помещает Дорт, WCF и Формулу согласия в те же инфралапсарианские рамки. Для п. 3: ограничение XI.15 («reconciliavit omnibus fidelibus») и формула X («universales fidelibus») указывают в одну сторону — всеобщность обетований обращена к верующим. Но чтение «general redemption» в XIX в. было распространённым (Шафф), и упрекать статью за него как за личное изобретение нельзя.
+
 **Следствие для статьи:** поправка очищает §§3–5 от уязвимых полемических подмен и ложных цитат, оставляя в силе главный антианахронический вывод против прочтения Кальвина и реформатских исповеданий XVI в. как «универсалистских» в современном смысле.
 
 ---

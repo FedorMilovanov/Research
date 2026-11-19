@@ -304,6 +304,10 @@
   - Чтения «[1906]» в `13_`/`14_` есть в тексте до 1911 г.; `13_` смешивает издания (`CONFLATED_EDITIONS`, мягко).
   - «Христос умер за всех… для всего мира» — не Вероучение 1985 г., а тезис 3 «Мы верим» (2001): `MISATTRIBUTION` в `14_`, `fathers/20_`, `synthesis/D6_`. Каргель — `QUOTE_NOT_VERBATIM` (мягко).
   - Вердикты S1–S5 не меняются. Документ: REPASS, §51.
+- **раунд 129 (2026-11-17, AGENT 2):** §3 (S227), новый §4.212 (Q208): Шафф, *Creeds* I, лист 659 = p. 635 (по разметке страниц IA).
+  - Цитата «all the Reformed Confessions… keep within the limits of infralapsarianism» — `LOCATOR_VERIFIED`.
+  - На той же странице Шафф: Гейдельбергский катехизис и II Helv. учат, «that God's promises and Christ's redemption are general». Прецедент чтения с. 5 статьи (`SCHOLARLY_PRECEDENT`, контекст); наши вердикты не меняются.
+  - Вердикты S1–S5 не меняются. Документ: REPASS, §52.
 
 **Erratum (раунд 4).** В раунде 3 номера страниц протоколов Ассамблеи (S19) и Шедда II (S22) были выведены из индекса страниц OCR-API archive.org (`BookReaderGetTextWrapper`), который **не совпадает** с номером листа (`leafNum`) скана: для `minutesofsession00west` индекс = лист − 5, для `dogmatictheology02sheduoft` индекс = лист − 1. Сверка по `inside.php` (полнотекстовый поиск, возвращает `leafNum`) и `<id>_page_numbers.json` (лист → печатная страница) дала: **Minutes «pp. 150–155/156» → pp. 155–160/161** (листы 251–257); **Shedd «II.478, 482–483» → II.479, 483–484** (листы 489, 493–494). Все затронутые числа в S19, S22, §4.13, §4.16, §5–§8 исправлены **на месте** с пометкой «(испр. р. 4)»; содержание цитат не менялось. Локаторы раундов 1–2 (Minutes p. lv/lviii/lx/152, Shedd II.464–477, I.441, A. A. Hodge pp. 33–34) перепроверены тем же способом и **верны** (лист 248 = p. 152; лист 457 = I.441; лист 39 = Hodge p. 33).
 **Статус:** `ACTIVE RESEARCH / NO SETTLED VERDICT ON EXTENT / EVIDENCE_HOLD / PUBLICATION_HOLD`
@@ -693,6 +697,7 @@
 | S224 *(раунд 126, 2026-11-17)* | Grace Community Church, «What We Teach. The Doctrinal Statement of Grace Community Church», `www.gracechurch.org/about/doctrinal-statement`, «сырые» снимки Wayback: `20191102153431id_` (02.11.2019) — статьи об объёме нет; «our Lord Jesus Christ accomplished our redemption through the shedding of His blood…»; «election is the act of God by which… He chose in Christ those whom He graciously regenerates, saves, and sanctifies»; `20240502013534id_` (02.05.2024) — то же; `20240601140441id_` (01.06.2024) — новая статья «Atonement»: «…has fully satisfied the justice of God…, propitiated the wrath of God…, procured reconciliation…, and purchased an everlasting inheritance in the kingdom of heaven…, for all those the Father has given to Him (John 6:39; 10:14–15, 28–29; 17:2, 9, 24)»; «accomplished the redemption of His people»; «He unconditionally chose». Класс A2 | Сн. 28 — ACCURATE для 2019 г. (HOLD снят); `TIME_BOUND`: перемена между 02.05 и 01.06.2024 |
 | S225 *(раунд 127, 2026-11-17)* | (а) «Баптистское вероисповедание 1928 года», `domblagodati.com/confession-of-faith`; (б) «Исповедание веры христиан-баптистов», `reformed.by` (05.12.1999; «Из архива журнала „В начале“, 1999 год. Н. В. Одинцов»). Ст. IV: «…Он от вечности предопределил [(б): предназначил] в жертву умилостивления Своего Единородного Сына… принесши за нас в жертву Свое тело и Свою душу… понесши гнев Божий и наказание за наши грехи»; ст. V: «…те лица из погибшего рода человеческого, которым в течение времени действительно должно быть усвоено искупление, избраны также Отцом… преданы в руки Искупителя, как Его народ, как овцы Его стада, за которых Он положит Свою жизнь (Ин. 10:15-16, 26-27), как Его наследие, как добыча Его смертной борьбы, и как Его невеста»; ст. VI: «…усвояет [(б): дает] им спасение приобретенное Христом». Класс C (две независимые перепечатки) | С. 8: `OMITTED_RELEVANT_TEXT` (мягко) для 1928 г.; `13_` §II.2 Член IV — `QUOTE_NOT_VERBATIM` (мягко), пометки «[1906]» — `UNVERIFIED`; 1906 — HOLD |
 | S226 *(раунд 128, 2026-11-17)* | (а) Л. З. Кунцевич, *Изложение и разбор вероучения баптистов*, Харьков, 1911 (перепечатка ростовского издания; `azbyka.ru`): Чл. IV «действительное послушание… и страдательно принесши за нас в жертву Свою душу и Своё тело… вечное всеполное искупление»; Чл. V «должно быть присвоено искупление… за которых Он положил свою жизнь». (б) Каргель 1913 (`baptistnorth.ru`), ст. 4: «…посредством смерти Христа за всех человеков… — Господь предлагает умилостивление…, примирение…, прощение всех грехов…, оправдание… и жизнь вечную»; «Это дело спасения совершено Богом для человека, но оно остается бездейственным для него, если не совершится дело Божие в человеке». (в) Вероучение ЕХБ 1985 + «Мы верим» (Совет Союза ЕХБ Белоруссии, 2001), PDF `evangelistmn.com`: «Мы верим» п. 3 — «искупительная жертва Христа предназначена для всего мира. Бог желает спасти всех людей, и Христос умер за всех»; в 1985 — «Во Христе Бог предлагает человеку спасение даром», «Христос принял на Себя всю нашу вину и наказание за грех». Класс C | `ATTESTED_PRE_1928`; `CONFLATED_EDITIONS`, `VARIANT_APPARATUS_INCOMPLETE`, `VARIANT_UNMARKED`, `OVERSTATEMENT` (мягко); Каргель — `QUOTE_NOT_VERBATIM` (мягко); 1985 ← «Мы верим» — `MISATTRIBUTION` |
+| S227 *(раунд 129, 2026-11-17)* | Ph. Schaff, *Creeds of Christendom* I (1877), IA `creedschristendo01scha`: индекс 658 = лист 659 = **p. 635** (`_page_numbers.json`: «635», confidence 100, pageProb 95). «…all the Reformed Confessions (even the Canons of Dort, the Westminster Confession, and the Helvetic Consensus Formula) keep within the limits of infralapsarianism… the most authoritative, as the Helvetic Confession of Bullinger, the Heidelberg Catechism, and the Brandenburg Confessions… They also teach that God's promises and Christ's redemption are general, and that we must abide by the revealed will of God, which sincerely offers the gospel salvation to all who repent and believe». Сноска: II Helv. X «Promissiones Dei sunt universales fidelibus (not electis)»; Heid. 37 «…against the sin of the whole human race». Класс A2/A1, OCR | Лист 659 — `LOCATOR_VERIFIED`; с. 5, сн. 15–16 — `SCHOLARLY_PRECEDENT` (контекст); вердикты не меняются |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -8281,8 +8286,9 @@ hommes** selon ce propos déterminé…*» (с. 183) **есть в источн�
 | 4.209 | Q205 | Вероучение GCC по Wayback `id_`: 2019 — статьи об объёме нет (сн. 28 точна для своего времени); статья «Atonement» — между 02.05 и 01.06.2024 (р. 126) |
 | 4.210 | Q206 | Одинцов 1928 по-русски: ст. V «за которых Он положит Свою жизнь» — `OMITTED_RELEVANT_TEXT` (мягко) для 1928 г.; `13_` Член IV не дословен; 1906 — HOLD (р. 127) |
 | 4.211 | Q207 | Русские вероучения 1911/1913/1985: чтения «1906» засвидетельствованы до 1911 г.; «Христос умер за всех» — не 1985, а «Мы верим» 2001 (`MISATTRIBUTION`); Каргель не дословен (р. 128) |
+| 4.212 | Q208 | Шафф I, лист 659 = p. 635 сверено; там же «Christ's redemption [is] general» о Гейдельберге и II Helv. — прецедент чтения с. 5 (р. 129) |
 
-⇒ разделов с `Q` — **204**, разделов §4.x — **206**; пропуски нумерации прежние.
+⇒ разделов с `Q` — **205**, разделов §4.x — **207**; пропуски нумерации прежние.
 
 
 ### 4.139. Q135 — Приёмка раунда 61: связка Сомюра, аудит объёма, готовность к мерджу (раунд 61)
@@ -9829,6 +9835,18 @@ William Graham, *The Spirit of Love: or, A practical and exegetical commentary o
 8. **ПЭ «БАПТИСТЫ» (2009):** «искупление всех людей» — сводный пересказ современного вероучения (его слова совпадают с 1985 г.), а не исповедания Павлова. Для с. 8 непригоден.
 
 С. 8 статьи: выводы §4.173/§4.210 не меняются. Вердикты S1–S5 не меняются.
+
+### 4.212. Q208 — Шафф, *Creeds* I, p. 635: номер страницы и «general redemption» (раунд 129, 2026-11-17)
+
+**Повод.** REPASS §46 (раунд 123): цитата Шаффа об инфралапсарианстве всех реформатских исповеданий дана по «листу 659 (≈ p. 635, не сверено)». Источник — S227. Таблица — REPASS-документ, §52.
+
+**Ответы.**
+1. **Локатор.** Разметка страниц IA даёт для листа 659 номер «635» (confidence 100, pageProb 95); смещение «лист − 24» прежнее. `LOCATOR_VERIFIED`.
+2. **Что ещё на странице.** Сразу после фразы об инфралапсарианстве Шафф пишет, что II Helv., Гейдельбергский катехизис, Бранденбургские исповедания и Шотландское 1560 г. учат, «that God's promises and Christ's redemption are general». В сноске — в. 37 («the sin of the whole human race») и II Helv. X («Promissiones Dei sunt universales fidelibus» — с пометкой Шаффа «not electis»).
+3. **Для с. 5 статьи (сн. 15–16).** Чтение в. 37 и II Helv. как «неограниченного искупления» имеет прецедент у Шаффа — в издании, которое статья цитирует. `SCHOLARLY_PRECEDENT` (контекст в пользу статьи).
+4. **Границы.** Шафф связывает «general» с искренним предложением «to all who repent and believe» и в той же фразе ставит Дорт, WCF и Формулу согласия в одни рамки. «Сдвига» 1563/1566 → 1647 у него здесь нет. Вердикты V\*, `OVERGENERALIZATION` и `INTERNAL_TENSION` (REPASS §14) не меняются. В изложении критики нужна оговорка о Шаффе.
+
+Вердикты S1–S5 не меняются.
 
 ## 5. Анализ и границы допустимой формулировки
 
