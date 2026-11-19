@@ -213,7 +213,14 @@ def report_index(entries: list[dict]) -> int:
         path = ROOT / (entry.get("path") or "")
         if path.exists():
             stale_claims += check_currency_claims(entry, rec, path, verbose=False)
-    print(f"\nпротиворечий kind/mime: {contradictions} (нормализация — решение владельца, см. DRIVE_INDEX_BYTES_FIELD_2026-11-18.md)")
+    total_docs_as_file = sum(
+        1 for rec in records.values()
+        if str(rec.get("mime") or "") == "application/vnd.google-apps.document" and rec.get("kind") == "file"
+    )
+    print(
+        f"\nDocs-объектов с kind: file — в индексе {total_docs_as_file}, из них зеркал {contradictions}"
+        " (нормализация — решение владельца, см. DRIVE_INDEX_BYTES_FIELD_2026-11-18.md)"
+    )
     print(f"полей, называющих себя текущими числами и разошедшихся с HEAD: {stale_claims}")
     return 0
 
